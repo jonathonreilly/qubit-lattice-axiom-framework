@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/the_filtered_quartic_toy_with_a_face_gapped_band_is_symmetric_and_gapped_at_moderate_coupling_and_pairs_at_strong_coupling_2026_10_22.py
+runner_sha256: ad45aae47f364f892062ac9ad147b8cb35b239c6a8c3dd764a9e00eb329fec1a
+input_fingerprint_sha256: 3c919ce3c40c9ede9de7bb9334f34d638c2ad2491c7217ae7fee12d3f3f561d0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 54.86
+status: ok
+----- stdout -----
+== A. sign with the face-gapped band and mixed (cube-filtered + on-site) vertices
+[PASS] A1 THEOREM (toy-qmc A1, extended) with any real band and any real vertex orbitals (filtered and on-site rows mixed, each vertex weighted by its real coupling) the exact time-ordered trace of every configuration is det(M)^4 >= 0: the face-gapped band and the on-site/filtered interpolation stay sign-free | max|trace - det^4| 4.0e-16; min trace 8.3e-12
+== B. engine (local + global pair moves, mixed vertices) vs exact: 3-site ring, lam = 0.5, t = 0.3, beta = 3  [0 s]
+[PASS] B1 FINITE CHECK CT-INT reproduces the exact <H_int> of the mixed model within 4 sigma | -0.9154+-0.0101 vs exact -0.9154
+== C. live seeded 3D runs: face-gapped band eps = t sum_i (1 - cos k_i)/2 (Fermi set = Gamma only), g = 1, beta = 4  [8 s]
+   g2_L4    L=4 g/t=2 lam=0 900 sweeps: S_pair/N 0.0661 xi/L 0.255(0.007) | gap lower ends: pair(Q=0) 0.43 elem(Gamma) 2.03 | chi_h max 0.49 mean 0.22  [14 s]
+   g2_L6    L=6 g/t=2 lam=0 400 sweeps: S_pair/N 0.0184 xi/L 0.162(0.007) | gap lower ends: pair(Q=0) 0.43 elem(Gamma) 1.67 | chi_h max 0.65 mean 0.25  [28 s]
+   g8_L4    L=4 g/t=8 lam=0 900 sweeps: S_pair/N 0.0753 xi/L 0.355(0.006) | gap lower ends: pair(Q=0) 0.20 elem(Gamma) 1.69 | chi_h max 0.34 mean 0.18  [34 s]
+   g8_L6    L=6 g/t=8 lam=0 400 sweeps: S_pair/N 0.0407 xi/L 0.374(0.009) | gap lower ends: pair(Q=0) 0.09 elem(Gamma) 1.28 | chi_h max 0.62 mean 0.25  [50 s]
+   lam1_L4  L=4 g/t=8 lam=1 500 sweeps: S_pair/N 0.0093 xi/L 0.005(0.000) | gap lower ends: pair(Q=0) 0.64 elem(Gamma) 0.42 | chi_h max 1.17 mean 0.55  [54 s]
+[PASS] C1 FINITE DIAGNOSTIC g/t = 2 (filtered, lam = 0) is pair-disordered and gapped: S_pair/N falls > 2x from L = 4 to 6, xi/L falls, and the pair and Gamma-elementary gap lower ends stay >= 0.2 at both sizes | S_pair/N ratio 3.59; xi/L 0.255 -> 0.162
+[PASS] C2 FINITE DIAGNOSTIC g/t = 8 (lam = 0) is not disordering: xi/L does not fall by more than 0.03 from L = 4 to 6 and S_pair/N falls by less than 2.5x (pair order at strong coupling survives the face-gapped band) | S_pair/N ratio 1.85; xi/L 0.355 -> 0.374
+[PASS] C3 FINITE DIAGNOSTIC no translation order in the filtered runs: Q-averaged chi_h <= 0.4 and largest <= 1.5 | max chi_h 0.49, 0.65, 0.34, 0.62
+[PASS] C4 FINITE DIAGNOSTIC control lam = 1 (on-site quartic, same band, g/t = 8): no pair correlations (xi/L < 0.1) and a gapped Gamma elementary (lower end >= 0.3): the on-site model is symmetric and gapped where the filtered one pairs | xi/L 0.005; gap lower end 0.42
+== D. recorded production values (prod.py, beta = 8; recorded, not recomputed; no PASS depends on them)
+   recorded production value (not recomputed): lam=0 xi/L L=4 -> L=6: g/t=1 0.184->0.116, 2 0.241->0.179, 4 0.335->0.349, 8 0.370->0.426, 16 0.393->0.464, inf 0.407->0.501
+   recorded production value (not recomputed): lam=0 S_pair/N L=4 -> L=6: g/t=1 0.055->0.016, 2 0.063->0.021, 4 0.080->0.043, 8 0.081->0.052, 16 0.085->0.054, inf 0.082->0.056
+   recorded production value (not recomputed): lam=0 pair-gap band (L=4; L=6): g/t=1 [1.42,1.55]; [1.41,1.54], 2 [0.50,0.61]; [0.33,0.51], 4 [0.25,0.28]; [0.07,0.15], 8 [0.16,0.20]; [0.05,0.09]
+   recorded production value (not recomputed): g/t=8 lam=0.5: xi/L 0.284->0.279, S_pair/N 0.064->0.030; lam=1: xi/L 0.004->0.003, pair gap [0.84,0.92]; [0.77,0.87]
+supplied: toy content (4 modes, SU(4)-singlet quartic, not Spin(10)), the face-gapped band, lam, sizes, betas, seeds, g = 1
+cited: toy-qmc (#9965) A1/E1, smg-ladder (face Fermi lines, 1D window), composite-band-3d (band (1 - cos q)/2)
+elapsed 54.4 s
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

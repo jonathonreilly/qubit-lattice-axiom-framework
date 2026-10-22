@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/vacuum_reference_principle_fixes_zero_unit_and_photon_cone_but_not_fermion_cones_2026_10_21.py
+runner_sha256: de531d95ab041a3a0b9b3389518de51b454b1eb799fa3c1f9b3f90d98cafff67
+input_fingerprint_sha256: 7db5f30b63f080034de628fbbbc217ecc00516b4400ee859083e4eacab610d8a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 31.43
+status: ok
+----- stdout -----
+== A. the sea's vacuum phase on the box-read cube tick (band law; per block per tick, c0 = tau/L)
+[PASS] A1 massless sea: the phase depends on the cell only through tau/L (Weyl), so a shape change at fixed 4-volume (tau e^3x, L e^-x) moves it at first order and a conformal one not at all: fixed 4-volume per record removes none of it; a volume-preserving shear moves it at second order. VR removes both identically (vacuum minus itself)  dPhi/dx = -38.22 c0, conformal 0e+00; shear d2Phi/ds2/2 = -5.697 c0
+[PASS] A2 massive sea (mu = 0.0025): the conformal part, the only part fixed 4-volume removes, is a fraction 3e-04 of the fixed-volume part; the lattice vacuum stress is radiation-like, not w = -1  shape -38.230 c0, conformal -1.20e-02 c0
+== B. sea link couplings A_E, A_B (units kappa = 2/(6 pi^2)); VR: bare E and B terms absorb A_E(0), A_B(0)
+[PASS] B1 without VR: the uniform-field E and B couplings differ (photon off the edge cone) and A(0) follows the cell size with the QED log (alpha tracks the cell)  dC = 0.1506, 0.1399, 0.1324 at mL .4,.32,.256; slope 0.979, 0.987
+[PASS] B2 VR: the dressed photon speed at q -> 0 is the edge cone exactly, and the subtracted E and B runnings agree up to a lattice term falling as (mL)^2, so the running is Lorentz invariant in the continuum limit  |R_E-R_B|/|R| = 0.0617, 0.0406, 0.0249 at q/m .245; power 1.87, 2.20
+[PASS] B3 VR: at the same proper q/m the subtracted running is cell-blind: cells 25% apart differ by ~1% of the unfixed shift, falling with mL; a shape change eps .05 -> .3 moves it by < 3e-3  dR/(kappa ln1.25) = 0.0159, 0.0116 (power 1.44); shape 2.1e-03
+[PASS] B4 both subtracted runnings extrapolate to one-loop QED as mL -> 0  R_E/R_QED 1.1359 -> 0.9916; R_B/R_QED 1.0582 -> 1.0018
+== C. a synchronous 2^3 split of dust on the cubic-frustum Regge FRW carrier (kappa = 1)
+[PASS] C1 rule U (fixed record 4-volume) turns each split's junction residual into a permanent kick rho^2/rho* of Lambda; with VR the vacuum is already removed, rule U can go, Lambda is a geometric constant and the residual stays a one-slab mismatch of order (H l)^2  kick/(rho^2/rho*) 0.9976, 0.9981; residual -3.74e-03 (Hl 0.061), -2.19e-03 (Hl 0.047), power 2.01
+== D. conditional source: 12-site gapped Dirac ring, 6 fermions (924 configurations), parts = 2-site blocks
+[PASS] D1 vacuum: with the literal reference (vacuum phase on the same edges, a constant) the frozen sea's actual configuration makes the source fluctuate; with VR (vacuum odds at the same configuration) it is 0 everywhere  sd of total: literal 0.2529 (per part 0.0969); VR 0e+00
+[PASS] D2 charge-neutral excitations: subtracting part-conditioned vacuum phases loses energy (mean/target below 0.9); subtracting local phases at the same configuration keeps the mean exactly, gives a noise-free total for every eigenstate, and puts a local excitation's source on its own block and neighbours  cond mean/target 0.635, 0.780, 0.825; eigen total dev 5e-11; local block means 0.938 0.141 0.002 0.001 0.002 0.141; far sd 0.024 vs literal 0.097
+== E. ESTIMATES (supplied SM content and measured numbers; not theorems)
+   alpha in a potential: no VR |dln a/dPhi| = 4.13e-03 (Yb+ bound 1.4e-8); VR residual ~2e-34; photon running LV at the electron ~7e-44
+   reference at the actual links instead of no field: no running (1/alpha(M_Z) 137.04 vs 128.94 measured), and the
+   vacuum-polarisation part of nuclear Coulomb energy stops weighing: eta(Pt,Ti) ~ 6.7e-06 vs MICROSCOPE 3e-15
+   G_TT/G_N: 1 under VR (sea removed) vs 0.81 without (induced-response, 24 Dirac) vs Hulse-Taylor 0.998(2); c_GW = edge cone
+   colour links: a bare plaquette gives Lambda_QCD ~ 1/L, baryons fall with 4/3 of the lapse (gamma_eff - 1 = -1/2 vs Cassini
+   2.3e-5, proper-couplings); VR's unit at one proper wavelength holds Lambda_QCD, so m_p, fixed in proper units
+   fermion cones: no response law changes a speed ratio; one-loop link dressing O(alpha/pi) = 2.3e-03 x f,
+   f unprotected, vs LEP 1e-11 and LHAASO 3e-19: an update gap of the additive-mass class (not computed here)
+   Lambda: VR gives zero vacuum Lambda; the measured 1.1e-123 rho_P needs a geometric term (w = -1 exactly); under rule U
+   eps also swings by 16 per 2^3 split cycle (tau L^3 fixed while L doubles)
+[PASS] E1 arithmetic: VR residual and photon LV far below bounds; wrong reference fails MICROSCOPE by > 1e8
+supplied: tick, sea branch, site-phase links, free sea, static cells, tori and fits; frustum carrier, kappa = 1; 1D toy,
+  2-site parts, shared bonds; QED comparator, SM charges, measured numbers; VR itself (adopted, not derived).
+elapsed 30 s
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

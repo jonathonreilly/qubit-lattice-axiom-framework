@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/the_label_selective_charge_four_mirror_term_on_the_freeze_walk_first_exists_at_four_families_and_frees_the_light_partners_2026_10_23.py
+runner_sha256: 828d15ac167633b24bb96bc6e7242ed7a0685db4b6390935c6db29ad54ff2613
+input_fingerprint_sha256: 49690cdc78b0c197dbcc8bcfbc4eababc24723e715355d6f63d1aad997059bae
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 6.71
+status: ok
+----- stdout -----
+PASS A0 rebuild FREEZE; the labels (1 +- tau3)/2 on Pi+ are rank-2, T-invariant cell projectors; at each node the light label tau3 = +1 and the mirror label tau3 = -1 carry opposite chirality, the same at K = 0 and R  [unitarity 5e-15, label T-res 7e-16, sign det v (light, mirror) @0, @R: [-1, 1, -1, 1]]
+  naming: by twist-local-single's sign rule (det v > 0 = 'L') tau3 = -1 is its 'L' (q = 2); here 'light'/'mirror' name roles, not handedness
+== A. which charge-4 mirror terms does T allow? ==
+  mirror: {'order': 24, 'T_counts_Nf2to8': [0, 0, 1, 5, 15, 35, 70], 'Sym4_inv': 1, 'det2_inv': 0, 'q': [2]}
+  light: {'order': 24, 'T_counts_Nf2to8': [0, 0, 1, 5, 15, 35, 70], 'Sym4_inv': 1, 'det2_inv': 0, 'q': [1]}
+PASS A1 (exact, characters over the 24-element turn group) N_f = 2 and N_f = 3 admit NO T-invariant charge-4 mirror term: Lambda^4(doublet x C^N) = sum S_lam(doublet) x S_lam'(C^N); (2,2) is det^2 = w^(4q) != 1, (3,1) is spin-1 x det (no T singlet), (4) needs N >= 4
+PASS A2 (exact) the first allowed count is N_f = 4, with EXACTLY ONE term, and it is forced to be SU(4)-family symmetric: eps_abcd times the one T-invariant line of Sym^4 of the mirror spin doublet (count C(N_f, 4) for N_f = 2..8); the same holds for the light label
+== B. the unique N_f = 4 term on one cell: exact diagonalisation ==
+PASS B1 (exact) Q = sum_s c_s eps_abcd r_a,s1 r_b,s2 r_c,s3 r_d,s4 is T-invariant (operator level, 12 turns) and SU(4)-invariant; -(Q + Q^+) on one cell's 8 mirror modes has a 2-FOLD ground state: A = |0> + Q^+|0> and B = |8> + Q|8>, at mirror occupations 2 and 6 of 8, whose turn charges differ by det(r)^4 = w^(8q) != 1 (not a symmetry doublet: the term's particle-hole balance makes them degenerate); G_R(0) = 0 ONLY as the A/B average (A and B give -g0 and +g0)  [T res 2e-13, SU(4) res 7e-14, deg 2, <N> [2. 6.], det(r)^4 = -0.500+0.866i, max|G_R(0)| 2e-15]
+PASS B2 (exact) a T-, SU(4)-, Z4-invariant mirror number term mu (N_R - 4)/4 (mu = 0.2, SUPPLIED) selects A: the cell ground state is unique and symmetric, with a single-particle gap; G_R(0) is then FINITE and equal on all mirror modes (Schur), not a zero  [split 0.200, 1-particle gap 1.049, G_R(0) = -0.6360 x 1]
+  G-S zero structure of the mirror (family-0 block): G_R(0,K) = g0 + u sigma.K near the node
+  K=0 mu=0.2: g0 -0.6360, winding of G: zero-form -1 vs mirror pole -1, zero-surface radius |g0|/|u| 3.233
+  K=0 mu=0.05: g0 -0.6530, winding of G: zero-form -1 vs mirror pole -1, zero-surface radius |g0|/|u| 2.901
+  R   mu=0.2: g0 -0.6360, winding of G: zero-form -1 vs mirror pole -1, zero-surface radius |g0|/|u| 3.233
+  R   mu=0.05: g0 -0.6530, winding of G: zero-form -1 vs mirror pole -1, zero-surface radius |g0|/|u| 2.901
+PASS B3 (exact ED + finite differences) Golterman-Shamir counting at both nodes, unique symmetric state A: G_R(0,K) = g0 + u sigma.K with g0 != 0, so the node carries NEITHER a pole NOR a zero; the would-be zero has the winding of the mirror pole it replaces, and it is pushed to a zero surface |K| ~ |g0/u| ~ 3, outside the node region (the mirror winding is relocated, not removed)
+== B4. one light family kept (10 modes, 1024 states): light pole near K = 0; release at X ==
+PASS B4a (exact ED, g = 1 cell gap, mu = 0.2) the light Weyl is untouched near K = 0: G_L(0,K)^-1 = -h_LL(K) up to a relative error falling at least as K^2 (seen ~K^3; label leak O(K^2)), so the light pole stays at the node  [rel. deviation 3.7e-05 (|K| = 0.1), 4.6e-06 (0.05)]
+  X = (pi,0,0): projected light levels [-0.  0.]; free Pi+ levels [-1.231 -1.231  1.231  1.231]
+  X, g =    0: light weight below 0.15 = 0.000; lowest light pole 1.231
+  X, g =    1: light weight below 0.15 = 0.000; lowest light pole 0.352
+  X, g =    4: light weight below 0.15 = 0.000; lowest light pole 0.209
+  X, g =   16: light weight below 0.15 = 0.996; lowest light pole 0.060
+PASS B4b (exact ED) Golterman-Shamir release at X: free, the light-labelled modes at X are gapped by mixing with the mirror (no light weight below 0.15); as the mirror is gapped by the charge-4 term the light weight returns to low energy at the projected light level: a light partner is FREED  [weights [0.    0.    0.    0.996]]
+== C. anomaly of the gapped set; the projected light walk ==
+  free FREEZE content per family: light 1 Weyl at K = 0 and 1 at R (same sign), mirror the opposite
+  N_f=2: T-terms 0; gapped set 4 Weyls, Z4 charge 1: Spin-Z4 index 4 mod 16; SU(N_f)^3 index n/a
+  N_f=3: T-terms 0; gapped set 6 Weyls, Z4 charge 1: Spin-Z4 index 6 mod 16; SU(N_f)^3 index 2
+  N_f=4: T-terms 1; gapped set 8 Weyls, Z4 charge 1: Spin-Z4 index 8 mod 16; SU(N_f)^3 index 2
+  N_f=8: T-terms 70; gapped set 16 Weyls, Z4 charge 1: Spin-Z4 index 0 mod 16; SU(N_f)^3 index 2
+PASS C1 (bookkeeping; Z16 for Spin-Z4 is a LITERATURE input) N_f = 4: index 8 mod 16 and SU(4)^3 index 2, both kept by the term, so a symmetric trivial mirror gap with ONLY the light Weyls left is anomaly-forbidden; Z4 alone first allows N_f = 8
+  projected light walk (polar part): min singular value 0.333; nodes (number of pi entries, sign): [(0, -1), (1, 1), (1, 1), (1, 1), (2, 1), (2, 1), (2, 1), (3, -1)]
+  projected mirror walk (polar part): min singular value 0.333; nodes (number of pi entries, sign): [(0, 1), (1, -1), (1, -1), (1, -1), (2, -1), (2, -1), (2, -1), (3, 1)]
+PASS C2 (finite diagnostic: grid + refinement) the light-labelled projection of FREEZE has 8 nodes per family: the 2 light Weyls and 6 at X, M with the OPPOSITE sign -- partners gapped only by light-mirror mixing
+verdict: the T-allowed charge-4 mirror term first exists at N_f = 4 (unique, SU(4) forced); with a supplied
+bias it gaps the mirror symmetrically on a cell and keeps the node light Weyls, but frees 6 light partners
+per family at X, M (Golterman-Shamir, gap ~ 1/g). Not a chirality fix.
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

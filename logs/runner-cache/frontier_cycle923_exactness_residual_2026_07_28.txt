@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle923_exactness_residual_2026_07_28.py
-runner_sha256: 7023a18806445014fdacd0a393ac78677d0d3eb59b1747dbb44cc5871667e059
+runner_sha256: 0ba586b8410b5060a2fa77d25615ad666f917bf02f2b0135b3786d78e63c6407
+input_fingerprint_sha256: d31fc4c6c7dcf5d2d21f9e7414bade89f83225e3476764d699481be796bc5e3f
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.58
+elapsed_sec: 0.47
 status: ok
 ----- stdout -----
 ============================================================================================
@@ -19,7 +20,7 @@ S0 -- provenance pins (sha256 + git blob sha1) for sources and inherited artifac
 [PASS] [S0] pin present: docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md | sha256=d95cdf68285242a8.. blob=ed574c9b40232818..
 [PASS] [S0] pin present: docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md | sha256=5a72dfb482e8898e.. blob=ac5375a9009bffab..
 [PASS] [S0] pin present: docs/FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md | sha256=32f4a0e27172c86f.. blob=6228b2daaa45fc6a..
-[PASS] [S0] pin present: docs/FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md | sha256=91b708236784a039.. blob=59810648f9064f70..
+[PASS] [S0] pin present: docs/FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md | sha256=b33397045ae355d0.. blob=64bf3f767051152a..
 [PASS] [S0] pin present: docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md | sha256=755cfd4492443946.. blob=5acb4643882438f8..
 [PASS] [S0] pin present: docs/KOIDE_R_HALF_DURABILITY_STATIONARITY_CONDITIONAL_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-11.md | sha256=d352c069a5c8fa96.. blob=bd32f384d2739cc3..
 [PASS] [S0] pin present: docs/FLAVOR_R_HALF_ASSUMPTIONS_AUDIT_NOTE_2026-05-30.md | sha256=19fd7e0770fe0400.. blob=3ae6d9b5f99072f7..
@@ -28,7 +29,7 @@ S0 -- provenance pins (sha256 + git blob sha1) for sources and inherited artifac
 [PASS] [S0] pin present: scripts/frontier_acphilambda_occupancy_realized_state_reduction_2026_06_11.py | sha256=2ce99b206d0112ec.. blob=a9c2afe0d520ce44..
 [PASS] [S0] pin present: scripts/flavor_r_half_is_the_records_flow_separatrix_2026_06_02.py | sha256=bd114ae01808ec8e.. blob=a83a24d4fd26ddf7..
 [PASS] [S0] pin present: scripts/flavor_r_half_stable_under_thermalizing_arrow_2026_06_02.py | sha256=85c0d8a5eb226af0.. blob=1f65ba5f103bb019..
-[PASS] [S0] pin present: scripts/flavor_r_half_is_a_stationary_point_not_forced_2026_06_02.py | sha256=d411eb0cce830128.. blob=8f38a6f00631e6ca..
+[PASS] [S0] pin present: scripts/flavor_r_half_is_a_stationary_point_not_forced_2026_06_02.py | sha256=03fbe24dad49edad.. blob=c27884033e73c025..
 [PASS] [S0] pin present: scripts/frontier_koide_r_half_durability_stationarity_chain_2026_06_11.py | sha256=72d179f5bb08374a.. blob=917d9871597c1b10..
 [PASS] [S0] pin present: logs/runner-cache/frontier_acphilambda_occupancy_realized_state_reduction_2026_06_11.txt | sha256=d42eb1be045617e4.. blob=4d102f278ffe35cd..
 
@@ -51,8 +52,8 @@ S1 -- RESTRICTION GATES: source values reproduced value-for-value (source runner
 [PASS] [S1-text] [FLAVOR_R_HALF_STABLE_UND] verbatim: multiplier `S'(1/2)=2>1`
 [PASS] [S1-text] [FLAVOR_R_HALF_STABLE_UND] verbatim: the instability claim is not map-invariant
 [PASS] [S1-text] [FLAVOR_R_HALF_STABLE_UND] verbatim: does **not** derive that charged-lepton `r` physically evolves
-[PASS] [S1-text] [FLAVOR_R_HALF_IS_A_STATI] verbatim: `dS/dr=0` there,
-[PASS] [S1-text] [FLAVOR_R_HALF_IS_A_STATI] verbatim: fixed point of the r→1−r swap
+[PASS] [S1-text] [FLAVOR_R_HALF_IS_A_STATI] verbatim: S_sector'(r)=−2 log(2r)/(1+2r)².
+[PASS] [S1-text] [FLAVOR_R_HALF_IS_A_STATI] verbatim: fraction exchange r→1/(4r) has the same fixed point.
 [PASS] [S1-text] [REALIZED_STATE_PRIMITIVE] verbatim: no averaging over alternatives, no typical or generic claim
 [PASS] [S1-text] [REALIZED_STATE_PRIMITIVE] verbatim: The laws do not pick the state; the world does
 [PASS] [S1-restriction] [separatrix runner] sharpening p->p^2/Z on the 2-sector split reduces EXACTLY to r->2r^2 (source seeds [0.1,0.3,0.49,0.5,0.7,1.0], source tol 1e-12) | max dev=2.220e-16
@@ -74,15 +75,15 @@ S1 -- RESTRICTION GATES: source values reproduced value-for-value (source runner
 [PASS] [S1-restriction] [FLAVOR_R_HALF_STABLE_UNDER] r=0 spectrum [1,1,1] | published=[1.0, 1.0, 1.0] recomputed=[1.0, 1.0, 1.0]
 [PASS] [S1-restriction] [FLAVOR_R_HALF_STABLE_UNDER] r=1 spectrum [0,0,3] (two massless) | published=[0.0, 0.0, 3.0] recomputed=[0.0, -0.0, 3.0]
 [PASS] [S1-restriction] [FLAVOR_R_HALF_STABLE_UNDER] r=1/2 spectrum [2.41,0.29,0.29] | published=[2.41, 0.29, 0.29] recomputed=[2.41, 0.29, 0.29]
-[PASS] [S1-restriction] [FLAVOR_R_HALF_STABLE_UNDER] sigma involution r<->1-r CHANGES Tr H^2 : value 4.2 at r=0.2 | published=4.2 recomputed=4.2 tol=1e-12
-[PASS] [S1-restriction] [FLAVOR_R_HALF_STABLE_UNDER] sigma involution r<->1-r CHANGES Tr H^2 : value 7.8 at r=0.8 | published=7.8 recomputed=7.800000000000001 tol=1e-12
+[PASS] [S1-restriction] [FLAVOR_R_HALF_STABLE_UNDER] supplied affine comparison r<->1-r (NOT sector exchange) CHANGES Tr H^2 :  | published=4.2 recomputed=4.2 tol=1e-12
+[PASS] [S1-restriction] [FLAVOR_R_HALF_STABLE_UNDER] supplied affine comparison r<->1-r (NOT sector exchange) CHANGES Tr H^2 :  | published=7.8 recomputed=7.800000000000001 tol=1e-12
 [PASS] [S1-restriction] [thermalizing runner] S2 peaks at r~0.5 (source grid linspace(0.01,3,1500), source tol 0.03) | argmax=0.500687
 [PASS] [S1-restriction] [thermalizing runner] 3-eigenvalue SPECTRAL entropy peaks near r=0 (source criterion r_spec<0.2) | argmax=0.010000
 [PASS] [S1-restriction] [stationarity runner] sector entropy peaks at r=1/2 (source grid linspace(0.01,4,2000), source tol 0.01) | argmax=0.499020
 [PASS] [S1-restriction] [stationarity runner] dS/dr = 0 at r=1/2 (source h=1e-6, source tol 1e-5) | dS=0.000e+00
 [PASS] [S1-restriction] [FLAVOR_R_HALF_IS_A_STATION] S(1/2) = log 2 (source tol 1e-12) | published=0.6931471805599453 recomputed=0.6931471805599453 tol=1e-12
 [PASS] [S1-restriction] [FLAVOR_R_HALF_IS_A_STATION] power imbalance |3a^2 - 6|b|^2| trough = 0 at r=1/2 (source tol 1e-12) | published=0.0 recomputed=0.0 tol=1e-12
-[PASS] [S1-restriction] [FLAVOR_R_HALF_IS_A_STATION] r=1/2 is the fixed point of the r -> 1-r swap (source tol 1e-12) | published=0.0 recomputed=0.0 tol=1e-12
+[PASS] [S1-restriction] [FLAVOR_R_HALF_IS_A_STATION] r=1/2 is the fixed point of sector exchange r -> 1/(4r), r>0 (source tol 1 | published=0.0 recomputed=0.0 tol=1e-12
 [PASS] [S1-restriction] [FLAVOR_R_HALF_IS_A_STATION] three-lane lever Q(0.0) = 0.333333 (source tol 1e-12) | published=0.3333333333333333 recomputed=0.3333333333333333 tol=1e-12
 [PASS] [S1-restriction] [FLAVOR_R_HALF_IS_A_STATION] three-lane lever Q(0.5) = 0.666667 (source tol 1e-12) | published=0.6666666666666666 recomputed=0.6666666666666666 tol=1e-12
 [PASS] [S1-restriction] [FLAVOR_R_HALF_IS_A_STATION] three-lane lever Q(1.0) = 1.000000 (source tol 1e-12) | published=1.0 recomputed=1.0 tol=1e-12
@@ -114,7 +115,8 @@ THE RECONCILIATION: the separatrix fact and the attractor fact are one inverse p
 [PASS] [S2-Q1] R3b: S2 strictly INCREASES under g -- the reverse map is entropy-increasing (thermalizing arrow) | 1999/1999 strict
 [PASS] [S2-Q1] R3c: S2 is stationary at r=1/2 under BOTH (it is the shared fixed point)
 [PASS] [S2-Q1] R4 COINCIDENCE-DEFLATION: for a 2-outcome split, p->p^2/Z fixes p iff p is uniform or degenerate. So 'interior fixed point of sharpening' = 'maximum of S2' = 'HS equipartition 3a^2=6|b|^2' is ONE fact in three costumes, NOT three independent characterisations. | 999/999 agree over p in (0,1)
-[PASS] [S2-Q1] R5: the r <-> 1-r swap fixed point is a genuinely separate but ARITHMETIC fact (x = 1-x), carrying no entropy or flow content; the thermalizing note itself corrects it from 'symmetry protection' to 'a relabelling'
+[PASS] [S2-Q1] R5: sector exchange r -> 1/(4r), r>0, fixes 1/2 exactly when the two fractions are equal; this is the SAME uniformity/equipartition fact, not an independent selection
+[PASS] [S2-Q1] R5-counterexample: r=2 exchanges to1/8; affine1-r=-1 is outside r>=0 and is not exchange
 [PASS] [S2-Q1] R6a: the reduction note S6 calls the S2 maximum a 'thermalizing attractor'
 [PASS] [S2-Q1] R6b: the reduction note NEVER names g(r)=sqrt(r/2), the map that actually supplies the attraction
 [PASS] [S2-Q1] R6c: the thermalizing SOURCE note does name g(r)=sqrt(r/2) as the attracting map
@@ -226,7 +228,7 @@ S5 -- FIREWALL check (mechanical)
 [PASS] [S5-firewall] step 'S_spec_argmax' designates a unique r -> must carry a named supplied element | supplied=the eigenvalue coarse-graining plus the delta=0 pin
 [PASS] [S5-firewall] step 'attractor_of_g' designates a unique r -> must carry a named supplied element | supplied=the supplied two-sector reverse map (arrow not derived)
 [PASS] [S5-firewall] step 'attractor_of_f' designates a unique r -> must carry a named supplied element | supplied=the supplied Luders/records sharpening map (arrow not derived)
-[PASS] [S5-firewall] step 'swap_fixed_point' designates a unique r -> must carry a named supplied element | supplied=the r <-> 1-r relabelling (a relabelling, not a dynamical symmetry -- source-corrected)
+[PASS] [S5-firewall] step 'swap_fixed_point' designates a unique r -> must carry a named supplied element | supplied=exchange of the supplied sector fractions r -> 1/(4r), r>0; fixedness is the same uniformity fact, not independent selection
 [PASS] [S5-firewall] all three registered lanes remain WELL-FORMED after every step above (Q = 1/3, 2/3, 1 with real 3-spectra)
 
 --------------------------------------------------------------------------------------------
@@ -248,7 +250,7 @@ S5 -- FIREWALL check (mechanical)
 [PASS] [S5-firewall] step 'S_spec_argmax' designates a unique r -> must carry a named supplied element | supplied=the eigenvalue coarse-graining plus the delta=0 pin
 [PASS] [S5-firewall] step 'attractor_of_g' designates a unique r -> must carry a named supplied element | supplied=the supplied two-sector reverse map (arrow not derived)
 [PASS] [S5-firewall] step 'attractor_of_f' designates a unique r -> must carry a named supplied element | supplied=the supplied Luders/records sharpening map (arrow not derived)
-[PASS] [S5-firewall] step 'swap_fixed_point' designates a unique r -> must carry a named supplied element | supplied=the r <-> 1-r relabelling (a relabelling, not a dynamical symmetry -- source-corrected)
+[PASS] [S5-firewall] step 'swap_fixed_point' designates a unique r -> must carry a named supplied element | supplied=exchange of the supplied sector fractions r -> 1/(4r), r>0; fixedness is the same uniformity fact, not independent selection
 [PASS] [S5-firewall] all three registered lanes remain WELL-FORMED after every step above (Q = 1/3, 2/3, 1 with real 3-spectra)
 
 --------------------------------------------------------------------------------------------
@@ -263,7 +265,7 @@ S5 -- FIREWALL check (mechanical)   [PLANTED-VIOLATION RUN -- failures below are
 [PLANT-PASS] [S5-firewall] step 'S_spec_argmax' designates a unique r -> must carry a named supplied element | supplied=the eigenvalue coarse-graining plus the delta=0 pin
 [PLANT-PASS] [S5-firewall] step 'attractor_of_g' designates a unique r -> must carry a named supplied element | supplied=the supplied two-sector reverse map (arrow not derived)
 [PLANT-PASS] [S5-firewall] step 'attractor_of_f' designates a unique r -> must carry a named supplied element | supplied=the supplied Luders/records sharpening map (arrow not derived)
-[PLANT-PASS] [S5-firewall] step 'swap_fixed_point' designates a unique r -> must carry a named supplied element | supplied=the r <-> 1-r relabelling (a relabelling, not a dynamical symmetry -- source-corrected)
+[PLANT-PASS] [S5-firewall] step 'swap_fixed_point' designates a unique r -> must carry a named supplied element | supplied=exchange of the supplied sector fractions r -> 1/(4r), r>0; fixedness is the same uniformity fact, not independent selection
 [PLANT-FAIL] [S5-firewall] step 'PLANTED_law_level_selector' designates a unique r -> must carry a named supplied element | supplied=None
 [PLANT-PASS] [S5-firewall] all three registered lanes remain WELL-FORMED after every step above (Q = 1/3, 2/3, 1 with real 3-spectra)
 [PASS] [S6-teeth] T3 FIRED: a planted UNCONDITIONAL law-level selector (designates {1/2}, no supplied element) makes the S5 firewall check FAIL | clean_run=True planted_run=False
@@ -308,7 +310,7 @@ THE RESIDUAL PRICED AND SPLIT: price only; nothing recommended for adoption (sec
 [PASS] [S8-priced] (c) item 4 FIREWALL: its minimal sentence does not designate a unique r | A registered pattern is retained only if it is unchanged under re-
 [PASS] [S8-priced] (c) item 5 carries a minimal sentence and a named existing surface | surface=realized_state_registration
 [PASS] [S8-priced] (c) item 5 FIREWALL: its minimal sentence does not designate a unique r | The realized history's initial registration on the charged-lepton 
-[PASS] [S8-priced] PRICE ONLY: no recommendation verb anywhere in the priced list | scanned 9667 chars against 7 verbs
+[PASS] [S8-priced] PRICE ONLY: no recommendation verb anywhere in the priced list | scanned 9709 chars against 7 verbs
 
   (a) DERIVES: 11   (b) MEASURABLE-BUT-UNMEASURED: 4   (c) UNDERIVABLE: 5
 
@@ -323,7 +325,7 @@ SCORECARD
 S0                 PASS=15    FAIL=0
 S1-text            PASS=20    FAIL=0
 S1-restriction     PASS=46    FAIL=0
-S2-Q1              PASS=14    FAIL=0
+S2-Q1              PASS=15    FAIL=0
 S3-Q2              PASS=38    FAIL=0
 S4-dial            PASS=12    FAIL=0
 S5-firewall        PASS=22    FAIL=0
@@ -332,13 +334,13 @@ S7-comparator      PASS=4     FAIL=0
 S8-priced          PASS=16    FAIL=0
 
 ============================================================================================
-TOTAL: PASS=199 FAIL=0
+TOTAL: PASS=200 FAIL=0
 PLANTED-VIOLATION RUN (excluded from the scorecard by construction): 12 checks, 2 deliberate failures = tooth T3 evidence
 TEETH: 12/12 FIRED
 ============================================================================================
 receipt: outputs/exactness_residual_cycle923_receipt_2026_07_28.json
 determinism_digest_sha256: 55500ff5a0dd576844ec4bd42a991e2834a573b1328adbe0a8d844579f960346
-runtime_sec: 0.519
+runtime_sec: 0.392
 
 DECLARATION: no lane's r is derived, forced or preferred; the Q2 verdict is reported as conditional on
 which SUPPLIED map is operative (neither is derived); nothing is recommended for adoption.

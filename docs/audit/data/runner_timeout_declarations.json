@@ -499,6 +499,21 @@
       "source_sha256": "796ecb829a10f1603fb2330f77acbbdbbe761ee67e1ef7248496501995db0807",
       "timeout_sec": 120,
       "reason": "Explicit bounded review cap for the C9 finite-matrix helper, matching its primary runner capture. Source-hash changes invalidate this declaration; no mathematical predicate or audit runtime policy is changed."
+    },
+    "scripts/charged_lepton_value_one_counting_bit.py": {
+      "source_sha256": "19f4057ba8805781f52f675e5e969d9dfcf5d3f1b8733a131fa2ba4d6be79b62",
+      "timeout_sec": 300,
+      "reason": "Bounded Koide scoped-source review cap; helper inclusion is not execution or inherited physical certification. Source changes invalidate this cap."
+    },
+    "scripts/flavor_asymmetry_2over9_forced_weight_2026_05_31.py": {
+      "source_sha256": "53544070fd0e6aea45cd31f222e5e6eaed6938a9082631ae59b4639797adf638",
+      "timeout_sec": 300,
+      "reason": "Bounded Koide scoped-source review cap; helper inclusion is not execution or inherited physical certification. Source changes invalidate this cap."
+    },
+    "scripts/flavor_r_half_is_a_stationary_point_not_forced_2026_06_02.py": {
+      "source_sha256": "03fbe24dad49edad1bb65b07ff6e14371aa8eed0fd338b25b0503bc0dac0c1c8",
+      "timeout_sec": 300,
+      "reason": "Bounded Koide scoped-source review cap; helper inclusion is not execution or inherited physical certification. Source changes invalidate this cap."
     }
   }
 }

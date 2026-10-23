@@ -261,7 +261,7 @@
     "a_derives": [
       "Q1: the separatrix fact and the attractor fact are the SAME fixed point read under the supplied map and its functional (composition) inverse. g = f^{-1} exactly; multipliers reciprocal (2 and 1/2, product exactly 1, by the inverse-function rule under its C^1 local-diffeomorphism / nonzero-derivative hypotheses). No physical time-reversal reading is derived.",
       "S2 is a strict Lyapunov function orienting the pair: strictly decreasing under f, strictly increasing under g, everywhere off r=1/2. This is what makes 'thermalizing' well-defined.",
-      "COINCIDENCE-DEFLATION: 'interior fixed point of sharpening', 'maximum of the 2-sector entropy' and 'HS equipartition 3a^2=6|b|^2' are ONE fact (2-outcome uniformity) in three costumes; only the r<->1-r swap fixed point is separate, and it is arithmetic. The distinguished point is singly, not multiply, distinguished.",
+      "COINCIDENCE-DEFLATION: 'interior fixed point of sharpening', 'maximum of the 2-sector entropy' and 'HS equipartition 3a^2=6|b|^2' are ONE fact (2-outcome uniformity) in three costumes; the actual sector-exchange map r->1/(4r) has the SAME uniformity fixed point, not a separate characterization. The distinguished point is singly, not multiply, distinguished.",
       "Exact conjugacy u = 2r: f is u->u^2, g is u->sqrt(u); ln u_n = 2^{+/-n} ln u_0 in closed form, so every rate is exact rather than asymptotic.",
       "Rates: f'(1/2)=2, g'(1/2)=1/2, f'(0)=0 (quadratic superstability), g'(0)=+inf. S2''(1/2) = -1 nats exactly (-1.442695 bits). Entropy deficit at |r-1/2|=3e-6 is 4.5e-12 nats below ln2.",
       "Basins: basin(f,0)=[0,1/2); basin(f,+inf)=(1/2,inf); basin(g,1/2)=(0,inf) entire, verified over 600 decades and proved by the conjugacy.",
@@ -503,7 +503,7 @@
           0.5
         ],
         "id": "swap_fixed_point",
-        "supplied": "the r <-> 1-r relabelling (a relabelling, not a dynamical symmetry -- source-corrected)"
+        "supplied": "exchange of the supplied sector fractions r -> 1/(4r), r>0; fixedness is the same uniformity fact, not independent selection"
       },
       {
         "designates": [
@@ -650,7 +650,7 @@
       "section": "S0"
     },
     {
-      "detail": "sha256=91b708236784a039.. blob=59810648f9064f70..",
+      "detail": "sha256=b33397045ae355d0.. blob=64bf3f767051152a..",
       "name": "pin present: docs/FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md",
       "ok": true,
       "section": "S0"
@@ -704,7 +704,7 @@
       "section": "S0"
     },
     {
-      "detail": "sha256=d411eb0cce830128.. blob=8f38a6f00631e6ca..",
+      "detail": "sha256=03fbe24dad49edad.. blob=c27884033e73c025..",
       "name": "pin present: scripts/flavor_r_half_is_a_stationary_point_not_forced_2026_06_02.py",
       "ok": true,
       "section": "S0"
@@ -819,13 +819,13 @@
     },
     {
       "detail": "",
-      "name": "[FLAVOR_R_HALF_IS_A_STATI] verbatim: `dS/dr=0` there,",
+      "name": "[FLAVOR_R_HALF_IS_A_STATI] verbatim: S_sector'(r)=\u22122 log(2r)/(1+2r)\u00b2.",
       "ok": true,
       "section": "S1-text"
     },
     {
       "detail": "",
-      "name": "[FLAVOR_R_HALF_IS_A_STATI] verbatim: fixed point of the r\u21921\u2212r swap",
+      "name": "[FLAVOR_R_HALF_IS_A_STATI] verbatim: fraction exchange r\u21921/(4r) has the same fixed point.",
       "ok": true,
       "section": "S1-text"
     },
@@ -957,13 +957,13 @@
     },
     {
       "detail": "published=4.2 recomputed=4.2 tol=1e-12",
-      "name": "[FLAVOR_R_HALF_STABLE_UNDER] sigma involution r<->1-r CHANGES Tr H^2 : value 4.2 at r=0.2",
+      "name": "[FLAVOR_R_HALF_STABLE_UNDER] supplied affine comparison r<->1-r (NOT sector exchange) CHANGES Tr H^2 : ",
       "ok": true,
       "section": "S1-restriction"
     },
     {
       "detail": "published=7.8 recomputed=7.800000000000001 tol=1e-12",
-      "name": "[FLAVOR_R_HALF_STABLE_UNDER] sigma involution r<->1-r CHANGES Tr H^2 : value 7.8 at r=0.8",
+      "name": "[FLAVOR_R_HALF_STABLE_UNDER] supplied affine comparison r<->1-r (NOT sector exchange) CHANGES Tr H^2 : ",
       "ok": true,
       "section": "S1-restriction"
     },
@@ -1005,7 +1005,7 @@
     },
     {
       "detail": "published=0.0 recomputed=0.0 tol=1e-12",
-      "name": "[FLAVOR_R_HALF_IS_A_STATION] r=1/2 is the fixed point of the r -> 1-r swap (source tol 1e-12)",
+      "name": "[FLAVOR_R_HALF_IS_A_STATION] r=1/2 is the fixed point of sector exchange r -> 1/(4r), r>0 (source tol 1",
       "ok": true,
       "section": "S1-restriction"
     },
@@ -1173,7 +1173,13 @@
     },
     {
       "detail": "",
-      "name": "R5: the r <-> 1-r swap fixed point is a genuinely separate but ARITHMETIC fact (x = 1-x), carrying no entropy or flow content; the thermalizing note itself corrects it from 'symmetry protection' to 'a relabelling'",
+      "name": "R5: sector exchange r -> 1/(4r), r>0, fixes 1/2 exactly when the two fractions are equal; this is the SAME uniformity/equipartition fact, not an independent selection",
+      "ok": true,
+      "section": "S2-Q1"
+    },
+    {
+      "detail": "",
+      "name": "R5-counterexample: r=2 exchanges to1/8; affine1-r=-1 is outside r>=0 and is not exchange",
       "ok": true,
       "section": "S2-Q1"
     },
@@ -1556,7 +1562,7 @@
       "section": "S5-firewall"
     },
     {
-      "detail": "supplied=the r <-> 1-r relabelling (a relabelling, not a dynamical symmetry -- source-corrected)",
+      "detail": "supplied=exchange of the supplied sector fractions r -> 1/(4r), r>0; fixedness is the same uniformity fact, not independent selection",
       "name": "step 'swap_fixed_point' designates a unique r -> must carry a named supplied element",
       "ok": true,
       "section": "S5-firewall"
@@ -1640,7 +1646,7 @@
       "section": "S5-firewall"
     },
     {
-      "detail": "supplied=the r <-> 1-r relabelling (a relabelling, not a dynamical symmetry -- source-corrected)",
+      "detail": "supplied=exchange of the supplied sector fractions r -> 1/(4r), r>0; fixedness is the same uniformity fact, not independent selection",
       "name": "step 'swap_fixed_point' designates a unique r -> must carry a named supplied element",
       "ok": true,
       "section": "S5-firewall"
@@ -1820,7 +1826,7 @@
       "section": "S8-priced"
     },
     {
-      "detail": "scanned 9667 chars against 7 verbs",
+      "detail": "scanned 9709 chars against 7 verbs",
       "name": "PRICE ONLY: no recommendation verb anywhere in the priced list",
       "ok": true,
       "section": "S8-priced"
@@ -1895,7 +1901,7 @@
       "section": "S5-firewall"
     },
     {
-      "detail": "supplied=the r <-> 1-r relabelling (a relabelling, not a dynamical symmetry -- source-corrected)",
+      "detail": "supplied=exchange of the supplied sector fractions r -> 1/(4r), r>0; fixedness is the same uniformity fact, not independent selection",
       "name": "step 'swap_fixed_point' designates a unique r -> must carry a named supplied element",
       "ok": true,
       "section": "S5-firewall"
@@ -1934,10 +1940,10 @@
         "sha256": "19fd7e0770fe040011067f3a6cfbe67d95cd017fcec0a1e50d5022c9ba1033d2"
       },
       "docs/FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md": {
-        "bytes": 5178,
-        "git_blob_sha1": "59810648f9064f706f925295abd0cae5a128a8e5",
+        "bytes": 3206,
+        "git_blob_sha1": "64bf3f767051152ac000cfb7acdf617ae4c1a2d6",
         "present": true,
-        "sha256": "91b708236784a0393aa6295fd54cca2ed6efc92d57b3a92925e01d224bfb9dcb"
+        "sha256": "b33397045ae355d0e53032806f6e008e25b7b759207335e2f853d2b0c3044461"
       },
       "docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md": {
         "bytes": 5759,
@@ -1976,10 +1982,10 @@
         "sha256": "d42eb1be045617e43d75baad341f6804b2fb141a48d0a5b7abfb4f89eb3044ba"
       },
       "scripts/flavor_r_half_is_a_stationary_point_not_forced_2026_06_02.py": {
-        "bytes": 5232,
-        "git_blob_sha1": "8f38a6f00631e6ca390fe95cfc78f17d6785ef8e",
+        "bytes": 3529,
+        "git_blob_sha1": "c27884033e73c0252d74941aafadad613761e0d1",
         "present": true,
-        "sha256": "d411eb0cce8301286f0544ee99e308ef9057637295913b08d8bbfd8d76cd7e77"
+        "sha256": "03fbe24dad49edad1bb65b07ff6e14371aa8eed0fd338b25b0503bc0dac0c1c8"
       },
       "scripts/flavor_r_half_is_the_records_flow_separatrix_2026_06_02.py": {
         "bytes": 5507,
@@ -2006,7 +2012,7 @@
         "sha256": "72d179f5bb08374a8a2b88ac7d3b11d581c75d94cba5bc141a8ff41c5d1ee60b"
       }
     },
-    "runner_sha256": "7023a18806445014fdacd0a393ac78677d0d3eb59b1747dbb44cc5871667e059"
+    "runner_sha256": "0ba586b8410b5060a2fa77d25615ad666f917bf02f2b0135b3786d78e63c6407"
   },
   "review_loop": {
     "date": "2026-08-08",
@@ -2018,11 +2024,11 @@
   },
   "role": "primary",
   "runner": "scripts/frontier_cycle923_exactness_residual_2026_07_28.py",
-  "runtime_sec": 0.519,
+  "runtime_sec": 0.392,
   "schema": "cycle923-exactness-residual-v1",
   "scorecard": {
     "fail": 0,
-    "pass": 199,
+    "pass": 200,
     "per_section": {
       "S0": {
         "fail": 0,
@@ -2038,7 +2044,7 @@
       },
       "S2-Q1": {
         "fail": 0,
-        "pass": 14
+        "pass": 15
       },
       "S3-Q2": {
         "fail": 0,
@@ -2200,7 +2206,7 @@
     {
       "match": true,
       "published_value": 4.2,
-      "quoted_text": "sigma involution r<->1-r CHANGES Tr H^2 : value 4.2 at r=0.2",
+      "quoted_text": "supplied affine comparison r<->1-r (NOT sector exchange) CHANGES Tr H^2 : value 4.2 at r=0.2",
       "recomputed_value": 4.2,
       "source": "docs/FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md",
       "tolerance": 1e-12
@@ -2208,7 +2214,7 @@
     {
       "match": true,
       "published_value": 7.8,
-      "quoted_text": "sigma involution r<->1-r CHANGES Tr H^2 : value 7.8 at r=0.8",
+      "quoted_text": "supplied affine comparison r<->1-r (NOT sector exchange) CHANGES Tr H^2 : value 7.8 at r=0.8",
       "recomputed_value": 7.800000000000001,
       "source": "docs/FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md",
       "tolerance": 1e-12
@@ -2232,7 +2238,7 @@
     {
       "match": true,
       "published_value": 0.0,
-      "quoted_text": "r=1/2 is the fixed point of the r -> 1-r swap (source tol 1e-12)",
+      "quoted_text": "r=1/2 is the fixed point of sector exchange r -> 1/(4r), r>0 (source tol 1e-12)",
       "recomputed_value": 0.0,
       "source": "docs/FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md",
       "tolerance": 1e-12

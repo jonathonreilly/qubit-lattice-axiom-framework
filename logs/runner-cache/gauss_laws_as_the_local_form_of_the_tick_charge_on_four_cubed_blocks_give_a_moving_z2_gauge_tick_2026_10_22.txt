@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/gauss_laws_as_the_local_form_of_the_tick_charge_on_four_cubed_blocks_give_a_moving_z2_gauge_tick_2026_10_22.py
+runner_sha256: e6575f6ec497eccd7f9ceebb9ee4f07da90dfaf66e3a7d33e2abca0bee650fc8
+input_fingerprint_sha256: 796da64209bb74482eb6784e4e59cb641d2516d58a869987866a118bd762d43c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 7.17
+status: ok
+----- stdout -----
+A. rung-2 roles, Gauss stars, block generators (8^3 torus)
+PASS A1 role counts per 2^3 cell are 1,3,3,1
+PASS A2 generators fitting a 4^3 block: hops cover every edge site and dual hops every face site exactly once over the two tilings | per tiling 288 terms; totals {'hop': 192, 'plaq': 96, 'dhop': 192, 'dplaq': 96}
+PASS A3 every Z generator commutes with every primal and dual Gauss star (symplectic product 0; so exp(-i theta P) keeps G for ANY theta) | 128 x 576 pairs
+PASS A4 single-site X (electric/matter term) commutes with every G | X-type vs X-type
+B. which single-site X are forced constant by Gauss restrictions
+PASS B1 2^3 tick cubes (both tilings): every site's X is forced constant up to sign, so the electric and matter configuration is frozen | forced 512/512 and 512/512
+PASS B2 no hop or plaquette fits a 2^3 cube (span 3 > 2)
+PASS B3 4^3 blocks: no edge or face site is forced in both tilings | forced per tiling by role A [0, 96, 96, 0] B [0, 96, 96, 0]; in both 0
+   note: 3^3 blocks need odd offsets, which break the parity roles; generators fitting 3^3 tilings at offsets 0,1 on 12^3: 1152
+C. tick = X-layer, tiling-A gates, tiling-B gates (8^3, all 512 qubits)
+PASS C1 all 128 Gauss stars conserved exactly with sign, U G U^dag = +G
+PASS C2 the conserved Pauli group (U P U^dag = +-P) is exactly the Gauss group: no frozen field, no extra local or global Pauli constant | dim ker(S-I) = 128, rank Gauss = 128
+PASS C3 conserved Paulis supported in a 4^3 box = the 2 Gauss stars inside it | found 2
+PASS C4 every site moves: X and Z of all vertex, edge, face, cube sites change | X moved [64, 192, 192, 64], Z moved [64, 192, 192, 64]
+PASS C5 gauge-matter coupling: one tick takes X_e onto matter sites and X_v onto edge sites | X_e(1) roles [2, 7, 0, 0]; X_v(1) roles [7, 6, 0, 0]
+PASS C6 the primal (vertex+edge) and dual (face+cube) sectors never mix: the rule is two copies exchanged by duality, not one coupled field | rows leaking across sectors 0 of 1024; Z_f(1) roles [0, 0, 7, 2]
+PASS C7 control (two X-layers per tick): extra constants of motion appear | dim ker = 640 (exp(-i pi/2 X) is a Pauli: the electric layer cancels)
+D. covariance under maps keeping both tilings and the roles up to duality
+PASS D1 of 96 maps (48 point maps about a block centre x 2 translations), 24 keep the roles up to vertex-cube/edge-face duality; the rule is invariant under all of them | tilings swap under (2,2,2); A and B gates commute, so the tick is exactly invariant
+PASS D2 a 90-degree rotation about a block centre breaks the rung-2 roles (it is not a symmetry of grading + tilings)
+E. Heisenberg front of one electric operator X_e
+PASS E1 ballistic front: radius = 2t-1 fine sites (one coarse cell per tick) for 2<=t<=9 on a 40^3 torus | radius [2, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+PASS E2 no recurrence in 24 ticks on 40^3; weight grows | weights t=1..12 [9, 29, 77, 169, 349, 423, 541, 1141, 1895, 1845, 1329, 2495]
+PASS E3 finite-torus recurrence is a commensurability effect: period 24 on 12^3 (12 on 8^3), none within 24 ticks on 40^3 | period 24
+F. U(1) local form on spin-1/2 links (exact on joint supports)
+PASS F1 ring exchange on the four edge sites of a face commutes with the U(1) divergence at each corner
+PASS F2 matter hop psi_vp^dag S^-_e psi_v + h.c. (v -> v', E lowered) commutes with both U(1) Gauss operators
+PASS F3 spin-1/2 electric term (S^z)^2 = 1/4 is constant: the U(1) rule has no on-site electric layer; Z2 (X-layer) is the qubit-native form
+G. the product of the local laws is the global charge parity
+PASS G1 prod_v G_v = prod_v X_v: the primal Gauss laws are the local form of global matter parity exp(i pi Q), the Z2 inside the tick's U(1)
+   seed 20261022 fixed; every check above is deterministic and exact
+PASS Z runtime under 90 s | 7.0 s
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

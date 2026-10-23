@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/the_fewest_change_symmetric_far_wall_term_is_forced_and_gaps_the_3450_mirror_in_a_wall_mode_chain_while_the_flux_pump_separates_anomalous_content_2026_10_23.py
+runner_sha256: 6b93d2f9a122bb710e6e6df0de9da715959b06194452fe1337bb501ad2acffed
+input_fingerprint_sha256: 2ba10146bf9cc6d42635ccf78ac4a009406f08a982b7226e9629a09474d0cd2f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 19.64
+status: ok
+----- stdout -----
+== A. exact algebra (far wall carries K_far = -K_near; null conditions are unchanged)
+PASS: A1 [T] 3450 is anomaly-free (AA = BB = AB = 0); 3451 has AA = -1
+PASS: A2 [T] every U(1)_A x U(1)_B-neutral product of fermion operators has its occupation-change vector in Z l1 + Z l2 (minors gcd 1), and every such vector is K-null: the neutral lattice is itself a gapping (Lagrangian) lattice  [12 neutral vectors in |l_i| <= 4, gcd 1]
+PASS: A3 [T] fewest occupation changes: the minimal neutral terms are exactly +-l1, +-l2 (6 fermion operators; next 8); max |l_f| = 2 needs two sites (Pauli), so the least local term lives on one nearest-neighbour bond  [l1-norms [6, 8, 12], minimal 4]
+PASS: A4 [T] the free far wall has U(1)^4 and rank[l1; l2] = 2, so both coupling phases rotate away (g1, g2 >= 0); the free-wall symmetry M = (3<->4, 5<->0, particle-hole c_k -> c_-k^+ on 3 and 5) maps l1 -> l2, l2 -> -l1, so g1 = g2 is the only M-invariant choice: one coupling g
+PASS: A5 [T] 3451: a charge kept by a Lagrangian set obeys q^T K q = 0, so no symmetric gapping set exists (brute force: no mutually null neutral pair); the 3450 terms carry Q51 = l.q51 = 2, 1 (explicit breaking)  [8 single null vectors, 0 pairs]
+== B. free 2D slab, m = 1: h_s = sin k sx + (1 - cos k) sz, layer bond T = -(sz + i sy)/2
+PASS: B1 [T]/[F] wall modes for |k| < pi/2: far wall E = +sin k (spinor (1,1)/sqrt2), near wall E = -sin k ((1,-1)/sqrt2), decay r(k) = 1 - cos k per layer, far-layer amplitude a(k) = sqrt(1 - r^2); compact at k = 0 (Ls = 12)  [|dE| 9.48e-14, |da| 1.54e-12 for |k| <= pi/4]
+PASS: B2 [T]/[F] bulk gap 1 and Chern number |C| = 1 per flavour: one flux quantum of a U(1) pumps s_f q_f particles of each flavour onto the far wall. 3450: the U(1)_A pump (3,4,-5,0) = -l1 + 2 l2 and the U(1)_B pump (2,1,-2,1) = l2 lie in the neutral lattice (the far ground state may return to itself); 3451: its pump (3,4,-5,-1) carries Q51 = -1  [gap 1.0000, C +1.0000]
+PASS: B3 [T]/[F] the near-wall mode's component along the far-wall spinor at the far layer (its coupling to a far-layer interaction) falls by r(k) per layer: eps(k, Ls) ~ r^Ls; at k = pi/12, eps = 2e-3, 8e-5, 3e-6 for Ls = 2, 3, 4  [ratio/r 1.000, 0.998; Ls = 6: 3.02e-09, 0.00039, 0.0292 at k = pi/12, pi/4, 5pi/12]
+== C. far-wall chain, the two 6-fermion bond terms, coupling g (criteria fixed after scratch exploration, see note)
+   L = 8 (n = 4 modes/flavour): g=0 gap 0.765 sp 0.383 E(P1,P2) 0.77,1.31; g=40 gap 0.085 sp 0.945 E(P1,P2) 1.61,2.20; g=200 gap 0.183 sp 1.531 E(P1,P2) 5.28,7.60
+   L = 12 (n = 6 modes/flavour): g=0 gap 0.518 sp 0.259 E(P1,P2) 0.52,0.97; g=40 gap 0.079 sp 0.656 E(P1,P2) 0.88,1.08; g=200 gap 4.031 sp 4.838 E(P1,P2) 4.03,4.10
+PASS: C1 [T] g = 0 is the free mirror: neutral gap 2 sin(pi/L), single-particle gap sin(pi/L)
+PASS: C2 [F] L = 12, g = 200: unique ground state (neutral, P = 0); neutral gap and single-particle gap > 1 (free 0.52, 0.26); flat lowest branch E(2 dk)/E(dk) < 1.5 (a linear gapless mode gives 2)  [gap 4.031, sp 4.838, ratio 1.02]
+PASS: C3 [F] intermediate coupling: at g = 40 the neutral gap has a minimum (< 0.15 at L = 8 and 12; a level crossing in the P = 0 sector between the free-like and the strong-coupling ground state)  [0.085, 0.079]
+PASS: C4 [F] (size trend: recorded result) L = 8 (4 modes/flavour: one lattice step +-l1, +-l2 fills the window) has a quasi-doublet at g = 200 (gap < 0.25 against > 1 at L = 12): the n = 4 chain is mode-capped, n = 8 (L = 16, sector dimension 2.3e6) is beyond the budget, so NO finite-size trend is extracted  [L8 gap 0.183, sp 1.531]
+== D. near-wall flavour-3 modes in the chain (L = 8, g = 200), coupled through their exact far-layer leak eps(k, Ls)
+   shift at eps = 0: 7.62e-14
+PASS: D1 [F] the near-wall left mover k = -pi/8 (charge 3) keeps its free level sin(pi/8) to O(eps^2): exact at eps = 0, shift / eps_max^2 bounded as Ls grows, and < 1e-3 by Ls = 4  [criteria: |shift(eps=0)| < 1e-10, shift(4) < 1e-3, shift/eps^2 not growing]  [shift -4.37e-05, -2.54e-07, -1.47e-09 (Ls 2,3,4); /eps^2 0.00227, 4.74e-05, 8.53e-07]
+== E. anomalous control 3451 (charge (3,4,5,1)); fewest-change symmetric bond terms (l1-norm 4, |l_f| <= 2)
+PASS: E1 [T] the 3451 terms are neutral and of minimal l1-norm 4 (rank 3: only U(1)_51 is kept); none is K-null
+PASS: E2 [F] (recorded result, a property of the regulator) the chain ALSO gives 3451 a unique neutral ground state with a charge gap at g = 1000, L = 8: the wall-mode chain is a non-local (momentum-window) regulator and cannot see the anomaly  [charge gaps Q51 = -1: 32.59, +1: 32.59]
+PASS: E3 [T]+[F] Laughlin pump decides: one U(1)_51 flux quantum moves the far wall into Q51 = -1 (B2), whose lowest state is 32.6 above the ground state, so the would-be symmetric gapped far wall is not returned (no symmetric gapped far wall for 3451); the 3450 pumps stay in the ground-state sector (B2, C2)
+Supplied: slab (m = 1), projection onto wall modes, bond forms, g, L, Ls. elapsed 19.1s, peak RSS 261 MB
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/glide_keeping_cube_ticks_carry_an_even_number_of_light_weyl_doublets_per_glide_label_2026_10_22.py
+runner_sha256: 0ae79cac184936794f9f9cb0bafbec1421b32742691bf70652ce3819d0e45f23
+input_fingerprint_sha256: 72e6a31d43512e754a86db812f31b6e4f8ded2b072ae35050dc962b1ec8ce0d3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.15
+status: ok
+----- stdout -----
+== A. glide-keeping ticks (exact) ==
+PASS A1 massless CL-1 tick: U = P^2 G^-2 with G = Ue^-1 D P (the glide determines the tick)  [3.5e-16]
+PASS A2 any local even half-step A: U = (DP)A(DP)^-1 A keeps G = A^-1 DP and U = P^2 G^-2 (GLIDE-KEEP <=> odd half-step = glide image of even half-step)  [5.6e-16]
+PASS A3 a random range-2 T-symmetric glide-keeping deformation (plus a random copy-sector cube unitary) keeps all 12 rotations  [max err 3.9e-16]
+== B. the glide label Lam = e^{-i th.1/2} G U^{1/2} ==
+PASS B1 Lam^2 = 1, [Lam, U] = 0, Lam(th + 2 pi e1) = -Lam(th): an antiperiodic involution (labels swap round every cycle)
+PASS B2 massless K = 0 doublets (glide, s, dim, q): L2 (+,+,q=2), L1 (+,-,q=1), R2 (-,+,q=2), R1 (-,-,q=1); target = L2 + R2 = ONE light doublet per label  [[(1, 1, 2), (1, -1, 1), (-1, 1, 2), (-1, -1, 1)]]
+PASS B3 at K = 0 and at the corner pi(1,1,1) all 12 rotations COMMUTE with Lam (random deformation); at (pi,0,0) two of the four 2-fold elements anticommute (no constraint there)  [{'K=0': 'cccccccccccc', 'corner': 'cccccccccccc', '(pi,0,0)': 'ccaa'}]
+PASS B4 at K = 0 and the corner the 12 rotations act spinorially: every T- and Lam-symmetric operator, and the tick itself, is doubly degenerate -> each label sector is a sum of doublets  [3.2e-14]
+PASS B5 one kept turn alone (C3 about (1,1,1), no 2-fold rotations) forces no doublets: escape needs the 2-fold rotations broken  [min splitting 1.45e-02]
+== C. glide parity theorem (counting) ==
+   n(w,l) = rank of window w in {(-pi,0),(0,pi)} x label l: constant off the nodes; equal for l = +-
+   (B1); even at the corner (B3-B4); near K = 0 each light Weyl doublet adds 1 to n(-,l), others 2.
+PASS C1 every placement of the two copy doublets (labels x sides) with light L2(+) + R2(-) violates label balance or corner evenness: NO clean glide-keeping band has exactly one light doublet per label  [12 placements, all excluded]
+PASS C2 control, massless tick: 2 light doublets per label; n_neg = 4 on the whole grid, (2,2) per label at the corner: consistent with the theorem  [n_neg [4], corner labels [2, 2]]
+== D. natural glide-symmetric copy terms fail as predicted; AX-3 evades by breaking the glide ==
+PASS D1 copy inversion   PS + DI PC: 4 light at K=0, copy levels (E, tr Lam) [(-1.2, 2), (1.2, 2)] -> E=0 points off K=0 in 8/8 searches, min dist to pi 0.018
+PASS D2 glide Dirac mass PS + i DI PC: 4 light at K=0, copy levels (E, tr Lam) [(-1.94, -2), (1.94, 2)] -> E=0 points off K=0 in 8/8 searches, min dist to pi 0.980
+PASS D3 copy shift       PS + e^{i pi/4} PC: 4 light at K=0, copy levels (E, tr Lam) [(1.57, 0)] -> E=0 points off K=0 in 7/8 searches, min dist to pi 0.417
+PASS D4 best of a 12-start Nelder-Mead search over even+odd copy-sector cube unitaries (margin -> 0-, never > 0): an E = 0 doublet sits on the 4-orbit pi(1/2,1/2,1/2) of the turn axes (finite diagnostic)  [min|E| there 3.0e-06]
+PASS D5 AX-3 (glide broken) evades: one light pair at K = 0, n_neg constant, no E=0 off K=0, pi-gap open  [|[G,U]| 0.52, n_neg [4], grid min|E| 0.293, min dist to pi 1.988]
+verdict: GLIDE-KEEP + 2-fold rotations + one light doublet per label is impossible at any range;
+open escapes: an odd number of extra light doublets per label (e.g. at the corner), break the 2-fold
+rotations (keep one turn), or a composite (multi-site/multi-mode) cell
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

@@ -1,6 +1,6 @@
 {
- "edge_count": 16351,
- "node_count": 7423,
+ "edge_count": 16355,
+ "node_count": 7425,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -19562,6 +19562,10 @@
    "deps_hash": "7c59543ab5ac",
    "out_degree": 1
   },
+  "regge_action_per_cell_and_the_conditional_gravity_coupling_bounded_theorem_note_2026-10-21": {
+   "deps_hash": "1286065ea43e",
+   "out_degree": 2
+  },
   "regge_curved_prism_tick_dispersion_narrow_theorem_note_2026-06-17": {
    "deps_hash": "7e5bfd516c31",
    "out_degree": 4
@@ -23344,6 +23348,10 @@
   },
   "vector_magnetic_extension_note": {
    "deps_hash": "28d39e3d87d5",
+   "out_degree": 2
+  },
+  "vector_response_to_labelled_relay_values_forces_lie_algebra_self_coupling_bounded_theorem_note_2026-10-21": {
+   "deps_hash": "1286065ea43e",
    "out_degree": 2
   },
   "vector_sector_note": {

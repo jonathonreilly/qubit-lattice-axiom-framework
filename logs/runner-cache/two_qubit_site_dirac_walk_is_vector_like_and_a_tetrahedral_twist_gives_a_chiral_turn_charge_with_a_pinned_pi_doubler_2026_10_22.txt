@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/two_qubit_site_dirac_walk_is_vector_like_and_a_tetrahedral_twist_gives_a_chiral_turn_charge_with_a_pinned_pi_doubler_2026_10_22.py
+runner_sha256: 5b01b3146d8aad49640ce0967faf5733f36d556dea8db5e2c4f7c09529b249e4
+input_fingerprint_sha256: dd588ffed9bc165868ac3fee2bb8dc9ad12133ed4f37907d3d3c2c41d05ff485
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.38
+status: ok
+----- stdout -----
+PASS A0 D(R) sigma_a D(R)^+ = sum_b R_ba sigma_b for the turn, a 2-fold and a 4-fold [1e-16]
+PASS A1 G(b*) is PSD of rank 3 (u* = 0.0395524) [eig -0.0000 0.0173 0.0529 0.7059]
+PASS A2 unitary; every band doubly degenerate (X^2 = scalar), so every node is a 4-fold Dirac point [unit 9e-16, split 4e-16]
+PASS A3 exactly O-covariant with coin 1 (x) D(R) [3e-16]
+PASS A4 the only node on a 24^3 grid is k = 0 (1-|f| > 0 elsewhere) [min 1-|f| = 0.028]
+PASS A5 at k = 0: linear part i s tau3 (x) sigma.k; chirality tau3=+1 -> -1, tau3=-1 -> +1: L and R Weyls at the SAME momentum [s = 0.9144]
+PASS A6 an O-invariant mass (h1(0) = sin m) is allowed: covariant, gap at k=0 equals m (vector-like light Dirac) [gap 0.300]
+PASS A7 turn charge: det(W_turn | tau3 block) = 1 on both blocks, so q_L = q_R = 0
+PASS A8 the Z3-twisted turn rho (x) D is NOT a symmetry of the O member (invariant h breaks it) [residual 1.40]
+PASS B1 NN walk f = sum c/3, h1 - i h2 = (sqrt2/3)(c1 + w c2 + wbar c3), g = s/sqrt3 is exactly unitary [4e-16]
+PASS B2 T-covariant (turn with rho = diag(wbar, w) on flavor, 2-folds untwisted) [5e-16]
+PASS B3 neither the untwisted turn nor any tested 4-fold coin is a symmetry (T, not O) [4-fold 1.55, untwisted turn 1.55]
+PASS B4 h vanishes on the whole body diagonal (1 + w + wbar = 0): mass at k=0 forbidden, R node forced
+PASS B5 nodes (|f| = 1) on the 24^3 grid: exactly k = 0 (f=+1, quasienergy 0) and R = pi(1,1,1) (f=-1, quasienergy pi) [next |f| = 0.989]
+PASS B6 chirality per tau3 block is the SAME at both nodes: tau3=+1 -> -1,-1 ; tau3=-1 -> +1,+1
+PASS B7 turn charge (det = w^2q): tau3=+1 block q = 2, tau3=-1 block q = 1; L and R differ, both nonzero
+PASS B8 every T-invariant on-site bilinear (24-element group average) is tau3-diagonal and scalar per block: no light-mirror mass at either node, only node shifts [off 2e-16]
+PASS B9 on-site chirality filter (1+tau3)/2 commutes with the walk up to O(k^2) (h ~ k^2; glide filter leaked O(k)) [leak 5.2e-05, 2.1e-04]
+PASS B10 momentum filter (1 - sum c/3)/2 is 0 at k=0 and 1 at R: it separates the two NODES, not L from R
+PASS B11 Weyl census (chirality -1 = L): L at 0 and at R both q=2, R at 0 and at R both q=1; the R node is a pi-mode doubler pair pinned at a T-fixed point with q_L != q_R, so no small T-keeping term gaps it
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

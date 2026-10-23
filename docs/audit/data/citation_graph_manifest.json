@@ -1,6 +1,6 @@
 {
- "edge_count": 16355,
- "node_count": 7425,
+ "edge_count": 16357,
+ "node_count": 7426,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14885,6 +14885,10 @@
   "lorentz_violation_derived_note": {
    "deps_hash": "7c11d8d637c4",
    "out_degree": 1
+  },
+  "lorentzian_regge_continuation_and_the_attractive_geometry_phase_sign_bounded_theorem_note_2026-10-21": {
+   "deps_hash": "1286065ea43e",
+   "out_degree": 2
   },
   "low_energy_phase_rate_optimality_bounded_theorem_note_2026-10-12": {
    "deps_hash": "b79065af3c13",

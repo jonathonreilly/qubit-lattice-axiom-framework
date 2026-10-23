@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/the_tick_fraction_and_every_edge_answering_the_full_hinge_sum_fix_the_second_order_clock_rate_so_ppn_beta_is_one_2026_10_23.py
+runner_sha256: a1afceeaab660a37be87891f45ae308f5f172e6d7f1edb892eb11ba4cd06657c
+input_fingerprint_sha256: af4cadd84b0cf255fcad2d695d11795c384ff6e83ea1b5286ea77b4cb39e679b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.33
+status: ok
+----- stdout -----
+PASS: A1 exterior: N=(1-M/2r)/(1+M/2r), a=b=(1+M/2r)^2 solves tick + radial-edge + tangential-edge equations
+PASS: A2 conformal family: tick eq and density (trace) eq hold for ANY A, C  [E_N=0, E_a+E_b=0]
+PASS: A3 radial-edge (anisotropic) equation forces C = 2A  [E_a = 4*r*(2*A - C)/(A + r)**2]
+PASS: A4 areal gauge: tick eq (Hamiltonian constraint) solved by a = (1-2m/r)^(-1/2)
+PASS: A5 tick eq in areal gauge = 2a (r(1-1/a^2))': one integration constant m, no source outside  [E_N = 2a d/dr[r(1-1/a^2)]]
+PASS: A6 radial-edge eq then gives N = C1 sqrt(1-2m/r): one-parameter exterior (Birkhoff) for ANY source  [N = C1*sqrt(-2*m + r)/sqrt(r)]
+PASS: A7 tangential-edge eq holds identically on that solution (no extra condition)
+PASS: A8 areal and isotropic forms agree: 1-2m/r(rho) = N_iso^2
+PASS: A9 g00 = -(1 - 2U + 2 beta U^2), g_ij = (1 + 2 gamma U) delta_ij  ->  beta = 1, gamma = 1 (forced)  [beta=1, gamma=1]
+PASS: B1 density-only response (edges locked conformal): beta = 1/2 + A/C, gamma = 2A/C, beta-1 = (gamma-1)/2
+PASS: B2 quadratic truncation of the hinge sum leaves beta undetermined (field-variable choice)  [N = 1+Phi: beta=1/2, N = exp(Phi): beta=1, N = 1/(1-Phi): beta=3/2, N^2 = 1+2Phi: beta=0]
+INFO B3 source coupling (-mN, -mN Omega^k, -mN^2, ...) enters only the constant m (Kepler mass); A4-A7 use exterior eqs only, so beta is coupling-independent
+PASS: B4 density-only, ball GM/R=0.001: gamma-1 ~ +0.6 GM/R, beta-1 ~ +0.3 GM/R (body-dependent)  [gamma-1=5.9926e-04, beta-1=2.9963e-04]
+PASS: B4 density-only, ball GM/R=0.01: gamma-1 ~ +0.6 GM/R, beta-1 ~ +0.3 GM/R (body-dependent)  [gamma-1=5.9274e-03, beta-1=2.9637e-03]
+INFO Sun GM/R = 2.12e-6: density-only option would give beta-1 ~ 6.4e-7, gamma-1 ~ 1.3e-6 (but violates the edge eqs)
+PASS: C1 full rule: |beta - 1| = 0 < 1e-4 (perihelion / lunar ranging)
+PASS: C2 Nordtvedt eta = 4beta - gamma - 3 = 0 for the full rule (no body dependence)
+elapsed 1.2s
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

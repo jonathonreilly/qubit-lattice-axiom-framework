@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/one_qubit_site_monomial_rotations_make_c4_invariant_charges_bosons_fermions_need_a_cluster_gauge_or_a_spread_charge_2026_10_22.py
+runner_sha256: 32733b3ceec4f916db7d1453898d42529c6c087db0f9073d02f216647dacd6ea
+input_fingerprint_sha256: b01747b009bc6f1ccbce3e08f21604e7631be9962a598d4081f09247f5a3df65
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.09
+status: ok
+----- stdout -----
+== A. involution lemma and label triviality of axis C2 (one qubit per site)
+[PASS] A1 [T] omega(P, sP) = sum over fixed sites of omega(P_x, c_x P_x) for every monomial involution (swapped pairs cancel); with no relabelling on fixed sites, P and sP COMMUTE | 3000 seeded instances, mismatches 0
+[PASS] A2 [T] all 10 homs O -> S3 = Sp(2,2) (single-qubit Cliffords mod Paulis) send the 3 axis C2 to the identity, and every hom C4 -> S3 kills the square: an axis C2 never relabels a site of its axis (each such site is fixed by the whole C4); edge C2 can (soldering freedom) | homs 10, axis C2 trivial in all: True; homs moving an edge C2: 9
+[PASS] A3 [T] on the 7-site star: no Pauli anticommutes with its axis-C2 image under any monomial action, so six mutually anticommuting 'Majorana per direction' operators permuted by O cannot exist at one qubit per site (gamma_+a and gamma_-a are swapped by an axis C2); an edge C2 with a relabelled centre does allow anticommuting pairs | anticommuting (P, RP): axis C2 0/16384, edge C2 with centre relabel 8192/16384
+== B. exact identity theta = lambda * sigma on a fermionic code (BKSF, bare permutation)
+[PASS] B1 [T] a D3-invariant BKSF ordering exists (C3 about (1,1,1) and the edge C2 about (1,-1,0) act as bare qubit permutations); local dressings (GF(2) solve) give legs whose junction excitation is C2-invariant, and T3^-1 R(T3) has zero syndrome | ordering ['x+', 'x-', 'y+', 'y-', 'z+', 'z-'], L=14, axis leg to (6, 8, 0)
+[PASS] B2 [T] fermion (bare-hop T-junction -1; dressed legs -1) with lambda = [T1, R T1] = +1 (no qubit on the edge-C2 axis: lemma) and axis sign sigma = [T1, T3 R(T3)] = -1: theta = lambda * sigma exactly; the axis sign carries the statistics (spinorial edge C2, cf. main bare-permutation note) | theta bare -1, dressed -1, lambda +1, sigma -1
+== D. composite model: one qubit per fine site, 7-site stars at 3Z^3, star-local Majoranas
+[PASS] D1 [T] B (Z on the 6 fine neighbours of a coarse-vertex site), R (ZZ on fine nearest-neighbour arm pairs), S (BKSF plaquettes on 4 stars) and single-site Z on idle sites all commute; torus log2 dim 3 = b1(T^3) | commute True; log2 dim coarse L=3: 3, L=4: 3 (fine qubits 729, 1728)
+[PASS] D2 [T] all 24 cube rotations about a coarse vertex preserve the code when each moves the stars and permutes their Majoranas as directions (a star-local Clifford gauge); bare site permutation does not | rotations preserving the code: star-Majorana action 24/24, bare permutation 6/24; diameters B 2, R 1, S 8 fine steps
+[PASS] D3 [T] the vertex charge is a FERMION (T-junction -1); under the axis C2 the pair sign is lambda = -1 and the axis sign sigma = +1 (C4-invariant charge), so theta = lambda: the statistics rides on the non-monomial gauge (X on one arm maps to a 2-site Pauli); the bare permutation gives lambda = +1 (lemma) and is not a symmetry | theta -1, lambda -1, sigma +1, lambda_bare +1, |supp R(X_arm)| 2
+elapsed_seconds 3.9
+supplied: the Pauli-stabilizer class, the monomial reading of rotation covariance, the BKSF ordering (found by search), the composite star placement, Jordan-Wigner order inside each star, idle-site Z terms.
+cited: Levin-Wen PRB 67 245316 (T-junction); Bravyi-Kitaev 2002; main BKSF orbit, bare-permutation, six-direction, Majorana-per-direction, site-localizable and one-qubit stabilizer notes (2026-10-17).
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

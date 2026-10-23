@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/gauging_the_spin10_centre_on_five_mode_sites_pins_the_spinor_charge_as_a_static_background_and_spinor_matter_needs_fractionalised_spinons_2026_10_22.py
+runner_sha256: 7554d6725f7c927dcc855c2ab6fdfc57069931e3b0adf4e9e6f412d3a7974bc0
+input_fingerprint_sha256: b4c3453e73b434c376c6c0b2197c24f443952755ef40398cdc3c0e833aff78eb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.83
+status: ok
+----- stdout -----
+== A. site centre (32 states) ==
+PASS A1 z_site = -i (-1)^F
+PASS A2 z^2 = -1 (c-number), z^4 = 1
+PASS A3 z commutes with all 45 Spin(10) generators
+PASS A4 Ad_z on all 1024 site operators has eigenvalues +-1 only (no odd Z4 charge) {'+1': 512, '-1': 512, '+i': 0, '-i': 0}
+PASS A5 z c_a z^-1 = -c_a for all five modes
+== B. Z4 link register = 2 qubits, e = b1 + 2 b2 ==
+PASS B1 C S = i S C, C^4 = S^4 = 1
+PASS B2 C = (phase gate on b1)(Z on b2): a product of single-qubit gates
+PASS B3 S^2 = X on b2 and C^2 = Z on b1 (single-qubit Paulis)
+PASS B4 orientation flip e->-e = CNOT(b1->b2); R C R = C^dag, R S R = S^dag
+PASS B5 S is a two-qubit Clifford but not a Pauli
+== C. Gauss law on two sites + one link (4096 states) ==
+PASS C1 [G_s, G_t] = 0 and G^4 = 1
+PASS C2 Spin(10) hop K_st S^2 and U(5) hop c^dag_s c_t S^2 commute with both Gauss operators
+PASS C3 controls: bare K anticommutes with G_s; K S fails (G K S G^-1 = -i K S)
+PASS C4 Gauss operators commute with all 45 total Spin(10) generators (link is a singlet)
+PASS C5 G_s G_t = z_global (link factors cancel)
+PASS C6 physical subspace: dim 512, all (-1)^F = -1 = i^N, z_global = 1, one odd site, e = 1 or 3
+PASS C7 physical Spin(10) content = 2 x (1 + 45 + 210): root class only Casimirs [-0.0, 16.0, 24.0] mult [2, 90, 420]
+PASS C8 a bare link shift S makes Gauss defects (G_s, G_t) = (i, -i) and commutes with Spin(10)
+   [C done 0.1s]
+== D. coarse L^3 tori ==
+PASS D1 L=2: prod_v G_v = z_global; physical sector needs (-1)^F = i^N N=8 -> (-1)^F=1
+PASS D2 L=2: Z4 ground-space count 4^b1 with b1 = 3 -> 64
+PASS D1 L=3: prod_v G_v = z_global; physical sector needs (-1)^F = i^N N=27 -> EMPTY (N odd)
+PASS D2 L=3: Z4 ground-space count 4^b1 with b1 = 3 -> 64
+PASS D1 L=4: prod_v G_v = z_global; physical sector needs (-1)^F = i^N N=64 -> (-1)^F=1
+PASS D2 L=4: Z4 ground-space count 4^b1 with b1 = 3 -> 64
+PASS D3 prod of G over a 2^3 block = z_block x (flux through its 24 boundary links) flux-loop sweep phase = i^(#even sites) (-i)^(#odd sites)
+== E. rotation covariance (24 proper cubic rotations, L=4) ==
+PASS E1 all 24 rotations map every Gauss operator and plaquette to one, with e->-e on reversed links
+PASS E2 control: without the CNOT relabel, Gauss covariance fails 1344/1536 fail
+== F. spinon kinematics: singlet clusters (exact weight-zero sectors) ==
+PASS F0 Casimir identity C = 45n/4 + sum (10 - K^2)/4 matches sum M^2 on the n=2 sector
+PASS F1 16 x 16 (both sites even): weight-zero sector empty, so no singlet (10+120+126)
+PASS F2 16 x 16bar: exactly one singlet per orientation nullity 2 in 32 states
+PASS F3 16^4 (all four sites even): exactly 2 Spin(10) singlets 960 all-even of 7776 weight-zero states
+PASS F4 all-even cluster centre class (-i)^n: singlet-capable only at n = 0 mod 4 (Z4 fusion)
+PASS F5 spinon x local fermion: class (-i)(-1) = +i, a 16bar in the same sector; z^2 = -1 kept
+   [F done 0.4s]
+== G. Levin-Wen exchange sign (sites p, a, b, c; hops t_i: p -> i) ==
+PASS G1 fermion hops: exchange sign -1; hard-core boson hops: +1 -1, +1
+PASS G2 charge-1 defects move by link shifts S only; all S commute -> Levin-Wen sign +1 (boson)
+elapsed 0.4s
+TOTAL: PASS=35 FAIL=0
+
+----- stderr -----
+

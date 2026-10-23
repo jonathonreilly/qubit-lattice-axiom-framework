@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/the_tick_offset_between_neighbours_answering_the_hinge_sum_drags_frames_with_the_lense_thirring_coefficient_so_ppn_alpha1_is_zero_2026_10_23.py
+runner_sha256: 44a4c1bb0d4a00afc700cdff1599199e6fd2dedd8751c135a437e99f08cab71d
+input_fingerprint_sha256: 04a4e63a942dab7823582e23122e025d91b3765b9571bf81a33c2ed57a8a2278
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 22.02
+status: ok
+----- stdout -----
+PASS: A0 det g = -1 exactly (sqrt(-g) = N sqrt(h) = 1)
+PASS: A1 sqrt(-g) R4 at O(offset^2) has the same Euler-Lagrange equations as K_ij K^ij - K^2 (coefficient ONE, same hinge sum as the static N sqrt(h) R3 part)
+PASS: B1 record phase per taken tick -m dtau: linear offset term is +m v.beta / dtau0 (momentum x offset)  [S_m contains + int j.beta, j = rho v]
+PASS: C1 offset equation: curl curl beta = -16 pi G j  (i.e. lap beta - grad div beta = 16 pi G rho v)
+PASS: C2 a per-SITE offset (beta = grad f, tick-counter relabel) drops out identically: pure gauge
+PASS: C3 divergence of the offset equation = div j + (lam-1) lap(div beta)/(8 pi G): solvable iff the record current is conserved; for lam != 1, div beta = 0, curl beta unchanged
+PASS: D1 uniform ball: int rho x_k x_m = (I/2) delta_km, so V = G int rho v/|x-x'| -> G (J x x)/(2 r^3) at dipole order
+PASS: D2 exterior beta = -2G (J x x)/r^3 solves the source-free offset equation (curl curl = 0, div = 0)
+PASS: D3 gyroscope precession -(1/2) curl beta = (G/r^3)[3(J.rhat)rhat - J]: Lense-Thirring, GR coefficient
+PASS: E1 boosted static field g0i = -2(1+gamma)U w; rule's offset gives -4 U w; equal iff gamma = 1 (tick-skip-gamma's derived value)
+PASS: E2 alpha1 = 8 - 4(1+gamma) = 0 at gamma = 1; PPN frame-dragging factor (4gamma+4+alpha1)/8 = 1  [alpha1(gamma) = 4 - 4*gamma]
+INFO F options (frame-dragging ratio to GR -> alpha1): per-edge offset responds (hinge sum, c=1): 1 -> 0; offset frozen (beta = 0): 0 -> -8; per-site offset only (beta = grad f): 0 -> -8; tilt hinges weighted c: 1/c -> -8 + 8/c
+PASS: F1 frozen or per-site-only offset: Omega_FD = 0, alpha1 = -8; responding per-edge offset: ratio 1, alpha1 = 0
+PASS: G1 lattice: curl of a site-difference offset is identically zero (d1 d0 = 0): per-site offsets carry no slip
+PASS: G2 loop current is conserved on the lattice (d0^T j = 0): the per-site offset sees no source
+PASS: G3 lattice offset equation d1^T d1 beta = -16 pi G j solved (residual)  [rel res 5.4e-13]
+PASS: G4 the slip field curl beta is independent of the longitudinal (gauge) weight and of gauge fixing  [max rel dev 5.4e-12]
+PASS: G5 lattice: beta_x = -4 V_x with V the Newtonian-normalised potential of the momentum density (same Green function)  [rel dev 6.5e-14]
+PASS: G6 isolated lattice loop: slip flux -> continuum offset field -4G int j/|x-x'| (grid error falls with r, ~1/r^2, < 4% at r=10)  [r=4: axis 1.154, eq 1.156, lattice axis/eq -1.31 vs -1.31; r=7: axis 1.064, eq 1.049, lattice axis/eq -1.76 vs -1.74; r=10: axis 1.029, eq 1.029, lattice axis/eq -1.87 vs -1.87]
+INFO G6 Lb = 96 periodic: image error ~ (r/Lb)^3; continuum = exact Neumann integral of the same square loop; point-dipole axis/equator ratio is -2 (D3 pattern)
+INFO H circular polar-orbit average of D3 for the Earth: 40.8 mas/yr (published GR value 39.2 uses the mission orbit)
+PASS: H1 GP-B: rule (ratio 1 -> 39.2 mas/yr) within 1 sigma of 37.2 +- 7.2  [0.28 sigma]
+PASS: H2 GP-B: frozen / per-site offset (0 mas/yr) excluded at > 5 sigma  [5.2 sigma]
+PASS: H3 LAGEOS (~10%): rule ratio 1 passes, frozen ratio 0 fails
+PASS: H4 lunar ranging |alpha1| < 1e-4: rule alpha1 = 0 passes; frozen alpha1 = -8 fails
+INFO H a separate tilt-hinge weight c is bounded by GP-B (2 sigma) to 0.76 < c < 1.72; the single hinge sum gives c = 1
+elapsed 21.2s
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

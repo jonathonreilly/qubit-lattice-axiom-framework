@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_color_su3_matter_realization_residual_map_2026_06_05.py
-runner_sha256: 2b1ab2dd3bae9d1e1a184b548dcce9068d877583e1f7f2db1f71a0fceb4c4b60
-timeout_sec: 120
+runner_sha256: c605a1a17f79c38b0df8852568372acc5c08f9ff079aee9dee2903462b91c348
+input_fingerprint_sha256: 96305151ca3305065247a10f25ce4515f4999d11c0f1f1090f22ebacc936efad
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ==============================================================================

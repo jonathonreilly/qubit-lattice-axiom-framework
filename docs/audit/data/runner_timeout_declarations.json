@@ -729,6 +729,56 @@
       "source_sha256": "e3cc4a6c3449fbb28cb3153cbf8c075826336261ffe8d89c309ad27f4e32e255",
       "timeout_sec": 300,
       "reason": "Bounded CKM scoped-source replay cap; inherited authority failures remain diagnostic, no physics certification. Source changes invalidate this cap."
+    },
+    "scripts/cl3_a3_r4_hostile_review_2026_05_08_r4hr.py": {
+      "source_sha256": "b2bdf6501f8aed5c364ccb9ebb8d3d4d6281eaccd89a775f1a06ca8e9d7498dc",
+      "timeout_sec": 120,
+      "reason": "Bounded PR9851 affected-output diagnostic capture; source declares 120 seconds. No exact Wilson, physical limit, or campaign exhaustion certification."
+    },
+    "scripts/frontier_c3_symmetry_preserved_interpretation.py": {
+      "source_sha256": "e5e02b4f19e1f1109095923c85957e76255cccee3ef8a0f2da02da9d2ac090dc",
+      "timeout_sec": 300,
+      "reason": "Bounded B02 affected-change replay cap; execution is not inherited theorem certification. Source changes invalidate this declaration."
+    },
+    "scripts/frontier_color_mr_carrier_routing_split_2026_06_05.py": {
+      "source_sha256": "a3f2301200d9b7ff5dcb368944d887d31f97a4c77ec86b11205fdb2c10f2032e",
+      "timeout_sec": 300,
+      "reason": "Bounded B02 affected-change replay cap; execution is not inherited theorem certification. Source changes invalidate this declaration."
+    },
+    "scripts/frontier_color_su3_matter_realization_residual_map_2026_06_05.py": {
+      "source_sha256": "c605a1a17f79c38b0df8852568372acc5c08f9ff079aee9dee2903462b91c348",
+      "timeout_sec": 300,
+      "reason": "Bounded B02 affected-change replay cap; execution is not inherited theorem certification. Source changes invalidate this declaration."
+    },
+    "scripts/cl3_c_iso_numerical_convergence_2026_05_10_numconv.py": {
+      "source_sha256": "845f68f9677e958bf5d00a21f93efa0fd237e21b095b617654a5d6f7571e8a44",
+      "timeout_sec": 120,
+      "reason": "Bounded PR9851 affected-output diagnostic capture; source declares 120 seconds. No exact Wilson, physical limit, or campaign exhaustion certification."
+    },
+    "scripts/cl3_c_iso_su3_nlo_2026_05_08_su3nlo.py": {
+      "source_sha256": "ee5d8f35090eab421798f5754808d143e06608b9282373c59c1d7078a2a8e306",
+      "timeout_sec": 300,
+      "reason": "Bounded B02 affected-change replay cap; execution is not inherited theorem certification. Source changes invalidate this declaration."
+    },
+    "scripts/cl3_c_iso_su3_nnlo_2026_05_10_su3nnlo.py": {
+      "source_sha256": "0877792134a5ef2c40801d944646edb9fab0e66131cb5a8ec02e2c175e331900",
+      "timeout_sec": 120,
+      "reason": "Bounded PR9851 affected-output diagnostic capture; source declares 120 seconds. No exact Wilson, physical limit, or campaign exhaustion certification."
+    },
+    "scripts/cl3_higgs_mass_wilson_loop_spectroscopy_2026_05_10_higgsH3.py": {
+      "source_sha256": "cdfda9920de89dbac005410477f340b1f0a05fb308e248d8e390d712a50b8112",
+      "timeout_sec": 300,
+      "reason": "Bounded B02 affected-change replay cap; execution is not inherited theorem certification. Source changes invalidate this declaration."
+    },
+    "scripts/cl3_lattice_physical_matching_2026_05_10_match.py": {
+      "source_sha256": "584c0a85fa1dfb7e1d8a9ea691f56ba62a798608d162a0a07e4da138def3e202",
+      "timeout_sec": 300,
+      "reason": "Bounded B02 affected-change replay cap; execution is not inherited theorem certification. Source changes invalidate this declaration."
+    },
+    "scripts/audit_companion_staggered_dirac_substep4_labeling_no_go_2026_05_17.py": {
+      "source_sha256": "a4724ad103bf0004e9bf23579c6d19cc6e6a3cf8791d88d7434a8e908ef02d7e",
+      "timeout_sec": 300,
+      "reason": "Bounded B02 affected-change replay cap; execution is not inherited theorem certification. Source changes invalidate this declaration."
     }
   }
 }

@@ -1,86 +1,11 @@
-"""
-SU(3) NLO Convention C-iso closure runner.
+"""Finite SU(3) single-plaquette fit and supplied-scenario diagnostics.
 
-Authority role
---------------
-Source-note proposal -- audit verdict and downstream status set only by
-the independent audit lane.
-
-Purpose
-=======
-Replace the SU(2) proxy used in PR #685 (Path C analytic refinement of
-Convention C-iso) with the actual SU(3) Bessel-determinant / character
-expansion. The output is the SU(3) Wilson single-plaquette
-``<P>_W_SU(3)(beta_W)`` in closed analytic form, compared against the
-SU(3) heat-kernel single-plaquette ``<P>_HK_SU(3)(s_t) = 1 - exp(-(4/3) s_t)``.
-
-Key derivation (analytic)
-=========================
-SU(3) Wilson <P>_W(beta_W) at large beta_W (Drouffe-Zuber 1983,
-Menotti-Onofri 1981, Brower-Rebbi-Soni 1981) is computed via Weyl
-integration over the SU(3) Cartan torus. Parametrize U = diag(e^(i t1), e^(i t2), e^(i t3))
-with t3 = -t1 - t2. The single-plaquette partition function is
-
-    Z(beta) = (1/(6*(2 pi)^2)) int dt_1 dt_2 |V|^2 exp((beta/3) Re tr U)
-
-where |V|^2 = 16 sin^2((t1-t2)/2) sin^2((t2-t3)/2) sin^2((t3-t1)/2)
-is the SU(3) Vandermonde-Haar measure.
-
-Substituting t_i = phi_i sqrt(3/beta) and expanding both the action
-and the Vandermonde measure to consistent order in 1/beta, we obtain:
-
-    <P>_W_SU(3)(beta_W) = 4/beta_W - 1/beta_W^2 + c_3/beta_W^3 + ...
-                        = (4/3) s_t - (1/9) s_t^2 + c_3 s_t^3 / 27 + ...
-
-where c_3 ~ -4.33 (numerically extracted; analytic c_3 closed form is
-left to a follow-up; the numerical asymptotic value is sufficient for
-ε_witness applications).
-
-The heat-kernel single-plaquette is, by direct character integration:
-
-    <P>_HK_SU(3)(s_t) = 1 - exp(-(4/3) s_t)
-                      = (4/3) s_t - (8/9) s_t^2 + (32/81) s_t^3 - ...
-
-Therefore the difference:
-
-    (P_W - P_HK)(s_t) = (-1/9 + 8/9) s_t^2 + O(s_t^3)
-                      = (7/9) s_t^2 + O(s_t^3)
-
-The relative shift:
-
-    rel_shift_SU(3)(s_t) = (P_W - P_HK)/P_HK
-                         = (7/12) s_t + (7/18 + 3 c_3/108 - 8/108) s_t^2 + ...
-                         = (7/12) s_t + O(s_t^2)
-                         ≈ 0.5833 s_t
-
-This is 2.33x larger than the SU(2) proxy ``rel_shift_SU(2) = (1/4) s_t``
-used in PR #685. The Convention C-iso correction therefore needs to be
-RAISED, not LOWERED, vs the prior estimate.
-
-Verifies
-========
-1. Self-test: SU(3) NLO derivation cross-checked against numerical
-   Weyl-integration <P>_W at beta in {3, 6, 12, ..., 10000}.
-2. Path A: analytic SU(3) Wilson single-plaquette to NLO.
-3. Path B: numerical Weyl integration <P>_W(beta) for beta_W = 3/s_t
-   across xi in {1, 2, 4, 8, 16, 32, 64, 128}, agreement with analytic.
-4. Path C: combine analytic SU(3) NLO + thermodynamic-limit MC value
-   (PR #685: <P>_KS = 0.4410 ± 0.0006) -> Convention C-iso bound on
-   the Hamilton-limit <P>_KS.
-
-References
-==========
-- Drouffe J.M., Zuber J.B. (1983), Phys. Rep. 102 -- strong-coupling
-  expansion / character form.
-- Menotti P., Onofri E. (1981), Nucl. Phys. B190, 288 -- heat-kernel.
-- Karsch F. (1982), Nucl. Phys. B205, 285 -- anisotropic SU(N).
-- Engels J., Karsch F., Satz H. (1990), Nucl. Phys. B342, 7 -- SU(3) plaquette.
-- Boyd G. et al. (1996), Nucl. Phys. B469, 419 -- modern SU(3) thermo.
-- Brower R.C., Rebbi C., Soni S. (1981) -- single-plaq Wilson SU(3) one-loop.
-
-Usage
-=====
-    python3 scripts/cl3_c_iso_su3_nlo_2026_05_08_su3nlo.py
+The cited RESULTS.md and SU3_NLO_DERIVATION.md artifacts are absent.
+Wilson coefficients are supplied hypotheses compared with finite quadrature,
+not a verified analytic derivation. Hamilton-limit values and transfer rules
+are historical scenario inputs, not validated error bounds. Existing numerical
+operands, fit thresholds, output keys and CLI remain unchanged. Original source:
+f24d17d97d372df977476e4a69674577f31af575:scripts/cl3_c_iso_su3_nlo_2026_05_08_su3nlo.py
 """
 
 from __future__ import annotations
@@ -172,20 +97,7 @@ def P_W_SU3_numerical(beta_W: float, ngauss: int = 100) -> float:
 
 
 def P_W_SU3_analytic_NLO(s_t: float, order: int = 3) -> float:
-    """SU(3) Wilson single-plaquette analytic NLO expansion.
-
-    From the symbolic-numerical Vandermonde-Gaussian moment derivation
-    (see SU3_NLO_DERIVATION.md):
-
-        <P>_W_SU(3)(beta_W) = 4/beta_W - 1/beta_W^2 + c_3/beta_W^3 + ...
-        With beta_W = 3/s_t: <P>_W_SU(3)(s_t) = (4/3) s_t - (s_t^2 / 9)
-                                                + c_3 s_t^3 / 27 + ...
-
-    The c_3 coefficient is extracted numerically from the Weyl integral
-    fit (c_3 ≈ -4.33). The analytic closed form for c_3 requires
-    extending the Vandermonde and cos series to t^8/t^10 order (left
-    as a documented sub-frontier in the bounded note).
-    """
+    """Supplied Wilson-series coefficients, not a recovered analytic derivation. The historical c_3=-4.33 fit is preserved as a numerical scenario."""
     LO = (4.0 / 3.0) * s_t
     NLO = -(s_t ** 2) / 9.0
     if order == 1:
@@ -202,14 +114,14 @@ def P_W_SU3_analytic_NLO(s_t: float, order: int = 3) -> float:
 
 
 def derivation_self_test(verbose: bool = True) -> dict:
-    """Numerical verification of the SU(3) NLO analytic derivation.
+    """Finite numerical fit comparison with supplied NLO coefficient; not a proof.
 
     Plot (P_W*beta - 4)*beta vs 1/beta. Asymptotic intercept = c_2 = -1
     (the NLO coefficient). Fit slope to extract c_3.
     """
     if verbose:
         print("\n" + "=" * 70)
-        print("SELF-TEST: SU(3) NLO Analytic Derivation")
+        print("SELF-TEST: finite fit versus supplied SU(3) NLO coefficient")
         print("=" * 70)
 
     betas = [12, 24, 48, 96, 192, 384, 768, 1500, 3000]
@@ -238,7 +150,7 @@ def derivation_self_test(verbose: bool = True) -> dict:
 
     if verbose:
         print(f"\n  Fit: y = c_2 + c_3/beta + c_4/beta^2")
-        print(f"    c_2 = {c_2_fit:+.5f}  (analytic prediction: -1)")
+        print(f"    c_2 = {c_2_fit:+.5f}  (supplied target: -1)")
         print(f"    c_3 = {c_3_fit:+.5f}")
         print(f"    c_4 = {c_4_fit:+.5f}")
 
@@ -271,7 +183,7 @@ def path_a_analytic(verbose: bool = True) -> dict:
     """Path A: SU(3) NLO analytic <P>_W vs <P>_HK across multiple xi values."""
     if verbose:
         print("\n" + "=" * 70)
-        print("PATH A: SU(3) Convention C-iso analytic NLO comparison")
+        print("PATH A: SU(3) single-plaquette numerical/supplied-series comparison")
         print("=" * 70)
         print("  At g^2 = 1; s_t = g^2 / (2 xi) = 1/(2 xi);  beta_W = 3/s_t")
         print()
@@ -333,7 +245,7 @@ def path_a_analytic(verbose: bool = True) -> dict:
 
     if verbose:
         print()
-        print(f"  Analytic LO of rel_shift_SU(3): 7/12 = {7/12:.6f}")
+        print(f"  Conditional LO of rel_shift_SU(3): 7/12 = {7/12:.6f}")
         print(f"  (vs SU(2) proxy: 1/4 = {1/4:.6f}; ratio SU(3)/SU(2) = {(7/12)/(1/4):.2f})")
 
     return {
@@ -350,21 +262,13 @@ def path_a_analytic(verbose: bool = True) -> dict:
 
 def path_b_absolute_shift(P_KS_inf: float, P_KS_inf_err: float,
                            verbose: bool = True) -> dict:
-    """Path B: Convention C-iso shift on the Hamilton-limit ``<P>_KS``.
-
-    Combines:
-    - the thermodynamic-limit Hamilton-form spatial plaquette
-      ``<P>_KS = 0.4410 ± 0.0006`` from PR #685 (5-seed, L=3,4,6 extrap),
-    - the SU(3) NLO Convention C-iso correction at each xi.
-
-    Reports the final exact-tier <P>_KS error budget vs ξ.
-    """
+    """Conditional arithmetic using supplied P_KS and an assumed single-to-multiplaquette transfer rule. Historical extrapolation provenance is unavailable. No physical error bound is established."""
     if verbose:
         print("\n" + "=" * 70)
-        print("PATH B: SU(3) C-iso absolute shift on <P>_KS")
+        print("PATH B: assumed transfer-rule scenario on supplied <P>_KS")
         print("=" * 70)
-        print(f"  Hamilton-limit input: <P>_KS = {P_KS_inf} ± {P_KS_inf_err}")
-        print(f"  (from PR #685 thermodynamic-limit extrapolation L=3,4,6)")
+        print(f"  Supplied historical scenario input: <P>_KS = {P_KS_inf} ± {P_KS_inf_err}")
+        print(f"  (old extrapolation attribution is unverified; see corrected source note)")
         print()
         print(f"  {'xi':>5} {'s_t':>10} {'rel(LO)':>10} {'rel(num)':>10} "
               f"{'abs_shift':>12} {'<P>_KS bound':>14}")
@@ -384,7 +288,7 @@ def path_b_absolute_shift(P_KS_inf: float, P_KS_inf_err: float,
         # Absolute shift on <P>_KS: rel_shift propagates as an additive bias.
         abs_shift = rel_num * P_KS_inf
         # KS-Hamilton-corrected estimate: <P>_KS_corr = <P>_KS_anisotropic / (1 + rel_shift)
-        # Or in the bounding direction, the true <P>_KS lies in [<P> - abs_shift, <P> + abs_shift].
+        # Treating this as an interval for a physical value is an unproved additional assumption.
         rows.append({
             "xi": xi,
             "s_t": s_t,
@@ -415,7 +319,7 @@ def path_b_absolute_shift(P_KS_inf: float, P_KS_inf_err: float,
             # abs_shift = rel * P_KS = (7/(24 xi)) * 0.4410 = 0.1287/xi.
             # 0.1287/xi < 3e-4 -> xi > 429. So we'd need xi ~ 430 to hit ε_witness.
             xi_required = (7.0 / 24.0) * P_KS_inf / target
-            print(f"  → Projected: xi ≈ {xi_required:.0f} required to drop C-iso below ε_witness.")
+            print(f"  → Conditional scenario projection: xi ≈ {xi_required:.0f} required to drop C-iso below ε_witness.")
 
     return {
         "rows": rows,
@@ -431,26 +335,20 @@ def path_b_absolute_shift(P_KS_inf: float, P_KS_inf_err: float,
 
 
 def path_c_error_budget(path_b_result: dict, verbose: bool = True) -> dict:
-    """Path C: combined ε_total error budget on the Hamilton-limit <P>_KS.
-
-    Combines:
-    - Statistical: 4×10⁻⁴ (PR #685, multi-seed jackknife)
-    - Volume: 6×10⁻⁴ (thermodynamic-limit extrapolation L=3,4,6)
-    - C-iso (this work): SU(3) NLO at canonical operating xi
-    """
+    """Quadratic combination of supplied historical statistical, volume and transfer terms. This is scenario arithmetic, not a validated Hamilton-limit uncertainty."""
     if verbose:
         print("\n" + "=" * 70)
-        print("PATH C: Total error budget on Hamilton-limit <P>_KS")
+        print("PATH C: supplied-scenario quadratic error combination")
         print("=" * 70)
 
     eps_stat = 0.0002       # PR #685 statistical
     eps_vol = 0.0006        # PR #685 volume
     P_KS = path_b_result["P_KS_inf"]
 
-    print(f"  ε_stat (PR #685 multi-seed)        = {eps_stat:.4f}")
-    print(f"  ε_vol  (PR #685 L→∞ extrapolation) = {eps_vol:.4f}")
+    print(f"  ε_stat (supplied historical value)        = {eps_stat:.4f}")
+    print(f"  ε_vol  (supplied historical value) = {eps_vol:.4f}")
     print()
-    print(f"  ε_C-iso (this work, SU(3) NLO):")
+    print(f"  ε_C-iso (assumed transfer scenario):")
 
     rows = []
     for r in path_b_result["rows"]:
@@ -531,10 +429,11 @@ def main() -> int:
         "module": "cl3_c_iso_su3_nlo_2026_05_08_su3nlo",
     }
 
-    print(f"\n=== SU(3) NLO Convention C-iso Closure ===")
+    print(f"\n=== SU(3) finite diagnostics; physical closure open ===")
     print(f"Date: 2026-05-08  |  Workspace: {args.out_dir}")
-    print(f"Hamilton-limit input: <P>_KS = {args.P_KS_inf} ± {args.P_KS_err}\n")
+    print(f"Supplied historical scenario input: <P>_KS = {args.P_KS_inf} ± {args.P_KS_err}\n")
 
+    print("Scope: numerical fit only; missing analytic proof and physical transfer remain open.")
     t0 = time.time()
 
     if args.mode in ("self_test", "all"):
@@ -560,10 +459,10 @@ def main() -> int:
 
     # Final summary
     print("\n" + "=" * 70)
-    print("CLOSURE SUMMARY")
+    print("CONDITIONAL DIAGNOSTIC SUMMARY")
     print("=" * 70)
     if "path_a" in results:
-        print(f"Path A (SU(3) NLO analytic):")
+        print(f"Path A (supplied SU(3) NLO hypothesis):")
         print(f"  rel_shift_SU(3)(s_t) = (7/12) s_t + O(s_t^2) ≈ 0.5833 s_t")
         print(f"  vs SU(2) proxy used in PR #685: rel_shift = (1/4) s_t = 0.25 s_t")
         print(f"  Ratio SU(3)/SU(2) = 7/3 ≈ 2.33  (C-iso is LARGER than prior estimate)")
@@ -573,7 +472,7 @@ def main() -> int:
             if r["xi"] in [4, 16, 32, 64]:
                 print(f"  xi={r['xi']:>3d}: |Δ<P>| = {abs(r['abs_shift']):.5f} ({r['rel_num']:.3%} relative)")
     if "path_c" in results:
-        print(f"\nPath C (total error budget):")
+        print(f"\nPath C (supplied-scenario error arithmetic):")
         for r in results["path_c"]["rows"]:
             if r["xi"] in [4, 16, 32, 64]:
                 print(f"  xi={r['xi']:>3d}: ε_total = {r['eps_total']:.5f}  ({r['dominant']} dominates)")

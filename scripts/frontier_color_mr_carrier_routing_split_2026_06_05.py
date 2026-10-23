@@ -12,6 +12,9 @@ construction, no coupling/action selection, no dial fixing, no audit verdicts.
 
 from __future__ import annotations
 
+# Cache identity includes actual note reads and existence checks.
+AUDIT_INPUT_PATHS = ['docs/COLOR_MR_CARRIER_ROUTING_SPLIT_2026-06-05.md']
+
 from dataclasses import dataclass
 from math import comb
 from pathlib import Path

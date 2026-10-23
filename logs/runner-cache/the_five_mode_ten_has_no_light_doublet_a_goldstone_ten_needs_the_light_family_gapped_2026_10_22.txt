@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/the_five_mode_ten_has_no_light_doublet_a_goldstone_ten_needs_the_light_family_gapped_2026_10_22.py
+runner_sha256: 39beb246c273ff3d812626b61b4547968331ee2e61277b820b373c8775d1af75
+input_fingerprint_sha256: 76368e3f66a1e0dbb48054ac62f0f700150249ddfd50bcc5b4c11d1b9d30d1a4
+timeout_sec: 90
+exit_code: 0
+elapsed_sec: 1.15
+status: ok
+----- stdout -----
+== A. Cl(12) on 6 modes; the 10 = the mode operators ==
+PASS A1 12 Majoranas obey {g_a,g_b} = 2 delta (Cl(12))
+PASS A2 even 32 = light 16 (A1 empty, even on 5) + mirror 16 (A1 filled, odd on 5)
+PASS A3 U(5)_X: every c_j^dag has X = +2, so 10 = 5_{+2} + 5bar_{-2} (rule TJ frame)  [X=[2.0, 2.0, 2.0, 2.0, 2.0]]
+PASS A4 SM charges of c^dag: E -> (1,2) Y=+1/2, B-L=0 (the doublet); T1 -> (3,1) Y=-1/3, B-L=-2/3 (the triplet)  [Y=[0.5, 0.5, -0.333, -0.333, -0.333] B-L=[0.0, 0.0, -0.667, -0.667, -0.667]]
+  the 10's doublet/triplet split IS the E/T1 split of the mode labels (same parameter as omega_E != omega_T)
+PASS A5 Casimirs on the 32: Spin(12) spinor 16.5 (norm C = sum l_i(l_i + n - 2i)); Spin(10) 11.25 on both halves
+PASS A6 the Majoranas g_1..g_10 carry Casimir 9 = the vector 10 (fermionic: odd operators)
+PASS A7 the Spin(10) element Omega = prod exp(i pi (n_j-1/2)) acts as -1 on the 10 = (-1)^F5: every 10-tensor on 5 modes is FERMIONIC
+PASS A8 a BOSONIC 10 exists only with a Spin(10)-singlet fermion: g_a g_A1 is even, Omega-odd (Casimir 9)
+  (cone correction: free 5-mode cones carry the fermionic 10; products of an even number of 10s never contain a 10)
+== B. Lorentz-scalar Weyl pairs of the 32 (internally symmetric part, 528) ==
+  (C12, C10, q6): mult  -> [((20.0, 0.0, 0.0), 1), ((20.0, 9.0, -1.0), 10), ((20.0, 9.0, 1.0), 10), ((20.0, 16.0, 0.0), 45), ((36.0, 24.0, 0.0), 210), ((36.0, 25.0, -1.0), 126), ((36.0, 25.0, 1.0), 126)]
+PASS B1 symmetric 32x32 = 66 (C=20) + 462 (C=36): no Spin(12) singlet scalar (32 pseudoreal: protected)
+PASS B2 66 -> 45_0 + 1_0 + 10_{+1} + 10_{-1} under Spin(10) x U(1)_A1
+PASS B3 light-light pairs (q6=-1) = 10 + 126 (no singlet: the 16 is protected); mirror-mirror = 10 + 126bar
+PASS B4 light-mirror scalars (q6=0) = 1 + 45 + 210: NO 10 (a scalar 10 is never a light-mirror bilinear)
+== C. Goldstone dichotomy ==
+PASS C1 the 1_0 pair is purely light x mirror and full rank with equal singular values: a Dirac mass for the WHOLE light 16  [sv=0.1768 x16]
+PASS C2 stabiliser of the 1_0 pair in so(12) = 46 = so(10)+u(1): 20 Goldstones  [rank=20]
+PASS C3 the 20 Goldstones are 10_{+1} + 10_{-1} (they contain the B-L=0, Y=+-1/2 doublets AND the triplets)
+PASS C4 a mirror-only term (spurion = A1 occupation) has the same commutant 46: Spin(12) broken EXPLICITLY, no Goldstone
+  => Goldstone 10 exists only if light+mirror pair up (light gapped at f); SMG keeps the light chiral but leaves no Goldstone
+== D. half-link cubic structure (6 link ends + site) ==
+PASS D1 O_h (48) on the 6 link ends: 3 orbits on pairs, so covariant one-body terms = span(1, P antipode, F face)
+PASS D2 P: A1 +1, E +1, T1 -1 (the antipode term groups A1 with E: 6 = 3_even + 3_odd)
+PASS D3 F: A1 4, E -2, T1 0
+PASS D4 coset frequencies (c_a^dag c_A1): doublet wE-wA1 = -6b, triplet wT-wA1 = -2a-4b (exact)
+  b = 0 (straight-through link ends) gives an exact doublet generator and a triplet split -2a: DT at one-body level
+PASS D5 site-A1 hop h=0.3: doublet seesaw gap = sqrt(a^2/4+6h^2)-a/2 (~6h^2/a)  [gap=4.639e-01 6h^2/a=7.714e-01]
+PASS D5 site-A1 hop h=0.03: doublet seesaw gap = sqrt(a^2/4+6h^2)-a/2 (~6h^2/a)  [gap=7.631e-03 6h^2/a=7.714e-03]
+PASS D5 site-A1 hop h=0.003: doublet seesaw gap = sqrt(a^2/4+6h^2)-a/2 (~6h^2/a)  [gap=7.713e-05 6h^2/a=7.714e-05]
+PASS D6 one-body commutant: h=0 -> 19 (u(3)_A1+E + u(3)_T1 + u(1)), h!=0 -> 15 (doublet generator broken)
+== E. Yukawa 16 x 16 x 10 ==
+PASS E1 B = product of the 5 imaginary Majoranas is Spin(10)-invariant (M^T B + B M = 0)
+PASS E2 Y_a = B g_a on 16 x 16 is symmetric and nonzero: the family matrix of 16_f 16_g 10 is SYMMETRIC
+  neutral comps: c1^dag -> [('L', 'nc'), ('q', 'uc')] ; c1 -> [('L', 'ec'), ('dc', 'q')]
+PASS E3 one neutral component couples (q uc),(L nc) [up/Dirac-nu], the other (q dc),(L ec) [down/lepton], all |entries| equal  [|Y|=[np.float64(1.0)]]
+  single 10 per family: m_u = m_nuD, m_d = m_e at matching; real 10 (H_d = H_u*) adds m_t = m_b (tan beta = 1)
+PASS E4 N=3 with per-family turn charges q_f in {1,2}: anomaly 4 sum q = 0 mod 3 forces UNIFORM q  [[(1, 1, 1), (2, 2, 2)]]
+PASS E5 uniform q: every Y_fg has turn phase w^(2q+qH): all 9 entries allowed (one qH) or none (texture-free)
+PASS E6 family symmetry: Sym^2(3) has 1 SO(3) invariant (Y ~ 1: degenerate families) and 0 U(3) invariants (charge 2): Y = 0
+PASS E7 anarchic O(1) symmetric Y (seeded, 1e5): up-type hierarchy (mc/mt 3.2e-3, mu/mt 6.5e-6) essentially never  [hits=0, P(r3<=6.5e-6)=0.0e+00, median r2=0.60]
+== F. estimates against measurement (approx., cited inputs; not checks of a rule) ==
+  unprotected scalar 10 at the cell: (m_D/M)^2 needed = 2.6e-33 (FITTED tuning)
+  DT seesaw: 6h^2/a = m_H/M needs h/a = 2.9e-09 (FITTED)
+  single 10 at ~2e16 GeV: mb/mtau=0.60, ms/mmu=0.21, md/me=2.3 (pred 1,1,1); |Vus|=0.225 (pred 0); real 10: mt/mb=74 (pred 1)
+PASS F1 single-10 relations contradicted by >= factor 2 in two light ratios (estimate)
+TOTAL: PASS=32 FAIL=0
+
+----- stderr -----
+

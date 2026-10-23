@@ -30,18 +30,20 @@ Condition on the following explicit finite model:
   state (nonzero `x`, `y`, `z` components, so the pointer entropy `H(Pi_S)` is
   a nontrivial record and a pointer-rotating coupling genuinely scrambles it);
 - a local interaction Hamiltonian `H_int` and the step `U = exp(-i H_int t)`;
-- the quantum-Darwinism reading of a *record*: a record of `S` in a fragment
-  `F` is the recoverable `Pi_S`-information of `S` from `F`, computed as the
+- the supplied quantum-Darwinism information diagnostic `J(F)`: the
   system<->fragment mutual information after dephasing `S` in the pointer
-  basis (the Holevo content of the pointer ensemble), written `J(F)`. Two
-  distinct functionals are kept apart. The recoverable content `J(F)` is
+  basis, equal to the Holevo chi of the pointer-conditioned fragment ensemble.
+  It upper-bounds operational accessible information in general; the runner
+  does not optimize over measurements. At the orthogonal perfect-copy
+  plateau, measuring the distinguishing fragment states attains `J(F)=H_S`,
+  so it equals recoverable pointer information there. Two distinct
+  functionals are kept apart. The Holevo content `J(F)` is
   NOT additive over disjoint fragments: on redundant perfect copies it
   saturates, `J(F1 U F2) = J(F1) = J(F2) = H_S` (strictly sub-additive).
-  The Record axiom governs a scalar readout `I` over finite pairwise-disjoint
-  record collections, but it does not identify that scalar with Holevo
-  information. This bounded model therefore supplies the singleton readout
+  The current Record axiom supplies no scalar collection functional or finite
+  additivity. This bounded model separately supplies the singleton readout
   bridge `I({k}) := J({k})` for a fragment that is treated as one pointer
-  record. Record additivity then extends it to the record-mass
+  record. A separately supplied additive extension defines the record-mass
   `I_mass(F) = sum_{k in F} J({k})`. At the perfect-recording plateau this
   supplied additive extension and the union-fragment content obey
   `I_mass(F1 U F2) - J(F1 U F2) = (m - 1) * H_S` for `m` disjoint
@@ -115,10 +117,21 @@ This is **bounded** because the quantum-Darwinism identification of a *record*
 (a redundant, objective, persistent imprint of a system observable) is a model
 convention in this note. The Lattice, Qubit, Admissibility, and Record axioms
 supply the `Z^3` sites, one-site qubit possibility domain, local admissibility,
-and finite scalar record-readout additivity. They do not select this finite
-carrier or pointer, identify the Record scalar with `J`, supply dynamics, or
+and content-determined record readout. They do not supply finite scalar
+additivity or select this finite
+carrier or pointer, identify a supplied model scalar with `J`, supply dynamics, or
 assert that a record is a redundant pointer imprint. The positive construction
 is conditional on the explicit bounded bridges and hypotheses above.
+
+## Premise correction (2026-10-21)
+
+The current governing memo explicitly records the August 13 removal of scalar
+`I`, finite additivity and `I(empty)=0`. Earlier wording here incorrectly
+attributed that removed structure to Record. The finite construction is now
+conditional on both its singleton normalization and its additive collection
+extension. This correction changes neither the supplied matrices nor the
+finite numerical predicates, and does not certify a physical formation law.
+The original source is recoverable at Git `f24d17d97d372df977476e4a69674577f31af575`.
 
 ## Load-Bearing Inputs
 
@@ -129,7 +142,8 @@ is conditional on the explicit bounded bridges and hypotheses above.
   redundancy `R_delta`, classical plateau, persistence) and the choice of the
   explicit `S + E_1..E_n` carrier and `Pi_S` pointer are explicit bounded
   inputs for this note. The singleton normalization `I({k}) := J({k})` is part
-  of this supplied readout bridge; it is not furnished by Record additivity.
+  of this supplied readout bridge; the additive collection functional is also
+  supplied, not furnished by the current Record axiom.
 - The Heisenberg-equation pointer-conservation argument (item 1) is an
   elementary reproven-in-runner fact, not an import.
 - The nonzero controlled-copy interaction, the recording time
@@ -209,18 +223,20 @@ The runner verifies, on the explicit `S + E_1..E_4` model plus a minimal
    persists in the fresh-fragment/idle-finished-fragment chain while
    same-fragment coherent re-use can erase the record;
 2. the two record functionals are kept distinct: the bounded singleton bridge
-   supplies `I({k}) := J({k})`, Record additivity defines
+   supplies `I({k}) := J({k})`, a separate additive extension defines
    `I_mass(F) = sum_{k in F} J({k})`, and the separately computed
    union-fragment content `J(F)` saturates at `H_S`. The plateau compatibility
    identity `I_mass(F1 U F2) - J(F1 U F2) = (m - 1) * H_S` and strict
-   sub-additivity are checked without claiming that the runner derives Record
-   additivity or the singleton normalization;
+   sub-additivity are checked without claiming that the runner derives the additive
+   extension or the singleton normalization;
 3. the demolition control `[H_int, Pi_S] != 0` records the wrong observable,
    collapses the redundancy, oscillates the recorded value, and reaches no
    objective consensus;
-4. the interpolation sweep: objective-record quality is maximal and perfect
-   only at the zero-commutator point and decreases monotonically as
-   `||[H_int, Pi_S]||` grows;
+4. the nine-point interpolation sweep at `theta=linspace(0,pi/2,9)`:
+   sampled Holevo quality is maximal and perfect only at theta=0, every
+   nonzero sampled point is below `H_S-1e-6`, and successive sampled values
+   are weakly decreasing (tolerance `1e-6`). This does not establish
+   uniqueness or monotonicity between samples or for other families;
 5. pointer-population preservation and necessity over random Hamiltonians via
    the Heisenberg equation (60/60 each), plus explicit commuting non-recording
    counterexamples (`H_int = 0`, system-only phase, and a nonzero

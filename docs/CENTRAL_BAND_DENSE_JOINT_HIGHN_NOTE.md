@@ -1,5 +1,7 @@
 # Central-Band Dense High-N Joint Card Note
 
+**Type:** bounded_theorem
+
 **Date:** 2026-04-03  
 **Status:** complete, bounded high-N extension of the dense central-band lane
 
@@ -8,7 +10,7 @@ hard-geometry lane. It keeps the corrected Born harness fixed and sweeps only
 the dense central-band family.
 
 Script:
-[`scripts/central_band_dense_joint_highN.py`](/Users/jonreilly/Projects/Physics/scripts/central_band_dense_joint_highN.py)
+[`scripts/central_band_dense_joint_highN.py`](../scripts/central_band_dense_joint_highN.py)
 
 ## Setup
 

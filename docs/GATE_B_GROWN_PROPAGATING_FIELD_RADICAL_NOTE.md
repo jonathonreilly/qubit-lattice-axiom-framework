@@ -1,5 +1,7 @@
 # Gate B Grown Propagating Field Radical Note — One-Seed One-Update Falsifier (Binding)
 
+**Type:** no_go
+
 **Date:** 2026-04-05 (scope narrowed 2026-05-17 per audited_conditional `scope_too_broad` repair: binding scope is the one-seed one-update falsifier only; broader fixed-point-convergence / retained-baseline claim split out)
 **Status:** bounded no-go on the one-seed one-update falsifier point
 of the beam-sourced self-consistent propagating-field architecture
@@ -33,8 +35,8 @@ supplied here.
 
 ## Artifact chain
 
-- [`scripts/gate_b_grown_propagating_field_radical.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_grown_propagating_field_radical.py)
-- [`logs/2026-04-05-gate-b-grown-propagating-field-radical.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-grown-propagating-field-radical.txt)
+- [`scripts/gate_b_grown_propagating_field_radical.py`](../scripts/gate_b_grown_propagating_field_radical.py)
+- `logs/2026-04-05-gate-b-grown-propagating-field-radical.txt` (historical local citation; target unavailable at `logs/2026-04-05-gate-b-grown-propagating-field-radical.txt`; original location `/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-grown-propagating-field-radical.txt`; no substitute authority supplied)
 
 ## Question
 

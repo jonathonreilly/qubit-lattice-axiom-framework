@@ -534,6 +534,186 @@
       "source_sha256": "564fb6f991105b31195d2d0120f3a36112d833dc8c0887e2a26bdc631aee5868",
       "timeout_sec": 300,
       "reason": "Historical/provenance affected-change packaging cap; no inherited physics certification. Source changes invalidate this declaration."
+    },
+    "scripts/action_regularity_crossover.py": {
+      "source_sha256": "f1a8469848ff1142cebaa236fe736df386db05b04f9255dfe1634c2b91f9cf19",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/action_geometry_bridge_probe.py": {
+      "source_sha256": "d6821baee726a0dfef382f9abd5d653a63ceb2b50311f76ef1fabb82f3e307ff",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/action_power_canonical_harness.py": {
+      "source_sha256": "42edf509eacb80fa08deeffbb58b2d601089e3396dd368783b53f63ae6d4150d",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/action_power_3d_gravity_sign_closure.py": {
+      "source_sha256": "8556c74ec101cc7872c45a864771563f534b7fbe9d3130bac86fd3194bfee16d",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/axiom_first_microcausality_check.py": {
+      "source_sha256": "fdd8cf3a24d2187156d7283330503ef004fcc75e9ab0fff730a1979d9b2b692f",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/free_bilinear_quasilocal_lr_bridge_2026_06_10.py": {
+      "source_sha256": "bc2b325c4e65dc3080f3a8367d0f533c111ed80a20983bab4fddbb4e635389d3",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py": {
+      "source_sha256": "038b8a151a1962abb2249e8d9a5f8b694d451de1ebe5064af5037594038f308c",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/axiom_first_spectrum_condition_check.py": {
+      "source_sha256": "61c4aa453dc582549a7b71747988bf6601e06d646285aa20415dc173fe2de4fa",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/generative_causal_dag_interference.py": {
+      "source_sha256": "61266823b2ba7a2b225f15dbd54bae3044a627a1ed59704e1a96b0846247a57f",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/gap_topological_asymmetry_layernorm_combo.py": {
+      "source_sha256": "1a102a71830ae25e3093b968bd176305f33e3af558163ef33b24bcf1dad5e044",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/gap_topological_asymmetry.py": {
+      "source_sha256": "23a058d0937f929637aa676b503ef279ab452b95030127beefd8a6ec922629c3",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/stochastic_collapse_born_calibration.py": {
+      "source_sha256": "582cd51d2318f106b9dd0874eee05020e9cf39f0275cb971569ec5c1a190485b",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/combined_gravity_scaling.py": {
+      "source_sha256": "514b9b78c8f5c812c7d3e3c46ed75f081fa88d0b209d8d6d17b44fd95fcd4b5c",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/topology_families.py": {
+      "source_sha256": "4f61a1f86bef40d67fec5a2d640df29c1c527a6cffced37e6122d877edce06d1",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/central_band_dense_joint_card.py": {
+      "source_sha256": "cedcc617066154708204a78efaaf6426cc5c6e182fae2e5e303cf199eebdf5c7",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/coupled_field_generated_family_probe.py": {
+      "source_sha256": "f5c6c4678f8e12bb7fedf9b9ba79f29cb42cc5aaf135b5365546ea42043d23a7",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/causal_field_gravity.py": {
+      "source_sha256": "bb0e4137da2988d1abd7f14cd0c4cc745fc6c3c09a50e13c16435ff8876bd48f",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/directional_b_geometry_normalized_holdout_transfer.py": {
+      "source_sha256": "45b51a50f65c103810ff32f66406897f9bd8a2b3ef30162f0f170ab7b2d20ceb",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/directional_b_readout_compare.py": {
+      "source_sha256": "c5435de4debae3554f4648099dbb259e94fbf96db47564bdd6739d8313c1b15c",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/scaling_testbench.py": {
+      "source_sha256": "fefcf67cba51a2fedb57b24ca3f22066e4cacadee1d5f05939a517c05441a8d4",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/two_register_decoherence.py": {
+      "source_sha256": "8e96914ae3f7b79a83a11422820bfedc18d070f1762da8dcd5a3bf1c52e2d3eb",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/directional_b_overlap_onset_transfer_holdout.py": {
+      "source_sha256": "b852a5e9cc8fea2b803c8a65af3eb0c9e72018d39e86d3a7faf39c45ce2edb06",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/density_matrix_analysis.py": {
+      "source_sha256": "3f125052aa13fd82e2d4a903d74f657d4d32835bc9f3ffdebd1bb4dfbe6a3d1b",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/directional_b_overlap_onset_local_density_compare.py": {
+      "source_sha256": "0e00ef5027a4cadf0005418f93b7bb45e72651bbc518a528787f78bb95ad4bb2",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/gravity_observable_readout_scaling_compare.py": {
+      "source_sha256": "35f33cf7fc0486d029cd4653653e7163db1483afdb887557a87af49aac67ae25",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/directional_b_geometry_normalized_overlap_map.py": {
+      "source_sha256": "87d9bc6ba599072baca69626853d95cf40363aadebcf598708305c61ace225de",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/gravity_packet_local_action_flow_transfer_compare.py": {
+      "source_sha256": "fcc0cef544de8c5e50ff86e2ca1aed44ea6e6451953067f4b8303d1c509155ec",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/frontier_dm_neutrino_operator_selection_obstruction.py": {
+      "source_sha256": "6871338a43cc303f90036904a8fc6f0f58d88b75c9e44989b41f4ce0cf403682",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/frontier_dm_neutrino_polar_aligned_core_nogo.py": {
+      "source_sha256": "a77bcabd4520b2a63133480d6c24cfe358d16c37d48a8cbc8d993eb12db634d7",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/frontier_dm_neutrino_postcanonical_right_frame_obstruction.py": {
+      "source_sha256": "2f314c0a9625f06f34d1114b06ec8f8fe5b29a3560a6d8272158bb33f61dc6d6",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/electrostatics_card.py": {
+      "source_sha256": "0ca61c81613ee1d47c97c61e17e22b10eda584a2112b2148571e93335c0caf9a",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/two_body_momentum_harness.py": {
+      "source_sha256": "7cd4c698f5873b49f9a16183e78d57a0e63f83f90fa8a3fd537d4bc9ef486c24",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/gate_b_grown_trapping_frontier_probe.py": {
+      "source_sha256": "f3f56197b3692fa78abf4fa9e11212b0af9527ea8521e34d187d8686ee1d5f07",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/n5_resolution_certificate.py": {
+      "source_sha256": "0eaef5853b9908b5003f42ad3a3b8fbc31300fc1c8c3b5a4e923013e505790f2",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/growing_graph_dynamic_limit_diag.py": {
+      "source_sha256": "40e445c1cd2999d79c4ac5d7f986d61e07074f12702d726d2f7b20aba646bd6f",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+    },
+    "scripts/growing_graph_decoherence.py": {
+      "source_sha256": "6a7a2cc607241bef1d21f320baf602780fc2f778c95d4ef2e9f91989cdf8b870",
+      "timeout_sec": 1800,
+      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
     }
   }
 }

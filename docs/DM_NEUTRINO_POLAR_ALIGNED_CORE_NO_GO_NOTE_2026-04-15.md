@@ -1,5 +1,7 @@
 # DM Neutrino Positive-Polar Aligned-Core No-Go
 
+**Type:** no_go
+
 **Date:** 2026-04-15
 **Status:** exact Hermitian-core no-go after the positive-polar-section bridge
 **Atlas placement:** canonical toolkit on `main` at
@@ -51,7 +53,7 @@ This note combines:
 
 - [DM_NEUTRINO_POSTCANONICAL_POLAR_SECTION_NOTE_2026-04-15.md](./DM_NEUTRINO_POSTCANONICAL_POLAR_SECTION_NOTE_2026-04-15.md)
 - [DM_NEUTRINO_SINGLET_DOUBLET_CP_SLOT_TOOL_NOTE_2026-04-15.md](./DM_NEUTRINO_SINGLET_DOUBLET_CP_SLOT_TOOL_NOTE_2026-04-15.md)
-- [PMNS_EWSB_RESIDUAL_Z2_HERMITIAN_CORE_NOTE.md](/Users/jonBridger/Toy%20Physics-neutrino-majorana/docs/PMNS_EWSB_RESIDUAL_Z2_HERMITIAN_CORE_NOTE.md:1)
+- PMNS_EWSB_RESIDUAL_Z2_HERMITIAN_CORE_NOTE.md (historical local citation; target unavailable at `docs/PMNS_EWSB_RESIDUAL_Z2_HERMITIAN_CORE_NOTE.md`; original location `/Users/jonBridger/Toy%20Physics-neutrino-majorana/docs/PMNS_EWSB_RESIDUAL_Z2_HERMITIAN_CORE_NOTE.md:1`; no substitute authority supplied)
 
 The PMNS note supplies the aligned active Hermitian core. This note evaluates
 the DM post-canonical positive-section bridge on that exact core.

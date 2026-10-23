@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/geometry_as_count_gives_a_cell_size_from_the_seas_entanglement_but_fails_isotropy_and_light_bending_2026_10_22.py
+runner_sha256: 575e052257264da28da14bd55cebfe347a76b0f12c6e3c5485823a565cf23bf0
+input_fingerprint_sha256: 4210985905d7053e8678af8152c694ffd49704715aed995b80b42e84e85d27e1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 5.81
+status: ok
+----- stdout -----
+A. exact
+PASS A1 count Jacobson: G = a^2/(4 eta), a/l_P = 2 sqrt(eta); hinge-sum coefficient in site units = eta/(2 pi): unit map needs eta = 2*pi (site reading) or pi/2 (cell-rung reading)
+PASS A2 Gaussian first law dS = d<K>, remainder >= 0 and quadratic: d = 1e-4: dS = -5.0553e-05, d<K> = -4.9576e-05; remainder ratio (1e-3 : 1e-4) 100.0
+PASS A3 cut bonds per Euclidean area = |n|_1 and graph distance (L,L,L) = 3L, while the sea cone is isotropic: bonds/area (100),(110),(111) = 1.0000, 1.4142, 1.7321; cone speed 2.000000 all three: count length/matter length = sqrt(3) along (111)
+PASS A4 tied-tick splits give g = Omega^2 eta: PPN gamma = -1 (no light bending, no Shapiro delay), and R_ab = 0 forces psi linear: gamma = -1; R_xy for psi = -M/r: 6*M*x*y/(x**2 + y**2 + z**2)**(5/2); Cassini gamma-1 = (2.1 +- 2.3)e-5 -> 8.7e+04 sigma
+PASS A5 count curvature: quadtree deficits are O(1) quanta summing to 0; equilateral 3- and 4-simplices tile no flat space: deficits/pi = [-0.2, -0.1, 0.0, 0.4] at 28 vertices; 2pi/arccos(1/3) = 5.1043, 2pi/arccos(1/4) = 4.7668; edge deficits n=5: +0.1284, n=6: -1.1026 rad
+B. finite diagnostics (pi-flux sea = tick eps0 -> 0 limit; lattice scalar)
+PASS B1 eta_100 per cut bond: one-mode sea (2 Dirac = 4 Weyl) and one lattice scalar; c = 1 tails: eta_F = 0.19664 (per Weyl 0.04916), eta_B = 0.02426; tail slopes -0.1668, -0.1662
+   L=12: per bond  100 0.19510, 110 0.15213, 111 0.13167 | per Euclid area 0.19510, 0.21515, 0.22806
+   L=16: per bond  100 0.19578, 110 0.15280, 111 0.13235 | per Euclid area 0.19578, 0.21609, 0.22924
+PASS B2 entropy per cut bond is orientation dependent (neither bond count nor Euclidean area): (100)/(111) per bond 1.479, per area 1.171; S ~ A_E |n|_1^p with p = 0.285, 0.287 (count: 1, Euclidean: 0); L 12->16 drift 0.0052; (100) width 4, 5 at L=16: 0.19501, 0.19542 vs infinite 0.19664
+PASS B3 modular Hamiltonian local (boost form) only near the cone; near-cone modes carry little of eta: bond ratio 0.9994 at M = 0.1, 0.8346 at M = 2; M < 0.3 carries 0.0227 of eta_F
+   one-mode sea (axiom content)                       eta = 0.1966  a/l_P = 0.887  G_count/G_hinge(site) =  31.95
+   sea + photon (2 scalars)                           eta = 0.2452  a/l_P = 0.990  G_count/G_hinge(site) =  25.63
+   1 family 16 Weyl + 12 gauge + 4 Higgs, as fields   eta = 1.4659  a/l_P = 2.421  G_count/G_hinge(site) =   4.29
+   3 families + 12 gauge + 4 Higgs, as fields         eta = 3.0391  a/l_P = 3.487  G_count/G_hinge(site) =   2.07
+   1 family + Spin(10) 45 gauge, as fields            eta = 2.9701  a/l_P = 3.447  G_count/G_hinge(site) =   2.12
+PASS B4 a/l_P = 2 sqrt(eta) without fitting; unit map needs 2.507 (cell rung) or 5.013 (site); Sakharov per Dirac differs: one-mode sea a = 0.887 l_P; entanglement per Dirac 0.0983 vs induced 4 pi c_G = 0.0624 (staggered), 0.1297 (Wilson); hinge coefficient eta/2pi = 0.0313
+elapsed 4.7 s
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

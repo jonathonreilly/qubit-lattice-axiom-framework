@@ -1,5 +1,5 @@
 {
- "edge_count": 16356,
+ "edge_count": 16327,
  "node_count": 7426,
  "nodes": {
   "3d_correction_master_note": {
@@ -67,8 +67,8 @@
    "out_degree": 0
   },
   "a3_route4_spin6_chain_bounded_obstruction_note_2026-05-08_r4": {
-   "deps_hash": "cf8020cd44eb",
-   "out_degree": 6
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "a3_route4_spin6_chain_bounded_obstruction_note_2026-05-08_r4_note_2026-05-17": {
    "deps_hash": "e3b0c44298fc",
@@ -2767,8 +2767,8 @@
    "out_degree": 5
   },
   "c_iso_su3_nlo_closure_bounded_note_2026-05-08_su3nlo": {
-   "deps_hash": "22f51c0ccc67",
-   "out_degree": 4
+   "deps_hash": "432abed34815",
+   "out_degree": 5
   },
   "c_iso_su3_nnlo_closure_bounded_note_2026-05-10_su3nnlo": {
    "deps_hash": "d6a5eeda144b",
@@ -3787,8 +3787,8 @@
    "out_degree": 6
   },
   "closure_c_l1_per_graph_casimir_note_2026-05-10_cl1c": {
-   "deps_hash": "8c968adbbd64",
-   "out_degree": 8
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "closure_c_staggered_dirac_gate_note_2026-05-10_cstaggered": {
    "deps_hash": "121e4fed201b",
@@ -3927,8 +3927,8 @@
    "out_degree": 4
   },
   "color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05": {
-   "deps_hash": "fc8e9dfcfc6b",
-   "out_degree": 9
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "commensuration_general_lemma_period_parity_bounded_theorem_note_2026-06-12": {
    "deps_hash": "595f44d7fd2d",
@@ -6639,8 +6639,8 @@
    "out_degree": 2
   },
   "exact_tier_ewitness_bounded_note_2026-05-07_ewitness": {
-   "deps_hash": "382ffbe3c6b3",
-   "out_degree": 7
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "exact_tier_path_integral_bounded_note_2026-05-07_exact": {
    "deps_hash": "ae423068470f",

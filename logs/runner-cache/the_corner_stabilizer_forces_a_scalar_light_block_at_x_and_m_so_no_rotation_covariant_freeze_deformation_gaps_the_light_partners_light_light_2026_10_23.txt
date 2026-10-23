@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/the_corner_stabilizer_forces_a_scalar_light_block_at_x_and_m_so_no_rotation_covariant_freeze_deformation_gaps_the_light_partners_light_light_2026_10_23.py
+runner_sha256: 461591c2eb2717e8450ddd4191ce9137ec125639deedfd0b68808b2e21dcbb57
+input_fingerprint_sha256: 4a6136fab12fa72160c65f8e4fcb263eef99943ab7bdda520647cfd3f804154c
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 1.08
+status: ok
+----- stdout -----
+== A. exact Schur at the D2-fixed corners ==
+PASS A1 X=(pi,0,0) and M=(pi,pi,0) are fixed (mod 2pi) by the 4 diagonal rotations D2 of T; the light label is V-invariant and D2 acts on it with a 1-dim commutant (Q8 spinor, irreducible)  [label res 7e-16, commutant dim 1]
+PASS A2 FREEZE: light-labelled block is scalar at X and M (1/3 and -1/3): polar part = +1 at X, -1 at M, so X sits at quasienergy 0 and M at pi  [C(X)=0.3333+0.0000j, C(M)=-0.3333+0.0000j]
+== B. deformations ==
+PASS B1 (diagnostic of A) 3 random T-covariant deformations U_F exp(i H_cov) (H_cov = rotation-twirled random range-sqrt3 Bloch Hamiltonian on all 8 cell modes, light-mirror and Pi+/Pi- mixing included): covariant, and the light-labelled block at X, M, M' is still exactly scalar  [cov res 4e-15, non-scalar part 2e-15; light phase at X [-1.379, -0.61, 1.32]]
+  light-light scalar layer exp(i a phi(K) tau3 Pi+), phi = 3 - sum cos cos: phi(0)=phi(R)=0, phi(X)=phi(M)=4; T-invariant (res 2e-15)
+PASS B2 a=0.1: light Weyls at 0 and R untouched; the X light level is still 2-fold, moved to quasienergy 4a, and the lower light band crosses quasienergy 0 on the line 0->X (a Fermi surface)  [U-U_F at nodes 0e+00; X phases [0.4, 0.4]; 0-crossing at s = [0.919] of 0->X]
+PASS B2 a=0.25: light Weyls at 0 and R untouched; the X light level is still 2-fold, moved to quasienergy 4a, and the lower light band crosses quasienergy 0 on the line 0->X (a Fermi surface)  [U-U_F at nodes 0e+00; X phases [1.0, 1.0]; 0-crossing at s = [0.691] of 0->X]
+== C. chirality bookkeeping of the light-labelled projection (polar part) ==
+  light: (#pi entries, quasienergy: sign) 00:-1 10:+1 10:+1 2pi:+1 10:+1 2pi:+1 2pi:+1 3pi:-1
+  mirror: (#pi entries, quasienergy: sign) 00:+1 10:-1 10:-1 2pi:-1 10:-1 2pi:-1 2pi:-1 3pi:+1
+PASS C1 light-labelled projection: Gamma and R carry one sign, the 3 X (quasienergy 0) and 3 M (pi) the opposite; net light chirality +-2 at quasienergy 0 and the same at pi; mirror net is opposite  [net (0, pi): light (2, 2), mirror (-2, -2)]
+verdict: no T-covariant deformation gives the light-labelled sector nodes only at 0 and R: Q8 forces a
+scalar light block at X and M, so a light partner stays there as a node at 0/pi, a Fermi surface, or
+a zero. Light-light partner masses do not exist; partner release under mirror gapping is generic.
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

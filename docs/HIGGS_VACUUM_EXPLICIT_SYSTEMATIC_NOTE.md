@@ -1,5 +1,8 @@
 # Higgs / Vacuum Authority
 
+**Type:** open_gate
+**Current scope:** The displayed route comparison has an unresolved discrepancy and no demonstrated common error budget. This metadata does not certify the inherited Higgs derivation or physical matching claims.
+
 **Date:** 2026-04-17
 **Status:** derived quantitative lane on the current package
 **Primary runner:** `scripts/frontier_higgs_mass_full_3loop.py` ([scripts/frontier_higgs_mass_full_3loop.py](../scripts/frontier_higgs_mass_full_3loop.py))
@@ -47,6 +50,15 @@ These rows are now best read as **derived quantitative rows that inherit the
 current Ward-primary YT residual budget**. The remaining Higgs blocker is no
 longer “missing framework-native 3-loop implementation,” and it is no longer a
 separate Higgs-native closure failure either.
+
+## Route-comparison limitation
+
+The displayed two-loop and full-three-loop routes differ by 5.3 GeV
+(5.33 GeV at the snapshot precision). The lower route lies outside the quoted
+121.1–129.2 GeV inherited YT band. This note does not demonstrate that the
+band covers this route discrepancy or supply a common-input truncation-error
+analysis. The numerical separation alone does not identify which calculation,
+input choice, or approximation accounts for it.
 
 ## Component Structure
 

@@ -18,6 +18,9 @@ PDG/LHCb 2024 baseline: agreement at 0.09 sigma.
 
 from __future__ import annotations
 
+# Actual documentary reads/existence checks; presence is not scientific authority.
+AUDIT_INPUT_PATHS = ['docs/ALPHA_S_DERIVED_NOTE.md', 'docs/CKM_ATLAS_TRIANGLE_RIGHT_ANGLE_THEOREM_NOTE_2026-04-24.md', 'docs/CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md', 'docs/WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md']
+
 import math
 import sys
 from fractions import Fraction
@@ -66,7 +69,7 @@ SIN_2BD_ATLAS = math.sqrt(5.0) / 3.0  # = 2 eta
 SIN_2BS_ATLAS = ALPHA_S_V * math.sqrt(5.0) / 6.0  # = 2 lambda^2 eta
 
 
-# PDG/LHCb comparator inputs.
+# Historical comparator inputs quoted by the source note; not the current PDG fit.
 SIN_2BD_PDG = 0.706
 SIN_2BD_PDG_ERR = 0.011
 PHI_S_LHCB = -0.0386  # PDG 2024 LHCb combined
@@ -77,7 +80,7 @@ SIN_2BS_PDG_ERR = PHI_S_LHCB_ERR
 
 
 def audit_inputs() -> None:
-    banner("Retained inputs")
+    banner("Supplied inputs; existence checks do not establish authority")
 
     print(f"  alpha_s(v) (canonical CMT/plaquette) = {ALPHA_S_V:.15f}")
     print(f"  lambda^2 = alpha_s(v)/2              = {LAMBDA_SQ:.15f}")
@@ -104,7 +107,7 @@ def audit_inputs() -> None:
 
 
 def audit_atlas_lo_predictions() -> None:
-    banner("Atlas-LO predictions (retained)")
+    banner("Conditional atlas-LO predictions")
 
     sin_2bd_check = 2.0 * ETA_VAL
     sin_2bs_check = 2.0 * LAMBDA_SQ * ETA_VAL
@@ -218,18 +221,17 @@ def audit_pdg_comparator() -> None:
 
     print(f"  PDG sin(2 beta_d)         = {SIN_2BD_PDG:.4f} +/- {SIN_2BD_PDG_ERR:.3f}")
     print(f"  LHCb phi_s                = {PHI_S_LHCB:+.4f} +/- {PHI_S_LHCB_ERR:.3f} rad")
-    print(f"  LHCb sin(2 beta_s) = -phi_s = {SIN_2BS_PDG:.4f} +/- {SIN_2BS_PDG_ERR:.4f}")
+    print(f"  LHCb sin(2 beta_s) approx -phi_s = {SIN_2BS_PDG:.4f} +/- {SIN_2BS_PDG_ERR:.4f}")
     print(f"  PDG product               = {product_pdg:.6f} +/- {product_pdg_err:.6f}")
     print(f"  alpha_s_CP (estimator)    = {alpha_s_cp:.6f} +/- {alpha_s_cp_err:.6f}")
     print(f"  alpha_s_canonical (CMT)   = {ALPHA_S_V:.6f}")
-    print(f"  cross-sector deviation    = {deviation:+.3f} sigma")
+    print(f"  cross-sector deviation    = {deviation:+.3f} quoted propagated errors")
+    print("  First-order independent-input propagation; no covariance/theory budget.")
 
-    check("CP-estimated alpha_s within 1 sigma of canonical",
-          abs(deviation) < 1.0)
-    check("CP-estimated alpha_s within 0.5 sigma under loose comparator",
-          abs(deviation) < 0.5)
-    check("CP-estimated alpha_s within 0.2 sigma under loose comparator",
-          abs(deviation) < 0.2)
+    print(f"  Historical sin(2 beta_d) residual / experimental error = {(SIN_2BD_ATLAS-SIN_2BD_PDG)/SIN_2BD_PDG_ERR:+.3f}")
+    print(f"  Relative sin(2 beta_s) experimental error = {SIN_2BS_PDG_ERR/SIN_2BS_PDG:.2%}")
+    print("  Descriptive residuals only: no quantified omitted-order/covariance budget.")
+    print("  Loose product agreement does not validate the individual CP factors.")
 
 
 def audit_consistency_with_thales_ratio() -> None:
@@ -258,7 +260,7 @@ def audit_consistency_with_thales_ratio() -> None:
 
 
 def audit_falsification_projection() -> None:
-    banner("Falsification: future LHCb / HL-LHC precision")
+    banner("Historical illustrative uncertainty scenarios (not current schedules)")
 
     eras = [
         ("PDG/LHCb 2024 baseline", 0.022),
@@ -272,12 +274,11 @@ def audit_falsification_projection() -> None:
     for era, sigma_phi_s in eras:
         sigma_sin_2bs = sigma_phi_s
         # alpha_s_CP_err propagation: dominated by sigma_sin_2bs/sin(2 beta_s)
-        relative_err = sigma_sin_2bs / SIN_2BS_PDG
-        sigma_alpha_s_cp = ALPHA_S_V * relative_err
-        n_sigma_test = ALPHA_S_V * 0.01 / sigma_alpha_s_cp  # 1% deviation test
+        sigma_alpha_s_cp = (18.0/5.0) * math.hypot(
+            SIN_2BD_PDG * sigma_sin_2bs, SIN_2BS_PDG * SIN_2BD_PDG_ERR)
         print(f"  {era:30s}  sigma(phi_s) = {sigma_phi_s:.4f}  sigma(alpha_s_CP) = {sigma_alpha_s_cp:.4f}")
 
-    check("future precision tightens cross-sector consistency",
+    check("supplied scenario uncertainties decrease (not a forecast)",
           0.022 > 0.005 > 0.002)
 
 

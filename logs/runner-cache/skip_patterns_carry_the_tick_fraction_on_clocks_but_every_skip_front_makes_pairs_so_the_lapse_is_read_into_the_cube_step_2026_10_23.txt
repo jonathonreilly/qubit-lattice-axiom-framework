@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/skip_patterns_carry_the_tick_fraction_on_clocks_but_every_skip_front_makes_pairs_so_the_lapse_is_read_into_the_cube_step_2026_10_23.py
+runner_sha256: eaecc19cb1613fa71a3cc7d5917835d8b0f773d89fad314f251ad40f0f3050ec
+input_fingerprint_sha256: 0ad8fe1cecf684454e3cb494a1449a1dc42331b65d98cee50911bac00629f262
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.40
+status: ok
+----- stdout -----
+PASS: A1 sigma-delta count = floor(a0 + N T) (simulated vs closed form, 20000 steps)  [max diff 0]
+PASS: A2 sigma-delta with slowly varying N: |n(T) - sum N| < 1 tick for every T  [max 1.000]
+PASS: A3 Allan deviation: sigma-delta ~ 1/tau, stochastic ~ tau^-1/2 (slopes)  [-1.030, -0.514]
+PASS: A4 stochastic Allan deviation = sqrt(N(1-N)/tau) (ticks)  [max dev 0.099]
+PASS: A5 sigma-delta jitter at 1e4 s (Planck tick) below optical-clock 1e-18  [7.6e-48]
+PASS: A6 stochastic jitter at 1 s <= sqrt(t_P/1 s) below best clocks ~1e-16 (not excluded by clocks)  [2.3e-22; with |Phi| = 1e-6: 2.3e-25]
+PASS: B1 1D ring L=12: sets that are unions of both pair tilings (only these skip with no unpaired half-tick)  [2 of 4096 (empty, all)]
+PASS: B2 3D torus 4^3: unions of even cubes that are also unions of odd cubes  [2 of 256]
+PASS: B3 pairs per front boundary ~ c eps^2 with 0.05 < c < 0.2 (eps = 0.05, 0.2, 0.5)  [c = 0.101, 0.099, 0.108]
+PASS: B4 energy per pair ~ 2 eps hbar/tick (band edge) and uniform skip creates none (<1e-12)  [E/eps = 2.10, 2.15, 2.14]
+PASS: B5 created pairs persist under later full ticks (50 ticks)  [max change 1.4e-15]
+PASS: C1 any coupling of two skips disagrees with probability >= |p_i - p_j|; comonotone attains it (200 pairs)
+PASS: C2 comonotone (shared van der Corput threshold) discordance per bond per tick = mean |dN|  [ratio 1.013]
+PASS: C3 independent skips discord at ~2N(1-N) per bond; sigma-delta desynchronises to the same order  [comonotone:1.58e-03 sd-common:4.73e-02 sd-indep:4.84e-02 stochastic:4.64e-02]
+PASS: C4 pairs created on the gradient ring track discordance: created/(c eps^2 x events) in [0.2, 2]  [comonotone:0.36 pairs, ratio 0.60 sd-common:8.73 pairs, ratio 0.49 sd-indep:10.34 pairs, ratio 0.56 stochastic:9.88 pairs, ratio 0.56]
+PASS: C5 every skip rule reproduces the target fraction (max |n/T - N|)  [7.9e-04 6.6e-04 5.7e-04 1.0e-02]
+PASS: C6 step-angle reading (every site ticks, N in the cube's step): static update, 0 pairs over 1500 ticks  [2.4e-15]
+INFO eps=0.5: tick 7.5e-44 s; minimal (comonotone) pair-production power near Earth 8.3e+102 W/m^3
+INFO eps=0.05: tick 7.8e-45 s; minimal (comonotone) pair-production power near Earth 7.6e+101 W/m^3
+PASS: D1 minimal skip rule: vacuum pair production near Earth exceeds 1 W/m^3 by > 1e80 (skip reading excluded)  [7.6e+101 W/m^3 at eps=0.05]
+INFO independent / sigma-delta rules discord 1.6e+41 times more (2|Phi|/(|grad Phi| a), Earth surface)
+PASS: E1 sin(eps_cube) = N sin(eps0), mu = mN: lowest quasi-energies scale by N (clock rate = lapse)  [max dev 9.5e-05]
+PASS: F1 sigma-delta pattern solves the stationarity equation to <= 12/(T |K psi|) (T = 1e3, 1e4, 1e5)  [1.3e-02 1.3e-03 1.3e-04]
+PASS: F2 stochastic pattern residual falls as T^-1/2 (ratio 1e4 -> 1e6 in [5, 20])  [4.4e-02 -> 4.4e-03]
+PASS: F3 comonotone pattern residual <= 12 (log2 T + 2)/(T |K psi|) at T = 2^16  [9.7e-05]
+INFO r=2: measured -Phi r/(GM) = 0.903 (Dirichlet box 21^3; continuum 1); axes spread 0.0e+00
+INFO r=3: measured -Phi r/(GM) = 0.775 (Dirichlet box 21^3; continuum 1); axes spread 1.0e-05
+INFO r=4: measured -Phi r/(GM) = 0.669 (Dirichlet box 21^3; continuum 1); axes spread 0.0e+00
+PASS: F4 measured fraction field is attractive and falls with r (Phi(1) < Phi(2) < Phi(4) < 0)
+elapsed 0.8s
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

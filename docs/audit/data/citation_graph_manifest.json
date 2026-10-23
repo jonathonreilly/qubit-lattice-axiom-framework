@@ -1,6 +1,6 @@
 {
- "edge_count": 16350,
- "node_count": 7422,
+ "edge_count": 16351,
+ "node_count": 7423,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -21709,6 +21709,10 @@
   "su2_double_use_reduces_to_one_index_pairing_admission_bounded_note_2026-06-08": {
    "deps_hash": "61c248cd9bc2",
    "out_degree": 5
+  },
+  "su2_equivariant_one_qubit_qca_translation_rigidity_bounded_theorem_note_2026-10-21": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "su2_u0_single_plaquette_beta16_native_interval_bounded_support_note_2026-06-18": {
    "deps_hash": "522e60fa8b64",

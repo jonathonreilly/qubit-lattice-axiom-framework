@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/a_site_count_change_by_one_carries_the_spin10_spinor_so_under_the_odd_site_rule_every_fermion_is_a_mobile_site_defect_while_its_cones_stay_vector_like_2026_10_22.py
+runner_sha256: 8ae3f161276f47574d0ee81ebe1686fb6086f6642f2ae013287140200e13f5cb
+input_fingerprint_sha256: 196d401303f13339e7888faa2b51d7d689dd31968df433a16a4773731bde2101
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.57
+status: ok
+----- stdout -----
+== A. centre algebra (exact)
+PASS A1 the odd level of one site is one irreducible 16: generators keep it, Casimir 45/4, commutant dim 1 leak 0e+00, commutant 1; weights (n_a - 1/2) carry an even number of -1/2 on every odd state
+PASS A2 the element -1 of Spin(10), exp(2 pi i M_02), is the c-number (-1)^n_sites (n = 1, 2)
+PASS A3 centre z = (-1)^F (-i)^n: a site-count change dn carries a spinor class iff dn is odd, for EITHER content parity dn=-1,dF=0:16-class; dn=-1,dF=1:16bar-class; dn=+1,dF=0:16bar-class; dn=+1,dF=1:16-class
+   so without a further rule an odd-dn defect can be a boson spinor (dn=+1, dF=0) - the Spin x_Z2 tie fails
+PASS A4 odd rule (every site odd): z = i^Ns and (-1)^F = (-1)^Ns exactly; so -1 in Spin(10) = (-1)^F on every state interstitial dn=+1 -> +i (16), vacancy dn=-1 -> -i (16bar), both fermions
+PASS A5 even rule (every site even): z = (-i)^Ns with (-1)^F = +1, so every site defect is a BOSONIC spinor (rejected)
+PASS A6 the invariant one-mode hop K_st never stays in the odd-odd sector (it maps it wholly to even-even) so the odd rule removes CL-1-type single-mode hops between present sites
+PASS A7 two odd sites: 16 x 16 = 10 + 120 + 126 (Casimir 9, 21, 25), no singlet: a covariant two-site creation carries 10/120/126 mult [np.int64(10), np.int64(120), np.int64(126)]
+== B. site transfer and statistics (exact)
+PASS B1 exchanging two sites by three transfers through an empty slot gives (-1)^(N_A N_B): odd sites are fermions all 1024 content pairs
+PASS B2 the transfer is Spin(10)-covariant and local: the swap S maps g^x -> g^y and commutes with all 45 M_ab
+PASS B3 a link phase u carried by the transfer (u^N on the content) is covariant iff u = +-1 dev u=1,-1,i,e^(i pi/3): 0.00, 0.00, 1.00, 0.87; the register's -1 face phases pass
+== C. one vacancy in a Spin(10) singlet on a 4-slot ring (finite diagnostic)
+PASS C0 four odd sites: 16^4 holds exactly 2 singlets (10.10 and 120.120), so dn = 4 admits covariant creation weight-0 sector 960 states; vacancy sector 240 states
+PASS C1 exchange vacuum (H = J sum_bonds B, J = 1) is a unique Spin(10) singlet, translation eigenstate E0 -21.0000, gap 6.0000, Casimir 8e-17
+PASS C2 removal a_alpha(x)|vac> has weight 1/16 per slot (singlet: each of the 16 states equally likely)
+PASS C3 every vacancy state has relative centre charge -i (16bar class) and is fermion-odd
+PASS C4 t = 0.5: the vacancy's weight sits in a 16bar band (C = 45/4) moving at first order, E16b(0) - E16b(pi) = 2t band minimum at k = 2pi/2 is a 16bar
+   k=0pi/2: lowest +11.000 [C 11.25]; vacancy-weight state +11.000 [C 11.25] holds 1.000 of the k weight
+   k=1pi/2: lowest +10.378 [C 11.25]; vacancy-weight state +10.378 [C 11.25] holds 0.980 of the k weight
+   k=2pi/2: lowest +10.000 [C 11.25]; vacancy-weight state +10.000 [C 11.25] holds 1.000 of the k weight
+   k=3pi/2: lowest +10.378 [C 11.25]; vacancy-weight state +10.378 [C 11.25] holds 0.980 of the k weight
+PASS C4 t = 2.0: the vacancy's weight sits in a 16bar band (C = 45/4) moving at first order, E16b(0) - E16b(pi) = 2t band minimum at k = 2pi/2 is a 16bar
+   k=0pi/2: lowest +11.115 [C 21.25]; vacancy-weight state +12.500 [C 11.25] holds 1.000 of the k weight
+   k=1pi/2: lowest +8.917 [C 11.25]; vacancy-weight state +8.917 [C 11.25] holds 0.827 of the k weight
+   k=2pi/2: lowest +8.500 [C 11.25]; vacancy-weight state +8.500 [C 11.25] holds 1.000 of the k weight
+   k=3pi/2: lowest +8.917 [C 11.25]; vacancy-weight state +8.917 [C 11.25] holds 0.827 of the k weight
+== D. 3D defect band, polarized background (toy t >> J limit)
+PASS D1 with the -1 face phases the defect hop is the pi-flux band E^2 = 4(cos^2kx+cos^2ky+cos^2kz): 8 isotropic cones zero modes 8, cone speed 2t at k_i = pi/2
+PASS D2 an invariant staggered on-point energy m gaps every cone (|E| >= |m|): the cones pair, net chirality 0 min|E| 0.3000 at m = 0.3; the 16 index is a spectator, so each pair is 16_L + 16_R
+PASS D3 without face phases the band bottom is quadratic (E = -2 sum cos k, no cone)
+== E. split counting (exact)
+PASS E1 a split adds 7 sites per parent site (z x i^7 = -i: spinor) but 56 per even cube (z x i^56 = 1) so a whole-cube split is centre-neutral: no net matter
+PASS E2 covariant creation needs dn = 0 mod 4 (odd rule; A7, C0); new odd sites average N = 5/2 (the register's half filling)
+== F. conserved charges (exact linear algebra on one 16)
+PASS F1 site count = 16-number Q16; B and L are not in span{Y, B-L, Q16}: site conservation does not give B or L residuals L 1.000, B 1.000
+PASS F2 a chiral Dirac mass (l e^c) has Q16 = 2: exact site conservation forbids it; a vector-like defect mass is Q16-neutral
+supplied: five modes per site, bilinear Spin(10), transfer as mode swap, J, t, ring size 4, polarized 3D background
+runtime 2.1 s
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/zoom_blocks_carry_no_protected_sixteen_and_the_three_cube_link_types_give_a_commutative_family_blind_mass_algebra_2026_10_22.py
+runner_sha256: 06bc362e65768450240834765fac4261eab5173371f9eb8d6216e986b7eee65b
+input_fingerprint_sha256: 7152c97df341ad17dead8caf1d45dc4e22ced2a9a9404642396d2f089b49ec22
+timeout_sec: 90
+exit_code: 0
+elapsed_sec: 0.42
+status: ok
+----- stdout -----
+== A. does a zoom block carry a protected 16?
+[PASS] A1 [T] an internal Spin(10) commuting with O_h needs 5 complex modes in one 1-dim O_h isotypic block (Schur on R^10); max 1-dim multiplicity by side L: L=2:1, L=3:4, L=4:4, L=5:10, L=6:10; smallest block with room = 5^3 (2^3 has 1, 3^3 and 4^3 have 4)
+[PASS] A2 [F] 2^3 block, 256 states, generic O_h-symmetrised number-conserving interacting H (seeded): multiplet sizes {1: 32, 2: 16, 3: 64}; largest = 3 = largest O_h irrep; no 16-fold level (would need a 16-dim irrep or a supplied degeneracy)
+[PASS] A3 [F] 5^3 block: 10 orbit-uniform (A1g) modes; generic O_h hop with axis/face/body links gives 10 distinct A1g levels (min gap 0.185); no 5 of them are degenerate, so a block Spin(10) is a supplied tuning, not protected by structure
+[PASS] A4 [T] on 5 block modes the 2pi rotation of Spin(10) is -1 on all 32 states (a c-number per block) and generators keep (-1)^F: the block's 16 is its Fock spinor, so on a fixed block lattice the composite-sixteen centre theorem applies blockwise
+== B. three cube link types (axis 1, face sqrt2, body sqrt3)
+[PASS] B1 [T] cube adjacency of the three link types (12 axis, 12 face, 4 body links) commute (Bose-Mesner algebra); eigenvectors (-1)^(s.x), eigenvalues (3-2w, ((3-2w)^2-3)/2, (-1)^w) with multiplicity 1,3,3,1 by weight w
+[PASS] B2 [T] any geometry-only mass rule M = f(1, A_axis, A_face, A_body) (20 seeded up/down pairs; f's ratios are FITTED numbers): levels 1+1+3+3, so at most two nondegenerate families; [M_u, M_d] = 0, so V is a permutation in the joint eigenbasis, J = 0; arg det real (theta-bar structural, but with no CP)
+[PASS] B3 [T] on the 4^3 torus the three ranges have counts [6, 12, 8] (6/12/8) and any up/down distance functions commute: one band per species, no family index from the ranges alone
+[PASS] B4 [T] CL-1 hops W_i (face phases -1) anticommute; their products W_iW_j are exactly face-diagonal hops and w = W1W2W3 the body-diagonal hop, central with w^2 = -1: the three link types are the cube tick's Clifford algebra 1+3+3+1
+[PASS] B5 [T] commutant of the tick algebra on one cube has dimension 8, non-abelian, commuting with w: C^8 = (spin 2) x (family 2) in each w = +-i sector, so one cube carries 2 families per sector (M2+M2), not 3
+[PASS] B6 [T] 10 seeded up/down mass terms in the commutant (half of them staggered by (-1)^(x+y+z)): every H = MM^dag commutes with w, 4 doubly-degenerate levels, mixing block-diagonal 2+2, max |Im tr(Pu Pd Pu Pd)| = 9.2e-17 (3-family control 0.031): J = 0 for every choice, fitted or not
+[PASS] B7 [T] every O_h element lifts by a site gauge to U with U W_i U^T = W_sigma(i); rotation-invariant commutant: dim 1 (O), 1 (O_h): a rotation-covariant family mass matrix is a multiple of 1, so geometry alone leaves all cube families degenerate; any splitting is a lopsided (axis-choosing) input
+TOTAL: PASS=11 FAIL=0   (0.2 s)
+
+----- stderr -----
+

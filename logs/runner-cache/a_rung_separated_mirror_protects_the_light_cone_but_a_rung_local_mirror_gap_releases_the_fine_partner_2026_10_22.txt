@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/a_rung_separated_mirror_protects_the_light_cone_but_a_rung_local_mirror_gap_releases_the_fine_partner_2026_10_22.py
+runner_sha256: b53f71e3017fd78f4706cef2bb5bb061365adcd3d6389bea9c9f39035b98d397
+input_fingerprint_sha256: b193009cf97ad97031e6edd28cc7500cd1a14e88f3886609bb0e269eca67af68
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.76
+status: ok
+----- stdout -----
+[PASS] A1 one rung, cone-rule band: nodes [((0.0, 0.0, 0.0), 1), ((1.0, 1.0, 1.0), -1)] (p/pi: chirality), sum 0; mirror on the SAME rung (Nielsen-Ninomiya per rung)
+[PASS] A2 random 0.05 nn change: nodes persist (shift 0.072, 0.104), chiralities +1,-1; untuned
+[PASS] A3 inverted update: chiralities at 0, R = [-1, 1]: the handedness at the smooth momentum is one bit, swapped by inversion
+[PASS] A4 overlaps 2^(-3/2) per rung (0.353553,0.353553; two rungs 0.125000); plane-wave weight on uniform rows = prod cos^2(q/2) [1.000, 0.000, 0.000, 0.250], on staggered rows = prod sin^2(q/2) [0.000, 1.000, 0.250, 0.000] at q = 0, R, 2 generic
+[PASS] B1 opposite cones gap everywhere with coupling w*U (U = SU(2) lift of the polar rotation between the cone frames; min |E|/w 0.496 over 2000 random frames, momenta); identity coupling on the actual pair leaves a nodal ring (|E| 3e-11): the coupling matrix is fixed by the bands
+[PASS] B2 uniform-character reading: fine R stays a zero at P=0 (zeros 2), fine 0 + coarse 0 (same chirality) keep zeros (4 searches: |E| <= 2e-15 at |h| = 0.466-0.495, w = 0.5): charge +2 cannot gap; no pair removed
+[PASS] B3 staggered reading: P=0 zeros = the light fine-0 Weyl only (H psi_L = 0 exactly); fine R + coarse 0 Dirac gap = 0.5000 = w
+[PASS] B4 zeros: light at P=0 (chirality +1, coarse weight 0.0e+00), mirror B at P=[0.9465, 0.9465, 0.9465] pi (|E| 2e-14, chirality -1, coarse weight 0.879); min |E| elsewhere 0.265
+[PASS] B5 light vertex to coarse rows ~ |q1 q2 q3|/8: halving q divides it by 8.0000
+[PASS] B6 random coarse-translation-invariant bilinear: light-B 2e-16 (forbidden by coarse momentum), light-fine R 2.54 and light-A 2.28 (allowed): the light's protection from its own partner needs fine translations on the fine rung plus the staggered row's zero, not the rung split
+[PASS] C1 momentum-blind coarse SMG: fine partner R released at zero energy with weight Z = D^2/(D^2+w^2) = 0.500, 0.889, 0.985 for w/D = 1, 2^-1.5, 2^-3: cross-rung suppression makes the release MORE complete
+[PASS] C2 ED (256 states): partner gap / w = 1 free; with g = 1: 0.1859, 0.0071, 0.0003 at w = 0.2, 0.2*2^-1.5, 0.2*2^-3 (released, worse when suppressed)
+[PASS] C3 coarse modes on rung-2 rows: staggered rows see A(P=0) 0e+00, B(R_c) 1.000; uniform rows A 1.000, B 4e-64: only the staggered rung-2 quartic leaves A (and so the fine partner's pairing) untouched at the node
+[PASS] C4 Z16 index of the coarse mirror B: {'one 16 (Spin(10) family)': 0, 'SU(4) toy, 4 flavours': 4, 'SU(4) toy, 8 Weyl (momentum-selective-mirror)': 8}: a 16 is allowed a symmetric gap; SU(4) toys of B are anomalous and cannot test it
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

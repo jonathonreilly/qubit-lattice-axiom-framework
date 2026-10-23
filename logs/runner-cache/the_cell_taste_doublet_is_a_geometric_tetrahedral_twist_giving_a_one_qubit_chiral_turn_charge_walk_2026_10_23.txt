@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/the_cell_taste_doublet_is_a_geometric_tetrahedral_twist_giving_a_one_qubit_chiral_turn_charge_walk_2026_10_23.py
+runner_sha256: e6b107ee99dbd07a456b6f068002c06a5a0f452304b8ce005d8c782acb7e8160
+input_fingerprint_sha256: 399efd7db6498f95b620a555270fac2ff48198d3242a26d28eb24c26a5143f9d
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 1.19
+status: ok
+----- stdout -----
+== A. CL-1's own cell tick under the tetrahedral rotations ==
+PASS A1 CL-1 cell rebuilt: all 24 cube-centred rotations are tick symmetries up to a +-1 site gauge; T = 12 of them
+PASS A2 exact internal symmetries of the MASSLESS tick: commutant over 8 momenta has dim 1 (3 momenta give a spurious 8); the chirality chi and the taste doublet are not conserved away from K = 0  [dims (3 k, 8 k) = [8, 1]; min ||[chi,U(k)]|| = 1.712]
+PASS A3 under T each chirality's taste E splits into w + wbar: L carries both turn characters and so does R, so the turn charges are vector-like (q in {1,2} for L and for R)  [L chars w^[1, 1, 2, 2], R chars w^[1, 1, 2, 2]]
+PASS A4 K = 0 Dirac masses (anticommuting with the velocities): T allows more than O, one per character pair, so T never forbids an L-R mass on CL-1's cell  [dim O 2, dim T 4]
+PASS A5 the copy sign keeps T, breaks the 4-fold; its light family has L and R of the SAME turn character, and the T-invariant mass mu gaps it (light phases +-mu)  [light L chars [2, 2], R chars [2, 2]; K=0 phases [-0.9, -0.9, -0.2, -0.2, 0.2, 0.2, 0.9, 0.9]]
+PASS A6 a twisted turn (geometric turn times the taste phase that gives every L the same character) is NOT a symmetry of CL-1's tick: TWIST cannot be read off CL-1 by relabelling  [min residual over 8 momenta 1.048]
+== B. composite TWIST on the same 8 cell states (sigma = cell spin, tau = taste, eta = chi) ==
+PASS B1 cell operators: sigma (spin from the velocities), tau (taste doublet), eta = chi; tau1, tau2, tau3 sigma_i are 5 anticommuting involutions commuting with eta; tau+ has character wbar under the turn and 1 under the half-turns: the twist is the cell's OWN geometric taste action  [tau+ char under turn (-0.5-0.866j)]
+PASS B2 the cell-nearest-neighbour walk is unitary and exactly covariant under all 12 T rotations with the plain site permutations (no supplied internal factor); the opposite twist is not; the 4-fold maps tau3 to -tau3 and is not a symmetry  [unitarity 3.4e-15, T residual 4.5e-15, wrong twist 3.66, 4-fold 3.38]
+PASS B3 nodes: exactly K = 0 (U = +1) and K = R = pi(1,1,1) of the cell zone (U = -1, quasienergy pi), each 8-fold; the R node is site momentum (pi/2)(1,1,1)  [nodes [[-1.0, -1.0, -1.0], [0.0, 0.0, 0.0]]; smallest gap elsewhere on 16^3 0.224]
+PASS B4 each node holds 4 Weyl blocks (tau3 x eta); Weyl chirality = tau3 at BOTH nodes, eta a spectator: light content 4 L + 4 R (twice TWIST's, from the spectator eta)  [(tau3, eta, chirality, q) at 0: [(1, 1, -1, 1), (1, -1, -1, 1), (-1, 1, 1, 2), (-1, -1, 1, 2)]; at R: [(1, 1, -1, 1), (1, -1, -1, 1), (-1, 1, 1, 2), (-1, -1, 1, 2)]]
+PASS B5 turn charges (det of the turn on a Weyl block = w^(2q)): every L has the same q and every R the other (the atomic TWIST pattern, with L = positive velocity determinant); the turn is a chiral Z3 forced by geometry  [q_L = {2}, q_R = {1}]
+PASS B6 every T-invariant on-cell operator is tau3-diagonal (Schur on 2(E1/2 x w) + 2(E1/2 x wbar)): no L-R mass exists at either node, for any T-keeping on-cell term  [T-invariant on-cell dim 8, max L-R block 6.5e-16]
+PASS B7 adding CL-1's copy sign and a random T-invariant on-cell term keeps L and R unmixed at both T-fixed nodes (they only shift node energies or mix the two eta copies within a chirality)  [T-invariant terms inside chiralities 8]
+PASS B8 on-cell filter (1 + tau3)/2: leak from L to R is O(K^2) (h vanishes to second order)  [leak ratio for K -> K/2 = 4.000]
+PASS B9 range: U(K) is a pure nearest-cell hop: Fourier support on the 6 neighbouring cells only (no on-cell term); in site units a hop spans up to 3 lattice steps along an axis (CL-1's tick is two cube-local layers)  [support 6 cells]
+== verdict lines ==
+R10 premise (every light L with the same q != 0): MET, forced by the cell's own taste geometry.
+R11 premise (light and mirror at different momenta): NOT MET; separation is by tau3 label, O(K^2) leak.
+Cost: no second qubit per site; CL-1's tick is replaced by a cell-range walk; O -> T; eta doubling.
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

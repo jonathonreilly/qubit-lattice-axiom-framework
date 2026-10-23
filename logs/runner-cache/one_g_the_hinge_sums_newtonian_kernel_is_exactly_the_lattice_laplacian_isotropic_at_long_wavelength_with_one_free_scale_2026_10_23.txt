@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/one_g_the_hinge_sums_newtonian_kernel_is_exactly_the_lattice_laplacian_isotropic_at_long_wavelength_with_one_free_scale_2026_10_23.py
+runner_sha256: eae374268835c0a6fdfc5cb55e35596e1650f419c69548dae05ef53bcbb95280
+input_fingerprint_sha256: 379ee518a898b48b7aa899c55bb98175c388290e3ff66536717275c86430dd90
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 13.12
+status: ok
+----- stdout -----
+PASS: A1 six-edge carrier, every edge responding: the static tick-edge kernel is exactly -2 x the nearest-neighbour Laplacian  [K(k) = -2 * 4 sum_i sin^2(k_i/2): all 511 momenta of the 8^3 torus, max rel dev 2e-10; 164 wedge momenta of 16^3, 5e-10]
+PASS: A2 the same kernel at tick/edge ratio tau = 0.7 (K = -2 lap/tau, i.e. -2 lap per proper 4-volume in Phi = dN/tau) and on the Kuhn carrier  [9 (k, direction) cases each, max rel dev 7e-08 (tau = .7), 5e-08 (Kuhn): G does not depend on the free ratio tau or on the carrier]
+PASS: A3 long-wavelength isotropy: K/(-2|k|^2) -> 1 along (100), (110), (111); the only anisotropy is the Laplacian's, 1 - (ka)^2 sum khat^4/12 + ...  [|k| = .02: 100 0.999967, 110 0.999983, 111 0.999989; |k| = 2pi/16: 100 0.98721, 110 0.99359, 111 0.99572 (spread 0.00851 = Laplacian's 0.00851; leading k^2/18 = 0.00857)]
+  INFO torus momenta 2pi n/L, n = (100), (110), (111): K/(-2|k|^2) = L=8: 0.94964, 0.94964, 0.94964; L=12: 0.97736, 0.97736, 0.97736; L=16: 0.98721, 0.98721, 0.98721
+PASS: A4 normalisation: static reduction of (kappa/2) sqrt(g) R gives Psi = Phi and K_Phi = -2 kappa |k|^2: the lattice's -2 is kappa = 1, so G_N = 1/(8 pi kappa)  [E_Psi = -4 lap(Psi - Phi); reduced E_Phi = 4 lap Phi; G = 1/(8*pi*kappa); Poisson lap Phi = 4 pi G rho from the phase -m dtau]
+  (A done 12.3s)
+PASS: B1 count area is direction dependent on the six-edge carrier, but the hinge sum's area is each hinge's Heron area in the edges' own lengths  [edges crossed per Euclidean area 100 3.0000, 110 3.5355, 111 3.4641 (max/min 1.179; axis edges alone 1.0000, 1.4142, 1.7321); Heron area of the carrier's (100) hinges per unit area 1.000000000000; the kernel built from those areas is isotropic (A3)]
+PASS: C1 replica entropy of the same hinge sum: S = (1 - n d/dn) ln Z_n = 2 pi kappa A = A/(4G) with G = 1/(8 pi kappa) (the Newtonian G of A4)  [S = 2*pi*A*kappa]
+PASS: C2 the hinge sum is homogeneous of degree 2 in the edges, so its Hessian is unit-free: kappa is its only number  [random 4-simplex scaled x3: Hessian rel change 8e-12; Heron Hessian 3e-16; the register size s, its step and the block size b_e do not enter, so 8 pi G = u^2/kappa in whatever unit u the edges are counted]
+PASS: C3 Sakharov route under the vacuum standard (toy ring, 10 sites, 5 fermions): the induced edge term scales with content and the same-edge vacuum removes it whole  [raw d2E0/dh2 -3.5777 (N_f = 1), -7.1554 (N_f = 2); a fixed flat reference leaves -0.3416; the vacuum of the same edges leaves 5e-15 at 5 random edge sets]
+PASS: C4 SUPPLIED lattice numbers: the sea's induced 1/(4G) and its entanglement area coefficient differ at O(1) and by regulator (no lattice identity)  [per Dirac: entanglement 0.0983, induced 4 pi c_G staggered 0.0624 (ratio 0.635), Wilson 0.1297 (ratio 1.319); hinge 1/(4G) = 2 pi kappa per u^2 = 1.5708 per site^2 (cell rung u = 2 sites) or 6.2832 (site)]
+  INFO under the vacuum standard both sea routes are vacuum shares on the same edges: the induced action is subtracted (C3) and its paired
+       entanglement (Susskind-Uglum/Kabat pairing, continuum, SUPPLIED) is matter entropy, not a second G
+PASS: C5 measurement: G's direction dependence at 1 AU on blocks of <= 100 cells is (ka)^2/18, far below preferred-location bounds (|xi| < 3.9e-9, supplied)  [6.4e-87; the count reading's factor 1.48 does not apply to the hinge sum]
+PASS: C6 one G: Newtonian (A1, A4), horizon entropy (C1) and, citing tick-fraction-waves, tensor waves all carry 1/(8 pi kappa); independent of tau, carrier and content
+  INFO value: kappa = 1 (CL-3 text) names the cell rung u = sqrt(8 pi) l_P (hbar c/u = 2.435e18 GeV, the reduced Planck mass): a units statement, not a derived number
+elapsed 12.3s
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

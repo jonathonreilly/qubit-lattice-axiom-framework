@@ -949,6 +949,21 @@
       "source_sha256": "5cd0edff88cf4f32082710c8d54e6497b45781a203274ba3368dc0faef0f9d53",
       "timeout_sec": 150,
       "reason": "Explicit bounded review cap for unchanged arithmetic helper; source identity required. No inherited science certification."
+    },
+    "scripts/frontier_charged_lepton_y_tau_ward_combined_no_go.py": {
+      "source_sha256": "73e455003089dc085ad0cda07e5e49d240b3224fadbb501ef6ca1c2e28976b26",
+      "timeout_sec": 120,
+      "reason": "Explicit bounded review cap matching preserved 120-second execution evidence; source-bound declaration does not certify scientific scope."
+    },
+    "scripts/cluster_decomposition_spatial_slab_bridge_check.py": {
+      "source_sha256": "cf163418efcde25ea64c5b31e6785f45da0458b1d2f56d1a7931bfa173dc1f27",
+      "timeout_sec": 120,
+      "reason": "Explicit bounded review cap matching preserved 120-second execution evidence; source-bound declaration does not certify scientific scope."
+    },
+    "scripts/single_clock_independent_commuting_transfer_factor_n5_no_go_2026_06_17.py": {
+      "source_sha256": "733bcf9e398fe1f44015f02af01450396547daf996d05d63caa6db8d2671bd8d",
+      "timeout_sec": 120,
+      "reason": "Explicit bounded review cap matching preserved 120-second execution evidence; source-bound declaration does not certify scientific scope."
     }
   }
 }

@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/wall_local_electroweak_registers_are_realisable_on_a_confining_layer_bulk_but_chosen_and_leave_stable_fractional_charges_2026_10_24.py
+runner_sha256: 2a5c22f716542eaa53246b267747c7ec898b10897166ac6886b14f3c0b95abd1
+input_fingerprint_sha256: 6869c8fec79a400747b82ee52cfbd44ae83288bccc39a8cbd8f658d6abb0f3cd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.86
+status: ok
+----- stdout -----
+== A. Confining (strong-coupling) bulk between two Coulomb walls ==
+PASS A1: strip integral = sum_n I_n^L e^(in th): rel err 1.2e-15
+PASS A2: K_eff below mean-field Kc (U1 b<=0.5, SU2 b<=1): Phi disordered, no A_n-A_f mass; Ls=3: U1 1.2e-01 SU2 2.3e-01; Ls=4: U1 2.9e-02 SU2 5.5e-02
+  max bulk beta for disorder: U1 Ls=4 1.16, Ls=16 4.19; SU2 Ls=4 2.45, Ls=16 11.31
+PASS A3: Coulomb bulk: 1 flat zero mode (dev 8e-16); confining bulk: 2 zero modes, each on one wall (cross weight 0e+00)
+PASS A4: eps ~ u^(4(Ls-1)), beta_b=0.5: Ls=4 4.1e-08, Ls=16 1.2e-37; slope -5.667 = 4 ln u
+PASS A5: flux gap strong g2=4: 1.758->1.758 (A=4->10; g2/2-2x_p=1.75); weak g2=0.5: 0.341->0.133 (ratio 0.39)
+== B. Gauss-law repair: gauge-dressed layer chain ==
+PASS B1: dressed: ||[H,Q_near]|| = 0e+00, bulk Gauss 0e+00; undressed far-only register ||[H,Q_far]|| = 1.000 = t
+PASS B2: far tail Ls=16: sigma 0 9.0e-07 (~0.4^15), 0.5 1.1e-12, 2 7.0e-19; log-slope -1.67 -> -2.25 (super-exp.); far-photon charge = 0 exactly
+PASS B3: per wall: Y^3 0, Y-grav 0, SU2^2Y 0, SU3^2Y 0, SU3^3 0, doublets 4 (even)
+== C. What fixes which factors are wall-local ==
+PASS C1: shareable (vector-like) sets: [('SU3',), ('SU2',)]; maximal: [('SU3',), ('SU2',)] -> two maxima, no unique choice
+PASS C2: b = (41/10, -19/6, -7): colour most asymptotically free, largest Casimir (3 vs 2); 1/alpha at cutoff (1,2,3) = (34.3, 48.7, 50.6): no ordering singles out SU2 x U1 to confine and SU3 not
+  wall lattice betas at cutoff: SU2 15.5, U1_Y 4.6; confining bulk needs beta_b <~ 1 -> bulk/wall coupling ratio ~15x (SU2), ~9x (U1): SUPPLIED
+== D. Consequences: shared colour with a heavy mirror ==
+PASS D1: QCD with 6 light + 6 mirror flavours: b0 = 3 > 0 (asymptotically free); b1 = -50
+PASS D2: 1/alpha3(cutoff) with mirror thresholds: v'=1e8 31.2, v'=1e11 35.6 (SM 50.6); no Landau pole
+  [E] flat colour over Ls layers: per-layer beta3 = 14.9/Ls; >= 5D bulk value ~3 (supplied) needs Ls <~ 5 (isotropic)
+PASS D3: no gauge-invariant light-mirror quark bilinear with H^a H'^b (|a|,|b|<=6); mirror-quark hadrons (u'qq, u'qbar) have OUR charge mod 1 in ['1/3']: stable fractional charges
+  [E] v'=1e+08: m_e'=208 GeV Omega_e'h2=6.7e-01 (T'=T); m_u'=878 GeV, T_RH < 35 GeV avoids relics
+  [E] v'=1e+11: m_e'=207724 GeV Omega_e'h2=6.7e+05 (T'=T); m_u'=878049 GeV, T_RH < 35122 GeV avoids relics
+  [E] coloured stable relic n/n_B >~ 1e-12 (supplied) vs fractional-charge searches <~ 1e-20/nucleon
+PASS D4: thermal mirror sector overcloses (e') and leaves fractional charges; supplied low T_RH removes both and the Delta N_eff signal
+runtime 0.24 s
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

@@ -1064,6 +1064,11 @@
       "source_sha256": "cbf763734c3e87a7146e74a122d7b644573d7af90a1cf09e84ed1d8598816dba",
       "timeout_sec": 120,
       "reason": "Actual bounded 120-second supplied electrostatics diagnostic/source-reader capture; no physical or audit closure."
+    },
+    "scripts/two_magnon_sector_cycle_and_bloch_witness_2026_10_23.py": {
+      "source_sha256": "a8f129b8df2eef94023ee5ba72a9c3220317defb01676aa4a0e9c96f21a21a35",
+      "timeout_sec": 120,
+      "reason": "Single bounded C9 supplied sector capture; all original finite predicates retained, no optimizer/campaign replay."
     }
   }
 }

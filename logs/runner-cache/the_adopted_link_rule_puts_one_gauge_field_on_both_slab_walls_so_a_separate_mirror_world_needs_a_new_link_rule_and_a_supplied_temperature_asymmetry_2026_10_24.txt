@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/the_adopted_link_rule_puts_one_gauge_field_on_both_slab_walls_so_a_separate_mirror_world_needs_a_new_link_rule_and_a_supplied_temperature_asymmetry_2026_10_24.py
+runner_sha256: 67b249163868def08af55a311b628a9158b51323fb779d90749ba9890989c401
+input_fingerprint_sha256: 281780d386bf814accb8acb53dd0b9a7709fe360daba1e6463b5c019f9246f59
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.23
+status: ok
+----- stdout -----
+A1. toy U(1) on a layered slab: where does the massless mode live?
+PASS A1a 5D links, Coulomb bulk: exactly one massless mode | null dim 1, next eig 0.085
+PASS A1b its profile is flat whatever beta_s, bp_s (near/far coupling ratio 1) | max|A_s/A_0 - 1| = 1.8e-14
+PASS A1c both walls couple to it with the same 4D charge (gauge universality) | g_near = g_far = 0.3147 = (sum beta_s)^-1/2
+PASS A1d Higgs-phase bulk: no massless mode survives (wall photons massive) | lowest mass^2 eigenvalue 0.5809 (units of k^2 beta)
+PASS A1e only with NO inter-layer plaquettes is each wall's photon its own (Ls zero modes) | null dim 10
+    bp = 1e-01, bulk M = 1: two lightest mass^2 9.09e-02, 9.09e-02 (nonzero: walls lose photon)
+    bp = 1e-02, bulk M = 1: two lightest mass^2 9.90e-03, 9.90e-03 (nonzero: walls lose photon)
+A2. domain-wall matter slab (3+1+1, layer = extra spatial direction, m = 0.6)
+PASS A2a five anticommuting 4x4 matrices (alpha_1..4, beta)
+PASS A2b one 2-component Weyl per wall at k = 0 (4 states near 0, then the bulk gap) | |E| <= 3.6e-07, next 0.614
+PASS A2c opposite chirality on the two walls (near / far) | near Gamma [-1. -1.], far Gamma [1. 1.]
+PASS A2d wall-mode amplitude falls by |1 - m| per layer | ratio 0.400000
+PASS A2e layer-phase symmetries of the slab update: only the uniform phase (dim 1) | commutant dim 1; smallest nonzero singular value 0.679
+PASS A2f so both walls carry the same charge and opposite chirality: sum Gamma q^3 = 0 (vector-like) | sum = 2.2e-16
+PASS A2g far-half charge is not conserved: ||[H, Q_far]|| = ||T|| (bulk modes, cutoff scale) | 1.0000
+PASS A2h wall-to-wall Gauss violation ~ |1-m|^Ls (only low-energy approximate far charge) | elements 5.5e-04,1.4e-05,3.6e-07; slope -0.916 vs -0.916
+B. mirror world against measurement (supplied numbers; estimates)
+PASS B1 T'/T = 1 (wall-symmetric excitation): Delta N_eff = 6.14, far above 0.3 (EXCLUDED) | Delta N_eff(1) = 6.14; 36 sigma at sigma 0.17
+PASS B2 allowed only for T'/T < 0.47 (needs a supplied reheating asymmetry) | x_max = 0.470
+PASS B3 symmetric baryogenesis gives Omega'_b/Omega_b = 1, not 5.36 (asymmetry supplied) | needed 5.36
+PASS B4 mirror-hydrogen sigma/m ~ 5e7 cm^2/g vs cluster bound ~1: not collisionless DM | sigma/m = 5.3e+07 cm^2/g
+PASS B5 IF separate fields existed, tail-induced kinetic mixing << 1e-9 (Ls = 16, m = 0.6) | eps ~ 6.2e-15
+PASS B6 fraction reading: at x = 0.45 Delta N_eff < 0.3; then f <~ 5% (dissipative limits, supplied) | Delta N_eff(0.45) = 0.252
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

@@ -1,14 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_charged_lepton_y_tau_ward_combined_no_go.py
-runner_sha256: 9a84068c48639f906368cfb87cdce9d02af4c5fa54f172363f39c7c9ba4d3169
+runner_sha256: 73e455003089dc085ad0cda07e5e49d240b3224fadbb501ef6ca1c2e28976b26
+input_fingerprint_sha256: 934f84214411b8f2a05492473a42e267ad1d53d0744b6519cdfd6646c3772b61
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.90
+elapsed_sec: 0.56
 status: ok
 ----- stdout -----
 ==============================================================================
 CHARGED-LEPTON y_tau WARD IDENTITY COMBINED NO-GO
-Verification of Cycles 2 + 3 + 4 + 5 combined obstruction
+Supplied-example checks and documentary observations; global exhaustion unvalidated
 ==============================================================================
 
 ==============================================================================
@@ -50,29 +51,24 @@ PART M4: ANOMALY CANCELLATION DOES NOT FIX YUKAWA COEFFICIENTS
   [PASS] Y_e matrix entries (i, j) all have identical hypercharge sum -> Y_e free  (Y_e is unconstrained 3x3 complex; sample diagonal abs = [np.float64(0.9058346654131911), np.float64(2.2532667498661265), np.float64(0.9590297811153047)])
 
 ==============================================================================
-PART M5: N_gen = N_color = 3 IS INTEGER-COUNTING (NOT YUKAWA)
+PART M5: SUPPLIED ORBIT AND COLOR-INDEX COUNTS (NOT PHYSICAL IDENTIFICATION)
 ==============================================================================
-  [PASS] N_gen = 3 (retained, three-generation matter cluster)  (anomaly-forced + hw=1)
-  [PASS] N_color = 3 (retained, CKM_MAGNITUDES_STRUCTURAL_COUNTS)  (QCD color count)
-  [PASS] N_gen = N_color = 3 (integer equality)  (integer-valued retained equality)
+  [PASS] Supplied orbit degeneracy is 3  (physical generation identification remains open)
+  [PASS] Supplied color-index count is 3  (physical QCD identification remains open)
+  [PASS] Supplied counts agree at 3 (integer equality only)  (no common origin or Yukawa identity follows)
   [PASS] Auxiliary (N - 1) / N^2 = 2/9 at N = 3 (numerical, not structural)  (aux = 2/9 = 2/9)
-  [PASS] Boundary: N_gen = N_color closure does NOT derive Yukawa coefficient  (per CKM_KOIDE_CROSS_SECTOR boundary statement)
+  SCOPE: supplied-count equality does not establish a Yukawa identity; physical identification and common origin remain open.
 
 ==============================================================================
-PART M6: hw = 1 THREE-GENERATION HAS NO RETAINED YUKAWA CONNECTION
+PART M6: ALGEBRA DIMENSION AND SUPPLIED HAMMING WEIGHT
 ==============================================================================
-  [PASS] Cl(3) Clifford algebra has dim 2^3 = 8  (dim = 8)
-  [PASS] hw = 1 retained on three-generation matter cluster  (anomaly-forced + hw=1 structural assignment)
-  [PASS] No retained 'hw = 1 -> Yukawa coefficient' identity in framework  (post-2026-04-28 survey confirms absence (BAE Probe 23 is probe tier, not retained))
+  [PASS] Cl(3) Clifford algebra has dim 2^3 = 8 (not spinor dimension)  (algebra basis dimension = 8)
+  [PASS] Supplied Wilson-corner Hamming weight is 1  (input choice; no physical generation or species identification)
+  SCOPE: these supplied counts do not determine Yukawa values. No exhaustive absence theorem is tested here.
+Historical ledger surveys are not executed; no current authority or exhaustion finding is made.
 
 ==============================================================================
-PART SURVEY: RESEARCH-LEVEL PREREQUISITES ABSENT FROM RETAINED
-==============================================================================
-  [PASS] M5-a prerequisite: no retained-grade D17-prime authority on the (2, 1) lepton-doublet block  (candidates: lepton_block_scalar_singlet_composite_uniqueness_d17_prime_theorem_note_2026-05-10:bounded_theorem:unaudited:unaudited; retained-grade: none)
-  [PASS] M1 prerequisite: Koide Q V8 closure attempt is at support tier (not retained)  (V8 note exists; status line indicates support/retreat)
-
-==============================================================================
-COMBINED NO-GO VERIFICATION: PASS=32 FAIL=0
+SUPPLIED/LEGACY CHECK TOTAL (NOT NO-GO CERTIFICATION): PASS=28 FAIL=0
 ==============================================================================
 
 ----- stderr -----

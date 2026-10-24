@@ -1,6 +1,131 @@
 {
   "schema_version": 1,
   "runners": {
+    "scripts/frontier_dm_leptogenesis_full_microscopic_reduction.py": {
+      "source_sha256": "329c5d87ff01853834bf711b795c1933bd0234ad647bcc8aa20b5160bb694190",
+      "timeout_sec": 300,
+      "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change."
+    },
+    "scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py": {
+      "source_sha256": "7ec4d6f6c683edd5680a30df740bb8c1e574bbff5831a6e4fe3ef96422521528",
+      "timeout_sec": 300,
+      "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change."
+    },
+    "scripts/frontier_dm_leptogenesis_ne_projected_source_triplet_sign_theorem.py": {
+      "source_sha256": "eb78ed21722a474a2ced8b831b2ba784b47f8f57a185d4e3c3d6deeba33daf10",
+      "timeout_sec": 300,
+      "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change."
+    },
+    "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py": {
+      "source_sha256": "7c6c379d4b6e70ad78607eb3c5655d241a9a0cb42a6a1dc54607b16afc529c22",
+      "timeout_sec": 300,
+      "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change."
+    },
+    "scripts/frontier_dm_leptogenesis_pmns_constructive_continuity_closure_theorem.py": {
+      "source_sha256": "58b246b88e4fa67f11fa6cbb22ed1a7d5be654474dacd418e099875415482d4a",
+      "timeout_sec": 300,
+      "reason": "Bounded DM affected-consumer execution cap; imported helper provenance does not assert standalone execution."
+    },
+    "scripts/frontier_dm_leptogenesis_pmns_constructive_projected_source_selector_theorem.py": {
+      "source_sha256": "2b37764c11e2593c2d83fd346fc3b0a5a2ad81be7f9b5daaf7d18344217e8ab8",
+      "timeout_sec": 300,
+      "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change."
+    },
+    "scripts/frontier_dm_leptogenesis_pmns_cp_bridge_boundary.py": {
+      "source_sha256": "b24c8fc3c1dc0e0ff84f03cb512391c1b0d2bfc16a51760bb94d231d131764e7",
+      "timeout_sec": 300,
+      "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change."
+    },
+    "scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py": {
+      "source_sha256": "07acea39348a86a2d10b76e231ca02b3f55afe1ab508ba488f16e5b0524eb4c4",
+      "timeout_sec": 300,
+      "reason": "Authorized bounded Z3 helper execution policy matching the 300-second primary cap; declaration only, no standalone helper execution or scientific certification. Invalidated by source changes."
+    },
+    "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py": {
+      "source_sha256": "563fa74307f829d7cb673e7a6497a76aad85a5d78c378ddc1dc7b877651fd31f",
+      "timeout_sec": 300,
+      "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change."
+    },
+    "scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py": {
+      "source_sha256": "777cd60d903ab09a36c3f7296d7a142e71d65541934d877fa19f5fcaf5c266d1",
+      "timeout_sec": 300,
+      "reason": "Authorized bounded Z3 helper execution policy matching the 300-second primary cap; declaration only, no standalone helper execution or scientific certification. Invalidated by source changes."
+    },
+    "scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py": {
+      "source_sha256": "4c9d592a7e85565d8af0220686451ebe5c38a553a0888807474c5ce8a1350e26",
+      "timeout_sec": 300,
+      "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change."
+    },
+    "scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py": {
+      "source_sha256": "26be65c14f41b944294a8c6636324cdf865df7ab08580565c4783c589dd7381c",
+      "timeout_sec": 300,
+      "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change."
+    },
+    "scripts/frontier_dm_neutrino_exact_h_source_surface_preimage_bundle_theorem.py": {
+      "source_sha256": "10061fd219064353a68bef3c0c348bf84e9a83ead67c9783da9f4ad2de5d646e",
+      "timeout_sec": 300,
+      "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change."
+    },
+    "scripts/frontier_dm_neutrino_hermitian_bridge_carrier.py": {
+      "source_sha256": "83d978eacf3c919b0153a8268e3881f5cc266619e8afa26da61cba533c2d09d0",
+      "timeout_sec": 300,
+      "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change."
+    },
+    "scripts/frontier_dm_neutrino_positive_polar_h_cp_theorem.py": {
+      "source_sha256": "11ee73d73372c30698e05decdeee3cf8d101b4805b44026f34fbd07f145509cd",
+      "timeout_sec": 300,
+      "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change."
+    },
+    "scripts/frontier_dm_neutrino_postcanonical_polar_section.py": {
+      "source_sha256": "6c09503cbccf1b3a109332c965041248a79fa025fa36bcb8f755b851efe0c113",
+      "timeout_sec": 300,
+      "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change."
+    },
+    "scripts/frontier_dm_neutrino_source_bank_z3_doublet_block_selection_obstruction_theorem.py": {
+      "source_sha256": "e5d9e25e456dd9540e892e97a75c2faf1b0bebe0a5647c4200ccb553077a3819",
+      "timeout_sec": 300,
+      "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change."
+    },
+    "scripts/frontier_dm_neutrino_source_surface_active_affine_point_selection_boundary.py": {
+      "source_sha256": "09dac7696be306d36073b01186ca238cd03cacaec9193808dae06cc3b1cd080a",
+      "timeout_sec": 300,
+      "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change."
+    },
+    "scripts/frontier_dm_neutrino_source_surface_active_half_plane_theorem.py": {
+      "source_sha256": "f539b4aa3f6da7cc83bb653316a9e98981f89f23cec7cdc00a40a0d98ec33612",
+      "timeout_sec": 300,
+      "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change."
+    },
+    "scripts/frontier_dm_neutrino_source_surface_carrier_normal_form.py": {
+      "source_sha256": "30862b9810bd34a9ba4a0848f03f9207c463a79fcde3b6c8e0a193b8e1a6c2b1",
+      "timeout_sec": 300,
+      "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change."
+    },
+    "scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py": {
+      "source_sha256": "4694e84fb6e82dc704f2c39e4a7e70016850feb2becfd9a89128672da5445c70",
+      "timeout_sec": 300,
+      "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change."
+    },
+    "scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py": {
+      "source_sha256": "3467693b9aadc4f1a06b41424442a4701a6c02c97603267be4ff0874c437f765",
+      "timeout_sec": 300,
+      "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change."
+    },
+    "scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem.py": {
+      "source_sha256": "9f8a4b93731a23370861ec9f07f06ea8fc4f5cdcd926cdd24cdf8e382beb3695",
+      "timeout_sec": 300,
+      "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change."
+    },
+    "scripts/frontier_dm_pmns_ne_seed_surface_exact_source_manifold_theorem_2026_04_20.py": {
+      "source_sha256": "2c36679d58caa88295d48d0a22facf77d660d5d38f97f2bf00f8480b99cb2872",
+      "timeout_sec": 300,
+      "reason": "Authorized bounded Z3 helper execution policy matching the 300-second primary cap; declaration only, no standalone helper execution or scientific certification. Invalidated by source changes."
+    },
+    "scripts/frontier_dm_pmns_z3_doublet_block_center_positive_sheet_no_go_2026_04_20.py": {
+      "source_sha256": "68e924f32fa64fe62e8393662a197d677972acb3ae6c2680fc766b78987311da",
+      "timeout_sec": 300,
+      "reason": "Bounded PR9847 affected diagnostic capture; finite/scenario evidence only, no global or physical closure."
+    },
     "scripts/_frontier_loader.py": {
       "source_sha256": "64ab743a7888d6eb32ff2d72ddab846633f49a818080f9c2d88330961c96d86f",
       "timeout_sec": 120,

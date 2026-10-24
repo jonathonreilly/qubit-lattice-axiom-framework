@@ -1,28 +1,16 @@
 #!/usr/bin/env python3
-"""
-DM PMNS Z3 doublet-block center positive-sheet no-go theorem.
-
-Question:
-  Does the coefficient-free center law
-
-      delta_db(H) = 1,
-      q_+(H) = 0,
-
-  together with the already-closed sheet selector I_src(H) > 0, close the
-  remaining PMNS angle-pin I5 on the fixed native N_e seed surface?
-
-Answer:
-  No.
-
-  On the fixed native N_e seed surface, the positive-sheet center system still
-  has many distinct exact solutions. The center pair has rank 2 on the
-  verified patch, so the locus is locally 3-real, and the PMNS angle triple
-  varies macroscopically along it. The center law is therefore useful only as
-  a conditional cut on the exact PMNS target manifold, not as a native I5
-  closure by itself.
-"""
+"""Finite seeded center-law search on the supplied five-coordinate seed chart.
+Numerical residuals, distinct representatives and finite-difference ranks are
+sampled diagnostics. They do not certify exact roots, neighborhood rank,
+a local manifold dimension, global solution counts or a physical no-go.
+The PMNS target and positive source sign are supplied conditions.
+No approval or numerical premise is imported from held PR9844."""
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ('docs/DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_TRIPLET_SIGN_THEOREM_NOTE_2026-04-16.md', 'docs/DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md', 'docs/DM_LEPTOGENESIS_PMNS_CONSTRUCTIVE_CONTINUITY_CLOSURE_THEOREM_NOTE_2026-04-17.md', 'docs/DM_LEPTOGENESIS_PMNS_CONSTRUCTIVE_PROJECTED_SOURCE_SELECTOR_THEOREM_NOTE_2026-04-16.md', 'docs/DM_LEPTOGENESIS_PMNS_CP_BRIDGE_BOUNDARY_NOTE_2026-04-16.md', 'docs/DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md', 'docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md', 'docs/DM_LEPTOGENESIS_PMNS_REDUCED_SURFACE_SELECTOR_SUPPORT_NOTE_2026-04-16.md', 'docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md', 'docs/DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md', 'docs/DM_LEPTOGENESIS_PMNS_TRANSPORT_SELECTOR_FIREWALL_NOTE_2026-06-17.md', 'docs/DM_NEUTRINO_BREAKING_TRIPLET_CP_THEOREM_NOTE_2026-04-15.md', 'docs/DM_NEUTRINO_EXACT_H_SOURCE_SURFACE_PREIMAGE_BUNDLE_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_EXACT_H_SOURCE_SURFACE_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_POSITIVE_POLAR_H_CP_THEOREM_NOTE_2026-04-15.md', 'docs/DM_NEUTRINO_POSTCANONICAL_POLAR_SECTION_NOTE_2026-04-15.md', 'docs/DM_NEUTRINO_SOURCE_AMPLITUDE_THEOREM_NOTE_2026-04-15.md', 'docs/DM_NEUTRINO_SOURCE_BANK_Z3_DOUBLET_BLOCK_SELECTION_OBSTRUCTION_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_AFFINE_POINT_SELECTION_BOUNDARY_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_HALF_PLANE_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_CARRIER_NORMAL_FORM_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_INTRINSIC_SLOT_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_SHIFT_QUOTIENT_BUNDLE_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_Z3_DOUBLET_BLOCK_POINT_SELECTION_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_WEAK_TRIPLET_COEFFICIENT_AXIOM_BOUNDARY_NOTE_2026-04-15.md', 'docs/DM_PMNS_NE_SEED_SURFACE_EXACT_SOURCE_MANIFOLD_THEOREM_NOTE_2026-04-20.md', 'docs/DM_PMNS_Z3_DOUBLET_BLOCK_CENTER_POSITIVE_SHEET_NO_GO_THEOREM_NOTE_2026-04-20.md', 'scripts/dm_leptogenesis_exact_common.py', 'scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py', 'scripts/frontier_dm_leptogenesis_full_microscopic_reduction.py', 'scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py', 'scripts/frontier_dm_leptogenesis_ne_projected_source_triplet_sign_theorem.py', 'scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py', 'scripts/frontier_dm_leptogenesis_pmns_constructive_continuity_closure_theorem.py', 'scripts/frontier_dm_leptogenesis_pmns_constructive_projected_source_selector_theorem.py', 'scripts/frontier_dm_leptogenesis_pmns_cp_bridge_boundary.py', 'scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py', 'scripts/frontier_dm_leptogenesis_pmns_projector_interface.py', 'scripts/frontier_dm_leptogenesis_pmns_reduced_surface_selector_support.py', 'scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py', 'scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py', 'scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py', 'scripts/frontier_dm_neutrino_exact_h_source_surface_preimage_bundle_theorem.py', 'scripts/frontier_dm_neutrino_hermitian_bridge_carrier.py', 'scripts/frontier_dm_neutrino_positive_polar_h_cp_theorem.py', 'scripts/frontier_dm_neutrino_postcanonical_polar_section.py', 'scripts/frontier_dm_neutrino_source_bank_z3_doublet_block_selection_obstruction_theorem.py', 'scripts/frontier_dm_neutrino_source_surface_active_affine_point_selection_boundary.py', 'scripts/frontier_dm_neutrino_source_surface_active_half_plane_theorem.py', 'scripts/frontier_dm_neutrino_source_surface_carrier_normal_form.py', 'scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py', 'scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py', 'scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem.py', 'scripts/frontier_dm_pmns_ne_seed_surface_exact_source_manifold_theorem_2026_04_20.py')
+
 
 import math
 import sys
@@ -169,28 +157,28 @@ def collect_conditional_center_pairs() -> list[dict[str, np.ndarray | float]]:
 
 def part1_positive_sheet_center_locus_is_not_a_point_selector() -> list[dict[str, np.ndarray | float | int]]:
     print("\n" + "=" * 88)
-    print("PART 1: THE POSITIVE-SHEET CENTER LAW IS NOT A POINT SELECTOR")
+    print("PART 1: FINITE POSITIVE-SHEET CENTER SEARCH")
     print("=" * 88)
 
     reps = collect_positive_center_points()
     obs = np.array([rep["obs"] for rep in reps], dtype=float)
 
     check(
-        "The verifier finds many distinct positive-sheet center solutions",
+        "The seeded search finds at least eight separated numerical representatives",
         len(reps) >= 8,
         f"count={len(reps)}",
     )
     check(
-        "Every retained representative satisfies the exact center law delta_db = 1, q_+ = 0",
+        "Every sampled representative has componentwise center residual below 1e-10",
         all(abs(float(rep["delta_db"]) - 1.0) < 1.0e-10 and abs(float(rep["q_plus"])) < 1.0e-10 for rep in reps),
     )
     check(
-        "Every retained representative lies on the positive I_src sheet",
+        "Every sampled representative has computed I_src > 0",
         all(float(rep["source_cubic"]) > 0.0 for rep in reps),
         f"cubic values={[round(float(rep['source_cubic']), 9) for rep in reps[:6]]}",
     )
     check(
-        "The PMNS angle triple varies macroscopically across the positive-sheet center locus",
+        "Sampled angle ranges exceed the stated finite spread thresholds",
         float(obs[:, 0].max() - obs[:, 0].min()) > 0.5
         and float(obs[:, 1].max() - obs[:, 1].min()) > 0.4
         and float(obs[:, 2].max() - obs[:, 2].min()) > 0.8,
@@ -212,43 +200,43 @@ def part2_center_constraints_have_rank_two_on_the_verified_patch(
     reps: list[dict[str, np.ndarray | float | int]]
 ) -> None:
     print("\n" + "=" * 88)
-    print("PART 2: THE CENTER CONSTRAINTS HAVE RANK 2 ON THE VERIFIED PATCH")
+    print("PART 2: FINITE-DIFFERENCE RANK DIAGNOSTICS AT SAMPLED POINTS")
     print("=" * 88)
 
     ranks = [int(rep["rank"]) for rep in reps[:8]]
     check(
-        "At retained representative points, rank d(delta_db, q_+) = 2",
+        "The first eight finite-difference Jacobians have numerical rank 2 at tolerance 1e-5",
         all(rank == 2 for rank in ranks),
         f"ranks={ranks}",
     )
     check(
-        "So on the verified patch the center law cuts the 5-real seed surface to a local 3-real locus",
+        "Repeated sampled-rank check; no neighborhood or manifold certificate",
         all(rank == 2 for rank in ranks),
-        "dim(seed surface)=5 and dim(center pair)=2",
+        "five supplied chart coordinates, two constraints; neighborhood rank unproved",
     )
 
 
 def part3_conditional_intersection_with_the_exact_pmns_target_is_discrete() -> None:
     print("\n" + "=" * 88)
-    print("PART 3: CONDITIONAL VALUE — CENTER LAW CUTS THE EXACT TARGET TO A TWO-SHEET PAIR")
+    print("PART 3: FINITE SEARCH WITH THE SUPPLIED TARGET IMPOSED")
     print("=" * 88)
 
     reps = collect_conditional_center_pairs()
     reps = sorted(reps, key=lambda rep: float(rep["delta_src"]))
 
     check(
-        "If the exact PMNS target is imposed as well, the center law yields exactly two source solutions",
+        "This seeded target-constrained search returns two separated numerical representatives",
         len(reps) == 2,
         f"count={len(reps)}",
     )
     check(
-        "The two conditional solutions have the same x and y data",
+        "The two sampled target-constrained representatives agree in x and y within 1e-10",
         len(reps) == 2
         and np.linalg.norm(np.asarray(reps[0]["x"]) - np.asarray(reps[1]["x"])) < 1.0e-10
         and np.linalg.norm(np.asarray(reps[0]["y"]) - np.asarray(reps[1]["y"])) < 1.0e-10,
     )
     check(
-        "They differ only by the sheet flip delta_src -> -delta_src and I_src -> -I_src",
+        "The sampled pair has opposite delta_src and I_src within 1e-10",
         len(reps) == 2
         and abs(float(reps[0]["delta_src"]) + float(reps[1]["delta_src"])) < 1.0e-10
         and abs(float(reps[0]["source_cubic"]) + float(reps[1]["source_cubic"])) < 1.0e-10,
@@ -260,78 +248,28 @@ def part3_conditional_intersection_with_the_exact_pmns_target_is_discrete() -> N
 
 
 def part4_note_records_the_correct_status() -> None:
-    print("\n" + "=" * 88)
-    print("PART 4: THE NOTE RECORDS THE CORRECT NO-GO STATUS")
-    print("=" * 88)
-
-    note = read("docs/DM_PMNS_Z3_DOUBLET_BLOCK_CENTER_POSITIVE_SHEET_NO_GO_THEOREM_NOTE_2026-04-20.md")
-    i5_status_note = read("docs/DM_PMNS_LOCAL_SELECTOR_FAMILY_NO_GO_THEOREM_NOTE_2026-04-20.md")
-
-    check(
-        "The new note states that center law + I12 does not close I5",
-        "does **not** close `I5`" in note or "does **not** close I5" in note,
-    )
-    check(
-        "The note records the local 3-real positive-sheet center locus",
-        "local `3`-real" in note or "local 3-real" in note,
-    )
-    check(
-        "The current authoritative I5 status note still treats I5 as open",
-        "I5 is still open positively" in i5_status_note,
-    )
+    note = read('docs/DM_PMNS_Z3_DOUBLET_BLOCK_CENTER_POSITIVE_SHEET_NO_GO_THEOREM_NOTE_2026-04-20.md')
+    print("DOCUMENTARY SCOPE (unscored):", "finite numerical diagnostics" in note)
+    print("PR9844 remains held; its local-selector note is not consumed.")
 
 
 def part5_n5_execution_certificate() -> None:
-    print("\n" + "=" * 88)
-    print("PART 5: N5 EXECUTION CERTIFICATE -- WHAT THIS RUNNER RESOLVES")
-    print("=" * 88)
-
-    # This runner is least_squares-driven, so converged witness coordinates are
-    # not quoted here; the certificate cites the structural facts and the named
-    # thresholds in the source instead.
-    print(
-        "  per_element: checked -- the center pair is resolved componentwise rather "
-        "than through a single norm: the residuals delta_db - 1 and q_+ are each held "
-        "to their own 1e-10 tolerance, and every candidate is admitted individually "
-        "with its own chart, angle triple, I_src sign and Jacobian rank, deduplicated "
-        "at 1e-3 in chart norm before it counts."
-    )
-    print(
-        "  per_site: checked and not executed -- nothing in this runner carries a "
-        "lattice site index. The 5-real chart is a coordinate patch on the fixed native "
-        "N_e seed surface and H is one 3x3 source Hermitian, so the geometry being "
-        "measured is a parameter-space locus, not a site-resolved field."
-    )
-    print(
-        "  per_mode: checked -- the three PMNS angle observables are range-tested "
-        "separately, each against its own spread threshold (0.5 for the solar mode, 0.4 "
-        "for the reactor mode, 0.8 for the atmospheric mode), so the macroscopic "
-        "variation along the center locus is established mode by mode and not by one "
-        "pooled distance."
-    )
-    print(
-        "  per_block: checked -- the entire center law is a Z_3 doublet-block statement. "
-        "Both constraints delta_db(H) = 1 and q_+(H) = 0 are doublet-block center "
-        "coordinates extracted by active_target_from_h, so the rank-2 Jacobian and the "
-        "resulting local 3-real cut of the 5-real seed surface are block-resolved "
-        "quantities rather than whole-matrix ones."
-    )
-    print(
-        "  lattice_wide: checked and not executed -- there is no lattice, no volume, and "
-        "no asymptotic limit anywhere here. The widest execution is a bounded search "
-        "over the chart box [CHART_LO, CHART_HI] from seeded restarts, which samples a "
-        "compact parameter region and makes no statement about extent."
-    )
+    print("EXECUTION SCOPE: finite seeded least-squares search only.")
+    print("Per candidate: norm acceptance 1e-8, separate component checks 1e-10.")
+    print("Per observable: original spread thresholds 0.5, 0.4, 0.8 retained.")
+    print("Per block: finite-difference step 1e-6 and rank threshold 1e-5.")
+    print("No site, mode completeness, global root exhaustion or limit certificate.")
+    print("Exact roots, neighborhood rank and physical selection remain open.")
 
 
 def main() -> int:
     print("=" * 88)
-    print("DM PMNS Z3 DOUBLET-BLOCK CENTER POSITIVE-SHEET NO-GO THEOREM")
+    print("DM PMNS Z3 FINITE CENTER-SEARCH DIAGNOSTIC")
     print("=" * 88)
     print()
     print("Question:")
     print("  Does the coefficient-free center law delta_db = 1, q_+ = 0, together")
-    print("  with the already-closed I12 sign law I_src > 0, close the remaining")
+    print("  with supplied sign condition I_src > 0, sample the remaining")
     print("  PMNS angle-pin I5 on the fixed native N_e seed surface?")
 
     reps = part1_positive_sheet_center_locus_is_not_a_point_selector()
@@ -343,14 +281,9 @@ def main() -> int:
     print("\n" + "=" * 88)
     print("RESULT")
     print("=" * 88)
-    print("  Honest status:")
-    print("    - center law + I12 leaves a positive-sheet 3-real locus and does not")
-    print("      derive the PMNS target by itself")
-    print("    - the center law is still useful conditionally: once the exact PMNS")
-    print("      target manifold is imposed, it cuts that manifold to a two-sheet pair")
-    print("    - so I5 remains open, but the live missing object is now sharper than")
-    print("      before")
-    print()
+    print("Finite residual, range and sampled-rank findings only.")
+    print("The search does not establish exact roots, global two-solution exhaustion,")
+    print("a local three-real manifold, a physical sheet, or an I5/I12 no-go.")
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     return 1 if FAIL_COUNT else 0
 

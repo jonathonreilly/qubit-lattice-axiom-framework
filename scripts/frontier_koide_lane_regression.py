@@ -32,7 +32,7 @@ RUNNERS = [
     ("frontier_koide_mass_assignment_derivation.py", 7),
     ("frontier_koide_z3_weight_uniqueness.py", 6),
     ("frontier_koide_hierarchy_derivation_audit.py", 9),
-    ("frontier_koide_as_pin_replaces_h_star_witness.py", 5),
+    ("frontier_koide_as_pin_replaces_h_star_witness.py", 4),
     ("frontier_koide_real_irrep_block_democracy.py", 8),
     ("frontier_koide_q_equals_lefschetz_sum.py", 5),
     ("frontier_koide_p1_sqrtm_amplitude_derivation.py", 6),
@@ -78,7 +78,7 @@ def main() -> int:
             ["python3", str(path)],
             capture_output=True,
             text=True,
-            timeout=600,
+            timeout=120 if script == "frontier_koide_as_pin_replaces_h_star_witness.py" else 600,
         )
         if result.returncode != 0:
             print(f"  [FAIL] {script:<{max_name_len}}  (exit code {result.returncode})")

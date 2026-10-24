@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/the_spin10_pair_square_on_two_sixteens_is_a_spin12_casimir_with_a_unique_singlet_ground_state_and_gap_four_g_but_a_frozen_far_region_still_moves_the_mirror_2026_10_23.py
+runner_sha256: d0095df95d2daf78cea12b3d28639fc6af8d57fabb0271b62a6629cc1f81cef8
+input_fingerprint_sha256: fe51f15fdc5dd514a1006045a2dced06d34aca44d2c67e285cfab769a5592b85
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 26.60
+status: ok
+----- stdout -----
+== A. one-body algebra: 16 of Spin(10), pair B_a = c_1^T M_a c_2, flavour = two spin components
+PASS: A1 [T] 45 Hermitian t_ab, Casimir 45/4 on the 16; M_a = (C gamma_a)|_+ symmetric and unitary; span{M_a} invariant, induced 10-dim rep has Casimir 9 (the vector)  [|M-M^T| 0e+00, Casimir(10) 9.000]
+PASS: A2 [T] Pauli: M_a symmetric, so c_1^T M_a c_1 = 0 and B_a is the flavour-antisymmetric (epsilon) pair - for the two spin components of one Weyl 16 it is the Lorentz-scalar 10 bilinear; the 3 flavour generators commute with all T, B, B^+, J  [max |[S, .]| 0e+00]
+PASS: A3 [T] closure: the 66 Nambu matrices {T_ab, (B+B^+)/2, i(B-B^+)/2, J} are independent and closed under commutators; with signs (s_T, s_J) they obey the so(12) relations exactly (so(10)+u(1), the 10 at J-charge +-1)  [rank 66, closure resid 1e-15, signs (-1, -1), rel err 0e+00]
+== B. Fock identity on 32 modes (mode x = 16 i + alpha)
+PASS: B1 [T] on the N <= 2 sectors (529 states; complete for number-conserving degree-4 operators): sum_a {B_a, B_a^+} = 2 [144 - 2 S(S+1) - C2_10 - J^2], J = (N-16)/2; i.e. C2(so12) = 144 - 2 S(S+1) on the whole Fock space  [err 0e+00]
+PASS: B2 [T] sum_a [B_a, B_a^+] = -20 J, so -g sum_a B_a B_a^+ = -g (F - 10 J), F = 144 - 2S(S+1) - C2_10 - J^2  [err 0e+00]
+PASS: B3 [F] redundancy: the identity on 3 seeded random vectors of the N = 3 sector (4960 states, via N = 5)  [err 6e-14]
+== C. spectrum by representation theory (H_sym = -(g/2) sum {B, B^+} = -g F)
+PASS: C1 [T] standard Casimirs <lam, lam+2rho> match 144 - 2j(j+1): (8,0^5) = 144 (j=0, holds |0>, |F>); Lambda^1(32) = 33/2 (j=15/2); Lambda^2_0 = (1^4,0,0) = 32 (j=7); (15/2,(1/2)^5) = 285/2 (j=1/2, holds c^+|0>)
+PASS: C2 [T] spherical irreps (a,b,0^4) with C2 = 144 are exactly (8,0) and (6,4); Fock weights obey mu_1 <= 8 and mu_1 + mu_2 <= 8, so (6,4) is absent; weight (8,0^5) arises from one subset only (all 16 w with w_1 = +1/2, S_z = 0): (8,0) occurs once, flavour singlet => one state with F = 144  [spherical [(6, 4), (8, 0)]]
+PASS: C3 [T] Spin(10) singlets (Weyl formula, |W(D5)| = 1920) occur only at N = 0 mod 4 (centre Z4); at N = 16 exactly one flavour singlet => the F = 144 state is unique; flavour-singlet singlets exist at N = 12, 20 (F = 140)  [n_j=0(16) 1, n_j=1(16) 0, n_j=0(12) 1, singlets at N=0,4,..,32: [1, 1, 1, 1, 27, 1, 1, 1, 1]]
+PASS: C4 [T] H_sym = -g F: E0 = -144 g unique (Spin(10), flavour and particle-hole singlet at N = 16); every other state has Delta F >= 4 (centre class minima C2 = 16, 9, 45/4; j half-integer for odd N), attained by the N = 16 +- 4 singlets: gap 4 g; B^+|GS> is exact at -134 g (10 g), c^+|GS> at -131 g (fermion gap 13 g)  [class minima {3: np.float64(11.25), 1: np.float64(11.25), 2: np.float64(9.0), 0: np.float64(16.0)}]
+PASS: C5 [T] naive ordering H = -g sum B B^+: ground energy -168 g, two-fold (N = 4 and 8: charged); the particle-hole symmetric completion H_sym = H - 5 g (N - 16) is needed to put a unique state at N = 16  [max F-10J = 168 at N = [4, 8]]
+PASS: C6 [T] contrasts: 16 x 16bar has no 10 and one singlet (the 10 channel vanishes; a quadratic Dirac pairing is allowed: vector-like, no SMG content). 15 + 15: H conserves N and N1 - N2 and is particle-hole symmetric (sum M x M* real); a unique C-symmetric state needs N = 15 and N1 = N2: impossible, every level >= 2-fold
+== D. reduced analogues, full diagonalisation
+PASS: D1 [F] n = 3: Spin(6) 4 x 2 flavours (2^8): M antisymmetric (so O_11 != 0 and only U(1) flavour survives); sum {B,B^+} = 2[16 - 4 S_z^2 - C2_6 - J^2] on the whole Fock space; unique GS at -16 g, gap 4 g, fermion gap 5 g  [identity err 0e+00, levels -16.000, -12.000, fermion 5.000]
+PASS: D2 [F] 3 + 3 truncation (one weight dropped per flavour, 2^6): the ground state is degenerate (odd modes per flavour)  [E0 -8.000 x2]
+== E. slab: far two layers vs relocation (free model of smg-strong-coupling A7)
+PASS: E1 [F] free slab (Ls = 12): the far-wall branch E = sin k has weight > 0.9 on the far two layers at k = pi/8 (a two-layer region captures the wall mode)  [w(far 2) at k = pi/16..pi/2: 1.000, 1.000, 0.993, 0.313]
+PASS: E2 [F] the far TWO layers frozen (m sz, m = 20): the branch keeps E = sin k, weight < 0.01 on the frozen layers and > 0.9 on the third layer from the far end; the same for r = 1..4 frozen layers: relocation by r layers  [r=2: |dE| 1e-16, w_frozen 0.0025, w_next 0.992]
+Supplied: 16 with one orbital per weight, two-valued flavour (spin), 10-channel pair, PH ordering, free slab + m sz. elapsed 26.2s, peak RSS 97 MB
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

@@ -422,7 +422,7 @@
       "reason": "Explicit source-identity-bound cap for a packet helper in this corrected source unit; metadata does not certify science."
     },
     "scripts/frontier_lensing_exponent_is_dipole_crossover.py": {
-      "source_sha256": "c74642de0751b1b3a4d9ac6add804d2d0805340cf07498adb4dd40c973262e62",
+      "source_sha256": "f9439b575ad39e07ab4c348fd37495f7a7043c8583f470afd82faddcc02581c7",
       "timeout_sec": 120,
       "reason": "Explicit source-identity-bound cap for a packet helper in this corrected source unit; metadata does not certify science."
     },
@@ -934,6 +934,21 @@
       "timeout_sec": 300,
       "source_sha256": "51d0bb9794c5993bc3c955fd1b7ba4d8bede0ec3b2a79e756c50373fcffcd44f",
       "rationale": "Bounded review cap for default finite diagnostic; preserves scientific predicates. Helper caps do not authorize helper main execution."
+    },
+    "scripts/frontier_record_local_finite_atom_availability_2026_06_17.py": {
+      "source_sha256": "0b64b6af1b45d4222c58c5baba565266f8740747353ceffa70447508ade2597d",
+      "timeout_sec": 120,
+      "reason": "Explicit review cap for unchanged affected primary or cache helper; source-hash bound. No scientific scope or audit runtime policy change."
+    },
+    "scripts/frontier_admissibility_record_continuation_refinement_2026_07_13.py": {
+      "source_sha256": "cb8753b688e21a4f9dba717d974f674bc33fa3b39d02acf253f4f051be8d9285",
+      "timeout_sec": 120,
+      "reason": "Explicit review cap for unchanged affected primary or cache helper; source-hash bound. No scientific scope or audit runtime policy change."
+    },
+    "scripts/reta_c3_source_response_independent_check_2026_09_02.py": {
+      "source_sha256": "5cd0edff88cf4f32082710c8d54e6497b45781a203274ba3368dc0faef0f9d53",
+      "timeout_sec": 150,
+      "reason": "Explicit bounded review cap for unchanged arithmetic helper; source identity required. No inherited science certification."
     }
   }
 }

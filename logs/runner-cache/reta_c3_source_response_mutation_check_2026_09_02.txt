@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/reta_c3_source_response_mutation_check_2026_09_02.py
-runner_sha256: b746d728a3fc3763ab461c98c05a3ce6f58df684bde229a4e6d64da2bd5a0668
-input_fingerprint_sha256: eeb29865f3fab618d4e2e192d583e0e46b4e95d4fd5e7341c3907ce46dac35f5
+runner_sha256: 9160f350250e3516723a915a802a80a3a001b744415404c2a81d946a9d7a52f8
+input_fingerprint_sha256: deee6e5ed23de3189e05a13043e4f4a6a0c71b6266674354866a7b19b3047732
 timeout_sec: 150
 exit_code: 0
-elapsed_sec: 0.53
+elapsed_sec: 0.93
 status: ok
 ----- stdout -----
 CLEAN_BASELINE {'Fourier normalization': True, 'log derivative distinguished': True, 'Hodge order on x': True}
-PASS Fourier normalization: {'Fourier normalization': False, 'log derivative distinguished': True, 'Hodge order on x': True}; source_sha256=cc906d4541b4adfcc85e4821e2b7a22394046685473aa32c5a49c9bf55ca88c2
-PASS log derivative distinguished: {'Fourier normalization': True, 'log derivative distinguished': False, 'Hodge order on x': True}; source_sha256=1890e3ed0ebae0c2fd5782db3734f7d73b4a46d75afb32b1fd3c0af9ac5263b5
-PASS Hodge order on x: {'Fourier normalization': True, 'log derivative distinguished': True, 'Hodge order on x': False}; source_sha256=037d9f80d4280b1b6dab5af79f12f583f6b6212fa0952b494c085cac87b02715
+PASS Fourier normalization: {'Fourier normalization': False, 'log derivative distinguished': True, 'Hodge order on x': True}; source_sha256=dfc50b8dcf2d31fa001d7482bdbf3b9b92aca365e2f64c4b3d5ac57b488ed1a1
+PASS log derivative distinguished: {'Fourier normalization': True, 'log derivative distinguished': False, 'Hodge order on x': True}; source_sha256=2022e5606d6bd5fb2a694f6e8a43f85603246958d2248f05e0234def68d47952
+PASS Hodge order on x: {'Fourier normalization': True, 'log derivative distinguished': True, 'Hodge order on x': False}; source_sha256=f7c881ab15545a5819740c9e7a93a36abf4afb1956f0cf9e424de3dd91ba08cc
 TOTAL: PASS=4 FAIL=0
 
 ----- stderr -----

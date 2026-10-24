@@ -1,27 +1,16 @@
 #!/usr/bin/env python3
-"""Cross-sector closure N_gen = N_color = 3 via retained-tier authorities audit.
-
-Verifies the CLOSURE in
-  docs/CKM_KOIDE_CROSS_SECTOR_Z3_CLOSURE_THEOREM_NOTE_2026-04-25.md
-
-The closure is STRUCTURALLY MINIMAL: it uses only retained-tier authorities
-on main, and verifies the closure by INDEPENDENTLY READING each retained
-value from its source authority — NOT by hard-coding the closure package.
-
-Closure derivation:
-  R1: N_gen = 3 retained from THREE_GENERATION_STRUCTURE_NOTE (status: retained).
-  R2: N_color = 3 retained from CKM_MAGNITUDES_STRUCTURAL_COUNTS (retained).
-  R3: N_gen = N_color = 3 by direct retained equality.
-
-This script:
-- Reads the cited authority files from origin/main (or local working tree).
-- Verifies each authority's tier label (retained vs support).
-- Independently extracts the cited integer value from each authority.
-- Checks the closure equality at the verified retained values.
-- Does NOT pre-assign N_gen = 3 or N_color = 3 at the top.
+"""Conditional count equality on two supplied mathematical surfaces.
+The hw=1 Wilson corner orbit has three labels; the CKM structural-count
+surface supplies n_color=3. Equality of these integers does not identify
+physical generations, color, or a common origin. Status strings are printed
+as documentary metadata, never consumed as conditional source.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ('docs/CKM_KOIDE_CROSS_SECTOR_Z3_CLOSURE_THEOREM_NOTE_2026-04-25.md', 'docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md', 'docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md', 'docs/CL3_TASTE_GENERATION_THEOREM.md', 'docs/MINIMAL_AXIOMS_2026-04-11.md', 'docs/THREE_GENERATION_STRUCTURE_NOTE.md')
+
 
 import re
 import sys
@@ -97,11 +86,11 @@ def extract_status_text(content: str) -> str:
 
 
 def audit_three_generation_authority() -> int:
-    """Read THREE_GENERATION_STRUCTURE_NOTE; verify retained tier; extract N_gen."""
-    banner("R1: Read N_gen from THREE_GENERATION_STRUCTURE_NOTE (retained authority)")
+    """Read the conditional orbit count, without physical-generation identification."""
+    banner("R1: Read N_gen from THREE_GENERATION_STRUCTURE_NOTE (conditional source)")
 
     content = read_authority("docs/THREE_GENERATION_STRUCTURE_NOTE.md")
-    check("THREE_GENERATION_STRUCTURE_NOTE.md exists on retained surface",
+    check("THREE_GENERATION_STRUCTURE_NOTE.md exists as an input",
           bool(content))
 
     # Ground-up verification: extract the actual Status: line text
@@ -110,24 +99,20 @@ def audit_three_generation_authority() -> int:
 
     tier = authority_tier(content)
     print(f"  Tier classification (parsed): {tier}")
-    check("THREE_GENERATION_STRUCTURE_NOTE has Status text containing 'retained' (no 'support')",
-          tier == "retained")
+    check("Generation source explicitly excludes physical-species and SM-generation identification",
+          "physical-species interpretation, SM-generation identification" in " ".join(content.split())
+          and "This row does not claim that the `hw=1` triplet is physically realized" in " ".join(content.split()))
 
-    # Extract N_gen by searching for "three-generation" or "three generation"
-    has_three_gen = bool(re.search(r"three[\-\s]generation", content, re.IGNORECASE))
-    check("Authority establishes 'three-generation' matter structure",
-          has_three_gen)
-
-    # Independent reading: the retained physical N_gen is 3
-    N_gen_from_retained = 3 if has_three_gen else None
-    print(f"  N_gen (read from retained authority): {N_gen_from_retained}")
-    check("R1: N_gen = 3 read from retained authority", N_gen_from_retained == 3)
-    return N_gen_from_retained
+    # Extract the stated hw=1 table degeneracy, not a physical species count.
+    match = re.search(r"^\|\s*1\s*\|\s*(\d+)\s*\|\s*2\s*\|", content, re.MULTILINE)
+    orbit_count = int(match.group(1)) if match else None
+    check("Conditional hw=1 orbit count read from the Wilson-corner table", orbit_count == 3)
+    return orbit_count
 
 
 def audit_ckm_magnitudes_authority() -> int:
     """Read CKM_MAGNITUDES_STRUCTURAL_COUNTS; extract N_color."""
-    banner("R2: Read N_color from CKM_MAGNITUDES_STRUCTURAL_COUNTS (retained authority)")
+    banner("R2: Read N_color from CKM_MAGNITUDES_STRUCTURAL_COUNTS (conditional source)")
 
     content = read_authority(
         "docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md"
@@ -139,10 +124,11 @@ def audit_ckm_magnitudes_authority() -> int:
     status_text = extract_status_text(content)
     print(f"  Extracted Status: {status_text!r}")
     tier = authority_tier(content)
-    check("CKM_MAGNITUDES_STRUCTURAL_COUNTS Status text contains 'retained' (no 'support')",
-          "retained" in status_text.lower() and "support" not in status_text.lower())
+    check("CKM source declares conditional structural-count algebra, not upstream closure",
+          "The conditional surface is:" in " ".join(content.split())
+          and "is owned by the upstream-audit lane and is not asserted" in " ".join(content.split()))
 
-    # Find the retained n_color statement explicitly in the document
+    # Read the supplied n_color statement explicitly in the document
     # Pattern: "n_color = 3" or similar
     match = re.search(r"n[_\s]color\s*=\s*(\d+)", content, re.IGNORECASE)
     if match:
@@ -151,41 +137,41 @@ def audit_ckm_magnitudes_authority() -> int:
         N_color_extracted = None
 
     print(f"  Pattern 'n_color = N' search: {match.group(0) if match else 'NOT FOUND'}")
-    print(f"  N_color (read from retained authority): {N_color_extracted}")
-    check("R2: N_color = 3 read from retained authority", N_color_extracted == 3)
+    print(f"  N_color (read from conditional source): {N_color_extracted}")
+    check("R2: N_color = 3 read from conditional source", N_color_extracted == 3)
     return N_color_extracted
 
 
 def audit_r3_closure(n_gen: int, n_color: int) -> None:
-    """Verify the closure R3 by direct equality at the verified retained values."""
-    banner("R3: Cross-sector closure N_gen = N_color = 3 by direct retained equality")
+    """Verify the closure R3 by direct equality at the verified supplied mathematical values."""
+    banner("R3: Cross-sector closure N_gen = N_color = 3 by conditional integer equality")
 
-    print(f"  N_gen   (R1, retained from THREE_GENERATION_STRUCTURE) = {n_gen}")
-    print(f"  N_color (R2, retained from CKM_MAGNITUDES)             = {n_color}")
-    print(f"  Both retained values are 3, so N_gen = N_color = 3.")
+    print(f"  N_gen   (R1, orbit count from THREE_GENERATION_STRUCTURE) = {n_gen}")
+    print(f"  N_color (R2, supplied count from CKM_MAGNITUDES)             = {n_color}")
+    print(f"  Both supplied mathematical values are 3, so N_gen = N_color = 3.")
 
-    check("R3: N_gen = 3 (read from retained authority)", n_gen == 3)
-    check("R3: N_color = 3 (read from retained authority)", n_color == 3)
-    check("R3: N_gen = N_color (direct retained equality)", n_gen == n_color)
+    check("R3: N_gen = 3 (read from conditional source)", n_gen == 3)
+    check("R3: N_color = 3 (read from conditional source)", n_color == 3)
+    check("R3: N_gen = N_color (conditional integer equality)", n_gen == n_color)
     check("R3: N_gen = N_color = 3 (closure)", n_gen == n_color == 3)
 
 
 def audit_minimal_axioms_z3() -> None:
     """Verify the framework's Z^3 spatial substrate axiom is retained."""
-    banner("Framework primitive: Z^3 spatial substrate (retained axiom)")
+    banner("Historical input memo: Z^3 spatial substrate (documentary presence only)")
 
     content = read_authority("docs/MINIMAL_AXIOMS_2026-04-11.md")
-    check("MINIMAL_AXIOMS_2026-04-11.md exists on retained surface",
+    check("MINIMAL_AXIOMS_2026-04-11.md exists as an input",
           bool(content))
 
     has_z3 = "Z^3" in content or "Z³" in content
-    check("MINIMAL_AXIOMS retains Z^3 spatial substrate (axiom 2)",
+    check("Historical memo names Z^3 spatial substrate",
           has_z3)
 
 
 def audit_auxiliary_cl3_support() -> None:
     """Verify the CL3 support-tier readings exist (for completeness, NOT load-bearing)."""
-    banner("Auxiliary support-tier reading (NOT load-bearing for closure)")
+    banner("Auxiliary abstract constructions (NOT load-bearing for equality)")
 
     color_content = read_authority("docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md")
     taste_content = read_authority("docs/CL3_TASTE_GENERATION_THEOREM.md")
@@ -202,15 +188,17 @@ def audit_auxiliary_cl3_support() -> None:
     print(f"  CL3_TASTE_GENERATION_THEOREM tier:     {taste_tier}")
 
     print()
-    print("  These are SUPPORT-tier on main and are NOT load-bearing for the closure R3.")
-    print("  The closure stands on the retained-tier R1 (THREE_GENERATION) + R2 (CKM_MAGNITUDES) only.")
-    print("  The CL3 support-tier theorems are auxiliary structural reading: shared Z^3 provenance motif.")
+    print("  The color construction is conditional on a supplied carrier and is NOT load-bearing for closure R3.")
+    print("  The R1/R2 scope contracts do not establish physical interpretation or audit authority.")
+    print("  These separate supplied constructions establish no shared physical origin.")
 
-    check("CL3_COLOR_AUTOMORPHISM is support-tier (not retained closure authority)",
-          "support" in color_tier)
-    check("CL3_TASTE_GENERATION is support-tier (not retained closure authority)",
-          "support" in taste_tier)
-    check("CL3 support theorems exist on main (auxiliary reading available)",
+    check("CL3_COLOR_AUTOMORPHISM states supplied finite carrier and open physical identification",
+          "Supplied finite carrier only." in color_content
+          and "The physical identification of any of these groups remains open." in color_content)
+    check("Taste source is abstract representation theory without physical-family identification",
+          "not a framework carrier theorem and not a physical-family theorem" in " ".join(taste_content.split())
+          and "admitted abstract" in taste_content)
+    check("CL3 construction notes exist (auxiliary reading available)",
           bool(color_content) and bool(taste_content))
 
 
@@ -218,39 +206,30 @@ def audit_no_promotion() -> None:
     """Verify this closure does NOT promote prior support branches to retained."""
     banner("This closure does NOT promote any support-tier branches to retained")
 
-    print("  The closure R3 is established by direct retained equality of two retained values.")
+    print("  Conditional equality is separate from establishing the physical input values.")
     print("  It does NOT promote:")
-    print("    - CL3_COLOR_AUTOMORPHISM_THEOREM (remains support-tier)")
-    print("    - CL3_TASTE_GENERATION_THEOREM (remains support-tier)")
+    print("    - CL3_COLOR_AUTOMORPHISM_THEOREM (supplied finite carrier; physical identification open)")
+    print("    - CL3_TASTE_GENERATION_THEOREM (abstract representation only)")
     print("    - Eight prior Koide-bridge SUPPORT-tier branches (they remain support)")
     print("    - Cross-sector A²-Koide_VCB bridge SUPPORT_NOTE (remains support)")
     print()
-    print("  The closure is STRUCTURALLY MINIMAL: it equates two independently-retained values.")
+    print("  Physical input identification is not established by a documentary contract.")
 
-    check("No promotion claim: closure is direct retained equality only", True)
+    check("No auxiliary color promotion: supplied physical-identification boundary remains open",
+          "The physical identification of any of these groups remains open." in read_authority("docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md"))
 
 
 def audit_summary() -> None:
-    banner("Summary of CLOSURE")
-
-    print("  CLOSURE THEOREM (positive, retained-tier authorities only):")
-    print()
-    print("    R1: N_gen = 3                                    [retained THREE_GENERATION_STRUCTURE]")
-    print("    R2: N_color = 3                                  [retained CKM_MAGNITUDES_STRUCTURAL_COUNTS]")
-    print("    R3: N_gen = N_color = 3                          [direct retained equality]")
-    print()
-    print("  This is structurally minimal: closure by trivial arithmetic on two retained values.")
-    print()
-    print("  Auxiliary support-tier reading (NOT load-bearing): shared Z^3 provenance motif via")
-    print("  CL3_COLOR_AUTOMORPHISM and CL3_TASTE_GENERATION (both support-tier on main).")
-    print()
-    print("  This note does NOT promote any support-tier branch to retained closure.")
-    print("  Specifically: Koide-bridge SUPPORT branches remain support-tier.")
+    banner("Conditional arithmetic and current authority boundary")
+    print("If N_gen=3 and N_color=3 are supplied, their integer equality follows.")
+    print("Status-string checks are documentary contracts, not physical proof.")
+    print("Any failed scope or integer-extraction contract fails this conditional diagnostic. Physical closure remains open even when it passes.")
+    print("The auxiliary color carrier supplies no physical identification.")
 
 
 def main() -> int:
     print("=" * 88)
-    print("Cross-sector closure N_gen = N_color = 3 via retained-tier authorities")
+    print("Cross-sector closure N_gen = N_color = 3 via supplied count inputs")
     print("See docs/CKM_KOIDE_CROSS_SECTOR_Z3_CLOSURE_THEOREM_NOTE_2026-04-25.md")
     print("=" * 88)
 

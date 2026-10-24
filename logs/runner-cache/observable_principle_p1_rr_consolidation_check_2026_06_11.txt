@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/observable_principle_p1_rr_consolidation_check_2026_06_11.py
-runner_sha256: cef3321cb19a1cd8fd4e7a9f3f705cea17e751cd55d02c49647d3c83687526c1
-timeout_sec: 120
+runner_sha256: 4fb06117c9f7f5eda19a592b1b7f0681cdb156e2fb9864fff9756784b3f0136d
+input_fingerprint_sha256: 105fcf764d027a95c8eccee5f048e703f7f48d37e7ea8b7aaf49a89c394cd170
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.57
+elapsed_sec: 1.24
 status: ok
 ----- stdout -----
 == T1: the consolidation equivalence — exhaustive finite-model verification ==
@@ -43,9 +44,9 @@ status: ok
 == T11: walls, firewalls, ledger, honest scope ==
   [PASS][B] record-scalar-map wall: 'The missing step is the middle arrow.' present verbatim in the retained_no_go; the note DECLARES RR (a quantitative slice of that middle arrow) and never derives it; forbidden derivation/closure strings absent  -- found=[]
   [PASS][B] count-probability firewall: 'They cannot derive the model.' present verbatim; the note constructs no probability law (string present) and every sensitivity in this runner is an operator norm — counts appear only as exact witness arithmetic
-  [PASS][B] record-formation wall: the retained_no_go's claim ('does **not** hold unconditionally') present verbatim; the note states RR conditions on the realization and does not force records to form (the class may be empty)
+  [PASS][B] current formation boundary: occurrence and local conditional distribution supplied; production realization remains open
   [PASS][B] canonical-proposal no-dynamics guardrail: 'it disclaims the decoherence *process* that produces it' present verbatim in the proposal note; RR is a declared realization clause, not a derivation forcing record formation on any partition
-  [PASS][B] cited rows present in the audit ledger at the cited effective statuses (8 rows; unbounded Record audited_conditional); the CAP-K source note is on disk with its four (REG) clause labels, '(CAP-real) remains declared', and the association sentence quoted in this note; the BR-license and canonical-proposal notes are consumed as unaudited sources (presence + wording only, no grade asserted)  -- mismatches=[]
+  [PASS][B] CAP-K declared clause source is present; no ledger grade asserted
   [PASS][B] note honest-scope and firewall-compliance strings present; the consolidation is presented as content-preserving bookkeeping over declared clauses (an implication-lattice theorem), not as a reduction of assumed content  -- missing=[]
 
 TOTAL: PASS=30 FAIL=0

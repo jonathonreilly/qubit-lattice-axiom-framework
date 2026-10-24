@@ -1,6 +1,6 @@
 """CMW 2D/1D sublattice no-SSB check.
 
-Verifies (S1)-(S4) of CMW_2D_SUBLATTICE_NO_SSB_THEOREM_NOTE_2026-05-02.md
+Supplies finite-size diagnostics for (S1)-(S4) of CMW_2D_SUBLATTICE_NO_SSB_THEOREM_NOTE_2026-05-02.md
 by computing the IR-divergence of the lattice Goldstone-mode integral
 I_d in d = 1, 2, 3 and confirming the divergence pattern that drives
 the no-SSB conclusion.
@@ -11,13 +11,16 @@ Tests:
   T3: I_3 converges to a finite limit as L → ∞
   T4: scaling I_d / appropriate-divergence is constant for d = 1, 2
   T5: under the W1-W4 Ward-normalized Bogoliubov bridge hypotheses,
-      the divergent I_d for d <= 2 forces m_L -> 0
+      decreasing finite-size bounds illustrate the conditional limit implication
+  T6: conserved charge and symmetry-breaking order need not coincide
 """
 from __future__ import annotations
 
 import math
 
 import numpy as np
+
+AUDIT_TIMEOUT_SEC = 120
 
 
 def lattice_dispersion_d(k):
@@ -63,7 +66,7 @@ def main() -> None:
     print("  Lattice IR-integral I_d = (1/V) sum_{k≠0} 1/E_k")
     print("  E_k = 2 sum_μ (1 - cos k_μ) (lattice Goldstone dispersion)")
     print("  Divergence of I_d at large L is the Bogoliubov-bound mechanism")
-    print("  that forces ⟨q⟩_β = 0 (no SSB) for d ≤ 2.")
+    print("  that bounds the W1-W4 order parameter m_L, not arbitrary charge density.")
     print()
 
     # ----- Test 1: I_1 diverges linearly -----
@@ -162,6 +165,20 @@ def main() -> None:
     print(f"  STATUS: {'PASS' if t5_ok else 'FAIL'}")
     print()
 
+    # A U(1)-invariant Gibbs state may have nonzero conserved density.
+    q = np.diag([1., -1.])
+    order = np.array([[0., 1.], [1., 0.]])
+    beta_h = 0.7
+    hamiltonian = -beta_h*q  # beta=1 for this diagnostic
+    weights = np.exp(-np.diag(hamiltonian))
+    rho = np.diag(weights/weights.sum())
+    charge = np.trace(rho@q)
+    transverse = np.trace(rho@order)
+    t6_ok = (np.allclose(q@hamiltonian,hamiltonian@q)
+             and abs(charge-math.tanh(beta_h))<1e-14
+             and abs(charge)>0.1 and abs(transverse)<1e-14)
+    print(f"Charge/order distinction: <q>={charge}, <A>={transverse}; PASS={t6_ok}")
+
     # ----- Summary -----
     print("=" * 72)
     print("SUMMARY")
@@ -174,7 +191,7 @@ def main() -> None:
     print("  WARD_NORMALIZED_BRIDGE_HYPOTHESES_EXPLICIT=TRUE")
     print("  WATSON_LIMIT_COMMENT_REPAIRED=TRUE")
     print()
-    all_ok = t1_ok and t2_ok and t3_ok and t4_ok and t5_ok
+    all_ok = t1_ok and t2_ok and t3_ok and t4_ok and t5_ok and t6_ok
     print(f"  OVERALL: {'PASS' if all_ok else 'FAIL'}")
     if not all_ok:
         raise SystemExit(1)

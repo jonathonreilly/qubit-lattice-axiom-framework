@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cmw_2d_sublattice_no_ssb_check.py
-runner_sha256: f58bb2cd32d8c1f60250afc60050d6db8dcd3d9af306d984910ff2fe7b643615
+runner_sha256: 6a343b21799f2d8afe1a79f7f6cb122db00f3a4016043307549154c3ebba0257
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ========================================================================
@@ -14,7 +14,7 @@ Setup:
   Lattice IR-integral I_d = (1/V) sum_{k≠0} 1/E_k
   E_k = 2 sum_μ (1 - cos k_μ) (lattice Goldstone dispersion)
   Divergence of I_d at large L is the Bogoliubov-bound mechanism
-  that forces ⟨q⟩_β = 0 (no SSB) for d ≤ 2.
+  that bounds the W1-W4 order parameter m_L, not arbitrary charge density.
 
 ------------------------------------------------------------------------
 TEST 1: I_1 diverges linearly with L
@@ -77,6 +77,7 @@ TEST 5: W1-W4 Ward bridge + divergent I_d forces m_L -> 0
   d=2 bound decreasing with L: True
   STATUS: PASS
 
+Charge/order distinction: <q>=0.6043677771171636, <A>=0.0; PASS=True
 ========================================================================
 SUMMARY
 ========================================================================

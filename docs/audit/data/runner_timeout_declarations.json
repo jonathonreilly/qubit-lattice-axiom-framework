@@ -1079,6 +1079,11 @@
       "source_sha256": "a942ca4e67a3ed080045707c485cef65e37573cbeac7e8165b0368629b8f8302",
       "timeout_sec": 300,
       "reason": "Supplied-weight algebra and documentary local-input checks; bounded original authorized cap."
+    },
+    "scripts/cubic_corner_finite_local_homology_2026_10_23.py": {
+      "source_sha256": "b76bf24f2c8b5291e90a0c29b3cf17b325e2ef0863103c67ff9359a08454f2b3",
+      "timeout_sec": 120,
+      "reason": "Bounded exact finite cubic/corner GF(2) geometry certificate; no campaign or code-stability execution."
     }
   }
 }

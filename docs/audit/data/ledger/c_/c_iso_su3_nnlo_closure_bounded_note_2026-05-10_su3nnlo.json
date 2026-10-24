@@ -41,7 +41,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "fc21d22fb367f39ad1c31ee7fd87aa19eabbe95b13e4deb8947239c070198d95",
+  "note_hash": "a57d793847c6f03e5f5434f3cb6e8fffce091087080a7212429ea88ef37b6d60",
   "note_path": "docs/C_ISO_SU3_NNLO_CLOSURE_BOUNDED_NOTE_2026-05-10_su3nnlo.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

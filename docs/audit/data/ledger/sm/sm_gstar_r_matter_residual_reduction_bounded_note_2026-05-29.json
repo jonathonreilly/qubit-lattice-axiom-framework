@@ -24,17 +24,7 @@
   "decoration_parent_claim_id": null,
   "deps": [
     "sm_relativistic_dof_count_import_note_2026-05-17",
-    "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28",
-    "graph_first_su3_integration_note",
-    "cl3_color_automorphism_theorem",
-    "native_gauge_closure_note",
-    "lhcm_matter_assignment_from_su3_representation_note_2026-05-02",
-    "left_handed_charge_matching_note",
-    "one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10",
-    "three_generation_observable_theorem_note",
-    "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
-    "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10",
-    "per_site_su2_spin_half_theorem_note_2026-05-02"
+    "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28"
   ],
   "direct_in_degree": 0,
   "effective_status": "unaudited",
@@ -47,7 +37,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "acdb13c257d1d19ca4aea4184e8578e487e20ab3d5c6bec5dec75ea322434d9b",
+  "note_hash": "480d8e496c1517c740c9ecfea810e1ad865c37958ba2938a6d266b19e25a7018",
   "note_path": "docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -882,7 +872,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -891,7 +881,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_sm_gstar_r_matter_reduction_2026_05_29.py",
-  "title": "`g_*` Census Residual Reduction: R-MATTER (per-generation 30 dof as explicit bounded arithmetic) \u2014 Bounded Note",
+  "title": "Conditional matter-count arithmetic from a supplied inventory",
   "transitive_descendants": 0,
   "unattributed_audit_provenance": [
     {

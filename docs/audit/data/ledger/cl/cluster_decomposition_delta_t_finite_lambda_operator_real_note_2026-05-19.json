@@ -16,25 +16,29 @@
   "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
-  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (conditional operator theorem).",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
-  "deps": [],
+  "deps": [
+    "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19",
+    "strong_cp_theta_zero_note",
+    "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09"
+  ],
   "direct_in_degree": 3,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.781,
+  "load_bearing_score": 10.729,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "50e2dc636ec095ec7dc67f23b2ea4bdf43a54c1c7436fe120f52b5c35389385c",
+  "note_hash": "153686389ac45826dc6e9e07c2c45a8b77abbcdfb9d3367036aa27bba370f99d",
   "note_path": "docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -139,7 +143,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -148,7 +152,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_cluster_decomp_delta_t_su3_operator_real_2026_05_19.py",
-  "title": "Operator-Theoretic Delta_T > 0 Support on the Finite-Lambda SU(3) Transfer Operator",
-  "transitive_descendants": 621,
+  "title": "Finite-volume spectral gap for a specified SU(3) heat-kernel operator",
+  "transitive_descendants": 599,
   "verdict_rationale": null
 }

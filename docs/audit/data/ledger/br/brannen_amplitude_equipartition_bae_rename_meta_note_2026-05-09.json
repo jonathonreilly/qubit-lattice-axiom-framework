@@ -31,12 +31,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "meta",
-  "load_bearing_score": 19.274,
+  "load_bearing_score": 19.231,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "17888e925209e4f7b4fefa121514bd32091509a38a623ea159fc9e758eedbb92",
+  "note_hash": "f68bcaee93ff2181f8b7791c781689b922e9dcb0fcb2f102bff5fb4fafa093b4",
   "note_path": "docs/BRANNEN_AMPLITUDE_EQUIPARTITION_BAE_RENAME_META_NOTE_2026-05-09.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -52,6 +52,6 @@
   },
   "runner_path": "scripts/frontier_bae_rename_meta.py",
   "title": "Brannen Amplitude Equipartition (BAE) Rename Meta Note",
-  "transitive_descendants": 618,
+  "transitive_descendants": 600,
   "verdict_rationale": null
 }

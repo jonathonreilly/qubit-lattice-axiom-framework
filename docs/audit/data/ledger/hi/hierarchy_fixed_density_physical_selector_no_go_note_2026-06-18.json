@@ -16,7 +16,7 @@
   "claim_scope": null,
   "claim_type": "no_go",
   "claim_type_author_hint": "no_go",
-  "claim_type_author_hint_raw": "no_go / negative_route_pruning",
+  "claim_type_author_hint_raw": "no_go",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
   "criticality": "critical",
@@ -24,6 +24,7 @@
   "decoration_parent_claim_id": null,
   "deps": [
     "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
+    "hierarchy_dimensional_compression_note",
     "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18"
   ],
   "direct_in_degree": 1,
@@ -32,12 +33,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 9.788,
+  "load_bearing_score": 9.755,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "910d471ab056faa6dfe48e6fbbe2b700177a1af7f5e19b300c2dd70167f189c9",
+  "note_hash": "bfeef1e53d378ce8813745d2610613866765ff85c0f6e21d7dbc659c35988478",
   "note_path": "docs/HIERARCHY_FIXED_DENSITY_PHYSICAL_SELECTOR_NO_GO_NOTE_2026-06-18.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -127,7 +128,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -136,7 +137,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_hierarchy_fixed_density_physical_selector_no_go_2026_06_18.py",
-  "title": "Hierarchy Fixed-Density Endpoint Selector No-Go",
-  "transitive_descendants": 624,
+  "title": "Fixed positive quartic equations: restricted non-identification boundary",
+  "transitive_descendants": 610,
   "verdict_rationale": null
 }

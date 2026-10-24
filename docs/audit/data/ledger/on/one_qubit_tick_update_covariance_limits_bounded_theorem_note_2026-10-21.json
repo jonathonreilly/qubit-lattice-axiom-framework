@@ -34,7 +34,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "f351d093e643d4532dd50ca3683db5e570d0ecac4424961b9c0883f473218d2c",
+  "note_hash": "3e5e87bc533a2034dc750860d9a634efe90af221e56baf8d437259da6c0dd4b4",
   "note_path": "docs/ONE_QUBIT_TICK_UPDATE_COVARIANCE_LIMITS_BOUNDED_THEOREM_NOTE_2026-10-21.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 4207,
-    "decoration": 8,
+    "bounded_theorem": 4249,
+    "decoration": 7,
     "meta": 377,
-    "no_go": 349,
-    "open_gate": 315,
-    "positive_theorem": 677
+    "no_go": 335,
+    "open_gate": 334,
+    "positive_theorem": 646
   },
   "cycle_examples": [
     [
@@ -18,6 +18,7 @@
     [
       "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
       "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+      "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
       "strong_cp_theta_zero_note",
       "theta_gauge_z2_character_collapse_odd_support_and_positive_class_zero_branch_selection_bounded_theorem_note_2026-07-03",
       "theta_4d_carrier_flux_cohomology_intersection_pairing_closed_branch_and_defect_closure_residual_bounded_theorem_note_2026-07-02",
@@ -34,6 +35,7 @@
       "a3_option_c_brannen_rivero_physical_lattice_bounded_obstruction_note_2026-05-08_optc",
       "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
       "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+      "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
       "strong_cp_theta_zero_note",
       "theta_gauge_z2_character_collapse_odd_support_and_positive_class_zero_branch_selection_bounded_theorem_note_2026-07-03",
       "theta_4d_carrier_flux_cohomology_intersection_pairing_closed_branch_and_defect_closure_residual_bounded_theorem_note_2026-07-02",
@@ -49,6 +51,7 @@
     [
       "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
       "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+      "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
       "strong_cp_theta_zero_note",
       "theta_gauge_z2_character_collapse_odd_support_and_positive_class_zero_branch_selection_bounded_theorem_note_2026-07-03",
       "theta_4d_carrier_flux_cohomology_intersection_pairing_closed_branch_and_defect_closure_residual_bounded_theorem_note_2026-07-02",
@@ -64,6 +67,7 @@
     ],
     [
       "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+      "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
       "strong_cp_theta_zero_note",
       "theta_gauge_z2_character_collapse_odd_support_and_positive_class_zero_branch_selection_bounded_theorem_note_2026-07-03",
       "theta_4d_carrier_flux_cohomology_intersection_pairing_closed_branch_and_defect_closure_residual_bounded_theorem_note_2026-07-02",
@@ -78,10 +82,10 @@
       "a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1"
     ]
   ],
-  "cycles_detected": 69,
+  "cycles_detected": 72,
   "effective_status_counts": {
     "meta": 377,
-    "unaudited": 5556
+    "unaudited": 5571
   },
   "retained_pending_chain_count": 0,
   "retained_pending_chain_examples": []

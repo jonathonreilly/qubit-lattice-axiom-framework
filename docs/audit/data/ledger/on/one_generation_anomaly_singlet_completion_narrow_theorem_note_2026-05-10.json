@@ -25,13 +25,13 @@
   "deps": [
     "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10"
   ],
-  "direct_in_degree": 4,
+  "direct_in_degree": 3,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 11.329,
+  "load_bearing_score": 10.792,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -5102,6 +5102,6 @@
   },
   "runner_path": "scripts/audit_companion_one_generation_anomaly_singlet_completion_exact_2026_05_10.py",
   "title": "One-Generation Anomaly Singlet Completion Narrow Theorem",
-  "transitive_descendants": 642,
+  "transitive_descendants": 626,
   "verdict_rationale": null
 }

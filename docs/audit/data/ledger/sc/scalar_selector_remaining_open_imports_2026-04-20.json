@@ -23,6 +23,8 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
+    "split2_conditional_generator_cofactor_algebra_note_2026-10-23",
+    "dm_selector_supplied_bank_seed_relative_action_finite_diagnostic_note_2026-10-23",
     "koide_brannen_phase_reduction_theorem_note_2026-04-20",
     "koide_q_delta_linking_relation_theorem_note_2026-04-20",
     "koide_higgs_dressed_resolvent_root_theorem_note_2026-04-20",
@@ -37,12 +39,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.0,
+  "load_bearing_score": 4.807,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "f48e0e8211841d73a1dbe9bcae7243927a0be7e68d0e47fcabdc396f0f59d8d7",
+  "note_hash": "bcb884dd98348f26d550a639fed5ff9a5bed96b2dfd43165e4d50cd625b60734",
   "note_path": "docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -169,6 +171,6 @@
   },
   "runner_path": null,
   "title": "Scalar-Selector Cycle 1 \u2014 Remaining Open Imports",
-  "transitive_descendants": 7,
+  "transitive_descendants": 6,
   "verdict_rationale": null
 }

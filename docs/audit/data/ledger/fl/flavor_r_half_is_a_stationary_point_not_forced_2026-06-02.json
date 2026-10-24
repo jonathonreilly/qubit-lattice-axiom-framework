@@ -22,7 +22,9 @@
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
-  "deps": [],
+  "deps": [
+    "three_generation_observable_theorem_note"
+  ],
   "direct_in_degree": 5,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
@@ -34,7 +36,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "91b708236784a0393aa6295fd54cca2ed6efc92d57b3a92925e01d224bfb9dcb",
+  "note_hash": "b33397045ae355d0e53032806f6e008e25b7b759207335e2f853d2b0c3044461",
   "note_path": "docs/FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -115,7 +117,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -124,7 +126,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/flavor_r_half_is_a_stationary_point_not_forced_2026_06_02.py",
-  "title": "Flavor \u2014 reframe: r=1/2 need not be *forced*; it is a distinguished *stationary point* (max-sector-entropy / balance / swap-fixed-point). The three Q-lanes are distinguished points of the r-family, not competing answers \u2014 so the J-hunt's \"force det_C over det_R\" was the wrong target.",
+  "title": "Flavor: stationary points of supplied entropy functionals",
   "transitive_descendants": 59,
   "verdict_rationale": null
 }

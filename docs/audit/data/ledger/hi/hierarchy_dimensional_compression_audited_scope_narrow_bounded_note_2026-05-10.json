@@ -14,16 +14,17 @@
   "chain_closure_explanation": null,
   "claim_id": "hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10",
   "claim_scope": null,
-  "claim_type": "bounded_theorem",
-  "claim_type_author_hint": "bounded_theorem",
-  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "hierarchy_effective_potential_endpoint_note"
+    "hierarchy_dimensional_compression_note",
+    "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16"
   ],
   "direct_in_degree": 0,
   "effective_status": "unaudited",
@@ -36,7 +37,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "4c9929439c5831b3f87247289ee146e9c22497c29febea974de3ac1dfaa598a1",
+  "note_hash": "404d44126eb01dcfa8b907ccae2ffc7568489923d8ce8ff0401a4d8326d043f4",
   "note_path": "docs/HIERARCHY_DIMENSIONAL_COMPRESSION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -364,7 +365,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -373,7 +374,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_hierarchy_dimensional_compression.py",
-  "title": "Hierarchy Dimensional Compression Audited-Scope Narrowing Bounded Note",
+  "title": "Hierarchy dimensional compression: finite companion diagnostic",
   "transitive_descendants": 0,
   "verdict_rationale": null
 }

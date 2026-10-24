@@ -32,12 +32,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.29,
+  "load_bearing_score": 10.255,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "cf8bfc734a10fca3f6a3a6c73afc80c6c7a62872c082050ba772a02bc2268c67",
+  "note_hash": "93b819c8a28ab8f151ca7e3dd935daee8eba80648a2d6d7eef90c499a40336da",
   "note_path": "docs/HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -555,6 +555,6 @@
   },
   "runner_path": "scripts/frontier_hierarchy_ew_order_parameter_d4_density_readout_bridge_2026_06_18.py",
   "title": "Hierarchy EW Order-Parameter D4 Density Readout Bridge",
-  "transitive_descendants": 625,
+  "transitive_descendants": 610,
   "verdict_rationale": null
 }

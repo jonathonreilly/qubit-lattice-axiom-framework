@@ -31,7 +31,7 @@ Owner-approval history for axioms and primitives:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 5933 |
+| Ledger rows | 5948 |
 | Applied audit verdicts | 0 |
 | Retained-grade rows, including boxed decorations | 0 |
 | Retained positive theorems | 0 |
@@ -39,12 +39,12 @@ Owner-approval history for axioms and primitives:
 | Retained bounded rows | 0 |
 | Boxed decorations under retained parents | 0 |
 | Open gates | 0 |
-| Unaudited rows | 5556 |
+| Unaudited rows | 5571 |
 | Retained-pending-chain rows | 0 |
 | Audited conditional rows | 0 |
 | Audited renaming rows | 0 |
 | Audited numerical-match rows | 0 |
-| Citation cycles detected | 69 |
+| Citation cycles detected | 72 |
 
 Source: tracked shards under `docs/audit/data/ledger/` and
 [`docs/audit/data/effective_status_summary.json`](../audit/data/effective_status_summary.json).
@@ -54,20 +54,20 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 5556 |
-| Ready rows | 1901 |
-| Cycle-break targets | 81 |
-| Critical pending | 747 |
-| High pending | 426 |
-| Medium pending | 1424 |
-| Leaf pending | 2959 |
+| Total pending rows | 5571 |
+| Ready rows | 1929 |
+| Cycle-break targets | 84 |
+| Critical pending | 682 |
+| High pending | 452 |
+| Medium pending | 1447 |
+| Leaf pending | 2990 |
 
 Next ready rows by queue order:
 
 - [`cl3_complexification_split_narrow_theorem_note_2026-05-10`](../../docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
 - [`cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`](../../docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
-- [`graph_first_su3_integration_note`](../../docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md) - critical; unaudited
 - [`fermion_parity_z2_grading_theorem_note_2026-05-02`](../../docs/FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
+- [`graph_first_su3_integration_note`](../../docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md) - critical; unaudited
 - [`z2_hw1_mass_matrix_parametrization_note`](../../docs/Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md) - critical; unaudited
 - [`s3_mass_matrix_conditional_degeneracy_note_2026-07-11`](../../docs/S3_MASS_MATRIX_CONDITIONAL_DEGENERACY_NOTE_2026-07-11.md) - critical; unaudited
 - [`site_phase_cube_shift_intertwiner_note`](../../docs/SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md) - critical; unaudited
@@ -88,21 +88,29 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Manifest state | ok |
 | Manifest pending additions | 0 |
 | Manifest pending removals | 0 |
-| Unmanifested candidates (need pending entries) | 11 |
+| Unmanifested candidates (need pending entries) | 15 |
 | Admitted ids absent from lane candidates | 565 |
 | Live conditional/failed rows that would park | 0 |
 | Live rows fail-open (legacy/unversioned snapshot) | 0 |
 | Lane rows already in actual ready top-10 | 0 |
-| Lane rows added since prior pass | 0 |
-| Lane rows removed since prior pass | 0 |
+| Lane rows added since prior pass | 1 |
+| Lane rows removed since prior pass | 1 |
 | Non-lane rows deferred by simulated interleave | 0 |
+
+Named lane membership churn since the prior pass:
+- added: `hierarchy_dimensional_compression_note`
+- removed: `a3_route4_spin6_chain_bounded_obstruction_note_2026-05-08_r4`
 
 Unmanifested candidates (visible gaming surface; need review-landed pending entries before admission):
 - `admissibility_rule_free_capturing_bodies_are_carried_by_the_wind_capture_law_anisotropic_collisionless_shadow_dilution_law_of_motion_and_its_window_bounded_theorem_note_2026-09-21`
 - `admissibility_rule_the_potential_of_the_wind_solves_the_lattice_poisson_equation_with_capture_rates_as_sources_inertial_gas_has_the_conserved_tensor_of_radiation_bounded_theorem_note_2026-09-21`
 - `admissibility_rule_the_wind_law_flux_theorems_inverse_square_wind_of_a_capturing_body_second_order_momentum_flux_force_proportional_to_product_of_capture_rates_bounded_theorem_note_2026-09-20`
 - `candidate_law_cl2_a_records_qubit_leaves_the_flow_evidence_bounded_theorem_note_2026-10-18`
+- `closure_c_l1_hk_msbar_3l_conversion_note_2026-05-10_cl1a`
+- `cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02`
 - `compact_determinant_currents_signed_sectors_and_finite_cyclic_transfer_bounded_theorem_note_2026-09-14`
+- `dm_dple_abcc_no_go_note_2026-04-19`
+- `hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16`
 - `local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24`
 - `massive_wilson_loop_curvature_noncompact_covariance_and_compact_defect_bounds_bounded_theorem_note_2026-09-14`
 - `postmark_electric_core_and_boundary_bounded_theorem_note_2026-09-24`
@@ -111,6 +119,7 @@ Unmanifested candidates (visible gaming surface; need review-landed pending entr
 - `spatial_lattice_gauge_fermion_logarithms_and_metric_attraction_limits_bounded_theorem_note_2026-09-14`
 
 Admitted ids currently absent from lane candidates:
+- `a3_route4_spin6_chain_bounded_obstruction_note_2026-05-08_r4`
 - `abcc_cp_phase_no_go_theorem_note_2026-04-19`
 - `action_normalization_note`
 - `alpha_s_derived_note`
@@ -339,7 +348,6 @@ Admitted ids currently absent from lane candidates:
 - `hadron_mass_lane1_theorem_plan_support_note_2026-04-27`
 - `hadronic_charges_from_quark_y_note_2026-05-02`
 - `hierarchy_bosonic_bilinear_selector_note`
-- `hierarchy_dimensional_compression_note`
 - `hierarchy_effective_potential_endpoint_note`
 - `hierarchy_matsubara_decomposition_note`
 - `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02`
@@ -680,14 +688,14 @@ Admitted ids currently absent from lane candidates:
 Hypothetical next dispatch top-10 under OFF-ONLY banded interleave (ready rows, lane-first within equal criticality bands) vs actual queue order:
 - 1. sim `cl3_complexification_split_narrow_theorem_note_2026-05-10` / actual `cl3_complexification_split_narrow_theorem_note_2026-05-10`
 - 2. sim `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` / actual `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`
-- 3. sim `graph_first_su3_integration_note` / actual `graph_first_su3_integration_note`
-- 4. sim `fermion_parity_z2_grading_theorem_note_2026-05-02` / actual `fermion_parity_z2_grading_theorem_note_2026-05-02`
+- 3. sim `fermion_parity_z2_grading_theorem_note_2026-05-02` / actual `fermion_parity_z2_grading_theorem_note_2026-05-02`
+- 4. sim `graph_first_su3_integration_note` / actual `graph_first_su3_integration_note`
 - 5. sim `z2_hw1_mass_matrix_parametrization_note` / actual `z2_hw1_mass_matrix_parametrization_note`
 - 6. sim `s3_mass_matrix_conditional_degeneracy_note_2026-07-11` / actual `s3_mass_matrix_conditional_degeneracy_note_2026-07-11`
 - 7. sim `site_phase_cube_shift_intertwiner_note` / actual `site_phase_cube_shift_intertwiner_note`
 - 8. sim `s3_taste_cube_decomposition_note` / actual `s3_taste_cube_decomposition_note`
-- 9. sim `plaquette_self_consistency_note` / actual `plaquette_self_consistency_note`
-- 10. sim `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` / actual `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`
+- 9. sim `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` / actual `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`
+- 10. sim `spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10` / actual `spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10`
 
 Simulation assumptions: ready-only rows, banded lane-first 1:1 alternation, no re-queue dynamics. Lane and gap come from THIS pipeline pass (stage 16 runs after the publication renderer); churn state persists in the tracked dispatch_shadow_state.json. Cutover flags remain OFF; see the dispatch-retarget design note's Ratification Log.
 
@@ -697,19 +705,19 @@ Source: deferred package (`archive/publication/ci3_z3/`).
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 7422 |
-| Critical nodes | 780 |
-| High nodes | 485 |
-| Medium nodes | 1614 |
-| Leaf nodes | 4543 |
+| Citation-graph nodes | 7437 |
+| Critical nodes | 712 |
+| High nodes | 511 |
+| Medium nodes | 1639 |
+| Leaf nodes | 4575 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 2970 descendants; score 612.037
-- `three_generation_observable_theorem_note` - critical; 1272 descendants; score 57.314
-- `observable_principle_from_axiom_note` - critical; 1003 descendants; score 53.972
-- `graph_first_su3_integration_note` - critical; 1657 descendants; score 52.195
-- `kinetic_isotropy_primitive` - critical; 964 descendants; score 49.914
-- `plaquette_self_consistency_note` - critical; 1335 descendants; score 47.884
-- `minimal_axioms_2026-05-03` - critical; 1066 descendants; score 43.559
-- `key_terminology` - critical; 1380 descendants; score 43.431
+- `minimal_axioms` - critical; 2990 descendants; score 615.546
+- `three_generation_observable_theorem_note` - critical; 1300 descendants; score 55.345
+- `observable_principle_from_axiom_note` - critical; 992 descendants; score 53.956
+- `graph_first_su3_integration_note` - critical; 1646 descendants; score 51.686
+- `kinetic_isotropy_primitive` - critical; 946 descendants; score 49.387
+- `plaquette_self_consistency_note` - critical; 1377 descendants; score 47.928
+- `minimal_axioms_2026-05-03` - critical; 1321 descendants; score 41.869
+- `key_terminology` - critical; 1424 descendants; score 40.977

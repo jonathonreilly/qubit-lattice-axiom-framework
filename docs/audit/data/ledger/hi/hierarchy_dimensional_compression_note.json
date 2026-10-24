@@ -16,7 +16,7 @@
   "claim_scope": null,
   "claim_type": "open_gate",
   "claim_type_author_hint": "open_gate",
-  "claim_type_author_hint_raw": "open_gate / conditional D=4 arithmetic support",
+  "claim_type_author_hint_raw": "open_gate",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
   "criticality": "critical",
@@ -25,22 +25,20 @@
   "deps": [
     "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
     "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18",
-    "hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18",
-    "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
-    "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08"
+    "hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18"
   ],
-  "direct_in_degree": 2,
+  "direct_in_degree": 5,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.285,
+  "load_bearing_score": 11.755,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "e28d500133bb378c80e449bffb73fd8812e0e98d3295750bd2288298ba471d20",
+  "note_hash": "ae4f7676d746092dfd54bd56a4e50f583b9e8ae2a215326f868f75c4ddf7c41b",
   "note_path": "docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -707,8 +705,8 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_hierarchy_dimensional_compression_taste_authority_2026_06_15.py",
-  "title": "Hierarchy Dimensional Compression Note",
-  "transitive_descendants": 623,
+  "title": "Hierarchy dimensional compression: supplied finite diagnostic",
+  "transitive_descendants": 610,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

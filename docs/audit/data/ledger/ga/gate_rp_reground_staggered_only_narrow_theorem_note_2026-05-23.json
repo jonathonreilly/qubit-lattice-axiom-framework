@@ -16,7 +16,7 @@
   "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
-  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (finite determinant statement only).",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
   "criticality": "leaf",
@@ -24,8 +24,8 @@
   "decoration_parent_claim_id": null,
   "deps": [
     "staggered_only_det_positivity_case_a_note_2026-05-17",
-    "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-    "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17"
+    "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+    "axiom_first_reflection_positivity_theorem_note_2026-04-29"
   ],
   "direct_in_degree": 0,
   "effective_status": "unaudited",
@@ -38,7 +38,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "ae609ba187bd1672fa009e2b84b5942898a988368a59e0b1ede83d2af9ce1073",
+  "note_hash": "90713f1e0cd74be9fe55a50495346f442e59d70d2bcf8f4af8db4ec871a3c94f",
   "note_path": "docs/GATE_RP_REGROUND_STAGGERED_ONLY_NARROW_THEOREM_NOTE_2026-05-23.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -53,7 +53,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_gate_rp_reground_staggered_only_discriminator.py",
-  "title": "Gate Reflection-Positivity Re-grounds on the Retained Staggered-Only Case A",
+  "title": "Staggered determinant positivity; reflection-positivity bridge remains open",
   "transitive_descendants": 0,
   "verdict_rationale": null
 }

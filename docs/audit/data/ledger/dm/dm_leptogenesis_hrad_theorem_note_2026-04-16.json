@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "open_gate",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "critical",
+  "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -35,12 +35,12 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 11.771,
+  "load_bearing_score": 8.407,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "673372ca1096861c5575505837dc4d7d69a5c787ee54048a7f8e0d114d15ecef",
+  "note_hash": "a26aee0d4ce2408dcb7187b4b7684f4c584b44ee6935aa246dbf081852d8781a",
   "note_path": "docs/DM_LEPTOGENESIS_HRAD_THEOREM_NOTE_2026-04-16.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -160,6 +160,6 @@
   },
   "runner_path": "scripts/frontier_dm_leptogenesis_hrad_theorem.py",
   "title": "DM Leptogenesis `H_rad(T)` Radiation Branch Boundary",
-  "transitive_descendants": 617,
+  "transitive_descendants": 59,
   "verdict_rationale": null
 }

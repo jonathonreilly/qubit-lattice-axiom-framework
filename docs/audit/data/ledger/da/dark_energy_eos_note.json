@@ -14,9 +14,9 @@
   "chain_closure_explanation": null,
   "claim_id": "dark_energy_eos_note",
   "claim_scope": null,
-  "claim_type": "decoration",
-  "claim_type_author_hint": "decoration",
-  "claim_type_author_hint_raw": "decoration",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
   "criticality": "medium",
@@ -37,7 +37,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "620730b42765201132b5af2d1b10265dbec26a3efe0dcb088c68e5cda77a2d6a",
+  "note_hash": "a5c58c94eb4c0b6303b0bb256d810825702e40d29cf9fc59f7bca18ce4dead86",
   "note_path": "docs/DARK_ENERGY_EOS_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -248,7 +248,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_dark_energy_eos.py",
-  "title": "Decoration: Numerical / Lattice / Evolution-Model Companion to the Retained Dark-Energy EOS Corollary",
+  "title": "Conditional EOS numerical companion and historical diagnostic boundary",
   "transitive_descendants": 42,
   "unattributed_audit_provenance": [
     {

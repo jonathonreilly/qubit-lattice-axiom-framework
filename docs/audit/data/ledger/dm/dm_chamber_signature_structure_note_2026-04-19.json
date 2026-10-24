@@ -14,16 +14,17 @@
   "chain_closure_explanation": null,
   "claim_id": "dm_chamber_signature_structure_note_2026-04-19",
   "claim_scope": null,
-  "claim_type": "positive_theorem",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "author_hint",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "dm_dple_dimension_parametric_extremum_theorem_note_2026-04-19",
+    "dm_dple_abcc_no_go_note_2026-04-19",
     "dm_neutrino_source_surface_p3_sylvester_linear_path_signature_theorem_note_2026-04-18"
   ],
   "direct_in_degree": 0,
@@ -37,7 +38,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "bdd02f98a97133d888c06fee02cfd58211046d02f3aaace2fbdf340caac9d976",
+  "note_hash": "fdcd08f703bbfe046c8450904882b2e53cdeea8c70641a57bce78077d1ee242f",
   "note_path": "docs/DM_CHAMBER_SIGNATURE_STRUCTURE_NOTE_2026-04-19.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -161,7 +162,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_dm_dple_theorem.py",
-  "title": "DM Chamber Signature Structure -- F4 Closed by DPLE Theorem",
+  "title": "DM chamber signature: supplied chart predicate, not DPLE selection",
   "transitive_descendants": 0,
   "unattributed_audit_provenance": [
     {

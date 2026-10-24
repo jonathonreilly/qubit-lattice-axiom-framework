@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/the_family_class_ticks_pi_partners_are_same_hand_spacetime_doublers_not_cpt_mirrors_so_the_mirror_cannot_be_carried_in_time_2026_10_24.py
+runner_sha256: 4d7aae44879ca3d2d6d83c9cc041ef94a952e7c5434115c977c987b289406812
+input_fingerprint_sha256: 0095c5ce088a49b3ed2a63df5d83e775f82e7c9ed8662d4d3400e6713ff9766d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 5.08
+status: ok
+----- stdout -----
+== A. FREEZE's pi partner at R: CPT image or spacetime doubler?
+PASS: A1 [T]/[F] CPT-type map X (X U(K) X^-1 = U(-K)^+) fixes K = 0, R and quasi-energies 0, pi, so it maps each node INTO ITSELF: the pi partner is NOT the light Weyl's CPT image; at K = 0 X sends q 2 onto q 1 (the other copy)  [solution dim 9; node invariance residual 5e-15; q 2 -> q 1 residual 6e-16]
+PASS: A2 [T]/[F] exact on-cell spacetime-doubler S U(K) S^-1 = -U(K + R) (momentum + R, quasi-energy + pi): the pi partners are the light Weyls' doublers in space AND time (sign flip every tick)  [solution dim 9; residual on 6 fresh K 2e-14; S site-monomial (signed permutation): False]
+PASS: A3 [T]/[F] S keeps hand, turn label and speed: the pi partner is a COPY of the light Weyl, not a mirror  [K = 0: [(1, -1, 0.57735), (2, 1, 0.57735)]; R: [(1, -1, 0.57735), (2, 1, 0.57735)]]
+PASS: A4 [T]/[F] every on-cell symmetry of the tick (all the Links clause can gauge) is a scalar on the light block Pi+: the doubler carries the light Weyl's charges  [commutant dim 9 (1 on Pi+, 8 on frozen Pi-); |C on Pi+ - scalar| 1e-15]
+PASS: A5 [T]/[F] control: CL-1's plain tick (eps 0.3) has no doubler; its corner partner sits at +-2 eps, not pi  [doubler solution dim 0; U1 corner phases [-0.6, -0.6, -0.6, -0.6, 0.6, 0.6, 0.6, 0.6]]
+== B. hand sum rule: net hand at 0 = net hand at pi = nu3
+PASS: B1 [T]/[F] hand sum rule: net hand at 0 = net hand at pi = winding nu3 (sign convention: hand = -nu3); FREEZE nu3 = 0; a degree-1 SU(2) map has 1 Weyl at 0 and 7 at pi with the SAME net hand  [nu3(FREEZE) +0.0000; nu3(SU2) +1.0000, nodes 0:1 (net -1), pi:7 (net -1)]
+PASS: B2 [T] every circuit of cube-local gates has nu3 = 0 (each gate homotopic to 1; U(8) connected): net hand vanishes in EACH gap separately  [depth-5 random cube-local circuit (no symmetry) nu3 +0.0000]
+PASS: B3 [T] a mirror (hand -) at pi alone violates the hand rule for ANY charges (stronger than floquet-pi-slab B3); the only single-Weyl pi content matching the light (q 2, +) is its doubler  [single-Weyl pi replacements of (2,+): [(2, 1)]]
+== C. low energy of the pi sector
+PASS: C1 [T]/[F] light band covers every quasi-energy (cos theta = mean cos K): a half-filled interval vacuum with no Fermi surface has boundaries at 0 AND pi, and alternation makes exactly one sector INVERTED (negative pair quasi-energy)  [dispersion residual 7e-16; 4 of 8 filled at every K: True; small pair at 0 +0.070, at pi -0.070]
+   C1' [T] pi modes are NOT decoupled by sitting at pi: only mixed 0-pi pairs cost ~pi per tick; pi-pi pairs are light
+PASS: C2 [T] no bilinear pairs the light Weyl with its pi partner: equal hands (no Dirac), q 2 + q 2 = 1 mod 3 and number charge (no Majorana)  [hands 1, 1; turn sum 1 mod 3]
+PASS: C3 [T] 0 and pi contents are identical (q, hand) multisets, so all anomaly coefficients are EQUAL: they double, never cancel  [(sum h, sum h q mod 3, sum h q^3 mod 9) at 0 (0, 1, 7), at pi (0, 1, 7)]
+== D. one-cube start (CL-1 tick, every mode antiperiodic round each closed direction; 8 modes, Fock 256)
+PASS: D1 [T]/[F] one-cube start tick G: an antiunitary time reflection Theta (Theta G Theta^-1 = G^-1, from a signed cube-site permutation) FIXES the half-filled vacuum; the unitary ones do not  [quasi-energies [-0.6, 0.6] (4 + 4); 384 signed-permutation solutions; vacuum-fixing [('KPHu', -1), ('KPHu', 1), ('Ku', -1), ('Ku', 1)]; reflecting but NOT fixing [('PHu-nofix', -1), ('PHu-nofix', 1), ('u-nofix', -1), ('u-nofix', 1)]]
+PASS: D2 [T]/[F] for a Theta-invariant start state the Born record odds at -t equal those at +t relabelled: CL-2's arrow points away from the start on both sides  [Theta Ku; Born entropies at t = 1..5: [5.0655, 4.9925, 4.8991, 5.0853, 4.8523] (same at -t)]
+   D3 [S] information: the two-sided history needs the SAME boundary datum and rewords one clause; it removes no supplied datum
+PASS: E1 [T]/[S] BFT dark matter (stable Majorana nu^c, ~4.8e8 GeV) CONTRADICTED as written: Majorana mass has Z4 (B - L) charge 2 (Dirac-only vacuum); stability needs a hand-added parity (owner decision 2) against cross-copy (nu^c)^4 decay  [Z4 charge of nu^c nu^c: 2]
+PASS: E2 [E] BFT massless lightest neutrino CONSISTENT (register leaves neutrinos massless; NO with m1 = 0, just below the register's 0.059-0.060 eV, < 0.064 eV); splits from BFT on 0nubb (Dirac m_ee = 0 vs ~1.5-3.7 meV)  [sum m (m1 = 0) 0.0587 eV]
+PASS: E3 [S] BFT r ~ 0 CONSISTENT: no inflaton; P_t today ~5e-122; fold-inflaton candidate r ~1e-8 to 1e-6 < 0.036
+   synthesis: Q1a CPT image FAIL, Q1b doubler PASS, Q1c vector-like FAIL; Q2a sum rule PASS, Q2b decoupled FAIL, Q2c cancel FAIL; Q3a mirror history PASS, Q3b less information FAIL; BFT DM contradicted, m1 = 0 and r ~ 0 consistent
+elapsed 4.6s, peak RSS 83 MB
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

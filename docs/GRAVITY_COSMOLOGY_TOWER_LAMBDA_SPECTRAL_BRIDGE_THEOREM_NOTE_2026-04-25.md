@@ -1,18 +1,29 @@
 # Gravity-Cosmology Tower Lambda Spectral Bridge Theorem
 
+**Type:** bounded_theorem
 **Date:** 2026-04-25
 
-**Status:** proposed_retained structural bridge. This note re-expresses the
-retained spin-2, spin-1, and spin-0 spectral towers on the retained
-`S^3` geometry in pure cosmological-constant units using the retained
+**Status:** proposed_supplied structural bridge. This note re-expresses the
+supplied spin-2, spin-1, and spin-0 spectral towers on the supplied
+`S^3` geometry in pure cosmological-constant units using the supplied
 identity `Lambda = 3/R^2`.
 
 **Primary runner:**
 `scripts/frontier_gravity_cosmology_tower_lambda_spectral_bridge.py`
 
+## Comparison-radius premise
+
+Every Lambda substitution below assumes `R = ell`, the fixed de Sitter curvature
+radius, on an auxiliary sphere or the minimum spatial slice. This identification
+is supplied; the corrected parent does not confer independent framework closure.
+For evolving slices `a(t) = ell cosh(t/ell)`, each squared spectral scale acquires
+`sech^2(t/ell)`. Thus the Lambda-only formulas and gaps are not universal physical
+slice identities. At `a = 2 ell` they are one quarter of the comparison values;
+the common-radius ratio still cancels. No physical particle mass is inferred.
+
 ## Statement
 
-The retained tower formulas are:
+The supplied tower formulas are:
 
 ```text
 m_TT(l)^2     = (l(l+2) - 2) hbar^2/(c^2 R^2),  l >= 2
@@ -50,7 +61,7 @@ The spin-curvature gaps are constant in `l`:
 (L10) m_scalar(l)^2 - m_TT(l)^2 = (2/3) hbar^2 Lambda/c^2,  l >= 2
 ```
 
-## Retained Inputs
+## Supplied Inputs
 
 | Input | Authority |
 | --- | --- |
@@ -65,8 +76,8 @@ are fixed.
 
 ## Derivation
 
-All three retained towers share the spectral unit
-`hbar^2/(c^2 R^2)`. The retained cosmological-constant identity gives
+All three supplied towers share the spectral unit
+`hbar^2/(c^2 R^2)`. The supplied cosmological-constant identity gives
 
 ```text
 hbar^2/(c^2 R^2) = hbar^2 Lambda/(3 c^2).

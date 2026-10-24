@@ -1,5 +1,6 @@
 # Cosmology Open-Number Reduction Theorem: The Late-Time Bounded Surface Has Two Structural Degrees Of Freedom At Fixed Radiation Readout
 
+**Type:** bounded_theorem
 **Date:** 2026-04-26
 **Status:** proposed_retained/admitted-surface structural-support theorem on
 `main`. Packages the matter-bridge identity (2026-04-22), the structural lock
@@ -16,9 +17,9 @@ readout `R := Omega_r,0`.
 
 **Theorem (Cosmology Open-Number Reduction).** Adopt:
 
-- (P1) `Lambda = 3 / R_Lambda^2` retained spectral-gap identity;
+- (P1) `Lambda = 3 / R_Lambda^2` supplied comparison-radius identity;
 - (P2) `H_inf = c / R_Lambda` retained scale identification;
-- (P3) `w_Lambda = -1` retained dark-energy EOS;
+- (P3) `w_Lambda = -1` conditional constant-density EOS;
 - (P4) flat FRW with three non-interacting components
   (`Omega_m,0 + Omega_r,0 + Omega_Lambda,0 = 1`);
 - (P5) `Omega_r,0` admitted from `T_CMB` plus retained `N_eff = 3.046`
@@ -39,7 +40,7 @@ Define the reduced pair
 ```
 
 Then every variable in `S` is an exact closed-form function of `(H_0, L)`
-on the retained surface, with `R := Omega_r,0` entering as an admitted
+on this supplied FRW surface, with `R := Omega_r,0` entering as an admitted
 constant. Specifically:
 
 | Variable | Closed form |
@@ -88,7 +89,7 @@ Omega_DM, scale)` but are not themselves in `S`.
 
 ### 2.1 Closed forms
 
-The closed forms in the table follow directly from the listed retained
+The closed forms in the table follow directly from the listed conditional
 identities.
 
 - `Omega_Lambda,0 = L` is the definition.
@@ -110,7 +111,7 @@ identities.
 ### 2.2 No structurally independent variables remain in `S`
 
 Suppose for contradiction that some variable `X in S` is not a function of
-`(H_0, L)` on the retained surface. Then `X` introduces an independent
+`(H_0, L)` on this supplied FRW surface. Then `X` introduces an independent
 parameter beyond `(H_0, L, R)`. By the closed forms above, every variable
 in `S` is expressible as a function of `(H_0, L, R)`, so the supposed
 independent parameter must be `R` itself. But (P5) admits `R` as a
@@ -149,16 +150,16 @@ do.
 ### 3.2 What it costs to retain the cosmology rows
 
 Retiring the cosmology bounded rows (`Omega_Lambda`, `Omega_m`,
-`H_0`, ...) on the retained surface requires at minimum:
+`H_0`, ...) on this supplied FRW surface requires at minimum:
 
 - a derivation of `H_0` directly, OR
 - a derivation of `L` directly, OR
 - a derivation of `R_Lambda` (which gives `H_inf = c/R_Lambda`) plus a
   separate derivation pinning either `H_0` or `L`.
 
-There is no fourth class of derivation that retires the cosmology surface
-without crossing one of these three premise sets. This is the program-
-bounding statement of the open-number reduction theorem.
+These are the currently listed routes, not an exhaustive classification of
+possible derivations. A joint relation fixing a combination of H_0 and L need
+not proceed through one listed route; the parameter count does not exclude it.
 
 ### 3.3 Why `q_0`, `z_*`, `z_mLambda` are not additional knobs
 
@@ -176,7 +177,7 @@ theorem makes this explicit.
 - The exact open-number-count statement for the late-time bounded
   cosmology surface (`= 2`).
 - The closed-form table relating every variable in `S` to `(H_0, L, R)`.
-- The "no fourth class of derivation" program-bounding statement of §3.2.
+- The listed route inventory of §3.2, without an exhaustiveness theorem.
 
 **Does not close.**
 
@@ -257,7 +258,8 @@ Expected: all five PASS.
 
 This theorem is structural, not numerical. It does not retire `H_0`,
 `L`, or `R_Lambda`. It packages prior retained identities into a sharp
-parameter-count claim and a "no fourth derivation class" bound. External
+parameter-count claim and a non-exhaustive route inventory. External
 references are limited to standard FRW cosmology (textbook; admitted
-convention). All derivation premises are framework-internal retained
-items already on `main`.
+convention). The displayed algebra uses the supplied flat-FRW component laws, fixed radiation
+readout and comparison-radius identification. It derives neither those physical
+premises nor the numerical parameters.

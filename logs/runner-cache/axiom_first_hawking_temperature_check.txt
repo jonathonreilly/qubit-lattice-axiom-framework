@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_hawking_temperature_check.py
-runner_sha256: b5b6b7e1538b8878aae1363ce0286bac3f827b6f5b95bd3063e585ce5c3e8b89
-timeout_sec: 120
+runner_sha256: 5315451bd3a43c072a5dd0acf4c3f90c07a587363b2de3612ce21538a22fd007
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.70
 status: ok
 ----- stdout -----
 ========================================================================
@@ -19,7 +19,7 @@ Setup:
 TEST 1: conical-defect angle vanishes uniquely at beta = 2 pi / kappa
 ------------------------------------------------------------------------
 Sweeping kappa in [0.1, 10] across 10 values; for each kappa,
-scanning trial beta in (0.5, 50] for the unique zero of delta(beta).
+testing the predicted period and its plus/minus10percent perturbations.
 
   max |delta(beta = 2 pi / kappa)| over sweep = 0.000e+00
   STATUS: PASS
@@ -87,11 +87,12 @@ SUMMARY
   Test 5 (bolt-regularity Ricci coefficient vanishes):          PASS
   Test 6 (Rindler T_Unruh = a/(2 pi) preview):                  PASS
 
+KMS shifted residual=3.925e-17; old unshifted error=4.260e-01
   OVERALL: PASS
 
-Note: this runner verifies the Wick-rotation regularity argument
-and its Hawking temperature consequence on the framework's retained
-GR action surface (UNIVERSAL_GR_* family). The proof in the
+Note: this runner checks supplied formulas and finite Gibbs algebra.
+The conditional temperature consequence requires supplied smooth
+geometry and equilibrium reconstruction. The argument in the
 companion theorem note is geometric (Steps 1-2: differential
 geometry of Killing horizons) plus algebraic (Step 3: Block 01 KMS)
 and does not depend on the runner — this script just confirms the

@@ -32,7 +32,7 @@ records framework-internal structural facts about the gauge-sector velocity drag
 and an honest, sign-robust statement about cross-sector non-cancellation. Companion
 to the landed velocity-RG log-flow note
 [`VELOCITY_RG_LOGFLOW_FRAMEWORK_INTERNAL_2026-06-21.md`](VELOCITY_RG_LOGFLOW_FRAMEWORK_INTERNAL_2026-06-21.md)
-(the shared-form-factor route no-go + log-flow positivity) and the landed
+(now a supplied-symbol finite proxy comparison: it supplies neither physical log-flow positivity nor a physical shared-form-factor no-go) and the landed
 [`KINETIC_ISOTROPY_B4_TRANSITIVITY_ROUTE_NO_GO_2026-06-20.md`](KINETIC_ISOTROPY_B4_TRANSITIVITY_ROUTE_NO_GO_2026-06-20.md).
 
 ## Feynman rules (framework free propagators; gauged in the hopping)

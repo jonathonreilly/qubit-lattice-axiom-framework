@@ -1,57 +1,54 @@
 #!/usr/bin/env python3
 """
-Dark-Energy EOS Retained Structural Corollary
+Dark-Energy EOS Supplied Structural Corollary
 ==============================================
 
-STATUS: retained structural corollary
+STATUS: supplied structural corollary
 
 This runner verifies the narrow theorem statement in
   docs/DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md
 
-Following an earlier review that flagged the earlier revision as still
-resting on a companion-lane premise, the load-bearing identity
-  Lambda_vac = lambda_1(S^3_R) = 3 / R^2
-has been crystallized into a standalone retained theorem in
-  docs/COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md
-with its own runner
-  scripts/frontier_cosmological_constant_spectral_gap_identity.py
-so this runner can take the identity as a retained premise rather than as
-a companion-lane assumption.
+The comparison identity is supplied at R = ell on an auxiliary sphere or
+minimum slice. The corrected parent does not discharge framework closure.
+Path existence and substituted equal formulas are documentary/algebraic checks.
 
 It does NOT re-derive the numerical cosmological-constant value, and it does
 NOT close the cosmology-scale identification blocker. Its scope is strictly
-the EOS value w on the retained de Sitter stationary vacuum with S^3
+the EOS value w on the supplied de Sitter stationary vacuum with S^3
 spatial topology.
 
 Theorem (restated):
-  Given (1) retained S^3 topology on PL S^3 x R, (2) the retained
+  Given (1) supplied S^3 topology on PL S^3 x R, (2) the supplied
   spectral-gap cosmological-constant identity Lambda_vac = lambda_1(S^3_R)
   = 3/R^2 on the de Sitter stationary vacuum sector, and (3) the stationary
-  vacuum condition (d R / d t = 0) on the retained smooth global
+  vacuum condition (d R / d t = 0) on the supplied smooth global
   gravitational stationary/Gaussian solution class, the dark-energy density
   is time-independent and w = -1 exactly, independent of the numerical
   value of R.
 
 Checks:
-  1. Retained identity Lambda_vac = lambda_1(S^3_R) = 3/R^2 is imported
+  1. Supplied identity Lambda_vac = lambda_1(S^3_R) = 3/R^2 is imported
      (not rederived; the identity-theorem runner covers that).
   2. lambda_1 (= Lambda_vac) scales as 1/R^2 under R rescaling.
   3. Stationary vacuum gives d R / d t = 0, so d Lambda_vac / d t = 0.
   4. FRW continuity equation maps d rho / d t = 0 to w = -1.
   5. CPL parameters on the corollary surface are (w_0, w_a) = (-1, 0).
   6. w = -1 is independent of the numerical value of R (scale-decoupling).
-  7. Retained lattice correction is a constant shift, not a time-dependent
+  7. Supplied lattice correction is a constant shift, not a time-dependent
      drift, so it does not move w.
   8. No phantom crossing: w >= -1 identically (with equality) on the surface.
-  9. Lattice-discretization bound on |delta w| is below any observational
-     sensitivity by many orders of magnitude.
+  9. Lattice amplitude diagnostic; delta-w requires a separate derivative bound.
 
 Self-contained: numpy + scipy for the discrete-S^3 spectrum only.
 
-PStack experiment: frontier-dark-energy-eos-retained-corollary
+PStack experiment: frontier-dark-energy-eos-supplied-corollary
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ['docs/DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md', 'docs/COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md', 'scripts/frontier_cosmological_constant_spectral_gap_identity.py']
+
 
 import math
 import sys
@@ -89,20 +86,10 @@ R_HUBBLE = C_LIGHT / H_0                 # ~ 1.37e26 m
 
 
 # ---------------------------------------------------------------------------
-# Check 1: retained identity Lambda_vac = lambda_1(S^3_R) = 3/R^2 is imported
+# Check 1: supplied identity Lambda_vac = lambda_1(S^3_R) = 3/R^2 is imported
 # ---------------------------------------------------------------------------
 def check_identity_theorem_is_imported() -> None:
-    """The load-bearing identity Lambda_vac = lambda_1(S^3_R) = 3/R^2 is NOT
-    re-derived here. It is an adjacent retained theorem packaged in
-
-        docs/COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md
-        scripts/frontier_cosmological_constant_spectral_gap_identity.py
-
-    This check certifies that the identity-theorem note and runner are
-    present in the repo so downstream reviewers can replay them directly.
-    That upstream runner is what produces the retained-surface evidence for
-    the identity; this corollary runner only uses the identity as input.
-    """
+    """Check source availability and the supplied comparison identity only."""
     import os
     repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     identity_note = os.path.join(
@@ -120,10 +107,10 @@ def check_identity_theorem_is_imported() -> None:
           os.path.isfile(identity_runner),
           f"path = {os.path.relpath(identity_runner, repo_root)}")
 
-    # Having imported the identity as a retained premise, both sides of the
+    # Having imported the identity as a supplied premise, both sides of the
     # identity are numerically the same function of R. We restate that here
     # once for this runner's record; the identity-theorem runner is the
-    # authoritative verification.
+    # conditional source context, not independent closure.
     for R in (0.5, 1.0, 3.1416, 1e26):
         Lambda_vac = 3.0 / R ** 2
         lambda_1 = 3.0 / R ** 2
@@ -212,8 +199,7 @@ def check_cpl_parameters() -> None:
 def check_scale_decoupling() -> None:
     """The numerical value of R (the cosmology-scale identification blocker)
     does not affect whether w = -1. Any fixed R that makes Lambda > 0 gives
-    the same EOS. This is the decoupling that justifies promoting w = -1
-    without promoting the bounded Lambda value.
+    the same EOS. This is conditional scale decoupling, not a publication promotion.
     """
     R_values = np.array([
         1.0,                     # toy value
@@ -238,7 +224,7 @@ def check_scale_decoupling() -> None:
 
 
 # ---------------------------------------------------------------------------
-# Check 7: Retained lattice correction is a constant shift
+# Check 7: Supplied lattice correction is a constant shift
 # ---------------------------------------------------------------------------
 def check_lattice_correction_is_constant() -> None:
     """lambda_1^latt = (3 / R^2) * (1 - (1/4)(a/R)^2).
@@ -276,37 +262,44 @@ def check_no_phantom_crossing() -> None:
 
 
 # ---------------------------------------------------------------------------
-# Check 9: Lattice-discretization bound on |delta w|
+# Check 9: Lattice amplitude diagnostic
 # ---------------------------------------------------------------------------
 def check_lattice_drift_bound() -> None:
-    """Even if a/R is allowed to vary (which it is not on the retained
-    surface), the lattice correction scales as (a/R)^2. At cosmological
-    scales, (l_P / R_H)^2 is of order 10^-122, so any drift in w is bounded
-    by that order of magnitude. This bound is ~120 orders of magnitude below
-    DESI/Euclid sensitivity.
-    """
+    """Amplitude diagnostic only; a delta-w bound needs a supplied derivative bound."""
     bound = (L_PLANCK / R_HUBBLE) ** 2
     desi_final_precision = 1e-2
     ratio = desi_final_precision / bound if bound > 0 else float("inf")
-    check("|delta w| bound from lattice is far below observational floor",
+    check("lattice amplitude scale is below illustrative floor; no derivative bound",
           bound < 1e-100 and ratio > 1e100,
-          f"|delta w| < {bound:.2e},  DESI sensitivity / bound ~ {ratio:.2e}")
+          f"amplitude = {bound:.2e},  DESI sensitivity / bound ~ {ratio:.2e}")
 
 
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
+def check_comparison_radius_scope() -> None:
+    """A supplied comparison radius does not equal every evolving slice."""
+    ell = 1.0
+    Lambda = 3.0 / ell**2
+    slice_radius = 2.0 * ell
+    slice_gap = 3.0 / slice_radius**2
+    check("minimum/comparison slice agrees", 3.0 / ell**2 == Lambda)
+    check("evolving slice counterexample: a=2ell gives Lambda/4", slice_gap == Lambda/4 and slice_gap != Lambda)
+
+
 def main() -> int:
+    check_comparison_radius_scope()
+    print("Conditional comparison R=ell; no inherited closure or physical-slice identity.")
     print("=" * 72)
-    print("Dark-Energy EOS Retained Structural Corollary")
+    print("Dark-Energy EOS Supplied Structural Corollary")
     print("=" * 72)
     print()
-    print("Theorem: on the retained S^3 + spectral-gap + fixed-R surface,")
+    print("Theorem: on the supplied S^3 + spectral-gap + fixed-R surface,")
     print("         rho_Lambda is time-independent and w = -1 exactly,")
     print("         independent of the numerical value of R.")
     print()
 
-    print("[1] Retained identity Lambda_vac = lambda_1(S^3_R) imported ------")
+    print("[1] Supplied identity Lambda_vac = lambda_1(S^3_R) imported ------")
     check_identity_theorem_is_imported()
     print()
 
@@ -338,7 +331,7 @@ def main() -> int:
     check_no_phantom_crossing()
     print()
 
-    print("[9] Lattice-discretization drift bound ----------------------------")
+    print("[9] Lattice amplitude diagnostic ----------------------------")
     check_lattice_drift_bound()
     print()
 
@@ -346,13 +339,13 @@ def main() -> int:
     print(f"SUMMARY: PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
     print("=" * 72)
     print()
-    print("Retained structural corollary:")
-    print("  w = -1 exactly on the retained de Sitter stationary vacuum +")
-    print("  retained S^3 topology + retained Lambda_vac = lambda_1(S^3_R)")
+    print("Supplied structural corollary:")
+    print("  w = -1 exactly on the supplied de Sitter stationary vacuum +")
+    print("  supplied S^3 topology + supplied Lambda_vac = lambda_1(S^3_R)")
     print("  identity, independent of the numerical value of R.")
     print("  CPL parameters: (w_0, w_a) = (-1, 0).")
     print()
-    print("Retained upstream premise:")
+    print("Supplied upstream premise:")
     print("  docs/COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md")
     print("  scripts/frontier_cosmological_constant_spectral_gap_identity.py")
     print()

@@ -11,23 +11,20 @@ claim_type_author_hint: meta
 
 **Date:** 2026-06-04
 **Type:** meta (audit-companion / criticality-readiness evidence)
-**Status:** companion-only. This records that the parent note, runner, and
-two-gate firewall evidence are reproducible on the current tree. It is not a
-new theorem claim, not a verdict change, and not independent audit work.
-Audit-lane values are informational here, not companion pass/fail targets.
+**Status:** historical companion snapshot; current metadata verification is unavailable. The legacy runner reads `docs/audit/data/audit_ledger.json`, which is absent on the reviewed tree. Its historical cache is not current evidence, and this note makes no current ledger-hash match or reproducibility assurance. This is metadata only: no new theorem, audit verdict, or numerical H_0 derivation.
 **Companion target:** `hubble_lane5_two_gate_dependency_firewall_note_2026-04-27`
 ([`HUBBLE_LANE5_TWO_GATE_DEPENDENCY_FIREWALL_NOTE_2026-04-27.md`](HUBBLE_LANE5_TWO_GATE_DEPENDENCY_FIREWALL_NOTE_2026-04-27.md))
-**Primary runner:**
+**Primary runner:** (historical recovery pointer)
 [`scripts/audit_companion_hubble_lane5_two_gate_dependency_firewall_criticality_bump_hygiene_2026_06_04.py`](../scripts/audit_companion_hubble_lane5_two_gate_dependency_firewall_criticality_bump_hygiene_2026_06_04.py)
-**Cached log:**
+**Cached log:** (historical recovery pointer)
 [`logs/runner-cache/audit_companion_hubble_lane5_two_gate_dependency_firewall_criticality_bump_hygiene_2026_06_04.txt`](../logs/runner-cache/audit_companion_hubble_lane5_two_gate_dependency_firewall_criticality_bump_hygiene_2026_06_04.txt)
 
 ## Claim Boundary
 
-The parent keeps six registered upstream dependency rows in the ledger. This
+The historical snapshot recorded six registered upstream dependency rows. This
 companion does not remove or resolve the upstream dependencies.
 
-The narrow evidence recorded here is:
+The following five observations describe the historical snapshot only. They have not been re-established against the current ledger or current parent source. In particular, the historical `PASS=18 FAIL=0` tally is not the tally of the revised parent runner. Missing legacy metadata is not a scientific disproof; the corrected parent's conditional mathematics and current capture must be evaluated separately. No ledger history or cache is restamped by this disposition.
 
 1. the parent note hash matches the live ledger row and the runner path still
    points to the parent runner;
@@ -50,6 +47,4 @@ The narrow evidence recorded here is:
   as supplied by this companion.
 - It does not edit generated ledger, queue, or publication-status files.
 
-The safe downstream use is only this meta evidence: the parent two-gate
-firewall remains reproducible, while a Hubble Lane 5 numerical result still
-depends on its upstream gates.
+Safe downstream use is provenance only. This companion cannot establish current reproducibility, current audit hashes, current gate completion, or a universal two-gate requirement. The current parent restricts its result to independently free inputs and explicitly allows hypothetical joint relations. Consult the parent's current source and separately bound evidence for that scope. The historical assertions above remain recoverable and do not resolve any scientific or metadata obligation.

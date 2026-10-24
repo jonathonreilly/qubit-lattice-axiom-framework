@@ -63,7 +63,7 @@ This is an **open gate / admission-boundary record**, not a derivation. The cosm
 cascade has long carried a tacit FRW + adiabatic-expansion premise
 that does not appear in any single named-premise block on the retained
 surface. The cosmological constant spectral-gap identity, the dark-
-energy EOS retained corollary, the Ω_Λ matter-bridge identity, and the
+energy EOS conditional corollary, the Ω_Λ matter-bridge identity, and the
 late-time kinematic reduction are all derivations *given* this
 backdrop; none of them derive the backdrop itself. The honest move is
 to (a) name what the framework currently supplies (`S^3` qualitative
@@ -114,7 +114,9 @@ and no new repo-wide axiom is introduced.
   `COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md`.
   `w_Lambda = -1` itself is supplied separately by the existing
   `DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md`;
-  C3 admits only the non-Λ component labels.
+  The corollary additionally assumes constant positive vacuum density,
+  conservation and nonzero H; it does not derive those physical premises.
+  C3 retains these separate vacuum conditions alongside the non-Λ labels.
 
   2026-06-18 C3 kinetic-label partial bridge: the non-Λ ideal kinetic
   component labels `w_r = 1/3` and `w_m = 0` are no longer pure
@@ -158,7 +160,7 @@ load-bearing class:
 | `N_eff = 3 + 0.046 = 3.046` (active-neutrino bookkeeping) | `unaudited` positive-theorem (active count 3 from three retained generations; +0.046 textbook) | conditional on retained chain + textbook correction |
 | Cosmological principle (homogeneity + isotropy on scales above the `S^3` ball radius) | not derived; not supplied by any retained note | **local supplied premise C1** |
 | Adiabatic expansion (no entropy injection in the leptogenesis -> CMB window) | finite source-free entropy and `g_*S T^3 a^3` bookkeeping now have bounded support; the real no-injection era and the `g_*S` table are not derived | **local supplied premise C2, narrowed by the 2026-06-18 entropy-bookkeeping partial bridge; real source-free window remains supplied** |
-| Standard radiation -> matter -> Lambda equation-of-state taxonomy (`w_r=1/3`, `w_m=0`; `w_Lambda=-1` separately retained) | `w_Lambda = -1` is handled by a separate corollary; `w_r=1/3` and `w_m=0` now have exact finite kinetic bounded support for ideal component labels, and those component tensors have a finite perfect-fluid lift | **local supplied premise C3, narrowed by the 2026-06-18 kinetic-label and perfect-fluid-lift partial bridges; real species allocation remains supplied** |
+| Standard radiation -> matter -> Lambda equation-of-state taxonomy (`w_r=1/3`, `w_m=0`; `w_Lambda=-1` separately conditional) | `w_Lambda = -1` is handled by a separate corollary; `w_r=1/3` and `w_m=0` now have exact finite kinetic bounded support for ideal component labels, and those component tensors have a finite perfect-fluid lift | **local supplied premise C3, narrowed by the 2026-06-18 kinetic-label and perfect-fluid-lift partial bridges; real species allocation remains supplied** |
 
 The local-supplied-premise label is deliberately non-registry language. This
 note does **not** add C1, C2, or C3 to `docs/audit/data/premise_decision_history.json`
@@ -170,7 +172,7 @@ and does **not** claim membership in the Tier-A registry.
 |---|---|---|
 | (B1) | The cone-capped cubical ball `M_R = B_R ∪ cone(∂B_R)` is PL homeomorphic to `S^3` for every `R ≥ 2`, supplying the qualitative spatial topology used by the FRW background | Retained S^3 general-R derivation (`S3_GENERAL_R_DERIVATION_NOTE.md`) |
 | (B2) | On the (B1) topology combined with C1 + C3, the homogeneous-isotropic perfect-fluid stress-energy form on a flat FRW background is the relevant cosmology surface; this is the explicit setup already used by the FRW kinematic reduction theorem | C1 + C3 supplied premise packet + already-conditional FRW reduction note; the ideal non-Lambda kinetic labels in C3 have bounded support from the 2026-06-18 kinetic bridge, and their finite component tensors lift to the perfect-fluid form in the 2026-06-18 fluid-lift bridge |
-| (B3) | On the (B2) background plus the retained `w_Λ = −1` corollary, the late-time bounded cosmology variable set has exactly two structural degrees of freedom at fixed admitted radiation `R := Ω_r,0`, by the open-number reduction theorem | Retained dark-energy EOS corollary + already-conditional open-number reduction note |
+| (B3) | On the (B2) background plus the conditional `w_Λ = −1` corollary, the late-time bounded cosmology variable set has exactly two structural degrees of freedom at fixed admitted radiation `R := Ω_r,0`, by the open-number reduction theorem | Conditional constant-density EOS corollary + already-conditional open-number reduction note |
 | (B4) | On the (B3) background plus C2 (adiabatic expansion), the comoving entropy `s a^3` is conserved across the leptogenesis -> CMB window, which is the load-bearing premise that lets the η-cascade factorize as `η = (s/n_γ) · C_sph · d_N · ε_1 · κ_axiom[H]` (the leptogenesis transport-decomposition theorem) | C2 supplied premise + already-conditional transport-decomposition note; finite source-free entropy and `g_*S` bookkeeping are supported by the 2026-06-18 entropy-bookkeeping bridge, while the real no-injection era remains supplied |
 | (B5) | The (B4) factorization plus the retained `N_active = 3` and the textbook `Δ N_eff = 0.046` correction yields `N_eff = 3.046` as the radiation-era effective relativistic count used by the cosmology η-cascade | C3 radiation component label, with finite ideal-kinetic support for `w_r=1/3` and a finite perfect-fluid lift; already-conditional `N_eff` note; textbook `Δ N_eff` correction remains separate |
 | (B6) | Conclusion: the cosmology η-cascade's cosmological backdrop closes only after admitting C1 + C2 + C3 on top of the retained `S^3` topology and the already-conditional FRW kinematic / open-number / `N_eff` / transport-decomposition chain. This is the admission boundary the bridge records | (B1) + (B2) + (B3) + (B4) + (B5) |
@@ -214,7 +216,8 @@ work; only re-basing onto the explicit C1–C3 packet):**
   `g_*S(T)` inventory;
 - **C3 residual** — real species allocation of the actual cosmological
   radiation / matter content into the ideal finite kinetic components
-  (`w_Λ = −1` is separately handled and is **not** admitted here).
+  (`w_Λ = −1` is separately conditional on supplied constant density and
+  conservation, not an independently closed physical input).
 
 This is the honest scope: the bridge retires only narrow finite C2/C3
 bookkeeping and label/lift imports and does not retire the
@@ -283,7 +286,7 @@ predict that any of them will close.
   used in step (B3). Live ledger status: `unaudited`,
   `positive_theorem`.
 - `DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md`
-  — supplies the `w_Λ = −1` retained corollary used in step (B3).
+  — supplies the `w_Λ = −1` conditional corollary used in step (B3).
   Live ledger status: `unaudited`, `positive_theorem`.
 - `DM_LEPTOGENESIS_TRANSPORT_DECOMPOSITION_THEOREM_NOTE_2026-04-16.md`
   — supplies the leptogenesis transport-decomposition factorization

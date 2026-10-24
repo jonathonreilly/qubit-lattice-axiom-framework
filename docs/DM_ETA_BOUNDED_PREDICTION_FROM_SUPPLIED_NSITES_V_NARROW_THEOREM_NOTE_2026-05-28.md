@@ -429,9 +429,12 @@ This open-gate certificate does not close:
   retained_bounded finite-inventory result `g_* = 106.75` is consumed as
   `P5`.
 - The Kolb-Turner prefactor: `K = 1.07e9 GeV^-1` is supplied as `P6`.
-- The PMNS-A13 / `Z_3` doublet-block selector law on the non-bypass
-  route, which is on the live surface retained-no-go per
-  `HUBBLE_LANE5_C2_CKM_PMNS_RIGHT_SENSITIVE_SELECTOR_STRETCH_NOTE_2026-04-29.md`.
+- The physical PMNS-A13 / `Z_3` doublet-block selector, supported branch,
+  and yield/readout on the non-bypass route remain open. The supplied
+  toy-data comparison in
+  `HUBBLE_LANE5_C2_CKM_PMNS_RIGHT_SENSITIVE_SELECTOR_STRETCH_NOTE_2026-04-29.md`
+  neither proves a physical no-go nor closes `eta`; its former stronger
+  attribution is withdrawn here.
 - Any continuum-limit numerical claim such as plaquette, mass, or
   coupling values beyond what is already retained on the cited
   authorities.

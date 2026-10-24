@@ -1,32 +1,16 @@
 #!/usr/bin/env python3
-"""
-Dark Energy Equation of State from Graph Spectral Gap
-======================================================
-
-QUESTION: Does the framework predict w = -1 exactly, or are there
-corrections? What does DESI (2024-2026) data say?
-
-FRAMEWORK RECAP:
-  Lambda = lambda_1(S^3) = 3/R^2
-  where lambda_1 is the first nonzero eigenvalue of the Laplacian on S^3
-  and the fixed vacuum scale is the de Sitter curvature radius R = c/H_inf.
-
-  This is a CONSTANT for fixed topology and fixed R. But:
-    (a) Lattice discretization gives corrections ~ (a/L)^2
-    (b) If R evolves (graph grows), Lambda(t) changes => w != -1
-    (c) DESI hints at w_0 = -0.55, w_a = -1.30 (CPL parametrization)
-
-THIS SCRIPT:
-  1. Lattice corrections to the S^3 spectral gap
-  2. Time evolution of Lambda if graph size tracks Hubble radius
-  3. CPL parametrization w(a) = w_0 + w_a(1-a) from the framework
-  4. Comparison to DESI results
-  5. Coincidence problem analysis from graph growth timescale
-
-PStack experiment: frontier-dark-energy-eos
+"""Conditional EOS identities with a separately preserved historical route.
+Default checks supplied positive density/conservation, fixed-radius correction,
+power-law density, amplitude/derivative separation and Friedmann saturation.
+No physical radius selection or framework EOS prediction follows. Legacy
+functions below are unreviewed recovery; --historical-diagnostic is not part
+of the 120-second default validation scope.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = ('docs/DARK_ENERGY_EOS_NOTE.md', 'docs/DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md', 'docs/COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md')
 
 import math
 import numpy as np
@@ -823,7 +807,7 @@ def synthesis():
 # ===========================================================================
 # MAIN
 # ===========================================================================
-def main():
+def historical_main():
     import time
     t0 = time.time()
 
@@ -873,5 +857,65 @@ def main():
 """)
 
 
+def conditional_checks():
+    import sympy as sp
+    from pathlib import Path
+    root = Path(__file__).resolve().parents[1]
+    checks = {}
+    rho, radius, spacing, scale, G = sp.symbols("rho R l_P a G", positive=True)
+    H = sp.symbols("H", real=True, nonzero=True)
+    w, alpha, x = sp.symbols("w alpha x", real=True)
+    conservation = 3 * H * (1 + w) * rho
+    checks["constant positive density and nonzero H force w=-1"] = sp.solve(conservation, w) == [-1]
+    checks["H=0 control: conservation alone leaves w free"] = sp.simplify(conservation.subs(H, 0)) == 0 and w not in conservation.subs(H, 0).free_symbols
+    fixed = 3 / radius**2 * (1 - spacing**2 / (4 * radius**2))
+    checks["fixed radius and spacing give zero scale-factor drift"] = sp.diff(fixed, scale) == 0
+    density = rho * scale**(-2 * alpha)
+    eos = -1 - scale * sp.diff(density, scale) / (3 * density)
+    checks["power-law density gives w=-1+2alpha/3"] = sp.simplify(eos - (-1 + 2 * alpha / 3)) == 0
+    eps, freq = sp.symbols("epsilon N", positive=True)
+    delta = eps * sp.sin(freq * x)
+    drift = -sp.diff(delta, x) / (3 * (1 + delta))
+    checks["small amplitude does not bound derivative: drift at x=0 is -epsilon*N/3"] = sp.simplify(drift.subs(x, 0) + eps * freq / 3) == 0
+    checks["explicit positive-density counterexample: epsilon=1/100,N=300 gives unit drift"] = drift.subs({x:0,eps:sp.Rational(1,100),freq:300}) == -1 and 1-sp.Rational(1,100)>0
+    other = sp.symbols("rho_other", real=True)
+    vacuum = 3 * H**2 / (8 * sp.pi * G)
+    friedmann = H**2 - (8 * sp.pi * G / 3) * (vacuum + other)
+    checks["conditional saturation: supplied vacuum=critical density forces remaining density zero"] = sp.solve(friedmann, other) == [0]
+    # Mathematical domain controls; no zero/negative-density EOS division.
+    def eos_from_rate(density_value, density_rate, hubble):
+        if density_value <= 0 or hubble == 0:
+            raise ValueError("requires positive density and H != 0")
+        return -1 - density_rate / (3 * hubble * density_value)
+    rejected = 0
+    for rv, hv in [(0,1),(-1,1),(1,0)]:
+        try:
+            eos_from_rate(rv,0,hv)
+        except ValueError:
+            rejected += 1
+    checks["EOS evaluation rejects missing positive-density/nonzero-H premises"] = rejected == 3
+    texts = {p:" ".join((root/p).read_text().split()) for p in AUDIT_INPUT_PATHS}
+    checks["live note states supplied model and derivative boundary"] = "constant positive density" in texts[AUDIT_INPUT_PATHS[0]] and "amplitude does not bound drift" in texts[AUDIT_INPUT_PATHS[0]]
+    checks["corollary keeps nonzero-H and supplied-radius premises"] = "H != 0" in texts[AUDIT_INPUT_PATHS[1]] and "This note supplies `R = ell`; it does not derive it." in texts[AUDIT_INPUT_PATHS[1]]
+    checks["spectral parent distinguishes curvature radius from evolving spatial radius"] = "cosh" in texts[AUDIT_INPUT_PATHS[2]] and "minimum" in texts[AUDIT_INPUT_PATHS[2]]
+    return checks
+
+
+def main():
+    import sys
+    if "--historical-diagnostic" in sys.argv:
+        print("BEGIN UNREVIEWED HISTORICAL OUTPUT; not current theorem evidence; outside default cap scope")
+        historical_main()
+        print("END UNREVIEWED HISTORICAL OUTPUT")
+        return 0
+    print("Conditional EOS checks; no physical radius selection or framework prediction.")
+    checks = conditional_checks()
+    for label, ok in checks.items():
+        print(f"{'PASS' if ok else 'FAIL'} {label}")
+    failed = sum(not bool(ok) for ok in checks.values())
+    print(f"TOTAL: PASS={len(checks)-failed} FAIL={failed}")
+    return 1 if failed else 0
+
+
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

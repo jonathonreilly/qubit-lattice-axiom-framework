@@ -964,6 +964,101 @@
       "source_sha256": "733bcf9e398fe1f44015f02af01450396547daf996d05d63caa6db8d2671bd8d",
       "timeout_sec": 120,
       "reason": "Explicit bounded review cap matching preserved 120-second execution evidence; source-bound declaration does not certify scientific scope."
+    },
+    "scripts/axiom_first_first_law_bh_mechanics_check.py": {
+      "timeout_sec": 300,
+      "source_sha256": "c727c68bd1ecacae1823564716ce4d8dbf560b1c1218b13d47308c023126556e",
+      "rationale": "Bounded review cap; no change to numerical predicates or scientific status."
+    },
+    "scripts/axiom_first_hawking_temperature_check.py": {
+      "timeout_sec": 300,
+      "source_sha256": "5315451bd3a43c072a5dd0acf4c3f90c07a587363b2de3612ce21538a22fd007",
+      "rationale": "Bounded review cap; no change to numerical predicates or scientific status."
+    },
+    "scripts/cl3_g_newton_self_consistency_2026_05_10_planckP4.py": {
+      "timeout_sec": 300,
+      "source_sha256": "a443ce1042df6db69514171a0a3b53c18eb082f0074008560acceb18b3604734",
+      "rationale": "Bounded review cap; no change to numerical predicates or scientific status."
+    },
+    "scripts/cl3_koide_a1_probe_gravity_phase_2026_05_08_probe3.py": {
+      "timeout_sec": 300,
+      "source_sha256": "3d9dd064addaae61491b6f1cbcfe3b9711deabfb7ada81532a6b9eea34947f81",
+      "rationale": "Bounded review cap; no change to numerical predicates or scientific status."
+    },
+    "scripts/frontier_bh_quarter_wald_noether_framework_carrier.py": {
+      "timeout_sec": 300,
+      "source_sha256": "8d4c7a6176a1508f2c09d2cea1d47ad3e58aa6b8f98ab4124fb3c72d458ccd52",
+      "rationale": "Bounded review cap; no change to numerical predicates or scientific status."
+    },
+    "scripts/frontier_cosmological_constant_spectral_gap.py": {
+      "timeout_sec": 300,
+      "source_sha256": "6306b1ce4d690e8d7a50ca37eb656ca154a97e5ce121890965134a609a6fc0c1",
+      "rationale": "Bounded review cap; no change to numerical predicates or scientific status."
+    },
+    "scripts/frontier_cosmological_constant_spectral_gap_identity.py": {
+      "timeout_sec": 300,
+      "source_sha256": "c02e68d792c74fc7191313149f77873e018f7012d329c3e709e98e9ada8727c7",
+      "rationale": "Bounded review cap; no change to numerical predicates or scientific status."
+    },
+    "scripts/frontier_graviton_spectral_tower.py": {
+      "timeout_sec": 300,
+      "source_sha256": "edaf1eb83df3160627b7e5deb9dbcd079a1d40ac4e7d2a763605092cee96cb6f",
+      "rationale": "Bounded review cap; no change to numerical predicates or scientific status."
+    },
+    "scripts/frontier_universal_gr_discrete_global_closure.py": {
+      "timeout_sec": 300,
+      "source_sha256": "2924504ba7b661cb4e26a647f520eeb6ad94daea103fa51755a3a6ec54c855c2",
+      "rationale": "Bounded review cap; no change to numerical predicates or scientific status."
+    },
+    "scripts/frontier_hubble_lane5_c2_attack_surface_bipartition.py": {
+      "source_sha256": "e88f1dab61f411e4a6fc0cf300d780896027362879a61a8b72e0916779256de7",
+      "timeout_sec": 120,
+      "reason": "Bounded affected documentary/conditional toy-data capture; no physical selector or yield authority."
+    },
+    "scripts/frontier_hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch.py": {
+      "source_sha256": "ed031dcf38d69550a639900f09e007415afac3981e85b16f522b1ea52ebb8470",
+      "timeout_sec": 120,
+      "reason": "Bounded affected documentary/conditional toy-data capture; no physical selector or yield authority."
+    },
+    "scripts/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.py": {
+      "source_sha256": "bd7124c217607190b5318c14abdd041d5fbf80bfca316e9af8f8bd700d7d7ec2",
+      "timeout_sec": 120,
+      "reason": "Bounded actual-input refresh after corrected physical-selector attribution; numerical packet unchanged."
+    },
+    "scripts/frontier_beta23_scheme_convention_demarcation_2026_06_08.py": {
+      "source_sha256": "a8484fbdf683fa54961bf02ea9c04980080b98e10746d386e772a6d33a2e6fc4",
+      "timeout_sec": 120,
+      "reason": "Bounded supplied-symbol/formal-algebra run; physical matching remains open."
+    },
+    "scripts/velocity_rg_logflow_framework_internal_2026_06_21.py": {
+      "source_sha256": "a4bf748ec7cd35a38ca377ddd2bf84e664f1647c859bbd58852611aa08650582",
+      "timeout_sec": 120,
+      "reason": "Bounded supplied-symbol/formal-algebra run; physical matching remains open."
+    },
+    "scripts/cl3_closure_c_l1a_2026_05_10_cL1a.py": {
+      "source_sha256": "bf7e2f7656d4aa085def623002f473bc240ba2fe59ac142b8beecf78ca118deb",
+      "timeout_sec": 300,
+      "reason": "Reuse independently reviewed identical source/cache with actual historical 300-second cap; no new execution."
+    },
+    "scripts/cl3_closure_t1_z10_z20_2026_05_10_t1z10z20.py": {
+      "source_sha256": "15ed0a72a2a8fb5bec7c426ec878999716c6a37f2c17bf230c201c8b854d9ae8",
+      "timeout_sec": 300,
+      "reason": "Reuse independently reviewed identical source/cache with actual historical 300-second cap; no new execution."
+    },
+    "scripts/frontier_cosmology_open_number_reduction.py": {
+      "source_sha256": "6ec60c33bb6f5b42b035be963392b295686c383619d475f9d0b08cb54d3b8059",
+      "timeout_sec": 120,
+      "reason": "Explicit source-pinned cap confirmed by original independent reviewer; matches existing actual 120-second capture. No execution replay claimed."
+    },
+    "scripts/frontier_hubble_tension_structural_lock.py": {
+      "source_sha256": "c9c14ef50e70677e3751926099f6457570a7d3dc8bc8cc16e7fde61d4fd6209f",
+      "timeout_sec": 120,
+      "reason": "Explicit source-pinned cap confirmed by original independent reviewer; matches existing actual 120-second capture. No execution replay claimed."
+    },
+    "scripts/velocity_rg_gauge_seagull_transverse_vacuum_polarization_2026_06_22.py": {
+      "source_sha256": "364de2af5a4a5218e0c2ea34bd91095315d0d093b80893f4a6507414c24e0bad",
+      "timeout_sec": 120,
+      "reason": "Explicit source-pinned cap confirmed by original independent reviewer; matches existing actual 120-second capture. No execution replay claimed."
     }
   }
 }

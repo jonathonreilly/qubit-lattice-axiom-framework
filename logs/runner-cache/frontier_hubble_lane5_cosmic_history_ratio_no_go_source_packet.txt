@@ -1,23 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hubble_lane5_cosmic_history_ratio_no_go_source_packet.py
-runner_sha256: 154dde4180c573b25684e4a46a3af9f3c4bf4d5f934bd3354bcdb90fd30bed6a
+runner_sha256: 9aa6cade0bf901ac5d5a92237896c861d7240111c362bd7df40336d289e94a35
+input_fingerprint_sha256: 5582751934b5cf925fec778f3ae8c495a7a2f16b08df860043d47c0d9179110d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ========================================================================================
-LANE 5 COSMIC-HISTORY-RATIO NO-GO SOURCE PACKET
-========================================================================================
-
-Question:
-  Is the Lane 5 no-go packaged with current premise boundaries,
-  one-hop authorities, N1-N8 discipline, and a replayable C1/C2/C3
-  closure taxonomy for independent re-audit?
-
-Answer:
-  Yes for source-packet readiness. This runner does not retire C1,
-  C2, or C3 and does not apply an audit verdict.
+LANE 5 SEPARATED-INPUT INVENTORY AND STIPULATED BOOLEAN MODEL
+Checks below concern the finite rule and source wording, not exhaustive physics.
 
 ----------------------------------------------------------------------------------------
 Part 1: parent source-packet metadata
@@ -25,9 +17,9 @@ Part 1: parent source-packet metadata
   [PASS] parent note exists  (docs/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md)
   [PASS] parent declares this primary runner
   [PASS] parent declares this runner cache
-  [PASS] parent remains a no-go/program-boundary source note
-  [PASS] parent scope is baseline plus units primitive
-  [PASS] parent records no audit verdict
+  [PASS] parent is an open route inventory
+  [PASS] parent distinguishes conditional family from axiom independence
+  [PASS] parent records no audit verdict or retired premises
 
 ----------------------------------------------------------------------------------------
 Part 2: dependency links and fingerprints
@@ -57,14 +49,14 @@ Part 2: dependency links and fingerprints
   [PASS] scale note supplies H_inf/R_Lambda identities and leaves the ratio open
   [PASS] matter bridge supplies Omega_Lambda equals scale ratio
   [PASS] C1 gate note preserves scale-reference boundary
-  [PASS] C2 gate note remains an open eta-retirement gate
+  [PASS] C2 inventory leaves selector/yield open and withdraws exact-support inference
   [PASS] parent prose names current dependency authorities
 
 ----------------------------------------------------------------------------------------
 Part 3: C1/C2/C3 finite closure model
 ----------------------------------------------------------------------------------------
   closure rule (bookkeeping over the REVIEWED routes, NOT a proof of exhaustive coverage):
-    H0 closes iff C1 and (C2 or C3)
+    stipulated closure flag = C1 and (C2 or C3)
   rule: scale-reference primitive is a units conversion, not C1
   C1=False C2=False C3=False -> L=False H0=False
   C1=False C2=False C3=True -> L=True H0=False
@@ -74,41 +66,32 @@ Part 3: C1/C2/C3 finite closure model
   C1=True C2=False C3=True -> L=True H0=True
   C1=True C2=True C3=False -> L=True H0=True
   C1=True C2=True C3=True -> L=True H0=True
-  [PASS] parent states C1 scale route is required
-  [PASS] parent states the scale primitive is not C1
-  [PASS] parent states one of C2/C3 is required for L
-  [PASS] parent frames C1/C2/C3 as a bookkeeping taxonomy of reviewed routes (not exhaustive)
-  [PASS] only packets with C1 and one L-class close H0
-  [PASS] C1 alone fails because L remains open
-  [PASS] C2/C3 without C1 fail because the scale route remains open
-  [PASS] parent route map assigns reviewed routes into C1/C2/C3 taxonomy
+  [PASS] parent names separated-input route inventory
+  [PASS] parent keeps units separate from C1
+  [PASS] parent marks rule as stipulated and non-exhaustive
+  [PASS] three packets satisfy the stipulated C1-and-L rule
+  [PASS] C1 alone does not satisfy the stipulated rule
+  [PASS] packets without C1 do not satisfy the stipulated rule
 
 ----------------------------------------------------------------------------------------
-Part 4: no-go discipline gate
+Part 4: documentary scope and open proof obligations
 ----------------------------------------------------------------------------------------
-  [PASS] N1: present
-  [PASS] N2: present
-  [PASS] N3: present
-  [PASS] N4: present
-  [PASS] N5: present
-  [PASS] N6: present
-  [PASS] N7: present
-  [PASS] N8: present
-  [PASS] N1 names at least five distinct routes
-  [PASS] N6 preserves partial closure paths and primitive boundary
-  [PASS] gate result is narrowed rather than anti-C1/C2/C3
+  [PASS] parent withdraws non-derivability inference
+  [PASS] parent keeps a joint-relation alternative open
+  [PASS] parent distinguishes partial C2 retirement from L closure
+  [PASS] parent names the missing independence proof
+  [PASS] parent withdraws no-go certification
 
 ----------------------------------------------------------------------------------------
-Part 5: no-go boundary and falsifier
+Execution scope
 ----------------------------------------------------------------------------------------
-  [PASS] scale-route no-go is scoped to baseline plus units primitive
-  [PASS] cosmic-history-ratio no-go is scoped to baseline plus units primitive
-  [PASS] falsifier targets baseline-plus-units-primitive counterexample
-  [PASS] boundary names classification, not premise retirement
-  [PASS] boundary says C1/C2/C3 remain live
+Enumerated 8 Boolean assignments; 3 satisfy the stipulated rule.
+Dependency existence and note text were checked; their physical conclusions were not re-proved.
+No lattice/site/mode/continuum calculation or physical route exhaustion was executed.
+No N1-N8 certification, input retirement, or audit verdict follows from these checks.
 
 ========================================================================================
-PASS=57 FAIL=0
+PASS=44 FAIL=0
 ========================================================================================
 
 ----- stderr -----

@@ -1,13 +1,12 @@
-"""Runner: BH 1/4 bounded Wald-Noether carrier composition (Block 5).
-
-Audits composition of framework's primitive-coframe boundary carrier
-theorem (c_cell = 1/4) with the framework's retained discrete GR action
-surface and the admitted Wald-Noether charge formula to derive
-S_BH = A · c_cell = A/4 in framework lattice units, forcing
-G_Newton,lat = 1 under two explicit load-bearing admissions.
+"""Supplied finite Wald/coframe composition and documentary source checks.
+The G_lat=1 algebra assumes the entropy-density/area identification and
+EH normalization bridge; source presence does not establish either premise.
+No retention status or physical Newton constant is verified.
 """
 
 from __future__ import annotations
+
+AUDIT_INPUT_PATHS = ['docs/PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md', 'docs/PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md', 'docs/UNIVERSAL_GR_DISCRETE_GLOBAL_CLOSURE_NOTE.md', 'docs/UNIVERSAL_QG_CANONICAL_TEXTBOOK_GEOMETRIC_ACTION_EQUIVALENCE_NOTE.md', 'docs/PLANCK_SOURCE_UNIT_NORMALIZATION_SUPPORT_THEOREM_NOTE_2026-04-25.md', 'docs/BH_QUARTER_WALD_NOETHER_FRAMEWORK_CARRIER_THEOREM_NOTE_2026-04-29.md']
 
 import sys
 from pathlib import Path
@@ -44,7 +43,7 @@ def main() -> int:
     # ---- Section 1: chain authority audits --------------------------------
 
     print()
-    print("Section 1: 5 retained chain authority audits")
+    print("Section 1: documentary source-presence/token checks, not authority proof")
     print("-" * 72)
 
     primitive_text = read_doc(
@@ -53,13 +52,13 @@ def main() -> int:
     audit(
         "PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER theorem exists",
         len(primitive_text) > 0,
-        "retained on main",
+        "nonempty source text; status not checked",
     )
     audit(
         "Primitive carrier theorem: c_cell = 1/4",
         "c_cell = Tr((I_16/16) P_A) = 4/16 = 1/4" in primitive_text
         or "c_cell = 1/4" in primitive_text,
-        "Theorem 3 result",
+        "formula phrase present; upstream proof not checked",
     )
 
     extension_text = read_doc(
@@ -68,7 +67,7 @@ def main() -> int:
     audit(
         "PLANCK_BOUNDARY_DENSITY_EXTENSION theorem exists",
         len(extension_text) > 0,
-        "retained on main",
+        "nonempty source text; status not checked",
     )
 
     universal_gr_text = read_doc(
@@ -77,7 +76,7 @@ def main() -> int:
     audit(
         "UNIVERSAL_GR_DISCRETE_GLOBAL_CLOSURE_NOTE exists",
         len(universal_gr_text) > 0,
-        "retained framework GR action",
+        "nonempty action source text; physical identification assumed",
     )
 
     universal_qg_eh_text = read_doc(
@@ -86,13 +85,13 @@ def main() -> int:
     audit(
         "UNIVERSAL_QG_CANONICAL_TEXTBOOK_GEOMETRIC_ACTION_EQUIVALENCE exists",
         len(universal_qg_eh_text) > 0,
-        "retained Einstein-Hilbert equivalence",
+        "nonempty equivalence source text; theorem not checked",
     )
     audit(
-        "Framework gravitational action ≡ canonical textbook EH",
+        "Equivalence source contains Einstein-Hilbert or textbook phrase",
         "Einstein-Hilbert" in universal_qg_eh_text
         or "textbook" in universal_qg_eh_text,
-        "EH equivalence clause",
+        "phrase-presence only, not equivalence proof",
     )
 
     source_unit_text = read_doc(
@@ -101,7 +100,7 @@ def main() -> int:
     audit(
         "PLANCK_SOURCE_UNIT_NORMALIZATION exists",
         len(source_unit_text) > 0,
-        "retained source-unit normalization",
+        "nonempty normalization source text; bridge assumed",
     )
     audit(
         "Source-unit normalization: G_kernel = 1/(4π) and G_Newton,lat = 1 separation",
@@ -161,14 +160,21 @@ def main() -> int:
     # The Wald formula: S_Wald = -2π ∫ (∂L/∂R_{abcd}) ε_ab ε_cd
     # For L_EH = R/(16π G_N), ∂L/∂R_{abcd} = (1/(16π G_N)) · (1/2)(g^ac g^bd - g^ad g^bc)
     # Evaluated for a Killing horizon with binormal: gives A/(4 G_N)
-    # We just check the numerical constants line up
-    coefficient = sp.Rational(1, 1) / (4 * G_N)
-    S_Wald_EH = A_horizon * coefficient
-    audit(
-        "Wald-Noether for Einstein-Hilbert: S = A/(4G_N) (admitted)",
-        sp.simplify(S_Wald_EH - A_horizon / (4 * G_N)) == 0,
-        f"S_Wald|_EH = A/(4G_N), coefficient = 1/4 in 1/G_N units",
+    # Explicit binormal contraction in an orthonormal Lorentz frame.
+    eta = sp.diag(-1, 1, 1, 1)
+    eps = sp.zeros(4); eps[0, 1] = 1; eps[1, 0] = -1
+    contraction = sum(
+        (eta[a,c]*eta[b,d]-eta[a,d]*eta[b,c])*eps[a,b]*eps[c,d]/2
+        for a in range(4) for b in range(4) for c in range(4) for d in range(4)
     )
+    audit("Exact normalized binormal contraction equals -2", contraction == -2)
+    alpha = sp.symbols("alpha", real=True)
+    entropy_density = -2*sp.pi*alpha*contraction
+    audit("Wald L=alpha R entropy density is 4pi alpha",
+          sp.simplify(entropy_density-4*sp.pi*alpha)==0)
+    S_Wald_EH = A_horizon*entropy_density.subs(alpha,1/(16*sp.pi*G_N))
+    audit("Conditional Wald-EH evaluation gives A/(4G)",
+          sp.simplify(S_Wald_EH-A_horizon/(4*G_N))==0)
 
     # ---- Section 4: composition ---------------------------------------------
 
@@ -180,7 +186,7 @@ def main() -> int:
     c_cell_sym = sp.Rational(1, 4)
     G_Newton_lat = sp.solve(c_cell_sym - 1 / (4 * G_N), G_N)
     audit(
-        "G_Newton,lat = 1 forced by c_cell = 1/4 in framework lattice units",
+        "Conditional G_lat=1 from supplied c_cell=1/4 and Wald-area identification",
         G_Newton_lat == [1] or G_Newton_lat == [sp.Integer(1)],
         f"G_Newton,lat solve = {G_Newton_lat}",
     )
@@ -246,13 +252,13 @@ def main() -> int:
     audit(
         "V1 records g_newton_lat_eq_1_status: forced_by_chain",
         "g_newton_lat_eq_1_status: forced_by_chain" in own_text,
-        "V1 firewall: G_Newton,lat = 1 forced",
+        "documentary status-token presence only; G_lat=1 remains conditional",
     )
 
     # ---- Section 6: forbidden imports -------------------------------------
 
     print()
-    print("Section 6: forbidden imports check")
+    print("Section 6: limited syntactic assignment-token scan")
     print("-" * 72)
 
     forbidden_imports = ["S_BH_obs", "M_Pl_obs", "G_Newton_obs"]
@@ -262,9 +268,9 @@ def main() -> int:
             f"= {token}" in body_only or f"{token} = " in body_only
         )
         audit(
-            f"forbidden import not used as proof input: {token}",
+            f"assignment-token pattern absent: {token}",
             not is_load_bearing,
-            "no observational comparator enters proof",
+            "limited lexical check; not proof of absence of observational inputs",
         )
 
     # ---- Summary ----------------------------------------------------------
@@ -285,16 +291,16 @@ def main() -> int:
     )
     print("WALD_FORMULA_STATUS = admitted_universal_physics_input")
     print("BRIDGE_PREMISE_STATUS = explicit_bridge_premise")
-    print("G_NEWTON_LAT = 1 (forced by chain)")
+    print("G_NEWTON_LAT = 1 (conditional on supplied entropy/area and EH bridge)")
     print(
-        "(This flag verifies the V1 chain authorities + algebraic identities. "
+        "(This flag reports documentary checks and conditional algebra only. "
         "The result remains bounded because Wald and the gravitational "
         "boundary/action-density bridge are admitted load-bearing inputs.)"
     )
 
     if fail_count == 0:
         print()
-        print("All Block 5 chain authorities + algebraic identities verified.")
+        print("Documentary checks and supplied finite algebra passed; no dependency theorem certified.")
         return 0
     else:
         print(f"Failed audits: {AUDIT_FAILS}")

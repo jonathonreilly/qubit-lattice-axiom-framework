@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/cube_cell_three_family_candidates_2026_10_24.py
+runner_sha256: c79a3a545e91963ac8dc54f140ef18e3c58b098b8bd21132e4d4e27d26942c2d
+input_fingerprint_sha256: ecc7b00ffa9c993e6a9a8e425d1068cd6ae6bcb6378e7dd6132724918e1f5f2c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.85
+status: ok
+----- stdout -----
+PASS: i1 [T] group orders |O_h|,|O|,|2O| = 48,24,48 and |T|,|T_h|,|2T| = 12,24,24; irrep dims from class count + abelianisation (unique solution)  [T:[1, 1, 1, 3]; T_h:[1, 1, 1, 1, 1, 1, 3, 3]; 2T:[1, 1, 1, 2, 2, 2, 3]]
+PASS: i2 [T] embeddings: T,T_h < O_h; T < O; 2T < 2O; NOT 2T < O_h (2T contains Q8, O_h does not), NOT T,T_h < 2O (one involution), NOT T_h,2T < O (order 24 = |O| but non-isomorphic)  [involutions O=9, 2T=1, 2O=1]
+  (G,H) [G:H] family dims | family-0 blocks | 4+12 from blocks
+  (O_h,T) 4 [16, 16, 16] | {'1-dim': 4, '3': 12} | True
+  (O_h,T_h) 2 [16, 16, 16] | {'1-dim': 4, '3': 12} | True
+  (O,T) 2 [8, 8, 8] | {'1-dim': 2, '3': 6} | False
+  (2O,2T) 2 [16, 16, 16] | {'1-dim': 2, '2': 8, '3': 6} | False
+PASS: i3 [T] three equal families of 16 arise for EVERY order-48 G with an order-3 turn (free action: 48/3), not for O (8 each); pairs giving 3 x 16 with a 4 + 12 block split: (O_h,T) and (O_h,T_h); (2O,2T) gives 2 + 8 + 6
+PASS: i4 [T] no element of G cycles the three family labels: conjugation either fixes them or swaps families 1 <-> 2 (family 0 = trivial label is distinguished: lepton labels 1 + E under G, not a 3-cycle)  [{'O_h,T': ['fix', 'swap'], 'O_h,T_h': ['fix', 'swap'], '2O,2T': ['fix', 'swap']}]
+PASS: i5 [T] SM hypercharge is NOT a function of the H-labels for any pair: it takes 6 values on a 16, a label charge at most #blocks (T: 2, T_h: 4, 2T: 3); the one traceless label U(1) of (O_h,T) has cubic anomaly 32/9 per family  [{'O_h,T': 2, 'O_h,T_h': 4, '2O,2T': 3}]
+VERDICT (i): H1 FAIL. 3 x 16 = 48/3 is arithmetic (any order-48 group, any order-3 turn); 3 pairs match counts [(O_h,T),(O_h,T_h) as 4+12, (2O,2T) as 8 doublet + 8 singlet states]; no pair gives hypercharge from labels; numerology.
+PASS: ii1 [F] V = {e_i} is the chiral-tick-form slab: one light Weyl per wall at k = 0 only (4 states), 4^3 torus  [light [((0, 0, 0), 4)], next |E| 0.62]
+PASS: ii2 [T] class-preserving hops commute with Omega = omega^(x+y+z): H(k + q) = H(k), q = (2pi/3)(1,1,1); a plain e_i hop does not  [max |H(k+q)-H(k)| = 2e-15]
+PASS: ii3 [F] N = 6: exactly 3 light Weyl copies per wall at k = 0, q, 2q (12 states), the same chirality pair on all three, no other light state  [light [((0, 0, 0), 4), ((2, 2, 2), 4), ((4, 4, 4), 4)], chiralities [[-1, 1], [-1, 1], [-1, 1]], next |E| 0.62]
+PASS: ii4 [F] control N = 5 (3 does not divide N): one light copy per wall (4 states), as w3 predicts; q is not a torus momentum  [light [((0, 0, 0), 4)], next |E| 0.62]
+PASS: ii5 [T] the 3 copies carry Delta(27): |<T,Omega>| = 27, T Omega T^-1 Omega^-1 = omega^(+-1) 1, irreducible (sum |chi|^2 / 27 = 1), det T = det Omega = 1  [commutator = (-0.5+0.866j), traceful elements 3]
+PASS: ii6 [F] a class-changing e_i hop on every field breaks Omega: eps = 0.05 detunes the q, 2q copies (nodes move off q), eps = 0.3 drives them out of the window (wall mass m - 1 - 4.5 eps < -1) leaving the one cubic copy at k = 0  [min|E| at 0,q,2q: eps 0.05: 0.000,0.075,0.075; eps 0.3: 0.000,0.922,0.922]
+PASS: ii7 [T] no O_h-invariant sublattice of Z^3 has index 3 (O_h-invariant indices <= 32: n^3, 2n^3, 4n^3); of the 13 index-3 sublattices exactly one, x+y+z = 0 mod 3, is invariant, under the (111) stabiliser D3d (order 12) only  [O_h indices [1, 2, 4, 8, 16, 27, 32]]
+VERDICT (ii): H2 PASS as a count (3 copies, Delta(27) 3-irrep, det = 1, control 1 copy), but the 3 is the index of the chosen hop sublattice: the mod-3 class rule singles out one body diagonal (breaks O_h to D3d), and 3 copies = 3 decoupled sublattices, each with its own mirror.
+PASS: iii1 [T] Gottesman's generators commute, |S| = 32, |N| = 2048, distance 3 exhaustively; S weights 1 + 28 y^6 + 3 y^8 (pure)  [d = 3]
+PASS: iii2 [T] LP bound: max (A1 + A2) over Shor-Laflamme + shadow constraints < 1, so an [[8,3,3]] code has no weight-1,2 stabiliser (pure)  [LP max = 0.375]
+PASS: iii3 [T] exact classification: 192 skew 8-line sets with Pluecker sum 0 contain a fixed skew pair -> 59520 sets in all; one stabiliser has order 168 and 9999360/168 = 59520, so there is exactly ONE [[8,3,3]] code up to local Clifford x permutation  [sets 192, total 59520, |Aut| = 168]
+PASS: iii4 [T] 3-fold turn (vertex type 1^2 3^2): a code symmetry only with a frame rotation; with X->Y->Z on every qubit 28 qubit-permutations, = 28 x 36 = 1008 cube labellings; plain permutation automorphisms 56, none of order 3  [type-1^2 3^2 counts by frame {'id': 0, 'XYZ': 28, 'ZYX': 28, 'H': 0, 'S': 0, 'HSH': 0}]
+PASS: iii5 [T] 4-fold turn (vertex type 4^2): no code symmetry with ANY uniform frame (id, H, S, HSH, XYZ, ZYX)  [{'id': 0, 'XYZ': 0, 'ZYX': 0, 'H': 0, 'S': 0, 'HSH': 0}]
+PASS: iii6 [T] on the 64 logical classes the turn has order 3 and fixes 4 (a 2-dim fixed space); 108 symplectic logical bases on which it is a literal cyclic permutation of the 3 logical qubits  [fixed 4, bases 108]
+VERDICT (iii): H3 PASS on the unique class. k <= 3 at d = 3 needs the chosen record unit (8-qubit cell), distance 3, maximal k; the C3 acts as a family permutation only with the frame rotation; logical qubit = family is an identification, not derived.
+Supplied: Wilson slab (m = 0.6, Ls = 12), Gottesman generators, LP/shadow bounds. time 0.9 s
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

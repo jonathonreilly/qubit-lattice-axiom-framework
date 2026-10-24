@@ -1,6 +1,6 @@
 {
- "edge_count": 16233,
- "node_count": 7429,
+ "edge_count": 16186,
+ "node_count": 7432,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1675,8 +1675,8 @@
    "out_degree": 0
   },
   "ai_methodology.raw.repo_audit": {
-   "deps_hash": "b42ad336aab1",
-   "out_degree": 71
+   "deps_hash": "989adf57b02f",
+   "out_degree": 70
   },
   "ai_methodology.raw.science_scaffolding": {
    "deps_hash": "e3b0c44298fc",
@@ -5171,8 +5171,8 @@
    "out_degree": 0
   },
   "dm_abcc_retained_measurement_closure_theorem_note_2026-04-21": {
-   "deps_hash": "9b8e6835ee09",
-   "out_degree": 4
+   "deps_hash": "e2084b818b6f",
+   "out_degree": 3
   },
   "dm_abcc_signature_forcing_theorem_note_2026-04-19": {
    "deps_hash": "fd86dd1df1be",
@@ -5247,8 +5247,8 @@
    "out_degree": 4
   },
   "dm_flagship_closure_review_note_2026-04-17": {
-   "deps_hash": "251d998da3da",
-   "out_degree": 16
+   "deps_hash": "37a5a4b6c232",
+   "out_degree": 1
   },
   "dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02": {
    "deps_hash": "b768ed90c422",
@@ -5559,12 +5559,12 @@
    "out_degree": 0
   },
   "dm_neutrino_k00_bosonic_normalization_record_invariance_companion_note_2026-06-04": {
-   "deps_hash": "bcf4d3295faf",
-   "out_degree": 2
+   "deps_hash": "7d13923d425c",
+   "out_degree": 1
   },
   "dm_neutrino_k00_bosonic_normalization_theorem_note_2026-04-15": {
-   "deps_hash": "37f1d28ff4f4",
-   "out_degree": 4
+   "deps_hash": "3fdb94cdfaa8",
+   "out_degree": 3
   },
   "dm_neutrino_observable_bank_exhaustion_theorem_note_2026-04-17": {
    "deps_hash": "a73e6f7b3428",
@@ -5899,8 +5899,8 @@
    "out_degree": 2
   },
   "dm_pmns_affine_current_coordinate_reduction_theorem_note_2026-04-21": {
-   "deps_hash": "5009e503969d",
-   "out_degree": 5
+   "deps_hash": "3f5da0b23f91",
+   "out_degree": 4
   },
   "dm_pmns_asymptotic_source_no_go_note_2026-04-20": {
    "deps_hash": "e3b0c44298fc",
@@ -5926,13 +5926,9 @@
    "deps_hash": "9a555f632be2",
    "out_degree": 2
   },
-  "dm_pmns_local_selector_family_no_go_theorem_note_2026-04-20": {
-   "deps_hash": "a1e76f2c7de9",
-   "out_degree": 3
-  },
   "dm_pmns_native_current_last_mile_reduction_theorem_note_2026-04-21": {
-   "deps_hash": "46acc91605b3",
-   "out_degree": 7
+   "deps_hash": "c5a160654d2f",
+   "out_degree": 2
   },
   "dm_pmns_ne_seed_surface_exact_source_manifold_theorem_note_2026-04-20": {
    "deps_hash": "ad4dee777f3f",
@@ -5941,6 +5937,10 @@
   "dm_pmns_ordered_chain_graded_current_delta_closure_theorem_note_2026-04-21": {
    "deps_hash": "819917425725",
    "out_degree": 2
+  },
+  "dm_pmns_supplied_line_finite_search_diagnostic_note_2026-04-20": {
+   "deps_hash": "37a5a4b6c232",
+   "out_degree": 1
   },
   "dm_pmns_upper_octant_source_cubic_selector_theorem_note_2026-04-20": {
    "deps_hash": "2761e985465e",
@@ -5959,8 +5959,8 @@
    "out_degree": 3
   },
   "dm_selector_first_shoulder_exit_threshold_support_criticality_bump_hygiene_companion_note_2026-06-04": {
-   "deps_hash": "bd4549103efa",
-   "out_degree": 4
+   "deps_hash": "ce0aef83d57b",
+   "out_degree": 1
   },
   "dm_selector_first_shoulder_exit_threshold_support_note_2026-04-21": {
    "deps_hash": "25fa09bd4f4c",
@@ -5979,8 +5979,12 @@
    "out_degree": 4
   },
   "dm_selector_shifted_relative_action_recovered_packet_closure_theorem_note_2026-04-21": {
-   "deps_hash": "56f9905f5a16",
-   "out_degree": 5
+   "deps_hash": "249a5c7e64a7",
+   "out_degree": 1
+  },
+  "dm_selector_supplied_bank_seed_relative_action_finite_diagnostic_note_2026-10-23": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "dm_selector_threshold_stabilization_support_theorem_note_2026-04-21": {
    "deps_hash": "a5d8bbf2066f",
@@ -5991,12 +5995,12 @@
    "out_degree": 4
   },
   "dm_sigma_hier_h_intrinsic_no_go_criticality_bump_hygiene_companion_note_2026-06-04": {
-   "deps_hash": "a0f197849ffe",
-   "out_degree": 2
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "dm_sigma_hier_h_intrinsic_no_go_theorem_note_2026-04-20": {
-   "deps_hash": "b1d52c1d5eaf",
-   "out_degree": 4
+   "deps_hash": "76a0affaf34c",
+   "out_degree": 3
   },
   "dm_sigma_hier_upper_octant_selector_theorem_note_2026-04-20": {
    "deps_hash": "dc1a983abaab",
@@ -6005,10 +6009,6 @@
   "dm_split2_dense_grid_lipschitz_dominance_support_note_2026-04-21": {
    "deps_hash": "5518ea49c5ea",
    "out_degree": 1
-  },
-  "dm_split2_interval_certified_dominance_closure_theorem_note_2026-04-21": {
-   "deps_hash": "2072250066cd",
-   "out_degree": 3
   },
   "dm_strong_cp_gamma_transfer_no_go_note_2026-04-15": {
    "deps_hash": "9fd9d3890b24",
@@ -6901,6 +6901,10 @@
   "finite_autonomous_marked_dynamics_under_grid_observations_bounded_theorem_note_2026-09-24": {
    "deps_hash": "8005e4099186",
    "out_degree": 3
+  },
+  "finite_axis_action_particle_hole_covariance_note_2026-10-23": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "finite_bksf_sign_and_superlattice_marker_census_bounded_theorem_note_2026-09-02": {
    "deps_hash": "e3b0c44298fc",
@@ -18031,8 +18035,8 @@
    "out_degree": 2
   },
   "pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem_note_2026-04-17": {
-   "deps_hash": "e5117eb4f4e9",
-   "out_degree": 15
+   "deps_hash": "abaca92657d5",
+   "out_degree": 5
   },
   "pmns_graph_axis_to_active_lane_bridge_note": {
    "deps_hash": "3c09bbe8792b",
@@ -20335,12 +20339,12 @@
    "out_degree": 0
   },
   "scalar_selector_remaining_open_imports_2026-04-20": {
-   "deps_hash": "48488f2032e5",
-   "out_degree": 7
+   "deps_hash": "e51959f1029d",
+   "out_degree": 9
   },
   "scalar_selector_reviewer_package_2026-04-20": {
-   "deps_hash": "4eefaf6b0473",
-   "out_degree": 1
+   "deps_hash": "3a54840b0e71",
+   "out_degree": 2
   },
   "scalar_selector_synthesis_note_2026-04-19": {
    "deps_hash": "aaa6933532d3",
@@ -21258,6 +21262,10 @@
    "deps_hash": "6bc83b0be0e8",
    "out_degree": 3
   },
+  "split2_conditional_generator_cofactor_algebra_note_2026-10-23": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "square_ice_is_gaussian_at_long_wavelength_and_a_zone_boundary_excess_makes_the_sum_rule_miss_bounded_theorem_note_2026-09-24": {
    "deps_hash": "d6f4878b8e48",
    "out_degree": 2
@@ -21897,6 +21905,10 @@
   "supplied_matched_free_cone_bounded_theorem_note_2026-09-15": {
    "deps_hash": "9d281ffae983",
    "out_degree": 4
+  },
+  "supplied_positive_definite_logdet_variational_identity_note_2026-10-23": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "supplied_quartet_leading_decay_bounds_bounded_theorem_note_2026-09-15": {
    "deps_hash": "4173dbfb81a8",

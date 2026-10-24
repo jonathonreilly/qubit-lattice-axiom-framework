@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Electrostatics card on the retained 3D ordered family.
+"""Electrostatics card on a supplied 3D ordered comparator.
 
 This is a narrow electrostatic-like sign-law probe, not a full EM theory.
 
@@ -15,6 +15,12 @@ like charges repel, unlike charges attract, neutral charge is inert.
 """
 
 from __future__ import annotations
+
+AUDIT_INPUT_PATHS = [
+    "docs/ELECTROSTATICS_CARD_NOTE.md",
+    "scripts/two_body_momentum_harness.py",
+]
+AUDIT_TIMEOUT_SECONDS = 120
 
 import math
 import os
@@ -206,7 +212,7 @@ def main() -> None:
 
     print("=" * 92)
     print("ELECTROSTATICS CARD")
-    print("  Retained 3D ordered-lattice family")
+    print("  Supplied 3D ordered-lattice family; finite diagnostic")
     print(f"  h={H}, W={PHYS_W}, L={PHYS_L}, source_z={SOURCE_Z}, strength={SOURCE_STRENGTH:g}")
     print("  Claim surface: scalar electrostatic-like sign law only")
     print("=" * 92)
@@ -277,8 +283,9 @@ def main() -> None:
     print(f"  screened |delta|:  {screened_delta:.8e}")
     print(f"  screening ratio:   {ratio:.3f}")
 
-    print("\nSAFE READ")
-    print("  - Like and unlike charges produce opposite-sign shifts on this retained family.")
+    print("\nSUPPLIED PREMISES: softened signed q/r field and S=L(1+q_test*f).")
+    print("SAFE READ")
+    print("  - Like and unlike charges produce opposite-sign shifts on this supplied family.")
     print("  - Equal and opposite sources cancel exactly when superposed at the same node.")
     print("  - The dipole orientation flips the sign of the response.")
     print("  - Charge response is close to linear over the tested magnitude range.")

@@ -1,5 +1,7 @@
 # Propagator Family Unification Note
 
+**Type:** bounded_theorem
+
 **Date:** 2026-04-05 (bounded scaffold bridge refresh: 2026-06-17)
 **Status:** bounded scaffold bridge / synthesis support; not an audit verdict
 
@@ -39,7 +41,7 @@ runner above:
 - [`docs/SOURCE_RESOLVED_WAVEFIELD_MECHANISM_NOTE.md`](SOURCE_RESOLVED_WAVEFIELD_MECHANISM_NOTE.md) — runner-backed exact-lattice mechanism row; independent audit still required
 - [`docs/CLAUDE_COMPLEX_ACTION_CARRYOVER_NOTE.md`](CLAUDE_COMPLEX_ACTION_CARRYOVER_NOTE.md) — retained-bounded parent context
 - [`docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md`](CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md) — retained-bounded grown-row complex-action companion on the current audit surface
-- [`docs/ELECTROSTATICS_CARD_NOTE.md`](ELECTROSTATICS_CARD_NOTE.md) — retained scalar sign-law card on the current audit surface
+- [`docs/ELECTROSTATICS_CARD_NOTE.md`](ELECTROSTATICS_CARD_NOTE.md) — supplied conditional scalar diagnostic; physical charge/Maxwell identification not derived, independent audit status unchanged
 - [`docs/ELECTROSTATICS_SUPERPOSITION_PROXY_NOTE.md`](ELECTROSTATICS_SUPERPOSITION_PROXY_NOTE.md) — retained scalar superposition proxy on the current audit surface
 - [`scripts/FIXED_FIELD_FAMILY_UNIFICATION.py`](../scripts/FIXED_FIELD_FAMILY_UNIFICATION.py) — same-grown-row signed-source / complex-action comparison
 - [`scripts/propagator_family_scaffold_bridge.py`](../scripts/propagator_family_scaffold_bridge.py) — bounded source-level scaffold bridge for this synthesis

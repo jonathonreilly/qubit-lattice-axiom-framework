@@ -811,9 +811,9 @@
       "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
     },
     "scripts/electrostatics_card.py": {
-      "source_sha256": "0ca61c81613ee1d47c97c61e17e22b10eda584a2112b2148571e93335c0caf9a",
-      "timeout_sec": 1800,
-      "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures."
+      "source_sha256": "4d8ea58366de2012ca0fd003a4376fb096f874d1e8f94027f0906f17c21d9339",
+      "timeout_sec": 120,
+      "reason": "Actual bounded 120-second supplied electrostatics diagnostic/source-reader capture; no physical or audit closure."
     },
     "scripts/two_body_momentum_harness.py": {
       "source_sha256": "7cd4c698f5873b49f9a16183e78d57a0e63f83f90fa8a3fd537d4bc9ef486c24",
@@ -1059,6 +1059,11 @@
       "source_sha256": "364de2af5a4a5218e0c2ea34bd91095315d0d093b80893f4a6507414c24e0bad",
       "timeout_sec": 120,
       "reason": "Explicit source-pinned cap confirmed by original independent reviewer; matches existing actual 120-second capture. No execution replay claimed."
+    },
+    "scripts/propagator_family_scaffold_bridge.py": {
+      "source_sha256": "cbf763734c3e87a7146e74a122d7b644573d7af90a1cf09e84ed1d8598816dba",
+      "timeout_sec": 120,
+      "reason": "Actual bounded 120-second supplied electrostatics diagnostic/source-reader capture; no physical or audit closure."
     }
   }
 }

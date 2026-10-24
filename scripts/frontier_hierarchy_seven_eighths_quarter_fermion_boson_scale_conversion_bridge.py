@@ -15,6 +15,9 @@ Carlo, no observational comparator is load-bearing.
 
 from __future__ import annotations
 
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ['docs/HIERARCHY_SEVEN_EIGHTHS_QUARTER_FERMION_BOSON_SCALE_CONVERSION_BRIDGE_BOUNDED_NOTE_2026-05-26.md']
+
 import math
 import sys
 from fractions import Fraction
@@ -62,7 +65,8 @@ def check(name: str, predicate: Callable[[], bool], detail: str = "") -> None:
 print("Section 1: Named support witnesses for 7/8 at d=4")
 
 def w1_apbc_matsubara_determinant_per_mode() -> bool:
-    # W1: |det D(L_t=4)| / |det D(L_t=2)|^2 = (7/8)^16; per-mode 16-th root = 7/8
+    # W1: supplied determinant-ratio value (7/8)^16; this function only
+    # checks its positive 16-th root, not a determinant computation.
     full = sp.Rational(7, 8) ** 16
     per_mode = full ** sp.Rational(1, 16)
     return sp.simplify(per_mode - sp.Rational(7, 8)) == 0
@@ -92,7 +96,7 @@ def w5_fermion_boson_per_dof_ratio() -> bool:
     ratio = u_F_per_dof / u_B_per_dof
     return sp.simplify(ratio - sp.Rational(7, 8)) == 0
 
-check("W1: APBC Matsubara determinant per-mode = 7/8",
+check("W1: positive root of supplied Matsubara-ratio value = 7/8",
       w1_apbc_matsubara_determinant_per_mode,
       "upstream framework Matsubara witness")
 check("W2: lattice per-mode (c+1/2)/(c+1) at c=3 = 7/8",
@@ -165,12 +169,25 @@ def s3_dim_one_inversion_at_d4() -> bool:
 
 def s3_ratio_inversion_at_d4() -> bool:
     # For energy-density ratio R = u_F / u_B, the temperature-scale
-    # conversion factor (at equal d=4) is R^(1/4)
+    # root of the equal-temperature ratio at d=4 is R^(1/4).
+    # Equal-energy temperatures obey T_B/T_F=R^(1/4), checked separately.
     R = sp.Rational(7, 8)
     factor = R ** sp.Rational(1, 4)
     # Numerical value
     numerical = float(factor.evalf())
     return abs(numerical - 0.967168210133835) < 1e-12
+
+def s3_equal_energy_temperature_ratio() -> bool:
+    # Equal energies have different species coefficients; do not reuse the
+    # equal-temperature energy ratio as T_F/T_B.
+    r = sp.Rational(7, 8)
+    t_f, c = sp.symbols("t_f c", positive=True)
+    t_b = r ** sp.Rational(1, 4) * t_f
+    equal_energy = sp.simplify(c * t_b**4 - r * c * t_f**4) == 0
+    old_t_b = t_f / r ** sp.Rational(1, 4)
+    old_fails = sp.simplify(c * old_t_b**4 - r * c * t_f**4) != 0
+    return equal_energy and old_fails
+
 
 def s3_d_dependence() -> bool:
     # At d != 4, (eta(d)/zeta(d))^(1/d) does NOT equal (7/8)^(1/4)
@@ -196,6 +213,8 @@ check("(B1) at d=4, alpha = 1/4 (dimensional fourth-root compression)",
 check("(B4) ratio inversion: (7/8)^(1/4) ≈ 0.967168 (10⁻¹² precision)",
       s3_ratio_inversion_at_d4,
       "Stefan-Boltzmann scale conversion")
+check("equal-energy T_B/T_F=(7/8)^(1/4); inverse old direction fails",
+      s3_equal_energy_temperature_ratio, "substitution into both species energy laws")
 check("d-dependence: (eta(d)/zeta(d))^(1/d) values for d in {2,3,4,5,6}",
       s3_d_dependence,
       "only d=4 gives ≈ 0.9672")

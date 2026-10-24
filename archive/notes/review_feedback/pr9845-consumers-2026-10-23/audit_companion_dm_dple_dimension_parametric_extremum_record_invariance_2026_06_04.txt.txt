@@ -1,54 +1,7 @@
-===== runner cache v1 =====
-runner: scripts/audit_companion_dm_dple_dimension_parametric_extremum_record_invariance_2026_06_04.py
-runner_sha256: b50e94f5e7cd66c6df398480da15bf22fc726a83afd24745f4509dbf1e1fcc24
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 2.04
-status: ok
------ stdout -----
-========================================================================
-DM DPLE dimension-parametric extremum record-invariance hygiene
-========================================================================
-Repo root: <repo>
-Parent note: docs/DM_DPLE_DIMENSION_PARAMETRIC_EXTREMUM_THEOREM_NOTE_2026-04-19.md
-Parent runner: scripts/frontier_dm_dple_theorem.py
-Scope: meta evidence only; no theorem claim and no verdict change.
-PASS parent_note_exists
-PASS parent_runner_exists
-PASS parent_claim_type_expected
-PASS parent_runner_path_expected
-PASS parent_current_criticality_expected
-PASS parent_current_load_expected :: load=9.994
-PASS parent_note_hash_expected
-PASS parent_note_hash_matches_ledger
-PASS parent_deps_exact :: count=1
-PASS parent_current_row_unresolved
-PASS parent_load_bearing_block_present
-PASS parent_load_bearing_contains_dple_phrase_0
-PASS parent_load_bearing_contains_dple_phrase_1
-PASS parent_load_bearing_contains_dple_phrase_2
-PASS parent_load_bearing_contains_dple_phrase_3
-PASS parent_load_bearing_contains_dple_phrase_4
-PASS parent_load_bearing_contains_dple_phrase_5
-PASS parent_load_bearing_contains_dple_phrase_6
-PASS parent_load_bearing_contains_dple_phrase_7
-PASS parent_load_bearing_contains_dple_phrase_8
-PASS parent_load_bearing_contains_dple_phrase_9
-PASS parent_load_bearing_omits_record_axiom_terms
-PASS parent_runner_exit_zero :: returncode=0
-PASS parent_runner_summary_present
-PASS parent_runner_pass_count_nineteen :: pass_count=19
-PASS parent_runner_fail_count_zero :: fail_count=0
-PASS record_marker_true_exit_zero :: returncode=0
-PASS record_marker_does_not_change_parent_output
-PASS companion_declares_meta_type
-PASS companion_disclaims_new_theorem
-PASS companion_disclaims_verdict_change
-PASS companion_keeps_dependency_boundary
-PASS companion_marks_axioms_not_support
-========================================================================
-SUMMARY: PASS=33 FAIL=0
-========================================================================
-
------ stderr -----
-
+{
+  "archive_encoding": "base64",
+  "original_sha256": "e8b0dddc63308eb225aff286eebdea5da8f4cd3f06491c498d2d468109e3857f",
+  "original_bytes": 2296,
+  "recovery": "e70ecf4f58ead47f39929b9fd5ae5057d30a3183:archive/notes/review_feedback/pr9845-consumers-2026-10-23/audit_companion_dm_dple_dimension_parametric_extremum_record_invariance_2026_06_04.txt.txt",
+  "payload": "PT09PT0gcnVubmVyIGNhY2hlIHYxID09PT09CnJ1bm5lcjogc2NyaXB0cy9hdWRpdF9jb21wYW5pb25fZG1fZHBsZV9kaW1lbnNpb25fcGFyYW1ldHJpY19leHRyZW11bV9yZWNvcmRfaW52YXJpYW5jZV8yMDI2XzA2XzA0LnB5CnJ1bm5lcl9zaGEyNTY6IGI1MGU5NGY1ZTdjZDY2YzZkZjM5ODQ4MGRhMTViZjIyZmM3MjZhODNhZmQyNDc0NWY0NTA5ZGJmMWUxZmNjMjQKdGltZW91dF9zZWM6IDEyMApleGl0X2NvZGU6IDAKZWxhcHNlZF9zZWM6IDIuMDQKc3RhdHVzOiBvawotLS0tLSBzdGRvdXQgLS0tLS0KPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CkRNIERQTEUgZGltZW5zaW9uLXBhcmFtZXRyaWMgZXh0cmVtdW0gcmVjb3JkLWludmFyaWFuY2UgaHlnaWVuZQo9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KUmVwbyByb290OiA8cmVwbz4KUGFyZW50IG5vdGU6IGRvY3MvRE1fRFBMRV9ESU1FTlNJT05fUEFSQU1FVFJJQ19FWFRSRU1VTV9USEVPUkVNX05PVEVfMjAyNi0wNC0xOS5tZApQYXJlbnQgcnVubmVyOiBzY3JpcHRzL2Zyb250aWVyX2RtX2RwbGVfdGhlb3JlbS5weQpTY29wZTogbWV0YSBldmlkZW5jZSBvbmx5OyBubyB0aGVvcmVtIGNsYWltIGFuZCBubyB2ZXJkaWN0IGNoYW5nZS4KUEFTUyBwYXJlbnRfbm90ZV9leGlzdHMKUEFTUyBwYXJlbnRfcnVubmVyX2V4aXN0cwpQQVNTIHBhcmVudF9jbGFpbV90eXBlX2V4cGVjdGVkClBBU1MgcGFyZW50X3J1bm5lcl9wYXRoX2V4cGVjdGVkClBBU1MgcGFyZW50X2N1cnJlbnRfY3JpdGljYWxpdHlfZXhwZWN0ZWQKUEFTUyBwYXJlbnRfY3VycmVudF9sb2FkX2V4cGVjdGVkIDo6IGxvYWQ9OS45OTQKUEFTUyBwYXJlbnRfbm90ZV9oYXNoX2V4cGVjdGVkClBBU1MgcGFyZW50X25vdGVfaGFzaF9tYXRjaGVzX2xlZGdlcgpQQVNTIHBhcmVudF9kZXBzX2V4YWN0IDo6IGNvdW50PTEKUEFTUyBwYXJlbnRfY3VycmVudF9yb3dfdW5yZXNvbHZlZApQQVNTIHBhcmVudF9sb2FkX2JlYXJpbmdfYmxvY2tfcHJlc2VudApQQVNTIHBhcmVudF9sb2FkX2JlYXJpbmdfY29udGFpbnNfZHBsZV9waHJhc2VfMApQQVNTIHBhcmVudF9sb2FkX2JlYXJpbmdfY29udGFpbnNfZHBsZV9waHJhc2VfMQpQQVNTIHBhcmVudF9sb2FkX2JlYXJpbmdfY29udGFpbnNfZHBsZV9waHJhc2VfMgpQQVNTIHBhcmVudF9sb2FkX2JlYXJpbmdfY29udGFpbnNfZHBsZV9waHJhc2VfMwpQQVNTIHBhcmVudF9sb2FkX2JlYXJpbmdfY29udGFpbnNfZHBsZV9waHJhc2VfNApQQVNTIHBhcmVudF9sb2FkX2JlYXJpbmdfY29udGFpbnNfZHBsZV9waHJhc2VfNQpQQVNTIHBhcmVudF9sb2FkX2JlYXJpbmdfY29udGFpbnNfZHBsZV9waHJhc2VfNgpQQVNTIHBhcmVudF9sb2FkX2JlYXJpbmdfY29udGFpbnNfZHBsZV9waHJhc2VfNwpQQVNTIHBhcmVudF9sb2FkX2JlYXJpbmdfY29udGFpbnNfZHBsZV9waHJhc2VfOApQQVNTIHBhcmVudF9sb2FkX2JlYXJpbmdfY29udGFpbnNfZHBsZV9waHJhc2VfOQpQQVNTIHBhcmVudF9sb2FkX2JlYXJpbmdfb21pdHNfcmVjb3JkX2F4aW9tX3Rlcm1zClBBU1MgcGFyZW50X3J1bm5lcl9leGl0X3plcm8gOjogcmV0dXJuY29kZT0wClBBU1MgcGFyZW50X3J1bm5lcl9zdW1tYXJ5X3ByZXNlbnQKUEFTUyBwYXJlbnRfcnVubmVyX3Bhc3NfY291bnRfbmluZXRlZW4gOjogcGFzc19jb3VudD0xOQpQQVNTIHBhcmVudF9ydW5uZXJfZmFpbF9jb3VudF96ZXJvIDo6IGZhaWxfY291bnQ9MApQQVNTIHJlY29yZF9tYXJrZXJfdHJ1ZV9leGl0X3plcm8gOjogcmV0dXJuY29kZT0wClBBU1MgcmVjb3JkX21hcmtlcl9kb2VzX25vdF9jaGFuZ2VfcGFyZW50X291dHB1dApQQVNTIGNvbXBhbmlvbl9kZWNsYXJlc19tZXRhX3R5cGUKUEFTUyBjb21wYW5pb25fZGlzY2xhaW1zX25ld190aGVvcmVtClBBU1MgY29tcGFuaW9uX2Rpc2NsYWltc192ZXJkaWN0X2NoYW5nZQpQQVNTIGNvbXBhbmlvbl9rZWVwc19kZXBlbmRlbmN5X2JvdW5kYXJ5ClBBU1MgY29tcGFuaW9uX21hcmtzX2F4aW9tc19ub3Rfc3VwcG9ydAo9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KU1VNTUFSWTogUEFTUz0zMyBGQUlMPTAKPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CgotLS0tLSBzdGRlcnIgLS0tLS0KCg=="
+}

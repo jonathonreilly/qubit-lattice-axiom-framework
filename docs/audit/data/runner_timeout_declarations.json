@@ -1232,6 +1232,11 @@
       "source_sha256": "73609704ad7b2e136a76d3b5928c2ec3af798559556c9f15236d0fc36db6ba71",
       "timeout_sec": 300,
       "reason": "Finite 3x3 determinant/Hessian fixtures and a bounded-interval scalar optimization with imported transport grids; future wall-time cap only, not a runtime guarantee. No standalone execution or validation of helper-main scientific claims is asserted."
+    },
+    "scripts/finite_axis_action_particle_hole_covariance_2026_10_23.py": {
+      "source_sha256": "ecc7730045468331958400b4c6121f3994ad9d6392519dc163b826e24ff29c60",
+      "timeout_sec": 120,
+      "reason": "Bounded finite axis-action covariance and eight-dimensional sector witness; excludes QCA campaigns and pair enumeration."
     }
   }
 }

@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/the_family_class_tick_keeps_a_time_reversing_antiunitary_that_fixes_every_family_so_it_supplies_no_quark_cp_phase_and_keeps_theta_bar_at_zero_or_pi_2026_10_24.py
+runner_sha256: 9a65667ecf947a17269b2a91c120c8df9f2e95d8bbcd7a6c07bb9df93bd48353
+input_fingerprint_sha256: f75e56e2309a0d4890db19151484e5e1cf9aedacf5f3a7b1220e21e06acf35ef
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.39
+status: ok
+----- stdout -----
+== A. the tick's light node (five-direction Clifford walk)
+PASS A1 Cl(5) on one 4-spinor, product scalar, U unitary: anticomm 0e+00, G1..G5 = -1, unitarity 4.4e-16
+== B. which time-reversing antiunitaries does the tick keep?
+  null-space dims: T alone: 0, T x C2'(1,-1,0): 1, T x C2'(1,0,-1): 1, T x C2'(0,1,-1): 1, T x C2'(1,1,0): 1, T x C4z: 1, T x C2z: 0
+PASS B1 Floquet T alone has no intertwiner (family class breaks T): smallest singular value 1.98e+00
+PASS B2 T x C2'(1,-1,0) kept: unitary V, intertwines 20 fresh K, keeps L as L: |VV+-1| 4e-16, err 7e-16, tau3 err 4e-16, (V K)^2 = +1
+  axis-reversing C2' kept with T: 3/3; T x C4z kept: True
+== C. family label under the kept antiunitary (zoom-3 characters k_j = (2pi/3) j (1,1,1))
+PASS C1 T x C2' fixes every family label (X diagonal); copies: X = 1: T x C2': [0, 1, 2]; T alone: [0, 2, 1] (swaps 1<->2); T x C4z: [0, None, None] (None = off the family set)
+PASS C2 tick's L-R pieces vanish on the turn axis and at the node (1 + w + w^2 = 0): max|H(K_j)| 2e-16, max|m(t,t,t)| 9e-17, |H(0)| 2e-16
+== D. turn-CP lemma with the new charges, and the generalized-CP lemma
+PASS D1 turn-CP lemma: triplet (0,1,2) gives J = 0; all q = 2 lifts it: triplet max|J| 0e+00; q = 2 median |J| 2.54e-02 (lifted; turn now a scalar on families)
+  family-blind tick masses (prop. to 1): det[Hu,Hd] = 0e+00; masses degenerate, mixing unphysical (U(3) family symmetry)
+PASS D2 generalized CP (any X, X X* = 1) on Q forces det[Hu,Hd] = 0 and J = 0: condition err 1e-14, max |det C|/||C||^3 2e-15, max|J| 6e-16 over 300
+PASS D3 kept antiunitary with X = 1 (copies) or diagonal: real masses, theta_tree in {0, pi}: max distance to {0,pi} 0e+00
+== E. worst-case leak: tick's T-odd L-R piece read as a family-universal mass entry
+  a = l_P: K a(m_t) = 1.4e-17, |m|/m ~ 4.7e-35: J_leak ~ 2e-36, theta_leak ~ 7e-35
+  a = 10 l_P: K a(m_t) = 1.4e-16, |m|/m ~ 4.7e-33: J_leak ~ 2e-34, theta_leak ~ 7e-33
+PASS E1 leak is linear in the T-odd entry (median slope ratio dev < 0.05) and negligible: slope J 0.03, theta 1.52; at 10 l_P both < 1e-29 vs J 3.08e-5, theta 1e-10
+== F. supplied phases (break every kept antiunitary): J and theta tied
+PASS F1 generic supplied phases: J != 0 and theta_bar O(1); none passes 1e-10: median|J| 2.5e-02 (J > 1e-6 in 1.00); median theta 0.79 rad; |theta|<1e-10: 0.000
+VERDICT: tick does not supply CP. J != 0 is ALLOWED only with supplied mass-sector phases that break the kept
+T x C2' (not just T); then theta_bar is O(1) unless a Nelson-Barr-type reading is also supplied.
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

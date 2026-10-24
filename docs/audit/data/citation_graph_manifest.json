@@ -1,6 +1,6 @@
 {
- "edge_count": 16232,
- "node_count": 7427,
+ "edge_count": 16233,
+ "node_count": 7428,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -22685,6 +22685,10 @@
   "two_field_retarded_probe_note_2026-04-10": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "two_magnon_sector_cycle_and_bloch_witness_note_2026-10-23": {
+   "deps_hash": "a7fae89c611f",
+   "out_degree": 1
   },
   "two_qubit_site_soldered_spin_stabilizer_rules_three_dimensional_charge_motion_flips_a_free_local_variable_bounded_theorem_note_2026-10-17": {
    "deps_hash": "f6b42014f976",

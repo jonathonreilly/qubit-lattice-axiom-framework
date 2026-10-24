@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/positive_scale_threshold_itinerary_2026_10_24.py
+runner_sha256: e6fde3ed42c393da87b0c7740592f4b216deb35ddedfe380f1095b7ceca9ec33
+input_fingerprint_sha256: 7aa5baae81d61a3020f556b571c00f45621dc87bd08d75c49f95838c4afb79cc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+PASS: exact fixture 1->8, []
+PASS: reversal preserves interior labels
+PASS: adjacency and endpoint coverage
+PASS: exact fixture 1->8, [2]
+PASS: reversal preserves interior labels
+PASS: adjacency and endpoint coverage
+PASS: exact fixture 1->8, [2, 4]
+PASS: reversal preserves interior labels
+PASS: adjacency and endpoint coverage
+PASS: exact fixture 2->4, [1, 2, 4, 8]
+PASS: reversal preserves interior labels
+PASS: adjacency and endpoint coverage
+PASS: exact fixture 4->2, [1, 2, 4, 8]
+PASS: reversal preserves interior labels
+PASS: adjacency and endpoint coverage
+PASS: exact fixture 2->2, [1, 2, 4]
+PASS: reversal preserves interior labels
+PASS: adjacency and endpoint coverage
+PASS: exact fixture 2->4, [1, 8]
+PASS: reversal preserves interior labels
+PASS: adjacency and endpoint coverage
+PASS: adjacent floats: no rounded-midpoint regime error
+PASS: constant coefficient integral
+PASS: analytic dyadic piecewise integral
+PASS: integral orientation
+PASS: empty oriented integral
+PASS: invalid input rejected (0, 1, [])
+PASS: invalid input rejected (-1, 2, [])
+PASS: invalid input rejected (nan, 1, [])
+PASS: invalid input rejected (1, inf, [])
+PASS: invalid input rejected (1, 2, [0])
+PASS: invalid input rejected (1, 2, [nan])
+PASS: invalid input rejected (1, 2, [inf])
+PASS: invalid input rejected (1, 2, [2, 2])
+PASS: invalid input rejected (1, 2, [3, 2])
+PASS: invalid coefficients rejected []
+PASS: invalid coefficients rejected [1]
+PASS: invalid coefficients rejected [1, nan]
+PASS: invalid coefficients rejected [1, inf]
+PASS: historical route clips below-endpoint thresholds
+PASS: historical wrong itinerary remains discriminating
+Historical supplied-data integral: wrong=-2.47623087838811; clipped=-7.38057067761526; delta=4.90433979922715
+Total FAIL: 0; no physical model or full YT result certified
+
+----- stderr -----
+

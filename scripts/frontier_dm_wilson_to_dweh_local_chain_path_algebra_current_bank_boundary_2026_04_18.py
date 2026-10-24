@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""
-DM Wilson-to-dW_e^H local chain path-algebra current-bank boundary.
-
-Purpose:
-  Verify that the current stack does not already realize the sharpest local
-  Wilson certificate for the DM route under another name.
+"""Conditional supplied-input or documentary diagnostics.
+No unique physical target, semantic exhaustion or absence theorem follows
+from microscopic-selector text or the Wilson keyword inventory.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ('docs/DM_WILSON_TO_DWEH_LOCAL_CHAIN_PATH_ALGEBRA_CURRENT_BANK_BOUNDARY_NOTE_2026-04-18.md',)
 
 import sys
 from pathlib import Path
@@ -84,7 +84,7 @@ def files_with_all(tokens: list[str]) -> list[str]:
     return hits
 
 
-def main() -> int:
+def historical_inventory() -> int:
     print("=" * 88)
     print("DM WILSON-TO-dW_e^H LOCAL CHAIN PATH-ALGEBRA CURRENT-BANK BOUNDARY")
     print("=" * 88)
@@ -96,18 +96,10 @@ def main() -> int:
     minimal_cert = read("docs/DM_WILSON_TO_DWEH_LOCAL_PATH_ALGEBRA_MINIMAL_CERTIFICATE_NOTE_2026-04-18.md")
 
     print("\n" + "=" * 88)
-    print("PART 1: THE GENERIC WILSON-TO-dW_e^H ROUTE IS STILL NOT REALIZED")
+    print("PART 1: GENERIC DOCUMENTARY INPUT DOES NOT PROVE NONREALIZATION")
     print("=" * 88)
-    check(
-        "The generic current-bank boundary note already says there is no theorem-grade Wilson-to-dW_e^H descendant law on the current stack",
-        "does **not** already have:" in generic_boundary
-        and "a Wilson-to-`dW_e^H` descendant theorem" in generic_boundary,
-    )
-    check(
-        "The same boundary note already says there is no theorem-grade Wilson Hermitian source family on the current stack",
-        "or a Wilson-side Hermitian source family realizing that codomain." in generic_boundary
-        and "genuine new\nconstructive route on current `main`." in generic_boundary,
-    )
+    print("UNSCORED SCOPE: supplied reconstruction/documentary context; no unique-target or absence theorem follows.")
+    print("UNSCORED SCOPE: supplied reconstruction/documentary context; no unique-target or absence theorem follows.")
 
     print("\n" + "=" * 88)
     print("PART 2: THE LOCAL PATH ALGEBRA WOULD AUTOMATICALLY INDUCE THAT GENERIC ROUTE")
@@ -124,18 +116,18 @@ def main() -> int:
     )
 
     print("\n" + "=" * 88)
-    print("PART 3: THERE IS NO HIDDEN PRE-EXISTING LOCAL PATH-ALGEBRA ARTIFACT")
+    print("PART 3: OPTIONAL HISTORICAL KEYWORD INVENTORY")
     print("=" * 88)
     local_hits = files_with_all(["Phi_chain", "dW_e^H"])
     path_hits = files_with_all(["path-algebra", "dW_e^H"])
     unclassified_path_hits = [hit for hit in path_hits if hit not in KNOWN_NONCLOSING_PATH_HITS]
     check(
-        "No pre-existing doc or script outside the new Wilson/DM stack already combines Phi_chain with dW_e^H under another name",
+        "Historical keyword inventory has no Phi_chain/dW_e^H hits outside exclusions",
         len(local_hits) == 0,
         f"hits={local_hits}",
     )
     check(
-        "No unclassified doc or script outside the new Wilson/DM stack already states a path-algebra route into dW_e^H",
+        "Historical path-algebra keyword hits match the supplied allowlist",
         len(unclassified_path_hits) == 0,
         f"classified_nonclosing={len(path_hits) - len(unclassified_path_hits)}, unclassified={unclassified_path_hits}",
     )
@@ -148,21 +140,22 @@ def main() -> int:
     print("\n" + "=" * 88)
     print("PART 4: BOTTOM LINE")
     print("=" * 88)
-    check(
-        "The current stack does not already realize the sharpest local Wilson certificate for the DM route",
-        True,
-        "if it did, it would already realize the excluded generic Wilson-to-dW_e^H source family route",
-    )
-    check(
-        "So the remaining gap is genuinely constructive even at the sharpest local level",
-        True,
-        "positive construction of Phi_chain plus the descended identity still remains",
-    )
+    print("UNSCORED SCOPE: supplied reconstruction/documentary context; no unique-target or absence theorem follows.")
+    print("UNSCORED SCOPE: supplied reconstruction/documentary context; no unique-target or absence theorem follows.")
 
     print("\n" + "=" * 88)
     print(f"SUMMARY: PASS={PASS_COUNT} BOUNDARY={BOUNDARY_COUNT} HARD_ISSUES={FAIL_COUNT}")
     print("=" * 88)
     return 0 if FAIL_COUNT == 0 else 1
+
+
+def main() -> int:
+    if "--historical-inventory" in sys.argv[1:]:
+        return historical_inventory()
+    print("DOCUMENTARY DEFAULT: no scientific or mathematical assertions are scored.")
+    print("The generic Wilson inventory proves neither absence nor necessity of a local path-algebra certificate.")
+    print("Optional --historical-inventory preserves the old keyword/allowlist tests; they are not semantic exhaustion.")
+    return 0
 
 
 if __name__ == "__main__":

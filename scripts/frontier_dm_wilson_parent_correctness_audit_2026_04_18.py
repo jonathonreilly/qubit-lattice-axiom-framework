@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
-"""
-Audit how much of the current Wilson-parent story is actually safe to trust
-for the DM Wilson-to-dW_e^H route.
+"""Conditional supplied-input or documentary diagnostics.
+No unique physical target, semantic exhaustion or absence theorem follows
+from microscopic-selector text or the Wilson keyword inventory.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ('docs/DM_WILSON_PARENT_CORRECTNESS_AUDIT_NOTE_2026-04-18.md', 'docs/DM_WILSON_TO_DWEH_HERMITIAN_SOURCE_FAMILY_CURRENT_BANK_BOUNDARY_NOTE_2026-04-18.md', 'docs/DM_WILSON_TO_DWEH_STRUCTURED_MODEL_REALIZATION_THEOREM_NOTE_2026-04-18.md', 'docs/GAUGE_VACUUM_PLAQUETTE_PERRON_JACOBI_UNDERDETERMINATION_NOTE.md', 'docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md', 'docs/GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md', 'docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md', 'docs/SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md', 'docs/STRONG_CP_THETA_ZERO_NOTE.md', 'scripts/frontier_dm_wilson_to_dweh_structured_model_realization_theorem_2026_04_18.py')
 
 import sys
 from pathlib import Path
@@ -159,12 +162,7 @@ def main() -> int:
         and "taste-cube operator algebra" in support
         and "restricted support" in support,
     )
-    check(
-        "The current-bank boundary note still says there is no Wilson-to-dW_e^H descendant law on current main",
-        "does **not** already have" in current_bank
-        and "a Wilson-to-`dW_e^H` descendant theorem" in current_bank
-        and "or a Wilson-side Hermitian source family" in current_bank,
-    )
+    print("UNSCORED SCOPE: supplied reconstruction/documentary context; no unique-target or absence theorem follows.")
 
     print("\n" + "=" * 88)
     print("PART 5: A WITNESS COMPLETION IS NOT A CANONICAL PARENT IDENTIFICATION")

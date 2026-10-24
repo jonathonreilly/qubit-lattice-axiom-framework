@@ -1,5 +1,5 @@
 {
- "edge_count": 16309,
+ "edge_count": 16295,
  "node_count": 7427,
  "nodes": {
   "3d_correction_master_note": {
@@ -6095,8 +6095,8 @@
    "out_degree": 4
   },
   "dm_wilson_direct_descendant_microscopic_value_frontier_theorem_note_2026-04-18": {
-   "deps_hash": "0214cca4ddfc",
-   "out_degree": 5
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "dm_wilson_direct_descendant_positive_branch_compatibility_and_insufficiency_theorem_note_2026-04-18": {
    "deps_hash": "ee3999777d4e",
@@ -6119,24 +6119,24 @@
    "out_degree": 3
   },
   "dm_wilson_parent_correctness_audit_note_2026-04-18": {
-   "deps_hash": "b1667b98ad8a",
-   "out_degree": 8
+   "deps_hash": "4ee42001efb1",
+   "out_degree": 7
   },
   "dm_wilson_to_dweh_adjacent_chain_normal_form_theorem_note_2026-04-18": {
    "deps_hash": "94e431ddc022",
    "out_degree": 3
   },
   "dm_wilson_to_dweh_hermitian_source_family_current_bank_boundary_note_2026-04-18": {
-   "deps_hash": "d857cc62b67f",
-   "out_degree": 5
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "dm_wilson_to_dweh_hermitian_source_family_target_note_2026-04-18": {
    "deps_hash": "d993dba5158a",
    "out_degree": 2
   },
   "dm_wilson_to_dweh_local_chain_path_algebra_current_bank_boundary_note_2026-04-18": {
-   "deps_hash": "7bf3b01d74dc",
-   "out_degree": 3
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "dm_wilson_to_dweh_local_chain_path_algebra_target_note_2026-04-18": {
    "deps_hash": "a9744f626f59",

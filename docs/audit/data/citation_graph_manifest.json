@@ -1,5 +1,5 @@
 {
- "edge_count": 16136,
+ "edge_count": 16123,
  "node_count": 7439,
  "nodes": {
   "3d_correction_master_note": {
@@ -13087,8 +13087,8 @@
    "out_degree": 17
   },
   "koide_a1_brannen_plancherel_identity_support_note_2026-04-25": {
-   "deps_hash": "9adb10d4c224",
-   "out_degree": 8
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "koide_a1_closure_recommendation_2026-04-22": {
    "deps_hash": "e3b0c44298fc",
@@ -13411,8 +13411,8 @@
    "out_degree": 3
   },
   "koide_delta_dimensionless_closure_via_v8_theorem_note_2026-04-29": {
-   "deps_hash": "c355891e0fc5",
-   "out_degree": 6
+   "deps_hash": "a6d3233592f1",
+   "out_degree": 1
   },
   "koide_delta_eta_density_readout_chain_bounded_theorem_note_2026-06-09": {
    "deps_hash": "646cea7f0948",

@@ -17,6 +17,9 @@ from pathlib import Path
 import sys
 
 
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = ["docs/KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md", "docs/MINIMAL_AXIOMS_2026-05-03.md"]
+
 ROOT = Path(__file__).resolve().parent.parent
 NOTE = ROOT / "docs" / "KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md"
 MINIMAL_AXIOMS = ROOT / "docs" / "MINIMAL_AXIOMS_2026-05-03.md"
@@ -135,7 +138,7 @@ def main() -> int:
         "radian bridge" in note.lower() or ("P" in note and "radian" in note),
     )
     check(
-        "admission count is 2 (not 3)",
+        "historical admission-count report records 2 (not a current certification)",
         "Total | **2**" in note or "**2** (Probe 24 ruled out third)" in note
         or "Total | 2" in note,
     )
@@ -195,9 +198,9 @@ def main() -> int:
         "Review-loop rule" in note or "review-loop rule" in note.lower(),
     )
     check(
-        "review-loop rule notes campaign is terminal",
-        "campaign on BAE is **terminal**" in note
-        or "campaign is **terminal**" in note,
+        "documentary check: former terminal instruction is withdrawn and nonbinding",
+        "former terminal-campaign instruction is withdrawn" in note
+        and "historical and nonbinding" in note,
     )
 
     # ---- 4 rounds across 30 probes ----
@@ -217,7 +220,7 @@ def main() -> int:
         "all 30 probes cited, 2 positive candidate results recorded, "
         "structural impossibility claims recorded, "
         "partial-falsification candidate recorded, "
-        "2 remaining admissions correctly counted, "
+        "historical 2-admission report recorded without current certification, "
         "no theorem promotion, no axiom added, "
         "strategic options listed without selection."
     )

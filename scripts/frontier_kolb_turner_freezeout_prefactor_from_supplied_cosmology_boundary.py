@@ -9,7 +9,7 @@ prefactor identity (P*) given five named premises (P1)-(P5):
   P2 (Stefan-Boltzmann) : rho_rad(T) = (pi^2/30) g_*(T) T^4
   P3 (Entropy density)  : s(T)       = (2 pi^2/45) g_*S(T) T^3
   P4 (Boltzmann tail)   : Y_infty ~ x_F * sqrt(45/pi) /
-                                  (sqrt(g_*(T_F)) M_Pl <sigma_v>)
+                                  (sqrt(g_*(T_F)) m_X M_Pl <sigma_v>)
   P5 (Entropy conserv.) : s a^3 = const
 
 Definitions:
@@ -43,11 +43,12 @@ verification:
 Review role: no status promotion. Provides runner evidence that the
 algebraic-substitution identity holds at exact symbolic precision under the
 local supplied premises, and that the numerical evaluation reproduces the
-textbook K ~ 1.07e9 GeV^-1 within the conventional ~3% Boltzmann-tail
-subleading-coefficient gap.
+supplied comparator K ~ 1.07e9 GeV^-1 within ~3%; no kinetic correction derived.
 """
 
 from __future__ import annotations
+
+AUDIT_INPUT_PATHS = ['docs/KOLB_TURNER_FREEZEOUT_PREFACTOR_FROM_SUPPLIED_COSMOLOGY_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-05-28.md']
 
 import math
 import sys
@@ -159,6 +160,19 @@ def main() -> int:
         detail=f"diff = {diff}",
     )
 
+    # Explicit mass cancellation in the supplied leading-tail expression.
+    m_X, x_F, g_F, sigma_v = symbols("m_X x_F g_F sigma_v", positive=True)
+    Y_leading = x_F * C_Boltz / (sqrt(g_F) * m_X * M_Pl * sigma_v)
+    omega_leading = m_X * s_0 * Y_leading / rho_c_per_h2
+    expected_omega = K_def * x_F / (sqrt(g_F) * M_Pl * sigma_v)
+    check("positive supplied mass cancels in leading-tail abundance",
+          simplify(omega_leading - expected_omega) == 0)
+    wrong_omega = m_X * s_0 * (m_X * Y_leading) / rho_c_per_h2
+    check("old mass-omitting tail gives factor two at m_X=2",
+          simplify((wrong_omega / expected_omega).subs(m_X, 2)) == 2)
+    for marker in ["m_X>0", "Y_infty  ~", "No bound on deltaY"]:
+        check("documentary corrected tail boundary: " + marker, marker in note_text)
+
     # ----------------------------------------------------------------------
     section("Part 3: explicit canonical form")
     # ----------------------------------------------------------------------
@@ -209,11 +223,9 @@ def main() -> int:
     rel_dev = (K_num - K_TEXTBOOK) / K_TEXTBOOK
     print(f"  relative deviation = {100.0 * rel_dev:+.3f}%")
 
-    # Allow up to 5% deviation (Boltzmann subleading-coefficient gap is ~3%
-    # in standard convention but choice of subleading-correction prescription
-    # can stretch this to ~5%).
+    # Preserve historical 5% comparator tolerance; no kinetic explanation inferred.
     check(
-        "K (this note) reproduces textbook 1.07e9 GeV^-1 within 5% (Boltzmann coefficient gap)",
+        "K (this note) reproduces textbook 1.07e9 GeV^-1 within 5% (supplied comparison only)",
         abs(rel_dev) < 0.05,
         detail=(f"K(this) = {K_num:.4e}, K(KT) = {K_TEXTBOOK:.4e}, "
                 f"dev = {100*rel_dev:+.3f}%"),
@@ -317,8 +329,8 @@ def main() -> int:
 
     if FAIL == 0:
         print("VERDICT: (P*) algebraic prefactor identity holds parametrically; numerical")
-        print("evaluation reproduces textbook K = 1.07e9 GeV^-1 within ~3% Boltzmann-tail")
-        print("subleading-coefficient gap; all scaling probes confirm the expected exponents.")
+        print("evaluation compares supplied K = 1.07e9 GeV^-1 within ~3%; no derived")
+        print("kinetic correction; scaling probes check the supplied formula exponents.")
         print()
         print("TOTAL: PASS={} FAIL=0".format(PASS))
         return 0

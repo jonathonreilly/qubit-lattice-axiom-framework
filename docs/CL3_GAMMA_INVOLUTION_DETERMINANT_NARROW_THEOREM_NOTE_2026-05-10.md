@@ -76,13 +76,14 @@ an explicit boundary disclaimer.
 
 ## 2. Why this note exists
 
-The companion bounded theorem
+The historical version of
 `HIERARCHY_HEAT_KERNEL_D4_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-05-10.md`
-§4.3 admits the per-determinant geometric-mean readout
-`v(L_t) ∝ |det(D + J)|^{1/(N_taste · L_t)}` as a structural
-admission and recasts it via heat-kernel and Stefan-Boltzmann
-dimensional-analysis support. A natural question is whether the
-admission can be retired by **algebraic** means — specifically, whether
+motivated the supplied readout
+`v(L_t) ∝ |det(D + J)|^{1/(N_taste · L_t)}`. Its current source withdraws
+that heat-kernel/Stefan dimensional derivation and distinguishes a stipulated
+dimensionless quarter-power statistic from an ordinary geometric mean
+singular value. Neither establishes a physical readout. The remaining
+algebraic question is whether
 the Cl(3) γ-involution structure forces a `√det`-shaped readout via
 the identity `|M|_γ = √|det(M)|`.
 
@@ -233,17 +234,20 @@ equivalently C^(N_sites) ⊗ C^d, with N=d N_sites. It is distinct from the
 many-body tensor product ⊗_sites C^d of dimension d^(N_sites). A Fock lift
 requires its own definition. For the stated N=2 N_taste L_t L_s^3,
 |det(A)|^(1/(N_taste L_t)) has degree 2 L_s^3. It is not a mass-dimension-one
-geometric mean of the full determinant. The supplied readout in the linked
-heat-kernel note needs an explicit reduced determinant or normalization;
-that bridge is open and is not implied by the 2 by 2 gamma identity.
+geometric mean of the full determinant. The revised heat-kernel note supplies
+an explicit dimensionless statistic for its own finite spectrum; it does not
+identify that spectrum with this N-dimensional carrier or provide a physical
+mass map. Such a bridge remains open and is not implied by the 2 by 2 gamma
+identity.
 
 ## 6. What this note does NOT claim
 
 - Does **not** derive the per-determinant geometric-mean readout
   `v(L_t) ∝ |det(D + J)|^{1/(N_taste · L_t)}` from Cl(3) γ-involution
-  algebra. That admission stands as recorded in
+  algebra. The former physical support attributed to
   `HIERARCHY_HEAT_KERNEL_D4_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-05-10`
-  §4.3 and is **not** retired by this note.
+  is withdrawn there. This gamma identity supplies no replacement physical
+  readout or identification of the two different carriers.
 - Does **not** identify the abstract `Cl(3) ≅ M_2(C)` per-element
   γ-norm with any specific physical Cl(3)-element on the framework's
   Z^3 lattice substrate. That identification depends on the
@@ -336,13 +340,13 @@ markdown links so the citation-graph builder does not parse them as
 upstream dependency edges:
 
 - `HIERARCHY_HEAT_KERNEL_D4_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-05-10.md`
-  — companion bounded theorem whose §4.3 per-determinant
-  geometric-mean readout admission is the motivating question for
-  this narrow theorem. The boundary records that this note does **not**
-  retire that admission.
+  — historical motivation; now a finite supplied-spectrum determinant
+  theorem with an explicit dimensionless statistic and withdrawn thermal
+  derivation. Neither it nor this note closes the physical readout.
 - `HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md`
   — parent note that adopts the per-determinant readout in the
-  bilinear-selector closure (cf. heat-kernel note eq (10)).
+  bilinear-selector discussion; the withdrawn heat-kernel derivation is not
+  authority for that physical identification.
 - `HIERARCHY_MATSUBARA_DECOMPOSITION_NOTE.md`
   — retained authority on `|det(D + m)|` product structure at `L_s
   = 2`. The boundary does not consume its effective status; reader pointer

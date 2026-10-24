@@ -5,11 +5,13 @@ This runner supports
 docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md.
 
 It checks the exact factorised arithmetic and verifies that the proof-walk is
-limited to the named support packet R1-R6 and the registered declared-inventory
-premise packet P1-P5. The parent inventory note is now load-bearing for P1-P5.
+limited to local supplied P1-P5 counts and conditional R6 integral.
+Parent/context file checks are documentary observations, not physical authority.
 """
 
 from __future__ import annotations
+
+AUDIT_INPUT_PATHS = ['docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md', 'docs/GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md', 'docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md', 'docs/ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md', 'docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md', 'docs/SM_HYPERCHARGE_UNIQUENESS_ALGEBRAIC_SOLUTION_ENUMERATION_NARROW_THEOREM_NOTE_2026-05-10.md', 'docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md', 'docs/SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md', 'docs/SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md', 'docs/THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md', 'docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md']
 
 from fractions import Fraction
 from pathlib import Path
@@ -58,9 +60,9 @@ def check_note_structure() -> None:
         "Claim type:** bounded_theorem",
         "source-note proposal only",
         "does not add a new axiom",
-        "retained-bounded finite declared-inventory arithmetic certificate",
-        "Support packet (R1-R6)",
-        "Registered premise packet (P1-P5",
+        "literature-conditioned inventory",
+        "Supplied counts and conditional bridge (R1-R6)",
+        "Local supplied premise packet (P1-P5",
         "Proof-walk",
         "Exact arithmetic check",
         "Boundaries",
@@ -72,7 +74,7 @@ def check_note_structure() -> None:
         "SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10",
         "GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06",
         "audit_companion_gstar_thermal_seven_eighths_bridge_2026_06_06.py",
-        "P1-P5 are declared explicitly in the retained-bounded finite inventory wrapper",
+        "P1-P5 are declared locally here",
         "P2 supplies the two-transverse-polarization state count",
         "P4 supplies the Dirac/Weyl thermal state-count convention",
     ]
@@ -116,9 +118,9 @@ def check_proof_walk_forbidden_imports() -> None:
         )
 
 
-def check_load_bearing_retained_packet() -> None:
-    section("R1-R6 support packet citations are present")
-    retained_packet = [
+def check_context_references() -> None:
+    section("documentary historical-context and conditional R6 references")
+    context_packet = [
         ("P1-P5", "SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md"),
         ("R1", "THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md"),
         ("R1", "THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md"),
@@ -130,20 +132,20 @@ def check_load_bearing_retained_packet() -> None:
         ("R5", "SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md"),
         ("R6", "GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md"),
     ]
-    for tag, fname in retained_packet:
-        check(f"{tag} cites {fname} as markdown link", fname in NOTE_TEXT)
+    for tag, fname in context_packet:
+        check(f"{tag} mentions {fname} (documentary only)", fname in NOTE_TEXT)
         path = ROOT / "docs" / fname
         check(f"{tag} target file exists: {fname}", path.exists())
 
 
 def check_premise_packet() -> None:
-    section("P1-P5 registered premise packet is named")
+    section("local supplied P1-P5 premise packet is named")
     required = [
         "**P1 Declared Standard Model particle inventory.**",
         "**P2 Two transverse polarizations per massless vector.**",
         "**P3 Four real scalar degrees-of-freedom per complex doublet.**",
         "**P4 Dirac four-dof per charged fermion flavour-colour state.**",
-        "**P5 Temperature above the electroweak crossover.**",
+        "**P5 Ideal ultrarelativistic thermal conditions.**",
     ]
     for phrase in required:
         check(f"premise present: {phrase}", phrase in NOTE_TEXT)
@@ -263,7 +265,7 @@ def check_boundary_disclaimers() -> None:
         "derivation of the two-transverse-polarization count",
         "derivation of the four-real-scalar count",
         "derivation of the Dirac four-dof / Weyl two-dof state count",
-        "T > 250 GeV",
+        "ideal ultrarelativistic thermal conditions",
         "any parent theorem/status promotion",
     ]
     for phrase in required:
@@ -311,7 +313,7 @@ def check_runner_self_consistency() -> None:
 def main() -> int:
     check_note_structure()
     check_proof_walk_forbidden_imports()
-    check_load_bearing_retained_packet()
+    check_context_references()
     check_premise_packet()
     check_boson_factorisation()
     check_fermion_factorisation()
@@ -327,7 +329,7 @@ def main() -> int:
     if FAIL == 0:
         print(
             "VERDICT: bounded proof-walk passes; g_* = 106.75 follows from the"
-            " support packet R1-R6 plus the registered P1-P5 inventory"
+            " locally supplied P1-P5 inventory plus conditional R6 integral"
             " packet by exact rational arithmetic."
         )
         return 0

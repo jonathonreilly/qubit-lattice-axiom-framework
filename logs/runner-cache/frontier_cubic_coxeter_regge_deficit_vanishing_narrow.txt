@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cubic_coxeter_regge_deficit_vanishing_narrow.py
-runner_sha256: d52dd290e31a034499a8c0200eef795b10e244c4856aea180febfc62d6da9101
+runner_sha256: 945d2972fb9f6b7f0a39b68e62407c538ce389c7a6aab3700b35defa903e4f0a
+input_fingerprint_sha256: a27a46992f974872818dec792c09a1b6760f6400a4e2bedd89589c2b7ce3e8ed
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.42
+elapsed_sec: 0.38
 status: ok
 ----- stdout -----
 
@@ -59,7 +60,7 @@ Part 6: alternate axis-edge orientation in the Coxeter chain
   [PASS (A)] alt axis-edge deficit theta_{e_axis,alt} = 0 (sympy exact)  (deficit zero on the alternate axis-edge orientation as well)
 
 ----------------------------------------------------------------------------------------
-Part 7: numerical verification of full Regge action on a 3x3x3 block (T3)
+Part 7: three central edge-star representatives in a 3x3x3 block
 ----------------------------------------------------------------------------------------
   [PASS (A)] central body-diagonal in 3x3x3 block: dihedral sum = 2*pi numerically  (sum = 6.2831853071795880, deficit = -1.776e-15, contributing tets = 6)
   [PASS (A)] central face-diagonal in 3x3x3 block: dihedral sum = 2*pi numerically  (sum = 6.2831853071795862, deficit = 0.000e+00, contributing tets = 4)
@@ -67,7 +68,7 @@ Part 7: numerical verification of full Regge action on a 3x3x3 block (T3)
   [PASS (A)] Regge action contribution from the central interior edge triple is numerically zero  (S_R(central) = -3.077e-15)
 
 ----------------------------------------------------------------------------------------
-Part 8: counterexample sanity -- non-flat metric produces nonzero deficit
+Part 8: single Euclidean tetrahedron angle-sensitivity control
 ----------------------------------------------------------------------------------------
   [PASS (A)] control: undeformed T_1 still has body-diagonal dihedral pi/3 numerically  (flat dihedral = 1.0471975511965979, |diff| = 2.220e-16)
   [PASS (A)] deforming v_2 -> (1, 1.2, 0) breaks the pi/3 dihedral (nonzero diff)  (deformed dihedral = 1.2033744221750950, |diff from pi/3| = 1.562e-01)
@@ -96,8 +97,8 @@ Narrow theorem summary
   Audit-lane class:
     (A) -- pure Euclidean / dihedral-angle identity. No external
     numerical, Schur, or strong-field input. Proof is direct
-    dihedral-angle computation in each Coxeter tet plus cubic
-    symmetry on Z^3.
+    dihedral-angle computation, coordinate-permutation isometries
+    and the stated flat edge-star enumeration on Z^3.
 
   This narrow theorem isolates the GENUINE cubic-Coxeter Regge content
   from the strong-field bridge package of the parent

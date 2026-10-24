@@ -25,6 +25,11 @@
       "source_sha256": "64ab743a7888d6eb32ff2d72ddab846633f49a818080f9c2d88330961c96d86f",
       "timeout_sec": 120
     },
+    "scripts/ac_phi_lambda_c3_equivariance_schur_diagnostic_2026_05_10.py": {
+      "reason": "Bounded actual documentary-input refresh; historical campaign claims are not approved.",
+      "source_sha256": "ac3fcb44ef5260095a61e02e2e924d6bed1ecf72e77935c852f6fe1676abfafa",
+      "timeout_sec": 120
+    },
     "scripts/action_geometry_bridge_probe.py": {
       "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures.",
       "source_sha256": "d6821baee726a0dfef382f9abd5d653a63ceb2b50311f76ef1fabb82f3e307ff",
@@ -44,6 +49,11 @@
       "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures.",
       "source_sha256": "f1a8469848ff1142cebaa236fe736df386db05b04f9255dfe1634c2b91f9cf19",
       "timeout_sec": 1800
+    },
+    "scripts/audit_companion_gstar_thermal_seven_eighths_bridge_2026_06_06.py": {
+      "reason": "Bounded supplied-continuum Stefan repair: primary or actual affected documentary input reader; no physical thermal authority inferred.",
+      "source_sha256": "34635873202f73069c55458cde0158961fa0d449f4c8f877e8563ce7cee607a5",
+      "timeout_sec": 120
     },
     "scripts/audit_companion_staggered_dirac_substep4_labeling_no_go_2026_05_17.py": {
       "reason": "Bounded B02 affected-change replay cap; execution is not inherited theorem certification. Source changes invalidate this declaration.",
@@ -69,6 +79,11 @@
       "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures.",
       "source_sha256": "61c4aa453dc582549a7b71747988bf6601e06d646285aa20415dc173fe2de4fa",
       "timeout_sec": 1800
+    },
+    "scripts/axiom_first_stefan_boltzmann_check.py": {
+      "reason": "Bounded supplied-continuum Stefan repair: primary or actual affected documentary input reader; no physical thermal authority inferred.",
+      "source_sha256": "01440bf7aec98bc3f78702000fa42dcf18912c220732b36c0c315a5b089e4a65",
+      "timeout_sec": 120
     },
     "scripts/canonical_plaquette_surface.py": {
       "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
@@ -129,6 +144,11 @@
       "reason": "Bounded B02 affected-change replay cap; execution is not inherited theorem certification. Source changes invalidate this declaration.",
       "source_sha256": "cdfda9920de89dbac005410477f340b1f0a05fb308e248d8e390d712a50b8112",
       "timeout_sec": 300
+    },
+    "scripts/cl3_koide_a1_probe_continuum_limit_2026_05_09_probe15.py": {
+      "reason": "Bounded exact finite algebra or actual affected documentary/scalar scope; no physical route exhaustion.",
+      "source_sha256": "7408132020d587b27716e33faf0c586c098c5bb6bda36b56f8f96db7788bad68",
+      "timeout_sec": 120
     },
     "scripts/cl3_koide_a1_probe_gravity_phase_2026_05_08_probe3.py": {
       "rationale": "Bounded review cap; no change to numerical predicates or scientific status.",
@@ -286,6 +306,21 @@
     },
     "scripts/frontier_arrow_from_record_formation_2026_06_05.py": {
       "source_sha256": "d1306f32dc634dded2c9263152084ffd2533cf3d0cb7bf7c29d635532de5b2a9",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_axiom_first_stefan_boltzmann_downstream_fix.py": {
+      "reason": "Bounded supplied-continuum Stefan repair: primary or actual affected documentary input reader; no physical thermal authority inferred.",
+      "source_sha256": "ad3928a905baa47f4428fc9a3a33598d38832d21bfbb4d78f7c4f6fc339e5abe",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_bae_30_probe_terminal_synthesis.py": {
+      "reason": "Bounded actual documentary-input refresh; historical campaign claims are not approved.",
+      "source_sha256": "f43f15fc75e3cc3f845e956fda2a9c6e89f08280947c25cf8135541334f860ab",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_bae_rename_meta.py": {
+      "reason": "Bounded exact finite algebra or actual affected documentary/scalar scope; no physical route exhaustion.",
+      "source_sha256": "872b2e57e85c3d3902d698abd42e88434947405d7f2fc3a66732256a934a4bc7",
       "timeout_sec": 120
     },
     "scripts/frontier_beta23_scheme_convention_demarcation_2026_06_08.py": {
@@ -667,6 +702,11 @@
       "source_sha256": "4dad4b220fc4e40cb0babe324be9313b91e0aa3b60ebb6347809eba38bd91828",
       "timeout_sec": 120
     },
+    "scripts/frontier_g_star_sm_content_from_supplied_thermal_inventory.py": {
+      "reason": "Bounded supplied thermal inventory or leading-tail prefactor algebra; no physical closure or kinetic campaign.",
+      "source_sha256": "5f7f43d975b2843be5a34f1234b4151f01257c0179b7c7faa879f1d0372b9de2",
+      "timeout_sec": 120
+    },
     "scripts/frontier_graph_first_selector_derivation.py": {
       "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
       "source_sha256": "81437e80194eecc2aedac1cf541a29c464dc0edfc4c2452fda5b86cad313fc98",
@@ -697,9 +737,19 @@
       "source_sha256": "3cda6c27d952d64b7fc84ac65d33f42231b4d18eea060e676062eb710ac5e0b5",
       "timeout_sec": 120
     },
+    "scripts/frontier_hierarchy_fixed_density_physical_selector_no_go_2026_06_18.py": {
+      "reason": "Bounded exact finite algebra or actual affected documentary/scalar scope; no physical route exhaustion.",
+      "source_sha256": "2e60df7118a77b8c1cfa264568f645684eda5f5454fe041adf67879f4348e2b9",
+      "timeout_sec": 120
+    },
     "scripts/frontier_hierarchy_formula_honest_status.py": {
       "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
       "source_sha256": "9907401d908e18ec696b66b6cd4e6e8340a74c292c156ff370c208838b46ab48",
+      "timeout_sec": 120
+    },
+    "scripts/frontier_hierarchy_heat_kernel_d4_compression.py": {
+      "reason": "Actual Stefan parent reader: bounded capture after supplied-continuum source repair; unchanged heat-kernel numerical predicates are not independently approved.",
+      "source_sha256": "c95ff4568d16c9e9ccb8c1f6839f119120154804b6b177e55e8d4cc4a2991d27",
       "timeout_sec": 120
     },
     "scripts/frontier_higgs_mass_full_3loop.py": {
@@ -736,6 +786,11 @@
       "reason": "Bounded execution envelope for PR9839 repaired source. Frozen-star replay and full Koide batch remain unexecuted; cap is not evidence of success.",
       "source_sha256": "2bfe5518f2b8360c16065f22f696a3f7935b453773c46792b4e0da021474782f",
       "timeout_sec": 1800
+    },
+    "scripts/frontier_kolb_turner_freezeout_prefactor_from_supplied_cosmology_boundary.py": {
+      "reason": "Bounded supplied thermal inventory or leading-tail prefactor algebra; no physical closure or kinetic campaign.",
+      "source_sha256": "7be1eeee9912f7eabd61833d137ea07d57480f4abf7e317c5849e8c2ac0198bf",
+      "timeout_sec": 120
     },
     "scripts/frontier_lensing_exponent_is_dipole_crossover.py": {
       "reason": "Explicit source-identity-bound cap for a packet helper in this corrected source unit; metadata does not certify science.",

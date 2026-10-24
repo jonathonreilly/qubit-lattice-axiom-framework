@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_charged_lepton_y_tau_ward_combined_no_go.py
 runner_sha256: 73e455003089dc085ad0cda07e5e49d240b3224fadbb501ef6ca1c2e28976b26
-input_fingerprint_sha256: 934f84214411b8f2a05492473a42e267ad1d53d0744b6519cdfd6646c3772b61
+input_fingerprint_sha256: 9bf344d05c571c7fd30dcf69fd6da500add74aac44023ad90970ff9046d359a0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.56
+elapsed_sec: 0.55
 status: ok
 ----- stdout -----
 ==============================================================================

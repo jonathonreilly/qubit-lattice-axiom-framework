@@ -1,7 +1,7 @@
 # DM Full Closure -- 64:1 Channel-Weight Bridge
 
 **Date:** 2026-06-02
-**Claim type:** bounded_theorem
+**Type:** bounded_theorem
 **Review boundary:** source-note candidate. Later independent review sets the
 ledger state; this note does not set or predict it.
 **Primary runner:** [`scripts/frontier_dm_full_closure_64_to_1_channel_weight_bridge_narrow_verifier.py`](../scripts/frontier_dm_full_closure_64_to_1_channel_weight_bridge_narrow_verifier.py)
@@ -10,7 +10,7 @@ ledger state; this note does not set or predict it.
 ## Purpose
 
 This companion supplies a self-contained algebraic channel-weight bridge for
-the downstream same-surface DM thermal-bounding lane. It proves the SU(3)
+the downstream same-surface DM thermal-bounding lane. Under the supplied squared-potential prescription it proves the SU(3)
 singlet/octet weight identity behind the visible-channel formula
 
 ```text
@@ -20,8 +20,7 @@ s_vis(alpha_s) = (8 s_1(alpha_s) + s_8(alpha_s)) / 9.
 The repair is only item (i) of the parent bridge gap: the 64:1 same-surface
 channel-weight calculation. It does not address observational constants,
 packet-completeness, endpoint selection, or physical-color identification, and
-it does not edit the downstream parent note or change any generated parent
-state.
+it does not set or predict any generated parent state.
 
 ## Load-Bearing Inputs
 
@@ -39,8 +38,11 @@ input to it. The verifier therefore proves the folding identity directly on
 the SU(3) carrier and exact rational coefficients instead of importing parent
 helper modules.
 
-This companion adds no axiom, primitive, Tier-A input, convention, fitted value,
-or observed-data input.
+The weighting prescription is supplied by the parent helper: channel weights
+are proportional to multiplicity times the squared potential eigenvalue.
+The algebra below verifies that prescription; it does not derive physical
+annihilation probabilities or process-dependent short-distance cross sections.
+That identification requires an additional amplitude calculation.
 
 ## 1. Parent Formula
 
@@ -80,8 +82,8 @@ Therefore the raw squared-coupling ratio is
   = 64.
 ```
 
-The multiplicities of `3 x 3bar = 1 + 8` are `1` and `8`, so the folded weights
-are
+The multiplicities of `3 x 3bar = 1 + 8` are `1` and `8`. Under the supplied
+squared-potential weighting prescription, the folded weights are
 
 ```text
 w_1 = (1/9) * (4/3)^2 = 16/81,
@@ -97,11 +99,12 @@ The multiplicity-folded average is then
   = (8 s_1 + s_8)/9.
 ```
 
-This matches the parent helper formula exactly.
+This matches the parent helper formula exactly under its supplied weighting convention.
+It does not establish physical process weights or amplitude matching.
 
 ## 3. Verification
 
-The runner verifies the bridge with two independent routes:
+The runner checks the conditional bridge with complementary computations:
 
 - explicit Gell-Mann generators `T^a = lambda^a/2`, including the trace
   normalization and `sum_a T^a T^a = (4/3) I_3`;
@@ -114,7 +117,7 @@ The runner verifies the bridge with two independent routes:
 
 ## 4. Boundaries
 
-This companion closes only the algebraic channel-weight bridge. The following
+This companion establishes only the conditional algebraic channel-weight bridge. The following
 remain outside this note:
 
 - **Item (ii):** observational constants and live-DM plaquette inputs, including

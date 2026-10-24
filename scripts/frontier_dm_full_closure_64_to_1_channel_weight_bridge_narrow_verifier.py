@@ -5,14 +5,16 @@ narrow companion theorem.
 Pair note: docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md
 
 Verifies Lemmas B.1-B.4 inline on explicit Gell-Mann generators and on
-fractions.Fraction; Parts F-G check origin/main citation presence and
-source-boundary constraints.
+fractions.Fraction; Parts F-G check local documentary citation presence and explicit supplied-premise
+statements; these text/presence checks do not prove the cited premises.
 """
 
 from __future__ import annotations
 
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ['docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md', 'docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md', 'docs/DM_THERMAL_AVERAGE_SOMMERFELD_TEXTBOOK_IMPORT_NOTE_2026-05-17.md']
+
 import math
-import subprocess
 import sys
 from fractions import Fraction
 from pathlib import Path
@@ -34,6 +36,7 @@ def record(name: str, ok: bool, detail: str = "") -> None:
         LOG.append(f"[FAIL] {name}" + (f"  ({detail})" if detail else ""))
 
 
+ROOT = Path(__file__).resolve().parents[1]
 N_C = 3
 TOL = 1.0e-12
 
@@ -124,7 +127,7 @@ def part_d() -> None:
     f1, f8 = Fraction(d1, N_C * N_C), Fraction(d8, N_C * N_C)
     record("D.2 multiplicity fractions f_1=1/9, f_8=8/9",
            f1 == Fraction(1, 9) and f8 == Fraction(8, 9))
-    record("D.3 R_conn = 8/9 (matches cl3_color_automorphism_theorem)",
+    record("D.3 traceless carrier dimension fraction = 8/9 (not a universal amplitude fraction)",
            f8 == Fraction(8, 9))
 
 
@@ -155,23 +158,17 @@ def part_e() -> None:
 
 
 def part_f() -> None:
-    print("\n=== Part F: Source cite-chain on origin/main ===")
-    for path in [
-        "docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md",
-        "docs/DM_THERMAL_AVERAGE_SOMMERFELD_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
-    ]:
-        try:
-            r = subprocess.run(["git", "cat-file", "-e", f"origin/main:{path}"],
-                               capture_output=True, text=True, timeout=10)
-            record(f"F: present on origin/main: {path}", r.returncode == 0)
-        except Exception as exc:
-            record(f"F: {path}", False, f"{exc!r}")
+    print("\n=== Part F: Local documentary citation presence (not premise validation) ===")
+    for path in AUDIT_INPUT_PATHS[1:]:
+        record(f"F: cited local file exists (documentary only): {path}",
+               (ROOT / path).is_file())
 
 
 def part_g() -> None:
     print("\n=== Part G: Source-boundary checks ===")
-    note = Path("docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_"
+    note = ROOT / Path("docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_"
                 "THEOREM_NOTE_2026-06-02.md")
+    tn = ""
     try:
         t = note.read_text(encoding="utf-8")
         tn = " ".join(t.split())
@@ -185,16 +182,17 @@ def part_g() -> None:
         record("G.2 Items (ii) and (iii) explicitly registered as open",
                has_ii and has_iii, f"has_ii={has_ii}, has_iii={has_iii}")
         record("G.3 Does not claim a parent state change",
-               "does not edit the downstream parent note" in t.lower()
-               and "does not set or predict" in t.lower())
+               "does not set or predict" in t.lower())
         record("G.4 Physical-color identification deferral preserved",
                "physical SM color" in t)
     except Exception as exc:
         record("G.2-G.4 Note checks", False, f"{exc!r}")
-    record("G.5 No negative route row touched",
-           True)
-    record("G.6 No new axiom/convention/import",
-           True)
+    # No scored claim about repository mutation or absence of new conventions.
+    record("G.5 Documentary scope: squared-potential weighting is supplied, not physical process weights",
+           "weighting prescription is supplied" in tn
+           and "does not derive physical annihilation probabilities" in tn
+           and "does not establish physical process weights or amplitude matching" in tn)
+
 
 
 def main() -> int:

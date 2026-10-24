@@ -82,9 +82,12 @@ not silently derived from the framework.
 The parent trace target
 `DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md`
 may cite this note only as a bounded support certificate for the live constants
-edge. The remaining hard blocker is the selector / packet-completeness premise,
-plus any independent audit decision on whether this source-side certificate is
-sufficient as a one-hop authority for the constants edge.
+edge. Open physical obligations include the selector / packet-completeness
+premise and the process channel-weight / amplitude matching needed to identify
+the supplied squared-potential prescription with physical weights. The arithmetic
+checked here derives neither. Independent audit also decides whether this
+source-side certificate is sufficient as a one-hop authority for the constants
+edge; that decision alone does not close either physical obligation.
 
 ## Verification
 

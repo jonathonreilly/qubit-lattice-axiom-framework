@@ -1,0 +1,81 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dm_pmns_supplied_line_finite_search_diagnostic_2026_04_20.py
+runner_sha256: 51a4661a028a0d517ba5719133083815be78ae118eb3ebf42f019d2c2475b98c
+input_fingerprint_sha256: 3514156c97d0dca684a64ca1e1d95374762f52fc4be0b19359c5f6648d0a4681
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.30
+status: ok
+----- stdout -----
+========================================================================================
+DM PMNS SUPPLIED-LINE FINITE SEARCH DIAGNOSTIC
+========================================================================================
+
+Question:
+  What numerical candidates and residuals are returned by the supplied
+  finite grid/bracketing procedure and five supplied point evaluations?
+
+========================================================================================
+PART 1: IMPORTED FUNCTIONS RETURN THE SUPPLIED LINE CONSTANTS
+========================================================================================
+  [PASS] Imported parity functions return supplied sqrt(6)/3 coordinates  ((delta_*,q_+*)=(0.816496580928,0.816496580928))
+  [PASS] Imported curvature functions return the same supplied coordinates  ((delta_*,q_+*)=(0.816496580928,0.816496580928))
+  [PASS] The two imported function pairs numerically agree
+  [PASS] The note records the supplied line and finite search
+
+========================================================================================
+PART 2: LOCATED SOLAR-COORDINATE CANDIDATES AND ENDPOINT VALUES
+========================================================================================
+ located finite-difference zeros of s12^2(m, S, S) on [-2000,2000]: [-0.41013790203127204, 4.365005344958661]
+ lowest located-candidate value: m = 4.365005344959, s12^2 = 0.331582718643
+ highest located-candidate value: m = -0.410137902031, s12^2 = 0.761269027610
+ endpoint values: s12^2(-2000) = 0.474172699901, s12^2(2000) = 0.344679257552
+  [PASS] This finite-difference bracketing procedure returns two candidates  (roots=[-0.41013790203127204, 4.365005344958661])
+  [PASS] Located candidate near m=4.365 has value below the two evaluated endpoints  (m_min=4.365005344959, s12^2_min=0.331582718643)
+  [PASS] Evaluated lower located-candidate solar value exceeds supplied target by 0.02  (s12^2_min - 0.307 = 0.024582718643)
+  [PASS] Evaluated lower located-candidate solar value exceeds supplied target  (s12^2_min=0.331582718643)
+
+========================================================================================
+PART 3: LOCATED UNWEIGHTED SQUARED-RESIDUAL CANDIDATE
+========================================================================================
+ located finite-difference zeros of chi^2_line on [-200,200]: [1.278322119590759]
+ located residual candidate: m = 1.278322119591
+ best chi^2 = 0.011428083951
+ candidate triple = (0.379202747700, 0.055637456612, 0.473796954382)
+ endpoint chi^2 values: chi^2(-200) = 0.462538811906, chi^2(200) = 0.100836772758
+  [PASS] This residual bracketing procedure returns one numerical candidate  (roots=[1.278322119590759])
+  [PASS] The located residual candidate is near m ~= 1.27832212  (m_best=1.278322119591)
+  [PASS] Located residual exceeds 0.01 and is below evaluated endpoint residuals  (chi^2_min=0.011428083951)
+
+========================================================================================
+PART 4: FIVE SUPPLIED POINT COMPARISONS
+========================================================================================
+ A Schur-Q       chi^2 = 0.062796977678  max|angle error| = 0.250570648247
+ B det-crit      chi^2 = 0.031125817754  max|angle error| = 0.155438092882
+ C Tr(H^2)-bdy   chi^2 = 0.086958052830  max|angle error| = 0.218478148954
+ D K12 char      chi^2 = 0.257190397214  max|angle error| = 0.504569682326
+ E par-mix F1    chi^2 = 0.046554013283  max|angle error| = 0.205004015444
+  [PASS] Each of the five supplied points has evaluated maximum angle error > 0.05  (rows=[('A Schur-Q', 0.06279697767843932, 0.2505706482474967), ('B det-crit', 0.031125817754230716, 0.1554380928816435), ('C Tr(H^2)-bdy', 0.08695805283008462, 0.21847814895377254), ('D K12 char', 0.257190397213588, 0.5045696823261516), ('E par-mix F1', 0.04655401328321692, 0.20500401544416808)])
+  [PASS] Each of the five supplied points has evaluated squared residual > 0.03  (rows=[('A Schur-Q', 0.06279697767843932, 0.2505706482474967), ('B det-crit', 0.031125817754230716, 0.1554380928816435), ('C Tr(H^2)-bdy', 0.08695805283008462, 0.21847814895377254), ('D K12 char', 0.257190397213588, 0.5045696823261516), ('E par-mix F1', 0.04655401328321692, 0.20500401544416808)])
+
+========================================================================================
+PART 5: DOCUMENTARY EVIDENCE BOUNDARY
+========================================================================================
+  [PASS] The note records the evaluated solar coordinate and supplied target
+  [PASS] The note records finite-search scope and open positive status
+EXECUTION SCOPE: finite grid and numerical finite-difference brackets.
+Per point: five supplied triples and the located candidates are printed.
+Coordinates: three mixing-angle readouts, not a physical mode decomposition.
+Imported constants do not certify the underlying selector premises.
+No site, lattice, interval-bound or exact-root completeness certificate.
+
+========================================================================================
+RESULT
+========================================================================================
+Finite numerical trace only; all reported values belong to evaluated points.
+No global minimum, exhaustive root set, physical selector or necessity claim.
+
+PASS=15 FAIL=0
+
+----- stderr -----
+

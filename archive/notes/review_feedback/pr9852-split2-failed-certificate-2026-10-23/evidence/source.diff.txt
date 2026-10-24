@@ -1,0 +1,677 @@
+diff --git a/docs/DM_SPLIT2_INTERVAL_CERTIFIED_DOMINANCE_CLOSURE_THEOREM_NOTE_2026-04-21.md b/docs/DM_SPLIT2_INTERVAL_CERTIFIED_DOMINANCE_CLOSURE_THEOREM_NOTE_2026-04-21.md
+index 8fbf677e9b..70e72ae454 100644
+--- a/docs/DM_SPLIT2_INTERVAL_CERTIFIED_DOMINANCE_CLOSURE_THEOREM_NOTE_2026-04-21.md
++++ b/docs/DM_SPLIT2_INTERVAL_CERTIFIED_DOMINANCE_CLOSURE_THEOREM_NOTE_2026-04-21.md
+@@ -1,161 +1,99 @@
+-# DM Split-2 Interval-Certified Dominance Closure Theorem
++# Split-2 supplied-fixture numerical box estimates
+ 
+-**Date:** 2026-04-21
+-**Status:** support - structural or confirmatory support note
++**Date:** 2026-04-21; corrected 2026-10-23
++**Type:** open_gate
++**Status:** finite numerical diagnostic; interval and physical closure unproved
+ **Primary runner:** `scripts/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.py`
+ 
+-## Claim
++## Supplied objects and scope
+ 
+-The residual split-2 carrier-side dominance/completeness blocker on the
+-dark-matter flagship lane is closed on the current package surface.
++The two boxes are supplied data in coordinates `(m, delta, slack)`:
+ 
+-More precisely: after the prior carrier-side reduction localized all remaining split-2 pressure to the two explicit upper-face neighborhoods
++- `CAP_BOX`: `[-.145,-.14] × [1.1835,1.1935] × [.0145,.0245]`.
++- `ENDPOINT_BOX`: `[-.145,-.14] × [1.1839,1.1890] × [0,.005]`.
+ 
+-- `CAP_BOX = {m in [-0.145,-0.14], delta in [1.1835,1.1935], slack in [0.0145,0.0245]}`
+-- `ENDPOINT_BOX = {m in [-0.145,-0.14], delta in [1.1839,1.1890], slack in [0,0.005]}`
++The matrix is the supplied affine Hermitian family
++`H=H_base+m T_M+delta T_DELTA+q_plus T_Q`, with
++`q_plus=sqrt(8/3)-delta+slack`. The imported matrix definitions, box values,
++normalization constants, finite ODE/gradient/trapezoid kernel and numerical
++stationary-point search are input conventions. They do not derive a physical
++source, normalization, yield or selector. Historical neighborhood and dense-grid
++notes are read only to check their literal provenance statements; their text
++does not prove that these boxes exhaust possible carriers.
+ 
+-this note certifies on each whole box that every spectral-row transport packet satisfies
++## Corrected conditional algebra
+ 
+-```text
+-eta / eta_obs < 1.
+-```
+-
+-So the residual split-2 carrier branch does not contain a transport-closing point.
+-
+-## Prior reduction already on branch
+-
+-Two earlier artifacts had already done the reduction work:
+-
+-- `docs/DM_NEUTRINO_SOURCE_SURFACE_CARRIER_SIDE_CONCLUSION_NOTE_2026-04-18.md`
+-  compressed the surviving carrier-side pressure to the two explicit split-2
+-  upper-face neighborhoods `CAP_BOX` and `ENDPOINT_BOX`.
+-- `docs/DM_SPLIT2_DENSE_GRID_LIPSCHITZ_DOMINANCE_SUPPORT_NOTE_2026-04-21.md`
+-  showed on audited dense grids that both boxes stayed well below transport
+-  closure, but left open whether this was theorem-grade interval control or
+-  only sampled support.
+-
+-This note closes that remaining proof gap.
+-
+-## Exact affine setup
+-
+-On the split-2 chart the active affine Hermitian family is linear in three
+-real parameters `(m, delta, slack)`. Writing `q_+ = q_floor(delta) + slack`,
+-the branch runner packages the exact affine generators as
+-
+-```text
+-T_m      with ||T_m||_2     = 1,
+-T_delta  with ||T_delta||_2 = sqrt(3),
+-T_q      with ||T_q||_2     = 2.
+-```
+-
+-So for every box in `(m, delta, slack)` space, Weyl gives an immediate
+-operator-norm perturbation radius
+-
+-```text
+-r_box = h_m ||T_m||_2 + h_delta ||T_delta||_2 + h_slack ||T_q||_2
+-```
+-
+-from the box center half-widths `(h_m, h_delta, h_slack)`.
+-
+-For the two residual boxes this yields:
+-
+-- `CAP_BOX`: center eigenvalues
+-  `(-1.588369475404, -0.326042391504, 1.771911866907)` and Weyl radius
+-  `0.021160254038`
+-- `ENDPOINT_BOX`: center eigenvalues
+-  `(-1.586428810925, -0.324516039457, 1.768444850383)` and Weyl radius
+-  `0.011916729559`
+-
+-The resulting eigenvalue intervals stay pairwise disjoint on both boxes, so
+-the spectral projectors remain simple throughout each whole neighborhood.
+-
+-## Exact projector-row intervals
+-
+-For each eigenvalue `lambda_j` and each row `i`, the spectral weight is
+-computed exactly by the cofactor formula
+-
+-```text
+-P_ij = det(H_(i) - lambda_j I_2) / prod_{k != j} (lambda_j - lambda_k).
+-```
+-
+-Using interval arithmetic on the row cofactors and the Weyl-separated
+-eigenvalue intervals gives theorem-grade projector-entry intervals for every
+-row on both boxes. The strongest row is already the physical row-3 packet:
+-
+-- on `CAP_BOX`, row 3 stays inside
+-  `[(0.6891, 0.8204), (0.1716, 0.2452), (0.0276, 0.0562)]`
+-- on `ENDPOINT_BOX`, row 3 tightens further to
+-  `[(0.7199, 0.7945), (0.1796, 0.2205), (0.0364, 0.0522)]`
+-
+-All entry intervals remain inside `[0,1]`, and every row is controlled
+-simultaneously on each whole box.
+-
+-## Transport upper bounds
+-
+-The one-source flavored transport functional is already exact on the branch:
++At fixed slack the delta generator is
+ 
+ ```text
+-F(P) = sum_alpha Psi(P_alpha).
++T_DELTA - T_Q = [[0,-2,0],[-2,1,-1],[0,-1,-1]].
+ ```
+ 
+-The kernel `Psi(q)` is one-variable and has its small-leakage maximum at
++Its characteristic polynomial is `(x+2)(x²-2x-2)` and its eigenvalues are
++`-2, 1-sqrt(3), 1+sqrt(3)`. Thus its operator norm is `1+sqrt(3)`.
++The other norms are `||T_M||=1` and `||T_Q||=2`. For exact real half-widths,
++the triangle inequality gives the valid perturbation bound
+ 
+ ```text
+-q_star = 0.035493877259706,
+-Psi(q_star) = 0.011015495595788.
++||H-H_center|| <= h_m + (1+sqrt(3)) h_delta + 2 h_slack.
+ ```
+ 
+-Pushing the projector-entry intervals through this exact kernel yields
+-boxwise rigorous rowwise upper bounds:
+-
+-- `CAP_BOX`: `eta / eta_obs <= (0.76920972, 0.88068906, 0.90419742)`
+-- `ENDPOINT_BOX`: `eta / eta_obs <= (0.75987683, 0.86362766, 0.89898279)`
+-
+-So the theorem-grade margins to transport closure are:
+-
+-- `CAP_BOX`: at least `0.095802577203`
+-- `ENDPOINT_BOX`: at least `0.101017210975`
+-
+-Both residual boxes therefore stay strictly below `eta = 1` on their entire
+-domains.
+-
+-## Theorem
+-
+-**Theorem.** On the current split-2 residual carrier branch, the two explicit
+-upper-face neighborhoods `CAP_BOX` and `ENDPOINT_BOX` contain no
+-transport-closing point. Equivalently, interval-certified exact-carrier
+-dominance/completeness holds on the residual split-2 selector branch.
+-
+-**Proof.** Weyl interval control gives disjoint eigenvalue boxes throughout
+-both neighborhoods; exact cofactor formulas then give rigorous projector-row
+-intervals; the exact one-variable transport kernel gives rowwise transport
+-upper bounds strictly below `eta = 1` on both whole boxes. Verified in
+-`scripts/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.py`
+-with `17 PASS, 0 FAIL`.
+-
+-## Consequence for the DM flagship lane
+-
+-The split-2 carrier-side dominance/completeness blocker is no longer open on
+-the current package surface.
+-
+-At the point of this theorem alone, what remained open on the dark-matter
+-flagship lane was strictly selector-side on the current package surface:
+-
+-- the finer right-sensitive microscopic selector law for the physical source
+-  branch / point
+-
+-The stricter axiom-native A-BCC target remained a boundary/no-go statement,
+-but not a live package-surface blocker. The later same-day shifted same-law
+-packet theorem and ordered-chain current stack close the remaining
+-package-surface selector/current burden.
+-
+-This theorem does not close the PMNS gate by itself. It removes the last
+-carrier-side completeness obstruction on the reviewed split-2 residual branch.
+-
+-## Audit dependency repair links
+-
+-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+-
+-- [dm_neutrino_source_surface_active_affine_point_selection_boundary_note_2026-04-16](DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_AFFINE_POINT_SELECTION_BOUNDARY_NOTE_2026-04-16.md)
+-- [dm_neutrino_source_surface_active_half_plane_theorem_note_2026-04-16](DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_HALF_PLANE_THEOREM_NOTE_2026-04-16.md)
+-- [dm_neutrino_source_surface_carrier_side_conclusion_note_2026-04-18](DM_NEUTRINO_SOURCE_SURFACE_CARRIER_SIDE_CONCLUSION_NOTE_2026-04-18.md)
++The corresponding radii are approximately `.0261602540378444` and
++`.0144667295593008`. Weyl's inequality can use this corrected bound for
++Hermitian eigenvalues. The old radii `.0211602540378444` and
++`.0119167295593007` used the wrong fixed-slack generator. Independently checked
++corner perturbation norms `.0225` and `.0126` exceed those old norm bounds.
++The tested corner eigenvalue shifts did **not** disprove the old eigenvalue
++intervals: the counterexample invalidates their stated norm justification.
++
++For a Hermitian matrix with simple spectrum, the diagonal projector weight
++is the corresponding principal cofactor of `H-lambda_j I` divided by
++`product_{k != j}(lambda_j-lambda_k)`. The three numerator formulas in the
++runner satisfy this conditional algebraic identity. This identity is distinct
++from a verified implementation of interval arithmetic.
++
++## What the implementation computes
++
++The runner constructs floating center eigenvalues and corrected radius
++estimates, applies ordinary floating interval-style cofactor operations,
++clamps the resulting row estimates to `[0,1]`, and evaluates the supplied
++kernel at endpoints plus one stationary candidate obtained by bisection on
++`[0,.05]`. It reports the resulting numerical estimates and the original
++regression comparisons. Except for the justified norm correction, numerical
++predicates and thresholds are preserved. A failed legacy comparison remains
++FAIL and the command exits nonzero; no desired margin is enforced by changing
++its threshold. PASS counts describe these calculations and documentary checks
++only, not a certificate for every point in either box.
++
++The historical `certify_box`, `psi_sup_on_interval`, and `*_ub` identifiers
++are retained internal API names for uncertified estimates. They confer no
++certification. Their `1e-15` additions have no proved error-enclosure meaning.
++
++## Why whole-box certification remains open
++
++Nearest-rounded arithmetic does not give outward enclosures: adding singleton
++intervals `[1,1]` and `[2^-54,2^-54]` returns `[1,1]`, excluding the exact sum.
++Irrational constants and center eigensolutions likewise lack certified error
++bounds here. Clamping estimates to `[0,1]` cannot prove their enclosure property.
++
++One bracketed stationary point does not prove a global kernel supremum or
++uniqueness. A generic positive mixture `q(1000 exp(-1000q)+exp(-5q))` has
++alternating derivative signs at `.0001,.005,.02,.3`; this refutes a generic
++unimodality inference, not the actual supplied kernel's numerical maximum.
++That kernel itself lacks a certified ODE/discretization error enclosure.
++
++A positive box-wide claim would require outward-rounded operations, certified
++center/constant enclosures, and a proof or exhaustive enclosure of all relevant
++kernel extrema. Even that would not establish residual-carrier localization,
++completeness outside the two boxes, or a physical selector. These are separate
++open obligations.
++
++## Withdrawal and recovery
++
++The original strong note, runner and cache are recoverable at
++`26878429adf81e855c90d1f2e3466b85ede2cc62` and the original PR history.
++Their claimed rigorous row bounds, theorem-grade margins, whole-box dominance,
++residual completeness and subsequent physical selector/current closure are
++withdrawn as authority. The finite calculations, failed norm justification,
++arithmetic counterexample and distinction from eigenvalue-interval falsification
++are preserved. No audit status is assigned by this correction.
+diff --git a/docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md b/docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md
+index 73dcccabd9..f0f9f7aa87 100644
+--- a/docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md
++++ b/docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md
+@@ -75,11 +75,12 @@ physical Brannen-phase bridge by itself.
+   package and headline theorem surfaces: `docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md`,
+   `docs/QUARK_JTS_AFFINE_PHYSICAL_CARRIER_THEOREM_NOTE_2026-04-19.md`, and
+   `docs/SCALAR_SELECTOR_PROOF_CHAINS_2026-04-19.md`.
+-- **Specified split-2 box bounds.** The interval calculation concerns the
+-  supplied `CAP_BOX` and `ENDPOINT_BOX` neighborhoods and their transport
+-  convention, with `eta / eta_obs < 1` there. It does not establish physical
+-  completeness beyond those domains. See
+-  `docs/DM_SPLIT2_INTERVAL_CERTIFIED_DOMINANCE_CLOSURE_THEOREM_NOTE_2026-04-21.md`.
++- **Uncertified split-2 numerical estimates.** The supplied `CAP_BOX` and
++  `ENDPOINT_BOX` calculation uses a corrected fixed-slack generator and ordinary
++  floating interval-style arithmetic with a supplied numerical kernel.
++  It does not certify `eta / eta_obs < 1` throughout either box. Rigorous
++  enclosures, kernel extrema/error control and residual localization remain open.
++  See `docs/DM_SPLIT2_INTERVAL_CERTIFIED_DOMINANCE_CLOSURE_THEOREM_NOTE_2026-04-21.md`.
+ - **Finite recovered-packet selector diagnostic.** With the supplied scalar
+   observable-relative-action functional and common windows `A_mu(H)=H+mu I`,
+   lift `0` is preferred on the tested recovered bank and sampled shifts.
+@@ -363,7 +364,7 @@ and counterevidence remain recoverable. Unrelated lane entries are unchanged.
+ | DM supplied-line finite search | `frontier_dm_pmns_supplied_line_finite_search_diagnostic_2026_04_20.py` | 15 finite checks | located numerical candidates and five supplied point residuals; no exhaustive line exclusion or physical selector conclusion |
+ | DM A-BCC (fixed-`N_e` exact-source manifold) | `frontier_dm_pmns_ne_seed_surface_exact_source_manifold_theorem_2026_04_20.py` | historical 12 | Historical exact-manifold claim; exact-root and rank hypotheses remain unverified here, and no physical point-selection law is certified. |
+ | DM A-BCC (finite center-search diagnostic) | `frontier_dm_pmns_z3_doublet_block_center_positive_sheet_no_go_2026_04_20.py` | historical 14 | Historical 14-check count only. Current finite seeded residual/range/rank observations do not certify exact roots, a three-real locus, global exhaustion or physical selector obstruction. |
+-| DM split-2 interval-certified dominance diagnostic | `frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.py` | historical 17 | Conditional interval bound on CAP_BOX and ENDPOINT_BOX only. |
++| DM split-2 uncertified numerical box estimates | `frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.py` | historical 17 | Historical claimed certificate withdrawn; corrected finite estimates do not prove whole-box dominance or completeness. |
+ | DM selector relative-action recovered projection | `frontier_dm_selector_relative_action_recovered_projection_support_2026_04_21.py` | historical 12 | Historical supplied-model diagnostic; no physical basin/path/current closure. |
+ | Quark a_u (JTS-affine-physical-carrier + ISSR1) | `frontier_quark_issr1_bicac_forcing.py` | 13 | headline closure |
+ | Quark a_u (JTS physical-point second route) | `frontier_quark_jts_physical_point_closure_theorem.py` | 12 | independent witness |
+diff --git a/docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md b/docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md
+index b50a3c551f..970903dc0d 100644
+--- a/docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md
++++ b/docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md
+@@ -61,6 +61,10 @@ The historical exact two-/three-real source-dimension and center-law no-go
+ claims below are also withdrawn as current authority: the finite seeded
+ searches and sampled ranks do not establish exact roots, neighborhood dimension,
+ global exhaustion or a physical selector obstruction.
++The historical split-2 interval certificate and residual-completeness claims
++are also withdrawn. Correcting the fixed-slack generator does not certify the
++floating arithmetic or numerical kernel extrema; the two supplied-box results
++are finite estimates, with rigorous enclosures and localization still open.
+ The live DM register is
+ `docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md`; its revised DM
+ entries supersede the historical closure wording below. Historical counts
+diff --git a/logs/runner-cache/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.txt b/logs/runner-cache/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.txt
+index fd9cc688d9..1f9ef09067 100644
+--- a/logs/runner-cache/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.txt
++++ b/logs/runner-cache/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.txt
+@@ -1,80 +1,75 @@
+ ===== runner cache v1 =====
+ runner: scripts/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.py
+-runner_sha256: d3b97172bb66372369e12701b22d879f56549ece2a878e7f208c4a5409037def
++runner_sha256: 585aa3813d9195188461cd5fef7910e8dfb91bb61c40d052a027e40c606c92a3
++input_fingerprint_sha256: 288ad6e49135c3745a78df2b29e4381233b5e8af0e37fc3385799c1d060a37b1
+ timeout_sec: 120
+-exit_code: 0
+-elapsed_sec: 1.11
+-status: ok
++exit_code: 1
++elapsed_sec: 1.30
++status: nonzero_exit
+ ----- stdout -----
+ ========================================================================================
+-DM SPLIT-2 INTERVAL-CERTIFIED DOMINANCE CLOSURE
++DM SPLIT-2 SUPPLIED-FIXTURE NUMERICAL ESTIMATES
+ ========================================================================================
+ 
+ ========================================================================================
+-PART 1: WEYL EIGENVALUE BOXES ON THE TWO RESIDUAL SPLIT-2 NEIGHBORHOODS
++PART 1: FLOATING WEYL-RADIUS ESTIMATES ON TWO SUPPLIED BOXES
+ ========================================================================================
+-  [PASS] The split-2 affine generators have exact operator norms 1, sqrt(3), 2  ((L_m,L_delta,L_slack)=(1.000000000000,1.732050807569,2.000000000000))
+-  [PASS] CAP_BOX Weyl control gives three disjoint eigenvalue intervals for H(m,delta,s)  (intervals=[(-1.6095297294418491, -1.5672092213661604), (-0.3472026455414059, -0.30488213746571713), (1.750751612869722, 1.7930721209454108)])
+-  [PASS] ENDPOINT_BOX Weyl control gives three disjoint eigenvalue intervals for H(m,delta,s)  (intervals=[(-1.5983455404846443, -1.5745120813660427), (-0.33643276901675373, -0.31259930989815227), (1.756528120823496, 1.7803615799420975)])
+-  [PASS] The CAP_BOX Weyl radius is small compared with the spectral gaps at the box center  (radius=0.021160254038, center_evals=[-1.58836948 -0.32604239  1.77191187])
+-  [PASS] The ENDPOINT_BOX Weyl radius is even smaller than the CAP_BOX radius  ((r_cap,r_endpoint)=(0.021160254038,0.011916729559))
++  [PASS] Computed supplied fixed-slack generator norms match 1, 1+sqrt(3), 2  ((L_m,L_delta,L_slack)=(1.000000000000,2.732050807569,2.000000000000))
++  [PASS] CAP_BOX floating eigenvalue interval estimates are disjoint (not certified enclosures)  (intervals=[(-1.6145297294418492, -1.5622092213661602), (-0.3522026455414059, -0.2998821374657171), (1.7457516128697224, 1.798072120945411)])
++  [PASS] ENDPOINT_BOX floating eigenvalue interval estimates are disjoint (not certified enclosures)  (intervals=[(-1.6008955404846443, -1.5719620813660427), (-0.3389827690167538, -0.3100493098981522), (1.753978120823496, 1.7829115799420976)])
++  [PASS] The CAP_BOX Weyl radius is small compared with the spectral gaps at the box center  (radius=0.026160254038, center_evals=[-1.588369 -0.326042  1.771912])
++  [PASS] The ENDPOINT_BOX Weyl radius is even smaller than the CAP_BOX radius  ((r_cap,r_endpoint)=(0.026160254038,0.014466729559))
+ 
+-  CAP_BOX center eigenvalues = [-1.58836948 -0.32604239  1.77191187]
+-  CAP_BOX Weyl radius        = 0.021160254038
+-  CAP_BOX eigenvalue boxes   = [(-1.6095297294418491, -1.5672092213661604), (-0.3472026455414059, -0.30488213746571713), (1.750751612869722, 1.7930721209454108)]
++  CAP_BOX center eigenvalues = [-1.588369 -0.326042  1.771912]
++  CAP_BOX Weyl radius        = 0.026160254038
++  CAP_BOX eigenvalue boxes   = [(-1.6145297294418492, -1.5622092213661602), (-0.3522026455414059, -0.2998821374657171), (1.7457516128697224, 1.798072120945411)]
+ 
+-  ENDPOINT_BOX center eigenvalues = [-1.58642881 -0.32451604  1.76844485]
+-  ENDPOINT_BOX Weyl radius        = 0.011916729559
+-  ENDPOINT_BOX eigenvalue boxes   = [(-1.5983455404846443, -1.5745120813660427), (-0.33643276901675373, -0.31259930989815227), (1.756528120823496, 1.7803615799420975)]
++  ENDPOINT_BOX center eigenvalues = [-1.586429 -0.324516  1.768445]
++  ENDPOINT_BOX Weyl radius        = 0.014466729559
++  ENDPOINT_BOX eigenvalue boxes   = [(-1.6008955404846443, -1.5719620813660427), (-0.3389827690167538, -0.3100493098981522), (1.753978120823496, 1.7829115799420976)]
+ 
+ ========================================================================================
+-PART 2: EXACT PROJECTOR-ROW INTERVALS FROM COFACTOR FORMULAS
++PART 2: UNCERTIFIED FLOATING PROJECTOR-ROW ESTIMATES
+ ========================================================================================
+-  [PASS] Every CAP_BOX row entry interval stays inside [0,1]  (rows=[[(0.1419130581458463, 0.2023889019050902), (0.5911889103047634, 0.6911044691760553), (0.17012920020139125, 0.21168184260716064)], [(0.06327551905471068, 0.09285059976008961), (0.1374919115375737, 0.17334284807355418), (0.7274066081835655, 0.8119598195873265)], [(0.689146596775759, 0.8203734743829535), (0.17157160952437175, 0.24517107344555564), (0.027572580335862552, 0.05616541797889321)]])
+-  [PASS] Every ENDPOINT_BOX row entry interval stays inside [0,1]  (rows=[[(0.1498260689565148, 0.18375089745270767), (0.6186355531823415, 0.6755170105051325), (0.17577827264777762, 0.199175194834462)], [(0.06930434921423251, 0.08593523348284852), (0.14404255929266938, 0.1648013370230969), (0.7447649134834847, 0.793212381281246)], [(0.7199177517466736, 0.7944520289810629), (0.1796237092606197, 0.2205268415410405), (0.036435469783642455, 0.05221508969860557)]])
+-  [PASS] The CAP_BOX row-3 packet interval already stays close to the sampled winning row  (row3=[(0.689146596775759, 0.8203734743829535), (0.17157160952437175, 0.24517107344555564), (0.027572580335862552, 0.05616541797889321)])
+-  [PASS] The ENDPOINT_BOX row-3 packet interval is even tighter than the CAP_BOX row-3 packet interval  (row3=[(0.7199177517466736, 0.7944520289810629), (0.1796237092606197, 0.2205268415410405), (0.036435469783642455, 0.05221508969860557)])
++  [PASS] Every CAP_BOX clamped row estimate lies inside [0,1] (not an enclosure proof)  (rows=[[(0.1369331989035871, 0.2087058102682823), (0.5827264470298831, 0.7014440354471759), (0.16645933585618466, 0.21601315821548717)], [(0.06061424513756046, 0.09627508785022924), (0.134058363919399, 0.17785348150282984), (0.7186178742714016, 0.8220380965977384)], [(0.6772553861940839, 0.8349972803780507), (0.16637424357465153, 0.2517251007153042), (0.025699314021926545, 0.05849673094569381)]])
++  [PASS] Every ENDPOINT_BOX clamped row estimate lies inside [0,1] (not an enclosure proof)  (rows=[[(0.14717230463912903, 0.18678325590544573), (0.6140815636291771, 0.6806110996168834), (0.17384474149918905, 0.20129711443273676)], [(0.06786838096575737, 0.08758914628098799), (0.14218598570628177, 0.16696943724054664), (0.7401381306735973, 0.7982107793734219)], [(0.7135492749525306, 0.8016030644989157), (0.17687861025122031, 0.22365104107562075), (0.03541891197614877, 0.05336207215517335)]])
++  [FAIL] Legacy CAP_BOX row-3 numerical threshold comparison  (row3=[(0.6772553861940839, 0.8349972803780507), (0.16637424357465153, 0.2517251007153042), (0.025699314021926545, 0.05849673094569381)])
++  [FAIL] Legacy ENDPOINT_BOX row-3 numerical threshold comparison  (row3=[(0.7135492749525306, 0.8016030644989157), (0.17687861025122031, 0.22365104107562075), (0.03541891197614877, 0.05336207215517335)])
+ 
+-  CAP_BOX row intervals      = [[(0.1419130581458463, 0.2023889019050902), (0.5911889103047634, 0.6911044691760553), (0.17012920020139125, 0.21168184260716064)], [(0.06327551905471068, 0.09285059976008961), (0.1374919115375737, 0.17334284807355418), (0.7274066081835655, 0.8119598195873265)], [(0.689146596775759, 0.8203734743829535), (0.17157160952437175, 0.24517107344555564), (0.027572580335862552, 0.05616541797889321)]]
+-  ENDPOINT_BOX row intervals = [[(0.1498260689565148, 0.18375089745270767), (0.6186355531823415, 0.6755170105051325), (0.17577827264777762, 0.199175194834462)], [(0.06930434921423251, 0.08593523348284852), (0.14404255929266938, 0.1648013370230969), (0.7447649134834847, 0.793212381281246)], [(0.7199177517466736, 0.7944520289810629), (0.1796237092606197, 0.2205268415410405), (0.036435469783642455, 0.05221508969860557)]]
++  CAP_BOX row intervals      = [[(0.1369331989035871, 0.2087058102682823), (0.5827264470298831, 0.7014440354471759), (0.16645933585618466, 0.21601315821548717)], [(0.06061424513756046, 0.09627508785022924), (0.134058363919399, 0.17785348150282984), (0.7186178742714016, 0.8220380965977384)], [(0.6772553861940839, 0.8349972803780507), (0.16637424357465153, 0.2517251007153042), (0.025699314021926545, 0.05849673094569381)]]
++  ENDPOINT_BOX row intervals = [[(0.14717230463912903, 0.18678325590544573), (0.6140815636291771, 0.6806110996168834), (0.17384474149918905, 0.20129711443273676)], [(0.06786838096575737, 0.08758914628098799), (0.14218598570628177, 0.16696943724054664), (0.7401381306735973, 0.7982107793734219)], [(0.7135492749525306, 0.8016030644989157), (0.17687861025122031, 0.22365104107562075), (0.03541891197614877, 0.05336207215517335)]]
+ 
+ ========================================================================================
+-PART 3: BOXWISE TRANSPORT UPPER BOUNDS
++PART 3: SUPPLIED NUMERICAL KERNEL CANDIDATE ESTIMATES
+ ========================================================================================
+-  [PASS] The one-variable transport kernel still has its small-leakage peak inside [0,0.05]  ((q_star,psi_star)=(0.035493877259706,0.011015495595788))
+-  [PASS] All three CAP_BOX rowwise eta upper bounds stay strictly below transport closure  (eta upper bounds=[0.76920972 0.88068906 0.90419742])
+-  [PASS] All three ENDPOINT_BOX rowwise eta upper bounds stay strictly below transport closure  (eta upper bounds=[0.75987683 0.86362766 0.89898279])
+-  [PASS] The CAP_BOX theorem-grade interval margin is still comfortably above 0.09  (margin=0.095802577203)
+-  [PASS] The ENDPOINT_BOX theorem-grade interval margin is still comfortably above 0.10  (margin=0.101017210975)
++  [PASS] One supplied numerical-kernel stationary candidate is bracketed in [0,0.05]  ((q_star,psi_star)=(0.035493877259706,0.011015495595788))
++  [PASS] All three CAP_BOX numerical row estimates compare below 1 (not box-wide dominance)  (eta candidate estimates=[0.774997 0.888906 0.90731 ])
++  [PASS] All three ENDPOINT_BOX numerical row estimates compare below 1 (not box-wide dominance)  (eta candidate estimates=[0.762657 0.867835 0.900579])
++  [PASS] The CAP_BOX legacy numerical margin threshold comparison exceeds 0.09  (margin=0.092689940147)
++  [FAIL] The ENDPOINT_BOX legacy numerical margin threshold comparison exceeds 0.10  (margin=0.099420823381)
+ 
+-  q_star <= 0.035493877259706
+-  CAP_BOX rowwise eta upper bounds      = [0.76920972 0.88068906 0.90419742]
+-  ENDPOINT_BOX rowwise eta upper bounds = [0.75987683 0.86362766 0.89898279]
++  stationary q candidate = 0.035493877259706
++  CAP_BOX rowwise eta candidate estimates      = [0.774997 0.888906 0.90731 ]
++  ENDPOINT_BOX rowwise eta candidate estimates = [0.762657 0.867835 0.900579]
+ 
+ ========================================================================================
+-PART 4: CLOSURE ASSEMBLY
++PART 4: HISTORICAL DOCUMENTARY INPUTS AND NUMERICAL COMPARISON
+ ========================================================================================
+-  [PASS] The carried branch-local reduction really had already localized the residual pressure to CAP_BOX and ENDPOINT_BOX
+-  [PASS] The superseded dense-grid note records the same two boxes now being certified theorem-grade
+-  [PASS] So the residual split-2 carrier item now closes on the current review surface  ((cap_max,endpoint_max)=(0.904197422797,0.898982789025))
++  [PASS] Historical carrier note contains the named neighborhood phrase and decimal anchors (not a localization proof)
++  [PASS] Historical support note names the same two supplied boxes (not interval certification)
++  [PASS] Both computed numerical estimate maxima compare below 1 (no closure inference)  ((cap_max,endpoint_max)=(0.907310059853,0.900579176619))
+ 
+-  Closure read:
+-    - prior branch science had already reduced the residual split-2 pressure
+-      to CAP_BOX and ENDPOINT_BOX
+-    - this runner certifies eta/eta_obs < 1 on both whole boxes
+-    - therefore interval-certified exact-carrier dominance/completeness
+-      closes on the residual split-2 selector branch
++  These are finite supplied-fixture numerical estimates, not certified whole-box bounds.
++  Historical text matches do not establish localization or completeness.
++  Interval rounding, center/kernel error control and all-critical-point proofs remain open.
+ 
+ ========================================================================================
+ RESULT
+ ========================================================================================
+-  The residual split-2 carrier-side item is closed on the current review surface.
+-  What remains open on the DM flagship gate is not carrier-side dominance.
+-  It is the physical branch-choice / selector side:
+-    - A-BCC as an axiom-native branch-choice law
+-    - the finer right-sensitive microscopic selector law
+-
+-SUMMARY: PASS=17 FAIL=0
++  No certified whole-box, residual-completeness or physical-selector conclusion.
++  Legacy regression predicates are preserved; any FAIL is an actual changed-result finding.
++  Kernel and normalization are supplied; no physical yield is derived.
++SUMMARY: PASS=14 FAIL=3
+ 
+ ----- stderr -----
+ 
+diff --git a/scripts/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.py b/scripts/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.py
+index 67d76221f8..aa93c9bc2f 100644
+--- a/scripts/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.py
++++ b/scripts/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.py
+@@ -1,30 +1,21 @@
+ #!/usr/bin/env python3
+-"""
+-DM split-2 interval-certified dominance closure
+-===============================================
+-
+-This runner upgrades the residual split-2 carrier item from support to
+-theorem-grade closure on the current review surface.
+-
+-Input already accepted on the branch:
+-  1. the carrier-side pressure is exhausted to the two explicit split-2
+-     upper-face boxes CAP_BOX and ENDPOINT_BOX
+-  2. one-source flavored transport is the exact scalar functional
+-       F(P) = sum_alpha Psi(P_alpha)
+-     on projector rows
+-
+-New step here:
+-  - certify, on each whole box, interval upper bounds for all three projector
+-    rows using exact cofactor formulas plus Weyl eigenvalue control
+-  - push those row intervals through the exact one-variable transport kernel
+-    to get rigorous boxwise upper bounds on eta/eta_obs
+-
+-Because the whole boxes stay below eta = 1, the residual split-2 carrier-side
+-dominance/completeness blocker closes on the review branch.
++"""Finite numerical box estimates for supplied split-2 fixtures.
++
++Corrected fixed-slack delta generator: T_DELTA - T_Q, norm 1+sqrt(3).
++The cofactor identity assumes a Hermitian matrix with simple spectrum.
++Ordinary float interval operations, one stationary-point search, the supplied
++ODE/gradient/trapezoid kernel and 1e-15 padding do NOT certify entire boxes.
++Legacy function/key names containing certify/sup/upper/ub are historical API
++names for estimates only. Original numerical regression thresholds remain;
++failures after correcting the radius are reported, not relaxed. No residual
++carrier localization, completeness, physical normalization or selector closure.
+ """
+ 
+ from __future__ import annotations
+ 
++AUDIT_TIMEOUT_SEC = 120
++AUDIT_INPUT_PATHS = ['docs/DM_NEUTRINO_SOURCE_SURFACE_CARRIER_SIDE_CONCLUSION_NOTE_2026-04-18.md', 'docs/DM_SPLIT2_DENSE_GRID_LIPSCHITZ_DOMINANCE_SUPPORT_NOTE_2026-04-21.md', 'docs/DM_SPLIT2_INTERVAL_CERTIFIED_DOMINANCE_CLOSURE_THEOREM_NOTE_2026-04-21.md', 'scripts/dm_leptogenesis_exact_common.py', 'scripts/dm_selector_branch_support.py', 'scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py', 'scripts/frontier_dm_leptogenesis_ne_charged_source_response_reduction.py', 'scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py', 'scripts/frontier_dm_leptogenesis_pmns_projector_interface.py', 'scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py', 'scripts/frontier_dm_neutrino_exact_h_source_surface_preimage_bundle_theorem.py', 'scripts/frontier_dm_neutrino_hermitian_bridge_carrier.py', 'scripts/frontier_dm_neutrino_positive_polar_h_cp_theorem.py', 'scripts/frontier_dm_neutrino_postcanonical_polar_section.py', 'scripts/frontier_dm_neutrino_source_bank_z3_doublet_block_selection_obstruction_theorem.py', 'scripts/frontier_dm_neutrino_source_surface_active_affine_point_selection_boundary.py', 'scripts/frontier_dm_neutrino_source_surface_active_half_plane_theorem.py', 'scripts/frontier_dm_neutrino_source_surface_carrier_normal_form.py', 'scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py', 'scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py', 'scripts/frontier_dm_neutrino_source_surface_split2_edge_profile_transition_candidate.py', 'scripts/frontier_dm_neutrino_source_surface_split2_low_slack_transport_incompatibility_candidate.py', 'scripts/frontier_dm_neutrino_source_surface_split2_lower_repair_upper_face_extremals_candidate.py', 'scripts/frontier_dm_neutrino_source_surface_split2_upper_face_local_neighborhoods_candidate.py', 'scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem.py']
++
+ import math
+ import sys
+ from pathlib import Path
+@@ -86,7 +77,8 @@ T_Q = np.array(
+ )
+ 
+ L_M = float(np.linalg.norm(T_M, 2))
+-L_DELTA = float(np.linalg.norm(T_DELTA, 2))
++T_DELTA_FIXED_SLACK = T_DELTA - T_Q
++L_DELTA = float(np.linalg.norm(T_DELTA_FIXED_SLACK, 2))
+ L_SLACK = float(np.linalg.norm(T_Q, 2))
+ 
+ PKG = exact_package()
+@@ -236,7 +228,7 @@ def kernel_peak() -> tuple[float, float]:
+     flo = psi_prime(lo)
+     fhi = psi_prime(hi)
+     if not (flo > 0.0 and fhi < 0.0):
+-        raise RuntimeError("psi' does not bracket the small-leakage maximum on [0,0.05]")
++        raise RuntimeError("psi' does not bracket the stationary candidate on [0,0.05]")
+     for _ in range(80):
+         mid = 0.5 * (lo + hi)
+         fm = psi_prime(mid)
+@@ -306,27 +298,27 @@ def certify_box(label: str, box: dict[str, tuple[float, float]]) -> dict[str, ob
+ 
+ def part1_weyl_boxes_are_sharp_and_disjoint() -> tuple[dict[str, object], dict[str, object]]:
+     print("\n" + "=" * 88)
+-    print("PART 1: WEYL EIGENVALUE BOXES ON THE TWO RESIDUAL SPLIT-2 NEIGHBORHOODS")
++    print("PART 1: FLOATING WEYL-RADIUS ESTIMATES ON TWO SUPPLIED BOXES")
+     print("=" * 88)
+ 
+     cap = certify_box("CAP_BOX", CAP_BOX)
+     endpoint = certify_box("ENDPOINT_BOX", ENDPOINT_BOX)
+ 
+     check(
+-        "The split-2 affine generators have exact operator norms 1, sqrt(3), 2",
++        "Computed supplied fixed-slack generator norms match 1, 1+sqrt(3), 2",
+         abs(L_M - 1.0) < 1.0e-12
+-        and abs(L_DELTA - RT3) < 1.0e-12
++        and abs(L_DELTA - (1.0 + RT3)) < 1.0e-12
+         and abs(L_SLACK - 2.0) < 1.0e-12,
+         f"(L_m,L_delta,L_slack)=({L_M:.12f},{L_DELTA:.12f},{L_SLACK:.12f})",
+     )
+     check(
+-        "CAP_BOX Weyl control gives three disjoint eigenvalue intervals for H(m,delta,s)",
++        "CAP_BOX floating eigenvalue interval estimates are disjoint (not certified enclosures)",
+         cap["eig_intervals"][0][1] < cap["eig_intervals"][1][0]
+         and cap["eig_intervals"][1][1] < cap["eig_intervals"][2][0],
+         f"intervals={cap['eig_intervals']}",
+     )
+     check(
+-        "ENDPOINT_BOX Weyl control gives three disjoint eigenvalue intervals for H(m,delta,s)",
++        "ENDPOINT_BOX floating eigenvalue interval estimates are disjoint (not certified enclosures)",
+         endpoint["eig_intervals"][0][1] < endpoint["eig_intervals"][1][0]
+         and endpoint["eig_intervals"][1][1] < endpoint["eig_intervals"][2][0],
+         f"intervals={endpoint['eig_intervals']}",
+@@ -358,29 +350,29 @@ def part2_projector_row_intervals_are_explicit_and_small(
+     cap: dict[str, object], endpoint: dict[str, object]
+ ) -> None:
+     print("\n" + "=" * 88)
+-    print("PART 2: EXACT PROJECTOR-ROW INTERVALS FROM COFACTOR FORMULAS")
++    print("PART 2: UNCERTIFIED FLOATING PROJECTOR-ROW ESTIMATES")
+     print("=" * 88)
+ 
+     cap_rows = cap["row_intervals"]
+     endpoint_rows = endpoint["row_intervals"]
+ 
+     check(
+-        "Every CAP_BOX row entry interval stays inside [0,1]",
++        "Every CAP_BOX clamped row estimate lies inside [0,1] (not an enclosure proof)",
+         all(0.0 <= lo <= hi <= 1.0 for row in cap_rows for (lo, hi) in row),
+         f"rows={cap_rows}",
+     )
+     check(
+-        "Every ENDPOINT_BOX row entry interval stays inside [0,1]",
++        "Every ENDPOINT_BOX clamped row estimate lies inside [0,1] (not an enclosure proof)",
+         all(0.0 <= lo <= hi <= 1.0 for row in endpoint_rows for (lo, hi) in row),
+         f"rows={endpoint_rows}",
+     )
+     check(
+-        "The CAP_BOX row-3 packet interval already stays close to the sampled winning row",
++        "Legacy CAP_BOX row-3 numerical threshold comparison",
+         cap_rows[2][0][0] > 0.68 and cap_rows[2][2][1] < 0.06,
+         f"row3={cap_rows[2]}",
+     )
+     check(
+-        "The ENDPOINT_BOX row-3 packet interval is even tighter than the CAP_BOX row-3 packet interval",
++        "Legacy ENDPOINT_BOX row-3 numerical threshold comparison",
+         endpoint_rows[2][0][0] > 0.71 and endpoint_rows[2][2][1] < 0.053,
+         f"row3={endpoint_rows[2]}",
+     )
+@@ -394,7 +386,7 @@ def part3_transport_kernel_bounds_close_both_boxes(
+     cap: dict[str, object], endpoint: dict[str, object]
+ ) -> None:
+     print("\n" + "=" * 88)
+-    print("PART 3: BOXWISE TRANSPORT UPPER BOUNDS")
++    print("PART 3: SUPPLIED NUMERICAL KERNEL CANDIDATE ESTIMATES")
+     print("=" * 88)
+ 
+     q_star = float(cap["q_star"])
+@@ -403,73 +395,70 @@ def part3_transport_kernel_bounds_close_both_boxes(
+     endpoint_ubs = [float(v) for v in endpoint["row_eta_ubs"]]
+ 
+     check(
+-        "The one-variable transport kernel still has its small-leakage peak inside [0,0.05]",
++        "One supplied numerical-kernel stationary candidate is bracketed in [0,0.05]",
+         0.0 < q_star < 0.05 and psi_prime(0.0) > 0.0 and psi_prime(0.05) < 0.0,
+         f"(q_star,psi_star)=({q_star:.15f},{psi_star_upper:.15f})",
+     )
+     check(
+-        "All three CAP_BOX rowwise eta upper bounds stay strictly below transport closure",
++        "All three CAP_BOX numerical row estimates compare below 1 (not box-wide dominance)",
+         max(cap_ubs) < 1.0,
+-        f"eta upper bounds={np.round(cap_ubs, 12)}",
++        f"eta candidate estimates={np.round(cap_ubs, 12)}",
+     )
+     check(
+-        "All three ENDPOINT_BOX rowwise eta upper bounds stay strictly below transport closure",
++        "All three ENDPOINT_BOX numerical row estimates compare below 1 (not box-wide dominance)",
+         max(endpoint_ubs) < 1.0,
+-        f"eta upper bounds={np.round(endpoint_ubs, 12)}",
++        f"eta candidate estimates={np.round(endpoint_ubs, 12)}",
+     )
+     check(
+-        "The CAP_BOX theorem-grade interval margin is still comfortably above 0.09",
++        "The CAP_BOX legacy numerical margin threshold comparison exceeds 0.09",
+         1.0 - max(cap_ubs) > 0.09,
+         f"margin={1.0 - max(cap_ubs):.12f}",
+     )
+     check(
+-        "The ENDPOINT_BOX theorem-grade interval margin is still comfortably above 0.10",
++        "The ENDPOINT_BOX legacy numerical margin threshold comparison exceeds 0.10",
+         1.0 - max(endpoint_ubs) > 0.10,
+         f"margin={1.0 - max(endpoint_ubs):.12f}",
+     )
+ 
+     print()
+-    print(f"  q_star <= {q_star:.15f}")
+-    print(f"  CAP_BOX rowwise eta upper bounds      = {np.round(cap_ubs, 12)}")
+-    print(f"  ENDPOINT_BOX rowwise eta upper bounds = {np.round(endpoint_ubs, 12)}")
++    print(f"  stationary q candidate = {q_star:.15f}")
++    print(f"  CAP_BOX rowwise eta candidate estimates      = {np.round(cap_ubs, 12)}")
++    print(f"  ENDPOINT_BOX rowwise eta candidate estimates = {np.round(endpoint_ubs, 12)}")
+ 
+ 
+ def part4_closure_assembly(cap: dict[str, object], endpoint: dict[str, object]) -> None:
+     print("\n" + "=" * 88)
+-    print("PART 4: CLOSURE ASSEMBLY")
++    print("PART 4: HISTORICAL DOCUMENTARY INPUTS AND NUMERICAL COMPARISON")
+     print("=" * 88)
+ 
+     carrier_note = read("docs/DM_NEUTRINO_SOURCE_SURFACE_CARRIER_SIDE_CONCLUSION_NOTE_2026-04-18.md")
+     support_note = read("docs/DM_SPLIT2_DENSE_GRID_LIPSCHITZ_DOMINANCE_SUPPORT_NOTE_2026-04-21.md")
+ 
+     check(
+-        "The carried branch-local reduction really had already localized the residual pressure to CAP_BOX and ENDPOINT_BOX",
++        "Historical carrier note contains the named neighborhood phrase and decimal anchors (not a localization proof)",
+         "two explicit split-2 upper-face neighborhoods" in carrier_note
+         and "1.188513342509166" in carrier_note
+         and "1.188955544069478" in carrier_note,
+     )
+     check(
+-        "The superseded dense-grid note records the same two boxes now being certified theorem-grade",
++        "Historical support note names the same two supplied boxes (not interval certification)",
+         "CAP_BOX" in support_note and "ENDPOINT_BOX" in support_note,
+     )
+     check(
+-        "So the residual split-2 carrier item now closes on the current review surface",
++        "Both computed numerical estimate maxima compare below 1 (no closure inference)",
+         max(cap["row_eta_ubs"]) < 1.0 and max(endpoint["row_eta_ubs"]) < 1.0,
+         f"(cap_max,endpoint_max)=({max(cap['row_eta_ubs']):.12f},{max(endpoint['row_eta_ubs']):.12f})",
+     )
+ 
+     print()
+-    print("  Closure read:")
+-    print("    - prior branch science had already reduced the residual split-2 pressure")
+-    print("      to CAP_BOX and ENDPOINT_BOX")
+-    print("    - this runner certifies eta/eta_obs < 1 on both whole boxes")
+-    print("    - therefore interval-certified exact-carrier dominance/completeness")
+-    print("      closes on the residual split-2 selector branch")
++    print("  These are finite supplied-fixture numerical estimates, not certified whole-box bounds.")
++    print("  Historical text matches do not establish localization or completeness.")
++    print("  Interval rounding, center/kernel error control and all-critical-point proofs remain open.")
+ 
+ 
+ def main() -> int:
+     print("=" * 88)
+-    print("DM SPLIT-2 INTERVAL-CERTIFIED DOMINANCE CLOSURE")
++    print("DM SPLIT-2 SUPPLIED-FIXTURE NUMERICAL ESTIMATES")
+     print("=" * 88)
+ 
+     cap, endpoint = part1_weyl_boxes_are_sharp_and_disjoint()
+@@ -480,12 +469,9 @@ def main() -> int:
+     print("\n" + "=" * 88)
+     print("RESULT")
+     print("=" * 88)
+-    print("  The residual split-2 carrier-side item is closed on the current review surface.")
+-    print("  What remains open on the DM flagship gate is not carrier-side dominance.")
+-    print("  It is the physical branch-choice / selector side:")
+-    print("    - A-BCC as an axiom-native branch-choice law")
+-    print("    - the finer right-sensitive microscopic selector law")
+-    print()
++    print("  No certified whole-box, residual-completeness or physical-selector conclusion.")
++    print("  Legacy regression predicates are preserved; any FAIL is an actual changed-result finding.")
++    print("  Kernel and normalization are supplied; no physical yield is derived.")
+     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
+ 
+     return 0 if FAIL_COUNT == 0 else 1

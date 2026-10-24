@@ -1,0 +1,11 @@
+{
+  "actual_cap_sec": 120,
+  "status": "nonzero_exit",
+  "exit_code": 1,
+  "elapsed_sec": 1.3003580570220947,
+  "raw_sha256": "0d4bd85288d3d76de4dc82945119f6f0375ccc800db3988496a121a433e5d2cc",
+  "cache_sha256": "f0fe4da94ead28a5e490c76c72f828e99e37370c602918fe82da9f5f20da955c",
+  "cache_status": "execution_error",
+  "identity_status": "fresh",
+  "raw_saved_before_cache": true
+}

@@ -1,30 +1,13 @@
 #!/usr/bin/env python3
-"""
-DM PMNS affine current-coordinate reduction theorem.
-
-Question:
-  After native graph-first current activation is landed, what exact part of the
-  physical affine Hermitian PMNS chart is still left open on the stricter/native
-  DM map?
-
-Answer:
-  On the retained affine chart
-
-      H(m, delta, q_+) = H_base + m T_m + delta T_delta + q_+ T_q,
-
-  the native nontrivial-character current satisfies
-
-      J_chi(H) = q_+ - i/4.
-
-  So current activation closes the q_+ coordinate exactly, but is blind to the
-  remaining affine scalar delta (equivalently the shifted Im K_Z3[1,2]
-  coordinate). On the exact local 2-real PMNS source manifold, that meant one
-  additional real sole-axiom law was still missing beyond current activation
-  at this theorem stage. The later same-day ordered-chain graded-current
-  theorem then closed that remaining scalar exactly.
+"""Supplied affine coordinate algebra; no physical current/source selection.
+J_chi(H)=q_+-i/4 reads q_+ from a supplied current value and is blind to delta.
+A second graded current reconstructs delta but selects neither current value.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ['docs/DM_NEUTRINO_BREAKING_TRIPLET_CP_THEOREM_NOTE_2026-04-15.md', 'docs/DM_NEUTRINO_EXACT_H_SOURCE_SURFACE_PREIMAGE_BUNDLE_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_EXACT_H_SOURCE_SURFACE_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_POSITIVE_POLAR_H_CP_THEOREM_NOTE_2026-04-15.md', 'docs/DM_NEUTRINO_POSTCANONICAL_POLAR_SECTION_NOTE_2026-04-15.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_AFFINE_POINT_SELECTION_BOUNDARY_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_HALF_PLANE_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_CARRIER_NORMAL_FORM_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_INTRINSIC_SLOT_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_SHIFT_QUOTIENT_BUNDLE_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_Z3_DOUBLET_BLOCK_POINT_SELECTION_THEOREM_NOTE_2026-04-16.md', 'docs/DM_PMNS_AFFINE_CURRENT_COORDINATE_REDUCTION_THEOREM_NOTE_2026-04-21.md', 'docs/DM_PMNS_GRAPH_FIRST_ORDERED_CHAIN_NONZERO_CURRENT_ACTIVATION_THEOREM_NOTE_2026-04-21.md', 'docs/DM_PMNS_NE_SEED_SURFACE_EXACT_SOURCE_MANIFOLD_THEOREM_NOTE_2026-04-20.md', 'docs/DM_PMNS_ORDERED_CHAIN_GRADED_CURRENT_DELTA_CLOSURE_THEOREM_NOTE_2026-04-21.md', 'docs/PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md', 'docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md', 'scripts/dm_leptogenesis_exact_common.py', 'scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py', 'scripts/frontier_dm_neutrino_exact_h_source_surface_preimage_bundle_theorem.py', 'scripts/frontier_dm_neutrino_hermitian_bridge_carrier.py', 'scripts/frontier_dm_neutrino_positive_polar_h_cp_theorem.py', 'scripts/frontier_dm_neutrino_postcanonical_polar_section.py', 'scripts/frontier_dm_neutrino_source_surface_active_affine_point_selection_boundary.py', 'scripts/frontier_dm_neutrino_source_surface_active_half_plane_theorem.py', 'scripts/frontier_dm_neutrino_source_surface_carrier_normal_form.py', 'scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py', 'scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py', 'scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem.py', 'scripts/frontier_pmns_active_four_real_source_from_transport.py', 'scripts/frontier_pmns_c3_character_holonomy_closure.py', 'scripts/frontier_pmns_c3_character_mode_reduction.py', 'scripts/frontier_pmns_c3_nontrivial_current_boundary.py', 'scripts/frontier_pmns_current_bank_value_selection_nogo.py', 'scripts/frontier_pmns_lower_level_end_to_end_closure.py', 'scripts/frontier_pmns_oriented_cycle_channel_value_law.py', 'scripts/frontier_pmns_oriented_cycle_reduced_channel_nonselection.py', 'scripts/frontier_pmns_oriented_cycle_selection_structure.py', 'scripts/frontier_pmns_sole_axiom_hw1_source_transfer_boundary.py', 'scripts/frontier_pmns_three_flux_holonomy_closure.py', 'scripts/frontier_pmns_twisted_flux_transfer_holonomy_boundary.py', 'scripts/frontier_pmns_uniform_scalar_deformation_boundary.py', 'scripts/pmns_lower_level_utils.py']
 
 import math
 import sys
@@ -141,7 +124,7 @@ def part2_exact_affine_formula() -> None:
         f"max err={max_err:.2e}",
     )
     check(
-        "So current activation fixes q_+ exactly but is blind to m and delta",
+        "So a supplied current value reconstructs q_+ exactly but is blind to m and delta",
         ok_formula,
         "J_chi depends only on q_+ on the affine chart",
     )
@@ -195,8 +178,8 @@ def part4_scientific_consequence() -> None:
         "local `2`-real" in manifold_note or "local 2-real" in manifold_note,
     )
     check(
-        "The ordered-chain theorem still lands one exact sole-axiom nonzero-current route on hw=1",
-        "J_chi(A_ord) = 1" in current_note,
+        "The ordered-chain theorem still lands one supplied nonzero-current fixture on hw=1",
+        "J_chi(A_ord)=1" in current_note.replace(" ", ""),
     )
     check(
         "The doublet-block theorem still records delta as the shifted imaginary K12 coordinate",
@@ -209,10 +192,10 @@ def part4_scientific_consequence() -> None:
         "equivalently the current-blind shifted Im(K_Z3[1,2]) law on the retained hw=1 family remained to be closed",
     )
     check(
-        "The later ordered-chain graded-current theorem closes that remaining affine scalar exactly",
-        "That remaining scalar is now closed." in read("docs/DM_PMNS_ORDERED_CHAIN_GRADED_CURRENT_DELTA_CLOSURE_THEOREM_NOTE_2026-04-21.md")
-        or "remaining stricter/native DM scalar last mile is" in read("docs/DM_PMNS_ORDERED_CHAIN_GRADED_CURRENT_DELTA_CLOSURE_THEOREM_NOTE_2026-04-21.md"),
-        "this affine reduction is a historical precursor, not the final strict/native state",
+        "The graded-current construction recovers coordinates but leaves source selection open",
+        "selection of the two current values remains open" in read("docs/DM_PMNS_ORDERED_CHAIN_GRADED_CURRENT_DELTA_CLOSURE_THEOREM_NOTE_2026-04-21.md")
+        or "It does not select those values." in read("docs/DM_PMNS_ORDERED_CHAIN_GRADED_CURRENT_DELTA_CLOSURE_THEOREM_NOTE_2026-04-21.md"),
+        "conditional coordinate reconstruction only",
     )
 
 
@@ -235,15 +218,11 @@ def main() -> int:
     print("=" * 88)
     print("  Exact affine-current sharpening:")
     print("    - on H(m, delta, q_+) the native current is J_chi(H) = q_+ - i/4")
-    print("    - graph-first current activation therefore closes the q_+ coordinate")
+    print("    - a supplied current value reconstructs the q_+ coordinate")
     print("    - the shifted Im(K_Z3[1,2]) / delta coordinate remained open at")
     print("      this theorem stage")
     print()
-    print("  So this theorem isolates the remaining affine scalar exactly, but does")
-    print("  not by itself finish the strict/native DM last mile. The later")
-    print("  ordered-chain graded-current closure theorem closes that remaining")
-    print("  scalar on the retained hw=1 response family.")
-    print()
+    print("Coordinate reconstruction leaves physical source/current selection open.")
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     return 0 if FAIL_COUNT == 0 else 1
 

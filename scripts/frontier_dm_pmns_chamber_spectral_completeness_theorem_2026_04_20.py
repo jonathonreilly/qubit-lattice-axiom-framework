@@ -1,25 +1,13 @@
 #!/usr/bin/env python3
-"""
-DM PMNS chamber spectral listed-root support packet.
-
-Question:
-  After the asymptotic pure-source no-go closes the infinity loophole, what is
-  actually supported for the remaining compact chamber problem?
-
-Answer:
-  Bounded listed-root support only.  The ordered-eigenvalue inverse system on
-  the two electron-axis-3 branches recovers four listed real roots on each
-  parity branch in this finite multistart run, and the chamber inequality
-  keeps three listed survivors:
-
-    sigma = (2,1,0): Basin 1, Basin 2, Basin N, Basin P   -> chamber keeps 1,2
-    sigma = (2,0,1): Basin X, X_a, X_b, X_c               -> chamber keeps X
-
-  The Krawczyk companion certifies existence/local uniqueness and chamber sign
-  for the listed boxes.  The upper-bound/no-other-roots side remains open.
+"""Finite seeded PMNS candidate/residual and supplied chamber diagnostic.
+No interval/Krawczyk certification, exact roots, tail exclusion, complete
+bank or physical selection follows. Every numerical predicate is retained.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ['docs/DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_THEOREM_NOTE_2026-04-20.md']
 
 import itertools
 import math
@@ -370,7 +358,7 @@ def print_branch_table(label: str, roots: list[np.ndarray], chart_fn, perm: tupl
 
 def main() -> int:
     print("=" * 88)
-    print("DM PMNS CHAMBER SPECTRAL LISTED-ROOT SUPPORT PACKET")
+    print('DM PMNS CHAMBER SPECTRAL FINITE SEEDED CANDIDATE DIAGNOSTIC')
     print("=" * 88)
 
     basin1 = (0.6570613422097703, 0.9338063437590336, 0.7150423295873919)
@@ -402,7 +390,7 @@ def main() -> int:
     )
     print_branch_table("sigma=(2,1,0)", roots_210, sigma210_chart_from_lams, SIGMA_210)
     check(
-        "finite multistart recovers the four listed sigma=(2,1,0) ordered roots",
+        'finite multistart recovers the four listed sigma=(2,1,0) ordered candidates',
         len(roots_210) == 4,
         f"count={len(roots_210)}; not a global upper-bound certificate",
     )
@@ -428,12 +416,12 @@ def main() -> int:
     )
     print_branch_table("sigma=(2,0,1)", roots_201, sigma201_chart_from_lams, SIGMA_201)
     check(
-        "finite multistart recovers the four listed sigma=(2,0,1) ordered roots",
+        'finite multistart recovers the four listed sigma=(2,0,1) ordered candidates',
         len(roots_201) == 4,
         f"count={len(roots_201)}; not a global upper-bound certificate",
     )
     check(
-        "sigma=(2,0,1) reduced system contains the known Basin X chamber root",
+        'sigma=(2,0,1) reduced system contains the known Basin X chamber candidate',
         any(np.linalg.norm(sigma201_chart_from_lams(root) - np.array(basin_x)) < 1e-6 for root in roots_201),
     )
 
@@ -441,8 +429,8 @@ def main() -> int:
     print("Part 3: chamber cut on the reduced spectral roots")
     chamber_210 = [sigma210_chart_from_lams(root) for root in roots_210 if sigma210_chart_from_lams(root)[1] + sigma210_chart_from_lams(root)[2] >= E1 - 1e-9]
     chamber_201 = [sigma201_chart_from_lams(root) for root in roots_201 if sigma201_chart_from_lams(root)[1] + sigma201_chart_from_lams(root)[2] >= E1 - 1e-9]
-    check("listed sigma=(2,1,0) packet contributes two chamber roots", len(chamber_210) == 2, f"count={len(chamber_210)}")
-    check("listed sigma=(2,0,1) packet contributes one chamber root", len(chamber_201) == 1, f"count={len(chamber_201)}")
+    check('listed sigma=(2,1,0) packet contributes two chamber candidates', len(chamber_210) == 2, f"count={len(chamber_210)}")
+    check('listed sigma=(2,0,1) packet contributes one chamber candidate', len(chamber_201) == 1, f"count={len(chamber_201)}")
     expected_chamber = [np.array(basin1), np.array(basin2), np.array(basin_x)]
     check(
         "the listed chamber survivors match Basin 1, Basin 2, and Basin X",
@@ -451,7 +439,7 @@ def main() -> int:
     )
 
     print()
-    print("Part 4: independent direct chamber solve over all six row permutations")
+    print('Part 4: additional finite direct chamber solve over all six row permutations')
     chamber_roots = direct_chamber_search()
     for perm, point in chamber_roots:
         obs = pmns_observables(*point, perm)
@@ -473,7 +461,7 @@ def main() -> int:
         (SIGMA_201, np.array(basin_x)),
     ]
     check(
-        "the direct chamber roots match Basin 1, Basin 2, and Basin X with the expected sigmas",
+        'the direct chamber candidates match Basin 1, Basin 2, and Basin X with the expected sigmas',
         all(
             any(perm == perm_ref and np.linalg.norm(point - point_ref) < 1e-6 for perm_ref, point_ref in direct_expected)
             for perm, point in chamber_roots
@@ -487,27 +475,23 @@ def main() -> int:
 
     print()
     print("Part 5: source-support boundary")
-    check(
-        "bounded listed-root support only; chamber upper-bound exclusion remains open",
-        True,
-        "reduced spectral solve + finite all-permutation chamber sweep agree on the listed survivors",
-    )
+    print("  [INFO] Finite candidates only; exact existence, enclosure, exhaustion and physical selection remain open.")
 
     print()
     print("=" * 88)
     print("RESULT")
     print("=" * 88)
-    print("  The supported listed chamber chi^2 = 0 PMNS packet contains:")
+    print('  The supported finite residual-filtered chamber candidate packet contains:')
     print("    - Basin 1 on sigma=(2,1,0)")
     print("    - Basin 2 on sigma=(2,1,0)")
     print("    - Basin X on sigma=(2,0,1)")
     print()
-    print("  Off-chamber listed real roots still exist on both parity branches, but")
+    print('  Off-chamber listed numerical candidates were located on both parity branches, but')
     print("  they are not part of the active chamber-side packet.")
     print()
-    print("  DM_PMNS_CHAMBER_LISTED_ROOTS_SUPPORTED=TRUE")
+    print('  DM_PMNS_CHAMBER_FINITE_CANDIDATE_DIAGNOSTIC_ONLY')
     print("  DM_PMNS_CHAMBER_COMPLETENESS_UPPER_BOUND_CERTIFIED=FALSE")
-    print("  RESIDUAL_DM_PMNS_CHAMBER=global_upper_bound_no_other_roots")
+    print('  OPEN_DM_PMNS=exact_root_certification_and_global_exhaustion_and_physical_selection')
     print()
     print(f"PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
     return 1 if FAIL_COUNT else 0

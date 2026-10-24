@@ -187,9 +187,9 @@
       "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
     },
     "scripts/frontier_cosmology_from_mass_spectrum.py": {
-      "source_sha256": "0935d6144172aec8a209ec8513a6b5976160ea0de290068834caa3c9a415f4e1",
+      "source_sha256": "6f357166661fcfd2164620f1557d156cff7bc0a0609c9ec32646f53c2f7bb61b",
       "timeout_sec": 120,
-      "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration."
+      "reason": "Bounded affected source/input refresh; historical eta support withdrawn, numerical packet preserved."
     },
     "scripts/frontier_discrete_dtn_shell_kernel.py": {
       "source_sha256": "31cb89f1b161de258503a6a91f5c2334d041099f0f135df0aeb7078520bc0d31",
@@ -1084,6 +1084,154 @@
       "source_sha256": "b76bf24f2c8b5291e90a0c29b3cf17b325e2ef0863103c67ff9359a08454f2b3",
       "timeout_sec": 120,
       "reason": "Bounded exact finite cubic/corner GF(2) geometry certificate; no campaign or code-stability execution."
+    },
+    "scripts/dm_selector_branch_support.py": {
+      "source_sha256": "4dedef2c46b532406d97bee9e8eed88babac7fa9a53934697a62b57073c37d08",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_dm_leptogenesis_ne_charged_source_response_reduction.py": {
+      "source_sha256": "1e0b985ea845172b30e43cdf6330a4dec829ff62f56545eb286f2b12a40bca71",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_dm_pmns_graph_first_ordered_chain_nonzero_current_closure_2026_04_21.py": {
+      "reason": "Explicit 300-second bound for independently confirmed current source; actual bounded captures verified in final-ready review. Stale prior source pin corrected during integration; no execution replay.",
+      "source_sha256": "fd5a38571943a3f52d4424fbd8fdf10fc837dd0bd67a8cd6ebafe0361545eca0",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_dm_pmns_upper_octant_source_cubic_selector_theorem_2026_04_20.py": {
+      "reason": "Explicit 300-second bound for independently confirmed current source; actual bounded captures verified in final-ready review. Stale prior source pin corrected during integration; no execution replay.",
+      "source_sha256": "566dab42f4635f5a489a644e6c7a02d6bbd924d94cc08cf3e00355e554622b82",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_dm_wilson_direct_descendant_projected_source_branch_discriminant_theorem_2026_04_18.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "8a1a9ec84159c97ddb9a73cbce44288bdf61e5fe5cf72689c9e47e24cc689d49",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "e4504c7a25e82ffab2224ddeedf50b3ca98caabe5de4f395694198ce6255514b",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_graph_first_selector_derivation.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "81437e80194eecc2aedac1cf541a29c464dc0edfc4c2452fda5b86cad313fc98",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_graph_first_su3_integration.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "d6a4d0a631b91dca9350689476b8e180b0f8d32033564c4da239ad2b8557ff58",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_active_four_real_source_from_transport.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "4142d1a974e63b4fdf54d17f681cd13962cca9879dddd6d7929b37b961a65d7c",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_c3_character_holonomy_closure.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "4dd04278f97f2c7aeda15dd40feb3b2fbf364d7f90625c62c00e35dc8f639386",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_c3_character_mode_reduction.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "54e5995ee6954dbe50e8d98a337d05a86981faa691a0937882569f977fb060eb",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_c3_nontrivial_current_boundary.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "c99b06838c5895163c35dbfcb74ed710d0f1d6324ecf307c0b5b1f0515f27fda",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_current_bank_value_selection_nogo.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "32b86d7a76453cae5b8aaa79dbe3a25df62450b1b74f703aad5032e4be502ed0",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_graph_first_cycle_frame_support.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "6bab808d772216952c6038347f5fefd6f506f49918b98b4a50422cec19a24e9f",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_lower_level_end_to_end_closure.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "b02c46d593c30a3a667ac3c0467dba8893c5809d462fc7bb26853ba595d0c21e",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_oriented_cycle_channel_value_law.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "5a4c932c7b4112d20f04f1bfc66d9e703291c50ad885bba7bfd5dce4104e5765",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_oriented_cycle_reduced_channel_nonselection.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "163a57a9c3bc678bac88804f16a93aeba88ae19d89f4ebc347624f1261e7321c",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_oriented_cycle_selection_structure.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "7282c4adc33a2fa6a066b092b439465a8fd495c7eacfe3d382ab2837ff2b4bc9",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_sole_axiom_hw1_source_transfer_boundary.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "88427fc40716fec12b2cd5c051062cf28c483752de26f6344226a0041db0c5d4",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_theta23_upper_octant_chamber_closure_prediction.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "33d21b7393da80aad6813e31cde4802c6b96ede06779bdfca87a86d4367ed7e7",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_three_flux_holonomy_closure.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "7799f1478490913678be00c4e04ecd0374c7e087d4cafdca831d6dcbc1c940b4",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_twisted_flux_transfer_holonomy_boundary.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "3d3b48a5974cfe452e92a60e6a66c25f7a852e8cff301d9f494a671959a7f47b",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_pmns_uniform_scalar_deformation_boundary.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "85a3244903d20e287a2ed493c58f249a0f6eaa2d43b789a6fa0b1e3e901e0d9f",
+      "timeout_sec": 300
+    },
+    "scripts/pmns_lower_level_utils.py": {
+      "reason": "Explicit 300-second bound for unchanged imported helper in B05 conditionality review. This authorizes no helper execution or whole-helper science certification.",
+      "source_sha256": "173bc6d96d2640f742e13fa915d5db141adccd5c4819d10833868f042846a583",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_dm_pmns_supplied_line_finite_search_diagnostic_2026_04_20.py": {
+      "source_sha256": "51a4661a028a0d517ba5719133083815be78ae118eb3ebf42f019d2c2475b98c",
+      "timeout_sec": 120,
+      "reason": "Bounded PR9844 supplied PMNS/finite diagnostic evidence; no physical selection or negative theorem authority."
+    },
+    "scripts/frontier_pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem.py": {
+      "source_sha256": "e1adba613c27514ab2c1acfa335071e5c9f0b965d46365db932c5e9dc53455cd",
+      "timeout_sec": 30,
+      "reason": "Bounded PR9844 supplied PMNS/finite diagnostic evidence; no physical selection or negative theorem authority."
+    },
+    "scripts/frontier_dm_flagship_supplied_segment_inertia.py": {
+      "source_sha256": "f703381d4a964b0af4dd65ecea2ac21bae19ca902e0c99b721a96a9af8d076be",
+      "timeout_sec": 120,
+      "reason": "Exact supplied rounded-segment determinant/inertia certificate only; no physical branch selection."
+    },
+    "scripts/frontier_dm_neutrino_source_surface_active_curvature_23_symmetric_baseline_boundary.py": {
+      "source_sha256": "56b657e528fcfb7bd31555b52a4f6885c63c2e874763ae8241c33292ab43cb0e",
+      "timeout_sec": 300,
+      "reason": "Finite small 3x3 matrix/curvature fixture loops and one note read; future wall-time cap only. No standalone execution or validation of helper-main scientific claims is asserted."
+    },
+    "scripts/frontier_dm_neutrino_source_surface_atomic_witness_volume_selector_nonrealization.py": {
+      "source_sha256": "4a268259e0ac9d18a202e35e7b6409f355e017bf21c35932c5d4b57b3ddbdd27",
+      "timeout_sec": 300,
+      "reason": "Five supplied 3x3 eigensystems and two threshold-volume evaluations plus note reads; future wall-time cap only. No standalone execution or validation of helper-main scientific claims is asserted."
+    },
+    "scripts/frontier_dm_neutrino_source_surface_parity_compatible_observable_selector_theorem.py": {
+      "source_sha256": "73609704ad7b2e136a76d3b5928c2ec3af798559556c9f15236d0fc36db6ba71",
+      "timeout_sec": 300,
+      "reason": "Finite 3x3 determinant/Hessian fixtures and a bounded-interval scalar optimization with imported transport grids; future wall-time cap only, not a runtime guarantee. No standalone execution or validation of helper-main scientific claims is asserted."
     }
   }
 }

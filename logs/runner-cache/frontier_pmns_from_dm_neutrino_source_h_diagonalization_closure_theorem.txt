@@ -1,23 +1,23 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem.py
-runner_sha256: f653e00082a586886ed501e3c1b2b138a989c537e5e644d34370990530c78903
-timeout_sec: 120
+runner_sha256: e1adba613c27514ab2c1acfa335071e5c9f0b965d46365db932c5e9dc53455cd
+timeout_sec: 30
 exit_code: 0
-elapsed_sec: 1.78
+elapsed_sec: 1.17
 status: ok
 ----- stdout -----
 ========================================================================================
-G1 PHYSICIST-H — PMNS as f(H(m, delta, q_+))
+CONDITIONAL PMNS MAP AND FINITE FIT ON A SUPPLIED CHART
 ========================================================================================
 
 Attack line: L1 (direct diagonalization of H).
-PMNS convention: charged-lepton basis = axis basis by the retained
-Z_3-trichotomy route plus Higgs q_H gauge-redundancy theorem. PMNS is the
-eigenbasis unitary of H, row-permuted by the hierarchy pairing
-(electron <-> largest H-eigenvalue, muon <-> middle, tau <-> lowest).
+Supplied inputs: affine chart, charged-lepton axis basis U_e=I,
+flavor row permutation (2,1,0), and three historical angle targets.
+Eigenvector columns are sorted by ascending H eigenvalue.
+Finite fit and interval checks supply no current experimental likelihood.
 
 ========================================================================================
-Part 1: retained structural checks on H(m, delta, q_+) and K_Z3
+Part 1: supplied-chart structural checks on H(m, delta, q_+) and K_Z3
 ========================================================================================
  [PASS (D)] H(A Schur-Q) is Hermitian
  [PASS (D)] K_Z3(A Schur-Q) is Hermitian
@@ -54,9 +54,9 @@ Part 2: PMNS angles as f(H) vary across the chamber
  [PASS (D)] sin^2 theta_23 varies on chamber (spread > 0.01) (spread=0.1998)
 
 ========================================================================================
-Part 3: unique chamber solution (m_*, delta_*, q_+*) via multi-start
+Part 3: numerical chamber candidate (m_*, delta_*, q_+*) via multi-start
 ========================================================================================
- [PASS (D)] random-start multi-start converges to unique chamber solution (1 distinct minima; ~60 accepted)
+ [PASS (D)] accepted random starts converge to one rounded chamber solution (1 distinct minima; ~60 accepted)
  pinned (m_*, delta_*, q_+*) = (0.657061, 0.933806, 0.715042)
  fsolve-sharpened  = (0.657061342210, 0.933806343759, 0.715042329587)
  [PASS (D)] pinned s12^2 = 0.307 (machine-precise) (val=0.307000000000)
@@ -65,50 +65,51 @@ Part 3: unique chamber solution (m_*, delta_*, q_+*) via multi-start
  [PASS (D)] pinned (delta_*, q_+*) lies strictly inside chamber (q_+ + delta > sqrt(8/3)) (dist = q_+ + delta - sqrt(8/3) = 0.015856)
 
 ========================================================================================
-Part 4: PDG / NuFit 5.3 range check on |U_PMNS| at pinned chamber point
+Part 4: supplied historical NuFit 5.3 modulus intervals at fitted point
 ========================================================================================
  |U_PMNS| at pinned point:
   [0.8233, 0.5480, 0.1476]
   [0.3704, 0.5742, 0.7301]
   [0.4300, 0.6083, 0.6671]
- [PASS (D)] |U_11| in 3-sigma range [0.801,0.845] (val=0.8233)
- [PASS (D)] |U_12| in 3-sigma range [0.513,0.579] (val=0.5480)
- [PASS (D)] |U_13| in 3-sigma range [0.143,0.155] (val=0.1476)
- [PASS (D)] |U_21| in 3-sigma range [0.234,0.500] (val=0.3704)
- [PASS (D)] |U_22| in 3-sigma range [0.471,0.689] (val=0.5742)
- [PASS (D)] |U_23| in 3-sigma range [0.637,0.776] (val=0.7301)
- [PASS (D)] |U_31| in 3-sigma range [0.271,0.525] (val=0.4300)
- [PASS (D)] |U_32| in 3-sigma range [0.477,0.694] (val=0.6083)
- [PASS (D)] |U_33| in 3-sigma range [0.613,0.756] (val=0.6671)
+ [PASS (D)] |U_11| in supplied historical interval [0.801,0.845] (val=0.8233)
+ [PASS (D)] |U_12| in supplied historical interval [0.513,0.579] (val=0.5480)
+ [PASS (D)] |U_13| in supplied historical interval [0.143,0.155] (val=0.1476)
+ [PASS (D)] |U_21| in supplied historical interval [0.234,0.500] (val=0.3704)
+ [PASS (D)] |U_22| in supplied historical interval [0.471,0.689] (val=0.5742)
+ [PASS (D)] |U_23| in supplied historical interval [0.637,0.776] (val=0.7301)
+ [PASS (D)] |U_31| in supplied historical interval [0.271,0.525] (val=0.4300)
+ [PASS (D)] |U_32| in supplied historical interval [0.477,0.694] (val=0.6083)
+ [PASS (D)] |U_33| in supplied historical interval [0.613,0.756] (val=0.6671)
 
 ========================================================================================
-Part 5: delta_CP prediction and Jarlskog at pinned chamber point
+Part 5: conditional fitted delta_CP and Jarlskog at pinned chamber point
 ========================================================================================
  J (Jarlskog)  = -0.032755
  sin(delta_CP)  = -0.9874
- delta_CP (deg) = -80.88 (or complement +260.88 deg)
- [PASS (D)] |Jarlskog| consistent with observed ~0.03 (|J|=0.0328)
- [PASS (D)] sin(delta_CP) negative (i.e. delta_CP in (180, 360) deg), matching T2K-preferred octant
+ cos(delta_CP)  = -0.1585
+ delta_CP (deg, atan2) = 260.88
+ [PASS (D)] |Jarlskog| lies in supplied numerical band [0.025,0.040] (|J|=0.0328)
+ [PASS (D)] sin(delta_CP) negative at supplied fitted candidate
 
 ========================================================================================
-Part 6: cross-check against prior retained candidate selectors
+Part 6: finite comparison against five supplied historical points
 ========================================================================================
  A Schur-Q       (d,q)=(0.8165,0.8165)  distance to pinned (d_*,q_*) = 0.1551
  B det-crit      (d,q)=(0.9640,1.5520)  distance to pinned (d_*,q_*) = 0.8375
  C Tr(H^2)-bdy   (d,q)=(1.2680,0.3650)  distance to pinned (d_*,q_*) = 0.4840
  D K12 char      (d,q)=(0.8000,1.0000)  distance to pinned (d_*,q_*) = 0.3148
  E par-mix F1    (d,q)=(1.1462,0.4868)  distance to pinned (d_*,q_*) = 0.3118
- [PASS (D)] pinned (delta_*, q_+*) is STRICTLY inequivalent to every prior retained candidate (matches=[])
+ [PASS (D)] fitted (delta_*, q_+*) differs by >=1e-3 from five supplied points (matches=[])
 
 ========================================================================================
-Part 7: closed-form of the frozen singlet-doublet slots a_*, b_*
+Part 7: sampled singlet-doublet slots a_*, b_*
 ========================================================================================
  a_* = K[0,1] = 0.1699321132 + i 1.1928090416
  b_* = K[0,2] = 0.4586072478 + i -0.6928090416
  |a_*| = 1.2048528262
  |b_*| = 0.8308459399
- [PASS (D)] a_* is chamber-blind (retained blindness theorem)
- [PASS (D)] b_* is chamber-blind (retained blindness theorem)
+ [PASS (D)] a_* agrees at two sampled chamber points
+ [PASS (D)] b_* agrees at two sampled chamber points
 
 ========================================================================================
  PASS = 43
@@ -117,9 +118,9 @@ Part 7: closed-form of the frozen singlet-doublet slots a_*, b_*
 
 Summary:
  Pinned chamber point (m_*, delta_*, q_+*) = (0.657061, 0.933806, 0.715042)
- Predicted delta_CP = -80.88 deg (sin = -0.9874)
+ Conditional fitted delta_CP = +260.88 deg (sin = -0.9874)
  Jarlskog J     = -0.032755
- selector closure status: BOUNDED on chamber, with A-BCC and sigma_hier open.
+ Physical source/basis/branch selection and global uniqueness remain open.
 
 ----- stderr -----
 

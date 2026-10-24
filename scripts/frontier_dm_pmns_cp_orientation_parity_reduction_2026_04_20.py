@@ -1,26 +1,17 @@
 #!/usr/bin/env python3
 """
-DM PMNS CP-orientation parity reduction.
+Finite supplied-bank CP-orientation parity diagnostic.
 
-Question:
-  Once the compact chamber chi^2 = 0 set is known, what is the exact remaining
-  gap between the source-side CP orientation and the physical PMNS CP sign?
-
-Answer:
-  On the DM Hermitian family the source cubic orientation
-
-      I_src(H) = Im(H_12 H_23 H_31)
-
-  satisfies
-
-      J_basis = I_src(H) / ((lambda_1 - lambda_2)(lambda_2 - lambda_3)(lambda_3 - lambda_1))
-
-  for the ascending-eigenvalue basis, and any row permutation sigma adds only
-  its parity sign.  So the remaining gap is exactly a parity / doublet-label
-  law for sigma_hier, not another source-side CP-odd scalar.
+At three supplied Hermitian points, compare the source-cubic/Jarlskog relation
+and two row labelings. Simple-spectrum unitary parity algebra is conditional;
+no complete chamber census, physical row/source selection or I12 closure is
+established. Numerical functions, predicates and tolerances are preserved.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = ['docs/DM_PMNS_CP_ORIENTATION_PARITY_REDUCTION_NOTE_2026-04-20.md', 'scripts/frontier_sigma_hier_uniqueness_theorem.py']
 
 import math
 
@@ -130,7 +121,7 @@ def main() -> int:
             )
 
     print()
-    print("Part 3: chamber-sign structure")
+    print("Part 3: supplied-point sign structure")
     check("Basin 1 has positive source cubic orientation", sign_table["Basin 1"]["I_src"] > 0.0)
     check("Basin 2 has negative source cubic orientation", sign_table["Basin 2"]["I_src"] < 0.0)
     check("Basin X has negative source cubic orientation", sign_table["Basin X"]["I_src"] < 0.0)
@@ -146,7 +137,7 @@ def main() -> int:
     )
 
     print()
-    print("Part 4: conditional source law after the parity bit")
+    print("Part 4: stipulated finite-bank source filter")
     # On the odd-parity branch sigma=(2,1,0), I_src > 0 picks Basin 1 uniquely.
     odd_positive = []
     even_positive = []
@@ -158,23 +149,23 @@ def main() -> int:
             if permutation_sign(SIGMA_201) == 1:
                 even_positive.append(name)
     check(
-        "On the odd sigma branch, the coefficient-free source law I_src > 0 selects Basin 1 uniquely",
+        "Within the supplied bank, the stipulated I_src > 0 filter keeps Basin 1",
         odd_positive == ["Basin 1"],
         f"odd-positive={odd_positive}",
     )
     check(
-        "So once a parity / charged-doublet label law fixes sigma=(2,1,0), the source cubic sign also forces sin(delta_CP) < 0",
+        "Supplied Basin 1 has positive I_src and the chosen sigma=(2,1,0) has odd parity",
         sign_table["Basin 1"]["I_src"] > 0.0 and permutation_sign(SIGMA_210) == -1,
     )
 
     print()
-    print("Part 5: N5 execution certificate -- what this runner resolves")
+    print("Part 5: finite execution coverage -- no global or physical certificate")
     print(
         "  per_element: checked -- both sides of the bridge are assembled from named "
         "individual matrix entries, not from an aggregate invariant: I_src is "
         "Im(H_12 H_23 H_31) taken off three specific Hermitian entries, and every "
         "Jarlskog is Im(P_00 P_01* P_10* P_11) off four specific mixing entries, "
-        "compared entry-level at tolerance 1e-12 on all three chamber roots."
+        "compared entry-level at tolerance 1e-12 on all three supplied points."
     )
     print(
         "  per_site: checked and not executed -- this runner carries no lattice site "
@@ -186,8 +177,8 @@ def main() -> int:
         "  per_mode: checked -- np.linalg.eigh resolves the three eigenmodes "
         "individually with ascending lambda_1 < lambda_2 < lambda_3, Delta is built from "
         "all three pairwise mode gaps (l1-l2)(l2-l3)(l3-l1), and the permutation sigma is "
-        "precisely a relabeling of which eigenmode occupies which flavor slot; the "
-        "parity sign is verified mode-permutation by mode-permutation."
+        "a permutation of flavor-labeled rows while eigenmode columns remain fixed; the "
+        "parity sign is compared for the two supplied row permutations."
     )
     print(
         "  per_block: checked -- jarlskog() reads only the upper-left 2x2 block of the "
@@ -199,7 +190,7 @@ def main() -> int:
     print(
         "  lattice_wide: checked and not executed -- there is no lattice, extent, or "
         "asymptotic limit anywhere in this runner. The executed evidence is three "
-        "isolated exact chamber roots (Basin 1, Basin 2, Basin X) at fixed "
+        "isolated supplied points (Basin 1, Basin 2, Basin X) at fixed "
         "(m, delta, q_plus), with I_src positive only at Basin 1; no volume scaling or "
         "thermodynamic statement is attempted."
     )
@@ -208,17 +199,17 @@ def main() -> int:
     print("=" * 88)
     print("RESULT")
     print("=" * 88)
-    print("  Exact reduction:")
+    print("  Conditional algebra / finite observations:")
     print("    - the source family already carries a CP-oriented cubic scalar I_src")
     print("    - the ascending-eigenbasis Jarlskog is exactly I_src / Delta")
-    print("    - physical PMNS CP sign differs from that only by parity(sigma_hier)")
+    print("    - the computed row-labeled J sign changes by parity(sigma)")
     print()
     print("  Consequence:")
     print("    - source-side CP-odd data do not close sigma_hier by themselves")
-    print("    - the remaining gap for I12, and for the sign half of I5, is exactly")
-    print("      the parity / charged-doublet label law on sigma_hier")
-    print("    - once that parity bit is fixed to sigma=(2,1,0), the simple source law")
-    print("      I_src > 0 selects Basin 1 and yields sin(delta_CP) < 0 immediately")
+    print("    - physical source and row selection, completeness and I12 remain open;")
+    print("      row parity is one conditional labeling issue, not exhaustive closure")
+    print("    - with stipulated sigma=(2,1,0), the supplied-bank filter")
+    print("      I_src > 0 keeps Basin 1; this is not a derived physical selection")
     print()
     print(f"PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
     return 1 if FAIL_COUNT else 0

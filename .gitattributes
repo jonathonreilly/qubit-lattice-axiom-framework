@@ -118,3 +118,10 @@ archive_unlanded/memory_recovery_2026_09_03/** -whitespace
 /outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/run_01/stdout.txt whitespace=-blank-at-eof
 
 /archive/notes/review_feedback/pr9848-higgs-s4b-2026-10-23/cl3_higgs_mass_s4b_ewsb_selection_2026_05_10_s4bewsb.txt.txt -whitespace
+# Preserve byte-exact failed split2 source, patches and capture history.
+archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/** -whitespace
+# Byte-exact historical PR9844 note recovery (intentional Markdown hard breaks).
+archive/notes/review_feedback/pr9844-local-selector-2026-10-23/DM_PMNS_LOCAL_SELECTOR_FAMILY_NO_GO_THEOREM_NOTE_2026-04-20.md.txt -whitespace
+# Byte-exact recovery of the withdrawn broad flagship.
+archive/notes/review_feedback/pr9844-flagship-2026-10-23/DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17.md.txt -whitespace
+/archive/notes/review_feedback/pr9852-first-shoulder-hygiene-2026-10-23/** -whitespace

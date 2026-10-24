@@ -1,197 +1,46 @@
-# DM PMNS Chamber Spectral Completeness Boundary Note
+# DM PMNS finite seeded chamber-candidate diagnostic
 
 **Date:** 2026-04-20
 **Lane:** DM A-BCC / open import `I11`
-**Status:** bounded support - listed-root support; chamber-completeness
-upper bound is not derived
-**Type:** source boundary repair for the former compact-completeness theorem
+**Type:** open_gate
+**Status:** finite supplied-model numerical support; exact roots and completeness open
+**Status authority:** independent audit lane only; no audit verdict is set here.
+**Primary runner:** `scripts/frontier_dm_pmns_chamber_spectral_completeness_theorem_2026_04_20.py`
 
-**Status authority:** independent audit lane only. This source note does
-not set or move its own audit verdict; downstream audit lane and packet
-status are decided by the audit lane.
+## Construction and supplied premises
 
-**Primary runner:**
-`scripts/frontier_dm_pmns_chamber_spectral_completeness_theorem_2026_04_20.py`
+The runner explicitly supplies `H_BASE`, `T_M`, `T_D`, `T_Q` and the Hermitian matrix family `H(m,delta,q)=H_BASE+m*T_M+delta*T_D+q*T_Q`. It supplies the angle target `(0.307,0.0218,0.545)` and row-label permutations. Ascending numerical eigendecomposition produces the observable residuals. The chamber cut `q+delta>=sqrt(8/3)` is stipulated in this diagnostic; it is not a derived physical selection law.
 
-**Interval companion:**
-[`DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_KRAWCZYK_CERTIFICATE_NOTE_2026-05-16.md`](DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_KRAWCZYK_CERTIFICATE_NOTE_2026-05-16.md)
+Two ordered-eigenvalue parameterizations use `(lambda1,log(lambda2-lambda1),log(lambda3-lambda2))`. Their supplied reduced equations and rational reconstruction formulas are evaluated numerically. Exceptional denominators, exact-root existence, equivalence on a complete domain and global exhaustion are not proved here. The unchanged solver checks are finite numerical diagnostics, not interval arithmetic.
 
----
+## Exact execution scope
 
-## 0. Why this note is repaired
+For each reduced branch the runner uses four named seed spectra plus 500 pseudorandom seeds. For `(2,1,0)`, RNG seed 20260420 draws lambda1 in [-10,5], gap12 in [.05,50], gap23 in [.05,5000]. For `(2,0,1)`, seed 20260421 uses lambda1 in [-10,10] and the same gap intervals. It calls SciPy `root(method="hybr",tol=1e-13)`, requires solver success and residual infinity norm at most 1e-9, and deduplicates eigenvalue triples within 1e-6. A search-start box is not a proven bound on roots or solver iterates.
 
-An earlier version of this note stated that the compact active-chamber
-`chi^2 = 0` PMNS set was exactly three points:
+The additional direct chamber search starts from the three named chamber candidates and 250 random starts per each of six permutations, RNG seed 20260420. Its coordinates draw m in [-5,35], delta in [-2,25], and positive slack in [1e-3,50]; q is reconstructed as `sqrt(8/3)-delta+exp(log_slack)`. The existing seeded and random solver tolerances, residual filters, 1e-6 deduplication and 1e-9 chamber allowance are unchanged. Exceptions and unsuccessful solves are skipped as before; this behavior cannot exclude unlocated solutions.
 
-- Basin 1 on `sigma = (2,1,0)`;
-- Basin 2 on `sigma = (2,1,0)`;
-- Basin X on `sigma = (2,0,1)`.
+The checks compare the returned finite candidate lists and their supplied target residuals/chamber margins with named points. No PASS line establishes exact existence, uniqueness, an interval box, a complete bank or a physical PMNS source. Former literal-True boundary narration is unscored.
 
-The May 16 Krawczyk companion sharpened the science and exposed the missing
-half of that claim. It certifies existence and local uniqueness for the 8
-listed reduced spectral roots and certifies the chamber-side sign for those
-8 boxes. It does **not** certify an upper bound excluding additional reduced
-roots outside the listed boxes, and it does **not** certify that the four
-other row permutations carry no chamber roots.
+## Named points and counterexamples retained
 
-This repair keeps the supported computation and removes the unsupported
-global-completeness wording.
+The supplied chart coordinates `(m,delta,q)` include:
 
-## 1. Inputs
+| Name | Row labels | Supplied point |
+|---|---|---|
+| Basin1 | `(2,1,0)` | `(0.657061342210,0.933806343759,0.715042329587)` |
+| Basin2 | `(2,1,0)` | `(28.006188289565,20.721831213931,5.011599458305)` |
+| BasinN | `(2,1,0)` | `(0.501997247472,0.853543345404,0.425916455114)` |
+| BasinP | `(2,1,0)` | `(1.037883050950,1.433018557503,-1.329548075477)` |
+| BasinX | `(2,0,1)` | `(21.128263668694,12.680028023619,2.089234805861)` |
 
-This note depends on:
+The original runner retains all full-precision points, including the three other `(2,0,1)` seed spectra. BasinN and BasinP have negative supplied chamber margins (approximately -.3535 and -1.5295); they are retained counterexamples to identifying the whole supplied candidate list with its chamber subset. Basin1/2/X have positive floating margins. Signs at displayed decimals or located candidates are not interval-certified signs of exact roots.
 
-- [DM_PMNS_ASYMPTOTIC_SOURCE_NO_GO_NOTE_2026-04-20.md](./DM_PMNS_ASYMPTOTIC_SOURCE_NO_GO_NOTE_2026-04-20.md)
-- [DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_HALF_PLANE_THEOREM_NOTE_2026-04-16.md](./DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_HALF_PLANE_THEOREM_NOTE_2026-04-16.md)
-- [DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_AFFINE_POINT_SELECTION_BOUNDARY_NOTE_2026-04-16.md](./DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_AFFINE_POINT_SELECTION_BOUNDARY_NOTE_2026-04-16.md)
-- [DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_KRAWCZYK_CERTIFICATE_NOTE_2026-05-16.md](DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_KRAWCZYK_CERTIFICATE_NOTE_2026-05-16.md)
+## Unconfirmed contextual routes and open obligations
 
-The asymptotic source no-go removes the unbounded basin loophole that this
-compact-chamber packet complements; the active-half-plane theorem supplies
-the chamber inequality `q_+ + delta >= sqrt(8/3)`; the affine
-point-selection boundary supplies the affine Hermitian family
-`H(m, delta, q_+) = H_base + m T_m + delta T_delta + q_+ T_q`.
+The [Krawczyk companion](DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_KRAWCZYK_CERTIFICATE_NOTE_2026-05-16.md) and [asymptotic source note](DM_PMNS_ASYMPTOTIC_SOURCE_NO_GO_NOTE_2026-04-20.md) are historical/contextual proposed routes. Their local-box or infinity-tail conclusions are not imported as discharged premises of this owner. This runner does not execute or certify those arguments. The [active-half-plane](DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_HALF_PLANE_THEOREM_NOTE_2026-04-16.md) and [affine-family](DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_AFFINE_POINT_SELECTION_BOUNDARY_NOTE_2026-04-16.md) notes provide context for the explicitly supplied formulas; no physical provenance is inferred from their titles.
 
-## 2. Question
+Exact-root/enclosure certification, other branches, denominator coverage, infinity-tail exclusion, global completeness and physical selection all remain open. `I11` is not closed. The complete stronger note, runner and cache remain recoverable at `f00d5860eff9d8b6fdab9d5c3f2fc1d2fab63409` and in the repair evidence. Their claims and old PASS counts are historical, not current authority.
 
-After `DM_PMNS_ASYMPTOTIC_SOURCE_NO_GO_NOTE_2026-04-20.md` rules out
-unbounded exact PMNS-fit basins, what is actually supported for the
-remaining compact chamber problem?
+## Reproduction
 
-## 3. Bottom line
-
-Bounded support only.
-
-On the two branches with electron row fixed to the third axis,
-
-```text
-sigma = (2,1,0),  sigma = (2,0,1),
-```
-
-the PMNS angle constraints admit an ordered-eigenvalue reduction. In the
-finite multistart computation and in the Krawczyk companion boxes:
-
-- the `sigma = (2,1,0)` reduced system has the four listed roots
-  `{Basin 1, Basin 2, Basin N, Basin P}`;
-- the `sigma = (2,0,1)` reduced system has the four listed roots
-  `{Basin X, X_a, X_b, X_c}`;
-- the active-chamber inequality
-
-```text
-q_+ + delta >= sqrt(8/3)
-```
-
-strictly contains the listed boxes around
-
-```text
-{Basin 1, Basin 2, Basin X}
-```
-
-and strictly excludes the listed boxes around the other five candidates.
-
-The finite direct chamber sweep over all six row permutations returns the
-same three listed chamber roots. That is a useful empirical cross-check,
-but it is not a proof that no other chamber roots exist.
-
-## 4. Supported statement
-
-**Proposition (listed chamber-root support).** Fix the target PMNS angle
-triple
-
-```text
-(sin^2 theta_12, sin^2 theta_13, sin^2 theta_23)
-= (0.307, 0.0218, 0.545).
-```
-
-On the affine DM Hermitian family
-
-```text
-H(m, delta, q_+) = H_base + m T_m + delta T_delta + q_+ T_q,
-```
-
-the source computation supports the following finite listed-root packet:
-
-- the ordered-eigenvalue reduction recovers four listed real roots on
-  `sigma = (2,1,0)`, namely `Basin 1`, `Basin 2`, `Basin N`, `Basin P`;
-- it recovers four listed real roots on `sigma = (2,0,1)`, namely
-  `Basin X`, `X_a`, `X_b`, `X_c`;
-- the Krawczyk companion certifies a unique reduced-system zero in a
-  radius-`10^-6` box around each of the 8 listed candidates;
-- interval evaluation of `q_+ + delta - sqrt(8/3)` on those boxes certifies
-  that the listed chamber survivors are `Basin 1`, `Basin 2`, and `Basin X`.
-
-This proposition is a listed-root support statement, not a compact
-chamber-completeness theorem.
-
-## 5. Computed root packet
-
-The runner's current listed chart points are:
-
-- `sigma = (2,1,0)`:
-  - Basin 1: `(0.657061342210, 0.933806343759, 0.715042329587)`
-  - Basin 2: `(28.006188289565, 20.721831213931, 5.011599458305)`
-  - Basin N: `(0.501997247472, 0.853543345404, 0.425916455114)`
-  - Basin P: `(1.037883050950, 1.433018557503, -1.329548075477)`
-- `sigma = (2,0,1)`:
-  - Basin X: `(21.128263668694, 12.680028023619, 2.089234805861)`
-  - plus three off-chamber companions.
-
-Their chamber margins are:
-
-- Basin 1: `+0.0158555`;
-- Basin 2: `+24.1004`;
-- Basin N: `-0.3535`;
-- Basin P: `-1.5295`;
-- Basin X: `+13.1363`;
-- the three `sigma = (2,0,1)` companions: all negative.
-
-So the listed Krawczyk boxes split cleanly into three chamber-side boxes and
-five off-chamber boxes.
-
-## 6. Consequence for `I11`
-
-This packet does **not** close `I11`.
-
-It strengthens the compact-chamber support side:
-
-- the asymptotic theorem removes the infinity-tail loophole;
-- this packet and the Krawczyk companion certify the existence and chamber
-  sign of the 8 listed reduced-system roots.
-
-The remaining `I11` gap is the upper-bound side:
-
-- no additional reduced-spectral roots outside the listed boxes;
-- no additional chamber `chi^2 = 0` roots on the other row permutations.
-
-Until one of those exclusion certificates is supplied, downstream consumers
-may cite this packet only as bounded listed-root support.
-
-## 7. What this does and does not say
-
-What is supported:
-
-- the 8 listed reduced-system roots exist in disjoint Krawczyk boxes;
-- the three listed chamber survivors lie strictly in the active chamber;
-- the five listed off-chamber companions lie strictly outside it;
-- the finite direct chamber sweep returns the same three listed survivors.
-
-What is not claimed:
-
-- exact compact chamber completeness;
-- an upper bound excluding additional reduced roots;
-- a Sturm, resultant, or cover-based no-other-roots certificate;
-- that Basin 1 is selected without further law;
-- that off-chamber real roots are physically relevant;
-- that `sigma_hier` is derived.
-
-## 8. Reproduction
-
-```bash
-PYTHONPATH=scripts python3 scripts/frontier_dm_pmns_chamber_spectral_completeness_theorem_2026_04_20.py
-```
-
-Expected final line:
-
-```text
-PASS=11  FAIL=0
-```
+Run `PYTHONPATH=scripts python3 scripts/frontier_dm_pmns_chamber_spectral_completeness_theorem_2026_04_20.py` with the declared 300-second bound. The canonical cache records the actual finite result and any failures; no expected result is substituted for execution.

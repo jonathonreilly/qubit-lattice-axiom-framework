@@ -1,0 +1,27 @@
+# Split-2 proposed canonical owner: HOLD
+
+Source: 26878429adf81e855c90d1f2e3466b85ede2cc62. Exact note, primary and necessary helper identities are in source-identities.json. Full note and 495-line primary were read, together with the affine/q-floor definitions and numerical kernel construction. This is a new bounded review of this owner, not approval inherited from the other sixteen owners or historical PASS output.
+
+## Decisive findings
+
+1. The Weyl perturbation radius uses the wrong delta generator. Because q_plus=E1-delta+slack, the generator at fixed slack is T_DELTA-T_Q, namely [[0,-2,0],[-2,1,-1],[0,-1,-1]]. Its exact characteristic polynomial is (x+2)(x²-2x-2), so its norm is 1+sqrt(3), not sqrt(3). The valid generator-sum radii are approximately .0261602540378444 and .0144667295593008, rather than .0211602540378444 and .0119167295593007. Independently evaluated corner operator norms .0225 and .0126 exceed the purported norm bounds. The sampled eigenvalue shifts do NOT violate the claimed eigenvalue intervals; neither this sampling nor the error proves those intervals false. It invalidates their supplied Weyl justification. Preserve this distinction.
+
+2. The interval operations use ordinary nearest-rounded floating arithmetic, with no outward rounding or error enclosure. For example the implemented addition on singleton intervals [1,1] and [2^-54,2^-54] returns [1,1], excluding their exact sum. Center eigvalsh values and irrational constants likewise have no certified enclosure. Thus this implementation does not establish a rigorous box certificate. Clamping projector weights to [0,1] is valid only after valid enclosure; its subsequent inside-[0,1] check cannot supply the missing proof.
+
+3. The purported kernel supremum checks endpoints plus one stationary point located by bisection on [0,.05]. No uniqueness/global-max proof or exhaustive critical-point enclosure is supplied. Positivity alone does not supply it: q*(1000 exp(-1000q)+exp(-5q)) has derivative signs +,-,+,- at .0001,.005,.02,.3. This is a counterexample to a generic unimodality inference, NOT a counterexample for the actual supplied kernel. That actual kernel is an ODE/gradient/trapezoid numerical fixture; an unexplained 1e-15 addition does not certify its error or a continuous transport law.
+
+4. Even corrected certified bounds on these two supplied boxes would not prove that they exhaust all residual carriers, select a physical packet, or close source/PMNS/completeness obligations. The runner's textual neighborhood checks are not a localization proof. The note's global closure language therefore exceeds this owner's evidence and conflicts with the conditional numerical-kernel helper scope.
+
+## Confirmed reusable mathematics
+
+For a supplied Hermitian three-by-three matrix with simple spectrum, each diagonal spectral-projector weight is the corresponding principal cofactor divided by the product of eigenvalue gaps. Independent symbolic expansion confirms all three numerator formulas in this primary exactly. A corrected Weyl generator-sum bound is valid for real box coordinates. These conditional identities do not certify the floating interval implementation, kernel supremum, localization, or physical normalization.
+
+## Smallest honest repair choices
+
+For a bounded diagnostic owner: correct the delta generator; change the note, runner labels and summary components to explicitly uncertified numerical box-estimate diagnostics for supplied boxes/kernel/normalization; remove whole-box certified dominance and residual-carrier completeness assertions. The finite numerical checks may be reported only as those checks. Preserve the old source, cache, invalid certificate and this counterexample. Refresh the actual primary capture and all actual dependent input caches after final source composition. The summary cannot continue claiming a positive interval theorem under that owner.
+
+If a positive whole-box theorem is required instead, supply outward-rounded arithmetic, certified center eigenvalue/constants enclosures, a rigorous kernel supremum over every relevant projector interval (and explicitly specify whether only the finite supplied kernel or an error-controlled continuum kernel), then certify the corrected boxes. Global completeness additionally requires a separate genuine localization proof. Those are new proof obligations, not metadata repairs.
+
+No wrong owner, metadata exemption, or cache-only rerun closes these gaps. Required type/declarations/current-cache packaging follows only the resulting scientifically honest scope. Other sixteen owner confirmations are unaffected. No canonical science runner, pipeline, source edit or remote action was performed for this review.
+
+Evidence: decisive.py/decisive.json (independent matrices and finite corner checks), algebra-controls.json (exact symbolic cofactor/generator checks and explicit arithmetic/unimodality counterexamples). The latter generic controls do not claim failure of the actual kernel's numerical maximizer.

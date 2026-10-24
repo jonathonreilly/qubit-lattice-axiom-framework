@@ -1,40 +1,9 @@
 #!/usr/bin/env python3
-"""
-DM neutrino K00 bosonic normalization theorem.
-
-Framework convention:
-  "axiom" means only the single framework axiom Cl(3) on Z^3.
-
-Question:
-  Can the exact heavy-neutrino-basis diagonal normalization
-
-      K00 = (K_mass)00
-
-  be fixed canonically from the current exact source package and the unique
-  additive CPT-even bosonic observable?
-
-Answer:
-  Yes.
-
-  The target functional K00 has the exact Frobenius-dual generator
-
-      F00 = J3 / 3
-
-  with J3 the 3x3 all-ones matrix, while the exact swap-even weak source mode
-  tau_+ lives on the 2x2 row-sum generator
-
-      J2 = [[1,1],[1,1]].
-
-  Since F00 is isospectral to (1/2) J2, the bosonic observable principle fixes
-
-      K00 = 2 tau_+.
-
-  On the sharp source-oriented branch tau_+ = 1, so
-
-      K00 = 2.
-"""
+"""Scalar-baseline response correspondence; K00=2*tau is a separate coefficient-identification premise."""
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
 
 import math
 import sys
@@ -146,9 +115,9 @@ def part1_k00_has_an_exact_uniform_projector_generator() -> None:
     )
 
 
-def part2_f00_is_isospectral_to_the_scaled_source_row_sum_generator() -> None:
+def part2_f00_shares_nonzero_spectrum_with_scaled_source_row_sum_generator() -> None:
     print("\n" + "=" * 88)
-    print("PART 2: F00 IS ISOSPECTRAL TO THE SCALED SOURCE ROW-SUM GENERATOR")
+    print("PART 2: F00 SHARES THE NONZERO SPECTRUM OF THE SCALED SOURCE ROW-SUM GENERATOR")
     print("=" * 88)
 
     eig_f00 = np.linalg.eigvalsh(F00)
@@ -165,15 +134,15 @@ def part2_f00_is_isospectral_to_the_scaled_source_row_sum_generator() -> None:
         f"eig(FROW)={np.round(eig_frow, 12)}",
     )
     check(
-        "So the target diagonal channel and the scaled source row-sum mode are exactly isospectral",
-        True,
+        "Both generators have the same nonzero rank-one projector spectrum",
+        np.linalg.norm(F00@F00-F00)<1e-12 and np.linalg.norm(FROW@FROW-FROW)<1e-12 and abs(np.trace(F00)-np.trace(FROW))<1e-12,
         "both have one nonzero eigenvalue +1 and otherwise zero spectrum",
     )
 
 
 def part3_the_bosonic_observable_principle_fixes_k00_to_2_tau_plus() -> None:
     print("\n" + "=" * 88)
-    print("PART 3: THE BOSONIC OBSERVABLE PRINCIPLE FIXES K00 = 2 TAU_PLUS")
+    print("PART 3: SCALAR-BASELINE RESPONSE AND SUPPLIED COEFFICIENT MATCH")
     print("=" * 88)
 
     mass = 1.73
@@ -193,7 +162,7 @@ def part3_the_bosonic_observable_principle_fixes_k00_to_2_tau_plus() -> None:
     tau_plus = 1.0
     k00 = 2.0 * tau_plus
     check(
-        "Because the physical source amplitude multiplies J2 rather than (1/2)J2, the exact coefficient law is K00 = 2 tau_+",
+        "Under the extra supplied identification K00=2*tau, tau=1 gives 2",
         abs(k00 - 2.0) < 1e-12,
         f"K00/tau_+ = {k00 / tau_plus:.12f}",
     )
@@ -201,7 +170,7 @@ def part3_the_bosonic_observable_principle_fixes_k00_to_2_tau_plus() -> None:
 
 def part4_the_sharp_source_oriented_branch_gives_k00_equal_2() -> None:
     print("\n" + "=" * 88)
-    print("PART 4: THE SHARP SOURCE-ORIENTED BRANCH GIVES K00 = 2")
+    print("PART 4: SUPPLIED AMPLITUDES WITH EXTRA COEFFICIENT IDENTIFICATION")
     print("=" * 88)
 
     tau_E = 0.5
@@ -210,7 +179,7 @@ def part4_the_sharp_source_oriented_branch_gives_k00_equal_2() -> None:
     k00 = 2.0 * tau_plus
 
     check(
-        "The exact source package already fixes tau_E = tau_T = 1/2",
+        "The supplied source amplitudes are tau_E = tau_T = 1/2",
         abs(tau_E - 0.5) < 1e-12 and abs(tau_T - 0.5) < 1e-12,
         f"(tau_E,tau_T)=({tau_E:.6f},{tau_T:.6f})",
     )
@@ -220,7 +189,7 @@ def part4_the_sharp_source_oriented_branch_gives_k00_equal_2() -> None:
         f"tau_+={tau_plus:.12f}",
     )
     check(
-        "So the exact diagonal normalization is K00 = 2",
+        "The additionally identified K00 equals 2 for those supplied inputs",
         abs(k00 - 2.0) < 1e-12,
         f"K00={k00:.12f}",
     )
@@ -231,8 +200,9 @@ def main() -> int:
     print("DM NEUTRINO K00 BOSONIC NORMALIZATION THEOREM")
     print("=" * 88)
 
+    check("Generator spectra alone do not impose K00=2*tau", abs(np.trace(3*np.eye(3)@F00)-2.0)>0.5, "H=3I and supplied tau=1 give K00=3 versus 2*tau=2")
     part1_k00_has_an_exact_uniform_projector_generator()
-    part2_f00_is_isospectral_to_the_scaled_source_row_sum_generator()
+    part2_f00_shares_nonzero_spectrum_with_scaled_source_row_sum_generator()
     part3_the_bosonic_observable_principle_fixes_k00_to_2_tau_plus()
     part4_the_sharp_source_oriented_branch_gives_k00_equal_2()
 

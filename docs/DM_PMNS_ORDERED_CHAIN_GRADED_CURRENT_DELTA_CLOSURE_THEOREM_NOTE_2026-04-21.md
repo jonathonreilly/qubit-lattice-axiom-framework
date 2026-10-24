@@ -1,300 +1,35 @@
-# DM PMNS Ordered-Chain Graded-Current Delta Closure Theorem
+# Ordered-chain graded-current coordinate recovery
 
-**Date:** 2026-04-21  
-**Lane:** exact-target native/source-map completion
-**Status:** support - structural or confirmatory support note
-**Primary runner:**  
-`scripts/frontier_dm_pmns_ordered_chain_graded_current_delta_closure_2026_04_21.py`
+**Type:** bounded_theorem
+**Status:** conditional algebra / supplied finite evidence; physical selection open
+**Primary runner:** `scripts/frontier_dm_pmns_ordered_chain_graded_current_delta_closure_2026_04_21.py`
 
----
+Supply the affine chart H=Hbase+m*Tm+delta*Tdelta+q_+*Tq, grading N=diag(1,2,3), and the specified linear character current J_chi. Define J_N(H)=J_chi(i[N,H]). This construction recovers coordinates from a supplied H; it does not determine the values of the currents or select H.
 
-## 0. Executive summary
+## Exact affine identities
 
-The exact-target native/source-map last mile had already been reduced to one exact remaining
-real object:
+On the stated basis,
 
-```text
-after current activation closes q_+,
-derive one additional sole-axiom law for the
-delta / Im(K_Z3[1,2]) direction
-on the retained hw=1 response family.
-```
+    J_N(Hbase)=-1/2+i*E1/2, J_N(Tm)=0,
+    J_N(Tdelta)=-i/2, J_N(Tq)=-3i/2,
+    J_chi(H)=q_+-i/4.
 
-That remaining scalar is now closed.
+Linearity gives J_N(H)=-1/2+i*(E1/2-delta/2-3*q_+/2). Consequently
 
-The graph-first selector, cycle-frame support theorem, and adjacent-chain path
-algebra had already fixed the canonical ordered-chain grading
+    q_+=Re J_chi(H),
+    delta=E1-2*Im J_N(H)-3*Re J_chi(H).
 
-```text
-N = diag(1,2,3).
-```
+The real map (delta,q_+) -> (Im J_N,Re J_chi) has Jacobian [[-1/2,-3/2],[0,1]], determinant -1/2. It is invertible and preserves two real degrees of freedom. Thus coordinate recovery is exact while selection of the two current values remains open. The spectator m is not selected by this pair.
 
-Define the ordered-chain graded current
+## Response reconstruction and limits
 
-```text
-J_N(H) := J_chi(i [N,H]).
-```
+The runner also constructs sector fixtures from supplied effective blocks, recovers those blocks from hw=1 response columns and checks the same coordinates. This tests recovery of a supplied target, not derivation of that target from axioms. A function signature that accepts H rather than named target parameters does not remove the physical information already in H.
 
-On the physical affine Hermitian chart
+The grading and current definitions are explicit inputs here. Their availability does not prove their values at the physical point. No exact-target native-source closure, scalar selection, or whole-package closure follows. No changes are made to the unrelated Koide/quark/scale lanes.
 
-```text
-H(m, delta, q_+) = H_base + m T_m + delta T_delta + q_+ T_q
-```
+## Provenance and related definitions
 
-this current obeys the exact affine formula
-
-```text
-J_N(H) = -1/2 + i (E1/2 - delta/2 - 3 q_+/2),
-```
-
-where `E1 = sqrt(8/3)`.
-
-Together with the already-landed affine current law
-
-```text
-J_chi(H) = q_+ - i/4,
-```
-
-the physical affine active pair is now recovered exactly by
-
-```text
-q_+(H) = Re J_chi(H),
-delta(H) = E1 - 2 Im J_N(H) - 3 Re J_chi(H).
-```
-
-The same two-current law survives exactly after passage to the retained `hw=1`
-response columns. So the remaining exact-target native/source-map scalar
-last mile is closed on the physical affine/source family.
-
----
-
-## 1. Inputs
-
-This closure uses only already-landed same-branch structures.
-
-1. `DM_PMNS_GRAPH_FIRST_ORDERED_CHAIN_NONZERO_CURRENT_ACTIVATION_THEOREM_NOTE_2026-04-21.md`
-   fixes the canonical ordered-chain grading
-   `N = diag(1,2,3)` from the graph-first selector, cycle frame, and
-   adjacent-chain algebra.
-2. `DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_AFFINE_POINT_SELECTION_BOUNDARY_NOTE_2026-04-16.md`
-   gives the exact physical affine chart
-
-   ```text
-   H(m, delta, q_+) = H_base + m T_m + delta T_delta + q_+ T_q.
-   ```
-
-3. `DM_PMNS_AFFINE_CURRENT_COORDINATE_REDUCTION_THEOREM_NOTE_2026-04-21.md`
-   gives the exact affine current law
-
-   ```text
-   J_chi(H) = q_+ - i/4.
-   ```
-
-So only one additional real law remained.
-
----
-
-## 2. Canonical graded current
-
-Let
-
-```text
-N = diag(1,2,3)
-```
-
-be the canonical ordered-chain grading.
-
-Define the graded current
-
-```text
-J_N(H) := J_chi(i [N,H]).
-```
-
-This is still a sole-axiom graph-first object:
-
-- `N` is fixed by the ordered chain;
-- `J_chi` is the already-landed native nontrivial-character current;
-- no PMNS target values enter its definition.
-
----
-
-## 3. Exact affine basis values
-
-On the physical affine basis one has:
-
-```text
-J_N(H_base)   = -1/2 + i E1/2,
-J_N(T_m)      = 0,
-J_N(T_delta)  = - i/2,
-J_N(T_q)      = - 3 i/2.
-```
-
-Therefore affine linearity gives the full chart formula
-
-```text
-J_N(H(m, delta, q_+))
-  = J_N(H_base) + m J_N(T_m) + delta J_N(T_delta) + q_+ J_N(T_q)
-  = -1/2 + i (E1/2 - delta/2 - 3 q_+/2).
-```
-
-This is exact.
-
----
-
-## 4. The affine pair closes exactly
-
-The earlier affine current theorem already gave:
-
-```text
-J_chi(H) = q_+ - i/4.
-```
-
-So
-
-```text
-q_+(H) = Re J_chi(H).
-```
-
-Now use the graded-current formula:
-
-```text
-Im J_N(H) = E1/2 - delta/2 - 3 q_+/2.
-```
-
-Substituting `q_+ = Re J_chi(H)` yields
-
-```text
-delta(H) = E1 - 2 Im J_N(H) - 3 Re J_chi(H).
-```
-
-Hence the full physical affine active pair is recovered natively from the
-ordered-chain current pair:
-
-```text
-(delta, q_+)  <->  (J_N, J_chi).
-```
-
-So the graph-first current-activation theorem plus this graded-current closure
-now determine the entire physical affine point-selection pair.
-
----
-
-## 5. The theorem
-
-> **Theorem (ordered-chain graded-current delta closure).**
->
-> Assume:
->
-> 1. the graph-first ordered-chain current-activation theorem;
-> 2. the exact affine Hermitian source chart;
-> 3. the affine current-coordinate reduction theorem.
->
-> Then:
->
-> 1. the ordered-chain graded current
->
->    ```text
->    J_N(H) := J_chi(i [N,H])
->    ```
->
->    is a sole-axiom graph-first scalar law on the physical affine/source
->    family;
-> 2. on the affine chart it satisfies
->
->    ```text
->    J_N(H) = -1/2 + i (E1/2 - delta/2 - 3 q_+/2);
->    ```
->
-> 3. together with
->
->    ```text
->    J_chi(H) = q_+ - i/4,
->    ```
->
->    it recovers the full physical affine active pair exactly:
->
->    ```text
->    q_+(H) = Re J_chi(H),
->    delta(H) = E1 - 2 Im J_N(H) - 3 Re J_chi(H);
->    ```
->
-> 4. the same recovery survives exactly on the retained `hw=1` response family.
->
-> Therefore no exact-target native/source-map last-mile residue remains on the physical
-> affine/source family.
-
-### Proof sketch
-
-The graph-first ordered-chain theorem fixes `N = diag(1,2,3)` canonically.
-
-The runner verifies the basis values
-
-```text
-J_N(H_base) = -1/2 + i E1/2,
-J_N(T_m) = 0,
-J_N(T_delta) = -i/2,
-J_N(T_q) = -3i/2,
-```
-
-which immediately imply the affine formula above.
-
-The earlier affine current theorem gives the exact `q_+` readout. Solving the
-imaginary part of the graded current for `delta` then gives the exact
-recovery law.
-
-The same formulas are verified again after reconstruction from retained
-`hw=1` response columns, so the law survives on the actual response-family
-carrier rather than only on an abstract affine chart.
-
-QED.
-
----
-
-## 6. Consequence for the open map
-
-Before this theorem, the honest exact-target native/source-map wording was:
-
-```text
-current activation closes q_+,
-but one additional real delta / Im(K_Z3[1,2]) law remains.
-```
-
-After this theorem, that residual is gone.
-
-The current-package DM lane was already closed. Now the exact-target
-native/source map is closed too: the same graph-first ordered-chain structure
-supplies both native currents needed to recover the full physical affine
-point-selection pair on the retained `hw=1` response family.
-
----
-
-## 7. What this does not touch
-
-This theorem does **not** address:
-
-- the charged-lepton Koide open bridges,
-- the downstream lepton scale lane,
-- the quark bounded endpoint/readout lane.
-
-It is only the DM exact-target native/source-map last-mile closure.
-
----
-
-## 8. Reproduction
-
-```bash
-PYTHONPATH=scripts python3 scripts/frontier_dm_pmns_ordered_chain_graded_current_delta_closure_2026_04_21.py
-```
-
-Expected:
-
-```text
-SUMMARY: PASS=17 FAIL=0
-```
-
-## Audit dependency repair links
-
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+Prior text is recoverable at Git `f24d17d97d372df977476e4a69674577f31af575` under this path. References supply the chart/definitions; this note does not inherit their entire physical or completeness claims.
 
 - [dm_pmns_graph_first_ordered_chain_nonzero_current_activation_theorem_note_2026-04-21](DM_PMNS_GRAPH_FIRST_ORDERED_CHAIN_NONZERO_CURRENT_ACTIVATION_THEOREM_NOTE_2026-04-21.md)
 - [dm_neutrino_source_surface_active_affine_point_selection_boundary_note_2026-04-16](DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_AFFINE_POINT_SELECTION_BOUNDARY_NOTE_2026-04-16.md)

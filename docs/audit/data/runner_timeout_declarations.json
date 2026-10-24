@@ -1237,6 +1237,11 @@
       "source_sha256": "ecc7730045468331958400b4c6121f3994ad9d6392519dc163b826e24ff29c60",
       "timeout_sec": 120,
       "reason": "Bounded finite axis-action covariance and eight-dimensional sector witness; excludes QCA campaigns and pair enumeration."
+    },
+    "scripts/supplied_positive_definite_logdet_variational_identity_2026_10_23.py": {
+      "source_sha256": "c59057d39ae2a42495ddc229a69f5eef3225d1a35de4e5194654c818145d5d8c",
+      "timeout_sec": 120,
+      "reason": "Finite supplied positive-definite logdet fixtures and boundary controls only; no transport or selector campaign."
     }
   }
 }

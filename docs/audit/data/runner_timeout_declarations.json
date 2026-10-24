@@ -1069,6 +1069,11 @@
       "source_sha256": "a8f129b8df2eef94023ee5ba72a9c3220317defb01676aa4a0e9c96f21a21a35",
       "timeout_sec": 120,
       "reason": "Single bounded C9 supplied sector capture; all original finite predicates retained, no optimizer/campaign replay."
+    },
+    "scripts/one_qubit_tick_update_covariance_limits_2026_10_21.py": {
+      "source_sha256": "5fa9d0f0a3078dc88509369f5d7f8a98346ab1bb8b31927d3ef417d829083e72",
+      "timeout_sec": 300,
+      "reason": "Bounded exact cubic projection and preserved supplied-model diagnostics; source-hash bound."
     }
   }
 }

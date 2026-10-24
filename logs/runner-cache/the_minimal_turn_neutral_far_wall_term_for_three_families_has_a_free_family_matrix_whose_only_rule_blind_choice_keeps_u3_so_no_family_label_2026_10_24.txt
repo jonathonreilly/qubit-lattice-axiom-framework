@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/the_minimal_turn_neutral_far_wall_term_for_three_families_has_a_free_family_matrix_whose_only_rule_blind_choice_keeps_u3_so_no_family_label_2026_10_24.py
+runner_sha256: dd217cd3d8c331ce0b7d431fc01854f1e0479e986f5bdedcd61d3f78f508b176
+input_fingerprint_sha256: 123619aca431bdfb7df5fe31fb4cd33e65fb3c35b525ae425dad8a59d3f32ae0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+== A. lattice, turn charge, anomaly [T]
+PASS A1 l1,l2 neutral, K-null, mutually null, primitive (gcd minors=1) | gcd=1
+PASS A2 turn charge (q=1, k=0) of n1 l1+n2 l2 is 2(n1+n2) mod 3
+PASS A3 per-family Z3 anomaly (K q^2, K q QA, K q QB) = (0,2,2): mixed term 2N_f = 0 mod 3 iff N_f = 0 mod 3 | coeffs=(0, 2, 2); N_f=1,2,3 -> [2, 1, 0]
+== B. fewest-change turn-neutral L in the lattice [T]
+PASS B1 minimum norm 8, only +-(l2-l1) = +-(1,3,-3,-1); it CONSERVES mode number (sum L = 0) | [(1, 3, -3, -1), (-1, -3, 3, 1)]
+PASS B2 minimal mode-number-breaking turn-neutral L: norm 12, four vectors (two up to sign) | [(-5, 0, 3, -4), (-4, 3, 0, -5), (4, -3, 0, 5), (5, 0, -3, 4)] sumL=[-6, -6, 6, 6]
+== C. family distributions of L=(1,3,-3,-1) over 3 families [T]
+PASS C1 null norm-8 distributions; the one-site (Pauli) ones force flavours 4,5 = (1,1,1): 9 tuples (i,j) | null=414, one-site=9, sites needed in rest=[1, 2, 3]
+== D/E. tensor and u(3) commutant (tangent space) [T]/[F]
+PASS D1 tensor space 3b x L3(3b) x L3(3) x 3 has dim 9 (C_ij); u(3)- and su(3)-invariant subspaces both dim 1 (C = 1)
+PASS D2 family centre w*1 acts on the norm-8 term as w^(-sum L) = 1 (generator check: action = 0); the q=1 turn IS this centre
+PASS E1 commutant dims: C=1 -> 9 (u(3), contains SU(3)); generic -> 1; E11 -> 5; diag(1,2,3) -> 3; diag(1,1,2) -> 5 | {'C=1': 9, 'generic': 1, 'rank1 E11': 5, 'diag(1,2,3)': 3, 'diag(1,1,2)': 5}
+PASS E2 every non-invariant choice lies on a U(3) orbit of dim 9-stab >= 4: minimal term NOT unique | orbit dims={'C=1': 0, 'generic': 8, 'rank1 E11': 4, 'diag(1,2,3)': 6, 'diag(1,1,2)': 4}
+PASS E3 rephasing of the 9 monomials by the 6 free mode phases has rank 5: 4 phases of a generic C are not removable
+== G. control: k = -q_mirror frame (turn imposes nothing) [T]
+PASS G1 minimal term l1 (norm 6) one-site tensor space dim 81 has NO su(3) singlet; centre phase w^(-2) != 1
+PASS G2 a generic real choice there has discrete commutant (dim 0), but it is a choice from an 81-dim space
+== H. a symmetric gapping SET at N_f = 3 (bosonic lattice) [T]
+PASS H1 N_f=1: the unique Lagrangian lattice (graph of R) has a turn-charged element: no symmetric gapping | charges=[0, 2]
+PASS H2 N_f=3: graph of R x (2J/3 - 1) is primitive, Lagrangian, A,B-neutral and turn-NEUTRAL (all elements) | rank=6, charges=[0]
+PASS H3 control: the family-diagonal N_f=3 lattice (U = 1) is turn-charged (spontaneous turn breaking) | charges=[0, 2]
+PASS H4 family-net charges of the set have rank 3: no continuous family torus survives (discrete residue)
+PASS H5 all 6 family permutations map the set's lattice to itself: S3 kept, so the three families are NOT distinguished (R1 fails)
+PASS H6 the family map U = 2J/3 - 1 is real (antiunitary with X = 1 kept, R2 fails); its u(3) commutant is u(1)+u(2), dim 5
+PASS H7 none of the 9 minimal (norm-8) monomials lies in this gapping lattice: the minimal term is not part of it
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

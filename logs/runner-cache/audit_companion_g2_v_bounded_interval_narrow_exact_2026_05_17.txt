@@ -1,21 +1,24 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.py
-runner_sha256: ddcddaa49c97e53ade486b9d6e6e69d8f465af6c78ff51657b75ff35ffe20c8e
-timeout_sec: 120
+runner_sha256: 3e4b70aa7acb1d2581ec2f12b4f63e0a634bae0b57553241c9656c350f90e5b1
+input_fingerprint_sha256: 9cbbf1fde88f70f84b84d3799569c6efed8de971a1251175e3056d8ff09e8882
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.42
+elapsed_sec: 0.27
 status: ok
 ----- stdout -----
 ========================================================================================
 Audit companion (exact-symbolic) for
 G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17
 Goal: sympy verification of g_2(v) bounded interval from u_0 in [0.96, 0.98]
-Inputs (cited):
+Conditional supplied-input algebra; not a physical uncertainty interval or observational match.
+Real coupling requires positive denominator throughout the input interval.
+Inputs (cited propositions, no current retained authority asserted):
   (X1) u_0(SU(2)) in [96/100, 98/100]   ... native beta=16 one-plaquette bridge
-  (X2) b_2 = 19/6                        ... retained_bounded
-  (X3) Cl(3) bivector -> SU(2)           ... retained
-  (X4) 1/alpha_2^bare |_lattice = 16 pi  ... retained_bounded one-hop anchor
-  (X5) alpha_2^tadpole = alpha_bare/u_0^2 ... retained
+  (X2) b_2 = 19/6                        ... supplied
+  (X3) Cl(3) bivector -> SU(2)           ... supplied
+  (X4) 1/alpha_2^bare |_lattice = 16 pi  ... supplied one-hop anchor
+  (X5) alpha_2^tadpole = alpha_bare/u_0^2 ... supplied
   (X6) ln(M_Pl/v_cand) = 38.442..., L=38.44 rounded ... framework bridge
   (X7) one-loop inverse-alpha integration ... framework bridge
 ========================================================================================
@@ -24,7 +27,7 @@ Inputs (cited):
 Part 0: source-packet dependency repair checks
 ----------------------------------------------------------------------------------------
   [PASS (A)] source note exists  (docs/G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md)
-  [PASS (A)] (X4) source note cites the retained_bounded SU2 lattice-alpha anchor
+  [PASS (A)] (X4) source note cites the supplied SU2 lattice-alpha anchor
   [PASS (A)] (X4) source note does not leave YT_EW as a load-bearing markdown edge
   [PASS (A)] (X4) source note does not leave G_BARE_CANONICAL as a load-bearing markdown edge
   [PASS (A)] (X4) source note states the coupling input is not rederived here
@@ -85,8 +88,8 @@ Part 6: explicit bounded interval g_2(v) in [g_lo, g_hi]
   [PASS (A)] (I1) interval lower endpoint g_lo = g_2(v) at u_0 = 0.98  (g_lo = 0.659392836187)
   [PASS (A)] (I2) interval upper endpoint g_hi = g_2(v) at u_0 = 0.96  (g_hi = 0.682834304554)
   [PASS (A)] (I3) g_lo < g_hi (interval is non-empty)  (g_lo - g_hi = -0.0234414683670)
-  [PASS (A)] (I4) g_lo > 0.6 (loose physical sanity bound)  (g_lo = 0.6593928362)
-  [PASS (A)] (I5) g_hi < 0.75 (loose physical sanity bound)  (g_hi = 0.6828343046)
+  [PASS (A)] (I4) g_lo > 0.6 (loose numerical range check)  (g_lo = 0.6593928362)
+  [PASS (A)] (I5) g_hi < 0.75 (loose numerical range check)  (g_hi = 0.6828343046)
 
 ----------------------------------------------------------------------------------------
 Part 6b: weak-coupling 0.988 comparator is outside parent X1 interval

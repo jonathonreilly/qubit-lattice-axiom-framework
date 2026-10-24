@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/su2_u0_single_plaquette_beta16_native_interval_2026_06_18.py
-runner_sha256: e2aa9b85d9fa2aa5b3e2b32e5169a6afb869cf24b104421763de899a4cd6ebc7
-timeout_sec: 120
+runner_sha256: 35b70481d81781e0ba689f4202cf05eef3f76d3a831653a21159e6c22dd6b4dc
+input_fingerprint_sha256: 3267ccfaae63409cb83968bffbd5faf758b518932c4d8a3deada09348a8f5013
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.30
+elapsed_sec: 0.18
 status: ok
 ----- stdout -----
 SU(2) beta=16 one-plaquette u0 native interval certificate

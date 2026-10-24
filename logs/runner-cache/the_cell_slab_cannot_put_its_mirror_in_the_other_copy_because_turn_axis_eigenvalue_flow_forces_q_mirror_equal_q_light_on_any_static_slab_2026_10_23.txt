@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/the_cell_slab_cannot_put_its_mirror_in_the_other_copy_because_turn_axis_eigenvalue_flow_forces_q_mirror_equal_q_light_on_any_static_slab_2026_10_23.py
+runner_sha256: 5d716ca5309c72c176c48ea0e92354c8210b55a8ba333134060768bb9ca1c153
+input_fingerprint_sha256: 0641077ebc48d794944a327969b11265b2dcd88e5c90283b3d40859c97b16fd1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.03
+status: ok
+----- stdout -----
+== A. the copy sign on CL-1's cell
+PASS: A1 [T] at K = 0 the copy sign s commutes with R_e, R_o, eps and the turn, so every cell-built layer term (any m(l), Mc(l), hop built from R_e, R_o, eps, s) keeps s exactly at K = 0; at generic K s fails to commute with R_o: the copy is a K = 0 label  [K=0 defect 6e-18; generic K |[s,R_o]| 0.33]
+PASS: A2 [T] turn spectra on the copies at K = 0: s = +1 {1,1,w,w}, s = -1 {1,1,w^2,w^2}; the w sector is s+ only, the w^2 sector s- only  [exponents {1: [0, 0, 1, 1], -1: [0, 0, 2, 2]}]
+== B. candidate (a): m(layer) from the (0, Mc) window to the (2, 2 + Mc) window, Mc = 1, Ls = 32
+PASS: B1 [T]/[F] uniform windows: (0, Mc) holds s+ (q 2) on BOTH walls (near +1, far -1); (2, 2 + Mc) holds s- (q 1) on BOTH walls (near -1, far +1)  [m=0.5: l0 s+1 h+1 q2; l31 s+1 h-1 q2 | m=2.5: l0 s-1 h-1 q1; l31 s-1 h+1 q1]
+PASS: B2 [F] both end phases are gapped bulks, but every interpolation between them passes the bulk gap closings m = Mc (s- ratio 1 + Mc - m hits 1) and m = 2 (s+ ratio 1 - m hits -1)  [gaps 0.52, 0.52 (5^3 x 8 grid); K = 0 gap at m = 1, 2: 9e-17, 8e-17]
+PASS: B3 [T]/[F] sharp step 0.5 -> 2.5: near wall s+ (+1, q 2); far wall s- (q 1) but hand +1, the SAME hand as the light, so it is a second light Weyl, not the mirror; the interior interface carries BOTH mirrors s+ (-1, q 2) and s- (-1, q 1)  [l0 s+1 h+1 q2; l16 s+1 h-1 q2; l16 s-1 h-1 q1; l31 s-1 h+1 q1]
+PASS: B4 [F] smooth profile m = 1.5 + tanh((l - 19.5)/3), Ls = 40: the same four Weyls; the interface modes cannot be removed by smoothing  [l0 s+1 h+1 q2; l18 s-1 h-1 q1; l21 s+1 h-1 q2; l39 s-1 h+1 q1]
+PASS: B5 [T] exact reason: at K = 0 each copy is its own Shamir chain (ratios r_+ = 1 - m, r_- = 1 + Mc - m); its hand-h_s mode sits at the max and its hand -h_s mode at the min of F_s = cum log|r_s| (h_+ = +1, h_- = -1), and a pair exists only if F_s(end) << 0. So the far boundary can hold copy s only with hand -h_s: s+ with -1 or s- with +1, never s- with -1  [argmin F+ l=15, argmax F- l=15, argmin F- l=31; F+(end) -4.6, F-(end) -4.6]
+== C. candidate (b): the layer hop carrying or flipping the copy
+PASS: C1 [T]/[F] hop s A (the hop carries the copy sign): at K = 0 this is the gauge (-1)^l on the s- copy, |r| unchanged, so every window keeps the same copy on both walls  [m=0.5: l0 s+1 h+1 q2; l31 s+1 h-1 q2]
+PASS: C2 [T] a hop that flips the copy (anticommutes with s) and commutes with the turn exists only on the eigenvalue-1 sectors (rank <= 4 < 8, from A2): no turn-covariant copy flip exists; the turn charges of the copies differ by w^2  [max rank of turn-commuting s-odd operators 4]
+PASS: C3 [F] adding such a turn-commuting copy-mixing hop (g = 0.3) splits the K = 0 pairs; the surviving K = 0 zero modes on BOTH walls sit in the w sector, which is s+ only (A2), so neither wall becomes a q = 1 pair {1, w^2}  [[(0, [1]), (31, [1])]]
+== D. eigenvalue flow along the turn axis K = kappa (1,1,1) (any static turn-symmetric slab)
+PASS: D1 [F] on the axis the turn is a symmetry and the negative-state count per turn sector (1, w, w^2) is the same on both sides of K = 0 and all around the loop: the K = 0 crossings have zero net flow  [m=0.5: [64, 32, 32]; step: [64, 32, 32]]
+PASS: D2 [T]/[F] each wall Weyl pair of copy charge q and hand h moves one state between turn sectors: flow = h (w^(q+2) - w^(q+1)) (one global sign), checked on all 8 wall pairs of B1 and B3  [global sign +1; e.g. near light [-1, 1, 0]]
+PASS: D3 [T] theorem: with no other axis crossing the K = 0 flow of N_f (q_l, +1) + N_f (q_m, -1) must vanish, which holds iff q_m = q_l, for EVERY N_f (Z[Z3] torsion-free). The three flows sum to 0, so a copy-flipped mirror needs extra axis Weyls; a Floquet walk evades it through its second (pi) gap, as FREEZE does
+== E. family-count bookkeeping (families-mod-3 index; Omega twist selection)
+PASS: E1 [T] uniform slab (light 2, mirror 2): every N_f; step slab (lights {2,1}, mirrors {2,1}, cross-copy Omega kept at k = 0): every N_f; only the unrealised copy-flip pair (2 | 1) gives 3, 6, 9  [uniform [1, 2, 3, 4, 5, 6, 7, 8, 9]; step [1, 2, 3, 4, 5, 6, 7, 8, 9]; copy-flip [3, 6, 9]]
+   E2 [S] the step slab also doubles the light content (two light copies, q 2 and q 1, per family), against CL-1's one light copy
+   synthesis (criteria_pre_run): P1 walls in different copies with opposite hands False, P2 interior gapped False, P3 forced False, P4 mod 3 False -> FAIL: no static copy-flip slab exists (D3); (a) gives far s- with the light's hand plus interface mirrors, chosen; (b) keeps or cannot flip the copy
+elapsed 0.8s, peak RSS 52 MB
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

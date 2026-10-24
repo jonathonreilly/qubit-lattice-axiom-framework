@@ -1,5 +1,5 @@
 {
- "edge_count": 16326,
+ "edge_count": 16309,
  "node_count": 7427,
  "nodes": {
   "3d_correction_master_note": {
@@ -9375,12 +9375,12 @@
    "out_degree": 11
   },
   "higgs_mass_s4_born_extension_bounded_note_2026-05-10_higgss4": {
-   "deps_hash": "26b747fca1c5",
-   "out_degree": 12
+   "deps_hash": "eee75613d48f",
+   "out_degree": 3
   },
   "higgs_mass_s4b_ewsb_selection_bounded_note_2026-05-10_s4bewsb": {
-   "deps_hash": "1b276e1d4a2b",
-   "out_degree": 13
+   "deps_hash": "0eb1c33f19ff",
+   "out_degree": 5
   },
   "higgs_mass_wilson_chain_partial_progress_note_2026-05-10_higgsh1": {
    "deps_hash": "5009b0d301c1",

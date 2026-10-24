@@ -1,4 +1,4 @@
-# Unit receipts: version 1 and supporting-proof version 2
+# Unit receipts: versions 1–3 and scoped scientific coverage
 
 This handoff format binds an existing independent review to concrete source and
 input bytes. It does not create a review, infer PASS, or replace the original
@@ -18,7 +18,9 @@ python3 docs/ai_methodology/skills/review-loop/scripts/review_receipt.py \
 After authorized bounded execution, stage its canonical cache, obtain the
 original reviewer's final binding, and create a new record with the new tree and
 cache identities. Check it with `--cache`. This flag checks freshness; it never
-executes or regenerates a runner. The first preflight needs no cache.
+executes or regenerates a runner. A preflight without populated summary
+corrections needs no cache; schema-3 summary corrections require `--cache`
+and the owner-primary cache bindings described below.
 
 Exit 0 means recorded mechanical checks passed. It says nothing about the
 science verdict, remote PR head freshness, completeness of scientific reading,
@@ -265,3 +267,100 @@ link. Do not invent a graph claim or a non-science exemption. Version 2's
 `supporting_proofs` relationship applies only to discovered Markdown; ordinary
 runtime proof inputs can use version 1. Both require complete proof, premise and
 input review under the owner's claim.
+
+## Scoped summary corrections (schema version 3)
+
+Use this role only for independently reviewed derivative reporting corrections,
+including a current boundary annotation on a preserved historical snapshot. It
+is **not** a whole-note scientific PASS, a non-science exemption, supporting
+proof ownership, or an invented primary. Autonomous calculations, proof steps,
+normalizations, selectors and physical implications still require ordinary
+canonical records. Neither the checker nor a byte diff can establish semantic
+entailment; the independent reviewer must read every complete changed argument
+and its necessary context, including negative/withdrawal claims.
+
+Schema 3 requires all schema-2 keys plus an explicit `summary_corrections` list
+(empty is permitted). Schema 1/2 reject that key even when empty. Schema 3 rejects
+unknown fields in its record structure and new role/report structures; schemas
+1/2 retain their existing contract. Each role has unique path ownership. Existing
+summary metadata is preserved exactly: complete LF/CRLF delimiter-line
+frontmatter (malformed or unclosed blocks fail), explicit type/status/authority/runner
+lines, extracted type and primary cannot be added, deleted or changed through
+this role. Graph discovery and actual edges/status remain unchanged by the
+receipt classification. Untouched claims and unrelated historical primaries are
+not newly approved.
+
+Each item has exactly these fields:
+
+```json
+{"path":"docs/LIVE_SUMMARY.md",
+ "base_sha256":"OLD_WHOLE_FILE_SHA256",
+ "current_sha256":"NEW_WHOLE_FILE_SHA256",
+ "review_reference":{"path":"/absolute/independent-summary.json",
+                     "sha256":"REPORT_SHA256","json_pointer":"/confirmation"},
+ "edits":[{
+   "old":{"start":100,"end":130,"sha256":"OLD_SLICE_SHA256"},
+   "new":{"start":100,"end":155,"sha256":"NEW_SLICE_SHA256"},
+   "old_context":{"start":70,"end":200,"sha256":"OLD_SECTION_SHA256"},
+   "new_context":{"start":70,"end":225,"sha256":"NEW_SECTION_SHA256"},
+   "canonical_notes":[{"path":"docs/CANONICAL.md","claim_id":"canonical",
+     "scope":"Exact independently confirmed conditional claim scope.",
+     "review_reference":{"path":"/absolute/independent-owner.json",
+                         "sha256":"OWNER_REPORT_SHA256","json_pointer":"/confirmation"}}],
+   "rationale":"Why this changed assertion is no stronger than those canonical claims."
+ }]}
+```
+
+The baseline is the exact existing regular-file blob at `source.base`, not a
+convenient older snapshot. File mode must remain unchanged. Additions, deletions
+and renames have no summary-role shortcut. Ordered nonoverlapping half-open
+ranges use **UTF-8 bytes**, never character/line offsets; both boundaries must
+be valid even for zero-width insertion/deletion ranges. Every range and enclosing
+context is hash-bound. Context must enclose the changed range and be nonempty;
+reviewers determine whether it covers the complete argument. Replacement slices
+plus unchanged baseline segments must reconstruct the entire candidate exactly.
+Omissions, stale anchors, overlap, no-op edits, uncovered prefix/tail edits and
+hash drift fail. Whole-file replacements still need complete human scope review.
+
+The immutable summary reference selects an object with exactly `decision`,
+`path`, `base_sha256`, `current_sha256`, `edits`, and `scope_rationale`.
+`decision` must be `confirmed_derivative`; path, hashes and the complete edits
+(including owner references and rationales) must equal the record. The nonempty
+scope rationale records the independent entailment judgment. A changed assertion
+or rationale requires a new confirmation; repinning an old report cannot supply
+it. Evidence hashes are rechecked before return. This is identity validation,
+not authentication of the human reviewer or an automated truth judgment.
+
+Each owner must be a unique normal `notes` record checked in this operation;
+external receipts and summary-to-summary ownership are unsupported. Its reference
+selects exactly `decision`, `path`, `claim_id`, `source_sha256`, `scope`, and
+`bindings`. The decision is `confirmed`, not held/pending; all values must match
+current owner identity and declared scope. `bindings` is a sorted list of exact
+`path`/`sha256` pairs covering that canonical note, primary, all discovered
+helpers, all literal inputs of those runners, actual citation targets, and its
+primary cache. This binds the review to helper/input changes as well as the note.
+Owners retain all normal type, primary, helper, cap, premise and input checks.
+Summary corrections additionally require `--cache` and a fresh, bound primary
+cache for each owner. Helpers require the usual exact source/input/cap closure;
+they do not automatically require a standalone cache or execution. A helper that
+is itself a canonical owner has its own ordinary primary requirement.
+
+No canonical owner may depend back on a summary through its declared inputs or
+load-bearing dependencies, including other same-operation canonical parents.
+A citation is not by itself an entailment proof; held dependencies cannot be
+laundered through a `confirmed` label without independent current-scope review.
+Original constituent/disposition lineage remains required and unchanged.
+
+Inventory is computed independently over changed Markdown **and** changed
+primary/helper/declared-input effects, even when a note itself changed. This
+initial version conservatively rejects the summary role if that summary's own
+discovered primary, helper, or declared input changed, including a self-input.
+Use normal canonical coverage or retain HOLD; do not suppress that inventory.
+Other affected canonical consumers still require their normal records and fresh
+required caches. A summary correction does not satisfy their obligations.
+
+Success output visibly uses `role: scoped_summary_correction`, exact byte ranges
+and canonical bindings; it never places a summary in the ordinary `notes` PASS
+scope. `cache_checked` and mechanical success do not confer retained status or
+approve unchanged summary content. A current-main adapter must reconstruct and
+review against its actual new base, not transplant old ranges.

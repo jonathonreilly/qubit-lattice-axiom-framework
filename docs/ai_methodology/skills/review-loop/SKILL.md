@@ -307,7 +307,7 @@ The routing summaries are not substitutes for the detailed instructions.
 | Whenever combined candidate validation is required, in named review-only or landing mode | [Combined pipeline, strict lint, evidence, and clean-state recipes](references/COMBINED_VALIDATION.md) |
 | Actual unspecified/focus-text-only invocation, a set of PRs, or any authorized landing | [Backlog orchestration, integration, and fail-closed landing](references/LANDING.md) |
 | Before PR closure/rejection, non-landable disposition, discarded stretch/campaign packets, or salvage | [Salvage and source preservation](references/SALVAGE.md) |
-| Creating a new canonical unit record, using supporting-proof relationships, or adapting an older record | [Unit receipt schema and preflight](references/UNIT_RECEIPT.md) |
+| Creating a canonical unit record, using supporting-proof or scoped-summary relationships, or adapting an older record | [Unit receipt schema and preflight](references/UNIT_RECEIPT.md) |
 | Historical payload consolidation, exclusive sequential checkout reuse, or dependent-PR head/base maintenance and recovery | [Guarded review operations](references/OPERATIONS.md) |
 
 Apply CodeRunnerReviewer to changed code and runners, PhysicsClaimReviewer to

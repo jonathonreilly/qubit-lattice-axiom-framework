@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cosmology_single_ratio_inverse_reconstruction.py
 runner_sha256: f2e55608ff28fc11c011c7447be6445cbda6b1db918a7374a5f5e6a0b1c58b3e
-input_fingerprint_sha256: af4e4cd067c824c7d5c916432a1e8ce78a006a252ca0a243110768e3dc17e675
+input_fingerprint_sha256: bf978b1b5bf28872208d60703e660986807d1379b5e70049f9236f952a621ec4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.43
+elapsed_sec: 0.65
 status: ok
 ----- stdout -----
 ========================================================================================

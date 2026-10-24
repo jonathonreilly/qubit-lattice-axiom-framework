@@ -4,7 +4,7 @@ runner_sha256: e88f1dab61f411e4a6fc0cf300d780896027362879a61a8b72e0916779256de7
 input_fingerprint_sha256: a6e1f9bfc29ee60906bc4bac1afe0f65d0fe5017215c8330bc492280ffcb25f1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.38
+elapsed_sec: 0.25
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -77,7 +77,7 @@ Part 4: BBN sensitivity to eta (alpha_GUT fixed)
 Part 5: bipartition symbolic statement
 ----------------------------------------------------------------------------------------
   Omega_Lambda(eta, alpha_GUT) = -Omega_r - 31*c_BBN*eta*S_corr(alpha_GUT)/(9*h2) - c_BBN*eta/h2 + 1
-  free symbols of Omega_Lambda = {h2, c_BBN, eta, alpha_GUT, Omega_r}
+  free symbols of Omega_Lambda = {alpha_GUT, h2, Omega_r, eta, c_BBN}
   [PASS] Omega_Lambda explicitly depends on eta
   [PASS] Omega_Lambda explicitly depends on alpha_GUT (via Sommerfeld)
   [PASS] d Omega_Lambda / d eta is non-zero  (d/deta = c_BBN*(-31*S_corr(alpha_GUT) - 9)/(9*h2))

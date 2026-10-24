@@ -1,5 +1,5 @@
 {
- "edge_count": 16141,
+ "edge_count": 16136,
  "node_count": 7436,
  "nodes": {
   "3d_correction_master_note": {
@@ -2283,8 +2283,8 @@
    "out_degree": 11
   },
   "axiom_first_unruh_temperature_theorem_note_2026-05-01": {
-   "deps_hash": "31ff5c021184",
-   "out_degree": 5
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26": {
    "deps_hash": "4809a185c8ae",

@@ -442,9 +442,9 @@
       "reason": "Explicit source-identity-bound cap for a packet helper in this corrected source unit; metadata does not certify science."
     },
     "scripts/runner_cache.py": {
-      "source_sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "source_sha256": "3e4d325e352be59ea32ced10d461186f9844141244165f84f980a2a08ba1d306",
       "timeout_sec": 120,
-      "reason": "Explicit source-identity-bound cap for a packet helper in this corrected source unit; metadata does not certify science."
+      "reason": "Explicit review cap for unchanged affected primary or cache helper; source-hash bound. No scientific scope or audit runtime policy change."
     },
     "scripts/ring_matched_population_kernel_2026_09_27.py": {
       "source_sha256": "b0acac7225015e3d93f90216ee2942d578e644f28bff3656454d94f9d8108b0e",

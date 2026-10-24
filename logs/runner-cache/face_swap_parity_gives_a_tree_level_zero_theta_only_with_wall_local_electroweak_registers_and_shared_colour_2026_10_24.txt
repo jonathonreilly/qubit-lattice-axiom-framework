@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/face_swap_parity_gives_a_tree_level_zero_theta_only_with_wall_local_electroweak_registers_and_shared_colour_2026_10_24.py
+runner_sha256: d9424bd63fe6d5dcfc4c331a2797a9fe05f8bb24377542b2debb1b4123d6cb3d
+input_fingerprint_sha256: a33aa660af3ec88991115c4425b1d6e0bfa850215d13880d5e68873a0de4d57d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.25
+status: ok
+----- stdout -----
+A. P_slab on the Wilson domain-wall slab (m = 0.6, Ls = 16) and the rule clauses
+PASS A1 [T] S = beta commutes with beta, anticommutes with alpha_1..4 (layer hop alpha_4 included)
+PASS A2 [T] P_slab = layer reversal x (k -> -k) x beta is an exact symmetry of the slab | max res 0.0e+00
+PASS A3 [T] with a flat link background, symmetry needs A_i -> -A_i (ordinary parity on the ONE register) | A->-A res 0.0e+00; A->A res 1.13
+PASS A4 [T/F] P_slab maps the near Weyl (Gamma -1) onto the far Weyl (Gamma +1): light 16 -> mirror, same charges | overlap 1.000000000, Gamma -1.000/1.000
+PASS A5 [T] the theta carrier sum E.B is odd under P_slab's action on the register (bare theta forbidden) | Q = -145.0214, Q_P = 145.0214
+PASS A6 [T] overlap D is P-covariant, but gamma5_hat -> -gamma5_hat: Luscher's P_hat_- maps to P_hat_+ | res 1.1e-15, 1.1e-15; history-level chiral selection breaks P_slab explicitly
+PASS A7 [T] a far-wall-only gapping term (bilinear proxy) is not P_slab-invariant: explicit breaking | 0.50
+B. toy, ONE gauge field: H, H' same charges; P: M(h,h') = sigma M(h',h)^dag sigma
+PASS B1 [T] construction obeys the P relation exactly | res 0.0e+00
+PASS B2 [F] generic P-symmetric couplings, h != h': theta_tree is O(1) (P_slab gives no cancellation) | median |theta| 0.81
+PASS B3 [T] with a supplied Z2 (no cross/mixing) theta_tree = 0 and mirror masses = light x v'/v exactly | |theta| 0.0e+00
+PASS B4 [E] but H' breaks OUR SU(2)xU(1): v^2+v'^2 = (246 GeV)^2, so v'/v <= 3.43, m_u' <= 7.4 MeV, N_nu = 6 | N_nu 6 vs 2.984+-0.008: 377 sigma EXCLUDED
+PASS B5 [F] heavy Hermitian vector-like masses pair light WITH mirror: no light chiral state survives | light states over 100 samples: 0
+C. toy, BCS shape: M_u = diag(Y_u h*, Y_u^dag h'), M_d = diag(Y_d h, Y_d^dag h'*)
+PASS C1 [T] arg det(M_u M_d) = 0 (det > 0, theta not pi) for all Y, v'/v in [1e2,1e10], VEV phases | max |theta| 2.7e-15
+PASS C2 [F] light J != 0 generically (O(1) random Yukawas) | median |J| 2.7e-02; measured 3.1e-5 needs no tuning of theta
+PASS C3 [T] Hermitian dressings, light at scale v and mirror at v' (split coefficients): theta stays 0 | 2.2e-16
+PASS C4 [F] non-Hermitian products at split scales: theta != 0 but tiny, beyond first order in the dressing | |theta| 4.0e-09 at a = 0.05, a' = 0.04; det[Hu,Hd] = 8.8e-05 (PRE-SET P7 overstated)
+D. SMG mirror (one gauge field): theta_bar = theta - arg det(Y_u Y_d) - kappa arg(lambda_4)
+PASS D1 [T] per 16: sum over Weyls of 2T(colour) = 4; charge-4 vertex gives |kappa| = 3 = N_f
+PASS D2 [T] the Z4 kept by the vertex is QCD-anomaly-free (shift 2 pi N_f): theta_bar continuous in arg lambda_4
+PASS D3 [F] P_slab maps lambda_4 to a NEAR-wall vertex, not to Y: no relation, theta_bar generic O(1) | median 0.71
+E. quality: Planck-suppressed P-even / P-misaligned operators (Lambda = 2.4e18 GeV supplied)
+PASS E1 [E] (H'^dag H' - H^dag H) G Gdual/Lambda^2 is P-EVEN: allowed even with exact P; theta ~ v'^2/Lambda^2 | v' < 2.4e+13 GeV
+PASS E2 [E] misaligned dim-6 Yukawa (Y -> Y + C v'^2/Lambda^2): theta ~ Im Tr(Y^-1 C), enhanced 1/y_u | median ratio 6.2e+04 -> v' < 9.7e+10 GeV
+PASS E3 [E] window: mirror up quark m_u v'/v >= ~1.5 TeV (supplied) needs v' >= 1.2e+08 GeV; window open | [1e+08, 1e+11] GeV, v' supplied (not fixed by any rule)
+PASS E4 [E] mirror gamma' + 3 nu' after colour decoupling: Delta N_eff = 4.14 x^4, x in [0.47, 0.63] | Delta N_eff in [0.19, 0.64] vs ~0.3 allowed: marginal, CMB-S4 testable
+runtime 0.06 s
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

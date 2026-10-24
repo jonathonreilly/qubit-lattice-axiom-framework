@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/the_cayley_completion_of_the_charge_four_term_halves_the_gapping_coupling_of_the_eight_majorana_proxy_chain_but_both_forms_persist_at_strong_coupling_2026_10_24.py
+runner_sha256: bc56d00fb98a41903b903a7e7c8fcb6f183ef4594378c36af24044647bd98b47
+input_fingerprint_sha256: 067b93fef51be0de19be23bb1bb57be4e427a05fae2c81bc8b4c84ec14e3885b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.42
+status: ok
+----- stdout -----
+== A. on-site 4-forms on 8 Majoranas (4 complex modes) ==
+  ReO: stabiliser 15, spectrum [(-8.0, 1), (0.0, 14), (8.0, 1)]
+  w2: stabiliser 16, spectrum [(-6.0, 2), (0.0, 8), (2.0, 6)]
+  Cay: stabiliser 21, spectrum [(-14.0, 1), (0.0, 8), (2.0, 7)]
+PASS A1 stabiliser dims 15 (SU4), 16 (U4), 21 (Spin7)
+PASS A2 spectra: ReO -8(1),0(14),+8(1); Cay -14(1),0(8),+2(7)
+PASS A3 Cayley ground state = ReO ground state (-8 - 6 = -14), even, annihilated by the 21 commuting bilinears: commutant 21, max |X gs| = 9.5e-16
+PASS A4 on-site gap 8 -> 14 (ratio 7/4), 14-fold middle level replaced by 8 (odd) + 7 (even)
+== B. engine gate: momentum sectors vs full Fock, L = 2 ==
+PASS B1 all (d, kappa) blocks Hermitian and reproduce the full 2^8 spectrum (twist and APBC, ReO and Cay): max dev 2.5e-14
+== C. live L = 4 (twisted) vs embedded ==
+PASS C1 g = 0: free single-particle gap 2 sin(pi/2L) at L = 4
+PASS C2 live L = 4 E0, gap, Delta_1 (both models, 4 couplings) match the embedded mini values: max dev 4.7e-06
+== D. embedded mini results: gap Delta over all computed blocks (twisted chain) ==
+  model g     L=4     L=5     L=6     L=7     L=8     rho   even-rho class (L used)
+  ReO  0.125 0.803   0.601   0.550   0.430   0.420   0.523 0.523    CLOSING (4-8)
+  ReO  0.25  1.130   0.314   0.917   0.528   0.824   0.729 0.729    INCONCLUSIVE (4-8)
+  ReO  0.5   2.936   2.922   2.929   2.929   (3.75) 0.998 0.998    OPEN (4-7)
+  ReO  1.0   7.056   7.001   7.026   7.001   (8.27) 0.992 0.996    OPEN (4-7)
+  Cay  0.125 0.993   0.071   0.791   0.274   0.714   0.720 0.720    CLOSING (4-8)
+  Cay  0.25  2.719   2.679   2.702   2.701   2.702   0.993 0.993    OPEN (4-8)
+  Cay  0.5   6.082   6.031   6.054   6.031   (7.10) 0.992 0.995    OPEN (4-7)
+  Cay  1.0   13.048  12.981  13.011  12.981  (14.44) 0.995 0.997    OPEN (4-7)
+  free chain (g = 0): 0.765 0.618 0.518 0.445 = 2 sin(pi/2L); (x) = L = 8 partial (S0 all p, 1000 p = 0, 1 only), not classified
+  APBC (exact Spin(7) BC) Delta(4)->Delta(6): ReO 0.125: 1.43->1.01; ReO 0.25: 1.55->1.19; ReO 0.5: 2.92->2.93; Cay 0.125: 1.49->1.10; Cay 0.25: 2.70->2.70; Cay 0.5: 6.23->6.03 (free 1.41->1.00)
+PASS D1 g = 0.5, 1.0: both models OPEN on L = 4..7; L = 8 neutral gap within 1% of L = 7 (both persist): max L8/L7 neutral dev 0.008
+PASS D2 g = 0.25 (L = 4..8 complete): Cayley OPEN, Re Omega alone not OPEN: Cay OPEN, ReO INCONCLUSIVE
+PASS D3 no coupling where Re Omega is OPEN and Cayley is not
+PASS D4 g = 0.125: Re Omega free-like (Delta(8)/Delta(4) within 5% of the free 1/L ratio), Cayley not OPEN: ReO 0.523 vs free 0.510
+PASS D5 matched on-site gap (ReO at 0.5: 4.0; Cay at 0.25: 3.5): both OPEN, so the gain is per unit coupling
+Task outcome (pre-set criteria): PASS (Cayley advantage at g = 0.25; both persist for g >= 0.5)
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

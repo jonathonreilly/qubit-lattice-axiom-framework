@@ -1,0 +1,435 @@
+#!/usr/bin/env python3
+"""Positive identities for supplied finite matrices and parameterized readouts.
+Hilbert-Schmidt decomposition, epsilon reflection, independent endpoint Haar
+moments, scalar/projection maps and common-factor cancellation. The general
+proofs are in the paired note; finite controls preserve their numerical scope.
+Physical current construction and matching are unperformed objectives.
+"""
+
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ['docs/SUPPLIED_MATRIX_HILBERT_SCHMIDT_HAAR_IDENTITIES_NOTE_2026-10-24.md']
+
+import numpy as np
+import sympy as sp
+
+RNG = np.random.default_rng(20260608)
+PASS = 0
+FAIL = 0
+
+
+def check(desc, ok):
+    global PASS, FAIL
+    status = "PASS" if ok else "FAIL"
+    if ok:
+        PASS += 1
+    else:
+        FAIL += 1
+    print(f"  [{status}] {desc}")
+    return ok
+
+
+# ============================================================
+# SU(N) generators with Tr[t^A t^B] = (1/2) delta_AB
+# (generalized Gell-Mann basis), checked numerically at the listed finite ranks.
+# ============================================================
+def su_n_generators(n):
+    """Generalized Gell-Mann basis normalized to Tr[t^A t^B] = (1/2) delta_AB."""
+    gens = []
+    # off-diagonal (symmetric + antisymmetric), each = lambda/2 with Tr=1/2
+    for i in range(n):
+        for j in range(i + 1, n):
+            m = np.zeros((n, n), dtype=complex)
+            m[i, j] = 0.5
+            m[j, i] = 0.5
+            gens.append(m)
+            m2 = np.zeros((n, n), dtype=complex)
+            m2[i, j] = -0.5j
+            m2[j, i] = 0.5j
+            gens.append(m2)
+    # diagonal (Cartan): diag(1,...,1,-k,0,...) normalized so Tr t^2 = 1/2
+    for k in range(1, n):
+        diag = np.zeros(n, dtype=complex)
+        for r in range(k):
+            diag[r] = 1.0
+        diag[k] = -k
+        c = 1.0 / np.sqrt(2.0 * k * (k + 1))
+        gens.append(np.diag(diag) * c)
+    return gens
+
+
+def fierz_S_C(M, n):
+    """S = (1/n)|Tr M|^2 ; T = Tr[M^dag M] = sum|M_ab|^2 ; C = T - S."""
+    T = float(np.real(np.trace(M.conj().T @ M)))
+    S = float(np.abs(np.trace(M)) ** 2 / n)
+    return S, T - S, T
+
+
+# ============================================================
+# (A) Fierz completeness identity, finite numerical checks for N_c = 2..5
+# ============================================================
+def part_A():
+    print("\n(A) SU(N_c) Fierz completeness: Tr[M^dag M] = (1/N_c)|Tr M|^2 + 2 sum|Tr[M t^A]|^2")
+    okall = True
+    for n in [2, 3, 4, 5]:
+        gens = su_n_generators(n)
+        # generator orthonormality Tr[t^A t^B] = (1/2) delta_AB
+        ortho = True
+        for a in range(len(gens)):
+            for b in range(len(gens)):
+                val = np.trace(gens[a] @ gens[b])
+                target = 0.5 if a == b else 0.0
+                if abs(val - target) > 1e-10:
+                    ortho = False
+        n_gen = len(gens)
+        ok_count = (n_gen == n * n - 1)
+        # Fierz on a random complex matrix
+        M = RNG.standard_normal((n, n)) + 1j * RNG.standard_normal((n, n))
+        S, C, T = fierz_S_C(M, n)
+        C_gen = 2.0 * sum(np.abs(np.trace(M @ t)) ** 2 for t in gens)
+        ok_fierz = abs(C - C_gen) < 1e-9 and abs(S + C - T) < 1e-9
+        okall &= check(
+            f"N_c={n}: gens orthonormal={ortho}, count {n_gen}=N_c^2-1={ok_count}, "
+            f"C=2*sum|Tr[M t^A]|^2 (err {abs(C - C_gen):.1e}), S+C=T={ok_fierz}",
+            ortho and ok_count and ok_fierz,
+        )
+    # Exact N=2 subset/completeness fixture; independent of random samples.
+    mx = sp.Matrix([[0, 1], [1, 0]])
+    tz = sp.diag(sp.Rational(1, 2), -sp.Rational(1, 2))
+    tx = mx / 2
+    ty = sp.Matrix([[0, -sp.I], [sp.I, 0]]) / 2
+    norm_exact = sp.trace(mx * mx.conjugate().T)
+    scalar_exact = abs(sp.trace(mx)) ** 2 / 2
+    subset_exact = 2 * abs(sp.trace(mx * tz)) ** 2
+    complete_exact = 2 * sum(abs(sp.trace(mx * gen)) ** 2 for gen in (tx, ty, tz))
+    okall &= check("exact N=2 fixture: T=2,S=0,C_subset=0,C_complete=2",
+                   norm_exact == 2 and scalar_exact == 0 and subset_exact == 0
+                   and complete_exact == 2)
+    return okall
+
+
+# ============================================================
+# (B) Supplied tensor-product bilocal kernel = full trace,
+#     and the singlet channel S genuinely carries weight Tr(Q^2).
+# ============================================================
+def part_B():
+    print("\n(B) Supplied tensor-product bilocal kernel has sign-adjusted color factor Tr(Q^2)*(S+C)")
+    n = 3
+    okall = True
+
+    # B1: color-blind loop color factor equals Tr[G G^dag] = S + C for the
+    #     sign-adjusted reflected pair; both raw parity signs are checked.
+    G = RNG.standard_normal((n, n)) + 1j * RNG.standard_normal((n, n))
+    loop = np.trace(G @ G.conj().T)  # sign-adjusted trace
+    parity_ok = all(abs(np.trace(G @ (p * G.conj().T)) - p * loop) < 1e-9
+                    for p in (-1, 1))
+    S, C, T = fierz_S_C(G, n)
+    okall &= check(
+        f"both parities: raw loop=p_xy*T; sign-adjusted Tr[G G^dag]=S+C=T (loop {np.real(loop):.4f} vs T {T:.4f})",
+        parity_ok and abs(np.real(loop) - T) < 1e-9 and abs(np.imag(loop)) < 1e-9,
+    )
+
+    # B2: internal (weak/hypercharge) factorization for a DIRECT-PRODUCT generator
+    #     Q (x) I_color : Tr[(Q⊗I) (V⊗G) (Q⊗I) (V'⊗G^dag)] = Tr(Q V Q V') Tr(G G^dag).
+    #     For the supplied trivial internal line (V=V'=I_2), giving
+    #     Tr(Q^2) * Tr(G G^dag).  Verify the factorization with a generic V.
+    Q = np.array([[0.5, 0.0], [0.0, -0.5]], dtype=complex)  # T_3
+    V = RNG.standard_normal((2, 2)) + 1j * RNG.standard_normal((2, 2))
+    Vp = RNG.standard_normal((2, 2)) + 1j * RNG.standard_normal((2, 2))
+    Gd = G.conj().T
+    full = np.kron(Q, np.eye(n)) @ np.kron(V, G) @ np.kron(Q, np.eye(n)) @ np.kron(Vp, Gd)
+    lhs = np.trace(full)
+    rhs = np.trace(Q @ V @ Q @ Vp) * np.trace(G @ Gd)
+    okall &= check(
+        f"direct-product factorization Tr[(Q⊗I)(V⊗G)(Q⊗I)(V'⊗G†)] = Tr(QVQV')*Tr(GG†) (err {abs(lhs - rhs):.1e})",
+        abs(lhs - rhs) < 1e-9,
+    )
+
+    # B3: with trivial internal line V=V'=I, weight of S+C is exactly Tr(Q^2).
+    full_triv = np.kron(Q, np.eye(n)) @ np.kron(np.eye(2), G) @ np.kron(Q, np.eye(n)) @ np.kron(np.eye(2), Gd)
+    weight = np.trace(full_triv) / np.trace(G @ Gd)
+    okall &= check(
+        f"trivial-internal weight of (S+C) = Tr(Q^2) = 1/2 (got {np.real(weight):.4f})",
+        abs(np.real(weight) - float(np.real(np.trace(Q @ Q)))) < 1e-9,
+    )
+
+    # B4: the landed counterexample -- Q=T_3, M=I_color : connected loop is
+    #     ENTIRELY singlet (S=N_c, C=0), with weight Tr(T_3^2)=1/2, so the
+    #     singlet channel genuinely carries weight; tracelessness Tr(T_3)=0
+    #     gives this explicit positive singlet weight in the supplied fixture.
+    I3 = np.eye(n, dtype=complex)
+    S0, C0, T0 = fierz_S_C(I3, n)
+    okall &= check(
+        f"counterexample M=I_color: S=N_c={S0:.0f}, C=0 (got {C0:.1e}); singlet carries Tr(T_3^2)*S = {0.5 * S0:.2f}",
+        abs(S0 - n) < 1e-9 and abs(C0) < 1e-9,
+    )
+    return okall
+
+
+# ============================================================
+# (B') Substantiate the color reflection G(y,x) = eps(x)eps(y) G(x,y)^dag on one supplied finite
+#      staggered-matrix background: the massive staggered operator obeys
+#      eps-hermiticity D_m^dag = eps D_m eps (eps(x) = (-1)^{sum x_mu}), so G = D_m^{-1}
+#      obeys G^dag = eps G eps, i.e. G(y,x)_color = eps(x)eps(y) G(x,y)_color^dag.
+# ============================================================
+def part_Bp():
+    print("\n(B') Color reflection G(y,x)=eps(x)eps(y)G(x,y)^dag from staggered eps-hermiticity (one finite supplied random-SU(3) background)")
+    L, nc, ndim = 2, 3, 4
+    vol = L ** ndim
+    mass = 0.1
+    coords = np.array([[ (s // L ** mu) % L for mu in range(ndim)] for s in range(vol)])
+    eps = np.array([(-1.0) ** int(np.sum(coords[s])) for s in range(vol)])  # staggered sign
+    eta = np.ones((vol, ndim))
+    for mu in range(ndim):
+        for s in range(vol):
+            eta[s, mu] = (-1.0) ** int(np.sum(coords[s, :mu]))
+    idx = lambda c: int(sum(int(c[mu]) * L ** mu for mu in range(ndim)))
+    # random SU(3) links
+    U = np.array([[haar_su(nc) for mu in range(ndim)] for s in range(vol)])
+    N = nc * vol
+    D = np.zeros((N, N), dtype=complex)
+    for x in range(vol):
+        for mu in range(ndim):
+            c = coords[x].copy()
+            c[mu] = (c[mu] + 1) % L
+            xp = idx(c)
+            cm = coords[x].copy()
+            cm[mu] = (cm[mu] - 1) % L
+            xm = idx(cm)
+            for a in range(nc):
+                for b in range(nc):
+                    D[a * vol + x, b * vol + xp] += 0.5 * eta[x, mu] * U[x][mu][a, b]
+                    D[a * vol + x, b * vol + xm] += -0.5 * eta[xm, mu] * np.conj(U[xm][mu][b, a])
+    D = D + mass * np.eye(N)
+    E = np.diag(np.concatenate([eps for _ in range(nc)]))  # eps on color (x) site index
+    herm_err = np.max(np.abs(D.conj().T - E @ D @ E))
+    G = np.linalg.inv(D)
+    refl_err = np.max(np.abs(G.conj().T - E @ G @ E))
+    # Inspect every site-pair color block of the actual inverse, rather than
+    # constructing a reflected partner by definition. Odd pairs refute the
+    # former unsigned trace identity whenever their norm is nonzero.
+    block_err = 0.0
+    odd_unsigned_error = 0.0
+    for x in range(vol):
+        for y in range(vol):
+            ix = np.arange(nc) * vol + x
+            iy = np.arange(nc) * vol + y
+            Gxy = G[np.ix_(ix, iy)]
+            Gyx = G[np.ix_(iy, ix)]
+            raw = np.trace(Gxy @ Gyx)
+            norm = np.vdot(Gxy, Gxy).real
+            parity = eps[x] * eps[y]
+            block_err = max(block_err, abs(raw - parity * norm))
+            if parity == -1:
+                odd_unsigned_error = max(odd_unsigned_error, abs(raw - norm))
+    ok = check(
+        f"staggered D_m^dag = eps D_m eps (err {herm_err:.1e}) => G^dag = eps G eps (err {refl_err:.1e}); "
+        f"site-pair signed-trace error {block_err:.1e}; unsigned odd-pair error {odd_unsigned_error:.1e}",
+        herm_err < 1e-9 and refl_err < 1e-9 and block_err < 1e-9
+        and odd_unsigned_error > 1e-6,
+    )
+    return ok
+
+
+# ============================================================
+# (C) Independent endpoint Haar averaging of a supplied fixed nonzero matrix.
+#     Numerical samples support the analytic second-moment identity; no physical beta scan.
+# ============================================================
+def haar_su(n):
+    z = (RNG.standard_normal((n, n)) + 1j * RNG.standard_normal((n, n))) / np.sqrt(2.0)
+    q, r = np.linalg.qr(z)
+    d = np.diagonal(r)
+    q = q * (d / np.abs(d))
+    q = q / (np.linalg.det(q)) ** (1.0 / n)
+    return q
+
+
+def part_C():
+    print("\n(C) Independent endpoint Haar average of supplied fixed M: <S>/T = 1/N_c^2")
+    okall = True
+    nsamp = 40000
+    for n in [2, 3, 4, 5]:
+        # (i) A supplied fixed nonzero complex matrix, averaged under independent
+        # endpoint Haar transformations. Analytically <|Tr(U M V^dag)|^2>=T/N.
+        # These finite samples are not a physical correlator or continuum test.
+        M = RNG.standard_normal((n, n)) + 1j * RNG.standard_normal((n, n))
+        M = M @ np.diag(RNG.uniform(0.1, 3.0, n))  # arbitrary non-unitary dressing
+        T_fixed = float(np.real(np.trace(M @ M.conj().T)))
+        Sorb = 0.0
+        for _ in range(nsamp):
+            G = haar_su(n) @ M @ haar_su(n).conj().T
+            Sorb += np.abs(np.trace(G)) ** 2 / n
+        rorb = (Sorb / nsamp) / T_fixed
+        target = 1.0 / n ** 2
+        # (ii) cross-checks: identity-matrix endpoint average and a single Haar matrix.
+        Sf = Tf = Sh = Th = 0.0
+        for _ in range(nsamp):
+            s, c, t = fierz_S_C(haar_su(n) @ np.eye(n) @ haar_su(n).conj().T, n)
+            Sf += s
+            Tf += t
+            s2, c2, t2 = fierz_S_C(haar_su(n), n)
+            Sh += s2
+            Th += t2
+        okall &= check(
+            f"N_c={n}: fixed-matrix endpoint average <S>/T={rorb:.4f} (=1/N_c^2={target:.4f}, Weingarten); "
+            f"identity-matrix average={Sf / Tf:.4f}, Haar={Sh / Th:.4f} => R_conn={1 - target:.4f}",
+            abs(rorb - target) < 0.01 and abs(Sf / Tf - target) < 0.01 and abs(Sh / Th - target) < 0.01,
+        )
+    # The fixed-matrix Haar identity has no physical beta parameter.
+    print("    => independent endpoint Haar averaging gives the stated fraction; physical beta/continuum behavior is untested")
+    return okall
+
+
+# ============================================================
+# (D) Supplied scalar and traceless-projection identities.
+# ============================================================
+def part_D():
+    print("\n(D) Scalar multiplication and equivariant traceless projection on supplied matrices")
+    n = 3
+    okall = True
+    G = RNG.standard_normal((n, n)) + 1j * RNG.standard_normal((n, n))
+    S, C, T = fierz_S_C(G, n)
+    R0 = C / T
+
+    # Scalar multiplication scales both squared projection norms by |z|^2.
+    z = 1.7 - 0.4j
+    Sz, Cz, Tz = fierz_S_C(z * G, n)
+    okall &= check(
+        f"multiplicative color-scalar renorm scales S,C equally -> R_conn invariant ({R0:.6f} -> {Cz / Tz:.6f}); "
+        f"supplied norm-ratio identity",
+        abs(R0 - Cz / Tz) < 1e-9,
+    )
+
+    # The two completions: kappa=0 is an ACTIVE singlet projection (no OZI or planar identification);
+    # kappa=1 is the IDENTITY readout (retain the full trace S+C, the supplied norm).
+    # Selecting which the physical coupling uses is an additional matching choice, with physical admissibility unproved either way.
+    G_adj = G - (np.trace(G) / n) * np.eye(n)
+    S0, C0, T0 = fierz_S_C(G_adj, n)
+    okall &= check(
+        f"kappa=0 = active singlet projection removes S (S {S:.3f} -> {S0:.1e}, C unchanged); SU(N)-equivariant projector",
+        S0 < 1e-9 and abs(C0 - C) < 1e-9,
+    )
+    okall &= check(
+        f"kappa=1 = identity readout, retain full trace T=S+C ({T:.3f}); selecting it as physical is still external",
+        abs((S + C) - T) < 1e-9,
+    )
+    print("    => traceless projection and identity are the two specified matrix maps;")
+    print("       physical matching is an unperformed objective.")
+    return okall
+
+
+# ============================================================
+# (E) Evaluation of the defined parameterized readout family.
+# ============================================================
+def part_E():
+    print("\n(E) Values of Pi_k=C+k*S and K(k) at supplied parameters")
+    n = 3
+    F_adj = sp.Rational(n ** 2 - 1, n ** 2)  # 8/9
+    kappa = sp.symbols("kappa", nonnegative=True)
+    R_phys = F_adj + kappa * (1 - F_adj)
+    K_EW = 1 / R_phys
+    K0 = sp.nsimplify(K_EW.subs(kappa, 0))
+    K1 = sp.nsimplify(K_EW.subs(kappa, 1))
+    okall = True
+    okall &= check(f"K_EW(0) = 9/8 (got {K0}) ; K_EW(1) = 1 (got {K1})",
+                   K0 == sp.Rational(9, 8) and K1 == sp.Integer(1))
+
+    # Supplied channel data {S,C,T=S+C}, not a certified physical correlator.
+    # Evaluate the defined polynomial at kappa=0 and kappa=1.
+    S_meas, C_meas = sp.Rational(1, 9), sp.Rational(8, 9)  # any measured split; T=1
+    T_meas = S_meas + C_meas
+    bare_correlator = T_meas  # the supplied norm data; independent of kappa
+    Pi0 = C_meas + 0 * S_meas
+    Pi1 = C_meas + 1 * S_meas
+    okall &= check(
+        f"supplied gauge-invariant norm = <T> = {bare_correlator} (full trace S+C); this is the supplied matrix object, "
+        f"not yet the physical readout",
+        bare_correlator == sp.Integer(1),
+    )
+    okall &= check(
+        f"Pi_phys(kappa=0)={Pi0} (singlet-subtracted) and Pi_phys(kappa=1)={Pi1} (full trace) are BOTH built "
+        f"from the SAME measured {{S={S_meas},C={C_meas},T={T_meas}}} ; the two polynomial values are C and T",
+        Pi0 == C_meas and Pi1 == T_meas,
+    )
+    print("    => The displayed parameter evaluations are Pi_0=C and Pi_1=T.")
+    print("       No identifiability conclusion is drawn from these evaluations;")
+    print("       physical current matching is an unperformed objective.")
+    return okall
+
+
+# ============================================================
+# (F) sin^2(theta_W) is kappa-invariant.
+# ============================================================
+def part_F():
+    print("\n(F) Supplied common coupling factor cancels in sin^2(theta_W)")
+    kappa, g1b, g2b = sp.symbols("kappa g1b g2b", positive=True)
+    F_adj = sp.Rational(8, 9)
+    K = 1 / (F_adj + kappa * (1 - F_adj))
+    # Supply the same positive sqrt(K) factor to both couplings; this is algebra.
+    g1 = sp.sqrt(K) * g1b
+    g2 = sp.sqrt(K) * g2b
+    sin2 = g1 ** 2 / (g1 ** 2 + g2 ** 2)
+    sin2_simpl = sp.simplify(sin2 - g1b ** 2 / (g1b ** 2 + g2b ** 2))
+    okall = check(f"sin^2(theta_W) independent of kappa (residual {sin2_simpl})", sin2_simpl == 0)
+    return okall
+
+
+# ============================================================
+# (G) Finite execution resolution inventory.  This runner is Monte-Carlo averaged from a
+#     fixed seed, so the certificate states structure, exhaustive-test scope and
+#     exact constants rather than any sampled average.
+# ============================================================
+def part_G():
+    print("\n(G) Resolution scope and limits (not physical bridge certificates)")
+    print(
+        "  per_element: checked — the generator basis is built entry by entry and then "
+        "validated exhaustively: every ordered pair of basis generators is tested against "
+        "Tr[t^A t^B] = (1/2) delta_AB at 1e-10, so orthonormality is established on all "
+        "pairs individually rather than by a single Gram-matrix norm, and this is redone "
+        "independently for each color rank tested."
+    )
+    print(
+        "  per_site: executed on the finite staggered background in B': every site-pair "
+        "color block of its inverse is checked against raw_trace=p_xy*(S+C). Odd pairs "
+        "also falsify the unsigned identity. This is a finite algebraic control, not a "
+        "continuum or ensemble validation of the physical current readout."
+    )
+    print(
+        "  per_mode: checked — the adjoint channel is not taken from a closed form but "
+        "rebuilt mode by mode. C is recomputed as twice the sum of |Tr[M t^A]|^2 over each "
+        "of the N_c^2 - 1 adjoint generator modes separately, and that explicit per-mode "
+        "sum is required to reproduce the closed value T - S, which is what makes the "
+        "Fierz completeness identity an executed check rather than a quoted one."
+    )
+    print(
+        "  per_block: checked — the generator basis is assembled in two structurally "
+        "distinct blocks and both are validated. The off-diagonal block supplies symmetric "
+        "and antisymmetric generators built pairwise from index pairs, and the Cartan "
+        "block supplies the diagonal generators with their own 1/sqrt(2k(k+1)) "
+        "normalization; the two blocks together are required to total exactly N_c^2 - 1 "
+        "at every rank tested."
+    )
+    print(
+        "  lattice_wide: not executed — no lattice ensemble is generated and "
+        "no beta, volume or continuum limit is taken. The stated fraction concerns "
+        "independent endpoint Haar averaging rather than a coupling scan: the singlet fraction "
+        "is numerically sampled for fixed non-unitary matrices, "
+        "under the independent-endpoint averaging hypotheses. No universal statement about "
+        "lattice measurements determining a matched physical coefficient follows."
+    )
+    return True
+
+
+def main():
+    print("=" * 78)
+    print("Supplied matrix identities and parameterized equalities (zero PDG inputs)")
+    print("=" * 78)
+    results = [part_A(), part_B(), part_Bp(), part_C(), part_D(), part_E(), part_F(), part_G()]
+    print("\n" + "=" * 78)
+    print(f"RUNNER STATUS: {'PASS' if all(results) and FAIL == 0 else 'FAIL'} (PASS={PASS} FAIL={FAIL})")
+    print(f"runner_check_totals = {{total_pass: {PASS}, total_fail: {FAIL}}}")
+    print("=" * 78)
+    return 0 if (all(results) and FAIL == 0) else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -1207,6 +1207,11 @@
       "source_sha256": "796ecb829a10f1603fb2330f77acbbdbbe761ee67e1ef7248496501995db0807",
       "timeout_sec": 120
     },
+    "scripts/supplied_finite_interval_signed_transport_identity_2026_10_24.py": {
+      "reason": "Bounded exact symbolic finite-interval signed transport controls; no numerical transport campaign or physical parameter imports.",
+      "source_sha256": "ff0b4fea67f83bd47bf93c9c46746179fdf99a053cf6490f1c0462787460fd43",
+      "timeout_sec": 120
+    },
     "scripts/supplied_positive_definite_logdet_variational_identity_2026_10_23.py": {
       "reason": "Finite supplied positive-definite logdet fixtures and boundary controls only; no transport or selector campaign.",
       "source_sha256": "c59057d39ae2a42495ddc229a69f5eef3225d1a35de4e5194654c818145d5d8c",

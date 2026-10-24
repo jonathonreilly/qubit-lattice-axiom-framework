@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/the_3450_far_wall_term_keeps_a_unique_gapped_wall_mode_chain_state_to_l_18_but_its_gap_falls_from_six_to_eight_modes_per_flavour_2026_10_24.py
+runner_sha256: 38f8a666e529a85f68159732a712c8b02e56b31634e19c7e5853634e4b27b5f1
+input_fingerprint_sha256: 3cc0d9c998fb5d59e15d63d26d30eff2e437c9b5f6d1e523c548fe42067b42a9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.76
+status: ok
+----- stdout -----
+== A. live re-verification at L = 12 (n = 6), g = 0 and 200, all neutral and Q = (3,2) momentum sectors
+   g = 0: neutral gap 0.5176, single-particle gap 0.2588, ground state P = [0], E(P=2) 0.518, E(P=4) 0.966
+   g = 200: neutral gap 4.0310, single-particle gap 4.8377, ground state P = [0], E(P=2) 4.031, E(P=4) 4.100
+PASS: A1 [T] g = 0 is the free mirror: neutral gap 2 sin(pi/L), single-particle gap sin(pi/L)
+PASS: A2 [T] the interaction matrix is real in the mode basis (each factor carries phase e^{i pi q / 2L} times i or -i per pair, and momentum conservation makes the product real): max |Im c| / |c| over all momentum-conserving products  [2.6e-16]
+PASS: A3 [F] reproduction gate (far-wall-smg C2): L = 12, g = 200 unique ground state at P = 0, neutral gap 4.031 and single-particle gap 4.838 (to 1e-3)  [gap 4.0310, sp 4.8377, max sector dim 17872]
+== B. Mac-mini results (mini_results.json; engine mini_chain.py, same model; [R] = read from file)
+PASS: B0 [R] the mini engine agrees with the live runner at L = 12, g = 200 (gap, sp to 1e-6)  [mini 4.030979, 4.837749]
+   L  n  g     neutral-gap  sp-gap   GS-P   E(P2)  E(P4)  gap*L   max sector dim
+    8 4     40    0.0849   0.945    [0]   1.607  2.199   0.68   214
+    8 4    200    0.1829   1.531    [0]   5.277  7.602   1.46   214
+   10 4      5    0.6180   0.309    [0]   0.618  1.118   6.18   212
+   10 4     40    0.0888   0.642    [0]   0.886  1.394   0.89   212
+   10 4    200    0.0926   1.607    [0]   2.990  4.887   0.93   212
+   10 4   1000    0.2674   7.856    [0]  13.272 22.775   2.67   212
+   12 6      5    0.5173   0.259    [0]   0.517  0.966   6.21   17872
+   12 6     40    0.0790   0.656    [0]   0.885  1.075   0.95   17872
+   12 6    200    4.0310   4.838    [0]   4.031  4.100  48.37   17872
+   12 6   1000   20.2595  26.368    [0]  20.260 20.476 243.11   17872
+   14 6      5    0.4448   0.222    [0]   0.445  0.846   6.23   17190
+   14 6     40    0.0631   0.587    [0]   0.729  0.921   0.88   17190
+   14 6    200    3.3597   4.306    [0]   3.788  3.360  47.04   17190
+   14 6   1000   16.7905  23.182    [0]  19.076 16.790 235.07   17190
+   16 8      5    0.3898    NA     [0]   0.390  0.750   6.24   2267718
+   16 8     40    0.1129   0.597    [0]   0.472  0.659   1.81   2267718
+   16 8    200    1.5969   1.544    [0]   2.016  1.597  25.55   2267718
+   16 8   1000    6.4487    NA     [0]  10.985  6.449 103.18   2267718
+   18 8    200    1.4435   1.421    [0]   2.021  1.444  25.98   2133134
+   sym_P_L16: 1.8474111129762605e-13
+   verdict: INCONCLUSIVE
+PASS: B1 [R] sector coverage at g = 200: every neutral momentum sector P = 0..L computed (P and -P are degenerate: exact at L = 12, 14 over all P; at L = 16 E(P=30) = E(P=2) to 1e-12) and every Q = (3,2) sector; E(-3,-2,P) = E(3,2,P) (checked at L = 8, 12, 14), so the single-particle gap is E(3,2) - E0  [nP [12, 14, 9, 10], charged sectors [[12, 12], [14, 14], [16], [18]]]
+PASS: B2 [R] unique ground state at g = 200 for L = 12, 14, 16, 18: neutral, P = 0, next state above it by > 1  [gaps 4.031, 3.360, 1.597, 1.444]
+PASS: B3 [R] single-particle gap at g = 200 stays > 1 for L = 12..18 (free values sin(pi/L) <= 0.26)  [sp 4.838, 4.306, 1.544, 1.421]
+== C. pre-set criteria (criteria_pre_run.txt, fixed before the L > 12 runs) and finite-size trend, g = 200
+   gap*L = 48.4, 47.0, 25.6, 26.0 (L = [12, 14, 16, 18]); gap(18)/gap(12) = 0.358; classification INCONCLUSIVE
+PASS: C1 [R] (recorded result) persistence criterion NOT met: gap(18)/gap(12) < 0.5 although every gap stays > 1; the closing criterion (gap < 0.3, or gap*L constant to 15%) is not met either, so the pre-set classification is INCONCLUSIVE  [ratio 0.358, gap*L spread 0.62]
+PASS: C2 [R] the drop sits at the mode-number step: at fixed n the gap tracks 1/L (gap*L equal to 4% within n = 6: L = 12, 14 and within n = 8: L = 16, 18), while at equal window fraction n/L (12 -> 16, 14 -> 18) the gap falls by ~0.4  [gap*L n=6: 48.4, 47.0; n=8: 25.6, 26.0; ratios 0.396, 0.430]
+PASS: C3 [R] trend fits (4 sizes, 2 mode numbers: a trend, not a limit): gap = D_inf + c/L gives D_inf < 0 with residual > 0.3, so the data do not support a finite L -> infinity gap of this form; a power law gap ~ L^-p gives p > 2 (faster than the 1/L of a gapless branch)  [D_inf -4.41, c 102.9, max residual 0.42; p 2.83]
+PASS: C4 [R] stronger coupling does not remove the drop: gap/g at g = 1000 falls x0.32 from L = 12 to 16 (x0.40 at g = 200); L = 12 is linear in g (strong-coupling regime), L = 16 is not yet (gap/g still decreasing between 200 and 1000)  [gap/g at 1000: 0.02026, 0.01679, 0.00645; at 200: 0.02015, 0.01680, 0.00798]
+PASS: C5 [R] weak and intermediate coupling: g = 5 is free-like (gap / 2 sin(pi/L) within 0.2% at L = 12, 14, 16: gapless reading); g = 40 keeps a small neutral gap (< 0.15, the crossing region) at L = 12, 14, 16  [g=5 ratios 0.9994, 0.9995, 0.9991; g=40 gaps 0.079, 0.063, 0.113]
+   Not computed: L = 20 (n = 10; one neutral momentum sector has 3.5e8 states); L = 18 at g != 200; L = 16 charged at g = 5, 1000;
+   L = 16, g = 5 at P = 16 (Lanczos stalled on near-degenerate free levels; free-like reading from the other sectors).
+Supplied: wall-mode projection (bulk dropped), bond forms, g, L. elapsed 4.2s, peak RSS 224 MB
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

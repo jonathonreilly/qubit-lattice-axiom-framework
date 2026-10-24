@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_higgs_mass_wilson_loop_spectroscopy_2026_05_10_higgsH3.py
 runner_sha256: cdfda9920de89dbac005410477f340b1f0a05fb308e248d8e390d712a50b8112
-input_fingerprint_sha256: 7d022ab80b9f63d7969f3613550dd1d7e42902749e4096386736a8ba36695509
+input_fingerprint_sha256: d926719743dfd1f8b0bed1544ea3ca286c5676af927e4f6e0612341ff7d50433
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 20.00
+elapsed_sec: 9.55
 status: ok
 ----- stdout -----
 
@@ -86,31 +86,31 @@ status: ok
  Part 4: retained kernel reuse self-test
 ----------------------------------------------------------------------------------------
   [run_correlator_mc] dims=(2, 2, 2, 4) vol=32 beta=6 seed=2026051001 numba=True
-    thermalized in 7.7s (80 sweeps)
-    measured in 1.5s (160 sweeps, 80 measurements)
-  <P>_global at beta=6 on 2^3 x 4: 0.6261
+    thermalized in 2.8s (80 sweeps)
+    measured in 0.3s (160 sweeps, 80 measurements)
+  <P>_global at beta=6 on 2^3 x 4: 0.6233
   ENGELS-1990 BENCHMARK ~0.594 (large-vol)
-  [PASS] <P>_global is in retained range (0.55, 0.70)  (got 0.6261)
+  [PASS] <P>_global is in retained range (0.55, 0.70)  (got 0.6233)
   [PASS] n_meas > 0  (n_meas = 80)
   [PASS] C_mean has lt entries  (len = 4)
 
 ----------------------------------------------------------------------------------------
  Part 5: timeslice-plaquette accumulator self-consistency
 ----------------------------------------------------------------------------------------
-  [PASS] sum of timeslice plaq ~ global plaq  (diff = 1.11e-16)
+  [PASS] sum of timeslice plaq ~ global plaq  (diff = 0.00e+00)
   [PASS] all timeslice plaquettes > 0
-  <P>_slice (per t) = ['0.6287', '0.6267', '0.6263', '0.6228']
-  max deviation     = 0.0034
-  [PASS] max slice deviation < 0.05 absolute  (max_dev = 0.0034)
+  <P>_slice (per t) = ['0.6271', '0.6185', '0.6238', '0.6238']
+  max deviation     = 0.0048
+  [PASS] max slice deviation < 0.05 absolute  (max_dev = 0.0048)
 
 ----------------------------------------------------------------------------------------
  Part 6: connected correlator C(t) extraction
 ----------------------------------------------------------------------------------------
-  C(d=0) = +1.7471e-03 ± 2.3036e-04
-  C(d=1) = -6.2204e-04 ± 1.1214e-04
-  C(d=2) = -5.0299e-04 ± 1.6877e-04
-  C(d=3) = -6.2204e-04 ± 1.1214e-04
-  [PASS] C(0) > 0 (variance is positive)  (C(0) = 1.7471e-03)
+  C(d=0) = +1.4074e-03 ± 1.1285e-04
+  C(d=1) = -3.8424e-04 ± 5.0591e-05
+  C(d=2) = -6.3892e-04 ± 7.7382e-05
+  C(d=3) = -3.8424e-04 ± 5.0591e-05
+  [PASS] C(0) > 0 (variance is positive)  (C(0) = 1.4074e-03)
   [PASS] C(0) >= |C(d)| for d > 0 within 3 sigma (Schwarz)  (all d-points satisfy |C(d)| < C(0) within 3 sigma)
 
 ----------------------------------------------------------------------------------------
@@ -121,53 +121,53 @@ status: ok
 
   --- seed 11 ---
   [run_correlator_mc] dims=(4, 4, 4, 8) vol=512 beta=6 seed=11 numba=True
-    thermalized in 0.6s (60 sweeps)
-    measured in 2.6s (160 sweeps, 80 measurements)
+    thermalized in 0.5s (60 sweeps)
+    measured in 1.3s (160 sweeps, 80 measurements)
 
   --- seed 22 ---
   [run_correlator_mc] dims=(4, 4, 4, 8) vol=512 beta=6 seed=22 numba=True
-    thermalized in 0.6s (60 sweeps)
-    measured in 2.7s (160 sweeps, 80 measurements)
+    thermalized in 0.5s (60 sweeps)
+    measured in 1.3s (160 sweeps, 80 measurements)
 
   --- seed 33 ---
   [run_correlator_mc] dims=(4, 4, 4, 8) vol=512 beta=6 seed=33 numba=True
-    thermalized in 0.8s (60 sweeps)
-    measured in 2.3s (160 sweeps, 80 measurements)
+    thermalized in 0.5s (60 sweeps)
+    measured in 1.3s (160 sweeps, 80 measurements)
 
-  Pooled <P>_global = 0.59647
-  C(d=0) = +2.6358e-04 ± 9.4928e-06
-  C(d=1) = -2.3345e-05 ± 6.8525e-06
-  C(d=2) = -4.8908e-05 ± 4.7017e-06
-  C(d=3) = -3.4132e-05 ± 8.4311e-06
-  C(d=4) = -5.0808e-05 ± 1.0237e-05
-  C(d=5) = -3.4132e-05 ± 8.4311e-06
-  C(d=6) = -4.8908e-05 ± 4.7017e-06
-  C(d=7) = -2.3345e-05 ± 6.8525e-06
-  [PASS] pooled <P>_global in retained range (0.55, 0.70)  (P = 0.59647)
-  [PASS] pooled C(0) > 0  (C(0) = 2.6358e-04)
+  Pooled <P>_global = 0.59660
+  C(d=0) = +2.8070e-04 ± 9.7051e-06
+  C(d=1) = -2.8520e-05 ± 5.0625e-06
+  C(d=2) = -4.4863e-05 ± 4.7294e-06
+  C(d=3) = -4.4512e-05 ± 3.8459e-06
+  C(d=4) = -4.4916e-05 ± 1.3347e-05
+  C(d=5) = -4.4512e-05 ± 3.8459e-06
+  C(d=6) = -4.4863e-05 ± 4.7294e-06
+  C(d=7) = -2.8520e-05 ± 5.0625e-06
+  [PASS] pooled <P>_global in retained range (0.55, 0.70)  (P = 0.59660)
+  [PASS] pooled C(0) > 0  (C(0) = 2.8070e-04)
 
 ----------------------------------------------------------------------------------------
  Part 8: effective-mass extraction from C(t)
 ----------------------------------------------------------------------------------------
   Local m_eff(d) for d=1..3:
-    d=1: m_eff = -0.7395 ± 0.3089 (lattice units)
-    d=2: m_eff = +0.3597 ± 0.2651 (lattice units)
-    d=3: m_eff = -0.3978 ± 0.3188 (lattice units)
+    d=1: m_eff = -0.4530 ± 0.2064 (lattice units)
+    d=2: m_eff = +0.0078 ± 0.1363 (lattice units)
+    d=3: m_eff = -0.0090 ± 0.3095 (lattice units)
 
-  Weighted m_eff estimator (lattice units): +0.3597 ± 0.2651
+  Weighted m_eff estimator (lattice units): +0.0078 ± 0.1363
   (used n = 1 usable d-points; mode = positive-decay window)
-  [PASS] m_eff (lattice units) is finite  (m_eff = 0.3596821514513681)
-  [PASS] m_eff estimator > 0 (non-trivial mass scale)  (m_eff = 0.3597)
+  [PASS] m_eff (lattice units) is finite  (m_eff = 0.007840523004256611)
+  [PASS] m_eff estimator > 0 (non-trivial mass scale)  (m_eff = 0.0078)
 
 ----------------------------------------------------------------------------------------
  Part 9: GeV conversion and PDG comparison (comparison only, NOT load-bearing)
 ----------------------------------------------------------------------------------------
   Conversion: a^-1 (GeV) = v_EW / (a*v_EW)_lattice = 246.28 GeV    (convention: a*v_EW = 1)
-  m_eff (GeV) = 88.58 ± 65.28 GeV
+  m_eff (GeV) = 1.93 ± 33.57 GeV
   m_H_PDG     = 125.25 GeV (comparison anchor only, NOT a derivation input)
-  Δ(m_eff - m_H_PDG) = -36.67 GeV    (-29.3% relative)
-  [PASS] m_eff (GeV) is finite  (m_eff = 88.58252025944294)
-  [PASS] m_eff (GeV) on a non-trivial physical scale (1 GeV - 10 TeV)  (m_eff = 88.58)
+  Δ(m_eff - m_H_PDG) = -123.32 GeV    (-98.5% relative)
+  [PASS] m_eff (GeV) is finite  (m_eff = 1.9309640054883181)
+  [PASS] m_eff (GeV) on a non-trivial physical scale (1 GeV - 10 TeV)  (m_eff = 1.93)
 
 ----------------------------------------------------------------------------------------
  Part 10: admission statements (channel + finite-size + convention)
@@ -207,28 +207,28 @@ status: ok
 ----------------------------------------------------------------------------------------
  Part 11: compute-tier statement
 ----------------------------------------------------------------------------------------
-  total wall-clock: 9.6 s
+  total wall-clock: 5.2 s
   n_seeds: 3
   n_meas per seed: 80
   total measurements: 240
   numba available: True
-  [PASS] total wall < 1800s (campaign budget)  (wall = 9.6s)
+  [PASS] total wall < 1800s (campaign budget)  (wall = 5.2s)
   [PASS] at least 1 seed completed  (n_seeds = 3)
 
 ----------------------------------------------------------------------------------------
  Part 12: explicit statistical-error budget
 ----------------------------------------------------------------------------------------
-  C(d=0) ensemble error: 9.4928e-06
-  m_eff (lattice) stat err: 0.2651
-  m_eff (GeV)     stat err: 65.28 GeV
+  C(d=0) ensemble error: 9.7051e-06
+  m_eff (lattice) stat err: 0.1363
+  m_eff (GeV)     stat err: 33.57 GeV
   systematics NOT included in stat err:
     - channel-identification (admission 1; not quantified here)
     - finite-size (admission 2; ~5-10% on this lattice)
     - lattice-spacing convention (admission 3; convention)
     - plateau-fit window (admission 4; ~5% on this T)
   TOTAL ε on m_eff (GeV): stat ⊕ NAMED ADMISSIONS
-    = 65.28 ⊕ <not closed>
-  [PASS] stat error on m_eff (GeV) sensible (< 1000 GeV)  (err = 65.28)
+    = 33.57 ⊕ <not closed>
+  [PASS] stat error on m_eff (GeV) sensible (< 1000 GeV)  (err = 33.57)
   [PASS] stat error budget reported  (stat ⊕ named admissions)
 
 ----------------------------------------------------------------------------------------

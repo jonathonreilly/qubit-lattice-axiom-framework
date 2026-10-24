@@ -116,3 +116,5 @@ archive_unlanded/memory_recovery_2026_09_03/** -whitespace
 
 # Preserve exact captured endpoint evidence, including its final blank line.
 /outputs/real_endpoint_autonomous_output_2026_10_17_inputs/historical_author/run_01/stdout.txt whitespace=-blank-at-eof
+
+/archive/notes/review_feedback/pr9848-higgs-s4b-2026-10-23/cl3_higgs_mass_s4b_ewsb_selection_2026_05_10_s4bewsb.txt.txt -whitespace

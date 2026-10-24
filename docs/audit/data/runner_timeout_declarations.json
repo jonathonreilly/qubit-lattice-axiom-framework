@@ -249,6 +249,11 @@
       "source_sha256": "ecc7730045468331958400b4c6121f3994ad9d6392519dc163b826e24ff29c60",
       "timeout_sec": 120
     },
+    "scripts/finite_guarded_update_involution_2026_10_24.py": {
+      "reason": "Bounded finite guarded-update fixture enumeration; no spatial campaign or standalone historical helper execution.",
+      "source_sha256": "c3a022a70ef21bf06101d433c1f88bf9e0fd0a94593071c3a2fb01a5ac6ed5ee",
+      "timeout_sec": 120
+    },
     "scripts/fixed_field_grown_transfer_scout.py": {
       "reason": "Historical/provenance affected-change packaging cap; no inherited physics certification. Source changes invalidate this declaration.",
       "source_sha256": "3187c78a5095e0a73958c020c267755f1bad9567d16ab177ff5ffe70ab54bbe9",

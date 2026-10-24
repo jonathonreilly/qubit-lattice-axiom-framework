@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/far_termination_winding_keeps_a_pi_free_screening_near_wall_but_the_end_is_a_chosen_boundary_bit_and_the_far_wall_must_gap_all_three_families_together_2026_10_24.py
+runner_sha256: c52a23e728a058e56d55c8b70479ede2cba128be0633d4b5e1712087ef5d938e
+input_fingerprint_sha256: 1d938774e40ad330ae6ea3e73da770ce929fcc9d5fc4538191e311a9fc40ed49
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.14
+status: ok
+----- stdout -----
+== G. is the far termination forced?
+PASS: G1 [T]/[F] same W = 0 bulk, same total winding W_F, two end placements: far layer -> near wall (f(2,+), pi-free); near layer -> near wall carries the whole pi flow W_F (the pi copy returns). Both are valid gapped-bulk unitary slabs; nothing in the bulk tick distinguishes them  [far: near (F0,Fpi) ([-1, 1, 0], [0, 0, 0]), far ([-1, 0, 1], [-2, 1, 1]); near-layer: near ([-3, 2, 1], [-2, 1, 1]), far ([1, -1, 0], [0, 0, 0]); det windings [-2, 1, 1], [-2, 1, 1]]
+PASS: G2 [T]/[F] record arrow: reversing the tick (U -> U^+, the time-reversed reading the arrow excludes) negates every flow but leaves the layer at the SAME end (near wall still pi-free): the record arrow orients time, not the layer coordinate, so it cannot choose the end  [U^+: near ([1, -1, 0], [0, 0, 0]), far ([1, 0, -1], [2, -1, -1]), W [2, -1, -1]]
+PASS: G3 [T] with light q 2 (C = f(2,+)) and ONE far mirror Weyl at 0 (far F_0 = -C + W = f(q,-)), the family-class windings are W = C + f(q,-) for q in {0, 1}: two options, both N_f = 0 mod 3; q = 2 gives W = 0 (no mod 3). So the clause fixes: W != 0 (1 bit), which end (1 bit), which mirror charge (1 bit): ~3 bits of boundary information, none forced  [options (q_mirror, W): [(0, [-1, 2, -1]), (1, [-2, 1, 1]), (2, [0, 0, 0])]; family class: [(0, [-1, 2, -1]), (1, [-2, 1, 1])]]
+== N. near-wall physics
+PASS: N1 [F] near wall (F_0, F_pi) = (f(2,+), 0) for every tested g and Lx: one light q 2 Weyl per field, no pi copy  [5 cases: ['([-1, 1, 0], [0, 0, 0])']]
+PASS: N2 [T]/[F] lemma: a layer-preserving S with S U(k) S^-1 = -U(k+pi) maps each wall's crossing at 0 to one at pi with the same hand, so F_0 = F_pi per wall; the repaired near wall has F_0 != F_pi, so no such S exists (and the spectrum is not pi-shift symmetric), which removes the mechanism that zeroed polarization  [max_k distance of spec U(k) from spec(-U(k+pi)): 1.46]
+PASS: N3 [F] vacuum polarization (12-site ring x 8 layers + far layer, sector with C = +1, near-wall kicks lam 0.5, 24 ticks): the repaired near wall SCREENS; the exactly S-doubled control (U plus its inverted pi image, the pi-sector-stability mechanism) gives exactly zero  [max |dN_near|: repaired 0.424, near-layer placement 0.925, S-doubled 1e-12]
+PASS: N4 [T]/[F] T-symmetric Wilson slab (T = i sigma_y K, T^2 = -1): a T-even far term leaves E(k) = E(-k) on the near wall exactly; a tetrahedral-covariant T-odd far term (sigma_x sin ky sin kz + cyc, the dim-5 class) leaks a reciprocity-odd near-wall term E(k) - E(-k) that falls by ~(1 - m0)^2 per layer (first order in the near mode's far-layer weight)  [T res 0e+00, T-odd check 0e+00; even-term asym 4e-16; odd-term asym vs Ls 4,6,8,10: ['-5.7e-05', '-1.6e-06', '-4.6e-08', '-1.3e-09']; per-layer factor [0.168, 0.168, 0.168] vs (1-m0)^2 = 0.16]
+   N5 [S] reading: the leaked term is dim-5 (coefficient ~ c 0.16^Ls a); a Crab-type |eta| < 1e-7 bound at a = l_P needs Ls >~ 11 layers (constant b terms are forbidden by the 12 tetrahedral rotations the termination keeps)
+== C. CP
+PASS: C1 [T] the W = 0 bulk keeps Floquet T itself; on copies it acts with X = 1 (family-fixing), so masses respecting it are real and det[Hu,Hd] = 0: J = 0; a family-universal leak (multiple of 1) leaves the commutator unchanged: J = 0. CP still needs a non-family-blind ingredient, as on the FREEZE bulk (status unchanged, not worse)  [max |J| real masses 0e+00; with universal leak 0e+00; generic supplied phases median Im det[Hu,Hd]/2 1.7e+02 (unnormalised)]
+== F. far-wall content per family: (q1,-), (q2,+), (q1,-), each a 16
+PASS: F1 [T] far wall per family: gauge anomalies 0 (each 16 is anomaly-free), Weyl count 48 and net hand -16 both 0 mod 16; but the turn Z3 anomaly is NONZERO per family for every twist k (cubic 96 = 6 mod 9 at k = 0); it vanishes for N_f = 0 mod 3. So symmetric gapping is allowed in principle only for the three families TOGETHER (family-collective far-wall term)  [(Z3-Spin10^2, Z3-grav, Z3^3) per family for k = 0,1,2: {0: (0, 0, 6), 1: (1, 2, 5), 2: (2, 1, 7)}; untwisted far wall anomaly-free for N_f in [3, 6, 9]]
+   time 3.4 s, peak 110 MB
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

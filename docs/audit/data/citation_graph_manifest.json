@@ -1,5 +1,5 @@
 {
- "edge_count": 16295,
+ "edge_count": 16232,
  "node_count": 7427,
  "nodes": {
   "3d_correction_master_note": {
@@ -3787,8 +3787,8 @@
    "out_degree": 6
   },
   "closure_c_l1_hk_msbar_3l_conversion_note_2026-05-10_cl1a": {
-   "deps_hash": "22174708aa26",
-   "out_degree": 6
+   "deps_hash": "e927dc8ab798",
+   "out_degree": 2
   },
   "closure_c_l1_per_graph_casimir_note_2026-05-10_cl1c": {
    "deps_hash": "e3b0c44298fc",
@@ -3803,8 +3803,8 @@
    "out_degree": 8
   },
   "closure_t1_z10_z20_bz_integrals_note_2026-05-10_t1z10z20": {
-   "deps_hash": "81ba0e4aa8a5",
-   "out_degree": 5
+   "deps_hash": "11e70e082e79",
+   "out_degree": 2
   },
   "closure_t2_df_physical_consequences_note_2026-05-10_t2df": {
    "deps_hash": "49efbf80b208",
@@ -4459,8 +4459,8 @@
    "out_degree": 2
   },
   "cosmological_constant_spectral_gap_identity_theorem_note": {
-   "deps_hash": "d02d14b3f7eb",
-   "out_degree": 6
+   "deps_hash": "770c4da1b6d2",
+   "out_degree": 5
   },
   "cosmological_constant_vacuum_energy_audit_note": {
    "deps_hash": "d1eb36ba5304",
@@ -4871,8 +4871,8 @@
    "out_degree": 0
   },
   "dark_energy_eos_retained_corollary_theorem_note": {
-   "deps_hash": "44969a98096e",
-   "out_degree": 10
+   "deps_hash": "f341a4a3675e",
+   "out_degree": 5
   },
   "darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05": {
    "deps_hash": "9fb5085e81da",
@@ -7807,8 +7807,8 @@
    "out_degree": 5
   },
   "g_newton_self_consistency_bounded_sharpening_note_2026-05-10_planckp4": {
-   "deps_hash": "4cc6af7e7e21",
-   "out_degree": 17
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "g_newton_skeleton_selection_bounded_note_2026-05-10_gnewtong1": {
    "deps_hash": "120bf85c17aa",
@@ -8843,8 +8843,8 @@
    "out_degree": 9
   },
   "graviton_spectral_tower_theorem_note_2026-04-24": {
-   "deps_hash": "ca527d2f68e7",
-   "out_degree": 7
+   "deps_hash": "0acb0c725930",
+   "out_degree": 1
   },
   "gravity_attraction_sign_from_source_positivity_and_symmetric_mediator_narrow_theorem_note_2026-06-08": {
    "deps_hash": "81612f2545ff",
@@ -13119,8 +13119,8 @@
    "out_degree": 12
   },
   "koide_a1_probe_gravity_phase_bounded_obstruction_note_2026-05-08_probe3": {
-   "deps_hash": "847888b4aa23",
-   "out_degree": 25
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "koide_a1_probe_lattice_non_conjugation_bounded_obstruction_note_2026-05-09_probe17": {
    "deps_hash": "925674d9e9c6",
@@ -23375,8 +23375,8 @@
    "out_degree": 3
   },
   "velocity_rg_logflow_framework_internal_2026-06-21": {
-   "deps_hash": "a30145e2e616",
-   "out_degree": 8
+   "deps_hash": "aad8fdb34123",
+   "out_degree": 6
   },
   "w_mass_derived_note": {
    "deps_hash": "246b81948e27",

@@ -1,45 +1,22 @@
 #!/usr/bin/env python3
-r"""
-Koide A1 — Brannen δ = arg(b) Plancherel Identity Support runner.
-
-Verifies the support-grade content of
-docs/KOIDE_A1_BRANNEN_PLANCHEREL_IDENTITY_SUPPORT_NOTE_2026-04-25.md.
-
-Algebraic identity (proved here inside the Brannen parameterization):
-
-    sqrt(m_k) = V_0 (1 + c·cos(δ + 2π(k−1)/3))     k=1,2,3
-    a_0 := (v_1 + v_2 + v_3)/√3
-    b   := (v_1 + ω̄ v_2 + ω v_3)/√3        ω = exp(2πi/3)
-  ⇒ a_0 = √3 V_0,
-    b   = (√3/2) V_0 c · exp(iδ),
-    arg(b) = δ  (mod 2π).
-
-This is an exact identity inside the Brannen parameterization, not on
-the live authority surface. The runner verifies it symbolically (via
-sympy), gives the PDG numerical signature, and cross-checks against the
-existing geometry-support runner.
-
-This runner does NOT certify closure of the audit's P_A1 residual on the
-live authority surface. The prior `chain_uses_RZ_lift = False` PASS was
-withdrawn because the integrated review findings identify it as
-tautological by construction.
-
-What an actual closure would additionally require is recorded in §6 of
-the support note (promote KOIDE_BERRY_PHASE_THEOREM_NOTE_2026-04-19 to
-retained-main authority + derive the value 2/9 analytically from
-H_sel(m) dynamics or via a Callan-Harvey-style ambient bridge). Neither
-is supplied here.
+r"""Supplied real Fourier/plane identities and calibrated finite fixtures.
+No physical phase selection, Berry holonomy or authority promotion is inferred.
 """
 
 from __future__ import annotations
 
 import math
 import sys
+from pathlib import Path
 
 import numpy as np
 import sympy as sp
 from scipy.linalg import expm
 
+
+ROOT = Path(__file__).resolve().parents[1]
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = ('docs/KOIDE_A1_BRANNEN_PLANCHEREL_IDENTITY_SUPPORT_NOTE_2026-04-25.md',)
 
 PASSES: list[tuple[str, bool, str]] = []
 
@@ -61,12 +38,18 @@ def section(title: str) -> None:
 
 
 def main() -> int:
+    PASSES.clear()
+    for name in AUDIT_INPUT_PATHS:
+        if not (ROOT / name).is_file():
+            print(f"FAIL: missing declared input {name}")
+            return 1
     # ------------------------------------------------------------------------
     # Section 1: Symbolic Plancherel identity inside the Brannen parameterization
     # ------------------------------------------------------------------------
     section("§1. Symbolic identity inside the Brannen parameterization: arg(b) = δ")
 
-    V0, c, delta = sp.symbols("V_0 c delta", positive=True, real=True)
+    V0, c = sp.symbols("V_0 c", positive=True, real=True)
+    delta = sp.symbols("delta", real=True)
     omega = sp.exp(sp.I * 2 * sp.pi / sp.Integer(3))
 
     sqrt_m = [V0 * (1 + c * sp.cos(delta + 2 * sp.pi * (k - 1) / sp.Integer(3))) for k in (1, 2, 3)]
@@ -127,13 +110,13 @@ def main() -> int:
     delta_PDG_mod = abs(((delta_PDG + math.pi) % (2 * math.pi / 3)) - math.pi / 3)
 
     check(
-        "2.1 PDG-derived c ≈ √2 (carrier consistency)",
+        "2.1 Calibrated mass-triple c is within the stated tolerance of √2",
         abs(c_PDG - math.sqrt(2)) < 1e-2,
         f"c_PDG = {c_PDG:.6f}, √2 = {math.sqrt(2):.6f}",
     )
 
     check(
-        "2.2 PDG-derived |arg(b)| (1st Z_3 sector) ≈ 2/9 rad, not 4π/9 rad",
+        "2.2 Folded phase of the supplied mass triple is near 2/9 under this convention",
         abs(delta_PDG_mod - 2 / 9) < 5e-3,
         f"|arg(b)|        = {delta_PDG_mod:.6f} rad\n"
         f"2/9             = {2/9:.6f} rad   (matches data)\n"
@@ -147,7 +130,7 @@ def main() -> int:
     ])
     rel_err = max(abs(brannen_recon[i] - PDG_sqrt[i]) / PDG_sqrt[i] for i in range(3))
     check(
-        "2.3 Brannen reconstruction with δ = 2/9 rad reproduces PDG <0.1%",
+        "2.3 Calibrated V0,c reconstruction with supplied δ=2/9 meets 0.1% fixture tolerance",
         rel_err < 1e-3,
         f"max rel err = {rel_err * 100:.5f}%\n"
         f"recon: {brannen_recon}\n"
@@ -161,15 +144,15 @@ def main() -> int:
     ]
     canon_negative = any(b < 0 for b in brannen_canon)
     check(
-        "2.4 Counterfactual: δ = 4π/9 rad (canonical χ-lift) fails PDG (negative √m)",
+        "2.4 Supplied δ=4π/9 fixture has a negative amplitude with these calibrated parameters",
         canon_negative,
-        f"χ-lift recon: {brannen_canon}  [negative ⇒ unphysical]",
+        f"χ-lift recon: {brannen_canon}  [negative: not a positive square-root-amplitude instance]",
     )
 
     # ------------------------------------------------------------------------
-    # Section 3: Numerical witness on the retained selected line (cross-check)
+    # Section 3: Numerical witness on the supplied selected line (cross-check)
     # ------------------------------------------------------------------------
-    section("§3. Cross-check vs geometry runner: α(m_*) − α(m_0) = −2/9 at 1e-12")
+    section("§3. Self-contained supplied chart fixture: α(m_*) − α(m_0) = −2/9 at 1e-12")
 
     GAMMA = 0.5
     E1 = math.sqrt(8.0 / 3.0)
@@ -211,12 +194,12 @@ def main() -> int:
     ang_mstar = perp_rotation_angle(m_star)
 
     check(
-        "3.1 Geometry-runner numerical witness: α(m_*) − α(m_0) = −2/9 (1e-12)",
+        "3.1 Supplied hard-coded coordinate witness: α(m_*) − α(m_0) = −2/9 (1e-12)",
         abs((ang_mstar - ang_m0) + 2 / 9) < 1e-12,
         f"α(m_*) − α(m_0) = {ang_mstar - ang_m0:.15f}\n"
         f"target          = {-2/9:.15f}\n"
         f"|diff|          = {abs((ang_mstar - ang_m0) + 2/9):.3e}\n"
-        f"NOTE: hard-coded m_*; this is a numerical witness on retained data,\n"
+        f"NOTE: hard-coded m_*; this is a numerical witness on supplied fixture data,\n"
         f"      not an analytic derivation of the value 2/9 from H_sel dynamics.",
     )
 
@@ -270,22 +253,20 @@ def main() -> int:
         f"target               = {2/9:.15f} rad",
     )
 
-    # ------------------------------------------------------------------------
-    # Section 5: explicit support-grade scope statement
-    # ------------------------------------------------------------------------
-    section("§5. Support-grade scope statement (no closure flags)")
-
-    print("This runner verifies algebraic identities inside the Brannen")
-    print("parameterization plus numerical witnesses on retained data. It does")
-    print("NOT close the audit's P_A1 radian-bridge residual on the live")
-    print("authority surface, which requires:")
-    print()
-    print("  (1) promoting KOIDE_BERRY_PHASE_THEOREM_NOTE_2026-04-19.md from")
-    print("      'actual-route' to retained-main authority;")
-    print("  (2) deriving the value 2/9 analytically (either as an H_sel(m)")
-    print("      selection theorem or via a Callan-Harvey-style ambient bridge).")
-    print()
-    print("Neither (1) nor (2) is supplied here; see the support note's integrated review findings.")
+    # Exact convention-specific plane identity, independently expanded.
+    x0, x1, x2 = sp.symbols("x0 x1 x2", real=True)
+    p1 = (x0-x1)/sp.sqrt(2)
+    p2 = (x0+x1-2*x2)/sp.sqrt(6)
+    b_plane = ((x0-(x1+x2)/2)+sp.I*sp.sqrt(3)*(x2-x1)/2)/sp.sqrt(3)
+    phase_factor = sp.sqrt(3)/2 + sp.I/2
+    check("5.1 Exact plane convention b=exp(i*pi/6)(p1-i*p2)/sqrt(2)",
+          sp.simplify(b_plane-phase_factor*(p1-sp.I*p2)/sp.sqrt(2)) == 0)
+    check("5.2 Specified orientation gives opposite wrapped angle differences", matches_neg)
+    section("Scope")
+    print("Fourier phase is a coordinate modulo2pi; component positivity is a separate premise.")
+    print("Mass values, chart and m witnesses are supplied/calibrated, not predictions.")
+    print("Coordinate angle differences are not invariant Berry holonomy.")
+    print("The old Berry-promotion instruction is withdrawn; physical observable and dynamics remain open.")
 
     # ------------------------------------------------------------------------
     # Summary
@@ -299,21 +280,15 @@ def main() -> int:
         print(f"  [{'PASS' if ok else 'FAIL'}] {label}")
 
     print()
-    print("Honest closeout flags:")
-    print("  KOIDE_A1_RADIAN_BRIDGE_AUDIT_CLOSES_DELTA=FALSE")
-    print("  TYPE_B_TO_RADIAN_IDENTIFICATION_REMAINS_PRIMITIVE_ON_LIVE_SURFACE=TRUE")
-    print("  P_A1_STATUS=OPEN_ON_CURRENT_MAIN")
-    print("  THIS_RUNNER_PROVES=ALGEBRAIC_IDENTITY_INSIDE_BRANNEN_PARAMETERIZATION")
-    print("  THIS_RUNNER_DOES_NOT_PROVE=PHYSICAL_OBSERVABLE_IDENTIFICATION_ON_RETAINED_MAIN")
-    print("  SUPPORT_NUMERICAL_WITNESS_ON_RETAINED_SELECTED_LINE=2/9_RAD_AT_1E-12")
+    print("Scope: conditional Fourier/plane identities and finite supplied fixtures only.")
 
     if n_fail == 0:
         print()
         print("VERDICT: support-grade algebraic identity + numerical witness verified.")
         print("  arg(b) = δ inside the Brannen parameterization (sympy-exact).")
-        print("  PDG signature picks 2/9 rad over 4π/9 rad inside the parameterization.")
-        print("  Numerical 2/9 on retained selected line (geometry-runner cross-check).")
-        print("  Closure of P_A1 on the live surface is NOT claimed (see §5 + support note §6).")
+        print("  Calibrated fixture comparison does not select a physical phase.")
+        print("  Numerical 2/9 on supplied selected line (geometry-runner cross-check).")
+        print("  No physical or audit closure follows from these checks.")
         return 0
     else:
         print()

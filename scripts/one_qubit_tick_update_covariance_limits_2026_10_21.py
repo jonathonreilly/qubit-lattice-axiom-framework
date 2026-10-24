@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Supplied single-particle convolution and ordered 2x2/4x4 block diagnostics.
-Finite covariance samples and exact point counterexamples; no physical chirality,
+Exact cubic averaging projection, finite covariance samples and point counterexamples; no physical chirality,
 physical mass, neighborhood gap or universal momentum-mixing necessity is claimed.
 The original nearest-neighbor exclusion theorem is deferred separately.
 """
@@ -53,7 +53,87 @@ def spin_of(R):
     raise RuntimeError('no spin rotation')
 
 
+# Exact coordinates use the complex-linear Pauli basis (I, sigma_x, sigma_y,
+# sigma_z). Rational basis inputs span the complex domain by complex linearity.
+from fractions import Fraction
+SITES = ((0, 0, 0), (1, 0, 0), (-1, 0, 0),
+         (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1))
+
+
+def exact_rotations():
+    out = []
+    for perm in itertools.permutations(range(3)):
+        parity = (-1) ** sum(perm[i] > perm[j] for i in range(3) for j in range(i + 1, 3))
+        for signs in itertools.product((-1, 1), repeat=3):
+            if parity * signs[0] * signs[1] * signs[2] == 1:
+                out.append(tuple(tuple(signs[i] if j == perm[i] else 0 for j in range(3)) for i in range(3)))
+    return tuple(out)
+
+
+def rotate_vector(R, v):
+    return tuple(sum(R[i][j] * v[j] for j in range(3)) for i in range(3))
+
+
+def coefficient_action(R, kernel):
+    result = [None] * 7
+    for g, coefficient in zip(SITES, kernel):
+        h = rotate_vector(R, g)
+        result[SITES.index(h)] = (coefficient[0], *rotate_vector(R, coefficient[1:]))
+    return tuple(result)
+
+
+def cubic_average(kernel):
+    # Direct 24-term action; does not use the closed coefficient formula.
+    images = [coefficient_action(R, kernel) for R in exact_rotations()]
+    return tuple(tuple(sum(image[h][j] for image in images) * Fraction(1, 24)
+                       for j in range(4)) for h in range(7))
+
+
+def closed_projection(kernel, denominator=6, vector_sign=1):
+    # Independent trace-coordinate formula. Optional wrong parameters are
+    # negative controls only, never the definition of the projection.
+    a = kernel[0][0]
+    b = sum(row[0] for row in kernel[1:]) * Fraction(1, denominator)
+    c = sum(sum(g[i] * row[i + 1] for i in range(3))
+            for g, row in zip(SITES[1:], kernel[1:])) * Fraction(vector_sign, denominator)
+    return ((a, 0, 0, 0),) + tuple((b, *(c * x for x in h)) for h in SITES[1:])
+
+
+def exact_projection_checks():
+    group = exact_rotations()
+    product = lambda R, Q: tuple(tuple(sum(R[i][k] * Q[k][j] for k in range(3))
+                                      for j in range(3)) for i in range(3))
+    check('exact cubic rotations: 24 distinct signed integer matrices, closed under composition',
+          len(group) == len(set(group)) == 24 and all(product(R, Q) in group for R in group for Q in group))
+    basis = []
+    for slot in range(7):
+        for component in range(4):
+            basis.append(tuple(tuple(int((h, j) == (slot, component)) for j in range(4)) for h in range(7)))
+    averages = [cubic_average(kernel) for kernel in basis]
+    check('exact group average equals trace-coordinate formula on all 28 complex-linear basis inputs',
+          all(avg == closed_projection(kernel) for kernel, avg in zip(basis, averages)))
+    check('exact covariance: all 24 actions fix each of the 28 averaged basis inputs',
+          all(coefficient_action(R, avg) == avg for R in group for avg in averages))
+    check('exact idempotence on all 28 basis inputs',
+          all(cubic_average(avg) == avg for avg in averages))
+    bad_normalization = sum(avg != closed_projection(kernel, denominator=5) for kernel, avg in zip(basis, averages))
+    bad_sign = sum(avg != closed_projection(kernel, vector_sign=-1) for kernel, avg in zip(basis, averages))
+    check('negative control: erroneous 1/5 neighbor normalization is rejected', bad_normalization > 0,
+          f'{bad_normalization}/28 basis mismatches')
+    check('negative control: reversed g dot v sign is rejected', bad_sign > 0,
+          f'{bad_sign}/28 basis mismatches')
+    # B_ez=I: exact coefficients give a normalized origin but zero at the
+    # all-pi/2 corner. This output is covariant and explicitly nonunitary.
+    output = cubic_average(basis[4 * SITES.index((0, 0, 1))])
+    expected = ((0, 0, 0, 0),) + ((Fraction(1, 6), 0, 0, 0),) * 6
+    origin = sum(row[0] for row in output)
+    corner = sum(sp.exp(-sp.I * sp.pi * sum(h) / 2) * row[0] for h, row in zip(SITES, output))
+    check('exact nonunitary output: B_ez=I gives I/6 on six neighbors, A(0)=I and A(pi/2,pi/2,pi/2)=0',
+          output == expected and origin == 1 and sp.simplify(corner) == 0)
+
+
 def main():
+    exact_projection_checks()
     # (1) symbolic
     cx, cy, cz = sp.symbols('cx cy cz', real=True); ar, ai, br, bi, cr, ci = sp.symbols('ar ai br bi cr ci', real=True)
     a = ar + sp.I * ai; b = br + sp.I * bi; c = cr + sp.I * ci

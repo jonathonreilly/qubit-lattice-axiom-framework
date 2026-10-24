@@ -1,7 +1,7 @@
 ---
 claim_id: one_qubit_tick_update_covariance_limits_bounded_theorem_note_2026-10-21
 claim_type: open_gate
-claim_scope: "Supplied single-particle polynomial and ordered-block diagnostics, with explicit pointwise mixing counterexamples. General dynamics classification and physical mass identification are not claimed; the original negative theorem is deferred with exact recovery."
+claim_scope: "Exact cubic averaging projection for supplied seven-site complex matrix kernels; supplied single-particle polynomial and ordered-block diagnostics, with explicit pointwise mixing counterexamples. General dynamics classification and physical mass identification are not claimed; the original negative theorem is deferred with exact recovery."
 runner: scripts/one_qubit_tick_update_covariance_limits_2026_10_21.py
 ---
 
@@ -11,6 +11,71 @@ Claim type: open_gate.
 Primary runner: `scripts/one_qubit_tick_update_covariance_limits_2026_10_21.py`.
 
 The filename and claim identifier are historical handles. The mathematical carrier is l2(Z^3) tensor C^2: a linear translation-invariant single-particle convolution model, with a separately supplied spin-1/2 rotation action. This is not a derived tensor-product many-body qubit dynamics, framework admissibility law or record process. A finite stencil {0,+-e_i} is used for the polynomial ansatz below; the split-step products reach a different stencil. No axiom or candidate-law clause supplies these choices.
+
+## Positive construction: cubic averaging projection
+
+Supply seven arbitrary complex 2x2 matrices B_h, indexed by
+H={0,+-e_x,+-e_y,+-e_z}, as a finite linear convolution kernel on the
+carrier above. Neither Hermiticity nor unitarity is assumed. Let O be the
+24 proper signed permutation rotations, with the supplied spin action
+V_R sigma(v) V_R†=sigma(Rv). Its sign ambiguity cancels in conjugation.
+Define
+
+    (T_R B)_h = V_R B_(R^-1 h) V_R†,
+    P B = (1/24) sum_(R in O) T_R B.
+
+The conjugation actions compose exactly: T_Q T_R=T_(QR), even though spin
+lifts themselves are only defined up to sign. Reindexing the finite sum
+therefore gives T_Q P=P. Applying the average again gives P²=P. Moreover,
+P fixes every invariant kernel. Thus P is a complex-linear projection
+onto the invariant kernels, not a prescription producing unitary dynamics.
+Here "positive construction" means an explicit construction, not a claim
+about positivity of the convolution operator.
+
+Expand each matrix uniquely as B_g=b_g I+sigma(v_g), where
+b_g=tr(B_g)/2 and (v_g)_i=tr(sigma_i B_g)/2. These coefficients may be
+complex; Pauli trace orthogonality gives this expansion without conjugating
+v_g. The closed formula for the constructed kernel is
+
+    (PB)_0 = a I,                 a=b_0,
+    (PB)_h = b I+c sigma(h),      |h|=1,
+    b=(1/6) sum_(|g|=1) b_g,
+    c=(1/6) sum_(|g|=1) g dot v_g.
+
+Equivalently, b=(1/12) sum tr(B_g) and
+c=(1/12) sum tr[sigma(g) B_g], with both sums over six neighbors.
+To prove it directly, onsite scalar averaging fixes b_0; onsite vectors
+average to zero, since the group has no fixed vector. For a fixed neighbor
+h and each source neighbor g, exactly four rotations send g to h. The
+stabilizer of h consists of the four quarter-turn rotations about h.
+Averaging those rotations kills every transverse vector component and
+keeps h dot v. Consequently the four transported vectors average to
+h(g dot v_g). Each g contributes weight 4/24=1/6; scalars contribute
+b_g/6. This proves the displayed formula for every complex input.
+
+With Fourier convention exp(-i k dot h), pairing opposite neighbors gives
+
+    A_P(k)=(a+2b sum_i cos(k_i)) I-2i c sum_i sin(k_i) sigma_i.
+
+This is the expression in the next section, now also obtained by an
+explicit projection of arbitrary supplied kernels. No all-momentum
+unitarity condition is imposed and no motion-exclusion conclusion follows.
+For example B_ez=I and all other B_h=0 give a=c=0, b=1/6 and
+A_P(k)=(cos(k_x)+cos(k_y)+cos(k_z))I/3. Hence A_P(0)=I but
+A_P(pi/2,pi/2,pi/2)=0: a covariant output need not be unitary, even if it
+is normalized at one momentum.
+
+The runner represents the group by exact signed integer rotations on
+scalar/vector coordinates and uses rational arithmetic. It compares the
+24-term average with the separately implemented coefficient formula on
+all 28 Pauli-basis inputs (seven slots times four matrices), checks every
+rotation fixes each averaged basis input, and checks idempotence. These
+maps are complex-linear, so basis equality establishes arbitrary complex
+input equality; the finite momentum samples elsewhere are not used for
+this argument. Wrong 1/5 normalization and reversed g dot v sign produce
+exact basis mismatches. The nonunitary example is checked exactly. This
+is one construction with verification controls, not additional N1 route
+families for the deferred negative theorem.
 
 ## Supplied polynomial diagnostic
 
@@ -42,7 +107,7 @@ Original PR9838 head `a5457b49c85b3393aef3e86e57678088a394aa67` preserves the fu
 
 ## No-Go Discipline Gate
 
-This is a limitation record for the deferred original negative claim, not a packet PASS for it. The current open_gate surface retains supplied algebra and explicit counterexamples only.
+This is a limitation record for the deferred original negative claim, not a packet PASS for it. The current open_gate surface retains the supplied-model projection, algebra and explicit counterexamples; it does not certify the deferred exclusion.
 
 - N1: one actual commutant/normalization mechanism was checked in the original review. Five distinct attempted or prior-ruled-out route families are not evidenced. Different implementations are not additional families. The original negative-claim packet remains incomplete; its theorem is deferred rather than declared false.
 - N2: no independent wall count is asserted. Linear carrier, translation invariance, stencil and rotation action are joint model conditions.

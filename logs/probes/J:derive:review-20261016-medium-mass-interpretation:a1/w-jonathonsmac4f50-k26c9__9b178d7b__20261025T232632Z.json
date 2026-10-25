@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20261016-medium-mass-interpretation:a1",
+ "type": "judgment",
+ "lane": "review-science-20261016",
+ "worker": "w-jonathonsmac4f50-k26c9",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261016-medium-mass-interpretation/w-jonathonsmac4f50-k26c9/check.py",
+ "seed": 70792,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "9b178d7b",
+ "started_utc": "20261025T232632Z",
+ "elapsed_s": 92.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "exact scope of the 1D layer model for the medium-mass inference -- exact for s-polarization and normal incidence, open for oblique p-polarization; sign, resonance, instability and hot-era-exponent limits stated with checks (runtime 90.3 s)."
+ },
+ "review": "Read the log after the run: check.py (about 100 s) printed a HIT giving the exact scope of the 1D layer model for the medium-mass inference, on a Fierz-Pauli-type comparator the agent supplied (the axioms supply no tensor wave equation or medium mass): the source's scalar layer equation is exact for the polarization normal to the plane of incidence at any angle and for both helicity-2 polarizations at normal incidence (full 4-state slab matches the scalar slab to 1e-50, flux conserved); open for in-plane polarization at oblique incidence (an interface constraint tr_perp = 0 holds whenever m^2 jumps); a dispersion budget bounds the signed column integral; tachyonic transmission teeth have area c/d independent of M; a plane tachyonic layer is unstable at any strength so a 1D estimate gives no threshold; the hot-era damping law gives e^-19, not e^-51, conclusion unchanged. ATTEMPT.md stops at S6 and leaves open which mass-term structure the strain model supplies. The agent reports running pkill on check.py processes. Same-family (Claude Sonnet 5.5), unrefereed.",
+ "what": "Reconstruct the finite-layer wave problem with mixing and appropriate boundary data, then determine the exact scope of a strain-induced mass or instability inference. The stated Earth 1e-29 sensitivity is a one-dimensional medium estimate, not a published environmental mass bound. Positive graviton-mass observational limits do not automatically constrain a negative/tachyonic coefficient; include finite-layer resonances and distinguish hot-era assumptions. Supply a controlled bridge or counterexample, not a numerical restatement. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise.",
+ "stdout_sha256": "836da25850ea41bf1a2f80a2a05e9702652f82fc7da8c6ca6be8f1035737c1c5",
+ "stdout_tail": "hold is M R = pi/2 (matches the source's pi/2 rule); a plane layer has none -> the 1D estimate cannot supply an instability threshold\nPASS G1 (mpmath, toy Gaussian): one-sided 90% bounds are mirror images only for a null measurement (1.645 vs 1.645); for a measured offset of 1 sigma they differ (2.378 vs 1.148)\nPASS G2 (sympy): for m^2=A H^2, super-horizon tensors go as t^{-1/4}=a^{-1/2} (radiation, A>1/4) and t^{-1/2}=a^{-3/4} (matter, A>9/16), independent of A -- not the constant-mass a^{-3/2}\nPASS G3 (mpmath arithmetic): 150 GeV->today, a^{-3/2} over 34.1 e-folds gives e^-51.1 (the source figure); the exact exponents give e^-19.1 -- conclusion 'r~0' unchanged, magnitude changed\nTOTAL: PASS=30 FAIL=0\nHIT: scoped result (supplied Fierz-Pauli-type comparator, unrefereed) -- the 1D scalar layer model is exact for the polarization normal to the plane of incidence at every angle and for both helicity-2 polarizations at normal incidence; the in-plane polarization at oblique incidence is the only unreduced channel (interface constraint tr_perp=0 derived, matching not completed); tachyonic finite-layer teeth have M-independent area c/d; a plane tachyonic layer is unstable at any strength, so a 1D estimate gives no instability threshold\nSUMMARY: exact scope of the 1D layer model for the medium-mass inference -- exact for s-polarization and normal incidence, open for oblique p-polarization; sign, resonance, instability and hot-era-exponent limits stated with checks (runtime 90.3 s).\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k26c9",
+  "at_utc": "20261025T232806Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Accepted as a logged scoped partial result on a supplied comparator form; the strain model's own mass structure is unresolved. Carried in the probe closing record; no issue filed.",
+  "by": "w-jonathonsmac4f50-k26c9",
+  "at_utc": "20261025T232806Z"
+ }
+}

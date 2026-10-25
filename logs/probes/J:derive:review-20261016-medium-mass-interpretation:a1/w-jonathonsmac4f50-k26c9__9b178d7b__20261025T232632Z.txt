@@ -1,0 +1,33 @@
+PASS A1 (sympy, arbitrary m2(x)): y-odd sector of the Fierz-Pauli-type operator equals Proca d^nu F_{nu mu} - m2(x) V_mu on (t,x,z); every other component vanishes identically
+PASS A2 (sympy, arbitrary m2(x)): Y'=A(m2)Y with V_x=-i(w Gt+q Gz)/m2 solves all three Fierz-Pauli odd-sector equations identically
+PASS A3 (sympy): characteristic polynomial of A(m2) is (lam^2-(m2+q^2-w^2))^2, i.e. two polarizations share k_x^2 = w^2-q^2-m2
+PASS A4 (sympy): V=(q f,0,-w f)e^{-iwt+iqz} (polarization normal to the plane of incidence) solves the full odd sector iff f''=(q^2+m2-w^2)f, for ANY m2(x)
+PASS A5 (sympy): s-mode satisfies the interface Gauss condition w Gt + q Gz = 0 (V_x=0 on the massive side) identically; junction = continuity of f and f'
+PASS A6 (sympy): helicity-2 fields (h_yy=-h_zz, h_yz) at q=0 form a closed subsystem; each obeys (box - m2(x)) h = 0 with no other component sourced
+PASS B1 (sympy): the (x,x) equation is m2(x)*tr_perp(h) + S[h_perp] = 0 with NO x-derivatives and no normal components (tr_perp=-h_tt+h_yy+h_zz)
+PASS B2 (sympy): x'' enters only the tangential equations, through an invertible operator (det=2 on tt,yy,zz; unit on tz); the normal equations contain no x''
+PASS B3 (sympy): two different m2 values with the same continuous (tr_perp,S) force tr_perp=0 and S=0 at the interface
+PASS C1 (mpmath 50 dps): full odd-sector Proca slab (4-state transfer, junction rules of A2/A5) reproduces the scalar slab r,t exactly at 10 incidence/mass/sign points, incl. oblique and evanescent: max|diff|=2.64e-50
+PASS C2 (mpmath): flux conservation |r|^2+|t|^2=1 holds for the Proca slab (independent of the scalar formula): max error 9.35e-51
+PASS C3 (mpmath): the 6x6 matching determinant is nonzero at every tested point (min |det|=0.0734), so the matched solution is unique there
+PASS C4 (mpmath): layered scalar solver equals the closed-form slab t = e^{-ikd}/(cos ks d - i(kv^2+ks^2)/(2 kv ks) sin ks d)
+PASS D1 (sympy, exact rational parameters, 3 two-layer sets incl. mixed sign): d ln t/d eps at 0 = -i (m1 d1 + m2 d2)/(2k): first order sees only the SIGNED column integral
+PASS D2 (sympy, exact rationals): with columns +mu d and -mu d the O(eps) term of t vanishes while the O(eps^2) term is nonzero (|t''/t| = 0.1996, 3.849, 0.1071)
+PASS D3 (mpmath): for the +/- pair phase/eps = 5.04e-5 (eps=1e-3), 5.04e-6 (1e-4) -> 0, versus 0.7 for one same-sign layer of equal unsigned budget
+PASS D4 (sympy): sqrt(1-A) series has all coefficients negative and convergence radius 1 (ratio 0.962 at order 39): the 1/f small-mass phase is valid only for |A|<w^2, in the tachyonic sign as well
+PASS D5 (Fractions): at the quoted 1.5e-29 the core has M^2/w^2 = 12.7 at 30 Hz (>1, outside the small-mass regime); the 1/f form needs mu <= 1.18e-30 (30 Hz, core)
+PASS E1 (mpmath): over one period of the slab phase, int |t|^2 dphi = pi/sqrt(1+s^2), s=(ks/kv-kv/ks)/2 (exact; the 'period average' 2 kv ks/(kv^2+ks^2))
+PASS E2 (mpmath): one comb tooth's |t|^2 area = 0.31027 (pred 0.31108, 2pi/d limit 0.31416): width ~2/d independent of M
+PASS E3 (mpmath): every comb frequency w_n=sqrt((n pi/d)^2-M^2) is perfectly transmitting (|t|=1,r=0), so no single-frequency |t| bound can exclude large tachyonic M
+PASS E4 (Fractions): at M=2.36e-9 eV the comb phase advance over 30-1000 Hz is 0.207 rad < pi (at most one tooth), tooth area c/d = 26.6 Hz
+PASS E5 (numpy, toy PSD): effective SNR bandwidth 140.2 Hz -> isolated-tooth capture S^2 <= 0.19 (PSD-dependent; the bound is (c/d)/B_eff)
+PASS F1 (mpmath): a tachyonic plane layer of ANY depth/strength has an even bound state with growth rate kappa in (0,M); kappa -> M^2 d/2 at weak coupling (ratio-1 = -1.67e-9)
+PASS F2 (scipy tridiagonal finite difference, disjoint): lowest eigenvalue converges to -kappa^2=-0.453753 for M=1,d=2 (errors 1.1e-05, 2.7e-06, 6.8e-07 at h=0.02,0.01,0.005)
+PASS F3 (scipy): with q=0.3 the lowest mode has Gamma^2 = kappa^2 - q^2 = 0.36375 (numerical 0.36375): a body of transverse size L (q>=pi/L) is unstable only above a threshold
+PASS F4 (sympy): uniform ball l=0 zero-energy threshold is M R = pi/2 (matches the source's pi/2 rule); a plane layer has none -> the 1D estimate cannot supply an instability threshold
+PASS G1 (mpmath, toy Gaussian): one-sided 90% bounds are mirror images only for a null measurement (1.645 vs 1.645); for a measured offset of 1 sigma they differ (2.378 vs 1.148)
+PASS G2 (sympy): for m^2=A H^2, super-horizon tensors go as t^{-1/4}=a^{-1/2} (radiation, A>1/4) and t^{-1/2}=a^{-3/4} (matter, A>9/16), independent of A -- not the constant-mass a^{-3/2}
+PASS G3 (mpmath arithmetic): 150 GeV->today, a^{-3/2} over 34.1 e-folds gives e^-51.1 (the source figure); the exact exponents give e^-19.1 -- conclusion 'r~0' unchanged, magnitude changed
+TOTAL: PASS=30 FAIL=0
+HIT: scoped result (supplied Fierz-Pauli-type comparator, unrefereed) -- the 1D scalar layer model is exact for the polarization normal to the plane of incidence at every angle and for both helicity-2 polarizations at normal incidence; the in-plane polarization at oblique incidence is the only unreduced channel (interface constraint tr_perp=0 derived, matching not completed); tachyonic finite-layer teeth have M-independent area c/d; a plane tachyonic layer is unstable at any strength, so a 1D estimate gives no instability threshold
+SUMMARY: exact scope of the 1D layer model for the medium-mass inference -- exact for s-polarization and normal incidence, open for oblique p-polarization; sign, resonance, instability and hot-era-exponent limits stated with checks (runtime 90.3 s).

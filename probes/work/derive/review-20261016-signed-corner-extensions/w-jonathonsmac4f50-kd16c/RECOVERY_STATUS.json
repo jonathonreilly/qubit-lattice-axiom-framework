@@ -1,0 +1,39 @@
+{
+ "source_branch": "claude/toe-campaign-24h-20261015",
+ "source_head": "b0178fa585cad5ac9e02e70dff2175593dbc5dab",
+ "source_objects": [
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/README.md",
+   "sha256": "556cb52473b506bce49482493fb9855d2f467e1c2d6dfa205ad36ae415c51e65",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/blockrep.py",
+   "sha256": "ed714bbaa7d5120ad7431b1444bd90e82e5f7040283160a018222e41ac6dbd45",
+   "verified": true
+  },
+  {
+   "path": "docs/CUBIC_CELL_SHAPE_SETS_THE_TASTE_CONTENT_AXIS_PERMUTATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+   "sha256": "38a0c2adb8e7e7e9bae446cc8f310693e391b795f87824e7741e6960d3408f77",
+   "verified": true
+  },
+  {
+   "path": "docs/STAGGERED_ONE_QUBIT_BLOCKS_CARRY_A_CUBIC_COVARIANT_DIRAC_TICK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+   "sha256": "d3b8c4021fecae0555379efadb1136bee70a25d1eb03edd6af187b699bb33735",
+   "verified": true
+  },
+  {
+   "path": "scripts/cubic_cell_taste_content_axis_permutation_2026_10_16.py",
+   "sha256": "067e1cee3ec3b5b2a21c15c359f780023ea662038297102ae6f9fa0f05fbc932",
+   "verified": true
+  },
+  {
+   "path": "scripts/staggered_one_qubit_block_cubic_dirac_tick_2026_10_16.py",
+   "sha256": "764295007b83fc16df401474b21595e63aabe6e1c1aafc84b6d2c2d61c4944cf",
+   "verified": true
+  }
+ ],
+ "first_unresolved_step": "Premise gap A2/A3 (the axioms do not select the block-centre monomial corner action or an extension class). Inside the supplied family, the first unfinished classification is the non-central case: the 64512 of 65536 raw sign pairs whose generated group has a non-scalar diagonal kernel K (subgroups of Z2^8 x| O onto O, H^1(O,V/K) for O-submodules K), and whether any such lift admits a covariant moving walk that does not split into K-sectors. Also not done: other cells (face centres, edges, larger blocks), non-monomial actions, decomposition of the phased cases for S4xC2, A4x|C4, GL(2,3), explicit isomorphism of the (0,1) class with A4x|C4.",
+ "hash_method": "git show b0178fa585cad5ac9e02e70dff2175593dbc5dab:<path> | shasum -a 256, compared with the task's listed values",
+ "attempt_status": "PARTIAL: classification of signed 2x2x2-corner lifts with central kernel done exactly; GL(2,3) class classified; same-family, unrefereed"
+}

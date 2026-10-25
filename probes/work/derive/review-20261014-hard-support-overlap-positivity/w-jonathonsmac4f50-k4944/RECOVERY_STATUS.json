@@ -1,0 +1,80 @@
+{
+ "source_branch": "claude/chirality-grid-exercise-20261014",
+ "source_head": "dd7d358c6f6b0fd049b46962970397dbdc7d2e1f",
+ "source_objects": [
+  {
+   "path": ".claude/science/exercises/chirality-grid-20261014/kills/K2/REFEREE_VERDICT.md",
+   "sha256": "63031869655bb9e00b67fa0e8aaa36dc8f7b6f510feac78e8862cf5dcd10c05c",
+   "expected_sha256": "63031869655bb9e00b67fa0e8aaa36dc8f7b6f510feac78e8862cf5dcd10c05c",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/chirality-grid-20261014/kills/K2c/K2c_REPORT.md",
+   "sha256": "e9d3b1722149fe592164a1e8a7b970be87b4b98abf80e1f01d8223b013a8f7f1",
+   "expected_sha256": "e9d3b1722149fe592164a1e8a7b970be87b4b98abf80e1f01d8223b013a8f7f1",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/chirality-grid-20261014/kills/K2c/PREREG.md",
+   "sha256": "742ba817ab45986e8c8c84752ad2da66227e2a83076114bf741f6602967231de",
+   "expected_sha256": "742ba817ab45986e8c8c84752ad2da66227e2a83076114bf741f6602967231de",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/chirality-grid-20261014/scripts/K2c/k2c_v6_torus_verify.py",
+   "sha256": "1b8babe0a04aaf6c83d7610ded037d14e3828fc05fc299f2a29ef2d4050bcc1a",
+   "expected_sha256": "1b8babe0a04aaf6c83d7610ded037d14e3828fc05fc299f2a29ef2d4050bcc1a",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/chirality-grid-20261014/combos/X3/COMBO_REPORT.md",
+   "sha256": "8786ee21464ba6bdaa97fae6518e56d43c58920587ce83458f024046f4acaafb",
+   "expected_sha256": "8786ee21464ba6bdaa97fae6518e56d43c58920587ce83458f024046f4acaafb",
+   "verified": true
+  }
+ ],
+ "runtime_code_objects": [
+  {
+   "path": ".claude/science/exercises/chirality-grid-20261014/scripts/K2c/lat2d.py",
+   "sha256": "60502db0f990ab52bc5319bbe141c915e0d917d444d6f816637820669664b1e0",
+   "role": "actual run-time code of the K2c search (extracted from the frozen commit)"
+  },
+  {
+   "path": ".claude/science/exercises/chirality-grid-20261014/scripts/K2c/k2b_lib.py",
+   "sha256": "4ca433738c4ac493a4ef7609700cf593fe40736cbd1a1fccc5df37ce270905b2",
+   "role": "actual run-time code of the K2c search (extracted from the frozen commit)"
+  },
+  {
+   "path": ".claude/science/exercises/chirality-grid-20261014/scripts/K2c/k2c_lib.py",
+   "sha256": "b1bab3c66db7a02540f2013acaa35047af97a16d5cabfc5ac6d248c8ae9a1129",
+   "role": "actual run-time code of the K2c search (extracted from the frozen commit)"
+  },
+  {
+   "path": ".claude/science/exercises/chirality-grid-20261014/scripts/K2c/k2c_search.py",
+   "sha256": "1b671cdf160fea69585f4d29d23c7cbf0e5527cd45e9bdb5fef7c307bc55b4df",
+   "role": "actual run-time code of the K2c search (extracted from the frozen commit)"
+  }
+ ],
+ "pools": {
+  "npz_pools_in_source_tree_at_head": false,
+  "note": "git ls-tree -r at dd7d358c shows no .npz under the exercise directory; only .out logs and scripts",
+  "regenerated": {
+   "name": "pool_K2c_wgsearch_hard_O_torus_Lt12_seed4412.npz",
+   "command": "cd src/regen (copies of the four run-time scripts above); OMP_NUM_THREADS=2 python3 k2c_search.py wgsearch torus 6 24 4412 hard O",
+   "wall_time_s": 261,
+   "reproduces_logged_trajectory": true,
+   "logged_lam_min": -0.00014728,
+   "regenerated_lam_min": -0.00014728,
+   "array_sha256_ux_then_ut_float64_le": "a927745c2c25d2911b5971f64b7f9c3fa8a947d9650115a8fac876da62f6471c",
+   "zip_file_sha256_not_stable_across_runs": "d5a7432e02bb60f277e32f1a602d2c33a28ed00c4bf5183cfd49b26910c46923",
+   "environment": "python 3.12.8, numpy 2.4.1, scipy 1.17.0, macOS arm64; RNG numpy default_rng(4412); trajectory matched the recorded V2_torus_Lt12_wgsearch_hard.out line by line to printed digits",
+   "not_regenerated": "the open-time pools (Lt 12 and 20), the Lt=16 torus pool and the Fejer reference pools were not regenerated"
+  }
+ },
+ "first_unresolved_step": "A rigorous (a priori) quadrature error bound for the 48x48 antiperiodic-torus overlap-determinant kernel entries. K2c's E is an a-posteriori geometric-convergence estimate; the regenerated pool replicates lambda_min=-1.4728e-4 with the source V6 builder but no analytic bound exists here. Separate unresolved step on the pure-gauge side: whether the hard-support measure is reflection-positive on EVEN periodic cross-sections or in infinite spatial volume (non-uniform pools; support-restricted positivity).",
+ "check_py": {
+  "total": "PASS=30 FAIL=0",
+  "runtime_s": 117,
+  "peak_rss_MB": 421
+ }
+}

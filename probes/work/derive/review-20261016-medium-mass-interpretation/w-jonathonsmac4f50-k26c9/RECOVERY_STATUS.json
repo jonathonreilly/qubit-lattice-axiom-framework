@@ -1,0 +1,26 @@
+{
+  "task_id": "J:derive:review-20261016-medium-mass-interpretation:a1",
+  "source_branch": "claude/strain-hot-matter-twins-20261013",
+  "source_head": "6afb06951a13ca861b50f47a8faf5d5c06594109",
+  "source_head_verified_in_object_store": true,
+  "source_objects": [
+    {
+      "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F2_referee_verdict.md",
+      "sha256": "59b35aad589e068bc9d13e22f70e38a46ee998c6929256a2b090bac79db8b1e7",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F2_report.md",
+      "sha256": "2e0bb068f15af97904361083c04e4fac86be771721095393d37777bde51d0df3",
+      "verified": true
+    }
+  ],
+  "axiom_source_read": "docs/MINIMAL_AXIOMS_2026-06-29.md (full, current main); docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md (full)",
+  "first_unresolved_step": "S6: complete the junction/matching problem for the in-plane (p) polarization at oblique incidence in the even parity sector (three coupled helicity channels). Derived so far (checked): tangential components are continuous and the interface carries tr_perp=0 and S[h_perp]=0 on the massive side whenever m^2 jumps; not done: the vacuum-side gauge matching, the first-derivative jump conditions, the reduced 6-dimensional transfer problem and its flux check. Until then the scalar layer model is exact only for s-polarization (any angle) and for normal incidence (both polarizations).",
+  "other_open_items": [
+    "which mass-term structure (Lorentz-invariant Fierz-Pauli-type, as used here, or the source's shear-only Lorentz-violating form) the strain model actually supplies is not fixed by the axioms or the source",
+    "spherical-shell geometry (no conserved transverse wavenumber; strong refraction in the tachyonic branch)",
+    "signed exact-transfer waveform likelihood for the tachyonic sign",
+    "nonlinear end state of any instability"
+  ]
+}

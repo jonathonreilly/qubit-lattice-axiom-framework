@@ -1,0 +1,67 @@
+===== runner cache v1 =====
+runner: scripts/coupling_dilution_excludes_the_left_right_slab_under_one_cell_coupling_and_its_shared_hypercharge_hits_a_landau_pole_below_the_cutoff_2026_10_25.py
+runner_sha256: 60e2fccbfb6b72616b5a5c6d304330bdbf214671b692f37c96533cfacbd1052c
+input_fingerprint_sha256: c03fcc466f9881da975b6422de00f17f53e9d0e6fe76c4f331280aad33005772
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.99
+status: ok
+----- stdout -----
+P1 layer chain zero mode (Gaussian, in-layer 1/g_k^2, stiffness kappa)
+PASS P1 flat mode 1/g4^2 = sum 1/g_k^2; wall-local g4 = g_wall: max rel err 1.3e-26 over Ls in {2,5,16,50}
+  common g0: 1/alpha_shared = Ls/alpha0, 1/alpha_wall = 1/alpha0 -> a3 : a_sh : a2 = 1/Ls : 1/Ls : 1
+PASS P2 Y_low = T3' + Y_sh, 1/aY(v') = 1/a_sh + 1/a2': max err 7.2e-11
+PASS b(SM) = (41/6, -19/6, -7) from field list: (6.8333, -3.1667, -7.0000)
+PASS b(above v') = (41/3, -19/6, -3) [shared Y, wall SU2L, shared colour]: (13.6667, -3.1667, -3.0000)
+P3 shared U(1) after matching at v' (b_sh = 41/3 above v')
+  v'=1e+08 single: 1/a_sh(v')=46.6  pole=2.06e+17 GeV  1/a_sh(2.4e18)=-5.3
+  v'=1e+09 single: 1/a_sh(v')=43.0  pole=3.82e+17 GeV  1/a_sh(2.4e18)=-4.0
+  v'=1e+10 single: 1/a_sh(v')=39.3  pole=7.08e+17 GeV  1/a_sh(2.4e18)=-2.7
+  v'=1e+11 single: 1/a_sh(v')=35.7  pole=1.31e+18 GeV  1/a_sh(2.4e18)=-1.3
+    (clears the 1.22e18 cutoff reading)
+  v'=1e+08 spread: 1/a_sh(v')=34.7  pole=8.42e+14 GeV  1/a_sh(2.4e18)=-17.3
+  v'=1e+09 spread: 1/a_sh(v')=31.0  pole=1.56e+15 GeV  1/a_sh(2.4e18)=-16.0
+  v'=1e+10 spread: 1/a_sh(v')=27.4  pole=2.90e+15 GeV  1/a_sh(2.4e18)=-14.6
+  v'=1e+11 spread: 1/a_sh(v')=23.7  pole=5.38e+15 GeV  1/a_sh(2.4e18)=-13.3
+PASS P3 Landau pole of shared U(1) below cutoff for all v' in [1e8,1e11]: pre-set cutoff 2.4e18, both threshold variants
+  pole clears 2.4e18 only for v' > 9.46e+11 GeV (face-swap window ends 1e11)
+P4 shared factors equal at cutoff: c/a_sh vs 1/a3 (Ls-free)
+  control (SM running, no mirror) SM      ratio 1.131
+  control (SM running, no mirror) GUT     ratio 0.679
+  control (SM running, no mirror) cell1/6 ratio 40.731
+  SM      never equal for v' in (9.5e+11, 1e17)
+  GUT     never equal for v' in (9.5e+11, 1e17)
+  cell1/6 equal only at v'=7.15e+12 (outside window), there Ls_fit=(1/a3)/(1/a2)=0.874
+PASS P4 in window (pole) no c equalises shared couplings; equality needs v' > 1e11 and Ls_fit < 1.5
+P5 Ls_fit = (1/a3)/(1/a2) at cutoff
+  L=2.40e+18  SM 1.040  1e+08:0.640  1e+09:0.670  1e+10:0.700  1e+11:0.730
+  L=1.22e+18  SM 1.032  1e+08:0.638  1e+09:0.668  1e+10:0.699  1e+11:0.729
+  asymptotes: SM b3/b2 = 2.211, LR 0.947
+  Ls=2 (SM running) needs ln(L/MZ) = 478, L ~ 1e209 GeV
+PASS P5 no integer Ls >= 2 fits colour/SU2 at either cutoff: max Ls_fit 1.040
+P6 alpha0 = alpha2(cutoff); predict alpha_s(MZ), alpha_Y(MZ) [v'=1e10 spread; L=2.4e18]
+  Ls=1   a_s(MZ)=0.04338  1/aY(MZ)=114.3 (cell) 194.0 (GUT)  [meas 0.118, 98.4]
+  Ls=2   a_s(MZ)=0.01395  1/aY(MZ)=115.7 (cell) 275.1 (GUT)  [meas 0.118, 98.4]
+  Ls=5   a_s(MZ)=0.004595  1/aY(MZ)=119.7 (cell) 518.3 (GUT)  [meas 0.118, 98.4]
+  Ls=46  a_s(MZ)=0.0004521  1/aY(MZ)=175.1 (cell) 3842.0 (GUT)  [meas 0.118, 98.4]
+  Ls=58  a_s(MZ)=0.0003577  1/aY(MZ)=191.3 (cell) 4814.8 (GUT)  [meas 0.118, 98.4]
+  control SM-only Ls=1: a_s(MZ)=0.1534
+  control SM-only Ls=2: a_s(MZ)=0.0181
+  best joint: Ls=1.0 c=1.00 v'=1e+11 L=1.22e+18 a_s=0.0464 1/aY=158.5 (max rel err 0.61)
+PASS P6 no continuous Ls in [1,100] fits alpha_s and alpha_Y within 10%: best max rel err 0.61
+  Ls giving a_s in [0.110,0.126]: none in [1,100]
+PASS P6 alpha_s window (if any) excludes Ls >= 2
+P7 per-layer beta3 = 6 (1/a3)/(4 pi Ls)
+  spread v'=1e+08: 1/a3(L)=31.1  beta3=14.9/Ls; Ls_max(beta>=3)=5.0; Ls 46..58: 0.32..0.26
+  spread v'=1e+11: 1/a3(L)=35.5  beta3=17.0/Ls; Ls_max(beta>=3)=5.7; Ls 46..58: 0.37..0.29
+  single v'=1e+08: 1/a3(L)=35.4  beta3=16.9/Ls; Ls_max(beta>=3)=5.6; Ls 46..58: 0.37..0.29
+  single v'=1e+11: 1/a3(L)=39.8  beta3=19.0/Ls; Ls_max(beta>=3)=6.3; Ls 46..58: 0.41..0.33
+PASS P7 reproduces wall-local D2 (14.9/Ls at v'=1e8, Ls_max ~5): 14.86/Ls
+PASS P7 portal window Ls 46-58 disjoint from flat-colour Ls <= ~7
+P8 SU(2): wall 1/a2(L)=48.6 vs confining bulk 1/a <= 7.70 -> ratio 6.3
+PASS P8 one coupling cannot give weak SU2 wall + confining SU2 bulk (ratio > 5): 6.3
+VERDICT: EXCLUDES the LR slab under one common cell coupling (P3 pole, P4, P5/P6, P8).
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

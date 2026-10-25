@@ -1,0 +1,60 @@
+PASS S0 sha256 of source object C5_E1_referee_verdict.md
+PASS S0 sha256 of source object C5_E1_report.md
+PASS S0 sha256 of source object C5_F6_referee_verdict.md
+PASS S0 sha256 of source object C5_F6_report.md
+PASS S0 sha256 of source object panel_F/DOSSIER.md
+PASS S0 sha256 of source object panel_F/SYNTHESIS.md
+PASS S0 sha256 of source object panel_F/condmat_statement.md
+PASS S0 sha256 of source object panel_F/gr_statement.md
+PASS S0 sha256 of source object panel_F/lattice_statement.md
+PASS S0 sha256 of source object panel_F/pheno_statement.md
+PASS S0 sha256 of source object panel_F/skeptic_statement.md
+PASS S1 c_H assembled from the three loop Hessians = 3.681e-3 (got 3.68106e-03)
+PASS S1 kappa_H = c_H M_P^2/(2 m_H^2) = 1.75e31 (got 1.7530e+31)
+PASS S1 <Q_E> = sigma^2 reconstructed from spectrum = 7.0e-29 (got 6.9669e-29)
+PASS S1 formal exceedance kH/kclock = 2.614e18 as in F6 referee (got 2.6144e+18)
+INFO kappa_clock band: 6.705e+12 (conservative) .. 5.042e+11 (largest slope)
+PASS S2 transfer-ansatz margin = 5.6e11 (got 5.701e+11)
+PASS S2 log-response x Lambda^2/m_H^2 margin = 5.9e7 (got 5.917e+07)
+PASS S2 bare multiplicative toy margin = 3.8e11 (got 3.781e+11)
+PASS S2 M_ans/M_toy_amp = 2 s_toy/c_H = 9.636e+03 (borrowed coefficients, same A)
+PASS S2 symbolic identity M_ans * E_formal = (M_P/Lambda)^2
+PASS S2 numeric identity M_ans * E_formal = (M_P/Lambda)^2 = 1.491e+30
+PASS S2 p_min(10 TeV) = ln(E)/ln(M_P/Lambda) = 1.2208; ansatz is p=2
+PASS S2 p=2 reproduces the ansatz margin exactly
+INFO clock needs s*A <= 6.705e+12, i.e. s <= 1.049e+09 at Lambda=10 TeV; ansatz s=1.84e-03, toy s=17.7, elementary-like s=c_H/2 (M_P/Lambda)^2=2.74e+27
+PASS S2 both borrowed s values pass, an unsuppressed (M_P/Lambda)^2 coefficient fails: bound s<=1.05e+09 is the open number
+PASS S3 broken stationary point v^2 = (mu^2-d)/lambda, curvature 2(mu^2-d) > 0 iff d < mu^2
+PASS S3 v^2/v0^2 = 1 - 2x with x = d/m_H^2
+INFO Q_c = 1/(2 kappa_H) = 2.8523e-32  (EW vacuum exists iff Q_E < Q_c)
+PASS S3 Q_c = 2.85e-32
+PASS S3 <Q_E>/Q_c = 2443: the background mean is thousands of times past the vacuum edge
+PASS S3 x at <Q_E> = 1.221e+03 (F6 quoted ~1.2e3): linear formula is outside its regime
+INFO P(EW vacuum present) = 1 - exp(-Q_c/sigma^2) = 4.0932e-04
+PASS S3 fraction of time with an EW vacuum = 4.093e-04 (premise: stationary Gaussian, ergodic)
+PASS S3 Monte Carlo (24000000 draws) vacuum fraction 4.040e-04 vs 4.093e-04
+PASS S3 Monte Carlo CDF of Q at 0.1/0.5/0.9 matches Exp(1)
+PASS S3 d ln v/dt = -kappa Qdot/(1-2 kappa Q) (symbolic)
+PASS S3 for 0<x<1/2 the exact instantaneous rate exceeds the linear one by 1/(1-2x) > 1 (linear is a lower bound where v exists)
+INFO regime edge: kappa <= 7.177e+26; formal exceedance meaningful only up to 1.070e+14 (F6 quotes 2.614e+18)
+PASS S3 F6 formal exceedance is 24426x beyond the largest in-regime exceedance
+PASS S3 composite candidates are deep in the linear regime (x = 8.2e-28, 7.9e-24)
+PASS S3 for c_H<0, v grows as sqrt(1+2|x|) (x=1.2e+03 would give v/v0 ~ 49)
+PASS S3 expansion parameter of Sigma_H(strain) is Q ~ 7e-29 (small); the large number is x = kappa Q
+PASS S5 gap-equation integral: mpmath 1D reduction vs numpy 2D grid at m=0.1 (0.651452654810 vs 0.651452654810)
+PASS S5 gap-equation integral: mpmath 1D reduction vs numpy 2D grid at m=0.05 (0.764561981064 vs 0.764561981064)
+PASS S5 isotropic I(m) = (1/4pi) ln(32/m^2) to O(m^2 ln m)
+PASS S5 asymptote I = ln(64 JxJy/((Jx+Jy) m^2))/(4 pi sqrt(JxJy)), max error 1.66e-12 (CHECKED, not proved)
+INFO toy linear law xi0=10: d ln m/t^2 = 1.50101 (E1: 1.50), minus 0.5 ln xi0 = 0.34972
+INFO toy linear law xi0=100: d ln m/t^2 = 2.66857 (E1: 2.67), minus 0.5 ln xi0 = 0.36598
+INFO toy linear law xi0=1000: d ln m/t^2 = 3.82030 (E1: 3.82), minus 0.5 ln xi0 = 0.36643
+INFO toy linear law xi0=10000: d ln m/t^2 = 4.97160 (E1: 4.97), minus 0.5 ln xi0 = 0.36643
+INFO toy linear law xi0=100000: d ln m/t^2 = 6.12290 (E1: 6.12), minus 0.5 ln xi0 = 0.36643
+PASS S5 E1's linear-law table 1.50/2.67/3.82/4.97/6.12 reproduced from the N=infinity gap equation
+PASS S5 unimodular (exponential) law gives -1/4, no log (got -0.25000)
+PASS S5 closed constant: d ln m/t^2 -> (1/2) ln xi0 + (1/4)ln32 - 1/2 = +0.36643
+PASS S5 sympy: order-t^2 coefficient = L/2 + ln(32)/4 - 1/2 from the closed form
+PASS S5 sympy: unimodular law gives exactly -1/4 at every L
+TOTAL: PASS=47 FAIL=0
+HIT: composite-clock margins 5.6e11 and 5.9e7 are one chain (A=Lambda^2/m_H^2) times two borrowed strain coefficients, the ansatz equals F6's (l_P/a)^2 rule with 1/a->Lambda, and the exact tree-level vev map puts the formal 2.6e18 clock exceedance outside its regime (vacuum present ~4e-4 of the time)
+SUMMARY: Reduces the composite/clock transfer to two undetermined numbers (A, s) with a clock bound s*A<=6.7e12, reproduces the O(N) toy in closed form (d ln m/t^2 = L/2 + ln32/4 - 1/2, law-dependent), and replaces the linearized clock rate by an exact vev dichotomy; no composite-Higgs coefficient is derived.

@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20261016-composite-clock-strain:a1",
+ "type": "judgment",
+ "lane": "review-science-20261016",
+ "worker": "w-jonathonsmac4f50-kb425",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261016-composite-clock-strain/w-jonathonsmac4f50-kb425/check.py",
+ "seed": 69422,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "b15863fc",
+ "started_utc": "20261025T230342Z",
+ "elapsed_s": 13.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "Reduces the composite/clock transfer to two undetermined numbers (A, s) with a clock bound s*A<=6.7e12, reproduces the O(N) toy in closed form (d ln m/t^2 = L/2 + ln32/4 - 1/2, law-dependent), and replaces the linearized clock rate by an exact vev dichotomy; no composite-Higgs coefficient is derived."
+ },
+ "review": "Read the log after the run: check.py (about 6 s) printed a HIT: the 5.6e11 and 5.9e7 clock margins are one chain, margin = clock limit/(s A) with A = Lambda^2/m_H^2 and s a borrowed strain coefficient (c_H/2 for the ansatz, 17.7 for the toy), reproducing 5.9e7 to 0.3%; the 5.6e11 figure is F6's (l_P/a)^2 scaling with 1/a replaced by Lambda, so no independent evidence; an exact tree-level vev map puts an electroweak vacuum only when Q_E < 2.85e-32 (about 4.1e-4 of the time under an assumed Gaussian ergodic background; the formal 2.6e18 exceedance is 24000 times beyond validity); the O(N) toy has the closed form d ln m/t^2 -> L/2 + ln32/4 - 1/2 (asymptote checked numerically, not proved), law-dependent. ATTEMPT.md stops at step 11: s, A, the response law and species identification undetermined, no composite Higgs sector solved. Same-family (Claude Sonnet 5.5), unrefereed.",
+ "what": "Separate fine/coarse toy gap response from a derived Standard Model or composite-Higgs coefficient. Reconstruct the toy calculations but advance one actual coarse/composite matching or physical clock readout bridge. The 5.6e11 composite claim uses a transfer ansatz; the toy 5.9e7 calculation does not establish it. A linearized clock expression with order-1000 relative response lies outside its small-response regime. Keep scale, strain and species identifications explicit and unadopted. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise.",
+ "stdout_sha256": "92abb62d6ea6640d3978b8b827575063bf873a95e0c937be76a946a55389d5fc",
+ "stdout_tail": " (CHECKED, not proved)\nINFO toy linear law xi0=10: d ln m/t^2 = 1.50101 (E1: 1.50), minus 0.5 ln xi0 = 0.34972\nINFO toy linear law xi0=100: d ln m/t^2 = 2.66857 (E1: 2.67), minus 0.5 ln xi0 = 0.36598\nINFO toy linear law xi0=1000: d ln m/t^2 = 3.82030 (E1: 3.82), minus 0.5 ln xi0 = 0.36643\nINFO toy linear law xi0=10000: d ln m/t^2 = 4.97160 (E1: 4.97), minus 0.5 ln xi0 = 0.36643\nINFO toy linear law xi0=100000: d ln m/t^2 = 6.12290 (E1: 6.12), minus 0.5 ln xi0 = 0.36643\nPASS S5 E1's linear-law table 1.50/2.67/3.82/4.97/6.12 reproduced from the N=infinity gap equation\nPASS S5 unimodular (exponential) law gives -1/4, no log (got -0.25000)\nPASS S5 closed constant: d ln m/t^2 -> (1/2) ln xi0 + (1/4)ln32 - 1/2 = +0.36643\nPASS S5 sympy: order-t^2 coefficient = L/2 + ln(32)/4 - 1/2 from the closed form\nPASS S5 sympy: unimodular law gives exactly -1/4 at every L\nTOTAL: PASS=47 FAIL=0\nHIT: composite-clock margins 5.6e11 and 5.9e7 are one chain (A=Lambda^2/m_H^2) times two borrowed strain coefficients, the ansatz equals F6's (l_P/a)^2 rule with 1/a->Lambda, and the exact tree-level vev map puts the formal 2.6e18 clock exceedance outside its regime (vacuum present ~4e-4 of the time)\nSUMMARY: Reduces the composite/clock transfer to two undetermined numbers (A, s) with a clock bound s*A<=6.7e12, reproduces the O(N) toy in closed form (d ln m/t^2 = L/2 + ln32/4 - 1/2, law-dependent), and replaces the linearized clock rate by an exact vev dichotomy; no composite-Higgs coefficient is derived.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-kb425",
+  "at_utc": "20261025T230356Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Accepted as a logged scoped partial result (reduction to two undetermined numbers plus an exact vev dichotomy); no composite-Higgs coefficient is derived and the referee's own 5.9e7 derivation file was not read. Carried in the probe closing record; no issue filed.",
+  "by": "w-jonathonsmac4f50-kb425",
+  "at_utc": "20261025T230356Z"
+ }
+}

@@ -1,0 +1,60 @@
+PASS source hash C5_R7-1_report.md
+PASS source hash C5_R7-1_referee_verdict.md
+PASS source hash C5_R8-1_report.md
+PASS source hash C5_R8-1_referee_verdict.md
+PASS source hash r81_common.py
+PASS source hash r81_d2_lattice_algebra.py
+PASS Poincare(2+1) has C(6,2)=15 commutator pairs; runner lists 11 distinct
+PASS omitted by the d=2 runners: [Ky,Px],[J,Py],[Py,H],[Px,Py] (4)
+PASS Poincare(3+1) has C(10,2)=45 commutator pairs
+PASS d=2 fibre algebra: all 15 commutators close exactly (symbolic mu, spin s) | bad=[]
+PASS d=2 control [printed boost sign (R7-1)] fails exactly [('H', 'K1'), ('H', 'K2'), ('K1', 'K2'), ('P1', 'K1'), ('P2', 'K2')] | fails=[('H', 'K1'), ('H', 'K2'), ('P1', 'K1'), ('P2', 'K2'), ('K1', 'K2')]
+PASS d=2 control [spin coefficient alpha=2] fails exactly [('K1', 'K2')] | fails=[('K1', 'K2')]
+PASS d=2 control [spin coefficient alpha=0 (no spin term)] fails exactly [('K1', 'K2')] | fails=[('K1', 'K2')]
+PASS d=2 control [spin term sign flipped] fails exactly [('K1', 'K2')] | fails=[('K1', 'K2')]
+PASS d=2: [Kx,Ky]+iJ = i(1-alpha) s exactly (alpha enters only here)
+PASS d=3 fibre algebra spin 1/2: all 45 commutators close exactly | bad=[]
+PASS d=3 fibre algebra spin 1: all 45 commutators close exactly | bad=[]
+PASS d=3 fibre algebra spin 2: all 45 commutators close exactly | bad=[]
+PASS d=3 control: spin-term sign flipped fails exactly the three [Ka,Kb]
+PASS d=3 control: no spin term fails exactly the three [Ka,Kb]
+PASS chart fibre: 1/2{H,i d_P} = H^(1/2) (i d_P) H^(1/2) exactly (so [A,[A,X]]=0, A=H^(1/2))
+PASS d=2 chart identity (60 digits, 3 random points): K0, J0, X_NW, S, Jacobian, round trip; worst rel. diff < 1e-45 | worst=5.19e-61
+PASS d=3 chart identity (60 digits, 3 random points): K0, J0, X_NW, S, Jacobian, round trip; worst rel. diff < 1e-45 | worst=2.27e-60
+PASS d=3: R8-1 section 3.2 S-formula S=(H0/M0)(J0-X_E x P) used unmodified is NOT the chart S (differs at O(1e-2)) | worst=0.632
+PASS d=3: corrected lattice-native S = (H0/M0)(J0-X_E x P) - P (P.J0)/(M0 (H0+M0)) equals chart S (inside the 1e-45 line above)
+PASS d=3 control: spin term of opposite sign breaks K0 (rel diff > 1e-3) | K0 diffs=['0.0314', '0.0691', '0.0102']
+PASS leg bound (spectrum-run params m=1/2,kappa=4/5,Pi1=3/5) = 1.244 < 2.6 (exact rationals) | 311/250
+PASS leg bound (direct-run params kappa=1,Pi1=1) = 2 < 2.6 (exact rationals)
+PASS d=2: sampled sup |k_leg| over |P|<=0.6,|q|<=0.8 is below the proved bound 1.244 | sup=1.13944
+PASS d=3: sampled sup |k_leg| over |P|<=0.6,|q|<=0.8 is below the proved bound 1.244 | sup=1.13869
+PASS leg-capacity: Sigma may contain internal masses up to mu_max = 2 sqrt(m^2+kappa_max^2) = 4.0245 for Pi1=0.6, b=2.6 | kappa_max=115/59
+PASS no umklapp on the core: |P|<Pi1<pi so k1+k2 = P as real vectors
+PASS d=1 fibre: boost K = 1/2{H,i d_P} is unitarily i d/d(theta), P = mu sinh(theta) (exact)
+PASS d=1: K*u = -+i u has L2 solutions e^{-+theta} on (-theta1,theta1): deficiency indices (1,1) per fibre, K|core not essentially self-adjoint
+PASS d=1: <K*u,u>-<u,K*u> = -2i*sinh(2 theta1)/1 != 0 for u=e^{theta}, so K* is not symmetric and the closure of K|core is not self-adjoint
+PASS d=2 fibre: K_x (with spin term) has the formal solution u=varphi(Py) H^(-1/2) exp(- theta_x + i Phi) of (K_x + i)u=0 on each chord (nonzero, square-integrable on the disk for bounded varphi)
+PASS d=2 fibre: K_x (with spin term) has the formal solution u=varphi(Py) H^(-1/2) exp(+ theta_x + i Phi) of (K_x - i)u=0 on each chord (nonzero, square-integrable on the disk for bounded varphi)
+PASS d=1: exit rapidity from |P|<Pi1 is finite for every P, mu (asinh(Pi1/mu)+asinh(P/mu)): no boost-invariant bounded momentum box
+PASS bounded-H ceiling: R8-1 box law has max H0 = 2*max eps = 5.3954, so a rest state of mass 0.85 can follow the continuum boost energy only up to eta <= 2.535 (free-part bound; ||W|| would add to Hmax)
+PASS exit rapidity >= eta*(rho,mu)=asinh(Pi1/mu)-asinh(rho/mu) for all sampled P in the rho-ball and boost directions (d=2,3), with equality at P=-rho n [floating-point sampling, 9x400x2 cases] | min(exit-eta*)=1.01e-04
+PASS eta*(0.25;0.85;Pi1=0.6) = 0.367445 reproduces R8-1 d=1 value 0.367 (their rounded number: asinh(0.6/0.85)-asinh(0.25/0.85)); orbit hits |P|=Pi1 exactly (40 digits)
+PASS N=2 sector: Fock prefactor 1/2 reproduces sum_{x<y} W^{(xy)} exactly (all 6 x 6 matrix elements, Fractions)
+PASS N=2 sector: Fock prefactor 1/4 does NOT (mismatch present)
+PASS N=3 sector: Fock prefactor 1/2 reproduces sum_{x<y} W^{(xy)} exactly (all 4 x 4 matrix elements, Fractions)
+PASS N=3 sector: Fock prefactor 1/4 does NOT (mismatch present)
+PASS odd kernel: Fock(1/2) matrix element on normalised pair states = 2 W(k',k) (the source of the earlier referee's spurious factor 2), exact
+PASS model: two-body pair closure [K_ij,H_ij]=iP_ij holds (residual at 40 digits) | resid=4.04e-174
+PASS 3-body pairwise lift: [K,H]-iP = sum_{(ij)!=(kl)} i W_ij u_ij(W_kl) exactly (derivation in ATTEMPT step 10; residual at 40 digits) | diff=1.62e-173
+PASS 3-body pairwise lift: the leftover is nonzero (|C f| = 0.0035802 > 1e-3)
+PASS leftover scales as a^2 at small a (ratio C(a)/C(a/2) -> 4: got 3.99721)
+PASS solvable model (m=1,a=1): inf of 3-body mass at P=0 is 3+3(sqrt5-2)=3.70820393 (global search agrees) | search=3.70820393
+PASS solvable model: inf mass at P=2 is 3.69857927 and at P=4 is 3.68740219, below the P=0 value by > 1e-3: no K generating a (local) unitary boost group across a P-interval containing 0 and 2 can exist for the pairwise H (a Lie-algebra-only K on a smaller domain is NOT excluded by this) [floating-point global search]
+PASS d=2: kernel sum_a g_a(q)g_a(q'), g_a = q_a b(|q|^2) is rotation invariant, so [S,V]=0 and [S,M]=0 (exact)
+PASS d=2: p-wave kernel is odd under q -> -q (fermionic channel)
+PASS d=3: kernel sum_a g_a(q)g_a(q'), g_a = q_a b(|q|^2) is rotation invariant, so [S,V]=0 and [S,M]=0 (exact)
+PASS d=3: p-wave kernel is odd under q -> -q (fermionic channel)
+# runtime 16.3 s
+TOTAL: PASS=56 FAIL=0
+HIT: scoped new results on the R8-1 two-body box law: all 15 (d=2) and 45 (d=3) Poincare commutators close exactly on the fibre algebra with the repaired spin term (R8-1 tested 11 of 15), the direct d=3 analogue of the lattice-native spin needs a helicity correction, the core boost is not essentially self-adjoint (deficiency (1,1) per fibre; no boost-invariant box), eta*(rho,mu)=asinh(Pi1/mu)-asinh(rho/mu) in closed form, and the pairwise three-body lift leaves exactly C=sum i W_ij u_ij(W_kl) with a P-dependent infimum mass in a solvable model.
+SUMMARY: Exact fibre-level 15/45-commutator closure, 60-digit chart identities (d=2,3) with a d=3 spin correction, the no-invariant-box and non-essential-self-adjointness obstruction, a closed-form finite-rapidity range, and an exact pairwise three-body leftover; it is not a precision lattice closure of the interacting d=2 algebra.

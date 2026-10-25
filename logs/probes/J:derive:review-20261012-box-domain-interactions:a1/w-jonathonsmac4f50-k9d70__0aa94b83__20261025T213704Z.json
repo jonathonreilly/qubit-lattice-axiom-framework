@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20261012-box-domain-interactions:a1",
+ "type": "judgment",
+ "lane": "review-science-20261012",
+ "worker": "w-jonathonsmac4f50-k9d70",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261012-box-domain-interactions/w-jonathonsmac4f50-k9d70/check.py",
+ "seed": 64224,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "0aa94b83",
+ "started_utc": "20261025T213704Z",
+ "elapsed_s": 18.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "Exact fibre-level 15/45-commutator closure, 60-digit chart identities (d=2,3) with a d=3 spin correction, the no-invariant-box and non-essential-self-adjointness obstruction, a closed-form finite-rapidity range, and an exact pairwise three-body leftover; it is not a precision lattice closure of the interacting d=2 algebra."
+ },
+ "review": "Read the log after the run: check.py (about 22 s) printed a HIT with scoped results for the two-body graded-CAR box law: exact closure of the 15 d=2 and 45 d=3 Poincare relations on the fibre algebra with the repaired spin term (the source runners tested 11 of 15), 60-digit chart identities, the boost's non-essential-self-adjointness on the common core with deficiency (1,1) per fibre, the finite-rapidity range eta* = asinh(Pi1/mu) - asinh(rho/mu), and an exact pairwise three-body leftover excluding a locally exponentiating boost across P-intervals containing 0 and 2. ATTEMPT.md stops at step U (precision lattice closure of the interacting d=2 algebra, not attempted). Same-family (Claude Sonnet 5.5), unrefereed.",
+ "what": "Construct and control one extension of the conditional two-body graded-CAR box law: prioritize the full d=2 lattice commutator list with convergence, a proved common core, self-adjoint closures and a finite-rapidity leakage bound; then identify exactly what is needed for d=3 or three-body cluster separability. Preserve the ordered-pair 1/2 normalization. Do not identify a chart-algebra check or residuals 0.007\u20130.35 with precision lattice closure. Distinguish a Lie algebra on a common core from global exponentiation and an invariant box. Supplied CAR composition, continuum time, mass and C-infinity non-exponential locality remain imports. Deliver a new domain lemma, verified corrected operator construction or exact obstruction; repeating the free box example is not progress. Owner-requested work transfer to the existing maximum-thinking J campaign. Check current main, completed attempts, active campaign branches and claim.py ownership before claiming; continue or reconcile an existing attempt rather than duplicate it. Deliver numbered PROVED/CHECKED/ASSUMED steps, a self-contained disjoint check.py and RECOVERY_STATUS.json with exact source hashes under probes/work/derive/<problem>/<worker>/. Commit the checker before run_probe.py. Emit SUMMARY and HIT only for a new demonstrated result or defect. Ordinary independent confirmation remains required before retention. This catalog addition launches no workers, changes no budgets, creates no PR snapshots and adopts no historical audit/referee verdict.",
+ "stdout_sha256": "cd753ae4f5a12cc5ded01a506e0b8c93f8da92ee9d100cbffebd04d784cc52ea",
+ "stdout_tail": " by > 1e-3: no K generating a (local) unitary boost group across a P-interval containing 0 and 2 can exist for the pairwise H (a Lie-algebra-only K on a smaller domain is NOT excluded by this) [floating-point global search]\nPASS d=2: kernel sum_a g_a(q)g_a(q'), g_a = q_a b(|q|^2) is rotation invariant, so [S,V]=0 and [S,M]=0 (exact)\nPASS d=2: p-wave kernel is odd under q -> -q (fermionic channel)\nPASS d=3: kernel sum_a g_a(q)g_a(q'), g_a = q_a b(|q|^2) is rotation invariant, so [S,V]=0 and [S,M]=0 (exact)\nPASS d=3: p-wave kernel is odd under q -> -q (fermionic channel)\n# runtime 16.3 s\nTOTAL: PASS=56 FAIL=0\nHIT: scoped new results on the R8-1 two-body box law: all 15 (d=2) and 45 (d=3) Poincare commutators close exactly on the fibre algebra with the repaired spin term (R8-1 tested 11 of 15), the direct d=3 analogue of the lattice-native spin needs a helicity correction, the core boost is not essentially self-adjoint (deficiency (1,1) per fibre; no boost-invariant box), eta*(rho,mu)=asinh(Pi1/mu)-asinh(rho/mu) in closed form, and the pairwise three-body lift leaves exactly C=sum i W_ij u_ij(W_kl) with a P-dependent infimum mass in a solvable model.\nSUMMARY: Exact fibre-level 15/45-commutator closure, 60-digit chart identities (d=2,3) with a d=3 spin correction, the no-invariant-box and non-essential-self-adjointness obstruction, a closed-form finite-rapidity range, and an exact pairwise three-body leftover; it is not a precision lattice closure of the interacting d=2 algebra.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k9d70",
+  "at_utc": "20261025T213722Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Accepted as a logged scoped partial result: symbolic and 60-digit checks pass; the lattice-native d=2 run with converging residuals is not replaced. Carried in the probe closing record; no issue filed.",
+  "by": "w-jonathonsmac4f50-k9d70",
+  "at_utc": "20261025T213722Z"
+ }
+}

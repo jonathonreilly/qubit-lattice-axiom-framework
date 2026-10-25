@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20261012-wilson-physical-bridge:a1",
+ "type": "judgment",
+ "lane": "review-science-20261012",
+ "worker": "w-jonathonsmac4f50-kd780",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261012-wilson-physical-bridge/w-jonathonsmac4f50-kd780/check.py",
+ "seed": 63784,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "404f239f",
+ "started_utc": "20261025T212944Z",
+ "elapsed_s": 94.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "For the electron sector at order e^2, the gauge-independent, mass-calibrated on-shell shift equals the landed local coefficient Delta_f (hard massless integral + 1/(24 pi^2) soft constant) with a computed O(m ln m) remainder, its p/M trend at nonzero cone mismatch is the continuum log running (so the local number is the cutoff-scale value, not the physical low-energy one), and the fixed-order expansion's domain ends at |p|~sqrt(M); the photon-side on-shell bridge and e^4 non-log remainders remain open (runtime 93 s)."
+ },
+ "review": "Read the log after the run: check.py (95 s) printed a HIT: at order e^2 the mass-calibrated on-shell electron shift equals the landed massless hard integral plus a soft constant 1/(24 pi^2), gauge-equal for the cone speeds tested, remainder bounded by 0.06 m ln(1/m); the p/M trend at nonzero cone mismatch is continuum log running. The agent's ATTEMPT.md stops at the photon on-shell branch (c_e - c_gamma not bridged, no envelope frozen, e^4 remainder open); the photon-side running coefficient is a textbook value assumed, not derived. Same-family (Claude Sonnet 5.5), unrefereed.",
+ "what": "Advance one precise physical propagation interface beyond the landed conditional spatial-Wilson map. Begin with the pinned unfinished author and pre-exposure derivations, compare current main and active attempts, and check the actual action and fixed-positive-mass versus bare-tree-curve prescriptions. Resolve the link between local Euclidean kinetic coefficients and a gauge-consistent charged spectral or wave-packet observable with a controlled hard/soft remainder, or give an exact counterexample to that link. Preserve mass and charge calibration, photon clock normalization, infrared charged-state meaning and the additive-mass subtraction. Only after controlling that bridge may a separate calibration/test envelope be frozen: propagate cutoff, orientation and detector nuisance freedom, keep already-read public data nonblind, and do not refit on the test observation. A local coefficient, a floating on-shell trend or the already-known tree Cherenkov rate alone is not completion. Deliver one scoped proof or checked partial derivation and the first unresolved obligation. Do not restart the cancelled campaign, change its deadline or copy its PR snapshot into the backlog. Owner-requested scientific work transfer. Use the existing maximum-thinking J campaign and claim.py ownership protocol; inspect completed attempts and active claims to avoid duplication. Deliver numbered PROVED/CHECKED/ASSUMED steps, a self-contained disjoint check.py, and RECOVERY_STATUS.json with exact source hashes under probes/work/derive/<problem>/<worker>/. Commit the checker before run_probe.py. Emit SUMMARY and HIT only for a demonstrated new result or defect. Follow ordinary cross-model confirmation; this catalog addition starts no workers, changes no budgets and creates no PR snapshots or audit authority.",
+ "stdout_sha256": "379cf5348e2c1faa73a1a347eb7c9d13533b84205385d59f87c711ac00485d8e",
+ "stdout_tail": "ative up to p/M=1e4 (stable-branch expansion is uniform in p/M)\nPASS G2 for a=1 the tree electron radiates off-axis for |p| >~ sqrt(m) (denominator turns positive: |p|=0.6 sqrt(m): -1.2e-11, 1.5 sqrt(m): 2.6e-07/1.7e-07) -- the fixed-order O(e^2) coefficient is not defined there; the axis stays marginal (-4.8e-14)\nPASS G3 for the bare-curve setting (a^2 = 1+e^2 C_W = 1.0343) the tree electron is superluminal on the axis (denominator > 0: 3.7e-06): real-energy fixed order fails; width must be computed\nTOTAL: PASS=31 FAIL=0\nHIT: electron-sector bridge at order e^2 shown on the lattice: calibrated on-shell shift = massless hard integral + physical soft constant 1/(24 pi^2) (O(eps^2) remainders), gauge-equal for all cone speeds, remainder <= 0.06 m ln(1/m); p/M trend for a!=1 is the continuum log running -c^2 D(c) (D'(1)=-1/(3 pi^2), mismatch rate e^2/(2 pi^2) with photon half assumed); fixed order ends at |p|~sqrt(M) off-axis; photon-sector bridge NOT done\nSUMMARY: For the electron sector at order e^2, the gauge-independent, mass-calibrated on-shell shift equals the landed local coefficient Delta_f (hard massless integral + 1/(24 pi^2) soft constant) with a computed O(m ln m) remainder, its p/M trend at nonzero cone mismatch is the continuum log running (so the local number is the cutoff-scale value, not the physical low-energy one), and the fixed-order expansion's domain ends at |p|~sqrt(M); the photon-side on-shell bridge and e^4 non-log remainders remain open (runtime 93 s).\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-kd780",
+  "at_utc": "20261025T213128Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Accepted as a logged scoped partial result (electron sector at order e^2); numerical checks, not a theorem. The author's own K -> Delta_f sequence was already known. Carried in the probe closing record; no issue filed.",
+  "by": "w-jonathonsmac4f50-kd780",
+  "at_utc": "20261025T213128Z"
+ }
+}

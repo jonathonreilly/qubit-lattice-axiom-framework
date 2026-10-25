@@ -1,0 +1,17 @@
+{
+  "task_id": "J:derive:review-20261016-mirror-carrier-and-gap:a1",
+  "source_branch": "claude/strain-hot-matter-twins-20261013",
+  "source_head": "6afb06951a13ca861b50f47a8faf5d5c06594109",
+  "source_head_verified": true,
+  "source_objects": [
+    {"path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW1_referee_verdict.md", "sha256": "d380b817bcbfe6d6b5d874f1be069b379405969c6cf0b700d646b935454c3c96", "verified": true},
+    {"path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW1_report.md", "sha256": "25867a7ceacdfdf98aff329b5219f393a49b785c68f3fcedba2a0b89a352292c", "verified": true},
+    {"path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW3_referee_verdict.md", "sha256": "d6257dae115673fd0f632caa0e32752eace2ef3b493cdd7cc43a0e383f549410", "verified": true},
+    {"path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW3_report.md", "sha256": "69f8a151d1232a873182e9b034f8d40cd640de90fa099ac143313861a62bbc6e", "verified": true}
+  ],
+  "main_checkout_head": "a77a3449c91a753b06ce2a63876cd460b62cb4cf",
+  "check_py_sha256": "b5ac2dd14224cc39bf6e4b2e6bf3b629aed618fdc089acd452b0d942ec1f0b28",
+  "check_py_result": "TOTAL: PASS=50 FAIL=0 (about 50 s, about 130 MB)",
+  "first_unresolved_step": "ATTEMPT.md step 14: existence of a cube-local interaction that breaks the shift group (to select one taste) and P_stag (to select one chirality), keeps Theta_M, gaps three of the four chirality-by-taste blocks of every fibre with a unique gapped heavy sector, and leaves the fourth block gapless; together with the strain response of that light block once P_stag is broken. Not constructed, not excluded.",
+  "status_note": "Same-family, unrefereed. Finite-algebra result plus a short symmetry proof; no interacting thermodynamic-limit statement."
+}

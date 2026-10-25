@@ -1,0 +1,41 @@
+{
+  "task_id": "J:derive:review-20261012-excluded-walk-preparation:a1",
+  "source_branch": "physics-loop/toe-projected-band-current-20261011",
+  "source_head": "d8480b5a6e04102ff076b3dd6f817a2d43f20252",
+  "source_head_verified_as_commit": true,
+  "source_objects": [
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md.gz",
+      "sha256": "318462285c6588f40e5cb582e3d56b5c9e9220c849bd92bca112b579e3864290",
+      "sha256_of_decompressed_markdown": "09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324",
+      "verified": true,
+      "read": "all 457 lines"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md.gz",
+      "sha256": "305fc1d116a646f29a1c35379609adca1ee9fe6ae50f82a32f01a5043ada6af1",
+      "sha256_of_decompressed_markdown": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876",
+      "verified": true,
+      "read": "all 549 lines"
+    }
+  ],
+  "main_files_read": {
+    "main_head": "a77a3449c91a753b06ce2a63876cd460b62cb4cf",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+    "docs/EXCLUDED_WALK_PROJECTED_FREE_BAND_CANONICAL_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md": "ea4e9665b9a0ddab0fbe2b7d15e4fbb1121dd7c225056a98fade0f5ee6f34417 (all 880 lines)",
+    "docs/EXCLUDED_WALK_MEMORY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md": "9143e4f248643690028fcdcf18225ddee4899b0fbc19eb961666aefa1aa556fe (lines 1-140 and 800-830 read; remainder searched by grep, not read in full)",
+    "docs/EXCLUDED_WALK_QUANTITATIVE_MEMORY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-11.md": "e50baa8d8a376949a245d8fd0e14ef2ba96dbcda990f7b2b555911c596016279 (lines 1-130 read; remainder searched by grep)",
+    "docs/EXCLUDED_WALK_BOOST_BRACKET_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-11.md": "1eea02b7e6a385b18f0994be4c81da45a2549c02c7d1c91c6a414014ef9f6179 (lines 1-110 and selected scope lines read; Part V proofs not re-read)"
+  },
+  "boost_pr_head": {
+    "commit": "773321aa8fdfccc05248682dfc96bf94215034a2",
+    "fetched_and_is_commit": true,
+    "note_sha256_at_pr_head": "e7c2ac00fbb6774d7703bbdf064444c5f5b784a81cafd02107c6f18dfdbf0988",
+    "note_sha256_on_main": "1eea02b7e6a385b18f0994be4c81da45a2549c02c7d1c91c6a414014ef9f6179",
+    "mismatch": "main's boost note differs from the PR-head file by editorial lines only (link targets, historical-preamble wording, an appended N1-N8 scope record); the diff shows no mathematical change. Main's version was used."
+  },
+  "first_unresolved_step": "Step 19 of ATTEMPT.md: for a normalizable positive-band preparation (free band [lambda,2 lambda], projected once, one global normalization) with total momentum K = lambda*kappa, kappa of order one, at physical time tau/lambda, prove that the state equals (cone-scale free evolution of the band part) + (zero-space evolution of the far part driven by the cone-scale transverse source), to o(sqrt(lambda)) in L2. Only the source coefficient (Step 17, checked) and the exact amplitude identity (Step 15) are available; the matching theorem and therefore the canonical-current response at order lambda^2 are not proved.",
+  "verdict": "NEW RESULT (scoped): a sufficient cone-scale equi-integrability class for uniform state comparison and uniform canonical-current response on the zero space; the band-preparation interface at K ~ lambda is PARTIAL.",
+  "provenance": "same-family (Claude Sonnet 5.5) worker; unrefereed"
+}

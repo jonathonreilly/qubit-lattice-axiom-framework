@@ -15,17 +15,15 @@
   "claim_id": "koide_native_zero_section_nature_review_note_2026-04-24",
   "claim_scope": null,
   "claim_type": "bounded_theorem",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": null,
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "author_hint",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "koide_native_zero_section_closure_route_note_2026-04-24",
-    "koide_brannen_geometry_dirac_support_note_2026-04-22",
-    "koide_brannen_phase_reduction_theorem_note_2026-04-20"
+    "koide_native_zero_section_closure_route_note_2026-04-24"
   ],
   "direct_in_degree": 0,
   "effective_status": "unaudited",
@@ -38,7 +36,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "534fde7fd733a4aaea384611eb1a71a58aff9cb5f1fd10210752cefbb9a031b6",
+  "note_hash": "a62032595547df0ee8a40602cf97da0e4e8e16594fac4101e55d81825be72a9b",
   "note_path": "docs/KOIDE_NATIVE_ZERO_SECTION_NATURE_REVIEW_NOTE_2026-04-24.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -171,7 +169,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_koide_native_zero_section_nature_review.py",
-  "title": "Koide native zero-section defined-route Nature review",
+  "title": "Supplied native-zero algebra: consequences and child execution contract",
   "transitive_descendants": 0,
   "verdict_rationale": null
 }

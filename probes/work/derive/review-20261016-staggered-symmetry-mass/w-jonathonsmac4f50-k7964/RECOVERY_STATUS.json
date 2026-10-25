@@ -1,0 +1,16 @@
+{
+  "task_id": "J:derive:review-20261016-staggered-symmetry-mass:a1",
+  "source_branch": "claude/strain-hot-matter-twins-20261013",
+  "source_head": "6afb06951a13ca861b50f47a8faf5d5c06594109",
+  "source_head_verified": true,
+  "source_objects": [
+    {"path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_NF1_referee_verdict.md", "sha256": "85ae0cd85151a5fb370b4960757706348b951fe6444cb1c5d50fd8dfa3aa742f", "verified": true},
+    {"path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_NF1_report.md", "sha256": "24a5a262b25ede2fe8c67007317cb8f40d465855bfbf73e5420219338b2915e0", "verified": true},
+    {"path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW3_referee_verdict.md", "sha256": "d6257dae115673fd0f632caa0e32752eace2ef3b493cdd7cc43a0e383f549410", "verified": true},
+    {"path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW3_report.md", "sha256": "69f8a151d1232a873182e9b034f8d40cd640de90fa099ac143313861a62bbc6e", "verified": true}
+  ],
+  "main_checkout": "a77a3449c91a753b06ce2a63876cd460b62cb4cf",
+  "first_unresolved_step": "ATTEMPT.md Step 13: the all-orders protection statement PS is proved only conditionally on (i) exact preservation of Theta, P_stag, S_mu by an interacting gauge-fixed regulator and (ii) finiteness of the zero-momentum self-energy Sigma(0,0) at the massless corner points at every order (IR, 3+1 dimensions); not established. Downstream open: whether the inversion-non-covariant staircase lift generates a twisted mass at O(e^2) (Step 11); embedding of the staggered law with pi-flux hops and S_mu as Lattice-axiom translations (axiom gate AX:178), two-Dirac-taste/SM count, and the choice of time regulator (Step 2).",
+  "check_result": "TOTAL: PASS=45 FAIL=0",
+  "hit": "scoped, same-family, unrefereed"
+}

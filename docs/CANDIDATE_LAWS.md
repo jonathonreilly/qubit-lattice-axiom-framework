@@ -182,6 +182,8 @@ Face-swap parity (face-swap-parity, 2026-10-24, rule-rewrite R1; PR #10079): P_s
 
 Slab thickness as the single scale (slab-thickness-scale, rule-rewrite R2, campaign files; rejected): v/M_P = 2.0e-17 needs Ls/xi = 38.4 (Ls = 42 at m = 0.6), but m is free in (0, 2), so any Ls fits; setting v to the wall overlap gives every light species a 246 GeV mass with its mirror (the neutrino bound needs Ls/xi >= 65.5), and the one distinguished m = 1 makes the overlap zero; v' = sqrt(v M_P) = 5.5e10 GeV lands in the BCS window but a log-uniform v' does so with chance 0.18; integer-depth fermion fits give no compression (p = 0.94 vs null); equal depth spacing predicts m2^2 = m1 m3, measured 12.4 (e), 1.71 (u), 0.40 (d).
 
+Luscher current at larger L (luscher-L8, Mac mini, PR #10083; MIXED): with these backgrounds H is block-diagonal, so sign(H) is exact per block; on 6^4 the flux indices for 6Y = 1-6 are all -(6Y)^2 (e^c resolved), the 16's flux integral is 0 from measured integers and the lone doublet's is -18. On symmetric L^4 lattices the 16's density is dominated by Polyakov-loop effects (a pure holonomy shift flips its sign on 8^4); extending two directions to 24 removes this (the earlier 4^4 results were not checked for it). At m0 = 1.6 each charge's kernel and current decay exponentially, but the 16's momentum-space coefficient peaks near |p| ~ 0.5 and has not shown its p^2 vanishing by L = 24 (5 pre-set criteria unmet); a post-hoc check at m0 = 1.0 gives the 16's coefficient -9e-7 at |p| = 0.39 (7e-5 of the doublet's), falling faster than p^2, suggesting m0 = 1.6 has a slow scale 2 - m0 = 0.4. A pre-registered m0 = 1.0 rerun is needed.
+
 ## Untested predictions
 
 Each is conditional on the laws as written; content-dependent ones marked.

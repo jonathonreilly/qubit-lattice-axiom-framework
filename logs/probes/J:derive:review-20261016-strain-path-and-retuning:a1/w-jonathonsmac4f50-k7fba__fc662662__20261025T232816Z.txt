@@ -1,0 +1,38 @@
+PASS P0.1 the 8 frozen source objects (commit 6afb06951a13...) in ./src match their recorded sha256
+PASS P0.2 axiom memo (current main): Admissibility chooses no Hamiltonian; axioms+approved primitives are the whole foundation
+PASS P0.3 registry lists exactly three approved primitives; none mentions a strain flow, gauge coupling or path rule
+PASS A.1 3D hop (1,1,1): Psym covariance (E|X|^2 - |EX|^2) is nonzero, so the covariance freedom is real
+PASS A.2 3D hop (1,1,1): composites (+,-,+) and (+2,-1) keep the mean current and give E[X_j X_l(-q)] = |mean|^2 + c Cov exactly, c=3,5 (all j,l, all q)
+PASS A.3 3D hop (1,1,1): pattern (+3 g, -h, -k): c = 9+1+1 = 11, exact
+PASS A.4 2D hops (2,-1) and (1,1): same exact covariance scaling (also with repeated draws)
+PASS A.5 Psym path set for hop (1,1,1) is closed under a proper 90-degree rotation and under reversal (hermiticity); composites of iid Psym draws inherit both
+PASS A.6 Psym covariance matrix (3x3, hop (1,1,1)) is Hermitian and positive semidefinite at 20 random photon momenta
+PASS C.1 composites with T total cell traversals (P forward, N reverse, P-N=1, T<=13, every assignment of repeated/reversed draws): c is odd, c <= (T^2+1)/2, equality only for (P copies of one draw forward, N copies of one draw reversed), c=T always attained
+PASS D.1 Hamiltonian dressing H -> V H V^dag (V unitary) stays Hermitian and keeps the characteristic polynomial through O(eps^2)
+PASS D.2 the dressed operator stays in Dirac form with mass shift delta M = -2 eps f.c (the nearest-neighbour dressing mechanism)
+PASS D.3 literal conjugation V D V^dag with {V-generator, gamma_0}=0 gives H_L - H_L^dag = -2 i eps {G,H} = 4 i eps (c2 f1 - c1 f2) 1 != 0: non-Hermitian, complex band energies
+PASS D.4 toy degeneracy stated: for f = c (the toy's G1) the anticommutator vanishes, so the literal non-Hermiticity test uses the G2-type f; the root has c != sin k
+PASS B.1 Ward identity  sum_j d_j V_j = D_t(q) - D_t(0)  holds exactly for both vertices, with dressing a, a2 symbolic, through O(t^2)
+PASS B.2 longitudinal two-photon identity  sum_jl d_j d_l W_jl = D(q)+D(-q)-2D(0)  exact for covariance multiplier c = 0, 1, 3, 7/2 and symbolic c
+PASS B.3 gauge-parameter part of the P=0 self-energy integrand equals (D(Q)-D(-Q))/2, whose mass (identity) part is 0: xi-independent for every a, a2, c
+PASS B.4 at t=0 the covariance part W_P - W_J vanishes at every node and the symbol carries no dressing: the unstrained law is the same for every a, a2, c
+PASS B.5 the O(t) part of the node-summed pole shift is 0 at all 8 corners (to 50 digits): evenness in t holds, so the t^2 coefficient h is half the Hessian
+PASS B.6 the non-identity (gamma_i) parts of the node-summed self-energy cancel exactly (rational arithmetic, 3 sample x, 8 corners): the pole shift is the identity part
+PASS B.7 the t^2 pole-mass response is exactly multilinear in (a, a2, c) (two off-corner exact points agree to 1e-45) with monomials {1, c, a, a2, a2*c}: no a*c cross term for G1, an a2*c cross term for G2
+PASS B.8 exact coefficients (60-digit evaluation of exact algebraic sums): h = -0.175510070557 + 0.075119579468 c -10.1317973810 a -2.5992477704 a2 -8.3240615087 a2 c;  h(Psym) = -0.1003904911
+PASS B.9 disjoint finite-t numerics (ODE flows, expm dressing, scipy quadrature) reproduce the exact h(a,a2,c) at 6 parameter points; worst |diff| = 1.31e-08
+PASS B.10 transverse one-photon vertex t^2 coefficient depends on the dressing (a,a2) and NOT on c or on a mass retune; the transverse two-photon contact depends on c (and a,a2)
+PASS B.11 the three knock-on observables are individually nonzero: d(transverse vertex)/da != 0, d(two-photon contact)/dc != 0, vacuum-energy slope per unit retune = -5.902918 != 0
+PASS B.12 vacuum (free band) energies are identical for every dressing a (unitary conjugation of H) and for every ensemble c (no photon in the free vacuum)
+PASS B.13 three different exact zeros of the pole response: retune mu2*=0.1003904911 (vacuum knock-on), dressing a*=-0.0099084582 (transverse-vertex knock-on), ensemble c*=2.3364091200 (two-photon knock-on)
+PASS B.14 no free lunch: the knock-on observables vanish only at (mu2, a, c-1) = (0,0,0), where the pole response is -0.1003904911 != 0; so every pole-flat law pays in at least one named observable
+PASS B.15 sign of the covariance slope is model dependent (toy: dh/dc>0, whereas the packet's root numbers have dH/dc<0), and the zero set is not a plane when the dressing generator has a*c cross terms
+PASS B.16 changing the toy's 8 momentum nodes to 16 flips the sign of the Psym response (8 nodes: -0.100390, 16 nodes: 0.223997) and moves c* from 2.3364 to 0.6652 while dh/dc stays > 0: the toy fixes structure, not signs or magnitudes
+PASS B.17 8-node toy: the zero c* = 2.336409 lies in [1,3), so a positive local ensemble reaches it: weight 0.6682 on the 3-traversal composite (+,-,+) and 0.3318 on Psym; the root would need T >= 25 (C.3)
+PASS C.2 with the packet's numbers, the covariance multiplier at which the Hessian vanishes is c* = 274.005 (344-node) / 273.938 (referee 130-node); the referee quotes 273.998
+PASS C.3 within integer-signed Psym concatenations the zero needs a path that traverses the hop's cell at least T=25 times; with T<=23 the Hessian stays > 0 (min 7.996e-04, 344-node numbers)
+PASS C.4 the SF-HAZARD threshold (Hessian >= 1e-3) already fails at T=23 traversals (c up to 265): the packet's 'every permitted lift is >= 1e-3' is a statement about T <= 21 only, within this class
+PASS C.5 explicit positive local ensemble with H=0 on the root numbers: weight 0.8750 on a 25-traversal member (c=313) and 0.1250 on Psym (c=1)
+HIT: scoped, comparator-level -- exact covariance-scaling lemma for positive local loop ensembles (odd multipliers, extremal c=(T^2+1)/2, T>=25 needed on the packet's root numbers) and an exact one-loop toy in which the strained pole-mass response is affine in {bare-mass retune, Hamiltonian dressing, ensemble covariance} with three distinct knock-on observables; no root number is new
+TOTAL: PASS=35 FAIL=0
+SUMMARY: exact checks show the strained-pole-mass Hessian is an affine functional of choices (dressing, loop-ensemble covariance, bare-mass retune) that the registered data leave free, each choice moving a different observable, so no universal Hessian follows from the registered premises and a retune is not a no-effect move (runtime 125s)

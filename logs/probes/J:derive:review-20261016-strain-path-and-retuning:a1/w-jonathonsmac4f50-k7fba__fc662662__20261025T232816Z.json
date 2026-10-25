@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20261016-strain-path-and-retuning:a1",
+ "type": "judgment",
+ "lane": "review-science-20261016",
+ "worker": "w-jonathonsmac4f50-k7fba",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261016-strain-path-and-retuning/w-jonathonsmac4f50-k7fba/check.py",
+ "seed": 70896,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "fc662662",
+ "started_utc": "20261025T232816Z",
+ "elapsed_s": 128.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "exact checks show the strained-pole-mass Hessian is an affine functional of choices (dressing, loop-ensemble covariance, bare-mass retune) that the registered data leave free, each choice moving a different observable, so no universal Hessian follows from the registered premises and a retune is not a no-effect move (runtime 125s)"
+ },
+ "review": "Read the log after the run: check.py (about 2.5 minutes) printed a HIT scoped to the comparator level: the strained-pole-mass Hessian is an affine functional of choices (hop dressing, loop-ensemble covariance, bare-mass retune) that the registered data leave free, so no universal Hessian follows; concatenations of iid symmetric draws keep the mean current and multiply the covariance by exactly sum s^2 (checked with exact Laurent polynomials), mixtures reach every real c >= 1, the multiplier is bounded by c <= (T^2 + 1)/2 for T traversals; the zero of the packet's Hessian needs at least 25 traversals (c* about 274), with 23 or fewer the Hessian stays above +7.9e-4; in the agent's own 2D one-loop toy (not the root) the pole response is multilinear in retune, dressing and ensemble covariance (Ward, xi, evenness and finite-t controls pass; the toy's numbers depend on the momentum nodes). ATTEMPT.md stops at step 10(iii): no registered premise selects the strained hop's transverse and covariance data. Overlaps the F4 referee's c_n remark; the lemma, bound and toy are new. The agent reports running pkill on check.py processes. Same-family (Claude Sonnet 5.5), unrefereed.",
+ "what": "Compare the literal deformed symbol with spectrum-preserving Hamiltonian dressing and positive local loop ensembles. Derive which path follows from registered premises before assigning a universal Hessian. The packet contains zero-Hessian tunings; a local implicit-function retuning argument is not global, and changing observables is not a no-effect result. Advance one interacting critical-surface/retuning bridge with explicit observables and exact controls; no universal SF-Hazard claim from one supplied strain path. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise.",
+ "stdout_sha256": "8eaaa6b16988193937622c6c97cef8cc636016e04824b631f8e314d7cd5cb82b",
+ "stdout_tail": "Psym; the root would need T >= 25 (C.3)\nPASS C.2 with the packet's numbers, the covariance multiplier at which the Hessian vanishes is c* = 274.005 (344-node) / 273.938 (referee 130-node); the referee quotes 273.998\nPASS C.3 within integer-signed Psym concatenations the zero needs a path that traverses the hop's cell at least T=25 times; with T<=23 the Hessian stays > 0 (min 7.996e-04, 344-node numbers)\nPASS C.4 the SF-HAZARD threshold (Hessian >= 1e-3) already fails at T=23 traversals (c up to 265): the packet's 'every permitted lift is >= 1e-3' is a statement about T <= 21 only, within this class\nPASS C.5 explicit positive local ensemble with H=0 on the root numbers: weight 0.8750 on a 25-traversal member (c=313) and 0.1250 on Psym (c=1)\nHIT: scoped, comparator-level -- exact covariance-scaling lemma for positive local loop ensembles (odd multipliers, extremal c=(T^2+1)/2, T>=25 needed on the packet's root numbers) and an exact one-loop toy in which the strained pole-mass response is affine in {bare-mass retune, Hamiltonian dressing, ensemble covariance} with three distinct knock-on observables; no root number is new\nTOTAL: PASS=35 FAIL=0\nSUMMARY: exact checks show the strained-pole-mass Hessian is an affine functional of choices (dressing, loop-ensemble covariance, bare-mass retune) that the registered data leave free, each choice moving a different observable, so no universal Hessian follows from the registered premises and a retune is not a no-effect move (runtime 125s)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k7fba",
+  "at_utc": "20261025T233025Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Accepted as a logged scoped partial result (lemma and bound exact; the toy is a toy). Carried in the probe closing record; no issue filed.",
+  "by": "w-jonathonsmac4f50-k7fba",
+  "at_utc": "20261025T233025Z"
+ }
+}

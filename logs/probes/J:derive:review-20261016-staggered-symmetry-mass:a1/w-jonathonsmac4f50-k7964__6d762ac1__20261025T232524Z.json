@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20261016-staggered-symmetry-mass:a1",
+ "type": "judgment",
+ "lane": "review-science-20261016",
+ "worker": "w-jonathonsmac4f50-k7964",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261016-staggered-symmetry-mass/w-jonathonsmac4f50-k7964/check.py",
+ "seed": 70724,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "6d762ac1",
+ "started_utc": "20261025T232524Z",
+ "elapsed_s": 8.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "Exact algebra and exact torus operators show that Theta alone leaves a gapped twisted-mass family, P_stag alone leaves the untwisted one, Theta+P_stag kill all 64 entries, the three staggered shifts (magnetic translations of the pi-flux background) alone kill every Dirac-type mass via Gamma_1Gamma_2Gamma_3 = -S_1S_2S_3, and the Fock-term/ED checks show a shift- or P_stag-violating interaction regenerates a twisted mass while symmetric ones do not."
+ },
+ "review": "Read the log after the run: check.py (about 8 s) printed a HIT with scoped results for the Hamiltonian staggered model: the Theta and P_stag constraints on the 64 mass entries have rank 64 (each alone leaves 32; Theta alone leaves a 4-parameter family of gapped twisted masses realised by a local nearest-neighbour bond dimerisation that anticommutes with h and opens a gap 2 mu); Gamma1 Gamma2 Gamma3 = -S1 S2 S3 exactly, so the three staggered shifts alone forbid every Dirac-type mass (two shifts do not); the first-order Fock term of a shift- or inversion-violating interaction regenerates a twisted mass; the inversion-non-covariant staircase link lift is an exact counterexample for P_stag; the Kawamoto-Smit factor is 1/4 once, not 1/16. ATTEMPT.md stops at step 13: the protection statement is perturbative around the free point and assumes a finite Sigma(0,0) and a symmetry-keeping interacting regulator; physical embedding (AX:178) and the SM taste count are untouched. Same-family (Claude Sonnet 5.5), unrefereed.",
+ "what": "Build the actual covariant regulator and link action and classify permitted mass terms under Theta plus the needed staggered parity/shift symmetries. Anticommutation with epsilon is not the claimed literal continuous U1 commutation. Theta alone does not forbid all masses; reconcile the reported 64-entry and corrected row-normalization calculations with exact algebra. Decide one interacting/gauged protection statement while retaining two-Dirac-taste and physical embedding obligations. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise.",
+ "stdout_sha256": "4c5cac5fa07ded08c0333582f94842d7e2f84d8a856d376a8b79e15ca12fce0b",
+ "stdout_tail": "en\nPASS G1 hypercubic Euclidean regulator Z^3 x Z_tau (4D staggered, time hop eta_4 included, L=4, 256 sites, exact): {eps,D}=0 and the AXIAL rotation chi -> (i eps) chi, chibar -> chibar (i eps) leaves chibar D chi invariant; mass term chibar chi is not invariant. So the continuous U(1)_eps exists for the discrete-time staggered action and fails only when time is continuous (Hamiltonian) -- which regulator the framework uses is not fixed by the four axioms\nTOTAL: PASS=45 FAIL=0\nHIT: scoped exact classification of the 64-entry k=0 bilinear space of the Hamiltonian staggered law under Theta, P_stag and the three magnetic-translation shifts: Theta alone leaves a 4-parameter Dirac-type twisted-mass family (local nearest-neighbour dimerisation realises it), the three shifts alone kill all 8 Dirac-type masses because Gamma_1Gamma_2Gamma_3 = -S_1S_2S_3, Theta+P_stag kill all 64, and the first-order Fock term of a shift/inversion-violating interaction regenerates the twisted mass.\nSUMMARY: Exact algebra and exact torus operators show that Theta alone leaves a gapped twisted-mass family, P_stag alone leaves the untwisted one, Theta+P_stag kill all 64 entries, the three staggered shifts (magnetic translations of the pi-flux background) alone kill every Dirac-type mass via Gamma_1Gamma_2Gamma_3 = -S_1S_2S_3, and the Fock-term/ED checks show a shift- or P_stag-violating interaction regenerates a twisted mass while symmetric ones do not.\n\n[stderr]\n---- derived counts ----\n# runtime 7.2s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k7964",
+  "at_utc": "20261025T232533Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Accepted as a logged scoped result (exact algebra and exact torus operators; chirally acting shifts are standard in the literature, the new content is the identity, the minimality table and the counterexamples). Carried in the probe closing record; no issue filed.",
+  "by": "w-jonathonsmac4f50-k7964",
+  "at_utc": "20261025T232533Z"
+ }
+}

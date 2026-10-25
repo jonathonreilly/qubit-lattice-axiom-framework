@@ -19,14 +19,21 @@
  "stdout_sha256": "1390e63ea7a715ba4e2892d0b477ad9610e0ffcf962eb9aad84bba23433c139e",
  "stdout_tail": ":: (5408, 52, 52)\nPASS B (0, 0, 5)/h3 exposes exactly the two next seeds :: [((4, 1, 1), 'R_B11'), ((4, 1, 6), 'R_B11')]\nPASS B (0, 0, 5)/h3 has no conflict or hidden dead terminal :: (frozenset(), ())\nPASS B (0, 0, 5)/h6 supports are disjoint at strict-NN distance two\nPASS B (0, 0, 5)/h6 condition set is the disjoint union :: (338, 169, 169)\nPASS B (0, 0, 5)/h6 reachable graph is the exact Cartesian product :: (10609, 10609)\nPASS B (0, 0, 5)/h6 append-edge count factorizes :: (21218, 103, 103)\nPASS B (0, 0, 5)/h6 exposes exactly the two next seeds :: [((7, 1, 1), 'R_B11'), ((7, 1, 6), 'R_B11')]\nPASS B (0, 0, 5)/h6 has no conflict or hidden dead terminal :: (frozenset(), ())\nPASS B (0, 0, 5)/h9 supports are disjoint at strict-NN distance two\nPASS B (0, 0, 5)/h9 condition set is the disjoint union :: (532, 266, 266)\nPASS B (0, 0, 5)/h9 reachable graph is the exact Cartesian product :: (23716, 23716)\nPASS B (0, 0, 5)/h9 append-edge count factorizes :: (47432, 154, 154)\nPASS B (0, 0, 5)/h9 exposes exactly the two next seeds :: [((10, 1, 1), 'R_B11'), ((10, 1, 6), 'R_B11')]\nPASS B (0, 0, 5)/h9 has no conflict or hidden dead terminal :: (frozenset(), ())\nPASS C01 all 24 proper-cubic images preserve the product graph :: []\nFAIL D01 note exists and carries no authority\nFAIL D02 note identifies a positive separation control\nFAIL D03 note does not claim adjacent collision resolution\nFAIL D04 note denies an axiom consequence\n\nOFFSETS=2 HORIZONS=3 ROTATIONS=24\nSUMMARY: 39 PASS / 4 FAIL\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260925T235432Z",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210709Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 0543421d differs from the current HEAD fa9c7db0 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Read the log: the failing check(s) are guards on note, ledger, receipt or source text (first failing line: 'FAIL D01 note exists and carries no authority'). The runner fails the same way on a clean checkout of origin/main (2026-10-25) or exceeds 400 s there; the guarded text was moved to archive/ (densify-freeze migration 0b6129121f, 2026-09-04) or edited after the cache was pinned. Same class as the runners that fail on current main in harvest.py; no re-execution defect in the computed content is shown by this log.",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210709Z"
  }
 }

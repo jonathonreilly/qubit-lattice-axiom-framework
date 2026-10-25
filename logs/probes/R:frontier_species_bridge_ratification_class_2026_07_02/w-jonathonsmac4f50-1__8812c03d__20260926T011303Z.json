@@ -22,15 +22,22 @@
  "stdout_sha256": "2feab7f517cbe08fc4f74bb2c5f7e6c079680964da2fce8164b0a849da1ac2ef",
  "stdout_tail": "3 orbit-average equalizes (spread = 0), Havg = 3*I, commutes with C3 -- exact\nCHECK 22: FAIL -- Historical Grade Scope: note preserves the bracketed above-grade content, former sub-admissions, and owner-class proposal as provenance\nCHECK 23: FAIL -- Historical governance map: note preserves owner-decision proposal tokens and the repair tokens as provenance\nCHECK 24: FAIL -- Historical governance map: note records the former two-part owner proposal and the extended scientific residue\n\nDECLARED-OPEN RESIDUE (conserved; owner surface, nothing adopted here):\n  RESIDUE: the AC_phi_lambda(iii) identification -- open scientific dependency; historical owner proposal is provenance only\n  RESIDUE: the bracketed above-C3-grade content (taste/Dirac/chirality; hw=1 vs hw=2 beyond C3)\n  RESIDUE: historical sub-admission (i) wording -- current occupancy obligation remains open\n  RESIDUE: historical sub-admission (ii) wording -- current R-eta obligation remains open\n  RESIDUE: adjacent review-pending K-arc PRs #4831/#4835/#4837/#4840/#4845 (non-overlapping)\n  RESIDUE: adjacent note-level two-cell family PR #4853 (context only)\n  RESIDUE: audit statuses of all cited notes -- owned by the independent audit lane\n  RESIDUE: the parent's separate CKM/PMNS across-fermion-type alignment residual -- not addressed here\n  RESIDUE: the parent's proof-strength gap: contentlessness argued/strongly-supported, not exhaustively proven (uncomputed C3/epsilon invariant functional ring)\n\nTOTAL: PASS=20 FAIL=4\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260926T011303Z",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210703Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 8812c03d differs from the current HEAD fa9c7db0 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=20 FAIL=4' vs cache 'TOTAL: PASS=24 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Read the log: the failing check(s) are guards on note, ledger, receipt or source text (first failing line: ''). The runner fails the same way on a clean checkout of origin/main (2026-10-25) or exceeds 400 s there; the guarded text was moved to archive/ (densify-freeze migration 0b6129121f, 2026-09-04) or edited after the cache was pinned. Same class as the runners that fail on current main in harvest.py; no re-execution defect in the computed content is shown by this log.",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210703Z"
  }
 }

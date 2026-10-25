@@ -22,15 +22,22 @@
  "stdout_sha256": "74db308dc8ebec63d7a61aea3aa890fba55a11780ca6a111ea9a959c620ab8f6",
  "stdout_tail": "ommon-vector completeness is identity\nPASS rank-one Kraus/isometry classification: declared family is exactly the V channel\nPASS rank-one Kraus/isometry classification: weaker constraints admit dephasing\nPASS written-projector permanence: a trace-preserving repeat extension exists\nPASS written-projector permanence: repeat application fixes the P_0 record\nPASS written-projector permanence: repeat application fixes the P_1 record\nPASS written-projector permanence: classical mixtures are idempotently stable\nPASS written-projector permanence: C2 leaves no cross-record component\nPASS written-projector permanence: normalized Kraus amplitudes fix the content projector\nPASS written-projector permanence: reset-to-blank control is normalized\nPASS written-projector permanence: reset overwrites P_1 but leaves coincident P_0 fixed\nPASS register-unitary orbit: the general record-frame matrix is unitary\nPASS register-unitary orbit: conjugation preserves the controlled-copy class\nPASS register-unitary orbit: canonical labels map to the general pair\nPASS named negative controls: non-correlating write is rejected by C1\nPASS named negative controls: pointer-demolishing write is rejected by C3\nPASS named negative controls: reset of P_1 to blank is rejected by C2\nPASS named negative controls: non-isometric contraction fails normalization\nPASS dependency-scope quotations: controlled-copy write-isometry surface\nPASS dependency-scope quotations: projective extracted-block form\nTOTAL: PASS=32 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260926T024159Z",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210709Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 902b321f differs from the current HEAD fa9c7db0 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=32 FAIL=1' vs cache 'TOTAL: PASS=33 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Read the log: the failing check(s) are guards on note, ledger, receipt or source text (first failing line: ''). The runner fails the same way on a clean checkout of origin/main (2026-10-25) or exceeds 400 s there; the guarded text was moved to archive/ (densify-freeze migration 0b6129121f, 2026-09-04) or edited after the cache was pinned. Same class as the runners that fail on current main in harvest.py; no re-execution defect in the computed content is shown by this log.",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210709Z"
  }
 }

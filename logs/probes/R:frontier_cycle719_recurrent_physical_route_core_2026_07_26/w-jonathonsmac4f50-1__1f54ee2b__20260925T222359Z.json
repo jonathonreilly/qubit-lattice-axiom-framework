@@ -21,14 +21,21 @@
  "stdout_sha256": "6d0983f6f7701ed5ee6c40b95674edc573a8772b9a9d1d71514fb0ab6f9cbbdf",
  "stdout_tail": ": {\"after_packets\": 24, \"before_packets\": 24, \"body_inverse_exact\": true, \"forced_exhausted_state_hamming\": 3, \"hosted_cleanup_consumes_failed_carrier\": false, \"physical_pending_or_exhaustion_receipt_present\": true}, \"held\": {\"2\": {\"decoder_failures\": 0, \"intertwiner_failures\": 0, \"inverse_body_failures\": 0, \"issues\": [], \"maximum_intertwiner_basis_residual\": 0.0}, \"5\": {\"decoder_failures\": 0, \"intertwiner_failures\": 0, \"inverse_body_failures\": 0, \"issues\": [], \"maximum_intertwiner_basis_residual\": 0.0}, \"12\": {\"decoder_failures\": 0, \"intertwiner_failures\": 0, \"inverse_body_failures\": 0, \"issues\": [], \"maximum_intertwiner_basis_residual\": 0.0}}, \"intervals\": [9, 12, 21, -9], \"joint\": {\"JointOrder_class_module\": \"physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22\", \"consistent_acyclic\": true, \"consistent_statuses\": [\"admitted\", \"admitted\"], \"edge_qubit_opportunities\": [1, 1], \"forced_cycle_detected\": true, \"inverted_first\": \"admitted\", \"inverted_refusal\": \"refused_inverted\", \"no_endpoint_status\": \"no_opportunity\"}, \"order\": {\"failures\": 178, \"rows\": 756}}, \"supplied\": [\"clean 12-bank/11-link genesis, exactly one token, and blank route workspace\", \"BINDER/ACTUAL/ADMISS/LAW and fixed bank-zero endpoint carrier source\", \"fixed load-bearing outward/packet/inward circuit order\", \"proper-cubic coframe relating the matter seam and history chain\", \"host implementation of marker-gated source finalization\"]}\nCYCLE719_RECURRENT_PHYSICAL_ROUTE_CORE_BOUNDED_PARTIAL\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260925T222543Z",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210658Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 1f54ee2b differs from the current HEAD fa9c7db0 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)",
    "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
    "ok: stdout identical to the pinned cache"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Read the log and re-ran the runner on a clean checkout of origin/main (2026-10-25): it exits 0 there (SUMMARY_JSON {\"boundary\": \"Positive literal M2 placement and routing of the repa). The failure logged on 2026-09-25/26 came from the worker's checkout at that time and does not reproduce on current main; its cause was not diagnosed further. No defect of the runner shown.",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210658Z"
  }
 }

@@ -22,15 +22,22 @@
  "stdout_sha256": "3e9f35ec7fa2b2eab4052e5648f06bfac2a9162ec00b35ae3141881da4432617",
  "stdout_tail": "[FAIL] source quote audit -- missing source quote in docs/MINIMAL_AXIOMS_2026-06-29.md: 'For any finite collection of pairwise-disjoint records, scalar readout\\n`I` is additive, with `I(empty)=0`.'\n[PASS] T1 partial-trace restriction -- basis_pairs=128 over_Q both_factors\n[PASS] T1 registered-factor bookkeeping -- typed_subalgebra_closure_products=16\n[PASS] T2 M2 frame additivity and no-density obstruction -- antipodal_pairs=6 rankA=3 rankAug=4\n[PASS] AST self-scan -- ast_calls=134 read_only\n[PASS] declaration inputs -- Gleason_external_not_reproved Born_not_derived\nDECLARATION FRAME-EXT=conditional_premise gap=FINITE-ADDITIVITY-TO-FRAME composite_REP_requires_external_Gleason\nTOTAL PASS=5 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260925T230454Z",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210709Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 818cfd72 differs from the current HEAD fa9c7db0 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'PASS=5 FAIL=1' vs cache 'PASS=6 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Read the log: the failing check(s) are guards on note, ledger, receipt or source text (first failing line: '[FAIL] source quote audit -- missing source quote in docs/MINIMAL_AXIOMS_2026-06-29.md: 'For any finite collection of pairwise-disjoint reco'). The runner fails the same way on a clean checkout of origin/main (2026-10-25) or exceeds 400 s there; the guarded text was moved to archive/ (densify-freeze migration 0b6129121f, 2026-09-04) or edited after the cache was pinned. Same class as the runners that fail on current main in harvest.py; no re-execution defect in the computed content is shown by this log.",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210709Z"
  }
 }

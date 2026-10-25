@@ -19,14 +19,21 @@
  "stdout_sha256": "5b6042e12b047d69bec5bcdde6296575a570d3a05ff1bec34ca70eed988cedca",
  "stdout_tail": "ng=['R_LA'] novel=134\nPASS B06 every nonconflicting unary choice writes wrong H1 at D2\nPASS B07 absent representative R_C01 yields nineteen unary shell sites :: ((-2, -5, -3), (-2, -2, -6), (-1, -6, -3), (-1, -5, -4), (-1, -5, -2), (-1, -3, -6), (-1, -2, -7), (-1, -1, -6), (1, -5, 0), (1, 1, -6), (2, -6, 0), (2, -5, 1), (2, 1, -7), (2, 2, -6), (3, -5, 0), (3, 1, -6), (5, 1, -4), (5, 2, -3), (6, 1, -3))\n\n===============================================================================\nC - Topological scope of the failure\n===============================================================================\nPASS C01 downstream G2 cannot be a prior second parent of G1 :: G1-G2=1 D2-G2=3\nPASS C02 G3 guards D4 and G4 neighbours D1 only downstream\nPASS C03 phase-only interpretation permanently occupies JOIN and D7\n\n===============================================================================\nD - Scope and no-go-discipline boundary\n===============================================================================\nFAIL D01 note names exact bounded negative\nFAIL D02 note names relocated D7/JOIN next target\nFAIL D03 note carries refreshed N1-N8 discipline\nFAIL D04 note denies broad orientation-13 and writer no-go\nFAIL D05 note makes no axiom addition\nPASS D06 Cycle 127 writes only runner and review note\nFAIL D07 note keeps the two-parent follow-up causal and non-retained\n\nROLES=153 CONFLICT=18 EXISTING_H1=1 NOVEL_H1=134\nG0_SOURCE_IMAGES=5 REPRESENTATIVE_UNARY_SHELL=19\nPASS=16 FAIL=7\nRESULT=FAIL\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260925T225717Z",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210708Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 818cfd72 differs from the current HEAD fa9c7db0 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Read the log: the failing check(s) are guards on note, ledger, receipt or source text (first failing line: 'FAIL D01 note names exact bounded negative'). The runner fails the same way on a clean checkout of origin/main (2026-10-25) or exceeds 400 s there; the guarded text was moved to archive/ (densify-freeze migration 0b6129121f, 2026-09-04) or edited after the cache was pinned. Same class as the runners that fail on current main in harvest.py; no re-execution defect in the computed content is shown by this log.",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210708Z"
  }
 }

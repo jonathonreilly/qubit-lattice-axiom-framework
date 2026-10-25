@@ -22,15 +22,22 @@
  "stdout_sha256": "edcba3aac20d34b5b87f170a4c32895da0b9d06310e6965493aa5115846a861b",
  "stdout_tail": "K/CPT determinant-character phase-erasure checks (theta P2 route)\n============================================================================\nPASS source does not claim a completed discharge or Tier-A registry change\nPASS source keeps audit status authority external\nPASS source names the determinant-readout bridge and cites the bridge note\nFAIL cited bridge note carries the conditional Consequence A bridge content\nPASS dedicated mass determinant-channel bridge is narrow and non-promotional\nPASS Record axiom memo still withholds the readout context\nPASS live strong-CP note still names the positive-mass selected-surface premise\nPASS K/CPT conjugation maps determinant z to conj(z)\nPASS phase character exp(i k arg z) is multiplicative when phases add\nPASS invariance defect equals 2 i sin(k phi) exactly\nPASS K-invariance of the determinant-character phase for all phi forces k = 0 -- linear coefficient 2*I*k; solutions [0]\nPASS every tested k != 0 has an explicit phi with nonzero invariance defect -- k in {1,-1,2,-2,1/2}, phi = pi/(2k), defect = 2i sin(pi/2) = 2i\nPASS k = 0 character is identically K/CPT invariant\nPASS surviving determinant-character readout is phase-free and depends only on |det|\nPASS cos(arg z) is K-invariant yet phase-dependent: orbit invariance alone is not phase erasure\n============================================================================\nSUMMARY: PASS=14 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260926T004120Z",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210703Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha d4f9c0df differs from the current HEAD fa9c7db0 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: PASS=14 FAIL=1' vs cache 'SUMMARY: PASS=15 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Read the log: the failing check(s) are guards on note, ledger, receipt or source text (first failing line: 'FAIL cited bridge note carries the conditional Consequence A bridge content'). The runner fails the same way on a clean checkout of origin/main (2026-10-25) or exceeds 400 s there; the guarded text was moved to archive/ (densify-freeze migration 0b6129121f, 2026-09-04) or edited after the cache was pinned. Same class as the runners that fail on current main in harvest.py; no re-execution defect in the computed content is shown by this log.",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210703Z"
  }
 }

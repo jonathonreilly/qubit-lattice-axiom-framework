@@ -22,15 +22,22 @@
  "stdout_sha256": "2b36207a178e1e469892bc238573bcd43974ff3615a0e38b97cc220a287f15cd",
  "stdout_tail": "= 6*(q_E-1) = 21/4\n      21/4\nPASS: rho_E/6 is the E-center lift increment 7/8\n      7/8\nPASS: c_TE = -2*q_T/q_E = -8/9\n      -8/9\n\nPART 4: wrong-exponent falsifiers\nPASS: only exponent p=2 hits lambda_E/T=9/4 in the tested local exponent window\n      {-3: Fraction(8, 27), -2: Fraction(4, 9), -1: Fraction(2, 3), 0: Fraction(1, 1), 1: Fraction(3, 2), 2: Fraction(9, 4), 3: Fraction(27, 8)}\nPASS: uniform exponent p=0 gives lambda_E/T=1, not target\n      1\nPASS: one-power dual exponent p=1 gives lambda_E/T=3/2, not target\n      3/2\nPASS: ordinary projector-square direction p=-2 gives lambda_E/T=4/9, not target\n      4/9\nPASS: current surface does not select p=2 from the exponent family\n\nPART 5: companion note hygiene\nFAIL: QUARK_ROUTE2_DUAL_COMPLIANCE_BRIDGE_CONDITIONAL_SUPPORT_NOTE_2026-06-21.md exists\nFAIL: note contains marker: **Actual current-surface status:** conditional support\nFAIL: note contains marker: conditional on the dual-compliance premise\nFAIL: note contains marker: This is not an audit verdict\nFAIL: note contains marker: does not close the parent S3/Route-2 gate\nFAIL: note contains marker: does not derive the endpoint triple on the current surface\nFAIL: note contains marker: upstream_support\nPASS: note avoids overclaim: parent closure\nPASS: note avoids overclaim: unconditional endpoint derivation\nPASS: note avoids overclaim: bare retained\nPASS: note avoids overclaim: audit verdict\n\nTOTAL: PASS=44, FAIL=7\nVERDICT: conditional dual-compliance bridge checks failed.\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260926T003757Z",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210700Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 41e265d2 differs from the current HEAD fa9c7db0 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=44, FAIL=7' vs cache 'TOTAL: PASS=51, FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Read the log: the failing check(s) are guards on note, ledger, receipt or source text (first failing line: 'FAIL: QUARK_ROUTE2_DUAL_COMPLIANCE_BRIDGE_CONDITIONAL_SUPPORT_NOTE_2026-06-21.md exists'). The runner fails the same way on a clean checkout of origin/main (2026-10-25) or exceeds 400 s there; the guarded text was moved to archive/ (densify-freeze migration 0b6129121f, 2026-09-04) or edited after the cache was pinned. Same class as the runners that fail on current main in harvest.py; no re-execution defect in the computed content is shown by this log.",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210700Z"
  }
 }

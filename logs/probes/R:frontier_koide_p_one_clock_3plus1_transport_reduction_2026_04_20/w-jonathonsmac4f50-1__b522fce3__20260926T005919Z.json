@@ -22,15 +22,22 @@
  "stdout_sha256": "1482104e2f2dbd4d4260be4194edf60780f496ce8a61b3f15c0e85990dc76ab6",
  "stdout_tail": "ta_pos = 0.261799387799)\n  [PASS] (B2) The unphased point carries delta = 0  (delta_0 = 0.000000000000)\n  [PASS] (B3) The target 2/d^2 = 2/9 lies strictly inside the physical first branch  (0 < 2/9 = 0.222222222222 < pi/12 = 0.261799387799)\n  [PASS] (B4) There is a unique interior first-branch point m_* with delta = 2/d^2  (m_* = -1.160443440065)\n\n(C) The local selected-line packet is too small\n------------------------------------------------------------------------\n  [PASS] (C1) The intrinsic Berry packet is locally fixed: A = dtheta, F = 0\n  [PASS] (C2) The equator Fubini-Study density is constant\n  [PASS] (C3) The structural scalar rho_delta = |Im(b_F)|^2 is branch-constant  (rho_delta = 0.222222222222)\n  [PASS] (C4) Yet delta(m) varies strictly along the first branch  (delta' range = [-0.293421, -0.161625])\n  [PASS] (C5) Two interior points share the same local packet  (same (A_theta, g_FS, rho_delta))\n  [PASS] (C6) Those same points carry different Berry holonomies  (|delta_a-delta_b| = 0.146620)\n\n(D) Reduction consequence\n------------------------------------------------------------------------\n  [PASS] (D1) The target point exists uniquely but is not locally distinguished\n  [PASS] (D2) So any native closure of P must use branch-global or ambient data  (not an intrinsic local selected-line scalar law)\n\n========================================================================\nSummary: PASS=12, FAIL=3\n========================================================================\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260926T005920Z",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210659Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha b522fce3 differs from the current HEAD fa9c7db0 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'PASS=12, FAIL=3' vs cache 'PASS=15, FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Read the log and re-ran the runner on a clean checkout of origin/main (2026-10-25): it fails the same way (first failing line: ''; rerun total: ========================================================================). The recorded cache and the runner disagree with inputs not shown to have moved; cause not diagnosed. Listed in the probe closing record's runner-hygiene register; no issue filed (vehicle closing).",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210659Z"
  }
 }

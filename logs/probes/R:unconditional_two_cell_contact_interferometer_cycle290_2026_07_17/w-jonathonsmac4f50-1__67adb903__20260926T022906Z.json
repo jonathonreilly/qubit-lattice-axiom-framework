@@ -19,14 +19,21 @@
  "stdout_sha256": "28af0d582daa84b8b42b7675be1198226eddf854666c06536589a9e5f1ca2eca",
  "stdout_tail": "L': 5, 'held_out': False, 'two_cell_matter_union_M2': 35, 'path_marker_M2': 1, 'total_declared_block_M2': 36, 'maximum_contact_term_weight': 12, 'connector_weight': 5, 'nonzero_Walsh_terms_per_cell': np.int64(64), 'check_or_Wilson_leakage': 0}, {'L': 6, 'held_out': True, 'two_cell_matter_union_M2': 35, 'path_marker_M2': 1, 'total_declared_block_M2': 36, 'maximum_contact_term_weight': 12, 'connector_weight': 5, 'nonzero_Walsh_terms_per_cell': np.int64(64), 'check_or_Wilson_leakage': 0}]\nPASS the two-cell contact comparator preserves the one-particle mass fixture because W_g is identity for N at most one :: {'one_particle_contact_action': 'identity', 'mass_ratio': 0.9999999999999998}\nPASS the entire two-cell contact-plus-connector motif is covariant in 648 proper-frame and L=3 translation tests :: {'frame_translation_tests': 648, 'failures': []}\n\nLAWFUL DOMAIN / SUPPLIED STRUCTURE\nPASS the lawful domain accepts the declared six-mode M64 cells and rejects undersized or mistyped fixtures :: {'negative_fixture_rejections': 3}\nPASS the supplied inventory is finite and explicit :: {'supplied': ('g=0.37', 'two adjacent cells and one stream connector', 'fixed branch occupations', 'one path-marker M2', 'marker H preparation and read basis', 'controlled redistribution route and its inverse', 'ordinary W_g insertion on both cells'), 'derived': ('relative phase g', 'dark-port close sin^2(g/2)', 'Q-only zero', 'bounded physical support', 'zero code leakage')}\n\nSUMMARY: 12 passed, 1 failed\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260926T022934Z",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210710Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 67adb903 differs from the current HEAD fa9c7db0 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Read the log: the failing check(s) are guards on note, ledger, receipt or source text (first failing line: ''). The runner fails the same way on a clean checkout of origin/main (2026-10-25) or exceeds 400 s there; the guarded text was moved to archive/ (densify-freeze migration 0b6129121f, 2026-09-04) or edited after the cache was pinned. Same class as the runners that fail on current main in harvest.py; no re-execution defect in the computed content is shown by this log.",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210710Z"
  }
 }

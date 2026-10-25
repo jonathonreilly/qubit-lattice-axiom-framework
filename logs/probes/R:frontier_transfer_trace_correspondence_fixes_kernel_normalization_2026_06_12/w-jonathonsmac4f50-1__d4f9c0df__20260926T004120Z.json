@@ -22,15 +22,22 @@
  "stdout_sha256": "6287375c33690023c54907fec43e16713f93586900068e5a7ec5734f73af730d",
  "stdout_tail": "=lambda**4; extracted k=4; rank=4\nPASS A7 T3b over lambda>0 equality forces lambda=1: Eq(lambda**4*(15/2 - 5*sqrt(5)/2), 15/2 - 5*sqrt(5)/2); positive real solutions=[1]\nPASS A8 T3c numeric witness lambda=2 breaks equality by predicted factor: lambda=2 factor=16; scaled/op ratio=16\nPASS A9 T4 tie-in det(lambda K)=lambda^k det(K) uses same exponent: rank=4; determinant scaling exponent=4\nPASS A10 robustness Tr Gamma(t)=det(1+t), L_s=3: residual=0; Fock dim=8\nPASS A10b robustness Tr Gamma(t)^2=det(1+t^2), L_s=3: residual=0; Fock dim=8\nPASS A10c robustness genuine Berezin expansion equals trace, L_s=3: Berezin residual=0; pairs=6; terms=216\nFAIL B11 source grep retained RP and substep1 phrases: RP terms=['2-step blocked transfer matrix', 'B^dag B', 'E(p) = arcsinh']; substep1 terms=['det(M)', 'single-pair']\nPASS B12 note firewall present and closing language absent: firewall=True; forbidden_absent=True\nPASS B13 link inventory exactly two load-bearing links: links=['AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md', 'STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md']; resolve=True; W4 backticked only=True\nPASS B14 no-promotion statement present: No-promotion statement present\n======================================================================================\nSUMMARY: PASS=19 FAIL=1\nNo-promotion statement: this runner does not promote, demote, or set audit/retention status for any note; it checks only the bounded surface.\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260926T004123Z",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210703Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha d4f9c0df differs from the current HEAD fa9c7db0 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: PASS=19 FAIL=1' vs cache 'SUMMARY: PASS=20 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Read the log: the failing check(s) are guards on note, ledger, receipt or source text (first failing line: 'FAIL B11 source grep retained RP and substep1 phrases: RP terms=['2-step blocked transfer matrix', 'B^dag B', 'E(p) = arcsinh']; substep1 te'). The runner fails the same way on a clean checkout of origin/main (2026-10-25) or exceeds 400 s there; the guarded text was moved to archive/ (densify-freeze migration 0b6129121f, 2026-09-04) or edited after the cache was pinned. Same class as the runners that fail on current main in harvest.py; no re-execution defect in the computed content is shown by this log.",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210703Z"
  }
 }

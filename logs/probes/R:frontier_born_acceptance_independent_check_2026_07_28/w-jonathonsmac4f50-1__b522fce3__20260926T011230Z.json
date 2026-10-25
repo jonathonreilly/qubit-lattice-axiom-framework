@@ -21,15 +21,22 @@
  "stdout_sha256": "fb13200191a39a7c78445007347890a0b725d4c0f42cc155e97fff1d50af015d",
  "stdout_tail": "FAIL 1/5 contract_and_source_pins :: CertificateError: one or more declared runtime inputs are absent\nPASS 2/5 exact_projector_oracle :: vectors=102; maximum_entry_error=2.78e-17\nPASS 3/5 schema_and_refusal_boundary :: landed ValueError=3/3; Boolean landed-returned; schema/registry provenance=12/12\nFAIL 4/5 hermetic_primary_and_sandbox :: CertificateError: primary clean exit=1\nFAIL 5/5 independent_comparator_adversaries :: CertificateError: primary hermetic run must precede comparator inspection\nSUMMARY 2/5 FAIL\nRUNTIME 3.192948s\nRESULT BORN_PROJECTOR_FIXTURE_INDEPENDENT_CHECK_GREEN\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260926T011233Z",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210658Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha b522fce3 differs from the current HEAD fa9c7db0 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_born_acceptance_independent_check_2026_07_28.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Read the log: the failing check(s) are guards on note, ledger, receipt or source text (first failing line: 'FAIL 1/5 contract_and_source_pins :: CertificateError: one or more declared runtime inputs are absent'). The runner fails the same way on a clean checkout of origin/main (2026-10-25) or exceeds 400 s there; the guarded text was moved to archive/ (densify-freeze migration 0b6129121f, 2026-09-04) or edited after the cache was pinned. Same class as the runners that fail on current main in harvest.py; no re-execution defect in the computed content is shown by this log.",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210658Z"
  }
 }

@@ -22,15 +22,22 @@
  "stdout_sha256": "c6d567577df6a1ede5c1d82f3ebecd7bb6cbafd1275f6a9dec5781999fa63480",
  "stdout_tail": " the same control: rule and mirror rule on the two sublattices of the slab give Delta = 2.2e-16 for both mover types, |chi| <= 1.3e-15; on the 6^3 torus a 2x2x4 column with a z-wall keeps |chi| <= 1.4e-15, through-plane partners 4.4e-16, perpendicular -4.05e-04, -7.24e-04, +9.87e-03\nPASS H1 actual slab current maximizer is a wavepacket, not an energy eigenvector: E 1.707106781187 residual 0.292893218813\nPASS H2 complex Slater amplitudes obey fixed-basis conjugation; tick completion mass is explicit\nTICK_COMPLETION_MASS {'cases': 480, 'minimum': 0.7866195120773589, 'maximum': 1.0000000000000004, 'lost_minimum': -4.440892098500626e-16, 'lost_maximum': 0.21338048792264108, 'convention': 'zero at dead prefixes, normalize final law conditional on completion'}\nSUMMARY: Finite chiral tables, fixed-basis DPP conjugation and supplied static/tick/wall examples. No physical time-reversal or universal handed-mode exclusion.\nper_element: the actual finite algebra and counterexample values are exercised; no physical input is derived.\nper_site: only the stated local menus or site-summed observables are measured; permanent formation is supplied.\nper_mode: selected finite eigenvectors and returned subspaces only; no complete infinite spectrum is claimed.\nper_block: the declared finite boxes, schedules and full small counters are checked at their stated tolerances.\nlattice_wide: no infinite-volume, general-index, universal physical no-go or asymptotic claim is certified.\nTOTAL: PASS=27 FAIL=2\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260925T211651Z",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210704Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 39df7536 differs from the current HEAD fa9c7db0 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=27 FAIL=2' vs cache 'TOTAL: PASS=29 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Read the log and re-ran the runner on a clean checkout of origin/main (2026-10-25): it fails the same way (first failing line: ''; rerun total: TOTAL: PASS=27 FAIL=2). The recorded cache and the runner disagree with inputs not shown to have moved; cause not diagnosed. Listed in the probe closing record's runner-hygiene register; no issue filed (vehicle closing).",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210704Z"
  }
 }

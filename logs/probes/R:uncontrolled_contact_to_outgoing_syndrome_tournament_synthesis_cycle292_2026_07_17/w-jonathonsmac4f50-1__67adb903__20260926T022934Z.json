@@ -19,14 +19,21 @@
  "stdout_sha256": "4fb563498ccf5cd967e6305fa1c23fa26a52c57b9f8935d541a9f3917a9bc760",
  "stdout_tail": "o gate generator is renamed a rate', 'no schedule or rail coordinate is renamed time', 'resource count is not a source law')\nFAIL all N1-N8 sections are present :: ('n1 \u2014', 'n2 \u2014', 'n3 \u2014', 'n4 \u2014', 'n5 \u2014', 'n6 \u2014', 'n7 \u2014', 'n8 \u2014')\nFAIL N1 has twelve literal synthesis attempts and no inherited exclusion marker :: {'attempted_count': 0}\nFAIL N2 has all 21 bidirectional collapsed-wall pairs :: {'pair_count': 21}\nFAIL N3 classifies the full required phrase scan :: ('we assume', 'by construction', 'as is standard', 'the framework provides', 'bridge context', 'background', 'naturally', 'obviously', 'standard qft', 'registered', 'canonical')\nFAIL N4 drops both nonmatching witnesses :: Cycle 276 and 270 are not detector witnesses\nFAIL N5 has five resolutions and explicit unknown scopes :: {'unknown_count': 0}\nFAIL N6-N8 and both scoped gate verdicts are explicit :: ('live constructive retirement paths', 'strongest hostile steelman', 'cross-cycle echo', 'n1-n8 status: pass', 'n1-n8 status: fail')\nFAIL obstruction and axiom-pressure language is evidence scoped :: ('scoped to the routes, controls, sizes, and code surfaces cold-run here', 'unreviewed encodings, homogeneous apparatus laws, state preparations', 'no route-independent failure appears', 'there is no evidence-based axiom pressure', 'broad no-go fails n1', 'minimum-content theorem, or evidence-based axiom-pressure claim')\nPASS unused bounded prior art is not centered :: Thirring absent\nSUMMARY PASS 1 FAIL 18\nRESULT CYCLE292_OPEN\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260926T023128Z",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210710Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 67adb903 differs from the current HEAD fa9c7db0 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Read the log: the failing check(s) are guards on note, ledger, receipt or source text (first failing line: 'FAIL all N1-N8 sections are present :: ('n1 \u2014', 'n2 \u2014', 'n3 \u2014', 'n4 \u2014', 'n5 \u2014', 'n6 \u2014', 'n7 \u2014', 'n8 \u2014')'). The runner fails the same way on a clean checkout of origin/main (2026-10-25) or exceeds 400 s there; the guarded text was moved to archive/ (densify-freeze migration 0b6129121f, 2026-09-04) or edited after the cache was pinned. Same class as the runners that fail on current main in harvest.py; no re-execution defect in the computed content is shown by this log.",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210710Z"
  }
 }

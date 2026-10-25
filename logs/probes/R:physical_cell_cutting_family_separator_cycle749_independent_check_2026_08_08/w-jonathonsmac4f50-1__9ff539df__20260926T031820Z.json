@@ -22,11 +22,12 @@
  "stdout_sha256": "b463889a63bf63dd6eb1f382978940bc692eb50cc6757f77d0dcf6e7ab81ca95",
  "stdout_tail": "PASS independent.population  opposite-pivot reconstruction gives 15800 rows, 192 columns, weights 24 and 1975\nPASS independent.targets  the reconstructed four target and its complement reproduce the landed target identity\nPASS independent.all_marked  exact clique enumeration reproduces all 192 landed all-marked carriers\nFAIL independent.symmetry_actions  all 48 geometric maps and both extra generators preserve the incidence rows and four target\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/physical_cell_cutting_family_separator_cycle749_independent_check_2026_08_08.py\", line 513, in <module>\n    group = closure(generators)\n            ^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/physical_cell_cutting_family_separator_cycle749_independent_check_2026_08_08.py\", line 465, in closure\n    product = tuple(int(value) for value in generator[element_array])\n                                            ~~~~~~~~~^^^^^^^^^^^^^^^\nIndexError: index 0 is out of bounds for axis 0 with size 0\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260926T031821Z",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210706Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 9ff539df differs from the current HEAD fa9c7db0 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: parse field 'total' found nothing in the stdout: the run may not have reached its summary",
@@ -34,5 +35,11 @@
    "FAIL: the pinned cache ends with the verdict 'TOTAL: PASS=23 FAIL=0' and this run printed none",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_cell_cutting_family_separator_cycle749_independent_check_2026_08_08.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Read the log and re-ran the runner on a clean checkout of origin/main (2026-10-25): it fails the same way (first failing line: 'FAIL independent.symmetry_actions  all 48 geometric maps and both extra generators preserve the incidence rows and four target'; rerun total: IndexError: index 0 is out of bounds for axis 0 with size 0). The recorded cache and the runner disagree with inputs not shown to have moved; cause not diagnosed. Listed in the probe closing record's runner-hygiene register; no issue filed (vehicle closing).",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T210706Z"
  }
 }

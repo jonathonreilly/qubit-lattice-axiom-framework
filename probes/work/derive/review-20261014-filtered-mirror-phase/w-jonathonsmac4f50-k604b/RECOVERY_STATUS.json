@@ -1,0 +1,60 @@
+{
+ "task_id": "J:derive:review-20261014-filtered-mirror-phase:a1",
+ "source_branch": "claude/chirality-grid-exercise-20261014",
+ "source_head": "dd7d358c6f6b0fd049b46962970397dbdc7d2e1f",
+ "source_objects": [
+  {
+   "path": ".claude/science/exercises/chirality-grid-20261014/combos/X2/COMBO_REPORT.md",
+   "sha256": "3b5e095d96a3fa16fb8b8c3b9adc6cf560f9a167db481132719efac6bc5b9438",
+   "expected_sha256": "3b5e095d96a3fa16fb8b8c3b9adc6cf560f9a167db481132719efac6bc5b9438",
+   "verified": true,
+   "method": "git show dd7d358c6f6b0fd049b46962970397dbdc7d2e1f:<path> | sha256, and re-checked by check.py on the copy in src/"
+  },
+  {
+   "path": ".claude/science/exercises/chirality-grid-20261014/kills/K1/KILL_REPORT.md",
+   "sha256": "31113b4b7c78e2b1d8bed2a42d4a6140ca6de154d414393d3ce11d4f2c233f6f",
+   "expected_sha256": "31113b4b7c78e2b1d8bed2a42d4a6140ca6de154d414393d3ce11d4f2c233f6f",
+   "verified": true,
+   "method": "git show dd7d358c6f6b0fd049b46962970397dbdc7d2e1f:<path> | sha256, and re-checked by check.py on the copy in src/"
+  },
+  {
+   "path": ".claude/science/exercises/chirality-grid-20261014/routes/F1/ROUTE_REPORT.md",
+   "sha256": "e799854cc30793c9fadd9c1437d7e2a64f807c60c14ff90512abfc3646c212dd",
+   "expected_sha256": "e799854cc30793c9fadd9c1437d7e2a64f807c60c14ff90512abfc3646c212dd",
+   "verified": true,
+   "method": "git show dd7d358c6f6b0fd049b46962970397dbdc7d2e1f:<path> | sha256, and re-checked by check.py on the copy in src/"
+  },
+  {
+   "path": ".claude/science/exercises/chirality-grid-20261014/combos/X1/COMBO_REPORT.md",
+   "sha256": "0f2aa85353eabd52d0820e20ee31cec23cddd44f14ff1b0a7d9caabead861a1f",
+   "expected_sha256": "0f2aa85353eabd52d0820e20ee31cec23cddd44f14ff1b0a7d9caabead861a1f",
+   "verified": true,
+   "method": "git show dd7d358c6f6b0fd049b46962970397dbdc7d2e1f:<path> | sha256, and re-checked by check.py on the copy in src/"
+  }
+ ],
+ "other_objects_read": [
+  {
+   "path": "scripts/X2/x2_cert.py (source branch, same commit; read, not a named source object)",
+   "sha256": "0dd8ea359ee2842b76a2238a1806b5996f66b145cb3788c963b8801a9b257338"
+  },
+  {
+   "path": "scripts/K1/b1_meanfield_10channel.py (same commit; read)",
+   "sha256": "53e105a2f804f65d198d2da69d687f38c83fc728b51fe15ae6825878048a4500"
+  },
+  {
+   "path": "docs/MINIMAL_AXIOMS_2026-06-29.md (origin/main a77a3449c91a753b06ce2a63876cd460b62cb4cf)",
+   "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+  },
+  {
+   "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md (same main commit)",
+   "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+  },
+  {
+   "path": "docs/SPIN10_SYMMETRIC_ATOMIC_GAPS_MIRROR_BOUNDARY_PROJECTION_AND_CURRENT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-14.md (same main commit)",
+   "sha256": "52f49ed0d6dd544a5892d58ae039ce86245d4e16832fa4934b8a8f8fe20b6024"
+  }
+ ],
+ "check_py_sha256": "245b9a1e64066f4ba3317b2aa6df1fefe830cbb1bcda2225730df3fd791dc63d",
+ "first_unresolved_step": "ATTEMPT.md step 19: a unique, symmetric, gapped ground state of H_W + W*sum_x Q(psi_S(x)) in 3D for the member of the quartic family with the number-violating term (the only one that breaks U(1)_F as X2 requires), with no 10-vector condensate and no massless composite. Preceded by step 7 (the source never fixes which member is meant) and steps 11-13 (no independent-site limit for any exactly-zero filter; the number-conserving member has an exact non-singlet zero-energy multiplet), so no controlled strong-coupling bound is available.",
+ "status": "PARTIAL; same-family, unrefereed; no status word beyond checked/proved-on-paper"
+}

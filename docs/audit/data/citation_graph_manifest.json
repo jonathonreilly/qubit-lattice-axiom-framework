@@ -1,5 +1,5 @@
 {
- "edge_count": 16121,
+ "edge_count": 16088,
  "node_count": 7439,
  "nodes": {
   "3d_correction_master_note": {
@@ -13267,8 +13267,8 @@
    "out_degree": 21
   },
   "koide_bae_probe_radian_from_dimensions_bounded_note_2026-05-09_probe30": {
-   "deps_hash": "7ea380e657aa",
-   "out_degree": 11
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "koide_bae_probe_spectrum_cone_bounded_obstruction_note_2026-05-09_probe22": {
    "deps_hash": "92d83109e1f1",
@@ -19119,12 +19119,12 @@
    "out_degree": 0
   },
   "radian_bridge_expanded_inventory_bounded_note_2026-05-10_radianexp": {
-   "deps_hash": "a5c950991ceb",
-   "out_degree": 10
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "radian_unit_convention_reclassification_note_2026-05-10_radianconv": {
-   "deps_hash": "94a27f605946",
-   "out_degree": 12
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08": {
    "deps_hash": "7ec7d5527ff7",

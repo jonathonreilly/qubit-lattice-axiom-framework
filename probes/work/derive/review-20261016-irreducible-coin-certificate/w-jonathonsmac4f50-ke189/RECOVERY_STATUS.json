@@ -1,0 +1,38 @@
+{
+  "task_id": "J:derive:review-20261016-irreducible-coin-certificate:a1",
+  "source_branch": "claude/toe-campaign-24h-20261015",
+  "source_head": "b0178fa585cad5ac9e02e70dff2175593dbc5dab",
+  "source_head_note": "frozen commit; it is an ancestor of the fetched branch head 8c01c25cbb8b751e66fb2f16c039cb6c1d8bc9c9 (objects read from the frozen commit, not from the moved head)",
+  "current_main_head_read": "a77a3449c91a753b06ce2a63876cd460b62cb4cf",
+  "source_objects": [
+    {
+      "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/spin32_branch.py",
+      "sha256": "61528a3bc11e87ffeb544e533b6b5d625aa1d8007bd3938ab80f65e7c27b14d6",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/spinj_exact.py",
+      "sha256": "437b81be7244bc5dcab46c2d6268eef2469a2a1b5ebbbc91cf61be453db78785",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/tosing_alg.py",
+      "sha256": "dfc40b6aa8ac97f7183cf1efff0a4f69edeac4f356d571a908f6a54d72613f9a",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/tosing_branch.py",
+      "sha256": "be9b05c78080150323d2df2b196cba29388a9c38dbd1ef9bdc1d1ad54d4b810b",
+      "verified": true
+    },
+    {
+      "path": "docs/TWO_QUBIT_SITE_UNFREEZES_THE_CUBIC_TICK_DOUBLER_FREE_DIRAC_WALK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "sha256": "58723d2c9fd65eda81cf8b1859c5aff7ea62b0f129055d3753888a8c5811156c",
+      "verified": true
+    }
+  ],
+  "hash_method": "git show <frozen commit>:<path> | shasum -a 256, compared with the sha256 in the task; all five match",
+  "first_unresolved_step": "Step 9 of ATTEMPT.md for spin 1 and spin 3/2: the line lemma (hand-proved) plus the exact branch exhaustion has one implementation and no line-free second derivation (after the exact linear cascade the line-free systems still hold 45 equations in 18 unknowns for spin 1 and 81 equations in 33 unknowns for spin 3/2, beyond sympy's Groebner routines within this budget); explicit cofactor certificates exist for 4 of the 10 residual unknowns of the spin-3/2 trivial branch (the other 6 rest on Groebner runs in three monomial orders); cross-family confirmation is still owed. No mathematical gap was found inside the declared scope (27-point cell, irreducible 2O coin, covariance A_{Rn}=D A_n D^-1 or its sign twist).",
+  "result_scope": "E, spin 1, spin 1/2 (control) and spin 3/2: with sum_n A_n = 1, the real unitarity ideal over Q has only the identity solution over C (computer-assisted, exact, same-family, unrefereed); no exact dispersive counterexample in this class",
+  "archived_claims_used_as_authority": false
+}

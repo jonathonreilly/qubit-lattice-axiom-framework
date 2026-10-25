@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/mirror_quark_portal_is_a_shared_hypercharge_bare_mass_that_keeps_theta_tree_zero_and_lets_mirror_quarks_decay_2026_10_24.py
+runner_sha256: 28dbca696b5f017c5342f72328ac9ef86e5899c0f0d1ebab17e5bdd03fb050cc
+input_fingerprint_sha256: 6a6bf96f631f2ca65e0c424bce6b29dd59921d49d64c7ecb9fabdffba2fc7629
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.72
+status: ok
+----- stdout -----
+== A. Portal operators (separate U(1)_Y x U(1)'_Y, then shared Y) ==
+PASS A1 [T]: separate Y: every cross quark bilinear has (Y,Y') off Z/2 -> no H^a H'^b neutraliser. qL-bar q'R:(-1/6,1/6), u'L-bar uR:(2/3,-2/3), u'L-bar dR:(-1/3,-2/3), d'L-bar uR:(2/3,1/3), d'L-bar dR:(-1/3,1/3)
+PASS A2 [T]: shared Y: lowest dimension qL-bar q'R=5, u'L-bar uR=3, u'L-bar dR=None, d'L-bar uR=None, d'L-bar dR=3 (None = forbidden to all orders in H,H'); u'L-bar uR, d'L-bar dR are bare masses C
+   -> renormalizable mass matrix is block lower-triangular: M = [[A, 0],[C, D]], B (qL-bar q'R) from dim-5
+PASS A3 [T]: I=(Q+t/3) mod 1: light & mirror leptons 0; mirror quarks [Fraction(1, 3)] with Q,Q' separate -> lightest I!=0 state absolutely stable for ANY added field; with shared Y (Q=T3+T3'+Y) I=0 for all
+== B. theta_tree and light J with the portal C ==
+PASS B1 [T]: det(MuMd)>0 for block-triangular M, Hermitian AND generic C, any VEV phase: max|theta_tree|=1.6e-13 (300 samples, v'/v in [1e1,1e4])
+PASS B3 [F]: light J free: median |J|=2.1e-02; light masses = sv(Y) v to max rel 7.6e-10 (C<<yv')
+== C. Leak from dim-5 B and the BBN lifetime: the window for C ==
+PASS C1 [F]: theta_leak linear in C, v'-independent: median 1.5e-10(C=1), 1.1e-09(C=10 GeV), 1.5e-09(v'=1e11); theta<1e-10 needs C<0.89 GeV for |c|=1 (worst-direction estimate y_u^2 Lam 1e-10 = 0.037; median/estimate ratio 24)
+PASS C1b [F]: contrast: a condensed bi-doublet B = 1 GeV (C=0.1 GeV, v'=1e9) leaks median |theta|=3.3e-04 >> 1e-10 -> the SU(2) inter-wall link must stay disordered
+PASS C2 [E]: tau(u'->u h,Z,dW) = 16 pi hbar (v'/C)^2/m_u' < 1 s; window non-empty: v'=1e+08: m_u'=8.8e+02, C in [2e-05,9e-01] GeV; v'=1e+09: m_u'=8.8e+03, C in [6e-05,9e-01] GeV; v'=1e+10: m_u'=8.8e+04, C in [2e-04,9e-01] GeV; v'=1e+11: m_u'=8.8e+05, C in [6e-04,9e-01] GeV
+== D. Electroweak breaking and FCNC (gauge toy SU(2) x SU(2)' x U(1)_shared) ==
+PASS D1 [T]: no bi-doublet VEV: W_L-W' mixing 0e+00, M_W^2=g^2v^2/4 exact, 1 photon, rho-1=1.0e-05,1.0e-07 at v'/v=1e2,1e3 (~(v/v')^2); bi-doublet VEV 0.3v gives W_L-W' mixing 0.04 (problem returns)
+PASS D2 [F]: tree Z FCNC among light quarks (v'/v=1e4, C=1e-2 v): max off-diag/g = 4.5e-16 (diag 0.39,0.19,0.188,0.188); uR and u'L share all charges, u'R differs only via Z-Z' mixing
+== E. Slab reading: the portal is the wall-overlap term dressed by the inter-wall link chain ==
+PASS E1 [T]: near-far effective mass = (1-m)^Ls x prod(link)^-1 exactly: |m|=4.29e-07, phase = Wilson line
+PASS E2 [F]: disordered U(1) chain <Phi>=0.022, Haar SU(2) chain <Phi_2>=0.043 -> C=B=0 (X1 as stated, wall-local D3); ordered U(1) (kappa=20) <Phi>=u^(Ls-1)=0.68 -> C!=0 with B=0
+PASS E3 [E]: C = (1-m)^Ls x cutoff in window needs Ls in [46,58] at 1-m=0.4 (tension with wall-local D2 Ls<~5 for flat colour; Ls=5 gives C~1e16 GeV, excluded)
+runtime 0.32 s
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

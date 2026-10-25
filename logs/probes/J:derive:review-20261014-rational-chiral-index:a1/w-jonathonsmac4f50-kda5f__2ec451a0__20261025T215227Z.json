@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20261014-rational-chiral-index:a1",
+ "type": "judgment",
+ "lane": "review-science-20261014",
+ "worker": "w-jonathonsmac4f50-kda5f",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261014-rational-chiral-index/w-jonathonsmac4f50-kda5f/check.py",
+ "seed": 65147,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "2ec451a0",
+ "started_utc": "20261025T215227Z",
+ "elapsed_s": 9.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "Lemma R (rational pole-free idempotent => stably trivial bundle) is proved by Hilbert syzygy, the canonical-R scalar+vector sum rule follows, and exact examples show its denominator hypothesis is sharp and that Schur realisations need separate Hermiticity, gauge-stability and reflection-positivity input."
+ },
+ "review": "Read the log after the run: check.py (about 5 s) printed a HIT with scoped results: stable triviality of a rational idempotent with a Laurent denominator nonzero on the torus via Hilbert syzygy (all Chern characters vanish, class equals the rank), the canonical-R scalar+vector sum rule of local chiralities, a rational continuous exactly Ginsparg-Wilson operator in 2D and 4D with one simple zero (its reduced denominator vanishes at (pi,..,pi), so the denominator hypothesis cannot be weakened to continuity), and independence examples for Hermiticity, gauge stability and link reflection positivity. ATTEMPT.md stops at steps 13-14 (index link in a gauge background for general R; general-rank local-zero-to-Chern-character link). The Chern numbers are floating-point. Same-family (Claude Sonnet 5.5), unrefereed.",
+ "what": "Rebuild a self-contained rational-projector lemma with a common Laurent denominator nonzero on the real torus, its algebraic extension and exact Chern/index hypotheses. Recover only the canonical-R scalar-plus-vector free-symbol conclusion until the general-R/gauged bridge is actually proved. Check Schur-complement realization constraints separately: algebraic realizability alone does not preserve Hermiticity, gauge covariance or reflection positivity. Advance one general-rank/index interface or supply a counterexample. Do not infer an exhaustive physical price list, realized vacuum selection, or impossibility for all finite rules. The supplied referee is historical guidance, not current certification. Owner-requested research transfer, not accepted science or a replacement PR. Read current main axiom/primitive sources first: Admissibility supplies no probability distribution or dynamics, and physical sites remain Z^3 with M2(C); any changed carrier/time model is an explicit comparator. Reconcile existing attempts and active claims; use the existing maximum-thinking J claim and cross-model referee protocol. Deliver numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes. No worker launch, budget change, PR snapshot copy, audit verdict or premise approval accompanies this catalog addition.",
+ "stdout_sha256": "9af311d0f126259f782e6a7874053025952cc777bbea50e5afcd1dc2cb8c03fb",
+ "stdout_tail": "\nPASS G7 det g(T) = c^2 - 4(cos^2 th1 + cos^2 th2 + 4 sin^2 th1 cos^2 th2) vanishes exactly at th1=pi/2, cos^2 th2 = 289/320: the auxiliary block that is invertible on the free torus is SINGULAR in a flux-pi background, so A - B g(T)^-1 C is undefined there\nPASS H1 exact: C(t) = (-sgn/3)^|t| /(4/5) is the inverse of F_sgn(p)=1+sgn(3/5)cos p on |t|<=6; both F_+ and F_- are Laurent polynomials, positive on T^1, Hermitian, with nonvanishing denominators (Lemma R's hypotheses are shift-invariant p -> p+pi)\nPASS H2 exact: link-reflection Hankel matrix [C(s+t+1)] is NOT PSD for F_+ (C(1)=-5/12<0) but IS PSD for F_-; site-reflection Hankel [C(s+t)] is PSD for both: RP (link) is not implied by Hermiticity, positivity, rationality or Lemma R's hypotheses\nTOTAL: PASS=36 FAIL=0\nHIT: explicit continuous rational exact-GW (R=1/2) operator in 2D and 4D with one simple massless zero and degree 1 (Chern number nonzero), whose only defect is a common denominator vanishing at (pi,..,pi): the 'nonzero Laurent denominator on T^d' hypothesis of Lemma R cannot be weakened to 'continuous'; plus an exact flux-pi example where a free-gapped auxiliary block is singular\nSUMMARY: Lemma R (rational pole-free idempotent => stably trivial bundle) is proved by Hilbert syzygy, the canonical-R scalar+vector sum rule follows, and exact examples show its denominator hypothesis is sharp and that Schur realisations need separate Hermiticity, gauge-stability and reflection-positivity input.\n\n[stderr]\nruntime 7.3s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-kda5f",
+  "at_utc": "20261025T215240Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Accepted as a logged scoped result: proofs in ATTEMPT.md, checks pass; main already holds the conditional Lemma R argument (outputs/chirality_exact_review_2026_10_18), so novelty is the syzygy route and the sharpness example, not the lemma. Carried in the probe closing record; no issue filed.",
+  "by": "w-jonathonsmac4f50-kda5f",
+  "at_utc": "20261025T215240Z"
+ }
+}

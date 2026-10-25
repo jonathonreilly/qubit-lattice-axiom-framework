@@ -1,0 +1,42 @@
+PASS A1 4D Euclid gammas: Hermitian, square 1, anticommuting (explicit chiral rep)
+PASS A2 gamma5 = g1g2g3g4 is Hermitian, squares to 1, anticommutes with every gamma_mu
+PASS A3 Gamma = (gamma5, i gamma5 gamma_mu) are five Hermitian, mutually anticommuting, squares 1
+PASS A4 D = a + i gamma.b (a,b real) is gamma5-Hermitian: D^dagger = gamma5 D gamma5
+PASS A5 GW(R=1/2) residual for scalar+vector D is exactly gamma5 (2a - a^2 - b^2): GW iff 2a = a^2+b^2
+PASS A6 gamma5hat = gamma5(1-D) is Hermitian and gammahat^2 = ((1-a)^2 + b^2) I, so = 1 iff GW (n=(1-a,-b) on S^4)
+PASS A7 gamma5hat = n . Gamma with n = (1-a, -b1..-b4): Bott-type pullback form
+PASS A8 2D analogue (gamma5=sigma3): same residual identity and gammahat^2 formula
+PASS B1 (numeric) |tr F^ F| on an orthonormal S^4 frame is constant and (1/8pi^2)|tr F^2| x vol(S^4) = 1.000000000000 = 1: |c2| = 1 for the Bott projector
+PASS C1 P = (1 + Phi(h).sigma)/2 with Phi(h) = (2h1h3, -2h2h3, h1^2+h2^2-h3^2)/|h|^2 equals v v^dag/|v|^2, v = (h1+i h2, h3) a global frame wherever |h| != 0
+PASS D1 (numeric) control: non-rational normalised h-hat, m=1: Chern number = -1.000000 (|C|=1)
+PASS D2 (numeric) rational Phi(h) built from the SAME h (|h| nonvanishing on T^2): Chern number = -0.000000 = 0, as Lemma R requires
+PASS D3 (numeric) the Lemma R hypothesis holds for D2: min |h| on a 241^2 torus grid = 1.000 > 0
+PASS E1 stereographic symbol: a = 2|t|^2/(1+|t|^2), b = 2t/(1+|t|^2) satisfies 2a = a^2 + b^2 exactly (so exact GW, R = 1/2)
+PASS E2 a = 0 forces t = 0: D has exactly one zero (k = 0) among points with finite t
+PASS E3 d b_mu / d k_nu at k=0 is the identity: the zero is a regular simple Dirac zero of chirality +1, so deg n = +1
+PASS E4 identities |b|^2 (1+|t|^2)^2 = 4|t|^2 and a-2 = -2/(1+|t|^2): D -> 2 (and b -> 0) continuously as |t| -> infinity (k_mu -> pi)
+PASS E5 reduced denominator of a(z) is z1**2*z2**2 - 2*z1**2*z2 + z1**2 - 2*z1*z2**2 - 12*z1*z2 - 2*z1 + z2**2 - 2*z2 + 1 and it vanishes at the real-torus point z=(-1,-1) (k=(pi,pi)); gcd(num,den)=1, so it is NOT a removable singularity: the hypothesis of Lemma R (common Laurent denominator nonzero on T^2) FAILS there
+PASS E6 every non-polynomial entry of gammahat(z) = sigma3(1-D(z)) has reduced denominator vanishing at z=(-1,-1) (4 entries checked)
+PASS E7 along rays k=(pi+s, pi+lam s), lam in {1,1/2,2,-3}: (a,b1,b2) -> (2,0,0) exactly: continuous removable-in-value but not regular-in-the-ring singularity
+PASS E8 (numeric spot check) gammahat(k) Hermitian, squares to 1, Phat idempotent at a generic k
+PASS E9 (numeric) Chern number of Phat = (1 - gammahat)/2 for this rational continuous exact-GW operator: -1.000000 (|C|=1 != 0): Lemma R's conclusion FAILS when 'nonzero denominator on T^2' is weakened to 'continuous'
+PASS E10 (numeric) Fourier coefficients of a(k) along the diagonal decay as a power law, log-log slope -4.01 (an exponentially local symbol would have |coef(64,64)| < 1e-20; here |coef|=7.12e-09): consistent with 'not quasi-local'
+PASS E11 n=(b1,b2,a-1) is a unit vector (the S^2 map of the 2D canonical-R theory); preimage of (0,0,-1) is a=0,b=0 i.e. t=0 only
+PASS F1 4D stereographic symbol satisfies 2a = a^2 + b^2 exactly
+PASS F2 4D: d b_mu / d k_nu at k=0 is the identity; the only zero of D is k=0 (a=0 iff u=0): net chirality = deg n = +1
+PASS F3 4D: 1+|t|^2 = Q(z)/prod(z+1)^2 with gcd(Q, prod(z+1)^2) = 1 and Q(-1,-1,-1,-1) = 0: the reduced denominator of a(z) vanishes at k = (pi,pi,pi,pi), so Lemma R's hypothesis fails exactly there
+PASS G1 F = N'/h (N' Hermitian, h>0) is the Schur complement of the HERMITIAN block [[0,B],[B^dag,E]], B=[-N'/2, 1], E=[[0,h],[h,0]] (fully symbolic, 2x2 N')
+PASS G2 E has spectrum {+h,-h}: signature (n,n), invertible with gap h: Hermitian realisability is bought with an INDEFINITE auxiliary block
+PASS G3 the algebraic realisation N/g = 0 - N(-g)^{-1}1 uses the block [[0,N],[1,-g]], which is not Hermitian for generic N
+PASS G4 f = 2cos k1+2cos k2+2cos(k1+k2)+2cos(k1-k2) is bilinear in (cos k1, cos k2), so min f = -4 on T^2 (corners); g = 17/4 + f >= 1/4 > 0 on the free real torus (common Laurent denominator hypothesis holds)
+PASS G5 T1,T2 unitary with T1 T2 = - T2 T1: the magnetic-Bloch representation of uniform flux pi per plaquette
+PASS G6 covariant g(T1,T2) in flux pi equals c + 2cos(th1) sx + 2cos(th2) sz + 4 sin(th1)cos(th2) sy (path-ordered monomials T1T2, T1T2^-1)
+PASS G7 det g(T) = c^2 - 4(cos^2 th1 + cos^2 th2 + 4 sin^2 th1 cos^2 th2) vanishes exactly at th1=pi/2, cos^2 th2 = 289/320: the auxiliary block that is invertible on the free torus is SINGULAR in a flux-pi background, so A - B g(T)^-1 C is undefined there
+PASS H1 exact: C(t) = (-sgn/3)^|t| /(4/5) is the inverse of F_sgn(p)=1+sgn(3/5)cos p on |t|<=6; both F_+ and F_- are Laurent polynomials, positive on T^1, Hermitian, with nonvanishing denominators (Lemma R's hypotheses are shift-invariant p -> p+pi)
+PASS H2 exact: link-reflection Hankel matrix [C(s+t+1)] is NOT PSD for F_+ (C(1)=-5/12<0) but IS PSD for F_-; site-reflection Hankel [C(s+t)] is PSD for both: RP (link) is not implied by Hermiticity, positivity, rationality or Lemma R's hypotheses
+TOTAL: PASS=36 FAIL=0
+HIT: explicit continuous rational exact-GW (R=1/2) operator in 2D and 4D with one simple massless zero and degree 1 (Chern number nonzero), whose only defect is a common denominator vanishing at (pi,..,pi): the 'nonzero Laurent denominator on T^d' hypothesis of Lemma R cannot be weakened to 'continuous'; plus an exact flux-pi example where a free-gapped auxiliary block is singular
+SUMMARY: Lemma R (rational pole-free idempotent => stably trivial bundle) is proved by Hilbert syzygy, the canonical-R scalar+vector sum rule follows, and exact examples show its denominator hypothesis is sharp and that Schur realisations need separate Hermiticity, gauge-stability and reflection-positivity input.
+
+[stderr]
+runtime 7.3s

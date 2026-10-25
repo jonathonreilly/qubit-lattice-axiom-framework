@@ -1,0 +1,34 @@
+PASS A1 four Hermitian band matrices obey the Clifford relations (exact)
+PASS A2 tr(P+ J P+ J)=|v|^2(1-n.n')+2(n.v)(n'.v) and tr(P- J P+ J)=|v|^2(1+n.n')-2(n.v)(n'.v), exact, 36 cases
+PASS A3a first-order shift of E^2=M^2+(1+2e^2K)p^2 equals K p^2/E, group-velocity shift -> K as M/p->0 (exact)
+PASS A3b without the additive-mass counterterm the apparent K changes by M*dE(0)/p^2 (exact identity)
+PASS A4a at c=1 z_t=z_s=1/(8 pi^2) (Feynman-gauge Z2, exact)
+PASS A4b d(z_s-z_t)/dc at c=1 equals -1/(3 pi^2) (exact)  [electron speed runs toward the photon speed] | value=-1/(3*pi**2)
+PASS A5a photon speed shift = kappa*(c-1) to first order in kappa, kappa=e^2 ln(Lambda/mu)/(6 pi^2)  [continuum, textbook coefficient e^2/(12 pi^2) per ln Lambda^2 ASSUMED]
+PASS A5b mismatch (c_e-c_gamma) decays as 1-(e^2/(2 pi^2)) ln(Lambda/mu): coefficient 1/3+1/6=1/2 (exact)
+PASS A6 local relative-speed signs: a=1 -> c_e<c_gamma (photon pair decay side), bare curve -> c_e>c_gamma (electron Cherenkov side); both nonzero | dA/e^2=-0.1387049909 dB/e^2=0.0484687454 ; c_e-c_gamma = -0.012719 , 0.004445
+PASS A6b sign of c_e-c_gamma is unchanged for any photon-term error xi (units e^2) with  -0.1387 < xi (setting a=1)  and  xi < 0.0485 (bare curve); the on-shell photon term has not been computed
+PASS A6c thresholds in the local EFT (prepass formulas): photon pair edge k*=12.54 M (a=1), electron Cherenkov p*=10.61 M (curve), cutoff independent
+PASS B1 independent quadrature reproduces the landed massless integral to 1e-11 | -0.13699805078155
+PASS B2 massless integral + 1/(24 pi^2) reproduces landed Delta_f to 2e-10 | -0.132776334796
+PASS B3 Euclidean z_s-z_t(m) -> Delta_f with |remainder| <= 0.03 m ln(1/m) (m=1e-3..1e-6) | m=0.001:-1.65e-04; m=0.0001:-2.18e-05; m=1e-05:-2.72e-06; m=1e-06:-3.25e-07
+PASS C1 Feynman-gauge (3 pol. - temporal) and Coulomb-gauge (2 pol. + instantaneous) calibrated shifts agree for a^2 in {1,.99,.9767,.9}, tol 1e-8 | a2=1:5.3e-12 a2=0.99:5.2e-12 a2=0.9767:5.2e-12 a2=0.9:4.8e-12
+PASS C2 rest-energy shift dE(0) at m=1e-7 equals landed C_W to 1e-5 (including Feynman split) | rest=0.374347535 seagull=0.341508039 exchange=0.032839497
+PASS C3 K(m,x=2) -> Delta_f with |K-Delta_f| <= 0.06 m ln(1/m); quadrature orders 16/24/32 agree (<=1e-7, <=2e-8 at m=1e-6); denominators negative | m=0.01:-2.36e-03; m=0.001:-3.10e-04; m=0.0001:-3.83e-05; m=1e-05:-4.56e-06; m=1e-06:-5.29e-07; |K32-K24|(1e-6)=8.4e-12
+PASS C3b remainder decreases monotonically with m
+PASS C4 K(m=1e-4,x) is flat in x=1..64 (spread < 5e-6): shift is a pure p^2/E term, group-velocity shift = K | spread=1.35e-06
+PASS C5 without the counterterm the apparent K is 93.7 (identity K_naive-K=M*dE(0)/p^2 holds to 1e-9)
+PASS D1 on-shell shift = [massless hard Euclid integral over t>=eps] + [soft region t<eps = 1/(24 pi^2)] with O(eps^2) remainders (m=1e-6, p=2m) | eps=0.003: soft-1/(24pi^2)=-4.3e-07 hard-massless=-9.4e-08; eps=0.01: soft-1/(24pi^2)=-2.0e-06 hard-massless=1.5e-06; eps=0.03: soft-1/(24pi^2)=-1.5e-05 hard-massless=1.5e-05
+PASS D2 the soft constant is independent of p/M (x=0.5..32) to 2e-6: it is not a regulator artifact | spread=4.8e-09
+PASS E1 energy-shift contribution of photons with |k|_max<eps scales linearly in eps for eps<<p,M (eps=1e-9 vs 1e-8, p=2M=2e-6): IR-finite at order e^2 | ratio=9.9982, soft(1e-8)/K=1.7e-04 (K-normalised)
+PASS E2 Coulomb-gauge residue slope d(dZ)/d ln(1/lambda) equals the infraparticle exponent (1/2pi^2)[ln((1+v)/(1-v))/(2v)-1] at the lattice group velocity, tol 1% | x=1 ratio=1.0000; x=3 ratio=1.0000; x=10 ratio=1.0000
+PASS E3 the residue's IR log is gauge dependent (Feynman -0.0253 vs Coulomb 0.0467 per e-fold) while the energy shift is not (C1): no isolated finite-residue pole, but E(p) and its derivative are defined
+PASS F1 lattice on-shell dK/d ln(p/M) = -c^2 D(c) (continuum Feynman-gauge log coefficient) within 1% for eta=0.02,0.05 | eta=0.02: fitted dK/dln(p/M)=-3.339091e-04 predicted -c^2 D(c)=-3.347608e-04 ratio=0.9975; eta=0.05: fitted dK/dln(p/M)=-8.246618e-04 predicted -c^2 D(c)=-8.255349e-04 ratio=0.9989
+PASS F2 for a=1 (no tree mismatch) there is no p/M trend: |dK/d ln x| < 1e-6 over x=1..300 | K(1)-K(300)=-2.86e-07
+PASS F3 dK/d(a^2) = -0.2627 (m=1e-3), -0.3397 (m=1e-5): its slope per e-fold of ln(1/m) is -0.01673 vs continuum -1/(6 pi^2)=-0.01689 (within 3%); i.e. the O(e^4) feedback of the cone shift is itself the leading-log running
+PASS G1 for a^2=0.9767 (net-subluminal organization) all emission denominators stay negative up to p/M=1e4 (stable-branch expansion is uniform in p/M)
+PASS G2 for a=1 the tree electron radiates off-axis for |p| >~ sqrt(m) (denominator turns positive: |p|=0.6 sqrt(m): -1.2e-11, 1.5 sqrt(m): 2.6e-07/1.7e-07) -- the fixed-order O(e^2) coefficient is not defined there; the axis stays marginal (-4.8e-14)
+PASS G3 for the bare-curve setting (a^2 = 1+e^2 C_W = 1.0343) the tree electron is superluminal on the axis (denominator > 0: 3.7e-06): real-energy fixed order fails; width must be computed
+TOTAL: PASS=31 FAIL=0
+HIT: electron-sector bridge at order e^2 shown on the lattice: calibrated on-shell shift = massless hard integral + physical soft constant 1/(24 pi^2) (O(eps^2) remainders), gauge-equal for all cone speeds, remainder <= 0.06 m ln(1/m); p/M trend for a!=1 is the continuum log running -c^2 D(c) (D'(1)=-1/(3 pi^2), mismatch rate e^2/(2 pi^2) with photon half assumed); fixed order ends at |p|~sqrt(M) off-axis; photon-sector bridge NOT done
+SUMMARY: For the electron sector at order e^2, the gauge-independent, mass-calibrated on-shell shift equals the landed local coefficient Delta_f (hard massless integral + 1/(24 pi^2) soft constant) with a computed O(m ln m) remainder, its p/M trend at nonzero cone mismatch is the continuum log running (so the local number is the cutoff-scale value, not the physical low-energy one), and the fixed-order expansion's domain ends at |p|~sqrt(M); the photon-side on-shell bridge and e^4 non-log remainders remain open (runtime 91 s).

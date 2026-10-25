@@ -1,0 +1,60 @@
+{
+  "task_id": "J:derive:review-20261012-wilson-physical-bridge:a1",
+  "source_branch": "physics-loop/toe-wilson-observation-matching-20261012",
+  "source_head": "6b7201df48ef9c33be7d66121e14a134ae5fe1de",
+  "main_commit_read": "a77a3449c91a753b06ce2a63876cd460b62cb4cf",
+  "source_objects": [
+    {
+      "path": ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/interrupted-physical-bridge/README.md",
+      "sha256": "fc2b908e5da455a19ec857bafa56dd287e1ba68b3f9350c53d489e30991de756",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/interrupted-physical-bridge/SNAPSHOT_MANIFEST.json",
+      "sha256": "aaa2a650d23d3a46e42be6a8d0151dea2d843fb8e13a9f7a0eb9385aa437f6f4",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/interrupted-physical-bridge/wilson-physical-bridge/TARGET.md",
+      "sha256": "2dac61a376711881f1549d7f5f85554b72bd7bba912afef249fabcef1c1194d4",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/interrupted-physical-bridge/wilson-physical-bridge/AUTHOR_DERIVATION_v1.md",
+      "sha256": "05f7c3ea85cc01785750e369f44424d94ebf56b6e778b3b25e94cff1eb1d757c",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/interrupted-physical-bridge/wilson-physical-independent/INDEPENDENT_PRE.md",
+      "sha256": "1d08e0895e9cbecba7d348051329709dde8e16b98876ec2456cb097b61b9a6df",
+      "verified": true
+    }
+  ],
+  "extra_objects_read_not_required": [
+    {
+      "path": ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/interrupted-physical-bridge/wilson-physical-bridge/onshell_probe.py",
+      "sha256": "71d84d39e1aa400aaaf4b33654fd5041b384d271ed3e06d1314c9fc4a7ed2937",
+      "verified": true,
+      "note": "matches SNAPSHOT_MANIFEST.json; read for the author's on-shell formulas"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/interrupted-physical-bridge/wilson-physical-bridge/mass-sequence-v1.json",
+      "sha256": "73a503bca1b8f7a5d84eb2fb92a9fb129f13ea6940b74d5949c81f143a0908d3",
+      "verified": true,
+      "note": "matches SNAPSHOT_MANIFEST.json; author's own m-sequence already shows K -> Delta_f (m=1e-5: -0.132780892)"
+    },
+    {
+      "path": "docs/SPATIAL_WILSON_OBSERVATION_MAP_AND_MASS_MATCHING_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "35b94afb690dda8805a1ee1609baeda881396ba6c0a54589b9c6b526a5d62e3b",
+      "verified": true,
+      "note": "landed note on main a77a3449c91a753b06ce2a63876cd460b62cb4cf (landed in 256e2805c3); supplies the comparator numbers (C_W, Delta_f, Delta_gamma); read in full"
+    }
+  ],
+  "axiom_and_registry_read": [
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md"
+  ],
+  "first_unresolved_step": "S9 of ATTEMPT.md: the photon-side on-shell bridge. The photon branch (vacuum polarization of the filled Wilson sea at calibrated mass M, evaluated on the photon mass shell k0=omega(k), with the pair edge) has not been computed on shell; Delta_gamma exists only as a Euclidean local coefficient and the photon half of the mismatch running is a continuum argument. Until it is done the relative speed c_e - c_gamma (the only quantity a time-of-flight comparison sees) is not bridged, no calibration/test envelope is frozen, and the e^4 non-logarithmic remainder and the width of the unstable branch (bare-curve Cherenkov side; a=1 photon-decay side) remain open.",
+  "scope_of_result": "electron sector, order e^2, continuous-time spatial Wilson action, single one-electron sector; same-family, unrefereed",
+  "ownership": "no claim.py ownership taken; no repository edits"
+}

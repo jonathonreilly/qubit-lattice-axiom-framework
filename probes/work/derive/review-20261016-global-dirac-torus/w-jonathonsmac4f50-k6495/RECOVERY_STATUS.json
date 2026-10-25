@@ -1,0 +1,22 @@
+{
+  "task_id": "J:derive:review-20261016-global-dirac-torus:a1",
+  "source_branch": "claude/toe-campaign-24h-20261015",
+  "source_head": "b0178fa585cad5ac9e02e70dff2175593dbc5dab",
+  "source_objects": [
+    {
+      "path": "docs/TWO_QUBIT_SITE_UNFREEZES_THE_CUBIC_TICK_DOUBLER_FREE_DIRAC_WALK_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+      "sha256": "58723d2c9fd65eda81cf8b1859c5aff7ea62b0f129055d3753888a8c5811156c",
+      "verified": true
+    },
+    {
+      "path": "scripts/two_qubit_cubic_dirac_tick_2026_10_16.py",
+      "sha256": "10a87c0b6902abdeaad856762e3b7a3a1eb5e5c59109dfacccd0e7c9ebc6539f",
+      "verified": true
+    }
+  ],
+  "main_commit_read": "a77a3449c91a753b06ce2a63876cd460b62cb4cf",
+  "main_note_differs_from_frozen": true,
+  "main_differences_used": "corrected axis-doubler wording (0<|s|<1), corrected k^6 coefficient, Theorem 8 demoted to archived candidate; none touches the Gram matrix G(b) used here",
+  "scope_done": "massless-normalised members (F(0) = e_f) of the Clifford family, all G(b) PSD rank <= 3 including b = 0, rank-2 members and s = 1; complete zero/pi touching sets (computer-assisted exact elimination + PSD exclusions)",
+  "first_unresolved_step": "ATTEMPT.md step 12: members normalised at another point of the zero set of g (F(k1) = +-F(k2) with both k1, k2 away from k = 0), i.e. the two-point version G(phi(k1) -+ phi(k2)) = 0 on non-TRIM zeros of g; only the TRIM-TRIM pairs are done. Also not covered: two-qubit covariant walks outside the Clifford form (source universality is numerical), and M/R-member PSD certification is 60-digit eigenvalue evidence rather than interval arithmetic."
+}

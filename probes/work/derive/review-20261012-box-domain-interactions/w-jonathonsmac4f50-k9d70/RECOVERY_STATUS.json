@@ -1,0 +1,37 @@
+{
+  "source_branch": "claude/candidate-law-20261008",
+  "source_head": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+  "source_objects": [
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R7-1_report.md",
+      "sha256": "0c88e3ea3c3f219f9f55421e7ff381032005be434ac065d750890bebcbf29929",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R7-1_referee_verdict.md",
+      "sha256": "4f6236c4a58a9a783a668efa291aa8cea69a9241e10464cdccb64fecd44961de",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-1_report.md",
+      "sha256": "067b6d7cfdc5ce72c38535629faeb0af42386fe43f3782d11c025e715f3516a0",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-1_referee_verdict.md",
+      "sha256": "55250319687b8a9f57a7f93a74c7a9b019caef09cb306521c80df6a941062205",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R8-1/r81_common.py",
+      "sha256": "13295e0696e6c0851d7127fcd5e8a4e411b84a16cd454ac16c91cfd86e7747b0",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R8-1/r81_d2_lattice_algebra.py",
+      "sha256": "3ba4f59edd5e3c33de3f7cde97fffb1e233fa9d2923af01c50db32857b84b050",
+      "verified": true
+    }
+  ],
+  "first_unresolved_step": "Step U: a direct lattice-native evaluation of the interacting d=2 Poincare relations (all 15) with residuals that demonstrably converge in L and the P-grid; R8-1's direct run stalls at 7e-3 to 0.35 and this attempt's chart/fibre identities (60 digits, exact symbolic) do not replace it. Behind it: step V, cluster-separable three-body terms (V3,Y3) on the lattice box (equations stated, not solved); step W, the d=3 interacting kernel and leakage."
+}

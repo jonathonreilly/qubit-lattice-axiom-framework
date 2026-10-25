@@ -1,0 +1,54 @@
+# --- A. exact checks
+PASS A1 24 orderings; vertex monomial types are exactly dec,vac,22,31,idec,ivac (+h.c.); 10 use only toy-N outer types, 14 need 22 or 31 | orderings=24 toyN-subset=10 new=14
+PASS A1b A,B always cross a cut together; U,C,D always together; every cut crosses an internal line (no degenerate denominators)
+PASS A2 exact RS4 (Fractions, complex kernels, L=2) == 24-ordering Wick formula: all bosons | value~-2.7558e+01 imag=0 5.5s
+PASS A2 exact RS4 (Fractions, complex kernels, L=2) == 24-ordering Wick formula: A,B fermions | value~-2.7558e+01 imag=0 2.3s
+PASS A2 exact RS4 (Fractions, complex kernels, L=2) == 24-ordering Wick formula: U,C fermions | value~-2.7558e+01 imag=0 4.2s
+PASS A2 exact RS4 (Fractions, complex kernels, L=2) == 24-ordering Wick formula: A,B,U,C fermions | value~-1.1206e+02 imag=0 1.1s
+PASS A2 exact RS4 (Fractions, complex kernels, L=2) == 24-ordering Wick formula: X,A fermions | value~-1.0673e+01 imag=0 1.7s
+PASS A2 exact RS4 (Fractions, complex kernels, L=2) == 24-ordering Wick formula: X,Y,U fermions | value~5.6092e+00 imag=0 0.4s
+PASS A2 exact RS4 (Fractions, complex kernels, L=2) == 24-ordering Wick formula: all fermions | value~2.2789e+00 imag=0 0.2s
+PASS A2 exact RS4 (Fractions, complex kernels, L=2) == 24-ordering Wick formula: all fermions, p=1 | value~-1.4892e-01 imag=0 0.2s
+PASS A2 exact RS4 (Fractions, complex kernels, L=2) == 24-ordering Wick formula: A,C,Y fermions, p=1 | value~5.9801e+02 imag=0 0.4s
+PASS A2 exact RS4 (Fractions, complex kernels, L=3) == 24-ordering Wick formula: all fermions, L=3 | value~-9.3556e+02 imag=0 9.9s
+PASS A3 control: dropping the complex conjugate on h.c. vertices is rejected
+PASS A3 control: bosonic signs for an all-fermion model are rejected
+PASS A3 control: bosonic signs for X,A fermions are rejected
+PASS A3 control: bosonic signs for the sign-trivial model A,B fermions are NOT rejected (signs are all +)
+PASS A4 exact: a species-level rephasing of the six crossing phases leaves the mixed RS4 coefficient unchanged | value~-8.7284e+00
+PASS A4b gauge-invariant phases: the null space of the rephasing action is 2-dimensional (J1, J2), and every ordering carries phase theta = a*J1 + b*J2 with (a,b)=(0,0) in 12 orderings, +-(0,1) in 3 each, +-(1,1) in 3 each | (a,b)->count [((-1, -1), 3), ((0, -1), 3), ((0, 0), 12), ((0, 1), 3), ((1, 1), 3)]; J1 = phi_dec-phi_vac-phi_22+phi_31, J2 = -phi_dec+phi_22-phi_idec+phi_ivac
+PASS A5 over all 32 parity-allowed statistics assignments: the 24 ordering signs are all +1 exactly when X,Y are bosons and an even number of {A,B} and of {U,C,D} are fermions; all others have 12 or 16 negative orderings | sign-trivial sets: ['-', 'AB', 'ABCD', 'ABCU', 'ABDU', 'CD', 'CU', 'DU']; all-fermion negatives=12
+PASS A6 all-boson Hamiltonian: coherent-state energy (variational upper bound on the ground energy) -> -infinity already for one mode per species | E(10^3)=-2.000e+11
+PASS A7 one-loop identity h/(E-W)+1/(E+W) = 2CW/(E^2-W^2) for h=(W(1+2C)-E)/(W+E) (sympy)
+PASS A7b h at fixed invariant masses (m_X=1, M_cluster=2) differs between frames p=0,1,5: it is not a function of the invariant masses (frame-dependent, an imposed tuning) | h=1.6666667, 1.4502965, 1.0545861
+# --- B. continuum checks (1+1 D)
+PASS B1 INV-3F: sum_nodes w * 2W * f(W^2 - q^2) is the same at q_Y = 0, 0.5, 1.0, 1.5 (frame independence of the 3-body spectral density) | max relative spread 3.61e-06 (zeroth moment 3.407669e+00)
+PASS B2 local reduced graph (S_mu, Y, Z_M lines): the 24-ordering sum equals MINUS the Euclidean Feynman integral (Feynman parameters) and is p-independent for p=0..1 | max|ratio+1|=5.5e-14, p-spread=3.9e-16
+PASS B3 model M* (Y-confined P2, C1=1.2, legs |q|<=1.742): total two-loop m^2(0) agrees between momentum Gauss-Legendre and rapidity trapezoid | m2(0): GL -1.153465213e-02  trap -1.153467290e-02  (4s)
+PASS B3b relative p-dependence at p=m_X/3 of the bosonic two-loop m^2 is small and the two quadratures agree: eps = (m2(p)-m2(0))/|m2(0)| | eps trap=1.0373e-05  GL=1.0201e-05
+# order of limits table: eps(C1; mass scale s, form-factor scale lam), p = s*m_X/3 (rapidity fixed), trapezoid
+   C1=0.50  eps=4.2096e-04  m2(0)=-1.0986405e-02  max leg momentum 1.128  (5s)
+   C1=0.70  eps=1.3837e-04  m2(0)=-1.1369298e-02  max leg momentum 1.294  (4s)
+   C1=0.90  eps=4.6654e-05  m2(0)=-1.1485367e-02  max leg momentum 1.458  (4s)
+   C1=1.20  eps=1.0369e-05  m2(0)=-1.1534644e-02  max leg momentum 1.742  (3s)
+   C1=1.60  eps=1.8030e-06  m2(0)=-1.1548945e-02  max leg momentum 2.183  (4s)
+   C1=2.00  eps=4.0358e-07  m2(0)=-1.1552086e-02  max leg momentum 2.635  (10s)
+PASS B4a cutoff limit: eps(C1) decreases strictly and fast with C1 (4e-4 at C1=0.5 down to <1e-6 at C1=2) and m2(0) tends to the unconfined value | eps=['4.21e-04', '1.38e-04', '4.67e-05', '1.04e-05', '1.80e-06', '4.04e-07']
+   C1=0.70 mass scale s=1.0    eps=1.3837e-04  m2(0)=-1.13693e-02  (4s)
+   C1=0.70 mass scale s=0.5    eps=5.4056e-06  m2(0)=-1.73512e+00  (4s)
+   C1=0.70 mass scale s=0.25   eps=8.8984e-08  m2(0)=-1.38402e+02  (25s)
+PASS B4b infrared direction (all masses scaled by s at fixed rapidity, fixed C1=0.7 and Lambda): eps falls by more than a factor 10 per halving (it reaches the ~1e-7 quadrature floor at s=1/4) while |m2(0)| grows by more than 50 per halving | eps(s=1)=1.38e-04, eps(s=.5)=5.41e-06, eps(s=.25)=8.90e-08; m2(0)=-1.14e-02,-1.74e+00,-1.38e+02
+   C1=1.20 form-factor scale lam=1.0   eps=1.0369e-05  m2(0)=-1.15346e-02  max legs 1.74,1.70 (3s)
+   C1=1.20 form-factor scale lam=2.0   eps=1.2472e-05  m2(0)=-2.70773e-02  max legs 2.39,2.72 (13s)
+   C1=1.20 form-factor scale lam=4.0   eps=1.3317e-05  m2(0)=-3.36883e-02  max legs 3.72,4.64 (25s)
+PASS B4c form-factor scale Lambda -> larger at fixed C1=1.2: eps stays finite, positive and below 1e-4 (no run-away) over lam=1,2,4 | eps=['1.04e-05', '1.25e-05', '1.33e-05']
+PASS B5a sign-trivial assignments (A,B fermions; U,C fermions) reproduce the bosonic ordering sum bit for bit (so the P2 closure theorem applies to them)
+PASS B5b all-fermion (finite-per-site) model: total = bosonic total - 2 S_neg exactly, S_neg = sum of the 12 sign-flipped orderings | S_neg(0)=-5.59112e-03 S_neg(p)=-5.58159e-03; fermion m2(0)=-3.5243e-04 vs boson -1.1535e-02
+PASS B5c all-fermion model M* is NOT closed: relative p dependence at p=m_X/3 is more than 1e-2 (and equals -2 dS_neg/|m2_F(0)| + the bosonic part) | eps_F=-5.377e-02; relative S_neg drift 1.71e-03; boson eps 1.04e-05
+PASS B5d ordering-truncated subset (the 10 toy-N orderings) of the SAME kernels is far from closed, the complete 24 is not: the truncated failure is a missing-ordering effect | eps(10 orderings)=-6.014e-03, eps(24)=1.037e-05
+PASS B6 the one-loop tuning h=(3W-E)/(W+E) applied to the two decay vertices (outer X->YAB, inner Y->UCD, bare-shell arguments) does NOT close the all-fermion two-loop dispersion | all-fermion eps with h = -3.657e-02 (without h -5.377e-02); bosonic sum with the same h factors 2.39e-03
+PASS B5e kernel phases: the dispersion defect depends on the invariants (J1,J2); J1=J2=0 gives the closed case, any of J = pi/2 breaks closure at the 1e-3..1e-1 level; imaginary parts cancel (Hermiticity) | (J1,J2)=(0.00,0.00): eps=1.04e-05; (J1,J2)=(0.00,1.57): eps=-4.57e-03; (J1,J2)=(1.57,0.00): eps=-6.72e-03; (J1,J2)=(1.57,1.57): eps=-2.23e-01
+TOTAL: PASS=35 FAIL=0
+# runtime 141s
+HIT: complete 8+4-monomial crossing model M* (kernel c(q_Y)Phi(s_AB) on dec,vac,22,31; inner Psi(U,C,D)) has exact two-loop covariance when unconfined (c=1, bosonic reduction + Feynman identity) for every statistics assignment with X,Y bosonic and even fermion number in {A,B} and in {U,C,D} (24 ordering signs all +1, exact Fock + enumeration), a box-confining Y-plateau leaves a controlled defect eps(C1)=4.2e-04..4.0e-07 for C1=0.5..2.0 (two disjoint quadratures), while the all-CAR (finite-per-site) assignment is not closed (eps=-5.4e-02; defect = -2 S_neg over 12 sign-flipped orderings)
+SUMMARY: the complete crossing set (24 orderings, CAR signs and complex conjugates verified in exact finite Fock space) closes the two-loop dispersion exactly (bosonic reduction) and up to an exponentially small controlled defect when box-confined, for every statistics with bosonic X,Y and even fermion pairs, but not for the all-CAR finite-per-site assignment, whose defect is -2 times the sum of 12 sign-flipped orderings.

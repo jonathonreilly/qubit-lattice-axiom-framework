@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20261012-crossing-complete-radiative-closure:a1",
+ "type": "judgment",
+ "lane": "review-science-20261012",
+ "worker": "w-jonathonsmac4f50-k60a4",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261012-crossing-complete-radiative-closure/w-jonathonsmac4f50-k60a4/check.py",
+ "seed": 65736,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "026fa1a3",
+ "started_utc": "20261025T220216Z",
+ "elapsed_s": 142.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "the complete crossing set (24 orderings, CAR signs and complex conjugates verified in exact finite Fock space) closes the two-loop dispersion exactly (bosonic reduction) and up to an exponentially small controlled defect when box-confined, for every statistics with bosonic X,Y and even fermion pairs, but not for the all-CAR finite-per-site assignment, whose defect is -2 times the sum of 12 sign-flipped orderings."
+ },
+ "review": "Read the log after the run: check.py (about 2 minutes) printed a HIT: a complete crossing model with explicit 2-to-2 and reverse-decay vertex functions whose 24-ordering formula matches an exact rational finite-Fock fourth-order perturbation calculation in 10 cases (derived Wick sign rule, negative controls rejected); the two-loop dispersion closes exactly when X and Y are bosonic and the {A,B} pair and {U,C,D} cluster each hold an even number of fermions, closes up to a controlled exponentially small defect when box-confined, and does NOT close for the all-CAR finite-per-site assignment (defect -2 times a sum over 12 sign-flipped orderings, -5.4e-2; the one-loop repair leaves -3.7e-2). ATTEMPT.md stops at step 7 (a closing vertex completion for fermionic X and Y; d = 3, lattice dispersion outside the box and microcausality open); the old-fashioned-perturbation = Feynman identity is numerically verified, not re-derived. Same-family (Claude Sonnet 5.5), unrefereed.",
+ "what": "First reconcile the active R9-7 complete-crossings attempt and completed claims. Define the missing 2-to-2 and reverse-decay vertex functions before testing the two-loop coefficient. Account for every vacuum-relative ordering, CAR signs and complex conjugates; verify with a separate exact finite-Fock implementation and a disjoint quadrature at fixed rapidity. The existing toy-N failure is ordering-truncated, not a class no-go. The h(E,W) factor is frame-dependent; call it an imposed tuning. Preserve strict spectator plateau inequalities and distinguish finite-volume extensive stability from an infinite-volume Fock Hamiltonian. Deliver a complete specified crossing model with a controlled two-loop covariance result or counterexample, including cutoff and infrared order of limits. Owner-requested work transfer to the existing maximum-thinking J campaign. Check current main, completed attempts, active campaign branches and claim.py ownership before claiming; continue or reconcile an existing attempt rather than duplicate it. Deliver numbered PROVED/CHECKED/ASSUMED steps, a self-contained disjoint check.py and RECOVERY_STATUS.json with exact source hashes under probes/work/derive/<problem>/<worker>/. Commit the checker before run_probe.py. Emit SUMMARY and HIT only for a new demonstrated result or defect. Ordinary independent confirmation remains required before retention. This catalog addition launches no workers, changes no budgets, creates no PR snapshots and adopts no historical audit/referee verdict.",
+ "stdout_sha256": "faa42f60df9144bd47f6c3d57a3f8b666604efaa3391edf61534520d90e60ba0",
+ "stdout_tail": " eps with h = -3.657e-02 (without h -5.377e-02); bosonic sum with the same h factors 2.39e-03\nPASS B5e kernel phases: the dispersion defect depends on the invariants (J1,J2); J1=J2=0 gives the closed case, any of J = pi/2 breaks closure at the 1e-3..1e-1 level; imaginary parts cancel (Hermiticity) | (J1,J2)=(0.00,0.00): eps=1.04e-05; (J1,J2)=(0.00,1.57): eps=-4.57e-03; (J1,J2)=(1.57,0.00): eps=-6.72e-03; (J1,J2)=(1.57,1.57): eps=-2.23e-01\nTOTAL: PASS=35 FAIL=0\n# runtime 141s\nHIT: complete 8+4-monomial crossing model M* (kernel c(q_Y)Phi(s_AB) on dec,vac,22,31; inner Psi(U,C,D)) has exact two-loop covariance when unconfined (c=1, bosonic reduction + Feynman identity) for every statistics assignment with X,Y bosonic and even fermion number in {A,B} and in {U,C,D} (24 ordering signs all +1, exact Fock + enumeration), a box-confining Y-plateau leaves a controlled defect eps(C1)=4.2e-04..4.0e-07 for C1=0.5..2.0 (two disjoint quadratures), while the all-CAR (finite-per-site) assignment is not closed (eps=-5.4e-02; defect = -2 S_neg over 12 sign-flipped orderings)\nSUMMARY: the complete crossing set (24 orderings, CAR signs and complex conjugates verified in exact finite Fock space) closes the two-loop dispersion exactly (bosonic reduction) and up to an exponentially small controlled defect when box-confined, for every statistics with bosonic X,Y and even fermion pairs, but not for the all-CAR finite-per-site assignment, whose defect is -2 times the sum of 12 sign-flipped orderings.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k60a4",
+  "at_utc": "20261025T220439Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Accepted as a logged scoped partial result; the non-closure for the all-CAR assignment is a numerical finite-Fock result and the sign-trivial classes need bosonic species. The R9-7 report exists only at a later branch tip and was used as read-only context. Carried in the probe closing record; no issue filed.",
+  "by": "w-jonathonsmac4f50-k60a4",
+  "at_utc": "20261025T220439Z"
+ }
+}

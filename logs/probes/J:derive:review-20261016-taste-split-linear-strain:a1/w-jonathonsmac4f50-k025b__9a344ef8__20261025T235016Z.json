@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20261016-taste-split-linear-strain:a1",
+ "type": "judgment",
+ "lane": "review-science-20261016",
+ "worker": "w-jonathonsmac4f50-k025b",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261016-taste-split-linear-strain/w-jonathonsmac4f50-k025b/check.py",
+ "seed": 72216,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "9a344ef8",
+ "started_utc": "20261025T235016Z",
+ "elapsed_s": 52.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "exact torus rebuild plus pair-group theory shows rotations x one-site translations allow only K(h)=beta*diag(h_aa) at first order (zero for T2g and body-diagonal splitting, nonzero beta for axis splitting in an explicit exact model, T2g reopened only when translation covariance is broken); elapsed 51 s"
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 54/54 PASS; the O(sigma) selection rule K(h)=beta*diag(h_aa) is proved only under stated premises P1-P5 (P3(ii), commutation of the real one-loop law with the translation pairs, untested); the beta=1/8 case is a toy exact torus functional, not the lane's law; source scripts missing from the frozen branch.",
+ "what": "The preregistered safe Hessian test does not constrain a first derivative. Reconstruct the branch-dependent linear responses and determine whether a physical symmetry forces a vanishing coefficient, or provide a controlled explicit counterexample. Keep the fixed-axis selector and Hamming-splitting scale supplied; no grid-scale lambda is forced. A finite response in one model is not an experimental exclusion or a full flavour derivation. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise.",
+ "stdout_sha256": "11c96c14dcb9b9a24115495fa79a47b83c311e065bd40e760191b6001bb0d28a",
+ "stdout_tail": "ta*h_zz; face-diagonal unit n=(1,1,0)/sqrt2 with the SAME strain: slope = -(1/2)*beta*h_zz\nPASS E4 body-diagonal splitting with E_g strain diag(1,-1,0): first-order twin-mixing (direction rotation) is NONZERO even though the mass slope is 0 (matches TW2 (iii) 'odd part')\nNOTE: lane B'(tet, axis z) = -2270797/50000000 per e^2 (TW2 report 3(c) table row B' tet; referee -0.0454159364) ; the selection rule predicts:\nNOTE:   same strain, face-diagonal n=(1,1,0): 2270797/100000000 (= -B'/2); B1 strain, axis: 0 (TW2: exactly even); body diagonal: 0 for all strains; any T2g: 0\nPASS E6 prediction ratio face-diagonal/axis for the tetragonal strain is -1/2 (arithmetic only; NOT tested against lane code)\nTOTAL: PASS=54 FAIL=0\nHIT: selection rule with translation pairs (scoped): at O(sigma) the first-order strain response of the face-diagonal taste-split twin masses is K(h)=beta*diag(h_aa) -- T2g shears and ALL body-diagonal splittings are forced to zero, the axis case is allowed with one free constant beta that is nonzero in an exact torus model (counterexample to 'symmetry forces zero'); conditional on premises P1-P5 of ATTEMPT.md, a toy functional, not the lane's one-loop value\nSUMMARY: exact torus rebuild plus pair-group theory shows rotations x one-site translations allow only K(h)=beta*diag(h_aa) at first order (zero for T2g and body-diagonal splitting, nonzero beta for axis splitting in an explicit exact model, T2g reopened only when translation covariance is broken); elapsed 51 s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k025b",
+  "at_utc": "20261025T235115Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Scoped conditional selection rule (T2g and body-diagonal splits vanish at first order given translation pairs); corrects source line 172. Same-family, unrefereed; the real strained one-loop law was not rerun.",
+  "by": "w-jonathonsmac4f50-k025b",
+  "at_utc": "20261025T235115Z"
+ }
+}

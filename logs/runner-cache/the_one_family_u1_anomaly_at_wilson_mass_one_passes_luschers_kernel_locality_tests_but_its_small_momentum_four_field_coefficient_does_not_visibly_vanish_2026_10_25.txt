@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/the_one_family_u1_anomaly_at_wilson_mass_one_passes_luschers_kernel_locality_tests_but_its_small_momentum_four_field_coefficient_does_not_visibly_vanish_2026_10_25.py
+runner_sha256: 735f1da3a577c40dd696b0e04080de3e30d224683a842df7e986b2e924d1733c
+input_fingerprint_sha256: 4b174c9b8b682db1b34286929102a3ef39ac623bd1eb51b8fea146686eb04f0e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 75.47
+status: ok
+----- stdout -----
+PASS: P0 m0 = 1.0, 4^4: block (p2,p4) density = full dense 4D density (dim 1024); per block GW and sign(H)^2 = 1  [|q_block - q_full| 7e-15, GW/proj 4e-15, 0.8s]
+PASS: K2 laptop re-run = embedded Mac-mini values: order-2 kernels on 6 x 24 x 6 x 24 (m0 = 1.0 and 0.6) and the single-mode 16 / doublet coefficients on 8 x 24 x 8 x 24 (m0 = 1.0), which also equal luscher-L8's m0 = 1.0 values  [kernels 2e-13, 2e-13; single-mode 3e-14; vs L8 3e-14; 75s]
+m0 = 1.0 order-2 kernel (T = 24): envelope max|Pi| at d = 1..L/2-1; floor; xi (fit d = 2..d_max); dS = sum Q/gamma - 1
+  L= 6: 8.0e-03 8.5e-04  floor 8e-10  dS -7.947%
+  L= 8: 8.0e-03 8.6e-04 1.1e-04  floor 9e-10  dS -1.835%
+  L=10: 8.0e-03 8.6e-04 1.1e-04 1.5e-05  floor 6e-10  xi 0.490 (d<=4)  dS -0.433%
+  L=12: 8.0e-03 8.6e-04 1.1e-04 1.5e-05 2.2e-06  floor 2e-09  xi 0.503 (d<=5)  dS -0.105%
+  L=16: 8.0e-03 8.6e-04 1.1e-04 1.5e-05 2.3e-06 3.8e-07 6.6e-08  floor 8e-10  xi 0.529 (d<=7)  dS -0.006%
+PASS: P1 pre-set MET: [L8] kernel decay lengths at L = 10, 12, 16 agree within 10%, and |Q~_12 - Q~_16| at (pi/2, pi/2) <= 1e-3 gamma  [xi spread 7.7%; common momentum 1.3e-05 gamma]
+PASS: P1' pre-set MET: [task] the Luscher-split current kernel K1 decays exponentially with decay lengths at L = 12 and 16 within 20%  [xi(K1) L12 0.525 (d<=5), L16 0.568 (d<=7)]
+PASS: P2 pre-set MET: [L8] sum_ab Q within 1% of 2/(4 pi^2) for every L >= 10  [L6 -7.947%, L8 -1.835%, L10 -0.433%, L12 -0.105%, L16 -0.006%]
+PASS: P3 pre-set MET: [L8] on L = 16 the current tails at distance >= 7 are < 1e-3 gamma and xi(K1), xi(K3) are within 15% of xi(Pi)  [tail 3e-06 gamma; xi(K1) 0.568, xi(K3) 0.570 (d<=6), xi(Pi) 0.529]
+PASS: P4 pre-set NOT MET: [L8] the doublet's would-be gauge-invariant current has a NON-decaying tail |K3'(L/2)| = |gamma_L| within 2% on every L = 6..16  [L6 -7.95%, L8 -1.83%, L10 -0.43%, L12 -0.10%, L16 -0.01%]
+PASS: P4' pre-set MET: [task] the same tail within 10% on every L = 6..16  [max |dev| 7.95%]
+m0 = 1.0 diagonal p = k: s = sin^2(p/2), L, R16, R_L/gamma_L:
+  0.017 L24 +1.35e-06 0.963; 0.038 L16 -9.03e-07 0.919; 0.067 L12 -9.51e-06 0.863; 0.067 L24 -9.00e-06 0.863; 0.146 L16 -4.47e-05 0.724; 0.146 L24 -4.44e-05 0.724; 0.250 L12 -8.74e-05 0.574; 0.309 L16 -1.03e-04 0.500; 0.500 L12 -1.38e-04 0.305; 0.500 L16 -1.38e-04 0.305; 0.750 L12 -7.34e-05 0.124; 0.933 L12 -2.29e-05 0.029
+PASS: P4b pre-set MET: [L8] pooled cubic fit of R_L (L = 12 grid + L = 16 points) has intercept within 3% of gamma_L  [intercept/gamma_L 0.9897 (fit residual 1e-04, 33 points)]
+PASS: P5 pre-set NOT MET: [L8] R16 fitted intercept <= 0.01 |gamma_L| and <= 0.05 max|R16|, and its |p|-exponent on the L = 16 diagonal (n = 1, 2) in [1.6, 2.4]  [intercept +3.1e-05 (0.01|gamma_L| 1.3e-04, 0.05 max|R16| 7.3e-06); exponent 5.79]
+PASS: P5' pre-set NOT MET: [task] on L = 24 (T = 16) the 16's diagonal coefficient at n = 1, 2, 3 has one sign and vanishes like |p|^a with fitted a >= 1.8  [R16 +1.35e-06, -9.00e-06, -4.44e-05; exponent 3.19; R16/gamma_L at n=1 1e-04]
+PASS: P5b pre-set NOT MET: [L8] eps-scaling exponent of R16 within 0.3 of 4 at (12,1,1), (16,1,1), (16,2,2)  [(12, 1, 1): R16 -9.51e-06 / +2.19e-07 -> nan; (16, 1, 1): R16 -9.03e-07 / +2.10e-06 -> nan; (16, 2, 2): R16 -4.47e-05 / -8.91e-06 -> 4.33 (nan = opposite signs)]
+PASS: P6 pre-set MET: [L8] |R16(12,3,3) - R16(16,4,4)| <= 1e-2 max|R16|  [5.2e-04]
+PASS: V pre-set NOT MET: [volume] (16,1,1) volume checks: T = 16 vs T = 32 and a pi/16 holonomy shift each within max(10% |R16|, 1e-5 |gamma_L|)  [T16 -7.064e-07, T24 -9.032e-07, T32 -9.031e-07, shifted -9.026e-07; tol 1.3e-07]
+m0 = 0.6 kernel: dS L6 -17.75%, L8 -4.47%, L10 -1.00%, L12 -0.21%, L16 -0.01%; xi L10 0.568, L12 0.566, L16 0.562
+PASS: C1 pre-set NOT MET: [control] mu(0.6) in [0.353, 0.530] (mu/g within 20% of 0.736, g = min(m0, 2 - m0)) and mu(1.6) < mu(0.6) < mu(1.0); the rival 'slow scale = 2 - m0 only' needs mu(0.6) > mu(1.0)  [mu(1.6) 0.298, mu(0.6) 0.768 (mu/g 1.280), mu(1.0) 0.716 (L8 ref 0.727)]
+PASS: C2 pre-set MET: [control] xi_16(Pi) ordering xi(1.0) < xi(0.6) < xi(1.6)  [xi(1.0) 0.529, xi(0.6) 0.562, xi(1.6) 0.914]
+m0 = 0.6 (16,n,n), n = 1, 2 (reported, no criterion): R16 -2.04e-04, -4.03e-04; R_L/gamma_L 0.879, 0.615
+post-hoc split R16 = c4 eps^2 + c6 eps^4 (m0 = 1.0): s, L, c4, c6, c6 eps^2/c4 at eps = 0.3:
+  0.017 L24 c4 +1.42e-04 c6 -1.41e-03 ratio -0.89; 0.038 L16 c4 +1.28e-04 c6 -1.53e-03 ratio -1.08; 0.067 L12 c4 +4.82e-05 c6 -1.71e-03 ratio -3.19; 0.146 L16 c4 -3.63e-04 c6 -1.48e-03 ratio +0.37
+PASS: H1 post-hoc: the leading coefficient c4 does NOT visibly vanish at the smallest momenta (c4 > 1e-4 at s = 0.017 and 0.038, flat within 15%); c6 ~ -1.5e-3 nearly cancels it at eps = 0.3 (|c6 eps^2/c4| in [0.8, 1.2]), so L8's post-hoc 'faster than p^2' was an eps-order cancellation  [c4(0.017) 1.417e-04, c4(0.038) 1.276e-04; c4/|gamma_L| 1.1%]
+PASS: H2 post-hoc: x2/x4 extent at L = 24, (1,1): T = 8 gives R16 > 100x the T = 16 value (Polyakov-loop artefact); at L = 16, T = 24 and 32 agree to < 1e-9 but T = 16 is off by ~2e-7 (L = 24 points: T = 16 caveat)  [L24: T8 +1.98e-04, T16 +1.35e-06; L16: T16-T24 +2.0e-07, T32-T24 +7e-11]
+PASS: H3 post-hoc (control reading): the zero-momentum finite-size rate is ~0.75/site at both m0 = 1.0 and 0.6 (within 20% on every L pair; 0.6 slightly faster) and ~0.3 at m0 = 1.6: not min(m0, 2 - m0)  [rates (8-10, 10-12, 12-16): m0 1.0 0.72, 0.71, 0.72; m0 0.6 0.75, 0.78, 0.83]
+Finite-lattice U(1) diagnostic, axis-restricted backgrounds; Luscher's theorem supplied; not the non-abelian measure.
+elapsed 75.3s
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

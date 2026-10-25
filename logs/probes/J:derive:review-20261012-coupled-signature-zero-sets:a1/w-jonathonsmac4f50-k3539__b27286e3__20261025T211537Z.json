@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20261012-coupled-signature-zero-sets:a1",
+ "type": "judgment",
+ "lane": "review-science-20261012",
+ "worker": "w-jonathonsmac4f50-k3539",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261012-coupled-signature-zero-sets/w-jonathonsmac4f50-k3539/check.py",
+ "seed": 62937,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "b27286e3",
+ "started_utc": "20261025T211537Z",
+ "elapsed_s": 34.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "exact degree-3 Nullstellensatz certificates show the pair-moment quadrics of every one of the 72 unresolved unequal+unequal signature pairs vanish only at the origin (over Q, R, C), completing the elimination of the unequal block in all 240 ordered cases of the two-signature ansatz (runtime 33s)."
+ },
+ "review": "Read the log after the run: check.py (38 s) printed a HIT claiming origin-only pair-moment zero sets for all 72 remaining unequal-height signature pairs via exact degree-3 Nullstellensatz identities (432 identities re-expanded term by term, a Groebner radical test over Q in agreement, controls and mutants caught); scope is the two-signature ansatz, the partner step cites the single-signature note, the five-route packet is not claimed. Same-family (Claude Sonnet 5.5), unrefereed.",
+ "what": "Resolve the 72 unequal-height signature pairs left by the corrected direct quadratic test. Rebuild all quadratic constraints using full symmetric off-diagonal coefficients, then compute the real/rational zero sets with nonlinear consequences or exact sum-of-squares/real-radical certificates. The corrected 240-pair enumeration certifies 168 by direct monomial exclusion and leaves 72 unresolved; failure of monomial membership is not a nonzero-solution witness. Begin with (-3,-2) versus (-3,-1), whose row space includes x0^2-x5^2, x1^2-x5^2, x2^2-x5^2 and x0*x2, and test whether their nonlinear consequences already force zero. Provide a disjoint exact implementation, explicit coefficient-domain assumptions and either a complete origin-only certificate for each remaining orbit or a checked nonzero real/rational solution with its bond-factor positivity and normalization scope. Preserve the equal-height control and avoid a claim about the full 300-dimensional affine bond space. Complete the relevant no-go discipline packet before seeking retained-grade exclusion; do not infer physical law selection. Owner-requested scientific work transfer. Use the existing maximum-thinking J campaign and claim.py ownership protocol; inspect completed attempts and active claims to avoid duplication. Deliver numbered PROVED/CHECKED/ASSUMED steps, a self-contained disjoint check.py, and RECOVERY_STATUS.json with exact source hashes under probes/work/derive/<problem>/<worker>/. Commit the checker before run_probe.py. Emit SUMMARY and HIT only for a demonstrated new result or defect. Follow ordinary cross-model confirmation; this catalog addition starts no workers, changes no budgets and creates no PR snapshots or audit authority.",
+ "stdout_sha256": "56d1c32974f191f657c179a643148add0576e6f15cd4f5ac1bb417e6efad1e4b",
+ "stdout_tail": "ol: equal-height block is nevertheless forced to zero by a higher-degree certificate (failure of the linear test is not a nonzero solution)\nPASS positive control: opposite+opposite pair has nonzero rational points (1,-2,3,0,0,0) killing every pair-moment quadric\nPASS positive control: degree-3 certificate machinery correctly fails (returns no certificate) for that pair\nPASS positive control: all raw lattice pair moments vanish at that point (direct sums)\nPASS positive control: a single opposite signature has an empty set of pair-moment quadrics\n# scope: pair moments only (necessary conditions); two-signature support; orbit of (1,2,3); uniform r0; rational kernel coordinates.\n# not claimed: classification on three or more signatures, the full affine bond space, positivity of any factor, or any physical law selection.\nHIT: all 72 coupled unequal-height signature pairs left open by the 2026-10-10 direct test have origin-only pair-moment zero sets over Q, R and C, certified by exact degree-3 Nullstellensatz identities; so the unequal block is zero in all 240 ordered cases (scope: two-signature ansatz on the orbit of (1,2,3), pair moments, uniform average).\nTOTAL: PASS=31 FAIL=0\nSUMMARY: exact degree-3 Nullstellensatz certificates show the pair-moment quadrics of every one of the 72 unresolved unequal+unequal signature pairs vanish only at the origin (over Q, R, C), completing the elimination of the unequal block in all 240 ordered cases of the two-signature ansatz (runtime 33s).\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k3539",
+  "at_utc": "20261025T211620Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Accepted as a logged scoped claim: the exact identities are the load-bearing evidence and the check passes; independent confirmation by another family is owed and was not obtained before the vehicle closed. Carried in the probe closing record; no issue filed.",
+  "by": "w-jonathonsmac4f50-k3539",
+  "at_utc": "20261025T211620Z"
+ }
+}

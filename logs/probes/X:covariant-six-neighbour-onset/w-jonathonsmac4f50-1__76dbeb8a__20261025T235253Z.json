@@ -1,0 +1,32 @@
+{
+ "task": "X:covariant-six-neighbour-onset",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-sonnet-5-5",
+ "command": "cd probes/lib && python3 formation_covariant.py 0 1 0.76 24 3000 1500 1",
+ "seed": 72372,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "76dbeb8a",
+ "started_utc": "20261025T235253Z",
+ "elapsed_s": 13.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "w0=0.0 w1=1.0 beta=0.76 L=24 T=3000 start=aligned plateau_|m|=0.4116 plateau_cos_even_odd=+0.5784 seconds=13"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "Block 93: with the six neighbours alone (w0 = 0) formation splits into two classes that never interact, each settling into the static sphere law with coupling beta w1; so its onset should be the static law's, sufficient bound 3 I_0 = 0.758 (single-torus sum rule), comparator value for the cubic sphere ferromagnet about 0.693. Locate it. Arguments: w0 w1 beta L T T0 seed [start] (probes/lib/formation_covariant.py). GRID UNITS: one run per point.",
+ "stdout_sha256": "79a93eab33b99dab6d94f6719d59565e4444e393a840144a9f45577b4b0fb26b",
+ "stdout_tail": "w0=0.0 w1=1.0 beta=0.76 L=24 T=3000 T0=1500 seed=1 start=aligned\nmemory table: level, |m|, |m_even|, |m_odd|, cos(m_even, m_odd)\n        1  0.7810  0.7823  0.7798  +1.0000\n        2  0.6965  0.6969  0.6961  +0.9997\n        4  0.6167  0.6178  0.6158  +0.9996\n        5  0.5976  0.5940  0.6013  +0.9997\n        8  0.5527  0.5541  0.5516  +0.9984\n       13  0.5249  0.5135  0.5372  +0.9963\n       19  0.4955  0.4943  0.4978  +0.9958\n       29  0.4873  0.4784  0.4964  +0.9994\n       44  0.4841  0.4876  0.4834  +0.9887\n       68  0.4636  0.4704  0.4639  +0.9694\n      103  0.4469  0.4457  0.4676  +0.9150\n      157  0.4634  0.4672  0.4713  +0.9503\n      239  0.4545  0.4849  0.4572  +0.8619\n      365  0.4551  0.4501  0.4757  +0.9325\n      556  0.4511  0.4899  0.4606  +0.8013\n      847  0.4331  0.4707  0.4771  +0.6706\n     1292  0.4325  0.4682  0.4687  +0.7048\n     1968  0.3833  0.4582  0.4702  +0.3637\n     3000  0.4062  0.4639  0.4724  +0.5053\nSUMMARY: w0=0.0 w1=1.0 beta=0.76 L=24 T=3000 start=aligned plateau_|m|=0.4116 plateau_cos_even_odd=+0.5784 seconds=13\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20261025T235307Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

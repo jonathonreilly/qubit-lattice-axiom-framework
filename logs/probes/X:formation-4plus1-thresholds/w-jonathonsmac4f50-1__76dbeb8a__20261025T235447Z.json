@@ -1,0 +1,32 @@
+{
+ "task": "X:formation-4plus1-thresholds",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-sonnet-5-5",
+ "command": "cd probes/lib && python3 formation_levelplane.py 4s sphere 0.34 20 2000 1000 1",
+ "seed": 72487,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "76dbeb8a",
+ "started_utc": "20261025T235447Z",
+ "elapsed_s": 158.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=4 menu=sphere beta=0.34 L=20 T=2000 plateau_|m|=0.0050 lowk_ratio=0.3059 seconds=157"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "The 4+1 thresholds (level-ordered between beta 0.75 and 1.0; light-cone between 0.3 and 0.4 on 12^4 and 16^4 planes): locate them on three sizes. Arguments: dim menu beta L T T0 seed. GRID UNITS: one run per point.",
+ "stdout_sha256": "cde75ad176e3e8964bea218feea49c4a5cb51256fb78db50e64f143b199fc15d",
+ "stdout_tail": "^5) menu=sphere beta=0.34 L=20 T=2000 T0=1000 seed=1; predecessors n=9; sigma^2=0.221441\nmemory table: level, |m|, m.e0\n         1  0.6781  +0.6781\n         2  0.5339  +0.5339\n         3  0.4445  +0.4445\n         4  0.3813  +0.3813\n         5  0.3317  +0.3317\n         7  0.2574  +0.2574\n         9  0.2070  +0.2070\n        13  0.1371  +0.1371\n        17  0.0942  +0.0942\n        24  0.0482  +0.0480\n        33  0.0229  +0.0222\n        45  0.0078  +0.0068\n        61  0.0060  +0.0007\n        84  0.0040  +0.0015\n       116  0.0045  -0.0011\n       159  0.0050  +0.0049\n       218  0.0032  +0.0003\n       299  0.0036  +0.0017\n       411  0.0022  +0.0001\n       563  0.0038  +0.0009\n       773  0.0029  +0.0019\n      1062  0.0047  +0.0006\n      1457  0.0069  +0.0033\n      2000  0.0075  -0.0068\nequal-level transverse structure factor S_0(k) / [sigma^2/(1-|phi|^2)] by |k| shell:\n   |k| in [0.3,0.6): 0.3059 (n=64)\n   |k| in [0.6,1.0): 0.6824 (n=504)\n   |k| in [1.0,1.5): 0.9677 (n=2016)\n   |k| in [1.5,2.2): 1.1737 (n=9248)\n   |k| in [2.2,3.2): 1.2882 (n=41124)\n   |k| in [3.2,6.0): 1.3160 (n=107034)\nsite covariance without the zero mode along e_1: r, measured C(r), linear C(r), ratio\n     1  +0.011936  +0.016361  0.730\n     2  +0.006325  +0.009596  0.659\n     3  +0.000717  +0.002681  0.267\n     4  +0.000249  +0.001421  0.175\n     6  -0.000007  +0.000412  -0.018\n     8  +0.000013  +0.000130  0.100\nSUMMARY: dim=4 menu=sphere beta=0.34 L=20 T=2000 plateau_|m|=0.0050 lowk_ratio=0.3059 seconds=157\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20261025T235725Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -21,12 +21,19 @@
  "stdout_sha256": "eba0a90fa34ca176cefe0dd649056e881a9f09d36dc30637a954b5c91fb4104b",
  "stdout_tail": "x - x^2)/(x^2 sinh^2 x); sinh x - x vanishes with its first derivative at 0 and has second derivative sinh x > 0, so phi''>0\nok E3: Z_1=1, Z_2=beta coth beta, opposite pair is c0^2<1, and at beta=2 the aligned values are [2.075, 5.637, 17.228, 56.158, 190.685]\nok E4: the one-step content response along a pinned direction is L = coth beta - 1/beta\nok E5: at beta=2, rho=1/2 the path amplitudes are [0.2687, 0.0722, 0.0194, 0.0052]\nok C1: (1/m+1/(m+1))^2 = (2m+1)^2/(m(m+1))^2 <= 4/m^2\nok C2: E(f_R)/R = 25.74, 24.48, 24.22, 24.12, 24.08, 24.06, 24.04, 24.03, each <= 48 and falling toward 24\nok P1: all 216 axis-aligned boxes with sides <= 6 have no outside site touching two records\nok P2: ball pockets (P2,P3) = {4: (24, 0), 25: (84, 56), 64: (228, 120), 144: (528, 272)}\nok P3: the tree-level face excess starts at 5 rho (beta coth beta - 1) > 0\nok C3: G(0)-G(e)=1/6, and a nearest pair carries 0.746 of two separate charges\nSUMMARY: confirmed - at the pinned scale no compact candidate has a far field proportional to N: pinned capacity is at most 48 R, a box produces no excess, and a ball's pockets scale as the surface.\nHIT: confirmed - Z = c0^k sinh(beta|S|)/(beta|S|) with c0=beta/sinh beta, Z_k>1 exactly for k>=2 aligned contents, and a pinned set is a Dirichlet condition with Cap(S)<=48 R inside a cube of half-side R; a box has no production pockets and a ball's pockets are O(R^2). Unpinned order, a density excess and a formation-rate region put nothing into the transverse channel.\n",
  "checked": {
-  "by": "w-macbookpro90c72-j02f9",
-  "at_utc": "20260924T044726Z",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T204746Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha c9f73efb differs from the current HEAD 843f605b (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Read the log: the other-family (grok-4.6) confirmation passed its own check (CHECK PASS) and prints a HIT line that confirms the derivation's claim; accepted as a confirmation of record at the closing of the probe vehicle. Not independently re-run by this reader; the claim is carried in the probe closing index.",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T204746Z"
  }
 }

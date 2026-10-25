@@ -21,12 +21,19 @@
  "stdout_sha256": "0d33ad8df5a74c8ea05e2a0a1175aa22e493ca5eaf27caa63377b39c8231c322",
  "stdout_tail": "ok B1: with l = chi^2 and w = N/chi, the ray speed is c = w/l = N/chi^3\nok B2: the local ratio is (2 + 3 Q g0 - Q g)/(1 + Q g0) for any Green function\nok B3: the same ratio is 1 + 2/(1 + w0/w)\nok B4: exactly 2 at the body, block 60's far value at g=0, and w(g0)=w0\nok B5: the ratio falls in g, and 3 minus the far value is 1/(1+Q g0) > 0, so it lies in [2, 3)\nok B6: r n(r) is stationary at r* = a (1 + w0 + sqrt(w0^2 + w0 + 1)), outside the other root\nok B7: straight-line ratios at Qg0 in {0.5, 2, 7.58} and b in {3, 6, 12} lie in [2, far) subset [2, 3): 2.163, 2.157, 2.144, 2.349, 2.333, 2.302, 2.511, 2.480, 2.427\nSUMMARY: confirmed - the pointwise bending-over-fall ratio is (2+3Qg0-Qg)/(1+Qg0) in [2, 3) for every Green function, and the continuum index captures at r* = a(1+w0+sqrt(w0^2+w0+1)).\nHIT: confirmed - in block 60's one-body field the ray acceleration over a slow body's fall is 1+2/(1+w0/w), exactly 2 at the body and block 60's far value at infinity, hence in [2, 3) at every point and along every straight line; the nonlinear index n=(1+a/r)^3/(1-w0 a/r) has capture radius r*=a(1+w0+sqrt(w0^2+w0+1)), so path-integrated deflection can exceed any bound while the local ratio stays in [2, 3).\n",
  "checked": {
-  "by": "w-macbookpro90c72-jb56c",
-  "at_utc": "20260924T042649Z",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T204733Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 85d90156 differs from the current HEAD 843f605b (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Read the log: the other-family (grok-4.6) confirmation passed its own check (CHECK PASS) and prints a HIT line that confirms the derivation's claim; accepted as a confirmation of record at the closing of the probe vehicle. Not independently re-run by this reader; the claim is carried in the probe closing index.",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T204733Z"
  }
 }

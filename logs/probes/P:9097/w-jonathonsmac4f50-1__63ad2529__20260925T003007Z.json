@@ -25,12 +25,19 @@
  "stdout_sha256": "29b5f03645354a487ed4589c1defc6a782e667929e18cfd175c39294ccf2c416",
  "stdout_tail": "PR #9097: feat(dynamics-clause): show record fields keep carved Majoranas non-chiral; a gapless start gives a Chern number\nbranch claude/dynamics-clause-h21-record-fields-keep-carved-majoranas-sublattice-symmetric-20260924 (base main)\nrunners in the PR: 1\n== scripts/dynamics_clause_record_fields_keep_carved_majoranas_sublattice_symmetric_2026_09_24.py: rc=1 no PASS/FAIL count line (verdict by exit code)\nHIT: scripts/dynamics_clause_record_fields_keep_carved_majoranas_sublattice_symmetric_2026_09_24.py: rc=1, no PASS/FAIL count line (verdict by exit code)\n\n[stderr]\nTraceback (most recent call last):\n  File \"/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/probe-pr9097-8lu2xybo/scripts/dynamics_clause_record_fields_keep_carved_majoranas_sublattice_symmetric_2026_09_24.py\", line 56, in <module>\n    from pysat.card import CardEnc, EncType\nModuleNotFoundError: No module named 'pysat'\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260925T003012Z",
-  "result": "PASS",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T204811Z",
+  "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
-   "ok: hit field consistent (True)"
+   "FAIL: unknown task id 'P:9097' (regenerate TASKS.json or fix the id)",
+   "ok: log's git sha 63ad2529 differs from the current HEAD 843f605b (fine if you pulled since; the run is bound to its sha)"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Read the log: the PR's runner stops at 'from pysat.card import CardEnc, EncType' (ModuleNotFoundError: No module named pysat); the python-sat package was not installed on the worker machine, so the runner never ran. PR #9097 was closed unmerged on 2026-09-25. No science content.",
+  "by": "w-jonathonsmac4f50-jcl0",
+  "at_utc": "20261025T204811Z"
  }
 }

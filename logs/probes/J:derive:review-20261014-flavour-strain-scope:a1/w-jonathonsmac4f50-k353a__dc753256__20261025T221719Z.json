@@ -1,0 +1,39 @@
+{
+ "task": "J:derive:review-20261014-flavour-strain-scope:a1",
+ "type": "judgment",
+ "lane": "review-science-20261014",
+ "worker": "w-jonathonsmac4f50-k353a",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261014-flavour-strain-scope/w-jonathonsmac4f50-k353a/check.py",
+ "seed": 66639,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "dc753256",
+ "started_utc": "20261025T221719Z",
+ "elapsed_s": 14.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "Exact cocycle enumeration of all 1120 residual groups confirms the source's classification (mixing => invariant strain), sharpens it to 'only the diagonal E-type quadrupole, only for stabilisers without a 3-cycle, full nine-entry mixing only when the generation action is trivial', and shows the coefficient is a free dynamical input, not forced."
+ },
+ "review": "Read the log after the run: check.py (15 s) printed a HIT with scoped results by exact cocycle enumeration of all 1120 residual symmetry groups (283 allow mixing, none mixes without an invariant strain): generation sector can only feed the diagonal (E-type) strain, only 29 of the 1120 subgroups stabilise the generation data, full nine-entry mixing needs a scalar generation action (267 of 283 are two-generation mixing only), and symmetry never forbids an allowed strain channel (the coefficient is a free dynamical input, shown by an explicit full-mixing vacuum with vanishing linear strain). ATTEMPT.md stops at step 10(ii): the strain coefficient needs a supplied vacuum functional, a translation-breaking condensate and a record readout. Same-family (Claude Sonnet 5.5), unrefereed.",
+ "what": "Reconstruct the claimed residual-symmetry classification and its relation to nontrivial mixing using exact representations and a disjoint subgroup enumeration. Separate a symmetry-allowed first-order strain channel from a forced nonzero coefficient or measured violation. State which mass degeneracies, representation assignments and residual groups are excluded. Advance a precise theorem/counterexample and coefficient/readout obligation rather than calling a finite subgroup count a physical flavour derivation. Owner-requested research transfer, not accepted science or a replacement PR. Read current main axiom/primitive sources first: Admissibility determines a probability distribution from nearest-neighbour conditions but does not specify its form or values and supplies no dynamics, and physical sites remain Z^3 with M2(C); any changed carrier/time model is an explicit comparator. Reconcile existing attempts and active claims; use the existing maximum-thinking J claim and cross-model referee protocol. Deliver numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes. No worker launch, budget change, PR snapshot copy, audit verdict or premise approval accompanies this catalog addition.",
+ "stdout_sha256": "0252352d983344b2a5460d0219ab5e70cf60cdbb033ba0db84da068a7a4eaa84",
+ "stdout_tail": "4, never N); type c has K={0,111} | 10 mixing isotropy groups\nPASS T2 exact translations (I \u2287 N) force diagonal A,B (type a or finer): no mixing, and with a 3-cycle in the rotation part a triple degeneracy\nINFO rot/V4 orders occurring per type among isotropy groups: {'a': [1, 2, 3], 'b': [1, 2], 'c': [1], 'd': [2, 6], 'e': [6]}\nPASS T3 strain-free isotropy groups with three DISTINCT masses exist (type a, rotation part T or O) but then all mixing is trivial | 4 groups\nPASS T4 forced degeneracies: types d (two-fold) and e (three-fold) occur and have no mixing; they are excluded from any three-mass spectrum | 8 isotropy groups\nPASS H sha256 of source copy COMBO_REPORT.md\nPASS H sha256 of source copy PREREG.md\nPASS H sha256 of source copy x2_cert.py\nPASS H sha256 of source copy x2_cert_run1_strainnorm_bug.out\nTOTAL: PASS=52 FAIL=0\nHIT: generation-sector vacua are blind to off-diagonal (T2) strain; mixing => allowed diagonal (E) strain channel populated at linear order, full nine-entry mixing only for stabiliser K0 (generation-trivial), allowed != forced (explicit full-mixing vacuum with zero linear strain)\nSUMMARY: Exact cocycle enumeration of all 1120 residual groups confirms the source's classification (mixing => invariant strain), sharpens it to 'only the diagonal E-type quadrupole, only for stabilisers without a 3-cycle, full nine-entry mixing only when the generation action is trivial', and shows the coefficient is a free dynamical input, not forced.\n\n[stderr]\n# runtime 14s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k353a",
+  "at_utc": "20261025T222041Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: log's git sha dc753256 differs from the current HEAD fe42d902 (fine if you pulled since; the run is bound to its sha)",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Accepted as a logged scoped result (group-theoretic classification, exact enumeration, reproduces the source numbers by a different enumeration); no dynamical coefficient is claimed. Carried in the probe closing record; no issue filed.",
+  "by": "w-jonathonsmac4f50-k353a",
+  "at_utc": "20261025T222041Z"
+ }
+}

@@ -1,0 +1,41 @@
+PASS B1 explicit Dirac matrices (alpha_x,alpha_y,alpha_z,beta) satisfy the Clifford relations
+PASS B2 exact rotor identity: R=cos(phi)+sin(phi) beta e.alpha is unitary and R h R^dag = E(cos(theta-2phi) beta + sin(theta-2phi) e.alpha) (5 rational angles)
+PASS B3 phi=theta/2 (fraction s=1 of the rotation): R h R^dag = E beta exactly, i.e. band-diagonal with a FIXED band projector (1-beta)/2
+PASS B4 current in the rotated variables: d(R h R^dag)/dk = R h' R^dag + [R' R^dag, R h R^dag] (non-Abelian Berry-connection term), connection = phi' beta alpha_x
+PASS B5 interband (pair-creation) weight of the zero-transfer current: Tr[P+ h' P- h'] = 2 E^2 (theta~')^2, independent of E'; zero where theta~ is constant
+PASS C1 numerical k0 integration (scipy quad, explicit 4x4 matrices, 24 random cases) of Tr[G G'] and Tr[V G V G'] equals -2(1-n.n')/(E+E') and -2[v^2(1+n.n')-2(v.n)(v.n')]/(E+E')  [worst deviation 4.3e-16]
+PASS D1 exact identity behind the xi-dependent self-energy: (a-b) b^-1 (b-a) = 2a - b - a b^-1 a (a = G^-1(p), b = G^-1(k)), random rational complex matrices
+PASS D2 xi-dependent part c1 a + c2 a X a annihilates the free on-shell spinors (null space dim 2) from both sides: first-order pole shift <u|Sigma_xi|u> = 0 for every X, c1, c2
+PASS E1 exact diagonalisation (14x14 torus, 9 hops incl. diagonals, matrix-valued, non-separable) reproduces the one-loop straight-path magnetic coefficient and the electric coefficient  [a^2 coeff ED 0.251101 vs formula 0.251105; phi^2 coeff ED -0.212329 vs -0.212326]
+PASS E2 same for the trapezoid prescription H=(H_xy+H_yx)/2 (Hermitian lattice dressing); the electric coefficient is identical for both prescriptions  [a^2 coeff ED 0.402311 vs formula 0.402316]
+PASS E3 the two gauge-covariant minimal dressings give DIFFERENT vacuum magnetic responses for the same non-separable matrix hopping (exact-diagonalisation values)  [0.2511 vs 0.4023]
+PASS F1 inside the cube |k_j|<=b1 the rotated law equals box QED exactly (box Feynman rules and in-box current unchanged)
+PASS F2 outside the shell (all |k_j|>=b2) the rotated law is exactly band-diagonal: a = (0,0,0,E), band projector (1-beta)/2 fixed; E unchanged by the rotation
+PASS F3 minimal pair-creation weight |d_y n~|^2 vanishes outside (<1e-12) and is positive on the shell: the frame rotation relocates the interband current into the shell  [max outside 0.0e+00, max on shell 0.512]
+PASS F4 charge-eigenspace constancy is not band constancy: the charge symbol is the 4x4 identity (rank 4) at every k in both frames, while the band subspace is fixed outside only after the rotation (deviation 0) and varies in the original frame  [rotated 0.0e+00, original 0.167]
+PASS F5 Cauchy-Schwarz line bound: on every x-line through the cube, int |d_x n~|^2/(2E) dkx >= theta_e^2 / int 2E dkx (theta_e = Dirac polar angle at the cube face)  [min lhs/rhs over 6 lines = 1.854]
+PASS F6 baseline: this independent implementation of box QED (straight-path vertex, explicit grid sums) reproduces the source runner r85_box_qed.photon to <=1e-6 relative (shapes (2,3) and (1,2), N=64, m=0.5)  [(2,3): P_M 39.43118 vs 39.43120; (1,2): P_M 11.26329 vs 11.26329]
+note bq12: N=64 P_E=7.0170 P_M=11.2633 dc=+2.1231 | N=96 P_E=7.0164 P_M=11.1856 dc=+2.0846 (units e^2/16pi^2, m=0.5)
+note rot12sp: N=64 P_E=10.0668 P_M=17.1581 dc=+3.5456 | N=96 P_E=10.0642 P_M=17.0260 dc=+3.4809 (units e^2/16pi^2, m=0.5)
+note rot12trap: N=64 P_E=10.0668 P_M=63.3344 dc=+26.6338 | N=96 P_E=10.0642 P_M=63.0092 dc=+26.4725 (units e^2/16pi^2, m=0.5)
+note rot12r0: N=64 P_E=10.9120 P_M=6.4483 dc=-2.2318 | N=96 P_E=10.9114 P_M=6.3610 dc=-2.2752 (units e^2/16pi^2, m=0.5)
+note rot23sp: N=96 P_E=22.6061 P_M=23.1735 dc=+0.2837 (units e^2/16pi^2, m=0.5; slow P_M convergence, see ATTEMPT)
+PASS F7 grid-convergence bookkeeping: |dc(N=96)-dc(N=64)| < 0.35 (units e^2/16pi^2) for the four runs at shapes (1,2), and Ward residuals |dia-chi_p| (q=0) < 5e-3 at N=96  [max conv diff 0.161; N=160 values (not rerun here) 3.490 and 0.206 for rot12sp, rot23sp]
+PASS F8 electric channel: P_E is independent of the minimal-coupling prescription (SP vs trapezoid) and of N to 1e-3; and P_E(rotated) exceeds P_E(box QED) at shape (1,2)  [rot 10.064 vs box QED 7.016]
+PASS F9 electric-channel floor (Cauchy-Schwarz): P_E(rotated) >= floor from the x-slabs; (1,2) floor and (2,3) floor both below the computed values  [(1,2): P_E 10.064 >= 2.008; (2,3): P_E 22.606 >= 7.037]
+PASS F10 photon-side split dc=(P_M-P_E)/2 of the K=0 rotated law (straight-path dressing) and of box QED at shape (1,2), r=1, m=0.5 are both nonzero beyond 3x the grid-convergence error  [rotated SP +3.481 (conv err 0.065); box QED +2.085]
+PASS F11 the photon-side split changes sign when the edge mass is switched off (r=0) for the rotated law: no sign-definiteness (tuned zeros exist in (r, shape) space)  [r=1: +3.481, r=0: -2.275]
+PASS F12 prescription dependence: trapezoid and straight-path dressings of the SAME rotated density/hopping differ in dc by more than 10 (units e^2/16pi^2) at shape (1,2), against a convergence error < 0.35  [trapezoid +26.472 vs straight-path +3.481]
+PASS F13 control: box QED (axis-only hops) has NO prescription dependence in the same code path (trapezoid = straight-path for the separable law to 1e-3 in e^2/16pi^2, finite-difference noise ~1e-5)
+PASS A1 frame U (Cayley of rational antisymmetric translation-invariant generator) is exactly orthogonal and commutes with both translations
+PASS A2 rotated densities m_x=U^T P_x U: orthogonal Hermitian projectors, hence mutually commuting (Gauss-law commutativity); m_0 != P_0
+PASS A3 sum_x m_x = identity on all 18 dimensions: charge symbol is 1 with full-rank eigenspace at every momentum (charge-eigenspace constancy)
+PASS A4 translation covariance T m_x T^-1 = m_{x+1} (exact)
+PASS A5 smeared density rho_c(y)=sum_z c(z) m_{y+z} (scalar form factor c) commutes and sums to (sum c) * identity
+PASS A6 control: a localized non-orthogonal density |w_x><w_x| does NOT commute with its translate (exact nonzero commutator)
+PASS A7 Peierls dressing of the rotated-frame hopping (both link-path orders) is exactly covariant under the gauge group generated by the rotated densities; Hermitian; reduces to H0 at zero field
+PASS A8 the two link-path dressings agree on pure-gauge links and differ on generic links: the path ambiguity is a gauge-invariant flux-dependent (transverse, nonminimal) term
+PASS A9 control: orbital Peierls on the UNROTATED hopping is covariant under on-site phases but NOT under the rotated-density gauge group (frame and coupling must be rotated together)
+HIT: for the specified construction (rotated density, K=0) the photon-side light-cone split is NOT fixed by the density frame and the hopping: two gauge-covariant minimal dressings (ED-validated) give dc = +3.48 vs +26.47 (e^2/16pi^2, shape (1,2), m=0.5) while the electric channel P_E = 10.06 (above a proved floor) is prescription-independent; so for this construction the flux-dependent (transverse nonminimal) part of the coupling is load-bearing for the photon cone (scope: photon side only, one loop, m=0.5, K=0, shapes (1,2) and (2,3))
+TOTAL: PASS=33 FAIL=0
+SUMMARY: a frame-rotated Peierls density removes the minimal pair-creation current outside the box only by moving it into the shell (proved floor; P_E 7.02 -> 10.06 at shape (1,2)), and its photon-side cone split depends on the O(F) dressing (+3.5 vs +26.5 in e^2/16pi^2), so the transverse kernel decides it, while the electron-side loop and an explicit kernel K remain uncomputed.

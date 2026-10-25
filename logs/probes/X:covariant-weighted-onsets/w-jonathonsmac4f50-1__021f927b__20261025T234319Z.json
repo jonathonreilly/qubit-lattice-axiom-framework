@@ -1,0 +1,32 @@
+{
+ "task": "X:covariant-weighted-onsets",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-sonnet-5-5",
+ "command": "cd probes/lib && python3 formation_covariant.py 1 2 0.28 24 3000 1500 1",
+ "seed": 71799,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "021f927b",
+ "started_utc": "20261025T234319Z",
+ "elapsed_s": 20.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "w0=1.0 w1=2.0 beta=0.28 L=24 T=3000 start=aligned plateau_|m|=0.0300 plateau_cos_even_odd=+0.6138 seconds=20"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "Block 93: all seven with weights (w0, w1) is block 90's bilayer with rung w0 and slabs w1; proved memory for beta > (3/(2 w1))(I(0) + I(2 w0/w1)): 0.3174 at (1, 2), 0.5398 at (2, 1) (0.5905 at (1, 1)). Where are the executed onsets? Arguments: w0 w1 beta L T T0 seed. GRID UNITS: one run per point.",
+ "stdout_sha256": "1c71bb2bff9aedc9dd0dfdf21d0ae66432395626bc321516c206e05eafe6975e",
+ "stdout_tail": "w0=1.0 w1=2.0 beta=0.28 L=24 T=3000 T0=1500 seed=1 start=aligned\nmemory table: level, |m|, |m_even|, |m_odd|, cos(m_even, m_odd)\n        1  0.7268  0.7283  0.7252  +1.0000\n        2  0.6096  0.6102  0.6091  +0.9996\n        4  0.4879  0.4894  0.4865  +0.9998\n        5  0.4512  0.4472  0.4552  +1.0000\n        8  0.3624  0.3670  0.3581  +0.9985\n       13  0.2908  0.2767  0.3051  +0.9983\n       19  0.2181  0.2154  0.2211  +0.9970\n       29  0.1693  0.1629  0.1758  +0.9989\n       44  0.1246  0.1373  0.1121  +0.9968\n       68  0.0519  0.0575  0.0516  +0.8138\n      103  0.0245  0.0279  0.0231  +0.8526\n      157  0.0386  0.0379  0.0410  +0.9103\n      239  0.0319  0.0219  0.0436  +0.8774\n      365  0.0375  0.0415  0.0360  +0.8707\n      556  0.0466  0.0295  0.0642  +0.9765\n      847  0.0102  0.0154  0.0189  -0.2968\n     1292  0.0491  0.0429  0.0602  +0.8130\n     1968  0.0122  0.0241  0.0036  +0.0375\n     3000  0.0389  0.0367  0.0412  +0.9920\nSUMMARY: w0=1.0 w1=2.0 beta=0.28 L=24 T=3000 start=aligned plateau_|m|=0.0300 plateau_cos_even_odd=+0.6138 seconds=20\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20261025T234340Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

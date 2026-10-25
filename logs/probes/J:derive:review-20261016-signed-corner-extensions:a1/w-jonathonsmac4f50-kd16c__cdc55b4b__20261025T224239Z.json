@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20261016-signed-corner-extensions:a1",
+ "type": "judgment",
+ "lane": "review-science-20261016",
+ "worker": "w-jonathonsmac4f50-kd16c",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261016-signed-corner-extensions/w-jonathonsmac4f50-kd16c/check.py",
+ "seed": 68159,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "cdc55b4b",
+ "started_utc": "20261025T224239Z",
+ "elapsed_s": 46.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "all 65536 signed corner lifts are enumerated exactly: they realise each of the four central extensions of the cube rotation group by Z2 once up to diagonal sign gauge, the second spinorial one (GL(2,3)) is classified with exact representatives and character, and it relates to 2O only by an i-twist of odd rotations."
+ },
+ "review": "Read the log after the run: check.py (about 30 s) printed a HIT: by exact enumeration of all 65536 signed corner lifts the sign choices with central kernel realise each of the four central extensions of the cube rotation group O by Z2 exactly once up to diagonal sign gauge (S4 x C2, A4 : C4, GL(2,3), 2O; Shapiro's lemma with H^2 of dimension 2 over F2), the GL(2,3) class is classified with exact 8x8 representatives and character, it relates to 2O only by an i-twist of odd rotations, and the nearest-site covariant family has dimension 11 in all four classes. ATTEMPT.md leaves open the 64512 raw pairs with a non-scalar diagonal kernel, non-monomial actions and phased decompositions; the axioms do not select the monomial block action. Same-family (Claude Sonnet 5.5), unrefereed.",
+ "what": "The landed statement covers a monomial representation of the prescribed binary octahedral group with central minus one and the real odd C6 character. Determine which other central extensions, cocycles or allowed gauge equivalences actually exist, and classify ONE precise extension class with exact representatives and induced characters. Three numerical trace signatures and sample nullspaces are not an exhaustive projective or gauge classification; do not infer physical generations. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise. PR9658 independently matched both specified eleven-dimensional nearest-site families and exact equations. Reconcile those stated signed-generator conventions without inferring a classification of every projective action; exhaustive negative proof certification is tracked separately in the nearest-site-prime-closure task.",
+ "stdout_sha256": "2e56e3f9b3bb581daaa87eadc96474073d82e5d3900ee1c50b581bad136cefe9",
+ "stdout_tail": "[Fraction(4, 1), Fraction(3, 1), Fraction(3, 1)]}; j = 0 reproduces the signed case (4), and j = +-1 gives 3 in every class (3 = 1+1+1: three inequivalent constituents; for 2O this is the source table E1/2 + E5/2 + H); the decomposition of the phased cases for the other classes is not worked out here\nPASS S6 exact transfer: every covariant nearest-site coefficient array of the 2O-class (11 independent ones) is mapped by A_t -> g^dagger A_t g (diagonal, so hop positions and ranges are unchanged, unitarity is preserved) to a covariant array of the GL(2,3)-class; any covariant unitary block walk of the 2O class (e.g. the sources' T (U_2q (x) 1_E) T^dagger) gives one of the GL(2,3) class with the same spectrum\nHIT: exhaustive exact classification of signed 2x2x2-corner actions: the 65536 sign choices realise exactly the four central extensions of O by Z2 (S4xC2, A4x|C4, GL(2,3), 2O) once each up to diagonal sign gauge, the GL(2,3) class has exact representatives, induced character (+-8, +2, -2, 0) and rho = 2 x (4-dim irrep), and it is phase-gauge equivalent (odd rotations times +-i) but not extension-equivalent to the prescribed 2O lift\nTOTAL: PASS=29 FAIL=0\nSUMMARY: all 65536 signed corner lifts are enumerated exactly: they realise each of the four central extensions of the cube rotation group by Z2 once up to diagonal sign gauge, the second spinorial one (GL(2,3)) is classified with exact representatives and character, and it relates to 2O only by an i-twist of odd rotations.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-kd16c",
+  "at_utc": "20261025T224327Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Accepted as a logged scoped result (exact enumeration with a Shapiro-lemma argument); the A4 : C4 name is imported from the Majorana note. Carried in the probe closing record; no issue filed.",
+  "by": "w-jonathonsmac4f50-kd16c",
+  "at_utc": "20261025T224327Z"
+ }
+}

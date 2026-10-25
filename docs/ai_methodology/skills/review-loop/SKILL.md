@@ -191,6 +191,35 @@ gate on the frozen integrated candidate; do not wait for unfinished science.
 These rules never waive independent checks, counterexamples, complete source
 accounting, fresh PR heads, current-main preservation or audit separation.
 
+## Independence-first scheduling (owner-directed 2026-10-24)
+
+Before commissioning a repair or widening a review, test whether the smallest
+useful existing source unit can stand on actual current main. Use the checkpoint
+and verified evidence first: identify its actual proof premises, runtime inputs,
+active readers and shared owners. A citation or filename match is a routing
+clue, not by itself a proof dependency. Keep documentary reads bound without
+promoting them to scientific authority. Do not create duplicate owners, relabel
+claims, suppress live consumers or waive gates to manufacture independence.
+
+Set a finite review boundary before delegation: exact source identities, the
+claim or contract being decided, necessary dependencies/readers and one concrete
+deliverable. If another unreviewed owner is causally required, record the exact
+inference and recovery path, hold that component, and check smaller independent
+subsets and other ready units before expanding. Expansion requires an explicit
+coordinator decision naming the additional scope and why it can resolve the
+blocker; it is not an automatic recursive traversal. This scheduling boundary
+never truncates a proof obligation or turns missing coverage into PASS.
+
+Before requesting a read, capture or confirmation, identify what changed since
+the verified evidence and which conclusion it could affect. Reuse unchanged
+proofs, source reads, inventories and successful captures with their original
+identities when premises, scope, tooling and interactions still match. Refresh
+only affected or uncertain coverage; preserve complete changed-argument reads,
+independent decisive checks, original-reviewer confirmation, fresh provenance
+and required landing gates. Do not wake reviewers solely to repeat bookkeeping or repeat
+science to repair receipt formatting. Keep one current checkpoint and immutable
+full evidence; use concise handoffs instead of recopying the backlog.
+
 ## Premise Authority
 
 <!-- BEGIN GENERATED: axiom-baseline (generate_skill_axiom_baselines.py) -->

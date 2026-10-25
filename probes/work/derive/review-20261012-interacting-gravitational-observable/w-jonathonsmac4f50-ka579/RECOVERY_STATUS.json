@@ -1,0 +1,71 @@
+{
+  "source_branch": "claude/candidate-law-20261008",
+  "source_head": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+  "branch_head_observed_at_run": "c1728175d64db1494012c92dfee9ea5e5d22e1ff",
+  "source_objects": [
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-2_report.md",
+      "sha256": "62fb8ada4aa54e92d2326e2b028beadad507cf15f3b72f651572fd4f4ab9bb1b",
+      "expected_sha256": "62fb8ada4aa54e92d2326e2b028beadad507cf15f3b72f651572fd4f4ab9bb1b",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-2_referee_verdict.md",
+      "sha256": "0929bb4845afa85ed8d65dec97f571f838f1f5982ebd256d19f6c960fd059e0f",
+      "expected_sha256": "0929bb4845afa85ed8d65dec97f571f838f1f5982ebd256d19f6c960fd059e0f",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R9-1_report.md",
+      "sha256": "864cc4bcc025e0b7c48c07a8568d7bf43ffba061af6ea889e9803aebfc4b8e6b",
+      "expected_sha256": "864cc4bcc025e0b7c48c07a8568d7bf43ffba061af6ea889e9803aebfc4b8e6b",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R9-1/r91_edge_population.py",
+      "sha256": "9a88830f81f18d95aa1671dfc588ee75e2ae54abbaef55751f13e3ab8248bed0",
+      "expected_sha256": "9a88830f81f18d95aa1671dfc588ee75e2ae54abbaef55751f13e3ab8248bed0",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R9-1/r91_qed_checks.py",
+      "sha256": "a6d34d1f73b972404968cfca10fc6b3754ae4d7b22f49ec8eee9e6096c6af25f",
+      "expected_sha256": "a6d34d1f73b972404968cfca10fc6b3754ae4d7b22f49ec8eee9e6096c6af25f",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R7-4_referee_verdict.md",
+      "sha256": "df37274ed2616ba6f5aba1b669e58fce8a95edb8f5a5a888e03bb149e4338ced",
+      "expected_sha256": "df37274ed2616ba6f5aba1b669e58fce8a95edb8f5a5a888e03bb149e4338ced",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/TESTS.md",
+      "sha256": "fa6440969bb187c8f52873b8a6e988a84a53a1c5a869117fc3d1f4e20082cf91",
+      "expected_sha256": "fa6440969bb187c8f52873b8a6e988a84a53a1c5a869117fc3d1f4e20082cf91",
+      "verified": true
+    }
+  ],
+  "extra_objects_read_at_branch_head": [
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R9-2_report.md",
+      "sha256": "56c5af2545f38b7dd9b9abe4e598595810158032c3f437e2afdbb3767ef20f79",
+      "read_at_commit": "c1728175d64db1494012c92dfee9ea5e5d22e1ff",
+      "note": "not in the pinned list; exists only at the branch head, read for reconciliation"
+    },
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R9-2_referee_verdict.md",
+      "sha256": "6bc5d2c24364fd8df14e64fc94e15bb477224cfaf12b86d23b53b5cf870dd2d5",
+      "read_at_commit": "c1728175d64db1494012c92dfee9ea5e5d22e1ff",
+      "note": "not in the pinned list; exists only at the branch head, read for reconciliation"
+    },
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R9-1_referee_verdict.md",
+      "sha256": "aa030b78405d2683099c67ff7e8db4a5b2ca63f50e18102bb8d425493c5fb2b0",
+      "read_at_commit": "c1728175d64db1494012c92dfee9ea5e5d22e1ff",
+      "note": "not in the pinned list; exists only at the branch head, read for reconciliation"
+    }
+  ],
+  "first_unresolved_step": "Step 12 of ATTEMPT.md: the infinite-channel (continuum) version of the finite-channel trace obstruction, and the quasi-locality of the dephasing completion B_ik = i J_ik/(E_i-E_k), whose pole sits at E_i = E_k; equivalently, whether a quasi-local first-moment completion with a source-free momentum Ward identity exists for the R8-1 box law in the continuum. Beyond this: d>=2, N>=3, gauge binding (field momentum), and any real-nucleus composition data are not touched.",
+  "note": "The pinned source objects at 02b443f predate R9-2 (report and referee verdict exist only at the later branch head c1728175)."
+}

@@ -1,0 +1,36 @@
+{
+  "task_id": "J:derive:review-20261012-box-gauge-custodial:a1",
+  "source_branch": "claude/candidate-law-20261008",
+  "source_head": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+  "main_checked": "a77a3449c91a753b06ce2a63876cd460b62cb4cf",
+  "source_objects": [
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-5_report.md",
+      "sha256": "d6f4082b938767ad8a095566ad71b5f11591877e6d97f14982f4e97394ab1205",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-5_referee_verdict.md",
+      "sha256": "5573b05955a4c5fff111d82be046e516e72978c08534976296abf9cc21d7ad13",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R8-5/r85_box_qed.py",
+      "sha256": "f96ca49a9310fc0d8034bcec8d20098316322e73881df4bd7f8478082692f8f6",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R8-5/r85_gauge_check.py",
+      "sha256": "1606b5fe7a4461fdbc8285fe6f766778854555ec646b1cfeeae7a59de9030fe1",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R8-5/r85_inbox_rules.py",
+      "sha256": "ac934ced6c4c23240b3f81559de08a71da9048a5075cf55f12ef6e10b3d238cd",
+      "verified": true
+    }
+  ],
+  "first_unresolved_step": "S11: the electron-side one-loop speed of the frame-rotated law (with or without a transverse kernel K) is not computed. It needs a specified photon-sector dressing for non-axis hops (a link-path rule or an explicit K), because the box-QED photon sector only has axis links. Until delta c_e is computed the cone split Delta = delta c_e - delta c_gamma of the specified construction is undetermined; the photon-side half is computed (S7) and is prescription dependent (S8).",
+  "verdict": "PARTIAL",
+  "same_family_unrefereed": true
+}

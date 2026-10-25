@@ -1,0 +1,76 @@
+{
+ "task_id": "J:derive:review-20261016-composite-clock-strain:a1",
+ "source_branch": "claude/strain-hot-matter-twins-20261013",
+ "source_head": "6afb06951a13ca861b50f47a8faf5d5c06594109",
+ "source_objects": [
+  {
+   "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_E1_referee_verdict.md",
+   "sha256": "932ace7b637106cb89d67babf6fc1cc15b2aed89bed5875eddf7505c01b9deaa",
+   "verified": true,
+   "at_commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+  },
+  {
+   "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_E1_report.md",
+   "sha256": "5349a78832efa473d419237e96ffcfce9bc3676e37e16ecef4997da2ac24a845",
+   "verified": true,
+   "at_commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+  },
+  {
+   "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F6_referee_verdict.md",
+   "sha256": "fdc753260d52e78ffa0ac8a20b8bc139ec9a3a095527f7e6146d350126fc4f33",
+   "verified": true,
+   "at_commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+  },
+  {
+   "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F6_report.md",
+   "sha256": "94ae8da373b52a0f1e3baee70f5c21d3f0523da1279e07df4ffde894c0fe4647",
+   "verified": true,
+   "at_commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+  },
+  {
+   "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/panel_F/DOSSIER.md",
+   "sha256": "d3ea58e84b66231a4e52ab6ac30c5922ff34005b69b16b929ac72a5d9628dcdf",
+   "verified": true,
+   "at_commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+  },
+  {
+   "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/panel_F/SYNTHESIS.md",
+   "sha256": "4b8318b1faf7439c2998a86d071fd0df464bc5d228743fcb7b66bd173d0f5b01",
+   "verified": true,
+   "at_commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+  },
+  {
+   "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/panel_F/condmat_statement.md",
+   "sha256": "6c7b993c6739d79868b486b155af666932a667ceea15839e2c6471e1d55cb3f7",
+   "verified": true,
+   "at_commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+  },
+  {
+   "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/panel_F/gr_statement.md",
+   "sha256": "0dd567186d84efdc0235857179f3fc9020cc2453ff362c0bc80b410abeff291f",
+   "verified": true,
+   "at_commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+  },
+  {
+   "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/panel_F/lattice_statement.md",
+   "sha256": "25c3c68970da46fd2dc311403e82607c43e405122872f475a434176ec5f2fb29",
+   "verified": true,
+   "at_commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+  },
+  {
+   "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/panel_F/pheno_statement.md",
+   "sha256": "18577dbb707a34e30413877f4e5e31673a368044e9734cb5f9f71019580dde7e",
+   "verified": true,
+   "at_commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+  },
+  {
+   "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/panel_F/skeptic_statement.md",
+   "sha256": "22f248ea7785b95ac281d63a2b45bc72396c77cb0d06b862549492ffd495bcca",
+   "verified": true,
+   "at_commit": "6afb06951a13ca861b50f47a8faf5d5c06594109"
+  }
+ ],
+ "first_unresolved_step": "ATTEMPT.md step 11: no concrete composite or pseudo-Goldstone Higgs model is solved, so the two numbers that set the composite clock margin are undetermined: s (dimensionless strain coefficient of the composite-scale mass-squared in units of Lambda^2) and A = d ln m_H^2 / d ln Lambda^2 (here borrowed as Lambda^2/m_H^2); the clock needs s*A <= 6.7e12 (5.0e11 with the largest slope estimator). Upstream of this, the axioms supply neither the strain-to-coupling response law (sign and log of the toy flip with it, step 9) nor any Higgs or composite sector.",
+ "verdict": "PARTIAL",
+ "note": "Referee's 5.9e7 derivation file (ref_E1/E1_referee_verdict.md:29) is not in the frozen source set; step 6 is a reconstruction matching 5.9e7 to 0.3 percent, not a copy of it."
+}

@@ -1,0 +1,39 @@
+{
+  "task_id": "J:derive:review-20261014-tick-and-sink-boundaries:a1",
+  "source_branch": "claude/chirality-grid-exercise-20261014",
+  "source_head": "dd7d358c6f6b0fd049b46962970397dbdc7d2e1f",
+  "branch_head_seen_at_run_time": "4b306b21e0a20b6f57dc6690e731ba525905ce35",
+  "source_objects": [
+    {
+      "path": ".claude/science/exercises/chirality-grid-20261014/routes/F3/ROUTE_REPORT.md",
+      "sha256": "03893ce99f3d98523fab5c79619105d86d2896b0ec00ea558308c3a4811e1d1d",
+      "expected_sha256": "03893ce99f3d98523fab5c79619105d86d2896b0ec00ea558308c3a4811e1d1d",
+      "verified": true,
+      "unchanged_at_later_branch_head_4b306b21e0": true
+    },
+    {
+      "path": ".claude/science/exercises/chirality-grid-20261014/routes/F5/ROUTE_REPORT.md",
+      "sha256": "a4c6f510346d196b9487ca34b9b93c07a0a9d99fd74b443c5864d56e7493a545",
+      "expected_sha256": "a4c6f510346d196b9487ca34b9b93c07a0a9d99fd74b443c5864d56e7493a545",
+      "verified": true,
+      "unchanged_at_later_branch_head_4b306b21e0": true
+    },
+    {
+      "path": ".claude/science/exercises/chirality-grid-20261014/routes/F6/ROUTE_REPORT.md",
+      "sha256": "c9f08710bd33f1aaa5ac806279565c99b8c6ce1173827e4ff35a41142fb7a530",
+      "expected_sha256": "c9f08710bd33f1aaa5ac806279565c99b8c6ce1173827e4ff35a41142fb7a530",
+      "verified": true,
+      "unchanged_at_later_branch_head_4b306b21e0": true
+    },
+    {
+      "path": ".claude/science/exercises/chirality-grid-20261014/kills/K3/KILL_REPORT.md",
+      "sha256": "b5f98f5195d4735b854a5f2308691904e6f51beda65f599104027d04aa01a10a",
+      "expected_sha256": "b5f98f5195d4735b854a5f2308691904e6f51beda65f599104027d04aa01a10a",
+      "verified": true,
+      "unchanged_at_later_branch_head_4b306b21e0": true
+    }
+  ],
+  "first_unresolved_step": "ATTEMPT.md step 14: the rate and thresholds are cone-level, first-order, free two-band, with an assumed Peierls vertex and an assumed isotropic photon of speed c; the photon speed c, the gauge-sector dynamics and any record or sink dynamics are not supplied by the axioms, and the interacting / lattice-scale (beyond the cone) emission rate is not computed.",
+  "result_class": "PARTIAL-with-scoped-new-result",
+  "check_py": "TOTAL: PASS=43 FAIL=0"
+}

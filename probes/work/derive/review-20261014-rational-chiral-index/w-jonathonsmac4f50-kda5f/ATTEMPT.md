@@ -1,0 +1,148 @@
+# ATTEMPT: rational-projector chiral-index boundary (J:derive:review-20261014-rational-chiral-index:a1)
+
+Worker: Claude Sonnet 5.5, same family as the source route and its referee. Unrefereed. Nothing here is accepted science.
+I read, in full, `docs/MINIMAL_AXIOMS_2026-06-29.md` and `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md` on current main
+(`a77a3449c91a753b06ce2a63876cd460b62cb4cf`) before choosing premises. Labels: PROVED (full argument below), CHECKED (run by `check.py`),
+ASSUMED (premise or external theorem), READING (interpretation).
+
+## Plain summary
+
+The old claim: a free lattice Dirac operator built from finitely many local pieces cannot carry one lone left-handed species, because its
+chirality projector has a trivial topological class. I rebuilt the statement with a different and shorter proof, and pinned down exactly which
+hypothesis does the work. The hypothesis is "the denominator is nonzero at every point of the real momentum torus". It cannot be weakened to
+"the operator is rational and continuous": I give an explicit rational, continuous, exactly Ginsparg-Wilson operator, in 2D and 4D, with one
+lone simple massless zero and a nonzero Chern number. Separately, writing a rational symbol as an eliminated auxiliary sector does not keep
+Hermiticity (naive block), gauge stability (explicit flux example) or reflection positivity (explicit pair of symbols); each needs its own input.
+The link from the free-symbol topology to the zero-mode count in a general gauge background is NOT proved here.
+
+## 1. Setting and premises
+1. (ASSUMED) Objects: translation-invariant free operators on l^2(Z^d) tensor C^n, d even, with symbols matrix functions of z = (e^{ik_1},...,e^{ik_d}) on T^d.
+   The framework's physical sites are Z^3 with M_2(C) (`docs/MINIMAL_AXIOMS_2026-06-29.md:37-47`); a Euclidean Z^3 x Z_tau regulator is the
+   approved kinetic-isotropy primitive's block (`PRIMITIVE_REGISTRY_CHECK.md:58-80`). Admissibility supplies no dynamics, weights or Hamiltonian
+   (`MINIMAL_AXIOMS_2026-06-29.md:114-124`). So every "symbol", "Dirac operator" and "Ginsparg-Wilson relation" below is a supplied model/comparator,
+   not axiom content. d = 2 and d = 4 are comparator carriers.
+2. (ASSUMED) "Rational pole-free": P = N/g with N a matrix of Laurent polynomials and g a Laurent polynomial with g(z) != 0 for all z in T^d
+   (one common denominator). READING: this is the referee's corrected reading (`REFEREE_VERDICT.md:15`), which I adopt and sharpen in step 8.
+3. (verified) Source objects, sha256 re-computed from commit `dd7d358c...`: all three match (`RECOVERY_STATUS.json`).
+
+## 2. What already exists (not new)
+- Main already holds the Schur identity, the conditional rational-idempotent argument (Chow-group route, external inputs listed), and the
+  algebra "GW + gamma5^2=1 + [R,gamma5]=0 => (gamma5(1-2RD))^2 = 1", and states that the terminal negative promotion and gauge-background index
+  link remain pending: `outputs/chirality_exact_review_2026_10_18/proofs/free_overlap_and_rational_projectors.md:17-21`.
+- The source report has Lemma 0, Lemma R (Chow route), Theorem F2-R(a) in canonical R=1/2 form (`ROUTE_REPORT.md:48-75`); the referee confirmed the
+  narrow core and narrowed the heading (`REFEREE_VERDICT.md:77-79`).
+- No landed note or open PR I could find proves the K-theory (Hilbert-syzygy) route, gives a sharpness counterexample for the denominator
+  hypothesis, or checks Hermitian/flux/RP realisation constraints. Open PR #10049 (overlap of the cube-walk kernel, a non-rational sign-function
+  kernel) is a different object; its D with one zero at k=0 and doublers at |D|=2 has the same shape as the step-8 operator but is not rational. No claim here
+  overlaps it. (`gh pr list`, grep of docs/scripts/outputs for stereographic / stably free / Hilbert syzygy: no hits.)
+
+## 3. Lemma 0 (Schur equivalence). PROVED, algebraic only; not new
+Entries of E^{-1} are adj(E)/det E; det E nonzero on T^d, so A - B E^{-1} C is rational pole-free. Conversely N/g = 0 - N(-g)^{-1}1.
+READING: this is an equivalence of algebraic realisations only. Steps 9-11 show it does not carry Hermiticity, gauge stability or RP.
+
+## 4. Lemma R (stable triviality). PROVED, new proof route
+**Statement.** Let P in M_n(C[z^{+-1}][1/g]) with P(z)^2 = P(z) on T^d and g nonzero on T^d (Hermiticity not needed). Then there are
+integers a, b with Im P (+) C^a isomorphic to C^b as continuous (indeed real-analytic) vector bundles over T^d. Hence all Chern classes c_k, k >= 1,
+and all Chern characters ch_k, k >= 1, of Im P vanish, and [Im P] = rank in K^0(T^d).
+
+**Proof.**
+(i) P^2 - P has entries (N^2 - gN)/g^2 vanishing on T^d; a Laurent polynomial vanishing on T^d has zero Fourier coefficients, so P^2 = P in
+R := C[z^{+-1}][1/g] = A[1/s], where A = C[w_1..w_d], s = w_1...w_d g~ (g~ the polynomial w^m g).
+(ii) Q := P R^n is a finitely generated projective R-module. Let M be the A-submodule of R^n generated by the n columns of P; it is a finitely
+generated A-module and, by exactness of localisation, S^{-1}M = R-span of the columns = Q.
+(iii) Hilbert's syzygy theorem (ASSUMED, classical): 0 -> F_d -> ... -> F_0 -> M -> 0 with F_i free of finite rank. Localising is exact:
+0 -> R^{n_d} -> ... -> R^{n_0} -> Q -> 0.
+(iv) Q is projective, so the surjection splits and the kernel is again projective; inductively the bounded exact sequence of projectives splits:
+Q (+) R^a = R^b, a = n_1 + n_3 + ..., b = n_0 + n_2 + ....
+(v) For z in T^d, evaluation R -> C at z is a ring map because g(z) != 0. The isomorphism of (iv) is a matrix over R, so it evaluates to a
+continuous family of isomorphisms C-vector spaces. By Q (+) (1-P)R^n = R^n, the fibre of Q at z is Im P(z). So Im P (+) C^a = C^b over T^d.
+Whitney sum gives c(Im P) = 1. The claim for ch_k follows by additivity. QED.
+
+**Notes.** (a) Source route: Chow groups + Fulton cycle map (`ROUTE_REPORT.md:56-62`); the referee confirmed it. My route uses only the syzygy theorem and gives
+the stronger K^0 statement; it does not use Zariski density beyond step (i). (b) Torsion: none in K^0(T^d), so nothing further is lost.
+(c) CHECKED (illustration, not proof): `check.py` C1 gives an explicit global frame v = (h1 + i h2, h3) for the rational rank-1 projector with
+Bloch vector Phi(h) = (2 h1 h3, -2 h2 h3, h1^2+h2^2-h3^2)/|h|^2, for any real Laurent h with |h| nonvanishing; D1-D3 (numeric FHS, m = 1):
+the non-rational h-hat has Chern number -1 while the rational Phi(h) built from the same h has 0.
+
+## 5. Exact form of the hypothesis. PROVED
+"Entrywise regular at every point of T^d in the algebraic sense" (the reduced denominator of each entry, in the UFD C[z^{+-1}], is nonzero on T^d)
+is equivalent to the existence of a common Laurent denominator nonzero on T^d: take g = product of the reduced denominators. This is the clean statement of the
+referee's correction (`REFEREE_VERDICT.md:15`). It is not the same as "each entry extends continuously to T^d" (step 8).
+
+## 6. Canonical-R scalar-plus-vector free-symbol conclusion (the only one recovered). PROVED + CHECKED
+Setting (d = 4; d = 2 identical with gamma5 = sigma_3): D = a + i gamma_mu b_mu, a, b_mu real, so D^dagger = gamma5 D gamma5 (A4); R = 1/2.
+- 6.1 GW residual: gamma5 D + D gamma5 - D gamma5 D = gamma5 (2a - a^2 - b^2) (A5, symbolic). So GW iff 2a = a^2 + b^2. PROVED/CHECKED.
+- 6.2 gamma5hat := gamma5(1-D) is Hermitian, gammahat^2 = ((1-a)^2 + b^2) I (A6), and equals n.Gamma with n = (1-a, -b) in S^4 and
+  Gamma = (gamma5, i gamma5 gamma_mu) five Hermitian anticommuting matrices (A3, A7). PROVED/CHECKED.
+- 6.3 D(k) = 0 iff n(k) = N0 := (1,0,0,0,0) (a = b = 0). If N0 is a regular value (isolated simple zeros), deg n = sum over zeros of sign det(d b_mu / d k_nu).
+  PROVED (the 4 x 4 sign of -db equals sign of db).
+- 6.4 Phat = (1 - gammahat)/2 = (1 - n.Gamma)/2 is the pullback by n of the Bott projector on S^4; c1 = 0 (H^2(S^4) = 0); |c2(Bott)| = 1
+  (B1, pointwise Chern form, numeric) so c2(Phat) = +- deg n. PROVED modulo functoriality of Chern classes and the standard integral of the Bott form, with B1 a numeric
+  confirmation of the normalisation.
+- 6.5 **Theorem (canonical R, scalar+vector).** If a, b_mu are rational in z with a common Laurent denominator nonzero on T^4 and 2a = a^2 + b^2, and if the zeros of D
+  are isolated and regular, then sum over zeros of sign det(db/dk) = 0. Proof: Phat is an idempotent matrix over R; step 4 gives c2 = 0; 6.4 gives deg n = 0; 6.3 gives the sum. PROVED.
+  Consequence stated in the referee's strongest form (`REFEREE_VERDICT.md:79`): no lone simple chiral zero; no statement about "always carries a doubler" beyond this sum rule.
+- Scope: only the 5-dimensional (scalar + vector) class. Tensor, pseudoscalar or axial terms, tastes and general R are outside this step.
+
+## 7. Edge case inside the old reading (READING; no script check)
+The old "always carries a doubler" phrase presumes isolated regular zeros. A massive D has no zero (sum = 0 trivially). Non-isolated or degenerate zeros are not
+covered by 6.3, so the theorem stays as stated in 6.5.
+
+## 8. Sharpness: a counterexample when the denominator vanishes on T^d. PROVED + CHECKED (scoped HIT)
+Take t_mu = tan(k_mu/2) = -i (z_mu - 1)/(z_mu + 1) and
+a = 2|t|^2/(1+|t|^2), b_mu = 2 t_mu/(1+|t|^2), d = 2 or 4.
+- 8.1 2a = a^2 + b^2 identically (E1, F1): exact GW with R = 1/2, gamma5-Hermitian, scalar+vector. CHECKED (symbolic).
+- 8.2 D is rational in z. D is continuous on T^d with D -> 2 (b -> 0) whenever some k_mu -> pi, because a - 2 = -2/(1+|t|^2) and
+  |b|^2 (1+|t|^2)^2 = 4|t|^2 (E4), and |t| -> infinity there. (E7 gives the limits along rays exactly.) PROVED/CHECKED.
+- 8.3 D = 0 only at k = 0 (a = 0 iff t = 0); db/dk = identity there (E3, F2). So there is exactly one regular simple zero of chirality +1, and deg n = +1. PROVED/CHECKED.
+- 8.4 Hence c_1(Phat) = +-1 in d = 2 (E9, numeric FHS on 96^2 shifted grid: -1.000000) and |c_2(Phat)| = 1 in d = 4 by 6.4. This does not contradict Lemma R: the reduced
+  denominator of a(z) is, in d = 2, z1^2 z2^2 - 2 z1^2 z2 + z1^2 - 2 z1 z2^2 - 12 z1 z2 - 2 z1 + z2^2 - 2 z2 + 1, with gcd 1 against the numerator, and it vanishes at z = (-1,-1)
+  (E5, E6); in d = 4 the analogous Q(z) vanishes at (-1,-1,-1,-1) (F3). The singularity is a removable-in-value but not regular singularity (like x y^2/(x^2+y^2)).
+- 8.5 CHECKED (numeric): the 2D symbol's Fourier coefficients decay as a power law, log-log slope -4.01 (E10), consistent with the Dubail-Read / power-law picture (comparator, unverified).
+- READING: "regular on T^d" in `ROUTE_REPORT.md:54` and "rational pole-free" are not interchangeable with "rational and continuous". Exact GW chirality with one lone simple zero IS available
+  to rational continuous symbols; the price is locality in the exponential sense, not rationality per se. This is not a statement about physical selection or the framework's carrier.
+- This is a counterexample to an over-reading only; it is not a counterexample to Lemma R or Theorem 6.5.
+
+## 9. Schur realisation: Hermiticity. PROVED + CHECKED
+- 9.1 The Lemma-0 block [[0,N],[1,-g]] is not Hermitian for generic N (G3).
+- 9.2 If F = N'/h with N' Hermitian on T^d and h > 0 on T^d (any pole-free Hermitian rational F can be put in this form with h = |g|^2), then F = 0 - B E^{-1} B^dagger with the Hermitian
+  block [[0,B],[B^dagger,E]], B = [-N'/2, 1], E = [[0,h],[h,0]] (G1, symbolic in the 2 x 2 case; the n x n proof is the same line). E is invertible with spectrum {+h,-h}, signature (n,n) (G2). PROVED/CHECKED.
+- 9.3 READING: Hermitian realisability needs an indefinite auxiliary block. Whether a positive-definite E suffices (via sum-of-squares factorisation of c - F) is not shown; it would need a
+  matrix Positivstellensatz on the torus (ASSUMED, not used).
+
+## 10. Schur realisation: gauge stability. PROVED + CHECKED (explicit)
+g = 17/4 + 2cos k1 + 2cos k2 + 2cos(k1+k2) + 2cos(k1-k2). Bilinear in (cos k1, cos k2), so min = -4 + 17/4 = 1/4 > 0 on the free torus (G4): the Lemma R hypothesis holds.
+In uniform flux pi (T1 T2 = -T2 T1, G5) with path-ordered diagonal monomials T1T2 and T1T2^{-1}, the covariant operator is c + 2cos th1 sx + 2cos th2 sz + 4 sin th1 cos th2 sy (G6)
+and det = c^2 - 4(cos^2 th1 + cos^2 th2 + 4 sin^2 th1 cos^2 th2) = 0 at th1 = pi/2, cos^2 th2 = 289/320 (G7). So the auxiliary block that is gapped on the free torus is singular in this
+background, and A - B g(T)^{-1} C does not exist there. Caveats (READING): the covariant extension of diagonal hops is not unique; averaging the two paths makes the diagonal terms vanish at flux pi
+and removes this instance. Therefore a gauge-covariant effective operator needs a stated covariantisation and a hypothesis on the admissible background set (cf. Luscher's plaquette bound, comparator).
+
+## 11. Schur realisation: reflection positivity. CHECKED (exact, Fractions/sympy)
+F_{+-}(p) = 1 +- (3/5) cos p are Laurent polynomials, Hermitian, positive, with nonvanishing denominators (so Lemma R's hypotheses hold for both). Their inverse Fourier coefficients are
+C_{+-}(t) = (-+1/3)^{|t|}/(4/5) (H1). The link-reflection Hankel matrix [C(s+t+1)] has C_+(1) = -5/12 < 0 and is not PSD, while it is PSD for F_-; the site-reflection Hankel matrix is PSD for both (H2).
+F_+ and F_- are related by p -> p + pi (a sublattice sign), which preserves every hypothesis of steps 4-6. So link RP is independent of rationality, Hermiticity and positivity. By contraposition, an
+RP-violating effective kernel has no RP-satisfying (full-measure) local realisation (READING: marginals of an RP measure are RP; I did not re-prove this).
+Free overlap fermions being link-RP is a comparator (Kikukawa-Usui, as quoted in `ROUTE_REPORT.md:111`), not touched.
+
+## 12. General-rank interface (the one advanced). PROVED, conditional form
+**Proposition.** For any rank n and any even d, if D and R are rational pole-free matrix symbols, R commutes with gamma5 (gamma5^2 = 1), and gamma5 D + D gamma5 = 2 D gamma5 R D, then
+gammahat = gamma5(1-2RD) is an involution (main's note, `free_overlap_and_rational_projectors.md:21`), Phat = (1 - gammahat)/2 is a rational pole-free idempotent, and by step 4 all
+ch_k(Phat), k >= 1, vanish and [Im Phat] = rank. In particular the top Chern character, which is the relevant coefficient in general rank (`REFEREE_VERDICT.md:49`), vanishes, not only one Chern class.
+**Consequence (conditional).** IF the index of the gauge-covariant GW operator in a smooth background is given by the usual pairing of ch_top(Phat_free) with the background curvature
+(comparator: Luscher, Kikukawa-Yamada, Adams), THEN that index is 0 for rational pole-free symbols. The "IF" is exactly step 13.
+
+## 13. First unresolved step: the index link in a gauge background (general R). NOT PROVED
+Needed and not available here: (i) a specified gauge-covariant extension D[U] preserving the GW relation (the same function of covariant shifts does not stay GW, and by step 10 need not even exist);
+(ii) uniform locality/smoothness over the admissible background set; (iii) a universality theorem identifying the index of D[U] with the free coefficient. Even exact GW alone is insufficient
+(`REFEREE_VERDICT.md:49`). The source's evidence is 2D overlap kernels only (T1, T4b; not rerun here). I could not advance this.
+
+## 14. Second unresolved step: general-rank local-to-global identification. NOT PROVED
+Theorem 6.5 uses the sphere S^4 target, where zeros of D are a regular fibre and c_2 = deg. For general rank/taste D (V = 1 - D unitary), nonzero ch_top(Phat) need not force a zero of D, and a
+nondegenerate-zero sum rule requires a K-theory excision statement with explicit nondegeneracy hypotheses. SUGGESTED route: the relative class of (Phat, constant projector P_-) is supported on {V = 1}.
+
+## 15. What is new, what is not
+New (same-family, unrefereed): the Hilbert-syzygy proof and K^0 statement (step 4); the entrywise-regular equivalence (step 5); the explicit continuous rational exact-GW counterexample and its
+exact denominator (step 8); the three separate Schur-realisation checks with explicit symbols (steps 9-11); the all-ranks ch_top vanishing statement (step 12) as a conditional.
+Not new: Lemma 0, the Chow-group Lemma R conclusion, canonical-R part (a) (restated with the referee's hypotheses), the GW involution algebra, all comparators.
+Not claimed: any physical price list, exhaustiveness of the source's three options (`ROUTE_REPORT.md:147-155`), vacuum selection, impossibility for all finite rules or interacting mechanisms, continuous-time collapse onto symmetric mass generation.
+The supplied referee is used as guidance only; no step here borrows its certification.

@@ -1,0 +1,28 @@
+{
+  "source_branch": "claude/chirality-grid-exercise-20261014",
+  "source_head": "dd7d358c6f6b0fd049b46962970397dbdc7d2e1f",
+  "origin_branch_tip_seen_at_check": "4b306b21e0a20b6f57dc6690e731ba525905ce35",
+  "source_objects": [
+    {
+      "path": ".claude/science/exercises/chirality-grid-20261014/routes/F2/ROUTE_REPORT.md",
+      "sha256": "00eb5acdbec1bee25b7183906cbb49d52b6d5f8f16baf16937943a1771ac1755",
+      "expected_sha256": "00eb5acdbec1bee25b7183906cbb49d52b6d5f8f16baf16937943a1771ac1755",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/chirality-grid-20261014/routes/F2/REFEREE_VERDICT.md",
+      "sha256": "61a70050698940edbb198546f980e9a22961cb33eb708f202160527e499dd579",
+      "expected_sha256": "61a70050698940edbb198546f980e9a22961cb33eb708f202160527e499dd579",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/chirality-grid-20261014/routes/F2/PREREG.md",
+      "sha256": "1ab8022318e7f4ced9a5d995feb1b545cfbb911b05da78adb357340931ccf900",
+      "expected_sha256": "1ab8022318e7f4ced9a5d995feb1b545cfbb911b05da78adb357340931ccf900",
+      "verified": true
+    }
+  ],
+  "main_checkout_head": "a77a3449c91a753b06ce2a63876cd460b62cb4cf",
+  "check_py_sha256": "648adafdfc7830fc60b719ce0bac780a18cfe280dffdbf5e0bf55394564318fe",
+  "first_unresolved_step": "ATTEMPT.md step 13: the general-R / gauge-background index link (index in a smooth background = coefficient x free ch_top of Phat) is not proved here for any non-overlap kernel; the nearest provable statement (step 12) is only the free-symbol K-theory vanishing and the canonical-R scalar+vector zero sum rule. Also unresolved: step 14, the local-zero-to-ch_top identification for general rank (non scalar+vector) GW symbols."
+}

@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20261016-mirror-carrier-and-gap:a1",
+ "type": "judgment",
+ "lane": "review-science-20261016",
+ "worker": "w-jonathonsmac4f50-k8095",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261016-mirror-carrier-and-gap/w-jonathonsmac4f50-k8095/check.py",
+ "seed": 70383,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "a4085091",
+ "started_utc": "20261025T231943Z",
+ "elapsed_s": 49.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "Rebuilt from the lattice law, the fibre algebra shows P_stag flips chirality (Theta_M and shifts do not) and the symmetry group is transitive on the four chirality-by-taste blocks, so a chiral light block needs P_stag broken (explicitly or spontaneously); the carrier counts and the 14W eight-Majorana gap re-check exactly, and the large-W dimer gaps every mode, so it does not show a chiral phase. (runtime 48.1s)"
+ },
+ "review": "Read the log after the run: check.py (about 50 s) printed a HIT: in the supplied nearest-neighbour staggered law, site parity P_stag is the only element of {shifts, P_stag, Theta_M} that swaps the two chirality blocks of the momentum fibre; the group is transitive on the four chirality-by-taste blocks and the interacting spectral identity A_L(q) = A_R(1/q) holds for any P_stag-invariant state, so a chiral light block needs P_stag broken (explicitly or spontaneously); carrier counts (Frobenius-Schur types, no quaternionic gain, three nu_R labels need a surplus fourth), the 14W eight-Majorana gap and Z8 pattern re-check exactly; a large-W dimer gaps all 16 modes and is trivially gapped, not chiral. ATTEMPT.md stops at step 14 (whether a cube-local interaction breaking shifts and P_stag but keeping Theta_M can gap three of the four blocks; strain response not computed). Nearest-neighbour hops only; the interacting statement is a symmetry argument, the free propagator is checked. Same-family (Claude Sonnet 5.5), unrefereed.",
+ "what": "Reconstruct the real/quaternionic carrier count: real reduced two Majoranas form one Dirac, quaternionic even pairing supplies no automatic gain, and three right-handed-neutrino labels do not fit an unsupported three-Majorana identification. SO(N) is not an established Standard Model carrier. Advance one precisely defined interacting mirror-gap or taste-selection result, checking that the finite eight-Majorana 14W gap and large-W asymptotics do not prove a chiral lattice phase. State the unbroken-shift hypothesis and spontaneous-breaking alternatives. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise. Independence review on 2026-10-16 exactly checked the supplied eight-Majorana quartic spectrum (gap 14W for W>0) and the invariant-real-form lemma. These finite facts are not new research HITs and do not require solving the interacting mirror problem. Their canonical extraction is a separate review-packaging obligation currently held by the five-route N1 packet requirement; see probes/work/review-science-20261016/INDEPENDENCE_FOLLOWUP.md. Preserve the physical research target and all source recovery.",
+ "stdout_sha256": "523212eada2d19cfbc23760b128320aacbabdf9d1b934e29dbc4f49a66d8d1bd",
+ "stdout_tail": "uster hop V = i sum_a g_a(1) g_a(2) has operator norm 8.000000 <= 8\nPASS D3 dimer of clusters (checked numerically, 256x256): ground state unique with gap >= 14W - 2t||V|| for W=10,3 (t=1); (W,t,gap,Weyl bound)=[(10, 1, 138.9864, 124.0), (3, 1, 40.9665, 26.0), (1, 1, 12.9874, -2.0)]\nPASS D4 hence in this model large W gaps all 16 Majoranas (both chirality blocks, both tastes): no zero mode, no light sector, so the 14W gap and large-W limit are statements about a trivially gapped phase, not about a chiral one\nTOTAL: PASS=50 FAIL=0\nHIT: scoped finite-algebra result (unrefereed, same family) for the nearest-neighbour staggered law with odd symbol: P_stag exchanges the two chirality blocks of the momentum fibre while Theta_M and the shifts preserve them, so {S_mu, P_stag, Theta_M} act transitively on the four chirality-by-taste blocks and a P_stag-invariant state has equal L and R spectral content; a chiral light block therefore needs P_stag broken (explicitly or spontaneously); not found in the sources read, which tested P_stag only as a mass-protecting symmetry\nSUMMARY: Rebuilt from the lattice law, the fibre algebra shows P_stag flips chirality (Theta_M and shifts do not) and the symmetry group is transitive on the four chirality-by-taste blocks, so a chiral light block needs P_stag broken (explicitly or spontaneously); the carrier counts and the 14W eight-Majorana gap re-check exactly, and the large-W dimer gaps every mode, so it does not show a chiral phase. (runtime 48.1s)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k8095",
+  "at_utc": "20261025T232033Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Accepted as a logged scoped result (finite-algebra check with a short symmetry proof; no interacting phase claimed). Carried in the probe closing record; no issue filed.",
+  "by": "w-jonathonsmac4f50-k8095",
+  "at_utc": "20261025T232033Z"
+ }
+}

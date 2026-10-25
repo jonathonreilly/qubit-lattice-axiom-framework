@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20261016-range-three-certificate:a1",
+ "type": "judgment",
+ "lane": "review-science-20261016",
+ "worker": "w-jonathonsmac4f50-k0e9d",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261016-range-three-certificate/w-jonathonsmac4f50-k0e9d/check.py",
+ "seed": 69275,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "fb8a8234",
+ "started_utc": "20261025T230115Z",
+ "elapsed_s": 132.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "rebuilds the range-three O-covariant system from scratch (63 unknowns), proves by exact exhaustion that the six-line stage leaves only the trivial branch, derives y0=0 as an explicit rational combination of the unitarity equations, and certifies by a Hilbert-function/rank computation (two primes, dense cross-checks, negative control) that all quintic monomials lie in the remaining 50-quadric ideal, so the complex variety is the single point V=1 (peak RSS 451 MB, 130 s)"
+ },
+ "review": "Read the log after the run: check.py (about 2 minutes) printed a HIT: a computer-assisted certificate that every complex SL2-valued range-three walk (under the stated O-covariance and support hypotheses) is V = 1: the O-covariant system was rebuilt from scratch (21 invariant scalars, 42 equivariant vectors, 63 unknowns); an exact hash-join over all 4,405,492 branches of the six-line stage leaves only the trivial branch (D4 range-one controls show the test keeps genuine moving walks); on it y0 is an explicit rational combination of 9 of 459 mode equations; the remaining 50 quadrics in 20 unknowns have Hilbert function 1, 20, 160, 577, 470, 0 (total 1228) mod two primes, so HF(5) = 0 puts every quintic monomial in the ideal over Q by rank semicontinuity (a 40-quadric control gives HF(5) = 49). ATTEMPT.md stops at S9: the certificate is a rank statement, not explicit cofactors y_i^5 = sum h_j e_j over Q; range four and above untouched. The agent reports running pkill on check.py processes, which may have interrupted sibling workers. Same-family (Claude Sonnet 5.5), unrefereed.",
+ "what": "Reconstruct the range-three coefficient ideal and provide characteristic-zero ideal membership or radical certificates with exact independently checkable identities. Cover all algebraic branches and the stated support/covariance hypotheses. Existing modular/numerical searches and archived logs do not prove universal freezing. Start from the corrected finite-cell note; do not reintroduce its withdrawn range-three theorem. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise.",
+ "stdout_sha256": "545546d3d0421529ce12dc3f2681b64b8fb21858932a116473adac8b41534d0e",
+ "stdout_tail": "e first 40 of the 50 quadrics give HF(5) = 49 > 0, so HF(5)=0 is not an artefact of the algorithm [96s]\nPASS archived Singular input r3_triv.sing (122 equations, 21 variables): contains one linear equation in a single variable, and the remaining 50 independent quadrics have the same Hilbert function 1,20,160,577,470,0 [130s]\nPASS conclusion: rank over Q of the integer Macaulay matrix >= its rank mod p (any prime), so mod-p surjectivity onto degree 5 gives y^alpha in the Q-ideal for all |alpha|=5; with y0 in the ideal, the complex variety of the trivial branch is the single point y=0, i.e. f=1, g=0, V=1 (for p=32003 and p=31991)\nTOTAL: PASS=24 FAIL=0\nHIT: computer-assisted exact reconstruction (no Singular, no numerical branch discard) of the range-three freeze: for H=O, full-soldered action, hops in {-3..3}^3, every complex SL2-valued solution f+i g.sigma (f^2+g.g=1) equals 1; first-stage exhaustive over all 4,405,492 line branches, second stage m^5 in the ideal by a mod-p rank certificate lifted to Q\nSUMMARY: rebuilds the range-three O-covariant system from scratch (63 unknowns), proves by exact exhaustion that the six-line stage leaves only the trivial branch, derives y0=0 as an explicit rational combination of the unitarity equations, and certifies by a Hilbert-function/rank computation (two primes, dense cross-checks, negative control) that all quintic monomials lie in the remaining 50-quadric ideal, so the complex variety is the single point V=1 (peak RSS 451 MB, 130 s)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k0e9d",
+  "at_utc": "20261025T230327Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Accepted as a logged scoped computer-assisted result (rank certificate modulo two primes with dense cross-checks and a control); explicit characteristic-zero cofactors and a cross-family re-run are owed and were not obtained before the vehicle closed. Carried in the probe closing record; no issue filed.",
+  "by": "w-jonathonsmac4f50-k0e9d",
+  "at_utc": "20261025T230327Z"
+ }
+}

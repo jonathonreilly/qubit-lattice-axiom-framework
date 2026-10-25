@@ -1,0 +1,32 @@
+{
+ "task": "X:formation-3plus1-lro-large",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-sonnet-5-5",
+ "command": "cd probes/lib && python3 formation_levelplane.py 3 sphere 1.5 128 3000 1500 2",
+ "seed": 62234,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fa9c7db0",
+ "started_utc": "20261025T210354Z",
+ "elapsed_s": 1942.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=3 menu=sphere beta=1.5 L=128 T=3000 plateau_|m|=0.5943 lowk_ratio=1.0103 seconds=1942"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "Pin the limit of the plateau |m| in 3+1 (level-ordered sphere formation): the 2026-09-22 scans fit m(L) = m_inf + b/L with m_inf about 0.732 (beta 2) on L = 16-96; larger planes (128) at 1.25, 1.5, 2 and the onset region at 64 and 96. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py). GRID UNITS: one run per point.",
+ "stdout_sha256": "4f8d2b4098609436ee3ee67fd92dee8cb4d0bdcfa6338f4139e475dbf7b15304",
+ "stdout_tail": "       20  0.6348  +0.6348\n        28  0.6266  +0.6266\n        39  0.6203  +0.6203\n        55  0.6147  +0.6147\n        76  0.6107  +0.6107\n       107  0.6072  +0.6072\n       149  0.6049  +0.6049\n       208  0.6028  +0.6028\n       290  0.6007  +0.6007\n       405  0.5978  +0.5978\n       566  0.5968  +0.5967\n       790  0.5971  +0.5971\n      1103  0.5952  +0.5952\n      1539  0.5957  +0.5956\n      2149  0.5950  +0.5949\n      3000  0.5928  +0.5927\nequal-level transverse structure factor S_0(k) / [sigma^2/(1-|phi|^2)] by |k| shell:\n   |k| in [0,0.3): 1.0103 (n=948)\n   |k| in [0.3,0.6): 1.0182 (n=6740)\n   |k| in [0.6,1.0): 1.0288 (n=27824)\n   |k| in [1.0,1.5): 1.0411 (n=84000)\n   |k| in [1.5,2.2): 1.0543 (n=257500)\n   |k| in [2.2,3.2): 1.0664 (n=781137)\n   |k| in [3.2,6.0): 1.0718 (n=939002)\nsite covariance without the zero mode along e_1: r, measured C(r), linear C(r), ratio, r*linear C(r) (the 1/r law of a three-dimensional plane)\n     1  +0.062502  +0.062244  1.004  +0.06224\n     2  +0.029425  +0.030063  0.979  +0.06013\n     3  +0.018521  +0.019338  0.958  +0.05801\n     4  +0.013185  +0.014073  0.937  +0.05629\n     6  +0.007903  +0.008846  0.893  +0.05307\n     8  +0.005277  +0.006240  0.846  +0.04992\n    12  +0.002685  +0.003640  0.738  +0.04368\n    16  +0.001462  +0.002347  0.623  +0.03755\n    24  +0.000260  +0.001073  0.243  +0.02575\n    32  -0.000153  +0.000462  -0.332  +0.01478\nSUMMARY: dim=3 menu=sphere beta=1.5 L=128 T=3000 plateau_|m|=0.5943 lowk_ratio=1.0103 seconds=1942\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20261025T213617Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

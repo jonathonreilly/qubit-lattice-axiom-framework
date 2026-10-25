@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20261016-global-dirac-torus:a1",
+ "type": "judgment",
+ "lane": "review-science-20261016",
+ "worker": "w-jonathonsmac4f50-k6495",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261016-global-dirac-torus/w-jonathonsmac4f50-k6495/check.py",
+ "seed": 68827,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "3ca47849",
+ "started_utc": "20261025T225347Z",
+ "elapsed_s": 11.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "exact Groebner stratification of the zero set of g plus PSD exclusions classifies all zero/pi quasienergy touchings of the massless Clifford walk family and finds 6 new admissible members with face/corner pi Dirac cones."
+ },
+ "review": "Read the log after the run: check.py (about 6 s) printed a HIT: an exact Groebner stratification of the zero set of the vector part g plus positive-semidefinite exclusions classifies the zero and pi quasienergy touchings of the massless-at-k=0 Clifford walk family: for every allowed b != 0 the zero-touching set is exactly {k = 0}; the pi-touching set is empty except for 8 explicit members (axis nodes b_gold, three face nodes b_M with s = cos(pi/12) < 1, four corner members b_R = (3 b2, b1, b2) with b2^2 = 7/396, b1^2 = 5/132), each pi node a massless Dirac cone; the source's b* and b_iso have no other touching (the source had only a mesh). The face and corner members are new; the positive-semidefinite check on them uses 60-digit eigenvalues, not intervals, and the stratum enumeration is argued by hand with no second implementation. ATTEMPT.md stops at step 12 (members normalised at a point other than k = 0; walks outside the Clifford form). Same-family (Claude Sonnet 5.5), unrefereed.",
+ "what": "Prove or refute the complete Brillouin-torus zero/pi-touching set of the corrected explicit walk family, retaining parameter endpoints and Gram PSD/rank restrictions. A finite mesh with no other zero is not a doubler-free proof. Local Dirac expansion, numerical rank-two candidates and tangent-space dimensions cannot replace global algebraic exclusion. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise. PR9658 review additionally verifies four identified local nodes at the light-speed member, including the three uniaxial pi cones with transverse speed sqrt(5)-2. This does not exhaust the torus or identify physical species. The positivity-to-C3 physical bridge remains open; repeating the local cone is not a new HIT.",
+ "stdout_sha256": "8325d3bb64fceb735828f1bae151a2288ad20200f2e014248388e839d3896c18",
+ "stdout_tail": "910321']\nINFO scan: 6872 admissible samples (G PSD, det G ~ 0) from the quartic-in-b1^2 parametrisation + perturbations\nINFO scan: 26 samples have min_k (1+f) < 0.02; their max distance to P = 0.0144\nPASS 6.1 (numerical) every scanned admissible b with a grid point of 1+f < 0.02 lies within 0.06 of a member of P\nPASS 6.2 (numerical) away from P (distance > 0.1; 5266 samples) min_k (1+f) stays >= 0.02 (smallest 0.3216): no pi touching\nPASS 6.3 (numerical) 1 - f > 0 off k=0 for all scanned b with s != 0 (smallest (1-f)/(s^2 sum sin^2(k/2)) = 0.389)\nPASS 6.4 (numerical, k-grid) at every member of P the set {f = -1} on the grid is exactly the predicted TRIM orbit (X: three axis points, M: three face points, R: the corner)\nPASS 6.5 (numerical, k-grid) at every member of P the set {f = +1} on the grid is {k = 0} only\nINFO runtime 9.8 s\nHIT: for the massless-normalised family (G(b) PSD rank<=3, b != 0) the zero-touching set is exactly {k=0}; the pi-touching set is empty except for 8 explicit members: +-b_gold (3 axis cones), +-b_M (3 face cones, s ~ 0.966) and 4 members b_R = (3b2, b1, b2) with b2^2 = 7/396, b1^2 = 5/132 (1 corner cone) -- the face and corner pi members are new; the source's b* and b_iso are globally gapped except k=0\nTOTAL: PASS=65 FAIL=0\nSUMMARY: exact Groebner stratification of the zero set of g plus PSD exclusions classifies all zero/pi quasienergy touchings of the massless Clifford walk family and finds 6 new admissible members with face/corner pi Dirac cones.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k6495",
+  "at_utc": "20261025T225359Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Accepted as a logged scoped result with computer-assisted elimination (marked PROVED modulo exact elimination by the author); no second implementation has seen the stratum enumeration and no other-family referee confirmed it. Carried in the probe closing record; no issue filed.",
+  "by": "w-jonathonsmac4f50-k6495",
+  "at_utc": "20261025T225359Z"
+ }
+}

@@ -1,0 +1,97 @@
+PASS 0.1 Gram identity phi^T G phi + |g|^2 = 1 identically in k (s_a^2 = 1 - c_a^2)
+PASS 0.2 phi0^T G phi0 = 1 exactly (g(0)=0)
+PASS 0.3 g_a = sin(k_a) * B_a(c) with B_a = b0 + b1 (c_b + c_c) + b2 c_b c_c
+PASS 0.4 B_1 - B_2 = (c2 - c1)(b1 + b2 c3)  (and cyclic)
+PASS 0.5 identity (phi - 1 phi0)^T G (phi - 1 phi0) + |g|^2 = 2 - 2 (1) f, f = phi0^T G phi
+PASS 0.5 identity (phi - -1 phi0)^T G (phi - -1 phi0) + |g|^2 = 2 - 2 (-1) f, f = phi0^T G phi
+PASS 0.6 G(-b) = G(b) (spectrum symmetric under b -> -b)
+PASS 0.7 G(b0,-b1,b2) = D G(b) D, D = diag(1,-1,1,-1) (the Q=(pi,pi,pi) shift, phi(k+Q) = D phi(k))
+PASS 1.1 b = t(1,-1,1): G11 = -t^2 < 0 for t != 0, so not PSD
+PASS 1.2 b = t(1,1,1): e3 = -6 t^4 < 0 (char-poly coefficient), so not PSD for t != 0
+PASS 1.3 b = (0,b1,0): G11 = -2 b1^2 < 0 for b1 != 0, so not PSD
+PASS 1.4 PSD forces |b2| <= 1/3 (minors: G11>=0, G00>=0, 2x2 minor of G22,G33 => b0^2>=2b1^2>=3b2^2, 3b0^2<=1)
+PASS 2.X0 TRIM class X, f = +1 (G(phi_T - phi0) = 0): complex solutions of the 4 equations lie in {b=0} u {b = t(1,-1,1)}
+PASS 2.M0 TRIM class M, f = +1 (G(phi_T - phi0) = 0): complex solutions of the 4 equations lie in {b=0}
+PASS 2.R0 TRIM class R, f = +1 (G(phi_T - phi0) = 0): complex solutions of the 4 equations lie in {b=0}
+PASS 2.X1 TRIM X, f = -1: Groebner basis has shape b0 = p(b2), b1 = q(b2), r(b2) = 0 (zero-dimensional)
+PASS 2.M1 TRIM M, f = -1: Groebner basis has shape b0 = p(b2), b1 = q(b2), r(b2) = 0 (zero-dimensional)
+INFO class X pi-root b = (0.6611739947, 0.9568599941, -3.574893983), residual 3.11e-59, eigs ['-14.377', '-4.5114', '-1.2446e-60', '44.574'] admissible=False
+INFO class X pi-root b = (-0.3980160999, -0.2200178888, -0.1619481224), residual 3.89e-62, eigs ['9.7235e-63', '0.0007706', '0.043204', '0.69165'] admissible=True
+INFO class X pi-root b = (0.3980160999, 0.2200178888, 0.1619481224), residual 3.89e-62, eigs ['9.7235e-63', '0.0007706', '0.043204', '0.69165'] admissible=True
+INFO class X pi-root b = (-0.6611739947, -0.9568599941, 3.574893983), residual 3.11e-59, eigs ['-14.377', '-4.5114', '-1.2446e-60', '44.574'] admissible=False
+PASS 2.X2 real solutions of G(phi_X + phi0) = 0: 4 real points, 2 of them with G PSD rank 3 (a +- pair)
+INFO class M pi-root b = (-1.111682355, 1.724054791, -1.370501400), residual 4.48e-59, eigs ['-7.809', '-3.9741e-60', '0.33728', '9.7565'] admissible=False
+INFO class M pi-root b = (-0.4045755736, -0.2077968620, -0.1457565285), residual 2.92e-62, eigs ['3.7778e-63', '0.00080122', '0.035388', '0.67894'] admissible=True
+INFO class M pi-root b = (0.4045755736, 0.2077968620, 0.1457565285), residual 2.92e-62, eigs ['3.7778e-63', '0.00080122', '0.035388', '0.67894'] admissible=True
+INFO class M pi-root b = (1.111682355, -1.724054791, 1.370501400), residual 4.48e-59, eigs ['-7.809', '-3.9741e-60', '0.33728', '9.7565'] admissible=False
+PASS 2.M2 real solutions of G(phi_M + phi0) = 0: 4 real points, 2 of them with G PSD rank 3 (a +- pair)
+PASS 2.R1 TRIM R, f = -1: ideal equals <59 b0 - 177 b2, 177 b1^2 - 1188 b2^4 - 132 b2^2 - 4, b1 (396 b2^2 - 7), (396 b2^2 - 7)(297 b2^4 + 33 b2^2 + 1)>
+PASS 2.R2 297 y^2 + 33 y + 1 has negative discriminant (no real b2^2), so b2^2 = 7/396, hence b1^2 = 5/132 and b0 = 3 b2
+PASS 2.R3 exact: b_R = (sqrt(77)/22, sqrt(165)/66, sqrt(77)/66) solves G(phi_R + phi0) = 0 and is PSD rank 3
+PASS 2.R3 exact: b_R = (sqrt(77)/22, -sqrt(165)/66, sqrt(77)/66) solves G(phi_R + phi0) = 0 and is PSD rank 3
+PASS 2.R3 exact: b_R = (-sqrt(77)/22, -sqrt(165)/66, -sqrt(77)/66) solves G(phi_R + phi0) = 0 and is PSD rank 3
+PASS 2.R3 exact: b_R = (-sqrt(77)/22, sqrt(165)/66, -sqrt(77)/66) solves G(phi_R + phi0) = 0 and is PSD rank 3
+PASS 2.X3 exact: b_gold solves G(phi_X + phi0) = 0 (source Theorem 5), so it is one of the PSD real points above
+PASS 2.M3 exact: G(b0(b2), b1(b2), b2)(phi_M + phi0) reduces to 0 modulo the degree-8 minimal relation r(b2)
+PASS 3.1 axis-line stratum c=(x,1,1), x in (-1,1), f=+1: solutions in {0} u {t(1,-1,1)}
+PASS 3.2 axis-line stratum c=(x,1,1), f=-1: ideal is the unit ideal (no complex solution at all)
+PASS 3.1 axis-line stratum c=(x,1,-1), x in (-1,1), f=+1: solutions in {b=0}
+PASS 3.2 axis-line stratum c=(x,1,-1), f=-1: ideal is the unit ideal (no complex solution at all)
+PASS 3.1 axis-line stratum c=(x,-1,-1), x in (-1,1), f=+1: solutions in {b=0}
+PASS 3.2 axis-line stratum c=(x,-1,-1), f=-1: forces x = 31/8, outside [-1,1]
+PASS 3.3 diagonal stratum c=(g,g,1), g != 1, f=+1: solutions in {b=0}
+PASS 3.4 diagonal stratum c=(g,g,+1), f=-1: forces g = -2, outside [-1,1]
+PASS 3.3 diagonal stratum c=(g,g,-1), g != 1, f=+1: solutions in {b=0}
+PASS 3.4 diagonal stratum c=(g,g,-1), f=-1: g is a root of (g+4)(g^3+10g^2+17g-44), none in [-1,1]
+PASS 3.5 relation b1+eps b2 = 0 = b0+eps b1 gives exactly the lines t(1,-1,1) (eps=+1), t(1,1,1) (eps=-1); both non-PSD (1.1, 1.2)
+PASS 3.6 body-diagonal stratum c=(g,g,g), g != 1, f=+1: forces b0 = b2 = 0, then b = (0,b1,0) which is non-PSD unless b1=0 (1.3)
+PASS 3.7 body-diagonal stratum c=(g,g,g), f=-1: g is a root of 8g^4+47g^3+138g^2+201g+141, which has no real root
+PASS 3.8 two-equal stratum c=(g,g,x) (b0 b2 = b1^2, g = -b1/b2), x != 1, f=+1: B2^2 (g-1) = 0 so b = 0 or b = B2 (1,-1,1) (non-PSD)
+PASS 3.9 two-equal stratum c=(g,g,x), f=-1: unit ideal (no solution)
+PASS 3.10 three pairwise-distinct interior c_a with B_1 = B_2 = B_3 = 0 forces b = 0
+PASS 3.11 identities v^T G v = 1 - s^2, w^T G w = s^2, v^T G w = 0 (source Theorem 4)
+PASS 3.12 G w = 0 has complex solutions only in {b=0} u {b = t(1,-1,1)}; the line is non-PSD, so an admissible b with s = 0 is b = 0
+PASS 3.13 pair (X,M) with F(X) = +F(M): complex solutions in {b=0} (t(1,1,1) is non-PSD)
+PASS 3.13 pair (X,R) with F(X) = +F(R): complex solutions in {b=0} (t(1,1,1) is non-PSD)
+PASS 3.13 pair (M,R) with F(M) = +F(R): complex solutions in {b=0} u {t(1,1,1)} (t(1,1,1) is non-PSD)
+PASS 3.14 pair (X,M) with F(X) = -F(M): b2 is a root of (4b2^2-9)(b2^4-7b2^2+1); every real root has |b2| > 1/3, violating PSD (1.4)
+PASS 3.15 pair (X,R) with F(X) = -F(R) is the b1 -> -b1 image of the (M,0) pi system; pair (M,R) with F(M) = -F(R) is the image of the (X,0) pi system
+INFO P has 8 members (lists below)
+PASS 4.1 P = 2 (X: +-b_gold) + 2 (M: +-b_M) + 4 (R) = 8 admissible members with a pi-touching TRIM node
+INFO member M b=(-0.40457557,-0.20779686,-0.14575653): cos theta_X,M,R = ['-0.8660254', '-1.0', '-0.96369114']
+INFO member M b=(0.40457557,0.20779686,0.14575653): cos theta_X,M,R = ['-0.8660254', '-1.0', '-0.96369114']
+INFO member R b=(-0.39886202,-0.19462474,-0.13295401): cos theta_X,M,R = ['-0.69672329', '-0.95934956', '-1.0']
+INFO member R b=(-0.39886202,0.19462474,-0.13295401): cos theta_X,M,R = ['0.95934956', '0.69672329', '-1.0']
+INFO member R b=(0.39886202,0.19462474,0.13295401): cos theta_X,M,R = ['-0.69672329', '-0.95934956', '-1.0']
+INFO member R b=(0.39886202,-0.19462474,0.13295401): cos theta_X,M,R = ['0.95934956', '0.69672329', '-1.0']
+INFO member X b=(-0.3980161,-0.22001789,-0.16194812): cos theta_X,M,R = ['-1.0', '-0.88854382', '-0.77350988']
+INFO member X b=(0.3980161,0.22001789,0.16194812): cos theta_X,M,R = ['-1.0', '-0.88854382', '-0.77350988']
+PASS 4.2 at each member of P exactly one TRIM class is a pi node, and it is the predicted class; no TRIM class touches 0
+INFO cone speeds |s| of the P members: 0.1426, 0.1426, 0.9211, 0.9211, 0.9659, 0.9659, 1.0000, 1.0000
+PASS 4.3 Jacobian of g at the nodes: X: diag(-s, b0-b2, b0-b2); M(pi,pi,0): diag(-(b0-b2), -(b0-b2), b0-2b1+b2); R: -(b0-2b1+b2) 1
+INFO node M of member b=(-0.404576,...): det J = -0.0090258, max |(pi-omega)/|Jq| - 1| = 2.60e-07
+INFO node M of member b=(0.404576,...): det J = 0.0090258, max |(pi-omega)/|Jq| - 1| = 2.05e-07
+INFO node R of member b=(-0.398862,...): det J = 0.0028977, max |(pi-omega)/|Jq| - 1| = 2.05e-07
+INFO node R of member b=(-0.398862,...): det J = 0.7814, max |(pi-omega)/|Jq| - 1| = 1.31e-08
+INFO node R of member b=(0.398862,...): det J = -0.0028977, max |(pi-omega)/|Jq| - 1| = 1.39e-07
+INFO node R of member b=(0.398862,...): det J = -0.7814, max |(pi-omega)/|Jq| - 1| = 1.34e-08
+INFO node X of member b=(-0.398016,...): det J = 0.055728, max |(pi-omega)/|Jq| - 1| = 8.94e-08
+INFO node X of member b=(0.398016,...): det J = -0.055728, max |(pi-omega)/|Jq| - 1| = 8.33e-08
+PASS 4.4 every pi node of P is a massless Dirac cone: det J != 0 and (pi - omega) = |J q| (1 + O(q)) numerically at |q| = 1e-3
+PASS 4.5 the four R members form two pairs (b0,b1,b2) <-> (b0,-b1,b2) with f_B(k) = -f_A(k+Q): one spectrum, relabelled by the shift k -> k+(pi,pi,pi) and omega -> omega+pi
+PASS 4.6 (numerical, 60 digits) the M members have cone speed s = +-(sqrt2 + sqrt6)/4 = +-cos(pi/12), i.e. cos theta_X = -sqrt3/2 at the axis points
+PASS 5.1 source's b* = (11/30, sqrt(u*), 3/20): det G = 0 and G PSD of rank 3 (eigs ['-2.171e-62', '0.01731', '0.05286', '0.7059'])
+PASS 5.2 source's b_iso: G PSD of rank 3
+PASS 5.3 b*: not in P (distance 0.0367), b != 0, so by the theorem T_0 = {k=0}, T_pi = empty; TRIM cos values ['-0.672336', '-0.584999', '-0.586486']
+PASS 5.3 b_iso: not in P (distance 0.0446), b != 0, so by the theorem T_0 = {k=0}, T_pi = empty; TRIM cos values ['-0.333333', '-0.777778', '-0.910321']
+INFO scan: 6872 admissible samples (G PSD, det G ~ 0) from the quartic-in-b1^2 parametrisation + perturbations
+INFO scan: 26 samples have min_k (1+f) < 0.02; their max distance to P = 0.0144
+PASS 6.1 (numerical) every scanned admissible b with a grid point of 1+f < 0.02 lies within 0.06 of a member of P
+PASS 6.2 (numerical) away from P (distance > 0.1; 5266 samples) min_k (1+f) stays >= 0.02 (smallest 0.3216): no pi touching
+PASS 6.3 (numerical) 1 - f > 0 off k=0 for all scanned b with s != 0 (smallest (1-f)/(s^2 sum sin^2(k/2)) = 0.389)
+PASS 6.4 (numerical, k-grid) at every member of P the set {f = -1} on the grid is exactly the predicted TRIM orbit (X: three axis points, M: three face points, R: the corner)
+PASS 6.5 (numerical, k-grid) at every member of P the set {f = +1} on the grid is {k = 0} only
+INFO runtime 9.8 s
+HIT: for the massless-normalised family (G(b) PSD rank<=3, b != 0) the zero-touching set is exactly {k=0}; the pi-touching set is empty except for 8 explicit members: +-b_gold (3 axis cones), +-b_M (3 face cones, s ~ 0.966) and 4 members b_R = (3b2, b1, b2) with b2^2 = 7/396, b1^2 = 5/132 (1 corner cone) -- the face and corner pi members are new; the source's b* and b_iso are globally gapped except k=0
+TOTAL: PASS=65 FAIL=0
+SUMMARY: exact Groebner stratification of the zero set of g plus PSD exclusions classifies all zero/pi quasienergy touchings of the massless Clifford walk family and finds 6 new admissible members with face/corner pi Dirac cones.

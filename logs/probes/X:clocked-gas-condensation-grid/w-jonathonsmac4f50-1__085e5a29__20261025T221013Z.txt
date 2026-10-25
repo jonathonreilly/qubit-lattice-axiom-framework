@@ -1,0 +1,3 @@
+L 16 N 96 rho 0.02344 g 0.500 events 20000000 seed 1
+touching 0.1629 largest_cluster_share 0.0304 S_kmin 1.739 mean_field_limit_g 1.1086
+SUMMARY: L=16 N=96 g=0.500 largest_cluster_share=0.0304 touching=0.1629 S_kmin=1.739

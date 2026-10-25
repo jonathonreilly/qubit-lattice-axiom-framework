@@ -1,0 +1,32 @@
+{
+ "task": "X:clocked-gas-condensation-grid",
+ "type": "scan",
+ "lane": "moving-records-clocks",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-sonnet-5-5",
+ "command": "cd probes/lib && python3 clocked_gas.py 16 96 0.5 20000000 1",
+ "seed": 66213,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "085e5a29",
+ "started_utc": "20261025T221013Z",
+ "elapsed_s": 71.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "L=16 N=96 g=0.500 largest_cluster_share=0.0304 touching=0.1629 S_kmin=1.739"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "Block 95 (#8860): 96 records on 16^3 condense into one cluster with a vapour from g = 0.8 (below the mean-field stability limit 1.109; energy-entropy count for a full ball 0.887). Map the condensation coupling against size and density: largest cluster share against g on 12^3, 16^3, 24^3 at densities 1/64 and 3/128. Arguments: L N g events seed. GRID UNITS: one run per point.",
+ "stdout_sha256": "678b860e104a8fe3c24e413250f789e650b99c713fde009380c32845fa143d1f",
+ "stdout_tail": "L 16 N 96 rho 0.02344 g 0.500 events 20000000 seed 1\ntouching 0.1629 largest_cluster_share 0.0304 S_kmin 1.739 mean_field_limit_g 1.1086\nSUMMARY: L=16 N=96 g=0.500 largest_cluster_share=0.0304 touching=0.1629 S_kmin=1.739\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20261025T221125Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

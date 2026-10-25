@@ -1,0 +1,156 @@
+# Part 1: H_phi on small open boxes: local star terms, projectors, commutation, spectrum
+PASS chain n=4 m=2: local star formula h_v == U P_v U^dagger for all 4 sites
+PASS chain n=4 m=2: each h_v acts on the star of v only (support radius 1)
+PASS chain n=4 m=2: h_v^2 = h_v (norm-one projectors)
+PASS chain n=4 m=2: all pairs [h_u,h_v] = 0
+PASS chain n=4 m=2: Tr h_v = 2^(n-1) (rank 2^(n-1) projectors)
+PASS chain n=4 m=2: H psi = 0 for psi(z)=zeta^E(z) (weighted graph state)
+PASS chain n=4 m=2: prod_(k=0..4) (H-k) = 0, spectrum within integers 0..4
+PASS chain n=4 m=2: Tr H^p (p=1..4) = sum_k C(4,k) k^p, so multiplicity of k is C(4,k); lowest eigenvalue 0 simple, gap exactly 1
+PASS 2x2 box m=2: local star formula h_v == U P_v U^dagger for all 4 sites
+PASS 2x2 box m=2: each h_v acts on the star of v only (support radius 1)
+PASS 2x2 box m=2: h_v^2 = h_v (norm-one projectors)
+PASS 2x2 box m=2: all pairs [h_u,h_v] = 0
+PASS 2x2 box m=2: Tr h_v = 2^(n-1) (rank 2^(n-1) projectors)
+PASS 2x2 box m=2: H psi = 0 for psi(z)=zeta^E(z) (weighted graph state)
+PASS 2x2 box m=2: prod_(k=0..4) (H-k) = 0, spectrum within integers 0..4
+PASS 2x2 box m=2: Tr H^p (p=1..4) = sum_k C(4,k) k^p, so multiplicity of k is C(4,k); lowest eigenvalue 0 simple, gap exactly 1
+PASS chain n=4 m=3: local star formula h_v == U P_v U^dagger for all 4 sites
+PASS chain n=4 m=3: each h_v acts on the star of v only (support radius 1)
+PASS chain n=4 m=3: h_v^2 = h_v (norm-one projectors)
+PASS chain n=4 m=3: all pairs [h_u,h_v] = 0
+PASS chain n=4 m=3: Tr h_v = 2^(n-1) (rank 2^(n-1) projectors)
+PASS chain n=4 m=3: H psi = 0 for psi(z)=zeta^E(z) (weighted graph state)
+PASS chain n=4 m=3: prod_(k=0..4) (H-k) = 0, spectrum within integers 0..4
+PASS chain n=4 m=3: Tr H^p (p=1..4) = sum_k C(4,k) k^p, so multiplicity of k is C(4,k); lowest eigenvalue 0 simple, gap exactly 1
+PASS 2x2 box m=3: local star formula h_v == U P_v U^dagger for all 4 sites
+PASS 2x2 box m=3: each h_v acts on the star of v only (support radius 1)
+PASS 2x2 box m=3: h_v^2 = h_v (norm-one projectors)
+PASS 2x2 box m=3: all pairs [h_u,h_v] = 0
+PASS 2x2 box m=3: Tr h_v = 2^(n-1) (rank 2^(n-1) projectors)
+PASS 2x2 box m=3: H psi = 0 for psi(z)=zeta^E(z) (weighted graph state)
+PASS 2x2 box m=3: prod_(k=0..4) (H-k) = 0, spectrum within integers 0..4
+PASS 2x2 box m=3: Tr H^p (p=1..4) = sum_k C(4,k) k^p, so multiplicity of k is C(4,k); lowest eigenvalue 0 simple, gap exactly 1
+PASS chain n=4 m=4: local star formula h_v == U P_v U^dagger for all 4 sites
+PASS chain n=4 m=4: each h_v acts on the star of v only (support radius 1)
+PASS chain n=4 m=4: h_v^2 = h_v (norm-one projectors)
+PASS chain n=4 m=4: all pairs [h_u,h_v] = 0
+PASS chain n=4 m=4: Tr h_v = 2^(n-1) (rank 2^(n-1) projectors)
+PASS chain n=4 m=4: H psi = 0 for psi(z)=zeta^E(z) (weighted graph state)
+PASS chain n=4 m=4: prod_(k=0..4) (H-k) = 0, spectrum within integers 0..4
+PASS chain n=4 m=4: Tr H^p (p=1..4) = sum_k C(4,k) k^p, so multiplicity of k is C(4,k); lowest eigenvalue 0 simple, gap exactly 1
+PASS 2x2 box m=4: local star formula h_v == U P_v U^dagger for all 4 sites
+PASS 2x2 box m=4: each h_v acts on the star of v only (support radius 1)
+PASS 2x2 box m=4: h_v^2 = h_v (norm-one projectors)
+PASS 2x2 box m=4: all pairs [h_u,h_v] = 0
+PASS 2x2 box m=4: Tr h_v = 2^(n-1) (rank 2^(n-1) projectors)
+PASS 2x2 box m=4: H psi = 0 for psi(z)=zeta^E(z) (weighted graph state)
+PASS 2x2 box m=4: prod_(k=0..4) (H-k) = 0, spectrum within integers 0..4
+PASS 2x2 box m=4: Tr H^p (p=1..4) = sum_k C(4,k) k^p, so multiplicity of k is C(4,k); lowest eigenvalue 0 simple, gap exactly 1
+PASS chain n=4 m=6: local star formula h_v == U P_v U^dagger for all 4 sites
+PASS chain n=4 m=6: each h_v acts on the star of v only (support radius 1)
+PASS chain n=4 m=6: h_v^2 = h_v (norm-one projectors)
+PASS chain n=4 m=6: all pairs [h_u,h_v] = 0
+PASS chain n=4 m=6: Tr h_v = 2^(n-1) (rank 2^(n-1) projectors)
+PASS chain n=4 m=6: H psi = 0 for psi(z)=zeta^E(z) (weighted graph state)
+PASS chain n=4 m=6: prod_(k=0..4) (H-k) = 0, spectrum within integers 0..4
+PASS chain n=4 m=6: Tr H^p (p=1..4) = sum_k C(4,k) k^p, so multiplicity of k is C(4,k); lowest eigenvalue 0 simple, gap exactly 1
+PASS 2x2 box m=6: local star formula h_v == U P_v U^dagger for all 4 sites
+PASS 2x2 box m=6: each h_v acts on the star of v only (support radius 1)
+PASS 2x2 box m=6: h_v^2 = h_v (norm-one projectors)
+PASS 2x2 box m=6: all pairs [h_u,h_v] = 0
+PASS 2x2 box m=6: Tr h_v = 2^(n-1) (rank 2^(n-1) projectors)
+PASS 2x2 box m=6: H psi = 0 for psi(z)=zeta^E(z) (weighted graph state)
+PASS 2x2 box m=6: prod_(k=0..4) (H-k) = 0, spectrum within integers 0..4
+PASS 2x2 box m=6: Tr H^p (p=1..4) = sum_k C(4,k) k^p, so multiplicity of k is C(4,k); lowest eigenvalue 0 simple, gap exactly 1
+PASS 2x3 box m=3: local star formula h_v == U P_v U^dagger for all 6 sites
+PASS 2x3 box m=3: each h_v acts on the star of v only (support radius 1)
+PASS 2x3 box m=3: h_v^2 = h_v (norm-one projectors)
+PASS 2x3 box m=3: all pairs [h_u,h_v] = 0
+PASS 2x3 box m=3: Tr h_v = 2^(n-1) (rank 2^(n-1) projectors)
+PASS 2x3 box m=3: H psi = 0 for psi(z)=zeta^E(z) (weighted graph state)
+PASS 2x3 box m=3: prod_(k=0..6) (H-k) = 0, spectrum within integers 0..6
+PASS 2x3 box m=3: Tr H^p (p=1..6) = sum_k C(6,k) k^p, so multiplicity of k is C(6,k); lowest eigenvalue 0 simple, gap exactly 1
+PASS 2x3 box m=4: local star formula h_v == U P_v U^dagger for all 6 sites
+PASS 2x3 box m=4: each h_v acts on the star of v only (support radius 1)
+PASS 2x3 box m=4: h_v^2 = h_v (norm-one projectors)
+PASS 2x3 box m=4: all pairs [h_u,h_v] = 0
+PASS 2x3 box m=4: Tr h_v = 2^(n-1) (rank 2^(n-1) projectors)
+PASS 2x3 box m=4: H psi = 0 for psi(z)=zeta^E(z) (weighted graph state)
+PASS 2x3 box m=4: prod_(k=0..6) (H-k) = 0, spectrum within integers 0..6
+PASS 2x3 box m=4: Tr H^p (p=1..6) = sum_k C(6,k) k^p, so multiplicity of k is C(6,k); lowest eigenvalue 0 simple, gap exactly 1
+PASS 2x2x2 cube m=2: local star formula h_v == U P_v U^dagger for all 8 sites
+PASS 2x2x2 cube m=2: each h_v acts on the star of v only (support radius 1)
+PASS 2x2x2 cube m=2: h_v^2 = h_v (norm-one projectors)
+PASS 2x2x2 cube m=2: all pairs [h_u,h_v] = 0
+PASS 2x2x2 cube m=2: Tr h_v = 2^(n-1) (rank 2^(n-1) projectors)
+PASS 2x2x2 cube m=2: H psi = 0 for psi(z)=zeta^E(z) (weighted graph state)
+PASS 2x2x2 cube m=3: local star formula h_v == U P_v U^dagger for all 8 sites
+PASS 2x2x2 cube m=3: each h_v acts on the star of v only (support radius 1)
+PASS 2x2x2 cube m=3: h_v^2 = h_v (norm-one projectors)
+PASS 2x2x2 cube m=3: all pairs [h_u,h_v] = 0
+PASS 2x2x2 cube m=3: Tr h_v = 2^(n-1) (rank 2^(n-1) projectors)
+PASS 2x2x2 cube m=3: H psi = 0 for psi(z)=zeta^E(z) (weighted graph state)
+# Part 2: lattice symmetries
+PASS 2x2 box m=2: P_pi h_v P_pi^-1 = h_pi(v) for all 8 square symmetries (operator level)
+PASS 2x2 box m=3: P_pi h_v P_pi^-1 = h_pi(v) for all 8 square symmetries (operator level)
+PASS 2x2 box m=4: P_pi h_v P_pi^-1 = h_pi(v) for all 8 square symmetries (operator level)
+PASS 2x2 box m=6: P_pi h_v P_pi^-1 = h_pi(v) for all 8 square symmetries (operator level)
+PASS 3x3x3 box: edge set invariant under all 24 proper cubic rotations of the box (so U and H are)
+PASS 2x2x2 box: edge set invariant under all 24 proper cubic rotations of the box (so U and H are)
+PASS 3x3x3 torus: 81 edges, every site has 6 neighbours, edge set invariant under all 27 translations
+PASS torus Z_4^2 and Z_3^3: the translation orbit of any single edge gives degree 2 at every vertex, so no translation-invariant dimer tiling exists (the dimer family breaks translations)
+# Part 3: flat-cut entanglement entropy is L * h((1+cos(phi/2))/2)
+PASS chain 1|1 phi=2pi/2: cut has L=1 disjoint edges, A has 1 sites; Tr rho_A^p = (lam+^p+lam-^p)^L exactly, p=1..2 (so spec rho_A = spec ((c c^dag)/4)^(x)L)
+PASS chain 1|1 phi=2pi/2: S(A) = 0.69314718055995 = L*h((1+cos(phi/2))/2) with L=1, h=0.69314718055995
+PASS 2x2 box, column cut phi=2pi/2: cut has L=2 disjoint edges, A has 2 sites; Tr rho_A^p = (lam+^p+lam-^p)^L exactly, p=1..4 (so spec rho_A = spec ((c c^dag)/4)^(x)L)
+PASS 2x2 box, column cut phi=2pi/2: S(A) = 1.3862943611199 = L*h((1+cos(phi/2))/2) with L=2, h=0.69314718055995
+PASS 3x3 box, column cut phi=2pi/2: cut has L=3 disjoint edges, A has 3 sites; Tr rho_A^p = (lam+^p+lam-^p)^L exactly, p=1..8 (so spec rho_A = spec ((c c^dag)/4)^(x)L)
+PASS 3x3 box, column cut phi=2pi/2: S(A) = 2.0794415416798 = L*h((1+cos(phi/2))/2) with L=3, h=0.69314718055995
+PASS 4x2 box, middle cut phi=2pi/2: cut has L=2 disjoint edges, A has 4 sites; Tr rho_A^p = (lam+^p+lam-^p)^L exactly, p=1..16 (so spec rho_A = spec ((c c^dag)/4)^(x)L)
+PASS 4x2 box, middle cut phi=2pi/2: S(A) = 1.3862943611199 = L*h((1+cos(phi/2))/2) with L=2, h=0.69314718055995
+PASS 2x2x2 cube, layer cut phi=2pi/2: cut has L=4 disjoint edges, A has 4 sites; Tr rho_A^p = (lam+^p+lam-^p)^L exactly, p=1..16 (so spec rho_A = spec ((c c^dag)/4)^(x)L)
+PASS 2x2x2 cube, layer cut phi=2pi/2: S(A) = 2.7725887222398 = L*h((1+cos(phi/2))/2) with L=4, h=0.69314718055995
+PASS chain 1|1 phi=2pi/3: cut has L=1 disjoint edges, A has 1 sites; Tr rho_A^p = (lam+^p+lam-^p)^L exactly, p=1..2 (so spec rho_A = spec ((c c^dag)/4)^(x)L)
+PASS chain 1|1 phi=2pi/3: S(A) = 0.56233514461881 = L*h((1+cos(phi/2))/2) with L=1, h=0.56233514461881
+PASS 2x2 box, column cut phi=2pi/3: cut has L=2 disjoint edges, A has 2 sites; Tr rho_A^p = (lam+^p+lam-^p)^L exactly, p=1..4 (so spec rho_A = spec ((c c^dag)/4)^(x)L)
+PASS 2x2 box, column cut phi=2pi/3: S(A) = 1.1246702892376 = L*h((1+cos(phi/2))/2) with L=2, h=0.56233514461881
+PASS 3x3 box, column cut phi=2pi/3: cut has L=3 disjoint edges, A has 3 sites; Tr rho_A^p = (lam+^p+lam-^p)^L exactly, p=1..8 (so spec rho_A = spec ((c c^dag)/4)^(x)L)
+PASS 3x3 box, column cut phi=2pi/3: S(A) = 1.6870054338564 = L*h((1+cos(phi/2))/2) with L=3, h=0.56233514461881
+PASS 4x2 box, middle cut phi=2pi/3: cut has L=2 disjoint edges, A has 4 sites; Tr rho_A^p = (lam+^p+lam-^p)^L exactly, p=1..16 (so spec rho_A = spec ((c c^dag)/4)^(x)L)
+PASS 4x2 box, middle cut phi=2pi/3: S(A) = 1.1246702892376 = L*h((1+cos(phi/2))/2) with L=2, h=0.56233514461881
+PASS 2x2x2 cube, layer cut phi=2pi/3: cut has L=4 disjoint edges, A has 4 sites; Tr rho_A^p = (lam+^p+lam-^p)^L exactly, p=1..16 (so spec rho_A = spec ((c c^dag)/4)^(x)L)
+PASS 2x2x2 cube, layer cut phi=2pi/3: S(A) = 2.2493405784752 = L*h((1+cos(phi/2))/2) with L=4, h=0.56233514461881
+PASS chain 1|1 phi=2pi/4: cut has L=1 disjoint edges, A has 1 sites; Tr rho_A^p = (lam+^p+lam-^p)^L exactly, p=1..2 (so spec rho_A = spec ((c c^dag)/4)^(x)L)
+PASS chain 1|1 phi=2pi/4: S(A) = 0.41649553069969 = L*h((1+cos(phi/2))/2) with L=1, h=0.41649553069969
+PASS 2x2 box, column cut phi=2pi/4: cut has L=2 disjoint edges, A has 2 sites; Tr rho_A^p = (lam+^p+lam-^p)^L exactly, p=1..4 (so spec rho_A = spec ((c c^dag)/4)^(x)L)
+PASS 2x2 box, column cut phi=2pi/4: S(A) = 0.83299106139937 = L*h((1+cos(phi/2))/2) with L=2, h=0.41649553069969
+PASS 3x3 box, column cut phi=2pi/4: cut has L=3 disjoint edges, A has 3 sites; Tr rho_A^p = (lam+^p+lam-^p)^L exactly, p=1..8 (so spec rho_A = spec ((c c^dag)/4)^(x)L)
+PASS 3x3 box, column cut phi=2pi/4: S(A) = 1.2494865920991 = L*h((1+cos(phi/2))/2) with L=3, h=0.41649553069969
+PASS 4x2 box, middle cut phi=2pi/4: cut has L=2 disjoint edges, A has 4 sites; Tr rho_A^p = (lam+^p+lam-^p)^L exactly, p=1..16 (so spec rho_A = spec ((c c^dag)/4)^(x)L)
+PASS 4x2 box, middle cut phi=2pi/4: S(A) = 0.83299106139937 = L*h((1+cos(phi/2))/2) with L=2, h=0.41649553069969
+PASS 2x2x2 cube, layer cut phi=2pi/4: cut has L=4 disjoint edges, A has 4 sites; Tr rho_A^p = (lam+^p+lam-^p)^L exactly, p=1..16 (so spec rho_A = spec ((c c^dag)/4)^(x)L)
+PASS 2x2x2 cube, layer cut phi=2pi/4: S(A) = 1.6659821227987 = L*h((1+cos(phi/2))/2) with L=4, h=0.41649553069969
+PASS chain 1|1 phi=2pi/6: cut has L=1 disjoint edges, A has 1 sites; Tr rho_A^p = (lam+^p+lam-^p)^L exactly, p=1..2 (so spec rho_A = spec ((c c^dag)/4)^(x)L)
+PASS chain 1|1 phi=2pi/6: S(A) = 0.24577536666847 = L*h((1+cos(phi/2))/2) with L=1, h=0.24577536666847
+PASS 2x2 box, column cut phi=2pi/6: cut has L=2 disjoint edges, A has 2 sites; Tr rho_A^p = (lam+^p+lam-^p)^L exactly, p=1..4 (so spec rho_A = spec ((c c^dag)/4)^(x)L)
+PASS 2x2 box, column cut phi=2pi/6: S(A) = 0.49155073333694 = L*h((1+cos(phi/2))/2) with L=2, h=0.24577536666847
+PASS 3x3 box, column cut phi=2pi/6: cut has L=3 disjoint edges, A has 3 sites; Tr rho_A^p = (lam+^p+lam-^p)^L exactly, p=1..8 (so spec rho_A = spec ((c c^dag)/4)^(x)L)
+PASS 3x3 box, column cut phi=2pi/6: S(A) = 0.73732610000541 = L*h((1+cos(phi/2))/2) with L=3, h=0.24577536666847
+PASS 4x2 box, middle cut phi=2pi/6: cut has L=2 disjoint edges, A has 4 sites; Tr rho_A^p = (lam+^p+lam-^p)^L exactly, p=1..16 (so spec rho_A = spec ((c c^dag)/4)^(x)L)
+PASS 4x2 box, middle cut phi=2pi/6: S(A) = 0.49155073333694 = L*h((1+cos(phi/2))/2) with L=2, h=0.24577536666847
+PASS 2x2x2 cube, layer cut phi=2pi/6: cut has L=4 disjoint edges, A has 4 sites; Tr rho_A^p = (lam+^p+lam-^p)^L exactly, p=1..16 (so spec rho_A = spec ((c c^dag)/4)^(x)L)
+PASS 2x2x2 cube, layer cut phi=2pi/6: S(A) = 0.98310146667388 = L*h((1+cos(phi/2))/2) with L=4, h=0.24577536666847
+PASS single site of 3x3 grid, phi=2pi/2: purity 1/2 = (1+cos^8(phi/2))/2 differs from the matching formula 1/16 (additivity is specific to cuts made of disjoint edges)
+PASS single site of 3x3 grid, phi=2pi/3: purity 257/512 = (1+cos^8(phi/2))/2 differs from the matching formula 625/4096 (additivity is specific to cuts made of disjoint edges)
+PASS single site of 3x3 grid, phi=2pi/4: purity 17/32 = (1+cos^8(phi/2))/2 differs from the matching formula 81/256 (additivity is specific to cuts made of disjoint edges)
+PASS single site of 3x3 grid, phi=2pi/6: purity 337/512 = (1+cos^8(phi/2))/2 differs from the matching formula 2401/4096 (additivity is specific to cuts made of disjoint edges)
+# Part 4: the coefficient function
+PASS ds/dphi > 0 on 399 grid points of (0,pi): s strictly increasing there
+PASS s(0+) = 0 and s(pi) = ln 2 (exact, sympy)
+PASS unique phi in (0,pi) with s(phi) = 1/4 nat: phi = 1.06002058793
+PASS unique phi in (0,pi) with s(phi) = 1/4 bit: phi = 0.82253614802
+TOTAL: PASS=148 FAIL=0
+# runtime seconds: 7.3
+HIT: scoped counterexample - on qubits of open boxes of Z^d the translation- and cubic-rotation-invariant weighted-graph-state parent Hamiltonian has unique ground state, norm-one commuting star terms and gap exactly 1 for every size, while its flat-cut entropy per boundary edge h((1+cos(phi/2))/2) takes every value in [0, ln 2]; so the area-law upper bound with gap/locality/uniqueness does not select a coefficient even inside the Lattice-axiom symmetry class (dimer family was non-covariant)
+SUMMARY: exact checks that the covariant weighted-graph-state family H_phi has commuting norm-one star projectors, ground state at 0, gap exactly 1, lattice-symmetric terms, and flat-cut entropy L*h((1+cos(phi/2))/2), tunable over [0, ln 2]; unrefereed, and the external theorem's exact interaction-range hypothesis is not re-read.

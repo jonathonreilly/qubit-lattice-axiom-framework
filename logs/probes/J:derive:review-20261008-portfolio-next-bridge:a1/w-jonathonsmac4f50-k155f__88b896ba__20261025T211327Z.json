@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20261008-portfolio-next-bridge:a1",
+ "type": "judgment",
+ "lane": "review-science-20261008",
+ "worker": "w-jonathonsmac4f50-k155f",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261008-portfolio-next-bridge/w-jonathonsmac4f50-k155f/check.py",
+ "seed": 62807,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "88b896ba",
+ "started_utc": "20261025T211327Z",
+ "elapsed_s": 7.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "exact checks that the covariant weighted-graph-state family H_phi has commuting norm-one star projectors, ground state at 0, gap exactly 1, lattice-symmetric terms, and flat-cut entropy L*h((1+cos(phi/2))/2), tunable over [0, ln 2]; unrefereed, and the external theorem's exact interaction-range hypothesis is not re-read."
+ },
+ "review": "Read the log after the run: check.py (7 s) prints a HIT for a scoped counterexample family (translation- and cubic-invariant weighted-graph-state parent Hamiltonians whose flat-cut entropy per boundary edge takes every value in [0, ln 2] at unit gap); the agent's ATTEMPT.md marks steps 4-9 PROVED and step 11 (the external theorem's exact hypotheses, a nearest-neighbour two-body family, on-site covariance) unresolved. Same-family (Claude Sonnet 5.5), unrefereed.",
+ "what": "Select and advance ONE exact mathematical interface remaining outside the five landed OpenAI-math milestones. Start from the pinned portfolio: Wilson normalization and neutral-mode control (215); phase/gauge and boundary twist (261); matching/gadget controls (113/120); dimer entropy/coefficient selection (265); Spin(10) phase interface (204); finite-centralizer hypothesis mismatch (290); or stationary moving-record interfaces (145/154). Read the actual model and theorem statements and current main before choosing. Prioritize a bridge with a concrete new proof obligation and feasible decisive control. Preserve the existing hypothesis mismatches as local comparisons, not general impossibility theorems. The corrected family145 noninvertible-endomorphism observation and the five already-landed results are background, not new hits. Prove a scoped new bridge, give an exact counterexample to a proposed bridge, or record a substantive partial derivation and its first unresolved step. Do not reopen or copy the closed PR packages, demand duplicate verification of a matching accepted Lean theorem, or silently extend a paper-only result to a formalized companion. Owner-requested scientific work transfer. Use the existing maximum-thinking J campaign and claim.py ownership protocol; inspect completed attempts and active claims to avoid duplication. Deliver numbered PROVED/CHECKED/ASSUMED steps, a self-contained disjoint check.py, and RECOVERY_STATUS.json with exact source hashes under probes/work/derive/<problem>/<worker>/. Commit the checker before run_probe.py. Emit SUMMARY and HIT only for a demonstrated new result or defect. Follow ordinary cross-model confirmation; this catalog addition starts no workers, changes no budgets and creates no PR snapshots or audit authority.",
+ "stdout_sha256": "8640acc51278f5d080ec37fe42cdb55a86a3ffaaaad240ae09c85441b14477d9",
+ "stdout_tail": " 3x3 grid, phi=2pi/4: purity 17/32 = (1+cos^8(phi/2))/2 differs from the matching formula 81/256 (additivity is specific to cuts made of disjoint edges)\nPASS single site of 3x3 grid, phi=2pi/6: purity 337/512 = (1+cos^8(phi/2))/2 differs from the matching formula 2401/4096 (additivity is specific to cuts made of disjoint edges)\n# Part 4: the coefficient function\nPASS ds/dphi > 0 on 399 grid points of (0,pi): s strictly increasing there\nPASS s(0+) = 0 and s(pi) = ln 2 (exact, sympy)\nPASS unique phi in (0,pi) with s(phi) = 1/4 nat: phi = 1.06002058793\nPASS unique phi in (0,pi) with s(phi) = 1/4 bit: phi = 0.82253614802\nTOTAL: PASS=148 FAIL=0\n# runtime seconds: 7.3\nHIT: scoped counterexample - on qubits of open boxes of Z^d the translation- and cubic-rotation-invariant weighted-graph-state parent Hamiltonian has unique ground state, norm-one commuting star terms and gap exactly 1 for every size, while its flat-cut entropy per boundary edge h((1+cos(phi/2))/2) takes every value in [0, ln 2]; so the area-law upper bound with gap/locality/uniqueness does not select a coefficient even inside the Lattice-axiom symmetry class (dimer family was non-covariant)\nSUMMARY: exact checks that the covariant weighted-graph-state family H_phi has commuting norm-one star projectors, ground state at 0, gap exactly 1, lattice-symmetric terms, and flat-cut entropy L*h((1+cos(phi/2))/2), tunable over [0, ln 2]; unrefereed, and the external theorem's exact interaction-range hypothesis is not re-read.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k155f",
+  "at_utc": "20261025T211347Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Accepted as a logged scoped claim of the stated family only; the check passes but the external theorem's hypotheses were not re-read (step 11 open), so it is not shown to contradict that theorem. Carried in the probe closing record; no issue filed (vehicle closing).",
+  "by": "w-jonathonsmac4f50-k155f",
+  "at_utc": "20261025T211347Z"
+ }
+}

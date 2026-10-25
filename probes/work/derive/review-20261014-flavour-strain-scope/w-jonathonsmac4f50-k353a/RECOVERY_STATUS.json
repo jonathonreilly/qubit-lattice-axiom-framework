@@ -1,0 +1,22 @@
+{
+  "task_id": "J:derive:review-20261014-flavour-strain-scope:a1",
+  "source_branch": "claude/chirality-grid-exercise-20261014",
+  "source_head": "dd7d358c6f6b0fd049b46962970397dbdc7d2e1f",
+  "source_objects": [
+    {"path": ".claude/science/exercises/chirality-grid-20261014/combos/X2/COMBO_REPORT.md", "sha256": "3b5e095d96a3fa16fb8b8c3b9adc6cf560f9a167db481132719efac6bc5b9438", "verified": true},
+    {"path": ".claude/science/exercises/chirality-grid-20261014/combos/X2/PREREG.md", "sha256": "68ad0b91b897fa054d028df3cbab9eba26e809aa99f7f99664c0e23268616acc", "verified": true},
+    {"path": ".claude/science/exercises/chirality-grid-20261014/scripts/X2/x2_cert.py", "sha256": "0dd8ea359ee2842b76a2238a1806b5996f66b145cb3788c963b8801a9b257338", "verified": true},
+    {"path": ".claude/science/exercises/chirality-grid-20261014/scripts/X2/x2_cert_run1_strainnorm_bug.out", "sha256": "331c507059f34851866754f9a4ab3ed9d474fa4ca7c5a98184d26a32645c17e8", "verified": true}
+  ],
+  "main_commit_read": "a77a3449c91a753b06ce2a63876cd460b62cb4cf",
+  "axiom_sources_read": [
+    "docs/MINIMAL_AXIOMS_2026-06-29.md (233 lines, full)",
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md (130 lines, full)"
+  ],
+  "not_available": [
+    "C5_TW2_report.md (TW-2 strain definition): not on main or on the source branch; source's wording used",
+    "corrected x2_cert.out: not among hashed objects; unmodified x2_cert.py rerun instead (src_rerun.out)"
+  ],
+  "check_py": {"total": "PASS=52 FAIL=0", "runtime_s": 19, "peak_rss_mb": 75},
+  "first_unresolved_step": "ATTEMPT.md step 10(ii): the coefficient of the first-order strain response (covariants of the generation matrices) is a free input of the supplied dynamics; no axiom or registered primitive supplies the vacuum functional, the translation-breaking condensate needed for any mixing (step 11), or a record-determined readout of the diagonal quadrupole."
+}

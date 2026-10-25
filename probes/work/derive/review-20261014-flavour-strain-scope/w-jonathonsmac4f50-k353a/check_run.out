@@ -1,0 +1,67 @@
+PASS G0 proper cubic rotations = 24 signed-permutation matrices with det +1
+PASS G1 composition (R1,v1)(R2,v2)=(R1R2, v1+R1 v2) closes on 192 elements, associative on a 4000-sample, identity ok
+PASS R1 each symmetry maps every corner plane wave (-1)^{x_i} to +-(another one), uniquely (derived from the lattice action)
+PASS R2 rho is a homomorphism G -> GL3(Z) on all 192^2 pairs
+PASS R3 rho(R,v) = diag((-1)^v')|R| : rotations act by pure permutations (no sign), translations by diagonal signs
+PASS R4 elements acting as a scalar +-1 on the generation triplet: 8 of them = {pi-rotations about the 3 axes, 1} x {no flip, flip all three}
+PASS S1 strain action is a representation of the 24 rotations; D0 (diagonal traceless) and OD (off-diagonal) are invariant summands
+PASS W1 action on Hermitian matrices (A -> rho A rho^T, real rho) is a homomorphism G -> GL9(Z)
+PASS W2 kernel of the action on Hermitian matrices is exactly the order-8 group K0 of R4
+PASS E1 S4 ~ O has 30 subgroups (all <=2-generated) | found 30
+PASS E2 F_2^3 has 16 subspaces | found 16
+PASS E3 subgroup count via sum over (Q_H, K) of |Z^1(Q_H, N/K)| = 1120 (source reports 1120 by closure) | 1120
+PASS E4 every cocycle-built H is closed under the group law and has the declared image Q_H and kernel K
+PASS E5 completeness cross-check: closure of every cyclic and every 2-generated subgroup of G is in the cocycle list | missing 0
+PASS C1 commutant dimension from the 3-dim character <chi,chi> equals dim of H-fixed Hermitian matrices from the 9-dim action (all 1120)
+PASS C2 counts by (rotation part has order-3 element, three distinct masses possible, nontrivial mixing) agree with source (x2_cert_run1_strainnorm_bug.out:46-51 first three fields; COMBO_REPORT.md:128-132) | {(False, True, True): 283, (False, True, False): 445, (False, False, False): 231, (True, True, False): 40, (True, False, False): 121}
+PASS C3 type a/b/c/d/e counts: a (abelian, multiplicity-free) / b (2+1 repeated) / c (scalar) / d (2-dim irrep) / e (3-dim irrep) | {'a': 485, 'b': 267, 'c': 16, 'd': 291, 'e': 61}
+PASS A1 invariant traceless strain = 0  <=>  rotation part of H is the tetrahedral group (12) or the octahedral group (24)  (all 1120) | 61 strain-free subgroups
+PASS A2 (source claim X2-L8, all 1120) nontrivial mixing => at least one invariant traceless strain component
+PASS A3 rotation part contains an element of order 3 => commutant is abelian (type a/e only; no mixing) -- exact reason in A4
+PASS A4 every symmetry with an order-3 rotation part (64 of 192) has rho with char poly x^3-1 or x^3+1: three distinct eigenvalues, so its commutant is the diagonal algebra (abelian) | {(x - 1)*(x**2 + x + 1), (x + 1)*(x**2 - x + 1)}
+PASS A5 no order-3 rotation => rotation part has order dividing 8 (a 2-group, so inside a Sylow D4 of S4) and S^H >= 1 (all such H)
+PASS A6 order-3 rotation does not imply strain-free: rotation part C3 or D3 keeps a body-diagonal strain (source counts: (True,*,*,True)=100)
+PASS A7 the two directions combined: mixing => S^H>=1 holds, but S^H>=1 does not give mixing (sample of 1120: groups with S>=1 and no mixing) | 776
+PASS B1 type c (commutant = all of M3, the only case where generic unitary mixing with all nine entries nonzero is allowed) <=> H subset of K0 (R4) | 16 subgroups
+PASS B2 every type-c group has rotation part inside V4={1, three pi-rotations} (no order-3, no C4); diagonal (D0) strain invariants = 2 for all 16; off-diagonal (OD) invariants vanish exactly when the rotation part is all of V4
+PASS B3 exact nullspace (sympy rational) of the commutant has dimension 5 for a sample of 20 type-b groups and 9 for 5 type-c groups
+PASS I1 every pointwise stabiliser of Fix(H) contains H and K0; its fixed space is the same as H's (so the same mixing type)
+PASS I2 a random integer pair (A,B) in Fix(H)^2 has stabiliser exactly the pointwise fixer (sampled over 160 of the 1120 groups)
+PASS I3 number of distinct isotropy groups (exact stabilisers of (A,B) data) | 29 of 1120 subgroups are isotropy groups
+PASS I4 EVERY isotropy group has zero invariant off-diagonal (OD, rhombohedral/shear) strain: the generation matrices (A,B) are blind to T2 strain at every order
+PASS I5 isotropy groups with nontrivial mixing: all have D0 (diagonal tetragonal/orthorhombic) invariant strain >= 1
+PASS I6 isotropy groups containing an order-3 rotation are strain-free (S=0) and have trivial mixing -- the K0 =>V4 closure forces tetrahedral rotation part
+PASS I7 nontrivial mixing among isotropy groups => rotation part / V4 has order 1 or 2 (its image in S3 contains no 3-cycle)
+PASS I8 exactly one isotropy group has type c (full unitary mixing): K0 itself, S^{K0} = D0 (2-dim), OD part 0
+PASS V1 dim Hom_G(Sym^d(Herm3 + Herm3), OD strain) = 0 for d=1,2,3 (T2 is never sourced by the generation matrices) | {(1, 'OD'): '0', (1, 'D0'): '2', (2, 'OD'): '0', (2, 'D0'): '17', (3, 'OD'): '0', (3, 'D0'): '98'}
+PASS V2 equivariant linear maps (A,B) -> D0 strain: dimension 2 (the traceless diagonal of A and of B); degree 2 and 3 spaces are non-zero | d1=2, d2=17, d3=98
+PASS V3 L(A) = traceless diagonal of A (corner basis) is G-equivariant into D0 for all 192 symmetries (exact, random integer A)
+PASS V4 for every isotropy group with D0 invariants, the degree-1 covariant (traceless corner-diagonal of A) spans all of S^{Hbar}: the allowed channel is populated at LINEAR order in the vev generically
+PASS V5 finite-group lemma on a type-b mixing vacuum (rot/V4 = Z2): the span of all covariant values has rank = dim S^{Stab(w)} by degree 3 (and never exceeds it) | stab order 16, rank by degree {1: 1, 2: 1, 3: 1}, dim S^Stab = 1
+PASS X0 A and B are Hermitian, have zero diagonals (linear strain covariants vanish), and do not commute (nontrivial mixing)
+INFO vacuum X: stabiliser order 8 type c dim S^stab = 2 covariant-value rank by degree {1: 0, 2: 2, 3: 2}
+PASS X1 (FLOAT) A,B have three distinct eigenvalues each and all nine |V_ij| = |<u_i|v_j>| exceed 1e-3 (full mixing), eigenvalues [-1.732, 0.0, 1.732] / [-1.732, 0.0, 1.732] | min|V|=0.244
+PASS X2 the linear strain covariants of this full-mixing vacuum vanish (rank 0 at degree 1) although the symmetry allows a 2-dim D0 channel for its stabiliser | stab D0 dim 2
+PASS X3 finite-group lemma: some covariant value at this vacuum is non-zero by degree 3 iff dim S^Stab>0; rank at degree<=3 = 2
+TABLE isotropy groups (generation-sector stabilisers): rot/V4 order | type | #groups | dim D0 inv | translation-kernel sizes |I∩N|
+   rot/V4=1 type=a D0inv=2 ODinv=0 : 1 groups, |I∩N| in [8]
+   rot/V4=1 type=b D0inv=2 ODinv=0 : 3 groups, |I∩N| in [4]
+   rot/V4=1 type=c D0inv=2 ODinv=0 : 1 groups, |I∩N| in [2]
+   rot/V4=2 type=a D0inv=1 ODinv=0 : 6 groups, |I∩N| in [4]
+   rot/V4=2 type=b D0inv=1 ODinv=0 : 6 groups, |I∩N| in [2]
+   rot/V4=2 type=d D0inv=1 ODinv=0 : 3 groups, |I∩N| in [8]
+   rot/V4=3 type=a D0inv=0 ODinv=0 : 4 groups, |I∩N| in [2]
+   rot/V4=6 type=d D0inv=0 ODinv=0 : 4 groups, |I∩N| in [2]
+   rot/V4=6 type=e D0inv=0 ODinv=0 : 1 groups, |I∩N| in [8]
+PASS T1 nontrivial mixing needs the vacuum to break unit translations: the pure-translation part K=I∩N of every mixing isotropy group is {0,111} or {s: s_i=s_j} for one pair (i,j) (|K|=2 or 4, never N); type c has K={0,111} | 10 mixing isotropy groups
+PASS T2 exact translations (I ⊇ N) force diagonal A,B (type a or finer): no mixing, and with a 3-cycle in the rotation part a triple degeneracy
+INFO rot/V4 orders occurring per type among isotropy groups: {'a': [1, 2, 3], 'b': [1, 2], 'c': [1], 'd': [2, 6], 'e': [6]}
+PASS T3 strain-free isotropy groups with three DISTINCT masses exist (type a, rotation part T or O) but then all mixing is trivial | 4 groups
+PASS T4 forced degeneracies: types d (two-fold) and e (three-fold) occur and have no mixing; they are excluded from any three-mass spectrum | 8 isotropy groups
+PASS H sha256 of source copy COMBO_REPORT.md
+PASS H sha256 of source copy PREREG.md
+PASS H sha256 of source copy x2_cert.py
+PASS H sha256 of source copy x2_cert_run1_strainnorm_bug.out
+TOTAL: PASS=52 FAIL=0
+HIT: generation-sector vacua are blind to off-diagonal (T2) strain; mixing => allowed diagonal (E) strain channel populated at linear order, full nine-entry mixing only for stabiliser K0 (generation-trivial), allowed != forced (explicit full-mixing vacuum with zero linear strain)
+SUMMARY: Exact cocycle enumeration of all 1120 residual groups confirms the source's classification (mixing => invariant strain), sharpens it to 'only the diagonal E-type quadrupole, only for stabilisers without a 3-cycle, full nine-entry mixing only when the generation action is trivial', and shows the coefficient is a free dynamical input, not forced.

@@ -1,0 +1,64 @@
+=== T1: corner-label (Z2^3) selection rules, exact single translations ===
+A (light hw1; mirror hw0+hw2+hw3): #light corners=3
+   light*mirror^3 allowed: 6  e.g. [((0, 0, 1), ((0, 0, 0), (1, 1, 0), (1, 1, 1))), ((0, 0, 1), ((0, 1, 1), (1, 0, 1), (1, 1, 1)))]
+   light^3*mirror allowed: 1  e.g. [(((0, 0, 1), (0, 1, 0), (1, 0, 0)), (1, 1, 1))]
+   A^c B B on a mirror label: 18  e.g. [((0, 0, 1), ((0, 0, 0), (1, 1, 0))), ((0, 0, 1), ((0, 0, 0), (1, 1, 1)))]
+   A A B B allowed: 21  e.g. [(((0, 0, 1), (0, 0, 1)), ((0, 0, 0), (0, 0, 0))), (((0, 0, 1), (0, 0, 1)), ((0, 1, 1), (0, 1, 1)))]
+G (T_d grading: light hw1+hw3; mirror hw0+hw2): #light corners=4
+   light*mirror^3 allowed: 0  e.g. []
+   light^3*mirror allowed: 0  e.g. []
+   A^c B B on a mirror label: 0  e.g. []
+   A A B B allowed: 28  e.g. [(((0, 0, 1), (0, 0, 1)), ((0, 0, 0), (0, 0, 0))), (((0, 0, 1), (0, 0, 1)), ((0, 1, 1), (0, 1, 1)))]
+Exhaustive scan: every light set Lt (any size 1..7, any corners), M = complement:
+  |Lt|=1: assignments=8, odd-leg-free=0, AABB-free=0
+  |Lt|=2: assignments=28, odd-leg-free=0, AABB-free=0
+  |Lt|=3: assignments=56, odd-leg-free=0, AABB-free=0
+  |Lt|=4: assignments=70, odd-leg-free=14, AABB-free=0
+  |Lt|=5: assignments=56, odd-leg-free=0, AABB-free=0
+  |Lt|=6: assignments=28, odd-leg-free=0, AABB-free=0
+  |Lt|=7: assignments=8, odd-leg-free=0, AABB-free=0
+  T1(c) any 3-corner light set (3 generations) with both odd-leg classes forbidden? False
+  T1(d) any split with |Lt|,|M|>=1 where A A B B is forbidden? False
+
+=== T2: filter covariance (L=4) and exact corner decoupling (Fock, L=2) ===
+f_NN real-space support (L=4): offsets with |F|>1e-12 have max |d|_inf = 1, number of nonzero offsets = 7
+f_F1 real-space support (L=4): offsets with |F|>1e-12 have max |d|_inf = 1, number of nonzero offsets = 27
+max over 24 proper rotations (spin-lifted) of |[R, X]|: {'HW': '1.2e-16', 'FNN': '4.5e-16', 'FF1': '3.3e-16'}
+max over 3 translations of |[T, X]|: {'HW': '0.0e+00', 'FNN': '0.0e+00', 'FF1': '0.0e+00'}
+f_NN at corners: {'000': np.float64(-1.0), '001': np.float64(0.0), '010': np.float64(0.0), '011': np.float64(1.0), '100': np.float64(0.0), '101': np.float64(1.0), '110': np.float64(1.0), '111': np.float64(2.0)}
+f_F1 at corners: {'000': np.float64(1.0), '001': np.float64(0.0), '010': np.float64(0.0), '011': np.float64(1.0), '100': np.float64(0.0), '101': np.float64(1.0), '110': np.float64(1.0), '111': np.float64(1.0)}
+Hessian of f_F1 at (pi,0,0): [[0.5, 0.0, 0.0], [0.0, 0.5, 0.0], [0.0, 0.0, 0.5]]  (isotropic positive => leakage ~ |q|^2/4)
+Hessian of f_NN at (pi,0,0): [[-0.5, 0.0, 0.0], [0.0, 0.5, 0.0], [0.0, 0.0, 0.5]]  (indefinite => f_NN vanishes on a cone through hw1)
+f_F1 on 41^3 grid: min = 0.000e+00; min |f_F1| at distance > 0.3 from every hw1 corner = 2.447e-02
+Fock L=2, filtered (f_F1): ||H_N=3||=0.16; max|[H, psi(hw1 corner)]| = 0.00e+00; max|[H, psi(mirror corner)]| = 1.55e-01
+Fock L=2, control: unfiltered (f=1): ||H_N=3||=0.16; max|[H, psi(hw1 corner)]| = 1.55e-01; max|[H, psi(mirror corner)]| = 1.55e-01
+
+=== T3: F6's bilinear reduction i*eps*F with f = s(s^2-1); add delta * i*eps*F1, f1 = s ===
+delta=0: min|E| over grid = 1.225e-16; min|E| at (pi,0,0) = 1.225e-16
+delta=0.001: min|E| over grid = 1.000e-03; min|E| at (pi,0,0) = 1.000e-03
+delta=0.01: min|E| over grid = 1.000e-02; min|E| at (pi,0,0) = 1.000e-02
+delta=0.1: min|E| over grid = 1.000e-01; min|E| at (pi,0,0) = 1.000e-01
+FCC check: corner labels of hw1 and hw2 partners under translations by v with v_x+v_y+v_z even: True
+
+=== T4: generation splitting, CKM, strain; all subgroups of O x Z2^3 acting on the hw1 triplet ===
+group order (rotation part, generation action) pairs: 192
+number of subgroups: 1120  (16s)
+counts by (rotation part has order-3 element, 3 distinct masses, nontrivial CKM, >=1 invariant traceless strain):
+    (False, np.False_, np.False_, np.False_) 231
+    (False, np.True_, np.False_, np.False_) 445
+    (False, np.True_, np.True_, np.False_) 283
+    (True, np.False_, np.False_, np.False_) 121
+    (True, np.True_, np.False_, np.False_) 40
+T4 violations of prediction (nontrivial CKM with 0 invariant strain, or with an order-3 element): [4, 4, 2, 2, 4, 8, 4, 4, 4, 8, 4, 8, 2, 2, 4, 8, 2, 2, 8, 4, 4, 8, 4, 4, 4, 2, 4, 8, 2, 8, 4, 4, 8, 4, 4, 8, 4, 4, 4, 8, 8, 4, 2, 4, 2, 4, 8, 16, 4, 2, 8, 2, 16, 8, 2, 8, 8, 2, 8, 8, 8, 8, 4, 8, 2, 4, 4, 8, 2, 4, 8, 16, 2, 4, 2, 4, 4, 4, 8, 4, 2, 8, 8, 4, 2, 4, 4, 4, 4, 4, 4, 4, 8, 4, 4, 8, 4, 4, 2, 4, 4, 8, 2, 2, 4, 4, 8, 4, 4, 4, 16, 2, 4, 4, 4, 8, 2, 4, 4, 8, 8, 2, 4, 8, 4, 2, 8, 2, 4, 4, 4, 4, 4, 2, 16, 4, 16, 8, 4, 2, 8, 4, 2, 2, 8, 8, 4, 4, 4, 8, 4, 4, 4, 8, 4, 4, 8, 8, 2, 4, 2, 2, 2, 4, 4, 8, 4, 8, 4, 8, 8, 8, 16, 4, 8, 4, 8, 4, 2, 8, 4, 8, 4, 4, 1, 2, 4, 4, 8, 4, 4, 2, 8, 4, 4, 8, 8, 4, 8, 2, 4, 4, 2, 4, 8, 8, 8, 4, 8, 8, 2, 4, 2, 4, 8, 4, 4, 8, 8, 4, 2, 8, 2, 8, 8, 2, 8, 8, 16, 4, 2, 4, 2, 4, 4, 4, 4, 4, 4, 4, 4, 2, 4, 8, 4, 4, 4, 4, 8, 8, 4, 4, 4, 4, 4, 8, 2, 4, 2, 16, 2, 4, 4, 8, 8, 2, 4, 4, 4, 2, 4, 8, 8, 4, 4, 4, 4, 2, 4, 4, 4, 4, 4]
+H = T (rotations of order 1,2,3; order 12): commutant dim 3, commutative True, invariant traceless strain dim 0
+   generic T-invariant mass matrix (circulant):
+ [[ 0.083+0.j    -0.599-0.221j -0.599+0.221j]
+ [-0.599+0.221j  0.083+0.j    -0.599-0.221j]
+ [-0.599-0.221j -0.599+0.221j  0.083+0.j   ]] 
+   eigenvalues [-1.1145  0.2986  1.0642]
+
+=== T5 (locator, NN-forced): psi (walker) + chi coupled by Delta*f_F1(k) ===
+chi flat: zero modes per corner [('000', 0), ('001', 4), ('010', 4), ('011', 0), ('100', 4), ('101', 0), ('110', 0), ('111', 0)]; min|E| on 25^3 grid away from hw1 (>0.3) = 1.496e-03
+chi = mirror-chirality walker (-sigma.sin k): zero modes per corner [('000', 0), ('001', 4), ('010', 4), ('011', 0), ('100', 4), ('101', 0), ('110', 0), ('111', 0)]; min|E| on 25^3 grid away from hw1 (>0.3) = 3.668e-01
+
+done in 18s

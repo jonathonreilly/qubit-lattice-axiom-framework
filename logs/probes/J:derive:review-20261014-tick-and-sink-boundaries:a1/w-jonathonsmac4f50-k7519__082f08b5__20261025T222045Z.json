@@ -1,0 +1,39 @@
+{
+ "task": "J:derive:review-20261014-tick-and-sink-boundaries:a1",
+ "type": "judgment",
+ "lane": "review-science-20261014",
+ "worker": "w-jonathonsmac4f50-k7519",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261014-tick-and-sink-boundaries/w-jonathonsmac4f50-k7519/check.py",
+ "seed": 66845,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "082f08b5",
+ "started_utc": "20261025T222045Z",
+ "elapsed_s": 59.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "exact cone-level emission/absorption thresholds and rates for inverted pi-sector nodes, showing that a pi partner alone fixes no gain; the result depends on the photon speed c, the node speeds v, and the arc chosen."
+ },
+ "review": "Read the log after the run: check.py (59 s) printed a HIT: exact cone-level emission and absorption thresholds and rates for inverted pi-sector nodes of a free two-band tick (spectral function S_T = e^2(w^2 - v^2 q^2)/(6 pi v); rate per inverted node e^2(c^2 - v^2) q_max^4/(96 pi^3 c v), threshold c > v), so a pi partner alone fixes no gain and the result depends on photon speed c, node speeds v and the arc chosen; also T_d^2 != 1 (not a projector), the Wilson tick mu = -2 as a counterexample to mass-term index coverage, and conservation of E = (i/2)(U - U^dagger) for any static background. ATTEMPT.md stops at step 14: the rates assume a Peierls vertex and an isotropic boson speed c, neither supplied; lattice-scale coefficient and interacting vacua not done. Same-family (Claude Sonnet 5.5), unrefereed.",
+ "what": "Recover the strongest narrow index/radiation statements with their exact finite-band free/tick, coupling, occupation and state hypotheses. T_d is not an involution and gives no chirality projectors as stated. Mass-term index conservation does not cover every free tick. Separate a kinematic pi partner from an actual gain/emission result and from a vacuum choice; supplied dissipative dynamics and record sinks are not consequences of Record. Advance one explicit coupling/state-complete estimate or counterexample, preserving alternatives outside the supplied class instead of declaring all exits closed. Owner-requested research transfer, not accepted science or a replacement PR. Read current main axiom/primitive sources first: Admissibility supplies no probability distribution or dynamics, and physical sites remain Z^3 with M2(C); any changed carrier/time model is an explicit comparator. Reconcile existing attempts and active claims; use the existing maximum-thinking J claim and cross-model referee protocol. Deliver numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes. No worker launch, budget change, PR snapshot copy, audit verdict or premise approval accompanies this catalog addition.",
+ "stdout_sha256": "1293ff500729e727394b9086095a2319d26e2e1753d9474d04f6f98899c7c6c7",
+ "stdout_tail": "c <= 1\nPASS L1 [float] lattice pair-threshold Omega_min(q) = v|q| (+-0.5%) at all 8 corners, 2 directions, |q|=0.02\nPASS L2 [float] near a pi node theta = pi - arcsin|b| (so excitation phase = -(arcsin|b|1 + arcsin|b|2) mod 2 pi)\nPASS H1 loss-only sink on one filled mode: total expected jumps = 1 (exact); N filled modes -> N\nPASS H2 a gain-containing sink with steady jump rate r>0 per site writes r*T jumps: exceeds a one-per-site capacity at T = 1/r (exact)\nNOTE (reading, not counted): the Lindblad generator depends on {H, L_j} only; a record-slot capacity bound enters only through the premise H-rec (each jump writes one permanent record). Axiom text: MINIMAL_AXIOMS_2026-06-29.md lines 75-83, 114-123, 182-186.\nTOTAL: PASS=43 FAIL=0\nHIT: scoped result -- first-order vacuum->photon+pi-pair emission of a free two-band tick with arc vacuum has exact cone-level rate R=e^2(c^2-v^2)q_max^4/(96 pi^3 c v) per inverted node, threshold c>v, so for the mu=-2 Wilson tick it is open for every photon speed c>1/5 while light-node absorption is closed for c<=1 (K3's 17x is the c->infinity limit), for U_g emission=absorption exactly and both closed for c<=1, and the sign of the net balance flips with the arc chosen; for static backgrounds E[A] is always conserved (exact).\nSUMMARY: exact cone-level emission/absorption thresholds and rates for inverted pi-sector nodes, showing that a pi partner alone fixes no gain; the result depends on the photon speed c, the node speeds v, and the arc chosen.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k7519",
+  "at_utc": "20261025T222224Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: log's git sha 082f08b5 differs from the current HEAD 383a1bb3 (fine if you pulled since; the run is bound to its sha)",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Accepted as a logged scoped partial result under the stated vertex and boson-speed assumptions; open PRs #10070 and #10072 overlap on pi-partner content and #10072 lists decay rates as not covered. Carried in the probe closing record; no issue filed.",
+  "by": "w-jonathonsmac4f50-k7519",
+  "at_utc": "20261025T222224Z"
+ }
+}

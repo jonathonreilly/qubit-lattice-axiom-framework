@@ -1,0 +1,43 @@
+PASS A: source copy combos_X2_COMBO_REPORT.md sha256 matches the task's value (3b5e095d96a3)
+PASS A: source copy kills_K1_KILL_REPORT.md sha256 matches the task's value (31113b4b7c78)
+PASS A: source copy routes_F1_ROUTE_REPORT.md sha256 matches the task's value (e799854cc307)
+PASS A: source copy combos_X1_COMBO_REPORT.md sha256 matches the task's value (0f2aa85353ea)
+PASS B: ten 32x32 Gamma matrices (SPIN10 note convention) satisfy {Ga,Gb}=2 delta_ab exactly
+PASS B: sum_{a<b} t_ab^2 = 45/4 on the 16 (45 generators), exact
+PASS B: M_a=(C Gamma_a)|_+ are symmetric 16x16 Gaussian-integer monomial matrices (16 nonzeros each)
+PASS B: vector identity t_ab^T M_c + M_c t_ab = i(d_ac M_b - d_bc M_a) for all 45x10 (a,b,c), exact
+PASS B: Omega=sum B_a B_a has 240 nonzero ordered coefficients (note: 240)
+PASS B: coefficient at (u0,u1,v14,v15) = (8+0j) (note: +8)
+PASS C: X2's B^a = psi^T(i sigma_y x C Gamma^a)psi equals 2 x (SPIN10 note's B_a) as an operator (factor 2 normalisation), exact
+PASS C: eps=i sigma_y is an SU(2) singlet coupling (sigma^T eps + eps sigma = 0), so each B_a is a spin singlet (rotation lift)
+PASS D: both filters vanish exactly at the three hw1 corners and nowhere else among the 8 corners (integer values)
+PASS D: f_NN: for all 8 x 10 operators B_a(x) on the 256-mode carrier the hw1 rows/columns vanish exactly (96 modes) => [B_a(x),psi_m]=[B_a(x)^dag,psi_m]=0, hence every word in the B's commutes with psi_m; mirror rows nonzero
+PASS D: f_F1: for all 8 x 10 operators B_a(x) on the 256-mode carrier the hw1 rows/columns vanish exactly (96 modes) => [B_a(x),psi_m]=[B_a(x)^dag,psi_m]=0, hence every word in the B's commutes with psi_m; mirror rows nonzero
+PASS D: control f=1: light-corner rows of the B_a(x) coefficient matrices are NOT zero (control has power)
+PASS E: filtered (f_l=0,f_mu=1) actual-Spin(10) quartic H=sum(B^dag B + 1/2 BB + 1/2 B^dag B^dag): max|[H,psi_light]| = 0.0e+00 on 5 light modes, random N<=2 state (exact zero)
+PASS E: same H: min|[H,psi_mirror]| = 128.00 > 0 (the commutator is not vacuously zero)
+PASS E: unfiltered control f=1: min|[H,psi_(corner l)]| = 128.00 > 0
+PASS F: real-space coefficient dictionaries of f_F1 (27-site cube) and f_NN (7-site star) reproduce the corner values used in D/E exactly
+PASS F: supports are 27 and 7 sites
+PASS F: f_NN exact: K(0)=5/8, max_(r!=0)|K|/K(0)=2/5, aggregate^2 = sum_(r!=0)K^2/K(0)^2 = 3/2 (=3/2), support 25
+PASS F: f_NN: |f|^2 has an exact zero at (pi,0,0) (kernel transform 0); aggregate^2 = 1.5000 >= 1/N_r = 1/24 as the lemma demands
+PASS F: f_F1 exact: support 125, max|K|/K(0)=0.1850, aggregate=0.6338 (K1's FFT values 0.1850, 0.6338)
+PASS F: f_F1: |f|^2 has an exact zero at (pi,0,0) (kernel transform 0); aggregate^2 = 0.4017 >= 1/N_r = 1/124 as the lemma demands
+PASS F: A1g nearest-neighbour-star filters a+b*sum cos p_a vanish at (pi,0,0) iff a=-b, i.e. the star filter is f_NN up to scale (unique)
+   info: min aggregate^2 over range-1 A1g filters with hw1 zeros (40 starts): 0.3032 (f_F1: 0.4017); coefficients (shell 0..3, scale-free) = [1.0, -0.0504, 0.0383, 0.0933]
+PASS F: numerical search (40 Nelder-Mead starts, not a certified global minimum) over range-1 A1g filters with the hw1 zeros finds aggregate^2 = 0.3032 (aggregate 0.551), between the lemma bound 1/124 and f_F1's 0.4017
+PASS F: that optimised filter (normalised to max 1) is >= 0 on a 31^3 grid with no zero beyond 0.3 of the hw1 corners (min 0.030); it is a competitor, not a different mechanism
+PASS F: max|sin p| = sqrt 3 on the grid (at (pi/2)^3); so walker + on-site chemical potential m=2 (keeps all shifts and number) has bands m +- |sin p| bounded away from 0 by >= 2-sqrt3: gapped with the nodes moved off the Fermi level, i.e. 'nu_R forced' is conditional on the node-preserving contract
+PASS G: B_a |all 16 u-modes filled> = 0 for all 10 a (explicit actual M_a): Q_+ |Psi_up> = 0, and Q_+ >= 0 => E_min(N=16)=0
+PASS G: S_-^k |Psi_up> != 0 for k=0..16 and S_-^17|Psi_up>=0: an S=8 multiplet of 17 states (N=16)
+PASS G: [S_-, B_a] = 0 on a random 3-particle state for all a (B_a is a spin singlet; Q_+ commutes with S_-)
+PASS G: B_a^dag |all 16 u-modes filled> = 0 as well, so |Psi_up> (and its S=8 multiplet) is an exact zero-energy eigenstate of every member a*B^dag B + lam*(BB + B^dag B^dag); for lam != 0 whether E=0 is the ground energy is NOT decided (Q is then indefinite)
+PASS G: [S_+, B_a] = 0 on the same random state for all a (so [S_pm, B_a^dag] = 0 too)
+PASS G: for every N=1..16, the N states S_-^k|N u-modes filled> (k=0..N, spin N/2, dimension N+1) are all annihilated by every B_a: Q_+ has an exact E=0 minimum multiplet of dimension N+1 in sector N (N>16 by particle-hole), containing non-singlets
+PASS H: BdG spectrum of walker h(k)=sigma.sin k with singlet pairing phi*i sigma_y is E=+-sqrt(|sin k|^2+phi^2), each doubly degenerate (K1's B1 dispersion), exact
+PASS H: reproduction of K1 B1 onset ratios g_c(filter)/g_c(control)=I[1]/I[f]: f_F1 3.244 (K1 3.244), f_NN 0.873 (K1 0.873) at N=80
+PASS H: the 10-vector of Spin(10) contains no G_SM singlet (so any B^a condensate breaks G_SM), exact
+   info: runtime 27.6s
+HIT: scoped counterexample and lemma, filtered Spin(10) quartic: (i) the number-conserving member sum_{x,a} B_a(x)^dag B_a(x) has, in every particle-number sector, an exact zero-energy minimum multiplet of maximal spin (non-singlet), so that member alone never gives a unique symmetric ground space; (ii) any filter with an exact zero has non-orthonormal psi_S(x) (aggregate overlap^2 >= 1/N_r; f_NN exactly 3/2); neither statement touches the BB+h.c. mixture or the thermodynamic limit
+TOTAL: PASS=38 FAIL=0
+SUMMARY: The X2 Spin(10) quartic is the SPIN10 note's B_a with a factor 2, its light-mode commutator vanishes exactly (coefficient and CAR level) for any polynomial in the filtered field, the number-conserving member has an exact non-singlet zero-energy multiplet, and every exactly-zero filter lacks an independent-site limit; existence of a symmetric gapped mirror phase is not advanced.

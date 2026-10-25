@@ -1,0 +1,47 @@
+PASS A1 T_d^2 != 1 on Z_4^3 (T_d is not an involution)
+PASS A2 T_d^4 == 1 on Z_4^3
+PASS A3 (1+T_d)/2 is not a projector
+PASS A4 T_d eigenspace dims (1,i,-1,-i) = (16,16,16,16)
+PASS A5 on the 8 corner momenta T_d = (-1)^hw (+-1 only there)
+PASS A6 T_d = +-1 eigenspace also contains non-corner momenta (24 of 32) | eigenvalue +-1 space has dim 32, only 8 are corners
+PASS A7 eps^2 = 1 (on-site involution)
+PASS A8 T_d eps T_d^-1 = -eps
+PASS A9 {H, eps} = 0 for the walker on Z_4^3 (eps pairs k with k+Q: it exchanges node hands, not a gamma5)
+PASS B1 mu-scan: sum chi_U over eps=0 nodes == sum over eps=pi nodes, and sum chi_E == 0 (10 values of mu)
+PASS B2 mu=-2: exactly one eps=0 node (K=0), seven eps=pi nodes
+PASS B3 mu=-2: sum_0 chi = +1 (a single light Weyl); sum_pi chi = +1 (same net hand)
+PASS B4 mu=-2: net E-chirality of the eps=pi nodes is -1 (opposite to the light node)
+PASS B5 symbolic: Jacobian of b at each of 8 corners is diag(+-1)/|m|; speeds v=1/|m| = 1,1,1/3,1/5 for hw=0..3
+PASS B6 symbolic: sign det J equals (-1)^hw at every corner
+PASS B7 mu=-2 node speeds: eps=0 node 1; pi nodes {1 x3, 1/3 x3, 1/5 x1}
+PASS C1 a(k+Q) = -a(k), g^2(k+Q) = g^2(k), sin(k+Q) = -sin(k) => U_g(k+Q) = -U_g(k)
+PASS C2 U_g: g -> 1 and every node isotropic with speed exactly 1 at all 8 corners (series to O(t^2))
+PASS D1 exact (n=3,4,5 random unitaries): E=(i/2)(U-U^+) is Hermitian-local, commutes with U, E = 2H/(1+H^2) = sin(eps)
+PASS D2 arc vacuum (eps in (-pi,0), eps=2 atan h) == negative-E sea: sin(2 atan h) = 2h/(1+h^2) (exact identity; sign E = sign h)
+PASS E1 T = 1 + (q.n)(q.n') = (u^2-q^2)(q^2+w^2)/(q^2(u^2-w^2)), u=r1+r2, w=r1-r2
+PASS E2 d^3k = (2 pi r1 r2 / q) dr1 dr2  (|d(rho^2,kz)/d(r1,r2)|/2 = r1 r2 / q)
+PASS E3 spinor algebra: sum_{eps perp q} |<u+(k')|eps.sigma|u-(k)>|^2 = 1 + (q.n)(q.n') for unit n, n'
+PASS E4 int_{-q}^{q} (q^2+w^2) dw = 8 q^3 / 3
+PASS E5 int d^3k T delta(omega - v(r1+r2)) = (2 pi/3)(omega^2 - v^2 q^2)/v^3
+PASS E6 S_T(omega,q) = 2 pi e^2 v^2 int d^3k/(2pi)^3 T delta = e^2 (omega^2 - v^2 q^2)/(6 pi v)
+PASS E7 R_cone = e^2 (c^2-v^2) q_max^4 / (96 pi^3 c v) = alpha (c^2-v^2) q_max^4/(24 pi^2 c v) with e^2=4 pi alpha
+PASS Q1 [float] direct spinor quadrature of the cumulative pair weight matches the closed form (3 points) | v=0.7 q=0.9 om=2.0 rel.err=5.1e-12; v=0.5 q=1.2 om=3.1 rel.err=1.2e-11; v=1.3 q=0.4 om=1.9 rel.err=7.9e-13
+PASS F1 d n/dt = (n+1) n_c (1-n_v) - n n_v (1-n_c); normal sea (n_v=1,n_c=0) -> d n/dt = 0 at n=0 (stable)
+PASS F2 inverted sea (n_v=0,n_c=1): d n/dt = n+1 > 0 for every n >= 0 (no stationary photon number)
+PASS F3 infinite-temperature fermions (n_v=n_c=1/2): d n/dt = 1/4 > 0 for every n (spontaneous term survives, stimulated cancel)
+PASS F4 stationary photon number n* = n_c(1-n_v)/(n_v-n_c) (positive only if n_v>n_c; none for inverted occupation)
+PASS G1 mu=-2, c=1 (matter speed of the 0 node): emission weight 64/5, light-node absorption 0 (marginal) | emission=64/5 absorption=0
+PASS G2 mu=-2, c=1/4: only the v=1/5 node emits: weight 9/20; light node absorbs 0
+PASS G3 mu=-2, c=1/5: no emission at first order (threshold c > min v = 1/5)
+PASS G4 mu=-2, c -> infinity: emission/absorption -> sum_pi (1/v) / (1/v_0) = 17 (K3-T1F's 17.0008 is this limit) | ratio=17.000000000
+PASS G5 mu=-2, c=1, complementary arc: emission 0, absorption 64/5 (pure photon decay into pi-pairs, no emission)
+PASS G6 U_g (8 nodes, v=1): emission == absorption for every c (exact gain=loss), e.g. c=2: 4 nodes each side
+PASS G7 U_g at c = v = 1: emission = absorption = 0 at first order (knife edge); closed for all c <= 1
+PASS L1 [float] lattice pair-threshold Omega_min(q) = v|q| (+-0.5%) at all 8 corners, 2 directions, |q|=0.02
+PASS L2 [float] near a pi node theta = pi - arcsin|b| (so excitation phase = -(arcsin|b|1 + arcsin|b|2) mod 2 pi)
+PASS H1 loss-only sink on one filled mode: total expected jumps = 1 (exact); N filled modes -> N
+PASS H2 a gain-containing sink with steady jump rate r>0 per site writes r*T jumps: exceeds a one-per-site capacity at T = 1/r (exact)
+NOTE (reading, not counted): the Lindblad generator depends on {H, L_j} only; a record-slot capacity bound enters only through the premise H-rec (each jump writes one permanent record). Axiom text: MINIMAL_AXIOMS_2026-06-29.md lines 75-83, 114-123, 182-186.
+TOTAL: PASS=43 FAIL=0
+HIT: scoped result -- first-order vacuum->photon+pi-pair emission of a free two-band tick with arc vacuum has exact cone-level rate R=e^2(c^2-v^2)q_max^4/(96 pi^3 c v) per inverted node, threshold c>v, so for the mu=-2 Wilson tick it is open for every photon speed c>1/5 while light-node absorption is closed for c<=1 (K3's 17x is the c->infinity limit), for U_g emission=absorption exactly and both closed for c<=1, and the sign of the net balance flips with the arc chosen; for static backgrounds E[A] is always conserved (exact).
+SUMMARY: exact cone-level emission/absorption thresholds and rates for inverted pi-sector nodes, showing that a pi partner alone fixes no gain; the result depends on the photon speed c, the node speeds v, and the arc chosen.

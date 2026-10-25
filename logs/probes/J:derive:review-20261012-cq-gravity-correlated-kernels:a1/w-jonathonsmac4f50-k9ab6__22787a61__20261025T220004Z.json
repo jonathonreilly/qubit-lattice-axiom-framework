@@ -1,0 +1,32 @@
+{
+ "task": "J:derive:review-20261012-cq-gravity-correlated-kernels:a1",
+ "type": "judgment",
+ "lane": "review-science-20261012",
+ "worker": "w-jonathonsmac4f50-k9ab6",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261012-cq-gravity-correlated-kernels/w-jonathonsmac4f50-k9ab6/check.py",
+ "seed": 65604,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "22787a61",
+ "started_utc": "20261025T220004Z",
+ "elapsed_s": 13.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "exact and numerical checks show that positivity plus commutator data allow the vacuum-side noise to be exactly zero strictly below the pointwise additive floor, that a Holder-continuous cone form factor gives a regulator-independent finite response to a finite-bandwidth pulse while a jump gives ln(1/eps), and that the saturated explicit kernel has sigma*M = hbar^2 g^2 F^2/s^2 so its classical metric-record covariance is non-locally-finite at the cone; Maxwell spin-2 weight is a = 1/(40 pi) and the scalar channel is inert for photons."
+ },
+ "review": "Read the log after the run: check.py (about 44 s) prints no HIT line. It reproduces, in exact form, that the explicit emission-silent classical-quantum kernel allows completely positive data, an exactly zero vacuum rate and a finite pulse response with the metric-record covariance non-locally-finite at the light cone, that the pointwise additive floor is an extra assumption, that the Maxwell stress source is spin-2 only, and a Holder-continuity condition for a regulator-independent pulse response; the agent says most of this is already in the R10-3/R12-4 sources and the route stops at step 8 (history-level completely positive Gaussian dilation with spin-2 gain). Same-family (Claude Sonnet 5.5), unrefereed.",
+ "what": "Determine whether a specified correlated or non-Markovian Gaussian classical-quantum gravity kernel can preserve complete positivity, finite vacuum excitation and a finite GR-normalized radiative response. The pointwise additive decoherence floor is an extra assumption, not general CP; keep scalar and spin-2 channels separate and state the light-cone distribution/counterterm prescription. Do not reinstate the withdrawn 32-orders exclusion or call the preferred-frame smearing interval an allowed window. Work one explicit kernel through the retarded response and noise integrals, including finite-bandwidth sources, or prove a scoped obstruction with every added hypothesis exposed. Reconcile current attempts and avoid relitigating the already-bounded additive scalar result. Owner-requested work transfer to the existing maximum-thinking J campaign. Check current main, completed attempts, active campaign branches and claim.py ownership before claiming; continue or reconcile an existing attempt rather than duplicate it. Deliver numbered PROVED/CHECKED/ASSUMED steps, a self-contained disjoint check.py and RECOVERY_STATUS.json with exact source hashes under probes/work/derive/<problem>/<worker>/. Commit the checker before run_probe.py. Emit SUMMARY and HIT only for a new demonstrated result or defect. Ordinary independent confirmation remains required before retention. This catalog addition launches no workers, changes no budgets, creates no PR snapshots and adopts no historical audit/referee verdict.",
+ "stdout_sha256": "ae2296706ca2b5d0a30a01595353202bf754515f6659682380e8e2e51f8fa93a",
+ "stdout_tail": "se of the saturated emission-silent kernel is 2 hbar g lambda F/(s+mu^2)\nPASS E2 profile-independent product: sigma * M = hbar^2 g^2 F^2/s^2 exactly (saturates Cauchy-Schwarz for every mu, lambda)\nPASS E3 metric-record covariance int M ds diverges at the cone even with mu>0 (1/eta term): record is not locally finite\nPASS E4 with mu=0 the divergence is logarithmic: (hbar g F/2 lambda) ln(delta/eta)\nPASS E5a quadrature agrees with e^{m2}E1(m2) at m2=0.01\nPASS E5 absorption of a smooth finite-bandwidth source grows as ln(1/mu^2) (increment per two decades in mu^2 -> 2 ln 10): the null regulator mu cannot be removed\nPASS E6 exact: int_0^{s0} S_abs ds = 2 hbar g lambda F ln((s0+mu^2)/mu^2)\nPASS E7 vacuum excitation rate = int S_ff(-p) W(p) = 0 for the explicit kernel at every p in V+ (golden-rule order, any W)\nPASS E8 Gram matrices of the explicit kernel are PSD at every p (rank one), pointwise in p\nTOTAL: PASS=39 FAIL=0\nruntime_seconds=11.5\nSUMMARY: exact and numerical checks show that positivity plus commutator data allow the vacuum-side noise to be exactly zero strictly below the pointwise additive floor, that a Holder-continuous cone form factor gives a regulator-independent finite response to a finite-bandwidth pulse while a jump gives ln(1/eps), and that the saturated explicit kernel has sigma*M = hbar^2 g^2 F^2/s^2 so its classical metric-record covariance is non-locally-finite at the cone; Maxwell spin-2 weight is a = 1/(40 pi) and the scalar channel is inert for photons.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k9ab6",
+  "at_utc": "20261025T220018Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

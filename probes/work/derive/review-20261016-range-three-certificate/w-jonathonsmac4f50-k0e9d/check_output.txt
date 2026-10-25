@@ -1,0 +1,27 @@
+PASS group generation: |O|=24 proper signed permutation matrices, |D4|=8 [0s]
+PASS line-lemma hypotheses for the six lines: stabiliser of line fixes only its direction; stabiliser of base point fixes no nonzero vector; |Stab(line)|,|Stab(base)| = [(4, 24), (2, 24), (3, 24), (2, 8), (2, 8), (4, 8)]
+PASS positive control (D4-covariant, range one, dims f=6, g=9): the exact line stage, which uses only necessary conditions, keeps the trivial branch and both axial-shift branches n_z=+-1 (it keeps 9 exponent pairs in all, the unitarity ideal removes the rest), so it does not reject genuine moving walks
+PASS positive control, direct: the D4-covariant walk exp(i k_z sigma_z) (f = cos k_z, g = (0,0,sin k_z)) satisfies the exact line system of the branch (n_z, n_x) = (1, 0)
+PASS O-invariant scalars 21, O-equivariant vectors 42 on the 343-point stencil (63 real unknowns) [4s]
+PASS character formula (1/24) sum_R tr: scalars 21, vectors 42
+PASS exact rational check at random rational momenta (tan(k/2) rational): f(Mk)=f(k), g(Mk)=M g(k) for all 24 rotations and all 63 basis functions [11s]
+PASS line system: 132 rows (modes of f and e.g on 6 lines) x 63 unknowns, rank 42, line degrees 3,6,9,3,6,3 [11s]
+PASS exhaustive enumeration size: 1729 Gamma-line exponent triples x 2548 (X,M) exponent/sign choices = 4405492 branches, left-null space dim 90
+PASS every branch tested exactly (meet-in-the-middle on exact rational vectors, no tolerance): exactly one consistent branch, all exponents 0, all signs +1 [19s]
+PASS trivial branch (all n=0, eps=+1): solution set of the line conditions is x = (f=1, g=0) + one f-direction phi0 + 20 g-directions (21 free real unknowns)
+PASS the f-direction is the O-invariant sine pseudoscalar phi0 = sum_sigma sgn(sigma) sin(k_s1) sin(2 k_s2) sin(3 k_s3), which vanishes on all six lines
+PASS exact rational check: expansion of f^2+g.g-1 in the trigonometric mode basis (range 6) has 459 nonzero mode equations (quadratic, linear only in y0) and reproduces f^2+g.g-1 exactly at 3 random rational momenta [22s]
+PASS explicit certificate: y0 = sum_m c_m E_m with 9 nonzero rational constants c_m over the 459 mode equations (exact identity of polynomials; all quadratic terms cancel)
+PASS after y0=0 the equations span a 50-dimensional space of homogeneous quadrics in y1..y20 (integer primitive generators); 20 variables, 210 quadratic monomials (rank over Q of the 459 mode equations is 51 including the y0 equation) [22s]
+PASS Z2xZ2 symmetry bookkeeping: every variable has a definite (shift, inversion) class [(0, 0), (0, 1), (1, 0), (1, 1)] and every generator is homogeneous for it; classes are used only to split linear algebra into 4 blocks
+PASS Hilbert function of the quotient mod p=32003, grevlex y1>...>y20: HF(0..5) = 1,20,160,577,470,0; sum = 1228; HF(5)=0 means every quintic monomial lies in the ideal mod p [31s]
+PASS Hilbert function of the quotient mod p=31991, reversed variable order, other random overlaps: HF(0..5) = 1,20,160,577,470,0; sum = 1228; HF(5)=0 means every quintic monomial lies in the ideal mod p [40s]
+PASS sum of the computed Hilbert function = 1228, equal to the vdim 1228 printed in the archived Singular log r3_triv.out (a log, not an independent proof: cited at the frozen commit)
+PASS dense Macaulay rank (different algorithm) at degree 3, four class blocks: HF(3) = 577 {(0, 0): 140, (0, 1): 148, (1, 0): 140, (1, 1): 149} [40s]
+PASS dense Macaulay rank at degree 4 in class block (1,0): HF = 112, equal to the incremental method's block value [55s]
+PASS control: the first 40 of the 50 quadrics give HF(5) = 49 > 0, so HF(5)=0 is not an artefact of the algorithm [83s]
+PASS archived Singular input r3_triv.sing (122 equations, 21 variables): contains one linear equation in a single variable, and the remaining 50 independent quadrics have the same Hilbert function 1,20,160,577,470,0 [103s]
+PASS conclusion: rank over Q of the integer Macaulay matrix >= its rank mod p (any prime), so mod-p surjectivity onto degree 5 gives y^alpha in the Q-ideal for all |alpha|=5; with y0 in the ideal, the complex variety of the trivial branch is the single point y=0, i.e. f=1, g=0, V=1 (for p=32003 and p=31991)
+TOTAL: PASS=24 FAIL=0
+HIT: computer-assisted exact reconstruction (no Singular, no numerical branch discard) of the range-three freeze: for H=O, full-soldered action, hops in {-3..3}^3, every complex SL2-valued solution f+i g.sigma (f^2+g.g=1) equals 1; first-stage exhaustive over all 4,405,492 line branches, second stage m^5 in the ideal by a mod-p rank certificate lifted to Q
+SUMMARY: rebuilds the range-three O-covariant system from scratch (63 unknowns), proves by exact exhaustion that the six-line stage leaves only the trivial branch, derives y0=0 as an explicit rational combination of the unitarity equations, and certifies by a Hilbert-function/rank computation (two primes, dense cross-checks, negative control) that all quintic monomials lie in the remaining 50-quadric ideal, so the complex variety is the single point V=1 (peak RSS 502 MB, 103 s)

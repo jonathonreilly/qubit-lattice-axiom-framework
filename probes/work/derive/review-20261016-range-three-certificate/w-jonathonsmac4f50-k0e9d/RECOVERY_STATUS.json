@@ -1,0 +1,38 @@
+{
+ "source_branch": "claude/toe-campaign-24h-20261015",
+ "source_head": "b0178fa585cad5ac9e02e70dff2175593dbc5dab",
+ "source_objects": [
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/exact_recheck_R3.py",
+   "sha256": "181f794a9c636f2c417586e60c023fdd3e020e6b068a85474e28c2ae417fe3cd",
+   "expected_sha256": "181f794a9c636f2c417586e60c023fdd3e020e6b068a85474e28c2ae417fe3cd",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/fastR3.py",
+   "sha256": "c6fec7be5a7ce4e4c84399426ea8c341fd913d84db71331fdce29cec3fd88a69",
+   "expected_sha256": "c6fec7be5a7ce4e4c84399426ea8c341fd913d84db71331fdce29cec3fd88a69",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/r3_triv.sing",
+   "sha256": "6099e662552c45af78d536f09a5b230ff579ceb2a2744e0d0e295391dcf57672",
+   "expected_sha256": "6099e662552c45af78d536f09a5b230ff579ceb2a2744e0d0e295391dcf57672",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/r3_triv_p.sing",
+   "sha256": "0f104c101c7e0151a41bdf0b7272c6d6afa27dec57431a9e96460f264c26add3",
+   "expected_sha256": "0f104c101c7e0151a41bdf0b7272c6d6afa27dec57431a9e96460f264c26add3",
+   "verified": true
+  },
+  {
+   "path": "docs/CUBIC_COVARIANCE_FREEZES_A_ONE_QUBIT_TICK_CELL_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+   "sha256": "70a7cf051a7b0b96d60b6e4be9ca0743ce676d8c90d1bf38d5747b37c98fff3c",
+   "expected_sha256": "70a7cf051a7b0b96d60b6e4be9ca0743ce676d8c90d1bf38d5747b37c98fff3c",
+   "verified": true
+  }
+ ],
+ "first_unresolved_step": "S9 (ATTEMPT.md): the final ideal-membership step is certified only as a rank statement (every quintic monomial lies in the Q-ideal because the mod-p Macaulay matrix has full column rank 42504). Not delivered: explicit rational cofactors h_j with y_i^5 = sum_j h_j e_j, a human-checkable argument that g = 0 given f = 1, g.g = 0 and the six-line vanishing, and an independent (different-family) re-run. Ranges four and above, other coin actions and subgroups are untouched.",
+ "status_note": "Same-family, unrefereed, computer-assisted. check.py: TOTAL PASS=24 FAIL=0; line stage exhaustive and exact over 4,405,492 branches (only the trivial branch survives); y0=0 by explicit rational combination; HF=(1,20,160,577,470,0) mod two primes."
+}

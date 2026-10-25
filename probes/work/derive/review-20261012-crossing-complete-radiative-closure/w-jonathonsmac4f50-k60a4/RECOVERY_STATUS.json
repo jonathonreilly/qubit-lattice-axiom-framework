@@ -1,0 +1,83 @@
+{
+  "source_branch": "claude/candidate-law-20261008",
+  "source_head": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+  "source_objects": [
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-4_report.md",
+      "sha256": "eab14f26f4c070aad92b93d207181c859a64288b1b48f52e8e3b29cbc5e24ebb",
+      "expected_sha256": "eab14f26f4c070aad92b93d207181c859a64288b1b48f52e8e3b29cbc5e24ebb",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-4_referee_verdict.md",
+      "sha256": "55d5883f078065ab55d18e949a68ea7bd06cf8cf8f60f53f959fafdfafa8ef1b",
+      "expected_sha256": "55d5883f078065ab55d18e949a68ea7bd06cf8cf8f60f53f959fafdfafa8ef1b",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R8-4/r84_fock.py",
+      "sha256": "a24ac5ae464816fe3c7b099e1638c2dfb179f5c2f8851c6b5f4f2ba90047fda4",
+      "expected_sha256": "a24ac5ae464816fe3c7b099e1638c2dfb179f5c2f8851c6b5f4f2ba90047fda4",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R8-4/r84_toyN_fock.py",
+      "sha256": "0580b6598b951dbe4ca78a11292b81afab39b4de8908329b90d42ae258abf181",
+      "expected_sha256": "0580b6598b951dbe4ca78a11292b81afab39b4de8908329b90d42ae258abf181",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R8-4/r84_toyN_cont.py",
+      "sha256": "e181fdd4ad88dc84edafcc24a6219b9e7ec2f083cddf4c567ee9e443f7216164",
+      "expected_sha256": "e181fdd4ad88dc84edafcc24a6219b9e7ec2f083cddf4c567ee9e443f7216164",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/TESTS.md",
+      "sha256": "fa6440969bb187c8f52873b8a6e988a84a53a1c5a869117fc3d1f4e20082cf91",
+      "expected_sha256": "fa6440969bb187c8f52873b8a6e988a84a53a1c5a869117fc3d1f4e20082cf91",
+      "verified": true
+    }
+  ],
+  "context_objects": [
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R9-7_report.md",
+      "sha256": "92fb77cf5aca41949c68e466a26e6b3c558921cec2b619b200ca249b5f592087",
+      "at_commit": "c1728175d6 (tip of claude/candidate-law-20261008 at fetch time; NOT the frozen commit)",
+      "used_as": "read-only context, no code imported"
+    },
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R9-7_referee_verdict.md",
+      "sha256": "dc8b6041895bb13b1938ee5b307624eeecd5afde6d6c371e85200d436190f4ef",
+      "at_commit": "c1728175d6 (tip of claude/candidate-law-20261008 at fetch time; NOT the frozen commit)",
+      "used_as": "read-only context, no code imported"
+    },
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R9-7/r97_common.py",
+      "sha256": "c9ba167a526394abef4d0f8db902b0bcaebb12e5bc86dab1002984eb6ed75a43",
+      "at_commit": "c1728175d6 (tip of claude/candidate-law-20261008 at fetch time; NOT the frozen commit)",
+      "used_as": "read-only context, no code imported"
+    },
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R9-7/r97_cont.py",
+      "sha256": "20c8e27ca7b772b65763209a98f6e6c2607b450fe727a13b5046218c607e77b6",
+      "at_commit": "c1728175d6 (tip of claude/candidate-law-20261008 at fetch time; NOT the frozen commit)",
+      "used_as": "read-only context, no code imported"
+    },
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R9-7/r97_fock.py",
+      "sha256": "de020fac723b2d2f684534ebd6872160c5ed4b416fce7c2d6f9c5a0dcebef93c",
+      "at_commit": "c1728175d6 (tip of claude/candidate-law-20261008 at fetch time; NOT the frozen commit)",
+      "used_as": "read-only context, no code imported"
+    },
+    {
+      "path": ".claude/science/exercises/gravity-current-state-20261009/TESTS.md",
+      "sha256": "ba0829ee3630235a20044c84006a9d3f9991c8a62de393d8d6f260ee8eeb9422",
+      "at_commit": "c1728175d6 (tip of claude/candidate-law-20261008 at fetch time; NOT the frozen commit)",
+      "used_as": "read-only context, no code imported"
+    }
+  ],
+  "check_py_sha256": "23d6dac71324595c57733008ccdf56369c356cfccf05bd29256c89c365ecf36a",
+  "first_unresolved_step": "ATTEMPT.md step 7: a vertex-function completion of the complete crossing set for the all-CAR (finite-per-site) assignment with X,Y fermionic whose O(go^2 gi^2) dispersion is p-independent; the defect is exactly -2*S_neg (sum of 12 sign-flipped orderings); the one-loop h on the two decay vertices does not close it (eps_F=-3.7e-2); also open: d=3, lattice-box dispersion outside the box, microcausality",
+  "notes": "R9-7 report/verdict/scripts are not in the frozen commit; they exist at the branch tip. Live claim ref not inspected (no git in read view)."
+}

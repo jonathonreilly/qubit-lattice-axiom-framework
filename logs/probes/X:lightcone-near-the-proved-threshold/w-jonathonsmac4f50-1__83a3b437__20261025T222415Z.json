@@ -1,0 +1,32 @@
+{
+ "task": "X:lightcone-near-the-proved-threshold",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-sonnet-5-5",
+ "command": "cd probes/lib && python3 formation_levelplane.py 3s sphere 0.60 96 4000 2000 1",
+ "seed": 67055,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "83a3b437",
+ "started_utc": "20261025T222415Z",
+ "elapsed_s": 1267.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=3 menu=sphere beta=0.6 L=96 T=4000 plateau_|m|=0.4063 lowk_ratio=1.1587 seconds=1268"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "Light-cone formation in 3+1 is PROVED to keep memory for beta > 0.5905 (harvest #8631, #8463); the executed onset lies between 0.55 and 0.60. Where exactly? beta 0.56-0.61 on planes 32-96. Arguments: dim menu beta L T T0 seed (dim 3s = symmetric light-cone past). GRID UNITS: one run per point.",
+ "stdout_sha256": "9f9f2c7b8eb721d606ca41a9cd9b97fc07163b4847f160991404688ec370e49d",
+ "stdout_tail": "        22  0.4554  +0.4554\n        32  0.4408  +0.4408\n        45  0.4321  +0.4320\n        63  0.4256  +0.4255\n        89  0.4205  +0.4205\n       126  0.4177  +0.4176\n       178  0.4164  +0.4162\n       252  0.4118  +0.4114\n       356  0.4114  +0.4108\n       503  0.4108  +0.4101\n       711  0.4086  +0.4080\n      1004  0.4055  +0.4047\n      1418  0.4077  +0.4062\n      2004  0.4034  +0.4012\n      2831  0.4047  +0.4037\n      4000  0.4036  +0.4031\nequal-level transverse structure factor S_0(k) / [sigma^2/(1-|phi|^2)] by |k| shell:\n   |k| in [0,0.3): 1.1587 (n=436)\n   |k| in [0.3,0.6): 1.1778 (n=2802)\n   |k| in [0.6,1.0): 1.1897 (n=11700)\n   |k| in [1.0,1.5): 1.2072 (n=35602)\n   |k| in [1.5,2.2): 1.2224 (n=108366)\n   |k| in [2.2,3.2): 1.2323 (n=329967)\n   |k| in [3.2,6.0): 1.2317 (n=395862)\nsite covariance without the zero mode along e_1: r, measured C(r), linear C(r), ratio, r*linear C(r) (the 1/r law of a three-dimensional plane)\n     1  +0.046887  +0.039687  1.181  +0.03969\n     2  +0.032891  +0.027983  1.175  +0.05597\n     3  +0.018281  +0.015604  1.172  +0.04681\n     4  +0.013456  +0.011475  1.173  +0.04590\n     6  +0.008241  +0.007004  1.177  +0.04203\n     8  +0.005728  +0.004859  1.179  +0.03887\n    12  +0.003259  +0.002744  1.188  +0.03293\n    16  +0.002005  +0.001701  1.179  +0.02721\n    24  +0.000678  +0.000689  0.985  +0.01653\n    32  -0.000112  +0.000229  -0.487  +0.00734\nSUMMARY: dim=3 menu=sphere beta=0.6 L=96 T=4000 plateau_|m|=0.4063 lowk_ratio=1.1587 seconds=1268\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20261025T224525Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

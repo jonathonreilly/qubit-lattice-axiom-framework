@@ -16,17 +16,24 @@
  "summary": {
   "summary": "The X2 Spin(10) quartic is the SPIN10 note's B_a with a factor 2, its light-mode commutator vanishes exactly (coefficient and CAR level) for any polynomial in the filtered field, the number-conserving member has an exact non-singlet zero-energy multiplet, and every exactly-zero filter lacks an independent-site limit; existence of a symmetric gapped mirror phase is not advanced."
  },
- "review": "pending: output not yet read",
+ "review": "Read the log after the run: check.py (28 s) printed a HIT with a scoped counterexample and lemma on the filtered Spin(10) quartic: the number-conserving member sum B^dagger B has an exact zero-energy non-singlet maximal-spin multiplet in every number sector; the quartic was rebuilt exactly (X2's B^a equals twice the SPIN10 note's B_a, 240 coefficients); the light-mode commutator vanishes exactly at coefficient and CAR level (which says nothing about composites); any filter with an exact zero has non-orthogonal filtered modes (aggregate^2 >= 1/N_r, exactly 3/2 for f_NN) so there is no independent-site limit. The source's many-body light-mode check uses a random 16-mode tensor with no Spin(10) index. ATTEMPT.md stops at step 19: a unique symmetric gapped state for the number-violating member in 3D (only a mean-field reproduction). Same-family (Claude Sonnet 5.5), unrefereed.",
  "what": "Recover the actual filtered Spin(10) quartic and its carrier/mode encoding; verify its finite light-mode commutator before advancing one finite filtered-star spectrum or controlled strong-coupling bound. Distinguish absence of anomaly from existence of a symmetric gapped phase without composites; retain the intermediate symmetry-breaking danger and lack of an independent-site limit. A successful slab implies the stated protected-zero condition, not its converse. Right-handed-neutrino necessity is only within the stated symmetry/node-preserving contract. No primitive/site-algebra enlargement or automatic reduction of every route to symmetric mass generation is authorized. Owner-requested research transfer, not accepted science or a replacement PR. Read current main axiom/primitive sources first: Admissibility supplies no probability distribution or dynamics, and physical sites remain Z^3 with M2(C); any changed carrier/time model is an explicit comparator. Reconcile existing attempts and active claims; use the existing maximum-thinking J claim and cross-model referee protocol. Deliver numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes. No worker launch, budget change, PR snapshot copy, audit verdict or premise approval accompanies this catalog addition.",
  "stdout_sha256": "5832423d162a6aca2f54f3448a82a73d1d93aeb369d995763c84754403e754e0",
  "stdout_tail": ".N, spin N/2, dimension N+1) are all annihilated by every B_a: Q_+ has an exact E=0 minimum multiplet of dimension N+1 in sector N (N>16 by particle-hole), containing non-singlets\nPASS H: BdG spectrum of walker h(k)=sigma.sin k with singlet pairing phi*i sigma_y is E=+-sqrt(|sin k|^2+phi^2), each doubly degenerate (K1's B1 dispersion), exact\nPASS H: reproduction of K1 B1 onset ratios g_c(filter)/g_c(control)=I[1]/I[f]: f_F1 3.244 (K1 3.244), f_NN 0.873 (K1 0.873) at N=80\nPASS H: the 10-vector of Spin(10) contains no G_SM singlet (so any B^a condensate breaks G_SM), exact\n   info: runtime 27.6s\nHIT: scoped counterexample and lemma, filtered Spin(10) quartic: (i) the number-conserving member sum_{x,a} B_a(x)^dag B_a(x) has, in every particle-number sector, an exact zero-energy minimum multiplet of maximal spin (non-singlet), so that member alone never gives a unique symmetric ground space; (ii) any filter with an exact zero has non-orthonormal psi_S(x) (aggregate overlap^2 >= 1/N_r; f_NN exactly 3/2); neither statement touches the BB+h.c. mixture or the thermodynamic limit\nTOTAL: PASS=38 FAIL=0\nSUMMARY: The X2 Spin(10) quartic is the SPIN10 note's B_a with a factor 2, its light-mode commutator vanishes exactly (coefficient and CAR level) for any polynomial in the filtered field, the number-conserving member has an exact non-singlet zero-energy multiplet, and every exactly-zero filter lacks an independent-site limit; existence of a symmetric gapped mirror phase is not advanced.\n",
  "checked": {
   "by": "w-jonathonsmac4f50-k604b",
-  "at_utc": "20261025T222213Z",
+  "at_utc": "20261025T222225Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 383a1bb3 differs from the current HEAD 755709b5 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Accepted as a logged scoped result and source-mismatch note; open PRs #9994, #10004, #10035 cover related cube-filtered toys and were read by summary only. Carried in the probe closing record; no issue filed.",
+  "by": "w-jonathonsmac4f50-k604b",
+  "at_utc": "20261025T222225Z"
  }
 }

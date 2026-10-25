@@ -1,0 +1,62 @@
+PASS proper cubic group has 24 elements; orbit of (1,2,3) has 24 points; 6 directions
+PASS G acts freely on the alphabet (uniform r0 forced by invariance)
+PASS 144 ordered bond orbits, 84 bond classes after reversal
+PASS 21 height signatures: 6 opposite, 3 equal, 12 unequal; 4 bond classes each
+PASS each signature: slice-row rank 1, kernel dimension 3 (rational basis)
+PASS kernel elements are soldered (covariant), bond-symmetric, slice-zero (samples, exact)
+PASS assembled pair-moment polynomials = direct lattice sums at random rational points (unequal pairs)
+PASS MUTANT: dropping the second symmetric cross coefficient is caught by that same check
+# linear test over 240 ordered pairs took 7.8s
+PASS linear monomial test certifies 168 of 240 ordered pairs and leaves 72 (independent reproduction)
+PASS my 72 unresolved ordered pairs coincide with the list printed by the source runner (hard-coded data)
+PASS all 72 partners are themselves unequal-height signatures (equal/opposite partners are always linearly certified)
+PASS MUTANT: with the symmetric cross term dropped the linear test would 'certify' a different count (assembly matters)
+# degree-3 certificates for 72 pairs computed+verified in 4.8s
+PASS 72 pairs x 6 variables: x_i^3 = sum_j (linear form)_j * (pair-moment quadric)_j, exact identity verified (432 certificates)
+PASS quadric-span dimensions over the 72 pairs are 20 (48 pairs) or 18 (24 pairs) out of 21
+PASS sample of 12 of the 72: every one of the 56 cubic monomials lies in the quadrics' degree-3 part
+# LEAD CASE (-3,-2) vs (-3,-1): 20 quadrics:
+#   q0 = (1)*x0^2 + (-1)*x5^2
+#   q1 = (1)*x0*x1 + (1)*x5^2
+#   q2 = (1)*x0*x2
+#   q3 = (1)*x0*x3
+#   q4 = (1)*x0*x4
+#   q5 = (1)*x0*x5 + (-1)*x5^2
+#   q6 = (1)*x1^2 + (-1)*x5^2
+#   q7 = (1)*x1*x2
+#   q8 = (1)*x1*x3
+#   q9 = (1)*x1*x4
+#   q10 = (1)*x1*x5 + (1)*x5^2
+#   q11 = (1)*x2^2 + (-1)*x5^2
+#   q12 = (1)*x2*x3 + (-1)*x5^2
+#   q13 = (1)*x2*x4 + (1)*x5^2
+#   q14 = (1)*x2*x5
+#   q15 = (1)*x3^2 + (-1)*x5^2
+#   q16 = (1)*x3*x4 + (1)*x5^2
+#   q17 = (1)*x3*x5
+#   q18 = (1)*x4^2 + (-1)*x5^2
+#   q19 = (1)*x4*x5
+PASS lead case: the quadrics contain x2^2 - x5^2 and x2*x5 (as the task states: x_i^2 - x_5^2 and x0*x2 families)
+PASS lead case hand certificate:  x5^3 = x2*(x2*x5) - x5*(x2^2 - x5^2)  (exact)
+PASS lead case: the quadrics contain x0*x2 and x0^2 - x5^2 (so over R: x0 x2 = 0 and x0^2 = x2^2 force x0=x2=0)
+PASS MUTANT: tampered cofactor is rejected by the identity verifier
+PASS conclusion A: for each of the 72 pairs the pair-moment zero set (over Q, R and C) is {0} in all six coordinates
+PASS conclusion B: with the 168 linear cases, x(unequal block)=0 for all 240 ordered unequal+partner pairs
+PASS 132 ordered unequal+unequal pairs = 60 linear + 72 nonlinear
+PASS the 72 ordered pairs are closed under height negation d->-d; 36 unordered pairs, 18 classes under it
+# sympy Groebner radical tests (72 x 6) in 6.0s
+PASS sympy Groebner: 1 in (I, 1 - t*x_k) for all 72 pairs and all six k  (x_k in the radical over C)
+# global-ish minimum of sum q^2 on unit sphere over the 72 pairs: 5.602e-02 .. 2.500e-01 (9.1s)
+PASS floating-point multistart: min over unit sphere of sum of squared moments stays above 1e-4 for all 72 (consistent with origin-only)
+PASS control: equal-height signature (-3,-3) beside opposite (3,-3) is NOT forced by the linear square test (as in the source)
+# equal-height control: equal block coordinates nilpotent mod the quadrics, first at degree 4
+PASS control: equal-height block is nevertheless forced to zero by a higher-degree certificate (failure of the linear test is not a nonzero solution)
+PASS positive control: opposite+opposite pair has nonzero rational points (1,-2,3,0,0,0) killing every pair-moment quadric
+PASS positive control: degree-3 certificate machinery correctly fails (returns no certificate) for that pair
+PASS positive control: all raw lattice pair moments vanish at that point (direct sums)
+PASS positive control: a single opposite signature has an empty set of pair-moment quadrics
+# scope: pair moments only (necessary conditions); two-signature support; orbit of (1,2,3); uniform r0; rational kernel coordinates.
+# not claimed: classification on three or more signatures, the full affine bond space, positivity of any factor, or any physical law selection.
+HIT: all 72 coupled unequal-height signature pairs left open by the 2026-10-10 direct test have origin-only pair-moment zero sets over Q, R and C, certified by exact degree-3 Nullstellensatz identities; so the unequal block is zero in all 240 ordered cases (scope: two-signature ansatz on the orbit of (1,2,3), pair moments, uniform average).
+TOTAL: PASS=31 FAIL=0
+SUMMARY: exact degree-3 Nullstellensatz certificates show the pair-moment quadrics of every one of the 72 unresolved unequal+unequal signature pairs vanish only at the origin (over Q, R, C), completing the elimination of the unequal block in all 240 ordered cases of the two-signature ansatz (runtime 38s).

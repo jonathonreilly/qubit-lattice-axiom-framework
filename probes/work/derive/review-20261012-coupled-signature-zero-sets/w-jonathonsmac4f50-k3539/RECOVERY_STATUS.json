@@ -1,0 +1,31 @@
+{
+  "problem": "review-20261012-coupled-signature-zero-sets",
+  "task_id": "J:derive:review-20261012-coupled-signature-zero-sets:a1",
+  "source_branch": "main",
+  "source_head": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "source_objects": [
+    {
+      "path": "docs/UNEQUAL_HEIGHT_SIGNATURE_WITH_ONE_PARTNER_BOUNDED_THEOREM_NOTE_2026-10-10.md",
+      "sha256": "54ab6a46917c4d1d1bcc1d737198b9abc7457deae98e68456d6c71cc127f61eb",
+      "verified": true
+    },
+    {
+      "path": "scripts/unequal_height_signature_with_one_partner_2026_10_10.py",
+      "sha256": "d85e777fc4be6415f49dda4dc0bd54518032dce0e782ea7551eb10c1f444555e",
+      "verified": true
+    },
+    {
+      "path": "docs/EQUAL_HEIGHT_SIGNATURE_WITH_ONE_PARTNER_BOUNDED_THEOREM_NOTE_2026-10-10.md",
+      "sha256": "ff5b1928c9c152158b708e8b8a6b50619915697d2c3c85fd4e882e5aed016d15",
+      "verified": true
+    },
+    {
+      "path": "scripts/equal_height_signature_with_one_partner_2026_10_10.py",
+      "sha256": "42fffc4ec2f7d68b40e8b1f0a1635f080730f2e4451cefb379e468339d23bd76",
+      "verified": true
+    }
+  ],
+  "current_main_checked": "a77a3449c91a753b06ce2a63876cd460b62cb4cf: all four source objects have the same sha256 as at the frozen commit",
+  "first_unresolved_step": "No unresolved step inside the stated mathematical scope (pair-moment necessary conditions, two-signature support on the orbit of (1,2,3), uniform average). Remaining open items are outside it: (i) ATTEMPT.md step 14 - the five-route N1 packet of the no-go discipline gate is not completed, so no packet PASS is claimed; (ii) independent confirmation of this same-family, unrefereed result; (iii) supports on three or more signatures (e.g. the equal-height triple with joint kernel dimension 10) are not covered.",
+  "check_py_result": "TOTAL: PASS=31 FAIL=0, runtime about 38 s, peak memory about 0.46 GB"
+}

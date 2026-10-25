@@ -1,0 +1,65 @@
+{
+  "task_id": "J:derive:review-20261016-strain-path-and-retuning:a1",
+  "source_branch": "claude/strain-hot-matter-twins-20261013",
+  "source_head": "6afb06951a13ca861b50f47a8faf5d5c06594109",
+  "source_head_verified": true,
+  "source_objects": [
+    {
+      "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F1_referee_verdict.md",
+      "sha256": "178624da4f86289465244a58a64b77131c8714d43f69b482bfcdf90434f3be2f",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F1_report.md",
+      "sha256": "aa464d4e4e39b4ac12a012df327291d1dae74adc518dd7bb13bfa96d3b4b049f",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F3_referee_verdict.md",
+      "sha256": "5ec1de4f05b9014c04fcd0382681e9da413fad549116ee6125bbd12a23e2113f",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F3_report.md",
+      "sha256": "df55ab86a7ee2395538c5a3569102f7ec763054e89bfda3fba9bed9e70df6611",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F4_referee_verdict.md",
+      "sha256": "cc171b3a9f42dd03133fc3012e628ab97fb442faaee5a6b1612affe2dc2476e5",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F4_report.md",
+      "sha256": "64ed41e507381c60cf3c4b9bdb90e3b92263affba3595816a9b2ec9a4dabe64c",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F5_referee_verdict.md",
+      "sha256": "a21bd78b865cec837fc7776d17506bed03076f343b7ef98f7b12d4c871c3be64",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_F5_report.md",
+      "sha256": "5996a5789d1489f88a3054087945244b6bd746ce46697af9d0ee6823618b79e6",
+      "verified": true
+    }
+  ],
+  "verification_method": "git show <frozen commit>:<path> from a detached read-only checkout, sha256 of the extracted bytes; copies kept in ./src and re-hashed by check.py (P0.1)",
+  "main_head_read": "a77a3449c91a753b06ce2a63876cd460b62cb4cf",
+  "foundation_read": [
+    "docs/MINIMAL_AXIOMS_2026-06-29.md (all 233 lines)",
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md (all 130 lines)"
+  ],
+  "related_task": "J:derive:review-20261014-flavour-strain-scope:a1 (different packet: chirality-grid X2 residual-symmetry classification; no overlap with this obligation)",
+  "first_unresolved_step": {
+    "id": "ATTEMPT.md Step 10(iii) / section 5",
+    "statement": "No registered premise (four axioms, three approved primitives, or the lane's registered SF data) selects the transverse/second-order data of the strained hop: the Hamiltonian-dressing coefficients, the loop-ensemble covariance multiplier c, or the path family. Until such a selection principle is supplied, the strained-pole-mass Hessian is an affine functional of data the premises leave free, and no universal Hessian (SF-Hazard or SF-Safe) follows.",
+    "also_open": [
+      "Root-level analytic (not numerical) evaluation of the slopes L (dressing) and C (covariance); they are lane-supplied numerics here, confirmed independently only by the packet's referees.",
+      "Whether the toy's affine one-loop structure survives beyond one loop; the retuning argument (implicit function theorem) is local and only the one-loop truncation is exactly linear.",
+      "Order-e^2 vacuum-bubble dependence on the dressing and on c (not computed; the vacuum knock-on of the retune is the only vacuum row computed).",
+      "T2g (off-diagonal) strain: the packet's frame-photon law is singular there; nothing here extends it."
+    ]
+  }
+}

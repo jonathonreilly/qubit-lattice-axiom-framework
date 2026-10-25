@@ -1,0 +1,27 @@
+{
+  "task_id": "J:derive:review-20261012-cq-gravity-correlated-kernels:a1",
+  "source_branch": "claude/candidate-law-20261008",
+  "source_head": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+  "source_objects": [
+    {"path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-3_report.md", "sha256": "675afeab6a1f5b6a82290fe63a8b9e9abec6e065f2dafad57f35a0c14aa0c058", "verified": true},
+    {"path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-3_referee.md", "sha256": "a82bfa8409c3b5181216df47c750ad37ab7fca1e4c38f8c4da2fed4112a78c03", "verified": true},
+    {"path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-3_referee_verdict.md", "sha256": "3bca23ac38803daa6f1fd5882763a2324bc0285a67d1de863d538b65ea5de43c", "verified": true},
+    {"path": ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R8-3/r83_checks.py", "sha256": "52638ca8c2842d42b2fede6041f36f8f024e1e19bf5a885bd2d090b7c593de8b", "verified": true},
+    {"path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R6-4_report.md", "sha256": "e41ffcc188c2986defe3916f935214899760f7594acf71f148a13e90e8968efe", "verified": true}
+  ],
+  "later_branch_objects_read_not_in_task_list": {
+    "note": "Branch tip is later than the frozen head. These objects supersede or extend R8-3 and were read to reconcile; hashes computed from git show at the tip.",
+    "branch_tip": "c1728175d64db1494012c92dfee9ea5e5d22e1ff",
+    "objects": [
+      {"path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R9-4_report.md", "sha256": "1ad0bbdebd32a50037139e8334f1b3331ac82c4742cd585d3edc9fb0b824a3aa", "verified": true},
+      {"path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R9-4_referee_verdict.md", "sha256": "c76749610a7bb7739d8c43b659a4ad51ea40a6968bcd5f3ab00666b2339cc662", "verified": true},
+      {"path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R10-3_report.md", "sha256": "21994fdd3f19c92ea444cb1a60e0dd734f8a7637f1766978d78efe7e9cc4a2e5", "verified": true},
+      {"path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R10-3_referee_verdict.md", "sha256": "08c43c7131f523ad394a4f4fdd7ff63783ff4b5b4a0fdcf88b92ba30655e3c81", "verified": true},
+      {"path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R11-5_report.md", "sha256": "d5b94ab4b301fb8405af086f72b0b97439410c92e0aa506f951162fc8f11f51a", "verified": true},
+      {"path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R11-5_referee_verdict.md", "sha256": "8f633c7d4f220817fd7328a32718f28db6d283b455ea0ca3da6908303d8606c7", "verified": true},
+      {"path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R12-4_report.md", "sha256": "8e281ed06aa0467c9a4f60c8e65c642d7963420ccc335548b85060ffb52036c0", "verified": true},
+      {"path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R12-4_referee_verdict.md", "sha256": "acfd8a43f59def3a4438bff24bb1a64ca4e1e701fe14303dde3bc872eae60747", "verified": true}
+    ]
+  },
+  "first_unresolved_step": "Step 8 of ATTEMPT.md: a history-level completely positive Gaussian dilation (self-commuting stationary record J, zero reverse gain, locally finite spectra) realizing the saturated emission-silent kernel with a tensor (TT) spin-2 gain, and the dilation-free question (E4: whether every stationary CP Gaussian CQ history has such a dilation). The per-momentum positivity data pass; the history does not exist in the sources beyond a one-shell QMFS operator example and is singular at the cone."
+}

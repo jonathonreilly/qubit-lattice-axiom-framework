@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20261016-irreducible-coin-certificate:a1",
+ "type": "judgment",
+ "lane": "review-science-20261016",
+ "worker": "w-jonathonsmac4f50-ke189",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261016-irreducible-coin-certificate/w-jonathonsmac4f50-ke189/check.py",
+ "seed": 71851,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "290a0173",
+ "started_utc": "20261025T234411Z",
+ "elapsed_s": 141.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "rebuilding the cubic-covariant cell-walk equations from raw covariance for the irreducible 2O coins E, spin 1, spin 1/2 and spin 3/2 and eliminating exactly over Q shows that the unitarity ideal has only the constant-phase solution (positive D4/D3 controls retain genuine moving walks), so no irreducible coin admits a moving walk on the 27-point cell."
+ },
+ "review": "Read the log after the run: check.py (several minutes under heavy load) printed a HIT: rebuilding the cubic-covariant cell-walk equations from raw covariance and eliminating exactly over Q (sympy and Fractions, no Singular, no numerical filter), the unitarity ideal with U(0) = 1 has only the identity solution over C for the irreducible coins E, spin 1, spin 1/2 and spin 3/2 (77, 82, 64 and 1115 real quadrics), so no irreducible 2O coin admits a moving walk on the 27-point cell; E and spin 1/2 close with no line lemma; the only moving branches surviving the line tests are two spin-3/2 axis shifts, each refuted by an explicit identity 1 = sum c_i f_i; positive D4/D3 controls keep the known moving walks. This matches archived Theorem 8; what is new is the independent exact characteristic-zero certificate. ATTEMPT.md stops at step 9 for spin 1 and spin 3/2: the branch exhaustion rests on one implementation, a line-free route did not finish in sympy, explicit nilpotency cofactors exist for 4 of the 10 residual spin-3/2 unknowns and the other 6 rest on Groebner runs in three monomial orders. Same-family (Claude Sonnet 5.5), unrefereed.",
+ "what": "For one E, spin-one or spin-three-halves coin, reconstruct the exact representation and Laurent unitarity equations and close all characteristic-zero branches, or provide an exact dispersive counterexample. Scalar and spin-half statements do not imply freezing for general irreducible coins; archived CAS outputs are not current certificates. Keep Clifford spinor times projective flavour possibilities explicit. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise.",
+ "stdout_sha256": "0577f480039ca823e6c747c82ca689f1f1241d7773dfd3820cf4a105ace8a8ce",
+ "stdout_tail": "tary | 9 twisted parameters\nPASS P8.2 sign-twisted covariance on spin 1/2: every twisted-covariant U has U(0)=0, hence none is unitary | 4 twisted parameters\nPASS P8.3 E x sign = E: the intertwiner T (T F(g) = sign(g) F(g) T) is unique up to scale, invertible and H-conformal (T^T H T = c H), so W = U T^-1 turns a twisted covariant unitary walk into a plainly covariant one | [[-1, 2], [-2, 1]]\nPASS P8.4 for E, every twisted-covariant family B_n times T is plainly covariant (A_{gn} = F A_n F^-1), so twisted E reduces to the plain E case | 7 twisted parameters\nPASS P8.5 for spin 3/2, every twisted-covariant family B_n times T(x)1 is plainly covariant under the explicit D=F(x)S, so twisted spin 3/2 reduces to the plain case | 19 twisted parameters\n--- elapsed 141s\nHIT: characteristic-zero closure, by an independently rebuilt exact pipeline (sympy/Fractions only, raw covariance equations, no Singular), of the cubic-covariant 27-point-cell freeze for the irreducible coins E, spin 1 and spin 3/2 (and spin 1/2): every unitary walk is a constant phase; no exact dispersive counterexample exists in this class\nTOTAL: PASS=67 FAIL=0\nSUMMARY: rebuilding the cubic-covariant cell-walk equations from raw covariance for the irreducible 2O coins E, spin 1, spin 1/2 and spin 3/2 and eliminating exactly over Q shows that the unitarity ideal has only the constant-phase solution (positive D4/D3 controls retain genuine moving walks), so no irreducible coin admits a moving walk on the 27-point cell.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-ke189",
+  "at_utc": "20261025T234633Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Accepted as a logged scoped result (independent exact certificate for a conclusion already in an archived theorem); the Groebner-based part and the single-implementation branch exhaustion are not independently confirmed and a cross-family confirmation is owed. Carried in the probe closing record; no issue filed.",
+  "by": "w-jonathonsmac4f50-ke189",
+  "at_utc": "20261025T234633Z"
+ }
+}

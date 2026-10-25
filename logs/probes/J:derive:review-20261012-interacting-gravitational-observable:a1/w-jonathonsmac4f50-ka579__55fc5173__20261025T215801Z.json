@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20261012-interacting-gravitational-observable:a1",
+ "type": "judgment",
+ "lane": "review-science-20261012",
+ "worker": "w-jonathonsmac4f50-ka579",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261012-interacting-gravitational-observable/w-jonathonsmac4f50-ka579/check.py",
+ "seed": 65481,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "55fc5173",
+ "started_utc": "20261025T215801Z",
+ "elapsed_s": 111.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "exact checks of (i) the reduction of the bound-body fall to (H,K), (ii) a closed-form shell source and a completion-independent trace obstruction to extending universal fall through the interaction switch in a finite-channel fibre, (iii) the free second-moment parameter of the Weyl-midpoint stress; the continuum (infinite-channel) version of the obstruction, d>=2, N>=3 and gauge fields remain open."
+ },
+ "review": "Read the log after the run: check.py (about 4 minutes) printed a HIT with scoped results on the interacting stress: in a uniform field the fall depends on the stress only through H and the first moment K (universal fall needs the momentum source N and boost defect A to vanish on the body's states), a closed-form shell source (N = 0 is a logistic law), the finite-dimensional completion B_ik = iJ_ik/(E_i - E_k), a finite-channel theorem that N = A = 0 across the interaction switch needs tr M^2 equal with and without interaction (1306 against 281 in the exact instance), and the free second moment chi''(0) of the Weyl-midpoint stress. ATTEMPT.md stops at step 13 (continuum version, quasi-locality of the completion). No comparison with MICROSCOPE was made. Same-family (Claude Sonnet 5.5), unrefereed.",
+ "what": "Reconcile the active R9-2 interacting-stress attempt before starting. Construct a conserved Hermitian interacting stress with the required zeroth and first moments for a concrete bound sector, and derive its observable response including binding energy and field momentum. The free-packet eta=0 proxy, edge fraction and suggested loop-to-Ti/Pt estimate are not a composition-dependent bound-body measurement. R7-4 scattering exclusion requires extra exponentiation and scattering-domain hypotheses. Recheck R9-1 charge-continuity, edge production and centroid claims under an explicit dynamical stress; do not import Planck spacing, cosmology or Standard-Model charges as axioms. Deliver the first actual bound-body response or a precise missing-bridge obstruction; separately label empirical calibration and verify sources before numerical comparison. Owner-requested work transfer to the existing maximum-thinking J campaign. Check current main, completed attempts, active campaign branches and claim.py ownership before claiming; continue or reconcile an existing attempt rather than duplicate it. Deliver numbered PROVED/CHECKED/ASSUMED steps, a self-contained disjoint check.py and RECOVERY_STATUS.json with exact source hashes under probes/work/derive/<problem>/<worker>/. Commit the checker before run_probe.py. Emit SUMMARY and HIT only for a new demonstrated result or defect. Ordinary independent confirmation remains required before retention. This catalog addition launches no workers, changes no budgets, creates no PR snapshots and adopts no historical audit/referee verdict.",
+ "stdout_sha256": "0ed9e667e79a897e412a02549743d51901836b2e4d02ddc132346665501d24b7",
+ "stdout_tail": " moment: f''(0) = chi''(0)<w> - (1/4)<{X,{X,w}}>; chi''(0) = c2 is NOT fixed by (H,K): composition-dependent tidal ambiguity\nPASS S10 smeared coupling of Phi=x^3: int Phi rho = X^3 + 3 s^2 X; relative force correction = (1/2)s^2 Phi'''/Phi' = s^2/X^2\nPASS S11a exact all orders in lam: dJ_E/dt = -lam e1 e2 u'(x1-x2) [Hess(e1^2/2)(k1) - Hess(e2^2/2)(k2)]\nPASS S11b crystal momentum k1+k2 is conserved exactly ({k1+k2, H} = 0)\nPASS S11c Hess(e^2/2) = 1 for e = sqrt(m^2+k^2) (so A_i = 0 and dJ_E/dt = 0 for box-type legs)\nPASS S12 straddling-face element F00 = (e(b+d)+e(b-d))/2 > 0 for all d>0 (so the free part leaks charge across the face)\nruntime 110.6 s\nTOTAL: PASS=22 FAIL=0\nHIT: (scoped, finite-channel) with N the momentum-Ward source and A the boost defect, no choice of translation-invariant first-moment completion B and no switch profile makes N=A=0 across a plateau-to-free switch whenever tr(M^2) differs between the interacting and free mass operators (instance: 1306 vs 281); for B=0 the source has a closed form whose vanishing is a logistic law that never reaches 0 or 1.\nSUMMARY: exact checks of (i) the reduction of the bound-body fall to (H,K), (ii) a closed-form shell source and a completion-independent trace obstruction to extending universal fall through the interaction switch in a finite-channel fibre, (iii) the free second-moment parameter of the Weyl-midpoint stress; the continuum (infinite-channel) version of the obstruction, d>=2, N>=3 and gauge fields remain open.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-ka579",
+  "at_utc": "20261025T215953Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Accepted as a logged scoped partial result in finite channels; the continuum version is open and the pinned R9-2 sources predate the R9-2 report (hashes of the report are in RECOVERY_STATUS.json). Carried in the probe closing record; no issue filed.",
+  "by": "w-jonathonsmac4f50-ka579",
+  "at_utc": "20261025T215953Z"
+ }
+}

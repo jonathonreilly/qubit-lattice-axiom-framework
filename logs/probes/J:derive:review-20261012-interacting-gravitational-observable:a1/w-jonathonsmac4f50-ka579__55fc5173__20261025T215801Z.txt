@@ -1,0 +1,26 @@
+PASS S1 exact identities dK/dt=J, dH/dt=-gJ, dJ/dt=N-g(H+A) (3 random Hermitian pairs, n=3,4,5)
+PASS S2 finite-dim: tr A = -tr H and tr N = 0 for random (H,K); so A=0 on a finite invariant sector forces tr H = 0 -- no positive-energy finite-dimensional sector closes the boost algebra
+PASS S3a operator identity i[H,K'] psi = ((1/2){H,H'} + i[H,B]) psi (generic symmetric H(P), B(P))
+PASS S3b operator identity A = (1/2){H,J_P} - (1/2){X,N} - i[B,J] - H (generic H(P), B(P))
+PASS S4 plateau fibre H=sqrt(M^2+P^2): J = P*1, N = 0, A = 0 exactly (B=0)
+PASS S5a closed form N_01 = -i C S (g1-g2)(h1-h2) [P c(c-1)(g1 g2 - h1 h2) - c' g1 g2 h1 h2] tr(H)/(2 g1 g2 h1 h2)
+PASS S5b with mixing (C S (g1-g2)(h1-h2) != 0): N = 0 iff c' = -P c(1-c) (1/(h1 h2) - 1/(g1 g2))  (logistic law)
+PASS S5c instance P=12: sqrt(25+144)=13, sqrt(256+144)=20, sqrt(81+144)=15, sqrt(1225+144)=37; kappa(12)=12(1/260-1/555)=59/2405
+PASS S5d bounded-odds corollary: det H0 >= 80, det H_M >= 315 on P>=0, so |change of logit c| <= 9/10 on [0,12], e^{9/10}<3: an exactly source-free profile (B=0) keeps c(12)/(1-c(12)) within a factor 3 of c(0)/(1-c(0)) and never reaches 0 or 1
+PASS S6 B_ik = i J_ik/(E_i-E_k): B Hermitian, J_B = H-dephased J_0, [H,J_B]=0 exactly, tr J_B = tr J_0 (n=3,4 exact rational) -- pole at E_i=E_k: B is quasi-local only if J_0 has no on-shell off-diagonal part
+PASS S7a tr J_0 = tr((1/2){H,H'}) = (1/2) d/dP tr(H^2) for the symbolic switch profile c(P)
+PASS S7b tr(i[H,B]) = 0 for generic B(P): the fibre trace of J is the same for every first-moment completion
+PASS S7c tau(P)=tr H^2 - 2P^2 equals tr M^2 = 1306 on the plateau (c=1) and tr M_0^2 = 281 in the free region (c=0); Delta = 1025 != 0
+PASS S7d H(c) at P=12 has distinct eigenvalues for every c in [0,1] (discriminant > 0; Sturm count of roots in [0,1] is 0)
+PASS S8 eigenbasis form: diag[(1/2){H,J_P}] = E_i j_i', offdiag = +/-(1/2)(E1+E2)(j2-j1)alpha'; diag[-i[B,J]] = 0
+PASS S9a zeroth and first moments: f(0)=<w>, f'(0)=(i/2)<{X,w}> for every even chi (chi'(0)=0)
+PASS S9b second moment: f''(0) = chi''(0)<w> - (1/4)<{X,{X,w}}>; chi''(0) = c2 is NOT fixed by (H,K): composition-dependent tidal ambiguity
+PASS S10 smeared coupling of Phi=x^3: int Phi rho = X^3 + 3 s^2 X; relative force correction = (1/2)s^2 Phi'''/Phi' = s^2/X^2
+PASS S11a exact all orders in lam: dJ_E/dt = -lam e1 e2 u'(x1-x2) [Hess(e1^2/2)(k1) - Hess(e2^2/2)(k2)]
+PASS S11b crystal momentum k1+k2 is conserved exactly ({k1+k2, H} = 0)
+PASS S11c Hess(e^2/2) = 1 for e = sqrt(m^2+k^2) (so A_i = 0 and dJ_E/dt = 0 for box-type legs)
+PASS S12 straddling-face element F00 = (e(b+d)+e(b-d))/2 > 0 for all d>0 (so the free part leaks charge across the face)
+runtime 110.6 s
+TOTAL: PASS=22 FAIL=0
+HIT: (scoped, finite-channel) with N the momentum-Ward source and A the boost defect, no choice of translation-invariant first-moment completion B and no switch profile makes N=A=0 across a plateau-to-free switch whenever tr(M^2) differs between the interacting and free mass operators (instance: 1306 vs 281); for B=0 the source has a closed form whose vanishing is a logistic law that never reaches 0 or 1.
+SUMMARY: exact checks of (i) the reduction of the bound-body fall to (H,K), (ii) a closed-form shell source and a completion-independent trace obstruction to extending universal fall through the interaction switch in a finite-channel fibre, (iii) the free second-moment parameter of the Weyl-midpoint stress; the continuum (infinite-channel) version of the obstruction, d>=2, N>=3 and gauge fields remain open.

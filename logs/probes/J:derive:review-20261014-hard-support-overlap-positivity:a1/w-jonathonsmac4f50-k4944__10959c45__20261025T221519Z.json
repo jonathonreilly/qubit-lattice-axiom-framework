@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20261014-hard-support-overlap-positivity:a1",
+ "type": "judgment",
+ "lane": "review-science-20261014",
+ "worker": "w-jonathonsmac4f50-k4944",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261014-hard-support-overlap-positivity/w-jonathonsmac4f50-k4944/check.py",
+ "seed": 66519,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "10959c45",
+ "started_utc": "20261025T221519Z",
+ "elapsed_s": 110.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "the hard-indicator pure-gauge kernel on the Z_3 x Z_2 spatial torus has an exactly computed Fourier coefficient C3(8)=-8.01e-3<0, giving a certified negative pool eigenvalue (open and periodic time) with positive-type and even-size controls PSD; the fermion overlap tests were only replicated."
+ },
+ "review": "Read the log after the run: check.py (111 s) printed a HIT: for the hard-indicator pure-gauge measure on the 2+1D spatial torus Z_3 x Z_2 (slice-plaquette support) an exactly derived Fourier coefficient C(8) = -8.01e-3 gives a certified negative pool eigenvalue for open time (smallest certified pool 13 points; lambda_min/lambda_max = -1.65e-2 at 16 points), negative also for periodic time from N = 32 and for delta = 0.3 to 0.9, with Wilson-weight and even-Lx controls PSD; the K2c fermion-overlap trajectory was only replicated (lambda_min = -1.4728e-4). ATTEMPT.md stops at a rigorous quadrature bound for the 48x48 overlap-determinant kernel and at even tori or infinite volume. The tail is computer-assisted, double-precision rounding not interval-certified. Same-family (Claude Sonnet 5.5), unrefereed.",
+ "what": "Specify and independently reconstruct the exact gauge measure and reflection algebra before testing positivity. The recorded negative eigenvalue belongs to a finite open-time Fejer-weighted model; it does not establish failure for the hard-admissibility indicator, torus/infinite time, four dimensions or anomaly-free chiral measure. The updated K2c work reports W-matched hard-support negatives at finite open and antiperiodic torus sizes. Its error E is expressly an a-posteriori geometric-convergence estimate, not a rigorous bound; its npz pools are absent from the PR. Recover or deterministically regenerate and pin those pools and actual run-time code before reproduction. Reconcile any arriving referee report and active claims before running. Do not extrapolate different searched pools to infinite time or four-dimensional chiral physics. Advance ONE hard-support or controlled-boundary result with certified quadrature/error bounds, Wilson/finite-domain-wall controls and exact source identity. A numerical search with no negative sample is not a positivity proof; budget-heavy QMC is not authorized by this task catalog. Owner-requested research transfer, not accepted science or a replacement PR. Read current main axiom/primitive sources first: Admissibility supplies no probability distribution or dynamics, and physical sites remain Z^3 with M2(C); any changed carrier/time model is an explicit comparator. Reconcile existing attempts and active claims; use the existing maximum-thinking J claim and cross-model referee protocol. Deliver numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes. No worker launch, budget change, PR snapshot copy, audit verdict or premise approval accompanies this catalog addition.",
+ "stdout_sha256": "5991775d9d58ee495476b62722d43de3571b86e2a62d1cb501644c02bb541114",
+ "stdout_tail": "control on the same pool PSD (|lam_min| < 1e-12 or positive) | V6 W (6,6,4): lam_min +8.76549e-15 min/max +3.7510e-16 imag-diag max 1.5e-16 [66s]\n   runtime 110 s\nTOTAL: PASS=30 FAIL=0\nHIT: pure U(1) hard-support (delta=0.6) measure on the 2+1D spatial torus Z_3 x Z_2 is not reflection-positive for open time (certified negative eigenvalue already on a 13-point flat uniform-holonomy pool; 16-point pool lambda_min/lambda_max=-1.65e-2) and for periodic time (N>=32), although slice-plaquette support is enforced\nSUMMARY: the hard-indicator pure-gauge kernel on the Z_3 x Z_2 spatial torus has an exactly computed Fourier coefficient C3(8)=-8.01e-3<0, giving a certified negative pool eigenvalue (open and periodic time) with positive-type and even-size controls PSD; the fermion overlap tests were only replicated.\n\n[stderr]\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet\n  sign, logdet = _umath_linalg.slogdet(a, signature=signature)\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet\n  sign, logdet = _umath_linalg.slogdet(a, signature=signature)\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet\n  sign, logdet = _umath_linalg.slogdet(a, signature=signature)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k4944",
+  "at_utc": "20261025T221718Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Accepted as a logged scoped result (odd-size pure-gauge torus only; the fermion-overlap claim is a replication). Carried in the probe closing record; no issue filed.",
+  "by": "w-jonathonsmac4f50-k4944",
+  "at_utc": "20261025T221718Z"
+ }
+}

@@ -1,0 +1,29 @@
+{
+  "task_id": "J:derive:review-20261016-taste-split-linear-strain:a1",
+  "source_branch": "claude/strain-hot-matter-twins-20261013",
+  "source_head": "6afb06951a13ca861b50f47a8faf5d5c06594109",
+  "source_head_is_branch_tip": true,
+  "source_objects": [
+    {
+      "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW2_referee_verdict.md",
+      "sha256": "dacc968ff1da7817bcbb944220af3129fd1ee17d78e3c8a68e631b873ee08751",
+      "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/exercises/strain-hot-matter-and-twins-20261013/agents/C5_TW2_report.md",
+      "sha256": "3dc6105c233bfdb35d9ed34349142d91c4b88279dc58e32672c310675d4b8fac",
+      "commit": "6afb06951a13ca861b50f47a8faf5d5c06594109",
+      "verified": true
+    }
+  ],
+  "main_read": "a77a3449c91a753b06ce2a63876cd460b62cb4cf",
+  "axiom_sources_read_in_full": [
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md"
+  ],
+  "source_mismatch": "TW2 scripts import flat/sublum.py, dirac.py, r1934_lib.py, which are absent from the frozen branch and from current main; the lane's one-loop integral (B', B'') could not be rerun and is quoted only.",
+  "check": {"file": "check.py", "total": "PASS=54 FAIL=0", "runtime_s": 75, "peak_rss_mb": 463, "hit_printed": true},
+  "result": "scoped, same-family, unrefereed: pair-group (rotations x one-site translation pairs) selection rule K(h)=beta*diag(h_aa); T2g and body-diagonal first-order twin-mass response forced to zero; axis response allowed with one constant beta that no spatial symmetry forces to zero and that is 1/8 in an exact torus toy functional",
+  "first_unresolved_step": "P3(ii) for the lane's real law: whether the strained photon-plus-Psym-vertex one-loop functional commutes with the one-site translation pairs (S_aS_b) and the staggered rotations, tested on a body-diagonal split with a T2g strain in the lane's 8x8 evaluator; blocked by the missing flat/ modules and by the singular photon frame for T2g strain"
+}

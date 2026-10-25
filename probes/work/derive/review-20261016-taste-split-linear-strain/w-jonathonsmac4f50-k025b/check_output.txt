@@ -1,0 +1,72 @@
+PASS source hash src_C5_TW2_referee_verdict.md
+PASS source hash src_C5_TW2_report.md
+PASS A0 operators are dyadic-exact (A, O_a, strain generators)
+PASS A1 shift S_0: sign field commuting with h exists and is unique up to +-
+PASS A1 shift S_1: sign field commuting with h exists and is unique up to +-
+PASS A1 shift S_2: sign field commuting with h exists and is unique up to +-
+PASS A2 O_0: mass-like operator diag(cx).cos k_i cos k_j anticommuting with h has a 1-dim exact solution = the +-1 pattern used
+PASS A2 O_1: mass-like operator diag(cx).cos k_i cos k_j anticommuting with h has a 1-dim exact solution = the +-1 pattern used
+PASS A2 O_2: mass-like operator diag(cx).cos k_i cos k_j anticommuting with h has a 1-dim exact solution = the +-1 pattern used
+PASS A3 O_0 hermitian, {O,h}=0, [O,eps]=0 (exact)
+PASS A3 O_1 hermitian, {O,h}=0, [O,eps]=0 (exact)
+PASS A3 O_2 hermitian, {O,h}=0, [O,eps]=0 (exact)
+PASS A4 S_c flips exactly O_c (S_x:O23, S_y:O31, S_z:O12) and no other; matches TW2 tw2_alg.out step 4 (O_12 commutes S1,S2, anticommutes S3) :: ['-++', '+-+', '++-']
+PASS A5 S_a anticommutes with eps (single shifts swap sublattices), S_aS_b commutes with eps
+PASS A6 strained kinetic term: hermitian, eps-odd (exact, 6 strains incl. off-diagonal)
+PASS A7 strained split masses: hermitian, eps-even
+PASS A8 {O_a(t), h(t)} = 0 holds to first order in t for all strains (the flow keeps the splitting a pure 'mass')
+PASS A9 strained operators commute with every one-site shift S_c (dH) / carry the same S_c-sign as O_a (dO_a)
+PASS A10 staggered rotation Rz: sign field making Q h Q^T = h exists, unique up to +-
+PASS A11 Rz: Q eps Q^T = eps
+PASS A12 Rz maps the triplet into itself by a signed permutation :: [[0, -1, 0], [1, 0, 0], [0, 0, 1]]
+PASS A13 Rz: strained operators are covariant, h -> R h R^T, triplet -> M (exact, 6 strains)
+PASS A10 staggered rotation Rx: sign field making Q h Q^T = h exists, unique up to +-
+PASS A11 Rx: Q eps Q^T = eps
+PASS A12 Rx maps the triplet into itself by a signed permutation :: [[1, 0, 0], [0, 0, -1], [0, 1, 0]]
+PASS A13 Rx: strained operators are covariant, h -> R h R^T, triplet -> M (exact, 6 strains)
+PASS A14 triplet (O_23,O_31,O_12) transforms as the VECTOR representation of the cubic rotation group (after sign choice of the O_a) :: sign gauge d = (-1, -1, -1)
+PASS B1 group orders: rotations only 24, translation pairs only 4, rotations + translation pairs 96 :: (24, 4, 96)
+NOTE: stabiliser of axis (0,0,1)              rotations+translations: |stab|=16, linear strain invariants=1 | rotations only: |stab|= 4, invariants=1
+NOTE: stabiliser of face-diagonal (1,1,0)     rotations+translations: |stab|= 8, linear strain invariants=1 | rotations only: |stab|= 2, invariants=3
+NOTE: stabiliser of body-diagonal (1,1,1)     rotations+translations: |stab|=12, linear strain invariants=0 | rotations only: |stab|= 3, invariants=1
+NOTE: stabiliser of generic (1,2,3)           rotations+translations: |stab|= 4, linear strain invariants=2 | rotations only: |stab|= 1, invariants=5
+PASS B2 axis splitting: exactly ONE linear strain invariant with or without translation pairs (the tetragonal one)
+PASS B3 body-diagonal splitting: rotations alone leave ONE invariant (trigonal T2g shear); with the one-site translation pairs ZERO
+PASS B4 face-diagonal splitting: one invariant (diagonal-strain part), stabiliser image contains C4 about the third axis
+PASS B6 equivariant linear response tensors K(h): dim = 1 with rotations + translation pairs; 2 with rotations only (beta_E and beta_T); 15 with translations only :: (1, 2, 15)
+PASS B7 the unique equivariant K is K(h) = beta * diag(h_aa): diagonal in the vector basis, off-diagonal strain components drop out
+PASS B9 no element of the full cubic group (48 signed permutations, proper or improper) maps the tetragonal strain to its negative, so no spatial symmetry zero exists for the tetragonal coefficient (spectra differ)
+PASS B8 no first-order strain response of the singlet twin-mean mass linear in the splitting vector (dim 0), with or without translations
+NOTE: L=8 third-moment K'(h) for tet diag(-1,-1,2)    rows a, cols b: [['-1/8', '0', '0'], ['0', '-1/8', '0'], ['0', '0', '1/4']]
+NOTE: L=8 third-moment K'(h) for B1 diag(1,-1,0)      rows a, cols b: [['1/8', '0', '0'], ['0', '-1/8', '0'], ['0', '0', '0']]
+NOTE: L=8 third-moment K'(h) for diag(3,-5,2)         rows a, cols b: [['3/8', '0', '0'], ['0', '-5/8', '0'], ['0', '0', '1/4']]
+NOTE: L=8 third-moment K'(h) for T2g xy               rows a, cols b: [['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]
+NOTE: L=8 third-moment K'(h) for T2g yz               rows a, cols b: [['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]
+NOTE: L=8 third-moment K'(h) for T2g zx               rows a, cols b: [['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]
+NOTE: L=8 third-moment K'(h) for trigonal xy+yz+zx    rows a, cols b: [['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]
+PASS C0 third-moment responses are real (imaginary parts exactly 0) and exact dyadic
+PASS C1 t=0 response K0 is diagonal and cubic: K0 = kappa0 * identity with kappa0 != 0 (exact) :: kappa0 = 7/16
+PASS C2 first-order response K'(h) is exactly DIAGONAL for every strain tested (diagonal, tetragonal, B1, all T2g)
+PASS C3 BETA != 0: the tetragonal axis response K'_zz(tet) is a nonzero exact rational (explicit counterexample to 'symmetry forces zero' for axis splitting) :: beta = K'_zz/h_zz = 1/8
+PASS C4 K'_aa = beta * h_aa exactly for three independent diagonal traceless strains (one constant beta; rotation covariance)
+PASS C5 every T2g (off-diagonal) strain, incl. the trigonal shear, gives K' = 0 EXACTLY: no first-order twin-mass response
+PASS C6 singlet (twin-mean) channel: linear-in-s, first-order-in-t response of tr[eps H^3] is exactly 0 for all strains
+PASS C7 B1 strain gives K'_zz = 0 (axis splitting along z, strain diag(1,-1,0)): reproduces the TW2 'exactly even' E_g observation
+PASS C8 torus-size independence: K'_zz(tet) at L=10 equals L=8 (so equals the infinite-lattice third moment) :: L=10: 1/4, L=8: 1/4
+NOTE: L=6 resolvent model K'(tet)=[-0.01843836 -0.01843836  0.03687672]
+PASS D1 resolvent model (tr[O_a H (H^2+mu^2)^-1], L=6): K'(tet) diagonal, K'_zz = -2 K'_xx != 0
+PASS D2 resolvent model: T2g xy, trigonal give K' = 0 to 1e-12; B1 gives K'_zz = 0 and K'_xx = -K'_yy
+PASS D3 control perturbation V = sum_a (-1)^{x_a} is invariant under the staggered rotations (exact) but flips under the one-site shifts S_a
+NOTE: control (translation covariance broken, lam=0.40): K'(T2g xy) off-diagonal entry K'_xy=1.541e-05, K'_yx=1.541e-05
+PASS D4 control: with translation covariance broken (rotations kept) the T2g channel REOPENS: K'_xy = K'_yx != 0 (>1e-5) for strain xy; the check can fail
+PASS D5 control: the symmetry-allowed diagonal channel stays nonzero in the broken model (not an artefact of the perturbation)
+PASS E1 |mu(t)| for twin vector mu_a = sigma(1+kappa+t beta h_aa) n_a: d|mu|/dt = sigma*beta*sum_a h_aa nhat_a^2 (no dependence on kappa), exact symbolic
+PASS E2 body-diagonal n=(1,1,1): slope 0 for every traceless diagonal strain
+PASS E3 axis n=(0,0,1): slope = beta*h_zz; face-diagonal unit n=(1,1,0)/sqrt2 with the SAME strain: slope = -(1/2)*beta*h_zz
+PASS E4 body-diagonal splitting with E_g strain diag(1,-1,0): first-order twin-mixing (direction rotation) is NONZERO even though the mass slope is 0 (matches TW2 (iii) 'odd part')
+NOTE: lane B'(tet, axis z) = -2270797/50000000 per e^2 (TW2 report 3(c) table row B' tet; referee -0.0454159364) ; the selection rule predicts:
+NOTE:   same strain, face-diagonal n=(1,1,0): 2270797/100000000 (= -B'/2); B1 strain, axis: 0 (TW2: exactly even); body diagonal: 0 for all strains; any T2g: 0
+PASS E6 prediction ratio face-diagonal/axis for the tetragonal strain is -1/2 (arithmetic only; NOT tested against lane code)
+TOTAL: PASS=54 FAIL=0
+HIT: selection rule with translation pairs (scoped): at O(sigma) the first-order strain response of the face-diagonal taste-split twin masses is K(h)=beta*diag(h_aa) -- T2g shears and ALL body-diagonal splittings are forced to zero, the axis case is allowed with one free constant beta that is nonzero in an exact torus model (counterexample to 'symmetry forces zero'); conditional on premises P1-P5 of ATTEMPT.md, a toy functional, not the lane's one-loop value
+SUMMARY: exact torus rebuild plus pair-group theory shows rotations x one-site translations allow only K(h)=beta*diag(h_aa) at first order (zero for T2g and body-diagonal splitting, nonzero beta for axis splitting in an explicit exact model, T2g reopened only when translation covariance is broken); elapsed 74 s

@@ -1,0 +1,65 @@
+# --- Section 1: exact fixture (Fractions / sympy) ---
+PASS E0 fixture is cubic-orbit closed, antipodal, normalized (N=96 points)
+PASS E1 zeta~ orthogonal to c, H0 zeta~ = c exactly, H_* zeta~ = 0 exactly
+PASS E1b ||zeta~||^2 = I0 = sum w/(4 eps^2) = 71791/17640
+PASS E2 exact rank: dim ker(P H0 P) on whole space = 2N+2 (= transverse 2N + zeta + auxiliary c) [N=48, rank=94]
+PASS E3 H_*^2 = 4 P eps^2 P - 4 eps^2 F - 4|v><v| exactly (all 384 basis vectors)
+PASS E4 sum_a L_a = 3P - H_*^2/2 - 2 eps^2 F exactly (all basis vectors)
+PASS E5 canonical cancellation <zeta~,(L_a-P)zeta~> = 0 exactly; pieces -1/6 and +1/6 (free centred term and finite-rank placement correction)
+PASS E6a F chi = 0, F x = 0, <zeta~,x> = 0, <c,x> = 0 exactly
+PASS E6b zero mean of G_x/(2eps) and exact residual identity H_*xi_r - x = -[G_x 1_{eps<r} + 2 eps m_r] n.T for 5 cutoffs r (this is the cutoff-inverse step with both means retained)
+# --- Section 2: continuum constants by independent quadrature ---
+PASS C1 I0 = (1/4) int_0^inf [e^{-t/2} I0bessel(t/2)]^3 dt = 0.25273101; spherical quadrature agrees (0.25269869); 1/12 <= I0 <= 9/8
+PASS C1b normalisation: mu(torus) = 0.999690, int eps^2 = 1.499239 (=3/2)
+PASS C2 cone integrals: int_{eps<r} eps^-2 <= r, vol{eps<r} <= r^3/3, int_{eps>=r} eps^-4 <= 9/r | r=0.5: J1/r=0.4237 vol/(r^3/3)=0.4391 J4*r/9=0.0499; r=0.25: J1/r=0.4096 vol/(r^3/3)=0.4131 J4*r/9=0.0490; r=0.1: J1/r=0.4060 vol/(r^3/3)=0.4065 J4*r/9=0.0470; r=0.01: J1/r=0.4053 vol/(r^3/3)=0.4053 J4*r/9=0.0452; r=0.001: J1/r=0.4053 vol/(r^3/3)=0.4053 J4*r/9=0.0345
+PASS C3 band amplitudes: sqrt(lam)/(3pi) <= A_lam <= 2 sqrt(lam), beta<=1/2, n>=1/2 | lam=0.0625: A/sqrt(lam)=0.2240; lam=0.001: A/sqrt(lam)=0.2239; lam=1e-06: A/sqrt(lam)=0.2239; lam=1e-09: A/sqrt(lam)=0.2239; lam=1e-12: A/sqrt(lam)=0.2239
+PASS C4 leading asymptotics w = lam/(8pi^2 I0), beta^2 = 9 lam^3/(32 pi^2) (relative error <= 2e-3 + O(lam^2))
+PASS C5 Z_Q = ||1_{eps>=1/2} zeta||^2 = 0.79029 >= 23/324 = 0.07099
+PASS C6 finite-time averaged high-momentum weight >= (A sqrt(Z_Q) - E(T))^2 at T=lam^(-7/4): positive for lam<=1e-6, E(T) < A sqrt(Z_Q)/2 for lam<=1e-9, bound/lam converges (1e-9 vs 1e-12 within 20%) to ~0.0383, above the source's 23/(11664 pi^2)=2.00e-04 | lam=1e-06: bound/lam=0.00957, E/A=0.452; lam=1e-09: bound/lam=0.03277, E/A=0.0804; lam=1e-12: bound/lam=0.03834, E/A=0.0143
+PASS C7 time-zero weight of the family on eps>=1/2 is beta^2 ||Q c||^2/n^2 <= beta^2/n^2 <= lam^3 (lam<=1/16): O(lam^3) against the O(lam) averaged weight
+# --- Section 3: averaging lemma and Jensen step on a float copy of the exact fixture ---
+PASS A0 Pauli-built H0(0,q) = [[0,2s^T],[2s,0]] in the (c,T) basis at every fixture point
+PASS A1 chi = P phi/||P phi|| has no transverse part and Pi chi = <zeta,chi> zeta | A=0.37907
+PASS A2 averaging lemma ||M_T x|| <= ||H_* xi - x|| + 2||xi||/T (random xi, T in {0.5,3,17,120}) | min slack 5.64
+PASS A3 Jensen + triangle chain: time-avg far weight >= ||Q M_T chi||^2 >= (A||Qzeta|| - ||M_T chi - A zeta||)_+^2 | T=5: avg=0.3346 >= |Q M_T chi|^2=0.2489 >= bound=0; T=50: avg=0.3177 >= |Q M_T chi|^2=0.05812 >= bound=0; T=400: avg=0.2915 >= |Q M_T chi|^2=0.01756 >= bound=0.0131
+PASS A4 on the fixture M_infty chi = kernel projection of chi = A zeta (no free flat-band component)
+# --- Section 4: spin algebra from Pauli matrices ---
+PASS S1 (c,T1,T2,T3) orthonormal
+PASS S2 (sigma_1l + sigma_2l) T_j = 2i eps_{ljk} T_k;  (sigma_1+sigma_2) c = 0
+PASS S3 exact free block at K=lam*kappa: [[0, 2(cos(K/2)s)^T],[2 cos(K/2) s, i b x]], b_j=2 sin(K_j/2) cos q_j
+PASS S4 H_D(lam kappa)/lam = H_*/lam + B + R with ||B||<=b, ||R||<= lam b^2/4 + lam^2 b^3/24 | lam=0.1: ||R||=0.0277 <= 0.0421; lam=0.01: ||R||=0.00277 <= 0.00413
+PASS S5 dH0/dlam at lam=0 equals B: zero singlet block, triplet block i d x with d=kappa cos q (pointwise)
+# --- Section 5: cone-packet counterexample ---
+PASS K1 exact: M0^3 = 5 M0 (sympy)
+PASS K2 exact: exp(-i tau* M0) T2 = (3/5) T2 - (4i/5) c, norm of change = 2/sqrt(5), tau* = pi/sqrt(5) (series check to 1e-3 at 12 terms)
+PASS K3 Pauli H0(lam e1, lam e3)/lam (lam=1e-6): evolved T2 equals (3/5) T2 - (4i/5) c to 1e-5; change = 2/sqrt5
+PASS K3b scaling-limit matrix M(kappa,p) = [[0,2p^T],[2p, i kappa x]] equals the Pauli symbol H0(lam kappa, lam p)/lam (lam=1e-7, 10 random kappa,p)
+PASS K4 pointwise cone-scale mismatch ||exp(-i tau* M(p)) u - exp(-i tau* D_kappa) u|| >= 1/sqrt5 = 0.4472 on all 800 sampled p in the eta=0.01 balls (min 0.8875); D31 bound is 2/sqrt5-(8+4tau*)eta = 0.7582
+PASS K5 sharpness is directional: for kappa || p0 (theta=0) the cone-scale mismatch is 0, it grows with the angle theta between p0 and kappa (theta=0 means p0 || kappa); so mass at the cone scale is necessary-for-failure only for kappa not along p0 | theta=0.00: max mismatch 0.0000; theta=0.30: max mismatch 0.2724; theta=0.79: max mismatch 0.6487; theta=0.80: max mismatch 0.6576; theta=1.57: max mismatch 0.8944
+# --- Section 6: Theorem U (uniform class) and the finite-fixture counterexample ---
+PASS U1 Theorem U inequality err <= (2 lam b(1+Tb))/sigma + T M + T r_lam holds for every tested (lam, x in Z, T) with the fixture's own J1, E2, I0 and the best (r,sigma) | 24 cases; sample: lam=0.01 zeta T=0.4 err=0.0325<=bound 1.65
+PASS U2 with torus-like (volume ~ lam^3) near-cone weight, the state error of the single vector zeta (T=1) decreases with lam (1e-2,1e-3,1e-4): 0.0267, 0.00312, 0.00064
+PASS U3 exact identity i d<zeta,psi>/dtau = <g + R zeta, psi> (g = B zeta transverse, g orthogonal to zeta) | |diff|=7.2e-12
+PASS U4 finite-fixture realisation of D31 (7+7 points in two balls of radius 0.01 lam, true torus volume weight, kappa=e1, p0=e3, tau*=pi/sqrt5): ||U_lam(tau*) u - exp(-i tau* A) u|| = 0.894, 0.894, 0.894, all > 1/sqrt5 = 0.447
+PASS U5 same transverse vector placed at |q| = R*lam (lam=1e-4): error falls as R grows (R=1,10,100,1000): 0.894, 0.100, 0.008, 0.001
+# --- Section 6b: the two new lemmas and the current corollary, tested directly ---
+PASS L1 Lemma E: ||E_sigma (f n.T)|| <= (1+sqrt(E2 J1(r))) ||f 1_{eps<r}|| + sigma ||f||/(2r) for f orthogonal to 1/eps (1000 random/concentrated/singular cases; worst ratio 0.660)
+PASS L2 cone-mass propagation: ||1_{eps<r} F e^{-i tau A} x|| <= ||1_{eps<r} F x|| + tau b sqrt(J1(r))/(2 sqrt(I0)) (worst ratio 0.994)
+PASS L3 current expansion J_a(lam kappa)/lam = kappa_a L_a + O(lam^2) in operator norm on the fixture: deviations 2.26e-05 (lam=1e-2), 2.26e-07 (1e-3), ratio 100.0 ~ 100
+PASS L4 uniform-current chain: |<psi,J_a psi>/lam - kappa_a <v,calJ_a v>| <= ||J_a/lam - kappa_a L_a|| + 2|kappa_a| ||L_a|| ||psi - v|| (18 cases, worst ratio 0.000)
+PASS L5 normalizable total-momentum packet: global squared error 0.000184 <= 2 A0^2 + 2 A1^2 (global near-cone mass)=23.8
+# --- Section 7: rate of the sharp class, and the cone-scale source for band preparations ---
+PASS R1 exponent balance for ||1_{eps<r} x|| <= C r^theta, r = lam^a, sigma = sqrt(lam r): rate lam^{theta'/(1+2theta')}, theta'=min(theta,1/2) (at most lam^{1/4}) | theta=1/8: lam^(1/10); theta=1/4: lam^(1/6); theta=1/2: lam^(1/4); theta=1: lam^(1/4)
+PASS R2 continuum-constant bound for the single vector zeta (J1<=r, E2=3/2, I0 from C1): decreasing to 0 as lam -> 0, successive ratios (lam -> lam^2) follow the lam^{1/4} law: values 0.392, 0.0122, 1.22e-05, 1.21e-11, ratios 0.031, 0.001, 1e-06
+PASS I1 shell preparation normalised: ||phi_lam||^2 = 1.000000
+PASS I2 transverse (K=0 flat-band) occupation of the band packet at K=lam*kappa, kappa=(1,1,1), time tau/lam: O(1), stable as lam->0: tau=0.25: 0.0218; tau=0.5: 0.0770; tau=1: 0.2080; tau=2: 0.5095
+PASS I3 feed of the dressing amplitude by the cone-scale transverse population: <g,u_shell(tau)>/sqrt(lam) -> nonzero limit (|S|=0.0392, 0.0700, 0.0897, 0.1329 at tau=0.25,0.5,1,2); same order sqrt(lam) as the initial amplitude A_lam
+PASS I4 size comparison at lam=1e-4: A_lam/sqrt(lam)=0.2239 vs integrated feed int_0^2 |S| dtau <= 0.1698 (ratio 0.76): the cone-scale source is an O(1) relative correction to the zero-space orbit, not a perturbation
+TOTAL: PASS=49 FAIL=0
+RUNTIME: 66.9 s
+SUMMARY: exact-fixture and quadrature checks of the leakage/state-comparison lemmas and the canonical cancellation, finite-fixture tests of the equi-integrability bound for uniform state comparison on the zero space (Theorem U), and a cone-scale computation showing the band-preparation interface at K~lam needs a matched cone-scale source for the dressing.
+HIT: scoped result - sufficient (cone-scale equi-integrability) class for uniform state comparison and uniform current response on the zero space at K=lam*kappa, time tau/lam, proved in ATTEMPT.md steps 8-14 and tested here; same-family, unrefereed.
+
+[stderr]
+/Users/jonBridger/.probe-workers/probes-view/closeout/probes/work/derive/review-20261012-excluded-walk-preparation/w-jonathonsmac4f50-k8669/check.py:986: RuntimeWarning: invalid value encountered in scalar divide
+  worst = max(worst, m1 / bnd)

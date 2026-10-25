@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20261012-excluded-walk-preparation:a1",
+ "type": "judgment",
+ "lane": "review-science-20261012",
+ "worker": "w-jonathonsmac4f50-k8669",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261012-excluded-walk-preparation/w-jonathonsmac4f50-k8669/check.py",
+ "seed": 63892,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "74e81b46",
+ "started_utc": "20261025T213133Z",
+ "elapsed_s": 69.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "exact-fixture and quadrature checks of the leakage/state-comparison lemmas and the canonical cancellation, finite-fixture tests of the equi-integrability bound for uniform state comparison on the zero space (Theorem U), and a cone-scale computation showing the band-preparation interface at K~lam needs a matched cone-scale source for the dressing."
+ },
+ "review": "Read the log after the run: check.py (70 s) printed a HIT for a scoped sufficient condition: the state comparison and the canonical-current response on the zero-energy space are uniform when the preparations carry no mass at the cone scale |q| ~ lambda, with rate lambda^(theta'/(1+2theta')), the cone-packet counterexample violating it; the leakage lower bound and the cancellation (-1/6 + 1/6) rebuilt without shared code; five broken copies of the script each fail a check. ATTEMPT.md stops at step 19 (matching cone-scale band dynamics to the far-region dressing for generic K ~ lambda). Same-family (Claude Sonnet 5.5), unrefereed.",
+ "what": "Recover and advance the two auxiliary excluded-walk results at the pinned sources: the explicit high-momentum time-averaged leakage lower bound for globally projected positive-band packets, and the normalized cone-packet counterexample to operator-norm state convergence. Check their complete actual arguments and match the canonical projected-band and memory results on main and the boost source at PR9484 head 773321aa8fdfccc05248682dfc96bf94215034a2 (or its reviewed successor) before choosing work. First make the useful leakage/state-comparison lemmas self-contained with a disjoint check, preserving the canonical-current cancellation. Then address ONE precise remaining interface: canonical-current response for normalizable positive-band preparations with generic K of order lambda at inverse-energy time, or a sharp preparation class under which state comparison is uniform. State exact domain, time scale, norm or observable and global normalization. The existing fixed-preparation boost residual results do not themselves settle canonical-current response or uniform state convergence. Do not reproduce already-landed limits, mistake momentum leakage for a current defect, assert universal decay, or revive a PR snapshot. A failed candidate must leave an exact counterexample or substantive checked derivation with its first unresolved obligation. Owner-requested scientific work transfer. Use the existing maximum-thinking J campaign and claim.py ownership protocol; inspect completed attempts and active claims to avoid duplication. Deliver numbered PROVED/CHECKED/ASSUMED steps, a self-contained disjoint check.py, and RECOVERY_STATUS.json with exact source hashes under probes/work/derive/<problem>/<worker>/. Commit the checker before run_probe.py. Emit SUMMARY and HIT only for a demonstrated new result or defect. Follow ordinary cross-model confirmation; this catalog addition starts no workers, changes no budgets and creates no PR snapshots or audit authority.",
+ "stdout_sha256": "a14aae5fe8c4be3867d54a60530bf40d975ad4078432a046d4ef5d622bce22d9",
+ "stdout_tail": "the band packet at K=lam*kappa, kappa=(1,1,1), time tau/lam: O(1), stable as lam->0: tau=0.25: 0.0218; tau=0.5: 0.0770; tau=1: 0.2080; tau=2: 0.5095\nPASS I3 feed of the dressing amplitude by the cone-scale transverse population: <g,u_shell(tau)>/sqrt(lam) -> nonzero limit (|S|=0.0392, 0.0700, 0.0897, 0.1329 at tau=0.25,0.5,1,2); same order sqrt(lam) as the initial amplitude A_lam\nPASS I4 size comparison at lam=1e-4: A_lam/sqrt(lam)=0.2239 vs integrated feed int_0^2 |S| dtau <= 0.1698 (ratio 0.76): the cone-scale source is an O(1) relative correction to the zero-space orbit, not a perturbation\nTOTAL: PASS=49 FAIL=0\nRUNTIME: 66.9 s\nSUMMARY: exact-fixture and quadrature checks of the leakage/state-comparison lemmas and the canonical cancellation, finite-fixture tests of the equi-integrability bound for uniform state comparison on the zero space (Theorem U), and a cone-scale computation showing the band-preparation interface at K~lam needs a matched cone-scale source for the dressing.\nHIT: scoped result - sufficient (cone-scale equi-integrability) class for uniform state comparison and uniform current response on the zero space at K=lam*kappa, time tau/lam, proved in ATTEMPT.md steps 8-14 and tested here; same-family, unrefereed.\n\n[stderr]\n/Users/jonBridger/.probe-workers/probes-view/closeout/probes/work/derive/review-20261012-excluded-walk-preparation/w-jonathonsmac4f50-k8669/check.py:986: RuntimeWarning: invalid value encountered in scalar divide\n  worst = max(worst, m1 / bnd)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k8669",
+  "at_utc": "20261025T213253Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Accepted as a logged scoped result (sufficient condition, not necessary); proofs are in ATTEMPT.md steps 8-14 and tested by check.py; imported pieces (nonzero-K leakage, D14 current expansion) are not re-derived. Carried in the probe closing record; no issue filed.",
+  "by": "w-jonathonsmac4f50-k8669",
+  "at_utc": "20261025T213253Z"
+ }
+}

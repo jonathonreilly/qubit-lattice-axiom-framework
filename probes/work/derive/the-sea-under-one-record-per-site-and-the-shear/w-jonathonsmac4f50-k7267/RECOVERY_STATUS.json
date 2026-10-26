@@ -1,0 +1,15 @@
+{
+  "source_branch": "physics-loop/admissibility-induced-law-block155-the-walker-seas-energy-falls-under-every-uniform-shear-20260926",
+  "source_branch_status": "not found on origin at fetch time (git fetch origin <branch> -> couldn't find remote ref); the block 155 note is LANDED on main at a77a3449c91a753b06ce2a63876cd460b62cb4cf (introduced by commit 9d15f404c6), so the landed text was used",
+  "source_head": "a77a3449c91a753b06ce2a63876cd460b62cb4cf (main_wt detached checkout)",
+  "source_objects": [
+    {"path": "docs/ADMISSIBILITY_RULE_THE_WALKER_SEAS_ENERGY_FALLS_UNDER_EVERY_UNIFORM_SHEAR_AT_FIXED_VOLUME_AND_COUNTED_BY_THE_MEMBER_IT_FORCES_THE_CLOSED_LATTICE_TO_SHEAR_BOUNDED_THEOREM_NOTE_2026-09-26.md", "sha256": "c958e0a1a7a15875efb369ecf82f4d8a0b663004bbb9ab6cffdd2042210c80d9", "verified": true},
+    {"path": "docs/ADMISSIBILITY_RULE_THE_HARD_CORE_SEA_ON_A_RING_IS_ONE_TWISTED_BAND_HALF_FILLED_WITH_HALF_THE_FREE_SEAS_VOLUME_TERM_AND_CLOCK_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-24.md", "sha256": "87de6e67ed62b1ef80f502daaf3c91c1705daca7a69052f6df31a3abf85084ff", "verified": true},
+    {"path": "docs/ADMISSIBILITY_RULE_THE_MEMBERS_ZERO_MODE_TESTS_THE_ZERO_OF_ENERGY_IF_THE_MEMBER_SEES_THE_HALF_FILLED_SEA_A_CLOSED_LATTICE_BOUNCES_OR_CANNOT_MOVE_BOUNDED_THEOREM_NOTE_2026-09-25.md", "sha256": "031a0e666ec8e1ad36082c48efce47458ef922a73fa67f8afbbebfd4ec8cb7f2", "verified": true},
+    {"path": "docs/ADMISSIBILITY_RULE_ONE_RECORD_PER_SITE_IS_AN_INTERACTION_NOT_A_FREE_SEA_TWO_RECORDS_UNDER_EXCLUSION_AGAINST_FREE_ANTISYMMETRIC_AND_SYMMETRIC_PAIRS_BOUNDED_THEOREM_NOTE_2026-09-22.md", "sha256": "1304da384ff3e6a18605271e5259195cb3e7dcd65d4c8bac4d330aa48f6062ca", "verified": true},
+    {"path": "docs/ADMISSIBILITY_RULE_THE_CROWD_UNDER_EXCLUSION_ALSO_GAINS_FROM_AN_ALTERNATION_OF_THE_BOND_RATES_ITS_GROUND_ENERGY_NEVER_RISES_THE_JAM_IS_BLIND_BOUNDED_THEOREM_NOTE_2026-09-22.md", "sha256": "7b52b254cc5f01968d825258488a52a58a03e87a6f9fb68656f41a706832d9cf", "verified": true},
+    {"path": "docs/ADMISSIBILITY_RULE_ANGLES_ARE_THE_TILT_OF_THE_COINS_FRAME_WITH_THEM_TWO_DISTURBANCES_TRAVEL_AT_ONE_DIRECTION_FREE_SPEED_AND_THE_PRICE_IS_A_CONSERVED_STRESS_BOUNDED_THEOREM_NOTE_2026-09-21.md", "sha256": "0d631bc3e1ceaabca7f8bf37cfa8a463cb8ec4b97c512b14cccfc297790315f6", "verified": true},
+    {"path": "docs/MINIMAL_AXIOMS_2026-06-29.md", "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753", "verified": true}
+  ],
+  "first_unresolved_step": "Step 12: the same chain with an a-independent rotation-invariant term (staggered mass) needs monotonicity of g(c)=lambda_min(c H_1 + W) for c>=1; not shown. Thermodynamic-limit existence of the per-site energy is also not shown (bounds are uniform in L; limit existence is not claimed)."
+}

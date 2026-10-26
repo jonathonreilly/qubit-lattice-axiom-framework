@@ -1,0 +1,139 @@
+# S0 setting: H_F = sum_{j,a} F[a][j] sigma_a (-i/2)(|x><x+e_j| - h.c.-type hop), hard-core compression (<=1 record/site),
+#    fermionic (order sign) and bosonic (no sign) composition; F = frame E^j_a; metric g^{-1} = F^T F; volume per site = 1/det F.
+PASS S0.rot-group 24 proper cubic rotations with exact (unnormalised) SU(2) lifts
+# S1 symbolic group average over the 24 proper cubic rotations: (1/24) sum_R R F R^T = (tr F / 3) 1 for a generic 3x3 F
+PASS S1.avg3 avg_R R F R^T = (trF/3) I  (exact, symbolic)
+PASS S1.c4 4 in-plane rotations (C4 about axis 3)
+PASS S1.avgC4 plane: avg over C4 = a*1 + b*J, a=trF/2, b=(F21-F12)/2; b=0 for symmetric F
+PASS S1.amgm-id u1^3+u2^3+u3^3-3u1u2u3 = (u1+u2+u3)*sum of squared differences/2  (=> AM-GM for cubes)
+# S2 single-particle covariance W h_F = h_{R F R^T} W, W = (x -> Rx) x U_R, generic non-symmetric rational F
+PASS S2.cov-cube Q3 (2x2x2 bond-once) all 24 rotations, exact
+PASS S2.cov-torus 3x3x3 all 24 rotations, exact
+PASS S2.cov-torus 4x4x4 all 24 rotations, exact
+PASS S2.cov-plane4x4 4 in-plane rotations, exact (plane walk uses sigma_1, sigma_2)
+# S3 many-body covariance: W H_F = H_{R F R^T} W on the hard-core N-record space (both composition rules)
+PASS S3.Q3-N2-F all 24 rotations, all 112 basis states, exact
+PASS S3.Q3-N2-B all 24 rotations, all 112 basis states, exact
+PASS S3.Q3-N3-F 5 rotations (incl. 90-degree, 3-fold, face-diagonal pi), 448 basis states, exact
+PASS S3.Q3-N3-B 5 rotations (incl. 90-degree, 3-fold, face-diagonal pi), 448 basis states, exact
+PASS S3.plane4x4-N2-F 4 in-plane rotations, 480 basis states, exact
+PASS S3.plane4x4-N2-B 4 in-plane rotations, 480 basis states, exact
+# S4 tracelessness and nonvanishing of the compressed generator; the strictly periodic 2x2x2 torus has H = 0
+PASS S4.Q3-N0-F diagonal entries=0, nonzero entries=0 (zero iff N in {0,8})
+PASS S4.Q3-N0-B diagonal entries=0, nonzero entries=0 (zero iff N in {0,8})
+PASS S4.Q3-N1-F diagonal entries=0, nonzero entries=48 (zero iff N in {0,8})
+PASS S4.Q3-N1-B diagonal entries=0, nonzero entries=48 (zero iff N in {0,8})
+PASS S4.Q3-N2-F diagonal entries=0, nonzero entries=576 (zero iff N in {0,8})
+PASS S4.Q3-N2-B diagonal entries=0, nonzero entries=576 (zero iff N in {0,8})
+PASS S4.Q3-N3-F diagonal entries=0, nonzero entries=2880 (zero iff N in {0,8})
+PASS S4.Q3-N3-B diagonal entries=0, nonzero entries=2880 (zero iff N in {0,8})
+PASS S4.Q3-N4-F diagonal entries=0, nonzero entries=7680 (zero iff N in {0,8})
+PASS S4.Q3-N4-B diagonal entries=0, nonzero entries=7680 (zero iff N in {0,8})
+PASS S4.Q3-N5-F diagonal entries=0, nonzero entries=11520 (zero iff N in {0,8})
+PASS S4.Q3-N5-B diagonal entries=0, nonzero entries=11520 (zero iff N in {0,8})
+PASS S4.Q3-N6-F diagonal entries=0, nonzero entries=9216 (zero iff N in {0,8})
+PASS S4.Q3-N6-B diagonal entries=0, nonzero entries=9216 (zero iff N in {0,8})
+PASS S4.Q3-N7-F diagonal entries=0, nonzero entries=3072 (zero iff N in {0,8})
+PASS S4.Q3-N7-B diagonal entries=0, nonzero entries=3072 (zero iff N in {0,8})
+PASS S4.Q3-N8-F diagonal entries=0, nonzero entries=0 (zero iff N in {0,8})
+PASS S4.Q3-N8-B diagonal entries=0, nonzero entries=0 (zero iff N in {0,8})
+PASS S4.plane4x4-N0 diagonal entries=0, nonzero entries=0
+PASS S4.plane4x4-N1 diagonal entries=0, nonzero entries=128
+PASS S4.plane4x4-N2 diagonal entries=0, nonzero entries=3584
+PASS S4.periodic-2x2x2-one-body-zero strictly periodic 2x2x2: T=T^dagger so every hop term cancels; H = 0 for EVERY frame
+PASS S4.periodic-2x2x2-any-frame also for the generic non-symmetric frame
+PASS S4.periodic-2x2x2-N2 N=2 fermionic many-body matrix entries: 0
+# S5 exact lowest eigenvalue of the hard-core generator (sector-reduced characteristic polynomial, sympy exact real-root isolation, width 1e-30)
+PASS S5.plane4x4.N1.F.dim sector dims sum to 32
+PASS S5.plane4x4.N1.F.equal-frame-negative E_N(1) in [-1.414213562373095, -1.414213562373095] < 0
+PASS S5.plane4x4.N1.F.diag(1/2,2).falls E(F)=-2.061552812809 < E(1)=-1.414213562373 (isolating intervals disjoint)
+PASS S5.plane4x4.N1.F.diag(1/2,2).jensen E(F) < c(F)E(1), c(F)=sum sing.values/2 = 1.250000000 -> bound -1.767766952966
+PASS S5.plane4x4.N1.F.shear[[1,1],[0,1]].falls E(F)=-2.236067977500 < E(1)=-1.414213562373 (isolating intervals disjoint)
+PASS S5.plane4x4.N1.F.shear[[1,1],[0,1]].jensen E(F) < c(F)E(1), c(F)=sum sing.values/2 = 1.118033989 -> bound -1.581138830084
+PASS S5.plane4x4.N1.F.sym[[2,1],[1,1]].falls E(F)=-3.605551275464 < E(1)=-1.414213562373 (isolating intervals disjoint)
+PASS S5.plane4x4.N1.F.sym[[2,1],[1,1]].jensen E(F) < c(F)E(1), c(F)=sum sing.values/2 = 1.500000000 -> bound -2.121320343560
+PASS S5.plane4x4.N1.B.dim sector dims sum to 32
+PASS S5.plane4x4.N1.B.equal-frame-negative E_N(1) in [-1.414213562373095, -1.414213562373095] < 0
+PASS S5.plane4x4.N1.B.diag(1/2,2).falls E(F)=-2.061552812809 < E(1)=-1.414213562373 (isolating intervals disjoint)
+PASS S5.plane4x4.N1.B.diag(1/2,2).jensen E(F) < c(F)E(1), c(F)=sum sing.values/2 = 1.250000000 -> bound -1.767766952966
+PASS S5.plane4x4.N1.B.shear[[1,1],[0,1]].falls E(F)=-2.236067977500 < E(1)=-1.414213562373 (isolating intervals disjoint)
+PASS S5.plane4x4.N1.B.shear[[1,1],[0,1]].jensen E(F) < c(F)E(1), c(F)=sum sing.values/2 = 1.118033989 -> bound -1.581138830084
+PASS S5.plane4x4.N1.B.sym[[2,1],[1,1]].falls E(F)=-3.605551275464 < E(1)=-1.414213562373 (isolating intervals disjoint)
+PASS S5.plane4x4.N1.B.sym[[2,1],[1,1]].jensen E(F) < c(F)E(1), c(F)=sum sing.values/2 = 1.500000000 -> bound -2.121320343560
+PASS S5.plane4x4.N2.F.dim sector dims sum to 480
+PASS S5.plane4x4.N2.F.equal-frame-negative E_N(1) in [-2.828427124746190, -2.828427124746190] < 0
+PASS S5.plane4x4.N2.F.diag(1/2,2).falls E(F)=-4.123105625618 < E(1)=-2.828427124746 (isolating intervals disjoint)
+PASS S5.plane4x4.N2.F.diag(1/2,2).jensen E(F) < c(F)E(1), c(F)=sum sing.values/2 = 1.250000000 -> bound -3.535533905933
+PASS S5.plane4x4.N2.F.shear[[1,1],[0,1]].falls E(F)=-4.252534662190 < E(1)=-2.828427124746 (isolating intervals disjoint)
+PASS S5.plane4x4.N2.F.shear[[1,1],[0,1]].jensen E(F) < c(F)E(1), c(F)=sum sing.values/2 = 1.118033989 -> bound -3.162277660168
+PASS S5.plane4x4.N2.F.sym[[2,1],[1,1]].falls E(F)=-6.840992590143 < E(1)=-2.828427124746 (isolating intervals disjoint)
+PASS S5.plane4x4.N2.F.sym[[2,1],[1,1]].jensen E(F) < c(F)E(1), c(F)=sum sing.values/2 = 1.500000000 -> bound -4.242640687119
+PASS S5.plane4x4.N2.B.dim sector dims sum to 480
+PASS S5.plane4x4.N2.B.equal-frame-negative E_N(1) in [-2.828427124746190, -2.828427124746190] < 0
+PASS S5.plane4x4.N2.B.diag(1/2,2).falls E(F)=-4.123105625618 < E(1)=-2.828427124746 (isolating intervals disjoint)
+PASS S5.plane4x4.N2.B.diag(1/2,2).jensen E(F) < c(F)E(1), c(F)=sum sing.values/2 = 1.250000000 -> bound -3.535533905933
+PASS S5.plane4x4.N2.B.shear[[1,1],[0,1]].falls E(F)=-4.252534662190 < E(1)=-2.828427124746 (isolating intervals disjoint)
+PASS S5.plane4x4.N2.B.shear[[1,1],[0,1]].jensen E(F) < c(F)E(1), c(F)=sum sing.values/2 = 1.118033989 -> bound -3.162277660168
+PASS S5.plane4x4.N2.B.sym[[2,1],[1,1]].falls E(F)=-6.840992590143 < E(1)=-2.828427124746 (isolating intervals disjoint)
+PASS S5.plane4x4.N2.B.sym[[2,1],[1,1]].jensen E(F) < c(F)E(1), c(F)=sum sing.values/2 = 1.500000000 -> bound -4.242640687119
+#    plane 4x4 exact block took 97s
+PASS S5.plane.N1.closed-form E_1 = -sqrt(a1^2+a2^2) = -sqrt(17)/2 for a=(1/2,2)
+PASS S5.plane.N1.relabelling coin rotation Q (90 deg) of the shear frame leaves every sector's characteristic polynomial unchanged (16 sectors)
+PASS S5.plane.N2.relabelling coin rotation Q (90 deg) of the shear frame leaves every sector's characteristic polynomial unchanged (16 sectors)
+PASS S5.cube2x2x2.N1.F.dim sector dims sum to 16
+PASS S5.cube2x2x2.N1.F.equal-frame-negative E_N(1) in [-0.866025403784439, -0.866025403784439] < 0
+PASS S5.cube2x2x2.N1.F.diag(1/2,1,2).falls E(F)=-1.145643923739 < E(1)=-0.866025403784 (isolating intervals disjoint)
+PASS S5.cube2x2x2.N1.F.diag(1/2,1,2).jensen E(F) < c(F)E(1), c(F)=sum sing.values/3 = 1.166666667 -> bound -1.010362971082
+PASS S5.cube2x2x2.N1.F.shear[[1,1,0],[0,1,0],[0,0,1]].falls E(F)=-1.224744871392 < E(1)=-0.866025403784 (isolating intervals disjoint)
+PASS S5.cube2x2x2.N1.F.shear[[1,1,0],[0,1,0],[0,0,1]].jensen E(F) < c(F)E(1), c(F)=sum sing.values/3 = 1.078689326 -> bound -0.934172358963
+PASS S5.cube2x2x2.N1.F.sym[[2,1,0],[1,1,0],[0,0,1]].falls E(F)=-1.870828693387 < E(1)=-0.866025403784 (isolating intervals disjoint)
+PASS S5.cube2x2x2.N1.F.sym[[2,1,0],[1,1,0],[0,0,1]].jensen E(F) < c(F)E(1), c(F)=sum sing.values/3 = 1.333333333 -> bound -1.154700538379
+PASS S5.cube2x2x2.N1.B.dim sector dims sum to 16
+PASS S5.cube2x2x2.N1.B.equal-frame-negative E_N(1) in [-0.866025403784439, -0.866025403784439] < 0
+PASS S5.cube2x2x2.N1.B.diag(1/2,1,2).falls E(F)=-1.145643923739 < E(1)=-0.866025403784 (isolating intervals disjoint)
+PASS S5.cube2x2x2.N1.B.diag(1/2,1,2).jensen E(F) < c(F)E(1), c(F)=sum sing.values/3 = 1.166666667 -> bound -1.010362971082
+PASS S5.cube2x2x2.N1.B.shear[[1,1,0],[0,1,0],[0,0,1]].falls E(F)=-1.224744871392 < E(1)=-0.866025403784 (isolating intervals disjoint)
+PASS S5.cube2x2x2.N1.B.shear[[1,1,0],[0,1,0],[0,0,1]].jensen E(F) < c(F)E(1), c(F)=sum sing.values/3 = 1.078689326 -> bound -0.934172358963
+PASS S5.cube2x2x2.N1.B.sym[[2,1,0],[1,1,0],[0,0,1]].falls E(F)=-1.870828693387 < E(1)=-0.866025403784 (isolating intervals disjoint)
+PASS S5.cube2x2x2.N1.B.sym[[2,1,0],[1,1,0],[0,0,1]].jensen E(F) < c(F)E(1), c(F)=sum sing.values/3 = 1.333333333 -> bound -1.154700538379
+PASS S5.cube2x2x2.N2.F.dim sector dims sum to 112
+PASS S5.cube2x2x2.N2.F.equal-frame-negative E_N(1) in [-1.732050807568877, -1.732050807568877] < 0
+PASS S5.cube2x2x2.N2.F.diag(1/2,1,2).falls E(F)=-2.291287847478 < E(1)=-1.732050807569 (isolating intervals disjoint)
+PASS S5.cube2x2x2.N2.F.diag(1/2,1,2).jensen E(F) < c(F)E(1), c(F)=sum sing.values/3 = 1.166666667 -> bound -2.020725942164
+PASS S5.cube2x2x2.N2.F.shear[[1,1,0],[0,1,0],[0,0,1]].falls E(F)=-2.449489742783 < E(1)=-1.732050807569 (isolating intervals disjoint)
+PASS S5.cube2x2x2.N2.F.shear[[1,1,0],[0,1,0],[0,0,1]].jensen E(F) < c(F)E(1), c(F)=sum sing.values/3 = 1.078689326 -> bound -1.868344717925
+PASS S5.cube2x2x2.N2.F.sym[[2,1,0],[1,1,0],[0,0,1]].falls E(F)=-3.741657386774 < E(1)=-1.732050807569 (isolating intervals disjoint)
+PASS S5.cube2x2x2.N2.F.sym[[2,1,0],[1,1,0],[0,0,1]].jensen E(F) < c(F)E(1), c(F)=sum sing.values/3 = 1.333333333 -> bound -2.309401076759
+PASS S5.cube2x2x2.N2.B.dim sector dims sum to 112
+PASS S5.cube2x2x2.N2.B.equal-frame-negative E_N(1) in [-1.732050807568877, -1.732050807568877] < 0
+PASS S5.cube2x2x2.N2.B.diag(1/2,1,2).falls E(F)=-2.291287847478 < E(1)=-1.732050807569 (isolating intervals disjoint)
+PASS S5.cube2x2x2.N2.B.diag(1/2,1,2).jensen E(F) < c(F)E(1), c(F)=sum sing.values/3 = 1.166666667 -> bound -2.020725942164
+PASS S5.cube2x2x2.N2.B.shear[[1,1,0],[0,1,0],[0,0,1]].falls E(F)=-2.449489742783 < E(1)=-1.732050807569 (isolating intervals disjoint)
+PASS S5.cube2x2x2.N2.B.shear[[1,1,0],[0,1,0],[0,0,1]].jensen E(F) < c(F)E(1), c(F)=sum sing.values/3 = 1.078689326 -> bound -1.868344717925
+PASS S5.cube2x2x2.N2.B.sym[[2,1,0],[1,1,0],[0,0,1]].falls E(F)=-3.741657386774 < E(1)=-1.732050807569 (isolating intervals disjoint)
+PASS S5.cube2x2x2.N2.B.sym[[2,1,0],[1,1,0],[0,0,1]].jensen E(F) < c(F)E(1), c(F)=sum sing.values/3 = 1.333333333 -> bound -2.309401076759
+#    cube 2x2x2 exact block took 9s
+PASS S5.cube.N1.closed-form E_1 = -(1/2)sqrt(a1^2+a2^2+a3^2) = -sqrt(21)/4 for a=(1/2,1,2)
+# S6 cell construction: a cell is a bond-once graph (open 2x2x2 cube in 3D, open 2x2 square in the plane) whose bonds are bonds of the torus;
+#    product states of cell ground states have <H> = sum of cell energies (cross-cell hops change cell numbers).
+PASS S6.cube-cell-k1 cell ground energy -eps_k = -0.8660254038 (<0, hermitian)
+PASS S6.cube-cell-k2 cell ground energy -eps_k = -1.7320508076 (<0, hermitian)
+PASS S6.cube-cell-k3 cell ground energy -eps_k = -2.5980762114 (<0, hermitian)
+PASS S6.cube-cell-k4 cell ground energy -eps_k = -3.4641016151 (<0, hermitian)
+PASS S6.cube-cell-k5 cell ground energy -eps_k = -2.9984228042 (<0, hermitian)
+PASS S6.cube-cell-k6 cell ground energy -eps_k = -2.4520886177 (<0, hermitian)
+PASS S6.cube-cell-k7 cell ground energy -eps_k = -1.3839665698 (<0, hermitian)
+PASS S6.square-cell-k1 cell ground energy -eps_k = -0.7071067812 (<0)
+PASS S6.square-cell-k2 cell ground energy -eps_k = -1.4142135624 (<0)
+PASS S6.square-cell-k3 cell ground energy -eps_k = -0.9659258263 (<0)
+PASS S6.plane-N2-cell-bound exact E_2(1)<=-2.8284271247  <=  2*E_cell(k=1) = -1.4142135624
+PASS S6.plane-N2-cell-bound-B bosonic: E_2(1)<=-2.8284271247  <=  -1.4142135624
+# S7 floating-point sanity (not exact): E_N(F) <= c(F) E_N(1) < E_N(1) for random frames, all N on the cube graph, N<=4 on the 4x4 plane
+PASS S7.cube-graph-all-N N=1..7, both signs, 3 random (non-symmetric allowed) frames each: E(F)<=c(F)E(1) and E(F)/det^(1/3)<E(1); largest E(F)-c(F)E(1) = -1.029e-01
+PASS S7.plane4x4-N1-4 N=1..4 (N=4 fermionic only), random frames: E(F)<=c(F)E(1), E(F)/det^(1/2)<E(1); largest E(F)-c(F)E(1) = -2.247e-02; 13s
+# S8 same argument for the free sea (block 155's left-open 'off-diagonal shears at every size'): <|F s|> >= c(F) <|s|>, floating point on zone grids
+PASS S8.free-sea free-sea energy per site -<|Fs|> <= c(F)*(-<|s|>) on 2D/3D grids L=4..40, 150 random frames (min slack 1.860e-03)
+TOTAL: PASS=122 FAIL=0
+runtime 319s
+HIT: for every cubic L x L x L torus (L>=3), L x L torus, and the bond-once 2x2x2 cube, every record number 0<N<n, both composition signs, and every uniform frame F (3x3, or 2x2 in the plane) with det F=1, the hard-core ground energy satisfies E_N(F) <= (tr sqrt(F^T F)/d) E_N(1) < E_N(1) unless F^T F = 1 (proof in ATTEMPT.md: concavity in F + cubic-rotation averaging + AM-GM); uniform-in-L cell bound for L even
+SUMMARY: PROVED (scope in ATTEMPT.md): under one record per site the ground energy falls under every volume-preserving uniform frame change at every N, both exchange signs, via concavity plus rotation averaging; exact finite spectra on the 4x4 plane and 2x2x2 cube agree, and the strictly periodic 2x2x2 torus has H=0.

@@ -301,6 +301,13 @@ Bosonized qubit sites (bosonized-sites, 2026-10-26, rethink r3; campaign files):
       - Caveat: a midpoint metric reading is not exactly gauge-invariant (average speed shifted by +0.086).
     - **Candidate amendment (not adopted; needed by the D4 laws):** "Edge registers enter the response only through the metric their records read." Bent clause: every edge responding (CL-3). Gate passes: no fitted numbers, no observed structure named. Untested prediction: no extra gravitational polarisation at any order.
   - Supplied: the coning centres (not events) and the metric reading.
+- **The 16 on D4 (d4-sixteen-content, PR #10103, 10/10, own re-run identical): LOST, but it was never carried.**
+  - Correction: the cube's 8 corner modes split as hop sign (2) x copy sign (2) x spin doublet (2). Their one-body symmetry is at most U(2) x U(2), and the register already lists "Handedness bit and 16 supplied". The copy sign only picked light versus mirror and set the turn charge.
+  - [T] -1 is in W(F4), so every invariant one-component kernel is even in p: one mode per D4 event gives NO spin-1/2. The D4 zoom runners supply 4 spinor components per event, which is not yet in the register.
+  - The staggered 16 lives on Z^4 = D4 + one hole class and keeps only 384 of the 1152 W(F4) elements (breaks triality).
+  - The 16 cosets of D4/2D4 are Fourier-dual to the half-period momenta, so they are tastes, not internal labels. The zoom kernel gaps all 15 nonzero ones.
+  - Candidate content clause (not adopted): "Each species is one field of the D4 matter law; species and link charges are supplied; only content anomaly-free in every link factor and mod 16 occurs." This predicts a nu^c in every family. Bent clause: CL-1's copy sign.
+  - OPEN: whether a 4-event (index-4, sqrt2) cell can carry the spin from one mode per event (zoom-out cells are never a cost).
 - **Still to rebuild on D4:**
   - the copy sign's role in carrying the 16;
   - slab chirality and the 4D index;

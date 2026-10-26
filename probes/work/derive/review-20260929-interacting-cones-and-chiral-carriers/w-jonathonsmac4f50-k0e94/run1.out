@@ -1,0 +1,60 @@
+PASS A1 exact: Euclidean frequency integral gives (1/2Omega)/(E-e-Omega) for the P+ part and (1/2Omega)/(E+e+Omega) for P-  [-1/(2*Omega*(Omega + e - I*nu)) ; 1/(2*Omega*(Omega + e + I*nu))]
+PASS A1b NUM: direct real-line frequency integral equals the residue value (20 digits)  [|diff|=2.12e-22]
+PASS A2 exact: tr[(1+a.sigma)/2 (1 +- b.sigma)/2] = (1 +- a.b)/2 (overlap weights O1,O2 of the loop)
+PASS A2b exact: s(k+Q) = -s(k) for Q=(pi,pi,pi), so the P+ overlap at the partner node is (1 - shat(p).shat(p-q))/2
+PASS A2c exact: O1/(e_p-e_k-Om)+O2/(e_p+e_k+Om) = [e_p - c(e_k+Om)]/[e_p^2-(e_k+Om)^2], c = shat(p).shat(p-q)
+PASS A3a exact: law of cosines gives c k = (P^2 - q^2 + k^2)/(2P)
+PASS A3b exact: massless-scalar integrand per dq dk is exactly -(q-k)/(16 pi^2 P^2) (all denominators cancel)  [(k - q)/(16*pi**2*P**2)]
+PASS A4a exact: for q > P the angular integral at fixed q vanishes identically (massless scalar)  [0]
+PASS A4b exact: for q < P it is 2 q (P - q)  [2*q*(P - q)]
+PASS A4c exact: continuum, mu=0: delta E(P) = g^2 P/(48 pi^2) for every P and every spatial cutoff Lambda >= P  [P/(48*pi**2)]
+PASS A5a exact: angular average of d/dP of the integrand at P=0 is (1/3)(Om-q)/(Om q (q+Om)^2); it is 0 at mu=0  [mu**2*(3*mu**2*q + mu**2*sqrt(mu**2 + q**2) + 4*q**3 + 4*q**2*sqrt(mu**2 + q**2))/(3*q*(6*mu**6*q + mu**6*sqrt(mu**2 + q**2) + 38*mu**4*q**3 + 18*mu**4*q**2*sqrt(mu**2 + q**2) + 64*mu**2*q**5 + 48*mu**2*q**4*sqrt(mu**2 + q**2) + 32*q**7 + 32*q**6*sqrt(mu**2 + q**2)))]
+PASS A5b exact: mu>0, P->0 first, Lambda->oo: dE/dP = g^2/(6 pi^2) * int sinh t e^{-3t} dt = g^2/(48 pi^2)  [J=1/8]
+Traceback (most recent call last):
+  File "/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-poison-ivy-oak-treatment-90452e/a67d71b1-0c50-4041-92e4-07c78ad7ebea/scratchpad/attempts/review-20260929-interacting-cones-and-chiral-carriers/check.py", line 139, in <module>
+    vals[(float(Pv), float(muv), Lam)] = dE_cont(Pv, muv, Lam) / Pv
+                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-poison-ivy-oak-treatment-90452e/a67d71b1-0c50-4041-92e4-07c78ad7ebea/scratchpad/attempts/review-20260929-interacting-cones-and-chiral-carriers/check.py", line 134, in dE_cont
+    return mp.re(mp.quad(f, [0, Pv, 2 * Pv, Lam], [-1, 1]))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/mpmath/calculus/quadrature.py", line 748, in quad
+    v, err = rule.summation(lambda x: \
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/mpmath/calculus/quadrature.py", line 233, in summation
+    result = self.sum_next(f, nodes, degree, prec, results, verbose)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/mpmath/calculus/quadrature.py", line 308, in sum_next
+    S += self.ctx.fdot((w,f(x)) for (x,w) in nodes)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/mpmath/ctx_mp_python.py", line 938, in fdot
+    for a, b in A:
+                ^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/mpmath/calculus/quadrature.py", line 308, in <genexpr>
+    S += self.ctx.fdot((w,f(x)) for (x,w) in nodes)
+                          ^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/mpmath/calculus/quadrature.py", line 749, in <lambda>
+    rule.summation(lambda y: f(x,y), \
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/mpmath/calculus/quadrature.py", line 233, in summation
+    result = self.sum_next(f, nodes, degree, prec, results, verbose)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/mpmath/calculus/quadrature.py", line 308, in sum_next
+    S += self.ctx.fdot((w,f(x)) for (x,w) in nodes)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/mpmath/ctx_mp_python.py", line 938, in fdot
+    for a, b in A:
+                ^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/mpmath/calculus/quadrature.py", line 308, in <genexpr>
+    S += self.ctx.fdot((w,f(x)) for (x,w) in nodes)
+                          ^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/mpmath/calculus/quadrature.py", line 749, in <lambda>
+    rule.summation(lambda y: f(x,y), \
+                             ^^^^^^
+  File "/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-poison-ivy-oak-treatment-90452e/a67d71b1-0c50-4041-92e4-07c78ad7ebea/scratchpad/attempts/review-20260929-interacting-cones-and-chiral-carriers/check.py", line 133, in f
+    return qv * qv / (2 * mp.pi**2) * mp.mpf(1) / 2 * (1 / (2 * Omv)) * (Pv - cv * (kv + Omv)) / (Pv * Pv - (kv + Omv)**2)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+  File "<string>", line 7, in __div__
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/mpmath/libmp/libmpf.py", line 956, in mpf_div
+    if t == fzero: raise ZeroDivisionError
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+ZeroDivisionError
+done

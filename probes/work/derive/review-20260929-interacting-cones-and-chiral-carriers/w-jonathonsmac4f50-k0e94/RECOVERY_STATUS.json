@@ -1,0 +1,200 @@
+{
+ "source_branch": "claude/toe-viability-probes-20260927",
+ "source_head": "fd51a1f4c7f38c124d6f0f7dde396198eadf8b36",
+ "head_resolves_in_fetched_clone": true,
+ "source_objects": [
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/APPROACH_REGISTRY.md",
+   "sha256": "5a82e2f98b74272a7b42f919e06753bbcc60e8a844c940a645ca6b70ed057c67",
+   "expected_sha256": "5a82e2f98b74272a7b42f919e06753bbcc60e8a844c940a645ca6b70ed057c67",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/ASSUMPTIONS.md",
+   "sha256": "165a498c661676218a08813958eeaf9c47d6f3cfcfe418bade0b3c6663bac9bb",
+   "expected_sha256": "165a498c661676218a08813958eeaf9c47d6f3cfcfe418bade0b3c6663bac9bb",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/OUTSIDE_VIEW.md",
+   "sha256": "e5ae633f959950e8c6670f6e73cadfb506100e1bbc7ea4f4d3b80cdadd9da8c1",
+   "expected_sha256": "e5ae633f959950e8c6670f6e73cadfb506100e1bbc7ea4f4d3b80cdadd9da8c1",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/ROUTES.md",
+   "sha256": "3856517758d4f86da392b1675573d11b4e019e56a625ed15581e15f0ec92f6d9",
+   "expected_sha256": "3856517758d4f86da392b1675573d11b4e019e56a625ed15581e15f0ec92f6d9",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/SUMMARY.md",
+   "sha256": "fde6228c9ebf341483fad1690c28283bd71e796ea3aec1f14f8de75dad54cd91",
+   "expected_sha256": "fde6228c9ebf341483fad1690c28283bd71e796ea3aec1f14f8de75dad54cd91",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/TESTS.md",
+   "sha256": "9dee2b425204a249e844446804d6a5f3cfd5e21aa794f317a294237f3768420b",
+   "expected_sha256": "9dee2b425204a249e844446804d6a5f3cfd5e21aa794f317a294237f3768420b",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/WALL.md",
+   "sha256": "00abbe699211d8af1d3b69daf40cdd3b508e2a9d2491e65608acd867d49993e0",
+   "expected_sha256": "00abbe699211d8af1d3b69daf40cdd3b508e2a9d2491e65608acd867d49993e0",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/agent1_condensed_matter.md",
+   "sha256": "81b0f7eac18b22bb636403e7d92ec59566bfc7a57a2fc9b1f3a3742bdab19712",
+   "expected_sha256": "81b0f7eac18b22bb636403e7d92ec59566bfc7a57a2fc9b1f3a3742bdab19712",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/agent2_quantum_gravity.md",
+   "sha256": "3daf9009b611c2bc57ec15c3b2d427229fb1dc89a14ca0cbe530b281ae7911e8",
+   "expected_sha256": "3daf9009b611c2bc57ec15c3b2d427229fb1dc89a14ca0cbe530b281ae7911e8",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/agent3_axioms_price.md",
+   "sha256": "6f480cfec1bce59f8776881e1c35a9ee759aca43c52a745bfcfcf87d1be9b75d",
+   "expected_sha256": "6f480cfec1bce59f8776881e1c35a9ee759aca43c52a745bfcfcf87d1be9b75d",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/agent4_misframing.md",
+   "sha256": "3eea8d7fdcd5a8f60076ef64c31757bfdc29de6a8b7f56cbd933f3a68a02629c",
+   "expected_sha256": "3eea8d7fdcd5a8f60076ef64c31757bfdc29de6a8b7f56cbd933f3a68a02629c",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/kill1_price_strong.md",
+   "sha256": "ae484e4027a4d77a15022274d2fe5439c0fb99bc067927e3e9b69a9003dcb561",
+   "expected_sha256": "ae484e4027a4d77a15022274d2fe5439c0fb99bc067927e3e9b69a9003dcb561",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/kill2_nonground_a1.md",
+   "sha256": "85c8180cf0a4422f7c3a13ce857b63f2ff1983ac2a5d1325d882c367b84c565e",
+   "expected_sha256": "85c8180cf0a4422f7c3a13ce857b63f2ff1983ac2a5d1325d882c367b84c565e",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/kill3_entanglement_statics.md",
+   "sha256": "e9de51b029d1aedde82d708b2245703c5ab571e60d5c4693ac30a4ac767c9aa9",
+   "expected_sha256": "e9de51b029d1aedde82d708b2245703c5ab571e60d5c4693ac30a4ac767c9aa9",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/kill4_induced_purity.md",
+   "sha256": "0aa62bc86479c6d2b40503933b63a5432a05dcf058f27142b0484b6db155b370",
+   "expected_sha256": "0aa62bc86479c6d2b40503933b63a5432a05dcf058f27142b0484b6db155b370",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/neutral_brief.md",
+   "sha256": "b798c1f46fd91c65bcabbd7211de0dc2c190920a0b420ecb4cc33fc98eafe8e3",
+   "expected_sha256": "b798c1f46fd91c65bcabbd7211de0dc2c190920a0b420ecb4cc33fc98eafe8e3",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/routes_for_kill.md",
+   "sha256": "50ad77c1c53d8dbe39cfeceffe347d6b8202f7f76797ee4530861994c0138e53",
+   "expected_sha256": "50ad77c1c53d8dbe39cfeceffe347d6b8202f7f76797ee4530861994c0138e53",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/T1_output.txt",
+   "sha256": "7f505a208b4efcf271d692939e8f653847df8f98e242522c310f895f8119998e",
+   "expected_sha256": "7f505a208b4efcf271d692939e8f653847df8f98e242522c310f895f8119998e",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/T1_signed_compression_channel.py",
+   "sha256": "5346e7c8900a59924d24db36e14488cf05bfb1f9341bdafcd8d8019f6d451864",
+   "expected_sha256": "5346e7c8900a59924d24db36e14488cf05bfb1f9341bdafcd8d8019f6d451864",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/_p18_defs.py",
+   "sha256": "20980fd00b5af2b27589d06df4c732064a9b4b2eb4e2984d8fc7669f37eab9c7",
+   "expected_sha256": "20980fd00b5af2b27589d06df4c732064a9b4b2eb4e2984d8fc7669f37eab9c7",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/agents/agent4_checks.py",
+   "sha256": "86eceeeae3c561f24da969abbf57bd11fb8a6ecc1ac9bfdefa5c6268a160344a",
+   "expected_sha256": "86eceeeae3c561f24da969abbf57bd11fb8a6ecc1ac9bfdefa5c6268a160344a",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/agents/bogoliubov_check.py",
+   "sha256": "dac810bae99aee6e5934f7232cc39b3719a52ce629f007c237020df0fb941af2",
+   "expected_sha256": "dac810bae99aee6e5934f7232cc39b3719a52ce629f007c237020df0fb941af2",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/agents/kill2_checks.py",
+   "sha256": "a4f77ac29f1382c0707881040cf2cfb901cc485e537183e5d4aaaf6ba228d7d6",
+   "expected_sha256": "a4f77ac29f1382c0707881040cf2cfb901cc485e537183e5d4aaaf6ba228d7d6",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/agents/kill3_area_law_anisotropy.py",
+   "sha256": "f19d6564e1dd3fef3b7f2bd197f417120f38a5bb74e93b28b76b51a14c1a7d53",
+   "expected_sha256": "f19d6564e1dd3fef3b7f2bd197f417120f38a5bb74e93b28b76b51a14c1a7d53",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/agents/kill3_ppn_coordinates.py",
+   "sha256": "d266c579caeddbb555b332bbd519d23315a177d5fce28a26825d582e4a33270e",
+   "expected_sha256": "d266c579caeddbb555b332bbd519d23315a177d5fce28a26825d582e4a33270e",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/agents/kill4_checks.py",
+   "sha256": "669eccf2281cd15c1060aace40aa0764c796154973536b9cdac6e9db8f8ee3b2",
+   "expected_sha256": "669eccf2281cd15c1060aace40aa0764c796154973536b9cdac6e9db8f8ee3b2",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/agents/snf_torsion.py",
+   "sha256": "c0444b933728ef2538b850608b4f45c6e85142bc467273337c6b0198e88f3d34",
+   "expected_sha256": "c0444b933728ef2538b850608b4f45c6e85142bc467273337c6b0198e88f3d34",
+   "verified": true
+  },
+  {
+   "path": "docs/LATTICE_HANDEDNESS_A_FINITE_RANGE_FREE_WALKER_IS_LEFT_RIGHT_BALANCED_WHETHER_TIME_FLOWS_OR_TICKS_A_CHIRAL_FREE_TICK_NEEDS_TAILS_BOUNDED_THEOREM_NOTE_2026-09-27.md",
+   "sha256": "a806aa47c6eee0f379a820ff89bdfd3327ad86c2486814727594512c867063ba",
+   "expected_sha256": "a806aa47c6eee0f379a820ff89bdfd3327ad86c2486814727594512c867063ba",
+   "verified": true
+  },
+  {
+   "path": "docs/ONE_LIGHT_CONE_UNDER_INTERACTIONS_ON_THE_CONTINUOUS_TIME_SURFACE_THE_WALKERS_AND_A_SCALARS_SPEEDS_SEPARATE_AT_SECOND_ORDER_HYPERCUBIC_TICKS_ARE_A_SUFFICIENT_PROTECTION_BOUNDED_THEOREM_NOTE_2026-09-27.md",
+   "sha256": "76102306aebb3e87fb7822bcc8b7fdad8e7b0b6e24a1cfc6e4eb2dd85dd35c0d",
+   "expected_sha256": "76102306aebb3e87fb7822bcc8b7fdad8e7b0b6e24a1cfc6e4eb2dd85dd35c0d",
+   "verified": true
+  }
+ ],
+ "read_for_this_attempt": [
+  "docs/LATTICE_HANDEDNESS_A_FINITE_RANGE_FREE_WALKER_IS_LEFT_RIGHT_BALANCED_WHETHER_TIME_FLOWS_OR_TICKS_A_CHIRAL_FREE_TICK_NEEDS_TAILS_BOUNDED_THEOREM_NOTE_2026-09-27.md",
+  "docs/ONE_LIGHT_CONE_UNDER_INTERACTIONS_ON_THE_CONTINUOUS_TIME_SURFACE_THE_WALKERS_AND_A_SCALARS_SPEEDS_SEPARATE_AT_SECOND_ORDER_HYPERCUBIC_TICKS_ARE_A_SUFFICIENT_PROTECTION_BOUNDED_THEOREM_NOTE_2026-09-27.md",
+  "scripts/one_light_cone_under_interactions_continuous_time_surface_speeds_separate_at_second_order_2026_09_27.py (runner, not in task source_paths; read for the walker/scalar code)"
+ ],
+ "first_unresolved_step": "ATTEMPT.md step 14: lattice identity V(mu=0, P->0) = V_naive(0) + 1/(48 pi^2) is checked to ~5e-8 but not proved (needs a dominated-convergence bound on lattice-minus-continuum integrand near q ~ P); behind it, step 17: scalar A-B only to 3 digits, finite-volume order of limits untreated; the whole chiral-carrier half (W3, heating, 16 states, interacting mirror removal) is not attempted.",
+ "remaining_obligations": [
+  "prove the lattice infrared identity (step 14) with an explicit bound",
+  "scalar A-B certified to >=5 digits (analytic small-momentum evaluation) and its mu-independence at this order",
+  "finite-volume (box length L) version of the P->0 / mu->0 / L->oo ordering",
+  "compare the source note quoted mu=0 value -0.009564 with its (unrecovered) author computation: not in the frozen branch code",
+  "chiral half: heating of an interacting Floquet tick, sixteen-state necessity, interacting mirror removal, uniform certificate for the range-two truncation (all untouched)",
+  "fourth/higher order in g"
+ ],
+ "files_in_attempt": [
+  "ATTEMPT.md",
+  "check.py",
+  "RECOVERY_STATUS.json"
+ ]
+}

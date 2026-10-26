@@ -84,9 +84,28 @@ lp_old = math.sqrt(float(old_coeff) / nf_demo)
 print(f"  info: N_f = {nf_demo}, Lambda = 1/a:  l_P/a = sqrt(G/a^2) = {lp_new:.4f} (matching line), {lp_old:.4f} (former printed value)")
 check("C9 former implied l_P/a is 4 pi times the matching-line value (sqrt of the (4pi)^2 ratio)",
       abs(lp_old / lp_new - 4 * math.pi) < 1e-12)
-print("  NOTE: 3 pi is the coefficient of the matching line only.  The 1/2 in det D = (det D^2)^(1/2), the fermion")
-print("        sign, and the cutoff scheme (Lambda = 1/a vs pi/a) are O(1) factors this note does not evaluate;")
-print("        the claim remains the scaling G ~ a^2/N_f, not a value of l_P/a.")
+
+# ---------------------------------------------------------------------------
+# Addendum (2026-10-18, restated 2026-10-26): evaluate the determinant half-factor.
+# Gamma_E = -log det D = -(1/2) log det D^2 = +(1/2) int_{1/Lambda^2}^oo (ds/s) Tr exp(-s D^2); the a1 term of
+# Tr exp(-s D^2) is (4 pi s)^-2 s int sqrt(g) tr a1 with tr a1 = b1 R = -R/3.  Euclidean S_EH = -(1/16 pi G) int sqrt(g) R.
+# ---------------------------------------------------------------------------
+R_sym = sp.symbols("R", positive=True)
+gamma_R = sp.Rational(1, 2) * sp.integrate(t_sym ** -1 * (4 * sp.pi * t_sym) ** -2 * t_sym * sp.Rational(b1.numerator, b1.denominator) * R_sym,
+                                           (t_sym, 1 / Lam_sym ** 2, sp.oo))
+inv16piG_half = sp.simplify(-gamma_R / R_sym)                  # per Dirac fermion
+G_half = sp.solve(sp.Eq(1 / (16 * sp.pi * G_sym), Nf_sym * inv16piG_half), G_sym)[0]
+G_half_coeff = sp.simplify(G_half * Nf_sym * Lam_sym ** 2)
+lp_half = math.sqrt(float(G_half_coeff) / nf_demo)
+print(f"  addendum: with the half-factor, 1/(16 pi G) = {inv16piG_half} per Dirac fermion, G = {G_half_coeff}/(N_f Lambda^2);"
+      f" N_f = {nf_demo}, Lambda = 1/a: l_P/a = {lp_half:.4f}")
+check("C10 half-factor: Gamma_E = -(1/2) log det D^2 gives 1/(16 pi G) = Lambda^2/(96 pi^2) per Dirac fermion, "
+      "so G = 6 pi/(N_f Lambda^2) = 2 x the supplied 3 pi form",
+      sp.simplify(inv16piG_half - Lam_sym ** 2 / (96 * sp.pi ** 2)) == 0
+      and sp.simplify(G_half_coeff - 6 * sp.pi) == 0 and sp.simplify(G_half_coeff / G_coeff - 2) == 0)
+print("  NOTE: 3 pi is the coefficient of the supplied matching line; C10 evaluates the 1/2 in det D = (det D^2)^(1/2)")
+print("        (giving 6 pi).  The fermion sign and the cutoff scheme (Lambda = 1/a vs pi/a) are O(1) factors this note")
+print("        does not evaluate; the claim remains the scaling G ~ a^2/N_f, not a value of l_P/a.")
 
 n_pass = sum(1 for _, ok in results if ok)
 n_fail = sum(1 for _, ok in results if not ok)

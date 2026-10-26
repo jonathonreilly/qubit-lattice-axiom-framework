@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20260929-wall-formation-and-clock-selection:a1",
+ "type": "judgment",
+ "lane": "review-science-20260929",
+ "worker": "w-jonathonsmac4f50-k471b",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20260929-wall-formation-and-clock-selection/w-jonathonsmac4f50-k471b/check.py",
+ "seed": 81530,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "4a92c811",
+ "started_utc": "20261026T022530Z",
+ "elapsed_s": 61.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "exact ledger shows V* keeps N,P,L while O breaks L, both leave the asynchronous energy current below momentum (O exactly by (V-N)/(V-1), V* by a smaller exact rational, unchanged by any bounded energy re-placement), whereas a synchronous collide-then-stream tick with distance-2 pair events makes J=P exactly on all tested open windows, though not automatically on small periodic tori (61s)."
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 34/34 PASS (~70 s); PARTIAL on wall T17 (record-scattering identity): two-record events keep P and L exactly iff the content change is parallel to the displacement; P-vs-energy-current gap is configuration-only; clause V* keeps number, P, L while O breaks L (exact); exact E[J]/P = 14/15 (O) and 68/77 (V*) on a 4x4 torus with two records for asynchronous rate-1 streaming; synchronous collide-then-stream tick gives J=P on tested open windows, so the kill's 'wall stands for both' holds only for asynchronous streaming; the synchronous tick is a supplied comparator (records move each tick, not obviously allowed by the Record axiom wording); bounded-range rotation-covariant simultaneous rule missing (step 10).",
+ "what": "Choose a concrete claimed separation among covariant formation measures or one record-scattering identity. Apply the same observable on both models and check energy, momentum and angular momentum on their actual excluded state space. State Bell factorization, causal and measurement-independence assumptions before interpreting odds. Owner choices and primitive changes are not outputs of this task; derive a bounded implication or record the first missing step. Owner-requested research transfer after landing review. The source is an unlanded hypothesis, not authority: fetch the named author branch, verify the frozen Git SHA and exact path/hash from probes/work/review-science-20260929/SOURCE_MAP.json. Fetch current origin/main and prefer its corrected bounded sources; read the actual axiom memo and primitive grants before premise judgments. Check related tasks, completed attempts, referee reports and active claims before choosing ONE distinct obligation. Read the complete argument, actual inputs and paired code for that obligation. Known review corrections are background, not a new HIT. Deliver numbered PROVED/CHECKED/ASSUMED steps in ATTEMPT.md, a self-contained check.py with disjoint machinery, and RECOVERY_STATUS.json with hashes, first unresolved step and remaining obligations. Prove finite claims exactly where possible; failed search is not a no-go and negative claims require N1-N8 before promotion. Commit the checker before run_probe.py; print SUMMARY with the actual result and HIT only for a demonstrated new result or defect. Finish through claim.py and ordinary cross-model confirmation. Use the existing maximum-thinking J campaign; do not spawn agents, start workers, change budgets, create PRs or edit scientific/audit authority.",
+ "stdout_sha256": "60af597068989266926a47973ff9ad7fa85760f923cd0d9d18a88c352dedcdfd",
+ "stdout_tail": "eassignment; 4x4 torus N=4 has 224 (so existence of a collide-then-stream rule on the torus is not automatic) | {2: 0, 3: 72, 4: 432} / {3: 0, 4: 224}\nHIT: the T17 verdict 'exclusion still stops energy flowing as momentum, so the exact books are not reached for either clause' is schedule-specific: for the asynchronous rate-1 streaming gases O and V* the energy current is below P in every ergodic sector (exact E[J]/P = 14/15 for O, a strictly smaller exact rational for V* at N=2 on the 4x4 torus; no bounded re-placement of energy density changes it), but with a synchronous collide-then-stream tick built from the same (N,P,L)-preserving pair events (distance^2<=4) the energy current equals P exactly on every tested open window (2D 3x3 all N, 2D 4x4 N<=4, 3D cube N<=4, conflict-free targets always reachable), while small periodic tori already contain configurations with no conflict-free P-preserving reassignment; the first open step is a bounded-range, rotation-covariant, parallel collision map on the full state space and its compatibility with Record permanence.\nTOTAL: PASS=34 FAIL=0\nSUMMARY: exact ledger shows V* keeps N,P,L while O breaks L, both leave the asynchronous energy current below momentum (O exactly by (V-N)/(V-1), V* by a smaller exact rational, unchanged by any bounded energy re-placement), whereas a synchronous collide-then-stream tick with distance-2 pair events makes J=P exactly on all tested open windows, though not automatically on small periodic tori (61s).\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k471b",
+  "at_utc": "20261026T022639Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Scoped: the T17 verdict is schedule-specific; small exact cases. Same-family, unrefereed.",
+  "by": "w-jonathonsmac4f50-k471b",
+  "at_utc": "20261026T022639Z"
+ }
+}

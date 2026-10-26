@@ -1,5 +1,5 @@
 {
- "edge_count": 16088,
+ "edge_count": 16090,
  "node_count": 7439,
  "nodes": {
   "3d_correction_master_note": {
@@ -7,8 +7,8 @@
    "out_degree": 0
   },
   "a1_qubit_interpretation_note_2026-05-20": {
-   "deps_hash": "e3b0c44298fc",
-   "out_degree": 0
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "a3_option_c_brannen_rivero_physical_lattice_bounded_obstruction_note_2026-05-08_optc": {
    "deps_hash": "2ef413449f13",
@@ -6179,8 +6179,8 @@
    "out_degree": 0
   },
   "dt1_time_dimension_proof_walk_lattice_independence_bounded_note_2026-05-08": {
-   "deps_hash": "a9e0fa0561e7",
-   "out_degree": 8
+   "deps_hash": "5c4969f53902",
+   "out_degree": 7
   },
   "dt1_time_dimension_proof_walk_note_2026-05-17": {
    "deps_hash": "7cfaf5ef38ff",
@@ -6371,8 +6371,8 @@
    "out_degree": 2
   },
   "emergent_lorentz_invariance_note": {
-   "deps_hash": "019fee56f57f",
-   "out_degree": 3
+   "deps_hash": "6791d4070b26",
+   "out_degree": 5
   },
   "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08": {
    "deps_hash": "f024dcb49b94",

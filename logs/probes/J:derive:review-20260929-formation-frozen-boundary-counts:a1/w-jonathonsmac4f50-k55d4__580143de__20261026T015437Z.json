@@ -1,0 +1,39 @@
+{
+ "task": "J:derive:review-20260929-formation-frozen-boundary-counts:a1",
+ "type": "judgment",
+ "lane": "review-science-20260929",
+ "worker": "w-jonathonsmac4f50-k55d4",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20260929-formation-frozen-boundary-counts/w-jonathonsmac4f50-k55d4/check.py",
+ "seed": 79677,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "580143de",
+ "started_utc": "20261026T015437Z",
+ "elapsed_s": 51.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "for the supplied rule 'form unless exactly two opposite neighbours are recorded' the frozen = reachable count on an a x b box with empty outer boundary is F_a+F_b-1 (proved, checked to 20 sites), it collapses to the single full box with a recorded wall, depends on shape not perimeter or area, and the process entropy is bounded by a Fano bound that vanishes with size; frozen and reachable counts of the threshold rules are also separated."
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 292/292 PASS (30-65 s); scoped to the one supplied 2D rule S (form unless exactly two opposite neighbours recorded): frozen = reachable = F_a+F_b-1 on every a x b box with empty outer boundary (proved by structure lemma plus row-major reachability; previously checked to a,b<=9), count 1 with a recorded wall, Fano bound on process entropy; mixed side conventions checked not proved; no 3D analogue; source's volume law not re-proved; frozen-only threshold-rule counts are new enumerations.",
+ "what": "Independently enumerate reachable states and frozen states separately; prove the recursion before extrapolating an entropy law. The earlier 2D/3D threshold models differ, so neither their sampled counts nor a selected slower sequence excludes every crowding rule. Examine the later wall campaign's opposite-neighbour/Fibonacci proposal as an unverified hypothesis, including empty and recorded boundaries and actual process entropy. Produce exact finite checks and either a genuine all-size bound or the first failing case. Owner-requested research transfer after landing review. The source is an unlanded hypothesis, not authority: fetch the named author branch, verify the frozen Git SHA and exact path/hash from probes/work/review-science-20260929/SOURCE_MAP.json. Fetch current origin/main and prefer its corrected bounded sources; read the actual axiom memo and primitive grants before premise judgments. Check related tasks, completed attempts, referee reports and active claims before choosing ONE distinct obligation. Read the complete argument, actual inputs and paired code for that obligation. Known review corrections are background, not a new HIT. Deliver numbered PROVED/CHECKED/ASSUMED steps in ATTEMPT.md, a self-contained check.py with disjoint machinery, and RECOVERY_STATUS.json with hashes, first unresolved step and remaining obligations. Prove finite claims exactly where possible; failed search is not a no-go and negative claims require N1-N8 before promotion. Commit the checker before run_probe.py; print SUMMARY with the actual result and HIT only for a demonstrated new result or defect. Finish through claim.py and ordinary cross-model confirmation. Use the existing maximum-thinking J campaign; do not spawn agents, start workers, change budgets, create PRs or edit scientific/audit authority.",
+ "stdout_sha256": "7e93274d40cc52efa0d17917962d4986c784d68a59ea16e234cd2dac6edab7de",
+ "stdout_tail": "rozen=7, reachable-frozen=6 \nPASS W.m=3 3x3: empty-boundary N=2; recorded-wall frozen=63, reachable-frozen=62 \nPASS W.m=3 3x4: empty-boundary N=3; recorded-wall frozen=227, reachable-frozen=226 \nPASS W.m=3 4x4: empty-boundary N=7; recorded-wall frozen=1234, reachable-frozen=1233 \nPASS W.m=0, recorded wall, L=3: N equals the empty-boundary count of the 1x1 interior 1\nPASS W.m=0, recorded wall, L=4: N equals the empty-boundary count of the 2x2 interior 2\nHIT: scoped to the one supplied rule 'form unless exactly two opposite neighbours are recorded': frozen = reachable = F_a+F_b-1 on every a x b box with empty outer boundary is proved by a structure lemma plus row-major reachability (previously only checked), the recorded-wall count is 1 for every size (proved), the count is not a function of area or perimeter, and the Shannon entropy of the formation process is bounded by a Fano bound that vanishes faster than any exponential in the side; no area law and no claim about other rules or 3D.\nTOTAL: PASS=292 FAIL=0\nSUMMARY: for the supplied rule 'form unless exactly two opposite neighbours are recorded' the frozen = reachable count on an a x b box with empty outer boundary is F_a+F_b-1 (proved, checked to 20 sites), it collapses to the single full box with a recorded wall, depends on shape not perimeter or area, and the process entropy is bounded by a Fano bound that vanishes with size; frozen and reachable counts of the threshold rules are also separated.\n\n[stderr]\n# runtime 51.6s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k55d4",
+  "at_utc": "20261026T015703Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: log's git sha 580143de differs from the current HEAD adda8a22 (fine if you pulled since; the run is bound to its sha)",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Scoped proof for one 2D rule. Same-family, unrefereed.",
+  "by": "w-jonathonsmac4f50-k55d4",
+  "at_utc": "20261026T015703Z"
+ }
+}

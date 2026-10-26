@@ -1,0 +1,32 @@
+{
+ "task": "J:derive:review-20260929-canonical-gravity-changed-carriers:a1",
+ "type": "judgment",
+ "lane": "review-science-20260929",
+ "worker": "w-jonathonsmac4f50-k5a97",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20260929-canonical-gravity-changed-carriers/w-jonathonsmac4f50-k5a97/check.py",
+ "seed": 79730,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "adda8a22",
+ "started_utc": "20261026T015530Z",
+ "elapsed_s": 84.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "exact-character recovery of the 26->2 / 9->1 gauge-invariant leading-form counts (gauge kernel K = {Q_c}, 10-dim, ~ Sym^2 U), exact all-momentum DeWitt quotient (positive, gauge zeros only) separated from the single homogeneous negative direction on 3^3 and 4^3 tori, and an exact defect/sum-rule analysis of the reduced finite-range mixed identity showing controlled infrared closure of order 2m only by moving a defect of mass exactly mu1 to the zone edge; full gravity completion (other brackets, sources, gauge reduction) not reached."
+ },
+ "review": "pending: output not yet read",
+ "what": "Recover the conditional leading-action polynomial count and linear gauge identity with exact group characters. Keep the nonzero-momentum DeWitt quotient separate from its homogeneous negative direction. Then try a changed-carrier or controlled infrared mixed-constraint completion in response to the finite-range theorem on current main; do not repeat a finite-radius search in its already-excluded regular class. Extra clocks give commuting extended constraints but do not impose original local energies or uniform locality. Physical sources and gauge reduction must be explicit. Owner-requested research transfer after landing review. The source is an unlanded hypothesis, not authority: fetch the named author branch, verify the frozen Git SHA and exact path/hash from probes/work/review-science-20260929/SOURCE_MAP.json. Fetch current origin/main and prefer its corrected bounded sources; read the actual axiom memo and primitive grants before premise judgments. Check related tasks, completed attempts, referee reports and active claims before choosing ONE distinct obligation. Read the complete argument, actual inputs and paired code for that obligation. Known review corrections are background, not a new HIT. Deliver numbered PROVED/CHECKED/ASSUMED steps in ATTEMPT.md, a self-contained check.py with disjoint machinery, and RECOVERY_STATUS.json with hashes, first unresolved step and remaining obligations. Prove finite claims exactly where possible; failed search is not a no-go and negative claims require N1-N8 before promotion. Commit the checker before run_probe.py; print SUMMARY with the actual result and HIT only for a demonstrated new result or defect. Finish through claim.py and ordinary cross-model confirmation. Use the existing maximum-thinking J campaign; do not spawn agents, start workers, change budgets, create PRs or edit scientific/audit authority.",
+ "stdout_sha256": "36e502d743e7f0e144884c5577a1e8d32e6ff29fc06f60a6bd85159dd0eb027c",
+ "stdout_tail": "=0 is not imposed)\nTOTAL: PASS=23 FAIL=0\nHIT: scoped. (i) Reduced two-component TT block, model sector F = 1, A = 0: the exact defect of the radius-m central-difference Leibniz family is -(2 sin(k/2))^(2m)/C(2m,m), so infrared order 2m is bought with a defect whose Brillouin-zone mean is exactly -mu1, which is non-positive, has L1 mass exactly 1 for every m, and whose sup norm grows like sqrt(pi m); the diagonal of the defect is -mu1 for every D of any range (standard commutator fact, applied here); the SLAC limit leaves a rank-one zone-edge term. (ii) The reduced matrix obstruction (z (tr D)' = 2 mu1) of the finite-range note extends from finite support to every translation-invariant kernel class with summable first moment (F generically invertible), so exponentially local kernels are not a live alternative at the level of that reduced identity; the reduction of the full degree-two identity for infinite-range kernels is NOT proved here.\nSUMMARY: exact-character recovery of the 26->2 / 9->1 gauge-invariant leading-form counts (gauge kernel K = {Q_c}, 10-dim, ~ Sym^2 U), exact all-momentum DeWitt quotient (positive, gauge zeros only) separated from the single homogeneous negative direction on 3^3 and 4^3 tori, and an exact defect/sum-rule analysis of the reduced finite-range mixed identity showing controlled infrared closure of order 2m only by moving a defect of mass exactly mu1 to the zone edge; full gravity completion (other brackets, sources, gauge reduction) not reached.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k5a97",
+  "at_utc": "20261026T015655Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

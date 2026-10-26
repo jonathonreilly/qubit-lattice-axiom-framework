@@ -1,0 +1,219 @@
+===== runner cache v1 =====
+runner: scripts/finite_range_walk_levelwise_chirality_balance_2026_10_26.py
+runner_sha256: 80ea981d5afd956bc1297e5dad696f1335d0e078456431e54e739568165a82b4
+input_fingerprint_sha256: 8693f74707cc37e179938981a7cbf73e35bacda2e2dff5e5f533f5329648180a
+timeout_sec: 1200
+exit_code: 0
+elapsed_sec: 303.44
+status: ok
+----- stdout -----
+Imported: the three-winding vanishing theorem (W3 = 0 for finite-range walks).
+== 0. sign and normalisation lemmas
+   v det sign +1: direct Ch = +0.9900, raw lattice sum = -1.000000
+PASS [numerical] Weyl-node lemma: Ch(lower band) = sign det v by the direct integral (trial 0)
+PASS [numerical] raw lattice Chern sum is an integer (trial 0)
+   v det sign +1: direct Ch = +0.9721, raw lattice sum = -1.000000
+PASS [numerical] Weyl-node lemma: Ch(lower band) = sign det v by the direct integral (trial 1)
+PASS [numerical] raw lattice Chern sum is an integer (trial 1)
+   v det sign -1: direct Ch = -0.9729, raw lattice sum = +1.000000
+PASS [numerical] Weyl-node lemma: Ch(lower band) = sign det v by the direct integral (trial 2)
+PASS [numerical] raw lattice Chern sum is an integer (trial 2)
+   v det sign +1: direct Ch = +0.9840, raw lattice sum = -1.000000
+PASS [numerical] Weyl-node lemma: Ch(lower band) = sign det v by the direct integral (trial 3)
+PASS [numerical] raw lattice Chern sum is an integer (trial 3)
+   v det sign +1: direct Ch = +0.9877, raw lattice sum = -1.000000
+PASS [numerical] Weyl-node lemma: Ch(lower band) = sign det v by the direct integral (trial 4)
+PASS [numerical] raw lattice Chern sum is an integer (trial 4)
+   v det sign -1: direct Ch = -0.9932, raw lattice sum = +1.000000
+PASS [numerical] Weyl-node lemma: Ch(lower band) = sign det v by the direct integral (trial 5)
+PASS [numerical] raw lattice Chern sum is an integer (trial 5)
+PASS [numerical] lattice-to-analytic sign is the same in all trials
+PASS [numerical] helper CH_SIGN (-1.0) equals the calibrated sign (-1.0)
+   t-winding trial 0: (1/24pi^2) int tr theta^3 = +0.9757, Ch = +0.9757
+PASS [numerical] t-winding identity: winding of exp(-2 pi i t P) over surface x [0,1] equals Ch(P) (trial 0)
+   t-winding trial 1: (1/24pi^2) int tr theta^3 = -0.9785, Ch = -0.9785
+PASS [numerical] t-winding identity: winding of exp(-2 pi i t P) over surface x [0,1] equals Ch(P) (trial 1)
+   t-winding trial 2: (1/24pi^2) int tr theta^3 = +0.9307, Ch = +0.9307
+PASS [numerical] t-winding identity: winding of exp(-2 pi i t P) over surface x [0,1] equals Ch(P) (trial 2)
+== 1. localization identity on analytic maps with W3 != 0
+=== V_2.0 (n=2, Lipschitz L=7.036)
+   bulk W3 integral: N=40 -1.00000000, N=56 -1.00000000
+PASS [numerical] V_2.0: bulk W3 integral converged to the integer -1
+    box [2.553 2.553 2.553]..[3.731 3.731 3.731]: phi=3.142 rank(P_<)={1} Ch=+1.000000 (M+8: +1.000000); pocket=False nodes at eps: k=[3.14159 3.14159 3.14159] chi=+1 |s|=1.9e-15 sep_others=inf
+    box [2.749 5.89  2.749]..[3.534 6.676 3.534]: phi=3.142 rank(P_<)={1} Ch=-1.000000 (M+8: -1.000000); pocket=False nodes at eps: k=[3.14159 0.      3.14159] chi=-1 |s|=7.8e-16 sep_others=inf
+    box [2.749 2.749 5.89 ]..[3.534 3.534 6.676]: phi=3.142 rank(P_<)={1} Ch=-1.000000 (M+8: -1.000000); pocket=False nodes at eps: k=[3.14159 3.14159 0.     ] chi=-1 |s|=8.9e-16 sep_others=inf
+    box [5.89  2.749 2.749]..[6.676 3.534 3.534]: phi=3.142 rank(P_<)={1} Ch=-1.000000 (M+8: -1.000000); pocket=False nodes at eps: k=[0.      3.14159 3.14159] chi=-1 |s|=1.4e-15 sep_others=inf
+    box [2.749 5.89  5.89 ]..[3.534 6.676 6.676]: phi=3.142 rank(P_<)={1} Ch=+1.000000 (M+8: +1.000000); pocket=False nodes at eps: k=[3.14159 6.28319 0.     ] chi=+1 |s|=2.3e-15 sep_others=inf
+    box [5.89  2.749 5.89 ]..[6.676 3.534 6.676]: phi=3.142 rank(P_<)={1} Ch=+1.000000 (M+8: +1.000000); pocket=False nodes at eps: k=[0.      3.14159 6.28319] chi=+1 |s|=1.9e-15 sep_others=inf
+    box [5.89  5.89  2.749]..[6.676 6.676 3.534]: phi=3.142 rank(P_<)={1} Ch=+1.000000 (M+8: +1.000000); pocket=False nodes at eps: k=[0.      0.      3.14159] chi=+1 |s|=1.8e-15 sep_others=inf
+   level 0.0000: uncertified cells 80, components 7, decomposed=True 
+PASS [numerical] V_2.0 eps=0.000: box Chern numbers integer and mesh-stable
+PASS [numerical] V_2.0 eps=0.000: W3 = -sum_boxes Ch(P_<) (-1 = -1)
+   boxes 7, pocket boxes 0, nodes at the level 7
+PASS [numerical] V_2.0 eps=0.000: per box Ch(P_<) = sum of nodal chiralities
+    box [5.89 5.89 5.89]..[6.676 6.676 6.676]: phi=6.283 rank(P_<)={1} Ch=+1.000000 (M+8: +1.000000); pocket=False nodes at eps: k=[6.28319 0.      6.28319] chi=+1 |s|=3.7e-15 sep_others=inf
+   level 3.1416: uncertified cells 8, components 1, decomposed=True 
+PASS [numerical] V_2.0 eps=3.142: box Chern numbers integer and mesh-stable
+PASS [numerical] V_2.0 eps=3.142: W3 = -sum_boxes Ch(P_<) (-1 = -1)
+   boxes 1, pocket boxes 0, nodes at the level 1
+PASS [numerical] V_2.0 eps=3.142: per box Ch(P_<) = sum of nodal chiralities
+=== V_0.0 (n=2, Lipschitz L=7.036)
+   bulk W3 integral: N=40 +2.00000000, N=56 +2.00000000
+PASS [numerical] V_0.0: bulk W3 integral converged to the integer +2
+    box [2.749 5.89  2.749]..[3.534 6.676 3.534]: phi=3.142 rank(P_<)={1} Ch=-1.000000 (M+8: -1.000000); pocket=False nodes at eps: k=[3.14159 0.      3.14159] chi=-1 |s|=2.6e-15 sep_others=inf
+    box [2.749 2.749 5.89 ]..[3.534 3.534 6.676]: phi=3.142 rank(P_<)={1} Ch=-1.000000 (M+8: -1.000000); pocket=False nodes at eps: k=[3.14159 3.14159 0.     ] chi=-1 |s|=2.6e-15 sep_others=inf
+    box [5.89  2.749 2.749]..[6.676 3.534 3.534]: phi=3.142 rank(P_<)={1} Ch=-1.000000 (M+8: -1.000000); pocket=False nodes at eps: k=[0.      3.14159 3.14159] chi=-1 |s|=2.2e-15 sep_others=inf
+    box [2.749 2.749 2.749]..[3.534 3.534 3.534]: phi=3.142 rank(P_<)={1} Ch=+1.000000 (M+8: +1.000000); pocket=False nodes at eps: k=[3.14159 3.14159 3.14159] chi=+1 |s|=3.1e-15 sep_others=inf
+   level 0.0000: uncertified cells 32, components 4, decomposed=True 
+PASS [numerical] V_0.0 eps=0.000: box Chern numbers integer and mesh-stable
+PASS [numerical] V_0.0 eps=0.000: W3 = -sum_boxes Ch(P_<) (+2 = +2)
+   boxes 4, pocket boxes 0, nodes at the level 4
+PASS [numerical] V_0.0 eps=0.000: per box Ch(P_<) = sum of nodal chiralities
+    box [2.749 5.89  5.89 ]..[3.534 6.676 6.676]: phi=6.283 rank(P_<)={1} Ch=-1.000000 (M+8: -1.000000); pocket=False nodes at eps: k=[3.14159 6.28319 6.28319] chi=-1 |s|=1.4e-15 sep_others=inf
+    box [5.89 5.89 5.89]..[6.676 6.676 6.676]: phi=6.283 rank(P_<)={1} Ch=+1.000000 (M+8: +1.000000); pocket=False nodes at eps: k=[6.28319 0.      6.28319] chi=+1 |s|=3.2e-15 sep_others=inf
+    box [5.89  5.89  2.749]..[6.676 6.676 3.534]: phi=6.283 rank(P_<)={1} Ch=-1.000000 (M+8: -1.000000); pocket=False nodes at eps: k=[0.      0.      3.14159] chi=-1 |s|=1.7e-15 sep_others=inf
+    box [5.89  2.749 5.89 ]..[6.676 3.534 6.676]: phi=6.283 rank(P_<)={1} Ch=-1.000000 (M+8: -1.000000); pocket=False nodes at eps: k=[0.      3.14159 6.28319] chi=-1 |s|=1.9e-15 sep_others=inf
+   level 3.1416: uncertified cells 32, components 4, decomposed=True 
+PASS [numerical] V_0.0 eps=3.142: box Chern numbers integer and mesh-stable
+PASS [numerical] V_0.0 eps=3.142: W3 = -sum_boxes Ch(P_<) (+2 = +2)
+   boxes 4, pocket boxes 0, nodes at the level 4
+PASS [numerical] V_0.0 eps=3.142: per box Ch(P_<) = sum of nodal chiralities
+=== n3: C(V_2 + e^{-2i}) (n=3, Lipschitz L=7.036)
+   bulk W3 integral: N=40 -1.00000000, N=56 -1.00000000
+PASS [numerical] n3: C(V_2 + e^{-2i}): bulk W3 integral converged to the integer -1
+    box [ 2.356 -0.196  2.16 ]..[3.534 0.785 3.142]: phi=3.901 rank(P_<)={1} Ch=-1.000000 (M+8: -1.000000); pocket=True nodes at eps: 
+    box [2.16  1.963 1.571]..[3.534 3.338 3.142]: phi=3.910 rank(P_<)={1} Ch=+1.000000 (M+8: +1.000000); pocket=True nodes at eps: 
+    box [2.356 2.356 0.   ]..[3.534 3.338 0.982]: phi=3.918 rank(P_<)={1} Ch=-1.000000 (M+8: -1.000000); pocket=True nodes at eps: 
+    box [5.89  2.356 2.16 ]..[7.069 3.338 3.142]: phi=3.901 rank(P_<)={1} Ch=-1.000000 (M+8: -1.000000); pocket=True nodes at eps: 
+    box [ 2.749 -0.196 -0.196]..[3.338 0.393 0.589]: phi=3.814 rank(P_<)={1} Ch=+1.000000 (M+8: +1.000000); pocket=True nodes at eps: 
+    box [-0.196 -0.196  2.553]..[0.393 0.393 3.338]: phi=3.796 rank(P_<)={1} Ch=+1.000000 (M+8: +1.000000); pocket=True nodes at eps: 
+    box [-0.196  2.749 -0.196]..[0.393 3.338 0.589]: phi=3.822 rank(P_<)={1} Ch=+1.000000 (M+8: +1.000000); pocket=True nodes at eps: 
+   level 0.0000: uncertified cells 141, components 7, decomposed=True 
+PASS [numerical] n3: C(V_2 + e^{-2i}) eps=0.000: box Chern numbers integer and mesh-stable
+PASS [numerical] n3: C(V_2 + e^{-2i}) eps=0.000: W3 = -sum_boxes Ch(P_<) (-1 = -1)
+   boxes 7, pocket boxes 7, nodes at the level 0
+    box [5.89  5.89  5.694]..[6.48 6.48 6.48]: phi=5.969 rank(P_<)={2} Ch=+1.000000 (M+8: +1.000000); pocket=True nodes at eps: 
+   level 3.1416: uncertified cells 2, components 1, decomposed=True 
+PASS [numerical] n3: C(V_2 + e^{-2i}) eps=3.142: box Chern numbers integer and mesh-stable
+PASS [numerical] n3: C(V_2 + e^{-2i}) eps=3.142: W3 = -sum_boxes Ch(P_<) (-1 = -1)
+   boxes 1, pocket boxes 1, nodes at the level 0
+== 2. finite-range walks: box sums and clean-level chirality sums
+=== Q(1, 1, 1) (n=2, range 1, #hops 8, L=12.000)
+PASS [numerical] Q(1, 1, 1): unitary at 200 random k
+PASS [exact-grid certificate] Q(1, 1, 1): exact-grid W3 = 0 (-3.3e-16, -2.7e-15)
+   det U spread over samples 1.0e-15
+    box [4.32  1.178 4.32 ]..[5.105 1.963 5.105]: phi=3.142 rank(P_<)={1} Ch=+1.000000 (M+8: +1.000000); pocket=False nodes at eps: k=[4.71239 1.5708  4.71239] chi=+1 |s|=1.1e-15 sep_others=inf
+    box [2.749 5.89  2.749]..[3.534 6.676 3.534]: phi=3.142 rank(P_<)={1} Ch=-1.000000 (M+8: -1.000000); pocket=False nodes at eps: k=[3.14159 0.      3.14159] chi=-1 |s|=2.0e-15 sep_others=inf
+    box [2.749 2.749 5.89 ]..[3.534 3.534 6.676]: phi=3.142 rank(P_<)={1} Ch=-1.000000 (M+8: -1.000000); pocket=False nodes at eps: k=[3.14159 3.14159 0.     ] chi=-1 |s|=2.4e-15 sep_others=inf
+    box [5.89  2.749 2.749]..[6.676 3.534 3.534]: phi=3.142 rank(P_<)={1} Ch=-1.000000 (M+8: -1.000000); pocket=False nodes at eps: k=[6.28319 3.14159 3.14159] chi=-1 |s|=9.2e-16 sep_others=inf
+    box [1.178 4.32  4.32 ]..[1.963 5.105 5.105]: phi=3.142 rank(P_<)={1} Ch=+1.000000 (M+8: +1.000000); pocket=False nodes at eps: k=[1.5708  4.71239 4.71239] chi=+1 |s|=2.6e-15 sep_others=inf
+    box [5.89 5.89 5.89]..[6.676 6.676 6.676]: phi=3.142 rank(P_<)={1} Ch=-1.000000 (M+8: -1.000000); pocket=False nodes at eps: k=[0.      6.28319 6.28319] chi=-1 |s|=2.6e-15 sep_others=inf
+    box [1.178 1.178 1.178]..[1.963 1.963 1.963]: phi=3.142 rank(P_<)={1} Ch=+1.000000 (M+8: +1.000000); pocket=False nodes at eps: k=[1.5708 1.5708 1.5708] chi=+1 |s|=1.1e-14 sep_others=inf
+    box [4.32  4.32  1.178]..[5.105 5.105 1.963]: phi=3.142 rank(P_<)={1} Ch=+1.000000 (M+8: +1.000000); pocket=False nodes at eps: k=[4.71239 4.71239 1.5708 ] chi=+1 |s|=1.7e-16 sep_others=inf
+   level 0.0000: uncertified cells 64, components 8, decomposed=True 
+PASS [numerical] Q(1, 1, 1) eps=0.000: box Chern numbers integer and mesh-stable
+PASS [numerical] Q(1, 1, 1) eps=0.000: sum_boxes Ch(P_<) = -W3 = 0 (got +0)
+     Weyl node k=[4.71239 1.5708  4.71239] chi=+1 |v| sing. vals=[1. 1. 1.]
+     Weyl node k=[3.14159 0.      3.14159] chi=-1 |v| sing. vals=[1. 1. 1.]
+     Weyl node k=[3.14159 3.14159 0.     ] chi=-1 |v| sing. vals=[1. 1. 1.]
+     Weyl node k=[6.28319 3.14159 3.14159] chi=-1 |v| sing. vals=[1. 1. 1.]
+     Weyl node k=[1.5708  4.71239 4.71239] chi=+1 |v| sing. vals=[1. 1. 1.]
+     Weyl node k=[0.      6.28319 6.28319] chi=-1 |v| sing. vals=[1. 1. 1.]
+     Weyl node k=[1.5708 1.5708 1.5708] chi=+1 |v| sing. vals=[1. 1. 1.]
+     Weyl node k=[4.71239 4.71239 1.5708 ] chi=+1 |v| sing. vals=[1. 1. 1.]
+PASS [numerical] Q(1, 1, 1) eps=0.000: clean level with only Weyl nodes, sum chi = 0 (8 nodes, sum +0)
+PASS [numerical] Q(1, 1, 1) eps=0.000: per box Ch = sum chi in box
+    box [1.178 1.178 4.32 ]..[1.963 1.963 5.105]: phi=6.283 rank(P_<)={1} Ch=+1.000000 (M+8: +1.000000); pocket=False nodes at eps: k=[1.5708  1.5708  4.71239] chi=+1 |s|=4.6e-16 sep_others=inf
+    box [2.749 5.89  5.89 ]..[3.534 6.676 6.676]: phi=6.283 rank(P_<)={1} Ch=-1.000000 (M+8: -1.000000); pocket=False nodes at eps: k=[3.14159 6.28319 0.     ] chi=-1 |s|=6.9e-16 sep_others=inf
+    box [5.89  5.89  2.749]..[6.676 6.676 3.534]: phi=6.283 rank(P_<)={1} Ch=-1.000000 (M+8: -1.000000); pocket=False nodes at eps: k=[6.28319 0.      3.14159] chi=-1 |s|=4.0e-15 sep_others=inf
+    box [5.89  2.749 5.89 ]..[6.676 3.534 6.676]: phi=6.283 rank(P_<)={1} Ch=-1.000000 (M+8: -1.000000); pocket=False nodes at eps: k=[0.      3.14159 0.     ] chi=-1 |s|=1.9e-15 sep_others=inf
+    box [2.749 2.749 2.749]..[3.534 3.534 3.534]: phi=6.283 rank(P_<)={1} Ch=-1.000000 (M+8: -1.000000); pocket=False nodes at eps: k=[3.14159 3.14159 3.14159] chi=-1 |s|=5.9e-16 sep_others=inf
+    box [4.32  1.178 1.178]..[5.105 1.963 1.963]: phi=6.283 rank(P_<)={1} Ch=+1.000000 (M+8: +1.000000); pocket=False nodes at eps: k=[4.71239 1.5708  1.5708 ] chi=+1 |s|=2.4e-15 sep_others=inf
+    box [1.178 4.32  1.178]..[1.963 5.105 1.963]: phi=6.283 rank(P_<)={1} Ch=+1.000000 (M+8: +1.000000); pocket=False nodes at eps: k=[1.5708  4.71239 1.5708 ] chi=+1 |s|=2.3e-16 sep_others=inf
+    box [4.32 4.32 4.32]..[5.105 5.105 5.105]: phi=6.283 rank(P_<)={1} Ch=+1.000000 (M+8: +1.000000); pocket=False nodes at eps: k=[4.71239 4.71239 4.71239] chi=+1 |s|=2.0e-16 sep_others=inf
+   level 3.1416: uncertified cells 64, components 8, decomposed=True 
+PASS [numerical] Q(1, 1, 1) eps=3.142: box Chern numbers integer and mesh-stable
+PASS [numerical] Q(1, 1, 1) eps=3.142: sum_boxes Ch(P_<) = -W3 = 0 (got +0)
+     Weyl node k=[1.5708  1.5708  4.71239] chi=+1 |v| sing. vals=[1. 1. 1.]
+     Weyl node k=[3.14159 6.28319 0.     ] chi=-1 |v| sing. vals=[1. 1. 1.]
+     Weyl node k=[6.28319 0.      3.14159] chi=-1 |v| sing. vals=[1. 1. 1.]
+     Weyl node k=[0.      3.14159 0.     ] chi=-1 |v| sing. vals=[1. 1. 1.]
+     Weyl node k=[3.14159 3.14159 3.14159] chi=-1 |v| sing. vals=[1. 1. 1.]
+     Weyl node k=[4.71239 1.5708  1.5708 ] chi=+1 |v| sing. vals=[1. 1. 1.]
+     Weyl node k=[1.5708  4.71239 1.5708 ] chi=+1 |v| sing. vals=[1. 1. 1.]
+     Weyl node k=[4.71239 4.71239 4.71239] chi=+1 |v| sing. vals=[1. 1. 1.]
+PASS [numerical] Q(1, 1, 1) eps=3.142: clean level with only Weyl nodes, sum chi = 0 (8 nodes, sum +0)
+PASS [numerical] Q(1, 1, 1) eps=3.142: per box Ch = sum chi in box
+=== DP-Weyl-QCA(BCC) (n=2, range 1, #hops 8, L=6.000)
+PASS [numerical] DP-Weyl-QCA(BCC): unitary at 200 random k
+PASS [exact-grid certificate] DP-Weyl-QCA(BCC): exact-grid W3 = 0 (+1.7e-19, -3.5e-17)
+   det U spread over samples 4.7e-16
+    box [1.178 4.32  4.32 ]..[1.963 5.105 5.105]: phi=3.142 rank(P_<)={1} Ch=+1.000000 (M+8: +1.000000); pocket=False nodes at eps: k=[1.5708  4.71239 4.71239] chi=+1 |s|=4.8e-15 sep_others=inf
+    box [5.89 5.89 5.89]..[6.676 6.676 6.676]: phi=3.142 rank(P_<)={1} Ch=-1.000000 (M+8: -1.000000); pocket=False nodes at eps: k=[0.      6.28319 6.28319] chi=-1 |s|=1.4e-15 sep_others=inf
+   level 0.0000: uncertified cells 16, components 2, decomposed=True 
+PASS [numerical] DP-Weyl-QCA(BCC) eps=0.000: box Chern numbers integer and mesh-stable
+PASS [numerical] DP-Weyl-QCA(BCC) eps=0.000: sum_boxes Ch(P_<) = -W3 = 0 (got +0)
+     Weyl node k=[1.5708  4.71239 4.71239] chi=+1 |v| sing. vals=[1.  0.5 0.5]
+     Weyl node k=[0.      6.28319 6.28319] chi=-1 |v| sing. vals=[1.  0.5 0.5]
+PASS [numerical] DP-Weyl-QCA(BCC) eps=0.000: clean level with only Weyl nodes, sum chi = 0 (2 nodes, sum +0)
+PASS [numerical] DP-Weyl-QCA(BCC) eps=0.000: per box Ch = sum chi in box
+    box [4.32  1.178 1.178]..[5.105 1.963 1.963]: phi=6.283 rank(P_<)={1} Ch=+1.000000 (M+8: +1.000000); pocket=False nodes at eps: k=[4.71239 1.5708  1.5708 ] chi=+1 |s|=1.8e-15 sep_others=inf
+    box [2.749 2.749 2.749]..[3.534 3.534 3.534]: phi=6.283 rank(P_<)={1} Ch=-1.000000 (M+8: -1.000000); pocket=False nodes at eps: k=[3.14159 3.14159 3.14159] chi=-1 |s|=1.1e-15 sep_others=inf
+   level 3.1416: uncertified cells 16, components 2, decomposed=True 
+PASS [numerical] DP-Weyl-QCA(BCC) eps=3.142: box Chern numbers integer and mesh-stable
+PASS [numerical] DP-Weyl-QCA(BCC) eps=3.142: sum_boxes Ch(P_<) = -W3 = 0 (got +0)
+     Weyl node k=[4.71239 1.5708  1.5708 ] chi=+1 |v| sing. vals=[1.  0.5 0.5]
+     Weyl node k=[3.14159 3.14159 3.14159] chi=-1 |v| sing. vals=[1.  0.5 0.5]
+PASS [numerical] DP-Weyl-QCA(BCC) eps=3.142: clean level with only Weyl nodes, sum chi = 0 (2 nodes, sum +0)
+PASS [numerical] DP-Weyl-QCA(BCC) eps=3.142: per box Ch = sum chi in box
+=== two-qubit gold walk with axial coin exp(0.15i 1(x)sigma_3) (n=4, range 1, #hops 27, L=7.083)
+PASS [numerical] two-qubit gold walk with axial coin exp(0.15i 1(x)sigma_3): unitary at 200 random k
+PASS [numerical] two-qubit gold walk with axial coin exp(0.15i 1(x)sigma_3): C4z covariance U(R k) = D U(k) D^dag
+PASS [exact-grid certificate] two-qubit gold walk with axial coin exp(0.15i 1(x)sigma_3): exact-grid W3 = 0 (-1.6e-17, +8.3e-17)
+   det U spread over samples 2.8e-15
+    box [5.89 5.89 0.  ]..[6.676 6.676 0.589]: phi=3.142 rank(P_<)={2} Ch=+1.000000 (M+8: +1.000000); pocket=False nodes at eps: k=[0.  0.  0.3] chi=+1 |s|=3.1e-15 sep_others=0.59
+    box [5.89  5.89  5.694]..[6.676 6.676 6.283]: phi=3.142 rank(P_<)={2} Ch=-1.000000 (M+8: -1.000000); pocket=False nodes at eps: k=[0.      6.28319 5.98319] chi=-1 |s|=2.6e-15 sep_others=0.59
+   level 0.0000: uncertified cells 8, components 2, decomposed=True 
+PASS [numerical] two-qubit gold walk with axial coin exp(0.15i 1(x)sigma_3) eps=0.000: box Chern numbers integer and mesh-stable
+PASS [numerical] two-qubit gold walk with axial coin exp(0.15i 1(x)sigma_3) eps=0.000: sum_boxes Ch(P_<) = -W3 = 0 (got +0)
+     Weyl node k=[0.  0.  0.3] chi=+1 |v| sing. vals=[1.     0.9829 0.9829]
+     Weyl node k=[0.      6.28319 5.98319] chi=-1 |v| sing. vals=[1.     0.9829 0.9829]
+PASS [numerical] two-qubit gold walk with axial coin exp(0.15i 1(x)sigma_3) eps=0.000: clean level with only Weyl nodes, sum chi = 0 (2 nodes, sum +0)
+PASS [numerical] two-qubit gold walk with axial coin exp(0.15i 1(x)sigma_3) eps=0.000: per box Ch = sum chi in box
+    box [5.694 2.749 0.785]..[6.872 3.534 1.963]: phi=6.283 rank(P_<)={2} Ch=-1.000000 (M+8: -1.000000); pocket=False nodes at eps: k=[6.28319 3.14159 1.37092] chi=-1 |s|=1.7e-15 sep_others=0.59
+    box [2.749 5.694 4.32 ]..[3.534 6.872 5.498]: phi=6.283 rank(P_<)={2} Ch=+1.000000 (M+8: +1.000000); pocket=False nodes at eps: k=[3.14159 0.      4.91226] chi=+1 |s|=5.2e-16 sep_others=0.59
+    box [2.749 5.694 0.785]..[3.534 6.872 1.963]: phi=6.283 rank(P_<)={2} Ch=-1.000000 (M+8: -1.000000); pocket=False nodes at eps: k=[3.14159 6.28319 1.37092] chi=-1 |s|=2.2e-15 sep_others=0.59
+    box [5.694 2.749 4.32 ]..[6.872 3.534 5.498]: phi=6.283 rank(P_<)={2} Ch=+1.000000 (M+8: +1.000000); pocket=False nodes at eps: k=[0.      3.14159 4.91226] chi=+1 |s|=6.0e-16 sep_others=0.59
+    box [5.89  5.89  3.142]..[6.676 6.676 3.731]: phi=6.283 rank(P_<)={2} Ch=+1.000000 (M+8: +1.000000); pocket=False nodes at eps: k=[0.      0.      3.44159] chi=+1 |s|=1.2e-15 sep_others=0.59
+    box [5.89  5.89  2.553]..[6.676 6.676 3.142]: phi=6.283 rank(P_<)={2} Ch=-1.000000 (M+8: -1.000000); pocket=False nodes at eps: k=[0.      6.28319 2.84159] chi=-1 |s|=9.9e-16 sep_others=0.59
+   level 3.1416: uncertified cells 104, components 6, decomposed=True 
+PASS [numerical] two-qubit gold walk with axial coin exp(0.15i 1(x)sigma_3) eps=3.142: box Chern numbers integer and mesh-stable
+PASS [numerical] two-qubit gold walk with axial coin exp(0.15i 1(x)sigma_3) eps=3.142: sum_boxes Ch(P_<) = -W3 = 0 (got +0)
+     Weyl node k=[6.28319 3.14159 1.37092] chi=-1 |v| sing. vals=[0.6939 0.1895 0.1848]
+     Weyl node k=[3.14159 0.      4.91226] chi=+1 |v| sing. vals=[0.6939 0.1895 0.1848]
+     Weyl node k=[3.14159 6.28319 1.37092] chi=-1 |v| sing. vals=[0.6939 0.1895 0.1848]
+     Weyl node k=[0.      3.14159 4.91226] chi=+1 |v| sing. vals=[0.6939 0.1895 0.1848]
+     Weyl node k=[0.      0.      3.44159] chi=+1 |v| sing. vals=[1.     0.2531 0.2531]
+     Weyl node k=[0.      6.28319 2.84159] chi=-1 |v| sing. vals=[1.     0.2531 0.2531]
+PASS [numerical] two-qubit gold walk with axial coin exp(0.15i 1(x)sigma_3) eps=3.142: clean level with only Weyl nodes, sum chi = 0 (6 nodes, sum +0)
+PASS [numerical] two-qubit gold walk with axial coin exp(0.15i 1(x)sigma_3) eps=3.142: per box Ch = sum chi in box
+== 3. sharpness witness: unbalanced level-0 nodes force Fermi sheets
+PASS [numerical] Q(2,1,1) level 0.000: clean, each node alone in a certified box with Ch = chi
+PASS [numerical] Q(2,1,1) level 3.142: clean, each node alone in a certified box with Ch = chi
+PASS [numerical] Q(2,1,1) inventory: 16 Weyl nodes at level 0 and 16 at level pi
+PASS [exact-grid certificate] T2 = e^{i k_x} Q(2,1,1): exact-grid W3 = 0 (-8.0e-16, +2.5e-15)
+PASS [numerical] T2 = e^{i k_x} Q(2,1,1): det U = exp(2 i k_x) is not constant
+   level-0 Weyl node k=[6.283185 0.       6.283185] chi=-1 |v^-1 tilt|=0.500 box certified=True Ch=-1.000000
+   level-0 Weyl node k=[6.283185 3.141593 3.141593] chi=-1 |v^-1 tilt|=0.500 box certified=True Ch=-1.000000
+   level-0 Weyl node k=[3.141593 3.141593 6.283185] chi=-1 |v^-1 tilt|=0.500 box certified=True Ch=-1.000000
+   level-0 Weyl node k=[3.141593 6.283185 3.141593] chi=-1 |v^-1 tilt|=0.500 box certified=True Ch=-1.000000
+PASS [numerical] T2 = e^{i k_x} Q(2,1,1): every level-0 node box is certified level-free on its surface and cut-free inside
+PASS [numerical] T2 = e^{i k_x} Q(2,1,1): all level-0 nodes are type I (|v^-1 tilt| < 1)
+PASS [numerical] T2 = e^{i k_x} Q(2,1,1): per node box Ch(P_<) = chi
+   net chirality of the 4 isolated level-0 Weyl nodes: -4; with W3 = 0 the level-0 Fermi sheets must carry the compensating flux
+PASS [numerical] T2 = e^{i k_x} Q(2,1,1): net level-0 nodal chirality is nonzero (-4)
+PASS [numerical] T2 = e^{i k_x} Q(2,1,1): non-degenerate eigenvalue-1 points (sheet points) exist at level 0 (32/40 starts)
+TOTAL: PASS=77 FAIL=0
+
+----- stderr -----
+

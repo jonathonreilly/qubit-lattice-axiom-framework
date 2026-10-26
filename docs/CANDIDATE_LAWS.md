@@ -251,6 +251,38 @@ Bosonized qubit sites (bosonized-sites, 2026-10-26, rethink r3; campaign files):
 - **Ledger:** net about -2 clauses.
 - **Smuggling gate:** no fitted numbers; no observed structure named; untested prediction = photon decay near 2e20 eV, with electron/photon Lorentz-violation ratio exactly 16; bent clause = CL-1's tick.
 
+## Candidate D4 zoom-fixed-point matter law (not adopted; synthesis of the two candidates above)
+
+> "Matter's history weight on the D4 event set is the fixed point of the D4 zoom: the factor-2 block average over the D4 cell with shared boundary weights (1, 1/2, 1/8), sliced along a root. Records register only correlations separated by at least two slices."
+
+- **Why:** the cubic zoom-fixed-point law needed an imposed radiative condition, and the D4 event law protected only bosons. Together they protect matter by symmetry.
+- **Evidence (d4-zoom-fixed-point-fermion, PR #10098, 14/14, own re-run identical):**
+  - [T] The blocking kernel is forced: it is the unique W(F4)-invariant kernel inside the closed cell (all 1152 elements).
+  - The fixed point:
+    - refinement identity holds to 5e-15;
+    - locality decay rate 1.7-1.9;
+    - GW/overlap identities hold to 1e-15, no doublers;
+    - lowest band = sqrt(k^2 + m^2) to 4e-9;
+    - dim-6 <= 9e-10.
+  - One-loop dim-6 residual is 1e-15 on D4, against 3e-2 on the Z^4 control.
+  - Reflection positivity in the pole sense: for separations of 4 or more slices, the correlator is exactly a sum of real positive poles (to 1e-9). There is no Lee-Wick pair and no ghost.
+  - Strict site RP fails at 5e-3 to 9e-3, because the smearing reaches two slices along the root. Hence the two-slice buffer clause.
+  - Every finite truncation keeps a complex pair. Its weight from zoom rungs is 2e-4, 7e-7 and < 1e-14 at rungs 0, 1 and 2, but it is never exactly 0.
+  - Missed pre-registered threshold: the fixed-point residual is 5.9e-8, not 1e-8 (image cutoff).
+- **Supersedes (kept visible, marked):**
+  - the CL-1 matter tick;
+  - the Wilson/m0 window;
+  - the repaired overlap kernel;
+  - the cubic zoom-fixed-point law and its radiative condition;
+  - the D4 bosons-only narrowing.
+- **Still to rebuild on D4:**
+  - the copy sign's role in carrying the 16;
+  - slab chirality and the 4D index;
+  - families;
+  - gravity hinge sums.
+- **OWNER-LEVEL QUESTION (axiom-adjacent, not decided here):** the exact weight is a folded continuum tower, an infinite image sum in the history weight. Whether that is compatible with one qubit per site (the Qubit axiom) is for the owner. Finite rungs give exponentially small but nonzero ghost weight.
+- **Smuggling gate:** no fitted numbers; no observed structure named. Untested predictions: dim-8 only LIV, photon decay near 2e20 eV, electron/photon LIV ratio fixed. Bent clauses: CL-1 matter tick, CL-2 records (two-slice buffer).
+
 ## Untested predictions
 - **Fixed dimension-6 Lorentz violation vs cosmic rays** (assumed-inputs-model, liv-auger-confrontation, PR #10087). The rules fix E = p + c p^3/E*^2 with E* = hbar c/2L and cell rung L = sqrt(8 pi) l_P (kappa = 1), i.e. delta_had,2 = 2c/E*^2 = 1.35e-54 c eV^-2, with c < 0 (subluminal) on every ray. Sky averages are exact: c_g = -1/40, c6 = -1/30, quark -7/120. Hadron step (supplied parton weights) gives delta_had,2 = -(0.34-4.3)e-57 eV^-2 (sky average; body diagonals 0.08-1.2e-57). RATES (uhecr-vacuum-emission, PR #10088): IN TENSION, not robustly excluded. Above threshold the loss length is cm-scale (hard walls): p 3.2-4.4 EeV, He 10-13, N 36-47, Fe 144-188 EeV (Fermi-gas; 23-55 with a supplied high-momentum tail), body/axis ratio 1.31 (cubic sky pattern in E_max). Amaterasu 2.44e20 fits only on body-like rays at its low systematic. LOAD-BEARING: hadron-level additivity of the dispersion is SUPPLIED; quark-level accounting closes emission. COMPOSITE DISPERSION (composite-dispersion, PR #10089): first order exactly additive, but the full bound state is UNIVERSAL at high momentum (momentum flows to the most subluminal constituent; c_B/c_q -> 1.000, half-way ~5 EeV; deep-bound 3D lattice pairs exactly universal on all rays). p -> p gamma stays CLOSED to 1e20 eV on all rays: the UHECR tension came from a frozen wavefunction and DISSOLVES (supplied: binding forms, 2-body truncation; 3-body proton + nuclei open). SURVIVING OBSERVABLES (liv-surviving-observables, PR #10090): 3-body proton also universal (residual ~u^-1/2) except an exact-degeneracy cone around the 8 body diagonals (1.8% of sky, p -> p gamma at 5-6 EeV). NUCLEI CANNOT redistribute: vacuum breakup above ~1.8 A EeV (He 7-13, N 25-40, Fe 100-160 EeV; Fermi momentum supplied) - IN TENSION with Amaterasu 244 EeV and Auger heavy composition at 50-100 EeV. Photons faster than electrons; gamma -> e+e- opens at 0.8-1.1e17 eV (falsifiable by one photon above ~1.2e17 outside the diagonal cones). Time of flight: E_QG,2 = 4.2-7.3e18 GeV, margin 10^6.8 over LHAASO GRB 221009A. **NUCLEAR VACUUM BREAKUP (nuclear-vacuum-breakup, PR #10091): RULES AS WRITTEN EXCLUDED.** Driver = second-order LIV curvature (6c/A < 0) rewarding one nucleon taking most of the momentum; exact deuteron barely flows (0.25 -> 0.31) and dissolves at 2.5-4.3 EeV; He 4-7, N 9-15, Fe 18-46 EeV; decay length 1e-8 m - 5 mm (hard wall). Above ~46 EeV only nucleons survive vs Auger heavier-and-purer composition at 50-100 EeV (arXiv:2406.06315). RAW-OBSERVABLE RECHECK (raw-xmax-flowed-protons, PR #10093): downgraded to TENSION. Against Auger raw sigma(Xmax) = 20.7 +- 1.4 g/cm^2 at 10^19.74 eV (arXiv:2406.06319), flowed protons with cross section <= 1x proton are excluded (>= 4.2 sigma), 2x proton misses by 2.2 sigma, 4-8x fits (post-run extension, labelled). The flowed-hadron cross section decides; AugerPrime muon/EM split tests "heavy-looking Xmax, proton-like muons". The fixed dim-6 term (link band c_g = -(sum n^4)/24, copy term c6) must GO: rescue = a tick whose p^4 correction cancels for every species (walls -> ~1e21 A eV). Candidate: the zoom (block-spin) fixed-point tick (perfect action), under test.
   - Auger 2022 (arXiv:2112.06773) bounds only delta > 0, so it does not apply; even ignoring sign, the ratio < 10.

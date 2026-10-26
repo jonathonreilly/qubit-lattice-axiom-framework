@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20261016-twisted-pair-exact-branches:a1",
+ "type": "judgment",
+ "lane": "review-science-20261016",
+ "worker": "w-jonathonsmac4f50-kda0f",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261016-twisted-pair-exact-branches/w-jonathonsmac4f50-kda0f/check.py",
+ "seed": 75547,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "c4a9bc0b",
+ "started_utc": "20261026T004547Z",
+ "elapsed_s": 174.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "exact re-derivation of the twisted-pair line-branch family (9 branches, 32 free unknowns each) with replayed Q-cofactor certificates for the 8 moving branches, mutation controls and a numerical corroboration; the axis-flat branch survives (runtime 173s)."
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 41/41 PASS (~3 min); exact branch selection (9 of 81 exponent vectors), replayed characteristic-zero certificates exclude the 8 axis-moving branches under the stated setting (range one, E1/2+E5/2, U(0)=1); axis-flat branch survives, non-empty; exact description of that branch is open (no Groebner tool installed). Worker ran one pattern-based pkill of its own scratch jobs.",
+ "what": "Replace the numerical twisted-pair branch prefilter with exact exhaustive selection for the stated supplied representation and U(0)=1. Produce and independently verify characteristic-zero cofactor/unit-ideal certificates for the retained exclusions, with simultaneous-variable-converter mutation controls. Saved mod-p and modStd outputs are evidence about candidate branches, not a universal axis-flatness or Dirac-cone exclusion. Preserve all viable surviving branches and the first unclosed step. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise.",
+ "stdout_sha256": "324ff389d325ef38720f96bd10b8e13c14623a456c03fdfe843ddfc17d33bc35",
+ "stdout_tail": "uces every equation exactly\nPASS mutation control: the sequential-substitution converter is caught by the self-test or by variable merging (14 of 60 equations no longer vanish, 60 lose variables)\nPASS Singular-syntax text for the simultaneous converter parses back to the same polynomials\nPASS numerical unrestricted search (44 real unknowns, U(0)=1, unitarity): 9 converged solutions, 9 of them axis-flat (max axis deviation 8.1e-08), 9 non-constant [CHECKED-numerical; corroboration only]\nPASS the axis-flat survivor contains non-constant walks (so the exclusion is of axis motion, not of all non-trivial walks)\nPASS numerical search restricted to moving branches [(-1, 1, -1, 1), (-1, 1, 0, 0), (0, 0, 1, -1)]: no convergence in 15 starts each (best sup-residuals ['0.14', '0.096', '0.2']) [CHECKED-numerical; no proof]\nTOTAL: PASS=41 FAIL=0\nHIT: for the supplied range-one O-covariant E1/2+E5/2 cell walks with U(0)=1, exact exhaustive axis-branch selection leaves 9 branches, characteristic-zero unit-ideal certificates (replayed by the own re-derivation inside check.py; line lemma proved in ATTEMPT.md) exclude the 8 axis-moving ones, so every such walk is axis-flat (dU/dk(0)=0); the axis-flat branch survives and is non-empty.\nSUMMARY: exact re-derivation of the twisted-pair line-branch family (9 branches, 32 free unknowns each) with replayed Q-cofactor certificates for the 8 moving branches, mutation controls and a numerical corroboration; the axis-flat branch survives (runtime 173s).\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-kda0f",
+  "at_utc": "20261026T004847Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Scoped result: every supplied-setting walk is axis-flat (no linear Dirac term at k=0). Same-family, unrefereed.",
+  "by": "w-jonathonsmac4f50-kda0f",
+  "at_utc": "20261026T004847Z"
+ }
+}

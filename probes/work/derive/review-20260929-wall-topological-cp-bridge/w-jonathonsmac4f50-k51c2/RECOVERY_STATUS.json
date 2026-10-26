@@ -1,0 +1,74 @@
+{
+  "task_id": "J:derive:review-20260929-wall-topological-cp-bridge:a1",
+  "source_branch": "claude/toe-walls-20260929",
+  "source_head": "4bd42747e57c4d604f66a63eed2db099ea38af4e",
+  "source_head_verified": true,
+  "source_objects": [
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/SUMMARY.md",
+      "sha256": "3c0b6cf9ab651069fef19ba4c020483b8c402a5a525047d9a6521b4f132e10d0",
+      "expected_sha256": "3c0b6cf9ab651069fef19ba4c020483b8c402a5a525047d9a6521b4f132e10d0",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/WALLS.md",
+      "sha256": "23a9f40130f5104ca48a15d7a14cfb1400df156faf08e01abdceb653010b7494",
+      "expected_sha256": "23a9f40130f5104ca48a15d7a14cfb1400df156faf08e01abdceb653010b7494",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/attacks/T41.md",
+      "sha256": "3b28f601554a06743ba7c8d0056c44764dc428f08f9bff7c9141a21e156cce1a",
+      "expected_sha256": "3b28f601554a06743ba7c8d0056c44764dc428f08f9bff7c9141a21e156cce1a",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/kills/T41.md",
+      "sha256": "955bdc01b552f020c07015058aa13e0663e8b622da724e667162f565ac4da22c",
+      "expected_sha256": "955bdc01b552f020c07015058aa13e0663e8b622da724e667162f565ac4da22c",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/attacks/T42.md",
+      "sha256": "f3e1582adc508bbc175a4bab742362e6b4b3638e8e475a7a4ddf055682b95f72",
+      "expected_sha256": "f3e1582adc508bbc175a4bab742362e6b4b3638e8e475a7a4ddf055682b95f72",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/kills/T42.md",
+      "sha256": "1213dc4232e6912ab4074a4a59e5e56aee0120d7051c21a6c12335193d13b563",
+      "expected_sha256": "1213dc4232e6912ab4074a4a59e5e56aee0120d7051c21a6c12335193d13b563",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/attacks/T43.md",
+      "sha256": "4b88823fec52459344891f05a39e8bd2d03e61a17c23a7484712535f243b44e2",
+      "expected_sha256": "4b88823fec52459344891f05a39e8bd2d03e61a17c23a7484712535f243b44e2",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/kills/T43.md",
+      "sha256": "dacfe14e5249b301d445aba5b7e8192f9a9ba1f83d197b955e9e031e637802fc",
+      "expected_sha256": "dacfe14e5249b301d445aba5b7e8192f9a9ba1f83d197b955e9e031e637802fc",
+      "verified": true
+    }
+  ],
+  "main_checked_at": "a77a3449c91a753b06ce2a63876cd460b62cb4cf",
+  "axioms_and_registry_read_in_full": true,
+  "artifacts": {
+    "check.py": "ccc822c91e29ab984606d8246b1af95ec9efc93d12e16dbc1d2e4e54cd1a2b95",
+    "ATTEMPT.md": null
+  },
+  "check_result": "TOTAL: PASS=92 FAIL=0 (runtime about 6 s)",
+  "first_unresolved_step": "ATTEMPT.md section 10: prove dim ker D = 2|Q| and Gamma_VV negative definite with gamma0 bounded below for the uniform-flux family (hypothesis of Theorem A); checked only, and false in the regime Q large against L, e.g. (L,Q)=(8,3),(8,5),(10,3),(12,5),(4,3) have dim ker D = 2",
+  "remaining_obligations": [
+    "bound |Tr(Gamma_VV) - sig(Gamma_VV)| and the defect term (m/2) Tr[{Gamma,D} R D^+] in terms of L, Q, m",
+    "closed form or proof for the spectrum of Gamma_VV (numerical fit -1 + pi|Q|/L^2)",
+    "4D (Gamma_f without factor i; C-parity flips) and SU(3) versions of Theorems A and B",
+    "continuum/index normalization with a stated scaling (a -> 0 at fixed physical volume)",
+    "gauge-side supplier and positivity/reflection positivity of the combined weight (T42); sector Q is supplied (W3)",
+    "axiom-level supplier for D, eps, the multi-link mass operator Gamma_f and theta_g (none provided by the four axioms or the three registered primitives)",
+    "independent cross-model confirmation of Theorems A and B (this is same-family and unrefereed)"
+  ],
+  "overlap_notes": "no open-PR title (231 checked, title-level) or docs/scripts keyword match found for the flow-signature theorem or the index-plus-defect split; adjacent prior art: 2026-07-02 supplier note (numerical -2Q), 2026-06-11 eps-Hermiticity note, T43 kill (coefficient below 1)."
+}

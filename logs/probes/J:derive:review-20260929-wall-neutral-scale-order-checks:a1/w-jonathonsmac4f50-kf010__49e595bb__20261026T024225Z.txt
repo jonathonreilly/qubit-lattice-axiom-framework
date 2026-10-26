@@ -1,0 +1,52 @@
+PASS A1 exact gas weight zeta^N g^B = 2^(dV) * (1/2)^(#like) on every one of 65536 configurations of the (4, 4) torus (g=1/4, zeta=g^-2)
+PASS A1 exact gas weight zeta^N g^B = 2^(dV) * (1/2)^(#like) on every one of 65536 configurations of the (4, 2, 2) torus (g=1/4, zeta=g^-3)
+PASS A2 same identity on 300 random configurations of the simple 4x4x4 torus (exact Fractions)
+PASS A3 complement n->1-n leaves the weight unchanged at zeta=g^-3 (half filling in expectation)
+PASS A4 g = exp(-4K): Ising coupling K = ln(2)/2 for g=1/4, e^{-2K} = 1/2
+PASS B1 cross-bond form in the gas/AFM variables [[a,b],[b,a]], a/b=1/2: det = -3 < 0, not positive semidefinite (exact)
+PASS B2 cross-bond form after the sublattice complement [[b,a],[a,b]]: trace 4, det 3: positive definite (exact)
+PASS B3 (4, 4) torus, plain reflection through bond planes of the AFM weight: smallest eigenvalue -1.030e+00 < 0, not reflection positive
+PASS B4 (4, 4): exact integer certificate f.A.f < 0 for a rationalised vector
+PASS B5 (4, 4) torus, reflection composed with a global spin flip (= plain reflection of the sublattice-complemented ferromagnet): smallest eigenvalue 5.731e-09 >= 0 (float, normalised)
+PASS B3 (4, 2, 2) torus, plain reflection through bond planes of the AFM weight: smallest eigenvalue -9.981e-01 < 0, not reflection positive
+PASS B4 (4, 2, 2): exact integer certificate f.A.f < 0 for a rationalised vector
+PASS B5 (4, 2, 2) torus, reflection composed with a global spin flip (= plain reflection of the sublattice-complemented ferromagnet): smallest eigenvalue 9.050e-14 >= 0 (float, normalised)
+PASS C1 (4, 4) torus, a/b=1/2 (exact S(k)): staggered S(k) <= 1/(2K E(k)) for all k != 0; worst ratio 0.720599
+PASS C2 (4, 4) torus, a/b=1/2: <m_stag^2> = 0.49120909 >= 1 - G_L/(2K) = 0.22605422
+PASS C3 (4, 4) torus, a/b=1/2: exact sum rule (1/V) sum_k S(k) = 1
+PASS C1 (4, 4) torus, a/b=1/3 (exact S(k)): staggered S(k) <= 1/(2K E(k)) for all k != 0; worst ratio 0.231771
+PASS C2 (4, 4) torus, a/b=1/3: <m_stag^2> = 0.92133109 >= 1 - G_L/(2K) = 0.51169458
+PASS C3 (4, 4) torus, a/b=1/3: exact sum rule (1/V) sum_k S(k) = 1
+PASS C1 (4, 2, 2) torus, a/b=1/2 (exact S(k)): staggered S(k) <= 1/(2K E(k)) for all k != 0; worst ratio 0.302222
+PASS C2 (4, 2, 2) torus, a/b=1/2: <m_stag^2> = 0.85955407 >= 1 - G_L/(2K) = 0.44546409
+PASS C3 (4, 2, 2) torus, a/b=1/2: exact sum rule (1/V) sum_k S(k) = 1
+PASS C1 (4, 2, 2) torus, a/b=1/3 (exact S(k)): staggered S(k) <= 1/(2K E(k)) for all k != 0; worst ratio 0.0369243
+PASS C2 (4, 2, 2) torus, a/b=1/3: <m_stag^2> = 0.9925214 >= 1 - G_L/(2K) = 0.6501268
+PASS C3 (4, 2, 2) torus, a/b=1/3: exact sum rule (1/V) sum_k S(k) = 1
+PASS D1 G_inf = int d^3k/(2pi)^3 1/(3 - sum cos k) = 0.505462019717: Bessel-integral quadrature equals the Gamma-product closed form / 3 to 1e-12 (|diff| = 8.92e-24)
+PASS D2 G_L = (1/V) sum_{k!=0} 1/E(k) increases with L and stays below G_inf for even L = 4..128 (G_4 = 0.395052, G_128 = 0.501934, G_inf = 0.505462)
+PASS D3 fit G_L = G + c1/L + c2/L^2 + c3/L^3 on L=32..128 gives G = 0.5054620 (closed form 0.5054620): G_L -> G_inf
+PASS D4 K_IR = G_inf/2 = 0.2527310099
+PASS D5 g_IR = exp(-4 K_IR) = exp(-2 G_inf) = 0.3638825823
+PASS D6 g_IR / (9/62500) = 2526.96: the infrared threshold exceeds the landed contentless Peierls threshold by a factor 2527
+PASS D7 g = 0.25: <m_stag^2> >= 1 - G/(2K) = 0.270772  (L -> inf; G_L < G for the listed L)
+PASS D7 g = 0.3: <m_stag^2> >= 1 - G/(2K) = 0.160343  (L -> inf; G_L < G for the listed L)
+PASS D7 g = 0.35: <m_stag^2> >= 1 - G/(2K) = 0.0370521  (L -> inf; G_L < G for the listed L)
+PASS D8 disorder side: tanh K < 1/(2d) = 1/6 <=> g > ((1-t)/(1+t))^2 = 25/49 = 0.51020
+PASS D9 bracket: g_IR = 0.363883 < exp(-4 K_c^{lit}) = 0.412047 < 25/49 = 0.510204  (K_c^{lit} = 0.2216546 is a numerical literature value, not derived here)
+PASS D10 proved bracket for the transition value of g has width 0.1463 (nothing here fixes it to 0.412)
+PASS E1 (4, 4) torus, ferro e^{-2K}=1/2 (tanh K = 1/3): Simon-Lieb one-site instance <s_0 s_x> <= tanh K sum_{y~0} <s_y s_x> for every x != 0 (exact; min slack 3800617875/24001207553)
+PASS E1 (4, 2, 2) torus, ferro e^{-2K}=1/2 (tanh K = 1/3): Simon-Lieb one-site instance <s_0 s_x> <= tanh K sum_{y~0} <s_y s_x> for every x != 0 (exact; min slack 349968622856445/417944716974593)
+     g=0.34  U4(L=6)=0.6595  U4(L=10)=0.6650  U4(L=14)=0.6661  diff(14-6)=+0.0066
+     g=0.38  U4(L=6)=0.6294  U4(L=10)=0.6572  U4(L=14)=0.6634  diff(14-6)=+0.0340
+     g=0.40  U4(L=6)=0.5567  U4(L=10)=0.6125  U4(L=14)=0.6456  diff(14-6)=+0.0889
+     g=0.41  U4(L=6)=0.4976  U4(L=10)=0.5118  U4(L=14)=0.5117  diff(14-6)=+0.0142
+     g=0.42  U4(L=6)=0.4292  U4(L=10)=0.3090  U4(L=14)=0.2571  diff(14-6)=-0.1721
+     g=0.44  U4(L=6)=0.2830  U4(L=10)=0.1107  U4(L=14)=0.0519  diff(14-6)=-0.2311
+     g=0.48  U4(L=6)=0.0986  U4(L=10)=0.0327  U4(L=14)=0.0044  diff(14-6)=-0.0942
+PASS F1 Binder cumulant of the staggered magnetisation: L=14 above L=6 at g=0.34 (ordered side) and below at g=0.48 (disordered side)
+PASS F2 crossing of the L=6 and L=14 Binder curves at g ~ 0.411 (statistical, small sizes; numerical scope of the 0.41 figure; not a proof)
+PASS F3 the rigorous ordered range g <= 0.3639 (D5) is consistent with the run (g=0.34 ordered)
+TOTAL: PASS=42 FAIL=0
+HIT: for the contentless record gas on even tori (exactly the 3D antiferromagnetic Ising model, g = exp(-4K), zeta = g^-3), the infrared bound gives staggered order for every g <= exp(-2 G_inf) = 0.36388, about 2500 times the landed Peierls threshold 9/62500, and the exact reflection form shows that, for the contentless gas on even tori, the 'reflection-positivity floor' g >= 1 belongs to the gas variables only; 0.412 stays a numerical value inside the proved bracket (0.36388, 25/49).
+SUMMARY: the contentless gas is exactly the 3D AFM Ising model, whose proved ordered range (infrared bound, imported theorem, instances verified exactly) reaches g=0.36388 and whose disordered range starts at 25/49, so 0.412 is a numerical value inside a proved bracket, and (contentless, even tori) reflection positivity holds after a sublattice complement for every g<1; runtime 107 s.

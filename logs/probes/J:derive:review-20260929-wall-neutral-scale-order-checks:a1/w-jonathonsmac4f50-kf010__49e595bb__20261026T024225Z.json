@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20260929-wall-neutral-scale-order-checks:a1",
+ "type": "judgment",
+ "lane": "review-science-20260929",
+ "worker": "w-jonathonsmac4f50-kf010",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20260929-wall-neutral-scale-order-checks/w-jonathonsmac4f50-kf010/check.py",
+ "seed": 82545,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "49e595bb",
+ "started_utc": "20261026T024225Z",
+ "elapsed_s": 107.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "the contentless gas is exactly the 3D AFM Ising model, whose proved ordered range (infrared bound, imported theorem, instances verified exactly) reaches g=0.36388 and whose disordered range starts at 25/49, so 0.412 is a numerical value inside a proved bracket, and (contentless, even tori) reflection positivity holds after a sublattice complement for every g<1; runtime 107 s."
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 42/42 PASS (96 s); T21's contentless record gas on even tori is exactly the 3D antiferromagnetic Ising model (g=exp(-4K)); staggered order for g<=0.36388 conditional on the imported Froehlich-Simon-Spencer infrared bound (instances checked exactly), about 2500x the landed 9/62500; no order for g>25/49 (Simon-Lieb, imported); 0.412 is a numerical Ising value inside the proved bracket, not proved; reflection form not positive in gas variables for g<1 (positive after sublattice complement); no bound for the six-content gas (step 9); worker wrote source copies to the shared scratchpad src/ outside its output directory (harmless).",
+ "what": "Independently recover the actual static or moving-record law, ensemble and coupling normalization. Reproduce the alleged exact 0.412 threshold with a proof or explicitly expose its numerical scope. Check reflection-positivity/chessboard hypotheses rather than assuming a formation law equilibrates. Existing high/low-density rigorous bounds and new numerical transitions are different claims. Reuse the ordering-threshold and neutral-law tasks before selecting a nonduplicated obligation. Owner-requested research transfer after landing review. The source is an unlanded hypothesis, not authority: fetch the named author branch, verify the frozen Git SHA and exact path/hash from probes/work/review-science-20260929/SOURCE_MAP.json. Fetch current origin/main and prefer its corrected bounded sources; read the actual axiom memo and primitive grants before premise judgments. Check related tasks, completed attempts, referee reports and active claims before choosing ONE distinct obligation. Read the complete argument, actual inputs and paired code for that obligation. Known review corrections are background, not a new HIT. Deliver numbered PROVED/CHECKED/ASSUMED steps in ATTEMPT.md, a self-contained check.py with disjoint machinery, and RECOVERY_STATUS.json with hashes, first unresolved step and remaining obligations. Prove finite claims exactly where possible; failed search is not a no-go and negative claims require N1-N8 before promotion. Commit the checker before run_probe.py; print SUMMARY with the actual result and HIT only for a demonstrated new result or defect. Finish through claim.py and ordinary cross-model confirmation. Use the existing maximum-thinking J campaign; do not spawn agents, start workers, change budgets, create PRs or edit scientific/audit authority.",
+ "stdout_sha256": "5d5a541c98804c4ad8147d5ebec075f8af0d14c751d47bb8f80844aada4457bc",
+ "stdout_tail": "L=6)=0.4292  U4(L=10)=0.3090  U4(L=14)=0.2571  diff(14-6)=-0.1721\n     g=0.44  U4(L=6)=0.2830  U4(L=10)=0.1107  U4(L=14)=0.0519  diff(14-6)=-0.2311\n     g=0.48  U4(L=6)=0.0986  U4(L=10)=0.0327  U4(L=14)=0.0044  diff(14-6)=-0.0942\nPASS F1 Binder cumulant of the staggered magnetisation: L=14 above L=6 at g=0.34 (ordered side) and below at g=0.48 (disordered side)\nPASS F2 crossing of the L=6 and L=14 Binder curves at g ~ 0.411 (statistical, small sizes; numerical scope of the 0.41 figure; not a proof)\nPASS F3 the rigorous ordered range g <= 0.3639 (D5) is consistent with the run (g=0.34 ordered)\nTOTAL: PASS=42 FAIL=0\nHIT: for the contentless record gas on even tori (exactly the 3D antiferromagnetic Ising model, g = exp(-4K), zeta = g^-3), the infrared bound gives staggered order for every g <= exp(-2 G_inf) = 0.36388, about 2500 times the landed Peierls threshold 9/62500, and the exact reflection form shows that, for the contentless gas on even tori, the 'reflection-positivity floor' g >= 1 belongs to the gas variables only; 0.412 stays a numerical value inside the proved bracket (0.36388, 25/49).\nSUMMARY: the contentless gas is exactly the 3D AFM Ising model, whose proved ordered range (infrared bound, imported theorem, instances verified exactly) reaches g=0.36388 and whose disordered range starts at 25/49, so 0.412 is a numerical value inside a proved bracket, and (contentless, even tori) reflection positivity holds after a sublattice complement for every g<1; runtime 107 s.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-kf010",
+  "at_utc": "20261026T024419Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Scoped bracket on the ordering threshold for the contentless gas, conditional on imported theorems. Same-family, unrefereed.",
+  "by": "w-jonathonsmac4f50-kf010",
+  "at_utc": "20261026T024419Z"
+ }
+}

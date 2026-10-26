@@ -170,7 +170,7 @@ observational target.
 
 **Before this note:** selector was known to be open by the cubic
 variational and holonomy obstruction theorems, the information-geometric
-local calculation (no global obstruction) and the displayed parity-mixing
+local calculation (which does not establish a global obstruction) and the displayed parity-mixing
 functional-selection ambiguity and by the Physics-
 Validation chamber-constancy of `eta/eta_obs`. The remaining open object
 was described as "a selector that couples to a bank-unblinded observable

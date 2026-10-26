@@ -216,7 +216,7 @@ transport chain is blind to the chamber.
   is the downstream PMNS-as-f(H) closure).
 - The Schur-baseline partial closure, the Z_3-cubic and holonomy
  obstruction theorems, the information-geometric local calculation (which
- proves no global obstruction), and this physics-validation obstruction
+ does not establish a global obstruction), and this physics-validation obstruction
  together describe the selector gate open object as: *a selector that couples to a bank-unblinded
  observable on the chamber*.
 

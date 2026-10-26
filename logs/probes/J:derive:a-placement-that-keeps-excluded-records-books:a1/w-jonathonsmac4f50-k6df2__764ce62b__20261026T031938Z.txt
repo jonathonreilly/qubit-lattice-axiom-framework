@@ -1,0 +1,50 @@
+# source reading: docs/MINIMAL_AXIOMS_2026-06-29.md and docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md were read in full
+# on main a77a3449c91a753b06ce2a63876cd460b62cb4cf; the setting below is block 137's (landed), the walk is block 54's, exclusion block 78's.
+PASS: A1 free pair (no exclusion), direction 0: [H,J]=0 on all 676 basis columns with |r|<=6 (control)
+PASS: A1 free pair (no exclusion), direction 1: [H,J]=0 on all 676 basis columns with |r|<=6 (control)
+PASS: A2 excluded pair, direction 0: [H2,J] != 0 on exactly the 48 basis columns with relative offset 1<=|r|_1<=2 (12 sites x 4 coin states) and zero on every other column with |r|<=6; four operator applications cannot reach coincidence from |r|_1>4, so it is zero for all larger |r|: [H2,J] has finite relative range
+PASS: A2 excluded pair, direction 1: [H2,J] != 0 on exactly the 48 basis columns with relative offset 1<=|r|_1<=2 (12 sites x 4 coin states) and zero on every other column with |r|<=6; four operator applications cannot reach coincidence from |r|_1>4, so it is zero for all larger |r|: [H2,J] has finite relative range
+PASS: A3 antisymmetric adjacent pair, direction 0: [H2,J] != 0 (block 137 T1, reproduced in the Gaussian-integer engine)
+PASS: A3 symmetric adjacent pair, direction 0: [H2,J] != 0 (block 137 T1, reproduced in the Gaussian-integer engine)
+PASS: A3 antisymmetric adjacent pair, direction 1: [H2,J] != 0 (block 137 T1, reproduced in the Gaussian-integer engine)
+PASS: A3 symmetric adjacent pair, direction 1: [H2,J] != 0 (block 137 T1, reproduced in the Gaussian-integer engine)
+PASS: A4 [H2,J] is translation covariant (shifted columns map to shifted columns, exactly)
+PASS: A5 [H2,J] commutes with the exchange of the two records (so the sectors can be treated separately)
+PASS: A6 free current: J = (i/8)J8 has coefficient +-i/4 on the +-2 hop of each record along the axis, identity on the coin: the two-step momentum (1/2)sin 2k_a of block 140 T1
+PASS: A7 J - J_free vanishes on every basis column with |r|_1>2 (differs on 48 columns, |r|<=6): a finite-rank change in each fiber
+PASS: A8 J is hermitian (checked entrywise on columns with |r|_inf<=3 via the translation-covariant transposed entry)
+# --- B: rank-one algebra
+PASS: B1 exact: resolvent of the compression of h0 to the complement of c is R0 - R0|c><c|R0/G_cc (annihilates c on both sides); the T-matrix is |c><c|/G_cc (landed, 2026-09-26 T2)
+PASS: B2a lambda = (-2+4i)/5: |1+lambda|=1 and 2 Re lambda = -|lambda|^2 (unitarity of a one-channel phase shift)
+PASS: B2b exact: S^+ g S - g = lambda |u><a| + conj(lambda) |a><u| with u = (1-P_a)(g)a, for every hermitian g (S = 1 + lambda P_a)
+PASS: B2c the change is nonzero when a is not an eigenvector of g (here u != 0)
+PASS: B2d and zero when a is an eigenvector of g (g constant on the support of a)
+PASS: B3 for a kernel T=tau|a><a| with all a(q)!=0: [g,T](q',q) = (g(q')-g(q))T(q',q) is nonzero wherever g(q')!=g(q) (so [S,g]=0 forces S=1 when g is not constant)
+PASS: B4 |<singlet| u_s1(n1) x u_s2(n2)>|^2 = (1 - s1 s2 n1.n2)/4 at 144 rational points (landed 2026-09-26 E1): positive except where n1.n2 = s1 s2
+PASS: B5 dg_x/dq_x = 4862/21025 != 0 and dE/dq_y = s1 A - s2 B with A^2=45000/181337 != B^2=756900/3060221: dg_x ^ dE != 0 for all four band pairs; hence g_x is non-constant on the shell for almost every (K,E) (landed 2026-09-25 T1)
+# --- C: (b) the plane-wave symbol of [H2,J]
+PASS: C1 coin-basis symbol of [H2,J] at the exact corners (kappa=0): nonzero for all 128 corner assignments and both directions, so its raw matrix elements are order kappa^0, not kappa^3
+PASS: C2a on-shell, band-projected, product-state elements of [H2,J] (5 exact rational on-shell points x 2 directions x 3 corner assignments): leading order kappa^0 in all 30; counts {0: 30}
+PASS: C2b antisymmetrised on-shell elements: leading order kappa^0 or kappa^2 only, never an odd order (counts of the leading order {2: 23, 0: 7}); no odd order up to kappa^5 appears in any sample
+# C note: the plane waves are not scattering states and the spinors are the leading-order band spinors; these are statements about the local operator [H2,J], not about the net change of <J> in a collision (E below).
+# --- D: (c) three records
+PASS: D1 cluster factorisation: an adjacent pair plus a distant third record: [H3,J3] equals the pair-only [H2,J2] (spectator inert), and is nonzero
+PASS: D2 connected three-body part C = [H3,J3] - sum over pairs of [H_pair,J_pair] (each pair excluded alone) is nonzero on 288 of 448 three-record cluster basis states, direction 0
+PASS: D3 the connected part vanishes on chains with spacing >= 2 (records 0, g, 2g on a line): it needs one record within a hop of both others
+# --- E: NUMERIC (float64) exact fiber operators on a torus
+PASS: E1 NUMERIC: fiber generator on the 8x8 torus has the free pair spectrum +-eps(k1)+-eps(K-k1) (max deviation 9.8e-15)
+PASS: E2 NUMERIC: the fiber free current equals the scalar two-step momentum (1/2)(sin 2k1_a + sin 2k2_a), hermitian, and commutes with the free fiber generator
+PASS: E3 NUMERIC control: without exclusion <J> is constant in time over the whole flight (spread 4.7e-16)
+# E: N=96 K=[0.6545 0.3927] antisym residual 1.3e-16 norm 1.00000000 peak t=28.5 before [0.0,12.5] after [46.0,56.0] W=10.0 mean<J>: before -0.136460 after -0.128922 change +0.007538
+PASS: E4 NUMERIC: N=96 initial state is exactly antisymmetric under the fiber exchange and the evolution is unitary
+# E: N=128 K=[0.6872 0.3927] antisym residual 1.2e-16 norm 1.00000000 peak t=38.5 before [0.0,22.5] after [57.0,76.0] W=19.0 mean<J>: before -0.142146 after -0.135171 change +0.006975
+PASS: E4 NUMERIC: N=128 initial state is exactly antisymmetric under the fiber exchange and the evolution is unitary
+PASS: E5 NUMERIC: a single collision changes the window-averaged <J_x> by +0.00754 (N=96) and +0.00698 (N=128), far above the numerical error (control spread < 1e-9)
+PASS: E6 NUMERIC: lemma L1 gives |G_K| >= W |change|/4 for any bounded G (windows of length W): 0.0188 at W=10.0, 0.0331 at W=19.0; the bound grows nearly linearly with W while the change shrinks by under 10 percent
+# E: kappa=0.8 N=40 K=[0.7854 0.4712] change of <J_x> across one collision -1.8240e-03 (near-origin weight before 5.5e-02, after 8.3e-02)
+# E: kappa=0.4 N=80 K=[0.3927 0.2356] change of <J_x> across one collision -1.2297e-04 (near-origin weight before 8.2e-04, after 3.0e-03)
+# E: kappa=0.2 N=160 K=[0.1963 0.1178] change of <J_x> across one collision -1.5551e-05 (near-origin weight before 5.2e-05, after 5.5e-04)
+PASS: E7 NUMERIC: integrated change of <J_x> per collision scales as kappa^2.98 between kappa=0.4 and 0.2 (kappa^3.89 between 0.8 and 0.4): cubic at small offsets, consistent with landed 2026-09-26 T1; the local operator [H2,J] itself is order kappa^0 (C1, C2)
+TOTAL: PASS=35 FAIL=0
+HIT: (a) CONDITIONAL on named scattering imports (Birman-Kuroda wave operators per fiber, stationary on-shell form of S, Riemann-Lebesgue): no bounded, in particular no local translation-invariant, placement change G makes J + i[H2,G] conserved for two antisymmetric excluded records on Z^2; steps: lemma L1 (any bounded G leaves the t -> +-infinity limits of <J> unchanged), then the landed rank-one T-matrix forces [S,g]=0 to fail. (b) exact, scoped to free plane-wave pair states with leading-order band spinors on the lattice walk: the local operator [H2,J] has matrix elements of order kappa^0 at the corners (not kappa^3); the cubic order belongs to the net change per collision (numerical slope 2.98, float64). (c) three records add an exact connected three-body part of [H3,J3], no new obstruction to G.
+SUMMARY: for two excluded antisymmetric records on Z^2 the energy current J=i[H2,D2] is not conserved, [H2,J] is an order-kappa^0 local operator whose net effect over a collision is cubic in the offsets; any bounded placement change G leaves the in/out limits of <J> unchanged (lemma L1), the rank-one on-shell T-matrix then forces [S,g]=0 to fail, so no bounded (hence no local translation-invariant) G keeps the books, given named scattering imports; three records add only a connected three-body part. [runtime 31s]

@@ -1,0 +1,37 @@
+{
+  "task": "J:derive:review-20260929-ens-parity-capacity:a1",
+  "source_branch": "physics-loop/ens-cavity-holdout-20260927",
+  "source_head": "e3494f236b797578b7b2b9498602cf0b8e3f7a57",
+  "source_head_verified": true,
+  "source_objects": [
+    {
+      "path": "scripts/ens_physical_parity_2026_09_27.py",
+      "sha256": "253c90a25efb3270a9101bf01a590f3c5297a6de764b5641a57d77d03c56c443",
+      "verified": true,
+      "note": "hash computed by this worker from git show e3494f23:path; SOURCE_MAP.json lists the branch/head only for branch_only_ens and carries no per-path hash for these two objects, so there is nothing in the map to compare against"
+    },
+    {
+      "path": "docs/ENS_CAVITY_CALIBRATED_HOLDOUT_OPEN_GATE_NOTE_2026-09-27.md",
+      "sha256": "f48540b024fab42672e0076316d2a3fbf79ddeafa55f090dea7bb385523a8b08",
+      "verified": true,
+      "note": "same remark as above"
+    }
+  ],
+  "other_inputs_read": {
+    "current_main_commit": "a77a3449c91a753b06ce2a63876cd460b62cb4cf",
+    "main_axiom_memo": "docs/MINIMAL_AXIOMS_2026-06-29.md (read in full)",
+    "main_primitive_registry_check": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md (read in full)",
+    "main_ens_modules": ["scripts/ens_andreev_resonator_model_2026_09_27.py", "scripts/ens_direct_charge_check_2026_09_27.py", "scripts/ens_cavity_holdout_2026_09_27.py", "docs/ENS_CAVITY_CALIBRATED_HOLDOUT_OPEN_GATE_NOTE_2026-09-27.md"],
+    "branch_data_read": ["ramsey_figure7_bins.json", "ramsey_author_profiles.json", "ramsey_provenance.json", "Experiment.csv (sha256 0b6abf45a5b574f2ecc492b19560d44ff1638894a0579504dc850c1cb628a01b, matches the note)"]
+  },
+  "first_unresolved_step": "ATTEMPT.md step 12: whether the digitized Figure-7 doublet separation measures the full 0->6 parity splitting of the SAME device state as the Willsch-table calibration. Nothing in the repository or in this check fixes the cross-acquisition drift of the three cavity lines, and the capacity margin over the 2.32 MHz separation is erased by a single-line shift of about 14 kHz (fres2). No experimental success is accepted.",
+  "remaining_obligations": [
+    "A rigorous interval (outward-rounded) bound for the offset envelope is not supplied; the odd-harmonic certificate in step 7 is a floating-point finite check with margin about 2e5, not an interval proof.",
+    "Independent determination of the three cavity-line positions to better than a few kHz in the Ramsey acquisition (or a joint refit that includes the Ramsey cooldown) is needed before the capacity comparison can discriminate anything beyond the cosine shape.",
+    "Raw Ramsey records with an uncertainty model (not plot bins) are needed; the 0.33 MHz plot bin is a geometric quantity, not an error bar.",
+    "Offset-charge distribution / parity-switching dynamics: the unknown offset is not constrained by this comparison (ATTEMPT.md step 14).",
+    "Physical identification of the Andreev shape and the G(n-q) coupling convention remain imports (not derived from the four axioms or the approved primitives)."
+  ],
+  "check_py_result": "TOTAL: PASS=41 FAIL=0, runtime 167 s (run.log)",
+  "provenance": "same-family (Claude Sonnet 5.5) worker, unrefereed; no repository edits; no claim.py or cross-model confirmation run by this worker"
+}

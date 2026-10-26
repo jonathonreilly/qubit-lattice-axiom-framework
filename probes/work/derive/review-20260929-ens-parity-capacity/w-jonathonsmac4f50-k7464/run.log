@@ -1,0 +1,46 @@
+PASS source hash ens_physical_parity_2026_09_27.py
+PASS source hash ENS_CAVITY_CALIBRATED_HOLDOUT_OPEN_GATE_NOTE_2026-09-27.md
+PASS 1 displacement identity H_phys(q) -> H_old((1-delta)q)+4EC q^2 delta(1-delta) (symbolic, delta=G^2/4EC Omega) | residual=0
+PASS 1b [a,a^dag]=[b,b^dag] under the c-number shift
+PASS 2 own calibration from declared start tau=.2 reproduces the note parameters (rel diff < 1e-6), residual < 1e-9 GHz | max rel diff=4.75e-08 residual=1.6e-13 GHz params=[ 0.1841990752 21.8297722455  7.7389128563  0.1885887856  0.1546489647] (2.3s)
+PASS 2b own cosine baseline (4 inputs, tau=0) reproduces the note parameters (rel < 1e-6) | rel=8.45e-12
+PASS 2c quadratic stability 4EC > G^2/Omega and delta<1 | delta=0.00623741
+PASS 2d potential: cos(2phi), cos(3phi) coefficients in units of EJ1 = +.0104917249, -.00022017684 (note) | got 0.0104917244, -0.00022018
+PASS 2e identity w_tau = 4(1-sqrt(1-tau s))/tau = affine image of raw -sqrt(1-tau s)
+PASS 3a old (G n) convention: f06(ng+(1-delta)) = f06(ng) to < 3 Hz, but period 1 fails by kHz-scale | period (1-delta): [ 0.  0. -0.] Hz ; period 1: [ 1344. 50876. 62729.] Hz
+PASS 3b K-scaling of (direct physical) - (displaced old) in the dense charge(x)Fock space: error falls below 1e-3 Hz by K=12 and decreases monotonically | max |diff| Hz for K=3,4,5,6,8,10,12: 4.07e+05, 1.79e+04, 4.89e+02, 7.81e+00, 6.82e-04, 4.55e-04, 3.98e-04
+PASS 3c dense direct physical (N=20,K=12, 492 states, no subspace reduction) vs reduced physical vs displaced: all 13 gaps agree to < 1 Hz | dense-vs-reduced 0.001 Hz, dense-vs-displaced 0.001 Hz
+PASS 4a dominant-overlap labels = adiabatic-continuation labels (coupling ramp) at q=0,1/4,1/2; all 14 states | min dominant overlap=0.91250
+PASS 4b following the 14 labelled states around q in [0,1] (129 steps): tracked state = dominant-overlap state at every step, f06(1)=f06(0) | label jumps=0 min dominant weight=0.89077 period closure=0.000 Hz
+PASS 5a f06(q) even in q (sine coefficients < 1e-6 MHz) | max|Im|=5.40e-11 MHz
+PASS 5b parity splitting uses ONLY odd harmonics: s(q)=2|sum_{k odd} a_k cos 2 pi k q| reproduces 64 pair differences to < 1e-6 MHz | max diff 4.25e-10 MHz
+PASS 5c s(1/4)=0 exactly for every odd harmonic (cos(k pi/2)=0) and numerically | s(1/4)=3.02e-10 MHz
+PASS 5d certificate |a_1| > sum_{k odd>=3} k^2 |a_k| (then s is strictly monotone on [0,1/4], so max over offset = s(0) and the 4-interval search is redundant) | |a_1|=1.732292 MHz, sum k^2|a_k|(k odd 3..63)=7.730e-06 MHz, ratio=224086.2 (a_3 level is at eigensolver noise)
+PASS 5e envelope maximum = s(0) = 2|sum odd a_k| = 3.464585 MHz equals the note's 3.464585 (|diff| < 2e-4 MHz) | diff -2.70e-07 MHz
+PASS 5f even harmonics move the doublet centre: pair centre = a_0 + a_2 cos 4 pi q + ..., range 2|a_2| = 1.72e-03 MHz vs the note's centre range 0.00172418 MHz (|diff| < 5e-5)
+PASS 5g cosine baseline: same odd-harmonic certificate (ratio>10) and max s = 0.544477 MHz = note 0.544477 (|diff|<2e-4) | ratio 641736.3
+PASS 6a legacy-pair minus physical-pair endpoint splitting: Andreev 337 Hz (note ~337), cosine 53 Hz (note ~53)
+PASS 7a own 32 Andreev rounding corners: endpoint capacity range [2.586015, 4.596981] MHz vs note [2.586015, 4.596982] (|diff|<2e-3) | 46s
+PASS 7b own 16 cosine rounding corners: [0.540476, 0.548504] MHz vs note [0.540476, 0.548504] (|diff|<2e-3)
+PASS 7c ln(capacity) is a monotone function of the predicted f06 across the 32 Andreev corners (Spearman -0.9982) and across Andreev+cosine corners together (-0.9995): capacity tracks the level-6 energy relative to the barrier, so it is not independent of the f06 residual
+PASS 7i (suggested, extrapolation outside the fitted family) slope d ln(cap)/d f06 = -0.0197 per MHz (R^2=0.993 on the 32 corners); extrapolated to the measured f06=29.1888 GHz the capacity would be ~2.63 MHz (nominal Andreev f06 is 13.9 MHz below it)
+PASS 7d capacity sensitivity d ln(cap)/d(kHz): f01 +0.0003, f02 -0.0001, fres1 -0.0133, fres2 +0.0280, fres3 -0.0147  (note: fres3 +-1 kHz moves f06/6 by .123 MHz)
+PASS 7e common-mode cavity shift (fres1,2,3 all +1 kHz, i.e. a bare-cavity shift) leaves the capacity unchanged: sum of the three sensitivities |-5.7e-06| << each | sum=-5.75e-06 vs fres2 0.0280
+PASS 7f single calibration-line shifts that bring the capacity down to the digitized separation (2.322 MHz) / bin upper edge (2.654 MHz): sep: fres1 +29.5 kHz; sep: fres2 -14.0 kHz; sep: fres3 +26.5 kHz; binhi: fres1 +19.8 kHz; binhi: fres2 -9.4 kHz; binhi: fres3 +17.8 kHz | compare printed half-unit 5 kHz
+PASS 7g the capacity is set by a 500 kHz second difference of the three cavity lines (fres1-2 fres2+fres3); sep-threshold in fres2 is 5.6% of it per line | D2=500 kHz
+PASS 7h physical-vs-legacy charge convention changes the capacity by 9.7e-05 relative = a fres2 shift of 0.0035 kHz, versus the 5 kHz printed half-unit: convention is not load-bearing for the envelope
+PASS 8a digitized bin-centre separation at 40 and 120 min = 2.3219 MHz (both rows give the same two bins); geometric range +-bin height = [1.9902, 2.6536]
+PASS 8b at 120 min the high-window winner (11.11 MHz, 0.467) beats 10.78 MHz (0.439) by only 0.028 contrast; choosing the runner-up gives separation 1.991 MHz (one bin lower, still inside the stated range)
+PASS 8c opposite-sign detunings would need splitting = sum of the two |detunings| = 19.900 MHz (reverse triangle inequality gives |d_a-d_b| = |d_a|+|d_b|) > every computed capacity 3.465 / 0.544 (and corner max 4.597): in this model same sign is forced
+PASS 8d author pixel peaks at all six times: separations {20: 1.643, 40: 2.373, 60: 1.643, 80: 2.008, 100: 1.643, 120: 2.281}; the two slices selected after the fact ([40, 120]) are the two largest
+PASS 8e cosine exclusion is NOT selection-dependent: the smallest separation over all six times minus a bin height (1.311 MHz) exceeds the cosine capacity 0.544 and its corner max 0.549
+PASS 8f nominal assertion reproduced: cosine capacity 0.544 < bin lower edge 1.990; Andreev capacity 3.465 > bin upper edge 2.654
+PASS 8g FINDING: the lowest Andreev rounding corner (2.586 MHz) lies BELOW the bin upper edge 2.654 (and the author-profile edge 2.705); at that corner the capacity covers only separations <= 2.586
+PASS 9a s(q) strictly decreasing on [0,1/4] (20001-point Fourier evaluation)
+PASS 9b offsets compatible with the digitized range at nominal parameters: q in [0.1111, 0.1526] (centre 0.1331) or its images q->-q, q+1/2; width 0.041 of a 2e period; single-cos approximation agrees to < 2e-4
+PASS 9c over the 32 rounding corners the centre-compatible offset ranges over [0.0726, 0.1657]: the (unknown) offset is not constrained by this comparison
+TOTAL: PASS=41 FAIL=0
+runtime 166.7 s
+HIT: scoped new result (same-family, unrefereed). (i) The offset envelope is an exact odd-harmonic Fourier structure: s(q)=2|sum_odd a_k cos 2 pi k q|, zero at q=1/4 for every model of this form, strictly decreasing on [0,1/4] with certificate ratio 2e+05, so the capacity is the q=0 endpoint (3.464585 MHz) and the four-interval extremum search is redundant. (ii) The capacity is exponentially conditioned on a 500 kHz second difference of the cavity lines: a single-line shift of 14.0 kHz (fres2) / 26.5 kHz (fres3) / 29.5 kHz (fres1) takes it to the digitized 2.32 MHz separation, versus 5 kHz printed half-units, and the lowest printed-rounding corner (2.586 MHz) already sits below the bin upper edge 2.654 MHz. (iii) The physical-offset gauge correction changes the capacity by 9.7e-05 relative (337 Hz), i.e. a 0.0035 kHz cavity-line shift, orders below those.
+SUMMARY: independent recomputation confirms the note's capacity numbers (cos 0.544, Andreev 3.465 MHz) and shows they equal the q=0 endpoint splitting with only odd harmonics in q, while the capacity is set by a ~500 kHz cavity second difference so ~14 kHz of cross-acquisition drift in one cavity line erases the margin over the digitized 2.32 MHz separation.
+exit 0

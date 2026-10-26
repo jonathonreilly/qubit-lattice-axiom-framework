@@ -1,0 +1,20 @@
+{
+  "source_doi": "10.1103/PhysRevApplied.11.014030",
+  "source_pdf_sha256": "49fd0df0facd4579af9c29d2ac0b91cf52badadb930134053d5d63c89c084382",
+  "page": 9,
+  "figure": 7,
+  "times_minutes": [
+    40,
+    120
+  ],
+  "scope": "Digitized source-bin contrasts and coordinates from published figure; not raw Ramsey records, experimental confidence intervals or a maximum-over-time sample. Reproduction consumes these declared observational inputs; it does not redigitize the copyrighted PDF.",
+  "same_device_link": "Willsch2024 text2054\u20132061 identifies ENS as same device as Lescanne2019; same acquisition/cooldown/systematics not established.",
+  "axis_ticks_pdf_points": {
+    "x0min": 79.097,
+    "x120min": 266.505,
+    "y2_5MHz": 645.716,
+    "y20MHz": 737.757
+  },
+  "digitized_input_sha256": "ace391e9e2a428783938c49fd478f8ee8bdec302f57577d69b49d59d0ea82237",
+  "selection_chronology": "Six author times20,40,60,80,100,120min plusneighboring-timecontrols were declared before extraction;40/120 were selected afterward for independent digitization and committed comparison. Allauthorprofiles retained; no blindselection claim."
+}

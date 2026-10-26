@@ -1,0 +1,92 @@
+{
+ "source_branch": "physics-loop/admissibility-induced-law-block161-links-on-the-bonds-make-turning-the-coin-a-symmetry-20260926",
+ "source_head": "e5195cdf6bc1e5e50a7fe7cd4a9ed1ba97b2d21c",
+ "additional_source_branches": {
+  "block159": {
+   "branch": "physics-loop/admissibility-induced-law-block159-static-bending-does-not-single-out-the-member-20260926",
+   "head": "9b6644140f49b645df3a601104baf2b426a31934"
+  },
+  "block158": {
+   "branch": "physics-loop/admissibility-induced-law-block158-the-walker-on-the-members-lengths-needs-the-comparators-inversion-odd-curl-20260926",
+   "head": "3e0f193a56e9782b1d7607973ce13642656eb69f"
+  },
+  "block157": {
+   "branch": "physics-loop/admissibility-induced-law-block157-the-members-cubic-completion-is-the-comparators-at-leading-order-20260926",
+   "head": "b8b53224b6f9b8f855ecc97fca0d9f2b1e41734c"
+  }
+ },
+ "origin_main_head_at_read": "3e1a2dd2531590dabf85bee8db56175ba9b96e90",
+ "source_objects": [
+  {
+   "block": "161",
+   "path": "docs/ADMISSIBILITY_RULE_LINKS_ON_THE_BONDS_MAKE_TURNING_THE_COIN_A_SYMMETRY_FLAT_LINKS_LEAVE_ONLY_THE_LENGTHS_AND_THE_LENGTHS_CONNECTION_ADDS_THE_INVERSION_ODD_CURL_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+   "sha256": "bd42d75a463648b573ee1074928d11346aeeebf3ac362d56734211a1941e3484",
+   "git_blob": "15f995e38a582a4a714361d4271c2362755bbcf5",
+   "verified": true
+  },
+  {
+   "block": "161",
+   "path": "scripts/admissibility_rule_links_on_the_bonds_make_turning_the_coin_a_symmetry_2026_09_26.py",
+   "sha256": "6443724e9f293836b9a59f1d821f12ca7baf67417e559e68f85c9c0fd3d550e6",
+   "git_blob": "2c0a2c9f422678318c97250a3d0055aa64af04ff",
+   "verified": true
+  },
+  {
+   "block": "159",
+   "path": "docs/ADMISSIBILITY_RULE_STATIC_BENDING_DOES_NOT_SINGLE_OUT_THE_MEMBER_A_PLANE_OF_JETS_BENDS_LIKE_THE_COMPARATOR_AND_BILINEAR_MEMBERS_MATCH_ITS_INDEX_AT_EVERY_ORDER_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+   "sha256": "6d5539821b7e3bb2bd7b7b4cb030a8f1c2f776a1c4449eec6289260c92baafe9",
+   "git_blob": "4d22273f985b36be02e623ff7cf5ec6728719eb0",
+   "verified": true
+  },
+  {
+   "block": "159",
+   "path": "scripts/admissibility_rule_static_bending_does_not_single_out_the_member_2026_09_26.py",
+   "sha256": "f6cce73748bbc2db4b45bdb02bcb5cb7c9eebf56adc26770436d374a6aee9365",
+   "git_blob": "975cc666b1d2eead5cf9a050e630a1be1a2d1633",
+   "verified": true
+  },
+  {
+   "block": "158",
+   "path": "docs/ADMISSIBILITY_RULE_THE_WALKER_ON_THE_MEMBERS_LENGTHS_KEEPS_RELABELLINGS_AT_FIRST_ORDER_AND_AT_THE_NEXT_NEEDS_EXACTLY_ONE_TERM_THE_COMPARATORS_INVERSION_ODD_CURL_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+   "sha256": "f3e83af325e4afe10d95dc1873efb17696ec2c07b1b45b9c6512c0477b490202",
+   "git_blob": "c5d872213f0c23056175fdeb6d615ecae5ad8f45",
+   "verified": true
+  },
+  {
+   "block": "158",
+   "path": "scripts/admissibility_rule_the_walker_on_the_members_lengths_needs_the_comparators_inversion_odd_curl_at_second_order_2026_09_26.py",
+   "sha256": "fc49eeda029c2990f631f2c76bc6fe45f0d8d0b033c5a9560b1d8ba34cea67bc",
+   "git_blob": "f92380b0dcba4d027bcb854a6fe72c0ea0ac3131",
+   "verified": true
+  },
+  {
+   "block": "157",
+   "path": "docs/ADMISSIBILITY_RULE_AT_LEADING_ORDER_THE_MEMBERS_CUBIC_COMPLETION_IS_UNIQUE_AND_THE_COMPARATORS_WITH_ALL_FIELDS_EVEN_WITH_ONLY_UNIFORM_RELABELLINGS_IN_TIME_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+   "sha256": "c4a5f97f237027f3a597120bfd1e4c485d100f471d736f75182212c36836d23b",
+   "git_blob": "f42a4d908af0f48bccb81822e70882061a626395",
+   "verified": true
+  },
+  {
+   "block": "157",
+   "path": "scripts/admissibility_rule_at_leading_order_the_members_cubic_completion_is_unique_and_the_comparators_with_all_fields_even_with_only_uniform_relabellings_in_time_2026_09_26.py",
+   "sha256": "3b0c6c5c7fbd43fe4ed7478545c78e30157c576b1a13153b3241cd9a7e0bc1e8",
+   "git_blob": "f5f33b82779ee162551a94a6a2076ae0b7b9744b",
+   "verified": true
+  },
+  {
+   "block": "main",
+   "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+   "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+   "git_blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+   "verified": true
+  },
+  {
+   "block": "main",
+   "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+   "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+   "git_blob": "0075998454899efb1b83e71daea5bc60d3499d49",
+   "verified": true
+  }
+ ],
+ "first_unresolved_step": "ASSUMED: block 157 T1 (the class space: consistent cubic vertices = redefinitions + one class, no strictly invariant class) is unrefereed and not re-run; and the dictionary premise of 159 T4(c) (the member's lengths and rates transform as a metric conformal factor and a lapse at nonlinear order) is a supplied premise, not a consequence of consistency"
+}

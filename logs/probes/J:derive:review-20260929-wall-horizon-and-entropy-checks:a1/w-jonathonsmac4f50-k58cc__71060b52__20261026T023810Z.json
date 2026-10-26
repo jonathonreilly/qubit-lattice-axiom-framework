@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20260929-wall-horizon-and-entropy-checks:a1",
+ "type": "judgment",
+ "lane": "review-science-20260929",
+ "worker": "w-jonathonsmac4f50-k58cc",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20260929-wall-horizon-and-entropy-checks/w-jonathonsmac4f50-k58cc/check.py",
+ "seed": 82290,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "71060b52",
+ "started_utc": "20261026T023810Z",
+ "elapsed_s": 17.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "exact lattice Bisognano-Wichmann on the half-line (C = expit(pi J), J with hops j) follows from commutation with J plus a Meixner-Pollaczek generating-function integral, is unique among linear-growth nearest-neighbour Hamiltonians, and fails exactly for the sqrt(j(j+1)) clocked profile and for finite wedges N=4..12; runtime 17s"
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 29/29 PASS (~17 s); scoped to wall T75 test A (half-filled 1D hopping chain, supplied vacuum): on the half-line the vacuum is exactly the Fermi state expit(-pi H) with hops j (proved via commutation with J and a Meixner-Pollaczek generating-function integral), unique among nearest-neighbour Hamiltonians of at-most-linear hop growth; T75's sqrt(j(j+1)) profile fails exactly, finite wedges N=4..12 fail at 60 digits (finite check); entropy numbers floating point; probably known in the free-fermion entanglement-Hamiltonian literature (not verified); nothing derives the rate from record dynamics (step 9).",
+ "what": "Choose one actual clocked-walker spectrum or formation-count recursion. Check boundary conditions, reachable configurations, geometric area normalization and the distinction between process entropy, classical mutual information and quantum entanglement. Cutoff-dependent area coefficients do not exclude all infrared emergent metrics; an approximate kappa/2pi fit is not exact Hawking radiation. Cross-link the frozen-boundary task rather than duplicate it. Owner-requested research transfer after landing review. The source is an unlanded hypothesis, not authority: fetch the named author branch, verify the frozen Git SHA and exact path/hash from probes/work/review-science-20260929/SOURCE_MAP.json. Fetch current origin/main and prefer its corrected bounded sources; read the actual axiom memo and primitive grants before premise judgments. Check related tasks, completed attempts, referee reports and active claims before choosing ONE distinct obligation. Read the complete argument, actual inputs and paired code for that obligation. Known review corrections are background, not a new HIT. Deliver numbered PROVED/CHECKED/ASSUMED steps in ATTEMPT.md, a self-contained check.py with disjoint machinery, and RECOVERY_STATUS.json with hashes, first unresolved step and remaining obligations. Prove finite claims exactly where possible; failed search is not a no-go and negative claims require N1-N8 before promotion. Commit the checker before run_probe.py; print SUMMARY with the actual result and HIT only for a demonstrated new result or defect. Finish through claim.py and ordinary cross-model confirmation. Use the existing maximum-thinking J campaign; do not spawn agents, start workers, change budgets, create PRs or edit scientific/audit authority.",
+ "stdout_sha256": "8fb74b0af3326c107819d7fd9853a475b56ca89f7f0371c2b254a252fa17e825",
+ "stdout_tail": "the two positive levels have eps/tau = -1.55104457435 and -1.59427173333 (different) \nPASS 5a occupation patterns of the N-site wedge form a probability distribution (determinantal formula), N=4..14\nPASS 5b Shannon (classical occupation) entropy of the wedge grows linearly in N (slope per site 0.554..0.568), quantum entanglement entropy S_ent increments 0.026..0.068 per site (decreasing, log-like)\nPASS 5c classical mutual information of occupations I_cl <= quantum mutual information I_Q (data processing), N=4..14: last row I_cl=0.2707 I_Q=1.1430\nTOTAL: PASS=29 FAIL=0\nHIT: scoped result (1D, half-filled chain, supplied homogeneous vacuum). On the half-line the vacuum is EXACTLY the Fermi-Gibbs state expit(-pi H) of H=-sum_j j(c_j^+ c_{j+1}+h.c.) (beta*a=pi, T=kappa/2pi with kappa=2a), and this is the only nearest-neighbour Hamiltonian of at-most-linear hop growth (up to scale and constant) with that property; the T75 test-A profile a*sqrt(j(j+1)) fails exactly (entry [S,H]_13 = sqrt6-sqrt12/3-sqrt2 != 0), as does every finite wedge N=4..12 checked, so any kappa/2pi fit for those is approximate by construction and the exact target is now known.\nSUMMARY: exact lattice Bisognano-Wichmann on the half-line (C = expit(pi J), J with hops j) follows from commutation with J plus a Meixner-Pollaczek generating-function integral, is unique among linear-growth nearest-neighbour Hamiltonians, and fails exactly for the sqrt(j(j+1)) clocked profile and for finite wedges N=4..12; runtime 17s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k58cc",
+  "at_utc": "20261026T023833Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Scoped exact result for a supplied chain; likely known in the literature. Same-family, unrefereed.",
+  "by": "w-jonathonsmac4f50-k58cc",
+  "at_utc": "20261026T023833Z"
+ }
+}

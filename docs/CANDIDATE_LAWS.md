@@ -335,6 +335,12 @@ Bosonized qubit sites (bosonized-sites, 2026-10-26, rethink r3; campaign files):
   - On-site: the "two 16s" are exactly the 4-mode register's two Weyl spin components, and the Fock space stays at 32 modes. Sparse Lanczos on the N = 4 sector (35,960 states) gives a unique Lorentz-scalar Spin(10)-singlet ground level. With the cited rep theory: -144g, gap 4g.
   - The D4 root-line reduction is exactly the Cayley proxy chain (gate 2e-13), so the 3450 chain is not the relevant proxy. Cayley at g = 0.25 gives gaps 2.719/2.702/2.702 at L = 4/6/8 (stays open); weak coupling is inconclusive.
   - OPEN: the 3+1D far wall itself, and the cross-handedness Dirac variant.
+  - **2+1D wall patches (d4-far-wall-2plus1, PR #10109, 11/11, own re-run identical): the gap needs STRONG coupling.**
+    - The wall slice is a cubic lattice of three orthogonal D4 roots. Free patches are gapless in the large-size limit (8 cones).
+    - At g = 0.25 the gap closes: 0.886 (2x2) -> 0.290 (2x3), with a sharp ground-state change near g ~ 0.244. The second direction moves the crossover from g ~ 0.11 in the chain to ~ 0.25.
+    - At g >= 0.35 it survives: 2.557 -> 3.182 at 0.35; 5.639 -> 5.599 at 0.5. Unique symmetric ground state.
+    - Two width-2 patches only, so this is a trend. Decider: 2x4 on the Mac mini (fits 6 GB, hours).
+    - Reading: the mirror gaps in a strong-coupling symmetric phase. The far-wall coupling must sit above the crossover. That is a phase condition, not a fitted number.
 - **Still to rebuild on D4:**
   - the copy sign's role in carrying the 16;
   - slab chirality and the 4D index;

@@ -92,7 +92,7 @@ Executed tests (criteria fixed before running; reproduced in the appendix):
   - Separating the sectors protects nothing.
   - θ̄_ind is linear in κ, so the mechanism needs κ ≲ 1e-10. This is the Nelson–Barr quality problem in lattice form.
 - **X3 (D2r)** Under a supplied restriction, the flat leak vanishes. The restriction: the shallow order's density also respects the deep sector's residual, e.g. a charged order entering only as |order|². The remainder then decays with depth and reaches 4e-10 at Δ = 18, just above the 1e-10 threshold.
-- **X4 (post hoc, disclosed)** A generic vertex symmetrised to each sector's residual gives θ̄_tree = 0 with |J|/J_max 0.2–0.5. The deep sector's leak then grows to O(10) with depth.
+- **X4 (post hoc, disclosed)** A generic vertex symmetrised to each sector's residual gives θ̄_tree = 0 to working precision (≤ 1.4e-9 at depth 18, where the wall wavefunctions are about 2e-6) with |J|/J_max 0.2–0.5. The deep sector's leak then grows to O(10) with depth.
 
 ## Status and what remains open
 

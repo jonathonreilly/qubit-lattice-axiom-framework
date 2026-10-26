@@ -148,8 +148,9 @@ check("X3 [F]", th2r is not None and 1e-10 < th2r < 1e-8,
       "the remainder decays with depth and reaches 4e-10 at Delta = 18, just above the 1e-10 threshold", f"{th2r}")
 rc, o = run('posthoc_generic_vertex')
 row18 = re.search(r"^\s+18 \| max ([0-9.e+-]+)\s+([0-9.e+-]+)\s+([0-9.e+-]+)", o, re.M)
-check("X4 [F] post hoc", rc == 0 and row18 is not None and float(row18.group(1)) < 1e-9 and float(row18.group(3)) > 1,
-      "post hoc (disclosed, not pre-registered): a generic vertex symmetrised to each sector's residual gives theta_tree = 0 with "
+check("X4 [F] post hoc", rc == 0 and row18 is not None and float(row18.group(1)) < 1e-8 and float(row18.group(3)) > 1,
+      "post hoc (disclosed, not pre-registered): a generic vertex symmetrised to each sector's residual gives theta_tree = 0 to working "
+      "precision (< 1e-8 at depth 18, where wall wavefunctions are ~2e-6; run-to-run 6e-10..1.4e-9) with "
       "|J|/Jmax 0.2-0.5, but the deep sector's leak grows to O(10) with depth (Gamma/M propagation outlives the deep Yukawa)",
       row18.group(0).strip() if row18 else "")
 

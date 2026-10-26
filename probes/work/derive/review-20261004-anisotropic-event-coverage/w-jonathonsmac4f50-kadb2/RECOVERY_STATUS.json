@@ -1,0 +1,56 @@
+{
+ "source_branch": "main",
+ "source_head": "2868a0c453e667d1267f0e1e7403732a11893d78",
+ "source_objects": [
+  {
+   "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_KAPPA_INTERVAL_CERTIFICATES_REACH_THE_EXACT_EVENTS_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+   "sha256": "226924ab0ac234b2e8ddbd496553fc22847bda9d27a1dc7f4bef62e4e2bd23b0",
+   "verified": true
+  },
+  {
+   "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_NODE_COUNT_VERSUS_KAPPA_AT_AN_ANISOTROPIC_COUPLING_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+   "sha256": "18977b930c07d73828080de09cd3d88db171300a0a8f889cf2a6a0a83e102646",
+   "verified": true
+  },
+  {
+   "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_THE_LINE_NODE_FLIP_COUPLING_IS_AN_EXACT_RESULTANT_ROOT_AND_THE_J_TWO_ZONE_CENTRE_HAS_DEGREE_ZERO_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+   "sha256": "9cee03104dbf76123261b645357b1a6fd7f9cc05e303202a8cf844951b46b29c",
+   "verified": true
+  },
+  {
+   "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_THE_TOUCHING_COUNT_IS_CERTIFIED_ON_WHOLE_KAPPA_INTERVALS_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+   "sha256": "ba66236d09f77e0673f8d117f9e4991df1b72a5610adbc374060a09ddfa12f7a",
+   "verified": true
+  },
+  {
+   "path": "scripts/composite_site_network_flux_free_kappa_interval_certificates_extended_to_the_exact_event_gaps_2026_10_01.py",
+   "sha256": "324d0de00c0ab7b3085d17d94cd531669d19a28c7ce193ab32b007ffce0afb23",
+   "verified": true
+  },
+  {
+   "path": "scripts/composite_site_network_flux_free_line_node_flip_coupling_exact_and_j_two_zone_centre_degree_zero_2026_10_01.py",
+   "sha256": "3b9c573150348c274fc4bb45bddedb75438a0eab0eded1a7e269456fefba7506",
+   "verified": true
+  },
+  {
+   "path": "scripts/composite_site_network_flux_free_node_count_versus_kappa_at_an_anisotropic_coupling_2026_10_01.py",
+   "sha256": "b83a6c0cc9bd6c84b1a8c7c52f98b6e66ecd5f0415ac0d2e2a194e5d0e1b09ca",
+   "verified": true
+  },
+  {
+   "path": "scripts/composite_site_network_flux_free_touching_count_certified_on_whole_kappa_intervals_2026_10_01.py",
+   "sha256": "225c60d55dec2cd2d62598d0263b5bf40320ea44efcdb973bcefa0307dff5dbe",
+   "verified": true
+  }
+ ],
+ "verification_note": "each sha256 recomputed from `git show 2868a0c453e667d1267f0e1e7403732a11893d78:<path>`; identical at current main a77a3449c9 (the 2 files compared there)",
+ "check_py_sha256": "c20c62bbdaee609c218f49a3ffb28dbfead9dd47af1ecf1d8a6f53284404c7d3",
+ "result": "PARTIAL: E2 exact point bound to its 1e-9 Krawczyk box (scoped HIT); kappa census extension not obtained",
+ "first_unresolved_step": "ATTEMPT.md step 12: a certified kappa-INTERVAL census on a cell near (not containing) the anisotropic kappa_c needs a moving-frame / first-order-Taylor-in-kappa Krawczyk treatment (naive interval-parameter Krawczyk limits cell width to ~1e-7) plus hierarchical clearing of the torus over the cell; neither was built. Earlier unresolved step in the point-to-box thread: steps 8-9 (E3, E4, E5 exact (a,b) coordinates in the number field not enclosed).",
+ "remaining_work": [
+  "enclose the exact number-field (a,b) coordinates of E3, E4, E5 (isolate the root of the factor h(x) of the y-resultant gcd over Q(sqrt m) with exact rational sign changes, then y0 = -L0/L1) and check inclusion in the 1e-9 boxes (Krawczyk already holds up to 1e-6, so enclosure to 1e-7 suffices)",
+  "build a kappa-parametric Krawczyk with Taylor expansion in kappa along the node path and a rigorous directed-rounding clearing, then run cells between the I1 interval [1/10,3/25] and kappa_c, and just above kappa_c",
+  "a cell containing kappa_c itself is refused by any Krawczyk method; the local pitchfork there needs the weighted normal-form route used for J=1 in the cubic-flip note",
+  "uniqueness of each event over all kappa"
+ ]
+}

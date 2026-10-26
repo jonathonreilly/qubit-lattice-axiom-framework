@@ -1,0 +1,113 @@
+{
+ "task_id": "J:derive:review-20260929-wall-dark-sector-abundance-checks:a1",
+ "source_branch": "claude/toe-walls-20260929",
+ "source_head": "4bd42747e57c4d604f66a63eed2db099ea38af4e",
+ "source_head_present_in_clone": true,
+ "source_objects": [
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/SUMMARY.md",
+   "sha256": "3c0b6cf9ab651069fef19ba4c020483b8c402a5a525047d9a6521b4f132e10d0",
+   "verified": true,
+   "map_sha256": "3c0b6cf9ab651069fef19ba4c020483b8c402a5a525047d9a6521b4f132e10d0"
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/WALLS.md",
+   "sha256": "23a9f40130f5104ca48a15d7a14cfb1400df156faf08e01abdceb653010b7494",
+   "verified": true,
+   "map_sha256": "23a9f40130f5104ca48a15d7a14cfb1400df156faf08e01abdceb653010b7494"
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T54.md",
+   "sha256": "87670324e7182945571699bfbeedaf1522f417f96bf12c78e507bd5915788de6",
+   "verified": true,
+   "map_sha256": "87670324e7182945571699bfbeedaf1522f417f96bf12c78e507bd5915788de6"
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T54.md",
+   "sha256": "dad87f2c6e2b625b5dbed370a944da806cd350594a65210f5331f7e9c0fc98b0",
+   "verified": true,
+   "map_sha256": "dad87f2c6e2b625b5dbed370a944da806cd350594a65210f5331f7e9c0fc98b0"
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T55.md",
+   "sha256": "cebe088c01d7ec26a9cb9efb18b39ad40acc2b636226c01b12c162baa0618e9a",
+   "verified": true,
+   "map_sha256": "cebe088c01d7ec26a9cb9efb18b39ad40acc2b636226c01b12c162baa0618e9a"
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T55.md",
+   "sha256": "33294b0d8dfab6569f638cc50f3a472a30f886faa93ac21e8755e1a294f000a7",
+   "verified": true,
+   "map_sha256": "33294b0d8dfab6569f638cc50f3a472a30f886faa93ac21e8755e1a294f000a7"
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T56.md",
+   "sha256": "c9b6d5299327f45239508afb3aa03b5824ec9ecafd0175f5c41e3dba3750cb69",
+   "verified": true,
+   "map_sha256": "c9b6d5299327f45239508afb3aa03b5824ec9ecafd0175f5c41e3dba3750cb69"
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T56.md",
+   "sha256": "8bb2dc6c640009ab585c67f3c629729efb8be8d26c0050be136cd8e719c256cc",
+   "verified": true,
+   "map_sha256": "8bb2dc6c640009ab585c67f3c629729efb8be8d26c0050be136cd8e719c256cc"
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T57.md",
+   "sha256": "7d74ab58c28c48d3f656f5693f95227635b3d41b9006cc9c593b09fc8e62f3ff",
+   "verified": true,
+   "map_sha256": "7d74ab58c28c48d3f656f5693f95227635b3d41b9006cc9c593b09fc8e62f3ff"
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T57.md",
+   "sha256": "c6947069aec2d6c14605db6bb5b2f1fcb7beaa9dfcc6e4a65b66f352336c2555",
+   "verified": true,
+   "map_sha256": "c6947069aec2d6c14605db6bb5b2f1fcb7beaa9dfcc6e4a65b66f352336c2555"
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T58.md",
+   "sha256": "d1c842ec6f78072f44198672ed322cdc6aab0814489032ebcfeb2dffbab8ae04",
+   "verified": true,
+   "map_sha256": "d1c842ec6f78072f44198672ed322cdc6aab0814489032ebcfeb2dffbab8ae04"
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T58.md",
+   "sha256": "4b3ff3f50d88138e22733886922f0e9d68af1468927e617a5f818593968e3e2e",
+   "verified": true,
+   "map_sha256": "4b3ff3f50d88138e22733886922f0e9d68af1468927e617a5f818593968e3e2e"
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T59.md",
+   "sha256": "084b764a568afcbc2e586085fbe62e5bddf25831db7cd8cd778b936d27a9983b",
+   "verified": true,
+   "map_sha256": "084b764a568afcbc2e586085fbe62e5bddf25831db7cd8cd778b936d27a9983b"
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T59.md",
+   "sha256": "8e58ab1791aad502ac537411f22b095a87aec88050c728fc771d0cb881156a02",
+   "verified": true,
+   "map_sha256": "8e58ab1791aad502ac537411f22b095a87aec88050c728fc771d0cb881156a02"
+  }
+ ],
+ "current_main_read": "a77a3449c91a753b06ce2a63876cd460b62cb4cf",
+ "main_sources_read": [
+  "docs/MINIMAL_AXIOMS_2026-06-29.md",
+  "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+  "docs/DM_ETA_FREEZEOUT_BYPASS_QUANTITATIVE_THEOREM_NOTE_2026-04-25.md (corrigendum 2026-09-30)",
+  "scripts/dm_full_closure_same_surface_thermal_support_common.py",
+  "scripts/dm_sommerfeld_kernel_radial_schrodinger_verification.py",
+  "scripts/dm_dark_candidate_consistency_check.py"
+ ],
+ "check_py_sha256": "4e27221742fac8e7ef04d52b4226be13ad3af778206a69c588f883e7e5a0cbe0",
+ "check_py_result": "TOTAL: PASS=39 FAIL=0",
+ "hit": false,
+ "first_unresolved_step": "ATTEMPT.md step 14: the physical dark carrier. Which gauge representation and conjugacy the dark state has, hence which force (if any) gives it a Coulomb factor and which counting (Dirac or self-conjugate) applies, is not supplied by the axioms or by anything on main; until it is, only the conditional table in step 12 exists.",
+ "remaining_obligations": [
+  "Name the dark state's gauge representation and conjugacy from a retained source (T54/T26); the base x fibre embedding is a bounded unaudited input and has no singlet.",
+  "Replace the constant-g_*, T_chi = T assumptions: g_*(T) near T = m/25 about 158 GeV and kinetic decoupling of the dark state (sets the x cutoff 1e3..inf, a 0.072..0.085 range in Omega h^2).",
+  "Bound-state formation and Sommerfeld resonances/saturation (not modelled; ground-state capture typically lowers Omega further for attractive channels).",
+  "Colour-resolved dark triplet reading (7/27, 2/9 channel weights, T56 route A) not re-derived here.",
+  "Visible-sector side: R_base = 31/9 and S_vis/S_dark with S_dark = 1 are untouched (T57); the visible relic reading is a separate wall.",
+  "Cross-model confirmation and claim.py are supervisor steps; this attempt did not commit or run run_probe.py."
+ ]
+}

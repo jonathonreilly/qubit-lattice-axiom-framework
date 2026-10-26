@@ -1,0 +1,150 @@
+{
+ "task": "J:derive:review-20260929-wall-scale-regulator-checks:a1",
+ "source_branch": "claude/toe-walls-20260929",
+ "source_head": "4bd42747e57c4d604f66a63eed2db099ea38af4e",
+ "source_head_verified": true,
+ "current_main_checked": "origin/main 3e1a2dd2531590dabf85bee8db56175ba9b96e90 (axiom memo and primitive registry identical to the detached checkout a77a3449c9)",
+ "source_objects": [
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/SUMMARY.md",
+   "sha256": "3c0b6cf9ab651069fef19ba4c020483b8c402a5a525047d9a6521b4f132e10d0",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/WALLS.md",
+   "sha256": "23a9f40130f5104ca48a15d7a14cfb1400df156faf08e01abdceb653010b7494",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T14.md",
+   "sha256": "5663455a5aa775fff31f06e7ce2c5860a1e66eec74c3417e363ff7667b29f7c9",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T15.md",
+   "sha256": "c5248a7798c5a9ce715362cdc699408f74c9720c4cb1baf7276b329fbcb692cf",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T24.md",
+   "sha256": "faf671de9e7dc8db03fb319d0db885de450e5cf2b8066e02a18a5de71a4acdfd",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T28.md",
+   "sha256": "de8e61c1bad7a77365984f998be5268f16637d16890a76c43a52f0f14a38c9ac",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T29.md",
+   "sha256": "d542be6b79c4dc69130a9892c278f413bee8383237129601451bf9252ce7a6ef",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T30.md",
+   "sha256": "3a9421d7302c45d4400ad906e310140270548be12903dd6a7f6b5f37ffaa234c",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T31.md",
+   "sha256": "c3aceace5625a93d6c7115efcd9a1ddfd0878b54ccd9bbeb7dc6d6be45655d27",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T32.md",
+   "sha256": "630f4207c1b857d0b342d8e957c395788ec6178d564fe3b6ad71b2f8035a75f3",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T33.md",
+   "sha256": "f3487e394223cb2d788fc720b9aff2543d151fd64d8150bc0476a212bdb3797b",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T34.md",
+   "sha256": "8e6410769acd7abe781336803b1099605c67d334cc806825057e74059d062aeb",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T35.md",
+   "sha256": "b8639db2f81d913a28e662ac94d3b76e3db1064c5645b034edd84091f4c89a6d",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T14.md",
+   "sha256": "9b864b560833547708da361fd698ddc5af1157d0793d9dcc9457e91f6f3891f8",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T15.md",
+   "sha256": "4725127e48555d8e84c88842092b04df7df817ec4758cd15784c73525f27d59f",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T24.md",
+   "sha256": "b3c681f22624a3aa721482655540dd2bdf47ddf25aed10ee7cec676b54f03129",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T28.md",
+   "sha256": "2436aab92a65a5196b310b2cf464287988352519c72b730892af0a6ec44f1653",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T29.md",
+   "sha256": "f3843ffff8c4732ac9b8ab280f9e1ff605f4ec98759686ef923752a563edc874",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T30.md",
+   "sha256": "d056c794070398bbd9a8908b03df33a38a2ed24be687ea2e8744197b0eafaa4b",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T31.md",
+   "sha256": "acd18cf1afa7825e7685017349acedb55a87f9843aa3226e4c6cc28c28fd590a",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T32.md",
+   "sha256": "e589258cc9661f970d003ea45ff11c96b119d889a3e9ab09aa1a7575a041ad18",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T33.md",
+   "sha256": "e7fea62ec4d841bf6773b5b1c0adff20f0ce58e663a013e5510f3caf8afa2ae4",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T34.md",
+   "sha256": "9c1eb91c94b0234260fc99ff00b3beeb3d521083cb28f792219225ddd43b782a",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T35.md",
+   "sha256": "acc57959e231f2fb0f226430cdcaabfb4d03cf1bd2a9272d7c75f94b091e3d04",
+   "verified": true
+  }
+ ],
+ "check_py_sha256": "afa9d832c02ca6fcef73dded5269b7a8a23cc6cf93d16ffc36b5784bd986bbf6",
+ "ensembles": {
+  "ens_f44_m01.json": "28910041415e3bb07aedd6144588cb8d2d283908d357a6b23524c54bf4e95a01",
+  "ens_f44_m05.json": "614454b0c2fa45e3f6334350356e3447b6a63171694f7777148d3a1cfb4f8d4d",
+  "ens_f44_ns2.json": "39a3b19e9ca10b1a4c369e277b28d7951168965318b4144bb88f38eddc590750",
+  "ens_f66_m01.json": "8ff44e245347a38c2a50c37185cfa4fac3ee99e28edce776505a5101a8dcb8e3",
+  "ens_q44.json": "9a97a181733318d4a709a204862c0a3e38b0e56333b68a7f5644a2c0d57d7189",
+  "ens_q44_b61.json": "daf9fdc5f7159b13c4e2c56208ee059c17bbcc2e6f8a0608e42a42b974a972a0",
+  "ens_q44_b62.json": "a3e4a29104ec5d3d69302aabe8fa4527b85150eb12b294aa02e5b040e07446c6",
+  "ens_q66.json": "3b8f4cffa63568b3d4058bcfbb51b652dd2c7970b83b8b060351beee0b6afa1a"
+ },
+ "first_unresolved_step": "Step 16: whether the plaquette shift of a dynamical matter field survives rooting to the physical taste content, the m->0 limit and the infinite-volume limit; and, independently, B4 (the rule that attaches one alpha_LM factor per Grassmann component) which nothing in the axioms or primitives supplies.",
+ "remaining_obligations": [
+  "Decide the physical matter carrier: the axioms contain no fermion; the staggered block is a supplied model.",
+  "Infinite-volume, rooted and light-mass plaquette with matter in the measure (this run: Ns=1, m=0.1, 4^4 and 6^4 only).",
+  "Rule for the vertex power (B4); the determinant degree 16 counts Grassmann components (4 spin x 4 taste) and the 2^4 naive operator has degree 64.",
+  "Reconcile the one-link mean-field shift (HIERARCHY_DELTA0_ATTACHMENT_MEAN_FIELD_FEEDBACK_PROBE) with the Monte Carlo shift; not attempted.",
+  "Matching scheme alpha_LM (lattice) to MSbar at M_Pl for the coupling-chain flow; not attempted."
+ ],
+ "result": "CHECKED partial: own-code HMC, one unrooted staggered field m=0.1: dP(4^4)=+0.0220(5), dP(6^4)=+0.0226(4); readout 212.9 and 212.1 GeV. No HIT.",
+ "claim_py_and_run_probe": "not run by this worker (output directory only); supervisor to commit check.py then run_probe.py"
+}

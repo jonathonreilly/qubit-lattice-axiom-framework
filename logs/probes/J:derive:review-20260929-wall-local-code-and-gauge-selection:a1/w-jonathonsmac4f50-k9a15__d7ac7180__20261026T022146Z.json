@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20260929-wall-local-code-and-gauge-selection:a1",
+ "type": "judgment",
+ "lane": "review-science-20260929",
+ "worker": "w-jonathonsmac4f50-k9a15",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20260929-wall-local-code-and-gauge-selection/w-jonathonsmac4f50-k9a15/check.py",
+ "seed": 81306,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "d7ac7180",
+ "started_utc": "20261026T022146Z",
+ "elapsed_s": 12.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "exact grid-free classification of bounded orbits in the supplied 10-coefficient covariant nearest-neighbour vertex/edge/face/cube flow class (necessity from explicit exact eigen/Jordan subspaces, sufficiency from an exact positive diagonal invariant), cross-checked against the full 3^10 grid at L=2, showing speed is free and that, given boundedness, the magnetic Gauss row is equivalent to a frozen, decoupled cube payload; derivation of boundedness or of the class from the four axioms is not attempted."
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 54/54 PASS (~11 s); in the supplied 10-coefficient covariant nearest-neighbour vertex/edge/face/cube flow class, orbits are bounded for all t exactly when the four on-site rates vanish and each coupling pair is (0,0) or has negative product (equivalently a positive diagonal invariant exists), so the speed is free and the grid claim 'exactly 2, one speed' is a grid artifact (count replicated over 59,048 members at L=2); magnetic/electric Gauss rows equal frozen unread cube/vertex payloads (circularity). Boundedness, payload clause and Gauss rows are supplied premises, not derived from the axioms.",
+ "what": "Independently reconstruct one proposed constrained qubit encoding or balance-law formation mechanism. Separate a supplied code and static conditioned ensemble from a selected irreversible formation law. Recheck any bounded search quantifier and the claimed magnetic Gauss premise. Do not infer that every encoding needs typed sites or extra local content from a particular failed search. Owner-requested research transfer after landing review. The source is an unlanded hypothesis, not authority: fetch the named author branch, verify the frozen Git SHA and exact path/hash from probes/work/review-science-20260929/SOURCE_MAP.json. Fetch current origin/main and prefer its corrected bounded sources; read the actual axiom memo and primitive grants before premise judgments. Check related tasks, completed attempts, referee reports and active claims before choosing ONE distinct obligation. Read the complete argument, actual inputs and paired code for that obligation. Known review corrections are background, not a new HIT. Deliver numbered PROVED/CHECKED/ASSUMED steps in ATTEMPT.md, a self-contained check.py with disjoint machinery, and RECOVERY_STATUS.json with hashes, first unresolved step and remaining obligations. Prove finite claims exactly where possible; failed search is not a no-go and negative claims require N1-N8 before promotion. Commit the checker before run_probe.py; print SUMMARY with the actual result and HIT only for a demonstrated new result or defect. Finish through claim.py and ordinary cross-model confirmation. Use the existing maximum-thinking J campaign; do not spawn agents, start workers, change budgets, create PRs or edit scientific/audit authority.",
+ "stdout_sha256": "1a4aabf3fb068cc640146f7bdacab58f2e0b398f14c17dbca2923cdf7d095ebd",
+ "stdout_tail": "carries the Maxwell frequencies sqrt(spec C^T C) AND an independent family sqrt(3)*sqrt(spec d2 d2^T): a second speed from the cube payload, absent iff the magnetic row (equivalently g_cb=0) is imposed\nPASS G3 L=3: with both rows the nonzero frequencies are exactly c sqrt(spec C^T C) with c = sqrt(-q r) = 2 (one speed per member, speed itself free)\nTOTAL: PASS=54 FAIL=0\nHIT: scoped exact theorem (strengthens the known review correction that the {-1,0,1}-grid count 'exactly 2, one speed' is a grid artifact, from a count to a proof): in the supplied 10-coefficient covariant nearest-neighbour vertex/edge/face/cube flow class on cubic tori, every orbit is bounded for all t iff w=u=v=wc=0 and each pair (gve,gev), (q,r), (gbc,gcb) is (0,0) or has negative product, equivalently a positive diagonal invariant exists; the speed is free; and, given boundedness, the electric (magnetic) Gauss row is equivalent to the vertex (cube) payload being frozen and decoupled\n(elapsed 11.8 s)\nSUMMARY: exact grid-free classification of bounded orbits in the supplied 10-coefficient covariant nearest-neighbour vertex/edge/face/cube flow class (necessity from explicit exact eigen/Jordan subspaces, sufficiency from an exact positive diagonal invariant), cross-checked against the full 3^10 grid at L=2, showing speed is free and that, given boundedness, the magnetic Gauss row is equivalent to a frozen, decoupled cube payload; derivation of boundedness or of the class from the four axioms is not attempted.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k9a15",
+  "at_utc": "20261026T022206Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Scoped exact classification in the supplied class. Same-family, unrefereed.",
+  "by": "w-jonathonsmac4f50-k9a15",
+  "at_utc": "20261026T022206Z"
+ }
+}

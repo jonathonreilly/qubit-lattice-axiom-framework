@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/d4_zoom_fixed_point_chirality_overlap_index_and_domain_wall_slab_2026_10_26.py
+runner_sha256: 7ee7730474b29ad815ce449ceb1913ab89a5691ef1cd2055bc917e335e99a281
+input_fingerprint_sha256: 71138b56ac5088b47e3d2fabceb14ab906bce759d8d4b5d16cd3afb8391ed628
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 41.93
+status: ok
+----- stdout -----
+setup: W(F4) 1152 elements (576 proper), spinor reps exact to 1e-15; alpha = 0.5, m0 = 1/(2 alpha) = 1.0
+PASS 1a truncated D4 fixed-point kernel (W(F4)-complete shells |d|^2 <= 8, 169 hops) matches D*(p); A = D_R - m0 is far from 0 | symbol err 3.6e-02, min sv(A)/m0 0.98; [pre-reg shells |d|^2 <= 4 MISS: err 0.19, sv 0.81]
+PASS 1b gauged H = g5 (D_R - m0) is Hermitian on the twisted 648-site D4 torus (transition functions consistent) | 3e-16
+PASS 1c overlap index := -(1/2) Tr sign(H) = -Q exactly (one fixed sign convention) for Q = 0, 1, -1, 2; charge-q field in Q = 1: index = -q^2 (q = 2, 3, 4, 6) | 00q1:-0 11q1:-1 1-1q1:+1 21q1:-2 11q2:-4 11q3:-9 11q4:-16 11q6:-36; min|eig H|/m0: 0.98 0.87 0.87 0.78 0.69 0.49 0.32 0.05
+PASS 1d Q = 1: GW exact, g5-hermitian; Luscher P_hat = (1 - g5_hat)/2 is a projector, Tr g5_hat = 2 index; g5_hat exponentially local | sign(H) Newton 6 its (1e-14); GW 3e-14; g5h 2e-15; P^2-P 6e-15; Tr -2.0000; |g5_hat(x,y)| max at |x-y| = 1.41, 2.83, 4.0: 7.7e-02, 1.6e-03, 3.6e-04; rate 1.89/unit
+  [t = 27 s]
+PASS 2a slab (Ls = 8), p = 0: exactly one 2-component Weyl per wall, g5 = -1 on wall 1 and +1 on wall Ls (mirror on the far wall); no light modes at the 15 classes (30 points) of pi D4* \ 2pi D4* | Borici: 4 null vectors, (wall, g5) [(0, -1), (1, 1)], half-slab weight >= 0.9998, |g5| >= 1.000, next sv 1.06; Shamir: 4 null vectors, (wall, g5) [(0, -1), (1, 1)], half-slab weight >= 1.0000, |g5| >= 1.000, next sv 1.00; corner min sv 1.04 [pre-reg said '2 singular values': the Weyl pair is 2 + 2 = 4 components]
+PASS 2b Borici slab: H_T = g5 A/2 with (g5 A)^2 = m0^2 exactly (GW circle), so D_eff(Ls) = (1 - t)/2 + t alpha D* at every Ls: the light mode is D* plus a momentum-independent residual mass | (g5 A)^2 - m0^2: 7e-16; 5D Schur complement vs Moebius formula 6e-16; Borici identity 3e-16 (Ls = 2..16); residual mass (1-t)/t = 3.0e-04 at Ls = 8
+PASS 2c the slab keeps W(F4): all 576 rotations act on spinors only (D5(Ap) = S D5(p) S^-1); the 576 reflections map it to the wall-swapped slab | rotations 5e-15; reflections x (s -> Ls+1-s) 5e-15; both forms, mf = 0.1
+PASS 2d dim 6 of the light chiral mode: its kernel's direction anisotropy has no eps^2 term on D4 (Borici, Shamir Ls = 8, Shamir Ls -> inf); Z^4 Wilson slab control has it | D4-Bor8 exp 5.95 D4-Sha8 exp 5.59 D4-ShaInf exp 5.59 Z4-Bor8 exp 1.85 Z4-Sha8 exp 1.62 Z4-ShaInf exp 1.62; anisotropy at eps = 0.2: D4 <= 5e-09, Z4 >= 5e-03; dim-6 coefficient bound D4 1e-07 vs Z4 0.12; W(F4)+ invariants (quartic, cubic-vector, sextic, quintic-vector) = (1, 1, 2, 2), B4+ = (2, 2, 3, 4)
+  [t = 42 s]
+PASS 3a one-family 16 (left-handed Weyls): Y^3, Y-gravity, SU(3)^2 Y, SU(2)^2 Y, SU(3)^3 vanish, doublets even; with the MEASURED D4 indices sum (6Y) index(6Y) = 0 | sums 0, 0, 0, 0, 0; doublets 4; lattice sum 0.0 (from indices [-1, -4, -9, -16, -36]); lone L gives 54, lone Q -6
+PASS 3b mirror unchanged: the far-wall Weyl carries the light Weyl's charges (the slab acts identically on every gauge label) and the same turn spectrum under every spatial 3-fold turn of the root slice: q_mirror = q_light | 8 three-fold turns fixing the root; spectra on P- / P+: [-0.5-0.866j -0.5+0.866j] / [-0.5-0.866j -0.5+0.866j]; the slab is vector-like, the far wall still needs gapping
+runtime 42 s
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

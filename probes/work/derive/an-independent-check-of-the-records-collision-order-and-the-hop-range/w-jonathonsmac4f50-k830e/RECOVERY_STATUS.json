@@ -1,0 +1,51 @@
+{
+  "source_branch": "physics-loop/admissibility-induced-law-block154-the-order-at-which-records-break-the-books-is-set-by-their-hops-20260926",
+  "source_head": "b484be7728741fe37efa1af4eee2e01a723337d5",
+  "origin_main_head_read": "3e1a2dd2531590dabf85bee8db56175ba9b96e90",
+  "source_objects": [
+    {
+      "path": "docs/ADMISSIBILITY_RULE_THE_ORDER_AT_WHICH_RECORDS_COLLISIONS_BREAK_THE_BOOKS_IS_SET_BY_THEIR_HOPS_NO_PLACEMENT_OF_THE_WALKERS_ENERGY_CHANGES_IT_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+      "ref": "origin/physics-loop/admissibility-induced-law-block154-the-order-at-which-records-break-the-books-is-set-by-their-hops-20260926",
+      "sha256": "096139bde594f3b9ef71d993558fa2b65f21c62fdd4e309acb22f230f6e48b96",
+      "verified": true
+    },
+    {
+      "path": "scripts/admissibility_rule_the_order_at_which_records_collisions_break_the_books_is_set_by_their_hops_no_placement_of_the_walkers_energy_changes_it_2026_09_26.py",
+      "ref": "origin/physics-loop/admissibility-induced-law-block154-the-order-at-which-records-break-the-books-is-set-by-their-hops-20260926",
+      "sha256": "634e0f4021c7ab681ac89a4547de18f19cea8abeffbab032b7973ca975c1036d",
+      "verified": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_THE_ORDER_AT_WHICH_RECORDS_COLLISIONS_BREAK_THE_BOOKS_IS_SET_BY_THEIR_HOPS_NO_PLACEMENT_OF_THE_WALKERS_ENERGY_CHANGES_IT_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+      "ref": "origin/main",
+      "sha256": "c5f98a69000afaa5ecc4ec8d658d3564c9880e570ed03c30a0c6d89e97492411",
+      "verified": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_UNDER_ONE_RECORD_PER_SITE_A_COLLISION_CHANGES_THE_RECORDS_TWO_STEP_MOMENTUM_ONLY_AT_THIRD_ORDER_IN_THEIR_OFFSETS_FROM_THE_CONES_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+      "ref": "origin/main",
+      "sha256": "e0536f80a25feb0b368c10a0016a9d09b07b5bd06827751c30029d2eb1d70065",
+      "verified": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_EVERY_CLOCK_PROFILE_A_RELABELLING_FORCES_THE_WHOLE_MOMENTUM_CONSTRAINT_AND_NO_POSITIVE_INERTIA_CAN_BE_ADDED_TO_THE_MEMBER_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "ref": "origin/main",
+      "sha256": "c78c458ad10f06d2934aeddc8137003090ac4a83468506ec2ab5131634c5cbb7",
+      "verified": true
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "ref": "origin/main",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "verified": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "ref": "origin/main",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "verified": true
+    }
+  ],
+  "note": "Blocks 152 and 154 notes are on origin/main (landed texts read; they differ from the branch snapshots in scope wording, hash of the branch copy of block 154 recorded for the same path). Block 152 and 150 were read at origin/main.",
+  "first_unresolved_step": "none among the three requested steps (all confirmed); not covered here: block 152 T2-T4 (rank-one T-matrix, regular-threshold hypotheses), block 150 T5(a) (the match with a uniform lapse is taken as a premise), coin-mixing hops and longer-bond members"
+}

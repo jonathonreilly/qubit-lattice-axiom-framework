@@ -23,6 +23,9 @@ AUDIT_INPUT_PATHS = (
     "scripts/asymmetry_misalignment_part_locality_hierarchy_2026_10_26.py",
     "scripts/asymmetry_misalignment_part_sector_crosstalk_2026_10_26.py",
     "scripts/asymmetry_misalignment_part_posthoc_generic_vertex_2026_10_26.py",
+    "scripts/asymmetry_misalignment_part_posthoc_degeneracy_check_2026_10_26.py",
+    "scripts/asymmetry_misalignment_part_charged_orders_2026_10_26.py",
+    "scripts/asymmetry_misalignment_part_wrong_sector_2026_10_26.py",
 )
 import os, re, subprocess, sys, time
 from pathlib import Path
@@ -146,13 +149,34 @@ check("X2 [F]", th2 is not None and th2 > 0.1,
 check("X3 [F]", th2r is not None and 1e-10 < th2r < 1e-8,
       "D2r (supplied restriction: the shallow order's density also respects the deep sector's residual antiunitary) removes the flat leak; "
       "the remainder decays with depth and reaches 4e-10 at Delta = 18, just above the 1e-10 threshold", f"{th2r}")
-rc, o = run('posthoc_generic_vertex')
-row18 = re.search(r"^\s+18 \| max ([0-9.e+-]+)\s+([0-9.e+-]+)\s+([0-9.e+-]+)", o, re.M)
-check("X4 [F] post hoc", rc == 0 and row18 is not None and float(row18.group(1)) < 1e-8 and float(row18.group(3)) > 1,
-      "post hoc (disclosed, not pre-registered): a generic vertex symmetrised to each sector's residual gives theta_tree = 0 to working "
-      "precision (< 1e-8 at depth 18, where wall wavefunctions are ~2e-6; run-to-run 6e-10..1.4e-9) with "
-      "|J|/Jmax 0.2-0.5, but the deep sector's leak grows to O(10) with depth (Gamma/M propagation outlives the deep Yukawa)",
-      row18.group(0).strip() if row18 else "")
+rc, o = run('posthoc_degeneracy_check')
+rows = re.findall(r"sv_d/sv0 \[1\.\s+1\.\s+[0-9.]+\] commutator invariant ([0-9.e+-]+)", o)
+check("X4 [F] correction", rc == 0 and len(rows) >= 6 and all(float(x) < 1e-15 for x in rows),
+      "post hoc symmetrised vertex (disclosed): its down Yukawa has an exactly degenerate pair (on-site scalar vertex on this slab is "
+      "lambda*1 + antisymmetric, the X-node frames being quaternion units), so J = 0 exactly (commutator invariant < 1e-15); an earlier "
+      "reading of |J|/Jmax 0.2-0.5 from this vertex was 0/0 noise and is withdrawn", f"{len(rows)} draws, max {max(map(float, rows)) if rows else None}")
+
+print("== R: deriving the D2r restriction from a charge on the sector orders (criteria fixed before each run; v2 changes disclosed before its run)")
+rc, o = run('charged_orders')
+st = {t_: ('PASS' if re.search(rf"^PASS: {t_} ", o, re.M) else 'FAIL' if re.search(rf"^FAIL: {t_} ", o, re.M) else None)
+      for t_ in ('E0', 'E1', 'E2', 'E3', 'E3h', 'E4', 'E5', 'E6', 'E7')}
+c2 = num(r"E7 quality bound: c2_min = ([0-9.e+-]+)", o); e3h = num(r"E3h lattice-scale order eps = 0\.2: min_Delta median theta_bar_ind = ([0-9.e+-]+)", o)
+check("R1 [F]", "TOTAL: PASS=8 FAIL=1" in o and st == dict(E0='PASS', E1='PASS', E2='PASS', E3='PASS', E3h='FAIL', E4='PASS', E5='PASS',
+                                                         E6='PASS', E7='PASS'),
+      "charged orders (U(1)_H, bond Yukawa vertices allowed): every density coupling linear in an order is forbidden exactly (E0); tree "
+      "theta_bar = 0 with median |J|/Jmax 0.09 and no degenerate draws (E1); the breaking control restores theta = c1*eps (E4); aligned "
+      "control J < 1e-15 (E5); Ls-converged (E6)", str(st))
+check("R2 [F]", c2 is not None and 1 < c2 < 1e3 and e3h is not None and e3h > 1e-2,
+      "but the charge-allowed bilinears (bond currents Im phi*(r) phi(r+e), |phi_d|^2 patterns, phi_u phi_d) leak at second order, "
+      "theta = c2*eps^2: quality bound eps = v/Lambda < ~1e-6; a lattice-scale order (eps = 0.2) gives theta = O(0.1) (E3h FAIL)",
+      f"c2_min {c2}, theta(eps=0.2) {e3h}")
+rc, o = run('wrong_sector')
+cw = num(r"min median c_w = ([0-9.e+-]+)", o)
+check("R3 [F]/[T]", rc == 0 and "TOTAL: PASS=7 FAIL=0" in o and cw is not None and cw > 1,
+      "the same charge leaves the wrong-sector Yukawas phi_u^* Q D, phi_d^* Q U neutral; they leak at dimension 4 (needs kappa_w < ~1e-11). "
+      "A U(1) forbidding both exists iff it has a QCD anomaly (PQ); an anomaly-free Z_N (N <= 12) iff 3 | N, and each leaves an accidental "
+      "PQ in the renormalisable order potential (electroweak-scale axion); the D2r rule is therefore not derived by a charge",
+      f"min median c_w {cw}")
 
 print(f"TOTAL: PASS={NP[0]} FAIL={NP[1]}")
 sys.exit(0 if NP[1] == 0 else 1)

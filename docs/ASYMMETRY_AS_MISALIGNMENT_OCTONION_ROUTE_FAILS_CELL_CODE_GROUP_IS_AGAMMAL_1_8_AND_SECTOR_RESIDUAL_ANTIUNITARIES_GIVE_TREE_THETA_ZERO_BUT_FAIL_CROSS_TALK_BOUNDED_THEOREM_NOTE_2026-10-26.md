@@ -9,7 +9,7 @@ runner: scripts/asymmetry_as_misalignment_2026_10_26.py
 # Asymmetry as misalignment: the octonion route fails, the cell code's group is AΓL(1,8), and sector residual antiunitaries fix tree θ̄ but fail cross-talk
 
 Claim type: open_gate. A record of one first-principles thread across the four walls (chirality and mirror, family count, family labels and hierarchy, CP with θ̄ ≈ 0). It is kept so the idea, its tests and its failure points are not lost.
-Primary runner: `scripts/asymmetry_as_misalignment_2026_10_26.py` (driver; 13 declared helper parts, about 13 min). Labels: [T] exact, [F] finite diagnostic, [N] failed search over the stated family only, [S] reading.
+Primary runner: `scripts/asymmetry_as_misalignment_2026_10_26.py` (driver; 16 declared helper parts, about 20 min). Labels: [T] exact, [F] finite diagnostic, [N] failed search over the stated family only, [S] reading.
 
 ## Motivating pattern
 
@@ -92,18 +92,40 @@ Executed tests (criteria fixed before running; reproduced in the appendix):
   - Separating the sectors protects nothing.
   - θ̄_ind is linear in κ, so the mechanism needs κ ≲ 1e-10. This is the Nelson–Barr quality problem in lattice form.
 - **X3 (D2r)** Under a supplied restriction, the flat leak vanishes. The restriction: the shallow order's density also respects the deep sector's residual, e.g. a charged order entering only as |order|². The remainder then decays with depth and reaches 4e-10 at Δ = 18, just above the 1e-10 threshold.
-- **X4 (post hoc, disclosed)** A generic vertex symmetrised to each sector's residual gives θ̄_tree = 0 to working precision (≤ 1.4e-9 at depth 18, where the wall wavefunctions are about 2e-6) with |J|/J_max 0.2–0.5. The deep sector's leak then grows to O(10) with depth.
+- **X4 (post hoc, disclosed; corrected)** A generic on-site vertex symmetrised to each sector's residual gives θ̄_tree = 0 to working precision. But J is exactly 0, not 0.2–0.5 as first read.
+  - On this slab the on-site scalar vertex always gives Y = λ·1 + antisymmetric, because the three X-node frames are quaternion units.
+  - So the real down sector has a degenerate mass pair. The commutator invariant is below 1e-15 in every draw.
+  - The earlier |J| reading was 0/0 noise and is withdrawn.
+
+## R. Can a charge derive the D2r restriction? Partly. The rest needs Peccei–Quinn.
+
+Model: as in X, plus a U(1)_H charge on both orders (hypercharge-like) and every vertex the charge allows: on-site and bond Yukawas, |φ|² densities, bond currents, φ_uφ_d. Criteria were fixed before each run; the v2 model changes were written down before v2 ran (a disclosed post-hoc step after run 1, which gave PASS 5 / FAIL 4).
+- **R1 [F] (v2: PASS 8 / FAIL 1)**
+  - Every density coupling linear in an order is forbidden exactly (E0).
+  - Tree level: θ̄ = 0 (≤ 2e-15) with median |J|/J_max 0.09 and no degenerate draws. The bond vertices lift the degeneracy (E1).
+  - Breaking the charge restores a linear leak θ̄ = c₁ε with c₁ = 9–17 (E4).
+  - Aligned control: J < 1e-15 (E5). Converged in Ls from 48 to 64 (E6).
+- **R2 [F]** The bilinears the charge still allows leak at second order, θ̄ = c₂ε² with c₂ = 6–84. The dominant source is the bond currents Im φ*(r)φ(r + e).
+  - Quality bound: ε = v/Λ < 1–4e-6 (E7). This is a dimension-6 effective Yukawa (φ†φ)φQX/Λ².
+  - A lattice-scale order (ε = 0.2) gives θ̄ ≈ 0.24 (E3h FAIL).
+  - At the electroweak scale θ̄ ~ 1e-31. Caveat: there even the unprotected control passes (1.8e-15), so the real protection is v ≪ Λ. The charge only lowers the required cutoff, from about 4e13 to 2e8 GeV.
+- **R3 [F]/[T] (v3: PASS 7 / FAIL 0)** The same charge leaves the wrong-sector Yukawas φ_u*QD and φ_d*QU neutral, exactly as hypercharge does.
+  - They leak at dimension 4 (c_w ≈ 5 at separation 0 and 230–610 at separation 4), so θ̄ < 1e-10 needs their strength below 2e-11 to 2e-13.
+  - Forbidding both with a U(1) is possible iff that U(1) has a QCD anomaly, i.e. is a Peccei–Quinn symmetry (all 13³ charge choices checked).
+  - An anomaly-free Z_N (N ≤ 12) that forbids both exists iff 3 | N. Every such Z_N leaves an accidental PQ symmetry in the renormalisable order potential, i.e. an electroweak-scale Weinberg–Wilczek-type axion, which is excluded (cited).
+  - A PQ- and U(1)_H-invariant bond quartic still sources a T-odd component of the down order (ratio 0.46). The vacuum response was not computed.
+- **Reading.** The D2r rule is not derived by a charge. What a charge buys is a quality bound v/Λ ≲ 1e-6. Removing the remaining dimension-4 leak needs PQ, and a working axion would solve strong CP on its own, making the mechanism redundant.
+  - Two candidates were reasoned only, not computed. Lattice translations cannot separate the sectors, because φ and φ* carry the same momenta. Record/Admissibility constrain states, not which neutral operators appear.
+  - Costs: two independent Higgs-type orders, and in this slab light order components at Γ and the three M points (eight doublets; FCNC and naturalness untested).
 
 ## Status and what remains open
 
 - The octonion / F₈ / J₃(𝕆) carrier is not supported: O1, O5 and O6 fail, and the review found no payoff that survives. This is a failed search over the stated constructions, not an impossibility theorem.
 - The misalignment mechanism gives an exactly zero tree-level θ̄ with generic J ≠ 0, for supplied Yukawas.
-- On the slab it survives only if a **supplied rule** holds: T-odd orders must not enter other species' densities linearly. Under that rule the remainder is close to, but above, the threshold at Ls = 40.
+- On the slab it survives only if a **supplied rule** holds: T-odd orders must not enter other species' densities linearly.
+- A charge on the orders derives the linear part of that rule. It leaves a second-order leak (quality bound v/Λ ≲ 1e-6) and a dimension-4 wrong-sector leak whose removal needs Peccei–Quinn, which would make the mechanism redundant (section R). As it stands, the mechanism is a Nelson–Barr-type construction with Nelson–Barr's quality problem, not a solution of it.
 - It gives no hierarchy and nothing new for the mirror.
-- Next decisive checks:
-  1. T-odd bond terms at order |order|², such as Im(φ(r)* φ(r + eₓ)).
-  2. Whether any admissible locality or charge structure *derives* the D2r restriction.
-  3. The D2r scan at Ls ≥ 42.
+- Open checks: the vacuum response to the PQ-invariant bond quartic; a principle outside internal charges (e.g. a geometric separation of the two orders that suppresses wrong-sector Yukawas exponentially); FCNC from the extra order components at Γ and M.
 - Strongest external falsifier of the principle: a θ̄-pattern nucleon or atomic EDM at θ̄ ≳ 10⁻¹², i.e. d_n ≳ 10⁻²⁸ e·cm.
 - The type-I discrete groups Δ(27) and F₂₁ (no class-inverting automorphism: 0 of 432 and 0 of 42 checked) remain an untested alternative route to calculable CP.
 
@@ -120,7 +142,7 @@ Literature used as comparison only, not as premises:
 - Adversarial review, the misalignment proposal and parts A–D: one review agent at maximum reasoning effort. The coordinating session re-ran every part and reproduced every reported number.
 - Part O6: written by the coordinating session.
 - FREEZE and CL-1's tick are rebuilt from the twist-local-single / tick-winding construction code (same seed and draw order) with a numpy stand-in for scipy. They reproduce W_F = (−2, 1, 1). This is not an independent construction.
-- The criteria file of part D predates its first run. Two post-hoc items are disclosed (M2 normalisation, X4).
+- The criteria files of parts D and E (both versions) predate their first runs. Disclosed post-hoc items: the M2 normalisation, X4, and the v2 model changes in R. The X4 J value was withdrawn by its author after a degeneracy check, which the coordinating session reproduced.
 
 ## Appendix: criteria fixed before the runs
 
@@ -144,6 +166,14 @@ Part D (cross-talk), with Ls = 40, m = 2.5, κ = 1, 12 draws:
 - D5: Ls = 40, 48, 56 agree to a relative change < 1e-3.
 - D6: twisted reality holds to 1e-12.
 - D7: self-dressing shifts θ̄ by < 1e-12.
+
+Part E (charged orders), with Ls = 48, U(1)_H on both orders:
+- E0: every model term is U(1)_H-neutral; the control adds the charged linear terms.
+- E1: tree |sin θ̄| < 1e-12 and median |J|/J_max > 1e-3.
+- E2: the on-site |φ_u|² channel alone gives |θ̄_ind|/ε² < 1e-10.
+- E3 / E3h: θ̄_ind < 1e-10 at ε = 1.03e-16 (electroweak) / ε = 0.2 (lattice scale).
+- E4: the control shows a linear leak. E5: aligned orders give J, θ̄ < 1e-12. E6: Ls 48 → 56 change < 1e-3. E7: report c₂ and ε_max.
+- v3: W1 wrong-sector terms neutral; W2 median c_w > 1e-2 (the principle fails to protect at dimension 4); W3 aligned control < 1e-12; S1–S3 symbolic charge scans; P1 bond-quartic source ratio > 1e-2.
 
 Part O (fixed before running):
 - O1 passes only if a group-invariant anticommuting 7-set exists.

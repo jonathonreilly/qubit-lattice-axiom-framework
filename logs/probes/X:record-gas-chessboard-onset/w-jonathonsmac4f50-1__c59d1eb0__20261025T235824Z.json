@@ -1,0 +1,32 @@
+{
+ "task": "X:record-gas-chessboard-onset",
+ "type": "scan",
+ "lane": "moving-records",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-sonnet-5-5",
+ "command": "cd probes/lib && python3 record_gas_stagger.py 1 1 1 g0.35 0.5 16 4000 1",
+ "seed": 72704,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c59d1eb0",
+ "started_utc": "20261025T235824Z",
+ "elapsed_s": 173.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "p=1.0 q=1.0 r=1.0 c=0.3500 g=0.3500 rho=0.5 L=16 nbrs=0.908 nbrs_over_random=0.303 aligned=0.166 S=0.05 stagS=676.508 stag_over_random=2705.372 accept=0.042 records=2061 seconds=173"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "Block 81 (#8626): the record gas makes the chessboard only below the neutral scale c0. Where? Half filling, content-less records (1 1 1) and the line (3,1,2), scale g = c/c0 from 0.30 to 0.50 (the content-less comparator orders below 0.41), sides 8, 12, 16; record_gas_stagger.py = moving_gas.py plus heat-bath content re-draws and the staggered structure factor (SUMMARY stag_over_random: about 1 when disordered, order N/4 for a chessboard). Arguments: p q r scale rho L sweeps seed (scale 'g0.41' = 0.41 c0). GRID UNITS: one run per point.",
+ "stdout_sha256": "961c3fbe830e228e74d893624d37ce6c5813f3b171a92884a942c0b8fbe2f664",
+ "stdout_tail": "weights (1.0,1.0,1.0) scale c=0.3500 (g0.35) rho=0.5 L=16 sweeps=4000 seed=1 mode=parallel; random baseline: nbrs=3.000 aligned=0.1667\nsweep  nbrs  aligned  accept  S  stagS\n     1 2.082 0.177 0.308 0.17 3.23\n     2 1.852 0.159 0.207 0.08 0.41\n     5 1.666 0.172 0.148 0.10 2.30\n    10 1.478 0.167 0.116 0.06 14.65\n    20 1.350 0.160 0.099 0.01 156.64\n    43 0.958 0.155 0.044 0.04 668.71\n    92 0.901 0.193 0.039 0.02 684.97\n   196 0.883 0.181 0.050 0.03 684.97\n   417 0.881 0.165 0.044 0.07 696.47\n   885 0.987 0.173 0.045 0.04 638.35\n  1882 0.868 0.154 0.036 0.07 689.88\n  4000 0.878 0.166 0.032 0.03 694.82\nSUMMARY: p=1.0 q=1.0 r=1.0 c=0.3500 g=0.3500 rho=0.5 L=16 nbrs=0.908 nbrs_over_random=0.303 aligned=0.166 S=0.05 stagS=676.508 stag_over_random=2705.372 accept=0.042 records=2061 seconds=173\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20261026T000118Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

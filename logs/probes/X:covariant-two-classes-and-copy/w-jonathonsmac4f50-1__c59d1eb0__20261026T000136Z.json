@@ -1,0 +1,32 @@
+{
+ "task": "X:covariant-two-classes-and-copy",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-sonnet-5-5",
+ "command": "cd probes/lib && python3 formation_covariant.py 1 0 1 16 1000 500 1",
+ "seed": 72896,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c59d1eb0",
+ "started_utc": "20261026T000136Z",
+ "elapsed_s": 2.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "w0=1.0 w1=0.0 beta=1.0 L=16 T=1000 start=aligned plateau_|m|=0.0140 plateau_cos_even_odd=-0.0286 seconds=2"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "Block 93's two structural predictions: (i) with w0 = 0 two halves started orthogonal stay orthogonal (plateau cosine near 0, drifting) while with w0 > 0 they align (cosine near 1); (ii) with w1 = 0 (the record below alone) no common direction forms at any beta (plateau |m| of order N^-1/2). Arguments: w0 w1 beta L T T0 seed [start]. GRID UNITS: one run per point.",
+ "stdout_sha256": "548bff6e57afbba561742b83e84ad89301919a75c55bfe2e87e8337f480ca458",
+ "stdout_tail": "w0=1.0 w1=0.0 beta=1.0 L=16 T=1000 T0=500 seed=1 start=aligned\nmemory table: level, |m|, |m_even|, |m_odd|, cos(m_even, m_odd)\n        1  0.3106  0.3165  0.3047  +0.9997\n        2  0.1102  0.1132  0.1084  +0.9807\n        3  0.0324  0.0492  0.0157  +0.9899\n        4  0.0219  0.0138  0.0305  +0.9400\n        6  0.0136  0.0246  0.0172  -0.1859\n        9  0.0153  0.0363  0.0066  -0.8816\n       13  0.0067  0.0209  0.0110  -0.8222\n       18  0.0183  0.0316  0.0167  +0.0617\n       26  0.0127  0.0202  0.0161  -0.0332\n       38  0.0115  0.0256  0.0192  -0.5042\n       55  0.0223  0.0146  0.0394  +0.1904\n       78  0.0261  0.0292  0.0240  +0.9295\n      113  0.0114  0.0321  0.0308  -0.7381\n      162  0.0268  0.0479  0.0277  -0.0729\n      234  0.0146  0.0215  0.0189  +0.0411\n      336  0.0091  0.0089  0.0115  +0.5670\n      483  0.0152  0.0209  0.0286  -0.2773\n      695  0.0145  0.0169  0.0141  +0.7548\n     1000  0.0072  0.0127  0.0064  +0.0386\nSUMMARY: w0=1.0 w1=0.0 beta=1.0 L=16 T=1000 start=aligned plateau_|m|=0.0140 plateau_cos_even_odd=-0.0286 seconds=2\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20261026T000139Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

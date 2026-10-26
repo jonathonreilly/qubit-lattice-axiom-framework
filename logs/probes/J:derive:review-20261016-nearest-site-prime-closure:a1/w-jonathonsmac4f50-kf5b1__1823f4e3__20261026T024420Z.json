@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20261016-nearest-site-prime-closure:a1",
+ "type": "judgment",
+ "lane": "review-science-20261016",
+ "worker": "w-jonathonsmac4f50-kf5b1",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261016-nearest-site-prime-closure/w-jonathonsmac4f50-kf5b1/check.py",
+ "seed": 82660,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "1823f4e3",
+ "started_utc": "20261026T024420Z",
+ "elapsed_s": 255.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "regenerates both nearest-site spinorial families and unitarity ideals from signed generators, covers each variety exhaustively with a sympy elimination tree, and shows every leaf lies in a printed Singular component, has k-independent tr W^p (p<=8) and (real locus) pure inward or outward support; runtime 254s."
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 56/56 PASS (285 s); checked in sympy, not proved, for the declared model and the two declared signed classes: 11-parameter families and unitarity polynomials regenerated from signed generators and matching the source models; an exhaustive sympy elimination tree (25 leaf varieties per class) built without Singular output, every leaf inside a printed Singular component (8 components used); tr W(z)^p (p<=8) z-independent on every leaf; real-locus route gives purely inward or outward on-site support, hence flat; conditional on sympy groebner/factor soundness (no cofactor certificates or second implementation, U1); whole-ideal Groebner basis did not finish; other signed lifts and primality of the Singular components not covered.",
+ "what": "Regenerate both specified eleven-dimensional nearest-site families and exact unitarity ideals from declared signed generators. Certify exhaustive minimal-prime coverage over Q or an equivalent direct elimination certificate, then independently verify every real-locus or trace reduction. The family/equation match and quartic identity are already independently checked; repeating them alone is not a new HIT. Complete truthful execution/input and no-go route/residual records without inventing failed approaches. The original proof remains unadopted; this is not a claim that it is false. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise.",
+ "stdout_sha256": "92ce9b415848e7ddc419dda665cf359cc7f9013611e1602cdcebf3568916cb82",
+ "stdout_tail": " (max variation 3.7e-13)\nPASS F3.1 class 1: numerically, 51/51 solutions are purely in-type or purely out-type (no mixed o/i hop type, no in+out coexistence) [numerical reading of the candidate's real-locus claim, not a proof]\nPASS F5.1 class 1: 46 numerical points of the complex variety V(I) (c, cb independent; 45 with cb != conj c) found; all lie on some exact leaf (uncovered: 0) [sampling evidence only]\nPASS F4.1 control: a random covariant (non-unitary) coefficient vector has k-dependent characteristic polynomial\nHIT: within the declared model and the two declared signed classes (checked in sympy; conditional on sympy groebner/factor soundness, no cofactor certificates): an exhaustive elimination cover of V(unitarity ideal) by 25 + 25 leaf varieties built without Singular output, every leaf inside a printed Singular component and all 8 printed components used (so the printed list covers V(I)); tr W(z)^p (p<=8) is z-independent on every leaf, hence for every complex point; an independent real-locus route gives only purely-inward or purely-outward supports (7 and 7 leaves have no real point); so no nearest-site covariant walk disperses.\nTOTAL: PASS=56 FAIL=0\nSUMMARY: regenerates both nearest-site spinorial families and unitarity ideals from signed generators, covers each variety exhaustively with a sympy elimination tree, and shows every leaf lies in a printed Singular component, has k-independent tr W^p (p<=8) and (real locus) pure inward or outward support; runtime 254s.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-kf5b1",
+  "at_utc": "20261026T024844Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Scoped, computer-algebra-checked cover of the unitarity variety for the declared model. Same-family, unrefereed.",
+  "by": "w-jonathonsmac4f50-kf5b1",
+  "at_utc": "20261026T024844Z"
+ }
+}

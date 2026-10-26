@@ -1,0 +1,59 @@
+PASS A1 sign vectors with D^4=-1: 64 (Rz), 64 (Rx)
+PASS A2 sign pairs generating an order-48 signed group with central -1: 512
+PASS A3 distinct generated matrix groups: 128
+PASS A4 every one of the 128 groups is diagonal-sign-gauge equivalent to class 0 (64 groups) or class 1 (64 groups); none other
+PASS A5 class 0 and class 1 are not diagonal-sign-gauge equivalent
+PASS B1.0 class 0: signed group order 48; covariant nearest-site family has 11 complex parameters, orbit sizes [8, 24, 24, 24, 24, 24, 24, 8, 24, 24, 8]
+PASS B2.0 embedded source model.json matches task sha256
+PASS B3.0 class 0: regenerated hop matrices A_n equal the source model entry-by-entry (mismatches 0)
+PASS B4.0 class 0: regenerated W^dagger W = 1 polynomials (45 distinct up to sign) equal the source's 79 listed polynomials (45 up to sign)
+PASS B1.1 class 1: signed group order 48; covariant nearest-site family has 11 complex parameters, orbit sizes [8, 24, 24, 24, 24, 24, 24, 8, 24, 24, 8]
+PASS B2.1 embedded source model1.json matches task sha256
+PASS B3.1 class 1: regenerated hop matrices A_n equal the source model entry-by-entry (mismatches 0)
+PASS B4.1 class 1: regenerated W^dagger W = 1 polynomials (45 distinct up to sign) equal the source's 79 listed polynomials (45 up to sign)
+PASS B5 embedded nn_min.sing matches task sha256
+PASS B6 nn_min.sing's 55 generators = class-0 two-sided (W^dagger W and W W^dagger) unitarity set, after sign flips c3,c4,c8,c9 -> -c (exact set equality)
+PASS B6' control: the same 55 generators are NOT the class-1 two-sided set
+PASS B7 independent exact linear algebra (covariance of the two generators only): 216 allowed entries, rank 205, solution space dimension 11
+PASS C1.0 class 0: elimination tree built: 14 monomial-split roots, 85 tree nodes, 9 factor splits, 25 leaves (94s)
+PASS C2.0 class 0: every original W^dagger W - 1 generator reduces to 0 modulo every leaf basis (each leaf variety lies in V(I); with C1 this makes V(I) equal to the union of the leaves)
+PASS C3.0 class 0: every W W^dagger - 1 generator also reduces to 0 modulo every leaf basis (same variety for the two-sided ideal)
+PASS C1.1 class 1: elimination tree built: 14 monomial-split roots, 85 tree nodes, 9 factor splits, 25 leaves (92s)
+PASS C2.1 class 1: every original W^dagger W - 1 generator reduces to 0 modulo every leaf basis (each leaf variety lies in V(I); with C1 this makes V(I) equal to the union of the leaves)
+PASS C3.1 class 1: every W W^dagger - 1 generator also reduces to 0 modulo every leaf basis (same variety for the two-sided ideal)
+PASS D1.0 class 0: on all 25 leaves, every non-constant z-coefficient of tr W(z)^p (p=1..8) reduces to 0 modulo the leaf basis, so the characteristic polynomial of W(z) is z-independent at every complex point of V(I) (6s)
+PASS D1.1 class 1: on all 25 leaves, every non-constant z-coefficient of tr W(z)^p (p=1..8) reduces to 0 modulo the leaf basis, so the characteristic polynomial of W(z) is z-independent at every complex point of V(I) (8s)
+PASS D2 control: with no constraints (empty basis, chart c0=1) the same test reports k-dependence at p=[2]
+PASS D3 control: dropping the lower half (by degree) of the largest leaf basis (47 of 94 elements) makes the test report k-dependence
+PASS E1.0 embedded source sing0.log matches task sha256
+PASS E1b.0 every printed Singular generator of class 0 is homogeneous for the scaling weight (#c - #cb), so evaluating it on a chart c_a = 1 is legitimate
+PASS E2.0 Singular printout for class 0 lists 8 components of dimensions [4, 4, 2, 2, 2, 2, 4, 4]
+PASS E3.0 class 0: each of the 25 exact leaves lies inside at least one printed Singular component (all printed generators vanish on the leaf)
+PASS E4.0 class 0: every printed component receives a leaf (components used: [1, 2, 3, 4, 5, 6, 7, 8]); components with a leaf lying in no other component: [1, 2, 3, 4, 5, 6, 7, 8]
+PASS E5 embedded source nn_min.out matches task sha256
+PASS E5b every printed nn_min.out generator is homogeneous for the scaling weight (#c - #cb)
+PASS E6 the original nearest_site decomposition (nn_min.out, 8 components dims [4, 4, 2, 2, 2, 2, 4, 4], sign-flipped to class-0 coordinates) is also covered leaf-by-leaf, all 8 components used
+PASS E1.1 embedded source sing1.log matches task sha256
+PASS E1b.1 every printed Singular generator of class 1 is homogeneous for the scaling weight (#c - #cb), so evaluating it on a chart c_a = 1 is legitimate
+PASS E2.1 Singular printout for class 1 lists 8 components of dimensions [4, 4, 2, 2, 2, 2, 4, 4]
+PASS E3.1 class 1: each of the 25 exact leaves lies inside at least one printed Singular component (all printed generators vanish on the leaf)
+PASS E4.1 class 1: every printed component receives a leaf (components used: [1, 2, 3, 4, 5, 6, 7, 8]); components with a leaf lying in no other component: [1, 2, 3, 4, 5, 6, 7, 8]
+PASS G0.0 class 0: each of the 11 parameter orbits has one hop type; types in order ['ooo', 'oo0', 'ooi', 'o00', 'o0i', 'o0i', 'oii', '000', '00i', '0ii', 'iii']
+PASS G0.1 class 1: each of the 11 parameter orbits has one hop type; types in order ['ooo', 'oo0', 'ooi', 'o00', 'o0i', 'o0i', 'oii', '000', '00i', '0ii', 'iii']
+PASS G1.0 class 0: every entry of an out-or-on-site orbit has n = vo - vi, so W(z) = Z W(1) Z^-1 with Z = diag(z^v); every entry of an in-or-on-site orbit has n = 0, so W is z-independent; both are flat for all coefficients
+PASS G1.1 class 1: every entry of an out-or-on-site orbit has n = vo - vi, so W(z) = Z W(1) Z^-1 with Z = diag(z^v); every entry of an in-or-on-site orbit has n = 0, so W is z-independent; both are flat for all coefficients
+PASS G2.0 class 0: real-locus closure (cb = conj c, chart scaling with r=|c_a|^2>0; Groebner bases over Q of the real and imaginary parts, positivity rules for monomials and even-power sums): 7 of 25 leaves have no real point; the others leave support inside {ooo,oo0,o00,000} (9 states) or {000,00i,0ii,iii} (9 states); mixed states: [] (7s)
+PASS G2.1 class 1: real-locus closure (cb = conj c, chart scaling with r=|c_a|^2>0; Groebner bases over Q of the real and imaginary parts, positivity rules for monomials and even-power sums): 7 of 25 leaves have no real point; the others leave support inside {ooo,oo0,o00,000} (9 states) or {000,00i,0ii,iii} (9 states); mixed states: [] (8s)
+PASS F1.0 class 0: 56 numerical unitary solutions (cb = conj c, residual < 1e-11) found; all lie on some exact leaf (uncovered: 0) [sampling evidence only]
+PASS F2.0 class 0: numerical solutions are unitary at random k and their characteristic polynomials are k-independent (max variation 2.7e-13)
+PASS F3.0 class 0: numerically, 56/56 solutions are purely in-type or purely out-type (no mixed o/i hop type, no in+out coexistence) [numerical reading of the candidate's real-locus claim, not a proof]
+PASS F5.0 class 0: 44 numerical points of the complex variety V(I) (c, cb independent; 44 with cb != conj c) found; all lie on some exact leaf (uncovered: 0) [sampling evidence only]
+PASS F4.0 control: a random covariant (non-unitary) coefficient vector has k-dependent characteristic polynomial
+PASS F1.1 class 1: 51 numerical unitary solutions (cb = conj c, residual < 1e-11) found; all lie on some exact leaf (uncovered: 0) [sampling evidence only]
+PASS F2.1 class 1: numerical solutions are unitary at random k and their characteristic polynomials are k-independent (max variation 3.7e-13)
+PASS F3.1 class 1: numerically, 51/51 solutions are purely in-type or purely out-type (no mixed o/i hop type, no in+out coexistence) [numerical reading of the candidate's real-locus claim, not a proof]
+PASS F5.1 class 1: 46 numerical points of the complex variety V(I) (c, cb independent; 45 with cb != conj c) found; all lie on some exact leaf (uncovered: 0) [sampling evidence only]
+PASS F4.1 control: a random covariant (non-unitary) coefficient vector has k-dependent characteristic polynomial
+HIT: within the declared model and the two declared signed classes (checked in sympy; conditional on sympy groebner/factor soundness, no cofactor certificates): an exhaustive elimination cover of V(unitarity ideal) by 25 + 25 leaf varieties built without Singular output, every leaf inside a printed Singular component and all 8 printed components used (so the printed list covers V(I)); tr W(z)^p (p<=8) is z-independent on every leaf, hence for every complex point; an independent real-locus route gives only purely-inward or purely-outward supports (7 and 7 leaves have no real point); so no nearest-site covariant walk disperses.
+TOTAL: PASS=56 FAIL=0
+SUMMARY: regenerates both nearest-site spinorial families and unitarity ideals from signed generators, covers each variety exhaustively with a sympy elimination tree, and shows every leaf lies in a printed Singular component, has k-independent tr W^p (p<=8) and (real locus) pure inward or outward support; runtime 254s.

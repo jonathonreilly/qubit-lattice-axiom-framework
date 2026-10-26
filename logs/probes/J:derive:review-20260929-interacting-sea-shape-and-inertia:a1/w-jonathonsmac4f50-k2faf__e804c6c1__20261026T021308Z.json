@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20260929-interacting-sea-shape-and-inertia:a1",
+ "type": "judgment",
+ "lane": "review-science-20260929",
+ "worker": "w-jonathonsmac4f50-k2faf",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20260929-interacting-sea-shape-and-inertia/w-jonathonsmac4f50-k2faf/check.py",
+ "seed": 80788,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "e804c6c1",
+ "started_utc": "20261026T021308Z",
+ "elapsed_s": 37.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "In a supplied Q-exact (boson + fermion) lattice model with a quartic interaction, the vacuum energy is exactly 0 for every symmetric quadratic prepotential, hence for any constant or position-dependent inverse metric entering through it (exact algebra, plus 2x2-cluster exact diagonalisation at quartic coupling 3), although the boson-only and fermion-only halves have static shear coefficients +2 and -2 per site, the excitation levels move with the shear and the sea has nonzero Berry/adiabatic inertia; a boson mass shift leaks at first order; the walker's Dirac sea on qubit sites, wave speeds and exact poles are not covered."
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 34/34 PASS (~45 s); scoped counterexample to 'only tuning or volume-preserving flow removes the interacting shape term': a Q-exact (supersymmetric) boson+fermion quartic comparator has exactly zero ground energy for any shear and coupling (sympy plus exact 2x2 diagonalisation); BUT it uses unbounded boson sites (excluded inside the Qubit axiom by main's per-site bosonic CCR no-go), has omega~k^2 (no wave-speed content), and exact supersymmetry is a new premise; may be known SUSY-QM lore (worker's own caveat; the source's N2 already says so); the nilpotent-supercharge completion on qubit sites with a cone is open (step 12).",
+ "what": "Compute one explicit interacting metric response with its state and source action stated. Separate static cubic shear coefficients from wave speeds, and numerical response roots from exact full-theory poles. Strict curvature requires the field to see the shear. Finite 12-site charge-rank and 2D perturbative checks do not imply all interacting matter has the same obstruction. Test a candidate cancellation rather than asserting tuning or volume-preserving flow are the only exits. Owner-requested research transfer after landing review. The source is an unlanded hypothesis, not authority: fetch the named author branch, verify the frozen Git SHA and exact path/hash from probes/work/review-science-20260929/SOURCE_MAP.json. Fetch current origin/main and prefer its corrected bounded sources; read the actual axiom memo and primitive grants before premise judgments. Check related tasks, completed attempts, referee reports and active claims before choosing ONE distinct obligation. Read the complete argument, actual inputs and paired code for that obligation. Known review corrections are background, not a new HIT. Deliver numbered PROVED/CHECKED/ASSUMED steps in ATTEMPT.md, a self-contained check.py with disjoint machinery, and RECOVERY_STATUS.json with hashes, first unresolved step and remaining obligations. Prove finite claims exactly where possible; failed search is not a no-go and negative claims require N1-N8 before promotion. Commit the checker before run_probe.py; print SUMMARY with the actual result and HIT only for a demonstrated new result or defect. Finish through claim.py and ordinary cross-model confirmation. Use the existing maximum-thinking J campaign; do not spawn agents, start workers, change budgets, create PRs or edit scientific/audit authority.",
+ "stdout_sha256": "9ff849f6129da7c7a665ad43dcafcdffc4b924ba707ea5730dcf405268967e82",
+ "stdout_tail": "ze at delta = 0.02 and 0.1): c/delta = -0.0126, -0.0126\nPASS B2a single mode: adiabatic mass M = 2 sum|<n|H'|0>|^2/E_n^3 = 0.00457969 (formula a'^2/(16 a^3) = 0.00457969), Berry metric 0.01557093 (a'^2/(8a^2) = 0.01557093)\nPASS B2b free 3D lattice sea (m^2=1, forward coupling), per site: adiabatic mass M = 0.00060 (axis), 0.00059 (face); Berry metric 0.00641, 0.00856; static energy identically 0\nPASS B3 2x2 cluster face shear t=0: adiabatic mass M(lam=0) = 0.00274, M(lam=3) = 0.00202 ; Berry metric 0.04938, 0.04006 (ground energy 1.8e-04, 7.8e-05)\nPASS B3b lam=0 ED inertia 0.00274 / Berry 0.04938 agree with mode formula 0.00274 / 0.04938\nTOTAL: PASS=34 FAIL=0\n   (runtime 36.0s)\nHIT: scoped counterexample to 'only tuning or volume-preserving flow removes the interacting shape term': exact Q-exact interacting completion (continuous-site comparator).\nSUMMARY: In a supplied Q-exact (boson + fermion) lattice model with a quartic interaction, the vacuum energy is exactly 0 for every symmetric quadratic prepotential, hence for any constant or position-dependent inverse metric entering through it (exact algebra, plus 2x2-cluster exact diagonalisation at quartic coupling 3), although the boson-only and fermion-only halves have static shear coefficients +2 and -2 per site, the excitation levels move with the shear and the sea has nonzero Berry/adiabatic inertia; a boson mass shift leaks at first order; the walker's Dirac sea on qubit sites, wave speeds and exact poles are not covered.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k2faf",
+  "at_utc": "20261026T021353Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Scoped counterexample outside the Qubit-axiom setting; not a completion of the walker sea. Same-family, unrefereed.",
+  "by": "w-jonathonsmac4f50-k2faf",
+  "at_utc": "20261026T021353Z"
+ }
+}

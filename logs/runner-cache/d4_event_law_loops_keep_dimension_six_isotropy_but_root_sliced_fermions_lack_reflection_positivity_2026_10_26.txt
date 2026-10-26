@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/d4_event_law_loops_keep_dimension_six_isotropy_but_root_sliced_fermions_lack_reflection_positivity_2026_10_26.py
+runner_sha256: 72b9fea6ec2888395e371240291b83ead010804073daf74f4307d69cc2b026ea
+input_fingerprint_sha256: 19da4d8d331b0b3c02c259caa9e51456eedf24e3b983c0b9d82ecce5f289842b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 5.00
+status: ok
+----- stdout -----
+PASS C0 |W(F4)| = 1152, |B4| = 384; invariant tensors rank 2,4,6: W(F4) [1, 3, 16], B4 [1, 4, 31], O(4) [1, 3, 15] | W(F4) = O(4) through rank 4 (exact)
+  residuals vs isotropic basis: dim4 | dim6 | dim8 w/o J6 | dim8 with J6 ; Z^4 dim6 ; J6 ratio (L=16 -> 20)
+  bubble(phi^3)          6e-15 8e-15 2.2e-02 5e-15 ; Z4 8.2e-02 ; -0.23665 -> -0.23665
+  sunset(phi^4)          2e-15 2e-15 3.8e-02 1e-15 ; Z4 1.2e-01 ; -0.37995 -> -0.37995
+  Yukawa loop            2e-15 2e-15 1.3e-02 9e-16 ; Z4 6.0e-02 ; -0.14333 -> -0.14332
+  fermion mass part      3e-15 1e-15 7.9e-03 2e-15 ; Z4 3.2e-02 ; -0.09156 -> -0.09156
+  fermion gamma_mu part  5e-15 2e-15 4.5e-02 1e-15 ; Z4 2.3e-01 ; -0.03603 -> -0.03603
+PASS C1a dim 4: every species' p^2 (gamma.p) term is isotropic on D4 and Z^4: equal speed of light for all species | Euclidean point groups have one quadratic invariant (main: B4 marginal theorem)
+PASS C1b dim 6: no O(4)-breaking quartic (cubic gamma) piece on D4 for all 5 self-energies; Z^4 control induces sum p^4 (p_mu^3) | D4 max 8e-15; Z4 min 3.2e-02
+PASS C1c dim 8: first induced O(4)-breaking piece is J6 (grad J6) for every species, ratio converged in L
+PASS C2a calibration (Z^4, axis): Wilson r=1 link RP and T >= 0; naive r=0 link RP but T indefinite; scalar site RP; Wilson site RP fails | pos.frac W-link 2e-14 W-T 8e-14 naive-T 1.00 W-site 1.00
+PASS C2b D4 root slicing: scalar site RP holds; isometries x -> Ax + c with n -> 1-n exist only twisted (A = -1 on >= 3 dims), none is a reflection | scalar pos.frac 1e-15; 7 twisted, 0 pure (no link RP)
+PASS C2c D4 fermions, root site reflection Theta psi = psibar(sx) g_t: two-point OS form INDEFINITE (Hermitian), with and without the plane | Wilson w=sqrt2 open-half pos.frac 4.4e-02; Wilson w=1 open-half pos.frac 4.6e-03; overlap open-half pos.frac 8.9e-04
+PASS C3 link modes (12 per site): 1 exact gauge zero, 3 photons with 2/3 <= lambda/K <= 3/2 (no photon doublers), 8 heavy >= 36 on all 12^4 q | heavy min 36.01 max 96.0 (72 at q=0); photon/K in [0.667, 1.499]
+VERDICT: item1 PASS (dim-6 protected at one/two loops, J6 first); item2 FAIL (fermion RP not available in root slicing); item3 PASS -> PARTIAL
+TOTAL: PASS=8 FAIL=0   (4.8 s)
+
+----- stderr -----
+

@@ -324,6 +324,11 @@ Bosonized qubit sites (bosonized-sites, 2026-10-26, rethink r3; campaign files):
     - All protected groups (orders 96-576) contain -1 and fix only P = 0, and their spinor class is nontrivial. At orders 288/576, H^1 = 0 forces an event to be fixed. At orders 96/192, |tr(-1)| = 8 on every 16-mode set (seeded sample).
     - RP needs only the antilinear reflection, which keeps chirality. But the root slice keeps the 24-element group (2 quartic terms), so a real-time step has no protection of its own.
     - Remaining one-qubit routes: an order-96 Dirac block at P = 0 plus GW/overlap (allowed by rep theory, not built), and the 64-event cell.
+  - **Order-96 Dirac + overlap (d4-order96-dirac-overlap, PR #10107, 10/10, own re-run identical): PARTIAL; fails the gate.**
+    - Free fermion works with one mode per event. 2 of 8 order-96 groups host a Dirac block (orbits 4 + 12). The chirality epsilon is forced and ultralocal. The overlap is GW to 2e-16 with 4 zero modes at P = 0, no doublers, and G is kept. Weak point: m0 = 0.041 is forced small.
+    - The index gives +Q for Q = 0, 1, 2 but 0 for Q = -1, so the index theorem is not established.
+    - FATAL for the gate: the gauge kinetic invariant count <Lambda^2, Lambda^2> = 4 (SO(4): 2). So F.F can be anisotropic at DIMENSION 4, which conflicts with measured photon isotropy.
+    - The 4-mode spinor register stays the working candidate. The 64-event cell is untested.
 - **Still to rebuild on D4:**
   - the copy sign's role in carrying the 16;
   - slab chirality and the 4D index;

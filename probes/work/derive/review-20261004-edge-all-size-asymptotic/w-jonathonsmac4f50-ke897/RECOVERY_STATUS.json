@@ -1,0 +1,29 @@
+{
+ "source_branch": "main",
+ "source_head": "2868a0c453e667d1267f0e1e7403732a11893d78",
+ "current_main_head_read": "a77a3449c91a753b06ce2a63876cd460b62cb4cf (2868a0c is an ancestor; both source objects have identical sha256 at both commits)",
+ "source_objects": [
+  {
+   "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_THE_CELL_CUT_SLAB_HAS_AN_EXACT_SURFACE_ZERO_LINE_AT_F1_ONE_HALF_FOR_EQUAL_IN_PLANE_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+   "sha256": "0e547659921abd69df80def4e159170a61bbaba0a8a24494b2ccdc67e12e41f8",
+   "verified": true
+  },
+  {
+   "path": "scripts/composite_site_network_flux_free_exact_surface_zero_line_of_the_cell_cut_slab_2026_10_01.py",
+   "sha256": "9bda5e19d8ddcc0f6d11445c8425aafaee6178836285cc0ca78d4c7152dab4d1",
+   "verified": true
+  }
+ ],
+ "also_read": [
+  "docs/MINIMAL_AXIOMS_2026-06-29.md",
+  "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md"
+ ],
+ "first_unresolved_step": "Step 12 of ATTEMPT.md: the relative remainder is proved only as O(rho^N) (explicit eta/(1-eta) with Weyl on ||V||); the observed rho^{2N} rate (first-order term <V> of size O(N^k), not O(Sigma)) is CHECKED, not proved. Also open: sharp coefficient of rho^N when q0 = 0 (needs the O(1) self-energy nu = ||S_r^{-1} Q_r0||^2), J_x != J_y (p-block nonzero, first-order splitting), the bottom-line mirror, cross-model confirmation.",
+ "remaining_work": [
+  "prove the second-order cancellation (<xi|Delta^dag-type cross term> = O(N^k)) to upgrade O(rho^N) to O(N^k rho^{2N})",
+  "derive nu (Schur complement) for the Theta(rho^N) coefficient at q0 = 0",
+  "explicit closed-form N0 (condition |mu_d|-||V|| > |mu_s|+||V||) in terms of (rho, X, q0, qbar)",
+  "J_x != J_y and the mirror statement on the bottom line v=1/2 (u-dependence)",
+  "independent (cross-model) referee of ATTEMPT.md Steps 2-9; check.py shares the supplied network with the landed runner"
+ ]
+}

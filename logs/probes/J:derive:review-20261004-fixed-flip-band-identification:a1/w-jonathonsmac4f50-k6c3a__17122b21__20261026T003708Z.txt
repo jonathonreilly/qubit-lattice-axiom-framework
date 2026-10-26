@@ -1,0 +1,33 @@
+PASS S1a [exact] M(z) + M(1/z)^T = 0 identically (M anti-Hermitian, H = iM Hermitian, on the real torus |z_j|=1), symbolic couplings
+PASS S1b [exact] det(mu - M) = mu^4 + a2 mu^2 + D: coefficients of mu^3 and mu^1 vanish identically in (z1,z2,z3,Jx,Jy,Jz,kappa) :: a2 has 24 terms, D has 217 terms
+PASS S2a [exact] 12 random Gaussian-rational Hermitian H, invertible T: N0^2 - |N|^2 = detC * |det T|^2 * det H  (Schur determinant formula, Nm = detC*S)
+PASS S2b [exact] control: unpaired H=diag(1,1,1,-1), T=1: detC=-1<0, Pauli vector 0, but N0 = -1 != 0, det H = -1 < 0 (pairing is necessary)
+PASS S2c [exact] control: paired H=diag(1,-1,1,-1), T=1, C=diag(1,-1): S = diag(1,-1) is indefinite, det S = -1 <= 0 (lemma consistent)
+PASS S3 [float, 20000 random paired Hermitian H and random T with detC<0] det S <= 0 in every trial :: violations 0; min of -detS/|S|^2 = 1.85e-06
+PASS S4 [mp] 60 random real (theta, J, kappa incl. kappa<0): H Hermitian, spectrum symmetric under negation, det H >= 0 :: max|ev_i+ev_(3-i)|=4.98e-60, min det H=0.0
+PASS terms: literal TERMS of the census script equal the terms used here
+PASS terms: TERMS rebuilt by the cubic-flip script from the network rules equal the terms used here
+PASS S5a [mp] node i+: spec H0 = {0,0,+-4J}, T columns ((0, 1), (0, 1)), |det T|^2 = 0.0625 (NOT 1), detC0 = -4.0 < 0, Pauli vector and N0 vanish at the node
+PASS S5a [mp] node i-: spec H0 = {0,0,+-4J}, T columns ((0, 1), (0, 1)), |det T|^2 = 0.0625 (NOT 1), detC0 = -4.0 < 0, Pauli vector and N0 vanish at the node
+PASS S5a [mp] node ii+: spec H0 = {0,0,+-4J}, T columns ((0, 1), (0, 1)), |det T|^2 = 0.0625 (NOT 1), detC0 = -25.0 < 0, Pauli vector and N0 vanish at the node
+PASS S5a [mp] node ii-: spec H0 = {0,0,+-4J}, T columns ((0, 1), (0, 1)), |det T|^2 = 0.0625 (NOT 1), detC0 = -25.0 < 0, Pauli vector and N0 vanish at the node
+PASS S5b [mp] node i+: reconstructed local form (x'=x+m z^2, lam, a1, b1; n_x,n_y,n_b orthogonal; mu = (J+2)/kappa^3 = 51.63977795 reproduced) :: m=0.23957871 lam=-0.8247861 |a1|=1.8e-62 |b1|=8.9e-25
+PASS S5b [mp] node i-: reconstructed local form (x'=x+m z^2, lam, a1, b1; n_x,n_y,n_b orthogonal; mu = (J+2)/kappa^3 = 51.63977795 reproduced) :: m=-0.23957871 lam=0.8247861 |a1|=1.8e-62 |b1|=8.9e-25
+PASS S5b [mp] node ii+: reconstructed local form (x'=x+m z^2, lam, a1, b1; n_x,n_y,n_b orthogonal; mu = (J+2)/kappa^3 = 4.350836446 reproduced) :: m=-1.1480624 lam=6.3068584 |a1|=1.1e-60 |b1|=1.8e-25
+PASS S5b [mp] node ii-: reconstructed local form (x'=x+m z^2, lam, a1, b1; n_x,n_y,n_b orthogonal; mu = (J+2)/kappa^3 = 4.350836446 reproduced) :: m=1.1480624 lam=-6.3068584 |a1|=1.1e-60 |b1|=1.8e-25
+PASS S6 [mp] node i+: min|lambda(C0)| >= 0.71744 > ||delta C|| <= 0.18205 on the whole shifted box and eps-range (ratio 3.941): C keeps one + and one - eigenvalue
+PASS S6 [mp] node i-: min|lambda(C0)| >= 0.71744 > ||delta C|| <= 0.18205 on the whole shifted box and eps-range (ratio 3.941): C keeps one + and one - eigenvalue
+PASS S6 [mp] node ii+: min|lambda(C0)| >= 1.7705 > ||delta C|| <= 0.018171 on the whole shifted box and eps-range (ratio 97.44): C keeps one + and one - eigenvalue
+PASS S6 [mp] node ii-: min|lambda(C0)| >= 1.7705 > ||delta C|| <= 0.018171 on the whole shifted box and eps-range (ratio 97.44): C keeps one + and one - eigenvalue
+PASS S7 [mp] node i+: 120 sample points of the shifted box x eps-range: detC<0 (max -4.0), N0^2-|N|^2 = detC*|detT|^2*detH to 4.9e-49, |N0|<=|N| (max ratio 0.000508)
+PASS S7 [mp] node i-: 120 sample points of the shifted box x eps-range: detC<0 (max -4.0), N0^2-|N|^2 = detC*|detT|^2*detH to 3.1e-49, |N0|<=|N| (max ratio 0.000498)
+PASS S7 [mp] node ii+: 120 sample points of the shifted box x eps-range: detC<0 (max -25.0), N0^2-|N|^2 = detC*|detT|^2*detH to 2.5e-45, |N0|<=|N| (max ratio 3.09e-7)
+PASS S7 [mp] node ii-: 120 sample points of the shifted box x eps-range: detC<0 (max -25.0), N0^2-|N|^2 = detC*|detT|^2*detH to 2.3e-44, |N0|<=|N| (max ratio 1.02e-7)
+PASS S8 [mp] 4 nodes x eps in {+-0.6 eps0, +-eps0}: Newton zeros of the vector Pauli map in the shifted box (1 for eps<0, 3 distinct for eps>0): N0 = 0 there to 1e-30, detC<0, H has exactly the double zero level plus a symmetric pair +-l, l>1e-3
+PASS S9a [mp] families (line node; plane-(ii) pair for eps>0) from the landed closed forms lie inside the shifted box for 164 eps values per node in [-eps0,eps0]: max fill i+:0.575, i-:0.575, ii+:0.695, ii-:0.695
+PASS S9b [mp] at the family points (eps = +-eps0, +-eps0/7): det H, Pauli vector and N0 all vanish (max abs 2.57e-60)
+PASS S9c [mp] Newton zeros of the vector map coincide with the closed-form family points to 2.45e-40 (this is an identification diagnostic only; the logical identification is step 6)
+# runtime 64.3 s
+TOTAL: PASS=29 FAIL=0
+HIT: scoped conditional result: for the supplied comparator, a paired spectrum plus the enforced detC<0 gives det S <= 0 (so |N0| <= |N|, equality only at N=N0=0) and N0 = 0 at every vector zero of the shifted box at J=1 and J=5/2 for all |eps| <= eps0; vector zeros = band touchings there (own, unrefereed)
+SUMMARY: the supplied comparator has a symmetric spectrum at every real momentum and coupling (exact char-poly identity), and with det C<0 on the shifted box this forces the scalar Schur part to vanish at every vector zero (inertia argument, controls and 4-node high-precision checks agree); family location in the box is checked, not interval-certified.

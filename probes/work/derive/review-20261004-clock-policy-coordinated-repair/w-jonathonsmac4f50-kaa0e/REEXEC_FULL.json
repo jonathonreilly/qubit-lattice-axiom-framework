@@ -1,0 +1,1060 @@
+{
+ "base_commit": "3e1a2dd2531590dabf85bee8db56175ba9b96e90",
+ "cap_s": 45,
+ "note": "executed with reexec_tools/driver.py in scratch trees built by reexec_tools/mktree.py (unpatched vs patched = regenerated repair); 117 of 165 affected runners whose last cached run took <=20 s; no cache was written in the repo",
+ "results": {
+  "scripts/ac_occupancy_grain_support_typed_target_repair_2026_09_02.py": {
+   "embeds_old_sha": true,
+   "new": "nonzero_exit",
+   "new_elapsed": 0.57,
+   "new_reason": "CHECK actual input/source binding: FAIL",
+   "old": "ok",
+   "old_elapsed": 0.52,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/admissibility_cycle713_record_stress_block44_ir_reflected_carrier_boundary_2026_08_13.py": {
+   "embeds_old_sha": true,
+   "new": "nonzero_exit",
+   "new_elapsed": 0.14,
+   "new_reason": "    raise RuntimeError(\"current input binding failed: \" + \"; \".join(_INPUT_FAILURES))",
+   "old": "ok",
+   "old_elapsed": 9.83,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/admissibility_incidence_fierz_pauli_signed_record_source_full_tensor_cadence_boundary_2026_08_14.py": {
+   "embeds_old_sha": true,
+   "new": "nonzero_exit",
+   "new_elapsed": 0.37,
+   "new_reason": "    raise RuntimeError(\"current input binding failed: \" + \"; \".join(_INPUT_FAILURES))",
+   "old": "ok",
+   "old_elapsed": 16.02,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/admissibility_incidence_scalar_graph_matter_first_order_total_ward_cadence_boundary_2026_08_14.py": {
+   "embeds_old_sha": true,
+   "new": "nonzero_exit",
+   "new_elapsed": 0.1,
+   "new_reason": "    raise RuntimeError(\"current input binding failed: \" + \"; \".join(_INPUT_FAILURES))",
+   "old": "ok",
+   "old_elapsed": 16.67,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/admissibility_incidence_scalar_nonlinear_ward_constant_translation_aliasing_boundary_2026_08_14.py": {
+   "embeds_old_sha": true,
+   "new": "nonzero_exit",
+   "new_elapsed": 0.21,
+   "new_reason": "    raise RuntimeError(\"current input binding failed: \" + \"; \".join(_INPUT_FAILURES))",
+   "old": "ok",
+   "old_elapsed": 1.11,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/admissibility_reflected_curvature_action_record_source_two_step_transfer_boundary_2026_08_14.py": {
+   "embeds_old_sha": true,
+   "new": "nonzero_exit",
+   "new_elapsed": 0.34,
+   "new_reason": "    raise RuntimeError(\"current input binding failed: \" + \"; \".join(_INPUT_FAILURES))",
+   "old": "ok",
+   "old_elapsed": 22.28,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/admissibility_reflected_curvature_gravity_physical_reconstruction_cut_gate_boundary_2026_08_14.py": {
+   "embeds_old_sha": true,
+   "new": "nonzero_exit",
+   "new_elapsed": 0.78,
+   "new_reason": "    raise RuntimeError(\"current input binding failed: \" + \"; \".join(_INPUT_FAILURES))",
+   "old": "ok",
+   "old_elapsed": 9.07,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/audit_companion_minimal_axioms_clean_base_exact.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.18,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.13,
+   "tier": "E_runner_sha_stale"
+  },
+  "scripts/chirality_constructive_algebra.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.23,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.19,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/chirality_endpoint_algebra.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 1.87,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 1.47,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/chirality_finite_reflection_kernels.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.62,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.56,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/common_product_device_controls_2026_10_18.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 1.83,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 1.54,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/formation_rate_defines_static_regge_edges_exactly_check_2026_09_03.py": {
+   "embeds_old_sha": true,
+   "new": "nonzero_exit",
+   "new_elapsed": 0.1,
+   "new_reason": "    raise RuntimeError(\"missing or changed declared input: \" + relative)",
+   "old": "ok",
+   "old_elapsed": 21.57,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/frontier_admissibility_axis_separable_barycenter_selector_2026_08_14.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 7.38,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 13.05,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/frontier_admissibility_finite_state_markov_completion_2026_08_14.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 13.46,
+   "new_reason": "",
+   "old": "timeout",
+   "old_elapsed": 45.1,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/frontier_admissibility_record_continuation_refinement_2026_07_13.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.6,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 3.02,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/frontier_admissibility_six_neighbor_affine_cq_channel_classifier_2026_08_14.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 31.25,
+   "new_reason": "",
+   "old": "timeout",
+   "old_elapsed": 45.14,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/frontier_live_m2_pair_aware_swapback_collision_repair_2026_08_14.py": {
+   "embeds_old_sha": true,
+   "new": "nonzero_exit",
+   "new_elapsed": 0.36,
+   "new_reason": "subprocess.CalledProcessError: Command '('git', 'show', 'origin/main:docs/MINIMAL_AXIOMS_2026-06-29.md')' returned non-zero exit status 128.",
+   "old": "nonzero_exit",
+   "old_elapsed": 0.99,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/frontier_live_m2_typed_event_critical_pair_confluence_2026_08_14.py": {
+   "embeds_old_sha": true,
+   "new": "nonzero_exit",
+   "new_elapsed": 0.43,
+   "new_reason": "subprocess.CalledProcessError: Command '('git', 'rev-parse', 'origin/main')' returned non-zero exit status 128.",
+   "old": "nonzero_exit",
+   "old_elapsed": 0.68,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/frontier_record_native_marked_pure_birth_resource_generator_2026_08_14.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 25.28,
+   "new_reason": "",
+   "old": "timeout",
+   "old_elapsed": 45.19,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/frontier_record_sufficient_joint_law_state_ontology_fork_2026_08_14.py": {
+   "embeds_old_sha": true,
+   "new": "nonzero_exit",
+   "new_elapsed": 0.15,
+   "new_reason": "subprocess.CalledProcessError: Command '('git', 'rev-parse', 'origin/main')' returned non-zero exit status 128.",
+   "old": "nonzero_exit",
+   "old_elapsed": 2.14,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/linear_temporal_reparameterization_isotropic_quadratic_form_2026_08_13.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.4,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 8.43,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/min_time_step_is_planck_time_from_scale_reference_primitive_runner.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.05,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.68,
+   "tier": "B_already_stale_input"
+  },
+  "scripts/native_all_height_assisted_hop.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 1.13,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 1.99,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_assisted_hop.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.7,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 2.94,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_bound_mode_environment.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 3.24,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 8.91,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_character_independence.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.92,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 1.0,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_charged_column_pole.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.42,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 1.09,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_column_readout.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 2.9,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 7.02,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_com_propagation.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 3.77,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 10.08,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_common_metric_boundary.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.27,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.66,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_composite_readout.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 1.71,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 3.46,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_conserved_scalar.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 2.16,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 4.12,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_constituent_scattering.py": {
+   "embeds_old_sha": false,
+   "new": "timeout",
+   "new_elapsed": 45.04,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 34.5,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_constrained_fermion.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 2.02,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.99,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_density_spectrum_and_readout_energy_2026_09_30.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 33.71,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 10.21,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_dilute_field.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 20.88,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 8.2,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_dressed_patch.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 6.78,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 2.69,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_eightflux_bound_cluster.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 3.25,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 2.81,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_endpoint_bound_mode.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 1.74,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 1.27,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_energy_current.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 1.49,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 1.58,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_energy_source_pole.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.24,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.75,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_environment_cost.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.55,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.71,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_extended_environment.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.5,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.99,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_feature_interactions.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 2.07,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 1.65,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_feature_soft_sectors.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.36,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.3,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_finite_feature_collision.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.24,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.36,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_finite_range_arm.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 2.57,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 2.67,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_fixed_occupation_ladder.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.84,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.54,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_fixed_order_composite.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 1.3,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.98,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_four_layer_collective.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 2.9,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 2.32,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_frozen_arm_control.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 33.88,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 11.1,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_ground_window.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 1.11,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.93,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_isotropic_bound_feature.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 2.46,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 2.27,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_isotropic_collective.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 3.99,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 2.09,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_joining.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 1.12,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.43,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_large_feature_collision.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 3.18,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 1.5,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_large_feature_microscopic_window.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 1.08,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.6,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_light_column_window.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 4.08,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 2.89,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_loop_interaction_law.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 10.75,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 8.07,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_mixing_induced_vertex.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 7.38,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 10.07,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_odd_rectangle_response.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 20.77,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 14.44,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_pair_scattering.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 7.25,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 3.88,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_physical_pair_source.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 1.18,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.3,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_pole_envelope.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 3.5,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 2.75,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_polynomial_grid_pole.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.67,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.47,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_probe_loop_coupling.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 8.21,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 6.22,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_range_two_airy.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 3.51,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 2.52,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_realaxis_contrast.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 15.49,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 11.1,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_reflection_ground_sector.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 2.97,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 2.88,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_row_tunneling.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 2.8,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 2.43,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_scalar_tetramer.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 2.71,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 2.29,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_secondary_neutral_molecule.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 2.68,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 3.44,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_six_endpoint_binding.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 11.37,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 16.57,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_six_layer_ground_selection.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.24,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.43,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_six_layer_neutral_pole.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 5.0,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 9.18,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_sixflux_diagonal_mode.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.53,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 1.69,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_slab_response_density.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 8.87,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 31.83,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_static_response.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 1.47,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 2.55,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_ten_layer_neutral_bound.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.52,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 1.05,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_threshold_readout.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 41.55,
+   "new_reason": "",
+   "old": "timeout",
+   "old_elapsed": 45.12,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_transverse_bound_composite.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.76,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 1.84,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_two_feature_ladder.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 1.19,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 1.38,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/native_whole_column_modes.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 1.85,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 1.76,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/physical_block_cost_interval_lift_obstruction_cycle729_2026_08_04.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 10.4,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 8.27,
+   "tier": "B_already_stale_input"
+  },
+  "scripts/physical_column_family_parity_law_forced_orbits_cycle733_2026_08_04.py": {
+   "embeds_old_sha": false,
+   "new": "timeout",
+   "new_elapsed": 45.05,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 30.44,
+   "tier": "B_already_stale_input"
+  },
+  "scripts/physical_facet_charge_tick_mixed_split_cycle726_2026_08_04.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 24.26,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 5.04,
+   "tier": "B_already_stale_input"
+  },
+  "scripts/physical_least_cost_cutting_piece_charge_cycle735_2026_08_05.py": {
+   "embeds_old_sha": false,
+   "new": "timeout",
+   "new_elapsed": 45.11,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 26.83,
+   "tier": "B_already_stale_input"
+  },
+  "scripts/physical_least_cost_cutting_piece_charge_cycle735_independent_check_2026_08_05.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 30.18,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 33.71,
+   "tier": "B_already_stale_input"
+  },
+  "scripts/physical_parity_certificate_cost_spectrum_cycle732_2026_08_04.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 21.22,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 21.98,
+   "tier": "B_already_stale_input"
+  },
+  "scripts/physical_parity_certificate_cost_spectrum_cycle732_independent_check_2026_08_04.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 3.37,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 3.23,
+   "tier": "B_already_stale_input"
+  },
+  "scripts/physical_tick_extensive_adjacency_bracket_cycle727_2026_08_04.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 40.35,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 35.43,
+   "tier": "B_already_stale_input"
+  },
+  "scripts/product_reference_attachment_controls_2026_10_18.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.89,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.44,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/real_control_autonomous_output_2026_10_17.py": {
+   "embeds_old_sha": false,
+   "new": "nonzero_exit",
+   "new_elapsed": 0.24,
+   "new_reason": "AssertionError: docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+   "old": "ok",
+   "old_elapsed": 1.27,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/regge_action_per_cell_and_the_conditional_gravity_coupling_2026_10_21.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 35.8,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 26.31,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/scale_ladder_gravity_d4cone_exact_ward_site_scalar_2026_10_18.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 3.71,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 3.07,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/scale_ladder_gravity_d4cone_strain_reading_exchange_2026_10_18.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 18.15,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 15.15,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/scale_ladder_gravity_records_to_geometry_lossless_passing_and_the_tick_2026_10_18.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 8.55,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 7.67,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/spatial_lattice_gauge_fermion_logarithms_and_metric_attraction_limits_2026_09_14.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 3.68,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 2.89,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/spin_half_cubic_ice_finite_delta_charge_coulomb_join_2026_09_03.py": {
+   "embeds_old_sha": true,
+   "new": "nonzero_exit",
+   "new_elapsed": 0.73,
+   "new_reason": "RuntimeError: current source/input identity mismatch: docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+   "old": "ok",
+   "old_elapsed": 0.65,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/spin_half_cubic_ice_finite_delta_magnetic_twist_2026_09_04.py": {
+   "embeds_old_sha": true,
+   "new": "nonzero_exit",
+   "new_elapsed": 0.58,
+   "new_reason": "RuntimeError: current source/input identity mismatch: docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+   "old": "ok",
+   "old_elapsed": 3.94,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py": {
+   "embeds_old_sha": true,
+   "new": "nonzero_exit",
+   "new_elapsed": 0.54,
+   "new_reason": "RuntimeError: current source/input identity mismatch: docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+   "old": "ok",
+   "old_elapsed": 0.63,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/spin_half_cubic_ice_infrared_forward_replay_2026_09_04.py": {
+   "embeds_old_sha": true,
+   "new": "nonzero_exit",
+   "new_elapsed": 0.47,
+   "new_reason": "RuntimeError: current source/input identity mismatch: docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+   "old": "ok",
+   "old_elapsed": 0.46,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/spin_half_cubic_ice_infrared_maxwell_failure_localization_2026_09_04.py": {
+   "embeds_old_sha": true,
+   "new": "nonzero_exit",
+   "new_elapsed": 0.56,
+   "new_reason": "RuntimeError: current source/input identity mismatch: docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+   "old": "ok",
+   "old_elapsed": 0.55,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/spin_half_cubic_ice_late_time_maxwell_join_2026_09_04.py": {
+   "embeds_old_sha": true,
+   "new": "nonzero_exit",
+   "new_elapsed": 0.53,
+   "new_reason": "RuntimeError: current source/input identity mismatch: docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+   "old": "ok",
+   "old_elapsed": 0.54,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 18.25,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 14.85,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/thermal_resonance_halt_2026_10_17.py": {
+   "embeds_old_sha": false,
+   "new": "nonzero_exit",
+   "new_elapsed": 0.06,
+   "new_reason": "AssertionError: docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+   "old": "ok",
+   "old_elapsed": 1.43,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/u1_conserved_source_coulomb_photon_bridge_2026_09_03.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.37,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.36,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/u1_exact_source_work_closed_dipole_radiation_2026_09_03.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.58,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.41,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/u1_finite_clock_gauge_matter_tame_maxwell_bridge_2026_09_03.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.81,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.64,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/u1_finite_step_matter_current_operator_work_interface_2026_09_03.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.22,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.13,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/u1_local_reversible_yee_leapfrog_tick_2026_09_03.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.22,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.19,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/u1_minimal_maxwell_generator_uniqueness_2026_09_03.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.23,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.13,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/u1_quantum_link_exact_backreaction_colored_floquet_2026_09_03.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.35,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.31,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/u1_quantum_link_matter_magnetic_plaquette_finite_step_join_2026_09_03.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.94,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.7,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/u1_radius_one_onsite_unitary_maxwell_obstruction_2026_09_03.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.24,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.18,
+   "tier": "A_fresh_becomes_stale"
+  },
+  "scripts/u1_role_compiled_yee_maxwell_time_selection_fork_2026_09_03.py": {
+   "embeds_old_sha": false,
+   "new": "ok",
+   "new_elapsed": 0.17,
+   "new_reason": "",
+   "old": "ok",
+   "old_elapsed": 0.12,
+   "tier": "A_fresh_becomes_stale"
+  }
+ }
+}

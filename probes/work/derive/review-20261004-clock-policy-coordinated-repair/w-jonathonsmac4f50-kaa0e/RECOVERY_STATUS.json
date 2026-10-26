@@ -1,0 +1,72 @@
+{
+ "source_branch": "main (task) / fix/time-wording-current-axioms (author branch)",
+ "source_head": "2868a0c453e667d1267f0e1e7403732a11893d78",
+ "current_main_checked": "3e1a2dd2531590dabf85bee8db56175ba9b96e90",
+ "author_commit": "113ab6987c308338c53759368761e5521ab91b10",
+ "source_objects": [
+  {
+   "path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
+   "sha256": "e6952f8bb3fb033a96e9fac6e10d877b3b3576f7ead872f2140ed832ac166700",
+   "verified": true
+  },
+  {
+   "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+   "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+   "verified": true
+  },
+  {
+   "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+   "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+   "verified": true
+  },
+  {
+   "path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
+   "sha256": "2c9e197d8194a8b957e263cc4be9a5f36fbbb89c8341ff296ec16543be53b5a2",
+   "verified": true
+  },
+  {
+   "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+   "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35",
+   "verified": true
+  },
+  {
+   "path": "docs/audit/data/skill_axiom_baseline_manifest.json",
+   "sha256": "e2fe4183a44fdbf749bd4797984188d69380ad1c91653e00ce8b55b9b460e105",
+   "verified": true
+  }
+ ],
+ "author_blobs": [
+  {
+   "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+   "sha256": "6c4a433b4cd47ec889e0cb5d539f211728458591f73f5368faac81b7b56726b3",
+   "verified": true
+  },
+  {
+   "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+   "sha256": "601e39a1ef57ac7f9f0d5a7fdcc51f9bb1a06800d54432010e363f5800061047",
+   "verified": true
+  },
+  {
+   "path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
+   "sha256": "ac1c192a3707800da56e5ff5407b7103e13ad0352569ee6c80d8246a4d146cbe",
+   "verified": true
+  },
+  {
+   "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+   "sha256": "a6ca0ff038d2950103b6b8b4dbda9021c701360fc93ce5a406a361c412ba43f8",
+   "verified": true
+  },
+  {
+   "path": "docs/audit/data/skill_axiom_baseline_manifest.json",
+   "sha256": "11b9889d7ccb007575eead706733408b7faa48a0c33a460e402e15a0929f6acd",
+   "verified": true
+  }
+ ],
+ "first_unresolved_step": "Step 13(b) of ATTEMPT.md: 33 of the 165 pinned runners embed the old note/skill sha256 (EXECUTION_PLAN.json embeds_old_sha) and, with 2 more that bind the files another way, fail after the repair (16 of 117 executed); their expected hashes need a reviewed re-pin before cache recapture can yield passing caches",
+ "remaining_work": [
+  "land the five-file repair as its own reviewed change (not done here)",
+  "reviewed re-pin of hash-pinned runners and the INPUT_CLOSURE/PREMISE_FRESHNESS json files that quote the old sha256 (census in ATTEMPT.md)",
+  "execute EXECUTION_PLAN.json shards with precompute_audit_runners.py (not executed here: it writes logs/runner-cache in the repo)",
+  "24 affected runners have no cache and are slow (48-97 s observed) or have unreadable declared inputs; decide separately"
+ ]
+}

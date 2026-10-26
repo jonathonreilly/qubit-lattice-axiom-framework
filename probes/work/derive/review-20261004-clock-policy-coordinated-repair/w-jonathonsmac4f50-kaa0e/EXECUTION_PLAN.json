@@ -1,0 +1,2178 @@
+{
+ "base_commit": "3e1a2dd2531590dabf85bee8db56175ba9b96e90",
+ "cached_elapsed_sum_s": 3259.0,
+ "command_per_shard": "python3 scripts/precompute_audit_runners.py --runners <csv> --concurrency 1 --push-mode none --allow-non-main",
+ "concurrency_note": "2 shards run as 2 processes; default --concurrency 8 would exceed the 1.5 GB per-process / 2-3 heavy process memory budget",
+ "counts": {
+  "embeds_old_sha": 33,
+  "fresh_to_stale": 122,
+  "runnable": 162,
+  "total": 165,
+  "unreadable_declared_input": 3
+ },
+ "patch_source": "regenerated from author commit 113ab6987c308338c53759368761e5521ab91b10 (kinetic-note edit) via generate_skill_axiom_baselines.py",
+ "preconditions": [
+  "land the five-file source repair first (separate reviewed PR)",
+  "re-pin or re-review every runner in embeds_old_sha BEFORE recapture (their source embeds the old note sha256 and fails after the repair)",
+  "do not edit cache headers, do not touch docs/audit/data/dependency_policy_epoch.json, do not waive the freshness check"
+ ],
+ "runners": [
+  {
+   "cached_elapsed_s": 0.37,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/ac_occupancy_grain_support_typed_target_repair_2026_09_02.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": null,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "missing",
+   "pre": "missing",
+   "runner": "scripts/admissibility_canonical_two_tt_positive_transfer_record_source_continuity_lstar_boundary_2026_08_11.py",
+   "tier": "C_no_cache_yet",
+   "timeout_s": 180
+  },
+  {
+   "cached_elapsed_s": null,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "missing",
+   "pre": "missing",
+   "runner": "scripts/admissibility_centered_tick_edge_defect_improvement_exact_static_regge_source_boundary_2026_08_10.py",
+   "tier": "C_no_cache_yet",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": null,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "missing",
+   "pre": "missing",
+   "runner": "scripts/admissibility_closed_helical_defect_history_ward_neutral_ir_regge_response_boundary_2026_08_10.py",
+   "tier": "C_no_cache_yet",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": null,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "missing",
+   "pre": "missing",
+   "runner": "scripts/admissibility_compact_regge_homogeneous_reaction_rank_kkt_boundary_2026_08_10.py",
+   "tier": "C_no_cache_yet",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": null,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "missing",
+   "pre": "missing",
+   "runner": "scripts/admissibility_cut_worldvolume_affine_bag_regge_monopole_boundary_2026_08_10.py",
+   "tier": "C_no_cache_yet",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": 36.03,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/admissibility_cycle713_record_head_adm_work_archive_state_boundary_2026_08_14.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 240
+  },
+  {
+   "cached_elapsed_s": 6.72,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/admissibility_cycle713_record_stress_block44_ir_reflected_carrier_boundary_2026_08_13.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 180
+  },
+  {
+   "cached_elapsed_s": null,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "missing",
+   "pre": "missing",
+   "runner": "scripts/admissibility_fixed_metric_nonlinear_regge_kkt_continuation_2026_08_10.py",
+   "tier": "C_no_cache_yet",
+   "timeout_s": 240
+  },
+  {
+   "cached_elapsed_s": null,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "missing",
+   "pre": "missing",
+   "runner": "scripts/admissibility_flat_regge_curvature_squared_branch_lift_2026_08_10.py",
+   "tier": "C_no_cache_yet",
+   "timeout_s": 240
+  },
+  {
+   "cached_elapsed_s": null,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "missing",
+   "pre": "missing",
+   "runner": "scripts/admissibility_incidence_adm_depth_two_sourced_constraint_record_cadence_boundary_2026_08_14.py",
+   "tier": "C_no_cache_yet",
+   "timeout_s": 240
+  },
+  {
+   "cached_elapsed_s": 8.67,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/admissibility_incidence_fierz_pauli_signed_record_source_full_tensor_cadence_boundary_2026_08_14.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 240
+  },
+  {
+   "cached_elapsed_s": 10.61,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/admissibility_incidence_scalar_graph_matter_first_order_total_ward_cadence_boundary_2026_08_14.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": 0.61,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/admissibility_incidence_scalar_nonlinear_ward_constant_translation_aliasing_boundary_2026_08_14.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": null,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "missing",
+   "pre": "missing",
+   "runner": "scripts/admissibility_nonlinear_regge_extra_branch_cubic_lift_2026_08_10.py",
+   "tier": "C_no_cache_yet",
+   "timeout_s": 240
+  },
+  {
+   "cached_elapsed_s": 13.02,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/admissibility_reflected_curvature_action_record_source_two_step_transfer_boundary_2026_08_14.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 240
+  },
+  {
+   "cached_elapsed_s": 5.45,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/admissibility_reflected_curvature_gravity_physical_reconstruction_cut_gate_boundary_2026_08_14.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 240
+  },
+  {
+   "cached_elapsed_s": null,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "missing",
+   "pre": "missing",
+   "runner": "scripts/admissibility_symbol_definability_exact_law_reference_probe_2026_07_14.py",
+   "tier": "D_unreadable_declared_input",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": null,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "missing",
+   "pre": "missing",
+   "runner": "scripts/admissibility_timelike_edge_current_network_compact_homothety_regge_boundary_2026_08_10.py",
+   "tier": "C_no_cache_yet",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": null,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "missing",
+   "pre": "missing",
+   "runner": "scripts/admissibility_two_tt_split_step_record_frontier_causal_macro_update_lstar_boundary_2026_08_11.py",
+   "tier": "C_no_cache_yet",
+   "timeout_s": 180
+  },
+  {
+   "cached_elapsed_s": 0.13,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "sha_mismatch",
+   "pre": "sha_mismatch",
+   "runner": "scripts/audit_companion_minimal_axioms_clean_base_exact.py",
+   "tier": "E_runner_sha_stale",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": 0.19,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/chirality_constructive_algebra.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 180
+  },
+  {
+   "cached_elapsed_s": 0.89,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/chirality_endpoint_algebra.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 180
+  },
+  {
+   "cached_elapsed_s": 0.35,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/chirality_finite_reflection_kernels.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": 1.1,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/common_product_device_controls_2026_10_18.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 15.02,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/formation_rate_defines_static_regge_edges_exactly_check_2026_09_03.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": 4.47,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/frontier_admissibility_axis_separable_barycenter_selector_2026_08_14.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": 7.74,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/frontier_admissibility_finite_state_markov_completion_2026_08_14.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 30
+  },
+  {
+   "cached_elapsed_s": 0.48,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/frontier_admissibility_record_continuation_refinement_2026_07_13.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": 19.14,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/frontier_admissibility_six_neighbor_affine_cq_channel_classifier_2026_08_14.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": 68.92,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/frontier_admissibility_taxicab_shell_record_instrument_2026_08_14.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": 41.15,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/frontier_live_m2_joint_archive_graph_permutation_capacity_2026_08_14.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 240
+  },
+  {
+   "cached_elapsed_s": 20.73,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/frontier_live_m2_joint_order_environment_collision_instrument_2026_08_14.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 240
+  },
+  {
+   "cached_elapsed_s": 6.29,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/frontier_live_m2_pair_aware_swapback_collision_repair_2026_08_14.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 180
+  },
+  {
+   "cached_elapsed_s": 0.53,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/frontier_live_m2_typed_event_critical_pair_confluence_2026_08_14.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 180
+  },
+  {
+   "cached_elapsed_s": 16.28,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/frontier_record_native_marked_pure_birth_resource_generator_2026_08_14.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": 0.37,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/frontier_record_sufficient_joint_law_state_ontology_fork_2026_08_14.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": 0.38,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/linear_temporal_reparameterization_isotropic_quadratic_form_2026_08_13.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": 0.05,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+    "docs/audit/data/skill_axiom_baseline_manifest.json"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "input_mismatch",
+   "runner": "scripts/min_time_step_is_planck_time_from_scale_reference_primitive_runner.py",
+   "tier": "B_already_stale_input",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": 0.42,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_all_height_assisted_hop.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 600
+  },
+  {
+   "cached_elapsed_s": 0.29,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_assisted_hop.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 600
+  },
+  {
+   "cached_elapsed_s": 2.05,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_bound_mode_environment.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 0.25,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_character_independence.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 0.36,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_charged_column_pole.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 1.58,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_column_readout.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 600
+  },
+  {
+   "cached_elapsed_s": 2.44,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_com_propagation.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 0.15,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_common_metric_boundary.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 1.1,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_composite_readout.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 1.35,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_conserved_scalar.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 8.68,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_constituent_scattering.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 900
+  },
+  {
+   "cached_elapsed_s": 0.33,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_constrained_fermion.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 3.46,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_density_spectrum_and_readout_energy_2026_09_30.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": 2.6,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_dilute_field.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 1.1,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_dressed_patch.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 600
+  },
+  {
+   "cached_elapsed_s": 0.9,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_eightflux_bound_cluster.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 0.63,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_endpoint_bound_mode.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 0.43,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_energy_current.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 0.14,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_energy_source_pole.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 0.25,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_environment_cost.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 0.2,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_extended_environment.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 0.58,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_feature_interactions.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 0.19,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_feature_soft_sectors.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 0.13,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_finite_feature_collision.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 1.36,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_finite_range_arm.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 0.25,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_fixed_occupation_ladder.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 0.52,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_fixed_order_composite.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 1.51,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_four_layer_collective.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 4.04,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_frozen_arm_control.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 0.19,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_ground_window.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 600
+  },
+  {
+   "cached_elapsed_s": 0.56,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_isotropic_bound_feature.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 0.58,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_isotropic_collective.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 0.13,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_joining.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 36.58,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_large_bound_feature.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 900
+  },
+  {
+   "cached_elapsed_s": 0.69,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_large_feature_collision.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 600
+  },
+  {
+   "cached_elapsed_s": 0.19,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_large_feature_microscopic_window.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 35.98,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_large_feature_mobility.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 900
+  },
+  {
+   "cached_elapsed_s": 1.1,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_light_column_window.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 600
+  },
+  {
+   "cached_elapsed_s": 2.24,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_loop_interaction_law.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 1.71,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_mixing_induced_vertex.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 4.21,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_odd_rectangle_response.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 600
+  },
+  {
+   "cached_elapsed_s": 0.84,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_pair_scattering.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 0.14,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_physical_pair_source.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 1.18,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_pole_envelope.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 0.26,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_polynomial_grid_pole.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 3.07,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_probe_loop_coupling.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 900
+  },
+  {
+   "cached_elapsed_s": 0.9,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_range_two_airy.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 5.52,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_realaxis_contrast.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 600
+  },
+  {
+   "cached_elapsed_s": 0.88,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_reflection_ground_sector.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 1.02,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_row_tunneling.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 1.02,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_scalar_tetramer.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 0.73,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_secondary_neutral_molecule.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 5.56,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_six_endpoint_binding.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 600
+  },
+  {
+   "cached_elapsed_s": 0.14,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_six_layer_ground_selection.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 1.14,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_six_layer_neutral_pole.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 900
+  },
+  {
+   "cached_elapsed_s": 0.19,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_sixflux_diagonal_mode.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 2.34,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_slab_response_density.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 900
+  },
+  {
+   "cached_elapsed_s": 0.45,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_static_response.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 0.25,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_ten_layer_neutral_bound.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 600
+  },
+  {
+   "cached_elapsed_s": 12.56,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_threshold_readout.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 900
+  },
+  {
+   "cached_elapsed_s": 0.48,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_transverse_bound_composite.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 0.6,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_two_feature_ladder.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 0.95,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/native_whole_column_modes.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 600
+  },
+  {
+   "cached_elapsed_s": 5.03,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "input_mismatch",
+   "runner": "scripts/physical_block_cost_interval_lift_obstruction_cycle729_2026_08_04.py",
+   "tier": "B_already_stale_input",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": null,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "sha_mismatch",
+   "pre": "sha_mismatch",
+   "runner": "scripts/physical_cell_cutting_charge_space_cycle736_2026_08_05.py",
+   "tier": "E_runner_sha_stale",
+   "timeout_s": 180
+  },
+  {
+   "cached_elapsed_s": 406.35,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 900
+  },
+  {
+   "cached_elapsed_s": 393.75,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 900
+  },
+  {
+   "cached_elapsed_s": 128.78,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "input_mismatch",
+   "runner": "scripts/physical_cell_cutting_twelve_frontier_cycle739_2026_08_05.py",
+   "tier": "B_already_stale_input",
+   "timeout_s": 900
+  },
+  {
+   "cached_elapsed_s": 743.56,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "input_mismatch",
+   "runner": "scripts/physical_cell_cutting_twelve_frontier_cycle739_independent_check_2026_08_05.py",
+   "tier": "B_already_stale_input",
+   "timeout_s": 900
+  },
+  {
+   "cached_elapsed_s": 18.21,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "input_mismatch",
+   "runner": "scripts/physical_column_family_parity_law_forced_orbits_cycle733_2026_08_04.py",
+   "tier": "B_already_stale_input",
+   "timeout_s": 180
+  },
+  {
+   "cached_elapsed_s": 251.75,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "input_mismatch",
+   "runner": "scripts/physical_cost_identity_indicator_certificate_cycle731_2026_08_04.py",
+   "tier": "B_already_stale_input",
+   "timeout_s": 600
+  },
+  {
+   "cached_elapsed_s": 144.46,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "input_mismatch",
+   "runner": "scripts/physical_cost_identity_indicator_certificate_cycle731_independent_check_2026_08_04.py",
+   "tier": "B_already_stale_input",
+   "timeout_s": 600
+  },
+  {
+   "cached_elapsed_s": 1.8,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "input_mismatch",
+   "runner": "scripts/physical_facet_charge_tick_mixed_split_cycle726_2026_08_04.py",
+   "tier": "B_already_stale_input",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 74.03,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "input_mismatch",
+   "runner": "scripts/physical_least_cost_cutting_flip_and_move_ladder_cycle734_2026_08_04.py",
+   "tier": "B_already_stale_input",
+   "timeout_s": 600
+  },
+  {
+   "cached_elapsed_s": 60.56,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "input_mismatch",
+   "runner": "scripts/physical_least_cost_cutting_flip_and_move_ladder_cycle734_independent_check_2026_08_04.py",
+   "tier": "B_already_stale_input",
+   "timeout_s": 600
+  },
+  {
+   "cached_elapsed_s": 14.52,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "input_mismatch",
+   "runner": "scripts/physical_least_cost_cutting_piece_charge_cycle735_2026_08_05.py",
+   "tier": "B_already_stale_input",
+   "timeout_s": 600
+  },
+  {
+   "cached_elapsed_s": 16.25,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "input_mismatch",
+   "runner": "scripts/physical_least_cost_cutting_piece_charge_cycle735_independent_check_2026_08_05.py",
+   "tier": "B_already_stale_input",
+   "timeout_s": 600
+  },
+  {
+   "cached_elapsed_s": 30.69,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "input_mismatch",
+   "runner": "scripts/physical_local_extremality_rule_cell_cycle730_2026_08_04.py",
+   "tier": "B_already_stale_input",
+   "timeout_s": 180
+  },
+  {
+   "cached_elapsed_s": 13.86,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "input_mismatch",
+   "runner": "scripts/physical_parity_certificate_cost_spectrum_cycle732_2026_08_04.py",
+   "tier": "B_already_stale_input",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 2.37,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "input_mismatch",
+   "runner": "scripts/physical_parity_certificate_cost_spectrum_cycle732_independent_check_2026_08_04.py",
+   "tier": "B_already_stale_input",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 19.48,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "input_mismatch",
+   "runner": "scripts/physical_tick_extensive_adjacency_bracket_cycle727_2026_08_04.py",
+   "tier": "B_already_stale_input",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 40.78,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "input_mismatch",
+   "runner": "scripts/physical_tick_extensive_adjacency_bracket_cycle727_independent_check_2026_08_04.py",
+   "tier": "B_already_stale_input",
+   "timeout_s": 600
+  },
+  {
+   "cached_elapsed_s": null,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "missing",
+   "pre": "missing",
+   "runner": "scripts/post_cycle124_minimum_axiom_and_compiler_delta_cycle126_2026_07_15.py",
+   "tier": "D_unreadable_declared_input",
+   "timeout_s": 900
+  },
+  {
+   "cached_elapsed_s": null,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "missing",
+   "pre": "missing",
+   "runner": "scripts/post_cycle132_minimum_axiom_and_compiler_campaign_cycle133_2026_07_15.py",
+   "tier": "D_unreadable_declared_input",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": 0.35,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/product_reference_attachment_controls_2026_10_18.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 180
+  },
+  {
+   "cached_elapsed_s": 0.42,
+   "declares": [
+    "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/real_control_autonomous_output_2026_10_17.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 45
+  },
+  {
+   "cached_elapsed_s": 28.56,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/regge_4d_complex_native_linearised_graviton_dispersion_check_2026_09_03.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 150
+  },
+  {
+   "cached_elapsed_s": 16.53,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/regge_action_per_cell_and_the_conditional_gravity_coupling_2026_10_21.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": 129.31,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/scale_ladder_gravity_canonical_carrier_census_2026_10_18.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 600
+  },
+  {
+   "cached_elapsed_s": 66.78,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/scale_ladder_gravity_d4_cone_common_cone_spins_zero_one_two_2026_10_18.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 23.13,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/scale_ladder_gravity_d4_cone_fermion_cone_reflection_positivity_curvature_squared_2026_10_18.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 2.11,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/scale_ladder_gravity_d4cone_exact_ward_site_scalar_2026_10_18.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 600
+  },
+  {
+   "cached_elapsed_s": 10.04,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/scale_ladder_gravity_d4cone_strain_reading_exchange_2026_10_18.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 36.32,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/scale_ladder_gravity_orthoscheme_zero_action_curvature_2026_10_18.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 7.14,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/scale_ladder_gravity_records_to_geometry_lossless_passing_and_the_tick_2026_10_18.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 1200
+  },
+  {
+   "cached_elapsed_s": 31.91,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/scale_ladder_gravity_regge_metric_universality_common_cone_2026_10_18.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 300
+  },
+  {
+   "cached_elapsed_s": 3.46,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/spatial_lattice_gauge_fermion_logarithms_and_metric_attraction_limits_2026_09_14.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 90
+  },
+  {
+   "cached_elapsed_s": 0.41,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/spin_half_cubic_ice_finite_delta_charge_coulomb_join_2026_09_03.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 150
+  },
+  {
+   "cached_elapsed_s": 2.74,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/spin_half_cubic_ice_finite_delta_magnetic_twist_2026_09_04.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 150
+  },
+  {
+   "cached_elapsed_s": 0.44,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 150
+  },
+  {
+   "cached_elapsed_s": null,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "missing",
+   "pre": "missing",
+   "runner": "scripts/spin_half_cubic_ice_forward_length_high_stat_extension_2026_09_04.py",
+   "tier": "C_no_cache_yet",
+   "timeout_s": 150
+  },
+  {
+   "cached_elapsed_s": null,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "missing",
+   "pre": "missing",
+   "runner": "scripts/spin_half_cubic_ice_forward_length_ladder_2026_09_04.py",
+   "tier": "C_no_cache_yet",
+   "timeout_s": 150
+  },
+  {
+   "cached_elapsed_s": 0.66,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/spin_half_cubic_ice_infrared_forward_replay_2026_09_04.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 150
+  },
+  {
+   "cached_elapsed_s": null,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "missing",
+   "pre": "missing",
+   "runner": "scripts/spin_half_cubic_ice_infrared_forward_replay_join_2026_09_04.py",
+   "tier": "C_no_cache_yet",
+   "timeout_s": 150
+  },
+  {
+   "cached_elapsed_s": null,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "missing",
+   "pre": "missing",
+   "runner": "scripts/spin_half_cubic_ice_infrared_ladder_2026_09_04.py",
+   "tier": "C_no_cache_yet",
+   "timeout_s": 150
+  },
+  {
+   "cached_elapsed_s": 0.43,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/spin_half_cubic_ice_infrared_maxwell_failure_localization_2026_09_04.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 150
+  },
+  {
+   "cached_elapsed_s": null,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "missing",
+   "pre": "missing",
+   "runner": "scripts/spin_half_cubic_ice_infrared_maxwell_health_reanalysis_2026_09_04.py",
+   "tier": "C_no_cache_yet",
+   "timeout_s": 150
+  },
+  {
+   "cached_elapsed_s": null,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "missing",
+   "pre": "missing",
+   "runner": "scripts/spin_half_cubic_ice_infrared_maxwell_join_2026_09_04.py",
+   "tier": "C_no_cache_yet",
+   "timeout_s": 150
+  },
+  {
+   "cached_elapsed_s": 0.37,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/spin_half_cubic_ice_late_time_maxwell_join_2026_09_04.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 150
+  },
+  {
+   "cached_elapsed_s": null,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "missing",
+   "pre": "missing",
+   "runner": "scripts/spin_half_cubic_ice_off_axis_cubic_orbit_scout_2026_09_04.py",
+   "tier": "C_no_cache_yet",
+   "timeout_s": 150
+  },
+  {
+   "cached_elapsed_s": null,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "missing",
+   "pre": "missing",
+   "runner": "scripts/spin_half_cubic_ice_off_axis_maxwell_isotropy_2026_09_04.py",
+   "tier": "C_no_cache_yet",
+   "timeout_s": 150
+  },
+  {
+   "cached_elapsed_s": null,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "missing",
+   "pre": "missing",
+   "runner": "scripts/spin_half_cubic_ice_off_axis_staggered_orbit_scout_2026_09_04.py",
+   "tier": "C_no_cache_yet",
+   "timeout_s": 150
+  },
+  {
+   "cached_elapsed_s": null,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": true,
+   "post": "missing",
+   "pre": "missing",
+   "runner": "scripts/spin_half_cubic_ice_off_axis_transverse_scout_2026_09_04.py",
+   "tier": "C_no_cache_yet",
+   "timeout_s": 150
+  },
+  {
+   "cached_elapsed_s": 11.13,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": 69.54,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/spin_half_cubic_ice_topological_electric_stiffness_2026_09_03.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": 0.71,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/thermal_resonance_halt_2026_10_17.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 45
+  },
+  {
+   "cached_elapsed_s": 0.31,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/u1_conserved_source_coulomb_photon_bridge_2026_09_03.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": 0.43,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/u1_exact_source_work_closed_dipole_radiation_2026_09_03.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": 0.55,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/u1_finite_clock_gauge_matter_tame_maxwell_bridge_2026_09_03.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": 0.14,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/u1_finite_step_matter_current_operator_work_interface_2026_09_03.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": 0.19,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/u1_local_reversible_yee_leapfrog_tick_2026_09_03.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": 0.14,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/u1_minimal_maxwell_generator_uniqueness_2026_09_03.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": 0.25,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/u1_quantum_link_exact_backreaction_colored_floquet_2026_09_03.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": 0.61,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/u1_quantum_link_matter_magnetic_plaquette_finite_step_join_2026_09_03.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": 0.15,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/u1_radius_one_onsite_unitary_maxwell_obstruction_2026_09_03.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 120
+  },
+  {
+   "cached_elapsed_s": 0.14,
+   "declares": [
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+   ],
+   "embeds_old_sha": false,
+   "post": "input_mismatch",
+   "pre": "fresh",
+   "runner": "scripts/u1_role_compiled_yee_maxwell_time_selection_fork_2026_09_03.py",
+   "tier": "A_fresh_becomes_stale",
+   "timeout_s": 120
+  }
+ ],
+ "shard_runners": [
+  [
+   "scripts/physical_cell_cutting_twelve_frontier_cycle739_independent_check_2026_08_05.py",
+   "scripts/physical_cost_identity_indicator_certificate_cycle731_2026_08_04.py",
+   "scripts/admissibility_flat_regge_curvature_squared_branch_lift_2026_08_10.py",
+   "scripts/admissibility_nonlinear_regge_extra_branch_cubic_lift_2026_08_10.py",
+   "scripts/physical_cell_cutting_charge_space_cycle736_2026_08_05.py",
+   "scripts/spin_half_cubic_ice_forward_length_ladder_2026_09_04.py",
+   "scripts/spin_half_cubic_ice_infrared_ladder_2026_09_04.py",
+   "scripts/spin_half_cubic_ice_infrared_maxwell_join_2026_09_04.py",
+   "scripts/spin_half_cubic_ice_off_axis_maxwell_isotropy_2026_09_04.py",
+   "scripts/spin_half_cubic_ice_off_axis_transverse_scout_2026_09_04.py",
+   "scripts/scale_ladder_gravity_canonical_carrier_census_2026_10_18.py",
+   "scripts/admissibility_centered_tick_edge_defect_improvement_exact_static_regge_source_boundary_2026_08_10.py",
+   "scripts/admissibility_closed_helical_defect_history_ward_neutral_ir_regge_response_boundary_2026_08_10.py",
+   "scripts/admissibility_cut_worldvolume_affine_bag_regge_monopole_boundary_2026_08_10.py",
+   "scripts/physical_least_cost_cutting_flip_and_move_ladder_cycle734_2026_08_04.py",
+   "scripts/frontier_admissibility_taxicab_shell_record_instrument_2026_08_14.py",
+   "scripts/physical_least_cost_cutting_flip_and_move_ladder_cycle734_independent_check_2026_08_04.py",
+   "scripts/native_large_bound_feature.py",
+   "scripts/admissibility_cycle713_record_head_adm_work_archive_state_boundary_2026_08_14.py",
+   "scripts/scale_ladder_gravity_regge_metric_universality_common_cone_2026_10_18.py",
+   "scripts/regge_4d_complex_native_linearised_graviton_dispersion_check_2026_09_03.py",
+   "scripts/frontier_live_m2_joint_order_environment_collision_instrument_2026_08_14.py",
+   "scripts/frontier_admissibility_six_neighbor_affine_cq_channel_classifier_2026_08_14.py",
+   "scripts/regge_action_per_cell_and_the_conditional_gravity_coupling_2026_10_21.py",
+   "scripts/physical_least_cost_cutting_piece_charge_cycle735_independent_check_2026_08_05.py",
+   "scripts/physical_least_cost_cutting_piece_charge_cycle735_2026_08_05.py",
+   "scripts/admissibility_reflected_curvature_action_record_source_two_step_transfer_boundary_2026_08_14.py",
+   "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py",
+   "scripts/admissibility_incidence_scalar_graph_matter_first_order_total_ward_cadence_boundary_2026_08_14.py",
+   "scripts/native_constituent_scattering.py",
+   "scripts/frontier_admissibility_finite_state_markov_completion_2026_08_14.py",
+   "scripts/frontier_live_m2_pair_aware_swapback_collision_repair_2026_08_14.py",
+   "scripts/native_realaxis_contrast.py",
+   "scripts/physical_block_cost_interval_lift_obstruction_cycle729_2026_08_04.py",
+   "scripts/frontier_admissibility_axis_separable_barycenter_selector_2026_08_14.py",
+   "scripts/native_frozen_arm_control.py",
+   "scripts/native_probe_loop_coupling.py",
+   "scripts/native_dilute_field.py",
+   "scripts/physical_parity_certificate_cost_spectrum_cycle732_independent_check_2026_08_04.py",
+   "scripts/native_slab_response_density.py",
+   "scripts/native_bound_mode_environment.py",
+   "scripts/physical_facet_charge_tick_mixed_split_cycle726_2026_08_04.py",
+   "scripts/native_four_layer_collective.py",
+   "scripts/native_finite_range_arm.py",
+   "scripts/native_six_layer_neutral_pole.py",
+   "scripts/common_product_device_controls_2026_10_18.py",
+   "scripts/native_dressed_patch.py",
+   "scripts/native_row_tunneling.py",
+   "scripts/native_whole_column_modes.py",
+   "scripts/chirality_endpoint_algebra.py",
+   "scripts/native_pair_scattering.py",
+   "scripts/native_secondary_neutral_molecule.py",
+   "scripts/native_large_feature_collision.py",
+   "scripts/admissibility_incidence_scalar_nonlinear_ward_constant_translation_aliasing_boundary_2026_08_14.py",
+   "scripts/u1_quantum_link_matter_magnetic_plaquette_finite_step_join_2026_09_03.py",
+   "scripts/native_isotropic_collective.py",
+   "scripts/u1_finite_clock_gauge_matter_tame_maxwell_bridge_2026_09_03.py",
+   "scripts/native_fixed_order_composite.py",
+   "scripts/frontier_admissibility_record_continuation_refinement_2026_07_13.py",
+   "scripts/native_static_response.py",
+   "scripts/native_energy_current.py",
+   "scripts/u1_exact_source_work_closed_dipole_radiation_2026_09_03.py",
+   "scripts/spin_half_cubic_ice_finite_delta_charge_coulomb_join_2026_09_03.py",
+   "scripts/linear_temporal_reparameterization_isotropic_quadratic_form_2026_08_13.py",
+   "scripts/spin_half_cubic_ice_late_time_maxwell_join_2026_09_04.py",
+   "scripts/chirality_finite_reflection_kernels.py",
+   "scripts/product_reference_attachment_controls_2026_10_18.py",
+   "scripts/native_assisted_hop.py",
+   "scripts/native_polynomial_grid_pole.py",
+   "scripts/native_fixed_occupation_ladder.py",
+   "scripts/u1_quantum_link_exact_backreaction_colored_floquet_2026_09_03.py",
+   "scripts/chirality_constructive_algebra.py",
+   "scripts/native_feature_soft_sectors.py",
+   "scripts/native_large_feature_microscopic_window.py",
+   "scripts/u1_local_reversible_yee_leapfrog_tick_2026_09_03.py",
+   "scripts/native_energy_source_pole.py",
+   "scripts/native_six_layer_ground_selection.py",
+   "scripts/u1_minimal_maxwell_generator_uniqueness_2026_09_03.py",
+   "scripts/audit_companion_minimal_axioms_clean_base_exact.py",
+   "scripts/native_joining.py"
+  ],
+  [
+   "scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py",
+   "scripts/physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05.py",
+   "scripts/admissibility_fixed_metric_nonlinear_regge_kkt_continuation_2026_08_10.py",
+   "scripts/admissibility_incidence_adm_depth_two_sourced_constraint_record_cadence_boundary_2026_08_14.py",
+   "scripts/admissibility_canonical_two_tt_positive_transfer_record_source_continuity_lstar_boundary_2026_08_11.py",
+   "scripts/admissibility_two_tt_split_step_record_frontier_causal_macro_update_lstar_boundary_2026_08_11.py",
+   "scripts/spin_half_cubic_ice_forward_length_high_stat_extension_2026_09_04.py",
+   "scripts/spin_half_cubic_ice_infrared_forward_replay_join_2026_09_04.py",
+   "scripts/spin_half_cubic_ice_infrared_maxwell_health_reanalysis_2026_09_04.py",
+   "scripts/spin_half_cubic_ice_off_axis_cubic_orbit_scout_2026_09_04.py",
+   "scripts/spin_half_cubic_ice_off_axis_staggered_orbit_scout_2026_09_04.py",
+   "scripts/physical_cost_identity_indicator_certificate_cycle731_independent_check_2026_08_04.py",
+   "scripts/physical_cell_cutting_twelve_frontier_cycle739_2026_08_05.py",
+   "scripts/admissibility_compact_regge_homogeneous_reaction_rank_kkt_boundary_2026_08_10.py",
+   "scripts/admissibility_timelike_edge_current_network_compact_homothety_regge_boundary_2026_08_10.py",
+   "scripts/spin_half_cubic_ice_topological_electric_stiffness_2026_09_03.py",
+   "scripts/scale_ladder_gravity_d4_cone_common_cone_spins_zero_one_two_2026_10_18.py",
+   "scripts/frontier_live_m2_joint_archive_graph_permutation_capacity_2026_08_14.py",
+   "scripts/physical_tick_extensive_adjacency_bracket_cycle727_independent_check_2026_08_04.py",
+   "scripts/scale_ladder_gravity_orthoscheme_zero_action_curvature_2026_10_18.py",
+   "scripts/native_large_feature_mobility.py",
+   "scripts/physical_local_extremality_rule_cell_cycle730_2026_08_04.py",
+   "scripts/scale_ladder_gravity_d4_cone_fermion_cone_reflection_positivity_curvature_squared_2026_10_18.py",
+   "scripts/physical_tick_extensive_adjacency_bracket_cycle727_2026_08_04.py",
+   "scripts/physical_column_family_parity_law_forced_orbits_cycle733_2026_08_04.py",
+   "scripts/frontier_record_native_marked_pure_birth_resource_generator_2026_08_14.py",
+   "scripts/formation_rate_defines_static_regge_edges_exactly_check_2026_09_03.py",
+   "scripts/physical_parity_certificate_cost_spectrum_cycle732_2026_08_04.py",
+   "scripts/native_threshold_readout.py",
+   "scripts/scale_ladder_gravity_d4cone_strain_reading_exchange_2026_10_18.py",
+   "scripts/admissibility_incidence_fierz_pauli_signed_record_source_full_tensor_cadence_boundary_2026_08_14.py",
+   "scripts/scale_ladder_gravity_records_to_geometry_lossless_passing_and_the_tick_2026_10_18.py",
+   "scripts/admissibility_cycle713_record_stress_block44_ir_reflected_carrier_boundary_2026_08_13.py",
+   "scripts/native_six_endpoint_binding.py",
+   "scripts/admissibility_reflected_curvature_gravity_physical_reconstruction_cut_gate_boundary_2026_08_14.py",
+   "scripts/native_odd_rectangle_response.py",
+   "scripts/native_density_spectrum_and_readout_energy_2026_09_30.py",
+   "scripts/spatial_lattice_gauge_fermion_logarithms_and_metric_attraction_limits_2026_09_14.py",
+   "scripts/spin_half_cubic_ice_finite_delta_magnetic_twist_2026_09_04.py",
+   "scripts/native_com_propagation.py",
+   "scripts/native_loop_interaction_law.py",
+   "scripts/scale_ladder_gravity_d4cone_exact_ward_site_scalar_2026_10_18.py",
+   "scripts/native_mixing_induced_vertex.py",
+   "scripts/native_column_readout.py",
+   "scripts/native_conserved_scalar.py",
+   "scripts/native_pole_envelope.py",
+   "scripts/native_composite_readout.py",
+   "scripts/native_light_column_window.py",
+   "scripts/native_scalar_tetramer.py",
+   "scripts/native_eightflux_bound_cluster.py",
+   "scripts/native_range_two_airy.py",
+   "scripts/native_reflection_ground_sector.py",
+   "scripts/thermal_resonance_halt_2026_10_17.py",
+   "scripts/spin_half_cubic_ice_infrared_forward_replay_2026_09_04.py",
+   "scripts/native_endpoint_bound_mode.py",
+   "scripts/native_two_feature_ladder.py",
+   "scripts/native_feature_interactions.py",
+   "scripts/native_isotropic_bound_feature.py",
+   "scripts/frontier_live_m2_typed_event_critical_pair_confluence_2026_08_14.py",
+   "scripts/native_transverse_bound_composite.py",
+   "scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py",
+   "scripts/spin_half_cubic_ice_infrared_maxwell_failure_localization_2026_09_04.py",
+   "scripts/native_all_height_assisted_hop.py",
+   "scripts/real_control_autonomous_output_2026_10_17.py",
+   "scripts/ac_occupancy_grain_support_typed_target_repair_2026_09_02.py",
+   "scripts/frontier_record_sufficient_joint_law_state_ontology_fork_2026_08_14.py",
+   "scripts/native_charged_column_pole.py",
+   "scripts/native_constrained_fermion.py",
+   "scripts/u1_conserved_source_coulomb_photon_bridge_2026_09_03.py",
+   "scripts/native_character_independence.py",
+   "scripts/native_environment_cost.py",
+   "scripts/native_ten_layer_neutral_bound.py",
+   "scripts/native_extended_environment.py",
+   "scripts/native_ground_window.py",
+   "scripts/native_sixflux_diagonal_mode.py",
+   "scripts/native_common_metric_boundary.py",
+   "scripts/u1_radius_one_onsite_unitary_maxwell_obstruction_2026_09_03.py",
+   "scripts/native_physical_pair_source.py",
+   "scripts/u1_finite_step_matter_current_operator_work_interface_2026_09_03.py",
+   "scripts/u1_role_compiled_yee_maxwell_time_selection_fork_2026_09_03.py",
+   "scripts/native_finite_feature_collision.py",
+   "scripts/min_time_step_is_planck_time_from_scale_reference_primitive_runner.py"
+  ]
+ ],
+ "timeout_sum_s": 51000
+}

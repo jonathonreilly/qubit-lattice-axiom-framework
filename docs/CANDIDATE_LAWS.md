@@ -275,6 +275,12 @@ Bosonized qubit sites (bosonized-sites, 2026-10-26, rethink r3; campaign files):
   - the repaired overlap kernel;
   - the cubic zoom-fixed-point law and its radiative condition;
   - the D4 bosons-only narrowing.
+- **Chirality carries over (d4-zoom-chirality, PR #10099, 10/10, own re-run identical):**
+  - Overlap index = -Q exactly (Q = 0, +-1, 2) on a 648-site D4 torus; charge-q gives -q^2 (q up to 6).
+  - GW to 3e-14; the Luscher projector is local (decay rate 1.89).
+  - Domain-wall slab (fifth direction as an internal layer label, Borici form): one Weyl per wall, mirror on the far wall, no doubler modes.
+  - All 576 W(F4) rotations leave the slab invariant (5e-15), so the walls do not break the protection. The chiral zero mode has dim-6 <= 1e-7 (anisotropy ~ eps^6), against 0.12 for the Z^4 Wilson control.
+  - The 16's anomalies cancel; the mirror is unchanged (q_mirror = q_light; far wall still needs gapping).
 - **Still to rebuild on D4:**
   - the copy sign's role in carrying the 16;
   - slab chirality and the 4D index;

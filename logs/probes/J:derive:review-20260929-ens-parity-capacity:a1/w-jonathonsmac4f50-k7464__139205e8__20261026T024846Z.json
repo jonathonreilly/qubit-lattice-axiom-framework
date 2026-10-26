@@ -1,0 +1,39 @@
+{
+ "task": "J:derive:review-20260929-ens-parity-capacity:a1",
+ "type": "judgment",
+ "lane": "review-science-20260929",
+ "worker": "w-jonathonsmac4f50-k7464",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20260929-ens-parity-capacity/w-jonathonsmac4f50-k7464/check.py",
+ "seed": 82926,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "139205e8",
+ "started_utc": "20261026T024846Z",
+ "elapsed_s": 160.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "independent recomputation confirms the note's capacity numbers (cos 0.544, Andreev 3.465 MHz) and shows they equal the q=0 endpoint splitting with only odd harmonics in q, while the capacity is set by a ~500 kHz cavity second difference so ~14 kHz of cross-acquisition drift in one cavity line erases the margin over the digitized 2.32 MHz separation."
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 41/41 PASS (167 s); independent code reproduces the note's ENS numbers (calibration to 5e-8, capacity 0.544477 and 3.464585 MHz, rounding-corner ranges to 1e-6 MHz); displacement/gauge identity proved symbolically (old coupling convention periodic with period 1-delta); offset envelope s(q)=2|sum_odd a_k cos 2 pi k q| with a floating-point (not interval) monotonicity certificate; capacity is the q=0 endpoint; sensitivity: about 14-30 kHz cross-acquisition drift in one cavity line erases the margin over the 2.32 MHz doublet; SOURCE_MAP has no per-path hashes for the ENS objects; step 12 (cross-acquisition mapping) open; no negative claim.",
+ "what": "Independently check the newer branch-only ENS Ramsey/parity continuation against corrected current-main spectrum inputs. Derive the physical-offset coupling convention and compare direct charge and oscillator representations. Test the claimed envelope capacity and digitized branch separation while exposing cross-acquisition mapping, unknown offset and geometric-bin rather than confidence-interval interpretation. This continuation was not part of the frozen PR head that landed; no experimental calibration success is accepted. Owner-requested research transfer after landing review. The source is an unlanded hypothesis, not authority: fetch the named author branch, verify the frozen Git SHA and exact path/hash from probes/work/review-science-20260929/SOURCE_MAP.json. Fetch current origin/main and prefer its corrected bounded sources; read the actual axiom memo and primitive grants before premise judgments. Check related tasks, completed attempts, referee reports and active claims before choosing ONE distinct obligation. Read the complete argument, actual inputs and paired code for that obligation. Known review corrections are background, not a new HIT. Deliver numbered PROVED/CHECKED/ASSUMED steps in ATTEMPT.md, a self-contained check.py with disjoint machinery, and RECOVERY_STATUS.json with hashes, first unresolved step and remaining obligations. Prove finite claims exactly where possible; failed search is not a no-go and negative claims require N1-N8 before promotion. Commit the checker before run_probe.py; print SUMMARY with the actual result and HIT only for a demonstrated new result or defect. Finish through claim.py and ordinary cross-model confirmation. Use the existing maximum-thinking J campaign; do not spawn agents, start workers, change budgets, create PRs or edit scientific/audit authority.",
+ "stdout_sha256": "3af5db14c4a63dbaa40879232eaa3efdc1fc01576f6af9ce272ccb7c1b7927c3",
+ "stdout_tail": " q+1/2; width 0.041 of a 2e period; single-cos approximation agrees to < 2e-4\nPASS 9c over the 32 rounding corners the centre-compatible offset ranges over [0.0726, 0.1657]: the (unknown) offset is not constrained by this comparison\nTOTAL: PASS=41 FAIL=0\nruntime 158.7 s\nHIT: scoped new result (same-family, unrefereed). (i) The offset envelope is an exact odd-harmonic Fourier structure: s(q)=2|sum_odd a_k cos 2 pi k q|, zero at q=1/4 for every model of this form, strictly decreasing on [0,1/4] with certificate ratio 2e+05, so the capacity is the q=0 endpoint (3.464585 MHz) and the four-interval extremum search is redundant. (ii) The capacity is exponentially conditioned on a 500 kHz second difference of the cavity lines: a single-line shift of 14.0 kHz (fres2) / 26.5 kHz (fres3) / 29.5 kHz (fres1) takes it to the digitized 2.32 MHz separation, versus 5 kHz printed half-units, and the lowest printed-rounding corner (2.586 MHz) already sits below the bin upper edge 2.654 MHz. (iii) The physical-offset gauge correction changes the capacity by 9.7e-05 relative (337 Hz), i.e. a 0.0035 kHz cavity-line shift, orders below those.\nSUMMARY: independent recomputation confirms the note's capacity numbers (cos 0.544, Andreev 3.465 MHz) and shows they equal the q=0 endpoint splitting with only odd harmonics in q, while the capacity is set by a ~500 kHz cavity second difference so ~14 kHz of cross-acquisition drift in one cavity line erases the margin over the digitized 2.32 MHz separation.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k7464",
+  "at_utc": "20261026T025221Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: log's git sha 139205e8 differs from the current HEAD 74a065a7 (fine if you pulled since; the run is bound to its sha)",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Scoped reproduction plus structure and conditioning analysis of an imported circuit model. Same-family, unrefereed.",
+  "by": "w-jonathonsmac4f50-k7464",
+  "at_utc": "20261026T025221Z"
+ }
+}

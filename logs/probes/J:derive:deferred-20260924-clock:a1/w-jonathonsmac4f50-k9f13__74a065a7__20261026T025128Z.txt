@@ -1,0 +1,38 @@
+# A. exact identities
+PASS A1 real gauge psi=i^n f gives bonds mu^(2n+1)/2 
+PASS A2 chain series solves the energy-z recurrence through X^6 (remainder only at X^7), both e, symbolic L 
+PASS A3 series ratios strictly decreasing (L=4), -> 0 superexponentially 
+PASS A4 row-sum bound of the slow half is finite and decays like L^N (exact, N=-12..3) 
+PASS A5 Lagrange identity sum[xi^dag J psi - (J xi)^dag psi] = B_b - B_(a-1), exact 
+PASS A6 slab shift covariance S J_[a,b] S^-1 = L^-1 J_[a+1,b+1] (Jacobi matrices, exact) 
+# B. line: boundary space and Dirichlet planes
+PASS B1 boundary form of the four zero-energy solutions is diag(-i s1, i s1) at every cut 
+PASS B2 L_eta={c_+=eta c_-} is Lagrangian for G (both eta) 
+PASS B3 psi(b+1)=0 for the plane vectors at b=-2..6 (mu=2, original gauge) 
+PASS B4 T1 maps L_+ onto L_- and L_+ != L_-, so neither Dirichlet plane is kept by the unit shift 
+PASS B5 L_eta intersects the T1-eigenspace {c_-=0} only in 0 (so not of the form L(v1,v2)) 
+PASS B6 L_eta = (chain A vector) + (chain B vector): chain-separate, with the SAME eigen-label of sigma_3 on both chains 
+# C. 3D witness lambda=4, p=(1/4,1/3): Dirichlet plane P_b -> span(b,c)
+PASS C1 N^2 = m^2 = 25/144 
+PASS C2 s=sqrt(1+m^2)=13/12 and m < m* = sinh(g/2) = (L-1)/(2 mu) = 3/4 
+PASS C3 a,b,c,d are exact zero-energy solutions; roots 3/2,-2/3,2/3,-3/2; all |r/mu|<1 so all four are l^2 at the fast end 
+PASS C4 boundary form of a..d is cut-independent and pairs only a-c and b-d (recomputed; known) 
+PASS C5 P_b (b=0..8) is spanned by (a-component=-(r_b/r_a)^(b+1)) b and (d-component=-(r_c/r_d)^(b+1)) c, exact; |coefficients| = (4/9)^(b+1) 
+PASS C6 each P_b is Lagrangian for the cut-independent form (it is the Dirichlet condition at one cut) 
+PASS C7 P_b -> span(b,c) geometrically at ratio 4/9 per step of b (both parities): the b,c pair is one of the four shift-kept planes (isotropic: G_bb=G_cc=G_bc=0) 
+# D. exact slab Green functions at z=i (Gaussian rationals); a=-A absorbs the slow end
+PASS D0 slow-end truncation A=9 vs A=12 changes G(0,0) by < 4^-9 (resolvent perturbation scale; slow end is bounded) 
+PASS D1 line: same-parity slabs form a Cauchy sequence (squared gaps shrink by > 100x per step of 2) gaps2 even=2.25e-10, 8.77e-13, 3.43e-15, 1.34e-17
+PASS D2 line: the even-b and odd-b limits differ by a fixed amount (|dG|^2 > 1/50 at every b=6..13); no limit of the full slab family min |dG|^2=0.3028
+PASS D3 3D sector (m=5/12<m*): successive slabs (both parities) converge: squared gaps shrink every step, ratio ~ (4/9)^2 per step gaps2=1.24e-05, 2.44e-06, 4.82e-07, 9.53e-08, 1.88e-08
+PASS D4 3D: gap ratio -> (4/9)^2 = 0.1975 (the rate of C5/C7, not the 1/16 of the series corrections) ratios=0.198, 0.197, 0.198, 0.198, 0.198, 0.198, 0.198
+PASS D5a series f_e(n) solves the scalar chain recurrence at z=i to < 1e-25 (mpmath 40 digits) resid=3.67e-40
+PASS D5b exact slab G(0,0) (b=14) matches theta=f_+ + f_-, and (b=13) matches theta=f_+ - f_-, to < 1e-6; they are different numbers even 0.88908179j vs 0.88908179j ; odd 0.49999997j vs 0.49999997j
+PASS D6 |b_N (theta_N conj theta_{N+1} - c.c.)| * L^N stays bounded for N=4..13 (so the boundary term -> 0 geometrically) max=2.133
+PASS D7 at z=0, B_N(theta,theta^bar)=0 for every N (the (1+eta s)(1-eta s)=0 mechanism) 
+# E. frozen sources
+PASS E1 SHA256 of all 189 batch-10 frozen sources reproduces the manifest 189/189
+TOTAL: PASS=29 FAIL=0
+runtime_s=12.6
+HIT: for the supplied exponential clocked walk, Dirichlet slabs with receding far wall have no strong-resolvent limit on the line (the two parity limits differ and are exchanged by the unit shift, so neither keeps U(t)T1=T1U(lambda t)); in a sector 0<m<m* with the witness data they converge to the pair span(b,c) at rate (s-m)/(s+m)=4/9 per step (scoped to the supplied model; same-family, unrefereed)
+SUMMARY: PARTIAL - the slab (receding-wall) rule does not supply a unit-shift-compatible fast-end condition on the line and selects span(b,c) in sectors with m>0 (zero-energy plane exact; resolvent convergence proved on the line, only checked in 3D); physical selection and the m=0 sector remain open

@@ -1,0 +1,209 @@
+{
+ "task": "J:derive:review-20260929-finite-spin-incompressible-tensor:a1",
+ "worker_model": "Claude Sonnet 5.5 (same family as source authors; unrefereed)",
+ "verdict": "PARTIAL: necessary conditions proved, no state built, none refuted",
+ "source_branch": "claude/toe-viability-probes-20260927",
+ "source_head": "fd51a1f4c7f38c124d6f0f7dde396198eadf8b36",
+ "source_head_verified_in_object_store": true,
+ "source_pr": {
+  "number": 9363,
+  "state": "CLOSED, not merged (gh pr view)"
+ },
+ "main_head_used": "a77a3449c91a753b06ce2a63876cd460b62cb4cf",
+ "source_objects": [
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/APPROACH_REGISTRY.md",
+   "sha256": "5a82e2f98b74272a7b42f919e06753bbcc60e8a844c940a645ca6b70ed057c67",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/ASSUMPTIONS.md",
+   "sha256": "165a498c661676218a08813958eeaf9c47d6f3cfcfe418bade0b3c6663bac9bb",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/OUTSIDE_VIEW.md",
+   "sha256": "e5ae633f959950e8c6670f6e73cadfb506100e1bbc7ea4f4d3b80cdadd9da8c1",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/ROUTES.md",
+   "sha256": "3856517758d4f86da392b1675573d11b4e019e56a625ed15581e15f0ec92f6d9",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/SUMMARY.md",
+   "sha256": "fde6228c9ebf341483fad1690c28283bd71e796ea3aec1f14f8de75dad54cd91",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/TESTS.md",
+   "sha256": "9dee2b425204a249e844446804d6a5f3cfd5e21aa794f317a294237f3768420b",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/WALL.md",
+   "sha256": "00abbe699211d8af1d3b69daf40cdd3b508e2a9d2491e65608acd867d49993e0",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/agent1_condensed_matter.md",
+   "sha256": "81b0f7eac18b22bb636403e7d92ec59566bfc7a57a2fc9b1f3a3742bdab19712",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/agent2_quantum_gravity.md",
+   "sha256": "3daf9009b611c2bc57ec15c3b2d427229fb1dc89a14ca0cbe530b281ae7911e8",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/agent3_axioms_price.md",
+   "sha256": "6f480cfec1bce59f8776881e1c35a9ee759aca43c52a745bfcfcf87d1be9b75d",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/agent4_misframing.md",
+   "sha256": "3eea8d7fdcd5a8f60076ef64c31757bfdc29de6a8b7f56cbd933f3a68a02629c",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/kill1_price_strong.md",
+   "sha256": "ae484e4027a4d77a15022274d2fe5439c0fb99bc067927e3e9b69a9003dcb561",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/kill2_nonground_a1.md",
+   "sha256": "85c8180cf0a4422f7c3a13ce857b63f2ff1983ac2a5d1325d882c367b84c565e",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/kill3_entanglement_statics.md",
+   "sha256": "e9de51b029d1aedde82d708b2245703c5ab571e60d5c4693ac30a4ac767c9aa9",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/kill4_induced_purity.md",
+   "sha256": "0aa62bc86479c6d2b40503933b63a5432a05dcf058f27142b0484b6db155b370",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/neutral_brief.md",
+   "sha256": "b798c1f46fd91c65bcabbd7211de0dc2c190920a0b420ecb4cc33fc98eafe8e3",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/routes_for_kill.md",
+   "sha256": "50ad77c1c53d8dbe39cfeceffe347d6b8202f7f76797ee4530861994c0138e53",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/T1_output.txt",
+   "sha256": "7f505a208b4efcf271d692939e8f653847df8f98e242522c310f895f8119998e",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/T1_signed_compression_channel.py",
+   "sha256": "5346e7c8900a59924d24db36e14488cf05bfb1f9341bdafcd8d8019f6d451864",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/_p18_defs.py",
+   "sha256": "20980fd00b5af2b27589d06df4c732064a9b4b2eb4e2984d8fc7669f37eab9c7",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/agents/agent4_checks.py",
+   "sha256": "86eceeeae3c561f24da969abbf57bd11fb8a6ecc1ac9bfdefa5c6268a160344a",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/agents/bogoliubov_check.py",
+   "sha256": "dac810bae99aee6e5934f7232cc39b3719a52ce629f007c237020df0fb941af2",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/agents/kill2_checks.py",
+   "sha256": "a4f77ac29f1382c0707881040cf2cfb901cc485e537183e5d4aaaf6ba228d7d6",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/agents/kill3_area_law_anisotropy.py",
+   "sha256": "f19d6564e1dd3fef3b7f2bd197f417120f38a5bb74e93b28b76b51a14c1a7d53",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/agents/kill3_ppn_coordinates.py",
+   "sha256": "d266c579caeddbb555b332bbd519d23315a177d5fce28a26825d582e4a33270e",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/agents/kill4_checks.py",
+   "sha256": "669eccf2281cd15c1060aace40aa0764c796154973536b9cdac6e9db8f8ee3b2",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/agents/snf_torsion.py",
+   "sha256": "c0444b933728ef2538b850608b4f45c6e85142bc467273337c6b0198e88f3d34",
+   "verified": true
+  },
+  {
+   "path": "docs/AN_EXACT_ADDITIVE_GAUSS_LAW_ON_DISCRETE_SLOTS_NEEDS_ITS_VARIABLE_STORED_ON_EVERY_SLOT_IT_TOUCHES_SO_ONLY_THE_PURE_ASSIGNMENTS_CARRY_THE_FULL_TENSOR_RULES_AS_EXACT_ADDITIVE_LAWS_BOUNDED_THEOREM_NOTE_2026-09-28.md",
+   "sha256": "316d5f05321fef6c8541d218b397e915529b44e65c55041e68f22dc01c321574",
+   "verified": true
+  },
+  {
+   "path": "docs/A_NEIGHBOURHOOD_CONSTRAINT_ON_Z3_QUBITS_EVIDENCE_OF_A_GAPLESS_FIELD_PATTERN_AND_A_PROTECTED_MASSLESS_PHOTON_IN_THE_HARMONIC_REGIME_BOUNDED_THEOREM_NOTE_2026-09-28.md",
+   "sha256": "ddc08eab2095439a56ca04da3bb67bb2428557101f201127fae4879628236880",
+   "verified": true
+  },
+  {
+   "path": "docs/A_QUANTUM_LINK_DEFORMATION_OF_THE_LINEAR_SCALAR_CONSTRAINT_ON_TENSOR_SLOTS_OF_SPIN_TWO_OR_MORE_KEEPS_DEWITT_WEAKLY_INVARIANT_BUT_ITS_CLASSICAL_ALGEBRA_IS_NOT_FIRST_CLASS_ON_THE_WHOLE_CONSTRAINT_SURFACE_BOUNDED_THEOREM_NOTE_2026-09-28.md",
+   "sha256": "54948429867ccbe5f38dbc54a1f47b400c9b2643c8aef0f021ecd80403a42a4f",
+   "verified": true
+  },
+  {
+   "path": "docs/ONE_QUBIT_PER_SLOT_UNDER_THE_TENSOR_MOMENTUM_RULE_AN_EXACT_SUM_RULE_BOUNDS_THE_GRAVITON_CHANNEL_BY_Q4_A_LIGHT_CONE_MODE_NEEDS_AN_INCOMPRESSIBLE_ELECTRIC_PATTERN_BOUNDED_THEOREM_NOTE_2026-09-28.md",
+   "sha256": "34313c1e13f80c5a339340558442fb5bea25e1b5e13324c965e731323ee75b8b",
+   "verified": true
+  },
+  {
+   "path": "docs/THE_PHOTON_TRIPLET_COMPOSITES_PARTNERS_ARE_NOT_GAPPED_BY_GAUGE_INVARIANT_LOCAL_HARMONIC_TERMS_AND_EVERY_TESTED_CONSTRAINT_SET_REMOVING_THE_HELICITY_ONE_PARTNERS_LEAVES_NO_TT_VISIBLE_FIRST_MOMENTS_BOUNDED_THEOREM_NOTE_2026-09-28.md",
+   "sha256": "26baae21ed0c3dcabc7ca380ca18dc3bc91e55a34410ca337300002c3316c25c",
+   "verified": true
+  },
+  {
+   "path": "docs/THE_SWAPPED_QUANTUM_LINK_ASSIGNMENT_METRIC_DIAGONAL_MAKES_EINSTEIN_HILBERT_EXACTLY_INVARIANT_BUT_THE_TT_METRIC_F_SUM_OF_GAUSS_LAW_COMPATIBLE_MOVES_IS_BOUNDED_BY_Q_SQUARED_BOUNDED_THEOREM_NOTE_2026-09-28.md",
+   "sha256": "b6b654cb3ab576f2c022cbe316926a6cda4dfe8a7e2d44a5a0109ecc31185f6a",
+   "verified": true
+  }
+ ],
+ "source_map": "probes/work/review-science-20260929/SOURCE_MAP.json (all 33 hashes match)",
+ "parent_notes_on_main": "none of the six 2026-09-28 parent notes is on current main",
+ "overlap": "no ai/probes attempt, no open PR found on this obligation",
+ "first_unresolved_step": "S11: exhibit or refute a translation-invariant finite-spin exact-rule ground state with S_in = Theta(|q|^3) (Born correlations ~ |Delta|^-6), omega_min >= c|q| outside the whole ground eigenspace, and kinetic-quadrupole sum >= 2 c^2 kappa. No state with the power-law correlations is supplied.",
+ "remaining_obligations": [
+  "O1: pass from finite-volume sum rules to infinite-volume objects (Theorems A and B, premise P5) with uniform tail control",
+  "O2: independent confirmation (N1-N8 before any negative claim is promoted; none is promoted)",
+  "O3: exactness of the integer complex behind the potential reading (S10)",
+  "O4: a non-Gaussian, non-short-range construction, or proof that the kinetic-quadrupole condition and the |q|^3 Born tail cannot coexist"
+ ],
+ "new_scoped_results": [
+  "Theorem A (a),(b),(e): S_in >= c kappa q^3/2; m1 >= c^2 kappa q^4/2; local kinetic-quadrupole condition",
+  "Theorem B: chi_in >= kappa q^2 with omega_min >= c q forces non-summable cubic Born correlations (conditional on P5, P6)",
+  "exact example that mean-only ground-space subtraction breaks S <= m1/omega_min"
+ ],
+ "not_new": [
+  "moment lemma",
+  "20-slot minimum",
+  "probe-10 T3/T4 sum rule",
+  "oscillator chi = 1/U"
+ ],
+ "check": {
+  "file": "check.py",
+  "total": "PASS=29 FAIL=0",
+  "hit_printed": true,
+  "runtime_seconds_approx": "10-35",
+  "memory": "about 245 MB peak"
+ },
+ "ready_for_science_pr": false
+}

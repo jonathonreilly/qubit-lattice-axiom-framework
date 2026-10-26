@@ -1,0 +1,32 @@
+PASS A1 t_P = l_P/c (symbolic)
+PASS A2 a_tau / t_P = a_s / l_P = r for every c, hbar, G (symbolic)
+PASS A3 the only dimensionless combination of (G,hbar,c,a) is (G hbar c^-3 a^-2)^k  | solution {al: -de/2, be: -de/2, ga: 3*de/2}
+PASS A4 r = G_lat^(-1/2)  (so 'r = 1' is the statement G_lat = 1)
+PASS A5 ruler a^-1 = kappa M_Pl  gives r = 1/kappa
+PASS A6 the 'r = 1' fixture holds only for the hbar-Planck mass; reduced mass gives sqrt(8 pi), h-based gives 1/sqrt(2 pi)  | {'M_Pl (hbar)': 1, 'reduced M_Pl/sqrt(8 pi)': 2*sqrt(2)*sqrt(pi), 'h-based sqrt(2 pi) M_Pl': sqrt(2)/(2*sqrt(pi))}
+PASS A7 G_lat = 1/(4 pi) (graph-Green coefficient) gives r = 2 sqrt(pi), the repo's old mismatch value
+PASS A8 the 06-05 BP same-surface density c_cell/a^2 = 1/(4 l_P^2) gives r = 2 sqrt(c_cell): r = 1 iff c_cell = 1/4 (the premise BP supplies it, the axioms do not)
+PASS B0 orbit sizes 6, 12, 8
+PASS B1 six-neighbour reach after n ticks is exactly the l1 octahedron |x|+|y|+|z| <= n (n<=5)
+PASS B2 three axis layers per tick reach exactly the cube |x|,|y|,|z| <= n (n<=4)
+PASS B3 exact integer-weight 6-NN update: support of W^n equals the l1 octahedron (n<=5) -- containment, and realisation for positive weights
+PASS B4 rho^2 (inscribed radius squared of conv N): 6 axis steps -> 1/3
+PASS B5 rho^2 = 1 for 6+12, 6+8, all 26, and the three-axis-layer cube
+PASS B6 rho^2 = 4/3 for two six-neighbour layers (the hull is the octahedron of radius 2)
+PASS B7 Cauchy-Schwarz identity 3(a^2+b^2+c^2) - (a+b+c)^2 = (a-b)^2+(b-c)^2+(c-a)^2, hence |v|_1 <= sqrt3 |v|_2 with equality on (1,1,1)
+PASS C1 six-neighbour single layer: interval [1, 1/sqrt3] is empty -> (U_6, S, R) inconsistent  | ['N = 6 axis steps']
+PASS C2 interval is the single point x = 1 (a_tau = a_s/c forced) for 6+12, 6+8, 26, and the cube  | ['N = 6 + 12 face diagonals', 'N = 6 + 8 body diagonals', 'N = all 26', 'N = three axis layers (cube)']
+PASS C3 two six-neighbour layers: x in [1, 2/sqrt3]; a_tau = a_s/c is NOT forced (a_tau only pinned within a factor 1.155)
+PASS C4 smallest m of six-neighbour sub-steps per record tick compatible with a round cone and axis saturation is m = 2; the sub-step duration is then a_sigma = a_tau/m with a_tau <= (2/sqrt3) a_s/c
+PASS C5 if the six-neighbour update is itself the clock, U_6 + R gives c a_sigma/a_s <= rho = 1/sqrt3, i.e. a_sigma <= r t_P/sqrt3 (symbolic, using a_s/c = r t_P): a 'minimum step' at r t_P would be a factor sqrt3 too long for a round cone
+PASS D1 exact point p=(pi/6)(1,1,1): |grad E|_1 = 3/sqrt7 > 1 while |grad E|_2 = sqrt(3/7) < 1  | l1=3*sqrt(7)/7, l2=sqrt(21)/7
+PASS D2 infrared limit along the body diagonal: each component of grad E -> 1/sqrt3, so |grad E|_1 -> sqrt3 > 1 and |grad E|_2 -> 1
+PASS D3 [float sample] on a 41^3 BZ grid, sup |grad E|_2 <= 1 (what the packet's runner tests) but sup |grad E|_1 > 1  | sup l2=0.9997, sup l1=1.7315
+PASS D4 hence the sinh model cannot be the (strictly 6-NN-local) one-tick map whose octahedral reach the BFS computes: centroid lemma needs |v|_1 <= 1 per tick (proved in ATTEMPT.md step 7)
+PASS E1 gated 6-NN update (shift only on odd ticks): reach bound |x|<=n holds, realised speed = 1/2 edge/tick, so c*a_tau/a_s = 1/2 and a_tau = a_s/(2c) -- locality alone does not give the tie
+PASS E2 one record word embeds in the tick lattice with total elapsed ticks 3, 6, 6, 35 (strictly increasing integer maps): record index is not tick number without a synchrony premise; the 06-06 no-go holds in tick units
+PASS E3 H = -(1/(2 a_tau)) log(T^2/M_T): same T^2, a_tau -> lambda a_tau gives H/lambda (one-clock theorem is tau-relative)
+PASS E4 two species (speeds 1 and 1/3 edge/tick) both allowed by locality: identifying either one with light gives a_tau = a_s/c or a_s/(3c)
+PASS E5 sinh E = gamma |sin p|: IR speed = gamma edge/tick while the 6-NN reach set is gamma-independent; a_tau = a_s/c needs gamma = 1 (the kinetic-form clause, matter sector only)
+TOTAL: PASS=30 FAIL=0
+SUMMARY: with all premises explicit, a tick=edge identification a_tau=a_s/c follows exactly when the one-tick influence set has inscribed radius 1 (cube-type reach), is empty for a single six-neighbour layer (rho=1/sqrt3), and a_tau=r*t_P still needs the separate supplier G_lat=1/r^2, none of which is supplied by the axioms or registered primitives.

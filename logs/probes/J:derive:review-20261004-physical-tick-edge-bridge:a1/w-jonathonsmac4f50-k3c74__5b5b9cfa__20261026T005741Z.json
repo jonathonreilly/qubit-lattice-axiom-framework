@@ -1,0 +1,32 @@
+{
+ "task": "J:derive:review-20261004-physical-tick-edge-bridge:a1",
+ "type": "judgment",
+ "lane": "review-science-20261004",
+ "worker": "w-jonathonsmac4f50-k3c74",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261004-physical-tick-edge-bridge/w-jonathonsmac4f50-k3c74/check.py",
+ "seed": 76261,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "5b5b9cfa",
+ "started_utc": "20261026T005741Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "with all premises explicit, a tick=edge identification a_tau=a_s/c follows exactly when the one-tick influence set has inscribed radius 1 (cube-type reach), is empty for a single six-neighbour layer (rho=1/sqrt3), and a_tau=r*t_P still needs the separate supplier G_lat=1/r^2, none of which is supplied by the axioms or registered primitives."
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 30/30 PASS, no HIT line; partial: tick=edge identification a_tau=a_s/c follows exactly when the one-tick influence set has inscribed radius 1 (empty for a single six-neighbour layer); a_tau=r*t_P still needs G_lat=1/r^2; route stops at the strictly local influence-set premise. The sqrt(3) obstruction and G_lat supplier were already in the repo; additions are consolidation only.",
+ "what": "Prove a bounded physical tick/record/edge identification with all clock and update premises explicit, or identify the first missing supplier. Six-neighbour BFS reachability does not prove elapsed time, all-neighbour realization or light speed. The landed Planck packet supplies only conditional unit arithmetic and independent rounded-fixture consistency. A transfer-relative one-clock theorem assumes its axis, step and single-clock clauses. Do not adopt a new clock law or numerical primitive. Owner-requested review transfer as science work, not a PR snapshot or adoption. Fetch current main, verify the pinned source objects, and read the actual axiom memo and registered primitive grants. Check related tasks, active claims, completed attempts and referee reports before selecting ONE distinct obligation. Deliver numbered PROVED/CHECKED/ASSUMED steps in probes/work/derive/<problem>/<worker>/ATTEMPT.md, a self-contained disjoint check.py and RECOVERY_STATUS.json listing hashes, the first unresolved step and remaining work. Known review corrections are background, not a new HIT. Commit the checker before run_probe.py; print SUMMARY and HIT only for a demonstrated new result or defect. Use claim.py and ordinary cross-model confirmation. Source recovery alone is not completion. Do not start workers, spawn agents, create PRs, change budgets or edit scientific/audit authority in this task. Independently distinguish the chosen Planck reference unit from the dimensionless physical spacing ratio r=a_s/l_P. The corrected packet proves only a_tau=r*t_P given the supplied tick/edge and physical-c bridge. r=1 is a numerical fixture, not a consequence of the registered ruler; derive or explicitly expose this self-consistency supplier before claiming a physical Planck-time minimum.",
+ "stdout_sha256": "4d3a2e597f79882c88473a1dc935f3fd37ebea79bed5cfe2f1109ecf3b828c03",
+ "stdout_tail": "ket's runner tests) but sup |grad E|_1 > 1  | sup l2=0.9997, sup l1=1.7315\nPASS D4 hence the sinh model cannot be the (strictly 6-NN-local) one-tick map whose octahedral reach the BFS computes: centroid lemma needs |v|_1 <= 1 per tick (proved in ATTEMPT.md step 7)\nPASS E1 gated 6-NN update (shift only on odd ticks): reach bound |x|<=n holds, realised speed = 1/2 edge/tick, so c*a_tau/a_s = 1/2 and a_tau = a_s/(2c) -- locality alone does not give the tie\nPASS E2 one record word embeds in the tick lattice with total elapsed ticks 3, 6, 6, 35 (strictly increasing integer maps): record index is not tick number without a synchrony premise; the 06-06 no-go holds in tick units\nPASS E3 H = -(1/(2 a_tau)) log(T^2/M_T): same T^2, a_tau -> lambda a_tau gives H/lambda (one-clock theorem is tau-relative)\nPASS E4 two species (speeds 1 and 1/3 edge/tick) both allowed by locality: identifying either one with light gives a_tau = a_s/c or a_s/(3c)\nPASS E5 sinh E = gamma |sin p|: IR speed = gamma edge/tick while the 6-NN reach set is gamma-independent; a_tau = a_s/c needs gamma = 1 (the kinetic-form clause, matter sector only)\nTOTAL: PASS=30 FAIL=0\nSUMMARY: with all premises explicit, a tick=edge identification a_tau=a_s/c follows exactly when the one-tick influence set has inscribed radius 1 (cube-type reach), is empty for a single six-neighbour layer (rho=1/sqrt3), and a_tau=r*t_P still needs the separate supplier G_lat=1/r^2, none of which is supplied by the axioms or registered primitives.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k3c74",
+  "at_utc": "20261026T005747Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

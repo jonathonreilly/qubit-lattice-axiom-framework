@@ -1,0 +1,149 @@
+===== runner cache v1 =====
+runner: scripts/two_qubit_cubic_dirac_walk_continuum_limit_2026_10_26.py
+runner_sha256: 2f4e63bd9d0320b2dae4458ae596aa9dc9d82cbc760f2cb2b661851a51437894
+input_fingerprint_sha256: 42406502f59cf98ee3705774b610b7a79fe83ed112c92ade49ae1e07a153183a
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 57.54
+status: ok
+----- stdout -----
+== exact (sympy) identities
+PASS phi0^T G phi0 = 1 identically: f0 = (G phi0).phi is the massless member (U(0)=1)
+PASS flavour block annihilates phi0: (G - a a^T) phi0 = 0, so h0(0) = 0
+PASS |W|^2 = w^T (G - a a^T) w = s^2 (1 - s^2) (Wilson vector of the k^2 flavour term)
+PASS M U0 M with M = exp(i theta tau1/2) equals the O(3)-rotated member (f,h1) -> R_theta (f,h1), g unchanged
+PASS M commutes with every coin 1 (x) D(R) (checked on the generator exp(-i pi sigma3/4) and exp(-i pi sigma1/4))
+PASS every (F phi)(c) is multilinear in (c1,c2,c3) (degree <= 1 in each c_a)
+PASS the vertices of [-1,1]^3 in c are exactly the 8 TRIMs k_a in {0, pi}
+PASS cos theta_X = 1 - 2 s^2 at the three axis TRIMs
+PASS cos theta_M = 1 - 8 s (b0 - b2) at the three face TRIMs
+PASS cos theta_R = 1 - 6(3b0^2 + 2b0b2 + 3b2^2 - 8b1^2) at the corner
+PASS vertex lemma, c_0 at the X vertex: (1 - cos theta_X)/(2*1) = s^2 (equals the cone coefficient s^2)
+PASS J_Gamma = s 1, det = s^3
+PASS J_X = diag(-s, b0-b2, b0-b2): det = -s (b0-b2)^2
+PASS det J_M = (b0-b2)^2 (b0 - 2b1 + b2); det J_R = -(b0 - 2b1 + b2)^3
+PASS phi(eps n) = phi0 - eps^2 |n|^2 w/2 + O(eps^4) (no linear term: grad phi = 0 at all TRIMs)
+PASS g(eps n) = s eps n + O(eps^3)
+PASS g at O(k^3): g_a = s k_a - ((b1+b2)/2) k_a |k|^2 + ((b1 + 2 b2 - b0)/6) k_a^3: the only O(a^2) rotation breaking of H_a; it vanishes iff b0 = b1 + 2 b2 (k^4-isotropy plane)
+PASS series check: arccos(1-u)^2 = 2u + u^2/3 + 4u^3/45 + O(u^4)
+PASS massive omega^2: eps^2 term = mu^2 + s^2 |n|^2 (Dirac, speed s)
+PASS massive omega^2: eps^3 term = -mu Wc |n|^2 (O(a) mass-dependent speed shift, Wc = |W| cos chi)
+PASS massive omega^2: eps^4 term = alpha |n|^4 + beta sum n^4 - (s^2/3) mu^2 |n|^2 (no mu^4 term)
+PASS arccos(1-u)/sqrt(1-(1-u)^2) = 1 + u/3 + O(u^2) (analytic at u = 0)
+PASS h_par = eps mu - eps^2 |n|^2 Wc/2 + O(eps^3), h_perp = -eps^2 |n|^2 Ws/2: so a H_a = -(eps mu hhat.tau + eps s tau3 sigma.n) + (eps^2|n|^2/2) W.tau + O(eps^3)
+PASS [K_1,K_2] = -( (1/2){H,d1H} d2 - (1/2){H,d2H} d1 + (1/4)[d1H,d2H] ) for an arbitrary matrix function H(p)
+PASS [K_1, H] = (i/2){H, d1 H} (multiplication operator) for arbitrary H(p); = (i/2) d1(E^2) when H^2 = E^2 1
+PASS [K_1, P_1] = i H and [K_1, P_2] = 0 exactly (P = multiplication by p)
+PASS Clifford fiber: (sum x_i Gamma_i)^2 = |x|^2 1, so H_a(p)^2 = E_a(p)^2 1 exactly
+PASS V = ((tau1 - tau3)/sqrt2) (x) 1 is unitary and maps alpha_a = -tau3 sigma_a -> tau1 sigma_a, beta = -tau1 -> tau3 (Dirac rep)
+PASS V commutes with the coin 1 (x) D(R) (identification respects the cubic spin action)
+PASS maximal twist: Gamma_perp = tau2 anticommutes with beta and all alpha_a; beta*Gamma_perp commutes with alpha_a
+PASS exp((phi/2) beta Gamma_perp), tan phi = e/m, maps m beta + e Gamma_perp to sqrt(m^2+e^2) beta and fixes alpha_a
+gold: s = 1, cos(theta_X, theta_M, theta_R) = [-1, 17 - 8*sqrt(5), -1571/19 + 696*sqrt(5)/19], beta = 7/6 - sqrt(5)/2, alpha = -7/6 + sqrt(5)/2, b0-2b1+b2 = 47/19 - 20*sqrt(5)/19
+iso: s = sqrt(6)/3, cos(theta_X, theta_M, theta_R) = [-1/3, -7/9, 31/3 - 32*sqrt(10)/9], beta = 0, alpha = -1/54, b0-2b1+b2 = -11*sqrt(6)/27 + 8*sqrt(15)/27
+PASS gold: cos theta_X = -1 (axis pi-modes) and cos theta_M, cos theta_R > -1 (face/corner not at pi)
+PASS gold: |W| = s sqrt(1-s^2) = 0: the leading O(a) fiber term vanishes on the light-speed member
+PASS iso: cos theta_X = -1/3, cos theta_M = -7/9; all three TRIM classes have cos in (-1, 1) (no pi-mode, no extra zero node)
+PASS iso: |W|^2 = s^2(1-s^2) = 2/9 and beta = 0 (k^4-isotropic)
+PASS gold: Weyl indices of the 8 zeros of g sum to 0 (degree check): [1, -1, -1, 1, -1, 1, 1, -1]
+PASS iso: Weyl indices of the 8 zeros of g sum to 0 (degree check): [1, -1, -1, 1, -1, 1, 1, -1]
+== numerical checks (independent matrix implementation)
+--- bstar: b = [0.36666667 0.1988778  0.15      ], s = 0.9144222684, |W| = 0.3701229778
+PASS bstar: |W| = s sqrt(1-s^2)
+PASS bstar: massive member M U0 M unitary (theta=0.2, chi=0.7), max err 8.1e-16
+PASS bstar: massive member is cubic covariant (C4z), err 2.7e-16
+   theta=0.0, chi=0.000: TRIM quasienergies |omega| = [0.       2.308157 2.308157 2.195675 2.308157 2.195675 2.195675 2.19751 ]
+   theta=0.1, chi=0.000: TRIM quasienergies |omega| = [0.1      2.208157 2.208157 2.109377 2.208157 2.109377 2.109377 2.129005]
+   theta=0.1, chi=1.571: TRIM quasienergies |omega| = [0.1      2.303628 2.303628 2.244882 2.303628 2.244882 2.244882 2.270307]
+PASS bstar: |omega_K(theta) - theta_K| <= theta at all TRIMs (theta=0.1, 7 twist angles)
+PASS bstar: theta=0.0, chi=0.00: 1 - cos omega >= (1 - cos theta) + c_theta sum(1 - cos k_a), c_theta = 0.2644 (1500 random k)
+   min over samples of 1 + cos omega = 3.3477e-01; min over TRIMs = 3.2766e-01
+PASS bstar: theta=0.0, chi=0.00: sampled min of 1 + cos omega >= its TRIM minimum
+PASS bstar: theta=0.1, chi=0.00: 1 - cos omega >= (1 - cos theta) + c_theta sum(1 - cos k_a), c_theta = 0.2541 (1500 random k)
+   min over samples of 1 + cos omega = 4.0654e-01; min over TRIMs = 4.0492e-01
+PASS bstar: theta=0.1, chi=0.00: sampled min of 1 + cos omega >= its TRIM minimum
+PASS bstar: theta=0.1, chi=1.57: 1 - cos omega >= (1 - cos theta) + c_theta sum(1 - cos k_a), c_theta = 0.2731 (1500 random k)
+   min over samples of 1 + cos omega = 3.3241e-01; min over TRIMs = 3.3102e-01
+PASS bstar: theta=0.1, chi=1.57: sampled min of 1 + cos omega >= its TRIM minimum
+--- iso: b = [0.3776095  0.16672156 0.10544397], s = 0.8164965809, |W| = 0.4714045208
+PASS iso: |W| = s sqrt(1-s^2)
+PASS iso: massive member M U0 M unitary (theta=0.2, chi=0.7), max err 2.3e-15
+PASS iso: massive member is cubic covariant (C4z), err 2.5e-16
+   theta=0.0, chi=0.000: TRIM quasienergies |omega| = [0.       1.910633 1.910633 2.461919 1.910633 2.461919 2.461919 2.714854]
+   theta=0.1, chi=0.000: TRIM quasienergies |omega| = [0.1      1.810633 1.810633 2.361919 1.810633 2.361919 2.361919 2.61896 ]
+   theta=0.1, chi=1.571: TRIM quasienergies |omega| = [0.1      1.908867 1.908867 2.45576  1.908867 2.45576  2.45576  2.674539]
+PASS iso: |omega_K(theta) - theta_K| <= theta at all TRIMs (theta=0.1, 7 twist angles)
+PASS iso: theta=0.0, chi=0.00: 1 - cos omega >= (1 - cos theta) + c_theta sum(1 - cos k_a), c_theta = 0.3184 (1500 random k)
+   min over samples of 1 + cos omega = 9.3503e-02; min over TRIMs = 8.9679e-02
+PASS iso: theta=0.0, chi=0.00: sampled min of 1 + cos omega >= its TRIM minimum
+PASS iso: theta=0.1, chi=0.00: 1 - cos omega >= (1 - cos theta) + c_theta sum(1 - cos k_a), c_theta = 0.3103 (1500 random k)
+   min over samples of 1 + cos omega = 1.3680e-01; min over TRIMs = 1.3349e-01
+PASS iso: theta=0.1, chi=0.00: sampled min of 1 + cos omega >= its TRIM minimum
+PASS iso: theta=0.1, chi=1.57: 1 - cos omega >= (1 - cos theta) + c_theta sum(1 - cos k_a), c_theta = 0.3147 (1500 random k)
+   min over samples of 1 + cos omega = 1.1166e-01; min over TRIMs = 1.0710e-01
+PASS iso: theta=0.1, chi=1.57: sampled min of 1 + cos omega >= its TRIM minimum
+--- gold: b = [0.3980161  0.22001789 0.16194812], s = 1.0000000000, |W| = 0.0000000000
+PASS gold: |W| = s sqrt(1-s^2)
+PASS gold: massive member M U0 M unitary (theta=0.2, chi=0.7), max err 1.4e-15
+PASS gold: massive member is cubic covariant (C4z), err 2.8e-16
+   theta=0.0, chi=0.000: TRIM quasienergies |omega| = [0.       3.141593 3.141593 2.664958 3.141593 2.664958 2.664958 2.455157]
+   theta=0.1, chi=0.000: TRIM quasienergies |omega| = [0.1      3.041593 3.041593 2.65247  3.041593 2.65247  2.65247  2.467778]
+   theta=0.1, chi=1.571: TRIM quasienergies |omega| = [0.1      3.041593 3.041593 2.564995 3.041593 2.564995 2.564995 2.356727]
+PASS gold: |omega_K(theta) - theta_K| <= theta at all TRIMs (theta=0.1, 7 twist angles)
+PASS gold: massive axis doubler sits at quasienergy pi - theta exactly (U(X) = -U(0)), err 7.1e-15
+PASS gold: theta=0.0, chi=0.00: 1 - cos omega >= (1 - cos theta) + c_theta sum(1 - cos k_a), c_theta = 0.2956 (1500 random k)
+   min over samples of 1 + cos omega = 8.1303e-03; min over TRIMs = 0.0000e+00
+PASS gold: theta=0.0, chi=0.00: sampled min of 1 + cos omega >= its TRIM minimum
+PASS gold: theta=0.1, chi=0.00: 1 - cos omega >= (1 - cos theta) + c_theta sum(1 - cos k_a), c_theta = 0.2961 (1500 random k)
+   min over samples of 1 + cos omega = 6.0006e-03; min over TRIMs = 4.9958e-03
+PASS gold: theta=0.1, chi=0.00: sampled min of 1 + cos omega >= its TRIM minimum
+PASS gold: theta=0.1, chi=1.57: 1 - cos omega >= (1 - cos theta) + c_theta sum(1 - cos k_a), c_theta = 0.2837 (1500 random k)
+   min over samples of 1 + cos omega = 1.1762e-02; min over TRIMs = 4.9958e-03
+PASS gold: theta=0.1, chi=1.57: sampled min of 1 + cos omega >= its TRIM minimum
+   bstar chi=0.000: max_p ||U^n - e^(-itH_D)|| = [0.01891884 0.00919785 0.00453411 0.00225092] slope 1.023; with p-dependent chiral rotation: [0.02255004 0.01107133 0.00548542 0.00273023] slope 1.015; C3 estimates [0.0417 0.0416 0.0415 0.0415]
+PASS bstar chi=0.00: remainder ||H_a - H_D - (a/2)p^2 W.tau|| / (a^2(|p|+m)^3) stays bounded as a -> 0 (max 0.042)
+PASS bstar chi=0.00: error <= t(|W| a P^2/2 + C3 a^2 (P+m)^3) (t multiple of a, floor term zero)
+PASS bstar chi=0 (Wilson-aligned mass): convergence is O(a) (slope 1.02) and the chiral rotation does not help (slope 1.02)
+   bstar chi=1.571: max_p ||U^n - e^(-itH_D)|| = [0.01241868 0.00619217 0.00309393 0.00154669] slope 1.002; with p-dependent chiral rotation: [8.15952025e-04 2.04547410e-04 5.12129396e-05 1.28131331e-05] slope 1.998; C3 estimates [0.0415 0.0415 0.0415 0.0415]
+PASS bstar chi=1.57: remainder ||H_a - H_D - (a/2)p^2 W.tau|| / (a^2(|p|+m)^3) stays bounded as a -> 0 (max 0.041)
+PASS bstar chi=1.57: error <= t(|W| a P^2/2 + C3 a^2 (P+m)^3) (t multiple of a, floor term zero)
+PASS bstar chi=pi/2 (maximal twist): constant identification O(a) (slope 1.00); p-dependent chiral rotation V_a(p) gives O(a^2) (slope 2.00)
+   iso chi=0.000: max_p ||U^n - e^(-itH_D)|| = [0.02622217 0.01286782 0.00637376 0.00317193] slope 1.016; with p-dependent chiral rotation: [0.03199117 0.01582989 0.00787376 0.00392661] slope 1.009; C3 estimates [0.0333 0.0332 0.0331 0.0331]
+PASS iso chi=0.00: remainder ||H_a - H_D - (a/2)p^2 W.tau|| / (a^2(|p|+m)^3) stays bounded as a -> 0 (max 0.033)
+PASS iso chi=0.00: error <= t(|W| a P^2/2 + C3 a^2 (P+m)^3) (t multiple of a, floor term zero)
+PASS iso chi=0 (Wilson-aligned mass): convergence is O(a) (slope 1.02) and the chiral rotation does not help (slope 1.01)
+   iso chi=1.571: max_p ||U^n - e^(-itH_D)|| = [0.01857071 0.00927399 0.00463558 0.00231761] slope 1.001; with p-dependent chiral rotation: [5.60646038e-04 1.39978903e-04 3.49833014e-05 8.74511117e-06] slope 2.001; C3 estimates [0.0331 0.0331 0.0331 0.0331]
+PASS iso chi=1.57: remainder ||H_a - H_D - (a/2)p^2 W.tau|| / (a^2(|p|+m)^3) stays bounded as a -> 0 (max 0.033)
+PASS iso chi=1.57: error <= t(|W| a P^2/2 + C3 a^2 (P+m)^3) (t multiple of a, floor term zero)
+PASS iso chi=pi/2 (maximal twist): constant identification O(a) (slope 1.00); p-dependent chiral rotation V_a(p) gives O(a^2) (slope 2.00)
+   gold chi=0.000: max_p ||U^n - e^(-itH_D)|| = [9.78153061e-04 2.44407057e-04 6.10923901e-05 1.52723649e-05] slope 2.000; with p-dependent chiral rotation: [9.78153061e-04 2.44407057e-04 6.10923901e-05 1.52723649e-05] slope 2.000; C3 estimates [0.0509 0.0509 0.0509 0.0509]
+PASS gold chi=0.00: remainder ||H_a - H_D - (a/2)p^2 W.tau|| / (a^2(|p|+m)^3) stays bounded as a -> 0 (max 0.051)
+PASS gold chi=0.00: error <= t(|W| a P^2/2 + C3 a^2 (P+m)^3) (t multiple of a, floor term zero)
+PASS gold chi=0.00: |W| = 0, convergence is O(a^2) (slope 2.00)
+   gold chi=1.571: max_p ||U^n - e^(-itH_D)|| = [9.83063887e-04 2.45020770e-04 6.11691096e-05 1.52819556e-05] slope 2.002; with p-dependent chiral rotation: [9.83063887e-04 2.45020770e-04 6.11691096e-05 1.52819556e-05] slope 2.002; C3 estimates [0.0509 0.0509 0.0509 0.0509]
+PASS gold chi=1.57: remainder ||H_a - H_D - (a/2)p^2 W.tau|| / (a^2(|p|+m)^3) stays bounded as a -> 0 (max 0.051)
+PASS gold chi=1.57: error <= t(|W| a P^2/2 + C3 a^2 (P+m)^3) (t multiple of a, floor term zero)
+PASS gold chi=1.57: |W| = 0, convergence is O(a^2) (slope 2.00)
+   floor-term example: a=0.01, t=1.006: error 6.5889e-03 vs a*E = 1.0569e-02
+PASS floor term: with t/a non-integer the error includes (t - na) E <= a E (example within bound)
+--- massive dispersion: E_a^2 a^2 = omega^2 fitted in eps for (k, theta) = eps (n, mu)
+PASS bstar chi=0.00: omega^2 = theta^2 + s^2 k^2 - theta |W| cos(chi) k^2 + alpha|k|^4 + beta sum k^4 - (s^2/3) theta^2 k^2 + O(eps^5) along 4 directions
+PASS bstar chi=1.57: omega^2 = theta^2 + s^2 k^2 - theta |W| cos(chi) k^2 + alpha|k|^4 + beta sum k^4 - (s^2/3) theta^2 k^2 + O(eps^5) along 4 directions
+PASS bstar chi=1.00: omega^2 = theta^2 + s^2 k^2 - theta |W| cos(chi) k^2 + alpha|k|^4 + beta sum k^4 - (s^2/3) theta^2 k^2 + O(eps^5) along 4 directions
+PASS iso chi=0.00: omega^2 = theta^2 + s^2 k^2 - theta |W| cos(chi) k^2 + alpha|k|^4 + beta sum k^4 - (s^2/3) theta^2 k^2 + O(eps^5) along 4 directions
+PASS iso chi=1.57: omega^2 = theta^2 + s^2 k^2 - theta |W| cos(chi) k^2 + alpha|k|^4 + beta sum k^4 - (s^2/3) theta^2 k^2 + O(eps^5) along 4 directions
+PASS iso chi=1.00: omega^2 = theta^2 + s^2 k^2 - theta |W| cos(chi) k^2 + alpha|k|^4 + beta sum k^4 - (s^2/3) theta^2 k^2 + O(eps^5) along 4 directions
+PASS gold chi=0.00: omega^2 = theta^2 + s^2 k^2 - theta |W| cos(chi) k^2 + alpha|k|^4 + beta sum k^4 - (s^2/3) theta^2 k^2 + O(eps^5) along 4 directions
+PASS gold chi=1.57: omega^2 = theta^2 + s^2 k^2 - theta |W| cos(chi) k^2 + alpha|k|^4 + beta sum k^4 - (s^2/3) theta^2 k^2 + O(eps^5) along 4 directions
+PASS gold chi=1.00: omega^2 = theta^2 + s^2 k^2 - theta |W| cos(chi) k^2 + alpha|k|^4 + beta sum k^4 - (s^2/3) theta^2 k^2 + O(eps^5) along 4 directions
+--- Gaussian packet: lattice-momentum weight at |k_a| >= pi/2 (1D factor), FFT vs erfc
+   Sigma/a = 1.0: weight 1.689e-03, erfc(kappa sqrt2 Sigma/a) = 1.680e-03
+PASS Sigma/a=1.0: doubler-region weight equals the Gaussian tail erfc(pi Sigma/(sqrt2 a)) to 5%
+   Sigma/a = 1.5: weight 2.476e-06, erfc(kappa sqrt2 Sigma/a) = 2.448e-06
+PASS Sigma/a=1.5: doubler-region weight equals the Gaussian tail erfc(pi Sigma/(sqrt2 a)) to 5%
+   Sigma/a = 2.0: weight 3.383e-10, erfc(kappa sqrt2 Sigma/a) = 3.317e-10
+PASS Sigma/a=2.0: doubler-region weight equals the Gaussian tail erfc(pi Sigma/(sqrt2 a)) to 5%
+TOTAL: PASS=99 FAIL=0
+
+----- stderr -----
+

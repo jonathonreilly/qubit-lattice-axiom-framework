@@ -233,6 +233,13 @@ Bosonized qubit sites (bosonized-sites, 2026-10-26, rethink r3; campaign files):
   - Five one-loop self-energies (phi^3, phi^4 sunset, Yukawa, overlap fermion under scalar exchange): dim-4 isotropic to 1e-14 (one speed of light); dim-6 residual <= 8e-15 on D4 vs 3e-2 to 2.3e-1 on the hypercubic control; the dim-8 J6 ratios are species-dependent (-0.380 to -0.036). Photon exchange not done.
   - The 8 heavy link modes are gapped (>= 36), with one gauge zero and no photon doublers.
   - **FAIL: fermion reflection positivity along a root.** Only 7 twisted reflection maps exist (no pure reflection), and the natural one gives an indefinite fermion form. This is a necessary-condition test only. Open routes: a twisted reflection, or a unitary real-time fermion step on D4 events.
+- **Fermion follow-up (d4-fermion-positivity, PR #10096, 10/10, own re-run identical): no route works; the law as written holds for BOSONS ONLY.**
+  - Twisted reflections pair k with Ak != k, so the form is indefinite even for the scalar.
+  - Slice energies are complex for every w < sqrt2. For w >= sqrt2 they are real, but negative-norm modes remain (wrong-sign fraction 0.96-0.999).
+  - A second W(F4) shell gives 0/50 positive points. A time-projector variant breaks W(F4) and brings dim-6 back (body - axis = 2/9).
+  - A unitary real-time walk is local but keeps only the 48-element cube group, so dim-6 = -(1 - sum n^4)/6 != 0.
+  - The "RP" in main's #9821 was a scalar-only finite PSD check; its 16-component fermion was never tested.
+  - Narrowed reading: bosons are protected, matter keeps the CL-1 tick, so the quark dim-6 term and the nuclear-breakup tension remain. A fermion construction that inherits the protection is OPEN.
 - **Ledger:** net about -2 clauses.
 - **Smuggling gate:** no fitted numbers; no observed structure named; untested prediction = photon decay near 2e20 eV, with electron/photon Lorentz-violation ratio exactly 16; bent clause = CL-1's tick.
 

@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/d4_event_one_mode_per_event_order96_nonsymmorphic_dirac_block_overlap_and_gauge_kinetic_anisotropy_2026_10_26.py
+runner_sha256: 345575a3cd22d622ddadb8bd134ab3976271b2c58aab416e55ad33fda0a0a6f0
+input_fingerprint_sha256: 6176d2dd90b5f2230858600719bab03f12dc96feaf11a47c2a398b73de7c5919
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 19.88
+status: ok
+----- stdout -----
+protected rotations-only sample: orders [96, 96, 96, 96, 96, 96, 96, 96, 192, 192, 192, 192, 192, 192, 288, 576]  [t=0.8s]
+PASS C1 [F] census of the sampled order-96 protected groups: Dirac-hosting realisations exist for exactly 2 of them; in EVERY one the 16 events split into orbits 4 + 12 with S+alpha and S-alpha on DIFFERENT orbits: 2/8 groups; patterns (orbits, S+ orbit, S- orbit) [((4, 12), (4,), (12,)), ((4, 12), (12,), (4,))]
+PASS C2 [T] explicit realisation: 16x16 monomial matrices of Ghat (order 192, nonsymmorphic tau, no fixed class, U(1) phases from stabiliser characters) form a representation with U(z) = -1; module multiplicity-free (<M,M> = 6), irreps 2,2,2,2,2,6; S+alpha (irreducible) lies on the 12-orbit, S-alpha on the 4-orbit; S+ and S- inequivalent: G gens [906, 928], cocycle #1, lambda (0, 2), alpha #0; hom err 1e-13; orbits [4, 12]
+PASS C3 [T] light Dirac block counts Hom_G(Sym^k V x S_D, S_D) vs SO(4) (= 2 for every k): equal for k <= 3 (isotropic velocity, isotropic p^2 and p^2 g.p: no dim-5/6 LIV); first excess at k = 4, only in the S- chirality block (quartic not (p^2)^2 there); off-diagonal excess at k = 5: k:(++,--,+-) 0:(1,1,0) 1:(0,0,1) 2:(1,1,0) 3:(-0,0,1) 4:(1,3,0) 5:(0,0,4) 6:(8,6,0)
+PASS C4 [F] finite-range one-mode-per-event kernel D_W = A + sum R^dag R (hops |d|^2 <= 4 per factor): G-invariant, eps-hermitian (eps = orbit sign); D_W(0) has exactly 4 null vectors = the Dirac block; D_W(P) invertible elsewhere (Re<v,Dv> = <v,Wv> > 0): invariance 1e-13, equivariance 1e-12, eps-herm 0e+00; sv(D_W(0)) 4 x 3e-16, next 1.000; null = S_D to 2e-14; min sv at distance > 0.8 from P = 0 images: 0.208 (|D_W| 24.88)
+PASS C5 [F] light branch of D_W: |det D_eff(p)|^(1/4)/|p| isotropic; anisotropy over 12 directions falls like eps^4 (first LIV at dim 8, none at dim 6): velocity 0.4997; anisotropy at eps 0.2/0.1/0.05: 3.8e-06/2.4e-07/1.5e-08, slope 3.99
+PASS C6 [F] overlap D_ov = m0 (1 + eps sign(eps (D_W - m0))) on the UNTUNED kernel (light masses nonzero, below m0): GW exact, exactly 4 zero modes at P = 0 with no tuning, no zero modes elsewhere, G-equivariant (the protection survives): D_W(0) light sv 4.2e-04-1.6e-03, m0 0.041; GW 2e-16; sv(D_ov(0)) 4 x 2e-16, next 0.081; min sv far 0.074; equivariance 8e-15
+PASS C7 [F] overlap light branch: isotropic, anisotropy falls like eps^4 (dim 6 = 0): velocity 0.5120; anisotropy at eps 0.02/0.01/0.005: 3.7e-10/2.4e-11/1.8e-12, slope 3.85
+  [t = 5.4 s]
+PASS C8 [F] gauged overlap on the 2048-event Z^4 box (constant fluxes, Q = n12 n34), index = (Tr eps - Tr sign H)/2: H Hermitian; RECORDED RESULT: index = +Q for Q = 0, 1, 2 but NOT for Q = -1 (index theorem not established at this m0/box): Q=0:+0 Q=1:+1 Q=-1:+0 Q=2:+2; herm 4e-16; min|eig H|/m0 0.960 0.811 1.923 0.579
+PASS C9 [F] Q = 1: Luscher P_hat = (1 - Gamma_hat)/2 (Gamma_hat = -sign H) is a projector; Tr Gamma_hat = 2 index - Tr eps; Gamma_hat decays exponentially: P^2-P 6e-15; Tr Gamma_hat -1022.0 vs -1022.0; decay rate 0.61/unit (max |Gamma_hat| at |x-y|=2: 1.6e-02, 4: 9.7e-03)
+PASS C10 [T] tensor counts of G (order 96): full rank 2/4/6 vs O(4) 1/3/15 and SO(4) 1/4/25; symmetric rank 2/4/6 vs SO(4) 1/1/1; <L2,L2> (gauge kinetic) vs SO(4) 2; <S2,S2> vs SO(4) 2: full [1, 8, 96]; symmetric [1, 1, 2]; <L2,L2> 4; <S2,S2> 4
+runtime 19.7 s
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

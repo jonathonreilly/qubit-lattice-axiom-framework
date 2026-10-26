@@ -1,0 +1,97 @@
+PASS S0 pinned commits exist (task main commit, current main, author commit)
+PASS S1 task source object sha256 at frozen main commit: docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md
+PASS S1 task source object sha256 at frozen main commit: docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+PASS S1 task source object sha256 at frozen main commit: docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md
+PASS S1 task source object sha256 at frozen main commit: docs/ai_methodology/skills/audit-loop/SKILL.md
+PASS S1 task source object sha256 at frozen main commit: docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md
+PASS S1 task source object sha256 at frozen main commit: docs/audit/data/skill_axiom_baseline_manifest.json
+PASS S2 author commit parent is the recorded base
+PASS S3 author commit is NOT an ancestor of current main (policy patch has not landed)
+PASS S4 author commit touches exactly the five repair files | ['docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md', 'docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md', 'docs/ai_methodology/skills/audit-loop/SKILL.md', 'docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md', 'docs/audit/data/skill_axiom_baseline_manifest.json']
+PASS S5 author blob sha256 matches the task record: docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+PASS S5 author blob sha256 matches the task record: docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md
+PASS S5 author blob sha256 matches the task record: docs/ai_methodology/skills/audit-loop/SKILL.md
+PASS S5 author blob sha256 matches the task record: docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md
+PASS S5 author blob sha256 matches the task record: docs/audit/data/skill_axiom_baseline_manifest.json
+PASS S6 drift of the task sources between frozen main commit and current main is exactly the two skill files | ['docs/ai_methodology/skills/audit-loop/SKILL.md', 'docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md']
+INFO current main 3e1a2dd253 is 214 commits after the frozen task commit
+PASS S7 repair-relevant authority files unchanged on current main vs frozen commit (memo, registry json)
+PASS W0 memo: approved primitives are named as part of the complete supplied foundation, and no admission class exists
+PASS W1 registry skill rule 5: a primitive grants no more than its source note declares
+PASS W2 registered kinetic primitive node: path is the kinetic note and the grant text mentions only c_t=c_s and no re-axiomatization of time
+PASS W3 Declares: same number of paragraphs, exactly one paragraph changed | [3]
+PASS W4 Declares: the changed paragraph keeps its head (everything before 'time remains emergent')
+PASS W5 Declares: changed paragraph keeps its closing grant-limiting clause in both versions
+PASS W6 Declares: the set of code spans (c_t = c_s, Z^3 x Z_tau, ...) is identical before/after
+PASS W7 Declares keeps grant text: c_t = c_s,
+PASS W7 Declares keeps grant text: hypercubic-symmetric
+PASS W7 Declares keeps grant text: One tick is one edge in **form**
+PASS W7 Declares keeps grant text: no mass ratio, coupling, mixing angle, phase, selector, readout bridge, or empirical fit
+PASS W8 Does-Not-Do: same bullet count and exactly one bullet changed (the re-axiomatize-time bullet) | [1]
+PASS W9 Does-Not-Do: changed bullet still limits the primitive to the one graining ratio c_t / c_s
+PASS W10 new text states axis, step and single clock are supplied premises
+PASS W11 old text asserted derivedness (the defect being corrected)
+PASS W12 kinetic note outside the two edited sections is byte-identical (old with the two sections swapped for the new ones equals the author's note)
+PASS T1 theorem note (current main) supports wording: axis
+PASS T1 theorem note (current main) supports wording: axis label
+PASS T1 theorem note (current main) supports wording: step
+PASS T1 theorem note (current main) supports wording: single clock
+PASS T1 theorem note (current main) supports wording: one declared construction
+PASS R0 baseline: generator --check passes on unmodified current main
+PASS R1 after the note edit alone, --check fails on exactly the 3 skill blocks and the manifest (propagation required) | ['docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md', 'docs/ai_methodology/skills/audit-loop/SKILL.md', 'docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md', 'docs/audit/data/skill_axiom_baseline_manifest.json']
+PASS R2 generator --write succeeds
+PASS R3 generator --check passes after regeneration
+PASS R4 regeneration is idempotent
+PASS R5 review-loop skill (router, no copied primitive text) is unchanged
+PASS R6 regenerated file is byte-identical to the author blob: docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+PASS R6 regenerated file is byte-identical to the author blob: docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md
+PASS R6 regenerated file is byte-identical to the author blob: docs/audit/data/skill_axiom_baseline_manifest.json
+PASS R7 regenerated file differs from the author blob only because main moved (expected, not an error): docs/ai_methodology/skills/audit-loop/SKILL.md
+PASS R7 regenerated file differs from the author blob only because main moved (expected, not an error): docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md
+PASS R8 author's hunks apply cleanly to current main and equal the regenerated file: docs/ai_methodology/skills/audit-loop/SKILL.md
+PASS R8 author's hunks apply cleanly to current main and equal the regenerated file: docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md
+PASS R8 author's hunks apply cleanly to current main and equal the regenerated file: docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md
+PASS R9 total repair size: 5 files, 36 insertions, 25 deletions (same as the author commit) | (36,25)
+PASS R10 edit confined to the generated block: docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md
+PASS R10 edit confined to the generated block: docs/ai_methodology/skills/audit-loop/SKILL.md
+PASS R10 edit confined to the generated block: docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md
+PASS R11 structural premise guard (check_axiom_premise_clean.py) passes on the patched tree | OK   minimal_axioms (docs/MINIMAL_AXIOMS_2026-06-29.md): pure premise content
+  OK   scale_reference_primitive (docs/SCA
+PASS R12 registry json untouched by the repair (grant registration unchanged)
+PASS R13 before repair the two stale sentences live on exactly the 4 live surfaces | ['docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md', 'docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md', 'docs/ai_methodology/skills/audit-loop/SKILL.md', 'docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md']
+PASS R14 after repair none of the 4 live surfaces carries either stale sentence | []
+INFO 27 frozen snapshot files (outputs/, .claude/, archive/) also quote the old text; they are pinned receipts and are NOT part of the repair
+PASS E1 framework_premise_epoch changes when the kinetic note changes (it binds the note bytes)
+PASS E2 none of the five repair files is a governed dependency-policy source (policy epoch manifest need not change)
+PASS E3 dependency_policy_epoch manifest lists exactly the policy sources and none of the repair files
+INFO legacy anchor framework_premise_epoch_digest already DIFFERS FROM current main's value (before repair)
+PASS E4 ledger at current main: every row unaudited and none carries a judgment snapshot (nothing for the premise-epoch change to invalidate) | rows=5950 snaps=0
+PASS C0 census universe at current main: 7730 tracked scripts/**/*.py runners and 5696 tracked logs/runner-cache/*.txt caches | runners=7730 caches=5696
+PASS C1 declared-input census: no runner declares the audit-loop skill; 164 declare the kinetic note, 6 the registry skill, 2 claim-status, 1 the manifest; 165 distinct runners | {'docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md': 164, 'docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md': 6, 'docs/ai_methodology/skills/audit-loop/SKILL.md': 0, 'docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md': 2, 'docs/audit/data/skill_axiom_baseline_manifest.json': 1}
+INFO pre-repair cache state of the 165: {'fresh': 122, 'input_mismatch': 17, 'missing': 24, 'sha_mismatch': 2}
+INFO post-repair cache state of the 165: {'input_mismatch': 139, 'missing': 24, 'sha_mismatch': 2}
+PASS C2 every currently-fresh affected cache stops being fresh after the repair, and nothing else changes state class (fresh->input_mismatch only) | fresh->stale=122
+PASS C3 the fingerprint rule reproduces the stored header fingerprint for the fresh set (validates the recomputation) | n=122
+INFO whole-repo cache headers at current main BEFORE any repair (7730 runners): {'missing': 2050, 'sha_mismatch': 503, 'sha_ok': 5177}
+PASS C4 the census is far smaller than 'thousands': the repair directly pins 165 runners (122 fresh caches) of 7730; about 2.1% of runners
+INFO 3 affected runners declare an input absent from the tree (unreadable declaration: precompute would raise, cache can never be fresh): ['docs/work_history/repo/review_feedback/ADMISSIBILITY_SYMBOL_DEFINABILITY_AND_EXACT_LAW_REFERENCE_CHALLENGE_NOTE_2026-07-14.md', 'docs/work_history/repo/review_feedback/BLIND_RESIDUAL_ATOM_PACKING_AND_ONE_LAW_CONSTITUTIONAL_SCHEMA_NOTE_2026-07-14.md', 'docs/work_history/repo/review_feedback/CANDIDATE_SELECTED_COMMON_REFERENCE_PORT_CYCLE120_NOTE_2026-07-15.md']
+INFO runners that name a repair file in source but do NOT declare it (invisible to the cache pin): {'docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md': 42, 'docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md': 4, 'docs/ai_methodology/skills/audit-loop/SKILL.md': 1, 'docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md': 1}
+INFO runners whose source embeds the CURRENT (pre-repair) sha256 of a repair file: {'docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md': 33, 'docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md': 33, 'docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md': 43, 'docs/ai_methodology/skills/audit-loop/SKILL.md': 0, 'docs/audit/data/skill_axiom_baseline_manifest.json': 0}
+INFO files in the whole tree that quote the pre-repair sha256 of the kinetic note (not classified; many are frozen receipts): 154, by area {'.claude/science': 70, 'scripts': 33, 'outputs': 24, 'docs/audit': 19, 'docs/work_history': 4, 'logs/runner-cache': 4}
+INFO files in the whole tree that quote the pre-repair sha256 of the registry skill (not classified; many are frozen receipts): 165, by area {'.claude/science': 92, 'scripts': 33, 'logs/runner-cache': 26, 'outputs': 10, 'docs/work_history': 4}
+INFO files in the whole tree that quote the pre-repair sha256 of the claim-status skill (not classified; many are frozen receipts): 313, by area {'.claude/science': 198, 'outputs': 44, 'scripts': 43, 'logs/runner-cache': 28}
+PASS C5 hash-pin census: at least one runner hard-codes the old kinetic-note sha256 (so re-execution alone cannot refresh it) | 33
+INFO scripts quoting a pre-repair sha256 of K/R/C: 76 total = 33 in the declared-input set + 43 undeclared (43 only as a path component '.../<sha>[.gz|.blob]' of a frozen copy, 0 other)
+PASS C7 hash-pin census closes: every pre-repair-sha quote outside the declared-input set is a frozen-copy file name (reads a frozen copy, not the live file) | other=[]
+PASS C6 the repo's diff-scoped selector (runners_for_changed_paths logic: known=ledger+cached runners, declared inputs intersect changed paths) selects a subset of the 165, and exactly the cached or ledger-known ones | selector=141 of 165
+PASS P1 execution plan written: every affected runner is in exactly one shard or flagged unreadable
+PASS P2 plan upper bound (sum of runner timeouts) is finite and its cached-time estimate is small (< 1 h) | timeouts=51000s cached=3259s
+INFO live re-execution subset: 12 unpinned fresh-fast + 8 hash-pinned fast runners
+PASS X0 patched tree differs from unpatched tree in docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+PASS X1 unpatched scratch tree reproduces exit code 0 for every unpinned fast runner (environment sound) | n=12
+PASS X2 patched tree: every unpinned fast runner still exits 0 with the same TOTAL line as the unpatched tree (pure re-execution refreshes them; raw stdout can differ by temp-dir names) | n=12
+PASS X3 DEFECT-OF-PLAN: hash-pinned runners pass on the unpatched tree and FAIL on the patched tree (re-execution alone records a failing cache) | 8 of 8
+PASS X4 the failures are reported by the runners' own hash/binding checks | n=8
+TOTAL: PASS=79 FAIL=0
+HIT: scoped plan defect and size correction for the clock-wording repair on current main: it pins 165 runner caches (122 fresh), not thousands, but 33 of them embed the old note or skill sha256 and fail when re-executed against the repaired files, so cache recapture needs a reviewed hash re-pin first and cannot be done by re-execution alone
+SUMMARY: the five-file wording repair is rebuilt from current main with the real generator (3 files byte-identical to the author's, 2 equal after the main drift), its grant text is unchanged, and its dependency census, hash-pin census and bounded live re-execution give a concrete recapture plan with one blocking step (old-hash re-pins) (95s)

@@ -1,0 +1,33 @@
+PASS S2.kernel_moments_box3  [dim ker=15, vectors with a nonzero zeroth/first moment=0]
+PASS S2.kernel_moments_box4  [dim ker=66, vectors with a nonzero zeroth/first moment=0]
+PASS S3.milp_move_found_support20  [status=0 support=20 (optimal in the 4^3 box)]
+PASS S3.move_in_kernel_exact_all_rows  [G m = 0 at every row of an enlarged window]
+PASS S3.move_zero_zeroth_and_first_moments
+PASS S3.move_has_nonzero_TT_quadrupole  [(M_plus,M_cross) along x,y,z = [('0', '-2'), ('0', '-2'), ('0', '0')]]
+PASS S3.series_w_equals_minus_M_over_2_t2  [w(t q-hat)= -(M/2) t^2 + O(t^3), exact, three axes x two TT polarisations]
+PASS S3.single_move_window_constant  [for H=-J sum(T+T^dag), q along x, cross polarisation: M=-2, so kappa c^2 <= J M^2 = 4 J (this move family only)]
+PASS S4.double_commutator_identity_spin1/2  [[O^dag,[T,O]] = -|w|^2 T exactly, |w|^2=173/18, E-dependent complex prefactor]
+PASS S4.double_commutator_identity_spin1  [[O^dag,[T,O]] = -|w|^2 T exactly, |w|^2=409/36, E-dependent complex prefactor]
+PASS S5.ring_ground_space_found  [dim of ground eigenspace in sector = 2, gap=0.4352]
+PASS S5.ring_fsum_identity_Q_projected  [<[O^dag,[H,O]]> = m1(O)+m1(O^dag) with the whole ground eigenspace removed (numerical)]
+PASS S5.ring_T3_bound_exact_finite_q  [K(q) <= 2 J |m_hat(q)|^2 at all ring momenta (numerical)]
+PASS S5.ring_moment_chain_Q_projected  [omega_min <= m0/m_-1 <= sqrt(m1/m_-1) <= m1/m0 (numerical)]
+PASS S5.exact_degenerate_ground_space  [ground energy -1 with multiplicity 4 (block ground state x 4 spectator configs), exact]
+PASS S5.exact_Q_weight_is_what_the_fsum_sees  [m1 = gap * S_Q (single level, gap 2): S_Q=316969/705600, m1=316969/352800]
+PASS S5.exact_mean_only_breaks_S_le_m1_over_omega  [S_mean-only=483569/705600 > m1/omega_min=316969/705600 ; elastic weight=17/72 > mean^2=0 ; Q-version S_Q=316969/705600 = m1/omega_min]
+PASS S6.finite_support_zero_moments_gives_q4  [S(q)=16 sin^4(q/2): q^2 and q^3 coefficients vanish, q^4 coefficient=1]
+PASS S6.algebraic_tail_r^-4_has_odd_cubic_term  [sum_{r>=1} cos(qr)/r^4 = pi^4/90 - pi^2 q^2/12 + pi q^3/12 - q^4/48 on [0,2pi] (|err|<1e-25)]
+PASS S6.algebraic_tail_realises_S_sim_q3_with_divergent_third_moment  [S(q)/q^3 -> pi/6 = 0.5235809 ; partial sums of sum |r|^3 |c(r)| grow like log R (checked below)]
+PASS S6.third_moment_of_algebraic_tail_diverges  [partial sums ['2.82897', '5.17738', '7.48447', '9.78751']]
+PASS S6.short_range_with_S0_and_S2_removed_is_o_q3  [S(q)/q^3 at q=0.1,0.01,0.001: ['0.18145', '0.018341', '0.0018343']]
+PASS S7.exact_commutation_space_equals_projected_harmonic_space  [dim{cross terms commuting with T_m}=13 ; dim of their projection from {X m=0, diagonal free}=13 ; dim{X m=0, diagonal=0}=9]
+PASS S7.exact_commutation_iff_outside_rows_annihilate_m  [commuting cross terms = {sum_{s in supp} a_st m_s = 0 for every outside slot t}; support-row harmonic equations impose nothing]
+PASS S7.linear_gauss_condition_is_g_dot_m  [[G,T_m] = (g.m) T_m : a linear grading, not a polynomial shift invariance]
+PASS S8.oscillator_chi_equals_1_over_U  [chi = 2 m_-1 = 1/U independent of K]
+PASS S8.local_quadratic_form_norm_bounded_by_row_sum  [so chi_harmonic >= 1/row-sum > 0 as q->0 for every local quadratic electric energy (numerical, 200 random stencils)]
+PASS S9.window_implications_exact_rational  [S >= c kappa/2, m1 >= c^2 kappa/2, S <= m1/omega_min, chi <= 2S/omega_min on 2000 exact random measures]
+PASS S9.single_mode_realises_the_window_at_the_sum_rule_saturation  [chi=kappa q^2, S=kappa c q^3/2, m1=kappa c^2 q^4/2 <= C q^4 iff kappa c^2 <= 2C : consistent, nothing excluded at moment level]
+INFO runtime 8.9s
+HIT: scoped, conditional, same-family result -- necessary conditions (S_in = Theta(|q|^3) so non-analytic algebraic Born correlations; kappa c^2 <= 2 C_H; kinetic-quadrupole lower bound) for any finite-spin exact-rule state with chi_in = Omega(q^2) and a linear lowest weighted mode, plus an exact example that mean-only ground-space subtraction breaks the S <= m1/omega_min bound; no such state is built.
+TOTAL: PASS=29 FAIL=0
+SUMMARY: PARTIAL -- no state is built; checked here (proofs in ATTEMPT.md): in the exact-rule finite-spin class, chi_in >= kappa q^2 with a lowest weighted mode omega_min >= c q outside the WHOLE ground eigenspace forces S_in = Theta(|q|^3), kappa c^2 <= 2 C_H and a sign-definite local kinetic-quadrupole sum, hence non-summable cubic Born correlations; harmonic (chi >= const), flat and short-range candidates fail, and mean-only ground-state subtraction exactly breaks S <= m1/omega_min.

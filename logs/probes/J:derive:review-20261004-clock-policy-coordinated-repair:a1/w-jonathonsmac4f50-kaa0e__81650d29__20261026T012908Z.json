@@ -1,0 +1,32 @@
+{
+ "task": "J:derive:review-20261004-clock-policy-coordinated-repair:a1",
+ "type": "judgment",
+ "lane": "review-science-20261004",
+ "worker": "w-jonathonsmac4f50-kaa0e",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261004-clock-policy-coordinated-repair/w-jonathonsmac4f50-kaa0e/check.py",
+ "seed": 78148,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "81650d29",
+ "started_utc": "20261026T012908Z",
+ "elapsed_s": 95.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "the five-file wording repair is rebuilt from current main with the real generator (3 files byte-identical to the author's, 2 equal after the main drift), its grant text is unchanged, and its dependency census, hash-pin census and bounded live re-execution give a concrete recapture plan with one blocking step (old-hash re-pins) (95s)"
+ },
+ "review": "pending: output not yet read",
+ "what": "Recover the reviewed wording correction from frozen author commit113ab6987c308338c53759368761e5521ab91b10 on fix/time-wording-current-axioms. Synchronize the kinetic primitive quotation, registry, audit skill and physics claim-status text to say that the axis, step and single clock are supplied premises, without changing the approved primitive grant. Regenerate the real axiom-baseline manifest. Build the dependency census first and prepare actual bounded re-executions for affected governed caches, which may number thousands. Do not restamp headers, waive policy freshness, change the cache epoch or claim this policy patch already landed. Deliver the minimal verified source repair and execution plan for supervisor integration. Owner-requested review transfer as science work, not a PR snapshot or adoption. Fetch current main, verify the pinned source objects, and read the actual axiom memo and registered primitive grants. Check related tasks, active claims, completed attempts and referee reports before selecting ONE distinct obligation. Deliver numbered PROVED/CHECKED/ASSUMED steps in probes/work/derive/<problem>/<worker>/ATTEMPT.md, a self-contained disjoint check.py and RECOVERY_STATUS.json listing hashes, the first unresolved step and remaining work. Known review corrections are background, not a new HIT. Commit the checker before run_probe.py; print SUMMARY and HIT only for a demonstrated new result or defect. Use claim.py and ordinary cross-model confirmation. Source recovery alone is not completion. Do not start workers, spawn agents, create PRs, change budgets or edit scientific/audit authority in this task.",
+ "stdout_sha256": "5d05e8a7c9cc1d0543d0cc0bcda65c2bae825acdd2b83bc038f4cb2173000575",
+ "stdout_tail": "hed-time estimate is small (< 1 h) | timeouts=51000s cached=3259s\nINFO live re-execution subset: 12 unpinned fresh-fast + 8 hash-pinned fast runners\nPASS X0 patched tree differs from unpatched tree in docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md\nPASS X1 unpatched scratch tree reproduces exit code 0 for every unpinned fast runner (environment sound) | n=12\nPASS X2 patched tree: every unpinned fast runner still exits 0 with the same TOTAL line as the unpatched tree (pure re-execution refreshes them; raw stdout can differ by temp-dir names) | n=12\nPASS X3 DEFECT-OF-PLAN: hash-pinned runners pass on the unpatched tree and FAIL on the patched tree (re-execution alone records a failing cache) | 8 of 8\nPASS X4 the failures are reported by the runners' own hash/binding checks | n=8\nTOTAL: PASS=79 FAIL=0\nHIT: scoped plan defect and size correction for the clock-wording repair on current main: it pins 165 runner caches (122 fresh), not thousands, but 33 of them embed the old note or skill sha256 and fail when re-executed against the repaired files, so cache recapture needs a reviewed hash re-pin first and cannot be done by re-execution alone\nSUMMARY: the five-file wording repair is rebuilt from current main with the real generator (3 files byte-identical to the author's, 2 equal after the main drift), its grant text is unchanged, and its dependency census, hash-pin census and bounded live re-execution give a concrete recapture plan with one blocking step (old-hash re-pins) (95s)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-kaa0e",
+  "at_utc": "20261026T013044Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

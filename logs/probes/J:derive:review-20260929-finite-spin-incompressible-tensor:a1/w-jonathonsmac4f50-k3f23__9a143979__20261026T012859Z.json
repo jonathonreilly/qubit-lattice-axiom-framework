@@ -1,0 +1,39 @@
+{
+ "task": "J:derive:review-20260929-finite-spin-incompressible-tensor:a1",
+ "type": "judgment",
+ "lane": "review-science-20260929",
+ "worker": "w-jonathonsmac4f50-k3f23",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20260929-finite-spin-incompressible-tensor/w-jonathonsmac4f50-k3f23/check.py",
+ "seed": 78139,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "9a143979",
+ "started_utc": "20261026T012859Z",
+ "elapsed_s": 9.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL -- no state is built; checked here (proofs in ATTEMPT.md): in the exact-rule finite-spin class, chi_in >= kappa q^2 with a lowest weighted mode omega_min >= c q outside the WHOLE ground eigenspace forces S_in = Theta(|q|^3), kappa c^2 <= 2 C_H and a sign-definite local kinetic-quadrupole sum, hence non-summable cubic Born correlations; harmonic (chi >= const), flat and short-range candidates fail, and mean-only ground-state subtraction exactly breaks S <= m1/omega_min."
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 29/29 PASS; PARTIAL. No state built or refuted; proved necessary conditions (S_in=Theta(|q|^3), kappa c^2<=2C_H, sign-definite kinetic-quadrupole sums, non-summable cubic Born correlations) for any finite-spin exact-rule state with chi_in>=kappa q^2 and a linear lowest weighted mode outside the whole ground eigenspace; exact counterexample that mean-only subtraction breaks S<=m1/omega_min (bookkeeping). Step S11 open.",
+ "what": "Build or refute one concrete finite-spin state with an inelastic TT susceptibility of order q^2 and a linear lowest weighted mode. Exclude the entire ground eigenspace in spectral moments, not merely its mean. Distinguish exact termwise additive Gauss preservation from harmonic shift invariance; diagonal-spin Fierz-Pauli cross terms need not be constant at spin half. A commutator identity, a finite-box MILP support count or an RK sampler does not prove a many-body phase or a uniform lower bound. Owner-requested research transfer after landing review. The source is an unlanded hypothesis, not authority: fetch the named author branch, verify the frozen Git SHA and exact path/hash from probes/work/review-science-20260929/SOURCE_MAP.json. Fetch current origin/main and prefer its corrected bounded sources; read the actual axiom memo and primitive grants before premise judgments. Check related tasks, completed attempts, referee reports and active claims before choosing ONE distinct obligation. Read the complete argument, actual inputs and paired code for that obligation. Known review corrections are background, not a new HIT. Deliver numbered PROVED/CHECKED/ASSUMED steps in ATTEMPT.md, a self-contained check.py with disjoint machinery, and RECOVERY_STATUS.json with hashes, first unresolved step and remaining obligations. Prove finite claims exactly where possible; failed search is not a no-go and negative claims require N1-N8 before promotion. Commit the checker before run_probe.py; print SUMMARY with the actual result and HIT only for a demonstrated new result or defect. Finish through claim.py and ordinary cross-model confirmation. Use the existing maximum-thinking J campaign; do not spawn agents, start workers, change budgets, create PRs or edit scientific/audit authority.",
+ "stdout_sha256": "fea22f063e700a623c728a7536a09fbd6f5cf57419d17e0ed19ff7aafbf149e4",
+ "stdout_tail": "er_U  [chi = 2 m_-1 = 1/U independent of K]\nPASS S8.local_quadratic_form_norm_bounded_by_row_sum  [so chi_harmonic >= 1/row-sum > 0 as q->0 for every local quadratic electric energy (numerical, 200 random stencils)]\nPASS S9.window_implications_exact_rational  [S >= c kappa/2, m1 >= c^2 kappa/2, S <= m1/omega_min, chi <= 2S/omega_min on 2000 exact random measures]\nPASS S9.single_mode_realises_the_window_at_the_sum_rule_saturation  [chi=kappa q^2, S=kappa c q^3/2, m1=kappa c^2 q^4/2 <= C q^4 iff kappa c^2 <= 2C : consistent, nothing excluded at moment level]\nINFO runtime 8.9s\nHIT: scoped, conditional, same-family result -- necessary conditions (S_in = Theta(|q|^3) so non-analytic algebraic Born correlations; kappa c^2 <= 2 C_H; kinetic-quadrupole lower bound) for any finite-spin exact-rule state with chi_in = Omega(q^2) and a linear lowest weighted mode, plus an exact example that mean-only ground-space subtraction breaks the S <= m1/omega_min bound; no such state is built.\nTOTAL: PASS=29 FAIL=0\nSUMMARY: PARTIAL -- no state is built; checked here (proofs in ATTEMPT.md): in the exact-rule finite-spin class, chi_in >= kappa q^2 with a lowest weighted mode omega_min >= c q outside the WHOLE ground eigenspace forces S_in = Theta(|q|^3), kappa c^2 <= 2 C_H and a sign-definite local kinetic-quadrupole sum, hence non-summable cubic Born correlations; harmonic (chi >= const), flat and short-range candidates fail, and mean-only ground-state subtraction exactly breaks S <= m1/omega_min.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k3f23",
+  "at_utc": "20261026T013051Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: log's git sha 9a143979 differs from the current HEAD 81650d29 (fine if you pulled since; the run is bound to its sha)",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Scoped conditional necessary-conditions result; no construction. Same-family, unrefereed; the worker itself called the HIT modest.",
+  "by": "w-jonathonsmac4f50-k3f23",
+  "at_utc": "20261026T013051Z"
+ }
+}

@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/composite_dispersion_flows_to_the_most_subluminal_constituent_and_closes_hadron_vacuum_emission_2026_10_26.py
+runner_sha256: 14e155ae8720056435f87f2b913bae9e811ae64a66460988340b88b91e6a6cf9
+input_fingerprint_sha256: 470f6c47aca861e5bbeb0bedcd744fe839b9570119bf4fa46bab9aef98dfaa5a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 7.75
+status: ok
+----- stdout -----
+A  lattice frame: cos band eps = 2t(1 - cos k) per axis; constituent P^4/P^2 ratio = -S/12
+PASS A1a Z^1 pair: Lippmann-Schwinger root = closed form -sqrt(U^2 + 16t^2 cos^2(P/2)) | max err 3.6e-15
+   pair ratio b/a [theory -1/12 + t^2/(U^2+16t^2)]: U/t=0.05: -0.02084 (0.250 x const); U/t=1: -0.02451 (0.294 x const); U/t=4: -0.05208 (0.625 x const); U/t=20: -0.08093 (0.971 x const); U/t=200: -0.08331 (1.000 x const)
+PASS A1b exact law: pair ratio = -1/12 + t^2/(U^2+16t^2): additive (-1/48 = x^2 const at x=1/2) for |U|<<t, universal (-1/12) for |U|>>t | interpolation set by binding/bandwidth
+   Z^3 critical on-site attraction U_c = 7.9136 (2 x Watson integral^-1)
+   axis (S=1.000): ratio/(-S/12) at U/U_c = 1.5, 3, 30, 300: 0.932, 0.979, 1.000, 1.001
+   face (S=0.500): ratio/(-S/12) at U/U_c = 1.5, 3, 30, 300: 1.166, 1.025, 1.000, 1.000
+   body (S=0.333): ratio/(-S/12) at U/U_c = 1.5, 3, 30, 300: 1.401, 1.071, 1.001, 1.000
+PASS A2 Z^3 on-site pair: U_c = 7.91 is of order the bandwidth 12, so every Z^3 contact bound state is lattice-sized and carries the constituent (universal) ratio -S/12 with the cubic S pattern on every ray | additive limit needs an extended bound state (A1, binding << bandwidth)
+B  light-front 2-body: M^2 = m1^2/x + m2^2/(1-x) - kap^4/(m1+m2)^2 d(x(1-x)d) + lam [c1 x^3 + c2 (1-x)^3], lam = 2P^4/E*^2
+   qq   : M0 = 0.8485 GeV (N 1500/3000 rel 4e-06), quark <x^3>_0 = 0.2000
+   q+s0 : M0 = 1.1662 GeV (N 1500/3000 rel 1e-07), quark <x^3>_0 = 0.0739
+   q+sg : M0 = 1.1662 GeV (N 1500/3000 rel 1e-07), quark <x^3>_0 = 0.0739
+PASS B1 Hellmann-Feynman: dM^2/dlam|0 = <c1 x^3 + c2 (1-x)^3>_0, i.e. at first order in the LIV the composite coefficient is exactly parton-additive with the rest-frame momentum fractions | -0.0226136 vs -0.0226125
+PASS B2 lam >> M0^2: c_B -> min_i c_i = c_q (momentum flows to the most subluminal constituent) in every model | c_B/c_q at lam=1e7 GeV^2 (axis): 0.9981, 0.9973, 0.9973
+   sky qq   : c_B/c_q = 0.400 (additive, P<1e8 GeV) -> 0.928 (1e10) -> 1.000 (1e12); half-way at 5.0e+18 eV
+   sky q+s0 : c_B/c_q = 0.074 (additive, P<1e8 GeV) -> 0.894 (1e10) -> 1.000 (1e12); half-way at 5.0e+18 eV
+   sky q+sg : c_B/c_q = 0.211 (additive, P<1e8 GeV) -> 0.894 (1e10) -> 1.000 (1e12); half-way at 5.0e+18 eV
+PASS B3 c_B(P) interpolates monotonically from the additive value (P << P_x) to the most subluminal constituent (P >> P_x); P_x ~ (M0^2 E*^2/2|c|)^(1/4) is EeV-scale, the same scale as the additive emission threshold
+   p->p gamma opens (eV) qq    axis/sky/body: frozen-additive closed/1.6e+19/5.6e+18; full eigenstate closed/closed/closed
+   p->p gamma opens (eV) q+s0  axis/sky/body: frozen-additive 4.3e+18/4.7e+18/5.0e+18; full eigenstate closed/closed/closed
+   p->p gamma opens (eV) q+sg  axis/sky/body: frozen-additive 6.0e+18/6.3e+18/6.7e+18; full eigenstate closed/closed/closed
+PASS B4a frozen-additive proton proxies (q+s0, q+sg; low quark <x^3>) open p -> p gamma on every ray below 1e20 eV (reproduces the parent tension)
+PASS B4b full eigenstate: p -> p gamma CLOSED to 1e20 eV on axis and sky-average rays in every model
+   scan q+s0 full, (m1,m2,kap) = (.1,.5,.4) (.3,.9,.8) (.4,.6,.5) (.2,.7,.6): closed/closed/closed; closed/closed/closed; closed/closed/closed; closed/closed/closed
+PASS B4c closure on axis + sky rays stable under the supplied-binding scan
+runtime 6.9 s
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

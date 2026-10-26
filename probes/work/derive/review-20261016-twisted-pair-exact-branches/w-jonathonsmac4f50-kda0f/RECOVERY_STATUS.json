@@ -1,0 +1,213 @@
+{
+ "task_id": "J:derive:review-20261016-twisted-pair-exact-branches:a1",
+ "source_branch": "main",
+ "source_head": "2bb6c1a54721e70512922fb10d4495adf8ea3042",
+ "source_head_is_ancestor_of_current_main_checkout": true,
+ "source_objects": [
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/HANDOFF.md",
+   "sha256": "5ded0b9965a78d887bf2277d47563d42537a658535cc573486f6473f022c72d7",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/REVIEW_AGENT_WORK.json",
+   "sha256": "e4de287455dca1c18251992979d610ff5f96db7b36c15d36431cd2b32317da96",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/README.md",
+   "sha256": "4970e457431445eba2a70ee8e70c69ec112b5615d690733e69b5dece95e3dca5",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/spinj_exact.py",
+   "sha256": "06e0f302dbd2136433e9af094f28dc1f17c3316a63610c1246b84815e7a56cb8",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/exact_extensions/tosing_branch.py",
+   "sha256": "1fa09d12bfe12a06af7d92830ae9ec98891f98e1826563db69eb7ec5d5cc5f71",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/README.md",
+   "sha256": "2fb6cec4dd54f4717936b1c8df1bb71aa6c7fb1608058d1c32cbf052557d3aae",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b0_Q.out",
+   "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b0_Q.sing",
+   "sha256": "43a793e4853628753da9b823bf1d3ae04a66ae36feada6690997dfb6645e32b2",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b0_p.out",
+   "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b0_p.sing",
+   "sha256": "bfba38d9b88e0d66e78a969ff0e007587204d3857486a43fcd0a98b3ad94fb44",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b1_Q.out",
+   "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b1_p.out",
+   "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b1_p.sing",
+   "sha256": "a3f3d4c064e036d2d17494d593c80597c4bf20b8c471fd3b172920c982339d53",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b2_Q.out",
+   "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b2_p.out",
+   "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b2_p.sing",
+   "sha256": "d04a24010ce7c9da27c23cb9c56d6c9cc0420655442d5a61826dbea7d0b3c65b",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b3_Q.out",
+   "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b3_p.out",
+   "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b3_p.sing",
+   "sha256": "9530ad848bd3bb0abb153d5db361772607e57faecc19afeb9fa028e6167438a6",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b4_Q.out",
+   "sha256": "02c00dffc161e2e7864c597bfaa2acd7226aeb36e9e2e4ad16f6813fc90b85d6",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b4_p.out",
+   "sha256": "02c00dffc161e2e7864c597bfaa2acd7226aeb36e9e2e4ad16f6813fc90b85d6",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b4_p.sing",
+   "sha256": "9c574a21dced8c77734949698bc3577d789e1b7b3992d7b9ec0a99a4f005fe78",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b5_Q.out",
+   "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b5_p.out",
+   "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b5_p.sing",
+   "sha256": "9ba5e080502a3c20f5cb46d7acf9613c532e0db1d7191b6dadf974078bda7277",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b6_Q.out",
+   "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b6_p.out",
+   "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b6_p.sing",
+   "sha256": "d4331fb27983d6308de835778aa47cd44cdc100d5a3576464376473c9391576f",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b7_Q.out",
+   "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b7_p.out",
+   "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b7_p.sing",
+   "sha256": "f7dd598ba1678539e42058735afcf45f83d997c98f08e78a74ec0090d5284a4e",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b8_Q.out",
+   "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b8_p.out",
+   "sha256": "121b0f40b460d8b8e5c8c326a10fdec8ffffcef17c2449aa8fc5159e3dfa3444",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/b8_p.sing",
+   "sha256": "211d1b63bc40facdb925670218cfdfda5b32cdc7e8ff35b0f50c4766157dc3c4",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261015/generations/twisted_branches/build_branches.py",
+   "sha256": "f97728c117c8c6eed2bef61a6fe10b496a8fe0c1adeebcdbc1c2539f7ba5426a",
+   "verified": true
+  },
+  {
+   "path": "docs/CUBIC_CELL_SHAPE_SETS_THE_TASTE_CONTENT_AXIS_PERMUTATION_BOUNDED_THEOREM_NOTE_2026-10-16.md",
+   "sha256": "1036c463cc28ee1fd0ec6c69adea1abc2829f661117ac0c103ecaf83b99327b1",
+   "verified": true
+  }
+ ],
+ "all_source_hashes_verified": true,
+ "axioms_and_registry_read": [
+  "docs/MINIMAL_AXIOMS_2026-06-29.md",
+  "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md"
+ ],
+ "result_status": "scoped result, same-family, unrefereed, nothing adopted",
+ "closed_in_attempt": [
+  "exact exhaustive axis-branch selection: 81 exponent vectors -> exactly 9 (a,-a,b,-b); C2(y) pairing argument",
+  "characteristic-zero layered cofactor certificates (unit ideal over Q) replayed by check.py for the 8 axis-moving branches",
+  "simultaneous-variable converter mutation controls and certificate mutation controls",
+  "consequence in the supplied setting: every U(0)=1 walk is axis-flat, dU/dk(0)=0"
+ ],
+ "surviving_branches": [
+  {
+   "axis_exponents": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "status": "non-empty (constant walk and non-constant numerical solutions); 14 independent affine-linear consequences leave 18 unknowns; Zariski tangent dim 16 at the constant walk; not otherwise described"
+  }
+ ],
+ "first_unresolved_step": "Exact description of the surviving axis-flat branch (0,0,0,0): its irreducible components, dimension and reducedness over Q (saved mod-p/modStd output only says dim 4), and whether any member has a band touching or Dirac-type point away from k=0. Needs a Groebner/primary-decomposition computation on 18 unknowns with 54+ quadrics, not available here. Also uncovered: U(0) with unequal block phases, ranges above one, other cells.",
+ "label_note": "check.py orders the four J_x eigenlines as (block1,+),(block1,-),(block2,+),(block2,-). The saved b0..b8 labels have the block-2 orientation reversed relative to this: their b_i has (m1,m3) lexicographic, the rank signature of the span of the 336 quadrics (76,74,72,74,72,74,72,74,76) matches check.py's (72,74,76,74,72,74,76,74,72) only after b -> -b in the second block. Scratch observation, not in check.py."
+}

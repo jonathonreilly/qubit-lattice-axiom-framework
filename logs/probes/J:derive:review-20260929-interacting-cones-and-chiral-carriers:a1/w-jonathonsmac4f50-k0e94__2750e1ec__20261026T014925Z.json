@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20260929-interacting-cones-and-chiral-carriers:a1",
+ "type": "judgment",
+ "lane": "review-science-20260929",
+ "worker": "w-jonathonsmac4f50-k0e94",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20260929-interacting-cones-and-chiral-carriers/w-jonathonsmac4f50-k0e94/check.py",
+ "seed": 79365,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "2750e1ec",
+ "started_utc": "20261026T014925Z",
+ "elapsed_s": 298.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "one-loop walker speed shift -0.011675 g^2 is order-of-limits independent (exact continuum 1/(48 pi^2) infrared term + lattice numerics), gap v_psi - v_phi = +0.0263 g^2 (scalar side 3-digit support); the note's separate zero-mass value is not supported; chiral-carrier half and finite volume untouched."
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 26/26 PASS (~3 min); scoped to the walker loop of the supplied Yukawa comparator (chiral-carrier half not attempted): walker speed coefficient -0.0116752(1) g^2 in both orders of limits, IR term g^2/(48 pi^2) proved in the continuum; the lattice identity is checked, not proved (step 14); the note's separate mu=0 value -0.009564 and +0.0284 g^2 gap are not reproduced (diagnosis as double-counted IR term is a reading; numbers appear only in note text); scalar coefficient only 3-digit.",
+ "what": "For the supplied Yukawa comparator independently derive the loop integrands and fix the order of momentum, scalar mass and volume limits, with numerical error. Refined quoted coefficients need fresh support; no observational tuning bound follows automatically. For a chosen chiral carrier prove the relevant degree/winding or exact locality statement under its actual band, unitary and time assumptions. A sampled range-two gap and tail fit are not uniform certificates; heating, sixteen-state necessity and interacting mirror removal need separate proofs. Owner-requested research transfer after landing review. The source is an unlanded hypothesis, not authority: fetch the named author branch, verify the frozen Git SHA and exact path/hash from probes/work/review-science-20260929/SOURCE_MAP.json. Fetch current origin/main and prefer its corrected bounded sources; read the actual axiom memo and primitive grants before premise judgments. Check related tasks, completed attempts, referee reports and active claims before choosing ONE distinct obligation. Read the complete argument, actual inputs and paired code for that obligation. Known review corrections are background, not a new HIT. Deliver numbered PROVED/CHECKED/ASSUMED steps in ATTEMPT.md, a self-contained check.py with disjoint machinery, and RECOVERY_STATUS.json with hashes, first unresolved step and remaining obligations. Prove finite claims exactly where possible; failed search is not a no-go and negative claims require N1-N8 before promotion. Commit the checker before run_probe.py; print SUMMARY with the actual result and HIT only for a demonstrated new result or defect. Finish through claim.py and ordinary cross-model confirmation. Use the existing maximum-thinking J campaign; do not spawn agents, start workers, change budgets, create PRs or edit scientific/audit authority.",
+ "stdout_sha256": "952be1d319074660d1a01cbd09f171805e9dcab303ca1fde8cdfc8659e104c34",
+ "stdout_tail": "75)  [V(P=0.025)=-0.0116718]\nPASS B6b READING-support NUM: -0.009564 equals V_naive(0) + 2/(48 pi^2) to the printed 6 digits, i.e. the infrared term counted twice  [V_naive(0)+2/(48pi^2) = -0.0095644]\n      A-B(r): r=0.2: -0.074791; r=0.1: -0.075558; r=0.05: -0.075795; step ratio 3.25; extrapolated -0.07590\nPASS C1 NUM: scalar A-B reproduces the quoted -0.07479 / -0.07556 / -0.07579 at r = 0.2 / 0.1 / 0.05 (to 3e-5)\nPASS C2 NUM: extrapolated A-B = -0.0759 with error about 2e-4 (sources: -0.07589); this is a 3-digit support only  [A-B = -0.07590]\nPASS D NUM: v_psi - v_phi = V - (A-B)/2 = +0.0263 g^2 in BOTH orders of the walker limit (the note's +0.0284 at zero scalar mass is not supported)  [v_psi - v_phi = 0.02627 g^2  (note: 0.0263 / 0.0284)]\nTOTAL: PASS=26 FAIL=0\nruntime 297s\nHIT: for the supplied Yukawa comparator the walker's one-loop speed coefficient is -0.0116752(1) g^2 in BOTH orders of limits (mu->0 after P->0, and mu=0 then P->0); the infrared region q~P adds exactly g^2/(48 pi^2) (proved in the continuum, q-density vanishes for q>P at mu=0) to the pointwise derivative -0.0137861; the note's separate 'mu=0' value -0.009564 and +0.0284 g^2 are not reproduced.\nSUMMARY: one-loop walker speed shift -0.011675 g^2 is order-of-limits independent (exact continuum 1/(48 pi^2) infrared term + lattice numerics), gap v_psi - v_phi = +0.0263 g^2 (scalar side 3-digit support); the note's separate zero-mass value is not supported; chiral-carrier half and finite volume untouched.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k0e94",
+  "at_utc": "20261026T015434Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Scoped numerical/continuum result plus a non-reproduction of a note value. Same-family, unrefereed.",
+  "by": "w-jonathonsmac4f50-k0e94",
+  "at_utc": "20261026T015434Z"
+ }
+}

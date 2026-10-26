@@ -1,0 +1,39 @@
+PASS S0 Jordan-Wigner fermions anticommute exactly (3 modes)
+PASS S1 EXACT [3 sites, random integer polynomial test vectors] Q^2 F = 0 with symmetric quadratic part (free entries) + quartic + cubic prepotential
+PASS S2 EXACT [3 sites, random integer polynomial test vectors] {Q,Q^dag} = sum(-d^2 + W_x^2 - W_xx) + 2 sum W_xy psi_x^dag psi_y
+PASS S3 EXACT [3 sites] H exp(-W)|vac> = 0 (both as {Q,Q^dag} and in the local form), generic symbolic a_ij, lam, mu
+PASS S0 Jordan-Wigner fermions anticommute exactly (2 modes)
+PASS S1 EXACT [2 sites, generic component functions] Q^2 F = 0 with symmetric quadratic part (free entries) + quartic + cubic prepotential
+PASS S2 EXACT [2 sites, generic component functions] {Q,Q^dag} = sum(-d^2 + W_x^2 - W_xx) + 2 sum W_xy psi_x^dag psi_y
+PASS S3 EXACT [2 sites] H exp(-W)|vac> = 0 (both as {Q,Q^dag} and in the local form), generic symbolic a_ij, lam, mu
+PASS S5 EXACT A(g) = m^2 + g^{ij} D_i^T D_j is positive definite on the 3^3 torus for a rational unimodular shear g (exp(-2W) integrable)
+PASS S4a EXACT A_xx = m^2 + sum(g) + tr(g) = 11 (so tr A = V (m^2 + tr(g Cbar)), Cbar = I + 11^T)
+PASS S4b EXACT (-d^2 + a^2 phi^2) exp(-a phi^2/2) = a exp(-a phi^2/2): boson zero point per mode = a, sum over modes = tr A
+PASS S6 EXACT per-site static shear coefficients (E = E0 + c t^2/2, tr eps^2 = 1): boson half c_E = c_T = +2, fermion half = -2, sum = 0 (axis: 2/-2, face: 2/-2)
+PASS S6b EXACT central-difference coupling (sin k_i sin k_j, exact Z_4^3 average = I/2): boson half c = +1/2, fermion half -1/2; the value depends on the coupling, the cancellation does not
+PASS N1 2x2 cluster d=13 axis shear lam=0.0: SUSY ground energy at t=-h,0,+h = 1.81e-04, 1.78e-04, 1.81e-04 (exact value 0; truncation gives a variational upper bound)
+PASS N1 2x2 cluster d=13 axis shear lam=3.0: SUSY ground energy at t=-h,0,+h = 8.39e-05, 7.81e-05, 8.39e-05 (exact value 0; truncation gives a variational upper bound)
+PASS N1 2x2 cluster d=13 face shear lam=0.0: SUSY ground energy at t=-h,0,+h = 1.98e-04, 1.78e-04, 1.47e-04 (exact value 0; truncation gives a variational upper bound)
+PASS N1 2x2 cluster d=13 face shear lam=3.0: SUSY ground energy at t=-h,0,+h = 6.50e-05, 7.81e-05, 1.08e-04 (exact value 0; truncation gives a variational upper bound)
+PASS N2 axis shear lam=0.0: boson-only energy curvature d2E/dt2 = 8.030, supersymmetric total = 0.0001 (free: expected +2 per site x 4 sites = +8 up to O(h^2))
+PASS N2 axis shear lam=3.0: boson-only energy curvature d2E/dt2 = 7.957, supersymmetric total = 0.0001 (interacting; boson-only energy at t=0 is 23.651, free value 20, so the quartic term is not small)
+PASS N2 face shear lam=0.0: boson-only energy curvature d2E/dt2 = 8.030, supersymmetric total = -0.0001 (free: expected +2 per site x 4 sites = +8 up to O(h^2))
+PASS N2 face shear lam=3.0: boson-only energy curvature d2E/dt2 = 7.718, supersymmetric total = 0.0002 (interacting; boson-only energy at t=0 is 23.651, free value 20, so the quartic term is not small)
+PASS N3 face shear lam=0.0: 12 lowest levels flat -> sheared (t=0.3) differ by up to 0.181 (lowest gap 2.0030 -> 2.0026); E_0 stays 1.5e-04
+PASS N3 face shear lam=3.0: 12 lowest levels flat -> sheared (t=0.3) differ by up to 2.198 (lowest gap 3.8384 -> 3.8082); E_0 stays 1.1e-04
+   (cluster ED time 31.2s)
+PASS N4 truncation convergence of the SUSY ground energy (face shear t=0.3, lam=3): d=9: 2.82e-03, d=11: 6.80e-04, d=13: 1.08e-04 (non-increasing, bounded below by exact 0)
+PASS B0 axis: BZ-quadrature boson-half curvature = 2.000000000000 (exact 2)
+PASS B1 axis soft breaking (boson mass^2 shift delta only): curvature per site delta=0,0.02,0.1: 0.00000, -0.00025, -0.00125 ; FD check at 0.1: -0.001248 vs -0.001248
+PASS B1b axis leak is first order in the breaking (nonzero, same sign and size at delta = 0.02 and 0.1): c/delta = -0.0125, -0.0125
+PASS B0 face: BZ-quadrature boson-half curvature = 2.000000000000 (exact 2)
+PASS B1 face soft breaking (boson mass^2 shift delta only): curvature per site delta=0,0.02,0.1: 0.00000, -0.00025, -0.00126 ; FD check at 0.1: -0.001256 vs -0.001256
+PASS B1b face leak is first order in the breaking (nonzero, same sign and size at delta = 0.02 and 0.1): c/delta = -0.0126, -0.0126
+PASS B2a single mode: adiabatic mass M = 2 sum|<n|H'|0>|^2/E_n^3 = 0.00457969 (formula a'^2/(16 a^3) = 0.00457969), Berry metric 0.01557093 (a'^2/(8a^2) = 0.01557093)
+PASS B2b free 3D lattice sea (m^2=1, forward coupling), per site: adiabatic mass M = 0.00060 (axis), 0.00059 (face); Berry metric 0.00641, 0.00856; static energy identically 0
+PASS B3 2x2 cluster face shear t=0: adiabatic mass M(lam=0) = 0.00274, M(lam=3) = 0.00202 ; Berry metric 0.04938, 0.04006 (ground energy 1.8e-04, 7.8e-05)
+PASS B3b lam=0 ED inertia 0.00274 / Berry 0.04938 agree with mode formula 0.00274 / 0.04938
+TOTAL: PASS=34 FAIL=0
+   (runtime 42.4s)
+HIT: scoped counterexample to 'only tuning or volume-preserving flow removes the interacting shape term': exact Q-exact interacting completion (continuous-site comparator).
+SUMMARY: In a supplied Q-exact (boson + fermion) lattice model with a quartic interaction, the vacuum energy is exactly 0 for every symmetric quadratic prepotential, hence for any constant or position-dependent inverse metric entering through it (exact algebra, plus 2x2-cluster exact diagonalisation at quartic coupling 3), although the boson-only and fermion-only halves have static shear coefficients +2 and -2 per site, the excitation levels move with the shear and the sea has nonzero Berry/adiabatic inertia; a boson mass shift leaks at first order; the walker's Dirac sea on qubit sites, wave speeds and exact poles are not covered.

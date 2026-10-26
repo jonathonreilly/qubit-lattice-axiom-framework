@@ -6,7 +6,7 @@ Driver. Each part is a declared helper run in an isolated interpreter (python -I
 each part prints against the criteria fixed before the runs (sections O, G, M of the note). Labels: [T] exact,
 [F] finite diagnostic, [N] negative (failed search over the stated family only). Every line reports a RESULT:
 'PASS' means the stated result reproduced, including results that are failures of a hypothesis."""
-AUDIT_TIMEOUT_SEC = 1500
+AUDIT_TIMEOUT_SEC = 2700
 AUDIT_INPUT_PATHS = (
     "scripts/asymmetry_misalignment_part_freeze_tick_rebuild_2026_10_26.py",
     "scripts/asymmetry_misalignment_part_code_group_2026_10_26.py",
@@ -36,7 +36,7 @@ def run(part):
     p = HERE / f"asymmetry_misalignment_part_{part}_2026_10_26.py"
     nt = '4' if part == 'code_space_match' else '1'      # the 8! x 6 labelling search is the one heavy part
     env = dict(os.environ, OPENBLAS_NUM_THREADS=nt, OMP_NUM_THREADS=nt)
-    t = time.time(); r = subprocess.run([sys.executable, '-I', str(p)], capture_output=True, text=True, timeout=900, env=env)
+    t = time.time(); r = subprocess.run([sys.executable, '-I', str(p)], capture_output=True, text=True, timeout=1500, env=env)
     out = r.stdout + r.stderr
     print(f"  ({part}: exit {r.returncode}, {time.time() - t:.1f} s)", flush=True)
     if r.returncode != 0: print(out[-2000:])

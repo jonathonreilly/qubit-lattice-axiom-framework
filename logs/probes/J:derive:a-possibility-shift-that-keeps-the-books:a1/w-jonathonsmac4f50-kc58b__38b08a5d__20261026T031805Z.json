@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:a-possibility-shift-that-keeps-the-books:a1",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-jonathonsmac4f50-kc58b",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/a-possibility-shift-that-keeps-the-books/w-jonathonsmac4f50-kc58b/check.py",
+ "seed": 84685,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "38b08a5d",
+ "started_utc": "20261026T031805Z",
+ "elapsed_s": 83.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "the free three-hop witness -i/16 is untouched at first order by any bond-supported V (including pair-moving ones, beyond block 141's fixed-position class), enters only through a quadratic form with an explicit size bound, and on a line a nonzero density term keeps the current only with an extra one-body placement piece"
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 15/15 PASS (~1.5 min); PARTIAL. Part (a) is already settled on main (blocks 137, 141 landed; 2026-09-26 note proves no bounded translation-invariant finite-range interaction keeps the current on Z^2/Z^3; analytic, unrefereed), so the task text is stale; parity lemma: for any Hermitian V and V_D supported on adjacent-pair configurations the block-141 witness entry equals -i/16 plus a bilinear form in V and V_D (no linear or cubic term; exact checks on random dense V, V_D on Z^2 both signs and Z^3), size bound max(|V|,|V_D|)^2 >= 0.0173 to cancel it; on a line a neighbour density term keeps the current only with an added one-body placement piece (16 pairs checked; all-states proof assumed from XXZ structure); ruling out a large pair-moving V elementarily not done.",
+ "what": "DERIVATION, independent attempt 1 of 2: Can a local shift of the records' possibilities, as their neighbourhood changes, restore the books under one record per site?. LANDED FIRST: origin/main is the science authority; read each named note as landed (git show origin/main:docs/<note>) before any PR branch, and where a PR's wording differs from the landed text, the landed text controls. Blocks 121, 135, 136, 137, 138 and 139 are OPEN hand-off PRs (#9174, #9195, #9196, #9197, #9200, #9201): read them on their branches (gh pr view <n> --json files,headRefName; git fetch origin <branch>; git show origin/<branch>:<note>). They are by the supervisor's model family (Claude); blocks 135-139 are the supervisor's own derivations, NOT refereed by another family; nothing in them is adopted. SETTING: the owner's reading of records: never more than one at a site at a time, and the possibility at a site shifts as the neighbourhood changes. Block 137 (PR #9197): under block 78's compression (one record per site) two records of block 54's walk lose their total energy current on Z^2 and Z^3 ([H2, J] != 0 for J = i[H2, D2]), while free antisymmetric pairs, which may share a site with opposite coins, keep it; the member's identity needs it kept; for slow records the loss is of third order. Blocks 135-136, 139: one walker, free walkers and the staggered rest energy keep exact books (each record's energy current is its two-step momentum (1/2) sin 2k). TASK: (a) add to the compressed generator a local, translation- and rotation-covariant two-record term V acting only when the records are neighbours (on their coins, or moving them, for example letting adjacent records exchange places with their contents), with its energy density placed at the pair; decide whether some V makes the total energy current of H2 + V kept on Z^2 (and Z^3), exactly: construct one, or prove that none of nearest-neighbour reach exists (a linear-algebra classification is acceptable); (b) if one exists, whether it keeps the momentum law with a symmetric stress; (c) whether it reduces, on a line, to block 121's free chain pair. HIT: (a) settled with exact checks. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/a-possibility-shift-that-keeps-the-books/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes AS LANDED ON MAIN (git show origin/main:<note>); use a PR branch (git fetch origin <branch>; git show origin/<branch>:<note>; gh pr view <n> --json files,headRefName,state) only for a note that is not on main; any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/a-possibility-shift-that-keeps-the-books/<name>/check.py\"",
+ "stdout_sha256": "8625f3d5f5138e0d43c8a2c985067c0015dbd86b66fd4099a672d84321c5e0e5",
+ "stdout_tail": " coin pairs): V=0 defect zero (0 bad); V=U*1 on neighbouring pairs with midpoint energy: 8 nonzero defects (order U^2); with the extra one-body placement piece -U*X in the dipole: 0 nonzero defects (symbolic U)\nPASS: Eb line, sign 1, 16 test pairs (separation 1..4, all coin pairs): V=0 defect zero (0 bad); V=U*1 on neighbouring pairs with midpoint energy: 8 nonzero defects (order U^2); with the extra one-body placement piece -U*X in the dipole: 0 nonzero defects (symbolic U)\nTOTAL: PASS=15 FAIL=0\nruntime 83.0s\nHIT: for any Hermitian V and V_D supported on neighbouring-pair (bond) configurations (any pair-translating or rotating reach, arbitrary dipole weights, translation invariance not assumed), the block-141 witness entry of [H2+V, J] on Z^2 and Z^3 equals -i/16 + (a form bilinear in V and V_D): no linear and no cubic term (parity census; random exact checks), so no weak (perturbative) bond-supported V can cancel it, and cancelling it needs max(||V||,||V_D||)^2 >= 1/(16(3 r_H + r_D)); this does not by itself exclude a large V (the quadratic term is generically nonzero), and the full no-go for this class is the landed 2026-09-26 finite-range theorem.\nSUMMARY: the free three-hop witness -i/16 is untouched at first order by any bond-supported V (including pair-moving ones, beyond block 141's fixed-position class), enters only through a quadratic form with an explicit size bound, and on a line a nonzero density term keeps the current only with an extra one-body placement piece\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-kc58b",
+  "at_utc": "20261026T031936Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Scoped algebraic lemma plus size bound; the unconditional answer is the landed theorem. Same-family, unrefereed.",
+  "by": "w-jonathonsmac4f50-kc58b",
+  "at_utc": "20261026T031936Z"
+ }
+}

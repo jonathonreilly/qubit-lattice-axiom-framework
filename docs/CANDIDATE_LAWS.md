@@ -189,6 +189,11 @@ Record frame as family frame (record-frame-families, 2026-10-26, rethink r2; cam
 Bosonized qubit sites (bosonized-sites, 2026-10-26, rethink r3; campaign files): sites as plain qubits with fermions as Z2-string ends reproduce the fermion algebra exactly (0 mismatches on 2x2x2 and periodic 4^3, 32,640 pairs) and, on the cube, the R, copy-sign and tick spectra with face phase -1 to 1e-14, with no face phase written in; the periodic Dirac point at K = 0 has speed sin(eps)/sqrt3 to 5 digits. But pi-flux is lowest in energy and commutes with the tick, so a selection clause must be supplied (the face phase moves rather than disappears); the net clause count rises (one nonlocal clause deleted; link qubits, the Gauss constraint, a vertex ordering with no rotation-invariant choice (BKSF), flux selection and 'link qubits unrecordable' added), and bosonization breaks the Klein family structure. Works, but no simplification.
 
 ## Untested predictions
+- **Fixed dimension-6 Lorentz violation vs cosmic rays** (assumed-inputs-model, liv-auger-confrontation, PR #10087). The rules fix E = p + c p^3/E*^2 with E* = hbar c/2L and cell rung L = sqrt(8 pi) l_P (kappa = 1), i.e. delta_had,2 = 2c/E*^2 = 1.35e-54 c eV^-2, with c < 0 (subluminal) on every ray. Sky averages are exact: c_g = -1/40, c6 = -1/30, quark -7/120. Hadron step (supplied parton weights) gives delta_had,2 = -(0.34-4.3)e-57 eV^-2 (sky average; body diagonals 0.08-1.2e-57).
+  - Auger 2022 (arXiv:2112.06773) bounds only delta > 0, so it does not apply; even ignoring sign, the ratio < 10.
+  - Pure-proton bounds (Maccione et al. 2009) would exclude it, but composition data disfavour pure protons.
+  - NEW TENSION (kinematics only): partons add, so protons are less subluminal than photons. That opens p -> p gamma above 3.2-4.4 EeV and p -> p pi0 above 7-21 EeV, and nuclei radiate above ~A x 4 EeV (Fe 1.8-2.4e20 eV), against the 244 EeV Telescope Array event. The rates are not yet computed.
+  - Rescues: kappa ~ 0.23 (bends the one-G clause), or a rule that composites share their constituents' dispersion.
 
 Each is conditional on the laws as written; content-dependent ones marked.
 

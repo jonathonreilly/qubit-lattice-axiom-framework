@@ -319,6 +319,11 @@ Bosonized qubit sites (bosonized-sites, 2026-10-26, rethink r3; campaign files):
     - Control: KS on Z^4 matches End(S), but is unprotected (2 quartic invariants).
     - OPENING: rotations-only (no improper element) protected subgroups of W(F4), orders 96-576. They pass the counting test, and spin splits into two Weyl halves there, so the obstruction does not apply. No kernel built yet. A rotations-only symmetry is intrinsically chiral.
     - Taste rotates like a spinor, so it is a doubler label, not internal.
+  - **Rotations-only (d4-chiral-rotations-only, PR #10106, 9/9, own re-run identical): NO-GO in scope.**
+    - With one mode per event on the 16-event cell, no single Weyl node sits at any momentum whose little group is a protected rotations-only group. This holds for any kernel range, phases or nonsymmorphic placement.
+    - All protected groups (orders 96-576) contain -1 and fix only P = 0, and their spinor class is nontrivial. At orders 288/576, H^1 = 0 forces an event to be fixed. At orders 96/192, |tr(-1)| = 8 on every 16-mode set (seeded sample).
+    - RP needs only the antilinear reflection, which keeps chirality. But the root slice keeps the 24-element group (2 quartic terms), so a real-time step has no protection of its own.
+    - Remaining one-qubit routes: an order-96 Dirac block at P = 0 plus GW/overlap (allowed by rep theory, not built), and the 64-event cell.
 - **Still to rebuild on D4:**
   - the copy sign's role in carrying the 16;
   - slab chirality and the 4D index;

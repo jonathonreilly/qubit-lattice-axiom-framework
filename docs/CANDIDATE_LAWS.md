@@ -240,6 +240,14 @@ Bosonized qubit sites (bosonized-sites, 2026-10-26, rethink r3; campaign files):
   - A unitary real-time walk is local but keeps only the 48-element cube group, so dim-6 = -(1 - sum n^4)/6 != 0.
   - The "RP" in main's #9821 was a scalar-only finite PSD check; its 16-component fermion was never tested.
   - Narrowed reading: bosons are protected, matter keeps the CL-1 tick, so the quark dim-6 term and the nuclear-breakup tension remain. A fermion construction that inherits the protection is OPEN.
+- **Protected fermions (protected-fermions, PR #10097, 10/10, own re-run identical): OPEN, with existence.**
+  - [T] W(F4) allows a pure time reflection only along root and short (e1) directions. D4* is D4 rotated.
+  - [T] Along a root, the nearest-neighbour W(F4) fermion has an exactly positive sector: every real pole has one norm sign (<= 7e-16), and the light branch has v = 1 with dim-6 = 0 (|c2| <= 1.1e-9).
+  - The one defect is a complex-conjugate (Lee-Wick) pair at the cutoff (Re E >= 0.83-3.45/a). It appears exactly when 144w^4 - 213w^2 + 2 < 0, i.e. 0.0972 < w < 1.2123, and the register's w = 1 is inside that window.
+  - Zooming 1 -> 2 -> 4 rungs suppresses the pair's indefinite weight from 4.5e-4 to 1.3e-13.
+  - Block-averaging a continuum fermion gives a fully reflection-positive W(F4) kernel, so the broad no-go is false and only the nearest-neighbour family is excluded. This is an existence proof that imports the continuum.
+  - Bosonization is an exact rewriting and cannot repair a failing fermion.
+  - SYNTHESIS CANDIDATE (not tested): the zoom-fixed-point law placed ON the D4 event set. W(F4) then gives the radiative protection that the cubic zoom-fixed-point law had to impose, and the zoom removes the Lee-Wick pair.
 - **Ledger:** net about -2 clauses.
 - **Smuggling gate:** no fitted numbers; no observed structure named; untested prediction = photon decay near 2e20 eV, with electron/photon Lorentz-violation ratio exactly 16; bent clause = CL-1's tick.
 

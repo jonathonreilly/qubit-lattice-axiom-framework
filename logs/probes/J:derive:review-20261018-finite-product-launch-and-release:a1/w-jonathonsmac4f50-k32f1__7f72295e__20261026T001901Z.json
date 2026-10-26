@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20261018-finite-product-launch-and-release:a1",
+ "type": "judgment",
+ "lane": "review-science-20261018",
+ "worker": "w-jonathonsmac4f50-k32f1",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261018-finite-product-launch-and-release/w-jonathonsmac4f50-k32f1/check.py",
+ "seed": 73941,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "7f72295e",
+ "started_utc": "20261026T001901Z",
+ "elapsed_s": 63.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "exact finite-time transmitted-output formula and complete-output bound for the supplied stationary ladder (bound state and resonances located, brute-force and end-to-end finite-device consistent), with the finite left-end/right-cut transfer and mediator composition left as the unproved/imported steps"
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 31/31 PASS in ~1 min; exact finite-time output formula and complete-output bound for the supplied stationary ladder (proved steps 8-11, checked 6-7, 12-13); step 14 (transfer of the infinite-lead formula to the finite device) unresolved; mediator/vacancy bounds imported, not re-proved.",
+ "what": "Starting from the exact supplied positive two-body mediator and stationary ladder, construct and prove ONE finite product-seed launcher-to-output interface with complete outputs, actual environment evolution, finite-time error, positive/local inventory and incident norm budget. The infinite-lead incoming packet theorem is not a finite launch, and a second clock cycle applies another gate. First reconcile existing launch results and choose the first unsolved interface; if finite release is impossible only prove an obstruction for explicitly enumerated hypotheses, not all autonomous devices. Do not count the existing scattering matrix, supplied packet or known halt limitation as progress. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise.",
+ "stdout_sha256": "5af1802830525529912485a64bcb89cad9d7c2a5a196190bd759f144e5234b59",
+ "stdout_tail": "ad <= Lambda=5 | rho=3.89e-07, launch time t1=3.30e+15 (source window 2u0=9.99e+13 is too short for the cone condition), port at M=6.59e+15, S=b_eff*t=3.56e+15, qubits=1.31e+16, positive blocks=2.62e+16, U=2.05e+18, lambda=2.09e-38, load<=4.000000, hop-norm bound 2.237\nPASS F2 resource trend: dividing eps by 10 raises S by >= 1e3 (Chebyshev 1/(rho^2 eps) crossing + rho ~ eps^2): sizes are astronomically large sufficient constants, not a practical device | s_obs(eps=1/100)=3.49e+20\nPASS F3 inventory count formula: positive blocks = (clock qubits) + 4 + q with q = ordinary positive background blocks (NV compensated count); launcher blocks are disjoint from the active pair so section-9 local budget applies\nHIT: for the supplied p=+-1 ladder, EVERY left-lead one-head initial vector obeys an exact all-time output formula (tau*ghat0 plus one explicit above-band bound-state term, CHECKED to 1e-9 against brute force) and a complete-output bound sqrt(eta+2e_R) with certified tau-Lipschitz data; this converts the packet theorem into a finite-time statement and shows the launcher-to-output interface reduces to the left-end/right-cut transfer (not proved here)\nTOTAL: PASS=31 FAIL=0\nSUMMARY: exact finite-time transmitted-output formula and complete-output bound for the supplied stationary ladder (bound state and resonances located, brute-force and end-to-end finite-device consistent), with the finite left-end/right-cut transfer and mediator composition left as the unproved/imported steps\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k32f1",
+  "at_utc": "20261026T002010Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Scoped result for the supplied p=+-1 ladder: exact all-time output formula plus bound sqrt(eta+2e_R); route stops at the finite-device transfer (step 14). Same-family, unrefereed; no open-PR overlap check was made.",
+  "by": "w-jonathonsmac4f50-k32f1",
+  "at_utc": "20261026T002010Z"
+ }
+}

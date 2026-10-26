@@ -1,0 +1,34 @@
+PASS A1 all ladder weights/onsites (a=c=f/2,b=3f,eta_L,eta_A,eta_v) are strictly positive (exact)
+PASS A2 shifted diagonals at E=2 equal f, f/4, f exactly
+PASS A3 p=+1: det[zeta F(zeta)] = (1/8) P1 P2 with two explicit quintics over Q(sqrt2) (exact)
+PASS A3 p=-1: det[zeta F(zeta)] = (1/8) P1 P2 with two explicit quintics over Q(sqrt2) (exact)
+PASS A4 p=+1: tau(i) = -(3+4i)/5 and r(i)=0 exactly (reproduces source centre values)
+PASS A4 p=-1: tau(i) = -(3-4i)/5 and r(i)=0 exactly (reproduces source centre values)
+PASS A5 p=+1: exact identity N(z)N(1/z)+R(z)R(1/z)=D(z)D(1/z) (unitarity of the 1-channel S, all k)
+PASS A5 p=-1: exact identity N(z)N(1/z)+R(z)R(1/z)=D(z)D(1/z) (unitarity of the 1-channel S, all k)
+PASS A6 exact resolvent identity G(R_n,L_n')=[F^{-1}]_{RL} zeta^{n+n'} (6 rational zeta, 2 sectors, 2 sources, 3 observation sites)
+PASS A7 rational tau,r (from exact polynomials) agree with 6x6 matrix inversion at 80 random k | max dev 6.8e-14
+PASS B1 p=+1: det F(zeta) has exactly ONE zero in |zeta|<1 (real, negative: bound state ABOVE the band), none on |zeta|=1 | zeta_b=-0.602417, E_b=4.262396, winding=1.000000, min||zeta|-1|=3.68e-04
+PASS B2 p=+1: narrowest resonance pole sits at |k-pi/2| ~ 0.0323 with |zeta|-1 = 3.68e-04 (NV band 1e-4 is inside, true pole-free arc is ~100x wider)
+PASS B1 p=-1: det F(zeta) has exactly ONE zero in |zeta|<1 (real, negative: bound state ABOVE the band), none on |zeta|=1 | zeta_b=-0.615848, E_b=4.239625, winding=1.000000, min||zeta|-1|=2.12e-02
+PASS B2 p=-1: narrowest resonance pole sits at |k-pi/2| ~ 0.0257 with |zeta|-1 = 2.12e-02 (NV band 1e-4 is inside, true pole-free arc is ~100x wider)
+PASS B3 bound-state vector: null singular value of F(zeta_b) ~ 0 in both sectors | 2.3e-16, 5.8e-16
+PASS C1 finite-time formula P_R e^{-isH}psi0 = P_R U_Z(s)F^{-1}[tau ghat0] + e^{-isE_b}<u_b|psi0>u_b|_R matches brute-force eigh to 1e-9 (2 sectors x 4 states incl. broadband and port-adjacent x 3 times) | max dev with bound-state term 1.9e-13; without it 1.0e-01 (bound-state piece up to 1.0e-01); 2s
+PASS C2 the bound-state term is NOT negligible for states touching the core (so the continuum-only formula needs the stated correction) | 1.04e-01
+PASS D1 certified Lipschitz constants of tau on |k-pi/2|<=h (root-product lower bound for |det|, coefficient bound for N',D') dominate the observed sup|tau'| | cert/obs at h=0.005: p=+1 3937/3.59, p=-1 3616/36.6 (source (5)-(6) used 4.8e7 for S')
+PASS D2 closed form |ghat0(k)|^2 = rho^2|1-z^{m+1}|^2/(kappa|1-z|^2), z=a e^{i(k-pi/2)} equals the FFT of the explicit launcher profile; Parseval norm 1 | dev 1.7e-11
+PASS D3 proved spectral bound e_R <= rho*sqrt(pi/(a*kappa))*sqrt(L^2 h + 4/h) (Lipschitz arc + trivial |tau-t|<=2 outside) holds for the exact launcher profile | e_R/rho exact: p=+1 1.737, p=-1 5.161; certified constant: p=+1 201, p=-1 199
+PASS D4 e_R scales linearly with rho (e_R/rho constant to 6% over rho=0.1..0.02): the Poisson tail makes the scattering-stage error O(rho), not O(rho^2)
+PASS D5 Chebyshev bound  weight(x<0) <= (sigma0+s sigma_V)^2/(mu_s+1)^2  (exact identity X(s)=X+sV(K)) dominates the exact free-evolution weight | mean velocity 1.9900, sigma_V/rho=1.414; (s,true,bound)=(150,1.6e-01,1.0e+00), (400,2.9e-03,7.3e-02), (900,1.7e-03,2.1e-02), (1500,1.7e-03,1.3e-02)
+PASS D6 sigma_V ~ sqrt(2) rho for the Poisson profile, so the Chebyshev bound is usable iff rho < eps/(4 sqrt2): crossing time ~ 1/(rho^2 eps), not 1/rho^2
+PASS E1 rho=0.10 finite device: measured complete error <= (launcher stage) + sqrt(eta + 2 e_R)  [chain of proved steps A1-A3; left-end/right-cut transfer is an observation here] | p=+1: n=2598, eps_launch=0.206, measured full err=0.248 <= 0.206+sqrt(eta+2e_R)=0.590 (e_R=0.173, eta=1.7e-03), vs plain-line target 0.152 ; p=-1: n=2598, eps_launch=0.206, measured full err=0.541 <= 0.206+sqrt(eta+2e_R)=0.996 (e_R=0.495, eta=1.7e-03), vs plain-line target 0.522
+PASS E2 rho=0.05 finite device (about 9.5e3 sites): same inequality; error halves with rho (launcher O(rho), scattering O(rho)) | p=+1: n=9468, eps_launch=0.129, measured=0.144, bound=0.546 (e_R=0.087), plain-target err 0.076 ; p=-1: n=9468, eps_launch=0.129, measured=0.282, bound=0.844 (e_R=0.256), plain-target err 0.269 ; 52s
+PASS E5 measured launcher-stage distance ||psi(t1)-beta(t1)|| (rho=0.1, 0.05) is below the sum of the source note's component bounds 29rho/8 + rho + 2rho(t1)^(1/6) (+ survival e^{-rho^2 t}+4rho^2/3): the imported launcher lemmas are consistent at these sizes (not a proof of them)
+PASS E3 observed complete error is about e_R-sized (<= 2.5 e_R + launcher) while the proved sqrt(eta+2e_R) is larger: the square-root loss of the norm-conservation step is real slack
+PASS E4 Chebyshev position bound at the observation time is consistent with the measured weight outside the output lead | eta true/Cheb: 4.1e-04/1.7e-02, 4.1e-04/1.7e-02
+PASS F1 composed sufficient family for eps=1/10 (rho from e_R<=C_cert*rho and the sqrt-loss; Chebyshev crossing time; section-9 local-support budget U,lambda): incident bound 4+8lam+lam^2 C_load <= Lambda=5 | rho=3.89e-07, launch time t1=3.30e+15 (source window 2u0=9.99e+13 is too short for the cone condition), port at M=6.59e+15, S=b_eff*t=3.56e+15, qubits=1.31e+16, positive blocks=2.62e+16, U=2.05e+18, lambda=2.09e-38, load<=4.000000, hop-norm bound 2.237
+PASS F2 resource trend: dividing eps by 10 raises S by >= 1e3 (Chebyshev 1/(rho^2 eps) crossing + rho ~ eps^2): sizes are astronomically large sufficient constants, not a practical device | s_obs(eps=1/100)=3.49e+20
+PASS F3 inventory count formula: positive blocks = (clock qubits) + 4 + q with q = ordinary positive background blocks (NV compensated count); launcher blocks are disjoint from the active pair so section-9 local budget applies
+HIT: for the supplied p=+-1 ladder, EVERY left-lead one-head initial vector obeys an exact all-time output formula (tau*ghat0 plus one explicit above-band bound-state term, CHECKED to 1e-9 against brute force) and a complete-output bound sqrt(eta+2e_R) with certified tau-Lipschitz data; this converts the packet theorem into a finite-time statement and shows the launcher-to-output interface reduces to the left-end/right-cut transfer (not proved here)
+TOTAL: PASS=31 FAIL=0
+SUMMARY: exact finite-time transmitted-output formula and complete-output bound for the supplied stationary ladder (bound state and resonances located, brute-force and end-to-end finite-device consistent), with the finite left-end/right-cut transfer and mediator composition left as the unproved/imported steps

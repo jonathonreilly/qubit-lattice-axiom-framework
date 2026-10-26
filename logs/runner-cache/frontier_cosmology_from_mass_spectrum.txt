@@ -1,6 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cosmology_from_mass_spectrum.py
-runner_sha256: 0935d6144172aec8a209ec8513a6b5976160ea0de290068834caa3c9a415f4e1
+runner_sha256: 6f357166661fcfd2164620f1557d156cff7bc0a0609c9ec32646f53c2f7bb61b
+input_fingerprint_sha256: fc72f3943e9a52fbb9f369b9018eb65465ab2d02c07786ce0ad0c137512dd05a
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -13,7 +14,7 @@ PHASE 5: COSMOLOGY CASCADE FROM k_B = 8 TO Omega_Lambda
 Authorities consumed:
   - NEUTRINO_MASS_DERIVED_NOTE.md                        (Phase 4)
   - OMEGA_LAMBDA_DERIVATION_NOTE.md                       (chain)
-  - DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17.md          (eta support)
+  - DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17.md          (PMNS fit/path context only)
   - DM_NEUTRINO_ATMOSPHERIC_SCALE_THEOREM_NOTE_2026-04-15.md
 
 ----------------------------------------------------------------------------------------
@@ -29,14 +30,14 @@ Part 1: Phase 4 leptogenesis scale M_1 (lightest RH neutrino)
   [PASS] M_1 > T_EW (leptogenesis occurs above electroweak scale)  (M_1=5.323e+10 GeV > 100 GeV)
 
 ----------------------------------------------------------------------------------------
-Part 2: baryon-to-photon ratio eta (imported with DM-gate support)
+Part 2: baryon-to-photon ratio eta (supplied observational input)
 ----------------------------------------------------------------------------------------
   eta_obs                      = 6.120e-10  (Planck 2018)
 
-  Live DM-gate support for eta (not yet a retained closure):
-    - exact one-flavor transport:    eta/eta_obs = 0.1888
-    - PMNS reduced-surface support:  eta/eta_obs = 1.0
-    - selector/normalization closure still open
+  Historical route observations, not re-established by this runner:
+    - historical one-flavor ratio:   eta/eta_obs = 0.1888
+    - historical candidate ratio:    eta/eta_obs = 1.0
+    - current flagship supplies no eta/yield proof; physical obligations open
 
   For this cascade, eta is imported from observation. Downstream
   cosmology values are conditional on eta plus the bounded R chain.
@@ -100,7 +101,7 @@ Part 7: parameter count -- six LCDM parameters compressed to 1 + 1
 
   This framework chain:
     INPUTS TO THIS CASCADE:
-      - eta = 6.12e-10    IMPORTED (DM-gate supports, not yet closed)
+      - eta = 6.12e-10    IMPORTED (no yield supplied by flagship)
       - alpha_GUT ~ 0.048 BOUNDED (Sommerfeld correction)
     DERIVED DOWNSTREAM:
       - Omega_b (from eta via BBN)
@@ -133,7 +134,7 @@ Part 8: cross-link through all five phases of the attack plan
   [PASS] full cascade Phase 1 -> Phase 5 lands within 5% at every retained link  (cascade consistency check)
 
 ----------------------------------------------------------------------------------------
-Part 8b: explicit dependency-edge repair guards
+Part 8b: documentary file/link checks only, not eta proof
 ----------------------------------------------------------------------------------------
   [PASS] dependency source exists: NEUTRINO_MASS_DERIVED_NOTE.md  (path=docs/NEUTRINO_MASS_DERIVED_NOTE.md)
   [PASS] note exposes markdown dependency edge: NEUTRINO_MASS_DERIVED_NOTE.md  ([`NEUTRINO_MASS_DERIVED_NOTE.md`](NEUTRINO_MASS_DERIVED_NOTE.md))
@@ -155,18 +156,18 @@ Part 9: Phase 5 summary
 
   What Phase 5 BOUNDS:
     - R = 5.48 via Sommerfeld (alpha_GUT in [0.03, 0.05])
-    - eta remains imported on the live cosmology surface, though
-      DM leptogenesis support reaches eta/eta_obs in {0.1888, 1.0}
+    - eta remains imported; the historical route observations
+      eta/eta_obs in {0.1888, 1.0} are not certified by this flagship
 
   What Phase 5 would still need for promotion:
-    - eta promoted from support/import to retained theorem
+    - physical selector, supported branch and eta yield/readout justified
     - Sommerfeld/alpha_GUT continuation promoted from bounded to retained
     - matter/cosmology bridge promoted beyond conditional cascade status
 
   Open lane (Phase 5b):
-    Promote eta from DM-gate support to a retained theorem.  The
-    candidate is the exact one-flavor transport + PMNS reduced-
-    surface selector closure. That would promote eta only; the full
+    Resolve physical eta selection, supported branch and yield. The
+    historical candidates involve one-flavor transport and PMNS reduced-
+    surface selection; neither is certified here. Even a derived eta leaves
     cosmology row still needs the bounded R and matter-bridge closures.
 
 ========================================================================================

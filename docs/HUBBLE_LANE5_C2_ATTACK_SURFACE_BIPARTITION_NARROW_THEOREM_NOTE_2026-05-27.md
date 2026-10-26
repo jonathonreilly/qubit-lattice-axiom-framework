@@ -18,7 +18,7 @@ conditional_surface_status: narrow_bounded_theorem
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "This note classifies the residual (C2) attack vectors after the PMNS-A13/CKM right-sensitive sub-route's retained_no_go closure; it does NOT close (C2), does NOT retire `eta`, does NOT retire `alpha_GUT`, and does NOT propose any new selector law."
+proposal_allowed_reason: "This note classifies the residual (C2) attack vectors with the PMNS-A13/CKM toy-data sign comparison leaving physical selector/yield open; it does NOT close (C2), does NOT retire `eta`, does NOT retire `alpha_GUT`, and does NOT propose any new selector law."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -29,9 +29,10 @@ bare_retained_allowed: false
 
 Per
 [`HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md`](HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md),
-Lane 5 closure requires premises from two classes: `(C1)` absolute-scale
-plus one of `(C2)` cosmic-history-ratio retirement or `(C3)` direct
-cosmic-`L` derivation. Per
+the reviewed separated-input route combines `(C1)` absolute scale with
+a complete `(C2)` cosmic-history cascade or `(C3)` direct cosmic-`L`
+derivation. The former universal necessity claim is withdrawn; the Boolean
+rule is stipulated and does not exhaust physical or joint derivations. Per
 [`HUBBLE_LANE5_C3_VACUUM_TOPOLOGY_NO_ACTIVE_ROUTE_NOTE_2026-04-27.md`](HUBBLE_LANE5_C3_VACUUM_TOPOLOGY_NO_ACTIVE_ROUTE_NOTE_2026-04-27.md),
 no active `(C3)` route exists on the current retained vacuum/topology
 surface. So `(C2)` is the operationally relevant `L`-pathway.
@@ -65,18 +66,16 @@ R_base = 31/9                         (retained group-theory identity)
 ```
 
 Full single-number closure of this bounded cascade requires retiring
-**both** `P1` and `P2`. Discharging the Lane-5 `(C2)`-class requirement
-requires retiring at least one cosmic-history pin; retiring **either
-alone** narrows the residual attack surface to the other.
+**both** `P1` and `P2`. Retiring **either alone** narrows the counted residual to the other;
+it does not discharge a complete L-supplying `(C2)` premise.
 
 **Bipartition corollary.** The residual `(C2)` attack surface partitions
 exactly into:
 
 - `(C2.eta)` — retire `P1 = eta` from the framework via a non-imported
-  derivation. The PMNS-A13 sheet-selector sub-route is on the current
-  surface retained-no-go
+  derivation. The PMNS-A13 sign comparison is a supplied toy-data diagnostic
   ([`HUBBLE_LANE5_C2_CKM_PMNS_RIGHT_SENSITIVE_SELECTOR_STRETCH_NOTE_2026-04-29.md`](HUBBLE_LANE5_C2_CKM_PMNS_RIGHT_SENSITIVE_SELECTOR_STRETCH_NOTE_2026-04-29.md)),
-  closing the narrow CKM-CP-to-PMNS-`A13` cross-sector coupling stretch.
+  leaving physical cross-sector selection and yield unresolved.
 - `(C2.alpha_GUT)` — retire `P2 = alpha_GUT` from the framework via the
   gauge-coupling-unification lane. This is the separately named GUT lane;
   this note does NOT open or close it.
@@ -87,26 +86,26 @@ it does not say the fully numerical cascade closes when only one pin is
 retired.
 
 This note does **NOT** open a new route for `(C2.eta)` or `(C2.alpha_GUT)`.
-It records the precise residual attack surface left after the
-PMNS-A13 retained-no-go on the `(C2.eta)` sub-route and after the absent
-`(C3)` class.
+It records two counted inputs of this supplied cascade. The PMNS-A13
+toy comparison does not exclude physical eta routes; the cited `(C3)`
+inventory has its own separate scope.
 
 ## 1. Cited authorities (one-hop)
 
 | Identity | Authority | Status (live ledger) |
 |---|---|---|
-| Closure-pathway taxonomy `{(C1), (C2), (C3)}` | [`HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md`](HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md) | unaudited |
+| Non-exhaustive separated-input inventory `{(C1), (C2), (C3)}` | [`HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md`](HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md) | unaudited |
 | `(C3)` class empty (no active vacuum/topology route) | [`HUBBLE_LANE5_C3_VACUUM_TOPOLOGY_NO_ACTIVE_ROUTE_NOTE_2026-04-27.md`](HUBBLE_LANE5_C3_VACUUM_TOPOLOGY_NO_ACTIVE_ROUTE_NOTE_2026-04-27.md) | unaudited |
 | Bounded cascade `eta -> Omega_b -> R -> Omega_DM -> Omega_m -> Omega_Lambda` with `(eta, alpha_GUT)` as the two cascade-internal pins | [`OMEGA_LAMBDA_DERIVATION_NOTE.md`](OMEGA_LAMBDA_DERIVATION_NOTE.md), [`COSMOLOGY_FROM_MASS_SPECTRUM_NOTE.md`](COSMOLOGY_FROM_MASS_SPECTRUM_NOTE.md) | unaudited / bounded |
 | `R_base = 31/9` exact group-theory base | [`R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md`](R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md) | retained_bounded |
-| PMNS-A13 / CKM right-sensitive sub-route closed-no-go | [`HUBBLE_LANE5_C2_CKM_PMNS_RIGHT_SENSITIVE_SELECTOR_STRETCH_NOTE_2026-04-29.md`](HUBBLE_LANE5_C2_CKM_PMNS_RIGHT_SENSITIVE_SELECTOR_STRETCH_NOTE_2026-04-29.md) | retained_no_go |
+| PMNS-A13 / CKM supplied toy-data sign comparison | [`HUBBLE_LANE5_C2_CKM_PMNS_RIGHT_SENSITIVE_SELECTOR_STRETCH_NOTE_2026-04-29.md`](HUBBLE_LANE5_C2_CKM_PMNS_RIGHT_SENSITIVE_SELECTOR_STRETCH_NOTE_2026-04-29.md) | open physical selector/yield |
 | Matter-radiation equality structural identity | [`MATTER_RADIATION_EQUALITY_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md`](MATTER_RADIATION_EQUALITY_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md) | unaudited |
 | `Omega_Lambda = (H_inf/H_0)^2` matter bridge identity | [`OMEGA_LAMBDA_MATTER_BRIDGE_THEOREM_NOTE_2026-04-22.md`](OMEGA_LAMBDA_MATTER_BRIDGE_THEOREM_NOTE_2026-04-22.md) | unaudited |
 | Two-gate dependency firewall | [`HUBBLE_LANE5_TWO_GATE_DEPENDENCY_FIREWALL_NOTE_2026-04-27.md`](HUBBLE_LANE5_TWO_GATE_DEPENDENCY_FIREWALL_NOTE_2026-04-27.md) | unaudited |
 
 The narrow algebraic content of this note is the bipartition statement,
-which is a finite case-analysis on the cited cascade and the cited
-no-gos. The runner verifies the finite arithmetic of the cascade at the
+which is a finite bookkeeping statement on the supplied cascade. The
+withdrawn PMNS-A13 no-go is not a premise of that arithmetic. The runner verifies the finite arithmetic of the cascade at the
 retained `R_base = 31/9` plus standard textbook inputs, and verifies the
 bipartition statement against the cited authority text.
 
@@ -148,8 +147,8 @@ promote that flatness input.
 
 ### 2.2 Retiring either pin alone narrows but does not close `(C2)`
 
-`(C2)` per Cycle-3 no-go requires retiring at least one cosmic-history
-ratio. On the cascade above, retiring `eta` while leaving `alpha_GUT`
+Cycle 3 now distinguishes partial cascade progress from a complete
+L-supplying `(C2)` premise. On the cascade above, retiring `eta` while leaving `alpha_GUT`
 bounded gives `Omega_b` framework-derived but `R` still bounded over
 `[~4.8, ~5.3]` — `(C2)` advanced but not yet closed; `Omega_Lambda`
 remains a bounded interval. Symmetrically, retiring `alpha_GUT` while
@@ -160,33 +159,25 @@ Full single-number closure of this cascade (i.e., a fully retained
 matter-cascade output for `Omega_Lambda`) therefore requires retiring **both**
 `P1` and `P2`.
 
-But for the purpose of the `(C2)`-class definition in the Cycle-3
-no-go ("retire `eta`, `alpha_GUT`, or `T_CMB`-equivalent observational
-pins from the bounded cascade"), retiring **either alone** discharges
-the `(C2)`-class requirement: at least one cosmic-history ratio is
-retained from framework rather than imported. The cascade still has a
-residual bounded numerical output, but the `(C2)` premise discharge is
-satisfied.
+Retiring either counted pin alone is partial progress, not complete
+`(C2)` premise discharge. A complete L-supplying premise must resolve the
+remaining cascade inputs and bridges; the Boolean flag in Cycle 3 cannot
+be set merely because one pin was retired.
 
-### 2.3 The closed PMNS-A13 sub-route is on the `eta` half
+### 2.3 The supplied PMNS-A13 sign comparison concerns the eta route
 
 [`HUBBLE_LANE5_C2_CKM_PMNS_RIGHT_SENSITIVE_SELECTOR_STRETCH_NOTE_2026-04-29.md`](HUBBLE_LANE5_C2_CKM_PMNS_RIGHT_SENSITIVE_SELECTOR_STRETCH_NOTE_2026-04-29.md)
-closes the narrow stretch:
+now compares two supplied toy witnesses with identical even polynomial data
+and independent CKM sign, but opposite odd signs. Its extra rule
+`sign(A13_PMNS) = sign(eta_CKM)` selects one witness if assumed.
+The model flag omitting that rule is not a proof of its absence in every
+framework law. The former retained-no-go inference is withdrawn.
 
-```text
-sign(A13_PMNS) = sign(eta_CKM)
-   (algebraically coherent but conditional on a typed CKM->PMNS
-    right-sensitive coupling law not present on the current surface)
-```
-
-That route attacked `eta` via the PMNS-A13 / `Z_3` doublet-block
-selector. Its closed-no-go status thus narrows `(C2.eta)`'s remaining
-sub-routes to:
-
-- a non-PMNS-A13 framework derivation of `eta`, OR
-- a new typed cross-sector coupling law (separate research target).
-
-It does NOT touch `(C2.alpha_GUT)`.
+This does not reduce the physical eta obligation to one bit or imply a
+yield/readout theorem. It does not exclude another PMNS-A13 construction,
+classify all eta routes, or resolve any alpha_GUT premise. The complete
+pre-correction argument remains at commit
+`56474903716b057082172f24f00c3dd78373d75b` under this same path.
 
 ## 3. What this note does NOT do
 
@@ -199,14 +190,14 @@ It does NOT touch `(C2.alpha_GUT)`.
 
 It records the structural fact that the bounded matter-cascade slice has
 exactly two `(C2)`-counted observational pins, and so the residual
-`(C2)` attack surface after the closed PMNS-A13 sub-route partitions
+`(C2)` counted-input bookkeeping partitions
 into two named open sub-targets.
 
 ## 4. What advances if either sub-target closes
 
 ### 4.1 `(C2.eta)` closure (eta retired)
 
-If a non-PMNS-A13 framework derivation of `eta` is landed, the cascade
+If a justified physical derivation of `eta` is supplied, the cascade
 becomes:
 
 ```text
@@ -220,8 +211,9 @@ R_base = 31/9                                        (retained)
    -> Omega_Lambda = 1 - Omega_m - Omega_r            (bounded interval)
 ```
 
-`(C2)`-class premise is now retained; combined with `(C1)`
-absolute-scale closure, numerical `H_0` becomes a bounded interval.
+This advances the `(C2)` cascade but leaves its other counted pin.
+With a separately supplied scale and all other cascade inputs, it can
+propagate an interval for `H_0` on that conditional surface.
 Any `T_CMB`/inflation input remains supplied, if at all, by the separate
 5E target.
 
@@ -241,17 +233,19 @@ R_base = 31/9                                        (retained)
 ```
 
 The remaining cascade dependency is `Omega_b`, which by BBN is
-`eta_obs` * `h^2` only. This is the same single-input dependency as
+`Omega_b = 3.6515e-3 * eta_10 / h^2` on the supplied BBN relation,
+with `h` separately supplied. At fixed `h`, this is the same counted-input dependency as
 `(C2.eta)`, but inverted: `Omega_b` is the surface pin rather than
-`eta`. Either equally satisfies the `(C2)`-class requirement (one
-cascade-internal observational pin retired).
+`eta`. Either is partial progress on one counted input, not complete
+`(C2)` discharge.
 
 ## 5. Implication for `T_CMB` and `H_0`
 
-The Lane-5 closure-pathway corollary states that `H_0` numerical
-requires `(C1) AND ((C2) OR (C3))`. `T_CMB` is structurally adjacent:
-per Cycle-3 no-go §5 it is "explicitly deferred (5E inflation
-territory)". The matter-radiation equality theorem
+The reviewed separated-input route uses the stipulated bookkeeping rule
+`C1 AND (C2 OR C3)`, with `C2` meaning complete L-supplying input.
+This is not a universal physical necessity theorem; a joint relation can
+fix `H_0` without separately fixing both parameters. `T_CMB` remains
+a separately supplied or unresolved input. The matter-radiation equality theorem
 ([`MATTER_RADIATION_EQUALITY_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md`](MATTER_RADIATION_EQUALITY_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md))
 relates `T_CMB` arithmetically to `Omega_r,0` (via standard
 `Omega_gamma,0` + retained `N_eff`); but the temperature itself remains
@@ -276,8 +270,8 @@ The runner:
   `Omega_b * h^2 = 3.6515e-3 * eta_10` and Sommerfeld interval
   `S_corr in [1.4, 1.6]`;
 - verifies the bipartition statement against the authority text;
-- verifies that the PMNS-A13 sub-route is recorded as retained-no-go
-  in the cited authority;
+- checks that the PMNS-A13 source describes supplied toy data and open
+  physical selector/yield obligations; this text check is not a proof;
 - verifies that the `(C3)` class is recorded as empty in the cited
   authority;
 - verifies sensitivity ranges: holding `eta` fixed and varying
@@ -295,10 +289,11 @@ Expected:
 SUMMARY: PASS=48 FAIL=0
 ```
 
-The runner uses Python standard library plus `sympy` only (no external
-data). No observational `H_0`, `T_CMB`, or `Omega_Lambda` value is used
-as a derivation input — observational comparators are downstream of the
-arithmetic only.
+The runner uses Python standard library plus `sympy` and the declared
+repository notes. Its numerical BBN sensitivity calculation supplies
+`h = 0.674`, alongside the stated baryon, radiation and Sommerfeld inputs.
+That arithmetic is conditional on these imported values; it is not an
+observation-free derivation of `H_0`, `T_CMB`, or `Omega_Lambda`.
 
 ## 7. Boundary
 
@@ -307,13 +302,13 @@ Lane-5 closure-pathway taxonomy. It does not retire any input. It does
 not open a new selector law. It does not propose a new derivation route.
 It records the structural fact that `(C2)` has two named sub-targets
 `(C2.eta)` and `(C2.alpha_GUT)`, of which the narrow PMNS-A13 stretch on
-`(C2.eta)` is retained-no-go and the gauge-unification path on
+`(C2.eta)` remains an open physical question and the gauge-unification path on
 `(C2.alpha_GUT)` is the separately-named GUT lane.
 
 A successor `(C2)` attack should target one of:
 
-1. A non-PMNS-A13 framework derivation of `eta` (e.g., via a new typed
-   cross-sector coupling not foreclosed by the listed no-gos).
+1. A justified physical derivation of `eta`, including a PMNS-A13 route
+   if its selector, supported branch and yield/readout obligations are resolved.
 2. A framework retention of `alpha_GUT` via the gauge-unification lane.
 3. A direct cosmic-`L` derivation `(C3)` (currently empty class).
 

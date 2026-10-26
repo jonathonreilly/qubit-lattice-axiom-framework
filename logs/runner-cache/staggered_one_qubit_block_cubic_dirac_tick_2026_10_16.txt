@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/staggered_one_qubit_block_cubic_dirac_tick_2026_10_16.py
 runner_sha256: 2e00b305e46ace7a22b6ddbca91c5d08e0289b33121e02dc750e67c6eab9d71e
-input_fingerprint_sha256: 89d5d074250b46c66f006a40f4c563093ca57b9fcd3df8cf01ea5c60f7166976
-timeout_sec: 900
+input_fingerprint_sha256: 16393985570fdbcedd1fa2cf7539cde25b5bc1fd42a87c52c810179f06766621
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 24.59
+elapsed_sec: 33.07
 status: ok
 ----- stdout -----
 PASS corner permutations represent the rotations about the block centre (orders 4, 4; group of order 24)
@@ -12,9 +12,9 @@ PASS signed corner actions: 3 classes by trace data (group order 24, order 48 sp
 PASS [numerical] chosen order-eight trace representative is equivalent, up to generator phases, to C^2 (x) E (x) E_1/2 (intertwiner space of dimension 4 = 2^2)
 PASS equivalently, two copies of the spin-3/2 representation (E (x) E_1/2 = spin 3/2)
 PASS the other classes contain no spin-1/2 or spin-3/2 component (only scalar and spin-1 pieces): no spinorial irreducible summand (not a tensor-factor exclusion)
-PASS unitary intertwiner T found (residual 2.8e-15)
-PASS block walk W = T (U_2q (x) 1_E) T^dagger is unitary (max error 3.6e-15)
-PASS W is covariant under the signed block action of both quarter-turn generators (max error 4.7e-15)
+PASS unitary intertwiner T found (residual 2.5e-15)
+PASS block walk W = T (U_2q (x) 1_E) T^dagger is unitary (max error 3.0e-15)
+PASS W is covariant under the signed block action of both quarter-turn generators (max error 4.9e-15)
 PASS W moves (nonzero hop coefficients)
 PASS [numerical] massless isotropic cone at k = 0: all eight quasienergies = s |k| with s = 0.9144 in four directions
 PASS [numerical] on a 21^3 grid the quasienergy vanishes only at k = 0 (min omega / |2 sin(k/2)| = 0.634)

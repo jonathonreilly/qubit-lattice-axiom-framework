@@ -19,9 +19,9 @@ Status of each link (honest):
     k_B = 8 (retained, adjacent-placement theorem)
     M_1  = 5.32e10 GeV  (retained, follows from k_B and eps/B)
     eta  still IMPORTED on live cosmology surface
-          - exact one-flavor transport reaches eta/eta_obs = 0.1888
-          - PMNS reduced-surface support reaches eta/eta_obs = 1.0
-          - live theorem-grade closure still open
+          - prior0.1888/1.0 values are historical route observations
+          - current flagship supplies no eta transport/yield certificate
+          - physical selector, supported branch and readout remain open
     Omega_b via BBN (standard, zero free parameters given eta)
     R_base = 31/9 (exact support identity)
     R = 5.48 (bounded from R_base x Sommerfeld)
@@ -35,7 +35,7 @@ parameter (alpha_GUT).
 Authorities consumed:
   - docs/NEUTRINO_MASS_DERIVED_NOTE.md                       (Phase 4)
   - docs/OMEGA_LAMBDA_DERIVATION_NOTE.md                     (chain)
-  - docs/DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17.md        (eta support)
+  - docs/DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17.md        (PMNS fit/path context only)
   - docs/DM_NEUTRINO_ATMOSPHERIC_SCALE_THEOREM_NOTE_2026-04-15.md
 
 This runner uses observed eta as the imported input on the cosmology surface.
@@ -44,6 +44,9 @@ cascade values, not retained first-principles cosmology closure.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = ('docs/COSMOLOGY_FROM_MASS_SPECTRUM_NOTE.md', 'docs/NEUTRINO_MASS_DERIVED_NOTE.md', 'docs/OMEGA_LAMBDA_DERIVATION_NOTE.md', 'docs/DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17.md', 'docs/DM_NEUTRINO_ATMOSPHERIC_SCALE_THEOREM_NOTE_2026-04-15.md')
 
 import math
 import sys
@@ -130,7 +133,7 @@ def main() -> int:
     print("Authorities consumed:")
     print("  - NEUTRINO_MASS_DERIVED_NOTE.md                        (Phase 4)")
     print("  - OMEGA_LAMBDA_DERIVATION_NOTE.md                       (chain)")
-    print("  - DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17.md          (eta support)")
+    print("  - DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17.md          (PMNS fit/path context only)")
     print("  - DM_NEUTRINO_ATMOSPHERIC_SCALE_THEOREM_NOTE_2026-04-15.md")
 
     # ----------------------------------------------------------------------
@@ -164,14 +167,14 @@ def main() -> int:
     # Part 2 -- eta status (imported on cosmology surface, with support)
     # ----------------------------------------------------------------------
 
-    section("Part 2: baryon-to-photon ratio eta (imported with DM-gate support)")
+    section("Part 2: baryon-to-photon ratio eta (supplied observational input)")
     eta = ETA_OBS
     print(f"  eta_obs                      = {eta:.3e}  (Planck 2018)")
     print()
-    print("  Live DM-gate support for eta (not yet a retained closure):")
-    print("    - exact one-flavor transport:    eta/eta_obs = 0.1888")
-    print("    - PMNS reduced-surface support:  eta/eta_obs = 1.0")
-    print("    - selector/normalization closure still open")
+    print("  Historical route observations, not re-established by this runner:")
+    print("    - historical one-flavor ratio:   eta/eta_obs = 0.1888")
+    print("    - historical candidate ratio:    eta/eta_obs = 1.0")
+    print("    - current flagship supplies no eta/yield proof; physical obligations open")
     print()
     print("  For this cascade, eta is imported from observation. Downstream")
     print("  cosmology values are conditional on eta plus the bounded R chain.")
@@ -313,7 +316,7 @@ def main() -> int:
     print()
     print("  This framework chain:")
     print("    INPUTS TO THIS CASCADE:")
-    print("      - eta = 6.12e-10    IMPORTED (DM-gate supports, not yet closed)")
+    print("      - eta = 6.12e-10    IMPORTED (no yield supplied by flagship)")
     print("      - alpha_GUT ~ 0.048 BOUNDED (Sommerfeld correction)")
     print("    DERIVED DOWNSTREAM:")
     print("      - Omega_b (from eta via BBN)")
@@ -362,7 +365,7 @@ def main() -> int:
     # Part 8b -- dependency-edge repair guards
     # ----------------------------------------------------------------------
 
-    section("Part 8b: explicit dependency-edge repair guards")
+    section("Part 8b: documentary file/link checks only, not eta proof")
     note_text = NOTE_PATH.read_text(encoding="utf-8")
     dependency_files = [
         "NEUTRINO_MASS_DERIVED_NOTE.md",
@@ -403,18 +406,18 @@ def main() -> int:
     print()
     print("  What Phase 5 BOUNDS:")
     print("    - R = 5.48 via Sommerfeld (alpha_GUT in [0.03, 0.05])")
-    print("    - eta remains imported on the live cosmology surface, though")
-    print("      DM leptogenesis support reaches eta/eta_obs in {0.1888, 1.0}")
+    print("    - eta remains imported; the historical route observations")
+    print("      eta/eta_obs in {0.1888, 1.0} are not certified by this flagship")
     print()
     print("  What Phase 5 would still need for promotion:")
-    print("    - eta promoted from support/import to retained theorem")
+    print("    - physical selector, supported branch and eta yield/readout justified")
     print("    - Sommerfeld/alpha_GUT continuation promoted from bounded to retained")
     print("    - matter/cosmology bridge promoted beyond conditional cascade status")
     print()
     print("  Open lane (Phase 5b):")
-    print("    Promote eta from DM-gate support to a retained theorem.  The")
-    print("    candidate is the exact one-flavor transport + PMNS reduced-")
-    print("    surface selector closure. That would promote eta only; the full")
+    print("    Resolve physical eta selection, supported branch and yield. The")
+    print("    historical candidates involve one-flavor transport and PMNS reduced-")
+    print("    surface selection; neither is certified here. Even a derived eta leaves")
     print("    cosmology row still needs the bounded R and matter-bridge closures.")
 
     print()

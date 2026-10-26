@@ -14,11 +14,11 @@
   "chain_closure_explanation": null,
   "claim_id": "ckm_compound_magnitudes_circumradius_bridge_theorem_note_2026-04-25",
   "claim_scope": null,
-  "claim_type": "positive_theorem",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "author_hint",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -40,7 +40,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "e6bbab71de4906232112a08a71e035ebc91364dfea2be2e73b38a38285290ea0",
+  "note_hash": "5f04cab1b25979aefd394f21cc7dbda33949b228c167e97df84fdf9ff66a1bcb",
   "note_path": "docs/CKM_COMPOUND_MAGNITUDES_CIRCUMRADIUS_BRIDGE_THEOREM_NOTE_2026-04-25.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -81,7 +81,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_ckm_compound_magnitudes_circumradius_bridge.py",
-  "title": "CKM Compound-Magnitudes Circumradius Bridge",
+  "title": "CKM compound magnitudes and circumradius: conditional bridge",
   "transitive_descendants": 10,
   "verdict_rationale": null
 }

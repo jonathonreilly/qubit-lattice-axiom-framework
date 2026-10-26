@@ -1,15 +1,12 @@
 #!/usr/bin/env python3
-"""Compact classifier for the portable weak-field package hierarchy.
+"""Render a supplied historical finite comparison of portable-package family cards.
 
-The retained evidence supports a nested read:
-
-- broad portable weak-field package: the signed-control fixed point
-- stricter distance tail: open directed transport subset of that package
-- narrower complex-action branch: exact gamma=0 / crossover subset
-
-This script is intentionally review-safe. It summarizes only retained family
-cards and closures that already exist on main, and it does not claim a
-universal geometry theorem.
+The first two directed cases preserve direction and distance-tail shape together
+in the supplied rows; the other named cases differ. Necessity of open directed
+transport and a causal mechanism are not established without matched ablations.
+The broad-package and complex-action labels summarize supplied cards, not fresh
+simulation or independent physical/theorem certification. Archived cards are
+historical provenance only.
 """
 
 from __future__ import annotations
@@ -19,6 +16,18 @@ import json
 from dataclasses import dataclass
 from pathlib import Path
 
+
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = (
+    'docs/PORTABLE_PACKAGE_HIERARCHY_CLASSIFIER_NOTE.md',
+    'docs/SIGN_PORTABILITY_INVARIANT_NOTE.md',
+    'docs/DISTANCE_LAW_PORTABILITY_NOTE.md',
+    'docs/DISTANCE_LAW_BREAKPOINT_NOTE.md',
+    'docs/COMPLEX_ACTION_NOTE.md',
+    'docs/COMPLEX_SELECTIVITY_COMPARE_NOTE.md',
+    'archive_unlanded/portability-stale-extension-wrappers-2026-04-30/PORTABLE_PACKAGE_EXTENSION_NOTE.md',
+    'archive_unlanded/portability-stale-extension-wrappers-2026-04-30/PORTABLE_CARD_EXTENSION_NOTE.md',
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -54,12 +63,12 @@ ROWS: list[LayerRow] = [
             "family, and fourth family as breakpoints; fifth family radial as a direction-only holdout"
         ),
         closure_or_boundary=(
-            "open directed transport that keeps direction and tail shape coupled; shell "
-            "locking, reflection closure, deep branch routing, and radial confinement break it"
+            "in the supplied finite rows, the first two directed cases preserve direction and "
+            "tail together; shell-locked, reflection-closed, deep-branch and radial cases differ"
         ),
         safe_read=(
-            "a narrower subset of the broad package; the near-Newtonian tail is not "
-            "geometry-independent across the retained structured families"
+            "a finite historical comparison only; transport necessity and causal mechanism "
+            "are not established without matched ablations"
         ),
     ),
     LayerRow(
@@ -115,15 +124,15 @@ def render_markdown(rows: list[LayerRow]) -> str:
         "# Portable Package Hierarchy Classifier",
         "",
         "**Date:** 2026-04-06",
-        "**Status:** review-safe compact classifier",
+        "**Status:** supplied historical finite comparison; no fresh simulation or retained-status certification",
         "",
         "## Question",
         "",
-        "Can the retained nested family structure be compressed into one safe classifier: broad portable weak-field package, stricter distance tail, narrower complex-action branch?",
+        "How do the supplied historical finite family cards compare: broad portable weak-field package, stricter distance tail, narrower complex-action branch?",
         "",
-        "## Retained Cards",
+        "## Supplied Cards and Historical Provenance",
         "",
-        "- broad portable package: [`docs/SIGN_PORTABILITY_INVARIANT_NOTE.md`](docs/SIGN_PORTABILITY_INVARIANT_NOTE.md), [`docs/PORTABLE_PACKAGE_EXTENSION_NOTE.md`](docs/PORTABLE_PACKAGE_EXTENSION_NOTE.md), [`docs/PORTABLE_CARD_EXTENSION_NOTE.md`](docs/PORTABLE_CARD_EXTENSION_NOTE.md)",
+        "- broad portable package: [`docs/SIGN_PORTABILITY_INVARIANT_NOTE.md`](docs/SIGN_PORTABILITY_INVARIANT_NOTE.md), archived provenance only: [`PORTABLE_PACKAGE_EXTENSION_NOTE.md`](archive_unlanded/portability-stale-extension-wrappers-2026-04-30/PORTABLE_PACKAGE_EXTENSION_NOTE.md), [`PORTABLE_CARD_EXTENSION_NOTE.md`](archive_unlanded/portability-stale-extension-wrappers-2026-04-30/PORTABLE_CARD_EXTENSION_NOTE.md)",
         "- distance-tail boundary: [`docs/DISTANCE_LAW_PORTABILITY_NOTE.md`](docs/DISTANCE_LAW_PORTABILITY_NOTE.md), [`docs/DISTANCE_LAW_BREAKPOINT_NOTE.md`](docs/DISTANCE_LAW_BREAKPOINT_NOTE.md)",
         "- complex-action branch: [`docs/COMPLEX_ACTION_NOTE.md`](docs/COMPLEX_ACTION_NOTE.md), [`docs/COMPLEX_SELECTIVITY_COMPARE_NOTE.md`](docs/COMPLEX_SELECTIVITY_COMPARE_NOTE.md)",
         "",
@@ -134,12 +143,12 @@ def render_markdown(rows: list[LayerRow]) -> str:
         "## Safe Read",
         "",
         "- the broad layer is the signed-control fixed point: exact zero / neutral cancellation, plus/minus antisymmetry, and weak-field response near unit slope",
-        "- the distance tail is stricter because it needs open directed transport; the first two grown families preserve direction and tail together, while newer retained families break or flatten one of those pieces",
+        "- in the supplied historical finite rows, the first two directed cases preserve direction and tail together; the other named cases differ. Open-transport necessity and causal mechanism are not established without matched ablations",
         "- the complex-action branch is narrower still because it needs the exact gamma=0 anchor and crossover structure, and it is boundary-sensitive on adjacent families",
         "",
-        "## Final Verdict",
+        "## Finite Comparison Scope",
         "",
-        "**review-safe classifier: broad portable weak-field package, stricter distance tail, narrower complex-action branch**",
+        "**supplied historical row classification: broad package, distance-tail comparison, complex-action comparison; no necessity or causal claim**",
     ]
     return "\n".join(lines)
 
@@ -148,10 +157,10 @@ def render_text(rows: list[LayerRow]) -> str:
     lines = [
         "Portable Package Hierarchy Classifier",
         "Date: 2026-04-06",
-        "Status: review-safe compact classifier",
+        "Status: supplied historical finite comparison; no fresh simulation or retained-status certification",
         "",
         "Question:",
-        "Can the retained nested family structure be compressed into one safe classifier?",
+        "How do the supplied historical finite family cards compare?",
         "",
     ]
     for row in rows:
@@ -166,8 +175,8 @@ def render_text(rows: list[LayerRow]) -> str:
     lines.extend(
         [
             "",
-            "Final verdict:",
-            "review-safe classifier: broad portable weak-field package, stricter distance tail, narrower complex-action branch",
+            "Finite comparison scope:",
+            "supplied historical row classification: broad package, distance-tail comparison, complex-action comparison; no necessity or causal claim",
         ]
     )
     return "\n".join(lines)
@@ -182,8 +191,15 @@ def main() -> int:
     payload = {
         "rows": [row.__dict__ for row in ROWS],
         "summary": {
+            "scope": "supplied historical cards only; no fresh simulation or independent physical/theorem certification",
             "broad_portable_weak_field_package": True,
-            "distance_tail_stricter": True,
+            "distance_tail_stricter": {
+                "scope": "supplied historical finite rows only",
+                "observation": "first two directed cases preserve direction and tail together; other named cases differ",
+                "transport_necessity_established": False,
+                "causal_mechanism_established": False,
+                "remaining_test": "matched ablations",
+            },
             "complex_action_narrower_still": True,
         },
     }

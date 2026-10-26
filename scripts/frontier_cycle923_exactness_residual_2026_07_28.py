@@ -57,6 +57,7 @@ import time
 from pathlib import Path
 
 AUDIT_TIMEOUT_SEC = 900
+AUDIT_INPUT_PATHS = ('docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md', 'docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md', 'docs/FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md', 'docs/FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md', 'docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md', 'docs/KOIDE_R_HALF_DURABILITY_STATIONARITY_CONDITIONAL_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-11.md', 'docs/FLAVOR_R_HALF_ASSUMPTIONS_AUDIT_NOTE_2026-05-30.md', 'docs/KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md', 'docs/CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md', 'scripts/frontier_acphilambda_occupancy_realized_state_reduction_2026_06_11.py', 'scripts/flavor_r_half_is_the_records_flow_separatrix_2026_06_02.py', 'scripts/flavor_r_half_stable_under_thermalizing_arrow_2026_06_02.py', 'scripts/flavor_r_half_is_a_stationary_point_not_forced_2026_06_02.py', 'scripts/frontier_koide_r_half_durability_stationarity_chain_2026_06_11.py', 'logs/runner-cache/frontier_acphilambda_occupancy_realized_state_reduction_2026_06_11.txt')
 
 T_START = time.time()
 
@@ -295,8 +296,8 @@ def s1_restriction_gates() -> None:
         (THE, "multiplier `S'(1/2)=2>1`"),
         (THE, "the instability claim is not map-invariant"),
         (THE, "does **not** derive that charged-lepton `r` physically evolves by this map"),
-        (STA, "`dS/dr=0` there,"),
-        (STA, "fixed point of the r→1−r swap"),
+        (STA, "S_sector'(r)=−2 log(2r)/(1+2r)²."),
+        (STA, "fraction exchange r→1/(4r) has the same fixed point."),
         (PRIM, "no averaging over alternatives, no typical or generic claim"),
         (PRIM, "The laws do not pick the state; the world does"),
     ]:
@@ -344,8 +345,8 @@ def s1_restriction_gates() -> None:
     reproduce(THE, "r=0 spectrum [1,1,1]", [1.0, 1.0, 1.0], [round(v, 6) for v in spectrum(0.0)], 0.0, kind="exact")
     reproduce(THE, "r=1 spectrum [0,0,3] (two massless)", [0.0, 0.0, 3.0], sorted(round(v, 6) for v in spectrum(1.0)), 0.0, kind="exact")
     reproduce(THE, "r=1/2 spectrum [2.41,0.29,0.29]", [2.41, 0.29, 0.29], [round(v, 2) for v in sorted(spectrum(0.5), reverse=True)], 0.0, kind="exact")
-    reproduce(THE, "sigma involution r<->1-r CHANGES Tr H^2 : value 4.2 at r=0.2", 4.2, 3.0 + 6.0 * 0.2, 1e-12)
-    reproduce(THE, "sigma involution r<->1-r CHANGES Tr H^2 : value 7.8 at r=0.8", 7.8, 3.0 + 6.0 * 0.8, 1e-12)
+    reproduce(THE, "supplied affine comparison r<->1-r (NOT sector exchange) CHANGES Tr H^2 : value 4.2 at r=0.2", 4.2, 3.0 + 6.0 * 0.2, 1e-12)
+    reproduce(THE, "supplied affine comparison r<->1-r (NOT sector exchange) CHANGES Tr H^2 : value 7.8 at r=0.8", 7.8, 3.0 + 6.0 * 0.8, 1e-12)
     the_grid = linspace(0.01, 3.0, 1500)
     a2b = max(((S2(v), v) for v in the_grid))[1]
     asp = max(((S_spec(v), v) for v in the_grid))[1]
@@ -361,7 +362,7 @@ def s1_restriction_gates() -> None:
     check("S1-restriction", "[stationarity runner] dS/dr = 0 at r=1/2 (source h=1e-6, source tol 1e-5)", abs(dS_num) < 1e-5, f"dS={dS_num:.3e}")
     reproduce(STA, "S(1/2) = log 2 (source tol 1e-12)", LN2, S2(0.5), 1e-12)
     reproduce(STA, "power imbalance |3a^2 - 6|b|^2| trough = 0 at r=1/2 (source tol 1e-12)", 0.0, abs(3.0 - 6.0 * 0.5), 1e-12)
-    reproduce(STA, "r=1/2 is the fixed point of the r -> 1-r swap (source tol 1e-12)", 0.0, abs((1.0 - 0.5) - 0.5), 1e-12)
+    reproduce(STA, "r=1/2 is the fixed point of sector exchange r -> 1/(4r), r>0 (source tol 1e-12)", 0.0, abs(1.0 / (4.0 * 0.5) - 0.5), 1e-12)
     for rr, qq in ((0.0, 1.0 / 3.0), (0.5, 2.0 / 3.0), (1.0, 1.0)):
         reproduce(STA, f"three-lane lever Q({rr}) = {qq:.6f} (source tol 1e-12)", qq, Q_of_r(rr), 1e-12)
 
@@ -455,9 +456,16 @@ def s2_reconciliation() -> None:
     check("S2-Q1", "R4 COINCIDENCE-DEFLATION: for a 2-outcome split, p->p^2/Z fixes p iff p is uniform or degenerate. "
           "So 'interior fixed point of sharpening' = 'maximum of S2' = 'HS equipartition 3a^2=6|b|^2' is ONE fact "
           "in three costumes, NOT three independent characterisations.", all(defl), f"{sum(defl)}/{len(defl)} agree over p in (0,1)")
-    check("S2-Q1", "R5: the r <-> 1-r swap fixed point is a genuinely separate but ARITHMETIC fact (x = 1-x), carrying "
-          "no entropy or flow content; the thermalizing note itself corrects it from 'symmetry protection' to 'a relabelling'",
-          abs((1.0 - 0.5) - 0.5) < 1e-15 and "not** a dynamical symmetry" in NOTE_FLAT.get(THE, ""))
+    check("S2-Q1", "R5: sector exchange r -> 1/(4r), r>0, fixes 1/2 exactly when the two fractions are equal; "
+          "this is the SAME uniformity/equipartition fact, not an independent selection",
+          abs(1.0 / (4.0 * 0.5) - 0.5) < 1e-15 and p_singlet(0.5) == p_doublet(0.5))
+    # Concrete negative control: the affine reflection is not fraction exchange.
+    test_r = 2.0
+    exchanged = 1.0 / (4.0 * test_r)
+    check("S2-Q1", "R5-counterexample: r=2 exchanges to1/8; affine1-r=-1 is outside r>=0 and is not exchange",
+          exchanged == 0.125 and 1.0 - test_r == -1.0
+          and p_singlet(exchanged) == p_doublet(test_r)
+          and p_doublet(exchanged) == p_singlet(test_r))
 
     red, the = NOTE_FLAT.get(RED, ""), NOTE_FLAT.get(THE, "")
     check("S2-Q1", "R6a: the reduction note S6 calls the S2 maximum a 'thermalizing attractor'",
@@ -970,7 +978,7 @@ def s5_firewall(planted_selector: bool = False) -> bool:
         {"id": "Fix_g", "designates": [0.0, 0.5], "supplied": "the supplied two-sector reverse map"},
         {"id": "attractor_of_g", "designates": [0.5], "supplied": "the supplied two-sector reverse map (arrow not derived)"},
         {"id": "attractor_of_f", "designates": [0.0], "supplied": "the supplied Luders/records sharpening map (arrow not derived)"},
-        {"id": "swap_fixed_point", "designates": [0.5], "supplied": "the r <-> 1-r relabelling (a relabelling, not a dynamical symmetry -- source-corrected)"},
+        {"id": "swap_fixed_point", "designates": [0.5], "supplied": "exchange of the supplied sector fractions r -> 1/(4r), r>0; fixedness is the same uniformity fact, not independent selection"},
         {"id": "durability_fixedness", "designates": [0.0, 0.5], "supplied": "the durability principle (not adopted; priced only)"},
         {"id": "fixed_point_alternation_lemma", "designates": [], "supplied": None},
         {"id": "reconciliation_Q1", "designates": [], "supplied": None},
@@ -1181,7 +1189,7 @@ def s8_priced() -> None:
     a_items = [
         "Q1: the separatrix fact and the attractor fact are the SAME fixed point read under the supplied map and its functional (composition) inverse. g = f^{-1} exactly; multipliers reciprocal (2 and 1/2, product exactly 1, by the inverse-function rule under its C^1 local-diffeomorphism / nonzero-derivative hypotheses). No physical time-reversal reading is derived.",
         "S2 is a strict Lyapunov function orienting the pair: strictly decreasing under f, strictly increasing under g, everywhere off r=1/2. This is what makes 'thermalizing' well-defined.",
-        "COINCIDENCE-DEFLATION: 'interior fixed point of sharpening', 'maximum of the 2-sector entropy' and 'HS equipartition 3a^2=6|b|^2' are ONE fact (2-outcome uniformity) in three costumes; only the r<->1-r swap fixed point is separate, and it is arithmetic. The distinguished point is singly, not multiply, distinguished.",
+        "COINCIDENCE-DEFLATION: 'interior fixed point of sharpening', 'maximum of the 2-sector entropy' and 'HS equipartition 3a^2=6|b|^2' are ONE fact (2-outcome uniformity) in three costumes; the actual sector-exchange map r->1/(4r) has the SAME uniformity fixed point, not a separate characterization. The distinguished point is singly, not multiply, distinguished.",
         "Exact conjugacy u = 2r: f is u->u^2, g is u->sqrt(u); ln u_n = 2^{+/-n} ln u_0 in closed form, so every rate is exact rather than asymptotic.",
         "Rates: f'(1/2)=2, g'(1/2)=1/2, f'(0)=0 (quadratic superstability), g'(0)=+inf. S2''(1/2) = -1 nats exactly (-1.442695 bits). Entropy deficit at |r-1/2|=3e-6 is 4.5e-12 nats below ln2.",
         "Basins: basin(f,0)=[0,1/2); basin(f,+inf)=(1/2,inf); basin(g,1/2)=(0,inf) entire, verified over 600 decades and proved by the conjugacy.",

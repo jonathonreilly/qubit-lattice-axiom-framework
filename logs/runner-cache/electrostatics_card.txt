@@ -1,14 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/electrostatics_card.py
-runner_sha256: 77d17947b5cb3c7929e84403cc84ccfaa9ff3b6b99c05bd6c6aabb864fd1735c
-timeout_sec: 300
+runner_sha256: 4d8ea58366de2012ca0fd003a4376fb096f874d1e8f94027f0906f17c21d9339
+input_fingerprint_sha256: d64a47d8cc5bc778f91c690b24bf8de1efa911c88fd99d8568c2552a839635ab
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.88
+elapsed_sec: 3.01
 status: ok
 ----- stdout -----
 ============================================================================================
 ELECTROSTATICS CARD
-  Retained 3D ordered-lattice family
+  Supplied 3D ordered-lattice family; finite diagnostic
   h=0.5, W=8, L=12, source_z=5.0, strength=5e-05
   Claim surface: scalar electrostatic-like sign law only
 ============================================================================================

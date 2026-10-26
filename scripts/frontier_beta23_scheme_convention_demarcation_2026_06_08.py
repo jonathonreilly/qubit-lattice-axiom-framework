@@ -1,56 +1,16 @@
 #!/usr/bin/env python3
-"""beta_2/beta_3 are scheme convention; the invariant set is exactly b0/b1.
-
-Class-A exact-symbolic verification for the source note
-
-    docs/BETA23_SCHEME_CONVENTION_DEMARCATION_FIXED_SPACING_BOUNDED_THEOREM_NOTE_2026-06-08.md
-
-CONTEXT (ST3, the running coupling).  The per-loop decomposition
-(ALPHA_S_4LOOP_RUNNING_DERIVATION_PARTIAL_NOTE_2026-05-10) found: L1 (1-loop b_0) and L2
-(2-loop b_1) are derivable from retained Casimirs; L3/L4 (3-/4-loop b_2, b_3) "require
-MS-bar dimensional-regularization machinery ... a STRUCTURAL obstruction".  This runner
-DEMARCATES that obstruction exactly:
-
-  (T1) UNIVERSALITY DERIVED: under EVERY normalization-preserving coupling
-       reparametrization a' = a + c_1 a^2 + c_2 a^3 + c_3 a^4 + ..., the transformed
-       beta-function coefficients satisfy b_0' = b_0 and b_1' = b_1 IDENTICALLY (no
-       c-dependence).  The framework's derived coefficients are exactly the
-       reparametrization-INVARIANT set.
-  (T2) b_2, b_3 ARE PURE CONVENTION: the transformation laws
-           b_2' = b_2 - b_1 c_1 + b_0 (c_2 - c_1^2)
-           b_3' = b_3 - 2 b_2 c_1 + b_1 c_1^2 + b_0 (2 c_3 - 6 c_1 c_2 + 4 c_1^3)
-       contain the FREE parameters c_2, c_3 linearly with coefficient b_0 (and 2 b_0).
-       Hence for b_0 != 0 the pair (b_2', b_3') can be set to ANY prescribed values — in
-       particular (0,0), the 't Hooft scheme — by an exact linear solve, for EVERY choice
-       of c_1 (a one-parameter family of such schemes).
-  (T3) ASYMPTOTIC FREEDOM IS THE SOLVABILITY CONDITION: the solve's denominators are
-       exactly b_0 and 2 b_0; at b_0 = 0 the c_2/c_3 freedom drops out of (b_2', b_3') and
-       the prescription is unreachable.  The framework's DERIVED b_0 = 7 > 0 (N_f = 6) is
-       what makes its scheme freedom sufficient.
-  (T4) BOUNDED DEMARCATION: the inherited QCD-running context has the algebraic closed
-       forms b_0 = (11 C_A - 4 T_F N_f)/3 = 7 and
-       b_1 = (34/3) C_A^2 - 4 C_F T_F N_f - (20/3) C_A T_F N_f = 26 (N_f = 6),
-       which coincide exactly with the invariant set (T1).  The L3/L4 "MS-bar gap"
-       therefore consists of CONVENTION-side coefficients: at fixed physical lattice
-       spacing the native coefficient set carries the invariant running content, while
-       reproducing the MS-bar LABELS is a literature-comparison dictionary
-       (the HK->MSbar conversion integrals; named admission, owned by the
-       closure_c_l1a structural form), not missing invariant running content.
-  (T5) TEETH: b_1 is NOT adjustable (b_1' - b_1 == 0 identically); the demarcation line
-       sits exactly at n >= 2 and cannot be moved; and a leading RESCALING a' = lambda a
-       (lambda != 1) changes b_0 — that freedom is the separate g_bare normalization
-       convention layer, NOT a scheme transformation (stated, kept distinct).
-
-WHAT IS NOT CLAIMED: L3/L4 are NOT "closed" — the alpha_s(M_Z) certificate's imports
-(conversion dictionary, running infrastructure, thresholds, Sommer scale) are UNCHANGED and
-named; the inherited physical-color/QCD-coupling bridge and g_bare gates are not retired;
-the dictionary integrals (Z_10, Z_20) are NOT computed here; the sister b_3
-pure-gauge-vs-full-SM lane (N_f-dependence) is untouched.  No new axiom/import.
-
-Run: python3 scripts/frontier_beta23_scheme_convention_demarcation_2026_06_08.py
+"""Exact formal beta-coefficient reparametrization with supplied QCD polynomials.
+Assume a same-theory, mass-independent, scale-independent analytic map with unit
+leading coefficient. Nonzero b0 permits the fixed-c1 triangular solve (negative
+b0 also works). At b0=0 only the tested c2/b2 and c3/b3 freedoms disappear;
+other freedoms and special targets are not excluded. No physical HK matching,
+framework running closure or sufficiency of two integrals is established.
 """
 
 from __future__ import annotations
+
+AUDIT_INPUT_PATHS = ["docs/BETA23_SCHEME_CONVENTION_DEMARCATION_FIXED_SPACING_BOUNDED_THEOREM_NOTE_2026-06-08.md", "docs/CLOSURE_C_L1_HK_MSBAR_3L_CONVERSION_NOTE_2026-05-10_cL1a.md"]
+AUDIT_TIMEOUT_SECONDS = 120
 
 import sympy as sp
 
@@ -140,10 +100,10 @@ check("(b2', b3') reach ANY prescribed (t2, t3) — the pair carries NO invarian
       and sp.simplify(bp[3].subs({c2: c2_any, c3: c3_any}) - t3) == 0)
 
 # ===========================================================================
-# Part 3.  (T3) Asymptotic freedom (b0 != 0) is the solvability condition.
+# Part 3.  (T3) Nonzero b0 permits the fixed-c1 triangular solve.
 # ===========================================================================
 print("=" * 78)
-print("Part 3  (T3) solvability denominators are exactly b0 and 2 b0 (AF = solvability)")
+print("Part 3  (T3) solvability denominators are exactly b0 and 2 b0 (nonzero b0; no sign requirement)")
 print("=" * 78)
 
 den2 = sp.denom(sp.together(c2_sol))
@@ -151,14 +111,14 @@ den3 = sp.denom(sp.together(c3_sol))
 check("denominator of the c2 solve is b0; of the c3 solve is 2 b0",
       sp.simplify(den2 - b0) == 0 and sp.simplify(den3 - 2 * b0) == 0,
       f"den(c2)={den2}, den(c3)={den3}")
-# degenerate control: at b0 = 0 the c2/c3 freedom drops out of (b2', b3') entirely
+# degenerate control: at b0 = 0 b2' loses c2 dependence and b3' loses c3 dependence
 check("CONTROL: at b0 = 0 the c2-dependence of b2' vanishes (freedom lost; prescription "
       "unreachable unless b2' = b2 - b1 c1 happens to hit the target)",
       sp.expand(sp.diff(bp[2].subs(b0, 0), c2)) == 0
       and sp.expand(sp.diff(bp[3].subs(b0, 0), c3)) == 0)
 
 # ===========================================================================
-# Part 4.  (T4) Framework demarcation: derived Casimir forms = the invariant set.
+# Part 4.  (T4) Supplied QCD coefficient polynomials in the formal invariant positions.
 # ===========================================================================
 print("=" * 78)
 print("Part 4  (T4) inherited b0 = 7, b1 = 26 (N_f=6, bounded QCD context) = invariant set")
@@ -167,7 +127,7 @@ print("=" * 78)
 CA, CF, TF, Nf = sp.Integer(3), sp.Rational(4, 3), sp.Rational(1, 2), sp.Integer(6)
 b0_fw = (11 * CA - 4 * TF * Nf) / 3
 b1_fw = sp.Rational(34, 3) * CA ** 2 - 4 * CF * TF * Nf - sp.Rational(20, 3) * CA * TF * Nf
-check("b0 = (11 C_A - 4 T_F N_f)/3 = 7 exactly (retained Casimirs, N_f = 6)",
+check("b0 = (11 C_A - 4 T_F N_f)/3 = 7 exactly (supplied QCD polynomial, N_f = 6)",
       b0_fw == 7, f"b0 = {b0_fw}")
 check("b1 = (34/3)C_A^2 - 4 C_F T_F N_f - (20/3) C_A T_F N_f = 26 exactly",
       b1_fw == 26, f"b1 = {b1_fw}")
@@ -206,17 +166,9 @@ check("a leading rescaling a' = lam*a sends b0 -> b0/lam (lam != 1 changes b0): 
 print("=" * 78)
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
 print("=" * 78)
-print("SCOPE (demarcation, NOT closure): under normalization-preserving coupling")
-print("  reparametrizations, b0 and b1 are IDENTICALLY invariant (derived) and b2, b3 are")
-print("  FULLY adjustable (any prescribed pair; 't Hooft scheme explicit; solvable iff")
-print("  b0 != 0 = asymptotic freedom).  The inherited bounded QCD-running coefficients")
-print("  (b0, b1) = (7, 26) are exactly the invariant set, so the L3/L4 'MS-bar structural")
-print("  gap' consists of CONVENTION-side coefficients: at fixed physical spacing the")
-print("  native coefficient set carries the invariant running content, and the MS-bar labels")
-print("  are a literature-comparison DICTIONARY (HK->MSbar conversion integrals = the")
-print("  named admission, owned by the closure_c_l1a structural form; NOT computed here).")
-print("  The alpha_s(M_Z) certificate's imports (dictionary, running, thresholds, Sommer)")
-print("  are UNCHANGED; inherited color/g_bare gates are not retired; the sister b_3")
-print("  N_f-dependence lane is untouched.  No new axiom.")
+print("SCOPE: same-theory scale-independent formal maps with unit leading coefficient.")
+print("b0,b1 are invariant; the fixed-c1 solve for b2,b3 works for nonzero b0, of either sign.")
+print("Supplied QCD polynomials give (7,26); they do not prove framework running or matching.")
+print("Physical HK coupling, continuum identification, normalization, vertices and fermion matching remain open.")
 if FAIL:
     raise SystemExit(1)

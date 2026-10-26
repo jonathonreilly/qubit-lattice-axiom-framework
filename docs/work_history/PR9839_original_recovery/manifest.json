@@ -1,0 +1,161 @@
+{
+  "original_head": "f78abbde6e5003b71d91cd31394c6f850234b8bc",
+  "meaning": "Exact original PR9839 source and historical output. Not current evidence or authority.",
+  "paths": {
+    "docs/ADJACENCY_RANK_QUBIT_CLIFFORD_BOUND_NARROW_THEOREM_NOTE_2026-06-10.md": {
+      "sha256": "8459563cc9483f14293d1d16b500cd7b830060802f4e412a69ca6215331d395f",
+      "archive": "docs/work_history/PR9839_original_recovery/docs/ADJACENCY_RANK_QUBIT_CLIFFORD_BOUND_NARROW_THEOREM_NOTE_2026-06-10.md.gz"
+    },
+    "docs/ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md": {
+      "sha256": "6560b852863fd6084df3a9d79aaf15b3acfba5fedff522081b565384ce3a93e3",
+      "archive": "docs/work_history/PR9839_original_recovery/docs/ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md.gz"
+    },
+    "docs/AXIOM_FIRST_BEKENSTEIN_BOUND_THEOREM_NOTE_2026-05-01.md": {
+      "sha256": "c9c0a9fc53e8129881519ac56f307d0f5d3d2877c619d1dd261d04314b171676",
+      "archive": "docs/work_history/PR9839_original_recovery/docs/AXIOM_FIRST_BEKENSTEIN_BOUND_THEOREM_NOTE_2026-05-01.md.gz"
+    },
+    "docs/AXIOM_FIRST_GENERALIZED_SECOND_LAW_THEOREM_NOTE_2026-05-01.md": {
+      "sha256": "6decfa1a779243a8244c8fc1f72e93f5a3cf4d50ed34da3733219432f36e5185",
+      "archive": "docs/work_history/PR9839_original_recovery/docs/AXIOM_FIRST_GENERALIZED_SECOND_LAW_THEOREM_NOTE_2026-05-01.md.gz"
+    },
+    "docs/AXIOM_STACK_MINIMALITY_CL4C_NO_GO_THEOREM_NOTE_2026-04-29.md": {
+      "sha256": "65a048df588aab3a2fe9651570152587d616fa4b9c0abe1f3ccf292ea225d8a8",
+      "archive": "docs/work_history/PR9839_original_recovery/docs/AXIOM_STACK_MINIMALITY_CL4C_NO_GO_THEOREM_NOTE_2026-04-29.md.gz"
+    },
+    "docs/CL31_M4R_DIMENSION_SIXTEEN_NARROW_THEOREM_NOTE_2026-05-26.md": {
+      "sha256": "0eb739b10205839af46dc3bd27c8f52576e6df8694ecc6bec7434ef840fe9033",
+      "archive": "docs/work_history/PR9839_original_recovery/docs/CL31_M4R_DIMENSION_SIXTEEN_NARROW_THEOREM_NOTE_2026-05-26.md.gz"
+    },
+    "docs/CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md": {
+      "sha256": "732f7a58c9308f01a8d6874eaf8645b16be2f74319b064370822281b9412adf2",
+      "archive": "docs/work_history/PR9839_original_recovery/docs/CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md.gz"
+    },
+    "docs/FROZEN_STARS_RIGOROUS_NOTE.md": {
+      "sha256": "33ac45462181a8be6dbd6c4e99cabffcc356d02e77c792548f031009f249142c",
+      "archive": "docs/work_history/PR9839_original_recovery/docs/FROZEN_STARS_RIGOROUS_NOTE.md.gz"
+    },
+    "docs/G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md": {
+      "sha256": "5d182e8ba361dde35f93301ed99ae1379875428580218ef62b5df811737879ae",
+      "archive": "docs/work_history/PR9839_original_recovery/docs/G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md.gz"
+    },
+    "docs/HUBBLE_LANE5_C1_CL4C_CONDITIONAL_DERIVATION_CHAIN_CONSTRUCTION_NOTE_2026-04-30.md": {
+      "sha256": "8e9367253a39260977d7f74ef4f74357e8d1e030732440df38bed60488eb836a",
+      "archive": "docs/work_history/PR9839_original_recovery/docs/HUBBLE_LANE5_C1_CL4C_CONDITIONAL_DERIVATION_CHAIN_CONSTRUCTION_NOTE_2026-04-30.md.gz"
+    },
+    "docs/audit/data/citation_graph_manifest.json": {
+      "sha256": "ed514d97d30e67315e5cfa5aea9e3b72452a3c2dea2c8b52556201f3f2535589",
+      "archive": "docs/work_history/PR9839_original_recovery/docs/audit/data/citation_graph_manifest.json.gz"
+    },
+    "docs/audit/data/runner_timeout_declarations.json": {
+      "sha256": "c8e12d32d8af7241a8623e13ae3c89c65692b18146d9489c0d04daadea1564d2",
+      "archive": "docs/work_history/PR9839_original_recovery/docs/audit/data/runner_timeout_declarations.json.gz"
+    },
+    "docs/lanes/open_science/07_THERMALIZATION_KINETIC_THEORY_OPEN_LANE_2026-06-12.md": {
+      "sha256": "4a4413f2a7bcd42217f213ec0ed257096fea8349ac83f2932a085fa734c5f6df",
+      "archive": "docs/work_history/PR9839_original_recovery/docs/lanes/open_science/07_THERMALIZATION_KINETIC_THEORY_OPEN_LANE_2026-06-12.md.gz"
+    },
+    "logs/runner-cache/adjacency_rank_qubit_clifford_bound_2026_06_10.txt": {
+      "sha256": "ae65c87bf54956e30f7964cad16133de31d372a26cdf3defee10191721e6939d",
+      "archive": "docs/work_history/PR9839_original_recovery/logs/runner-cache/adjacency_rank_qubit_clifford_bound_2026_06_10.txt.gz"
+    },
+    "logs/runner-cache/audit_companion_cl31_m4r_dimension_sixteen_exact_2026_05_26.txt": {
+      "sha256": "2e2db4ff9bc97c4178d420865c3df9963e9ccc9edfa76786f3e19c197a6857a3",
+      "archive": "docs/work_history/PR9839_original_recovery/logs/runner-cache/audit_companion_cl31_m4r_dimension_sixteen_exact_2026_05_26.txt.gz"
+    },
+    "logs/runner-cache/axiom_first_bekenstein_bound_check.txt": {
+      "sha256": "7d84ba9777b77194f423e1219a88f42de3cb1748635eeb77527a58867514215d",
+      "archive": "docs/work_history/PR9839_original_recovery/logs/runner-cache/axiom_first_bekenstein_bound_check.txt.gz"
+    },
+    "logs/runner-cache/axiom_first_gsl_check.txt": {
+      "sha256": "560d68d1767f0f4f12bb1955d17e8f247ddf768af56a41df371c816609f048f9",
+      "archive": "docs/work_history/PR9839_original_recovery/logs/runner-cache/axiom_first_gsl_check.txt.gz"
+    },
+    "logs/runner-cache/frontier_axiom_stack_minimality_cl4c_no_go.txt": {
+      "sha256": "d3d6aaf70f461aa431a40529651cbb1a7c465ceb09e262c4f6be247561bb4f6d",
+      "archive": "docs/work_history/PR9839_original_recovery/logs/runner-cache/frontier_axiom_stack_minimality_cl4c_no_go.txt.gz"
+    },
+    "logs/runner-cache/frontier_cl3_gamma_involution_determinant_narrow.txt": {
+      "sha256": "918d6cb4514131a11a028b15c277079c9b35c34ae3cc89cc75d530d3962eb561",
+      "archive": "docs/work_history/PR9839_original_recovery/logs/runner-cache/frontier_cl3_gamma_involution_determinant_narrow.txt.gz"
+    },
+    "logs/runner-cache/frontier_frozen_stars_rigorous.txt": {
+      "sha256": "15f49500b5df81205cac7aba9257f86b6e423acb49424b904f3e75193e7a12ab",
+      "archive": "docs/work_history/PR9839_original_recovery/logs/runner-cache/frontier_frozen_stars_rigorous.txt.gz"
+    },
+    "logs/runner-cache/frontier_g_bare_structural_normalization.txt": {
+      "sha256": "b16e9d8b0e59790b1272d79e4bd5ecbf8f3ffd2315b7d6a5c186b53d2a255cbf",
+      "archive": "docs/work_history/PR9839_original_recovery/logs/runner-cache/frontier_g_bare_structural_normalization.txt.gz"
+    },
+    "scripts/adjacency_rank_qubit_clifford_bound_2026_06_10.py": {
+      "sha256": "0de3c30f1e2f20aafc4c314c2d3a09a704f0d544a4999e222f82e2efa1aff15c",
+      "archive": "docs/work_history/PR9839_original_recovery/scripts/adjacency_rank_qubit_clifford_bound_2026_06_10.py.gz"
+    },
+    "scripts/audit_companion_cl31_m4r_dimension_sixteen_exact_2026_05_26.py": {
+      "sha256": "7ce2734ae017bc69af1a80a1548409dbb64f5e3e07a030996c450ec990d79e8a",
+      "archive": "docs/work_history/PR9839_original_recovery/scripts/audit_companion_cl31_m4r_dimension_sixteen_exact_2026_05_26.py.gz"
+    },
+    "scripts/axiom_first_bekenstein_bound_check.py": {
+      "sha256": "bd6477d4dc20ff1b144ee9482d937fd415ba2a18436fb64864e5c0d3d605474c",
+      "archive": "docs/work_history/PR9839_original_recovery/scripts/axiom_first_bekenstein_bound_check.py.gz"
+    },
+    "scripts/axiom_first_gsl_check.py": {
+      "sha256": "36cd3b6ade2ea38ba067232bd3f770b332510d983f38aed5424e7b6fe3815a54",
+      "archive": "docs/work_history/PR9839_original_recovery/scripts/axiom_first_gsl_check.py.gz"
+    },
+    "scripts/frontier_axiom_stack_minimality_cl4c_no_go.py": {
+      "sha256": "aac3537fea024935e49b296a6608aa3e60fe4cbaa17da5e7b7efba8dc024d7f6",
+      "archive": "docs/work_history/PR9839_original_recovery/scripts/frontier_axiom_stack_minimality_cl4c_no_go.py.gz"
+    },
+    "scripts/frontier_cl3_gamma_involution_determinant_narrow.py": {
+      "sha256": "95224293b68455c514eadeaaa45da1c8f336d1620b9b7a2ab01a4bf766018210",
+      "archive": "docs/work_history/PR9839_original_recovery/scripts/frontier_cl3_gamma_involution_determinant_narrow.py.gz"
+    },
+    "scripts/frontier_frozen_stars_rigorous.py": {
+      "sha256": "cb82ad5e75b4264bfb2f5b96559ba0c679a61027175eb3bedd708c59f69511a8",
+      "archive": "docs/work_history/PR9839_original_recovery/scripts/frontier_frozen_stars_rigorous.py.gz"
+    },
+    "scripts/frontier_g_bare_structural_normalization.py": {
+      "sha256": "30093454133d8aa4944a28108e176dc082662f664a2f29940f056a977a6b015e",
+      "archive": "docs/work_history/PR9839_original_recovery/scripts/frontier_g_bare_structural_normalization.py.gz"
+    },
+    "scripts/frontier_koide_lane_regression.py": {
+      "sha256": "9d31be5e6103ed545063ef020cdb8f2c5e153cbc831cc213c80fdae82f6f8bd3",
+      "archive": "docs/work_history/PR9839_original_recovery/scripts/frontier_koide_lane_regression.py.gz"
+    },
+    "tests/test_frontier_koide_lane_regression.py": {
+      "sha256": "37284dc37f6d9ec390fd6f1aaf8bbb533b0b6bc911ddb9a802da6677abfcb64f",
+      "archive": "docs/work_history/PR9839_original_recovery/tests/test_frontier_koide_lane_regression.py.gz"
+    }
+  },
+  "additional_context": {
+    "scripts/frontier_hubble_lane5_c1_cl4c_conditional_derivation_chain_construction.py": {
+      "sha256": "6e05d4dd6a407bf7affdc4c16c7e665c27f7e01e91ea9c7ea035a6d4d1a1c516",
+      "archive": "docs/work_history/PR9839_original_recovery/scripts/frontier_hubble_lane5_c1_cl4c_conditional_derivation_chain_construction.py.gz"
+    },
+    "scripts/frontier_gw_echo_derived.py": {
+      "sha256": "eb9cad38ee8ce5b6975608409332032276c3dbc5b955a7d4df5e0cf91ea2b05a",
+      "archive": "docs/work_history/PR9839_original_recovery/scripts/frontier_gw_echo_derived.py.gz",
+      "provenance": "Pre-attribution-repair consumer at frozen base f24d17d97d372df977476e4a69674577f31af575; not part of original 31 paths."
+    },
+    "logs/runner-cache/frontier_gw_echo_derived.txt": {
+      "sha256": "1a73ae8e11b22dabbca616f09ea0fab5efb7ed636781ebb6839d83520b0f5ce9",
+      "archive": "docs/work_history/PR9839_original_recovery/logs/runner-cache/frontier_gw_echo_derived.txt.gz",
+      "provenance": "Pre-attribution-repair consumer at frozen base f24d17d97d372df977476e4a69674577f31af575; not part of original 31 paths."
+    },
+    "docs/HADRON_LANE1_SQRT_SIGMA_B5_FRAMEWORK_LINK_AUDIT_NOTE_2026-04-30.md": {
+      "sha256": "e63cec5190f2e85fe514a960ae1c580082310f4d04cdfbb44234e545a57a6f8a",
+      "archive": "docs/work_history/PR9839_original_recovery/docs/HADRON_LANE1_SQRT_SIGMA_B5_FRAMEWORK_LINK_AUDIT_NOTE_2026-04-30.md.gz",
+      "provenance": "Affected G_BARE consumer, unchanged at frozen base f24; outside original31."
+    },
+    "scripts/frontier_hadron_lane1_sqrt_sigma_b5_framework_link_audit.py": {
+      "sha256": "48779d313455b5eec344123fa9e68747ce9e19828c4063a827aab04dbe09e0a2",
+      "archive": "docs/work_history/PR9839_original_recovery/scripts/frontier_hadron_lane1_sqrt_sigma_b5_framework_link_audit.py.gz",
+      "provenance": "Affected G_BARE consumer, unchanged at frozen base f24; outside original31."
+    },
+    "logs/runner-cache/frontier_hadron_lane1_sqrt_sigma_b5_framework_link_audit.txt": {
+      "sha256": "189aca75962be23baaaee5ae897a28374534ceb1d02582c66a0910bad2578ce1",
+      "archive": "docs/work_history/PR9839_original_recovery/logs/runner-cache/frontier_hadron_lane1_sqrt_sigma_b5_framework_link_audit.txt.gz",
+      "provenance": "Affected G_BARE consumer, unchanged at frozen base f24; outside original31."
+    }
+  }
+}

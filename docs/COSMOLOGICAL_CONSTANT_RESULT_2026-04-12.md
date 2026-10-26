@@ -1,5 +1,8 @@
 # Cosmological Constant — Spectral-Gap Companion
 
+**Claim type:** bounded_theorem (supplied conditional scope; no audit status change)
+**Primary runner:** `scripts/frontier_cosmological_constant_spectral_gap.py`
+
 **Date:** 2026-04-12  
 **Status:** bounded/conditional cosmology companion. Canonical positive
 `Lambda` surface on `main`.
@@ -9,7 +12,14 @@ only. Not on the retained flagship claim surface.
 
 ## Safe Theorem Surface
 
-On the retained `S^3` topology surface, the lowest scalar Laplacian eigenvalue
+**Radius boundary (2026-10-21).** The de Sitter curvature radius ell is
+constant, but its global spatial S³ radius is `a(t)=ell cosh(ct/ell)`.
+Consequently `lambda_1(S³_a(t))=3/a(t)²` equals `Lambda=3/ell²` only at
+the minimum-radius slice, or when an auxiliary sphere is assigned radius ell.
+The shared coefficient 3 does not derive the physical identification or
+select Lambda. This is a conditional consistency comparison.
+
+For a supplied round metric on `S^3_R`, the first nonzero scalar Laplacian eigenvalue
 is
 
 `lambda_1(S^3_R) = 3 / R^2`.
@@ -26,12 +36,12 @@ The older present-epoch comparison
 is therefore the pure de Sitter limit `H_inf = H_0`, not the general mixed
 matter-vacuum relation.
 
-Against the current observational comparator
+Against the historical numerical comparator supplied in this note
 
 `Lambda_obs = 1.11 x 10^-52 m^-2`,
 
-the ratio is `Lambda_pred / Lambda_obs ~ 1.44`, i.e. an `O(1)` match rather
-than the usual UV-vacuum `10^122` catastrophe.
+the ratio is `Lambda_pred / Lambda_obs ~ 1.44`, an `O(1)` comparison after inserting the supplied H_0 scale. This is not an
+independent prediction of Lambda or a solution of the vacuum-energy problem.
 
 ## What Is Exact vs Conditional
 
@@ -39,8 +49,9 @@ than the usual UV-vacuum `10^122` catastrophe.
 
 1. The coefficient `3` is the exact `d = 3` first-eigenvalue coefficient on
    `S^3`.
-2. The spectral-gap identification is IR/geometric:
-   `Lambda = lambda_1(S^3_R) = 3 / R^2`.
+2. With the additional identification `R=ell`, the conditional IR/geometric
+   comparison is `Lambda = lambda_1(S^3_R) = 3 / R^2`. It is not inferred
+   from the spectrum alone.
 3. The same spectral-gap mechanism is the one used by the bounded dark-energy
    EOS companion:
    [DARK_ENERGY_EOS_NOTE.md](./DARK_ENERGY_EOS_NOTE.md).
@@ -70,25 +81,19 @@ positive companion surface is the `S^3` spectral-gap route.
 
 ## Interpretation
 
-The framework changes the object being identified as `Lambda`:
-
-| Standard UV picture | Current companion route |
-|---|---|
-| vacuum-energy sum | spectral gap of the retained spatial graph/topology |
-| UV-cutoff dominated | IR/geometric vacuum-scale dominated |
-| misses by `10^122` | reduces to an `O(1)` matter-fraction comparison |
-
-The clean current claim is therefore:
-
-> on the retained `S^3` surface, the framework supplies a bounded/conditional
-> IR-geometric cosmological-constant companion with exact coefficient `3`,
-> exact vacuum-scale relation `Lambda = 3 H_inf^2 / c^2`, and a present-epoch
-> `O(1)` matter-fraction comparison to `H_0`.
+The comparison identifies a chosen inverse-square radius with a cosmological
+parameter. Roundness and the radius are metric data, not consequences of
+S³ topology alone. Substitution of H_0 supplies an observed scale; numerical
+agreement cannot establish the spectral-to-vacuum identification. No
+calculation here controls ultraviolet vacuum contributions or their coupling
+to gravity. The conditional de Sitter relation is `Lambda=3 H_inf²/c²`,
+with H_inf the asymptotic de Sitter expansion scale.
 
 ## Relationship To Other Cosmology Companions
 
 - [DARK_ENERGY_EOS_NOTE.md](./DARK_ENERGY_EOS_NOTE.md):
-  fixed spectral gap implies `w = -1` exactly on the same conditional route
+  a separately supplied constant vacuum density and conservation law give
+  `w=-1`; an evolving spatial spectral gap is not constant
 - [OMEGA_LAMBDA_DERIVATION_NOTE.md](./OMEGA_LAMBDA_DERIVATION_NOTE.md):
   matter fraction and flatness convert the same mechanism into the bounded
   `Omega_Lambda` chain
@@ -96,8 +101,8 @@ The clean current claim is therefore:
   unifies the vacuum scale, `w = -1`, and present-day `Omega_Lambda`
   reduction on one cosmology-lane surface
 - [GRAVITON_MASS_DERIVED_NOTE.md](./GRAVITON_MASS_DERIVED_NOTE.md):
-  the graviton-mass companion reuses the same `1/R^2` spectral/topological
-  structure
+  historical mass-identification proposal; an inverse-square spatial
+  eigenvalue alone is not a rest-mass parameter
 
 ## Falsifiability
 

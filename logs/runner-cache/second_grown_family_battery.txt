@@ -1,6 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/second_grown_family_battery.py
-runner_sha256: cb5565fb38d82dc32a13bf39689d7a48c4fdacbfa588abf419adbe1fa8d10548
+runner_sha256: 6a15abed8600f6be89b341838da1276fc1d0b02348f8636033c523876db5a17f
+input_fingerprint_sha256: e97be0d2b722a7e666c76b7853ff50663b76daa69e6f5af794f362ac7b9209e9
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.08
@@ -35,9 +36,9 @@ Question:
   [PASS] scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py source is imported into this restricted packet
          module=scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py, expected=scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py
   [PASS] scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py source exists and matches cache SHA
-         source=scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py, live_sha=539702067c29e0e678c86b3ef995efda6a636d35832ebb3d3def6e42b6d9a091, cache_sha=539702067c29e0e678c86b3ef995efda6a636d35832ebb3d3def6e42b6d9a091
+         source=scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py, live_sha=06fd8d713acae2a1ce01f36bed892113f839bb2f41f6fc2f143a05c4c9a9fcd8, cache_sha=06fd8d713acae2a1ce01f36bed892113f839bb2f41f6fc2f143a05c4c9a9fcd8
   [PASS] scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py has a fresh ok cache
-         cache=logs/runner-cache/DISTANCE_LAW_BREAKPOINT_COMPARE.txt, status=fresh, header={'runner_path': 'scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py', 'runner_sha256': '539702067c29e0e678c86b3ef995efda6a636d35832ebb3d3def6e42b6d9a091', 'input_fingerprint_sha256': None, 'status': 'ok', 'exit_code': '0'}
+         cache=logs/runner-cache/DISTANCE_LAW_BREAKPOINT_COMPARE.txt, status=fresh, header={'runner_path': 'scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py', 'runner_sha256': '06fd8d713acae2a1ce01f36bed892113f839bb2f41f6fc2f143a05c4c9a9fcd8', 'input_fingerprint_sha256': None, 'status': 'ok', 'exit_code': '0'}
   [PASS] scripts/impact_parameter_portability_probe.py source is imported into this restricted packet
          module=scripts/impact_parameter_portability_probe.py, expected=scripts/impact_parameter_portability_probe.py
   [PASS] scripts/impact_parameter_portability_probe.py source exists and matches cache SHA
@@ -47,12 +48,12 @@ Question:
 
 Current evidence packet:
   sign slice: no-restore geometry-sector second-family sweep
-  distance/impact slice: restored Fam2 row at drift=0.05, restore=0.30
+  distance/impact slice: supplied historical Fam2 table row plus cached impact output
   complex slice: narrow no-restore anchor-row pass plus quick-window boundary
 
   [PASS] Archived audit blocker names this missing battery path and allows replacement by audit-clean sign/complex notes
   [PASS] The current sign packet has a complete passing sweep on the no-restore second-family slice
-  [PASS] The restored Fam2 distance/impact packet carries the drift=0.05, restore=0.30 distance law evidence
+  [PASS] The supplied historical Fam2 table row and cached impact summary contain the named finite values
   [PASS] The current complex packet has an executable narrow anchor-row positive check
   [PASS] The quick complex packet exposes the boundary rather than inflating the result family-wide
   [PASS] Therefore the missing battery path is restored as a current evidence verifier, not as a resurrection of the old broad table

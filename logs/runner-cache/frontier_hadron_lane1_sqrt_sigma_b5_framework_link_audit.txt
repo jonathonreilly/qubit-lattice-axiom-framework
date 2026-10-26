@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hadron_lane1_sqrt_sigma_b5_framework_link_audit.py
-runner_sha256: 48779d313455b5eec344123fa9e68747ce9e19828c4063a827aab04dbe09e0a2
-input_fingerprint_sha256: 7f4c7fe74bc72ea5dc8586ed5348ca7bce097b19a5d69dd4e798c9112934cf95
+runner_sha256: 9f72408b42e050f1e70aa032758cd78bf2f27a786991660a05b8802eb961cd13
+input_fingerprint_sha256: 1aaa515001d525c4089ceee1f6285309bd807978e1b97e50e8b3f8c8180c95e9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -16,7 +16,8 @@ Question:
   link needed to import static-energy/string-tension bridge values?
 
 Answer:
-  No. The current surface has structural SU(3) and beta=6 support,
+  The physical bridge remains open; beta=6 supplies g^2=1.
+  This is source consistency and a finite Boolean checklist,
   but not a large-volume framework-side Wilson/Creutz/force-scale
   validation with uncertainty.
 
@@ -32,7 +33,7 @@ Part 1: B5 claim-state surface
 Part 2: B5 dependency status
 ----------------------------------------------------------------------------------------
   [PASS] graph-first SU3 support is structural, not a lattice-QCD dynamics equivalence
-  [PASS] g_bare normalization leaves Wilson action form imported
+  [PASS] g_bare coefficient relation leaves physical action multiplier open
   [PASS] canonical plaquette surface stores evaluated constants, not a volume-scaling proof
   [PASS] confinement runner still hard-codes standard lattice bridge constants
 
@@ -44,13 +45,13 @@ Part 3: B5 closure-gate model
   future_large_volume_creutz_or_force_scale_ladder: 5/5 gate bits; closes=True
   [PASS] current 4^4 check is useful but fails large-volume and uncertainty gates
   [PASS] structural SU3/g_bare support does not by itself instantiate lattice dynamics
-  [PASS] future large-volume Creutz/force ladder would close the B5 gate by construction
-  [PASS] no current-surface B5 candidate closes
+  [PASS] supplied future entry satisfies the Boolean checklist, not a physical theorem
+  [PASS] neither of the two supplied present entries satisfies all checklist fields
 
 ----------------------------------------------------------------------------------------
 Part 4: artifact checks
 ----------------------------------------------------------------------------------------
-  [PASS] note records B5 as current-surface no-go, not closure
+  [PASS] note records B5 as open bridge with supplied coupling
   [PASS] note defines the future large-volume ladder
 
 per_element: checked and not executed — the source audit inspects action/constant provenance and runs no link-element gauge ensemble
@@ -61,6 +62,7 @@ lattice_wide: checked and not executed — the production large-volume Creutz/fo
 
 ========================================================================================
 PASS=14 FAIL=0
+No physical equivalence, coupling selection or audit verdict is established.
 ========================================================================================
 
 ----- stderr -----

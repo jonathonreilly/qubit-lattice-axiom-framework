@@ -57,7 +57,7 @@ obstruction:
 - [DM_NEUTRINO_POSTCANONICAL_EXTENSION_CLASS_NOTE_2026-04-15.md](./DM_NEUTRINO_POSTCANONICAL_EXTENSION_CLASS_NOTE_2026-04-15.md)
 - [DM_NEUTRINO_POSTCANONICAL_SLOT_SUPPORT_CLASS_NOTE_2026-04-15.md](./DM_NEUTRINO_POSTCANONICAL_SLOT_SUPPORT_CLASS_NOTE_2026-04-15.md)
 - [DM_NEUTRINO_SINGLET_DOUBLET_CP_SLOT_TOOL_NOTE_2026-04-15.md](./DM_NEUTRINO_SINGLET_DOUBLET_CP_SLOT_TOOL_NOTE_2026-04-15.md)
-- [PMNS_RIGHT_FRAME_ORBIT_OBSTRUCTION_NOTE.md](/Users/jonBridger/Toy%20Physics-neutrino-majorana/docs/PMNS_RIGHT_FRAME_ORBIT_OBSTRUCTION_NOTE.md:1)
+- PMNS_RIGHT_FRAME_ORBIT_OBSTRUCTION_NOTE.md (historical local citation; target unavailable at `docs/PMNS_RIGHT_FRAME_ORBIT_OBSTRUCTION_NOTE.md`; original location `/Users/jonBridger/Toy%20Physics-neutrino-majorana/docs/PMNS_RIGHT_FRAME_ORBIT_OBSTRUCTION_NOTE.md:1`; no substitute authority supplied)
 
 The PMNS note gives the structural pattern. This note applies it directly to
 the live DM denominator object.

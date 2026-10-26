@@ -1,35 +1,40 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_universal_gr_discrete_global_closure.py
-runner_sha256: 098687247d97493659271be792b0a0cc25dc8e0dc824b2af2f55e6d2bb06e318
-timeout_sec: 120
+runner_sha256: 2924504ba7b661cb4e26a647f520eeb6ad94daea103fa51755a3a6ec54c855c2
+input_fingerprint_sha256: c10d17d503fb51dda8f36e7b15198beba32be625e4efeba13c843f1946703630
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
-[EXACT] PASS: the branch already contains positive local closure, Lorentzian extension, and global atlas closure
-    the structural-assembly statement is built from already-derived universal route steps
-[EXACT] PASS: the Lorentzian glued operator is nondegenerate on the discrete 3+1 route
+[DOCUMENTARY] PASS: cited files contain the expected descriptive phrases
+    documentary presence only; no upstream theorem verified
+[NUMERICAL] PASS: supplied Lorentzian Hessian has inertia (3 positive, 7 negative)
+    H eigenvalues=[-0.25       -0.11111111 -0.06666667 -0.04761905 -0.04       -0.02857143
+ -0.02040816  0.07142857  0.1         0.16666667]; full symmetric variation space
+[NUMERICAL] PASS: supplied finite Kronecker operator is numerically nondegenerate
     min |eig K_GR|=2.782578e-02
-[EXACT] PASS: overlap covariance is exact at the operator density level
+[NUMERICAL] PASS: supplied operator covariance meets numerical tolerance
     max overlap covariance error=8.327e-17
-[EXACT] PASS: the discrete Lorentzian action is chart-independent on overlaps
-    overlap action mismatch=8.882e-16
-[EXACT] PASS: stationary representatives patch to the same global section
+[NUMERICAL] PASS: supplied action agrees across this chart change
+    overlap action mismatch=0.000e+00
+[NUMERICAL] PASS: supplied stationary representatives agree across this chart change
     overlap stationary mismatch=2.842e-14
 UNIVERSAL GR DISCRETE GLOBAL CLOSURE
 ==============================================================================
 min |eig K_GR|              = 2.782578e-02
 max overlap covariance err  = 8.327e-17
-overlap action mismatch     = 8.882e-16
+overlap action mismatch     = 0.000e+00
 overlap stationary mismatch = 2.842e-14
 
 Verdict (scope-bounded):
-On the explicit chart change S and Lorentzian background D0 above, the direct-universal route assembles into a runner-verified single-overlap structural-assembly statement for an exact global Lorentzian Einstein/Regge stationary action family on the discrete 3+1 spacetime PL S^3 x R, conditional on the cited support-tier closure-stack notes. See the note's audit boundary for scope.
+Supplied finite matrices satisfy the reported single-overlap checks when all tests pass.
+NOT VERIFIED: upstream theorems, physical Einstein/Regge identification, arbitrary atlas/topology, or audit authority.
 
 ==============================================================================
 SUMMARY
 ==============================================================================
-PASS=5 FAIL=0 TOTAL=5
+PASS=6 FAIL=0 TOTAL=6
 
 ----- stderr -----
 

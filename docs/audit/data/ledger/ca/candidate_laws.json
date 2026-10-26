@@ -19,20 +19,20 @@
   "claim_type_author_hint_raw": "meta.",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "leaf",
+  "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "minimal_axioms",
     "candidate_law_cl2_a_records_qubit_leaves_the_flow_evidence_bounded_theorem_note_2026-10-18"
   ],
-  "direct_in_degree": 1,
+  "direct_in_degree": 9,
   "effective_status": "meta",
   "effective_status_reason": "metadata",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "meta",
-  "load_bearing_score": 1.5,
+  "load_bearing_score": 7.822,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -53,6 +53,6 @@
   },
   "runner_path": null,
   "title": "Candidate law proposals and provenance",
-  "transitive_descendants": 1,
+  "transitive_descendants": 9,
   "verdict_rationale": null
 }

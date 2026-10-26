@@ -49,7 +49,7 @@ the shared helper and this note's runner are repaired):
 (Parts 2 and 3) now certifies the absence of a root instead of a bracketing.
 
 **What still stands.** The interval-composition arithmetic and narrow endpoint enclosures, disjointness of
-the endpoint images, monotonicity of `R` in the coupling, the 64:1 channel weights, the series/tail
+the endpoint images, monotonicity of `R` in the coupling, the supplied 64:1 channel-weight convention, the series/tail
 machinery, the supplied-premise scope, and "current-bank selector closure: still no" (now a fortiori: the
 current bank does not reach the comparator at all).
 
@@ -63,9 +63,9 @@ same-surface physical selector from retained framework primitives.
 
 Accordingly this source row is a **conditional-support** interval-composition
 certificate, not a retained DM closure theorem and not an axiom extension. The
-64:1 same-surface channel-weight bridge may now be cited at its current
-retained-bounded status, but the remaining live-DM premise packet is still
-supplied. No audit verdict or effective status is changed here.
+64:1 same-surface channel-weight identity is conditional on a supplied
+squared-potential channel prescription. Physical process weights and amplitude
+matching remain unproved; the live-DM premise packet is still supplied. No audit verdict or effective status is changed here.
 
 ## Question
 
@@ -186,18 +186,14 @@ premises.
 This section records explicit upstream authority citations and supplied
 premise boundaries named by audit feedback for
 `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17`.
-The load-bearing boundary is broader than the imported certification routines,
-but the current ledger has moved since the earlier repair. The visible runner
-now verifies that the integral representation, monotonicity, series/tail
-support, and 64:1 same-surface channel-weight bridge are all current one-hop
-`retained_bounded` / `audited_clean` authorities. The parent still does not
-derive the live-DM plaquette / eta-omega constants or the packet-completeness /
-selector premise. The visible runner delegates the certified ratio and root
-enclosures to common modules and then performs algebraic / bracketing checks on
-their returned values. This source repair therefore records the current
-authority reduction while preserving the remaining conditional parent boundary.
-Independent audit owns any current verdict or effective status after this
-source change.
+The load-bearing boundary is broader than the imported numerical routines.
+The local runner reads this note's documentary scope and evaluates the supplied
+helper model; it does not verify ledger status or physical authority for any
+ingredient. The integral, monotonicity and series/tail references retain their
+own scopes. In particular the 64:1 algebra does not derive a process weighting
+law. The parent does not derive live-DM plaquette / eta-omega constants or the
+packet-completeness / selector premise. Independent audit owns any verdict or
+effective status; this source correction assigns none.
 
 One-hop authorities cited:
 
@@ -220,8 +216,8 @@ One-hop authorities cited:
 - [`DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md`](DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md)
   — audit row:
   `dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02`.
-  Current retained-bounded authority for the 64:1 same-surface
-  channel-weight bridge underlying ingredient (4) of the supplied packet.
+  Conditional algebra for ingredient (4): supplied multiplicity times squared
+  potential eigenvalue weights; physical process weights/amplitude matching open.
 - `DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md`
   — audit row:
   `dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16`.
@@ -236,22 +232,20 @@ One-hop authorities cited:
 
 ## 2026-06-07 Current Authority Reduction
 
-The 64:1 channel-weight bridge is no longer an open parent import. The current
-ledger records these one-hop authorities as `audited_clean` with
-`effective_status: retained_bounded`, and the runner checks those statuses
-read-only:
+The earlier closed-authority reading of this section is withdrawn. The 64:1
+channel-weight algebra is conditional on the supplied squared-potential
+prescription. Physical process weights and amplitude matching remain unproved.
+The finite SU(3) dimensions and eigenvalues, together with that prescription,
+give folded coefficients 8/9 and 1/9. Dimension counting alone does not fix a
+process amplitude; the cited color note explicitly gives projection
+counterexamples to a universal 8/9 amplitude fraction.
 
-- `dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16`;
-- `dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17`;
-- `dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17`;
-- `dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02`.
-
-This strengthens the parent restricted packet from "all six ingredients
-supplied" to "ingredients (1)-(4) have current retained-bounded one-hop
-authorities, while ingredients (5)-(6) remain conditional." The parent row
-still must not be promoted by this source edit because the live-DM
-plaquette/eta-omega constants and packet-completeness/selector premise remain
-outside the closed one-hop chain.
+The prior list of ingredient (1)-(4) audit rows is historical bookkeeping,
+not evidence checked by this runner. All six ingredients are consumed within
+their stated supplied-model scope. No assertion that ingredients (1)-(4) are
+closed physical authorities follows from this calculation. The live-DM
+constants and packet-completeness/selector obligations remain open alongside
+the physical channel-weight matching obligation.
 
 ## 2026-06-18 Live-Constant Edge Certificate
 
@@ -277,6 +271,8 @@ for the constants edge.
 
 Open upstream gaps registered for independent audit:
 
+- physical process weights / amplitude matching for the supplied squared-potential channel prescription;
+
 - the live-DM plaquette / eta-omega constants;
 - the packet-completeness / selector premise;
 - the sibling current-bank no_go boundary.
@@ -300,12 +296,10 @@ certification routines and that the visible runner delegates those
 steps to external common modules. The cite-chain repair above wires the
 three ingredient-level upstream authorities, the 64:1 channel-weight bridge,
 the sibling no_go, and the sensitivity boundary as the explicit cite chain for
-this bounded theorem. The 2026-06-07 update records that the 64:1
-channel-weight bridge has since become a current retained-bounded one-hop
-authority, while the live-DM constants and selector/packet-completeness
-premises remain supplied rather than derived. Closing those remaining upstream
-rows is the path to a stronger chain; local rewriting of this note does not by
-itself close that gap.
+this conditional composition. The corrected 2026-06-07 section treats the
+64:1 channel prescription, live-DM constants and selector/packet-completeness
+premises as supplied rather than physically derived. Local rewriting or a
+textual scope check does not close those gaps.
 
 ## Scope of this rigorization
 

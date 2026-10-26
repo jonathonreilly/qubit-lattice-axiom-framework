@@ -5,6 +5,7 @@
 **Claim scope:** the standard Planck and Stefan–Boltzmann formulas follow for a supplied continuum gas of independent bosonic harmonic-oscillator modes, with two polarizations, dispersion omega=c|k|, zero chemical potential and a Gibbs state. This does not derive that photon model from the framework axioms.
 **Status authority:** independent audit lane only; no retention is asserted here.
 **Runner:** `scripts/axiom_first_stefan_boltzmann_check.py`
+**Cached output:** `logs/runner-cache/axiom_first_stefan_boltzmann_check.txt`
 **Historical log:** `outputs/axiom_first_stefan_boltzmann_check_2026-05-01.txt`
 
 ## Premises and scope
@@ -16,7 +17,9 @@ The calculation recovers a standard continuum result. It is not a new numerical 
 - A continuum three-dimensional momentum measure, two transverse polarizations and `omega=c|k|` at all frequencies in the continuum model.
 - For emitted power, an isotropic photon distribution with propagation speed c.
 
-The current [axiom memo](MINIMAL_AXIOMS_2026-06-29.md) supplies the spatial Z³ substrate, not these dynamics or physical photon identification. The cited [Lorentz note](EMERGENT_LORENTZ_INVARIANCE_NOTE.md) establishes a leading long-wavelength dispersion on its supplied free model, with lattice corrections. That leading term cannot justify extending an exact linear dispersion to infinite frequency on a finite-spacing lattice.
+The current [axiom memo](MINIMAL_AXIOMS_2026-06-29.md) supplies the spatial Z³ substrate, not these dynamics or physical photon identification. The cited [Lorentz note](EMERGENT_LORENTZ_INVARIANCE_NOTE.md) establishes a leading long-wavelength dispersion on its supplied free model, with lattice corrections. This is contextual free-symbol algebra, not inherited physical boost or Unruh covariance. That leading term cannot justify extending an exact linear dispersion to infinite frequency on a finite-spacing lattice.
+
+The current [spectrum-condition note](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md) gives a conditional finite positive-transfer construction; positivity does not establish the oscillator levels or Bose statistics supplied here. It is context, not a photon-sector premise.
 
 For a lattice realization, the continuum expression can serve as a leading low-temperature approximation only with matching low-energy mode content and control of the remaining bands and dispersion corrections. No error bound, finite-temperature correction or all-temperature lattice law is derived here. Exactness below belongs to the ideal continuum model.
 
@@ -80,7 +83,7 @@ bare_retained_allowed: false
 
 ## Historical accounting
 
-The dated records below preserve the earlier review and tier discussion. Their references to the earlier proof wording do not override the corrected supplied-model scope above.
+The dated records below preserve the earlier review and tier discussion. Every tier, admission, proof-composition and automatic-promotion statement below is a historical assertion, not a current claim. In particular, the old assertion that only tier wording changed is withdrawn: oscillator statistics, the continuum measure and all-frequency dispersion are supplied premises, not conclusions of the cited framework companions. No historical status table is refreshed or used as current authority.
 
 ## Citations
 

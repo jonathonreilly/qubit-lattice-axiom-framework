@@ -1,28 +1,6 @@
 #!/usr/bin/env python3
-"""Gate reflection-positivity re-grounds on the retained staggered-only Case A.
-
-The staggered-Dirac gate-closure synthesis cites the broad RP theorem
-`axiom_first_reflection_positivity_theorem_note_2026-04-29`, which is
-**audited_failed** -- but it failed only on the OVER-BROAD full-Wilson surface.
-Its staggered-only Case A is independently **retained**
-(`staggered_only_det_positivity_case_a_note_2026-05-17`):
-
-    for the staggered Dirac operator M_KS (anti-Hermitian, {eps, M_KS} = 0) and
-    real m > 0,   det(M_KS + m I) = prod_i (m^2 + sigma_i^2) > 0
-    for every unitary link configuration.
-
-Since the gate's fermionic realization IS the staggered sector (M_KS), the
-positivity it needs is exactly Case A -- retained -- not the failed broad
-Wilson surface. This discriminator reproduces Case A on a finite lattice with
-random SU(3) links and shows it is staggered-sector-only, so the synthesis's RP
-dependency can be re-grounded on the retained Case A row, removing the
-audited_failed broad RP theorem from the gate's load-bearing path.
-
-This runner verifies the determinant-positivity component of the retained
-staggered-only Case A reflection-positivity surface.
-
-Pure finite linear algebra. No PDG / fitted / scale input. Asserts no audit
-status. Does NOT repair the broad RP theorem; shows the gate does not need it.
+"""Finite staggered determinant diagnostics; no reflection-positivity inference.
+Includes zero singular values and a positive-weight counterexample to RP.
 """
 
 from __future__ import annotations
@@ -30,6 +8,8 @@ from __future__ import annotations
 import itertools
 
 import numpy as np
+
+AUDIT_TIMEOUT_SEC = 120
 
 rng = np.random.default_rng(0)
 TOL = 1.0e-9
@@ -105,7 +85,7 @@ def epsilon(idx, S):
 
 def main() -> int:
     print("=" * 76)
-    print("GATE RP RE-GROUNDS ON RETAINED STAGGERED-ONLY CASE A")
+    print("STAGGERED DETERMINANT POSITIVITY; RP REMAINS SEPARATE")
     print("=" * 76)
 
     M, idx, S = build_M_KS()
@@ -134,12 +114,16 @@ def main() -> int:
     check("eigenvalues come in +/- sigma pairs",
           np.allclose(sig, -sig[::-1], atol=1e-7))
     sign, logdet = np.linalg.slogdet(M + m_mass * np.eye(M.shape[0]))
-    check("det(M_KS + mI) > 0", sign.real > 0, detail=f"sign={sign.real:+.0f}")
-    # product form over positive sigma
-    pos = sorted(s for s in ev.imag if s > 1e-8)
-    logprod = sum(np.log(m_mass**2 + s**2) for s in pos)
-    check("det(M_KS + mI) = prod_i (m^2 + sigma_i^2) (over positive sigma)",
-          abs(logdet - logprod) < 1e-6, detail=f"dlog={abs(logdet - logprod):.1e}")
+    check("det(M_KS + mI) > 0", abs(sign-1)<1e-8, detail=f"sign={sign.real:+.0f}")
+    # SVD includes zero singular values, which contribute m^2.
+    parity=np.real(np.diag(eps))
+    K=M[np.ix_(parity>0,parity<0)]
+    singular=np.linalg.svd(K,compute_uv=False)
+    logprod=np.log(m_mass**2+singular**2).sum()
+    check("determinant SVD product including zero modes",abs(logdet-logprod)<1e-6)
+    Kzero=np.diag([0.,2.])
+    Mzero=np.block([[np.zeros((2,2)),Kzero],[-Kzero.T,np.zeros((2,2))]])
+    check("zero-mode fixture contributes m squared",np.isclose(np.linalg.det(m_mass*np.eye(4)+Mzero),m_mass**2*(m_mass**2+4)))
 
     print("\n" + "-" * 76)
     print("Robustness: det > 0 for several random SU(3) configurations")
@@ -148,32 +132,19 @@ def main() -> int:
     for t in range(5):
         M2, _, _ = build_M_KS()
         s2, _ = np.linalg.slogdet(M2 + m_mass * np.eye(M2.shape[0]))
-        allpos = allpos and s2.real > 0
+        allpos = allpos and abs(s2-1)<1e-8
     check("det(M_KS + mI) > 0 for all 5 random SU(3) configs", allpos)
 
     print("\n" + "=" * 76)
     print("VERDICT")
     print("=" * 76)
-    if FAIL == 0:
-        print(
-            "  GATE RP RE-GROUNDS ON THE RETAINED STAGGERED-ONLY CASE A.\n"
-            "  The staggered operator M_KS is anti-Hermitian and anticommutes with\n"
-            "  the chirality grading eps, so its eigenvalues are +/- i sigma pairs\n"
-            "  and det(M_KS + mI) = prod(m^2 + sigma^2) > 0 for every link config --\n"
-            "  the determinant-positivity component of the staggered-only Case A\n"
-            "  reflection-positivity surface. This is the retained Case A\n"
-            "  (staggered_only_det_positivity_case_a_note), independent of the\n"
-            "  Wilson term.\n\n"
-            "  Consequence: the gate-closure synthesis cites the broad RP theorem\n"
-            "  (axiom_first_reflection_positivity, AUDITED_FAILED on the over-broad\n"
-            "  full-Wilson surface). But the gate's fermionic realization is the\n"
-            "  staggered sector, whose RP need is exactly Case A -- RETAINED. So the\n"
-            "  synthesis's RP dependency re-grounds on the retained Case A, removing\n"
-            "  the audited_failed broad RP theorem from the gate's load-bearing path.\n\n"
-            "  Does NOT repair the broad RP theorem (the full-Wilson surface stays\n"
-            "  failed); shows the gate does not need it. Does NOT close the gate --\n"
-            "  the other unaudited axiom-first QFT rows remain.\n"
-        )
+    weights=np.array([[1.,2.],[2.,1.]])
+    spins=np.array([-1.,1.])
+    reflected_form=np.sum(weights*np.outer(spins,spins))/weights.sum()
+    check("strictly positive reflection-invariant weights can fail RP",
+          np.all(weights>0) and np.allclose(weights,weights.T) and np.isclose(reflected_form,-1/3),
+          detail=f"<Theta F F>={reflected_form}")
+    print("Determinant identities do not certify reflection positivity or gate closure.")
     print("=" * 76)
     if FAIL:
         print(f"PASS={PASS} FAIL={FAIL}")

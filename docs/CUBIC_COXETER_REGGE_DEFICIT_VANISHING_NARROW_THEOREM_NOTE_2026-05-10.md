@@ -51,7 +51,8 @@ to `Z^3`: every translate of `Q` by an integer vector is triangulated by
 the same scheme, yielding a global simplicial complex covering `R^3`.
 
 Each interior 1-simplex (edge) of `T(Z^3)` belongs to exactly one of
-**three classes** under the cubic symmetry group `O_h`:
+**three ambient cubic length classes** (the `O_h` classes of lattice
+directions; this does not assert full `O_h` invariance of the chosen complex):
 
 ```text
 (C_axis)   cube-axis edge,         e.g. (v_0, v_1),    L = 1;
@@ -208,10 +209,13 @@ n_6  =  (0, 1, 1) - (1)(0, 1, 0)    =  (0, 0, 1),
 `n_0 . n_6 = 0`, so `alpha_{T_1}(v_1, v_2) = pi / 2`.
 
 This proves `(T1)`. The five remaining tets `T_2, ..., T_6` are obtained
-from `T_1` by orientation-preserving rotations around the body-diagonal
-axis `(v_0, v_6)` by multiples of `pi / 3`, hence inherit the same
+from `T_1` by permutations of the three coordinate axes fixing the
+body-diagonal `(v_0, v_6)`. The even permutations are rotations by
+`0`, `2 pi / 3`, or `4 pi / 3`; the odd permutations are reflections.
+All six are Euclidean isometries, hence the tetrahedra inherit the same
 dihedral-angle table on the corresponding labelled edges. The runner
-verifies this by direct symbolic computation of all six tets' dihedrals.
+checks the full table for T_1 and the body-diagonal angle for all six tets;
+the isometry argument supplies the remaining corresponding angles.
 
 ### Proof of `(T2)` (per-edge-class deficit sum)
 
@@ -251,7 +255,7 @@ cubes (the four cubes meeting along that edge: `Q, Q + (0, -1, 0), Q +
 > sharing an interior axis edge the actual enumeration mix is two cubes
 > presenting the edge in **two** tets at `pi/4` and two cubes
 > presenting it in **one** tet at `pi/2` (or equivalent permutations
-> consistent with `O_h`-orbit constraints), yielding a finite
+> consistent with coordinate-permutation symmetry), yielding a finite
 > edge-star with **6** contributing tets rather than 8 (see the runner
 > printout below). The sum still equals `2 pi`:
 >
@@ -334,8 +338,12 @@ pairwise intersections having zero 3-volume. ∎
 - Does **not** claim the cubic-Coxeter triangulation is the unique
   simplicial subdivision of `Z^3`. Other triangulations exist (e.g.,
   Kuhn-style chain, Freudenthal six-tet on alternating diagonals); the
-  conclusion is stated for the canonical body-diagonal chain that
-  preserves the cubic-symmetry orbit class structure on `O_h`.
+  conclusion is stated for the chosen translation-periodic body-diagonal
+  chain. Its edge lengths belong to the ambient cubic `O_h` length classes,
+  but the triangulation itself is not invariant under all of `O_h`: a single
+  coordinate reflection sends its positive body diagonal to a missing diagonal.
+  Coordinate permutations, translations and simultaneous inversion preserve
+  this triangulation; full cubic symmetry is not needed for the flat metric.
 - Does **not** consume any external numerical target, literature numerical
   comparison, fitted selector, or unit-convention import.
 
@@ -435,18 +443,17 @@ verifies (PASS=N/0):
 7. An alternate axis-edge orientation (different position in the
    Coxeter chain) also gives `2 pi` (sympy exact), confirming the
    identity is independent of which axis-edge representative is chosen.
-8. The Regge action density `S_R(Omega) = sum_e L_e * theta_e = 0`
-   numerically over a `3 x 3 x 3` block of cubes, sampled across all
-   interior edges of all three classes (numerical verification matching
-   the symbolic identities).
-9. Non-cubic-symmetry counterexample: a deformed tetrahedron with
-   non-flat metric (one edge length perturbed from `1`) produces a
-   non-zero deficit, confirming that the zero-deficit identity uses the
-   flat Euclidean metric crucially. This rules out vacuous-true
-   readings.
-10. Parent row context (no ledger modification): print the parent
-    `DISCRETE_EINSTEIN_REGGE_LIFT_NOTE` audit state for cross-reference;
-    the narrow theorem is independent of any audit movement on the parent.
+8. Three central representative edge-stars (one axis, one face diagonal,
+   one body diagonal) in a `3 x 3 x 3` block have numerical dihedral
+   sums `2 pi`; their length-weighted deficit sum is numerically zero.
+   This is not enumeration of every interior edge in the block.
+9. Moving `v_2` to `(1, 1.2, 0)` in one Euclidean tetrahedron changes
+   its body-diagonal dihedral angle from `pi/3`. This is a single-angle
+   sensitivity control, not a compatible nonflat triangulated metric
+   or a computed nonzero Regge deficit around a complete edge-star.
+
+The runner does not read or print the parent audit state. Parent status
+is not an input to these geometry checks; no audit outcome is asserted.
 
 ## Cross-references
 

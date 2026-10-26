@@ -1,17 +1,10 @@
 #!/usr/bin/env python3
-"""Narrow comparison card for signed-source portability vs complex-action selectivity.
+"""Render a historical finite comparison table without recomputing its physics.
 
-This harness compares the retained families on the smallest useful review-safe
-surface:
-
-- exact zero / neutral signed-source controls where they apply
-- weak-field linearity / F~M where it was retained
-- gamma=0 baseline and TOWARD -> AWAY crossover where complex action is the
-  relevant observable
-
-The goal is not a universal theorem. It is to diagnose why signed-source
-transfer survives across multiple independent families while complex-action
-companions stay much more selective.
+All rows are supplied historical descriptions. Retention words in those rows
+are historical labels, not current audit judgments. The original grown-basin
+signed-source half-row is outside the paired note's narrowed comparison.
+No solver, causal ablation, physical verification or audit lookup is performed.
 """
 
 from __future__ import annotations
@@ -106,7 +99,8 @@ def render_markdown(rows: list[SelectivityRow]) -> str:
         "# Complex Selectivity Compare Note",
         "",
         "**Date:** 2026-04-06",
-        "**Status:** narrow comparison card for signed-source portability vs complex-action selectivity",
+        "**Status:** historical supplied-row rendering, not independent computation",
+        "Original grown-basin signed-source half-row is out of scope; retention labels below are historical.",
         "",
         "## Question",
         "",
@@ -124,21 +118,21 @@ def render_markdown(rows: list[SelectivityRow]) -> str:
     lines.extend(
         [
             "",
-            "## Safe Read",
+            "## Historical interpretation",
             "",
-            "- signed-source transfer is the portable feature: exact zero / neutral controls survive on several distinct structured families",
-            "- weak-field linearity survives with the signed-source package across the retained grown, alt, third, and fourth family slices",
-            "- complex action is more selective: it needs the exact gamma=0 anchor / crossover structure and fails cleanly on the alt family and the tightened second-family window",
+            "- historical table interpretation: signed-source transfer is the portable feature: exact zero / neutral controls survive on several distinct structured families",
+            "- historical table interpretation: weak-field linearity survives with the signed-source package across the retained grown, alt, third, and fourth family slices",
+            "- historical table interpretation: complex action is more selective: it needs the exact gamma=0 anchor / crossover structure and fails cleanly on the alt family and the tightened second-family window",
             "",
-            "## Exact Mismatch",
+            "## Comparison boundary",
             "",
             "- the signed-source families share a common control surface",
             "- the complex-action branch does not share that same surface; it lives on a more constrained gamma baseline plus crossover test",
             "- the result is not a universal family theorem; it is a selectivity split between portable sign-law and basin-local complex action",
             "",
-            "## Final Verdict",
+            "## Rendering scope",
             "",
-            "**retained selectivity split: signed-source is family-portable, while complex-action is anchor-local and boundary-sensitive**",
+            "**Historical finite-table rendering; source provenance and physical conclusions require separate verification.**",
         ]
     )
     return "\n".join(lines)
@@ -148,7 +142,8 @@ def render_text(rows: list[SelectivityRow]) -> str:
     lines = [
         "COMPLEX SELECTIVITY COMPARE NOTE",
         "Date: 2026-04-06",
-        "Status: narrow comparison card for signed-source portability vs complex-action selectivity",
+        "Status: historical supplied-row rendering, not independent computation",
+        "Original grown-basin signed-source half-row is out of scope; retention labels below are historical.",
         "",
         "Question:",
         "Why does signed-source transfer survive on multiple independent families while complex-action companions stay much more selective?",
@@ -167,13 +162,13 @@ def render_text(rows: list[SelectivityRow]) -> str:
     lines.extend(
         [
             "",
-            "Safe read:",
-            "- signed-source transfer is portable across several structured families",
-            "- complex action is constrained to a smaller anchor-local basin",
+            "Historical interpretation:",
+            "- historical table interpretation: signed-source transfer is portable across several structured families",
+            "- historical table interpretation: complex action is constrained to a smaller anchor-local basin",
             "- the comparison isolates a selectivity split rather than a universal identity",
             "",
-            "Final verdict:",
-            "retained selectivity split: signed-source is family-portable, while complex-action is anchor-local and boundary-sensitive",
+            "Rendering scope:",
+            "Historical finite-table rendering; source provenance and physical conclusions require separate verification.",
         ]
     )
     return "\n".join(lines)
@@ -188,9 +183,10 @@ def main() -> int:
     payload = {
         "rows": [row.__dict__ for row in ROWS],
         "summary": {
-            "signed_source_portable": True,
-            "complex_action_selective": True,
-            "shared_result": "portable sign-law with anchor-local complex-action selectivity",
+            "evidence_kind": "historical supplied-row rendering; no independent computation",
+            "original_grown_signed_source_in_scope": False,
+            "current_audit_status_checked": False,
+            "historical_interpretation": "portable sign-law with anchor-local complex-action selectivity",
         },
     }
 

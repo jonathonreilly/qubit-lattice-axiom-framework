@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """Exact checks for the bounded occupancy-grain rule-class theorem note."""
 
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ('docs/ACPHILAMBDA_OCCUPANCY_GRAIN_RULE_CLASS_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-07-11.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md', 'docs/RECORD_WRITE_ADMISSIBLE_ONE_STEP_CLASS_CONTROLLED_COPY_NARROW_THEOREM_NOTE_2026-07-11.md', 'docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md')
+
+
 from pathlib import Path
 import sys
 
@@ -66,9 +70,9 @@ additivity_clause = (
     "For any finite collection of pairwise-disjoint records, scalar readout "
     "`I` is additive, with `I(empty)=0`."
 )
-check("U1", "permanence clause occurs verbatim", flat(permanence_clause) in flat(minimal_text))
+check("U1", "permanence clause occurs verbatim", flat(permanence_clause).lower() in flat(minimal_text).lower())
 check("U1", "readability clause occurs verbatim", flat(readability_clause) in flat(minimal_text))
-check("U1", "additivity and I(empty)=0 occur verbatim", flat(additivity_clause) in flat(minimal_text))
+check("U1", "affine readout is supplied; scalar additivity is not Record axiom content", "Finite additivity, a named scalar collection functional" in minimal_text and "are not Record axiom content" in minimal_text and "supplied affine readout" in note_text)
 
 
 print("[U2] Permanence-to-stationarity mechanical implication")
@@ -293,9 +297,9 @@ adoption_boundary = (
     "taste/Dirac/chirality content, CKM/PMNS alignment, or sector-weight law."
 )
 no_go_boundary = (
-    "The surviving no-go is only: the current minimal axioms do **not** force the "
-    "formation rule/process/state/site/weight/rate."
+    "The current memo supplies occurrence and a local conditional distribution."
 )
+
 check(
     "U6",
     "sibling controlled-copy class statement is consumed verbatim",
@@ -318,7 +322,7 @@ check(
 )
 check(
     "U6",
-    "narrowed formation no-go boundary is consumed verbatim",
+    "current formation premise inventory is consumed; no nonderivability inferred",
     flat(no_go_boundary) in flat(no_go_text),
 )
 

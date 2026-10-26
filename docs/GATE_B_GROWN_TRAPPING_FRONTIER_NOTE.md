@@ -1,12 +1,14 @@
 # Gate B Grown Trapping Frontier Note
 
+**Type:** bounded_theorem
+
 **Date:** 2026-04-05  
 **Status:** proposed_retained-grown-family trapping/frontier probe, frozen as a bounded positive on the moderate-drift row
 
 ## Artifact chain
 
-- [`scripts/gate_b_grown_trapping_frontier_probe.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_grown_trapping_frontier_probe.py)
-- [`logs/2026-04-05-gate-b-grown-trapping-frontier-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-grown-trapping-frontier-probe.txt)
+- [`scripts/gate_b_grown_trapping_frontier_probe.py`](../scripts/gate_b_grown_trapping_frontier_probe.py)
+- `logs/2026-04-05-gate-b-grown-trapping-frontier-probe.txt` (historical local citation; target unavailable at `logs/2026-04-05-gate-b-grown-trapping-frontier-probe.txt`; original location `/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-grown-trapping-frontier-probe.txt`; no substitute authority supplied)
 
 ## Question
 

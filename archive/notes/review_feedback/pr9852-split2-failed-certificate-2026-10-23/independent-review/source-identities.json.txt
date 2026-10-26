@@ -1,0 +1,11 @@
+{
+  "commit": "26878429adf81e855c90d1f2e3466b85ede2cc62",
+  "files": {
+    "docs/DM_SPLIT2_INTERVAL_CERTIFIED_DOMINANCE_CLOSURE_THEOREM_NOTE_2026-04-21.md": "f449f29883d9364321ff7b4ccdfca8e6d0e4e48c67db8aa4a63f3bcdee234218",
+    "scripts/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.py": "d3b97172bb66372369e12701b22d879f56549ece2a878e7f208c4a5409037def",
+    "scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py": "f40f1b4dc97dd11cb68b3cdf614cece78ebdb89778b3f24d3bdb59a97a1746c2",
+    "scripts/frontier_dm_neutrino_source_surface_active_affine_point_selection_boundary.py": "09dac7696be306d36073b01186ca238cd03cacaec9193808dae06cc3b1cd080a",
+    "scripts/frontier_dm_neutrino_source_surface_active_half_plane_theorem.py": "f539b4aa3f6da7cc83bb653316a9e98981f89f23cec7cdc00a40a0d98ec33612",
+    "scripts/frontier_dm_neutrino_source_surface_split2_upper_face_local_neighborhoods_candidate.py": "4b413c5b99dbd172937b2b5e27192496e07a08e22ad1a66f224ddaf01f0d1b72"
+  }
+}

@@ -1,0 +1,176 @@
+===== runner cache v1 =====
+runner: scripts/supplied_three_sector_pair_flow_and_loop_identities_2026_10_24.py
+runner_sha256: ead662de643991d1bc1e4adace1af4b8f82d6d5d9423c5ae5861212d52f0c5f4
+input_fingerprint_sha256: 2a76b500ba217a3ea9d6f5a01842918fde477519a0f7191511bae2e7c1e8e047
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.02
+status: ok
+----- stdout -----
+[PASS] pair table 0,0
+[PASS] supplied charge congruence 0,0; N=0
+[PASS] supplied component congruence 0,0; N=0
+[PASS] supplied charge congruence 0,0; N=1
+[PASS] supplied component congruence 0,0; N=1
+[PASS] supplied charge congruence 0,0; N=2
+[PASS] supplied component congruence 0,0; N=2
+[PASS] supplied charge congruence 0,0; N=3
+[PASS] supplied component congruence 0,0; N=3
+[PASS] supplied charge congruence 0,0; N=6
+[PASS] supplied component congruence 0,0; N=6
+[PASS] pair table 0,1
+[PASS] supplied charge congruence 0,1; N=0
+[PASS] supplied component congruence 0,1; N=0
+[PASS] supplied charge congruence 0,1; N=1
+[PASS] supplied component congruence 0,1; N=1
+[PASS] supplied charge congruence 0,1; N=2
+[PASS] supplied component congruence 0,1; N=2
+[PASS] supplied charge congruence 0,1; N=3
+[PASS] supplied component congruence 0,1; N=3
+[PASS] supplied charge congruence 0,1; N=6
+[PASS] supplied component congruence 0,1; N=6
+[PASS] pair table 0,2
+[PASS] supplied charge congruence 0,2; N=0
+[PASS] supplied component congruence 0,2; N=0
+[PASS] supplied charge congruence 0,2; N=1
+[PASS] supplied component congruence 0,2; N=1
+[PASS] supplied charge congruence 0,2; N=2
+[PASS] supplied component congruence 0,2; N=2
+[PASS] supplied charge congruence 0,2; N=3
+[PASS] supplied component congruence 0,2; N=3
+[PASS] supplied charge congruence 0,2; N=6
+[PASS] supplied component congruence 0,2; N=6
+[PASS] pair table 1,0
+[PASS] supplied charge congruence 1,0; N=0
+[PASS] supplied component congruence 1,0; N=0
+[PASS] supplied charge congruence 1,0; N=1
+[PASS] supplied component congruence 1,0; N=1
+[PASS] supplied charge congruence 1,0; N=2
+[PASS] supplied component congruence 1,0; N=2
+[PASS] supplied charge congruence 1,0; N=3
+[PASS] supplied component congruence 1,0; N=3
+[PASS] supplied charge congruence 1,0; N=6
+[PASS] supplied component congruence 1,0; N=6
+[PASS] pair table 1,1
+[PASS] supplied charge congruence 1,1; N=0
+[PASS] supplied component congruence 1,1; N=0
+[PASS] supplied charge congruence 1,1; N=1
+[PASS] supplied component congruence 1,1; N=1
+[PASS] supplied charge congruence 1,1; N=2
+[PASS] supplied component congruence 1,1; N=2
+[PASS] supplied charge congruence 1,1; N=3
+[PASS] supplied component congruence 1,1; N=3
+[PASS] supplied charge congruence 1,1; N=6
+[PASS] supplied component congruence 1,1; N=6
+[PASS] pair table 1,2
+[PASS] supplied charge congruence 1,2; N=0
+[PASS] supplied component congruence 1,2; N=0
+[PASS] supplied charge congruence 1,2; N=1
+[PASS] supplied component congruence 1,2; N=1
+[PASS] supplied charge congruence 1,2; N=2
+[PASS] supplied component congruence 1,2; N=2
+[PASS] supplied charge congruence 1,2; N=3
+[PASS] supplied component congruence 1,2; N=3
+[PASS] supplied charge congruence 1,2; N=6
+[PASS] supplied component congruence 1,2; N=6
+[PASS] pair table 2,0
+[PASS] supplied charge congruence 2,0; N=0
+[PASS] supplied component congruence 2,0; N=0
+[PASS] supplied charge congruence 2,0; N=1
+[PASS] supplied component congruence 2,0; N=1
+[PASS] supplied charge congruence 2,0; N=2
+[PASS] supplied component congruence 2,0; N=2
+[PASS] supplied charge congruence 2,0; N=3
+[PASS] supplied component congruence 2,0; N=3
+[PASS] supplied charge congruence 2,0; N=6
+[PASS] supplied component congruence 2,0; N=6
+[PASS] pair table 2,1
+[PASS] supplied charge congruence 2,1; N=0
+[PASS] supplied component congruence 2,1; N=0
+[PASS] supplied charge congruence 2,1; N=1
+[PASS] supplied component congruence 2,1; N=1
+[PASS] supplied charge congruence 2,1; N=2
+[PASS] supplied component congruence 2,1; N=2
+[PASS] supplied charge congruence 2,1; N=3
+[PASS] supplied component congruence 2,1; N=3
+[PASS] supplied charge congruence 2,1; N=6
+[PASS] supplied component congruence 2,1; N=6
+[PASS] pair table 2,2
+[PASS] supplied charge congruence 2,2; N=0
+[PASS] supplied component congruence 2,2; N=0
+[PASS] supplied charge congruence 2,2; N=1
+[PASS] supplied component congruence 2,2; N=1
+[PASS] supplied charge congruence 2,2; N=2
+[PASS] supplied component congruence 2,2; N=2
+[PASS] supplied charge congruence 2,2; N=3
+[PASS] supplied component congruence 2,2; N=3
+[PASS] supplied charge congruence 2,2; N=6
+[PASS] supplied component congruence 2,2; N=6
+[PASS] primitive supplied normalization
+[PASS] all-nonzero even multiple
+[PASS] all-nonzero zero-residue multiple
+[PASS] tripled vector admits every tested N
+[PASS] primitive admits both three and six
+[PASS] heterogeneous cancellation
+[PASS] mutation: doubled normalization rejected
+[PASS] mutation: nonzero alone congruence rejected
+[PASS] monomial product exponent -3,2
+[PASS] monomial adjoint/conjugate/orientation -3
+[PASS] double orientation restores exponent -3
+[PASS] monomial product exponent 0,0
+[PASS] monomial adjoint/conjugate/orientation 0
+[PASS] double orientation restores exponent 0
+[PASS] monomial product exponent 1,-1
+[PASS] monomial adjoint/conjugate/orientation 1
+[PASS] double orientation restores exponent 1
+[PASS] monomial product exponent 7,4
+[PASS] monomial adjoint/conjugate/orientation 7
+[PASS] double orientation restores exponent 7
+[PASS] constructive supplied signed relation
+[PASS] unitary chiral exponent equation
+[PASS] unitary axis-reversal exponent equation
+[PASS] antiunitary Floquet exponent equation
+[PASS] mutation: missing transformation minus rejected
+[PASS] mutation: changed loop exponent rejected
+[PASS] literal sector convention False,0,-1,0
+[PASS] literal sector convention False,0,-1,1
+[PASS] literal sector convention False,0,-1,2
+[PASS] literal sector convention False,0,1,0
+[PASS] literal sector convention False,0,1,1
+[PASS] literal sector convention False,0,1,2
+[PASS] literal sector convention False,1,-1,0
+[PASS] literal sector convention False,1,-1,1
+[PASS] literal sector convention False,1,-1,2
+[PASS] literal sector convention False,1,1,0
+[PASS] literal sector convention False,1,1,1
+[PASS] literal sector convention False,1,1,2
+[PASS] literal sector convention False,2,-1,0
+[PASS] literal sector convention False,2,-1,1
+[PASS] literal sector convention False,2,-1,2
+[PASS] literal sector convention False,2,1,0
+[PASS] literal sector convention False,2,1,1
+[PASS] literal sector convention False,2,1,2
+[PASS] literal sector convention True,0,-1,0
+[PASS] literal sector convention True,0,-1,1
+[PASS] literal sector convention True,0,-1,2
+[PASS] literal sector convention True,0,1,0
+[PASS] literal sector convention True,0,1,1
+[PASS] literal sector convention True,0,1,2
+[PASS] literal sector convention True,1,-1,0
+[PASS] literal sector convention True,1,-1,1
+[PASS] literal sector convention True,1,-1,2
+[PASS] literal sector convention True,1,1,0
+[PASS] literal sector convention True,1,1,1
+[PASS] literal sector convention True,1,1,2
+[PASS] literal sector convention True,2,-1,0
+[PASS] literal sector convention True,2,-1,1
+[PASS] literal sector convention True,2,-1,2
+[PASS] literal sector convention True,2,1,0
+[PASS] literal sector convention True,2,1,1
+[PASS] literal sector convention True,2,1,2
+[PASS] mutation: wrong fixed-c sector map rejected
+[INFO] Exact supplied fixtures; no static exclusion, physical symmetry or family-selection result.
+TOTAL: PASS = 162, FAIL = 0
+
+----- stderr -----
+

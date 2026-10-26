@@ -1,15 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_sigma_hier_h_intrinsic_no_go_theorem_2026_04_20.py
-runner_sha256: 80b8678ae0bdbd199c38d71197bb2fa8aacec4dc93822489a3fc3b95fb1254ea
+runner_sha256: 64791a0f10e31823a728f709e2229cffa6957759690b33d61fa76eaf348ce429
+input_fingerprint_sha256: 51fdc4d7c504b135091c02063fe75664ecb9975bea065bcd67797193f970dd0e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
-=== Part 1: surviving pair at the pin ===
+=== Part 1: supplied pair at the pin ===
 [PASS] sigma=(2,0,1) passes all 9 magnitude bands
 [PASS] sigma=(2,1,0) passes all 9 magnitude bands
-[PASS] The two surviving PMNS candidates differ only by the mu<->tau row swap
+[PASS] The two supplied row-labeled candidates differ only by the mu<->tau row swap
 
 === Part 2: H-intrinsic data is permutation-blind ===
 [PASS] trace(H_pin) is fixed independently of sigma_hier
@@ -19,15 +20,22 @@ status: ok
 
 === Part 3: mu<->tau-even PMNS data is blind, CP sign is not ===
 [PASS] mu<->tau-even magnitude data (unordered row multiset) is identical
-[PASS] The row-labeled magnitude matrices are not identical, so the no-go is not overclaimed
-[PASS] The Jarlskog sign flips across the surviving pair
-[PASS] The two surviving values are numerically +/-0.987  (sin+=+0.9873607592, sin-=-0.9873607592)
+[PASS] The row-labeled magnitude matrices are not identical, so the conditional scope is explicit
+[PASS] The Jarlskog sign flips across the supplied pair
+[PASS] The two supplied values are numerically +/-0.987  (sin+=+0.9873607592, sin-=-0.9873607592)
+
+=== Part 4: finite execution coverage — no global or physical certificate ===
+per_element: checked — the supplied pair is qualified element by element, not by a pooled norm: count_passes(|P|) tests all 9 individual PMNS magnitude bands separately for each of sigma=(2,0,1) and sigma=(2,1,0), and the row-labeled magnitude matrices are then compared entrywise at atol 1e-12 to show they do differ, which is what keeps the no-go from being overclaimed.
+per_site: checked and not executed — no lattice site index exists in this computation. Everything is read off one pinned 3x3 Hermitian H_pin at (m_*, delta_*, q_+*) = (0.657061, 0.933806, 0.715042), whose three rows are charged-lepton flavor labels; the supplied labeling comparison is a labeling question at a single point, so there is no site to resolve.
+per_mode: checked — the three eigenmodes of H_pin are extracted in ascending eigenvalue order via argsort and the spectrum is confirmed common to both sigma choices, together with trace(H_pin), trace(H_pin^2) and det(H_pin). That per-mode identity is exactly why an H-intrinsic selector is blind: the modes do not differ, only their assignment to flavor rows does.
+per_block: checked — the mu<->tau swap is block-resolved: it fixes the electron row and acts only inside the 2x2 mu-tau doublet block, and the runner verifies P_+ = S_(mu tau) P_- to atol 1e-12. The computed sin(delta_CP) sign flip between +/-0.9873607592 is produced entirely by that one doublet-block transposition.
+lattice_wide: checked and not executed — there is no lattice, extent, or asymptotic limit here. The evidence is floating numerical illustration at the single supplied chamber point above; no volume scaling or continuum statement is attempted, and no physical or exhaustive obstruction is inferred from that one pin.
 
 Interpretation:
-  The surviving sigma_hier ambiguity is not an ambiguity of H_pin.
-  It is the residual mu<->tau flavor-label ambiguity after
+  The compared labels use the same supplied H_pin.
+  The comparison is a mu<->tau row-label swap after
   diagonalization. Any selector family living only on H_pin, or any
-  mu<->tau-even PMNS scalar family, is blind to it.
+  explicitly mu<->tau-even scalar family, has equal values under these premises.
 
 PASS=11 FAIL=0
 

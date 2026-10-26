@@ -1,162 +1,91 @@
-# DM `sigma_hier` H-Intrinsic No-Go Theorem
+# Conditional fixed-H and row-swap invariance
 
-**Date:** 2026-04-20  
-**Lane:** DM A-BCC sigma-chain / open import `I12`  
-**Status:** no-go theorem for a named derivation family. Any `H`-intrinsic or
-`mu <-> tau`-even selector family is blind to the surviving
-`sigma_hier` ambiguity at the physical chamber pin.  
-**Primary runner:**
-`scripts/frontier_dm_sigma_hier_h_intrinsic_no_go_theorem_2026_04_20.py`
+**Date:** 2026-04-20
+**Type:** bounded_theorem
+**Status:** conditional invariance identities with finite supplied-pin illustrations;
+physical source and row selection remain open
+**Primary runner:** `scripts/frontier_dm_sigma_hier_h_intrinsic_no_go_theorem_2026_04_20.py`
 
----
+The historical no-go filename is retained for recovery. The current owner is
+only the conditional invariance argument below; it does not exhaust physical
+selector routes or establish a globally complete pair of alternatives.
 
-## 0. Question
+## Premises and statement
 
-After the chamber pin is fixed, can the remaining permutation ambiguity
-
-```text
-sigma_hier in {(2,0,1), (2,1,0)}
-```
-
-be closed by a law that lives entirely on the pinned Hermitian `H_pin`, or on
-`mu <-> tau`-even scalar data built from the PMNS matrix?
-
-## 1. Bottom line
-
-No.
-
-At the pinned chamber point, the eigenvector matrix `V` of `H_pin` is fixed.
-The two observationally surviving PMNS candidates are
+Fix a Hermitian 3×3 matrix H and a chosen unitary eigenbasis V, with a fixed
+column ordering. A simple spectrum suffices for the ascending-column labeling
+used by the numerical illustration; the invariance itself only requires the
+same chosen V in both comparisons. Define
 
 ```text
-P_+ = P_(2,0,1) = S_(mu tau) P_-
-P_- = P_(2,1,0),
+P_minus = V[[2,1,0],:]
+P_plus  = V[[2,0,1],:]
+S = [[1,0,0],[0,0,1],[0,1,0]].
 ```
 
-where `S_(mu tau)` is the `mu <-> tau` row swap.
+Then P_plus = S P_minus. This fixes the electron row and swaps the muon and
+tau rows, not the eigenmode columns. H itself is identical in both constructions.
 
-This means:
+For any well-defined function f of H alone, the two constructions have the
+same value f(H). For any function F of the row-labeled matrix that satisfies
+F(SP)=F(P) on the compared matrices, F(P_plus)=F(P_minus). These are equal-input
+and stipulated symmetry identities. They do not establish that an arbitrary
+physical selector has either restriction. A selector with extra label data
+is outside these hypotheses.
 
-1. both candidates come from the **same** pinned Hermitian `H_pin`;
-2. any selector family built only from `H_pin` itself is automatically blind
-   to the choice between them;
-3. any `mu <-> tau`-even scalar family on the PMNS matrix is also blind to the
-   choice, because the two candidates differ only by that row swap;
-4. the Jarlskog sign flips:
+## Proof and limits
 
-```text
-sin(delta_CP)(2,0,1) = - sin(delta_CP)(2,1,0).
-```
+Direct indexing gives P_plus = S P_minus. Since H is held fixed, applying the
+same function f gives the same value. Substitution of P=P_minus in the assumed
+identity F(SP)=F(P) gives the second equality. No chamber-completeness,
+observational-fit, threshold, asymptotic or physical-source premise is needed.
 
-So the first missing ingredient is not another `H`-intrinsic scalar. It is a
-**flavor-orienting law**: something `mu <-> tau`-odd, equivalently a genuinely
-oriented CP/f flavor selector.
+The labeled modulus matrices are row-permuted and need not be equal. Their
+unordered row multisets agree. Thus this statement must not be extended to
+all functions of the labeled modulus matrix.
 
-## 2. Theorem
+With the Jarlskog convention
+J(P)=Im(P_e1 conj(P_e2) conj(P_mu1) P_mu2), unitarity gives
+J(SP)=-J(P). Indeed, writing z_r=P_r1 conj(P_r2), column orthogonality gives
+z_e+z_mu+z_tau=0, and Im(z_e conj(z_tau))=-Im(z_e conj(z_mu)).
+A nonzero J therefore has opposite signs under the swap. A corresponding
+sin(delta_CP) sign statement additionally requires the same angle convention
+with positive nonzero normalization s12*c12*s23*c23*s13*c13²; degenerate
+angle boundaries do not define such a phase. These premises and identity
+match the independently checked conditional row-swap argument of the finite
+[upper-octant diagnostic](DM_PMNS_UPPER_OCTANT_SOURCE_CUBIC_SELECTOR_THEOREM_NOTE_2026-04-20.md).
+No physical preference for either row labeling follows.
 
-**Theorem (`H`-intrinsic / `mu <-> tau`-even no-go for `sigma_hier`).** Let
-`H_pin` be the pinned chamber Hermitian at
+## Actual finite illustration
 
-```text
-(m_*, delta_*, q_+*) = (0.657061, 0.933806, 0.715042),
-```
+The unchanged numerical functions import the supplied matrix and rounded pin
+(m,delta,q)=(0.657061,0.933806,0.715042), magnitude bands, and phase convention
+from `scripts/frontier_sigma_hier_uniqueness_theorem.py`. The target bands and
+pin are supplied data, not a physical derivation. The runner checks the two
+specified row permutations against all nine bands; it does not enumerate all
+six permutations or prove that no other source/label fits. It compares the row
+swap, fixed-H trace/spectrum/determinant identities, unordered row moduli,
+distinct labeled moduli, and computed phase values near ±0.9873607592.
+All eleven predicates, tolerances and supplied constants are unchanged.
+Several fixed-input equalities are self-comparisons: their PASS is an
+illustration, not an independent proof of the general statement above.
 
-and let `V` be its eigenvector matrix in ascending eigenvalue order. Define
+The old physical-pin/global-selector/no-go interpretation is withdrawn from
+this owner. I12, physical source provenance, flavor labeling and complete
+alternative-route coverage remain open. This withdrawal does not refute
+unverified upstream proofs.
 
-```text
-P_(sigma) := rowperm_sigma(V).
-```
+## Recovery and context
 
-Then:
+The complete old argument, dependency section, runner and cache remain
+recoverable at `4a12013c6f4bfe6b71a07fe8c557d34fb3f17e9a` and in repair evidence.
+The [chamber diagnostic](DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_THEOREM_NOTE_2026-04-20.md)
+and [parity diagnostic](DM_PMNS_CP_ORIENTATION_PARITY_REDUCTION_NOTE_2026-04-20.md)
+are context only; no complete chamber census or physical selector is imported.
+The historical hygiene snapshot is not a current receipt or verdict authority.
 
-1. exactly two permutations survive the magnitude filter:
-   `sigma = (2,0,1)` and `sigma = (2,1,0)`;
-2. they satisfy
-   `P_(2,0,1) = S_(mu tau) P_(2,1,0)`;
-3. both are generated from the same `H_pin`, so every `H`-intrinsic scalar law
-   takes the same value on both;
-4. every `mu <-> tau`-even scalar functional of the PMNS matrix also takes the
-   same value on both;
-5. but their Jarlskog signs are opposite.
+## Reproduction
 
-Therefore no selector family living entirely on `H_pin`, or on
-`mu <-> tau`-even scalar PMNS data, can determine `sigma_hier`. Any genuine
-closure of `I12` must add a flavor-orienting law that is odd under the
-surviving row transposition.
-
-### Proof
-
-The surviving pair is already known from the `sigma_hier` uniqueness runner:
-they are the only two permutations with all `9/9` PMNS magnitudes inside the
-NuFit bands at the pin.
-
-Their relation is immediate:
-
-```text
-(2,0,1) = (23) o (2,1,0),
-```
-
-so the corresponding PMNS matrices differ only by the `mu <-> tau` row swap.
-This transposition is applied **after** diagonalizing the same `H_pin`; it is a
-flavor-label ambiguity, not a new Hermitian point.
-
-Hence every scalar of `H_pin` is identical on the two branches, because
-`H_pin` itself is identical. Likewise any PMNS scalar `F(P)` satisfying
-`F(S_(mu tau) P) = F(P)` is identical on the two branches.
-
-But the Jarlskog invariant changes sign under a single row swap, so the two
-branches carry opposite `sin(delta_CP)`.
-
-Therefore an `H`-intrinsic or `mu <-> tau`-even family cannot choose between
-them. QED.
-
-## 3. Consequence for the open import
-
-This does not close `I12` outright. It closes a family of candidate routes:
-
-- no additional scalar of `H_pin` can fix `sigma_hier`;
-- no `mu <-> tau`-even PMNS scalar can fix `sigma_hier`.
-
-So the first law that could honestly close `I12` has to be one of:
-
-- a flavored CP-odd orientation law,
-- a charged-lepton labeling law that is not `H`-intrinsic,
-- or a retained `mu <-> tau`-odd structure outside the current scalar bank.
-
-That is the exact remaining target.
-
-## 4. Scope
-
-What is ruled out:
-
-- `H`-intrinsic selector families;
-- `mu <-> tau`-even scalar PMNS families.
-
-What is not ruled out:
-
-- a genuine flavor-orienting law;
-- a CP-odd selector tied to charged-lepton labeling rather than to `H` alone.
-
-## 5. Reproduction
-
-```bash
-PYTHONPATH=scripts python3 scripts/frontier_dm_sigma_hier_h_intrinsic_no_go_theorem_2026_04_20.py
-```
-
-Expected final line:
-
-```text
-PASS=11 FAIL=0
-```
-
-## Audit dependency repair links
-
-This graph-bookkeeping section records explicit dependency links for
-the upstream sigma_hier uniqueness authority and related chamber-pin /
-selector authorities consumed by the no-go construction. It does not
-promote this note or change the audited claim scope.
-
-- [SIGMA_HIER_UNIQUENESS_THEOREM_NOTE_2026-04-19.md](SIGMA_HIER_UNIQUENESS_THEOREM_NOTE_2026-04-19.md) — sigma_hier uniqueness theorem identifying `sigma_hier in {(2, 0, 1), (2, 1, 0)}` as the two surviving permutations under the chamber-pin selector.
-- [DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_THEOREM_NOTE_2026-04-20.md](DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_THEOREM_NOTE_2026-04-20.md) — chamber-completeness authority for the `chi^2 = 0` chamber root set and the pinned Hermitian `H_pin` construction.
-- [DM_PMNS_CP_ORIENTATION_PARITY_REDUCTION_NOTE_2026-04-20.md](DM_PMNS_CP_ORIENTATION_PARITY_REDUCTION_NOTE_2026-04-20.md) — supplies the `mu <-> tau` row-swap parity-reduction that produces `sin(delta_CP)(2, 0, 1) = - sin(delta_CP)(2, 1, 0)`.
-- [DM_SIGMA_HIER_UPPER_OCTANT_SELECTOR_THEOREM_NOTE_2026-04-20.md](DM_SIGMA_HIER_UPPER_OCTANT_SELECTOR_THEOREM_NOTE_2026-04-20.md) — upper-octant selector theorem providing the genuinely-`mu <-> tau`-odd flavor-orienting law (`sin^2 theta_23 > 1/2`) that closes the no-go's residual flavor ambiguity.
+Run `PYTHONPATH=scripts python3 scripts/frontier_dm_sigma_hier_h_intrinsic_no_go_theorem_2026_04_20.py`
+under its declared 120-second bound. Fresh execution is pending source review;
+no old cache is represented as current after this repair.

@@ -1,4 +1,15 @@
 {
+  "evidence_scope": {
+    "classification": "conditional_supplied_historical_scenario_diagnostic",
+    "wilson_coefficients": "Supplied rational/fit targets; exact coefficient proof and asymptotic remainder unresolved.",
+    "ensemble_provenance": "Historical summary inputs; raw ensembles and Hamilton-limit provenance not recovered here.",
+    "transfer_rule": "Single-plaquette correction applied by supplied scenario rule; multiplaquette observable transfer unproved.",
+    "quadrature": "Finite numerical quadrature and refits, not certified continuum or physical error bounds.",
+    "numeric_keys": "Legacy numeric keys, targets and predicates retained for comparison; truth/exact/limit/budget names do not certify physical claims.",
+    "physical_epsilon_witness_established": false,
+    "hamilton_limit_convergence_established": false,
+    "causal_multiplaquette_obstruction_established": false
+  },
   "args": {
     "mode": "all",
     "out_dir": "outputs/action_first_principles_2026_05_10/c_iso_su3_nnlo_closure",
@@ -422,5 +433,5 @@
     "stat_vol_floor": 0.0006324555320336758,
     "epsilon_witness_target": 0.0003
   },
-  "wall_time_s": 0.22150325775146484
+  "wall_time_s": 0.14082813262939453
 }

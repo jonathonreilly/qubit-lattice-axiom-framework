@@ -1,11 +1,10 @@
 # Lane 1 `sqrt(sigma)` B5 Framework-Link Audit
 
 **Date:** 2026-04-30
-**Status:** support / current-surface no-go; no theorem or claim
-promotion. This note audits whether the current repo surface closes the
-`(B5)` bridge that allows standard lattice-QCD static-energy and
-string-tension values to be imported into the framework `SU(3)` gauge
-sector.
+**Type:** open_gate
+**Status:** open bridge and supplied finite checklist; no theorem or audit-status promotion.
+This note records model conditions needed before importing standard lattice-QCD
+static-energy and string-tension values into a framework SU(3) carrier.
 **Script:** `scripts/frontier_hadron_lane1_sqrt_sigma_b5_framework_link_audit.py`
 **Lane:** 1 - Hadron mass program, route 3E `sqrt(sigma)` retained
 promotion.
@@ -19,7 +18,8 @@ The current surface does **not close B5**.
 It has meaningful structural support:
 
 - graph-first `SU(3)` integration on the selected-axis surface;
-- `g_bare = 1 -> beta = 6` on the accepted Wilson-plaquette action;
+- `beta = 2 N_c / g^2` on a supplied Wilson action and kinetic convention;
+  `beta = 6` additionally supplies `g^2 = 1`;
 - canonical plaquette constants;
 - a small-volume `4^4` pure-gauge consistency check.
 
@@ -41,7 +41,7 @@ remain standard lattice-QCD bridge inputs.
 | Component | Current status | B5 role |
 |---|---|---|
 | `GRAPH_FIRST_SU3_INTEGRATION_NOTE.md` | structural `SU(3)` support | gives the compact semisimple color algebra |
-| `G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md` | conditional closure; Wilson action form imported | fixes coefficient once Wilson action is accepted |
+| `G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md` | conditional coefficient relation; physical coupling open | beta=2Nc/g², with g² separately supplied |
 | `canonical_plaquette_surface.py` | stores canonical beta=6 plaquette constants | evaluated surface, not volume-scaling proof |
 | `CONFINEMENT_STRING_TENSION_NOTE.md` | bounded consistency story | imports standard `r0/a`, `sigma a^2`, and screening |
 | `frontier_confinement_string_tension.py` | small-volume check plus bridge arithmetic | `L=4`, not asymptotic string-tension extraction |
@@ -62,15 +62,14 @@ The graph-first theorem closes the algebraic color-sector objection, but
 it does not measure Wilson loops, Creutz ratios, force scales, or
 static-energy correlators on the framework substrate.
 
-### 2.2 `g_bare = 1 -> beta = 6` still assumes Wilson action form
+### 2.2 Wilson action form and physical coupling are separate inputs
 
-The `g_bare` structural-normalization note is explicit: given the
-standard Wilson plaquette action, the coefficient is forced. The action
-form itself is an accepted kinetic ansatz, not derived uniquely from
-`Cl(3)`.
-
-This is not a defect in that theorem. It is exactly the residual B5 must
-declare or reduce.
+The corrected normalization note derives beta=2 N_c/g² only on a supplied
+Wilson action and kinetic convention. Fixing the generator trace Gram excludes
+a scalar dilation of that basis, but leaves a residual action coefficient
+rho=g². Neither that basis nor accepting the Wilson form selects rho=1.
+Thus beta=6 is an additional evaluation choice for SU(3), not a derived physical
+coupling. Both action form and coupling realization remain inputs to B5.
 
 ### 2.3 The current Monte Carlo check is too small
 
@@ -100,8 +99,11 @@ they apply to this framework substrate beyond structural identification.
 | graph-first `SU(3)` + `g_bare` normalization | no | no | no | yes | no | no |
 | future Creutz/force-scale ladder | yes | yes | yes | yes | yes | yes |
 
-So this block records a current-surface no-go, not a route failure in
-principle.
+These supplied Boolean labels describe two present candidates and one target.
+A conjunction of five chosen fields is a checklist, not a sufficient-condition
+theorem for physical equivalence. Failure of the two present entries does not
+exclude other routes; satisfying the future entry would require independent
+validation of the actual measurements, uncertainty and physical identification.
 
 ## 4. Future Large-Volume Ladder
 
@@ -125,7 +127,7 @@ the B5 uncertainty can be declared honestly or remains compute-blocked.
 
 ## 5. Claim-State Movement
 
-Cycle 3 moves the lane by closing one possible shortcut:
+The finite checklist records an open bridge:
 
 ```text
 structural SU(3) + beta=6 + 4^4 check
@@ -134,7 +136,7 @@ structural SU(3) + beta=6 + 4^4 check
 
 Safe statement:
 
-> B5 is structurally supported but not retained. Current framework-side
+> B5 remains open in this source proposal. Current framework-side
 > evidence is small-volume consistency; imported static-energy and
 > string-tension constants must remain bounded bridge inputs until a
 > large-volume Wilson/Creutz/force-scale ladder or equivalent theorem
@@ -149,7 +151,7 @@ PYTHONPATH=scripts python3 scripts/frontier_hadron_lane1_sqrt_sigma_b5_framework
 Expected result:
 
 ```text
-PASS=16 FAIL=0
+PASS=14 FAIL=0
 ```
 
 ## 7. Next Exact Action
@@ -157,3 +159,13 @@ PASS=16 FAIL=0
 Run a local B5 scout ladder on `L = 4, 6, 8` if runtime permits, or land a
 compute-budget note proving that `L >= 12-16` is required before B5 can
 be materially tightened.
+
+## Consumer repair record
+
+PR9839 corrected the source supplying the coefficient relation. This consumer
+now preserves its open physical coupling rather than attributing a forced value
+to it. The runner checks text consistency and supplied finite gate bits only;
+no ensemble, large-volume extrapolation or physical bridge proof is executed.
+Exact prior consumer source/cache are preserved in
+`docs/work_history/PR9839_original_recovery/manifest.json`. Current or historical
+PASS counts do not confer an audit verdict or retained scientific status.

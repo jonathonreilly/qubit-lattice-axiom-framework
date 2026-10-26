@@ -43,19 +43,33 @@ not change. Both require renewed frozen provenance and same-session confirmation
 
 ### Preserve frozen source across unrelated main advances
 
-A unit already staged on a frozen base need not be rebased for bounded capture
-when main advances outside its complete source/input closure. Bind the frozen
-checkout base/tree and the actual reviewed main commit separately in immutable
-review evidence. The original reviewer must inspect that actual main advance
-for preservation and semantic interactions in the same session; hypothetical
-approval of future main states is insufficient. Before and after each capture,
-check the exact frozen HEAD/tree and reviewed main, require the frozen base to
-be an ancestor of reviewed main, and reject any main delta overlapping bound
-source or any input category, alongside existing file hash/stat guards. Movement,
-overlap or changed interactions holds the affected operation for renewed review.
-Keep successful science evidence with its original identities; do not rerun it
-solely to rebase. Integration still builds on actual current main and needs the
-fresh combined gate when the validated base/tree changes.
+A unit already staged on a frozen base need not be rebased or scientifically
+re-reviewed solely because main advances outside its verified source, premise,
+input and interaction closure. Keep the original independent verdict and its
+reviewed base/tree immutable. The coordinator records a separate freshness
+receipt naming the actual new main commit, prior reviewed main, complete main
+delta inventory, exact source/input/tool hashes, preservation result and
+interaction assessment. No receipt approves hypothetical future main states.
+
+Compare the complete actual main delta with the bound closure and inspect
+potentially interacting changes, including new consumers, shared premises,
+publication bindings and tooling. Path disjointness alone is insufficient.
+Reuse is allowed only when the prior independent review is complete and the
+coordinator can establish that its scientific premises, inputs, conclusions
+and checked scope remain unchanged. No original-reviewer wakeup is required
+for that unrelated advance. Missing coverage, overlap affecting the evidence,
+a new or uncertain semantic interaction, or changed source/premises/inputs
+holds the affected unit for its original reviewer's focused confirmation;
+reopen affected dependents too. Never infer scientific PASS from hashes.
+
+Before and after each capture, check the exact frozen HEAD/tree and actual main,
+require the frozen base to be an ancestor of actual main, and reject any main
+delta overlapping bound source or any input category alongside existing hash/stat
+guards. Movement holds the operation for refreshed checks; changed scientific
+inputs require renewed evidence and review. Keep successful execution evidence
+with its original identities; never restamp it or rerun it solely to rebase.
+Integration still builds on actual current main, preserves all its source, and
+requires the fresh combined gate when the validated base/tree changes.
 
 ### Overlap repairs and review without changing acceptance
 

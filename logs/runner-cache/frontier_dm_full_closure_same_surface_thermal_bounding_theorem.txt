@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py
-runner_sha256: 833e0f29205f3c5c90f9e5f38ef77724bd35d59529e330df18ece2bbb0e722da
+runner_sha256: 56713fe7058622156aafa5a14ccc9ae750010153e8f774bbb32e47afeb9b151f
+input_fingerprint_sha256: 01e8e2f0183f0f4996bd174bf84bbb20f596b75ec69b19bdd8a420bc0915c495
 timeout_sec: 60
 exit_code: 0
-elapsed_sec: 16.52
+elapsed_sec: 21.97
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -27,7 +28,7 @@ PART 0: SOURCE-NOTE SCOPE BOUNDARY
   [PASS] source omits forbidden control phrase: **Claim type:** bounded_theorem
   [PASS] source records the 2026-06-07 current-authority reduction
   [PASS] source carries the 2026-09-30 Sommerfeld-argument corrigendum
-  [PASS] source no longer treats the 64:1 bridge as an open gap
+  [PASS] documentary boundary: supplied channel prescription and open physical amplitude matching
 [CONTEXT, NOT SCIENCE PASS] Upstream audit status is maintained independently. This calculation consumes the explicitly supplied model; generated ledger status is neither an input nor a scientific premise.
 
 ========================================================================================
@@ -76,7 +77,7 @@ BOTTOM LINE
   The archived target bracketing and unique root interval came from the
   half-argument (pi) kernel and are superseded.
   What still remains open is the source derivation of the live-DM
-  constants and packet-completeness / selector premises.
+  constants, physical channel-weight matching and packet-completeness / selector premises.
 
 ========================================================================================
 SUMMARY: PASS=25 FAIL=0

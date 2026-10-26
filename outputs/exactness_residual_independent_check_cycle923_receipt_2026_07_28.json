@@ -14,19 +14,19 @@
   },
   "checks": [
     {
-      "detail": "sha256=6871a67f8887d2ba..",
+      "detail": "sha256=9c21438141831849..",
       "name": "pin: outputs/exactness_residual_cycle923_receipt_2026_07_28.json",
       "ok": true,
       "section": "K0"
     },
     {
-      "detail": "sha256=7023a18806445014..",
+      "detail": "sha256=0ba586b8410b5060..",
       "name": "pin: scripts/frontier_cycle923_exactness_residual_2026_07_28.py",
       "ok": true,
       "section": "K0"
     },
     {
-      "detail": "sha256=c77fce9b45866367..",
+      "detail": "sha256=143138fe7eac8d46..",
       "name": "pin: logs/runner-cache/frontier_cycle923_exactness_residual_2026_07_28.txt",
       "ok": true,
       "section": "K0"
@@ -50,7 +50,7 @@
       "section": "K0"
     },
     {
-      "detail": "sha256=91b708236784a039..",
+      "detail": "sha256=b33397045ae355d0..",
       "name": "pin: docs/FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md",
       "ok": true,
       "section": "K0"
@@ -68,7 +68,7 @@
       "section": "K0"
     },
     {
-      "detail": "stable_sha256=54235adb19609d7c01ef5cd9d11c2d9ccf20f4b953243b2ecd56de2a3068b998",
+      "detail": "stable_sha256=d48322248ca8484720adede7d1b46bc0da870e8f8145d1c6ccfbfc6350b7c973",
       "name": "primary receipt has a runtime-independent stable content digest (durable pin)",
       "ok": true,
       "section": "K0"
@@ -202,6 +202,18 @@
     {
       "detail": "solve -> [0, 1/2, 1]",
       "name": "sympy: for a 2-outcome split, p -> p^2/Z fixes p iff p in {0, 1/2, 1}. This CONFIRMS the primary's COINCIDENCE-DEFLATION: interior sharpening-fixed-point = uniform = max-S2 = HS equipartition is ONE fact, not three independent ones.",
+      "ok": true,
+      "section": "K2-symbolic"
+    },
+    {
+      "detail": "",
+      "name": "sector-fraction exchange is1/(4r) on r>0 and fixedness is the same uniform split",
+      "ok": true,
+      "section": "K2-symbolic"
+    },
+    {
+      "detail": "",
+      "name": "negative control r=2: actual exchange1/8 differs from affine1-r=-1",
       "ok": true,
       "section": "K2-symbolic"
     },
@@ -683,10 +695,10 @@
         "sha256": "d95cdf68285242a8ab45dbdbde9adf23b20400c14ec7d991908424d51f0a1b62"
       },
       "docs/FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md": {
-        "bytes": 5178,
-        "git_blob_sha1": "59810648f9064f706f925295abd0cae5a128a8e5",
+        "bytes": 3206,
+        "git_blob_sha1": "64bf3f767051152ac000cfb7acdf617ae4c1a2d6",
         "present": true,
-        "sha256": "91b708236784a0393aa6295fd54cca2ed6efc92d57b3a92925e01d224bfb9dcb"
+        "sha256": "b33397045ae355d0e53032806f6e008e25b7b759207335e2f853d2b0c3044461"
       },
       "docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md": {
         "bytes": 5759,
@@ -713,27 +725,27 @@
         "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
       },
       "logs/runner-cache/frontier_cycle923_exactness_residual_2026_07_28.txt": {
-        "bytes": 41480,
-        "git_blob_sha1": "c40997bc9ed2801a935202b35b4f8215de621626",
+        "bytes": 41817,
+        "git_blob_sha1": "9d76aa76239966009684824023b76081bc8dceff",
         "present": true,
-        "sha256": "c77fce9b4586636754660f1363f03c47a3e69b362bd79a33919af83097c70b96"
+        "sha256": "143138fe7eac8d463b516f4a5c0eb405cdda0c15a0df8e318fe1674e8a3771a1"
       },
       "outputs/exactness_residual_cycle923_receipt_2026_07_28.json": {
-        "bytes": 100365,
-        "git_blob_sha1": "9d0b6f841eebe7a4936e0feb819864c58202e2ad",
+        "bytes": 100851,
+        "git_blob_sha1": "0e0fbb89926145d3f60df71754fda25e30707750",
         "present": true,
-        "sha256": "6871a67f8887d2ba729c53b0ec46bc1f1cdfcde7d6f23c1a5770368dd5cc7637"
+        "sha256": "9c21438141831849eb3f284b69f6aa8c6e8d4b1dba5e412859fc044f93bc4706"
       },
       "scripts/frontier_cycle923_exactness_residual_2026_07_28.py": {
-        "bytes": 91102,
-        "git_blob_sha1": "08bf82ce7f40d1689732b39314c17a54ff6e4efd",
+        "bytes": 92808,
+        "git_blob_sha1": "eeeb225f3a998ce04dd572715eb24a456f101e68",
         "present": true,
-        "sha256": "7023a18806445014fdacd0a393ac78677d0d3eb59b1747dbb44cc5871667e059"
+        "sha256": "0ba586b8410b5060a2fa77d25615ad666f917bf02f2b0135b3786d78e63c6407"
       }
     },
-    "primary_receipt_sha256": "6871a67f8887d2ba729c53b0ec46bc1f1cdfcde7d6f23c1a5770368dd5cc7637",
-    "primary_receipt_stable_sha256_runtime_excluded": "54235adb19609d7c01ef5cd9d11c2d9ccf20f4b953243b2ecd56de2a3068b998",
-    "runner_sha256": "105c0a96a82e127c5cb04f9430d41d710efe82b9fa75229f0c13e160b3f0d5b2"
+    "primary_receipt_sha256": "9c21438141831849eb3f284b69f6aa8c6e8d4b1dba5e412859fc044f93bc4706",
+    "primary_receipt_stable_sha256_runtime_excluded": "d48322248ca8484720adede7d1b46bc0da870e8f8145d1c6ccfbfc6350b7c973",
+    "runner_sha256": "0caa6d596afe4c736bd8f52c93089024958fda4f285be63a19aadde0a644845f"
   },
   "review_loop": {
     "date": "2026-08-08",
@@ -745,11 +757,11 @@
   },
   "role": "independent_checker",
   "runner": "scripts/frontier_cycle923_exactness_residual_independent_check_2026_07_28.py",
-  "runtime_sec": 0.404,
+  "runtime_sec": 0.379,
   "schema": "cycle923-exactness-residual-independent-check-v1",
   "scorecard": {
     "fail": 0,
-    "pass": 85,
+    "pass": 87,
     "per_section": {
       "K-teeth": {
         "fail": 0,
@@ -765,7 +777,7 @@
       },
       "K2-symbolic": {
         "fail": 0,
-        "pass": 10
+        "pass": 12
       },
       "K3-mpmath": {
         "fail": 0,

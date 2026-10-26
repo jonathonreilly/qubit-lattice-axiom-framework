@@ -1,0 +1,27 @@
+{
+  "source_commit": "e9bf37ecba6baed5aa02bc52980c5e7d97241d1d",
+  "reason": "Parent source materially changed; unchanged-runner and verdict-reuse applicability withdrawn. Old tests not repinned or rerun. No audit verdict changed.",
+  "files": [
+    {
+      "path": "docs/DM_SELECTOR_FIRST_SHOULDER_EXIT_THRESHOLD_SUPPORT_CRITICALITY_BUMP_HYGIENE_COMPANION_NOTE_2026-06-04.md",
+      "sha256": "c6fd5eb9c3684ba33836cef83b894cd07306823fc301dccf7dfc60f09211f0bf",
+      "source_commit": "e9bf37ecba6baed5aa02bc52980c5e7d97241d1d",
+      "historical_path": "archive/notes/review_feedback/pr9852-first-shoulder-hygiene-2026-10-23/DM_SELECTOR_FIRST_SHOULDER_EXIT_THRESHOLD_SUPPORT_CRITICALITY_BUMP_HYGIENE_COMPANION_NOTE_2026-06-04.md.txt",
+      "role": "historical provenance only; no current execution/authority"
+    },
+    {
+      "path": "scripts/audit_companion_dm_selector_first_shoulder_exit_threshold_support_criticality_hygiene_2026_06_04.py",
+      "sha256": "f34e380df3324505ded37c88a5b4deff36537a2bd3f8b7678bd1598707a94bc7",
+      "source_commit": "e9bf37ecba6baed5aa02bc52980c5e7d97241d1d",
+      "historical_path": "archive/notes/review_feedback/pr9852-first-shoulder-hygiene-2026-10-23/audit_companion_dm_selector_first_shoulder_exit_threshold_support_criticality_hygiene_2026_06_04.py.txt",
+      "role": "historical provenance only; no current execution/authority"
+    },
+    {
+      "path": "logs/runner-cache/audit_companion_dm_selector_first_shoulder_exit_threshold_support_criticality_hygiene_2026_06_04.txt",
+      "sha256": "03243c1502b6a8fc0920d464870f4c226c75cf2e0b6f53685dee1c3ee3d8d419",
+      "source_commit": "e9bf37ecba6baed5aa02bc52980c5e7d97241d1d",
+      "historical_path": "archive/notes/review_feedback/pr9852-first-shoulder-hygiene-2026-10-23/audit_companion_dm_selector_first_shoulder_exit_threshold_support_criticality_hygiene_2026_06_04.txt.txt",
+      "role": "historical provenance only; no current execution/authority"
+    }
+  ]
+}

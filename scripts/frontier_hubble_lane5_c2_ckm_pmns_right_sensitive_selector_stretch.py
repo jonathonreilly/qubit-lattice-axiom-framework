@@ -1,17 +1,10 @@
 #!/usr/bin/env python3
-"""
-Lane 5 C2 stretch: can CKM CP orientation select the PMNS A13 sheet?
+"""Supplied CKM/PMNS toy-data separation and conditional sign rule.
 
-Question:
-  Can the current CKM CP-phase structure supply the right-sensitive PMNS
-  doublet-block selector needed by the Lane 5 eta-retirement gate?
-
-Answer on the current branch-local science surface:
-  No as an unconditional theorem. A conditional selector
-  sign(A13_PMNS) = sign(eta_CKM) is algebraically coherent and chooses the
-  constructive sheet, but the current authority surface has no typed
-  cross-sector coupling from the quark CKM CP orientation to
-  dW_e^H = Schur_Ee(D_-). The missing object is that coupling law.
+Two specified witnesses share an even polynomial stand-in and an independent
+positive CKM sign, but have opposite odd signs. A stipulated coupling chooses
+one witness. This does not establish physical selector/yield closure or the
+absence of other framework laws. Historical stronger claims are withdrawn.
 """
 
 from __future__ import annotations
@@ -23,7 +16,9 @@ from pathlib import Path
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
+AUDIT_TIMEOUT_SEC = 120
 AUDIT_INPUT_PATHS = (
+    "docs/HUBBLE_LANE5_C2_CKM_PMNS_RIGHT_SENSITIVE_SELECTOR_STRETCH_NOTE_2026-04-29.md",
     "docs/HUBBLE_LANE5_ETA_RETIREMENT_GATE_AUDIT_NOTE_2026-04-26.md",
     "docs/DM_LEPTOGENESIS_PMNS_MINIMAL_A13_SHEET_SELECTOR_THEOREM_NOTE_2026-04-16.md",
     "docs/DM_LEPTOGENESIS_PMNS_SELECTOR_BANK_CP_SHEET_BLINDNESS_THEOREM_NOTE_2026-04-16.md",
@@ -83,8 +78,11 @@ def candidate_cross_sector_selector(sign_eta_ckm: int, a13_abs: float) -> float:
 
 def test_authority_text() -> None:
     print("\n" + "=" * 88)
-    print("PART 1: AUTHORITY TEXT NAMES THE C2 SELECTOR TARGET")
+    print("PART 1: DOCUMENTARY INPUT OBSERVATIONS (NOT SCIENTIFIC PROOF)")
     print("=" * 88)
+
+    own_note = read("docs/HUBBLE_LANE5_C2_CKM_PMNS_RIGHT_SENSITIVE_SELECTOR_STRETCH_NOTE_2026-04-29.md")
+    check("Own note limits the witness to supplied toy data", "finite conditional toy-data separation" in own_note and "physical selector and yield remain open" in own_note)
 
     eta_audit = read("docs/HUBBLE_LANE5_ETA_RETIREMENT_GATE_AUDIT_NOTE_2026-04-26.md")
     a13 = read("docs/DM_LEPTOGENESIS_PMNS_MINIMAL_A13_SHEET_SELECTOR_THEOREM_NOTE_2026-04-16.md")
@@ -97,30 +95,31 @@ def test_authority_text() -> None:
         "right-sensitive" in eta_audit and "Z_3" in eta_audit and "doublet-block" in eta_audit,
     )
     check(
-        "Lane 5 eta audit lists CKM atlas structure as an unexplored coupling source",
-        "CKM atlas" in eta_audit and "sqrt(5)" in eta_audit,
+        "Parent records unresolved selector/yield and does not certify one sufficient gate",
+        "unresolved physical selector/yield obligation" in eta_audit
+        and "not a proof that a single gate is sufficient" in eta_audit,
     )
     check(
-        "PMNS A13 theorem reduces the residual selector to sign(A13)",
+        "Historical A13 note contains the two sign labels",
         "sign of `A13`" in a13 and "A13 > 0" in a13 and "A13 < 0" in a13,
     )
     check(
-        "PMNS selector-bank theorem records CP-sheet blindness",
+        "Historical selector-bank note records its CP-sheet claim",
         "CP-sheet blind" in blindness and "delta -> -delta" in blindness,
     )
     check(
-        "CKM CP theorem supplies a positive eta_CKM orientation",
+        "CKM note records the supplied positive-branch formula",
         "eta = sqrt(5)/6" in ckm and "tan(delta_CKM)" in ckm,
     )
     check(
-        "Right-conjugacy note says the missing object must break right-orbit blindness",
+        "Right-conjugacy note contains its named right-sensitive restriction",
         "non-conjugacy-invariant" in right and "right-sensitive" in right,
     )
 
 
 def test_pmns_even_data_blindness() -> None:
     print("\n" + "=" * 88)
-    print("PART 2: PMNS EVEN DATA CANNOT SELECT THE A13 SIGN")
+    print("PART 2: TWO TOY WITNESSES SHARE EVEN DATA AND DIFFER IN SIGN")
     print("=" * 88)
 
     rho_star = math.sqrt(6.0) / 3.0
@@ -173,7 +172,7 @@ def test_ckm_orientation_candidate_is_conditional() -> None:
 
 def test_missing_typed_coupling_witness() -> None:
     print("\n" + "=" * 88)
-    print("PART 4: CURRENT SURFACE HAS NO TYPED CKM->PMNS COUPLING")
+    print("PART 4: STIPULATED MODEL HAS NO COUPLING PREMISE")
     print("=" * 88)
 
     sign_eta = ckm_cp_orientation()[3]
@@ -190,6 +189,7 @@ def test_missing_typed_coupling_witness() -> None:
         "pmns_a13": -a13_abs,
     }
 
+    # Stipulation of this toy configuration, not an exhaustive framework search.
     coupling_law_present = False
     current_data_distinguish_worlds = (
         world_plus["ckm_sign"] != world_minus["ckm_sign"]
@@ -200,8 +200,8 @@ def test_missing_typed_coupling_witness() -> None:
     check("Two witnesses share CKM orientation and PMNS even data", not current_data_distinguish_worlds)
     check("The witnesses differ only in the PMNS A13 sign", world_plus["pmns_a13"] == -world_minus["pmns_a13"])
     check("A cross-sector sign law would select the constructive witness", conditional_law_would_select)
-    check("That cross-sector sign law is not present on the current surface", not coupling_law_present)
-    check("Therefore the current surface cannot prove the selector", conditional_law_would_select and not coupling_law_present)
+    check("The model flag stipulates no coupling premise (not a law-absence proof)", not coupling_law_present)
+    check("Conditional rule selects one witness while model flag is false", conditional_law_would_select and not coupling_law_present)
 
 
 def test_status_firewall() -> None:
@@ -209,6 +209,7 @@ def test_status_firewall() -> None:
     print("PART 5: CLAIM-STATUS FIREWALL")
     print("=" * 88)
 
+    # Historical configuration token retained; it establishes no no-go theorem.
     actual_current_surface_status = "no-go"
     conditional_surface_status = "conditional-support"
     open_imports = [
@@ -217,10 +218,10 @@ def test_status_firewall() -> None:
     ]
     proposal_allowed = False
 
-    check("Actual current-surface status is no-go for unconditional C2 closure", actual_current_surface_status == "no-go")
+    check("Historical no-go status token is configuration only, not a scientific result", actual_current_surface_status == "no-go")
     check("The candidate is only conditional support under a new coupling law", conditional_surface_status == "conditional-support")
-    check("The typed cross-sector coupling remains open", len(open_imports) == 2)
-    check("No stronger branch-local proposal wording is allowed", not proposal_allowed)
+    check("Two named model dependencies remain listed", len(open_imports) == 2)
+    check("Configuration disallows stronger proposal wording", not proposal_allowed)
 
 
 def main() -> int:
@@ -228,13 +229,8 @@ def main() -> int:
     print("LANE 5 C2: CKM/PMNS RIGHT-SENSITIVE SELECTOR STRETCH")
     print("=" * 88)
     print()
-    print("Claim under test:")
-    print("  CKM CP orientation might provide the missing PMNS A13 sign selector")
-    print("  for the Lane 5 eta-retirement C2 gate.")
-    print()
-    print("Boundary result:")
-    print("  The sign rule is algebraically coherent but only conditional.")
-    print("  Current authority has no typed CKM->PMNS right-sensitive coupling law.")
+    print("Two supplied witnesses and an optional cross-sector sign rule.")
+    print("No physical yield, selector closure or global law-absence claim.")
 
     test_authority_text()
     test_pmns_even_data_blindness()
@@ -245,18 +241,18 @@ def main() -> int:
     print("\n" + "=" * 88)
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     print("=" * 88)
-    print(f"per_element: checked — the PMNS A13 sign flip leaves every executed even matrix datum unchanged while reversing the targeted entry; FAIL={FAIL_COUNT}.")
-    print(f"per_site: checked — the three-generation CKM and PMNS carriers were evaluated separately with no typed cross-sector coupling present; FAIL={FAIL_COUNT}.")
-    print(f"per_mode: checked — CKM CP orientation selects the conditional sign branch, but both PMNS sign modes remain compatible with current even data; FAIL={FAIL_COUNT}.")
-    print(f"per_block: checked — explicit plus/minus witness blocks share CKM orientation and PMNS-even observables while differing only in A13; FAIL={FAIL_COUNT}.")
-    print(f"lattice_wide: checked and not executed — the required typed CKM-to-PMNS coupling is scientifically absent, so no lattice-wide selector exists to run; the finite witness suite has PASS={PASS_COUNT}, FAIL={FAIL_COUNT}.")
+    print("per_element: checked -- three polynomial stand-in entries and two odd signs.")
+    print("per_site: not executed -- no spatial sites occur in this toy model.")
+    print("per_mode: checked -- two supplied sign witnesses, not a physical mode inventory.")
+    print("per_block: not executed -- no microscopic matrix block is constructed.")
+    print("lattice_wide: not executed -- finite toy data only; no lattice claim.")
 
     if FAIL_COUNT:
         print("C2 selector stretch runner failed; do not use the note.")
         return 1
 
-    print("Result: no unconditional C2 selector closure on the current surface.")
-    print("Conditional support exists only if a typed CKM->PMNS coupling law is added.")
+    print("Result: supplied even-data witnesses differ in sign; physical questions remain open.")
+    print("The supplied sign rule selects one witness when imposed; no yield follows.")
     return 0
 
 

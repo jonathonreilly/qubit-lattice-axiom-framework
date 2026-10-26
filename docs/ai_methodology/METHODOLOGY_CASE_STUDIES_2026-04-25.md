@@ -1,7 +1,16 @@
 # Methodology Case Studies
 
 **Date:** 2026-04-25
-**Status:** derivation-centered case-study packet from raw methodology evidence
+**Status:** historical methodology account, not current scientific authority
+
+**Correction notice (2026-10-21):** The dated descriptions below preserve the
+original case-study account; their counts, retained labels and claimed closures
+are not present-day certification. Case 1's 95/95 and Kramers support are
+superseded by the corrected finite carrier theorem and runner: the determinant
+proof uses anticommutators, not Kramers invariance, and physical couplings and
+generations remain open. Case 5's broad fractional-topology no-go synthesis is
+withdrawn by its corrected source; only finite character/phase corrections
+survive. Other lanes are historical context and are not re-reviewed here.
 
 These case studies are the scientific spine for the methodology paper. They are
 not meant to be generic workflow anecdotes. Each one tells the story of a hard

@@ -16,15 +16,14 @@
   "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
-  "claim_type_author_hint_raw": "bounded_theorem (negative on the specific topological-CS /",
+  "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "koide_a1_o13_cheeger_simons_rz_no_go_note_2026-04-24",
-    "su3_casimir_fundamental_theorem_note_2026-05-02"
+    "koide_a1_o13_cheeger_simons_rz_no_go_note_2026-04-24"
   ],
   "direct_in_degree": 2,
   "effective_status": "unaudited",
@@ -32,12 +31,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.392,
+  "load_bearing_score": 3.0,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "cfc59fd1e84f85cd05023c8b506d44683fc50128ef8f97fb21c9aa2fb7603030",
+  "note_hash": "704ccace936d6b4a0a1db314b9e56020cc2029a50ff15ce8da0992625545abf7",
   "note_path": "docs/KOIDE_S_L1_TOPOLOGICAL_CHERN_SIMONS_NOTE_2026-05-08_probeS_L1_topological.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -96,7 +95,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/cl3_koide_s_L1_topological_2026_05_08_probeS_L1_topological.py",
-  "title": "Probe S-L1-Topological \u2014 Chern-Simons / Knot Invariants and the QCD \u03b2_2/\u03b2_3 Channel-Weight Obstruction",
-  "transitive_descendants": 20,
+  "title": "Supplied CS/knot diagnostics and corrected character-domain boundary",
+  "transitive_descendants": 3,
   "verdict_rationale": null
 }

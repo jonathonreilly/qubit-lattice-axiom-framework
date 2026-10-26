@@ -1,5 +1,6 @@
 # Cosmology Single-Ratio Inverse Reconstruction Theorem
 
+**Type:** bounded_theorem
 **Date:** 2026-04-25
 **Status:** exact proposed_retained/admitted-surface structural-support theorem on
 `main`. On the retained/admitted flat-FRW, `w_Lambda = -1` cosmology surface,
@@ -67,6 +68,13 @@ This moves the program forward without closing the cosmology lane: it proves
 the exact inverse certificate grammar for the open ratio, while leaving the
 ratio itself open.
 
+## EOS premise boundary
+
+The EOS corollary supplies constant vacuum density and conservation; it does
+not independently derive a physical spectral-gap matching or select a radius.
+All inverse identities here remain conditional on the explicitly assumed
+flat-FRW w=-1 model. Documentary status checks confer no retained authority.
+
 ## Setup
 
 Assume the retained/admitted late-time cosmology surface used in the existing
@@ -75,7 +83,7 @@ FRW kinematic notes:
 1. flat FRW;
 2. pressureless matter, `w_m = 0`;
 3. radiation, `w_r = 1/3`;
-4. retained dark-energy EOS, `w_Lambda = -1`;
+4. supplied conditional dark-energy EOS, `w_Lambda = -1`;
 5. nonnegative present-day density fractions
 
    `R = Omega_r,0 >= 0`,
@@ -395,3 +403,18 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 - [omega_lambda_matter_bridge_theorem_note_2026-04-22](OMEGA_LAMBDA_MATTER_BRIDGE_THEOREM_NOTE_2026-04-22.md)
 - [dark_energy_eos_retained_corollary_theorem_note](DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md)
 - [cosmological_constant_spectral_gap_identity_theorem_note](COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md)
+
+## Deferred publication observations
+
+The publication package was moved whole by owner deferral to
+`archive/publication/ci3_z3/`, as recorded in
+`archive/ledger/pu/publication_ci3_z3_deferred_package.json`. It is historical
+tables/drafts, not independent scientific authority. The ten old wiring
+observations remain visible: eight surfaces contain their original needles;
+SCIENCE_MAP lacks both note and runner needles, and README lacks the note
+needle. These two historical omissions are not scientific PASS results and
+are not repaired by editing the archived snapshot. The old FAIL10 run against
+absent live paths remains preserved. Actual scientific premises, symbolic
+identities, and canonical live harness wiring still fail closed. The runner
+binds all ten archive inputs plus the deferral ledger; publication completeness
+is not claimed.

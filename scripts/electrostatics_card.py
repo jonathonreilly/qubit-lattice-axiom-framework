@@ -16,6 +16,12 @@ like charges repel, unlike charges attract, neutral charge is inert.
 
 from __future__ import annotations
 
+AUDIT_INPUT_PATHS = [
+    "docs/ELECTROSTATICS_CARD_NOTE.md",
+    "scripts/two_body_momentum_harness.py",
+]
+AUDIT_TIMEOUT_SECONDS = 120
+
 import math
 import os
 import sys
@@ -206,7 +212,7 @@ def main() -> None:
 
     print("=" * 92)
     print("ELECTROSTATICS CARD")
-    print("  Retained 3D ordered-lattice family")
+    print("  Supplied 3D ordered-lattice family; finite diagnostic")
     print(f"  h={H}, W={PHYS_W}, L={PHYS_L}, source_z={SOURCE_Z}, strength={SOURCE_STRENGTH:g}")
     print("  Claim surface: scalar electrostatic-like sign law only")
     print("=" * 92)

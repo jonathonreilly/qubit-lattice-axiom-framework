@@ -1,0 +1,46 @@
+{
+  "source": "7930497fffd2345abc4c60c35e3cc3be2ac2be1b",
+  "files": [
+    {
+      "original_path": "archive/notes/docs/QUARK_ROUTE2_METRIC_SELECTOR_RATIO_BOUNDARY_NOTE_2026-06-21.md",
+      "archive_path": "archive/source-history/route2-orphan-contract-retirement-2026-10-24/archive/notes/docs/QUARK_ROUTE2_METRIC_SELECTOR_RATIO_BOUNDARY_NOTE_2026-06-21.md.txt",
+      "sha256": "bd9213ce9b882d894e5b2a0d971bb5bb03fa5f31d5ee184b2ee7dbc160924fa5"
+    },
+    {
+      "original_path": "scripts/frontier_quark_route2_metric_selector_ratio_boundary_2026_06_21.py",
+      "archive_path": "archive/source-history/route2-orphan-contract-retirement-2026-10-24/scripts/frontier_quark_route2_metric_selector_ratio_boundary_2026_06_21.py.txt",
+      "sha256": "12611814ddbb24410a14bf1809d9fbb820a2a66b11d2ab7d0d10f64d8d5c550d"
+    },
+    {
+      "original_path": "logs/runner-cache/frontier_quark_route2_metric_selector_ratio_boundary_2026_06_21.txt",
+      "archive_path": "archive/source-history/route2-orphan-contract-retirement-2026-10-24/logs/runner-cache/frontier_quark_route2_metric_selector_ratio_boundary_2026_06_21.txt.txt",
+      "sha256": "8c22cdf0cce64a80f38db224313027f94f3dd7dd5e70f4827b22b10076acbc92"
+    },
+    {
+      "original_path": "archive/notes/docs/QUARK_ROUTE2_NONLINEAR_E_CENTER_READOUT_PRIMITIVE_BOUNDARY_NOTE_2026-06-21.md",
+      "archive_path": "archive/source-history/route2-orphan-contract-retirement-2026-10-24/archive/notes/docs/QUARK_ROUTE2_NONLINEAR_E_CENTER_READOUT_PRIMITIVE_BOUNDARY_NOTE_2026-06-21.md.txt",
+      "sha256": "635fb8881cd422c91a4db81c652d959c10667057a8e3a69a36b9671e2f8fd753"
+    },
+    {
+      "original_path": "scripts/frontier_quark_route2_nonlinear_e_center_readout_primitive_boundary_2026_06_21.py",
+      "archive_path": "archive/source-history/route2-orphan-contract-retirement-2026-10-24/scripts/frontier_quark_route2_nonlinear_e_center_readout_primitive_boundary_2026_06_21.py.txt",
+      "sha256": "b306f0be5d9d063be945e886daf65f1b469956aa00883e201eae5911f8a1d2cc"
+    },
+    {
+      "original_path": "logs/runner-cache/frontier_quark_route2_nonlinear_e_center_readout_primitive_boundary_2026_06_21.txt",
+      "archive_path": "archive/source-history/route2-orphan-contract-retirement-2026-10-24/logs/runner-cache/frontier_quark_route2_nonlinear_e_center_readout_primitive_boundary_2026_06_21.txt.txt",
+      "sha256": "a0e00c95702e6f2239ff8e646ad6ee510a529c939a220d7dbed54f6f1d0f014d"
+    }
+  ],
+  "removed_live_paths": [
+    "scripts/frontier_quark_route2_metric_selector_ratio_boundary_2026_06_21.py",
+    "logs/runner-cache/frontier_quark_route2_metric_selector_ratio_boundary_2026_06_21.txt",
+    "scripts/frontier_quark_route2_nonlinear_e_center_readout_primitive_boundary_2026_06_21.py",
+    "logs/runner-cache/frontier_quark_route2_nonlinear_e_center_readout_primitive_boundary_2026_06_21.txt"
+  ],
+  "already_absent_notes": [
+    "docs/QUARK_ROUTE2_METRIC_SELECTOR_RATIO_BOUNDARY_NOTE_2026-06-21.md",
+    "docs/QUARK_ROUTE2_NONLINEAR_E_CENTER_READOUT_PRIMITIVE_BOUNDARY_NOTE_2026-06-21.md"
+  ],
+  "disposition": "Historical orphan contracts only. No negative theorem/current audit or executable census authority. Full original arguments and expected scorecards preserved. Existing archived notes untouched. New finite algebra is separately authored and reviewed."
+}

@@ -23,16 +23,12 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "minimal_axioms",
-    "post_record_measure_weight_normalization_subdivision_2026-06-06"
+    "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16"
   ],
   "direct_in_degree": 0,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
-  "helper_runner_paths": [
-    "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py",
-    "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py"
-  ],
+  "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
@@ -40,7 +36,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "4a97eb8b245fb7841e5ed816f4366e313a0ec902f1baa94f71ced2c9ce05c56d",
+  "note_hash": "5d475e184262060af10ccf80d31a907e75161524d89aa8fb97ebf8c213f938a2",
   "note_path": "docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -1999,7 +1995,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py",
-  "title": "Post-Record Selector/Tangent Readout Weight Prototype",
+  "title": "Post-Record supplied finite weights and quadratic-form diagnostic",
   "transitive_descendants": 0,
   "verdict_rationale": null
 }

@@ -53,10 +53,10 @@ non-load-bearing conjecture until matched ablations land.
 
 ## Artifact Chain
 
-- [`scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py`](/Users/jonreilly/Projects/Physics/scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py)
-- [`logs/DISTANCE_LAW_BREAKPOINT_COMPARE.txt`](/Users/jonreilly/Projects/Physics/logs/DISTANCE_LAW_BREAKPOINT_COMPARE.txt)
-- baseline portability result: [`docs/DISTANCE_LAW_PORTABILITY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DISTANCE_LAW_PORTABILITY_NOTE.md)
-- sign invariant context: [`docs/SIGN_PORTABILITY_INVARIANT_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SIGN_PORTABILITY_INVARIANT_NOTE.md)
+- [`scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py`](../scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py)
+- [`logs/DISTANCE_LAW_BREAKPOINT_COMPARE.txt`](../logs/DISTANCE_LAW_BREAKPOINT_COMPARE.txt)
+- baseline portability result: [`docs/DISTANCE_LAW_PORTABILITY_NOTE.md`](DISTANCE_LAW_PORTABILITY_NOTE.md)
+- sign invariant context: [`docs/SIGN_PORTABILITY_INVARIANT_NOTE.md`](SIGN_PORTABILITY_INVARIANT_NOTE.md)
 
 ## Question
 
@@ -88,7 +88,7 @@ the near-Newtonian tail together.
   - radial-shell confinement / over-locked transport
   - direction survives, but the exponent collapses far below the retained tail
 
-## Safe Diagnosis
+## Conjectural diagnosis (matched ablations not supplied)
 
 The distance tail is not geometry-independent across the retained families.
 The preserving feature is not the family label itself. It is the open,
@@ -103,11 +103,9 @@ The break features are:
 - quadrant-reflection symmetry
 - radial confinement / shell locking
 
-## Final Verdict
+## Current comparison boundary
 
-**retained narrow breakpoint diagnosis: the near-Newtonian distance tail
-survives only in open directed transport families; shell-locking, reflection
-closure, and deep branch routing break or flatten it**
+**The finite supplied rows do not establish that open transport is necessary or that a particular feature causes a change. Those causal hypotheses remain untested by the renderer.**
 
 ## Audit boundary (2026-04-28)
 

@@ -21,6 +21,8 @@ from __future__ import annotations
 
 import math
 
+AUDIT_INPUT_PATHS = ["docs/AXIOM_FIRST_STEFAN_BOLTZMANN_THEOREM_NOTE_2026-05-01.md"]
+
 import numpy as np
 
 
@@ -85,7 +87,7 @@ def main() -> None:
     print("=" * 72)
     print()
     print("Setup:")
-    print("  Block 01 KMS (Gibbs state on harmonic oscillator → Planck dist)")
+    print("  supplied Gibbs state on harmonic oscillator → Planck distribution")
     print("  supplied continuum photon dispersion and two polarizations")
     print("  natural units hbar = c = k_B = 1")
     print()
@@ -232,12 +234,12 @@ def main() -> None:
     print()
     print("Note: this runner verifies the Stefan-Boltzmann law via")
     print("(a) explicit Gibbs-trace evaluation of the Planck distribution")
-    print("    (Test 1, the KMS step from Block 01),")
+    print("    (Test 1, under the supplied oscillator and Gibbs premises),")
     print("(b) numerical integration of the Planck energy spectrum (Tests 2-3),")
     print("(c) the Bose-Einstein integral identity (Test 4),")
     print("(d) the Wien displacement law (Test 5), and")
     print("(e) the SI Stefan-Boltzmann constant matching CODATA 2018 (Test 6).")
-    print("The proof in the companion theorem note composes Block 01 KMS")
+    print("The proof in the companion theorem note combines a supplied Gibbs state")
     print("with supplied oscillator spectrum, linear continuum dispersion and mode-counting.")
     if not all_ok:
         raise SystemExit(1)

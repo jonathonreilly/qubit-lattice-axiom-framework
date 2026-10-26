@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_ew_order_parameter_d4_density_readout_bridge_2026_06_18.py
-runner_sha256: 737b69a09537d32fe382e1104d6fdc76e304ad90c46358e454a9dc608349b61a
-input_fingerprint_sha256: 81e4a6bec6f0c940f5d1253c92875bcd00d902426791140067b4c1490b38bbef
+runner_sha256: c261d12a1b29672f1761a28f620d2fa3fad07b7737eb3cb6c00a44e5959e270d
+input_fingerprint_sha256: 78270a1372ecd38b6f8440c9e79e19ecf68b96d6560d5d7afb3a238073575b73
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05
@@ -42,7 +42,7 @@ S3 formal scalar-readout compatibility
 
 S4 source firewalls
   [PASS] bridge carries bounded-support status fields and no retained claim
-  [PASS] bridge markdown-links load-bearing EW and D4 readout authorities
+  [PASS] documentary links identify EW context and the conditional D4 bridge
   [PASS] bridge explicitly leaves endpoint selection and absolute scale open
   [PASS] parent note cites the bridge while preserving the residual
 

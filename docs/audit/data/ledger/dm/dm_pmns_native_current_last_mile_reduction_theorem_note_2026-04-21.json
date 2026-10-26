@@ -14,21 +14,16 @@
   "chain_closure_explanation": null,
   "claim_id": "dm_pmns_native_current_last_mile_reduction_theorem_note_2026-04-21",
   "claim_scope": null,
-  "claim_type": "positive_theorem",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "author_hint",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "dm_abcc_exact_target_surface_source_cubic_closure_theorem_note_2026-04-21",
-    "dm_pmns_ne_seed_surface_exact_source_manifold_theorem_note_2026-04-20",
-    "pmns_c3_character_holonomy_closure_note",
-    "pmns_c3_character_mode_reduction_note",
-    "pmns_c3_nontrivial_current_boundary_note",
-    "dm_pmns_affine_current_coordinate_reduction_theorem_note_2026-04-21",
     "dm_pmns_ordered_chain_graded_current_delta_closure_theorem_note_2026-04-21"
   ],
   "direct_in_degree": 1,
@@ -62,7 +57,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "c751c5d693d69cf350126ee271187f6f35b83c8bcb13d3de1dcfba83a9247693",
+  "note_hash": "0bb97ff523f7ad2080702baefb83c3ca2d111a2f66916a3f6ee3448b3283060b",
   "note_path": "docs/DM_PMNS_NATIVE_CURRENT_LAST_MILE_REDUCTION_THEOREM_NOTE_2026-04-21.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -134,7 +129,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_dm_pmns_native_current_last_mile_reduction_2026_04_21.py",
-  "title": "DM PMNS Native Current Last-Mile Reduction Theorem",
+  "title": "Supplied basin and reduced-current coordinate diagnostics",
   "transitive_descendants": 10,
   "verdict_rationale": null
 }

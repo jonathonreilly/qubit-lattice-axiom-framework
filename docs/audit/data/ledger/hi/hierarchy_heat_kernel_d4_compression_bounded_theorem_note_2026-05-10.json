@@ -16,21 +16,14 @@
   "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
-  "claim_type_author_hint_raw": "bounded_theorem (proposed; audit-lane to ratify)",
+  "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "hierarchy_bosonic_bilinear_selector_note",
-    "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02",
-    "axiom_first_stefan_boltzmann_theorem_note_2026-05-01",
-    "staggered_dirac_realization_gate_note_2026-05-03",
-    "hierarchy_effective_potential_endpoint_note",
-    "axiom_first_kms_condition_theorem_note_2026-05-01",
-    "minimal_axioms_2026-05-03",
-    "complete_prediction_chain_2026_04_15"
+    "axiom_first_stefan_boltzmann_theorem_note_2026-05-01"
   ],
   "direct_in_degree": 0,
   "effective_status": "unaudited",
@@ -43,7 +36,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "bf915f0ccad392dacbb0adcd3ea640d4627371a61ef7e9431a84b703b3b3ee51",
+  "note_hash": "89f24b7de954050988e5401c80914243bbe50afe6ee3567f61e250eff9e4d983",
   "note_path": "docs/HIERARCHY_HEAT_KERNEL_D4_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-05-10.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -58,7 +51,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_hierarchy_heat_kernel_d4_compression.py",
-  "title": "Hierarchy Heat-Kernel D=4 Compression \u2014 Bounded Theorem Note",
+  "title": "Finite determinant and supplied quarter-power statistic",
   "transitive_descendants": 0,
   "verdict_rationale": null
 }

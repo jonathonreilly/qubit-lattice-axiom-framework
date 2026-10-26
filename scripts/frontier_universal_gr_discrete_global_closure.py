@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-"""Capstone audit for the direct-universal discrete global GR closure."""
+"""Finite supplied-matrix overlap diagnostic; no GR derivation or audit verdict."""
 
 from __future__ import annotations
+
+AUDIT_INPUT_PATHS = ['docs/UNIVERSAL_GR_POSITIVE_BACKGROUND_LOCAL_CLOSURE_NOTE.md', 'docs/UNIVERSAL_GR_LORENTZIAN_SIGNATURE_EXTENSION_NOTE.md', 'docs/UNIVERSAL_GR_LORENTZIAN_GLOBAL_ATLAS_CLOSURE_NOTE.md', 'docs/S3_ANOMALY_SPACETIME_LIFT_NOTE.md']
 
 import math
 from dataclasses import dataclass
@@ -19,13 +21,13 @@ class Check:
     name: str
     ok: bool
     detail: str
-    status: str = "EXACT"
+    status: str = "NUMERICAL"
 
 
 CHECKS: list[Check] = []
 
 
-def record(name: str, ok: bool, detail: str, status: str = "EXACT") -> None:
+def record(name: str, ok: bool, detail: str, status: str = "NUMERICAL") -> None:
     CHECKS.append(Check(name=name, ok=ok, detail=detail, status=status))
     tag = "PASS" if ok else "FAIL"
     print(f"[{status}] {tag}: {name}")
@@ -105,7 +107,7 @@ def main() -> int:
     )
     d0 = np.diag([-2.0, 3.0, 5.0, 7.0])
     g0 = gram(basis, d0)
-    h0 = -g0
+    h0 = g0  # operator induced by B_D, not its negative
     k0 = np.kron(h0, lambda_r)
     min_abs_eig = float(np.min(np.abs(np.linalg.eigvalsh(0.5 * (k0 + k0.T)))))
 
@@ -122,7 +124,7 @@ def main() -> int:
     t = transform_matrix(s, basis)
     d1 = s.T @ d0 @ s
     g1 = gram(basis, d1)
-    h1 = -g1
+    h1 = g1
     k1 = np.kron(h1, lambda_r)
     t_big = np.kron(t, np.eye(lambda_r.shape[0]))
 
@@ -139,30 +141,36 @@ def main() -> int:
     stationary_err = float(np.max(np.abs(f1_star - t_big @ f0_star)))
 
     record(
-        "the branch already contains positive local closure, Lorentzian extension, and global atlas closure",
+        "cited files contain the expected descriptive phrases",
         "positive-background" in pos_text.lower()
         and "lorentzian" in lor_text.lower()
         and "global stationary section" in glob_text.lower()
         and "pl s^3 x r" in lift_text.lower(),
-        "the structural-assembly statement is built from already-derived universal route steps",
+        "documentary presence only; no upstream theorem verified",
+        status="DOCUMENTARY",
     )
+    eig_h = np.linalg.eigvalsh(h0)
+    record("supplied Lorentzian Hessian has inertia (3 positive, 7 negative)",
+           np.count_nonzero(eig_h > 1e-12) == 3
+           and np.count_nonzero(eig_h < -1e-12) == 7,
+           f"H eigenvalues={eig_h}; full symmetric variation space")
     record(
-        "the Lorentzian glued operator is nondegenerate on the discrete 3+1 route",
+        "supplied finite Kronecker operator is numerically nondegenerate",
         min_abs_eig > 1e-8,
         f"min |eig K_GR|={min_abs_eig:.6e}",
     )
     record(
-        "overlap covariance is exact at the operator density level",
+        "supplied operator covariance meets numerical tolerance",
         overlap_err < 1e-12,
         f"max overlap covariance error={overlap_err:.3e}",
     )
     record(
-        "the discrete Lorentzian action is chart-independent on overlaps",
+        "supplied action agrees across this chart change",
         action_err < 1e-12,
         f"overlap action mismatch={action_err:.3e}",
     )
     record(
-        "stationary representatives patch to the same global section",
+        "supplied stationary representatives agree across this chart change",
         stationary_err < 1e-12,
         f"overlap stationary mismatch={stationary_err:.3e}",
     )
@@ -175,14 +183,8 @@ def main() -> int:
     print(f"overlap stationary mismatch = {stationary_err:.3e}")
 
     print("\nVerdict (scope-bounded):")
-    print(
-        "On the explicit chart change S and Lorentzian background D0 above, "
-        "the direct-universal route assembles into a runner-verified "
-        "single-overlap structural-assembly statement for an exact global "
-        "Lorentzian Einstein/Regge stationary action family on the discrete "
-        "3+1 spacetime PL S^3 x R, conditional on the cited support-tier "
-        "closure-stack notes. See the note's audit boundary for scope."
-    )
+    print("Supplied finite matrices satisfy the reported single-overlap checks when all tests pass.")
+    print("NOT VERIFIED: upstream theorems, physical Einstein/Regge identification, arbitrary atlas/topology, or audit authority.")
 
     print("\n" + "=" * 78)
     print("SUMMARY")

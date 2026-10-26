@@ -1,139 +1,80 @@
-# Hubble Lane 5 C2 CKM/PMNS Right-Sensitive Selector Stretch
+# Hubble Lane 5 C2: Supplied CKM/PMNS Sign Witnesses
 
-**Date:** 2026-04-29
-**Status:** no-go / conditional-support boundary for the current `(C2)`
-selector route; no `eta`, `Omega_Lambda`, or `H_0` numerical claim.
-**Loop:** `.claude/science/physics-loops/impact-campaign-20260429/`
+**Date:** 2026-04-29; scope corrected 2026-10-23
+**Type:** open_gate
+**Status:** finite conditional toy-data separation; physical selector and yield remain open.
 **Runner:** `scripts/frontier_hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch.py`
 
-```yaml
-actual_current_surface_status: no-go
-conditional_surface_status: conditional-support
-hypothetical_axiom_status: null
-admitted_observation_status: null
-proposal_allowed: false
-proposal_allowed_reason: "CKM CP orientation gives only a conditional PMNS A13 sign selector unless a typed CKM-to-PMNS right-sensitive coupling law is supplied"
-audit_required_before_effective_retained: true
-bare_retained_allowed: false
-```
+## 1. Historical question and current scope
 
-## 1. Question
+The historical eta candidate gate is a right-sensitive 2-real `Z_3`
+doublet-block point-selection law on `dW_e^H = Schur_{E_e}(D_-)`.
+The corrected `HUBBLE_LANE5_ETA_RETIREMENT_GATE_AUDIT_NOTE_2026-04-26.md`
+withdraws eta retirement and complete C2 closure: selector, supported branch,
+and physical yield/readout remain separate obligations. A sign choice is not
+a proof that this cascade supplies the observed yield.
 
-Lane 5 `(C2)` needs the eta-retirement gate:
+The earlier argument promoted this residual to a one-bit physical problem
+and asserted that the repository had no cross-sector law. Both claims are
+withdrawn here. The complete earlier note, runner and cache are recoverable
+at commit `56474903716b057082172f24f00c3dd78373d75b` under the same paths.
+The historical negative claim is unproved; it is not a current no-go theorem.
 
-```text
-right-sensitive 2-real Z_3 doublet-block point-selection law
-on dW_e^H = Schur_{E_e}(D_-)
-```
+## 2. Explicit supplied data
 
-The 2026-04-26 eta audit names the PMNS residual as a right-sensitive
-selector and lists CKM atlas structure as a possible unexplored external
-coupling source. This block tests that hard residual:
+For real delta and q and a supplied magnitude a > 0, define the toy data
 
 ```text
-Can CKM CP orientation select the PMNS A13 sheet?
+E(delta,q,a) = (delta^2 + q^2, delta^2 q^2, a),
+O(delta,a) = (sign(delta), sign(delta) a),  delta != 0.
 ```
 
-## 2. Stretch Candidate
+The executable `even_pmns_data` rounds these three numbers to 12 decimals.
+They are a minimal stand-in, not a computed PMNS matrix, transport map, or
+complete inventory of physical observables. The two executed witnesses use
+`delta = +/-sqrt(6)/3`, `q = sqrt(6)/3`, and `a = 2 sqrt(6)/3`.
+The even functions agree exactly under delta reversal; the odd sign reverses.
+The zero-delta case is excluded from this sign argument.
 
-The CKM CP-phase identity gives a positive quark-sector orientation:
+The independent CKM-side fixture is supplied as
+`rho = 1/6`, `eta_CKM = sqrt(5)/6`, `delta_CKM = atan(sqrt(5))`,
+on its positive branch. The cited CKM identity has its own imported projector
+and radius premises. This runner checks the fixture's arithmetic, not those
+physical identifications. It imports no CKM-to-PMNS coupling.
 
-```text
-rho_CKM = 1/6
-eta_CKM = sqrt(5)/6
-tan(delta_CKM) = sqrt(5)
-```
+## 3. Conditional implication and its limit
 
-The PMNS eta-retirement residual has been reduced to the one-bit selector:
+Hold the CKM sign fixed in both witnesses. The ordered input consisting only
+of that sign and E is identical, whereas O differs. Therefore a deterministic
+function of precisely those identical inputs cannot reproduce both signs.
+This is a statement about the supplied data restriction, not all framework
+laws or all physically available data.
 
-```text
-sign(A13_PMNS)
-```
+If the extra rule `sign(A13) = sign(eta_CKM)` is supplied, its defined readout
+`sign(eta_CKM) a` selects the positive witness. This rule is a premise, not
+an output of the even-data comparison. The code's
+`coupling_law_present = False` is a stipulated configuration flag; checking
+it proves neither global law absence nor a physical impossibility.
 
-The tempting stretch law is:
+## 4. What the runner checks
 
-```text
-sign(A13_PMNS) = sign(eta_CKM)
-```
-
-This would select the constructive `A13 > 0` sheet.
-
-## 3. Boundary Theorem
-
-**Theorem.** On the current repo surface, CKM CP orientation does not
-unconditionally select the PMNS `A13` sheet.
-
-The candidate law is algebraically coherent, but it is conditional on a new
-typed cross-sector coupling from the CKM CP orientation to the PMNS
-`dW_e^H` doublet block.
-
-## 4. Proof
-
-The current PMNS even data are CP-sheet blind: the two PMNS witnesses related
-by `delta -> -delta` have the same even response data but opposite `A13` sign.
-The current CKM CP data are also unchanged between those two PMNS witnesses,
-because no current theorem maps the quark-sector CKM orientation into the
-charged-sector PMNS `dW_e^H` right-sensitive frame.
-
-Thus there are two same-current-data witnesses:
-
-```text
-World +: CKM orientation positive, PMNS even data fixed, A13 > 0
-World -: CKM orientation positive, PMNS even data fixed, A13 < 0
-```
-
-The proposed law `sign(A13_PMNS) = sign(eta_CKM)` chooses World +, but the
-law itself is not present on the current authority surface. It would be a new
-typed CKM-to-PMNS coupling premise, not a consequence of the existing CKM
-phase identity plus the existing PMNS selector reductions.
-
-Therefore the route does not close `(C2)` on the current surface.
-
-## 5. Runner Witness
-
-The runner checks:
-
-- Lane 5 names the right-sensitive `Z_3` doublet-block selector as the
-  eta-retirement gate;
-- the PMNS minimal `A13` note reduces the residual to a one-bit sign;
-- current PMNS selector banks are CP-sheet blind;
-- the CKM CP identity supplies the positive `eta_CKM` orientation;
-- the candidate cross-sector sign law would work if assumed;
-- the typed cross-sector coupling is not present, so actual status remains
-  no-go.
-
-Checks:
+The existing numerical expressions, witness values and tolerances are retained.
+Documentary checks record phrases in five named input notes, including the
+parent's unresolved selector/yield obligation. They do not certify those
+notes' broader historical claims. Algebraic checks compare the two witnesses
+and the supplied CKM fixture. Configuration checks report the stipulated
+absence of a coupling in this toy construction only.
 
 ```bash
-set -o pipefail; python3 scripts/frontier_hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch.py | tee outputs/frontier_hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch_2026-04-29.txt
-python3 -m py_compile scripts/frontier_hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch.py
+python3 scripts/frontier_hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch.py
 ```
 
-Expected runner result:
+The declared cap is 120 seconds. PASS counts describe these checks, not a
+physical selector, yield, eta retirement, C2 closure or a no-go result.
 
-```text
-SUMMARY: PASS=22 FAIL=0
-```
+## 5. Open physical questions
 
-## 6. What This Closes
-
-This closes the narrow stretch:
-
-```text
-current CKM CP orientation
-  => PMNS A13 sign selector
-  => eta-retirement C2 closure
-```
-
-The implication fails without a typed CKM-to-PMNS right-sensitive coupling law.
-
-## 7. What Remains Open
-
-The exact missing object is now sharper:
-
-- a canonical right-frame law for the PMNS `dW_e^H` block; or
-- an equivalent right-sensitive observable principle; or
-- a typed cross-sector coupling theorem that maps CKM CP orientation to the
-  PMNS `A13` sign.
-
-No numerical `H_0`, `Omega_Lambda`, or baryon-asymmetry value is derived here.
+The physical domain, complete data map, cross-sector relation (if any),
+selected branch and transport/readout bridge remain unresolved. No uniqueness
+or exhaustion claim is made about possible laws. No numerical baryon
+asymmetry, Omega_Lambda or H_0 follows from the two-witness calculation.

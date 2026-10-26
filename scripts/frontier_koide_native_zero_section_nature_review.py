@@ -1,27 +1,6 @@
 #!/usr/bin/env python3
-"""
-Nature-grade review of the Koide native zero-section defined-route algebra.
-
-Review question:
-  Does the current native zero-section route supply exact bounded algebraic
-  support while leaving the physical Koide result unclaimed, and if not, what
-  exact work remains?
-
-Verdict:
-  The repaired route is an exact, non-numerological defined-route algebra. It
-  gives Q and delta inside the defined zero-source, real Z3 primitive, based
-  endpoint object.
-
-  It does not yet pass as a retained physical result, because the repository
-  still contains two competing descriptions of the Brannen object:
-
-    - older selected-line/CP1 language, where a rank-one line is physical;
-    - the native real-primitive route, where the real Z3 doublet is physical
-      and rank-one lines are coordinate/gauge choices.
-
-  The physical result requires three retained identification theorems: the
-  charged-lepton scalar is the zero-source coefficient, the Brannen endpoint is
-  the whole real primitive, and the determinant-line readout is based.
+"""Actual one-child contract for the supplied finite native-zero algebra.
+Documentary historical strings and open questions are not scientific checks.
 """
 
 from __future__ import annotations
@@ -32,6 +11,8 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
+AUDIT_TIMEOUT_SEC = 180
+AUDIT_INPUT_PATHS = ('docs/KOIDE_NATIVE_ZERO_SECTION_NATURE_REVIEW_NOTE_2026-04-24.md', 'scripts/frontier_koide_native_zero_section_closure_route.py', 'docs/KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md', 'docs/KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20.md', 'docs/KOIDE_BRANNEN_GEOMETRY_DIRAC_SUPPORT_NOTE_2026-04-22.md')
 PASSES: list[tuple[str, bool, str]] = []
 
 
@@ -42,6 +23,10 @@ def record(name: str, ok: bool, detail: str = "") -> None:
     if detail:
         for line in detail.splitlines():
             print(f"       {line}")
+
+
+def historical(name, condition, detail=""):
+    print(f"HISTORICAL_UNSCORED old assertion={name!r}; observed={bool(condition)}; old detail={detail!r}")
 
 
 def section(title: str) -> None:
@@ -56,17 +41,22 @@ def read(rel: str) -> str:
 
 
 def run(rel: str) -> tuple[int, str]:
-    proc = subprocess.run(
-        [sys.executable, rel],
-        cwd=ROOT,
-        check=False,
-        text=True,
-        capture_output=True,
-    )
+    try:
+        proc = subprocess.run([sys.executable, rel], cwd=ROOT, check=False,
+                              text=True, capture_output=True, timeout=120)
+    except subprocess.TimeoutExpired as exc:
+        return 124, f"CHILD_TIMEOUT: {exc}"
+    except OSError as exc:
+        return 127, f"CHILD_EXECUTION_ERROR: {exc}"
     return proc.returncode, proc.stdout + proc.stderr
 
 
 def main() -> int:
+    PASSES.clear()
+    for p in AUDIT_INPUT_PATHS:
+        if not (ROOT/p).is_file():
+            print(f"FAIL missing input {p}")
+            return 1
     section("A. Route packet")
 
     route_script = "scripts/frontier_koide_native_zero_section_closure_route.py"
@@ -81,40 +71,29 @@ def main() -> int:
     record(
         "A.2 native route runner passes",
         code == 0
-        and "PASSED: 18/18" in output
-        and "KOIDE_NATIVE_ZERO_SECTION_DEFINED_ROUTE_ALGEBRA=TRUE" in output,
+        and output.splitlines().count("PASSED: 16/16") == 1
+        and output.splitlines().count("SUPPLIED_ROUTE_MATH_CHECKS=PASS") == 1
+        and "[FAIL]" not in output
+        and "CHILD_" not in output,
         "runner closeout verified.",
     )
     record(
         "A.3 route does not claim the physical Koide result",
-        "PHYSICAL_KOIDE_CLOSURE_CLAIMED=FALSE" in output
-        and "PHYSICAL_BRIDGE_IDENTIFICATIONS_CLAIMED=FALSE" in output,
+        "PHYSICAL_IDENTIFICATION_PROVED=FALSE" in output,
         "Defined-route algebra is not promoted beyond its proof boundary.",
     )
 
-    section("B. Positive content")
+    section("B. Child output contract (not independent proof)")
+    record("B.1 child reports all16 actual mathematical conditions successful",
+           code == 0 and output.splitlines().count("SUPPLIED_ROUTE_MATH_CHECKS=PASS") == 1 and output.splitlines().count("PASSED: 16/16") == 1)
+    record("B.2 child explicitly declares its supplied endpoint law",
+           "SUPPLIED_ENDPOINT_LAW=selected*eta+c; selected=1,c=0" in output)
+    historical("B.3 old non-numerological provenance assertion",
+               "no hidden target import" in output.lower() and "eta_Z3=2/9" in output
+               and "idempotents=[{a: 0, b: 0}, {a: 1, b: 0}]" in output,
+               "Withdrawn: finite sum and flags do not prove independent physical endpoint selection.")
 
-    record(
-        "B.1 Q is implied inside the defined zero-source route",
-        "DEFINED_ROUTE_ZERO_SECTION_IMPLIES_Q=TRUE" in output,
-        "The source-label zero section gives K_TL=0 and Q=2/3.",
-    )
-    record(
-        "B.2 delta is implied inside the defined real primitive plus unit endpoint",
-        "DEFINED_ROUTE_REAL_Z3_PRIMITIVE_HAS_NO_SPECTATOR_IDEMPOTENT=TRUE" in output
-        and "DEFINED_ROUTE_UNIT_ENDPOINT_IMPLIES_C_ZERO=TRUE" in output
-        and "DEFINED_ROUTE_ENDPOINT_IMPLIES_DELTA=TRUE" in output,
-        "Real Z3 primitive removes spectator; based endpoint removes c.",
-    )
-    record(
-        "B.3 the route is not numerological",
-        "no hidden target import" in output.lower()
-        and "eta_Z3=2/9" in output
-        and "idempotents=[{a: 0, b: 0}, {a: 1, b: 0}]" in output,
-        "Load-bearing checks are representation idempotents and unit preservation.",
-    )
-
-    section("C. Compatibility with retained Brannen support")
+    section("C. Unscored historical text observations, not proof suppliers")
 
     brannen_note = read("docs/KOIDE_BRANNEN_GEOMETRY_DIRAC_SUPPORT_NOTE_2026-04-22.md")
     selected_line_note = read("docs/KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20.md")
@@ -125,7 +104,7 @@ def main() -> int:
         and "doublet conjugate-pair" in selected_line_note
         and "n_eff = 2" in selected_line_note
     )
-    record(
+    historical(
         "C.1 retained Brannen geometry supports a real-doublet primitive reading",
         real_plane_support,
         "Existing notes describe the Brannen phase as real-plane rotation / conjugate-pair winding.",
@@ -134,7 +113,7 @@ def main() -> int:
         "selected-line `CP^1` carrier" in brannen_note
         or "tautological CP^1 line" in selected_line_note
     )
-    record(
+    historical(
         "C.2 retained Brannen corpus also contains rank-one/CP1 language",
         cp1_rank_one_tension,
         "This is the exact interpretive conflict the native route must resolve.",
@@ -148,12 +127,12 @@ def main() -> int:
         "Is the CP1 line a coordinate presentation of the real primitive, or an extra physical selector?",
         "Is the open determinant endpoint a based unit-preserving functor, or an unbased torsor?",
     ]
-    record(
+    historical(
         "D.1 all remaining objections are identification theorems, not arithmetic gaps",
         len(objections) == 4,
         "\n".join(objections),
     )
-    record(
+    historical(
         "D.2 physical Koide result remains unclaimed",
         True,
         "A hostile reviewer can reject the three physical identifications until they are derived from retained sources.",
@@ -161,46 +140,23 @@ def main() -> int:
 
     section("E. Verdict")
 
-    record(
+    historical(
         "E.1 passes as a bounded defined-route review",
         True,
         "It supplies exact route algebra for the zero-source, real-primitive, based-endpoint pattern.",
     )
-    record(
+    historical(
         "E.2 fails as a retained physical Koide result today",
         True,
         "It still needs the zero-source readout, real-primitive Brannen endpoint, and determinant-line unit theorems.",
     )
 
-    print()
-    n_pass = sum(1 for _, ok, _ in PASSES if ok)
-    n_total = len(PASSES)
-    print("=" * 88)
-    print("Summary")
-    print("=" * 88)
-    print(f"PASSED: {n_pass}/{n_total}")
-    for name, ok, _ in PASSES:
-        print(f"  [{'PASS' if ok else 'FAIL'}] {name}")
-
-    print()
-    if n_pass == n_total:
-        print("KOIDE_NATIVE_ZERO_SECTION_NATURE_REVIEW=PASS_AS_ROUTE")
-        print("KOIDE_NATIVE_ZERO_SECTION_RETAINED_CLOSURE=FALSE")
-        print("NATIVE_ROUTE_IMPLIES_VALUES_CONDITIONALLY=TRUE")
-        print("NATIVE_ROUTE_DEFINED_ALGEBRA=TRUE")
-        print("PHYSICAL_KOIDE_CLOSURE_CLAIMED=FALSE")
-        print("PHYSICAL_BRIDGE_IDENTIFICATIONS_CLAIMED=FALSE")
-        print("NEXT_NATIVE_THEOREM=derive_zero_source_readout_Brannen_endpoint_as_real_Z3_primitive_and_unit_determinant_readout")
-        print("RESIDUAL_IDENTIFICATION_DELTA=rank_one_CP1_language_vs_real_primitive_endpoint")
-        print("RESIDUAL_TRIVIALIZATION=unit_preserving_open_determinant_line_readout")
-        print("RESIDUAL_SOURCE_READOUT=zero_source_coefficient_vs_physical_charged_lepton_scalar")
-        return 0
-
-    print("KOIDE_NATIVE_ZERO_SECTION_NATURE_REVIEW=FAIL")
-    print("KOIDE_NATIVE_ZERO_SECTION_RETAINED_CLOSURE=FALSE")
-    print("PHYSICAL_KOIDE_CLOSURE_CLAIMED=FALSE")
-    return 1
-
+    print("INFO: supplied zero source, affine endpoint form, selected=1 and c=0 are premises.")
+    print("INFO: physical readout, phase, anomaly and dynamics identification are not proved; questions above are not exhaustive.")
+    n_pass=sum(bool(ok) for _,ok,_ in PASSES)
+    print(f"PASSED: {n_pass}/{len(PASSES)}")
+    print("ONE_CHILD_CONTRACT_ONLY; NO_PHYSICAL_OR_AUDIT_VERDICT")
+    return 0 if n_pass==len(PASSES) else 1
 
 if __name__ == "__main__":
     sys.exit(main())

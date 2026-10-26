@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_stefan_boltzmann_check.py
-runner_sha256: 8968d1247ac56cdd5bc4c45471a6244c1fce4d509285ca9fa5cf8cea3a25f022
-timeout_sec: 300
+runner_sha256: 01440bf7aec98bc3f78702000fa42dcf18912c220732b36c0c315a5b089e4a65
+input_fingerprint_sha256: 28fac5bca07b69cea27f2bcc069a7aa1656c2669d4c3740ea5d10bf23b3a56dd
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.88
+elapsed_sec: 1.01
 status: ok
 ----- stdout -----
 ========================================================================
@@ -11,7 +12,7 @@ CONDITIONAL CONTINUUM-PHOTON STEFAN-BOLTZMANN CHECK
 ========================================================================
 
 Setup:
-  Block 01 KMS (Gibbs state on harmonic oscillator → Planck dist)
+  supplied Gibbs state on harmonic oscillator → Planck distribution
   supplied continuum photon dispersion and two polarizations
   natural units hbar = c = k_B = 1
 
@@ -112,12 +113,12 @@ SUMMARY
 
 Note: this runner verifies the Stefan-Boltzmann law via
 (a) explicit Gibbs-trace evaluation of the Planck distribution
-    (Test 1, the KMS step from Block 01),
+    (Test 1, under the supplied oscillator and Gibbs premises),
 (b) numerical integration of the Planck energy spectrum (Tests 2-3),
 (c) the Bose-Einstein integral identity (Test 4),
 (d) the Wien displacement law (Test 5), and
 (e) the SI Stefan-Boltzmann constant matching CODATA 2018 (Test 6).
-The proof in the companion theorem note composes Block 01 KMS
+The proof in the companion theorem note combines a supplied Gibbs state
 with supplied oscillator spectrum, linear continuum dispersion and mode-counting.
 
 ----- stderr -----

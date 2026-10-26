@@ -7,7 +7,7 @@ narrowing: 2026-06-20.
 **Primary runner:** [`scripts/frontier_beta_gbare_squared_rescaling_invariance.py`](../scripts/frontier_beta_gbare_squared_rescaling_invariance.py)
 **Runner cache:** [`logs/runner-cache/frontier_beta_gbare_squared_rescaling_invariance.txt`](../logs/runner-cache/frontier_beta_gbare_squared_rescaling_invariance.txt)
 
-**Type:** conditional / support
+**Type:** bounded_theorem
 **Status authority:** independent audit lane only.
 
 ## 2026-05-28 Prior Repair Context (superseded by 2026-06-20 narrowing)
@@ -111,7 +111,7 @@ As a *physical* Wilson action-surface matching statement it is not proved
 here, is not a retained conclusion of this row, and is not imported from
 any Ward-route coupling-closure note.
 
-The pure algebraic core is the already audited standalone identity in
+The pure algebraic core is the standalone algebraic identity in
 [`BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md`](BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md),
 specialized only by naming the abstract variables as `(g, N) =
 (g_bare, N_c)`.
@@ -139,7 +139,7 @@ modify the retained theorem family, and does not promote any status row.
 | `G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md` | reader context for the scoped generator-basis rescaling map; it also treats the Wilson routing as a separate input rather than deriving it; not load-bearing on the narrowed abstract-algebra claim |
 
 The dependency structure is therefore: the load-bearing content is the
-retained abstract joint-rescaling algebra, named `(g, N) = (g_bare, N_c)`.
+abstract joint-rescaling algebra, named `(g, N) = (g_bare, N_c)`.
 The physical Wilson action-surface induction is the open bridge and is not
 supplied. No Ward-route coupling-closure result is used as authority for the
 Wilson reading.
@@ -219,3 +219,11 @@ abstract joint rescaling for c ∈ {1/2, 1, 2, 3} at exact rational
 precision; the physical Wilson-action-surface induction is the open bridge
 and is not asserted.
 ```
+
+## Execution evidence boundary
+
+The primary reads this note, the abstract identity note, and the Gram-scaling
+context note. File existence and text-marker checks are documentary observations,
+not mathematical proofs or audit-status checks. The product identity follows by
+the cancellation displayed above; exact Fraction grids are finite controls.
+No rational-fiber surjectivity is used or asserted here.

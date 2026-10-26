@@ -23,6 +23,7 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
+    "split2_conditional_generator_cofactor_algebra_note_2026-10-23",
     "koide_q_delta_closure_package_readme_2026-04-21"
   ],
   "direct_in_degree": 1,
@@ -31,12 +32,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 3.67,
+  "load_bearing_score": 3.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "564330e6fcf9bc6baf9c185486ddf64d4b513bbea3b6aba016b2d55150aeb8ca",
+  "note_hash": "8642387f90d3782273329b1f530a1c5f7bf79329681e95c855f1ff584eeb7710",
   "note_path": "docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -168,7 +169,7 @@
   },
   "runner_path": "scripts/koide_exact_pair_pole_mass_precision_check_2026_09_30.py",
   "title": "Scalar-Selector Cycle 1 \u2014 Reviewer Package",
-  "transitive_descendants": 8,
+  "transitive_descendants": 7,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

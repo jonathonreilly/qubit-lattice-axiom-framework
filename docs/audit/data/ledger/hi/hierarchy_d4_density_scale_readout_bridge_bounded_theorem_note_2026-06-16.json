@@ -23,20 +23,20 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10"
+    "hierarchy_dimensional_compression_note"
   ],
-  "direct_in_degree": 3,
+  "direct_in_degree": 5,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.795,
+  "load_bearing_score": 11.741,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "8c4a19f6cf5b4088b37dfb71da1554134155264b20f865fe882bc4ae4ac6f3f9",
+  "note_hash": "eb48472a18a263b6014c64f386bb3ec2d3ef1c7500001a9df03c7334c3c31d96",
   "note_path": "docs/HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -1625,7 +1625,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_hierarchy_d4_density_scale_readout_bridge_2026_06_16.py",
-  "title": "Hierarchy D4 Density-Scale Readout Bridge Bounded Theorem Note",
-  "transitive_descendants": 627,
+  "title": "Conditional positive quartic coefficient-to-scale theorem",
+  "transitive_descendants": 604,
   "verdict_rationale": null
 }

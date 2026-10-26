@@ -16,7 +16,7 @@
   "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
-  "claim_type_author_hint_raw": "bounded_theorem (numerically positive at SU(3), N_f=0; scope-bounded)",
+  "claim_type_author_hint_raw": "bounded_theorem \u2014 conditional formal identities and finite numerical diagnostic (SU(3), N_f=0)",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
   "criticality": "medium",
@@ -24,23 +24,20 @@
   "decoration_parent_claim_id": null,
   "deps": [
     "closure_c_l1_hk_msbar_3l_conversion_note_2026-05-10_cl1a",
-    "c_iso_su3_nlo_closure_bounded_note_2026-05-08_su3nlo",
-    "ckm_a_squared_below_w2_y_quantum_closure_theorem_note_2026-04-25",
-    "su3_casimir_fundamental_theorem_note_2026-05-02",
-    "koide_x_l1_msbar_native_scheme_note_2026-05-08_probex_l1_msbar"
+    "c_iso_su3_nlo_closure_bounded_note_2026-05-08_su3nlo"
   ],
-  "direct_in_degree": 1,
+  "direct_in_degree": 2,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.307,
+  "load_bearing_score": 5.0,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "4f1db168379c1ae1e262ccc4fd630f69e56ed684c79fcd02c7fd7ba569fe8fec",
+  "note_hash": "19665a9945bc3397748edbd0c25a07bbeb03326ca9d8ff22f5f3c8a111afba76",
   "note_path": "docs/CLOSURE_T1_Z10_Z20_BZ_INTEGRALS_NOTE_2026-05-10_t1z10z20.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -55,7 +52,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/cl3_closure_t1_z10_z20_2026_05_10_t1z10z20.py",
-  "title": "Closure T1 --- Numerical Computation of Z_10^{HK->MS}, Z_20^{HK->MS} via 4D Brillouin-Zone Integration: Bounded-Tier Source Note",
-  "transitive_descendants": 13,
+  "title": "Closure T1 \u2014 Supplied Wilson integral and conditional coupling-map algebra",
+  "transitive_descendants": 15,
   "verdict_rationale": null
 }

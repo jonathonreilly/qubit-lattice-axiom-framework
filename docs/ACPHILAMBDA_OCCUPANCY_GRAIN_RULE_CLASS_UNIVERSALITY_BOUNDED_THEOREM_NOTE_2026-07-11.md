@@ -40,19 +40,19 @@ Write `q:=p_d`, so `1-q=p_s`, on the supplied closed 2-sector simplex
 
 ### L1. Permanence implies stationarity
 
-The consumed Record clauses are, verbatim:
+The current permanence and readability clauses are:
 
 > “A site never carries more than one record; records are permanent.”
 >
 > “Only records are readable. A readout value is determined by record content
 > alone.”
 >
-> “For any finite collection of pairwise-disjoint records, scalar readout `I`
-> is additive, with `I(empty)=0`.”
+The historical scalar-additivity clause was removed from Record. Here the
+**supplied affine readout** is a separate model hypothesis, not axiom content.
 
 At this surface, this note makes the following **declared reading** of those
 clauses. The registered two-sector occupancy weight is itself permanent record
-content. Additivity and `I(empty)=0` give its normalized two-content readout
+content. We separately supply its normalized two-content readout
 
 ```text
 R(q) = (1-q) I_s + q I_d,
@@ -349,11 +349,10 @@ collapse or derive it.
   monotonicity of the influence odds is insufficient, as N2 shows.
 - The conclusion is unique only in the simplex interior. The two pure-sector
   endpoints are fixed for every admissible `f` and are not equal-power points.
-- The narrowed record-formation boundary says, verbatim: “The surviving no-go
-  is only: the current minimal axioms do **not** force the formation
-  rule/process/state/site/weight/rate.” This theorem is compatible with that
-  boundary: it quantifies over the controlled-copy class and selects no rule,
-  process, state, site, weight, or rate.
+- The corrected formation source supplies occurrence and a nearest-neighbor
+  conditional distribution. Its form/values and concrete production process
+  remain open. This conditional update-family theorem derives no physical
+  formation law and no general nonderivability result.
 - N3 is an exact contrast, not a competing derivation. It shows why the
   supplied orbit-versus-sector grain choice remains load-bearing.
 
@@ -361,23 +360,23 @@ collapse or derive it.
 
 | Dependency | Consumed content |
 |---|---|
-| [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) | Supplies the three verbatim Record-clause passages used in L1. The permanence-to-stationarity reading remains declared here rather than imported as a memo theorem. |
+| [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) | Supplies permanence and content-determined readability, but not scalar additivity. The affine scalar readout is separately supplied in L1. The permanence-to-stationarity reading remains declared here rather than imported as a memo theorem. |
 | [`RECORD_WRITE_ADMISSIBLE_ONE_STEP_CLASS_CONTROLLED_COPY_NARROW_THEOREM_NOTE_2026-07-11.md`](RECORD_WRITE_ADMISSIBLE_ONE_STEP_CLASS_CONTROLLED_COPY_NARROW_THEOREM_NOTE_2026-07-11.md) | Supplies the controlled-copy isometry classification and R5's single register-unitary-orbit statement. This note consumes that class statement as a markdown-link dependency. |
 | [`TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md`](TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md) | Preserves Candidate 1's historical wording and old boundary for quotation only. It has zero premise weight and supplies no physics content. |
 | [`AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`](AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md) / `charged_lepton_k_cpt_2_sector_occupancy_context` | The open obligation is the current registry home for the one declared supplied context: the charged-lepton occupancy surface is supplied here as the K/CPT-orbit partition `{singlet sector, doublet orbit}`. This note does not derive the physical matter action or measure required to close that obligation, so this physical condition remains unresolved here. |
-| `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go` | Boundary context only: occurrence is supplied, while formation rule/process/state/site/weight/rate is not forced. The exact narrowed sentence is quoted in Scope boundary. |
+| `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go` | Boundary context only: occurrence and local conditional distribution are supplied; distribution form/values and production remain open, without a general nonderivability theorem. |
 | `charged_lepton_koide_value_full_chain_of_custody:L9` | Orientation-only supplied-context wording: “`r=1/2` characterizes HS **2-sector equipartition** (`‖aI‖²=‖bC+b̄C²‖²`)”; that cell explicitly does not select the coarse-graining physically. |
 
 ## Runner verification map
 
 | Block | Exact verification | Result |
 |---|---|---:|
-| U1 | Flattened-whitespace verbatim checks for permanence, content-determined readability, and additive `I` with `I(empty)=0` | `PASS=3 FAIL=0` |
+| U1 | Flattened-whitespace verbatim checks for permanence, content-determined readability, and the explicit supplied affine-readout boundary | `PASS=3 FAIL=0` |
 | U2 | Affine additive readout difference, stationarity implication for nondegenerate content, and an exact moved-weight witness | `PASS=3 FAIL=0` |
 | U3 | Repeat-write influence products, exact Lüders normalization, general common-`f` exchange symmetry, and the `k=2` reduction | `PASS=4 FAIL=0` |
 | U4 | Three general symbolic fixed points, interior odds equation, exact solves for `k in {2,3,5/2,4}`, and from-scratch `p_d <=> r` arithmetic | `PASS=11 FAIL=0` |
 | U5 | N1 asymmetric shifted fixed point, N2 identity family, and N3 exact three-sector uniform contrast with `r=1` | `PASS=7 FAIL=0` |
-| U6 | Sibling class and R5 statements, Candidate 1 and its boundary, and the narrowed no-go sentence | `PASS=5 FAIL=0` |
+| U6 | Sibling class and R5 statements, Candidate 1 and its boundary, and the current formation premise inventory | `PASS=5 FAIL=0` |
 
 Run:
 

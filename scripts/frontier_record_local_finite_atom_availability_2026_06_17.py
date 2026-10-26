@@ -259,7 +259,7 @@ def main() -> int:
     check("A5 live Record axiom locks one admissible possibility", "a record locks exactly one admissible local possibility" in minimal_flat)
     check("A6 live memo leaves formation-rule details downstream", "the remaining formation rules (the distribution's form and values, at which site, and at what rate)" in minimal_flat)
     check("A7 live memo keeps downstream bridges open", "The distribution's form and values, dynamics, readout contexts, and physical observable bridges remain downstream." in minimal_flat)
-    check("A8 narrowed no-go withholds the formation rule/process/state/site/weight/rate", "It does not supply the formation rule/process/state/site/weight/rate." in nogo_flat)
+    check("A8 corrected source supplies a local distribution but leaves its form/values and production construction open", "supplies occurrence and a local conditional distribution" in nogo_flat and "does not specify that distribution's functional form or values" in nogo_flat and "No general nonderivability theorem is asserted." in nogo_flat)
     check("A9 theorem boundary explicitly does not derive production", "record production or realization dynamics" in note)
     check("A10 theorem names the declared availability premise and record eligibility", "declared admissibility-instance premise" in note_flat and "record-eligible" in note)
     check(

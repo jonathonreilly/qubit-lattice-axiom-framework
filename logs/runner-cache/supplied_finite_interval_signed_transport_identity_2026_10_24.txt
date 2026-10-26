@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/supplied_finite_interval_signed_transport_identity_2026_10_24.py
+runner_sha256: ff0b4fea67f83bd47bf93c9c46746179fdf99a053cf6490f1c0462787460fd43
+input_fingerprint_sha256: e58c817bf41b21a54277e74d9e23ca309baf7050b0cb506ae7c582769082f581
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.60
+status: ok
+----- stdout -----
+[PASS] positive constant source integral identity
+[PASS] positive constant source ODE on t>0
+[PASS] positive constant source initial limit
+[PASS] positive constant source finite endpoint t=1
+[PASS] negative constant source integral identity
+[PASS] negative constant source ODE on t>0
+[PASS] negative constant source initial limit
+[PASS] negative constant source finite endpoint t=1
+[PASS] nonzero initial homogeneous integral identity
+[PASS] nonzero initial homogeneous ODE on t>0
+[PASS] nonzero initial homogeneous initial limit
+[PASS] nonzero initial homogeneous finite endpoint t=1
+[PASS] zero washout sign-changing source integral identity
+[PASS] zero washout sign-changing source ODE on t>0
+[PASS] zero washout sign-changing source initial limit
+[PASS] zero washout sign-changing source finite endpoint t=1
+[PASS] variable washout integral identity
+[PASS] variable washout ODE on t>0
+[PASS] variable washout initial limit
+[PASS] variable washout finite endpoint t=1
+[PASS] integrable endpoint singularity integral identity
+[PASS] integrable endpoint singularity ODE on t>0
+[PASS] integrable endpoint singularity initial limit
+[PASS] integrable endpoint singularity finite endpoint t=1
+[PASS] negative signed yield is not its absolute value
+[PASS] nonzero initial term cannot be dropped
+[PASS] finite endpoint is not infinite-time replacement
+[PASS] piecewise fixture is continuous at jump
+[PASS] piecewise left equation
+[PASS] piecewise right equation
+[PASS] piecewise global finite integral
+[PASS] documentary scope markers only
+PASS=32 FAIL=0
+
+----- stderr -----
+

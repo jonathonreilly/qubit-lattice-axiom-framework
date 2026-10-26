@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/record_program_theorems_rederived_2026_10_21.py
+runner_sha256: 4f5ffd8975209c4f964e222ed2c7a82eda942e53bdd8bcaadf0efd9913002ecf
+input_fingerprint_sha256: 836e3d83e9debcb15f1a2bae132f401d22652271a2b40f0aac298f5758c546d5
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 1.92
+status: ok
+----- stdout -----
+[PASS] (1a) divergence vanishing for every field fixes b=-a, d=a, c=-e (one free parameter beyond scale)  [{b: -a, c: -e, d: a}]
+[PASS] (1b) self-adjointness then fixes e=-1: the linearised Einstein operator  [{e: -1}]
+[PASS] (1c) pure-gauge fields k_m xi_n + k_n xi_m are annihilated
+[PASS] (1d) a Fierz-Pauli mass term makes the divergence nonzero for generic fields
+[PASS] (2) coupled species: divergence of kappa1 T1 + kappa2 T2 is (kappa1 - kappa2) J, zero for J != 0 only if kappa1 = kappa2  divergence = J*(kappa1 - kappa2)
+[PASS] (3a) O=-T static Fourier particular solution at |k|>0: h_ij = h_00 delta_ij and h_0i = 0  h_00 = -M/(2*k1**2 + 2*k2**2 + 2*k3**2)
+[PASS] (3b) six supplied finite ray cases agree within 0.1% with leading weak-field coefficient (2M/b)(1/v^2 + gamma)  gamma=1 v=1.0: 4.0013e-04 vs 4.0000e-04; gamma=1 v=0.5: 1.0005e-03 vs 1.0000e-03; gamma=1 v=0.2: 5.2031e-03 vs 5.2000e-03; gamma=0 v=1.0: 2.0006e-04 vs 2.0000e-04; gamma=0 v=0.5: 8.0025e-04 vs 8.0000e-04; gamma=0 v=0.2: 5.0016e-03 vs 5.0000e-03
+[PASS] (4) 400 seeded marker cases: weighted D and supplied pure visibility/mixed fidelity envelope satisfy duality  pure max |D^2+V^2-1| 1.6e-15; mixed max D^2+V^2-1 -0.001
+[PASS] (5) compression P beta P=(m/E)P; fixed momentum, E>0, nonzero positive-energy spinor gives density ratio m/E
+[PASS] (5-control) compression does not imply beta preserves positive energy  leakage 1.2649110640673518; compression residual 3.671717528720129e-17
+[PASS] (4-control) unequal-prior distinguishability differs from ordinary trace distance  weighted 0.6000000000000001; ordinary 0.0
+[PASS] (6) H(X) = sum p(r) H(X|r) + H(R) for a record that is a function of X, and the record qubit carries H(R) as entanglement  H(X) 5.089997 = 5.089997; record entropy 0.276253
+per_site: the homogeneous two-derivative operator ansatz, self-adjointness, normalization, static particular solution, metric and marker preparation, ray setup and random seeds are supplied choices.
+lattice_wide: no physical field equation, coupling value, extra-scalar exclusion or empirical identification is established.
+elapsed_seconds 1.7
+
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

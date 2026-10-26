@@ -1,52 +1,51 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_dple_theorem.py
-runner_sha256: 80da104bddfab4ba1b2821550580b661aa970aea231c827f783ac6ff5585ffc2
+runner_sha256: bde1138c817e7fb667ec24f585b813bbfc9006d642e8d590899e61464d4e94fd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.35
+elapsed_sec: 0.52
 status: ok
 ----- stdout -----
-========================================================================
-  DPLE (Dim-Parametric log|det| Extremum) Theorem
-========================================================================
-
-=== T1: det H(t) is deg-d in t (d = 2, 3, 4, 5) ===
-  [PASS] d=2: |coeff(t^3)| ~ 0 (max 1.73e-14)
-  [PASS] d=3: |coeff(t^4)| ~ 0 (max 1.71e-14)
-  [PASS] d=4: |coeff(t^5)| ~ 0 (max 2.83e-13)
-  [PASS] d=5: |coeff(t^6)| ~ 0 (max 8.41e-13)
-
-=== T2: interior Morse-idx-0 CP count <= floor(d/2) ===
-  [PASS] d=2: max interior Morse-idx-0 CP observed <= floor(d/2)=1  (max_obs = 1)
-  [PASS] d=3: max interior Morse-idx-0 CP observed <= floor(d/2)=1  (max_obs = 1)
-  [PASS] d=4: max interior Morse-idx-0 CP observed <= floor(d/2)=2  (max_obs = 1)
-  [PASS] d=5: max interior Morse-idx-0 CP observed <= floor(d/2)=2  (max_obs = 1)
-
-=== T3: F_3 = F4 on DM A-BCC basins ===
-  [PASS] Basin 1: F_3 = True  (F_3 actual=True)
-  [PASS] Basin N: F_3 = False  (F_3 actual=False)
-  [PASS] Basin P: F_3 = False  (F_3 actual=False)
-  [PASS] Basin X: F_3 = False  (F_3 actual=False)
-
-=== T4: d = 4 fragmentation (2 interior Morse-idx-0 CPs) ===
-  [PASS] d = 4: found pair with 2+ interior Morse-idx-0 CPs (fragmentation)  (search result: found)
-    CPs: cnt = 2, roots_in = [np.float64(0.779334594781689), np.float64(0.3094843803184843)]
-
-=== T5: d = 2 degeneracy (F_2 vacuous) ===
-  [PASS] d = 2: both c_2 > 0 and c_2 < 0 cases appear (vacuous signature)  (c_2>0: 82, c_2<0: 318)
-
-=== T6: d = 3 retained F4 discriminant = F_3 ===
-  [PASS] Basin 1: F_3 = F4_ret  (Delta_ret = +7.804)  (F_3=True, F4_ret=True)
-  [PASS] Basin N: F_3 = F4_ret  (Delta_ret = -10.107)  (F_3=False, F4_ret=False)
-  [PASS] Basin P: F_3 = F4_ret  (Delta_ret = +458.736)  (F_3=False, F4_ret=False)
-  [PASS] Basin X: F_3 = F4_ret  (Delta_ret = -4715189.966)  (F_3=False, F4_ret=False)
-
-=== T7: d = 3 binary-selector uniqueness (CP histogram) ===
-  [PASS] d = 3: CP count in {0, 1} dominates (>= 95%)  (CP=0: 788, CP=1: 212, CP>=2: 0)
-
-========================================================================
-PASS=19 FAIL=0
-========================================================================
+PASS: d=2 Hermitian witness determinant 
+PASS: negative p maximum is W minimum 
+PASS: exact log curvature is +2 
+PASS: numeric classifier sees nonvacuous d=2 W minimum 
+PASS: p minimum on negative sheet is W maximum 
+PASS: singular stationary point excluded 
+PASS: constant pencil has no Morse minima 
+PASS: quadratic degree drop in cubic container 
+PASS: d=4 determinant factorization 
+PASS: d=4 exact W minimum 1/2 - sqrt(3)/8 
+PASS: d=4 exact W minimum sqrt(3)/8 + 1/2 
+PASS: opposite determinant pencils have identical logarithmic derivative 
+PASS: same sign is not same inertia 
+PASS: positive baseline/minimum can precede a singularity 
+PASS: cubic plus branch curvature, c3=-1 
+PASS: cubic plus branch curvature, c3=1 
+PASS: finite d=2 W count diagnostic max=1; not proof
+PASS: finite d=2 interpolation holdout residual=7.850e-16
+PASS: finite d=3 W count diagnostic max=1; not proof
+PASS: finite d=3 interpolation holdout residual=1.951e-15
+PASS: finite d=4 W count diagnostic max=1; not proof
+PASS: finite d=4 interpolation holdout residual=8.718e-15
+PASS: finite d=5 W count diagnostic max=1; not proof
+PASS: finite d=5 interpolation holdout residual=2.623e-14
+INFO supplied decimal basin 1: coefficients=[5.028314888437672, -13.886141940578355, 15.110887463853157, -5.293886825219027], (t,p,pdd,Wdd)=[(0.7755698013406398, 0.8783091593368333, 5.587102407576605, 6.361202485688687)], positive-F4=True
+PASS: cubic formula agrees with root classifier for basin 1 
+PASS: Jacobi matrix curvature independently matches at basin 1 matrix=6.36120248568873, polynomial=6.361202485688687
+INFO supplied decimal basin N: coefficients=[5.028314888437672, -10.864936300914712, 9.458048669955206, -3.0545137383552188], (t,p,pdd,Wdd)=[], positive-F4=False
+PASS: cubic formula agrees with root classifier for basin N 
+INFO supplied decimal basin P: coefficients=[5.0283148884376745, -8.550379074307715, -15.207076181344672, 8.868251704815522], (t,p,pdd,Wdd)=[], positive-F4=False
+PASS: cubic formula agrees with root classifier for basin P 
+INFO supplied decimal basin X: coefficients=[5.028314888442382, -223.86606828851697, 3315.971695933622, -23393.240393943663], (t,p,pdd,Wdd)=[], positive-F4=False
+PASS: cubic formula agrees with root classifier for basin X 
+per_element: explicit finite matrix determinants and derivative coefficients were checked.
+per_site: checked and not executed — no physical lattice-site dynamics is defined here.
+per_mode: nonsingular nondegenerate critical points are classified by pdd/p, with exact controls.
+per_block: exact dimensions 2, 3, 4 and sampled dimensions 2 through 5 were exercised.
+lattice_wide: checked and not executed — no volume limit or physical source selection was tested.
+TOTAL: PASS=29 FAIL=0
+Scope: conditional finite-pencil mathematics; no physical dimension, sheet, endpoint or audit status selected.
 
 ----- stderr -----
 

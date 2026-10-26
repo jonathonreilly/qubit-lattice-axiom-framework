@@ -23,7 +23,8 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19"
+    "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+    "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17"
   ],
   "direct_in_degree": 1,
   "effective_status": "unaudited",
@@ -36,7 +37,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "4f21abcf286f66b77112465996269957aa25ca986a9e533f99aa4408b89e0b92",
+  "note_hash": "c5179c67b6f4f52b2ebaa1e79f76c4bbb3dc3185133140da0aad3590412bac59",
   "note_path": "docs/CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -99,7 +100,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -108,7 +109,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_cluster_decomp_delta_x_su3_axis_permutation_2026_06_02.py",
-  "title": "Operator-Theoretic Delta_x > 0 Support via Axis-Permutation from the Finite-Lambda SU(3) Temporal-Axis Theorem",
+  "title": "Axis relabeling of a supplied finite-volume SU(3) kernel",
   "transitive_descendants": 3,
   "verdict_rationale": null
 }

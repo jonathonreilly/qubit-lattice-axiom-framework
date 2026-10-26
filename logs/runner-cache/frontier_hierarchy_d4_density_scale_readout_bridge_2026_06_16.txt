@@ -1,14 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_d4_density_scale_readout_bridge_2026_06_16.py
-runner_sha256: f6911850ced876af0ba90258ca80e7103b05db6a15b28fde23db21176b5869b8
+runner_sha256: 1e7b58587e062d71adaa6e51b34705e65790aeb6cdf6a3de0e890eebfb2f163b
+input_fingerprint_sha256: 5bc19caf7ff758c61e681e1f74b2aac929398ba0be6e939f995160d26e9e2796
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 Hierarchy D=4 density-scale readout bridge verifier
 Status authority: independent audit lane only.
-No observed target value, fitted coefficient, textbook import, or new axiom is load-bearing.
+Premises: positive coefficients and a supplied quartic law; no physical identification is proved.
 
 ==============================================================================
 Fixed positive D=4 density algebra
@@ -23,13 +24,13 @@ PASS: smaller coefficient gives upward scale rescaling
       ratio=1.189207115002721
 
 ==============================================================================
-Exact endpoint applications
+Supplied coefficient applications
 ==============================================================================
-PASS: APBC small-m coefficient gives A_2 = 1/(8 u0^2)
+PASS: supplied finite coefficient gives A_2 = 1/(8 u0^2)
       A_2=0.125000000000000
-PASS: APBC small-m coefficient gives A_4 = 1/(7 u0^2)
+PASS: supplied finite coefficient gives A_4 = 1/(7 u0^2)
       A_4=0.142857142857143
-PASS: continuum APBC average gives A_inf = 1/(4 sqrt(3) u0^2)
+PASS: supplied angular-average formula is consistent with A_inf = 1/(4 sqrt(3) u0^2)
       A_inf=0.144337567297406
 A_2/A_4 = 7/8
 v_4/v_2 = (7/8)^(1/4) = 0.967168210133835
@@ -46,21 +47,12 @@ PASS: temporal-average scalar endpoint has the same inverse-fourth-root placemen
 PASS: temporal-average scalar endpoint compresses downward relative to L_t=2
 
 ==============================================================================
-Dependency status checks
+Documentary scope checks (not proof or audit status)
 ==============================================================================
-PASS: dependency hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10 is retained-grade in live ledger
-      effective_status=retained
-PASS: endpoint-note audit status is reported only as context, not load-bearing
-      hierarchy_effective_potential_endpoint_note effective_status=retained_bounded
+PASS: source states positive supplied quartic premises and open physical identification
+PASS: parent keeps coefficient identification open
 
-==============================================================================
-Source boundary hygiene
-==============================================================================
-PASS: bridge note states theorem, boundary, dependencies, and expected scorecard
-      missing=[]; present_forbidden=[]
-PASS: parent dimensional-compression note wires bridge as source-side support but keeps physical VEV premise open
-
-TOTAL: PASS=17 FAIL=0
+TOTAL: PASS=15 FAIL=0
 
 ----- stderr -----
 

@@ -14,17 +14,17 @@
   "chain_closure_explanation": null,
   "claim_id": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
   "claim_scope": null,
-  "claim_type": "no_go",
-  "claim_type_author_hint": "no_go",
-  "claim_type_author_hint_raw": "no_go",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "record_formation_append_consistency_sweep_2026-07-04",
-    "minimal_axioms"
+    "minimal_axioms",
+    "record_formation_append_consistency_sweep_2026-07-04"
   ],
   "direct_in_degree": 12,
   "effective_status": "unaudited",
@@ -32,12 +32,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 15.358,
+  "load_bearing_score": 15.301,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "c0b92c68149f45701a3d6db7bbf2022d00c70e55c065f9eef6f1dd692d9e61c3",
+  "note_hash": "0499f08257a36f6359aaa7527e5912b825770f7e418baf8d00791e7641a79889",
   "note_path": "docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -4830,7 +4830,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_record_formation_not_unconditionally_forced_by_minimal_axioms.py",
-  "title": "Minimal Axioms Force Record Occurrence But Not the Formation Rule/Process/State/Site/Weight/Rate -- Narrow No-Go",
-  "transitive_descendants": 655,
+  "title": "Record formation: current premise boundary and finite unitary controls",
+  "transitive_descendants": 630,
   "verdict_rationale": null
 }

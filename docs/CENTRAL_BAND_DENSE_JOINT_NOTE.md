@@ -1,5 +1,7 @@
 # Central-Band Dense Joint Card Note
 
+**Type:** bounded_theorem
+
 **Date:** 2026-04-02  
 **Status:** complete, bounded same-graph joint card
 
@@ -7,7 +9,7 @@ This note records the same-graph joint card for the dense central-band pocket
 that is already Born-clean on the corrected three-slit harness.
 
 Script:
-[`scripts/central_band_dense_joint_card.py`](/Users/jonreilly/Projects/Physics/scripts/central_band_dense_joint_card.py)
+[`scripts/central_band_dense_joint_card.py`](../scripts/central_band_dense_joint_card.py)
 
 ## Setup
 

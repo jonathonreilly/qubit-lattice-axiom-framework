@@ -1,0 +1,5 @@
+{
+  "count": 17,
+  "only_changed_predicate": "fixed-slack generator norm RT3 ->1+RT3",
+  "all_other_predicates_and_thresholds_identical": true
+}

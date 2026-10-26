@@ -34,7 +34,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "629da73c2ec689614ee3189d2b55c5be2aa3f725bc1da2293376cbc6de28855d",
+  "note_hash": "349212275df01eda88bfbe62b7c9c539c0a7bb19dbd5c322a144e6eaa283f562",
   "note_path": "docs/KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -453,7 +453,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "restoration_history": [
     {
       "archived_at": "2026-08-03T07:42:22.350616+00:00",
@@ -471,7 +471,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_koide_native_zero_section_closure_route.py",
-  "title": "Koide Native Zero-Section Defined Route Algebra",
+  "title": "Supplied zero-source, real commutant and endpoint-law algebra",
   "transitive_descendants": 1,
   "verdict_rationale": null
 }

@@ -16,17 +16,14 @@
   "claim_scope": null,
   "claim_type": "meta",
   "claim_type_author_hint": "meta",
-  "claim_type_author_hint_raw": "meta (audit-companion / hygiene)",
+  "claim_type_author_hint_raw": "meta (historical audit-companion / hygiene)",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "key_terminology",
-    "dm_selector_first_shoulder_exit_threshold_support_note_2026-04-21",
-    "dm_neutrino_source_surface_atomic_witness_volume_selector_nonrealization_note_2026-04-18",
-    "dm_selector_threshold_stabilization_support_theorem_note_2026-04-21"
+    "dm_selector_first_shoulder_exit_threshold_support_note_2026-04-21"
   ],
   "direct_in_degree": 0,
   "effective_status": "meta",
@@ -39,7 +36,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "c6fd5eb9c3684ba33836cef83b894cd07306823fc301dccf7dfc60f09211f0bf",
+  "note_hash": "d2a14b257b648ccb072d25bde94ecc8e93b43e5a2da0043b43a56851a83212d8",
   "note_path": "docs/DM_SELECTOR_FIRST_SHOULDER_EXIT_THRESHOLD_SUPPORT_CRITICALITY_BUMP_HYGIENE_COMPANION_NOTE_2026-06-04.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -53,8 +50,8 @@
     "D": 0,
     "total_pass": 0
   },
-  "runner_path": "scripts/audit_companion_dm_selector_first_shoulder_exit_threshold_support_criticality_hygiene_2026_06_04.py",
-  "title": "DM Selector First-Shoulder-Exit Threshold Support: Criticality-Bump Audit-Readiness Hygiene Companion",
+  "runner_path": null,
+  "title": "First-shoulder criticality-bump companion: historical provenance",
   "transitive_descendants": 0,
   "verdict_rationale": null
 }

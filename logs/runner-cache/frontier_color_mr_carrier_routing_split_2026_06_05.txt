@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_color_mr_carrier_routing_split_2026_06_05.py
-runner_sha256: 6211262ccf2951db8ba52601defc5161339179e4a260808cc966d6cfd026f00f
-timeout_sec: 120
+runner_sha256: a3f2301200d9b7ff5dcb368944d887d31f97a4c77ec86b11205fdb2c10f2032e
+input_fingerprint_sha256: 81b4e9a2d449fa88d204a7835f2f0b57de6a81f44fd476b4f7a42b1c51ee53dd
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ==============================================================================

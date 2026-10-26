@@ -1,15 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_occupancy_grain_rule_class_universality_2026_07_11.py
-runner_sha256: 5c7ae25c3f00e4e4acd95ad50b481ba617209bcc3c9dcaaaeac20272bfa14bac
-timeout_sec: 120
+runner_sha256: d06d5f8e0f0f4fb4bef12c284b465264a1b376aceae9b2c47ffcdc307ff0f7f3
+input_fingerprint_sha256: de973c29773fc298060b3a1055a83f6a5175c027c26629d8b3f8160c3eb9c631
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.42
+elapsed_sec: 0.56
 status: ok
 ----- stdout -----
 [U1] Verbatim Record-clause memo checks
 U1.1 PASS: permanence clause occurs verbatim
 U1.2 PASS: readability clause occurs verbatim
-U1.3 PASS: additivity and I(empty)=0 occur verbatim
+U1.3 PASS: affine readout is supplied; scalar additivity is not Record axiom content
 [U2] Permanence-to-stationarity mechanical implication
 U2.1 PASS: a moved weight changes the affine content readout by (t-q)(I_d-I_s)
 U2.2 PASS: nondegenerate content readout equality forces t=q
@@ -44,7 +45,7 @@ U6.1 PASS: sibling controlled-copy class statement is consumed verbatim
 U6.2 PASS: sibling R5 single-register-orbit statement is consumed verbatim
 U6.3 PASS: adoption Candidate 1 is quoted verbatim in the theorem note
 U6.4 PASS: adoption value and sector-weight boundary is consumed verbatim
-U6.5 PASS: narrowed formation no-go boundary is consumed verbatim
+U6.5 PASS: current formation premise inventory is consumed; no nonderivability inferred
 TOTAL: PASS=33 FAIL=0
 
 ----- stderr -----

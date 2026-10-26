@@ -1,16 +1,19 @@
 # Fixed Field Grown Transfer Scout Note
 
+**Type:** bounded_theorem
+**Current scope:** Supplied single-seed grown-row numerical comparison and cancellation checks; no general geometry or physical electromagnetic theorem.
+
 **Date:** 2026-04-06  
 **Status:** proposed_retained narrow grown-geometry signed-source positive
 
 ## Artifact chain
 
-- [`scripts/fixed_field_grown_transfer_scout.py`](/Users/jonreilly/Projects/Physics/scripts/fixed_field_grown_transfer_scout.py)
-- [`logs/2026-04-06-fixed-field-grown-transfer-scout.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-fixed-field-grown-transfer-scout.txt)
+- [`scripts/fixed_field_grown_transfer_scout.py`](../scripts/fixed_field_grown_transfer_scout.py)
+- [`logs/2026-04-06-fixed-field-grown-transfer-scout.txt`](../logs/2026-04-06-fixed-field-grown-transfer-scout.txt)
 - companion grown-geometry control:
-  [`docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md)
+  [`docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md`](CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md)
   and
-  [`logs/2026-04-06-grown-geometry-complex-action-companion-replay.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-grown-geometry-complex-action-companion-replay.txt)
+  [`logs/2026-04-06-grown-geometry-complex-action-companion-replay.txt`](../logs/2026-04-06-grown-geometry-complex-action-companion-replay.txt)
 
 ## Question
 
@@ -48,7 +51,7 @@ Reduction / linearity checks:
 
 Grown-geometry control cross-check from the companion replay:
 
-- exact `gamma = 0` reduction delta: `+2.460475e-01`
+- baseline deflection, equal to the complex-action value at `gamma = 0`: `+2.460475e-01`; this is the deflection itself, not their difference
 - Born proxy on seed `0`: `|I3|/P = 1.456e-15`
 - weak-field `F~M` on the checked grown-row sweep: `1.000`
 

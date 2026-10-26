@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_kolb_turner_freezeout_prefactor_from_supplied_cosmology_boundary.py
-runner_sha256: 164b4d30636bb0507496f478d9218df25a20652fb828e7aa28173054e4a3717f
+runner_sha256: 7be1eeee9912f7eabd61833d137ea07d57480f4abf7e317c5849e8c2ac0198bf
+input_fingerprint_sha256: f8a79d8d9ab2a9b5ba35207129cac033083364db1560943880a84e94c40d26e3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.38
+elapsed_sec: 0.21
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -41,6 +42,11 @@ Part 1: symbolic setup
 Part 2: (P*) identity reduces to 0 parametrically
 ----------------------------------------------------------------------------------------
   [PASS] (P*) K - s_0 * sqrt(45/pi) / (rho_c/h^2) = 0 parametrically  (diff = 0)
+  [PASS] positive supplied mass cancels in leading-tail abundance
+  [PASS] old mass-omitting tail gives factor two at m_X=2
+  [PASS] documentary corrected tail boundary: m_X>0
+  [PASS] documentary corrected tail boundary: Y_infty  ~
+  [PASS] documentary corrected tail boundary: No bound on deltaY
 
 ----------------------------------------------------------------------------------------
 Part 3: explicit canonical form
@@ -60,7 +66,7 @@ Part 4: numerical evaluation against textbook K
   K (this note, leading) = 1.038550e+09 GeV^-1
   K (textbook KT Eq. 5.49) = 1.070000e+09 GeV^-1
   relative deviation = -2.939%
-  [PASS] K (this note) reproduces textbook 1.07e9 GeV^-1 within 5% (Boltzmann coefficient gap)  (K(this) = 1.0385e+09, K(KT) = 1.0700e+09, dev = -2.939%)
+  [PASS] K (this note) reproduces textbook 1.07e9 GeV^-1 within 5% (supplied comparison only)  (K(this) = 1.0385e+09, K(KT) = 1.0700e+09, dev = -2.939%)
 
 ----------------------------------------------------------------------------------------
 Part 5: counterfactual / scaling probes
@@ -75,22 +81,22 @@ Part 5: counterfactual / scaling probes
 Part 6: symbolic free-symbol residual check
 ----------------------------------------------------------------------------------------
   [PASS] (P*) lhs - rhs has no free residual symbols  (lhs - rhs = 0)
-  [PASS] K_def free symbols = {g_*S(T_0), T_0, H_100, M_Pl}  (got {H_100, T_0, M_Pl, g_starS_T0})
-  [PASS] K_explicit free symbols = {g_*S(T_0), T_0, H_100, M_Pl}  (got {H_100, T_0, M_Pl, g_starS_T0})
+  [PASS] K_def free symbols = {g_*S(T_0), T_0, H_100, M_Pl}  (got {T_0, H_100, g_starS_T0, M_Pl})
+  [PASS] K_explicit free symbols = {g_*S(T_0), T_0, H_100, M_Pl}  (got {T_0, H_100, g_starS_T0, M_Pl})
 
 ----------------------------------------------------------------------------------------
 Summary
 ----------------------------------------------------------------------------------------
 
-  PASS = 19
+  PASS = 24
   FAIL = 0
-  TOTAL = 19
+  TOTAL = 24
 
 VERDICT: (P*) algebraic prefactor identity holds parametrically; numerical
-evaluation reproduces textbook K = 1.07e9 GeV^-1 within ~3% Boltzmann-tail
-subleading-coefficient gap; all scaling probes confirm the expected exponents.
+evaluation compares supplied K = 1.07e9 GeV^-1 within ~3%; no derived
+kinetic correction; scaling probes check the supplied formula exponents.
 
-TOTAL: PASS=19 FAIL=0
+TOTAL: PASS=24 FAIL=0
 
 ----- stderr -----
 

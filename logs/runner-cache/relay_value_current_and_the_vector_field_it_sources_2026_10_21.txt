@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/relay_value_current_and_the_vector_field_it_sources_2026_10_21.py
+runner_sha256: 27e4bbc50759d4910a4232edb0dd134bc7407b9d708529e764f6f0e76227438c
+input_fingerprint_sha256: 8d82985e2320462694eb64e1c2fd8f193de238828fca5352db00489cdf5259f3
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.78
+status: ok
+----- stdout -----
+[PASS] (1) relay value current: rho(t+1) - rho(t) = inflow - outflow on every site and tick, to rounding  max violation 3.5e-18 over 6 ticks on 24^3
+[PASS] (2) imposed polynomial identity for all k,A fixes b=-a within supplied ansatz (including a=0); mass term has nonzero divergence  [{b: -a}]
+[PASS] (3) normalized a=1, O0=-q, Coulomb gauge, |k|>0: particular A_0=-q/|k|^2, A_i=0  A_0 = -q/(k1**2 + k2**2 + k3**2)
+[PASS] (4) imposed conservation with nonzero exchange J implies e1=e2 in the two-current model
+[PASS] (domain-controls) zero operator and zero exchange satisfy divergence identities; zero momentum cannot source nonzero q
+per_site: fixed values, conserved relay counts, step rule, expected weights, walk/packet, homogeneous linear vector ansatz and off-shell identity, static normalization and exchange domain are supplied choices.
+lattice_wide: no gauge group beyond one conserved value, charge value, field dynamics on the lattice or empirical identification is established.
+elapsed_seconds 0.6
+
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

@@ -1,5 +1,7 @@
 # Electromagnetic Coupling e = g sin(θ_W) = g' cos(θ_W) from EWSB Pattern
 
+**Type:** bounded_theorem
+
 **Date:** 2026-05-02
 **Status:** exact algebraic identity / support theorem on cycle 18 (EWSB
 pattern Q = T_3 + Y/2). NOT proposed_retained.
@@ -7,7 +9,13 @@ pattern Q = T_3 + Y/2). NOT proposed_retained.
 
 ## 0. Statement
 
-**Theorem.** Given:
+**Theorem (conditional coefficient identity).** Let `g > 0`, `gprime > 0`
+(where `gprime` denotes `g'`) and `0 < θ_W < π/2`. Treat `T_3` and
+`Y/2` as linearly independent operators in the coefficient-matching
+space, not merely two numerical charges of a single state. Thus matching
+both coefficients is justified. The covariant derivative, mixing,
+charge definition and photon-coupling form below are supplied conventions;
+this note does not derive their physical realization. Given:
 1. EWSB pattern Q = T_3 + Y/2 from
    [`EWSB_PATTERN_FROM_HIGGS_Y_NOTE_2026-05-02.md`](EWSB_PATTERN_FROM_HIGGS_Y_NOTE_2026-05-02.md)
    (cycle 18, PR #281);
@@ -44,20 +52,28 @@ g' cos(θ_W) =  e        (matching Y/2 coefficient)
 
 So `e = g sin(θ_W) = g' cos(θ_W)`. ∎
 
-Equivalently: tan(θ_W) = g'/g (consistent with cycle 19 sin²θ_W^GUT = 3/8 and cycle 21 cos²θ_W = M_W²/M_Z²).
+Equivalently on the stated positive-coupling/first-quadrant domain,
+`tan(θ_W) = g'/g`. Values `sin²θ_W = 3/8` and the additional mass-law
+illustration `M_W²/M_Z² = 5/8` are supplied examples only. This note
+does not certify the cited SU5 normalization derivation or derive masses.
 
 ## 1. Z-coupling structure
 
 The Z-coupling from the same calculation:
 ```text
-g_Z  =  g cos(θ_W) − g' sin(θ_W)·(Y/2 / T_3)  ...
+Z_μ coefficient = g T_3 cos(θ_W) − g' (Y/2) sin(θ_W)
 ```
-After grouping, the standard result is:
+For `cos(θ_W) != 0`, using the matching relations above, grouping gives:
 ```text
 Z_μ coupling  =  (g/cos(θ_W)) (T_3 − Q sin²(θ_W))
 ```
 
-This is the SM-standard Z-coupling form, derivable from cycle 18 + admitted SM gauge structure.
+This is a coefficient identity on the supplied domain. In detail,
+`gprime = g sin(θ_W)/cos(θ_W)` gives the `T_3` coefficient
+`(g/cos θ_W)(1-sin²θ_W)=g cos θ_W` and the `Y/2` coefficient
+`-(g/cos θ_W)sin²θ_W=-gprime sin θ_W`. No division by `T_3`
+is used, so the expression also applies on states with `T_3=0`.
+It does not derive the gauge structure or any absolute coupling value.
 
 ## 2. Status
 
@@ -81,3 +97,13 @@ bare_retained_allowed: false
 - Cycle 18 / PR #281 — [`EWSB_PATTERN_FROM_HIGGS_Y_NOTE_2026-05-02.md`](EWSB_PATTERN_FROM_HIGGS_Y_NOTE_2026-05-02.md)
 - Cycle 19 / PR #282 — [`SIN_SQUARED_THETA_W_GUT_FROM_SU5_NOTE_2026-05-02.md`](SIN_SQUARED_THETA_W_GUT_FROM_SU5_NOTE_2026-05-02.md)
 - Cycle 21 / PR #284 — [`W_Z_MASS_RATIO_FROM_EWSB_NOTE_2026-05-02.md`](W_Z_MASS_RATIO_FROM_EWSB_NOTE_2026-05-02.md)
+
+## Verification boundary
+
+Own-note substring checks are documentary. The original three Fraction
+cases check squared identities on a finite set, not a universal signed
+proof. Additional rational positive-coupling fixtures check signed photon
+and both Z coefficients, include a `T_3=0` state and reject a wrong-sign
+photon choice that the squared checks cannot distinguish. The general
+identity is the coefficient proof above. The `3/8` and `5/8` checks are
+conditional supplied-number illustrations, not upstream proof certification.

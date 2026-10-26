@@ -410,7 +410,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5",
+  "note_hash": "f2665b763f69e4baef4648d15b517b2701d975a8131f4665703c40c07283782c",
   "note_path": "docs/CANONICAL_HARNESS_INDEX.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

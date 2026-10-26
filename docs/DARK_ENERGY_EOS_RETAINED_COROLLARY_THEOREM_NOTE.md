@@ -1,57 +1,84 @@
-# Dark-energy EOS on a supplied stationary vacuum sector
+# Dark-Energy EOS Conditional Structural Corollary
 
-**Claim type:** bounded_theorem (supplied conditional scope; no audit status change)
-**Date:** 2026-04-18; source scope corrected 2026-10-21
-**Status:** conditional source corollary; audit status is owned by the independent audit pipeline.
+**Type:** bounded_theorem
+**Status:** conditional on supplied comparison-radius and vacuum premises.
 **Script:** `scripts/frontier_dark_energy_eos_retained_corollary.py`
 
-## Supplied premises
+The former inherited-closure and standalone-retained promotion claims are withdrawn.
+The corrected parent `COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md`
+distinguishes curvature `ell` from `a_sc(t) = ell cosh(t/ell)`.
+The physical slice gap is `Lambda sech^2(t/ell)`, equal to Lambda only at
+its minimum slice. This note supplies `R = ell`; it does not derive it.
 
-This note uses the following source assumptions, not independently retained framework conclusions:
+## Theorem
 
-1. A chosen `S³` geometric carrier and spectral identity `lambda_1(S³_R)=3/R²`, from [S3 general R](S3_GENERAL_R_DERIVATION_NOTE.md) and [S3 cap](S3_CAP_UNIQUENESS_NOTE.md).
-2. Identification of the vacuum cosmological constant with that eigenvalue, `Lambda=3/R²`, as in [spectral-gap identity](COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md).
-3. A stationary vacuum curvature radius `R>0`, with `dR/dt=0`, and constant c and G. R here is the vacuum curvature scale, not the evolving FRW scale factor `a_sc(t)`. The [discrete assembly](UNIVERSAL_GR_DISCRETE_GLOBAL_CLOSURE_NOTE.md) and [smooth solution-class note](UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_GLOBAL_SOLUTION_CLASS_NOTE.md) are conditional source models.
-4. A positive, separately conserved vacuum component on an expanding or contracting FRW background (`H!=0`), with the continuity equation supplied by the [continuum-model note](UNIVERSAL_QG_CANONICAL_TEXTBOOK_CONTINUUM_GR_CLOSURE_NOTE.md).
+Let the supplied surface carry:
 
-At the reviewed source revision `f24d17d97d372df977476e4a69674577f31af575`, this row and all six named upstream rows are unaudited in the ledger. Source prose cannot promote them. The [current axioms](MINIMAL_AXIOMS_2026-06-29.md) do not by themselves supply the vacuum identification, stationary sector or FRW dynamics.
+1. supplied `S^3` spatial topology on the accepted `PL S^3 x R` carrier
+   (authority:
+   [`S3_CAP_UNIQUENESS_NOTE.md`](S3_CAP_UNIQUENESS_NOTE.md),
+   [`S3_GENERAL_R_DERIVATION_NOTE.md`](S3_GENERAL_R_DERIVATION_NOTE.md));
+2. the supplied comparison identification `Lambda_vac = lambda_1(S^3_R) = 3/R^2`,
+   with `R = ell` the fixed de Sitter curvature radius. The sphere is auxiliary,
+   or the minimum spatial slice, not a general evolving physical slice.
+   The corrected spectral-gap parent does not independently close this identification;
+3. the stationary vacuum condition on the supplied smooth global
+   gravitational stationary/Gaussian solution class, which by definition
+   has `d R / d t = 0` for the de Sitter curvature scale `R = R_Lambda`
+   (authority:
+   [`UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_GLOBAL_SOLUTION_CLASS_NOTE.md`](UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_GLOBAL_SOLUTION_CLASS_NOTE.md),
+   [`UNIVERSAL_GR_DISCRETE_GLOBAL_CLOSURE_NOTE.md`](UNIVERSAL_GR_DISCRETE_GLOBAL_CLOSURE_NOTE.md)).
 
-## Conditional corollary
+In what follows we write `a_sc(t)` for the FRW scale factor and `l_P` for the
+fundamental lattice spacing, to keep those separate from the S^3 radius `R`.
 
-Use energy density (not mass density):
+**Theorem.** Under conditions (1)–(3), the dark-energy density is exactly
+time-independent,
 
-```text
-rho_Lambda = c^4 Lambda/(8 pi G) = 3 c^4/(8 pi G R²) > 0.
-```
+  `rho_Lambda(t) = (c^4 / (8 pi G)) * Lambda = (3 c^4) / (8 pi G R^2) = const`,
 
-With R fixed, `d rho_Lambda/dt=0`. The separately conserved FRW continuity equation is
+and therefore the dark-energy equation of state is
 
-```text
-d rho/dt + 3 H (1+w) rho = 0.
-```
+  `w = -1   exactly`,
 
-For `H!=0` this gives `w=-1`. It also gives the constant CPL parameters `w_0=-1, w_a=0` on this entire fixed sector. If H vanishes identically, the continuity equation alone does not determine w. Energy exchange with another component would change the premise and invalidate this inference.
+with CPL parameters `w_0 = -1`, `w_a = 0`. The supplied lattice-discretization
+correction is a constant shift `|delta Lambda / Lambda| = (1/4)(l_P / R)^2`
+(authority:
+[`DARK_ENERGY_EOS_NOTE.md`](DARK_ENERGY_EOS_NOTE.md), Part 2), hence carries
+no additional time dependence and does **not** shift `w`.
 
-If the correction model from [dark-energy EOS](DARK_ENERGY_EOS_NOTE.md) is additionally supplied,
+**Proof.** Conditions (1)–(2) give `Lambda_vac = 3 / R^2` as a supplied
+identity. Condition (3) gives `d R / d t = 0`, so `d Lambda_vac / d t = 0`
+and `d rho_Lambda / d t = 0`. The
+continuity equation for any cosmological fluid on the supplied smooth FRW
+target is
 
-```text
-Lambda_eff = (3/R²) [1 - (l_P/R)²/4],
-```
+  `d rho / d t + 3 H (1 + w) rho = 0`,
 
-fixed R and l_P make this a constant shift. Where the effective energy density remains positive, the same continuity argument applies. This note does not derive that correction or replace a constant by an arbitrarily small time-dependent drift.
+which for `rho = rho_Lambda > 0` and `d rho_Lambda / d t = 0` for `H != 0` forces
+`(1 + w) = 0`, i.e. `w = -1`. Equivalently,
+`w = -1 - (1/3) d ln rho / d ln a_sc` and
+`d ln rho_Lambda / d ln a_sc = 0`. The supplied lattice correction enters as
+`Lambda_eff = (3 / R^2) * (1 - (1/4)(l_P / R)^2)`, which is
+`a_sc(t)`-independent when `l_P` and `R` are both fixed constants, so
+`d rho_Lambda / d t = 0` is preserved. □
 
-## What remains open
 
-The calculation is a standard conditional FRW consequence. It does not derive the stationary vacuum sector, its identification with the observed dark-energy component, a value of R or Lambda, matter-content matching, or an observational precision. The [cosmology-scale note](COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md) and [numerical Lambda result](COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md) remain separate source questions.
+## Scope and diagnostic limits
 
-A measured departure from w=-1 would challenge the joint use of this stationary, separately conserved vacuum as the observed component; it would not isolate which supplied premise fails. No current observational bound or guaranteed number of decimal places is asserted here.
+All conclusions above are conditional on the supplied constant vacuum density and
+FRW conservation, with nonzero H on the interval (and continuity at isolated zeros).
+No inherited framework closure, numerical Lambda selection, or publication upgrade
+is established. CPL `(w_0, w_a) = (-1, 0)` and absence of phantom crossing describe this supplied
+constant-density model, not an unconditional observational prediction.
 
-## Source correction and reproduction
+For fixed lattice spacing and comparison radius the supplied lattice correction
+is constant and gives zero drift. The old diagnostic `(l_P/R)^2` is only an amplitude
+scale. A varying correction requires a bound on its logarithmic derivative before
+it bounds delta w: `delta w = -(1/3) d ln(1+delta)/d ln a_sc`.
+For example delta = epsilon sin(N ln a_sc) has amplitude epsilon but derivative
+amplitude epsilon N. No such derivative bound is derived here.
 
-The original promotion narrative and proposed publication row are recoverable at source revision `f24d17d97d372df977476e4a69674577f31af575`. They are not current authority. This correction changes no ledger verdict or publication-table status. Those generated or independently owned surfaces require their own review.
-
-```bash
-python3 scripts/frontier_dark_energy_eos_retained_corollary.py
-```
-
-The runner checks the fixed-parameter conditional algebra and explicit premise-failure controls. Such checks do not derive the cosmological identification or grant retained status.
+The complete prior note, including publication-row proposals and observational
+claims, is preserved in the author recovery package and original Git history;
+those inherited-closure claims are withdrawn, not silently promoted.

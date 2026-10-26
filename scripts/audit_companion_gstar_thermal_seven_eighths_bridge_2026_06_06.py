@@ -9,6 +9,8 @@ axiom.
 
 from __future__ import annotations
 
+AUDIT_INPUT_PATHS = ['docs/GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md', 'docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md']
+
 from fractions import Fraction
 from pathlib import Path
 import re
@@ -61,7 +63,7 @@ def check_note_wiring() -> None:
     required_parent_phrases = [
         "GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
         "audit_companion_gstar_thermal_seven_eighths_bridge_2026_06_06.py",
-        "P1-P5 are declared explicitly",
+        "P1-P5 are declared locally here",
         "P2 supplies the two-transverse-polarization state count",
         "P4 supplies the Dirac/Weyl thermal state-count convention",
     ]

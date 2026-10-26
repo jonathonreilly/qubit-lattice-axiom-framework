@@ -1,18 +1,19 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_pmns_cp_orientation_parity_reduction_note_2026-04-20_hostile_audit_findings.py
-runner_sha256: 33a4ed58750909346f595e74e61e3f31a2007e17270fbb70c6a4828b7a02540d
+runner_sha256: 7b9e9c6e0d7f74a4ab6672581492ab4877254ae26f4552c6967dac9e5236b9d8
+input_fingerprint_sha256: 1256bc8de2899478d68400f40609494e11de0ad1cbf582b8edfd02fc4b937e39
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ==============================================================================
-AUDIT-PREP VERIFIER — dm_pmns_cp_orientation_parity_reduction_note_2026-04-20
+DOCUMENTARY NAME INVENTORY — no semantic or audit certification
 ==============================================================================
-  [PASS] [A] Parent note exists  (DM_PMNS_CP_ORIENTATION_PARITY_REDUCTION_NOTE_2026-04-20.md, 5509 bytes)
+  [PASS] [A] Parent note exists  (DM_PMNS_CP_ORIENTATION_PARITY_REDUCTION_NOTE_2026-04-20.md, 6670 bytes)
 
 PART 1 — CITED deps (expect: >=1 hit each):
-  [PASS] [A]   dm_sigma_hier_upper_octant_selector_theorem_note_2026-04-20 IS cited (>=1 hit)  (hits = 2)
+  [PASS] [A]   dm_sigma_hier_upper_octant_selector_theorem_note_2026-04-20 IS cited (>=1 hit)  (hits = 1)
 
 PART 2 — NOT-CITED deps (expect: 0 hits each):
   [PASS] [A]   dm_sigma_hier_closure_packet_note_2026-04-20 NOT cited (0 hits)  (hits = 0)
@@ -23,7 +24,7 @@ SUMMARY: 4 PASS / 0 FAIL
 Class-A pattern hits: 4
 ==============================================================================
 
-VERIFIED
+DOCUMENTARY NAME CHECKS MATCHED; no audit verdict or proof certification
 
 ----- stderr -----
 

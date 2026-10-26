@@ -1,44 +1,32 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_abcc_retained_measurement_closure_2026_04_21.py
-runner_sha256: 2cf6b8341ae0351a396da11271f92057f3b77a745e9e9a33205a3d78b0161564
-timeout_sec: 600
+runner_sha256: 13847b43596bdafdb159d279abb7f1c1bd0d2149bb975c194e3b74f33dd53a41
+input_fingerprint_sha256: f201cd7b87b0574882e1ae81f1995a8ca5ae6d06729504e6c77e3231b6e1bc41
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 43.69
+elapsed_sec: 0.21
 status: ok
 ----- stdout -----
-DM A-BCC retained measurement closure theorem
-========================================================================
-
-Part 1: Execute the retained theorem stack
-  [PASS] Dependency runner passes: active-chamber completeness  (rc=0, PASS=11, FAIL=0)
-  [PASS] Dependency runner passes: upper-octant / source-cubic selector  (rc=0, PASS=14, FAIL=0)
-  [PASS] Dependency runner passes: sigma_hier upper-octant selector  (rc=0, PASS=14, FAIL=0)
-  [PASS] Dependency runner passes: P3 Sylvester physical path  (rc=0, PASS=11, FAIL=0)
-  [PASS] Dependency runner passes: PMNS nonsingularity reduction  (rc=0, PASS=49, FAIL=0)
-  [PASS] Dependency runner passes: Sylvester signature forcing  (rc=0, PASS=43, FAIL=0)
-  [PASS] Dependency runner passes: sigma-chain attack cascade  (rc=0, PASS=34, FAIL=0)
-
-Part 2: Direct basin-level endpoint checks
-  [PASS] Basin 1 satisfies the retained chamber bound  (q+delta=1.648848673346, sqrt(8/3)=1.632993161855)
-  [PASS] Basin 1 endpoint lies in C_base  (det=0.959173815867)
-  [PASS] Basin 2 endpoint lies in C_neg  (det=-70536.043217097103)
-  [PASS] Basin X endpoint lies in C_neg  (det=-20296.107088688987)
-
-Part 3: Integration consequences
-  [PASS] sigma-chain runner explicitly derives PNS from the retained measurement framework
-  [PASS] sigma-chain runner explicitly closes the basin-selection gate
-  [PASS] signature-forcing runner records the reduction A-BCC <- PNS + Sylvester inertia
-  [PASS] nonsingularity runner confirms all C_neg basins violate PNS
-
-Part 4: Closure-grade statement
-  [summary] A-BCC is closed on the retained measurement framework.
-  [summary] The stricter axiom-native A-BCC target remains outside this closure grade.
-  [summary] The only live DM blocker on the review surface is the finer right-sensitive microscopic selector law.
-
-========================================================================
-TOTAL: PASS=15 FAIL=0
-STATUS: ALL PASS — retained-measurement A-BCC closure verified
-========================================================================
+  [PASS] supplied baseline is Hermitian
+  [PASS] supplied baseline inertia is (1,2)  ([-1.98456969 -0.88343757  2.86800726])
+  [PASS] Basin 1 supplied endpoint Hermitian
+  [PASS] Basin 1 finite eigenvalues separated from zero  ([-1.30909437 -0.32043369  2.2865894 ])
+  [PASS] Basin 1 determinant agrees with spectral product  ((0.9591738158667242-3.848244036105847e-17j))
+  [PASS] Basin 1 supplied endpoint inertia  ((1, 2))
+  [PASS] Basin 1 supplied endpoint determinant sign diagnostic  (0.9591738158667242)
+  [PASS] Basin 1 supplied chamber inequality
+  [PASS] Basin 2 supplied endpoint Hermitian
+  [PASS] Basin 2 finite eigenvalues separated from zero  ([-48.37907183  37.37337486  39.01137384])
+  [PASS] Basin 2 determinant agrees with spectral product  ((-70536.0432170971-7.38054174276393e-14j))
+  [PASS] Basin 2 supplied endpoint inertia  ((2, 1))
+  [PASS] Basin 2 supplied endpoint determinant sign diagnostic  (-70536.0432170971)
+  [PASS] Basin X supplied endpoint Hermitian
+  [PASS] Basin X finite eigenvalues separated from zero  ([-30.50753047  24.68566517  26.9501296 ])
+  [PASS] Basin X determinant agrees with spectral product  ((-20296.107088688987-4.5229039618691374e-14j))
+  [PASS] Basin X supplied endpoint inertia  ((2, 1))
+  [PASS] Basin X supplied endpoint determinant sign diagnostic  (-20296.107088688987)
+Finite decimal endpoint checks only. Equal inertia does not select a physical source or certify the specified affine path.
+TOTAL: PASS=18 FAIL=0
 
 ----- stderr -----
 

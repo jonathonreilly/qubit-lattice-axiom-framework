@@ -1,133 +1,84 @@
-# Post-Record Selector/Tangent Readout Weight Prototype
+# Post-Record supplied finite weights and quadratic-form diagnostic
 
-**Date:** 2026-06-06
-**Type:** open_gate / supplied selector-tangent-readout weight prototype
+**Date:** 2026-06-06; scope separated 2026-10-24
+**Type:** open_gate
 **Claim type:** open_gate
-**Status:** open_gate / conditional-support source-side diagnostic for supplied
-finite selector/tangent/readout weights; not a bounded support theorem over the
-framework baseline; audit_required_before_effective_retained=true;
-bare_retained_allowed=false.
-**Primary runner:**
-[`scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py`](../scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py)
-**Cached log:**
-[`logs/runner-cache/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.txt)
-**Load-bearing upstream helper:**
-[`scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py`](../scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py)
-with cache
-[`logs/runner-cache/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.txt)
+**Status:** conditional supplied-data diagnostic; no status promotion
+**Primary runner:** [finite diagnostic](../scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py)
 
-## Result
+## Supplied mathematics
 
-This block gives the `selector_tangent_readout_weight` lane a finite supplied
-readout/tangent-weight diagnostic prototype:
+Take a finite carrier with nonnegative rational weights and positive total.
+For `W=sum_i w_i>0`, define `p_i=w_i/W`. Then `p_i>=0` and
+`sum_i p_i=1` by distributivity. This arithmetic does not derive the carrier,
+weights, readout context, probabilities or physical realization. The runner
+keeps exact Fraction examples `(1,3)->(1/4,3/4)` and
+`(1,15)->(1/16,15/16)`, and rejection of a negative supplied weight. Its
+normalization function rejects nonpositive totals; this is a required premise,
+not an inferred normalization law for nature.
 
-```text
-supplied finite tangent/readout carrier
-  + supplied positive tangent metric or Hessian
-  + supplied nonnegative readout weights
-  + exact normalization and quadratic check
-  => finite readout/tangent weight arithmetic inside that supplied packet
-```
+For a symmetric real 2x2 matrix `M=((a,b),(b,d))`, positive definiteness is
+equivalent to `a>0` and `ad-b^2>0`. Indeed
+`x^T M x = a*(x1+(b/a)*x2)^2 + ((ad-b^2)/a)*x2^2`, which is positive for
+nonzero `x` under these hypotheses. Conversely, positive definiteness gives
+`a>0` at `(1,0)` and `(ad-b^2)/a>0` at `(-b/a,1)`. Thus the two scalar
+conditions are equivalent only with the stated symmetry premise.
 
-The prototype indexes the current `12` `selector_tangent_readout_weight` rows
-from the measure/weight subdivision. It does not supply authority for those
-rows; it only shows where a supplied readout/tangent bridge would enter.
+The supplied fixture `((3,1),(1,2))` has determinant `5` and quadratic value
+`9/2` at `(1,1/2)`. The original determinant-only helper omitted symmetry.
+Preserve its decisive counterexample `M=((1,10),(0,1))`: the old two conditions
+hold, yet `(1,-1)^T M (1,-1)=-8`. The corrected helper explicitly requires
+symmetry and rejects this matrix. It does not generalize the finite examples
+to a derived physical metric or Hessian.
 
-## 2026-06-18 Record-axiom non-supply repair
+Two Boolean flags classify supplied examples: the string
+`conditional_selector_ready` is returned when both flags are true, otherwise
+`blocked_missing_selector`. These are stipulated labels. In particular,
+`bool(weights)` certifies neither a physical selector nor a general weighting
+construction. The two original finite Boolean predicates remain, labelled as
+classification checks rather than authority.
 
-The current Record axiom
-([`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)) is an approved
-axiom-premise node for durable realized-outcome registration and finite scalar
-additivity after a readout context is supplied. It explicitly does not supply a
-readout context, central-sector decomposition, `K`/CPT structure, weighting,
-normalization, probability, measurement dynamics, tangent metric, or Hessian.
+## Physical and documentary boundary
 
-Therefore the strongest honest current-surface status of this source packet is
-open-gate conditional support, not bounded support theorem. The supplied finite
-arithmetic remains useful as a diagnostic and as a target shape for future
-theorems, but it is not Record-derived selector/readout/tangent authority.
+The carrier, weights and symmetric metric are assumptions. They are supplied finite packet data.
+This diagnostic is not selector/tangent/readout authority and does not derive selector/readout/tangent authority from Record.
+Does not derive a selector, a tangent metric, a Hessian, a Born law or a physical
+measure. Record-derived selector/readout/tangent authority remains open.
+These statements delimit this construction; they do not prove that a larger
+framework cannot supply such structures.
 
-## 2026-06-08 supplied-support safe-narrow
+The [conditional quartic bridge](HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md)
+supplies a separate positive quartic law and explicitly leaves physical
+interpretation open. The runner reads that scope as documentary context, not
+as a physical readout theorem. The finite weight/metric calculations import
+no theorem or data from that bridge. Constant-false firewall declarations are
+unscored information; no PASS is awarded merely for disclaiming authority.
 
-The audit blocker asks for a retained bridge deriving or explicitly accepting
-the selector/tangent/readout carrier, readout weights, and positive tangent
-metric/Hessian, or else for the row to remain scoped as supplied-support only.
+## Historical census disposition and recovery
 
-This source note takes the second route. It is a supplied-support finite
-diagnostic for a prototype carrier, metric/Hessian, and readout weights. It
-does not assert that Record derives those structures, does not turn the
-prototype into selector authority, and does not claim a positive theorem or
-bounded theorem beyond the supplied finite packet.
+No current ledger census is performed or claimed. The historical 17-row census
+was a different documentary contract, dependent on the genuine old
+`docs/audit/data/audit_ledger.json` and the measure subdivision helper. That
+ledger is absent at this source. No replacement, status repinning, successful
+census or audit verdict is supplied. The old note's 12-row statements, later
+17-row runner constant, stale source needles and reported prior failures are
+preserved without reconciling them into fabricated success.
 
-The carrier, readout weights/readout map, metric, and Hessian are not accepted
-framework primitives in this note. They are supplied finite packet data. The
-strongest current-surface reading is therefore conditional supplied-support /
-open gate, not `retained`, not `retained_bounded`, not a positive theorem over
-the framework baseline, and not selector/tangent/readout authority. In short:
-not selector/tangent/readout authority.
+The complete original note, runner, cache and imported helper source are
+byte-preserved as historical text under
+`archive/source-history/selector-weight-census-withdrawal-2026-10-24/`, with `manifest.json` recording original paths, source commit and
+SHA256 hashes. These copies are outside active note/runner discovery and are
+not current primary evidence. The original commit also preserves the full
+repository context needed to investigate the missing-ledger route. The live
+measure helper remains unchanged for unrelated consumers, but is genuinely
+unused and unimported by this finite default runner. No optional census is
+executed from this packet.
 
-## Meaning
+## Verification boundary
 
-The prototype can certify finite tangent/readout weights, positive supplied
-quadratic form, and exact projection/readout normalization. It cannot certify
-that the readout is the selected physical selector, that a missing endpoint is
-chosen, or that Record derives the selector, metric, readout map, Born law, or
-physical measure.
-
-## Status certificate
-
-```yaml
-actual_current_surface_status: conditional-support
-trace_class: upstream_support
-reachability_to_target: supports
-conditional_surface_status: "supplied finite selector/tangent/readout arithmetic is checked; Record-derived selector/readout/tangent authority remains open"
-hypothetical_axiom_status: null
-admitted_observation_status: null
-proposal_allowed: false
-proposal_allowed_reason: "This packet checks a supplied finite prototype and explicitly does not derive selector/readout/tangent authority from Record."
-audit_required_before_effective_retained: true
-bare_retained_allowed: false
-```
-
-## Boundaries
-
-- Does not edit `docs/audit/data`.
-- Does not apply or predict audit verdicts.
-- Does not promote any row.
-- Does not derive a selector, tangent metric, Hessian, projection map, readout
-  primitive, source law, or Born law from Record.
-- Does not derive a readout context, central-sector decomposition, fixed
-  `K`/CPT structure, weighting rule, normalization authority, probability law,
-  measurement dynamics, tangent metric, or Hessian from the Record axiom.
-- Does not select or force a generation/Koide dial location.
-- Does not derive production dynamics, a kernel, Hamiltonian, instrument,
-  clock/rate, or physical arrow.
-
-## Runner certificate
-
-The runner verifies source anchors, exact finite arithmetic under supplied
-weights/metric/Hessian, projection weights, the 12-row live bucket, unchanged audit
-ledger hash, the 2026-06-05 Record-axiom non-supply clauses, and firewalls
-against selector authority, Born law, physical measure, production dynamics,
-and audit verdicts.
-
-Run:
-
-```text
-python3 scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py
-```
-
-## Audit dependency repair links
-
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
-
-- [post_record_measure_weight_normalization_subdivision_2026-06-06](POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md)
-
-## Live-runner changelog (2026-09-03 densify repair H3)
-
-A 2026-09-01 live re-run reports `FAIL=2`: (a) the premise-registry non-supply
-sentence it quote-pins was reworded by the probability-distribution rewrite of
-`docs/audit/data/axiom_premise_nodes.json`; (b) a ledger row-count snapshot
-(26) drifted. Both are text/snapshot pins; every science check passes. The
-quoted-sentence pin should be refreshed against the live registry wording in
-the next audit-lane pass.
+The seven original finite predicates are retained, with the SPD helper's
+necessary symmetry correction, plus two exact counterexample controls. Text
+checks bind only the documentary scope. A literal120-second future cap and the
+two actual note inputs are declared. This revised source awaits independent
+argument/source confirmation and a fresh capture; the old cache is historical
+until replaced by that actual run. It is not an audit or whole-packet approval.

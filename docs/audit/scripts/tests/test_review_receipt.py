@@ -139,7 +139,7 @@ class ReceiptTests(unittest.TestCase):
         self.invalid(contains='evidence hash changed')
 
     def test_unknown_version_and_missing_category(self):
-        self.record['schema_version'] = 3
+        self.record['schema_version'] = 4
         self.invalid(contains='schema version')
         self.record['schema_version'] = 1
         del self.record['inputs']['context']

@@ -1,20 +1,6 @@
-"""
-DM A-BCC Signature-Forcing Theorem
-===================================
-Sylvester's law of inertia proves that any path from H_base to a C_neg
-endpoint MUST cross det=0, regardless of path shape. This upgrades the
-A-BCC conditional theorem from "IVT on the linear path" to a topological
-statement valid for any continuous path.
+"""Supplied signature finite diagnostics; no global physical selection or PNS derivation."""
 
-Physical parameterization:
-  E1 = sqrt(8/3), E2 = sqrt(8)/3, Gamma = 0.5
-  H_base: signature (1, 0, 2) — 1 positive eigenvalue, 2 negative
-  Basin 1: signature (1, 0, 2) — C_base, same as H_base
-  Basin 2: signature (2, 0, 1) — C_neg, different from H_base
-  Basin X: signature (2, 0, 1) — C_neg, different from H_base
-
-Expected: PASS=N FAIL=0
-"""
+AUDIT_TIMEOUT_SEC = 300
 
 import math
 import numpy as np
@@ -101,9 +87,6 @@ def path_crosses_zero(Hb, J_end, path_type):
 PATH_TYPES = ["linear", "quadratic", "slow_start", "fast_start", "sine", "step_half"]
 
 
-# ---------------------------------------------------------------------------
-# T1: Signatures of H_base and all three basins
-# ---------------------------------------------------------------------------
 print("\nT1: Signatures of H_base and basins")
 Hb = H_base_matrix()
 
@@ -111,21 +94,18 @@ sig_hbase = signature(Hb)
 check("H_base signature = (1, 0, 2)", sig_hbase == (1, 0, 2),
       f"got {sig_hbase}")
 
-# Basin 1
 H1 = Hb + J_phys(*BASIN1)
 sig1 = signature(H1)
 det1 = np.real(np.linalg.det(H1))
 check("Basin 1 signature = (1, 0, 2) [C_base, same as H_base]", sig1 == (1, 0, 2),
       f"got {sig1}, det={det1:.3f}")
 
-# Basin 2
 H2 = Hb + J_phys(*BASIN2)
 sig2 = signature(H2)
 det2 = np.real(np.linalg.det(H2))
 check("Basin 2 signature = (2, 0, 1) [C_neg, different from H_base]", sig2 == (2, 0, 1),
       f"got {sig2}, det={det2:.1f}")
 
-# Basin X
 HX = Hb + J_phys(*BASIN_X)
 sigX = signature(HX)
 detX = np.real(np.linalg.det(HX))
@@ -136,23 +116,14 @@ check("Basin 1 same signature as H_base", sig1 == sig_hbase)
 check("Basin 2 different signature from H_base", sig2 != sig_hbase)
 check("Basin X different signature from H_base", sigX != sig_hbase)
 
-# ---------------------------------------------------------------------------
-# T2: Sylvester's law — different signatures require crossing det=0
-# ---------------------------------------------------------------------------
 print("\nT2: Sylvester's law of inertia")
 
-# Verify directly: det sign and signature are correlated
 check("det(H_base) > 0 [C_base, sig (1,0,2)]",
       np.real(np.linalg.det(Hb)) > 0)
 check("det(Basin 1) > 0 [C_base, sig (1,0,2)]", det1 > 0)
 check("det(Basin 2) < 0 [C_neg, sig (2,0,1)]", det2 < 0)
 check("det(Basin X) < 0 [C_neg, sig (2,0,1)]", detX < 0)
 
-# Sylvester's law: the space GL_3(Herm) = {invertible Herm 3x3} has two
-# connected components indexed by signature. Paths between components
-# must pass through the boundary det=0.
-# We verify: the intermediate value theorem applied to det on the linear path
-# gives the crossing; and the signature change forces it for ALL paths.
 check("Sylvester law: sig(H_base)=(1,0,2) != sig(Basin 2)=(2,0,1) [forced crossing]",
       sig_hbase != sig2)
 check("Sylvester law: sig(H_base)=(1,0,2) != sig(Basin X)=(2,0,1) [forced crossing]",
@@ -160,27 +131,18 @@ check("Sylvester law: sig(H_base)=(1,0,2) != sig(Basin X)=(2,0,1) [forced crossi
 check("Sylvester law: sig(H_base)=(1,0,2) == sig(Basin 1)=(1,0,2) [no forced crossing]",
       sig_hbase == sig1)
 
-# ---------------------------------------------------------------------------
-# T3: Path-independence for Basin 2 — ALL path types cross det=0
-# ---------------------------------------------------------------------------
 print("\nT3: Path-independence for Basin 2 (6 path types)")
 J2 = J_phys(*BASIN2)
 for ptype in PATH_TYPES:
     crosses = path_crosses_zero(Hb, J2, ptype)
     check(f"Basin 2 path '{ptype}' crosses det=0", crosses)
 
-# ---------------------------------------------------------------------------
-# T4: Path-independence for Basin X — ALL path types cross det=0
-# ---------------------------------------------------------------------------
 print("\nT4: Path-independence for Basin X (6 path types)")
 JX = J_phys(*BASIN_X)
 for ptype in PATH_TYPES:
     crosses = path_crosses_zero(Hb, JX, ptype)
     check(f"Basin X path '{ptype}' crosses det=0", crosses)
 
-# ---------------------------------------------------------------------------
-# T5: Basin 1 — NO path type crosses det=0 (same signature, P3 Sylvester)
-# ---------------------------------------------------------------------------
 print("\nT5: Basin 1 — no det=0 crossing on any path type")
 J1 = J_phys(*BASIN1)
 for ptype in PATH_TYPES:
@@ -189,15 +151,11 @@ for ptype in PATH_TYPES:
     check(f"Basin 1 path '{ptype}' does NOT cross det=0 (min det={dets.min():.3f})",
           not crosses)
 
-# Confirm P3 Sylvester minimum on linear path
 _, dets_linear = path_det(Hb, J1, "linear", n=5000)
 min_det_basin1 = dets_linear.min()
-check(f"Basin 1 linear path min det = {min_det_basin1:.4f} > 0.87 (P3 Sylvester)",
+check(f"Basin 1 linear path min det = {min_det_basin1:.4f} > 0.87 (sampled straight-path comparison)",
       min_det_basin1 > 0.87)
 
-# ---------------------------------------------------------------------------
-# T6: C_neg region scan — all det<0 points have signature (2, 0, 1)
-# ---------------------------------------------------------------------------
 print("\nT6: C_neg region scan — signature uniformity")
 c_neg_sigs = []
 for m in np.linspace(1.0, 50.0, 20):
@@ -216,7 +174,6 @@ check(f"Scanned {n_c_neg} C_neg points (det<0)", n_c_neg > 1000)
 check(f"All {n_c_neg} C_neg points have signature (2,0,1)", all_2_0_1,
       f"distribution: {dict(sig_counts)}")
 
-# C_base region scan
 c_base_sigs = []
 for m in np.linspace(0.01, 0.90, 20):
     for delta in np.linspace(0.0, 2.0, 15):
@@ -234,9 +191,6 @@ check(f"Scanned {n_c_base} C_base points (det>0)", n_c_base > 100)
 check(f"All {n_c_base} C_base points have signature (1,0,2)", all_1_0_2,
       f"distribution: {dict(sig_counts_base)}")
 
-# ---------------------------------------------------------------------------
-# T7: Spectral flow — exactly 1 eigenvalue crosses zero for Basin 2 / Basin X
-# ---------------------------------------------------------------------------
 print("\nT7: Spectral flow along Basin 2 and Basin X paths")
 
 
@@ -254,7 +208,7 @@ def count_eigenvalue_crossings(Hb, J_end, n=10000):
 
 
 crossings2 = count_eigenvalue_crossings(Hb, J2)
-check("Basin 2: exactly 1 eigenvalue crosses zero (spectral flow = 1)",
+check("Basin 2: one zero crossing detected on the sampled straight segment",
       len(crossings2) == 1, f"crossings={crossings2}")
 
 if crossings2:
@@ -266,7 +220,7 @@ if crossings2:
           evals_before[ev_idx] < 0 < evals_after[ev_idx])
 
 crossingsX = count_eigenvalue_crossings(Hb, JX)
-check("Basin X: exactly 1 eigenvalue crosses zero (spectral flow = 1)",
+check("Basin X: one zero crossing detected on the sampled straight segment",
       len(crossingsX) == 1, f"crossings={crossingsX}")
 
 if crossingsX:
@@ -277,7 +231,6 @@ if crossingsX:
     check("Basin X: crossing eigenvalue changes sign (neg → pos)",
           evals_before[ev_idx] < 0 < evals_after[ev_idx])
 
-# Verify spectral flow = Δn- = 1 (H_base has 2 neg evals, Basin 2/X have 1)
 n_neg_hbase = sig_hbase[2]
 n_neg_basin2 = sig2[2]
 n_neg_basinX = sigX[2]
@@ -286,50 +239,20 @@ check(f"Spectral flow Basin 2: Δn- = {n_neg_basin2 - n_neg_hbase} (from {n_neg_
 check(f"Spectral flow Basin X: Δn- = {n_neg_basinX - n_neg_hbase} (from {n_neg_hbase} to {n_neg_basinX})",
       (n_neg_hbase - n_neg_basinX) == 1)
 
-# ---------------------------------------------------------------------------
-# T8: Signature-forcing → PNS equivalence (structural theorem + honest gap)
-# ---------------------------------------------------------------------------
 print("\nT8: Signature-forcing → PNS conditional theorem")
 
-# The structural argument:
-# PNS (PMNS Non-Singularity): det(H(t)) ≠ 0 for all t ∈ [0,1].
-# Sylvester: H_base and C_neg points are in different signature chambers.
-#            Any continuous path between them MUST cross det=0.
-# Therefore: PNS → endpoint NOT in C_neg → endpoint in C_base → A-BCC.
-#
-# Upgrade over original PNS theorem:
-# - Original: IVT on LINEAR path only → "if no crossing on linear path, A-BCC"
-# - Sylvester: ANY path → "PNS (on any path) ↔ A-BCC"
-# - Mechanism: explicit signature (1,0,2) ↔ (2,0,1) chamber structure
 
-# The T8 summary statements are synthesis of the numerical tasks above; the
-# underlying claims are verified by the earlier sample scans and path checks.
-# Converted to print commentary so PASS count reflects only numeric checks.
-print("  [note] Sylvester signature-forcing: PNS on any path implies A-BCC (chamber structure prevents sign-flip without det=0 crossing).")
-print("  [note] C_base = {sig (1,0,2)} chamber, C_neg = {sig (2,0,1)} chamber (verified on 3000+3000 sample points above).")
-print("  [note] PNS is path-independent — six path types (linear, curved, zigzag, etc.) verified above for Basin 2 and Basin X.")
-print("  [note] Residual physical input = PNS; observationally grounded by the measured non-zero neutrino-mass-squared splittings.")
 
-# ---------------------------------------------------------------------------
-# T9: Summary — A-BCC conditional theorem with Sylvester mechanism
-# ---------------------------------------------------------------------------
 print("\nT9: Summary")
 
-# T9 summary (each claim was numerically verified above in T4-T7). Converted
-# to print commentary to keep PASS count verification-only.
-print("  [summary] Basin 1: unique chi^2=0 basin with signature (1,0,2) = C_base, matches H_base.")
-print("  [summary] Basin 2: chi^2=0 basin with signature (2,0,1) = C_neg, Sylvester-excluded.")
-print("  [summary] Basin X: chi^2=0 basin with signature (2,0,1) = C_neg, Sylvester-excluded.")
-print("  [summary] Theorem reduction: A-BCC <- PNS + Sylvester inertia (path-independent, spectral flow = 1).")
-print("  [summary] Residual physical input: PNS (single axiom, observationally grounded).")
 
-# ---------------------------------------------------------------------------
-# Final summary
-# ---------------------------------------------------------------------------
 print(f"\n{'='*60}")
 print(f"TOTAL: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
 if FAIL_COUNT == 0:
-    print("STATUS: ALL PASS — Signature-Forcing theorem verified")
+    print("STATUS: ALL PASS — listed finite diagnostics passed")
 else:
     print("STATUS: FAILURES — see above")
 print(f"{'='*60}")
+
+print('PNS is an explicit path assumption; measurements and finite searches do not establish it.')
+raise SystemExit(1 if FAIL_COUNT else 0)

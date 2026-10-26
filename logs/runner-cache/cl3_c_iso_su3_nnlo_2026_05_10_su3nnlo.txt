@@ -1,19 +1,22 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_c_iso_su3_nnlo_2026_05_10_su3nnlo.py
-runner_sha256: f50c4977585441bb078145dcdf5a90898e6afe6610d83d9f20f808753086ed70
+runner_sha256: 0877792134a5ef2c40801d944646edb9fab0e66131cb5a8ec02e2c175e331900
+input_fingerprint_sha256: 291850d98c020b3a20437458fce5988240485527652774c0a110c4227b9c9c7e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.47
+elapsed_sec: 0.24
 status: ok
 ----- stdout -----
+EVIDENCE SCOPE: conditional_supplied_historical_scenario_diagnostic
+Wilson proof/remainder, ensemble provenance, multiplaquette transfer and Hamilton-limit convergence remain open.
 
 === SU(3) NNLO Convention C-iso Support ===
 Date: 2026-05-10  |  Workspace: outputs/action_first_principles_2026_05_10/c_iso_su3_nnlo_closure
-Hamilton-limit input: <P>_KS = 0.441 ± 0.0006
+Supplied historical scenario input: <P>_KS = 0.441 ± 0.0006
 
 
 ============================================================================
-PATH A: Rational coefficient verification (Wilson <P>_W series)
+PATH A: Finite comparison with supplied rational targets (Wilson <P>_W series)
 ============================================================================
   Coefficients from THIS WORK (rationals identified via mpmath fit):
     c_1 =      4/1    =    4.0000000  (LO)
@@ -57,10 +60,10 @@ PATH B: HK Taylor truncation residual at canonical ξ
   [Path B: PASS — HK truncation residual decreases monotonically]
 
 ============================================================================
-PATH C: C-iso engineering bound at NNLO/NNNLO/N4LO (THIS WORK)
+PATH C: Conditional C-iso scenario comparison at NNLO/NNNLO/N4LO (THIS WORK)
 ============================================================================
-  Hamilton-limit input: <P>_KS = 0.441 ± 0.0006
-    (from PR #685 thermodynamic-limit extrapolation L=3,4,6)
+  Supplied historical scenario input: <P>_KS = 0.441 ± 0.0006
+    (historical PR #685 attribution; ensemble provenance and limit not validated)
 
   Convention C-iso difference (P_W - P_HK) coefficients in s_t:
     s_t^1: P_W =            4/3    P_HK =            4/3    P_W - P_HK =              0  ( +0.000000)
@@ -70,7 +73,7 @@ PATH C: C-iso engineering bound at NNLO/NNNLO/N4LO (THIS WORK)
     s_t^5: P_W =     -3071/8748    P_HK =       128/3645    P_W - P_HK =   -16891/43740  ( -0.386168)
     s_t^6: P_W =   -20873/34992    P_HK =     -256/32805    P_W - P_HK = -308999/524880  ( -0.588704)
 
-  TRUNCATION RESIDUAL of (P_W - P_HK) at each order, single-plaquette:
+  Finite-grid minus truncated-series difference (P_W - P_HK) at each order, single-plaquette:
     ξ        s_t       res_NLO      res_NNLO      res_NNNLO      res_N4LO      res_N5LO
   ------------------------------------------------------------------------------------------
     4    0.12500   1.12346e-03   3.83892e-05    1.47789e-05   2.99399e-06   7.48259e-07
@@ -79,7 +82,7 @@ PATH C: C-iso engineering bound at NNLO/NNNLO/N4LO (THIS WORK)
    32    0.01562   2.12541e-06   6.13272e-09    3.68480e-10   8.83315e-12   2.66379e-13
    64    0.00781   2.65281e-07   3.71639e-10    1.13747e-11   1.35711e-13   1.85470e-15
 
-  ABSOLUTE residual on <P>_KS_∞ = 0.441 (= res * P_KS / P_HK):
+  Scenario-scaled residual using supplied <P>_KS = 0.441 (= res * P_KS / P_HK):
     ξ       res_NLO      res_NNLO      res_NNNLO      res_N4LO      res_N5LO
   --------------------------------------------------------------------------------
     4   3.22727e-03   1.10278e-04    4.24542e-05   8.60059e-06   2.14947e-06
@@ -89,7 +92,7 @@ PATH C: C-iso engineering bound at NNLO/NNNLO/N4LO (THIS WORK)
    64   1.12895e-05   1.58158e-08    4.84071e-10   5.77542e-12   7.89304e-14
 
   ε_witness target = 0.0003
-  ξ values where C-iso TRUNCATION RESIDUAL drops below ε_witness:
+  ξ values where scenario-scaled residual drops below the supplied target:
     after   NLO trunc: ξ ≥ 16
     after  NNLO trunc: ξ ≥ 4
     after NNNLO trunc: ξ ≥ 4
@@ -98,11 +101,11 @@ PATH C: C-iso engineering bound at NNLO/NNNLO/N4LO (THIS WORK)
   [Path C: PASS — NNNLO truncation residual at ξ=8 is 2.252e-06 < ε_witness target 3e-4]
 
 ============================================================================
-PATH D: Total ε_total budget combining stat+vol+C-iso (THIS WORK)
+PATH D: Supplied scenario terms combined in quadrature (THIS WORK)
 ============================================================================
-  ε_stat (PR #685 multi-seed)        = 0.0002
-  ε_vol  (PR #685 L→∞ extrapolation) = 0.0006
-  ε_C-iso = analytic-series truncation RESIDUAL at order N:
+  ε_stat (historical PR #685 summary)        = 0.0002
+  ε_vol  (historical PR #685 fit scenario) = 0.0006
+  ε_C-iso = supplied-series finite residual at order N:
 
     ξ    ε_NLO_trunc    ε_NNLO_trunc    ε_NNNLO_trunc   ε_N4LO_trunc   ε_N5LO_trunc
   --------------------------------------------------------------------------------
@@ -124,7 +127,7 @@ PATH D: Total ε_total budget combining stat+vol+C-iso (THIS WORK)
   → Even with PERFECT C-iso (zero truncation error), ε_total cannot
     reach ε_witness without further tightening of stat+vol.
   → At ξ=8 with NNNLO truncation, ε_C-iso = 2.252e-06 << stat+vol floor 6.325e-04.
-  → C-iso is no longer the dominant systematic; stat+vol now leading.
+  → In this supplied scenario, C-iso is no longer the largest included term; stat+vol now leading.
   [Path D: PASS — stat+vol floor 0.00063 > ε_witness; frontier honestly identified]
 
 ============================================================================
@@ -132,23 +135,23 @@ SUPPORT SUMMARY — SU(3) NNLO Convention C-iso rational identification
 ============================================================================
 
 Wilson coefficient rational targets (THIS WORK extends NLO support to N5LO):
-  c_2 (NLO)   = -1                  [retained from PR #685]
+  c_2 (NLO)   = -1                  [supplied historical hypothesis; exact proof open]
   c_3 (NNLO)  = -13/3 ≈ -4.3333..   [THIS WORK, numerical rational target]
   c_4 (NNNLO) = -37/2 = -18.5       [THIS WORK, numerical rational target]
   c_5 (N4LO)  = -3071/36 ≈ -85.31.. [THIS WORK, numerical rational target]
   c_6 (N5LO)  = -20873/48 ≈ -434.85 [THIS WORK, fit-limited target]
 
-C-iso truncation residual at NNNLO (this is the systematic budget):
+Scenario C-iso truncation residual at NNNLO (conditional scenario residual, not a physical bound):
   ξ =   4: |residual after NNNLO| = 4.245e-05  (0.0096% of <P>_KS)
   ξ =   8: |residual after NNNLO| = 2.252e-06  (0.0005% of <P>_KS)
   ξ =  16: |residual after NNNLO| = 1.307e-07  (0.0000% of <P>_KS)
 
-Key result for ε_witness:
-  At ξ=8, NNNLO-truncated C-iso residual is ~6×10⁻⁶ << ε_witness ~ 3×10⁻⁴
-  The stat+vol floor √(0.0002²+0.0006²) ≈ 6.3×10⁻⁴ is the remaining bottleneck.
-  C-iso is no longer the dominant systematic at ξ ≥ 8 with NNNLO truncation.
+Conditional scenario comparison with ε_witness:
+  The computed scenario rows above compare each finite residual with the supplied target.
+  In the supplied scenario, the stat+vol floor √(0.0002²+0.0006²) ≈ 6.3×10⁻⁴ is the largest included contribution.
+  In this supplied scenario, C-iso is no longer the largest included term at ξ ≥ 8 with NNNLO truncation.
 
-Wall time: 0.2 s
+Wall time: 0.1 s
 
 === TOTAL: PASS=12, FAIL=0 ===
 Saved: outputs/action_first_principles_2026_05_10/c_iso_su3_nnlo_closure/results_mode-all.json

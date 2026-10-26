@@ -18,6 +18,9 @@ that the note:
 It is a companion to the physical-lattice baseline interpretation runner.
 """
 
+# Cache identity includes actual note reads and existence checks.
+AUDIT_INPUT_PATHS = ['docs/C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md', 'docs/MINIMAL_AXIOMS_2026-05-03.md', 'docs/PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08.md', 'docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md']
+
 from pathlib import Path
 import re
 import sys

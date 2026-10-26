@@ -1,248 +1,81 @@
-# Dim-Parametric log|det| Extremum (DPLE) Theorem
+# Critical points of log absolute determinant on Hermitian pencils
 
-**Date:** 2026-04-19
-**Lane:** Dark-matter A-BCC basin-selector.
-**Status:** Exact matrix-analysis theorem;  status is **support
-theorem on the open DM gate**, not full A-BCC closure. The `F4`
-interior-minimum linear-path Sylvester discriminant on the DM A-BCC chart is
-the `d = 3` specialization of the **Dim-Parametric log|det| Extremum (DPLE)**
-principle on linear Hermitian pencils. Uhlig 1982 supplies the structural
-backbone at `d = 3`, but the theorem does not by itself derive the physical
-source-side chart. See
-`docs/SCALAR_SELECTOR_CYCLE1_SCIENCE_REVIEW_NOTE_2026-04-19.md`.
-**Primary runner:** `scripts/frontier_dm_dple_theorem.py`
-(PASS=19 FAIL=0).
+**Type:** bounded_theorem
+**Date:** 2026-04-19; mathematical correction 2026-10-21.
+**Status:** conditional matrix-analysis support; no physical selector or audit promotion.
+**Primary runner:** `scripts/frontier_dm_dple_theorem.py`.
+The stable filename records the original DPLE identity. The previous argument and execution counts are recoverable at f24d17d97d372df977476e4a69674577f31af575.
 
----
+## 1. Setup and corrected classification
 
-## 0. Executive summary
+Let H0,H1 be Hermitian d by d matrices, H0 invertible, and p(t)=det(H0+t H1). The polynomial is real and nonzero, with degree n<=d (not necessarily d; H1 may be singular or zero). On the open nonsingular set define W(t)=log|p(t)|. Jacobi's identity gives
 
-DPLE is a standalone matrix-analysis theorem that states: along the
-linear Hermitian pencil `H(t) = H_0 + t H_1` on `Herm(d, C)`, the
-observable `W(t) = log|det H(t)|` has at most `floor(d/2)` interior
-Morse-index-0 critical points. At `d = 3`, this upper bound is
-**exactly 1**, making the "`F_d` selector" (existence of an interior
-local minimum of `p(t) = det H(t)` in `(0, 1)` with matching signature)
-a clean binary discriminator iff `d = 3`.
+```text
+W' = p'/p = Tr(H^-1 H1),
+W'' = p''/p - (p'/p)^2.
+```
 
-On the retained DM A-BCC chart with `H_0 = H_base` and `H_1 = J_*`,
-the DPLE `d = 3` specialization `F_3` agrees with the retained `F4`
-condition algebraically on all four basins `{1, N, P, X}`. Basin 1 is
-the unique `F_3 = True` basin.
+At a critical point t*, require p(t*)!=0 and p'(t*)=0. Its one-dimensional Morse index is zero precisely when **p''(t*)/p(t*)>0**. Testing p''>0 alone classifies a minimum of p, not W. On a negative-determinant component a W minimum is a p maximum. A zero of p is outside W's domain, including a repeated zero where p' also vanishes. Degenerate points W''=0 are not Morse minima.
 
-**Consequence.** `F4` is upgraded from a heuristic/chart-level selector to a
-real theorem on the fixed DM chart. This materially strengthens the open DM
-lane, but it does not by itself close the A-BCC gate.
+For an exact counterexample set x=t-1/2 and
 
----
+```text
+B(t) = [[x,1],[1,-x]],
+p(t) = -(x^2+1),
+p'(1/2)=0, p''(1/2)=-2, W''(1/2)=2.
+```
 
-## 1. Setup
+This is a genuine d=2 W minimum, with H0 invertible and negative determinant throughout. Thus d=2 is neither vacuous nor excluded from the at-most-one-minimum case. The former runner missed this minimum.
 
-Let `d >= 2` and let `H_0, H_1` be Hermitian `d x d` matrices with
-`H_0` invertible. The retained linear pencil is
+## 2. Bound, with a proof for W rather than p
 
-    H(t) = H_0 + t * H_1,    t in [0, 1].
+A nonconstant real degree-n polynomial has at most floor(n/2) nondegenerate local minima of log|p| on its whole nonsingular real domain, hence on (0,1). In particular the bound is floor(d/2) for this pencil. For constant nonzero p there are no Morse critical points.
 
-Define
+Proof: let k be the number of distinct complex roots of p and r the number of distinct real roots. Cancel common factors in p'/p. Its numerator has degree k-1: logarithmic differentiation gives a sum of simple fractions m_j/(t-z_j), with positive integer multiplicities m_j and leading behavior n/t. There are therefore at most k-1 real zeros counted with multiplicity.
 
-    W(t) := log|det H(t)|,
-    p(t) := det H(t) = c_0 + c_1 t + ... + c_d t^d.
+On the real axis W' is negative near minus infinity and positive near plus infinity. At each of its r real poles it changes from negative to positive, since the residue is positive. Let M and X count its zero crossings from negative to positive and positive to negative, respectively; zeros with no sign change do not contribute. Following signs along the real line gives M-X+r=1. Thus 2M+r-1=M+X<=k-1, so M<=(k-r)/2<=floor(n/2). Every nondegenerate W minimum is one of the M upward crossings. This also covers repeated roots and degenerate critical points without counting them as Morse minima. QED.
 
-By Leibniz / Faddeev–LeVerrier, `deg p = d` in `t`. Interior critical
-points of `W(t)` on `(0, 1)` are exactly interior zeros of
-`p'(t) / p(t)` where `p(t) != 0`.
+This is an upper bound, not an existence or selection principle. Both d=2 and d=3 have at most one such minimum. Any existence predicate is Boolean at every dimension; calling it a binary selector does not privilege d=3.
 
----
+The bound can reach two at d=4. Let B_a(t)=[[t-a,1/8],[1/8,-(t-a)]] and H=B_(1/4) direct-sum B_(3/4). With x=t-1/2,
 
-## 2. The DPLE principle
+```text
+p=x^4-(3/32)x^2+25/4096 > 0,
+p'=x(4x^2-3/16).
+```
 
-> **Definition (`F_d` selector).** Given `(H_0, H_1) in Herm(d; C)`
-> with `H_0` invertible, define
->
-> ```
-> F_d(H_0, H_1) := there exists t* in (0, 1) with p'(t*) = 0,
->                   p''(t*) > 0, and sign(p(t*)) = sign(det H_0).
-> ```
->
-> Equivalently: `W(t) = log|det H(t)|` has an interior Morse-index-0
-> critical point in `(0, 1)` with matching Sylvester signature.
+The points t=1/2 +/- sqrt(3)/8 are nondegenerate W minima in (0,1); t=1/2 is a maximum. The runner verifies the determinants and curvatures exactly. This example does not establish anything about physical carrier dimension.
 
-### 2.1 Hellmann–Feynman form
+## 3. Cubic chart predicate, separately from the bound
 
-Using Jacobi's formula:
+For c3!=0, put Delta=c2^2-3 c1 c3. There are two distinct real stationary points iff Delta>0; Delta=0 is a degenerate stationary point. At
 
-    W'(t) = Tr[H(t)^{-1} H_1]
-          = sum_k (1 / lambda_k(t)) * dlambda_k(t)/dt.
+```text
+t_plus=(-c2+sqrt(Delta))/(3c3), p''(t_plus)=+2sqrt(Delta),
+t_minus=(-c2-sqrt(Delta))/(3c3), p''(t_minus)=-2sqrt(Delta).
+```
 
-This is the eigenvalue-weighted Hellmann–Feynman condition: `W'(t) = 0`
-iff the sum of reciprocal eigenvalues weighted by Hellmann–Feynman
-flow vanishes.
+The plus branch is the p minimum, but is the smaller root only if c3<0. The W minimum additionally requires p positive on the plus branch or p negative on the minus branch. If c3=0, use the actual lower-degree derivative; no cubic division is valid.
 
-### 2.2 Algebraic upper bound on Morse-idx-0 CPs
+The legacy positive F4 predicate can be stated explicitly as existence of t in (0,1) with p'=0, p''>0 and p>0, optionally with c0>0 as an additional baseline condition. It equals a **positive-determinant W minimum** predicate. It is not equivalent to every W minimum. A count bound does not force F4 to hold, select a physical path, or select an endpoint.
 
-For `p(t)` a real polynomial of degree `d`, local minima and maxima
-alternate; the max number of local minima is `floor(d/2)`:
+The runner evaluates the four supplied decimal basin fixtures from the original chart, reports determinants/critical points separately and compares direct derivative-root classification with the cubic formula. These are finite chart diagnostics, not exact certification of rounded basin coordinates or a derivation of their physical relevance. No former expected basin table or PASS count is imposed.
 
-| d | max interior Morse-idx-0 CPs |
-|---|---|
-| 2 | 1 (quadratic; trivial case) |
-| **3** | **1 (clean binary selector)** |
-| 4 | 2 (first dim with genuine ambiguity) |
-| 5 | 2 |
-| 6 | 3 |
+## 4. Sign, inertia and path boundaries
 
-**The unique dimension where `F_d` is a clean binary selector with
-standard retained structure is `d = 3`.**
+Equal determinant signs do not imply equal Sylvester inertia: diag(1,1,1) and diag(1,-1,-1) both have positive determinant. Nor does positivity at one critical point establish nonsingularity along an entire path. For example H(t)=(t-9/10) direct-sum [[t-3/10,1/10],[1/10,-(t-3/10)]] has p=(9/10-t)[(t-3/10)^2+1/100]. It has p(0)>0 and a positive p-minimum at t=1/2-sqrt(33)/30, but crosses det=0 at t=9/10 before the endpoint.
 
----
+The observable W is unchanged by p -> -p. For odd d the pencil transformation H -> -H implements that sign flip, though it need not preserve a chosen baseline, chamber or physical model. It therefore cannot by itself determine a physical determinant sign. This does not prohibit an additional supplied dynamics or sector identification from breaking that ambiguity. See [the scoped sign-blindness companion](DM_DPLE_ABCC_NO_GO_NOTE_2026-04-19.md).
 
-## 3. DPLE at `d = 3` reproduces `F4`
+A continuous nonsingular path preserves full inertia. Nonsingularity is an additional premise, not a consequence of continuity. The [P3 path note](DM_NEUTRINO_SOURCE_SURFACE_P3_SYLVESTER_LINEAR_PATH_SIGNATURE_THEOREM_NOTE_2026-04-18.md) concerns a specified path and endpoint; identifying that endpoint as physical remains separate. The current [axiom memo](MINIMAL_AXIOMS_2026-06-29.md) does not supply the chart or selector used here.
 
-### 3.1 Algebraic form at `d = 3`
+## 5. Reproduction and limits
 
-`p(t) = c_0 + c_1 t + c_2 t^2 + c_3 t^3`;
-`p'(t) = c_1 + 2 c_2 t + 3 c_3 t^2`.
-The quadratic `p'(t)` has real roots iff
-
-    Delta_ret := c_2^2 - 3 c_1 c_3 > 0.
-
-When `Delta_ret > 0`, the smaller real root
-
-    t_* := (-c_2 + sqrt(Delta_ret)) / (3 c_3)
-
-is the local minimum of `p` iff `p''(t_*) > 0`. The `F_3` selector is
-
-    F_3 := Delta_ret > 0  AND  t_* in (0, 1)  AND  p(t_*) > 0
-           AND  sign(p(t_*)) = sign(c_0).
-
-This is exactly the retained `F4` condition. Uhlig 1982's sign-
-characteristic classification for Hermitian pencils supplies the
-structural backbone: at `d = 3` the only admissible interior Morse-idx-0
-CP structure is the cubic single-minimum pattern encoded above.
-
-### 3.2 Verification on DM A-BCC basins
-
-`F_3` runs on the retained `H_base` and `J_*` for each basin:
-
-| Basin | Delta_ret | # interior CPs in (0,1) | t_* | p(t_*) | F_3 |
-|---|---|---|---|---|---|
-| Basin 1 | +7.80 | 1 | 0.776 | +0.88 | **TRUE** |
-| Basin N | -10.11 | 0 | — | — | FALSE |
-| Basin P | +458.7 | 0 | — | — | FALSE |
-| Basin X | -4.7e6 | 0 | — | — | FALSE |
-
-On all four basins, `F_3` agrees with the retained `F4`. Basin 1 is
-the unique `F_3 = True` basin.
-
-### 3.3 Formal reduction
-
-> **Claim.** On the retained DM A-BCC chart with `H_0 = H_base` and
-> `H_1 = J_*`, the retained `F4` condition is algebraically equivalent
-> to `F_3(H_base, J_*)`.
-
-Proof: both conditions are "`p(t) = det H(t)` has an interior
-Morse-idx-0 CP `t_*` in `(0, 1)` with `p(t_*) > 0`". At `d = 3` the
-quadratic-discriminant and local-minimum test are the same.
-`sign(p(t_*)) = sign(c_0)` matches since `sign(det H_base) = +1` on
-Basin 1 (positive Sylvester sheet).
-
----
-
-## 4. `d = 3` uniqueness
-
-### 4.1 Algebraic
-
-From section 2.2, the dim at which `F_d` is a clean binary selector
-with at most one interior Morse-idx-0 CP is `d = 3`. At `d = 2`, `F_2`
-is vacuous (no cubic discriminant structure). At `d >= 4`, `F_d`
-admits multiple interior CPs (an explicit `d = 4` Hermitian pair with
-2 interior Morse-idx-0 CPs in `(0, 1)` is constructed by the runner in
-Task T4).
-
-### 4.2 Physical-carrier uniqueness
-
-The retained `{R1, R2, R3}` on main jointly force `d = 3`:
-
-- R1: bivector-count saturation `C(d, 2) = d`;
-- R2: anomaly-parity `d_s + 1` even with `d_t = 1`;
-- R3: cubic-orbit / Cayley–Hamilton coincidence at `d = 3`.
-
-All three independent conditions pick out `d = 3` — the dim-uniqueness
-fingerprint of the DM A-BCC lane.
-
----
-
-## 5. Scope
-
-### 5.1 What DPLE closes
-
-- `F4` — the retained DM A-BCC basin-selector — as a theorem at
-  `d = 3`.
-- Algebraic upper bound `floor(d/2)` on interior Morse-idx-0 CPs;
-  clean binary selector iff `d = 3`.
-- Structural unification with MRU and Berry-phase: three independent
-  dim-parametric principles whose `d = 3` specializations match
-  retained framework content.
-
-### 5.2 What DPLE does not close (honest gap)
-
-DPLE does not derive *why* the retained linear path from `H_base` to
-`H_base + J_*` is the physical path. That is answered by the
-already-retained P3 Sylvester linear-path signature theorem (on
-main). DPLE inherits path-retention from P3; no new gap introduced.
-
-Nor does DPLE derive `H_base` and `J_*` as operators; these are fixed
-by the retained sigma-hier uniqueness theorem and cubic-variational
-obstruction theorem (both on main).
-
----
-
-## 6. Runner verification
-
-`scripts/frontier_dm_dple_theorem.py` runs 7 tasks totalling 19
-checks. Key results:
-
-- T1: `det H(t)` is degree-`d` in `t` for `d = 2, 3, 4, 5`
-  (max `|coeff(t^{d+1})|` `< 1e-6` across 100 random pairs per `d`).
-- T2: interior Morse-idx-0 CP histograms over 400 random pairs per
-  `d`; max observed `<= floor(d/2)`.
-- T3: `F_3` reproduces `F4` on DM A-BCC basins (4/4).
-- T4: `d = 4` fragmentation exhibited (random-search construction of
-  a Hermitian pair with 2 interior Morse-idx-0 CPs).
-- T5: `d = 2` degeneracy (`F_2` is a vacuous signature condition).
-- T6: `d = 3` signature connection to retained `F4`.
-- T7: `d = 3` binary-selector uniqueness (CP counts histogram).
-
-Expected: PASS=19 FAIL=0.
-
----
-
-## 7. Cross-references
-
-- `docs/DM_NEUTRINO_SOURCE_SURFACE_P3_SYLVESTER_LINEAR_PATH_SIGNATURE_THEOREM_NOTE_2026-04-18.md`
-  (retained path theorem on main)
-- `docs/SCALAR_SELECTOR_SYNTHESIS_NOTE_2026-04-19.md` (reading order)
-- Uhlig 1982 (Linear Algebra Appl. 46 — sign-characteristic
-  classification for Hermitian pencils); Mehl–Mehrmann–Ran–Rodman 2016
-  (Linear Algebra Appl. 511); Milnor, Morse Theory (1963).
-
----
-
-## 8. Honest statement
-
-DPLE is a mechanical algebraic theorem (Jacobi, Cayley–Hamilton,
-Sylvester inertia); its `d = 3` specialization reduces to the retained
-`F4` exactly. No numerical tuning. No new axioms. The dim-parametric
-probe at `d = 2..5` demonstrates both the fragmentation at `d >= 4`
-and the binary-selector uniqueness at `d = 3`. Uhlig 1982 is the
-structural backbone that makes `d = 3` clean.
-
-Runner status: PASS=19 FAIL=0.
+Run `python3 scripts/frontier_dm_dple_theorem.py`. Exact symbolic fixtures test domain exclusion, degree drop, both determinant signs, cubic branch order, d=2 nonvacuity and d=4 multiplicity. Numerical Hermitian sweeps and the supplied basin diagnostics test implementation consistency; they are not proofs of quantified bounds. The proof above supplies the bound. No source-side PMNS closure, observational exclusion, global path certificate or audit grade follows from a successful runner.
 
 ## Audit dependency repair links
 
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+This preserves the existing source relationship without assigning status:
 
-- [dm_neutrino_source_surface_p3_sylvester_linear_path_signature_theorem_note_2026-04-18](DM_NEUTRINO_SOURCE_SURFACE_P3_SYLVESTER_LINEAR_PATH_SIGNATURE_THEOREM_NOTE_2026-04-18.md)
-- `SCALAR_SELECTOR_CYCLE1_SCIENCE_REVIEW_NOTE_2026-04-19.md` (downstream consumer; backticked to avoid length-2 cycle — citation graph direction is *downstream → upstream*)
-- `SCALAR_SELECTOR_SYNTHESIS_NOTE_2026-04-19.md` (downstream consumer; backticked to avoid length-2 cycle — citation graph direction is *downstream → upstream*)
+- [P3 specified-path source](DM_NEUTRINO_SOURCE_SURFACE_P3_SYLVESTER_LINEAR_PATH_SIGNATURE_THEOREM_NOTE_2026-04-18.md).
+- Downstream context: `SCALAR_SELECTOR_CYCLE1_SCIENCE_REVIEW_NOTE_2026-04-19.md` and `SCALAR_SELECTOR_SYNTHESIS_NOTE_2026-04-19.md`.

@@ -1,12 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gw_echo_derived.py
-runner_sha256: eb9cad38ee8ce5b6975608409332032276c3dbc5b955a7d4df5e0cf91ea2b05a
+runner_sha256: 52252f3863d58aecc22a2a86205aa697fd1979970f0c8a1471ff30666693cfba
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
-GW150914 Echo Prediction — Derived from Lattice Axioms
+Historical GW echo formula route — physical derivation withdrawn
+The following historical narrative and checks do not establish echo physics.
 ========================================================================
 
 Derivation chain:
@@ -243,18 +244,17 @@ STEP 6: Numerical crosscheck — exact Schwarzschild tortoise
   [DERIVED] PASS: Kerr echo time matches expected ~67.65 ms
          t_echo = 67.66 ms
 
-  C) Consistency with frontier_frozen_stars_rigorous.py
+  C) Historical echo-ansatz comparison (physical claims withdrawn)
   ------------------------------------------------------------
-  That script reports:
-    t_echo (non-spinning) = 58.09 ms
-    t_echo (Kerr a=0.67)  = 67.65 ms
-  This script:
-    t_echo (non-spinning) = 57.25 ms
-    t_echo (Kerr a=0.67)  = 67.66 ms
-  [DERIVED] PASS: Non-spinning echo time consistent (within 2 ms)
-         this=57.25, rigorous=58.09 ms
-  [DERIVED] PASS: Kerr echo time consistent (within 0.5 ms)
-         this=67.66, rigorous=67.65 ms
+  Archived original head: f78abbde6e5003b71d91cd31394c6f850234b8bc
+  Recovery: docs/work_history/PR9839_original_recovery/manifest.json
+  Historical frozen-star echo branch reported 58.09 ms and 67.65 ms.
+  The active frontier_frozen_stars_rigorous.py no longer emits echo outputs.
+  Agreement with historical ansatz numbers does not validate echo physics.
+  [HISTORICAL_COMPARISON] PASS: Historical non-spinning ansatz number within 2 ms
+         formula=57.25, archived ansatz=58.09 ms
+  [HISTORICAL_COMPARISON] PASS: Historical Kerr ansatz number within 0.5 ms
+         formula=67.66, archived ansatz=67.65 ms
 
 ========================================================================
 SUMMARY
@@ -288,7 +288,7 @@ SUMMARY
     6. NUMERICAL VERIFICATION
        Schwarzschild exact: t_echo = 57.25 ms
        Kerr prediction:     t_echo = 67.66 ms
-       Consistent with frontier_frozen_stars_rigorous.py
+       Historical ansatz-number comparison only; active frozen-star runner emits no echoes
 
   COMPARISON WITH ABEDI ET AL. (2017):
     Our prediction: 67.66 ms (Planck-scale surface)
@@ -304,7 +304,7 @@ SUMMARY
   Checks: 20 passed, 0 failed
   Elapsed: 0.0 s
 
-  All checks passed.
+  All formula checks passed; physical derivation remains withdrawn.
 
 ----- stderr -----
 

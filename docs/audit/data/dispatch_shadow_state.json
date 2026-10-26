@@ -1,5 +1,5 @@
 {
- "as_of_date": "2026-10-21",
+ "as_of_date": "2026-10-26",
  "lane_ids": [
   "a3_option_c_brannen_rivero_physical_lattice_bounded_obstruction_note_2026-05-08_optc",
   "a3_r1_review_confirms_obstruction_note_2026-05-08_r1hr",
@@ -10,7 +10,6 @@
   "a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1",
   "a3_route2_single_clock_c3_obstruction_note_2026-05-08_r2",
   "a3_route3_anomaly_inflow_bounded_obstruction_note_2026-05-08_r3",
-  "a3_route4_spin6_chain_bounded_obstruction_note_2026-05-08_r4",
   "a3_route5_no_proper_quotient_sharpened_obstruction_note_2026-05-08_r5",
   "ac_phi_lambda_preserved_c3_structural_foreclosure_bounded_theorem_note_2026-05-10",
   "area_law_native_car_semantics_tightening_note_2026-04-25",
@@ -19,6 +18,7 @@
   "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07",
   "gate_b_context_independence_no_go_note_2026-06-17",
   "gbare_root_su2_scale_transport_bridge_narrow_theorem_note_2026-06-17",
+  "hierarchy_dimensional_compression_note",
   "hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26",
   "meron_half_action_core_from_topological_infrastructure_bounded_note_2026-06-18",
   "newphysics_np_strong_cp_theta_note_2026-05-10_npcp",

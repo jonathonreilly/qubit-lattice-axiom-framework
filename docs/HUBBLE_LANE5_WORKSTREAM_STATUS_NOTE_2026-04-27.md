@@ -14,9 +14,9 @@ no numerical `H_0` closure
 Before this workstream, Lane 5 closure was framed as five sub-targets
 (5A `Omega_m` closure, 5B `H_0` derivation, 5C tension stance,
 5D `Sigma m_nu`, 5E inflation). After this workstream, Lane 5 closure
-is framed as a sharp two-gate statement:
+is organized by the following separated-input route inventory:
 
-> **Lane 5 closure requires resolving BOTH route classes:**
+> **The reviewed separated-input route resolves BOTH route classes:**
 >
 > - **(C1) absolute-scale route**, gated by the coupled active-block response,
 >   physical channel/Widom, gravitational boundary/action, and action-unit
@@ -26,7 +26,8 @@ is framed as a sharp two-gate statement:
 >   gated by the right-sensitive 2-real `Z_3` doublet-block
 >   point-selection law on `dW_e^H = Schur_{E_e}(D_-)`.
 >
-> No fourth class exists. No single class is sufficient.
+> This is the currently reviewed route taxonomy, not an exhaustive exclusion
+of other or joint derivations.
 
 The source-side structural lock has an explicit operational falsifier (no
 late-time `H_0` running under its supplied cosmology conditions). The 5A
@@ -75,11 +76,11 @@ H(a)^2 / H_0^2 = Omega_r,0 a^-4 + Omega_m,0 a^-3 + Omega_Lambda,0,
 
 so the implied `H_0` is a single scalar across the entire late-time
 epoch. **Operational falsifier:** any z-dependent late-time `H_0`
-running falsifies retained `w_Lambda = -1`.
+running tests the combined supplied model and measurement assumptions.
 
-**Tension stance:** late-time-only resolutions of any genuine Hubble
-tension are forbidden on the retained surface; resolution must come
-from pre-recombination physics or measurement systematics.
+**Tension stance:** the lock is conditional on constant-density flat FRW.
+It neither excludes late-time alternatives nor singles out early-time physics
+or measurement systematics as the only resolutions.
 
 **Lane 5 contribution:** Phase 1 (5C) landed on `main` as a manuscript-facing
 structural commitment pending audit ratification.
@@ -103,33 +104,35 @@ pair `(H_0, L)` where
 `L := Omega_Lambda = (H_inf/H_0)^2`. Every variable in `S` is an exact
 closed-form function of `(H_0, L)` with `R = Omega_r,0` admitted.
 
-**Program-bounding statement:** no fourth class of derivation retires
-the late-time bounded cosmology surface beyond {derive `L`, derive
-`H_0`, derive `R_Lambda` + one of `(L, H_0)`}.
+**Route inventory:** the listed routes are {derive `L`, derive `H_0`,
+derive `R_Lambda` + one of `(L, H_0)`}; the parameter count does not prove
+that this inventory exhausts possible joint relations.
 
 **Lane 5 contribution:** parameter-count statement that exhausts the
 late-time observables. Establishes the structural framing on which
 Cycle 3 builds.
 
-### Cycle 3 — Lane 5 Cosmic-History-Ratio Necessity No-Go
+### Cycle 3 — Separated-input route inventory (necessity claim withdrawn)
 
 **Artifact:**
 `docs/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md`
-(structural case-analysis on the cited cosmology/model surface).
+(conditional inventory on the cited cosmology/model surface).
 
-**Claim:** on the four-axiom foundation plus the cited model surface, the
-dimensional `(H_0, H_inf, R_Lambda)` are non-numerical (absolute-time
-necessity), and the dimensionless
-`L = (H_inf/H_0)^2` is non-derivable (cosmic-history-ratio necessity).
-Lane 5 closure therefore requires premises from two classes:
+**Scope:** the former framework non-derivability argument is withdrawn.
+In the supplied family with independently free `H_inf` and `L`, fixing only
+one leaves `H_0` free. The reviewed separated-input route supplies:
 
-- **(C1) absolute-scale route packet** [REQUIRED];
+- **(C1) absolute-scale route packet** [within this route];
 - **(C2) cosmic-history-ratio retirement** OR **(C3) direct cosmic-`L`
   derivation** [one of the two `L`-pathways].
 
-No fourth class exists. No single class is sufficient.
+This is the currently reviewed route taxonomy, not an exhaustive exclusion
+of other or joint derivations.
 
-**Lane 5 contribution:** formal closure-pathway taxonomy for Lane 5.
+**Lane 5 contribution:** bookkeeping of the reviewed separated-input pathways.
+The Boolean rule is stipulated; it does not certify physical exhaustion.
+A supplied joint relation `H_inf = k sqrt(L)` could fix `H_0=k` without
+separately fixing `L`; this example is not a physical derivation.
 Sets the frame on which Cycles 4 and 5 isolate the gates.
 
 ### Cycle 4 — Lane 5 eta Retirement Gate Audit (`(C2)` gate)
@@ -141,12 +144,13 @@ Sets the frame on which Cycles 4 and 5 isolate the gates.
 **Gate identified:** the right-sensitive 2-real `Z_3` doublet-block
 point-selection law on `dW_e^H = Schur_{E_e}(D_-)`.
 
-**Live routes audited:** 1-flavor exact transport
-(`eta/eta_obs = 0.1888`, closed but undershoots by `~5.3`); reduced-
-surface PMNS support (`eta/eta_obs = 1.0` exact constructive point).
-The PMNS branch's residual selector reduces exactly to the odd slot
-`A13`, equivalently `sign(sin(delta))`, in the moving `Z_3` doublet
-block.
+**Historical route inventory:** the cited transport status records
+`eta/eta_obs = 0.1888` and exact-support wording for a PMNS branch. The
+current reduced-surface diagnostic instead reports two candidates against
+a required three-branch test, with nonzero exit. Cycle 4 now withdraws its
+exact-support promotion inference. The odd slot `A13`, equivalently
+`sign(sin(delta))`, names the historical selector candidate; a physical
+selector/yield theorem and the failed diagnostic obligation remain open.
 
 **Closed routes the gate-resolving selector must avoid:** universal-
 Yukawa, polar-aligned-core, two-Higgs slots, `Z_3` circulant
@@ -154,8 +158,10 @@ mass-basis, asymptotic-source / local-selector-family,
 Wilson-direct-descendant constructive-transport, strong-CP /
 `gamma`-transfer.
 
-**Lane 5 contribution:** sub-lane 5A explicitly gate-isolated. Closing
-the gate retires `eta` from the bounded cascade and supplies `(C2)`.
+**Lane 5 contribution:** a documentary candidate-gate inventory for 5A.
+It does not establish that one selector law retires `eta`; the support,
+physical selection and readout premises remain unresolved. A complete
+`(C2)` input also requires the remaining cascade premises.
 
 ### Cycle 5 — Lane 5 Planck `(C1)` Gate Audit
 
@@ -198,15 +204,15 @@ The two Lane 5 closure gates are remarkably symmetric:
 | **What it pins** | `(delta, q_+)` in the moving `Z_3` doublet block | no single object; all independent `(C1)` obligations must be resolved |
 | **Resulting closure** | conditional `(C2)` route premise | future `(C1)` route premise only after the whole coupled packet is resolved |
 | **Sub-lane** | 5A (cosmic-history-ratio retirement) | 5B (absolute-scale anchor) |
-| **Adjacent live route** | reduced-surface PMNS support, `eta/eta_obs = 1.0` exact constructive point | separate conditional Clifford response and source-unit/gravitational-carrier/action-metrology supports; no single bridge closes `(C1)` |
+| **Adjacent live route** | historical PMNS support claim; current diagnostic fails its required-three-branch test and physical selector/yield remain open | separate conditional Clifford response and source-unit/gravitational-carrier/action-metrology supports; no single bridge closes `(C1)` |
 | **Closed shortcuts** | universal-Yukawa, two-Higgs slots, `Z_3` circulant, polar-aligned-core, asymptotic-source / local-selector-family, Wilson-direct-descendant, strong-CP/`gamma`-transfer | finite-automorphism-only response, carrier-only parent-source scalar, simple-fiber Widom, multipocket selector, primitive-edge-entropy, algebraic finite-Schmidt-spectrum |
 
-The `(C2)` gate is one microscopic point-selection law on a primitive
-algebraic block. The `(C1)` gate is instead the coupled packet of response,
+The historical `(C2)` candidate gate is a microscopic point-selection law
+on a supplied algebraic block; its sufficiency for physical yield is not established. The `(C1)` gate is instead the coupled packet of response,
 channel/Widom, gravitational-carrier, and action-metrology obligations listed
 above; it is not one edge-selection law. Each route records only its scoped
-shortcut exclusions, and both route classes remain necessary (per Cycle 3)
-for Lane 5 closure.
+shortcut exclusions, within its own supplied premises. Cycle 3 establishes no universal
+requirement for separately derived route classes.
 
 ## 4. What each cycle did and did not retire
 
@@ -219,14 +225,14 @@ for Lane 5 closure.
 | 5 | none | identifies `(C1)` gate | same |
 
 **Net:** no numerical input retired. The workstream's contribution is
-**structural** — the closure pathway is now a sharp two-gate statement
-rather than a five-target list.
+**structural** — the selected separated-input route has a two-part
+dependency map. Other or joint derivations remain open.
 
 ## 5. Outstanding open premises
 
-To close Lane 5, the `(C1)` route and one of the `(C2)`/`(C3)` routes must
-each be derived or separately supplied. The current four axioms do not resolve
-them.
+For the reviewed separated-input route, `(C1)` and one of `(C2)`/`(C3)`
+must each be derived or supplied with their bridges. This inventory contains
+no derivation of them and no proof that the four axioms cannot resolve them.
 
 ### (C1) Coupled absolute-scale route packet
 
@@ -261,24 +267,13 @@ vacuum/topology argument outside the existing DM/leptogenesis lane.
 
 ## 6. Manuscript-surface implications
 
-The structural lock theorem (Cycle 1) is the only Lane 5 cycle that
-adds a manuscript-surface prediction with explicit operational
-falsifier. The recommended manuscript weave is:
-
-- `docs/publication/ci3_z3/INPUTS_AND_QUALIFIERS_NOTE.md` §2
-  (cosmology windows): cite the structural lock alongside the matter-
-  bridge identity; update phrasing to reflect late-time `H_0(z)`
-  running is forbidden on the retained surface.
-- `docs/publication/ci3_z3/WHAT_THIS_PAPER_DOES_NOT_CLAIM.md`: revise
-  the Hubble-tension framing — the framework's commitment to ΛCDM at
-  late times rules out late-time-only tension resolutions.
-- `docs/lanes/open_science/05_HUBBLE_CONSTANT_DERIVATION_OPEN_LANE_2026-04-26.md`
-  §4 scaffolding list: add the new Lane 5 artifacts. Update §5 Phase 1
-  (5C) to "landed on `main` pending audit"; reframe Phases 2-5 as the
-  two-gate `(C1)`/`(C2)` work.
+The structural lock is a conditional model-consistency statement, not a
+framework prediction excluding late-time alternatives. The former publication
+weave is withdrawn. The flagship package was owner-deferred to
+archive/publication/ci3_z3; its historical tables confer no current authority.
 
 Cycles 2-5 are infrastructure for the reviewer/integration pipeline.
-They sharpen what Lane 5 closure requires; they do not themselves move
+They organize the reviewed route obligations; they do not themselves move
 the manuscript-facing prediction surface.
 
 ## 7. Cross-references

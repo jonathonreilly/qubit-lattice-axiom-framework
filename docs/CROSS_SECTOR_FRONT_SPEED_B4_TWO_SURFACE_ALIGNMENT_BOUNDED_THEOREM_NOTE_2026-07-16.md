@@ -295,7 +295,7 @@ signs differ). The orbit-summed zero is symmetry-driven, not kernel tuning.
 
 ## Scoping the two landed parentheticals (derived; no landed text is edited)
 
-The landed lane carries the same assertion in two places.
+The following quotations preserve the historical comparison wording. The corrected logflow note now restricts itself to supplied-symbol proxies and withdraws physical log-flow corroboration and the physical `f0` no-go. These quotations are not current authority for those claims. The conditional Euclidean theorem here does not require them.
 [`VELOCITY_RG_LOGFLOW_FRAMEWORK_INTERNAL_2026-06-21.md`](VELOCITY_RG_LOGFLOW_FRAMEWORK_INTERNAL_2026-06-21.md),
 lines 30–35:
 
@@ -335,11 +335,9 @@ mechanism on that surface. This is the continuous-time horn where the landed
 On the `Z^4` `B4`-covariant surface (leg 1) the same counting gives rank 1 per
 sector and the **Euclidean marginal quotient** is pinned: `R = 1`
 order-by-order (L2 + L3). This does not prove the quoted physical front-speed
-claim because the reconstruction and surface-license walls remain open. Both
-landed notes stand as written; this note narrows the exact Euclidean content and
-edits neither.
+claim because the reconstruction and surface-license walls remain open. The quoted historical assertions do not establish physical front speeds. This note narrows only their conditional Euclidean content.
 
-The logflow note also states the demand (lines 116–117):
+The historical logflow note stated the following demand; it is preserved as motivation, not as an exhaustive necessity theorem:
 
 > Closing it needs a cross-sector custodial symmetry or an
 > `O(1)` anomalous dimension the framework does not currently supply.
@@ -422,7 +420,7 @@ retired nor replaced by this theorem.
 |---|---|---|
 | [`ALLORDERS_B4_MARGINAL_PROTECTION_SYMMETRY_THEOREM_NOTE_2026-06-14.md`](ALLORDERS_B4_MARGINAL_PROTECTION_SYMMETRY_THEOREM_NOTE_2026-06-14.md) | unaudited | leg 1 (premise (A) surface); (B) counting; (C) all-orders transport |
 | [`TASTE_SECTOR_MARGINAL_LV_B4_PROTECTION_ON_OS0_BOUNDED_THEOREM_NOTE_2026-06-13.md`](TASTE_SECTOR_MARGINAL_LV_B4_PROTECTION_ON_OS0_BOUNDED_THEOREM_NOTE_2026-06-13.md) | unaudited | honest observable `G_hon = Dinv - Sigma`, `hw2` orbit, rainbow kernel; per-taste dichotomy quoted |
-| [`VELOCITY_RG_LOGFLOW_FRAMEWORK_INTERNAL_2026-06-21.md`](VELOCITY_RG_LOGFLOW_FRAMEWORK_INTERNAL_2026-06-21.md) | unaudited | scoped parenthetical (lines 30–35); custodial-demand sentence (lines 116–117) |
+| [`VELOCITY_RG_LOGFLOW_FRAMEWORK_INTERNAL_2026-06-21.md`](VELOCITY_RG_LOGFLOW_FRAMEWORK_INTERNAL_2026-06-21.md) | unaudited | historical parenthetical and motivation only; current supplied-symbol proxy supplies no physical drag or no-go premise |
 | [`VELOCITY_RG_GAUGE_SEAGULL_TRANSVERSE_VACUUM_POLARIZATION_2026-06-22.md`](VELOCITY_RG_GAUGE_SEAGULL_TRANSVERSE_VACUUM_POLARIZATION_2026-06-22.md) | unaudited | seagull-completed `Pi` kernel (`T_F = 1/2`); scoped parenthetical (lines 20–22); gauge-prescription open item |
 | [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) | meta (framework authority) | direct authority that observable/readout identification is downstream of the four axioms; why leg 2 is declared rather than derived |
 | [`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md) | meta (registered primitive) | unchanged; consumed (not derived) through the leg-1 surface, per `ALLORDERS_B4` |

@@ -15,10 +15,10 @@
   "claim_id": "dm_abcc_signature_forcing_theorem_note_2026-04-19",
   "claim_scope": null,
   "claim_type": "bounded_theorem",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": null,
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "author_hint",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -36,7 +36,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "1ec97a0380088b1c27a28b73d87633514cf513985cbc53505c13a1bc645928b7",
+  "note_hash": "b797dc8f991b84a5c041a1036eec069e327cd9f16c612b3b85768a77b2f7d327",
   "note_path": "docs/DM_ABCC_SIGNATURE_FORCING_THEOREM_NOTE_2026-04-19.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -276,7 +276,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_dm_abcc_signature_forcing_theorem.py",
-  "title": "DM A-BCC: Sylvester Signature-Forcing Theorem (Listed-Endpoint Scope)",
+  "title": "Continuous Hermitian paths: conditional inertia and determinant boundaries",
   "transitive_descendants": 12,
   "verdict_rationale": null
 }

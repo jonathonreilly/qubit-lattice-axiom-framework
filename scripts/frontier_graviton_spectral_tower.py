@@ -1,21 +1,9 @@
 #!/usr/bin/env python3
-"""
-Graviton TT compactness spectral tower theorem verification on retained S^3.
+"""Spatial TT rough-Laplacian spectrum and momentum-scale arithmetic.
 
-Verifies the three tower identities (T1, T2, T3) in
-  docs/GRAVITON_SPECTRAL_TOWER_THEOREM_NOTE_2026-04-24.md
-
-T1: m_l^2 = [l(l+2) - 2] * hbar^2 / (c^2 R^2), for l = 2, 3, 4, ...
-T2: (m_l / m_k)^2 = [l(l+2) - 2] / [k(k+2) - 2]  (pure rational)
-T3: m_l^2 / (2 Lambda / 3) >= 3, equality iff l = 2 (Higuchi margin tower)
-
-The l = 2 mode is required to reduce EXACTLY to the retained graviton-mass
-theorem m_g^2 = 2 hbar^2 Lambda / c^2.
-
-Authorities consumed (all retained on main):
-  - COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md
-  - GRAVITON_MASS_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md
-  - S3_GENERAL_R_DERIVATION_NOTE.md, S3_CAP_UNIQUENESS_NOTE.md
+The historical variable names m_* denote mass-equivalent spectral scales
+p/c only; no rest mass or massive spin-2 field is established. The T3 ratio
+is conditional on R=ell and Lambda=3/ell^2, not a Higuchi stability test.
 """
 
 from __future__ import annotations
@@ -54,7 +42,7 @@ def banner(title: str) -> None:
 # --------------------------------------------------------------------------
 
 def lichnerowicz_eigenvalue(l: int) -> int:
-    """Returns l(l+2) - 2, the Lichnerowicz TT eigenvalue numerator in units of 1/R^2."""
+    """Returns l(l+2) - 2, the TT rough-Laplacian eigenvalue numerator in units of 1/R^2."""
     return l * (l + 2) - 2
 
 
@@ -73,11 +61,11 @@ M_G_RETAINED_NUMERICAL_EV = 3.52e-33    # eV, retained graviton-mass note (using
 
 
 # --------------------------------------------------------------------------
-# Part 0: reproduce retained graviton mass from tower at l = 2
+# Part 0: reproduce spectral mass-equivalent scale from tower at l = 2
 # --------------------------------------------------------------------------
 
 def part0_single_mode_consistency() -> None:
-    banner("Part 0: tower at l = 2 reproduces retained graviton-mass identity")
+    banner("Part 0: tower at l = 2 reproduces spectral mass-equivalent identity (not rest mass)")
 
     l_val = 2
     numerator_2 = lichnerowicz_eigenvalue(l_val)
@@ -87,7 +75,7 @@ def part0_single_mode_consistency() -> None:
     # Equivalently m_g^2 = 2 hbar^2 Lambda / c^2 with Lambda = 3/R^2.
     m_g_squared_coefficient_in_lambda = 2 * Fraction(numerator_2, 6)  # should equal 2
     check(
-        "T1 at l=2 gives m_g^2 = 2 hbar^2 Lambda / c^2 (retained identity)",
+        "T1 at l=2 gives m_g^2 = 2 hbar^2 Lambda / c^2 (spectral identity only)",
         m_g_squared_coefficient_in_lambda == 2,
         f"coefficient in front of hbar^2 Lambda / c^2 = {m_g_squared_coefficient_in_lambda}",
     )
@@ -147,7 +135,7 @@ def part2_gap_differences() -> None:
 # --------------------------------------------------------------------------
 
 def part3_t2_rational_ratios() -> None:
-    banner("Part 3: T2 mass-squared ratios (m_l/m_k)^2 are rational for all integer pairs")
+    banner("Part 3: T2 squared momentum ratios (m_l/m_k)^2 are rational for all integer pairs")
 
     # Check a grid of pairs
     test_pairs = [(2, 3), (2, 4), (2, 5), (3, 4), (3, 5), (4, 7), (5, 10), (2, 100), (2, 1000)]
@@ -180,30 +168,30 @@ def part3_t2_rational_ratios() -> None:
 
 
 # --------------------------------------------------------------------------
-# Part 4: T3 uniform Higuchi margin
+# Part 4: T3 uniform conditional curvature ratio
 # --------------------------------------------------------------------------
 
 def part4_t3_higuchi_margin() -> None:
-    banner("Part 4: T3 Higuchi margin m_l^2 / (2 Lambda / 3) = [l(l+2) - 2] / 2")
+    banner("Part 4: T3 conditional curvature ratio m_l^2 / (2 Lambda / 3) = [l(l+2) - 2] / 2")
 
     margins = {}
     for l in range(2, 21):
         lam = lichnerowicz_eigenvalue(l)
-        # Higuchi margin = m_l^2 / (2 Lambda / 3)
+        # conditional curvature ratio = m_l^2 / (2 Lambda / 3)
         # m_l^2 = lam * hbar^2 / (c^2 R^2)
         # 2 Lambda / 3 = 2 * 3 / (3 R^2) * hbar^2 / c^2 = 2 * hbar^2 / (c^2 R^2)
         # margin = lam / 2
         margin = Fraction(lam, 2)
         margins[l] = margin
         check(
-            f"T3 at l={l}: Higuchi margin = {margin} (>= 3)",
+            f"T3 at l={l}: conditional curvature ratio = {margin} (>= 3)",
             margin >= 3,
             f"margin = {margin}",
         )
 
     # The lowest margin (at l=2) must be exactly 3 (saturating)
     check(
-        "T3 lowest margin at l=2 equals 3 exactly (retained Higuchi-factor-3 corollary)",
+        "T3 lowest margin at l=2 equals 3 exactly (curvature-ratio factor 3)",
         margins[2] == 3,
         f"margin at l=2 = {margins[2]}",
     )
@@ -211,7 +199,7 @@ def part4_t3_higuchi_margin() -> None:
     # Higher margins are strictly > 3
     for l in range(3, 11):
         check(
-            f"T3 margin at l={l} strictly > 3 (strictly non-ghost, strictly above partially-massless)",
+            f"T3 margin at l={l} strictly > 3 (conditional spectral ratio only)",
             margins[l] > 3,
             f"margin = {margins[l]}",
         )
@@ -232,20 +220,16 @@ def part4_t3_higuchi_margin() -> None:
 # --------------------------------------------------------------------------
 
 def part5_numerical_evaluation() -> None:
-    banner("Part 5: numerical mass values at observed R_Lambda (bounded; cosmology-scale pin)")
+    banner("Part 5: spectral energy scales at supplied R=c/H_0 (bounded; cosmology-scale pin)")
 
-    # m_l = sqrt(lam) * hbar / (c * R_Lambda * c) = sqrt(lam) * hbar / (c^2 * R_Lambda)
-    # Wait: m_l^2 c^2 / hbar^2 = lam / R^2 (SI units: 1/length^2 since lam is pure number)
-    # So m_l = (hbar / c^2) * sqrt(lam) / R   [units: mass = J*s / (m/s)^2 / m = kg]
-    # To get eV: multiply by c^2 (to get energy) then by EV_PER_J.
-    # m_l_energy_J = hbar * c * sqrt(lam) / R   [J = kg * m^2/s^2]
-    # m_l_energy_eV = m_l_energy_J * EV_PER_J
+    # Spatial momentum p_l=hbar*sqrt(lam)/R, energy scale E_l=c*p_l.
+    # This dimensional scale is not a rest mass or a dispersion derivation.
     prefactor_eV = HBAR_J_S * C_LIGHT / R_HUBBLE_M * EV_PER_J
 
     print(f"  Observation-pinned R = c/H_0 = {R_HUBBLE_M:.3e} m (bounded, matches retained m_g note)")
-    print(f"  Mass-energy prefactor hbar*c/R = {prefactor_eV:.4e} eV")
+    print(f"  Spectral energy prefactor hbar*c/R = {prefactor_eV:.4e} eV")
     print()
-    print(f"  {'l':>3}  {'lam = l(l+2)-2':>15}  {'m_l (eV)':>14}  {'m_l/m_2':>10}  {'Higuchi margin':>15}")
+    print(f"  {'l':>3}  {'lam = l(l+2)-2':>15}  {'E_l (eV)':>14}  {'m_l/m_2':>10}  {'conditional curvature ratio':>15}")
 
     m_2_eV = prefactor_eV * math.sqrt(lichnerowicz_eigenvalue(2))
     for l in range(2, 11):
@@ -255,9 +239,9 @@ def part5_numerical_evaluation() -> None:
         margin = Fraction(lam, 2)
         print(f"  {l:>3d}  {lam:>15d}  {m_l_eV:>14.3e}  {ratio:>10.4f}  {str(margin):>15s}")
 
-    # Verify l=2 matches retained graviton mass value
+    # Verify l=2 matches spectral mass-equivalent scale value
     check(
-        "numerical m_2 at R = c/H_0 matches retained m_g ~ 3.52e-33 eV",
+        "numerical m_2 at R = c/H_0 matches historical spectral scale ~ 3.52e-33 eV",
         abs(m_2_eV - M_G_RETAINED_NUMERICAL_EV) / M_G_RETAINED_NUMERICAL_EV < 0.02,
         f"m_2 = {m_2_eV:.3e} eV vs retained m_g = {M_G_RETAINED_NUMERICAL_EV:.3e} eV",
     )
@@ -286,10 +270,10 @@ def part6_lambda_consistency() -> None:
         check(
             f"m_{l}^2 / Lambda = [l(l+2) - 2] / 3 = {ratio_sq} (hbar^2/c^2 units)",
             isinstance(ratio_sq, Fraction) and ratio_sq > Fraction(2, 3),
-            f"m_{l}^2 / Lambda = {ratio_sq} > Higuchi threshold 2/3",
+            f"m_{l}^2 / Lambda = {ratio_sq} > comparison value 2/3",
         )
 
-    # Specifically: m_2^2 / Lambda = 2 (retained graviton-mass identity coefficient)
+    # Specifically: m_2^2 / Lambda = 2 (spectral mass-equivalent identity (not rest mass) coefficient)
     check(
         "m_2^2 / Lambda = 2 exactly (reproduces retained m_g^2 = 2 hbar^2 Lambda / c^2)",
         Fraction(lichnerowicz_eigenvalue(2), 3) == 2,
@@ -320,7 +304,7 @@ def part7_closed_form_structural() -> None:
         "exact form across tower",
     )
 
-    # T2 reducibility: (m_l/m_2)^2 = [l(l+2) - 2] / 6 gives integer quotient only at l=8, 13, 23, ...
+    # T2 reducibility: (m_l/m_2)^2 = [l(l+2) - 2] / 6 gives integer quotients for l congruent to 2 modulo6 (including l=2)
     print()
     print("  Integer-quotient modes (m_l/m_2)^2 = integer:")
     for l in range(2, 25):
@@ -339,33 +323,13 @@ def part7_closed_form_structural() -> None:
 # --------------------------------------------------------------------------
 
 def part8_summary() -> None:
-    banner("Part 8: summary - retained TT compactness spectral tower on S^3")
-
-    print("  THREE STRUCTURAL IDENTITIES VERIFIED (T1, T2, T3) on retained S^3:")
-    print()
-    print("    T1: m_l^2 = [l(l+2) - 2] * hbar^2 / (c^2 R^2)    for l = 2, 3, 4, ...")
-    print("    T2: (m_l / m_k)^2 = [l(l+2) - 2] / [k(k+2) - 2]  (pure rational)")
-    print("    T3: m_l^2 / (2 Lambda / 3) = [l(l+2) - 2] / 2  >= 3  (equality iff l = 2)")
-    print()
-    print("  PACKAGE EFFECT: the full infinite tower of spin-2 TT compactness masses")
-    print("  on retained S^3 is pinned by the SAME single open number R that carries")
-    print("  Lambda and m_g. Lowest mode (l = 2) reproduces the retained graviton mass")
-    print("  identity exactly.")
-    print()
-    print("  OBSERVATION:")
-    print("    m_2 ~ 3.52e-33 eV, tower modes heavier by at most sqrt(l^2/6) factor;")
-    print("    all below ~1e-32 eV at l = 10. Not currently detectable.")
-    print()
-    print("  FALSIFIABILITY:")
-    print("    - After a validated physical readout, any two spin-2 compactness modes")
-    print("      inconsistent with the T2 rational ratio falsify the S^3 structure.")
-    print("    - Detection of ghost or partially-massless spin-2 mode falsifies T3.")
-    print()
-    print("  DOES NOT CLOSE:")
-    print("    - numerical R_Lambda (matter-bridge open number unchanged)")
-    print("    - 4D-EFT interpretation / vDVZ caveat (unchanged from single-mode note)")
-    print("    - claim that higher-l modes are separately observed particle states")
-    print("    - detectability horizons")
+    banner("Part 8: spatial spectrum and conditional curvature comparison")
+    print("T1: lambda_l=[l(l+2)-2]/R^2; p_l=hbar*sqrt(lambda_l).")
+    print("T2: squared spatial momentum ratios are rational.")
+    print("T3: lambda_l/(2 Lambda/3)>=3 only with R=ell, Lambda=3/ell^2.")
+    print("Legacy m_* variables denote p_l/c; no rest mass is established.")
+    print("No Higuchi stability, detector reach, or massive-particle claim follows.")
+    print("On global de Sitter slices a(t)=ell*cosh(ct/ell), the ratio varies.")
 
 
 # --------------------------------------------------------------------------

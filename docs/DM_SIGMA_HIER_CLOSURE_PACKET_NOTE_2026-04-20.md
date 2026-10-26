@@ -1,26 +1,27 @@
 # DM Sigma-Hier Closure Packet
 
-**Claim type:** positive_theorem
+**Type:** meta
 
 **Date:** 2026-04-20  
 **Lane:** DM A-BCC sigma-chain / hierarchy-permutation ambiguity  
-**Status:** authoritative closure packet for the hierarchy-permutation
-ambiguity  
-**Claim:** the hierarchy-permutation ambiguity is closed on this package  
-**Exact closure statement:** `sigma_hier = (2,1,0)` is selected on the active
-chamber package, and therefore `sin(delta_CP) < 0` follows as a consequence
+**Status:** historical proof-chain inventory with current authority withdrawn.
+**Current scope:** supplied finite comparisons and named open premises only.
+The following historical chain is retained for recovery, not asserted as a
+current theorem. Exact chamber exhaustion, physical filter/row selection and
+`I12` closure are unestablished in this source packet, not proved impossible.
 
 ## What this packet is for
 
 This package contains both:
 
 - an intermediate reduction note,
-- and the later theorem notes that actually close the hierarchy-permutation ambiguity.
+- and later notes that proposed closing the hierarchy-permutation ambiguity.
 
-This packet names the exact closure chain so the branch owner does not have to
-reconstruct it from several notes.
+This packet records the proposed chain and withdraws its current authority.
+The two linked current owners now support only finite supplied diagnostics.
+The quoted historical conclusions below cannot be imported as current premises.
 
-## The exact proof chain
+## Historical proposed proof chain (not established here)
 
 ### 1. Chamber completeness is explicit
 
@@ -115,25 +116,23 @@ sin(delta_CP) < 0
 
 follows automatically.
 
-## Verdict
+## Current boundary
 
-The hierarchy-permutation ambiguity is closed on this package surface.
+The hierarchy-permutation ambiguity is not closed by this packet. The chamber
+owner does not certify exact roots or exhaustion; the source-cubic owner
+compares three supplied points and stipulated filters. A labeled row-swap
+identity does not supply a physical row assignment. The other linked threshold
+and selector arguments are preserved for future validation, not accepted here
+as independent completion of those missing premises.
 
-The authoritative theorem to cite for the closeout is:
+The old threshold and pin values above remain historical numerical statements.
+They are not new certified enclosures or evidence of a physical selection law.
+No impossibility theorem for those open routes is inferred.
 
-- [DM_SIGMA_HIER_UPPER_OCTANT_SELECTOR_THEOREM_NOTE_2026-04-20.md](./DM_SIGMA_HIER_UPPER_OCTANT_SELECTOR_THEOREM_NOTE_2026-04-20.md)
+## Historical reproduction references
 
-The earlier theorem that first closed it on the exact chamber root set is:
-
-- [DM_PMNS_UPPER_OCTANT_SOURCE_CUBIC_SELECTOR_THEOREM_NOTE_2026-04-20.md](./DM_PMNS_UPPER_OCTANT_SOURCE_CUBIC_SELECTOR_THEOREM_NOTE_2026-04-20.md)
-
-The intermediate reduction note is not the closure note:
-
-- [DM_PMNS_CP_ORIENTATION_PARITY_REDUCTION_NOTE_2026-04-20.md](./DM_PMNS_CP_ORIENTATION_PARITY_REDUCTION_NOTE_2026-04-20.md)
-
-## Verification
-
-The branch-local closure is backed by the passing runners:
+The following commands and counts belong to the historical proposal; they do
+not establish its closure claim or represent current cache freshness:
 
 ```bash
 PYTHONPATH=scripts python3 scripts/frontier_dm_pmns_chamber_spectral_completeness_theorem_2026_04_20.py
@@ -148,3 +147,5 @@ PASS=11 FAIL=0
 PASS=14 FAIL=0
 PASS=14 FAIL=0
 ```
+
+Complete original packet source is preserved at `a8151fb8e39df04925316bedb745a0aa4f36e333` and in repair evidence. This withdrawal changes no numeric predicate, audit verdict or ledger.

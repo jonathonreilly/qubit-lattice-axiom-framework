@@ -1,51 +1,13 @@
 #!/usr/bin/env python3
-"""
-DM PMNS ordered-chain graded-current delta closure theorem.
-
-Question:
-  After native graph-first current activation closes q_+ on the physical
-  affine Hermitian chart, is there an exact same-branch sole-axiom law for the
-  remaining delta / Im(K_Z3[1,2]) direction on the retained hw=1 response
-  family?
-
-Answer:
-  Yes.
-
-  Let N = diag(1,2,3) be the canonical ordered-chain grading already fixed by
-  the graph-first selector, cycle-frame support theorem, and adjacent-chain
-  path algebra. Define the graded current
-
-      J_N(H) := J_chi(i [N, H]).
-
-  On the physical affine chart
-
-      H(m, delta, q_+) = H_base + m T_m + delta T_delta + q_+ T_q
-
-  this current satisfies the exact formula
-
-      J_N(H) = -1/2 + i (E1/2 - delta/2 - 3 q_+/2),
-
-  where E1 = sqrt(8/3).
-
-  Since the affine current theorem already gives
-
-      J_chi(H) = q_+ - i/4,
-
-  the affine active pair is recovered exactly by
-
-      q_+(H) = Re J_chi(H),
-      delta(H) = E1 - 2 Im J_N(H) - 3 Re J_chi(H).
-
-  The same formulas survive exactly after passage to the retained hw=1
-  response columns. So the remaining strict/native DM scalar last mile is
-  closed on the physical affine/source family.
-"""
+"""Coordinate recovery from supplied H; no current-value or physical selection theorem."""
 
 from __future__ import annotations
 
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ['docs/DM_LEPTOGENESIS_NE_CHARGED_SOURCE_RESPONSE_REDUCTION_NOTE_2026-04-16.md', 'docs/DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_LAW_DERIVATION_NOTE_2026-04-16.md', 'docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_BREAKING_TRIPLET_CP_THEOREM_NOTE_2026-04-15.md', 'docs/DM_NEUTRINO_EXACT_H_SOURCE_SURFACE_PREIMAGE_BUNDLE_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_EXACT_H_SOURCE_SURFACE_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_POSITIVE_POLAR_H_CP_THEOREM_NOTE_2026-04-15.md', 'docs/DM_NEUTRINO_POSTCANONICAL_POLAR_SECTION_NOTE_2026-04-15.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_AFFINE_POINT_SELECTION_BOUNDARY_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_HALF_PLANE_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_CARRIER_NORMAL_FORM_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_INTRINSIC_SLOT_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_SHIFT_QUOTIENT_BUNDLE_THEOREM_NOTE_2026-04-16.md', 'docs/DM_PMNS_GRAPH_FIRST_ORDERED_CHAIN_NONZERO_CURRENT_ACTIVATION_THEOREM_NOTE_2026-04-21.md', 'docs/DM_PMNS_ORDERED_CHAIN_GRADED_CURRENT_DELTA_CLOSURE_THEOREM_NOTE_2026-04-21.md', 'docs/DM_PMNS_UPPER_OCTANT_SOURCE_CUBIC_SELECTOR_THEOREM_NOTE_2026-04-20.md', 'docs/DM_WILSON_TO_DWEH_HERMITIAN_SOURCE_FAMILY_TARGET_NOTE_2026-04-18.md', 'docs/DM_WILSON_TO_DWEH_LOCAL_CHAIN_PATH_ALGEBRA_TARGET_NOTE_2026-04-18.md', 'docs/PMNS_GRAPH_FIRST_CYCLE_FRAME_SUPPORT_NOTE.md', 'docs/PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md', 'docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md', 'scripts/dm_leptogenesis_exact_common.py', 'scripts/frontier_dm_leptogenesis_pmns_projector_interface.py', 'scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py', 'scripts/frontier_dm_neutrino_exact_h_source_surface_preimage_bundle_theorem.py', 'scripts/frontier_dm_neutrino_hermitian_bridge_carrier.py', 'scripts/frontier_dm_neutrino_positive_polar_h_cp_theorem.py', 'scripts/frontier_dm_neutrino_postcanonical_polar_section.py', 'scripts/frontier_dm_neutrino_source_surface_active_affine_point_selection_boundary.py', 'scripts/frontier_dm_neutrino_source_surface_active_half_plane_theorem.py', 'scripts/frontier_dm_neutrino_source_surface_carrier_normal_form.py', 'scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py', 'scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py', 'scripts/frontier_dm_pmns_graph_first_ordered_chain_nonzero_current_closure_2026_04_21.py', 'scripts/frontier_dm_pmns_upper_octant_source_cubic_selector_theorem_2026_04_20.py', 'scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18.py', 'scripts/frontier_graph_first_selector_derivation.py', 'scripts/frontier_graph_first_su3_integration.py', 'scripts/frontier_pmns_active_four_real_source_from_transport.py', 'scripts/frontier_pmns_c3_character_holonomy_closure.py', 'scripts/frontier_pmns_c3_character_mode_reduction.py', 'scripts/frontier_pmns_c3_nontrivial_current_boundary.py', 'scripts/frontier_pmns_current_bank_value_selection_nogo.py', 'scripts/frontier_pmns_graph_first_cycle_frame_support.py', 'scripts/frontier_pmns_lower_level_end_to_end_closure.py', 'scripts/frontier_pmns_oriented_cycle_channel_value_law.py', 'scripts/frontier_pmns_oriented_cycle_reduced_channel_nonselection.py', 'scripts/frontier_pmns_oriented_cycle_selection_structure.py', 'scripts/frontier_pmns_sole_axiom_hw1_source_transfer_boundary.py', 'scripts/frontier_pmns_theta23_upper_octant_chamber_closure_prediction.py', 'scripts/frontier_pmns_three_flux_holonomy_closure.py', 'scripts/frontier_pmns_twisted_flux_transfer_holonomy_boundary.py', 'scripts/frontier_pmns_uniform_scalar_deformation_boundary.py', 'scripts/frontier_sigma_hier_uniqueness_theorem.py', 'scripts/pmns_lower_level_utils.py']
+
 import math
 import sys
-from pathlib import Path
 
 import numpy as np
 
@@ -66,12 +28,10 @@ from frontier_dm_pmns_upper_octant_source_cubic_selector_theorem_2026_04_20 impo
 from frontier_pmns_c3_nontrivial_current_boundary import nontrivial_character_current
 from pmns_lower_level_utils import (
     active_response_columns_from_sector_operator,
-    circularity_guard,
     derive_active_block_from_response_columns,
     sector_operator_fixture_from_effective_block,
 )
 
-ROOT = Path(__file__).resolve().parents[1]
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -91,8 +51,6 @@ def check(name: str, condition: bool, detail: str = "") -> bool:
     return condition
 
 
-def read(rel: str) -> str:
-    return (ROOT / rel).read_text(encoding="utf-8")
 
 
 def graded_current(h: np.ndarray) -> complex:
@@ -116,24 +74,6 @@ def q_from_current(h: np.ndarray) -> float:
     return float(np.real(nontrivial_character_current(h)))
 
 
-def part1_the_ordered_chain_grading_is_already_canonical() -> None:
-    print("\n" + "=" * 88)
-    print("PART 1: THE ORDERED-CHAIN GRADING IS ALREADY CANONICAL")
-    print("=" * 88)
-
-    ordered_note = read(
-        "docs/DM_PMNS_GRAPH_FIRST_ORDERED_CHAIN_NONZERO_CURRENT_ACTIVATION_THEOREM_NOTE_2026-04-21.md"
-    )
-    n = chain_number_operator()
-
-    check(
-        "The ordered-chain activation theorem records the canonical grading N = diag(1,2,3)",
-        "N = diag(1,2,3)" in ordered_note or "N = diag(1, 2, 3)" in ordered_note,
-    )
-    check(
-        "The graded-current route uses exactly that canonical ordered-chain grading",
-        np.linalg.norm(n - np.diag([1.0, 2.0, 3.0]).astype(complex)) < 1e-12,
-    )
 
 
 def part2_basis_values_close_the_exact_graded_current_formula() -> None:
@@ -207,7 +147,7 @@ def part3_the_pair_of_currents_recovers_the_full_affine_active_pair() -> None:
     jn_same = [graded_current(active_affine_h(*p)) for p in same_q]
 
     check(
-        "Two affine points with the same q_+ have the same native current J_chi",
+        "Two affine points with the same q_+ have the same supplied current J_chi",
         abs(j_same[0] - j_same[1]) < 1e-12,
         f"J0={j_same[0]:.12f}, J1={j_same[1]:.12f}",
     )
@@ -250,9 +190,9 @@ def part3_the_pair_of_currents_recovers_the_full_affine_active_pair() -> None:
     )
 
 
-def part4_the_current_pair_survives_exactly_on_the_retained_hw1_response_family() -> None:
+def part4_the_current_pair_survives_exactly_on_the_supplied_hw1_response_family() -> None:
     print("\n" + "=" * 88)
-    print("PART 4: THE CURRENT PAIR SURVIVES EXACTLY ON THE RETAINED HW=1 RESPONSE FAMILY")
+    print("PART 4: THE CURRENT PAIR SURVIVES EXACTLY ON THE SUPPLIED HW=1 RESPONSE FAMILY")
     print("=" * 88)
 
     lam = 0.31
@@ -292,7 +232,7 @@ def part4_the_current_pair_survives_exactly_on_the_retained_hw1_response_family(
         f"max err={max_block:.2e}",
     )
     check(
-        "On reconstructed hw=1 response blocks the native current still recovers q_+ exactly",
+        "On reconstructed hw=1 response blocks the supplied current still recovers q_+ exactly",
         ok_q,
         f"max err={max_q_err:.2e}",
     )
@@ -303,95 +243,21 @@ def part4_the_current_pair_survives_exactly_on_the_retained_hw1_response_family(
     )
 
 
-def part5_strict_native_closeout() -> None:
-    print("\n" + "=" * 88)
-    print("PART 5: STRICT/NATIVE CLOSEOUT")
-    print("=" * 88)
-
-    reduction_note = read(
-        "docs/DM_PMNS_NATIVE_CURRENT_LAST_MILE_REDUCTION_THEOREM_NOTE_2026-04-21.md"
-    )
-    affine_note = read(
-        "docs/DM_PMNS_AFFINE_CURRENT_COORDINATE_REDUCTION_THEOREM_NOTE_2026-04-21.md"
-    )
-
-    check(
-        "The prior reduction note records the remaining strict/native object as one additional real delta-law beyond current activation",
-        "one additional real scalar law remains" in affine_note
-        or "one additional real sole-axiom selector law" in affine_note,
-    )
-    check(
-        "The same reduction note still records that q_+ was already closed by the native current",
-        "J_chi(H) = q_+ - i/4" in reduction_note or "J_chi(H) = q_+ - i/4" in affine_note,
-    )
-    basin1 = CHAMBER_ROOTS["Basin 1"]
-    h_phys = active_affine_h(*basin1)
-    delta_phys = delta_from_currents(h_phys)
-
-    check(
-        "The ordered-chain graded current closes that remaining real affine coordinate on the physical chamber point",
-        abs(delta_phys - basin1[1]) < 1e-12,
-        f"delta_phys={delta_phys:.12f}",
-    )
-    check(
-        "So the strict/native DM last mile now closes on the physical affine/source family",
-        abs(delta_phys - basin1[1]) < 1e-12 and abs(q_from_current(h_phys) - basin1[2]) < 1e-12,
-        "q_+ and delta both recovered natively",
-    )
 
 
-def part6_circularity_guard() -> None:
-    print("\n" + "=" * 88)
-    print("PART 6: CIRCULARITY GUARD")
-    print("=" * 88)
 
-    banned = {"u", "v", "w", "x", "y", "delta", "tau", "q", "d0_trip", "dm_trip"}
-    ok_g, bad_g = circularity_guard(graded_current, banned)
-    ok_d, bad_d = circularity_guard(delta_from_currents, banned)
 
-    check(
-        "The graded current takes no PMNS-side target values as inputs",
-        ok_g,
-        f"bad={bad_g}",
-    )
-    check(
-        "The delta recovery law takes no PMNS-side target values as inputs",
-        ok_d,
-        f"bad={bad_d}",
-    )
 
 
 def main() -> int:
-    print("=" * 88)
-    print("DM PMNS ORDERED-CHAIN GRADED-CURRENT DELTA CLOSURE")
-    print("=" * 88)
-    print()
-    print("Question:")
-    print("  After native graph-first current activation closes q_+ on the physical")
-    print("  affine Hermitian chart, is there an exact same-branch sole-axiom law")
-    print("  for the remaining delta / Im(K_Z3[1,2]) direction on the retained")
-    print("  hw=1 response family?")
-
-    part1_the_ordered_chain_grading_is_already_canonical()
+    check('The supplied grading is diag(1,2,3)',np.linalg.norm(chain_number_operator()-np.diag([1.,2.,3.]))<1e-12)
+    check('Current coordinate Jacobian is invertible, not a selector',abs(np.linalg.det(np.array([[-.5,-1.5],[0.,1.]]))+.5)<1e-12)
     part2_basis_values_close_the_exact_graded_current_formula()
     part3_the_pair_of_currents_recovers_the_full_affine_active_pair()
-    part4_the_current_pair_survives_exactly_on_the_retained_hw1_response_family()
-    part5_strict_native_closeout()
-    part6_circularity_guard()
-
-    print("\n" + "=" * 88)
-    print("RESULT")
-    print("=" * 88)
-    print("  Exact ordered-chain graded-current closure:")
-    print("    - graph-first structure already fixes the canonical grading N = diag(1,2,3)")
-    print("    - the graded current J_N(H) = J_chi(i[N,H]) reads the current-blind affine direction")
-    print("    - together with J_chi(H) = q_+ - i/4, it recovers q_+ and delta exactly")
-    print("    - the same two-current law survives exactly on the retained hw=1 response family")
-    print()
-    print("  So the stricter/native DM last mile is closed on the physical affine/source family.")
-    print()
-    print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
-    return 0 if FAIL_COUNT == 0 else 1
+    part4_the_current_pair_survives_exactly_on_the_supplied_hw1_response_family()
+    print('Current values and physical H remain supplied; two real coordinates remain free.')
+    print(f'SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}')
+    return 1 if FAIL_COUNT else 0
 
 
 if __name__ == "__main__":

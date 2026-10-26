@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_d3_lower_bound_source_packet_gate_2026_06_06.py
 runner_sha256: 319d534873ad6c905d9c5467873d9fa2dac1e39ab6d8e8636336b9e7409bab8d
-input_fingerprint_sha256: 1b49d54c2e1112bde76988bd82d69e38033bd2fc536fc9f53ca95bdcc04a621b
-timeout_sec: 120
+input_fingerprint_sha256: 5b65bd9cd5ec28a3d54c8021329a99306fbf5ae522eebc7d7d4989020ed77aef
+timeout_sec: 60
 exit_code: 1
-elapsed_sec: 0.07
+elapsed_sec: 0.13
 status: nonzero_exit
 ----- stdout -----
 D3 lower-bound source-packet audit gate
@@ -19,7 +19,7 @@ A. ledger and active-queue status
 [PASS] ledger row exists: dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25
 [PASS] ledger row exists: dimension_selection_lower_bound_bridge_v2_2026-05-20
 [PASS] ledger row exists: dimension_selection_note
-[FAIL] finite-k sign bridge is audited clean retained_bounded -- audit=audited_conditional effective=audited_conditional
+[FAIL] finite-k sign bridge is audited clean retained_bounded -- audit=unaudited effective=unaudited
 [FAIL] lower-bound V2 sign row is audited clean retained_bounded -- audit=unaudited effective=unaudited
 [FAIL] parent row remains conditional only on runner artifact issue -- None
 [FAIL] parent row does not claim unique d=3 or baseline rewrite -- None

@@ -201,6 +201,36 @@ Bosonized qubit sites (bosonized-sites, 2026-10-26, rethink r3; campaign files):
 - **Ledger:** deletes the Wilson-kernel identification, the m0 window and the repaired overlap kernel (3 supplied items); adds the blocking parameter alpha, which does not change the spectrum.
 - **Smuggling gate:** no fitted numbers; no observed structure named; untested prediction = dim-8 LIV only, gamma -> ee near 2e20 eV; bent clause = CL-1 dressed cone (and possibly one-qubit-per-site, OPEN).
 
+## Candidate time-blind D4 event law (not adopted; alternative to the zoom-fixed-point law)
+
+> "Events are the centre sites of the active cubes, one half-tick apart with c times the half-tick equal to the edge a; together they form the D4 lattice. Each event's odds treat all 24 nearest D4 neighbour directions alike, and time is the root direction (1,1,0,0) in which records grow."
+
+- **Why:** removes the fixed dimension-6 Lorentz-violating term (nuclear breakup, PRs #10091/#10093) by symmetry, with no tuned numbers. Unlike the zoom-fixed-point law, it needs no imposed radiative condition: the protection is a lattice symmetry, W(F4).
+- **Supersedes (kept visible, marked):** CL-1's tick (the two-tiling half-tick unitaries) is re-read as a D4 event weight sliced along a root. CL-1 stays as written until simplification.
+- **Evidence (d4-time-blind-events, PR #10094, 17/17, own re-run identical; exact identity rechecked independently):**
+  - [T] Sum over the 24 roots of (r.p)^4 = 12 (p^2)^2, so every quartic term is rotation invariant.
+  - [T] The first direction-dependent term is -J6/90 (dimension 8). Every species has p^2 = kappa J6 on shell: scalar 1/540, fermion 1/90, photon 1/1440.
+  - [F] The dimension-6 coefficient is < 5.4e-9 for the scalar, the overlap fermion and both photon polarisations.
+  - The overlap fermion has no doublers (Ginsparg-Wilson residual 1.3e-15). The naive operator has 72 zeros.
+  - Reflection positivity passes at the site level.
+  - The time direction must be a root: along an axis (1,0,0,0) the step is not local, so that reading FAILS.
+  - Along a root, the remaining dimension-8 term is subluminal, -1.7e-2 to -2.0e-2 (ka)^4.
+  - Consistent with the D4 cone notes on main (#9821; same lattice, same time axis).
+- **Consequences:**
+  - gamma -> e+e- opens at 1.9e20 eV;
+  - nuclei are stable to ~1e21 A eV;
+  - no time-of-flight signal.
+  - The graviton is NOT protected: W(F4) allows 3 quartic graviton terms against 2 for full rotations, so the two polarisations can split, at a negligible size.
+- **Open:**
+  - fermion reflection positivity;
+  - the graviton term's coefficient in a D4 gravity action;
+  - Lorentz violation induced by the records themselves;
+  - the interacting (loop) check;
+  - rebuilding the copy sign and the families;
+  - 8 heavy link modes per site.
+- **Ledger:** net about -2 clauses.
+- **Smuggling gate:** no fitted numbers; no observed structure named; untested prediction = photon decay near 2e20 eV, with electron/photon Lorentz-violation ratio exactly 16; bent clause = CL-1's tick.
+
 ## Untested predictions
 - **Fixed dimension-6 Lorentz violation vs cosmic rays** (assumed-inputs-model, liv-auger-confrontation, PR #10087). The rules fix E = p + c p^3/E*^2 with E* = hbar c/2L and cell rung L = sqrt(8 pi) l_P (kappa = 1), i.e. delta_had,2 = 2c/E*^2 = 1.35e-54 c eV^-2, with c < 0 (subluminal) on every ray. Sky averages are exact: c_g = -1/40, c6 = -1/30, quark -7/120. Hadron step (supplied parton weights) gives delta_had,2 = -(0.34-4.3)e-57 eV^-2 (sky average; body diagonals 0.08-1.2e-57). RATES (uhecr-vacuum-emission, PR #10088): IN TENSION, not robustly excluded. Above threshold the loss length is cm-scale (hard walls): p 3.2-4.4 EeV, He 10-13, N 36-47, Fe 144-188 EeV (Fermi-gas; 23-55 with a supplied high-momentum tail), body/axis ratio 1.31 (cubic sky pattern in E_max). Amaterasu 2.44e20 fits only on body-like rays at its low systematic. LOAD-BEARING: hadron-level additivity of the dispersion is SUPPLIED; quark-level accounting closes emission. COMPOSITE DISPERSION (composite-dispersion, PR #10089): first order exactly additive, but the full bound state is UNIVERSAL at high momentum (momentum flows to the most subluminal constituent; c_B/c_q -> 1.000, half-way ~5 EeV; deep-bound 3D lattice pairs exactly universal on all rays). p -> p gamma stays CLOSED to 1e20 eV on all rays: the UHECR tension came from a frozen wavefunction and DISSOLVES (supplied: binding forms, 2-body truncation; 3-body proton + nuclei open). SURVIVING OBSERVABLES (liv-surviving-observables, PR #10090): 3-body proton also universal (residual ~u^-1/2) except an exact-degeneracy cone around the 8 body diagonals (1.8% of sky, p -> p gamma at 5-6 EeV). NUCLEI CANNOT redistribute: vacuum breakup above ~1.8 A EeV (He 7-13, N 25-40, Fe 100-160 EeV; Fermi momentum supplied) - IN TENSION with Amaterasu 244 EeV and Auger heavy composition at 50-100 EeV. Photons faster than electrons; gamma -> e+e- opens at 0.8-1.1e17 eV (falsifiable by one photon above ~1.2e17 outside the diagonal cones). Time of flight: E_QG,2 = 4.2-7.3e18 GeV, margin 10^6.8 over LHAASO GRB 221009A. **NUCLEAR VACUUM BREAKUP (nuclear-vacuum-breakup, PR #10091): RULES AS WRITTEN EXCLUDED.** Driver = second-order LIV curvature (6c/A < 0) rewarding one nucleon taking most of the momentum; exact deuteron barely flows (0.25 -> 0.31) and dissolves at 2.5-4.3 EeV; He 4-7, N 9-15, Fe 18-46 EeV; decay length 1e-8 m - 5 mm (hard wall). Above ~46 EeV only nucleons survive vs Auger heavier-and-purer composition at 50-100 EeV (arXiv:2406.06315). RAW-OBSERVABLE RECHECK (raw-xmax-flowed-protons, PR #10093): downgraded to TENSION. Against Auger raw sigma(Xmax) = 20.7 +- 1.4 g/cm^2 at 10^19.74 eV (arXiv:2406.06319), flowed protons with cross section <= 1x proton are excluded (>= 4.2 sigma), 2x proton misses by 2.2 sigma, 4-8x fits (post-run extension, labelled). The flowed-hadron cross section decides; AugerPrime muon/EM split tests "heavy-looking Xmax, proton-like muons". The fixed dim-6 term (link band c_g = -(sum n^4)/24, copy term c6) must GO: rescue = a tick whose p^4 correction cancels for every species (walls -> ~1e21 A eV). Candidate: the zoom (block-spin) fixed-point tick (perfect action), under test.
   - Auger 2022 (arXiv:2112.06773) bounds only delta > 0, so it does not apply; even ignoring sign, the ratio < 10.

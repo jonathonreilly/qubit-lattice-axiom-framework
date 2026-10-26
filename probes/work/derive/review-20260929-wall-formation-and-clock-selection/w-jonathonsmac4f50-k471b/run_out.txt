@@ -1,0 +1,70 @@
+PASS A1 pair rule: (u,v) keeps P and L  <=>  u+v=a+b and (u-a) parallel to r1-r2 | 443232 (displacement, a,b,u,v) tuples compared, 0 mismatches
+PASS A2 nontrivial two-record events exist exactly for axis and face-diagonal displacements (never body-diagonal or knight-type), |d_i|<=3 | shape classes seen: ['axis', 'facediag', 'none:other']
+PASS B bond pair, 3D contents: configs moved by bond / pair(<=sqrt2) / whole-class events | got (configs, bond, pair, full) = (36, 2, 2, 2); REPLICATION of an old number, not new
+PASS B face-diagonal pair, 3D contents: configs moved by bond / pair(<=sqrt2) / whole-class events | got (configs, bond, pair, full) = (36, 0, 8, 8); REPLICATION of an old number, not new
+PASS B body-diagonal pair, 3D contents: configs moved by bond / pair(<=sqrt2) / whole-class events | got (configs, bond, pair, full) = (36, 0, 0, 0); REPLICATION of an old number, not new
+PASS B 2x2 plaquette, 4 records, 2D contents: configs moved by bond / pair(<=sqrt2) / whole-class events | got (configs, bond, pair, full) = (256, 120, 220, 228); REPLICATION of an old number, not new
+PASS B 2x2 plaquette, 4 records, 3D contents: configs moved by bond / pair(<=sqrt2) / whole-class events | got (configs, bond, pair, full) = (1296, 280, 636, 758); REPLICATION of an old number, not new
+     info C N=2 O_note: events=10500 dN!=0:0 dP!=0:0 dL!=0:1100 dL!=0:bond_exch=400 dL!=0:exch_perp=200 dL!=0:redraw=500
+     info C N=2 O_class: events=10100 dN!=0:0 dP!=0:0 dL!=0:200 dL!=0:exch_perp=200
+     info C N=2 Vstar: events=9900 dN!=0:0 dP!=0:0 dL!=0:0 
+PASS C2a N and P are kept by every event of all three models on the 5x5 torus, N=2 (4800 configurations, exhaustive)
+PASS C2b L is kept by every event of V* and violated by O (exchange of perpendicular contents), N=2 | dL!=0 events: Vstar 0, O_class 200, O_note 1100
+PASS C2c O's L-violating streaming exchanges at N=2: count = 4V*2*(contents of the mover fixed)=200 (plus class events none) | 200 vs 200
+PASS C2d configurations with J != P (target occupied for an unbalanced set of records), N=2: 12*V=300, a property of the configuration only -- identical for O, O_note, V* | 300 vs 300
+     info C N=2 time 0.2s
+     info C N=3 O_note: events=139776 dN!=0:0 dP!=0:0 dL!=0:39424 dL!=0:bond_exch=14336 dL!=0:exch_perp=7168 dL!=0:redraw=17920
+     info C N=3 O_class: events=126464 dN!=0:0 dP!=0:0 dL!=0:7168 dL!=0:exch_perp=7168
+     info C N=3 Vstar: events=119296 dN!=0:0 dP!=0:0 dL!=0:0 
+PASS C3a N and P are kept by every event of all three models on the 4x4 torus, N=3 (35840 configurations, exhaustive)
+PASS C3b L is kept by every event of V* and violated by O (exchange of perpendicular contents), N=3 | dL!=0 events: Vstar 0, O_class 7168, O_note 39424
+     info C3: configurations with J != P: 9920 of 35840 (same set for every model by construction)
+PASS C3c J != P on a nonempty proper subset of configurations for N=3 and the set does not depend on the scattering events | 9920/35840
+     info C N=3 time 1.3s
+     info D O_class gamma=1: streaming-balance defects 0/1920 states; closed classes with P!=0: 44; E[J]/P values ['2/3', '14/15', '1']; max TV from uniform 0.0000
+     info D Vstar gamma=1: streaming-balance defects 256/1920 states; closed classes with P!=0: 56; E[J]/P values ['2/3', '68/77', '1']; max TV from uniform 0.1390
+     info D Vstar gamma=2: streaming-balance defects 256/1920 states; closed classes with P!=0: 56; E[J]/P values ['2/3', '100/113', '1']; max TV from uniform 0.1354
+     info D Vstar gamma=1/2: streaming-balance defects 256/1920 states; closed classes with P!=0: 56; E[J]/P values ['2/3', '52/59', '1']; max TV from uniform 0.1424
+PASS D1 O: uniform measure is exactly stationary (in-rate = out-rate at every one of the 1920 states) [streaming part; class events are symmetric] | balance defects 0
+PASS D2 O: on every closed class equal to a full content-multiset sector the exact E[J]/P is (V-N)/(V-1) (canonical exclusion factor, not 1) | 4 such classes, ratios ['14/15'], canonical 14/15
+PASS D3 O: the other classes are confined to lines (the records move along one axis only): records on different lines never meet and have E[J]/P = 1 exactly; records on the same 4-site ring have the same canonical form with V replaced by the accessible sites, (4-2)/(4-1) = 2/3 | 40 classes, ratios ['1', '2/3']
+PASS D4 V*: the uniform measure is NOT stationary (exact in/out rate defects at some states) | 256 of 1920 states have in-rate != out-rate
+PASS D5 V*: exact stationary E[J]/P on the P=(+-1,+-1) classes (size 60) is a single rational strictly below the canonical 14/15, so the angular-momentum repair does not help the energy current | E[J]/P = 68/77 (= 0.88312) vs canonical 14/15 (= 0.93333)
+PASS D6 V*: for scattering rates gamma in {1/2,1,2} the exact ratio stays strictly below 14/15 and below 1 | {'1': ['68/77'], '2': ['100/113'], '1/2': ['52/59']}
+PASS D7 V*: stationary measure differs from uniform (exact total-variation distance > 0) | max TV (gamma=1) = 0.1390
+PASS D8 V*: the exact stationary vector of the 60-state class solves pi Q = 0 with zero residual and sums to 1 | 60 states, all probabilities positive
+PASS E1 V*: for random bounded functions nu of the state, the exact stationary mean of (G nu) is 0 -- so a re-placement of energy density by a bounded local divergence term cannot change the mean energy current | 3 random nu, exact
+PASS E2 hence for V* the mean energy current <J_x> stays strictly below P_x = 1 for every bounded placement | <J_x> = 68/77 = 0.88312 with P_x = 1
+PASS F1 every (P,L)-preserving event on bond / diagonal / L-triple / plaquette / 3-in-a-line / (0,0),(2,0),(1,1) subsets (2D, includes the distance-2 head-on pair) has a compactly supported SYMMETRIC stress, exact rational solve (replaces the old floating-point residual test) | 374 events, 0 without solution, margin used {1: 374}
+PASS F2 control: the perpendicular exchange of O (changes L by -1) has NO symmetric compact stress but has a non-symmetric one (exact) | symmetric False, general True
+PASS F3 necessity: random plaquette changes with dP != 0 or dL != 0 never have a symmetric compact stress (consistent with the telescoping proof) | 12 random non-conserving changes, 0 solvable
+     info G 3x3 window N=2: configs 576, with target conflict 22, unresolvable 0, tick-ledger errors 0
+     info G 3x3 window N=3: configs 5376, with target conflict 600, unresolvable 0, tick-ledger errors 0
+     info G 3x3 window N=4: configs 32256, with target conflict 6867, unresolvable 0, tick-ledger errors 0
+     info G 3x3 window N=5: configs 129024, with target conflict 42804, unresolvable 0, tick-ledger errors 0
+     info G 3x3 window N=6: configs 344064, with target conflict 157176, unresolvable 0, tick-ledger errors 0
+     info G 3x3 window N=7: configs 589824, with target conflict 340648, unresolvable 0, tick-ledger errors 0
+     info G 3x3 window N=8: configs 589824, with target conflict 404426, unresolvable 0, tick-ledger errors 0
+     info G 3x3 window N=9: configs 262144, with target conflict 203456, unresolvable 0, tick-ledger errors 0
+PASS G1 2D 3x3 window, EVERY occupation N=2..9, every configuration: a (N,P,L)-preserving reassignment of the contents of the SAME occupied sites with pairwise distinct targets exists (conflict-free streaming possible) | 1953088 configs, 1155999 had a conflict, 29s
+PASS G2 after collide-then-stream the exact ledger: N, P, L unchanged and the energy current (sum of displacements per tick) equals P, for every configuration of G1
+     info G 4x4 window N=2: configs 1920, conflict 52, unresolvable 0, tick-ledger errors 0
+     info G 4x4 window N=3: configs 35840, conflict 2864, unresolvable 0, tick-ledger errors 0
+     info G 4x4 window N=4: configs 465920, conflict 72220, unresolvable 0, tick-ledger errors 0
+PASS G3 2D 4x4 window, N=2,3,4 (all configurations): same result | 503680 configs
+     info G 3D 2x2x2 cube N=2: configs 1008, conflict 24, unresolvable 0, tick-ledger errors 0
+     info G 3D 2x2x2 cube N=3: configs 12096, conflict 848, unresolvable 0, tick-ledger errors 0
+     info G 3D 2x2x2 cube N=4: configs 90720, conflict 12312, unresolvable 0, tick-ledger errors 0
+PASS G4 3D 2x2x2 cube, six-axis contents, N=2..4 (all configurations; L is a vector): same result | 103824 configs
+     info G 3x3 window N=2: unresolved by pair-event closure with d^2<=2: 6/576; with d^2<=4: 0/576
+     info G 3x3 window N=3: unresolved by pair-event closure with d^2<=2: 132/5376; with d^2<=4: 0/5376
+     info G 3x3 window N=4: unresolved by pair-event closure with d^2<=2: 1116/32256; with d^2<=4: 0/32256
+     info G 3x3 window N=5: unresolved by pair-event closure with d^2<=2: 4656/129024; with d^2<=4: 0/129024
+     info G 3x3 window N=6: unresolved by pair-event closure with d^2<=2: 9848/344064; with d^2<=4: 0/344064
+PASS G5 locality: pair events at distance^2 <= 2 only (bond + face-diagonal) are NOT enough: antiparallel records two sites apart converge on one site (N=2: 6 of 576 unresolved) | unresolved counts by N: [6, 132, 1116, 4656, 9848]
+PASS G6 locality: closure of two-record events with distance^2 <= 4 (adds head-on pairs two sites apart) resolves every configuration of the 3x3 window for N=2..6 | 24s
+     info G8 3x3 torus P-only-class unresolved: {2: (0, 576), 3: (72, 5376), 4: (432, 32256)}; 4x4 torus: {3: (0, 35840), 4: (224, 465920)}
+PASS G8 limit of G1-G4: on PERIODIC tori the window result fails even if only N and P (not L) must be kept: 3x3 torus N=3 has 72 and N=4 has 432 configurations whose whole P-class has no conflict-free reassignment; 4x4 torus N=4 has 224 (so existence of a collide-then-stream rule on the torus is not automatic) | {2: 0, 3: 72, 4: 432} / {3: 0, 4: 224}
+HIT: the T17 verdict 'exclusion still stops energy flowing as momentum, so the exact books are not reached for either clause' is schedule-specific: for the asynchronous rate-1 streaming gases O and V* the energy current is below P in every ergodic sector (exact E[J]/P = 14/15 for O, a strictly smaller exact rational for V* at N=2 on the 4x4 torus; no bounded re-placement of energy density changes it), but with a synchronous collide-then-stream tick built from the same (N,P,L)-preserving pair events (distance^2<=4) the energy current equals P exactly on every tested open window (2D 3x3 all N, 2D 4x4 N<=4, 3D cube N<=4, conflict-free targets always reachable), while small periodic tori already contain configurations with no conflict-free P-preserving reassignment; the first open step is a bounded-range, rotation-covariant, parallel collision map on the full state space and its compatibility with Record permanence.
+TOTAL: PASS=34 FAIL=0
+SUMMARY: exact ledger shows V* keeps N,P,L while O breaks L, both leave the asynchronous energy current below momentum (O exactly by (V-N)/(V-1), V* by a smaller exact rational, unchanged by any bounded energy re-placement), whereas a synchronous collide-then-stream tick with distance-2 pair events makes J=P exactly on all tested open windows, though not automatically on small periodic tori (69s).

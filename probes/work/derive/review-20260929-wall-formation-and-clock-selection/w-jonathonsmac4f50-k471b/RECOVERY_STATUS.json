@@ -1,0 +1,182 @@
+{
+ "task": "J:derive:review-20260929-wall-formation-and-clock-selection:a1",
+ "source_branch": "claude/toe-walls-20260929",
+ "source_head": "4bd42747e57c4d604f66a63eed2db099ea38af4e",
+ "source_head_verified_in_object_store": true,
+ "origin_main_read": "a77a3449c91a753b06ce2a63876cd460b62cb4cf (detached checkout main_wt)",
+ "source_objects": [
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/SUMMARY.md",
+   "sha256": "3c0b6cf9ab651069fef19ba4c020483b8c402a5a525047d9a6521b4f132e10d0",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/WALLS.md",
+   "sha256": "23a9f40130f5104ca48a15d7a14cfb1400df156faf08e01abdceb653010b7494",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T01.md",
+   "sha256": "c8f84cc7c58e21e04523e2603247f1a08ee5da379a6ec47e4f4c064bfbddfd3d",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T01.md",
+   "sha256": "ecd9467189e78fd8c587fda74f485a4b5ebc0ca670602e4b925e4eea3b3878dd",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T02.md",
+   "sha256": "1544c5e503657539df1eb659bfcf3df59fe883022ec3f0379d1758ecee09714e",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T02.md",
+   "sha256": "2e8d83907d7d353b7bcc0122829a73ae1a6465f94fc1e412326ae31eeb416dc5",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T03.md",
+   "sha256": "0357e7f14f1fa4dbbf8d0176c690a0f3a1429fa9fb5478652be93cbc2aace33c",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T03.md",
+   "sha256": "f65f7ecfb28f7956c831791f7e32a7e894bd6fe7fdbb54a76d82e269520abc0f",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T04.md",
+   "sha256": "760e898e20c8b5f3ffd93a0fa59f9a489e296ad71e16246afcab5d8b8268527f",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T04.md",
+   "sha256": "f101f9898466f37f50a9558e01e571ff96b795e27cf2ca5f9f1aa413808ee099",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T05.md",
+   "sha256": "ff1a8af80fb4ac0796998629e06ad965d85ec90a399b04b15be96e973a4f4e51",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T05.md",
+   "sha256": "2175b2469bc978bdb50d868227b00b6e798a83b9faaaf763df84783b30a0a89d",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T06.md",
+   "sha256": "026338eec3337a8a71360459fa0aba8b174eb2e50b324d900c5fd33954686562",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T06.md",
+   "sha256": "cce417d2a7edc2254180f7d7eb13d948c2f4ac3ec0eb8af3b00ad94888d95d08",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T07.md",
+   "sha256": "66ab8dc35be8f3ddb6cd9975e9a4783a5401d048911744f87cd5d9e86d42ffd3",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T07.md",
+   "sha256": "b9266ad49699d6eca9937cb24edf71b23e378fe3eaa6d6feeb82c4cbf65f7dd6",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T08.md",
+   "sha256": "cc5e4ea996736483190e526e3c09fcd2190196be04040c8e60537944b3793514",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T08.md",
+   "sha256": "d86179e84d54455bd088cbd5ae67da2fedd7d9d6173b9338c7e0d4b104d6b3c2",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T09.md",
+   "sha256": "7ce9a7005f89e1ddad902ee5ffb10a4b44c8e35911d1440cae34ed03a158ebd9",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T09.md",
+   "sha256": "bdfc9ec6382e26e56fb21e7a56f29035d2ebc2dce970332bbfef5967a9cde6d7",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T10.md",
+   "sha256": "e758203de3390782ff2f25b34c6277e14800d965fbc432203c5d36be81dd332c",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T10.md",
+   "sha256": "ea54ea36d5c86d586fb1e10ff10dfd4ec325fcec2f1daff8495964d9941ae48c",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T11.md",
+   "sha256": "12d132730a9041f87df53a44f57960ff565674b8be8b076ef408d01db640f147",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T11.md",
+   "sha256": "5dd1eed947054d6036361a22b24b9343efdc9a73f3c45316b9f76619c857be4b",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T12.md",
+   "sha256": "de1670ed2ba0f7b77dd9dc1eb319ff665804d34934efc5119433f62df873b820",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T12.md",
+   "sha256": "46e3e1c000c932b461969c3a98c645c7fd79fe3ba83e6ed3203d009b21dc418b",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T13.md",
+   "sha256": "d674178f948c2db313718dd7d13f34c0618c52f831ecc549c766f9cbc1e1d778",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T13.md",
+   "sha256": "d3f92a980aa9c4e1b6f991a9d0013eea9592b05934e1365a7484c24357a933ed",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T16.md",
+   "sha256": "eb228895cfdfd85e72eee22e98e9636f45ed23ebc27a37fbdfbaed384a591a1b",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T16.md",
+   "sha256": "511f3de11fc8e74f504a3aa731b04e1f844f14089408db2ab3b2e2a853070b13",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T17.md",
+   "sha256": "9e69af1c1223da6a634ea934fbeec4e517d800a90638bc0a72f0c66fb1ee63c5",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T17.md",
+   "sha256": "4ef4e0362c10b1c86c32ab0b3c47d71eaab14a065b40a3142e98ebdc506f430b",
+   "verified": true
+  }
+ ],
+ "chosen_obligation": "T17 record-scattering identity (attacks/T17.md, kills/T17.md): same observables N,P,L,J on O, V* and a synchronous comparator S",
+ "check_py_sha256": "77480f67554cca96b796a43ec1dea72898ac1fa311fe5dc960d32967986feedb",
+ "check_result": "TOTAL: PASS=34 FAIL=0, about 70 s",
+ "first_unresolved_step": "A bounded-range, rotation-covariant, parallel-consistent collision map on the full state space (including periodic tori, where G8 finds configurations with no conflict-free P-preserving reassignment) that makes streaming targets distinct while keeping N, P, L. Existence is checked only as a nonlocal reassignment inside open windows (2D 3x3 all N, 2D 4x4 N<=4, 3D 2x2x2 N<=4); pair-event closure with distance^2<=4 suffices in 3x3 for N<=6 but a single simultaneous local rule is not constructed.",
+ "remaining_obligations": [
+  "Construct or refute a local parallel collision rule for S (range, covariance, consistency of overlapping conflict clusters, reversibility or stationary measure).",
+  "Decide, with the owner, whether a synchronous tick that moves every record every tick is compatible with Record permanence; no axiom or registered primitive supplies it (kinetic_isotropy_primitive supplies only c_t=c_s).",
+  "Extend D (exact E[J]/P for V*) beyond N=2 on the 4x4 torus; N=3 is only simulated in the source (K2).",
+  "Hydrodynamic or infinite-volume meaning of the 14/15 and 68/77 values (they are finite-torus canonical numbers).",
+  "Quantum walker (blocks 135-143) and member coupling untouched; T17 walker wall is not addressed.",
+  "Independent cross-model confirmation of check.py and of the proofs in ATTEMPT.md (same-family only so far)."
+ ],
+ "not_done": "No Bell, formation-measure (T01) or clock-selection claim was examined; no owner choice or primitive change is proposed."
+}

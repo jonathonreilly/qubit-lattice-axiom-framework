@@ -1,0 +1,23 @@
+{
+  "task_id": "J:derive:review-20261004-cubic-unfolding:a1",
+  "source_branch": "main",
+  "source_head": "2868a0c453e667d1267f0e1e7403732a11893d78",
+  "source_objects": [
+    {"path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_ABOVE_J_EQUALS_TWO_THE_FLIPPING_LINE_NODE_IS_A_CUBIC_POINT_THAT_EMITS_A_PLANE_PAIR_BOUNDED_THEOREM_NOTE_2026-10-01.md", "sha256": "33ee04522acd4a5ac33f3a7c64e790ea84040810ebdfca5ac00c2fb17803572c", "verified": true},
+    {"path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_BIRTH_TOUCHINGS_AT_KAPPA_C_ARE_EXACT_CUBIC_POINTS_OF_CHARGE_ONE_FOR_EVERY_J_BETWEEN_0_AND_2_BOUNDED_THEOREM_NOTE_2026-10-01.md", "sha256": "34af77bb4fb24254ac81fe984a2ad5b49f8bf1f9f4835ff28f6c5a3bedf84be0", "verified": true},
+    {"path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_LINE_NODES_OUTSIDE_THE_COUPLING_TRIANGLE_BOUNDED_THEOREM_NOTE_2026-10-01.md", "sha256": "29e40457080ccb60b420bb5027e84541c66a10b848db72bf164a77e8c60fed2f", "verified": true},
+    {"path": "scripts/composite_site_network_flux_free_birth_touchings_are_exact_cubic_points_of_charge_one_for_every_j_2026_10_01.py", "sha256": "09cacd795d5a0cb057fe725306adfe9c4e0127355d5a4d9c9148227e2d130e6d", "verified": true},
+    {"path": "scripts/composite_site_network_flux_free_line_nodes_outside_the_coupling_triangle_2026_10_01.py", "sha256": "300fd887fd49a8fe7b4f6379b167af3c6e861ea272a1b52154ca2978786047f8", "verified": true},
+    {"path": "scripts/composite_site_network_flux_free_region_b_line_node_flip_is_a_cubic_point_emitting_a_plane_pair_2026_10_01.py", "sha256": "d5b931ba486cc4c27250878e40c7773e2a652b506acfb154ea04b88656fa0df2", "verified": true}
+  ],
+  "verified_by": "git show 2868a0c453e667d1267f0e1e7403732a11893d78:<path> | shasum -a 256 in the read-only main checkout (current main a77a3449c91a753b06ce2a63876cd460b62cb4cf)",
+  "check_py_sha256_note": "compute with shasum -a 256 check.py at hand-off; check.py reads no repository file",
+  "first_unresolved_step": "ATTEMPT.md step 13: all radii (box size, epsilon range, neighbourhood W of (J0, kappa_f(J0))) are non-constructive; making them explicit needs quantitative Cauchy bounds on the Schur-complement remainder plus a quantitative Rouche/multiplicity bound, and a J-uniform version as J approaches J0, 2 and 1+sqrt5 is open. Also unresolved (supplied, not re-proved exactly here): the jets of steps 4 and 8 for every J of the open intervals and at J0 (re-checked numerically only at J = 13/6, 5/2, 3 and at J0).",
+  "remaining_work": [
+    "explicit remainder/Rouche radii for one rational J (for example J = 5/2) with interval arithmetic and Cauchy estimates for the complex-analytic Schur complement",
+    "exact (function-field, mod N) re-derivation of the step-8 jets at J0, including the vanishing of d_u, d_t and the proportionality of d_uu, d_tt, d_kappa",
+    "coincidence loci u = u_*(J) and u = u_f(J) in the two-parameter statement (multiplicity of the merged points)",
+    "completeness away from the node (global census) is outside this attempt; it belongs to the interval certificates"
+  ],
+  "status_words": "none; same-family unrefereed attempt, premises listed in ATTEMPT.md"
+}

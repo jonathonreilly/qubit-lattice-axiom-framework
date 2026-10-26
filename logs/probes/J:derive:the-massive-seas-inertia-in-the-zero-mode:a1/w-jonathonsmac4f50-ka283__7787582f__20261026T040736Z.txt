@@ -1,0 +1,90 @@
+PASS A1 anticommutator {A,B}=0
+PASS A2 H^2 = (mu^2+s^2/l^2) I
+PASS A3 trace H = 0
+PASS A4 [H(l1),H(l2)] = 2(1/l1-1/l2) A B
+PASS A5 Tr(P+ H_lam P- H_lam) = 2 mu^2 s^2/(l^2 E^2)
+PASS A6 per-block excess coefficient Tr/(2E)^3 = mu^2 s^2/(4 l^2 E^5) (so m_lam per site = block value x 1/2 x 1/... see ATTEMPT step 2)
+PASS A7 integrand of m_lam equals Tr/(2E)^3 exactly (so per site excess = (1/2) lamdot^2 <integrand>) (shown by A6)
+PASS A8 max over modes of (first-order amplitude)^2/lamdot^2 is at s^2/l^2 = mu^2/2 and equals 1/(216 mu^2) value = 1/(216*mu**2)
+PASS A8b 4/(27*32) = 1/216
+# NUMERIC const rate 0.04: excess 2.873331e-05 vs lamdot^2 Tr/(2E)^3 = 2.899988e-05  (rel.err 9.192e-03)
+# NUMERIC const rate 0.02: excess 2.052077e-05 vs lamdot^2 Tr/(2E)^3 = 2.039242e-05  (rel.err 6.294e-03)
+PASS B1 NUMERIC one-block excess energy = lamdot^2 Tr/(2E)^3 (the T3(b) coefficient) within 2% at two rates rel errs 9.19e-03, 6.29e-03
+# NUMERIC turn T0=6.0: excess at lamdot=0 is 1.3713e-07; lamddot^2 Tr/(2E)^5 = 1.3214e-07
+# NUMERIC turn T0=9.0: excess at lamdot=0 is 8.4103e-08; lamddot^2 Tr/(2E)^5 = 7.3868e-08
+# NUMERIC turn T0=13.0: excess at lamdot=0 is 5.1575e-08; lamddot^2 Tr/(2E)^5 = 4.6844e-08
+PASS B2 NUMERIC at a turning point (lamdot=0) the sea still carries energy ~ lamddot^2 Tr/(2E)^5 > 0 (ratio within 20%) T0=6: ratio 1.038; T0=9: ratio 1.139; T0=13: ratio 1.101
+PASS B3 NUMERIC that turn-point energy is below lamddot^2 Tr/(2E)^3 (extra suppression ~1/(2E)^2)
+PASS C1 4^3 torus: number of modes with s^2 = j is C(3,j)*8 (j=0..3) [8, 24, 24, 8]
+PASS C2 torus average of s^2 is 3/2 (same as Z^3 average)
+PASS C3 EXACT: F_T(0+) = (1/32)(3 + 3/(2 sqrt2) + 1/(3 sqrt3)) = 0.1329096957
+# a_T := F_T(0+)/48 = sqrt(3)/13824 + sqrt(2)/2048 + 1/512 = 0.0027689520
+PASS C4 EXACT: F_T strictly decreasing in tau (each term j/(tau^2+j)^(5/2) has negative derivative)
+PASS C5 EXACT: F_T(tau) < F_T(0+) for every tau>0 (so sup is not attained)
+PASS C6 EXACT: F(tau) <= 3/(8 tau^5) because (tau^2+s^2)^(5/2) >= tau^5 and <s^2> = 3/2 (both Z^3 and 4^3) (algebra)
+PASS D1 EXACT/NUMERIC <S2> = -P'(0) = 3/2 on Z^3 (heat-kernel identity: ive0(0)=1, ive1(0)=0) (analytic)
+PASS D2 NUMERIC F_Z(20) matches 3/(8 tau^5) to O(1/tau^2) ratio 0.98915
+PASS D3 NUMERIC 1-D heat-kernel F_Z agrees with the 3-D tensor Gauss-Legendre sum at tau=0.7 and 1.5 (1e-8) 0.0725374518 vs 0.0725374518
+PASS D3b NUMERIC 1-D heat-kernel J_Z agrees with tensor sum at tau=0.7 (1e-7) 1.3924546752 vs 1.3924546835
+# Z^3: tau, F_Z(tau), lower bound c ln(2/(pi tau)): 0.1: 0.30372 >= 0.03315; 0.01: 0.54045 >= 0.07440; 0.001: 0.77381 >= 0.11564; 0.0001: 1.00712 >= 0.15688; 1e-06: 1.47372 >= 0.23936; 1e-08: 1.94032 >= 0.32185; 1e-10: 2.40692 >= 0.40433
+PASS D4 NUMERIC F_Z(tau) respects the proved lower bound c*ln(2/(pi*tau)), c=2^(-5/2)/pi^2
+PASS D5 NUMERIC F_Z(tau) ~ (1/pi^2) ln(1/tau) at small tau (slope within 3% of 1/pi^2) slope*pi^2 = 1.0000
+# Z^3: F_Z(tau) = ln(1/tau)/pi^2 + 0.07391 + o(1)  (numeric)
+PASS E0 float torus F_T/J_T agree with the exact sympy expressions at tau=0.37 (1e-12)
+PASS E00 NUMERIC spline of F_Z agrees with direct evaluation at off-grid points (rel 5e-4) max rel 3.1e-05
+PASS E00b NUMERIC spline of J_Z agrees with direct evaluation at off-grid points (rel 5e-4) max rel 1.6e-04
+PASS E1 4^3: D>0 at every length iff a >= a_T = F_T(0+)/48 = 0.0027690... a_T=0.00276895
+PASS E2 4^3 a=0.0001: D changes sign exactly once, at tau_*=1.96665; D<0 below, D>0 above
+PASS E2 4^3 a=0.001: D changes sign exactly once, at tau_*=0.79463; D<0 below, D>0 above
+PASS E2 4^3 a=0.002: D changes sign exactly once, at tau_*=0.40936; D<0 below, D>0 above
+PASS E3 Z^3 a=0.001: D<0 for all tau<tau_*; tau_*=0.8848 >= proved bound (2/pi)exp(-48a/c)=0.0437
+PASS E3 Z^3 a=0.01: D<0 for all tau<tau_*; tau_*=0.01814 >= proved bound (2/pi)exp(-48a/c)=1.46e-12
+PASS E3 Z^3 a=0.05: D<0 for all tau<tau_*; tau_*=1.071e-10 >= proved bound (2/pi)exp(-48a/c)=4.08e-59
+PASS E4 a=0.0001: D>0 whenever tau^5 > 3/(8*48a): tau_c=2.391; tau_*(torus)=1.967, tau_*(Z^3)=2.02 both <= tau_c
+PASS E4 a=0.001: D>0 whenever tau^5 > 3/(8*48a): tau_c=1.509; tau_*(torus)=0.795, tau_*(Z^3)=0.885 both <= tau_c
+PASS E4 a=0.01: D>0 whenever tau^5 > 3/(8*48a): tau_c=0.952; tau_*(torus)=0.000, tau_*(Z^3)=0.0181 both <= tau_c
+# bounce-loss threshold: lattice T, a=0.0001: tau_*=1.967, m0/mu_c = 1.174152
+# bounce-loss threshold: lattice T, a=0.001: tau_*=0.7946, m0/mu_c = 1.793070
+# bounce-loss threshold: lattice T, a=0.002: tau_*=0.4094, m0/mu_c = 3.006995
+# bounce-loss threshold: lattice Z, a=0.001: tau_*=0.8848, m0/mu_c = 1.691246
+# bounce-loss threshold: lattice Z, a=0.01: tau_*=0.01814, m0/mu_c = 65.826942
+# bounce-loss threshold: lattice Z, a=0.05: tau_*=1.071e-10, m0/mu_c = 11149970030.569416
+PASS E5 for each tabulated a>0 the loss threshold m0_c/mu exceeds 1 (J/tau>1 at every finite tau): m0 in (mu, m0_c) keeps D>0 at the bounce
+PASS E5b EXACT: J(tau)/tau is strictly decreasing in tau and tends to 1, so tau_t(m0) is unique for m0>mu and tau_t -> 0 as m0 -> infinity
+PASS E6 torus: a>=a_T keeps the bounce for EVERY m0>mu; Z^3: for tabulated a no such all-m0 statement (D<0 below tau_*)
+PASS E6b Z^3 a=0.001: at tau0=0.0218 (half the proved bound) F_Z(tau0) > 48a, so D<0 there
+PASS E6b Z^3 a=0.01: at tau0=7.32e-13 (half the proved bound) F_Z(tau0) > 48a, so D<0 there
+PASS E7 torus a=0.001: m0/mu=1.3965 -> tau_t=1.2283, D(l_t)>0 is True (expected True)
+PASS E7 torus a=0.001: m0/mu=1.7923 -> tau_t=0.7952, D(l_t)>0 is True (expected True)
+PASS E7 torus a=0.001: m0/mu=1.8110 -> tau_t=0.7829, D(l_t)>0 is False (expected False)
+PASS E7 torus a=0.001: m0/mu=5.3792 -> tau_t=0.2167, D(l_t)>0 is False (expected False)
+PASS E8 EXACT: bounce lamddot = m'/(2D) reduces to block 147's m0^4/(48 alpha I^3) when the sea inertia is dropped
+# torus a=0.01, m0/mu=1.05: tau_t=3.8105, D=13.27, lamddot_turn=0.003652 mu, turn-point shift criterion Xi=M2 m'/(8D^2)=2.869e-07
+# torus a=0.001, m0/mu=1.05: tau_t=3.8105, D=1.318, lamddot_turn=0.03676 mu, turn-point shift criterion Xi=M2 m'/(8D^2)=2.906e-05
+# torus a=0.001, m0/mu=1.2: tau_t=1.8217, D=0.1263, lamddot_turn=1.423 mu, turn-point shift criterion Xi=M2 m'/(8D^2)=1.764e-02
+# torus a=0.0001, m0/mu=1.5: tau_t=1.0669 but D<0 there (no bounce)
+PASS F1 EXACT: m0 <= mu => m(l) = m0 - <E> < 0 at every finite l (E>mu on modes with s != 0, which exist on 4^3 and Z^3)
+# m0=mu lattice T a=2e-08: window tau<tau_*=13.06; min lamdot^2/mu^2 = 4.584 (at tau=6.68); min worst-mode first-order amplitude^2 = 0.0049 (at tau=10.1)
+# m0=mu lattice T a=1e-06: window tau<tau_*=5.839; min lamdot^2/mu^2 = 6.142 (at tau=3.63); min worst-mode first-order amplitude^2 = 0.0213 (at tau=4.37)
+# m0=mu lattice T a=0.0001: window tau<tau_*=1.967; min lamdot^2/mu^2 = 25.06 (at tau=1.46); min worst-mode first-order amplitude^2 = 0.116 (at tau=1.48)
+# m0=mu lattice T a=0.001: window tau<tau_*=0.7946; min lamdot^2/mu^2 = 491.8 (at tau=0.635); min worst-mode first-order amplitude^2 = 0.672 (at tau=0.392)
+# m0=mu lattice T a=0.002: window tau<tau_*=0.4094; min lamdot^2/mu^2 = 1.342e+04 (at tau=0.333); min worst-mode first-order amplitude^2 = 1.84 (at tau=0.08)
+# m0=mu lattice T a=0.0027: window tau<tau_*=0.1096; min lamdot^2/mu^2 = 2.996e+07 (at tau=0.0897); min worst-mode first-order amplitude^2 = 21.1 (at tau=0.00475)
+# m0=mu lattice Z a=2e-08: window tau<tau_*=13.07; min lamdot^2/mu^2 = 4.524 (at tau=6.8); min worst-mode first-order amplitude^2 = 0.0209 (at tau=6.8)
+# m0=mu lattice Z a=1e-06: window tau<tau_*=5.859; min lamdot^2/mu^2 = 5.9 (at tau=3.59); min worst-mode first-order amplitude^2 = 0.0273 (at tau=3.59)
+# m0=mu lattice Z a=0.0001: window tau<tau_*=2.016; min lamdot^2/mu^2 = 21.06 (at tau=1.49); min worst-mode first-order amplitude^2 = 0.0975 (at tau=1.49)
+# m0=mu lattice Z a=0.001: window tau<tau_*=0.8848; min lamdot^2/mu^2 = 235 (at tau=0.694); min worst-mode first-order amplitude^2 = 1.09 (at tau=0.694)
+# m0=mu lattice Z a=0.01: window tau<tau_*=0.01814; min lamdot^2/mu^2 = 2.333e+09 (at tau=0.0141); min worst-mode first-order amplitude^2 = 1.08e+07 (at tau=0.0141)
+PASS F2 EXACT: 2w^5 - w - 1 = (w-1)(2w^4+2w^3+2w^2+2w+1) > 0 for w>1 (w = sqrt(1+y)), i.e. sqrt(1+y)-1 > y/(2(1+y)^(5/2)) for all y>0
+PASS F2b EXACT: y/(2(1+y)^(5/2)) = (sqrt(1+y)-1) * y/((sqrt(1+y)-1) 2 (1+y)^(5/2)) and (sqrt(1+y)-1) = y/(sqrt(1+y)+1): the ratio of the two sides is 2(1+y)^(5/2)/(sqrt(1+y)+1) > 1
+PASS F2c EXACT: for y=s^2/tau^2: tau^3 F = <y/(4(1+y)^(5/2))> hence 2 tau^3 F = <y/(2(1+y)^(5/2))>; at tau=0.37 on 4^3 the identity J/tau-1 > 2 tau^3 F holds
+PASS F3 NUMERIC every tabulated window minimum of lamdot^2/mu^2 (m0=mu) exceeds 4, as the inequality predicts (lamdot > 2mu = the minimal single-particle gap) rows=11; smallest 4.5237
+PASS F3b NUMERIC as a -> 0 the window minimum of lamdot^2/mu^2 tends to 4 from above (large-tau law h = 4/(1-(tau/tau_*)^5) -> 4)
+PASS F4 NUMERIC lamdot^2 = m/D diverges as tau -> tau_* (D->0) with m != 0 h=4.12e+07
+PASS F5 4^3, a >= a_T: D>0 at every length, so m0 <= mu has no motion (T2 statement intact there)
+PASS F6 NUMERIC torus a=1e-3: min rate over the window increases when m0/mu decreases from 1 to 0.5
+PASS F8 torus a=0.001, m0/mu=3.0: tau_t=0.4105 < tau_*=0.7946; for tau<tau_t both m<0 and D<0 (lamdot^2=m/D>0: allowed), for tau_t<tau<tau_* m>0 and D<0 (forbidden)
+PASS F8b NUMERIC at that bounce-lost point lamdot^2/mu^2 -> 0 as tau -> tau_t from below (a maximum-size turning point where the leading adiabatic order is best) 0.00157; 0.157; 16.2; 8.35e+03
+TOTAL: PASS=58 FAIL=0
+HIT: In the supplied model (24 alpha l^3 - m_lam/2) lamdot^2 = m0 - <E> (units mu=1, tau=mu*l, a=alpha/mu^2, F(tau)=(1/4)<s^2/(tau^2+s^2)^(5/2)> strictly decreasing, so D>0 iff F(tau)<48a): (1) on the 4^3 torus D keeps its sign at every length iff a >= (1/1536)(3+3/(2 sqrt2)+1/(3 sqrt3)) = 0.0027690, otherwise D<0 exactly for tau<tau_*(a); (2) on Z^3 D<0 for tau < (2/pi)exp(-48 a 2^(5/2) pi^2) for every a>0 (F_Z >= 2^(-5/2) pi^-2 ln(2/(pi tau))), so the sign is lost at some length for every alpha; (3) on both lattices D>0 whenever tau^5 > 1/(128 a); (4) for m0>mu the large-length threshold is unchanged (m>0 needs m0>mu) and the bounce keeps D>0 iff m0/mu < J(tau_*)/tau_* (always >1), otherwise m=0 at tau_t<tau_* is a maximum-size turning point of the branch tau<tau_t; (5) for m0<=mu the model has motion only where D<0 (tau<tau_*), lamdot^2 = m/D diverges at tau_*, and lamdot^2 > 4 mu^2 strictly throughout (rate above the minimal single-particle gap 2mu), so T2's m0<=mu no-motion statement fails only where the leading adiabatic order is already uncontrolled
+SUMMARY: exact sign/threshold conditions for the sea-inertia-corrected zero-mode constraint on the 4^3 torus and Z^3, plus a proof that the m0<=mu motion has lamdot>2mu, and numeric checks of the T3(b) coefficient; runtime 16.0s

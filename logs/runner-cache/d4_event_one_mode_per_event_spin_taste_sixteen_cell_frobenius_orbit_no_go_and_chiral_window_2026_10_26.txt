@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/d4_event_one_mode_per_event_spin_taste_sixteen_cell_frobenius_orbit_no_go_and_chiral_window_2026_10_26.py
+runner_sha256: cef353a36e9c8bf52c27b0fa754c9916f5eb190c062ddf49b9c08211c69a28fa
+input_fingerprint_sha256: df73c5823fc5fa0e3718b9fe2898ccca32f3929b108ba7429789b8396fd9c35c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 9.01
+status: ok
+----- stdout -----
+PASS C1 W(F4) generated, Pin lift Ad = +A on gamma: |W| = 1152
+PASS C2 [T] D4/2D4: invariant subspaces 0,R,all (dual 0,R^0,all); invariant alternating forms {0, b}, rank b = 2: graph-type Sigma needs a nondegenerate invariant form (none); (2,2)-type pairs R with R^0 = annihilator (degenerate); so no 4-dim taste Clifford
+PASS C3 [T] H^1(W(F4), F2^4) = 0 and H^1(W(F4), F2^4/R) = 0: so any symmetry group mapping onto W(F4) (any shifts, phases) has an event class x whose stabiliser G_x maps onto W(F4)
+PASS C4 [T] W(F4): S irreducible, End(S) = 1+1+4+4+6, classes 1+3+12: partition IMPOSSIBLE (no spin x taste, any range/phases/shifts): q=1 c=1
+PASS C4b [T] index-2 subgroups: both improper ones fail the same way; rotations-only (det+, 576) pass but S = two Weyl halves: det+ End(S) = [1, 1, 3, 3, 4, 4]
+PASS C5 [T] KS control (Z^4, B4 = 384): classes 1+4+6+4+1 = End(S) dims, partition PASSES, KS form invariant; quartic 2, cubic 2: unprotected
+PASS C6 [F] seeded sample of 2-generated subgroups: every protected group with an improper element fails the partition; every protected rotations-only group passes with S reducible: 19 protected groups (order, improper): [(96, False), (192, False), (288, False), (576, False), (576, True), (1152, True)]
+PASS C7 [T] a KS-type taste Clifford (graph Sigma) makes every symmetry Clifford, so Ad S(A) is a signed Pauli permutation: |tr S|^2 <= Fix(A). Violated by W(F4) and by every sampled protected group with a nondegenerate invariant form: W(F4) violations 52; 12 (group, form) candidates, violations min 8
+PASS C8 [F] NN root hops dressed by each candidate form: shifts commute, but none of the 2^11 sign patterns gives a Clifford linear term: 12 distinct forms
+PASS C9 [F] KS + Adams flavoured mass r(1 - prod cos 1(x)xi5) (supplied): 8 light modes = 2 tastes x 4 spin; light-mode p^4 coefficient anisotropic for KS (-1/3 axis, -1/12 body) and for Adams: KS axis -0.3333 body -0.0833; Adams axis -0.0833 body 0.1667
+PASS C10 [T] taste transforms as a spinor under the event stabiliser (T|G_x = S* lambda by Frobenius); KS: 16 = End(S) as B4-module
+runtime 8.8 s
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

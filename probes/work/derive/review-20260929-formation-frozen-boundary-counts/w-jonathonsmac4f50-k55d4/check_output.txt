@@ -1,0 +1,309 @@
+# --- Part A: frozen vs reachable-frozen, threshold crowding rules A={0..m}
+PASS A.d=2 m=0: reachable-frozen [2, 10, 42, 358] agrees with the source table where computed frozen (all, incl. unreachable) = [11, 291, 28661, 10982565]
+PASS A.d=2 m=1: reachable-frozen [6, 57, 1699, 144205] agrees with the source table where computed frozen (all, incl. unreachable) = [7, 89, 4781, 858605]
+PASS A.d=2 m=2: reachable-frozen [1, 17, 305, 22398] agrees with the source table where computed frozen (all, incl. unreachable) = [1, 17, 305, 22398]
+PASS A.d=2 m=3: reachable-frozen [1, 2, 7, 63] agrees with the source table where computed frozen (all, incl. unreachable) = [1, 2, 7, 63]
+PASS A.d=3 m=0: reachable-frozen [6, 496] agrees with the source table where computed frozen (all, incl. unreachable) = [183, 64289327]
+PASS A.d=3 m=1: reachable-frozen [40, None] agrees with the source table where computed frozen (all, incl. unreachable) = [77, 8500681]
+PASS A.d=3 m=2: reachable-frozen [34, 413615] agrees with the source table where computed frozen (all, incl. unreachable) = [35, 482063]
+PASS A.d=3 m=3: reachable-frozen [1, 12274] agrees with the source table where computed frozen (all, incl. unreachable) = [1, 12274]
+PASS A.d=3 m=4: reachable-frozen [1, 65] agrees with the source table where computed frozen (all, incl. unreachable) = [1, 65]
+PASS A.d=3 m=5: reachable-frozen [1, 2] agrees with the source table where computed frozen (all, incl. unreachable) = [1, 2]
+PASS A.lemma D: m=2>=d=2, L=2: all 1 frozen sets are m-degenerate (reachable) 
+PASS A.lemma D: m=3>=d=2, L=2: all 1 frozen sets are m-degenerate (reachable) 
+PASS A.lemma D: m=2>=d=2, L=3: all 17 frozen sets are m-degenerate (reachable) 
+PASS A.lemma D: m=3>=d=2, L=3: all 2 frozen sets are m-degenerate (reachable) 
+PASS A.lemma D: m=3>=d=3, L=2: all 1 frozen sets are m-degenerate (reachable) 
+PASS A.lemma D: m=4>=d=3, L=2: all 1 frozen sets are m-degenerate (reachable) 
+PASS A.lemma D: m=5>=d=3, L=2: all 1 frozen sets are m-degenerate (reachable) 
+PASS A.m<d: frozen sets that are NOT reachable exist (2D m=0, L=3: 291 frozen vs 10 reachable) 
+PASS A.m<d: 2D m=1, L=3: 89 frozen vs 57 reachable (the eight-ring around an empty centre is frozen, not reachable) 
+PASS A.frozen counts 2D m=0 agree with an independent direct enumeration (L=2..5) [11, 291, 28661, 10982565]
+PASS A.frozen counts 2D m=1 agree with an independent direct enumeration (L=2..5) [7, 89, 4781, 858605]
+PASS A.frozen counts 2D m=2 agree with an independent direct enumeration (L=2..5) [1, 17, 305, 22398]
+PASS A.frozen counts 2D m=3 agree with an independent direct enumeration (L=2..5) [1, 2, 7, 63]
+# --- Part A2: cross-check of Part A by a full forward-reachability DP (2D, n<=16)
+PASS A2.forward DP 2D m=0 L=2: reachable-frozen=2 matches table, frozen=11 
+PASS A2.reachable == m-degenerate, 2D m=0 L=2 (all 16 subsets) 
+PASS A2.forward DP 2D m=0 L=3: reachable-frozen=10 matches table, frozen=291 
+PASS A2.reachable == m-degenerate, 2D m=0 L=3 (all 512 subsets) 
+PASS A2.forward DP 2D m=0 L=4: reachable-frozen=42 matches table, frozen=28661 
+PASS A2.forward DP 2D m=1 L=2: reachable-frozen=6 matches table, frozen=7 
+PASS A2.reachable == m-degenerate, 2D m=1 L=2 (all 16 subsets) 
+PASS A2.forward DP 2D m=1 L=3: reachable-frozen=57 matches table, frozen=89 
+PASS A2.reachable == m-degenerate, 2D m=1 L=3 (all 512 subsets) 
+PASS A2.forward DP 2D m=1 L=4: reachable-frozen=1699 matches table, frozen=4781 
+PASS A2.forward DP 2D m=2 L=2: reachable-frozen=1 matches table, frozen=1 
+PASS A2.reachable == m-degenerate, 2D m=2 L=2 (all 16 subsets) 
+PASS A2.forward DP 2D m=2 L=3: reachable-frozen=17 matches table, frozen=17 
+PASS A2.reachable == m-degenerate, 2D m=2 L=3 (all 512 subsets) 
+PASS A2.forward DP 2D m=2 L=4: reachable-frozen=305 matches table, frozen=305 
+PASS A2.forward DP 2D m=3 L=2: reachable-frozen=1 matches table, frozen=1 
+PASS A2.reachable == m-degenerate, 2D m=3 L=2 (all 16 subsets) 
+PASS A2.forward DP 2D m=3 L=3: reachable-frozen=2 matches table, frozen=2 
+PASS A2.reachable == m-degenerate, 2D m=3 L=3 (all 512 subsets) 
+PASS A2.forward DP 2D m=3 L=4: reachable-frozen=7 matches table, frozen=7 
+# --- Part B1: rule S, empty outer boundary, all boxes with a*b <= 20
+PASS B1.2x2: frozen=1 reachable-frozen=1 F_a+F_b-1=1; all subsets reachable=True; structure lemma 
+PASS B1.2x3: frozen=2 reachable-frozen=2 F_a+F_b-1=2; all subsets reachable=True; structure lemma 
+PASS B1.2x4: frozen=3 reachable-frozen=3 F_a+F_b-1=3; all subsets reachable=True; structure lemma 
+PASS B1.2x5: frozen=5 reachable-frozen=5 F_a+F_b-1=5; all subsets reachable=True; structure lemma 
+PASS B1.2x6: frozen=8 reachable-frozen=8 F_a+F_b-1=8; all subsets reachable=True; structure lemma 
+PASS B1.2x7: frozen=13 reachable-frozen=13 F_a+F_b-1=13; all subsets reachable=True; structure lemma 
+PASS B1.2x8: frozen=21 reachable-frozen=21 F_a+F_b-1=21; all subsets reachable=True; structure lemma 
+PASS B1.2x9: frozen=34 reachable-frozen=34 F_a+F_b-1=34; all subsets reachable=True; structure lemma 
+PASS B1.2x10: frozen=55 reachable-frozen=55 F_a+F_b-1=55; all subsets reachable=True; structure lemma 
+PASS B1.3x3: frozen=3 reachable-frozen=3 F_a+F_b-1=3; all subsets reachable=True; structure lemma 
+PASS B1.3x4: frozen=4 reachable-frozen=4 F_a+F_b-1=4; all subsets reachable=True; structure lemma 
+PASS B1.3x5: frozen=6 reachable-frozen=6 F_a+F_b-1=6; all subsets reachable=True; structure lemma 
+PASS B1.3x6: frozen=9 reachable-frozen=9 F_a+F_b-1=9; all subsets reachable=True; structure lemma 
+PASS B1.4x4: frozen=5 reachable-frozen=5 F_a+F_b-1=5; all subsets reachable=True; structure lemma 
+PASS B1.4x5: frozen=7 reachable-frozen=7 F_a+F_b-1=7; all subsets reachable=True; structure lemma 
+PASS B1.1x1: frozen=1 (equals F_b = F_1+F_b-1: the formula also holds for a=1) 
+PASS B1.1x2: frozen=1 (equals F_b = F_1+F_b-1: the formula also holds for a=1) 
+PASS B1.1x3: frozen=2 (equals F_b = F_1+F_b-1: the formula also holds for a=1) 
+PASS B1.1x4: frozen=3 (equals F_b = F_1+F_b-1: the formula also holds for a=1) 
+PASS B1.1x5: frozen=5 (equals F_b = F_1+F_b-1: the formula also holds for a=1) 
+PASS B1.1x6: frozen=8 (equals F_b = F_1+F_b-1: the formula also holds for a=1) 
+# --- Part B1 (larger boxes): structure lemma counted directly, frozen test by local rule
+PASS B1.5x6: constructed frozen sets = 12 = F_a+F_b-1 = 12 
+PASS B1.6x7: constructed frozen sets = 20 = F_a+F_b-1 = 20 
+PASS B1.8x8: constructed frozen sets = 41 = F_a+F_b-1 = 41 
+PASS B1.9x11: constructed frozen sets = 122 = F_a+F_b-1 = 122 
+PASS B1.12x12: constructed frozen sets = 287 = F_a+F_b-1 = 287 
+# --- Part B2: rule S, recorded outer wall (outside counts as recorded)
+PASS B2.1x1 recorded wall: frozen=1, reachable-frozen=1, the unique one is the full box 
+PASS B2.1x2 recorded wall: frozen=1, reachable-frozen=1, the unique one is the full box 
+PASS B2.1x3 recorded wall: frozen=1, reachable-frozen=1, the unique one is the full box 
+PASS B2.1x4 recorded wall: frozen=1, reachable-frozen=1, the unique one is the full box 
+PASS B2.1x5 recorded wall: frozen=1, reachable-frozen=1, the unique one is the full box 
+PASS B2.1x6 recorded wall: frozen=1, reachable-frozen=1, the unique one is the full box 
+PASS B2.1x7 recorded wall: frozen=1, reachable-frozen=1, the unique one is the full box 
+PASS B2.1x8 recorded wall: frozen=1, reachable-frozen=1, the unique one is the full box 
+PASS B2.2x2 recorded wall: frozen=1, reachable-frozen=1, the unique one is the full box 
+PASS B2.2x3 recorded wall: frozen=1, reachable-frozen=1, the unique one is the full box 
+PASS B2.2x4 recorded wall: frozen=1, reachable-frozen=1, the unique one is the full box 
+PASS B2.2x5 recorded wall: frozen=1, reachable-frozen=1, the unique one is the full box 
+PASS B2.2x6 recorded wall: frozen=1, reachable-frozen=1, the unique one is the full box 
+PASS B2.2x7 recorded wall: frozen=1, reachable-frozen=1, the unique one is the full box 
+PASS B2.2x8 recorded wall: frozen=1, reachable-frozen=1, the unique one is the full box 
+PASS B2.3x3 recorded wall: frozen=1, reachable-frozen=1, the unique one is the full box 
+PASS B2.3x4 recorded wall: frozen=1, reachable-frozen=1, the unique one is the full box 
+PASS B2.3x5 recorded wall: frozen=1, reachable-frozen=1, the unique one is the full box 
+PASS B2.3x6 recorded wall: frozen=1, reachable-frozen=1, the unique one is the full box 
+PASS B2.4x4 recorded wall: frozen=1, reachable-frozen=1, the unique one is the full box 
+PASS B2.4x5 recorded wall: frozen=1, reachable-frozen=1, the unique one is the full box 
+# --- Part B3: rule S, the 16 side conventions (N,E,S,W) in {empty,recorded}
+PASS B3.sides NESW=(0, 0, 0, 0) 2x2: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(0, 0, 0, 0) 2x3: frozen=2 predicted R+C-1=2; reachable-frozen=2 
+PASS B3.sides NESW=(0, 0, 0, 0) 3x3: frozen=3 predicted R+C-1=3; reachable-frozen=3 
+PASS B3.sides NESW=(0, 0, 0, 0) 3x4: frozen=4 predicted R+C-1=4; reachable-frozen=4 
+PASS B3.sides NESW=(0, 0, 0, 0) 4x4: frozen=5 predicted R+C-1=5; reachable-frozen=5 
+PASS B3.sides NESW=(0, 0, 0, 0) 2x6: frozen=8 predicted R+C-1=8; reachable-frozen=8 
+PASS B3.sides NESW=(0, 0, 0, 0) 4x5: frozen=7 predicted R+C-1=7; reachable-frozen=7 
+PASS B3.sides NESW=(0, 0, 0, 1) 2x2: frozen=2 predicted R+C-1=2; reachable-frozen=2 
+PASS B3.sides NESW=(0, 0, 0, 1) 2x3: frozen=3 predicted R+C-1=3; reachable-frozen=3 
+PASS B3.sides NESW=(0, 0, 0, 1) 3x3: frozen=3 predicted R+C-1=3; reachable-frozen=3 
+PASS B3.sides NESW=(0, 0, 0, 1) 3x4: frozen=5 predicted R+C-1=5; reachable-frozen=5 
+PASS B3.sides NESW=(0, 0, 0, 1) 4x4: frozen=5 predicted R+C-1=5; reachable-frozen=5 
+PASS B3.sides NESW=(0, 0, 0, 1) 2x6: frozen=13 predicted R+C-1=13; reachable-frozen=13 
+PASS B3.sides NESW=(0, 0, 0, 1) 4x5: frozen=8 predicted R+C-1=8; reachable-frozen=8 
+PASS B3.sides NESW=(0, 0, 1, 0) 2x2: frozen=2 predicted R+C-1=2; reachable-frozen=2 
+PASS B3.sides NESW=(0, 0, 1, 0) 2x3: frozen=2 predicted R+C-1=2; reachable-frozen=2 
+PASS B3.sides NESW=(0, 0, 1, 0) 3x3: frozen=3 predicted R+C-1=3; reachable-frozen=3 
+PASS B3.sides NESW=(0, 0, 1, 0) 3x4: frozen=3 predicted R+C-1=3; reachable-frozen=3 
+PASS B3.sides NESW=(0, 0, 1, 0) 4x4: frozen=5 predicted R+C-1=5; reachable-frozen=5 
+PASS B3.sides NESW=(0, 0, 1, 0) 2x6: frozen=2 predicted R+C-1=2; reachable-frozen=2 
+PASS B3.sides NESW=(0, 0, 1, 0) 4x5: frozen=5 predicted R+C-1=5; reachable-frozen=5 
+PASS B3.sides NESW=(0, 0, 1, 1) 2x2: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(0, 0, 1, 1) 2x3: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(0, 0, 1, 1) 3x3: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(0, 0, 1, 1) 3x4: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(0, 0, 1, 1) 4x4: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(0, 0, 1, 1) 2x6: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(0, 0, 1, 1) 4x5: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(0, 1, 0, 0) 2x2: frozen=2 predicted R+C-1=2; reachable-frozen=2 
+PASS B3.sides NESW=(0, 1, 0, 0) 2x3: frozen=3 predicted R+C-1=3; reachable-frozen=3 
+PASS B3.sides NESW=(0, 1, 0, 0) 3x3: frozen=3 predicted R+C-1=3; reachable-frozen=3 
+PASS B3.sides NESW=(0, 1, 0, 0) 3x4: frozen=5 predicted R+C-1=5; reachable-frozen=5 
+PASS B3.sides NESW=(0, 1, 0, 0) 4x4: frozen=5 predicted R+C-1=5; reachable-frozen=5 
+PASS B3.sides NESW=(0, 1, 0, 0) 2x6: frozen=13 predicted R+C-1=13; reachable-frozen=13 
+PASS B3.sides NESW=(0, 1, 0, 0) 4x5: frozen=8 predicted R+C-1=8; reachable-frozen=8 
+PASS B3.sides NESW=(0, 1, 0, 1) 2x2: frozen=3 predicted R+C-1=3; reachable-frozen=3 
+PASS B3.sides NESW=(0, 1, 0, 1) 2x3: frozen=5 predicted R+C-1=5; reachable-frozen=5 
+PASS B3.sides NESW=(0, 1, 0, 1) 3x3: frozen=5 predicted R+C-1=5; reachable-frozen=5 
+PASS B3.sides NESW=(0, 1, 0, 1) 3x4: frozen=8 predicted R+C-1=8; reachable-frozen=8 
+PASS B3.sides NESW=(0, 1, 0, 1) 4x4: frozen=8 predicted R+C-1=8; reachable-frozen=8 
+PASS B3.sides NESW=(0, 1, 0, 1) 2x6: frozen=21 predicted R+C-1=21; reachable-frozen=21 
+PASS B3.sides NESW=(0, 1, 0, 1) 4x5: frozen=13 predicted R+C-1=13; reachable-frozen=13 
+PASS B3.sides NESW=(0, 1, 1, 0) 2x2: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(0, 1, 1, 0) 2x3: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(0, 1, 1, 0) 3x3: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(0, 1, 1, 0) 3x4: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(0, 1, 1, 0) 4x4: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(0, 1, 1, 0) 2x6: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(0, 1, 1, 0) 4x5: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(0, 1, 1, 1) 2x2: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(0, 1, 1, 1) 2x3: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(0, 1, 1, 1) 3x3: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(0, 1, 1, 1) 3x4: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(0, 1, 1, 1) 4x4: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(0, 1, 1, 1) 2x6: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(0, 1, 1, 1) 4x5: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 0, 0, 0) 2x2: frozen=2 predicted R+C-1=2; reachable-frozen=2 
+PASS B3.sides NESW=(1, 0, 0, 0) 2x3: frozen=2 predicted R+C-1=2; reachable-frozen=2 
+PASS B3.sides NESW=(1, 0, 0, 0) 3x3: frozen=3 predicted R+C-1=3; reachable-frozen=3 
+PASS B3.sides NESW=(1, 0, 0, 0) 3x4: frozen=3 predicted R+C-1=3; reachable-frozen=3 
+PASS B3.sides NESW=(1, 0, 0, 0) 4x4: frozen=5 predicted R+C-1=5; reachable-frozen=5 
+PASS B3.sides NESW=(1, 0, 0, 0) 2x6: frozen=2 predicted R+C-1=2; reachable-frozen=2 
+PASS B3.sides NESW=(1, 0, 0, 0) 4x5: frozen=5 predicted R+C-1=5; reachable-frozen=5 
+PASS B3.sides NESW=(1, 0, 0, 1) 2x2: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 0, 0, 1) 2x3: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 0, 0, 1) 3x3: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 0, 0, 1) 3x4: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 0, 0, 1) 4x4: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 0, 0, 1) 2x6: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 0, 0, 1) 4x5: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 0, 1, 0) 2x2: frozen=3 predicted R+C-1=3; reachable-frozen=3 
+PASS B3.sides NESW=(1, 0, 1, 0) 2x3: frozen=3 predicted R+C-1=3; reachable-frozen=3 
+PASS B3.sides NESW=(1, 0, 1, 0) 3x3: frozen=5 predicted R+C-1=5; reachable-frozen=5 
+PASS B3.sides NESW=(1, 0, 1, 0) 3x4: frozen=5 predicted R+C-1=5; reachable-frozen=5 
+PASS B3.sides NESW=(1, 0, 1, 0) 4x4: frozen=8 predicted R+C-1=8; reachable-frozen=8 
+PASS B3.sides NESW=(1, 0, 1, 0) 2x6: frozen=3 predicted R+C-1=3; reachable-frozen=3 
+PASS B3.sides NESW=(1, 0, 1, 0) 4x5: frozen=8 predicted R+C-1=8; reachable-frozen=8 
+PASS B3.sides NESW=(1, 0, 1, 1) 2x2: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 0, 1, 1) 2x3: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 0, 1, 1) 3x3: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 0, 1, 1) 3x4: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 0, 1, 1) 4x4: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 0, 1, 1) 2x6: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 0, 1, 1) 4x5: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 1, 0, 0) 2x2: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 1, 0, 0) 2x3: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 1, 0, 0) 3x3: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 1, 0, 0) 3x4: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 1, 0, 0) 4x4: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 1, 0, 0) 2x6: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 1, 0, 0) 4x5: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 1, 0, 1) 2x2: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 1, 0, 1) 2x3: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 1, 0, 1) 3x3: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 1, 0, 1) 3x4: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 1, 0, 1) 4x4: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 1, 0, 1) 2x6: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 1, 0, 1) 4x5: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 1, 1, 0) 2x2: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 1, 1, 0) 2x3: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 1, 1, 0) 3x3: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 1, 1, 0) 3x4: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 1, 1, 0) 4x4: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 1, 1, 0) 2x6: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 1, 1, 0) 4x5: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 1, 1, 1) 2x2: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 1, 1, 1) 2x3: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 1, 1, 1) 3x3: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 1, 1, 1) 3x4: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 1, 1, 1) 4x4: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 1, 1, 1) 2x6: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+PASS B3.sides NESW=(1, 1, 1, 1) 4x5: frozen=1 predicted R+C-1=1; reachable-frozen=1 
+# B3 note: frozen sets not reachable from the empty box in mixed conventions: 0
+# --- Part B4: shape dependence of the empty-boundary count (exact)
+PASS B4.same perimeter 20: N(5x5)=9 < N(2x8)=21 although area 25 > 16 
+PASS B4.same area 16: N(4x4)=5, N(2x8)=21 
+PASS B4.ln N / perimeter is not shape independent (square 40x40 vs strip 2x800) 0.1196 vs 0.2395
+PASS B4.ln N(L,L) - L ln phi = ln(2/sqrt5)+o(1) at L=10 -0.120770
+PASS B4.ln N(L,L) - L ln phi = ln(2/sqrt5)+o(1) at L=20 -0.111646
+PASS B4.ln N(L,L) - L ln phi = ln(2/sqrt5)+o(1) at L=40 -0.111572
+PASS B4.ln N(L,L) - L ln phi = ln(2/sqrt5)+o(1) at L=80 -0.111572
+# --- Part C: actual process entropy of rule S (empty boundary)
+PASS C.2x2: absorbing mass=1; P(not full)=0.000e+00 <= (a-2)3^-b+(b-2)3^-a=0.000e+00 
+PASS C.2x2: H(process)=-0.0000 <= ln N=0.0000 and (if eps-bar<=1/2) <= Fano bound 0.0000 
+PASS C.2x3: absorbing mass=1; P(not full)=1.111e-01 <= (a-2)3^-b+(b-2)3^-a=1.111e-01 
+PASS C.2x3: H(process)=0.3488 <= ln N=0.6931 and (if eps-bar<=1/2) <= Fano bound 0.3488 
+PASS C.3x3: absorbing mass=1; P(not full)=3.457e-02 <= (a-2)3^-b+(b-2)3^-a=7.407e-02 
+PASS C.3x3: H(process)=0.1742 <= ln N=1.0986 and (if eps-bar<=1/2) <= Fano bound 0.3154 
+PASS C.2x5: absorbing mass=1; P(not full)=3.156e-01 <= (a-2)3^-b+(b-2)3^-a=3.333e-01 
+PASS C.2x5: H(process)=1.0180 <= ln N=1.6094 and (if eps-bar<=1/2) <= Fano bound 1.0986 
+PASS C.3x4: absorbing mass=1; P(not full)=4.432e-02 <= (a-2)3^-b+(b-2)3^-a=8.642e-02 
+PASS C.3x4: H(process)=0.2178 <= ln N=1.3863 and (if eps-bar<=1/2) <= Fano bound 0.3891 
+PASS C.4x4: absorbing mass=1; P(not full)=1.188e-02 <= (a-2)3^-b+(b-2)3^-a=4.938e-02 
+PASS C.4x4: H(process)=0.0809 <= ln N=1.6094 and (if eps-bar<=1/2) <= Fano bound 0.2652 
+PASS C.3x5: absorbing mass=1; P(not full)=7.080e-02 <= (a-2)3^-b+(b-2)3^-a=1.152e-01 
+PASS C.3x5: H(process)=0.3370 <= ln N=1.7918 and (if eps-bar<=1/2) <= Fano bound 0.5428 
+PASS C.4x5: absorbing mass=1; P(not full)=1.333e-02 <= (a-2)3^-b+(b-2)3^-a=4.527e-02 
+PASS C.4x5: H(process)=0.0872 <= ln N=1.9459 and (if eps-bar<=1/2) <= Fano bound 0.2654 
+PASS C.3x6: absorbing mass=1; P(not full)=9.864e-02 <= (a-2)3^-b+(b-2)3^-a=1.495e-01 
+PASS C.3x6: H(process)=0.4685 <= ln N=2.1972 and (if eps-bar<=1/2) <= Fano bound 0.7328 
+PASS C.2x9: absorbing mass=1; P(not full)=5.869e-01 <= (a-2)3^-b+(b-2)3^-a=7.778e-01 
+PASS C.2x9: H(process)=2.3546 <= ln N=3.5264 and (if eps-bar<=1/2) <= Fano bound 3.2492 
+PASS C.exact 2x2: sum of frozen mass == 1 (Fractions); P(not full)=0 <= bound 0 
+PASS C.exact 2x3: sum of frozen mass == 1 (Fractions); P(not full)=1/9 <= bound 1/9 
+PASS C.exact 3x3: sum of frozen mass == 1 (Fractions); P(not full)=14/405 <= bound 2/27 
+PASS C.exact 3x4: sum of frozen mass == 1 (Fractions); P(not full)=132689/2993760 <= bound 7/81 
+# --- Part C: recorded wall: process entropy exactly zero
+PASS C.wall 2x2: P(full box)=1 (entropy 0) 
+PASS C.wall 3x3: P(full box)=1 (entropy 0) 
+PASS C.wall 3x4: P(full box)=1 (entropy 0) 
+PASS C.wall 4x4: P(full box)=1 (entropy 0) 
+PASS C.wall 4x5: P(full box)=1 (entropy 0) 
+# --- Part C: first-ring argument, tested: P(a given interior row ends empty) <= 3^-b
+PASS C.row 1 of 3x3 empty at the end: probability 1.728e-02 <= 3^-3 = 3.704e-02 
+PASS C.row 1 of 3x4 empty at the end: probability 1.563e-03 <= 3^-4 = 1.235e-02 
+PASS C.row 1 of 3x5 empty at the end: probability 9.255e-05 <= 3^-5 = 4.115e-03 
+PASS C.row 1 of 3x6 empty at the end: probability 3.873e-06 <= 3^-6 = 1.372e-03 
+PASS C.row 1 of 4x4 empty at the end: probability 2.970e-03 <= 3^-4 = 1.235e-02 
+PASS C.row 2 of 4x4 empty at the end: probability 2.970e-03 <= 3^-4 = 1.235e-02 
+PASS C.row 1 of 4x5 empty at the end: probability 3.287e-04 <= 3^-5 = 4.115e-03 
+PASS C.row 2 of 4x5 empty at the end: probability 3.287e-04 <= 3^-5 = 4.115e-03 
+# --- Part C (all sizes): the proved inequality evaluated in exact/high-precision arithmetic
+PASS C.bound L=4: H <= 0.26515 nats (ln N = 1.6094; ratio 0.165) 
+PASS C.bound L=6: H <= 0.089391 nats (ln N = 2.7081; ratio 0.033) 
+PASS C.bound L=8: H <= 0.020104 nats (ln N = 3.7136; ratio 0.00541) 
+PASS C.bound L=10: H <= 0.0037652 nats (ln N = 4.6913; ratio 0.000803) 
+PASS C.bound L=15: H <= 3.8642e-5 nats (ln N = 7.1058; ratio 5.44e-6) 
+PASS C.bound L=20: H <= 2.984e-7 nats (ln N = 9.5126; ratio 3.14e-8) 
+PASS C.bound L=30: H <= 1.2038e-11 nats (ln N = 14.325; ratio 8.4e-13) 
+PASS C.bound L=50: H <= 1.0071e-20 nats (ln N = 23.949; ratio 4.21e-22) 
+PASS C.bound L=100: H <= 5.8412e-44 nats (ln N = 48.01; ratio 1.22e-45) 
+PASS C.bound L=200: H <= 4.6198e-91 nats (ln N = 96.131; ratio 4.81e-93) 
+PASS C.bound L=400: H <= 7.0532e-186 nats (ln N = 192.37; ratio 3.67e-188) 
+PASS C.bound at L=400 below 1e-150 nats (process entropy per box vanishes with size) 
+# --- Part C2: actual process entropy of the threshold crowding rules (uniform choice among eligible sites)
+PASS C2.m=0 3x3: reachable-frozen N=10, ln N=2.3026, process H=1.9356 nats (H/ln N=0.841, H/site=0.2151) 
+PASS C2.m=0 3x4: reachable-frozen N=18, ln N=2.8904, process H=2.5856 nats (H/ln N=0.895, H/site=0.2155) 
+PASS C2.m=0 4x4: reachable-frozen N=42, ln N=3.7377, process H=3.4302 nats (H/ln N=0.918, H/site=0.2144) 
+PASS C2.m=0 4x5: reachable-frozen N=108, ln N=4.6821, process H=4.2870 nats (H/ln N=0.916, H/site=0.2144) 
+PASS C2.m=1 3x3: reachable-frozen N=57, ln N=4.0431, process H=3.6143 nats (H/ln N=0.894, H/site=0.4016) 
+PASS C2.m=1 3x4: reachable-frozen N=236, ln N=5.4638, process H=4.7696 nats (H/ln N=0.873, H/site=0.3975) 
+PASS C2.m=1 4x4: reachable-frozen N=1699, ln N=7.4378, process H=6.3267 nats (H/ln N=0.851, H/site=0.3954) 
+PASS C2.m=1 4x5: reachable-frozen N=12186, ln N=9.4080, process H=7.8910 nats (H/ln N=0.839, H/site=0.3945) 
+PASS C2.m=2 3x3: reachable-frozen N=17, ln N=2.8332, process H=2.2320 nats (H/ln N=0.788, H/site=0.2480) 
+PASS C2.m=2 3x4: reachable-frozen N=53, ln N=3.9703, process H=3.5320 nats (H/ln N=0.890, H/site=0.2943) 
+PASS C2.m=2 4x4: reachable-frozen N=305, ln N=5.7203, process H=5.2370 nats (H/ln N=0.916, H/site=0.3273) 
+PASS C2.m=2 4x5: reachable-frozen N=2035, ln N=7.6183, process H=6.9261 nats (H/ln N=0.909, H/site=0.3463) 
+PASS C2.m=3 3x3: reachable-frozen N=2, ln N=0.6931, process H=0.5004 nats (H/ln N=0.722, H/site=0.0556) 
+PASS C2.m=3 3x4: reachable-frozen N=3, ln N=1.0986, process H=0.9503 nats (H/ln N=0.865, H/site=0.0792) 
+PASS C2.m=3 4x4: reachable-frozen N=7, ln N=1.9459, process H=1.7990 nats (H/ln N=0.925, H/site=0.1124) 
+PASS C2.m=3 4x5: reachable-frozen N=17, ln N=2.8332, process H=2.6460 nats (H/ln N=0.934, H/site=0.1323) 
+# --- Part W: recorded outer wall for the threshold crowding rules (outside counts as recorded)
+PASS W.m=0 2x2: empty-boundary N=2; recorded-wall frozen=16, reachable-frozen=1 
+PASS W.m=0 3x3: empty-boundary N=10; recorded-wall frozen=496, reachable-frozen=1 
+PASS W.m=0 3x4: empty-boundary N=18; recorded-wall frozen=3856, reachable-frozen=2 
+PASS W.m=0 4x4: empty-boundary N=42; recorded-wall frozen=58640, reachable-frozen=2 
+PASS W.m=1 2x2: empty-boundary N=6; recorded-wall frozen=16, reachable-frozen=1 
+PASS W.m=1 3x3: empty-boundary N=57; recorded-wall frozen=378, reachable-frozen=6 
+PASS W.m=1 3x4: empty-boundary N=236; recorded-wall frozen=2521, reachable-frozen=17 
+PASS W.m=1 4x4: empty-boundary N=1699; recorded-wall frozen=30824, reachable-frozen=82 
+PASS W.m=2 2x2: empty-boundary N=1; recorded-wall frozen=11, reachable-frozen=2 
+PASS W.m=2 3x3: empty-boundary N=17; recorded-wall frozen=163, reachable-frozen=65 
+PASS W.m=2 3x4: empty-boundary N=53; recorded-wall frozen=803, reachable-frozen=372 
+PASS W.m=2 4x4: empty-boundary N=305; recorded-wall frozen=6547, reachable-frozen=3609 
+PASS W.m=3 2x2: empty-boundary N=1; recorded-wall frozen=7, reachable-frozen=6 
+PASS W.m=3 3x3: empty-boundary N=2; recorded-wall frozen=63, reachable-frozen=62 
+PASS W.m=3 3x4: empty-boundary N=3; recorded-wall frozen=227, reachable-frozen=226 
+PASS W.m=3 4x4: empty-boundary N=7; recorded-wall frozen=1234, reachable-frozen=1233 
+PASS W.m=0, recorded wall, L=3: N equals the empty-boundary count of the 1x1 interior 1
+PASS W.m=0, recorded wall, L=4: N equals the empty-boundary count of the 2x2 interior 2
+HIT: scoped to the one supplied rule 'form unless exactly two opposite neighbours are recorded': frozen = reachable = F_a+F_b-1 on every a x b box with empty outer boundary is proved by a structure lemma plus row-major reachability (previously only checked), the recorded-wall count is 1 for every size (proved), the count is not a function of area or perimeter, and the Shannon entropy of the formation process is bounded by a Fano bound that vanishes faster than any exponential in the side; no area law and no claim about other rules or 3D.
+TOTAL: PASS=292 FAIL=0
+SUMMARY: for the supplied rule 'form unless exactly two opposite neighbours are recorded' the frozen = reachable count on an a x b box with empty outer boundary is F_a+F_b-1 (proved, checked to 20 sites), it collapses to the single full box with a recorded wall, depends on shape not perimeter or area, and the process entropy is bounded by a Fano bound that vanishes with size; frozen and reachable counts of the threshold rules are also separated.

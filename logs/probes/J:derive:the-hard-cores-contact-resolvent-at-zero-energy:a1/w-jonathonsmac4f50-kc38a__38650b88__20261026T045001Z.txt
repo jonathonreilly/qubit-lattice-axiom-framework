@@ -1,0 +1,48 @@
+PASS A1 EXACT  det(h0-z)=S^2-4A^2B^2 and s^T adj(h0-z) s = z(S+2u1.u2) as polynomials in (u1,u2,z) 
+PASS A2 EXACT  g(-z) = -g(z) pointwise in q (substitute z->-z in the closed form) 
+PASS A2b EXACT chiral antiunitary Theta=(i sy x i sy)K: Theta h0 Theta^-1 = -h0 for real u1,u2 
+PASS A2c EXACT Theta fixes the coincident singlet: (i sy x i sy) conj(s) = s 
+PASS A3 EXACT  staggered sign: u1(q+Pi)=-u1(q), u2(q+Pi;K)=-u2(q;K) => h0(q+Pi)=-h0(q); c fixed; fibre K unchanged 
+PASS A4 EXACT  K=0 (u2=-u1): g(z;q) = z/(4 eps^2 - z^2)  with eps^2=sum a_i^2 
+PASS A4b EXACT K=0: A*B + u1.u2 = 0 identically, so the (+,-) overlaps (1+c)/4 vanish 
+PASS A5 EXACT  G_cc(-z)=-G_cc(z) exactly (Fractions) on the L=4 and L=6 tori, every fibre K, two z each (560 cases)
+PASS A5b EXACT  exact 4x4 rational resolvent equals closed form at L=4 lattice points 
+PASS A5c EXACT  torus K=0 has a pole z*G -> -(8/L^3) at z=0 (L=4: -1/8, L=6: -1/27) from corner pairs: finite-volume artefact 
+PASS A6a EXACT  r1=|d1|=K(xi+eta)/2 and r2=|d2|=K(xi-eta)/2 in these coordinates 
+PASS A6b EXACT  d^3x = x_perp dx_par dx_perp dphi = (K^3/8)(xi^2-eta^2) dxi deta dphi 
+PASS A6c EXACT  (1-c) = 2(xi^2-1)/(xi^2-eta^2)  so weight (1-c)/4 * Jacobian = (K^3/16)(xi^2-1): uniform in (eta,phi) 
+PASS A6d EXACT  rho_c(E;K) = (E^2-K^2)/(4 pi^2) for E>K (8 corners, leading order);  K->0 gives E^2/(4 pi^2) 
+PASS A6e EXACT  uniform-in-eta shell means: <x_par^2>=E^2/12, <x_perp^2>=(E^2-K^2)/6 
+PASS A6f EXACT  (K/2+x)^3+(K/2-x)^3 = K^3/4 + 3 K x^2  (so Delta g_a = -2 K_a (<x_a^2> - x_a^2); block 152 T3(b) family) 
+PASS A6g EXACT  p^3+(K-p)^3 = K^3 - 3K^2 p + 3K p^2 (the odd p^3 cancels) 
+PASS A7 EXACT  (zeta^2-a)-(1-a)(zeta^2-b) = a(zeta^2-1)+b(1-a) >= 0 for zeta>=1, 0<=b<=a<=1 
+PASS A7b EXACT  sum_a sin^2 q_a / eps^2 = 1 (three equal means by axis permutation => each 1/3) 
+PASS A8 EXACT  sin(K-q)+sin q = 2 sin(K/2) cos(K/2-q): identically 0 in q iff sin(K/2)=0, i.e. K=0 mod 2pi: the (+,-) overlaps vanish identically only at K=0 
+PASS A8b EXACT  eps^2(q)-eps^2(K-q) = sum_a sin K_a sin(2q_a-K_a):  (+,-) energy zero locus; all K_a in {0,pi} => identically flat zero band 
+-- exact section done at 28.8s
+PASS B1 NUM    real-space L=3 torus: <c_K|(H(x)1+1(x)H - z)^-1|c_K> equals the fibre formula (max residual 1.1e-15) 
+PASS B2 NUM    singlet overlap with band pair (s1,s2) is (1-s1 s2 n1.n2)/4 (random vectors) 
+PASS B3 NUM    C0=<1/(4 eps^2)> = W3/6 = 0.252731 (W3=int 1/(1-(1/3)sum cos) Watson closed form 1.5163860592); lattice midpoint extrapolation 0.25273 
+PASS B4 NUM    K=0 contact density rho_c(E)=E^2/(4 pi^2) on the exact lattice dispersion: estimate 0.00263 vs 0.00259 
+PASS B5 NUM    |G_exact-G_lead|/K halves when K halves (error O(K^2) absolute): ratios 0.49 (zeta=1.5), 0.48 (zeta=3) 
+PASS B5b NUM   at K=0.1, zeta=1.5 the leading form already agrees to 0.013 of |G|/K 
+PASS B6 NUM    Re G_lead(E)/E for zeta=E/K=1.0001,1.2,2,4,10: 0.1002, 0.1549, 0.2200, 0.2448, 0.2515  (all >= 1/12=0.0833 and <= C0=0.2527, increasing) 
+PASS B7 NUM    Im G_lead(i*gamma*K)/K = 0.310, 0.310, 0.303 for gamma=0.2,0.1,0.05: tends to a positive constant (about 0.31), so |G(0+i0;K)| ~ 0.31 |K| and the E=0 pole of T exists only at K=0 
+PASS B8 NUM    exact-dispersion corner shell (K=0.1,E=0.3): rho_c=0.00205 vs (E^2-K^2)/(4pi^2)=0.00203; <x_par^2>=0.00758 vs E^2/12=0.00750; <x_perp^2>=0.01343 vs (E^2-K^2)/6=0.01333 
+-- B9 leading-order table, K||x, K->0 with E=zeta*K  (Gamma=2 pi w rho_c/|G|^2, R_x=Gamma*(g_bar-g)_x)
+   E>>K limit of Gamma_q: 1/(4 pi C0^2) = 1.2459 = 9/(pi W3^2)
+   zeta=     1 eta=0.0  Gamma=0.0000   R_x/K^3=-0.0000
+   zeta=     1 eta=0.5  Gamma=0.0000   R_x/K^3=-0.0000
+   zeta=   1.2 eta=0.0  Gamma=0.3096   R_x/K^3=-0.0743
+   zeta=   1.2 eta=0.5  Gamma=0.3747   R_x/K^3=-0.0225
+   zeta=     2 eta=0.0  Gamma=0.9244   R_x/K^3=-0.6163
+   zeta=     2 eta=0.5  Gamma=0.9861   R_x/K^3=-0.1643
+   zeta=     4 eta=0.0  Gamma=1.1674   R_x/K^3=-3.1131
+   zeta=     4 eta=0.5  Gamma=1.1859   R_x/K^3=-0.7906
+   zeta=    10 eta=0.0  Gamma=1.2334   R_x/K^3=-20.5566
+   zeta=    10 eta=0.5  Gamma=1.2365   R_x/K^3=-5.1520
+PASS B9 NUM    Gamma_q <= pi rho_c/(Re G)^2 <= 36/pi (from Re G >= E/12) at every tabulated zeta; Gamma -> 1/(4 pi C0^2)=9/(pi W3^2)=1.2459 as zeta->infinity 
+TOTAL: PASS=31 FAIL=0
+runtime 62.9s
+HIT: (i) EXACT: for every total wave vector K and every z off the spectrum the free-pair singlet resolvent is odd pointwise in the relative momentum, g(z)=z(A^2+B^2-z^2+2u1.u2)/((A^2+B^2-z^2)^2-4A^2B^2), hence G_cc(-z)=-G_cc(z) (Re G_cc(E+i0) odd, Im even), on tori of any even size as well as in infinite volume; (ii) EXACT at K=0: the (+,-) overlaps vanish identically (and only at K=0 mod 2pi) and G_cc(z)=z<1/(4 eps^2-z^2)>, so G_cc(E+i0;0)=C0 E + i E^2/(4 pi) + o(E^2) with C0=W3/6=0.2527 and the contact amplitude 1/G_cc has a simple pole at E=0 (the o(E^2) and the pole statement use the standard Hoelder-1/2 threshold argument written in ATTEMPT.md, not a runner); (iii) SCOPED ASYMPTOTIC (leading form NUM-checked, error O(K^2) numerically): for small K and E>=|K|, G_cc = z<(z^2-|w|^2)/(4 eps^2 (z^2-(K.v)^2))> + O(K^2), Re G >= E/12 for that leading form by an exact inequality, Im G=(E^2-K^2)/(4 pi); so for upper-band pairs the golden-rule collision rate Gamma stays O(1) (limit 9/(pi W3^2)=1.246 for E>>K), and the rate of change of g is Gamma*(g_bar-g) ~ K E^2 (E^3 at E~|K|), not ~K E^4 (E^5)
+SUMMARY: oddness of G_cc exact in all fibres; K=0 contact amplitude has a simple threshold pole; at E>=|K| small, |G_cc| ~ E (not constant), so the hard-core collision rate of slow upper-band pairs is O(E^0) and the g-change rate is ~K E^2 (E^3 at E~|K|) rather than E^5

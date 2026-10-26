@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/d4_event_one_mode_per_event_sixteen_content_taste_cosets_and_triality_2026_10_26.py
+runner_sha256: 59198a16168d8fdbe6ee36f57b60f513c804369f71130c0fcb2ba72d1387e918
+input_fingerprint_sha256: e04f2d14554b8ca8734150ca48d69f4c3f6ceed998daf8afac09af30d9a2cada
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.78
+status: ok
+----- stdout -----
+setup: |W(F4)| = 1152, 24 roots True, roots preserved True
+PASS 1a cube: hops anticommute (face phases -1), R^2 = 1, copy sign s = i W1 W2 W3 is a central involution; 8 = (R = +-1) x (s = +-1) x 2 (the 2 is the register's spin doublet) | anticomm 0e+00; face products {np.float64(-1.0)}; R eig [-1.  1.] x4 each; s eig x4 each; joint blocks [2, 2, 2, 2]
+PASS 1b cube: the hop algebra is M2 + M2 (dim 8) and its one-body commutant has dim 8, so one cube's tick symmetry is at most U(2) x U(2) on 8 modes (rotation-blind part: the copy sign); no 16-fold internal label exists on one cube | algebra dim 8, commutant dim 8; SM 16 needs 16 Weyl states with SU(3)xSU(2)xU(1) acting (register: '16 supplied')
+PASS 2  one fermion mode per D4 event: -1 is in W(F4), so every W(F4)-invariant translation-invariant one-component kernel is even, f(p) = f(-p): no term linear in p, no spin-1/2 light mode (spin needs a staggered cell or supplied components) | -1 in W(F4): True; max |f(p) - f(-p)| = 2.0e-14 over 200 momenta, 168 hops; the D4 zoom runners carry 4 supplied spinor components per event
+PASS 3a counts: hypercube {0,1}^4 has 16 corners, 8 in D4; |D4/2D4| = 16 with W(F4) orbits 1 + 12 + 3 (min norms 0, 2, 4; the 3 = triality frames, the radical of the mod-2 form); |D4/2D4*| = 4 with orbits 1 + 3 (the index-4 sqrt2-zoom cell) | corners in D4 8; classes 16, min norms 1x0 12x2 3x4; orbits [1, 3, 12]; radical size 4; D4/2D4* 4, orbits [1, 3]
+PASS 3b the 16 classes of D4/2D4 are Fourier dual to the 16 half-period momenta pi D4* mod 2pi D4*: coset labels ARE taste (doubler) labels | distinct characters 16, orthogonality residual 0e+00
+PASS 3c the zoom fixed-point kernel D* keeps exactly one light class: |D*| ~ |p| at p -> 0, gapped at all 15 other half-period classes at the GW radius 1/alpha (one light mode per field, no taste multiplicity) | min |D*| at the 15 classes 2.000 (max 2.000); |D*|/|p| at |p|=0.01, 0.002: 0.9327, 0.9327
+  [t = 0 s]
+PASS 4  staggered 16 lives on Z^4 = D4 + one hole class: 16 zero modes (4 spin x 4 taste); on events alone only D^2 survives, a scalar Laplacian on 2e_mu hops (root-hop weight 0); Z^4 is kept by 384 of 1152 W(F4) elements (triality broken, index 3) | zero modes on 4^4 16; D^2 root-hop 0e+00, 2e_mu hop 0.50, event->hole 0e+00; W(F4) elements keeping Z^4: 384
+PASS 5  internal labels: the SM commutant on the one-family 16 is abelian (dim 6 = U(1)^6), the W(F4) image on the 16 coset labels is non-abelian (commutant dim from Burnside): no W(F4)-covariant identification of coset labels with the 16 where rotations permute labels | SM commutant dim 6; non-commuting W(F4) pair found True; perm-rep commutant dim 12
+PASS 6  triality families: an S3-invariant 3x3 mass matrix has a degenerate pair (a + 2b, a - b, a - b); keeping the 3 classes fixed restricts W(F4) to W(D4) (192), which has 3 quartic invariants vs 1 for W(F4): dimension-6 anisotropy returns | eigenvalues [0.9 0.9 2.1]; subgroup fixing the 3 classes 192; quartic invariants W(F4) 1, W(D4) 3
+PASS 7  one-family 16: Y^3, Y-gravity, SU(3)^2 Y, SU(2)^2 Y, SU(3)^3 vanish, doublets even, Weyl count 0 mod 16; one taste-4 of SU(4) has SU(4)^3 = 1 (anomalous), (4,2,1) + (4b,1,2) gives 0; 15 Weyl (no nu^c) is 15 mod 16; Dirac-Kahler 16 components = 4 Weyl after projection, not 16 | sums 0, 0, 0, 0, 0; doublets 4; Weyl 16; taste-4 A = 1; PS 2(1) + 2(-1) = 0; 15 mod 16 = 15
+runtime 1 s
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

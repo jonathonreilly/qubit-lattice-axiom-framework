@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:a-clause-for-one-light-cone:a1",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-jonathonsmac4f50-k1302",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/a-clause-for-one-light-cone/w-jonathonsmac4f50-k1302/check.py",
+ "seed": 83928,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "eb0e3cc0",
+ "started_utc": "20261026T030528Z",
+ "elapsed_s": 3.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL a stability clause gives only the one-sided bound alpha <= K/4 (sharp), the source link gives rho = v^2 for the walker's hop coefficient, and alpha = K/4 needs both a source-link clause and a statement that the walker's hop coefficient is one edge per tick (the kinetic_isotropy_primitive at matter scope) or an extension of that primitive to the member's kinetic form."
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 30/30 PASS (~3 s); PARTIAL, kinematics with continuum momenta and the supplied one-quantum energy sqrt(rho)|p(q)|, rho=K/(4 alpha): the free massless walker cannot emit or absorb one member quantum in its own band for any (k, q!=0) iff rho>=1 (alpha<=K/4), exact emission witnesses for every rho<1 (block 149 had rho=1 only); the source link fixes rho=v^2 for a walker with hop coefficient v (block 135 identity re-run independently with mutants), so alpha=K/4 also needs 'v is one edge per tick' (a reading of the kinetic-isotropy primitive); for rho>=1 pair creation at small axis q remains, so no stability clause picks rho=1; the inequality alpha>=K/4 not derived (step 4 is an owner decision); D1 check is close to a restatement of a coefficient ratio.",
+ "what": "DERIVATION, independent attempt 1 of 2: Can any clause of the lane make the field's disturbances share the walker's light cone?. LANDED FIRST: origin/main is the science authority; read each named note as landed (git show origin/main:docs/<note>) before any PR branch, and where a PR's wording differs from the landed text, the landed text controls. Blocks 126-130 are OPEN hand-off PRs (#9182, #9184, #9185, #9186, #9187): read them on their branches (gh pr view <n> --json files,headRefName; git fetch origin <branch>; git show origin/<branch>:<note>). They are by the supervisor's model family (Claude) and harvest Grok-refereed probes attempts; nothing in them is adopted. SETTING: block 129 (PR #9186): of block 60's declared numbers, p, s, the kinetic sign and (with block 124, PR #9178) the kinetic family are fixed by stated demands; K (the unit of length) and alpha/K stay supplied; alpha = K/4 puts block 62's travelling disturbances (X = K wbar^2 P^2/(4 alpha)) at the walker's top speed. Block 112 (PR #9152): at beta = -alpha the equations demand e'' = -(K wbar^2/(4 alpha)) p.Theta.p: the content's energy current is (K wbar^2/(4 alpha)) times its momentum density. TASK: decide whether any clause in the lane's vocabulary (blocks 53-65, 112, 124) forces alpha = K/4: (a) a content whose energy current equals its momentum density (as the walker's does at long wavelength) sourcing the member consistently; (b) a shared causal structure (the member's characteristics equal to the walker's); (c) or show that every such demand is an added clause. HIT: a derivation of alpha = K/4 from a stated clause with exact checks, or a proof that none of (a)-(b) forces it. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/a-clause-for-one-light-cone/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes AS LANDED ON MAIN (git show origin/main:<note>); use a PR branch (git fetch origin <branch>; git show origin/<branch>:<note>; gh pr view <n> --json files,headRefName,state) only for a note that is not on main; any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/a-clause-for-one-light-cone/<name>/check.py\"",
+ "stdout_sha256": "a68bdec07842dac5510e9b83454592f329966017202c5724e965cba83d6235d4",
+ "stdout_tail": "au^2, K/4 for d_x^2) exchange iff alpha = K/4 \nPASS D2 omega_m^2 - omega_w^2 at rho=1 equals sum_j 4 sin^4(q_j/2) >= 0 (zero only at q = 0 mod 2pi) \nPASS D3 no rho in the test set equates the full member and walker dispersions at two axis momenta: exact equality of cones (not just long-wavelength speeds) is unattainable \nTOTAL: PASS=30 FAIL=0\nruntime 3.1 s\nHIT: (kinematics, continuum momenta, supplied one-quantum energy sqrt(rho)|p(q)| with rho = K/(4 alpha)) the free massless walker E=|sin k| cannot emit or absorb one member quantum in its own band for any (k, q != 0) iff rho >= 1 (alpha <= K/4), with an exact emission witness (k = 3a/2, q = a, cos a = sqrt(rho)) for every rho < 1; for every rho >= 1 a member quantum with sin^2(q/2) <= 3/(1+rho) on an axis has a resonant walker particle-hole channel (intermediate-value argument), so no stability clause selects rho = 1; and block 135's source identity, re-run independently on a 5^3 torus, holds for a walker of hop coefficient v exactly with constant v^2, so the source-link clause fixes rho = v^2 (alpha = K wbar^2/(4 v^2)), not alpha/K by itself.\nSUMMARY: PARTIAL a stability clause gives only the one-sided bound alpha <= K/4 (sharp), the source link gives rho = v^2 for the walker's hop coefficient, and alpha = K/4 needs both a source-link clause and a statement that the walker's hop coefficient is one edge per tick (the kinetic_isotropy_primitive at matter scope) or an extension of that primitive to the member's kinetic form.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k1302",
+  "at_utc": "20261026T030539Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Scoped one-sided bound from stability kinematics. Same-family, unrefereed.",
+  "by": "w-jonathonsmac4f50-k1302",
+  "at_utc": "20261026T030539Z"
+ }
+}

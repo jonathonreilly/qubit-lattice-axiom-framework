@@ -1,0 +1,34 @@
+PASS S1 TT mode: omega^2 = K p^2/(4 alpha) = rho p^2 
+PASS S2 c_k at beta=-alpha equals -24 alpha, negative for every alpha>0 (no K/alpha dependence) 
+PASS S3 closure condition c=beta/(alpha+3beta)=1/2 <=> beta=-alpha (independent of K) 
+PASS S4 lane conditions (sign, closure, oscillation) hold for rho in ['1/100', '1/9', '1/4', '1/2', '1', '2', '9', '100'] 
+PASS S5 rho = omega_member^2/omega_walker^2 at long wavelength is invariant under w -> L w (block 60 T1(a)) 
+PASS A1 sin k - sin(k-q) = 2cos(k-q/2) sin(q/2); gap = 4 sin^2(q/2) sin^2(k-q/2) per axis 
+PASS A2 exact sweep (5997 points incl. zero-sine components): (|s(k)|-|s(k-q)|)^2 < |p(q)|^2, hence no emission/absorption for any rho>=1 
+PASS A3 identity: sin k - sin(2a-k) = 2 cos a sin(k-a)  (emission along an axis with q = 2(k-a)) 
+PASS A4 exact emission witnesses: E(k)-E(k-q) = sqrt(rho)|p(q)| with q != 0, 95 witnesses over rho in ['144/169', '16/25', '1600/1681', '225/289', '2304/5329', '25/169', '3025/5329', '400/841', '4225/9409', '441/841', '49/625', '5184/9409', '576/625', '64/289', '81/1681', '9/25'] 
+PASS A5 universal witness k=3a/2, q=a: sin(3a/2) - sin(a/2) = 2 cos a sin(a/2) = sqrt(rho)|p(q)|, with sin(a/2)>0 and q=a != 0 for every a in (0,pi/2) 
+PASS A6 axis ratio (sin k - sin(k-q))/(2 sin(q/2)) = cos(k-q/2) for k>q>0; along k=2q it tends to 1 as q->0 (supremum 1) 
+PASS A7 universal witness for rho=(n/40)^2, n=1..39: E(k)-E(k-q) - sqrt(rho)|p(q)| = 0 using sin(3a/2)=sin(a/2)(1+2cos a) 
+PASS B1 |s(q)|^2 - rho |p(q)|^2 = sum 4 sin^2(q_j/2)(cos^2(q_j/2) - rho) 
+PASS B2 exact sweep (4000 pts): |s(k)|+|s(k+q)| >= |s(q)|  (minimal pair energy at momentum q is |s(q)|) 
+PASS B3 rho<1: rho|p|^2 < |s(q)|^2 whenever all cos^2(q_j/2) > rho (312 exact cases) 
+PASS B4 rho>=1: |s(q)|^2 <= rho|p|^2 <= (pair energy at k*)^2 for small axis q (16 cases), so a pair resonance exists (IVT) 
+PASS B4b on the axis the open-resonance condition cos^2 h + 2 >= rho sin^2 h is exactly sin^2(q/2) <= 3/(1+rho): satisfiable for every rho 
+PASS B5 rho=1: pair (-q/2, +q/2) has energy exactly |p(q)| for every q (block 149 T5, re-derived) 
+PASS B6 case split, rho = n/40, n=1..160: rho<1 -> walker emission witness (A5,A7); rho>=1 -> pair channel open at a small axis q (B4b) 
+PASS C1 walker hop coefficient v=1: -[H,[H,e']] = c * sum nabla_i nabla_j Theta_ij exactly, c = v^2 = 1 (c=np.float64(1.0), residual=np.float64(0.0), |LHS|max=0.015625)
+PASS C2 walker hop coefficient v=2: -[H,[H,e']] = c * sum nabla_i nabla_j Theta_ij exactly, c = v^2 = 4 (c=np.float64(4.0), residual=np.float64(0.0), |LHS|max=0.125)
+PASS C3 walker hop coefficient v=3: -[H,[H,e']] = c * sum nabla_i nabla_j Theta_ij exactly, c = v^2 = 9 (c=np.float64(9.0), residual=np.float64(0.0), |LHS|max=0.421875)
+PASS C4a mutant: unaveraged site energy e (not e') has no constant c (block 135 T2 factor prod cos q) (residual=0.0625)
+PASS C4b mutant: stress without the transverse average (phi_j = (1+T_j)/2 only) has no constant c (block 135 T3(b)) (residual=0.015625)
+PASS C4c mutant: stress K_i^j at the bond itself (no phi_j) has no constant c (residual=0.015625)
+PASS C4d mutant: opposite sign gives c = -1, not +1 (orientation of the check) (c=np.float64(-1.0))
+PASS C5 the source-link identity fixes rho = v^2 (C1-C3): alpha = K wbar^2/(4 v^2); the clause alone does not fix alpha/K 
+PASS D1 READING: TT sector Euclidean coefficients (alpha for d_tau^2, K/4 for d_x^2) exchange iff alpha = K/4 
+PASS D2 omega_m^2 - omega_w^2 at rho=1 equals sum_j 4 sin^4(q_j/2) >= 0 (zero only at q = 0 mod 2pi) 
+PASS D3 no rho in the test set equates the full member and walker dispersions at two axis momenta: exact equality of cones (not just long-wavelength speeds) is unattainable 
+TOTAL: PASS=30 FAIL=0
+runtime 3.1 s
+HIT: (kinematics, continuum momenta, supplied one-quantum energy sqrt(rho)|p(q)| with rho = K/(4 alpha)) the free massless walker E=|sin k| cannot emit or absorb one member quantum in its own band for any (k, q != 0) iff rho >= 1 (alpha <= K/4), with an exact emission witness (k = 3a/2, q = a, cos a = sqrt(rho)) for every rho < 1; for every rho >= 1 a member quantum with sin^2(q/2) <= 3/(1+rho) on an axis has a resonant walker particle-hole channel (intermediate-value argument), so no stability clause selects rho = 1; and block 135's source identity, re-run independently on a 5^3 torus, holds for a walker of hop coefficient v exactly with constant v^2, so the source-link clause fixes rho = v^2 (alpha = K wbar^2/(4 v^2)), not alpha/K by itself.
+SUMMARY: PARTIAL a stability clause gives only the one-sided bound alpha <= K/4 (sharp), the source link gives rho = v^2 for the walker's hop coefficient, and alpha = K/4 needs both a source-link clause and a statement that the walker's hop coefficient is one edge per tick (the kinetic_isotropy_primitive at matter scope) or an extension of that primitive to the member's kinetic form.

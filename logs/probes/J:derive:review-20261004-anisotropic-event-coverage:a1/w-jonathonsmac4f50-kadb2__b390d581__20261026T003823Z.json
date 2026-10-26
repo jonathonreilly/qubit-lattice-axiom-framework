@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20261004-anisotropic-event-coverage:a1",
+ "type": "judgment",
+ "lane": "review-science-20261004",
+ "worker": "w-jonathonsmac4f50-kadb2",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261004-anisotropic-event-coverage/w-jonathonsmac4f50-kadb2/check.py",
+ "seed": 75103,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "b390d581",
+ "started_utc": "20261026T003823Z",
+ "elapsed_s": 10.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "At the anisotropic coupling (6/5, 4/5, 1) the exact E2 touching (cos 2 pi f1 = -17/33, cos 2 pi f3 = -1/3, kappa = 3 sqrt(11)/10) is rigorously enclosed in, and is the unique zero of, the source's 1e-9 Krawczyk box (also certified for boxes up to 1e-4); E3-E5 boxes re-derived but exact coordinates not enclosed; no kappa-interval census near kappa_c was obtained (only pointwise captures at kappa = 27/125 and 429/2000 and a recorded method limit)."
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 17/17 PASS in ~8 s; exact binding of the plane event E2 to its 1e-9 Krawczyk box (200-bit intervals, unique zero) closes the floating-proximity gap for E2 only; E3-E5 coordinates not enclosed; no kappa-interval census obtained.",
+ "what": "First rigorously enclose one exact plane-event coordinate in its1e-9 Krawczyk box; the old1e-8 floating proximity is insufficient. Then extend a certified kappa census to one currently unproved event neighbourhood with actual captures. Keep six or seven executed cells separate from author development ranges. The exact line-index flip does not alone prove a global count transition. Owner-requested review transfer as science work, not a PR snapshot or adoption. Fetch current main, verify the pinned source objects, and read the actual axiom memo and registered primitive grants. Check related tasks, active claims, completed attempts and referee reports before selecting ONE distinct obligation. Deliver numbered PROVED/CHECKED/ASSUMED steps in probes/work/derive/<problem>/<worker>/ATTEMPT.md, a self-contained disjoint check.py and RECOVERY_STATUS.json listing hashes, the first unresolved step and remaining work. Known review corrections are background, not a new HIT. Commit the checker before run_probe.py; print SUMMARY and HIT only for a demonstrated new result or defect. Use claim.py and ordinary cross-model confirmation. Source recovery alone is not completion. Do not start workers, spawn agents, create PRs, change budgets or edit scientific/audit authority in this task.",
+ "stdout_sha256": "f470d6138a0ecbec7cc8ee322a1c915015523aebbcbbb5c6239692719909a42e",
+ "stdout_tail": "l in kappa\nPASS D3 interval (POINTWISE, kappa = 429/2000, 0.00075 below kappa_c): >= 2 distinct simple zeros (the line pair), signs [1, -1]; the float search from 300 random starts found no others (FLOAT, no claim)\nPASS D4 interval (recorded METHOD LIMIT, not a physics claim): the naive parametric Krawczyk test (kappa interval enters as an interval parameter, linear centre path) certifies all six nodes on kappa in [0.2300, 0.2300001] (radius 0.0001) but fails on [0.2300, 0.2301] for every radius tried; interval dependency wrapping of kappa limits cell width to ~1e-7, so a census of a kappa interval near kappa_c needs the source's moving-frame/Taylor treatment of kappa\nINFO runtime 9.1 s\nTOTAL: PASS=17 FAIL=0\nSUMMARY: At the anisotropic coupling (6/5, 4/5, 1) the exact E2 touching (cos 2 pi f1 = -17/33, cos 2 pi f3 = -1/3, kappa = 3 sqrt(11)/10) is rigorously enclosed in, and is the unique zero of, the source's 1e-9 Krawczyk box (also certified for boxes up to 1e-4); E3-E5 boxes re-derived but exact coordinates not enclosed; no kappa-interval census near kappa_c was obtained (only pointwise captures at kappa = 27/125 and 429/2000 and a recorded method limit).\nHIT: exact point-to-box binding for plane event E2 at J=(6/5,4/5,1): the exact zero (a,b,kappa) lies inside the 1e-9 Krawczyk box and in boxes up to 1e-4 (all Krawczyk-certified unique), closing the source note's open floating-proximity gap for E2 only (scope: E2; E3-E5 coordinates unenclosed; no kappa census extension).\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-kadb2",
+  "at_utc": "20261026T003840Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Scoped: exact point-to-box binding for E2 only; E3-E5 and the kappa census remain open. Same-family, unrefereed.",
+  "by": "w-jonathonsmac4f50-kadb2",
+  "at_utc": "20261026T003840Z"
+ }
+}

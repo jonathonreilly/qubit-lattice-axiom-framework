@@ -192,11 +192,13 @@ def test_lv_coefficient():
           abs(c4_bos_num - c4_bos_exact) / abs(c4_bos_exact) < 0.01,
           f"c₄_numerical = {c4_bos_num:.6f}, c₄_exact = {c4_bos_exact:.6f}")
 
-    # Both are dimension-6 (proportional to a² p⁴ / E²)
-    info("No additional mathematical check: operator classification/physical bridge is outside this runner.")
+    # Both displayed corrections are a² p⁴ terms (dimension-six type in power counting)
+    info("Dimension-six-type label for the displayed a²p⁴ terms is power counting only; "
+         "no operator classification is checked.")
 
-    # No dimension-5: P symmetry forbids odd powers of p
-    info("No additional mathematical check: operator classification/physical bridge is outside this runner.")
+    # These symbols are even in each p_i (checked in Part 6c)
+    info("No odd-power term appears in these symbols; a physical dimension-five exclusion "
+         "is not checked.")
 
     return True
 
@@ -243,10 +245,12 @@ def test_cubic_harmonic():
           abs(sum_n4(theta_111, phi_111) - 1.0 / 3) < 1e-12,
           f"Σn_i⁴ = {sum_n4(theta_111, phi_111):.6f}")
 
-    # Anisotropy factor: axis/diagonal = 1/(1/3) = 3
+    # Anisotropy factor: axis/diagonal ratio of the evaluated angular factor
+    ratio_axis_diag = sum_n4(np.pi / 2, 0) / sum_n4(theta_111, phi_111)
     check("Anisotropy factor: [100]/[111] = 3 (factor-of-3 cubic signature)",
-          abs(1.0 / (1.0 / 3) - 3.0) < 1e-12,
-          "geometric axis/diagonal ratio, not a unique microscopic identifier")
+          abs(ratio_axis_diag - 3.0) < 1e-12,
+          f"Σn_i⁴[100]/Σn_i⁴[111] = {ratio_axis_diag:.12f}; geometric ratio, "
+          "not a unique microscopic identifier")
 
     # Verify decomposition: Σ n_i⁴ = 3/5 + (4√π/15) K₄ (normalized Y_lm)
     # Isotropic part: average of Σ n_i⁴ over the sphere = 3/5
@@ -369,7 +373,7 @@ def test_cubic_harmonic():
 
 
 # =============================================================================
-# Part 4: CPT protection
+# Part 4: Operator-classification boundary (no CPT/SME exclusion is checked)
 # =============================================================================
 
 def test_cpt_protection():
@@ -460,13 +464,12 @@ def test_finite_lattice():
     eigs = np.linalg.eigvalsh(iH.astype(complex))
     eigs_sorted = np.sort(eigs)
 
-    # The spectrum should come in ± pairs
-    n_pos = np.sum(eigs_sorted > 1e-10)
-    n_neg = np.sum(eigs_sorted < -1e-10)
-    n_zero = np.sum(np.abs(eigs_sorted) < 1e-10)
-    check(f"L={L}: spectrum has ± pairing",
-          abs(n_pos - n_neg) <= n_zero,
-          f"n+ = {n_pos}, n- = {n_neg}, n₀ = {n_zero}")
+    # The spectrum is symmetric under E -> -E (C H C = -H)
+    n_zero = int(np.sum(np.abs(eigs_sorted) < 1e-10))
+    pm_err = float(np.max(np.abs(eigs_sorted + eigs_sorted[::-1])))
+    check(f"L={L}: spectrum is symmetric under E -> -E",
+          pm_err < 1e-10,
+          f"max |E_k + E_(N-1-k)| = {pm_err:.2e}, zero modes = {n_zero}")
 
     # Positive eigenvalues give the dispersion E(p)
     pos_eigs = np.sort(eigs_sorted[eigs_sorted > 1e-10])
@@ -486,27 +489,23 @@ def test_finite_lattice():
 
     analytical_sorted = np.sort(analytical_eigs)
 
-    # The taste structure means we get 8 copies (from the 2³ taste doubling)
-    # But on the single-component lattice, the eigenvalue count is L³
-    # Let's just check the distinct eigenvalue levels match
-    unique_ana = np.unique(np.round(analytical_sorted, 8))
-    unique_num = np.unique(np.round(pos_eigs, 8))
-
-    # The numerical eigenvalues should be a subset of the analytical ones
-    # (modulo taste multiplicity counting)
     check(f"L={L}: lowest eigenvalue matches analytical dispersion",
           abs(pos_eigs[0] - analytical_sorted[0]) < 0.01,
           f"E_min_num = {pos_eigs[0]:.6f}, E_min_ana = {analytical_sorted[0]:.6f}")
 
-    # Check isotropy: eigenvalues for p along [1,0,0] vs [0,1,0] vs [0,0,1]
-    # should be identical by cubic symmetry
-    p_100 = np.sqrt(np.sin(2 * np.pi / L) ** 2)
-    p_010 = np.sqrt(np.sin(2 * np.pi / L) ** 2)
-    p_001 = np.sqrt(np.sin(2 * np.pi / L) ** 2)
-
-    check(f"L={L}: E([1,0,0]) = E([0,1,0]) = E([0,0,1]) (cubic symmetry)",
-          abs(p_100 - p_010) < 1e-14 and abs(p_010 - p_001) < 1e-14,
-          f"all = {p_100:.10f} (exact by O_h)")
+    # Exact multiset comparison (zero modes included): the L³ absolute
+    # eigenvalues of iD equal sqrt(Σ_i sin² p_i) over all L³ momenta
+    # p_i = 2πn_i/L.  Each reduced-zone level occurs 8 times in the full zone
+    # and 4 + 4 times (both signs) in the finite spectrum.
+    analytical_all = np.sort(np.array([
+        np.sqrt(np.sin(2 * np.pi * nx / L) ** 2 + np.sin(2 * np.pi * ny / L) ** 2
+                + np.sin(2 * np.pi * nz / L) ** 2)
+        for nx in range(L) for ny in range(L) for nz in range(L)]))
+    abs_num = np.sort(np.abs(eigs_sorted))
+    mult_err = float(np.max(np.abs(abs_num - analytical_all)))
+    check(f"L={L}: sorted |eigenvalues| of iD equal sqrt(Σ_i sin² p_i) over all L³ momenta",
+          mult_err < 1e-10,
+          f"max multiset deviation = {mult_err:.2e}")
 
     return True
 
@@ -515,16 +514,11 @@ def test_finite_lattice():
 # Part 6b: Direct CPT and parity verification on the runner's own H
 # =============================================================================
 #
-# Bridge derivations (audit boundary 2026-04-28).
-#
-# The audit verdict identified three load-bearing bridge inputs imported from
-# unregistered upstreams: exact CPT, exact/tree-level parity protection
-# against odd-dimension LV, and the hierarchy-scale identification
-# a ~ 1/M_Planck.  Parts 6b and 6c construct the CPT and parity bridges
-# directly on the same staggered Hamiltonian H built in Part 6, so the
-# runner verifies these symmetries rather than asserting them.  The
-# Planck-pin bridge is a citation to a separate upstream package lane,
-# documented in Part 5 and the source-note "Bridge derivations" section.
+# Parts 6b and 6c check finite antiunitary matrix identities on the
+# Hermitian lift H = iD of the hopping D built in Part 6, and the evenness of
+# the scalar symbol.  They do not identify physical CPT or establish parity
+# protection of an operator basis.  The Planck pin is read as context only
+# (Part 6d).
 # =============================================================================
 
 def build_charge_conjugation(L):
@@ -570,6 +564,7 @@ def build_spatial_parity(L):
 
 def test_cpt_bridge_on_runner_H():
     """Check finite antiunitary algebra, without a physical CPT identification."""
+    print("\n=== Part 6b: Finite antiunitary matrix algebra on H = iD ===\n")
     L=8
     D=build_staggered_hamiltonian_momentum(L)
     H=1j*D
@@ -641,10 +636,10 @@ def test_parity_protection_bridge():
 def report_planck_pin_bridge_context():
     """Planck-pin bridge context: report the upstream lane without promoting it.
 
-    This section is deliberately non-fatal for the runner. The retained
-    structural surface of this note is the staggered-dispersion, CPT-support,
-    parity-support, and cubic-harmonic calculation above. Any Planck-suppressed
-    physical estimate remains conditional on a separately audited unit-map lane.
+    This section is deliberately non-fatal for the runner. The structural
+    surface of this note is the free-symbol dispersion, finite antiunitary
+    matrix algebra, scalar-symbol evenness and cubic-harmonic calculation
+    above. Any Planck-scale physical estimate remains conditional.
 
     What this runner asserts as fatal checks: nothing in the structural
     dispersion proof depends on deriving a/l_P = 1 here.
@@ -668,7 +663,7 @@ def report_planck_pin_bridge_context():
          "context only; not promoted by this runner",
          "a/l_P" in bridge_text or "a / l_P" in bridge_text)
 
-    info("No additional mathematical check: operator classification/physical bridge is outside this runner.")
+    info("The structural checks above neither derive nor require a/l_P = 1.")
 
     print("\n  --- Bridge citation ---")
     print("  The Planck-pin bridge is non-load-bearing context in this note.")
@@ -677,7 +672,7 @@ def report_planck_pin_bridge_context():
 
 
 # =============================================================================
-# Part 7: Combined emergent Lorentz invariance statement
+# Part 7: Scope summary
 # =============================================================================
 
 def test_combined():
@@ -692,11 +687,12 @@ def test_combined():
 
 def main():
     print("=" * 72)
-    print("Emergent Lorentz Invariance from the Cubic Z³ Lattice")
+    print("Emergent Lorentz Invariance note: free cubic-lattice dispersion checks")
     print("=" * 72)
     print()
-    print("BOUNDED SUPPORT: if the bridge premises are supplied, Lorentz")
-    print("                 violation is suppressed as (E/M_Planck)^2.")
+    print("CONDITIONAL SCOPE: supplied free symbols only. Physical Lorentz/CPT/SME")
+    print("                   identification, operator selection and the unit map")
+    print("                   are separate premises; Planck-scale sizes are estimates.")
     print()
 
     test_dispersion_isotropy()

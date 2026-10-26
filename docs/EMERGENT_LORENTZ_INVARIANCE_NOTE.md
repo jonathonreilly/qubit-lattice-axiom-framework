@@ -1,17 +1,26 @@
-# Low-momentum dispersion of supplied free cubic symbols
+# Emergent Lorentz Invariance from the Cubic Z³ Lattice (Conditional)
 
-**Date:** 2026-04-15; source scope corrected 2026-10-21
+**Date:** 2026-04-15; source scope corrected 2026-10-21; consumer map added 2026-10-26
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only.
 **Primary runner:** [`frontier_emergent_lorentz_invariance.py`](../scripts/frontier_emergent_lorentz_invariance.py)
 
+**Scope of the stable title.** The filename and title are kept because live
+consumers pin them. "Conditional" here means: leading-order isotropy of two
+supplied free cubic-lattice dispersion symbols, with a quartic cubic
+anisotropy. This note does not establish physical Lorentz invariance. The
+[consumer map](#consumer-map) below states which earlier statements remain
+citable and which are withdrawn.
+
 ## Supplied mathematical model
 
-For a>0 and real three-momentum p, take the two free symbols
+For a>0 and real three-momentum p, take the two free symbols of the
+nearest-neighbour staggered fermion and graph Laplacian on the free cubic
+`Cl(3)/Z³` staggered lattice:
 
 ```text
-E_f^2(p) = a^-2 sum_i sin^2(a p_i),
-E_b^2(p) = 4 a^-2 sum_i sin^2(a p_i/2).
+E² = (1/a²) Σ_i sin²(p_i a)        (fermion symbol, E_f²)
+E² = (4/a²) Σ_i sin²(p_i a/2)      (Laplacian symbol, E_b²)
 ```
 
 These are supplied kinetic choices, not consequences of cubic adjacency alone. The [current axioms](MINIMAL_AXIOMS_2026-06-29.md) do not select a Hamiltonian or a physical fermion/boson branch. This note proves their local expansion and angular structure, not physical Lorentz invariance of an interacting theory.
@@ -25,7 +34,9 @@ E_f^2 = |p|^2 - (a^2/3) sum_i p_i^4 + O(a^4 |p|^6),
 E_b^2 = |p|^2 - (a^2/12) sum_i p_i^4 + O(a^4 |p|^6).
 ```
 
-The quadratic term is rotationally isotropic; the quartic term is cubic invariant but anisotropic. All coordinate sign flips leave each displayed symbol invariant, so these particular expansions contain no odd powers of an individual momentum component. This does not exclude every parity-even dimension-five operator or establish a physical EFT coefficient basis.
+Both symbols are therefore isotropic at leading order: the quadratic term is rotationally isotropic. The first anisotropic term is the quartic `O(a²p⁴)` correction, which is cubic invariant but not rotation invariant. In conventional power counting this displayed term is of dimension-six type, carrying two more powers of the lattice spacing than the quadratic term. That label describes these displayed symbols only. It does not show that a physical theory has no lower-dimension Lorentz-violating operator.
+
+All coordinate sign flips leave each displayed symbol invariant, so these particular expansions contain no odd powers of an individual momentum component. This does not exclude every parity-even dimension-five operator or establish a physical EFT coefficient basis.
 
 For a unit vector n, `1/3 <= sum_i n_i^4 <= 1`, with the lower bound at equal squared components and the upper bound on an axis. The axis/diagonal ratio of the quartic angular factor is three. The spherical average is 3/5 since each component's fourth moment is 1/5.
 
@@ -42,11 +53,13 @@ sum_i n_i^4 = 3/5 + (4 sqrt(pi)/15) K4,
 K4 = Y_40 + sqrt(5/14)(Y_44+Y_4,-4).
 ```
 
-At the north pole K4=3/(2 sqrt(pi)), fixing the displayed coefficient from `1-3/5=2/5`. This pattern is compatible with cubic symmetry. It cannot uniquely identify a microscopic lattice: a continuum model can supply the same quartic symbol.
+At the north pole K4=3/(2 sqrt(pi)), fixing the displayed coefficient from `1-3/5=2/5`. The quartic correction therefore has an `l = 4` cubic-harmonic angular signature. This pattern is compatible with cubic symmetry. It cannot uniquely identify a microscopic lattice: a continuum model can supply the same quartic symbol.
 
 ## Finite hopping example and antiunitary boundary
 
-The runner also constructs the real anti-Hermitian staggered hopping D on an even periodic L=8 cube and diagonalizes the Hermitian lift H=iD. The [exact antiunitary source](CPT_EXACT_NOTE.md) supplies the general even-L algebra: sublattice sign C and inversion P each flip H; bare conjugation K flips H; PK preserves H while CPK flips H. The runner checks the Hermitian-lift distinction and includes the nonzero CPK sign-flip control.
+The runner also constructs the real anti-Hermitian staggered hopping D on an even periodic L=8 cube and diagonalizes the Hermitian lift H=iD. The sorted absolute eigenvalues of H coincide with the multiset `sqrt(sum_i sin^2 p_i)` over all `L^3` lattice momenta `p_i = 2 pi n_i / L`, so this finite spectrum is exactly the displayed fermion symbol at a=1.
+
+The [exact antiunitary source](CPT_EXACT_NOTE.md) supplies the general even-L algebra: sublattice sign C and inversion P each flip H; bare conjugation K flips H; PK preserves H while CPK flips H. The runner checks the Hermitian-lift distinction and includes the nonzero CPK sign-flip control.
 
 These are matrix identities. Neither the named matrices nor an invariant odd projection identify physical CPT, time reversal, charge conjugation or SME coefficients. The [Hermitian/SME bridge boundary](PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md) remains separate. The [parity operator source](PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE_2026-05-02.md) cannot be replaced by assigning minus-one parity weights to an unexamined list of bilinears; this runner now makes only the displayed scalar-symbol evenness claim.
 
@@ -60,7 +73,27 @@ average |delta E^2|/E^2 approximately (a^2/3)(3/5)|p|^2 = E^2/(5M^2).
 
 The factor 1/5 is an angular average, not the all-direction coefficient; the leading direction factor ranges from 1/9 to 1/3. Using the runner's supplied M=1.220890e19 GeV gives approximately 1.34e-39, 1.34e-33 and 1.34e-17 at E=1,1000,1e11 GeV respectively. The correction to E itself is half the leading relative E-squared correction. No observational uncertainty or accuracy is inferred from these numbers.
 
-The registered [scale-reference primitive](SCALE_REFERENCE_PRIMITIVE_NOTE.md) supplies the Planck units reference, not a kinetic symbol, physical readout or a derived a/l_P=1 self-consistency theorem. It is an approved premise, not a source of bounded status. Experimental comparison requires a matched operator, helicity, species, units and observable map. No safety margin, birefringence bound or universal absence of dimension-three/four/five SME terms is established here. A full Lorentz symmetry statement requires more than this scalar dispersion.
+The registered [scale-reference primitive](SCALE_REFERENCE_PRIMITIVE_NOTE.md) supplies the Planck units reference, not a kinetic symbol, physical readout or a derived a/l_P=1 self-consistency theorem. It is an approved premise, not a source of bounded status. The package pin recorded in `PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md` and the unit-map bridge in `PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md` are read by the runner as context only: cite-only, not promoted; graph edge deferred to avoid the known Planck/Lorentz back-edge.
+
+Experimental comparison requires a matched operator, helicity, species, units and observable map. No safety margin, birefringence bound or universal absence of dimension-three/four/five SME terms is established here. A full Lorentz symmetry statement requires more than this scalar dispersion.
+
+## Consumer map
+
+Consumers may cite this note for:
+
+- the two displayed free symbols and their expansions, with quartic coefficients `-1/3` (fermion) and `-1/12` (Laplacian);
+- leading-order isotropy of these symbols and their first anisotropic correction at `O(a²p⁴)`, a dimension-six-type term in conventional power counting;
+- the `l = 4` angular identity `sum_i n_i^4 = 3/5 + (4 sqrt(pi)/15) K4`, the axis/diagonal factor 3 and the spherical average 3/5;
+- the finite Hermitian-lift spectrum and antiunitary matrix identities above;
+- the conditional angular-average size estimate.
+
+The following earlier statements are withdrawn and must not be cited from this note:
+
+- that exact CPT and parity remove every dimension-three, -four and -five Lorentz-violating operator, or that the leading Lorentz violation of a physical theory is dimension six;
+- `[CPT, H] = 0` with bare complex conjugation as time reversal for the Hermitian lift `H=iD` (the preserved antiunitary is `PK`; `CPK` flips `H`), and any prediction that CPT-odd coefficients vanish exactly;
+- that the `l = 4` pattern uniquely identifies cubic-lattice substructure;
+- the phenomenological table of experimental bounds and safety margins;
+- emergent Lorentz invariance "to all observable precision", or any physical Lorentz-invariance conclusion.
 
 ## Execution and recovery
 
@@ -68,6 +101,6 @@ The registered [scale-reference primitive](SCALE_REFERENCE_PRIMITIVE_NOTE.md) su
 python3 scripts/frontier_emergent_lorentz_invariance.py
 ```
 
-The runner checks numerical expansions, spherical harmonics, finite hopping spectra, antiunitary matrix algebra and scalar parity. Its Planck notes are contextual file reads only. Numeric checks and finite grids do not select the model. Literal-True certification lines and assigned parity-weight checks have been removed rather than counted as mathematical evidence; no numerical tolerance was relaxed.
+The runner checks numerical expansions, spherical harmonics, the exact finite hopping spectrum, antiunitary matrix algebra and scalar parity. Its Planck notes are contextual file reads only. Numeric checks and finite grids do not select the model. Literal-True certification lines, tautological finite-lattice comparisons and assigned parity-weight checks have been removed rather than counted as mathematical evidence; no numerical tolerance was relaxed.
 
-The original narrative and dated audit discussion remain recoverable at commit `f24d17d97d372df977476e4a69674577f31af575`. This source correction changes no audit verdict. The stable filename remains for existing consumers, with the physical interpretation now explicitly conditional.
+The original narrative and dated audit discussion remain recoverable at commit `f24d17d97d372df977476e4a69674577f31af575`. This source correction changes no audit verdict.

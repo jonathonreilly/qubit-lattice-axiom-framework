@@ -1,18 +1,19 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_emergent_lorentz_invariance.py
-runner_sha256: 56288145915d4c69124d86ceda146404498c2459462ee83b574f95fb1d040d79
+runner_sha256: f6f9d48c52b5acb09277537415d0afa9478ae7dd33c8fe971a627942f54c65db
 input_fingerprint_sha256: 8763b471ac339a08981076ce25c271247c42257394839f0d4ce96b0fb3c82a7c
-timeout_sec: 300
+timeout_sec: 600
 exit_code: 0
-elapsed_sec: 2.36
+elapsed_sec: 6.75
 status: ok
 ----- stdout -----
 ========================================================================
-Emergent Lorentz Invariance from the Cubic Z³ Lattice
+Emergent Lorentz Invariance note: free cubic-lattice dispersion checks
 ========================================================================
 
-BOUNDED SUPPORT: if the bridge premises are supplied, Lorentz
-                 violation is suppressed as (E/M_Planck)^2.
+CONDITIONAL SCOPE: supplied free symbols only. Physical Lorentz/CPT/SME
+                   identification, operator selection and the unit map
+                   are separate premises; Planck-scale sizes are estimates.
 
 
 === Part 1: Dispersion relation isotropy ===
@@ -36,21 +37,21 @@ BOUNDED SUPPORT: if the bridge premises are supplied, Lorentz
 
   [PASS] LV coefficient c₄ = −a²/3 (fermion dispersion)  (c₄_numerical = -0.333163, c₄_exact = -0.333333)
   [PASS] LV coefficient c₄ = −a²/12 (bosonic/Laplacian dispersion)  (c₄_numerical = -0.083323, c₄_exact = -0.083333)
-  [INFO] No additional mathematical check: operator classification/physical bridge is outside this runner.
-  [INFO] No additional mathematical check: operator classification/physical bridge is outside this runner.
+  [INFO] Dimension-six-type label for the displayed a²p⁴ terms is power counting only; no operator classification is checked.
+  [INFO] No odd-power term appears in these symbols; a physical dimension-five exclusion is not checked.
 
 === Part 3: Cubic harmonic angular structure ===
 
   [PASS] Σn_i⁴ along [1,0,0] = 1  (Σn_i⁴ = 1.000000)
   [PASS] Σn_i⁴ along [1,1,0] = 1/2  (Σn_i⁴ = 0.500000)
   [PASS] Σn_i⁴ along [1,1,1] = 1/3  (Σn_i⁴ = 0.333333)
-  [PASS] Anisotropy factor: [100]/[111] = 3 (factor-of-3 cubic signature)  (geometric axis/diagonal ratio, not a unique microscopic identifier)
+  [PASS] Anisotropy factor: [100]/[111] = 3 (factor-of-3 cubic signature)  (Σn_i⁴[100]/Σn_i⁴[111] = 3.000000000000; geometric ratio, not a unique microscopic identifier)
   [PASS] Spherical average ⟨Σn_i⁴⟩ = 3/5  (⟨Σn_i⁴⟩ = 0.5997 (expected 0.6000))
   [PASS] No ℓ=0 content in anisotropic part  (|⟨f₄|Y₀₀⟩| = 0.0011)
   [PASS] No ℓ=2 content in anisotropic part  (|⟨f₄|Y₂₀⟩| = 0.0024)
   [PASS] Nonzero ℓ=4 content in anisotropic part  (|⟨f₄|Y₄₀⟩| = 0.4769)
   [PASS] No ℓ=6 content in Σn_i⁴ anisotropic part  (|⟨f₄|Y₆₀⟩| = 0.0009)
-  [PASS] Exact identity Σn_i⁴ = 3/5 + (4√π/15)K₄ (normalized Y_lm)  (max|LHS-RHS| = 7.77e-16 over 50000 random directions (coef = 4√π/15 ≈ 0.472654))
+  [PASS] Exact identity Σn_i⁴ = 3/5 + (4√π/15)K₄ (normalized Y_lm)  (max|LHS-RHS| = 6.66e-16 over 50000 random directions (coef = 4√π/15 ≈ 0.472654))
   [PASS] Old coefficient 4/5 is refuted under normalized Y_lm  (max|LHS-RHS| = 2.77e-01 with the discarded 4/5 coefficient)
   [PASS] Sympy: trigsimp(Σn_i⁴ − [3/5 + (4√π/15)K₄]) = 0 identically  (symbolic residual = 0)
   [PASS] Sympy: ⟨f|K₄⟩/⟨K₄|K₄⟩ = 4√π/15 (exact projection)  (projected coefficient = 4*sqrt(pi)/15)
@@ -67,9 +68,12 @@ INFO: no matched experimental operator/sector/unit map; no safety margin inferre
 === Part 6: Finite-lattice dispersion verification ===
 
   [PASS] L=8: D (legacy local variable H) is antisymmetric  (max |H + Hᵀ| = 0.00e+00)
-  [PASS] L=8: spectrum has ± pairing  (n+ = 252, n- = 252, n₀ = 8)
+  [PASS] L=8: spectrum is symmetric under E -> -E  (max |E_k + E_(N-1-k)| = 1.68e-14, zero modes = 8)
   [PASS] L=8: lowest eigenvalue matches analytical dispersion  (E_min_num = 0.707107, E_min_ana = 0.707107)
-  [PASS] L=8: E([1,0,0]) = E([0,1,0]) = E([0,0,1]) (cubic symmetry)  (all = 0.7071067812 (exact by O_h))
+  [PASS] L=8: sorted |eigenvalues| of iD equal sqrt(Σ_i sin² p_i) over all L³ momenta  (max multiset deviation = 2.23e-14)
+
+=== Part 6b: Finite antiunitary matrix algebra on H = iD ===
+
   [PASS] D real antisymmetric
   [PASS] H=iD Hermitian
   [PASS] C squared identity
@@ -92,7 +96,7 @@ INFO: no matched experimental operator/sector/unit map; no safety margin inferre
   [INFO-YES] Planck package note present  (PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md)
   [INFO-YES] Planck package surface mentions a^{-1} and M_Pl  (context only; not a structural premise of this runner)
   [INFO-NO] Separate unit-map bridge mentions a/l_P  (context only; not promoted by this runner)
-  [INFO] No additional mathematical check: operator classification/physical bridge is outside this runner.
+  [INFO] The structural checks above neither derive nor require a/l_P = 1.
 
   --- Bridge citation ---
   The Planck-pin bridge is non-load-bearing context in this note.

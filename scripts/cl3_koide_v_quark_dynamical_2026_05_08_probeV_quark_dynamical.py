@@ -62,9 +62,9 @@ Numerical predictions per ingredient combination (verified):
       bridge the 45x gap.
 
 (B) Species-privileged top-only Ward BC + 1L SM Yukawa RGE:
-    - m_t reproduces YT_ZERO_IMPORT chain at -1.84% (RETAINED, but for
-      m_t only — y_b(v), y_c(v) held at observed values as INFRASTRUCTURE
-      inputs). This chain DOES NOT derive m_b, m_c absolute scales.
+    - y_t(v) v/sqrt(2) reproduces the YT_ZERO_IMPORT running readout
+      (169.5 GeV, not pole-matched; y_b(v), y_c(v) held at observed values
+      as INFRASTRUCTURE inputs). This chain DOES NOT derive m_b, m_c absolute scales.
 
 (C) Chiral SSB structural decomposition for heavy vs. light quarks:
     - Light (u,d,s): m_q^current ~ few MeV; chiral ~330 MeV; dominant.
@@ -94,7 +94,7 @@ What this CHANGES (positively):
 What this DOES NOT close:
   - The Koide circulant Fourier-basis spectrum candidate mechanism
     (Koide equipartition + Brannen sqrt(m) admissions) for species-differentiation.
-  - The species-privileged retained m_t = 169.5 GeV chain
+  - The species-privileged top running-readout chain (169.5 GeV, not pole-matched)
     (YT_ZERO_IMPORT_CHAIN_NOTE) which uses y_b, y_c at observed values
     as infrastructure inputs and is unaffected by this probe.
 
@@ -110,8 +110,8 @@ References
   (PR #956) -- 2L+ beta-function imports identified.
 - YT_BOTTOM_YUKAWA_RETENTION_ANALYSIS_NOTE_2026-04-18: species-uniform
   Ward BC for y_b gives m_b ~ 140 GeV, falsified by 33x.
-- YT_ZERO_IMPORT_CHAIN_NOTE: m_t = 169.5 GeV (-1.84%) via species-
-  privileged Ward BC, RETAINED.
+- YT_ZERO_IMPORT_CHAIN_NOTE: running readout y_t(v) v/sqrt(2) = 169.5 GeV via
+  species-privileged Ward BC; not pole-matched.
 - HADRON_LANE1_CHIRAL_CONDENSATE_BANKS_CASHER_SCOPING_SUPPORT_NOTE_
   2026-04-27: chiral condensate Sigma not retained on current surface.
 - DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE: m_s/m_b retained ratio +0.2%
@@ -415,28 +415,27 @@ def section3_species_uniform_forecast(c: Counter) -> None:
 # ----------------------------------------------------------------------
 
 def section4_species_privileged_top(c: Counter) -> None:
-    """Cross-check: the retained YT_ZERO_IMPORT chain delivers m_t at -1.84%.
+    """Record the YT_ZERO_IMPORT running readout y_t(v) v/sqrt(2).
 
     This chain treats y_b(v), y_c(v) as INFRASTRUCTURE inputs (held at
-    observed small values) while running y_t alone. It is RETAINED for
-    m_t but does NOT derive m_b, m_c absolute scales.
+    observed small values) while running y_t alone. The readout is not
+    pole-matched, and the chain does NOT derive m_b, m_c absolute scales.
     """
     print()
-    print("Section 4 — Species-privileged top-only chain (retained reference)")
-    # The retained ZERO_IMPORT result: m_t = 169.51 GeV at y_t(v) = 0.9734
+    print("Section 4 — Species-privileged top-only chain (running-readout reference)")
+    # The ZERO_IMPORT running readout: y_t(v) v/sqrt(2) = 169.51 GeV at y_t(v) = 0.9734
     # Reproduce on this surface:
     yt_v_target = 0.9734
-    m_t_predicted = yt_v_target * V_EW / math.sqrt(2)
-    err_mt = (m_t_predicted - PDG["t"]) / PDG["t"]
+    m_run_v = yt_v_target * V_EW / math.sqrt(2)
     print(f"    YT_ZERO_IMPORT: y_t(v) = {yt_v_target}")
     print(
-        f"    m_t = y_t(v) * v/sqrt(2) = {m_t_predicted:.2f} GeV "
-        f"(PDG {PDG['t']:.2f}, dev {err_mt*100:+.2f}%)"
+        f"    y_t(v) * v/sqrt(2) = {m_run_v:.2f} GeV "
+        "(running readout; no comparison with the PDG pole mass)"
     )
-    c.record(
-        "Retained m_t reproduces PDG within 5%",
-        abs(err_mt) < 0.05,
-        f"|dev| = {abs(err_mt)*100:.2f}% < 5%",
+    c.admit(
+        "Top running readout is not pole-matched",
+        "mass-scheme and scale matching are absent, so no PDG pole-mass "
+        "agreement is asserted",
     )
     # But this chain DOES NOT predict m_b, m_c absolute scales
     c.admit(

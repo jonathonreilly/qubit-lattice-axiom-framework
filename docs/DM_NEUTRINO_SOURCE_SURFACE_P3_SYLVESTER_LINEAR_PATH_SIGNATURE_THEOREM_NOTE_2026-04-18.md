@@ -364,11 +364,11 @@ Expected output ends with `PASS=11 FAIL=0`. The runner:
 - Affine chart (source of `T_m, T_δ, T_q`, `H_base`, `γ`, `E₁`, `E₂`): `DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_AFFINE_POINT_SELECTION_BOUNDARY_NOTE_2026-04-16.md`
 - Microscopic selector reduction: `DM_LEPTOGENESIS_PMNS_MICROSCOPIC_SELECTOR_REDUCTION_THEOREM_NOTE_2026-04-17.md`
 - Chamber: `DM_NEUTRINO_SOURCE_SURFACE_Z3_DOUBLET_BLOCK_POINT_SELECTION_THEOREM_NOTE_2026-04-16.md`
-- Case 3 impossibility (for context, not used in proof): `DM_NEUTRINO_SOURCE_SURFACE_MICROSCOPIC_POLYNOMIAL_IMPOSSIBILITY_THEOREM_NOTE_2026-04-17.md`
+- Case 3 source-only reflection (for context, not used in proof; its former impossibility claim is withdrawn): `DM_NEUTRINO_SOURCE_SURFACE_MICROSCOPIC_POLYNOMIAL_IMPOSSIBILITY_THEOREM_NOTE_2026-04-17.md`
 - **Dedicated verifier for this theorem:** `scripts/frontier_dm_neutrino_source_surface_p3_sylvester_linear_path_signature_theorem_2026_04_18.py`
 - Other relevant runners (not part of this proof):
   - `scripts/frontier_dm_neutrino_source_surface_z3_parity_split_theorem.py` (symbolic gradient of det(H))
-  - `scripts/frontier_dm_neutrino_source_surface_microscopic_polynomial_impossibility_theorem.py` (numerical det(H) probes)
+  - `scripts/frontier_dm_neutrino_source_surface_microscopic_polynomial_impossibility_theorem.py` (exact source-only reflection and full-affine counterexample checks)
   - `scripts/frontier_pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem.py` (PMNS from H diagonalization)
 
 ## Audit dependency repair links

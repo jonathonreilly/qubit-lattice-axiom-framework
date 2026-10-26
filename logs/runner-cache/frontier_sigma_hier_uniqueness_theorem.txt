@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sigma_hier_uniqueness_theorem.py
-runner_sha256: fa68d56412f3e244bca4f2f49705a40bd4591285d9b4cd21da41197d0271f5e0
+runner_sha256: 730a270a7b7b77452721877d1c0335d139b738ad19b62de207f00b45c10ae495
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.39
 status: ok
 ----- stdout -----
 ================================================================================
@@ -51,8 +51,8 @@ Part 3: STEP 2 — CP-phase discriminator between (2,0,1) and (2,1,0)
   sigma=(2,0,1): sin(delta_CP) = +0.9874  (delta_CP = +80.88 deg)
   sigma=(2,1,0): sin(delta_CP) = -0.9874  (delta_CP = -80.88 deg)
   [PASS] sigma=(2,0,1) and sigma=(2,1,0) give equal-magnitude |U| rows (mu<->tau swap identity)
-  [PASS] sigma=(2,0,1) gives sin(delta_CP) = +0.9874 (positive, delta_CP ~ +81 deg)  (sin(dCP) = +0.9874)
-  [PASS] sigma=(2,1,0) gives sin(delta_CP) = -0.9874 (negative, delta_CP ~ -81 deg)  (sin(dCP) = -0.9874)
+  [PASS] sigma=(2,0,1) gives sin(delta_CP) = +0.9874 (positive sine)  (sin(dCP) = +0.9874)
+  [PASS] sigma=(2,1,0) gives sin(delta_CP) = -0.9874 (negative sine)  (sin(dCP) = -0.9874)
 
   The sin(delta_CP) < 0 comparator is a supplied input motivated by T2K 2021.
   It is not a joint T2K/NOvA preference or confidence-level combination.
@@ -80,7 +80,7 @@ Part 4: Selected sigma = (2, 1, 0) — full 9/9 NuFit detail
   [PASS] |U_tau3| in [0.610, 0.762]  (val = 0.6671)
 
   [PASS] sin(delta_CP) = -0.9874 ± 0.001 at the selected sigma  (sin(dCP) = -0.9874)
-  [PASS] delta_CP ~ -81 deg (passes the supplied negative-sign comparator)  (sin(dCP) = -0.9874)
+  [PASS] sin(delta_CP) < 0 (passes the supplied negative-sign comparator)  (sin(dCP) = -0.9874)
 
 ================================================================================
 Part 5: Non-magnitude-passing permutations — failure entries

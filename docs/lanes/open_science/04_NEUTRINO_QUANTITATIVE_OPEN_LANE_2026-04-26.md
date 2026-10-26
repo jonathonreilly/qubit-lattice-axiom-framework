@@ -73,7 +73,7 @@ is an open scientific dependency, while
 `docs/audit/data/premise_decision_history.json` preserves only historical
 provenance)
 — meaning the neutrino mass-spectrum questions live on a separate carrier than
-the charged-lepton Koide structure. The DM closed package gives δ_CP ≈ -81° and
+the charged-lepton Koide structure. The DM package gives the conditional fitted δ_CP ≈ 260.88° and
 θ_23 upper octant, but absolute mass scales and Δm² values are bounded
 companion at best.
 
@@ -85,7 +85,7 @@ open.
 
 ### Retained
 
-- δ_CP ≈ -81° (DM closed package, falsifiable at DUNE/Hyper-K)
+- δ_CP ≈ 260.88° (conditional fitted output of the DM package, falsifiable at DUNE/Hyper-K)
 - θ_23 ≥ 0.5410 upper octant (DM closed package, falsifiable)
 - Exact PMNS selector / current-stack zero law (neutrino retained boundary
   packet)
@@ -169,7 +169,7 @@ bounds).
 ### 4G. Cross-validation with retained δ_CP and θ_23
 
 **Target:** verify the now-retained mass spectrum is consistent with the
-already-retained δ_CP ≈ -81° and θ_23 upper octant predictions.
+conditional fitted δ_CP ≈ 260.88° and θ_23 upper octant outputs.
 
 **Approachability:** High. Internal consistency check.
 

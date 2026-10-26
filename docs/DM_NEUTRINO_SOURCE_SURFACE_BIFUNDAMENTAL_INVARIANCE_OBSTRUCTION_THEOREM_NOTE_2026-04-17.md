@@ -346,10 +346,10 @@ bifundamental invariance that this note proves unavailable.
  functional-selection ambiguity, and the bifundamental-gauge route
  is unavailable". The five-candidate ledger stays intact; F1 is not
  promoted.
-2. **Attention refocused to other retained structures.** The closure
- of the selector gate via sole-axiom must come from:
- (a) an info-geometric / entropy selector that solves the `(G-Var)`
- problem of the info-geometric selection obstruction, or
+2. **Attention refocused to other structures.** Candidate routes to
+ a selector-gate closure include, without exhausting the possibilities:
+ (a) an information-geometric / entropy selection rule addressing the
+ `(G-Var)` question left open by the information-geometric local-expansion note, or
  (b) a higher-structure retained invariant (trace of `H^n` for `n > 4`,
  Pfaffian-like, Cartan-Killing pulled back through a retained
  representation), or
@@ -453,7 +453,7 @@ Appropriate placement:
 
 - atlas obstruction row in
  `DERIVATION_ATLAS.md` under
- the DM neutrino source-surface family, sibling to the info-geometric / Z_3-cubic / parity-split obstructions, the
+ the DM neutrino source-surface family, beside the information-geometric local-expansion note, the Z_3-cubic / parity-split obstructions, the
  parity-mixing note, the observable-bank exhaustion theorem, and the quartic-isotropy+U(2) obstruction
 - **do NOT** use for any publication-grade positive quantitative claim
 - **do NOT** use to "support" the Schur-Q candidate — this note does

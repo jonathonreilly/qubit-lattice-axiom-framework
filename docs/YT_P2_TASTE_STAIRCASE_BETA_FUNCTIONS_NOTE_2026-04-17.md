@@ -552,8 +552,8 @@ not beta-functional.
 
 - That the prior taste-staircase note or v-matching note are
   incorrect. Both stand as PARTIAL closures of P2.
-- That the framework's `m_t = 169.5 GeV` prediction changes. It does
-  not.
+- That the framework's top running readout `y_t(v) v/√2 = 169.5 GeV`
+  (not pole-matched) changes. It does not.
 - That the master UV-to-IR transport obstruction theorem changes.
   It does not; this note contributes a NO-GO on one sub-path.
 - That alternative non-perturbative mechanisms (blocking RG, strong

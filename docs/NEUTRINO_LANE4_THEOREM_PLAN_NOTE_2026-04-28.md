@@ -82,7 +82,7 @@ substrate. Per the lane file, the **seven derivation targets** are:
 - **4D** Dirac vs Majorana global lift;
 - **4E** seesaw mass spectrum quantitative closure;
 - **4F** cosmological `Sigma m_nu` constraint;
-- **4G** cross-validation with retained `delta_CP ≈ -81°` and
+- **4G** cross-validation with the conditional fitted `delta_CP ≈ 260.88°` and
   `theta_23 ≥ 0.5410`.
 
 This plan organizes targets by **dependency on current retained
@@ -115,7 +115,7 @@ the structural roadmap.
 | Neutrino mass reduction to Dirac lane | `NEUTRINO_MASS_REDUCTION_TO_DIRAC_NOTE.md` | structural carrier identity |
 | Retained neutrino observable bounds | `NEUTRINO_RETAINED_OBSERVABLE_BOUNDS_THEOREM_NOTE_2026-04-24.md` | validation scaffolding |
 | Retained two-amplitude last-mile reduction | `NEUTRINO_TWO_AMPLITUDE_LAST_MILE_REDUCTION_NOTE.md` | reduces remaining open object |
-| `delta_CP ≈ -81°` (DM closed package; falsifiable) | DM closed package | 4G consistency comparator |
+| `delta_CP ≈ 260.88°` (conditional fitted output; falsifiable) | DM closed package | 4G consistency comparator |
 | `theta_23 ≥ 0.5410` upper octant | DM closed package | 4G consistency comparator |
 | `N_eff = 3.046` from three generations | `N_EFF_FROM_THREE_GENERATIONS_THEOREM_NOTE_2026-04-24.md` | 4F cosmology bridge |
 | Hubble-h0 loop's matter-bridge identity + structural lock theorems | `OMEGA_LAMBDA_MATTER_BRIDGE_THEOREM_NOTE_2026-04-22.md`, `HUBBLE_TENSION_STRUCTURAL_LOCK_THEOREM_NOTE_2026-04-26.md` | 4F upstream cosmology |
@@ -213,7 +213,7 @@ arithmetic. Cross-checks against:
 
 ### 2.6 Target 4G — Cross-validation with retained δ_CP and θ_23
 
-The DM closed package retains `delta_CP ≈ -81°` and
+The DM package reports the conditional fitted `delta_CP ≈ 260.88°` and
 `theta_23 ≥ 0.5410` as falsifiable predictions. With the mass spectrum
 landed (4A-4E), check:
 - the predicted PMNS matrix structure with the retained zero law;

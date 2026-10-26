@@ -168,9 +168,10 @@ observational target.
 
 ## Narrower-gap statement
 
-**Before this note:** selector was known to be open by the obstruction
-theorems (info-geom, cubic variational, holonomy,
-parity-mixing functional-selection ambiguity) and by the Physics-
+**Before this note:** selector was known to be open by the cubic
+variational and holonomy obstruction theorems, the information-geometric
+local calculation (no global obstruction) and the displayed parity-mixing
+functional-selection ambiguity and by the Physics-
 Validation chamber-constancy of `eta/eta_obs`. The remaining open object
 was described as "a selector that couples to a bank-unblinded observable
 on the chamber", without further stratification.
@@ -190,7 +191,7 @@ exactly three explicit promotion lanes:
  varying `H`-reader invariant as the physical selector objective, and
  whose chamber minimum (or critical point) is the physical
  `(delta_*, q_+*)`. This is the (G-Var) / functional-selection
- ambiguity track already flagged in the info-geometric selection obstruction and the parity-mixing selection obstruction.
+ ambiguity track left open by the information-geometric local-expansion note and the parity-mixing candidate note.
 
 - **(P3) Atlas extension of neutrino phenomenology.** Promote PMNS
  angles `θ_12, θ_13, θ_23` and/or the solar gap
@@ -279,8 +280,8 @@ object:
 - atlas obstruction row in
  `DERIVATION_ATLAS.md`
  under the DM neutrino source-surface family, sibling to the
- info-geometric / cubic-variational / parity-split obstructions, the
- parity-mixing F1 candidate, and the transport chamber-blindness
+ information-geometric local-expansion note, the cubic-variational /
+ parity-split obstructions, the parity-mixing F1 candidate, and the transport chamber-blindness
  theorem.
 - This note does not close the DM flagship lane on its own. It names
  the three promotion lanes (P1, P2, P3) that can close it. The

@@ -79,9 +79,13 @@ but reverses the sign of the Jarlskog invariant J, hence reversing
 sin(δ_CP):
 
 ```
-σ = (2,0,1):  sin(δ_CP) = +0.9874   (δ_CP ≈ +81°)
-σ = (2,1,0):  sin(δ_CP) = −0.9874   (δ_CP ≈ −81°)
+σ = (2,0,1):  sin(δ_CP) = +0.9874   (atan2: δ_CP ≈ 80.88°)
+σ = (2,1,0):  sin(δ_CP) = −0.9874   (atan2: δ_CP ≈ 260.88°)
 ```
+
+The angles use the cosine from the PDG modulus identity; the sine alone
+leaves the `δ -> π - δ` ambiguity, and the former `−81°` for
+`σ = (2,1,0)` was that inverse-sine value.
 
 Applying the supplied `sin(δ_CP) < 0` comparator therefore removes
 `σ = (2,0,1)` and retains `σ = (2,1,0)`. This is a filter operation on an

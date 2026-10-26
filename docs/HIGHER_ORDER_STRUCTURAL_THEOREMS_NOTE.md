@@ -372,7 +372,8 @@ Let
 **Repo status:** bounded. The map
 `(w_{O_0}, w_a, w_b) ↦ diag(m_e, m_μ, m_τ)` is 3→3 and uses an explicit
 observational pin, so it produces no spare observable analogous to the
-neutrino 3→4 map (which produces `δ_CP ≈ −81°` as a retained forecast).
+neutrino 3→4 map (which produces `δ_CP ≈ 260.88°` as an output conditional on
+the fitted angles and hierarchy pairing).
 
 Four structural consequences of the shape theorem are testable but
 SM-consistent:

@@ -89,8 +89,9 @@ All retained at the time of writing:
  three-generation observable).
 - The chamber `q_+ >= sqrt(8/3) − δ` from the retained half-plane theorem
  [DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_HALF_PLANE_THEOREM_NOTE_2026-04-16.md](./DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_HALF_PLANE_THEOREM_NOTE_2026-04-16.md).
-- The Schur-Q candidate point `δ = q_+ = sqrt(6)/3` as a retained landmark
- from the information-geometric obstruction tour.
+- The Schur-Q candidate point `δ = q_+ = sqrt(6)/3`, the common boundary
+ minimizer of the four displayed local quadratic expansions in the
+ information-geometric note (a conditional landmark, not a selector).
 
 No new axiom or post-axiom selector is introduced. The prediction is
 purely a sharpened consequence of the retained PMNS-as-f(H) map plus the
@@ -163,10 +164,10 @@ The Schur-Q candidate
 ```
 (δ_S, q_+S) = (sqrt(6)/3, sqrt(6)/3)
 ```
-arose in the information-geometric obstruction tour as a
-retained symmetric variational landmark: it is the unique chamber point where
-the `C^1` shared quadratic minimum of all natural info-geometric functionals
-lives (Quadratic Unanimity Theorem, Candidate A). The Schur-Q
+arose in the information-geometric note as a symmetric variational
+landmark: it is the common boundary minimizer of the four displayed local
+quadratic expansions. No claim about all information functionals or about
+global minima is made there. The Schur-Q
 point has the numerical property
 ```
 δ_S + q_+S = 2 sqrt(6)/3 = sqrt(8/3)
@@ -196,7 +197,7 @@ This is a **structural coincidence** with two independent interpretations:
  locus where the inverse degenerates.
 
 Both interpretations point to the same locus `q_+ + δ = sqrt(8/3)`. This
-is analytically significant: the retained variational route (the info-geom / cubic-variational / parity-mixing obstructions) and
+is analytically significant: the variational route (the information-geometric local calculation and the cubic-variational / parity-mixing notes) and
 the retained observational route meet on a common boundary
 structure. Whether this is a deep algebraic coincidence or a superficial
 Numerik accident is not settled by this note. We record it as a structural

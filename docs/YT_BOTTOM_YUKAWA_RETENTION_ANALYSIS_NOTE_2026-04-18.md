@@ -29,9 +29,9 @@ the electroweak scale through 2-loop SM RGE produces `m_b(m_b) ≈ 145 GeV`
 (35× overshoot of observed 4.18 GeV) and simultaneously `m_t ≈ 102 GeV`
 (0.59× undershoot of observed 172.69 GeV). **This is a falsification of
 the species-uniform interpretation of the retained Ward identity, not a
-falsification of the framework's m_t prediction.** The framework's
-quantitative m_t prediction chain (per
-`docs/YT_ZERO_IMPORT_CHAIN_NOTE.md`, m_t ≈ 169.5 GeV, -1.84% deviation)
+falsification of the framework's top running readout.** The framework's
+top-Yukawa chain (per
+`docs/YT_ZERO_IMPORT_CHAIN_NOTE.md`, running readout y_t(v)·v/√2 ≈ 169.5 GeV, not pole-matched)
 uses a **species-privileged BC** — y_t at the lattice Ward value while y_b
 is held at its observed small value — NOT the species-uniform chain
 studied here. The species-uniform scope analysis therefore closes
@@ -110,7 +110,8 @@ boundary condition**:
 - y_b(v) ≈ 0.016 (held at its observed small value as an infrastructure
   input for the v → M_Z running cross-check);
 - Backward scan gives y_t(v) ≈ 0.9734;
-- m_t = y_t(v) · v/√2 ≈ 169.5 GeV (-1.84% deviation from 172.69 GeV).
+- y_t(v) · v/√2 ≈ 169.5 GeV, a running readout with no mass-scheme matching
+  (the former -1.84% comparison with the 172.69 GeV pole mass is superseded).
 
 This is a **different chain** from the species-uniform one studied in
 §1-§7 below. The two chains share the g_lattice/√6 Ward value on the top
@@ -136,9 +137,10 @@ species-uniform chain in §1-§7 imposes y_b = y_t at M_Pl.
 
 ### What the 35× result DOES NOT establish
 
-- **It does not establish that the framework's m_t prediction is wrong.**
-  The top-only retained chain (`YT_ZERO_IMPORT_CHAIN_NOTE.md`) uses
-  species-privileged boundary conditions and remains valid at -1.84%.
+- **It does not establish that the framework's top running readout is wrong.**
+  The top-only chain (`YT_ZERO_IMPORT_CHAIN_NOTE.md`) uses
+  species-privileged boundary conditions; its readout is not pole-matched, so
+  no percentage agreement with the top pole mass is claimed.
 - **It does not establish that the retained Ward theorem is wrong.** The
   Ward theorem is a 1PI statement about a specific 4-point function on
   the Q_L singlet channel; its Block 6 species uniformity (all 6
@@ -186,9 +188,9 @@ sector-dependent ratios.
 - The **species-uniform physical interpretation** of that algebra, leading
   to Yukawa unification at M_Pl (y_t = y_b), is **falsified by SM RGE**
   (via the 35× overshoot on m_b).
-- The **framework m_t prediction** of 169.5 GeV (retained, zero-import
-  chain) stands, because it uses species-privileged boundary conditions,
-  NOT the species-uniform chain.
+- The **framework top running readout** y_t(v)·v/√2 ≈ 169.5 GeV (zero-import
+  chain, not pole-matched) is not falsified here, because it uses
+  species-privileged boundary conditions, NOT the species-uniform chain.
 - The **retention gap** is narrowed and sharpened: what's needed is NOT a
   "new species-breaking primitive from scratch," but rather a structural
   identification of how H_unit's Fourier-basis eigenvalues map onto
@@ -253,8 +255,8 @@ yields `y_b(M_Pl)/g_s(M_Pl) = 1/√6`, and the RGE forward-running of this BC
 **falsifies the species-uniform interpretation** via a 35× overshoot on m_b.
 The retained Ward theorem's 1PI algebra is unchanged; the species-uniform
 PHYSICAL reading of that algebra is what's closed negatively. The framework's
-retained m_t prediction (`YT_ZERO_IMPORT_CHAIN_NOTE.md`, species-privileged
-BC) is unaffected and remains at -1.84% deviation.
+top running readout (`YT_ZERO_IMPORT_CHAIN_NOTE.md`, species-privileged
+BC) is unaffected; it is not a top pole-mass prediction.
 
 ---
 
@@ -420,9 +422,9 @@ species Yukawa inherits this Clebsch-Gordan uniformly at M_Pl. The 35×
 mismatch on `m_b` is far outside any conceivable retention band (Δ_R
 citation uncertainty is ~30% relative on the Ward ratio; RGE 2-loop
 systematic is ~1-5%; Δm_b budget at 1σ is well under 1 GeV), so the
-falsification is robust. The framework's retained m_t prediction from the
-species-privileged chain (`YT_ZERO_IMPORT_CHAIN_NOTE.md`, m_t = 169.5 GeV,
--1.84%) is NOT affected by this scope analysis — the two chains differ on
+falsification is robust. The framework's top running readout from the
+species-privileged chain (`YT_ZERO_IMPORT_CHAIN_NOTE.md`, y_t(v)·v/√2 = 169.5 GeV,
+not pole-matched) is NOT affected by this scope analysis — the two chains differ on
 the b channel boundary condition.
 
 **Safe claim boundary.** The Ward identity's Block 6 singlet uniformity
@@ -457,9 +459,9 @@ named non-retained ingredients. The framework's retained m_t prediction
   species-uniform prediction ~145 GeV is unambiguous).
 - HIGH on the **scope-corrected** classification: the species-uniform
   PHYSICAL INTERPRETATION of Block 6 is what's falsified, NOT the
-  framework. The retained m_t prediction via species-privileged BC
-  (`YT_ZERO_IMPORT_CHAIN_NOTE.md`) is a separate chain and remains
-  valid at -1.84%.
+  framework. The top running readout via species-privileged BC
+  (`YT_ZERO_IMPORT_CHAIN_NOTE.md`) is a separate chain and is not
+  affected; it carries no pole-mass agreement claim.
 - HIGH on the cross-reference to the Koide circulant Fourier-basis
   mechanism as the positive candidate for species-differentiation
   (`codex/science-workspace-2026-04-18`).
@@ -783,11 +785,11 @@ falsified under SM 2-loop RGE forward-running:
    This confirms the coupled-RGE quasi-fixed-point.
 
 **The falsification is of the species-uniform interpretation, not of the
-framework.** The framework's actual m_t prediction chain
+framework.** The framework's actual top-Yukawa chain
 (`docs/YT_ZERO_IMPORT_CHAIN_NOTE.md`, `scripts/frontier_yt_zero_import_chain.py`)
 uses a **species-privileged BC** — y_t(M_Pl) at the Ward value 0.4358
 while y_b(v) is held at its observed small value ~0.016 — and produces
-m_t = 169.5 GeV (-1.84% deviation). That chain is NOT falsified by this
+the running readout y_t(v)·v/√2 = 169.5 GeV (not pole-matched). That chain is NOT falsified by this
 scope analysis, because it does not impose the species-uniform BC on y_b.
 
 ### 5.1 What the 35× result closes (scope-limited)

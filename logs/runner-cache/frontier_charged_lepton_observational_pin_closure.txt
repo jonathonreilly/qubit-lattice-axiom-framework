@@ -1,0 +1,196 @@
+===== runner cache v1 =====
+runner: scripts/frontier_charged_lepton_observational_pin_closure.py
+runner_sha256: 84f7cc7c1faf6f516e9e2169d776b71610931f824fe96616c078d373ab665c06
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.03
+status: ok
+----- stdout -----
+==============================================================================
+G5 OBSERVATIONAL-PIN CLOSURE — the neutrino-closure-analogous route
+==============================================================================
+
+==============================================================================
+STEP 1: Replicate a companion runner v2 structural shape theorem
+==============================================================================
+  [PASS] Gamma_1 Hermitian
+  [PASS] Gamma_1^2 = I_16
+  [PASS] {Gamma_1, gamma_5} = 0 (chiral off-diagonal)
+  [PASS] First-order vanishing P_T1 Gamma_1 P_T1 = 0 on species block
+  [PASS] Second-order return on T_1 species block = I_3
+  Gamma_1 hopping structure (species k in T_1 -> intermediate):
+    electron (1, 0, 0) -> ((0, 0, 0),)
+    muon (0, 1, 0) -> ((1, 1, 0),)
+    tau (0, 0, 1) -> ((1, 0, 1),)
+  [PASS] species 1 (electron) hops to O_0 = (0,0,0)
+  [PASS] species 2 (muon) hops to T_2 state (1,1,0)
+  [PASS] species 3 (tau) hops to T_2 state (1,0,1)
+  [PASS] T_2 state (0,1,1) unreachable from T_1 in one Gamma_1 hop
+
+  Symbolic shape theorem: Sigma(w) with weighted intermediate
+  [PASS] Shape theorem trial 1: diag(Sigma)=(w_O0, w_a, w_b), w_c irrelevant  (diag=[ 1.6138,  2.4394,  2.8854]  expected=(1.6138,2.4394,2.8854))
+  [PASS] Shape theorem trial 2: diag(Sigma)=(w_O0, w_a, w_b), w_c irrelevant  (diag=[ 2.3217,  2.1422,  2.0180]  expected=(2.3217,2.1422,2.0180))
+  [PASS] Shape theorem trial 3: diag(Sigma)=(w_O0, w_a, w_b), w_c irrelevant  (diag=[ 0.1781,  1.2141,  2.2645]  expected=(0.1781,1.2141,2.2645))
+  [PASS] Shape theorem trial 4: diag(Sigma)=(w_O0, w_a, w_b), w_c irrelevant  (diag=[ 1.5546,  1.0206,  2.5544]  expected=(1.5546,1.0206,2.5544))
+
+  Shape theorem confirmed: diag(Sigma) = (w_O0, w_a, w_b)
+  The framework has exactly three independent weight slots.
+
+==============================================================================
+STEP 2: Retained chamber for the weight triple (w_O0, w_a, w_b)
+==============================================================================
+  [PASS] R1 positivity: PDG charged-lepton masses all > 0
+  [PASS] R2 reachability: w_c (0,1,1) is irrelevant to diag(Sigma)  (verified in Step 1 structural probes)
+  [PASS] R3 chiral off-diagonal: Gamma_1 satisfies {Gamma_1, gamma_5} = 0
+  [PASS] R4 scale freedom: Koide Q is scale-invariant  (Q(m)=0.6666605115, Q(lambda*m)=0.6666605115)
+  [PASS] R5 S_2-broken requirement: observed (m_mu, m_tau) strongly S_2-asymmetric  (|m_mu - m_tau|/(m_mu + m_tau) = 0.8877)
+
+  Retained chamber summary:
+    (R1) positivity    : w_O0, w_a, w_b > 0
+    (R2) reachability  : w_c (unreachable T_2 state) irrelevant
+    (R3) chiral-off-diag: Gamma_1 must anticommute with gamma_5
+    (R4) scale freedom : overall lambda > 0 gauge
+    (R5) S_2-broken    : retained schemes force w_a = w_b; physical
+                        pin requires w_a != w_b (observational)
+
+==============================================================================
+STEP 3: Observational pin — (w_O0, w_a, w_b) from PDG masses
+==============================================================================
+  Raw PDG weights (MeV): (m_e, m_mu, m_tau) = [ 0.510999,  105.658376,  1776.860000]
+  Normalized (sum=1):   [ 2.713707e-04,  5.611085e-02,  9.436178e-01]
+  w_O0 = 2.713707e-04
+  w_a  = 5.611085e-02
+  w_b  = 9.436178e-01
+  [PASS] Pinned triple satisfies positivity (R1)
+  [PASS] Pin uniqueness U1 (observational labeling consistency): species-k -> slot-k labeling reproduces observed triple  (observational labeling; species-k -> slot-k gives diag = (m_e, m_mu, m_tau)/Sum)
+  [PASS] Pin uniqueness U2 (set-vs-labeled distinction): 5/5 non-identity S_3 perms match observed SET but not observed LABELED triple  (tautology on distinct-valued labeled tuples; does NOT claim retained Gamma_1 breaks residual S_2 on {w_a, w_b})
+  [PASS] Pin uniqueness U3a (sharp pin): non-scalar perturbations break the pin  (20 random non-uniform multiplicative perturbations all diverge from observed normalized direction)
+  [PASS] Pin uniqueness U3b (scale freedom): positive scalar rescalings preserve the pin direction  (20 random positive rescalings all preserve direction)
+  [PASS] Pin uniqueness (composite: U1 AND U2 AND U3a AND U3b): unique as a set up to positive scale; residual S_2 labeling ambiguity on w_a <-> w_b is Koide- and Sigma-invariant  (matches authority-note Theorem 7 / §10 / §11; retained surface does NOT break the w_a <-> w_b S_2)
+  [PASS] Pinned triple breaks the retained S_2 symmetry on axes {2,3}  (|w_a - w_b|/(w_a + w_b) = 0.8877)
+
+  S_2 asymmetry |w_a - w_b|/(w_a + w_b) = 0.8877
+  -> observational pin supplies the S_2-breaking that retained
+     schemes lack (consistent with a companion runner v2 open primitive).
+
+  Convention cross-check:
+    Convention A (weights ~ m):   Q(w) = 0.6666605115  (should be 2/3 to PDG prec)
+    Convention B (weights ~ m^2): Q(w) = 0.8935630177  (should NOT be 2/3; is Sum m^2/(Sum m)^2)
+    Convention B, Q(sqrt(w)):    Q = 0.6666605115  (recovers 2/3 — sqrt(w)~m linearly)
+  [PASS] Convention A: Q(w) = 2/3 on the linear-mass pin  (Q(w_A) - 2/3 = -6.155e-06)
+  [PASS] Convention B: Q(w) != 2/3 on the mass-squared pin (physical reading: Koide lives on sqrt(w) for Convention B)  (Q(w_B) = 0.893563 (a convention-dependent quantity, not the physical Koide))
+  [PASS] Convention B: Q(sqrt(w)) = 2/3 — physical Koide is convention-invariant under the sqrt map  (Q(sqrt(w_B)) - 2/3 = -6.155e-06)
+  -> Physical Koide Q = 2/3 is convention-invariant: it holds on linear masses in both conventions
+     (directly in A, via sqrt(w) in B). The closure is not a hidden-convention artefact.
+
+==============================================================================
+STEP 4: Koide auto-consistency at the pinned triple
+==============================================================================
+  Koide Q at pinned triple = 0.6666605115
+  Koide Q at raw PDG masses= 0.6666605115
+  Target (exact 2/3)       = 0.6666666667
+  |Q_pin - 2/3|            = 6.155e-06
+  |Q_pdg - 2/3|            = 6.155e-06
+  [PASS] Koide scale-invariance: Q(w_pin) = Q(PDG masses)
+  [PASS] Koide Q at pinned triple matches 2/3 to PDG precision (|dev| < 0.001%)  (|Q - 2/3|/((2/3)) = 0.0009%)
+
+  AUTO-CONSISTENCY: Q = 2/3 was not imposed as a fit constraint.
+  It follows automatically from the pin (m_e, m_mu, m_tau) to PDG.
+==============================================================================
+STEP 5: Cross-check against G1's chamber pin
+==============================================================================
+  G1 pin (m_*, delta_*, q_+*) = (0.657061, 0.933806, 0.715042)
+  G5 pin (w_O0, w_a, w_b)    = (2.713707e-04, 5.611085e-02, 9.436178e-01)
+  [PASS] H(m_*, delta_*, q_+*) is Hermitian
+  H eigenvalues at G1 pin = [-1.309094, -0.320434,  2.286589]
+  cos_sim(H-evals^2 normalized, G5 weights sorted) = 0.949614
+  cos_sim(|H-evals| normalized, G5 weights sorted)  = 0.867280
+  [PASS] G1 and G5 are architecturally decoupled: H-eigenvalues don't match G5 weights  (best cos_sim = 0.9496)
+
+  Architectural conclusion: G1 pin and G5 pin are INDEPENDENT retained
+  inputs through the P3 promotion lane. This is consistent with the
+  Dirac-bridge theorem: H carries neutrino structure, Gamma_1 carries
+  charged-lepton structure, and U_e = I_3 decouples them.
+==============================================================================
+STEP 6: Downstream falsifiable predictions
+==============================================================================
+  Prediction inventory:
+
+  (P1) RATIO PREDICTION (target for a companion runner):
+       m_mu / m_e   = 206.7683
+       m_tau / m_mu = 16.8170
+       these ratios must come from an S_2-breaking retained primitive.
+
+  (P2) LFV SUPPRESSION (qualitative retained prediction):
+       Second-order Gamma_1 return is exactly species-diagonal
+       -> no charged LFV at leading retained order.
+       Current experimental bounds:
+         BR(mu -> e gamma) < 4.2e-13   (MEG-II 2023)
+         BR(tau -> mu gamma) < 4.4e-8  (BaBar/Belle-II)
+         BR(tau -> e gamma)  < 3.3e-8  (BaBar/Belle-II)
+       ALL three are CONSISTENT with retained suppression.
+  [PASS] P2 LFV suppression: Sigma(pinned) is exactly species-diagonal  (max off-diagonal = 0.000e+00)
+  [PASS] P2 LFV suppression: BR(mu -> e gamma) < MEG-II 2023 bound consistent with retained 0  (leading retained order = 0, observed < 4.2e-13)
+  [PASS] P2 LFV suppression: BR(tau -> mu gamma) consistent with retained 0  (leading retained order = 0, observed < 4.4e-8)
+  [PASS] P2 LFV suppression: BR(tau -> e gamma) consistent with retained 0  (leading retained order = 0, observed < 3.3e-8)
+
+  (P3) NO EXTRA CP PHASE ON CHARGED-LEPTON SIDE:
+       Sigma is real symmetric at the pinned weights.
+       -> predicted: no charged-lepton EDM beyond SM CKM.
+  [PASS] P3 no CP: Sigma(pinned) is real
+
+  (P4) GENERATION HOPPING ASYMMETRY:
+       m_mu/m_e   = 206.768    (electron isolated on O_0)
+       m_tau/m_mu = 16.817     (muon, tau share T_2)
+       ratio-of-ratios = 12.2952
+       Electron is expected qualitatively different from (muon,tau);
+       this is reproduced by the observed PDG hierarchy.
+  [PASS] P4 hopping asymmetry: m_mu/m_e >> m_tau/m_mu consistent with electron-isolation  ((m_mu/m_e) / (m_tau/m_mu) = 12.2952)
+
+  (P5) COMBINED G1+G5 DUNE TEST (genuine new falsifiable prediction):
+       If DUNE/Hyper-K measures delta_CP far from 260.88 deg
+       AND charged-lepton Koide Q stays at 2/3, then the G1 pin
+       and G5 pin are both retained through the P3 map, but their
+       joint fitness of observation is the test of the architectural
+       decoupling predicted by the Dirac-bridge theorem.
+       If DUNE confirms delta_CP ~ 260.88 deg AND Koide Q = 2/3
+       (which PDG already confirms), that is a DOUBLE retained
+       validation of the P3 route.
+
+  Total falsifiable retained predictions derived: 4
+    - P2 LFV suppression (leading-order retained zero, 3 channels)
+    - P3 no extra charged-lepton CP phase
+    - P4 electron-isolation hopping asymmetry
+    - P5 combined G1+G5 DUNE double-validation
+==============================================================================
+STEP 7: Repo-status labeling
+==============================================================================
+  charged-lepton repo status       : bounded
+
+  Reason:
+    The retained shape theorem supplies the exact 3-slot map
+      Sigma(w_O0, w_a, w_b) -> (m_e, m_mu, m_tau).
+    But the final point is fixed by an explicit PDG charged-lepton pin,
+    so the lane is bounded on the current retained surface.
+    No separate retained derivation of Koide or the charged-lepton
+    hierarchy is claimed here.
+  [PASS] charged-lepton observational-pin lane is classified as bounded
+==============================================================================
+STEP 8: REPO-STATUS VERDICT
+==============================================================================
+  chamber membership (R1 positivity)   : True
+  pin unique up to scale               : True
+  Koide Q = 2/3 follows (to PDG prec)  : True
+  at least one new falsifiable pred    : True
+  repo status label                    : bounded
+
+  VERDICT: CHARGED_LEPTON_OBSERVATIONAL_PIN_STATUS = BOUNDED
+  Bounded compatibility package: the retained map accommodates the observed hierarchy through an explicit PDG pin.
+
+==============================================================================
+PASS=39 FAIL=0
+VERDICT: CHARGED_LEPTON_OBSERVATIONAL_PIN_STATUS = BOUNDED
+==============================================================================
+
+----- stderr -----
+

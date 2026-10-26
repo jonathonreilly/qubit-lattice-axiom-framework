@@ -268,9 +268,10 @@ No new axioms are introduced.
 
 ## Narrowed-gap statement
 
-**Before this note (after the info-geometric / Z_3-cubic / parity-split obstructions + parity-mixing note):**
+**Before this note (after the information-geometric local calculation, the Z_3-cubic / parity-split obstructions and the parity-mixing note):**
 ```
-(G-Var) still requires selection axiom (info-geometric leading-quadratic)
+(G-Var) physical selection rule not established (four displayed info-geometric
+  quadratics agree locally; no necessity of a new axiom is proved)
 (G-Non-Var) parity-mixing sub-route produces F1 candidate
   but F1 vs F2 vs F3 disagreement is an ambiguity
   (three discrete choices)
@@ -298,8 +299,8 @@ Appropriate placement:
 
 - atlas obstruction row in
  `DERIVATION_ATLAS.md`
- under the DM neutrino source-surface family, sibling to the info-geometric / Z_3-cubic / parity-split obstructions
- and the parity-mixing selector law
+ under the DM neutrino source-surface family, beside the information-geometric local-expansion note, the Z_3-cubic / parity-split obstructions
+ and the parity-mixing candidate note
 - **do NOT** use for any publication-grade positive quantitative claim
 - **do NOT** promote the Line-1 conditional closure without a sole-axiom
  derivation of `U(2)_L × U(2)_R` bifundamental invariance

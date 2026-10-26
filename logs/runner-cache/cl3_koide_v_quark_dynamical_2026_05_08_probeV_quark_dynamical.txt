@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_koide_v_quark_dynamical_2026_05_08_probeV_quark_dynamical.py
-runner_sha256: 831af471dfc36449f0cccc3bc182bcc67316f0628d8b1b1686a827216d4e93dd
-timeout_sec: 120
+runner_sha256: 5cf68a98676bb393f4357b6f7b8b021cf06842cd65ae9633945587619b1ee960
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.17
 status: ok
 ----- stdout -----
 ========================================================================
@@ -40,10 +40,10 @@ Section 3 — Species-uniform Ward BC + 1L SM RGE forecast
     -> Species-uniform Ward BC empirically FALSIFIED for both m_t and m_b under 1L RGE.
        Same direction as YT_BOTTOM 2L result (m_b(m_b) ~ 140 GeV), more severe at 1L due to coupled fixed-point.
 
-Section 4 — Species-privileged top-only chain (retained reference)
+Section 4 — Species-privileged top-only chain (running-readout reference)
     YT_ZERO_IMPORT: y_t(v) = 0.9734
-    m_t = y_t(v) * v/sqrt(2) = 169.47 GeV (PDG 172.69, dev -1.86%)
-  [PASS] Retained m_t reproduces PDG within 5% | |dev| = 1.86% < 5%
+    y_t(v) * v/sqrt(2) = 169.47 GeV (running readout; no comparison with the PDG pole mass)
+  [ADMITTED] Top running readout is not pole-matched | mass-scheme and scale matching are absent, so no PDG pole-mass agreement is asserted
   [ADMITTED] y_b(v), y_c(v) infrastructure inputs in YT_ZERO_IMPORT | INFRASTRUCTURE only; chain does not derive absolute m_b, m_c. DOWN_TYPE_MASS_RATIO_CKM_DUAL §6 explicitly disclaims absolute bottom scale closure.
 
 Section 5 — Chiral SSB structural decomposition
@@ -98,7 +98,14 @@ Section 9 — Constraints respected
   [ADMITTED] Hostile-review tier classification applied (per Z-S4b-Audit) | 5 ingredients tiered: 2 RETAINED (I1, I3), 3 ADMITTED (I2, I4, I5)
   [ADMITTED] Source-only PR pattern (per feedback_review_loop_source_only_policy) | 1 source-note + 1 runner + 1 cache; no support docs, no audit-ledger edits, no synthesis notes
 
-SUMMARY: PASS=21 FAIL=0 ADMITTED=12
+Section 10 — N5 execution certificate (resolved granularity)
+per_element: checked, but the finest grain here is one scalar per quark species, not a matrix entry - the Ward boundary value y_t(M_Pl) = 0.43577, the run-down y_t(v) = 0.9734 giving m_t = 169.47 GeV at -1.86%, and the per-species constituent sums 2.2 + 330, 4.7 + 330 and 93.4 + 330 MeV for u, d, s. No Yukawa texture is assembled, so no off-diagonal element is ever evaluated.
+per_site: checked and not executed - the runner carries no site index at all. Its one lattice-derived input, u_0 = <P>^(1/4) = 0.87768, arrives as the single supplied plaquette number <P> = 0.5934 rather than as an average this runner accumulates over sites, and every downstream object is a coupling depending on an energy scale, with no spatial argument to resolve.
+per_mode: checked and not executed - no mode decomposition is performed anywhere. This is the note's own obstruction: the circulant Fourier-basis spectrum, where a species-differentiating Koide equipartition plus Brannen sqrt(m) identification would live, is admitted as non-retained under I4 and named in Section 8 as the remaining open gap, so the runner deliberately stops short of computing it.
+per_block: checked, only as a two-sector split - the 1L RGE is integrated for the coupled up-type and down-type pair (y_t, y_b), and the decisive negative is precisely that these two blocks collapse onto a common quasi-fixed-point value (y_t, y_b)(v) = (0.7549, 0.7549), which is why m_b overshoots by 45.6x while m_t undershoots by 1.31x. The three generations are never given separate blocks and no block-diagonal operator is assembled.
+lattice_wide: checked and not executed - the one genuinely lattice-wide object this argument would need, the Banks-Casher condensate Sigma = pi rho_Dirac(0) with its infinite-volume limit of the Dirac spectral density, is admitted under I5 as requiring an L >= 12-16 run that is off the retained surface. The runner instead uses the fixed constituent value Sigma = 330 MeV, so its reported Sigma/m_q fractions of 25.98%, 7.89% and 0.19% are ratios of supplied numbers and no volume limit is taken.
+
+SUMMARY: PASS=20 FAIL=0 ADMITTED=13
 
 VERDICT
 -------

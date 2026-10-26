@@ -53,10 +53,10 @@ chamber at:
 At this pinned point, all 9 entries `|U_PMNS|_{ij}` lie inside the
 NuFit 5.3 Normal Ordering 3σ ranges.
 
-**Falsifiable CP-phase prediction** (forced geometric consequence):
+**Falsifiable CP-phase output** (conditional on the fitted pin and the hierarchy pairing):
 
 ```
-sin(δ_CP) = -0.9874,  δ_CP ≈ -81°,  |J| = 0.0328
+sin(δ_CP) = -0.9874,  cos(δ_CP) = -0.1585,  δ_CP ≈ 260.88° (atan2),  |J| = 0.0328
 ```
 
 ### 2.2 σ_hier = (2,1,0): observational uniqueness (NEW — this branch)
@@ -232,7 +232,7 @@ Koide lane. Deriving this law from the framework axiom is an open item.
 | Prediction | Value | Experiment | Status |
 |-----------|-------|-----------|--------|
 | sin(δ_CP) | −0.9874 | T2K/NOvA/DUNE | Preferred by T2K; falsifiable at DUNE/HK |
-| δ_CP | ≈ −81° (279°) | DUNE, Hyper-K | Predicted, not yet precisely measured |
+| δ_CP | ≈ 260.88° (atan2; the former −81° used asin only and lost the quadrant) | DUNE, Hyper-K | Conditional fitted output, not yet precisely measured |
 | M_N = M1 | 5.32 × 10¹⁰ GeV | Indirect (leptogenesis, DM searches) | Framework prediction |
 | |U_PMNS|₁₂², |U_PMNS|₁₃², |U_PMNS|₂₃² | Inside NuFit 5.3 NO 3σ | NuFit global fit | PASS (9/9 entries) |
 

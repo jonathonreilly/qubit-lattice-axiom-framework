@@ -37,8 +37,10 @@ STEP 2 (supplied CP-sign discriminator):
     The two 9/9-passing permutations are related by a mu<->tau row swap,
     which preserves all |U| magnitudes but reverses the sign of the
     Jarlskog invariant J, hence reverses sin(delta_CP):
-      sigma=(2,1,0): sin(delta_CP) = -0.9874  (delta_CP ~ -81 deg)
-      sigma=(2,0,1): sin(delta_CP) = +0.9874  (delta_CP ~ +81 deg)
+      sigma=(2,1,0): sin(delta_CP) = -0.9874  (atan2 delta_CP ~ 260.88 deg)
+      sigma=(2,0,1): sin(delta_CP) = +0.9874  (atan2 delta_CP ~ 80.88 deg)
+    The sine alone leaves delta -> pi - delta; the quadrant uses the cosine
+    from the PDG modulus identity (see the PMNS-from-H runner).
     The negative-sign comparator is supplied rather than derived, with the
     T2K 2021 negative-phase preference as motivation. It is not presented as
     a joint T2K/NOvA preference: NOvA 2021 instead disfavored the neighborhood
@@ -297,12 +299,12 @@ def part3_cp_phase_discriminator(results: dict) -> None:
         np.allclose(np.sort(r_201["U_abs"], axis=0), np.sort(r_210["U_abs"], axis=0), atol=1e-12),
     )
     check(
-        "sigma=(2,0,1) gives sin(delta_CP) = +0.9874 (positive, delta_CP ~ +81 deg)",
+        "sigma=(2,0,1) gives sin(delta_CP) = +0.9874 (positive sine)",
         abs(s201 - 0.9874) < 0.001,
         f"sin(dCP) = {s201:+.4f}",
     )
     check(
-        "sigma=(2,1,0) gives sin(delta_CP) = -0.9874 (negative, delta_CP ~ -81 deg)",
+        "sigma=(2,1,0) gives sin(delta_CP) = -0.9874 (negative sine)",
         abs(s210 + 0.9874) < 0.001,
         f"sin(dCP) = {s210:+.4f}",
     )
@@ -364,7 +366,7 @@ def part4_selected_sigma_detail(results: dict) -> None:
         f"sin(dCP) = {sin_dcp:+.4f}",
     )
     check(
-        "delta_CP ~ -81 deg (passes the supplied negative-sign comparator)",
+        "sin(delta_CP) < 0 (passes the supplied negative-sign comparator)",
         sin_dcp < -0.9,
         f"sin(dCP) = {sin_dcp:+.4f}",
     )

@@ -208,8 +208,8 @@ to imported structure (modular weights, τ choice, A_4 Clebsch-Gordans).
 
 ### Not Closed, Preserved Obstructions
 
-- **Species-privileged retained `m_t = 169.5 GeV` chain
-  (YT_ZERO_IMPORT_CHAIN_NOTE) is unaffected.** This probe addresses an
+- **Species-privileged top running readout `y_t(v) v/√2 = 169.5 GeV`
+  (YT_ZERO_IMPORT_CHAIN_NOTE; not pole-matched) is unaffected.** This probe addresses an
   alternative MECHANISM (modular flavor) and does not modify the
   top-only retained result.
 - **Retained CKM-dual `m_s/m_b` ratio (+0.2% threshold-local) is
@@ -495,7 +495,7 @@ No new retained primitive emerges.
 - **No fitting at the verdict stage.** The C_3 root-of-unity diagnostic
   has no free parameter and is rank-deficient. The weight-2+4 route is
   documented as a parameter-count argument, not a derivation.
-- **No promotion.** The retained m_t = 169.5 GeV chain is not modified.
+- **No promotion.** The top running-readout chain (169.5 GeV, not pole-matched) is not modified.
   The retained CKM-dual ratio is not modified. The proposed claim type is
   `no_go` / bounded obstruction.
 - **Import classification applied.** All six load-bearing ingredients are
@@ -524,8 +524,8 @@ No new retained primitive emerges.
   species-uniform Ward BC FALSIFIED; Koide circulant Fourier-basis
   candidate mechanism remains open.
 - [`YT_ZERO_IMPORT_CHAIN_NOTE.md`](YT_ZERO_IMPORT_CHAIN_NOTE.md):
-  retained species-PRIVILEGED top-only chain; m_t = 169.5 GeV (-1.84%);
-  UNAFFECTED by this probe.
+  species-PRIVILEGED top-only chain; running readout y_t(v) v/√2 = 169.5 GeV
+  with no pole-mass comparison; UNAFFECTED by this probe.
 
 ## 8. Honest non-claims
 
@@ -542,8 +542,8 @@ This probe does not claim:
   fact; the issue is that the C_3 selection rule is already retained
   via Z_3 trichotomy, and adding A_4 modular structure does not
   contribute new selection content beyond what is already retained.
-- That the retained species-PRIVILEGED top-only `m_t = 169.5 GeV`
-  chain is wrong; that chain is unaffected.
+- That the species-PRIVILEGED top-only chain (running readout
+  `y_t(v) v/√2 = 169.5 GeV`) is wrong; that chain is unaffected.
 - That modular flavor symmetry is structurally inappropriate for
   flavor model-building in the broader BSM literature. The probe is
   scoped narrowly to whether modular forms on Γ(3) at τ = ω, combined

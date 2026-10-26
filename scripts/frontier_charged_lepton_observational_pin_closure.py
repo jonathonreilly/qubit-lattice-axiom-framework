@@ -737,7 +737,7 @@ def step6_predictions(w_pin):
     print("STEP 6: Downstream falsifiable predictions")
     print("=" * 78)
 
-    # G1 made a delta_CP = -81 deg falsifiable prediction at DUNE/Hyper-K.
+    # G1 gives a conditional fitted delta_CP = 260.88 deg (atan2) testable at DUNE/Hyper-K.
     # charged-lepton analogue: what new falsifiable predictions emerge from the
     # observational pin?
     #
@@ -792,9 +792,9 @@ def step6_predictions(w_pin):
     # is retained-structurally expected if w_O0 sits on a different
     # intermediate surface than (w_a, w_b).
     #
-    # (P5) COMBINED-G1-G5 DUNE TEST. The G1 delta_CP ~ -81 deg and the G5
+    # (P5) COMBINED-G1-G5 DUNE TEST. The G1 delta_CP ~ 260.88 deg and the G5
     # auto-consistent Koide are INDEPENDENT predictions through the same
-    # P3 machinery. If DUNE falsifies delta_CP ~ -81 deg while Koide holds,
+    # P3 machinery. If DUNE falsifies delta_CP ~ 260.88 deg while Koide holds,
     # that tests the architectural decoupling: the G1 lane and the G5 lane
     # are independent retained pins, not a single joint pin.
 
@@ -851,12 +851,12 @@ def step6_predictions(w_pin):
 
     print()
     print("  (P5) COMBINED G1+G5 DUNE TEST (genuine new falsifiable prediction):")
-    print("       If DUNE/Hyper-K measures delta_CP far from -81 deg")
+    print("       If DUNE/Hyper-K measures delta_CP far from 260.88 deg")
     print("       AND charged-lepton Koide Q stays at 2/3, then the G1 pin")
     print("       and G5 pin are both retained through the P3 map, but their")
     print("       joint fitness of observation is the test of the architectural")
     print("       decoupling predicted by the Dirac-bridge theorem.")
-    print("       If DUNE confirms delta_CP ~ -81 deg AND Koide Q = 2/3")
+    print("       If DUNE confirms delta_CP ~ 260.88 deg AND Koide Q = 2/3")
     print("       (which PDG already confirms), that is a DOUBLE retained")
     print("       validation of the P3 route.")
 

@@ -214,9 +214,10 @@ transport chain is blind to the chamber.
  `docs/publication/ci3_z3/DERIVATION_ATLAS.md`.
 - This note does not close the DM flagship lane (the integrated closure
   is the downstream PMNS-as-f(H) closure).
-- The Schur-baseline partial closure, the three the info-geometric selection obstruction/B/C obstruction
- theorems, and this physics-validation obstruction together delimit
- the selector gate open object as: *a selector that couples to a bank-unblinded
+- The Schur-baseline partial closure, the Z_3-cubic and holonomy
+ obstruction theorems, the information-geometric local calculation (which
+ proves no global obstruction), and this physics-validation obstruction
+ together describe the selector gate open object as: *a selector that couples to a bank-unblinded
  observable on the chamber*.
 
 ## Atlas inputs used

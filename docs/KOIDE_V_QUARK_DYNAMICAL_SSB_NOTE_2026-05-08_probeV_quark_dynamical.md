@@ -66,8 +66,9 @@ structural argument + retained Yukawa flow gives `m_b`, `m_c` (and
 possibly `m_t` separately) within ~5% of PDG.
 
 **Pre-computed reference points.**
-- Retained `m_t = 169.51 GeV (-1.84%)` via species-PRIVILEGED Ward BC
-  per [`YT_ZERO_IMPORT_CHAIN_NOTE.md`](YT_ZERO_IMPORT_CHAIN_NOTE.md).
+- Running readout `y_t(v) v/√2 = 169.51 GeV` via species-PRIVILEGED Ward BC
+  per [`YT_ZERO_IMPORT_CHAIN_NOTE.md`](YT_ZERO_IMPORT_CHAIN_NOTE.md); it is not
+  pole-matched, so no percentage agreement with the top pole mass is claimed.
   This chain treats `y_b(v)`, `y_c(v)` as INFRASTRUCTURE inputs (held
   at observed values) and does NOT derive their absolute scales.
 - Species-UNIFORM Ward BC `y_t(M_Pl) = y_b(M_Pl) = g_lattice/√6` +
@@ -207,8 +208,8 @@ even if admitted bridges <1% of the I4 gap. The probe FAILS at I4.
 
 ### Not closed (preserved obstructions)
 
-- **Species-privileged retained `m_t = 169.5 GeV` chain
-  (YT_ZERO_IMPORT_CHAIN_NOTE) is unaffected.** This probe addresses a
+- **Species-privileged top running readout `y_t(v) v/√2 = 169.5 GeV`
+  (YT_ZERO_IMPORT_CHAIN_NOTE; not pole-matched) is unaffected.** This probe addresses a
   DIFFERENT chain (species-uniform with chiral SSB extension) and
   does not modify the top-only retained result.
 - **Retained CKM-dual `m_s/m_b` ratio (+0.2% threshold-local) is
@@ -407,7 +408,7 @@ DOWN_TYPE_MASS_RATIO_CKM_DUAL §6 explicit disclaimer).
   as comparators after `m_q^pred` is computed.
 - **No fitting.** Chiral SSB is fixed at `Σ ≈ 330 MeV` from ChPT
   phenomenology (IMPORTED, declared).
-- **No promotion.** The retained m_t = 169.5 GeV chain is not modified.
+- **No promotion.** The top running-readout chain (169.5 GeV, not pole-matched) is not modified.
   The retained CKM-dual ratio is not modified. No new theorem-grade
   claim is made; the verdict is no-go / bounded negative.
 - **Hostile-review tier classification applied** per Z-S4b-Audit
@@ -430,8 +431,8 @@ DOWN_TYPE_MASS_RATIO_CKM_DUAL §6 explicit disclaimer).
   species-uniform Ward BC for y_b → m_b ≈ 140 GeV at 2L; the same
   forecast at 1L (this probe) gives ≈ 190 GeV.
 - [`YT_ZERO_IMPORT_CHAIN_NOTE.md`](YT_ZERO_IMPORT_CHAIN_NOTE.md):
-  retained species-PRIVILEGED top-only chain; m_t = 169.5 GeV
-  (-1.84%); UNAFFECTED by this probe.
+  species-PRIVILEGED top-only chain; running readout y_t(v) v/√2 = 169.5 GeV
+  with no pole-mass comparison; UNAFFECTED by this probe.
 - [`YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](YT_WARD_IDENTITY_DERIVATION_THEOREM.md):
   source of the Ward BC `y_t(M_Pl) = g_lattice/√6`.
 - [`HADRON_LANE1_CHIRAL_CONDENSATE_BANKS_CASHER_SCOPING_SUPPORT_NOTE_2026-04-27.md`](HADRON_LANE1_CHIRAL_CONDENSATE_BANKS_CASHER_SCOPING_SUPPORT_NOTE_2026-04-27.md):
@@ -452,8 +453,8 @@ This probe does NOT claim:
 - That the species-uniform Ward + 2L result `~140 GeV` of YT_BOTTOM
   was wrong; this probe REPRODUCES the same negative direction at 1L
   with `~190 GeV`.
-- That the retained species-PRIVILEGED top-only `m_t = 169.5 GeV`
-  chain is wrong; that chain is unaffected.
+- That the species-PRIVILEGED top-only chain (running readout
+  `y_t(v) v/√2 = 169.5 GeV`) is wrong; that chain is unaffected.
 - Any change to the existing retained-bounded scope of α_s(v), α_LM,
   Λ_QCD, v_EW, or any upstream authority.
 - Any promotion of the chiral-SSB structural argument as a derivation
@@ -480,7 +481,7 @@ remains the open gap.
 
 ## 10. Validation
 
-PASS = 21, FAIL = 0, ADMITTED = 12 across all probe checks (see
+PASS = 20, FAIL = 0, ADMITTED = 13 across all probe checks (see
 runner output cache). The runner verifies:
 1. Retained-anchor sanity (α_bare, u_0, α_LM, α_s(v), g_lattice,
    Ward BC, Casimirs).
@@ -488,8 +489,9 @@ runner output cache). The runner verifies:
    ADMITTED).
 3. Species-uniform Ward + 1L SM RGE forecast (m_t undershoot, m_b
    overshoot ≥20×).
-4. Species-PRIVILEGED top-only retained reference (m_t ≈ 169 GeV
-   within 5%).
+4. Species-PRIVILEGED top-only running-readout reference
+   (`y_t(v) v/√2 ≈ 169.5 GeV`, recorded as not pole-matched; no PDG
+   pole-mass agreement is checked).
 5. Chiral SSB structural decomposition (light-quark recovery within
    15%; heavy-quark Σ-fraction; <1% gap-bridge for m_b).
 6. Retained CKM-dual ratio (m_s/m_b within 5% threshold-local).

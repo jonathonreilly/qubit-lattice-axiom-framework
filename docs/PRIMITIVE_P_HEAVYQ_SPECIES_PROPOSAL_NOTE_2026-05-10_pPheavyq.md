@@ -69,7 +69,7 @@ any status:
 | Z2 | `α_s(v) = α_bare/u_0² = 0.1033` (CMT vertex-power chain) | contextual input |
 | Z3 | `g_lattice = √(4π α_LM) = 1.0673` | contextual input |
 | Z4 | Ward identity `y_t(M_Pl) = g_lattice/√6 = 0.4358` | context, not re-ratified here |
-| Z5 | `m_t = y_t(v) v/√2 = 169.5 GeV` (-1.84% from PDG) | context, not re-ratified here |
+| Z5 | `y_t(v) v/√2 = 169.5 GeV` (running readout; not pole-matched, no PDG percentage claimed) | context, not re-ratified here |
 | Z6 | `v = M_Pl × (7/8)^{1/4} × α_LM^{16}` (hierarchy theorem) | contextual input |
 | Z7 | C_3[111] cyclic structure on hw=1 generation triplet | contextual input |
 | Z8 | Hermitian circulants on T_1: `H = aI + bC + b̄C²` | contextual input |
@@ -434,8 +434,8 @@ This note does NOT claim:
   candidates side-by-side; selection should follow audit-lane scrutiny
   and follow-up probes (which structural-Casimir or integer fit holds,
   which sector-pairing makes sense, etc.).
-- **Modification of the retained m_t prediction** (Z5 = 169.5 GeV @
-  -1.84%). All three candidates normalize to the Ward-context value at
+- **Modification of the top running readout** (Z5 = 169.5 GeV, not
+  pole-matched). All three candidates normalize to the Ward-context value at
   the top channel.
 - **Modification of the bounded m_s/m_b ratio** (Z11 at +0.2%
   threshold-local). P-Heavy-A and P-Heavy-B/C are tested against this
@@ -480,7 +480,7 @@ The runner produces:
   probe at τ=ω.
 - **Existing context:**
   - [`YT_ZERO_IMPORT_CHAIN_NOTE.md`](YT_ZERO_IMPORT_CHAIN_NOTE.md) —
-    retained m_t = 169.5 GeV @ -1.84%.
+    top running readout y_t(v) v/√2 = 169.5 GeV (not pole-matched).
   - [`YT_BOTTOM_YUKAWA_RETENTION_ANALYSIS_NOTE_2026-04-18.md`](YT_BOTTOM_YUKAWA_RETENTION_ANALYSIS_NOTE_2026-04-18.md)
     — species-uniform interpretation falsified at 35× on m_b; species-
     differentiation primitive named as the open gap (§5.2).

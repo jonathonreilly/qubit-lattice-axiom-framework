@@ -276,9 +276,9 @@ accidental drift into PDG-anchored constants.
   staircase chain).
 - It does NOT claim that the SM Yukawa observable equals the
   framework readout (that is a separate, downstream identification
-  question; the parent authority note records the current 1.84%
-  deviation of `m_t = 169.5 GeV` against PDG `172.69 GeV` as a
-  framework-side residual budget item).
+  question; the parent authority note now records `y_t(v) v/√2 = 169.5 GeV`
+  as a running readout without mass-scheme matching, so its former 1.84%
+  comparison with the PDG pole mass `172.69 GeV` is not a residual budget).
 - It does NOT claim that the audit-conditional perimeter on the
   parent zero-import-chain note (the `canonical_plaquette_surface`
   upstream import and the `kappa_EW = 0` selector) is removed.

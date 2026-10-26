@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_bougerol_lacroix_staggered_blocking_lyapunov_bridge_no_go.py
 runner_sha256: 5e7c79f0b4987156ffc0525590f8809d23eb6573256615c7a4490e86c27df79f
-input_fingerprint_sha256: c33920c93b4066644b213b6789b7d21d12f2333fd51f2dd15926d32a2fa5b577
+input_fingerprint_sha256: 0e6ef84042a75353d2e4db345c2d9e81a1f64ad05b7d3f3c2d7e49dcdea86228
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.21
+elapsed_sec: 0.72
 status: ok
 ----- stdout -----
 

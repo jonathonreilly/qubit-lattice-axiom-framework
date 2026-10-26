@@ -155,6 +155,11 @@
       "source_sha256": "3d9dd064addaae61491b6f1cbcfe3b9711deabfb7ada81532a6b9eea34947f81",
       "timeout_sec": 300
     },
+    "scripts/cl3_koide_v_quark_dynamical_2026_05_08_probeV_quark_dynamical.py": {
+      "reason": "Bounded review execution cap for the PR9844 correction delta; a source change invalidates this declaration; no scientific assertion.",
+      "source_sha256": "5cf68a98676bb393f4357b6f7b8b021cf06842cd65ae9633945587619b1ee960",
+      "timeout_sec": 300
+    },
     "scripts/cl3_lattice_physical_matching_2026_05_10_match.py": {
       "reason": "Bounded B02 affected-change replay cap; execution is not inherited theorem certification. Source changes invalidate this declaration.",
       "source_sha256": "584c0a85fa1dfb7e1d8a9ea691f56ba62a798608d162a0a07e4da138def3e202",
@@ -488,6 +493,11 @@
       "source_sha256": "a942ca4e67a3ed080045707c485cef65e37573cbeac7e8165b0368629b8f8302",
       "timeout_sec": 300
     },
+    "scripts/frontier_dm_full_closure_same_surface_thermal_monotonicity_theorem.py": {
+      "reason": "Bounded review execution cap for the PR9844 correction delta; a source change invalidates this declaration; no scientific assertion.",
+      "source_sha256": "8f91506b742194f4867c6af014bbd9537404c249261271f02ec58cddd198c94b",
+      "timeout_sec": 300
+    },
     "scripts/frontier_dm_leptogenesis_full_microscopic_reduction.py": {
       "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change.",
       "source_sha256": "329c5d87ff01853834bf711b795c1933bd0234ad647bcc8aa20b5160bb694190",
@@ -622,14 +632,29 @@
       "source_sha256": "30862b9810bd34a9ba4a0848f03f9207c463a79fcde3b6c8e0a193b8e1a6c2b1",
       "timeout_sec": 300
     },
+    "scripts/frontier_dm_neutrino_source_surface_info_geometric_selection_obstruction.py": {
+      "reason": "Bounded review execution cap for the PR9844 correction delta; a source change invalidates this declaration; no scientific assertion.",
+      "source_sha256": "74b33e4c740b68f418fe12b3684aad8d7907f9de497f43e03d19d0501a0b02ac",
+      "timeout_sec": 300
+    },
     "scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py": {
       "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change.",
       "source_sha256": "4694e84fb6e82dc704f2c39e4a7e70016850feb2becfd9a89128672da5445c70",
       "timeout_sec": 300
     },
+    "scripts/frontier_dm_neutrino_source_surface_microscopic_polynomial_impossibility_theorem.py": {
+      "reason": "Bounded review execution cap for the PR9844 correction delta; a source change invalidates this declaration; no scientific assertion.",
+      "source_sha256": "b079a03b773185c755ec062a0892d0bc7680bc08eb2b59a5d815559b0934f8bc",
+      "timeout_sec": 300
+    },
     "scripts/frontier_dm_neutrino_source_surface_parity_compatible_observable_selector_theorem.py": {
       "reason": "Finite 3x3 determinant/Hessian fixtures and a bounded-interval scalar optimization with imported transport grids; future wall-time cap only, not a runtime guarantee. No standalone execution or validation of helper-main scientific claims is asserted.",
       "source_sha256": "73609704ad7b2e136a76d3b5928c2ec3af798559556c9f15236d0fc36db6ba71",
+      "timeout_sec": 300
+    },
+    "scripts/frontier_dm_neutrino_source_surface_parity_mixing_selection_obstruction.py": {
+      "reason": "Bounded review execution cap for the PR9844 correction delta; a source change invalidates this declaration; no scientific assertion.",
+      "source_sha256": "14e95db96080433f7f4a8d2dc8d66a8e7f91694dd32ab52f83a362032ed99eee",
       "timeout_sec": 300
     },
     "scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py": {
@@ -989,7 +1014,7 @@
     },
     "scripts/frontier_sigma_hier_uniqueness_theorem.py": {
       "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
-      "source_sha256": "fa68d56412f3e244bca4f2f49705a40bd4591285d9b4cd21da41197d0271f5e0",
+      "source_sha256": "730a270a7b7b77452721877d1c0335d139b738ad19b62de207f00b45c10ae495",
       "timeout_sec": 120
     },
     "scripts/frontier_star_shell_projector.py": {
@@ -1026,6 +1051,11 @@
       "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
       "source_sha256": "388598df7554ac08603b90be8b9bdb16c631f87792d5b867118511dae04b1846",
       "timeout_sec": 120
+    },
+    "scripts/frontier_yt_zero_import_chain.py": {
+      "reason": "Bounded review execution cap for the PR9844 correction delta; a source change invalidates this declaration; no scientific assertion.",
+      "source_sha256": "a1be534c558c8a620755f9240fb932f267c6fa5df4a80ff824077fbf147f5c62",
+      "timeout_sec": 300
     },
     "scripts/gap_topological_asymmetry.py": {
       "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures.",

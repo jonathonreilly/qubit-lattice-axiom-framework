@@ -1,0 +1,67 @@
+=== 0. setting: block 144 / 101 quadratic action, K=1, alpha=1/4, beta=-alpha ===
+PASS S0.1 second-order part of N sqrt(gamma)(K_ij K^ij - K^2 + R) equals block 144's quadratic action (alpha=K/4, beta=-alpha), 40 random cross-kernels
+PASS S0.2 the quadratic action is invariant under spatial relabelling (dh=d xi+d xi, dN=xi_dot) and time relabelling (du=xi0_dot, dN=-d xi0) at alpha=K/4, 60 random points
+PASS S0.3 control: at alpha=K/2 the undeformed time law du=xi0_dot is NOT a symmetry (block 144 T2(c)); deformed law du=(4 alpha/K) xi0_dot is
+PASS S0.3b deformed law du=(4 alpha/K) xi0_dot is a symmetry at alpha=1/2
+PASS S0.4 conformally flat slice gamma=psi^4 delta (lengths l=chi^2, chi=psi): sqrt(gamma) R = -8 psi laplacian(psi) exactly; so N sqrt(gamma) R = -8 N chi laplacian chi, block 60's F with lapse multiplier N=w
+[2s]
+=== 1. class SO(3): local polynomial cubic kernels of exactly w derivatives, delta/epsilon contractions ===
+PASS S1.0.a w=0: 36 contraction patterns span 10 independent kernels (rank saturates at fresh points: 10) | n_c=10 n_d=0
+PASS S1.0.c w=0: character count of the class of ALL SO(3)-invariant symmetric cubic kernels = 10 and of ALL local gauge-deformation forms = 0; equal to n_c=10, n_d=0, so the independent kernels span both classes
+PASS S1.0.b w=0: consistent vertices <= n_c - rank_p[A B] + rank_Q B = 10 - 10 + 0 = 0
+PASS S1.1.a w=1: 249 contraction patterns span 27 independent kernels (rank saturates at fresh points: 27) | n_c=27 n_d=14
+PASS S1.1.c w=1: character count of the class of ALL SO(3)-invariant symmetric cubic kernels = 27 and of ALL local gauge-deformation forms = 14; equal to n_c=27, n_d=14, so the independent kernels span both classes
+PASS S1.1.b w=1: consistent vertices <= n_c - rank_p[A B] + rank_Q B = 27 - 41 + 14 = 0
+PASS S1.2.a w=2: 1405 contraction patterns span 118 independent kernels (rank saturates at fresh points: 118) | n_c=118 n_d=88
+PASS S1.2.c w=2: character count of the class of ALL SO(3)-invariant symmetric cubic kernels = 118 and of ALL local gauge-deformation forms = 88; equal to n_c=118, n_d=88, so the independent kernels span both classes
+PASS S1.2.b w=2: consistent vertices <= n_c - rank_p[A B] + rank_Q B = 118 - 179 + 80 = 19
+[35s]
+PASS S1.3 SO(3) weight 0 and weight 1: NO consistent cubic vertex (upper bound 0)
+PASS S1.4 SO(3) weight 2: consistent cubic vertices form a space of dimension <= 19
+PASS S1.5 independent second sample of gauge points (seed 2): same dimension bound 19 (mod p ranks 179, 80)
+PASS S1.6 the 77 F2-patterns (local derivative-free field redefinitions) give 18 independent trivial cubic kernels (exact rank over Q), all inside the class; the ADM cubic kernel, 4 variants and the kinetic-rescaling kernel too (rank of [W|T|ADM variants|uK2] = n_c = 118) | rank=118
+PASS S1.7 mod-p dimension of the consistent space is 19 (equals the upper bound)
+PASS S1.8 every trivial vertex is consistent (rank[sol; trivial] = rank sol)
+PASS S1.9 the ADM cubic vertex is consistent (lies in the space of consistent vertices)
+PASS S1.10 field-redefined ADM variants (upper-index shift; exponential lapse) are consistent (positive control)
+PASS S1.11 mutated ADM (drop 1/N in K_ij) is NOT consistent; nor is ADM with +K^2 (negative controls)
+PASS S1.12 ADM is NOT a trivial vertex: rank[trivial; ADM] = rank[trivial] + 1 = 19 (rank mod p is a lower bound for the rank over Q)
+PASS S1.13 SO(3), weight 2: consistent vertices / trivial vertices has dimension <= 19 - 18 = 1 and ADM spans it
+[100s]
+=== 2. class O: the 24 proper cubic rotations (no SO(3) assumed); orbit sums of component monomials ===
+PASS S2.0.a w=0: 47 orbit sums span 16 independent O-invariant kernels (rank at fresh points 16); n_d=0
+PASS S2.0.c w=0: character count of ALL O-invariant symmetric cubic kernels = 16, of ALL local gauge-deformation forms = 0; equal to n_c=16, n_d=0 (the bases span both classes)
+PASS S2.0.b w=0: consistent vertices <= 16 - 16 + 0 = 0
+PASS S2.1.a w=1: 342 orbit sums span 55 independent O-invariant kernels (rank at fresh points 55); n_d=19
+PASS S2.1.c w=1: character count of ALL O-invariant symmetric cubic kernels = 55, of ALL local gauge-deformation forms = 19; equal to n_c=55, n_d=19 (the bases span both classes)
+PASS S2.1.b w=1: consistent vertices <= 55 - 74 + 19 = 0
+PASS S2.2.a w=2: 1529 orbit sums span 279 independent O-invariant kernels (rank at fresh points 279); n_d=142
+PASS S2.2.c w=2: character count of ALL O-invariant symmetric cubic kernels = 279, of ALL local gauge-deformation forms = 142; equal to n_c=279, n_d=142 (the bases span both classes)
+PASS S2.2.b w=2: consistent vertices <= 279 - 381 + 133 = 31
+PASS S2.3 O class, weight 0 and 1: NO consistent cubic vertex
+PASS S2.4 O class, weight 2: consistent cubic vertices form a space of dimension <= 31
+[174s]
+PASS S2.5 47 O-class F2 patterns give 30 independent trivial kernels (exact rank over Q), inside the class; ADM and variants inside the class (rank 279 = n_c)
+PASS S2.6 mod-p dimension of the consistent O-space is 31; every trivial vertex is consistent
+PASS S2.7 ADM and its field-redefined variants are consistent; mutated variants are not (O class)
+PASS S2.8 ADM is not trivial in the O class: rank[trivial; ADM] = 31 = rank[trivial] + 1
+PASS S2.9 O class, weight 2: consistent / trivial has dimension <= 31 - 30 = 1 and ADM spans it
+PASS S2.9b independent second sample (seed 2), O class: same bound 31 (mod p ranks 381, 133)
+PASS S2.10 cross-check of the two code paths: all 279 SO(3)-invariant kernels lie in the span of the 279 O-invariant kernels (rank of the union stays 279)
+[320s]
+=== 3. controls on the premises (SO(3) class, weight 2) ===
+  control: alpha=K/2 with the deformed time law du=2 xi0_dot -> consistent dimension 19 ; baseline ADM vertex consistent: False
+  control: alpha=K/4 but ONLY the spatial relabelling required (lapse constraint not required to be preserved) -> consistent dimension 23 ; baseline ADM vertex consistent: True
+  control: beta != -alpha (no time relabelling exists), spatial relabelling only -> consistent dimension 23 ; baseline ADM vertex consistent: False
+PASS S3.1 alpha=K/2 (time law deformed to stay a symmetry): the baseline ADM vertex is NOT consistent with that quadratic action; dimension 19
+PASS S3.2 spatial relabelling only: consistent cubic vertices are more numerous (23 > 19): uniqueness fails if the lapse constraint is not required to survive
+PASS S3.2b explicit counterexample when only the shift constraints are kept: ADM + kappa * int u [Hdot_ij Hdot_ij - (tr Hdot)^2] (a lapse-dependent rescaling of the kinetic term) is consistent for spatial relabelling only (Hdot and u are invariant under it), is not a field redefinition, and is NOT consistent once the time relabelling is required
+PASS S3.3 beta != -alpha, spatial relabelling only: dimension 23 > 19
+[352s]
+=== 4. what static (block 60) data can see ===
+PASS S4.1 ADM cubic vertex restricted to STATIC conformal data (lapse u, conformal factor) is nonzero but equals a local field redefinition there (rank 6 -> 6): static data cannot force or normalise the cubic vertex modulo redefinitions
+PASS S4.2 ... with time dependence (conformal sector, N=0) it is NOT removable (rank 6 -> 7): moving/time-dependent content carries the physical cubic information
+[359s]
+HIT: within the class {local polynomial cubic vertices of (u, N_i, h_ij) with exactly two derivatives (each d_t or d_i), invariant under the 24 proper cubic rotations (and separately under SO(3) with epsilon allowed)}, for the quadratic action of block 144 at alpha=K/4 with its spatial and time relabellings, the vertices admitting a local first-order field-dependent relabelling that keeps the constraint identities at second order form a space of dimension <= 31 (O) / 19 (SO(3)); modulo local derivative-free field redefinitions (dimension 30 / 18) it is exactly one-dimensional and spanned by the cubic part of N sqrt(gamma)(K_ij K^ij - K^2 + R); weight 0 and 1 admit none; dropping the lapse constraint (spatial relabelling only) destroys uniqueness; static conformal data cannot see the vertex mod redefinitions, time-dependent data can; the overall scale is not fixed by vacuum consistency.
+TOTAL: PASS=49 FAIL=0
+SUMMARY: PARTIAL - exact finite classification (CHECKED, not PROVED for all points): in the stated class (two-derivative, local, O or SO(3) invariant, quadratic action of block 144) the consistent cubic vertices are, modulo field redefinitions, the line spanned by the ADM cubic vertex; scale, higher weights, lattice corrections, sources and the equivalence 'constraints preserved' <=> 'local gauge identity' are not proved here. [runtime 359s]

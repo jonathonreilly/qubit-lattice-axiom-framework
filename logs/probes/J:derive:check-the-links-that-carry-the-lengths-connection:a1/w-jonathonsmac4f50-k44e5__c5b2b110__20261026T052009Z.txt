@@ -1,0 +1,36 @@
+--- Part A: block 161 T4 (links carrying the lengths connection) ---
+PASS A1 bond algebra: 1/2(E.s W1 + W1 E.s) with W1=(i/2)a.s equals (i/2)(E.a) times identity
+PASS A2 lattice walk without links -> framed walk H_f = -i s_a E^j_a d_j - (i/2)(d_j E^j_a) s_a (8 exact frames)
+PASS A3 links W=1+(i/2)eps a_j.s add exactly (1/2) sum_j E^j.a_j times identity: scalar only (8 exact frames)
+PASS A4 with a_{j,c} = (1/2) eps_cab omega_jab: (1/2) sum_j E^j.a_j = (1/4) eps_abc omega_abc = (1/8) eps.C, exactly (any strain)  [general epsC/8=717153/91120; general epsC/8=1735593551/284356800]
+PASS A5 comparator H_c = g^{1/4}[-i s_a E^j_a (d_j + Gamma_j)]g^{-1/4} equals H_f + (1/8) eps.C times identity, exactly (any strain)
+PASS A6 the lattice walk with the connection links has exactly the comparator's first-order operator (8 exact frames)
+PASS A7 control: reversed link orientation misses the comparator by -(1/4) eps.C (sign is load-bearing)
+PASS A8 control: eps.C != 0 on every tested frame, so the no-link walk does miss (frames are not degenerate)
+PASS A9 lengths' frame (symmetric strain): eps.C vanishes at first order and equals 2 eps_abc eta_ad d_b eta_cd at second
+--- Part B: block 159 T4 identities ---
+PASS B1 N sqrt(g) R for g=e^{2 lam}delta, N=e^u equals -4 div(e^{u+lam} grad lam) + 4 e^u [e^lam grad u.grad lam + (e^lam/2)|grad lam|^2], generic functions
+PASS B2 comparator static density has jets A(0)=1,C(0)=1/2,D(0)=0 and (A1,C1,D1)=(1,1/2,0); it lies on the plane 4A1-2C1-6D1=3
+PASS B2b block 60 curvature member (landed form) = family with A=e^lam, C=e^lam/2, D=0 at K_family=4K, pointwise
+--- Part B7: dictionary dependence of the third-order jet ---
+PASS B7a after the redefinition lam=mu+c1 mu^2, u=v+c2 mu^2 the density is again of the weight-one family with A(0)=1,C(0)=1/2,D=0
+PASS B7b its jets are (A1,C1,D1) = (1+2 c1, 1/2+2 c1+2 c2, 0): the third-order jet is NOT invariant under zero-derivative redefinitions
+PASS B7c the bend plane value 4A1-2C1-6D1 becomes 3+4(c1-c2): redefinitions with c1 = c2 slide along the plane, so the plane does not select the point
+PASS B7d the map (c1,c2) -> (A1,C1) has determinant 4 != 0: every jet (A1,C1,0) is the curvature member in redefined variables
+PASS B7e D1 stays 0 under these redefinitions (so D1 != 0 members are a different class)
+--- Part B3-B6: zero-derivative redefinitions, and strictly invariant redefinition vertices ---
+PASS B5a S2 = 1/4[tr Hd^2-(tr Hd)^2] + n R1 + R2 (comparator's quadratic part, FP form of R2) is invariant under block 157's linear laws (symbolic, all 10 fields, 4 parameters)
+PASS B5b control: with the sign of n R1 flipped the invariance FAILS (the test has power)
+PASS B5e R2 at the conformal mode h=2 lam delta has the same Euler-Lagrange expression as the exact 2nd-order part of sqrt(g)R (fixes sign and scale of R2; the h->(e^{2lam}-1) nonlinearity enters only through the divergence R1)
+PASS B5c symbol of the linearised equations annihilates pure gauge (E(p) Lambda(p)=0), is symmetric and even in p
+PASS B5d the symbol E(p) has generic rank 6 = 10 fields - 4 gauge parameters
+PASS B6a spatial relabellings alone leave a kernel of dimension 10, exactly the redefinitions F_A = c_A n^2 (control: the rank test detects kernels and explains them)  [kernel dim 10]
+PASS B6b E.F'Lambda = 0 (mod total derivatives) for ALL spatial and ALL time relabellings forces F = 0 over all 10 fields (rank 550 mod p, hence over Q)  [kernel dim 0]
+PASS B6c the same with relabellings in time only for spatially uniform clock profiles (xi0 = xi0(t))  [kernel dim 0]
+PASS B3a field-level: a zero-derivative quadratic redefinition of (h,n) keeps the first-order laws only if F=0 (196 coefficients, rank 196)
+PASS B3b same with the shift N_i included (550 coefficients, rank 550)
+PASS B4  even with field-dependent redefinitions of the gauge parameters xi -> xi + M(phi) xi (160 more coefficients), the laws are kept only if F=0 and M=0 (rank 710)
+TOTAL: PASS=28 FAIL=0
+runtime 177.4 s
+HIT: block 161 T4 confirmed with exact arithmetic at any strain (links W=1+(i/2)eps a.s with a the frame's own connection add exactly (1/8) eps.C, sign fixed, and the lattice limit is the comparator's operator); block 159 T4(c) closes (a redefinition vertex that is strictly invariant is zero) but it lands on (1,1/2,0) only through the metric-and-lapse dictionary, since zero-derivative redefinitions move the jets (1+2c1, 1/2+2c1+2c2, 0)
+SUMMARY: exact checks that the connection-carrying links add (1/8) eps.C with the stated sign, that the lattice limit is the comparator, that 159 T4(c) has no gap from strictly invariant redefinition vertices (kernel 0), and that its landing on (1,1/2,0) rests on the metric/lapse dictionary

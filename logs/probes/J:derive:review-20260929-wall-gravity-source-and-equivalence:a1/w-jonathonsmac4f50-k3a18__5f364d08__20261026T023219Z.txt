@@ -1,0 +1,54 @@
+PASS A1 R1 invariant under h -> h + p xi^T + xi p^T (generic p, h, xi)
+PASS A1 R2 invariant under h -> h + p xi^T + xi p^T (generic p, h, xi)
+PASS A2 R1 = 2 p^2 phi on the p-aligned parametrisation
+PASS A2 R2 = p^2 (phi^2 - a^2 - b^2)/2 (cx, cy, xi drop out)
+PASS A2 quadratic form is block diagonal in helicity {phi,xi,u | cx,cy | a,b} (general beta)
+PASS A2 the two TT polarisations a, b are uncoupled
+PASS A2b helicity-1 (cx, cy) and the xi direction have no p^2 potential: they cannot carry a wave; a, b have the only gradient energy
+PASS A3 TT (helicity 2): R2 weight -1/4, F_EH weight 1/2, R2 = -F_EH/2
+PASS A3 helicity 0 trace-free: R2 weight 1/12, F_EH weight -1/6, R2 = -F_EH/2
+PASS A3 helicity 1: R2 weight 0, F_EH weight 0, R2 = -F_EH/2
+PASS B1 static equations of cx, cy, xi force Txz = Tyz = Tzz = 0 (p.Theta = 0)
+PASS B1 static lapse u = -(e + Theta_xx + Theta_yy)/(4 K wbar p^2)
+PASS B1 static scalar phi = e/(2 K wbar p^2)
+PASS B1 L_eff(static) = (e^2 + 2 e Theta_ii)/(8 K wbar p^2) + Theta_TT:Theta_TT/(4 K wbar p^2)
+PASS B2 static weights: scalar (e e) : TT (Theta Theta) = 1 : 2, both alpha-free
+PASS B3 pair energy of two static energies: V = -G_E E1 E2 / r with G_E = 1/(16 pi K wbar)
+PASS B3 Fourier pair 1/(p^2+m^2) <-> exp(-m r)/(4 pi r): (-lap + m^2) f = 0 for r>0
+PASS B3 ... and unit delta weight: -4 pi r^2 f'(r) -> 1 as r -> 0
+PASS B5 sign: V_ee = -e1 e2/(4 K wbar p^2) is attractive iff K wbar > 0; TT frequency^2 = K wbar^2 p^2/(4 alpha) > 0 iff K/alpha > 0 -- one sign datum (K>0, alpha>0) covers stability and attraction
+PASS C1 TT equation: a'' + c^2 p^2 a = (wbar/(4 alpha)) Theta_+ with c^2 = K wbar^2/(4 alpha)
+PASS C1 inertia I = 2 alpha/wbar, gradient stiffness K_g = K wbar/2, speed c^2 = K_g/I
+PASS C2 outgoing wave: Poynting flux = c * energy density when c^2 = K wbar^2/(4 alpha)
+PASS C2 outgoing wave: flux = (K wbar/(2c)) (dh/dt)^2
+PASS C3 TT propagator: static value 1/(K_g p^2); residue at omega = c p is -1/(2 I c p)
+PASS D0 helicity-0 sector reproduces the full-action equations (xi: 8(alpha+beta) xi'' + 8 beta phi'' ... )
+PASS D1 beta = -alpha: xi-equation contains no xi, only phi'': -8 alpha phi''/wbar = Theta_zz
+PASS D1 beta = -alpha: e'' = -(K wbar^2/(4 alpha)) p^2 Theta_zz  (the action's own source identity)
+PASS D1 ... and the coefficient equals the TT speed squared (J = kappa P with kappa = c^2)
+PASS D2 alpha+beta != 0: xi'' = [w Theta_zz - 8 beta phi'']/(8(alpha+beta)) for ANY Theta_zz (no identity on e)
+PASS D2 ... so with alpha+beta != 0 the equations are solvable for any (e, Theta); identity absent
+PASS D3 compact support: int x_i x_j d_k d_l Theta_kl = 2 int Theta_ij (3 random Gaussian-polynomial tensors, exact)
+PASS D3 hence Q''_ij = 2 c^2 A_ij, A_ij = int Theta_ij, Q_ij = int e x_i x_j (given e'' = c^2 d_k d_l Theta_kl)
+PASS B4 stationary compact stress (d_j Theta_ij = 0, Gaussian-polynomial family, exact): int Theta_ii = 0 and int x_k Theta_ii = 0, so the far lapse is sourced by int e (binding energy included) and the pull at O(gradient) is -E_tot grad u
+PASS E1 sphere integral of the TT-projected square: (8 pi/5)(A:A - (tr A)^2/3)
+PASS E2 polarisation-tensor sum gives the same sphere integral (independent construction)
+PASS E3 flux route and mode-sum route give the same power when c^2 = K wbar^2/(4 alpha)
+PASS E3 and NOT otherwise: the two routes differ at fixed alpha, K, wbar if c is not the TT speed
+PASS E4 Lorentzian absorption line integrates to pi/(2 omega) as gamma -> 0 (delta(omega_p^2-omega^2) = delta/(2 omega))
+PASS E5 P = <dddot Q^TF:dddot Q^TF> / (80 pi K wbar c^5)
+PASS E5 = (G_E/(5 c^5)) <dddot Q^TF^2> with G_E = 1/(16 pi K wbar): the quadrupole formula, ratio 1 for every alpha/K
+PASS E5 in static-weight language: P = W_TT <dddotQ^2>/(20 pi c^5), W_TT = 1/(4 K wbar)
+PASS F1 every static quantity (G_E, weights, u, phi, a) is independent of alpha
+PASS F1 counterexample: same K, wbar (same static G_E, same weights, same bending) but alpha = 1/4 vs 1 -> c = 1 vs 1/2 and power ratio 32 for the same energy-quadrupole history
+PASS F1 P scales as alpha^(5/2) at fixed K, wbar and fixed energy-quadrupole history: P(4 alpha)/P(alpha) = 32
+PASS F2 alpha+beta != 0, matter law J = kappa P: P = G_E <dddotQ^2>/(5 c kappa^2)
+PASS F2 relative to the quadrupole formula at the MATTER speed c_m = sqrt(kappa): P/P_GR = c_m/c  (=1 iff c = c_m)
+PASS G1 at Theta = 0: u = -phi/2; the isotropic part h_ij = phi delta_ij (gauge-equivalent to the p-aligned form by A1) so lambda = phi/2 = -u
+PASS G2 refractive index n = 1 - 2u to first order (gamma_PPN = 1)
+PASS G2 deflection = 4 G_E E / b = E/(4 pi K wbar b), no alpha, no c
+PASS G2 clock alone (h = 0) bends by 2 G_E E / b, half of the combined value
+PASS G3 same coordinates, same fields: deflection has no alpha while c^2 does -> bending and the wave speed are separate numbers here (beta = -alpha action); no relation 1 + c_m^2/c^2 appears
+TOTAL: PASS=51 FAIL=0
+HIT: block-101 member (beta=-alpha, stress coupling) radiates the quadrupole law P=(G_E/(5c^5))<dddotQ^TF^2> with G_E=1/(16 pi K wbar) from the static scalar weight and c^2=K wbar^2/(4 alpha) forced by the action's own source identity (ratio to the quadrupole formula is 1 for every alpha/K); at alpha+beta!=0 with matter law J=kappa P it is c_m/c; this is scoped to the supplied mode action and long-wavelength quadrupole, and is not a physical source, not a speed bound.
+SUMMARY: for the supplied block-101 mode action with stress coupling, static helicity weights (scalar:TT = 1:2, alpha-free) fix G_E and the bending (gamma=1, alpha-free), while the quadrupole power needs inertia alpha through c^-5 and the action's own source identity, giving exactly the quadrupole formula at the TT speed.

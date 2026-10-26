@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20260929-wall-gravity-source-and-equivalence:a1",
+ "type": "judgment",
+ "lane": "review-science-20260929",
+ "worker": "w-jonathonsmac4f50-k3a18",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20260929-wall-gravity-source-and-equivalence/w-jonathonsmac4f50-k3a18/check.py",
+ "seed": 81939,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "5f364d08",
+ "started_utc": "20261026T023219Z",
+ "elapsed_s": 12.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "for the supplied block-101 mode action with stress coupling, static helicity weights (scalar:TT = 1:2, alpha-free) fix G_E and the bending (gamma=1, alpha-free), while the quadrupole power needs inertia alpha through c^-5 and the action's own source identity, giving exactly the quadrupole formula at the TT speed."
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 51/51 PASS (~13 s) with two mutation controls; scoped to the supplied block-101 mode action with stress coupling beta=-alpha: static weights scalar:TT = 1:2 independent of alpha, G_E=1/(16 pi K wbar), light bending 4 G_E E/b, quadrupole power P=(G_E/5c^5)<Q'''^2> with c^2=K wbar^2/(4 alpha) (two routes agree); alpha=1/4 vs 1 gives identical static data but power ratio exactly 32; no native compact source obeying the action's source identity exhibited (step 14); novelty rests on title/grep search only.",
+ "what": "Choose one precisely specified source action and compute a bounded static or dynamic result. Separate static helicity projector weights from radiation power: residue, inertia, speed and conserved source law are required. No binary-pulsar speed exclusion is adopted from the exploratory packet. For light bending and composite fall use the same clock/length coordinates and bound-state state space; distinguish canonical comparator normalization from a native physical source. Owner-requested research transfer after landing review. The source is an unlanded hypothesis, not authority: fetch the named author branch, verify the frozen Git SHA and exact path/hash from probes/work/review-science-20260929/SOURCE_MAP.json. Fetch current origin/main and prefer its corrected bounded sources; read the actual axiom memo and primitive grants before premise judgments. Check related tasks, completed attempts, referee reports and active claims before choosing ONE distinct obligation. Read the complete argument, actual inputs and paired code for that obligation. Known review corrections are background, not a new HIT. Deliver numbered PROVED/CHECKED/ASSUMED steps in ATTEMPT.md, a self-contained check.py with disjoint machinery, and RECOVERY_STATUS.json with hashes, first unresolved step and remaining obligations. Prove finite claims exactly where possible; failed search is not a no-go and negative claims require N1-N8 before promotion. Commit the checker before run_probe.py; print SUMMARY with the actual result and HIT only for a demonstrated new result or defect. Finish through claim.py and ordinary cross-model confirmation. Use the existing maximum-thinking J campaign; do not spawn agents, start workers, change budgets, create PRs or edit scientific/audit authority.",
+ "stdout_sha256": "ec053b5d411b4d677e09ddc3c4794636d5b00d17c2b5fc8b0199604b0d5d0133",
+ "stdout_tail": "^2>/(5 c kappa^2)\nPASS F2 relative to the quadrupole formula at the MATTER speed c_m = sqrt(kappa): P/P_GR = c_m/c  (=1 iff c = c_m)\nPASS G1 at Theta = 0: u = -phi/2; the isotropic part h_ij = phi delta_ij (gauge-equivalent to the p-aligned form by A1) so lambda = phi/2 = -u\nPASS G2 refractive index n = 1 - 2u to first order (gamma_PPN = 1)\nPASS G2 deflection = 4 G_E E / b = E/(4 pi K wbar b), no alpha, no c\nPASS G2 clock alone (h = 0) bends by 2 G_E E / b, half of the combined value\nPASS G3 same coordinates, same fields: deflection has no alpha while c^2 does -> bending and the wave speed are separate numbers here (beta = -alpha action); no relation 1 + c_m^2/c^2 appears\nTOTAL: PASS=51 FAIL=0\nHIT: block-101 member (beta=-alpha, stress coupling) radiates the quadrupole law P=(G_E/(5c^5))<dddotQ^TF^2> with G_E=1/(16 pi K wbar) from the static scalar weight and c^2=K wbar^2/(4 alpha) forced by the action's own source identity (ratio to the quadrupole formula is 1 for every alpha/K); at alpha+beta!=0 with matter law J=kappa P it is c_m/c; this is scoped to the supplied mode action and long-wavelength quadrupole, and is not a physical source, not a speed bound.\nSUMMARY: for the supplied block-101 mode action with stress coupling, static helicity weights (scalar:TT = 1:2, alpha-free) fix G_E and the bending (gamma=1, alpha-free), while the quadrupole power needs inertia alpha through c^-5 and the action's own source identity, giving exactly the quadrupole formula at the TT speed.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k3a18",
+  "at_utc": "20261026T023237Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Scoped result for one supplied action; the source question is reduced, not resolved. Same-family, unrefereed.",
+  "by": "w-jonathonsmac4f50-k3a18",
+  "at_utc": "20261026T023237Z"
+ }
+}

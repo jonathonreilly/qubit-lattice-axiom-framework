@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20260929-tensor-effective-stiffness:a1",
+ "type": "judgment",
+ "lane": "review-science-20260929",
+ "worker": "w-jonathonsmac4f50-k82b1",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20260929-tensor-effective-stiffness/w-jonathonsmac4f50-k82b1/check.py",
+ "seed": 77579,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "3a78715e",
+ "started_utc": "20261026T011939Z",
+ "elapsed_s": 7.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "exact check that the angular helicity-one >= TT/4 bound equals (9/4) times the stiffness on the helicity-zero tensor nn^T-I/3 and therefore holds for every positive-semidefinite quadratic tensor symbol after gapped-sector elimination, with no finite Gram needed, together with an exact positive finite-range symbol (Choi form with a gapped trace) that has no finite Gram of moves."
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 24/24 PASS (~8 s); the angular quarter bound <H1> >= <TT>/4 as an exact perfect-square identity for positive-semidefinite quadratic symbols (exact check; proof given for the general PSD case), an explicit positive finite-range symbol with no finite Gram built from Choi's biquadratic form (Choi, Fejer-Riesz and Calderon/Choi cited, not re-proved); helicity-one mode statement conditional on isotropic inertia; general inertia open (step 13).",
+ "what": "Classify when an analytic positive local tensor symbol admits a finite positive Gram of move amplitudes. Either prove the additional factorization needed by the partner argument, or construct a positive finite-range counterexample. Eliminate all gapped sectors before measuring helicity; independently reproduce the exact angular quarter certificate already on current main. Establish physical quotient and inertia before drawing a dispersion conclusion. Owner-requested research transfer after landing review. The source is an unlanded hypothesis, not authority: fetch the named author branch, verify the frozen Git SHA and exact path/hash from probes/work/review-science-20260929/SOURCE_MAP.json. Fetch current origin/main and prefer its corrected bounded sources; read the actual axiom memo and primitive grants before premise judgments. Check related tasks, completed attempts, referee reports and active claims before choosing ONE distinct obligation. Read the complete argument, actual inputs and paired code for that obligation. Known review corrections are background, not a new HIT. Deliver numbered PROVED/CHECKED/ASSUMED steps in ATTEMPT.md, a self-contained check.py with disjoint machinery, and RECOVERY_STATUS.json with hashes, first unresolved step and remaining obligations. Prove finite claims exactly where possible; failed search is not a no-go and negative claims require N1-N8 before promotion. Commit the checker before run_probe.py; print SUMMARY with the actual result and HIT only for a demonstrated new result or defect. Finish through claim.py and ordinary cross-model confirmation. Use the existing maximum-thinking J campaign; do not spawn agents, start workers, change budgets, create PRs or edit scientific/audit authority.",
+ "stdout_sha256": "b8573360d74f9a8d25813de159d05be30e3a3ac51621767134b2e75016529a5d",
+ "stdout_tail": "S 5.4 isotropic invariants give (lam0,lam1,lam2) = (a1+2a2/3, a1+a2/2, a1)\nPASS 5.5 the Gram cone (spin-channel rays J=1,2,3) equals the PSD cone {a1>=0, a1+2a2/3>=0}: J=1 and J=2 are its two extreme rays, J=3 lies inside | rays (a1,a2): {1: (0, 3/5), 2: (2/3, -1), 3: (1/3, 2/5)}\nPASS 5.6 isotropic symbol: <H1> = 2*lam1, <TT> = 2*lam2, <H1>-<TT>/4 = (3/2)*lam0 = (9/4)<xi^T V xi> | <H1>=2*a1s + a2s, <TT>=2*a1s\nPASS 6.1 isotropic PSD symbol annihilating the helicity-one (pure gauge) tensors: lam1=0 gives lam2 = -3*lam0, so lam0,lam2 >= 0 force lam0=lam2=0 (no TT stiffness at O(q^2))\nPASS 6.2 inertia K=kappa*1: omega_1^2 = (3 omega_0^2 + omega_TT^2)/4 exactly; with omega_0^2>=0 this gives omega_1 >= omega_TT/2\nTOTAL: PASS=24 FAIL=0\nHIT: (scoped, same-family, unrefereed) the angular bound <H1> >= <TT>/4 is an exact perfect-square identity <H1>-<TT>/4 = (9/4)<Y^T V Y>, Y=nn^T-I/3, valid for every positive-semidefinite quadratic tensor symbol (no finite Gram needed), and a positive finite-range symbol with a gapped trace channel and no finite Gram of moves exists (Choi form).\nSUMMARY: exact check that the angular helicity-one >= TT/4 bound equals (9/4) times the stiffness on the helicity-zero tensor nn^T-I/3 and therefore holds for every positive-semidefinite quadratic tensor symbol after gapped-sector elimination, with no finite Gram needed, together with an exact positive finite-range symbol (Choi form with a gapped trace) that has no finite Gram of moves.\n\n[stderr]\nruntime 6.8s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k82b1",
+  "at_utc": "20261026T011951Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Scoped: quarter-bound identity for PSD tensor symbols plus a no-finite-Gram example. Same-family, unrefereed.",
+  "by": "w-jonathonsmac4f50-k82b1",
+  "at_utc": "20261026T011951Z"
+ }
+}

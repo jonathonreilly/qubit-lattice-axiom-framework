@@ -1,0 +1,30 @@
+PASS 0.1 sphere averages <nx^2>,<nx^4>,<nx^2 ny^2>,<nx^6>,<nx^2 ny^2 nz^2>
+PASS 1.1 H1(M,n)=2(|Mn|^2-f^2), TT(M,n) equal the squared norms of the explicit helicity-1 / TT projections (5 directions x 3 tensors)
+PASS 2.1 PERFECT-SQUARE IDENTITY, entrywise: <(Pi_H1 - Pi_TT/4)_ab n_k n_l> = (9/4) <Y_a Y_b n_k n_l>, Y(n)=nn^T-I/3 (all 6x6x3x3 entries)
+PASS 2.2 Q symmetric 18x18 rational
+PASS 2.3 Q is positive semidefinite (all elementary symmetric functions of the spectrum >= 0, exact)
+PASS 2.4 rank Q = 10 (= dim of odd cubic functions on S^2, spin 1 + spin 3); kernel dimension 8 | rank=10
+PASS 2.5 the 18x18 matrix reproduces <H1-TT/4> for a random integer first-moment vector, matching an independent closed-form moment formula
+PASS 2.6 scalar-compatible family sym(n xi)+sym([n]xA): <H1>-<TT>/4 = |xi|^2/3 = (9/4)<(f-trM/3)^2> (symbolic in xi, A)
+PASS 2.7 the 1/4 is attained: M=sym([n]x diag(1,-1,0)) has <TT> > 0 and <H1> = <TT>/4 | <H1>=1/5, <TT>=4/5
+PASS 3.1 random indefinite quadratic symbol (126 integer coefficients): L(V)=(9/4)<xi^T V xi>
+PASS 4.1 Choi form PSD: every principal minor of N(x) >= 0 (3x3 det via cube-AM/GM identity u^3+v^3+w^3-3uvw = (u+v+w)*sum (u-v)^2/2)
+PASS 4.2 Choi form is NOT a sum of squares of bilinear forms: forms vanishing on its 7 zeros are diag(a1,a2,a3), a1+a2+a3=0; their squares never contain x1^2 y2^2, f does | free parameters=2, coeff of x1^2y2^2: in any SOS=0, in f=1
+PASS 4.3 the Choi symbol (positive, not Gram) obeys <H1> >= <TT>/4 with <H1>-<TT>/4 = (9/4)<xi^T W xi> > 0 | <H1>=52/35, <TT>=64/35, L=36/35
+PASS 4.4 lattice symbol V(q)=[[1,b^T],[b,bb^T+N(sin q)]], b=sin q: entries trigonometric polynomials; V=L diag(1,N) L^T (PSD); V(0)=diag(1,0,0,0); exact Schur complement N(sin q) with leading O(q^2) part the Choi matrix
+PASS 4.5 measuring helicity BEFORE eliminating the gapped channel changes the weights (raw <H1>,<TT> differ from reduced); both still satisfy the quarter bound | raw H1/TT = 12/5/12/5; reduced H1/TT = 52/35/64/35
+PASS 4.6 finite Gram with one gapped column: leading Schur complement is exactly (PB)^T(PB) with B linear in q (sum of squares of linear forms), incl. random O(q^2) and O(q) trace corrections (3 exact trials)
+PASS 5.1 Casimir of 3 (x) 3 (x) 3 has J(J+1) spectrum {0,2,6,12}
+PASS 5.2 each spin-J channel's symbol at q=z is diagonal in the helicity basis with equal +-m eigenvalues | (lam0,lam1,lam2): {1: [2/5, 3/10, 0], 2: [0, 1/6, 2/3], 3: [3/5, 8/15, 1/3]}
+PASS 5.3 locality relation 4*lam1 = lam2 + 3*lam0 (helicity-1 eigenvalue is fixed by the other two) in every channel
+PASS 5.4 isotropic invariants give (lam0,lam1,lam2) = (a1+2a2/3, a1+a2/2, a1)
+PASS 5.5 the Gram cone (spin-channel rays J=1,2,3) equals the PSD cone {a1>=0, a1+2a2/3>=0}: J=1 and J=2 are its two extreme rays, J=3 lies inside | rays (a1,a2): {1: (0, 3/5), 2: (2/3, -1), 3: (1/3, 2/5)}
+PASS 5.6 isotropic symbol: <H1> = 2*lam1, <TT> = 2*lam2, <H1>-<TT>/4 = (3/2)*lam0 = (9/4)<xi^T V xi> | <H1>=2*a1s + a2s, <TT>=2*a1s
+PASS 6.1 isotropic PSD symbol annihilating the helicity-one (pure gauge) tensors: lam1=0 gives lam2 = -3*lam0, so lam0,lam2 >= 0 force lam0=lam2=0 (no TT stiffness at O(q^2))
+PASS 6.2 inertia K=kappa*1: omega_1^2 = (3 omega_0^2 + omega_TT^2)/4 exactly; with omega_0^2>=0 this gives omega_1 >= omega_TT/2
+TOTAL: PASS=24 FAIL=0
+HIT: (scoped, same-family, unrefereed) the angular bound <H1> >= <TT>/4 is an exact perfect-square identity <H1>-<TT>/4 = (9/4)<Y^T V Y>, Y=nn^T-I/3, valid for every positive-semidefinite quadratic tensor symbol (no finite Gram needed), and a positive finite-range symbol with a gapped trace channel and no finite Gram of moves exists (Choi form).
+SUMMARY: exact check that the angular helicity-one >= TT/4 bound equals (9/4) times the stiffness on the helicity-zero tensor nn^T-I/3 and therefore holds for every positive-semidefinite quadratic tensor symbol after gapped-sector elimination, with no finite Gram needed, together with an exact positive finite-range symbol (Choi form with a gapped trace) that has no finite Gram of moves.
+
+[stderr]
+runtime 6.8s

@@ -1,0 +1,63 @@
+# SECTION 0: the supplied code, re-implemented (L=4, default fluxes square=pi, plaquette=pi)
+PASS code: 4160 generators (768 B, 768 R, 2624 loops) of rank 3069; log2 code dimension 3; no -I in the group
+PASS 2304 hop operators A(q,r) are Hermitian Paulis (6 hops per corner vertex)
+PASS BKSF hop algebra (exhaustive, all 2304*2303/2 pairs): hops anticommute iff they share exactly one vertex  | violations=0
+PASS all 4160 stabilizer generators pairwise commute (exhaustive)  | violations=0
+PASS every loop generator commutes with every hop (exhaustive 2624 x 2304)  | violations=0
+PASS T-junction exchange sign of the corner charge is -1 (theta = -1, a fermion)
+PASS all 16 uniform flux patterns (square,triangle,plaquette,tube) give a consistent code (no -I) with log2 dimension 3
+   [  20.9s] section 0
+# SECTION 1: cycle calculus (hop products around closed walks)
+PASS fillability: in the radius-2 site box every closed walk is a GF(2) boundary of faces (cycle rank = face-boundary rank)  | rank 2701 edges 4200
+PASS Lemma 0 (quadratic-form parity): #anticommuting hop pairs = n-1 (open walk, distinct ends) or n (closed) mod 2; hence Pi^2=(-1)^{n-1}  | 300 random walks incl. backtracking, violations=0
+PASS Lemma 2 (exact Pauli identity): E(a.b) = E(a.abar') E(a'.b) for walks a,a':x->y, b:y->x (E(c)=i^{|c|} * hop product)  | 149 random triples, violations=0
+PASS Lemma 2': E(c) commutes with every hop and is base-point invariant, for random closed walks  | 60 walks
+PASS Lemma 3 (flux rule): E(c) = (-1)^{Phi(c)} * (stabilizer), Phi = total flux of any face filling of c  (reduce phase == 2*Phi)  | 60 random closed walks (not nec. simple), violations=0
+   [  31.4s] section 1
+# SECTION 2: pair-eigenvalue theorem  lambda = -(-1)^{Phi(gamma . g gamma)}  and flux dictionary
+PASS Theorem A: all 9 point-group C2, 270 random walks (simple and non-simple) from q to Rq: Pauli-reduction sign == -(-1)^{Phi} (independent GF(2) face filling)  | tested=268, mismatches=0
+PASS default flux: lambda = +1 for all axis C2 and -1 for all edge C2, independent of q and of the walk (representative invariance)  | {'axis': [1], 'edge': [-1]}
+PASS explicit proof objects: the C2z walk q -> Rq on the z-square closes to exactly the boundary of the z-square (Phi=F_sq); the C2[110] hexagon is exactly the boundary of {square_x, square_y, triangle(+++), triangle(++-)} (Phi=2F_sq+2F_tri=0 for every flux)
+PASS Theorem A holds for all 16 uniform flux patterns and 8 space-group involutions (site / bond-centred / plaquette-centred / offset-edge axes)  | tested=767, mismatches=0
+PASS flux dictionary (SUGGESTED rule, CHECKED on this sample): lambda = -(-1)^{F(face pierced at its centre by the axis)}: site axis -> square, plaquette-centred axis -> plaquette, z-offset edge axis -> tube; site-edge, bond-centred and in-plane edge axes -> -1 for every flux  | rule mismatches=0
+PASS C4 four-charge orbit (charges at q,gq,g^2 q,g^3 q; creators gamma + g^2 gamma): lambda = -(-1)^{Phi(closed 4-fold walk)} = -(-1)^{F_square} (cyclic 4-permutation sign -1 times ghat^4 = eta_axis)  | 144 cases
+   [ 181.6s] section 2
+# SECTION 3: admissible dressings -- local TQO (all neutral Paulis in a ball are stabilizers) and dressing invariance
+PASS local TQO, L=4, 3x3x3-site ball: dim(centralizer of S inside Pauli(ball)) == dim(S cap Pauli(ball)) => every neutral Pauli in the ball is +-(stabilizer)  | sites=27, dim S_B=1081, centralizer=1081
+PASS local TQO, L=6, 5x5x5-site ball (covers the [-2,2]^3 creator box): same equality  | sites=125, dim S_B=5401, centralizer=5401
+PASS negative control: L=4 with a 5-wide ball wraps the torus and the equality FAILS by the 6 logical Pauli generators  | excess=6
+PASS dressing invariance with the real Clifford U (C2z): lambda(S*C) == lambda(S) for C a random product of 150 stabilizer generators  | 12 cases
+   [ 196.9s] section 3
+# SECTION 4: torus sectors (L=4): scalar-ness of the comparison operator is governed by the winding of gamma . g gamma
+PASS three straight lattice-line hop loops E(a_x),E(a_y),E(a_z) are neutral (commute with all stabilizers and hops) and all 7 nonzero products lie OUTSIDE the stabilizer group: independent logical operators
+PASS torus L=4 (random creators q -> R q + L n, n in {-1,0,1}^3): comparison operator S^-1 U(S) is a scalar iff the winding m=(1+R)n of gamma.R gamma is even; odd-winding cases are genuine logical (non-scalar) loops  | samples=125, table={('axis', False): 42, ('edge', False): 37, ('edge', True): 46}
+PASS torus L=4: whenever the comparison operator is scalar (even winding, incl. nonzero even winding such as 2 z-hat), lambda equals the contractible value (+1 axis, -1 edge)
+   [ 232.9s] section 4
+# SECTION 5: cluster Majorana lift (PSG), its class, D2 restrictions, pair-sector representation
+PASS cluster geometry: 12 corners, 24 on-site hops, 6 squares + 8 triangles forming the cuboctahedron sphere (Euler 12-24+14=2); sphere flux 6F_sq+8F_tri is even for every pattern
+PASS PSG/Majorana lift exists on the cluster for all (F_sq,F_tri): signed permutations M_g with M_g M_h = c(g,h) M_gh and c(g,h) = +-1 independent of the corner (a Z2 central extension)
+PASS each lift cocycle c satisfies the 2-cocycle identity and is normalised
+PASS c(g,g) on involutions: axis C2 -> (-1)^{F_square}; edge C2 -> +1 (independent of F_triangle) -- the PSG signs of the source note, from the holonomy of the gauge field
+PASS H^2(O;Z2) = Z2^2 (exact GF(2) linear algebra over normalised cochains) and the map c -> (c(axis C2,axis C2), c(edge C2,edge C2)) is injective on classes (kernel = coboundaries)
+PASS w1 = sign of the permutation of the six directions: even on axis C2, odd on edge C2, C4; cocycle w1^2(g,h)=w1(g)w1(h) has invariants (axis,edge)=(+,-); spin cover w2 has (-,-) (every pi-rotation lifts to an element of order 4 in SU(2))
+PASS class of the untwisted lift: invariants (axis,edge)=(F_sq,0) => class F_sq*(w2+w1^2); twisted by i^{w1}: (F_sq,1) => class F_sq*w2 + (F_sq+1)*w1^2;  w2 alone is never an untwisted class of this uniform-flux family
+PASS U(1)-class (solve nu(a)nu(b)=c(a,b)nu(ab) in mu_24): TRIVIAL iff F_sq=0; for F_sq=1 it is nontrivial both untwisted and twisted -- the twist i^{w1} does not change the U(1)-class [w2]
+PASS D2 restrictions (axis D2={1,C2x,C2y,C2z}, F_sq=pi): M_x^2=M_y^2=M_z^2=-1, pairwise anticommuting, trace 0 => the 12-dim cluster space is 6 copies of the unique 2-dim projective irrep (no one-dimensional D2 sector); no corner is fixed by any axis C2 (D2 acts freely, orbits of size 4)  | fixed corners: axis C2 0, edge C2 12 (each edge C2 fixes 2 of 12)
+PASS edge-D2 {1,C2z,C2[110],C2[1-10]} (untwisted, F_sq=pi): squares (-,+,+), pairwise anticommuting => again only 2-dimensional constituents (odd number of -1 squares)
+PASS cluster two-charge sector computed from the Pauli code (66 states, hop strings inside the cluster; F_sq=1): a genuine linear O-rep (0 group-law violations); character == that of Lambda^2(rho_hat) with rho_hat the signed-permutation lift of class c  | group-law violations=0; equals Lambda^2(unsigned permutation rep): False
+PASS for F_sq=pi the two-charge sector differs from Lambda^2 of the plain corner-permutation representation (axis C2 character +6 vs -6): the pair sector sees the projective sign structure
+PASS cluster pair eigenvalues from the Pauli code equal -c(g,g) of the Majorana lift for all nine C2 and every non-fixed corner (lambda = theta * eta with theta=-1)
+PASS cluster two-charge sector computed from the Pauli code (66 states, hop strings inside the cluster; F_sq=0): a genuine linear O-rep (0 group-law violations); character == that of Lambda^2(rho_hat) with rho_hat the signed-permutation lift of class c  | group-law violations=0; equals Lambda^2(unsigned permutation rep): True
+   [ 235.1s] section 5
+# SECTION 6: re-verification of the used part of the imported O action, and the vacuum vector
+PASS U_C4z = (qubit permutation) . (on-site CZ network) . (Z fixes), rebuilt independently: maps every hop exactly to the rotated hop and every one of the 4160 stabilizer generators to +(a generator)  | hop mismatches=0, generator failures=0
+PASS U_C3[111] = (qubit permutation) . (on-site CZ network) . (Z fixes), rebuilt independently: maps every hop exactly to the rotated hop and every one of the 4160 stabilizer generators to +(a generator)  | hop mismatches=0, generator failures=0
+PASS unit translations U_T (site permutation, same local label) map every hop exactly to the translated hop and every stabilizer generator to +(a generator): the compositions U_T U_R used for bond-/plaquette-centred involutions are hop-exact  | hop mismatches=0, generator failures=0
+PASS vacuum reference: the Z-type subgroup of S has dimension 1535 (products of B and R) and every element has sign +1 for all 16 flux patterns, so <0^N|Pi_S|0^N> = 2^(1535-3069) > 0 and |Omega> = Pi_S|0^N> is a nonzero vector of the 8-dim code space
+PASS W twist: prod_q B_q * prod_links R = identity (so W^2 = (-i)^{24 L^3} prod B prod R = I); W = (-1)^{(#violated B,R)/2} equals +1 on |0^N> and on the code space, and commutes with Pi_S
+   [ 269.7s] section 6
+   total runtime 269.7s
+TOTAL: PASS=44 FAIL=0
+HIT: scoped exact result on the supplied corner code -- cycle calculus gives lambda_g = -(-1)^{Phi(gamma.g gamma)} for any involutive hop-exact symmetry and any walk (so the pair sign is representative-independent for contractible comparison loops, any L / infinite volume), with flux dictionary (axis C2 <-> square flux, edge C2 <-> none, plaquette-/tube-pierced axes <-> plaquette/tube), uniform-flux classes {0, w2+w1^2} only (w2 alone needs the i^{w1} twist; U(1)-class [w2] iff F_sq=pi, twist independent), torus-sector dichotomy (scalar iff even winding), local-TQO dressings in 3^3 (L=4) and 5^3 (L=6) balls, cluster pair sector = Lambda^2 of the projective lift, and an explicit common phase-one vacuum vector on the L=4 torus
+SUMMARY: Independent re-implementation of the supplied corner qubit code shows that every involutive hop-exact symmetry has pair eigenvalue -(-1)^{flux of a filling of gamma.g gamma} for all walks (representative-independent in infinite volume), that the Majorana-lift class is F_sq*(w2+w1^2) so w2 needs the i^{w1} twist but the U(1)-class [w2] does not, plus checked local-TQO dressings, torus winding sectors, D2 restrictions, pair-sector character and a vacuum vector; the single-charge (odd-sector) localized operators remain unconstructed.
+exit=0

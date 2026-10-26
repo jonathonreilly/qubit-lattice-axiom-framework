@@ -1,0 +1,183 @@
+{
+ "source_branch": "main",
+ "source_head": "e0088f3928483dfb5825b4ff6e3f91dc4d799400",
+ "source_objects": [
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261017/HANDOFF.md",
+   "sha256": "b32e143a95f1f60829c59231f4d4b7cc12872678fe63a9ff232c042101324fdd",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261017/OPPORTUNITY_QUEUE.md",
+   "sha256": "76d8994718d0ef291f314f0faec5b18bafcabba39aa66e28bd0b0be1d13d14d7",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/physics-loops/toe-campaign-20261017/c15_doublet/independent_check/README.md",
+   "sha256": "8360246d7fbc2eaaf3904a7b87208a2bc93804ab778f83011ee0934bf3390914",
+   "verified": true
+  },
+  {
+   "path": "archive/corner_dirac_followup_2026_10_18/README.md",
+   "sha256": "97171199eb61651411644e32a546d3471adf9c933e1309250a3a5995dfbb031f",
+   "verified": true
+  },
+  {
+   "path": "archive/corner_dirac_followup_2026_10_18/archive-manifest.json",
+   "sha256": "72d69577aebb931e94ae241178ed4eb7d1513145736514b1f636909ec9de6f63",
+   "verified": true
+  },
+  {
+   "path": "archive/corner_dirac_followup_2026_10_18/original-pr-extra-paths.json",
+   "sha256": "37a4c07a9bd89e15903c6f506078dcdc5a179dc3d030b53152dc171dd3aec547",
+   "verified": true
+  },
+  {
+   "path": "archive/six_direction_qubit_lane_2026_10_17/MANIFEST.json",
+   "sha256": "06767727a58e000881f52adb5be0df17728998a905fb21d9d95afefce5e7d2aa",
+   "verified": true
+  },
+  {
+   "path": "archive/six_direction_qubit_lane_2026_10_17/README.md",
+   "sha256": "968a7fa32a29f18cc341596f1e5a34e351357e04bede911f8a7b17cab2d77274",
+   "verified": true
+  },
+  {
+   "path": "docs/BKSF_CUBIC_FERMION_CODES_ARE_NOT_ROTATION_INVARIANT_MINIMAL_ORBIT_FOUR_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+   "sha256": "5edf0921d2d799672ac6560b8a8a5a91e3a4efafa833f69659950081f97758c2",
+   "verified": true
+  },
+  {
+   "path": "docs/BKSF_CUBIC_FERMION_CODES_BARE_PERMUTATION_ROTATIONS_ACT_SPINORIALLY_ON_THE_FERMION_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+   "sha256": "0a9afc47c2a0f07cb2ee3ed084035752a9789ee128e709426f95f8a2110a28c9",
+   "verified": true
+  },
+  {
+   "path": "docs/BKSF_CUBIC_FERMION_CODES_SITE_LOCAL_REALIZATION_WITH_SIX_DIRECTION_QUBITS_PER_SITE_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+   "sha256": "dfd8fd1eea099032753a1d6b42a84d5b681dac58cef56a4847ed53645ade9c11",
+   "verified": true
+  },
+  {
+   "path": "docs/CORNER_FERMION_LONG_WAVELENGTH_THEORY_IS_ONE_ISOTROPIC_SPIN_HALF_DOUBLET_AND_ONE_QUBIT_BLOCK_EMBEDDING_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+   "sha256": "2efab2f13a8e3a66c9dc452272b4a6d3c4216ae4f52505f605c40556e0073181",
+   "verified": true
+  },
+  {
+   "path": "docs/CORNER_FERMION_MASSLESS_DIRAC_PAIR_PROTECTED_BY_CUBE_ROTATIONS_AND_PSEUDOSCALAR_DIRAC_MASS_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+   "sha256": "33588efe60859cc6babcd0a73939438af1bd0564b99e956fbcd6d3542d9ee8bb",
+   "verified": true
+  },
+  {
+   "path": "docs/CORNER_FERMION_QUBIT_CODE_GENUINE_CUBE_ROTATION_ACTION_EMERGENT_FERMION_CARRIES_SPIN_HALF_CLASS_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+   "sha256": "94c2ca7c38f7cc83c7e16b2ade40ee9f3d58c2ca7130fb001c604c17b8ab6477",
+   "verified": true
+  },
+  {
+   "path": "docs/MAJORANA_PER_DIRECTION_CUBIC_FERMION_CODE_HAS_ONE_SPECIES_COVARIANT_UNDER_ALL_CUBIC_ROTATIONS_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+   "sha256": "b9cdc90d3a9b49a067a528c476cf95c6eab4feae775ea48997b9b1bb7bb06717",
+   "verified": true
+  },
+  {
+   "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+   "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+   "verified": true
+  },
+  {
+   "path": "docs/ONE_QUBIT_CUBIC_COVARIANT_NEAREST_NEIGHBOUR_STABILIZER_RULES_HAVE_NO_THREE_DIMENSIONALLY_MOBILE_DEFECT_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+   "sha256": "1a31eca8375ae6ec77b3bfec4bd3f288c2f8566a03f93c2ab46716a4fbfd21d8",
+   "verified": true
+  },
+  {
+   "path": "docs/SITE_LOCALIZABLE_STABILIZER_CODE_FERMION_CANNOT_CARRY_THE_SPIN_HALF_CLASS_DIRECTION_SHELL_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+   "sha256": "cb4e396b663387d7d47b61663d1ce96ae4f9b81a37870661871c98961b2a08e5",
+   "verified": true
+  },
+  {
+   "path": "docs/SPINFUL_MAJORANA_PER_DIRECTION_CUBIC_CODE_EMERGENT_FERMION_DOUBLET_CARRIES_SPIN_HALF_CLASS_ON_ALL_CUBIC_ROTATIONS_BOUNDED_THEOREM_NOTE_2026-10-17.md",
+   "sha256": "23ef3bdac1bd0bc49624846cef99d8a3d212d9547fb4323b2f9e315f7d2626ff",
+   "verified": true
+  },
+  {
+   "path": "outputs/campaign_c16_c18_landing_2026_10_17/independent_controls/antiunitary-control.json",
+   "sha256": "016628281d316c082edac0bceab1cf1375e74bfdfb42e9f56fcfe15a33d88f1f",
+   "verified": true
+  },
+  {
+   "path": "outputs/campaign_c16_c18_landing_2026_10_17/independent_controls/antiunitary-control.py.txt",
+   "sha256": "7f0c233d71be891fb1fd6e9a5b4ff0d423e0e6d906fd5416f7fd08c4fd957423",
+   "verified": true
+  },
+  {
+   "path": "outputs/campaign_c16_c18_landing_2026_10_17/independent_controls/bloch-controls.json",
+   "sha256": "5b25ba640e64961cc18d282043d04fb86cbd373f786b81f6bfc98cdc9d354bb0",
+   "verified": true
+  },
+  {
+   "path": "outputs/campaign_c16_c18_landing_2026_10_17/independent_controls/bloch-controls.py.txt",
+   "sha256": "feadcd02bb674b919bca54ee29e37b4f0f03b6a24a95bf8383f5f2e32bd0a48a",
+   "verified": true
+  },
+  {
+   "path": "outputs/campaign_c16_c18_landing_2026_10_17/independent_controls/exact-controls.json",
+   "sha256": "cff9c22417842d3ca0a520b797fab7be173cd19fb5608d860e8fe57c6f824601",
+   "verified": true
+  },
+  {
+   "path": "outputs/campaign_c16_c18_landing_2026_10_17/independent_controls/exact-controls.py.txt",
+   "sha256": "e939e6884168e8960fa2e420a7645d60cd547dcbcc01784a5a38aa8f9025d234",
+   "verified": true
+  },
+  {
+   "path": "scripts/bksf_cubic_fermion_codes_rotation_orbits_2026_10_17.py",
+   "sha256": "baf786a5633a6b4f5e9d95e9d80a645bb5f3fcf9ea0825121d54fded38b697c7",
+   "verified": true
+  },
+  {
+   "path": "scripts/bksf_cubic_fermion_codes_rotations_act_by_bare_permutation_2026_10_17.py",
+   "sha256": "1f9df6279783d86841ce6cae79a02319f2b605cac2875e5a71d6dd4fb4ed21b0",
+   "verified": true
+  },
+  {
+   "path": "scripts/bksf_cubic_fermion_codes_site_local_six_direction_qubit_realization_2026_10_17.py",
+   "sha256": "2c3b2a1a88641a1a7009bfbacdb575c4b1824299e71729f522aee9cff394b114",
+   "verified": true
+  },
+  {
+   "path": "scripts/corner_fermion_large_fermion_effective_theory_and_one_qubit_block_embedding_2026_10_17.py",
+   "sha256": "21e75730b3fd3ff88e87e500f51bb2bdf0afcb3d0479c34eeeafb2417e5e2d81",
+   "verified": true
+  },
+  {
+   "path": "scripts/corner_fermion_massless_dirac_pair_protected_by_cube_rotations_and_pseudoscalar_dirac_mass_2026_10_17.py",
+   "sha256": "389f1f2e03ae439724040a3d4dc479c7d2fb01d28e511f495112b3dd73e9ad2e",
+   "verified": true
+  },
+  {
+   "path": "scripts/corner_fermion_projective_symmetry_group_class_and_site_shell_2026_10_17.py",
+   "sha256": "b2d26b31602726478846f4aac7346c61f741ff3049f722fa9b8dcb1575294b92",
+   "verified": true
+  },
+  {
+   "path": "scripts/corner_fermion_qubit_code_genuine_cube_rotation_action_spin_half_class_2026_10_17.py",
+   "sha256": "0e60313a17d8198dfaae11f5387394ca991c6308f8b746b05272b40cf906333a",
+   "verified": true
+  },
+  {
+   "path": "scripts/cubic_covariant_nearest_neighbour_stabilizer_rules_one_qubit_defects_2026_10_17.py",
+   "sha256": "643236c246d55b151b4ced1ec0d6fb3506b927da8fe341899bcdbec0b4f3ee92",
+   "verified": true
+  },
+  {
+   "path": "scripts/site_localizable_fermion_cannot_carry_spin_half_class_direction_shell_2026_10_17.py",
+   "sha256": "4f36f8648e166ed4bd1a848aa206a34e78c5c6e7322f29a0355126fd9b86efc0",
+   "verified": true
+  },
+  {
+   "path": "scripts/spinful_majorana_per_direction_cubic_code_emergent_fermion_doublet_2026_10_17.py",
+   "sha256": "053cbe8d3cf02759988b941c19b18e1720b4252c50b2f3c299461b803c3ffc60",
+   "verified": true
+  }
+ ],
+ "first_unresolved_step": "ATTEMPT.md step 20: construct localized rotation operators on the ONE-charge (odd) sector of the supplied corner qubit code (charge in a site's 12-corner cluster, compensating charge outside a ball or at infinity) with u_g u_h = c(g,h) u_gh up to U(1) rephasing and U_g = u_g^loc (x) U_g^out on such states. The code has no local odd operators; steps 9, 11 and 16 reduce the question to the even sector and the canonical Majorana lift (class F_sq*(w2+w1^2); U(1)-class [w2] iff F_sq=pi) but do not supply the odd-sector operators. Also open: pair-level data for C3 and general non-involutive elements beyond the C4 four-charge orbit; infinite-volume/boundary statements; energetic isolation of a doublet; the C8 order-4 bare-permutation D2 tension.",
+ "notes": "Frozen commit e0088f3928483dfb5825b4ff6e3f91dc4d799400 is an ancestor of the current-main checkout a77a3449c91a753b06ce2a63876cd460b62cb4cf; all 35 listed source objects verified byte-for-byte by sha256 at the frozen commit. Worker: Claude Sonnet 5.5, same-family, unrefereed, no cross-family confirmation run."
+}

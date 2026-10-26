@@ -1,0 +1,5 @@
+sim g sign 1 [18.7459 18.8128 -1.4213] edge 1.5e-03 ticks 75 t=27
+sim g sign -1 [18.8853 18.6757  1.6747] edge 1.6e-03 ticks 75 t=51
+SIM odd-in-g [-0.0697  0.0686 -1.548 ]
+CLOUD anom= False [ 0.0151 -0.0118 -1.5515] t=91
+CLOUD anom= True [-0.0623  0.0655 -1.5515] t=174

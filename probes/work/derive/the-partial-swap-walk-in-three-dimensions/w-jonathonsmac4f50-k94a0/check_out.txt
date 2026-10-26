@@ -1,0 +1,39 @@
+PASS 1.0 basis matrices V_j (columns a_j,b_j) are unitary and send (sigma_x,sigma_y) to (sigma_j,sigma_{j+1}), exact
+PASS 1.1 exact: the lattice palindromic 6-layer walk on a 4x4x4 torus acts on every tested Bloch wave (8 Weyl nodes + 12 others, both spinors) as S(k)=q0-i q.sigma with S built from g_A=c_j sigma_j - s_j sigma_{j+1}, g_B=c_j sigma_j + s_j sigma_{j+1} | tested 20 k-points x 2 spinors, cos(e/2)=3/5, sin(e/2)=4/5
+PASS 1.2 exact: with a non-uniform clock (bond angles from a table of Pythagorean angles, random signs) the palindromic walk preserves all inner products of 3 random finite-support vectors (unitary on finite support)
+PASS 1.3 exact: a site is spread to at most 4,4,3 sites along axes 1,2,3 (layer count per axis in the palindromic order), for the non-uniform clock
+PASS 1.4 exact: for the non-uniform clock, U(-angles) U(angles) = identity on the same random vectors (palindromic order makes the walk's inverse the walk with all angles negated: quasi-energy odd in the angle field, no even-order term in the effective generator)
+PASS 2.1 exact: q0^2+|q|^2=1 identically in (c_j,s_j,C,Sn) modulo c^2+s^2=1 (S is in SU(2))
+PASS 2.2 exact: q0 contains no Sn (even in eps); every q_i is Sn times a polynomial in (C,c,s) (odd in eps)
+PASS 2.3 exact: S(eps)*S(-eps)=identity as polynomials (palindromic order: S(-eps)=S(eps)^{-1}); hence cos(omega) is even and sin(omega)n is odd in eps
+PASS 2.4 exact: the unit-quaternion polynomial equals the explicit product of eleven 2x2 layer matrices at 6 exact rational (k,eps) points
+PASS 2.5 exact: first order q = 2 eps (cos k_1, cos k_2, cos k_3) (the generator 2 sum_j cos k_j sigma_j of block 105 T1, now in 3D); second order vanishes
+PASS 2.6 exact: q0 = 1 - 2 P eps^2 + O(eps^4), P=sum cos^2 k_j
+   exact c.q3 = -(3*c1**4 + 12*c1**2*c2**2 + 3*c1**2*c2*s1 + 12*c1**2*c3**2 + c1**2 - 3*c1*c3**2*s3 + 3*c2**4 + 12*c2**2*c3**2 + 3*c2**2*c3*s2 + c2**2 + 3*c3**4 + c3**2)/3
+   exact rho(k) = omega3/omega1 = (c1**4 - 4*c1**2*c2**2 - 3*c1**2*c2*s1 - 4*c1**2*c3**2 - c1**2 + 3*c1*c3**2*s3 + c2**4 - 4*c2**2*c3**2 - 3*c2**2*c3*s2 - c2**2 + c3**4 - c3**2)/(6*(c1**2 + c2**2 + c3**2))
+PASS 2.7 exact: independent route at the rational point (cos k_j)=(3/5,4/5,0): -[eps^4]q0 = w1 w3 - w1^4/24 and [eps^2]q0 = -w1^2/2, with w1=2|c|, w3=rho w1 from the c.q3 formula
+PASS 2.8 exact: at a Weyl node k=(pi/2)(1,1,1)+q, q=t n: rho = -1/6 + (t/2)(n1^2 n2 + n2^2 n3 - n1 n3^2)/|n|^2 + O(t^2); the isotropic limit -1/6 equals block 105 T2's line value -sin^2 k/6 at its node
+PASS 2.9 exact: ray-force factor eps d_eps(omega)/omega = 1+2 eps^2 rho+O(eps^4) -> 1 - eps^2/3 at the node, equal to the line value 1 - eps^2 sin^2 k/3 (block 105 T2) at its node
+PASS 3.1 exact: plain order U=L6...L1 has the same first-order generator 2 sum cos k_j sigma_j but a nonzero second-order term q2 (odd + even powers of eps appear)
+   plain order q2 = [-2*c2*(2*c3 + s2), -2*c3*(-2*c1 + s3), -2*c1*(2*c2 + s1)]
+PASS 3.2 exact: at the node, plain-order N=q/eps = -2t[(1 - eps R) n] + O(eps t^2, eps^2 t), R the cyclic shift (R n)=(n2,n3,n1): a linear map M=1-eps R of the monopole field c
+PASS 3.3a exact: (Mu).(Mv x Mw) = det(M) u.(v x w) for symbolic 3x3 M
+PASS 3.4 exact: the sphere average of the O(eps) relative change eps(trA-3 c^.A c^) of the monopole density vanishes for A=-R
+PASS 4.1 exact: eps^0 solid-angle density Phi_12 at the node along n=(2/3,1/3,2/3) is -2/(3 t^2)+O(1), i.e. the monopole -q^/q^2 component (sign: node k=(pi/2)(1,1,1) is left-handed, opposite to block 54's sigma.sin k node)
+PASS 4.2 exact: palindromic order has NO eps^1 term in the Berry density (n is even in eps)
+PASS 4.3 exact: palindromic eps^2 correction to the monopole density is relatively O(t): ratio = (43/36) t + O(t^2) along n=(2/3,1/3,2/3) | ratio series = 43*t/36 + O(t**2)
+PASS 4.4 exact: plain order has an eps^1 correction of relative size 3(n1n2+n2n3+n3n1)=8/3 (order one, direction dependent) to the same monopole density at the node: ratio -> 8/3 | ratio = 8/3, formula 3 n.Rn = 8/3
+PASS 5.1 exact: for a Bloch rotation by 2 theta about n, (R-1)(-v/2 - (cot theta/2) n x v) = v on v perp n (tested for n=(2,1,2)/3, v=(1,2,-2)/3, modulo sin^2+cos^2=1); the 1/theta ~ 1/eps part is the sideways n x v lag, the remainder -v/2 is smaller by a factor of order eps
+-- section 6: NUMERICAL (floating point) packet run, not exact --
+PASS 6.0 NUMERICAL: float symbol equals the exact quaternion polynomial at a generic (k,eps) to 1e-12
+   packet run g=+0.004 displacement [24.882   0.3411 -1.5267] edge weight 1.0e-03  [91 s]
+   packet run g=-0.004 displacement [24.8786  0.1148  1.5461] edge weight 1.0e-03  [109 s]
+   odd-in-g displacement: packet [ 0.0017  0.1131 -1.5364] ; cloud of scalar rays (exact omega) [-0.0019 -0.0128 -1.5367] ; cloud with anomalous velocity [-0.0029  0.1041 -1.5367]
+PASS 6.1 NUMERICAL: fall (odd-in-g z displacement) of the packet agrees with the cloud of rays of the exact omega to 0.02 (eps0=0.2, k=0.5 along x, gradient z, T=30) | packet -1.5364 cloud -1.5367
+PASS 6.2 NUMERICAL: the scalar rays give essentially no sideways (y) displacement (|y|<0.03) while the packet is displaced sideways by > 0.1 (gradient x motion direction) | cloud y -0.0128 ; packet y 0.1131
+PASS 6.3 NUMERICAL: packet-minus-cloud sideways displacement equals the Berry-curvature (anomalous velocity) prediction within 15% | packet-cloud 0.1259 prediction 0.1169 (ratio 1.077)
+   (long-wavelength  g T/(2k) = 0.1200; sign is + here because the node (pi/2,pi/2,pi/2) has opposite handedness to block 54's node at 0)
+TOTAL: PASS=27 FAIL=0
+runtime 213 s
+HIT: [scoped to the supplied choices: partner sigma_{j+1} for axis j, layer order A1 B1 A2 B2 A3 B3 palindromic with half angles] (i) exact 3D symbol S(k)=q0-i q.sigma of the palindromic partial-swap walk (eleven dimer factors, verified against the lattice walk on a torus) with explicit half-trace polynomial and omega=2 eps |cos k| (1+eps^2 rho(k)+O(eps^4)), rho(node)=-1/6+(1/2)(q1^2 q2+q2^2 q3-q1 q3^2)/|q|^2+O(q^2); (ii) S(-eps)=S(eps)^(-1) (and U(-angles)=U(angles)^(-1) for every clock field), so omega is odd and the band vector is even in eps: NO O(eps) eigenvector term in the palindromic order; (iii) in the plain order the O(eps) eigenvector term is the constant linear map 1-eps R on the node's field c (R the cyclic shift), whose effect on the Berry density has zero sphere average; the order-eps^0 monopole is untouched at this order. NOT claimed: an exact lattice drift law; the identification of the packet's sideways displacement with -kdot x Omega is semiclassical (ASSUMED) and only floating-point supported
+SUMMARY: PARTIAL exact 3D palindromic partial-swap symbol, dispersion polynomial and eps^2 coefficient, eps-parity (no O(eps) eigenvector term) and the plain-order O(eps) term as a linear map on the node field, so the sideways drift is not an O(eps) eigenvector effect; the exact lattice drift law is only semiclassical (ASSUMED) and floating-point supported

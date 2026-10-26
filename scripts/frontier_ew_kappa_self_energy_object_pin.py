@@ -323,7 +323,7 @@ def part_D():
 
 
 # ============================================================
-# (E) Structural MC-undecidability of kappa_EW.
+# (E) Nonidentifiability of an external kappa from the supplied channel data.
 # ============================================================
 def part_E():
     print("\n(E) Nonidentifiability of external kappa from the supplied channel data alone")

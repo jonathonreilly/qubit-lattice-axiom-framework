@@ -1,19 +1,19 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_source_surface_info_geometric_selection_obstruction.py
-runner_sha256: 78ff20426d3e3addc204551cdf93e66e5bb51999333ee42386955f2ea5def867
+runner_sha256: 74b33e4c740b68f418fe12b3684aad8d7907f9de497f43e03d19d0501a0b02ac
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.89
+elapsed_sec: 1.41
 status: ok
 ----- stdout -----
 
 ========================================================================================
-PART A: QUADRATIC-ORDER UNANIMITY OF INFO-GEOMETRIC FUNCTIONALS
+PART A: QUADRATIC ORDER OF THE FOUR DISPLAYED FUNCTIONALS
 ========================================================================================
  [PASS (C)] Tr(T_delta^2) = Tr(T_q^2) = 6 (Frobenius isotropy at quadratic order) (Tr(T_d^2) = 6.0, Tr(T_q^2) = 6.0)
  [PASS (C)] Tr(T_delta T_q) = 0 (no off-diagonal Frobenius coupling) (Tr(T_d T_q) = 0.0)
  [PASS (C)] F1 = -W quadratic Hessian is 6/m^2 * I_2 (isotropic) (dd=6.0000, qq=6.0000, cross=-0.00e+00)
- [PASS (C)] F2 = 2 KL quadratic Hessian is 6 I/m^2 (rejects old 18 I/m^2) (dd=6.0000, qq=6.0000, cross=-2.75e-11)
+ [PASS (C)] F2 = 2 KL quadratic Hessian is 6 I/m^2 (rejects old 18 I/m^2) (dd=6.0000, qq=6.0000, cross=-2.54e-11)
  [PASS (C)] F3 = -Hess(W) curvature quadratic (twice real-Gaussian Fisher) (g_F(J_act, J_act) = 6 (delta^2 + q_+^2) / m^2)
  [PASS (C)] F4 = Tr(J^2)/m^2 is 6(delta^2 + q_+^2)/m^2 (isotropic) (F4(1,0) = 6.0, F4(0,1) = 6.0)
  [PASS (C)] Common chamber-boundary minimizer: (delta_*, q_+*) = (sqrt(6)/3, sqrt(6)/3) (d_* = 0.8164965809, sqrt(6)/3 = 0.8164965809)

@@ -437,12 +437,12 @@ check("1/alpha_EM(M_Z) physical",
 
 
 # =====================================================================
-#  PART 3 -- BACKWARD WARD SCAN (the m_t derivation)
+#  PART 3 -- BACKWARD WARD SCAN (running y_t(v) readout)
 # =====================================================================
 
 log()
 log("=" * 78)
-log("PART 3: BACKWARD WARD SCAN (m_t derivation)")
+log("PART 3: BACKWARD WARD SCAN (running y_t(v) readout)")
 log("=" * 78)
 log()
 log("  Procedure:")
@@ -958,10 +958,10 @@ log()
 
 # Error budget
 log("  SYSTEMATIC ERROR BUDGET:")
-log(f"    Plaquette uncertainty (<P> = 0.5934 +/- 0.0006): ~0.3% on v, ~0.1% on m_t")
+log(f"    Plaquette uncertainty (<P> = 0.5934 +/- 0.0006): ~0.3% on v, ~0.1% on y_t(v)v/sqrt(2)")
 log(f"    Taste weight (7/18 exact): shifts sin^2 by ~0.1% per 1% change")
 log(f"    2-loop truncation (3-loop absent): ~0.5% on y_t(v)")
-log(f"    lambda(v) = {lam_cw_final:.4f} (full CW, DERIVED): enters at 2-loop, <0.1% on m_t")
+log(f"    lambda(v) = {lam_cw_final:.4f} (full CW, DERIVED): enters at 2-loop, <0.1% on y_t(v)v/sqrt(2)")
 log(f"    m_H = {mH_pred:.1f} GeV (lattice CW, {mh_dev:+.1f}% from obs; converges as a->0)")
 log(f"    Threshold matching (m_b, m_c): affects v->M_Z, not v-scale prediction")
 log()

@@ -1,21 +1,19 @@
 #!/usr/bin/env python3
 """
-Selector Parity-Mixing Selector Law attempt.
+Displayed parity-mixing candidate calculations on the supplied source chart.
 
-Branch: (off ).
-
-RESULT CLASSIFICATION: narrower-gap + closure-candidate-pending-physics-cross-check.
+RESULT CLASSIFICATION: conditional candidate calculations; physical selection open.
 
 Summary
 -------
 
-Paths A (info-geometric), B (Z_3 cubic), and C (holonomy / Z_3-parity-definite
-scalars) each produced an obstruction theorem. The remaining untested class
-is Z_3-parity-MIXING functionals. This runner surveys the retained atlas for
-parity-mixing ingredients, identifies the strongest candidate, and attempts a
-sole-axiom derivation of the (delta, q_+) selector point.
+Path A (information-geometric) is a conditional local calculation of four
+displayed functionals, not an obstruction; paths B (Z_3 cubic) and C
+(holonomy / Z_3-parity-definite scalars) keep their own conditional scopes.
+This runner evaluates displayed Z_3-parity-MIXING functionals on the supplied
+chart and computes the conditional (delta, q_+) minimizer of one of them.
 
-Retained theorem inputs (no new axioms):
+Supplied repository inputs (historical labels confer no retained status):
  - DM_NEUTRINO_SOURCE_SURFACE_Z3_DOUBLET_BLOCK_POINT_SELECTION_THEOREM
     gives EXACT closed-form entries of the intrinsic Z_3 kernel on the
     active sheet:
@@ -26,8 +24,8 @@ Retained theorem inputs (no new axioms):
       K12 = (m - 4*sqrt(2)/9) + i*(sqrt(3)*delta - 4*sqrt(2)/3)
  - DM_NEUTRINO_SOURCE_SURFACE_INTRINSIC_SLOT_THEOREM (a_*, b_*)
  - DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_HALF_PLANE_THEOREM (chamber)
- - SELECTOR_3_DOUBLET_BLOCK_SELECTOR_SCHUR_BASELINE_PARTIAL_CLOSURE (D = m I_3)
- - SELECTOR_ATH_C_HOLONOMY_SELECTOR (Z_3-parity split theorem)
+ - Schur scalar-baseline note (D = m I_3 is supplied, not derived for the live sheet)
+ - Z_3 parity-split theorem note
 
 Parity-mixing candidate tested
 ------------------------------
@@ -39,8 +37,7 @@ block K_doublet = K[1:3, 1:3]:
  (F2) Determinant:        det K_doublet = K11 K22 - |K12|^2
  (F3) Traceless-Frobenius:    ||K_doublet - (TrK/2)I||^2 = |K11-K22|^2/2 + 2|K12|^2
 
-Each is formed from retained-theorem-grade closed forms, hence
-retained-atlas-native. Each is a SUM of two Z_3-parity-definite scalars:
+Each is formed from the supplied closed forms above. Each is a SUM of two Z_3-parity-definite scalars:
 one sector (K11, K22 diagonal) depending only on q_+, and the other sector
 (|K12|^2) depending only on delta (and m). The SUM is a genuine parity-
 mixing functional whose gradient decouples parity-by-parity:
@@ -55,13 +52,12 @@ not to a SUM of parity-definite scalars.
 Key findings
 ------------
 
-(I) Parity-mixing decomposition theorem (new, retained-atlas-native).
+(I) Parity-mixing decomposition (exact algebra on the supplied closed forms).
   Every quadratic trace invariant of K_doublet is a sum of two Z_3-parity-
   definite scalars on the active sheet. This evades the Z_3 parity-split theorem Theorem 2.
 
-(II) Functional-selection ambiguity (parity-mixing analog of the info-geometric selection obstruction
-   Theorem B). The three natural invariants (F1)-(F3) select different
-   chamber-boundary minimizers:
+(II) Functional-selection ambiguity among the displayed functions. The three
+   displayed invariants (F1)-(F3) select different chamber-boundary behavior:
      F1 (Frobenius^2):      (delta_*, q_+*) = (sqrt(6)/2 - sqrt(2)/18,
                             sqrt(6)/6 + sqrt(2)/18)
                             ~= (1.14618, 0.48682)
@@ -72,9 +68,9 @@ Key findings
      F3 (traceless-Frob^2):   loses q_+ sensitivity entirely
                    (K11 - K22 = -1/sqrt(3) is a constant)
 
-   This is a PARITY-MIXING UNANIMITY FAILURE: unlike the info-geometric selection obstruction where all
-   natural info-geom functionals agreed to leading order at sqrt(6)/3,
-   here the three parity-mixing invariants disagree.
+   Unlike the four displayed information-geometric local quadratics, which
+   share the boundary minimizer sqrt(6)/3, these three displayed functions
+   disagree. Neither comparison covers all possible functionals.
 
 (III) The F1 minimizer is m-independent in closed form (the m-dependent
    piece (m - 4 sqrt(2)/9)^2 in |K12|^2 is (delta, q_+)-independent).
@@ -98,23 +94,23 @@ Key findings
 Claim boundary
 --------------
 
-* THEOREM (retained-atlas-native): the doublet-block Frobenius norm squared
+* EXACT ALGEBRA (supplied chart): the doublet-block Frobenius norm squared
  is a sum of two Z_3-parity-definite scalars, whose gradient decouples
  parity-by-parity. This establishes PARITY-MIXING evasion of the Z_3 parity-split theorem.
 
-* THEOREM (retained-atlas-native): closed-form chamber-boundary minimizer
+* EXACT ALGEBRA (supplied chart): closed-form chamber-boundary minimizer
  of ||K_doublet||_F^2 is the m-independent pair
  (sqrt(6)/2 - sqrt(2)/18, sqrt(6)/6 + sqrt(2)/18).
 
-* OBSTRUCTION (new): parity-mixing functional-selection ambiguity. Three
- natural retained-atlas parity-mixing invariants select three different
- chamber points. Closing the parity-mixing sub-gap requires a canonical
- functional-selection axiom (parity-mixing analog of the info-geometric selection obstruction's (G-Var)).
+* AMBIGUITY (displayed functions only): the three displayed parity-mixing
+ invariants select different chamber behavior. A justified physical
+ selection rule is not derived here; no necessity of a new axiom is proved
+ and the full parity-mixing class is not classified.
 
-* CLOSURE-CANDIDATE-PENDING-PHYSICS-CROSS-CHECK: F1-min is a
- retained-atlas-native candidate for (delta_*, q_+*) that disagrees with
- every previously-considered candidate. Physics-Validation can cross-
- confirm via DM transport chain (eta/eta_obs = 1).
+* CONDITIONAL CANDIDATE: F1-min is a conditional candidate for
+ (delta_*, q_+*) that disagrees with every previously-considered
+ candidate. A DM transport comparison (eta/eta_obs = 1) could test it;
+ agreement alone would not prove physical selection.
 
 the selector gate remains OPEN. No item above is promoted to flagship theorem.
 """
@@ -267,11 +263,11 @@ def part1_parity_mixing_survey() -> None:
    * singleton parity-definite scalars (sym(H) or anti(H)) cannot mix
    * the atlas-frozen slots (a_*, b_*) are constants, so they cannot mix
 
-  The candidates below are all retained-theorem-grade closed forms from
+  The candidates below are closed forms supplied by
   the Z_3 doublet-block point-selection theorem.
   """
   print("\n" + "=" * 88)
-  print("PART 1: PARITY-MIXING SURVEY OF RETAINED ATLAS CANDIDATES")
+  print("PART 1: PARITY-MIXING SURVEY OF DISPLAYED ATLAS CANDIDATES")
   print("=" * 88)
 
   # (a) Singlet-doublet slots K01, K02 are FROZEN (atlas intrinsic-slot theorem).
@@ -308,7 +304,7 @@ def part1_parity_mixing_survey() -> None:
   )
 
   # (d) det K_doublet = K11 K22 - |K12|^2 -- depends on both.
-  #   This is a retained-atlas-native parity-MIXING scalar (sum of parity
+  #   This is a parity-MIXING scalar on the supplied chart (sum of parity
   #   definite blocks, each with opposite sign).
   d_vals = {(d, q): det_doublet(0.3, d, q) for d in (0.0, 0.5, 1.0) for q in (0.0, 0.5, 1.0)}
   # depends on d, q separately
@@ -540,7 +536,7 @@ def part3_F1_minimizer_closed_form() -> None:
 
 
 # ---------------------------------------------------------------------------
-# Part 4: Functional-selection ambiguity (parity-mixing analog of the info-geometric selection obstruction Theorem B)
+# Part 4: Functional-selection ambiguity among the three displayed functions
 # ---------------------------------------------------------------------------
 
 
@@ -608,11 +604,10 @@ def part4_functional_selection_ambiguity() -> None:
   )
 
   print()
-  print(" This is the parity-mixing analog of the the info-geometric selection obstruction Cubic Splitting")
-  print(" Obstruction (Theorem B). The analogous parity-mixing unanimity")
-  print(" theorem does NOT hold. Hence selecting F1 as the canonical")
-  print(" parity-mixing functional requires an additional axiom (analog")
-  print(" of (G-Var)).")
+  print(" Unlike the four displayed information-geometric local quadratics,")
+  print(" these three displayed parity-mixing functions do not agree. Choosing")
+  print(" F1 needs a justified selection rule, which is not derived here; no")
+  print(" necessity of a new axiom is proved.")
 
 
 # ---------------------------------------------------------------------------
@@ -629,7 +624,7 @@ def part5_cross_check_vs_candidates() -> None:
   delta_F1 = SQRT6 / 2.0 - SQRT2 / 18.0
   q_F1 = SQRT6 / 6.0 + SQRT2 / 18.0
 
-  # Schur-Q variational (the info-geometric selection obstruction, the cubic variational selection obstruction context): (sqrt(6)/3, sqrt(6)/3)
+  # Schur-Q variational (displayed local quadratics / cubic variational context): (sqrt(6)/3, sqrt(6)/3)
   delta_schur, q_schur = SQRT6_3, SQRT6_3
   dist_schur = math.hypot(delta_F1 - delta_schur, q_F1 - q_schur)
   check(
@@ -663,7 +658,7 @@ def part5_cross_check_vs_candidates() -> None:
 
   print()
   print(" Unified candidate ledger (cumulative through Paths A, B, C, Parity-Mixing):")
-  print(f"  Schur-Q variational (the info-geometric selection obstruction/B): ({SQRT6_3:.4f}, {SQRT6_3:.4f})")
+  print(f"  Schur-Q variational (displayed local quadratics / cubic route): ({SQRT6_3:.4f}, {SQRT6_3:.4f})")
   print(f"  the Z_3 parity-split theorem-a det(H) stationary:    (0.9644, 1.5524)")
   print(f"  the Z_3 parity-split theorem-b Tr(H^2) boundary min:  (1.2679, 0.3651)")
   print(f"  the Z_3 parity-split theorem-c K_12 char-match:     (0.8000, q_+ free)")
@@ -672,7 +667,8 @@ def part5_cross_check_vs_candidates() -> None:
   print(f"                    sqrt(6)/6 + sqrt(2)/18)")
   print()
   print(" Five inequivalent candidate points now exist for (delta_*, q_+*).")
-  print(" Physics-Validation (eta/eta_obs = 1) can cross-confirm at most one.")
+  print(" A transport comparison (eta/eta_obs = 1) could test these points;")
+  print(" agreement alone would not prove physical selection.")
 
 
 # ---------------------------------------------------------------------------
@@ -687,49 +683,38 @@ def part6_narrowed_gap() -> None:
   print("=" * 88)
 
   print(" BEFORE THIS NOTE (after Paths A, B, C):")
-  print("  (G-Var)   variational selection axiom unclosed; info-geom")
-  print("        functionals agree at sqrt(6)/3 at LEADING QUADRATIC only")
+  print("  (G-Var)   physical variational-selection justification open; the four")
+  print("        displayed info-geom quadratics agree at sqrt(6)/3 (local only)")
   print("  (G-Non-Var) non-variational (holonomy/transport/mixed-invariant)")
   print("        -- the Z_3 parity-split theorem obstructed single-parity, mixed-invariant")
   print("          candidates disagree with sqrt(6)/3")
-  print("  parity-mixing class: untested (single remaining class)")
+  print("  parity-mixing examples: not yet computed")
   print()
   print(" AFTER THIS NOTE:")
-  print("  (G-Var)   unchanged -- still requires selection axiom")
-  print("  (G-Non-Var) parity-mixing sub-route TESTED:")
+  print("  (G-Var)   unchanged -- physical selection remains unjustified here")
+  print("  (G-Non-Var) displayed parity-mixing examples computed:")
   print("        - evades the Z_3 parity-split theorem Theorem 2 by sum-of-parity-definite construction")
   print("        - produces NEW candidate point")
   print("          (delta_F1, q_+F1) = (sqrt(6)/2 - sqrt(2)/18,")
   print("                    sqrt(6)/6 + sqrt(2)/18)")
-  print("        - parity-mixing unanimity FAILS: F1, F2, F3 disagree,")
-  print("         so the parity-mixing sub-route ALSO needs a")
-  print("         canonical-functional selection axiom")
+  print("        - F1, F2, F3 disagree, so these displayed functions do")
+  print("         not establish which functional is physical")
   print()
   print(" CONCLUSION:")
-  print("  All three classes (info-geom, cubic, parity-mixing) produce")
-  print("  CANDIDATE points with INEQUIVALENT chamber minimizers that each")
-  print("  require additional selection axioms. The the selector gate REMAINS OPEN.")
+  print("  The displayed information-geometric, cubic and parity-mixing")
+  print("  calculations give inequivalent candidate points. No selection rule")
+  print("  is derived and no necessity of a new axiom is proved. The selector")
+  print("  gate remains open; these finite comparisons do not exhaust selectors.")
   print()
   print("  Physics-Validation discipline: any claimed closure via one of the")
   print("  five candidate points must pass the eta/eta_obs = 1 cross-check.")
 
-  check(
-    "the selector gate remains OPEN (five inequivalent candidates; no sole-axiom "
-    "unique selector)",
-    True,
-    "narrower-gap + closure-candidate-pending-physics-cross-check",
-  )
-  check(
-    "Parity-mixing class ALSO obstructed by functional-selection ambiguity",
-    True,
-    "not theorem-grade closure",
-  )
-  check(
-    "Retained-atlas-native parity-mixing candidate (F1-min) is recorded "
-    "for Physics-Validation cross-check",
-    True,
-    "(sqrt(6)/2 - sqrt(2)/18, sqrt(6)/6 + sqrt(2)/18)",
-  )
+  print()
+  print(" RECORD (not a check): five inequivalent displayed candidate points;")
+  print(" no physical selector is derived. F1-min")
+  print(" (sqrt(6)/2 - sqrt(2)/18, sqrt(6)/6 + sqrt(2)/18) is a conditional")
+  print(" candidate only; the displayed comparison does not classify the")
+  print(" parity-mixing class.")
 
 
 def part7_n5_execution_certificate() -> None:
@@ -794,10 +779,9 @@ def print_summary() -> None:
 
 def main() -> int:
   print("=" * 88)
-  print("G1 PARITY-MIXING SELECTOR LAW ATTEMPT")
+  print("DISPLAYED PARITY-MIXING CANDIDATE CALCULATIONS")
   print("=" * 88)
-  print("Branch: (off )")
-  print("Result: NARROWER-GAP + CLOSURE-CANDIDATE-PENDING-PHYSICS-CROSS-CHECK")
+  print("Result: conditional candidate calculations; physical selection open")
 
   part1_parity_mixing_survey()
   part2_parity_mixing_decomposition_theorem()

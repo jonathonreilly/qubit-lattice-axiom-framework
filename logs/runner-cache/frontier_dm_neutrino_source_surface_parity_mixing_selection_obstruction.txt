@@ -1,21 +1,20 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_source_surface_parity_mixing_selection_obstruction.py
-runner_sha256: ff894f0fa270ad57a67240c340157334a6a1c71ceff42b9ec9b5bed5dba396e2
+runner_sha256: 14e95db96080433f7f4a8d2dc8d66a8e7f91694dd32ab52f83a362032ed99eee
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.77
+elapsed_sec: 1.16
 status: ok
 ----- stdout -----
 ========================================================================================
-G1 PARITY-MIXING SELECTOR LAW ATTEMPT
+DISPLAYED PARITY-MIXING CANDIDATE CALCULATIONS
 ========================================================================================
-Branch: (off )
-Result: NARROWER-GAP + CLOSURE-CANDIDATE-PENDING-PHYSICS-CROSS-CHECK
+Result: conditional candidate calculations; physical selection open
 
 ========================================================================================
-PART 1: PARITY-MIXING SURVEY OF RETAINED ATLAS CANDIDATES
+PART 1: PARITY-MIXING SURVEY OF DISPLAYED ATLAS CANDIDATES
 ========================================================================================
- [PASS (C)] K_01 = a_*, K_02 = b_* are frozen constants on the active sheet (no (m, delta, q_+) dependence) (max ||K_0j - a_*/b_*|| = 4.58e-16)
+ [PASS (C)] K_01 = a_*, K_02 = b_* are frozen constants on the active sheet (no (m, delta, q_+) dependence) (max ||K_0j - a_*/b_*|| = 3.33e-16)
  [PASS (C)] K_11, K_22 are INDEPENDENT of delta (parity-definite, q_+ only)
  [PASS (C)] K_12 is INDEPENDENT of q_+ (parity-definite, delta only, plus spectator m)
  [PASS (C)] det K_doublet = K_11 K_22 - |K_12|^2 is genuinely parity-MIXING (depends on both delta and q_+) (range of det over sample grid = 3.9677)
@@ -65,11 +64,10 @@ PART 4: PARITY-MIXING FUNCTIONAL-SELECTION AMBIGUITY
  [PASS (C)] F3 (traceless-Frob^2) boundary min: delta = 1.088662 (degenerate in q_+ direction) ((only the delta sector is active; q_+ is unconstrained))
  [PASS (C)] Functional-selection ambiguity: F1, F2, F3 give DIFFERENT chamber-boundary extrema (parity-mixing unanimity FAILS) (F1 -> 1.1462; F2-max -> 0.9736; F3 -> 1.0887)
 
- This is the parity-mixing analog of the the info-geometric selection obstruction Cubic Splitting
- Obstruction (Theorem B). The analogous parity-mixing unanimity
- theorem does NOT hold. Hence selecting F1 as the canonical
- parity-mixing functional requires an additional axiom (analog
- of (G-Var)).
+ Unlike the four displayed information-geometric local quadratics,
+ these three displayed parity-mixing functions do not agree. Choosing
+ F1 needs a justified selection rule, which is not derived here; no
+ necessity of a new axiom is proved.
 
 ========================================================================================
 PART 5: CROSS-CHECK vs PREVIOUSLY-TESTED (delta, q_+) CANDIDATES
@@ -80,7 +78,7 @@ PART 5: CROSS-CHECK vs PREVIOUSLY-TESTED (delta, q_+) CANDIDATES
  [PASS (C)] F1-min delta STRICTLY DISAGREES with the Z_3 parity-split theorem-c K12 char-match (0.800) (|delta_F1 - 0.800| = 0.3462)
 
  Unified candidate ledger (cumulative through Paths A, B, C, Parity-Mixing):
-  Schur-Q variational (the info-geometric selection obstruction/B): (0.8165, 0.8165)
+  Schur-Q variational (displayed local quadratics / cubic route): (0.8165, 0.8165)
   the Z_3 parity-split theorem-a det(H) stationary:    (0.9644, 1.5524)
   the Z_3 parity-split theorem-b Tr(H^2) boundary min:  (1.2679, 0.3651)
   the Z_3 parity-split theorem-c K_12 char-match:     (0.8000, q_+ free)
@@ -89,40 +87,44 @@ PART 5: CROSS-CHECK vs PREVIOUSLY-TESTED (delta, q_+) CANDIDATES
                     sqrt(6)/6 + sqrt(2)/18)
 
  Five inequivalent candidate points now exist for (delta_*, q_+*).
- Physics-Validation (eta/eta_obs = 1) can cross-confirm at most one.
+ A transport comparison (eta/eta_obs = 1) could test these points;
+ agreement alone would not prove physical selection.
 
 ========================================================================================
 PART 6: NARROWED-GAP STATEMENT
 ========================================================================================
  BEFORE THIS NOTE (after Paths A, B, C):
-  (G-Var)   variational selection axiom unclosed; info-geom
-        functionals agree at sqrt(6)/3 at LEADING QUADRATIC only
+  (G-Var)   physical variational-selection justification open; the four
+        displayed info-geom quadratics agree at sqrt(6)/3 (local only)
   (G-Non-Var) non-variational (holonomy/transport/mixed-invariant)
         -- the Z_3 parity-split theorem obstructed single-parity, mixed-invariant
           candidates disagree with sqrt(6)/3
-  parity-mixing class: untested (single remaining class)
+  parity-mixing examples: not yet computed
 
  AFTER THIS NOTE:
-  (G-Var)   unchanged -- still requires selection axiom
-  (G-Non-Var) parity-mixing sub-route TESTED:
+  (G-Var)   unchanged -- physical selection remains unjustified here
+  (G-Non-Var) displayed parity-mixing examples computed:
         - evades the Z_3 parity-split theorem Theorem 2 by sum-of-parity-definite construction
         - produces NEW candidate point
           (delta_F1, q_+F1) = (sqrt(6)/2 - sqrt(2)/18,
                     sqrt(6)/6 + sqrt(2)/18)
-        - parity-mixing unanimity FAILS: F1, F2, F3 disagree,
-         so the parity-mixing sub-route ALSO needs a
-         canonical-functional selection axiom
+        - F1, F2, F3 disagree, so these displayed functions do
+         not establish which functional is physical
 
  CONCLUSION:
-  All three classes (info-geom, cubic, parity-mixing) produce
-  CANDIDATE points with INEQUIVALENT chamber minimizers that each
-  require additional selection axioms. The the selector gate REMAINS OPEN.
+  The displayed information-geometric, cubic and parity-mixing
+  calculations give inequivalent candidate points. No selection rule
+  is derived and no necessity of a new axiom is proved. The selector
+  gate remains open; these finite comparisons do not exhaust selectors.
 
   Physics-Validation discipline: any claimed closure via one of the
   five candidate points must pass the eta/eta_obs = 1 cross-check.
- [PASS (C)] the selector gate remains OPEN (five inequivalent candidates; no sole-axiom unique selector) (narrower-gap + closure-candidate-pending-physics-cross-check)
- [PASS (C)] Parity-mixing class ALSO obstructed by functional-selection ambiguity (not theorem-grade closure)
- [PASS (C)] Retained-atlas-native parity-mixing candidate (F1-min) is recorded for Physics-Validation cross-check ((sqrt(6)/2 - sqrt(2)/18, sqrt(6)/6 + sqrt(2)/18))
+
+ RECORD (not a check): five inequivalent displayed candidate points;
+ no physical selector is derived. F1-min
+ (sqrt(6)/2 - sqrt(2)/18, sqrt(6)/6 + sqrt(2)/18) is a conditional
+ candidate only; the displayed comparison does not classify the
+ parity-mixing class.
 
 ========================================================================================
 PART 7: N5 EXECUTION CERTIFICATE — RESOLUTION CLASSES EXERCISED HERE
@@ -134,7 +136,7 @@ PART 7: N5 EXECUTION CERTIFICATE — RESOLUTION CLASSES EXERCISED HERE
  lattice_wide: checked and not executed — no volume, thermodynamic limit or lattice sum appears; the widest sweep is a finite ladder of seven discrete m values confirming that the F1 boundary minimizer is m-independent (with the separate m-stationary point m_* = 4 sqrt(2)/9 = 0.628539), which is a bounded scale check on one chart rather than any statement at lattice scale.
 
 ========================================================================================
-TOTAL: PASS = 27, FAIL = 0
+TOTAL: PASS = 24, FAIL = 0
 ========================================================================================
 
 ----- stderr -----

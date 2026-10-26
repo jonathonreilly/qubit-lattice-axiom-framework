@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_zero_import_chain.py
-runner_sha256: ede58d7a6e5fd0af4dace29270dbda66fa5933b68cd23e5210185fadfa40800d
-timeout_sec: 120
+runner_sha256: a1be534c558c8a620755f9240fb932f267c6fa5df4a80ff824077fbf147f5c62
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 4.87
+elapsed_sec: 8.36
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -111,7 +111,7 @@ PART 2: EW COUPLINGS AT v (DERIVED)
          1/alpha_EM = 127.682
 
 ==============================================================================
-PART 3: BACKWARD WARD SCAN (m_t derivation)
+PART 3: BACKWARD WARD SCAN (running y_t(v) readout)
 ==============================================================================
 
   Procedure:
@@ -250,16 +250,16 @@ PART 6: FINAL SUMMARY
     v within 1% of observed:            PASS
 
   SYSTEMATIC ERROR BUDGET:
-    Plaquette uncertainty (<P> = 0.5934 +/- 0.0006): ~0.3% on v, ~0.1% on m_t
+    Plaquette uncertainty (<P> = 0.5934 +/- 0.0006): ~0.3% on v, ~0.1% on y_t(v)v/sqrt(2)
     Taste weight (7/18 exact): shifts sin^2 by ~0.1% per 1% change
     2-loop truncation (3-loop absent): ~0.5% on y_t(v)
-    lambda(v) = 0.1908 (full CW, DERIVED): enters at 2-loop, <0.1% on m_t
+    lambda(v) = 0.1908 (full CW, DERIVED): enters at 2-loop, <0.1% on y_t(v)v/sqrt(2)
     m_H = 152.2 GeV (lattice CW, +21.5% from obs; converges as a->0)
     Threshold matching (m_b, m_c): affects v->M_Z, not v-scale prediction
 
 ==============================================================================
   Total PASS: 13   Total FAIL: 0
-  Elapsed: 3.9s
+  Elapsed: 7.2s
 ==============================================================================
 
 ----- stderr -----

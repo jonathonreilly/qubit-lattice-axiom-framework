@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ew_current_fierz_channel_decomposition.py
 runner_sha256: c4e36ddf15af9211ec209f7abb3f71ce6461a0369d040db047979f0073a83b6b
-input_fingerprint_sha256: 5fa29edda0caac239d6e0ebcef255c8365fd3c75ba0e3950f2b5914bbf53cfb5
+input_fingerprint_sha256: c9a440e883dd77b0faf42055c05f8a949876224bff6b98640e4eb78e98263ead
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.32
+elapsed_sec: 0.39
 status: ok
 ----- stdout -----
 
@@ -33,7 +33,7 @@ Part 2: cited authorities are correct
 Part 3: SU(N_c) Fierz completeness identity holds numerically
 ----------------------------------------------------------------------------------------
   [PASS] N_c=2: SU(N) generators have correct trace normalization Tr[t^A t^B] = δ_AB/2  (diag_err=0.00e+00, max_offdiag=0.00e+00)
-  [PASS] N_c=2: Fierz completeness identity holds numerically over 10 random matrices  (max error = 3.55e-15)
+  [PASS] N_c=2: Fierz completeness identity holds numerically over 10 random matrices  (max error = 1.78e-15)
   [PASS] N_c=3: SU(N) generators have correct trace normalization Tr[t^A t^B] = δ_AB/2  (diag_err=1.11e-16, max_offdiag=0.00e+00)
   [PASS] N_c=3: Fierz completeness identity holds numerically over 10 random matrices  (max error = 3.55e-15)
   [PASS] N_c=4: SU(N) generators have correct trace normalization Tr[t^A t^B] = δ_AB/2  (diag_err=1.11e-16, max_offdiag=0.00e+00)

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ew_kappa_self_energy_object_pin.py
-runner_sha256: acb77daf590340b909e766bcd5c5b161e7699e10f54235c4ba4cd22ebe51b553
+runner_sha256: 08fc33b0b9ff5ac1ec0750424a07dce7dd654dad3155dd2e05a56a2c8b99d0bd
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 18.27
+elapsed_sec: 98.98
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -14,16 +14,16 @@ EW supplied color algebra and conditional readouts (zero PDG inputs)
   [PASS] N_c=2: gens orthonormal=True, count 3=N_c^2-1=True, C=2*sum|Tr[M t^A]|^2 (err 8.9e-16), S+C=T=True
   [PASS] N_c=3: gens orthonormal=True, count 8=N_c^2-1=True, C=2*sum|Tr[M t^A]|^2 (err 1.8e-15), S+C=T=True
   [PASS] N_c=4: gens orthonormal=True, count 15=N_c^2-1=True, C=2*sum|Tr[M t^A]|^2 (err 0.0e+00), S+C=T=True
-  [PASS] N_c=5: gens orthonormal=True, count 24=N_c^2-1=True, C=2*sum|Tr[M t^A]|^2 (err 1.4e-14), S+C=T=True
+  [PASS] N_c=5: gens orthonormal=True, count 24=N_c^2-1=True, C=2*sum|Tr[M t^A]|^2 (err 7.1e-15), S+C=T=True
 
 (B) Supplied tensor-product bilocal kernel has sign-adjusted color factor Tr(Q^2)*(S+C)
   [PASS] both parities: raw loop=p_xy*T; sign-adjusted Tr[G G^dag]=S+C=T (loop 17.5890 vs T 17.5890)
-  [PASS] direct-product factorization Tr[(Q⊗I)(V⊗G)(Q⊗I)(V'⊗G†)] = Tr(QVQV')*Tr(GG†) (err 3.6e-15)
+  [PASS] direct-product factorization Tr[(Q⊗I)(V⊗G)(Q⊗I)(V'⊗G†)] = Tr(QVQV')*Tr(GG†) (err 7.1e-15)
   [PASS] trivial-internal weight of (S+C) = Tr(Q^2) = 1/2 (got 0.5000)
   [PASS] counterexample M=I_color: S=N_c=3, C=0 (got 0.0e+00); singlet carries Tr(T_3^2)*S = 1.50
 
 (B') Color reflection G(y,x)=eps(x)eps(y)G(x,y)^dag from staggered eps-hermiticity (real lattice, random SU(3))
-  [PASS] staggered D_m^dag = eps D_m eps (err 0.0e+00) => G^dag = eps G eps (err 3.7e-15); site-pair signed-trace error 8.5e-15; unsigned odd-pair error 4.8e+00
+  [PASS] staggered D_m^dag = eps D_m eps (err 0.0e+00) => G^dag = eps G eps (err 3.0e-15); site-pair signed-trace error 3.9e-15; unsigned odd-pair error 4.8e+00
 
 (C) Channel split is a kinematic gauge-orbit fraction: <S>/<T> = 1/N_c^2 for ANY dressing
   [PASS] N_c=2: arbitrary-dressing orbit-avg <S>/T=0.2507 (=1/N_c^2=0.2500, Weingarten); cross-check free+gauge=0.2490, Haar=0.2507 => R_conn=0.7500

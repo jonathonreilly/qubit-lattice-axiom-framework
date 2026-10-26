@@ -49,6 +49,10 @@ The displayed results use finite matrix algebra, the stated epsilon-hermiticity 
 - [EW matching-rule open gate](EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md): historical matching question.
 - [Traceless-generator selector note](EW_CURRENT_TRACELESS_GENERATOR_SELECTOR_NO_GO_NOTE_2026-05-03.md): historical generator argument.
 - [RCONN note](RCONN_DERIVED_NOTE.md): historical Monte Carlo interpretation.
+- `SUPPLIED_MATRIX_HILBERT_SCHMIDT_HAAR_IDENTITIES_NOTE_2026-10-24.md`: the
+  separately landed positive owner of the Hilbert–Schmidt, endpoint-Haar,
+  epsilon-reflection, tensor-product and parameterized identities of §§1–3.
+  The narrowed nonidentifiability statement here is not a premise of that note.
 
 This repair does not reconfirm the retained labels or all claims of those notes. The runner uses NumPy and SymPy, with fixed seeded numerical examples, and reads no repository note or experimental input.
 

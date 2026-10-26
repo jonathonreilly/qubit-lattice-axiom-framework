@@ -23,16 +23,17 @@ This note tests the following Z_3-parity-MIXING examples:
 1. surveys the retained atlas for genuine parity-mixing ingredients,
 2. studies one explicit parity-mixing candidate,
 3. computes its conditional `(delta, q_+)` minimizer,
-4. records the obstruction that remains, and
-5. produces a new closure-candidate point for Physics-Validation
- cross-check.
+4. records the selection ambiguity that remains among the displayed
+ functions, and
+5. produces a new conditional candidate point for a later transport
+ comparison.
 
-**This note does not close the DM flagship lane at its own scope.**
-Nothing in this note is promoted to theorem-grade beyond the retained
-atlas. The parity-mixing route produces a **new candidate selector
+**This note does not close the DM flagship lane.**
+Nothing in this note is promoted to theorem-grade. The parity-mixing
+example produces a **new conditional candidate
 point** that is strictly inequivalent to every previously-tested
-candidate; cross-confirmation via the retained transport chain
-(`eta / eta_obs`) is chamber-blind. The downstream PMNS-as-f(H) construction is a supplied-chart numerical
+candidate; the transport comparison (`eta / eta_obs`) is recorded as
+chamber-blind in the transport chamber-blindness note and is not re-run here. The downstream PMNS-as-f(H) construction is a supplied-chart numerical
 fit; it does not close the physical selector gate.
 
 ## Survey of retained-atlas parity-mixing candidates
@@ -47,14 +48,14 @@ Hence any Z_3-parity-definite scalar sees at most one of `(delta, q_+)`
 at fixed `m` under that stated premise. This motivates the displayed
 parity-mixing candidates; it does not exhaust possible selector constructions.
 
-| # | Candidate | Atlas status | Parity structure | Fix (δ, q_+)? |
+| # | Candidate | Historical atlas label (not a status certification) | Parity structure | Fix (δ, q_+)? |
 |---|-----------|--------------|------------------|---------------|
 | 1 | Singlet-doublet slots `K01 = a_*`, `K02 = b_*` | retained theorem ([intrinsic-slot](./DM_NEUTRINO_SOURCE_SURFACE_INTRINSIC_SLOT_THEOREM_NOTE_2026-04-16.md)) | frozen constants | No — no active dependence |
 | 2 | Doublet diagonals `K11, K22` | retained theorem ([Z_3 doublet-block](./DM_NEUTRINO_SOURCE_SURFACE_Z3_DOUBLET_BLOCK_POINT_SELECTION_THEOREM_NOTE_2026-04-16.md)) | parity-definite (q_+ only) | No |
 | 3 | Doublet off-diag `K12` | retained theorem | parity-definite (δ only) | No |
-| 4 | `det K_doublet = K11 K22 − \|K12\|²` | retained-atlas-native (difference of parity-definite) | parity-mixing via SUM structure | Yes, but saddle; crit point outside chamber |
-| 5 | `‖K_doublet‖_F² = K11² + K22² + 2\|K12\|²` | retained-atlas-native (positive-definite sum) | parity-mixing via SUM structure | **Yes; m-independent closed-form boundary min** |
-| 6 | Traceless-Frob `½(K11−K22)² + 2\|K12\|²` | retained-atlas-native | parity-mixing but degenerate (K11−K22 = −1/√3 constant) | No — q_+-blind |
+| 4 | `det K_doublet = K11 K22 − \|K12\|²` | constructed here from supplied closed forms (difference of parity-definite) | parity-mixing via SUM structure | Yes, but saddle; crit point outside chamber |
+| 5 | `‖K_doublet‖_F² = K11² + K22² + 2\|K12\|²` | constructed here from supplied closed forms (positive-definite sum) | parity-mixing via SUM structure | **Yes; m-independent closed-form boundary min** |
+| 6 | Traceless-Frob `½(K11−K22)² + 2\|K12\|²` | constructed here from supplied closed forms | parity-mixing but degenerate (K11−K22 = −1/√3 constant) | No — q_+-blind |
 | 7 | Coordinate polynomial `A_01(K) = Im[(K01)^2] = 2 c_even c_odd` ([positive Hermitian-circulant / P23 theorem](./DM_NEUTRINO_ODD_CIRCULANT_Z2_SLOT_THEOREM_NOTE_2026-04-15.md)) | positive finite-matrix algebra theorem; the polynomial is coordinate-dependent | parity-mixing (bilinear of even/odd) in the displayed coordinate basis | No — on the active sheet the singlet-slot is frozen (K01 = a_*), so the polynomial is a constant |
 | 8 | Positive polar H CP tensor ([positive-polar](./DM_NEUTRINO_POSITIVE_POLAR_H_CP_THEOREM_NOTE_2026-04-15.md)) | retained theorem | parity-mixing in right-Gram slots | Not directly on (δ, q_+); lives in `(d_i, r_ij, φ)` |
 | 9 | Z_3 phase-lift mixed bridge ([phase-lift](./DM_NEUTRINO_Z3_PHASE_LIFT_MIXED_BRIDGE_NOTE_2026-04-15.md)) | **invented post-axiom family** | genuinely parity-mixing | **Not usable** — post-axiom |
@@ -71,13 +72,14 @@ parity-mixing candidates; it does not exhaust possible selector constructions.
 Candidate 5 (`||K_doublet||_F^2`) is a concrete conditional example because:
 - it is positive-definite, so "minimum" is well-defined,
 - it is m-independent in its chamber-boundary minimizer,
-- its minimizer is a closed-form retained-atlas expression, and
-- its definition is entirely theorem-grade (doublet-block + intrinsic-slot
- + Schur-baseline + active-affine chart — all retained).
+- its minimizer is a closed-form expression in the supplied chart, and
+- it is defined from the supplied doublet-block, intrinsic-slot,
+ scalar-baseline and active-affine chart formulas, and is conditional on
+ those supplied premises.
 
 ## Theorem (Parity-Mixing Decomposition)
 
-**Theorem (retained-atlas-native).** On the active source-oriented sheet
+**Theorem (exact algebra on the supplied chart).** On the active source-oriented sheet
 `H(m, delta, q_+) = H_base + m T_m + delta T_delta + q_+ T_q`, every
 quadratic trace invariant of the Z_3 doublet block `K_doublet = K[1:3, 1:3]`
 splits as a sum of two Z_3-parity-definite scalars:
@@ -102,11 +104,11 @@ independent 1D conditions — **one on δ alone and one on q_+ alone**.
 **Significance.** This construction **evades** the parity-split single-parity
 obstruction theorem (parity-split Theorem 2 obstructs any scalar depending on
 `sym(H)` OR `anti(H)` alone; a SUM of two parity-definite scalars depends
-on both but its gradient still decouples). This is the single missing
-structural observation that distinguishes the parity-mixing class from
-the parity-definite class ruled out in the Z_3 parity-split theorem.
+on both but its gradient still decouples). This is the structural
+observation that distinguishes these sums from the parity-definite
+scalars covered by the Z_3 parity-split theorem.
 
-**Proof.** Use the retained theorem-grade closed forms from
+**Proof.** Use the closed forms supplied by
 [DM_NEUTRINO_SOURCE_SURFACE_Z3_DOUBLET_BLOCK_POINT_SELECTION_THEOREM](./DM_NEUTRINO_SOURCE_SURFACE_Z3_DOUBLET_BLOCK_POINT_SELECTION_THEOREM_NOTE_2026-04-16.md):
 ```
 K11 = -q_+ + 2 sqrt(2)/9 - 1/(2 sqrt(3))
@@ -118,13 +120,12 @@ trivial since neither contains `m`), hence on `q_+` only. `K12` depends
 only on `(m, delta)`. The stated split and gradient decoupling are
 immediate.
 
-**Claim label.** *Retained-atlas-native theorem.* Direct algebraic
-consequence of the retained Z_3 doublet-block point-selection theorem.
-No new axiom.
+**Claim label.** *Exact algebra, conditional on the supplied Z_3
+doublet-block closed forms.* No new axiom.
 
 ## Theorem (Closed-Form Parity-Mixing F1-Minimizer)
 
-**Theorem (retained-atlas-native).** Under the supplied scalar baseline
+**Theorem (exact algebra on the supplied chart).** Under the supplied scalar baseline
 `D = m I_3`, on the chamber boundary `q_+ = sqrt(8/3) − delta`, the
 parity-mixing functional `F1(m, delta, q_+) := ||K_doublet||_F^2` has a
 unique m-independent chamber-boundary minimizer
@@ -174,8 +175,8 @@ the chamber-boundary diagonal `delta + q_+ = sqrt(8/3)`.
 
 ## Obstruction (Parity-Mixing Functional-Selection Ambiguity)
 
-**Theorem.** The three natural retained-atlas parity-mixing invariants
-`{F1, F2, F3}` select **DIFFERENT** chamber-boundary extrema:
+**Theorem.** The three displayed parity-mixing invariants
+`{F1, F2, F3}` select **DIFFERENT** chamber-boundary behavior:
 
 ```
 F1 = ||K_doublet||_F^2  -> boundary min at delta ≈ 1.1462
@@ -231,7 +232,7 @@ The displayed parity-mixing examples:
 ## Physics-Validation discipline
 
 The cumulative candidate ledger now contains **five** inequivalent
-retained-atlas-native points for `(delta_*, q_+*)`:
+displayed conditional points for `(delta_*, q_+*)`:
 
 | Candidate | (δ, q_+) | Source |
 |-----------|----------|--------|
@@ -249,11 +250,11 @@ obligation to explain why the other four candidates miss the physical
 point. If none lands at `1`, those tested points miss that target; no exclusion
 of their entire functional classes follows.
 
-At least one candidate (Schur-Q) is known to give
-`eta / eta_obs ≈ 0.189` at the current theorem-native radiation branch;
-the PMNS-assisted route is required to reach 1. Cross-check of the
-parity-mixing F1-min candidate is recorded here as a **follow-up
-discipline requirement** for Physics-Validation.
+A historical transport evaluation reported `eta / eta_obs ≈ 0.189` for the
+Schur-Q candidate on one radiation branch. That value is not re-run or
+certified here, and no route is shown to be required to reach 1. A
+transport comparison of the parity-mixing F1-min candidate is recorded
+here as an open follow-up, not as a selection criterion.
 
 ## Narrowed-gap statement
 
@@ -337,9 +338,9 @@ open, consistent with the corrected information-geometric note.
 
 Appropriate placement:
 
-- atlas obstruction row in
+- atlas row in
  `DERIVATION_ATLAS.md`
- under the DM neutrino source-surface family, sibling to the info-geometric / Z_3-cubic / parity-split obstructions
+ under the DM neutrino source-surface family, beside the information-geometric local-expansion note and the Z_3-cubic / parity-split notes
 - **do NOT** use for any publication-grade positive quantitative claim
 - **do NOT** use to "justify" the Schur-Q variational candidate — this
  note actively produces a competing candidate
@@ -353,15 +354,15 @@ Appropriate placement:
 PYTHONPATH=scripts python3 scripts/frontier_dm_neutrino_source_surface_parity_mixing_selection_obstruction.py
 ```
 
-Current expected: `PASS = 27, FAIL = 0`.
+Current expected: `PASS = 24, FAIL = 0`. The three former literal-`True`
+record lines are printed as records, not counted as checks.
 
 ## What this file must never say
 
 - that selector is closed
 - that the DM flagship lane is closed
 - that the parity-mixing F1-min candidate is the physical `(delta_*, q_+*)`
- (it is a closure-candidate-pending-physics-cross-check, not a selector
- theorem)
+ (it is a conditional candidate, not a selector theorem)
 - that the parity-mixing class is closed (the displayed functions leave physical selection unresolved)
 - that the Schur-Q candidate has been ruled out (it remains one of five
  inequivalent candidates)

@@ -67,7 +67,12 @@ kernel bounds yield the pointwise derivative bound
 
 The factor `64` in this derivative is `8*8`: the supplied attractive
 coefficient times the chain-rule factor from its argument. It is not a
-64:1 weight in the undifferentiated expression.
+64:1 weight in the undifferentiated expression. Elsewhere in the DM lane
+`64:1` names the raw squared-coupling ratio before the `1 + 8` multiplicity
+fold; the folded coefficient in `s_vis = (8 s_1 + s_8)/9` is `8:1`
+(`DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md`
+records that algebra under a supplied squared-potential weighting
+prescription).
 
 Therefore that weighted same-surface expression is strictly increasing in
 `alpha`. Without that channel-weight authority, this note does not close the

@@ -3,7 +3,7 @@ runner: scripts/frontier_dm_full_closure_same_surface_thermal_monotonicity_theor
 runner_sha256: 8f91506b742194f4867c6af014bbd9537404c249261271f02ec58cddd198c94b
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.17
 status: ok
 ----- stdout -----
 ========================================================================================

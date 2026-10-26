@@ -69,12 +69,12 @@ def gaussian_kl2(d: float, q: float, m: float = 1.0) -> float:
 
 
 # ---------------------------------------------------------------------------
-# PART A: Quadratic Unanimity Theorem
+# PART A: Quadratic coefficients of the four displayed functionals
 # ---------------------------------------------------------------------------
 
 def part_a_quadratic_unanimity() -> None:
   """
-  PART A: Quadratic-order unanimity of info-geometric functionals.
+  PART A: Quadratic-order agreement of the four displayed functionals.
 
   We verify that the following four functionals all have the SAME
   leading-order isotropic quadratic form (up to positive multiplicative
@@ -89,7 +89,7 @@ def part_a_quadratic_unanimity() -> None:
   therefore they share the same chamber-boundary argmin.
   """
   print("\n" + "=" * 88)
-  print("PART A: QUADRATIC-ORDER UNANIMITY OF INFO-GEOMETRIC FUNCTIONALS")
+  print("PART A: QUADRATIC ORDER OF THE FOUR DISPLAYED FUNCTIONALS")
   print("=" * 88)
 
   Td = tdelta()

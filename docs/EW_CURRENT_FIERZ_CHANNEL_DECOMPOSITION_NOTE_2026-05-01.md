@@ -3,7 +3,7 @@
 **Type:** bounded_theorem
 
 **Date:** 2026-05-01
-**Status:** support / exact group-theory derivation (cycle-breaking artifact). The exact (N_c^2 - 1)/N_c^2 ratio is derived inline from the SU(N_c) Fierz identity and Hilbert-space dimension counting — both are textbook group theory, no 1/N_c expansion. The remaining matching rule (which channel the physical EW current couples to) is named explicitly as a structural input from the framework's already-audited lattice gauge surface.
+**Status:** support / exact group-theory derivation (cycle-breaking artifact). The exact (N_c^2 - 1)/N_c^2 dimension ratio is derived inline from the SU(N_c) Fierz identity and Hilbert-space dimension counting — both are textbook group theory, no 1/N_c expansion. The matching rule (which channel the physical EW current couples to), a separate channel-weight condition and the physical readout are named explicitly as inputs; none is derived here.
 **Primary runner:** `scripts/frontier_ew_current_fierz_channel_decomposition.py`
 **Cited authorities (one-hop, all retained on `main`):**
 - [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md) — `proposed_retained` `audit_status: audited_clean` `effective_status: retained`. Provides native cubic Cl(3) / SU(2) and the graph-first SU(3) commutant.
@@ -62,8 +62,8 @@ the Fierz identity directly, this note removes the last edge of the cycle
 (the implicit dependence of the package-level coefficient on the 1/N_c
 chain). The remaining chain `yt_ew_color_projection → this note →
 NATIVE_GAUGE_CLOSURE → ...` is acyclic and lands all dependencies on
-already-audited upstreams at one hop, with the residual matching rule (M)
-explicitly named as the open structural input.
+already-audited upstreams at one hop, with the residual matching rule (M),
+weight condition (W) and physical readout explicitly named as open inputs.
 
 ## 1. Setup: the q-qbar Hilbert space and SU(N_c) channel decomposition
 
@@ -177,8 +177,9 @@ N_c^2 / (N_c^2 − 1)  =  9/8  at  N_c = 3                             (4.3)
 ```
 
 is the inverse of (4.2). The framework's package-level "9/8 EW coupling
-correction" enters as the inverse of the adjoint-channel fraction, in the
-specific direction set by the matching rule (M) below.
+correction" would be this inverse only under the matching rule (M), the
+separate weight condition (W) and a reciprocal-coupling readout (§5); none
+of these is derived here.
 
 ## 5. The matching rule (named structural input, NOT derived here)
 
@@ -287,6 +288,10 @@ The runner verifies:
    exactly 8/9 at N_c = 3 (no `O(1/N_c^4)` correction).
 7. The matching rule (M) is explicitly named as not-derived in this
    note, with the load-bearing structural input role labeled.
+8. Reflection-sign and dimension-versus-amplitude controls at N_c = 2, 3:
+   the raw reversed trace equals `p*T` for `p = +1, -1`; `M = I` gives
+   `C/T = 0` and a nonzero traceless `M` gives `C/T = 1`, so neither equals
+   the dimension fraction.
 
 ## 8. Inputs and import roles
 
@@ -321,8 +326,9 @@ the audit-graph cycle returns and this note's cycle-breaking value is lost.
 - "Cycle-breaking derivation: cites only retained upstreams; no
   citation-graph cycle through `yt_ew_color_projection`,
   `rconn_derived`, or `ew_current_matching_ozi_suppression`."
-- "At N_c = 3, the adjoint-channel dimension fraction is exactly 8/9 (no
-  `O(1/N_c^4)` correction)."
+- "At N_c = 3, the adjoint-channel fraction is exactly 8/9 (no
+  `O(1/N_c^4)` correction)." This fraction is the representation-dimension
+  fraction, not a propagator-amplitude fraction.
 
 **Cannot claim:**
 - bare `retained` / `promoted`.

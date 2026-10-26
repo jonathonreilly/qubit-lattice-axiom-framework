@@ -136,8 +136,8 @@ Cl(3) on Z^3                                            [AXIOM]
   |      Full 1-loop CW on lattice BZ (L=24, a=1):
   |      lambda(v) = 0.1908 = m_H^2/(2v^2)               [DERIVED]
   |
-  +--- PREDICTIONS
-         m_t = y_t(v) * v / sqrt(2) = 169.5 GeV          [DERIVED]
+  +--- HISTORICAL OUTPUTS
+         y_t(v) * v / sqrt(2) = 169.5 GeV   [RUNNING READOUT; no pole matching]
          m_H = 152.2 GeV  (lattice CW, converges to 125 as a->0)
          alpha_s(M_Z) = 0.1181  (v -> M_Z running)
          sin^2(theta_W)(M_Z) = 0.2306
@@ -200,7 +200,7 @@ not derived from the current retained primitives.
 
 ## 5. Systematic Uncertainties
 
-| Source                        | Effect on m_t | Effect on sin^2 | Notes                         |
+| Source                        | Effect on y_t(v)v/sqrt(2) | Effect on sin^2 | Notes             |
 |-------------------------------|---------------|-----------------|-------------------------------|
 | Plaquette (0.5934 +/- 0.0006)| ~0.1%         | ~0.05%          | MC statistical                |
 | 2-loop truncation             | ~0.5%         | ~0.1%           | 3-loop absent                 |
@@ -208,7 +208,9 @@ not derived from the current retained primitives.
 | Taste weight (7/18 exact)     | < 0.1%        | ~0.1% per 1%    | Algebraic, not tuned          |
 | Threshold matching (m_b, m_c) | none at v     | none at v       | Affects v -> M_Z only         |
 
-**Total systematic uncertainty on m_t: ~0.6% (dominated by 2-loop truncation).**
+**Historical estimate of the truncation uncertainty on the running readout
+`y_t(v) v/sqrt(2)`: ~0.6% (dominated by 2-loop truncation).** This is not an
+uncertainty on a top pole mass.
 
 The historical pole comparison is superseded by the mass-comparison boundary above; no missing-loop explanation follows before mass-scheme matching.
 
@@ -225,7 +227,8 @@ listed in section 9.C.
 
 Historical full-chain outputs retained for context:
 
-- m_t = 169.5 GeV from zero SM imports (-1.84% from observed)
+- running readout y_t(v) v/sqrt(2) = 169.5 GeV from zero SM imports (no
+  pole-mass comparison; the former -1.84% figure is superseded above)
 - alpha_s(M_Z) = 0.1181 from CMT anchor (+0.14%)
 - sin^2(theta_W)(M_Z) = 0.2306 from geometric bare couplings (-0.26%)
 - v = 246.28 GeV from hierarchy theorem (+0.03%)
@@ -234,7 +237,7 @@ Historical full-chain outputs retained for context:
 - All RGE coefficients from Cl(3) group theory
 
 **What is infrastructure:**
-- Quark mass thresholds (m_b = 4.18, m_c = 1.27 GeV) for the v -> M_Z running cross-check.  These do NOT enter the v-scale prediction.  The m_t = 169.5 GeV result is independent of these values.
+- Quark mass thresholds (m_b = 4.18, m_c = 1.27 GeV) for the v -> M_Z running cross-check.  These do NOT enter the v-scale prediction.  The 169.5 GeV running readout is independent of these values.
 
 **Higgs mass prediction:**
 The full 1-loop CW potential on the lattice BZ (L=24, a=1) with all derived couplings (y_t, g_2, g_Y) gives m_H/m_W = 1.907, hence m_H = 152.2 GeV at the physical lattice spacing a = l_Planck.  This is 21.5% above the observed 125.25 GeV.  The ratio m_H/m_W decreases systematically with lattice spacing: 1.91 (a=1), 1.78 (a=0.75), 1.68 (a=0.5), converging toward the SM value 1.56 as a -> 0.  The +21.5% deviation is a lattice artifact of the same order as expected from O(a^2) corrections to the CW potential.

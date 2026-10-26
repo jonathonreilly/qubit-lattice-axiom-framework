@@ -83,7 +83,15 @@ not rule out a future local or nonlocal derivation. The previously proposed
 is not promoted by these calculations.
 
 Run the named script for numerical trace and Hessian checks and domain rejection.
-The companion `scripts/pmns_scoped_repair_regression_2026_10_21.py` independently
-checks the scalar series and wrong-sign discriminator. PASS counts are execution
-receipts, not scientific status. The former 26-check obstruction narrative is
-superseded; no audit ledger or audit verdict is changed here.
+Its F2 Hessian check discriminates the corrected sign (`6 I_2/m^2`) from the
+former wrong-sign value (`18 I_2/m^2`). The scalar series above is also
+checkable by hand: per eigenvalue `x` of `X`,
+`1/(1+x)-1+log(1+x) = x^2/2 - 2x^3/3 + O(x^4)`, while the wrong sign gives
+`-2x + 3x^2/2 + O(x^3)`, whose linear term cancels in the trace because
+`tr X=0`, leaving the quadratic coefficient `3/2`. An earlier author regression
+script for these checks is historical evidence recoverable at commit
+`3c90f9860c3bae63ee64949e7178290f789dd982`, path
+`scripts/pmns_scoped_repair_regression_2026_10_21.py`; it is not a dependency.
+PASS counts are execution receipts, not scientific status. The former 26-check
+obstruction narrative is superseded; no audit ledger or audit verdict is
+changed here.

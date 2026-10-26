@@ -651,15 +651,41 @@ def execute_and_write_cache(
     return result, write_cache(runner_path, result, identity=before.content)
 
 
+def cache_audit_evidence_issue(runner_path: str | Path) -> str | None:
+    """Separate inspectable stdout evidence from successful silent execution.
+
+    This is an audit-consumption check, not a change to the process exit status
+    or identity freshness. Nonempty output is necessary, never proof of a claim.
+    """
+    status = cache_status(runner_path)
+    if status != "fresh":
+        return status
+    _path, header, body = load_cache(runner_path)
+    if not header or not body:
+        return "audit_transcript_missing"
+    # Delimiter-shaped runner output makes the plain-text format ambiguous.
+    # Fail closed rather than accidentally interpreting stderr as stdout.
+    if (body.count("----- stdout -----\n") != 1
+            or body.count("\n----- stderr -----\n") != 1):
+        return "audit_transcript_malformed"
+    _prefix, separator, rest = body.partition("----- stdout -----\n")
+    stdout, end, _stderr = rest.rpartition("\n----- stderr -----\n")
+    if not separator or not end:
+        return "audit_transcript_malformed"
+    if not stdout.strip():
+        return "audit_stdout_empty"
+    return None
+
+
 def cache_excerpt_for_audit(runner_path: str | Path,
                             tail_chars: int = 6000) -> str | None:
     """Return cache content suitable for the audit prompt's Section 3.
-    Returns None if no cache exists or if the cache is stale.
+    Returns None for stale/failed caches or missing, malformed or blank stdout.
     """
     p, header, body = load_cache(runner_path)
     if not (header and body):
         return None
-    if cache_status(runner_path) != "fresh":
+    if cache_audit_evidence_issue(runner_path) is not None:
         return None
     clipped = len(body) > tail_chars
     excerpt = body[-tail_chars:] if clipped else body

@@ -14,19 +14,15 @@
   "chain_closure_explanation": null,
   "claim_id": "dm_wilson_to_dweh_local_chain_path_algebra_current_bank_boundary_note_2026-04-18",
   "claim_scope": null,
-  "claim_type": "bounded_theorem",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "author_hint",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
-  "deps": [
-    "dm_wilson_to_dweh_hermitian_source_family_current_bank_boundary_note_2026-04-18",
-    "dm_wilson_to_dweh_local_chain_path_algebra_target_note_2026-04-18",
-    "dm_wilson_to_dweh_local_path_algebra_minimal_certificate_note_2026-04-18"
-  ],
+  "deps": [],
   "direct_in_degree": 0,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
@@ -38,7 +34,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "715b46e52f8991f5cbf68a19c54dfff8b056464b24c253559eeedcdc46475dd1",
+  "note_hash": "f3d73a82d4cb547223c4d8b08e4347f5bf8249d7fb25dac407666da5e7e92271",
   "note_path": "docs/DM_WILSON_TO_DWEH_LOCAL_CHAIN_PATH_ALGEBRA_CURRENT_BANK_BOUNDARY_NOTE_2026-04-18.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -101,7 +97,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_current_bank_boundary_2026_04_18.py",
-  "title": "DM Wilson-to-`dW_e^H` Local Chain Path-Algebra Current-Bank Boundary",
+  "title": "Local chain path-algebra documentary boundary",
   "transitive_descendants": 0,
   "verdict_rationale": null
 }

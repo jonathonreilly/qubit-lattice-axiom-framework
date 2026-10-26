@@ -3,7 +3,7 @@ runner: scripts/frontier_dm_wilson_direct_descendant_constructive_transport_plat
 runner_sha256: d45d4599d0de21fdd8ec3ef80cddf50dc40c8cff47953efffdd44b4a68c94af3
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.92
+elapsed_sec: 2.38
 status: ok
 ----- stdout -----
 ========================================================================================

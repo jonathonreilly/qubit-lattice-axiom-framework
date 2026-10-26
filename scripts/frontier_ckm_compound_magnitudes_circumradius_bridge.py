@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """CKM compound-magnitude circumradius bridge.
 
-Verifies the NEW retained closed forms in
+Checks the supplied algebraic closed forms in
   docs/CKM_COMPOUND_MAGNITUDES_CIRCUMRADIUS_BRIDGE_THEOREM_NOTE_2026-04-25.md
 
-Key NEW identities on the retained NLO Wolfenstein protected-gamma_bar surface:
+Conditional identities for the supplied hybrid magnitude formulas:
 
   (C1) Three-magnitude circumradius bridge (NEW):
         N_color * |V_td|^2  =  N_pair * (N_quark - 1) * |V_us|^2 * |V_cb|^2 * R_bar^2,
@@ -28,6 +28,9 @@ Key NEW identities on the retained NLO Wolfenstein protected-gamma_bar surface:
 """
 
 from __future__ import annotations
+
+# Actual documentary reads/existence checks; presence is not scientific authority.
+AUDIT_INPUT_PATHS = ['docs/CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md', 'docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md', 'docs/CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md', 'docs/CKM_BARRED_CIRCUMRADIUS_EXACT_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md', 'docs/WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md']
 
 import math
 import re
@@ -84,56 +87,24 @@ def extract_status_text(content: str) -> str:
     return ""
 
 
-def authority_tier(content: str) -> str:
-    status_low = extract_status_text(content).lower()
-    if "retained" in status_low and "support" not in status_low:
-        return "retained"
-    if "current public framework memo" in status_low:
-        return "retained"
-    if "support" in status_low:
-        return "support"
-    return "unknown"
-
-
 def audit_inputs() -> None:
-    banner("Ground-up status verification of each cited authority")
-
-    print("  RETAINED-TIER (load-bearing for closure):\n")
-
-    retained_authorities = (
-        ("docs/CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md",
-         "retained NLO CKM-structure corollary",
-         ("retained",)),
-        ("docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md",
-         "retained",
-         ("retained",)),
-        ("docs/CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md",
-         "retained standalone structural-identity",
-         ("retained",)),
-        ("docs/CKM_BARRED_CIRCUMRADIUS_EXACT_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md",
-         "retained CKM-structure corollary",
-         ("retained",)),
-        ("docs/WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md",
-         "Retained structural-identity subtheorem",
-         ("retained",)),
+    banner("Documentary dependency inventory, not retention proof")
+    paths = (
+        "docs/CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md",
+        "docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md",
+        "docs/CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md",
+        "docs/CKM_BARRED_CIRCUMRADIUS_EXACT_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md",
+        "docs/WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md",
     )
-
-    for rel_path, claimed, kws in retained_authorities:
-        content = read_authority(rel_path)
-        status = extract_status_text(content)
-        tier = authority_tier(content)
-        all_kws = all(kw.lower() in status.lower() for kw in kws)
-
-        print(f"    [{rel_path.split('/')[-1]}]")
-        print(f"      Status (extracted): {status!r}")
-        print(f"      Tier classification: {tier}")
-        check(f"Retained-tier verified: {rel_path.split('/')[-1]}",
-              all_kws and tier == "retained")
-        print()
+    for path in paths:
+        content = read_authority(path)
+        print(f"  {path}: Status text={extract_status_text(content)!r} (metadata only)")
+        check(f"documentary source present: {path}", bool(content))
+    print("  No status string is classified as retained authority; identities use supplied values.")
 
 
 def extract_retained_inputs() -> dict:
-    banner("Extracting retained inputs from authority text")
+    banner("Checking documentary count patterns; supplied numeric inputs are 2,3,6")
 
     counts = read_authority(
         "docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md"
@@ -146,9 +117,9 @@ def extract_retained_inputs() -> dict:
     print(f"  N_color extracted:                 {n_color_match.group(0) if n_color_match else 'NOT FOUND'}")
     print(f"  N_quark = N_pair * N_color:        {'FOUND' if n_quark_match else 'NOT FOUND'}")
 
-    check("MAGNITUDES retains N_pair = 2", n_pair_match and int(n_pair_match.group(1)) == 2)
-    check("MAGNITUDES retains N_color = 3", n_color_match and int(n_color_match.group(1)) == 3)
-    check("MAGNITUDES retains N_quark = N_pair * N_color (=6)", bool(n_quark_match))
+    check("MAGNITUDES text contains N_pair = 2", n_pair_match and int(n_pair_match.group(1)) == 2)
+    check("MAGNITUDES text contains N_color = 3", n_color_match and int(n_color_match.group(1)) == 3)
+    check("MAGNITUDES text contains N_quark = N_pair * N_color (=6)", bool(n_quark_match))
 
     return {
         "N_pair": 2,
@@ -253,7 +224,7 @@ def audit_c2_four_magnitude_bridge(N: dict, S: dict) -> None:
 
 
 def audit_c3_pdg_comparison(N: dict, S: dict) -> None:
-    banner("C3: PDG numerical comparison")
+    banner("C3: historical central-value diagnostics; no covariance or theory budget")
 
     a_s = S["a_s"]
     Vtd_sq = S["Vtd_sq"]
@@ -283,7 +254,7 @@ def audit_c3_pdg_comparison(N: dict, S: dict) -> None:
     print(f"  C1 check: 3 |V_td|^2 vs 10 |V_us|^2 |V_cb|^2 R_bar^2:")
     print(f"    LHS = 3 |V_td|^2                       = {lhs_C1:.10f}")
     print(f"    RHS = 10 |V_us|^2 |V_cb|^2 R_bar^2     = {rhs_C1:.10f}")
-    check("C1 numerical: 3 |V_td|^2 = 10 |V_us|^2 |V_cb|^2 R_bar^2 within 1e-10",
+    check("C1 numerical: 3 |V_td|^2 = 10 |V_us|^2 |V_cb|^2 R_bar^2 within absolute 1e-10",
           abs(lhs_C1 - rhs_C1) < 1e-10)
 
     # PDG values (central):
@@ -298,8 +269,7 @@ def audit_c3_pdg_comparison(N: dict, S: dict) -> None:
     print(f"    LHS_PDG = 3 |V_td|_PDG^2          = {pdg_lhs_C1:.10f}")
     print(f"    RHS_PDG = 10 |V_us|_PDG^2 |V_cb|_PDG^2 R_bar^2  =  {pdg_rhs_C1:.10f}")
     print(f"    |Delta/LHS| = {rel_diff:.2f} %")
-    check("C1 PDG numerical: 3 |V_td|^2 ~= 10 |V_us|^2 |V_cb|^2 R_bar^2 within 5 % (combined PDG err)",
-          rel_diff < 5)
+    print("  Hybrid model-radius/data comparison only; no combined PDG error was supplied.")
 
     # Four-magnitude compound.
     compound_sq_pred = float((Vtd_sq * Vus_sq / (Vcb_sq * Vub_sq)).subs(a_s, s_canonical))
@@ -310,36 +280,16 @@ def audit_c3_pdg_comparison(N: dict, S: dict) -> None:
     print(f"    Framework = {compound_sq_pred:.4f}")
     print(f"    PDG       = {pdg_compound_sq:.4f}")
     print(f"    |Delta/PDG| = {rel_diff_C2:.2f} %")
-    check("C2 PDG numerical: (|V_td V_us|/|V_cb V_ub|)^2 framework ~= PDG within 5 %",
-          rel_diff_C2 < 5)
+    print("  Descriptive central-value comparison only, not a statistical validation.")
 
 
 def audit_summary() -> None:
-    banner("Summary of NEW retained content")
-
-    print("  Inputs (retained-tier, ground-up Status verified):")
-    print("    CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA  (retained)")
-    print("    CKM_MAGNITUDES_STRUCTURAL_COUNTS         (retained)")
-    print("    CKM_CP_PHASE_STRUCTURAL_IDENTITY         (retained)")
-    print("    CKM_BARRED_CIRCUMRADIUS_EXACT_CLOSED_FORM (retained)")
-    print("    WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES (retained)")
-    print()
-    print("  NEW retained closed forms:")
-    print()
-    print("    (C1) Three-magnitude circumradius bridge:")
-    print("         N_color |V_td|^2  =  N_pair (N_quark - 1) |V_us|^2 |V_cb|^2 R_bar^2,")
-    print("         i.e., 3 |V_td|^2  =  10 |V_us|^2 |V_cb|^2 R_bar^2.")
-    print()
-    print("    (C2) Four-magnitude circumradius bridge:")
-    print("         (|V_td V_us|/|V_cb V_ub|)^2  =  N_pair^2 N_color (N_quark - 1) R_bar^2 / alpha_s")
-    print("                                       =  60 R_bar^2 / alpha_s.")
-    print()
-    print("    (C2 alt) Equivalent form:")
-    print("         (|V_td V_us|/|V_cb V_ub|)^2  =  N_pair N_color (N_quark - 1) R_bar^2 / |V_us|^2")
-    print("                                       =  30 R_bar^2 / |V_us|^2.")
-    print()
-    print("    (C3) PDG validation: framework predictions for both bridges agree")
-    print("         with PDG-computed values within 5 % relative deviation.")
+    banner("Conditional supplied identities, no retained-status conclusion")
+    print("  C1: 3 Vtd² = 10 Vus² Vcb² Rbar².")
+    print("  C2: Vtd² Vus²/(Vcb² Vub²) = 60 Rbar²/alpha_s = 30 Rbar²/Vus².")
+    print("  Inputs mix leading unbarred Vub with a barred-apex Vtd formula.")
+    print("  Exact symbolic equality within this supplied model is not an all-orders CKM result.")
+    print("  Historical comparisons use alpha_s=.103 and a model radius, without covariance.")
 
 
 def main() -> int:

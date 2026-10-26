@@ -3,7 +3,7 @@ runner: scripts/frontier_dm_leptogenesis_transport_status.py
 runner_sha256: 82b7ab4f08c4be28bbf847766f2210dd62b25b810d89a13859cf804fbefc43c9
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.55
+elapsed_sec: 1.47
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -42,12 +42,12 @@ PART 2: EXACT EQUILIBRIUM BOOKKEEPING AND H_rad(T)
 ========================================================================================
 PART 3: DIRECT TRANSPORT INTEGRAL ON THE EXACT RADIATION BRANCH
 ========================================================================================
-  [PASS] The direct supplied transport integral on the exact radiation branch gives kappa_axiom = 0.004829545290766509  (kappa_axiom=0.004829545290767)
+  [PASS] The direct supplied transport integral on the exact radiation branch gives kappa_axiom = 0.004829545290766509  (kappa_axiom=0.004829545290766)
   [PASS] The exact formal transport integral reproduces the same value  (kappa_formal=0.004829546210191)
   [PASS] On the exact radiation branch this gives eta/eta_obs = 0.18878592785084122  (eta/eta_obs=0.188785929502)
 
   K_exact = 47.235979629898
-  kappa_axiom = 0.004829545290767
+  kappa_axiom = 0.004829545290766
   eta/eta_obs = 0.188785929502
   legacy fit comparator eta/eta_obs = 0.557919848420
 

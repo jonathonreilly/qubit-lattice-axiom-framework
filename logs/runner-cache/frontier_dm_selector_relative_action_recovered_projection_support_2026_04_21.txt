@@ -1,57 +1,49 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_selector_relative_action_recovered_projection_support_2026_04_21.py
-runner_sha256: 85b9d5ce5fee8ac38b81d84eafee2ec1f761e0308ea62e91a9b5ec670eb6662c
+runner_sha256: bb79cd09bd11486781f560550f6562e89fa6f3ba467bc50a184061090fa35baa
+input_fingerprint_sha256: c1db8aa48f6dae72d524fccee4da8e554926eef88067a7a3eb43283c8bbb8314
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 2.28
+elapsed_sec: 8.85
 status: ok
 ----- stdout -----
 ========================================================================================
-DM SELECTOR RELATIVE-ACTION / RECOVERED PROJECTION SUPPORT THEOREM
+DM SELECTOR RELATIVE-ACTION / RECOVERED PROJECTION FINITE NUMERICAL SUPPORT
 ========================================================================================
 
 ========================================================================================
 PART 1: THE SAME RECOVERED LIFT IS ALREADY SINGLED OUT BY THE THRESHOLD FAMILY
 ========================================================================================
-  [PASS] The intrinsic threshold breakpoint tau_b,min already selects recovered lift 0 uniquely  ((tau_b_min,next)=(0.148036252277635,0.160534730480452))
+  [PASS] DOCUMENTARY only: first-shoulder note states conditional finite support and withdraws whole-window certification; text is not proof
+  [PASS] DOCUMENTARY text observation only: The separation note still records that the internal selector and recovered branch are distinct exact selector objects
+  [PASS] The supplied threshold breakpoint tau_b,min already selects recovered lift 0 uniquely  ((tau_b_min,next)=(0.148036252277635,0.160534730480452))
 
 ========================================================================================
-PART 2: THE SUPPLIED NUMERICAL SOURCE HAS A UNIQUE SHIFT-INDEPENDENT NEAREST RECOVERED POINT
+PART 2: FINITE DISTANCE COMPARISONS ON SUPPLIED BANK
 ========================================================================================
-  [PASS] In Frobenius distance on H, the relative-action source is uniquely nearest to recovered lift 0  ((nearest, margin)=(0, 1.307037576125))
-  [PASS] In Euclidean distance on the active target (delta, q_+), the relative-action source is uniquely nearest to recovered lift 0  ((nearest, margin)=(0, 1.051670147563))
-  [PASS] At the anchor positive window, the exact witness-volume threshold profile is also uniquely nearest to recovered lift 0  ((nearest, margin)=(0, 0.478393537863) on [0,0.155851])
+  [PASS] In Frobenius distance on H, the relative-action source is uniquely nearest to recovered lift 0  ((nearest, margin)=(0, 1.307038075646))
+  [PASS] In Euclidean distance on the active target (delta, q_+), the relative-action source is uniquely nearest to recovered lift 0  ((nearest, margin)=(0, 1.051670301591))
+  [PASS] At the anchor positive window, the computed witness-volume threshold profile is also uniquely nearest to recovered lift 0  ((nearest, margin)=(0, 0.478393066552) on [0,0.155851])
 
 ========================================================================================
-PART 3: THE SAME PREFERRED LIFT PERSISTS ACROSS THE TESTED POSITIVE-WINDOW GEOMETRIES
+PART 3: THE SAME PREFERRED LIFT PERSISTS ACROSS THE AUDITED POSITIVE-WINDOW GEOMETRIES
 ========================================================================================
-  [PASS] Across all tested common positive shifts, the affine-invariant Riemannian distance picks recovered lift 0 uniquely  (min tested margin = 0.193871908381)
-  [PASS] Across all tested common positive shifts, the forward LogDet divergence D(A_rel || A_i) picks recovered lift 0 uniquely  (min tested margin = 0.094212015616)
-  [PASS] Across all tested common positive shifts, the reverse LogDet divergence D(A_i || A_rel) picks recovered lift 0 uniquely  (min tested margin = 0.076481986434)
-  [PASS] Across all tested common positive shifts, inverse-eigenvalue parameter distance also picks recovered lift 0 uniquely  (min tested margin = 0.033692223191)
+  [PASS] Across sampled common positive shifts, the affine-invariant Riemannian distance picks recovered lift 0 uniquely  (min audited margin = 0.193871979120)
+  [PASS] Across sampled common positive shifts, the forward LogDet divergence D(A_rel || A_i) picks recovered lift 0 uniquely  (min audited margin = 0.094212033338)
+  [PASS] Across sampled common positive shifts, the reverse LogDet divergence D(A_i || A_rel) picks recovered lift 0 uniquely  (min audited margin = 0.076481993033)
+  [PASS] Across sampled common positive shifts, inverse-eigenvalue parameter distance also picks recovered lift 0 uniquely  (min audited margin = 0.033692222064)
 
 ========================================================================================
-PART 4: SCIENTIFIC CONSEQUENCE
+PART 4: DOCUMENTARY BOUNDARY AND FINITE COMPARISONS
 ========================================================================================
-  [PASS] The supplied numerical source and recovered threshold branch are no longer disconnected by the finite numerical comparison  (the same preferred recovered lift is selected by the threshold family and by the tested projection metrics from the supplied numerical source)
-  [PASS] So the remaining selector-side burden narrows to justifying the projection principle, or replacing both selector objects by a finer microscopic law  (support narrowing only)
+  [PASS] DOCUMENTARY: summary reports physical selection obligations open and PMNS angles supplied
+  [PASS] Finite supplied diagnostic: agreement of the computed packet comparisons; no global or physical implication  (the same preferred recovered lift is selected by the threshold family and by the audited projection metrics from the internal selector)
+  [PASS] Finite supplied diagnostic: agreement of the computed packet comparisons; no global or physical implication  (support narrowing only)
 
 ========================================================================================
-RESULT
-========================================================================================
-  The relative-action source still stays off the recovered selector branch,
-  and the tested metrics identify the same nearest finite-bank point.
-  Across Frobenius, target, threshold-profile, affine-invariant, dual
-  LogDet, and inverse-eigenvalue metrics, the unique nearest recovered
-  point in the tested comparisons is the preferred lift 0.
-  That same lift is already selected by the intrinsic breakpoint tau_b,min.
-
-  So the selector-side burden narrows again:
-    justify the projection from the supplied numerical source to that
-    preferred recovered lift, or replace both by a finer microscopic law.
-
-[SCOPE] Supplied finite numerical comparisons; physical selection remains open.
-SUMMARY: PASS=10 FAIL=0
+RESULT: finite supplied computations and documentary observations only
+No physical selector, exact optimizer/root certificate, exhaustive route or continuous-window theorem follows.
+SUMMARY: PASS=13 FAIL=0
 
 ----- stderr -----
 

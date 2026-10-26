@@ -1,33 +1,13 @@
 #!/usr/bin/env python3
-"""
-Hierarchy dimensional-compression diagnostic.
+"""Finite supplied APBC-matrix arithmetic diagnostic.
 
-Within-scope content (this runner's PASS gates):
-  Pure intra-framework dimensional arithmetic on the staggered Dirac
-  condensate-density ratio R. No PASS gate depends on the imported
-  electroweak observation v_obs or the imported pre-selector value
-  v_pred. The (1/4) D=4 compression exponent and inverse placement are
-  now routed through the 2026-06-16 fixed-density coefficient-to-scale
-  bridge and the 2026-06-18 EW order-parameter D=4 density readout bridge,
-  while endpoint selection and the absolute physical VEV closure stay outside
-  this parent row.
-
-External-context block (printed, NOT PASS-load-bearing):
-  v_pred = M_Pl * alpha_LM^16, v_obs = 246.22 GeV, and the residual
-  prefactor C_obs = v_obs / v_pred are still emitted so the reader can
-  see why the dimensional-compression direction is of physical
-  interest; explicitly excluded from any PASS condition.
-
-This script does not derive the EW VEV from primitives. The within-scope
-load-bearing content is the PASS-gated arithmetic below; the remaining open
-step is the hierarchy-endpoint-to-physical-Higgs-density selection and
-absolute scale closure.
+The quartic interpretation is conditional; no physical taste count, endpoint,
+EW scale or audit status is derived. Printed external targets are context only.
 """
 
 from __future__ import annotations
 
 import math
-import json
 from pathlib import Path
 import sys
 
@@ -35,10 +15,10 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = ROOT / "docs" / "HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md"
-LEDGER_PATH = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = ['docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md']
 PASS_COUNT = 0
 FAIL_COUNT = 0
-RETAINED_GRADES = {"retained", "retained_bounded", "retained_no_go"}
 
 
 def check(name: str, condition: bool, detail: str = "") -> None:
@@ -109,42 +89,14 @@ def condensate_density(Ls: int, Lt: int, u0: float, mass: float) -> float:
 def check_source_firewall() -> None:
     note = NOTE_PATH.read_text(encoding="utf-8")
     flat = " ".join(note.split())
-    rows = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))["rows"]
-    check(
-        "source note demotes stale bounded-theorem proposal to conditional support",
-        "**Type:** open_gate / conditional-support" in note
-        and "**Claim type:** open_gate / conditional D=4 arithmetic support" in note
-        and "proposed_claim_type: open_gate / conditional-support" in note
-        and "proposal_allowed: false" in note
-        and "**Type:** bounded_theorem" not in note
-        and "proposed_claim_type: bounded_theorem" not in note,
-    )
-    check(
-        "source note wires D=4 density-scale bridge while keeping physical VEV premise open",
-        "## 2026-06-16 bridge update: fixed-density map supplied, physical VEV premise still open" in note
-        and "HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md" in note
-        and "fixed-density coefficient-to-scale bridge" in flat
-        and "still does not identify the electroweak VEV" in flat
-        and "D=4 taste-count input is now routed through retained bounded taste-count authorities" in flat
-        and "No new axiom, Tier-A admission, observed target, or audit status" in flat,
-    )
-    check(
-        "source note wires EW order-parameter readout bridge while preserving endpoint-selection residual",
-        "HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md" in note
-        and "EW neutral order-parameter coordinate" in flat
-        and "endpoint-selection residual remains open" in flat
-        and "does not derive that the hierarchy Matsubara endpoint coefficient is the physical Higgs density" in flat,
-    )
-    taste_ids = [
-        "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
-        "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
-    ]
-    statuses = {cid: rows.get(cid, {}).get("effective_status") for cid in taste_ids}
-    check(
-        "taste-count one-hop authorities are retained-grade in the live ledger",
-        all(statuses.get(cid) in RETAINED_GRADES for cid in taste_ids),
-        ", ".join(f"{cid}={statuses.get(cid)}" for cid in taste_ids),
-    )
+    check("documentary boundary: finite supplied diagnostic, not taste authority",
+          "**Type:** open_gate" in note
+          and "finite supplied-matrix numerical diagnostic" in note
+          and "previous retained-grade taste-authority contract is withdrawn" in flat)
+    check("documentary boundary: physical interpretation remains open",
+          "does not identify the electroweak VEV" in flat
+          and "endpoint-selection residual remains open" in flat
+          and "does not identify the computed condensate ratio" in flat)
 
 
 def main() -> None:
@@ -164,7 +116,7 @@ def main() -> None:
     print(f"  cond(Lt=10) = {cond_10:.10f}")
     print(f"  ratio       = {ratio:.10f}")
 
-    print("\n  Intra-framework dimensional-compression candidates:")
+    print("\n  Supplied-fixture dimensional-compression candidates:")
     candidates = {}
     for dim in [3, 4, 8, 16]:
         root = ratio ** (1 / dim)
@@ -180,14 +132,14 @@ def main() -> None:
     inv16 = candidates[16][1]
 
     print("\n" + "-" * 78)
-    print("  Intra-framework PASS gates (no observed-target dependence)")
+    print("  Supplied-fixture PASS gates (no observed-target dependence)")
     print("-" * 78)
 
     # Gate 1: R^(-1/4) reproduces via two independent algebraic routes.
     inv4_pow = ratio ** (-0.25)
     inv4_log = math.exp(-math.log(ratio) / 4.0)
     check(
-        "D=4 inverse compression R^(-1/4) reproduces by independent routes",
+        "D=4 inverse compression R^(-1/4) agrees between power/log evaluations",
         abs(inv4_pow - inv4_log) < 1e-12,
         f"R^(-1/4) via pow = {inv4_pow:.12f}, via exp(-log/4) = {inv4_log:.12f}",
     )
@@ -224,20 +176,12 @@ def main() -> None:
         for t in fails
     )
     check(
-        "Structural identity FAILS at D in {1,2,3,5,6,8} (so (1/4) is D=4-specific)",
+        "Structural identity FAILS at D in {1,2,3,5,6,8} (finite comparison set only)",
         all_fail,
         detail_lines,
     )
 
-    # Gate 5: assert that no observed target value is used in any gate.
-    # The variables v_obs, v_pred, C_obs are introduced only AFTER the
-    # gates and live solely in the external-context block below; this is
-    # a structural assertion documented as PASS for explicit auditability.
-    check(
-        "PASS conditions are free of observed-target imports (audit-transparent)",
-        True,
-        "v_obs, v_pred, C_obs are not referenced before this point",
-    )
+    print("INFO: printed external targets are context; this narration is not a numerical check.")
     check_source_firewall()
 
     # ---- External context block (NOT load-bearing) ----
@@ -259,14 +203,8 @@ def main() -> None:
     print("  from all PASS gates above. Comparing R^(-1/4) to C_obs is a")
     print("  reader-level diagnostic, not an audit-load-bearing closure.")
 
-    print("\nConclusion (within-scope):")
-    print("  Under the 2026-06-16 fixed-density coefficient-to-scale bridge,")
-    print("  and the 2026-06-18 EW order-parameter readout bridge, a positive")
-    print("  endpoint coefficient ratio R maps to the inverse fourth-root")
-    print("  scale factor R^(-1/4) at D=4 on a supplied quartic Higgs-density")
-    print("  surface. The runner checks that this candidate is quantitatively")
-    print("  distinct from the D=16 direct-scale alternative and that no")
-    print("  within-scope PASS gate depends on the imported v_obs.")
+    print("\nFinite supplied-fixture arithmetic only. The coefficient interpretation of R,")
+    print("physical taste count, physical endpoint and absolute EW scale remain open.")
 
     print("\n" + "=" * 78)
     print(f"SCORECARD: {PASS_COUNT} pass, {FAIL_COUNT} fail out of {PASS_COUNT + FAIL_COUNT}")

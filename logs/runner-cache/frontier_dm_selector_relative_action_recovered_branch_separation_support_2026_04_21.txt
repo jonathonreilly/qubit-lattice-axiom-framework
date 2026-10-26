@@ -1,43 +1,50 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_selector_relative_action_recovered_branch_separation_support_2026_04_21.py
-runner_sha256: 30b12583f6885e550c3cb25128cf4cdb9a7a1ecfa6f1fdc6302542e994a31c68
+runner_sha256: d7a127dabc0a6a3da44763f437b3861376a8e4ea6f043917a6ac04cf022fa642
+input_fingerprint_sha256: 5429134c89a3ce073a137c530d06a68fdb4971614120799ef03293d60d451e03
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 3.06
+elapsed_sec: 9.23
 status: ok
 ----- stdout -----
 ========================================================================================
-DM SELECTOR RELATIVE-ACTION / RECOVERED-BRANCH SEPARATION SUPPORT THEOREM
+DM SELECTOR RELATIVE-ACTION / RECOVERED-BRANCH SEPARATION FINITE NUMERICAL SUPPORT
 ========================================================================================
 
 ========================================================================================
-PART 1: SUPPLIED RELATIVE-ACTION NUMERICAL SOURCE
+PART 1: SUPPLIED NUMERICALLY CONSTRUCTED SOURCE
 ========================================================================================
-  [PASS] The reconstructed source stays on the exact fixed native seed surface  ((xbar,ybar)=(0.563333,0.306667))
-  [PASS] The reconstructed source satisfies the imposed favored-column equality within tolerance  (delta=-2.611502858097e-08, etas=[1.       0.759179 0.48459 ])
+  [PASS] DOCUMENTARY: parent names an operational PMNS-assisted selector and disclaims branch-global analytic proof; no authority is inferred
+  [PASS] The reconstructed source stays on the computed fixed native seed surface  ((xbar,ybar)=(0.563333,0.306667))
+  [PASS] The reconstructed source still closes the favored transport column computedly  (delta=9.505194523932e-07, etas=[1.       0.759179 0.484589])
 
 ========================================================================================
 PART 2: THE RELATIVE-ACTION SOURCE STAYS OFF THE RECOVERED SELECTOR BRANCH
 ========================================================================================
-  [PASS] No recovered-bank Hermitian source coincides with the relative-action source  (min Frobenius distance = 2.493911589625)
-  [PASS] No recovered active target coincides with the relative-action target  (min target distance = 0.496150950793)
-  [PASS] The nearest recovered point is the preferred lift, but the gap is still macroscopically nonzero in the supplied coordinate norm  (nearest recovered index = 0)
+  [PASS] No recovered-bank Hermitian source coincides with the relative-action source  (min Frobenius distance = 2.493910505037)
+  [PASS] No recovered active target coincides with the relative-action target  (min target distance = 0.496150881552)
+  [PASS] The nearest recovered point is the preferred lift, but the gap is still macroscopically nonzero on the audited scale  (nearest recovered index = 0)
 
 ========================================================================================
 PART 3: THE RELATIVE-ACTION SOURCE DOES NOT REALIZE THE RECOVERED THRESHOLD CANDIDATE
 ========================================================================================
-  [PASS] The relative-action source has its own later middle-branch breakpoint  ((tau_b_sel, tau_b_min)=(0.155402232320736, 0.148036252277635))
+  [PASS] DOCUMENTARY only: first-shoulder note states conditional finite support and withdraws whole-window certification; text is not proof
+  [PASS] The relative-action source has its own later middle-branch breakpoint  ((tau_b_sel, tau_b_min)=(0.155402237575176, 0.148036252277635))
   [PASS] At tau = 0.13 and tau = 0.14 the relative-action source is still on the full-volume shoulder of the witness family  ((V_0.13, V_0.14)=(1.000000000000, 1.000000000000))
-  [PASS] At the recovered-bank canonical breakpoint tau_b,min, the preferred recovered lift still beats the relative-action source  ((V_pref, V_rel)=(0.724251528643, 0.778188287140))
-  [PASS] At its own breakpoint tau_b,rel, the relative-action source becomes strictly smaller than every recovered-bank competitor  ((V_rel, min_bank)=(0.030950556466, 0.580783471954))
+  [PASS] At the recovered-bank canonical breakpoint tau_b,min, the preferred recovered lift still beats the relative-action source  ((V_pref, V_rel)=(0.724251528643, 0.778188316061))
+  [PASS] At its own breakpoint tau_b,rel, the relative-action source becomes strictly smaller than every recovered-bank competitor  ((V_rel, min_bank)=(0.030949820122, 0.580783374899))
 
 ========================================================================================
-PART 4: SCIENTIFIC CONSEQUENCE
+PART 4: DOCUMENTARY BOUNDARY AND FINITE COMPARISONS
 ========================================================================================
-[SCOPE] The supplied numerical source differs from the finite recovered bank.
-[SCOPE] The observed-target equality is imposed, not predicted.
-[SCOPE] Physical selection and global uniqueness remain open.
-SUMMARY: PASS=9 FAIL=0
+  [PASS] DOCUMENTARY: summary reports physical selection obligations open and PMNS angles supplied
+INFO: Historical selector-burden narration withdrawn; no mathematical check or exhaustive-route inference.
+INFO: Historical selector-burden narration withdrawn; no mathematical check or exhaustive-route inference.
+
+========================================================================================
+RESULT: finite supplied computations and documentary observations only
+No physical selector, exact optimizer/root certificate, exhaustive route or continuous-window theorem follows.
+SUMMARY: PASS=12 FAIL=0
 
 ----- stderr -----
 

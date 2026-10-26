@@ -22,18 +22,7 @@
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
-  "deps": [
-    "koide_q_delta_linking_relation_theorem_note_2026-04-20",
-    "koide_bae_probe_radian_from_dimensions_bounded_note_2026-05-09_probe30",
-    "c_iso_su3_nnlo_closure_bounded_note_2026-05-10_su3nnlo",
-    "koide_bae_probe_wilson_chain_mass_note_2026-05-09_probe19",
-    "koide_bae_probe_phi_from_z3_character_note_2026-05-09_probe24",
-    "koide_z3_qubit_radian_bridge_no_go_note_2026-04-20",
-    "complete_prediction_chain_2026_04_15",
-    "minimal_axioms_2026-05-03",
-    "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
-    "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
-  ],
+  "deps": [],
   "direct_in_degree": 0,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
@@ -45,7 +34,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "0a355746788fc434789f517c4b8c2dc71c203fffbafd62d5012818ef7a11adeb",
+  "note_hash": "818a6cf8874f099d0f1de9b04dac7d01f4b810c95f03bfb27566ead844b8e001",
   "note_path": "docs/RADIAN_BRIDGE_EXPANDED_INVENTORY_BOUNDED_NOTE_2026-05-10_radianexp.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -60,7 +49,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/cl3_radian_bridge_expanded_inventory_2026_05_10_radianexp.py",
-  "title": "Radian-Bridge Primitive `P` From EXPANDED Retained Inventory (Bounded, Sharpened)",
+  "title": "Supplied rational catalogue and finite angle-target search",
   "transitive_descendants": 0,
   "verdict_rationale": null
 }

@@ -70,11 +70,14 @@ The refreshed PMNS package strengthens the lane materially:
 - the current exact PMNS stationary / minimum-information selector families are
   still `delta`-even and therefore CP-sheet blind on the charged-sector bridge
 
-So the PMNS route is no longer blocked by transport existence, by
-constructive-sign incompatibility, or by lack of an exact constructive closure
-point. What remains open is the right-sensitive microscopic selector law on
+These bullets summarize the cited notes at their own stated scopes. After the
+2026-10-21 narrowing, the constructive `eta/eta_obs = 1` point is a numerical
+root sample rather than a certified exact root, the CP-sheet statement is the
+conditional parity non-identifiability of supplied reflection-even selectors,
+and the microscopic selector-reduction note no longer asserts a sole remaining
+object. Within those limits, the right-sensitive microscopic selector law on
 `dW_e^H = Schur_Ee(D_-)`, equivalently the intrinsic `2`-real `Z_3`
-doublet-block point-selection law.
+doublet-block point-selection law, remains an open target.
 
 ## Source-surface blocker-reduction status
 

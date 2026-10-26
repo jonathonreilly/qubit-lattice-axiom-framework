@@ -1,0 +1,21 @@
+{
+  "source_commit": "571eb1b52e8417e44472cf28043c20be137cf9e3",
+  "disposition": "Historical documentary census only; no current primary, freshness, or authority. Complete bytes preserved. Existing archive ledger is historical and untouched.",
+  "files": [
+    {
+      "original_path": "archive/notes/docs/RUNNER_LEDGER_FIELD_PIN_HYGIENE_CONVENTION_PROPOSAL_NOTE_2026-07-02.md",
+      "archive_path": "archive/source-history/stefan-consumer-withdrawal-2026-10-23/RUNNER_LEDGER_FIELD_PIN_HYGIENE_CONVENTION_PROPOSAL_NOTE_2026-07-02.md.historical.txt",
+      "sha256": "c3d5b6391cc71b8173e46c831d9150df2083ce3ece8207764bfb70c14f4c2210"
+    },
+    {
+      "original_path": "scripts/runner_ledger_field_pin_hygiene_convention_check_2026_07_02.py",
+      "archive_path": "archive/source-history/stefan-consumer-withdrawal-2026-10-23/runner_ledger_field_pin_hygiene_convention_check_2026_07_02.py.historical.txt",
+      "sha256": "561cf7a033442860b8b4ea53a1d6b450c70e3063ee5f2305a2dafe160cdad75f"
+    },
+    {
+      "original_path": "logs/runner-cache/runner_ledger_field_pin_hygiene_convention_check_2026_07_02.txt",
+      "archive_path": "archive/source-history/stefan-consumer-withdrawal-2026-10-23/runner_ledger_field_pin_hygiene_convention_check_2026_07_02.txt.historical.txt",
+      "sha256": "32cd08a42758083e3dda1997055c59059e3902b81ab750dfa9c78ecc28b977ee"
+    }
+  ]
+}

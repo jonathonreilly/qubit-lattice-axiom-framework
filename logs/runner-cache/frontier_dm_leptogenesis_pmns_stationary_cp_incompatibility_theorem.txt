@@ -3,7 +3,7 @@ runner: scripts/frontier_dm_leptogenesis_pmns_stationary_cp_incompatibility_theo
 runner_sha256: a6fd887a2a20fc58608a4f6e1cb9c63b2ff815b1ca27d5843c954f969bb2b7cb
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 0.24
+elapsed_sec: 0.72
 status: ok
 ----- stdout -----
 [PASS] gamma is odd

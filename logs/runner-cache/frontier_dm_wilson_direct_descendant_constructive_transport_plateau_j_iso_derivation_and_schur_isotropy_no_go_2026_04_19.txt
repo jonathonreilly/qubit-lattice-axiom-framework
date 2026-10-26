@@ -3,7 +3,7 @@ runner: scripts/frontier_dm_wilson_direct_descendant_constructive_transport_plat
 runner_sha256: 16cba010e0f2b2e4006212ed9386e79ce8821700234f3d400ff767f73f832542
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.86
+elapsed_sec: 2.35
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -23,8 +23,8 @@ PART 1: J_iso IS THE UNIQUE NORMALIZED CUBIC BOUNDARY-SENSITIVE SCHUR LAW
 PART 2: W1 IS NOT A FULL-PLATEAU J_ISO MAXIMIZER
 ========================================================================================
   [PASS] The canonical transport fiber through W1 is 3-real  (kernel shape=(5, 3))
-  [PASS] The J_iso gradient has a nonzero projection onto that exact transport-fiber tangent space  (||P_fiber grad J_iso||=0.353137851679)
-  [PASS] So W1 is not stationary for J_iso on the full constructive transport plateau  (delta J_iso=0.000353257811, delta col=1.890e-07)
+  [PASS] The J_iso gradient has a nonzero projection onto that exact transport-fiber tangent space  (||P_fiber grad J_iso||=0.353137851892)
+  [PASS] So W1 is not stationary for J_iso on the full constructive transport plateau  (delta J_iso=0.000353257812, delta col=1.890e-07)
 
 ========================================================================================
 PART 3: AN EXPLICIT CONSTRUCTIVE PLATEAU POINT IS MORE ISOTROPIC THAN W1
@@ -62,7 +62,7 @@ PART 6: N5 EXECUTION CERTIFICATE — WHAT THIS RUNNER RESOLVES
   B_major source5     = [0.939538 0.365558 0.6046   0.121238 0.100818]
   B_major pack        = [1.05222  0.01836  0.001    1.235773 0.021423]
   B_major spectrum    = [0.835477 0.099477 0.065046]
-  ||P_fiber grad J||  = 0.353137851679
+  ||P_fiber grad J||  = 0.353137851892
   PASS=17 FAIL=0
 
 ----- stderr -----

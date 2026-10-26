@@ -14,9 +14,9 @@
   "chain_closure_explanation": null,
   "claim_id": "hierarchy_bbs_staggered_taste_blocking_bridge_narrow_no_go_note_2026-05-10",
   "claim_scope": null,
-  "claim_type": "no_go",
-  "claim_type_author_hint": "no_go",
-  "claim_type_author_hint_raw": "no_go",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
   "criticality": "medium",
@@ -39,7 +39,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "5bb7ec5c3d6e9221c940f012335d2ac712d308763a239ab9a4c750f3bbae40b2",
+  "note_hash": "bc6216e4e6af0cf309904d5ee0ed2cf636702a775202d9c4254d4abf9a1ca170",
   "note_path": "docs/HIERARCHY_BBS_STAGGERED_TASTE_BLOCKING_BRIDGE_NARROW_NO_GO_NOTE_2026-05-10.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -54,7 +54,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_hierarchy_bbs_staggered_taste_blocking_bridge_narrow.py",
-  "title": "Hierarchy BBS Staggered Taste Blocking Bridge \u2014 Narrow No-Go",
+  "title": "Taste-staircase arithmetic and the unresolved contraction bridge",
   "transitive_descendants": 3,
   "verdict_rationale": null
 }

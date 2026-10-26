@@ -26,7 +26,7 @@ import sys
 import numpy as np
 import sympy as sp
 
-AUDIT_TIMEOUT_SEC = 600
+AUDIT_TIMEOUT_SEC = 120
 AUDIT_INPUT_PATHS = (
     'docs/TWO_QUBIT_SITE_UNFREEZES_THE_CUBIC_TICK_DOUBLER_FREE_DIRAC_WALK_BOUNDED_THEOREM_NOTE_2026-10-16.md',
     '.claude/science/review-fixes/review-drain-20261016/CUBIC_TICK_SCOPE.md',
@@ -239,7 +239,7 @@ def main() -> int:
         ph = sp.Matrix([1, sum(cs), cs[0] * cs[1] + cs[0] * cs[2] + cs[1] * cs[2], cs[0] * cs[1] * cs[2]])
         uu = sp.expand((phi0c.T * Gm * (phi0c - ph))[0])
         uu = sum(uu.coeff(eps, j) * eps ** j for j in range(order + 1))
-        ww = sp.expand(2 * uu + uu ** 2 / 3 + 8 * uu ** 3 / 45)
+        ww = sp.expand(2 * uu + uu ** 2 / 3 + 4 * uu ** 3 / 45)   # arccos(1-u)^2 series; 4/45 corrected 2026-10-18 (was 8/45)
         return [sp.expand(ww.coeff(eps, j)) for j in range(order + 1)]
     N4 = sum(x ** 4 for x in nn)
     alpha = s_ * (b[0] ** 3 + 6 * b[0] ** 2 * b[1] + 3 * b[0] ** 2 * b[2] + 12 * b[0] * b[1] ** 2 + 12 * b[0] * b[1] * b[2]
@@ -278,10 +278,32 @@ def main() -> int:
     wi = omega2_series(Gi, 6)
     N6 = sum(x ** 6 for x in nn)
     P222 = nn[0] ** 2 * nn[1] ** 2 * nn[2] ** 2
-    target6 = sp.Rational(1, 243) * nsq ** 3 - sp.Rational(1, 540) * nsq * N4 + (sp.sqrt(10) / 9 - sp.Rational(16, 45)) * P222
-    ck.check('b_iso: omega^2 = (2/3)|k|^2 - (1/54)|k|^4 + (1/243)|k|^6 - (1/540)|k|^2 sum k^4 + (sqrt10/9 - 16/45) k1^2 k2^2 k3^2 + O(k^8)',
+    target6 = sp.Rational(1, 1215) * nsq ** 3 - sp.Rational(1, 540) * nsq * N4 + (sp.sqrt(10) / 9 - sp.Rational(16, 45)) * P222
+    # Independent justification of the expected sextic (2026-10-18 correction): the series
+    # coefficients are checked against sympy's own series of acos(1-u)^2, and target6 is
+    # checked against a direct 50-digit evaluation of arccos(f)^2 along (1,0,0) and (1,1,1)
+    # that uses no series.
+    import mpmath as mpm
+    uS_ = sp.Symbol('uS_', positive=True)
+    series_ok = sp.expand(sp.series(sp.acos(1 - uS_) ** 2, uS_, 0, 4).removeO()
+                          - (2 * uS_ + uS_ ** 2 / 3 + 4 * uS_ ** 3 / 45)) == 0
+    mpm.mp.dps = 50
+    ai_mp = [mpm.mpf(str(sp.N(x, 60))) for x in (Gi * phi0c)]
+    def om2_direct(kv):
+        cq = [mpm.cos(x) for x in kv]
+        ph_ = [1, sum(cq), cq[0] * cq[1] + cq[0] * cq[2] + cq[1] * cq[2], cq[0] * cq[1] * cq[2]]
+        return mpm.acos(sum(ai_mp[i] * ph_[i] for i in range(4))) ** 2
+    direct_ok = True
+    for nd in ((1, 0, 0), (1, 1, 1)):
+        nrm = mpm.sqrt(sum(x * x for x in nd))
+        ndm = [mpm.mpf(x) / nrm for x in nd]
+        kk_ = mpm.mpf('1e-6')
+        c6_ = (om2_direct([kk_ * x for x in ndm]) - mpm.mpf(2) / 3 * kk_ ** 2 + kk_ ** 4 / 54) / kk_ ** 6
+        t6_ = mpm.mpf(str(sp.N(target6.subs({nn[i]: sp.Integer(nd[i]) / sp.sqrt(sum(x * x for x in nd)) for i in range(3)}), 60)))
+        direct_ok &= abs(c6_ - t6_) < mpm.mpf('1e-6')
+    ck.check('b_iso: omega^2 = (2/3)|k|^2 - (1/54)|k|^4 + (1/1215)|k|^6 - (1/540)|k|^2 sum k^4 + (sqrt10/9 - 16/45) k1^2 k2^2 k3^2 + O(k^8) (sextic also confirmed by direct 50-digit arccos evaluation)',
              sp.expand(wi[2] - sp.Rational(2, 3) * nsq) == 0 and sp.expand(wi[4] + nsq ** 2 / 54) == 0
-             and sp.expand(sp.radsimp(wi[6] - target6)) == 0)
+             and sp.expand(sp.radsimp(wi[6] - target6)) == 0 and series_ok and direct_ok)
     del N6
     bi = [float(biso[x]) for x in b]
     ck.check('b_iso doubler gaps: cos theta_X = -1/3, cos theta_M = -7/9 (exact, from Theorem 4 formulas)',
@@ -309,9 +331,9 @@ def main() -> int:
     ck.check('sextic coefficient of |k|^2 sum k^4 in omega^2 is y(b) = -s (20 b0^3 + ... + 21 b2)/360', sp.expand(s6[ys_] - yco) == 0)
     onp = {b[0]: b[1] + 2 * b[2]}
     sp_ = 3 * (b[1] + b[2])
-    ck.check('on the isotropy plane: alpha = -s^2 (1 - s^2)/12, x = s^2 (8 s^4 - 5 s^2 + 2)/360, y = -s^2/360 (depend on s only)',
+    ck.check('on the isotropy plane: alpha = -s^2 (1 - s^2)/12, x = s^2 (4 s^4 - 5 s^2 + 2)/360, y = -s^2/360 (depend on s only)',
              sp.expand(alpha.subs(onp) + sp_ ** 2 * (1 - sp_ ** 2) / 12) == 0
-             and sp.expand(s6[xs_].subs(onp) - sp_ ** 2 * (8 * sp_ ** 4 - 5 * sp_ ** 2 + 2) / 360) == 0
+             and sp.expand(s6[xs_].subs(onp) - sp_ ** 2 * (4 * sp_ ** 4 - 5 * sp_ ** 2 + 2) / 360) == 0
              and sp.expand(s6[ys_].subs(onp) + sp_ ** 2 / 360) == 0)
     ck.check('|k|^6, |k|^2 sum k^4 and k1^2 k2^2 k3^2 are linearly independent, so y != 0 is a genuine k^6 anisotropy for every moving isotropic member',
              len(s6) == 3)

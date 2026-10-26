@@ -11,21 +11,20 @@ Goal
 Verify the bounded Cl(3) -> End(V) -> su(3) -> Wilson action boundary chain
 for three concrete claims:
 
-  Claim 1: Cl(3) -> End(V) canonicity (unique up to inner automorphism
-           of End(V) + explicit finite outer discrete group).
-  Claim 2: Induced Hilbert-Schmidt trace form equals Cl(3) pseudoscalar-
-           adjoint form up to a single positive scalar, Ad-invariantly.
+  Claim 1: Supplied balanced Cl(3) representation, not unique by faithfulness.
+  Claim 2: Hilbert-Schmidt trace on a supplied triplet and its zero-extension.
+           No undefined Clifford pairing is identified with this trace.
   Claim 3: Given canonical orthonormal generators Tr(T_a T_b) = delta/2
            and the admitted Wilson plaquette action form, kinetic matching forces
                beta = 2 N_c / g^2.
-           The canonical Cl(3) basis forbids scalar generator dilation, but
+           The canonical Cl(3) basis forbids positive scalar generator dilation, but
            it does not derive the physical value g^2 = 1. The value beta = 6
            follows only after the unrescaled-coordinate convention g^2 = 1 is
            supplied.
 
 Honest scoping
 --------------
-- Claims 1 and 2 are exact structural-support checks. They require no
+- Claims 1 and 2 check supplied finite constructions numerically. They require no
   β or g input.
 - Claim 3 is bounded support given the Wilson plaquette action form. It does
   not derive the Wilson action itself or the physical action coefficient.
@@ -38,6 +37,8 @@ from __future__ import annotations
 from pathlib import Path
 
 import numpy as np
+
+AUDIT_TIMEOUT_SEC = 120
 
 np.set_printoptions(precision=6, linewidth=140, suppress=True)
 
@@ -58,10 +59,10 @@ SY = np.array([[0, -1j], [1j, 0]], dtype=complex)
 SZ = np.array([[1, 0], [0, -1]], dtype=complex)
 
 
-def check(name: str, cond: bool, detail: str = "", kind: str = "EXACT") -> bool:
+def check(name: str, cond: bool, detail: str = "", kind: str = "NUMERICAL") -> bool:
     global PASS, FAIL, BOUNDED_PASS, BOUNDED_FAIL
     tag = "PASS" if cond else "FAIL"
-    if kind == "EXACT":
+    if kind == "NUMERICAL":
         if cond:
             PASS += 1
         else:
@@ -71,7 +72,7 @@ def check(name: str, cond: bool, detail: str = "", kind: str = "EXACT") -> bool:
             BOUNDED_PASS += 1
         else:
             BOUNDED_FAIL += 1
-    k = f" [{kind}]" if kind != "EXACT" else ""
+    k = f" [{kind}]" if kind != "NUMERICAL" else ""
     msg = f"  [{tag}]{k} {name}"
     if detail:
         msg += f"  ({detail})"
@@ -122,7 +123,7 @@ def build_cl3_chiral_rep():
 def section_A_cl3_canonicity():
     """Claim 1: Cl(3) -> End(V) canonicity."""
     print("\n" + "=" * 78)
-    print("SECTION A: Cl(3) -> End(V=C^8) canonicity (Claim 1)")
+    print("SECTION A: Supplied Cl(3) -> End(V=C^8) representation (Claim 1)")
     print("=" * 78)
 
     e1, e2, e3 = build_cl3_chiral_rep()
@@ -175,7 +176,7 @@ def section_A_cl3_canonicity():
     # multiplicity-2 Wedderburn rep of Cl(3;C) = M_2 + M_2).
     # We test: a random inner automorphism U G_i U^{-1} still satisfies Cl(3).
     rng = np.random.default_rng(17)
-    # Random unitary acting only on the multiplicity space (I_2 ⊗ U_4)
+    # A sampled conjugation, not a uniqueness test or commutant action.
     H4 = rng.normal(size=(4, 4)) + 1j * rng.normal(size=(4, 4))
     H4 = (H4 + H4.conj().T) / 2
     U4 = exp_i_hermitian(H4)
@@ -191,6 +192,12 @@ def section_A_cl3_canonicity():
         check(f"Inner-aut-transformed anticommutator {{Gp_{i}, Gp_{j}}}",
               is_close(ac, target))
 
+    for m_plus in (1, 2, 3):
+        signs = [1] * m_plus + [-1] * (4-m_plus)
+        gammas = [np.kron(np.diag(signs), sigma) for sigma in (SX,SY,SZ)]
+        w = gammas[0] @ gammas[1] @ gammas[2]
+        ranks = (np.linalg.matrix_rank((I8-1j*w)/2), np.linalg.matrix_rank((I8+1j*w)/2))
+        check(f"faithful multiplicities ({m_plus},{4-m_plus}) have distinct central ranks", ranks == (2*m_plus,2*(4-m_plus)))
     return e1, e2, e3, omega, PR, PL, S1, S2, S3
 
 
@@ -249,10 +256,9 @@ def build_canonical_su3_triplet():
 # ---------------------------------------------------------------------------
 
 def section_B_trace_form(T_triplet):
-    """Verify the induced trace form equals Cl(3) pseudoscalar-adjoint
-    form up to a single positive scalar, and both are Ad-invariant."""
+    """Verify the supplied triplet trace and invariant-form dimension."""
     print("\n" + "=" * 78)
-    print("SECTION B: Trace form forced by Cl(3) structure (Claim 2)")
+    print("SECTION B: Supplied triplet trace form (Claim 2)")
     print("=" * 78)
 
     # B1. Compute Hilbert-Schmidt Gram on the 8 canonical triplet generators
@@ -286,45 +292,43 @@ def section_B_trace_form(T_triplet):
     # bilinear forms are scalar multiples. Verify by computing the ratio
     # of two different "trace forms" on T_1 (i.e. Tr(T_1 T_1) / K(T_1, T_1)
     # where K is the Killing form).
-    # Killing form: K(X, Y) = Tr(ad_X ad_Y). For the fundamental rep of su(N),
-    # K = 2 N * Tr_fund (standard). For su(3): K = 6 * Tr_fund.
-    # So K(T_a, T_b) = 6 * (1/2) delta_ab = 3 delta_ab.
-    # Ratio HS / K = (1/2) / 3 = 1/6.
+    # Killing form: K(X, Y) = Tr(ad_X ad_Y) using the Hermitian bracket -i[X,Y].
+    # In this compact real convention K = -2 N * Tr_fund.
+    # So K(T_a, T_b) = -6 * (1/2) delta_ab = -3 delta_ab.
+    # Ratio HS / K = (1/2) / (-3) = -1/6.
     # Build ad_{T_1} as a matrix on su(3):
     def ad_matrix(X, basis):
         m = len(basis)
         A = np.zeros((m, m), dtype=complex)
-        # Write [X, T_b] in terms of T_a: [X, T_b] = f_ab^c T_c
-        # use HS inner product: f_ab^c = 2 Tr([X, T_b] T_c)
+        # Write -i[X, T_b] in the real Hermitian basis.
+        # use HS inner product: coefficients = 2 Tr((-i[X,T_b]) T_a)
         for b, Tb in enumerate(basis):
-            commute = comm(X, Tb)
+            commute = -1j * comm(X, Tb)
             for a, Ta in enumerate(basis):
                 A[a, b] = 2 * np.trace(commute @ Ta)
         return A
 
     ad_T1 = ad_matrix(T_triplet[0], T_triplet)
     K11 = np.trace(ad_T1 @ ad_T1).real
-    # Expected K(T_1, T_1) = 2 N_c * Tr_fund(T_1 T_1) = 2*3*(1/2) = 3.
-    check("Killing form K(T_1, T_1) = 2 N_c * Tr_fund = 3.0",
-          abs(K11 - 3.0) < 1e-8,
-          f"K11 = {K11:.6f}, expected = 3.0")
+    # Compact Killing form: K(T_1,T_1) = -2*3*(1/2) = -3.
+    check("Compact Killing form K(T_1, T_1) = -2 N_c * Tr_fund = -3.0",
+          abs(K11 + 3.0) < 1e-8,
+          f"K11 = {K11:.6f}, expected = -3.0")
 
-    ratio_HS_K = 0.5 / 3.0
-    # HS(T_a, T_b) / K(T_a, T_b) = (1/2) / 3 = 1/6
-    check("HS / Killing ratio = 1/6 (Killing-form rigidity)",
-          abs(ratio_HS_K - 1.0/6.0) < 1e-12,
-          f"ratio = {ratio_HS_K:.8f}, expected = {1/6:.8f}")
+    ratio_HS_K = G_HS[0,0].real / K11
+    # HS/K = -1/6 in the compact real convention.
+    check("HS / Killing ratio = -1/6 (Killing-form rigidity)",
+          abs(ratio_HS_K + 1.0/6.0) < 1e-12,
+          f"ratio = {ratio_HS_K:.8f}, expected = {-1/6:.8f}")
 
-    # B4. Cl(3) pseudoscalar-adjoint form on Gell-Mann generators:
-    # The "Cl(3) pseudoscalar adjoint" form on su(3) in the triplet rep
-    # reduces to a scalar multiple of the trace form by Killing-form rigidity.
-    # We confirm this by noting that any Ad-invariant symmetric bilinear form
-    # on a simple Lie algebra is determined by a single number.
-    # So the Cl(3) form coincides with the HS form up to scale; the scale
-    # is the defining positive constant k.
-    print("\n  Killing-form rigidity -> any Ad-invariant form on su(3) is a scalar")
-    print("  multiple of the HS trace form. The 'Cl(3) pseudoscalar-adjoint form'")
-    print("  therefore differs from the HS form by at most a single positive scalar k.")
+    # The undefined historical B_Cl pairing is not computed or inferred.
+    embedded = []
+    for T in T_triplet:
+        extended = np.zeros((8,8), dtype=complex)
+        extended[:3,:3] = T
+        embedded.append(extended)
+    embedded_gram = np.array([[np.trace(A@B) for B in embedded] for A in embedded])
+    check("zero-extension to C8 preserves triplet trace (no 8/3 factor)", is_close(embedded_gram,G_HS))
 
     ad_mats = [ad_matrix(Ta, T_triplet) for Ta in T_triplet]
     sym_basis = []
@@ -344,13 +348,13 @@ def section_B_trace_form(T_triplet):
     check("Uniqueness of Ad-invariant bilinear form on simple su(3) (verified via ad-matrix)",
           invariant_dim == 1, f"dim(Inv^2(su(3))) = {invariant_dim}")
 
-    # B5. Scalar dilation changes the fixed canonical trace form.
+    # B5. Positive scalar dilation changes the fixed canonical trace form.
     for lam in [0.5, 1.5, 2.0]:
         T_scaled = [lam * T for T in T_triplet]
         G_scaled = np.array([[np.trace(Ta @ Tb) for Tb in T_scaled]
                              for Ta in T_scaled]).real
         expected = lam**2 * target
-        check(f"Scalar dilation lambda={lam}: Gram scales by lambda^2",
+        check(f"Positive scalar dilation lambda={lam}: Gram scales by lambda^2",
               is_close(G_scaled, expected))
         check(f"Scaled Gram differs from canonical (forbidden dilation)",
               not is_close(G_scaled, target))
@@ -364,7 +368,7 @@ def section_C_wilson_coefficient(T_triplet):
     """Verify the Wilson plaquette expansion gives beta = 2 N_c / g^2.
 
     The corrected source boundary is that this relation does not choose a
-    physical value of g^2. It only blocks hiding g in a scalar dilation of
+    physical value of g^2. It only blocks hiding g in a positive scalar dilation of
     the canonical generators.
     """
     print("\n" + "=" * 78)
@@ -406,7 +410,7 @@ def section_C_wilson_coefficient(T_triplet):
     #
     # -beta Re Tr(U_p)/N_c = -beta + (beta/(2 N_c)) a^4 Tr(F_munu F_munu) + O(a^6)
     # The continuum kinetic action: (1/(2 g^2)) Tr(F_munu F^munu).
-    # Matching: beta/(2 N_c) = 1/(2 g^2)   =>   beta = 2 N_c / g^2.
+    # Matching: beta/(2 N_c) = 1/g^2   =>   beta = 2 N_c / g^2.
     # For g^2 = 1: beta = 2 N_c = 6.
 
     # Numerical test: for a given random [A_mu, A_nu], compute
@@ -502,7 +506,7 @@ def section_C_wilson_coefficient(T_triplet):
     for lam in [0.5, 2.0]:
         # If we *did* rescale generators, plaquette at same a would give
         # coefficient (lambda^2 * F^2) / (2 N_c), which requires beta' = beta / lambda^2
-        # to recover the same physical action. This is the scalar dilation
+        # to recover the same physical action. This is the positive scalar dilation
         # excluded by the fixed trace form.
         T_scaled = [lam * T for T in T_triplet]
         A_scaled_mu = sum(rng.normal() * T for T in T_scaled)  # new basis
@@ -520,9 +524,7 @@ def section_C_wilson_coefficient(T_triplet):
     print("  and alternative physical rho values remain outside this runner.")
     print("  The canonical Wilson action and rho=1 convention are used only")
     print("  as admitted surface inputs when beta=6 is consumed downstream.")
-    check("Wilson action form is admitted here (not derived from Cl(3))",
-          True, "admitted lattice-QFT action-form input",
-          kind="BOUNDED")
+    print("  INPUT: Wilson action form is admitted, not derived from Cl(3).")
 
 
 # ---------------------------------------------------------------------------
@@ -549,22 +551,20 @@ def section_D_end_to_end(T_triplet):
 
     # Step 2: Graph-first selector + hw=1 triplet + M_3(C) algebra
     # -> canonical su(3) on triplet block
-    check("Step 2: Graph selector + triplet + C_3 -> su(3) on triplet",
-          True, "imported upstream theorem rows on main",
-          kind="BOUNDED")
+    print("  INPUT: triplet, positive selector and minimization supplied.")
 
     # Step 3: Killing-form rigidity -> canonical Tr(T_a T_b) = delta_ab/2
     N_c = 3
     G = np.array([[np.trace(Ta @ Tb).real for Tb in T_triplet]
                   for Ta in T_triplet])
-    check("Step 3: Killing-form rigidity forces Tr(T_a T_b) = delta_ab/2",
+    check("Step 3: supplied generators have Tr(T_a T_b) = delta_ab/2",
           is_close(G, 0.5 * np.eye(8)))
 
     # Step 4: direct scalar-dilation exclusion from the fixed trace Gram.
     lam = 1.25
     G_scaled = np.array([[np.trace((lam * Ta) @ (lam * Tb)).real for Tb in T_triplet]
                          for Ta in T_triplet])
-    check("Step 4: scalar dilation violates the canonical trace Gram",
+    check("Step 4: positive scalar dilation violates the canonical trace Gram",
           is_close(G_scaled, lam**2 * G) and not is_close(G_scaled, G),
           "checked directly from the Claim 2 trace form")
 
@@ -588,7 +588,7 @@ def section_D_end_to_end(T_triplet):
     # Circularity audit
     print("\n  Circularity audit:")
     print("  - Steps 1-3 use only Cl(3) axioms, graph-selector inputs, Lie-algebra rigidity.")
-    print("  - Step 4 directly checks that scalar dilation changes the fixed trace Gram.")
+    print("  - Step 4 directly checks that positive scalar dilation changes the fixed trace Gram.")
     print("  - Step 5 uses canonical generator normalization from step 3; no β input.")
     print("  - Step 6 keeps rho = g^2 symbolic; rho=1 is not derived.")
     print("  - beta = 6 appears only after the unrescaled rho=1 convention is supplied.")
@@ -659,24 +659,24 @@ def main() -> int:
     print("\n" + "=" * 78)
     print("SUMMARY")
     print("=" * 78)
-    print(f"  EXACT   : PASS = {PASS},   FAIL = {FAIL}")
+    print(f"  NUMERICAL: PASS = {PASS},   FAIL = {FAIL}")
     print(f"  BOUNDED : PASS = {BOUNDED_PASS}, FAIL = {BOUNDED_FAIL}")
     print(f"  TOTAL   : PASS = {PASS + BOUNDED_PASS}, FAIL = {FAIL + BOUNDED_FAIL}")
     print()
-    if FAIL == 0:
-        print("  All exact checks passed.")
-        print("  Claims 1, 2 pass as exact structural-support checks.")
+    if FAIL + BOUNDED_FAIL == 0:
+        print("  All finite checks passed.")
+        print("  Supplied representation and trace checks pass numerically.")
         print("  Claim 3 passes only as a Wilson coefficient relation plus")
         print("  no-generator-dilation boundary; it does not derive rho=g^2=1.")
         print()
-        print("  Conclusion: the Cl(3) trace-Gram structure fixes the canonical")
-        print("  generator basis and blocks scalar generator dilation. The residual")
+        print("  Conclusion: the supplied trace-Gram normalization fixes the")
+        print("  generator basis and blocks positive scalar generator dilation. The residual")
         print("  open premises are the Wilson action form and the physical action")
         print("  coefficient rho=g^2; beta=6 follows only when rho=1 is supplied.")
     else:
         print(f"  {FAIL} exact check(s) failed. Investigate before claiming support.")
 
-    return 0 if FAIL == 0 else 1
+    return 0 if FAIL + BOUNDED_FAIL == 0 else 1
 
 
 if __name__ == "__main__":

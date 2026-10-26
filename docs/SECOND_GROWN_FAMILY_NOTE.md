@@ -93,10 +93,13 @@ The primary battery verifies all of the following from fresh caches:
   `15/15` tested rows over drift values `[0.0, 0.1, 0.2, 0.3, 0.5]` and seeds
   `[0, 1, 2]`, with exact zero/neutral controls and mean weak-charge exponent
   `1.000072`.
-- Distance/impact slice: the restored Fam2 row at `drift=0.05`,
-  `restore=0.30` carries the distance-law evidence, including the reported
-  `alpha = -0.947`, `5/5 TOWARD`, a null control at `b=8`, and the
-  `delta ~= C * b^-0.947` fit.
+- Distance/impact slice: the renderer supplies a historical Fam2 table row at
+  `drift=0.05`, `restore=0.30`, with `alpha = -0.947` and `5/5 TOWARD`.
+  It does not recompute those values or establish their causal interpretation.
+  The separate impact cache reports a null control at `b=8` and the
+  `delta ~= C * b^-0.947` fit; this battery checks the presence of those
+  reported strings, not the underlying trajectories or fit. Its execution
+  therefore verifies packet consistency, not a new distance-law calculation.
 - Complex-action slice: the full complex packet supplies an executable narrow
   anchor-row positive check, including `gamma=0`, Born-proxy, and
   `TOWARD@0.1 -> AWAY@0.5` gates on the checked anchor.

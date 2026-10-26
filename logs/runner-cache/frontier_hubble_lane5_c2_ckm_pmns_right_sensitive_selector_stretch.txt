@@ -1,24 +1,80 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch.py
-runner_sha256: 955fe2a91416062baf88d5aae3f7392d0bc074d9d4b85b5519e193b9c9078a16
-timeout_sec: 300
+runner_sha256: ed031dcf38d69550a639900f09e007415afac3981e85b16f522b1ea52ebb8470
+input_fingerprint_sha256: 99b425d9ea0734daf85c4b22f2ab09b8620c120681405901eccd91c15261676c
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.34
 status: ok
 ----- stdout -----
-[PASS] Supplied worlds have identical CKM sign and even data
-[PASS] Supplied worlds have distinct opposite target signs
-[PASS] Additional sign-matching rule chooses exactly one supplied world
-[PASS] Supplied worlds have identical CKM sign and even data
-[PASS] Supplied worlds have distinct opposite target signs
-[PASS] Additional sign-matching rule chooses exactly one supplied world
-per_element: polynomial even data and signed target are explicit
-per_block: supplied independent-sign tuples, not physical matrix blocks
-per_site: no site model or site sweep supplied
-per_mode: both target signs checked at fixed input data
-lattice_wide: no lattice embedding, admissibility or cross-sector absence proof
-SUMMARY: PASS=6 FAIL=0
-Scope: no function of identical supplied inputs can recover both distinct targets; physical realization and coupling laws remain open.
+========================================================================================
+LANE 5 C2: CKM/PMNS RIGHT-SENSITIVE SELECTOR STRETCH
+========================================================================================
+
+Two supplied witnesses and an optional cross-sector sign rule.
+No physical yield, selector closure or global law-absence claim.
+
+========================================================================================
+PART 1: DOCUMENTARY INPUT OBSERVATIONS (NOT SCIENTIFIC PROOF)
+========================================================================================
+  [PASS] Own note limits the witness to supplied toy data
+  [PASS] Lane 5 eta audit names the right-sensitive Z3 doublet-block law
+  [PASS] Parent records unresolved selector/yield and does not certify one sufficient gate
+  [PASS] Historical A13 note contains the two sign labels
+  [PASS] Historical selector-bank note records its CP-sheet claim
+  [PASS] CKM note records the supplied positive-branch formula
+  [PASS] Right-conjugacy note contains its named right-sensitive restriction
+
+========================================================================================
+PART 2: TWO TOY WITNESSES SHARE EVEN DATA AND DIFFER IN SIGN
+========================================================================================
+  even(+sheet) = (1.333333333333, 0.444444444444, 1.632993161855)
+  even(-sheet) = (1.333333333333, 0.444444444444, 1.632993161855)
+  odd(+sheet)  = sign,A13 = (1, 1.6329931618554518)
+  odd(-sheet)  = sign,A13 = (-1, -1.6329931618554518)
+  [PASS] The two sheets have identical even PMNS data
+  [PASS] The same two sheets have opposite A13 sign
+  [PASS] A selector using only the even data is sheet-blind
+
+========================================================================================
+PART 3: CKM ORIENTATION GIVES A COHERENT BUT CONDITIONAL SELECTOR
+========================================================================================
+  rho_CKM=0.166666666667
+  eta_CKM=0.372677996250
+  delta_CKM=1.150261991511
+  candidate selected A13=1.632993161855
+  [PASS] CKM CP coordinates obey rho=1/6
+  [PASS] CKM CP coordinates obey eta=sqrt(5)/6
+  [PASS] CKM orientation is positive on the named branch
+  [PASS] The candidate sign(A13)=sign(eta_CKM) selects A13>0
+
+========================================================================================
+PART 4: STIPULATED MODEL HAS NO COUPLING PREMISE
+========================================================================================
+  [PASS] Two witnesses share CKM orientation and PMNS even data
+  [PASS] The witnesses differ only in the PMNS A13 sign
+  [PASS] A cross-sector sign law would select the constructive witness
+  [PASS] The model flag stipulates no coupling premise (not a law-absence proof)
+  [PASS] Conditional rule selects one witness while model flag is false
+
+========================================================================================
+PART 5: CLAIM-STATUS FIREWALL
+========================================================================================
+  [PASS] Historical no-go status token is configuration only, not a scientific result
+  [PASS] The candidate is only conditional support under a new coupling law
+  [PASS] Two named model dependencies remain listed
+  [PASS] Configuration disallows stronger proposal wording
+
+========================================================================================
+SUMMARY: PASS=23 FAIL=0
+========================================================================================
+per_element: checked -- three polynomial stand-in entries and two odd signs.
+per_site: not executed -- no spatial sites occur in this toy model.
+per_mode: checked -- two supplied sign witnesses, not a physical mode inventory.
+per_block: not executed -- no microscopic matrix block is constructed.
+lattice_wide: not executed -- finite toy data only; no lattice claim.
+Result: supplied even-data witnesses differ in sign; physical questions remain open.
+The supplied sign rule selects one witness when imposed; no yield follows.
 
 ----- stderr -----
 

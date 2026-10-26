@@ -1,4 +1,4 @@
-"""Axiom-first first law of black hole mechanics check.
+"""Conditional first law of black hole mechanics check.
 
 Verifies the first law dM = T_H dS_BH for the Schwarzschild family
 on the framework's retained GR action surface plus retained BH 1/4
@@ -177,6 +177,17 @@ def main() -> None:
     print(f"  STATUS: {'PASS' if t6_ok else 'FAIL'}")
     print()
 
+    # Regression: the withdrawn product differential gives one half, not one.
+    product_errors = []
+    for M in [0.5, 1.0, 3.0]:
+        step = 1e-5
+        _, _, sp, tp, _ = schwarzschild(M + step, G)
+        _, _, sm, tm, _ = schwarzschild(M - step, G)
+        derivative = (tp*sp-tm*sm)/(2*step)
+        product_errors.append(abs(derivative - 0.5))
+    t7_ok = max(product_errors) < 1e-8
+    print(f"Withdrawn d(TS)=dM regression: d(TS)/dM=1/2, residual={max(product_errors):.3e}")
+
     # ----- Summary -----
     print("=" * 72)
     print("SUMMARY")
@@ -188,7 +199,7 @@ def main() -> None:
     print(f"  Test 5 (integral form over (M_1, M_2)):                 {'PASS' if t5_ok else 'FAIL'}")
     print(f"  Test 6 (Smarr derivative consistency):                  {'PASS' if t6_ok else 'FAIL'}")
     print()
-    all_ok = t1_ok and t2_ok and t3_ok and t4_ok and t5_ok and t6_ok
+    all_ok = t1_ok and t2_ok and t3_ok and t4_ok and t5_ok and t6_ok and t7_ok
     print(f"  OVERALL: {'PASS' if all_ok else 'FAIL'}")
     print()
     print("Note: the proof in the companion theorem note follows Bardeen-Carter-")

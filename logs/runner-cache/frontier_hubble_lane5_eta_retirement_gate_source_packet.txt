@@ -1,22 +1,18 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hubble_lane5_eta_retirement_gate_source_packet.py
-runner_sha256: d93cf802f0d07a67acfa774181b1e5239f8475ede30fcac7736271f7a01f93a4
+runner_sha256: 59f09b4ff0a8247bc3000e4c3f977da9d60ece88eb01e96d7bf332ff3f394e62
+input_fingerprint_sha256: 09c87f776c1d95cfce8f0a4937f0d9fc3ecfa39e181a937a1026d1340e251af1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.12
 status: ok
 ----- stdout -----
 ========================================================================================
 HUBBLE LANE 5 ETA-RETIREMENT GATE SOURCE PACKET
 ========================================================================================
 
-Question:
-  Is the Cycle 4 eta-retirement gate packaged with source anchors,
-  a replayable single-gate inventory, and a non-promotion boundary?
-
-Answer:
-  Yes for source-packet readiness. This runner does not retire eta,
-  close C2, close H0, or apply an audit verdict.
+Documentary and stipulated-rule checks only; physical selector/yield closure remains OPEN.
+The earlier exact-support source check failed and has not become a scientific PASS.
 
 ----------------------------------------------------------------------------------------
 Part 1: parent source-packet metadata
@@ -24,9 +20,9 @@ Part 1: parent source-packet metadata
   [PASS] parent note exists  (docs/HUBBLE_LANE5_ETA_RETIREMENT_GATE_AUDIT_NOTE_2026-04-26.md)
   [PASS] parent declares this primary runner
   [PASS] parent declares this runner cache
-  [PASS] parent remains an open-gate support source packet
-  [PASS] source-packet boundary says it is not a theorem
-  [PASS] source-packet boundary forbids promotion claims
+  [PASS] parent declares documentary open-gate scope
+  [PASS] parent withdraws exact-support promotion inference
+  [PASS] parent leaves physical selector and yield open
 
 ----------------------------------------------------------------------------------------
 Part 2: dependency links and source fingerprints
@@ -48,38 +44,40 @@ Part 2: dependency links and source fingerprints
   [PASS] transport status names undershoot and exact support branch
   [PASS] transport status isolates the right-sensitive doublet-block law
   [PASS] transport status records the local selected slice as subcritical
-  [PASS] reduced-surface note supplies exact eta-support witness only
+  OPEN SCIENTIFIC OBLIGATION (documentary observation; no transport rerun):
+  Source reports two candidates versus required three and nonzero exit: True
+  No exact-support, physical-selector or yield theorem is inherited from this diagnostic.
   [PASS] reduction exhaustion note is part of the PMNS route boundary
   [PASS] D-last-mile note remains quantitative support, not eta retirement
   [PASS] Omega cascade remains bounded and does not retain Omega_Lambda
   [PASS] R_base theorem supplies an observation-free 31/9 identity
-  [PASS] Lane 5 no-go supplies the C1/C2/C3 closure taxonomy
+  [PASS] Lane 5 inventory names the reviewed C1/C2/C3 routes
 
 ----------------------------------------------------------------------------------------
-Part 3: single residual eta-retirement gate
+Part 3: historical gate inventory and unresolved proof obligation
 ----------------------------------------------------------------------------------------
-  [PASS] parent identifies a single residual microscopic selector law
-  [PASS] gate object is the right-sensitive Z3 doublet-block law
-  [PASS] odd-slot readout is explicitly named
-  [PASS] local diagonal route is recorded as transport-subcritical
-  [PASS] closed shortcut routes are inventoried
-  [PASS] parent explicitly says it does not close DM-lane work
+  [PASS] parent identifies the historical candidate gate without sufficiency
+  [PASS] historical gate object and odd-slot readout remain explicit
+  [PASS] parent preserves the failed diagnostic as an open obligation
+  [PASS] historical shortcut references are inventoried without exhaustion
+  [PASS] parent does not close DM-lane work
 
 ----------------------------------------------------------------------------------------
 Part 4: finite non-promotion model
 ----------------------------------------------------------------------------------------
-  rule: eta retires only if the right-sensitive selector is retained
+  stipulated route model: eta retires if the supplied selector premise is true
   rule: C2 numeric closure also needs the separate alpha_GUT lane
-  rule: H0 closure still needs the C1 scale route
-  [PASS] actual current packet does not retire eta
-  [PASS] selector gate alone retires eta but not full C2 numerics
-  [PASS] full C2-plus-scale packet would close the modeled route
+  stipulated separated-input route: H0 flag also needs C1; joint routes are not excluded
+  [PASS] all-false model assignment returns false eta flag
+  [PASS] selector-only model assignment sets eta flag but not C2 flag
+  [PASS] all-true assignment satisfies the stipulated route rule
   [PASS] parent records alpha_GUT as a separate remaining cascade dependency
-  [PASS] parent records C1 as separately required for H0
+  [PASS] parent limits separate C1 requirement to this route
   [PASS] runner boundary forbids audit-result mutation
 
 ========================================================================================
-PASS=41 FAIL=0
+DOCUMENTARY / STIPULATED-MODEL CHECKS: PASS=39 FAIL=0
+UNRESOLVED: reduced-surface required-three-branch diagnostic; physical selector/yield/readout.
 ========================================================================================
 
 ----- stderr -----

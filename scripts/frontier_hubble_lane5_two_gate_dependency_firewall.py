@@ -2,8 +2,8 @@
 """Lane 5 Hubble two-gate dependency firewall.
 
 This runner checks the dependency boundary behind the Hubble-H0 workstream:
-numeric H_0 requires both an absolute-scale premise (C1) and a
-dimensionless cosmic-history premise, either C2 or C3.
+with independently free positive H_inf and L, fixing only one leaves H_0 free.
+This is a conditional family result, not exhaustion of possible joint relations.
 
 It does not derive H_0. It verifies that the current repo state cannot
 honestly promote any one-gate or structural-lock-alone path to a numerical
@@ -19,6 +19,16 @@ from pathlib import Path
 import numpy as np
 import sympy as sp
 
+
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = [
+    "docs/HUBBLE_LANE5_WORKSTREAM_STATUS_NOTE_2026-04-27.md",
+    "docs/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md",
+    "docs/HUBBLE_LANE5_C3_VACUUM_TOPOLOGY_NO_ACTIVE_ROUTE_NOTE_2026-04-27.md",
+    "docs/HUBBLE_LANE5_PLANCK_C1_GATE_AUDIT_NOTE_2026-04-26.md",
+    "docs/HUBBLE_LANE5_ETA_RETIREMENT_GATE_AUDIT_NOTE_2026-04-26.md",
+    "docs/COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md",
+]
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -78,7 +88,7 @@ def part1_repo_gate_state() -> None:
 
     check(
         "status note states the two-gate dependency map",
-        ("Lane 5 " + "clos" + "ure requires resolving BOTH") in status
+        "The reviewed separated-input route resolves BOTH" in status
         and "(C1) absolute-scale route" in status
         and "(C2) cosmic-history-ratio retirement" in status
         and "coupled active-block response" in status
@@ -88,9 +98,8 @@ def part1_repo_gate_state() -> None:
         and "No single conditional unifies" in status,
     )
     check(
-        "necessity no-go states no single class is sufficient",
-        "No fourth class exists, and no single class is sufficient" in necessity
-        or "No fourth class exists. No single class is sufficient" in status,
+        "route inventory is not an exhaustive exclusion",
+        "currently reviewed route taxonomy, not an exhaustive exclusion" in " ".join(status.split()),
     )
     check(
         "workstream status says no numerical input was retired",
@@ -117,6 +126,10 @@ def part2_symbolic_two_gate_identity() -> None:
         any(sp.simplify(sol - positive_solution) == 0 for sol in solutions),
         f"solutions={solutions}",
     )
+
+    k = sp.symbols("k", positive=True)
+    check("joint relation can fix H_0 without separately fixing both inputs",
+          sp.simplify(positive_solution.subs(H_inf, k * sp.sqrt(L)) - k) == 0)
 
     d_hinf = sp.diff(positive_solution, H_inf)
     d_l = sp.diff(positive_solution, L)
@@ -219,8 +232,8 @@ def part5_gate_inventory_specifics() -> None:
         and ("does NOT " + "clo" + "se the Planck lane") in c1
     )
     c2_open = (
-        "right-sensitive microscopic selector law" in c2
-        and "2-real `Z_3` doublet-block" in c2
+        "historical candidate gate" in c2
+        and "2-real `Z_3` doublet-block" in " ".join(c2.split())
         and ("does NOT " + "clo" + "se any of the DM lane work") in c2
     )
     open_number_two = (
@@ -237,7 +250,7 @@ def part5_gate_inventory_specifics() -> None:
         c1_open,
     )
     check(
-        "C2 gate is the right-sensitive Z_3 doublet-block selector",
+        "C2 inventory names a historical selector candidate, not physical closure",
         c2_open,
     )
     check(
@@ -272,7 +285,7 @@ def n5_execution_certificate() -> None:
         "per_element: checked — the two-gate necessity is resolved variable by variable on the solved "
         "bridge H_0 = H_inf/sqrt(L), by taking each partial derivative symbolically: dH_0/dH_inf = "
         "1/sqrt(L) and dH_0/dL = -H_inf/(2 L^(3/2)), both nonvanishing for positive L. Neither variable "
-        "drops out of the identity, which is exactly why neither gate can be retired on its own, and the "
+        "drops out of the identity, when the other variable remains independently free; joint relations are not excluded. The "
         f"one-gate families confirm it numerically with spreads of {max(c1_family) - min(c1_family):.3f} "
         f"and {max(l_family) - min(l_family):.3f} km/s/Mpc."
     )
@@ -316,7 +329,7 @@ def main() -> int:
     print("  gate, or from the structural lock alone?")
     print()
     print("Answer:")
-    print("  No. H_0 = H_inf/sqrt(L) keeps both gates load-bearing.")
+    print("  With the other input free, no. A supplied joint relation can instead fix the ratio.")
 
     part1_repo_gate_state()
     part2_symbolic_two_gate_identity()

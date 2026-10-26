@@ -1,5 +1,7 @@
 # BH 1/4 Carrier from Framework Wald-Noether Charge Boundary Note (V1)
 
+**Claim type:** bounded_theorem (supplied conditional scope; no audit status change)
+
 **Date:** 2026-04-29
 **Status:** bounded: S_BH=A/(4G_N) framework composition, conditional on Wald formula admission and gravitational boundary/action-density bridge premise.
 The composition depends on two admitted load-bearing inputs: the
@@ -39,8 +41,21 @@ does not propose closure at the ratified tier.
 
 ## 0. Headline
 
-The framework's primitive-coframe boundary carrier theorem proves
-`c_cell = 1/4` from purely structural (zero-input) coframe-slot
+**Normalization clarification (2026-10-21).** If the scalar Lagrangian is
+`L=alpha R`, the Wald binormal contraction gives `S=4*pi*alpha*A`.
+Here `c_cell` is dimensionless and its proposed entropy-per-area density
+is `c_cell/a²`. The supplied bridge is `c_cell/a²=4*pi*alpha`, so
+`alpha=c_cell/(4*pi*a²)`, not `alpha=c_cell/a²`. We use units
+`hbar=c=k_B=1`. With `G_Newton,lat=G_N/a²`, this separately supplied
+bridge reads `c_cell=1/(4G_Newton,lat)`.
+Given that bridge and the normalized trace 4/16, G_Newton,lat=1 is a
+conditional normalization match, not an independently derived Newton constant.
+The dimensionless quarter in the Einstein-Hilbert formula A/(4G) remains
+fixed once action and entropy conventions are specified; calling every
+occurrence of 1/4 an arbitrary target would discard valid conditional algebra.
+
+The cited primitive-coframe construction supplies a carrier with
+`c_cell = 1/4` under its specified coframe-slot
 locality + axis additivity + symmetry + unit-response normalization
 (PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM Theorem 2).
 
@@ -51,8 +66,9 @@ with canonical-textbook Einstein-Hilbert equivalence
 
 The Wald-Noether charge formula (admitted as universal physics input)
 gives the Bekenstein-Hawking
-entropy as `S_BH = A · c_cell` where c_cell is the leading coefficient
-of the gravitational Lagrangian.
+entropy as `S_BH = A · c_cell/a²`, provided the proposed boundary
+entropy density `c_cell/a²` is identified by the supplied bridge with
+`4*pi*alpha` for gravitational Lagrangian `L=alpha R`.
 
 **Composing these chains with the two explicit admissions:**
 
@@ -139,10 +155,10 @@ with it.
 
 ### 1.4 Composed identity
 
-Substituting the framework's c_cell = 1/4 into the Wald-Noether
-identity, in framework lattice units where a is the natural length
-scale and the framework's gravitational Lagrangian carrier is the
-primitive coframe boundary:
+Assume the Einstein-Hilbert scalar Lagrangian `L=alpha R` and the
+independent entropy-density bridge `c_cell/a²=4*pi*alpha`. The boundary
+count alone does not imply this identification. Wald's formula then
+gives `S_BH=A*c_cell/a²`. Setting `a=1` and supplying `c_cell=1/4` gives:
 
 ```text
 S_BH = A · c_cell = A · (1/4) = A/4    (lattice units, a = 1)
@@ -155,10 +171,10 @@ Matching to `S_BH = A/(4G_N)`:
 ⇒ G_Newton,lat = 1
 ```
 
-This is the framework normalization match: the framework's
-`c_cell = 1/4` IS the BH coefficient, and this forces
-`G_Newton,lat = 1` in the framework's natural units where
-`G_kernel = 1/(4π)` and `a/l_P = 1`.
+This is a conditional normalization match: if the proposed boundary
+entropy density equals the Wald density, `c_cell=1/4` gives
+`G_Newton,lat=1` (and hence `a/l_P=1` in these units). The bare kernel
+value `G_kernel=1/(4π)` does not establish this bridge.
 
 The 4π factor between bare `G_kernel` and physical `G_Newton,lat`
 is the standard 4π geometric factor (solid angle of a 2-sphere)
@@ -169,8 +185,9 @@ and is separated by PLANCK_SOURCE_UNIT_NORMALIZATION.
 ## 2. Boundary statement
 
 **Boundary statement (BH 1/4 Carrier from Framework Wald-Noether Charge).**
-On the framework's retained discrete GR action surface (PL S³ × R)
-with admitted Wald-Noether charge formula:
+Assume the cited action identification with the Einstein-Hilbert form
+`L=alpha R`, the Wald-Noether formula for a stationary Killing horizon,
+and the independent bridge `c_cell/a²=4*pi*alpha`. In lattice units `a=1`:
 
 1. The Bekenstein-Hawking entropy of a stationary Killing horizon
    evaluates to `S_BH = A · c_cell`.
@@ -196,17 +213,18 @@ unit-normalized first-order coframe boundary carrier on H_cell is
 UNIVERSAL_GR_DISCRETE_GLOBAL_CLOSURE_NOTE + UNIVERSAL_QG_CANONICAL_TEXTBOOK_GEOMETRIC_ACTION_EQUIVALENCE_NOTE,
 the framework's retained gravitational action on PL S³ × R is exactly
 the canonical textbook Einstein-Hilbert weak/stationary action family
-on the chosen smooth realization. The framework's leading coefficient
-of the gravitational action is precisely the boundary-density extension
-of `c_cell` per PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM.
+on the chosen smooth realization. The identification of the entropy-area coefficient with the boundary-density
+extension of `c_cell` is a supplied bridge. The coefficient of R itself is
+`c_cell/(4*pi*a²)`, reducing to `c_cell/(4*pi)` only when `a=1`.
 
 **Step 3 (Wald-Noether identity).** The Wald-Noether formula for the
 Einstein-Hilbert Lagrangian gives `S_Wald = A/(4G_N)` for a stationary
 Killing horizon of area A. This is the universal-physics-input
 admission.
 
-**Step 4 (composition).** Identifying the framework's `c_cell` with
-the leading coefficient of the gravitational Lagrangian:
+**Step 4 (conditional composition).** The supplied bridge is
+`c_cell/a²=4*pi*alpha=1/(4G_N)`. Equivalently, with
+`G_Newton,lat=G_N/a²`:
 
 ```text
 c_cell = 1/(4 G_Newton,lat)
@@ -265,8 +283,9 @@ g_newton_lat_eq_1_status: forced_by_chain
 1. **Wald formula derivation** — admitted as universal physics input;
    not derived from the framework.
 2. **Gravitational boundary/action density identification** — the
-   bridge premise that the first-order coframe boundary carrier
-   IS the gravitational boundary/action density. PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM
+   bridge premise that the boundary count density `c_cell/a²`
+   equals the Wald entropy density `4*pi*alpha`, not the coefficient
+   `alpha` of `R` in the scalar Lagrangian. PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM
    §5 explicitly carries this as the named open bridge.
 3. **Hawking temperature** — the kinematic side of BH thermodynamics
    (T_H = κ/2π) is unchanged here. Only the entropy coefficient is
@@ -285,16 +304,15 @@ universal input on equal footing with Newton's law is the cleanest
 honest move; the framework does not claim to derive Wald.
 
 **P2 (whether the bridge premise is non-trivial).** Yes. The bridge
-premise — that the framework's first-order coframe boundary carrier
-IS the gravitational boundary/action density — is genuinely
-load-bearing. Without it, c_cell remains a coframe-bookkeeping
+premise — that its proposed boundary entropy density `c_cell/a²`
+equals `4*pi*alpha` for `L=alpha R` — is load-bearing. Without it, c_cell remains a coframe-bookkeeping
 coefficient with no gravitational meaning. With it, `c_cell = 1/4`
 becomes the BH coefficient. This is the same bridge that
 PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM §5 named explicitly.
 
-**P3 (whether Einstein-Hilbert reduction is complete).** Yes. The
-framework's UNIVERSAL_QG chain establishes equivalence with the
-canonical textbook Einstein-Hilbert weak/stationary action family.
+**P3 (Einstein-Hilbert identification).** This calculation supplies an
+Einstein-Hilbert action. The cited UNIVERSAL_QG chain is an upstream
+identification obligation, not established by this normalization calculation.
 Higher-curvature corrections are not part of the leading framework
 Lagrangian; they would appear as separate framework-derived
 coefficients (and the Wald formula would naturally pick them up).
@@ -323,7 +341,10 @@ Repo-wide weaving deferred.
 python3 scripts/frontier_bh_quarter_wald_noether_framework_carrier.py
 ```
 
-The runner audits:
+The runner performs documentary checks and conditional finite algebra.
+File/token presence does not prove a cited theorem or its effective status.
+The source labels below describe historical inputs, not fresh certification:
+
 
 1. PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM exists with
    `c_cell = 1/4` derivation.

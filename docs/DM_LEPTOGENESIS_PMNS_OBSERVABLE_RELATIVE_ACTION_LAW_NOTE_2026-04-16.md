@@ -12,7 +12,8 @@ spatial substrate.
 
 ## Role of this note
 
-This note evaluates an adopted constrained source-selection prescription.
+This note evaluates the operational PMNS-assisted off-seed source selector as
+an adopted constrained source-selection prescription.
 The relative-action identity below fixes the objective's algebraic form; it
 neither derives a physical minimization postulate nor selects the observed-target
 constraint `eta / eta_obs = 1`. Numerical solutions therefore give conditional
@@ -60,8 +61,12 @@ operational calculation additionally supplies:
 - the observed-target equality `eta_{i_*}(H_e) / eta_obs = 1`;
 - minimization of this objective on that constraint surface.
 
-The stationarity and sampled feasible-start checks support a candidate on the
-examined patch. They do not prove a physical source law or global uniqueness.
+The sampled feasible-start search yields a candidate on the examined patch.
+The separate constrained-stationarity diagnostic in that stationarity note
+records an Euler-Lagrange residual at its `2e-5` tolerance boundary (its
+canonical cache fails at `3.3e-5`; another platform gave `1.97e-5`), so the
+candidate is not certified stationary, locally minimal or unique, and no
+physical source law follows.
 
 ## Output of the operational law on the current branch
 

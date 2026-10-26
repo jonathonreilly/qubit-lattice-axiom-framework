@@ -51,12 +51,12 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.085,
+  "load_bearing_score": 3.822,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "db498385817c5ecc34d2ecf5779c1b07c9c48f4a0822e7533428ddd2f0735105",
+  "note_hash": "40a2dd9632255ffd9c135eec6fb5236f8df1dcd031336af0d07397b4da218382",
   "note_path": "docs/DM_SELECTOR_FIRST_SHOULDER_EXIT_THRESHOLD_SUPPORT_NOTE_2026-04-21.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -171,7 +171,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_dm_selector_first_shoulder_exit_threshold_support_2026_04_21.py",
-  "title": "DM Selector First-Shoulder-Exit Threshold Support Note",
-  "transitive_descendants": 5,
+  "title": "Supplied-bank first-middle-breakpoint diagnostic",
+  "transitive_descendants": 4,
   "verdict_rationale": null
 }

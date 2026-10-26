@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/regge_action_per_cell_and_the_conditional_gravity_coupling_2026_10_21.py
+runner_sha256: b8f1d9399afbeac9d6f81917ba3732da53f6552e7e14a7a9503790e8a37a3eac
+input_fingerprint_sha256: c515b84cdb43570239af7be9cf953a31908f49c08072b5e11f33a95e873925f5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 16.53
+status: ok
+----- stdout -----
+carriers: Kuhn cubic: 15 edge classes, 50 hinge classes per unit cell (volume 1); coned D4: 72 edge classes, 208 hinge classes per unit cell (volume 1)
+[PASS] (1) Kuhn cubic: sampled 2 Hess(sum A delta) / Hess(cell integral sqrt(g)R) near 1 for four random h (Richardson .05/.025)  ratios 1.00000, 0.99962, 1.00000, 0.99999
+[PASS] (1) Kuhn cubic: transverse-traceless wave h_12(x_0) gives the same ratio  0.9999757
+[PASS] (1) coned D4: sampled 2 Hess(sum A delta) / Hess(cell integral sqrt(g)R) near 1 for four random h (Richardson .05/.025)  ratios 1.00000, 1.00000, 1.00002, 0.99999
+[PASS] (1) coned D4: transverse-traceless wave h_12(x_0) gives the same ratio  0.9999945
+[PASS] (1) Kuhn cubic, analytic-derivative Hessian of the repo Regge code: same ratio  0.9999997, 0.9999999
+[PASS] (2) supplied quadratic action -(kappa/2) h F h - E h_tt/2: comparator static tick response h_tt = -(E/2kappa)[F^+]_tt = E/(kappa k^2); G = 1/(8 pi kappa) only conditional on EH matching and units  k^2 h_tt = 1.000000000000 (h_tt is gauge invariant at k_t = 0)
+[PASS] (3) Kuhn cubic: sampled static k^2 h_tt near E/kappa along three spatial directions at |k| = .02  1.00002, 0.99999, 1.00000
+[PASS] (3) coned D4: sampled static k^2 h_tt near E/kappa along three spatial directions at |k| = .02  1.00004, 1.00001, 1.00001
+[PASS] (3) Kuhn cubic: raw position-space h_tt is dominated by soft zone-boundary modes; after 2^3 block averaging the fit gives c = 1/(8 pi) within 5%  raw c = 0.03920 (relative residual 0.78); block-averaged c = 0.03981 (residual 0.013)
+[PASS] (3) coned D4: position-space h_tt on the 24^3 torus, fit h = 8 pi c E G_lattice(r) + const over 4 <= r <= 9, gives c = 1/(8 pi) = 0.03979 within 2%  c = 0.03965, relative residual 0.019; 2^3-block averaged c = 0.03976
+[PASS] (4) on-shell dressing of a static deposit per tick is -(1/4) E h_tt(0) = X E^2/kappa with one lattice constant X  X = -0.05258 (coned D4, 24^3 torus); a "|dressing| = 1 quantum" rule gives kappa = |X| E^2, which depends on E (algebraic scaling, not a new result)
+supplied: carriers, flat Euclidean lengths, tick index 3, metric reading, signed source/action, units, kappa, torus, radii, rcond; EH matching is an additional condition.
+computed here: finite sampled Regge/EH ratios and torus response fits, including raw Kuhn discrepancy; conditional algebra G = a^2/(8 pi kappa) if EH matching, metric/source and unit conventions are supplied.
+not established: continuum convergence, carrier independence, universal 1/r law, kappa selection, physical rung, Newton constant or Planck identification.
+elapsed_seconds 16.4
+
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

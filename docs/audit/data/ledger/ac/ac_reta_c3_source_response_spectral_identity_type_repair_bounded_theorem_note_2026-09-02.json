@@ -25,7 +25,6 @@
   "deps": [
     "minimal_axioms",
     "ac_reta_hclass_hunit_readout_derivation_obligation",
-    "koide_a1_o13_cheeger_simons_rz_no_go_note_2026-04-24",
     "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
   ],
   "direct_in_degree": 0,
@@ -42,7 +41,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "8bb07f6e65a9e146d94504798bbb01175429ee78fac971588600fb417cb86530",
+  "note_hash": "089db725cb8a30986166b832ac53c5de3a9f1055db9651d33f93d5ed8e21774b",
   "note_path": "docs/AC_RETA_C3_SOURCE_RESPONSE_SPECTRAL_IDENTITY_TYPE_REPAIR_BOUNDED_THEOREM_NOTE_2026-09-02.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

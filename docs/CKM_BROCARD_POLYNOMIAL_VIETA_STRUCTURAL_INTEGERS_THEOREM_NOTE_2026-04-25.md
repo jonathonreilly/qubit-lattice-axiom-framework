@@ -1,14 +1,24 @@
 # Brocard Polynomial Vieta / Newton Structure in Pure Structural Integers
 
+**Type:** open_gate
+**Review scope:** conditional supplied algebra and the specifically reviewed comparisons;
+physical interpretation, inherited authority checks, and audit status are not certified.
+
 **Date:** 2026-04-25
 
-**Status:** proposed_retained CKM-structure corollary on the proposed_promoted CKM atlas
-+ NLO Wolfenstein protected-γ̄ surfaces. This note expresses the
-**Brocard polynomial `P(α_s)`** — the universal equilateral-excess
-polynomial that has emerged as the fundamental quartic of the
-retained NLO Wolfenstein protected-γ̄ surface — entirely in **pure
-structural integers** `(N_pair, N_color, N_quark)`, and identifies a
-**NEW algebraic fingerprint** that uniquely forces `N_pair = 2`.
+Review scope: the polynomial and coefficient family below are supplied. Their
+exact algebra does not establish physical pair counts or retained authority.
+The companion still fails three historical status-text assertions; those
+failures are preserved and are separate from its symbolic results.
+
+**Status:** proposed_retained
+
+This note records conditional Vieta/Newton and splitting-field identities for the supplied quartic.
+The supplied counts are `(N_pair, N_color, N_quark) = (2, 3, 6)`.
+The polynomial formulas and NLO apex map are premises here; neither physical
+count selection nor upstream retained closure is established by this note.
+The live claim remains an `open_gate` while the companion's three historical
+status-text diagnostics fail. Their predicates and nonzero exit are preserved.
 
 The headline closed forms:
 
@@ -48,12 +58,12 @@ The headline closed forms:
                           +/- N_pair i (sqrt(N_quark - 1) -/+ sqrt(N_color))
                       =  (2 -/+ 2 sqrt(15)) +/- 2 i (sqrt(5) -/+ sqrt(3)).
 
-(V8)  Galois group: Gal(Q[sqrt(3), sqrt(5), i] / Q) = (Z/2Z)^3,
-      kernel on root permutation = {1, sigma_1 sigma_2 sigma_3} of order 2,
-      image on root permutation = Klein 4-group.
+(V8)  Splitting field K = Q(sqrt(15), sqrt(-5)), [K:Q] = 4,
+      Gal(K/Q) = (Z/2Z)^2, acting faithfully on the roots.
+      Q(sqrt(3), sqrt(5), i) is a larger degree-eight ambient field.
 ```
 
-The framework's protected-γ̄ structure forces `P(α_s)` to have a
+At the supplied counts, `P(α_s)` has a
 **complete pure-structural-integer expansion**, with the additional
 striking property that the SECOND power sum equals **twice** the
 SQUARE of the first power sum — which is uniquely satisfied at
@@ -64,7 +74,7 @@ SQUARE of the first power sum — which is uniquely satisfied at
 
 ## Statement
 
-The Brocard polynomial of the retained NLO Wolfenstein protected-γ̄
+The Brocard polynomial of the supplied NLO Wolfenstein protected-γ̄
 surface is
 
 ```text
@@ -135,10 +145,11 @@ So  p_2  =  2 e_1^2  EXACTLY.
 In abstract structural-integer form (treating `N_pair` as a variable):
 
 ```text
-p_2 - 2 e_1^2  =  N_pair^7 - 2 N_pair^6  =  N_pair^6 (N_pair - 2).
+p_2 = N_pair^6 + 2 N_pair^5,
+p_2 - 2 e_1^2 = N_pair^5 (2 - N_pair).
 ```
 
-This is **zero iff N_pair = 2**. So the identity `p_2 = 2 e_1^2` is a
+For positive `N_pair`, this is **zero iff N_pair = 2** (zero is also a root without that restriction). This tests an imposed identity within the chosen coefficient family; it does not independently select the physical number of pairs. So the identity `p_2 = 2 e_1^2` is a
 **fingerprint of `N_pair = 2`** in the algebraic structure of `P`.
 
 Equivalently: `e_2 = -e_1²/2` in abstract form is `-N_pair^5 = -N_pair^6/2`,
@@ -150,15 +161,15 @@ Mean of the four roots = `e_1/4 = N_pair^3/4 = 8/4 = 2`. In structural
 integer form, `N_pair^3/4 = N_pair` (using `N_pair^2 = 4`). So the
 mean of the roots equals `N_pair = 2` exactly.
 
-### V6: variance from the mean
+### V6: algebraic squared deviations from the mean
 
 Sum of squared deviations from the mean (in the polynomial-coefficient
-sense, where complex conjugates contribute real squared sums):
+sense, without complex conjugation in each square; this is not statistical variance):
 
 ```text
 Sigma_i (r_i - mean)^2  =  p_2 - 2 mean p_1 + 4 mean^2
-                        =  N_pair^7 - 2 N_pair * N_pair^3 + 4 N_pair^2
-                        =  N_pair^7 - 2 N_pair^4 + 4 N_pair^2.
+                        =  p_2 - p_1^2/4
+                        =  N_pair^6 + 2 N_pair^5 - N_pair^6/4.
 
 At N_pair = 2:
                         =  128 - 32 + 16
@@ -177,7 +188,7 @@ P(alpha_s = 4 - u)  =  (u^2 - 4(1 + sqrt(15)) u + 96) * (u^2 - 4(1 - sqrt(15)) u
 ```
 
 `sqrt(15) = sqrt(N_color × (N_quark - 1)) = sqrt(3 × 5)` is the
-**natural irrationality of the retained surface**. Each quadratic
+**natural irrationality of the supplied surface**. Each quadratic
 factor has discriminant
 
 ```text
@@ -206,45 +217,33 @@ alpha_s^root  =  4 - u
 
 ### V8: Galois group
 
-The splitting field of `P` over `Q` is `Q[√3, √5, i]`, with
-`[Q[√3, √5, i] : Q] = 8`. The Galois group is
+The splitting field is `K = Q(sqrt(15), sqrt(-5))`, of degree four,
+with faithful Galois group `(Z/2Z)^2` (the Klein four group).
+All displayed roots lie in K because `i sqrt(5) = sqrt(-5)` and
+`i sqrt(3) = sqrt(15) sqrt(-5)/5`. Conversely, sums of conjugate
+root pairs recover `sqrt(15)`; the two imaginary root differences
+recover `sqrt(-5)`. Thus the roots generate K. The independent
+square classes 15 and -5 give degree four.
 
-```text
-Gal(Q[sqrt(3), sqrt(5), i] / Q)  =  (Z/2Z)^3
-```
+The larger ambient radical field `L = Q(sqrt(3), sqrt(5), i)` has
+degree eight and group `(Z/2Z)^3`. Simultaneously negating all three
+generators fixes K and every root. Its root action is nonfaithful,
+with kernel of order two; the quotient is Gal(K/Q), not Gal(L/Q).
+The faithful Klein-four action is transitive on the roots.
 
-generated by the three involutions
-- `sigma_1`: `i ↦ -i` (complex conjugation),
-- `sigma_2`: `√3 ↦ -√3`,
-- `sigma_3`: `√5 ↦ -√5`.
+## Supplied Inputs
 
-The Galois action on the four roots `(r_1, r_2, r_3, r_4)`:
-
-- `sigma_1` swaps `r_1 ↔ r_2` and `r_3 ↔ r_4`.
-- `sigma_2` swaps `r_1 ↔ r_3` and `r_2 ↔ r_4`.
-- `sigma_3` swaps `r_1 ↔ r_4` and `r_2 ↔ r_3`.
-- `sigma_1 sigma_2 sigma_3` acts trivially on the four roots
-  (kernel of the action on root labels).
-
-So the action on the 4 roots is `(Z/2Z)^3 / {1, sigma_1 sigma_2 sigma_3}
-= (Z/2Z)^2`, the **Klein 4-group**. This Klein-four image acts
-transitively on the four roots. The complex-conjugation subgroup
-preserves the two conjugate pairs, but the full Galois image also
-exchanges the two quadratic factors over `Q[sqrt(15)]`.
-
-## Retained Inputs
-
-| Input | Authority on `main` | Tier |
+| Input | Source on `main` | Role |
 | --- | --- | --- |
-| `(rho_bar, eta_bar)` apex coords | [`CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md`](CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md) | retained |
-| `N_pair = 2`, `N_color = 3`, `N_quark = 6` | [`CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md`](CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md) | retained |
-| `rho = 1/6`, `eta = sqrt(5)/6` | [`CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md`](CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md) | retained |
+| `(rho_bar, eta_bar)` apex coords | [`CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md`](CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md) | supplied input |
+| `N_pair = 2`, `N_color = 3`, `N_quark = 6` | [`CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md`](CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md) | supplied input |
+| `rho = 1/6`, `eta = sqrt(5)/6` | [`CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md`](CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md) | supplied input |
 
-The closure uses ONLY retained-tier authorities. No support-tier note
-is load-bearing. No unmerged branch is cited as load-bearing — the
-Brocard polynomial `P(α_s)` is independently re-derived here from the
-retained `(rho_bar, eta_bar)` and the classical Brocard inequality
-`cot(ω̄) ≥ √3`.
+The sources explicitly condition their own algebra on upstream inputs. Here,
+counts and the NLO apex are supplied premises, and the displayed polynomial
+formulas define the algebraic problem. No source Status text supplies an audit
+verdict. The physical identification and upstream dependency closure remain
+open obligations; no observational comparator enters these calculations.
 
 ## Numerical Verification
 
@@ -271,19 +270,15 @@ All identities verified via sympy:
 | V6 variance | `N_pair⁴(N_quark+1) = 112` | sympy exact |
 | V7 factoring | `P` over `Q[√15]` | sympy exact |
 | V7 disc | both quadratic discriminants `< 0` | numerical |
-| V8 Galois | `(Z/2)³` action with transitive Klein-4 image | exact root-action check |
+| V8 Galois | degree-four splitting field with faithful Klein-4 action | exact root-action check |
 | V9 Disc(P) | `> 0` (4 complex roots) | sympy `discriminant > 0` |
 
-## Science Value
+## Algebraic scope
 
 ### What this lets the framework state cleanly
 
-Previously, the framework had retained the **Brocard polynomial**
-`P(α_s) = (α_s² − 4α_s + 96)² − 240(4 − α_s)²` as the universal
-equilateral-excess polynomial of the retained surface, with six
-distinct closed-form representations (raw, Brocard, Weitzenbock,
-Steiner, Marden, Napoleon). The polynomial's **algebraic structure**
-in pure structural integers had not been packaged.
+The displayed polynomials are supplied algebraic inputs. This note packages
+their identities without certifying the companion physical interpretations.
 
 This note delivers:
 
@@ -298,7 +293,7 @@ This note delivers:
 
 3. **NEW structural fingerprint** (V4): the identity `p_2 = 2 e_1²`
    uniquely forces `N_pair = 2`. This is the **algebraic signature
-   of the framework's pair-count structure** in the Brocard polynomial.
+   within the supplied coefficient family** in the Brocard polynomial.
 
 4. **NEW root-statistics in structural integers** (V5, V6):
    - Mean of roots = `N_pair = 2`.
@@ -306,17 +301,17 @@ This note delivers:
 
 5. **NEW root-form in structural integers** (V7): each of the four
    complex roots involves `√(N_color (N_quark − 1))`, `√(N_quark − 1)`,
-   and `√N_color` — the natural irrationals of the retained surface.
+   and `√N_color` — the natural irrationals of the supplied surface.
 
 6. **NEW Galois-group structure** (V8): the splitting field has
-   `(Z/2Z)³` Galois group over `Q`, with kernel of order 2 on the
-   root-permutation action and image equal to the Klein 4-group.
+   `(Z/2Z)²` Galois group over `Q`, acting faithfully on the roots.
+   The degree-eight ambient radical field has a nonfaithful root action.
 
 ### Why this counts as pushing the science forward
 
 The Brocard polynomial `P(α_s)` has emerged through a series of
 companion theorems as the **universal algebraic invariant** of the
-retained NLO Wolfenstein protected-γ̄ surface, controlling six
+supplied NLO Wolfenstein protected-γ̄ surface, controlling six
 classical equilateral conditions (Brocard inequality, Weitzenbock,
 Steiner inellipse circular limit, Marden foci coincidence, Pedoe
 similarity-deficit metric, Napoleon side² product). This note shows
@@ -326,7 +321,7 @@ integers `(N_pair, N_color, N_quark)`**.
 
 The most striking result is the **structural fingerprint** (V4):
 the identity `p_2 = 2 e_1²` (sum of squared roots = twice squared
-sum of roots) is **uniquely forced by `N_pair = 2`**. For any other
+sum of roots) is **uniquely forced by `N_pair = 2`**. For any other positive
 value of `N_pair`, the abstract Vieta relation
 `e_2 = −e_1²/2 ⟺ −N_pair⁵ = −N_pair⁶/2` would fail. So `N_pair = 2`
 is **algebraically encoded** in the second power sum of the
@@ -335,16 +330,17 @@ Brocard polynomial — independently of any geometric interpretation.
 This is **algebraic rigidity at the level of polynomial structure**.
 The framework's `N_pair = 2` is not just a counted-pair structural
 integer — it is the unique value that makes the Brocard polynomial
-satisfy `p_2 = 2 e_1²`. Conversely, any framework revision that
-preserves `p_2 = 2 e_1²` must have `N_pair = 2`.
+satisfy `p_2 = 2 e_1²`. Within this supplied coefficient family and for positive `N_pair`, imposing
+`p_2 = 2 e_1²` forces `N_pair = 2`. No statement about arbitrary revised
+coefficient families follows.
 
 ### Falsifiable structural claim
 
-The closure (V1-V8) is sharp:
+The conditional identities (V1-V8) have the following scope:
 
 ```text
-The retained NLO Wolfenstein protected-γ̄ surface
-  + retained CKM_MAGNITUDES (N_pair = 2, N_color = 3, N_quark = 6)
+The supplied NLO Wolfenstein protected-γ̄ surface
+  + supplied CKM_MAGNITUDES (N_pair = 2, N_color = 3, N_quark = 6)
 forces:
   P(alpha_s) = alpha_s^4
                - N_pair^3 alpha_s^3
@@ -354,29 +350,29 @@ forces:
 
   p_2 = 2 e_1^2  (signature of N_pair = 2).
   Mean of roots = N_pair = 2.
-  Variance of roots = N_pair^4 (N_quark + 1) = 112.
+  Algebraic squared-deviation sum = N_pair^4 (N_quark + 1) = 112.
 ```
 
-Any framework revision shifting `N_pair`, `N_color`, or `N_quark`
-would simultaneously break the structural-integer expansion of
-`P(α_s)` and the fingerprint identity `p_2 = 2 e_1²`. The Brocard
-polynomial is **algebraically rigid** under retained inputs.
+Changing the supplied coefficient family can change P. The fingerprint
+residual depends only on N_pair, so changes to N_color or N_quark alone
+do not break that identity. It is a conditional algebraic relation, not
+a physical count-selection theorem.
 
 ## What This Claims
 
-- `(V1)`: NEW retained expansion of the Brocard polynomial in pure
+- `(V1)`: Conditional expansion of the Brocard polynomial in pure
   structural integers (5 coefficients).
-- `(V2)`: NEW retained Vieta relations on the four roots in pure
+- `(V2)`: Conditional Vieta relations on the four roots in pure
   structural integers.
-- `(V3)`: NEW retained Newton power sums `p_1, p_2, p_3, p_4`.
-- `(V4)`: NEW retained STRUCTURAL FINGERPRINT `p_2 = 2 e_1²`,
+- `(V3)`: Conditional Newton power sums `p_1, p_2, p_3, p_4`.
+- `(V4)`: Conditional STRUCTURAL FINGERPRINT `p_2 = 2 e_1²`,
   which uniquely forces `N_pair = 2`.
-- `(V5)`: NEW retained mean-of-roots identity `mean = N_pair = 2`.
-- `(V6)`: NEW retained variance identity = `N_pair⁴ (N_quark + 1)`.
-- `(V7)`: NEW retained root form in structural irrationals
+- `(V5)`: Conditional mean-of-roots identity `mean = N_pair = 2`.
+- `(V6)`: Conditional squared-deviation identity = `N_pair⁴ (N_quark + 1)`.
+- `(V7)`: Conditional root form in structural irrationals
   `√(N_color(N_quark-1)), √(N_quark-1), √N_color`.
 - `(V8)`: NEW classification of the Galois group of the splitting
-  field as `(Z/2Z)³` with Klein-4 image on root permutations.
+  field as `(Z/2Z)²` with faithful Klein-4 root action.
 
 ## What This Does NOT Claim
 
@@ -384,7 +380,7 @@ polynomial is **algebraically rigid** under retained inputs.
 - Does **not** promote any support-tier theorem to retained.
 - Does **not** cite unmerged branches as load-bearing.
 - Does **not** introduce a new `d`-selector or `N_color`-selector;
-  all structural integers are retained inputs. The fingerprint
+  all structural integers are supplied inputs. The fingerprint
   `p_2 = 2 e_1²` algebraically forces `N_pair = 2` GIVEN the form
   of `P(α_s)`, not as an independent constraint on the framework.
 - Does **not** depend on any α_s-running pipeline.
@@ -399,18 +395,16 @@ polynomial is **algebraically rigid** under retained inputs.
 python3 scripts/frontier_ckm_brocard_polynomial_vieta_structural_integers.py
 ```
 
-Expected:
-
-```text
-TOTAL: PASS=26, FAIL=0
-```
+Historical expected count was 26/0. The reviewed execution is 28 PASS /
+3 FAIL (three upstream status-text assertions); symbolic checks pass.
+A source Status line is not a retention certificate.
 
 The runner:
 
 - Reads each cited authority file from disk.
-- Extracts the verbatim `Status:` line and prints it as ground-truth proof.
-- Verifies tier label (retained vs support).
-- Independently extracts retained inputs (`N_pair`, `N_color`, `N_quark`).
+- Extracts the verbatim `Status:` line and prints it as documentary metadata, not authority proof.
+- Runs the preserved historical tier-text predicates, which currently fail; they do not verify retention.
+- Searches the counts text for the supplied values, then uses fixed counts `(2, 3, 6)` in the algebra.
 - Computes the structural-integer expansion of `P(α_s)` and matches
   against the explicit form by `simplify(diff) == 0`.
 - Solves `P(α_s) = 0` symbolically via sympy and computes Vieta
@@ -423,7 +417,7 @@ The runner:
 
 ## Cross-References
 
-**Retained-tier authorities used (each Status verified by extraction):**
+**Supplied-input sources (Status extraction is documentary only):**
 
 - [`CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md`](CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md)
   — `(rho_bar, eta_bar)` apex coordinates.
@@ -445,3 +439,31 @@ load-bearing here):**
 - Any support-tier note.
 - Any unmerged branch.
 - Any candidates-tier theorem.
+
+## Current claim status and repair record
+
+```yaml
+actual_current_surface_status: open
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: historical status-text diagnostics fail; physical identification is not established here
+source_of_blocker_text: review_loop
+artifact_role: conditional algebraic support
+next_trace_action: separate canonical algebra evidence from historical diagnostics and resolve the physical input bridge
+reachability_to_target: conditional algebra only; physical identification and evidence separation remain open
+conditional_surface_status: supplied polynomial and count premises
+hypothetical_axiom_status: none introduced
+admitted_observation_status: none
+claim_type_reason: historical documentary diagnostics fail; conditional algebra is preserved without retained certification
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+The downstream consumer of this algebraic support is not yet identified here.
+The formulas above preserve the original conditional mathematical content.
+The earlier retained-closure wording is withdrawn. Historical status-text
+predicates remain unchanged and their failures remain visible in the paired
+cache; a Status string is not retention evidence. These open rows require a
+separate decision about canonical algebra evidence and the physical input
+bridge before any theorem-grade promotion. No audit outcome is prescribed.

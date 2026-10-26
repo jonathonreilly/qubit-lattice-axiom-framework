@@ -34,6 +34,15 @@ These references provide context for the numerical diagnostic; the displayed par
 - [DM_LEPTOGENESIS_PMNS_BREAKING_TRIPLET_SOURCE_LAW_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_BREAKING_TRIPLET_SOURCE_LAW_NOTE_2026-04-16.md) — breaking-triplet source law (`triplet_channels_from_active_data` from `breaking_triplet_source_law` module).
 - [DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md) — minimum-information source-law module (`minlaw`) used as the explicit selector comparator.
 
+## Historical claim narrowed here
+
+The 2026-04-16 version of this note stated, as an exact negative theorem, that
+the current PMNS-side selector bank is CP-sheet blind because its selector
+objectives are even under `delta -> -delta` while the source channel `gamma`
+is odd. Only the conditional parity algebra above survives review. The
+bank-completeness and physical-selection conclusions are withdrawn; the earlier
+text is recoverable at Git `f24d17d97d372df977476e4a69674577f31af575`.
+
 ## Preserved failed execution evidence
 
 [Historical full-command failure stdout](review_evidence/dm-canonical-failures-2026-10-21/frontier_dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem.log) and [recovery/hash manifest](review_evidence/dm-canonical-failures-2026-10-21/manifest.json) remain evidence of the prior failed command, not the new bounded result.

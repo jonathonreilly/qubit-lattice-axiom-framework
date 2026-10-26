@@ -1,24 +1,15 @@
 #!/usr/bin/env python3
-"""
-DM selector first-shoulder-exit threshold support theorem.
+"""Finite supplied-bank first-middle-breakpoint diagnostic.
 
-Question:
-  Does the exact intrinsic threshold-volume family contain a genuinely
-  canonical breakpoint candidate that already selects the preferred recovered
-  lift, rather than only a broad stabilization interval?
-
-Answer:
-  Yes.
-
-  For each recovered lift, the piecewise witness-volume law changes branch at
-  tau_b(i) = log(1 + b_i), where b_i is the middle inverse eigenvalue of the
-  common-shifted positive comparison window. The earliest such breakpoint over
-  the recovered bank is unique, belongs to the preferred recovered lift, lies
-  inside the previously certified stabilization window, and already makes the
-  preferred lift the unique minimizer of V_tau.
+The unchanged numerical comparisons evaluate supplied fixtures at one breakpoint.
+They neither certify a whole stabilization interval nor select a physical law.
+Documentary matches report text only; canonicality/burden narration is unscored.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ['archive_unlanded/dm-neutrino-stale-runners-2026-04-30/DM_NEUTRINO_WEAK_TRIPLET_COEFFICIENT_AXIOM_BOUNDARY_NOTE_2026-04-15.md', 'docs/DM_NEUTRINO_BREAKING_TRIPLET_CP_THEOREM_NOTE_2026-04-15.md', 'docs/DM_NEUTRINO_EXACT_H_SOURCE_SURFACE_PREIMAGE_BUNDLE_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_EXACT_H_SOURCE_SURFACE_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_POSITIVE_POLAR_H_CP_THEOREM_NOTE_2026-04-15.md', 'docs/DM_NEUTRINO_POSTCANONICAL_POLAR_SECTION_NOTE_2026-04-15.md', 'docs/DM_NEUTRINO_SOURCE_AMPLITUDE_THEOREM_NOTE_2026-04-15.md', 'docs/DM_NEUTRINO_SOURCE_BANK_Z3_DOUBLET_BLOCK_SELECTION_OBSTRUCTION_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_AFFINE_POINT_SELECTION_BOUNDARY_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_HALF_PLANE_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_ATOMIC_WITNESS_VOLUME_SELECTOR_NONREALIZATION_NOTE_2026-04-18.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_CARRIER_NORMAL_FORM_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_INTRINSIC_SLOT_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_SHIFT_QUOTIENT_BUNDLE_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_Z3_DOUBLET_BLOCK_POINT_SELECTION_THEOREM_NOTE_2026-04-16.md', 'docs/DM_SELECTOR_FIRST_SHOULDER_EXIT_THRESHOLD_SUPPORT_NOTE_2026-04-21.md', 'docs/DM_SELECTOR_THRESHOLD_STABILIZATION_SUPPORT_THEOREM_NOTE_2026-04-21.md', 'scripts/dm_leptogenesis_exact_common.py', 'scripts/dm_selector_branch_support.py', 'scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py', 'scripts/frontier_dm_leptogenesis_ne_charged_source_response_reduction.py', 'scripts/frontier_dm_leptogenesis_pmns_projector_interface.py', 'scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py', 'scripts/frontier_dm_neutrino_exact_h_source_surface_preimage_bundle_theorem.py', 'scripts/frontier_dm_neutrino_hermitian_bridge_carrier.py', 'scripts/frontier_dm_neutrino_positive_polar_h_cp_theorem.py', 'scripts/frontier_dm_neutrino_postcanonical_polar_section.py', 'scripts/frontier_dm_neutrino_source_bank_z3_doublet_block_selection_obstruction_theorem.py', 'scripts/frontier_dm_neutrino_source_surface_active_affine_point_selection_boundary.py', 'scripts/frontier_dm_neutrino_source_surface_active_half_plane_theorem.py', 'scripts/frontier_dm_neutrino_source_surface_atomic_witness_volume_selector_nonrealization.py', 'scripts/frontier_dm_neutrino_source_surface_carrier_normal_form.py', 'scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py', 'scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py', 'scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem.py']
 
 import math
 import sys
@@ -67,7 +58,7 @@ def threshold_volume(params: tuple[float, float, float], tau: float) -> float:
 
 def main() -> int:
     print("=" * 88)
-    print("DM SELECTOR FIRST-SHOULDER-EXIT THRESHOLD SUPPORT THEOREM")
+    print("SUPPLIED-BANK FIRST-MIDDLE-BREAKPOINT DIAGNOSTIC")
     print("=" * 88)
 
     lifts, hs_bank, repairs_bank, _targets = recovered_bank()
@@ -108,13 +99,10 @@ def main() -> int:
     )
 
     print("\n" + "=" * 88)
-    print("PART 2: THE EARLIEST BREAKPOINT LIES INSIDE THE STABILIZATION WINDOW")
+    print("PART 2: COMPARISON TO SUPPLIED NUMERICAL ENDPOINTS")
     print("=" * 88)
 
-    check(
-        "The threshold-stabilization theorem already records the high-threshold onset tau_star",
-        "tau_star" in note and "0.131637578221552" in note,
-    )
+    check('DOCUMENTARY only: parent records supplied onset; no whole-window certificate inferred', 'tau_star' in note and '0.131637578221552' in note)
     check(
         "The earliest middle-branch threshold lies strictly above tau_star",
         tau_b_min > tau_star,
@@ -131,45 +119,27 @@ def main() -> int:
     print("=" * 88)
 
     check(
-        "At tau_b,min the preferred recovered lift is already the unique minimizer of the exact threshold-volume family",
+        "At this supplied breakpoint, lift 0 has the smallest evaluated field on the supplied bank",
         winner_bmin == 0 and np.all(vals_bmin[0] + 1.0e-12 < vals_bmin[1:]),
         f"vals(tau_b,min) = {np.round(vals_bmin, 12)}",
     )
-    check(
-        "So the exact intrinsic family already carries one canonical breakpoint candidate selecting the preferred lift",
-        True,
-        f"tau_b,min = {tau_b_min:.15f}",
-    )
+    print("  [INFO] Historical canonicality/remaining-burden inference withdrawn; no physical selector conclusion.")
 
     print("\n" + "=" * 88)
     print("PART 4: SCIENTIFIC CONSEQUENCE")
     print("=" * 88)
 
-    check(
-        "The older nonrealization note still honestly states that no intrinsic threshold law is yet derived",
-        "intrinsic threshold law" in nonrealization and "tau = 0.13" in nonrealization and "tau = 0.14" in nonrealization,
-    )
-    check(
-        "This theorem narrows the positive selector burden further without promoting closure",
-        True,
-        "a natural breakpoint candidate now exists: the earliest middle-branch threshold tau_b,min",
-    )
-    check(
-        "What remains is to derive why the physical threshold law should equal that earliest intrinsic breakpoint, or else derive a stronger microscopic law",
-        True,
-        "support narrowing only",
-    )
+    check('DOCUMENTARY only: nonrealization text records open intrinsic threshold law', 'intrinsic threshold law' in nonrealization and 'tau = 0.13' in nonrealization and ('tau = 0.14' in nonrealization))
+    print("  [INFO] Historical canonicality/remaining-burden inference withdrawn; no physical selector conclusion.")
+    print("  [INFO] Historical canonicality/remaining-burden inference withdrawn; no physical selector conclusion.")
 
     print("\n" + "=" * 88)
     print("RESULT")
     print("=" * 88)
-    print("  The exact intrinsic threshold-volume family now contains a canonical")
-    print("  breakpoint candidate, tau_b,min = min_i log(1+b_i).")
-    print("  On the recovered bank that breakpoint belongs uniquely to the preferred")
-    print("  lift and already selects it.")
-    print("  The remaining selector-side burden is therefore narrower again:")
-    print("    derive why the physical threshold law is the earliest middle-branch")
-    print("    breakpoint, or derive a stronger microscopic selector law.")
+    print("  On the supplied bank, the earliest evaluated middle breakpoint belongs to lift 0.")
+    print("  Its field value is smallest among these five supplied entries.")
+    print("  Comparison with supplied numerical endpoints is not a whole-window certificate.")
+    print("  Physical threshold selection and exhaustive remaining-route claims are open.")
     print()
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
 

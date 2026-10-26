@@ -3,7 +3,7 @@ runner: scripts/frontier_dm_neutrino_weak_even_swap_reduction_theorem.py
 runner_sha256: 43526066195977ee9481703ce2189c9bb04ef739cbbafb619bcb4d87a2b428df
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.48
+elapsed_sec: 1.02
 status: ok
 ----- stdout -----
 PASS: carrier family is swap closed

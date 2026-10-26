@@ -35,7 +35,8 @@ The exact chain is:
 3. a retained GR/pressure-source authority supplies the flat radiation
    Friedmann law `H^2 = (8 pi G / 3) rho_rad` (**open input; not supplied by
    the dust Newton-Poisson wrapper**)
-4. the exact radiation density gives
+4. supplied relativistic thermal inventory, equilibrium statistics and the
+   continuum dispersion give the conditional radiation density
 
    `rho_rad(T) = (pi^2/30) g_* T^4`
 
@@ -93,7 +94,7 @@ GR/pressure-source authority lands and audits clean.
 
 - [CUBIC_COXETER_REGGE_DEFICIT_VANISHING_NARROW_THEOREM_NOTE_2026-05-10.md](CUBIC_COXETER_REGGE_DEFICIT_VANISHING_NARROW_THEOREM_NOTE_2026-05-10.md) — narrow theorem proving the cubic-Coxeter Regge deficit vanishes identically on `Z^3` (interior edges of every class), used here only for cubic geometric flatness, not for the physical-slice identification in step (2).
 - [SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md](SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md) — finite declared-inventory arithmetic certificate for the SM relativistic degrees-of-freedom count `g_* = 28 + (7/8) * 90 = 106.75` used in step (4) and propagated through step (5).
-- [AXIOM_FIRST_STEFAN_BOLTZMANN_THEOREM_NOTE_2026-05-01.md](AXIOM_FIRST_STEFAN_BOLTZMANN_THEOREM_NOTE_2026-05-01.md) — framework-side Stefan-Boltzmann derivation for the `(pi^2 / 30)` per-DOF prefactor in the relativistic energy density `rho_rad(T) = (pi^2 / 30) g_* T^4` used in step (4).
+- [AXIOM_FIRST_STEFAN_BOLTZMANN_THEOREM_NOTE_2026-05-01.md](AXIOM_FIRST_STEFAN_BOLTZMANN_THEOREM_NOTE_2026-05-01.md) — conditional supplied-continuum Stefan-Boltzmann calculation for the `(pi^2 / 30)` per-DOF prefactor in the relativistic energy density `rho_rad(T) = (pi^2 / 30) g_* T^4` used in step (4).
 
 Open input, deliberately not a markdown dependency until supplied:
 

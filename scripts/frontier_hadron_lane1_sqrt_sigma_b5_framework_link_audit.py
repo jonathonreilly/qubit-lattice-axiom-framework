@@ -105,11 +105,11 @@ def part2_dependency_status() -> None:
         and "What remains bounded" in graph,
     )
     check(
-        "g_bare normalization leaves Wilson action form imported",
-        "What does NOT close" in gb
-        and "action-coefficient objection" in gb
-        and "lattice gauge action" in gb
-        and "functional form" in gb,
+        "g_bare coefficient relation leaves physical action multiplier open",
+        "beta = 2 N_c / g^2" in gb
+        and "residual positive action multiplier" in gb
+        and "does not derive" in gb
+        and "g^2 = 1" in gb,
     )
     check(
         "canonical plaquette surface stores evaluated constants, not a volume-scaling proof",
@@ -195,11 +195,11 @@ def part3_gate_model() -> list[B5Candidate]:
         candidates[1].count() == 1 and not candidates[1].framework_side_measurement,
     )
     check(
-        "future large-volume Creutz/force ladder would close the B5 gate by construction",
+        "supplied future entry satisfies the Boolean checklist, not a physical theorem",
         candidates[2].closes_b5(),
     )
     check(
-        "no current-surface B5 candidate closes",
+        "neither of the two supplied present entries satisfies all checklist fields",
         not any(candidate.closes_b5() for candidate in candidates[:2]),
     )
     return candidates
@@ -210,8 +210,8 @@ def part4_artifact_checks() -> None:
     note = read("docs/HADRON_LANE1_SQRT_SIGMA_B5_FRAMEWORK_LINK_AUDIT_NOTE_2026-04-30.md")
 
     check(
-        "note records B5 as current-surface no-go, not closure",
-        "current-surface no-go" in note and "not close B5" in note,
+        "note records B5 as open bridge with supplied coupling",
+        "**Type:** open_gate" in note and "rho=g²" in note and "not a sufficient-condition" in note,
     )
     check(
         "note defines the future large-volume ladder",
@@ -229,7 +229,8 @@ def main() -> int:
     print("  link needed to import static-energy/string-tension bridge values?")
     print()
     print("Answer:")
-    print("  No. The current surface has structural SU(3) and beta=6 support,")
+    print("  The physical bridge remains open; beta=6 supplies g^2=1.")
+    print("  This is source consistency and a finite Boolean checklist,")
     print("  but not a large-volume framework-side Wilson/Creutz/force-scale")
     print("  validation with uncertainty.")
 
@@ -263,6 +264,7 @@ def main() -> int:
     print()
     print("=" * 88)
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
+    print("No physical equivalence, coupling selection or audit verdict is established.")
     print("=" * 88)
     return 1 if FAIL_COUNT else 0
 

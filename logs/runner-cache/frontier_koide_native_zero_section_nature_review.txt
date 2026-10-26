@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_native_zero_section_nature_review.py
-runner_sha256: 2f334cf6898ba38740e9cb2293dda4823fe763f999e01bf4d3d7cb2e8f580a76
-timeout_sec: 120
+runner_sha256: 1901a59b75fa43194687d91a731e53695667a17524e6e1235fabe332360d34cf
+input_fingerprint_sha256: 30ab32b6b46ab55461f633f23383dc17b4dffbb5f1f599477f78d6896b0ac101
+timeout_sec: 180
 exit_code: 0
-elapsed_sec: 0.38
+elapsed_sec: 0.50
 status: ok
 ----- stdout -----
 
@@ -19,69 +20,33 @@ A. Route packet
        Defined-route algebra is not promoted beyond its proof boundary.
 
 ========================================================================================
-B. Positive content
+B. Child output contract (not independent proof)
 ========================================================================================
-[PASS] B.1 Q is implied inside the defined zero-source route
-       The source-label zero section gives K_TL=0 and Q=2/3.
-[PASS] B.2 delta is implied inside the defined real primitive plus unit endpoint
-       Real Z3 primitive removes spectator; based endpoint removes c.
-[PASS] B.3 the route is not numerological
-       Load-bearing checks are representation idempotents and unit preservation.
+[PASS] B.1 child reports all16 actual mathematical conditions successful
+[PASS] B.2 child explicitly declares its supplied endpoint law
+HISTORICAL_UNSCORED old assertion='B.3 old non-numerological provenance assertion'; observed=True; old detail='Withdrawn: finite sum and flags do not prove independent physical endpoint selection.'
 
 ========================================================================================
-C. Compatibility with retained Brannen support
+C. Unscored historical text observations, not proof suppliers
 ========================================================================================
-[PASS] C.1 retained Brannen geometry supports a real-doublet primitive reading
-       Existing notes describe the Brannen phase as real-plane rotation / conjugate-pair winding.
-[PASS] C.2 retained Brannen corpus also contains rank-one/CP1 language
-       This is the exact interpretive conflict the native route must resolve.
+HISTORICAL_UNSCORED old assertion='C.1 retained Brannen geometry supports a real-doublet primitive reading'; observed=True; old detail='Existing notes describe the Brannen phase as real-plane rotation / conjugate-pair winding.'
+HISTORICAL_UNSCORED old assertion='C.2 retained Brannen corpus also contains rank-one/CP1 language'; observed=True; old detail='This is the exact interpretive conflict the native route must resolve.'
 
 ========================================================================================
 D. Remaining objections
 ========================================================================================
-[PASS] D.1 all remaining objections are identification theorems, not arithmetic gaps
-       Is zero-source source-response already the charged-lepton scalar readout?
-       Does the physical Brannen endpoint mean the whole real primitive or a rank-one CP1 line?
-       Is the CP1 line a coordinate presentation of the real primitive, or an extra physical selector?
-       Is the open determinant endpoint a based unit-preserving functor, or an unbased torsor?
-[PASS] D.2 physical Koide result remains unclaimed
-       A hostile reviewer can reject the three physical identifications until they are derived from retained sources.
+HISTORICAL_UNSCORED old assertion='D.1 all remaining objections are identification theorems, not arithmetic gaps'; observed=True; old detail='Is zero-source source-response already the charged-lepton scalar readout?\nDoes the physical Brannen endpoint mean the whole real primitive or a rank-one CP1 line?\nIs the CP1 line a coordinate presentation of the real primitive, or an extra physical selector?\nIs the open determinant endpoint a based unit-preserving functor, or an unbased torsor?'
+HISTORICAL_UNSCORED old assertion='D.2 physical Koide result remains unclaimed'; observed=True; old detail='A hostile reviewer can reject the three physical identifications until they are derived from retained sources.'
 
 ========================================================================================
 E. Verdict
 ========================================================================================
-[PASS] E.1 passes as a bounded defined-route review
-       It supplies exact route algebra for the zero-source, real-primitive, based-endpoint pattern.
-[PASS] E.2 fails as a retained physical Koide result today
-       It still needs the zero-source readout, real-primitive Brannen endpoint, and determinant-line unit theorems.
-
-========================================================================================
-Summary
-========================================================================================
-PASSED: 12/12
-  [PASS] A.1 native zero-section route artifacts exist
-  [PASS] A.2 native route runner passes
-  [PASS] A.3 route does not claim the physical Koide result
-  [PASS] B.1 Q is implied inside the defined zero-source route
-  [PASS] B.2 delta is implied inside the defined real primitive plus unit endpoint
-  [PASS] B.3 the route is not numerological
-  [PASS] C.1 retained Brannen geometry supports a real-doublet primitive reading
-  [PASS] C.2 retained Brannen corpus also contains rank-one/CP1 language
-  [PASS] D.1 all remaining objections are identification theorems, not arithmetic gaps
-  [PASS] D.2 physical Koide result remains unclaimed
-  [PASS] E.1 passes as a bounded defined-route review
-  [PASS] E.2 fails as a retained physical Koide result today
-
-KOIDE_NATIVE_ZERO_SECTION_NATURE_REVIEW=PASS_AS_ROUTE
-KOIDE_NATIVE_ZERO_SECTION_RETAINED_CLOSURE=FALSE
-NATIVE_ROUTE_IMPLIES_VALUES_CONDITIONALLY=TRUE
-NATIVE_ROUTE_DEFINED_ALGEBRA=TRUE
-PHYSICAL_KOIDE_CLOSURE_CLAIMED=FALSE
-PHYSICAL_BRIDGE_IDENTIFICATIONS_CLAIMED=FALSE
-NEXT_NATIVE_THEOREM=derive_zero_source_readout_Brannen_endpoint_as_real_Z3_primitive_and_unit_determinant_readout
-RESIDUAL_IDENTIFICATION_DELTA=rank_one_CP1_language_vs_real_primitive_endpoint
-RESIDUAL_TRIVIALIZATION=unit_preserving_open_determinant_line_readout
-RESIDUAL_SOURCE_READOUT=zero_source_coefficient_vs_physical_charged_lepton_scalar
+HISTORICAL_UNSCORED old assertion='E.1 passes as a bounded defined-route review'; observed=True; old detail='It supplies exact route algebra for the zero-source, real-primitive, based-endpoint pattern.'
+HISTORICAL_UNSCORED old assertion='E.2 fails as a retained physical Koide result today'; observed=True; old detail='It still needs the zero-source readout, real-primitive Brannen endpoint, and determinant-line unit theorems.'
+INFO: supplied zero source, affine endpoint form, selected=1 and c=0 are premises.
+INFO: physical readout, phase, anomaly and dynamics identification are not proved; questions above are not exhaustive.
+PASSED: 5/5
+ONE_CHILD_CONTRACT_ONLY; NO_PHYSICAL_OR_AUDIT_VERDICT
 
 ----- stderr -----
 

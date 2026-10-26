@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
-"""Source-packet verifier for the Hubble Lane 5 eta-retirement gate.
+"""Documentary eta-route inventory and finite stipulated Boolean model.
 
-This runner is not an audit verdict. It packages the source-side evidence for
-the Cycle 4 gate note by checking that the parent note exposes its dependency
-anchors, names the single residual DM/PMNS selector gate, and preserves the
-non-promotion boundary: no eta retirement, no C2 closure, and no H0 closure are
-claimed on the actual current surface.
+No eta retirement, physical selector or yield theorem is established.
+The cited reduced-surface diagnostic reports two candidates against a
+required three branches; that unresolved obligation is reported, not scored
+as a successful scientific check. Historical failed captures remain valid.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = ['docs/HUBBLE_LANE5_ETA_RETIREMENT_GATE_AUDIT_NOTE_2026-04-26.md', 'docs/DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-04-16.md', 'docs/DM_LEPTOGENESIS_PMNS_REDUCED_SURFACE_SELECTOR_SUPPORT_NOTE_2026-04-16.md', 'docs/DM_LEPTOGENESIS_PMNS_REDUCTION_EXHAUSTION_THEOREM_NOTE_2026-04-16.md', 'docs/DM_LEPTOGENESIS_PMNS_MICROSCOPIC_D_LAST_MILE_NOTE_2026-04-16.md', 'docs/OMEGA_LAMBDA_DERIVATION_NOTE.md', 'docs/R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md', 'docs/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md']
 
 from dataclasses import dataclass
 import re
@@ -96,22 +98,14 @@ def part1_packet_metadata() -> None:
     check("parent note exists", (ROOT / PARENT).exists(), PARENT)
     check("parent declares this primary runner", RUNNER in parent)
     check("parent declares this runner cache", CACHE in parent)
-    check(
-        "parent remains an open-gate support source packet",
-        "support gate-identification note on `main`" in parent_norm
-        and "**Claim type:** open_gate" in parent
-        and "identifies the precise residual microscopic selector law" in parent_norm,
-    )
-    check(
-        "source-packet boundary says it is not a theorem",
-        "This is an audit / gate-identification artifact, not a theorem" in parent_norm,
-    )
-    check(
-        "source-packet boundary forbids promotion claims",
-        "does not derive the missing right-sensitive selector law" in parent_norm
-        and "retire `eta`" in parent_norm
-        and "apply an audit verdict" in parent_norm,
-    )
+    check("parent declares documentary open-gate scope",
+          "**Claim type:** open_gate" in parent and "documentary route inventory" in parent_norm)
+    check("parent withdraws exact-support promotion inference",
+          "withdraws its former reliance" in parent_norm
+          and "former conclusion" in parent_norm and "is withdrawn" in parent_norm)
+    check("parent leaves physical selector and yield open",
+          "physical selector/yield/readout obligations remain open" in parent_norm
+          and "apply an audit verdict" in parent_norm)
 
 
 def part2_registered_dependencies() -> None:
@@ -143,10 +137,13 @@ def part2_registered_dependencies() -> None:
         "transport status records the local selected slice as subcritical",
         "transport-subcritical" in transport,
     )
-    check(
-        "reduced-surface note supplies exact eta-support witness only",
-        "`eta / eta_obs = 1`" in reduced and "support" in normalize(reduced).lower(),
-    )
+    print("  OPEN SCIENTIFIC OBLIGATION (documentary observation; no transport rerun):")
+    diagnostic_failure_reported = ("two clustered candidates" in reduced
+        and "required three branches" in reduced and "exits nonzero" in reduced)
+    print(f"  Source reports two candidates versus required three and nonzero exit: {diagnostic_failure_reported}")
+    print("  No exact-support, physical-selector or yield theorem is inherited from this diagnostic.")
+    if not diagnostic_failure_reported:
+        raise RuntimeError("reduced-surface diagnostic boundary changed; review required")
     check(
         "reduction exhaustion note is part of the PMNS route boundary",
         "exhaustion" in normalize(exhaustion).lower()
@@ -166,43 +163,33 @@ def part2_registered_dependencies() -> None:
         "R_base = 31/9" in r_base and "No observed cosmological value enters" in r_base,
     )
     check(
-        "Lane 5 no-go supplies the C1/C2/C3 closure taxonomy",
+        "Lane 5 inventory names the reviewed C1/C2/C3 routes",
         "(C1) absolute-scale" in cosmic
         and "(C2) cosmic-history-ratio" in cosmic
-        and "(C3) direct cosmic-`L`" in cosmic,
+        and "(C3) direct cosmic-`L`" in cosmic
+        and "former necessity no-go is withdrawn" in cosmic,
     )
 
 
 def part3_single_gate_inventory() -> None:
-    section("Part 3: single residual eta-retirement gate")
+    section("Part 3: historical gate inventory and unresolved proof obligation")
     parent = read(PARENT)
     parent_norm = normalize(parent)
 
-    check(
-        "parent identifies a single residual microscopic selector law",
-        "single residual microscopic selector law" in parent_norm,
-    )
-    check(
-        "gate object is the right-sensitive Z3 doublet-block law",
-        "right-sensitive 2-real `Z_3` doublet-block point-selection law" in parent_norm
-        and "`dW_e^H = Schur_{E_e}(D_-)`" in parent,
-    )
-    check(
-        "odd-slot readout is explicitly named",
-        "odd slot `A13`" in parent and "sign(sin(delta))" in parent,
-    )
-    check(
-        "local diagonal route is recorded as transport-subcritical",
-        "transport-subcritical" in parent_norm,
-    )
-    check(
-        "closed shortcut routes are inventoried",
-        all(marker in parent for marker in CLOSED_ROUTE_MARKERS),
-    )
-    check(
-        "parent explicitly says it does not close DM-lane work",
-        "does NOT close any of the DM lane work" in parent,
-    )
+    check("parent identifies the historical candidate gate without sufficiency",
+          "right-sensitive 2-real `Z_3`" in parent_norm
+          and "doublet-block point-selection law" in parent_norm
+          and "not a proof that a single gate is sufficient" in parent_norm)
+    check("historical gate object and odd-slot readout remain explicit",
+          "`dW_e^H = Schur_{E_e}(D_-)`" in parent and "`A13`" in parent
+          and "sign(sin(delta))" in parent)
+    check("parent preserves the failed diagnostic as an open obligation",
+          "required-three-branch diagnostic remains a failed proof obligation" in parent_norm
+          and "earlier source-packet FAIL is preserved" in parent_norm)
+    check("historical shortcut references are inventoried without exhaustion",
+          all(marker in parent for marker in CLOSED_ROUTE_MARKERS)
+          and "a list is not an exhaustion theorem" in parent_norm)
+    check("parent does not close DM-lane work", "does NOT close any of the DM lane work" in parent)
 
 
 @dataclass(frozen=True)
@@ -242,20 +229,21 @@ def part4_non_promotion_model() -> None:
         absolute_scale_retained=True,
     )
 
-    print("  rule: eta retires only if the right-sensitive selector is retained")
+    print("  stipulated route model: eta retires if the supplied selector premise is true")
     print("  rule: C2 numeric closure also needs the separate alpha_GUT lane")
-    print("  rule: H0 closure still needs the C1 scale route")
+    print("  stipulated separated-input route: H0 flag also needs C1; joint routes are not excluded")
 
-    check("actual current packet does not retire eta", not current.eta_retired())
-    check("selector gate alone retires eta but not full C2 numerics", gate_only.eta_retired() and not gate_only.c2_numerically_closed())
-    check("full C2-plus-scale packet would close the modeled route", full_c2_plus_scale.h0_closed_through_c2())
+    check("all-false model assignment returns false eta flag", not current.eta_retired())
+    check("selector-only model assignment sets eta flag but not C2 flag", gate_only.eta_retired() and not gate_only.c2_numerically_closed())
+    check("all-true assignment satisfies the stipulated route rule", full_c2_plus_scale.h0_closed_through_c2())
     check(
         "parent records alpha_GUT as a separate remaining cascade dependency",
         "remaining cascade dependency is `alpha_GUT in [0.03, 0.05]`" in parent_norm,
     )
     check(
-        "parent records C1 as separately required for H0",
-        "The `(C1)` half (scale route) remains separately required for `H_0` itself" in parent_norm,
+        "parent limits separate C1 requirement to this route",
+        "Within that route, `(C1)` supplies the separately fixed scale" in parent_norm
+        and "joint relations are not excluded" in parent_norm.lower(),
     )
     check(
         "runner boundary forbids audit-result mutation",
@@ -268,13 +256,8 @@ def main() -> int:
     print("HUBBLE LANE 5 ETA-RETIREMENT GATE SOURCE PACKET")
     print("=" * 88)
     print()
-    print("Question:")
-    print("  Is the Cycle 4 eta-retirement gate packaged with source anchors,")
-    print("  a replayable single-gate inventory, and a non-promotion boundary?")
-    print()
-    print("Answer:")
-    print("  Yes for source-packet readiness. This runner does not retire eta,")
-    print("  close C2, close H0, or apply an audit verdict.")
+    print("Documentary and stipulated-rule checks only; physical selector/yield closure remains OPEN.")
+    print("The earlier exact-support source check failed and has not become a scientific PASS.")
 
     part1_packet_metadata()
     part2_registered_dependencies()
@@ -283,7 +266,8 @@ def main() -> int:
 
     print()
     print("=" * 88)
-    print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
+    print(f"DOCUMENTARY / STIPULATED-MODEL CHECKS: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
+    print("UNRESOLVED: reduced-surface required-three-branch diagnostic; physical selector/yield/readout.")
     print("=" * 88)
     return 1 if FAIL_COUNT else 0
 

@@ -1,74 +1,61 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_pmns_z3_doublet_block_center_positive_sheet_no_go_2026_04_20.py
-runner_sha256: b258aaf612da4603ac97ce3d320f6d6a693687b0a78b117ae00fc6b732555423
-input_fingerprint_sha256: c84477b3f23ba9b5467117157df043463d9c132a797121748861b2347ec29295
+runner_sha256: 68e924f32fa64fe62e8393662a197d677972acb3ae6c2680fc766b78987311da
+input_fingerprint_sha256: ad2209c9dfd1b70d3c81333c55c60643026e8a9557c691362f562c8b6359b444
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 1.46
+elapsed_sec: 4.87
 status: ok
 ----- stdout -----
 ========================================================================================
-DM PMNS Z3 DOUBLET-BLOCK CENTER POSITIVE-SHEET NO-GO THEOREM
+DM PMNS Z3 FINITE CENTER-SEARCH DIAGNOSTIC
 ========================================================================================
 
 Question:
   Does the coefficient-free center law delta_db = 1, q_+ = 0, together
-  with the already-closed I12 sign law I_src > 0, close the remaining
+  with supplied sign condition I_src > 0, sample the remaining
   PMNS angle-pin I5 on the fixed native N_e seed surface?
 
 ========================================================================================
-PART 1: THE POSITIVE-SHEET CENTER LAW IS NOT A POINT SELECTOR
+PART 1: FINITE POSITIVE-SHEET CENTER SEARCH
 ========================================================================================
-  [PASS] The verifier finds many distinct positive-sheet center solutions  (count=11)
-  [PASS] Every retained representative satisfies the exact center law delta_db = 1, q_+ = 0
-  [PASS] Every retained representative lies on the positive I_src sheet  (cubic values=[0.000233445, 0.001078298, 0.001554339, 0.000902109, 0.001296607, 0.002050621])
-  [PASS] The PMNS angle triple varies macroscopically across the positive-sheet center locus  (ranges=(0.243800,0.953571) × (0.030505,0.597343) × (0.094027,0.997611))
-  rep 1: obs=[0.2438   0.075946 0.808903], I_src=0.000233445
-  rep 2: obs=[0.251506 0.097954 0.804629], I_src=0.001078298
-  rep 3: obs=[0.943628 0.030505 0.124917], I_src=0.001554339
-  rep 4: obs=[0.475654 0.495846 0.997611], I_src=0.000902109
+  [PASS] The seeded search finds at least eight separated numerical representatives  (count=11)
+  [PASS] Every sampled representative has componentwise center residual below 1e-10
+  [PASS] Every sampled representative has computed I_src > 0  (cubic values=[0.000233446, 0.001078299, 0.001554283, 0.000902108, 0.001296607, 0.002050638])
+  [PASS] Sampled angle ranges exceed the stated finite spread thresholds  (ranges=(0.243801,0.953589) × (0.030500,0.597343) × (0.094040,0.997611))
+  rep 1: obs=[0.243801 0.075946 0.808907], I_src=0.000233446
+  rep 2: obs=[0.251506 0.097954 0.804629], I_src=0.001078299
+  rep 3: obs=[0.943632 0.0305   0.124929], I_src=0.001554283
+  rep 4: obs=[0.475654 0.495846 0.997611], I_src=0.000902108
 
 ========================================================================================
-PART 2: THE CENTER CONSTRAINTS HAVE RANK 2 ON THE VERIFIED PATCH
+PART 2: FINITE-DIFFERENCE RANK DIAGNOSTICS AT SAMPLED POINTS
 ========================================================================================
-  [PASS] At retained representative points, rank d(delta_db, q_+) = 2  (ranks=[2, 2, 2, 2, 2, 2, 2, 2])
-  [PASS] So on the verified patch the center law cuts the 5-real seed surface to a local 3-real locus  (dim(seed surface)=5 and dim(center pair)=2)
+  [PASS] The first eight finite-difference Jacobians have numerical rank 2 at tolerance 1e-5  (ranks=[2, 2, 2, 2, 2, 2, 2, 2])
+  [PASS] Repeated sampled-rank check; no neighborhood or manifold certificate  (five supplied chart coordinates, two constraints; neighborhood rank unproved)
 
 ========================================================================================
-PART 3: CONDITIONAL VALUE — CENTER LAW CUTS THE EXACT TARGET TO A TWO-SHEET PAIR
+PART 3: FINITE SEARCH WITH THE SUPPLIED TARGET IMPOSED
 ========================================================================================
-  [PASS] If the exact PMNS target is imposed as well, the center law yields exactly two source solutions  (count=2)
-  [PASS] The two conditional solutions have the same x and y data
-  [PASS] They differ only by the sheet flip delta_src -> -delta_src and I_src -> -I_src  (delta_src=(-0.728938949196,0.728938949196))
-
-========================================================================================
-PART 4: DOCUMENTARY SCOPE CHECKS (NOT PROOF OR AUDIT AUTHORITY)
-========================================================================================
-  [PASS] The new note states that center law + I12 does not close I5
-  [PASS] The note records the local 3-real positive-sheet center locus
-  LOCAL_SELECTOR_DOCUMENTARY_SCOPE (unscored): finite_diagnostic_boundary_present=False; open_proof_obligations_present=False. Text presence is not mathematical proof or audit authority; the obsolete I5 authority score is not included in PASS/FAIL totals.
-
-========================================================================================
-PART 5: N5 EXECUTION CERTIFICATE -- WHAT THIS RUNNER RESOLVES
-========================================================================================
-  per_element: checked -- the center pair is resolved componentwise rather than through a single norm: the residuals delta_db - 1 and q_+ are each held to their own 1e-10 tolerance, and every candidate is admitted individually with its own chart, angle triple, I_src sign and Jacobian rank, deduplicated at 1e-3 in chart norm before it counts.
-  per_site: checked and not executed -- nothing in this runner carries a lattice site index. The 5-real chart is a coordinate patch on the fixed native N_e seed surface and H is one 3x3 source Hermitian, so the geometry being measured is a parameter-space locus, not a site-resolved field.
-  per_mode: checked -- the three PMNS angle observables are range-tested separately, each against its own spread threshold (0.5 for the solar mode, 0.4 for the reactor mode, 0.8 for the atmospheric mode), so the macroscopic variation along the center locus is established mode by mode and not by one pooled distance.
-  per_block: checked -- the entire center law is a Z_3 doublet-block statement. Both constraints delta_db(H) = 1 and q_+(H) = 0 are doublet-block center coordinates extracted by active_target_from_h, so the rank-2 Jacobian and the resulting local 3-real cut of the 5-real seed surface are block-resolved quantities rather than whole-matrix ones.
-  lattice_wide: checked and not executed -- there is no lattice, no volume, and no asymptotic limit anywhere here. The widest execution is a bounded search over the chart box [CHART_LO, CHART_HI] from seeded restarts, which samples a compact parameter region and makes no statement about extent.
+  [PASS] This seeded target-constrained search returns two separated numerical representatives  (count=2)
+  [PASS] The two sampled target-constrained representatives agree in x and y within 1e-10
+  [PASS] The sampled pair has opposite delta_src and I_src within 1e-10  (delta_src=(-0.728938949196,0.728938949196))
+DOCUMENTARY SCOPE (unscored): True
+PR9844 remains held; its local-selector note is not consumed.
+EXECUTION SCOPE: finite seeded least-squares search only.
+Per candidate: norm acceptance 1e-8, separate component checks 1e-10.
+Per observable: original spread thresholds 0.5, 0.4, 0.8 retained.
+Per block: finite-difference step 1e-6 and rank threshold 1e-5.
+No site, mode completeness, global root exhaustion or limit certificate.
+Exact roots, neighborhood rank and physical selection remain open.
 
 ========================================================================================
 RESULT
 ========================================================================================
-  Honest status:
-    - center law + I12 leaves a positive-sheet 3-real locus and does not
-      derive the PMNS target by itself
-    - the center law is still useful conditionally: once the exact PMNS
-      target manifold is imposed, it cuts that manifold to a two-sheet pair
-    - so I5 remains open, but the live missing object is now sharper than
-      before
-
-PASS=11 FAIL=0
+Finite residual, range and sampled-rank findings only.
+The search does not establish exact roots, global two-solution exhaustion,
+a local three-real manifold, a physical sheet, or an I5/I12 no-go.
+PASS=9 FAIL=0
 
 ----- stderr -----
 

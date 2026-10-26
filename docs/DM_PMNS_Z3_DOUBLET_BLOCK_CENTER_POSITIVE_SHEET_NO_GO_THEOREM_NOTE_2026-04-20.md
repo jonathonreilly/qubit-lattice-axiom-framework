@@ -1,254 +1,38 @@
-# DM PMNS `Z_3` Doublet-Block Center Positive-Sheet No-Go Theorem
-
-**Date:** 2026-04-20 (originally); 2026-05-03 (review-loop runner repair via PR #485)
-**Lane:** DM A-BCC / remaining open import `I5`
-**Status:** historical no-go claim; the old runner PASS=12/0 after PR #485 is a historical result. The 2026-10-21 documentary repair below does not independently certify that claim.
-**Claim type:** no_go
-**Primary runner:**
-`scripts/frontier_dm_pmns_z3_doublet_block_center_positive_sheet_no_go_2026_04_20.py`
-
-## Documentary compatibility correction (2026-10-21)
-
-The May 3 narrative and its 12/0 result below are historical. In the campaign
-combined candidate, the local-selector input note withdraws its global exclusion
-claim and removes the
-literal `I5 is still open positively`. A combined replay returned 11/1 solely
-because the consumer still scored that obsolete source-authority phrase.
-That failed replay is preserved in the campaign evidence.
-
-The current repair removes only that authority score and reports the input's
-finite-diagnostic/open-obligation text presence without scoring it. The
-remaining 11 checks, numerical thresholds, searches and failure exit are
-unchanged. A future 11/0 result is a different score universe; it does not
-mean the original authority check passed. Text presence is not proof or audit
-authority. This correction does not independently establish exact solutions,
-rank on a full neighborhood, global two-sheet exhaustiveness, a new no-go,
-physical source selection, or closure of I5/I12.
-
-## Review-loop repair (2026-05-03)
-
-The 2026-05-03 review follow-up recorded the runner at PASS=11/1: the
-geometric no-go content (PARTS 1-3) passed cleanly, but PART 4's
-register-consistency check looked for a `| I5 |` row plus
-`point-selection law` and `retained observational input` strings in
-`SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md`. That register
-has since been refactored to focus on Koide-related imports and no
-longer enumerates an explicit I5 row.
-
-The 2026-05-03 runner repair (landed in PR #485, commit `46d9fda67`)
-points the PART 4 check at the current authoritative I5 status note
-(`DM_PMNS_LOCAL_SELECTOR_FAMILY_NO_GO_THEOREM_NOTE_2026-04-20.md`),
-which carries the literal `I5 is still open positively` line. Runner
-now PASS=12/0. This clears the brittle string-match block while leaving
-the independent audit lane to decide the row's claim type, audit
-verdict, and effective status.
-
-The substantive content of the no-go (positive-sheet center locus has
-many distinct exact solutions; PMNS angle triple varies macroscopically
-across it; center law is conditional on the exact PMNS target, not a
-native I5 closure) is unchanged by this repair.
-
-## Summary
-
-The recently proposed coefficient-free `Z_3` doublet-block center law
-
-```text
-delta_db(H) = 1,
-q_+(H)      = 0
-```
-
-is structurally meaningful, but on the charged-lepton-side fixed native `N_e`
-seed surface it does **not** close `I5` by itself, even after adding the
-already-closed sheet law
-
-```text
-I_src(H) > 0.
-```
-
-The reason is geometric and explicit:
-
-1. on the fixed `N_e` seed surface, the positive-sheet center system
-
-   ```text
-   delta_db(H) = 1,
-   q_+(H)      = 0,
-   I_src(H)    > 0
-   ```
-
-   still has many distinct exact source solutions;
-2. at retained representatives, the Jacobian of the center pair
-   `(delta_db, q_+)` has rank `2`, so the center locus is locally a `3`-real
-   manifold inside the `5`-real seed surface;
-3. the PMNS angle triple varies macroscopically along that positive center
-   locus.
-
-So the center law plus the `I12` sign law does **not** derive the PMNS angle
-triple. It leaves a large positive-sheet family.
-
-What the center law *does* give honestly is a useful conditional reduction:
-once the exact PMNS target manifold is imposed, the center equations cut that
-manifold to a two-sheet pair, and the already-closed `I12` law selects the
-physical sheet. That is a real structural observation, but it is not a native
-closure of `I5` because the PMNS target manifold itself is still observational.
-
-## 1. Setup
-
-On the fixed native `N_e` seed surface from
-`DM_PMNS_NE_SEED_SURFACE_EXACT_SOURCE_MANIFOLD_THEOREM_NOTE_2026-04-20.md`,
-define the center coordinates by the retained right-sensitive `Z_3`
-doublet-block readout
-
-```text
-delta_db(H) = (Im K_12(H) + 4 sqrt(2) / 3) / sqrt(3),
-q_+(H)      = 2 sqrt(2) / 9 - Re(K_11(H) + K_22(H)) / 2.
-```
-
-The proposed closeout system was
-
-```text
-delta_db(H) = 1,
-q_+(H)      = 0,
-I_src(H)    > 0.
-```
-
-The question is whether this already forces the physical PMNS angle triple
-
-```text
-(sin^2 theta_12, sin^2 theta_13, sin^2 theta_23)
-  = (0.307, 0.0218, 0.545)
-```
-
-without separately imposing that target.
-
-## 2. Theorem
-
-**Theorem (`Z_3` doublet-block center positive-sheet no-go).** On the fixed
-native `N_e` seed surface:
-
-1. the positive-sheet center system
-
-   ```text
-   delta_db(H) = 1,
-   q_+(H)      = 0,
-   I_src(H)    > 0
-   ```
-
-   has multiple distinct exact source solutions;
-2. at retained representative points, the Jacobian of the center pair
-   `(delta_db, q_+)` has rank `2`;
-3. hence the center system defines, on the verified patch, a local `3`-real
-   positive-sheet center locus;
-4. the PMNS angle triple varies macroscopically along that locus.
-
-Therefore the current center law plus the already-closed `I12` sign law does
-**not** close `I5`.
-
-## 3. Retained positive-sheet center representatives
-
-The verifier finds many exact positive-sheet center points. Representative
-examples include
-
-```text
-(0.243800, 0.075946, 0.808903),
-(0.943631, 0.030502, 0.124926),
-(0.621613, 0.597343, 0.995705)
-```
-
-for the PMNS triple
-
-```text
-(sin^2 theta_12, sin^2 theta_13, sin^2 theta_23),
-```
-
-all with
-
-```text
-delta_db(H) = 1,
-q_+(H)      = 0,
-I_src(H)    > 0.
-```
-
-These triples are visibly different from one another, so the positive-sheet
-center law is not a point selector.
-
-## 4. Why the geometric conclusion is unavoidable
-
-The fixed `N_e` seed surface is `5`-real dimensional. The center law supplies
-two real equations. On the retained representative points the verifier finds
-
-```text
-rank d(delta_db, q_+) = 2.
-```
-
-So the center equations cut the seed surface to a local `3`-real locus.
-Adding the already-closed sign condition `I_src > 0` selects one sheet of that
-locus, but does not reduce its local dimension.
-
-Since the PMNS angle triple varies along the resulting positive-sheet center
-locus, the current center proposal cannot derive the PMNS target on its own.
-
-## 5. Honest conditional value of the center law
-
-The center law is still useful, just not as a full closure.
-
-If one first imposes the exact PMNS target manifold from the exact-manifold
-theorem, then the center equations cut that target manifold to a two-sheet
-pair, and the already-closed `I12` law `I_src > 0` selects the physical sheet.
-
-So the valid conclusion is:
-
-```text
-exact PMNS manifold + center law + I12  ->  unique physical sheet,
-```
-
-not
-
-```text
-center law + I12  ->  PMNS target.
-```
-
-That distinction is exactly the difference between a useful conditional
-reduction and a native closure of `I5`.
-
-## 6. Consequence for `I5`
-
-`I5` remains open on this branch.
-
-After the exact-source-manifold theorem and the present no-go, the remaining
-live object is sharper:
-
-```text
-derive the additional selector on the positive-sheet center locus
-```
-
-or equivalently
-
-```text
-derive the point-selection law on the exact PMNS source manifold that is
-stronger than the current center law delta_db = 1, q_+ = 0.
-```
-
-So the current center theorem should be read as a conditional reduction tool,
-not as the closeout of `I5`.
-
-## 7. Reproduction
-
-```bash
-PYTHONPATH=scripts python3 scripts/frontier_dm_pmns_z3_doublet_block_center_positive_sheet_no_go_2026_04_20.py
-```
-
-Historical expected result (May 3; obsolete authority score included):
-
-```text
-PASS=12 FAIL=0
-```
-
-Current runner has 11 scored checks plus an unscored documentary report.
-No new execution result is asserted by this annotation.
-
-## Audit dependency repair links
-
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
-
-- [dm_pmns_ne_seed_surface_exact_source_manifold_theorem_note_2026-04-20](DM_PMNS_NE_SEED_SURFACE_EXACT_SOURCE_MANIFOLD_THEOREM_NOTE_2026-04-20.md)
-- [dm_pmns_local_selector_family_no_go_theorem_note_2026-04-20](DM_PMNS_LOCAL_SELECTOR_FAMILY_NO_GO_THEOREM_NOTE_2026-04-20.md)
+# Z3 doublet-block center: finite search diagnostic
+
+**Type:** open_gate
+**Scope:** finite numerical diagnostics, not an exact or global no-go.
+**Primary runner:** [center search](../scripts/frontier_dm_pmns_z3_doublet_block_center_positive_sheet_no_go_2026_04_20.py)
+**Cache:** [captured output](../logs/runner-cache/frontier_dm_pmns_z3_doublet_block_center_positive_sheet_no_go_2026_04_20.txt)
+
+The supplied five-coordinate seed chart and doublet-block readout define
+residuals `(delta_db-1,q_+)`. Seeded least-squares searches retain numerical
+representatives at residual norm at most 1e-8 and computed `I_src>0`.
+Separate component checks use 1e-10; chart deduplication uses 1e-3. The
+runner reports sampled angle ranges against the original 0.5, 0.4, 0.8
+thresholds. These finite observations do not certify exact roots.
+
+A centered finite difference with step 1e-6 estimates the two-constraint
+Jacobian; numerical rank uses threshold 1e-5 at sampled points. Rank two
+at those samples does not prove rank on a neighborhood, hence does not
+establish a local three-real manifold.
+
+A separate finite search also imposes the supplied target
+`(0.307,0.0218,0.545)`. Its test asks whether this run returns two
+representatives, with matching x/y and opposite source signs to tolerance.
+The number found is not an exhaustive global solution count. Positive sign
+is supplied, not a derived physical sheet selector. I5/I12 physical
+selection and any exact no-go remain open.
+
+## Recovery and limits
+
+The historical exact/global/manifold/no-go claims are withdrawn. Full
+original note, runner, cache and failed paths remain recoverable at
+`96009ff66e877c6e0fc9f16f00e7c9b61d2d5c68` and in the PR9847 evidence map.
+The current search preserves the original starts, solver modes, thresholds,
+RNG and numeric predicates; documentary text checks do not supply proofs.
+PR9844 remains held. Its local-selector note is not a numerical dependency
+and is not imported as authority. The computational helpers are pinned
+from the approved base solely for their supplied chart/readout arithmetic.
+No helper's filename or historical theorem wording certifies physical
+selection. No N5 global-resolution certificate is claimed.

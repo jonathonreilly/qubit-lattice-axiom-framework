@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_full_closure_64_to_1_channel_weight_bridge_narrow_verifier.py
-runner_sha256: b63205467a61046dc09437f741b2b60a10ee2b4316b8f179166032a3773fab4c
-input_fingerprint_sha256: 4700ba4d747549e087bb17c747fcb8840c0522ff7242148c4c859d5b3f09c1f9
+runner_sha256: a942ca4e67a3ed080045707c485cef65e37573cbeac7e8165b0368629b8f8302
+input_fingerprint_sha256: c0ff4f01a96c11e5c97f1c76b12ba487f387e46487da29a5e6f31dc39fda5004
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
 ========================================================================
@@ -22,7 +22,7 @@ Pair note: docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOT
 
 === Part E: Visible-channel folding (Lemma B.4) ===
 
-=== Part F: Source cite-chain on origin/main ===
+=== Part F: Local documentary citation presence (not premise validation) ===
 
 === Part G: Source-boundary checks ===
 
@@ -41,23 +41,22 @@ Pair note: docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOT
 [PASS] C.2 (4/3)^2 / (1/6)^2 = 64 exact
 [PASS] D.1 dim(1)+dim(8) = N_c^2 = 9
 [PASS] D.2 multiplicity fractions f_1=1/9, f_8=8/9
-[PASS] D.3 R_conn = 8/9 (matches cl3_color_automorphism_theorem)
+[PASS] D.3 traceless carrier dimension fraction = 8/9 (not a universal amplitude fraction)
 [PASS] E.1 w_1 = (1/9) C_F^2 = 16/81  (w_1=16/81)
 [PASS] E.2 w_8 = (8/9) (1/(2 N_c))^2 = 2/81  (w_8=2/81)
 [PASS] E.3 w_1 / w_8 = 8 (multiplicity-folded ratio)  (ratio=8)
 [PASS] E.4 w_1 + w_8 = 18/81 = 2/9  (sum=2/9)
 [PASS] E.5 (w_1 s_1 + w_8 s_8)/(w_1+w_8) = (8 s_1 + s_8)/9 on rationals  (lhs=365/561=rhs)
 [PASS] E.6 Folded coefficients are exactly 8/9 and 1/9  (coeff_1=8/9, coeff_8=1/9)
-[PASS] F: present on origin/main: docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md
-[PASS] F: present on origin/main: docs/DM_THERMAL_AVERAGE_SOMMERFELD_TEXTBOOK_IMPORT_NOTE_2026-05-17.md
+[PASS] F: cited local file exists (documentary only): docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md
+[PASS] F: cited local file exists (documentary only): docs/DM_THERMAL_AVERAGE_SOMMERFELD_TEXTBOOK_IMPORT_NOTE_2026-05-17.md
 [PASS] G.1 Downstream parent is not a load-bearing input
 [PASS] G.2 Items (ii) and (iii) explicitly registered as open  (has_ii=True, has_iii=True)
 [PASS] G.3 Does not claim a parent state change
 [PASS] G.4 Physical-color identification deferral preserved
-[PASS] G.5 No negative route row touched
-[PASS] G.6 No new axiom/convention/import
+[PASS] G.5 Documentary scope: squared-potential weighting is supplied, not physical process weights
 ------------------------------------------------------------------------
-PASS 29    FAIL 0
+PASS 28    FAIL 0
 ========================================================================
 
 ----- stderr -----

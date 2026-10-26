@@ -3,7 +3,7 @@ runner: scripts/frontier_dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_t
 runner_sha256: b808cb62a1bd6bba00da5e3133131ab269da29c4b8f81f0eceaacc0af4c0ba17
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 0.32
+elapsed_sec: 0.82
 status: ok
 ----- stdout -----
 [PASS] gamma is odd

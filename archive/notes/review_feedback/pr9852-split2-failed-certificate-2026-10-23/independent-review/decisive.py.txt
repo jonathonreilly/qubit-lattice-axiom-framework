@@ -1,0 +1,14 @@
+import numpy as np, math,itertools,json
+from pathlib import Path
+D=Path(__file__).parent
+Tm=np.array([[1,0,0],[0,0,1],[0,1,0]],float);Td=np.array([[0,-1,1],[-1,1,0],[1,0,-1]],float);Tq=np.array([[0,1,1],[1,0,1],[1,1,0]],float);G=Td-Tq
+E1=2*math.sqrt(6)/3;E2=2*math.sqrt(2)/3;gamma=.5
+H0=np.array([[0,E1,-E1-1j*gamma],[E1,0,-E2],[-E1+1j*gamma,-E2,0]],complex)
+def H(x):m,d,s=x;return H0+m*Tm+d*Td+(E1-d+s)*Tq
+out={'slack_delta_generator':G.tolist(),'eigenvalues':np.linalg.eigvalsh(G).tolist(),'exact_eigenvalues':['-2','1-sqrt(3)','1+sqrt(3)'],'claimed_norm':math.sqrt(3),'actual_norm':1+math.sqrt(3),'boxes':[]}
+for name,box in [('CAP',[(-.145,-.14),(1.1835,1.1935),(.0145,.0245)]),('ENDPOINT',[(-.145,-.14),(1.1839,1.189),(0,.005)])]:
+ center=np.mean(box,axis=1);half=np.diff(box,axis=1).ravel()/2;evals=np.linalg.eigvalsh(H(center));claimed=half@[1,math.sqrt(3),2];corrected=half@[1,1+math.sqrt(3),2];corners=[]
+ for x in itertools.product(*box):
+  ev=np.linalg.eigvalsh(H(x));delta_norm=np.linalg.norm(H(x)-H(center),2);shift=max(abs(ev-evals));corners.append({'point':x,'perturbation_norm':float(delta_norm),'max_eigenvalue_shift':float(shift),'violates_claimed_radius':bool(shift>claimed),'eigenvalues':ev.tolist()})
+ out['boxes'].append({'name':name,'center_eigenvalues':evals.tolist(),'claimed_radius':float(claimed),'safe_exact_generator_radius':float(corrected),'max_corner_operator_norm':max(z['perturbation_norm'] for z in corners),'max_corner_eigen_shift':max(z['max_eigenvalue_shift'] for z in corners),'corners':corners})
+(D/'decisive.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps({k:v for k,v in out.items() if k!='boxes'},indent=2));print([(b['name'],b['claimed_radius'],b['safe_exact_generator_radius'],b['max_corner_eigen_shift']) for b in out['boxes']])

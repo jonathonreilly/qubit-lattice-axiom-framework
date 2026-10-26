@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dm_selector_supplied_bank_seed_relative_action_finite_diagnostic.py
+runner_sha256: 740734bb5158ae9237de1d51233eeeffca1f2e14313c95fb325300b28a631d1d
+input_fingerprint_sha256: add7f3f12aff50fe77338c122f280e25371fa4468849b48c5bd22d50729ad9b5
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 1.76
+status: ok
+----- stdout -----
+SUPPLIED FIVE-LIFT BANK: FINITE SEED-RELATIVE-ACTION DIAGNOSTIC
+Floating-point comparisons at the supplied sampled shifts; no physical selection or all-shift theorem.
+  [PASS] One common positivity threshold mu_floor exists on the recovered bank  (mu_floor = 5.526185878913282)
+  [PASS] At all 20 supplied shift offsets, lift 0 has the required numerical score margin  (worst audited margin = 0.074652125521)
+  [PASS] First supplied shift: lift 0 meets the numerical margin threshold  ((mu, margin)=(5.546185878913281, 0.147674586632))
+  [PASS] Last supplied shift: lift 0 meets the numerical margin threshold  ((mu, margin)=(7.526185878913282, 0.074652125521))
+  [PASS] At the 60 sampled grid entries, lift 0 meets the numerical margin threshold  (worst dense margin = 0.006112488798 at mu = 25.526185878913282)
+  [PASS] At the single far-shift sample mu_floor+1e6, lift 0 meets the original numerical threshold  ((large_mu, margin)=(1000005.5, 3.999911513120e-12))
+  [PASS] Exactly one member of the supplied five-lift bank has positive computed imaginary entry  (Im(K12)_bank = [ 0.505983 -1.041904 -0.979824 -1.251602 -1.793652])
+  [PASS] Sampled score minima and computed sign comparison identify the same supplied lift0  (same recovered lift 0)
+  [PASS] Finite supplied-bank and sampled-shift comparisons meet the stated predicates  (packet-local closure only)
+SUMMARY: NUMERICAL_CHECKS_PASS=9 FAIL=0
+Supplied bank/seed/functional/shift samples only; physical selection, completeness and normalization remain open.
+
+----- stderr -----
+

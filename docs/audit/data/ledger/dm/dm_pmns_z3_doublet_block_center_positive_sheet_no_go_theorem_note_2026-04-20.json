@@ -14,18 +14,15 @@
   "chain_closure_explanation": null,
   "claim_id": "dm_pmns_z3_doublet_block_center_positive_sheet_no_go_theorem_note_2026-04-20",
   "claim_scope": null,
-  "claim_type": "no_go",
-  "claim_type_author_hint": "no_go",
-  "claim_type_author_hint_raw": "no_go",
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
-  "deps": [
-    "dm_pmns_ne_seed_surface_exact_source_manifold_theorem_note_2026-04-20",
-    "dm_pmns_local_selector_family_no_go_theorem_note_2026-04-20"
-  ],
+  "deps": [],
   "direct_in_degree": 0,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
@@ -65,7 +62,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "4b3774628332f017594e26bb3f92212617cf3c260801cc8a65e16003a2915a3f",
+  "note_hash": "754272ef836789f2a09172ce02a41ba287fd4d854dd7bcbc68b626d23b47be18",
   "note_path": "docs/DM_PMNS_Z3_DOUBLET_BLOCK_CENTER_POSITIVE_SHEET_NO_GO_THEOREM_NOTE_2026-04-20.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -184,7 +181,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_dm_pmns_z3_doublet_block_center_positive_sheet_no_go_2026_04_20.py",
-  "title": "DM PMNS `Z_3` Doublet-Block Center Positive-Sheet No-Go Theorem",
+  "title": "Z3 doublet-block center: finite search diagnostic",
   "transitive_descendants": 0,
   "verdict_rationale": null
 }

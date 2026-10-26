@@ -23,10 +23,10 @@ What the current repo supports is weaker:
   lane;
 - there is an explicit **positive structured model class** realizing the
   desired `dW_e^H` responses;
-- but there is still no theorem that the gauge-side parent is already the same
+- but these cited inputs do not establish that the gauge-side parent is the same
   object as the fermion-weighted retained parent used on the strong-CP side,
   no theorem-grade framework-point operator data fixing a unique parent
-  descendant at `beta = 6`, and no Wilson-native map from that parent into
+  descendant at `beta = 6`, and do not themselves derive a Wilson-native map from that parent into
   `I_e / P_e` or `dW_e^H`.
 
 So for the DM attack, the phrase "Wilson parent" should currently be read as:
@@ -57,7 +57,7 @@ From [STRONG_CP_THETA_ZERO_NOTE.md](./STRONG_CP_THETA_ZERO_NOTE.md):
 
 Those are not the same formula.
 
-The current repo does **not** yet contain an exact theorem saying:
+The cited formulas alone do not establish:
 
 - the fermion-weighted retained partition also factors through the same
   one-clock transfer object `T_(L_s,beta)`,
@@ -133,19 +133,7 @@ From [SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md](./SITE_PHASE_CUBE_SHIFT_INTERTW
 - the exact support intertwiner has a safe role only as support transport on
   the taste-cube / BZ-corner side.
 
-From
-[DM_WILSON_TO_DWEH_HERMITIAN_SOURCE_FAMILY_CURRENT_BANK_BOUNDARY_NOTE_2026-04-18.md](./DM_WILSON_TO_DWEH_HERMITIAN_SOURCE_FAMILY_CURRENT_BANK_BOUNDARY_NOTE_2026-04-18.md):
-
-- current `main` still has no theorem-grade Wilson-to-`dW_e^H` descendant law,
-- and no Wilson Hermitian source family realizing that codomain.
-
-So the current load-bearing absence is still exactly:
-
-- one theorem-grade Wilson-to-charged Hermitian descendant map.
-
-That means the Wilson parent is not failing because it is false. It is failing
-because the repo still has no exact theorem carrying it into the charged DM
-codomain.
+The generic Wilson current-bank note is a documentary inventory, not an absence theorem. It cannot prove that a Wilson-to-charged map is missing throughout the repository. The supported limitation is local: the supplied model realization and source-response calculations do not themselves derive that physical map. Whether another route supplies it requires separate substantive review.
 
 ## Theorem 1: safe current-stack interpretation of the Wilson parent for the DM route
 
@@ -156,15 +144,14 @@ Assume:
 3. the exact conditional supplied-`D` source-sector formula and the
    Perron/Jacobi underdetermination results;
 4. the exact structured model realization note for the DM branch;
-5. the exact current-bank boundary note excluding an existing
-   Wilson-to-`dW_e^H` descendant theorem.
+5. no absence or exhaustiveness premise from the documentary current-bank note.
 
 Then the strongest safe current-stack statement is:
 
 - the repo has an exact **partial gauge-side Wilson parent template** with
   real operator-first value for theorem shape and positivity grammar,
 
-but it does **not** yet have:
+but these supplied inputs do **not** establish:
 
 - a fully validated cross-sector Wilson parent already specific enough to be
   treated as the DM charged parent,
@@ -219,7 +206,7 @@ There are now two honest positive continuations:
    microscopic charged block, without assuming the stronger parent story
    upfront.
 
-Those are the two routes that remain positive **and** audit-clean.
+These are two proposed directions, not an exhaustive or independently audit-approved list.
 
 ## What this closes
 

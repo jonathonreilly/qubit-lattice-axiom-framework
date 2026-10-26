@@ -1,6 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/propagator_family_scaffold_bridge.py
-runner_sha256: 01b32e2b6d8d48cbf475c8d0180a7029a3ac6fa93087f17be68e3868fc8a70b0
+runner_sha256: cbf763734c3e87a7146e74a122d7b644573d7af90a1cf09e84ed1d8598816dba
+input_fingerprint_sha256: 7570b36df7e68d76d74da127cb31e89f930e5f0db26f644951014ac176f5a327
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05

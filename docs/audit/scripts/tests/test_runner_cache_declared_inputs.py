@@ -121,6 +121,39 @@ class DeclaredInputFreshnessTest(unittest.TestCase):
         )
         self.assertIsNone(rc.cache_excerpt_for_audit(self.runner))
 
+    def test_silent_success_is_not_audit_evidence(self) -> None:
+        for stdout in ("", " \n\t"):
+            with self.subTest(stdout=stdout):
+                cache = rc.write_cache(self.runner, dict(self.result, stdout=stdout))
+                self.assertEqual(rc.cache_status(self.runner), "fresh")
+                self.assertEqual(rc.parse_cache_header(cache.read_text())["exit_code"], "0")
+                self.assertEqual(rc.cache_audit_evidence_issue(self.runner), "audit_stdout_empty")
+                self.assertIsNone(rc.cache_excerpt_for_audit(self.runner))
+
+    def test_malformed_transcript_is_not_audit_evidence(self) -> None:
+        cache = rc.write_cache(self.runner, dict(self.result))
+        text = cache.read_text()
+        for marker in ("----- stdout -----", "----- stderr -----"):
+            with self.subTest(marker=marker):
+                cache.write_text(text.replace(marker, "missing delimiter"))
+                self.assertEqual(rc.cache_audit_evidence_issue(self.runner), "audit_transcript_malformed")
+                self.assertIsNone(rc.cache_excerpt_for_audit(self.runner))
+        cache.write_text(text)
+        self.assertIsNone(rc.cache_audit_evidence_issue(self.runner))
+        self.assertIn("PASS", rc.cache_excerpt_for_audit(self.runner))
+
+    def test_ambiguous_delimiters_cannot_turn_stderr_into_stdout(self) -> None:
+        cases = (
+            ("", "diagnostic\n----- stderr -----\nrest"),
+            ("PASS\n----- stdout -----\nextra", ""),
+        )
+        for stdout, stderr in cases:
+            with self.subTest(stdout=stdout, stderr=stderr):
+                rc.write_cache(self.runner, dict(self.result, stdout=stdout, stderr=stderr))
+                self.assertEqual(rc.cache_status(self.runner), "fresh")
+                self.assertEqual(rc.cache_audit_evidence_issue(self.runner), "audit_transcript_malformed")
+                self.assertIsNone(rc.cache_excerpt_for_audit(self.runner))
+
     def test_invalid_or_missing_declared_input_cannot_be_cached(self) -> None:
         (self.root / self.runner).write_text(
             "AUDIT_INPUT_PATHS = ('docs/missing.md',)\n",

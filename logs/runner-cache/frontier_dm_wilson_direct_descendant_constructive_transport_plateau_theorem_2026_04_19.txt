@@ -3,7 +3,7 @@ runner: scripts/frontier_dm_wilson_direct_descendant_constructive_transport_plat
 runner_sha256: d819721684be26260c63956d5d9d6171f83aef1a35971d351436f6d3a8fcf80e
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 2.82
+elapsed_sec: 8.47
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -21,16 +21,16 @@ PART 2: THREE ADDITIONAL NUMERICAL INTERIOR CANDIDATES
 ========================================================================================
   [PASS] W0 stays strictly inside gamma > 0, E1 > 0, E2 > 0  (min sign margin=0.150147244666)
   [PASS] W0 attains the matching eta_1 values within tolerance as the constructive witness  (eta_1=1.052220313052)
-  [PASS] W0 has a small finite-difference gradient residual on the fixed seed surface  (||grad eta_1||=4.864e-08)
+  [PASS] W0 has a small finite-difference gradient residual on the fixed seed surface  (||grad eta_1||=4.860e-08)
   [PASS] W1 stays strictly inside gamma > 0, E1 > 0, E2 > 0  (min sign margin=0.098758874797)
   [PASS] W1 attains the matching eta_1 values within tolerance as the constructive witness  (eta_1=1.052220313052)
   [PASS] W1 has a small finite-difference gradient residual on the fixed seed surface  (||grad eta_1||=3.884e-07)
   [PASS] W2 stays strictly inside gamma > 0, E1 > 0, E2 > 0  (min sign margin=0.090366396107)
   [PASS] W2 attains the matching eta_1 values within tolerance as the constructive witness  (eta_1=1.052220313052)
-  [PASS] W2 has a small finite-difference gradient residual on the fixed seed surface  (||grad eta_1||=1.270e-07)
+  [PASS] W2 has a small finite-difference gradient residual on the fixed seed surface  (||grad eta_1||=1.272e-07)
   [PASS] W3 stays strictly inside gamma > 0, E1 > 0, E2 > 0  (min sign margin=0.059339947995)
   [PASS] W3 attains the matching eta_1 values within tolerance as the constructive witness  (eta_1=1.052220313052)
-  [PASS] W3 has a small finite-difference gradient residual on the fixed seed surface  (||grad eta_1||=1.642e-07)
+  [PASS] W3 has a small finite-difference gradient residual on the fixed seed surface  (||grad eta_1||=1.643e-07)
 
 ========================================================================================
 PART 3: THE SAMPLED CANDIDATES HAVE DISTINCT OBSERVABLES

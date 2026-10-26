@@ -1,58 +1,34 @@
-# DM Shifted Relative-Action Comparison on a Finite Recovered Packet
+# Supplied shifted-relative-action finite packet diagnostic
 
-**Date:** 2026-04-21; scope corrected 2026-10-21
-**Type:** bounded_theorem
-**Status:** conditional numerical support; physical selector and DM closure open.
+**Type:** open_gate
+**Date:** 2026-04-21
+**Status:** finite supplied numerical comparisons; physical selection open
 **Primary runner:** `scripts/frontier_dm_selector_shifted_relative_action_recovered_packet_closure_2026_04_21.py`
 
-## Supplied construction
+## Supplied construction and premises
 
-Take the supplied seed matrix `H_seed` and finite recovered bank of five matrices `H_i`. Adopt the objective
-
-```text
-S_rel(H || H_seed) = Tr(H_seed^(-1) H) - log det(H_seed^(-1) H) - 3.
-```
-
-Its positive-cone matrix identity does not derive a physical minimization rule. The upstream off-seed source uses local numerical optimization and an imposed `eta/eta_obs=1` equality. It is neither an independent yield prediction nor an exact, unique physical selector.
-
-For comparison windows where both shifted arguments are positive definite, define
+The five recovered lifts, fixed `H_SEED`, repairs and `SHIFT_OFFSETS` are supplied inputs. For each tested common shift, stipulate `A_mu(H)=H+mu I` and the scalar
 
 ```text
-A_mu(H) = H + mu I,
-S_mu(H || H_seed) = Tr(A_mu(H_seed)^(-1) A_mu(H))
-                   - log det(A_mu(H_seed)^(-1) A_mu(H)) - 3.
+S_mu(H || H_seed)
+ = Tr(A_mu(H_seed)^(-1) A_mu(H))
+   - log det(A_mu(H_seed)^(-1) A_mu(H)) - 3.
 ```
 
-The shift must make the seed and every compared bank matrix positive definite. A sufficient condition is `mu > max(-lambda_min(H_seed), max_i[-lambda_min(H_i)])`. The chosen shifts and numerical implementation remain supplied inputs, not physical principles.
+Using this formula on positive-definite windows is a specified mathematical construction; neither the formula's physical selection nor positivity for an arbitrary physical source follows from documentary text. The runner retains its original floating implementation and all failure conditions. The seed and bank are not derived here.
 
-## Finite numerical comparison
+## Finite checks
 
-The paired runner evaluates this objective on the five recovered lifts at its named `SHIFT_OFFSETS` and finite stress-sweep shifts. In those tested comparisons it reports:
+The runner compares all five bank entries for each supplied `SHIFT_OFFSETS` value above the computed `mu_floor=max_i repair(H_i)`. It also compares the same entries at sixty points from three original `linspace` grids, and at one additional point `mu_floor+1e6`. The grids, repeated endpoints, scalar implementation, argmin tie behavior, margins (`1e-9`, and `1e-18` at the far point) and sign predicates are unchanged.
 
-- lift0 is the unique minimizer within the finite bank, with positive numerical gaps;
-- the same index persists at the sampled stress shifts;
-- lift0 is also the unique recovered-bank point on the positive side of the supplied doublet-block sign boundary `Im(K_Z3[1,2])=0`.
+These checks report whether lift 0 has the smallest floating value at those points. Sixty samples are not a continuum interval proof; one large-shift value is not an asymptotic theorem. Exact minimizer/sign claims require separate numerical enclosures or analytical proof. No absent competitor outside the supplied bank is excluded.
 
-These are finite numerical comparisons. A dense sample does not establish all-shift persistence, a global source-space minimizer, or a physical selector. The label “same law” means that the same analytic logdet expression was adopted after shifting; it does not show that the shift or minimization prescription is forced.
+The same runner computes `Im(K_Z3[1,2])` on the five entries and compares the positive-sign entry with the sampled scalar minimizer. This is a finite supplied-table correlation, not a physical selection mechanism.
 
-## Dependencies and interpretation
+## Documentary dependencies and withdrawn authority
 
-The relative-action source, recovered bank, projection metrics and sign map are supplied by the cited packets below. The repaired relative-action and recovered-branch notes supply numerical source/comparison definitions, not exact selector authority. The same finite-index agreement can be useful for a later hypothesis about source selection, but it cannot close the DM flagship lane or eliminate the native A-BCC physical residual.
+The relative-action, projection and shifted-sign notes are read as documentary context. Their historical exact/canonical-selector statements are not proof premises for these computations. The current projection and sign diagnostics distinguish finite supplied calculations from earlier stronger prose. Substring checks report text only. The former literal-True transport narration is unscored.
 
-Open obligations include the physical generator/readout, the minimization and shift prescriptions, source-chart admissibility, point selection beyond the finite bank, and any continuum-of-shifts or exact uniqueness certificate. This note does not inherit physical closure from an empirical target-surface fit or an interval claim elsewhere.
+The [independent finite owner](DM_SELECTOR_SUPPLIED_BANK_SEED_RELATIVE_ACTION_FINITE_DIAGNOSTIC_NOTE_2026-10-23.md) provides the self-contained supplied-bank comparison scope; this older integrated reader additionally checks documentary context. Neither owner establishes a physical law. The source-cubic companion's supplied rows do not constitute complete exact-target enumeration or derive a positivity selector.
 
-## Recovery and verification
-
-The older “current-package selector residue closed” and “DM flagship lane closed” claims are withdrawn. They are recoverable at Git revision `f24d17d97d372df977476e4a69674577f31af575` under this note's path.
-
-Run `PYTHONPATH=scripts python3 scripts/frontier_dm_selector_shifted_relative_action_recovered_packet_closure_2026_04_21.py`. The revised finite numerical companion reports `PASS=10 FAIL=0`, including positivity of all compared matrices at the tested shifts. Obsolete prose-endorsement checks were removed; no failed numerical predicate was removed or relaxed. This does not certify physical selection.
-
-## Audit dependency repair links
-
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
-
-- [dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16](DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md)
-- [dm_selector_relative_action_recovered_branch_separation_support_theorem_note_2026-04-21](DM_SELECTOR_RELATIVE_ACTION_RECOVERED_BRANCH_SEPARATION_SUPPORT_THEOREM_NOTE_2026-04-21.md)
-- [dm_selector_relative_action_recovered_projection_support_theorem_note_2026-04-21](DM_SELECTOR_RELATIVE_ACTION_RECOVERED_PROJECTION_SUPPORT_THEOREM_NOTE_2026-04-21.md)
-- [dm_selector_shifted_doublet_imag_sign_support_theorem_note_2026-04-21](DM_SELECTOR_SHIFTED_DOUBLET_IMAG_SIGN_SUPPORT_THEOREM_NOTE_2026-04-21.md)
-- [dm_abcc_exact_target_surface_source_cubic_closure_theorem_note_2026-04-21](DM_ABCC_EXACT_TARGET_SURFACE_SOURCE_CUBIC_CLOSURE_THEOREM_NOTE_2026-04-21.md)
+The earlier claim that an exact/canonical closure stack and threshold law are all thereby justified is withdrawn. Physical branch choice, bank provenance, selector normalization, continuum inequalities and complete source coverage remain open. Original source/cache bytes and stronger claims remain in predecessor `e9bf37ecba6baed5aa02bc52980c5e7d97241d1d` and external repair recovery; old PASS counts are historical, not current authority.

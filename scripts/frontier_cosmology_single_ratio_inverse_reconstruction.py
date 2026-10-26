@@ -12,7 +12,11 @@ Scope:
 
 from __future__ import annotations
 
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = ['docs/CANONICAL_HARNESS_INDEX.md', 'docs/COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md', 'docs/COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md', 'docs/COSMOLOGY_SINGLE_RATIO_INVERSE_RECONSTRUCTION_THEOREM_NOTE_2026-04-25.md', 'docs/DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md', 'docs/OMEGA_LAMBDA_MATTER_BRIDGE_THEOREM_NOTE_2026-04-22.md', 'archive/publication/ci3_z3/CLAIMS_TABLE.md', 'archive/publication/ci3_z3/DERIVATION_ATLAS.md', 'archive/publication/ci3_z3/DERIVATION_VALIDATION_MAP.md', 'archive/publication/ci3_z3/FULL_CLAIM_LEDGER.md', 'archive/publication/ci3_z3/PUBLICATION_MATRIX.md', 'archive/publication/ci3_z3/README.md', 'archive/publication/ci3_z3/REPRODUCE.md', 'archive/publication/ci3_z3/RESULTS_INDEX.md', 'archive/publication/ci3_z3/SCIENCE_MAP.md', 'archive/publication/ci3_z3/WHAT_THIS_PAPER_DOES_NOT_CLAIM.md', 'archive/ledger/pu/publication_ci3_z3_deferred_package.json']
+
 import sys
+import json
 from pathlib import Path
 
 import sympy as sp
@@ -67,7 +71,7 @@ def audit_authorities() -> None:
     authorities = (
         (
             "docs/COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md",
-            ("retained/admitted", "structural"),
+            ("conditional", "structural"),
         ),
         (
             "docs/OMEGA_LAMBDA_MATTER_BRIDGE_THEOREM_NOTE_2026-04-22.md",
@@ -75,11 +79,11 @@ def audit_authorities() -> None:
         ),
         (
             "docs/DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md",
-            ("retained", "structural"),
+            ("conditional", "supplied"),
         ),
         (
             "docs/COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md",
-            ("retained", "structural"),
+            ("structural",),
         ),
     )
 
@@ -89,7 +93,7 @@ def audit_authorities() -> None:
         print(f"  {Path(rel_path).name}: {status!r}")
         status_low = status.lower()
         check(
-            f"authority status carries {', '.join(required)}: {Path(rel_path).name}",
+            f"documentary premise label carries {', '.join(required)}: {Path(rel_path).name}",
             bool(content) and all(token in status_low for token in required),
         )
 
@@ -199,23 +203,36 @@ def audit_package_wiring() -> None:
     runner = "frontier_cosmology_single_ratio_inverse_reconstruction.py"
     surfaces = (
         ("docs/CANONICAL_HARNESS_INDEX.md", (note, runner)),
-        ("docs/publication/ci3_z3/CLAIMS_TABLE.md", (note,)),
-        ("docs/publication/ci3_z3/DERIVATION_VALIDATION_MAP.md", (note, runner)),
-        ("docs/publication/ci3_z3/DERIVATION_ATLAS.md", (note, runner)),
-        ("docs/publication/ci3_z3/FULL_CLAIM_LEDGER.md", (note,)),
-        ("docs/publication/ci3_z3/PUBLICATION_MATRIX.md", (note, runner)),
-        ("docs/publication/ci3_z3/RESULTS_INDEX.md", (note, runner)),
-        ("docs/publication/ci3_z3/SCIENCE_MAP.md", (note, runner)),
-        ("docs/publication/ci3_z3/README.md", (note,)),
-        ("docs/publication/ci3_z3/REPRODUCE.md", (runner,)),
-        ("docs/publication/ci3_z3/WHAT_THIS_PAPER_DOES_NOT_CLAIM.md", (note,)),
+        ("archive/publication/ci3_z3/CLAIMS_TABLE.md", (note,)),
+        ("archive/publication/ci3_z3/DERIVATION_VALIDATION_MAP.md", (note, runner)),
+        ("archive/publication/ci3_z3/DERIVATION_ATLAS.md", (note, runner)),
+        ("archive/publication/ci3_z3/FULL_CLAIM_LEDGER.md", (note,)),
+        ("archive/publication/ci3_z3/PUBLICATION_MATRIX.md", (note, runner)),
+        ("archive/publication/ci3_z3/RESULTS_INDEX.md", (note, runner)),
+        ("archive/publication/ci3_z3/SCIENCE_MAP.md", (note, runner)),
+        ("archive/publication/ci3_z3/README.md", (note,)),
+        ("archive/publication/ci3_z3/REPRODUCE.md", (runner,)),
+        ("archive/publication/ci3_z3/WHAT_THIS_PAPER_DOES_NOT_CLAIM.md", (note,)),
     )
 
+    ledger = json.loads(read_text("archive/ledger/pu/publication_ci3_z3_deferred_package.json"))
+    check("owner-deferral provenance identifies archived publication package",
+          ledger.get("status") == "archived"
+          and ledger.get("source", {}).get("moved_to") == "archive/publication/ci3_z3")
+    historical_present = historical_absent = 0
     for rel_path, needles in surfaces:
         content = read_text(rel_path)
         missing = [needle for needle in needles if needle not in content]
-        print(f"  {rel_path}: {'OK' if not missing else 'MISSING ' + ', '.join(missing)}")
-        check(f"package surface wired: {rel_path}", not missing)
+        if rel_path == "docs/CANONICAL_HARNESS_INDEX.md":
+            check("canonical live inverse note/runner wiring", bool(content) and not missing)
+            continue
+        # File existence remains fail-closed; omitted historical links are
+        # observations, never scientific PASS or restored publication authority.
+        check(f"archived source readable: {rel_path}", bool(content))
+        historical_present += int(not missing)
+        historical_absent += int(bool(missing))
+        print(f"HISTORICAL_{'ABSENT' if missing else 'PRESENT'} {rel_path}: missing={missing}")
+    print(f"HISTORICAL_WIRING: present={historical_present} absent={historical_absent}; not scientific coverage")
 
 
 def main() -> int:

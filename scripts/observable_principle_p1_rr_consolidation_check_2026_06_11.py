@@ -61,9 +61,8 @@ untouched and not absorbed.
 Walls respected (string-checked + structurally): the record-scalar-map
 no-go (RR stays declared, the middle arrow is never derived); the
 count-probability firewall (no probability law anywhere — every
-sensitivity is an operator norm); the record-formation no-go (RR
-conditions on the realization, it does not force records to form; the
-class may be empty); the clock/rate interface no-go ((REG-tau) is kept a
+sensitivity is an operator norm); the current formation boundary (Record occurrence is supplied; the specific
+RR production realization is not constructed here); the clock/rate interface no-go ((REG-tau) is kept a
 separate supplied-clock clause precisely because the window's meaning
 needs the supplied clock map); the canonical-proposal no-dynamics
 guardrail (RR is a declared realization clause, not a derivation that
@@ -82,6 +81,9 @@ Expected: TOTAL: PASS=30 FAIL=0
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ('docs/OBSERVABLE_PRINCIPLE_P1_REGISTRATION_REALIZATION_PIN_CONSOLIDATION_NARROW_THEOREM_NOTE_2026-06-11.md', 'docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md', 'docs/OBSERVABLE_PRINCIPLE_P1_BR_LICENSE_FROM_RECORD_CAPACITY_NARROW_NO_GO_NOTE_2026-06-10.md', 'docs/OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026-06-10.md', 'docs/OBSERVABLE_PRINCIPLE_RECORD_SCALAR_MAP_NO_GO_NOTE_2026-06-05.md', 'docs/POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md', 'docs/POST_RECORD_COUNT_PROBABILITY_FIREWALL_2026-06-06.md', 'docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md', 'docs/RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md')
 
 import itertools
 import json
@@ -633,33 +635,24 @@ cpf = read(os.path.join(REPO, "docs", "POST_RECORD_COUNT_PROBABILITY_FIREWALL_20
 check("B", "count-probability firewall: 'They cannot derive the model.' present verbatim; the note constructs no probability law (string present) and every sensitivity in this runner is an operator norm — counts appear only as exact witness arithmetic", ("They cannot derive the model." in norm_ws(cpf)) and ("no probability law is constructed" in note_ws))
 
 rfn = read(os.path.join(REPO, "docs", "RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md"))
-check("B", "record-formation wall: the retained_no_go's claim ('does **not** hold unconditionally') present verbatim; the note states RR conditions on the realization and does not force records to form (the class may be empty)", ("does **not** hold unconditionally" in norm_ws(rfn)) and ("does not force records to form" in note_ws) and ("may be empty" in note_ws or "may, for all the axioms care, be empty" in note_ws))
+check("B", "current formation boundary: occurrence and local conditional distribution supplied; production realization remains open",
+      "The current memo supplies occurrence and a local conditional distribution." in norm_ws(rfn)
+      and "Those are open construction tasks" in norm_ws(rfn)
+      and "RR remains declared" in note_ws)
+
 
 canon = read(os.path.join(REPO, "docs", "RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md"))
 check("B", "canonical-proposal no-dynamics guardrail: 'it disclaims the decoherence *process* that produces it' present verbatim in the proposal note; RR is a declared realization clause, not a derivation forcing record formation on any partition", ("disclaims the decoherence *process* that produces it" in norm_ws(canon)) and ("declared" in note_ws))
 
-with open(os.path.join(REPO, "docs", "audit", "data", "audit_ledger.json"), "r", encoding="utf-8") as fh:
-    ledger_rows = json.load(fh)["rows"]
-rows = {
-    "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "retained_bounded",
-    "record_function_finite_sector_algebra_2026-06-05": "retained",
-    "record_unbounded_finite_additivity_schema_2026-06-06": "audited_conditional",
-    "post_record_clock_rate_interface_2026-06-06": "retained_no_go",
-    "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06": "retained_no_go",
-    "observable_principle_record_scalar_map_no_go_note_2026-06-05": "retained_no_go",
-    "post_record_count_probability_firewall_2026-06-06": "retained_no_go",
-    "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10": "retained",
-}
-bad_rows = []
-for rid, want in rows.items():
-    got = ledger_rows.get(rid, {}).get("effective_status")
-    if got != want:
-        bad_rows.append((rid, got, want))
+# Historical ledger grade assertions are not mathematical premises. The
+# 2026-06-11 snapshot remains in the recovered source; no current grade is
+# required or inferred by this conditional numerical/documentary runner.
 capk_note = read(os.path.join(REPO, "docs", "OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026-06-10.md"))
 capk_ws = norm_ws(capk_note)
 capk_ok = all(s in capk_ws for s in ["REG-dyn", "REG-tau", "REG-thr", "REG-site", "(CAP-real) remains declared",
                                      "It is the association between the T1-d scalar readout increment and the registered collection"])
-check("B", "cited rows present in the audit ledger at the cited effective statuses (8 rows; unbounded Record audited_conditional); the CAP-K source note is on disk with its four (REG) clause labels, '(CAP-real) remains declared', and the association sentence quoted in this note; the BR-license and canonical-proposal notes are consumed as unaudited sources (presence + wording only, no grade asserted)", (not bad_rows) and capk_ok, f"mismatches={bad_rows}")
+check("B", "CAP-K declared clause source is present; no ledger grade asserted", capk_ok)
+
 
 required = [
     "Status authority:",

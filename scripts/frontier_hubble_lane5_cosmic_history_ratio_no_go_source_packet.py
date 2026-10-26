@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
-"""Source-packet verifier for the Lane 5 cosmic-history-ratio no-go.
+"""Documentary verifier and finite stipulated-rule table for Lane 5.
 
-This runner is not an audit verdict. It packages the narrowed structural
-no-go for independent re-audit by checking that the parent note exposes the
-current dependency anchors, treats the scale-reference primitive as units-only,
-preserves the C1/C2/C3 closure taxonomy, and records the No-Go Discipline
-N1-N8 gate.
+No physical route exhaustion or framework non-derivability is established.
+The numerical Boolean model checks its definition, not physical necessity.
+This runner records no audit verdict or N1-N8 approval.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = ('docs/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md', 'docs/COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md', 'docs/OMEGA_LAMBDA_DERIVATION_NOTE.md', 'docs/COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md', 'docs/OMEGA_LAMBDA_MATTER_BRIDGE_THEOREM_NOTE_2026-04-22.md', 'docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md', 'docs/HUBBLE_LANE5_PLANCK_C1_GATE_AUDIT_NOTE_2026-04-26.md', 'docs/HUBBLE_LANE5_ETA_RETIREMENT_GATE_AUDIT_NOTE_2026-04-26.md')
 
 from dataclasses import dataclass
 import itertools
@@ -88,22 +89,14 @@ def part1_packet_metadata() -> None:
     check("parent note exists", (ROOT / PARENT).exists(), PARENT)
     check("parent declares this primary runner", RUNNER in parent)
     check("parent declares this runner cache", CACHE in parent)
-    check(
-        "parent remains a no-go/program-boundary source note",
-        "support no-go / program-boundary note on `main`" in parent_norm
-        and "**Claim type:** no_go" in parent,
-    )
-    check(
-        "parent scope is baseline plus units primitive",
-        "current framework baseline plus that primitive" in parent_norm
-        and "does not supply the dimensionless scale-route" in parent_norm,
-    )
-    check(
-        "parent records no audit verdict",
-        "independent audit lane only" in parent_norm
-        and "records no audit verdict" in parent_norm
-        and "does not retire any of those premises" in parent_norm,
-    )
+    check("parent is an open route inventory", "**Claim type:** open_gate" in parent
+          and "former necessity no-go is withdrawn" in parent_norm)
+    check("parent distinguishes conditional family from axiom independence",
+          "independently free positive parameters" in parent_norm
+          and "does not prove independence" in parent_norm)
+    check("parent records no audit verdict or retired premises",
+          "records no audit verdict" in parent_norm
+          and "does not retire any of those premises" in parent_norm)
 
 
 def part2_registered_dependencies() -> None:
@@ -167,10 +160,10 @@ def part2_registered_dependencies() -> None:
         and "does not treat the scale-reference primitive as a Planck import or bounded-status source" in c1_gate_norm,
     )
     check(
-        "C2 gate note remains an open eta-retirement gate",
-        "support gate-identification note on `main`" in c2_gate
-        and "does not derive that selector" in c2_gate
-        and "scale route" in c2_gate,
+        "C2 inventory leaves selector/yield open and withdraws exact-support inference",
+        "documentary route inventory" in c2_gate
+        and "withdraws its former reliance" in c2_gate
+        and "failed proof obligation" in c2_gate,
     )
     check(
         "parent prose names current dependency authorities",
@@ -204,7 +197,7 @@ def part3_closure_taxonomy() -> None:
     nonclosed = [p for p in packets() if not p.closes_h0()]
 
     print("  closure rule (bookkeeping over the REVIEWED routes, NOT a proof of exhaustive coverage):")
-    print("    H0 closes iff C1 and (C2 or C3)")
+    print("    stipulated closure flag = C1 and (C2 or C3)")
     print("  rule: scale-reference primitive is a units conversion, not C1")
     for p in packets():
         print(
@@ -213,152 +206,52 @@ def part3_closure_taxonomy() -> None:
             f"-> L={p.closes_l()} H0={p.closes_h0()}"
         )
 
-    check("parent states C1 scale route is required", "**(C1) scale route** [REQUIRED]" in parent)
-    check("parent states the scale primitive is not C1", "The primitive is a ruler, not the C1 route" in parent)
-    check("parent states one of C2/C3 is required for L", "(C2) cosmic-history-ratio" in parent and "(C3) direct cosmic-`L`" in parent)
-    check("parent frames C1/C2/C3 as a bookkeeping taxonomy of reviewed routes (not exhaustive)", "bookkeeping taxonomy of the currently" in parent and "not a proof that no other route exists" in parent)
-    check("only packets with C1 and one L-class close H0", len(closed) == 3 and all(p.c1_scale_route and p.closes_l() for p in closed))
-    check("C1 alone fails because L remains open", not ClosureClassPacket(True, False, False).closes_h0())
-    check("C2/C3 without C1 fail because the scale route remains open", all(not p.closes_h0() for p in nonclosed if not p.c1_scale_route))
-    check(
-        "parent route map assigns reviewed routes into C1/C2/C3 taxonomy",
-        "R6" in parent_norm
-        and "R5" in parent_norm
-        and "future direct `Omega_Lambda`" in parent_norm,
-    )
+    check("parent names separated-input route inventory",
+          "(C1) absolute-scale route" in parent and "(C2) cosmic-history-ratio retirement" in parent
+          and "(C3) direct cosmic-`L` derivation" in parent)
+    check("parent keeps units separate from C1", "The primitive is a ruler, not the C1 route" in parent)
+    check("parent marks rule as stipulated and non-exhaustive",
+          "the stipulated rule" in parent and "not an exhaustive classification of physical routes" in parent_norm)
+    check("three packets satisfy the stipulated C1-and-L rule", len(closed) == 3 and all(p.c1_scale_route and p.closes_l() for p in closed))
+    check("C1 alone does not satisfy the stipulated rule", not ClosureClassPacket(True, False, False).closes_h0())
+    check("packets without C1 do not satisfy the stipulated rule", all(not p.closes_h0() for p in nonclosed if not p.c1_scale_route))
 
 
-def part4_no_go_discipline() -> None:
-    section("Part 4: no-go discipline gate")
-    parent = read(PARENT)
-
-    for marker in [
-        "**N1 - Alternative route enumeration.** PASS",
-        "**N2 - Wall-independence audit.** PASS",
-        "**N3 - Hidden-wall scan.** PASS",
-        "**N4 - Residual matching.** PASS",
-        "**N5 - Rhetoric audit.** PASS",
-        "**N6 - Partial-closure path scan.** PASS",
-        "**N7 - Steelman.** PASS",
-        "**N8 - Cross-cycle echo.** PASS",
-    ]:
-        check(f"{marker.split(' - ')[0].strip('*')}: present", marker in parent)
-
-    check(
-        "N1 names at least five distinct routes",
-        all(f"{i}." in parent for i in range(1, 7))
-        and "Units-only scale primitive route" in parent
-        and "Open-number/Hubble-lock route" in parent,
-    )
-    check(
-        "N6 preserves partial closure paths and primitive boundary",
-        "coframe/action-unit gate" in parent
-        and "eta-retirement gate" in parent
-        and "not counted as a missing axiom" in parent,
-    )
-    check(
-        "gate result is narrowed rather than anti-C1/C2/C3",
-        "PASS for the narrowed no-go" in parent
-        and "not a no-go against the live" in parent,
-    )
+def part4_scope_boundary() -> None:
+    section("Part 4: documentary scope and open proof obligations")
+    parent = normalize(read(PARENT))
+    check("parent withdraws non-derivability inference",
+          "That inference is withdrawn" in parent and "No framework-wide non-derivability theorem is established" in parent)
+    check("parent keeps a joint-relation alternative open",
+          "H_inf = k sqrt(L)" in parent and "H_0=k" in parent
+          and "not a derivation of that physical relation" in parent)
+    check("parent distinguishes partial C2 retirement from L closure",
+          "not full `L` closure" in parent and "complete L-supplying cascade premise" in parent)
+    check("parent names the missing independence proof",
+          "independence/underdetermination proof" in parent and "provides no such proof" in parent)
+    check("parent withdraws no-go certification",
+          "No N1–N8 PASS certificate" in parent and "Literal source checks verify documentary consistency only" in parent)
 
 
-def part5_no_go_boundary() -> None:
-    section("Part 5: no-go boundary and falsifier")
-    parent = read(PARENT)
-    parent_norm = normalize(parent)
-
-    check(
-        "scale-route no-go is scoped to baseline plus units primitive",
-        "current framework baseline plus the scale-reference primitive" in parent_norm
-        and "does not derive the dimensionless scale-route content" in parent_norm,
-    )
-    check(
-        "cosmic-history-ratio no-go is scoped to baseline plus units primitive",
-        "does not derive the dimensionless ratio `L = (H_inf / H_0)^2`" in parent_norm
-        and "cosmic-history layer" in parent,
-    )
-    check(
-        "falsifier targets baseline-plus-units-primitive counterexample",
-        "falsified if a candidate Lane 5 closure is exhibited" in parent
-        and "current framework baseline plus the\nscale-reference primitive" in parent,
-    )
-    check(
-        "boundary names classification, not premise retirement",
-        "It does not retire any input; it classifies what retirement requires" in parent_norm,
-    )
-    check(
-        "boundary says C1/C2/C3 remain live",
-        "does not claim that any of `(C1), (C2), (C3)` is impossible" in parent_norm,
-    )
-
-
-def n5_execution_certificate() -> None:
-    """State what this source packet resolves at each canonical granularity.
-
-    Print-only; no check() call is made, so PASS_COUNT/FAIL_COUNT are
-    untouched.  The taxonomy is re-enumerated from the same packets().
-    """
-    section("N5 execution certificate: resolution granularity of this source packet")
-    all_packets = packets()
-    closed = [p for p in all_packets if p.closes_h0()]
-    without_c1 = [p for p in all_packets if not p.c1_scale_route]
-    print(
-        f"per_element: checked — the packet is verified item by item rather than by summary assertion: "
-        f"each of the {len(DEPENDENCIES)} declared dependency authorities is resolved individually on two "
-        "separate conditions, that the parent links it by claim_id and that its file exists on disk, and "
-        "each of the eight N1-N8 discipline markers is matched as a literal string in the parent. A single "
-        f"missing element would fail on its own line rather than be absorbed into the {PASS_COUNT} total."
-    )
-    print(
-        "per_site: checked and not executed — no lattice is instantiated and no site is addressed; the "
-        "object under discussion, the cosmic-history ratio L = (H_inf/H_0)^2, is a single global number, "
-        "and the scale-reference primitive that would attach a physical length to any site is held to "
-        "units-only status by the parent and by the primitive's own note, which forbids reading it as a "
-        "derived theorem."
-    )
-    print(
-        "per_mode: checked and not executed — nothing here is decomposed into modes; the closest counting "
-        "statement is the open-number theorem's reduction of the late-time variable set to exactly two "
-        "structural degrees of freedom (H_0, L) at fixed R, which is a dimension count over a variable "
-        "list and not a spectral decomposition, so no mode carries part of the obstruction."
-    )
-    print(
-        "per_block: checked — the reviewed routes are grouped into two blocks and the grouping is "
-        "enumerated exhaustively: the required scale-route block C1, and the L-supplying block {C2, C3} "
-        f"where either member alone suffices. All {len(all_packets)} assignments are printed, exactly "
-        f"{len(closed)} of them close H0, every one of those contains C1 together with at least one "
-        f"L-block member, and none of the {len(without_c1)} assignments lacking C1 closes."
-    )
-    print(
-        "lattice_wide: checked and not executed — no lattice-wide, cosmological, or continuum computation "
-        "is performed anywhere in this runner; its whole content is that the current framework baseline "
-        "plus the units-only scale-reference primitive does not derive the dimensionless scale-route "
-        "content or L, and the parent is explicit that this classifies what retirement would require "
-        "while claiming none of C1, C2, C3 impossible."
-    )
+def execution_scope() -> None:
+    section("Execution scope")
+    print(f"Enumerated {len(packets())} Boolean assignments; "
+          f"{sum(p.closes_h0() for p in packets())} satisfy the stipulated rule.")
+    print("Dependency existence and note text were checked; their physical conclusions were not re-proved.")
+    print("No lattice/site/mode/continuum calculation or physical route exhaustion was executed.")
+    print("No N1-N8 certification, input retirement, or audit verdict follows from these checks.")
 
 
 def main() -> int:
     print("=" * 88)
-    print("LANE 5 COSMIC-HISTORY-RATIO NO-GO SOURCE PACKET")
-    print("=" * 88)
-    print()
-    print("Question:")
-    print("  Is the Lane 5 no-go packaged with current premise boundaries,")
-    print("  one-hop authorities, N1-N8 discipline, and a replayable C1/C2/C3")
-    print("  closure taxonomy for independent re-audit?")
-    print()
-    print("Answer:")
-    print("  Yes for source-packet readiness. This runner does not retire C1,")
-    print("  C2, or C3 and does not apply an audit verdict.")
+    print("LANE 5 SEPARATED-INPUT INVENTORY AND STIPULATED BOOLEAN MODEL")
+    print("Checks below concern the finite rule and source wording, not exhaustive physics.")
 
     part1_packet_metadata()
     part2_registered_dependencies()
     part3_closure_taxonomy()
-    part4_no_go_discipline()
-    part5_no_go_boundary()
-    n5_execution_certificate()
+    part4_scope_boundary()
+    execution_scope()
 
     print()
     print("=" * 88)

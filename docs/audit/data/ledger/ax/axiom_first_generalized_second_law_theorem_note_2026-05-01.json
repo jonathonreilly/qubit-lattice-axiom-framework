@@ -16,7 +16,7 @@
   "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
-  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (only the stated conditional algebra; no physical entropy theorem)",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
   "criticality": "medium",
@@ -41,7 +41,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "f2a89a855cca712c2a32c097497b60ff825dc8a746f9f2cea68afb5f55aca2ab",
+  "note_hash": "6decfa1a779243a8244c8fc1f72e93f5a3cf4d50ed34da3733219432f36e5185",
   "note_path": "docs/AXIOM_FIRST_GENERALIZED_SECOND_LAW_THEOREM_NOTE_2026-05-01.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -87,7 +87,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/axiom_first_gsl_check.py",
-  "title": "Axiom-First Generalized Second Law on Framework Surface",
+  "title": "Generalized entropy bookkeeping: boundary of the former GSL claim",
   "transitive_descendants": 13,
   "verdict_rationale": null
 }

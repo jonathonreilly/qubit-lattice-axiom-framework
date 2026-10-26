@@ -68,3 +68,9 @@ chart statements above are retained at their supplied-model scope.
 [Preserved failure evidence](review_evidence/dm-canonical-failures-2026-10-21/manifest.json)
 records the command and source recovery identity. This classification does not
 turn a failed execution into successful evidence.
+
+A 2026-10-26 rerun of the unchanged runner on another platform (Linux x86_64,
+Python 3.13.17, NumPy 2.5.3, SciPy 1.17.1) exited 0 with `PASS=7 FAIL=0`,
+while the canonical cache records the three-candidate failure. The finite
+seeded diagnostic is therefore platform-sensitive. Neither outcome certifies a
+branch count, minimum or selector, and the canonical failed cache is retained.

@@ -323,9 +323,11 @@ eta_pred in [5.25e-10, 8.11e-10]
 
 which brackets `eta_obs = 6.12e-10`. The audit-companion authority
 (P1) `DM_ETA_FREEZEOUT_BYPASS_QUANTITATIVE_THEOREM_NOTE_2026-04-25`
-also records a narrower inherited multi-input/context interval
-`[4.94e-10, 7.24e-10]`. That inherited interval is context only here,
-not the binding band of this row. The present row holds
+formerly recorded a narrower inherited multi-input/context interval
+`[4.94e-10, 7.24e-10]`. Its low/low corner was an arithmetic slip
+(`eta` scales as `x_F / (S_vis/S_dark)`), and its corrected table now gives
+the same `[5.25e-10, 8.11e-10]` rectangle band. That superseded inherited
+interval is context only here, not the binding band of this row. The present row holds
 `alpha_X = alpha_LM` fixed and lets the runner cross-check the (M0)
 arithmetic on the corner points it computes directly.
 
@@ -429,9 +431,12 @@ This open-gate certificate does not close:
   retained_bounded finite-inventory result `g_* = 106.75` is consumed as
   `P5`.
 - The Kolb-Turner prefactor: `K = 1.07e9 GeV^-1` is supplied as `P6`.
-- The PMNS-A13 / `Z_3` doublet-block selector law on the non-bypass
-  route, which is on the live surface retained-no-go per
-  `HUBBLE_LANE5_C2_CKM_PMNS_RIGHT_SENSITIVE_SELECTOR_STRETCH_NOTE_2026-04-29.md`.
+- The physical PMNS-A13 / `Z_3` doublet-block selector, supported branch,
+  and yield/readout on the non-bypass route remain open. The supplied
+  toy-data comparison in
+  `HUBBLE_LANE5_C2_CKM_PMNS_RIGHT_SENSITIVE_SELECTOR_STRETCH_NOTE_2026-04-29.md`
+  neither proves a physical no-go nor closes `eta`; its former stronger
+  attribution is withdrawn here.
 - Any continuum-limit numerical claim such as plaquette, mass, or
   coupling values beyond what is already retained on the cited
   authorities.

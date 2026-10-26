@@ -1,26 +1,8 @@
 #!/usr/bin/env python3
-"""
-Hierarchy dimensional-compression diagnostic.
+"""Finite supplied APBC-matrix arithmetic diagnostic.
 
-Within-scope content (this runner's PASS gates):
-  Pure intra-framework dimensional arithmetic on the staggered Dirac
-  condensate-density ratio R. No PASS gate depends on the imported
-  electroweak observation v_obs or the imported pre-selector value
-  v_pred. The (1/4) D=4 compression exponent and inverse placement are
-  now routed through the 2026-06-16 fixed-density coefficient-to-scale
-  bridge, while the physical VEV readout identification stays outside
-  this parent row.
-
-External-context block (printed, NOT PASS-load-bearing):
-  v_pred = M_Pl * alpha_LM^16, v_obs = 246.22 GeV, and the residual
-  prefactor C_obs = v_obs / v_pred are still emitted so the reader can
-  see why the dimensional-compression direction is of physical
-  interest; explicitly excluded from any PASS condition.
-
-This script does not derive the EW VEV from primitives. The within-
-scope load-bearing content is the PASS-gated arithmetic below; the
-remaining open step is the physical order-parameter/readout
-identification.
+The quartic interpretation is conditional; no physical taste count, endpoint,
+EW scale or audit status is derived. Printed external targets are context only.
 """
 
 from __future__ import annotations
@@ -38,6 +20,8 @@ COMPANION_NOTE_PATH = (
     / "docs"
     / "HIERARCHY_DIMENSIONAL_COMPRESSION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md"
 )
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = ['docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md', 'docs/HIERARCHY_DIMENSIONAL_COMPRESSION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md']
 PASS_COUNT = 0
 FAIL_COUNT = 0
 
@@ -108,35 +92,21 @@ def condensate_density(Ls: int, Lt: int, u0: float, mass: float) -> float:
 
 
 def check_source_firewall() -> None:
-    parent = PARENT_NOTE_PATH.read_text(encoding="utf-8")
+    note = PARENT_NOTE_PATH.read_text(encoding="utf-8")
     companion = COMPANION_NOTE_PATH.read_text(encoding="utf-8")
-    parent_flat = " ".join(parent.split())
-    companion_flat = " ".join(companion.split())
-    check(
-        "source notes preserve parent conditional-support and companion numerical-diagnostic scope",
-        "**Type:** open_gate / conditional-support" in parent
-        and "**Claim type:** open_gate / conditional D=4 arithmetic support" in parent
-        and "proposed_claim_type: open_gate / conditional-support" in parent
-        and "proposal_allowed: false" in parent
-        and "**Type:** bounded_theorem" not in parent
-        and "proposed_claim_type: bounded_theorem" not in parent
-        and "Hierarchy Dimensional Compression Audited-Scope Narrowing Bounded Note" in companion
-        and "**Claim type:** bounded_theorem" in companion
-        and "does not propose a status promotion" in companion_flat
-        and "bounded numerical-diagnostic support note" in companion_flat
-        and "not a derivation of the dimension-4 bridge" in companion_flat,
-    )
-    check(
-        "source notes wire D=4 density-scale bridge while preserving physical VEV boundary",
-        "## 2026-06-16 bridge update: fixed-density map supplied, physical VEV premise still open" in parent
-        and "HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md" in parent
-        and "fixed-density coefficient-to-scale bridge" in parent_flat
-        and "still does not identify the electroweak VEV" in parent_flat
-        and "No new axiom, Tier-A admission, observed target, or audit status" in parent_flat
-        and "bounded numerical-diagnostic support note" in companion_flat
-        and "selected by best-match-to-`C_obs`" in companion
-        and "SCORECARD: 7 pass, 0 fail out of 7" in companion,
-    )
+    flat = " ".join(note.split())
+    check("documentary boundary: finite supplied diagnostic, not taste authority",
+          "**Type:** open_gate" in note
+          and "finite supplied-matrix numerical diagnostic" in note
+          and "previous retained-grade taste-authority contract is withdrawn" in flat)
+    check("documentary boundary: physical interpretation remains open",
+          "does not identify the electroweak VEV" in flat
+          and "endpoint-selection residual remains open" in flat
+          and "does not identify the computed condensate ratio" in flat)
+    check("companion preserves supplied-fixture scope and external-context boundary",
+          "**Type:** open_gate" in companion
+          and "not selected by best-match-to-`C_obs`" in " ".join(companion.split())
+          and "not a derivation" in companion)
 
 
 def main() -> None:
@@ -156,7 +126,7 @@ def main() -> None:
     print(f"  cond(Lt=10) = {cond_10:.10f}")
     print(f"  ratio       = {ratio:.10f}")
 
-    print("\n  Intra-framework dimensional-compression candidates:")
+    print("\n  Supplied-fixture dimensional-compression candidates:")
     candidates = {}
     for dim in [3, 4, 8, 16]:
         root = ratio ** (1 / dim)
@@ -172,14 +142,14 @@ def main() -> None:
     inv16 = candidates[16][1]
 
     print("\n" + "-" * 78)
-    print("  Intra-framework PASS gates (no observed-target dependence)")
+    print("  Supplied-fixture PASS gates (no observed-target dependence)")
     print("-" * 78)
 
     # Gate 1: R^(-1/4) reproduces via two independent algebraic routes.
     inv4_pow = ratio ** (-0.25)
     inv4_log = math.exp(-math.log(ratio) / 4.0)
     check(
-        "D=4 inverse compression R^(-1/4) reproduces by independent routes",
+        "D=4 inverse compression R^(-1/4) agrees between power/log evaluations",
         abs(inv4_pow - inv4_log) < 1e-12,
         f"R^(-1/4) via pow = {inv4_pow:.12f}, via exp(-log/4) = {inv4_log:.12f}",
     )
@@ -216,20 +186,12 @@ def main() -> None:
         for t in fails
     )
     check(
-        "Structural identity FAILS at D in {1,2,3,5,6,8} (so (1/4) is D=4-specific)",
+        "Structural identity FAILS at D in {1,2,3,5,6,8} (finite comparison set only)",
         all_fail,
         detail_lines,
     )
 
-    # Gate 5: assert that no observed target value is used in any gate.
-    # The variables v_obs, v_pred, C_obs are introduced only AFTER the
-    # gates and live solely in the external-context block below; this is
-    # a structural assertion documented as PASS for explicit auditability.
-    check(
-        "PASS conditions are free of observed-target imports (audit-transparent)",
-        True,
-        "v_obs, v_pred, C_obs are not referenced before this point",
-    )
+    print("INFO: printed external targets are context; this narration is not a numerical check.")
     check_source_firewall()
 
     # ---- External context block (NOT load-bearing) ----
@@ -251,13 +213,8 @@ def main() -> None:
     print("  from all PASS gates above. Comparing R^(-1/4) to C_obs is a")
     print("  reader-level diagnostic, not an audit-load-bearing closure.")
 
-    print("\nConclusion (within-scope):")
-    print("  Under the 2026-06-16 fixed-density coefficient-to-scale bridge,")
-    print("  a positive endpoint coefficient ratio R maps to the inverse")
-    print("  fourth-root scale factor R^(-1/4) at D=4. The runner checks")
-    print("  that this candidate is quantitatively distinct from the D=16")
-    print("  direct-scale alternative and that no within-scope PASS gate")
-    print("  depends on the imported v_obs.")
+    print("\nFinite supplied-fixture arithmetic only. The coefficient interpretation of R,")
+    print("physical taste count, physical endpoint and absolute EW scale remain open.")
 
     print("\n" + "=" * 78)
     print(f"SCORECARD: {PASS_COUNT} pass, {FAIL_COUNT} fail out of {PASS_COUNT + FAIL_COUNT}")

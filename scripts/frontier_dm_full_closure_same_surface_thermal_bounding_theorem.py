@@ -40,6 +40,7 @@ from __future__ import annotations
 # Keep the ceiling at the repair target so regressions to slow thermal
 # summation surface as compute breakage instead of claiming a long-run budget.
 AUDIT_TIMEOUT_SEC = 60
+AUDIT_INPUT_PATHS = ['docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md']
 
 import sys
 from pathlib import Path
@@ -115,8 +116,9 @@ def part0_source_scope_boundary() -> None:
         "Corrigendum (2026-09-30)" in text,
     )
     check(
-        "source no longer treats the 64:1 bridge as an open gap",
-        "The 64:1 channel-weight bridge is no longer an open parent import" in text,
+        "documentary boundary: supplied channel prescription and open physical amplitude matching",
+        "channel-weight algebra is conditional on the supplied squared-potential" in text
+        and "Physical process weights and amplitude matching remain unproved." in text,
     )
     print("[CONTEXT, NOT SCIENCE PASS] Upstream audit status is maintained independently. "
           "This calculation consumes the explicitly supplied model; generated ledger status "
@@ -256,7 +258,7 @@ def main() -> int:
     print("  The archived target bracketing and unique root interval came from the")
     print("  half-argument (pi) kernel and are superseded.")
     print("  What still remains open is the source derivation of the live-DM")
-    print("  constants and packet-completeness / selector premises.")
+    print("  constants, physical channel-weight matching and packet-completeness / selector premises.")
 
     print("\n" + "=" * 88)
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")

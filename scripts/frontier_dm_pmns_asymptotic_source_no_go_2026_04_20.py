@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""
-Frontier runner - asymptotic pure-source no-go for additional DM PMNS basins.
-"""
+"""Finite twelve-representative numerical rank and optimization diagnostic; generic asymptotic bridge open."""
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
 
 import itertools
 import math
@@ -89,7 +89,7 @@ def asymptotic_chi2(point: tuple[float, float, float], perm: tuple[int, int, int
 
 
 def main() -> int:
-    print("=== Part 1: linear-algebra no-go at infinity ===")
+    print("=== Part 1: numerical rank test at twelve supplied representatives ===")
     for delta_cp in (0.0, math.pi):
         u0 = standard_pmns(delta_cp)
         for perm in itertools.permutations(range(3)):
@@ -109,7 +109,7 @@ def main() -> int:
                 f"min singular value={svals[-1]:.6f}",
             )
 
-    print("\n=== Part 2: numerical asymptotic chamber-sphere floor ===")
+    print("\n=== Part 2: finite chamber-sphere optimization diagnostic ===")
     best_value = float("inf")
     best_perm = None
     best_dir = None
@@ -143,26 +143,25 @@ def main() -> int:
                     best_dir = direction_from_angles(res.x)
 
     check(
-        "Pure-source chamber-sphere minimum stays strictly above zero",
+        "Smallest value found in this finite optimization exceeds the supplied threshold",
         best_value > 1e-4,
         f"best chi^2_inf={best_value:.9f} at perm={best_perm}, dir={best_dir}",
     )
     check(
-        "The asymptotic floor is near the observed 1e-3 scale, not numerical zero",
+        "The smallest found value is in the supplied numerical comparison band",
         5e-4 < best_value < 5e-3,
         f"best chi^2_inf={best_value:.9f}",
     )
 
     print("\nInterpretation:")
-    print("  No exact PMNS-fit basin can escape to infinity, because the")
-    print("  pure-source limit admits no nonzero solution with the target angles.")
-    print("  The remaining basin-enumeration problem is therefore compact.")
-    print(f"\nPASS={PASS} FAIL={FAIL}")
-    print(f"per_element: checked — every target-angle constraint-matrix entry was assembled from rank-one PMNS projectors; aggregate FAIL={FAIL}.")
-    print(f"per_site: checked — all six row permutations at delta_CP=0 and pi were evaluated as distinct source-label assignments; aggregate FAIL={FAIL}.")
-    print(f"per_mode: checked — each 3x3 constraint matrix has full singular-value rank in the executed permutation/phase sweep; aggregate FAIL={FAIL}.")
-    print(f"per_block: checked — the compact chamber-sphere minimization found chi2_inf={best_value:.9f} at permutation {best_perm}.")
-    print(f"lattice_wide: checked and not executed — the PMNS source-family claim asserts no spatial lattice lift; the executed asymptotic scan leaves a strictly positive floor={best_value > 1e-4}.")
+    print("Finite rank evidence and sampled optimization only; generic limits need controlled eigenspaces.")
+    print("No compactness, exhaustive tail exclusion or global lower bound is established.")
+    print(f"PASS={PASS} FAIL={FAIL}")
+    print("per_element: finite numerical constraint entries assembled from supplied real rank-one projectors.")
+    print("per_site: checked and not executed — row permutations are labels, not physical lattice sites.")
+    print("per_mode: three eigenvalue coordinates tested numerically at each fixed supplied representative.")
+    print("per_block: twelve 3x3 constraint systems and a finite optimizer search; no rigorous global floor.")
+    print("lattice_wide: checked and not executed — no spatial embedding or universal asymptotic limit is proved.")
     return 0 if FAIL == 0 else 1
 
 

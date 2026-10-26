@@ -1,4 +1,4 @@
-# Spectral-Gap Cosmological-Constant Identity Theorem
+# Conditional de Sitter / S³ Spectral Consistency Identity
 
 **Date:** 2026-04-18 (audit-prep cite-chain rigorize 2026-05-10)
 **Status:** structural identity theorem; current ledger `effective_status:
@@ -8,8 +8,8 @@ still-bounded numerical value of `R` / `Lambda`.
 **Script:** `scripts/frontier_cosmological_constant_spectral_gap_identity.py`
 **Claim type:** positive_theorem
 **Claim scope:** the exact function identity `Lambda_vac = lambda_1(S^3_R) =
-3 / R^2` for every `R > 0`, on the de Sitter stationary vacuum sector of the
-direct-universal GR closure with retained `S^3` spatial topology, conditional
+3 / R^2` for every `R > 0`, on a comparison sphere explicitly assigned the de Sitter curvature radius
+(the minimum-radius global slice), conditional
 on the upstream-authority statuses recorded below; the numerical values of
 `R` / `R_Lambda` / `Lambda` remain in the existing bounded cosmology rows.
 **Upstream authorities (current ledger statuses, not assertions of
@@ -90,6 +90,33 @@ Either path makes the structural identity self-contained from retained-grade
 upstream surfaces; the current note is conditional on those upstream rows
 being upgraded.
 
+## Scientific correction (2026-10-21)
+
+The two radii must be distinguished. Write `ell` for the four-dimensional
+de Sitter curvature radius and `a(t)` for the radius of a global spatial
+S³ slice. In units c=1,
+
+```text
+ds² = -dt² + ell² cosh²(t/ell) dOmega_3²,
+a(t) = ell cosh(t/ell),
+Lambda = 3/ell²,
+lambda_1(S³_a(t)) = 3/a(t)² = Lambda sech²(t/ell).
+```
+
+Thus equality with the spatial spectral gap holds at the minimum-radius
+slice t=0, or on an auxiliary sphere whose radius is explicitly chosen to
+be ell; it is not an identity on every spatial slice. A static product
+`-dt²+R²dOmega_3²` has `R_00=0` and `R_ij=2g_ij/R²`, so no single positive
+Lambda satisfies its vacuum Einstein equations. The previous constant-spatial-
+radius de Sitter argument is withdrawn. See [Spradlin, Strominger and
+Volovich, §2.1](https://arxiv.org/html/hep-th/0110007).
+
+The local consistency identity below is conditional on identifying the
+sphere's radius with ell. The Einstein equation already contains Lambda;
+this computation does not determine it, derive it from topology, or solve
+the vacuum-energy problem. Prior audit-history text above is preserved as
+history, not a new status decision.
+
 ## Role
 
 The purpose of this note is to split the existing spectral-gap
@@ -108,11 +135,9 @@ attribution back-reference only, this note's Leg A/Leg B proof stands without th
 derivation is already written out in
 `COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md`
 (section "Fixed-gap vacuum scale"; backticked here to break length-2 cycle `cycle-0007` in `docs/audit/data/cycle_inventory.json` — cosmology_scale_identification cites this identity theorem as an upstream authority for its own derivation chain, so the load-bearing citation direction is *cosmology_scale_identification → this identity theorem*, not vice versa). This note does not add new science —
-it crystallizes that already-internally-exact statement into a standalone
-retained theorem surface so downstream corollaries (including
+it records a conditional consistency identity so downstream corollaries (including
 `DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md`, backticked here as a
-downstream consumer rather than a load-bearing input) can anchor on a retained
-premise rather than on a companion-lane label.
+downstream consumer rather than a load-bearing input) must carry the same radius-identification premise.
 
 ## Theorem
 
@@ -135,8 +160,8 @@ Let the retained surface carry:
    [`S3_CAP_UNIQUENESS_NOTE.md`](S3_CAP_UNIQUENESS_NOTE.md)).
 
 **Theorem (spectral-gap cosmological-constant identity).** On the
-stationary de Sitter vacuum sector of conditions (1)–(3), with spatial
-topology from condition (4), the cosmological-constant scale `Lambda_vac`
+stationary de Sitter vacuum sector of conditions (1)–(3), with the comparison sphere in condition (4) explicitly chosen at
+`R=ell` (the minimum-radius global slice or an auxiliary sphere), the cosmological-constant scale `Lambda_vac`
 and the first nonzero scalar-Laplacian eigenvalue `lambda_1(S^3_R)` are
 equal as a structural identity:
 
@@ -145,7 +170,8 @@ equal as a structural identity:
 for every `R > 0`. The identity is an exact function identity in `R`; it
 does **not** fix a numerical value of either `R` or `Lambda_vac`.
 
-**Proof.** The proof has two independent legs that meet at `3 / R^2`.
+**Proof.** The proof compares two standard formulas after the supplied identification
+`R=ell`; numerical agreement is not an independent derivation of that premise.
 
 *Leg A (Einstein side, vacuum equations).* On the canonical textbook
 Einstein-Hilbert-style continuum GR closure (condition 3), the action on
@@ -166,12 +192,10 @@ and substituting back:
 
   `R_{mu nu} = Lambda g_{mu nu}`.
 
-The stationary de Sitter vacuum solution with compact spatial S^3 slicing
-of constant spatial radius `R` has, on the `S^3` throat,
-`R_{mu nu} = (3 / R^2) g_{mu nu}` in 4D (the standard de Sitter Ricci for
-spatial S^3 of radius `R`). Therefore
-
-  `Lambda_vac = 3 / R^2`.
+The de Sitter vacuum has `R_{mu nu}=(3/ell²)g_{mu nu}`, where ell
+is its spacetime curvature radius, giving `Lambda_vac=3/ell²`.
+For the comparison sphere in condition (4), additionally choose `R=ell`.
+This radius identification is a premise, not a consequence of S³ topology.
 
 This is the content of the "Fixed-gap vacuum scale" section of
 `COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md` (backticked, not a
@@ -198,10 +222,10 @@ vacuum sector,
 
   `Lambda_vac = lambda_1(S^3_R)`.
 
-This holds for every `R > 0`; the identity is retained even when the
-numerical value of `R` is not. □
+This holds for every `R=ell > 0` on the comparison sphere; it does not
+establish equality for the evolving global spatial sphere. □
 
-## What Is Retained Exactly by This Theorem
+## Algebraic content under the radius-identification condition
 
 - the coefficient `3` on both sides (Einstein: `R_{mu nu} = (3/R^2) g_{mu nu}`;
   Laplacian: Obata equality on S^3);
@@ -212,7 +236,7 @@ numerical value of `R` is not. □
 - the specialization of this identity to the retained de Sitter stationary
   vacuum sector of the direct-universal GR + smooth GR closure.
 
-## What Is **Not** Retained by This Theorem
+## What the identity does not establish
 
 - the numerical value of `R` / `R_Lambda`: the cosmology-scale identification
   remains the honest remaining gap, as recorded in
@@ -231,56 +255,17 @@ This theorem is deliberately narrower than the full cosmology-companion
 portfolio. Its point is to isolate the single exact structural claim — the
 `R`-free identity between `Lambda_vac` and `lambda_1(S^3_R)` — so that
 downstream corollaries that depend only on the identity (not on its
-numerical evaluation) can anchor on a retained surface.
+numerical evaluation) must retain the comparison-sphere premise.
 
-## Relation to Existing Matrix Rows
+## Downstream boundary
 
-The existing `Cosmological constant Lambda` row in
-`PUBLICATION_MATRIX.md` carries
-the status `bounded` because its claim is about the
-**numerical value** of `Lambda` against the observed `~ 1.09 x 10^-52 m^-2`.
-This theorem does **not** change that row: the numerical comparison remains
-conditional on the cosmology-scale identification.
-
-What this theorem adds is an **adjacent retained row** for the structural
-identity itself, analogous to how
-[`CONFINEMENT_STRING_TENSION_NOTE.md`](CONFINEMENT_STRING_TENSION_NOTE.md)
-carries an exact `T = 0` confinement theorem independently of the bounded
-`sqrt(sigma)` numerical scale.
-
-## Publication Matrix Row
-
-This note is now wired into
-`PUBLICATION_MATRIX.md` as the
-retained structural identity row in the cosmology block:
-
-| Quantity / lane | Workstream | Framework result | Observation / comparator | Claim-strength status | Import class | Current publication decision | Authority / best source | Frozen-out ref |
-|---|---|---|---|---|---|---|---|---|
-| Spectral-gap cosmological-constant identity | retained GR + spectral-gap cosmology | `Lambda_vac = lambda_1(S^3_R) = 3 / R^2` as an exact function identity in `R` on the retained de Sitter stationary vacuum + round `S^3` spatial topology | n/a (identity, not a numerical comparison) | retained | retained direct-universal GR closure + retained smooth global gravitational stationary/Gaussian class + retained canonical textbook continuum GR closure + retained `S^3` topology + Lichnerowicz–Obata equality for spheres | retained structural identity may appear on the flagship / SI / theorem box; numerical `R_Lambda` / `Lambda` values stay in the existing bounded companion rows | this note + `COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md` + `COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md` (both backticked, not markdown links, to break length-2 cycle `cycle-0007` and prior cycle hygiene actions in `docs/audit/data/cycle_inventory.json`; these are downstream companion rows, not load-bearing on this identity theorem) | n/a |
-
-The adjacent numerical `Cosmological constant Lambda` row, the
-`\Omega_\Lambda` chain, the `spectral tilt n_s` row, the numerical graviton
-compactness-mass companion row, and the rest of the cosmology companion
-stack remain unchanged in status. Their numerical claims are still bounded
-by the cosmology-scale identification and matter-bridge gaps.
-
-## Downstream Effect
-
-On the retained-status surface established by this theorem, the EOS
-corollary of
-`DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md`
-no longer sits on a "companion-lane spectral-gap vacuum identification".
-Condition 3 of that note is now satisfied by this retained structural
-identity theorem. The EOS corollary becomes a retained corollary without any
-companion-surface conditioning step.
-
-Condition 4 of the EOS corollary (fixed `R`) is the separate statement
-that the vacuum-sector `R_Lambda` does not evolve. On the retained
-stationary vacuum sector of condition (1) + (2) of this theorem, that
-fixedness is automatic: the stationary Einstein/Regge solution by
-definition has `d R_Lambda / d t = 0`. So condition 4 of the EOS corollary
-is also discharged by the retained surfaces cited here, with no companion
-lane invoked.
+This correction supplies no publication-matrix or audit-status change.
+The old packaging claim that an arbitrary fixed spatial S³ radius discharges
+the downstream EOS premise is withdrawn. A constant cosmological parameter
+fixes ell, while the global spatial radius a(t) still evolves. Downstream
+uses must distinguish those radii and carry the radius-identification premise.
+The numerical value of ell, matter fraction, physical spectral interpretation,
+and framework-to-continuum bridge remain separate obligations.
 
 ## Commands Run
 

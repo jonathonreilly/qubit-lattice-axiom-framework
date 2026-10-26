@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/two_chirality_split_step_mass_gaps_every_cone_2026_10_21.py
+runner_sha256: 04a3a2c841467197f3623c8fb52b30c7dcae039d104e84f9a3b990578c3170d8
+input_fingerprint_sha256: 2490a226106b43a0ba748ecc15a0655aaba2ef98b93e42dd1577eed6fba31ba4
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 6.15
+status: ok
+----- stdout -----
+[PASS] cone sets: L and R share four momenta with opposite chirality; L has four more that R lacks  shared [(np.int64(0), np.int64(0), np.int64(0)), (np.int64(0), np.int64(2), np.int64(2)), (np.int64(2), np.int64(0), np.int64(2)), (np.int64(2), np.int64(2), np.int64(0))]; L only [(np.int64(1), np.int64(1), np.int64(1)), (np.int64(1), np.int64(3), np.int64(3)), (np.int64(3), np.int64(1), np.int64(3)), (np.int64(3), np.int64(3), np.int64(1))] (units of pi/2, mod 4)
+[PASS] 25^3 finite grid: sampled minima for three supplied (m,M) cases; no continuous-zone lower bound  m=.05, M=0: 3.6e-20; m=.05, M=.5: 0.0500; m=.02, M=1: 0.0200 (25^3 grid)
+[PASS] six samples at m=.02,M=.5, |k| in {.02,.04}, three stated rays: comparator error below 1.5%  max relative deviation 1.33%
+[PASS] M=1 diagonal counterexample exceeds the 1.5% dispersion tolerance  eigenphase 0.02876922874705734; comparator 0.02944626514113948; error 2.2992%
+[PASS] nonzero resonant angles do not gap the corresponding original cone points  shared m=pi gap 1.15e-16; unshared M=pi gap 3.88e-20
+per_site: single-particle l2(Z3) tensor C4 carrier with two named blocks, the substep order, the momentum-reversed R walk and the two mass terms are supplied choices.
+lattice_wide: no matter content, one-qubit realization, exact cubic covariance or physical mass values are established.
+elapsed_seconds 6.1
+
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

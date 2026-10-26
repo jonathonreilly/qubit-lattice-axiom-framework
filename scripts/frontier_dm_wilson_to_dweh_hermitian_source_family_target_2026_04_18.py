@@ -145,10 +145,12 @@ def part1_current_main_has_already_reduced_the_downstream_chain() -> None:
         "Charged source-response reduction note states that dW_e^H is the exact charged-sector Schur pushforward",
         "`dW_e^H` is the exact charged-sector Schur pushforward" in charged,
     )
-    check(
-        "Selector reduction note states that the remaining open microscopic object is exactly on dW_e^H = Schur_Ee(D_-)",
-        "right-sensitive microscopic selector law" in selector
-        and "`dW_e^H = Schur_Ee(D_-)`" in selector,
+    narrowed = "conditional right-orbit non-identifiability" in selector
+    print(
+        "  [SCOPE, unscored] The microscopic selector-reduction note now states only a "
+        "conditional right-orbit non-identifiability result; it no longer names a sole "
+        "remaining microscopic object, so this runner scores no claim on it "
+        f"(narrowed wording present: {narrowed})."
     )
 
 

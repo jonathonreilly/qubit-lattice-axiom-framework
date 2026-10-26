@@ -1,13 +1,41 @@
 # DM Selector Shifted-Doublet-Imaginary-Sign Support Theorem
 
-**Date:** 2026-04-21
-**Type:** bounded_theorem
-**Status:** finite sign comparison on a supplied numerical source and recovered bank; physical activation open
+**Type:** open_gate
+**Date:** 2026-04-21  
+**Status:** supplied finite numerical support; physical selection open  
 **Primary runner:** `scripts/frontier_dm_selector_shifted_doublet_imag_sign_support_2026_04_21.py`
 
-## Current scope
+## Current execution and claim boundary (2026-10-23)
 
-The doublet-block formula is algebraic on its supplied chart. The relative-action input is a numerical constrained-search source, not a derived physical selector. Its side of the sign boundary and agreement with the finite recovered bank are numerical comparisons. The physical positivity/activation rule is not derived. Earlier text is recoverable at `f24d17d97d372df977476e4a69674577f31af575` under this path.
+The current result is reproduction of supplied finite-bank calculations, with
+all original numerical predicates, thresholds, grids and optimizer settings
+preserved. A numerical constrained optimizer is not an exact selected source
+or certified global minimizer. Sampled metrics/shifts and bracketed roots do
+not establish all-shift, whole-window or exhaustive selector claims. In
+particular, threshold midpoint tests are not an interval proof. No physical
+source law, normalization, preferred metric or sufficient/exhaustive future
+research route follows from these observations.
+
+Documentary checks state only whether the actual input texts contain their
+reported phrases. They do not certify the authority or scientific truth of
+those historical claims. The shared summary is checked for its current open
+physical-selection boundary and supplied PMNS-angle status; old missing-phrase
+failures remain in the immutable source/cache history. Literal-True narration
+is printed as information, not counted as PASS. All numerical failures still
+control the nonzero exit. No desired numerical result or threshold is relaxed.
+
+Actual primary cap is300seconds. Own note, literal document reads and complete
+transitive local helper/input closure are declared before fresh execution.
+Earlier quoted PASS counts below are historical and are not current receipts.
+The prior sources/caches are recoverable at14504496b15f9aa47e9b0323e272be111b2b1724.
+
+## Historical argument and values — withdrawn as current authority
+
+The remaining original body is preserved verbatim as a dated proposal and
+record of reported calculations. Its “exact selector,” “canonical,” “first,”
+“strongest,” whole-window and narrowed/exhaustive-burden assertions are not
+current conclusions. The current scope is solely the bounded reproduction
+specified above; no legacy paragraph overrides it.
 
 ## Statement
 
@@ -34,7 +62,7 @@ Im(K_Z3[1,2]) = 0.
 
 On the current selector packet:
 
-- the supplied numerical relative-action source lies on the **positive** side of
+- the exact observable-relative-action source lies on the **positive** side of
   this boundary,
 - the preferred recovered lift `0` is the **unique** recovered lift on that
   same positive side,
@@ -72,10 +100,10 @@ Three earlier results are used here:
    ```
 
 2. `docs/DM_SELECTOR_RELATIVE_ACTION_RECOVERED_BRANCH_SEPARATION_SUPPORT_THEOREM_NOTE_2026-04-21.md`
-   shows the supplied numerical relative-action source does not itself land on
+   shows the exact observable-relative-action selector does not itself land on
    the recovered selector branch.
 3. `docs/DM_SELECTOR_RELATIVE_ACTION_RECOVERED_PROJECTION_SUPPORT_THEOREM_NOTE_2026-04-21.md`
-   shows that the supplied numerical source already has one canonical recovered image:
+   shows that the internal selector already has one canonical recovered image:
    the preferred recovered lift `0`, also selected by `tau_b,min`.
 
 That still left the remaining bridge framed as a generic projection-principle
@@ -83,9 +111,9 @@ problem.
 
 ## New support theorem
 
-### 1. The supplied numerical source already chooses one side of a canonical doublet-block sign boundary
+### 1. The internal selector already chooses one side of a canonical doublet-block sign boundary
 
-For the supplied numerical relative-action source, the active target
+For the exact observable-relative-action source, the active target
 `(delta_rel, q_+,rel)` satisfies
 
 ```text
@@ -98,7 +126,7 @@ hence
 Im(K_Z3[1,2])_rel > 0.
 ```
 
-So the supplied numerical source does not merely point toward the preferred recovered
+So the internal selector does not merely point toward the preferred recovered
 lift metrically. It already chooses one exact side of the canonical
 doublet-block sign boundary.
 
@@ -110,7 +138,7 @@ Evaluating the exact recovered bank shows:
 - lifts `1,2,3,4`: `Im(K_Z3[1,2]) < 0`
 
 So the preferred recovered lift is the unique recovered point on the same
-positive side as the supplied numerical source.
+positive side as the internal selector.
 
 ### 3. The constructive triplet chamber still does not distinguish the recovered packet
 
@@ -147,7 +175,7 @@ preferred recovered lift uniquely.
 
 Therefore the branch now has a stronger agreement packet than before:
 
-- the supplied numerical source,
+- the exact internal selector,
 - the sharp source tuple and constructive triplet chamber,
 - the canonical recovered projection,
 - the recovered threshold selector,
@@ -163,7 +191,7 @@ It does sharpen the remaining positive target again.
 
 Before this theorem, the live selector statement was:
 
-- justify the projection from the supplied numerical source to the preferred
+- justify the projection from the exact internal selector to the preferred
   recovered lift, or replace both selector objects by a finer microscopic law.
 
 After this theorem, the sharper packet-level statement is:
@@ -201,7 +229,7 @@ PYTHONPATH=scripts python3 scripts/frontier_dm_selector_shifted_doublet_imag_sig
 Expected:
 
 ```text
-SUMMARY: PASS=13 FAIL=0
+SUMMARY: PASS=17 FAIL=0
 ```
 
 ## Audit dependency repair links

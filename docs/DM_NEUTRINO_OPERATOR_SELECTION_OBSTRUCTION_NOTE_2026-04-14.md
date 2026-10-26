@@ -1,5 +1,7 @@
 # DM Neutrino Operator Selection Obstruction Note
 
+**Type:** bounded_theorem
+
 **Status:** bounded - bounded or caveated result note
 **Date:** 2026-04-14
 **Branch:** `codex/dm-across-the-line`
@@ -13,7 +15,7 @@
 This note records the exact mismatch that exposed the old operator-selection
 problem. That specific `Gamma_1` versus `Xi_5` choice on the local chiral
 post-EWSB surface is now addressed by
-[`docs/DM_NEUTRINO_DIRAC_BRIDGE_THEOREM_NOTE_2026-04-15.md`](/Users/jonBridger/Toy%20Physics-dm/docs/DM_NEUTRINO_DIRAC_BRIDGE_THEOREM_NOTE_2026-04-15.md).
+[`docs/DM_NEUTRINO_DIRAC_BRIDGE_THEOREM_NOTE_2026-04-15.md`](DM_NEUTRINO_DIRAC_BRIDGE_THEOREM_NOTE_2026-04-15.md).
 
 So this note remains useful as the obstruction audit, but it is no longer the
 final authority on the remaining blocker.
@@ -30,7 +32,7 @@ branch:
    cascade lane
 
 The new runner
-[`scripts/frontier_dm_neutrino_operator_selection_obstruction.py`](/Users/jonBridger/Toy%20Physics-dm/scripts/frontier_dm_neutrino_operator_selection_obstruction.py)
+[`scripts/frontier_dm_neutrino_operator_selection_obstruction.py`](../scripts/frontier_dm_neutrino_operator_selection_obstruction.py)
 shows they are not two descriptions of the same object.
 
 ---
@@ -66,14 +68,14 @@ genuinely different.
 The top-Yukawa theorem lane still says the Yukawa operator inherits the
 staggered mass surface:
 
-- [`docs/YT_FORMAL_THEOREM_NOTE.md`](/Users/jonBridger/Toy%20Physics-dm/docs/YT_FORMAL_THEOREM_NOTE.md)
-- [`docs/YT_WARD_IDENTITY_NOTE.md`](/Users/jonBridger/Toy%20Physics-dm/docs/YT_WARD_IDENTITY_NOTE.md)
+- `docs/YT_FORMAL_THEOREM_NOTE.md` (historical local citation; target unavailable at `docs/YT_FORMAL_THEOREM_NOTE.md`; original location `/Users/jonBridger/Toy%20Physics-dm/docs/YT_FORMAL_THEOREM_NOTE.md`; no substitute authority supplied)
+- `docs/YT_WARD_IDENTITY_NOTE.md` (historical local citation; target unavailable at `docs/YT_WARD_IDENTITY_NOTE.md`; original location `/Users/jonBridger/Toy%20Physics-dm/docs/YT_WARD_IDENTITY_NOTE.md`; no substitute authority supplied)
 
 Meanwhile the neutrino / generation-cascade lane uses the weak-axis EWSB
 surface:
 
-- [`docs/EWSB_GENERATION_CASCADE_NOTE.md`](/Users/jonBridger/Toy%20Physics-dm/docs/EWSB_GENERATION_CASCADE_NOTE.md)
-- [`docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md`](/Users/jonBridger/Toy%20Physics-dm/docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md)
+- `docs/EWSB_GENERATION_CASCADE_NOTE.md` (historical local citation; target unavailable at `docs/EWSB_GENERATION_CASCADE_NOTE.md`; original location `/Users/jonBridger/Toy%20Physics-dm/docs/EWSB_GENERATION_CASCADE_NOTE.md`; no substitute authority supplied)
+- [`docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md`](DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md)
 
 The `3+1` completion and right-handed-sector work help by making the mismatch
 precise:
@@ -107,7 +109,7 @@ This obstruction should **not** be hidden behind the older Higgs-charge
 stories. On the current branch, the CKM radiative note explicitly says the
 Higgs `Z_3` charge route was superseded:
 
-- [`docs/CKM_RADIATIVE_NOTE.md`](/Users/jonBridger/Toy%20Physics-dm/docs/CKM_RADIATIVE_NOTE.md)
+- `docs/CKM_RADIATIVE_NOTE.md` (historical local citation; target unavailable at `docs/CKM_RADIATIVE_NOTE.md`; original location `/Users/jonBridger/Toy%20Physics-dm/docs/CKM_RADIATIVE_NOTE.md`; no substitute authority supplied)
 
 So the operator-selection gap cannot honestly be treated as already solved by
 that lane.

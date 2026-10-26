@@ -1,76 +1,10 @@
-"""
-Numerical convergence support: combined Weyl-truth + lattice estimator for
-the Convention C-iso ε_witness frontier.
-
-Authority role
---------------
-Source-note proposal -- audit verdict and downstream status set only by
-the independent audit lane.
-
-Strategy
-========
-Prior state (PR #685 + SU(3) NLO closed form 2026-05-08):
-  - <P_sigma>(g^2=1, xi=4, 4^3 x 16) = 0.44329 +/- 0.00016    [5 seeds]
-  - <P_sigma>(g^2=1, xi=8, 4^3 x 16) = 0.40949 +/- 0.00050    [5 seeds]
-  - <P_sigma>(g^2=1, xi=16, 4^3 x 16) = 0.28350 +/- 0.00069   [5 seeds]
-  - <P_sigma>(g^2=1, xi=4, L^infty)  = 0.4410  +/- 0.0006     [vol scan L=3,4,6]
-  - SU(3) NLO C-iso: rel_shift(s_t) = (7/12) s_t + (NLO_2) s_t^2 + ...
-  - Existing C-iso bound at xi=4: ~3.2% absolute = 0.0317
-
-The PR #685 PR characterizes the C-iso as a *systematic error* whose
-absolute contribution is 0.0317 at xi=4 -- TOO LARGE for ε_witness ~ 3e-4.
-
-This work treats the C-iso term as an applied single-plaquette correction
-using the SU(3) NLO/NNLO closed form and numerical Weyl truth, then
-quantifies the residual systematic. The bounded-support calculation is:
-
-   <P>_KS_combined(xi) = <P_sigma>(xi)_lattice / (1 + rel_shift_NLO(s_t))
-                       = <P_sigma>(xi)_lattice - abs_shift_NLO(xi)
-                                                    [to leading order]
-
-Equivalently, the "combined estimator" is the lattice central value
-minus the *analytic* C-iso shift at the operating xi. The residual
-uncertainty is then:
-
-   eps_residual(xi) = | abs_shift_NNLO(xi) - abs_shift_NLO(xi) |
-                    + |c_3 fit error| * (s_t^3 / 27) * <P>_KS
-
-i.e., the discrepancy between the NLO truncation and the higher-order
-truncation, dominated by the c_3 NNLO term.
-
-Convergence test
-----------------
-If the NLO correction is correct, <P>_KS_combined(xi) should be
-xi-INVARIANT (within combined stat + NLO residual error). We test this
-across xi = 4, 8, 16 using the prior MC ensemble values and the
-analytic SU(3) NLO formula:
-
-   <P>_HK_SU(3)(s_t)         = 1 - exp(-(4/3) s_t)        [exact]
-   <P>_W_SU(3)(s_t)          = (4/3) s_t - (1/9) s_t^2    [analytic]
-                              + (c_3/27) s_t^3 + ...      [num c_3 = -4.328]
-
-   rel_shift_NLO(s_t) = (P_W_NLO - P_HK_NLO) / P_HK_NLO
-   abs_shift(xi)      = rel_shift_NLO(s_t) * <P>_KS_xi=∞
-
-Outputs
--------
-  PASS: combined estimator budget reaches ε_witness ~ 3e-4 with the
-        imported lattice summaries and Weyl-truth correction.
-  FAIL/PARTIAL: residual exceeds ε_witness; document obstruction.
-
-References
-----------
-- C_ISO_SU3_NLO_CLOSURE_BOUNDED_NOTE_2026-05-08_su3nlo: SU(3) NLO closed form
-- EXACT_TIER_EWITNESS_BOUNDED_NOTE_2026-05-07_ewitness: PR #685 baseline
-- Drouffe-Zuber 1983: SU(3) Wilson character expansion
-- Menotti-Onofri 1981: heat-kernel single plaquette
-- Karsch 1982: anisotropic SU(N)
-
-Usage
-=====
-    python3 scripts/cl3_c_iso_numerical_convergence_2026_05_10_numconv.py
-    python3 scripts/cl3_c_iso_numerical_convergence_2026_05_10_numconv.py --mode mc
-"""
+"""Conditional supplied-scenario diagnostic only. Wilson c2=-1 and higher
+coefficients are historical hypotheses/fit targets; exact Wilson proof and
+remainder are unresolved. Imported ensemble summaries lack recovered raw
+provenance. Single-to-multiplaquette transfer and Hamilton-limit convergence
+are unproved. Finite quadrature/refits and target comparisons do not establish
+a physical epsilon-witness or certified physical systematic error budget.
+Numeric keys, arithmetic, targets and modes are retained for comparison."""
 
 from __future__ import annotations
 
@@ -83,6 +17,11 @@ from pathlib import Path
 from typing import Dict, List, Tuple
 
 import numpy as np
+
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = ('docs/C_ISO_NUMERICAL_CONVERGENCE_BOUNDED_SUPPORT_NOTE_2026-05-10_numconv.md', 'docs/C_ISO_SU3_NLO_CLOSURE_BOUNDED_NOTE_2026-05-08_su3nlo.md', 'docs/EXACT_TIER_EWITNESS_BOUNDED_NOTE_2026-05-07_ewitness.md', 'scripts/cl3_exact_tier_ewitness_2026_05_07_ewitness.py')
+
+EVIDENCE_SCOPE = {'classification': 'conditional_supplied_historical_scenario_diagnostic', 'wilson_coefficients': 'Supplied rational/fit targets; exact coefficient proof and asymptotic remainder unresolved.', 'ensemble_provenance': 'Historical summary inputs; raw ensembles and Hamilton-limit provenance not recovered here.', 'transfer_rule': 'Single-plaquette correction applied by supplied scenario rule; multiplaquette observable transfer unproved.', 'quadrature': 'Finite numerical quadrature and refits, not certified continuum or physical error bounds.', 'numeric_keys': 'Legacy numeric keys, targets and predicates retained for comparison; truth/exact/limit/budget names do not certify physical claims.', 'physical_epsilon_witness_established': False, 'hamilton_limit_convergence_established': False, 'causal_multiplaquette_obstruction_established': False}
 
 
 # ====================================================================== #
@@ -175,13 +114,9 @@ def P_W_SU3_Weyl(beta_W: float, ngauss: int = 100) -> float:
 
 
 def self_test() -> Dict:
-    """Self-test the SU(3) NLO closed form against the numerical Weyl integral.
-
-    Pass criterion: |c_2_inferred + 1.0| < 0.01 (NLO coefficient of -1
-    in <P>_W * beta_W^2 - 4 beta_W = -1 + c_3/beta + ...).
-    """
+    'Finite-grid comparison to supplied c2=-1 with the original tolerance; not an exact coefficient derivation.'
     print("\n" + "=" * 70)
-    print("SELF-TEST: SU(3) NLO closed form vs numerical Weyl integration")
+    print("SELF-TEST: finite diagnostic of supplied SU(3) NLO target vs finite Weyl quadrature")
     print("=" * 70)
     rows = []
     for b in (12, 24, 48, 96, 192, 384, 768, 1500, 3000):
@@ -198,7 +133,7 @@ def self_test() -> Dict:
     pass_test = abs(c_2_asym + 1.0) < 0.01
 
     print(f"\n  Asymptotic c_2 (large-beta): {c_2_asym:+.5f}")
-    print(f"  Analytic prediction: -1.00000")
+    print(f"  Supplied coefficient target: -1.00000 (exact proof unresolved)")
     print(f"  PASS = {pass_test}")
     return {"rows": rows, "c_2_asym": c_2_asym, "pass": bool(pass_test)}
 
@@ -209,17 +144,11 @@ def self_test() -> Dict:
 
 
 def maybe_run_mc_ensemble(args, seeds=(1, 2, 3, 4, 5)) -> Dict:
-    """Run extended-statistics MC ensembles at xi=8 and xi=16 if --mode mc.
-
-    Wall-time-aware: defaults to small ensemble; long ensembles can be
-    triggered with --n_measure flag.
-
-    Includes new L=8 (8^3 x 32) data from this work (3 seeds, ~30s/seed).
-    """
+    'Default mode returns supplied historical ensemble summaries. Optional mc mode retains its original short numerical experiment; it does not establish raw provenance for the historical rows.'
     if args.mode != "mc":
         # No MC -- use prior PR #685 + SU(3) NLO + this-work L=8 data
         return {
-            "source": "prior PR #685 + SU(3) NLO note + this-work L=8 ensemble",
+            "source": "supplied historical PR #685/NLO/L=8 summaries; raw provenance unrecovered",
             "ensembles": {
                 "xi=4_3cubed_x12": {
                     "P_sigma": 0.44545, "P_sigma_err": 0.00034,
@@ -240,14 +169,14 @@ def maybe_run_mc_ensemble(args, seeds=(1, 2, 3, 4, 5)) -> Dict:
                     "P_sigma_seed_std": 0.00054,
                     "L": 8, "n_seeds": 3, "n_measure": "40+80+80",
                     "vol": "8^3 x 32",
-                    "source": "this work (2026-05-10): 3 seeds, iv-weighted",
+                    "source": "historical supplied summary (2026-05-10): 3 seeds, iv-weighted; provenance unrecovered",
                 },
                 "xi=4_10cubed_x40": {
                     "P_sigma": 0.44090, "P_sigma_err": 0.00023,
                     "P_sigma_seed_std": 0.00013,
                     "L": 10, "n_seeds": 2, "n_measure": "40+40",
                     "vol": "10^3 x 40",
-                    "source": "this work (2026-05-10): 2 seeds, iv-weighted",
+                    "source": "historical supplied summary (2026-05-10): 2 seeds, iv-weighted; provenance unrecovered",
                 },
                 "xi=8_4cubed_x16": {
                     "P_sigma": 0.40949, "P_sigma_err": 0.00050,
@@ -323,25 +252,7 @@ def maybe_run_mc_ensemble(args, seeds=(1, 2, 3, 4, 5)) -> Dict:
 def combined_estimator(P_lattice: float, xi: float,
                         order: int = 2, c_3: float = -4.328,
                         use_weyl_truth: bool = False) -> Tuple[float, float]:
-    """Combined NLO + lattice <P>_KS estimator.
-
-    Given a lattice MC measurement <P_sigma>(xi)_lattice, apply the
-    SU(3) NLO/NNLO C-iso correction (or the Weyl-truth correction):
-
-        <P>_KS_combined = P_lattice / (1 + rel_shift)
-                        = P_lattice * P_HK / P_W
-
-    With use_weyl_truth=True, P_W is computed via numerical Weyl
-    integration of the SU(3) Cartan torus, eliminating the perturbative
-    truncation error (replaced by quadrature error which is < 1e-7 at
-    beta_W >= 12 with ngauss=200).
-
-    Returns
-    -------
-    (P_KS_combined, abs_shift)
-        P_KS_combined: corrected estimate of <P>_KS_(L=infty, xi=infty)
-        abs_shift: the C-iso correction applied (signed, = P_lattice - P_combined)
-    """
+    'Apply the supplied multiplicative transfer rule P_lattice * P_HK/P_W. Finite quadrature replaces the supplied truncated series if use_weyl_truth=True. No certified quadrature error or physical multiplaquette/limit identification follows.'
     s_t = 1.0 / (2.0 * xi)
     P_HK = P_HK_SU3(s_t)
     if use_weyl_truth:
@@ -360,22 +271,7 @@ def combined_estimator(P_lattice: float, xi: float,
 def residual_NNLO(xi: float, P_KS_central: float = 0.4410,
                   c_3_value: float = -4.328, c_3_err: float = 0.05,
                   use_weyl_truth: bool = True) -> Dict:
-    """Estimate residual systematic from NNLO truncation.
-
-    Two estimators for the truncation residual:
-
-    1. NLO/NNLO difference (CONSERVATIVE upper bound): `|factor_NNLO − factor_NLO|`
-       This is the magnitude of the NNLO term itself, which OVERESTIMATES
-       the residual after NNLO correction.
-
-    2. Weyl-truth residual (REALISTIC): `|factor_truth − factor_NNLO|`
-       This is the actual residual after applying the NNLO correction,
-       computed by comparing to the numerical Weyl integration of the
-       SU(3) Wilson single-plaquette. THIS IS THE CORRECT ESTIMATOR.
-
-    Also propagates the c_3 fit uncertainty (~0.05) through to the
-    correction.
-    """
+    'Finite scenario differences between truncated series and quadrature, plus a supplied coefficient uncertainty. Neither a conservative upper bound nor physical systematic coverage is established.'
     s_t = 1.0 / (2.0 * xi)
     P_HK = P_HK_SU3(s_t)
     P_W_NLO = P_W_SU3_truncated(s_t, order=2)
@@ -393,11 +289,11 @@ def residual_NNLO(xi: float, P_KS_central: float = 0.4410,
     factor_lo = P_HK / P_W_NNLO_lo
     factor_hi = P_HK / P_W_NNLO_hi
 
-    # Conservative: NLO/NNLO difference
+    # Scenario NLO/NNLO difference; no upper-bound certificate
     residual_NLO_NNLO_diff = abs(factor_NNLO - factor_NLO) * P_KS_central
     c3_band = max(abs(factor_hi - factor_NNLO), abs(factor_lo - factor_NNLO)) * P_KS_central
 
-    # Realistic: Weyl-truth residual (use numerical Weyl integration)
+    # Finite quadrature comparison
     residual_truth = None
     factor_truth = None
     if use_weyl_truth:
@@ -409,7 +305,7 @@ def residual_NNLO(xi: float, P_KS_central: float = 0.4410,
         except Exception:
             residual_truth = None
 
-    # Use Weyl-truth as the primary residual; fall back to conservative
+    # Use finite quadrature as primary comparison; fall back to series difference
     if residual_truth is not None:
         residual_primary = residual_truth
     else:
@@ -434,13 +330,7 @@ def residual_NNLO(xi: float, P_KS_central: float = 0.4410,
 
 
 def vol_scan_refit_with_L8(ensembles: Dict) -> Dict:
-    """Re-fit <P_σ>(L) = P_∞ + a/L² + b/L⁴ with L=8,10 added to PR #685's L=3,4,6.
-
-    This is the engineering improvement: the imported L=8 and L=10 summary
-    values tighten the L→∞ extrapolation.
-
-    Returns: {P_inf, P_inf_err, fit_coefs, chi2, ...}
-    """
+    'Weighted finite refit of historical summaries to P_inf+a/L²+b/L⁴. P_inf is a fitted intercept; raw ensemble provenance and limit convergence remain open.'
     print("\n" + "=" * 70)
     print("VOL-SCAN REFIT: L=3,4,6 (PR #685) + L=8,10 (this work)")
     print("=" * 70)
@@ -529,27 +419,7 @@ def vol_scan_refit_with_L8(ensembles: Dict) -> Dict:
 
 
 def convergence_test(ensembles: Dict, P_KS_central: float = 0.4410) -> Dict:
-    """Apply NLO + NNLO corrections to MC ensembles at xi = 4, 8, 16.
-
-    Two convergence assertions:
-
-    A. Single-plaquette correction at FIXED xi: applying the analytic
-       SU(3) NLO+NNLO C-iso correction at the operating xi should
-       remove the leading single-plaquette systematic.
-
-    B. Cross-xi consistency: this is an OBSTRUCTION-DETECTING test.
-       The single-plaquette correction is a *temporal-plaquette weight*
-       systematic; if cross-xi disagreement persists after correction,
-       multi-plaquette structure dominates at high xi and the optimal
-       operating point is at moderate xi (xi=4) where multi-plaquette
-       is small and the single-plaquette correction captures the
-       systematic.
-
-    Reports:
-      - <P>_KS_combined(xi) for each ensemble at NLO and NLO+NNLO
-      - cross-xi consistency (interpreted as obstruction detection)
-      - error budget at the optimal operating xi
-    """
+    'Compare supplied historical rows after a scenario transfer. Cross-xi disagreement does not identify a physical mechanism or prove an optimal operating point.'
     print("\n" + "=" * 70)
     print("CONVERGENCE TEST: <P>_KS_combined(xi) across xi = 4, 8, 16")
     print("=" * 70)
@@ -558,7 +428,7 @@ def convergence_test(ensembles: Dict, P_KS_central: float = 0.4410) -> Dict:
     print(f"  {'xi':>4} {'P_lattice':>12} {'P_lat err':>10} "
           f"{'P_combined NLO':>15} {'P_combined NNLO':>16} "
           f"{'P_combined Weyl':>16} "
-          f"{'res truth':>10} {'c_3 band':>10}")
+          f"{'res quad':>10} {'c_3 band':>10}")
     print("  " + "-" * 110)
 
     results_per_xi = []
@@ -602,7 +472,7 @@ def convergence_test(ensembles: Dict, P_KS_central: float = 0.4410) -> Dict:
 
     # Cross-xi consistency: combined estimates at xi=4, 8, 16 should agree
     # (only if the correction captures the full systematic; otherwise this
-    # detects the multi-plaquette obstruction)
+    # detects only disagreement among the supplied transformed rows)
     if len(results_per_xi) >= 2:
         nlo_vals = np.array([r["P_combined_NLO"] for r in results_per_xi])
         nnlo_vals = np.array([r["P_combined_NNLO"] for r in results_per_xi])
@@ -620,9 +490,9 @@ def convergence_test(ensembles: Dict, P_KS_central: float = 0.4410) -> Dict:
         if nnlo_spread / max(nnlo_mean, 1e-12) > 0.05:
             print(f"\n  → Cross-xi spread {nnlo_spread/nnlo_mean:.1%} too large for "
                   f"pure single-plaquette correction.")
-            print(f"  → Multi-plaquette structure dominates at large xi.")
-            print(f"  → Optimal operating xi: xi=4 (moderate β_σ regime).")
-            obstruction = "multi_plaquette_at_large_xi"
+            print(f"  → The scenario rows disagree; a causal multiplaquette explanation is not established.")
+            print(f"  → xi=4 is the selected scenario point; optimality is not established.")
+            obstruction = "scenario_cross_xi_disagreement"
         else:
             print(f"\n  → Cross-xi consistency {nnlo_spread/nnlo_mean:.1%} within "
                   f"single-plaquette tolerance.")
@@ -652,53 +522,34 @@ def error_budget_combined(convergence_result: Dict,
                            target_eps_witness: float = 3e-4,
                            P_KS_central: float = 0.4410,
                            eps_vol_input: float = 0.0006) -> Dict:
-    """Total error budget for the combined NLO + lattice estimator.
-
-    Components:
-      eps_stat:   from MC central error
-      eps_vol:    from L→∞ extrapolation (this work or PR #685)
-      eps_NNLO:   residual from NLO+NNLO truncation (this work)
-      eps_c3:     c_3 fit uncertainty (~0.05) propagated
-
-    The OPTIMAL operating point is xi=4 because:
-      (a) it has direct L→∞ vol scan
-      (b) at xi=8, 16, multi-plaquette structure breaks the single-
-          plaquette correction (cross-xi spread > 30%)
-      (c) at xi=4, β_σ = 1.5 is in the moderate-coupling regime
-
-    We therefore report TWO budgets:
-      Budget A: at the L→∞ extrapolated central value at xi=4
-      Budget B: at each lattice-MC point (4^3 x 16) for xi=4, 8, 16
-
-    Reports total budget and asks: does it reach ε_witness?
-    """
+    'Combine supplied scenario terms in quadrature. The 1e-6 quadrature allowance and volume errors are inputs, not certified bounds. Target flags concern only this arithmetic.'
     print("\n" + "=" * 70)
-    print("COMBINED ERROR BUDGET (NLO + NNLO + lattice)")
+    print("CONDITIONAL SCENARIO BUDGET (supplied terms only)")
     print("=" * 70)
     target = target_eps_witness
     print(f"  Target ε_witness: {target:.4f} = 3e-4 absolute on <P>_KS")
     print()
-    print(f"  Optimal operating point: xi=4 (L→∞ vol scan available, β_σ=1.5)")
+    print(f"  Selected scenario point: xi=4 (historical finite-volume summaries, β_σ=1.5)")
     print()
 
     # ---- Budget A: at xi=4, L→∞ ----
-    print("  Budget A: at xi=4, L→∞ thermodynamic-limit reference")
+    print("  Budget A: at xi=4, L→∞ historical fitted-intercept reference (limit unvalidated)")
     P_lat_inf = P_KS_central
     eps_vol_inf = eps_vol_input
     P_combined_inf_NLO, _ = combined_estimator(P_lat_inf, 4, order=2)
     P_combined_inf_NNLO, _ = combined_estimator(P_lat_inf, 4, order=3)
     P_combined_inf_Weyl, _ = combined_estimator(P_lat_inf, 4, use_weyl_truth=True)
     res_inf = residual_NNLO(4, P_KS_central=P_KS_central)
-    eps_NNLO_inf = res_inf["residual_NNLO"]  # Weyl-truth-based residual
+    eps_NNLO_inf = res_inf["residual_NNLO"]  # finite Weyl quadrature-based residual
     eps_c3_inf = res_inf["c_3_uncertainty_band"]
     # Stat from L→∞ fit propagated:
     eps_stat_inf = 0.0  # already absorbed in eps_vol via fit covariance
 
-    # Total for budget A using Weyl-truth correction (eliminates analytic truncation)
-    # When using Weyl integration, the analytic truncation error is ~ 1e-7 (negligible).
+    # Total for budget A using finite Weyl quadrature correction (eliminates analytic truncation)
+    # Finite-grid replacement does not certify either quadrature or physical error.
     # The remaining residual is from quadrature accuracy + multi-plaquette structure.
-    # eps_quadrature is bounded by < 1e-6 (cross-checked with ngauss=300 vs 100)
-    eps_quad_inf = 1e-6  # Weyl-quadrature bound
+    # The historical 1e-6 allowance is supplied, not a proved bound.
+    eps_quad_inf = 1e-6  # supplied quadrature allowance; no certified bound
     eps_total_A = math.sqrt(eps_stat_inf ** 2 + eps_vol_inf ** 2 + eps_quad_inf ** 2)
     eps_total_A_NNLO = math.sqrt(eps_stat_inf ** 2 + eps_vol_inf ** 2
                                   + eps_NNLO_inf ** 2 + eps_c3_inf ** 2)
@@ -711,12 +562,12 @@ def error_budget_combined(convergence_result: Dict,
     print(f"    Budget with NNLO truncation:")
     print(f"      eps_vol={eps_vol_inf:.5f} eps_NNLO={eps_NNLO_inf:.5f} "
           f"eps_c3={eps_c3_inf:.5f} -> total={eps_total_A_NNLO:.5f}")
-    print(f"    Budget with Weyl-truth correction (PRIMARY):")
+    print(f"    Budget with finite Weyl quadrature correction (PRIMARY):")
     print(f"      eps_vol={eps_vol_inf:.5f} eps_quad={eps_quad_inf:.6f} "
           f"-> total={eps_total_A:.5f}")
     passes_A = eps_total_A < target
     passes_A_NNLO = eps_total_A_NNLO < target
-    print(f"    Weyl-truth: {'PASS' if passes_A else 'FAIL'} ε_witness={target}")
+    print(f"    finite Weyl quadrature: {'PASS' if passes_A else 'FAIL'} ε_witness={target}")
     print(f"    NNLO trunc: {'PASS' if passes_A_NNLO else 'FAIL'} ε_witness={target}")
     print()
 
@@ -729,10 +580,10 @@ def error_budget_combined(convergence_result: Dict,
         # Vol error: at xi=4 we have direct vol scan giving 0.0006.
         # At xi=8, 16 we have only 4^3 x 16. The vol error has not been
         # measured by direct extrapolation, so we report it as "uncalibrated"
-        # and use a conservative bound from cross-xi P_combined spread.
+        # and use the original supplied proxy below; it is not a conservative bound.
         if xi == 4:
             eps_vol = 0.0006
-            vol_status = "calibrated_L=3,4,6"
+            vol_status = "historical_summary_L=3,4,6_unvalidated"
         else:
             # No vol scan at this xi; use a placeholder ~3x stat error
             eps_vol = 3 * eps_stat
@@ -787,31 +638,18 @@ def error_budget_combined(convergence_result: Dict,
 
 def pass_fail_accounting(self_test_result: Dict, conv_result: Dict,
                           budget: Dict, target: float = 3e-4) -> Tuple[int, int, list]:
-    """Structured PASS/FAIL accounting for the runner verdict line.
-
-    Tests:
-      1. SU(3) NLO closed-form self-test (c_2 = -1)
-      2. Combined estimator at xi=4 L→∞ produces a corrected value
-         strictly less than the lattice value (correction applied)
-      3. NNLO truncation residual at xi=4 is below ε_witness in absolute terms
-         (the *correction precision* is at ε_witness scale)
-      4. ε_witness achieved by best combined estimator under the imported
-         summary values and Weyl-truth correction.
-      5. Multi-plaquette obstruction detected at large xi (cross-xi spread
-         > 5%; this is structural, NOT a runner failure - it characterizes
-         the system).
-    """
+    'Preserved numerical target comparisons within the supplied scenario. No physical epsilon-witness, causal obstruction or limit theorem is certified.'
     n_pass = 0
     n_fail = 0
     notes = []
 
-    # Test 1: SU(3) NLO closed-form self-test
+    # Test 1: SU(3) supplied NLO target diagnostic
     if self_test_result["pass"]:
         n_pass += 1
-        notes.append(("PASS", "SU(3) NLO closed-form self-test (c_2 = -1)"))
+        notes.append(("PASS", "SU(3) supplied NLO target diagnostic (c_2 = -1)"))
     else:
         n_fail += 1
-        notes.append(("FAIL", "SU(3) NLO closed-form self-test (c_2 != -1)"))
+        notes.append(("FAIL", "SU(3) supplied NLO target diagnostic (c_2 != -1)"))
 
     # Test 2: Combined estimator at xi=4, L→∞ produces a corrected value
     P_lat_xi4_inf = 0.4410
@@ -826,13 +664,13 @@ def pass_fail_accounting(self_test_result: Dict, conv_result: Dict,
         notes.append(("FAIL",
             f"Combined xi=4 L→∞ inconsistent: {P_combined_xi4_inf:.5f}"))
 
-    # Test 3: Weyl-truth correction residual at xi=4 < ε_witness
+    # Test 3: finite Weyl quadrature correction residual at xi=4 < ε_witness
     res_inf = residual_NNLO(4, P_KS_central=0.4410, use_weyl_truth=True)
     eps_truth_xi4 = res_inf.get("residual_NNLO_truth")
     if eps_truth_xi4 is not None and eps_truth_xi4 < target:
         n_pass += 1
         notes.append(("PASS",
-            f"Weyl-truth residual at xi=4 below ε_witness ({eps_truth_xi4:.5f} < {target})"))
+            f"finite Weyl quadrature residual at xi=4 below ε_witness ({eps_truth_xi4:.5f} < {target})"))
     else:
         # NNLO residual at xi=8
         res_8 = residual_NNLO(8, P_KS_central=0.4410)
@@ -844,14 +682,14 @@ def pass_fail_accounting(self_test_result: Dict, conv_result: Dict,
         else:
             n_fail += 1
             notes.append(("FAIL",
-                f"Weyl-truth residual at xi=4 above ε_witness "
+                f"finite Weyl quadrature residual at xi=4 above ε_witness "
                 f"({eps_truth_xi4 if eps_truth_xi4 is not None else 'N/A'})"))
 
     # Test 4: full ε_witness target under the imported summary values.
     if budget.get("passes_eps_witness", False):
         n_pass += 1
         notes.append(("PASS",
-            f"ε_witness budget met under imported summary values (total={budget['best_eps_total']:.5f})"))
+            f"Scenario target met under supplied summaries and transfer rule; physical witness unproved (total={budget['best_eps_total']:.5f})"))
     else:
         # FAIL is the honest state. Report the dominant frontier:
         bA = budget.get("budget_A_xi4_Linfty", {})
@@ -872,20 +710,20 @@ def pass_fail_accounting(self_test_result: Dict, conv_result: Dict,
                 f"ε_witness NOT achieved (no budget data)"))
 
     # Test 5: multi-plaquette obstruction detection at large xi
-    if conv_result.get("obstruction") == "multi_plaquette_at_large_xi":
+    if conv_result.get("obstruction") == "scenario_cross_xi_disagreement":
         n_pass += 1
         notes.append(("PASS",
-            f"Multi-plaquette obstruction at large xi: detected via cross-xi "
+            f"Scenario disagreement at large xi: cross-xi "
             f"spread {conv_result['cross_xi_spread_NNLO']:.5f} (= "
             f"{conv_result['cross_xi_spread_NNLO']/conv_result['cross_xi_mean_NNLO']:.1%}); "
-            f"optimal xi=4 confirmed"))
+            f"xi=4 selected, not proved optimal; cause unresolved"))
     else:
         # This is also acceptable — if cross-xi spread is small, then
         # high-xi *would* converge to the same value; that's a different
         # success mode. We don't fail on absence; record a note.
         n_pass += 1
         notes.append(("PASS",
-            "Cross-xi consistency within tolerance (single-plaquette correction sufficient)"))
+            "Scenario cross-xi consistency within tolerance; physical sufficiency unproved"))
 
     return n_pass, n_fail, notes
 
@@ -896,12 +734,12 @@ def pass_fail_accounting(self_test_result: Dict, conv_result: Dict,
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description="Conditional historical-scenario diagnostic; no physical error-bound or limit certification.")
     parser.add_argument("--mode", choices=["analytic", "mc"], default="analytic",
-                        help="analytic: use prior MC ensemble values; mc: short cross-check MC run")
+                        help="analytic: conditional historical-summary scenario; mc: optional short MC check, no physical closure")
     parser.add_argument("--target_eps_witness", type=float, default=3e-4)
     parser.add_argument("--P_KS_central", type=float, default=0.4410,
-                        help="Central <P>_KS_∞ from PR #685 vol scan (xi=4)")
+                        help="Supplied historical PR #685 fitted-intercept scenario (xi=4); limit unvalidated")
     parser.add_argument("--out_dir", type=str,
                         default="outputs/action_first_principles_2026_05_10/c_iso_numerical_convergence")
     parser.add_argument("--seeds", type=str, default="1,2")
@@ -910,9 +748,12 @@ def main() -> int:
                         help="Disable using refit P_inf as central value (use --P_KS_central as-is)")
     args = parser.parse_args()
 
+    print("EVIDENCE SCOPE:", EVIDENCE_SCOPE["classification"])
+    print("Wilson proof/remainder, ensemble provenance, multiplaquette transfer and Hamilton-limit convergence remain open.")
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     results: dict = {
+        "evidence_scope": EVIDENCE_SCOPE,
         "args": vars(args),
         "version": "c-iso-numerical-convergence-2026-05-10",
         "module": "cl3_c_iso_numerical_convergence_2026_05_10_numconv",
@@ -975,33 +816,33 @@ def main() -> int:
 
     # --- Bounded support summary ---
     print("\n" + "=" * 70)
-    print("BOUNDED SUPPORT SUMMARY")
+    print("CONDITIONAL HISTORICAL-SCENARIO SUMMARY")
     print("=" * 70)
     bA = results["error_budget"].get("budget_A_xi4_Linfty", {})
-    print(f"  Lattice (this work refit L=3,4,6,8,10): <P_σ>(g²=1, xi=4, L→∞) = {P_KS_eff:.5f} ± {eps_vol_eff:.5f}")
+    print(f"  Historical-summary finite refit (L=3,4,6,8,10; limit unvalidated): <P_σ>(g²=1, xi=4, L→∞) = {P_KS_eff:.5f} ± {eps_vol_eff:.5f}")
     print(f"  SU(3) C-iso correction at xi=4 (s_t=0.125):")
     print(f"    rel_shift_NLO  = (7/12) s_t = 0.0729")
-    print(f"    rel_shift_truth (Weyl)      = 0.0718")
+    print(f"    rel_shift_quad (finite Weyl grid)      = 0.0718")
     print()
-    print(f"  Combined estimator at xi=4, L→∞:")
+    print(f"  Scenario-transformed fitted intercept at xi=4 (limit unvalidated):")
     print(f"    P_combined_NLO  = {bA.get('P_combined_NLO', 'N/A'):.5f}")
     print(f"    P_combined_NNLO = {bA.get('P_combined_NNLO', 'N/A'):.5f}")
     print(f"    P_combined_Weyl = {bA.get('P_combined_Weyl', 'N/A'):.5f}  (PRIMARY)")
     print(f"    eps_total (Weyl)  = {bA.get('eps_total', 'N/A'):.5f}")
     print(f"    eps_total (NNLO)  = {bA.get('eps_total_NNLO', 'N/A'):.5f}")
     print()
-    print(f"  Multi-plaquette structural obstruction at high xi:")
+    print(f"  Supplied-scenario cross-xi disagreement (cause unresolved):")
     print(f"    Cross-xi P_combined spread: "
           f"{results['convergence_test']['cross_xi_spread_NNLO']:.5f} "
           f"({results['convergence_test']['cross_xi_spread_NNLO']/results['convergence_test']['cross_xi_mean_NNLO']:.1%})")
     print(f"    → single-plaquette C-iso correction does NOT capture the full")
-    print(f"      systematic at xi=8, 16; optimal operating xi = 4.")
+    print(f"      scenario variation at xi=8, 16; xi=4 is only a selected comparison point.")
     print()
     if bA.get("passes_eps_witness"):
-        print(f"  ε_witness {args.target_eps_witness} -> budget met via Weyl-truth correction at xi=4")
+        print(f"  ε_witness {args.target_eps_witness} -> scenario target met at xi=4; physical witness unproved")
     else:
         print(f"  ε_witness {args.target_eps_witness} -> FAIL "
-              f"(Weyl-truth budget total {bA.get('eps_total', 'N/A'):.5f})")
+              f"(finite Weyl quadrature budget total {bA.get('eps_total', 'N/A'):.5f})")
     if bA.get("passes_eps_witness_NNLO"):
         print(f"  (NNLO-truncation budget would also PASS)")
     else:

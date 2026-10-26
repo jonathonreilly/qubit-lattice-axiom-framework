@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_pmns_graph_first_ordered_chain_nonzero_current_closure_2026_04_21.py
-runner_sha256: f67bb82016ab682a96b04d91152f40fccea85cb63ac51741a6512a68a5199aa0
-timeout_sec: 120
+runner_sha256: fd5a38571943a3f52d4424fbd8fdf10fc837dd0bd67a8cd6ebafe0361545eca0
+input_fingerprint_sha256: f44dea95dde987e41037e3334207821dd715c081ac465dc4b8ef0e23745cd033
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.53
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -11,7 +12,7 @@ DM PMNS GRAPH-FIRST ORDERED-CHAIN NONZERO-CURRENT ACTIVATION
 ========================================================================================
 
 Question:
-  Can one derive an explicit sole-axiom nonzero-current law on the
+  Can one derive an explicit supplied-fixture nonzero-current law on the
   retained hw=1 response family?
 
 ========================================================================================
@@ -32,7 +33,7 @@ PART 2: THE UNIQUE NORMALIZED CHAIN GRADING IS diag(1,2,3)
 ========================================================================================
 PART 3: THE ORDERED-CHAIN LAW ACTIVATES THE NATIVE CURRENT
 ========================================================================================
-  [PASS] The canonical sole-axiom active law is N + C on the ordered chain
+  [PASS] The canonical supplied-fixture active law is N + C on the ordered chain
   [PASS] The ordered-chain law lies on the canonical diagonal-plus-forward-cycle support  (A_ord=[[1.+0.j 1.+0.j 0.+0.j]
  [0.+0.j 2.+0.j 1.+0.j]
  [1.+0.j 0.+0.j 3.+0.j]])
@@ -49,9 +50,8 @@ PART 4: THE NONZERO CURRENT SURVIVES ON THE RESPONSE FAMILY
 ========================================================================================
 PART 5: REDUCTION CONSEQUENCE
 ========================================================================================
-  [PASS] The prior last-mile reduction note records nonzero J_chi production as the exact remaining strict/native burden
-  [PASS] The ordered-chain theorem supplies one explicit sole-axiom nonzero-current law  (J_chi(A_ord)=1.000000000000+0.000000000000j)
-  [PASS] So the reduced constructive target is met on the retained hw=1 response family  (reduction target + exact current activation)
+  [PASS] The ordered-chain theorem supplies one explicit supplied-fixture nonzero-current law  (J_chi(A_ord)=1.000000000000+0.000000000000j)
+  [PASS] The supplied fixture has nonzero current  (numerical factor only; downstream documentary factor is checked separately)
 
 ========================================================================================
 PART 6: CIRCULARITY GUARD
@@ -68,10 +68,10 @@ RESULT
     - the canonical ordered-chain law A_ord = N + C produces J_chi = 1
     - that current survives exactly on the retained response family
 
-  Therefore one explicit sole-axiom nonzero-current law is derived on
+  Therefore one explicit supplied-fixture nonzero-current law is derived on
   the retained hw=1 response family, meeting the reduced constructive target.
 
-SUMMARY: PASS=19 FAIL=0
+SUMMARY: PASS=18 FAIL=0
 
 ----- stderr -----
 

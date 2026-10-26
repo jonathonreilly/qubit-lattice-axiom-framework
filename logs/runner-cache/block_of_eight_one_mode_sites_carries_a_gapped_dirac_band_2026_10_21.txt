@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/block_of_eight_one_mode_sites_carries_a_gapped_dirac_band_2026_10_21.py
+runner_sha256: d7190e5e30d9f512e2a29a5498d30b3fe7d3a56ace28eb4e83406d02c82615ca
+input_fingerprint_sha256: 596a98839f33f141c524e35af910946de4dff9138c0c547576969461f83a3b9c
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 2.07
+status: ok
+----- stdout -----
+[PASS] the block-local eight-mode update has the same spectrum as the momentum-shifted form  max difference 1.9e-15 over 50 random block momenta
+[PASS] 25^3 sampled minimum agrees with .05 at m=.05,M=.5; no global lower bound  min |quasi-energy| 0.0500 on 25^3
+[PASS] the update factors as block-local mass, three block substeps and a sign on L', R'
+[PASS] three supplied momenta: staged mean step agrees with tracked eigenphase derivative; no physical source identification  max |mean step - v| 3.8e-10
+per_site: CAR/Fock interpretation and eight labelled block modes, the assignment of block modes to L, R, L', R', the substep order and the two masses are supplied choices.
+lattice_wide: no matter content, exact cubic covariance, removal of sublattice copies or physical masses is established.
+elapsed_seconds 2.0
+
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

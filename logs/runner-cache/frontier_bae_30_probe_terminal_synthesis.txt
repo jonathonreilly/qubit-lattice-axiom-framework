@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_bae_30_probe_terminal_synthesis.py
-runner_sha256: 3df227dc6f291750220466d9e5ad6079f88a514ad1591a2748898c1656ec5221
+runner_sha256: f43f15fc75e3cc3f845e956fda2a9c6e89f08280947c25cf8135541334f860ab
+input_fingerprint_sha256: 88dc591edb17ebd0cc12f4170fcb8522fd3241c691125d3c4ec4e7c65044dbb2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 30-probe BAE campaign terminal synthesis check
@@ -53,7 +54,7 @@ PASS: κ=1 vs κ=2 disagreement recorded
 PASS: factor-of-2 disagreement quantified
 PASS: BAE remaining admission named
 PASS: P (radian bridge) remaining admission named
-PASS: admission count is 2 (not 3)
+PASS: historical admission-count report records 2 (not a current certification)
 PASS: no theorem promotion
 PASS: no axiom added
 PASS: strategic options listed (3 options)
@@ -67,11 +68,11 @@ PASS: minimal axioms note has Cl(3) A1
 PASS: minimal axioms note has Z³ A2
 PASS: naming-collision warning present
 PASS: review-loop rule for future branches present
-PASS: review-loop rule notes campaign is terminal
+PASS: documentary check: former terminal instruction is withdrawn and nonbinding
 PASS: campaign rounds enumerated (≥7 distinct rounds) | rounds counted: 9/9
 
 TOTAL: PASS=60 FAIL=0
-30-probe BAE campaign terminal synthesis check passed: all 30 probes cited, 2 positive candidate results recorded, structural impossibility claims recorded, partial-falsification candidate recorded, 2 remaining admissions correctly counted, no theorem promotion, no axiom added, strategic options listed without selection.
+30-probe BAE campaign terminal synthesis check passed: all 30 probes cited, 2 positive candidate results recorded, structural impossibility claims recorded, partial-falsification candidate recorded, historical 2-admission report recorded without current certification, no theorem promotion, no axiom added, strategic options listed without selection.
 
 ----- stderr -----
 

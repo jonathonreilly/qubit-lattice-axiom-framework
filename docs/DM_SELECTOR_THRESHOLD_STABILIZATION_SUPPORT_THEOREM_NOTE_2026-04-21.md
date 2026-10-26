@@ -1,8 +1,41 @@
 # DM Selector Threshold Stabilization Support Theorem
 
+**Type:** open_gate
 **Date:** 2026-04-21  
-**Status:** selector-side support theorem on the open DM gate  
+**Status:** supplied finite numerical support; physical selection open  
 **Primary runner:** `scripts/frontier_dm_selector_threshold_stabilization_support_2026_04_21.py`
+
+## Current execution and claim boundary (2026-10-23)
+
+The current result is reproduction of supplied finite-bank calculations, with
+all original numerical predicates, thresholds, grids and optimizer settings
+preserved. A numerical constrained optimizer is not an exact selected source
+or certified global minimizer. Sampled metrics/shifts and bracketed roots do
+not establish all-shift, whole-window or exhaustive selector claims. In
+particular, threshold midpoint tests are not an interval proof. No physical
+source law, normalization, preferred metric or sufficient/exhaustive future
+research route follows from these observations.
+
+Documentary checks state only whether the actual input texts contain their
+reported phrases. They do not certify the authority or scientific truth of
+those historical claims. The shared summary is checked for its current open
+physical-selection boundary and supplied PMNS-angle status; old missing-phrase
+failures remain in the immutable source/cache history. Literal-True narration
+is printed as information, not counted as PASS. All numerical failures still
+control the nonzero exit. No desired numerical result or threshold is relaxed.
+
+Actual primary cap is300seconds. Own note, literal document reads and complete
+transitive local helper/input closure are declared before fresh execution.
+Earlier quoted PASS counts below are historical and are not current receipts.
+The prior sources/caches are recoverable at14504496b15f9aa47e9b0323e272be111b2b1724.
+
+## Historical argument and values — withdrawn as current authority
+
+The remaining original body is preserved verbatim as a dated proposal and
+record of reported calculations. Its “exact selector,” “canonical,” “first,”
+“strongest,” whole-window and narrowed/exhaustive-burden assertions are not
+current conclusions. The current scope is solely the bounded reproduction
+specified above; no legacy paragraph overrides it.
 
 ## Statement
 

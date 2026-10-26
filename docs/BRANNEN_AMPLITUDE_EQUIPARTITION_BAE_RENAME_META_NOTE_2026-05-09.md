@@ -66,7 +66,7 @@ open PRs grandfather the "A1" label with the BAE alias.
 ## Why this rename is the right one
 
 The 17-probe campaign that ran 2026-05-07 to 2026-05-09 attacked closure
-of the BAE-condition from 17 independent angles. Across the campaign,
+of the BAE-condition through 17 named probes. This historical count is not a proof of route independence. Across the campaign,
 the structural content of BAE became precisely characterized:
 
 | Layer | Characterization |
@@ -145,13 +145,13 @@ equipartition condition:
 This note explicitly does **not**:
 
 1. Modify any retained theorem on main. The 17-probe campaign's
-   structural findings remain unchanged.
+   historical source remains recoverable. Probe 15's universal limit-exclusion mechanism is withdrawn; its current owner proves only a supplied finite circulant lemma.
 2. Reclassify the BAE admission's `claim_type` or `effective_status`.
    The admission status is independent of the name.
 3. Promote any specific Probe's verdict. The campaign's terminal state
    (bounded admission with 3 structural-impossibility theorems on
    algebra-level closure + functional-choice residue at Q-level)
-   stands.
+   is a historical campaign characterization, not a current proof of exhaustive physical impossibility.
 4. Change the framework's axiom set. A1 (Cl(3)) and A2 (Z³) remain the
    only mathematical axioms.
 5. Rename anything in already-landed PR source-notes. File immutability
@@ -167,7 +167,7 @@ The runner is a review-hygiene check, not a physics proof. It verifies:
 
 1. The rename note is classified as `meta`.
 2. The rename does not promote any audit row.
-3. The campaign's structural findings (referenced) are not altered.
+3. Historical campaign references remain visible without approving their conclusions.
 4. The framework axiom set (A1, A2) is unchanged.
 5. The BAE name is consistently used in this note's body.
 6. The legacy "A1-condition" alias is acknowledged.

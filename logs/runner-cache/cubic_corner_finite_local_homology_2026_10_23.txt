@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/cubic_corner_finite_local_homology_2026_10_23.py
+runner_sha256: b76bf24f2c8b5291e90a0c29b3cf17b325e2ef0863103c67ff9359a08454f2b3
+input_fingerprint_sha256: 86e58ada9a38534ca8d8bb3bd3725ea0bed8689f74503ca967153dc7368f5f23
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.48
+status: ok
+----- stdout -----
+Local homology of the underlying 2-complexes (open boxes of Z^3)
+   cubic  r=1: cycles in B 0, filled by cells in B+1 0; closed cochains on B 0, coboundaries from B+1 0
+   cubic  r=2: cycles in B 5, filled by cells in B+1 5; closed cochains on B 0, coboundaries from B+1 0
+   cubic  r=3: cycles in B 28, filled by cells in B+1 28; closed cochains on B 1, coboundaries from B+1 1
+   cubic  r=4: cycles in B 81, filled by cells in B+1 81; closed cochains on B 8, coboundaries from B+1 8
+   cubic  r=5: cycles in B 176, filled by cells in B+1 176; closed cochains on B 27, coboundaries from B+1 27
+   corner r=1: cycles in B 13, filled by cells in B+1 13; closed cochains on B 0, coboundaries from B+1 0
+   corner r=2: cycles in B 145, filled by cells in B+1 145; closed cochains on B 24, coboundaries from B+1 24
+   corner r=3: cycles in B 541, filled by cells in B+1 541; closed cochains on B 144, coboundaries from B+1 144
+   corner r=4: cycles in B 1345, filled by cells in B+1 1345; closed cochains on B 432, coboundaries from B+1 432
+[PASS] (H1-loc) every cycle in a cube B (side 1..5 cubic, 1..4 corner) is a sum of 2-cells in B+1
+[PASS] (H^1-loc) every cell-closed cochain on B is the coboundary of a vertex function on B+1
+Finite torus geometry only: no stabilizer logical count inferred
+   cubic torus L=3: |V|=27 |E|=81 |F|=81 dim H_1 = 3
+   corner torus L=3: |V|=324 |E|=972 |F|=1107 dim H_1 = 3
+   cubic torus L=4: |V|=64 |E|=192 |F|=192 dim H_1 = 3
+   corner torus L=4: |V|=768 |E|=2304 |F|=2624 dim H_1 = 3
+[PASS] dim H_1(T^3; F2) = 3 for the cubic and the corner complexes on L = 3, 4 tori
+[PASS] negative control: omitting all faces leaves unfilled inner cycles  (cycle defect=5)
+[PASS] both torus builders reject unsupported L=2
+[PASS] negative control: malformed cell with nonzero vertex boundary is rejected
+scope: exact finite-box vector-space equalities; no infinite-lattice collar claim or code/physical inference
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

@@ -26,8 +26,7 @@ import check, [C] first-principles compute on explicit small lattices,
             conjugation.
   [RT-REC]  W-transport of the record/durability structure: the Record
             axiom and the record rows it consumes are axis-blind by
-            their own text (no time metric, no forced formation
-            rule/site/rate, supplied clock); durability (= operator-order
+            their own text (no supplied time metric, open formation construction, supplied clock); durability (= operator-order
             monotonicity of the
             registered-record counter) is unitary-transport invariant
             (computed); the registration-cone slice package (CAP-K
@@ -53,6 +52,10 @@ Deterministic, no RNG in any load-bearing leg, runtime well under 5 min.
 TOTAL: PASS=n FAIL=0.
 """
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ('docs/ANOMALY_FORCES_TIME_THEOREM.md', 'docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'docs/OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026-06-10.md', 'docs/POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md', 'docs/QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md', 'docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md', 'docs/SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md', 'docs/SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md', 'docs/SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md')
+
 
 import itertools
 import os
@@ -213,18 +216,16 @@ def block_RT_REC(sec, W, Ls, sites, idx):
     ax_flat = " ".join(ax.split())
     record("B", "Record axiom is axis-blind by its own text: 'time metric' sits in the "
            "open-gates exclusion list and record permanence carries no axis label",
-           "time metric, and local observability of records" in ax_flat
+           "time metric" in ax_flat and "local observability of records" in ax_flat
            and "records are permanent" in ax,
            "MINIMAL_AXIOMS_2026-06-29.md")
 
     rf = read_doc("RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md")
-    record("B", "record formation supplies no axis datum: occurrence is axiom-supplied "
-           "('Records form.') and the narrowed no-go keeps the formation "
-           "rule/process/state/site/weight/rate unforced, so no axis label can be "
-           "derived from record formation",
-           'occurrence is axiom-supplied by "Records form."' in rf
-           and "do **not** force the formation rule/process/state/site/weight/rate" in rf,
-           "narrowed record-formation no-go quoted")
+    record("B", "current formation source supplies occurrence and a conditional distribution; "
+           "production and values remain open, not a general axis impossibility",
+           "The current memo supplies occurrence and a local conditional distribution." in " ".join(rf.split())
+           and "No general nonderivability theorem is asserted." in " ".join(rf.split()),
+           "documentary premise inventory; W-transport calculation is conditional")
 
     cr = read_doc("POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md")
     record("B", "the clock map is supplied, never derived from records (retained_no_go): "

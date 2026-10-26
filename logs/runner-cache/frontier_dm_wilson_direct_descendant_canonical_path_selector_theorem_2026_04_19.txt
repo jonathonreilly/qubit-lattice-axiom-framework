@@ -3,7 +3,7 @@ runner: scripts/frontier_dm_wilson_direct_descendant_canonical_path_selector_the
 runner_sha256: 46420baa5e981dc38df1d569a87c800a435b394797c4550fa4761b6e11e3a9a6
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 27.20
+elapsed_sec: 61.35
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -36,18 +36,18 @@ PART 3: GEODESIC LANGUAGE DOES NOT MAKE THE CURRENT SEGMENT UNIQUE
 PART 4: THE OBVIOUS SEED-BASED ETA_1 GRADIENT FLOW IS METRIC-DEPENDENT
 ========================================================================================
   [PASS] The Euclidean and x1-heavy eta_1 gradient flows both hit exact eta_1 = 1 roots  (euclid: eta_1=1.000000000000, x1-heavy: eta_1=1.000000000000)
-  [PASS] Those gradient-flow roots are distinct, so the flow law depends on the chosen metric  (dist=0.078494)
-  [PASS] Neither obvious eta_1 gradient flow lands on the current constructive path-selected root  (euclid: dist_to_P=1.624214, x1-heavy: dist_to_P=1.649935)
-  [PASS] Neither obvious eta_1 gradient flow root is constructive positive  (euclid: pack=[ 1.        0.       -0.300455  0.011231  0.037109]; x1-heavy: pack=[ 1.        0.       -0.341398 -0.103936  0.036317])
+  [PASS] Those gradient-flow roots are distinct, so the flow law depends on the chosen metric  (dist=0.077834)
+  [PASS] Neither obvious eta_1 gradient flow lands on the current constructive path-selected root  (euclid: dist_to_P=1.624072, x1-heavy: dist_to_P=1.649935)
+  [PASS] Neither obvious eta_1 gradient flow root is constructive positive  (euclid: pack=[ 1.        0.       -0.299487  0.013649  0.037178]; x1-heavy: pack=[ 1.        0.       -0.341397 -0.103936  0.036317])
 
 ========================================================================================
 PART 5: NATURAL CARRIER PULLBACK GEOMETRIES STILL DO NOT RECOVER THE CURRENT ROOT
 ========================================================================================
   [PASS] The canonical Y- and H-carriers induce positive-definite pullback metrics at the aligned seed  (H-pullback: min eig=5.968896e-02; Y-pullback: min eig=9.404444e-02)
   [PASS] The H- and Y-pullback eta_1 flows both hit exact eta_1 = 1 roots  (H-pullback: eta_1=1.000000000000, Y-pullback: eta_1=1.000000000000)
-  [PASS] Those pullback-flow roots are distinct, so even natural carrier geometries do not produce one canonical eta_1 flow  (dist=0.020960)
-  [PASS] Neither pullback-flow root lands on the current constructive path-selected point  (H-pullback: dist_to_P=1.595027, Y-pullback: dist_to_P=1.594874)
-  [PASS] Neither pullback-flow root is constructive positive  (H-pullback: pack=[ 1.        0.       -0.236231  0.223191  0.038093]; Y-pullback: pack=[ 1.        0.       -0.243929  0.208417  0.037647])
+  [PASS] Those pullback-flow roots are distinct, so even natural carrier geometries do not produce one canonical eta_1 flow  (dist=0.020760)
+  [PASS] Neither pullback-flow root lands on the current constructive path-selected point  (H-pullback: dist_to_P=1.594873, Y-pullback: dist_to_P=1.594864)
+  [PASS] Neither pullback-flow root is constructive positive  (H-pullback: pack=[ 1.        0.       -0.237026  0.224533  0.038068]; Y-pullback: pack=[ 1.        0.       -0.243974  0.208357  0.037643])
 
 ========================================================================================
 PART 6: THE SOURCE-SURFACE SELECTOR PACKET DOES NOT DESCEND TO THIS LANE
@@ -67,10 +67,10 @@ PART 7: BOTTOM LINE
   competing root A+ = [1.014977 0.492209 0.653283 0.119128 1.412372]
   competing root B+ = [0.860633 0.327351 0.713328 0.104582 1.590138]
   competing root C+ = [1.00713  0.301884 0.795716 0.029973 2.193449]
-  flow root   euclid = [0.585168 0.417071 0.266752 0.209285 0.      ]
+  flow root   euclid = [0.586318 0.418098 0.265834 0.209317 0.      ]
   flow root x1-heavy = [0.569279 0.422268 0.195768 0.238319 0.      ]
-  pullback root H-pullback = [0.651198 0.431546 0.306859 0.187944 0.      ]
-  pullback root Y-pullback = [0.639747 0.422065 0.320674 0.182706 0.      ]
+  pullback root H-pullback = [0.651108 0.43193  0.307133 0.186365 0.      ]
+  pullback root Y-pullback = [0.639662 0.421986 0.320819 0.18265  0.      ]
 
 ========================================================================================
 PART 8: N5 EXECUTION CERTIFICATE — WHAT THIS RUNNER RESOLVES

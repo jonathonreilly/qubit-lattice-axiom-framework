@@ -1,0 +1,21 @@
+{
+  "determinant_polynomial": "-211755473008760817*t**3/40000000000000000 + t**2*(252452790631*sqrt(2)/150000000000 + 64966284129*sqrt(6)/12500000000) + t*(-146436991/18000000 - 466903*sqrt(3)/140625) + 32*sqrt(2)/9",
+  "derivative_roots": [
+    "1.127365661486395503611777",
+    "0.7755698013406396026008961"
+  ],
+  "interval_candidates": [
+    "0",
+    "1.000000000000000000000000",
+    "0.7755698013406396026008961"
+  ],
+  "values": [
+    "5.028314888437671284628227",
+    "0.9591735864934436243830883",
+    "0.8783091593368304312591174"
+  ],
+  "base_trace": "0",
+  "base_det": "32*sqrt(2)/9",
+  "inertia_reason": "trace=0, det>0 and nonzero Hermitian eigenvalues imply two negative and one positive; continuity preserves along positive determinant segment",
+  "scope": "exact six-decimal endpoint; affine path, not active-chamber path"
+}

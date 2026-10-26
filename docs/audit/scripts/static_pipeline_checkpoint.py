@@ -407,7 +407,16 @@ def static_input_fingerprint(
         if relative.startswith(VERDICT_GENERATED_PREFIXES)
         and relative.endswith(".json")
     }
-    runner_inputs, detail = _runner_inputs(ledger_paths, graph_inputs)
+    # Before seeding, ledger attachments are generated output from a previous
+    # source tree, not inputs to the graph rebuild. In particular, retired
+    # missing runners must not survive as phantom source tokens until seed
+    # removes their rows. Prepared/full fingerprints still bind every ledger
+    # attachment (including outside scripts/ and missing runners/helpers).
+    # Both modes retain live note candidates, all scripts/*.py filesystem
+    # inputs (including ignored helpers), and the Git-visible input tree.
+    runner_inputs, detail = _runner_inputs(
+        ledger_paths if include_ledger_static else set(), graph_inputs
+    )
     if runner_inputs is None:
         return None, detail
     inputs.update(runner_inputs)

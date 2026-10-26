@@ -8,32 +8,19 @@ narrative). Instead, it verifies two narrow algebraic facts that the
 master note's "lesson learned" section invokes when it explains why the
 2D conclusions did not transfer to the 3D substrate:
 
-  Fact A1 — Angular-measure dimensional accounting.
-      In d ambient dimensions, the transverse-angle integration on a
-      forward-facing cone has measure proportional to
-              theta^(d-2) dtheta  on  theta in [0, pi/2],
-      so the second moment of a Gaussian-in-theta angular weight
-      w(theta) = exp(-beta * theta^2) carries a (d-1)/2 power-of-beta
-      pre-factor (d=2: 1/(2 beta); d=3: 1/(2 beta) but with a different
-      density factor that drops two transverse modes into the kernel).
+  Fact A1 — Supplied small-angle Gaussian model.
+      With angular constants suppressed, the exact spherical measure in
+      d dimensions is sin(theta)^(d-2) dtheta. The flat small-angle model
+      replaces it by theta^(d-2) dtheta; that replacement is not exact on
+      a finite hemisphere. For this stipulated model,
+          I2 = integral_0^(pi/2) exp(-beta theta^2) dtheta,
+          I3 = integral_0^(pi/2) theta exp(-beta theta^2) dtheta.
+      Extending the upper limit to infinity gives sqrt(pi)/(2 sqrt(beta))
+      and 1/(2 beta), hence I2/I3=sqrt(pi beta). These are large-beta
+      asymptotes for the bounded model. They do not derive a lattice kernel
+      power, a dispersion law, or the cause of an empirical fit difference.
 
-      Concretely, for a Gaussian-in-theta kernel `w(theta) =
-      exp(-beta * theta^2)` integrated against the cone-surface measure:
-
-          d=2  =>  int_0^{pi/2} exp(-beta theta^2) dtheta
-                   approx = (1/2) sqrt(pi/beta)              (small-angle limit)
-
-          d=3  =>  int_0^{pi/2} exp(-beta theta^2) theta dtheta
-                   = 1/(2 beta) (1 - exp(-beta (pi/2)^2))
-                   small-angle limit: 1/(2 beta).
-
-      The ratio of these two normalisations differs by a factor of
-      sqrt(beta/pi). This is the elementary statement that the master
-      note's "1/L vs 1/L^2 kernel scaling" sentence relies on; it is
-      pure measure-theoretic geometry, with zero load-bearing on the
-      lattice runners' empirical outputs.
-
-  Fact A2 — Substrate dimensionality is fixed by axiom A2.
+  Fact A2 — Historical substrate documentation.
       Per `MINIMAL_AXIOMS_2026-05-03.md`, the framework's spatial
       substrate is `Z^3`. A `Z^2` regular-lattice computation is
       therefore not the canonical framework readout, and statements
@@ -75,6 +62,11 @@ except ImportError:
 
 
 ROOT = Path(__file__).resolve().parent.parent
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = [
+    "docs/MINIMAL_AXIOMS_2026-05-03.md",
+    "docs/3D_CORRECTION_MASTER_NOTE.md",
+]
 
 PASS = 0
 FAIL = 0
@@ -100,7 +92,7 @@ section("Pattern A meta-narrowing companion: 3d_correction_master_note")
 
 
 # ----------------------------------------------------------------------------
-section("Part 1 (Fact A1.a): d=2 forward-cone angular Gaussian, exact and small-beta limit")
+section("Part 1 (Fact A1.a): d=2 stipulated angular Gaussian, exact and large-beta limit")
 # ----------------------------------------------------------------------------
 beta = Symbol('beta', positive=True)
 theta = Symbol('theta', real=True)
@@ -134,27 +126,26 @@ check(
 
 
 # ----------------------------------------------------------------------------
-section("Part 2 (Fact A1.b): d=3 forward-cone angular Gaussian (theta dtheta measure)")
+section("Part 2 (Fact A1.b): d=3 stipulated flat-angle Gaussian (theta dtheta measure)")
 # ----------------------------------------------------------------------------
-# In d=3 ambient dimensions the forward-cone transverse-angle integration
-# has measure theta dtheta (the Jacobian for spherical coordinates with
-# the azimuthal phi already integrated to 2 pi, dropped here for clarity
-# since we only compare ratios at the same angle range).
+# The supplied small-angle model uses theta dtheta after suppressing
+# angular constants. Exact spherical polar geometry uses sin(theta)dtheta.
+# No finite-angle spherical equality or lattice-kernel scaling is inferred.
 I3_exact = integrate(theta * exp(-beta * theta**2), (theta, 0, pi / 2))
 # Closed form: (1 - exp(-beta (pi/2)^2)) / (2 beta).
 I3_expected = (1 - exp(-beta * (pi / 2) ** 2)) / (2 * beta)
 
 check(
-    "d=3 bounded forward-cone integral = (1 - exp(-beta (pi/2)^2)) / (2 beta) symbolically",
+    "d=3 bounded flat-angle model integral = (1 - exp(-beta (pi/2)^2)) / (2 beta) symbolically",
     simplify(I3_exact - I3_expected) == 0,
     detail=f"diff = {simplify(I3_exact - I3_expected)}",
 )
 
-# Small-beta -> small contribution; large-beta -> 1/(2 beta) limit.
+# Large-beta bounded-model asymptote is 1/(2 beta).
 I3_unbounded = integrate(theta * exp(-beta * theta**2), (theta, 0, oo))
 I3_unbounded_simpl = simplify(I3_unbounded)
 check(
-    "d=3 unbounded integral = 1/(2 beta) symbolically (large-beta asymptote)",
+    "d=3 unbounded flat-angle model integral = 1/(2 beta) symbolically (large-beta asymptote)",
     simplify(I3_unbounded_simpl - 1 / (2 * beta)) == 0,
     detail=f"got {I3_unbounded_simpl}",
 )
@@ -187,7 +178,7 @@ check(
 
 
 # ----------------------------------------------------------------------------
-section("Part 4 (Fact A2): substrate dimensionality is fixed by axiom A2 to Z^3")
+section("Part 4 (Fact A2): historical memo documents Z^3 substrate")
 # ----------------------------------------------------------------------------
 # This is a documentation check: the framework axiom set as recorded in
 # MINIMAL_AXIOMS_2026-05-03.md has A2 stating that the spatial substrate
@@ -207,12 +198,8 @@ if axioms_path.exists():
         has_a2,
         detail="file contents include 'A2', 'Z^3', and 'cubic'",
     )
-    has_two_axioms = "two framework axioms" in body.lower() or "two axioms" in body.lower()
-    check(
-        "MINIMAL_AXIOMS_2026-05-03.md confirms the framework axiom set is A1+A2 only",
-        has_two_axioms,
-        detail="file body contains explicit two-axioms phrasing",
-    )
+    # This is a historical memo check, not the current axiom-count authority.
+    check("historical memo explicitly names the spatial substrate", "Spatial substrate" in body)
 
 # A 2D regular lattice (Z^2) measurement is NOT the canonical framework
 # substrate readout. Statements that close on Z^2 do not transfer to Z^3
@@ -270,15 +257,16 @@ print("""
     surface relative to the framework axiom set MINIMAL_AXIOMS_2026-05-03)
     did not transfer to the canonical Z^3 substrate.
 
-  CONCLUSIONS (independently verified algebraically here):
+  CONCLUSIONS (finite model algebra and documentary checks only):
     (Fact A1)  In d=2 ambient dimensions the angular-Gaussian forward-cone
                integral has small-cone limit (1/2) sqrt(pi/beta); in d=3
                it has small-cone limit 1/(2 beta). Their ratio is
                sqrt(pi * beta), which is NOT a beta-independent constant.
-               This is the elementary measure-theoretic fact behind the
-               master note's '1/L vs 1/L^2 kernel scaling' sentence.
+               This does not derive the lattice kernel scaling or fit changes.
+               The bounded theta-weighted integral is a supplied flat-angle
+               model, not the exact spherical sin(theta) measure.
 
-    (Fact A2)  The framework axiom set in MINIMAL_AXIOMS_2026-05-03 fixes
+    (Fact A2)  The historical memo MINIMAL_AXIOMS_2026-05-03 records
                the spatial substrate to Z^3 via A2. A Z^2 regular-lattice
                readout therefore is not the canonical framework readout;
                the transfer of conclusions from Z^2 to Z^3 requires an

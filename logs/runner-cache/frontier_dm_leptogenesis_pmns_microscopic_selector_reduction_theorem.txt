@@ -3,7 +3,7 @@ runner: scripts/frontier_dm_leptogenesis_pmns_microscopic_selector_reduction_the
 runner_sha256: 647f2bc42f57de5ba496b784332c94dd0f691a767d40568d82ee963eaa4f2301
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 1.26
+elapsed_sec: 2.39
 status: ok
 ----- stdout -----
 SUPPLIED NUMERICAL WITNESSES AND RIGHT-ORBIT CONTROL
@@ -35,15 +35,15 @@ PART 4: SUPPLIED SIGNATURE AND COORDINATE SAMPLES
 ========================================================================================
   [PASS (C)] The supplied package contains the stated gamma, E1 and E2 constants  ((gamma,E1,E2)=(0.500000000000,1.632993161855,0.942809041582))
   [PASS (C)] The three supplied matrices share the helper-defined signature  (same (gamma,E1,E2,cp1,cp2,a_*,b_*,T_slot))
-  [PASS (C)] Those same points still have different active targets  (targets=(0.19999999999999982, 2.2), (0.9, 2.2), (0.19999999999999982, 2.5000000000000004))
+  [PASS (C)] Those same points still have different active targets  (targets=(0.19999999999999996, 2.2000000000000006), (0.9000000000000001, 2.2000000000000006), (0.19999999999999996, 2.5000000000000004))
   [PASS (C)] The first supplied coordinate sample satisfies its declared q-floor inequality  (This finite inequality does not select physical coordinates.)
 
 ========================================================================================
 PART 5: SUPPLIED RIGHT-UNITARY ORBIT CONTROL
 ========================================================================================
-  [PASS (C)] The supplied right-unitary pair preserves H within 1e-12  (H error=2.25e-16)
+  [PASS (C)] The supplied right-unitary pair preserves H within 1e-12  (H error=2.22e-16)
   [PASS (C)] The same orbit changes the right-sensitive slot amplitudes  ((u,v)_0=(0.082500-0.238157j,-0.137500-0.088046j), (u,v)_1=(0.129349-0.218419j,-0.016487+0.155846j))
-  [PASS (C)] The same orbit changes the heavy-basis CP tensor  (CP0=(0.015083275782579014, -0.11193378343913891), CP1=(0.13745215229505714, 0.034720575498981186))
+  [PASS (C)] The same orbit changes the heavy-basis CP tensor  (CP0=(0.015083275782579017, -0.11193378343913894), CP1=(0.13745215229505714, 0.03472057549898119))
   [PASS (C)] The supplied rotation is unitary and conjugates K as specified  (Non-identifiability is conditional on admitting both supplied orbit members)
 The finite examples do not identify the only remaining physical obligation.
 H-only non-identifiability applies only if both displayed orbit members are admitted.

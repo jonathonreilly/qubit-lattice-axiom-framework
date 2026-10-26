@@ -29,6 +29,9 @@ identity on the cubic substrate.
 
 from __future__ import annotations
 
+AUDIT_INPUT_PATHS = ("docs/CUBIC_COXETER_REGGE_DEFICIT_VANISHING_NARROW_THEOREM_NOTE_2026-05-10.md",)
+AUDIT_TIMEOUT_SEC = 120
+
 import sys
 from itertools import combinations
 
@@ -323,12 +326,12 @@ check(
 
 
 # ----------------------------------------------------------------------------
-section("Part 7: numerical verification of full Regge action on a 3x3x3 block (T3)")
+section("Part 7: three central edge-star representatives in a 3x3x3 block")
 # ----------------------------------------------------------------------------
 # Build a 3x3x3 block of cubes with periodic-extension Coxeter triangulation,
-# enumerate every interior edge of each class, sum the dihedrals at every
-# tet incident to each edge, compute deficit, and verify the full Regge
-# action density S_R = sum_e L_e * theta_e is numerically zero.
+# select one central edge per class, sum incident dihedrals, and check
+# the length-weighted deficit contribution of those three representatives.
+# This is not a scan of every interior edge or of the full block action.
 
 def make_cube_np(base: np.ndarray) -> np.ndarray:
     return np.array(
@@ -427,13 +430,12 @@ check(
 
 # ----------------------------------------------------------------------------
 section(
-    "Part 8: counterexample sanity -- non-flat metric produces nonzero deficit"
+    "Part 8: single Euclidean tetrahedron angle-sensitivity control"
 )
 # ----------------------------------------------------------------------------
-# Perturb one vertex of T_1 off the unit cube to make a non-flat
-# (non-Euclidean-on-Z^3) tet. The dihedral along (0,6) should depart from
-# pi/3, so the deficit (sum across the 6 tets if we use the same chain) is
-# no longer zero. This rules out vacuous-true readings.
+# Perturb one vertex in one Euclidean tetrahedron and compare one angle.
+# No compatible neighboring tetrahedra or full nonflat edge-star is built;
+# therefore this control does not compute a nonzero Regge deficit.
 
 # Replace v_2 with a perturbed vertex (1.0, 1.2, 0.0) in T_1 only.
 def deformed_dihedral(perturbed_v2: np.ndarray) -> float:
@@ -487,8 +489,8 @@ print("""
   Audit-lane class:
     (A) -- pure Euclidean / dihedral-angle identity. No external
     numerical, Schur, or strong-field input. Proof is direct
-    dihedral-angle computation in each Coxeter tet plus cubic
-    symmetry on Z^3.
+    dihedral-angle computation, coordinate-permutation isometries
+    and the stated flat edge-star enumeration on Z^3.
 
   This narrow theorem isolates the GENUINE cubic-Coxeter Regge content
   from the strong-field bridge package of the parent

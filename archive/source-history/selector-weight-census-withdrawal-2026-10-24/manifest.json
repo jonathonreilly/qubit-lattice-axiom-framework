@@ -1,0 +1,26 @@
+{
+  "source": "e3cf9e1d784001add03ffed335d57b557116e20d",
+  "files": [
+    {
+      "original_path": "docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md",
+      "archive_path": "archive/source-history/selector-weight-census-withdrawal-2026-10-24/docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md.txt",
+      "sha256": "4a97eb8b245fb7841e5ed816f4366e313a0ec902f1baa94f71ced2c9ce05c56d"
+    },
+    {
+      "original_path": "scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py",
+      "archive_path": "archive/source-history/selector-weight-census-withdrawal-2026-10-24/scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py.txt",
+      "sha256": "56624ee7dcb19d3f8f6b7b23446bbf7f808183ab9d9c67a0e9ef17086c68939f"
+    },
+    {
+      "original_path": "logs/runner-cache/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.txt",
+      "archive_path": "archive/source-history/selector-weight-census-withdrawal-2026-10-24/logs/runner-cache/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.txt.txt",
+      "sha256": "95898909fe5a4e58c0d1694b4e612dd94b7559a7581ad6e55e7591e7e4f8d2b1"
+    },
+    {
+      "original_path": "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py",
+      "archive_path": "archive/source-history/selector-weight-census-withdrawal-2026-10-24/scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py.txt",
+      "sha256": "d5163379c32ce2f751d83004b33c10f9fc3bffa38ada04039dba7587716395d5"
+    }
+  ],
+  "disposition": "Lossless historical source only, not executable/current evidence. Original17-row census and missing-ledger route preserved; no replacement ledger or success claim. Live helper remains untouched for its other consumers."
+}

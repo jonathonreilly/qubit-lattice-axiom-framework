@@ -1,9 +1,10 @@
 # Hubble Tension Structural Lock Theorem: Late-Time `H_0` Is a Single Scalar on the Retained Surface
 
+**Type:** bounded_theorem
 **Date:** 2026-04-26
 **Status:** proposed_retained/admitted-surface structural-support theorem on
 `main`. The theorem locks the structural form of late-time observables on the
-retained `w_Lambda = -1` plus admitted flat-FRW surface; it does **not**
+supplied `w_Lambda = -1` plus admitted flat-FRW surface; it does **not**
 predict a numerical value for `H_0` or close the Lane 5 matter bridge.
 **Primary runner:** `scripts/frontier_hubble_tension_structural_lock.py`
 **Lane:** 5 — Hubble constant `H_0` derivation
@@ -15,17 +16,15 @@ predict a numerical value for `H_0` or close the Lane 5 matter bridge.
 
 **Theorem (Hubble Tension Structural Lock).** Adopt:
 
-- (P1) the retained dark-energy equation of state `w_Lambda = -1`
+- (P1) the supplied constant-density dark-energy equation of state `w_Lambda = -1`
   (`DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md`);
 - (P2) flat FRW cosmology with three non-interacting components
   (matter `w_m = 0`, radiation `w_r = 1/3`, dark energy `w_Lambda = -1`)
   satisfying `Omega_m,0 + Omega_r,0 + Omega_Lambda,0 = 1`.
 
-The wider framework grounding (`Cl(3)` on `Z^3`, spectral-gap identity
-`Lambda = 3/R_Lambda^2`, matter-bridge identity `Omega_Lambda =
-(H_inf/H_0)^2`) supplies the *context* in which `w_Lambda = -1` is a
-retained corollary rather than a separate axiom. The operational proof of
-(★) uses only (P1) and (P2).
+The spectral comparison and EOS corollary do not independently derive the
+physical vacuum-radius identification or constant density. Here w=-1 and the
+flat Friedmann component model are supplied conditions; (★) uses only them.
 
 Then for every late-time scale factor `a in (a_recomb, 1]` (equivalently
 redshift `z in [0, z_recomb)`), the Hubble parameter satisfies the exact
@@ -45,7 +44,7 @@ constants in cosmic time.
 H_0_implied(a) := H(a) / sqrt( Omega_r,0 a^-4 + Omega_m,0 a^-3 + Omega_Lambda,0 ).
 ```
 
-Then on the retained surface
+Then on the supplied model surface
 
 ```text
 H_0_implied(a) = H_0     for every a in (a_recomb, 1].
@@ -61,15 +60,10 @@ distinguishable values of `H_0_implied(a)` after correctly accounting for
 `(Omega_r,0, Omega_m,0, Omega_Lambda,0)`, then one of (P1)-(P2) is falsified
 or at least one measurement carries an unmodeled systematic.
 
-**Tension stance.** Any genuine Hubble tension between late-time
-distance-ladder `H_0 ≈ 73 km/s/Mpc` and CMB-inferred `H_0 ≈ 67.4 km/s/Mpc`
-**cannot be resolved by late-time modification of dark energy or gravity on
-the retained surface**. Resolution must come from:
-
-- **pre-recombination physics** (early dark energy, modified recombination,
-  shifted `N_eff` before CMB release), which lies outside the scope of
-  (P1)-(P3); or
-- **systematic re-evaluation** of one of the measurement chains.
+**Conditional tension stance.** The identity tests the supplied flat-FRW
+constant-density model. A disagreement can indicate a failed model premise or
+measurement/reconstruction error. It does not exclude alternative late-time
+dynamics or establish a framework commitment to this model.
 
 ## 1. Retained inputs (all on `main`)
 
@@ -177,8 +171,9 @@ Equivalently, if `w_Lambda(a)` exhibits a non-trivial late-time
 DE component fails. The lock corollary fails by inserting an extra free
 function `w(a)`.
 
-So the falsifier is operational: **late-time z-dependent `H_0` running ⇔
-`w_Lambda != -1` at late times ⇔ retained surface (P1) falsified**.
+Failure of a reconstructed constant H_0 tests the combined model and
+measurement assumptions; it does not uniquely diagnose w(a), and is not an
+if-and-only-if theorem about physical dark energy.
 
 ### 4.2 What the theorem does say about the Hubble tension
 
@@ -193,25 +188,10 @@ km/s/Mpc` (Riess et al. 2022 SH0ES) while CMB-inferred values give
   through the *full* `z`-history including the pre-recombination expansion,
   which lies outside (P1)-(P3).
 
-The structural lock theorem rules out late-time-only resolutions: anything
-that proposes a late-time `w(z)`, modified late-time gravity at cosmological
-scales, or late-time DE-matter coupling falsifies (P1) or (P2).
-
-It does **not** rule out:
-
-- pre-recombination modifications (early dark energy raising `H(z_recomb)`
-  and shrinking the sound horizon `r_s`);
-- modified recombination physics changing the Planck `theta_*` reduction;
-- shifted `N_eff` *before* photon decoupling (consistent with retained
-  `N_eff = 3.046` *after* the standard thermal correction; the theorem
-  applies post-recombination only);
-- systematic errors in either the local distance ladder or the CMB pipeline.
-
-### 4.3 Public commitment
-
-This theorem makes the framework's stance explicit: a Hubble tension in the
-literature is, on the retained surface, a constraint on **early-time
-physics or systematics**, not on late-time dynamics.
+The structural identity does not rule out late-time-only resolutions of
+Hubble tension. Changing w(a), gravity or component interactions changes its
+premises. Early-universe physics and systematic errors are other possibilities;
+this theorem does not select among them or commit the framework to one.
 
 ## 5. What the theorem closes and does not close
 
@@ -220,11 +200,10 @@ physics or systematics**, not on late-time dynamics.
 - The exact functional identity (★) for late-time `H(a)` on the retained
   surface, derived from (P1)-(P3) without additional axioms.
 - The lock corollary: `H_0_implied(a)` is a single scalar across the entire
-  late-time epoch on the retained surface.
+  late-time epoch on the supplied model surface.
 - A sharp falsifier for the retained surface in late-time observational
   data.
-- A public manuscript-facing structural commitment: late-time-only
-  resolutions of any genuine Hubble tension are forbidden.
+- A conditional consistency test; no physical exclusion of late-time alternatives.
 
 **Does not close.**
 
@@ -292,8 +271,8 @@ a FAIL on (4)-(5) flags a runner-arithmetic bug.
   — inverse reconstruction certificates against the same single open ratio.
 - `COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md` — forward
   FRW reduction.
-- `DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md` — retained `w = -1`.
-- `COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md` — retained
+- `DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md` — conditional constant-density `w = -1`.
+- `COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md` — supplied comparison-radius
   `Lambda = 3/R_Lambda^2`.
 - `docs/lanes/open_science/05_HUBBLE_CONSTANT_DERIVATION_OPEN_LANE_2026-04-26.md`
   — Lane 5 status; this note advances Phase 1 (5C).
@@ -312,5 +291,5 @@ structural form.
 
 External references are limited to standard FRW cosmology
 (textbook; admitted convention) and observational comparators (Planck 2018,
-SH0ES 2022; never derivation inputs). All derivation premises are
-framework-internal retained items already on `main`.
+SH0ES 2022; never derivation inputs). The EOS and Friedmann laws are supplied premises; their physical realization
+is not established here.

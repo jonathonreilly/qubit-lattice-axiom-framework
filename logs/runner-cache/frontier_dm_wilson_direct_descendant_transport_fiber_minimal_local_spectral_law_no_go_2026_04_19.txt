@@ -3,7 +3,7 @@ runner: scripts/frontier_dm_wilson_direct_descendant_transport_fiber_minimal_loc
 runner_sha256: 64b76bc453f55c5661fcffc12e76e5adbd461721a136438dd5ba7b8eecbe41f0
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.80
+elapsed_sec: 2.26
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -19,8 +19,8 @@ PART 1: NO SINGLE COMPLETED SPECTRAL SCALAR PICKS W1
 ========================================================================================
 PART 2: SCALE-FREE LOCAL SPECTRAL LAWS ARE UNDER-COMPLETE
 ========================================================================================
-  [PASS] Restricted to the 3-real transport fiber, the raw spectral completion (T, Q, Delta) remains a full local coordinate chart  (min restricted raw singular value=1.687867496728e-04)
-  [PASS] After canonical scale normalization, only the 2-scalar pair (Q/T^2, Delta/T^3) survives locally on that fiber  (min restricted normalized singular value=5.206276123070e-04)
+  [PASS] Restricted to the 3-real transport fiber, the raw spectral completion (T, Q, Delta) remains a full local coordinate chart  (min restricted raw singular value=1.687867518269e-04)
+  [PASS] After canonical scale normalization, only the 2-scalar pair (Q/T^2, Delta/T^3) survives locally on that fiber  (min restricted normalized singular value=5.206276120867e-04)
   [PASS] So every scale-free local spectral law leaves a 1-real local degeneracy and cannot exactly isolate an interior source  (rank(T,Q,Delta)|fiber = 3, rank(Q/T^2,Delta/T^3)|fiber = 2)
   [PASS] Positive normalized monomials in (Q/T^2, Delta/T^3) of total degree <= 4 do not even beat the explicit boundary competitors  (W1-winning normalized monomials=[])
 
@@ -42,7 +42,7 @@ PART 4: COEFFICIENT FREEDOM CAN EXPOSE WHICHEVER POINT ONE ASKS FOR
 ========================================================================================
 PART 5: THE MINIMAL MONOMIAL CANDIDATE IS STILL NOT AN EXACT SELECTOR
 ========================================================================================
-  [PASS] The minimal monomial Q Delta has nonzero projected gradient on the exact transport fiber through W1  (||P_fiber grad(QDelta)||=0.080118232306)
+  [PASS] The minimal monomial Q Delta has nonzero projected gradient on the exact transport fiber through W1  (||P_fiber grad(QDelta)||=0.080118232295)
   [PASS] A small transport-fiber ascent step increases Q Delta while preserving eta_1 and the favored column to first order and staying constructive  (delta(QDelta)=0.000080028237, delta_col=2.239e-06, delta_eta=2.715e-10)
   [PASS] So no nontrivial raw monomial law can be an exact interior selector on the completed spectral fiber  (grad(T^a Q^b Delta^c) = law * (a/T, b/Q, c/Delta), hence it never vanishes at a positive interior point unless the law is constant)
 
@@ -66,7 +66,7 @@ PART 7: N5 EXECUTION CERTIFICATE — WHAT THIS RUNNER RESOLVES
   best explicit rival QDelta    = 0.038203540297
   affine W1 weights             = [ 59.49702  -12.124073 211.559217]
   affine B_major weights        = [  0.        3.30728 930.9973 ]
-  ||P_fiber grad(QDelta)||      = 0.080118232306
+  ||P_fiber grad(QDelta)||      = 0.080118232295
   nearby ascent pack            = [1.05222  0.098778 0.122675 1.348161 0.018669]
   PASS=17 FAIL=0
 

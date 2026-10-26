@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_first_law_bh_mechanics_check.py
-runner_sha256: 9853b6e5862bfa4488b6064160166fa58122c65a5d46f676154a584edad0877f
-timeout_sec: 120
+runner_sha256: c727c68bd1ecacae1823564716ce4d8dbf560b1c1218b13d47308c023126556e
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.03
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ========================================================================
@@ -87,6 +87,7 @@ TEST 6: Smarr-derivative consistency: d(2 T_H S_BH)/dM = 1
   max diff = 3.618e-10
   STATUS: PASS
 
+Withdrawn d(TS)=dM regression: d(TS)/dM=1/2, residual=7.827e-12
 ========================================================================
 SUMMARY
 ========================================================================

@@ -456,8 +456,12 @@ The specific corrections per note:
   as `8/3 = 2 C_F` Casimir arithmetic with `dim(adj) = N^2 - 1 = 8`
   entering as the generator count in `sum_a Tr[T^a T^a] = (N^2-1)/2`.
 - The bounded eta prediction in PR #2064 is unaffected at the
-  prediction level (`eta_pred in [4.94e-10, 7.24e-10]`); the
-  structural input `m_DM = 16 v` is unchanged.
+  prediction level by this narrative correction; the structural input
+  `m_DM = 16 v` is unchanged. The band quoted here earlier,
+  `[4.94e-10, 7.24e-10]`, contained a corner-arithmetic slip; the
+  freeze-out note's corrected supplied-rectangle band is
+  `[5.25e-10, 8.11e-10]`, and its 2026-09-30 corrigendum separately
+  lowers the same-coupling central value to `4.38e-10`.
 
 The independent audit lane retains authority over the parent DM-eta
 freezeout-bypass row's effective status. This note is an

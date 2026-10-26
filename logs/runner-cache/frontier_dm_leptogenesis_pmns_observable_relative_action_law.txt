@@ -3,7 +3,7 @@ runner: scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py
 runner_sha256: aa2073f47f03879c130eb04d90b7de40df7511aca5896e7d5e19403548fa292f
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 2.69
+elapsed_sec: 8.43
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -28,7 +28,7 @@ Derivation chain (carried into Part 0 of this runner):
 PART 0: THE RELATIVE BOSONIC ACTION IS THE LEGENDRE DUAL EFFECTIVE ACTION
 ========================================================================================
   [PASS] S_rel equals the Legendre dual of the baseline-framework log|det| generator at K_* = Y^{-1} - I  (S_rel=0.240906702296, dual=0.240906702296)
-  [PASS] K_* = Y^{-1} - I is the dual stationary point (directional gradient vanishes)  (max directional gradient=1.665e-09)
+  [PASS] K_* = Y^{-1} - I is the dual stationary point (directional gradient vanishes)  (max directional gradient=9.714e-10)
   [PASS] Eight sampled Hessian directions are negative at K_*  (worst sampled Hessian quadratic=-1.710596e+00)
 
   Effective-action identity (Legendre dual of W(K) = log det(I+K)):
@@ -54,22 +54,22 @@ PART 1: FINITE SEARCH SELECTS A CANDIDATE COLUMN
 PART 2: THE OBSERVABLE-RELATIVE-ACTION LAW
 ========================================================================================
   [PASS] The relative-action source stays on the exact fixed seed surface  ((xbar,ybar)=(0.563333,0.306667))
-  [PASS] The numerical source satisfies the imposed eta equality on the favored column  (etas=[1.       0.759179 0.48459 ])
-  [PASS] The observable-relative-action selector remains genuinely off-seed  (xi=[-0.091658, -0.009523,  0.101181], eta=[-0.098604,  0.157716, -0.059112])
-  [PASS] The selected source phase magnitude is below 1e-4  (delta=-2.611502858097e-08)
-  [PASS] The favored column remains the best column at the selected source  (best idx=0, etas=[1.       0.759179 0.48459 ])
+  [PASS] The numerical source satisfies the imposed eta equality on the favored column  (etas=[1.       0.759179 0.484589])
+  [PASS] The observable-relative-action selector remains genuinely off-seed  (xi=[-0.091658, -0.009522,  0.101181], eta=[-0.098604,  0.157716, -0.059112])
+  [PASS] The selected source phase magnitude is below 1e-4  (delta=9.505194523932e-07)
+  [PASS] The favored column remains the best column at the selected source  (best idx=0, etas=[1.       0.759179 0.484589])
 
-  x_rel     = [0.471675, 0.55381 , 0.664515]
+  x_rel     = [0.471675, 0.553811, 0.664514]
   y_rel     = [0.208063, 0.464382, 0.247555]
-  xi_rel    = [-0.091658, -0.009523,  0.101181]
+  xi_rel    = [-0.091658, -0.009522,  0.101181]
   eta_rel   = [-0.098604,  0.157716, -0.059112]
-  delta_rel = -2.611502858097e-08
-  S_rel     = 0.240906701396
+  delta_rel = 9.505194523932e-07
+  S_rel     = 0.240906701372
   packet_rel:
-[[0.035659 0.41792  0.546421]
+[[0.035659 0.417918 0.546422]
  [0.894898 0.103524 0.001578]
- [0.069443 0.478556 0.452001]]
-  eta/eta_obs(rel-law) = [1.       0.759179 0.48459 ]
+ [0.069443 0.478557 0.452   ]]
+  eta/eta_obs(rel-law) = [1.       0.759179 0.484589]
 
 ========================================================================================
 PART 3: BOTTOM LINE

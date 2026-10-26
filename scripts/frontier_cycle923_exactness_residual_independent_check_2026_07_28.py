@@ -40,6 +40,7 @@ import mpmath as mp
 import sympy as sp
 
 AUDIT_TIMEOUT_SEC = 900
+AUDIT_INPUT_PATHS = ('outputs/exactness_residual_cycle923_receipt_2026_07_28.json', 'scripts/frontier_cycle923_exactness_residual_2026_07_28.py', 'logs/runner-cache/frontier_cycle923_exactness_residual_2026_07_28.txt', 'docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md', 'docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md', 'docs/FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md', 'docs/FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md', 'docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md', 'docs/KOIDE_R_HALF_DURABILITY_STATIONARITY_CONDITIONAL_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-11.md')
 
 T0 = time.time()
 mp.mp.dps = 60
@@ -227,6 +228,14 @@ sharp_fix = sp.solve(sp.Eq(pp ** 2 / (pp ** 2 + (1 - pp) ** 2), pp), pp)
 check("K2-symbolic", "sympy: for a 2-outcome split, p -> p^2/Z fixes p iff p in {0, 1/2, 1}. This CONFIRMS the "
       "primary's COINCIDENCE-DEFLATION: interior sharpening-fixed-point = uniform = max-S2 = HS equipartition is "
       "ONE fact, not three independent ones.", set(sharp_fix) == {0, sp.Rational(1, 2), 1}, f"solve -> {sorted(sharp_fix)}")
+
+# Independent symbolic sector exchange, derived from exchanging the two fractions.
+exchange = sp.solve(sp.Eq(1 / (1 + 2 * sp.Symbol("u", positive=True)), 2 * r / (1 + 2 * r)), sp.Symbol("u", positive=True))[0]
+check("K2-symbolic", "sector-fraction exchange is1/(4r) on r>0 and fixedness is the same uniform split",
+      sp.simplify(exchange - 1 / (4*r)) == 0
+      and sp.solve(sp.Eq(exchange, r), r) == [sp.Rational(1, 2)])
+check("K2-symbolic", "negative control r=2: actual exchange1/8 differs from affine1-r=-1",
+      exchange.subs(r, 2) == sp.Rational(1, 8) and (1-r).subs(r,2) == -1)
 
 # ==========================================================================
 # K3 -- mpmath 60-dps: the epsilon-window arithmetic, incl. the 3e-6 endpoint

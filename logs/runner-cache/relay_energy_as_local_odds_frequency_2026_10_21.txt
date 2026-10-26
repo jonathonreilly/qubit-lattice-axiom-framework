@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/relay_energy_as_local_odds_frequency_2026_10_21.py
+runner_sha256: b95e1b379323f012ca5b142c7d5aa534acaa34009a07bbf00417ac65c9543991
+input_fingerprint_sha256: a7c61ab1d5c56551d83e09d4edf5f0c739c59eb6d577601b5d2612c4b8e61406
+timeout_sec: 1500
+exit_code: 0
+elapsed_sec: 2.29
+status: ok
+----- stdout -----
+[PASS] fully weighted transfer: exact two-direction stress is -47/250, not mixed -67/250
+[PASS] six-direction transfer embedding preserves the exact weighted sum
+[PASS] principal-phase pair: sign, constant phase cancellation and time-dependent shift
+[PASS] principal-phase branch wrap and numerical zero-product convention
+[PASS] fixed 1D packets: phase-statistic spread and endpoint spectral comparison meet finite thresholds  width 30: phase statistic 0.079640 (spread 1.1e-04) vs frequency 0.079721; width 60: phase statistic 0.078450 (spread 1.8e-05) vs frequency 0.078460; width 120: phase statistic 0.078175 (spread 1.2e-06) vs frequency 0.078175
+[PASS] 1D packets: fully weighted diagnostic residual decreases across the three selected widths  width 30: residual 0.0820; width 60: residual 0.0145; width 120: residual 0.0044
+[PASS] six-direction packets along (1,1,0): fully weighted diagnostic residual decreases across the three selected widths  width 3: residual 0.147; width 5: residual 0.084; width 8: residual 0.053
+per_site: the walks, coin angles, packets, phase-advance evaluation and smoothing are supplied choices.
+lattice_wide: no physical energy identification, field equation or derivation of the rules is established.
+elapsed_seconds 2.2
+
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

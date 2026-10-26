@@ -16,9 +16,12 @@ Purpose:
        two laws rank them oppositely;
     3. their normalized Schur spectra are majorization-incomparable, so the
        phrase "most isotropic spectrum" is not well-defined on the full fiber;
-    4. if one nevertheless adds the extra entropy-additivity axiom that picks
-       Shannon, the resulting endpoint is explicit, but the aligned-seed ->
-       endpoint eta_1 = 1 crossing leaves the constructive chamber.
+    4. continuity, permutation symmetry, normalization and additivity on
+       independent products do not single out Shannon entropy (Renyi-2 also
+       satisfies them; exact check in Part 3). If one nevertheless explicitly
+       chooses Shannon, the resulting endpoint is explicit, but the
+       aligned-seed -> endpoint eta_1 = 1 crossing leaves the constructive
+       chamber.
 """
 
 from __future__ import annotations
@@ -27,6 +30,7 @@ import math
 import platform
 import sys
 import warnings
+from fractions import Fraction
 
 import numpy as np
 import scipy
@@ -314,8 +318,30 @@ def main() -> int:
     )
 
     print("\n" + "=" * 88)
-    print("PART 3: THE EXTRA AXIOM THAT PICKS SHANNON DOES GIVE AN EXPLICIT ENDPOINT CANDIDATE")
+    print("PART 3: AN EXPLICITLY CHOSEN SHANNON FUNCTIONAL GIVES AN EXPLICIT ENDPOINT CANDIDATE")
     print("=" * 88)
+    # Exact counterexample to "additivity singles out Shannon": Renyi-2 is
+    # additive on independent products, yet not a constant multiple of Shannon.
+    p_dist = (Fraction(1, 2), Fraction(1, 2))
+    q_dist = (Fraction(1, 2), Fraction(1, 4), Fraction(1, 4))
+    pq_dist = tuple(a * b for a in p_dist for b in q_dist)
+
+    def collision(dist: tuple[Fraction, ...]) -> Fraction:
+        return sum((x * x for x in dist), Fraction(0))
+
+    def shannon_exact(dist: tuple[Fraction, ...]) -> float:
+        return -sum(float(x) * math.log(float(x)) for x in dist)
+
+    ratio_p = -math.log(float(collision(p_dist))) / shannon_exact(p_dist)
+    ratio_q = -math.log(float(collision(q_dist))) / shannon_exact(q_dist)
+    check(
+        "Renyi-2 is additive on independent products but is not a constant multiple of Shannon",
+        collision(pq_dist) == collision(p_dist) * collision(q_dist) and abs(ratio_p - ratio_q) > 1.0e-3,
+        (
+            f"sum (p_i q_j)^2 = {collision(pq_dist)} = {collision(p_dist)} * {collision(q_dist)}; "
+            f"H2/H ratios = {ratio_p:.6f}, {ratio_q:.6f}"
+        ),
+    )
     check(
         "The Shannon point is an explicit positive source on the canonical orbit-level fiber",
         np.max(np.abs(canonical_fiber_invariants(shannon_params) - TARGET_P2_P3)) < 1.0e-12 and np.min(shannon_pack4) > 0.0,
@@ -358,15 +384,14 @@ def main() -> int:
     print("\n" + "=" * 88)
     print("PART 5: BOTTOM LINE")
     print("=" * 88)
-    check(
-        "The coefficient-free Schur-spectral isotropy slogan does not determine a canonical law on the full source fiber",
-        True,
-        "Shannon and Renyi-2 / participation disagree on positive-fiber witnesses",
+    print(
+        "  [SCOPE, unscored] Parts 2 and 3 exhibit two positive-fiber witnesses on which "
+        "Shannon and Renyi-2 disagree; this finite comparison does not determine a "
+        "canonical law on the full source fiber."
     )
-    check(
-        "What the branch now has is a sharper conditional candidate: if one adds the entropy-additivity axiom, Shannon selects an explicit endpoint, but the constructive physical selector remains open",
-        True,
-        "the remaining gap is not generic spectral isotropy but the extra physical law beyond it",
+    print(
+        "  [SCOPE, unscored] Shannon is an explicit additional choice, not selected by "
+        "additivity; even its endpoint leaves the constructive physical selector open."
     )
 
     print()

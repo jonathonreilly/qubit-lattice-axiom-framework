@@ -1,56 +1,9 @@
 #!/usr/bin/env python3
-"""
-Neutrino Schur Suppression Theorem
-==================================
-
-STATUS: exact second-order suppression theorem on the retained local lane
-
-Purpose:
-  Close the next hard step after the bosonic-normalization theorem:
-
-    derive the exact second-order coefficient on the generated
-    T_1 -> O_0 + T_2 -> T_1 neutrino bridge.
-
-The exact theorem proved here is:
-
-  1. On the retained local post-EWSB Higgs family, the exact selector
-     potential has transverse quadratic coefficient 32 at the weak-axis
-     minimum.
-
-  2. For the local block
-
-       M(m,j) = m I + j Gamma_1
-
-     with T_1 as the retained sector and O_0 + T_2 as the intermediate sector,
-     the exact Schur complement is
-
-       M_eff(T_1) = (m - j^2/m) I_T1 .
-
-  3. So the generated second-order coefficient is exactly
-
-       y_nu^eff = j^2 / m .
-
-  4. Using the already-selected bosonic base benchmark
-
-       j = g_weak / sqrt(2)
-
-     and the exact selector-curvature coefficient
-
-       m = 32 ,
-
-     the retained local lane gives
-
-       y_nu^eff = g_weak^2 / 64 = 6.66e-3 ,
-
-     which corresponds to k_eff ~= 8.01 on the DM staircase.
-
-Boundary:
-  This closes the local second-order suppression law on the retained weak-axis
-  family. It does NOT yet close the full DM denominator because the downstream
-  Majorana/Z_3 activation law is still a separate microscopic question.
-"""
+"""Conditional supplied-block Schur identity; curvature-to-mass and physical Yukawa identifications are extra premises."""
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
 
 import math
 import sys
@@ -199,10 +152,10 @@ def main() -> int:
     )
 
     print()
-    print("Part 3: Physical retained coefficient from the selected base surface")
+    print("Part 3: Supplied m=32 and j=g/sqrt(2) comparison")
     g_weak = 0.653
     j_base = g_weak / math.sqrt(2.0)
-    m_selector = quad_coeff
+    m_selector = 32.0  # Explicit block input; equality with potential coefficient is not derived.
     y_eff = (j_base * j_base) / m_selector
 
     pi = math.pi
@@ -215,9 +168,9 @@ def main() -> int:
     m3_gev = math.sqrt(2.453e-3) * 1.0e-9
     k_eff = k_from_yukawa(y_eff, alpha_lm, m_pl, v_ew, m3_gev)
 
-    print(f"  selected base j = g_weak/sqrt(2) = {j_base:.12f}")
+    print(f"  supplied base j = g_weak/sqrt(2) = {j_base:.12f}")
     print(f"  selector coefficient m = 32      = {m_selector:.12f}")
-    print(f"  generated y_eff = j^2 / m        = {y_eff:.12e}")
+    print(f"  supplied correction y_eff = j^2 / m        = {y_eff:.12e}")
     print(f"  alpha_LM^2                      = {alpha_lm**2:.12e}")
     print(f"  implied staircase level k_eff   = {k_eff:.6f}")
     print()
@@ -226,22 +179,15 @@ def main() -> int:
     check("generated coefficient lands near alpha_LM^2",
           0.5 < y_eff / (alpha_lm**2) < 2.0,
           detail=f"y_eff / alpha_LM^2 = {y_eff / (alpha_lm**2):.6f}")
-    check("generated coefficient selects k_B ~= 8",
+    check("Supplied staircase comparison is within 0.05 of 8",
           abs(k_eff - 8.0) < 0.05,
           detail=f"k_eff = {k_eff:.6f}")
 
     print()
     print("Honest read:")
-    print("  1. The exact weak-axis selector gives transverse quadratic coefficient 32.")
-    print("  2. The exact T1 Schur complement of mI + jGamma_1 generates a second-")
-    print("     order return with coefficient j^2/m and no free flavor matrix.")
-    print("  3. Using the already-selected bosonic base surface j=g_weak/sqrt(2)")
-    print("     and the exact selector coefficient m=32 gives y_nu^eff = g_weak^2/64.")
-    print("  4. That lands at k_eff ~= 8.01, so the old bounded k_B=8 attraction is")
-    print("     upgraded to an exact local suppression theorem on the retained lane.")
-    print("  5. This still does not close the full DM denominator by itself: the")
-    print("     downstream Majorana/Z3 activation law remains a separate theorem.")
-    print()
+    print("The Schur correction is j^2/m for the specified invertible eliminated block.")
+    print("Setting block m equal to potential coefficient 32 requires a separate normalization/units bridge.")
+    print("The Yukawa and staircase readings are conditional comparisons, not physical selection.")
     print("=" * 78)
     print(f"RESULT: {PASS_COUNT} PASS, {FAIL_COUNT} FAIL")
     print("=" * 78)

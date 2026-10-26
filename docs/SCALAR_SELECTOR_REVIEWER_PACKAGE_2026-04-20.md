@@ -45,6 +45,39 @@ author check, not an independent referee).
 
 ---
 
+## Current DM boundary correction (2026-10-23)
+
+The DM closure assertions in the historical §0 table, §3, runner inventory,
+and §6 are withdrawn as current authority. In particular, neither
+`J_phys = J_Basin1`, a derived physical PNS law, absence of DM inputs, nor
+physical last-mile closure by the graded current follows from the checked
+finite fixtures. The present results are conditional matrix/coordinate
+identities and finite endpoint, packet and shift diagnostics. Choosing
+`A_ord = N + C` does not derive its unit coefficient: `N + alpha C` retains
+the grading and support. Recovering supplied coordinates from affine and
+graded currents does not select their physical values. Physical source,
+path nonsingularity, normalization and current/value selection remain open.
+The historical exact two-/three-real source-dimension and center-law no-go
+claims below are also withdrawn as current authority: the finite seeded
+searches and sampled ranks do not establish exact roots, neighborhood dimension,
+global exhaustion or a physical selector obstruction.
+The historical split-2 interval certificate and residual-completeness claims
+are also withdrawn. Correcting the fixed-slack generator does not certify the
+floating arithmetic or numerical kernel extrema; the two supplied-box results
+are not certified. Rigorous enclosures and localization remain open. The
+[conditional algebra owner](SPLIT2_CONDITIONAL_GENERATOR_COFACTOR_ALGEBRA_NOTE_2026-10-23.md)
+establishes only the corrected generator/Weyl and cofactor identities. The
+failed numerical regression and its complete provenance are preserved in
+`archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/DISPOSITION.json`;
+its execution has not been reclassified as success.
+The live DM register is
+`docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md`; its revised DM
+entries supersede the historical closure wording below. Historical counts
+(including measurement 15 PASS) remain a record of the old execution, not a
+receipt for the repaired finite diagnostic. The snapshot body and unrelated
+Koide/quark history are preserved; this correction supplies no new review
+or authority for those lanes.
+
 ## §0 Bottom line
 
 The honest current-package read is:

@@ -96,7 +96,7 @@ u0(SU2, beta=16) in [0.9761, 0.9762] subset [0.96, 0.98].
 ```
 
 The parent g_2(v) bounded interval keeps its wider endpoints
-`[0.96, 0.98]` so the already-audited endpoint formulas remain
+`[0.96, 0.98]` so the previously stated endpoint formulas remain
 unchanged. This bridge only changes the source authority for the X1
 interval: the interval is now framework-native one-plaquette support,
 not a row-local literature admission.

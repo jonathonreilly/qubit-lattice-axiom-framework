@@ -34,7 +34,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "38ac31c43c19af74cf8005848222d16c23608968b432a1fddbd3d811a370a6f1",
+  "note_hash": "0eb739b10205839af46dc3bd27c8f52576e6df8694ecc6bec7434ef840fe9033",
   "note_path": "docs/CL31_M4R_DIMENSION_SIXTEEN_NARROW_THEOREM_NOTE_2026-05-26.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -1412,7 +1412,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "restoration_history": [
     {
       "archived_at": "2026-08-03T07:42:07.448089+00:00",

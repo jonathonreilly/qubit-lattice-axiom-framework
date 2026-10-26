@@ -1,37 +1,14 @@
 #!/usr/bin/env python3
-"""Verifier for the cluster decomposition Delta_x > 0 axis-permutation
-narrow companion theorem.
-
-Pair runner for:
-docs/CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md
-
-The runner exercises Lemma X (axis-label symmetry of the retained
-finite Wilson transfer-kernel construction) by:
-
-  Part A (numerical) — operates on a finite truncated SU(3) character
-  basis and verifies that the four load-bearing properties used by the
-  retained temporal-axis parent
-  CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19
-  are axis-symmetric:
-    (L-Heat) SU(3) heat-kernel strict positivity is axis-independent
-    (L-Kernel) T_W kernel positivity is axis-label symmetric
-    (L-Trace) trace-class is axis-independent
-    (L-PJ) Perron-Jentzsch is operator-theoretic, axis-independent
-
-  Part B (structural) — verifies the cited retained authority is
-  present on main, and context rows are recorded honestly.
-
-  Part C (hostile-audit) — checks no axiom extension, no new imports,
-  no overclaim of thermodynamic limit, no retired no_go.
-
-This is a bounded_theorem verifier. It does NOT prove the
-load-bearing operator-theoretic content (that lives in the cited
-retained parent); it verifies that the axis-permutation observation
-holds on a finite numerical instance and that the cited retained
-authority is in fact on main.
+"""Finite supplied single-link weight diagnostics and conditional axis relabeling.
+Quantitative fixtures are unchanged; they neither construct physical Wilson
+transfer dynamics nor discharge spatial H1/H2. Nonidentity character powers
+are heuristic samples, not exact SU(3) characters or a positivity proof.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ('docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md', 'docs/CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md')
 
 import math
 import os
@@ -108,7 +85,7 @@ K_identity_finer = sum(
 )
 rel_tail = abs(K_identity_finer - K_identity) / K_identity
 record(
-    "A.heat.converged: character series converged at truncation",
+    "A.heat.cutoff_difference: two finite cutoff sums differ by less than tolerance",
     rel_tail < 1e-3,
     f"relative tail beyond P_MAX={P_MAX}: {rel_tail:.2e}",
 )
@@ -125,9 +102,8 @@ def chi_fundamental(theta: float) -> float:
 
 
 def K_value_at_theta(theta: float) -> float:
-    """Heat kernel value at the diagonal element parameterized by theta.
-    Truncated character expansion. Uses real-character approximation for
-    the simple class of elements; sufficient for positivity demonstration."""
+    """Historical normalized character-power heuristic at theta.
+    Not the SU(3) character formula; samples do not prove heat positivity."""
     val = 0.0
     for (p, q) in su3_irreps_up_to(P_MAX):
         d = su3_irrep_dim(p, q)
@@ -146,7 +122,7 @@ sample_thetas = [0.0, 0.1, 0.3, 0.7, 1.0, 1.5]
 K_sample_values = [K_value_at_theta(theta) for theta in sample_thetas]
 all_positive = all(v > 0 for v in K_sample_values)
 record(
-    "A.heat.sampled_positive: heat-kernel positive at sampled diagonal elements",
+    "A.heuristic.sampled_positive: normalized character-power fixture positive at six samples",
     all_positive,
     f"K values at theta={sample_thetas}: {[round(v, 4) for v in K_sample_values]}",
 )
@@ -218,138 +194,31 @@ spatial_top = top_eigenvalue  # spatial axis: same construction, same spectrum
 spatial_gap = top_eigenvalue - next_eigenvalue
 
 record(
-    "A.perm.spectrum_equal: spatial-axis spectrum matches temporal-axis spectrum on truncated basis",
+    "A.perm.spectrum_equal: identical supplied single-link data agree under a label change",
     abs(spatial_top - top_eigenvalue) < 1e-15 and abs(spatial_gap - (top_eigenvalue - next_eigenvalue)) < 1e-15,
-    "axis-permutation invariance verified on truncated character basis",
+    "identity of supplied weight data; not physical axis-transfer equivalence",
 )
 
 # ======================================================================
-# Part B: Cited retained authority present on main
+# Part B: actual current-source contracts, not file-presence authority
 # ======================================================================
-
-
-def file_exists_on_main(repo_root: str, relpath: str):
-    try:
-        result = subprocess.run(
-            ["git", "ls-tree", "-r", "--name-only", "origin/main", relpath],
-            capture_output=True,
-            text=True,
-            cwd=repo_root,
-            timeout=10,
-        )
-        return result.returncode == 0 and relpath in result.stdout
-    except (subprocess.TimeoutExpired, FileNotFoundError):
-        return None
-
-
-def repo_root() -> str:
-    try:
-        result = subprocess.run(
-            ["git", "rev-parse", "--show-toplevel"],
-            capture_output=True,
-            text=True,
-            timeout=5,
-        )
-        return result.stdout.strip()
-    except Exception:
-        return os.getcwd()
-
-
-ROOT = repo_root()
-
-RETAINED_PARENT = "docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md"
-SPATIAL_SLAB_CONSUMER = "docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md"
-PARENT_CONDITIONAL = "docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md"
-for relpath, label, load_bearing in [
-    (RETAINED_PARENT, "retained temporal-axis parent", True),
-    (SPATIAL_SLAB_CONSUMER, "downstream consumer (spatial slab bridge)", False),
-    (PARENT_CONDITIONAL, "ultimate audited_conditional row this helps unblock", False),
-]:
-    exists = file_exists_on_main(ROOT, relpath)
-    short = relpath.split("/")[-1][:50]
-    if load_bearing:
-        record(
-            f"B.cited.{short}: {label} present on main",
-            exists is True,
-            "verified via git ls-tree",
-        )
-    else:
-        record(
-            f"B.context.{short}: {label} present on main",
-            True,
-            "present on main" if exists is True else "not present; context only",
-        )
-
-# ======================================================================
-# Part C: Hostile-audit checks
-# ======================================================================
-
-# C.no_thermo: this note does NOT claim thermodynamic limit
-record(
-    "C.no_thermo: no thermodynamic limit claim made",
-    True,
-    "finite-Lambda only, explicit in section 0 honest-scope",
-)
-
-# C.no_axiom: no new axiom extension
-record(
-    "C.no_axiom: no new axiom or theory-language extension",
-    True,
-    "uses the pre-existing one-qubit/Z^3 baseline and retained temporal-axis parent only",
-)
-
-# C.no_import: no new mathematical machinery imported
-# Heat-kernel positivity, trace-class, Perron-Jentzsch all imported from cited retained parent.
-record(
-    "C.no_import: no new load-bearing imports beyond cited retained parent",
-    True,
-    "Lemma X cites the parent for all four operator-theoretic properties",
-)
-
-# C.no_no_go_weakening: no retained no_go retired or weakened
-record(
-    "C.no_no_go_weakening: no retained no_go weakened",
-    True,
-    "Yang-Mills mass gap, infinite-volume gap, uniform-in-Lambda all explicitly out of scope",
-)
-
-# C.no_parent_modification: does NOT modify the parent audited_conditional row's text
-record(
-    "C.no_parent_modification: does not modify AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29",
-    True,
-    "this is a companion narrow theorem; parent equation (8) repair is a separate companion",
-)
-
-# C.no_fermion_extension: does NOT promote or consume the fermion extension
-record(
-    "C.no_fermion_extension: Strong-CP/fermion-factor extension not promoted or consumed",
-    True,
-    "this runner verifies only the pure-Wilson spatial-axis T_x surface",
-)
-
-# C.no_full_closure_claim: does NOT claim the parent's audit_conditional is now retained
-# (because the parent needs additional work: eq (8) repair + composition re-audit)
-record(
-    "C.no_full_closure_claim: does not claim parent audited_conditional now lifts",
-    True,
-    "this note supplies H1+H2 only; parent eq (8) repair companion and composition re-audit are separate",
-)
-
-# ======================================================================
-# Final summary
-# ======================================================================
-
-print("\n=== Cluster decomposition Delta_x axis-permutation narrow companion ===\n")
-print("Scope: bounded_theorem supplying H1+H2 (existence + strict gap) for the")
-print("       spatial-axis T_x on the pure-Wilson surface, by axis-permutation")
-print("       from the retained temporal-axis finite-Lambda T_W gap theorem.")
-print("       Does NOT prove Yang-Mills mass gap. Does NOT take thermodynamic limit.\n")
+from pathlib import Path
+ROOT = Path(__file__).resolve().parents[1]
+PARENT = "docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md"
+NOTE = "docs/CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md"
+parent = " ".join((ROOT / PARENT).read_text().split())
+note = " ".join((ROOT / NOTE).read_text().split())
+record("B.parent.supplied_kernel: smooth positive symmetric multiplier explicitly supplied",
+       "a is a supplied smooth, strictly positive, real symmetric function" in parent)
+record("B.parent.physical_boundary: canonical transfer identification not derived",
+       "It does not derive the canonical lattice gauge/fermion transfer operator." in parent)
+record("B.note.H1H2_open: physical identification and operator positivity remain additional",
+       "does not discharge H1/H2" in note
+       and "Pointwise kernel positivity does not imply positive semidefiniteness" in note)
+print("\n=== Conditional kernel relabeling and finite weight fixtures ===\n")
+print("No physical Wilson H1/H2 supply; analytic claim requires the supplied kernel hypotheses.")
+print("Heuristic nonidentity samples and two-cutoff differences are not universal positivity or tail proofs.")
 for line in LOG:
     print(line)
 print(f"\nPASS={PASS}  FAIL={FAIL}\n")
-if FAIL == 0:
-    print("All axis-permutation companion checks PASSED.")
-    print("Audit lane decides status; this runner proposes no effective status.")
-else:
-    print(f"{FAIL} CHECK(S) FAILED.")
-    sys.exit(1)
+sys.exit(1 if FAIL else 0)

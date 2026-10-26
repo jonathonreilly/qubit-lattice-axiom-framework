@@ -33,6 +33,9 @@ PDG values appear only as falsifiability anchors via display labels in
 the sanity-check section, not as inputs to the matching identification.
 """
 
+# Cache identity includes actual note reads and existence checks.
+AUDIT_INPUT_PATHS = ['docs/LATTICE_PHYSICAL_MATCHING_THEOREM_BOUNDED_OBSTRUCTION_NOTE_2026-05-10_match.md']
+
 from pathlib import Path
 import sys
 import math
@@ -101,8 +104,8 @@ for t in ["**(T1) ", "**(T2) ", "**(T3) ", "**(T4) ", "**(T5) ", "**(T6) "]:
 
 # Sister cluster cross-references (cycles 5, 9, 11)
 for cite in [
-    "YT_EW_MATCHING_RULE_M_STRETCH_ATTEMPT_NOTE_2026-05-02",
-    "GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_IMPLICIT_FLOW_THEOREM_NOTE_2026-05-03",
+    "YT_EW_MATCHING_RULE_M_NOTE_2026-05-02",
+    "GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE",
     "GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03",
     "LATTICE_PHYSICAL_MATCHING_CLUSTER_OBSTRUCTION_NOTE_2026-05-02",
     "BRIDGE_LANES_PROMOTION_PROPOSAL_NOTE_2026-05-10_lanes",
@@ -114,7 +117,7 @@ for cite in [
     "STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac",
     "COMPLETE_PREDICTION_CHAIN_2026_04_15",
 ]:
-    check(f"sister/parent cite: {cite}", cite in note_text)
+    check(f"documentary citation name present: {cite}", cite in note_text)
 
 # Audit-readable scope block
 for yaml_marker in [
@@ -447,6 +450,12 @@ for r in [
 
 
 # ----------------------------------------------------------------------
+print('Resolution scope and limits (not physical bridge or no-go certificates):')
+print('per_element: scalar arithmetic with supplied plaquette/scale values and documentary note guards; no elementwise physical operator calculation.')
+print('per_block: supplied uniform taste-count 16 enters one scalar formula; individual physical blocks are not resolved.')
+print('per_mode: no mode-resolved determinant, physical spectrum or generation selection calculated.')
+print('per_site: no site-resolved field or lattice evolution calculated.')
+print('lattice_wide: no new lattice simulation, continuum matching proof or universal exclusion; inherited physical and authority claims are not certified by these labels.')
 print(f"\n{'=' * 88}")
 print(f"  TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
 print(f"{'=' * 88}")

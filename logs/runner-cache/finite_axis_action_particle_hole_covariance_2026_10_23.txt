@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/finite_axis_action_particle_hole_covariance_2026_10_23.py
+runner_sha256: ecc7730045468331958400b4c6121f3994ad9d6392519dc163b826e24ff29c60
+input_fingerprint_sha256: 72bbc4c203039794a0a9912a7e72b5da89c19f06be404eda30a0afe6d75c5765
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+PASS: 24 distinct proper rotations; 12+12 parity split 
+PASS: exact integer determinant and orthogonality 
+PASS: 576 group, parity and supplied Q multiplication identities 
+PASS: T and any fixed odd coset representative cover O 
+PASS: all 24 lifts unitary and implement all three Pauli images Pauli=3.140e-16; unitary=2.220e-16
+PASS: even diagonal / odd antidiagonal in occupation basis residual=1.888e-16
+PASS: Q(R)n=s(R)n 
+PASS: finite three-axis witness is an exact number-conserving permutation 
+PASS: all 24 exact reduced commutators vanish 
+PASS: all 24 phase-sensitive full covariances hold residual=2.289e-16
+PASS: C alone and odd permutation alone are stronger, violated conditions 
+PASS: half-filling counterexample: number conserving but violates odd symmetry 
+PASS: dropping number conservation fails full symmetry despite all reduced conditions full residual=2.000e+00
+TOTAL FAIL=0; finite supplied representation only
+
+----- stderr -----
+

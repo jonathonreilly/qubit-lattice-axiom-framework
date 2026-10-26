@@ -3,7 +3,7 @@ runner: scripts/frontier_dm_leptogenesis_pmns_reduction_exhaustion_theorem.py
 runner_sha256: 718fb6afa116224b059fe9a80348ebfb862a033da2c513c8404e62fd48d236cf
 timeout_sec: 600
 exit_code: 1
-elapsed_sec: 68.93
+elapsed_sec: 56.83
 status: nonzero_exit
 ----- stdout -----
 ========================================================================================

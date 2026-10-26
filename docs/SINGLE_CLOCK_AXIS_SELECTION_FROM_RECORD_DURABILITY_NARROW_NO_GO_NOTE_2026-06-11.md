@@ -114,7 +114,7 @@ Quoted verbatim from the retained boundaries (one hop):
 | The exchange certificate `W M_KS W^T = M_KS` (residual 0) and the declared (B-AXIS.1–3) | the structure under attack; baseline recomputed in runner block [S] | [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md) — bounded_theorem, same-lane re-scope; certificate recomputed, not cited blind |
 | N2/N4/N5 reopening clauses; transfer-/τ-relativity | Section 2; runner [D] verbatim checks | `SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md` — retained_no_go |
 | Record axiom text: record permanence; supplies no "time metric" | route A; runner [RT-REC] | [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — current axiom memo |
-| Record formation rule/process/state/site/weight/rate not forced (occurrence axiom-supplied) | route A (occurrence alone carries no axis label) | [`RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md`](RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md) — no_go source note (narrowed 2026-07-05) |
+| Record occurrence and nearest-neighbor conditional distribution supplied; form/values and production construction open | route A premise inventory, not a universal impossibility | [`RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md`](RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md) — corrected conditional boundary (2026-10-21) |
 | Clock map supplied, never derived from counts | route A; the record-shaped pin | [`POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md`](POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md) — retained_no_go |
 | (CAP-K) registration cone: (REG-dyn) consumes the framework `H`, (REG-tau) consumes a supplied window | route A circularity check | [`OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026-06-10.md`](OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026-06-10.md) — bounded_theorem (conditional realization class) |
 | Anomaly chain constrains the count `d_t`, "not which axis is temporal" | route B | [`ANOMALY_FORCES_TIME_THEOREM.md`](ANOMALY_FORCES_TIME_THEOREM.md) — bounded_theorem (downstream consumer; its own non-circularity text is the kill) |
@@ -181,13 +181,13 @@ exists"? Three kills, one computed and two textual, all at one hop:
    structure. Durability cannot distinguish W-related axes.
 2. **The record rows are axis-blind by their own text (one hop).** The
    Record axiom supplies no "time metric" (verbatim exclusion);
-   record occurrence is axiom-supplied ("Records form.") while the
-   narrowed record-formation no-go keeps the formation
-   rule/process/state/site/weight/rate unforced, so occurrence carries
-   no site/axis datum, and even granting records, the clock/rate
-   interface proves the event order carries no metric and — a fortiori
-   — no lattice-axis
-   label: "Without the supplied `tau`, the same record history supports
+   occurrence and a nearest-neighbor conditional distribution are supplied.
+   The corrected formation source leaves its form/values and production
+   construction open; it does not prove a general impossibility or supply
+   an axis-selection theorem. The separate clock/rate interface concerns
+   metric assignment, not a proof against every possible axis supplier. Its
+   limited quoted statement is:
+   "Without the supplied `tau`, the same record history supports
    many inequivalent rates." The post-record surface supplies order,
    counts, and prefixes; the association of that order with a lattice
    axis is a *bridge*, never derived. The sharp-record Fisher row and
@@ -277,10 +277,10 @@ for any future axis-selection row.
 - **Clock/rate interface:** respected and consumed — no rate, no clock,
   no axis is derived from record counts; the pin's record-shaped form is
   the *supplied-bridge* opening that the no-go itself names.
-- **Record-formation no-go (narrowed 2026-07-05):** respected —
-  occurrence is axiom-supplied ("Records form."); nothing here derives a
-  formation rule/process/state/site/weight/rate, and route A2 fails even
-  granting records.
+- **Current formation boundary:** occurrence and a local conditional
+  distribution are supplied; their physical production and numerical values
+  are not constructed here. The W-transport result concerns the supplied
+  operators, not all possible physical formation laws.
 
 ## 7. No-Go Discipline Gate
 
@@ -413,7 +413,8 @@ bare_retained_allowed: false
 python3 scripts/single_clock_axis_selection_check_2026_06_11.py
 ```
 
-Expected output (matches stdout):
+Historical output (preserved snapshot; the formation/source-text checks below
+are superseded by the corrected live runner and current cache):
 
 ```text
 ========================================================================

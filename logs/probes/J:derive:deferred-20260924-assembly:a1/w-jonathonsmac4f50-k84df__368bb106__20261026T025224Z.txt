@@ -1,0 +1,51 @@
+== A. the supplied Boolean graph (read from origin/main through git) ==
+PASS A0 runner bytes readable at pinned origin/main
+PASS A1 117 nodes, 40 menu entries, 75 landed + 3 open reference nodes, 11 targets :: edges=210
+PASS A2 T_GRAVITY minimal decision sets by 4096-assignment brute force = the four landed families
+PASS A3 no single decision is common to all four families (nothing is individually necessary for T_GRAVITY)
+PASS A4 every family has exactly one of {DEC_ORDER_LAW, DEC_READING} (formation reading xor static reading)
+PASS A5 deleting the edge ONE_VERTEX_INVARIANTS->T_GRAVITY changes no minimal family (Boolean-inert); same for GRAVITY_BOUNDARIES and HOLE_READS_CLOCK; T_RECORD_DYNAMICS and T_GAUGE edges matter :: {'ONE_VERTEX_INVARIANTS': False, 'GRAVITY_BOUNDARIES': False, 'T_RECORD_DYNAMICS': True, 'T_GAUGE': True, 'HOLE_READS_CLOCK': False}
+PASS A6 the graph makes each of the 78 reference nodes true by a direct arrow AX->node
+PASS A7 withdrawing the arrow AX->ONE_VERTEX_INVARIANTS leaves the node parentless, and an empty AND is true: T_GRAVITY's families do not change (the arrow from AX is itself Boolean-vacuous) :: families=4
+PASS A7b the node matters only if its truth is overridden: with ONE_VERTEX_INVARIANTS set false T_GRAVITY has no family. The graph holds no content that could make it false; its truth is a convention of the encoding, not a derived value :: families=0
+PASS A8 count of reference nodes that T_GRAVITY depends on (ancestors) :: 59 of 78
+PASS A9 frozen head of PR 8648 fetched; original note readable :: sha256=d274e0183f7d70a4
+PASS A10 the deferred sentence 'one-vertex ... feed gravity' is in the frozen original and absent from the landed note
+PASS A11 cited source ONE_VERTEX says its models are not derived from the axioms and asserts no gravity conclusion :: docs/UNIFORM_ICE_CARRIES_THE_LATTICE_GREEN_FUNCTION_IN_ITS_CHARGED_SECTOR_WHILE_NEUTRAL_SCALAR_RECORDS_ARE_SHORT_RANGED_BOUNDED_THEOREM_NOTE_2026-09-23.md:16,16
+PASS A12 cited source ONE_VERTEX leaves the tail of the neutral statistic unresolved (so 'short-ranged' is not a theorem) :: docs/UNIFORM_ICE_CARRIES_THE_LATTICE_GREEN_FUNCTION_IN_ITS_CHARGED_SECTOR_WHILE_NEUTRAL_SCALAR_RECORDS_ARE_SHORT_RANGED_BOUNDED_THEOREM_NOTE_2026-09-23.md:30
+PASS A13 cited source GRAVITY_BOUNDARIES says the axioms do not supply its tensor pairs, constraints, Hamiltonian, source or phase :: docs/LOCAL_FINITE_CLOCK_TENSOR_CONSTRAINTS_CUBIC_DISPERSION_AND_LINEAR_GRAVITY_BOUNDARIES_BOUNDED_THEOREM_NOTE_2026-09-14.md:42
+== B. one-vertex invariants (exact) ==
+PASS B1 24 proper cubic rotations
+PASS B2 rotations act transitively on the six outward directions
+PASS B3 averaging projector of the permutation representation = J/6, invariant linear statistics = span(sum of outward arrows)
+PASS B4 ice (3-in 3-out) vertex states: 20
+PASS B5 the only invariant linear statistic vanishes on every ice vertex state
+   orbit sizes under 24 rotations: [8, 12] ; under 48: [8, 12]
+PASS B6 Burnside: number of orbits of the 24 rotations on the 20 ice vertex states equals the orbit enumeration :: orbits=2
+PASS B7 more than one orbit: non-constant rotation-invariant one-vertex statistics exist (the lemma is silent on them) :: 1 independent non-constant invariants under rotations, 1 under the full octahedral group
+PASS B8 the landed alignment statistic f (1 or 3 aligned axes, values {-1,3}) has exactly the two rotation orbits (sizes 8 and 12) as its level sets: it is the one non-constant invariant :: [-1, 3]
+== C. supplied Gaussian divergence-free link field, quadratic vs linear coupling ==
+PASS C1 mean-zero lattice Green function: sum over the torus = 0 and (-Laplacian G0)(0) = 1 - 1/N exactly
+PASS C2 covariance matrix of the zero-flux divergence-free Gaussian (K=1) is an exact orthogonal projector on the 192 links of the 4^3 torus :: common denominator 960
+PASS C3 Sigma annihilates the lattice divergence and the three uniform-flux directions (zero-flux, divergence-free sector)
+PASS C4 trace(Sigma) = 192 - 63 - 3 = 126: the degrees of freedom of the divergence-free zero-flux field :: trace=126
+PASS C5 exact covariance C(r) = 2 sum Sigma_ab^2 of the vertex statistic s_v = sum over its six incident links of B^2: >= 0 at every separation and > 0 at every separation on 4^3 :: min=1/256, C(1,0,0)=3243/2560, C(2,0,0)=1687/19200
+PASS C6 exact Gaussian partition functions: F_int(lam,lam) = -lam^2 C(r) (1+O(lam)) -- like inclusions attract; F_int(lam,-lam) = +lam^2 C(r) -- unlike repel :: ratios 0.999999968632, 1.0
+PASS C7 same sign of F_int for lam of either sign (leading order is quadratic in the coupling)
+PASS C8 linear channel: the mean-zero Green function is strictly decreasing in separation on 4^3 and 6^3 (cross energy of two like unit sources q^2 G0(r) falls with distance: like sources repel) :: 4^3 axis ['1517/7680', '257/7680', '29/7680']; 6^3 axis ['1289503/5987520', '296203/5987520', '54871/5987520', '719/1197504']
+== C'. decay exponent of the quadratic channel (floating point, not a proof) ==
+PASS C9 FFT construction of Sigma (conventions of the large-torus run) reproduces the exact rational Sigma on 4^3 to 1e-12
+   axis covariance C(d), d=1..20: 1.293e+00 4.497e-02 2.396e-03 2.262e-04 3.819e-05 9.988e-06 3.459e-06 1.435e-06 6.733e-07 3.460e-07 1.907e-07 1.112e-07 6.787e-08 4.306e-08 2.824e-08 1.905e-08 1.318e-08 9.318e-09 6.718e-09 4.930e-09
+   local exponent -dlnC/dlnd between d and d+1 (d=1..19): 4.85 7.23 8.20 7.97 7.36 6.88 6.59 6.42 6.32 6.25 6.20 6.17 6.14 6.12 6.10 6.08 6.06 6.05 6.04
+PASS C10 on a 112^3 torus the local decay exponent of the quadratic channel decreases monotonically from d=8 to d=19, stays within 0.45 of 6, and is within 0.05 of 6 at d=19 (r^-6 asymptote from two dipolar r^-3 correlators, approached from above); it is NOT r^-1 :: exponents d=8:6.423 d=14:6.116 d=19:6.035
+PASS C11 the covariance is positive at every axis separation 1..20 on the large torus
+== D. the other parent: same constraints, two Hamiltonians, two static source kernels (recovered, exact) ==
+PASS D1 S(h) = tr R(h) = -k^2 tr h + k^T h k (symbolic, k=(1,2,2))
+PASS D2 the curvature map h -> R(h) has rank 3 = dim of symmetric transverse tensors
+PASS D3 the source-fixing field h = -rho P/(2k^2) has S(h) = rho and R(h) = rho P/2
+PASS D4 static scalar-source energies in the two quadratic comparators (g=1): H_L = rho^2/4 (k-independent contact), H_N = -rho^2/(4k^2) (attractive inverse-Laplacian kernel) :: E_L=rho**2/4, E_N=-rho**2/36
+PASS D5 for every h: |R(h)|^2 - (tr R(h))^2/2 = |R_TT|^2 (a sum of squares), so rho^2/4 is the minimum of H_L at fixed S = rho
+PASS D6 finite derivative penalty cannot repair the scalar block: det K = -J^2/2 < 0 for every U (unconstrained Gaussian scalar form is indefinite)
+runtime 3.9s
+TOTAL: PASS=40 FAIL=0
+SUMMARY: PARTIAL -- the arrow ONE_VERTEX_INVARIANTS->T_GRAVITY is Boolean-inert and the node's truth is an encoding convention (empty AND), not a derived value; in the supplied Gaussian comparator the quadratic one-vertex channel is like-attractive but decays as r^-6, the linear 1/r channel is like-repulsive, and the attractive 1/r kernel appears only with the indefinite scalar sector of the other parent; no source->curvature bridge is supplied, so the physical implication is not derived.

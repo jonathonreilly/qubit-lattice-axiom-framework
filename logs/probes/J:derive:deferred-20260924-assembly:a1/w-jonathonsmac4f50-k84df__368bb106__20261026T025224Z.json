@@ -1,0 +1,32 @@
+{
+ "task": "J:derive:deferred-20260924-assembly:a1",
+ "type": "judgment",
+ "lane": "deferred-science-recovery",
+ "worker": "w-jonathonsmac4f50-k84df",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/deferred-20260924-assembly/w-jonathonsmac4f50-k84df/check.py",
+ "seed": 83144,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "368bb106",
+ "started_utc": "20261026T025224Z",
+ "elapsed_s": 4.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "PARTIAL -- the arrow ONE_VERTEX_INVARIANTS->T_GRAVITY is Boolean-inert and the node's truth is an encoding convention (empty AND), not a derived value; in the supplied Gaussian comparator the quadratic one-vertex channel is like-attractive but decays as r^-6, the linear 1/r channel is like-repulsive, and the attractive 1/r kernel appears only with the indefinite scalar sector of the other parent; no source->curvature bridge is supplied, so the physical implication is not derived."
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 40/40 PASS (~4 s), no HIT line; PARTIAL on the ONE_VERTEX_INVARIANTS -> T_GRAVITY arrow: the arrow changes no minimal family of T_GRAVITY (parentless nodes true by the empty-AND convention, so the node's truth is an encoding convention); exactly one non-constant rotation-invariant one-vertex statistic on the 20 ice vertex states (equals the landed f); in the supplied Gaussian divergence-free comparator identical inclusions attract through it (sign exact in rational arithmetic on a 4^3 torus; decay exponent tends to 6, numerical on 112^3); the linear 1/r channel repels like sources; the attractive 1/r kernel appears only in the other parent's indefinite scalar sector (recovered, not new); missing premise: a source map to a bounded-below attractive scalar sector.",
+ "what": "OWNER-REQUESTED DEFERRED-SCIENCE RECOVERY, first bounded pass: Assembly graph versus physical necessity. Read probes/work/deferred-science-20260924/README.md and probes/work/deferred-science-20260924/batch-15.json; frozen originals, accepted canonical paths, exact review findings and claim boundaries are there. PR8648 has no unmapped files, but stronger physical necessity/completion assertions were deferred. Choose one arrow in its frozen 117-node/40-menu graph: inspect its cited source and derive the required physical implication with premises explicit, or exhibit the missing premise. Boolean reachability itself is already landed. Before calculating, inspect existing attempts/logs for these related problems: axioms-and-the-event-lattice. Reuse refereed results and corrected main source; do not redo an already settled result or compete with an active claim on the same question. If the first target is covered, select the next genuinely distinct deferred statement in this bundle and record why. Treat source-candidate labels as routing hints, not proof that anything is new or true. Ignore administrative seals and old PASS labels as evidence. Compare against current origin/main and record its SHA; the ai/probes science checkout can be stale. Fetch each frozen head and verify SHA256 using the manifest before reuse. Work ONE sharply stated residual, with domain, quantifiers, minimal premises and success witness. Preserve all original review demotions; do not restore a disproved overclaim or infer physical selection from a supplied model. DELIVERABLE: probes/work/derive/deferred-20260924-assembly/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. Number proof steps PROVED/CHECKED/ASSUMED. Include the first failing step and exact next obligation. RECOVERY_STATUS.json lists source SHA256 groups inspected, already-landed/duplicate/historical/active-elsewhere/recovered/open dispositions, existing task/log links, and the remaining ranked source groups. This is the first pass, not a claim that the whole bundle was exhausted. check.py independently checks each claimed finite fact with exact arithmetic when applicable, prints SUMMARY: PARTIAL ... or SUMMARY: ROUTE FAILS AT ... (or a precisely justified proof/counterexample). Print HIT: only for a new mathematical result or demonstrated defect, never merely recovered metadata; normal cross-model confirmation applies. A precise already-covered disposition is valid and must cite evidence. Commit the script before logging it with run_probe.py and finish through claim.py. Use the existing maximum-thinking J queue; do not launch workers or subagents, change worker budgets, edit authority surfaces, apply audit verdicts, or merge science. Outputs remain provisional until independent review and later authorized landing.",
+ "stdout_sha256": "69b87018902c85c2e6623cc544f26fd6072a4798b9999f3255f0f744721b5619",
+ "stdout_tail": "t is NOT r^-1 :: exponents d=8:6.423 d=14:6.116 d=19:6.035\nPASS C11 the covariance is positive at every axis separation 1..20 on the large torus\n== D. the other parent: same constraints, two Hamiltonians, two static source kernels (recovered, exact) ==\nPASS D1 S(h) = tr R(h) = -k^2 tr h + k^T h k (symbolic, k=(1,2,2))\nPASS D2 the curvature map h -> R(h) has rank 3 = dim of symmetric transverse tensors\nPASS D3 the source-fixing field h = -rho P/(2k^2) has S(h) = rho and R(h) = rho P/2\nPASS D4 static scalar-source energies in the two quadratic comparators (g=1): H_L = rho^2/4 (k-independent contact), H_N = -rho^2/(4k^2) (attractive inverse-Laplacian kernel) :: E_L=rho**2/4, E_N=-rho**2/36\nPASS D5 for every h: |R(h)|^2 - (tr R(h))^2/2 = |R_TT|^2 (a sum of squares), so rho^2/4 is the minimum of H_L at fixed S = rho\nPASS D6 finite derivative penalty cannot repair the scalar block: det K = -J^2/2 < 0 for every U (unconstrained Gaussian scalar form is indefinite)\nruntime 3.9s\nTOTAL: PASS=40 FAIL=0\nSUMMARY: PARTIAL -- the arrow ONE_VERTEX_INVARIANTS->T_GRAVITY is Boolean-inert and the node's truth is an encoding convention (empty AND), not a derived value; in the supplied Gaussian comparator the quadratic one-vertex channel is like-attractive but decays as r^-6, the linear 1/r channel is like-repulsive, and the attractive 1/r kernel appears only with the indefinite scalar sector of the other parent; no source->curvature bridge is supplied, so the physical implication is not derived.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k84df",
+  "at_utc": "20261026T025238Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

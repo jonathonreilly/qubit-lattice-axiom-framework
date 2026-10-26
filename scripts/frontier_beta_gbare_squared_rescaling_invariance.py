@@ -22,6 +22,13 @@ rescaling note (now a Gram-only lemma) does not supply the beta-routing.
 
 from __future__ import annotations
 
+AUDIT_INPUT_PATHS = [
+    'docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md',
+    'docs/BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md',
+    'docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md',
+]
+AUDIT_TIMEOUT_SEC = 120
+
 from fractions import Fraction
 from pathlib import Path
 import re
@@ -167,7 +174,7 @@ def check_narrowing_to_abstract_algebra() -> None:
 
 
 def check_dependencies_exist_and_are_scoped() -> None:
-    section("load-bearing dependency and reader-context file checks")
+    section("documentary dependency/context checks (text presence is not proof)")
     for path in [ABSTRACT_IDENTITY_PATH, RESCALING_PATH]:
         check(f"dependency exists: docs/{path.name}", path.exists())
 
@@ -184,12 +191,12 @@ def check_dependencies_exist_and_are_scoped() -> None:
         or "Cited dependencies\n\nNone" in abstract,
     )
     check(
-        "abstract identity proves beta(g/c,N)=c^2 beta(g,N)",
+        "documentary: abstract note states beta(g/c,N)=c^2 beta(g,N)",
         "beta(g / c, N)  =  c^2 * beta(g, N)" in abstract_norm
         or "beta(g/c,N)=c^2*beta(g,N)" in abstract_norm.replace(" ", ""),
     )
     check(
-        "abstract identity proves product invariance",
+        "documentary: abstract note states product invariance",
         "product beta(g, N) * g^2 = 2 N is invariant" in abstract_norm
         or "beta * g^2" in abstract_norm,
     )

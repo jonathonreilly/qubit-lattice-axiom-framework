@@ -1,27 +1,15 @@
 #!/usr/bin/env python3
-"""
-DM selector threshold stabilization support theorem.
-
-Question:
-  Even though the current exact bank does not force one distinguished witness
-  threshold, does the intrinsic threshold-volume selector family already have
-  a theorem-grade high-threshold stabilization window on which the preferred
-  recovered lift is the unique minimizer?
-
-Answer:
-  Yes.
-
-  On the recovered bank, the preferred lift 0 becomes the unique minimizer of
-  the exact intrinsic threshold-volume field V_tau(H) immediately above the
-  last pairwise crossover threshold tau_star and stays the unique minimizer
-  until the next lift first reaches zero witness volume.
-
-  So the remaining selector-side positive burden is narrower than “derive an
-  arbitrary threshold law”: it is enough to derive an intrinsic threshold law
-  landing in this exact stabilization window.
+"""This runner reproduces supplied finite numerical fixtures and checks documentary
+consistency. Its unchanged numerical predicates, grids and optimizer settings
+are not a proof of global optimality, exact roots, physical selection or an
+exhaustive remaining research burden. Text matches report text only. Historical
+literal-True narrative is not counted as a mathematical PASS.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ['archive_unlanded/dm-neutrino-stale-runners-2026-04-30/DM_NEUTRINO_WEAK_TRIPLET_COEFFICIENT_AXIOM_BOUNDARY_NOTE_2026-04-15.md', 'docs/DM_NEUTRINO_BREAKING_TRIPLET_CP_THEOREM_NOTE_2026-04-15.md', 'docs/DM_NEUTRINO_EXACT_H_SOURCE_SURFACE_PREIMAGE_BUNDLE_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_EXACT_H_SOURCE_SURFACE_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_POSITIVE_POLAR_H_CP_THEOREM_NOTE_2026-04-15.md', 'docs/DM_NEUTRINO_POSTCANONICAL_POLAR_SECTION_NOTE_2026-04-15.md', 'docs/DM_NEUTRINO_SOURCE_AMPLITUDE_THEOREM_NOTE_2026-04-15.md', 'docs/DM_NEUTRINO_SOURCE_BANK_Z3_DOUBLET_BLOCK_SELECTION_OBSTRUCTION_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_AFFINE_POINT_SELECTION_BOUNDARY_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_HALF_PLANE_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_ATOMIC_WITNESS_VOLUME_SELECTOR_NONREALIZATION_NOTE_2026-04-18.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_CARRIER_NORMAL_FORM_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_INTRINSIC_SLOT_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_SHIFT_QUOTIENT_BUNDLE_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_Z3_DOUBLET_BLOCK_POINT_SELECTION_THEOREM_NOTE_2026-04-16.md', 'docs/DM_SELECTOR_THRESHOLD_STABILIZATION_SUPPORT_THEOREM_NOTE_2026-04-21.md', 'docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md', 'scripts/dm_leptogenesis_exact_common.py', 'scripts/dm_selector_branch_support.py', 'scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py', 'scripts/frontier_dm_leptogenesis_ne_charged_source_response_reduction.py', 'scripts/frontier_dm_leptogenesis_pmns_projector_interface.py', 'scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py', 'scripts/frontier_dm_neutrino_exact_h_source_surface_preimage_bundle_theorem.py', 'scripts/frontier_dm_neutrino_hermitian_bridge_carrier.py', 'scripts/frontier_dm_neutrino_positive_polar_h_cp_theorem.py', 'scripts/frontier_dm_neutrino_postcanonical_polar_section.py', 'scripts/frontier_dm_neutrino_source_bank_z3_doublet_block_selection_obstruction_theorem.py', 'scripts/frontier_dm_neutrino_source_surface_active_affine_point_selection_boundary.py', 'scripts/frontier_dm_neutrino_source_surface_active_half_plane_theorem.py', 'scripts/frontier_dm_neutrino_source_surface_atomic_witness_volume_selector_nonrealization.py', 'scripts/frontier_dm_neutrino_source_surface_carrier_normal_form.py', 'scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py', 'scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py', 'scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem.py']
 
 import math
 import sys
@@ -98,7 +86,7 @@ def bisection_root(
 
 def part1_intrinsic_threshold_volume_data_are_exact() -> tuple[list[tuple[float, float, float]], float]:
     print("\n" + "=" * 88)
-    print("PART 1: THE INTRINSIC THRESHOLD-VOLUME FAMILY IS EXACT ON THE RECOVERED BANK")
+    print("PART 1: SUPPLIED THRESHOLD-VOLUME DATA")
     print("=" * 88)
 
     lifts, hs_bank, repairs_bank, _targets = recovered_bank()
@@ -108,21 +96,18 @@ def part1_intrinsic_threshold_volume_data_are_exact() -> tuple[list[tuple[float,
     note = read("docs/DM_NEUTRINO_SOURCE_SURFACE_ATOMIC_WITNESS_VOLUME_SELECTOR_NONREALIZATION_NOTE_2026-04-18.md")
 
     check(
-        "The preferred recovered lift is the first recovered-bank point used throughout the selector packet",
+        'The preferred recovered lift is the first recovered-bank point used throughout the selector packet',
         np.linalg.norm(np.asarray(lifts[0], dtype=float) - PREFERRED_RECOVERED_LIFT) < 1.0e-12,
         f"preferred lift = {np.round(lifts[0], 12)}",
     )
     check(
-        "One common positive comparison window still exists on the full recovered bank",
+        'One common positive comparison window still exists on the full recovered bank',
         float(mu_bank) > float(np.max(repairs_bank)),
         f"mu_bank = {mu_bank:.12f}",
     )
+    check('DOCUMENTARY text observation only: The nonrealization note already records the exact intrinsic threshold-volume family V_tau(H)', "V_tau(H)" in note and "piecewise-quadratic" in note and "intrinsic threshold law" in note)
     check(
-        "The nonrealization note already records the exact intrinsic threshold-volume family V_tau(H)",
-        "V_tau(H)" in note and "piecewise-quadratic" in note and "intrinsic threshold law" in note,
-    )
-    check(
-        "The preferred recovered lift has the smallest terminal inverse eigenvalue a among the recovered bank",
+        'The preferred recovered lift has the smallest terminal inverse eigenvalue a among the recovered bank',
         params_bank[0][0] == min(p[0] for p in params_bank),
         f"a values = {np.round([p[0] for p in params_bank], 12)}",
     )
@@ -137,9 +122,8 @@ def part2_pairwise_crossovers_isolate_one_last_stabilization_threshold(
     print("PART 2: PAIRWISE CROSSOVERS ISOLATE THE LAST STABILIZATION THRESHOLD")
     print("=" * 88)
 
-    # These brackets are read off from the already-audited threshold-volume packet
-    # and are used only to isolate the unique nontrivial pairwise crossover with
-    # the preferred lift on the high-threshold side.
+    # Supplied brackets locate numerical crossover candidates only;
+    # no exhaustive root isolation or uniqueness certificate is inferred.
     tau_roots = {
         4: bisection_root(params_bank, 0, 4, 0.12, 0.125),
         3: bisection_root(params_bank, 0, 3, 0.125, 0.13),
@@ -151,22 +135,22 @@ def part2_pairwise_crossovers_isolate_one_last_stabilization_threshold(
     tau_zero_next = min(math.log1p(params_bank[j][0]) for j in range(1, len(params_bank)))
 
     check(
-        "The preferred lift crosses below lift 4 first, then lift 3, then lift 2, and last lift 1",
+        'The preferred lift crosses below lift 4 first, then lift 3, then lift 2, and last lift 1',
         tau_roots[4] < tau_roots[3] < tau_roots[2] < tau_roots[1],
         f"roots = {tau_roots}",
     )
     check(
-        "The last pairwise crossover defines the high-threshold stabilization onset tau_star",
+        'The last pairwise crossover defines the high-threshold stabilization onset tau_star',
         abs(tau_star - tau_roots[1]) < 1.0e-14,
         f"tau_star = {tau_star:.15f}",
     )
     check(
-        "The preferred lift reaches zero witness volume before every competing lift",
+        'The preferred lift reaches zero witness volume before every competing lift',
         tau_zero_0 < tau_zero_next,
         f"(tau_zero_0, tau_zero_next)=({tau_zero_0:.15f},{tau_zero_next:.15f})",
     )
     check(
-        "So there is a nonempty open threshold window after tau_star and before the next zero-volume tie",
+        'So there is a nonempty open threshold window after tau_star and before the next zero-volume tie',
         tau_star < tau_zero_next,
         f"window = ({tau_star:.15f}, {tau_zero_next:.15f})",
     )
@@ -186,7 +170,7 @@ def part3_the_preferred_lift_is_unique_on_the_whole_stabilization_window(
     params_bank: list[tuple[float, float, float]], tau_star: float, tau_zero_next: float
 ) -> None:
     print("\n" + "=" * 88)
-    print("PART 3: THE PREFERRED LIFT IS THE UNIQUE MINIMIZER ON THE WHOLE WINDOW")
+    print("PART 3: REPRESENTATIVE AND PIECEWISE-MIDPOINT COMPARISONS")
     print("=" * 88)
 
     tau_zero_0 = math.log1p(params_bank[0][0])
@@ -206,14 +190,14 @@ def part3_the_preferred_lift_is_unique_on_the_whole_stabilization_window(
         details.append(f"tau={tau:.6f}: winner={winner}, vals={np.round(vals, 6)}")
 
     check(
-        "Representative points from the stabilization window all choose the preferred recovered lift uniquely",
+        'Representative points from the stabilization window all choose the preferred recovered lift uniquely',
         sample_ok,
         " ; ".join(details),
     )
 
     post_zero_vals = np.array([threshold_volume(p, 0.5 * (tau_zero_0 + tau_zero_next)) for p in params_bank], dtype=float)
     check(
-        "After the preferred lift reaches zero witness volume it stays uniquely minimal until the next lift also reaches zero",
+        'Finite supplied diagnostic: post-zero sampled comparison',
         abs(post_zero_vals[0]) < 1.0e-12 and np.all(post_zero_vals[1:] > 1.0e-6),
         f"post-zero volumes = {np.round(post_zero_vals, 12)}",
     )
@@ -243,7 +227,7 @@ def part3_the_preferred_lift_is_unique_on_the_whole_stabilization_window(
         interval_details.append(f"({left:.6f},{right:.6f})->{np.round(vals, 6)}")
 
     check(
-        "Across every piecewise branch before zero-volume onset, the preferred lift already stays strictly below all competitors",
+        'Finite supplied diagnostic: piecewise midpoint comparisons',
         interval_checks,
         " ; ".join(interval_details),
     )
@@ -251,31 +235,20 @@ def part3_the_preferred_lift_is_unique_on_the_whole_stabilization_window(
 
 def part4_the_remaining_selector_target_is_now_narrower() -> None:
     print("\n" + "=" * 88)
-    print("PART 4: SCIENTIFIC CONSEQUENCE")
+    print("PART 4: DOCUMENTARY BOUNDARY AND FINITE COMPARISONS")
     print("=" * 88)
 
     obstruction = read("docs/DM_NEUTRINO_SOURCE_SURFACE_ATOMIC_WITNESS_VOLUME_SELECTOR_NONREALIZATION_NOTE_2026-04-18.md")
     review = read("docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md")
 
-    check(
-        "The prior selector-side note already said the missing datum is an intrinsic threshold law",
-        "intrinsic threshold law" in obstruction,
-    )
-    check(
-        "The review register still lists the finer right-sensitive microscopic point-selection law as open",
-        "finer right-sensitive microscopic point-selection law" in review
-        or "finer right-sensitive microscopic selector law" in review,
-    )
-    check(
-        "So this theorem narrows the open selector burden without overstating closure",
-        True,
-        "any future threshold law landing in the stabilization window selects the preferred recovered lift immediately",
-    )
+    check('DOCUMENTARY text observation only: The prior selector-side note already said the missing datum is an intrinsic threshold law', "intrinsic threshold law" in obstruction)
+    check("DOCUMENTARY: summary reports physical selection obligations open and PMNS angles supplied", "selection obligations remain open" in " ".join(review.split()) and "PMNS angle triple is an input" in " ".join(review.split()))
+    print("INFO: Historical selector-burden narration withdrawn; no mathematical check or exhaustive-route inference.")
 
 
 def main() -> int:
     print("=" * 88)
-    print("DM SELECTOR THRESHOLD STABILIZATION SUPPORT THEOREM")
+    print("DM SELECTOR THRESHOLD STABILIZATION FINITE NUMERICAL SUPPORT")
     print("=" * 88)
 
     params_bank, _mu_bank = part1_intrinsic_threshold_volume_data_are_exact()
@@ -284,15 +257,8 @@ def main() -> int:
     part4_the_remaining_selector_target_is_now_narrower()
 
     print("\n" + "=" * 88)
-    print("RESULT")
-    print("=" * 88)
-    print("  The exact intrinsic threshold-volume family already has a nontrivial")
-    print("  high-threshold stabilization window on the recovered bank.")
-    print("  Immediately above tau_star, the preferred recovered lift becomes the")
-    print("  unique minimizer and stays unique until the next zero-volume tie.")
-    print("  So the remaining selector-side burden is not an arbitrary threshold law.")
-    print("  It is a threshold law landing in that exact stabilization window.")
-    print()
+    print("RESULT: finite supplied computations and documentary observations only")
+    print("No physical selector, exact optimizer/root certificate, exhaustive route or continuous-window theorem follows.")
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
 
     return 0 if FAIL_COUNT == 0 else 1

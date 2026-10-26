@@ -1,0 +1,53 @@
+{
+  "base": "26878429adf81e855c90d1f2e3466b85ede2cc62",
+  "paths": [
+    {
+      "path": "docs/DM_SPLIT2_INTERVAL_CERTIFIED_DOMINANCE_CLOSURE_THEOREM_NOTE_2026-04-21.md",
+      "sha256": "053860ea41d4b7905f66f3c574a9c29724bab1b0d44e83eef5406b70faf96db7"
+    },
+    {
+      "path": "docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md",
+      "sha256": "015f4ff5e58e83c75b74a0f1d721ece341e650c56f84d82ccbcf3eca1f217b49"
+    },
+    {
+      "path": "docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md",
+      "sha256": "e3224f36129d231031fded4b6b65f558665efdc23626447b1c66bec5db20b0b1"
+    },
+    {
+      "path": "logs/runner-cache/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.txt",
+      "sha256": "f0fe4da94ead28a5e490c76c72f828e99e37370c602918fe82da9f5f20da955c"
+    },
+    {
+      "path": "scripts/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.py",
+      "sha256": "585aa3813d9195188461cd5fef7910e8dfb91bb61c40d052a027e40c606c92a3"
+    }
+  ],
+  "context": {
+    "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/confirm-9852/split2-owner-review/REVIEW.md": "d98c04922cff31ca97d787b925eabb3692de49c609e19b74c33eef28ef21f733",
+    "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/confirm-9852/split2-owner-review/VERDICT.json": "b18f863fd91a2481b9d57e158c77777914a9115092143ab614ebca491a9e5282",
+    "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/confirm-9852/split2-owner-review/decisive.json": "020e33476009365129d099cf92f1b20499df6c38744fd9cbc6051886eab984f9",
+    "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/confirm-9852/split2-owner-review/algebra-controls.json": "02f8be40a7e6fc8fa5713b6fac14d4e41ce6c17d5c998318fb6b85169c1d0ffd",
+    "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/predicate-preservation.json": "87e189c3c9204a9ad9c66f6460aa43a51007ce7c95e29b5bbb797d42e1d38c44",
+    "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/closure.json": "7ecf2ba8dc6b64891feb66d35fab14cb69c6ed8943cdcbabe5de30f4a16a7a0a",
+    "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/consumer-dispositions.json": "e0c6018ef6242c98777bf01f5f0fc9f7bcd94ac2f39c82e100b1a0a800c87016",
+    "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/runtime.json": "512328e90a07a3fcf9550ef9051f86b4f6384954f5714eba39a98df295beaac2",
+    "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/capture.py": "9933d50794e38e77a2cb68d88a2a4abb2c256bafe06ce027f8cb77f4f1860d2a",
+    "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/freeze.py": "385a1839ce53d0b6b266cc68fbea604290fdb4e55a13498cb7263e7d93d4a000"
+  },
+  "capture": {
+    "actual_cap_sec": 120,
+    "status": "nonzero_exit",
+    "exit_code": 1,
+    "elapsed_sec": 1.3003580570220947,
+    "raw_sha256": "0d4bd85288d3d76de4dc82945119f6f0375ccc800db3988496a121a433e5d2cc",
+    "cache_sha256": "f0fe4da94ead28a5e490c76c72f828e99e37370c602918fe82da9f5f20da955c",
+    "cache_status": "execution_error",
+    "identity_status": "fresh",
+    "raw_saved_before_cache": true
+  },
+  "result": "14PASS/3FAIL retained, exit1",
+  "unchanged_original_dispositions": "../repair-9852-current-composition/recovery-reference.json",
+  "no_other_captures": true,
+  "candidate": "5042ee9c46cbb9283f22cdb7f148df5d37793f01",
+  "tree": "3cd4ba5efd3dbc0e0a57aa68e5c02bec1f9b4f6a"
+}

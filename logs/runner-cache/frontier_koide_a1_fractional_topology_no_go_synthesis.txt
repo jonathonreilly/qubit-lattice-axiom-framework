@@ -1,25 +1,33 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_a1_fractional_topology_no_go_synthesis.py
-runner_sha256: c12c388df888c7ac5ebf1bf104e97c23ec127663d2ee2f85054f1b06082804e6
+runner_sha256: 6c1660ec1593f8cde67a0419f6b04186dab5021babd4a3050c901841db20ad74
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.46
+elapsed_sec: 0.36
 status: ok
 ----- stdout -----
-Koide A1 fractional-topology no-go synthesis aggregate verifier
-==============================================================================
-Scope: aggregate the five existing PASS-only obstruction probes.
-Status: runner certificate only; independent audit owns verdicts.
-
-[PASS] O13 Cheeger-Simons R/Z period inheritance: return=0; PASS=49; FAIL=0; expected_PASS=49
-[PASS] O14 orbifold-Chern pi-factor inheritance: return=0; PASS=54; FAIL=0; expected_PASS=54
-[PASS] O15 eta mod-Z vs phase mod-2pi gap: return=0; PASS=47; FAIL=0; expected_PASS=47
-[PASS] O16 many-body promotion cost: return=0; PASS=59; FAIL=0; expected_PASS=59
-[PASS] O17 cyclotomic exponent vs rational mismatch: return=0; PASS=34; FAIL=0; expected_PASS=34
-
-FRACTIONAL_TOPOLOGY_PACKET=5_PROBES_ALL_OBSTRUCTION_CONFIRMED
-LOAD_BEARING_ROLE=no-go packet aggregation, not new status authority
-TOTAL: PASS=5, FAIL=0
+[PASS] exact finite sum equals 2/9
+[PASS] proposed order-three value violates domain relation
+[PASS] all three permitted torsion values satisfy relation
+[PASS] order-three values give cube roots of unity
+[PASS] standard exponential is invariant under integer shift
+[PASS] supplied 2/9 maps to angle 4pi/9
+[PASS] standard and literal phases differ
+[PASS] exp(i c) fails quotient representative consistency
+[PASS] exp(pi i c) fails quotient representative consistency
+[PASS] free-cycle supplied parameter yields literal target angle
+[PASS] cyclic action has order three
+[PASS] one-form cyclic sum is nonzero and fixed
+[PASS] one- and two-form cyclic fixed spaces have dimension one
+Scope: exact finite group/phase controls; no physical Koide selection.
+per_element: finite permutation and scalar expressions evaluated.
+per_site: no lattice sites, cocycle construction, or lattice simulation.
+per_mode: no spectral eta or physical mode calculation.
+per_block: one finite cyclic representation; no physical sector identification.
+lattice_wide: quotient cohomology and physical closure remain unproved.
+PASS=13 FAIL=0
+SYNTHESIS_SCOPE=finite correction only; five-route no-go withdrawn
+OPEN=other four probes and physical selection need separate review
 
 ----- stderr -----
 

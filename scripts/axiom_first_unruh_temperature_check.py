@@ -1,19 +1,15 @@
-"""Axiom-first Unruh temperature check.
+"""Conditional KMS time-rescaling arithmetic on supplied inputs.
 
-Verifies T_Unruh = a / (2 pi) on the framework retained Lorentz kernel
-surface + Block 01 KMS support theorem.
-
-Tests:
-  T1: Wick-rotation periodicity 2 pi for Rindler wedge.
-  T2: T_Unruh = a / (2 pi) formula across acceleration sweep.
-  T3: SI numerical scale at Earth-gravity acceleration ~4e-20 K.
-  T4: T_Unruh / a = 1/(2 pi) universal.
-  T5: Bisognano-Wichmann modular ID Delta = exp(-2 pi K) numerically
-      checked on a 2-mode toy boost generator.
+Finite consistency tests do not establish physical vacuum KMS or modular identity.
+The arbitrary-algebra theorem is proved in the paired note.
 """
 from __future__ import annotations
 
 import math
+from fractions import Fraction
+
+AUDIT_INPUT_PATHS = ("docs/AXIOM_FIRST_UNRUH_TEMPERATURE_THEOREM_NOTE_2026-05-01.md",)
+AUDIT_TIMEOUT_SEC = 120
 
 import numpy as np
 
@@ -31,22 +27,58 @@ def unruh_temperature_SI(a_SI: float) -> float:
     return hbar * a_SI / (2 * math.pi * c * k_B)
 
 
+def rescaled_beta(beta0, rate):
+    if beta0 <= 0 or rate <= 0:
+        raise ValueError("beta0 and rate must be positive")
+    return beta0 / rate
+
+
+def conditional_rescaling_checks():
+    ok = True
+    for beta0 in [Fraction(1, 3), Fraction(2), Fraction(7, 2)]:
+        for rate in [Fraction(1, 5), Fraction(1), Fraction(9, 2)]:
+            beta = rescaled_beta(beta0, rate)
+            # Represent z=t+i*y by its exact rational components.
+            for t in [Fraction(-3), Fraction(0), Fraction(5, 7)]:
+                for y in [Fraction(0), beta/2, beta]:
+                    ok = ok and 0 <= rate*y <= beta0
+                ok = ok and (rate*t, rate*beta) == (rate*t, beta0)
+            ok = ok and beta*rate == beta0
+    for beta0, rate in [(0, 1), (-1, 1), (1, 0), (1, -1)]:
+        try:
+            rescaled_beta(beta0, rate)
+        except ValueError:
+            continue
+        ok = False
+    hbar, c, k_B = 1.054571817e-34, 2.99792458e8, 1.380649e-23
+    acceleration = c/1e-9
+    beta_time = 2*math.pi*c/acceleration
+    beta_energy = beta_time/hbar
+    kelvin = 1/(k_B*beta_energy)
+    ok = ok and math.isclose(kelvin, unruh_temperature_SI(acceleration), rel_tol=1e-14)
+    ok = ok and math.isclose(kelvin, 0.001215662471207031, rel_tol=1e-14)
+    ok = ok and not math.isclose(kelvin, 200, rel_tol=1e-3)
+    print(f"General positive rescaling, strip substitution, domain and SI controls: {'PASS' if ok else 'FAIL'}")
+    print(f"Supplied formula at a=c/(1ns): {kelvin:.17g} K; historical 200 K rejected")
+    return ok
+
+
 def main() -> None:
     print("=" * 72)
-    print("AXIOM-FIRST UNRUH TEMPERATURE CHECK")
+    print("CONDITIONAL KMS TIME-RESCALING CHECK")
     print("=" * 72)
     print()
-    print("Setup: retained Lorentz kernel + Block 01 KMS support")
-    print("Unruh: T_Unruh = a / (2 pi) (natural units)")
+    print("Setup: supplied KMS state and positive time-rescaling premises")
+    print("Supplied beta0=2pi specialization: T = a / (2 pi)")
     print()
 
     # ----- Test 1: Wick-rotation periodicity -----
     print("-" * 72)
-    print("TEST 1: Wick-rotation periodicity 2 pi for Rindler wedge")
+    print("TEST 1: assigned-period consistency")
     print("-" * 72)
-    print("Same conical-defect argument as Block 02 (Hawking).")
+    print("The period is assigned here; this is not a geometry proof.")
     print("In Rindler coords (eta, xi), Euclidean continuation eta -> -i tau")
-    print("requires period 2 pi to avoid conical defect at xi = 0.")
+    print("has a supplied 2 pi angular convention; no state is constructed.")
     period_predicted = 2 * math.pi
     print(f"  predicted period = {period_predicted:.10f}")
     print(f"  expected         = {2 * math.pi:.10f}")
@@ -107,10 +139,10 @@ def main() -> None:
 
     # ----- Test 5: Bisognano-Wichmann Delta = exp(-2 pi K) -----
     print("-" * 72)
-    print("TEST 5: Bisognano-Wichmann modular operator identity")
+    print("TEST 5: two assigned finite diagonal matrices")
     print("        Delta = exp(-2 pi K)")
     print("-" * 72)
-    print("Toy: K = diag(0, 1, 2, 3) (4 boost-eigenvalue modes).")
+    print("Toy: K = diag(0, 1, 2, 3), a supplied matrix, not a boost realization.")
     K = np.diag([0.0, 1.0, 2.0, 3.0])
     Delta = np.diag([math.exp(-2 * math.pi * k) for k in [0.0, 1.0, 2.0, 3.0]])
     Delta_via_exp = np.diag([math.exp(-2 * math.pi * k) for k in K.diagonal()])
@@ -127,20 +159,18 @@ def main() -> None:
     print("=" * 72)
     print("SUMMARY")
     print("=" * 72)
-    print(f"  Test 1 (Wick-rotation period 2 pi):                {'PASS' if t1_ok else 'FAIL'}")
+    print(f"  Test 1 (assigned-period consistency):                {'PASS' if t1_ok else 'FAIL'}")
     print(f"  Test 2 (T_Unruh = a / (2 pi) sweep):               {'PASS' if t2_ok else 'FAIL'}")
     print(f"  Test 3 (SI scale at Earth gravity ~4e-20 K):       {'PASS' if t3_ok else 'FAIL'}")
     print(f"  Test 4 (T_Unruh / a = 1/(2 pi) universal):         {'PASS' if t4_ok else 'FAIL'}")
-    print(f"  Test 5 (Bisognano-Wichmann Delta = exp(-2 pi K)):  {'PASS' if t5_ok else 'FAIL'}")
+    print(f"  Test 5 (assigned diagonal equality):  {'PASS' if t5_ok else 'FAIL'}")
     print()
-    all_ok = t1_ok and t2_ok and t3_ok and t4_ok and t5_ok
+    rescaling_ok = conditional_rescaling_checks()
+    all_ok = t1_ok and t2_ok and t3_ok and t4_ok and t5_ok and rescaling_ok
     print(f"  OVERALL: {'PASS' if all_ok else 'FAIL'}")
     print()
-    print("Note: this runner verifies the Unruh temperature formula and the")
-    print("Bisognano-Wichmann modular identity at machine precision. The proof")
-    print("in the companion theorem note follows the same Wick-rotation periodicity")
-    print("argument as Block 02 (Hawking T_H), with the Killing horizon replaced")
-    print("by the Rindler horizon.")
+    print("Finite arithmetic and assigned-matrix consistency only.")
+    print("No physical vacuum, boost realization or BW identity is established.")
     if not all_ok:
         raise SystemExit(1)
 

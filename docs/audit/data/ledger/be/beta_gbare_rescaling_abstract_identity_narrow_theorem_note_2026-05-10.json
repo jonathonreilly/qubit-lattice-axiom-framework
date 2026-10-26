@@ -29,12 +29,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 11.869,
+  "load_bearing_score": 12.208,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "a8fb8bff35dc5bd2c474a4d489632f65aebcb6678f2d93a9693e8a3e65ddc44d",
+  "note_hash": "b2c63b19a26064d902b1b0274b85be92f5e1b70087e2a54844ae862b69dd6911",
   "note_path": "docs/BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -115,7 +115,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -125,6 +125,6 @@
   },
   "runner_path": "scripts/frontier_beta_gbare_rescaling_abstract_identity_narrow.py",
   "title": "\u03b2\u2013g_bare Rescaling Abstract Identity Narrow Theorem",
-  "transitive_descendants": 934,
+  "transitive_descendants": 1182,
   "verdict_rationale": null
 }

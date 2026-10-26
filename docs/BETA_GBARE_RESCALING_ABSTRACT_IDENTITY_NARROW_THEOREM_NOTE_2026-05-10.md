@@ -20,7 +20,9 @@ audit pipeline after independent review.
 ## Statement
 
 Let `(g, c, N)` be abstract symbolic variables with `g > 0`, `c > 0`, and
-`N` arbitrary in any field of characteristic zero (in particular `Q`).
+`N` arbitrary in an ordered field of characteristic zero (in particular `Q`).
+The identities also extend to any characteristic-zero field with nonzero
+`g,c`, without an ordering or positivity claim.
 Define the rational function
 
 ```text
@@ -81,9 +83,14 @@ This is class (A) — pure polynomial-algebra over the rationals.
 So the product is invariant under the joint rescaling and equals the
 constant `2 N`.
 
-`(T3)` From (1), `g₀² = 2 N₀ / β(g₀, N₀)`. If `N₀ ≠ 0`, then `g₀ > 0`
-determines `β(g₀, N₀) > 0` uniquely, and conversely each `β₀ > 0`
-determines a unique positive `g₀ = sqrt(2 N₀ / β₀)`. Under `σ_c` with
+`(T3)` From (1), `g₀² = 2 N₀ / β(g₀, N₀)`. For fixed `N₀ > 0`, each `g₀ > 0`
+determines `β(g₀, N₀) > 0` uniquely. Conversely, over `Q`, a positive
+`β₀` has a point in its fiber only if `2 N₀ / β₀` is a rational square;
+then its unique positive point is `g₀ = sqrt(2 N₀ / β₀)`. For example,
+`N₀=1, β₀=1` has no rational point because `sqrt(2)` is irrational: if coprime positive integers p,q
+satisfied p²=2q², then p is even, hence q is even, a contradiction.
+Uniqueness follows from (g₁-g₂)(g₁+g₂)=0 and g₁+g₂>0.
+Over `R` the positive square root exists for every positive `β₀`. Under `σ_c` with
 `c ≠ 1`, the rescaled `g₀ / c ≠ g₀`, hence by (3),
 `β(g₀ / c, N₀) = c² · β(g₀, N₀) ≠ β(g₀, N₀)`. The orbit
 `{ g₀ / c : c ∈ Q_{>0} }` is `Q_{>0}` because for any positive rational
@@ -95,8 +102,9 @@ determines a unique positive `g₀ = sqrt(2 N₀ / β₀)`. Under `σ_c` with
   `(g, c, N)` with `g > 0`, `c > 0`.
 - `(T2)`: the symbolic joint-rescaling invariance (4) of the product
   `β · g²`.
-- `(T3)`: the orbit of any positive `g₀` under `σ_c` exhausts `Q_{>0}`,
-  and the β-fiber over each positive value is a single point in `g`.
+- `(T3)`: the orbit of any positive rational `g₀` under `σ_c` exhausts `Q_{>0}`,
+  and the β-fiber over each attained positive value is a single rational
+  point in `g`; other positive rational values may have empty fibers.
 
 ## What this does NOT claim
 
@@ -135,7 +143,7 @@ and works on a physical lattice gauge theory surface.
 
 The present narrow theorem isolates the underlying polynomial-algebra
 content from the physical convention reading. The rescaling identity
-(3) holds for any symbolic `(g, c, N)` whatsoever; the parent's
+(3) holds for symbolic `(g, c, N)` with nonzero `g,c`; the parent's
 substitution at `(N_c, g_bare) = (3, 1)` is one concrete numerical
 instance, but the identity does not depend on, derive, or claim any
 specific values for `g`, `c`, or `N`.
@@ -162,7 +170,7 @@ states only elementary polynomial algebra on abstract `(g, c, N)`.
 ## Validation
 
 Primary runner: `scripts/frontier_beta_gbare_rescaling_abstract_identity_narrow.py`
-verifies (PASS=43, FAIL=0):
+checks the following identities and finite controls (documentary checks are not proofs):
 
 1. Symbolic identity (3) is exact via sympy: `β(g/c, N) - c² · β(g, N) ≡ 0`
    as a polynomial in `(g, c, N)`.
@@ -174,4 +182,8 @@ verifies (PASS=43, FAIL=0):
    (T3 fiber statement).
 5. The orbit-exhaustion check: for the choice `(g₀, N₀) = (1, 3)`,
    selecting `c = 1/g'` for various `g' ∈ Q_{>0}` produces `g₀ / c = g'`
-   covering a representative grid of positive rationals.
+   covering a representative grid of positive rationals. The general orbit
+   assertion is proved by c=g₀/g′ above, not by this grid.
+
+The rational-fiber controls also check that `N=1, beta=1` has no rational
+preimage while `N=1, beta=2` has the positive rational preimage `g=1`.

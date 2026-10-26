@@ -1,4 +1,15 @@
 {
+  "evidence_scope": {
+    "classification": "conditional_supplied_historical_scenario_diagnostic",
+    "wilson_coefficients": "Supplied rational/fit targets; exact coefficient proof and asymptotic remainder unresolved.",
+    "ensemble_provenance": "Historical summary inputs; raw ensembles and Hamilton-limit provenance not recovered here.",
+    "transfer_rule": "Single-plaquette correction applied by supplied scenario rule; multiplaquette observable transfer unproved.",
+    "quadrature": "Finite numerical quadrature and refits, not certified continuum or physical error bounds.",
+    "numeric_keys": "Legacy numeric keys, targets and predicates retained for comparison; truth/exact/limit/budget names do not certify physical claims.",
+    "physical_epsilon_witness_established": false,
+    "hamilton_limit_convergence_established": false,
+    "causal_multiplaquette_obstruction_established": false
+  },
   "args": {
     "mode": "analytic",
     "target_eps_witness": 0.0003,
@@ -71,7 +82,7 @@
     "pass": true
   },
   "mc_ensembles": {
-    "source": "prior PR #685 + SU(3) NLO note + this-work L=8 ensemble",
+    "source": "supplied historical PR #685/NLO/L=8 summaries; raw provenance unrecovered",
     "ensembles": {
       "xi=4_3cubed_x12": {
         "P_sigma": 0.44545,
@@ -107,7 +118,7 @@
         "n_seeds": 3,
         "n_measure": "40+80+80",
         "vol": "8^3 x 32",
-        "source": "this work (2026-05-10): 3 seeds, iv-weighted"
+        "source": "historical supplied summary (2026-05-10): 3 seeds, iv-weighted; provenance unrecovered"
       },
       "xi=4_10cubed_x40": {
         "P_sigma": 0.4409,
@@ -117,7 +128,7 @@
         "n_seeds": 2,
         "n_measure": "40+40",
         "vol": "10^3 x 40",
-        "source": "this work (2026-05-10): 2 seeds, iv-weighted"
+        "source": "historical supplied summary (2026-05-10): 2 seeds, iv-weighted; provenance unrecovered"
       },
       "xi=8_4cubed_x16": {
         "P_sigma": 0.40949,
@@ -146,7 +157,7 @@
   "vol_scan_refit": {
     "fit_form": "P(L) = P_inf + a/L\u00b2 + b/L\u2074 (L=3,4,6,8,10)",
     "P_inf": 0.44043853159983615,
-    "P_inf_err": 0.0002557540115712972,
+    "P_inf_err": 0.0002557540115712971,
     "a": 0.049671840043736946,
     "b": -0.04652019893585732,
     "chi2": 2.636631046680155,
@@ -298,19 +309,19 @@
     "cross_xi_spread_NNLO": 0.13698318168446366,
     "cross_xi_mean_NLO": 0.39042036208936853,
     "cross_xi_mean_NNLO": 0.3910112704763212,
-    "obstruction": "multi_plaquette_at_large_xi"
+    "obstruction": "scenario_cross_xi_disagreement"
   },
   "error_budget": {
     "budget_A_xi4_Linfty": {
       "P_combined_NLO": 0.4099626259983214,
       "P_combined_NNLO": 0.41074231579778314,
       "P_combined_Weyl": 0.410916756212829,
-      "eps_vol": 0.0002557540115712972,
+      "eps_vol": 0.0002557540115712971,
       "eps_NNLO": 0.00017444041504586518,
       "eps_c3": 9.024836194178385e-06,
       "eps_quad": 1e-06,
-      "eps_total": 0.00025575596656737305,
-      "eps_total_NNLO": 0.0003097111888590993,
+      "eps_total": 0.00025575596656737294,
+      "eps_total_NNLO": 0.00030971118885909926,
       "passes_eps_witness": true,
       "passes_eps_witness_NNLO": false
     },
@@ -324,7 +335,7 @@
           "eps_c3": 9.024836194178385e-06,
           "eps_total": 0.0007114147215722384,
           "passes_eps_witness": false,
-          "vol_status": "calibrated_L=3,4,6"
+          "vol_status": "historical_summary_L=3,4,6_unvalidated"
         },
         {
           "xi": 4,
@@ -334,7 +345,7 @@
           "eps_c3": 9.024836194178385e-06,
           "eps_total": 0.0006450665904150558,
           "passes_eps_witness": false,
-          "vol_status": "calibrated_L=3,4,6"
+          "vol_status": "historical_summary_L=3,4,6_unvalidated"
         },
         {
           "xi": 4,
@@ -344,7 +355,7 @@
           "eps_c3": 9.024836194178385e-06,
           "eps_total": 0.0006625035140055526,
           "passes_eps_witness": false,
-          "vol_status": "calibrated_L=3,4,6"
+          "vol_status": "historical_summary_L=3,4,6_unvalidated"
         },
         {
           "xi": 4,
@@ -354,7 +365,7 @@
           "eps_c3": 9.024836194178385e-06,
           "eps_total": 0.0006768389070301037,
           "passes_eps_witness": false,
-          "vol_status": "calibrated_L=3,4,6"
+          "vol_status": "historical_summary_L=3,4,6_unvalidated"
         },
         {
           "xi": 4,
@@ -364,7 +375,7 @@
           "eps_c3": 9.024836194178385e-06,
           "eps_total": 0.0006658910617133296,
           "passes_eps_witness": false,
-          "vol_status": "calibrated_L=3,4,6"
+          "vol_status": "historical_summary_L=3,4,6_unvalidated"
         },
         {
           "xi": 8,
@@ -388,7 +399,7 @@
         }
       ]
     },
-    "best_eps_total": 0.00025575596656737305,
+    "best_eps_total": 0.00025575596656737294,
     "best_xi": 4,
     "passes_eps_witness": true,
     "target_eps_witness": 0.0003
@@ -399,7 +410,7 @@
     "notes": [
       {
         "verdict": "PASS",
-        "msg": "SU(3) NLO closed-form self-test (c_2 = -1)"
+        "msg": "SU(3) supplied NLO target diagnostic (c_2 = -1)"
       },
       {
         "verdict": "PASS",
@@ -407,17 +418,17 @@
       },
       {
         "verdict": "PASS",
-        "msg": "Weyl-truth residual at xi=4 below \u03b5_witness (0.00017 < 0.0003)"
+        "msg": "finite Weyl quadrature residual at xi=4 below \u03b5_witness (0.00017 < 0.0003)"
       },
       {
         "verdict": "PASS",
-        "msg": "\u03b5_witness budget met under imported summary values (total=0.00026)"
+        "msg": "Scenario target met under supplied summaries and transfer rule; physical witness unproved (total=0.00026)"
       },
       {
         "verdict": "PASS",
-        "msg": "Multi-plaquette obstruction at large xi: detected via cross-xi spread 0.13698 (= 35.0%); optimal xi=4 confirmed"
+        "msg": "Scenario disagreement at large xi: cross-xi spread 0.13698 (= 35.0%); xi=4 selected, not proved optimal; cause unresolved"
       }
     ]
   },
-  "wall_time_s": 0.7202246189117432
+  "wall_time_s": 0.32497692108154297
 }

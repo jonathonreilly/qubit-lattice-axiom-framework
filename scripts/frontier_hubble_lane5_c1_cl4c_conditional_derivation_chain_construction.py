@@ -1,22 +1,7 @@
 #!/usr/bin/env python3
-"""Lane 5 (C1) Cl_4(C)-conditional derivation chain construction runner.
-
-Authority note:
-    docs/HUBBLE_LANE5_C1_CL4C_CONDITIONAL_DERIVATION_CHAIN_CONSTRUCTION_NOTE_2026-04-30.md
-
-Conditional on Axiom* (the irreducible Cl_4(C) module on P_A H_cell, per the
-V1 axiom-stack minimality no-go theorem's corollary), this runner mechanically
-verifies the four arrows of the (G1) -> (C1) absolute-scale chain:
-
-    Arrow 1: Cl_4(C) -> metric-compatible primitive coframe response D
-    Arrow 2: D -> (G1) closure in natural phase units
-    Arrow 3: (G1) -> (C1)  (a/l_P = 1, a^{-1} = M_Pl in natural lattice units)
-    Arrow 4: (C1) -> H_0   [BLOCKED by (C2) eta-retirement gate; orthogonality witness]
-
-The runner also includes a forbidden-import guard ensuring no observed value
-of H_0, H_inf, Lambda, M_Pl, hbar, G enters as a proof input.
-
-Exit code: 0 on full PASS, 1 on any FAIL.
+"""Finite supplied Cl4 module and arithmetic diagnostics; physical bridges open.
+Authority note: docs/HUBBLE_LANE5_C1_CL4C_CONDITIONAL_DERIVATION_CHAIN_CONSTRUCTION_NOTE_2026-04-30.md
+Checks verify algebra and supplied numbers, not absolute-scale or Hubble closure.
 """
 
 from __future__ import annotations
@@ -202,7 +187,7 @@ def run_arrow_1_checks() -> None:
         f"worst D(v)^2 residual on 64 random real coframe vectors={worst_metric:.3e}",
     )
 
-    # Check 5: Face-rotation gauge — face permutation (x <-> y) lifts to a
+    # Check 5: Basis-label permutation — face permutation (x <-> y) lifts to a
     # unitary U_swap conjugating the Cl_4 presentation into a unitarily
     # equivalent Cl_4 presentation.
     # Build a face permutation as a unitary on K that swaps the second and
@@ -299,14 +284,12 @@ def run_arrow_1_checks() -> None:
 
 
 def run_arrow_2_checks() -> None:
-    section("Arrow 2: coframe response -> (G1) closure (in natural phase units)")
+    section("Spin-lift identities and supplied action-unit comparison")
 
     gammas = coframe_generators()
     g_t, g_n, g_tau1, g_tau2 = gammas
 
-    # Check 9: Spin-lift periodicity. exp(i pi (Gamma_t Gamma_n)/2) acts as a
-    # 2*pi vector rotation on the (t,n) plane and must give -I on the spinor
-    # module K. exp(i 2 pi (Gamma_t Gamma_n)/2) gives +I.
+    # Spin-lift U(theta)=exp(theta*Gamma_t*Gamma_n/2), without an extra i.
     bivector = g_t @ g_n  # (Gamma_t Gamma_n) is anti-Hermitian; squares to -I.
     # Exponentiate: U(theta) = exp(theta/2 * bivector) implements rotation by
     # theta in the (t,n) plane on vectors. theta = 2*pi -> U = -I_K.
@@ -320,7 +303,7 @@ def run_arrow_2_checks() -> None:
     spin_2pi_is_minus_I = is_close(u_2pi, -np.eye(4, dtype=complex), tol=1.0e-10)
     spin_4pi_is_plus_I = is_close(u_4pi, np.eye(4, dtype=complex), tol=1.0e-10)
     check(
-        "9_spin_lift_periodicity_4pi_native_phase_unit",
+        "9_spin_lift_periodicity_4pi_angle",
         bivector_squared_to_minus_I and spin_2pi_is_minus_I and spin_4pi_is_plus_I,
         (
             f"bivector^2=-I: {bivector_squared_to_minus_I}, "
@@ -343,30 +326,28 @@ def run_arrow_2_checks() -> None:
         f"worst (S,kappa) common-rescale phase spread={worst_spread:.3e}",
     )
 
-    # Check 11: Native phase unit recovered as 4*pi (full spinor period).
+    # Check 11: Spinor angular period is 4*pi (full spinor period).
     full_period = 4 * math.pi
     u_full = math.cos(full_period / 2) * np.eye(4, dtype=complex) + math.sin(full_period / 2) * bivector
     check(
-        "11_native_phase_unit_4pi",
+        "11_spinor_angular_period_4pi",
         is_close(u_full, np.eye(4, dtype=complex), tol=1.0e-9),
         f"||U(4pi) - I|| = {float(np.linalg.norm(u_full - np.eye(4, dtype=complex))):.3e}",
     )
 
 
 def run_arrow_3_checks() -> None:
-    section("Arrow 3: (G1) -> (C1) absolute-scale gate (in natural lattice units)")
+    section("Supplied crossing counts and unit arithmetic; physical bridge open")
 
-    # Check 12: c_Widom = <N_x>/12 = 3/12 = 1/4. The Widom-Gioev-Klich
-    # coefficient in the primitive-CAR edge identification has <N_x> = 2 +
-    # 2*(1/2) = 3 (two cut-normal Fermi crossings + one half-zone tangent
-    # crossing under the all-tangent half-period involution).
-    n_normal = 2  # two cut-normal Fermi crossings (c_N mode)
-    half_zone_measure = 0.5  # all-tangent half-period involution measure
-    n_tangent = 2 * half_zone_measure  # one tangent half-zone crossing per CAR mode * 2 modes? no, exactly 1 = 2*(1/2)
+    # Supplied arithmetic only. Neither the crossings nor a continuum entropy
+    # coefficient follows from the finite CAR representation.
+    n_normal = 2  # supplied normal count
+    half_zone_measure = 0.5  # supplied half-zone measure
+    n_tangent = 2 * half_zone_measure  # supplied tangent contribution
     n_x = n_normal + n_tangent
     c_widom = n_x / 12.0
     check(
-        "12_c_widom_equals_one_quarter",
+        "12_supplied_crossing_arithmetic_one_quarter",
         math.isclose(c_widom, 0.25, abs_tol=TOL) and math.isclose(n_x, 3.0, abs_tol=TOL),
         f"<N_x>={n_x}, c_Widom={c_widom:.12f}",
     )
@@ -384,7 +365,7 @@ def run_arrow_3_checks() -> None:
     lam = 4 * c_cell
     g_newton_lat = (4 * math.pi) * g_kernel
     check(
-        "14_lambda_one_and_G_Newton_lat_one",
+        "14_supplied_kernel_normalization_one",
         math.isclose(lam, 1.0, abs_tol=TOL) and math.isclose(g_newton_lat, 1.0, abs_tol=TOL),
         f"lambda={lam:.12f}, G_Newton,lat={g_newton_lat:.12f}",
     )
@@ -398,23 +379,20 @@ def run_arrow_3_checks() -> None:
     l_p = math.sqrt(l_p_sq)
     ratio = a_lat / l_p
     check(
-        "15_a_over_l_P_equals_one_in_natural_units",
+        "15_supplied_units_ratio_one",
         math.isclose(ratio, 1.0, abs_tol=TOL),
         f"l_P={l_p:.12f}, a/l_P={ratio:.12f}",
     )
 
 
 def run_arrow_4_checks() -> None:
-    section("Arrow 4: (C1) -> H_0 [BLOCKED — (C2) orthogonality witness]")
+    section("Supplied auxiliary-factor commutation; no physical orthogonality proof")
 
     gammas = coframe_generators()
 
-    # Check 16: The Cl_4 generators on K = P_A H_cell commute with a model
-    # Z_3 doublet-block point-selection projector P_C2 acting on a 2-real
-    # subspace orthogonal to K. We model this by tensoring K with an
-    # auxiliary 2-dim Z_3 doublet-block factor and verifying that
-    # (Gamma_a otimes I_aux) commutes with (I_K otimes P_C2).
-    aux_dim = 2  # 2-real Z_3 doublet block point-selection projector dimension
+    # Supplied auxiliary complex factor; this is not a physical derivation
+    # of the C2 projector, real carrier or cosmological independence.
+    aux_dim = 2  # supplied complex dimension
     p_c2 = np.diag([1.0, 0.0]).astype(complex)  # rank-1 projector on aux factor
     worst_comm = 0.0
     for g in gammas:
@@ -445,10 +423,8 @@ def run_arrow_4_checks() -> None:
         f"worst commutator across disjoint factors={worst_alg:.3e}",
     )
 
-    # Check 18: Therefore the Cl_4 module on P_A H_cell does not affect the
-    # dW_e^H = Schur_{E_e}(D_-) point-selection law. The runner records the
-    # structural orthogonality: any Schur-projection observable on the
-    # Yukawa factor is invariant under all Cl_4 carrier transformations.
+    # Invariance under transformations on the other supplied tensor factor.
+    # No physical Schur-projection or source selection law is derived.
     schur_probe = kron(np.eye(4, dtype=complex), p_c2)
     worst_invariance = 0.0
     for g in gammas:
@@ -456,7 +432,7 @@ def run_arrow_4_checks() -> None:
         transformed = carrier_unitary @ schur_probe @ carrier_unitary.conj().T
         worst_invariance = max(worst_invariance, float(np.linalg.norm(transformed - schur_probe)))
     check(
-        "18_C2_residual_orthogonal_to_Cl4_carrier_axiom",
+        "18_supplied_tensor_factor_invariance",
         worst_invariance < 1.0e-9,
         (
             f"worst ||U_carrier P_C2 U_carrier^dagger - P_C2|| under Cl_4 carrier "
@@ -504,17 +480,23 @@ def main() -> int:
     run_arrow_4_checks()
     run_forbidden_import_guard()
 
+    # Counterexamples to extending real metric and spatial-rotation claims.
+    d_imag = coframe_response([1j, 0, 0, 0], coframe_generators())
+    check("complex_bilinear_not_hermitian_norm",
+          is_close(d_imag @ d_imag, -np.eye(4)) and not is_close(d_imag @ d_imag, np.eye(4)),
+          "v=i e1 has bilinear square -1 and Hermitian norm squared +1")
+    odd_swap = np.array([[0,1,0],[1,0,0],[0,0,1]])
+    check("odd_spatial_permutation_not_rotation", np.linalg.det(odd_swap) == -1,
+          "odd swap lies in O(3), not SO(3)")
+
+
     print()
     print("=" * 72)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
     print("=" * 72)
     if FAIL_COUNT == 0:
-        print(
-            "Conclusion: Conditional on Axiom* (the irreducible Cl_4(C) module on "
-            "P_A H_cell), the four-arrow chain reaches (C1) face-equivariantly "
-            "in natural lattice units. Numerical H_0 remains BLOCKED by the "
-            "structurally orthogonal (C2) eta-retirement gate."
-        )
+        print("Conclusion: finite identities and supplied arithmetic passed.")
+        print("Physical crossing, action, Newton-coupling and absolute-scale bridges remain open.")
         return 0
     return 1
 

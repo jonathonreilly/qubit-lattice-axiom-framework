@@ -1,5 +1,30 @@
 # AC_φλ Preserved-C_3 Structural Foreclosure — 10-Probe A3 Campaign Synthesis (Bounded No-Go Source Note)
 
+## Dependency correction (2026-10-21)
+
+The corrected A3 Route-4 note supplies a finite Clifford representation
+and a selected 3+1 block; it does not derive a physical breaking pattern or
+identify the same triplet as both color and generations. Ordinary two-qubit
+matrix tensoring does not produce M₈(C); Clifford factorization requires the
+graded tensor product. Full SU(3) invariance implies scalarity on its defining
+three, whereas C₃ invariance only implies equal coordinate-basis diagonals:
+C+C† is a non-scalar Hermitian counterexample with spectrum {2,−1,−1}.
+The centralizer in u(4) of the selected 3⊕1 action is two-dimensional;
+its traceless part in su(4) is one-dimensional. The group stabilizer is
+S(U(3)×U(1)), with a Z₃ quotient in the product description.
+All stronger Route-4/Route-4-review assertions below and their contribution
+to campaign-wide exhaustion, uniqueness or no-escape conclusions are
+withdrawn. Historical PASS counts do not establish those conclusions.
+The conditional equal-diagonal theorem for a supplied cyclic action remains
+valid; distinct Fourier eigenvalues are allowed. This correction neither
+certifies nor refutes unrelated routes, and supplies no general generation
+or symmetry-breaking no-go. Physical carrier and admissible-observable
+hypotheses remain open.
+
+This correction governs the affected assertions in the preserved discussion
+below; it is a source correction, not an audit-status change. Original recovery:
+`f24d17d97d372df977476e4a69674577f31af575:docs/AC_PHI_LAMBDA_PRESERVED_C3_STRUCTURAL_FORECLOSURE_BOUNDED_THEOREM_NOTE_2026-05-10.md`.
+
 **Current negative-claim boundary:** The operator result and withdrawn broader claims are specified in the No-Go Discipline Gate below; campaign-wide physical exhaustion is not asserted.
 
 **Date:** 2026-05-10

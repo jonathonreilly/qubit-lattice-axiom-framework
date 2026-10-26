@@ -1,41 +1,14 @@
 #!/usr/bin/env python3
-r"""
-DM leptogenesis projection theorem.
-
-Framework convention:
-  "axiom" means only the single framework axiom Cl(3) on Z^3.
-
-Question:
-  Is the physical denominator used in the coherent leptogenesis kernel
-
-      (Y^dag Y)_{11}
-
-  exactly exhausted by the already-derived heavy-basis diagonal channel
-
-      K00 = (K_mass)00 ?
-
-Answer:
-  Yes.
-
-  On the exact positive polar representative Y_+(H) = H^(1/2),
-
-      Y_+^\dag Y_+ = H.
-
-  After the exact heavy-basis right transformation U_M,
-
-      Y_mass = Y_+ U_M,
-      Y_mass^\dag Y_mass = U_M^\dag H U_M = K_mass.
-
-  Therefore the physical denominator in the standard epsilon_1 kernel is
-  exactly
-
-      (Y_mass^\dag Y_mass)00 = (K_mass)00 = K00.
-
-  The old reduced leptogenesis runner did not yet use this exact projection
-  law; the refreshed exact-kernel runner already inserts /K00 explicitly.
+r"""Conditional positive-matrix projection identity.
+Supply H>0, Y_+=sqrt(H), and U_M. Then Y_mass^dag Y_mass=U_M^dag H U_M.
+Physical Yukawa/readout matching and K00=2tau normalization are additional
+premises. Documentary older kernels record chosen conventions, not closure.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ['docs/DM_LEPTOGENESIS_PROJECTION_THEOREM_NOTE_2026-04-15.md', 'docs/DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md', 'docs/DM_NEUTRINO_POSTCANONICAL_POLAR_SECTION_NOTE_2026-04-15.md', 'docs/work_history/dm/DM_LEPTOGENESIS_FULL_AXIOM_CLOSURE_NOTE_2026-04-16.md', 'scripts/dm_leptogenesis_exact_common.py', 'scripts/frontier_dm_leptogenesis.py', 'scripts/frontier_dm_leptogenesis_exact_kernel_closure.py', 'scripts/frontier_dm_leptogenesis_transport_status.py']
 
 import sys
 from pathlib import Path
@@ -148,7 +121,7 @@ def part2_the_heavy_basis_denominator_is_exactly_k00() -> None:
         f"max matrix error={max_err:.2e}",
     )
     check(
-        "Therefore the physical denominator channel equals (K_mass)00 exactly",
+        "The supplied matrix entry equals (K_mass)00",
         max_entry_err < 1e-12,
         f"max entry error={max_entry_err:.2e}",
     )
@@ -163,17 +136,17 @@ def part3_the_projection_identity_matches_the_existing_k00_theorem() -> None:
     polar_note = read("docs/DM_NEUTRINO_POSTCANONICAL_POLAR_SECTION_NOTE_2026-04-15.md")
 
     check(
-        "The existing K00 theorem already records K00 = (K_mass)00",
-        "`K00 = (K_mass)00`" in k00_note or "K00 = (K_mass)00" in k00_note,
+        "The K00 parent explicitly keeps physical coefficient identification as an extra premise",
+        "additional physical coefficient-identification premise" in k00_note,
     )
     check(
         "The post-canonical polar theorem already records the intrinsic positive representative Y_+(H) = H^(1/2)",
         "Y_+(H)=H^(1/2)" in polar_note.replace(" ", ""),
     )
     check(
-        "Combining them fixes the physical leptogenesis denominator as K00",
-        True,
-        "physical denominator = (Y_mass^dag Y_mass)00 = (K_mass)00 = K00",
+        "The supplied matrix identity does not fix physical normalization",
+        "It does not identify the independent target functional" in k00_note,
+        "physical readout and K00=2tau matching remain supplied assumptions",
     )
 
 
@@ -205,7 +178,7 @@ def part4_the_runner_surface_now_has_an_exact_denominator_divide() -> None:
         "/ k00" in exact_kernel and "K00   = 2" in exact_kernel,
     )
     check(
-        "The final theorem-native closure runner keeps K00 explicit on the authority path",
+        "Historical transport source records a chosen K00=2 convention, not its derivation",
         "physical denominator as K00 = 2" in full_axiom and "exact projection law `K00 = 2`" in full_axiom_note,
     )
 

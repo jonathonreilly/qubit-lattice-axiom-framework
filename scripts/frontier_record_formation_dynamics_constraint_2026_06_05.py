@@ -14,11 +14,10 @@ Framework anchors (named axioms, MINIMAL_AXIOMS_2026-06-29.md):
   - Lattice and Admissibility: Z^3 nearest-neighbor structure and one fixed
     local admissibility rule. The selected S + E_1..E_n carrier and its
     couplings are bounded model inputs, not the full six-neighbor star.
-  - Record: scalar record readout is additive over disjoint collections,
-    I(R_1 sqcup R_2) = I(R_1) + I(R_2), timeless. The axiom explicitly does
-    NOT identify I with Holevo information or supply record production,
-    persistence, or decoherence. This model separately supplies the singleton
-    bridge I({k}) := J({k}).
+  - Record: fixed admissible local outcomes and content-determined readout.
+    The current memo removed scalar collection additivity on 2026-08-13.
+    This model separately supplies I({k}) := J({k}) and the additive extension
+    I_mass(F) := sum_{k in F} J({k}); neither is a current axiom consequence.
 
 The runner is fully self-contained (numpy only), uses <= 6 qubits, exact dense
 operators, and emits a PASS/FAIL self-check. It proves the Heisenberg
@@ -39,6 +38,11 @@ from itertools import combinations
 from pathlib import Path
 
 import numpy as np
+
+AUDIT_TIMEOUT_SEC = 180
+AUDIT_INPUT_PATHS = (
+    "docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md",
+)
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 
@@ -159,15 +163,12 @@ def pointer_entropy(rho: np.ndarray, sys: int, n: int) -> float:
 
 
 def holevo_pointer_info(rho: np.ndarray, sys: int, frag: list[int], n: int) -> float:
-    """Operationally: the information a fragment carries about the system
-    POINTER observable Pi_S = sigma_z(S).
+    """Holevo chi / cq mutual information for the pointer-conditioned ensemble.
 
-    We dephase the system in the pointer basis (the only information a
-    *classical objective record* can certify) and return the resulting
-    system<->fragment mutual information. This is the accessible
-    classical-record content for the pointer observable: it equals the
-    Holevo chi of the ensemble {p_k, rho_F|k} of fragment states conditioned
-    on pointer outcome k.
+    Dephase S in its pointer basis and return system-fragment mutual
+    information. This upper-bounds operational accessible information in
+    general; no measurement optimization is performed. At the orthogonal
+    perfect-copy plateau, a distinguishing measurement attains chi=H_S.
     """
     # Dephase system in the pointer (z) basis.
     P0 = op(PROJ0, sys, n)
@@ -351,7 +352,7 @@ def main() -> int:
     # -----------------------------------------------------------------------
     # Two DISTINCT record functionals -- do not conflate:
     #
-    #   J(F) := holevo_pointer_info(S, F) -- the recoverable pointer content
+    #   J(F) := holevo_pointer_info(S, F) -- Holevo content; recoverable at this orthogonal plateau
     #       of a fragment F: dephase S in the pointer basis, take the S<->F
     #       mutual information (= Holevo content of the pointer ensemble). On
     #       redundant perfect copies J SATURATES: J(F1 u F2) = J(F1) = J(F2)
@@ -359,9 +360,9 @@ def main() -> int:
     #       copies of the same registered fact yields the fact once.
     #
     #   I_mass(F) := sum_{k in F} I({k}), with the bounded model bridge
-    #       I({k}) := J({k}) for each singleton pointer record. Record grants
-    #       finite additivity of I; it does NOT grant this singleton Holevo
-    #       normalization. The latter is an explicit model input.
+    #       I({k}) := J({k}) for each singleton pointer record. Both this
+    #       normalization and its additive extension are supplied model inputs,
+    #       not consequences of the current Record axiom.
     #
     # The bridge between the two at the perfect-recording plateau is exact
     # and discriminating:
@@ -370,7 +371,7 @@ def main() -> int:
     # record (redundancy), not additional pointer content. The gates below
     # compute singleton J values, union J values, and H_S separately, then
     # check compatibility of the supplied singleton bridge with the additive
-    # extension. They do not claim to derive Record additivity or I({k})=J({k}).
+    # extension. They do not claim to derive either the additive extension or I({k})=J({k}).
 
     P0 = op(PROJ0, 0, n)
     P1 = op(PROJ1, 0, n)
@@ -385,7 +386,7 @@ def main() -> int:
     J_F1 = mutual_information(rho_nd_deph, [0], F1, n)
     J_F2 = mutual_information(rho_nd_deph, [0], F2, n)
     J_union = mutual_information(rho_nd_deph, [0], F1 + F2, n)
-    record("supplied singleton bridge plus Record additivity is compatible with "
+    record("supplied singleton bridge plus additive extension is compatible with "
            "I_mass(F1 U F2) - J(F1 U F2) = (m-1)*H_S",
            abs((I_mass_union - J_union) - (m_frag - 1) * H_S_initial) < 1e-6,
            f"{I_mass_union:.4f} - {J_union:.4f} = {m_frag - 1}*{H_S_initial:.4f}")
@@ -409,8 +410,8 @@ def main() -> int:
            abs(I_union_recovered - H_S_initial) < 1e-6 and I_mass_union > 1.9 * H_S_initial,
            f"I(S:F1F2)={I_union_recovered:.4f}=H_S, record-mass={I_mass_union:.4f}={4}*H_S")
 
-    # The deeper claim: this additive set-function structure is consistent
-    # ONLY because all fragments certify the SAME pointer value (objectivity).
+    # Additivity of the supplied sum is definitional, independent of agreement.
+    # The following separately tests agreement for this controlled-copy fixture.
     # Verify objectivity: every pair of fragments agrees on the pointer
     # (their records are perfectly cross-correlated through S).
     def fragments_agree(rho_deph: np.ndarray, k1: int, k2: int) -> float:
@@ -555,7 +556,7 @@ def main() -> int:
            full_corr > 1e-2 and z_pointer_corr < 1e-2,
            f"full I(S:E_1)={full_corr:.4f}, z-pointer info={z_pointer_corr:.4f}")
 
-    # (c) additivity-of-record fails: there is no single objective pointer that
+    # (c) this pointer-agreement control fails: there is no single pointer that
     #     all fragments agree on (the demolition dynamics produces a basis the
     #     fragments do not share a consistent classical value in). We test the
     #     pointer-objectivity functional that succeeded in the ND case.
@@ -569,12 +570,11 @@ def main() -> int:
            f"pairwise I = {[round(x,4) for x in agree_dm]} (vs H_S={H_S_initial:.4f})")
 
     # -----------------------------------------------------------------------
-    section("Part 6: MONOTONE LINK -- redundancy vs the non-demolition norm")
+    section("Part 6: NINE-POINT SWEEP -- Holevo quality vs the non-demolition norm")
     # -----------------------------------------------------------------------
     # Sweep the interpolation handle = cos th sigma_z + sin th sigma_x.
-    # ||[H,Pi_S]|| grows with sin(theta); show the objective-record quality
-    # (min over fragments of pointer info, at the recording time) DEGRADES
-    # monotonically as the non-demolition condition is violated.
+    # ||[H,Pi_S]|| grows with sin(theta). Compare Holevo quality at the nine
+    # sampled points only; no continuous-family monotonicity is certified.
     thetas = np.linspace(0.0, np.pi / 2, 9)
     quality = []
     comm_norms = []
@@ -586,18 +586,19 @@ def main() -> int:
         q = min(holevo_pointer_info(rho_th, 0, [k], n) for k in range(1, n))
         quality.append(q)
     # theta=0 is the maximum-quality, zero-commutator point.
-    record("sweep: theta=0 (non-demolition) maximizes objective-record quality",
+    record("nine-point sweep: theta=0 maximizes sampled Holevo quality",
            abs(quality[0] - max(quality)) < 1e-9 and comm_norms[0] < 1e-12,
            f"quality(theta=0)={quality[0]:.4f}, max={max(quality):.4f}")
-    # quality is (weakly) monotone decreasing as the commutator norm grows from 0.
+    # Check weak decrease only between adjacent samples.
     mono = all(quality[i] <= quality[i - 1] + 1e-6 for i in range(1, len(quality)))
-    record("sweep: objective-record quality decreases as ||[H,Pi_S]|| grows",
+    record("nine-point sweep: sampled Holevo quality is weakly decreasing",
            mono,
            f"q={[round(x,3) for x in quality]} vs ||c||={[round(x,3) for x in comm_norms]}")
-    record("sweep: only the zero-commutator endpoint gives a perfect record "
-           "(quality = H_S at theta=0, degraded elsewhere)",
-           abs(quality[0] - H_S_initial) < 1e-6 and quality[-1] < quality[0] - 1e-3,
-           f"q[0]={quality[0]:.4f}=H_S, q[-1]={quality[-1]:.4f}")
+    record("nine-point sweep: only theta=0 reaches H_S; all eight nonzero samples fall below H_S-tol",
+           abs(quality[0] - H_S_initial) < 1e-6
+           and all(q < H_S_initial - 1e-6 for q in quality[1:])
+           and quality[-1] < quality[0] - 1e-3,
+           f"q[0]={quality[0]:.4f}=H_S, max(q[1:])={max(quality[1:]):.4f}, tol=1e-6; q[-1]={quality[-1]:.4f}")
 
     # -----------------------------------------------------------------------
     section("Part 6b: POINTER-CONSERVATION IFF for [H,Pi_S]=0 (random-H theorem)")
@@ -970,7 +971,7 @@ BOUNDED ALGEBRAIC RESULTS, with explicit scope:
       t = pi/(4g), forms a perfect redundant persistent objective record:
       R_delta = n_env, plateau = H_S, finished idle fragments persist, and
       fragments objectively agree. The bounded model supplies the singleton
-      bridge I({k}) := J({k}); Record additivity extends it to
+      bridge I({k}) := J({k}); a separately supplied additive extension gives
       I_mass(F)=sum_k J({k}), while recoverable union content J(F) SATURATES
       at H_S. Part 2 checks the plateau compatibility identity
       I_mass-J=(m-1)H_S without claiming to derive the singleton bridge.
@@ -992,8 +993,8 @@ BOUNDED ALGEBRAIC RESULTS, with explicit scope:
     - Demolition controls (Parts 5-6): a noncommuting sigma_x(S) handle records
       the wrong observable, collapses redundancy, makes the pointer populations
       oscillate, and reaches no objective pointer consensus. The interpolation
-      shows this controlled-copy quality degrades as ||[H,Pi_S]|| grows for
-      the tested handle family.
+      shows sampled Holevo quality decreases across nine theta values in
+      this handle family; behavior between samples is not certified.
 
   All-state-persistence class and construction controls (Part 7-8):
     (a) [U,Pi_S]=0 characterizes all-state pointer persistence,
@@ -1016,7 +1017,7 @@ HONEST LIMITS (no over-claim):
     record-formation result is a controlled-copy construction on
     the explicit finite model, conditional on modelling 'record' as a
     redundantly-imprinted, objective, persistent system observable (the
-    quantum-Darwinism bridge) and on I({k}) := J({k}). The Lattice, Qubit,
+    quantum-Darwinism bridge) on I({k}) := J({k}), and on its additive extension. The Lattice, Qubit,
     Admissibility, and Record axioms do not supply those identifications, the
     selected carrier/pointer, or the dynamics.
   - We do NOT claim arbitrary pointer-non-demolition Hamiltonians form records.

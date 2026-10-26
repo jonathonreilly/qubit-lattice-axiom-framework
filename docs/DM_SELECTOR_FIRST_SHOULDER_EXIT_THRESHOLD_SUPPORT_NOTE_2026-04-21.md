@@ -1,314 +1,37 @@
-# DM Selector First-Shoulder-Exit Threshold Support Note
+# Supplied-bank first-middle-breakpoint diagnostic
 
-**Date:** 2026-04-21  
+**Date:** 2026-04-21
 **Type:** open_gate
-**Status:** exact support theorem on the open DM selector gate
+**Status:** conditional finite numerical support; physical threshold selection open
 **Primary runner:** `scripts/frontier_dm_selector_first_shoulder_exit_threshold_support_2026_04_21.py`
 
-## Statement
+## Premises and finite argument
 
-The exact intrinsic threshold-volume selector family now contains a genuinely
-canonical breakpoint candidate, not just a broad stabilization interval.
+Take the five recovered-bank entries, common positive shift and inverse-eigenvalue triples `(a_i,b_i,g_i)` supplied by the [atomic witness-volume note](DM_NEUTRINO_SOURCE_SURFACE_ATOMIC_WITNESS_VOLUME_SELECTOR_NONREALIZATION_NOTE_2026-04-18.md) and its helper. Their provenance and applicability are premises, not derived by this diagnostic. The word preferred labels supplied lift 0; the runner evaluates all five entries before taking an argmin.
 
-For each recovered lift, let
+Define `tau_b(i)=log(1+b_i)`. Conditional on `b_i>-1`, this function is strictly increasing. Thus a strictly smallest `b_0` gives the uniquely earliest middle breakpoint at lift 0. The runner compares all five supplied floating values, retaining its original `1e-12` margins and all numerical predicates. Numerical margins are observations on these fixtures, not exact certified enclosures.
 
-```text
-tau_b(i) = log(1 + b_i)
-```
-
-where `b_i` is the middle inverse eigenvalue of the common-shifted positive
-comparison window `A_mu(H_i)`.
-
-Then on the recovered bank:
-
-1. the minimum of `tau_b(i)` is unique;
-2. it belongs to the preferred recovered lift `0`;
-3. it lies inside the stabilization window supplied by the linked support
-   note;
-4. evaluating the exact threshold-volume field at this breakpoint already
-   makes the preferred recovered lift the unique minimizer.
-
-So the selector-side burden is now narrower than “derive some threshold law in
-the stabilization interval.” There is already one canonical breakpoint
-candidate inside that interval.
-
-This note does not assert a physical threshold law. Its closed claim is the
-algebraic open-gate statement: on the recovered bank, the first middle-branch
-breakpoint of the exact threshold-volume family is unique, belongs to lift `0`,
-lies in the supplied stabilization window, and selects lift `0`
-when the exact field is evaluated there.
-
-## Relation to the earlier selector results
-
-### Earlier nonrealization result
-
-The earlier note
-[`DM_NEUTRINO_SOURCE_SURFACE_ATOMIC_WITNESS_VOLUME_SELECTOR_NONREALIZATION_NOTE_2026-04-18.md`](DM_NEUTRINO_SOURCE_SURFACE_ATOMIC_WITNESS_VOLUME_SELECTOR_NONREALIZATION_NOTE_2026-04-18.md)
-proved:
-
-- the canonical full-family witness-volume field `V_tau(H)` is exact and
-  intrinsic;
-- but the supplied five-entry bank does not force one unique threshold, since
-  `tau = 0.13` chooses recovered lift `1` and `tau = 0.14` chooses lift `0`.
-
-That reduced the missing datum to an intrinsic threshold law.
-
-### Earlier stabilization result
-
-The later note
-[`DM_SELECTOR_THRESHOLD_STABILIZATION_SUPPORT_THEOREM_NOTE_2026-04-21.md`](DM_SELECTOR_THRESHOLD_STABILIZATION_SUPPORT_THEOREM_NOTE_2026-04-21.md)
-proved:
-
-- there is an exact stabilization onset
-  `tau_star = 0.131637578221552...`;
-- above `tau_star`, the preferred recovered lift becomes the unique minimizer;
-- it remains unique until the next zero-volume tie at
-  `0.271641142726493...`.
-
-That reduced the selector burden to a threshold law landing in this window.
-
-## New breakpoint result
-
-### Intrinsic middle-branch thresholds
-
-Because the exact piecewise witness-volume formula is
+For the supplied piecewise field with `c=exp(tau)-1`,
 
 ```text
-V_tau(H) = 1                                  for c <= g
-V_tau(H) = 1 - (c-g)^2 / ((a-g)(b-g))         for g < c <= b
-V_tau(H) = (a-c)^2 / ((a-b)(a-g))             for b < c < a
-V_tau(H) = 0                                  for c >= a
+V = 1                              when c <= g
+V = 1-(c-g)^2/((a-g)(b-g))          when g < c <= b
+V = (a-c)^2/((a-b)(a-g))            when b < c < a
+V = 0                              when c >= a
 ```
 
-with `c = exp(tau) - 1`, every recovered lift carries a canonical middle-branch
-breakpoint
+if `c=b_0`, lift 0 has `V=(a_0-b_0)/(a_0-g_0)`. For a competitor satisfying `g_j<b_0<b_j`, its value is `1-(b_0-g_j)^2/((a_j-g_j)(b_j-g_j))`. These are conditional algebraic substitutions. The runner directly evaluates the supplied field at the computed breakpoint and checks a strict finite-bank margin; it does not prove universal branch hypotheses or exact signs from floating arithmetic.
 
-```text
-tau_b = log(1 + b).
-```
+## Supplied endpoints and withdrawn authority
 
-Here the recovered-bank inverse-eigenvalue parameters are the same
-common-shifted inputs used by the stabilization theorem:
+The runner also retains its comparison of this breakpoint to the supplied number `tau_star=0.1316375782215522` and the next computed zero-volume endpoint. The [threshold diagnostic](DM_SELECTOR_THRESHOLD_STABILIZATION_SUPPORT_THEOREM_NOTE_2026-04-21.md) reports finite numerical checks. Its old exact-onset/whole-window certificate attribution is withdrawn. The inequalities between these supplied endpoint values do not prove that lift 0 minimizes throughout the interval.
 
-```text
-lift 0: (a,b,g) = (0.241586090133243, 0.159554932108355, 0.128322735096067)
-lift 1: (a,b,g) = (0.312116054424989, 0.192893545827679, 0.114894973603457)
-lift 2: (a,b,g) = (0.330338253485405, 0.194080510339362, 0.114930915644065)
-lift 3: (a,b,g) = (0.522540316973686, 0.186733773140340, 0.111923120733240)
-lift 4: (a,b,g) = (5.000000000000075, 0.174138550828485, 0.107108917666783)
-```
+The historical stronger note, runner and cache are preserved in the immutable predecessor commit `186ae14000eef214a6e7a1c66ec27bcc5eaacd84`; external repair evidence retains the same complete bytes. No historical PASS count is current proof authority. Current canonical cache records the actual finite run, including any failures.
 
-Since `log(1+x)` is strictly increasing for `x > -1`, minimizing `tau_b(i)`
-is exactly the same check as minimizing the middle inverse eigenvalue `b_i`.
-The smallest competitor value is lift `4`, and the margin is positive:
+## Open obligations
 
-```text
-b_4 - b_0 = 0.014583618720130 > 0.
-```
-
-On the recovered bank these are:
-
-```text
-lift 0: 0.148036252277635
-lift 1: 0.176381906802132
-lift 2: 0.177376441792114
-lift 3: 0.171204804996079
-lift 4: 0.160534730480452
-```
-
-So the earliest such breakpoint is
-
-```text
-tau_b,min = 0.148036252277635,
-```
-
-and it belongs uniquely to the preferred recovered lift `0`.
-
-Equivalently, the next earliest breakpoint is lift `4`, with strict tau-margin
-
-```text
-tau_b(4) - tau_b(0) = 0.012498478202817 > 0.
-```
-
-### Placement inside the stabilization window
-
-This canonical breakpoint satisfies
-
-```text
-tau_star < tau_b,min < tau_zero(next),
-```
-
-numerically
-
-```text
-0.131637578221552 < 0.148036252277635 < 0.271641142726493.
-```
-
-So it lies strictly inside the supplied stabilization window.
-The strict margins are:
-
-```text
-tau_b,min - tau_star       = 0.016398674056082 > 0
-tau_zero(next) - tau_b,min = 0.123604890448858 > 0
-```
-
-### Selection consequence
-
-At the selected breakpoint,
-
-```text
-c = exp(tau_b,min) - 1 = b_0 = 0.159554932108355.
-```
-
-For lift `0`, this is exactly the `c = b_0` branch boundary, so either adjacent
-piece of the exact formula gives
-
-```text
-V_tau_b,min(H_0)
-  = 1 - (b_0 - g_0)^2 / ((a_0 - g_0)(b_0 - g_0))
-  = (a_0 - b_0) / (a_0 - g_0)
-  = 0.724251528642812.
-```
-
-For every competitor `j > 0`, the same `c = b_0` satisfies
-`g_j < b_0 < b_j`, so the middle branch applies:
-
-```text
-V_tau_b,min(H_j)
-  = 1 - (b_0 - g_j)^2 / ((a_j - g_j)(b_j - g_j)).
-```
-
-Evaluating the exact threshold-volume field at `tau_b,min` gives
-
-```text
-V_tau_b,min =
-  (0.72425153, 0.87034280, 0.88320396, 0.92614267, 0.99161327),
-```
-
-so the preferred recovered lift is already the unique minimizer there.
-The smallest competitor gap is again strict:
-
-```text
-min_{j>0} V_tau_b,min(H_j) - V_tau_b,min(H_0)
-  = 0.146091270049196 > 0.
-```
-
-This closes the load-bearing algebraic chain for the stated open-gate scope:
-
-```text
-tau_b(i) = log(1+b_i)
-  => unique min_i tau_b(i) at i=0
-  => tau_star < tau_b,min < tau_zero(next)
-  => argmin_i V_tau_b,min(H_i) = {0}.
-```
-
-## Load-bearing derivation certificate
-
-This section makes the preceding finite-bank argument explicit enough to
-audit without promoting the open gate. Its only non-elementary inputs are the
-already named upstream surfaces:
-
-- the recovered bank, common positive comparison window, inverse-eigenvalue
-  triples, and exact piecewise formula for `V_tau` from
-  [`DM_NEUTRINO_SOURCE_SURFACE_ATOMIC_WITNESS_VOLUME_SELECTOR_NONREALIZATION_NOTE_2026-04-18.md`](DM_NEUTRINO_SOURCE_SURFACE_ATOMIC_WITNESS_VOLUME_SELECTOR_NONREALIZATION_NOTE_2026-04-18.md);
-- the stabilization endpoints `tau_star` and `tau_zero(next)` from
-  [`DM_SELECTOR_THRESHOLD_STABILIZATION_SUPPORT_THEOREM_NOTE_2026-04-21.md`](DM_SELECTOR_THRESHOLD_STABILIZATION_SUPPORT_THEOREM_NOTE_2026-04-21.md).
-
-These linked surfaces are explicit upstream hypotheses, not authority supplied
-by this certificate: in particular, this note does not independently derive
-the identity or provenance of the hard-coded five-entry bank. No new observed
-threshold, fitted selector, or physical threshold law is introduced. The word
-“preferred” labels supplied-bank lift `0`; it is not fed to the minimization.
-The runner evaluates all five entries and then computes the minimizer.
-
-First, for every bank entry `b_i > -1`,
-
-```text
-d log(1+b_i) / d b_i = 1 / (1+b_i) > 0.
-```
-
-Thus `argmin_i tau_b(i) = argmin_i b_i`. The finite-bank margins relative to
-lift `0` are
-
-```text
-i     b_i-b_0             tau_b(i)-tau_b(0)
-1     0.033338613719324   0.028345654524497
-2     0.034525578231007   0.029340189514480
-3     0.027178841031985   0.023168552718445
-4     0.014583618720130   0.012498478202817
-```
-
-Every entry is strictly positive, so the minimum is unique and occurs at lift
-`0`. Second, direct subtraction from the supplied stabilization endpoints
-gives
-
-```text
-tau_b(0) - tau_star       = 0.016398674056082 > 0,
-tau_zero(next) - tau_b(0) = 0.123604890448858 > 0.
-```
-
-Hence `tau_b(0)` is strictly inside the open stabilization window. Finally set
-`c = exp(tau_b(0))-1 = b_0`. Lift `0` is on its `c=b_0` branch boundary. For
-each competitor, the two branch margins and the resulting selector gap are
-
-```text
-j     c-g_j               b_j-c               V(H_j)-V(H_0)
-1     0.044659958504898   0.033338613719324   0.146091270049196
-2     0.044624016464289   0.034525578231007   0.158952429360092
-3     0.047631811375114   0.027178841031985   0.201891138627859
-4     0.052446014441572   0.014583618720130   0.267361742751076
-```
-
-The first two positive columns prove `g_j < c < b_j`, so the middle piece of
-`V_tau(H_j)` applies to every competitor. The positive last column then proves
-
-```text
-V_tau_b,min(H_0) < V_tau_b,min(H_j)  for every j > 0.
-```
-
-Therefore, conditional on the named bank, piecewise field, and window
-endpoints, the earliest middle-branch breakpoint is uniquely lift `0`, lies in
-the stabilization window, and makes lift `0` the unique minimizer. The smallest
-strict margins in the three load-bearing comparisons are respectively
-`0.012498478202817`, `0.016398674056082`, and `0.146091270049196`; the paired
-runner recomputes them from the supplied bank rather than reading the displayed
-decimals.
-
-## Consequence
-
-This still does not close the selector law.
-
-It does mean that the selector-side burden has narrowed again:
-
-- before: derive an intrinsic threshold law;
-- then: derive a threshold law landing in the stabilization window;
-- now: derive why the physical threshold law is the earliest middle-branch
-  breakpoint `tau_b,min`, or else derive a stronger microscopic selector law
-  that bypasses the threshold-volume family.
-
-So the current exact family already supplies one canonical threshold candidate.
-
-## Boundary
-
-This is a support theorem only.
-
-It does **not** prove that the physical threshold law must be
-
-```text
-tau_phys = tau_b,min.
-```
-
-It proves only that `tau_b,min` is now the cleanest intrinsic selector
-candidate already present on the exact family.
+A rigorous whole-window inequality/enclosure proof, derivation of the physical threshold law and provenance of the supplied bank remain open. This breakpoint is a named candidate within a stipulated family; no uniqueness across physical selector mechanisms or exhaustive narrowing of the research burden is claimed. Documentary substring checks report only what the parent text says. Former literal-True canonicality/burden narration is unscored.
 
 ## Reproduction
 
-```bash
-PYTHONPATH=scripts python3 scripts/frontier_dm_selector_first_shoulder_exit_threshold_support_2026_04_21.py
-```
-
-Expected:
-
-```text
-PASS=11 FAIL=0
-```
+Run `PYTHONPATH=scripts python3 scripts/frontier_dm_selector_first_shoulder_exit_threshold_support_2026_04_21.py`. The declared 300-second limit is an execution bound, not evidence for any independent helper run.

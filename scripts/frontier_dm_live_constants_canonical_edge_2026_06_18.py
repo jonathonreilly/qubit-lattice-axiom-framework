@@ -8,6 +8,9 @@ selector/completeness premise.
 
 from __future__ import annotations
 
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = ['docs/DM_LIVE_CONSTANTS_CANONICAL_EDGE_CERTIFICATE_NOTE_2026-06-18.md', 'docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md', 'docs/CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md', 'scripts/canonical_plaquette_surface.py', 'scripts/dm_leptogenesis_exact_common.py', 'scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py', 'scripts/dm_full_closure_same_surface_thermal_support_common.py']
+
 import math
 from pathlib import Path
 
@@ -212,7 +215,7 @@ def main() -> int:
     print("=" * 76)
     print("\nRESULT:")
     print("  DM live-constant edge certificate is complete iff FAIL=0.")
-    print("  Parent DM closure still needs selector/completeness authority and audit.")
+    print("  Parent DM closure still needs selector/completeness and physical channel-weight/amplitude matching; audit remains separate.")
 
     return 0 if FAIL_COUNT == 0 else 1
 

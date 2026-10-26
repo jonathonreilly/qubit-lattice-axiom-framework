@@ -8,6 +8,9 @@ adoption.
 
 from __future__ import annotations
 
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ['docs/DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_RECORD_INVARIANCE_COMPANION_NOTE_2026-06-04.md', 'docs/DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md', 'scripts/frontier_dm_neutrino_k00_bosonic_normalization_theorem.py']
+
 import hashlib
 import json
 import os
@@ -86,7 +89,7 @@ def normalized_parent_output(stdout: str) -> str:
     return "\n".join(line for line in stdout.splitlines() if not line.startswith("Elapsed"))
 
 
-def main() -> int:
+def historical_main() -> int:
     print("=" * 72)
     print("DM neutrino K00 bosonic-normalization record-invariance hygiene")
     print("=" * 72)
@@ -164,6 +167,20 @@ def main() -> int:
     print("=" * 72)
     print(f"SUMMARY: PASS={PASS} FAIL={FAIL}")
     print("=" * 72)
+    return 0 if FAIL == 0 else 1
+
+
+def main() -> int:
+    print("K00 historical record boundary; no live ledger repinning or verdict change")
+    print("Historical expected note hash:", EXPECTED_NOTE_HASH)
+    print("Historical11PASS/ledger invariant applies only to its original source and ledger.")
+    text = PARENT_NOTE.read_text(encoding="utf-8")
+    record("current parent states coefficient-identification premise", "additional physical coefficient-identification premise" in text)
+    record("current parent preserves independent-target counterexample", "H=3I" in text and "K00=3" in text)
+    record("current parent does not derive supplied amplitudes", "does not derive their values" in text)
+    print("Ledger availability:", LEDGER.is_file(), "(historical context, not a current theorem check)")
+    print("No parent executions performed; historical invariant not reasserted for changed source.")
+    print(f"SUMMARY: PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1
 
 

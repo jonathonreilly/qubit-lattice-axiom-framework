@@ -29,6 +29,9 @@ No new framework axioms, admissions, or repo vocabulary are introduced.
 
 from __future__ import annotations
 
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = ('docs/DM_ETA_BOUNDED_PREDICTION_FROM_SUPPLIED_NSITES_V_NARROW_THEOREM_NOTE_2026-05-28.md', 'docs/ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md', 'docs/R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md', 'docs/HUBBLE_LANE5_C2_ATTACK_SURFACE_BIPARTITION_NARROW_THEOREM_NOTE_2026-05-27.md', 'scripts/canonical_plaquette_surface.py')
+
 import math
 import sys
 from fractions import Fraction

@@ -58,7 +58,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "44e07006a84541ee86ec332cb2e3f52d0866e28fae9b808c13fc62f8693c009b",
+  "note_hash": "ca579cc681a4e17c58a6d4f3d7e6db803f0302bb633c8e5d61f4d03de6e83573",
   "note_path": "docs/lanes/open_science/05_HUBBLE_CONSTANT_DERIVATION_OPEN_LANE_2026-04-26.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

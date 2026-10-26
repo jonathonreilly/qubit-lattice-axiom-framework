@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "leaf",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -35,18 +35,18 @@
     "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
     "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
   ],
-  "direct_in_degree": 0,
+  "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 0.0,
+  "load_bearing_score": 3.822,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "ab7929d26d4211266ff81e5b970d84ef2131e3c5b486ec9a50fa27ebec525109",
+  "note_hash": "30a574717f7a4c58444299981b2fcfe980af1bc937261cc9ba7cc87b5f35f05a",
   "note_path": "docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -843,7 +843,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -853,7 +853,7 @@
   },
   "runner_path": "scripts/frontier_g_star_sm_content_from_supplied_thermal_inventory.py",
   "title": "`g_*` SM-Content Proof-Walk From Supplied Thermal Inventory Bounded Note",
-  "transitive_descendants": 0,
+  "transitive_descendants": 9,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

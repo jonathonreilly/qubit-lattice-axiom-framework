@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Exact negative boundary for the hierarchy fixed-density selector route.
+"""Finite scalar examples of a restricted quartic-law non-identification result.
 
-The runner verifies that the D=4 fixed-density coefficient-to-scale map
-determines endpoint ratios but cannot, by itself, select the physical endpoint
-coefficient surface or absolute electroweak scale. It writes no audit result.
+Positive numerical density fixes the scales. Only unspecified density permits
+rescaling; an endpoint tag absent from these equations is not determined by them.
+No physical-selector impossibility or route-exhaustion claim is established.
 """
 
 from __future__ import annotations
@@ -21,6 +21,9 @@ EW_BRIDGE = (
     / "docs"
     / "HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md"
 )
+
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = ['docs/HIERARCHY_FIXED_DENSITY_PHYSICAL_SELECTOR_NO_GO_NOTE_2026-06-18.md', 'docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md', 'docs/HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md', 'docs/HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md']
 
 PASS = 0
 FAIL = 0
@@ -55,7 +58,7 @@ def scale_for_fixed_density(rho_star: float, coefficient: float) -> float:
 
 
 def main() -> None:
-    print("Hierarchy fixed-density physical selector no-go")
+    print("Restricted fixed-density scalar-law examples")
     print("=" * 78)
 
     note_text = NOTE.read_text(encoding="utf-8")
@@ -67,24 +70,22 @@ def main() -> None:
     bridge_flat = flat(bridge_text)
     ew_bridge_flat = flat(ew_bridge_text)
 
-    check("no-go note declares source-side negative route pruning", "**Claim type:** no_go / negative_route_pruning" in note_text)
-    check("no-go note forbids new axiom/status/readout injection", "No new axiom, observed value, fitted selector, audit verdict, or physical VEV" in note_flat)
-    check(
-        "fixed-density bridge supplies map but not endpoint selection",
-        "rho_* = A(L) v(L)^4" in bridge_text
-        and "identifies the relevant `A(L)` surface" in bridge_flat,
-    )
-    check(
-        "EW coordinate bridge supplies coordinate but leaves endpoint selection open",
-        "EW order-parameter coordinate `v`" in ew_bridge_flat
-        and "It does not close the endpoint-selection half" in ew_bridge_text
-        and "does not derive the absolute EW scale" in ew_bridge_flat,
-    )
-    check(
-        "parent note still names endpoint-selection residual as open",
-        "endpoint-selection residual remains open" in parent_flat
-        and "endpoint coefficient-to-physical-Higgs-density selection" in parent_flat,
-    )
+    check("documentary boundary states restricted algebra and missing physical no-go",
+          "restricted algebraic non-identification" in note_flat
+          and "physical no-go unestablished" in note_flat)
+    check("source distinguishes specified density from a free density parameter",
+          "specified numerical" in note_flat
+          and "different** densities" in note_flat
+          and "not multiple solutions" in note_flat)
+    check("coefficient bridge supplies quartic premises, not physical identification",
+          "stipulated quartic density law" in bridge_flat
+          and "does not identify the electroweak VEV" in bridge_flat)
+    check("EW bridge leaves the physical interpretation open",
+          "does not derive the absolute EW scale" in ew_bridge_flat
+          and "does not derive that the hierarchy Matsubara endpoint coefficient is the physical Higgs density" in ew_bridge_flat)
+    check("parent retains open coefficient identification",
+          "does not identify the computed condensate ratio" in parent_flat
+          and "endpoint-selection residual remains open" in parent_flat)
 
     coeffs = endpoint_coefficients()
     A2, A4, Ainf = coeffs["A2"], coeffs["A4"], coeffs["Ainf"]
@@ -142,72 +143,31 @@ def main() -> None:
         str(nonidentical_refs),
     )
 
-    forbidden_numeric_selectors = ["C_obs", "246.22"]
-    check(
-        "no-go runner uses no observed electroweak target selector",
-        all(token not in note_text for token in forbidden_numeric_selectors)
-        and all(token not in __doc__ for token in forbidden_numeric_selectors)
-        and "Fitting to `v_obs`, PDG data" in note_flat
-        and "explicitly forbids" in note_flat,
-    )
-    check(
-        "no-go note preserves future positive physical-selector routes",
-        "does not prune future positive routes" in note_flat
-        and "independent physical selector theorem" in note_flat,
-    )
-    check(
-        "no-go note targets the exact hierarchy audit blocker",
-        "hierarchy endpoint coefficient surface and absolute scale are still not selected" in note_flat
-        and "physical Higgs density surface or fix the absolute electroweak scale" in note_flat,
-    )
-    check(
-        "no-go discipline N1-N8 gate is visible",
-        "## No-Go Discipline Gate" in note_text
-        and "N1, alternative routes tested" in note_text
-        and "N8, cross-cycle echo" in note_text,
-    )
+    check("documentary boundary excludes an observed target or replacement ledger",
+          "No observed EW target" in note_flat
+          and "replacement ledger" in note_flat)
+    check("source preserves future positive physical-selector routes",
+          "does not prune future positive routes" in note_flat
+          and "independent selector relation remains a positive route" in note_flat)
+    check("normalization examples explicitly change density",
+          "changes `rho`" in note_flat and "different** densities" in note_flat)
+    check("N1-N8 limitations are visible without a route-exhaustion PASS claim",
+          "## No-Go Discipline Gate" in note_text
+          and "N1, alternative routes tested" in note_text
+          and "N8, cross-cycle echo" in note_text
+          and "physical no-go packet remains incomplete" in note_flat)
 
-    # N5 execution certificate. Print-only: no check() call is made here, so
-    # PASS/FAIL are untouched. Quantities are reused from the computations above.
-    print()
-    print("=" * 78)
-    print("N5 execution certificate: resolution granularity of this selector no-go")
-    print("=" * 78)
-    print(
-        "per_element: checked and not executed — no operator, matrix, or algebra element is constructed "
-        "anywhere in this runner; its objects are three scalar endpoint coefficients and the quartic-root "
-        "scale readouts built from them, so there is no element-indexed carrier on which the selector "
-        "obstruction could be resolved more finely than by endpoint."
-    )
-    print(
-        "per_site: checked and not executed — the D=4 map rho_* = A(L) v(L)^4 is a coarse-grained density "
-        "relation with no site index; the executed coefficients are evaluated at u_0 = 1.0 and no lattice "
-        "is instantiated, so no site-resolved field or link enters the endpoint-selection question at all."
-    )
-    print(
-        "per_mode: checked and not executed — the compression map carries no spectral or mode label, only "
-        "the block size L; no eigenvalue, Fourier component, or taste index appears, so this runner makes "
-        "no mode-resolved claim about where a physical selector could be hiding."
-    )
-    print(
-        "per_block: checked — the coefficient surface is resolved at each finite block size: "
-        f"A(2)=1/(8 u_0^2)={A2:.12f} and A(4)=1/(7 u_0^2)={A4:.12f}, with the exact endpoint ratio "
-        f"A2/A4={A2 / A4:.12f} = 7/8 and the induced scale ratio v4/v2={scales['A4'] / scales['A2']:.12f}. "
-        "Each block can be normalized as the reference endpoint without violating the fixed-density "
-        f"algebra, and the {len(set(nonidentical_refs.values()))} resulting readout triples are distinct "
-        "yet all internally compatible, which is exactly why no block singles itself out as physical."
-    )
-    print(
-        "lattice_wide: checked — the L -> infinity endpoint is carried explicitly as "
-        f"A(inf)=1/(4 sqrt(3) u_0^2)={Ainf:.12f} and enters on the same footing as the finite blocks, with "
-        f"Ainf/A2={Ainf / A2:.12f} = 2/sqrt(3) and vinf/v2={scales['Ainf'] / scales['A2']:.12f}; the "
-        "obstruction survives at that endpoint too, since rescaling the fixed density by lambda^4 with "
-        f"lambda={lam} multiplies every v_i by exactly lambda and leaves all endpoint ratios unchanged. "
-        "The infinite-L limit itself is consumed from the parent dimensional-compression note rather than "
-        "taken here."
-    )
+    # Unscored granularity inventory; no pseudo-PASS for unexecuted resolutions.
+    print("per_element: checked and not executed — no matrix-element carrier is instantiated; only supplied scalar coefficient equations are evaluated.")
+    print("per_site: checked and not executed — fixtures contain no site-indexed fields or site-wise dynamics; no site obstruction is claimed.")
+    print("per_mode: checked and not executed — Ainf is a supplied angular-average formula, not an executed spectrum or momentum-mode limit.")
+    print("lattice_wide: checked and not executed — no lattice-size sequence or infinite-volume limit is computed; broader physical selector exclusion remains unproved.")
+    print(f"per_block: supplied A2={A2:.12f}, A4={A4:.12f}; ratio={A2/A4:.12f}.")
+    print(f"angular-average formula: Ainf={Ainf:.12f}; no lattice or continuum executed.")
+    print(f"reference normalization yields {len(set(nonidentical_refs.values()))} triples at different densities.")
+    print("Physical selector routes are not exhausted; the broader no-go packet is incomplete.")
 
-    print(f"\nSUMMARY: HIERARCHY FIXED-DENSITY SELECTOR NO-GO PASS={PASS} FAIL={FAIL}")
+    print(f"\nSUMMARY: RESTRICTED QUARTIC-LAW CHECKS PASS={PASS} FAIL={FAIL}")
     if FAIL:
         raise SystemExit(1)
 

@@ -1,51 +1,10 @@
 #!/usr/bin/env python3
-"""
-Operator-theoretic verification of Δ_T > 0 on the canonical SU(3) integral
-operator on L²(SU(3)^|E(Λ)|, dU_Haar) for finite Λ
-====================================================================================
-
-Companion runner to:
-    docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md
-
-Redo of closed PR #1531. The closed PR's runner only exhibited Perron-Frobenius
-on a 4×4 toy matrix. The reviewer correctly objected that a finite spatial
-lattice still leaves continuous SU(3) link variables, so finite-dim Perron-
-Frobenius is not enough. This runner exhibits the operator-theoretic content
-on the ACTUAL SU(3) integral operator (not a toy):
-
-  V1: Strict positivity of the SU(3) heat kernel K_τ(g) on the maximal torus
-      via direct character-series evaluation (since K_τ is a class function,
-      positivity on the torus implies positivity on SU(3)).
-  V2: Absolute summability of the character series for the heat kernel
-      (Hilbert-Schmidt / trace-class evidence), via finite-N truncation
-      convergence checks.
-  V3: Probability-kernel normalization ∫_{SU(3)} K_τ dg = 1 via the Weyl
-      integration formula on the maximal torus.
-  V4: Explicit single-link transfer operator spectrum. The kernel is K_τ,
-      and on L²(SU(3)) the eigenvalues are exp(-τ C_2(R)/(2 N_c)) with
-      multiplicity dim(R)². Top eigenvalue is 1 (R = trivial), strict gap
-      to the next eigenvalue (R = fundamental (1,0) or (0,1)).
-  V5: Heat-equation consistency for K_τ on the torus: numerically check
-      ∂_τ K_τ(t) by central differences against the analytic
-      -Σ_R dim(R) χ_R(t) C_2(R)/(2 N_c) e^{-τ C_2(R)/(2 N_c)}.
-  V6: 2-site Λ (one spatial link), truncated character basis at N_max=4.
-      Build the truncated T_W matrix on the character basis and diagonalize.
-      Verify that the top eigenvalue is simple and strictly above all others.
-  V7: Conditional Leg A input on Λ = 2 sites with one spatial link. Sample N=50 random SU(3)
-      link configurations (uniform Haar via Ginibre + QR + det fix). Build
-      the small staggered Dirac D[U] (a 2-site naive-staggered with link
-      parallel transport). Compute det(D[U] + m·I) and verify all values
-      are real and > 0 with margin.
-  V8: Conditional symmetrized composition. On the same Λ = 2 sites with a
-      Haar-quadrature mesh of (U_in, U_out) link-pairs, verify
-      T_full(U,V) = T_W(U,V) · sqrt(det_F(U) det_F(V)) > 0 pointwise.
-
-All eight verifications have hard assertion gates. Final tally is reported as
-PASS / FAIL counts.
-
-Designed to complete in a few minutes on a laptop using only NumPy + SciPy.
-Mesh sizes are coarse — this is verification of operator-theoretic structural
-properties, not high-precision lattice MC.
+"""Finite diagnostics for a supplied SU(3) heat-kernel operator.
+V1-V3 sample/truncate heat characters; V4 enumerates a supplied spectrum;
+V5 checks derivatives of that series; V6 tensors two independent heat links;
+V7-V8 use a one-bond scalar determinant fixture, not a fermionic transfer
+construction. V9 controls complex and repeated-eigenvalue characters.
+No PASS count proves reflection positivity, transfer equivalence or mass gap.
 """
 
 from __future__ import annotations
@@ -58,12 +17,14 @@ from dataclasses import dataclass
 import numpy as np
 from numpy.linalg import det, eigh, eigvalsh, qr
 
+AUDIT_TIMEOUT_SEC = 120
+
 
 # ============================================================================
 # SU(3) constants and irrep machinery
 # ============================================================================
 
-N_C = 3  # SU(3) rank parameter
+N_C = 3  # fundamental representation dimension; group rank is 2
 
 
 def su3_irrep_dim(p: int, q: int) -> int:
@@ -130,46 +91,19 @@ def _weyl_measure_density_su3(theta1: float, theta2: float) -> float:
     return float(abs(Δ) ** 2)
 
 
-def su3_character_on_torus(p: int, q: int, theta1: float, theta2: float) -> float:
-    """χ_{(p,q)}(t) for t = diag(e^{i θ_1}, e^{i θ_2}, e^{i θ_3 = -θ_1-θ_2}).
+def su3_character_on_torus(p: int, q: int, theta1: float, theta2: float) -> complex:
+    """Schur polynomial s_(p+q,q)(x), valid also at repeated eigenvalues.
 
-    Weyl character formula:
-
-        χ_λ(t) = det( x_i^{λ_j + n - j} ) / det( x_i^{n - j} )
-
-    where for SU(3): n = 3, the highest weight λ = (p+q, q, 0) translates
-    to exponents (p+q+2, q+1, 0) (numerator) and (2, 1, 0) (denominator,
-    Vandermonde).
-
-    Implemented directly from the 3×3 determinants.
+    Complete homogeneous h_n are coefficients of product_i(1-x_i t)^-1.
+    Jacobi-Trudi gives h_(p+q)h_q-h_(p+q+1)h_(q-1).
     """
-    t3 = -theta1 - theta2
-    x = np.array([np.exp(1j * theta1),
-                  np.exp(1j * theta2),
-                  np.exp(1j * t3)], dtype=complex)
-
-    # Numerator exponents: (p+q+2, q+1, 0)
-    a, b, c = p + q + 2, q + 1, 0
-    num_mat = np.array([
-        [x[0] ** a, x[0] ** b, x[0] ** c],
-        [x[1] ** a, x[1] ** b, x[1] ** c],
-        [x[2] ** a, x[2] ** b, x[2] ** c],
-    ], dtype=complex)
-    num = np.linalg.det(num_mat)
-
-    # Denominator exponents: (2, 1, 0) — Vandermonde of (x1, x2, x3)
-    den_mat = np.array([
-        [x[0] ** 2, x[0], 1.0],
-        [x[1] ** 2, x[1], 1.0],
-        [x[2] ** 2, x[2], 1.0],
-    ], dtype=complex)
-    den = np.linalg.det(den_mat)
-
-    # χ should be real for the class functions of a unitary group at unitary t.
-    # If denominator is too small, fall back to limit at the identity.
-    if abs(den) < 1e-12:
-        return float(su3_irrep_dim(p, q))  # χ_R(e) = dim R
-    return float(np.real(num / den))
+    x=np.exp(1j*np.array([theta1,theta2,-theta1-theta2]))
+    nmax=p+q+1
+    h=np.zeros(nmax+1,dtype=complex);h[0]=1
+    for z in x:
+        for n in range(1,nmax+1):
+            h[n]+=z*h[n-1]
+    return h[p+q]*h[q]-(h[p+q+1]*h[q-1] if q else 0)
 
 
 def su3_heat_kernel_on_torus(tau: float, theta1: float, theta2: float,
@@ -186,7 +120,9 @@ def su3_heat_kernel_on_torus(tau: float, theta1: float, theta2: float,
         chi = su3_character_on_torus(p, q, theta1, theta2)
         weight = math.exp(-tau * c2 / (2.0 * N_C))
         total += d * chi * weight
-    return total
+    if abs(total.imag)>1e-8*(1+abs(total.real)):
+        raise ArithmeticError("conjugate-pair heat sum is not real")
+    return float(total.real)
 
 
 # ============================================================================
@@ -234,7 +170,7 @@ def weyl_integral_on_su3(integrand_on_torus, N_mesh: int, N_max_chars: int) -> f
 
 
 # ============================================================================
-# Staggered Dirac on a small lattice (Leg A composition)
+# One-bond staggered block fixture (not a general Leg A verification)
 # ============================================================================
 
 def random_su3_haar(rng: np.random.Generator) -> np.ndarray:
@@ -273,8 +209,8 @@ def staggered_dirac_2site(U: np.ndarray, m: float) -> np.ndarray:
 
         D[U] = (1/2) ⊗ ( U on the (0→1) block - U^† on the (1→0) block )
 
-    We use periodic boundary conditions identifying the bond (0,1) as the
-    only nonzero hop, so D is block-anti-Hermitian:
+    This is an open one-bond algebraic fixture, not a periodic lattice
+    discretization with independent forward/backward links:
 
         [ 0       (1/2) U   ]
         [-(1/2) U^†   0     ]
@@ -284,8 +220,9 @@ def staggered_dirac_2site(U: np.ndarray, m: float) -> np.ndarray:
         D + m I = [ m I_3,         (1/2) U      ]
                   [ -(1/2) U^†,    m I_3        ]
 
-    With anti-Hermitian D and real mass m, det(D + m I) > 0 follows by Leg A
-    (eigenvalues of D come in ±iλ pairs). We verify this numerically here.
+    For this bipartite block and unitary U, all singular values of U/2
+    are 1/2, so det(D+mI)=(m²+1/4)^3. Anti-Hermiticity alone would
+    not imply positive determinant.
 
     Returns the 6×6 complex matrix (D + m I).
     """
@@ -329,22 +266,13 @@ def build_single_link_transfer(N_max: int, tau: float) -> np.ndarray:
 
 def build_2site_transfer_basic(N_max: int, tau: float, beta_spatial: float = 0.0
                                 ) -> np.ndarray:
-    """2-site Λ with one spatial link, character-basis truncated transfer.
+    """Tensor spectrum of two independent unweighted heat links.
 
-    With one timelike link per site and one spatial link, in the absence of
-    spatial Wilson coupling (β_spatial = 0), the transfer operator factors
-    as a tensor product of two single-link convolutions, plus an integration
-    over the spatial link's distribution.
-
-    The character expansion of K_τ ⊗ K_τ on (g_1, g_2) ∈ SU(3)² gives
-    eigenvalues exp(-τ(C_2(R_1)+C_2(R_2)) / (2 N_c)) with multiplicities
-    (dim R_1)² (dim R_2)².
-
-    With β_spatial = 0, the spatial Wilson factor is 1, so the spectrum is
-    exactly this tensor product.
-
-    Returns the spectrum (sorted decreasing).
+    This is not the one-link Hilbert space of a two-site graph.
+    A nonzero spatial coupling is not implemented.
     """
+    if beta_spatial != 0:
+        raise ValueError("only two independent unweighted heat links are implemented")
     single_eigs = build_single_link_transfer(N_max, tau)
     # Tensor product eigenvalues
     products = np.outer(single_eigs, single_eigs).flatten()
@@ -366,23 +294,8 @@ class VResult:
 def V1_heat_kernel_strictly_positive(tau: float = 4.0,
                                       N_max: int = 12,
                                       N_mesh: int = 16) -> VResult:
-    """V1: K_τ > 0 on the SU(3) maximal torus, with explicit positive
-    margin.
-
-    Verification strategy: K_τ(g) is a class function determined by its
-    values on the maximal torus T. K_τ is the analytic continuation of the
-    Brownian-motion kernel on a connected compact Lie group, which is
-    classically known to be strictly positive (parabolic strong-maximum-
-    principle). Here we verify that the truncated character partial sum,
-    at τ large enough that the truncation tail is negligible, exhibits the
-    positivity numerically with explicit margin on a torus mesh.
-
-    Choice of τ: at very small τ, the kernel approximates δ_e and the
-    truncated partial sum has spurious negative oscillations (Gibbs
-    phenomenon). At τ ≥ 2 with N_max ≥ 12, the partial sum is genuinely
-    positive everywhere on the torus (this is verified by checking
-    convergence of the partial sum against larger N_max). We use τ = 4
-    as the canonical positivity check, with margin > 1e-4.
+    """Finite mesh positivity diagnostic for a character partial sum.
+    No continuum mesh or truncation error certificate is supplied.
     """
     th1, th2, _ = torus_mesh(N_mesh)
     # Compute K_τ and |Δ|² at each point
@@ -400,7 +313,7 @@ def V1_heat_kernel_strictly_positive(tau: float = 4.0,
            f"{N_mesh}×{N_mesh} torus mesh with N_max = {N_max}, τ = {tau}; "
            f"strict positive margin (> {margin}): "
            f"{'YES' if passed else 'NO'}.")
-    return VResult("V1 K_τ strictly positive on SU(3) torus", passed, msg,
+    return VResult("V1 truncated K_tau positive on sampled torus mesh", passed, msg,
                    {"min_K": min_K, "max_K": max_K, "N_mesh": N_mesh,
                     "margin": margin, "tau": tau})
 
@@ -469,7 +382,8 @@ def V3_heat_kernel_probability(tau: float = 4.0,
     val = weyl_integral_on_su3(integrand, N_mesh, N_max)
     err = abs(val - 1.0)
     # The Weyl integration formula on the truncated character series gives
-    # exactly the (R=trivial)-contribution = 1 + truncation tail. We tolerate
+    # exactly the (R=trivial)-contribution = 1: every included nontrivial
+    # character integrates to zero. We tolerate
     # numerical quadrature error from coarse mesh.
     passed = err < 5e-2  # generous tolerance for coarse mesh
     msg = (f"∫_{{SU(3)}} K_τ dg ≈ {val:.6f} (error |val − 1| = {err:.3e}); "
@@ -545,11 +459,7 @@ def V5_heat_equation_consistency(tau: float = 4.0, N_max: int = 10,
 
 def V6_two_site_truncated_spectrum(tau: float = 4.0, N_max: int = 4
                                      ) -> VResult:
-    """V6: 2-site Λ with one spatial link, truncated character expansion.
-
-    Spectrum: tensor-product of two single-link spectra. Verify top
-    eigenvalue is simple and strict gap exists.
-    """
+    """V6: tensor product of two independent heat-link spectra."""
     eigs = build_2site_transfer_basic(N_max, tau)
     top = eigs[0]
     # Find first eigenvalue strictly less than top
@@ -559,7 +469,7 @@ def V6_two_site_truncated_spectrum(tau: float = 4.0, N_max: int = 4
             second = e
             break
     if second is None:
-        return VResult("V6 two-site truncated spectrum", False,
+        return VResult("V6 two independent heat-link spectrum", False,
                        "could not find second eigenvalue",
                        {})
     gap = top - second
@@ -573,11 +483,11 @@ def V6_two_site_truncated_spectrum(tau: float = 4.0, N_max: int = 4
         and gap > 0
         and abs(gap - expected_gap) < 1e-10
     )
-    msg = (f"truncated 2-site transfer spectrum: top = {top:.12f} (expected "
+    msg = (f"truncated two-independent-link spectrum: top = {top:.12f} (expected "
            f"{expected_top}), second = {second:.12f} (expected "
            f"{expected_second:.12f}), gap = {gap:.6e} (expected "
            f"{expected_gap:.6e}).")
-    return VResult("V6 two-site truncated transfer has strict gap",
+    return VResult("V6 two independent heat links have strict gap",
                    passed, msg,
                    {"top": top, "second": second, "gap": gap})
 
@@ -594,7 +504,7 @@ def V7_leg_A_determinant_positivity(N_sample: int = 50, m: float = 0.1,
         d_full = det(M)
         # Should be real-positive
         if abs(d_full.imag) > 1e-9 * (abs(d_full.real) + 1e-12):
-            return VResult("V7 Leg A determinant positivity",
+            return VResult("V7 one-bond determinant fixture",
                            False,
                            f"non-real det encountered: {d_full}",
                            {"det": d_full, "U": U.tolist()})
@@ -604,11 +514,11 @@ def V7_leg_A_determinant_positivity(N_sample: int = 50, m: float = 0.1,
     max_det = float(np.max(dets))
     # Margin: ensure all > some explicit threshold
     margin_threshold = m ** 6 / 100.0  # very conservative lower bound
-    passed = min_det > margin_threshold
+    passed = min_det > margin_threshold and np.allclose(dets,(m*m+0.25)**3,rtol=1e-12,atol=1e-14)
     msg = (f"Sampled N={N_sample} random SU(3) configs at m={m}; "
            f"min det(D+mI) = {min_det:.6e}, max = {max_det:.6e}; "
            f"margin threshold = {margin_threshold:.6e}.")
-    return VResult("V7 conditional Leg A: det(D + m I) > 0 sampled on SU(3)",
+    return VResult("V7 one-bond determinant equals (m^2+1/4)^3",
                    passed, msg,
                    {"min_det": min_det, "max_det": max_det,
                     "N_sample": N_sample})
@@ -616,19 +526,10 @@ def V7_leg_A_determinant_positivity(N_sample: int = 50, m: float = 0.1,
 
 def V8_composition_positivity(N_pairs: int = 30, tau: float = 4.0, m: float = 0.1,
                                 seed: int = 20260520) -> VResult:
-    """V8: T_full(U, V) = T_W(U, V) · sqrt(det_F(U) det_F(V)) > 0 sampled on
-    a Haar mesh of (U, V) pairs.
+    """Sample the constructed one-link heat kernel times endpoint weights.
 
-    Here T_W(U, V) on 2-site Λ with one spatial link reduces, in the
-    pure temporal-gauge transfer setting with one timelike link per site,
-    to T_W(U, V) = K_τ(U V^†) (single-link heat-kernel times spatial
-    Wilson factor; with β_spatial = 0 the spatial factor is 1).
-
-    Strategy: sample pairs (U, V) ∈ SU(3)². For each, compute
-       (a) K_τ(U V^†) > 0 (numerically from the character expansion at
-           N_max = 8), and
-       (b) det(D[U] + m I), det(D[V] + m I) > 0 (conditional Leg A input).
-    Verify product > 0 strictly for all sampled pairs.
+    The weights are the one-bond determinant fixture, not an integrated
+    spacetime fermion action. No transfer equivalence follows. N_max=12.
     """
     rng = np.random.default_rng(seed)
     N_max = 12
@@ -677,11 +578,28 @@ def V8_composition_positivity(N_pairs: int = 30, tau: float = 4.0, m: float = 0.
     msg = (f"Sampled N={N_pairs} (U, V) pairs at τ={tau}, m={m}; "
            f"min K_τ(UV†) = {min_K:.6e}, min det_F(U) = {min_det_u:.6e}, "
            f"min det_F(V) = {min_det_v:.6e}, min symmetrized product = {min_prod:.6e}. "
-           f"All strictly positive ⟹ conditional T_full > 0 pointwise on the sampled mesh.")
-    return VResult("V8 conditional symmetrized composition > 0 pointwise on samples",
+           f"All strictly positive ⟹ constructed scalar sandwich > 0 on sampled pairs; no fermionic transfer equivalence.")
+    return VResult("V8 constructed scalar sandwich > 0 on samples",
                    passed, msg,
                    {"min_K": min_K, "min_det_u": min_det_u, "min_det_v": min_det_v, "min_prod": min_prod,
                     "N_pairs": N_pairs})
+
+
+def V9_character_controls() -> VResult:
+    errs=[]
+    for t1,t2 in [(0.4,0.9),(0.7,0.7),(2*math.pi/3,2*math.pi/3),(0.,0.)]:
+        x=np.exp(1j*np.array([t1,t2,-t1-t2]))
+        fundamental=sum(x)
+        errs.extend([abs(su3_character_on_torus(1,0,t1,t2)-fundamental),
+                     abs(su3_character_on_torus(0,1,t1,t2)-fundamental.conjugate()),
+                     abs(su3_character_on_torus(1,1,t1,t2)-(abs(fundamental)**2-1))])
+    center=2*math.pi/3
+    for p,q in enumerate_irreps_up_to(6):
+        expected=su3_irrep_dim(p,q)*np.exp(1j*center*(p+2*q))
+        errs.append(abs(su3_character_on_torus(p,q,center,center)-expected))
+    complex_control=abs(su3_character_on_torus(1,0,.4,.9).imag)>1e-3
+    return VResult('V9 complex/repeated/central character controls',max(errs)<1e-9 and complex_control,
+                   f'max character error={max(errs):.3e}; non-real fundamental={complex_control}',{'max_err':max(errs)})
 
 
 # ============================================================================
@@ -693,7 +611,7 @@ def main():
     print("=" * 78)
     print("Cluster-decomposition Δ_T > 0 on SU(3) integral operator (real)")
     print("Runner companion to docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md")
-    print("Replaces toy 4×4 runner of closed PR #1531 with real character-series + Haar-quadrature checks.")
+    print("Finite diagnostics only; physical fermionic transfer identification is not established.")
     print("=" * 78)
 
     results = []
@@ -717,16 +635,19 @@ def main():
     results.append(V5_heat_equation_consistency())
     print("    " + ("PASS" if results[-1].passed else "FAIL") + " — " + results[-1].message)
 
-    print("\n[V6] 2-site Λ truncated transfer-operator spectrum (strict gap) ...")
+    print("\n[V6] two independent heat links (truncated tensor spectrum) ...")
     results.append(V6_two_site_truncated_spectrum())
     print("    " + ("PASS" if results[-1].passed else "FAIL") + " — " + results[-1].message)
 
-    print("\n[V7] conditional Leg A det(D + m I) > 0 on sampled SU(3) configurations ...")
+    print("\n[V7] one-bond determinant fixture on sampled SU(3) ...")
     results.append(V7_leg_A_determinant_positivity())
     print("    " + ("PASS" if results[-1].passed else "FAIL") + " — " + results[-1].message)
 
-    print("\n[V8] conditional symmetrized composition > 0 sampled on (U,V) Haar pairs ...")
+    print("\n[V8] constructed scalar sandwich sampled on (U,V) Haar pairs ...")
     results.append(V8_composition_positivity())
+    print("    " + ("PASS" if results[-1].passed else "FAIL") + " — " + results[-1].message)
+
+    results.append(V9_character_controls())
     print("    " + ("PASS" if results[-1].passed else "FAIL") + " — " + results[-1].message)
 
     n_pass = sum(1 for r in results if r.passed)

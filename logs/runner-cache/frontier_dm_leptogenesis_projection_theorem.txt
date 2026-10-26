@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_projection_theorem.py
-runner_sha256: 537218c3db71a07a32bebd9bab67f1f58263ce45e2fa7d98f7851a4b54df8b10
-timeout_sec: 120
+runner_sha256: 2b96d92d057bacd0badc1c4b9a2ce44adcad7e7093172947eef4175cdfc1fa67
+input_fingerprint_sha256: 85dc5fbc2a01266529f3e2c4ee666347e32fa8906dea624593731bbfde6aeb99
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.25
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -14,27 +15,27 @@ DM LEPTOGENESIS PROJECTION THEOREM
 PART 1: THE POSITIVE POLAR REPRESENTATIVE SATISFIES Y^DAG Y = H
 ========================================================================================
   [PASS] The sampled Hermitian blocks are strictly positive on the generic full-rank patch  (min eigenvalue=0.749902)
-  [PASS] The positive polar representative satisfies Y_+^dag Y_+ = H exactly  (max reconstruction error=2.10e-14)
+  [PASS] The positive polar representative satisfies Y_+^dag Y_+ = H exactly  (max reconstruction error=2.12e-14)
 
 ========================================================================================
 PART 2: THE HEAVY-BASIS DENOMINATOR IS EXACTLY K00
 ========================================================================================
-  [PASS] Right-basis rotation gives Y_mass^dag Y_mass = U_M^dag H U_M = K_mass  (max matrix error=1.67e-14)
-  [PASS] Therefore the physical denominator channel equals (K_mass)00 exactly  (max entry error=8.88e-15)
+  [PASS] Right-basis rotation gives Y_mass^dag Y_mass = U_M^dag H U_M = K_mass  (max matrix error=1.77e-14)
+  [PASS] The supplied matrix entry equals (K_mass)00  (max entry error=8.88e-15)
 
 ========================================================================================
 PART 3: THE PROJECTION IDENTITY MATCHES THE EXISTING K00 THEOREM
 ========================================================================================
-  [PASS] The existing K00 theorem already records K00 = (K_mass)00
+  [PASS] The K00 parent explicitly keeps physical coefficient identification as an extra premise
   [PASS] The post-canonical polar theorem already records the intrinsic positive representative Y_+(H) = H^(1/2)
-  [PASS] Combining them fixes the physical leptogenesis denominator as K00  (physical denominator = (Y_mass^dag Y_mass)00 = (K_mass)00 = K00)
+  [PASS] The supplied matrix identity does not fix physical normalization  (physical readout and K00=2tau matching remain supplied assumptions)
 
 ========================================================================================
 PART 4: THE OLD REDUCED RUNNER AND THE REFRESHED EXACT RUNNER NOW DIFFER SHARPLY
 ========================================================================================
   [PASS] The old reduced runner still states (Y^dag Y)11 = y0^2 on the reduced Z3 texture benchmark
   [PASS] The refreshed exact-kernel runner now inserts the explicit /K00 denominator
-  [PASS] The final theorem-native closure runner keeps K00 explicit on the authority path
+  [PASS] Historical transport source records a chosen K00=2 convention, not its derivation
 
 ========================================================================================
 SUMMARY: PASS=10 FAIL=0

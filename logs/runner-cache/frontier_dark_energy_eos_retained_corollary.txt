@@ -1,20 +1,24 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dark_energy_eos_retained_corollary.py
-runner_sha256: a3997434929c4dc76235419643714e73af636a146ec762ddf06c4e7f61f024b4
-timeout_sec: 120
+runner_sha256: 572e820a17d920543989a3903102558589b559f6bc22091554d9f70d574654ce
+input_fingerprint_sha256: 1f8880a51882c9838322f15480fa1cedae0decff4a29525f216b7104fce27bbd
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
+  [PASS (D)] minimum/comparison slice agrees
+  [PASS (D)] evolving slice counterexample: a=2ell gives Lambda/4
+Conditional comparison R=ell; no inherited closure or physical-slice identity.
 ========================================================================
-Dark-Energy EOS Retained Structural Corollary
+Dark-Energy EOS Supplied Structural Corollary
 ========================================================================
 
-Theorem: on the retained S^3 + spectral-gap + fixed-R surface,
+Theorem: on the supplied S^3 + spectral-gap + fixed-R surface,
          rho_Lambda is time-independent and w = -1 exactly,
          independent of the numerical value of R.
 
-[1] Retained identity Lambda_vac = lambda_1(S^3_R) imported ------
+[1] Supplied identity Lambda_vac = lambda_1(S^3_R) imported ------
   [PASS (D)] identity theorem note present in repo  (path = docs/COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md)
   [PASS (D)] identity theorem runner present in repo  (path = scripts/frontier_cosmological_constant_spectral_gap_identity.py)
   [PASS (D)] identity Lambda_vac = lambda_1(S^3_R) at R = 5.000e-01  (both = 1.200000e+01)
@@ -49,20 +53,20 @@ Theorem: on the retained S^3 + spectral-gap + fixed-R surface,
   [PASS (D)] w(a) >= -1 identically (no phantom crossing)  (min w = -1.000)
   [PASS (D)] w(a) <= -1 identically (saturation)  (max w = -1.000)
 
-[9] Lattice-discretization drift bound ----------------------------
-  [PASS (D)] |delta w| bound from lattice is far below observational floor  (|delta w| < 1.39e-122,  DESI sensitivity / bound ~ 7.21e+119)
+[9] Lattice amplitude diagnostic ----------------------------
+  [PASS (D)] lattice amplitude scale is below illustrative floor; no derivative bound  (amplitude = 1.39e-122,  DESI sensitivity / bound ~ 7.21e+119)
 
 ========================================================================
-SUMMARY: PASS=20  FAIL=0
+SUMMARY: PASS=22  FAIL=0
 ========================================================================
 
-Retained structural corollary:
-  w = -1 exactly on the retained de Sitter stationary vacuum +
-  retained S^3 topology + retained Lambda_vac = lambda_1(S^3_R)
+Supplied structural corollary:
+  w = -1 exactly on the supplied de Sitter stationary vacuum +
+  supplied S^3 topology + supplied Lambda_vac = lambda_1(S^3_R)
   identity, independent of the numerical value of R.
   CPL parameters: (w_0, w_a) = (-1, 0).
 
-Retained upstream premise:
+Supplied upstream premise:
   docs/COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md
   scripts/frontier_cosmological_constant_spectral_gap_identity.py
 

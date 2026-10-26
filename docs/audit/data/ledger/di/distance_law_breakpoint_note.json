@@ -37,7 +37,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "1e5f541224512c30da7f20fad3100c79500848ccc7f543cc5c6fbaad561e6ed6",
+  "note_hash": "bc5723ac022cd9e944b22aac1baff00935a596cf14984a6f2596bbf900e62019",
   "note_path": "docs/DISTANCE_LAW_BREAKPOINT_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -305,7 +305,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

@@ -1,0 +1,61 @@
+{
+  "base": "9648b3fec2da65a88129266e92fcba697bb31682",
+  "scope": "Historical source/cache preservation; universal limit exclusion withdrawn, old scores not current proof",
+  "files": [
+    {
+      "original_path": "docs/KOIDE_A1_PROBE_CONTINUUM_LIMIT_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe15.md",
+      "archive_path": "archive/source-history/koide-probe15-universal-limit-withdrawal-2026-10-24/docs/KOIDE_A1_PROBE_CONTINUUM_LIMIT_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe15.md.txt",
+      "sha256": "5794b4d8b1d3e3b00bc0c8d7e3dca05e51d35a7b688878b02aaba99938bcda94"
+    },
+    {
+      "original_path": "scripts/cl3_koide_a1_probe_continuum_limit_2026_05_09_probe15.py",
+      "archive_path": "archive/source-history/koide-probe15-universal-limit-withdrawal-2026-10-24/scripts/cl3_koide_a1_probe_continuum_limit_2026_05_09_probe15.py.txt",
+      "sha256": "597edbb5fcc877447d9067f06a178a726e580dbbc65e313c68487435c482e7e8"
+    },
+    {
+      "original_path": "logs/runner-cache/cl3_koide_a1_probe_continuum_limit_2026_05_09_probe15.txt",
+      "archive_path": "archive/source-history/koide-probe15-universal-limit-withdrawal-2026-10-24/logs/runner-cache/cl3_koide_a1_probe_continuum_limit_2026_05_09_probe15.txt.txt",
+      "sha256": "2e94e15d719b774b8373f8569002a9a3bbf19244aa0dd5b36147b03d9c273e56"
+    },
+    {
+      "original_path": "scripts/frontier_hierarchy_fixed_density_physical_selector_no_go_2026_06_18.py",
+      "archive_path": "archive/source-history/koide-probe15-universal-limit-withdrawal-2026-10-24/scripts/frontier_hierarchy_fixed_density_physical_selector_no_go_2026_06_18.py.txt",
+      "sha256": "549dba735663af956d554e53ee4659f2c74a40eb97c7f849cbf8a6138f9830ce"
+    },
+    {
+      "original_path": "logs/runner-cache/frontier_hierarchy_fixed_density_physical_selector_no_go_2026_06_18.txt",
+      "archive_path": "archive/source-history/koide-probe15-universal-limit-withdrawal-2026-10-24/logs/runner-cache/frontier_hierarchy_fixed_density_physical_selector_no_go_2026_06_18.txt.txt",
+      "sha256": "41c987459eac69858ba150e0854927815618ac33405d9205264c82196474dcd6"
+    },
+    {
+      "original_path": "docs/BRANNEN_AMPLITUDE_EQUIPARTITION_BAE_RENAME_META_NOTE_2026-05-09.md",
+      "archive_path": "archive/source-history/koide-probe15-universal-limit-withdrawal-2026-10-24/docs/BRANNEN_AMPLITUDE_EQUIPARTITION_BAE_RENAME_META_NOTE_2026-05-09.md.txt",
+      "sha256": "17888e925209e4f7b4fefa121514bd32091509a38a623ea159fc9e758eedbb92"
+    },
+    {
+      "original_path": "scripts/frontier_bae_rename_meta.py",
+      "archive_path": "archive/source-history/koide-probe15-universal-limit-withdrawal-2026-10-24/scripts/frontier_bae_rename_meta.py.txt",
+      "sha256": "38f1754f2d4dcf5aed001fa36cfb206242f21934e63eb67c88fbcd097290a2ae"
+    },
+    {
+      "original_path": "logs/runner-cache/frontier_bae_rename_meta.txt",
+      "archive_path": "archive/source-history/koide-probe15-universal-limit-withdrawal-2026-10-24/logs/runner-cache/frontier_bae_rename_meta.txt.txt",
+      "sha256": "a676128a45a633bc83daf5ea0e0e0734732a0aa4a7a2b3a206a9addc463aaf64"
+    },
+    {
+      "original_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md",
+      "archive_path": "archive/source-history/koide-probe15-universal-limit-withdrawal-2026-10-24/docs/KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md.txt",
+      "sha256": "96f7b777b18f2a44aaf8f7a13121f6270c7bedb5c3a5196a3204c8a1c0cb9845"
+    },
+    {
+      "original_path": "scripts/frontier_bae_30_probe_terminal_synthesis.py",
+      "archive_path": "archive/source-history/koide-probe15-universal-limit-withdrawal-2026-10-24/scripts/frontier_bae_30_probe_terminal_synthesis.py.txt",
+      "sha256": "3df227dc6f291750220466d9e5ad6079f88a514ad1591a2748898c1656ec5221"
+    },
+    {
+      "original_path": "logs/runner-cache/frontier_bae_30_probe_terminal_synthesis.txt",
+      "archive_path": "archive/source-history/koide-probe15-universal-limit-withdrawal-2026-10-24/logs/runner-cache/frontier_bae_30_probe_terminal_synthesis.txt.txt",
+      "sha256": "1a8290a2554ac819781831e56934d0b59b7aa952ae2c191ddc85424b9eb81ed5"
+    }
+  ]
+}

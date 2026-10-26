@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_dimensional_compression.py
-runner_sha256: 00aac3acb1a9b4dce51c800ac71ec02182e4978d7f9ea8ebea1aab79d223d373
+runner_sha256: 811484233d8c5dc7ba817317379de4d61c8386008288730ed4efba842e1b8a2b
+input_fingerprint_sha256: c4906e3e4b8e42059c90ba2678c31b47dc80f36247af88776d4acd5f32b650f3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.26
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
 Hierarchy dimensional-compression diagnostic
@@ -14,7 +15,7 @@ Hierarchy dimensional-compression diagnostic
   cond(Lt=10) = 0.0035637486
   ratio       = 1.1546901938
 
-  Intra-framework dimensional-compression candidates:
+  Supplied-fixture dimensional-compression candidates:
 
   Dimension-3 compression:
     ratio^(1/3)     = 1.0491119305
@@ -41,20 +42,20 @@ Hierarchy dimensional-compression diagnostic
     inverse shift       = -0.895%
 
 ------------------------------------------------------------------------------
-  Intra-framework PASS gates (no observed-target dependence)
+  Supplied-fixture PASS gates (no observed-target dependence)
 ------------------------------------------------------------------------------
-  [PASS] D=4 inverse compression R^(-1/4) reproduces by independent routes
+  [PASS] D=4 inverse compression R^(-1/4) agrees between power/log evaluations
          R^(-1/4) via pow = 0.964680790528, via exp(-log/4) = 0.964680790528
   [PASS] D=4 and D=16 inverse compressions differ by more than 2% (not numerically degenerate)
          |R^(-1/4) / R^(-1/16) - 1| = 0.026608
   [PASS] Structural identity 1/D = 4 / 2^D holds at D = 4
          1/4 = 0.25, 4/2^4 = 0.25
-  [PASS] Structural identity FAILS at D in {1,2,3,5,6,8} (so (1/4) is D=4-specific)
+  [PASS] Structural identity FAILS at D in {1,2,3,5,6,8} (finite comparison set only)
          D=1:fails(1.0000 vs 2.0000), D=2:fails(0.5000 vs 1.0000), D=3:fails(0.3333 vs 0.5000), D=5:fails(0.2000 vs 0.1250), D=6:fails(0.1667 vs 0.0625), D=8:fails(0.1250 vs 0.0156)
-  [PASS] PASS conditions are free of observed-target imports (audit-transparent)
-         v_obs, v_pred, C_obs are not referenced before this point
-  [PASS] source notes preserve parent conditional-support and companion numerical-diagnostic scope
-  [PASS] source notes wire D=4 density-scale bridge while preserving physical VEV boundary
+INFO: printed external targets are context; this narration is not a numerical check.
+  [PASS] documentary boundary: finite supplied diagnostic, not taste authority
+  [PASS] documentary boundary: physical interpretation remains open
+  [PASS] companion preserves supplied-fixture scope and external-context boundary
 
 ------------------------------------------------------------------------------
   External context (NOT a PASS condition, NOT load-bearing)
@@ -67,13 +68,8 @@ Hierarchy dimensional-compression diagnostic
   from all PASS gates above. Comparing R^(-1/4) to C_obs is a
   reader-level diagnostic, not an audit-load-bearing closure.
 
-Conclusion (within-scope):
-  Under the 2026-06-16 fixed-density coefficient-to-scale bridge,
-  a positive endpoint coefficient ratio R maps to the inverse
-  fourth-root scale factor R^(-1/4) at D=4. The runner checks
-  that this candidate is quantitatively distinct from the D=16
-  direct-scale alternative and that no within-scope PASS gate
-  depends on the imported v_obs.
+Finite supplied-fixture arithmetic only. The coefficient interpretation of R,
+physical taste count, physical endpoint and absolute EW scale remain open.
 
 ==============================================================================
 SCORECARD: 7 pass, 0 fail out of 7

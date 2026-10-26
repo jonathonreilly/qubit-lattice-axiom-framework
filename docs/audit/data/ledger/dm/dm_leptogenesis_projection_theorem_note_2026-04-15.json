@@ -15,10 +15,10 @@
   "claim_id": "dm_leptogenesis_projection_theorem_note_2026-04-15",
   "claim_scope": null,
   "claim_type": "bounded_theorem",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": null,
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "author_hint",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -38,7 +38,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "e6f85e78cfaefe98cc1f28f15aa51a32f7120b92555cf6a6bc3ee71cd85bc150",
+  "note_hash": "c9ad17d1e7475ae82addd59500e80dc00021087db7f128230d93f359ced9a19f",
   "note_path": "docs/DM_LEPTOGENESIS_PROJECTION_THEOREM_NOTE_2026-04-15.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -159,7 +159,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_dm_leptogenesis_projection_theorem.py",
-  "title": "DM Leptogenesis Projection Theorem",
+  "title": "Conditional leptogenesis matrix projection identity",
   "transitive_descendants": 1,
   "unattributed_audit_provenance": [
     {

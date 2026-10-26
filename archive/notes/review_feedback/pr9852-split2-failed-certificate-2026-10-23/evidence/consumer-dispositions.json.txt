@@ -1,0 +1,10 @@
+{
+  "direct_runner_importers_or_readers": [],
+  "actual_changed_note_consumers": {
+    "docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md": "withdraw positive whole-box assertion and historical table authority",
+    "docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md": "current annotation explicitly withdraws split2 certification; historical body unchanged",
+    "docs/ai_methodology/raw/repo_audit.md": "immutable historical raw audit context, no current proof authority"
+  },
+  "changed_summary_actual_reader": "existing selector primary plus four previously assessed legacy documentary readers; final existing selector capture pending final summary freeze",
+  "scan_limit": "Exact note/runner filename references; no whole-repository semantic exhaustion claimed"
+}

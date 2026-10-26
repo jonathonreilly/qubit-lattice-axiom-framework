@@ -9,6 +9,9 @@ row-local literature u0 interval import.
 
 from __future__ import annotations
 
+AUDIT_INPUT_PATHS = ['docs/SU2_U0_SINGLE_PLAQUETTE_BETA16_NATIVE_INTERVAL_BOUNDED_SUPPORT_NOTE_2026-06-18.md', 'docs/G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md']
+AUDIT_TIMEOUT_SEC = 300
+
 import sys
 from pathlib import Path
 

@@ -1,58 +1,18 @@
 #!/usr/bin/env python3
-"""Verification runner for the g_* residual-reduction bounded note (R-MATTER).
+"""Conditional supplied-inventory arithmetic and finite counterfactuals.
 
-Supports
-docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md.
-
-The g_* fermionic census consumes a THERMALIZED per-generation count
-30 = 15 (gauge-charged Weyl) * 2 (particle/antiparticle), summed over 3
-generations to N_fermions = 90. This runner separates the retained/decorated
-arithmetic inputs from the registered retained-bounded finite-inventory
-premise packet P1/P4/P5 and checks that R-MATTER is retired only for this
-bounded g_* count, not promoted to a native derivation of Standard Model
-particle content. All as
-EXECUTED asserts (not prose):
-
-1. **Per-rep gauge-charged Weyl multiplicity breakdown.** Q_L = 3*2 = 6,
-   u_R = 3, d_R = 3, L_L = 2, e_R = 1; sum = 15; 15*2 = 30 dof/gen;
-   n_gen*30 = 3*30 = 90; g_* = 28 + (7/8)*90 = 427/4 = 106.75. All exact
-   rationals via fractions.Fraction.
-
-2. **Source classes.**
-   Color 3 / N_c = 3 (retained graph_first_su3 / cl3_color_automorphism);
-   isospin 2 (retained native_gauge_closure); LH per-rep assignment
-   (decoration-under-retained lhcm_matter_assignment); RH inventory as explicit
-   registered P1 right-handed inventory with anomaly-singlet support; n_gen = 3
-   (retained three_generation_observable); Weyl dof factor registered by P4 and
-   cross-checked through the retained-bounded stacked Dirac/Weyl dof bridge,
-   with finite-CAR/cardinality support.
-
-3. **The nu_R / I12 fork (the load-bearing residual).** The matter is 16 Weyl
-   (gauge-charged 15 + gauge-singlet nu_R). Thermalized count excludes nu_R ->
-   15*2 = 30/gen -> g_* = 106.75. If nu_R thermalized Dirac, 16*2 = 32/gen ->
-   N_fermions = 96 -> g_* = 28 + (7/8)*96 = 112. Confirms the fork 106.75 vs 112.
-
-4. **Branch-independence of the count.** The thermalized 30/gen count is the
-   same under the neutral-singlet branch and the e_R <-> nu_R relabelling (both
-   branches assign the same (1,1) singlet multiplicities); the branch convention
-   is not a count input.
-
-5. **Note / authority cross-checks.** Reduction bookkeeping, authority-file
-   existence, optional ledger-status cross-check, and a no-overclaim /
-   forbidden-import / new-vocabulary scan.
-
-No lattice-action quantity, fitted comparator, or PDG observed value is a
-load-bearing input. The representation counts are not fitted; P1/P4/P5 of the
-retained-bounded finite-inventory wrapper are the registered physical-inventory
-premises, while the Dirac/Weyl and spin/cardinality rows are retained support
-and cross-checks.
+No retained status or native physical inventory derivation is established.
+The Dirac comparison is to supplied finite complex-matrix fixtures, not a
+physical thermal count theorem. All original arithmetic predicates remain.
 """
 
 from __future__ import annotations
 
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = ['docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md', 'docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md', 'docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md', 'docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md', 'docs/NATIVE_GAUGE_CLOSURE_NOTE.md', 'docs/LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md', 'docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md', 'docs/ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md', 'docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md', 'docs/THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md', 'docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md', 'docs/SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md', 'docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md', 'docs/ONE_GENERATION_MATTER_CLOSURE_NOTE.md']
+
 from fractions import Fraction
 from pathlib import Path
-import json
 import re
 import sys
 
@@ -63,7 +23,6 @@ NOTE_PATH = (
     / "SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md"
 )
 SM_INVENTORY_PATH = ROOT / "docs" / "SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md"
-LEDGER_PATH = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 
 PASS = 0
 FAIL = 0
@@ -94,21 +53,20 @@ SM_INVENTORY_TEXT = SM_INVENTORY_PATH.read_text(encoding="utf-8")
 
 
 # ===========================================================================
-# Framework structural constants (sourced from cited authorities)
+# Supplied constants for the conditional arithmetic
 # ===========================================================================
 
-# Color count N_c = 3 (retained graph_first_su3_integration / cl3_color_automorphism).
+# Color count N_c = 3 (supplied color dimension).
 N_C = 3
-# SU(2)_L weak-doublet dimension = 2 (retained native_gauge_closure).
+# SU(2)_L weak-doublet dimension = 2 (supplied dimension=2).
 DIM_ISOSPIN_DOUBLET = 2
-# Generation count (retained three_generation_observable).
+# Generation count (supplied generation count).
 N_GEN = 3
-# Weyl-to-dof particle/antiparticle factor, routed through the stacked
-# Dirac/Weyl dof bridge on this source surface.
+# Weyl-to-dof particle/antiparticle factor, supplied by P4, not derived from finite Dirac/Weyl fixtures.
 WEYL_DOF = 2
-# Boson count (retained-sourced in the companion census note; not re-derived here).
+# Boson count (supplied total; no boson derivation here).
 N_BOSONS = 28
-# Fermion thermal weight 7/8 (retained hierarchy_seven_eighths; via the sibling note).
+# Fermion thermal weight 7/8 (supplied thermal weight).
 W_F = Fraction(7, 8)
 
 
@@ -180,30 +138,30 @@ check(
 
 
 # ===========================================================================
-# 2. Source classes: retained/decorated inputs plus explicit bounded premises
+# 2. Source classes: supplied inputs and explicit inventory premises
 # ===========================================================================
 
 section("2. Source classes for R-MATTER arithmetic")
 
 # Color triplet multiplicity = dim(SU(3) fundamental) = N_c = 3.
 check(
-    "color triplet multiplicity = N_c = 3 (retained graph_first_su3 / cl3_color_automorphism)",
+    "color triplet multiplicity = N_c = 3 (supplied N_c=3)",
     N_C == 3,
 )
 # Isospin doublet multiplicity = dim(SU(2) fundamental) = 2.
 check(
-    "isospin doublet multiplicity = 2 (retained native_gauge_closure)",
+    "isospin doublet multiplicity = 2 (supplied dimension=2)",
     DIM_ISOSPIN_DOUBLET == 2,
 )
-# Q_L multiplicity is exactly the product of the two retained fundamentals.
+# Q_L multiplicity is exactly the product of the two supplied dimensions.
 check(
-    "Q_L = (color 3) * (isospin 2) = 6 from the two retained gauge fundamentals",
+    "Q_L = (color 3) * (isospin 2) = 6 from the two supplied dimensions",
     Q_L == N_C * DIM_ISOSPIN_DOUBLET,
 )
-# LH per-rep assignment (2,3)=Q_L:6 + (2,1)=L_L:2 (decoration-under-retained).
+# LH per-rep assignment (2,3)=Q_L:6 + (2,1)=L_L:2 (supplied split).
 lh_assignment = Q_L + L_L
 check(
-    "LH per-rep assignment (2,3)+(2,1) = 6+2 = 8 Weyl (decoration_under_graph_first_su3)",
+    "LH per-rep assignment (2,3)+(2,1) = 6+2 = 8 Weyl (supplied representation list)",
     lh_assignment == 8,
     f"{lh_assignment}",
 )
@@ -219,9 +177,9 @@ check(
     "LH(8) + RH(7) = 15 gauge-charged Weyl",
     lh_assignment + rh_completion == gauge_charged_weyl,
 )
-# Generation count (retained).
+# Generation count (supplied).
 check(
-    "generation count n_gen = 3 (retained three_generation_observable)",
+    "generation count n_gen = 3 (supplied generation count)",
     N_GEN == 3,
 )
 # Weyl-to-dof thermal factor (registered P4, Dirac/Weyl cross-check).
@@ -237,11 +195,11 @@ check(
 
 section("3. nu_R / I12 fork (106.75 vs 112)")
 
-# The framework matter content is 16 Weyl including the gauge-singlet nu_R.
+# The supplied counterfactual inventory is 16 Weyl including the gauge-singlet nu_R.
 nu_R = 1  # (1,1)_0 gauge singlet: zero color, zero isospin, zero hypercharge
 full_matter_weyl = gauge_charged_weyl + nu_R
 check(
-    "full framework matter content = 15 gauge-charged + 1 nu_R singlet = 16 Weyl",
+    "supplied extended inventory = 15 gauge-charged + 1 nu_R singlet = 16 Weyl",
     full_matter_weyl == 16,
     f"{full_matter_weyl}",
 )
@@ -297,8 +255,9 @@ check(
 
 section("4. Neutral-singlet branch-independence of the count")
 
-# The cubic anomaly Tr[Y^3]=0 factors into two branches related by e_R <-> nu_R
-# relabelling. Both branches assign the SAME (1,1) singlet MULTIPLICITIES:
+# Supply the two inventory branches related by e_R <-> nu_R; this section
+# does not prove a factorization or completeness theorem for anomaly solutions.
+# Both supplied branches assign the SAME (1,1) singlet MULTIPLICITIES:
 # one charged singlet (e_R-like, gauge-charged) and one neutral singlet (nu_R-like,
 # gauge singlet). The branch only relabels WHICH singlet is e_R vs nu_R; the
 # gauge-charged count is the same.
@@ -338,315 +297,27 @@ check(
 )
 
 
-# ===========================================================================
-# 5. Note / authority cross-checks
-# ===========================================================================
-
-section("5. Note / authority cross-checks")
-
-# Retained / decoration-under-retained support sources -> markdown-link edges.
-SOURCED_AUTHORITIES = [
-    "SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md",
-    "GRAPH_FIRST_SU3_INTEGRATION_NOTE.md",
-    "CL3_COLOR_AUTOMORPHISM_THEOREM.md",
-    "NATIVE_GAUGE_CLOSURE_NOTE.md",
-    "LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md",
-    "LEFT_HANDED_CHARGE_MATCHING_NOTE.md",
-    "ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md",
-    "THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md",
-    "THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md",
-    "DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md",
-    "SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md",
-    "PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md",
-]
-
-# Separated stronger statement -> plain-text pointer (NON-load-bearing).
-SEPARATED_STRONGER = [
-    "ONE_GENERATION_MATTER_CLOSURE_NOTE.md",
-]
-
-for fname in SOURCED_AUTHORITIES + SEPARATED_STRONGER:
-    check(
-        f"authority file exists: {fname}",
-        (ROOT / "docs" / fname).exists(),
-    )
-
-# Markdown-link support edges must be present for the cited authorities.
-for fname in SOURCED_AUTHORITIES:
-    check(
-        f"support authority cited as markdown link: {fname}",
-        f"]({fname})" in NOTE_TEXT,
-    )
-
-# The separated stronger one-generation closure must be a plain-text pointer
-# (NOT a markdown link) so it is not a load-bearing edge.
-for fname in SEPARATED_STRONGER:
-    check(
-        f"separated stronger statement is plain-text (non-load-bearing): {fname}",
-        (fname in NOTE_TEXT) and (f"]({fname})" not in NOTE_TEXT),
-    )
-
-# Reduction bookkeeping strings present in the note.
-check(
-    "note marks R-MATTER reduced for the thermalized dof count",
-    "R-MATTER" in NOTE_TEXT and "reduced" in NOTE_TEXT.lower(),
-)
-check(
-    "note names I12 nu_R thermal exclusion as the load-bearing fork",
-    "I12" in NOTE_TEXT and "nu_R" in NOTE_TEXT and "thermal exclusion" in NOTE_TEXT,
-)
-check(
-    "note registers P1/P4/P5 finite-inventory packet",
-    "P1/P4/P5" in NOTE_TEXT
-    and "retained-bounded finite inventory" in NOTE_TEXT,
-)
-check(
-    "note routes RH inventory through registered P1",
-    "right-handed gauge-charged inventory" in NOTE_TEXT
-    and "P1" in NOTE_TEXT
-    and "SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md" in NOTE_TEXT,
-)
-check(
-    "note routes nu_R exclusion through P1/P5",
-    "P1/P5" in NOTE_TEXT
-    and "nu_R" in NOTE_TEXT
-    and "retained-bounded finite inventory" in NOTE_TEXT,
-)
-check(
-    "note routes Weyl dof factor through P4 with Dirac/Weyl cross-check",
-    "DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md"
-    in NOTE_TEXT
-    and "P4" in NOTE_TEXT
-    and "cross-check" in NOTE_TEXT,
-)
-DIRAC_WEYL_PATH = (
-    ROOT
-    / "docs"
-    / "DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md"
-)
+# Documentary comparisons, not proof or status checks.
+DIRAC_WEYL_PATH = ROOT / "docs" / "DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md"
 DIRAC_WEYL_TEXT = DIRAC_WEYL_PATH.read_text(encoding="utf-8")
-check(
-    "Dirac/Weyl source note contains source-local Q2 rank counting",
-    "source-local Q2 branch-rank counting" in DIRAC_WEYL_TEXT
-    and "rank(gamma.p - m)=2" in DIRAC_WEYL_TEXT,
-)
-check(
-    "Dirac/Weyl source note contains massless chirality split",
-    "chirality projectors split the massless branch" in DIRAC_WEYL_TEXT
-    and "fixed-chirality branch-rank count" in DIRAC_WEYL_TEXT,
-)
-check(
-    "note keeps native SM inventory derivation out of scope",
-    "registered Standard-Model inventory is a native" in NOTE_TEXT
-    or "SM thermal inventory is natively derived" in NOTE_TEXT,
-)
-check(
-    "note does not claim Weyl factor is native-derived downstream",
-    "thermal Weyl factor `2` is natively derived" in NOTE_TEXT
-    and "registered by P4" in NOTE_TEXT,
-)
-check(
-    "note carries RH inventory as registered bounded premise, not native-derived",
-    "right-handed gauge-charged inventory is natively derived" in NOTE_TEXT
-    and "registered by P1" in NOTE_TEXT,
-)
-check(
-    "note marks neutral-singlet branch convention not load-bearing on count",
-    "neutral-singlet branch" in NOTE_TEXT and "not load-bearing" in NOTE_TEXT,
-)
-check(
-    "note carries the 106.75 vs 112 fork explicitly",
-    "106.75" in NOTE_TEXT and "112" in NOTE_TEXT,
-)
-check(
-    "note states R-MATTER retired for bounded g_* count only",
-    "R-MATTER is retired for this bounded" in NOTE_TEXT
-    or "R-MATTER is retired for the bounded" in NOTE_TEXT,
-)
+check("Dirac comparison explicitly concerns finite supplied complex fixtures",
+      "supplied complex matrices" in DIRAC_WEYL_TEXT and "finite fixtures" in DIRAC_WEYL_TEXT)
+check("Dirac physical identification and ledger authority remain withdrawn",
+      "physical identification remains open" in DIRAC_WEYL_TEXT
+      and "no current ledger authority" in DIRAC_WEYL_TEXT)
+for phrase in ["bounded_theorem", "supplied inventory", "P1/P4/P5", "106.75", "112",
+               "physical state-count convention remains supplied", "no current ledger authority"]:
+    check(f"documentary scope: {phrase}", phrase in NOTE_FLAT)
+check("inventory source states literature-conditioned 28/90 scope (documentary only)",
+      "literature-supplied inventory and thermal assumptions" in " ".join(SM_INVENTORY_TEXT.split())
+      and "g_bosonic = 16 + 6 + 2 + 4 = 28" in SM_INVENTORY_TEXT
+      and "g_fermionic = 72 + 12 + 6 = 90" in SM_INVENTORY_TEXT
+      and "not a framework derivation of which particles nature contains" in " ".join(SM_INVENTORY_TEXT.split()))
 
-
-# ===========================================================================
-# 6. Ledger status cross-check (optional)
-# ===========================================================================
-
-section("6. Ledger status cross-check (optional)")
-if LEDGER_PATH.exists():
-    led = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
-    rows = led.get("rows", led)
-
-    def status_of(cid: str):
-        if isinstance(rows, dict):
-            for k, r in rows.items():
-                if cid == str(k) or cid == str(r.get("claim_id", "")):
-                    return r.get("effective_status")
-        else:
-            for r in rows:
-                if cid == str(r.get("claim_id", "")):
-                    return r.get("effective_status")
-        return None
-
-    retained_expected = {
-        "graph_first_su3_integration_note": "retained",
-        "cl3_color_automorphism_theorem": "retained",
-        "native_gauge_closure_note": "retained",
-        "three_generation_observable_theorem_note": "retained",
-        "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10": "retained",
-        "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": "retained",
-    }
-    for cid, want in retained_expected.items():
-        got = status_of(cid)
-        check(
-            f"retained source {cid} is {want}",
-            got == want,
-            f"ledger = {got}",
-        )
-
-    decoration_expected = {
-        "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "decoration_under_graph_first_su3_integration_note",
-        "left_handed_charge_matching_note": "decoration_under_graph_first_su3_integration_note",
-    }
-    for cid, want in decoration_expected.items():
-        got = status_of(cid)
-        check(
-            f"decoration source {cid} is {want}",
-            got == want,
-            f"ledger = {got}",
-        )
-
-    check(
-        "anomaly singlet completion is retained_bounded",
-        status_of(
-            "one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10"
-        )
-        == "retained_bounded",
-        f"ledger = {status_of('one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10')}",
-    )
-    check(
-        "SM finite-inventory wrapper is retained_bounded",
-        status_of("sm_relativistic_dof_count_import_note_2026-05-17")
-        == "retained_bounded",
-        f"ledger = {status_of('sm_relativistic_dof_count_import_note_2026-05-17')}",
-    )
-    dirac_weyl_status = status_of(
-        "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28"
-    )
-    check(
-        "Dirac/Weyl dof source is retained_bounded support",
-        dirac_weyl_status == "retained_bounded",
-        f"ledger = {dirac_weyl_status}",
-    )
-    check(
-        "P1/P4/P5 registered inventory supplies the physical boundary",
-        "P1/P4/P5" in NOTE_TEXT and "registered finite-inventory" in NOTE_TEXT,
-    )
-    check(
-        "R-MATTER retired only for bounded g_* count",
-        "R-MATTER is retired for this bounded" in NOTE_TEXT
-        or "R-MATTER is retired for the bounded" in NOTE_TEXT,
-    )
-    check(
-        "full one-generation closure stays unaudited (separated, not reduced by this note)",
-        status_of("one_generation_matter_closure_note") == "unaudited",
-        f"ledger = {status_of('one_generation_matter_closure_note')}",
-    )
-else:
-    print("  [SKIP] audit ledger not present; status cross-check skipped")
-
-
-# ===========================================================================
-# 7. No-overclaim / forbidden-import / new-vocabulary scan
-# ===========================================================================
-
-section("7. No-overclaim / forbidden-import / vocabulary scan")
-
-# Bare retained/promoted status lines are banned (status authority is audit lane).
-banned_status_lines = re.findall(
-    r"(?im)^\*\*Status:\*\*\s*(retained|promoted)\b", NOTE_TEXT
-)
-check(
-    "no bare '**Status:** retained/promoted' line",
-    not banned_status_lines,
-    f"found {banned_status_lines}" if banned_status_lines else "",
-)
-check(
-    "claim type is bounded_theorem",
-    "**Claim type:** bounded_theorem" in NOTE_TEXT,
-)
-check(
-    "status authority is independent audit lane only",
-    "independent audit lane only" in NOTE_TEXT,
-)
-# Honest-scope sentences present.
-check(
-    "note states full one-generation closure NOT claimed derived",
-    "does **not**" in NOTE_TEXT
-    and "one-generation matter closure is derived" in NOTE_TEXT,
-)
-check(
-    "note states nu_R thermal exclusion is registered, not primitive-derived",
-    "nu_R" in NOTE_TEXT and "registered P1/P5" in NOTE_TEXT,
-)
-check(
-    "note states neutral-singlet branch convention NOT claimed derived",
-    "branch convention" in NOTE_TEXT and "is derived" in NOTE_TEXT,
-)
-check(
-    "note states RH inventory is registered, not native-derived",
-    "right-handed gauge-charged inventory is natively derived" in NOTE_TEXT
-    and "registered by P1" in NOTE_TEXT,
-)
-check(
-    "note states thermal Weyl factor is registered, not downstream native-derived",
-    "thermal Weyl factor `2` is natively derived" in NOTE_TEXT
-    and "registered by P4" in NOTE_TEXT,
-)
-
-# Forbidden load-bearing imports: no lattice-action / fitted / PDG carrier.
-forbidden = [
-    "wilson plaquette",
-    "staggered phase",
-    "brillouin",
-    "link unitar",
-    "monte carlo",
-    "best-fit",
-    "chi-squared fit",
-    "fitted to data",
-]
-low = NOTE_TEXT.lower()
-for term in forbidden:
-    n_occ = low.count(term)
-    n_neg = low.count("no lattice-action carrier")  # the ledger disclaimer line
-    check(
-        f"no load-bearing forbidden import '{term}'",
-        n_occ == 0 or n_neg >= 1,
-        f"{n_occ} occurrence(s)",
-    )
-
-# No new repo vocabulary / meta-framings.
-banned_vocab = [
-    "algebraic universality",
-    "two-class framing",
-    "lattice-realization-invariant by definition",
-    "(CKN)",
-]
-for term in banned_vocab:
-    check(
-        f"no new-vocabulary string '{term}'",
-        term.lower() not in low,
-    )
-
-
-# ===========================================================================
-# Scorecard
-# ===========================================================================
-
-section("SCORECARD")
-print(f"  PASS = {PASS}")
-print(f"  FAIL = {FAIL}")
-print()
-if FAIL == 0:
-    print(f"RESULT: PASS={PASS} FAIL=0")
-    sys.exit(0)
-else:
-    print(f"RESULT: PASS={PASS} FAIL={FAIL}")
-    sys.exit(1)
+HISTORICAL_CONTEXT_PATHS = ['docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md', 'docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md', 'docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md', 'docs/NATIVE_GAUGE_CLOSURE_NOTE.md', 'docs/LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md', 'docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md', 'docs/ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md', 'docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md', 'docs/THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md', 'docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md', 'docs/SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md', 'docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md', 'docs/ONE_GENERATION_MATTER_CLOSURE_NOTE.md']
+for path in HISTORICAL_CONTEXT_PATHS:
+    check(f"historical context file remains available (not authority): {path}",
+          (ROOT / path).exists())
+print("INFO: documentary existence and substring checks establish no mathematical or audit authority.")
+print(f"RESULT: PASS={PASS} FAIL={FAIL}")
+sys.exit(1 if FAIL else 0)

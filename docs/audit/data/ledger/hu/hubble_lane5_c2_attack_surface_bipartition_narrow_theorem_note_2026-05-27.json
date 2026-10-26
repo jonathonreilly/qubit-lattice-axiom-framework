@@ -45,7 +45,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "9e85ca3dfb741a012eb4c287c5d24eac8c1e6ea7a2a1f8f0c6fd00a5a193cfb9",
+  "note_hash": "b41bad4d543e620d02ba2f3b0d1e9b741f991e0806994657897ed62ab1d27604",
   "note_path": "docs/HUBBLE_LANE5_C2_ATTACK_SURFACE_BIPARTITION_NARROW_THEOREM_NOTE_2026-05-27.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

@@ -1,11 +1,27 @@
 # Charged-Lepton `y_τ` Ward Identity Combined No-Go (2026-05-10)
 
 **Date:** 2026-05-10
-**Claim type:** no_go
+**Claim type:** open_gate
 **Status authority:** independent audit lane only; effective status is
 pipeline-derived after audit ratification and dependency closure.
 
-**Status:** proposed_no_go exact negative boundary for the entire
+**Current disposition (2026-10-23): global no-go withdrawn.** Neither complete
+route exhaustion nor current retained-authority closure is established by this
+packet. The current result is limited to the supplied arithmetic examples;
+physical identification and a general Ward-identity obstruction remain open.
+Literal `True` checks in legacy functions are documentary assertions, not
+established claims. The PASS total includes them and cannot certify their truth.
+
+**Current correction (2026-10-23):** The M5/M6 supplied counts below do not
+identify physical generations, QCD color, species, or a common origin. The
+runner checks finite supplied examples and reports documentary observations;
+the historical ledger survey is not executed, and no current ledger grade
+is asserted. Its total is not a proof of the historical global exhaustion claim. That
+claim remains an open proof obligation, not a result certified by this repair.
+The historical proposed argument below is retained for examination, subject
+to this correction; no audit verdict or retained status is changed.
+
+**Historical proposed status:** proposed_no_go exact negative boundary for the entire
 single-cycle attemptable `y_τ` Ward identity construction surface
 on the current retained framework. This note unifies and strengthens
 the cycle 2/3/4/5 obstructions from the
@@ -28,7 +44,7 @@ flagship Q + δ closure or new structural primitives).
 
 ---
 
-## 1. Theorem statement
+## 1. Historical proposed theorem (unproved; global conclusion withdrawn)
 
 **Theorem (Charged-Lepton `y_τ` Ward Identity Combined No-Go).**
 On the current framework surface (defined in §2), no Ward identity
@@ -47,19 +63,19 @@ The six candidate mechanisms enumerated by the loop's Cycles 2–5
 closures combine into a complete exhaustion of the single-cycle
 attemptable surface.
 
-## 2. Current framework surface (precisely)
+## 2. Historical proposed framework surface (authority not established)
 
-**Retained substrate:**
+**Premises cited by the historical proposal (authority not established here):**
 
 | Identity | Authority |
 |---|---|
 | `Cl(3)` on `Z^3` minimal axiom stack | `MINIMAL_AXIOMS_2026-04-11.md` |
-| Three-generation matter structure (anomaly-forced + hw=1) | three-generation cluster |
+| Supplied Wilson-corner Hamming-weight count; physical generation identification open | historical three-generation cluster citation is not identification evidence |
 | `v = 246.282818290129 GeV` electroweak hierarchy | `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` |
 | `y_t(M_Pl) / g_s(M_Pl) = 1/sqrt(6)` lattice-scale Ward | `YT_WARD_IDENTITY_DERIVATION_THEOREM.md` |
 | `Cl(3)` bivector → `SU(2)` native gauge | retained gauge cluster |
 | `sin²(θ_W)|_lattice = A^4 = 4/9` (Wolfenstein A) | `CKM_EW_LATTICE_A4_BRIDGE_RETAINED_IDENTITY_NOTE_2026-04-25.md` |
-| `N_gen = N_color = 3` (integer-counting equality) | `CKM_KOIDE_CROSS_SECTOR_Z3_CLOSURE_THEOREM_NOTE_2026-04-25.md` |
+| Supplied orbit degeneracy and color-index count both 3; physical identification/common origin open | `CKM_KOIDE_CROSS_SECTOR_Z3_CLOSURE_THEOREM_NOTE_2026-04-25.md` |
 | SM gauge anomaly cluster (2026-04-26 series) | `SM_*_PROOF_2026-04-26.md` |
 
 **Forbidden imports** (per Lane 6 loop):
@@ -79,7 +95,7 @@ closure and the cross-sector A² ↔ V_cb bridge was retreated to
 support the next day. As of 2026-05-10, no Koide closure or
 cross-sector Yukawa identity is retained.
 
-## 3. Exhaustion of the six candidate mechanisms
+## 3. Historical six-route argument (exhaustiveness unproved)
 
 ### 3.1 SA-A — direct SU(2) gauge anchor (Cycle 2 closure)
 
@@ -146,10 +162,11 @@ is constructible from retained content alone.
 **Premise:** if `y_τ / y_t = const` is structurally retained at
 some scale, then `y_τ` retains via retained `y_t = g_s/sqrt(6)`.
 
-**Obstruction.** The retained cross-sector closure
-`N_gen = N_color = 3` is an integer-counting equality, not a
-Yukawa-coefficient identity (per its own boundary statement).
-Constructing a structural `y_τ / y_t` identity reduces to either:
+**Current boundary.** The cross-sector example compares supplied orbit
+degeneracy and color-index counts, both 3. Physical generation/color
+identification and a common origin remain open. The arithmetic gives no
+Yukawa-coefficient identity. The following were proposed research routes;
+their enumeration is not a proved exhaustive reduction:
 
 - (M5-a) D17-prime on the (2, 1) block — currently present only as
   an unaudited bounded-theorem candidate, not as retained-grade
@@ -167,13 +184,14 @@ that can close the current retained-surface no-go.
 
 ### 3.6 M6 — direct Cl(3) three-generation rep-theoretic anchor
 
-**Obstruction.** No retained framework content connects the
-three-generation `hw=1` structure to Yukawa coefficient values
-quantitatively. The `BAE Probe 23 lepton-triplet C_3 cycle` note
-exists at probe tier (`bounded_theorem`, `audit_date: null`) but
-is not a retained closure.
+**Current boundary.** `Cl(3)` has an eight-element algebra basis; this is
+not an eight-dimensional spinor representation. The supplied Wilson-corner
+`hw=1` denotes Hamming weight, not highest weight or a physical generation
+assignment. These counts do not establish a Yukawa coefficient. Neither
+physical species identification nor exhaustive exclusion of a future
+connection is proved by this example.
 
-## 4. Why the exhaustion is complete
+## 4. Historical completeness assertion (unproved and withdrawn)
 
 The six mechanisms partition the structurally-distinct anchor
 points for a YT-style identity:
@@ -192,7 +210,7 @@ framework surface. Any new candidate would either belong to one of
 the six classes above (and inherit its closure) or require new
 retained content not currently available.
 
-## 5. Surviving research-level routes
+## 5. Historical route inventory (not exhaustive)
 
 Three routes remain attemptable but are **not single-cycle**:
 
@@ -208,7 +226,7 @@ This note does not claim any of these routes is impossible; only
 that none is single-cycle attemptable on the current framework
 surface.
 
-## 6. Falsifiers
+## 6. Historical proposed falsifiers
 
 The combined no-go is falsified by any one of:
 
@@ -225,7 +243,7 @@ The combined no-go is falsified by any one of:
 5. A retained `hw=1 → Yukawa` representation-theoretic identity on
    the three-generation Cl(3) structure.
 
-## 7. What this note does NOT claim
+## 7. Historical claim boundaries (global conclusion withdrawn)
 
 - Any charged-lepton mass closure (`m_e, m_μ, m_τ`).
 - Any Koide closure (`Q = 2/3`, `δ = 2/9`).
@@ -253,7 +271,7 @@ which structural primitives are missing from retained authority.
 - V8 retreat audit: `docs/KOIDE_Q_OP_LOCALITY_SOURCE_DOMAIN_CLOSURE_THEOREM_NOTE_2026-04-29.md`
   (now support tier)
 
-## 9. Boundary
+## 9. Historical closure assertion (withdrawn; current boundary above controls)
 
 This note **closes** the single-cycle attemptable `y_τ` Ward identity
 construction surface. It supersedes the Cycle 2 + Cycle 3 partial

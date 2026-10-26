@@ -34,7 +34,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "0dd6352893a6efc9164aff649027c243f72f1b13d2b5fbc1e5d04815e1b94c59",
+  "note_hash": "0a2216d993aafbb598ab1f75c6d0014afa6a7b861d44ab475fcd818608687fd8",
   "note_path": "docs/DM_PMNS_CP_ORIENTATION_PARITY_REDUCTION_NOTE_2026-04-20_NOTE_2026-05-17.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -49,7 +49,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_dm_pmns_cp_orientation_parity_reduction_note_2026-04-20_hostile_audit_findings.py",
-  "title": "dm pmns cp orientation parity reduction note (2026-04-20 \u2014 Hostile Audit Findings",
+  "title": "CP-parity note: bounded documentary name inventory",
   "transitive_descendants": 0,
   "verdict_rationale": null
 }

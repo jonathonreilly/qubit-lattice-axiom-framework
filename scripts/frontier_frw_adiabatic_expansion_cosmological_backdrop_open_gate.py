@@ -22,6 +22,9 @@ to verify partition counts.
 
 from __future__ import annotations
 
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = ('docs/FRW_ADIABATIC_EXPANSION_COSMOLOGICAL_BACKDROP_OPEN_GATE_NOTE_2026-05-28.md',)
+
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -128,7 +131,7 @@ def part1_partition() -> tuple[set[str], set[str]]:
         "FRW kinematic reduction surface",
         "cosmology open-number reduction (two structural DoF at fixed R)",
         "N_eff = 3.046 (3 active + 0.046 textbook correction)",
-        "w_Lambda = -1 retained corollary",
+        "w_Lambda = -1 conditional constant-density corollary",
     }
     supplied_C123 = {
         "C1: cosmological principle (homogeneity + isotropy beyond S^3)",

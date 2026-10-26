@@ -3,7 +3,7 @@
 **Status:** bounded - bounded or caveated result note
 **Date:** 2026-04-20
 **Scope:** Each still-open import on the remaining flagship scalar-selector
-lanes (Koide θ, Koide κ, plus the supporting selected-line and bounded quark
+lanes (DM physical source/path/current selection, Koide θ, Koide κ, plus the supporting selected-line and bounded quark
 side lanes), with a specific statement of what
 derivation would close it from Cl(3)/Z³ framework ingredients alone. Items
 listed here are
@@ -43,72 +43,63 @@ physical Brannen-phase bridge by itself.
 | Koide relation `Q = 2/3` | κ, θ | executable Frobenius-isotype / AM-GM support package isolates the Koide point as the unique extremum of the supplied block-total functional, but the physical/source-law extremal-principle bridge remains open | derive why the physical charged-lepton packet must extremize the block-total Frobenius functional, or an equivalent accepted source law that forces the same point |
 | Brannen phase `δ = 2/9` on the physical base | θ | executable APS / ABSS support package isolates the exact ambient topological value `η = 2/9`, but the physical selected-line Brannen-phase bridge remains open | derive `δ_physical = η_APS`, equivalently an ambient one-clock `3+1` transport / endpoint / Wilson law whose selected-line pullback is the physical Brannen phase |
 | Selected-line witness ratio `w/v ≈ 4.101` | m_* (selected-line point) | conditionally pinned by the exact selected-line scalar-phase bridge once the physical Brannen phase is fixed; still open because the Brannen-phase bridge is open | the same physical Brannen-phase bridge that closes `δ = 2/9`, or an equivalent ambient endpoint law that fixes the selected-line point directly |
+| DM physical source, path and current/value selection | DM/PMNS | finite supplied matrix, endpoint, packet and shift diagnostics; no physical basin or all-shift selection theorem | derive the physical source and normalization, justify the continuous nonsingular path, and supply the finer right-sensitive microscopic point-selection law fixing physical current values |
 
-## §0a Closed in cycle 2
+## §0a Historical closeouts and current DM boundaries
 
 - **Selected-line provenance closed.** `H_sel(m) = H(m, √6/3, √6/3)` is now traced exactly to the
   retained parity-compatible observable-selector chain in
   `docs/KOIDE_SELECTED_LINE_PROVENANCE_NOTE_2026-04-20.md`.
-- **Chamber bound closed.** The chamber bound `q_+ + δ ≥ √(8/3)` now has a one-step
-  reviewer-grade inline derivation in
-  `docs/DM_ABCC_CHAMBER_BOUND_DERIVATION_NOTE_2026-04-20.md`.
+- **Conditional chamber bound.** The inequality `q_+ + δ ≥ √(8/3)`
+  requires the supplied chamber convention; it does not derive that physical
+  chamber. See `docs/DM_ABCC_CHAMBER_BOUND_DERIVATION_NOTE_2026-04-20.md`.
 - **MRU demotion closed.** The SO(2)-quotient is **not**
   retained-derived from the observable principle; MRU is now supplementary
   only. The spectrum/operator row is abstract Fourier algebra and the
   block-total row is supplied-functional support; neither supplies the open
   physical carrier and scalar-measure selector. See
   `docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md`.
-- **Basin enumeration completeness closed.** Basin enumeration completeness is now certified in
-  `archive_unlanded/dm-abcc-finite-search-salvage-2026-04-30/DM_ABCC_BASIN_ENUMERATION_COMPLETENESS_THEOREM_NOTE_2026-04-20.md`.
-  The corrected full χ²=0 chart is five basins
-  `{Basin 1, Basin N, Basin P, Basin 2, Basin X}`; the active-chamber chart is
-  `{Basin 1, Basin 2, Basin X}`.
-- **Hierarchy-permutation ambiguity closed.** The `σ_hier = (2,1,0)` ambiguity is now closed without
-  importing the T2K sign preference. The active-chamber support stack from
-  `docs/DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_THEOREM_NOTE_2026-04-20.md`,
-  `docs/DM_PMNS_CP_ORIENTATION_PARITY_REDUCTION_NOTE_2026-04-20.md`,
-  `docs/DM_PMNS_UPPER_OCTANT_SOURCE_CUBIC_SELECTOR_THEOREM_NOTE_2026-04-20.md`,
-  and the authoritative closeout
-  `docs/DM_SIGMA_HIER_UPPER_OCTANT_SELECTOR_THEOREM_NOTE_2026-04-20.md`
-  proves that among the two `9/9`-magnitude-passing permutations only
-  `(2,1,0)` satisfies the exact chamber upper-octant law, and the negative
-  PMNS CP sign follows as a consequence. The current proof chain is
-  packaged in `docs/DM_SIGMA_HIER_CLOSURE_PACKET_NOTE_2026-04-20.md`.
+- **Finite basin and hierarchy diagnostics.** The supplied five-row bank
+  `{Basin 1, Basin N, Basin P, Basin 2, Basin X}` and its supplied active
+  chamber subset `{Basin 1, Basin 2, Basin X}` are finite input data, not a
+  certified complete census. Basin N/P remain counterexamples to discarding
+  the chamber premise. Chamber/DPLE and upper-octant/source-cubic comparisons
+  condition on their target and selector inputs; they do not derive a physical
+  basin or hierarchy from the sole axiom. Historical enumeration is preserved
+  at `archive_unlanded/dm-abcc-finite-search-salvage-2026-04-30/DM_ABCC_BASIN_ENUMERATION_COMPLETENESS_THEOREM_NOTE_2026-04-20.md`.
+  The current conditional premises are recorded in
+  `docs/DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_THEOREM_NOTE_2026-04-20.md`
+  and `docs/DM_PMNS_UPPER_OCTANT_SOURCE_CUBIC_SELECTOR_THEOREM_NOTE_2026-04-20.md`.
 - **Quark provenance surfaces closed.** The quark lane now
   states its retained bimodule and atom provenance inline in the reviewer
   package and headline theorem surfaces: `docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md`,
   `docs/QUARK_JTS_AFFINE_PHYSICAL_CARRIER_THEOREM_NOTE_2026-04-19.md`, and
   `docs/SCALAR_SELECTOR_PROOF_CHAINS_2026-04-19.md`.
-- **Residual split-2 carrier dominance/completeness closed.** The prior
-  carrier-side reduction had already localized the remaining split-2 pressure
-  to the two explicit upper-face neighborhoods `CAP_BOX` and `ENDPOINT_BOX`.
-  The new interval-certified theorem closes those whole boxes by Weyl
-  eigenvalue control, exact cofactor projector-row intervals, and boxwise
-  transport upper bounds `eta / eta_obs < 1` throughout. See
-  `docs/DM_SPLIT2_INTERVAL_CERTIFIED_DOMINANCE_CLOSURE_THEOREM_NOTE_2026-04-21.md`.
-- **Recovered-packet selector residue closed on the package surface.** The same
-  exact scalar observable-relative-action law now closes the current recovered
-  selector packet after transport to the common positive windows
-  `A_mu(H)=H+mu I`: on the recovered bank, the preferred lift `0` is the
-  unique minimizer across the full audited shift family and a dense admissible
-  stress range, and it is exactly the unique recovered point with
-  `Im(K_Z3[1,2]) > 0`. See
-  `docs/DM_SELECTOR_SHIFTED_RELATIVE_ACTION_RECOVERED_PACKET_CLOSURE_THEOREM_NOTE_2026-04-21.md`.
-- **Stricter/native DM last mile closed.** The same-day graph-first
-  ordered-chain theorem first lands one explicit sole-axiom nonzero-current
-  law on the retained `hw=1` response family,
-  `A_ord = diag(1,2,3) + (E12 + E23 + E31)` with `J_chi = 1`. The affine
-  current-coordinate sharpening then shows that on the physical affine
-  Hermitian chart the native current reads only
-  `J_chi(H) = q_+ - i/4`, isolating the remaining real
-  `delta / Im(K_Z3[1,2])` direction exactly. The later ordered-chain
-  graded-current closure theorem adds the exact companion current
-  `J_N(H) = J_chi(i[N,H])` with `N = diag(1,2,3)` and closes that remaining
-  scalar exactly on the retained `hw=1` response family. See
-  `docs/DM_PMNS_GRAPH_FIRST_ORDERED_CHAIN_NONZERO_CURRENT_ACTIVATION_THEOREM_NOTE_2026-04-21.md`,
+- **Split-2 certificate withdrawn; conditional algebra retained.** The old
+  fixed-slack generator justification was wrong. The corrected generator norm,
+  conditional Weyl bound and Hermitian simple-spectrum cofactor identities are
+  established by the [conditional algebra owner](SPLIT2_CONDITIONAL_GENERATOR_COFACTOR_ALGEBRA_NOTE_2026-10-23.md).
+  That owner does not certify the historical numerical estimates. Outward
+  enclosures, kernel extrema/error control and residual localization remain open;
+  neither whole-box transport dominance nor physical selector closure follows.
+- **Finite recovered-packet selector diagnostic.** With the supplied scalar
+  observable-relative-action functional and common windows `A_mu(H)=H+mu I`,
+  lift `0` is preferred on the tested recovered bank and sampled shifts.
+  This is neither an all-shift proof nor physical point selection. See
+  [independent supplied-bank finite diagnostic](DM_SELECTOR_SUPPLIED_BANK_SEED_RELATIVE_ACTION_FINITE_DIAGNOSTIC_NOTE_2026-10-23.md).
+  The older recovered-packet note remains consumer provenance, not authority for this comparison.
+- **Conditional current coordinates; physical values open.** Choosing
+  `A_ord = N + C`, `N = diag(1,2,3)`, `C = E12 + E23 + E31` gives the checked
+  fixture current `J_chi = 1`. The family `N + alpha C` preserves grading
+  and support, so that coefficient is not uniquely derived. On the supplied
+  affine Hermitian chart `J_chi(H) = q_+ - i/4`; the graded companion
+  `J_N(H) = J_chi(i[N,H])` recovers another supplied coordinate. These
+  identities do not fix physical current values or close delta selection.
+  A finer right-sensitive microscopic point-selection law remains open.
+  See `docs/DM_PMNS_GRAPH_FIRST_ORDERED_CHAIN_NONZERO_CURRENT_ACTIVATION_THEOREM_NOTE_2026-04-21.md`,
   `docs/DM_PMNS_AFFINE_CURRENT_COORDINATE_REDUCTION_THEOREM_NOTE_2026-04-21.md`,
-  and
-  `docs/DM_PMNS_ORDERED_CHAIN_GRADED_CURRENT_DELTA_CLOSURE_THEOREM_NOTE_2026-04-21.md`.
+  and `docs/DM_PMNS_ORDERED_CHAIN_GRADED_CURRENT_DELTA_CLOSURE_THEOREM_NOTE_2026-04-21.md`.
+
 
 ## §1 Priority ordering for closure
 
@@ -327,28 +318,32 @@ Nature-grade statement for this cycle is:
 > value `η = 2/9` but still leaves open the physical Brannen-phase bridge, (iii) an exact
 > exact abstract equivalence of the Fourier and coordinate polynomial zero
 > loci, without a physical spectrum/operator or mass readout,
-> (iv) a Sylvester-inertia reduction of A-BCC, now closed on the retained
-> measurement framework via a multi-observable sigma-chain that combines
-> retained Cl(3)/Z³ theorems with the PMNS
-> angle-triple pin, now sharpened by an exact fixed-`N_e` source-manifold
-> theorem showing the target already lies on a regular `2`-real source
-> manifold together with a center-law positive-sheet no-go showing that the
-> current `delta_db = 1`, `q_+ = 0`, `I_src > 0` proposal is still
-> insufficient, and (v) a linear-algebra derivation of the up-sector
+> (iv) a conditional Sylvester-inertia implication for continuous Hermitian
+> paths, with physical path nonsingularity and source/current selection still
+> open; finite endpoint checks do not derive a physical PNS law. Seeded center
+> searches report separated numerical representatives and sampled Jacobian ranks
+> under supplied constraints; they certify neither exact roots, neighborhood
+> dimension, global exhaustion nor a physical selector obstruction. The older
+> fixed-`N_e` exact-manifold claim still requires checked exact-root/rank premises.
+> (v) a linear-algebra derivation of the up-sector
 > quark closure on the retained `1⊕5` bimodule and CKM-atlas atom package,
 > whose provenance is now surfaced inline on the package surface. Each retained
 > observational input or structural postulate still blocking native closure is
 > listed in the Remaining-Open-Imports register along with the derivation that
 > would close it.
 
-The cycle-2 housekeeping imports are now closed, but the package surface still
-has three live frontier items: the Koide extremal-principle bridge, the
-physical Brannen-phase bridge, and the PMNS angle-triple point-selection law.
+The DM physical source, normalization, path nonsingularity and current/value
+selection obligations remain open alongside the Koide extremal-principle and
+physical Brannen-phase bridges. The PMNS angle triple is an input to the
+finite diagnostics, not a derived point-selection law.
 
 ## §3 Reproduction of the current conditional diagnostic state
 
-All runners currently pass. For each of the four Tier-1 lanes the principal
-diagnostic runner and its verification counts are:
+This is a historical runner inventory. Counts below record the older
+executions and are not current source-bound receipts or physical closure
+certificates. In particular, the former measurement 15-PASS cascade is
+superseded by the repaired finite endpoint diagnostic; its historical code
+and counterevidence remain recoverable. Unrelated lane entries are unchanged.
 
 | Lane | Primary runner | PASS | Notes |
 |---|---|---|---|
@@ -357,20 +352,20 @@ diagnostic runner and its verification counts are:
 | Koide θ (Berry identification on selected line) | `frontier_koide_berry_phase_theorem.py` | 24 | ambient-S² calculation § + selected-line CP¹ § + natural-selector no-go § |
 | Koide θ (scalar-phase bridge) | `frontier_koide_selected_line_cyclic_response_bridge.py` | 20 | `κ_sel(δ)` exact identity |
 | Koide θ (Brannen reduction route) | `frontier_koide_brannen_phase_reduction_theorem.py` | 16 | reduces `δ` to `Q/d`; physical-base load-bearing step sharpened as `P` |
-| DM A-BCC (chamber ∩ DPLE) | `frontier_dm_abcc_chamber_dple_closure.py` | 39 | chamber bound + discriminant sign |
-| DM A-BCC (Sylvester signature-forcing) | `frontier_dm_abcc_signature_forcing_theorem.py` | 54 | path-independent via IVT + det sign |
-| DM A-BCC (PMNS Non-Singularity conditional) | `frontier_dm_abcc_pmns_nonsingularity_theorem.py` | 38 | conditional closure |
-| DM A-BCC (sigma-chain attack cascade) | `frontier_dm_pns_attack_cascade.py` | 47 | multi-observable chain |
-| DM A-BCC (retained measurement closure) | `frontier_dm_abcc_retained_measurement_closure_2026_04_21.py` | 15 | integration theorem; package-surface closure grade |
-| DM A-BCC (assumptions audit) | `frontier_dm_abcc_assumptions_audit.py` | 21 | five-route structural no-go |
-| DM A-BCC (corrected five-basin chamber ∩ DPLE) | `frontier_dm_abcc_five_basin_chamber_dple_support_2026_04_21.py` | 24 | Basin 2 fails `F_4`; corrected native chamber+DPLE route still selects Basin 1 |
-| DM A-BCC (active-chamber completeness) | `frontier_dm_pmns_chamber_spectral_completeness_theorem_2026_04_20.py` | 11 | exact chamber `χ²=0` set = `{Basin 1, Basin 2, Basin X}` |
-| DM A-BCC (`σ_hier` upper-octant selector) | `frontier_dm_sigma_hier_upper_octant_selector_theorem_2026_04_20.py` | 14 | closes the hierarchy-permutation ambiguity without importing T2K sign |
-| DM A-BCC (upper-octant / source-cubic selector) | `frontier_dm_pmns_upper_octant_source_cubic_selector_theorem_2026_04_20.py` | 14 | fixes Basin 1 uniquely on the active chamber |
-| DM A-BCC (local-family no-go) | `frontier_dm_pmns_local_selector_family_no_go_theorem_2026_04_20.py` | 15 | reduces the remaining PMNS gate to nonlocal point-selection / angle triple only |
-| DM A-BCC (fixed-`N_e` exact-source manifold) | `frontier_dm_pmns_ne_seed_surface_exact_source_manifold_theorem_2026_04_20.py` | 12 | shows the physical PMNS target already lies on a regular local `2`-real source manifold |
-| DM A-BCC (center-law positive-sheet no-go) | `frontier_dm_pmns_z3_doublet_block_center_positive_sheet_no_go_2026_04_20.py` | 14 | shows `delta_db = 1`, `q_+ = 0`, `I_src > 0` still leaves a positive-sheet `3`-real locus |
-| DM split-2 interval-certified dominance closure | `frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.py` | 17 | certifies `eta / eta_obs < 1` on the full `CAP_BOX` and `ENDPOINT_BOX` residual neighborhoods |
+| DM A-BCC (chamber ∩ DPLE) | `frontier_dm_abcc_chamber_dple_closure.py` | historical 39 | Historical supplied-model diagnostic; no physical basin/path/current closure. |
+| DM A-BCC (Sylvester signature-forcing) | `frontier_dm_abcc_signature_forcing_theorem.py` | historical 54 | Historical supplied-model diagnostic; no physical basin/path/current closure. |
+| DM A-BCC (PMNS Non-Singularity conditional) | `frontier_dm_abcc_pmns_nonsingularity_theorem.py` | historical 38 | Historical supplied-model diagnostic; no physical basin/path/current closure. |
+| DM A-BCC (sigma-chain attack cascade) | `frontier_dm_pns_attack_cascade.py` | historical 47 | Historical supplied-model diagnostic; no physical basin/path/current closure. |
+| DM A-BCC (finite endpoint diagnostic) | `frontier_dm_abcc_retained_measurement_closure_2026_04_21.py` | historical 15 | Historical supplied-model diagnostic; no physical basin/path/current closure. |
+| DM A-BCC (assumptions audit) | `frontier_dm_abcc_assumptions_audit.py` | historical 21 | Historical supplied-model diagnostic; no physical basin/path/current closure. |
+| DM A-BCC (corrected five-basin chamber ∩ DPLE) | `frontier_dm_abcc_five_basin_chamber_dple_support_2026_04_21.py` | historical 24 | Historical supplied-model diagnostic; no physical basin/path/current closure. |
+| DM A-BCC (supplied chamber bank) | `frontier_dm_pmns_chamber_spectral_completeness_theorem_2026_04_20.py` | historical 11 | Historical supplied-model diagnostic; no physical basin/path/current closure. |
+| DM A-BCC (`σ_hier` upper-octant selector) | `frontier_dm_sigma_hier_upper_octant_selector_theorem_2026_04_20.py` | historical 14 | Historical supplied-model diagnostic; no physical basin/path/current closure. |
+| DM A-BCC (upper-octant / source-cubic selector) | `frontier_dm_pmns_upper_octant_source_cubic_selector_theorem_2026_04_20.py` | historical 14 | Historical supplied-model diagnostic; no physical basin/path/current closure. |
+| DM supplied-line finite search | `frontier_dm_pmns_supplied_line_finite_search_diagnostic_2026_04_20.py` | 15 finite checks | located numerical candidates and five supplied point residuals; no exhaustive line exclusion or physical selector conclusion |
+| DM A-BCC (fixed-`N_e` exact-source manifold) | `frontier_dm_pmns_ne_seed_surface_exact_source_manifold_theorem_2026_04_20.py` | historical 12 | Historical exact-manifold claim; exact-root and rank hypotheses remain unverified here, and no physical point-selection law is certified. |
+| DM A-BCC (finite center-search diagnostic) | `frontier_dm_pmns_z3_doublet_block_center_positive_sheet_no_go_2026_04_20.py` | historical 14 | Historical 14-check count only. Current finite seeded residual/range/rank observations do not certify exact roots, a three-real locus, global exhaustion or physical selector obstruction. |
+| DM split-2 conditional generator/cofactor algebra | `split2_conditional_generator_cofactor_algebra.py` | separate algebra checks | Former numerical certificate withdrawn; failed17-test regression and raw capture preserved in `archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/DISPOSITION.json`. No box-wide or physical closure. |
 | DM selector relative-action recovered projection | `frontier_dm_selector_relative_action_recovered_projection_support_2026_04_21.py` | 12 | unique nearest recovered image is lift `0` across the audited projection packet and agrees with `tau_b,min` |
 | Quark a_u (JTS-affine-physical-carrier + ISSR1) | `frontier_quark_issr1_bicac_forcing.py` | 13 | headline closure |
 | Quark a_u (JTS physical-point second route) | `frontier_quark_jts_physical_point_closure_theorem.py` | 12 | independent witness |
@@ -379,11 +374,15 @@ diagnostic runner and its verification counts are:
 | Quark a_u (RPSR NLO) | `frontier_quark_up_amplitude_rpsr_conditional.py` | 9 | delivers full physical target `a_u = 0.7748865611` |
 | g_bare two-Ward closure (supporting) | `frontier_g_bare_two_ward_closure.py` | 18 | `g_bare = 1` |
 
-No single runner has hardcoded `check("...", True, ...)` PASSes after the
-cleanup pass. Every PASS is a numeric or symbolic verification of the stated
-claim.
+PASS counts include documentary contracts and finite numerical checks; they
+do not establish physical premise selection or independent proof. Current
+reproduction requires the actual source-bound per-runner receipts.
 
-## Audit dependency repair links
+## Historical audit dependency repair links
+
+The dated bookkeeping below is preserved as history. The current DM additions
+in §§0–3 supersede its old inventory scope; they do not apply an audit verdict.
+
 
 This graph-bookkeeping section records the explicit upstream authority
 candidates that the load-bearing open-import register cites, in

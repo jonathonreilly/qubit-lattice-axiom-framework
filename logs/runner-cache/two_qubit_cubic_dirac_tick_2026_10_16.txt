@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/two_qubit_cubic_dirac_tick_2026_10_16.py
-runner_sha256: d05b3a951137ea776103e7d85c9d52747aa6b48fd2e570aee46a9313320ee6f4
-input_fingerprint_sha256: 361f874cbcd53e604de252665c901e8b14807585430446fd51f2d4bdd7260064
-timeout_sec: 600
+runner_sha256: eae923511a4a2f7591defe7252bd3c70cac3816c137694fe2287c534e0f0ccee
+input_fingerprint_sha256: 4163bf6a9254571466ae710769f16d13d209e0e19ed0e57e098ddcf5023a8504
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 42.13
+elapsed_sec: 16.93
 status: ok
 ----- stdout -----
 PASS tau1(x)1, tau2(x)1, tau3(x)sigma_a are five anticommuting Hermitian involutions
@@ -44,7 +44,7 @@ PASS sextic coefficient of |k|^2 sum k^4 in omega^2 is y(b) = -s (20 b0^3 + ... 
 PASS on the isotropy plane: alpha = -s^2 (1 - s^2)/12, x = s^2 (4 s^4 - 5 s^2 + 2)/360, y = -s^2/360 (depend on s only)
 PASS |k|^6, |k|^2 sum k^4 and k1^2 k2^2 k3^2 are linearly independent, so y != 0 is a genuine k^6 anisotropy for every moving isotropic member
 PASS [numerical] 3862 PSD samples of the isotropic curve: speeds fill [0.011, sqrt(2/3)] (largest gap 9.5e-03), never above
-PASS [numerical] factorised walk is unitary to 1e-12 on 2000 random momenta (max error 1.3e-15)
+PASS [numerical] factorised walk is unitary to 1e-12 on 2000 random momenta (max error 2.7e-15)
 PASS [numerical] F(0) = (1,0,0): U(0) = 1, a massless point at k = 0
 PASS [numerical] all seven doublers are gapped (quasienergy gaps 2.196..2.308 rad)
 PASS [numerical] on a 40^3 grid the bands touch only at k = 0

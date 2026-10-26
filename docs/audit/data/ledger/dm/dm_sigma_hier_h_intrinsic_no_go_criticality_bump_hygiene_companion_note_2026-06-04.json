@@ -16,16 +16,13 @@
   "claim_scope": null,
   "claim_type": "meta",
   "claim_type_author_hint": "meta",
-  "claim_type_author_hint_raw": "meta (audit-companion / criticality-readiness evidence)",
+  "claim_type_author_hint_raw": "meta",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
-  "deps": [
-    "key_terminology",
-    "dm_sigma_hier_h_intrinsic_no_go_theorem_note_2026-04-20"
-  ],
+  "deps": [],
   "direct_in_degree": 0,
   "effective_status": "meta",
   "effective_status_reason": "metadata",
@@ -37,7 +34,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "ad70d0959167bf7a58d5501a9c1f9a8ad28fa0928eebf547d55666ef43568b0d",
+  "note_hash": "18ccaadcb75852a2ac151938470fef1da561dcfb102e2fde8f01d2c9407ce27e",
   "note_path": "docs/DM_SIGMA_HIER_H_INTRINSIC_NO_GO_CRITICALITY_BUMP_HYGIENE_COMPANION_NOTE_2026-06-04.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -51,8 +48,8 @@
     "D": 0,
     "total_pass": 0
   },
-  "runner_path": "scripts/audit_companion_dm_sigma_hier_h_intrinsic_no_go_criticality_hygiene_2026_06_04.py",
-  "title": "DM Sigma-Hier H-Intrinsic No-Go Criticality-Bump Hygiene Companion",
+  "runner_path": null,
+  "title": "Historical H-intrinsic hygiene snapshot",
   "transitive_descendants": 0,
   "verdict_rationale": null
 }

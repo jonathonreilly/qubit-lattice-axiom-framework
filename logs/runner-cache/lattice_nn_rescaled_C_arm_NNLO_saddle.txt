@@ -1,15 +1,17 @@
 ===== runner cache v1 =====
 runner: scripts/lattice_nn_rescaled_C_arm_NNLO_saddle.py
-runner_sha256: 3d5a1755e19d5c5d2fc207afbaa2901e9722cff733d85dbe67dc75cd82a42319
-timeout_sec: 600
+runner_sha256: 889a851f7fa778dd6a515cc67477c3c8d8f5e685108b5163cdcf3fe37c4c36d6
+timeout_sec: 60
 exit_code: 0
-elapsed_sec: 0.38
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 ==============================================================================
-NNLO SADDLE CORRECTION FOR C_arm IN THE RESCALED NN HARNESS
+LINEARIZED BULK AND SEPARATE APERTURE q^2 COMPARISON FOR C_arm
 ==============================================================================
 
+Bulk terms are linearized; same-order quadratic q^4 is omitted.
+Aperture q^2 is a separate comparator, not a complete NNLO result.
 Frozen harness parameters:
   BETA      = 0.8
   k         = 5.0
@@ -48,7 +50,7 @@ Frozen harness parameters:
   These coefficients are reported for the analytic record.
 
 ------------------------------------------------------------------------------
-2) q^6 SADDLE NNLO  (kurtosis-of-cumulants correction)
+2) LINEARIZED BULK q^4/q^6 (quadratic q^4 omitted)
 ------------------------------------------------------------------------------
            h      sig0^2         dV_q4         dV_q6   |dV_q6|/sig^2
      0.50000    4.190809  +3.854076e-02  +1.940103e-05     4.6294e-04%
@@ -59,10 +61,10 @@ Frozen harness parameters:
      0.01562    0.096556  +1.191791e-05  +2.365191e-09     2.4496e-06%
 
   Verdict: q^6 saddle contributes < 1e-3 of sigma^2 throughout the
-  fit window -- sub-leading by ~1000x to the slit-aperture correction.
+  fit window; quadratic q^4 of the same order in h is omitted.
 
 ------------------------------------------------------------------------------
-3) FINITE-SLIT-APERTURE NNLO  (complex-Gaussian truncated convolution)
+3) SEPARATE APERTURE q^2 GAUSSIAN (truncated convolution)
 ------------------------------------------------------------------------------
   psi_det(y) propto exp(-y^2/(4 alpha_total)) * [erf(u_b(y)) - erf(u_a(y))]
   alpha_pre  = L_1 s h,  alpha_post = L_2 s h,  alpha_total = alpha_pre + alpha_post
@@ -71,42 +73,42 @@ Frozen harness parameters:
   SLIT_Y_a = 3.0, SLIT_Y_b = 5.0 (aperture [3, 5])
 
   Per-h moments (from 1D quadrature of |psi_det|^2):
-           h    mu_meas    mu_NNLO   sig_meas   sig_NNLO    res_NNLO   res_NLO_only
+           h    mu_meas   mu_apert   sig_meas  sig_apert   res_apert   res_NLO_only
      0.25000     3.3168     3.4302     1.3198     1.3171     -0.205%        -2.339%
      0.12500     3.1701     3.2268     0.8990     0.8996     +0.063%        -1.365%
      0.06250     3.0895     3.1191     0.6282     0.6281     -0.020%        -0.862%
      0.03125     3.0467     3.0616     0.4416     0.4417     +0.023%        -0.446%
-     0.01562     3.0239     3.0581     0.3115     0.2884     -7.407%        -0.246%
+     0.01562     3.0239     3.0315     0.3115     0.3115     +0.004%        -0.246%
 
   Max |residual| on 4-point fit window (h in (0.25, 0.125, 0.0625, 0.03125)): 0.205%
 
-  Note: at h = 0.015625, the slit y = 3 lies deep in the saddle tail
-  (exp(-y^2 * 2 Re(1/(4 alpha_total))) ~ 1e-46 at h = 0.0156), and the
-  closed-form Gaussian approximation underpredicts the true amplitude
-  sourced by ballistic non-Gaussian lattice terms.  This is OUTSIDE
-  the alpha fit window and reported for completeness.
+  The finer point is outside the unchanged four-point fit window.
+  Stable erfc differences give sigma=0.3115126 at h=0.015625.
+  The earlier 0.2884 was cancellation, not a physical saddle failure.
+  Direct aperture integration checks this numerical repair; no
+  universal small-h or physical lattice-equivalence claim follows.
 
 ------------------------------------------------------------------------------
-4) ALPHA_NNLO_EFF AND ACCEPTANCE VERDICT
+4) SEPARATE MODEL FITS AND FINITE-WINDOW COMPARISON
 ------------------------------------------------------------------------------
   Model                     alpha_eff   C_eff    |alpha - 0.5256|
   LO     (C_arm support)    0.5000      2.4855   0.0256
   NLO    (phase note)       0.5165      2.6186   0.0091
-  NNLO_q (phase + q^4+q^6)  0.5170      2.6234   0.0086
-  NNLO_full (+ aperture)    0.5247      2.7041   0.0009  <-- this note
+  Linear bulk q^4+q^6       0.5170      2.6234   0.0086
+  Aperture q^2 model        0.5247      2.7041   0.0009  <-- this note
   EMPIRICAL  (continuum)    0.5256      2.7107   --
 
   Local alpha at h_geom = sqrt(0.25 * 0.03125) = 0.08839:
     LO          : alpha_local = 0.5000
     NLO (phase) : alpha_local = 0.5090
-    NNLO (full) : alpha_local = 0.5175
+    Aperture q^2: alpha_local = 0.5175
 
-  alpha_NNLO_eff = 0.5247
+  alpha_aperture = 0.5247
   alpha_emp      = 0.5256
   Residual gap   = 0.0009
 
-  BOUNDED THEOREM: |alpha_NNLO - 0.5256| <= 0.005 on the fit window.
-  The slit-aperture NNLO correction closes the alpha residual inside
+  BOUNDED THEOREM: |alpha_aperture - 0.5256| <= 0.005 on the fit window.
+  The separate aperture q^2 comparator meets the residual band inside
   the scoped empirical comparison, without changing upstream authority.
 
 ------------------------------------------------------------------------------
@@ -114,9 +116,9 @@ BOUNDED-SUPPORT GUARDS
 ------------------------------------------------------------------------------
     PASS: delta_a(h) > 0 on fit window
     PASS: Phase series h^2 + h^4 + h^6 matches exact to 1e-5 at h <= 0.25
-    PASS: |alpha_NNLO - 0.5256| <= 0.005 (strong-closure band)
-    PASS: alpha_NNLO_full > alpha_NLO (improvement)
-    PASS: alpha_NNLO_full <= 0.5256 (no overshoot)
+    PASS: |alpha_aperture - 0.5256| <= 0.005 (strong-closure band)
+    PASS: alpha_aperture > alpha_NLO (improvement)
+    PASS: alpha_aperture <= 0.5256 (no overshoot)
     PASS: Max |sigma residual| on fit window <= 1.0%
     PASS: q^6 saddle term sub-leading (|dV_q6|/sigma^2 < 1e-2 on window)
     PASS: finer measured h row is within 1% of LO C_LO

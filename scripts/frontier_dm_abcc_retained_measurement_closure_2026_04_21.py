@@ -1,22 +1,15 @@
 #!/usr/bin/env python3
-"""
-DM A-BCC retained measurement closure theorem.
+"""Supplied A-BCC basin endpoint diagnostics.
 
-This is an integration runner for the review branch. It does not claim a new
-axiom-native A-BCC derivation from Cl(3)/Z^3 alone. Its job is narrower:
-
-  - execute the already-landed theorem stack that fixes the physical basin on
-    the retained measurement surface,
-  - verify that the physical source is Basin 1, that Basin 1 lies in C_base,
-    and that the C_neg basins do not,
-  - promote A-BCC from "live review-surface blocker" to "closed on the
-    retained measurement framework".
-
-The stricter pure-algebraic / axiom-native A-BCC target remains outside this
-closure grade and is not asserted here.
+Historical seven-runner integration machinery is preserved but not executed
+by default. Endpoint inertia/continuity implications require a supplied
+nonsingular path; no physical basin selection or PNS closure is established.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ['docs/DM_ABCC_RETAINED_MEASUREMENT_CLOSURE_THEOREM_NOTE_2026-04-21.md']
 
 import math
 import re
@@ -29,7 +22,6 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "scripts"
 
-AUDIT_TIMEOUT_SEC = 600
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -120,74 +112,32 @@ def h_of(point: tuple[float, float, float]) -> np.ndarray:
 
 
 def main() -> int:
-    print("DM A-BCC retained measurement closure theorem")
-    print("=" * 72)
-
-    print("\nPart 1: Execute the retained theorem stack")
-    dependency_outputs: dict[str, str] = {}
-    for label, script_name in DEPENDENCIES:
-        _, output = run_dependency(label, script_name)
-        dependency_outputs[script_name] = output
-
-    print("\nPart 2: Direct basin-level endpoint checks")
-    for name, point, expect_positive in [
-        ("Basin 1", BASIN_1, True),
-        ("Basin 2", BASIN_2, False),
-        ("Basin X", BASIN_X, False),
+    base_eig = np.linalg.eigvalsh(H_BASE)
+    base_inertia = (int(np.sum(base_eig > 0)), int(np.sum(base_eig < 0)))
+    check("supplied baseline is Hermitian", np.array_equal(H_BASE,H_BASE.conj().T))
+    check("supplied baseline inertia is (1,2)", base_inertia == (1,2), str(base_eig))
+    for name, point, expected_inertia in [
+        ("Basin 1", BASIN_1, (1,2)),
+        ("Basin 2", BASIN_2, (2,1)),
+        ("Basin X", BASIN_X, (2,1)),
     ]:
-        det_val = float(np.real(np.linalg.det(h_of(point))))
-        chamber_val = point[1] + point[2]
-        if name == "Basin 1":
-            check(
-                "Basin 1 satisfies the retained chamber bound",
-                chamber_val > E1,
-                f"q+delta={chamber_val:.12f}, sqrt(8/3)={E1:.12f}",
-            )
+        H = h_of(point)
+        eig = np.linalg.eigvalsh(H)
+        det = np.linalg.det(H)
+        inertia = (int(np.sum(eig > 0)), int(np.sum(eig < 0)))
+        check(name+" supplied endpoint Hermitian", np.array_equal(H,H.conj().T))
+        check(name+" finite eigenvalues separated from zero", np.all(np.isfinite(eig)) and min(abs(eig)) > 1e-6, str(eig))
+        check(name+" determinant agrees with spectral product", abs(det-np.prod(eig)) < 1e-9*max(1,abs(det)), str(det))
+        check(name+" supplied endpoint inertia", inertia == expected_inertia, str(inertia))
+        det_val = float(np.real(det))
+        expect_positive = name == "Basin 1"
         sign_ok = det_val > 0 if expect_positive else det_val < 0
-        sign_text = "C_base" if expect_positive else "C_neg"
-        check(
-            f"{name} endpoint lies in {sign_text}",
-            sign_ok,
-            f"det={det_val:.12f}",
-        )
-
-    print("\nPart 3: Integration consequences")
-    pns_output = dependency_outputs["frontier_dm_pns_attack_cascade.py"]
-    check(
-        "sigma-chain runner explicitly derives PNS from the retained measurement framework",
-        "PNS is derivable from the retained measurement framework" in pns_output,
-    )
-    check(
-        "sigma-chain runner explicitly closes the basin-selection gate",
-        "A-BCC closes the DM flagship basin-selection gate" in pns_output,
-    )
-
-    sig_output = dependency_outputs["frontier_dm_abcc_signature_forcing_theorem.py"]
-    check(
-        "signature-forcing runner records the reduction A-BCC <- PNS + Sylvester inertia",
-        "A-BCC <- PNS + Sylvester inertia" in sig_output,
-    )
-
-    nonsing_output = dependency_outputs["frontier_dm_abcc_pmns_nonsingularity_theorem.py"]
-    check(
-        "nonsingularity runner confirms all C_neg basins violate PNS",
-        "All C_neg basins violate PNS" in nonsing_output,
-    )
-
-    print("\nPart 4: Closure-grade statement")
-    print("  [summary] A-BCC is closed on the retained measurement framework.")
-    print("  [summary] The stricter axiom-native A-BCC target remains outside this closure grade.")
-    print("  [summary] The only live DM blocker on the review surface is the finer right-sensitive microscopic selector law.")
-
-    print("\n" + "=" * 72)
+        check(name+" supplied endpoint determinant sign diagnostic", sign_ok, str(det_val))
+        if name == "Basin 1":
+            check("Basin 1 supplied chamber inequality", point[1]+point[2] > E1)
+    print("Finite decimal endpoint checks only. Equal inertia does not select a physical source or certify the specified affine path.")
     print(f"TOTAL: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
-    if FAIL_COUNT == 0:
-        print("STATUS: ALL PASS — retained-measurement A-BCC closure verified")
-    else:
-        print("STATUS: FAILURES — see above")
-    print("=" * 72)
     return 0 if FAIL_COUNT == 0 else 1
-
 
 if __name__ == "__main__":
     raise SystemExit(main())

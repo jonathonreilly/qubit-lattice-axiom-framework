@@ -19,14 +19,16 @@ retained derivation lands.
 ## 2026-04-27 Dependency Firewall
 
 The [Hubble Lane 5 two-gate dependency firewall](../../HUBBLE_LANE5_TWO_GATE_DEPENDENCY_FIREWALL_NOTE_2026-04-27.md)
-records the current no-go boundary for this lane. The late-time structural
+records a conditional parameter-family boundary for this lane. The late-time structural
 lock reduces the numerical surface to `H_0 = H_inf / sqrt(L)`, but it does
 not supply both the absolute scale and dimensionless cosmic-history input.
 
-The firewall blocks any numerical `H_0` closure unless a branch supplies both
-`(C1)` absolute-scale information and one of `{(C2), (C3)}` for the
-dimensionless cosmic-history or cosmic-`L` gate. Either side alone leaves a
-one-parameter family.
+For the reviewed separated-input route, `(C1)` supplies absolute-scale
+information and one of `{(C2), (C3)}` supplies `L`. Fixing only one
+independently free input leaves a one-parameter family. This is not an
+exhaustive physical route theorem: a joint relation such as
+`H_inf = k sqrt(L)` would fix `H_0=k` without separately fixing `L`.
+No derivation of that hypothetical relation or its dimensional `k` is supplied.
 
 ## 2026-04-29 `(C1)` Carrier/Metrology Boundary Packet
 
@@ -61,16 +63,10 @@ Plus the now-landed structural question:
 - "Where does the matter content Ω_m come from internally?"
 - "Why is Ω_Λ ≈ 0.69 today specifically?"
 
-**The current package commits exactly to ΛCDM at late times** (w = -1 retained,
-Λ structural identity, no modified gravity at cosmological scales). This is a
-genuine prediction — it rules out late-time tension-resolution proposals. But
-it's not the same as predicting H_0 from first principles.
-
-The Hubble-tension structural-lock theorem now makes the late-time stance
-explicit: on the retained `w_Lambda = -1` plus admitted flat-FRW surface,
-late-time `H_0(z)` running is forbidden. A genuine Hubble tension must be
-early-time physics or measurement/systematics, not a late-time dark-energy or
-modified-gravity fix inside the current surface.
+The current EOS comparison supplies constant density and flat FRW rather
+than deriving a physical radius selection. Its structural lock is conditional:
+a reconstructed H_0 variation tests the combined model and measurement
+assumptions. It does not exclude late-time dark-energy or gravity alternatives.
 
 The framework also has substantial recent structural-identity landings:
 R_base = 31/9, FRW kinematic reduction, matter-radiation equality, N_eff
@@ -82,8 +78,8 @@ support, neutrino observable bounds, single-ratio inverse reconstruction
 
 ### Retained
 
-- Λ = 3/R_Λ² spectral-gap structural identity
-- w = -1 dark-energy EOS exactly
+- Conditional comparison Λ = 3/R_Λ² after supplying the radius identification
+- Conditional w = -1 from positive constant density and conservation
 - m_g² = 6ℏ²/(c²R²) graviton mass structural identity
 - DM relic ratio R = Ω_DM/Ω_b = 5.48 (exact group theory, 0.2% match)
 - DM exact-target PMNS package CLOSED
@@ -140,18 +136,16 @@ ago.
 H_0² = (8πG/3) × (ρ_Λ + ρ_m + ρ_r) = H_inf² / Ω_Λ = H_inf² / (1 - Ω_m - Ω_r)
 ```
 
-where Λ = 3·H_inf²/c² is retained, ρ_r is determined by T_CMB (still external)
+where Λ = 3·H_inf²/c² is supplied on the conditional vacuum model, ρ_r is determined by T_CMB (still external)
 or by retained N_eff + photon-temperature relation, and Ω_m comes from 5A.
 
 **Approachability:** Tier A-B. Automatic chain once 5A lands.
 
 ### 5C. Hubble tension explicit stance
 
-**Target:** retain a paper-grade statement on the framework's commitment to
-LambdaCDM at late times, with the implication that any genuine H_0 tension
-must arise from pre-recombination physics (early dark energy, modified
-recombination, extra relativistic species before CMB release) or
-measurement/systematics — not from late-time modifications.
+**Target:** test the supplied constant-density flat-FRW model with consistent
+late-time reconstruction. No framework exclusion of late-time alternatives is
+established by this conditional identity.
 
 **Current disposition:** landed as
 [HUBBLE_TENSION_STRUCTURAL_LOCK_THEOREM_NOTE_2026-04-26.md](../../HUBBLE_TENSION_STRUCTURAL_LOCK_THEOREM_NOTE_2026-04-26.md),
@@ -229,8 +223,8 @@ this lane.
   initial scope (it remains an external input for cosmology rows).
 - This lane does NOT address inflation in initial scope (deferred to 5E).
 - This lane does NOT propose to resolve the Hubble tension by fitting either
-  end (67.4 vs 73). It commits to LambdaCDM at late times structurally and
-  leaves any genuine tension to early-time physics or measurement/systematics.
+  end (67.4 vs 73). It tests a supplied LambdaCDM model and does not establish an exclusive
+  early-time/systematics explanation.
 - This lane does NOT address dark-energy detection or modified-gravity
   alternatives.
 
@@ -239,7 +233,7 @@ this lane.
 - Depends on: 5 recent cosmology structural identities (already retained)
 - Connects to: Lane 4 (Σm_ν cosmological constraint)
 - Independent of: Lanes 1, 2, 3 in primary closure path
-- Predicts: an early-time-only resolution of any genuine Hubble tension
+- Tests: conditional consistency of the supplied late-time FRW model
 
 ## 8. Reviewer questions
 

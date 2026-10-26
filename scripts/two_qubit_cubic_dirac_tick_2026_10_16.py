@@ -26,7 +26,7 @@ import sys
 import numpy as np
 import sympy as sp
 
-AUDIT_TIMEOUT_SEC = 600
+AUDIT_TIMEOUT_SEC = 120
 AUDIT_INPUT_PATHS = (
     'docs/TWO_QUBIT_SITE_UNFREEZES_THE_CUBIC_TICK_DOUBLER_FREE_DIRAC_WALK_BOUNDED_THEOREM_NOTE_2026-10-16.md',
     '.claude/science/review-fixes/review-drain-20261016/CUBIC_TICK_SCOPE.md',

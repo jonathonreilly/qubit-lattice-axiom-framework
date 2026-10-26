@@ -1,18 +1,72 @@
-# SU(3) NLO Convention C-iso Closure — Bounded Theorem Note
+# SU(3) single-plaquette coefficient diagnostics and unresolved derivation
 
-**Date:** 2026-05-08
-**Claim type:** bounded_theorem
-**Sub-gate:** W3 (Convention C-iso) — SU(3) NLO single-plaquette
-**Status authority:** independent audit lane only; effective status is
-pipeline-derived.
-**Source-note proposal disclaimer:** this note is a source-note proposal;
-audit verdict and downstream status are set only by the independent
-audit lane.
+**Claim type:** open_gate
+**Primary runner:** `scripts/cl3_c_iso_su3_nlo_2026_05_08_su3nlo.py`
+**Current scope:** finite numerical quadrature/fit diagnostics and conditional arithmetic on supplied coefficients. The asserted analytic Wilson coefficient derivation and Hamilton-limit error bound remain unverified here.
 
-**Primary runner:** [`scripts/cl3_c_iso_su3_nlo_2026_05_08_su3nlo.py`](../scripts/cl3_c_iso_su3_nlo_2026_05_08_su3nlo.py)
-**Cached output:** [`logs/runner-cache/cl3_c_iso_su3_nlo_2026_05_08_su3nlo.txt`](../logs/runner-cache/cl3_c_iso_su3_nlo_2026_05_08_su3nlo.txt)
-**Numerical results:** [`outputs/action_first_principles_2026_05_08/c_iso_su3_nlo_closure/RESULTS.md`](../outputs/action_first_principles_2026_05_08/c_iso_su3_nlo_closure/RESULTS.md)
-**Analytic derivation:** [`outputs/action_first_principles_2026_05_08/c_iso_su3_nlo_closure/SU3_NLO_DERIVATION.md`](../outputs/action_first_principles_2026_05_08/c_iso_su3_nlo_closure/SU3_NLO_DERIVATION.md)
+## Current evidence boundary (2026-10-21)
+
+The two historically cited artifacts are absent from this checkout:
+
+- `outputs/action_first_principles_2026_05_08/c_iso_su3_nlo_closure/RESULTS.md`
+- `outputs/action_first_principles_2026_05_08/c_iso_su3_nlo_closure/SU3_NLO_DERIVATION.md`
+
+These are unavailable provenance paths, not working citations or recovered proofs.
+The second was explicitly load-bearing for the claimed Vandermonde-Gaussian
+moment derivation and cancellation `<Q W_1>_0 = 0`. This note does not now
+assert that derivation as verified. No archived document has been substituted.
+The runner evaluates a finite truncated-grid Weyl integral and fits coefficients;
+a tolerance check on that fit is numerical support, not an exact asymptotic
+proof or a certified quadrature/remainder bound. Its computations and thresholds
+are preserved. A successful process does not discharge these open obligations.
+
+For clarity, `P` in these single-plaquette formulas is the action deficit
+`1 - Re Tr(U)/3`, not the trace-plaquette mean used as the historical Hamilton
+scenario input. Supply the normalized SU(3) heat-kernel character expectation
+`E[Re Tr(U)/3] = exp(-4s/3)` and the Wilson-series hypothesis
+`P_W(β) = 4/β - 1/β² + c_3/β³ + O(β^-4)`, with `β = 3/s`.
+Then the following conditional algebra is retained:
+
+```
+P_HK = 1 - exp(-4s/3) = 4s/3 - 8s²/9 + 32s³/81 + O(s⁴)
+P_W = 4s/3 - s²/9 + c_3 s³/27 + O(s⁴)
+P_W - P_HK = 7s²/9 + O(s³)
+(P_W - P_HK)/P_HK = 7s/12 + O(s²)
+(7/12)/(1/4) = 7/3
+```
+
+The Wilson coefficient `-1`, the series hypotheses and controlled remainders
+are obligations here, not conclusions of the finite fit. The supplied
+`c_3 = -4.33` is a historical numerical fit value, not an exact coefficient.
+This conditional calculation alone does not transfer a one-plaquette discrepancy
+to a multiplaquette Hamilton observable.
+
+The corrected [epsilon-witness note](EXACT_TIER_EWITNESS_BOUNDED_NOTE_2026-05-07_ewitness.md)
+reports that the preserved fast JSON has 400 measurement sweeps and
+`0.4434036474783343 ± 0.00042693896349384414` at finite `4³×16`, ξ=4.
+It does not establish the old `0.4410 ± 0.0006` thermodynamic-limit value,
+1500-sweep/three-volume provenance or Hamilton-limit convergence.
+Path B and Path C still calculate historical supplied scenarios using that
+`0.4410`, statistical `0.0002`, volume `0.0006`, and the additional assumed
+transfer rule `absolute shift = relative single-plaquette shift × 0.4410`.
+Their tables, projected ξ≈430, and quadratic error combinations are conditional
+arithmetic, not validated physical error budgets. The old multi-ξ MC values
+`0.40949 ± 0.00050` and `0.28350 ± 0.00069` are preserved reports without
+recovered logs; their provenance and physical interpretation remain open.
+
+Needed before a stronger claim: recover or independently supply a checked
+Wilson asymptotic derivation and remainder control, validate quadrature error,
+recover the ensemble evidence, and justify the multiplaquette/limit transfer.
+No theorem or audit status is promoted by this correction.
+
+## Preserved historical argument — superseded scope
+
+The discussion below preserves the former formulas, numerical reports, admissions
+and references for diagnosis. Its words “derived”, “closure”, “bound”, “retained”,
+and “verified” do not state the current claim. In particular its exact Wilson
+coefficient derivation and Hamilton-limit conclusions are not current verified
+results. The current claim is the open gate above. Original recovery is
+`f24d17d97d372df977476e4a69674577f31af575:docs/C_ISO_SU3_NLO_CLOSURE_BOUNDED_NOTE_2026-05-08_su3nlo.md`.
 
 ## 0. Audit context
 

@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/split2_conditional_generator_cofactor_algebra.py
+runner_sha256: c800ba74ab991cb4488e8f3a847323c27ed4f3d7dd6ab2f5a20cd762310af42f
+input_fingerprint_sha256: 0a6b6efe2e73739b917ecb34c3b38c88f498f7d37f52d8b289784b9394882457
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.90
+status: ok
+----- stdout -----
+PASS supplied family is Hermitian for real coordinates
+PASS fixed-slack delta derivative equals T_DELTA-T_Q
+PASS T_M exact characteristic polynomial
+T_M polynomial = (x - 1)**2*(x + 1)
+PASS T_Q exact characteristic polynomial
+T_Q polynomial = (x - 2)*(x + 1)**2
+PASS fixed-slack generator exact characteristic polynomial
+fixed-slack generator polynomial = (x + 2)*(x**2 - 2*x - 2)
+PASS fixed-slack spectral norm is 1+sqrt(3)
+PASS principal cofactor 0 expansion
+PASS principal cofactor 1 expansion
+PASS principal cofactor 2 expansion
+PASS adjugate identity for the supplied polynomial matrix
+PASS CAP_BOX exact generator-sum radius
+CAP_BOX radius = sqrt(3)/200 + 7/400
+PASS ENDPOINT_BOX exact generator-sum radius
+ENDPOINT_BOX radius = 51*sqrt(3)/20000 + 201/20000
+Conditional algebra only: Hermitian simple-spectrum projectors and real nonnegative box half-widths.
+No floating enclosure, kernel extremum, numerical estimate, localization or physical selector is certified.
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

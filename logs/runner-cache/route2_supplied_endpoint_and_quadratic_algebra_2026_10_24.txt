@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/route2_supplied_endpoint_and_quadratic_algebra_2026_10_24.py
+runner_sha256: c599f5464e657e61df43047486d649a0ac96e1358db468063032f491dba4c76d
+input_fingerprint_sha256: 046258436ece77b7c6b18d66c36c3b181de360b2f407c87e00a1626ebb39bcf2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+PASS: supplied endpoint comparator values
+PASS: supplied c_TE and ratio
+PASS: inverse comparator transformations
+PASS: supplied matrix products match four columns
+PASS: three fixed outputs across finite candidates
+PASS: second output distinguishes finite candidates
+PASS: bounded integer monomial sweep :: [-2]
+PASS: conditional inverse-square normalization
+PASS: nonmonomial family matches supplied endpoints at t=-2
+PASS: nonmonomial family matches supplied endpoints at t=0
+PASS: nonmonomial family matches supplied endpoints at t=1
+PASS: nonmonomial family matches supplied endpoints at t=3/2
+PASS: positive nonmonomial witness differs away from endpoints
+PASS: positive lower bound for t=1 on endpoint interval
+PASS: expanded norm identity on supplied grid G=(Fraction(1, 1), Fraction(1, 1), Fraction(0, 1))
+PASS: expanded norm identity on supplied grid G=(Fraction(3, 1), Fraction(2, 1), Fraction(1, 1))
+PASS: expanded norm identity on supplied grid G=(Fraction(704, 1), Fraction(1449, 1), Fraction(0, 1))
+PASS: expanded norm identity on supplied grid G=(Fraction(1, 1), Fraction(3357, 3520), Fraction(3, 5))
+PASS: comparator residual coefficients
+PASS: diagonal positive metric ratio
+PASS: both signs solve diagonal equation
+PASS: two-positive-root example is SPD
+PASS: two-positive-root polynomial coefficients
+PASS: distinct positive roots satisfy equal norm
+PASS: bounded integer SPD search after mod16 reduction :: []
+PASS: explicit unrestricted SPD solution outside search box
+PASS: documentary scope only
+INFO: exact rational fixtures do not derive physical endpoints; no route-exhaustion claim.
+TOTAL: PASS=27 FAIL=0
+
+----- stderr -----
+

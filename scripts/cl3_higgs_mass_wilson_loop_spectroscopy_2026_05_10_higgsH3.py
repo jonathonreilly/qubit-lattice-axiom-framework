@@ -87,6 +87,9 @@ Final verdict prints:
 
 from __future__ import annotations
 
+# Actual note/source reads and required-source existence checks.
+AUDIT_INPUT_PATHS = ['docs/EXACT_TIER_EWITNESS_BOUNDED_NOTE_2026-05-07_ewitness.md', 'docs/EXACT_TIER_PATH_INTEGRAL_BOUNDED_NOTE_2026-05-07_exact.md', 'docs/CL3_SM_EMBEDDING_THEOREM.md', 'docs/WILSON_M_H_PER_CHANNEL_CLOSURE_BOUNDED_NOTE_2026-05-09.md', 'docs/HIGGS_MASS_FROM_AXIOM_NOTE.md', 'docs/MINIMAL_AXIOMS_2026-05-03.md', 'docs/COMPLETE_PREDICTION_CHAIN_2026_04_15.md', 'scripts/cl3_exact_tier_ewitness_2026_05_07_ewitness.py', 'scripts/canonical_plaquette_surface.py', 'docs/HIGGS_MASS_WILSON_LOOP_SPECTROSCOPY_BOUNDED_NOTE_2026-05-10_higgsH3.md', 'scripts/cl3_higgs_mass_wilson_loop_spectroscopy_2026_05_10_higgsH3.py']
+
 import argparse
 import math
 import re

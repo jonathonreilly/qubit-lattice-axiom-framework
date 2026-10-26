@@ -274,9 +274,12 @@ s^2 (8 s^4 - 5 s^2 + 2)/360. The runner's series for arccos(1 - u)^2 used 8u^3/4
 where the correct coefficient is 4/45. The corrected value is s^2 (4 s^4 - 5 s^2 + 2)/360,
 which is 1/1215 at b_iso (it was 1/243). The anisotropic -s^2/360, z, the order-k^4
 results and the conclusions of this theorem are unchanged. The runner now checks the
-series against sympy and the b_iso sextic against a direct 50-digit evaluation. Found
-in campaign block C7 and confirmed by its independent review:
-`.claude/science/physics-loops/toe-scale-ladder-20261018/blocks/C7/REVIEW.md`.
+series against sympy and the b_iso sextic against a direct 50-digit evaluation.
+The original correction was recorded in campaign block C7 of PR #9831
+(commit e294c1dc745dad0c95b4c8688efc6f3f0be03613). That unlanded campaign
+report is historical provenance, not independent authority for this correction.
+Direct coefficient reversion of cos(sqrt(w)) = 1 - u gives
+w = 2u + u^2/3 + 4u^3/45 + O(u^4).
 
 *Independent check.* A fresh agent context was given only the problem, not
 this note or its runner. It derived G(b), the massless band, alpha, beta and

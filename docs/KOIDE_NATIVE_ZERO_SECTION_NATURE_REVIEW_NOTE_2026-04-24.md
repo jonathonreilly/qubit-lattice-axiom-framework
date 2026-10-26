@@ -3,163 +3,61 @@ claim_id: koide_native_zero_section_nature_review_note_2026-04-24
 claim_type_author_hint: bounded_theorem
 ---
 
-# Koide native zero-section defined-route Nature review
+# Supplied native-zero algebra: consequences and child execution contract
 
 **Date:** 2026-04-24
-**Runner:** `scripts/frontier_koide_native_zero_section_nature_review.py`
-**Status:** passes as bounded defined-route support; fails as a retained physical
-Koide result
+**Type:** bounded_theorem
+**Primary runner:** `scripts/frontier_koide_native_zero_section_nature_review.py`
+**Status:** conditional finite consequences; historical physical claims withdrawn.
 
-## Review Question
+## Exact conditional content
 
-Does the native zero-section route supply exact bounded algebraic support while
-leaving the physical Koide result unclaimed?
+The [supplied finite algebra](KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md)
+proves on z≠±1 that Q=2/[3(1+z)] and K=−z/(1−z²). Choosing z=0 gives
+Q=2/3,K=0; choosing z=−1/3 instead gives Q=1,K=3/8. For probabilistic
+weights the premise is −1<z<1.
 
-## Verdict
+For the specified120-degree real rotation, the commutant is aI+bJ. Its
+idempotency equations imply only0,I. Every unit real rank-one projector
+has squared commutator norm3/2. These are complete finite-representation
+calculations, not a theorem selecting a physical spectator or readout.
 
-Yes as a defined-route algebra; no as a retained physical result. The repaired
-route proves the exact consequences of the defined zero-source, real
-`Z_3`-primitive, based endpoint object. It still requires three physical bridge
-theorems before it can be used as a physical Koide result:
+The supplied root-of-unity sum has two denominators3, so eta=2/9.
+Separately, the supplied affine F(phi)=phi+c with F(0)=0 gives c=0.
+Only after also supplying delta_open=selected*eta+c and selected=1 does
+the endpoint equal2/9. Spectator does not enter that formula. These premises
+cannot be silently replaced by the representation classification. The shifted
+fixture c=1/9 gives1/3, preserving the conditional boundary.
 
-1. the charged-lepton scalar readout is the zero-source coefficient;
-2. the Brannen endpoint is the whole real nontrivial `Z_3` primitive;
-3. the open determinant-line endpoint readout is unit-preserving/based.
+## Physical boundary and documentary observations
 
-## What Is New
+No physical charged-lepton zero-source readout, endpoint law, selected coefficient,
+Fourier phase, anomaly, dynamics or mass identification is derived. This is not
+an exhaustive list of all possible obligations. The old statements that the
+route was non-numerological, that all objections were identification theorems,
+and that the remaining physical tasks were exactly three are withdrawn.
 
-The route stops trying to select a rank-one line inside the nontrivial `Z3`
-sector. Instead it defines a bounded route object whose endpoint is the whole
-real nontrivial `Z3` primitive.
+The primary still reads the Brannen and geometry-Dirac texts. Their old
+real-plane, conjugate-pair and CP1 substrings are historical documentary
+observations only: neither presence nor absence proves physical compatibility.
+Both texts are explicitly bound as runtime inputs, but geometry-Dirac physics,
+Dirac dynamics and retained-source claims are not scientific premises here.
+The only proof edge is the supplied child note above. Historical verdict/True
+statements are unscored, with their original definitions preserved in recovery.
 
-That matters because the real primitive has no nontrivial equivariant
-idempotents:
+## One-child operational contract
 
-```text
-End_Z3(R^2_nontrivial) = {aI + bJ}
-J^2 = -I
-idempotents = 0, I.
-```
+This remains an executing ordinary owner, not a nonexecuting summary substitute.
+Its primary runs only the specified native-zero child, using the same interpreter
+and a120-second subprocess timeout inside a180-second review cap. It requires
+zero exit, the final16/16 mathematical summary, the supplied-law declaration,
+and the explicit no-physical-identification flag, inspecting stdout and stderr.
+Timeout/nonzero/missing-summary results fail. These checks establish a child
+execution contract, not independent scientific correctness or physical authority.
+No unrelated verification-list runner is invoked.
 
-So a native readout on this real primitive has:
-
-```text
-spectator = 0.
-```
-
-Then a unit-preserving determinant-line endpoint readout gives:
-
-```text
-c = 0.
-```
-
-Together with the finite `Z3` route scalar:
-
-```text
-eta_Z3 = 2/9
-```
-
-this gives:
-
-```text
-delta_open = 2/9.
-```
-
-The Q side is the defined native zero-source source-response route:
-
-```text
-z = 0 -> K_TL = 0 -> Q = 2/3.
-```
-
-## Why This Is Not Yet A Physical Koide Result
-
-The retained Brannen corpus contains both:
-
-```text
-real-plane / conjugate-pair geometry
-```
-
-and:
-
-```text
-selected-line / CP1 / rank-one language.
-```
-
-The defined route implies the values only if the second is a coordinate
-presentation of the first, not an extra physical rank-one selector.
-
-A hostile reviewer can still ask:
-
-```text
-why is the physical charged-lepton scalar the zero-source coefficient?
-```
-
-```text
-why is the physical Brannen endpoint the whole real primitive,
-not a rank-one CP1 line?
-```
-
-and:
-
-```text
-why is the open determinant endpoint readout unit-preserving/based,
-not an unbased torsor coordinate?
-```
-
-Those are now the exact physical bridge obligations.
-
-## Residual
-
-```text
-NEXT_NATIVE_THEOREM =
-  derive_zero_source_readout_Brannen_endpoint_as_real_Z3_primitive_and_unit_determinant_readout
-
-RESIDUAL_IDENTIFICATION_DELTA =
-  rank_one_CP1_language_vs_real_primitive_endpoint
-
-RESIDUAL_TRIVIALIZATION =
-  unit_preserving_open_determinant_line_readout
-
-RESIDUAL_SOURCE_READOUT =
-  zero_source_coefficient_vs_physical_charged_lepton_scalar
-```
-
-## Falsifiers
-
-- A retained proof that Brannen delta is intrinsically a rank-one CP1 line
-  rather than the real nontrivial `Z3` primitive.
-- A retained equivariant spectator projector on the real primitive.
-- A physical open endpoint observable that is necessarily an unbased torsor.
-- A native nonzero charged-lepton source that is not just the selector value in
-  source coordinates.
-
-## Verification
-
-Run:
-
-```bash
-python3 scripts/frontier_koide_native_zero_section_closure_route.py
-python3 scripts/frontier_koide_native_zero_section_nature_review.py
-python3 scripts/frontier_koide_hostile_review_guard.py
-python3 scripts/frontier_koide_lane_regression.py
-```
-
-Expected closeout:
-
-```text
-KOIDE_NATIVE_ZERO_SECTION_NATURE_REVIEW=PASS_AS_ROUTE
-KOIDE_NATIVE_ZERO_SECTION_RETAINED_CLOSURE=FALSE
-NATIVE_ROUTE_IMPLIES_VALUES_CONDITIONALLY=TRUE
-NATIVE_ROUTE_DEFINED_ALGEBRA=TRUE
-PHYSICAL_KOIDE_CLOSURE_CLAIMED=FALSE
-PHYSICAL_BRIDGE_IDENTIFICATIONS_CLAIMED=FALSE
-NEXT_NATIVE_THEOREM=derive_zero_source_readout_Brannen_endpoint_as_real_Z3_primitive_and_unit_determinant_readout
-```
-
-## Audit dependency repair links
-
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
-
-- [koide_native_zero_section_closure_route_note_2026-04-24](KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md)
-- [koide_brannen_geometry_dirac_support_note_2026-04-22](KOIDE_BRANNEN_GEOMETRY_DIRAC_SUPPORT_NOTE_2026-04-22.md)
-- [koide_brannen_phase_reduction_theorem_note_2026-04-20](KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20.md)
+The actual inputs are own note, child script, child note, Brannen note and
+geometry-Dirac note. The child additionally reads only its own note, already
+included. There are no imported repository helpers. Main resets state and returns
+nonzero on failed contracts or missing files. No captures accompany this source
+revision; the old cache is stale. Full original source/cache is recoverable.

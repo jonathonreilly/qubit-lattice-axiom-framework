@@ -18,6 +18,9 @@ No PDG values, no fitted selectors, no dial fixing, no audit verdicts.
 
 from __future__ import annotations
 
+# Cache identity includes actual note reads and existence checks.
+AUDIT_INPUT_PATHS = ['docs/COLOR_SU3_MATTER_REALIZATION_RESIDUAL_MAP_2026-06-05.md']
+
 from dataclasses import dataclass
 from math import comb
 from pathlib import Path

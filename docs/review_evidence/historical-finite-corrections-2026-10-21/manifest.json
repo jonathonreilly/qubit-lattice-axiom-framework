@@ -1,0 +1,9 @@
+{
+  "scope": "finite correction evidence; not historical physics certification",
+  "source_baseline": "f24d17d97d372df977476e4a69674577f31af575",
+  "files": {
+    "recompute.py": "c749011ea65e1c5e3d45d451b2c7e1ef73971e0f13a4e753d68f5b0753e8b0d0",
+    "results.json": "7e67fca65ee332c6dde5bbcdc801cac1cbcf3c2e60e4b089f40389b82a1c2f95"
+  },
+  "originals_preserved": true
+}

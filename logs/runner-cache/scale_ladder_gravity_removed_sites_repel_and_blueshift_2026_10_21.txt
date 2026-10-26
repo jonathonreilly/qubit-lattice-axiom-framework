@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/scale_ladder_gravity_removed_sites_repel_and_blueshift_2026_10_21.py
+runner_sha256: 53b2aca65de3f5686886704b4a435792a731e6f5aa14cd8cf09922436ab3d935
+input_fingerprint_sha256: 185bd30f18b7e939cadd90aff8388fba9b1c2ac484c7d7c76997d0af8712a493
+timeout_sec: 1500
+exit_code: 0
+elapsed_sec: 3.60
+status: ok
+----- stdout -----
+configuration: {"detection": "X>120", "dt": 0.25, "grid": [360, 200], "grounding_center": [60, 0], "grounding_radius": 20, "integrator": "velocity-first symplectic Euler", "mass_momentum_pairs": [[0.0, 0.5], [0.5, 0.95]], "packet_center": [-100, 26], "packet_seed": 5, "periodic": true, "probabilities": [0.005, 0.01, 0.02], "spectral_box": 61, "spectral_mass": 0.1, "spectral_outer_radius": 28, "spectral_seed": 9, "travel_parameter": 260, "widths": [14, 10]}
+configuration_sha256: 09ddde5ce00285259df468e78aa5aebf31da7128393ff79e48b2c0479c8a954d
+packet mass=0.0 probability=0.005 grounded_count=8 detected_fraction=0.884529071 centroid=24.434321496
+packet mass=0.0 probability=0.01 grounded_count=18 detected_fraction=0.801501569 centroid=30.452374129
+packet mass=0.0 probability=0.02 grounded_count=35 detected_fraction=0.759535194 centroid=34.965956633
+[PASS] mass 0.0: fixed transmitted u-squared centroid changes match independent rounded values  semidiscrete group speed 0.968912422; steps 1073; time 268.25; baseline detected fraction 0.978885470; baseline centroid 20.470154382; shifts [3.9641671145694843, 9.982219746821347, 14.495802251405383]
+[PASS] mass 0.0: finite detected fractions and supplied-scheme stability bound
+packet mass=0.5 probability=0.005 grounded_count=8 detected_fraction=0.876414014 centroid=29.689054516
+packet mass=0.5 probability=0.01 grounded_count=18 detected_fraction=0.852080821 centroid=31.454652303
+packet mass=0.5 probability=0.02 grounded_count=35 detected_fraction=0.760022624 centroid=34.839500722
+[PASS] mass 0.5: fixed transmitted u-squared centroid changes match independent rounded values  semidiscrete group speed 0.780316584; steps 1332; time 333.0; baseline detected fraction 0.963000681; baseline centroid 25.826064477; shifts [3.862990038502158, 5.628587825545104, 9.013436244874555]
+[PASS] mass 0.5: finite detected fractions and supplied-scheme stability bound
+spectral probability=0.0 live_count=2449 grounded_inside_count=0
+spectral probability=0.005 live_count=2448 grounded_inside_count=1
+spectral probability=0.01 live_count=2441 grounded_inside_count=8
+spectral probability=0.02 live_count=2432 grounded_inside_count=17
+[PASS] fixed grounded-disk relative frequencies match independent rounded values  eigenvalues [0.007218192594437973, 0.009311124573861575, 0.01614237736740539, 0.02863949747668398]; baseline frequency 0.131218111; mass 0.1; relative changes [0.05903424 0.23219306 0.49803498]
+[PASS] nested fixed masks have nondecreasing lowest eigenvalues
+[PASS] three-path grounding differs from incident-edge deletion  grounded [1. 1.]; induced deletion [0. 0.]
+per_site: zero amplitude is Dirichlet grounding with unchanged parent diagonal, not incident-edge deletion.
+per_block: all geometry, initial data, seeds, masses, time stepping and readouts are supplied fixed model inputs.
+lattice_wide: the finite diagnostics assign no force, physical clock, matter density or gravitational mechanism.
+elapsed_seconds 3.5
+
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

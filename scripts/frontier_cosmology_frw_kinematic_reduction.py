@@ -5,11 +5,11 @@ FRW late-time kinematic reduction theorem verification.
 Verifies the five structural identities (K1-K5) in
   docs/COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md
 
-The runner establishes that on the retained w = -1 + flat FRW + standard
+The runner establishes that on the supplied w = -1 + flat FRW + standard
 matter/radiation/Lambda equation-of-state surface, four additional late-time
-FRW kinematic observables (q_0, z_*, z_{m-Lambda}, H_infinity) are structural
-functions of the SAME single open number H_inf/H_0 identified by the retained
-Omega_Lambda matter-bridge theorem.
+dimensionless FRW quantities (q_0, z_*, z_{m-Lambda}, H_infinity/H_0)
+are functions of H_inf/H_0 at fixed supplied radiation fraction.
+Dimensional H_inf and H(a) additionally require H_0; the ratio does not fix it.
 
 K1: q_0       = (1/2)(1 + Omega_r0 - 3 Omega_Lambda0)
 K2: a_* is the unique positive root of
@@ -20,7 +20,7 @@ K3: 1 + z_mL  = (Omega_Lambda0 / Omega_m0)^(1/3)
 K4: a(t) ~ exp(H_inf t) as t -> infinity                  [asymptotic de Sitter]
 K5: H(t) >= H_inf for all t >= 0                          [Hubble lower bound]
 
-Authorities consumed (retained on main):
+Conditional sources consumed (no inherited physical closure):
   - COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md  (Lambda = 3/R^2)
   - DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md           (w = -1)
   - OMEGA_LAMBDA_MATTER_BRIDGE_THEOREM_NOTE_2026-04-22.md        (Omega_L = (H_inf/H_0)^2)
@@ -30,6 +30,9 @@ numbers below are post-derivation comparators only.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = ['docs/COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md', 'docs/DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md', 'docs/OMEGA_LAMBDA_MATTER_BRIDGE_THEOREM_NOTE_2026-04-22.md']
 
 import math
 import sys
@@ -110,11 +113,11 @@ C_LIGHT = 2.99792458e8    # m/s
 # --------------------------------------------------------------------------
 
 def part0_retained_inputs() -> None:
-    banner("Part 0: retained inputs")
+    banner("Part 0: supplied conditional inputs")
 
-    print("  Retained/admitted surface:")
+    print("  Supplied flat-FRW constant-density surface:")
     print("    Lambda = 3 / R_Lambda^2                 (spectral-gap identity)")
-    print("    w_Lambda = -1                           (retained corollary)")
+    print("    w_Lambda = -1                           (conditional corollary)")
     print("    Omega_Lambda_0 = (H_inf / H_0)^2        (matter-bridge theorem)")
     print("    Omega_total = 1                         (flatness)")
     print("    w_matter = 0, w_radiation = 1/3         (standard)")
@@ -125,12 +128,12 @@ def part0_retained_inputs() -> None:
     omega_note = read_text("docs/OMEGA_LAMBDA_MATTER_BRIDGE_THEOREM_NOTE_2026-04-22.md")
 
     check(
-        "spectral-gap Lambda identity authority exists on main",
+        "conditional comparison-radius identity appears in source",
         "Lambda_vac = lambda_1(S^3_R)" in lambda_note and "3/R^2" in lambda_note,
         "COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md",
     )
     check(
-        "dark-energy EOS w = -1 authority exists on main",
+        "conditional dark-energy EOS w = -1 statement present",
         "w = -1" in eos_note and "(w_0, w_a) = (-1, 0)" in eos_note,
         "DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md",
     )
@@ -140,7 +143,7 @@ def part0_retained_inputs() -> None:
         and "H_0" in omega_note
     )
     check(
-        "Omega_Lambda matter-bridge authority exists on main",
+        "conditional matter-bridge identity appears in source",
         has_omega_bridge,
         "OMEGA_LAMBDA_MATTER_BRIDGE_THEOREM_NOTE_2026-04-22.md",
     )
@@ -442,9 +445,9 @@ def part6_k5_hubble_lower_bound() -> None:
 # --------------------------------------------------------------------------
 
 def part7_joint_reduction() -> None:
-    banner("Part 7: joint reduction of 6 cosmology observables to H_inf/H_0")
+    banner("Part 7: joint reduction of 6 dimensionless quantities at fixed radiation fraction")
 
-    # Parameterize everything by x = H_inf/H_0
+    # Parameterize dimensionless quantities at fixed radiation fraction by x = H_inf/H_0
     def observables_from_x(x: float, om_r: float) -> dict:
         om_L = x * x
         om_m = 1.0 - om_L - om_r
@@ -494,19 +497,19 @@ def part7_joint_reduction() -> None:
 
     # Counting: 6 cosmology late-time observables derived from x plus the small radiation density.
     print()
-    print("  SIX cosmology observables derived structurally from the single")
+    print("  SIX dimensionless quantities at fixed radiation fraction from the")
     print("  open number x = H_inf/H_0:")
     print("    1. Omega_Lambda,0 = x^2               (retained matter-bridge)")
     print("    2. Omega_m,0     = 1 - x^2 - Omega_r  (flatness)")
     print("    3. q_0           = (1 + Omega_r - 3x^2) / 2   (new K1)")
     print("    4. z_*           = positive root of K2 quartic (new K2)")
     print("    5. z_mL          = (x^2 / Omega_m)^(1/3) - 1  (new K3)")
-    print("    6. H_inf         = x * H_0                    (K4 attractor)")
+    print("    6. H_inf/H_0     = x                          (K4 normalized attractor)")
     reduced_keys = {"omega_L", "omega_m", "q0", "z_star", "z_mL", "H_inf_over_H0"}
     check(
         "reduction package extends matter-bridge from 3 observables to 6",
         reduced_keys.issubset(obs_vals.keys()) and len(reduced_keys) == 6,
-        "Omega_L, Omega_m, q_0, z_*, z_mL, H_inf all functions of x alone",
+        "Omega_L, Omega_m, q_0, z_*, z_mL, H_inf/H_0 are functions of x at fixed R",
     )
 
 
@@ -519,7 +522,7 @@ def part8_falsifiability() -> None:
 
     print("  The K-identities are JOINT identities. Any inconsistent measurement")
     print("  pair (e.g. q_0 inconsistent with z_* under the same Omega_L) falsifies")
-    print("  the retained w = -1 + flat FRW surface.")
+    print("  the supplied w = -1 + flat FRW surface.")
     print()
     print("  Falsification channels:")
     print("    - DESI/Euclid joint (Omega_L, q_0) > 3 sigma off K1 => falsifies")
@@ -556,7 +559,7 @@ def part8_falsifiability() -> None:
 def part9_summary() -> None:
     banner("Part 9: summary")
 
-    print("  FIVE STRUCTURAL IDENTITIES LANDED (K1-K5) on retained w = -1 + flat FRW:")
+    print("  FIVE STRUCTURAL IDENTITIES LANDED (K1-K5) on supplied w = -1 + flat FRW:")
     print()
     print("    K1: q_0       = (1/2)(1 + Omega_r - 3 Omega_L)              [exact]")
     print("    K2: q(a_*)=0 gives a positive quartic root                  [exact]")
@@ -565,8 +568,8 @@ def part9_summary() -> None:
     print("    K4: a(t) ~ exp(H_inf t) as t -> inf                         [asymptotic]")
     print("    K5: H(t) >= H_inf for all t >= 0                            [Hubble lower bound]")
     print()
-    print("  REDUCTION: six late-time cosmology observables (Omega_L, Omega_m, q_0, z_*,")
-    print("    z_mL, H_inf) reduce to the SAME single open number H_inf/H_0.")
+    print("  REDUCTION at fixed R: six dimensionless quantities (Omega_L, Omega_m, q_0, z_*,")
+    print("    z_mL, H_inf/H_0) reduce to x. Dimensional H_inf and H(a) also require H_0.")
     print()
     print("  COMPARATOR CHECKS (after inserting listed Omega_L = 0.685):")
     print(f"    q_0    framework -0.528  vs SN Ia -0.55 +/- 0.05  [1-sigma match]")

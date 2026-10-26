@@ -253,8 +253,228 @@ def memoized_discovery(repo, graph, cache, packet):
             setattr(module, name, original)
 
 
+def exact_fields(value, fields, label):
+    require(isinstance(value, dict) and set(value) == set(fields),
+            f'{label}: exact fields required')
+
+
+def schema3_shape(record):
+    exact_fields(record['source'], ('base', 'commit', 'tree', 'paths', 'deleted_paths'), 'source')
+    exact_fields(record['inputs'], CATEGORIES, 'inputs')
+    exact_fields(record['reviewer'], ('session', 'report', 'references'), 'reviewer')
+    for rows in [record['source']['paths'], *record['inputs'].values()]:
+        require(isinstance(rows, list), 'explicit file bindings required')
+        for row in rows:
+            exact_fields(row, ('path', 'sha256'), 'file binding')
+    for item in record['constituents']:
+        exact_fields(item, ('id', 'head', 'delta_base', 'dispositions'), 'constituent')
+        exact_fields(item['dispositions'], ('path', 'sha256', 'json_pointer'), 'dispositions reference')
+    for ref in [record['reviewer']['report'], *record['reviewer']['references']]:
+        exact_fields(ref, ('path', 'sha256'), 'evidence reference')
+    for note in record['notes']:
+        exact_fields(note, ('path', 'claim_id', 'declared_claim_id', 'claim_type', 'primary_runner',
+                            'helpers', 'citations', 'repository_dependencies', 'dependency_rationale'), 'canonical note')
+    for item in record['non_science_notes']:
+        exact_fields(item, ('path', 'rationale', 'review_reference'), 'non-science disposition')
+        exact_fields(item['review_reference'], ('path', 'sha256'), 'non-science reference')
+    for item in record['supporting_proofs']:
+        exact_fields(item, ('path', 'canonical_note', 'citations', 'rationale', 'review_reference'), 'supporting proof')
+        exact_fields(item['review_reference'], ('path', 'sha256'), 'supporting proof reference')
+
+
+def summary_owner_bindings(repo, cache, normal, bound):
+    paths = {normal['path'], normal['primary_runner']} | set(normal['helpers']) | set(normal['citations'])
+    for runner in {normal['primary_runner']} | set(normal['helpers']):
+        paths.update(cache.declared_input_paths(runner) or ())
+    paths.add(cache.cache_path_for(normal['primary_runner']).relative_to(repo).as_posix())
+    require(paths <= bound.keys(), 'summary owner closure must be fully bound')
+    return [{'path': path, 'sha256': bound[path]} for path in sorted(paths)]
+
+
+def summary_interval(data, spec, label):
+    exact_fields(spec, ('start', 'end', 'sha256'), label)
+    start, end = spec['start'], spec['end']
+    require(type(start) is int and type(end) is int and 0 <= start <= end <= len(data),
+            f'{label}: invalid UTF-8 byte bounds')
+    try:
+        data[:start].decode('utf-8')
+        data[start:end].decode('utf-8')
+        data[end:].decode('utf-8')
+    except UnicodeDecodeError as error:
+        raise ValueError(f'{label}: split UTF-8 boundary') from error
+    require(digest(data[start:end]) == spec['sha256'], f'{label}: slice hash mismatch')
+    return start, end
+
+
+def reconstruct_summary(old, new, edits):
+    require(isinstance(edits, list) and edits, 'explicit nonempty summary edits required')
+    old_end = new_end = 0
+    old_start = new_start = -1
+    reconstructed = bytearray()
+    for edit in edits:
+        exact_fields(edit, ('old', 'new', 'old_context', 'new_context',
+                            'canonical_notes', 'rationale'), 'summary edit')
+        a, b = summary_interval(old, edit['old'], 'old')
+        c, d = summary_interval(new, edit['new'], 'new')
+        oa, ob = summary_interval(old, edit['old_context'], 'old context')
+        na, nb = summary_interval(new, edit['new_context'], 'new context')
+        require(a >= old_end and c >= new_end and a > old_start and c > new_start,
+                'overlapping/duplicate/unordered summary edits')
+        require(oa <= a <= b <= ob and na <= c <= d <= nb and oa < ob and na < nb,
+                'reviewed enclosing context required')
+        require(old[a:b] != new[c:d], 'empty/no-op summary edit')
+        require(old[old_end:a] == new[new_end:c], 'uncovered summary edit')
+        reconstructed += old[old_end:a] + new[c:d]
+        old_start, new_start, old_end, new_end = a, c, b, d
+    reconstructed += old[old_end:]
+    require(bytes(reconstructed) == new and old[old_end:] == new[new_end:],
+            'uncovered trailing summary edit')
+
+
+def summary_metadata(graph, body, relative):
+    # Preserve the complete frontmatter and all explicit authority/runner lines,
+    # including unknown spellings. Do not delete metadata to fit this role.
+    source_lines = body.splitlines(keepends=True)
+    frontmatter = None
+    if source_lines and source_lines[0].rstrip('\r\n') == '---':
+        require(source_lines[0] in ('---\n', '---\r\n'),
+                'malformed summary frontmatter opener')
+        end = next((i for i, line in enumerate(source_lines[1:], 1)
+                    if line.rstrip('\r\n') == '---'), None)
+        require(end is not None, 'unclosed summary frontmatter')
+        require(source_lines[end] in ('---', '---\n', '---\r\n'),
+                'malformed summary frontmatter delimiter')
+        frontmatter = ''.join(source_lines[:end + 1])
+    lines = tuple(line for line in body.splitlines() if
+                  graph.RUNNER_LABEL_RE.search(line) or
+                  re.match(r'^\s*(?:\*\*)?(?:claim[_ ]?id|claim[_ ]?type|type|status(?:[_ ]authority)?|authority|runner|primary[_ ]?runner)(?:\*\*)?\s*:', line, re.I))
+    return (frontmatter, lines, graph.extract_claim_type_hint(body),
+            graph.extract_runner(body, relative))
+
+
+def structured_confirmation(ref, refs):
+    exact_fields(ref, ('path', 'sha256', 'json_pointer'), 'summary confirmation reference')
+    value = pointer(read_json(evidence(ref)), ref['json_pointer'])
+    refs.append(ref)
+    return value
+
+
+def require_acyclic_summary_authority(edges, start, summaries):
+    active, complete = set(), set()
+    def visit(node):
+        require(node not in summaries, 'circular summary authority')
+        require(node not in active, 'cyclic canonical summary authority')
+        if node in complete or node not in edges:
+            return
+        active.add(node)
+        for dependency in edges[node]:
+            visit(dependency)
+        active.remove(node)
+        complete.add(node)
+    visit(start)
+
+
+def check_summary_corrections(repo, record, graph, cache, bound, all_notes, ids,
+                              notes_by_path, classified, runner_affected, changed,
+                              require_cache):
+    summaries = record.get('summary_corrections', [])
+    paths, results, refs = set(), [], []
+    if summaries:
+        require(require_cache, 'summary corrections require cache verification')
+    for item in summaries:
+        exact_fields(item, ('path', 'base_sha256', 'current_sha256',
+                            'review_reference', 'edits'), 'summary correction')
+        name = item['path']
+        require(name in bound and name in changed and name not in classified | paths,
+                'unbound/unchanged/duplicate summary role')
+        path = repo_file(repo, name)
+        require(path in all_notes, 'summary must be discovered Markdown')
+        cid = graph.claim_id_from_path(path)
+        require(len(ids.get(cid, [])) == 1, 'ambiguous summary claim ID')
+        require(name not in runner_affected,
+                'runner/input-affected summary requires normal canonical coverage')
+        # source.base is a checked commit; show must find this exact existing blob.
+        old_entry = git(repo, 'ls-tree', record['source']['base'], '--', name).split()
+        new_entry = git(repo, 'ls-tree', record['source']['tree'], '--', name).split()
+        require(len(old_entry) >= 3 and len(new_entry) >= 3 and
+                old_entry[0] in (b'100644', b'100755') and old_entry[:2] == new_entry[:2],
+                'summary requires existing regular file with unchanged mode')
+        old = git(repo, 'show', record['source']['base'] + ':' + name)
+        new = path.read_bytes()
+        require(digest(old) == item['base_sha256'] and
+                digest(new) == item['current_sha256'] == bound[name],
+                'summary whole-file hash mismatch')
+        relative = path.relative_to(repo / 'docs').as_posix()
+        require(summary_metadata(graph, old.decode('utf-8'), relative) ==
+                summary_metadata(graph, new.decode('utf-8'), relative),
+                'summary metadata changed; normal canonical review required')
+        reconstruct_summary(old, new, item['edits'])
+        for edit in item['edits']:
+            require(isinstance(edit['rationale'], str) and edit['rationale'].strip(),
+                    'summary assertion rationale required')
+            owners = edit['canonical_notes']
+            require(isinstance(owners, list) and owners, 'summary canonical owners required')
+            owner_paths = set()
+            for owner in owners:
+                exact_fields(owner, ('path', 'claim_id', 'scope', 'review_reference'), 'summary owner')
+                target = owner['path']
+                require(target in notes_by_path and target not in owner_paths,
+                        'summary owner must be a unique normal canonical note')
+                owner_paths.add(target)
+                normal = notes_by_path[target]
+                require(owner['claim_id'] == normal['claim_id'], 'summary owner claim ID mismatch')
+                require(isinstance(owner['scope'], str) and owner['scope'].strip(),
+                        'summary owner scope required')
+                confirmation = structured_confirmation(owner['review_reference'], refs)
+                expected = {'decision': 'confirmed', 'path': target,
+                            'claim_id': owner['claim_id'], 'source_sha256': bound[target],
+                            'scope': owner['scope'],
+                            'bindings': summary_owner_bindings(repo, cache, normal, bound)}
+                require(confirmation == expected, 'summary owner confirmation mismatch or held authority')
+                # No authority back-edge through scientific dependencies or
+                # declared runner inputs, including transitive canonical parents.
+                dependency_edges = {}
+                for current, checked in notes_by_path.items():
+                    parent = next(n for n in record['notes'] if n['path'] == current)
+                    dependencies = set(parent['repository_dependencies'])
+                    for runner in {checked['primary_runner']} | set(checked['helpers']):
+                        dependencies.update(cache.declared_input_paths(runner) or ())
+                    # A primary commonly pins its own note. That provenance
+                    # self-input is not a premise edge; an explicit self-premise is.
+                    if current not in parent['repository_dependencies']:
+                        dependencies.discard(current)
+                    dependency_edges[current] = dependencies
+                require_acyclic_summary_authority(dependency_edges, target,
+                                                   {s['path'] for s in summaries})
+                for runner in (normal['primary_runner'],):
+                    require(cache.cache_status(runner) == 'fresh', f'summary owner cache not fresh: {runner}')
+                    cache_path = cache.cache_path_for(runner).relative_to(repo).as_posix()
+                    require(cache_path in bound, f'summary owner cache bytes not bound: {cache_path}')
+        confirmation = structured_confirmation(item['review_reference'], refs)
+        exact_fields(confirmation, ('decision', 'path', 'base_sha256', 'current_sha256',
+                                    'edits', 'scope_rationale'), 'summary review')
+        expected = {key: item[key] for key in ('path', 'base_sha256', 'current_sha256', 'edits')}
+        require(all(confirmation[key] == value for key, value in expected.items()) and
+                confirmation['decision'] == 'confirmed_derivative' and
+                isinstance(confirmation['scope_rationale'], str) and confirmation['scope_rationale'].strip(),
+                'summary independent derivative confirmation mismatch')
+        paths.add(name)
+        results.append({'role': 'scoped_summary_correction', **expected,
+                        'review_reference': item['review_reference'],
+                        'authority': 'reviewed changed byte scope only; untouched claims not approved'})
+    return paths, results, refs
+
+
 def check(repo, record, require_cache=False):
-    require(type(record['schema_version']) is int and record['schema_version'] in (1, 2), 'unknown receipt schema version')
+    require(type(record['schema_version']) is int and record['schema_version'] in (1, 2, 3), 'unknown receipt schema version')
+    if record['schema_version'] < 3:
+        require('summary_corrections' not in record, 'summary_corrections requires receipt schema version 3')
+    else:
+        exact_fields(record, ('schema_version', 'unit_id', 'source', 'constituents', 'inputs',
+                             'reviewer', 'non_science_notes', 'notes', 'supporting_proofs',
+                             'summary_corrections'), 'schema version 3 record')
+        require(isinstance(record['summary_corrections'], list), 'summary_corrections must be explicit')
+        schema3_shape(record)
     if record['schema_version'] == 1:
         require('supporting_proofs' not in record, 'supporting_proofs requires receipt schema version 2')
         supporting_proofs = []
@@ -428,11 +648,11 @@ def check(repo, record, require_cache=False):
             evidence(item['review_reference'])
             support_paths.add(name)
         affected = set()
+        runner_affected = set()
         for path in all_notes:
             name = path.relative_to(repo).as_posix()
             if name in changed:
                 affected.add(name)
-                continue
             body = path.read_text()
             primary = graph.extract_runner(body, path.relative_to(repo / 'docs').as_posix())
             if primary:
@@ -443,7 +663,11 @@ def check(repo, record, require_cache=False):
                     runner_inputs.update(cache.declared_input_paths(runner) or ())
                 if (runners | runner_inputs) & changed:
                     affected.add(name)
-        require(affected <= seen | exempt_paths | support_paths, 'uncovered changed/runner-affected notes: ' + ', '.join(sorted(affected - seen - exempt_paths - support_paths)))
+                    runner_affected.add(name)
+        summary_paths, summary_results, summary_refs = check_summary_corrections(
+            repo, record, graph, cache, bound, all_notes, ids, notes_by_path,
+            seen | exempt_paths | support_paths, runner_affected, changed, require_cache)
+        require(affected <= seen | exempt_paths | support_paths | summary_paths, 'uncovered changed/runner-affected notes: ' + ', '.join(sorted(affected - seen - exempt_paths - support_paths - summary_paths)))
         require(exempt_paths <= affected, 'non-science disposition outside affected note closure')
         for name, expected in bound.items():
             require(digest(repo_file(repo, name).read_bytes()) == expected, f'input changed during preflight: {name}')
@@ -459,9 +683,9 @@ def check(repo, record, require_cache=False):
             evidence(item['review_reference'])
         for item in supporting_proofs:
             evidence(item['review_reference'])
-        for ref in reviewer['references']:
+        for ref in reviewer['references'] + summary_refs:
             evidence(ref)
-        return {'schema_version': 1, 'record_schema_version': record['schema_version'], 'mechanical_status': 'ok', 'authority': 'mechanical checks only; independent science review and combined integration gate remain separate', 'unit_id': record['unit_id'], 'tree': source['tree'], 'cache_checked': require_cache, 'notes': discovered, 'supporting_proofs': supporting_proofs, 'discovery_cache': discovery_statistics}
+        return {'schema_version': 1, 'record_schema_version': record['schema_version'], 'mechanical_status': 'ok', 'authority': 'mechanical checks only; independent science review and combined integration gate remain separate', 'unit_id': record['unit_id'], 'tree': source['tree'], 'cache_checked': require_cache, 'notes': discovered, 'supporting_proofs': supporting_proofs, 'summary_corrections': summary_results, 'discovery_cache': discovery_statistics}
 
 
 def main():

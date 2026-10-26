@@ -1,14 +1,22 @@
 # FRW Late-Time Kinematic Reduction Theorem
 
 **Date:** 2026-04-24
-**Status:** proposed_retained/admitted-surface structural identity theorem on `main`.
+**Status:** conditional structural identities under supplied cosmological premises.
+**Type:** bounded_theorem
 Extends the retained Ω_Λ matter-bridge theorem
 (`OMEGA_LAMBDA_MATTER_BRIDGE_THEOREM_NOTE_2026-04-22.md`) by showing that
 **four additional late-time FRW kinematic observables** (deceleration
 parameter `q_0`, acceleration-onset redshift `z_*`, matter-Λ equality redshift
-`z_{mΛ}`, asymptotic Hubble rate `H_∞`) are structural functions of the
-**same single open number `H_inf / H_0`** once the retained `w=-1` surface,
-flat FRW, and the standard matter/radiation equations of state are accepted.
+`z_{mΛ}`, normalized asymptotic Hubble rate `H_∞/H_0`) are structural functions of the
+**same single open number `H_inf / H_0`** once the supplied constant-density `w=-1` surface,
+flat FRW, and the standard matter/radiation equations of state are accepted,
+at fixed supplied radiation fraction `R = Ω_r,0`.
+The comparison radius is not identified with a physical cosmological radius here.
+Constant positive vacuum density, nonzero expansion, component conservation,
+and the expanding flat-FRW branch are supplied assumptions. Positive vacuum
+density and positive matter density are needed for the stated late-time
+transition/equality formulas; radiation is an additional supplied readout.
+The dimensionless ratio alone does not fix dimensional H_inf without H_0.
 This is not a point prediction for the numerical value of any of those
 observables.
 **Primary runner:** `scripts/frontier_cosmology_frw_kinematic_reduction.py`
@@ -17,7 +25,7 @@ observables.
 
 ## 0. Statement
 
-**Theorem (FRW late-time kinematic reduction).** On the retained cosmology
+**Theorem (FRW late-time kinematic reduction).** On the supplied conditional cosmology
 surface
 [`COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md`](COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md)
 + [`DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md`](DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md)
@@ -35,21 +43,21 @@ hold:
 (K5)  H(t) ≥ H_∞   for all t ≥ 0 with non-negative matter + radiation content
 ```
 
-Combined with the retained matter-bridge identity `Ω_Λ,0 = (H_inf/H_0)²` and the algebraic consequence `Ω_m,0 = 1 − Ω_Λ,0 − Ω_r,0`, every quantity in (K1)–(K5) is a closed-form function of the **single open number** `H_inf / H_0` (equivalently `R_Λ H_0 / c`).
+Combined with the retained matter-bridge identity `Ω_Λ,0 = (H_inf/H_0)²` and the algebraic consequence `Ω_m,0 = 1 − Ω_Λ,0 − Ω_r,0`, the dimensionless quantities in (K1)–(K5) are fixed by `x = H_inf/H_0` at fixed supplied `R = Ω_r,0`. The onset is the unique positive root in (K2), with the displayed late-time approximation. The normalized rate is `H(a)/H_0 = sqrt(R a^-4 + (1-x²-R) a^-3 + x²)` and `H_inf/H_0 = x`. Dimensional `H_inf`, `H(a)`, and the evolution in dimensional time additionally require `H_0`.
 
-## 1. Retained/admitted inputs
+## 1. Supplied conditional inputs
 
 | Ingredient | Reference |
 |------------|-----------|
-| spectral-gap `Λ = 3 / R_Λ²` | `COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md` |
-| dark-energy EOS `w_Λ = −1` exactly | `DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md` |
+| supplied comparison-radius `Λ = 3 / R_Λ²` | `COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md` |
+| constant positive conserved vacuum density, `H != 0`, hence `w_Λ = −1` | `DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md` |
 | `Ω_Λ,0 = (H_inf/H_0)²` identity | `OMEGA_LAMBDA_MATTER_BRIDGE_THEOREM_NOTE_2026-04-22.md` |
-| flatness `Ω_tot = 1` | S³ topology / inflation (same basis) |
+| flatness `Ω_tot = 1` | supplied flat-FRW model; not derived from S³ topology |
 | standard FRW continuity + Friedmann | admitted continuum-cosmology layer |
 | matter `w_m = 0`, radiation `w_r = 1/3` | standard late-time equation-of-state |
 
 No measured cosmological value enters the algebraic derivations below after
-this retained/admitted surface is accepted. Numerical comparators are used only
+this supplied conditional surface is accepted. Numerical comparators are used only
 after the identities are derived.
 
 ## 2. Derivation of (K1) — deceleration parameter today
@@ -180,7 +188,7 @@ radiation-retaining expression is the positive root of the K2 quartic with
 `Ω_Λ,0 = (H_inf/H_0)^2` and
 `Ω_m,0 = 1 − (H_inf/H_0)^2 − Ω_r,0`.
 
-**Six late-time FRW kinematic observables** (Ω_Λ, Ω_m, q_0, z_*, z_{mΛ}, H_∞) all reduce to the **same single open number** `H_inf/H_0`. This strengthens the matter-bridge theorem's reduction from "three cosmology rows in one number" to "six cosmology observables in one number".
+**Six dimensionless late-time quantities** (Ω_Λ, Ω_m, q_0, z_*, z_{mΛ}, H_∞/H_0) reduce to `x = H_inf/H_0` at fixed supplied radiation fraction. The rate `H_∞ = x H_0` additionally needs a dimensional scale. For example, at fixed `R < 3/4`, `(H_0,H_inf)=(2,1)` and `(4,2)` have `x=1/2`, identical density fractions, deceleration and transition scale factors, but different dimensional Hubble rates. These are rescaled conditional models, not observational fits.
 
 ## 7. Numerical checks against listed comparators (post-derivation)
 
@@ -193,10 +201,10 @@ Listed comparator values (Planck 2018 + SN/cosmology summaries):
 | Ω_{m,0} | 0.315 | Planck 2018 |
 | Ω_{r,0} | 9.2 × 10⁻⁵ | CMB + Nν |
 
-Framework outputs from K-identities after substituting the listed comparator
+Conditional outputs from K-identities after substituting the listed comparator
 `H_inf/H_0 = sqrt(Ω_Λ,0)`:
 
-| Observable | Framework value after inserting comparator `Ω_Λ,0` | Comparator | Source |
+| Observable | Conditional value after inserting comparator `Ω_Λ,0` | Comparator | Source |
 |------------|-----------|----------|--------|
 | q_0 | **−0.528** | −0.55 ± 0.05 | Type Ia SN (Union3, DES-Y5, 2024) |
 | z_* (accel. onset, exact radiation) | **0.632** | 0.67 ± 0.10 | SN Ia compilations |
@@ -206,19 +214,19 @@ Framework outputs from K-identities after substituting the listed comparator
 The `q_0` and `z_*` rows are independent late-time kinematic checks once a
 common `Ω_Λ,0` comparator is inserted. The `z_{mΛ}` row is primarily a
 consistency check because it is derived from the same density parameters.
-The framework does **not** predict the specific values of `Ω_Λ,0` or
+This conditional calculation does **not** predict the specific values of `Ω_Λ,0` or
 `H_inf/H_0`, but it does predict that `q_0`, `z_*`, and `z_{mΛ}` must be
 **correlated** via the K-identities.
 
 ## 8. Falsifiability
 
-The K-identities hold as **joint** identities. A measurement of any one combination (e.g. q_0) that is inconsistent with another (e.g. z_* under the same Ω_Λ) falsifies the retained w = −1 + flat FRW surface.
+The K-identities hold as **joint** identities. A measurement of any one combination (e.g. q_0) that is inconsistent with another (e.g. z_* under the same Ω_Λ) falsifies the supplied w = −1 + flat FRW surface.
 
 Specific falsification channels:
 
 - **DESI / Euclid**: tightening BAO + SN constraints on `(Ω_Λ, q_0)` pair. A > 3σ inconsistency with `q_0 = (1/2)(1 − 3Ω_Λ)` falsifies w = −1 or flat FRW.
 - **SNIa precision at z ~ 0.6**: if `z_*` is confidently inconsistent with the retained Ω_m, Ω_Λ reconstruction via K2.
-- **Any w(z) measurement confirming `w ≠ −1`** with high significance → falsifies the w = −1 corollary, hence the entire K-package.
+- **Any w(z) measurement confirming `w ≠ −1`** with high significance → tests the physical applicability of the supplied constant-density model; it does not falsify the conditional conservation identity.
 - **Any evidence of non-flatness** at a level incompatible with the accepted
   flat-FRW input breaks the reduction surface.
 
@@ -229,8 +237,8 @@ This is a **joint-identity** falsification target, not a single-parameter fit.
 **Closes (new):**
 
 - The structural identities K1–K5 for late-time FRW kinematics on the
-  retained/admitted `w = −1` + flat-FRW surface.
-- The explicit reduction of `q_0, z_*, z_{mΛ}, H_∞` to the **same** single open number `H_inf/H_0` already carrying `Ω_Λ` and `Ω_m`.
+  supplied conditional `w = −1` + flat-FRW surface.
+- The explicit reduction of `q_0, z_*, z_{mΛ}, H_∞/H_0` at fixed supplied radiation fraction to the **same** single open number `H_inf/H_0` already carrying `Ω_Λ` and `Ω_m`.
 - The asymptotic de Sitter attractor statement `a(t) ∝ exp(H_inf t)` as t → ∞.
 - The Hubble-rate lower bound `H(t) ≥ H_inf` for all t ≥ 0.
 
@@ -246,34 +254,34 @@ Before this note, the retained matter-bridge theorem reduced three cosmology row
 
 | Row | Status before | Status after |
 |-----|---------------|--------------|
-| Λ = 3/R² | retained identity | unchanged |
-| w = −1 | retained corollary | unchanged |
+| Λ = 3/R² | supplied comparison-radius identity | unchanged |
+| w = −1 | conditional corollary | unchanged |
 | Ω_Λ = (H_inf/H_0)² | retained identity | unchanged |
 | Ω_m = 1 − Ω_Λ − Ω_r | algebraic under flatness | unchanged |
-| **q_0** | (not packaged) | **retained K1 identity** |
-| **z_*** | (not packaged) | **retained K2 identity** |
-| **z_{mΛ}** | (not packaged) | **retained K3 identity** |
-| **H_∞ / de Sitter attractor** | (not packaged) | **retained K4–K5 identities** |
+| **q_0** | (not packaged) | **conditional K1 identity** |
+| **z_*** | (not packaged) | **conditional K2 identity** |
+| **z_{mΛ}** | (not packaged) | **conditional K3 identity** |
+| **H_∞ / de Sitter attractor** | (not packaged) | **conditional K4–K5 identities** |
 
-The cosmology matter-bridge open item — one open number `H_inf/H_0` — now carries **six** structural observables, not three. This is a reduction of the apparent multiplicity of open cosmology rows, matching the same principle as the original matter-bridge theorem.
+The cosmology matter-bridge open item — one open number `H_inf/H_0` — carries **six dimensionless** structural quantities at fixed supplied radiation fraction. Dimensional rates and times additionally require `H_0`; the reduction does not remove that scale.
 
 ## 11. Safe-claim boundary
 
 **Can claim**
 
-- K1–K5 are exact structural identities on the retained/admitted surface, with
+- K1–K5 are exact structural identities on the supplied conditional surface, with
   K2 represented by its exact radiation-retaining quartic.
 - The deceleration-to-acceleration transition is the positive root of the K2
   quartic; in the late-time radiation-negligible limit this is equivalent to
   `Ω_Λ(a_*) = 1/3`.
 - The late-time gap between `z_*` and `z_{mΛ}` is exactly
   `2^(1/3) ≈ 1.26` in `(1+z)`, a pure structural consequence.
-- The framework predicts a joint `(q_0, z_*, z_{mΛ})` relationship; the listed
+- The supplied model predicts a joint `(q_0, z_*, z_{mΛ})` relationship; the listed
   comparator values are consistent once the comparator `Ω_Λ` is inserted.
 
 **Cannot claim**
 
-- A point prediction for q_0, z_*, or z_{mΛ} at retained/admitted-surface level; each depends on the still-open `H_inf/H_0`.
+- A point prediction for q_0, z_*, or z_{mΛ} at supplied conditional-surface level; each depends on the still-open `H_inf/H_0`.
 - Closure of the matter-bridge open number itself.
 - Anything beyond late-time (matter + Λ) FRW kinematics.
 
@@ -293,7 +301,7 @@ Expected: all checks pass.
 ## 13. Cross-references
 
 - `docs/COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md` — `Λ = 3/R²`
-- `docs/DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md` — `w = −1` retained
+- `docs/DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md` — `w = −1` conditional on constant positive density and H != 0
 - `docs/OMEGA_LAMBDA_MATTER_BRIDGE_THEOREM_NOTE_2026-04-22.md` — `Ω_Λ = (H_inf/H_0)²`
 - `docs/MATTER_RADIATION_EQUALITY_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md` — early-time matter-radiation equality identity
 - `docs/COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md` — open `H_inf/H_0` lane

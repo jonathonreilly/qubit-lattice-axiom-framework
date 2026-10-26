@@ -12,8 +12,8 @@ This runner verifies the narrow algebraic content of
     Omega_Lambda value under declared inputs;
   - Sommerfeld variation over alpha_GUT in [0.03, 0.05] gives Omega_Lambda
     over the documented [~0.66, ~0.71] band;
-  - the PMNS-A13 sub-route on (C2.eta) is retained-no-go on the cited
-    authority;
+  - the PMNS-A13 source is a supplied toy-data comparison with open physical
+    selector/yield obligations;
   - the (C3) class is recorded as empty on the cited authority;
   - the bipartition statement appears in the note and the cited authority.
 
@@ -25,6 +25,9 @@ Run:
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = ['docs/COSMOLOGY_FROM_MASS_SPECTRUM_NOTE.md', 'docs/HUBBLE_LANE5_C2_ATTACK_SURFACE_BIPARTITION_NARROW_THEOREM_NOTE_2026-05-27.md', 'docs/HUBBLE_LANE5_C2_CKM_PMNS_RIGHT_SENSITIVE_SELECTOR_STRETCH_NOTE_2026-04-29.md', 'docs/HUBBLE_LANE5_C3_VACUUM_TOPOLOGY_NO_ACTIVE_ROUTE_NOTE_2026-04-27.md', 'docs/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md', 'docs/HUBBLE_LANE5_ETA_RETIREMENT_GATE_AUDIT_NOTE_2026-04-26.md', 'docs/OMEGA_LAMBDA_DERIVATION_NOTE.md', 'docs/R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md']
 
 import sys
 from fractions import Fraction
@@ -417,11 +420,12 @@ def part6_authority_text() -> None:
     r_base = read("docs/R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md")
 
     check(
-        "Necessity no-go names (C2) cosmic-history-ratio retirement",
-        "(C2) cosmic-history-ratio retirement" in necessity,
+        "Route inventory names C2 without universal necessity",
+        "(C2) cosmic-history-ratio retirement" in necessity
+        and "former necessity no-go is withdrawn" in necessity,
     )
     check(
-        "Necessity no-go names broader eta, alpha_GUT, T_CMB targets",
+        "Route inventory names broader eta, alpha_GUT, T_CMB inputs",
         "`eta`" in necessity and "`alpha_GUT`" in necessity and "`T_CMB`" in necessity,
     )
     check(
@@ -430,8 +434,9 @@ def part6_authority_text() -> None:
         or "Omega_b -> R" in eta_audit and "Omega_Lambda" in eta_audit,
     )
     check(
-        "C2 stretch records the PMNS-A13 / CKM right-sensitive sub-route as no-go",
-        "no-go" in c2_stretch and "right-sensitive" in c2_stretch and "A13" in c2_stretch,
+        "C2 stretch records supplied toy data and open physical selector/yield",
+        "finite conditional toy-data separation" in c2_stretch
+        and "physical selector and yield remain open" in c2_stretch,
     )
     check(
         "C3 audit records the (C3) class as empty / no-active-route",
@@ -503,9 +508,10 @@ def part7_claim_status_guardrails() -> None:
         "(C2.eta)" in note and "(C2.alpha_GUT)" in note,
     )
     check(
-        "Note distinguishes full cascade closure from C2-class premise discharge",
+        "Note distinguishes partial pin retirement from complete C2 discharge",
         "Full single-number closure" in note
-        and "does not say the fully numerical cascade closes" in note,
+        and "does not say the fully numerical cascade closes" in note
+        and "not complete `(C2)` premise discharge" in " ".join(note.split()),
     )
 
 
@@ -517,7 +523,7 @@ def main() -> int:
     print("Bounded statement under test:")
     print("  - bounded matter-cascade slice has exactly two C2-counted pins (eta, alpha_GUT);")
     print("  - residual (C2) attack surface bipartitions into (C2.eta) and (C2.alpha_GUT);")
-    print("  - PMNS-A13 sub-route on (C2.eta) is retained-no-go;")
+    print("  - PMNS-A13 toy comparison leaves physical selector/yield open;")
     print("  - (C3) class empty on current vacuum/topology surface.")
     print()
     print("This runner does NOT derive eta, alpha_GUT, T_CMB, or H_0.")

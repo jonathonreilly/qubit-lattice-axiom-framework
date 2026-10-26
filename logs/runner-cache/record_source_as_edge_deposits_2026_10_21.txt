@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/record_source_as_edge_deposits_2026_10_21.py
+runner_sha256: ab39b297e554c68df5deebae51ea3ed008091c869987882a6c47201d6e4a5ed6
+input_fingerprint_sha256: 47ec4695c55900c86030caca5e53727fd0b49f708f8cc8dd2b53b10413ffd4bf
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.62
+status: ok
+----- stdout -----
+[PASS] three sampled eigenbranches: supplied step/pair weights sum to eps u u, u=(1,v); step-only mismatch in these samples  max error 2.2e-11; steps alone off by >= 1.1e-01; k along (1, 1, 0): T00 0.33456, T0x +0.05036, Txy +0.00758; k along (2, 1, 0): T00 0.32821, T0x +0.03247, Txy +0.00623; k along (1, 1, 1): T00 0.34510, T0x +0.05599, Txy +0.00908
+[PASS] numerical rank illustration: D4 outer products span Sym(4) with real signed coefficients  rank 10 of 10
+per_site: the walk, coin, eigenphase and band selection, step weights eps P, ordered-pair weights 2 eps Pa Pb, chord coefficient -1/4 and embedding (1,d) are supplied choices.
+lattice_wide: no gravity field equation, edge-length dynamics, coupling value or physical identification is established.
+elapsed_seconds 0.6
+
+TOTAL: PASS=2 FAIL=0
+
+----- stderr -----
+

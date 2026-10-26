@@ -26,6 +26,9 @@ from pathlib import Path
 import sympy as sp
 
 
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = ("docs/MINIMAL_AXIOMS_2026-06-29.md",)
+
 getcontext().prec = 90
 
 PASS = 0
@@ -145,16 +148,16 @@ def stays_in_band(epsilon: Decimal, band: Decimal, steps: int) -> bool:
 def main() -> int:
     root = Path(__file__).resolve().parents[1]
     axiom_path = root / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
-    axiom_norm = norm(axiom_path.read_text(encoding="utf-8"))
+    axiom_body = axiom_path.read_text(encoding="utf-8")
+    # Guard the operative clauses, not historical quotations later in the memo.
+    operative = axiom_body.split("## The Four Framework Axioms", 1)[1].split("## Qualification", 1)[0]
+    axiom_norm = norm(operative)
 
     quote_form = "Records form."
     quote_lock = "When present, a record locks exactly one admissible local possibility."
     quote_permanence = "A site never carries more than one record; records are permanent."
     quote_readout = "A readout value is determined by record content alone."
-    quote_additivity = (
-        "For any finite collection of pairwise-disjoint records, scalar readout "
-        "`I` is additive, with `I(empty)=0`."
-    )
+    quote_absence = "A site with no record cannot be read."
 
     check(1, norm(quote_form) in axiom_norm, "live Record quote: records form")
     check(
@@ -174,8 +177,8 @@ def main() -> int:
     )
     check(
         5,
-        norm(quote_additivity) in axiom_norm,
-        "live Record quote: scalar readout I is additive over disjoint records",
+        norm(quote_absence) in axiom_norm,
+        "live Record quote: an unrecorded site cannot be read (no scalar-zero assignment)",
     )
 
     sites = ("s0", "s1", "s2")

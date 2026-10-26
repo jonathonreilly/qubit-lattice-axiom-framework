@@ -27,8 +27,7 @@
     "universal_qg_smooth_gravitational_global_solution_class_note",
     "universal_qg_canonical_textbook_continuum_gr_closure_note",
     "s3_general_r_derivation_note",
-    "s3_cap_uniqueness_note",
-    "confinement_string_tension_note"
+    "s3_cap_uniqueness_note"
   ],
   "direct_in_degree": 16,
   "effective_status": "unaudited",
@@ -36,12 +35,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 13.7,
+  "load_bearing_score": 13.585,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "a3515efe9e6c92810749a77ee55871107e2db07a195c86d9114220e326954693",
+  "note_hash": "27bb05509ae6e232ad2989e1fa65b6253e355cc8b2231974e38430f890641036",
   "note_path": "docs/COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -178,7 +177,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_cosmological_constant_spectral_gap_identity.py",
-  "title": "Spectral-Gap Cosmological-Constant Identity Theorem",
-  "transitive_descendants": 51,
+  "title": "Conditional de Sitter / S\u00b3 Spectral Consistency Identity",
+  "transitive_descendants": 47,
   "verdict_rationale": null
 }

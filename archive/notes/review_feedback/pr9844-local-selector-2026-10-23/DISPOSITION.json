@@ -1,0 +1,9 @@
+{
+  "old_claim": "whole-line/local-family exclusion and nonlocal necessity withdrawn as unproved",
+  "source_commit": "b1bc0c6e1bc9c93a23566eb3bf28ea679018ae76",
+  "original_PR_head": "3c90f9860c3bae63ee64949e7178290f789dd982",
+  "canonical_note": "docs/DM_PMNS_SUPPLIED_LINE_FINITE_SEARCH_DIAGNOSTIC_NOTE_2026-04-20.md",
+  "canonical_runner": "scripts/frontier_dm_pmns_supplied_line_finite_search_diagnostic_2026_04_20.py",
+  "archive_role": "exact historical source/output only, outside canonical docs and scripts discovery",
+  "scope": "new canonical claim is reproducible finite numerical diagnostic, no negative theorem"
+}

@@ -37,7 +37,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "bfa9d9a1767a57e6b819f9725e2a4b1045418c39c316b71ab998cc4ac3da7ff0",
+  "note_hash": "5bf6d1197263323564bce670d796217f3e5c2392bc1403695f3961468b0e22cb",
   "note_path": "docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -206,7 +206,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

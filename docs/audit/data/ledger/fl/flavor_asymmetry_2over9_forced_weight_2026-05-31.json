@@ -24,8 +24,6 @@
   "decoration_parent_claim_id": null,
   "deps": [
     "three_generation_observable_theorem_note",
-    "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
-    "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
     "flavor_operator_realization_local_density_2026-05-31"
   ],
   "direct_in_degree": 2,
@@ -39,7 +37,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "993f01403b36588bbf825140df73a073278529260946212c887f0060e17b148e",
+  "note_hash": "75453f44a464431ff8bfa59c611f3ff2bdd15e3a930ee30acc37a6b2750e84a8",
   "note_path": "docs/FLAVOR_ASYMMETRY_2OVER9_FORCED_WEIGHT_2026-05-31.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -205,7 +203,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -214,7 +212,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/flavor_asymmetry_2over9_forced_weight_2026_05_31.py",
-  "title": "Flavor \u2014 last mile: the asymmetry channel's 2/9 is a FORCED local density at the framework-forced d=3 (operator side repaired; physical readout open)",
+  "title": "Flavor: finite C3 complement weights and the coefficient 2/9",
   "transitive_descendants": 12,
   "verdict_rationale": null
 }

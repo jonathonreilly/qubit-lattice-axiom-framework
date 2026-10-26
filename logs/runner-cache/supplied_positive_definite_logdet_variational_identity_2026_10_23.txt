@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/supplied_positive_definite_logdet_variational_identity_2026_10_23.py
+runner_sha256: c59057d39ae2a42495ddc229a69f5eef3225d1a35de4e5194654c818145d5d8c
+input_fingerprint_sha256: 1645206df0cdc9e428ca735da39366ebf332fb017ac9d1cc94c2b31e161e679f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+{
+  "checks": {
+    "scope_document": true,
+    "optimizer_0": true,
+    "gap_0": true,
+    "optimizer_1": true,
+    "gap_1": true,
+    "optimizer_2": true,
+    "gap_2": true,
+    "noncommuting_fixture": true,
+    "seed_corollary": true,
+    "reject_Y_0": true,
+    "reject_Y_1": true,
+    "reject_Y_2": true,
+    "reject_infeasible_K": true,
+    "positive_det_not_positive": true,
+    "null_route_control": true,
+    "negative_route_control": true
+  },
+  "max_optimizer_error": 2.220446049250313e-16,
+  "scope": "supplied matrices only; proof in note; boundary samples not asymptotic proof"
+}
+PASS=16 FAIL=0
+
+----- stderr -----
+

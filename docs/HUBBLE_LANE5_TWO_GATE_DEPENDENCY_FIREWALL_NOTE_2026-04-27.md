@@ -1,8 +1,10 @@
 # Hubble Lane 5 Two-Gate Dependency Firewall
 
 **Date:** 2026-04-27
-**Status:** proposed_retained exact negative boundary for Lane 5 dependency
-accounting. This is not a numerical `H_0` derivation and not a promotion of
+**Status:** conditional structural family result with supplied independent inputs.
+**Type:** bounded_theorem
+**Primary runner:** `scripts/frontier_hubble_lane5_two_gate_dependency_firewall.py`
+This conditional support firewall restricts dependency accounting to the listed separated-input routes. This is not a numerical `H_0` derivation and not a promotion of
 the Hubble lane to closure.
 **Script:** `scripts/frontier_hubble_lane5_two_gate_dependency_firewall.py`
 **Lane:** Lane 5 Hubble constant derivation
@@ -41,18 +43,20 @@ also blocks three tempting but wrong upgrades:
 - The late-time structural lock fixes the form
   `H(a) = H_0 E(a; L, R)`, but does not supply the numerical scalar `H_0`.
 
-Therefore the honest Lane 5 status is unchanged: numerical closure requires
-both `(C1)` and one of `{(C2), (C3)}`. Since the current `(C3)` audit finds no
-active route, the practical current closure path is `(C1) + (C2)`.
+For the listed separated-input routes, both inputs must be supplied. This is
+not an exhaustive classification: a supplied joint relation `H_inf = k sqrt(L)`
+fixes `H_0 = k` without fixing either input separately. No physical derivation
+of such a relation is supplied here. The practical listed route remains
+`(C1) + (C2)`, with no active `(C3)` route identified in the cited inventory.
 
 ## Theorem
 
-**Theorem (Lane 5 two-gate dependency firewall).** Adopt the retained
+**Theorem (Lane 5 two-gate dependency firewall).** Adopt the supplied conditional
 late-time cosmology stack used by the Hubble workstream: the spectral-gap
 identity, scale identification, matter bridge, flat-FRW structural lock, and
 open-number reduction at fixed admitted radiation readout `R`.
 
-Then no single closure class is sufficient to derive numerical `H_0`:
+When the other input remains independently free, the following families remain:
 
 1. If only `(C1)` is supplied, `H_inf` is numerical but `L` is not. For every
    admissible `L in (0, 1 - R)`,
@@ -64,8 +68,7 @@ Then no single closure class is sufficient to derive numerical `H_0`:
    `H(a)/H_0` is fixed by `(L, R)`, but absolute values remain invariant under
    common rescaling of `(H_0, H_inf)`.
 
-So numerical Lane 5 closure requires a retained absolute-scale premise and a
-retained dimensionless cosmic-history premise:
+The listed separated-input strategy is therefore:
 
 ```text
 (C1) AND ((C2) OR (C3)).
@@ -110,7 +113,7 @@ All four are blocked by the existing open-number and gate-audit results.
 
 ## What Remains Open
 
-Lane 5 remains open. The exact remaining gates are:
+Lane 5 remains open. The listed remaining gates are:
 
 - retain the `(C1)` primitive Clifford/CAR coframe response and natural
   phase/action-unit surface;
@@ -118,7 +121,7 @@ Lane 5 remains open. The exact remaining gates are:
   surrounding bounded-cascade dependencies, or open and retain a genuine
   `(C3)` direct cosmic-`L` route;
 - keep the structural-lock result as a falsifier of late-time `H_0(z)`
-  running, not as a numerical `H_0` derivation.
+  running, not as a numerical `H_0` derivation or a universal exclusion of late-time physics.
 
 ## Verification
 
@@ -129,16 +132,16 @@ PYTHONPATH=scripts python3 scripts/frontier_hubble_lane5_two_gate_dependency_fir
 Expected result:
 
 ```text
-PASS=18 FAIL=0
+PASS=19 FAIL=0
 ```
 
 ## Inputs And Import Roles
 
 | Input | Role | Import class | Source |
 |---|---|---|---|
-| `L = (H_inf/H_0)^2` | exact bridge exposing two open degrees | retained structural identity | `OMEGA_LAMBDA_MATTER_BRIDGE_THEOREM_NOTE_2026-04-22.md` |
-| open-number reduction to `(H_0, L)` | proves no extra late-time knob supplies closure | proposed-retained support theorem | `COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md` |
-| Hubble structural lock | fixed late-time form, not numerical scale | proposed-retained support theorem | `HUBBLE_TENSION_STRUCTURAL_LOCK_THEOREM_NOTE_2026-04-26.md` |
+| `L = (H_inf/H_0)^2` | exact bridge exposing two open degrees | supplied conditional identity | `OMEGA_LAMBDA_MATTER_BRIDGE_THEOREM_NOTE_2026-04-22.md` |
+| open-number reduction to `(H_0, L)` | proves no extra late-time knob supplies closure | conditional support theorem | `COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md` |
+| Hubble structural lock | fixed late-time form, not numerical scale | conditional support theorem | `HUBBLE_TENSION_STRUCTURAL_LOCK_THEOREM_NOTE_2026-04-26.md` |
 | `(C1)` gate | absolute-scale closure premise | open | `HUBBLE_LANE5_PLANCK_C1_GATE_AUDIT_NOTE_2026-04-26.md` |
 | `(C2)` gate | dimensionless cosmic-history-ratio closure premise | open | `HUBBLE_LANE5_ETA_RETIREMENT_GATE_AUDIT_NOTE_2026-04-26.md` |
 | `(C3)` audit | blocks treating existing vacuum/topology content as an active `L` route | audit no-go | `HUBBLE_LANE5_C3_VACUUM_TOPOLOGY_NO_ACTIVE_ROUTE_NOTE_2026-04-27.md` |
@@ -154,7 +157,7 @@ Can claim:
 
 - Lane 5 now has an executable dependency firewall for the two-gate closure
   map;
-- neither gate by itself yields numerical `H_0`;
+- neither fixed input yields numerical `H_0` while the other remains free;
 - the structural lock is a late-time falsifier, not a numerical closure;
 - the practical current closure path is `(C1) + (C2)` unless a fresh `(C3)`
   route is discovered.

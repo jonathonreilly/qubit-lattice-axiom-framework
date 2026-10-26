@@ -1,75 +1,76 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_delta_dimensionless_closure_via_v8.py
-runner_sha256: 0a16b195f5002fc63dca3d0bd0a0124f030960f527a3a0a9a6b89336c8009484
+runner_sha256: b38e4ce9118b02b1e8b2aa1e27f8d5ea41f8a7643a59b498443d95a23b682f9b
+input_fingerprint_sha256: 939935ca89e88c80d5148a953064ba82b72371e4d2486228f1b9febe52093732
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.43
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 ========================================================================
-Koide δ Dimensionless Closure via V8 (Block 2) audit
+Supplied rational scalar r and independent Fourier phase
 ========================================================================
 
-Section 1: V8 (Block 1, Q closure) prerequisite check
+Historical documentary observations: no prerequisites or authority checks
 ------------------------------------------------------------------------
-[PASS] V8 note exists on disk — block 1 closure note found
-[PASS] V8 carries support status — V8 firewall: support
-[PASS] V8 carries audit-required-before-effective-retained flag — V8 firewall: audit required
-[PASS] V8 closes Q = 2/3 on A_min — V8 §2 theorem statement
+HISTORICAL_UNSCORED old assertion='V8 note exists on disk'; observed=True; old detail='block 1 closure note found'
+HISTORICAL_UNSCORED old assertion='V8 carries support status'; observed=True; old detail='V8 firewall: support'
+HISTORICAL_UNSCORED old assertion='V8 carries audit-required-before-effective-retained flag'; observed=True; old detail='V8 firewall: audit required'
+HISTORICAL_UNSCORED old assertion='V8 closes Q = 2/3 on A_min'; observed=True; old detail='V8 §2 theorem statement'
 
-Section 2: retained Brannen phase reduction theorem audit
+Historical text observations (unscored; old assertions quoted, not adopted)
 ------------------------------------------------------------------------
-[PASS] Brannen phase reduction note exists — retained on main
-[PASS] n_eff = 2 from doublet conjugate-pair forcing — Brannen §1.3
-[PASS] d = 3 from |C_3| — Brannen §1
-[PASS] δ = n_eff / d² = 2/9 (Brannen normalization) — Brannen §2.3
-[PASS] δ = Q/d at d=3 — Brannen §2.4
-[PASS] Plancherel identity note exists — support-grade on main
-[PASS] Plancherel: arg(b) = δ (mod 2π) inside Brannen parameterization — Plancherel §1 lemma
-[PASS] Q = p·δ identity note exists — retained on main
-[PASS] Q = p·δ at p = d = 3 identity — Q = p·δ identity
-[PASS] Z_3 qubit radian-bridge no-go note exists — retained negative result on main
-[PASS] Z_3 qubit no-go closes canonical R/Z → U(1) lift route — no-go §2.1 candidate A
+HISTORICAL_UNSCORED old assertion='Brannen phase reduction note exists'; observed=True; old detail='retained on main'
+HISTORICAL_UNSCORED old assertion='n_eff = 2 from doublet conjugate-pair forcing'; observed=True; old detail='Brannen §1.3'
+HISTORICAL_UNSCORED old assertion='d = 3 from |C_3|'; observed=True; old detail='Brannen §1'
+HISTORICAL_UNSCORED old assertion='δ = n_eff / d² = 2/9 (Brannen normalization)'; observed=True; old detail='Brannen §2.3'
+HISTORICAL_UNSCORED old assertion='δ = Q/d at d=3'; observed=True; old detail='Brannen §2.4'
+HISTORICAL_UNSCORED old assertion='Plancherel identity note exists'; observed=True; old detail='support-grade on main'
+HISTORICAL_UNSCORED old assertion='Plancherel: arg(b) = δ (mod 2π) inside Brannen parameterization'; observed=True; old detail='Plancherel §1 lemma'
+HISTORICAL_UNSCORED old assertion='Q = p·δ identity note exists'; observed=True; old detail='retained on main'
+HISTORICAL_UNSCORED old assertion='Q = p·δ at p = d = 3 identity'; observed=True; old detail='Q = p·δ identity'
+HISTORICAL_UNSCORED old assertion='Z_3 qubit radian-bridge no-go note exists'; observed=True; old detail='retained negative result on main'
+HISTORICAL_UNSCORED old assertion='Z_3 qubit no-go closes canonical R/Z → U(1) lift route'; observed=True; old detail='no-go §2.1 candidate A'
 
-Section 3: algebraic identities of the composition (sympy/numpy)
+Supplied rational and coordinate identities (sympy/numpy)
 ------------------------------------------------------------------------
-[PASS] Q = 2/3 (composed from V8) — Q = 2/3
-[PASS] n_eff = |d(arg ζ)/dθ| = 2 (doublet conjugate-pair winding) — n_eff = 2
-[PASS] d = |C_3| = 3 — d = 3
-[PASS] δ_dimensionless = n_eff / d² = 2/9 (Brannen normalization) — δ = 2/9
-[PASS] δ = Q/d at d=3 cross-check — Q/d = 2/9
-[PASS] Q = p·δ structural identity (p=d=3) — p·δ = 3·(2/9) = 2/3 == Q = 2/3
-[PASS] Plancherel arg(b) = δ inside Brannen parameterization (numerical witness) — verified across δ ∈ (-π, π) per Plancherel §1 lemma
+HISTORICAL_UNSCORED old assertion='Q = 2/3 (composed from V8)'; observed=True; old detail='Q = 2/3'
+[PASS] Magnitude of derivative of chosen continuous coordinate lift -2 theta is 2 — n_eff = 2
+HISTORICAL_UNSCORED old assertion='d = |C_3| = 3'; observed=True; old detail='d = 3'
+[PASS] Defined r=n/d² equals2/9 for supplied d=3 and coordinate n=2 — δ = 2/9
+[PASS] Defined r=Q/d equals2/9 for supplied Q=2/3,d=3 — Q/d = 2/9
+[PASS] Supplied p=d=3 gives p*r=Q by rational arithmetic — p·δ = 3·(2/9) = 2/3 == Q = 2/3
+[PASS] Principal argument of directly constructed positive-radius exponential at17 interior phases — 17 sampled phases only; this fixture constructs b from the formula
 
-Section 4: radian-bridge postulate P status (NOT closed)
+Two supplied angle conventions: arithmetic comparison only
 ------------------------------------------------------------------------
 [PASS] Standard 2π-radian conversion gives 4π/9 rad (NOT 2/9 rad) — 2π·(2/9) = 1.396263 = 4π/9 = 1.396263
-[PASS] Standard conversion ≠ 2/9 rad (postulate P would identify them) — 2π·(2/9) = 1.396263 ≠ 2/9 = 0.222222
-[PASS] Brannen-PDG match value δ_observed = 2/9 rad (support-grade witness) — δ_observed ≈ 2/9 rad ≈ 0.222222
-[PASS] Postulate P (literal 2/9 = 2/9 rad) NOT closed by V1 — radian-bridge postulate explicitly open per §4 of V1 note
+[PASS] Two supplied angle conventions produce unequal numerical values — 2π·(2/9) = 1.396263 ≠ 2/9 = 0.222222
+HISTORICAL_UNSCORED old assertion='Brannen-PDG match value δ_observed = 2/9 rad (support-grade witness)'; observed=True; old detail='δ_observed ≈ 2/9 rad ≈ 0.222222'
+HISTORICAL_UNSCORED old assertion='Postulate P (literal 2/9 = 2/9 rad) NOT closed by V1'; observed=True; old detail='radian-bridge postulate explicitly open per §4 of V1 note'
 
-Section 5: V1 status firewall fields
+Historical old metadata observations (unscored)
 ------------------------------------------------------------------------
-[PASS] V1 carries actual_current_surface_status: support — V1 firewall
-[PASS] V1 carries audit_required_before_effective_retained: false — V1 firewall
-[PASS] V1 carries bare_retained_allowed: false — V1 firewall
-[PASS] V1 records radian_bridge_postulate_P_status: open — V1 firewall: P explicitly open
-[PASS] V1 records literal 2/9 rad PDG match as support_grade — V1 firewall: PDG match support-grade
+HISTORICAL_UNSCORED old assertion='V1 carries actual_current_surface_status: support'; observed=False; old detail='V1 firewall'
+HISTORICAL_UNSCORED old assertion='V1 carries audit_required_before_effective_retained: false'; observed=False; old detail='V1 firewall'
+HISTORICAL_UNSCORED old assertion='V1 carries bare_retained_allowed: false'; observed=False; old detail='V1 firewall'
+HISTORICAL_UNSCORED old assertion='V1 records radian_bridge_postulate_P_status: open'; observed=False; old detail='V1 firewall: P explicitly open'
+HISTORICAL_UNSCORED old assertion='V1 records literal 2/9 rad PDG match as support_grade'; observed=False; old detail='V1 firewall: PDG match support-grade'
 
-Section 6: forbidden imports check
+Historical lexical observations (unscored; not proof of input independence)
 ------------------------------------------------------------------------
-[PASS] forbidden import not used as proof input: m_e — no observed lepton mass enters proof
-[PASS] forbidden import not used as proof input: m_mu — no observed lepton mass enters proof
-[PASS] forbidden import not used as proof input: m_tau — no observed lepton mass enters proof
-[PASS] forbidden import not used as proof input: delta_obs — no observed lepton mass enters proof
-
-========================================================================
+HISTORICAL_UNSCORED old assertion='forbidden import not used as proof input: m_e'; observed=True; old detail='no observed lepton mass enters proof'
+HISTORICAL_UNSCORED old assertion='forbidden import not used as proof input: m_mu'; observed=True; old detail='no observed lepton mass enters proof'
+HISTORICAL_UNSCORED old assertion='forbidden import not used as proof input: m_tau'; observed=True; old detail='no observed lepton mass enters proof'
+HISTORICAL_UNSCORED old assertion='forbidden import not used as proof input: delta_obs'; observed=True; old detail='no observed lepton mass enters proof'
+[PASS] Positive amplitudes and Q=2/3 at supplied phase 0.0
+[PASS] Independent Fourier sum recovers supplied phase 0.0
+[PASS] Positive amplitudes and Q=2/3 at supplied phase 0.1308996938995747
+[PASS] Independent Fourier sum recovers supplied phase 0.1308996938995747
+[PASS] Same Q admits distinct Fourier phases in the two positive fixtures
+Defined rational r=Q/d is distinct from free phase delta; delta=r would be an extra choice.
+No physical phase, Berry holonomy, OP closure, or exhaustive route conclusion is certified.
 FAIL count: 0
-DELTA_DIMENSIONLESS_SUPPORT_COMPOSITION_VERIFIED = True
-RADIAN_BRIDGE_POSTULATE_P_STATUS = open  # NOT closed by V1
-(This flag verifies the V1 dimensionless chain authorities + algebraic identities. The radian-bridge postulate P remains explicitly open. Independent audit and upstream ratification are required before any stronger status.)
-
-All Block 2 chain authorities + algebraic identities verified.
 
 ----- stderr -----
 

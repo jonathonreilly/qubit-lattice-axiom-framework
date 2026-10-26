@@ -1,0 +1,356 @@
+{
+  "disposition": "Historical failed numerical certificate; no current positive primary or expected-failure conversion",
+  "failed_candidate": "5042ee9c46cbb9283f22cdb7f148df5d37793f01",
+  "strong_source_candidate": "26878429adf81e855c90d1f2e3466b85ede2cc62",
+  "actual_failed_exit_code": 1,
+  "actual_counts": {
+    "PASS": 14,
+    "FAIL": 3
+  },
+  "canonical_replacement_scope": "Conditional exact generator/Weyl/cofactor algebra only; no numerical-estimate certification",
+  "removed_current_paths": [
+    "docs/DM_SPLIT2_INTERVAL_CERTIFIED_DOMINANCE_CLOSURE_THEOREM_NOTE_2026-04-21.md",
+    "scripts/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.py",
+    "logs/runner-cache/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.txt"
+  ],
+  "canonical_note": "docs/SPLIT2_CONDITIONAL_GENERATOR_COFACTOR_ALGEBRA_NOTE_2026-10-23.md",
+  "canonical_runner": "scripts/split2_conditional_generator_cofactor_algebra.py",
+  "files": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/original/docs/DM_SPLIT2_INTERVAL_CERTIFIED_DOMINANCE_CLOSURE_THEOREM_NOTE_2026-04-21.md",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/original/docs/DM_SPLIT2_INTERVAL_CERTIFIED_DOMINANCE_CLOSURE_THEOREM_NOTE_2026-04-21.md.txt",
+      "sha256": "f449f29883d9364321ff7b4ccdfca8e6d0e4e48c67db8aa4a63f3bcdee234218",
+      "bytes": 6318
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/original/logs/runner-cache/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.txt",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/original/logs/runner-cache/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.txt.txt",
+      "sha256": "d02bdce51cc8d88de97e50cb539c67117413e2f651e94f03bcc16bc98435a12c",
+      "bytes": 7238
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/original/scripts/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.py",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/original/scripts/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.py.txt",
+      "sha256": "d3b97172bb66372369e12701b22d879f56549ece2a878e7f208c4a5409037def",
+      "bytes": 16252
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/final-source/docs/DM_SPLIT2_INTERVAL_CERTIFIED_DOMINANCE_CLOSURE_THEOREM_NOTE_2026-04-21.md",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/final-source/docs/DM_SPLIT2_INTERVAL_CERTIFIED_DOMINANCE_CLOSURE_THEOREM_NOTE_2026-04-21.md.txt",
+      "sha256": "053860ea41d4b7905f66f3c574a9c29724bab1b0d44e83eef5406b70faf96db7",
+      "bytes": 5019
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/final-source/docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/final-source/docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md.txt",
+      "sha256": "015f4ff5e58e83c75b74a0f1d721ece341e650c56f84d82ccbcf3eca1f217b49",
+      "bytes": 34830
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/final-source/docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/final-source/docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md.txt",
+      "sha256": "e3224f36129d231031fded4b6b65f558665efdc23626447b1c66bec5db20b0b1",
+      "bytes": 39269
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/final-source/logs/runner-cache/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.txt",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/final-source/logs/runner-cache/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.txt.txt",
+      "sha256": "f0fe4da94ead28a5e490c76c72f828e99e37370c602918fe82da9f5f20da955c",
+      "bytes": 7224
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/final-source/scripts/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.py",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/final-source/scripts/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.py.txt",
+      "sha256": "585aa3813d9195188461cd5fef7910e8dfb91bb61c40d052a027e40c606c92a3",
+      "bytes": 17826
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/capture/after.json",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/capture/after.json.txt",
+      "sha256": "70ee08c8884c30d85d7615ba6396e0ff4a663f04e54d8e273207f00e1e48af89",
+      "bytes": 9325
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/capture/before.json",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/capture/before.json.txt",
+      "sha256": "70ee08c8884c30d85d7615ba6396e0ff4a663f04e54d8e273207f00e1e48af89",
+      "bytes": 9325
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/capture/live-log.txt",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/capture/live-log.txt.txt",
+      "sha256": "b537bbb87a90fde8be69bcd282141bd38eb8dd6f398cc23ef10006d31a29c952",
+      "bytes": 7062
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/capture/raw-result.json",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/capture/raw-result.json.txt",
+      "sha256": "0d4bd85288d3d76de4dc82945119f6f0375ccc800db3988496a121a433e5d2cc",
+      "bytes": 7319
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/capture/receipt.json",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/capture/receipt.json.txt",
+      "sha256": "63c5037ad81372aa8f50ebe42f4e8b8993552c675d726dab5c5777df365019b3",
+      "bytes": 381
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/frozen/docs/DM_NEUTRINO_SOURCE_SURFACE_CARRIER_SIDE_CONCLUSION_NOTE_2026-04-18.md",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/frozen/docs/DM_NEUTRINO_SOURCE_SURFACE_CARRIER_SIDE_CONCLUSION_NOTE_2026-04-18.md.txt",
+      "sha256": "723ca0c70055e3ed17eb29146284e116132978890564280998f44c22fe0104bb",
+      "bytes": 2042
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/frozen/docs/DM_SPLIT2_DENSE_GRID_LIPSCHITZ_DOMINANCE_SUPPORT_NOTE_2026-04-21.md",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/frozen/docs/DM_SPLIT2_DENSE_GRID_LIPSCHITZ_DOMINANCE_SUPPORT_NOTE_2026-04-21.md.txt",
+      "sha256": "23019c34c6a4d9d9b46befe9414af58ed2555d52c8c8606dc1c361dfa7edeba9",
+      "bytes": 5492
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/frozen/docs/DM_SPLIT2_INTERVAL_CERTIFIED_DOMINANCE_CLOSURE_THEOREM_NOTE_2026-04-21.md",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/frozen/docs/DM_SPLIT2_INTERVAL_CERTIFIED_DOMINANCE_CLOSURE_THEOREM_NOTE_2026-04-21.md.txt",
+      "sha256": "053860ea41d4b7905f66f3c574a9c29724bab1b0d44e83eef5406b70faf96db7",
+      "bytes": 5019
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/frozen/scripts/dm_leptogenesis_exact_common.py",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/frozen/scripts/dm_leptogenesis_exact_common.py.txt",
+      "sha256": "4120a70d63082dd2115b7a9337fb91804478f706ef36f602ab210737f8f0dc41",
+      "bytes": 9926
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/frozen/scripts/dm_selector_branch_support.py",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/frozen/scripts/dm_selector_branch_support.py.txt",
+      "sha256": "4dedef2c46b532406d97bee9e8eed88babac7fa9a53934697a62b57073c37d08",
+      "bytes": 9834
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/frozen/scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/frozen/scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py.txt",
+      "sha256": "f40f1b4dc97dd11cb68b3cdf614cece78ebdb89778b3f24d3bdb59a97a1746c2",
+      "bytes": 22652
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/frozen/scripts/frontier_dm_leptogenesis_ne_charged_source_response_reduction.py",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/frozen/scripts/frontier_dm_leptogenesis_ne_charged_source_response_reduction.py.txt",
+      "sha256": "1e0b985ea845172b30e43cdf6330a4dec829ff62f56545eb286f2b12a40bca71",
+      "bytes": 14120
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/frozen/scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/frozen/scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py.txt",
+      "sha256": "7c6c379d4b6e70ad78607eb3c5655d241a9a0cb42a6a1dc54607b16afc529c22",
+      "bytes": 12351
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/frozen/scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/frozen/scripts/frontier_dm_leptogenesis_pmns_projector_interface.py.txt",
+      "sha256": "563fa74307f829d7cb673e7a6497a76aad85a5d78c378ddc1dc7b877651fd31f",
+      "bytes": 16031
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/frozen/scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/frozen/scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py.txt",
+      "sha256": "26be65c14f41b944294a8c6636324cdf865df7ab08580565c4783c589dd7381c",
+      "bytes": 6871
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/frozen/scripts/frontier_dm_neutrino_exact_h_source_surface_preimage_bundle_theorem.py",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/frozen/scripts/frontier_dm_neutrino_exact_h_source_surface_preimage_bundle_theorem.py.txt",
+      "sha256": "10061fd219064353a68bef3c0c348bf84e9a83ead67c9783da9f4ad2de5d646e",
+      "bytes": 8788
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/frozen/scripts/frontier_dm_neutrino_hermitian_bridge_carrier.py",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/frozen/scripts/frontier_dm_neutrino_hermitian_bridge_carrier.py.txt",
+      "sha256": "83d978eacf3c919b0153a8268e3881f5cc266619e8afa26da61cba533c2d09d0",
+      "bytes": 10148
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/frozen/scripts/frontier_dm_neutrino_positive_polar_h_cp_theorem.py",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/frozen/scripts/frontier_dm_neutrino_positive_polar_h_cp_theorem.py.txt",
+      "sha256": "11ee73d73372c30698e05decdeee3cf8d101b4805b44026f34fbd07f145509cd",
+      "bytes": 7929
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/frozen/scripts/frontier_dm_neutrino_postcanonical_polar_section.py",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/frozen/scripts/frontier_dm_neutrino_postcanonical_polar_section.py.txt",
+      "sha256": "6c09503cbccf1b3a109332c965041248a79fa025fa36bcb8f755b851efe0c113",
+      "bytes": 10355
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/frozen/scripts/frontier_dm_neutrino_source_bank_z3_doublet_block_selection_obstruction_theorem.py",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/frozen/scripts/frontier_dm_neutrino_source_bank_z3_doublet_block_selection_obstruction_theorem.py.txt",
+      "sha256": "e5d9e25e456dd9540e892e97a75c2faf1b0bebe0a5647c4200ccb553077a3819",
+      "bytes": 14739
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/frozen/scripts/frontier_dm_neutrino_source_surface_active_affine_point_selection_boundary.py",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/frozen/scripts/frontier_dm_neutrino_source_surface_active_affine_point_selection_boundary.py.txt",
+      "sha256": "09dac7696be306d36073b01186ca238cd03cacaec9193808dae06cc3b1cd080a",
+      "bytes": 14910
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/frozen/scripts/frontier_dm_neutrino_source_surface_active_half_plane_theorem.py",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/frozen/scripts/frontier_dm_neutrino_source_surface_active_half_plane_theorem.py.txt",
+      "sha256": "f539b4aa3f6da7cc83bb653316a9e98981f89f23cec7cdc00a40a0d98ec33612",
+      "bytes": 11676
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/frozen/scripts/frontier_dm_neutrino_source_surface_carrier_normal_form.py",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/frozen/scripts/frontier_dm_neutrino_source_surface_carrier_normal_form.py.txt",
+      "sha256": "30862b9810bd34a9ba4a0848f03f9207c463a79fcde3b6c8e0a193b8e1a6c2b1",
+      "bytes": 10642
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/frozen/scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/frozen/scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py.txt",
+      "sha256": "4694e84fb6e82dc704f2c39e4a7e70016850feb2becfd9a89128672da5445c70",
+      "bytes": 8228
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/frozen/scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/frozen/scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py.txt",
+      "sha256": "3467693b9aadc4f1a06b41424442a4701a6c02c97603267be4ff0874c437f765",
+      "bytes": 12053
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/frozen/scripts/frontier_dm_neutrino_source_surface_split2_edge_profile_transition_candidate.py",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/frozen/scripts/frontier_dm_neutrino_source_surface_split2_edge_profile_transition_candidate.py.txt",
+      "sha256": "93bc2903518f24d467659f4fbd469656c370ff18feac25656a20ce43136d09fc",
+      "bytes": 8807
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/frozen/scripts/frontier_dm_neutrino_source_surface_split2_low_slack_transport_incompatibility_candidate.py",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/frozen/scripts/frontier_dm_neutrino_source_surface_split2_low_slack_transport_incompatibility_candidate.py.txt",
+      "sha256": "b0fe23daef5d2e3b082ecf062bdb5946b6e2733f7c657e368dae3bef932a68f5",
+      "bytes": 14171
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/frozen/scripts/frontier_dm_neutrino_source_surface_split2_lower_repair_upper_face_extremals_candidate.py",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/frozen/scripts/frontier_dm_neutrino_source_surface_split2_lower_repair_upper_face_extremals_candidate.py.txt",
+      "sha256": "c28984e843be270f9c9ee103363ac35e4717d8da9b381a7ed21e68a07547140b",
+      "bytes": 14597
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/frozen/scripts/frontier_dm_neutrino_source_surface_split2_upper_face_local_neighborhoods_candidate.py",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/frozen/scripts/frontier_dm_neutrino_source_surface_split2_upper_face_local_neighborhoods_candidate.py.txt",
+      "sha256": "4b413c5b99dbd172937b2b5e27192496e07a08e22ad1a66f224ddaf01f0d1b72",
+      "bytes": 11196
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/frozen/scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem.py",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/frozen/scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem.py.txt",
+      "sha256": "9f8a4b93731a23370861ec9f07f06ea8fc4f5cdcd926cdd24cdf8e382beb3695",
+      "bytes": 9283
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/frozen/scripts/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.py",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/frozen/scripts/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.py.txt",
+      "sha256": "585aa3813d9195188461cd5fef7910e8dfb91bb61c40d052a027e40c606c92a3",
+      "bytes": 17826
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/frozen/scripts/runner_cache.py",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/frozen/scripts/runner_cache.py.txt",
+      "sha256": "3e4d325e352be59ea32ced10d461186f9844141244165f84f980a2a08ba1d306",
+      "bytes": 26101
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/source-freeze.json",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/evidence/source-freeze.json.txt",
+      "sha256": "97476fbeb197164042e3c97728b56d25e1bbf1b971fdb27978a3f900d59cde87",
+      "bytes": 3900
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/closure.json",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/evidence/closure.json.txt",
+      "sha256": "7ecf2ba8dc6b64891feb66d35fab14cb69c6ed8943cdcbabe5de30f4a16a7a0a",
+      "bytes": 12323
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/identities.json",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/evidence/identities.json.txt",
+      "sha256": "08f70eed874c7554ef2446f1f956026e2ec18d36c8b9961b0e4a9d292170f6e4",
+      "bytes": 3531
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/predicate-preservation.json",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/evidence/predicate-preservation.json.txt",
+      "sha256": "87e189c3c9204a9ad9c66f6460aa43a51007ce7c95e29b5bbb797d42e1d38c44",
+      "bytes": 144
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/runtime.json",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/evidence/runtime.json.txt",
+      "sha256": "512328e90a07a3fcf9550ef9051f86b4f6384954f5714eba39a98df295beaac2",
+      "bytes": 538
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/consumer-dispositions.json",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/evidence/consumer-dispositions.json.txt",
+      "sha256": "e0c6018ef6242c98777bf01f5f0fc9f7bcd94ac2f39c82e100b1a0a800c87016",
+      "bytes": 778
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/consumers.log",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/evidence/consumers.log.txt",
+      "sha256": "d39435f573afb4761ca0daeaa9ce1f07d55d8751c8111203aa4dbc4687afb1f7",
+      "bytes": 4057
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/source.diff",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/evidence/source.diff.txt",
+      "sha256": "f74e305531e4f0b81f0978bdbfe41f4b6969bcf91564219376a467869fa61ddd",
+      "bytes": 44426
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/HANDOFF.md",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/evidence/HANDOFF.md.txt",
+      "sha256": "04ba8d42f341d231b1c8782983eed237510953798ab0e2ca22b78b5ff8dcc8ac",
+      "bytes": 3973
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/repair-9852-split2/capture.py",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/evidence/capture.py.txt",
+      "sha256": "9933d50794e38e77a2cb68d88a2a4abb2c256bafe06ce027f8cb77f4f1860d2a",
+      "bytes": 1968
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/confirm-9852/split2-owner-review/REVIEW.md",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/independent-review/REVIEW.md.txt",
+      "sha256": "d98c04922cff31ca97d787b925eabb3692de49c609e19b74c33eef28ef21f733",
+      "bytes": 5022
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/confirm-9852/split2-owner-review/VERDICT.json",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/independent-review/VERDICT.json.txt",
+      "sha256": "b18f863fd91a2481b9d57e158c77777914a9115092143ab614ebca491a9e5282",
+      "bytes": 593
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/confirm-9852/split2-owner-review/algebra-controls.json",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/independent-review/algebra-controls.json.txt",
+      "sha256": "02f8be40a7e6fc8fa5713b6fac14d4e41ce6c17d5c998318fb6b85169c1d0ffd",
+      "bytes": 725
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/confirm-9852/split2-owner-review/decisive.json",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/independent-review/decisive.json.txt",
+      "sha256": "020e33476009365129d099cf92f1b20499df6c38744fd9cbc6051886eab984f9",
+      "bytes": 7653
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/confirm-9852/split2-owner-review/decisive.py",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/independent-review/decisive.py.txt",
+      "sha256": "68235c3acc99c7cac1153332167e316ae7d726c7054269dea097d6d44bdcc50a",
+      "bytes": 1794
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/review-backlog-evidence-20261021/confirm-9852/split2-owner-review/source-identities.json",
+      "archived_path": "archive/notes/review_feedback/pr9852-split2-failed-certificate-2026-10-23/independent-review/source-identities.json.txt",
+      "sha256": "42090792a5064db7d39dd786543ea7f2f81cab681f108a90d8098d11daab0861",
+      "bytes": 1006
+    }
+  ]
+}

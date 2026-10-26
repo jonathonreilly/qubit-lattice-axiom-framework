@@ -36,6 +36,7 @@ NOTE_PATH = (
 )
 PARENT_NOTE_PATH = ROOT / "docs" / "HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md"
 
+AUDIT_TIMEOUT_SEC = 120
 AUDIT_INPUT_PATHS = (
     "docs/HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
     "docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md",
@@ -92,10 +93,11 @@ def quartic_density(coeff: Fraction, v: Fraction) -> Fraction:
 
 
 def positive_fourth_root(x: Fraction) -> Fraction | None:
-    """Exact positive rational fourth root of x, or None when it is irrational.
+    """Return an exactly verified positive rational fourth-root candidate or None.
 
     The candidate is taken from a float estimate and then CONFIRMED by exact
-    exponentiation, so a wrong estimate returns None rather than an approximation.
+    exponentiation. None means no nearby candidate was verified; this search
+    is not a complete rational-root decision procedure for arbitrary inputs.
     """
     if x <= 0:
         return None
@@ -114,7 +116,7 @@ def endpoint_coefficients(u0_sq: Fraction) -> tuple[Fraction, Fraction]:
 
 
 def formal_readouts(g: Fraction, g_y: Fraction, v: Fraction):
-    """Formal scalar labels of the defined quadratic form. No observed input."""
+    """Formal labels for v>0 and real g,g_y with g != 0; no observed input."""
     mw_sq = g * g * v * v / 4
     mz_sq = (g * g + g_y * g_y) * v * v / 4
     cos_sq = g * g / (g * g + g_y * g_y)
@@ -311,7 +313,7 @@ def main() -> int:
         and "bare_retained_allowed: false" in note,
     )
     check(
-        "bridge markdown-links load-bearing EW and D4 readout authorities",
+        "documentary links identify EW context and the conditional D4 bridge",
         "[`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md)" in note
         and "[`HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`](HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md)" in note,
     )

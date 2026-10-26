@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hierarchy_fixed_density_physical_selector_no_go_2026_06_18.py
+runner_sha256: 549dba735663af956d554e53ee4659f2c74a40eb97c7f849cbf8a6138f9830ce
+input_fingerprint_sha256: faa2ce079a6e583b1c2af326f055ac93a5a10817b8087310d589e813f3e8e611
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+Restricted fixed-density scalar-law examples
+==============================================================================
+  [PASS] documentary boundary states restricted algebra and missing physical no-go
+  [PASS] source distinguishes specified density from a free density parameter
+  [PASS] coefficient bridge supplies quartic premises, not physical identification
+  [PASS] EW bridge leaves the physical interpretation open
+  [PASS] parent retains open coefficient identification
+  [PASS] endpoint coefficients are positive
+         {'A2': 0.125, 'A4': 0.14285714285714285, 'Ainf': 0.14433756729740646}
+  [PASS] A2/A4 endpoint ratio equals 7/8
+         A2/A4=0.875000000000
+  [PASS] Ainf/A2 endpoint ratio equals 2/sqrt(3)
+         Ainf/A2=1.154700538379
+  [PASS] fixed-density bridge reproduces v4/v2=(A2/A4)^(1/4)
+         v4/v2=0.967168210134
+  [PASS] fixed-density bridge reproduces vinf/v2=(A2/Ainf)^(1/4)
+         vinf/v2=0.964678629960
+  [PASS] absolute-density scaling rescales all v_i by lambda
+         A2:3.700000000000, A4:3.700000000000, Ainf:3.700000000000
+  [PASS] absolute-density scaling leaves all endpoint ratios unchanged
+  [PASS] each endpoint can be normalized as reference without violating fixed-density algebra
+         A2->v_ref=1.0, A4->v_ref=1.0, Ainf->v_ref=1.0
+  [PASS] different endpoint references give distinct compatible readout triples
+         {'A2': (1.0, 0.967168210134, 0.96467862996), 'A4': (1.033946307914, 1.0, 0.997425907771), 'Ainf': (1.036614649628, 1.002580735279, 1.0)}
+  [PASS] documentary boundary excludes an observed target or replacement ledger
+  [PASS] source preserves future positive physical-selector routes
+  [PASS] normalization examples explicitly change density
+  [PASS] N1-N8 limitations are visible without a route-exhaustion PASS claim
+N5 granularity: per_element/per_site/per_mode not executed; scalar-only examples.
+per_block: supplied A2=0.125000000000, A4=0.142857142857; ratio=0.875000000000.
+angular-average formula: Ainf=0.144337567297; no lattice or continuum executed.
+reference normalization yields 3 triples at different densities.
+Physical selector routes are not exhausted; the broader no-go packet is incomplete.
+
+SUMMARY: RESTRICTED QUARTIC-LAW CHECKS PASS=18 FAIL=0
+
+----- stderr -----
+

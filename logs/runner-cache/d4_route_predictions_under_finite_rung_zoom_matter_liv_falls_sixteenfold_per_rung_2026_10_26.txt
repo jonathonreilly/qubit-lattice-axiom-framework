@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/d4_route_predictions_under_finite_rung_zoom_matter_liv_falls_sixteenfold_per_rung_2026_10_26.py
+runner_sha256: 0265c8619cdb14a0f0067efc7a6d182b7b263e01a875e29a9926f68acf2f5aca
+input_fingerprint_sha256: 7d285226e06f90fd6930cdd9c188b9afa1ddae8a39b2df170f97e2a4e7fff325
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 8.06
+status: ok
+----- stdout -----
+PASS C1 [T] on shell p^2 = kappa J6 (no dim 6): kappa_scalar = 1/540, kappa_fermion = 1/90 exact; photon (triangles) 1/1440 | sympy ideal test mod p^2 exact; photon kappa*1440 = 0.99999
+PASS C1b root-slicing scalar: direct band solve = -2 kappa J6(i t + n) (face, body); slice cube axes 0 | axis +3.1855e-06/+0.0000e+00 face -1.6664e-02/-1.6667e-02 body -1.9750e-02/-1.9753e-02
+PASS C2 [T+F] rung n light band E_n(k) = 2^n E_0(k/2^n) (blocking keeps poles): beta_n = beta_0/16^n; beta_0 = -J6/45 = 6x scalar | identity rel 8e-12 (n<=3, body); NN beta_0 body -1.1852e-01 vs -1.1852e-01; slice-fit ratio*16^n n=1,2,3: 1.005 1.006 1.006 (k^8 terms at k a<=.35)
+PASS C3 [F] exact fixed point (#10098 image tower): lowest band = |k| on face/body rays; dim 8 bounded far below beta_3 | max |E/k - 1| 1.9e-11; |beta_inf| < 1e-08 vs |beta_3| 2.9e-05
+PASS C4 [F] Borici slab (D_eff = D* + mu): E^2 - k^2 constant over k and rays to 1e-6; its anisotropy scales as mu^2 | m_eff^2 0.033475 (mu = 0.2); anisotropy at k = .5: 5.7e-07 (mu .2), 1.4e-07 (mu .1), ratio 3.99
+  E* = 1.2177e+18 GeV (L = 8.103e-35 m). |beta| in (ka)^4, body ray (max): photon 7.407e-03, NN fermion 1.185e-01
+  rung | |b_e| | b_e/b_g | gamma->ee eV | e->e gamma eV | A-wall eV/A flow (frozen) | E_QG,4 e GeV
+     0 | 1.19e-01 | 16.0000 |  1.91e+20 |         - | 9.67e+20 (9.67e+20) | 1.75e+18
+     1 | 7.41e-03 |  1.0000 |         - |         - | 1.53e+21 (1.53e+21) | 3.49e+18
+     2 | 4.63e-04 |  0.0625 |         - |  2.88e+20 | 1.53e+21 (2.44e+21) | 6.98e+18
+     3 | 2.89e-05 |  0.0039 |         - |  2.80e+20 | 1.53e+21 (3.87e+21) | 1.40e+19
+   inf | 0.00e+00 |  0.0000 |         - |  2.79e+20 | 1.53e+21 (inf) | inf
+PASS C5 n = 0 reproduces #10094 (gamma -> ee 1.9e20 eV body; wall 9.9e20 A eV with the face coefficient); n = 1: b_e = b_g, both closed | gamma->ee 1.914e+20; wall(face) 9.945e+20, wall(body) 9.668e+20
+PASS C5b n >= 2 (and the exact fixed point): electron faster than the (unzoomed) photon -> e -> e gamma opens above 1e20 eV; gamma -> ee closed | e -> e gamma: n=2 2.88e+20, n=3 2.80e+20, inf 2.79e+20 eV (body); E_QG,4 photon 3.49e+18 GeV
+PASS C6 graviton splitting at 100 Hz = 2A (E/E*)^2, 2A <= 1/3 (axis), 1/4 (face), 0 (body); 1e-62 only via an eV/GeV slip | |dc| = 3.85e-80 (a = 2L); with a = L: 9.6e-81 (#10100); slip (E in eV / E* in GeV)^2 = 3e-63..1e-61
+PASS C7 cubic gamma -> e+e-: k_th(S) = (144 (4S-1)/(3S-1)^2)^(1/4) sqrt(m_e E*), S = sum n^4: axis 80, face 122 PeV, body closed | axis 8.041e+16, face 1.222e+17, sky-average ray (S = 3/5) 1.051e+17 eV; 160 PeV needs S = 0.41; body closed
+  tau cubic (Lam 2.62e+18..9.25e+17 GeV) central/worst yr: e+pi0=2.8e+45/1.1e+43 nubarK+=1.1e+46/1.8e+43 pi+nubar=1.4e+45/5.3e+42 n:pi0nubar=2.8e+45/1.1e+43
+  tau D4 (Lam 1.22e+18..4.31e+17 GeV) central/worst yr: e+pi0=1.3e+44/4.9e+41 nubarK+=5.1e+44/8.4e+41 pi+nubar=6.5e+43/2.5e+41 n:pi0nubar=1.3e+44/4.9e+41
+PASS C8 nucleon lifetime: 5.3e42 yr = cubic WORST case (pi+ nubar, cell, A = 3, max W); 1e46 = cubic CENTRAL nubar K+ only | D4 map: shortest central 6.5e+43 yr, worst 2.5e+41 yr; min margin vs bounds 2e+07
+PASS C9 [E] Ls is not spectrum-inert: m_res(Ls = 8) is cell-scale; m_res < m_e needs Ls >= 46, < 0.45 eV (KATRIN) needs Ls >= 58 | m_res(8) = 2.6e+14 GeV; Ls_min(e) 46, Ls_min(nu) 58
+runtime 6.7 s
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

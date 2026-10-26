@@ -356,7 +356,11 @@ Bosonized qubit sites (bosonized-sites, 2026-10-26, rethink r3; campaign files):
   - Time of flight stays unmeasurable.
   - Fixes: graviton splitting at 100 Hz = 3.85e-80 (the 1e-62 was a unit slip; the 1e-80 used L, not 2L). The cubic photon-decay threshold is 80.4 PeV axis / 122 PeV face, retracted on D4. Nucleon lifetime on the D4 map is >= 2.5e41 yr worst case, 6.5e43 yr central.
   - New: the slab residual mass needs a slab depth >= 46 to stay below m_e (>= 58 for neutrinos).
-  - INTERPRETIVE FLAG: these values read rung n as a start lattice 2^n FINER than the sites. Under "the lattice is the smallest object" the zoom runs upward from the sites, so this reading needs checking. If matter lives 2^n coarser instead, its LIV grows by 16^n.
+  - FLAG RESOLVED (d4-zoom-direction, PR #10111, 6/6, own re-run identical): the table STANDS, but the "finer lattice" explanation is wrong and is dropped.
+    - Blocking keeps poles, so the physical E(K) is fixed by the kernel ON THE EVENTS.
+    - R^n(NN) is itself an exponentially local kernel on the events (periodic on the event Brillouin zone to 5e-15, inverse decay ~2.2), so "n rungs" needs no finer lattice.
+    - Event-scale coefficient: -0.1185, -7.41e-3, -4.63e-4, -2.89e-5 for n = 0..3, and 0 as n -> infinity.
+    - Consequence: the rung count n is a free discrete choice unless fixed by rule (see CANDIDATE_AXIOM_RULES, revised decision).
 - **Still to rebuild on D4:**
   - the copy sign's role in carrying the 16;
   - slab chirality and the 4D index;

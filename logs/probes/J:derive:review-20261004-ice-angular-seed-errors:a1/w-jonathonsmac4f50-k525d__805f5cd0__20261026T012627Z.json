@@ -1,0 +1,32 @@
+{
+ "task": "J:derive:review-20261004-ice-angular-seed-errors:a1",
+ "type": "judgment",
+ "lane": "review-science-20261004",
+ "worker": "w-jonathonsmac4f50-k525d",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261004-ice-angular-seed-errors/w-jonathonsmac4f50-k525d/check.py",
+ "seed": 77987,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "805f5cd0",
+ "started_utc": "20261026T012627Z",
+ "elapsed_s": 141.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "for the multiset {0,1,1} (free vs transverse polarization at k=(0,1,1)2pi/L) the angular difference D is exactly -119/450 at L=2 (landed prior art), is not symmetry-forced to vanish, and seed-level estimates give L=4: -0.0009+-0.0005 (EQUIVALENT at margin 0.005), L=6: +0.0020+-0.0012 (EQUIVALENT at margin 0.005), L=8: +0.0004+-0.0014 (EQUIVALENT at margin 0.005), with tau_int ~ 1.5 loops so the error model is sound but the sampling precision does not reach 0.05 %."
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 27/27 PASS, no HIT line; D=-119/450 at L=2 restates landed eigenvalues (prior art); seed-level estimates at L=4,6,8 are inside the 0.5% equivalence margin (margin fixed after pilot runs, chains doubled for L=6,8; both disclosed); no L=16 estimate.",
+ "what": "Read the preserved draft source and controls, then independently estimate one angular covariance multiset with seed-level uncertainty, autocorrelation/mixing diagnostics, consistent FFT/projector normalization and a predeclared equivalence margin. The four original runner seeds pass but a second seed group fails; reported0.2%/0.25% descriptive ranges are not simultaneous confidence bounds or a model theorem. Verify the tiny exact control with disjoint machinery, distinguish sampling error from finite-size anisotropy and return one checked result plus the first unresolved step. No assertion that the original draft was scientifically landed. Owner-requested review transfer as science work, not a PR snapshot or adoption. Fetch current main, verify the pinned source objects, and read the actual axiom memo and registered primitive grants. Check related tasks, active claims, completed attempts and referee reports before selecting ONE distinct obligation. Deliver numbered PROVED/CHECKED/ASSUMED steps in probes/work/derive/<problem>/<worker>/ATTEMPT.md, a self-contained disjoint check.py and RECOVERY_STATUS.json listing hashes, the first unresolved step and remaining work. Known review corrections are background, not a new HIT. Commit the checker before run_probe.py; print SUMMARY and HIT only for a demonstrated new result or defect. Use claim.py and ordinary cross-model confirmation. Source recovery alone is not completion. Do not start workers, spawn agents, create PRs, change budgets or edit scientific/audit authority in this task.",
+ "stdout_sha256": "a2d0a22c186305ae499a77e31ae1e5556ea014500e16aaa87672cdd9f4adb3b3",
+ "stdout_tail": "n quoted numbers: its two seed groups for {0,1,1} differ by 2.65 sigma; across the 5 multisets that is a Sidak p ~ 0.04, and chi2 probabilities as small as 0.02 (0.05) among 5 multisets occur with probability ~0.10 (~0.02) under the null -- the scatter is unusual at the 2-4 % level, not conclusive :: z=2.65, p=0.0080, Sidak(5)=0.039, P(min p<=0.02 of 5)=0.096, P(>=2 of 5 <=0.05)=0.0226\nPASS D2 power: measured per-loop sigma and tau_int at L=4 give the number of completed loops needed for a 90% TOST at margin 0.2% (se 0.12%) and for se = 0.02% (the size of the source's pooled mean offset) :: sigma_loop=0.582, tau=1.38: loops for se=0.0012: 6.33e+05; for se=0.0002: 2.34e+07\nPASS D3 summary table of D_hat(L) with seed-level errors, next to the exact D_2 and the source's L=16 {0,1,1} values :: L=2 exact -0.2644; L=4: -0.00093+-0.00051 [EQUIVALENT]; L=6: +0.00199+-0.00119 [EQUIVALENT]; L=8: +0.00037+-0.00143 [EQUIVALENT]; source L=16: -0.0006+-0.0008 and +0.0024+-0.0008 (binned)\ntime 141 s\nTOTAL: PASS=27 FAIL=0\nSUMMARY: for the multiset {0,1,1} (free vs transverse polarization at k=(0,1,1)2pi/L) the angular difference D is exactly -119/450 at L=2 (landed prior art), is not symmetry-forced to vanish, and seed-level estimates give L=4: -0.0009+-0.0005 (EQUIVALENT at margin 0.005), L=6: +0.0020+-0.0012 (EQUIVALENT at margin 0.005), L=8: +0.0004+-0.0014 (EQUIVALENT at margin 0.005), with tau_int ~ 1.5 loops so the error model is sound but the sampling precision does not reach 0.05 %.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k525d",
+  "at_utc": "20261026T012857Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

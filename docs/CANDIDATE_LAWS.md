@@ -361,6 +361,11 @@ Bosonized qubit sites (bosonized-sites, 2026-10-26, rethink r3; campaign files):
     - R^n(NN) is itself an exponentially local kernel on the events (periodic on the event Brillouin zone to 5e-15, inverse decay ~2.2), so "n rungs" needs no finer lattice.
     - Event-scale coefficient: -0.1185, -7.41e-3, -4.63e-4, -2.89e-5 for n = 0..3, and 0 as n -> infinity.
     - Consequence: the rung count n is a free discrete choice unless fixed by rule (see CANDIDATE_AXIOM_RULES, revised decision).
+  - **Gauged fixed point (d4-gauged-fixed-point-locality, PR #10112, 8/8, own re-run identical): locality HOLDS** (U(1) backgrounds, small tori, no dynamical links).
+    - Gauge-covariant blocking reproduces the free map to 5e-12 and is covariant to 9e-16.
+    - Decay rates stay at or above the free value: 1.79-1.88 from the admissibility bound to plaquette deviation 1.9; 2.23-2.55 after two steps. Steps converge (change ratio <= 0.67).
+    - Index = -Q (Q = 0, +-1) in smooth and rough backgrounds.
+    - Exact GW holds only in the limit, and in a background the chirality error falls only ~2x per step (~22x free). So finite rungs are worse with forces on, which supports the exact-limit decision.
 - **Still to rebuild on D4:**
   - the copy sign's role in carrying the 16;
   - slab chirality and the 4D index;

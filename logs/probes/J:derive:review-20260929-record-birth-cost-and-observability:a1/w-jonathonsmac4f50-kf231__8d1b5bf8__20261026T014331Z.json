@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20260929-record-birth-cost-and-observability:a1",
+ "type": "judgment",
+ "lane": "review-science-20260929",
+ "worker": "w-jonathonsmac4f50-kf231",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20260929-record-birth-cost-and-observability/w-jonathonsmac4f50-kf231/check.py",
+ "seed": 79011,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "8d1b5bf8",
+ "started_utc": "20261026T014331Z",
+ "elapsed_s": 34.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "exact general site-instrument cost law cost = lam(2 - Re Tr A) in the maximally mixed walker sea, its exact sharp floor lam = 1.19 t, the weak/QND cost-information frontier, the pointer ledger with finite coupling, an open-law monotone count and rate/accumulation accounting; unproved: non-QND frontier, pointer lock cost, interacting/gapped vacua."
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 57/57 PASS (~20 s); in the inversion-paired massless walker sea any parity-respecting one-site record instrument costs lam(2-Re Tr A) (proved with a Wick lemma needing a maximally mixed site block; Fock-checked), sharp-class floor lam=1.19 t, weak/QND frontier cost>=lam(1-BC*(I)), Lindblad law with non-decreasing record count; non-QND frontier, pointer lock cost, interacting/gapped vacua unproved (S14); source note not on main; no open-PR search beyond local grep.",
+ "what": "Take one explicit local formation instrument and compute total energy supplied, stored or released, including coherent back-action and apparatus. Compare against the source-dependent site-local 1.19 cost rather than treating it as the minimum over all record laws. Prove or refute a concrete observable pointer channel with a controlled classical-information criterion. A finite fixed-H monotone-count theorem is not an impossibility for open laws. Heat budgets bound a rate under stated assumptions; cosmological accumulation needs dilution, redshift and loss accounted for. Owner-requested research transfer after landing review. The source is an unlanded hypothesis, not authority: fetch the named author branch, verify the frozen Git SHA and exact path/hash from probes/work/review-science-20260929/SOURCE_MAP.json. Fetch current origin/main and prefer its corrected bounded sources; read the actual axiom memo and primitive grants before premise judgments. Check related tasks, completed attempts, referee reports and active claims before choosing ONE distinct obligation. Read the complete argument, actual inputs and paired code for that obligation. Known review corrections are background, not a new HIT. Deliver numbered PROVED/CHECKED/ASSUMED steps in ATTEMPT.md, a self-contained check.py with disjoint machinery, and RECOVERY_STATUS.json with hashes, first unresolved step and remaining obligations. Prove finite claims exactly where possible; failed search is not a no-go and negative claims require N1-N8 before promotion. Commit the checker before run_probe.py; print SUMMARY with the actual result and HIT only for a demonstrated new result or defect. Finish through claim.py and ordinary cross-model confirmation. Use the existing maximum-thinking J campaign; do not spawn agents, start workers, change budgets, create PRs or edit scientific/audit authority.",
+ "stdout_sha256": "70fce45769a844941da3b7a2f516f927abf13c7f4da5358bc3ca829e610b9f5c",
+ "stdout_tail": "/3 (rest mass, dilutes) of the undiluted r t0\nPASS K3 checked (reference constants): at a=1e-19 m, 1.19 hop energies = 3.8e-7 J; Earth's heat 7e-12 W/kg allows ~2e-5 fully-released records per kg per s; a held mode record releases only ~3 % so the heat bound loosens ~33x but the stored 97 % is rest mass, a separate budget rate_full=1.85e-05 rate_held=6.07e-04 complete-lock=9.26e-06\nPASS K4 checked: QND records bound the information rate: bits per kg per s <= P / (ln2 lam hbar c/a) under the stated assumptions (distinct fresh sites >= 2 apart, additive cost, all cost released as heat) 2.67e-05 bits/kg/s\nINFO runtime 32.7 s\nHIT: In the inversion-paired massless walker sea any parity-respecting site-supported record instrument costs exactly lam(2 - Re Tr A) (proved; Fock-checked), so every nontrivial SHARP site-local instrument costs at least lam = 1.19 t (equality for every binary type, 2.39 t for complete locks), while weak or collective instruments cost less: 1.19 is the exact floor of a stated sharp class, not a minimum over record laws; a reliable (I -> 1 bit) QND pointer pays lam(1 - BC*(I)) -> lam.\nTOTAL: PASS=57 FAIL=0\nSUMMARY: exact general site-instrument cost law cost = lam(2 - Re Tr A) in the maximally mixed walker sea, its exact sharp floor lam = 1.19 t, the weak/QND cost-information frontier, the pointer ledger with finite coupling, an open-law monotone count and rate/accumulation accounting; unproved: non-QND frontier, pointer lock cost, interacting/gapped vacua.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-kf231",
+  "at_utc": "20261026T014413Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Scoped results for a stated instrument class in the supplied walker sea. Same-family, unrefereed.",
+  "by": "w-jonathonsmac4f50-kf231",
+  "at_utc": "20261026T014413Z"
+ }
+}

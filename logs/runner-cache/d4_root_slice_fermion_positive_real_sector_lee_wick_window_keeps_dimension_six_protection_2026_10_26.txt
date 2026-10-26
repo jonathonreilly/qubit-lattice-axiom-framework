@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/d4_root_slice_fermion_positive_real_sector_lee_wick_window_keeps_dimension_six_protection_2026_10_26.py
+runner_sha256: 8d347d4302a729fa30643ce7e158ed01a0129f9b1d71dbfe81b1bff431884d96
+input_fingerprint_sha256: 09493c28c7c1a877c2e13b9229ac1869eec054bc10a63541519395731bff3cce
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.22
+status: ok
+----- stdout -----
+PASS 1 [exact] |W(F4)| = 1152 has 24 reflections (12 long-root + 12 short lines); a time reflection exists only for root and short directions | root (1,1,0,0): yes; short e1: yes; short (1,1,1,1): yes; 24-cell edge (2,1,1,0): no; 24-cell face (1,1,1,0): no; D4* = F4 lattice -> D4 by M/sqrt2 (short vectors -> roots), so D4* axis = D4 root, D4* root = D4 e1
+PASS 2 calibration Z^4 (time axis): Wilson r=1 real sector definite; naive r=0 indefinite (T not positive) | Wilson 3e-16, naive 1.00
+PASS 3 short-direction time (e1 = D4* root): real negative-norm branches for every w; edge direction (2,1,1,0): poles not conjugate-closed (no reflection) | e1 wrong-sign: w=0.5:1.00 w=1.0:1.00 w=1.2:1.00 w=2.0:1.00; (2,1,1,0) unpaired-pole defect 9
+PASS 4 [exact] root time, k = 0, m = 0: both g_t sectors have discriminant 27648 (144 w^4 - 213 w^2 + 2); window edges w^2 = (71 -+ 17 sqrt17)/96 | w- = 0.09721, w+ = 1.21232; the CL natural point w = 1 is inside
+PASS 5 root time, w in (w-, w+): every real pole has one norm sign (<1e-13) and the rest is ONE complex-conjugate pair with conjugate residues (pseudo-Hermitian T) | min Re E of the pair: (w0.3,m0.02):0.83 (w0.3,m1.0):1.66 (w0.7,m0.02):1.75 (w0.7,m1.0):2.31 (w1.0,m0.02):2.45 (w1.0,m1.0):2.88 (w1.2,m0.02):3.07 (w1.2,m1.0):3.45; outside (w=0.05, 1.25): wrong 0.49, 0.67
+PASS 6 light branch inside the window: v = 1 and the k^2 coefficient of v - 1 vanishes in every direction (W(F4) protection survives in the positive sector) | max |c2| w=0.5:1e-09 w=1.0:7e-10 w=1.2:1e-09
+PASS 7 w = 1: the pair never meets the real sector on sampled real k (analytic spectral projector), every branch has rank 2 (one Dirac fermion per branch) | min |lam_pair - lam_real| = 0.254
+PASS 8 zoom: the complex pair's indefinite weight on coarse slices decays exponentially with the rung factor b (b=8 at float floor) | b=1:4.5e-04 b=2:7.4e-07 b=4:1.3e-13 b=8:7.2e-13
+PASS 9 [exact] W(F4): 1 quartic scalar, 1 cubic vector covariant (p^2 p), 2 quintic (p^4 p, grad J6); B4: 2, 2, 4. Any W(F4) Dirac kernel is p-isotropic through p^3 | W(F4) [1, 1, 2], B4 [2, 2, 4]
+PASS 10 [exact] JW spin Hamiltonian spectrum = fermion Fock sums, complex single-particle pair kept: bosonization cannot cure a non-positive fermion | max mismatch 8e-15 over 64 levels, single-particle Im 0.17
+VERDICT: the W(F4) nearest-neighbour fermion along a root has an exactly positive real sector for w- < w < w+ (contains the dim-6-free light Dirac branch);
+  the only defect is one complex-conjugate (Lee-Wick) pair at Re E >= 0.8-3.5 /a (rises with w). Short and edge directions fail. Interacting fate OPEN.
+TOTAL: PASS=10 FAIL=0   (2.5 s)
+
+----- stderr -----
+

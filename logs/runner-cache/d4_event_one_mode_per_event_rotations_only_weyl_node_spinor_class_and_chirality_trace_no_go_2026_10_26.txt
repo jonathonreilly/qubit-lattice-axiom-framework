@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/d4_event_one_mode_per_event_rotations_only_weyl_node_spinor_class_and_chirality_trace_no_go_2026_10_26.py
+runner_sha256: 819fbe250249193b00575b60f7fa271bb118489d37f4faad3af0c9db29125f66
+input_fingerprint_sha256: f73177adfe05fdf4ecac224e87ee60787d856099607b2de1fd7773009cb26f93
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 12.47
+status: ok
+----- stdout -----
+PASS C1 [T] W(F4) = 1152, rotations W(F4)+ = 576 contain -1; every rotation lifts to Spin(4): A x = l x rbar: lift err 2e-16
+PASS C2 [F] seeded sample: protected rotations-only groups (quartic 1, cubic spinor covariant 2) have orders 96-576, all contain -1: 16 groups, orders [96, 192, 288, 576]
+PASS C3 [T] spinor class NONTRIVIAL for every protected group (z in [Ghat,Ghat]: no 1-dim lambda with lambda(z) = -1, so S+ is not a genuine G-rep up to phase); contrast: trivial for some unprotected ones: protected nontrivial 16/16; unprotected nontrivial 0/29
+PASS C4 [T] H^1(G, D4/2D4) = 0 for orders 288, 576 (every realisation, any phases, fixes an event class: genuine Bloch module); 1-2 for orders 96, 192 (nonsymmorphic realisations exist); every protected G fixes ONLY P = 0 of the cell zone: H^1 by order [(96, 1), (96, 2), (192, 1), (288, 0), (576, 0)]
+PASS C5 [F] most general invariant kernel (shells |d|^2<=6, 145 hops), every sampled realisation (tau) and psibar character twist: forced light blocks at P = 0 are never 2-dim; 1-dim blocks have zero linear term; larger blocks have L = 0 or are anisotropic: 187 cases, forced dims [0, 1, 4, 5, 6, 10, 12], 1-dim |L|/|D0| 1e-16; larger: 144 with L = 0, others min anisotropy 1000000000.0
+PASS C6 [T] spin-class realisations (96, 192; nonsymmorphic tau with no fixed class, U(1) phases): the lifted -1 has the SAME trace on every 16-mode module, so [M_psi] - [M_psibar] = (S+ - S-)alpha (needs trace difference 4) is impossible: no Weyl node, tuned or forced: 288 realisations, |tr(-1 lift)| = [np.float64(8.0)]
+PASS C7 [T] the same realisations can contain S+alpha and S-alpha together (order 96 only): a Dirac light block at P = 0 is rep-allowed (mass not forbidden; lead for GW): (realisation, alpha) pairs with a Dirac block: 1152
+PASS C8 [T] NN control: 16 nodes, chiralities +-1, sum 0; a rotation PRESERVES chirality, a plain reflection FLIPS it, the OS map Theta (reflection + dagger) PRESERVES it: sum 0; rot +1, refl -1, Theta +1
+PASS C9 [T] real-time step on a root slice: rotations fixing the time root = 24 (proper cube group), 48 with time reversal; quartic invariants on transverse R^3 = 2 (no dim-6 protection from the slice symmetry alone); no improper element in G: |stab| 24, 48; quartic 2, 2
+runtime 12.3 s
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

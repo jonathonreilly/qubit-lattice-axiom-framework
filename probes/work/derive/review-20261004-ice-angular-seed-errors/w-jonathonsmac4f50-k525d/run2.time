@@ -1,0 +1,1 @@
+python3 check.py > run2.out 2> run2.err  161.77s user 1.70s system 80% cpu 3:22.69 total

@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/cubic_ice_small_wavevector_covariance_keeps_the_transverse_angular_form_2026_09_24.py
+runner_sha256: 4a726939426fd3c8f2b0bf38140701e3e545ee83aa9549fd8326b28dbe7ef30a
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 1058.59
+status: ok
+----- stdout -----
+== A. The exact L = 2 torus ==
+[PASS] all 2^24 arrow patterns give 9600 ice configurations, 880 at zero flux, in 125 winding sectors, <W^2> = 76/25 :: 9600, 880, 125, 76/25
+[PASS] the worm reproduces <W^2> and the zero-flux fraction within 4 standard errors and visits all 125 sectors :: <W^2> 3.0367 +- 0.0094 vs 3.04; zero flux 0.09155 +- 0.00065 vs 0.09167; sectors 125
+
+== B. The identity and the offset, four fresh seeds ==
+[PASS] every batch obeys the unit-arrow identity: the covariance sums to N over the zone :: 160 batches of 25000 loops from seeds (4001, 4002, 4003, 4004); largest deviation 1.8e-12
+[PASS] the smallest wavevectors imply a stiffness 0.1% to 0.5% above K_cont/2, by more than 5 standard errors :: c = 0.33450 +- 0.00010, +0.337%, 10.8 standard errors
+
+== C. Permuted wavevector sets ==
+[PASS] permuted wavevector sets share Q exactly, and five multisets have two usable assignments :: 5 multisets: (0, 1, 1) (P 1.000 vs 0.500), (0, 1, 2) (P 1.000 vs 0.206), (0, 2, 2) (P 1.000 vs 0.500), (1, 1, 2) (P 0.829 vs 0.342), (1, 2, 2) (P 0.885 vs 0.558); largest Q spread 1.3e-15
+
+== D. The angular form ==
+[PASS] each multiset's ratio difference lies within 3 standard errors of zero; their mean within 3 and below 0.1% :: (0, 1, 1): -0.0006 +- 0.0008; (0, 1, 2): +0.0003 +- 0.0006; (0, 2, 2): +0.0001 +- 0.0009; (1, 1, 2): -0.0005 +- 0.0006; (1, 2, 2): +0.0010 +- 0.0006; mean +0.00008 +- 0.00030
+
+time 1058 s
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

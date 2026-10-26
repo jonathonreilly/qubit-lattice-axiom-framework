@@ -1,0 +1,41 @@
+{
+  "task": "J:derive:review-20261004-ice-angular-seed-errors:a1",
+  "source_branch": "claude/cubic-ice-covariance-keeps-transverse-angular-form-20260924",
+  "source_head": "c2f56b729f4aae3eb8acf115c2be4fa074269d46",
+  "source_objects": [
+    {
+      "path": "docs/CUBIC_ICE_SMALL_WAVEVECTOR_COVARIANCE_KEEPS_THE_TRANSVERSE_ANGULAR_FORM_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "a6843b8c9bc984103e741c1f000b9d305a856e6c1f786f34a6416d7a49270af3",
+      "expected_sha256": "a6843b8c9bc984103e741c1f000b9d305a856e6c1f786f34a6416d7a49270af3",
+      "verified": true
+    },
+    {
+      "path": "logs/runner-cache/cubic_ice_small_wavevector_covariance_keeps_the_transverse_angular_form_2026_09_24.txt",
+      "sha256": "f489e6c3f3deff83055d8b96d39f3ac0ff3b5fda02d2c6c9b96fa0e21da95041",
+      "expected_sha256": "f489e6c3f3deff83055d8b96d39f3ac0ff3b5fda02d2c6c9b96fa0e21da95041",
+      "verified": true
+    },
+    {
+      "path": "scripts/cubic_ice_small_wavevector_covariance_keeps_the_transverse_angular_form_2026_09_24.py",
+      "sha256": "4a726939426fd3c8f2b0bf38140701e3e545ee83aa9549fd8326b28dbe7ef30a",
+      "expected_sha256": "4a726939426fd3c8f2b0bf38140701e3e545ee83aa9549fd8326b28dbe7ef30a",
+      "verified": true
+    }
+  ],
+  "main_checkout": "a77a3449c91a753b06ce2a63876cd460b62cb4cf (origin/main later at 3e1a2dd2531590dabf85bee8db56175ba9b96e90; no diff on axiom memo, primitive registry skill, docs/UNIFORM_ICE*, docs/CUBIC_ICE*)",
+  "deliverable_hashes": {
+    "check.py": "cf8373e17fa16f81abe9fc6c75368a0eef3d54449d0f7d4c607fe8e01bc66d3d",
+    "ATTEMPT.md": "0d5f2ce96c1e753a8571348418f803f7db7adc9552598730c54bc53eb2340526"
+  },
+  "check_result": "TOTAL: PASS=27 FAIL=0; exit 0; 164 s wall; peak RSS 665 MB (macOS /usr/bin/time -l); no HIT line; output deterministic across two runs",
+  "first_unresolved_step": "ATTEMPT.md step 11: no estimate of D (K_cont*(S_tt-S_xx) for multiset {0,1,1}) at L=16 or its L-scaling at precision below 0.05 percent, and no derived form of the deterministic finite-size anisotropy D_L; at L=4,6,8 seed-level estimates are -0.0009+-0.0005, +0.0020+-0.0012, +0.0004+-0.0014 (all inside a 0.5 percent predeclared margin; only L=4 inside 0.2 percent), so sampling error and finite-size anisotropy are not separable below about 0.2 percent.",
+  "remaining_work": [
+    "compiled many-chain sampler with the same incremental Fourier estimator at L=8,12,16 for ~1e8 loops each (check.py is the specification); fix the margin from a stated downstream stiffness tolerance beforehand",
+    "perturbative estimate of the leading cubic-anisotropy correction to the polarization stiffness difference to give a testable D_L(L)",
+    "other four multisets of the draft ({0,1,2},{0,2,2},{1,1,2},{1,2,2}) not touched",
+    "supervisor: claim.py, commit check.py before run_probe.py, cross-model confirmation not done"
+  ],
+  "prior_art": [
+    "docs/UNIFORM_ICE_STATIC_PHOTON_HAS_TWO_DEGENERATE_TRANSVERSE_POLARIZATIONS_WITH_ONE_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-23.md:22-24 (exact L=2 eigenvalues 86/75, 114/75; symmetry does not force degeneracy)"
+  ]
+}

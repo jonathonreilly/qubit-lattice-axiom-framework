@@ -1,0 +1,49 @@
+{
+ "source_branch": "main",
+ "source_head": "2868a0c453e667d1267f0e1e7403732a11893d78",
+ "source_objects": [
+  {
+   "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_CERTIFIED_TOUCHING_CENSUS_AT_BOUNDARY_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+   "sha256": "2fbadd79094124119c3db5d7d29fc56f9b5052f62c622e21df97ff87f8795bb9",
+   "expected": "2fbadd79094124119c3db5d7d29fc56f9b5052f62c622e21df97ff87f8795bb9",
+   "verified": true
+  },
+  {
+   "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_FOR_J_AT_LEAST_TWO_THE_LINE_FAMILY_BRINGS_FOUR_NODES_ABOVE_KAPPA_PLUS_AND_THE_FIRST_PLANE_FAMILY_HAS_NO_HANDOVER_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+   "sha256": "a85651be561b05dd0583ffcb9b0abb131c0e9000a7072b6f0b383c297e07aa1b",
+   "expected": "a85651be561b05dd0583ffcb9b0abb131c0e9000a7072b6f0b383c297e07aa1b",
+   "verified": true
+  },
+  {
+   "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_LINE_NODES_OUTSIDE_THE_COUPLING_TRIANGLE_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+   "sha256": "29e40457080ccb60b420bb5027e84541c66a10b848db72bf164a77e8c60fed2f",
+   "expected": "29e40457080ccb60b420bb5027e84541c66a10b848db72bf164a77e8c60fed2f",
+   "verified": true
+  },
+  {
+   "path": "scripts/composite_site_network_flux_free_certified_touching_census_at_boundary_couplings_2026_10_01.py",
+   "sha256": "6f1a20629aa822fa44a90c6b963a6c1be0f21266f913ef74dbcb19c1f05ac76d",
+   "expected": "6f1a20629aa822fa44a90c6b963a6c1be0f21266f913ef74dbcb19c1f05ac76d",
+   "verified": true
+  },
+  {
+   "path": "scripts/composite_site_network_flux_free_line_nodes_outside_the_coupling_triangle_2026_10_01.py",
+   "sha256": "300fd887fd49a8fe7b4f6379b167af3c6e861ea272a1b52154ca2978786047f8",
+   "expected": "300fd887fd49a8fe7b4f6379b167af3c6e861ea272a1b52154ca2978786047f8",
+   "verified": true
+  },
+  {
+   "path": "scripts/composite_site_network_flux_free_touching_families_for_j_at_least_two_2026_10_01.py",
+   "sha256": "6b04078628a3af81ac5639dfb77bbbd8b18ccb4172402cca6f021b73cad710fd",
+   "expected": "6b04078628a3af81ac5639dfb77bbbd8b18ccb4172402cca6f021b73cad710fd",
+   "verified": true
+  }
+ ],
+ "check_py_sha256": "632c08f16c995547251a4631ce2fcbe2875d7eaec6673156674db5380d7333dd",
+ "first_unresolved_step": "Step 7: the uniform radius along u = P/4, J_z = J_x + J_y is proved only for J_x/J_y in a compact range [1/m, m] (m = 2, 5, 10 done); as the ratio goes to 0 or infinity the leading-map constant lam goes to 0 and no non-vanishing radius is established. Also not done: the other omitted cases (endpoint merger at u = P/2, corner (1/2,1/2,0) on J_z = |J_x-J_y|, interior couplings between fixtures), re-proof of the degree-to-Chern identification, and any cross-model confirmation.",
+ "remaining_work": [
+  "pick a uniform lower bound on lam that survives the decoupling limit or exhibit a nonisolated set there",
+  "apply the same quartic-weight jet method to the endpoint merger and the lower boundary",
+  "cross-model referee of check.py steps 5-8"
+ ]
+}

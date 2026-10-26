@@ -1,0 +1,61 @@
+== S1/S2 exact symbolic jets at J_z = Jx + Jy (weights x:1; y,z:4)
+PASS S1.0 Bloch matrix H is Hermitian as an exact Laurent matrix (symbolic Jx,Jy,k)
+PASS S1.1 charpoly of H(0) at J_z = s is lam^2 (lam^2 - 16 s^2): spectrum {0,0,+-4s}, no kappa dependence :: -lam**2*(4*Jx + 4*Jy - lam)*(4*Jx + 4*Jy + lam)
+PASS S1.2 ker H(0) = span{(1,0,-1,0),(0,1,0,-1)} exactly (all couplings)
+PASS S1.3 complement block C(0) has eigenvalues +-4s (gap 4s, kappa-independent) :: [-4*Jx - 4*Jy, 4*Jx + 4*Jy]
+PASS S1.4 all Taylor coefficients of the Pauli components Nx,Ny,Nz,N0 are real (Num is Hermitian-valued)
+PASS S1.5 detC(0) = -16 s^2 exactly = -E2 (E2 = 16 J_z^2)
+PASS S2.1 generic kappa: below weight 4 the only Pauli jet term is N_y = 16 s (4 kappa^2 - P) x^2 (so N_y x^2 coefficient vanishes exactly on u = P/4)
+PASS S2.2 weight-4 jet: N_x = -16 s^2 (2 Jy y - s z), N_z = 128 kappa s^2 y; N_0 has no weight-4 term (exact, symbolic, any kappa)
+PASS S2.3a N_y weight-4 part is the single monomial x^4
+PASS S2.3b N_y x^4 coefficient = -(4/3)(-Jx^2 Jy - 4 Jx Jy^2 + 16 Jx k^2 + 28 Jy k^2) for all couplings
+PASS S2.3c on u = P/4 the x^4 coefficient reduces to -4 P s (so N_y = -16 s^2 * [P/(4 s)] x^4 = -E2 d_y)
+PASS S2.4 u = P/4: N = -16 s^2 d_lead + G with d_lead = (2 Jy y - s z, P x^4/(4s), -8 kappa y) and G of weight >= 6 (all monomials of total degree <= 12; exact)
+PASS S2.5 N_0 has weight >= 9 (no monomial of weight < 9 up to total degree 12), exact, symbolic :: lowest: [9, 9, 11]
+PASS S2.6a N_0 weight-9 part is supported on x z^2 and x y z
+PASS S2.6b N_0 weight 9 = 8 kappa s x z (s z + 2 Jy y), exact symbolic (no relation needed)
+PASS S2.7 weights (1;2,2) at u = P/4: leading jet has N_y == 0, so it vanishes on the whole x-axis (y=z=0): the generic-u ball method (d_y = a x^2, a=(P-4u)/s) does not apply
+PASS S2.8a det H (Leibniz 4x4 Laurent determinant) has real Taylor coefficients
+PASS S2.8b u = P/4: det H has no Taylor monomial of weight < 8 (degree <= 12): fourth order in the weight-4 sense
+PASS S2.8c u = P/4: weight-8 jet of det H equals 16 s^2 |d_lead|^2 (exact, from the full 4x4 determinant)
+PASS S2.9a on J_z = s: q(c) = (c-1)(4u(c+1) - 2P) (landed identity re-derived)
+PASS S2.9b at u = P/4: q = P (c-1)^2, a double root at c = 1 (Gamma): det H = 16 P^2 (1 - cos x)^4 on the line, order x^8
+PASS S2.9c exact (symbolic Jx,Jy,k, any kappa): det H(x(1,-1,0)) from the full 4x4 Laurent determinant = 16 q(c)^2, q = (c-1)(4k^2 (c+1) - 2 Jx Jy) at J_z = s (landed line identity re-derived)
+PASS S2.9d exact: at u = P/4 that equals P^2 (t + 1/t - 2)^4 = 16 P^2 (1 - cos x)^4 (a zero of order 8 in x along the axis, Gamma the only zero on the axis)
+== S3 explicit isolating quasi-balls at u = P/4 fixtures
+PASS S3.F1 jets at this coupling equal the symbolic ones (weight<6 = -E2 d_lead; N0 weight>=9)
+PASS S3.F1 explicit radius: det C<0 (complement gap), no zero of Num, |N0|<|N|, so Gamma is the unique zero of det H in the quasi-ball :: rho = 143/1000 (x <= rho, |y|,|z| <= rho^4), C gap >= 6.1696 of 4s = 8, K_G = 139.36965091976958, K_0 = 11.584302062226119, lam = 81/40000
+PASS S3.F1' jets at this coupling equal the symbolic ones (weight<6 = -E2 d_lead; N0 weight>=9)
+PASS S3.F1' explicit radius: det C<0 (complement gap), no zero of Num, |N0|<|N|, so Gamma is the unique zero of det H in the quasi-ball :: rho = 3/25 (x <= rho, |y|,|z| <= rho^4), C gap >= 4.928 of 4s = 8, K_G = 197.31394377343923, K_0 = 27.057270056193296, lam = 81/40000
+PASS S3.F2 jets at this coupling equal the symbolic ones (weight<6 = -E2 d_lead; N0 weight>=9)
+PASS S3.F2 explicit radius: det C<0 (complement gap), no zero of Num, |N0|<|N|, so Gamma is the unique zero of det H in the quasi-ball :: rho = 81/500 (x <= rho, |y|,|z| <= rho^4), C gap >= 6.598 of 4s = 10, K_G = 380.4772495732926, K_0 = 35.30809573364302, lam = 1/100
+PASS S3.F2' jets at this coupling equal the symbolic ones (weight<6 = -E2 d_lead; N0 weight>=9)
+PASS S3.F2' explicit radius: det C<0 (complement gap), no zero of Num, |N0|<|N|, so Gamma is the unique zero of det H in the quasi-ball :: rho = 73/500 (x <= rho, |y|,|z| <= rho^4), C gap >= 5.182 of 4s = 10, K_G = 463.37936066089867, K_0 = 65.57772598216523, lam = 1/100
+PASS S3.F3 jets at this coupling equal the symbolic ones (weight<6 = -E2 d_lead; N0 weight>=9)
+PASS S3.F3 explicit radius: det C<0 (complement gap), no zero of Num, |N0|<|N|, so Gamma is the unique zero of det H in the quasi-ball :: rho = 81/500 (x <= rho, |y|,|z| <= rho^4), C gap >= 13.196 of 4s = 20, K_G = 3043.817996586341, K_0 = 282.4647658691442, lam = 1/25
+PASS S3.F4 jets at this coupling equal the symbolic ones (weight<6 = -E2 d_lead; N0 weight>=9)
+PASS S3.F4 explicit radius: det C<0 (complement gap), no zero of Num, |N0|<|N|, so Gamma is the unique zero of det H in the quasi-ball :: rho = 87/500 (x <= rho, |y|,|z| <= rho^4), C gap >= 3.824 of 4s = 8, K_G = 263.11089382840055, K_0 = 32.37225784819277, lam = 1/64
+== S4 uniform explicit radius along u = P/4, J_z = s (ratio Jx/Jy in [1/m, m])
+PASS S4.0 homogeneity (exact): every coefficient of Num is of degree exactly 3 and of C of degree exactly 1 in (Jx,Jy,kappa); H(lambda J) = lambda H, so the sign pattern and zero set depend only on the ratio Jx:Jy:kappa
+PASS S4.m=2 uniform radius for every (Jx,Jy) with s=1, Jx/Jy in [1/2,2], kappa=sqrt(P)/2, J_z = s :: rho = 127/2000 ~ 0.06350; gap of C >= 2.8570 (of 4); lam >= 3.086e-03; K_G=2.189e+02 K_0=1.603e+01 [4s]
+PASS S4.m=5 uniform radius for every (Jx,Jy) with s=1, Jx/Jy in [1/5,5], kappa=sqrt(P)/2, J_z = s :: rho = 1/20 ~ 0.05000; gap of C >= 3.1000 (of 4); lam >= 1.206e-03; K_G=2.187e+02 K_0=1.602e+01 [4s]
+PASS S4.m=10 uniform radius for every (Jx,Jy) with s=1, Jx/Jy in [1/10,10], kappa=sqrt(P)/2, J_z = s :: rho = 77/2000 ~ 0.03850; gap of C >= 3.3070 (of 4); lam >= 4.269e-04; K_G=2.186e+02 K_0=1.601e+01 [3s]
+== S5 the nonisolated set for u slightly above P/4 (exact)
+PASS S5.1 exact (symbolic): det H on the axis (1,-1,0) is 16 [(c-1)(4u(c+1) - 2P)]^2 at J_z = s, so besides c=1 (Gamma) the axis zero is c2 = P/(2u) - 1, in (-1,1) iff u > P/4
+PASS S5.2 for u = (1+d) P/4, d>0, the line zero cos x0 = (1-d)/(1+d) exists in (-1,1), 1 - cos x0 = 2d/(1+d) -> 0: x0 ~ 2 sqrt(d) as d -> 0+ (so every punctured quasi-ball of radius rho contains a pair of other zeros once 2 sqrt(d) < rho: the isolating radius cannot be uniform in u -> P/4+)
+PASS S5.3 (40-digit) at (9/5,1/5,2), u = 1.01 P/4: the line point x0 = arccos((1-d)/(1+d)) has two zero levels: a touching inside radius ~ 2 sqrt(d) = 0.2 of Gamma :: smallest |levels| = 8.69e-41, 1.17e-40; x0 = 0.199337
+PASS S5.4 CONTROL: at kappa = 601/2000 (u = (1+d) P/4, d = 0.0033361111111111113) the weight-2 term of N_y is non-zero, so the u = P/4 jet identity (S2.4) correctly fails
+PASS S5.5 CONTROL: at that kappa another touching sits at x0 = 0.11539 < rho = 143/1000 of the u = P/4 ball (so the u = P/4 radius cannot be reused off the curve)
+PASS S5.6 CONTROL: swapping Jy -> Jx in d_lead is detected (the leading map is not symmetric in the in-plane couplings)
+PASS S5.7 CONTROL: the same exact inequalities fail at rho = 1/2 for F1 (no certificate beyond the stated radius)
+== S6 float diagnostics (consistency only)
+PASS S6.1 FLOAT: det H from numpy Bloch eigenvalues equals (N0^2 - |N|^2)/detC from the exact Laurent objects at 300 random points of the certified ball (F1) :: max rel err 3.09e-08
+PASS S6.2 FLOAT: middle levels are non-zero at those points (smallest |middle level| 4.039e-09)
+PASS S6.3 FLOAT: det H / (16 s^2 |d_lead|^2) is within 50% of 1 at those points (max deviation 0.018; sanity of the jet at the certified radius)
+PASS S6.F1 FLOAT: Fukui Chern number of the two lowest bands on the quasi-sphere (rho = 0.143) is 1.23e-16 (integer 0 expected); max plaquette phase 0.653 < 1 (resolved)
+PASS S6.F2' FLOAT: Fukui Chern number of the two lowest bands on the quasi-sphere (rho = 0.146) is -2.64e-16 (integer 0 expected); max plaquette phase 0.620 < 1 (resolved)
+elapsed 27.0s
+TOTAL: PASS=51 FAIL=0
+HIT: scoped result for the supplied comparator only: at u = kappa^2 = P/4 on J_z = Jx + Jy with Jx != Jy the zone centre is the unique zero of det H in explicit quasi-balls (x <= rho, |y|,|z| <= rho^4; rho ['143/1000', '3/25', '73/500', '81/500', '81/500', '87/500'] at the six fixtures, uniform rho = 1/20 for Jx/Jy in [1/5,5] and 77/2000 for [1/10,10]) with complement gap > 0 and occupied-bundle Chern number 0 on every quasi-sphere inside; the census runner's weights (1;2,2) leave the whole x-axis as zero set of the leading jet, and any radius shrinks like 2 sqrt(u/(P/4) - 1) as u -> P/4+.
+SUMMARY: exact weighted jets, complement gap, explicit punctured-ball isolation and a zero occupied-bundle Chern number at the u = P/4 zone-centre merger for Jx != Jy (fixtures and a uniform curve family), plus the exact pair that makes any such radius shrink as u -> P/4+; scope is the supplied comparator only.
+python3 check.py  20.69s user 0.21s system 75% cpu 27.653 total

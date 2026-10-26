@@ -1,0 +1,165 @@
+{
+ "task": "J:derive:review-20260929-beable-identities-and-pointer-degeneracy:a1",
+ "source_branch": "claude/toe-viability-probes-20260927",
+ "source_head": "fd51a1f4c7f38c124d6f0f7dde396198eadf8b36",
+ "main_head_read": "a77a3449c91a753b06ce2a63876cd460b62cb4cf",
+ "source_objects": [
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/APPROACH_REGISTRY.md",
+   "sha256": "5a82e2f98b74272a7b42f919e06753bbcc60e8a844c940a645ca6b70ed057c67",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/ASSUMPTIONS.md",
+   "sha256": "165a498c661676218a08813958eeaf9c47d6f3cfcfe418bade0b3c6663bac9bb",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/OUTSIDE_VIEW.md",
+   "sha256": "e5ae633f959950e8c6670f6e73cadfb506100e1bbc7ea4f4d3b80cdadd9da8c1",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/ROUTES.md",
+   "sha256": "3856517758d4f86da392b1675573d11b4e019e56a625ed15581e15f0ec92f6d9",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/SUMMARY.md",
+   "sha256": "fde6228c9ebf341483fad1690c28283bd71e796ea3aec1f14f8de75dad54cd91",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/TESTS.md",
+   "sha256": "9dee2b425204a249e844446804d6a5f3cfd5e21aa794f317a294237f3768420b",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/WALL.md",
+   "sha256": "00abbe699211d8af1d3b69daf40cdd3b508e2a9d2491e65608acd867d49993e0",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/agent1_condensed_matter.md",
+   "sha256": "81b0f7eac18b22bb636403e7d92ec59566bfc7a57a2fc9b1f3a3742bdab19712",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/agent2_quantum_gravity.md",
+   "sha256": "3daf9009b611c2bc57ec15c3b2d427229fb1dc89a14ca0cbe530b281ae7911e8",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/agent3_axioms_price.md",
+   "sha256": "6f480cfec1bce59f8776881e1c35a9ee759aca43c52a745bfcfcf87d1be9b75d",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/agent4_misframing.md",
+   "sha256": "3eea8d7fdcd5a8f60076ef64c31757bfdc29de6a8b7f56cbd933f3a68a02629c",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/kill1_price_strong.md",
+   "sha256": "ae484e4027a4d77a15022274d2fe5439c0fb99bc067927e3e9b69a9003dcb561",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/kill2_nonground_a1.md",
+   "sha256": "85c8180cf0a4422f7c3a13ce857b63f2ff1983ac2a5d1325d882c367b84c565e",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/kill3_entanglement_statics.md",
+   "sha256": "e9de51b029d1aedde82d708b2245703c5ab571e60d5c4693ac30a4ac767c9aa9",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/kill4_induced_purity.md",
+   "sha256": "0aa62bc86479c6d2b40503933b63a5432a05dcf058f27142b0484b6db155b370",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/neutral_brief.md",
+   "sha256": "b798c1f46fd91c65bcabbd7211de0dc2c190920a0b420ecb4cc33fc98eafe8e3",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/routes_for_kill.md",
+   "sha256": "50ad77c1c53d8dbe39cfeceffe347d6b8202f7f76797ee4530861994c0138e53",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/T1_output.txt",
+   "sha256": "7f505a208b4efcf271d692939e8f653847df8f98e242522c310f895f8119998e",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/T1_signed_compression_channel.py",
+   "sha256": "5346e7c8900a59924d24db36e14488cf05bfb1f9341bdafcd8d8019f6d451864",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/_p18_defs.py",
+   "sha256": "20980fd00b5af2b27589d06df4c732064a9b4b2eb4e2984d8fc7669f37eab9c7",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/agents/agent4_checks.py",
+   "sha256": "86eceeeae3c561f24da969abbf57bd11fb8a6ecc1ac9bfdefa5c6268a160344a",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/agents/bogoliubov_check.py",
+   "sha256": "dac810bae99aee6e5934f7232cc39b3719a52ce629f007c237020df0fb941af2",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/agents/kill2_checks.py",
+   "sha256": "a4f77ac29f1382c0707881040cf2cfb901cc485e537183e5d4aaaf6ba228d7d6",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/agents/kill3_area_law_anisotropy.py",
+   "sha256": "f19d6564e1dd3fef3b7f2bd197f417120f38a5bb74e93b28b76b51a14c1a7d53",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/agents/kill3_ppn_coordinates.py",
+   "sha256": "d266c579caeddbb555b332bbd519d23315a177d5fce28a26825d582e4a33270e",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/agents/kill4_checks.py",
+   "sha256": "669eccf2281cd15c1060aace40aa0764c796154973536b9cdac6e9db8f8ee3b2",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/agents/snf_torsion.py",
+   "sha256": "c0444b933728ef2538b850608b4f45c6e85142bc467273337c6b0198e88f3d34",
+   "verified": true
+  },
+  {
+   "path": "docs/RECORDS_AS_BEABLES_UNDER_THE_MOVING_RECORDS_READING_BELLS_JUMP_LAW_GIVES_NEAREST_NEIGHBOUR_MOVES_EQUIVARIANT_ODDS_AND_BELL_CORRELATIONS_WITH_NONLOCAL_ODDS_BOUNDED_THEOREM_NOTE_2026-09-27.md",
+   "sha256": "0ece01e32bc512f4babb4adb87385887dae9a8363778c77f2c3becbe9686a4cb",
+   "verified": true
+  },
+  {
+   "path": "docs/RECORDS_AS_BEABLES_WHICH_RECORD_CARRIES_A_DISTURBANCE_IS_A_CHOICE_OF_IDENTITY_HOP_FOLLOWING_RECORDS_LAG_A_LAPLACE_IDENTITY_TRAVELS_BOUNDED_THEOREM_NOTE_2026-09-28.md",
+   "sha256": "356f1870c246be434082bd30db72b0d117ea639727804ea93cd14ffbc359f479",
+   "verified": true
+  }
+ ],
+ "check_py_sha256": "ba1980e8310509c92fe227b5da6cd59594674f1906da7584d877bdd572134534",
+ "chosen_obligation": "Slater-column (Laplace) carrier assignments under basis changes, exact determinants",
+ "result": "PARTIAL: carrier-assignment sub-obligation proved/checked; others not attempted",
+ "first_unresolved_step": "ATTEMPT.md step 9: no nearest-neighbour (or any) stochastic process is built that realizes any chosen carrier assignment (e.g. the orthogonal one) with the per-time marginals; and no physical principle beyond the supplied l2 inner product + sea/added split is shown to select a representative.",
+ "remaining_obligations": [
+  "continuous-time Born equivariance with explicit Born-initial and non-explosion assumptions plus a finite-step (dt) error bound: NOT attempted",
+  "antiperiodic L=10 pointer impurity: one-body zero modes exist (checked only as context, check.py C8); deterministic ground vector or mixed preparation and state-dependence test: NOT attempted",
+  "mutual-information fragment averages vs classical independent records/redundancy: NOT attempted",
+  "2D/3D ensemble check of the representative dependence (source T3/T4 ten-times example not reproduced): NOT attempted",
+  "ring-size/time dependence of the fixed-coefficient representative effect beyond L=12, t=3: NOT attempted"
+ ],
+ "label": "same-family, unrefereed"
+}

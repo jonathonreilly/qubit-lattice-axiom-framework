@@ -1,0 +1,68 @@
+# Attempt: the hard core's contact resolvent at zero energy (J:derive ... :a1)
+
+Same-family (Claude Sonnet 5.5), unrefereed. No status words are claimed. check.py: `TOTAL: PASS=31 FAIL=0`, about 90 s.
+
+## Plain-language summary
+
+The hard core (one record per site) acts on an antisymmetric pair only through the "coincident singlet" state. Its strength is governed by one number, G_cc(E), the singlet's matrix element of the free pair's resolvent; the scattering amplitude is 1/G_cc. The walk has a chiral symmetry that makes G_cc(-E) = -G_cc(E) exactly. So G_cc vanishes linearly at E = 0 and the amplitude blows up there. This is true exactly at total wave vector K = 0. For small K != 0 the zero is replaced by a value of size about 0.3|K|, because pairs made of one upper-band and one lower-band record (the (+,-) pairs, which are nearly degenerate at generic momenta when K is small) switch on. For two upper-band records at E >= |K| (the only pairs that exist there), |G_cc| is of order E, not constant. So the collision rate of slow upper-band pairs stays of order one instead of falling as E^2, and the rate at which collisions change the two-step momentum g falls as K E^2 (E^3 when E ~ |K|), not K E^4 (E^5). The supervisor's prior (E^3 rather than E^5) holds at leading order; the E^3 is the scaling at E ~ |K|.
+
+## Sources read
+
+- `docs/MINIMAL_AXIOMS_2026-06-29.md` read in full on main (a77a3449c9). It supplies Lattice, Qubit, Admissibility, Record and says admissibility "is not a dynamics axiom"; the walk, the exclusion and the singlet structure below are supplied clauses of blocks 54, 78, 143, 152, not axioms.
+- `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md` read in full: approved primitives are scale_reference, kinetic_isotropy, realized_state. None is used.
+- Block 152 as landed: `docs/ADMISSIBILITY_RULE_UNDER_ONE_RECORD_PER_SITE_A_COLLISION_CHANGES_THE_RECORDS_TWO_STEP_MOMENTUM_ONLY_AT_THIRD_ORDER_IN_THEIR_OFFSETS_FROM_THE_CONES_BOUNDED_THEOREM_NOTE_2026-09-26.md`: walk and exclusion at :42, g at :43, T2 at :58-64, T3(b),(c) at :70-72, T4 and "threshold poles ... not excluded" at :78-84 and :12-13, "regular shells with positive contact density and finite boundary values" at :69.
+- Block 143 (landed) :63 for g_a = sin K_a cos 2q_a; block 78 (landed) :25 for the compression by the position projector. Block 54's own note was not opened: the walk h(k) = sum_a sigma_a sin k_a is taken as quoted at block 152 :42.
+- Search for overlap: no landed note or open PR (gh pr list, search "admissibility-induced-law block 15") mentions G_cc at K = 0, chirality of G_cc, or the (+,-) contribution; the only G_cc hits in main are block 152 and an unrelated Spin10 note. The probes task list has this task only.
+
+## Setting and premises (all supplied; nothing adopted)
+
+P1. Two records on Z^3, free generator H (x) 1 + 1 (x) H with h(k) = sum_a sigma_a sin k_a, compressed by one record per site; antisymmetric pairs; the only removed state in this sector is the coincident singlet c (block 152 :42, block 143 T4).
+P2. Fibre at total wave vector K: relative momentum q in T^3, k1 = q, k2 = K - q; h0(q;K) = h(q) (x) 1 + 1 (x) h(K-q) (4x4); c is the constant vector s = (0,1,-1,0)/sqrt2 for every q, and G_cc(z;K) = <g(z;q)> with g = s^T (h0 - z)^-1 s, average over T^3 with measure d^3q/(2 pi)^3. Check B1 (real-space L=3 torus, residual 1e-15) confirms this fibre convention against H (x) 1 + 1 (x) H directly.
+P3. Block 152 T2 is used as landed: T-matrix |c><c|/G_cc, and the rate of change of g is 2 pi |<c|q>|^2 rho_c (gbar - g(q))/|G_cc(E+i0)|^2, with pi rho_c = Im G_cc.
+Notation: u1 = (sin q_a), u2 = (sin(K_a - q_a)), A = |u1|, B = |u2| (band energies +-A, +-B), c = n1.n2 (a unit-vector dot product; unrelated to the state c), eps(q)^2 = sum sin^2 q_a.
+
+## Step list
+
+**S1 (closed form) PROVED + CHECKED.** g = z (A^2 + B^2 - z^2 + 2 u1.u2) / ((A^2 + B^2 - z^2)^2 - 4 A^2 B^2). Proof: det(h0 - z) and s^T adj(h0 - z) s are polynomials in (u1,u2,z); check A1 verifies in sympy that they equal the denominator and the numerator exactly. Equivalent band form: g = (z/2)[(1-c)/((A+B)^2 - z^2) + (1+c)/((A-B)^2 - z^2)], the singlet's overlap with band pair (s1,s2) being (1 - s1 s2 c)/4 (check B2, numerical).
+
+**S2 (target 1: oddness) PROVED.** g(-z) = -g(z) pointwise in q, for every K, every z off the spectrum (A2). Hence G_cc(-z;K) = -G_cc(z;K); with G(zbar) = conj G(z) this gives G(-E+i0) = -conj G(E+i0): Re odd, Im even. Two independent explanations: (a) Theta = (i sigma_y (x) i sigma_y) K (complex conjugation) satisfies Theta h0 Theta^-1 = -h0 and Theta s = s (A2b, A2c); (b) the supervisor's staggered sign: q -> q + (pi,pi,pi) maps h0 -> -h0, fixes c, leaves K fixed (A3, exact). Both hold on any torus, not only in infinite volume; A5 verifies exact Fraction identities on all fibres of the L=4 and L=6 tori (560 cases). The oddness is therefore not an accident of infinite volume; the caution about small tori concerns only the pole at z = 0 (S3). Note: this refutes nothing in the supervisor's observation; it strengthens it from "after integration" to "pointwise in q".
+
+**S3 (finite-torus pole) CHECKED.** On a torus with accidental zero-energy pair states, z G_cc -> -(8/L^3) as z -> 0 at K = 0 (A5c: -1/8 for L=4, -1/27 for L=6), from the 8 q with both records at zero energy. This G pole (T zero) is a finite-volume artefact: the corner set has measure zero in infinite volume.
+
+**S4 (target 2, K = 0) PROVED, with one step marked.** At K = 0, u2 = -u1, so A = B, c = -1: A*B + u1.u2 = 0 identically, the (+,-) overlaps vanish (A4b), and g = z/(4 eps^2 - z^2), G_cc(E) = E <1/(4 eps^2 - E^2)> (A4; the task's formula is exact). The (+,-) overlaps vanish identically only at K = 0 mod 2 pi (A8): sin(K-q) + sin q = 2 sin(K/2) cos(K/2 - q).
+- C0 := <1/(4 eps^2)> is finite in 3D (the 1/q^2 singularity at the 8 corners is integrable). Using sin^2 = (1-cos 2q)/2, C0 = W3/6 with W3 = 1.5163860592 the simple-cubic Watson integral (imported closed form, checked numerically against a lattice sum, B3: 0.25273).
+- ASSUMED standard step (argued, not run): the density of x = 4 eps^2 near 0 is C sqrt(x) (three-dimensional Weyl density of states), hence Hoelder-1/2, so F(w) = <1/(4 eps^2 - w)> has F(E^2 + i0) = C0 + O(E) and G(E+i0;0) = C0 E (1 + o(1)). Imaginary part: Im G = pi rho_c with rho_c = 8 corners x (weight 1/2) x (4 pi p^2 dp/(2 pi)^3) -> E^2/(4 pi^2) (A6d, checked on the exact dispersion in B4), so G(E+i0;0) = C0 E + i E^2/(4 pi) + o(E^2).
+- Consequence: the contact amplitude T = 1/G_cc has a simple pole 1/(C0 E) at E = 0 in the K = 0 fibre. But g_a = sin K_a cos 2q_a = 0 identically at K = 0 (block 143 T1), so nothing changes there; the pole matters only through the K -> 0 crossover (S5).
+
+**S5 (target 2, E ~ |K|; regime (+,+) pairs, E >= eps(K)) SUGGESTED + CHECKED, one exact inequality.**
+Kinematics (landed, block 152 T1(d), :54): (+,-) pair energies are <= eps(K) and (+,+) pair energies are >= eps(K), so an upper-band pair at E > eps(K) ~ |K| scatters only into (+,+) pairs, all near the same corner for small K, and the (+,-) pairs enter G_cc only virtually.
+Derivation of the leading form of G_cc (not rigorous): split g by the band form. (i) (+,+)+(-,-) at generic q: (z/2)(1-c)/((A+B)^2 - z^2) -> z/(4 eps^2), giving C0 z. (ii) (+,-)+(-,+) at generic q: A - B = eps(q) - eps(K-q) = K.v(q) + O(K^2) with v = grad eps, v_a = n_a cos q_a, and 1 + c = (|w|^2 - (K.v)^2)/(2 eps^2) + O(K^3) with w_a = K_a cos q_a. The weight is O(K^2) but the denominator (A-B)^2 - z^2 is also O(K^2) when z ~ K, so this term is O(K): the same order as C0 z, not smaller. (iii) corners q ~ K contribute O(K^2). Summing,
+  G_cc(z;K) = z < (z^2 - |w|^2) / (4 eps^2 (z^2 - (K.v)^2)) > + O(K^2) =: G_lead + O(K^2).
+CHECKED (B5, float64, lattice sums at N=160): |G_exact - G_lead|/K = 0.058, 0.028, 0.013 at K = 0.4, 0.2, 0.1 (zeta = 1.5, imaginary part of z = K/2): halves with K. G_lead is homogeneous of degree 1 in (z, K): G_lead = |K| g(zeta; K-hat), zeta = E/|K|.
+EXACT inequality for G_lead (A7, A7b): for zeta >= 1, (zeta^2 - a)/(zeta^2 - b) >= 1 - a for 0 <= b <= a <= 1 (a = |w|^2/K^2 = sum K-hat_a^2 cos^2 q_a, b = (K-hat.v)^2); the average of (1 - a)/(4 eps^2) = sum K-hat_a^2 <sin^2 q_a/(4 eps^2)> = 1/12 (cubic symmetry, sum sin^2/eps^2 = 1). So Re G_lead(E) >= E/12 for E >= |K|. Numerically (B6, K || x) Re G_lead/E = 0.100, 0.155, 0.220, 0.245, 0.2515 at zeta = 1.0001, 1.2, 2, 4, 10, rising to C0 = 0.2527.
+Imaginary part for E > |K|: Im G = pi rho_c with rho_c(E;K) = (E^2 - K^2)/(4 pi^2) (A6a-d, exact in prolate spheroidal coordinates about the foci d1 = 0, d2 = K; checked on the exact dispersion in B8: 0.00205 vs 0.00203 at E = 0.3, K = 0.1). So Im G / Re G = O(K): |G|^2 = (Re G)^2 (1 + O(K^2)).
+At E < eps(K) (not (+,+)): Im G_lead(i gamma K)/K -> about 0.31 as gamma -> 0 (B7, K || x), so |G(0+i0;K)| ~ 0.31|K|, no pole at E = 0 for K != 0; the K = 0 pole is cut off at E ~ |K| and T saturates at about 1/(0.31|K|).
+
+**S6 (target 3, rate for slow records) SUGGESTED, built on S5 + exact algebra.**
+Shell geometry (A6, exact): with x = relative offset about the midpoint, offsets d1 = K/2 + x and d2 = K/2 - x, the weighted shell measure (1-c)/4 d^3x delta(E - |d1| - |d2|) is uniform in (eta, phi) on the spheroid, with x_par = (E/2) eta, <x_par^2> = E^2/12, <x_perp^2> = (E^2 - K^2)/6. The cubic law (block 152 T3(b)) reads Delta g_a = -2 K_a (<x_a^2> - x_a^2) (A6f). For K = kappa e_x: gbar_x - g_x = (kappa E^2 / 6)(3 eta^2 - 1) (eta the incoming state's cosine variable), averaging to zero as required by T2(b). For E >> K this is (K_a E^2/2)(n_a^2 - 1/3), the form of block 152 T3(c).
+Collision rate of an incoming (+,+) state: Gamma = 2 pi |<c|q>|^2 rho_c/|G|^2 with |<c|q>|^2 = (zeta^2 - 1)/(2 (zeta^2 - eta^2)) <= 1/2 (A6c), so Gamma = (zeta^2 - 1) w(eta) / (2 pi g(zeta)^2) with g = Re G/|K|, w = (zeta^2-1)/(2(zeta^2-eta^2)): independent of K at fixed zeta. Bounds: Gamma <= 36/pi from Re G >= E/12; Gamma -> 1/(4 pi C0^2) = 9/(pi W3^2) = 1.246 for E >> K (B9). Table (B9): Gamma = 0.31, 0.92, 1.17, 1.23 at zeta = 1.2, 2, 4, 10 (eta = 0).
+Rate of change of g: R_a = Gamma (gbar_a - g_a(q)).
+- E >> K: R_x ~ 1.246 (kappa E^2 /6)(3 eta^2 - 1) ~ K E^2.
+- E ~ |K|: R ~ K^3 ~ E^3 with an O(1) K-independent coefficient function of (zeta, eta) (table in B9).
+- Under the regular-threshold assumption G_cc(0) != 0 (a constant) the same formula would give Gamma ~ rho_c ~ E^2 and R ~ K E^4 (E^5 at E ~ K). Block 152 as landed contains no such power law (T2, T3 state no exponent), so the "E^5" reading is the supervisor's count, not a landed claim.
+So the effect is a factor 1/E^2 enhancement in Gamma at threshold, from |G_cc|^2 ~ E^2.
+
+**S7 (what this does to block 152's text) READING.** Landed hypotheses survive unchanged: finite boundary values and positive contact density hold for E > |K|, with G_cc ~ E nonzero, so T2(b) and T3(a) apply. What changes: (1) the proportionality constants in T3(c) (the factor 2 pi |<c|q>|^2 rho_c/|G|^2 multiplying (1 - <c^2>) K_a (n_a^2 - 1/3)) are not suppressed by a threshold density factor E^2; they tend to 1.246 for E >> K. (2) The regular-threshold hypothesis of T4 is not satisfied by the bare hard core: its effective amplitude 1/G_cc diverges like 1/E at K = 0. The order in offsets of Delta g per collision (cubic, T1, T3(b)) is unaffected. (3) The statement that the cubic order is "not the rate prefactor" gains content: the prefactor is O(1), not small.
+
+## What is new, and what is not
+
+- Not new: block 152's T2 rank-one structure; the cubic law Delta g = -(2/3) Delta sum d^3; the (+,+)/(+,-) energy separation (T1(d)); the Watson constant; the supervisor's staggered-sign observation itself (it is stated in the task, not in block 152, which I read in full; I did not grep every landed note for it).
+- New (own derivation, unrefereed): S1 closed form; S2 pointwise exact oddness for all K and all tori; S4 exact K = 0 formula and the identification of K = 0 mod 2 pi as the only fibre where the (+,-) overlaps vanish identically; S5 the leading small-(K,E) form of G_cc including the O(K) (+,-) contribution, with the exact lower bound Re G_lead >= E/12; S6 closed forms rho_c = (E^2 - K^2)/(4 pi^2), uniform spheroidal shell measure, moments E^2/12 and (E^2 - K^2)/6, and the resulting scaling.
+
+## First unresolved step
+
+S5's remainder: G_exact = G_lead + O(K^2) is checked numerically at three K values and argued by scaling (corner region q ~ K contributes O(K^2)), but not proved; no rigorous bound on the real part of the exact lattice G at real E > eps(K) (the (+,+) shell gives a principal value). S4's threshold expansion is the standard Hoelder argument, not run. S6 inherits both. Not examined: pairs near different corners (K near a non-zero corner of {0,pi}^3, where the (+,-) band is exactly flat at E = 0 and G_cc has a pole, T a zero: A8b, not studied further), K-hat anisotropy beyond K || x, symmetric pairs (rank three), the (+,-) pairs' own collision rate (E < eps(K); the energy shell there is at generic momenta where Delta g is first order in K; only G is estimated, not the rate), interactions beyond the hard core.
+
+## What would finish it
+
+(a) A rigorous bound |G_exact - G_lead| <= C K^2 on E >= |K| by splitting the torus into |q - corner| < r K and its complement, with the explicit corner integral of the continuum two-Weyl resolvent. (b) A proof that Re G_exact(E+i0;K) >= c E for E >= eps(K): from the positive-integrand structure of S5 plus the principal-value part of the (+,+) shell. (c) A written proof of the Hoelder step in S4.

@@ -341,6 +341,22 @@ Bosonized qubit sites (bosonized-sites, 2026-10-26, rethink r3; campaign files):
     - At g >= 0.35 it survives: 2.557 -> 3.182 at 0.35; 5.639 -> 5.599 at 0.5. Unique symmetric ground state.
     - Two width-2 patches only, so this is a trend. Decider: 2x4 on the Mac mini (fits 6 GB, hours).
     - Reading: the mirror gaps in a strong-coupling symmetric phase. The far-wall coupling must sit above the crossover. That is a phase condition, not a fitted number.
+- **Predictions recomputed under this law (d4-predictions-recompute, PR #10110, 11/11, own re-run identical).**
+  - Blocking keeps poles, so the matter dim-8 coefficient is -0.1185/16^n at rung n (body ray). The exact fixed point is relativistic (< 1e-8). Photon and graviton are unchanged (links are not zoomed).
+  - Rung 0 / 1 / 2 / 3, at E* = hbar c/2L:
+
+    | Rung | e/gamma LIV ratio | gamma -> e+e- | e -> e gamma | Nuclear wall (eV per nucleon) |
+    |---|---|---|---|---|
+    | 0 | 16 | 1.9e20 eV | closed | 9.7e20 |
+    | 1 | 1 | closed | closed | 1.53e21 |
+    | 2 | 1/16 | closed | opens at 2.9e20 eV (NEW) | 1.53e21 |
+    | 3 | 1/256 | closed | 2.8e20 eV | 1.53e21 |
+
+  - The earlier 1.9e20 eV photon-decay prediction is RETRACTED for rung >= 1.
+  - Time of flight stays unmeasurable.
+  - Fixes: graviton splitting at 100 Hz = 3.85e-80 (the 1e-62 was a unit slip; the 1e-80 used L, not 2L). The cubic photon-decay threshold is 80.4 PeV axis / 122 PeV face, retracted on D4. Nucleon lifetime on the D4 map is >= 2.5e41 yr worst case, 6.5e43 yr central.
+  - New: the slab residual mass needs a slab depth >= 46 to stay below m_e (>= 58 for neutrinos).
+  - INTERPRETIVE FLAG: these values read rung n as a start lattice 2^n FINER than the sites. Under "the lattice is the smallest object" the zoom runs upward from the sites, so this reading needs checking. If matter lives 2^n coarser instead, its LIV grows by 16^n.
 - **Still to rebuild on D4:**
   - the copy sign's role in carrying the 16;
   - slab chirality and the 4D index;

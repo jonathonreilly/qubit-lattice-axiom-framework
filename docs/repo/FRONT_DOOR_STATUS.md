@@ -55,12 +55,12 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 | Metric | Value |
 |---|---:|
 | Total pending rows | 5573 |
-| Ready rows | 1932 |
+| Ready rows | 1934 |
 | Cycle-break targets | 84 |
 | Critical pending | 682 |
 | High pending | 452 |
-| Medium pending | 1447 |
-| Leaf pending | 2992 |
+| Medium pending | 1445 |
+| Leaf pending | 2994 |
 
 Next ready rows by queue order:
 
@@ -704,16 +704,16 @@ Source: deferred package (`archive/publication/ci3_z3/`).
 | Citation-graph nodes | 7439 |
 | Critical nodes | 712 |
 | High nodes | 511 |
-| Medium nodes | 1639 |
-| Leaf nodes | 4577 |
+| Medium nodes | 1637 |
+| Leaf nodes | 4579 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 2987 descendants; score 615.545
-- `three_generation_observable_theorem_note` - critical; 1297 descendants; score 55.342
-- `observable_principle_from_axiom_note` - critical; 989 descendants; score 53.951
-- `graph_first_su3_integration_note` - critical; 1643 descendants; score 51.683
-- `kinetic_isotropy_primitive` - critical; 943 descendants; score 49.383
-- `plaquette_self_consistency_note` - critical; 1374 descendants; score 47.925
-- `minimal_axioms_2026-05-03` - critical; 1318 descendants; score 41.865
-- `key_terminology` - critical; 1421 descendants; score 40.974
+- `minimal_axioms` - critical; 2984 descendants; score 615.544
+- `three_generation_observable_theorem_note` - critical; 1294 descendants; score 55.339
+- `observable_principle_from_axiom_note` - critical; 986 descendants; score 53.947
+- `graph_first_su3_integration_note` - critical; 1640 descendants; score 51.680
+- `kinetic_isotropy_primitive` - critical; 940 descendants; score 49.378
+- `plaquette_self_consistency_note` - critical; 1371 descendants; score 47.922
+- `key_terminology` - critical; 1418 descendants; score 40.971
+- `minimal_axioms_2026-05-03` - critical; 1315 descendants; score 40.862

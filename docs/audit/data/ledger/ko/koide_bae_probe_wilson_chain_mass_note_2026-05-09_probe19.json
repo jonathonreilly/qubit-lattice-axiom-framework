@@ -34,13 +34,13 @@
     "koide_a1_probe_real_structure_bounded_obstruction_note_2026-05-09_probe13",
     "koide_a1_probe_retained_u1_hunt_bounded_obstruction_note_2026-05-09_probe14"
   ],
-  "direct_in_degree": 8,
+  "direct_in_degree": 7,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.508,
+  "load_bearing_score": 9.959,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -61,6 +61,6 @@
   },
   "runner_path": "scripts/cl3_koide_bae_probe_wilson_chain_mass_2026_05_09_probe19.py",
   "title": "Koide BAE Probe 19 \u2014 Wilson Chain Extension to Charged-Lepton Mass Scale (Sharpened, Partial Closure)",
-  "transitive_descendants": 90,
+  "transitive_descendants": 87,
   "verdict_rationale": null
 }

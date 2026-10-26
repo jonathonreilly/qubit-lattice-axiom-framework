@@ -33,7 +33,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.722,
+  "load_bearing_score": 10.714,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -153,6 +153,6 @@
   },
   "runner_path": "scripts/frontier_cluster_decomp_delta_t_su3_operator_real_2026_05_19.py",
   "title": "Finite-volume spectral gap for a specified SU(3) heat-kernel operator",
-  "transitive_descendants": 596,
+  "transitive_descendants": 593,
   "verdict_rationale": null
 }

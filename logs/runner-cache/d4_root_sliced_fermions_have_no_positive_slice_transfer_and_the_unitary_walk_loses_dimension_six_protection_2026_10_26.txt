@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/d4_root_sliced_fermions_have_no_positive_slice_transfer_and_the_unitary_walk_loses_dimension_six_protection_2026_10_26.py
+runner_sha256: 24f44e39f436f52f4108bed92997c1a511398811ad0a84aed9bd457bf44f55f3
+input_fingerprint_sha256: b6239d3349f193cd81a96abfaf263dc9ac381fe5853ad76c26333c21cb6d5f29
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.11
+status: ok
+----- stdout -----
+PASS C0 |W(F4)| = 1152, root stabiliser 48 (cube group of the slice); quartic invariants: W(F4) on R^4 = 1, stabiliser on the slice = 2 | stabiliser of +-r_t on R^4: 4 (t^4, t^2 k^2, (k^2)^2, sum k^4)
+PASS A1 [exact] every untwisted reflection perp to the root is site-type; link-type maps exist only twisted, and twisted maps pair k with A k != k | 20 site-type, 7 link-type, 0 pure link; min|Ak-k| 1.11; scalar Gram block [[0,X],[X*,0]], |X| = 0.015 -> eig +-|X|: twisted RP fails even for the scalar
+PASS A2 calibration Z^4 (time axis): Wilson r=1 one real pole, definite (T >= 0); naive: real +-lam poles, lam*P definite (link RP) but P not (T indefinite) | Wilson 3e-16, naive link 1e-16, naive T 1.00
+PASS A3 D4 Wilson family, root time: slice energies COMPLEX for w < sqrt2 (no Hermitian transfer for ANY Theta), real for w >= sqrt2 | w=0.00:9.9e-01 w=0.50:1.0e+00 w=1.00:1.0e+00 w=1.40:9.8e-01 w=1.42:4.7e-15 w=1.50:3.0e-15 w=2.00:9.0e-16 w=3.00:2.6e-15
+PASS A4 w >= sqrt2: per-k Hermitian pairings Gamma(k) span 2 dims (g_t and a spin generator); best wrong-sign fraction over all of them stays ~1 | w=1.5: dim 2, best 0.960; w=2.0: dim 2, best 0.995; w=3.0: dim 2, best 0.999
+PASS A5 ghosts: with the light branch positive, heavy time branches carry negative norm (1 at w = sqrt2, 2 for w > sqrt2) | ghost E (lattice units): w=1.41 [1.85]; w=1.50 [1.67, 6.16]; w=2.00 [1.12, 4.29]; w=3.00 [0.71, 3.74]
+PASS B1 W(F4) family with a second shell (w1, w2, b2): no sampled point has a positive slice transfer | 50 points, 8 real-pole-but-indefinite, 0 positive
+PASS B2 time-projector variant (breaks W(F4) to the stabiliser): T >= 0 holds, but speed = 2 b_s is tuned, dim-6 returns, and T(k) = 0 on a real surface | v-1 = c k^2: ws=0.5: axis +0.0833 face +0.2500 body +0.3056; ws=1.0: axis +0.8333 face +1.0000 body +1.0556; body-axis = 2/9 for every ws
+PASS C1 unitary walk (palindromic, two half-ticks = the two tilings): unitary, speed 1, dim-6 NONZERO: v - 1 = -(1 - sum n^4)/6 k^2 (zero only on axes) | c: axis +0.0000 face -0.0833 body -0.1111 gen -0.0825; unitarity 1e-15
+PASS C2 control: the Euclidean W(F4) kernel's light branch (w = 1, root slice) has no k^2 term in v - 1 in any direction | c: axis +7.4e-10 face +8.9e-11 body +2.9e-10 gen +5.1e-10
+VERDICT: A FAIL (no slice-local Theta, twisted or not: complex energies w<sqrt2, ghosts w>=sqrt2); B FAIL (W(F4) family: no positive point;
+  projector variant positive but dim-6 back + tuned speed + T=0 surface); C works as real-time definition but dim-6 != 0 -> NONE
+TOTAL: PASS=10 FAIL=0   (0.6 s)
+
+----- stderr -----
+

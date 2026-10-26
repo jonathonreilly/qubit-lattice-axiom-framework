@@ -1,0 +1,37 @@
+{
+  "task_id": "J:derive:review-20261004-interval-chern-integers:a1",
+  "source_branch": "main",
+  "source_head": "2868a0c453e667d1267f0e1e7403732a11893d78",
+  "current_main_head_read": "a77a3449c91a753b06ce2a63876cd460b62cb4cf (the four objects have identical sha256 there; pinned commit is an ancestor)",
+  "source_objects": [
+    {
+      "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_ANISOTROPIC_TOUCHINGS_EXIST_WITH_UNIT_CHARGE_BY_INTERVAL_GAP_CERTIFICATES_AND_LATTICE_CHERN_NUMBERS_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+      "sha256": "a4a2ae4ba02dbc50d4c2776f8cb26d21e068a15411687e2f765fa9c18e30bc6a",
+      "verified": true
+    },
+    {
+      "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_SLICE_CHERN_NUMBERS_MATCH_THE_CERTIFIED_CENSUS_CHARGES_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+      "sha256": "c15319baabc31b2d290d95032d43a8f3aa008f76002422d818800adcae597bad",
+      "verified": true
+    },
+    {
+      "path": "scripts/composite_site_network_flux_free_anisotropic_touchings_certified_by_lattice_chern_numbers_2026_10_01.py",
+      "sha256": "31b35995aac1916b7870776acc5b4469523a6a96dc487aa6323aabaf4671d746",
+      "verified": true
+    },
+    {
+      "path": "scripts/composite_site_network_flux_free_slice_chern_numbers_match_the_certified_census_charges_2026_10_01.py",
+      "sha256": "63f6ce15568bd01adf27f6bc271a4cac9d6b060299dd8bdd747bff38d31780b2",
+      "verified": true
+    }
+  ],
+  "checker_sha256": "46678bca235099f912c13247c98026f10dbe926f871e4e3449685d28da2c8354",
+  "first_unresolved_step": "ATTEMPT.md step 9: written proof of items (iii)-(iv) of the admissibility lemma (horizontal-lift overlap, third-order phase bound, principal plaquette phase = flux + edge mismatches); until then the lattice-to-continuum Chern identification is conditional. Lattice integers +1, 0, +2 on three slices of comparator B are interval-enclosed (steps 1-6, 12).",
+  "remaining_work": [
+    "cube-surface (Sigma) meshes of the first note for couplings A-E with the same vertex/link/phase certificates",
+    "proof of lemma items (iii)-(iv)",
+    "independent referee of steps 2-4 and of the outward-rounding layer (assumption A1)",
+    "other couplings only with their own gap certificates"
+  ],
+  "result": "PARTIAL-to-scoped: new interval authentication of lattice Chern integers at B on slices f1=0 (+1), f1=5/16 (0), f1-f2=1/2 (+2); 29/29 checks pass"
+}

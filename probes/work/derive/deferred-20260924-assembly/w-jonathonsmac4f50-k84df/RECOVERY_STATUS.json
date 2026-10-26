@@ -1,0 +1,104 @@
+{
+ "task": "J:derive:deferred-20260924-assembly:a1",
+ "worker_model": "claude-sonnet-5-5",
+ "source_branch": "claude/assembly-graph-witness-20260922 (PR 8648; remote head 6c33178463918e6ad42b539d2488019018208083 per recovery-verification.json)",
+ "source_head": "fe1e7a925c5b66b669b69afe57581cac0e60b404",
+ "origin_main_at_run": "3e1a2dd2531590dabf85bee8db56175ba9b96e90",
+ "landing_commit_from_manifest": "1cb2a082bfa4cebc01c0f61b4e366a6daa48a82d",
+ "note": "manifest.json lists no deferred source paths for PR 8648 (batch 15 sources are PRs 8957, 8033, 8958, 8960, 8950); objects below are the frozen PR files and their landed counterparts, hashed by this worker.",
+ "source_objects": [
+  {
+   "path": "docs/CANDIDATE_ASSEMBLY_SOURCE_LINKED_GRAPH_ELEVEN_TARGETS_MINIMAL_DECISION_SETS_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+   "rev": "fe1e7a9 (frozen)",
+   "sha256": "d274e0183f7d70a41de9f3b17650b458e39feb096af82ddde2b7bb9484a3554f",
+   "verified": true,
+   "manifest_hash_available": false
+  },
+  {
+   "path": "scripts/candidate_assembly_source_linked_graph_minimal_decision_sets_2026_09_22.py",
+   "rev": "fe1e7a9 (frozen)",
+   "sha256": "30f37f120fa5536b26e36203311edefad4ee41d3be0da7221cdca5a6112d573d",
+   "verified": true,
+   "manifest_hash_available": false
+  },
+  {
+   "path": "logs/runner-cache/candidate_assembly_source_linked_graph_minimal_decision_sets_2026_09_22.txt",
+   "rev": "fe1e7a9 (frozen)",
+   "sha256": "2ff2da72b4a29f4a23cb46f49fad67950d2e29e78b40aeeb1c77dd421ac36688",
+   "verified": true,
+   "manifest_hash_available": false
+  },
+  {
+   "path": "docs/CANDIDATE_ASSEMBLY_SOURCE_LINKED_GRAPH_ELEVEN_TARGETS_MINIMAL_DECISION_SETS_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+   "rev": "origin/main 3e1a2dd",
+   "sha256": "2690e4d2ed72373c0d270ad2bd16114cab7bf49cfa162d263e50c393820f40f0",
+   "verified": true
+  },
+  {
+   "path": "scripts/candidate_assembly_source_linked_graph_minimal_decision_sets_2026_09_22.py",
+   "rev": "origin/main 3e1a2dd",
+   "sha256": "f3a036bc0726ead2117f44916cb027235983ce1fbca16b47e27f4cf5ebf2433b",
+   "verified": true
+  },
+  {
+   "path": "docs/UNIFORM_ICE_CARRIES_THE_LATTICE_GREEN_FUNCTION_IN_ITS_CHARGED_SECTOR_WHILE_NEUTRAL_SCALAR_RECORDS_ARE_SHORT_RANGED_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+   "rev": "origin/main 3e1a2dd",
+   "sha256": "dfb13e3d414b40d08fd4946be67ee7aca9f0f8ad07371b6720dd0011497b4e31",
+   "verified": true
+  },
+  {
+   "path": "docs/LOCAL_FINITE_CLOCK_TENSOR_CONSTRAINTS_CUBIC_DISPERSION_AND_LINEAR_GRAVITY_BOUNDARIES_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+   "rev": "origin/main 3e1a2dd",
+   "sha256": "089368d3b9c4fc9387ad3eb3d9320552f8a6e3836e4f81db7f45d8b32c10dcbd",
+   "verified": true
+  },
+  {
+   "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+   "rev": "origin/main 3e1a2dd",
+   "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+   "verified": true
+  },
+  {
+   "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+   "rev": "origin/main 3e1a2dd",
+   "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+   "verified": true
+  }
+ ],
+ "source_sha256_groups_inspected": [
+  "PR8648 frozen note/runner/cache (3 groups above); batch-15.json finding for 8648; review-unit11-v1.json findings U11-R1, U11-R3, U11-R6 (PR 8918)"
+ ],
+ "dispositions": {
+  "already_landed": [
+   "Boolean reachability and the four T_GRAVITY families (landed note L21-L26 and runner predicates 8-22); one-vertex lemma (UNIFORM_ICE_CARRIES L20-24); tensor-model comparator facts D1-D6 (LOCAL_FINITE_CLOCK note)"
+  ],
+  "historical": [
+   "Seventeen-edition narrative of PR 8648 on its original branch; the sentence 'one-vertex scalar invariants ... feed gravity (PR 8918)' (kept deferred, not restored)"
+  ],
+  "duplicate": [],
+  "active_elsewhere": [
+   "none found: open PR search (assembly/ice/neutral scalar/gravity/decision) returned only unrelated candidate-law blocks 10055, 10029, 9948, 9890"
+  ],
+  "recovered": [
+   "Edge-level Boolean facts for the five parents of T_GRAVITY; empty-AND vacuity of AX arrows; comparator-scoped quadratic-channel attraction and exponent (unrefereed)"
+  ],
+  "open": [
+   "Physical implication ONE_VERTEX_INVARIANTS -> T_GRAVITY: missing premise = source map to a bounded-below attractive scalar sector, plus model compatibility between ice and tensor parents"
+  ]
+ },
+ "existing_task_and_log_links": [
+  "J:derive:axioms-and-the-event-lattice:a1, a2, a3 (probes/work/derive/axioms-and-the-event-lattice/w-jonathonsmac4f50-j8065, w-macbookpro90c72-j59ee, w-jonathonsmac4f50-jaf7d) -- axiom-memo readings, no overlap with the assembly arrows",
+  "J:confirm:J-derive-axioms-and-the-event-lattice-a1..a3 (logs/probes)"
+ ],
+ "first_unresolved_step": "ATTEMPT.md step 15: from 'a one-vertex statistic induces an interaction' to 'that interaction is gravity' needs a source map to a bounded-below attractive scalar sector (not supplied).",
+ "next_exact_obligation": "On the 4^3 zero-flux torus compute the exact constrained-quotient Hessian of an H_N-type energy plus a coupling to the vertex statistic s_v and decide its positivity.",
+ "remaining_ranked_source_groups": [
+  "1. T_RECORD_DYNAMICS -> T_GRAVITY (declared open edge 'record-statistic to curvature bridge'; 26 AND-parents of T_RECORD_DYNAMICS, 12 on the ice lane)",
+  "2. GRAVITY_BOUNDARIES -> T_GRAVITY (Hamiltonian choice H_L vs H_N; compact-character bound; recovered here only at k=(1,2,2))",
+  "3. T_GAUGE -> T_GRAVITY via ROLES_SOURCE choice (four route alternatives)",
+  "4. Negative results used as AND-parents of positive routes: SINGLE_SITE_ROUTE <- TWO_SQUARES_NO_ORDER, TWO_CUBES_NO_ORDER, TORUS_NO_ORDER, POLYOMINO_NO_ORDER",
+  "5. DEC_READING menu (formation vs static) against the axiom memo reading note (MINIMAL_AXIOMS L63-73, non-governing)",
+  "6. AX -> 78 reference-node arrows: classify each cited note by whether it derives its model from the axioms",
+  "7. Other batch-15 source groups belong to sibling task J:derive:deferred-20260924-residuals:a1 (PRs 8957 x97, 8033 x81, 8958 x40, 8960 x12, 8950 x11); not inspected here"
+ ]
+}

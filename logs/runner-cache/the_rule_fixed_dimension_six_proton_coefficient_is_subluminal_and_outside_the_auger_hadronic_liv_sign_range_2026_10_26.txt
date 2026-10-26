@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/the_rule_fixed_dimension_six_proton_coefficient_is_subluminal_and_outside_the_auger_hadronic_liv_sign_range_2026_10_26.py
+runner_sha256: 6aee2c94ac4358f56448db95908d35d944afe15098db3a91e14fb424d1ea4a77
+input_fingerprint_sha256: 96e4e70da2049534bd90305faf4979070ff61fdf97a0eaf0018ab22f8cdef172
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.01
+status: ok
+----- stdout -----
+[PASS] A1 E = p + c p^3/E*^2 gives E^2 - p^2 = delta E^4 + O(p^6) with delta_{had,2} = 2c/E*^2 (Auger Eq. 2.2 form); eta_MTML = 2c (M_P/E*)^2 | E* = 1.2177e+27 eV (L = sqrt(8 pi) l_P); 2/E*^2 = 1.349e-54 eV^-2; (M_P/E*)^2 = 100.53
+   sign: c < 0 (rules) => delta_{had,2} < 0 => group velocity 1 - 3|c|p^2/E*^2 < 1: SUBLUMINAL
+[PASS] B1 sky average <sum n^4> = 3/5 exactly (MC 2e5 rays agrees); range [1/3 body, 1 axis] | MC 0.59997, min 0.3333, max 1.0000
+   sky avg: c_g = -1/40, c6 = -1/30, c_q = -7/120; axis c_q = -1/8, c_g = -1/24; body c_q = c_g = -1/72
+[PASS] B2 c_q = c_g + c6 = -S/6 + 1/24 is <= c_g on every ray (fermions never less subluminal than links); equal only on body diagonals | sky-avg c_q = -7/120 = -0.05833, c_g = -1/40
+[PASS] C1 LO singlet anomalous dimensions conserve momentum at N = 2 (column sums 0) | N = 4 eigenvalues (nf=6): [-3.38  -8.409]
+   proton @2 GeV: momentum val 0.421, gluon 0.439; <x^3>_q = 0.0493, <x^3>_g = 0.0138 (sum 0.0630; shape scan 0.044-0.091)
+   proton @E*: alpha_s = 0.0202; <x^3>_q = 0.00408, <x^3>_g = 0.00043 (sum 0.00451; scan 0.0029-0.0069); pion @2 GeV sum 0.1194, @E* 0.00902
+[PASS] C2 parton weight W = sum <x^3> is ~0.03 at 2 GeV and falls ~5-10x by the cell scale (LO N = 4 evolution; supplied PDFs and alpha_s(2 GeV) = 0.30) | ratio E*/2GeV = 0.072
+   W@2GeV: delta_had,2 (eV^-2) axis -9.08e-57, sky-avg -4.34e-57, body -1.18e-57; |.|/1e-57 = 9.08, 4.34, 1.181
+   W@E*: delta_had,2 (eV^-2) axis -7.12e-58, sky-avg -3.36e-58, body -8.45e-59; |.|/1e-57 = 0.71, 0.34, 0.084
+[PASS] D1 predicted delta_had,2 < 0 on every ray: outside the delta_had > 0 range Auger 2022 scanned, so its 5 sigma number does not apply as a bound | Auger: "only positive LIV coefficients (delta_had > 0)"; n=2 value is the Eq. 6.4 rescaling of the n=0 fit
+[PASS] D2 magnitude-only comparison (sign ignored): sky-average |delta|/1e-57 is 0.3-4.3 and the axis value 0.7-9.1 (below the pre-registered factor 10); least-constrained (body) ray 0.08-1.2 | sky 0.34-4.34; body 0.084-1.181
+   eta_p (MTML convention, E^2 = p^2 + m^2 + eta p^4/M_P^2): W@2GeV: axis -1.35e+00, sky -6.47e-01, body -1.76e-01; W@E*: axis -1.06e-01, sky -5.00e-02, body -1.26e-02
+[PASS] E1 pure-proton analysis (MTML 2009, 99% CL: -1e-3 <~ eta_p <~ 1e-6; grid edge at -1e-3): every predicted eta_p lies below -1e-3, i.e. outside the allowed region IF the flux is pure protons | smallest |eta_p| = 1.26e-02 = 13 x the grid edge
+[PASS] F1 GZK branch (pion fraction x <= 1/2) of p + gamma_CMB -> p + pi (photon up to 10 kT x 2.82) is closed at every energy even on the least-subluminal (body) ray at both weighting scales; the hard-pion branch opens only where p -> p pi0 opens by itself (G1) | |c_p| body: 8.8e-04 (2 GeV), 6.3e-05 (E*); hard branch from 12 / 21 EeV (body)
+   p -> p gamma threshold (EeV) [y*] / p -> p pi0 (EeV): axis W@2GeV: 3.6 [0.78] / 6.7; axis W@E*: 3.2 [0.68] / 12.5; sky W@2GeV: 4.0 [0.76] / 8.0; sky W@E*: 3.7 [0.68] / 15.1; body W@2GeV: 4.4 [0.72] / 11.5; body W@E*: 4.2 [0.67] / 21.3
+[PASS] G1 parton-additive protons are less subluminal than photons on every ray (W < 1), so hard p -> p gamma is kinematically OPEN above a few EeV (soft emission stays closed) | range 3.2-4.4 EeV
+   nuclei, nucleon-level p->p gamma threshold A x E_th (EeV, axis/body, W@E*): A=4: 13/17; A=14: 45/59; A=28: 91/119; A=56: 182/238
+[PASS] G2 nucleus emission threshold scales ~A (rigidity-like): Fe reaches 1-3e20 eV, comparable to the highest events (TA 2.44e20, Fly's Eye 3.2e20 eV): a tension test, not yet a verdict | Fe axis 1.82e+20 eV, body 2.38e+20 eV
+[PASS] P1 photon delta_gamma,2 = 2 c_g/E*^2 is 190-560 x beyond -1e-58, but that bound assumes LI electrons (subluminal photons survive pair production); here gamma -> e+e- is open above 80-122 PeV, so its mechanism fails and it is not applied | axis -5.62e-56, sky -3.37e-56, body -1.87e-56 eV^-2 (reference scenario: no Auger constraint)
+[PASS] H1 if the Auger magnitude were applied regardless of sign, the sky-average needs delta down by R; delta ~ L^2 so L -> L/sqrt(R), i.e. kappa -> kappa/R (one-G: L = sqrt(8 pi kappa) l_P with G fixed) | R_sky(max) = 4.34: L x 0.48, kappa = 0.23 (the split window already allows cell factor <= 2)
+   runtime 0.3 s
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

@@ -1,66 +1,14 @@
 #!/usr/bin/env python3
-"""Frontier probe: does the record-gauge principle (#2667 +#2711) supply the
-missing "symmetric-base -> physical-color" bridge for SU(3)_c?
-
-This is a HONEST IS/IS-NOT probe, not a derivation claim. It works on the
-explicit chiral-cube carrier
-
-    C^8 = (C^2)^otimes 3 = C^4_base (x) C^2_fiber
-
-(the (b1,b2)-base (x) b3-fiber decomposition of
-CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27),
-and tests four things, mapped to the four task parts:
-
-  PART 1  Two candidate local symmetries on the C^8 = C^4_base (x) C^2_fiber carrier and their
-          DISTINCT invariant (record) algebras:
-            (i)  base SU(3): Gell-Mann T^a on the 3D symmetric base block;
-                 its singlets are the color singlets eps_qqq (baryon) and
-                 q-qbar -> 1 (meson).
-            (ii) fiber SU(2): Jf_i = I_4 (x) sigma_i/2; its singlets are the
-                 weak-isospin singlets (the antisymmetric doublet contraction).
-          Show the two invariant algebras (commutants) are DIFFERENT.
-
-  PART 2  The #2667 bridge in the CONVERSE direction: "the physical gauge
-          group is the local symmetry whose invariants are the records."
-          IF the physical records are the SU(3) color singlets, then the
-          commutant identification picks the base SU(3) as the gauge group.
-          Verify: commutant(base SU(3)) is exactly the algebra carrying the
-          color-singlet projectors (eps_qqq, qqbar->1), and the gauge group
-          whose invariant 1-d rep is spanned by those singlets is the base
-          SU(3) (not the fiber SU(2)). This is a CONDITIONAL identification.
-
-	  PART 3  THE CRUX. Is "base-SU(3)-gauged, NOT fiber-SU(2)-gauged" FORCED by
-	          a record/locality/link reason, or left open by the matter
-          realization? We test the only structural discriminator the
-          framework offers: the gauge connection lives on LINKS (Gauss-law /
-          Wilson, #2711), the fiber is matter spin. We build a minimal link
-          model and check whether locality+link-structure forces the base
-          SU(3) (color) onto the links rather than the fiber SU(2). Result:
-          a base-SU(3) Gauss law and a fiber-SU(2) Gauss law can EACH be
-          written on their own carrier, each with the elementary
-          0 -> 1 -> 2 variant/invariant structure (the SU(3) case verified at
-          the matched endpoint; carriers not identified); nothing in
-          {records, locality, links} prefers one over the other. The choice
-          is the assignment "quarks occupy the 3D symmetric base in the
-          fundamental 3" = the matter-realization residual (which subsystem the matter occupies).
-
-  PART 4  Residual ledger. Decompose the bridge into
-            (a) the #2667 half: gauge-group = commutant of the record-
-                invariance generators (a genuine algebraic identity here),
-            (b) the residual: WHICH symmetry's singlets are the physical
-                records / which subsystem the quarks occupy = the matter
-                realization. Name (b) precisely.
-
-MEMORY CARE: explicit 8-dim carrier, tiny matter sectors (q in C^3, qqbar
-in C^9, qqq in C^27), exact sympy for the algebra and exact numpy for the
-sweeps. RSS is sampled and capped (<2 GB). Output is capped and also
-mirrored to a log file.
-
-NO PDG values, NO fitted selectors, NO imported numerical comparators.
-This is a structural / algebraic probe only.
+"""Supplied SU(3) on a three-dimensional symmetric carrier: invariant
+singlet tests, not reconstruction of a physical gauge group from projectors.
+The inherited diagonal SU(2) action on Sym^2(C^2) is spin one; SU(3) is an
+additional chosen action. All matrix constructions are supplied. Symbolic
+checks and floating-point SVD/singlet residual checks are distinguished.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 120
 
 import sys
 from itertools import permutations, product
@@ -201,9 +149,9 @@ def to_np(M: Matrix) -> np.ndarray:
 
 def main() -> int:
     emit("=" * 84)
-    emit("FRONTIER: SU(3)_c symmetric-base -> physical-color bridge from the")
-    emit("record-gauge principle (#2667 +#2711). HONEST IS/IS-NOT probe.")
-    emit("Carrier: C^8 = C^4_base (x) C^2_fiber.  Exact sympy + numpy.")
+    emit("FINITE MODEL: supplied symmetric-base SU(3) and fiber SU(2)")
+    emit("Invariant tensor/projector checks; physical color assignment remains open.")
+    emit("Carrier: C^8 = C^4_base (x) C^2_fiber. Symbolic and floating-point checks.")
     emit("=" * 84)
 
     sigmas = pauli()
@@ -351,12 +299,12 @@ def main() -> int:
     emit("     STRUCTURALLY DISTINCT from the SU(2) weak-singlet record algebra.")
 
     # ========================================================================
-    section("PART 2: #2667 converse -> 'records = color singlets' picks base SU(3)")
+    section("PART 2: invariant projectors do not uniquely reconstruct SU(3)")
     # ========================================================================
-    emit("#2667 (converse): gauge group = the local symmetry whose invariants")
-    emit("are the records. We test: do the SU(3) color singlets sit in the")
+    emit("We test the invariant projectors of two supplied group actions;")
+    emit("the singlets sit in the commutant on their tensor representations,")
     emit("commutant of the base-SU(3) generators (=their invariant algebra),")
-    emit("and is base SU(3) -- not fiber SU(2) -- the symmetry that fixes them?")
+    emit("without asserting that these projectors reconstruct a unique group.")
     emit("")
     # The color-singlet PROJECTORS are SU(3)-invariant operators on the matter,
     # i.e. they live in the commutant of the (diagonal) SU(3) action. Verify
@@ -368,36 +316,21 @@ def main() -> int:
     baryon_in_commutant = all(np.linalg.norm(P_baryon @ G - G @ P_baryon) < 1e-10 for G in qqq_gens)
     check("color-singlet projector P_baryon IN commutant of base-SU(3) action", baryon_in_commutant)
 
-    # Counterfactual: the color singlets are NOT fiber-SU(2) singlets, so if
-    # the records were taken to BE the color singlets, the fiber SU(2) is NOT
-    # the symmetry that fixes them -> #2667 picks base SU(3), not fiber SU(2).
-    # Demonstrate on the smallest shared carrier C^3 ~ embed into the sym base
-    # of C^4 then (x) C^2: the color singlet directions are acted on
-    # non-trivially by a fiber rotation in general -> not SU(2)-records.
-    # (structural statement; we record it as the conditional identification.)
-    emit("  CONDITIONAL identification (the #2667 'half'): IF the physical")
-    emit("  records are the color singlets, THEN by 'gauge = invariance-")
-    emit("  commutant', the gauged group is the base SU(3). This is an")
-    emit("  algebraic identity GIVEN the antecedent 'records = color singlets'.")
-    check(
-        "#2667 half: 'records=color singlets' => gauge group = base SU(3) (commutant identity holds)",
-        meson_in_commutant and baryon_in_commutant and inv_meson and inv_baryon,
-    )
+    # Projector invariance is insufficient to reconstruct SU(3).
+    # A scalar U(3) phase fixes the meson vector and multiplies the baryon
+    # vector by a phase, leaving both rank-one projectors unchanged.
+    phase = np.exp(0.17j)
+    scalar3 = phase * np.eye(3)
+    transformed_baryon = kron(scalar3, scalar3, scalar3) @ eps
+    check("U(3) phase counterexample: baryon projector invariant",
+          np.linalg.norm(np.outer(transformed_baryon, transformed_baryon.conj())-P_baryon)<EPS)
+    check("same phase does not fix baryon vector",
+          np.linalg.norm(transformed_baryon-eps)>0.1)
+    emit("Projector invariance proves inclusion only, not unique group reconstruction.")
+    emit("Fixing the alternating tensor itself within a supplied U(3) action adds det=1.")
 
     # ========================================================================
-    section("PART 3: THE CRUX -- is base-SU(3)-gauged (not fiber-SU(2)) FORCED or OPEN?")
-    # ========================================================================
-    emit("Test the only structural discriminator the framework offers:")
-    emit("the gauge connection lives on LINKS (Gauss law / Wilson, #2711);")
-    emit("the fiber is matter spin. Does locality+links FORCE the base SU(3)")
-    emit("(color) onto the links rather than the fiber SU(2)?")
-    emit("")
-    emit("Minimal two-endpoint model (mirrors TWO_ENDPOINT_GAUSS_LAW note):")
-    emit("a link with two endpoints; at each endpoint a matter dof and a")
-    emit("link-end dof. We can write a Gauss law for EITHER symmetry.")
-    emit("")
-
-    # --- Build the two-endpoint U(1)/SU(2) profile (record axiom shipped form)
+    section("PART 3: two supplied finite link models")
     sx = np.array([[0, 1], [1, 0]], dtype=complex)
     sy = np.array([[0, -1j], [1j, 0]], dtype=complex)
     sz = np.array([[1, 0], [0, -1]], dtype=complex)
@@ -456,111 +389,22 @@ def main() -> int:
     check("SU(3): dressed color singlet invariant at endpoint A (Wilson-type)", color_dressed_inv)
 
     emit("")
-    emit("  RESULT: a fiber-SU(2) Gauss law (two-endpoint qubit carrier) and a")
-    emit("  base-SU(3) Gauss law (endpoint C^3 (x) link-end C^3 carrier) each admit")
-    emit("  the same bare-transport-variant / dressed-singlet-invariant structure")
-    emit("  on their own carrier (the SU(3) case is verified at the matched")
-    emit("  endpoint A; the two carriers are not identified). So records + locality")
-    emit("  + the link/Gauss-law structure do NOT by themselves discriminate base")
-    emit("  SU(3) from fiber SU(2): whichever generator is PLACED on the link end")
-    emit("  is the one whose singlets become the records.")
+    emit("Two chosen carriers admit the tested endpoint-invariance profiles.")
     # The discriminator (which generator sits on the link) is an INPUT.
     both_have_profile = (not invA) and invB and (not color_invA) and color_dressed_inv
     check(
-        "CRUX: base-SU(3)-vs-fiber-SU(2) gauging is NOT forced by records/locality/links",
+        "two supplied carriers admit the tested variant/invariant profile",
         both_have_profile,
         "each symmetry admits the tested variant/invariant structure on its own link carrier",
     )
 
-    # SHARPENING: there IS a genuine asymmetry, and it makes the residual MORE
-    # specific (not less). The Qubit axiom gives a qubit (M_2(C)) per site.
-    #  - A single qubit link-end carries SU(2) intrinsically: Aut(M_2(C)) = SO(3),
-    #    state-action SU(2) (fiber-SU(2) needs no extra structure -- #2679).
-    #  - The framework's color-3 is NOT a single-qubit object: it is the 3D
-    #    SYMMETRIC block Sym^2(C^2) = C^3 of the (b1,b2) base PAIR. So a color
-    #    Gauss law on links requires the link connection to carry the
-    #    base-PAIR symmetric (color) index, i.e. to couple to TWO base qubits in
-    #    their symmetric square -- a specific multi-qubit assignment, NOT the
-    #    bare per-qubit link the Qubit axiom hands you.
-    emit("")
-    emit("  SHARPENING (the asymmetry makes the color residual MORE specific):")
-    emit("  - a single qubit link-end (Qubit axiom, M_2(C)) carries SU(2)")
-    emit("    intrinsically (Aut(M_2(C)) = SO(3)); fiber-SU(2) needs no extra dof.")
-    emit("  - the framework's color-3 is Sym^2(C^2) of the (b1,b2) base PAIR;")
-    emit("    gauging it on links requires the connection to carry the base-pair")
-    emit("    SYMMETRIC color index = a specific 2-qubit assignment.")
-    # verify: dim Sym^2(C^2) = 3 = N_c, and it is NOT a single qubit (dim 2).
-    dim_sym2 = 3  # Sym^2(C^2)
-    check(
-        "framework color-3 = Sym^2(C^2) of base pair (dim 3 = N_c), not a single qubit (dim 2)",
-        dim_sym2 == Nc and dim_sym2 != 2,
-        "color index lives in the symmetric square of two base qubits",
-    )
-    emit("  => the matter-realization residual is therefore not merely a 'pick a")
-    emit("     symmetry' coin flip; for COLOR it specifically requires assigning")
-    emit("     quarks to the base-pair symmetric block AND routing that color")
-    emit("     index onto the links -- a structured matter+connection choice that")
-    emit("     records + locality + the link/Gauss-law structure do not supply")
-    emit("     (cf. #2679: a bare qubit link gives su(2), not su(3)).")
-
-    # Make the admission explicit: the choice = which subsystem the quarks
-    # occupy (the 3D symmetric base in the fundamental 3) = matter realization.
-    emit("")
-    emit("  The remaining selector is the ASSIGNMENT 'quarks occupy the 3D")
-    emit("  symmetric base block as the fundamental 3 (color), and the gauge")
-    emit("  connection carries that color index on the links'. That assignment")
-    emit("  is the matter-realization residual (which subsystem the matter")
-    emit("  occupies). It is NOT delivered by records + locality + the links.")
-    # Cross-check against the framework's own axiom scope (narration, not a
-    # scored check): the axiom memo states the Qubit axiom supplies no gauge
-    # group and the Record axiom supplies no arbitrary observable identification.
-    emit("")
-    emit("  (narration, not scored) per the axiom memo: Qubit supplies no gauge")
-    emit("  group and Record supplies no arbitrary observable identification, so")
-    emit("  the matter-realization residual is not supplied by records+locality.")
-
-    # ========================================================================
-    section("PART 4: residual ledger -- the bridge = [#2667 half] + [named residual]")
-    # ========================================================================
-    emit("Bridge('symmetric-base -> physical-color') decomposes as:")
-    emit("")
-    emit("  (a) #2667 HALF (genuine algebraic identity, verified above):")
-    emit("      gauge group = commutant of the record-invariance generators.")
-    emit("      GIVEN 'the records are the color singlets', the gauged group is")
-    emit("      the base SU(3). [Parts 1b, 2 PASS.]")
-    emit("")
-    emit("  (b) RESIDUAL (open, NOT supplied by the record axiom):")
-    emit("      WHICH local symmetry's singlets are the physical records, i.e.")
-    emit("      the assignment of quarks to the 3D-symmetric-base fundamental 3")
-    emit("      with the color index living on the links. = the MATTER")
-    emit("      REALIZATION residual. [Part 3 CRUX: not forced.]")
-    emit("")
-    emit("  Reconciliation with the flagged boundary: the framework's notes")
-    emit("  (CL3_COLOR_AUTOMORPHISM, CL3_SU3_SYMMETRIC_BASE..., baryon/meson")
-    emit("  singlet notes) all defer EXACTLY (b) -- 'the identification of the")
-    emit("  3D symmetric base with physical SM color SU(3)_c'. #2667 supplies")
-    emit("  (a) but NOT (b); the deferred bridge IS the residual (b).")
-    # consistency self-checks of the ledger claims
-    check("(a) verified: commutant identity holds for the color singlets", meson_in_commutant and baryon_in_commutant)
-    check("(b) named: residual = matter realization (which symmetry's singlets are records)", both_have_profile)
-    # boundary reconciliation (narration, not a scored check): the framework's
-    # color notes defer 'symmetric-base = physical color', which is residual (b).
-    emit("")
-    emit("  (narration, not scored) the framework's color notes defer")
-    emit("  'symmetric-base = physical color', i.e. residual (b), not (a).")
-
-    # ========================================================================
-    section("VERDICT")
-    # ========================================================================
-    emit("Record axiom (#2667 +#2711) supplies the gauge-from-record-invariance")
-    emit("HALF of the symmetric-base -> physical-color bridge (a genuine")
-    emit("algebraic identity on the explicit C^8 carrier), but NOT the full")
-    emit("bridge: the residual -- WHICH local symmetry is gauged / quarks in the")
-    emit("fundamental-3 / the matter-realization residual -- is open,")
-    emit("not forced. base-SU(3)-vs-fiber-SU(2) gauging is NOT discriminated by")
-    emit("records/locality/links. This is PARTIAL-PINNING, not a derivation of")
-    emit("color. The framework's 'the bridge is the load-bearing boundary' flag")
-    emit("is the residual (b); #2667 reduces the bridge to it but does not close it.")
+    section("SCOPE")
+    emit("Supplied base SU(3) and fiber SU(2) have different commutants.")
+    emit("Meson and baryon projectors are invariant under the supplied color action.")
+    emit("These projectors also admit scalar U(3) phases: no unique gauge-group converse.")
+    emit("Sym^2(C^2) is a vector-space carrier; its inherited SU(2) action is spin one.")
+    emit("An additional SU(3) action and its physical color interpretation remain choices.")
+    emit("Link tests concern two chosen models, not all theories satisfying axioms.")
 
     # ------------------------------------------------------------------------
     section("SELF-CHECK SUMMARY")

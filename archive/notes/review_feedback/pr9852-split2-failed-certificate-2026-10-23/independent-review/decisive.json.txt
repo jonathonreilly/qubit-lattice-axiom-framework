@@ -1,0 +1,301 @@
+{
+  "slack_delta_generator": [
+    [
+      0.0,
+      -2.0,
+      0.0
+    ],
+    [
+      -2.0,
+      1.0,
+      -1.0
+    ],
+    [
+      0.0,
+      -1.0,
+      -1.0
+    ]
+  ],
+  "eigenvalues": [
+    -2.0000000000000004,
+    -0.7320508075688774,
+    2.7320508075688785
+  ],
+  "exact_eigenvalues": [
+    "-2",
+    "1-sqrt(3)",
+    "1+sqrt(3)"
+  ],
+  "claimed_norm": 1.7320508075688772,
+  "actual_norm": 2.732050807568877,
+  "boxes": [
+    {
+      "name": "CAP",
+      "center_eigenvalues": [
+        -1.5883694754040054,
+        -0.3260423915035614,
+        1.7719118669075662
+      ],
+      "claimed_radius": 0.021160254037844384,
+      "safe_exact_generator_radius": 0.026160254037844388,
+      "max_corner_operator_norm": 0.022500000000000346,
+      "max_corner_eigen_shift": 0.008604600456547817,
+      "corners": [
+        {
+          "point": [
+            -0.145,
+            1.1835,
+            0.0145
+          ],
+          "perturbation_norm": 0.009013878188659907,
+          "max_eigenvalue_shift": 0.006236784021500852,
+          "violates_claimed_radius": false,
+          "eigenvalues": [
+            -1.585951260559108,
+            -0.33227917552506225,
+            1.7732304360841709
+          ]
+        },
+        {
+          "point": [
+            -0.145,
+            1.1835,
+            0.0245
+          ],
+          "perturbation_norm": 0.019013878188659572,
+          "max_eigenvalue_shift": 0.008548885623476499,
+          "violates_claimed_radius": false,
+          "eigenvalues": [
+            -1.586400379106704,
+            -0.3345912771270379,
+            1.7759916562337419
+          ]
+        },
+        {
+          "point": [
+            -0.145,
+            1.1935,
+            0.0145
+          ],
+          "perturbation_norm": 0.022500000000000346,
+          "max_eigenvalue_shift": 0.0058334981031642474,
+          "violates_claimed_radius": false,
+          "eigenvalues": [
+            -1.5935451520161212,
+            -0.32020889340039715,
+            1.7687540454165185
+          ]
+        },
+        {
+          "point": [
+            -0.145,
+            1.1935,
+            0.0245
+          ],
+          "perturbation_norm": 0.009013878188660401,
+          "max_eigenvalue_shift": 0.0054684728479657,
+          "violates_claimed_radius": false,
+          "eigenvalues": [
+            -1.5938379482519711,
+            -0.32250329434190717,
+            1.7713412425938788
+          ]
+        },
+        {
+          "point": [
+            -0.14,
+            1.1835,
+            0.0145
+          ],
+          "perturbation_norm": 0.009013878188659917,
+          "max_eigenvalue_shift": 0.005438395858979428,
+          "violates_claimed_radius": false,
+          "eigenvalues": [
+            -1.582931079545026,
+            -0.3295934168206208,
+            1.7725244963656475
+          ]
+        },
+        {
+          "point": [
+            -0.14,
+            1.1835,
+            0.0245
+          ],
+          "perturbation_norm": 0.022499999999999614,
+          "max_eigenvalue_shift": 0.0059257225623725596,
+          "violates_claimed_radius": false,
+          "eigenvalues": [
+            -1.583373532018755,
+            -0.33196811406593396,
+            1.7753416460846896
+          ]
+        },
+        {
+          "point": [
+            -0.14,
+            1.1935,
+            0.0145
+          ],
+          "perturbation_norm": 0.019013878188660422,
+          "max_eigenvalue_shift": 0.008604600456547817,
+          "violates_claimed_radius": false,
+          "eigenvalues": [
+            -1.5905444260670836,
+            -0.3174377910470136,
+            1.7679822171140978
+          ]
+        },
+        {
+          "point": [
+            -0.14,
+            1.1935,
+            0.0245
+          ],
+          "perturbation_norm": 0.009013878188660411,
+          "max_eigenvalue_shift": 0.006248414673879765,
+          "violates_claimed_radius": false,
+          "eigenvalues": [
+            -1.590831296525986,
+            -0.31979397682968164,
+            1.7706252733556687
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ENDPOINT",
+      "center_eigenvalues": [
+        -1.5864288109253435,
+        -0.3245160394574529,
+        1.7684448503827959
+      ],
+      "claimed_radius": 0.011916729559300716,
+      "safe_exact_generator_radius": 0.01446672955930077,
+      "max_corner_operator_norm": 0.01260000000000015,
+      "max_corner_eigen_shift": 0.0050909424352829635,
+      "corners": [
+        {
+          "point": [
+            -0.145,
+            1.1839,
+            0
+          ],
+          "perturbation_norm": 0.005125184725702283,
+          "max_eigenvalue_shift": 0.0038811316555499298,
+          "violates_claimed_radius": false,
+          "eigenvalues": [
+            -1.5859477942046427,
+            -0.3283971711130028,
+            1.7693449653176454
+          ]
+        },
+        {
+          "point": [
+            -0.145,
+            1.1839,
+            0.005
+          ],
+          "perturbation_norm": 0.010125184725702289,
+          "max_eigenvalue_shift": 0.005059584536043549,
+          "violates_claimed_radius": false,
+          "eigenvalues": [
+            -1.5860062550092668,
+            -0.32957562399349644,
+            1.770581879002764
+          ]
+        },
+        {
+          "point": [
+            -0.145,
+            1.189,
+            0
+          ],
+          "perturbation_norm": 0.01259999999999999,
+          "max_eigenvalue_shift": 0.0034818199617137058,
+          "violates_claimed_radius": false,
+          "eigenvalues": [
+            -1.5899106308870572,
+            -0.3222467991179901,
+            1.7671574300050477
+          ]
+        },
+        {
+          "point": [
+            -0.145,
+            1.189,
+            0.005
+          ],
+          "perturbation_norm": 0.005125184725702134,
+          "max_eigenvalue_shift": 0.0035000707360364203,
+          "violates_claimed_radius": false,
+          "eigenvalues": [
+            -1.58992888166138,
+            -0.3234213129160063,
+            1.7683501945773863
+          ]
+        },
+        {
+          "point": [
+            -0.14,
+            1.1839,
+            0
+          ],
+          "perturbation_norm": 0.0051251847257022766,
+          "max_eigenvalue_shift": 0.003491489751424881,
+          "violates_claimed_radius": false,
+          "eigenvalues": [
+            -1.5829373211739186,
+            -0.3256184364241768,
+            1.768555757598096
+          ]
+        },
+        {
+          "point": [
+            -0.14,
+            1.1839,
+            0.005
+          ],
+          "perturbation_norm": 0.01260000000000015,
+          "max_eigenvalue_shift": 0.0034360046169767955,
+          "violates_claimed_radius": false,
+          "eigenvalues": [
+            -1.5829928063083667,
+            -0.3268276071510182,
+            1.7698204134593856
+          ]
+        },
+        {
+          "point": [
+            -0.14,
+            1.189,
+            0
+          ],
+          "perturbation_norm": 0.010125184725702192,
+          "max_eigenvalue_shift": 0.0050909424352829635,
+          "violates_claimed_radius": false,
+          "eigenvalues": [
+            -1.5869096216943335,
+            -0.3194250970221699,
+            1.7663347187165028
+          ]
+        },
+        {
+          "point": [
+            -0.14,
+            1.189,
+            0.005
+          ],
+          "perturbation_norm": 0.005125184725702185,
+          "max_eigenvalue_shift": 0.0038859299711715978,
+          "violates_claimed_radius": false,
+          "eigenvalues": [
+            -1.5869250893806766,
+            -0.3206301094862813,
+            1.7675551988669571
+          ]
+        }
+      ]
+    }
+  ]
+}

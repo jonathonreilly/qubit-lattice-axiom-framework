@@ -1,168 +1,70 @@
-# Koide Native Zero-Section Defined Route Algebra
+# Supplied zero-source, real commutant and endpoint-law algebra
 
-**Date:** 2026-04-24 (defined-route repair: 2026-05-27)
+**Date:** 2026-04-24
 **Type:** bounded_theorem
+**Status:** conditional finite algebra; no physical endpoint or phase identification.
 **Primary runner:** `scripts/frontier_koide_native_zero_section_closure_route.py`
 
-## Source Boundary
+## Rational definitions and domain
 
-The binding claim is entirely inside the finite algebraic route object
-`(D1)-(D5)` below. This row may be cited only as bounded defined-route
-support. It is not a physical Koide `Q`/`delta` closure unless separate
-bridge theorems derive the physical source/readout identifications.
+For real z with z≠−1,+1, put w=(1+z)/2 and t=(1−w)/w. Define
+Q=(1+t)/3 and K=(t²−1)/(4t). The common original domain excludes both
+endpoints: w=0 makes t undefined, and w=1 gives t=0 in K's denominator.
+If the weights are probabilities, impose the stronger −1<z<1 separately.
+Direct cancellation yields Q=2/[3(1+z)] and K=−z/(1−z²) on this domain.
+Thus z=0 gives w=1/2,Q=2/3,K=0; z=−1/3 gives w=1/3,Q=1,K=3/8.
+These are properties of supplied functions. They do not select a physical
+zero source or identify Q with a measured charged-lepton scalar.
 
-## Scope Repair (2026-05-27)
+## Complete real commutant and idempotent calculation
 
-Prior versions treated three physical/readout identifications as open
-inputs:
+Let J=[[0,−1],[1,0]] and R=−I/2+(sqrt(3)/2)J, the120-degree real rotation.
+Since sqrt(3)/2≠0, XR=RX iff XJ=JX. Writing X=[[x0,x1],[x2,x3]] and
+comparing entries gives x0=x3,x1=−x2, hence exactly X=aI+bJ.
+Because J²=−I, X²=X iff
 
-1. the charged-lepton scalar readout is the zero-source source-response
-   coefficient;
-2. the Brannen endpoint is the whole real nontrivial `Z_3` primitive;
-3. the open determinant-line endpoint readout is unit-preserving/based.
-
-This repair does **not** derive those physical identifications. Instead,
-it narrows the binding claim to a self-contained finite route algebra.
-The zero section, the real `Z_3` primitive endpoint, the based
-determinant-line unit, and the finite root-of-unity scalar are definitions
-of the route object. The theorem proves what follows inside that object.
-
-Explicitly out of scope:
-
-- physical Koide closure;
-- proof that the physical charged-lepton readout selects the zero source;
-- proof that the physical Brannen endpoint is the whole real nontrivial
-  `Z_3` primitive;
-- proof that a physical determinant-line readout is based;
-- any claim that the route algebra is selected by the current physical
-  carrier.
-
-The old conditional route remains useful as science because it identifies
-which zero-section choices would close the algebra. This repair makes that
-object reviewable without smuggling the three physical bridges into the
-bounded theorem.
-
-## Defined Route Algebra
-
-All statements below are definitions of the bounded object under study,
-not framework axioms or physical bridge theorems.
-
-- **(D1) Source-label zero-section algebra.** Let `z` be a rational
-  source label and define
-  ```text
-  w_plus(z) = (1 + z) / 2,
-  Q(w)      = (1 + (1 - w) / w) / 3,
-  K_TL(w)   = (((1 - w) / w)^2 - 1) / (4 * ((1 - w) / w)).
-  ```
-  The zero section is the defined route choice `z = 0`.
-
-- **(D2) Real nontrivial `Z_3` primitive algebra.** Let `R` be rotation
-  by `2pi/3` on `R^2` and let `J` be the standard complex structure.
-  The real equivariant endomorphism algebra is the commutant
-  ```text
-  {a I + b J : a,b in R},    J^2 = -I.
-  ```
-
-- **(D3) Rank-one boundary comparison.** A rank-one line projector inside
-  the real doublet is allowed as a comparison object, but it is not part
-  of the defined native real-primitive endpoint unless it commutes with
-  `R`.
-
-- **(D4) Based determinant-line endpoint algebra.** For the open endpoint
-  coordinate
-  ```text
-  F(phi) = phi + c,
-  ```
-  the route imposes the based unit condition `F(0) = 0`.
-
-- **(D5) Finite `Z_3` scalar and endpoint law.** Let
-  `omega = exp(2pi i / 3)` and define the finite route scalar
-  ```text
-  eta_Z3 = (1/3) * sum_{k=1,2} 1 / ((omega^k - 1) * (omega^(2k) - 1)).
-  ```
-  Define the route endpoint law
-  ```text
-  delta_open = selected * eta_Z3 + c.
-  ```
-
-## Theorem
-
-Inside `(D1)-(D5)`, the following statements hold exactly.
-
-1. The zero source gives `w_plus = 1/2`, `K_TL = 0`, and `Q = 2/3`.
-2. A nonzero source label remains a falsifier: for example
-   `z = -1/3` gives `w_plus = 1/3` and `Q = 1`.
-3. The real nontrivial `Z_3` primitive has only equivariant idempotents
-   `0` and `I`; hence no internal spectator projector is native to that
-   real primitive.
-4. No real rank-one line projector commutes with the defined rotation
-   `R`; a rank-one selected line is extra boundary data relative to the
-   real primitive.
-5. The finite root-of-unity scalar is `eta_Z3 = 2/9`.
-6. The based endpoint condition forces `c = 0`; an unbased torsor offset,
-   e.g. `c = 1/9`, is an exact falsifier giving `delta_open = 1/3`.
-7. With `selected = 1`, `spectator = 0`, and `c = 0`, the route endpoint
-   gives `delta_open = eta_Z3 = 2/9`.
-
-## Proof Sketch
-
-The proof is finite-dimensional symbolic algebra, checked by the runner.
-
-- `(D1)` gives `w_plus(0) = 1/2`. Substitution into `Q(w)` and
-  `K_TL(w)` gives `Q = 2/3` and `K_TL = 0`. Substitution at
-  `z = -1/3` gives the stated falsifier.
-- Solving `X R = R X` gives the commutant `aI + bJ`. Solving
-  `(aI+bJ)^2 = aI+bJ` gives only `(a,b) = (0,0)` and `(1,0)`.
-- A rank-one projector `v(alpha)v(alpha)^T` has no real `alpha` solution
-  to the commutator equation with `R`.
-- The unit equation `F(0)=0` for `F(phi)=phi+c` gives `c=0`.
-- Direct simplification of the finite `Z_3` sum gives `eta_Z3 = 2/9`;
-  substituting the route endpoint values gives `delta_open = 2/9`.
-
-## What This Claims
-
-- Exact bounded route-algebra support for the zero-section pattern.
-- Exact representation-theoretic exclusion of a native spectator split
-  inside the defined real `Z_3` primitive.
-- Exact endpoint arithmetic for the based route object.
-
-## What This Does Not Claim
-
-- No physical Koide closure is asserted.
-- No physical charged-lepton zero-source readout is derived.
-- No physical Brannen endpoint identification is derived.
-- No physical determinant-line based readout is derived.
-- No observed mass data, fitted Koide value, `H_*` pin, or target endpoint
-  is consumed.
-
-## Relation To The Parent Koide Packet
-
-The parent Koide packet keeps the physical closure problem open. This row
-now supplies only a bounded algebraic route certificate: if future
-independent work derives the physical zero-section/readout bridges, this
-route algebra identifies the exact downstream substitutions they would
-need to support. Until then, it is not physical closure.
-
-## Verification
-
-Run:
-
-```bash
-python3 scripts/frontier_koide_native_zero_section_closure_route.py
+```
+a²−a−b²=0,   b(2a−1)=0.
 ```
 
-Expected closeout:
+If b≠0, a=1/2 requires b²=−1/4, impossible over the reals. Hence b=0
+and a=0 or1. The two equivariant idempotents are0 and I. This classifies
+endomorphisms of the specified real representation; it is not a physical
+spectator selection or an identification of an experimental endpoint.
 
-```text
-KOIDE_NATIVE_ZERO_SECTION_DEFINED_ROUTE_ALGEBRA=TRUE
-DEFINED_ROUTE_ZERO_SECTION_IMPLIES_Q=TRUE
-DEFINED_ROUTE_REAL_Z3_PRIMITIVE_HAS_NO_SPECTATOR_IDEMPOTENT=TRUE
-DEFINED_ROUTE_UNIT_ENDPOINT_IMPLIES_C_ZERO=TRUE
-DEFINED_ROUTE_ENDPOINT_IMPLIES_DELTA=TRUE
-PHYSICAL_KOIDE_CLOSURE_CLAIMED=FALSE
-PHYSICAL_BRIDGE_IDENTIFICATIONS_CLAIMED=FALSE
-```
+For every unit real vector v, P=vv^T is rotation-conjugate to diag(1,0).
+Rotations commute with R and preserve the Frobenius norm. At diag(1,0),
+PR−RP has two off-diagonal entries of magnitude sqrt(3)/2, so
+||PR−RP||_F²=3/2 for every orientation. This proves the complete rank-one
+commutator statement. The old empty symbolic-solver result remains a diagnostic,
+not the proof; the runner adds the exact trigonometric norm identity.
 
-The older `frontier_koide_native_zero_section_nature_review.py` route
-review remains a historical physical-closure guard and is not promoted by
-this bounded algebraic repair.
+## Supplied affine endpoint and finite scalar
+
+For omega=exp(2pi i/3), define
+eta=(1/3)sum_{k=1,2}1/[(omega^k−1)(omega^(2k)−1)].
+For either k the denominator is (omega−1)(omega²−1)=3, using
+omega+omega²=−1 and omega³=1. Thus eta=(1/3)(1/3+1/3)=2/9.
+This finite sum does not itself identify an anomaly or physical phase.
+
+Supply F(phi)=phi+c. The extra based condition F(0)=0 implies c=0.
+Supply, separately, the endpoint law delta_open=selected*eta+c and selected=1.
+Then c=0 gives delta_open=2/9; c=1/9 gives1/3 as a finite counterfixture.
+The variable spectator is absent from this formula. The commutant classification
+does not derive the law, the coefficient selected=1, the affine form of F, or
+its physical interpretation. In particular no target-provenance independence
+is proved merely by calculating eta. No identification with the free Brannen
+Fourier phase follows.
+
+## Verification boundary
+
+The child preserves12 old nonliteral conditions, makes six literalTrue assertions
+explicitly HISTORICAL_UNSCORED, and adds four controls: rational identities,
+excluded endpoints, complete commutator norm and both finite-sum denominators.
+It declares this own note, literal120s, resets state, rejects excluded numerical
+endpoints/missing input, and returns nonzero on failed conditions. A successful
+run would report PASSED:16/16 and SUPPLIED_ROUTE_MATH_CHECKS=PASS. Those flags
+are operational summaries, not independent proof or physical/audit certification.
+No execution is claimed in this source revision. Old source/cache and assertions
+remain preserved. The finite representation classification has a complete proof;
+any applicable negative-governance gate remains binding, with no waiver requested.

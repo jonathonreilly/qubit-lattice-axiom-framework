@@ -16,6 +16,16 @@ that keeps the cross-lane synthesis honest and audit-ready.
 
 from __future__ import annotations
 
+AUDIT_INPUT_PATHS = [
+    "scripts/minimal_source_driven_field_probe.py",
+    "scripts/source_resolved_wavefield_mechanism.py",
+    "scripts/complex_action_grown_companion.py",
+    "scripts/electrostatics_card.py",
+    "scripts/FIXED_FIELD_FAMILY_UNIFICATION.py",
+    "docs/PROPAGATOR_FAMILY_UNIFICATION_NOTE.md",
+]
+AUDIT_TIMEOUT_SECONDS = 120
+
 import re
 from dataclasses import dataclass
 from pathlib import Path

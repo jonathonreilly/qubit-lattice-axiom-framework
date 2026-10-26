@@ -14,19 +14,19 @@
   "chain_closure_explanation": null,
   "claim_id": "cl3_sm_embedding_master_note",
   "claim_scope": null,
-  "claim_type": "positive_theorem",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "author_hint",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "cl3_sm_embedding_theorem",
-    "cl3_color_automorphism_theorem",
-    "minimal_axioms_2026-04-11",
-    "cl3_taste_generation_theorem"
+    "minimal_axioms",
+    "cl3_taste_generation_theorem",
+    "cl3_color_automorphism_theorem"
   ],
   "direct_in_degree": 1,
   "effective_status": "unaudited",
@@ -39,7 +39,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "265a5a2873a59ce986ffd0aad79895dfa6da156e5c2ff0efac755b11221641ff",
+  "note_hash": "d0f9510c7b993e2ce4772493e8f09b4246a1662b1fcef399afc4b0a97e77141f",
   "note_path": "docs/CL3_SM_EMBEDDING_MASTER_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -54,7 +54,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/verify_cl3_sm_embedding.py",
-  "title": "Cl(3) \u2192 SM Embedding: Master Synthesis Note",
+  "title": "Cl(3) carrier synthesis: algebra, supplied normalization and physical boundaries",
   "transitive_descendants": 10,
   "verdict_rationale": null
 }

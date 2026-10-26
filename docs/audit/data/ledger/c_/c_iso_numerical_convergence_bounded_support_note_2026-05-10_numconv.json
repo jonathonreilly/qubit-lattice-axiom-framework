@@ -23,8 +23,8 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "exact_tier_ewitness_bounded_note_2026-05-07_ewitness",
     "c_iso_su3_nlo_closure_bounded_note_2026-05-08_su3nlo",
+    "exact_tier_ewitness_bounded_note_2026-05-07_ewitness",
     "c_iso_derived_theorem_note_2026-05-07_w3",
     "exact_tier_path_integral_bounded_note_2026-05-07_exact",
     "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07"
@@ -42,7 +42,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "c8c70b60d1638dcd377e80fb17d62615bf83f655f60e9f5b15d1ce527ab5ab91",
+  "note_hash": "f9da3f15ff2ea30758eb693770d99c494885ea790c64d71c72a062e6afa17dfa",
   "note_path": "docs/C_ISO_NUMERICAL_CONVERGENCE_BOUNDED_SUPPORT_NOTE_2026-05-10_numconv.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/lattice_nn_rescaled_C_arm_NLO_saddle.py
-runner_sha256: 3e04a84b91e997f80339acfb1fb29a9dc4c10726aa919005dce286b820526ecc
-timeout_sec: 300
+runner_sha256: 2d5cc14a60a90bfc5c6cb40db472988a4b17e6b332a951ccad2aa864fab7f68c
+timeout_sec: 60
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -103,7 +103,7 @@ VERDICT
     PASS: |delta alpha| <= 0.020 (right magnitude)
     PASS: max per-h sigma^2 residual <= 5%
     PASS: q^4 / full phase-corrected variance < 1% on fit window
-    PASS: h -> 0 limit recovers C_LO^2 = 6.178
+    PASS: supplied model at h=1e-6 is close to C_LO^2 (numerical check only)
 
   Outcome class: BOUNDED
 

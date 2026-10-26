@@ -1,9 +1,5 @@
-"""Runner: Koide δ dimensionless closure via V8 (Block 2 of axiom-to-main-lane-cascade).
-
-Audits the chain composing V8 (Block 1, Q closure) with retained Brannen
-phase reduction theorem and Plancherel identity to give dimensionless
-δ = 2/9 on A_min. Records the radian-bridge postulate P explicitly as
-open.
+"""Supplied rational arithmetic and independent Fourier phase controls.
+Historical text observations are unscored and are not scientific dependencies.
 """
 
 from __future__ import annotations
@@ -18,6 +14,9 @@ import sympy as sp
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DOCS_DIR = REPO_ROOT / "docs"
 
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = ('docs/KOIDE_DELTA_DIMENSIONLESS_CLOSURE_VIA_V8_THEOREM_NOTE_2026-04-29.md', 'docs/KOIDE_A1_BRANNEN_PLANCHEREL_IDENTITY_SUPPORT_NOTE_2026-04-25.md', 'docs/KOIDE_Q_OP_LOCALITY_SOURCE_DOMAIN_CLOSURE_THEOREM_NOTE_2026-04-29.md', 'docs/KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20.md', 'docs/KOIDE_Q_EQ_3DELTA_IDENTITY_NOTE_2026-04-21.md', 'docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md')
+
 AUDIT_FAILS: list[str] = []
 
 
@@ -31,74 +30,83 @@ def audit(name: str, condition: bool, detail: str = "") -> None:
         AUDIT_FAILS.append(name)
 
 
+def historical(name: str, condition: bool, detail: str = "") -> None:
+    print(f"HISTORICAL_UNSCORED old assertion={name!r}; observed={bool(condition)}; old detail={detail!r}")
+
+
 def read_doc(path_rel: str) -> str:
     return (DOCS_DIR / path_rel).read_text(encoding="utf-8")
 
 
 def main() -> int:
+    AUDIT_FAILS.clear()
+    for name in AUDIT_INPUT_PATHS:
+        if not (REPO_ROOT / name).is_file():
+            print(f"FAIL: missing declared input {name}")
+            return 1
     print("=" * 72)
-    print("Koide δ Dimensionless Closure via V8 (Block 2) audit")
+    print("Supplied rational scalar r and independent Fourier phase")
     print("=" * 72)
 
-    # ---- Section 1: V8 (Block 1) prerequisite -----------------------------
+    # ---- Historical text observations, not prerequisites -----------------------------
 
     print()
-    print("Section 1: V8 (Block 1, Q closure) prerequisite check")
+    print("Historical documentary observations: no prerequisites or authority checks")
     print("-" * 72)
 
     v8_text = read_doc(
         "KOIDE_Q_OP_LOCALITY_SOURCE_DOMAIN_CLOSURE_THEOREM_NOTE_2026-04-29.md"
     )
-    audit(
+    historical(
         "V8 note exists on disk",
         len(v8_text) > 0,
         "block 1 closure note found",
     )
-    audit(
+    historical(
         "V8 carries support status",
         "actual_current_surface_status: support" in v8_text,
         "V8 firewall: support",
     )
-    audit(
+    historical(
         "V8 carries audit-required-before-effective-retained flag",
         "audit_required_before_effective_retained: true" in v8_text,
         "V8 firewall: audit required",
     )
-    audit(
+    historical(
         "V8 closes Q = 2/3 on A_min",
         ("Q = 2/3" in v8_text and "A_min" in v8_text),
         "V8 §2 theorem statement",
     )
 
-    # ---- Section 2: retained Brannen pieces -------------------------------
+    # ---- Historical Brannen text observations -------------------------------
 
     print()
-    print("Section 2: retained Brannen phase reduction theorem audit")
+    print("Historical text observations (unscored; old assertions quoted, not adopted)")
     print("-" * 72)
 
     brannen_text = read_doc("KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20.md")
-    audit(
+    historical(
         "Brannen phase reduction note exists",
         len(brannen_text) > 0,
         "retained on main",
     )
-    audit(
+    historical(
         "n_eff = 2 from doublet conjugate-pair forcing",
         "n_eff = 2" in brannen_text and "conjugate-pair" in brannen_text,
         "Brannen §1.3",
     )
-    audit(
+    historical(
         "d = 3 from |C_3|",
         "d     = 3" in brannen_text or "d = 3" in brannen_text,
         "Brannen §1",
     )
-    audit(
+    historical(
         "δ = n_eff / d² = 2/9 (Brannen normalization)",
         ("delta = n_eff / d^2 = 2/9" in brannen_text)
         or ("delta = n_eff/d^2 = 2/9" in brannen_text),
         "Brannen §2.3",
     )
-    audit(
+    historical(
         "δ = Q/d at d=3",
         "delta = Q/d" in brannen_text,
         "Brannen §2.4",
@@ -107,24 +115,24 @@ def main() -> int:
     plancherel_text = read_doc(
         "KOIDE_A1_BRANNEN_PLANCHEREL_IDENTITY_SUPPORT_NOTE_2026-04-25.md"
     )
-    audit(
+    historical(
         "Plancherel identity note exists",
         len(plancherel_text) > 0,
         "support-grade on main",
     )
-    audit(
+    historical(
         "Plancherel: arg(b) = δ (mod 2π) inside Brannen parameterization",
         "arg(b) = δ" in plancherel_text or "arg(b) = `δ`" in plancherel_text,
         "Plancherel §1 lemma",
     )
 
     qpdelta_text = read_doc("KOIDE_Q_EQ_3DELTA_IDENTITY_NOTE_2026-04-21.md")
-    audit(
+    historical(
         "Q = p·δ identity note exists",
         len(qpdelta_text) > 0,
         "retained on main",
     )
-    audit(
+    historical(
         "Q = p·δ at p = d = 3 identity",
         "Q = p · δ" in qpdelta_text or "Q = p·δ" in qpdelta_text or "Q = 3·δ" in qpdelta_text,
         "Q = p·δ identity",
@@ -133,12 +141,12 @@ def main() -> int:
     radian_no_go_text = read_doc(
         "KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md"
     )
-    audit(
+    historical(
         "Z_3 qubit radian-bridge no-go note exists",
         len(radian_no_go_text) > 0,
         "retained negative result on main",
     )
-    audit(
+    historical(
         "Z_3 qubit no-go closes canonical R/Z → U(1) lift route",
         "qubit equator" in radian_no_go_text and "π/3" in radian_no_go_text,
         "no-go §2.1 candidate A",
@@ -147,32 +155,31 @@ def main() -> int:
     # ---- Section 3: algebraic identities of the Block 2 composition --------
 
     print()
-    print("Section 3: algebraic identities of the composition (sympy/numpy)")
+    print("Supplied rational and coordinate identities (sympy/numpy)")
     print("-" * 72)
 
-    # 3.1 Q = 2/3 from V8 (Block 1)
+    # Supply Q=2/3; historical OP text is not its proof.
     Q = sp.Rational(2, 3)
-    audit(
+    historical(
         "Q = 2/3 (composed from V8)",
         Q == sp.Rational(2, 3),
         f"Q = {Q}",
     )
 
-    # 3.2 n_eff = 2 from doublet conjugate-pair winding
-    # The doublet projective coordinate ζ(θ) = e^{-2iθ}; winding number is 2.
+    # Chosen coordinate lift -2 theta has derivative -2; no topological index inferred.
     theta = sp.symbols("theta", real=True)
     zeta = sp.exp(-2 * sp.I * theta)
     arg_zeta_derivative = sp.diff(sp.simplify(sp.arg(zeta) if False else -2 * theta), theta)
     n_eff = abs(arg_zeta_derivative)
     audit(
-        "n_eff = |d(arg ζ)/dθ| = 2 (doublet conjugate-pair winding)",
+        "Magnitude of derivative of chosen continuous coordinate lift -2 theta is 2",
         n_eff == 2,
         f"n_eff = {n_eff}",
     )
 
     # 3.3 d = |C_3| = 3
     d = 3
-    audit(
+    historical(
         "d = |C_3| = 3",
         d == 3,
         f"d = {d}",
@@ -181,7 +188,7 @@ def main() -> int:
     # 3.4 δ_dimensionless = n_eff / d² = 2/9
     delta_dim = sp.Rational(int(n_eff), d * d)
     audit(
-        "δ_dimensionless = n_eff / d² = 2/9 (Brannen normalization)",
+        "Defined r=n/d² equals2/9 for supplied d=3 and coordinate n=2",
         delta_dim == sp.Rational(2, 9),
         f"δ = {delta_dim}",
     )
@@ -189,7 +196,7 @@ def main() -> int:
     # 3.5 δ = Q/d cross-check
     delta_via_Q = Q / d
     audit(
-        "δ = Q/d at d=3 cross-check",
+        "Defined r=Q/d equals2/9 for supplied Q=2/3,d=3",
         delta_via_Q == sp.Rational(2, 9),
         f"Q/d = {delta_via_Q}",
     )
@@ -198,7 +205,7 @@ def main() -> int:
     p = d
     Q_via_pdelta = p * delta_dim
     audit(
-        "Q = p·δ structural identity (p=d=3)",
+        "Supplied p=d=3 gives p*r=Q by rational arithmetic",
         Q_via_pdelta == Q,
         f"p·δ = 3·(2/9) = {Q_via_pdelta} == Q = {Q}",
     )
@@ -217,19 +224,18 @@ def main() -> int:
             plancherel_match = False
             break
     audit(
-        "Plancherel arg(b) = δ inside Brannen parameterization (numerical witness)",
+        "Principal argument of directly constructed positive-radius exponential at17 interior phases",
         plancherel_match,
-        "verified across δ ∈ (-π, π) per Plancherel §1 lemma",
+        "17 sampled phases only; this fixture constructs b from the formula",
     )
 
-    # ---- Section 4: radian-bridge postulate P remains open ----------------
+    # ---- Supplied convention comparison ----------------
 
     print()
-    print("Section 4: radian-bridge postulate P status (NOT closed)")
+    print("Two supplied angle conventions: arithmetic comparison only")
     print("-" * 72)
 
-    # 4.1 Standard 2π-radian conversion of dimensionless δ gives 4π/9 rad,
-    # NOT 2/9 rad. So the canonical conversion fails to close P.
+    # Two supplied conventions give different numerical angles, not an exhaustive obstruction.
     delta_radians_standard = float(delta_dim) * 2 * np.pi
     expected_4pi_over_9 = 4 * np.pi / 9
     audit(
@@ -238,54 +244,54 @@ def main() -> int:
         f"2π·(2/9) = {delta_radians_standard:.6f} = 4π/9 = {expected_4pi_over_9:.6f}",
     )
     audit(
-        "Standard conversion ≠ 2/9 rad (postulate P would identify them)",
+        "Two supplied angle conventions produce unequal numerical values",
         not np.isclose(delta_radians_standard, 2 / 9),
         f"2π·(2/9) = {delta_radians_standard:.6f} ≠ 2/9 = {2/9:.6f}",
     )
 
-    # 4.2 Literal 2/9 rad is the Brannen-PDG match value
+    # Historical assignment-only observation; no fitted data are evaluated here.
     pdg_match_value = 2.0 / 9.0  # rad
-    audit(
+    historical(
         "Brannen-PDG match value δ_observed = 2/9 rad (support-grade witness)",
         np.isclose(pdg_match_value, 2 / 9),
         f"δ_observed ≈ 2/9 rad ≈ {pdg_match_value:.6f}",
     )
-    audit(
+    historical(
         "Postulate P (literal 2/9 = 2/9 rad) NOT closed by V1",
         True,  # always passes; we explicitly flag P as open
         "radian-bridge postulate explicitly open per §4 of V1 note",
     )
 
-    # ---- Section 5: structural firewall checks ----------------------------
+    # ---- Historical metadata observations ----------------------------
 
     print()
-    print("Section 5: V1 status firewall fields")
+    print("Historical old metadata observations (unscored)")
     print("-" * 72)
 
     own_text = read_doc(
         "KOIDE_DELTA_DIMENSIONLESS_CLOSURE_VIA_V8_THEOREM_NOTE_2026-04-29.md"
     )
-    audit(
+    historical(
         "V1 carries actual_current_surface_status: support",
         "actual_current_surface_status: support" in own_text,
         "V1 firewall",
     )
-    audit(
+    historical(
         "V1 carries audit_required_before_effective_retained: false",
         "audit_required_before_effective_retained: false" in own_text,
         "V1 firewall",
     )
-    audit(
+    historical(
         "V1 carries bare_retained_allowed: false",
         "bare_retained_allowed: false" in own_text,
         "V1 firewall",
     )
-    audit(
+    historical(
         "V1 records radian_bridge_postulate_P_status: open",
         "radian_bridge_postulate_P_status: open" in own_text,
         "V1 firewall: P explicitly open",
     )
-    audit(
+    historical(
         "V1 records literal 2/9 rad PDG match as support_grade",
         "literal_2_over_9_rad_pdg_match_status: support_grade_numerical_witness"
         in own_text,
@@ -295,7 +301,7 @@ def main() -> int:
     # ---- Section 6: forbidden imports -------------------------------------
 
     print()
-    print("Section 6: forbidden imports check")
+    print("Historical lexical observations (unscored; not proof of input independence)")
     print("-" * 72)
 
     forbidden_imports = ["m_e", "m_mu", "m_tau", "delta_obs"]
@@ -304,45 +310,31 @@ def main() -> int:
         is_load_bearing = (
             f"= {token}" in body_only or f"{token} = " in body_only
         )
-        audit(
+        historical(
             f"forbidden import not used as proof input: {token}",
             not is_load_bearing,
             "no observed lepton mass enters proof",
         )
 
-    # ---- Summary ----------------------------------------------------------
-
-    print()
-    print("=" * 72)
-    fail_count = len(AUDIT_FAILS)
-    print(f"FAIL count: {fail_count}")
-
-    DELTA_DIMENSIONLESS_SUPPORT_COMPOSITION_VERIFIED = (
-        fail_count == 0
-        and delta_dim == sp.Rational(2, 9)
-        and Q_via_pdelta == Q
-    )
-    print(
-        f"DELTA_DIMENSIONLESS_SUPPORT_COMPOSITION_VERIFIED = "
-        f"{DELTA_DIMENSIONLESS_SUPPORT_COMPOSITION_VERIFIED}"
-    )
-    print(
-        "RADIAN_BRIDGE_POSTULATE_P_STATUS = open  # NOT closed by V1"
-    )
-    print(
-        "(This flag verifies the V1 dimensionless chain authorities + "
-        "algebraic identities. The radian-bridge postulate P remains "
-        "explicitly open. Independent audit and upstream ratification "
-        "are required before any stronger status.)"
-    )
-
-    if fail_count == 0:
-        print()
-        print("All Block 2 chain authorities + algebraic identities verified.")
-        return 0
-    else:
-        print(f"Failed audits: {AUDIT_FAILS}")
-        return 1
+    # Independent amplitude construction separates the rational r from free phase.
+    phases = [0.0, np.pi/24]
+    control_values = []
+    for phase in phases:
+        amplitudes = np.array([1+np.sqrt(2)*np.cos(phase+2*np.pi*j/3) for j in range(3)])
+        omega = np.exp(2j*np.pi/3)
+        b = (amplitudes[0]+np.conj(omega)*amplitudes[1]+omega*amplitudes[2])/np.sqrt(3)
+        Q_sample = np.sum(amplitudes**2)/np.sum(amplitudes)**2
+        phase_error = np.angle(np.exp(1j*(np.angle(b)-phase)))
+        audit(f"Positive amplitudes and Q=2/3 at supplied phase {phase}",
+              bool(np.all(amplitudes>0)) and abs(Q_sample-2/3)<1e-12)
+        audit(f"Independent Fourier sum recovers supplied phase {phase}",abs(phase_error)<1e-12)
+        control_values.append(float(np.angle(b)))
+    audit("Same Q admits distinct Fourier phases in the two positive fixtures",
+          abs(control_values[1]-control_values[0])>0.1)
+    print("Defined rational r=Q/d is distinct from free phase delta; delta=r would be an extra choice.")
+    print("No physical phase, Berry holonomy, OP closure, or exhaustive route conclusion is certified.")
+    print(f"FAIL count: {len(AUDIT_FAILS)}")
+    return 1 if AUDIT_FAILS else 0
 
 
 if __name__ == "__main__":

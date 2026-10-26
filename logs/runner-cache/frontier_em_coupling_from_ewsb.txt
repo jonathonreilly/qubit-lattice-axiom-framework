@@ -1,15 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_em_coupling_from_ewsb.py
-runner_sha256: bd456411cd31e6064fc292a0a1dcf7efc72ba12eb94ffdc1138fa2050ce2a653
-input_fingerprint_sha256: 8f4554f35f1149c2985acdf693e1f98dffd3e0b7b532ae39606cdb057425f7ab
+runner_sha256: d71bf735f43a2c7ef42dadef6f89988ddab7ec43a29b434fab84a914c186d6df
+input_fingerprint_sha256: b6d078870496c0a6f6a7ebf6a852cf1dbcd8382399641c8a1706d80d81cfca1f
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 
 ----------------------------------------------------------------------------------------
-Part 1: note structure
+Part 1: documentary note structure
 ----------------------------------------------------------------------------------------
   [PASS (A)] contains: "Electromagnetic Coupling e = g sin(θ_W) = g' cos(θ_W)"  ()
   [PASS (A)] contains: 'EWSB Pattern'  ()
@@ -19,9 +19,9 @@ Part 1: note structure
   [PASS (A)] contains: 'proposal_allowed: false'  ()
 
 ----------------------------------------------------------------------------------------
-Part 2: structural identity g sin(θ_W) = g' cos(θ_W)
+Part 2: finite squared identity g sin(θ_W) = g' cos(θ_W)
 ----------------------------------------------------------------------------------------
-  [PASS (A)] e² = g² sin²θ_W = g'² cos²θ_W (structural identity at exact Fraction)  (tested 3 (g²,g'²) cases)
+  [PASS (A)] e² = g² sin²θ_W = g'² cos²θ_W (finite squared checks at exact Fraction)  (tested 3 (g²,g'²) cases)
 
 ----------------------------------------------------------------------------------------
 Part 3: tan(θ_W) = g'/g consistency
@@ -31,13 +31,25 @@ Part 3: tan(θ_W) = g'/g consistency
   [PASS (A)] tan²θ_W = g'²/g² = sin²/cos² for g²=2, g'²=1  (tan²=1/2)
 
 ----------------------------------------------------------------------------------------
-Part 4: cycle 19 + cycle 21 cross-check
+Part 3b: finite signed photon and Z coefficient controls
 ----------------------------------------------------------------------------------------
-  [PASS (A)] tan²θ_W^GUT = sin²/cos² = 3/5 (cycle 19 cross-check)  (tan²_GUT = 3/5)
-  [PASS (A)] M_W²/M_Z²^GUT = cos²θ_W^GUT = 5/8 (cycle 21 + cycle 19)  (M_W²/M_Z² at GUT = 5/8)
+  [PASS (A)] signed photon coefficients on positive rational fixture  ()
+  [PASS (A)] both Z coefficients agree without division by T3  ()
+  [PASS (A)] Z expression remains defined at T3=0  ()
+  [PASS (A)] wrong-sign photon rejected despite equal squared values  ()
+  [PASS (A)] signed photon coefficients on positive rational fixture  ()
+  [PASS (A)] both Z coefficients agree without division by T3  ()
+  [PASS (A)] Z expression remains defined at T3=0  ()
+  [PASS (A)] wrong-sign photon rejected despite equal squared values  ()
+
+----------------------------------------------------------------------------------------
+Part 4: supplied 3/8 and conditional mass-law illustration
+----------------------------------------------------------------------------------------
+  [PASS (A)] tan²θ_W^GUT = sin²/cos² = 3/5 (supplied illustration only)  (tan²_GUT = 3/5)
+  [PASS (A)] M_W²/M_Z²^GUT = cos²θ_W^GUT = 5/8 (supplied angle plus assumed mass law)  (M_W²/M_Z² at GUT = 5/8)
 
 ========================================================================================
-  TOTAL: PASS=12, FAIL=0
+  TOTAL: PASS=20, FAIL=0
 ========================================================================================
 
 ----- stderr -----

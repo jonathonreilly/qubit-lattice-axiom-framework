@@ -22,17 +22,7 @@
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
-  "deps": [
-    "key_terminology",
-    "cl3_color_automorphism_theorem",
-    "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27",
-    "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02",
-    "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05",
-    "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04",
-    "minimal_axioms",
-    "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-    "color_generation_independent_z3_structures_2026-06-05"
-  ],
+  "deps": [],
   "direct_in_degree": 3,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
@@ -44,7 +34,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "87a7ae1be0adfbd34caea9a5dc4b5589a231227a7e4ea764e89e5a12fe5e022b",
+  "note_hash": "db641969ad62fa67f3b1d54bcedee274a0baf749d6b7302a5a7212eb3fd1c150",
   "note_path": "docs/COLOR_SU3_SYMMETRIC_BASE_BRIDGE_FROM_RECORD_INVARIANCE_BOUNDED_NOTE_2026-06-05.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -228,7 +218,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_color_su3_bridge_from_record_2026_06_05.py",
-  "title": "Color SU(3) Symmetric-Base Bridge from Record-Invariance (Bounded Theorem)",
+  "title": "Supplied symmetric-base SU(3) action and record-invariance limits",
   "transitive_descendants": 229,
   "unattributed_audit_provenance": [
     {

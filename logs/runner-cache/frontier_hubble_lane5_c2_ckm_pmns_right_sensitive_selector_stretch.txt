@@ -1,36 +1,32 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch.py
-runner_sha256: 663c1fc3e151be940a3af35575e71b089c7b84f216bfbcc546f1673b30c71d26
-input_fingerprint_sha256: 73876f1eff2b516be789cea423fb7041c3eb8b86f2c9639acf1e52e69cb984a9
+runner_sha256: ed031dcf38d69550a639900f09e007415afac3981e85b16f522b1ea52ebb8470
+input_fingerprint_sha256: 7b35984559bd6a5b9bb006d3db2c3afe313d2c1f31ca1cd4ee8e9012f7b92d95
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ========================================================================================
 LANE 5 C2: CKM/PMNS RIGHT-SENSITIVE SELECTOR STRETCH
 ========================================================================================
 
-Claim under test:
-  CKM CP orientation might provide the missing PMNS A13 sign selector
-  for the Lane 5 eta-retirement C2 gate.
-
-Boundary result:
-  The sign rule is algebraically coherent but only conditional.
-  Current authority has no typed CKM->PMNS right-sensitive coupling law.
+Two supplied witnesses and an optional cross-sector sign rule.
+No physical yield, selector closure or global law-absence claim.
 
 ========================================================================================
-PART 1: AUTHORITY TEXT NAMES THE C2 SELECTOR TARGET
+PART 1: DOCUMENTARY INPUT OBSERVATIONS (NOT SCIENTIFIC PROOF)
 ========================================================================================
+  [PASS] Own note limits the witness to supplied toy data
   [PASS] Lane 5 eta audit names the right-sensitive Z3 doublet-block law
-  [PASS] Lane 5 eta audit lists CKM atlas structure as an unexplored coupling source
-  [PASS] PMNS A13 theorem reduces the residual selector to sign(A13)
-  [PASS] PMNS selector-bank theorem records CP-sheet blindness
-  [PASS] CKM CP theorem supplies a positive eta_CKM orientation
-  [PASS] Right-conjugacy note says the missing object must break right-orbit blindness
+  [PASS] Parent records unresolved selector/yield and does not certify one sufficient gate
+  [PASS] Historical A13 note contains the two sign labels
+  [PASS] Historical selector-bank note records its CP-sheet claim
+  [PASS] CKM note records the supplied positive-branch formula
+  [PASS] Right-conjugacy note contains its named right-sensitive restriction
 
 ========================================================================================
-PART 2: PMNS EVEN DATA CANNOT SELECT THE A13 SIGN
+PART 2: TWO TOY WITNESSES SHARE EVEN DATA AND DIFFER IN SIGN
 ========================================================================================
   even(+sheet) = (1.333333333333, 0.444444444444, 1.632993161855)
   even(-sheet) = (1.333333333333, 0.444444444444, 1.632993161855)
@@ -53,32 +49,32 @@ PART 3: CKM ORIENTATION GIVES A COHERENT BUT CONDITIONAL SELECTOR
   [PASS] The candidate sign(A13)=sign(eta_CKM) selects A13>0
 
 ========================================================================================
-PART 4: CURRENT SURFACE HAS NO TYPED CKM->PMNS COUPLING
+PART 4: STIPULATED MODEL HAS NO COUPLING PREMISE
 ========================================================================================
   [PASS] Two witnesses share CKM orientation and PMNS even data
   [PASS] The witnesses differ only in the PMNS A13 sign
   [PASS] A cross-sector sign law would select the constructive witness
-  [PASS] That cross-sector sign law is not present on the current surface
-  [PASS] Therefore the current surface cannot prove the selector
+  [PASS] The model flag stipulates no coupling premise (not a law-absence proof)
+  [PASS] Conditional rule selects one witness while model flag is false
 
 ========================================================================================
 PART 5: CLAIM-STATUS FIREWALL
 ========================================================================================
-  [PASS] Actual current-surface status is no-go for unconditional C2 closure
+  [PASS] Historical no-go status token is configuration only, not a scientific result
   [PASS] The candidate is only conditional support under a new coupling law
-  [PASS] The typed cross-sector coupling remains open
-  [PASS] No stronger branch-local proposal wording is allowed
+  [PASS] Two named model dependencies remain listed
+  [PASS] Configuration disallows stronger proposal wording
 
 ========================================================================================
-SUMMARY: PASS=22 FAIL=0
+SUMMARY: PASS=23 FAIL=0
 ========================================================================================
-per_element: checked — the PMNS A13 sign flip leaves every executed even matrix datum unchanged while reversing the targeted entry; FAIL=0.
-per_site: checked — the three-generation CKM and PMNS carriers were evaluated separately with no typed cross-sector coupling present; FAIL=0.
-per_mode: checked — CKM CP orientation selects the conditional sign branch, but both PMNS sign modes remain compatible with current even data; FAIL=0.
-per_block: checked — explicit plus/minus witness blocks share CKM orientation and PMNS-even observables while differing only in A13; FAIL=0.
-lattice_wide: checked and not executed — the required typed CKM-to-PMNS coupling is scientifically absent, so no lattice-wide selector exists to run; the finite witness suite has PASS=22, FAIL=0.
-Result: no unconditional C2 selector closure on the current surface.
-Conditional support exists only if a typed CKM->PMNS coupling law is added.
+per_element: checked -- three polynomial stand-in entries and two odd signs.
+per_site: not executed -- no spatial sites occur in this toy model.
+per_mode: checked -- two supplied sign witnesses, not a physical mode inventory.
+per_block: not executed -- no microscopic matrix block is constructed.
+lattice_wide: not executed -- finite toy data only; no lattice claim.
+Result: supplied even-data witnesses differ in sign; physical questions remain open.
+The supplied sign rule selects one witness when imposed; no yield follows.
 
 ----- stderr -----
 

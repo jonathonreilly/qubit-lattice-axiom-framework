@@ -1,15 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/COMPLEX_SELECTIVITY_COMPARE.py
-runner_sha256: 0e8d41fa4007c48cfc7c31c0ec9592d5591a778f80fc7c90c6d5601c8b55a8eb
+runner_sha256: ed6624c31b25f91539a920124c32f39440314be3d9fca4c45539cffb44abd4cb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 # Complex Selectivity Compare Note
 
 **Date:** 2026-04-06
-**Status:** narrow comparison card for signed-source portability vs complex-action selectivity
+**Status:** historical supplied-row rendering, not independent computation
+Original grown-basin signed-source half-row is out of scope; retention labels below are historical.
 
 ## Question
 
@@ -25,21 +26,21 @@ Why does signed-source transfer survive on multiple independent families while c
 | Third grown family | exact zero-source / exact neutral +1/-1 cancellation | retained bounded basin positive | charge exponent = 0.999842 | not yet promoted on this slice | not retained; boundary is sign-orientation reversal at drift edges | signed-source basin survives in the interior only |
 | Fourth family quadrant | exact zero-source / exact neutral cancellation | retained narrow basin | near-linear charge scaling | not yet promoted on this slice | not retained; basin is seed-selective | fresh family exists, but remains sign-law only |
 
-## Safe Read
+## Historical interpretation
 
-- signed-source transfer is the portable feature: exact zero / neutral controls survive on several distinct structured families
-- weak-field linearity survives with the signed-source package across the retained grown, alt, third, and fourth family slices
-- complex action is more selective: it needs the exact gamma=0 anchor / crossover structure and fails cleanly on the alt family and the tightened second-family window
+- historical table interpretation: signed-source transfer is the portable feature: exact zero / neutral controls survive on several distinct structured families
+- historical table interpretation: weak-field linearity survives with the signed-source package across the retained grown, alt, third, and fourth family slices
+- historical table interpretation: complex action is more selective: it needs the exact gamma=0 anchor / crossover structure and fails cleanly on the alt family and the tightened second-family window
 
-## Exact Mismatch
+## Comparison boundary
 
 - the signed-source families share a common control surface
 - the complex-action branch does not share that same surface; it lives on a more constrained gamma baseline plus crossover test
 - the result is not a universal family theorem; it is a selectivity split between portable sign-law and basin-local complex action
 
-## Final Verdict
+## Rendering scope
 
-**retained selectivity split: signed-source is family-portable, while complex-action is anchor-local and boundary-sensitive**
+**Historical finite-table rendering; source provenance and physical conclusions require separate verification.**
 
 ----- stderr -----
 

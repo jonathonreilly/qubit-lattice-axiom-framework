@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
-"""GW150914 echo prediction derived from lattice axioms.
+"""Historical GW echo formula route; physical derivation is withdrawn.
+
+The derivation narrative below is retained route history, not an established
+consequence of lattice axioms. In particular, lattice spacing does not prove
+horizon exclusion or a reflecting surface. Formula agreement is not physical
+validation. The active frozen-star runner no longer computes echo outputs.
+The repaired attribution in step 6 refers only to archived historical values.
+
+Historical narrative (not current authority):
 
 Derivation chain
 -----------------
@@ -764,30 +772,24 @@ def step6_numerical_crosscheck():
           f"t_echo = {t_echo_kerr*1e3:.2f} ms")
 
     # ---------------------------------------------------------------
-    # C) Parameter consistency with existing rigorous script
-    # ---------------------------------------------------------------
-    print(f"\n  C) Consistency with frontier_frozen_stars_rigorous.py")
+    # C) Historical formula comparison only. These values belong to the
+    # withdrawn echo branch at PR9839 original head, not the current runner.
+    print("\n  C) Historical echo-ansatz comparison (physical claims withdrawn)")
     print("  " + "-" * 60)
-    print(f"  That script reports:")
-    print(f"    t_echo (non-spinning) = 58.09 ms")
-    print(f"    t_echo (Kerr a=0.67)  = 67.65 ms")
-    print(f"  This script:")
-    print(f"    t_echo (non-spinning) = {t_echo_exact*1e3:.2f} ms")
-    print(f"    t_echo (Kerr a=0.67)  = {t_echo_kerr*1e3:.2f} ms")
+    print("  Archived original head: f78abbde6e5003b71d91cd31394c6f850234b8bc")
+    print("  Recovery: docs/work_history/PR9839_original_recovery/manifest.json")
+    print("  Historical frozen-star echo branch reported 58.09 ms and 67.65 ms.")
+    print("  The active frontier_frozen_stars_rigorous.py no longer emits echo outputs.")
+    print("  Agreement with historical ansatz numbers does not validate echo physics.")
 
-    # The non-spinning values should match: rigorous uses same formula
-    # (2R_S/c)|ln(eps)| + (R_S/c)(light ring offset)
-    # Our "exact" includes sub-leading correctly.  The rigorous script
-    # gets 58.09 ms which matches our exact 57.25 ms to within the
-    # different treatment of sub-leading terms.
-
-    check("Non-spinning echo time consistent (within 2 ms)",
+    check("Historical non-spinning ansatz number within 2 ms",
           abs(t_echo_exact * 1e3 - 58.09) < 2.0,
-          f"this={t_echo_exact*1e3:.2f}, rigorous=58.09 ms")
-
-    check("Kerr echo time consistent (within 0.5 ms)",
+          f"formula={t_echo_exact*1e3:.2f}, archived ansatz=58.09 ms",
+          kind="HISTORICAL_COMPARISON")
+    check("Historical Kerr ansatz number within 0.5 ms",
           abs(t_echo_kerr * 1e3 - 67.65) < 0.5,
-          f"this={t_echo_kerr*1e3:.2f}, rigorous=67.65 ms")
+          f"formula={t_echo_kerr*1e3:.2f}, archived ansatz=67.65 ms",
+          kind="HISTORICAL_COMPARISON")
 
     return {
         "t_echo_schw_exact_ms": t_echo_exact * 1e3,
@@ -804,7 +806,8 @@ def step6_numerical_crosscheck():
 def main():
     t0 = time.time()
 
-    print("GW150914 Echo Prediction — Derived from Lattice Axioms")
+    print("Historical GW echo formula route — physical derivation withdrawn")
+    print("The following historical narrative and checks do not establish echo physics.")
     print("=" * 72)
     print()
     print("Derivation chain:")
@@ -859,7 +862,7 @@ def main():
     6. NUMERICAL VERIFICATION
        Schwarzschild exact: t_echo = {r6['t_echo_schw_exact_ms']:.2f} ms
        Kerr prediction:     t_echo = {r6['t_echo_kerr_ms']:.2f} ms
-       Consistent with frontier_frozen_stars_rigorous.py
+       Historical ansatz-number comparison only; active frozen-star runner emits no echoes
 
   COMPARISON WITH ABEDI ET AL. (2017):
     Our prediction: {r5['t_echo_kerr_ms']:.2f} ms (Planck-scale surface)
@@ -881,7 +884,7 @@ def main():
         print(f"\n  WARNING: {FAIL_COUNT} check(s) failed!")
         sys.exit(1)
     else:
-        print(f"\n  All checks passed.")
+        print(f"\n  All formula checks passed; physical derivation remains withdrawn.")
 
 
 if __name__ == "__main__":

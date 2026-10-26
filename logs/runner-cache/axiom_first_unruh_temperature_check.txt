@@ -1,24 +1,25 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_unruh_temperature_check.py
-runner_sha256: bb57e719d6a6437dd9bcfb3942f615ea01b2e449ccb14bb14650de4a9d11642d
+runner_sha256: fefdf0f967eb327ed7fd7a49fc4ae26cdd0f20867465c21aec20179a4f329c8d
+input_fingerprint_sha256: 70b374b7eafc4ef5a02be8a56d084455bc42a8e637dede13da3097efffe57923
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.11
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ========================================================================
-AXIOM-FIRST UNRUH TEMPERATURE CHECK
+CONDITIONAL KMS TIME-RESCALING CHECK
 ========================================================================
 
-Setup: retained Lorentz kernel + Block 01 KMS support
-Unruh: T_Unruh = a / (2 pi) (natural units)
+Setup: supplied KMS state and positive time-rescaling premises
+Supplied beta0=2pi specialization: T = a / (2 pi)
 
 ------------------------------------------------------------------------
-TEST 1: Wick-rotation periodicity 2 pi for Rindler wedge
+TEST 1: assigned-period consistency
 ------------------------------------------------------------------------
-Same conical-defect argument as Block 02 (Hawking).
+The period is assigned here; this is not a geometry proof.
 In Rindler coords (eta, xi), Euclidean continuation eta -> -i tau
-requires period 2 pi to avoid conical defect at xi = 0.
+has a supplied 2 pi angular convention; no state is constructed.
   predicted period = 6.2831853072
   expected         = 6.2831853072
   STATUS: PASS
@@ -54,10 +55,10 @@ TEST 4: T_Unruh / a = 1 / (2 pi) universal constant
   STATUS: PASS
 
 ------------------------------------------------------------------------
-TEST 5: Bisognano-Wichmann modular operator identity
+TEST 5: two assigned finite diagonal matrices
         Delta = exp(-2 pi K)
 ------------------------------------------------------------------------
-Toy: K = diag(0, 1, 2, 3) (4 boost-eigenvalue modes).
+Toy: K = diag(0, 1, 2, 3), a supplied matrix, not a boost realization.
   K diagonal       = [0. 1. 2. 3.]
   Delta diagonal   = [1.00000000e+00 1.86744273e-03 3.48734236e-06 6.51241214e-09]
   exp(-2 pi K)     = [1.00000000e+00 1.86744273e-03 3.48734236e-06 6.51241214e-09]
@@ -67,19 +68,18 @@ Toy: K = diag(0, 1, 2, 3) (4 boost-eigenvalue modes).
 ========================================================================
 SUMMARY
 ========================================================================
-  Test 1 (Wick-rotation period 2 pi):                PASS
+  Test 1 (assigned-period consistency):                PASS
   Test 2 (T_Unruh = a / (2 pi) sweep):               PASS
   Test 3 (SI scale at Earth gravity ~4e-20 K):       PASS
   Test 4 (T_Unruh / a = 1/(2 pi) universal):         PASS
-  Test 5 (Bisognano-Wichmann Delta = exp(-2 pi K)):  PASS
+  Test 5 (assigned diagonal equality):  PASS
 
+General positive rescaling, strip substitution, domain and SI controls: PASS
+Supplied formula at a=c/(1ns): 0.0012156624712070312 K; historical 200 K rejected
   OVERALL: PASS
 
-Note: this runner verifies the Unruh temperature formula and the
-Bisognano-Wichmann modular identity at machine precision. The proof
-in the companion theorem note follows the same Wick-rotation periodicity
-argument as Block 02 (Hawking T_H), with the Killing horizon replaced
-by the Rindler horizon.
+Finite arithmetic and assigned-matrix consistency only.
+No physical vacuum, boost realization or BW identity is established.
 
 ----- stderr -----
 

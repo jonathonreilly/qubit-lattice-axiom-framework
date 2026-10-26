@@ -16,14 +16,13 @@
   "claim_scope": null,
   "claim_type": "meta",
   "claim_type_author_hint": "meta",
-  "claim_type_author_hint_raw": "meta (audit-companion / record-invariance evidence)",
+  "claim_type_author_hint_raw": "meta",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "key_terminology",
     "dm_dple_dimension_parametric_extremum_theorem_note_2026-04-19"
   ],
   "direct_in_degree": 0,
@@ -37,7 +36,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "36c77b27978593c29d3f33620d2e6d82d4724f76b5b6f514ff44aeb52c771d5a",
+  "note_hash": "fad7c2261e21dfe99c6806c166ffbc910e914be09892815db971159085c455b7",
   "note_path": "docs/DM_DPLE_DIMENSION_PARAMETRIC_EXTREMUM_RECORD_INVARIANCE_COMPANION_NOTE_2026-06-04.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -52,7 +51,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/audit_companion_dm_dple_dimension_parametric_extremum_record_invariance_2026_06_04.py",
-  "title": "DM DPLE Dimension-Parametric Extremum Record Invariance Companion",
+  "title": "Historical DPLE Record-invariance companion",
   "transitive_descendants": 0,
   "verdict_rationale": null
 }

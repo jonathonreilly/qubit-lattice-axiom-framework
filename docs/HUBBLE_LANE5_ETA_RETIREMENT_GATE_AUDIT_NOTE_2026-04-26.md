@@ -1,240 +1,104 @@
-# Lane 5 `eta` Retirement Gate Audit: The Single Microscopic Selector That Retires `eta` From The Bounded Cosmology Cascade
+# Lane 5 eta Route Inventory and Unresolved Selector/Yield Obligation
 
 **Date:** 2026-04-26
-**Status:** support gate-identification note on `main`.
+**Type:** open_gate
 **Claim type:** open_gate
-**Status authority:** independent audit lane only; effective status is
-pipeline-derived.
-**Claim scope:** identifies the precise residual microscopic selector law for
-future DM-lane work. This note does not derive that selector, retire `eta`,
-promote the reduced-surface support branch, or apply an audit verdict.
-**Lane:** 5 — Hubble constant `H_0` derivation (sub-route 5A, advancing
-`(C2)` per the cosmic-history-ratio necessity no-go).
-**Workstream:** `hubble-h0-20260426`
-**Primary runner:** [`scripts/frontier_hubble_lane5_eta_retirement_gate_source_packet.py`](../scripts/frontier_hubble_lane5_eta_retirement_gate_source_packet.py)
-**Primary runner cache:** [`logs/runner-cache/frontier_hubble_lane5_eta_retirement_gate_source_packet.txt`](../logs/runner-cache/frontier_hubble_lane5_eta_retirement_gate_source_packet.txt)
+**Status:** documentary route inventory with an unresolved physical selector/yield obligation.
+**Status authority:** independent audit lane only; this note records no audit verdict.
+**Scope:** supplied route bookkeeping. No eta retirement, complete C2 premise,
+physical selector, yield theorem, or numerical H_0 closure is established.
+**Primary runner:** `scripts/frontier_hubble_lane5_eta_retirement_gate_source_packet.py`
+**Primary runner cache:** `logs/runner-cache/frontier_hubble_lane5_eta_retirement_gate_source_packet.txt`
 
----
-
-## 0. Purpose
+## 0. Dependency correction
 
 Cycle 3 (`HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md`)
-established that Lane 5 closure requires a `(C2)` cosmic-history-ratio
-retirement OR a `(C3)` direct cosmic-`L` derivation in addition to a
-`(C1)` scale route. The bounded cascade
+now supplies a non-exhaustive separated-input inventory. Its former universal
+necessity claim is withdrawn. Within that route, `(C1)` supplies the
+separately fixed scale and a complete `(C2)` cascade supplies `L`.
+Joint relations are not excluded. The Boolean closure rule is stipulated;
+it does not classify all physical derivations.
+
+This note also withdraws its former reliance on
+`DM_LEPTOGENESIS_PMNS_REDUCED_SURFACE_SELECTOR_SUPPORT_NOTE_2026-04-16.md`
+as current proof of an exact eta-support witness or selector closure.
+That source now reports **two clustered candidates**, while its diagnostic
+**required three branches**; the requirement was not met and the live runner
+exits nonzero. These are documentary observations from that source, not a
+new transport computation here. The existing candidate coordinates are
+fixtures, not a certified branch count, global minimum, physical selector,
+or yield/readout theorem. The earlier source-packet FAIL is preserved in
+recovery; no missing third branch has been constructed.
+
+## 1. Supplied cascade and historical route inventory
+
+The route under discussion is
 
 ```text
-eta -> Omega_b (BBN) -> R = Omega_DM/Omega_b -> Omega_m -> Omega_Lambda
+eta -> Omega_b -> R -> Omega_DM -> Omega_m -> Omega_Lambda
 ```
 
-is the explicit `(C2)` pathway: retiring `eta` from the framework's input
-ledger collapses the cascade's external dependency, leaving only `R_base
-= 31/9` (already retained) plus `alpha_GUT` (separate gauge-coupling
-unification lane).
+`R_base = 31/9`, the Sommerfeld dependence on `alpha_GUT`, BBN conversion,
+radiation and dimensional inputs retain their separate premises. Removing
+one observational pin does not establish a complete L-supplying premise.
+The cited historical transport status records `eta / eta_obs = 0.188785929502`
+and an `eta / eta_obs = 1` support branch. This packet checks that these
+statements occur in that source; it does not re-establish either transport
+calculation or inherit physical closure from the exact-support wording.
+The reduced-surface diagnostic's present limitation above takes precedence
+over this note's former promotion inference.
 
-This note audits the live DM leptogenesis support routes and identifies
-the **single residual microscopic selector law** whose retention would
-promote the reduced-surface PMNS support branch to retained closure.
-Net effect: `eta` retired, sub-lane 5A advanced.
+The historical candidate gate is the right-sensitive 2-real `Z_3`
+doublet-block point-selection law on `dW_e^H = Schur_{E_e}(D_-)`, with odd
+slot `A13`, equivalently `sign(sin(delta))`. The cited transport inventory
+calls its local selected slice transport-subcritical. These identify the
+route being discussed, not a proof that a single gate is sufficient on the
+actual physical surface. This note does not derive the missing
+right-sensitive selector law, the yield/readout map, or a supported branch.
 
-The note does NOT close any of the DM lane work. It identifies the gate
-so the workstream's effort is directed at the right open premise.
+Historical shortcut inventories cited by this route include
+`DM_LEPTOGENESIS_UNIVERSAL_YUKAWA_NO_GO_NOTE_2026-04-15.md`,
+`DM_NEUTRINO_CANONICAL_TWO_HIGGS_SLOT_NO_GO_NOTE_2026-04-15.md`,
+`DM_NEUTRINO_POLAR_ALIGNED_CORE_NO_GO_NOTE_2026-04-15.md`,
+`DM_NEUTRINO_TWO_HIGGS_23_SYMMETRIC_SLOT_NO_GO_NOTE_2026-04-15.md`,
+`DM_NEUTRINO_Z3_CIRCULANT_MASS_BASIS_NO_GO_NOTE_2026-04-15.md`,
+the `DM_PMNS_` and `DM_WILSON_` families, and
+`DM_STRONG_CP_GAMMA_TRANSFER_NO_GO_NOTE_2026-04-15.md`.
+Their independent scope and hypotheses are not re-reviewed or promoted here;
+a list is not an exhaustion theorem.
 
-## 1. Live DM leptogenesis support routes
+## 2. Finite stipulated model
 
-Per `DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-04-16.md` (and confirmed
-in `OMEGA_LAMBDA_DERIVATION_NOTE.md`), the surviving live `eta` support
-routes are:
+The retained implementation defines three Boolean flags for a supplied
+selector premise, an alpha_GUT premise and an absolute-scale premise.
+Its method names are historical: `eta_retired()` simply returns the first
+flag, `c2_numerically_closed()` takes the first two flags' conjunction, and
+`h0_closed_through_c2()` takes all three. No flag is a derived physical fact.
+The three evaluated assignments check this definition only. The actual
+premises are unresolved; a true flag in a hypothetical assignment is not
+an eta prediction or a retained conclusion.
 
-### 1.1 Exact one-flavor theorem-native radiation branch
+On this selected cascade the remaining cascade dependency is
+`alpha_GUT in [0.03, 0.05]` after hypothetically discharging its eta input;
+other supplied inputs and physical bridges remain separate. This is not a
+claim that selecting any point on the chart supplies the observed yield.
 
-- exact source package: `gamma = 1/2`, `E1 = sqrt(8/3)`, `E2 = sqrt(8)/3`
-- exact projection law: physical denominator `K00 = 2`
-- exact equilibrium conversion: `d_N = 0.003901498`,
-  `s/n_gamma = 7.039434`
-- exact radiation expansion: `H_rad(T) = sqrt(4 pi^3 g_*/45) T^2 / M_Pl`
-- exact normalized radiation transport branch: `E_H(z) = 1`
-- exact direct transport solve on that branch
+## 3. Open obligations and evidence boundary
 
-**Result:** `eta / eta_obs = 0.1888`.
+The required-three-branch diagnostic remains a failed proof obligation,
+not a completed result. The physical selector/yield/readout obligations
+remain open independently of the Boolean bookkeeping. A derivation would
+need a justified physical domain, a supported selection result, and a
+checked transport/readout bridge; this packet supplies none of them.
+It does NOT close any of the DM lane work. It does not retire `eta`, close
+`(C2)`, derive `H_0`, or apply an audit verdict. The former conclusion that
+one microscopic law automatically promotes the exact-support branch is
+withdrawn. No N1–N8 approval or physical route exhaustion is claimed.
 
-This route is **closed but undershoots** the observed `eta_obs` by a
-factor `~5.3`. It cannot retire `eta` on its own — it gives a
-predictively wrong value by a factor consistent with multi-flavor /
-PMNS-aware corrections being required.
-
-### 1.2 PMNS-assisted reduced-surface support branch
-
-- the admissible `N_e` PMNS-assisted closure problem is exactly reduced
-  to the fixed native seed surface
-- reduced-surface optimization support recovers a low-action branch with
-  `eta / eta_obs = 1`
-- the projected-source constructive chamber `gamma > 0`, `E1 > 0`,
-  `E2 > 0` is exactly nonempty and already contains a
-  transport-extremal witness
-- the fixed native `N_e` seed surface contains an exact constructive
-  `eta / eta_obs = 1` point
-- residual selector reduced exactly to the **odd slot `A13`**,
-  equivalently the **phase bit `sign(sin(delta))`**
-- sole-axiom-native PMNS value object is the even-response pair
-  `(E1, E2)`
-- current exact PMNS stationary / minimum-information selector families
-  are `delta`-even, hence CP-sheet blind on the charged-sector bridge
-
-**Result:** an exact constructive point at `eta / eta_obs = 1` exists.
-The branch is NOT closed because the residual selector law on the odd
-slot remains open.
-
-## 2. The single residual gate
-
-Per `DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-04-16.md`, what remains
-open is exactly one structural object:
-
-> **The right-sensitive microscopic selector law on
-> `dW_e^H = Schur_{E_e}(D_-)`, equivalently the intrinsic 2-real `Z_3`
-> doublet-block point-selection law.**
-
-Decomposed:
-
-- the residual datum `(delta, q_+)` lives entirely in the moving `Z_3`
-  doublet block after quotienting the spectator line and frozen slot
-  sector;
-- the current exact slot/odd-bank and source-bank are both blind to that
-  moving `Z_3` doublet block;
-- the current bank closes negatively at that final microscopic gate
-  (i.e., the current bank cannot resolve the doublet-block selection);
-- the local diagonal-family route via observable-principle scalar
-  generator closes locally at `delta_* = q_+* = rho_* = sqrt(6)/3`, but
-  that closed local point is **transport-subcritical** even after
-  optimizing the spectator line `m`, so it is a diagnostic boundary
-  route, not a theorem-native selector closure.
-
-Hence the gate is the **right-sensitive 2-real `Z_3` doublet-block
-point-selection law** — a microscopic selector law on the moving
-doublet block that fixes `(delta, q_+)` as a function of framework
-structure rather than as free parameters.
-
-## 3. What landing this gate would deliver
-
-If the right-sensitive doublet-block point-selection law is retained, the
-chain of consequences is:
-
-1. The reduced-surface PMNS support branch promotes from
-   `eta / eta_obs = 1.0` exact constructive point (currently support) to
-   **retained closure**: `eta` becomes a framework-derived value matching
-   observation.
-2. The bounded cosmology cascade
-   `eta -> Omega_b -> R -> Omega_DM -> Omega_m -> Omega_Lambda` carries
-   no observational pin at the `eta` entry.
-3. The remaining cascade dependency is `alpha_GUT in [0.03, 0.05]`
-   bounded (Sommerfeld correction to `R = R_base × S_corr`). Retiring
-   `alpha_GUT` is the gauge-coupling unification lane (separate from
-   Lane 5).
-4. The `R_base = 31/9` group-theory derivation
-   (`R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md`) is
-   already retained.
-5. So the cascade output `Omega_Lambda = L` becomes retained
-   conditionally on `(eta, alpha_GUT)` retired. Combined with retained
-   `Omega_r,0` (admitted from `T_CMB` + retained `N_eff`), this
-   provides the dimensionless `L` numerically.
-6. Per the cosmic-history-ratio necessity no-go (Cycle 3), `L`
-   numerical satisfies the `(C2)` pathway requirement for Lane 5.
-
-This is exactly the `(C2)` half of the Lane 5 closure-pathway corollary.
-The `(C1)` half (scale route) remains separately required for `H_0`
-itself.
-
-## 4. Promotion-gate constraints
-
-The doublet-block point-selection law must:
-
-- be derived from the current framework baseline plus the retained PMNS/CP
-  machinery
-  (the PMNS note series, the DM leptogenesis note series, and the retained
-  PMNS atlas);
-- act on the moving `Z_3` doublet block rather than on a frozen slot
-  sector;
-- be right-sensitive (i.e., not `delta`-even) so that it can resolve
-  `sign(sin(delta))` and pin the odd `A13` slot;
-- not re-open routes already closed by prior no-gos. Specifically the
-  selector cannot be:
-  - a universal-Yukawa / canonical two-Higgs-slot construction
-    (closed by `DM_LEPTOGENESIS_UNIVERSAL_YUKAWA_NO_GO_NOTE_2026-04-15.md`,
-    `DM_NEUTRINO_CANONICAL_TWO_HIGGS_SLOT_NO_GO_NOTE_2026-04-15.md`);
-  - a polar-aligned-core slot reading
-    (`DM_NEUTRINO_POLAR_ALIGNED_CORE_NO_GO_NOTE_2026-04-15.md`);
-  - a 23-symmetric two-Higgs slot
-    (`DM_NEUTRINO_TWO_HIGGS_23_SYMMETRIC_SLOT_NO_GO_NOTE_2026-04-15.md`);
-  - a `Z_3` circulant mass-basis route
-    (`DM_NEUTRINO_Z3_CIRCULANT_MASS_BASIS_NO_GO_NOTE_2026-04-15.md`);
-  - any of the asymptotic-source / local-selector-family / Z_3
-    doublet-block-center-positive-sheet routes (`DM_PMNS_*_NO_GO_*`
-    series 2026-04-20);
-  - any of the Wilson-direct-descendant constructive-transport family
-    (`DM_WILSON_*_NO_GO_*` series 2026-04-19);
-  - the strong-CP / `gamma`-transfer route
-    (`DM_STRONG_CP_GAMMA_TRANSFER_NO_GO_NOTE_2026-04-15.md`).
-
-Every easy doublet-block selector route is closed. The retained selector
-must therefore either:
-
-- introduce new PMNS structure not yet promoted (e.g., the right-handed
-  conjugacy lane left open in
-  `PMNS_RIGHT_CONJUGACY_INVARIANT_NO_GO_NOTE.md` once a new premise is
-  named), OR
-- exploit an unexplored interaction between the `Z_3` doublet-block and
-  an external retained structure (e.g., the retained CKM atlas's
-  `eta^2 = V(2) M(3) M(6) = 5/36` or the protected `gamma_bar = arctan(sqrt(5))`),
-  OR
-- come from a structurally new framework feature outside the current
-  PMNS/leptogenesis bank.
-
-## 5. What this audit does and does not do
-
-**Does:**
-
-- Identifies the **single residual microscopic selector law** whose
-  retention would retire `eta` and advance Lane 5 sub-pathway `(C2)`.
-- Names the gate explicitly: right-sensitive 2-real `Z_3` doublet-block
-  point-selection law on `dW_e^H = Schur_{E_e}(D_-)`.
-- Inventories the closed routes the gate-resolving selector must avoid.
-- Maps this audit into the Lane 5 closure-pathway corollary.
-
-**Does not:**
-
-- Propose a new selector law. The selector law itself is a DM-lane open
-  research target.
-- Close any DM-lane no-go.
-- Retire `eta` (only the gate-resolving selector law would).
-- Retire `alpha_GUT`, `T_CMB`, or the `(C1)` scale route.
-
-## 6. Cross-references
-
-- `DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-04-16.md` — primary
-  authority for the surviving live routes and the residual gate.
-- `DM_LEPTOGENESIS_PMNS_REDUCED_SURFACE_SELECTOR_SUPPORT_NOTE_2026-04-16.md`
-  — reduced-surface support branch.
-- `DM_LEPTOGENESIS_PMNS_REDUCTION_EXHAUSTION_THEOREM_NOTE_2026-04-16.md`
-  — exhaustion of the easy reduction routes.
-- `DM_LEPTOGENESIS_PMNS_MICROSCOPIC_D_LAST_MILE_NOTE_2026-04-16.md`
-  — `D`-side microscopic last-mile statement.
-- `OMEGA_LAMBDA_DERIVATION_NOTE.md` — bounded cascade ledger.
-- `R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md` — exact
-  `R_base = 31/9` structural support identity.
-- `HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md`
-  (Cycle 3) — closure-pathway taxonomy `(C1), (C2), (C3)`.
-- DM/PMNS no-go ledger maintained by the active DM/leptogenesis workstream.
-
-## 7. Boundary
-
-This is an audit / gate-identification artifact, not a theorem. It does
-not retire any input. It moves the lane state by isolating the precise
-gate so subsequent DM-lane work can target the right object.
-
-The attached source-packet runner makes the dependency anchors,
-single-gate inventory, and non-promotion boundary replayable for
-independent re-audit. It does not derive the missing right-sensitive
-selector law, retire `eta`, close `(C2)`, or apply an audit verdict.
+The runner separates documentary observations of the failed diagnostic
+from its finite model checks. Source-text agreement is not an independent
+scientific proof. Prior stronger note versions, failed raw captures and
+dated logs remain historical recovery, not current authority.
 
 ## Audit dependency repair links
 

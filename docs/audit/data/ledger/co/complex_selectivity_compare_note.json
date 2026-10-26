@@ -44,7 +44,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "907764aeeaa4d3891321da1aac1c347fde898f6609a7681275e07e1f8dd2b96c",
+  "note_hash": "1dd4ae36438f5f8d5ed34f6b82dd7d5e32893a231b42c0ca4d41433bed0748c4",
   "note_path": "docs/COMPLEX_SELECTIVITY_COMPARE_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -864,7 +864,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

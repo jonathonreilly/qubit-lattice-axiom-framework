@@ -37,12 +37,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 6.858,
+  "load_bearing_score": 6.807,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "0bc40a4290a52dbeb6174e9c5469d17344e650cc0245c4a8d906ddf41eb9d4a4",
+  "note_hash": "6ff18bf2e3303e5a991e9e577724c574fdeea9bdefc74617bd516e48d93b606e",
   "note_path": "docs/HUBBLE_LANE5_ETA_RETIREMENT_GATE_AUDIT_NOTE_2026-04-26.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -97,7 +97,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_hubble_lane5_eta_retirement_gate_source_packet.py",
-  "title": "Lane 5 `eta` Retirement Gate Audit: The Single Microscopic Selector That Retires `eta` From The Bounded Cosmology Cascade",
-  "transitive_descendants": 28,
+  "title": "Lane 5 eta Route Inventory and Unresolved Selector/Yield Obligation",
+  "transitive_descendants": 27,
   "verdict_rationale": null
 }

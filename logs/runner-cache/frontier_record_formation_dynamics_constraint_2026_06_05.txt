@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py
-runner_sha256: ce2d4ef40ce82ef74c05308e14d0b5bf73e90930bd24c7bbfc94a8a5ea2af614
-timeout_sec: 120
+runner_sha256: aa1b86b5da6eec4c4d547a2287572f2b453df3f3f7c23c10f26a0f0e9c67b405
+input_fingerprint_sha256: 6fefe7c222ed83aefae3832b725c7f9b21cfad1b64981dd8584aa67cd690b59f
+timeout_sec: 180
 exit_code: 0
-elapsed_sec: 0.24
+elapsed_sec: 0.31
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -28,7 +29,7 @@ PASS non-demolition: system pointer populations preserved by recording :: pops=[
 ------------------------------------------------------------------------------
 Part 2: ADDITIVITY of the record readout over disjoint fragments
 ------------------------------------------------------------------------------
-PASS supplied singleton bridge plus Record additivity is compatible with I_mass(F1 U F2) - J(F1 U F2) = (m-1)*H_S :: 2.0894 - 0.5224 = 3*0.5224
+PASS supplied singleton bridge plus additive extension is compatible with I_mass(F1 U F2) - J(F1 U F2) = (m-1)*H_S :: 2.0894 - 0.5224 = 3*0.5224
 PASS recoverable content J is strictly SUB-additive (saturation, NOT additivity): J(F1 U F2) = J(F1) = J(F2) = H_S :: J(F1)=0.5224, J(F2)=0.5224, J(union)=0.5224, sum-minus-union=0.5224
 PASS two-functional split: recovered pointer info saturates at H_S (no super-additivity) despite redundant copies :: I(S:F1F2)=0.5224=H_S, record-mass=2.0894=4*H_S
 PASS objectivity: every pair of fragments shares exactly the pointer record H_S (one consistent value) :: pairwise I = [0.5224, 0.5224, 0.5224, 0.5224, 0.5224, 0.5224] (H_S=0.5224)
@@ -59,11 +60,11 @@ PASS demolition control: records the WRONG observable -- full I(S:E_1)>0 but z-p
 PASS demolition control: fragments do NOT objectively agree on Pi_S :: pairwise I = [0.881, 0.881, 0.881, 0.881, 0.881, 0.881] (vs H_S=0.5224)
 
 ------------------------------------------------------------------------------
-Part 6: MONOTONE LINK -- redundancy vs the non-demolition norm
+Part 6: NINE-POINT SWEEP -- Holevo quality vs the non-demolition norm
 ------------------------------------------------------------------------------
-PASS sweep: theta=0 (non-demolition) maximizes objective-record quality :: quality(theta=0)=0.5224, max=0.5224
-PASS sweep: objective-record quality decreases as ||[H,Pi_S]|| grows :: q=[0.522, 0.371, 0.244, 0.175, 0.138, 0.104, 0.061, 0.02, -0.0] vs ||c||=[0.0, 4.414, 8.659, 12.571, 16.0, 18.814, 20.905, 22.193, 22.627]
-PASS sweep: only the zero-commutator endpoint gives a perfect record (quality = H_S at theta=0, degraded elsewhere) :: q[0]=0.5224=H_S, q[-1]=-0.0000
+PASS nine-point sweep: theta=0 maximizes sampled Holevo quality :: quality(theta=0)=0.5224, max=0.5224
+PASS nine-point sweep: sampled Holevo quality is weakly decreasing :: q=[0.522, 0.371, 0.244, 0.175, 0.138, 0.104, 0.061, 0.02, -0.0] vs ||c||=[0.0, 4.414, 8.659, 12.571, 16.0, 18.814, 20.905, 22.193, 22.627]
+PASS nine-point sweep: only theta=0 reaches H_S; all eight nonzero samples fall below H_S-tol :: q[0]=0.5224=H_S, max(q[1:])=0.3709, tol=1e-6; q[-1]=-0.0000
 
 ------------------------------------------------------------------------------
 Part 6b: POINTER-CONSERVATION IFF for [H,Pi_S]=0 (random-H theorem)
@@ -148,7 +149,7 @@ BOUNDED ALGEBRAIC RESULTS, with explicit scope:
       t = pi/(4g), forms a perfect redundant persistent objective record:
       R_delta = n_env, plateau = H_S, finished idle fragments persist, and
       fragments objectively agree. The bounded model supplies the singleton
-      bridge I({k}) := J({k}); Record additivity extends it to
+      bridge I({k}) := J({k}); a separately supplied additive extension gives
       I_mass(F)=sum_k J({k}), while recoverable union content J(F) SATURATES
       at H_S. Part 2 checks the plateau compatibility identity
       I_mass-J=(m-1)H_S without claiming to derive the singleton bridge.
@@ -170,8 +171,8 @@ BOUNDED ALGEBRAIC RESULTS, with explicit scope:
     - Demolition controls (Parts 5-6): a noncommuting sigma_x(S) handle records
       the wrong observable, collapses redundancy, makes the pointer populations
       oscillate, and reaches no objective pointer consensus. The interpolation
-      shows this controlled-copy quality degrades as ||[H,Pi_S]|| grows for
-      the tested handle family.
+      shows sampled Holevo quality decreases across nine theta values in
+      this handle family; behavior between samples is not certified.
 
   All-state-persistence class and construction controls (Part 7-8):
     (a) [U,Pi_S]=0 characterizes all-state pointer persistence,
@@ -194,7 +195,7 @@ HONEST LIMITS (no over-claim):
     record-formation result is a controlled-copy construction on
     the explicit finite model, conditional on modelling 'record' as a
     redundantly-imprinted, objective, persistent system observable (the
-    quantum-Darwinism bridge) and on I({k}) := J({k}). The Lattice, Qubit,
+    quantum-Darwinism bridge) on I({k}) := J({k}), and on its additive extension. The Lattice, Qubit,
     Admissibility, and Record axioms do not supply those identifications, the
     selected carrier/pointer, or the dynamics.
   - We do NOT claim arbitrary pointer-non-demolition Hamiltonians form records.

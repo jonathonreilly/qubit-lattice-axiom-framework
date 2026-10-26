@@ -1,0 +1,11 @@
+{
+  ".claude/science/physics-loops/native-mode-correlations-20261019/exact_cube_poles.py": "5c7c90762722337011e8ee333e9299d3699337aa9016e2b0f9e6d62d7cbfcc0e",
+  ".claude/science/physics-loops/native-mode-correlations-20261019/compass_sector_solve.py": "81581fdc6717b264878c10c417804c3551d7c009ab892a2235303dc1e25bb95c",
+  ".claude/science/physics-loops/native-mode-correlations-20261019/longitudinal.py": "74a6e3580fee39075a37ad3a392d63c5aed634fbe4e8ef0a430fc48981a13c2a",
+  ".claude/science/physics-loops/native-mode-correlations-20261019/independent_control.py": "4306bf20801acf7f863dcfe683a25653d9653409cb39685f6cb3cf388bab1f42",
+  ".claude/science/physics-loops/native-mode-correlations-20261019/diagnostic_controls.py": "1219f2375641e379648ce7ebbf8a452dc64c00b0b0e4603ee72d360532bf39f9",
+  ".claude/science/physics-loops/native-mode-correlations-20261019/compass_sector_basis.py": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
+  ".claude/science/physics-loops/native-mode-correlations-20261019/correlations.py": "a41d2e63c37d31d5d5f82194c8539913f55fdb120c181f3f099852f41d35fa48",
+  "scripts/native_compact_mode.py": "2d3beaf21a7805b902e1cd2df2f653fdb53c86fd9289114ed2f0a072e36ef9a2",
+  "scripts/native_longitudinal_mode.py": "c960600efc2d42730a3017e52fb0abd4dc036fe92532a2d80cc8cdcce242d610"
+}

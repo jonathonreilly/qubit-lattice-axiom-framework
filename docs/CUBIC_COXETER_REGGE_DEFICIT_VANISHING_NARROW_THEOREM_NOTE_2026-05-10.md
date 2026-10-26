@@ -214,7 +214,8 @@ body-diagonal `(v_0, v_6)`. The even permutations are rotations by
 `0`, `2 pi / 3`, or `4 pi / 3`; the odd permutations are reflections.
 All six are Euclidean isometries, hence the tetrahedra inherit the same
 dihedral-angle table on the corresponding labelled edges. The runner
-verifies this by direct symbolic computation of all six tets' dihedrals.
+checks the full table for T_1 and the body-diagonal angle for all six tets;
+the isometry argument supplies the remaining corresponding angles.
 
 ### Proof of `(T2)` (per-edge-class deficit sum)
 
@@ -442,18 +443,17 @@ verifies (PASS=N/0):
 7. An alternate axis-edge orientation (different position in the
    Coxeter chain) also gives `2 pi` (sympy exact), confirming the
    identity is independent of which axis-edge representative is chosen.
-8. The Regge action density `S_R(Omega) = sum_e L_e * theta_e = 0`
-   numerically over a `3 x 3 x 3` block of cubes, sampled across all
-   interior edges of all three classes (numerical verification matching
-   the symbolic identities).
-9. Non-cubic-symmetry counterexample: a deformed tetrahedron with
-   non-flat metric (one edge length perturbed from `1`) produces a
-   non-zero deficit, confirming that the zero-deficit identity uses the
-   flat Euclidean metric crucially. This rules out vacuous-true
-   readings.
-10. Parent row context (no ledger modification): print the parent
-    `DISCRETE_EINSTEIN_REGGE_LIFT_NOTE` audit state for cross-reference;
-    the narrow theorem is independent of any audit movement on the parent.
+8. Three central representative edge-stars (one axis, one face diagonal,
+   one body diagonal) in a `3 x 3 x 3` block have numerical dihedral
+   sums `2 pi`; their length-weighted deficit sum is numerically zero.
+   This is not enumeration of every interior edge in the block.
+9. Moving `v_2` to `(1, 1.2, 0)` in one Euclidean tetrahedron changes
+   its body-diagonal dihedral angle from `pi/3`. This is a single-angle
+   sensitivity control, not a compatible nonflat triangulated metric
+   or a computed nonzero Regge deficit around a complete edge-star.
+
+The runner does not read or print the parent audit state. Parent status
+is not an input to these geometry checks; no audit outcome is asserted.
 
 ## Cross-references
 

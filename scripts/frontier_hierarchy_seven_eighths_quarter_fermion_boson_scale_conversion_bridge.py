@@ -16,6 +16,7 @@ Carlo, no observational comparator is load-bearing.
 from __future__ import annotations
 
 AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ['docs/HIERARCHY_SEVEN_EIGHTHS_QUARTER_FERMION_BOSON_SCALE_CONVERSION_BRIDGE_BOUNDED_NOTE_2026-05-26.md']
 
 import math
 import sys
@@ -64,7 +65,8 @@ def check(name: str, predicate: Callable[[], bool], detail: str = "") -> None:
 print("Section 1: Named support witnesses for 7/8 at d=4")
 
 def w1_apbc_matsubara_determinant_per_mode() -> bool:
-    # W1: |det D(L_t=4)| / |det D(L_t=2)|^2 = (7/8)^16; per-mode 16-th root = 7/8
+    # W1: supplied determinant-ratio value (7/8)^16; this function only
+    # checks its positive 16-th root, not a determinant computation.
     full = sp.Rational(7, 8) ** 16
     per_mode = full ** sp.Rational(1, 16)
     return sp.simplify(per_mode - sp.Rational(7, 8)) == 0
@@ -94,7 +96,7 @@ def w5_fermion_boson_per_dof_ratio() -> bool:
     ratio = u_F_per_dof / u_B_per_dof
     return sp.simplify(ratio - sp.Rational(7, 8)) == 0
 
-check("W1: APBC Matsubara determinant per-mode = 7/8",
+check("W1: positive root of supplied Matsubara-ratio value = 7/8",
       w1_apbc_matsubara_determinant_per_mode,
       "upstream framework Matsubara witness")
 check("W2: lattice per-mode (c+1/2)/(c+1) at c=3 = 7/8",
@@ -167,7 +169,8 @@ def s3_dim_one_inversion_at_d4() -> bool:
 
 def s3_ratio_inversion_at_d4() -> bool:
     # For energy-density ratio R = u_F / u_B, the temperature-scale
-    # conversion factor (at equal d=4) is R^(1/4)
+    # root of the equal-temperature ratio at d=4 is R^(1/4).
+    # Equal-energy temperatures obey T_B/T_F=R^(1/4), checked separately.
     R = sp.Rational(7, 8)
     factor = R ** sp.Rational(1, 4)
     # Numerical value

@@ -1,21 +1,22 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_selector_shifted_relative_action_recovered_packet_closure_2026_04_21.py
-runner_sha256: d8f18a06012342399da86d5e30a47b01bddc5d242a080fdaae81bc21fc90ad48
-timeout_sec: 120
+runner_sha256: ce399f942df156d6fd43bd2227978d2e1c20dc22f1c4214bb5d018a58d227c01
+input_fingerprint_sha256: 709b17fa449f82e5a81b38aae24ae0e8138aedaf0e7d18c21ae58638a61f8de3
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.76
+elapsed_sec: 0.49
 status: ok
 ----- stdout -----
 ========================================================================================
-DM SELECTOR SHIFTED-RELATIVE-ACTION RECOVERED-PACKET CLOSURE THEOREM
+SUPPLIED SHIFTED-RELATIVE-ACTION FINITE PACKET DIAGNOSTIC
 ========================================================================================
 
 ========================================================================================
-PART 1: THE SAME EXACT SCALAR LAW EXTENDS TO THE COMMON POSITIVE WINDOWS
+PART 1: STIPULATED SCALAR AND SUPPLIED POSITIVE WINDOWS
 ========================================================================================
-  [PASS] The original selector note still records the exact scalar observable-relative-action grammar
+  [PASS] DOCUMENTARY text observation only: The original selector note still records the exact scalar observable-relative-action grammar
   [PASS] One common positivity threshold mu_floor exists on the recovered bank  (mu_floor = 5.526185878913282)
-  [PASS] So the same scalar law can be transported to the common positive windows A_mu(H) = H + mu I  (shifted LogDet / Bregman continuation of the exact seed-relative action)
+  [INFO] The shifted scalar functional is stipulated; its physical selection is not derived.
 
 ========================================================================================
 PART 2: EVERY AUDITED COMMON POSITIVE SHIFT PICKS THE SAME PREFERRED LIFT
@@ -25,42 +26,31 @@ PART 2: EVERY AUDITED COMMON POSITIVE SHIFT PICKS THE SAME PREFERRED LIFT
   [PASS] At the largest audited shift, lift 0 is still unique  ((mu, margin)=(7.526185878913282, 0.074652125521))
 
 ========================================================================================
-PART 3: THE SAME MINIMIZER PERSISTS ON A DENSE ADMISSIBLE STRESS RANGE
+PART 3: SIXTY SUPPLIED GRID POINTS AND ONE LARGE-SHIFT POINT
 ========================================================================================
-  [PASS] On the dense admissible stress range from the positivity edge to large shifts, the same unique minimizer persists  (worst dense margin = 0.006112488798 at mu = 25.526185878913282)
-  [PASS] Even in the far-shift asymptotic regime, lift 0 remains the unique minimizer  ((large_mu, margin)=(1000005.5, 3.999023334700e-12))
+  [PASS] At the sixty supplied grid points, the same unique finite-bank minimizer is observed  (worst dense margin = 0.006112488798 at mu = 25.526185878913282)
+  [PASS] At the single supplied mu_floor+1e6 point, lift 0 is the finite-bank minimizer  ((large_mu, margin)=(1000005.5, 3.999023334700e-12))
 
 ========================================================================================
-PART 4: THE SAME EXACT SCALAR LAW ACTIVATES THE POSITIVE ODD DOUBLET SIDE
+PART 4: SUPPLIED SCALAR MINIMIZER AND FINITE DOUBLEt SIGN COMPARISON
 ========================================================================================
-  [PASS] The earlier packet note still records that only recovered lift 0 lies on the positive side of Im(K_Z3[1,2]) = 0
-  [PASS] Exactly one recovered lift has positive shifted-imaginary doublet mixing  (Im(K12)_bank = [ 0.50598283 -1.04190431 -0.97982431 -1.25160188 -1.7936515 ])
+  [PASS] DOCUMENTARY text observation only: The earlier packet note still records that only recovered lift 0 lies on the positive side of Im(K_Z3[1,2]) = 0
+  [PASS] Exactly one recovered lift has positive shifted-imaginary doublet mixing  (Im(K12)_bank = [ 0.505983 -1.041904 -0.979824 -1.251602 -1.793652])
   [PASS] So the same shifted relative-action law and the odd doublet-sign packet select the same preferred lift  (same recovered lift 0)
 
 ========================================================================================
 PART 5: SCIENTIFIC CONSEQUENCE
 ========================================================================================
-  [PASS] The projection note still records that the exact internal selector already has the same preferred recovered image
-  [PASS] So on the current recovered selector packet, the remaining review-surface selector residue is closed by the same exact scalar law  (packet-local closure only)
-  [PASS] The companion exact-target theorem removes any separate native A-BCC residue once the PMNS target surface is granted  (pure target-free global sign/source-chart derivation remains outside this theorem alone)
+  [PASS] DOCUMENTARY text observation only: The projection note still records that the exact internal selector already has the same preferred recovered image
+  [PASS] The supplied scalar functional selects lift0 in the finite tested packet  (packet-local closure only)
+  [PASS] DOCUMENTARY text observation only: The companion finite table keeps physical selection and completeness open  (pure target-free global sign/source-chart derivation remains outside this theorem alone)
 
 ========================================================================================
 RESULT
 ========================================================================================
-  On the current recovered selector packet, the same exact scalar
-  observable-principle law already closes point selection.
-  After transporting the seed-relative LogDet/Bregman law to the common
-  positive windows A_mu(H)=H+mu I, the preferred recovered lift 0 is the
-  unique minimizer across the full audited shift family and on a dense
-  admissible stress range, and it is exactly the unique recovered point
-  with Im(K_Z3[1,2]) > 0.
-  So the review-surface DM selector residue is closed on the current
-  recovered packet. By itself this theorem is not a pure target-free
-  global sign/source-chart theorem, but the companion exact-target
-  source-cubic theorem removes any separate native A-BCC residue once
-  the PMNS target surface is granted.
-
-SUMMARY: PASS=14 FAIL=0
+Finite supplied-bank comparisons only: SHIFT_OFFSETS, sixty grid points and one far point.
+No continuum/asymptotic theorem, physical selector or exhaustive closure follows.
+SUMMARY: PASS=13 FAIL=0
 
 ----- stderr -----
 

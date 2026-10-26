@@ -1,27 +1,7 @@
-"""REFRAME (user-corrected): r=1/2 need not be FORCED -- it is a distinguished STATIONARY POINT
-(extremum) of the r-family, and the three Q-lanes are distinguished points (different physics), not
-competing answers. The 5-round J-hunt's 'force det_C over det_R' target was a relapse into the
-forced-selection framing already retired; det_C/r=1/2 and det_R/r=1 are DIFFERENT LANES.
-
-Verified:
-(1) r=1/2 is a genuine EXTREMUM: the sector-power entropy S(r) (entropy of the 2 isotype-sector power
-    fractions p_singlet=3a^2/(3a^2+6|b|^2)=1/(1+2r), p_doublet=2r/(1+2r)) is MAXIMIZED at r=1/2
-    (dS/dr=0, S=log2 = max), equivalently the singlet-doublet power IMBALANCE |3a^2-6|b|^2| is at a
-    TROUGH (=0). r=1/2 is also the fixed point of the r->1-r swap. A stationary point is 'natural'
-    (a vacuum sits at a potential extremum), NOT fine-tuned.
-(2) The three lanes are distinguished points of the r-family:
-      r=0   Q=1/3  S_3-DEGENERATE (enhanced-symmetry endpoint, all masses equal)
-      r=1/2 Q=2/3  BALANCED / max-sector-entropy (interior extremum) -- charged leptons
-      r=1   Q=1    MAXIMAL HIERARCHY, two massless (enhanced-symmetry endpoint)
-(3) So the J-hunt's 'force r=1/2 (det_C) over r=1 (det_R)' is the WRONG target: they are different LANES.
-
-HONEST CAVEAT: r=1/2 is the extremum of the SECTOR functional (entropy over 2 isotype sectors);
-the per-DOF functional peaks at r=1. So 'which extremum is distinguished' still carries the
-sector-vs-DOF (det_C/det_R) flavor. But the reframe handles it: we do NOT force the sector functional
-over the DOF one -- r=1/2 is a bona fide stationary point (of the balance/sector functional) and the
-charged-lepton lane occupies it, while r=1 is a DIFFERENT distinguished point (a different lane). The
-residual is thus NOT 'force a measure / fine-tune a number' but 'which extremum/lane does each sector
-occupy' -- a natural 'which vacuum' question (the lane assignment), strictly more honest and physical.
+"""Stationary points of supplied sector and per-DOF entropy functionals.
+These checks do not select a physical lane or derive generations. At fixed r,
+individual circulant masses also depend on arg(b). Fraction exchange on r>0
+is r -> 1/(4r); the affine reflection r -> 1-r is a different map.
 """
 import numpy as np
 
@@ -55,32 +35,41 @@ def main():
 
     # (1b) imbalance trough at r=1/2; (1c) swap fixed point
     passed.append(check(
-        "1b singlet-doublet power imbalance |3-6r| is at a TROUGH (=0) exactly at r=1/2; r=1/2 = fixed point of r->1-r",
-        abs(3 - 6 * 0.5) < 1e-12 and abs((1 - 0.5) - 0.5) < 1e-12,
-        "the balanced interior between the two enhanced-symmetry endpoints r=0, r=1"))
+        "1b singlet-doublet power imbalance |3-6r| is at a TROUGH (=0) exactly at r=1/2; r=1/2 = fixed point of sector exchange r->1/(4r)",
+        abs(3 - 6 * 0.5) < 1e-12 and abs(1/(4*0.5) - 0.5) < 1e-12,
+        "the balance point of the supplied sectors; r=1 is not an endpoint of r>=0"))
 
     # (2) the three lanes as distinguished points
     Q = lambda r: 1/3 + 2/3 * r
     passed.append(check(
-        "2 three distinguished points: r=0->Q=1/3 (S_3 degenerate), r=1/2->Q=2/3 (balanced), r=1->Q=1 (maximal hierarchy)",
+        "2 three distinguished points: r=0->Q=1/3 (S_3 degenerate), r=1/2->Q=2/3 (balanced), r=1->Q=1 (signed-trace value)",
         abs(Q(0) - 1/3) < 1e-12 and abs(Q(0.5) - 2/3) < 1e-12 and abs(Q(1) - 1) < 1e-12,
-        "three lanes = different physics (degenerate / balanced / hierarchical), NOT competing answers"))
+        "three algebraic points; physical lane assignment is not tested"))
 
-    # (3) the honest caveat: sector-entropy peaks at r=1/2; per-DOF (3 modes) equipartition peaks at r=1
-    # per-DOF: equal power per real DOF -> 3a^2=6|b|^2/2=3|b|^2 -> r=1 (the DOF extremum, a DIFFERENT lane)
-    passed.append(check(
-        "3 SECTOR functional extremizes at r=1/2; per-DOF functional at r=1 -> different extrema = different LANES (no forcing needed)",
-        abs(Q(0.5) - 2/3) < 1e-12 and abs(Q(1.0) - 1.0) < 1e-12,
-        "the residual is 'which extremum/lane each sector occupies' (a which-vacuum question), NOT 'force a measure'"))
+    # Per-DOF entropy uses three fractions (ps,pd/2,pd/2), maximized at equality.
+    def S_dof(r):
+        ps,pd=p_sector(r)
+        return -ps*np.log(ps)-pd*np.log(pd/2)
+    passed.append(check("per-DOF entropy is maximized at r=1 (three equal fractions)",
+        abs(S_dof(1)-np.log(3))<1e-12 and S_dof(.5)<S_dof(1)
+        and abs((S_dof(1+h)-S_dof(1-h))/(2*h))<1e-5))
 
+    test_r = 2.0
+    ps, pd = p_sector(test_r)
+    swapped = p_sector(1/(4*test_r))
+    passed.append(check("sector exchange swaps the two fractions for r=2",
+                        np.allclose(swapped, (pd, ps))))
+    a_phase, b_phase = 0.0, 0.2
+    spectrum = lambda phase: np.sort((1+np.sqrt(2)*np.cos(phase+2*np.pi*np.arange(3)/3))**2)
+    passed.append(check("r=1/2 does not fix mass ratios: phase changes normalized spectrum",
+        not np.allclose(spectrum(a_phase)/spectrum(a_phase).sum(), spectrum(b_phase)/spectrum(b_phase).sum())))
+    signed = 1 + np.sqrt(2)*np.cos(np.pi/3+2*np.pi*np.arange(3)/3)
+    positive_q = np.sum(signed**2)/np.sum(np.abs(signed))**2
+    passed.append(check("signed-trace Q need not equal positive-mass Q at fixed r=1/2",
+        np.min(signed)<0 and abs(positive_q-2/3)>1e-3,
+        f"phase pi/3, positive-mass Q={positive_q:.9f}"))
     print(f"\nSCORECARD PASS={sum(passed)} FAIL={len(passed)-sum(passed)}")
-    print("REFRAME (verified): r=1/2 is a distinguished STATIONARY POINT (max sector-entropy / imbalance trough /")
-    print("swap fixed-point) -- a NATURAL value (vacuum-at-extremum), NOT a forced/fine-tuned one. The three Q-lanes")
-    print("(1/3 degenerate, 2/3 balanced, 1 maximal-hierarchy) are distinguished points of the r-family = different")
-    print("physics, not competing answers. The 5-round J-hunt's 'force det_C over det_R' was the WRONG target -- they")
-    print("are different LANES. Residual reframed: 'which extremum/lane does each sector occupy' (lane assignment, a")
-    print("which-vacuum question), strictly more honest+physical than measure-forcing. (Caveat: r=1/2 is the SECTOR")
-    print("extremum; per-DOF peaks at r=1 -- but these are different lanes, not a selection to win.)")
+    print("Sector entropy has its maximum at r=1/2; physical selection and arg(b) remain unspecified.")
     return 0 if all(passed) else 1
 
 

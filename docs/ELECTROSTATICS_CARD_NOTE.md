@@ -1,16 +1,26 @@
 # Electrostatics Card Note
 
+**Type:** bounded_theorem
+
 **Date:** 2026-04-05  
-**Status:** proposed_retained scalar electrostatic-like sign law on the ordered 3D family
+**Status:** conditional scalar electrostatic-like diagnostic on the supplied ordered 3D family; independent audit required
 
 ## Artifact chain
 
-- [`scripts/electrostatics_card.py`](/Users/jonreilly/Projects/Physics/scripts/electrostatics_card.py)
-- [`logs/2026-04-05-electrostatics-card.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-electrostatics-card.txt)
+- [`scripts/electrostatics_card.py`](../scripts/electrostatics_card.py)
+- [`logs/2026-04-05-electrostatics-card.txt`](../logs/2026-04-05-electrostatics-card.txt)
+
+The source and coupling are supplied: `f=Σ q_source*5e-5/(r+0.1)` and
+`S=L(1+q_test*f)`, on fixed transfer geometry/weights with a quadratic
+`|amplitude|²` detector-centroid readout. Charge-product dependence enters
+through these definitions. The printed signs/scaling are finite diagnostics
+of this model, not a derivation of physical charge or Maxwell dynamics.
+The harness reports its observations; exit zero and its unconditional SAFE READ
+text are not fail-closed proof. The values below must be inspected directly.
 
 ## Question
 
-Can the retained ordered-lattice machinery support a review-safe
+Can the supplied ordered-lattice machinery support a review-safe
 electrostatics-style sign law, without claiming full electromagnetism?
 
 This card stays deliberately narrow:
@@ -28,7 +38,7 @@ radiation.
 
 ## Frozen Result
 
-On the retained ordered family:
+On the supplied ordered family:
 
 - sign antisymmetry:
   - `(+1, +1)` gives `-1.68719246e-04`
@@ -54,7 +64,7 @@ The narrow, review-safe statement is:
 
 - the same ordered-lattice machinery can support an electrostatic-like scalar
   sign law
-- like charges repel and unlike charges attract
+- like/unlike signed model parameters give opposite centroid shifts at the displayed fixtures; physical charge and force identification are not derived
 - exact opposite-sign superposition cancels to printed precision
 - dipole orientation flips the sign of the response
 - the charge response is linear on the tested range
@@ -68,4 +78,4 @@ The narrow, review-safe statement is:
 
 ## Final Verdict
 
-**retained electrostatics card**
+**conditional electrostatic-like diagnostic; no audit status assigned**

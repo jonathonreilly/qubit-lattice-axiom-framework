@@ -1,43 +1,16 @@
 #!/usr/bin/env python3
-"""
-DM selector shifted-relative-action recovered-packet closure theorem.
+"""Supplied five-lift shifted-relative-action numerical diagnostic.
 
-Question:
-  After the projection and shifted-imaginary sign reductions, does the same
-  exact scalar observable-principle law already select the preferred recovered
-  lift directly on the current recovered selector packet?
-
-Answer:
-  Yes, on the current recovered packet.
-
-  Transport the exact observable-relative-action grammar to any common
-  positive comparison window
-
-      A_mu(H) = H + mu I,
-
-  and evaluate the same LogDet/Bregman scalar against the fixed seed window
-
-      S_mu(H || H_seed)
-        = Tr(A_mu(H_seed)^(-1) A_mu(H))
-          - log det(A_mu(H_seed)^(-1) A_mu(H)) - 3.
-
-  Then on the recovered bank:
-
-    - the preferred recovered lift 0 is the unique minimizer on every audited
-      common positive shift in the current selector packet,
-    - the same preferred lift stays the unique minimizer on a dense admissible
-      stress range from the positivity threshold out to large shifts,
-    - and that same lift is exactly the unique recovered point on the positive
-      side of Im(K_Z3[1,2]) = 0.
-
-  So the review-surface selector residue closes on the current recovered
-  packet. By itself this theorem is not a pure target-free global
-  source-chart/sign theorem from Cl(3)/Z^3 alone, but the companion exact
-  target-surface source-cubic theorem removes any separate native A-BCC
-  residue once the exact PMNS target surface is granted.
+The scalar, seed, shift list, sixty-point grid and one far-shift point are
+stipulated. Floating minimizer/sign checks apply only to those fixtures;
+no continuum, asymptotic, physical selector or global closure is established.
+Documentary text observations and unscored narration supply no proof authority.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ['docs/DM_ABCC_EXACT_TARGET_SURFACE_SOURCE_CUBIC_CLOSURE_THEOREM_NOTE_2026-04-21.md', 'docs/DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_TRIPLET_SIGN_THEOREM_NOTE_2026-04-16.md', 'docs/DM_LEPTOGENESIS_PMNS_CP_BRIDGE_BOUNDARY_NOTE_2026-04-16.md', 'docs/DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md', 'docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_BREAKING_TRIPLET_CP_THEOREM_NOTE_2026-04-15.md', 'docs/DM_NEUTRINO_EXACT_H_SOURCE_SURFACE_PREIMAGE_BUNDLE_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_EXACT_H_SOURCE_SURFACE_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_POSITIVE_POLAR_H_CP_THEOREM_NOTE_2026-04-15.md', 'docs/DM_NEUTRINO_POSTCANONICAL_POLAR_SECTION_NOTE_2026-04-15.md', 'docs/DM_NEUTRINO_SOURCE_AMPLITUDE_THEOREM_NOTE_2026-04-15.md', 'docs/DM_NEUTRINO_SOURCE_BANK_Z3_DOUBLET_BLOCK_SELECTION_OBSTRUCTION_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_AFFINE_POINT_SELECTION_BOUNDARY_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_HALF_PLANE_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_ATOMIC_WITNESS_VOLUME_SELECTOR_NONREALIZATION_NOTE_2026-04-18.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_CARRIER_NORMAL_FORM_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_INTRINSIC_SLOT_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_SHIFT_QUOTIENT_BUNDLE_THEOREM_NOTE_2026-04-16.md', 'docs/DM_NEUTRINO_SOURCE_SURFACE_Z3_DOUBLET_BLOCK_POINT_SELECTION_THEOREM_NOTE_2026-04-16.md', 'docs/DM_SELECTOR_FIRST_SHOULDER_EXIT_THRESHOLD_SUPPORT_NOTE_2026-04-21.md', 'docs/DM_SELECTOR_RELATIVE_ACTION_RECOVERED_BRANCH_SEPARATION_SUPPORT_THEOREM_NOTE_2026-04-21.md', 'docs/DM_SELECTOR_RELATIVE_ACTION_RECOVERED_PROJECTION_SUPPORT_THEOREM_NOTE_2026-04-21.md', 'docs/DM_SELECTOR_SHIFTED_DOUBLET_IMAG_SIGN_SUPPORT_THEOREM_NOTE_2026-04-21.md', 'docs/DM_SELECTOR_SHIFTED_RELATIVE_ACTION_RECOVERED_PACKET_CLOSURE_THEOREM_NOTE_2026-04-21.md', 'docs/DM_SELECTOR_THRESHOLD_STABILIZATION_SUPPORT_THEOREM_NOTE_2026-04-21.md', 'docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md', 'scripts/dm_leptogenesis_exact_common.py', 'scripts/dm_selector_branch_support.py', 'scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py', 'scripts/frontier_dm_leptogenesis_ne_charged_source_response_reduction.py', 'scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py', 'scripts/frontier_dm_leptogenesis_ne_projected_source_triplet_sign_theorem.py', 'scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py', 'scripts/frontier_dm_leptogenesis_pmns_cp_bridge_boundary.py', 'scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py', 'scripts/frontier_dm_leptogenesis_pmns_projector_interface.py', 'scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py', 'scripts/frontier_dm_neutrino_exact_h_source_surface_preimage_bundle_theorem.py', 'scripts/frontier_dm_neutrino_hermitian_bridge_carrier.py', 'scripts/frontier_dm_neutrino_positive_polar_h_cp_theorem.py', 'scripts/frontier_dm_neutrino_postcanonical_polar_section.py', 'scripts/frontier_dm_neutrino_source_bank_z3_doublet_block_selection_obstruction_theorem.py', 'scripts/frontier_dm_neutrino_source_surface_active_affine_point_selection_boundary.py', 'scripts/frontier_dm_neutrino_source_surface_active_half_plane_theorem.py', 'scripts/frontier_dm_neutrino_source_surface_atomic_witness_volume_selector_nonrealization.py', 'scripts/frontier_dm_neutrino_source_surface_carrier_normal_form.py', 'scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py', 'scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py', 'scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem.py', 'scripts/frontier_dm_selector_first_shoulder_exit_threshold_support_2026_04_21.py', 'scripts/frontier_dm_selector_relative_action_recovered_branch_separation_support_2026_04_21.py', 'scripts/frontier_dm_selector_relative_action_recovered_projection_support_2026_04_21.py', 'scripts/frontier_dm_selector_shifted_doublet_imag_sign_support_2026_04_21.py']
 
 import sys
 from pathlib import Path
@@ -106,7 +79,7 @@ def dense_shift_grid(mu_floor: float) -> np.ndarray:
 
 def main() -> int:
     print("=" * 88)
-    print("DM SELECTOR SHIFTED-RELATIVE-ACTION RECOVERED-PACKET CLOSURE THEOREM")
+    print("SUPPLIED SHIFTED-RELATIVE-ACTION FINITE PACKET DIAGNOSTIC")
     print("=" * 88)
 
     rel_note = read("docs/DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md")
@@ -119,25 +92,16 @@ def main() -> int:
     imag_bank = np.array([imag12_from_h(h) for h in hs_bank], dtype=float)
 
     print("\n" + "=" * 88)
-    print("PART 1: THE SAME EXACT SCALAR LAW EXTENDS TO THE COMMON POSITIVE WINDOWS")
+    print("PART 1: STIPULATED SCALAR AND SUPPLIED POSITIVE WINDOWS")
     print("=" * 88)
 
-    check(
-        "The original selector note still records the exact scalar observable-relative-action grammar",
-        "exact relative bosonic action" in flat(rel_note)
-        and "S_rel(H_e || H_seed)" in rel_note
-        and "exact scalar `log|det|` observable" in rel_note,
-    )
+    check('DOCUMENTARY text observation only: The original selector note still records the exact scalar observable-relative-action grammar', 'exact relative bosonic action' in flat(rel_note) and 'S_rel(H_e || H_seed)' in rel_note and ('log det(H_seed^{-1} H_e) - 3' in rel_note))
     check(
         "One common positivity threshold mu_floor exists on the recovered bank",
         mu_floor > 0.0,
         f"mu_floor = {mu_floor:.15f}",
     )
-    check(
-        "So the same scalar law can be transported to the common positive windows A_mu(H) = H + mu I",
-        True,
-        "shifted LogDet / Bregman continuation of the exact seed-relative action",
-    )
+    print("  [INFO] The shifted scalar functional is stipulated; its physical selection is not derived.")
 
     print("\n" + "=" * 88)
     print("PART 2: EVERY AUDITED COMMON POSITIVE SHIFT PICKS THE SAME PREFERRED LIFT")
@@ -169,7 +133,7 @@ def main() -> int:
     )
 
     print("\n" + "=" * 88)
-    print("PART 3: THE SAME MINIMIZER PERSISTS ON A DENSE ADMISSIBLE STRESS RANGE")
+    print("PART 3: SIXTY SUPPLIED GRID POINTS AND ONE LARGE-SHIFT POINT")
     print("=" * 88)
 
     worst_mu = None
@@ -185,7 +149,7 @@ def main() -> int:
             worst_margin = float(margin)
 
     check(
-        "On the dense admissible stress range from the positivity edge to large shifts, the same unique minimizer persists",
+        "At the sixty supplied grid points, the same unique finite-bank minimizer is observed",
         dense_ok,
         f"worst dense margin = {worst_margin:.12f} at mu = {worst_mu:.15f}",
     )
@@ -193,21 +157,17 @@ def main() -> int:
     large_vals = np.array([shifted_relative_action_to_seed(h, large_mu) for h in hs_bank], dtype=float)
     large_idx, large_margin = unique_argmin(large_vals)
     check(
-        "Even in the far-shift asymptotic regime, lift 0 remains the unique minimizer",
+        "At the single supplied mu_floor+1e6 point, lift 0 is the finite-bank minimizer",
         large_idx == 0 and large_margin > 1.0e-18,
         f"(large_mu, margin)=({large_mu:.1f}, {large_margin:.12e})",
     )
 
     print("\n" + "=" * 88)
-    print("PART 4: THE SAME EXACT SCALAR LAW ACTIVATES THE POSITIVE ODD DOUBLET SIDE")
+    print("PART 4: SUPPLIED SCALAR MINIMIZER AND FINITE DOUBLEt SIGN COMPARISON")
     print("=" * 88)
 
     positive_idx = np.where(imag_bank > 0.0)[0]
-    check(
-        "The earlier packet note still records that only recovered lift 0 lies on the positive side of Im(K_Z3[1,2]) = 0",
-        "lift `0`: `Im(K_Z3[1,2]) > 0`" in sign_note
-        and "lifts `1,2,3,4`: `Im(K_Z3[1,2]) < 0`" in sign_note,
-    )
+    check('DOCUMENTARY text observation only: The earlier packet note still records that only recovered lift 0 lies on the positive side of Im(K_Z3[1,2]) = 0', 'lift `0`: `Im(K_Z3[1,2]) > 0`' in sign_note and 'lifts `1,2,3,4`: `Im(K_Z3[1,2]) < 0`' in sign_note)
     check(
         "Exactly one recovered lift has positive shifted-imaginary doublet mixing",
         len(positive_idx) == 1 and int(positive_idx[0]) == 0,
@@ -223,38 +183,19 @@ def main() -> int:
     print("PART 5: SCIENTIFIC CONSEQUENCE")
     print("=" * 88)
 
+    check('DOCUMENTARY text observation only: The projection note still records that the exact internal selector already has the same preferred recovered image', 'exact observable-relative-action law' in flat(proj_note) and 'preferred recovered lift `0`' in flat(proj_note))
     check(
-        "The projection note still records that the exact internal selector already has the same preferred recovered image",
-        "exact observable-relative-action law" in flat(proj_note) and "preferred recovered lift `0`" in flat(proj_note),
-    )
-    check(
-        "So on the current recovered selector packet, the remaining review-surface selector residue is closed by the same exact scalar law",
+        "The supplied scalar functional selects lift0 in the finite tested packet",
         audited_ok and dense_ok and len(positive_idx) == 1 and int(positive_idx[0]) == 0,
         "packet-local closure only",
     )
-    check(
-        "The companion exact-target theorem removes any separate native A-BCC residue once the PMNS target surface is granted",
-        "no separate native branch-choice residue remains" in flat(exact_target)
-        or "A-BCC is already downstream of the native chamber plus the coefficient-free source-cubic law" in flat(exact_target),
-        "pure target-free global sign/source-chart derivation remains outside this theorem alone",
-    )
+    check('DOCUMENTARY text observation only: The companion finite table keeps physical selection and completeness open', 'It neither derives that selector nor removes physical branch-choice obligations.' in flat(exact_target) or 'This is conditional on a separate positivity selector.' in flat(exact_target), 'pure target-free global sign/source-chart derivation remains outside this theorem alone')
 
     print("\n" + "=" * 88)
     print("RESULT")
     print("=" * 88)
-    print("  On the current recovered selector packet, the same exact scalar")
-    print("  observable-principle law already closes point selection.")
-    print("  After transporting the seed-relative LogDet/Bregman law to the common")
-    print("  positive windows A_mu(H)=H+mu I, the preferred recovered lift 0 is the")
-    print("  unique minimizer across the full audited shift family and on a dense")
-    print("  admissible stress range, and it is exactly the unique recovered point")
-    print("  with Im(K_Z3[1,2]) > 0.")
-    print("  So the review-surface DM selector residue is closed on the current")
-    print("  recovered packet. By itself this theorem is not a pure target-free")
-    print("  global sign/source-chart theorem, but the companion exact-target")
-    print("  source-cubic theorem removes any separate native A-BCC residue once")
-    print("  the PMNS target surface is granted.")
-    print()
+    print("Finite supplied-bank comparisons only: SHIFT_OFFSETS, sixty grid points and one far point.")
+    print("No continuum/asymptotic theorem, physical selector or exhaustive closure follows.")
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     return 0 if FAIL_COUNT == 0 else 1
 

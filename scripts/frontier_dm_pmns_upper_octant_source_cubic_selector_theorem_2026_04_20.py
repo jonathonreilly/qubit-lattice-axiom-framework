@@ -1,25 +1,13 @@
 #!/usr/bin/env python3
-"""
-DM PMNS upper-octant / source-cubic selector theorem.
-
-Question:
-  After chamber completeness and parity reduction, is there now an exact law
-  that selects the physical sigma_hier branch on the active chamber?
-
-Answer:
-  Yes.  The physical branch is picked by the small coefficient-free system
-
-      s23^2 > 1/2,
-      I_src(H) > 0,
-
-  where I_src(H) = Im(H_12 H_23 H_31).
-
-  The upper-octant chamber law removes the lower-octant mu<->tau partners, and
-  the source cubic then selects Basin 1 uniquely among the surviving chamber
-  roots.  Therefore sigma_hier = (2,1,0), and sin(delta_CP) < 0 follows.
+"""Finite supplied three-entry PMNS bank and stipulated source-cubic filter.
+The target, bank and I_src>0 condition are supplied. Numerical bisection
+is a branch candidate, not a global threshold or physical selection proof.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ['docs/DM_PMNS_UPPER_OCTANT_SOURCE_CUBIC_SELECTOR_THEOREM_NOTE_2026-04-20.md', 'scripts/frontier_pmns_theta23_upper_octant_chamber_closure_prediction.py', 'scripts/frontier_sigma_hier_uniqueness_theorem.py']
 
 import math
 
@@ -96,11 +84,11 @@ def central_theta23_threshold() -> float:
 
 def main() -> int:
     print("=" * 88)
-    print("DM PMNS UPPER-OCTANT / SOURCE-CUBIC SELECTOR THEOREM")
+    print("SUPPLIED THREE-BANK UPPER-OCTANT / SOURCE-CUBIC DIAGNOSTIC")
     print("=" * 88)
 
     print()
-    print("Part 1: the chamber law forces the upper octant")
+    print("Part 1: numerical threshold candidate on the supplied branch")
     threshold = central_theta23_threshold()
     print(f"   central threshold s23^2_min = {threshold:.12f}")
     check("The central theta_23 threshold lies above maximal mixing", threshold > 0.5, f"threshold={threshold:.12f}")
@@ -114,7 +102,7 @@ def main() -> int:
         f"sum={basin1_210['s23sq'] + basin1_201['s23sq']:.12f}",
     )
     check(
-        "At fixed H, the mu<->tau partner flips the PMNS CP sign",
+        "At the supplied fixed H, swapping the mu/tau row labels flips the computed CP sign",
         basin1_210["sin_dcp"] * basin1_201["sin_dcp"] < 0.0,
         f"sin_dcp=({basin1_210['sin_dcp']:+.12f},{basin1_201['sin_dcp']:+.12f})",
     )
@@ -125,7 +113,7 @@ def main() -> int:
     )
 
     print()
-    print("Part 2: exact chamber-root upper-octant survivors")
+    print("Part 2: upper-octant comparisons on the supplied three-entry bank")
     upper_octant_survivors: list[tuple[str, tuple[int, int, int], float, float]] = []
     for name, point in CHAMBER_ROOTS.items():
         for perm in (SIGMA_210, SIGMA_201):
@@ -135,7 +123,7 @@ def main() -> int:
                 print(f"   {name}, sigma={perm}: s23^2={obs['s23sq']:.12f}, sin_dcp={obs['sin_dcp']:+.12f}")
 
     check(
-        "The exact chamber root set has exactly three upper-octant survivors",
+        "The supplied three-entry bank has the listed three upper-octant labeled entries",
         upper_octant_survivors == [
             ("Basin 1", SIGMA_210, upper_octant_survivors[0][2], upper_octant_survivors[0][3]),
             ("Basin 2", SIGMA_210, upper_octant_survivors[1][2], upper_octant_survivors[1][3]),
@@ -149,7 +137,7 @@ def main() -> int:
     )
 
     print()
-    print("Part 3: source-cubic orientation selects Basin 1 uniquely")
+    print("Part 3: stipulated I_src>0 filters the supplied bank")
     source_signs = {}
     for name, point in CHAMBER_ROOTS.items():
         H = H_mat(*point)
@@ -162,25 +150,25 @@ def main() -> int:
 
     selected = [(name, perm) for name, perm, _, _ in upper_octant_survivors if source_signs[name] > 0.0]
     check(
-        "Among upper-octant chamber roots, I_src > 0 selects Basin 1 uniquely",
+        "Among the supplied upper-octant entries, stipulated I_src > 0 keeps Basin 1",
         selected == [("Basin 1", SIGMA_210)],
         f"selected={selected}",
     )
 
     print()
-    print("Part 4: physical consequence")
+    print("Part 4: resulting supplied-table values, not physical selection")
     final_obs = pmns_data(CHAMBER_ROOTS["Basin 1"], SIGMA_210)
     check(
-        "The selected branch is sigma_hier = (2,1,0)",
+        "The stipulated finite filter returns the label (2,1,0)",
         selected == [("Basin 1", SIGMA_210)],
     )
     check(
-        "The selected branch has negative CP sign",
+        "The filtered supplied point has negative computed sin(delta_CP)",
         final_obs["sin_dcp"] < 0.0,
         f"sin_dcp={final_obs['sin_dcp']:+.12f}",
     )
     check(
-        "The selected branch reproduces the pinned PMNS triple",
+        "The filtered supplied point reproduces the supplied PMNS target",
         abs(final_obs["s12sq"] - 0.307) < 1e-12
         and abs(final_obs["s13sq"] - 0.0218) < 1e-12
         and abs(final_obs["s23sq"] - 0.545) < 1e-12,
@@ -191,15 +179,9 @@ def main() -> int:
     print("=" * 88)
     print("RESULT")
     print("=" * 88)
-    print("  Exact selector system on the active chamber:")
-    print("    - upper-octant chamber law")
-    print("    - source cubic orientation law I_src(H) > 0")
-    print()
-    print("  Consequence:")
-    print("    - Basin 1 is the unique physical chamber root")
-    print("    - sigma_hier = (2,1,0)")
-    print("    - sin(delta_CP) < 0")
-    print("    - the remaining I5 gap is only the PMNS angle derivation itself")
+    print("  Finite supplied-bank/target comparisons with stipulated I_src(H)>0 only.")
+    print("  No exhaustive chamber, physical row assignment, CP-sign selection or I12 closure.")
+    print("  Numerical branch threshold and physical selector/target derivations remain open.")
     print()
     print(f"PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
     return 1 if FAIL_COUNT else 0

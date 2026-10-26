@@ -1,0 +1,226 @@
+{
+  "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
+  "original_delta_base": "727c0a965fa243646762b616c4cd6564363e9798",
+  "files": [
+    {
+      "original_path": ".claude/science/physics-loops/native-mode-correlations-20261019/.gitignore",
+      "original_sha256": "b1579782d4688cf29490f5e927c5f3ddd5bc9b9bba30b4f7db88b7fa6c2cdc0d",
+      "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
+      "archived_path": "archive/native_mode_correlations_20261019/original/.claude/science/physics-loops/native-mode-correlations-20261019/.gitignore.txt",
+      "archived_sha256": "b1579782d4688cf29490f5e927c5f3ddd5bc9b9bba30b4f7db88b7fa6c2cdc0d",
+      "role": "Historical exact original bytes; not current scientific or audit authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-mode-correlations-20261019/ASSUMPTIONS_AND_IMPORTS.md",
+      "original_sha256": "ec6c4fa0b722fe54f79c624ce5230599fdf5f90a060aa37473437087d570dcd0",
+      "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
+      "archived_path": "archive/native_mode_correlations_20261019/original/.claude/science/physics-loops/native-mode-correlations-20261019/ASSUMPTIONS_AND_IMPORTS.md.txt",
+      "archived_sha256": "ec6c4fa0b722fe54f79c624ce5230599fdf5f90a060aa37473437087d570dcd0",
+      "role": "Historical exact original bytes; not current scientific or audit authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-mode-correlations-20261019/CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "089228f1995c0213fee4e7a45604f2af03ca13c373500f3fd509561b9fdc7bcf",
+      "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
+      "archived_path": "archive/native_mode_correlations_20261019/original/.claude/science/physics-loops/native-mode-correlations-20261019/CLAIM_STATUS_CERTIFICATE.md.txt",
+      "archived_sha256": "089228f1995c0213fee4e7a45604f2af03ca13c373500f3fd509561b9fdc7bcf",
+      "role": "Historical exact original bytes; not current scientific or audit authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-mode-correlations-20261019/GOAL.md",
+      "original_sha256": "0d2199f808f6ff628e079a2e92461c4d82a9d5677c3fb032674db9a0d86203e6",
+      "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
+      "archived_path": "archive/native_mode_correlations_20261019/original/.claude/science/physics-loops/native-mode-correlations-20261019/GOAL.md.txt",
+      "archived_sha256": "0d2199f808f6ff628e079a2e92461c4d82a9d5677c3fb032674db9a0d86203e6",
+      "role": "Historical exact original bytes; not current scientific or audit authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-mode-correlations-20261019/HANDOFF.md",
+      "original_sha256": "bb158f75222000e1b4010956532229d1e92be528660b71478b33f26e45903740",
+      "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
+      "archived_path": "archive/native_mode_correlations_20261019/original/.claude/science/physics-loops/native-mode-correlations-20261019/HANDOFF.md.txt",
+      "archived_sha256": "bb158f75222000e1b4010956532229d1e92be528660b71478b33f26e45903740",
+      "role": "Historical exact original bytes; not current scientific or audit authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-mode-correlations-20261019/OPERATIONS.md",
+      "original_sha256": "3d57245eaaa1be2eaba27356df22b8ebbd36f75cec340b3695e723bc3e0e7f16",
+      "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
+      "archived_path": "archive/native_mode_correlations_20261019/original/.claude/science/physics-loops/native-mode-correlations-20261019/OPERATIONS.md.txt",
+      "archived_sha256": "3d57245eaaa1be2eaba27356df22b8ebbd36f75cec340b3695e723bc3e0e7f16",
+      "role": "Historical exact original bytes; not current scientific or audit authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-mode-correlations-20261019/PR_BACKLOG.md",
+      "original_sha256": "c92bf26f003b40d03028bf1838984fe19402692686611f629b24ba3bfb2575c1",
+      "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
+      "archived_path": "archive/native_mode_correlations_20261019/original/.claude/science/physics-loops/native-mode-correlations-20261019/PR_BACKLOG.md.txt",
+      "archived_sha256": "c92bf26f003b40d03028bf1838984fe19402692686611f629b24ba3bfb2575c1",
+      "role": "Historical exact original bytes; not current scientific or audit authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-mode-correlations-20261019/README.md",
+      "original_sha256": "f12e96a34444d767ac490a4af6492c08bb3641d539132c2e84ecd5af58f75dd2",
+      "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
+      "archived_path": "archive/native_mode_correlations_20261019/original/.claude/science/physics-loops/native-mode-correlations-20261019/README.md.txt",
+      "archived_sha256": "f12e96a34444d767ac490a4af6492c08bb3641d539132c2e84ecd5af58f75dd2",
+      "role": "Historical exact original bytes; not current scientific or audit authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-mode-correlations-20261019/REVIEW_HISTORY.md",
+      "original_sha256": "8fe51df7b48cbd8099c9a54c95da8acc9f8aadf7ec9f1708eb26914a7909166e",
+      "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
+      "archived_path": "archive/native_mode_correlations_20261019/original/.claude/science/physics-loops/native-mode-correlations-20261019/REVIEW_HISTORY.md.txt",
+      "archived_sha256": "8fe51df7b48cbd8099c9a54c95da8acc9f8aadf7ec9f1708eb26914a7909166e",
+      "role": "Historical exact original bytes; not current scientific or audit authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-mode-correlations-20261019/SOURCES.json",
+      "original_sha256": "0ebf0a2d45ccd0893c361e5df51ec3878af395a5ed5743a393434c7d618f4810",
+      "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
+      "archived_path": "archive/native_mode_correlations_20261019/original/.claude/science/physics-loops/native-mode-correlations-20261019/SOURCES.json.txt",
+      "archived_sha256": "0ebf0a2d45ccd0893c361e5df51ec3878af395a5ed5743a393434c7d618f4810",
+      "role": "Historical exact original bytes; not current scientific or audit authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-mode-correlations-20261019/STATE.yaml",
+      "original_sha256": "4656b235e85d9a265070412d22cb3502aee810117862d1e2935873b064b7af19",
+      "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
+      "archived_path": "archive/native_mode_correlations_20261019/original/.claude/science/physics-loops/native-mode-correlations-20261019/STATE.yaml.txt",
+      "archived_sha256": "4656b235e85d9a265070412d22cb3502aee810117862d1e2935873b064b7af19",
+      "role": "Historical exact original bytes; not current scientific or audit authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-mode-correlations-20261019/TRACE_GATE.md",
+      "original_sha256": "3ceb660a77c4bbc427456f151986450e56d6e9fe962d74a3d5d7eac162f63eb1",
+      "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
+      "archived_path": "archive/native_mode_correlations_20261019/original/.claude/science/physics-loops/native-mode-correlations-20261019/TRACE_GATE.md.txt",
+      "archived_sha256": "3ceb660a77c4bbc427456f151986450e56d6e9fe962d74a3d5d7eac162f63eb1",
+      "role": "Historical exact original bytes; not current scientific or audit authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-mode-correlations-20261019/compass_sector_basis.py",
+      "original_sha256": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
+      "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
+      "archived_path": "archive/native_mode_correlations_20261019/original/.claude/science/physics-loops/native-mode-correlations-20261019/compass_sector_basis.py.txt",
+      "archived_sha256": "903ece39673616ae809fd44e66a186325252f0c75c77618ec905e7f95f5ef529",
+      "role": "Historical exact original bytes; not current scientific or audit authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-mode-correlations-20261019/compass_sector_solve.py",
+      "original_sha256": "81581fdc6717b264878c10c417804c3551d7c009ab892a2235303dc1e25bb95c",
+      "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
+      "archived_path": "archive/native_mode_correlations_20261019/original/.claude/science/physics-loops/native-mode-correlations-20261019/compass_sector_solve.py.txt",
+      "archived_sha256": "81581fdc6717b264878c10c417804c3551d7c009ab892a2235303dc1e25bb95c",
+      "role": "Historical exact original bytes; not current scientific or audit authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-mode-correlations-20261019/correlations.py",
+      "original_sha256": "a41d2e63c37d31d5d5f82194c8539913f55fdb120c181f3f099852f41d35fa48",
+      "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
+      "archived_path": "archive/native_mode_correlations_20261019/original/.claude/science/physics-loops/native-mode-correlations-20261019/correlations.py.txt",
+      "archived_sha256": "a41d2e63c37d31d5d5f82194c8539913f55fdb120c181f3f099852f41d35fa48",
+      "role": "Historical exact original bytes; not current scientific or audit authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-mode-correlations-20261019/diagnostic_controls.py",
+      "original_sha256": "1219f2375641e379648ce7ebbf8a452dc64c00b0b0e4603ee72d360532bf39f9",
+      "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
+      "archived_path": "archive/native_mode_correlations_20261019/original/.claude/science/physics-loops/native-mode-correlations-20261019/diagnostic_controls.py.txt",
+      "archived_sha256": "1219f2375641e379648ce7ebbf8a452dc64c00b0b0e4603ee72d360532bf39f9",
+      "role": "Historical exact original bytes; not current scientific or audit authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-mode-correlations-20261019/exact_cube_poles.py",
+      "original_sha256": "5c7c90762722337011e8ee333e9299d3699337aa9016e2b0f9e6d62d7cbfcc0e",
+      "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
+      "archived_path": "archive/native_mode_correlations_20261019/original/.claude/science/physics-loops/native-mode-correlations-20261019/exact_cube_poles.py.txt",
+      "archived_sha256": "5c7c90762722337011e8ee333e9299d3699337aa9016e2b0f9e6d62d7cbfcc0e",
+      "role": "Historical exact original bytes; not current scientific or audit authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-mode-correlations-20261019/independent_control.py",
+      "original_sha256": "4306bf20801acf7f863dcfe683a25653d9653409cb39685f6cb3cf388bab1f42",
+      "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
+      "archived_path": "archive/native_mode_correlations_20261019/original/.claude/science/physics-loops/native-mode-correlations-20261019/independent_control.py.txt",
+      "archived_sha256": "4306bf20801acf7f863dcfe683a25653d9653409cb39685f6cb3cf388bab1f42",
+      "role": "Historical exact original bytes; not current scientific or audit authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-mode-correlations-20261019/longitudinal.py",
+      "original_sha256": "74a6e3580fee39075a37ad3a392d63c5aed634fbe4e8ef0a430fc48981a13c2a",
+      "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
+      "archived_path": "archive/native_mode_correlations_20261019/original/.claude/science/physics-loops/native-mode-correlations-20261019/longitudinal.py.txt",
+      "archived_sha256": "74a6e3580fee39075a37ad3a392d63c5aed634fbe4e8ef0a430fc48981a13c2a",
+      "role": "Historical exact original bytes; not current scientific or audit authority"
+    },
+    {
+      "original_path": "logs/runner-cache/native_compact_mode.txt",
+      "original_sha256": "eb486df470090ac648e80c15dee2e8f760e745c047b30ebb5b9675ef33cd74a3",
+      "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
+      "archived_path": "archive/native_mode_correlations_20261019/original/logs/runner-cache/native_compact_mode.txt.txt.gz",
+      "archived_sha256": "e1d8bf910f23d99e1c655ea60ac50d1b5eafc679b6ff202b2d72d82722618011",
+      "role": "Historical exact original bytes; not current scientific or audit authority",
+      "encoding": "gzip",
+      "decoded_sha256": "eb486df470090ac648e80c15dee2e8f760e745c047b30ebb5b9675ef33cd74a3"
+    },
+    {
+      "original_path": "logs/runner-cache/native_longitudinal_mode.txt",
+      "original_sha256": "1afe23533a732805ab10cb53c5881a8d8ea0fa96fe08589fbd7677e6cbd67907",
+      "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
+      "archived_path": "archive/native_mode_correlations_20261019/original/logs/runner-cache/native_longitudinal_mode.txt.txt.gz",
+      "archived_sha256": "41a761255ab539b72f3a677ceb5737b178cd7e0a40aadee4544310a5900572c3",
+      "role": "Historical exact original bytes; not current scientific or audit authority",
+      "encoding": "gzip",
+      "decoded_sha256": "1afe23533a732805ab10cb53c5881a8d8ea0fa96fe08589fbd7677e6cbd67907"
+    },
+    {
+      "original_path": "outputs/native_mode_correlations_20261019/correlations.json",
+      "original_sha256": "886a5b7ac636f641174a461b433f74fb53afbcd5aa6fa7b8f92b2f9ac447c647",
+      "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
+      "archived_path": "archive/native_mode_correlations_20261019/original/outputs/native_mode_correlations_20261019/correlations.json.txt",
+      "archived_sha256": "886a5b7ac636f641174a461b433f74fb53afbcd5aa6fa7b8f92b2f9ac447c647",
+      "role": "Historical exact original bytes; not current scientific or audit authority"
+    },
+    {
+      "original_path": "outputs/native_mode_correlations_20261019/environment.json",
+      "original_sha256": "8505f3601e1d091852d7abc47a68b21cd50718acb2b75aed343a92ecfcf799ee",
+      "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
+      "archived_path": "archive/native_mode_correlations_20261019/original/outputs/native_mode_correlations_20261019/environment.json.txt",
+      "archived_sha256": "8505f3601e1d091852d7abc47a68b21cd50718acb2b75aed343a92ecfcf799ee",
+      "role": "Historical exact original bytes; not current scientific or audit authority"
+    },
+    {
+      "original_path": "outputs/native_mode_correlations_20261019/exact_cube_poles.json",
+      "original_sha256": "4dfcda802cf0d27559bf1c3a0c22f7d9b6366fa63847f0e433331bf1e3d099f4",
+      "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
+      "archived_path": "archive/native_mode_correlations_20261019/original/outputs/native_mode_correlations_20261019/exact_cube_poles.json.txt",
+      "archived_sha256": "4dfcda802cf0d27559bf1c3a0c22f7d9b6366fa63847f0e433331bf1e3d099f4",
+      "role": "Historical exact original bytes; not current scientific or audit authority"
+    },
+    {
+      "original_path": "outputs/native_mode_correlations_20261019/longitudinal.json",
+      "original_sha256": "383eeb2f55c44e9bedd7700d2d3e2ab8e5e98a884d258569ed15058b077271ba",
+      "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
+      "archived_path": "archive/native_mode_correlations_20261019/original/outputs/native_mode_correlations_20261019/longitudinal.json.txt",
+      "archived_sha256": "383eeb2f55c44e9bedd7700d2d3e2ab8e5e98a884d258569ed15058b077271ba",
+      "role": "Historical exact original bytes; not current scientific or audit authority"
+    },
+    {
+      "original_path": "scripts/native_compact_mode.py",
+      "original_sha256": "2d3beaf21a7805b902e1cd2df2f653fdb53c86fd9289114ed2f0a072e36ef9a2",
+      "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
+      "archived_path": "archive/native_mode_correlations_20261019/original/scripts/native_compact_mode.py.txt",
+      "archived_sha256": "2d3beaf21a7805b902e1cd2df2f653fdb53c86fd9289114ed2f0a072e36ef9a2",
+      "role": "Historical exact original bytes; not current scientific or audit authority"
+    },
+    {
+      "original_path": "scripts/native_longitudinal_mode.py",
+      "original_sha256": "c960600efc2d42730a3017e52fb0abd4dc036fe92532a2d80cc8cdcce242d610",
+      "original_head": "7324ad87aac1cd0c1334d61025786fa3e57d19d3",
+      "archived_path": "archive/native_mode_correlations_20261019/original/scripts/native_longitudinal_mode.py.txt",
+      "archived_sha256": "c960600efc2d42730a3017e52fb0abd4dc036fe92532a2d80cc8cdcce242d610",
+      "role": "Historical exact original bytes; not current scientific or audit authority"
+    }
+  ]
+}

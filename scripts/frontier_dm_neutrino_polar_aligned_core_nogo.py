@@ -33,6 +33,8 @@ Answer:
 
 from __future__ import annotations
 
+AUDIT_INPUT_PATHS = ['docs/DM_NEUTRINO_POLAR_ALIGNED_CORE_NO_GO_NOTE_2026-04-15.md']
+
 import sys
 from pathlib import Path
 

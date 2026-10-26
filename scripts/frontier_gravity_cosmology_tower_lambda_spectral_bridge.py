@@ -26,12 +26,16 @@ Numerical: with Lambda benchmark = 1.105e-52 m^-2,
   m_TT(2) = 2.93e-33 eV/c^2 (structural scale)
 
 Scope:
-  The retained claim is structural. The parent tower notes do not promote
+  The supplied claim is structural. The parent tower notes do not promote
   these eigenvalues to physical particle masses, so GW mass bounds are
   conditional comparators only.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ['docs/GRAVITY_COSMOLOGY_TOWER_LAMBDA_SPECTRAL_BRIDGE_THEOREM_NOTE_2026-04-25.md', 'docs/COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md', 'docs/GRAVITON_SPECTRAL_TOWER_THEOREM_NOTE_2026-04-24.md', 'docs/VECTOR_GAUGE_FIELD_KK_TOWER_THEOREM_NOTE_2026-04-24.md', 'docs/SCALAR_HARMONIC_TOWER_THEOREM_NOTE_2026-04-24.md']
+
 
 import math
 import sys
@@ -75,11 +79,11 @@ C = 2.99792458e8             # m/s
 EV_PER_J = 6.241509074e18    # eV per J
 
 
-# Numerical comparator used by the retained cosmology lane.
+# Numerical comparator used by the supplied cosmology lane.
 LAMBDA_BENCHMARK = 1.105e-52       # m^-2
 
 
-# Retained spectral tower numerator forms
+# Supplied spectral tower numerator forms
 def TT_numerator(l: int) -> int:
     """Returns l(l+2) - 2 for the TT graviton tower at angular mode l."""
     return l * (l + 2) - 2
@@ -96,7 +100,7 @@ def scalar_numerator(l: int) -> int:
 
 
 def audit_inputs() -> None:
-    banner("Retained inputs (gravity tower + cosmological constant)")
+    banner("Supplied inputs (gravity tower + cosmological constant)")
 
     print(f"  hbar              = {HBAR:.6e} J s")
     print(f"  c                 = {C:.6e} m/s")
@@ -106,7 +110,7 @@ def audit_inputs() -> None:
     check("hbar > 0", HBAR > 0)
     check("c > 0", C > 0)
     check("Lambda benchmark > 0", LAMBDA_BENCHMARK > 0)
-    check("Lambda = 3/R^2 (retained)",
+    check("Lambda = 3/R^2 (supplied)",
           rel_close(3.0 / (math.sqrt(3.0 / LAMBDA_BENCHMARK) ** 2),
                     LAMBDA_BENCHMARK))
 
@@ -301,7 +305,19 @@ def audit_summary() -> None:
     print("    gravity-tower particle interpretation is separately promoted.")
 
 
+def check_comparison_radius_scope() -> None:
+    """A supplied comparison radius does not equal every evolving slice."""
+    ell = 1.0
+    Lambda = 3.0 / ell**2
+    slice_radius = 2.0 * ell
+    slice_gap = 3.0 / slice_radius**2
+    check("minimum/comparison slice agrees", 3.0 / ell**2 == Lambda)
+    check("evolving slice counterexample: a=2ell gives Lambda/4", slice_gap == Lambda/4 and slice_gap != Lambda)
+
+
 def main() -> int:
+    check_comparison_radius_scope()
+    print("Conditional comparison R=ell; no inherited closure or physical-slice identity.")
     print("=" * 88)
     print("Gravity-cosmology spectral tower Lambda-bridge theorem audit")
     print("See docs/GRAVITY_COSMOLOGY_TOWER_LAMBDA_SPECTRAL_BRIDGE_THEOREM_NOTE_2026-04-25.md")

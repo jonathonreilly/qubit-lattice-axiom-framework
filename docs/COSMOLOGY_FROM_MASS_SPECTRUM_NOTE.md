@@ -5,14 +5,14 @@
 
 
 **Date:** 2026-04-17
-**Status:** bounded/conditional cascade; support pieces consolidated; open
-lane is promotion of `eta` from DM-gate support to an audit-ratified theorem.
+**Status:** bounded/conditional cascade; supplied arithmetic with imported eta.
+Physical selector, supported branch and yield/readout remain unresolved.
 **Primary runner:** `scripts/frontier_cosmology_from_mass_spectrum.py`
 **Depends on:** [`NEUTRINO_MASS_DERIVED_NOTE.md`](NEUTRINO_MASS_DERIVED_NOTE.md)
 (Phase 4), [`OMEGA_LAMBDA_DERIVATION_NOTE.md`](OMEGA_LAMBDA_DERIVATION_NOTE.md)
 (cascade chain),
 [`DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17.md`](DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17.md)
-(eta support package), and
+(conditional PMNS fit/path context, not eta support), and
 [`DM_NEUTRINO_ATMOSPHERIC_SCALE_THEOREM_NOTE_2026-04-15.md`](DM_NEUTRINO_ATMOSPHERIC_SCALE_THEOREM_NOTE_2026-04-15.md)
 (neutrino-sector scale support).
 
@@ -68,8 +68,9 @@ imported (`eta`) + one bounded (`alpha_GUT`)** plus flatness.
 ### 2026-06-06 dependency-edge repair
 
 The current audit blocker asked for explicit dependency edges for the named
-mass/cosmology cascade authorities if they remain load-bearing. They do remain
-load-bearing for this conditional cascade, so they are listed here as
+mass/cosmology cascade authorities if they remain load-bearing. The numerical cascade inputs retain their own scope. The flagship is now
+context only: it owns a supplied PMNS fit dependency and one exact affine
+segment, not eta transport or a supported yield branch. The links remain as
 markdown-linked one-hop source edges:
 
 - [`NEUTRINO_MASS_DERIVED_NOTE.md`](NEUTRINO_MASS_DERIVED_NOTE.md) — Phase 4
@@ -77,7 +78,7 @@ markdown-linked one-hop source edges:
 - [`OMEGA_LAMBDA_DERIVATION_NOTE.md`](OMEGA_LAMBDA_DERIVATION_NOTE.md) —
   downstream `Omega_m -> Omega_Lambda` cascade chain.
 - [`DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17.md`](DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17.md)
-  — eta support package.
+  — conditional PMNS fit/path context; not a source of eta or its yield.
 - [`DM_NEUTRINO_ATMOSPHERIC_SCALE_THEOREM_NOTE_2026-04-15.md`](DM_NEUTRINO_ATMOSPHERIC_SCALE_THEOREM_NOTE_2026-04-15.md)
   — neutrino atmospheric-scale support used by the mass-spectrum cascade.
 
@@ -101,12 +102,14 @@ retained or accepted support before any clean-status re-audit.
 
 - `eta = 6.12e-10` from Planck 2018 CMB + BBN.
 
-The live DM-gate (see `DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17.md`)
-materially supports `eta` without yet closing it:
-
-- exact one-flavor transport branch: `eta/eta_obs = 0.1888`;
-- PMNS reduced-surface support branch: `eta/eta_obs = 1.0`;
-- selector / normalization closure still open.
+The current flagship `DM_FLAGSHIP_CLOSURE_REVIEW_NOTE_2026-04-17.md`
+does not certify eta transport or a yield/readout map. Historical summaries
+quoted `eta/eta_obs = 0.1888` and an exact-support `eta/eta_obs = 1.0`
+candidate; those values remain historical route observations, not current
+proof supplied by this flagship. Physical selection, a supported branch,
+and the transport/readout bridge remain independent open obligations.
+This cascade simply supplies the observed eta value; choosing a PMNS sign
+or fitted point does not establish its physical yield.
 
 ### Bounded input (one)
 
@@ -120,7 +123,7 @@ materially supports `eta` without yet closing it:
   k_B = 8 (Phase 4, retained)
     -> B = M_Pl * alpha_LM^8               = 5.58e10 GeV
     -> M_1 = B (1 - alpha_LM/2)            = 5.32e10 GeV
-  eta (imported, with DM-gate support)
+  eta (imported; no yield supplied by the flagship)
     -> Omega_b = 3.6515e-3 * eta_10 / h^2  = 0.0492   (BBN)
   R_base = 31/9 (exact group theory)
     -> Sommerfeld(alpha_GUT) in [1.4, 1.6]
@@ -146,22 +149,22 @@ materially supports `eta` without yet closing it:
 - `R = 5.48` via Sommerfeld with `alpha_GUT` in `[0.03, 0.05]`.  Inside
   that band `R` varies over `[4.8, 5.3]` and `Omega_Lambda` over
   `[0.66, 0.71]`, comfortably containing the observed `0.685`.
-- `eta` remains imported on the live cosmology surface despite the
-  DM-gate support package.
+- `eta` remains imported on the live cosmology surface; the flagship
+  supplies no physical yield or eta-retirement result.
 
 ## What Phase 5 conditionally closes
 
-If `eta` is promoted from DM-gate support to a retained theorem (Phase 5b),
+If a justified physical derivation supplies `eta` (Phase 5b),
 one imported input disappears. The full cosmological pie-chart row would still
 need the bounded Sommerfeld/`alpha_GUT` continuation and the matter/cosmology
 bridge promoted before it becomes retained closure. The next open lane is
 therefore sharply named:
 
-> **Phase 5b: promote `eta` to retained.**
+> **Phase 5b: resolve the physical eta selector, supported branch and yield.**
 >
-> Candidates (already partly constructed on the branch):
->   1. exact one-flavor theorem-native transport closure;
->   2. PMNS reduced-surface selector closure;
+> Historical route candidates, with no present closure inferred here:
+>   1. one-flavor transport derivation;
+>   2. physically justified PMNS reduced-surface selection and yield;
 >   3. combined transport + selector + normalization integration;
 >   4. bounded freeze-out-bypass support via the candidate structural mass
 >      identity `m_DM = N_sites * v = 16 * v ~ 3940 GeV`, which on the
@@ -177,7 +180,7 @@ therefore sharply named:
 ## What is not claimed
 
 - that `eta` is derived from first principles on this cascade
-  (imported with support);
+  (supplied observational input);
 - that flatness `Omega_total = 1` is independently proved
   (assumed from S^3 or inflation);
 - that the Sommerfeld correction is an exact number rather than a bounded
@@ -198,7 +201,8 @@ Expected result on `main`:
 The runner verifies:
 
 - the Phase 4 retained leptogenesis scale `M_1` (Part 1);
-- the `eta` import status + DM-gate support package (Part 2);
+- the supplied `eta` range (Part 2); historical support labels are not
+  independently checked transport results;
 - `Omega_b` from BBN within 5% of observation (Part 3);
 - `R_base = 31/9` exactly from group theory + self-consistent Sommerfeld
   match (Part 4);
@@ -208,3 +212,12 @@ The runner verifies:
 - cross-link through all five phases of the mass-spectrum attack plan
   (Part 8);
 - a summary of retained / bounded / conditionally-closed content (Part 9).
+
+## Flagship dependency correction (2026-10-23)
+
+Only the historical eta-support attribution is corrected here; the existing
+conditional numerical packet and the September Sommerfeld/comparator
+corrigendum are unchanged. Part8b of the runner checks file presence and
+Markdown links only, not eta science or the cited notes' authority. The full
+earlier note/runner/cache remain at commit
+`fbde8f253c53c44f7265e89ca76dfb0850241373` under their same paths.

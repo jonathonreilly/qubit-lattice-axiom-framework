@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Combined no-go for the charged-lepton y_tau Ward identity.
+"""Historical combined-no-go runner with current supplied-count corrections.
+
+CURRENT SCOPE: numerical checks below test supplied examples. Literal True
+checks and ledger/status observations are documentary assertions, not proofs.
+The historical global-exhaustion argument described below is unvalidated by
+this execution; it must not be inferred from the PASS total.
 
 This runner verifies the structural facts behind
 `docs/CHARGED_LEPTON_Y_TAU_WARD_COMBINED_NO_GO_NOTE_2026-05-10.md`.
@@ -39,6 +44,12 @@ charged-lepton input is read.
 """
 
 from __future__ import annotations
+
+# AUDIT_TIMEOUT_SEC: 120
+AUDIT_INPUT_PATHS = (
+    "docs/CHARGED_LEPTON_Y_TAU_WARD_COMBINED_NO_GO_NOTE_2026-05-10.md",
+    "docs/CKM_KOIDE_CROSS_SECTOR_Z3_CLOSURE_THEOREM_NOTE_2026-04-25.md",
+)
 
 import json
 import math
@@ -388,35 +399,33 @@ def part_m4_anomaly_does_not_pin_yukawa() -> None:
 
 
 def part_m5_cross_sector_is_integer() -> None:
-    """N_gen = N_color = 3 is integer-counting, not a Yukawa-coefficient identity.
+    """Compare supplied orbit degeneracy and color-index count, both three.
 
-    Per CKM_KOIDE_CROSS_SECTOR_Z3_CLOSURE_THEOREM_NOTE_2026-04-25.md
-    boundary statement: "this is numerical agreement of two
-    target-class readouts, not a charged-lepton Koide theorem and not
-    a structural unification."
+    Physical generation/color identification and a common origin remain open.
+    The cross-sector note supplies no Yukawa-coefficient identity.
     """
     print()
     print("=" * 78)
-    print("PART M5: N_gen = N_color = 3 IS INTEGER-COUNTING (NOT YUKAWA)")
+    print("PART M5: SUPPLIED ORBIT AND COLOR-INDEX COUNTS (NOT PHYSICAL IDENTIFICATION)")
     print("=" * 78)
 
-    N_gen = 3
-    N_color = 3
+    N_gen = 3  # Legacy variable name: supplied orbit degeneracy, not generations.
+    N_color = 3  # Supplied color-index count, not a derived QCD identification.
 
     check(
-        "N_gen = 3 (retained, three-generation matter cluster)",
+        "Supplied orbit degeneracy is 3",
         N_gen == 3,
-        "anomaly-forced + hw=1",
+        "physical generation identification remains open",
     )
     check(
-        "N_color = 3 (retained, CKM_MAGNITUDES_STRUCTURAL_COUNTS)",
+        "Supplied color-index count is 3",
         N_color == 3,
-        "QCD color count",
+        "physical QCD identification remains open",
     )
     check(
-        "N_gen = N_color = 3 (integer equality)",
+        "Supplied counts agree at 3 (integer equality only)",
         N_gen == N_color and N_gen == 3,
-        "integer-valued retained equality",
+        "no common origin or Yukawa identity follows",
     )
 
     # Auxiliary numerical agreement:
@@ -429,12 +438,8 @@ def part_m5_cross_sector_is_integer() -> None:
         f"aux = {aux_gen} = 2/9",
     )
 
-    # The note's own boundary statement: this is NOT a Yukawa identity
-    check(
-        "Boundary: N_gen = N_color closure does NOT derive Yukawa coefficient",
-        True,
-        "per CKM_KOIDE_CROSS_SECTOR boundary statement",
-    )
+    print("  SCOPE: supplied-count equality does not establish a Yukawa identity; "
+          "physical identification and common origin remain open.")
 
 
 # ============================================================================
@@ -443,40 +448,30 @@ def part_m5_cross_sector_is_integer() -> None:
 
 
 def part_m6_hw_eq_1_no_yukawa_link() -> None:
-    """Cl(3) acts on 8-dim spinor space with hw = 1 generation structure.
+    """Separate the eight-element algebra basis from supplied corner counting.
 
-    No retained framework content connects hw = 1 to Yukawa coefficient
-    values quantitatively. The BAE Probe 23 lepton-triplet C_3 cycle
-    note exists at probe tier (bounded_theorem) but is not retained.
+    hw denotes Hamming weight, not a highest-weight generation assignment.
+    Neither observation establishes physical species or Yukawa coefficients.
     """
     print()
     print("=" * 78)
-    print("PART M6: hw = 1 THREE-GENERATION HAS NO RETAINED YUKAWA CONNECTION")
+    print("PART M6: ALGEBRA DIMENSION AND SUPPLIED HAMMING WEIGHT")
     print("=" * 78)
 
-    # Cl(3) dimensional facts
-    cl3_dim = 2 ** 3  # = 8
+    cl3_dim = 2 ** 3
     check(
-        "Cl(3) Clifford algebra has dim 2^3 = 8",
+        "Cl(3) Clifford algebra has dim 2^3 = 8 (not spinor dimension)",
         cl3_dim == 8,
-        f"dim = {cl3_dim}",
+        f"algebra basis dimension = {cl3_dim}",
     )
-
-    # hw = 1 retained as the highest-weight assignment (gauge cluster)
     hw = 1
     check(
-        "hw = 1 retained on three-generation matter cluster",
+        "Supplied Wilson-corner Hamming weight is 1",
         hw == 1,
-        "anomaly-forced + hw=1 structural assignment",
+        "input choice; no physical generation or species identification",
     )
-
-    # No retained content connects hw to Yukawa value
-    # (this is the negative claim — verified by survey absence)
-    check(
-        "No retained 'hw = 1 -> Yukawa coefficient' identity in framework",
-        True,
-        "post-2026-04-28 survey confirms absence (BAE Probe 23 is probe tier, not retained)",
-    )
+    print("  SCOPE: these supplied counts do not determine Yukawa values. "
+          "No exhaustive absence theorem is tested here.")
 
 
 # ============================================================================
@@ -572,7 +567,7 @@ def part_n5_execution_certificate() -> None:
 def main() -> int:
     print("=" * 78)
     print("CHARGED-LEPTON y_tau WARD IDENTITY COMBINED NO-GO")
-    print("Verification of Cycles 2 + 3 + 4 + 5 combined obstruction")
+    print("Supplied-example checks and documentary observations; global exhaustion unvalidated")
     print("=" * 78)
 
     part_sa_a_color_fierz_factor()
@@ -581,12 +576,11 @@ def main() -> int:
     part_m4_anomaly_does_not_pin_yukawa()
     part_m5_cross_sector_is_integer()
     part_m6_hw_eq_1_no_yukawa_link()
-    part_survey_prerequisites_absent()
-    part_n5_execution_certificate()
+    print("Historical ledger surveys are not executed; no current authority or exhaustion finding is made.")
 
     print()
     print("=" * 78)
-    print(f"COMBINED NO-GO VERIFICATION: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
+    print(f"SUPPLIED/LEGACY CHECK TOTAL (NOT NO-GO CERTIFICATION): PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     print("=" * 78)
 
     # Class-A summary asserts: structural facts that combine into the no-go

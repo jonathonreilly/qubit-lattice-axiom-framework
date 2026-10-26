@@ -1,62 +1,40 @@
 #!/usr/bin/env python3
-"""
-Selector the PMNS-closure theorem: PMNS angles as f(H(m, delta, q_+))
-— retained map with bounded P3 chamber package.
+"""Conditional PMNS map and finite fit on a supplied affine Hermitian chart.
 
-Branch: (off ).
+H(m, delta, q_+) = H_base + m T_m + delta T_delta + q_+ T_q,
+with supplied constants gamma=1/2, E1=sqrt(8/3), E2=sqrt(8)/3 and
+chamber q_+ + delta >= E1. The matrices below define this calculation;
+their physical selection is not derived by this runner.
 
-This runner builds the P3 lane identified by the observable-bank exhaustion
-theorem: construct the retained PMNS map
-(theta_12, theta_13, theta_23, delta_CP) = f(H(m, delta, q_+))
-on the live DM-neutrino source-oriented sheet, then pin the chamber point
-conditionally using the observed PMNS angles plus the imposed branch-choice
-rule.
+The charged-lepton axis basis U_e=I and row permutation (2,1,0) are
+separate supplied choices. Eigenvector columns are sorted by ascending
+H eigenvalue; permuting flavor rows is distinct from sorting those columns.
+At nondegenerate spectra and nonzero angle denominators the resulting
+unitary defines rephasing-invariant angles and a phase using atan2.
+Singular phase denominators return NaN; no globally smooth eigenbasis map
+across spectral degeneracies is asserted.
 
-Attack line L1 (direct diagonalization). The retained theorem
-DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_AFFINE_POINT_SELECTION_BOUNDARY gives an
-explicit 3x3 Hermitian H(m, delta, q_+) on the observable space H_hw=1:
+Sixty seeded finite starts and local refinement fit the historical targets
+(s12^2,s13^2,s23^2)=(0.307,0.0218,0.545). The search reports its actual
+accepted starts and distinct rounded candidates. It is not an exhaustive
+uniqueness proof or proof of Jacobian nonsingularity. A scipy-free fallback
+uses one local initial point and supplies no multistart evidence.
 
-  H(m, delta, q_+) = H_base + m T_m + delta T_delta + q_+ T_q
-
-with retained H_base, T_m, T_delta, T_q and (gamma, E1, E2) = (1/2,
-sqrt(8/3), sqrt(8)/3). By the retained Z_3 trichotomy plus the Higgs Z_3
-charge gauge-redundancy theorem, the charged-lepton basis on `H_hw=1`
-coincides with the generation-index axis basis up to right-basis relabeling,
-so the PMNS matrix is the eigenbasis unitary of H evaluated on the axis
-basis, with a canonical row permutation that orders the eigenvectors by the
-hierarchy identification (electron <-> highest H-eigenvalue, muon
-<-> middle, tau <-> lowest). This row ordering closes only conditionally on
-the observational hierarchy pairing used on this branch.
-
-Deliverables verified here:
-
-1. Construction of PMNS(m, delta, q_+) as an explicit retained-atlas map.
-2. Exact invariants: K[0,1] = a_*, K[0,2] = b_* frozen on chamber
-  (chamber-blindness of the singlet-doublet slot coupling).
-3. Chamber-variation of PMNS angles verified across candidate points
-  A, B, C, D, E from the the observable-bank exhaustion theorem atlas.
-4. One chamber solution found in the stated search (m_*, delta_*, q_+*) = (0.6571, 0.9338, 0.7150)
-  that reproduces the PDG 2024 central values
-    sin^2 theta_12 = 0.307, sin^2 theta_13 = 0.0218, sin^2 theta_23 = 0.545
-  to machine precision, pinned from 38 independent random starts.
-5. delta_CP prediction: sin(delta_CP) = -0.9874, delta_CP = 260.88 deg
-  from both rephasing-invariant sine and cosine (conditional on the pin).
-6. Jarlskog |J| = 0.0328, consistent with experimental |J| ~ 0.032-0.033.
-7. PDG range check: all nine |U_PMNS|_{ij} entries lie within the
-  experimental NuFit 5.3 NO 3-sigma ranges at the pinned chamber point.
-
-These checks evaluate a conditional three-angle fit and its phase output.
-They do not derive the branch/hierarchy pairing, prove global uniqueness,
-or grant retained status.
-
-Framework convention: "axiom" means only the single framework axiom
-Cl(3) on Z^3.
+At the located fit (0.657061,0.933806,0.715042), the conditional phase is
+260.88 degrees and |J| approximately 0.0328. Neither is a current
+experimental conclusion. Nine modulus comparisons use supplied historical
+NuFit 5.3 intervals; the J band and phase sign are numerical checks only.
+Five supplied comparison points and sampled Fourier slots are finite
+controls, not certification of the selector derivations behind their names.
+No physical branch, basis, hierarchy pairing or retained status is derived.
 """
 
 from __future__ import annotations
 
 import itertools
 import math
+
+AUDIT_TIMEOUT_SEC = 30
 
 import numpy as np
 
@@ -81,7 +59,7 @@ def check(name: str, condition: bool, detail: str = "", cls: str = "D") -> bool:
 
 
 # ---------------------------------------------------------------------------
-# Retained atlas constants (exact)
+# Supplied chart constants
 # ---------------------------------------------------------------------------
 
 GAMMA = 0.5
@@ -122,10 +100,10 @@ def H(m: float, delta: float, q_plus: float) -> np.ndarray:
 
 
 # ---------------------------------------------------------------------------
-# Retained PMNS map: eigenbasis of H, permuted by the hierarchy pairing
+# Conditional PMNS map: eigenbasis columns and separately supplied flavor rows
 # ---------------------------------------------------------------------------
 
-PMNS_PERMUTATION = (2, 1, 0) # (electron <-> largest eigenvalue, mu, tau)
+PMNS_PERMUTATION = (2, 1, 0) # supplied flavor row ordering; not an eigenvalue-column permutation
 
 
 def pmns_matrix(m: float, delta: float, q_plus: float) -> tuple[np.ndarray, np.ndarray]:
@@ -189,17 +167,17 @@ def observables_from_pmns(P: np.ndarray, w: np.ndarray | None = None) -> dict:
 
 
 # ---------------------------------------------------------------------------
-# Part 1: retained-atlas structural checks on H and K_Z3
+# Part 1: supplied-chart structural checks on H and K_Z3
 # ---------------------------------------------------------------------------
 
 
 def part1_structural_checks() -> None:
   print()
   print("=" * 88)
-  print("Part 1: retained structural checks on H(m, delta, q_+) and K_Z3")
+  print("Part 1: supplied-chart structural checks on H(m, delta, q_+) and K_Z3")
   print("=" * 88)
 
-  # Sample candidate points from the the observable-bank exhaustion theorem survey
+  # Five supplied comparison points from the historical survey
   candidates = [
     ("A Schur-Q", 0.5, math.sqrt(6) / 3.0, math.sqrt(6) / 3.0),
     ("B det-crit", 0.613, 0.964, 1.552),
@@ -300,13 +278,13 @@ def part2_pmns_varies_on_chamber() -> None:
 # Part 3: finite multistart fitted candidate (m_*, delta_*, q_+*)
 # ---------------------------------------------------------------------------
 
-TARGET_S12SQ = 0.307  # PDG 2024 central (NO, compatible with NuFit 5.3 & global fits)
-TARGET_S13SQ = 0.0218 # PDG 2024 central (reactor)
-TARGET_S23SQ = 0.545  # NuFit NO best-fit octant
+TARGET_S12SQ = 0.307  # supplied historical angle target
+TARGET_S13SQ = 0.0218 # supplied historical angle target
+TARGET_S23SQ = 0.545  # supplied historical angle target
 
 
 def chi2_chamber(m: float, delta: float, q_plus: float) -> float:
-  """chi^2 against PDG-central PMNS angles (unit normalization)."""
+  """Unweighted squared residual to supplied historical angles; not statistical chi^2."""
   if q_plus + delta < E1 - 1e-9:
     return 1e12
   obs = pmns_observables(m, delta, q_plus)
@@ -440,18 +418,18 @@ def _newton_fallback_solution() -> tuple[float, float, float]:
 
 
 # ---------------------------------------------------------------------------
-# Part 4: PDG range check at the pinned point
+# Part 4: supplied historical modulus intervals at the fitted point
 # ---------------------------------------------------------------------------
 
 
 def part4_pdg_ranges(m_star: float, d_star: float, q_star: float) -> None:
   print()
   print("=" * 88)
-  print("Part 4: PDG / NuFit 5.3 range check on |U_PMNS| at pinned chamber point")
+  print("Part 4: supplied historical NuFit 5.3 modulus intervals at fitted point")
   print("=" * 88)
 
   obs = pmns_observables(m_star, d_star, q_star)
-  # NuFit 5.3 NO 3-sigma ranges on |U|_ij (approximate; from NuFit 5.3 tables)
+  # Supplied approximate historical NuFit 5.3 NO intervals; not a likelihood
   pdg_lo = np.array(
     [[0.801, 0.513, 0.143],
      [0.234, 0.471, 0.637],
@@ -472,21 +450,21 @@ def part4_pdg_ranges(m_star: float, d_star: float, q_star: float) -> None:
     for j in range(3):
       inside = pdg_lo[i, j] <= U[i, j] <= pdg_hi[i, j]
       check(
-        f"|U_{i+1}{j+1}| in 3-sigma range [{pdg_lo[i,j]:.3f},{pdg_hi[i,j]:.3f}]",
+        f"|U_{i+1}{j+1}| in supplied historical interval [{pdg_lo[i,j]:.3f},{pdg_hi[i,j]:.3f}]",
         inside,
         f"val={U[i,j]:.4f}",
       )
 
 
 # ---------------------------------------------------------------------------
-# Part 5: delta_CP prediction and Jarlskog
+# Part 5: conditional fitted delta_CP and Jarlskog
 # ---------------------------------------------------------------------------
 
 
 def part5_delta_cp(m_star: float, d_star: float, q_star: float) -> None:
   print()
   print("=" * 88)
-  print("Part 5: delta_CP prediction and Jarlskog at pinned chamber point")
+  print("Part 5: conditional fitted delta_CP and Jarlskog at pinned chamber point")
   print("=" * 88)
 
   obs = pmns_observables(m_star, d_star, q_star)
@@ -495,30 +473,28 @@ def part5_delta_cp(m_star: float, d_star: float, q_star: float) -> None:
   print(f" cos(delta_CP)  = {obs['cos_dcp']:+.4f}")
   print(f" delta_CP (deg, atan2) = {obs['dcp_deg']:.2f}")
 
-  # Experimental |J| ~ 0.032-0.033 (1-sigma from PDG/T2K)
+  # Historical numerical band only; no experimental confidence claim
   check(
-    "|Jarlskog| consistent with observed ~0.03",
+    "|Jarlskog| lies in supplied numerical band [0.025,0.040]",
     0.025 <= abs(obs["J"]) <= 0.040,
     f"|J|={abs(obs['J']):.4f}",
   )
-  # Experimental preferred delta_CP in NO: central ~230 deg, 1-sigma wide;
-  # T2K-only fit favors -90 deg / 270 deg, which corresponds to sin(d_CP) ~ -1.
-  # Our prediction sin(d_CP) = -0.987 lies in the T2K preferred region.
+  # Sign control at this conditional candidate; no experimental inference.
   check(
-    "sin(delta_CP) negative (i.e. delta_CP in (180, 360) deg), matching T2K-preferred octant",
+    "sin(delta_CP) negative at supplied fitted candidate",
     obs["sin_dcp"] < 0.0,
   )
 
 
 # ---------------------------------------------------------------------------
-# Part 6: physics cross-checks against prior the observable-bank exhaustion theorem candidates
+# Part 6: finite comparisons against five supplied historical points
 # ---------------------------------------------------------------------------
 
 
 def part6_candidate_cross_check(m_star: float, d_star: float, q_star: float) -> None:
   print()
   print("=" * 88)
-  print("Part 6: cross-check against prior retained candidate selectors")
+  print("Part 6: finite comparison against five supplied historical points")
   print("=" * 88)
 
   candidates = {
@@ -543,31 +519,29 @@ def part6_candidate_cross_check(m_star: float, d_star: float, q_star: float) -> 
       matches.append(label)
 
   check(
-    "pinned (delta_*, q_+*) is STRICTLY inequivalent to every prior retained candidate",
+    "fitted (delta_*, q_+*) differs by >=1e-3 from five supplied points",
     not matches,
     f"matches={matches}",
   )
 
 
 # ---------------------------------------------------------------------------
-# Part 7: retained-note invariants (a_*, b_* exact values)
+# Part 7: numerical Fourier-slot comparisons
 # ---------------------------------------------------------------------------
 
 
 def part7_frozen_slots_closed_form() -> None:
   print()
   print("=" * 88)
-  print("Part 7: closed-form of the frozen singlet-doublet slots a_*, b_*")
+  print("Part 7: sampled singlet-doublet slots a_*, b_*")
   print("=" * 88)
 
-  # Compute a_* = K[0,1] at any chamber point; verify the retained
-  # theorem-grade expression.
+  # Compute a_* = K[0,1] at one supplied chamber point.
   m, d, q = 0.5, math.sqrt(6) / 3.0, math.sqrt(6) / 3.0
   K = UZ3.conj().T @ H(m, d, q) @ UZ3
   a_star = K[0, 1]
   b_star = K[0, 2]
-  # These are exact closed-form numerical invariants of the retained
-  # H_base + T_m + T_delta + T_q structure.
+  # Numerical values for the supplied affine structure.
   print(f" a_* = K[0,1] = {a_star.real:.10f} + i {a_star.imag:.10f}")
   print(f" b_* = K[0,2] = {b_star.real:.10f} + i {b_star.imag:.10f}")
   print(f" |a_*| = {abs(a_star):.10f}")
@@ -577,11 +551,11 @@ def part7_frozen_slots_closed_form() -> None:
   m2, d2, q2 = 0.2, 1.1, 0.9
   K2 = UZ3.conj().T @ H(m2, d2, q2) @ UZ3
   check(
-    "a_* is chamber-blind (retained blindness theorem)",
+    "a_* agrees at two sampled chamber points",
     abs(K2[0, 1] - a_star) < 1e-12,
   )
   check(
-    "b_* is chamber-blind (retained blindness theorem)",
+    "b_* agrees at two sampled chamber points",
     abs(K2[0, 2] - b_star) < 1e-12,
   )
 
@@ -593,14 +567,14 @@ def part7_frozen_slots_closed_form() -> None:
 
 def main() -> int:
   print("=" * 88)
-  print("G1 PHYSICIST-H — PMNS as f(H(m, delta, q_+))")
+  print("CONDITIONAL PMNS MAP AND FINITE FIT ON A SUPPLIED CHART")
   print("=" * 88)
   print()
   print("Attack line: L1 (direct diagonalization of H).")
-  print("PMNS convention: charged-lepton basis = axis basis by the retained")
-  print("Z_3-trichotomy route plus Higgs q_H gauge-redundancy theorem. PMNS is the")
-  print("eigenbasis unitary of H, row-permuted by the hierarchy pairing")
-  print("(electron <-> largest H-eigenvalue, muon <-> middle, tau <-> lowest).")
+  print("Supplied inputs: affine chart, charged-lepton axis basis U_e=I,")
+  print("flavor row permutation (2,1,0), and three historical angle targets.")
+  print("Eigenvector columns are sorted by ascending H eigenvalue.")
+  print("Finite fit and interval checks supply no current experimental likelihood.")
 
   part1_structural_checks()
   part2_pmns_varies_on_chamber()
@@ -622,9 +596,9 @@ def main() -> int:
   print(f" Pinned chamber point (m_*, delta_*, q_+*) = "
      f"({m_star:.6f}, {d_star:.6f}, {q_star:.6f})")
   obs = pmns_observables(m_star, d_star, q_star)
-  print(f" Predicted delta_CP = {obs['dcp_deg']:+.2f} deg (sin = {obs['sin_dcp']:+.4f})")
+  print(f" Conditional fitted delta_CP = {obs['dcp_deg']:+.2f} deg (sin = {obs['sin_dcp']:+.4f})")
   print(f" Jarlskog J     = {obs['J']:+.6f}")
-  print(" selector closure status: BOUNDED on chamber, with A-BCC and sigma_hier open.")
+  print(" Physical source/basis/branch selection and global uniqueness remain open.")
 
   return 0 if FAIL_COUNT == 0 else 1
 

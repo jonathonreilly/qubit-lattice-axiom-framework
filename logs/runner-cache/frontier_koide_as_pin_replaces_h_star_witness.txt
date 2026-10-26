@@ -1,0 +1,69 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_as_pin_replaces_h_star_witness.py
+runner_sha256: f8175d68fd394909a1575055866b86b2cd593533613d84afd901f01977b47fa4
+input_fingerprint_sha256: 778cdd6e6396120df19e29e9f607ac4dabd075bf41c4f916c50daf5df1ea9b5d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.78
+status: ok
+----- stdout -----
+
+========================================================================================
+Supplied phase target and historical ratio comparator
+========================================================================================
+INFO: chart/readout/cone and radian target2/9 are supplied, not physical derivations.
+  Historical ratio comparator r_* = 4.100904169382
+  Reconstructed m_first (solving r(m) = r_*):
+    m_first = -1.1604694701
+    r(m_first) = 4.1009041694  (target 4.100904169382)
+[PASS] A.1 Historical ratio bracket candidate lies within the stated m window
+       m_first = -1.1604694701 (historical reference -1.16046947)
+
+========================================================================================
+Part B — supplied radian target
+========================================================================================
+  Supplied target delta = 0.2222222222222222
+  Supplied-target bracket candidate m_AS (legacy variable name):
+    m_AS = -1.1604434401
+    δ(m_AS) = 0.2222222222  (target 0.2222222222)
+[PASS] B.1 Bracket candidate meets the supplied phase residual threshold
+       m_AS = -1.1604434401 (supplied phase target; no physical derivation)
+
+========================================================================================
+Part C — finite comparison of two supplied prescriptions
+========================================================================================
+  m_first (historical ratio comparator):  -1.1604694701
+  m_AS    (supplied phase target):    -1.1604434401
+  Deviation: 0.002243%
+
+  The checked comparison threshold below is0.01%; equality/uniqueness is not claimed.
+  The phase target and historical ratio are distinct supplied inputs.
+[PASS] C.1 The two detected m candidates differ by less than0.01%
+       |m_first - m_AS| / |m_first| = 0.0022%
+       This is a finite relative-deviation comparison.
+
+  Cross-check: at m_AS, the supplied diagonal ratio r(m_AS) = 4.1009811915
+  Historical r_* = 4.100904169382
+  Deviation: 0.001878%
+[PASS] C.2 At the phase-target candidate the ratio differs from the historical comparator by less than0.01%
+       r(m_AS) = 4.100981 vs r_* = 4.100904 (0.0019%)
+
+========================================================================================
+Part D — scope
+========================================================================================
+INFO: four finite comparisons only. The historical AS-named path is retained for provenance.
+INFO: target, phase convention, generation ordering and physical applicability remain supplied/open.
+
+========================================================================================
+SUMMARY
+========================================================================================
+PASSED: 4/4
+  [PASS] A.1 Historical ratio bracket candidate lies within the stated m window
+  [PASS] B.1 Bracket candidate meets the supplied phase residual threshold
+  [PASS] C.1 The two detected m candidates differ by less than0.01%
+  [PASS] C.2 At the phase-target candidate the ratio differs from the historical comparator by less than0.01%
+
+Finite comparison checks completed; no physical or audit verdict is inferred.
+
+----- stderr -----
+

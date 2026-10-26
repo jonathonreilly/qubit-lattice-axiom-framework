@@ -1,5 +1,7 @@
 # Axiom-First Spectrum Condition (Lattice Analogue) on Cl(3) ⊗ Z^3
 
+**Type:** bounded_theorem
+
 **Date:** 2026-04-29 (citation-graph repair: 2026-05-02; 2026-05-30
 staggered-only-sector rescope: repoint the load-bearing transfer-matrix
 positivity input from the full reflection-positivity umbrella row to the
@@ -18,6 +20,12 @@ any verdict.
 **Cycle:** 1 (Route R7)
 **Runner:** `scripts/axiom_first_spectrum_condition_check.py`
 **Log:** `outputs/axiom_first_spectrum_condition_check_2026-04-29.txt`
+
+**Historical-baseline clarification (2026-10-21):** The April 11 memo
+listed below is a historical baseline reference, not current axiom authority.
+The positive two-step transfer sector, blocked-time normalization and supplied
+gap remain the stated conditions; no new current-axiom derivation follows
+from updating a citation label.
 
 ## Cited authorities (one hop)
 
@@ -299,7 +307,7 @@ that the old `1/a_τ` normalization is exactly `2H`.
 
 ## Citations
 
-- Minimal axiom setup: `docs/MINIMAL_AXIOMS_2026-04-11.md`
+- Historical April 11 setup (not current axiom authority): `docs/MINIMAL_AXIOMS_2026-04-11.md`
 - staggered-only two-step transfer-positivity sector (load-bearing,
   markdown-linked under "Cited authorities"):
   `AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md`,

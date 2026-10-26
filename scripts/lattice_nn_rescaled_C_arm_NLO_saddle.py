@@ -47,6 +47,8 @@ import cmath
 import math
 import sys
 
+AUDIT_TIMEOUT_SEC = 60
+
 
 # ---------------------------------------------------------------------------
 # Harness parameters (frozen from scripts/lattice_nn_deterministic_rescale.py)
@@ -467,7 +469,7 @@ def report() -> int:
             max_abs_res <= 0.05,
         "q^4 / full phase-corrected variance < 1% on fit window":
             all(abs(candidate_b_dV(h)[1] / candidate_b_dV(h)[0]) < 0.01 for h in FIT_HS),
-        "h -> 0 limit recovers C_LO^2 = 6.178":
+        "supplied model at h=1e-6 is close to C_LO^2 (numerical check only)":
             math.isclose(sigma_sq_pred_ab(1e-6) / 1e-6, C_LO_sq(), rel_tol=1e-3),
     }
     all_ok = True

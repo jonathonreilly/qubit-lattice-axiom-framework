@@ -106,11 +106,13 @@ experimental confidence level for the phase or Jarlskog invariant is claimed.
 
 ## Validation and limits
 
-The primary runner reports `PASS=43, FAIL=0` on the repaired source. The phase
-regression checks both invariants in all four quadrants, rephasing invariance,
-complex conjugation and the independent modulus identity. The historical
-inverse-sine implementation fails the quadrant controls. See
-`pmns_scoped_repair_regression_2026_10_21.py` in the scripts directory.
+The primary runner reports `PASS=43, FAIL=0` on the repaired source. The original PR phase regression checked both invariants in all four
+quadrants, rephasing invariance, complex conjugation and the independent
+modulus identity. Its inverse-sine implementation fails the quadrant controls.
+That broader regression is historical evidence recoverable at commit
+`3c90f9860c3bae63ee64949e7178290f789dd982`, path
+`scripts/pmns_scoped_repair_regression_2026_10_21.py`; it is not a landed
+dependency of this scoped fit repair.
 
 The numerical checks also cover Hermiticity, sampled chamber variation,
 fixed-slot comparisons and separation from the five supplied candidate points.
@@ -123,3 +125,12 @@ DM selector gate.
 ```bash
 PYTHONPATH=scripts python3 scripts/frontier_pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem.py
 ```
+
+## Execution receipt and recovery
+
+The current cache is `logs/runner-cache/frontier_pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem.txt`.
+It records the corrected runner with a 30-second cap, not the old execution.
+The original note, runner and cache are recoverable at
+`f24d17d97d372df977476e4a69674577f31af575` under their unchanged paths;
+the intermediate PR versions are at
+`3c90f9860c3bae63ee64949e7178290f789dd982`. No audit status is assigned.

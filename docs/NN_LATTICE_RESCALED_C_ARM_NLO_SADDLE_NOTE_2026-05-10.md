@@ -28,8 +28,9 @@ C_arm_LO = sqrt( L_2 / ( sqrt(2)/c + 2 ) ) = 2.4855
 
 with `c = exp(-BETA pi^2 / 16) = 0.61050`, `L_2 = 2 L_total / 3 = 26.667`.
 The same leading model has `alpha = 1/2`. The empirical four-point
-fit gives `alpha = 0.5256`, so the alpha-residual `0.5256 - 0.5 = 0.026`
-must come from a sub-leading correction that vanishes as `h -> 0`.
+fit gives `alpha = 0.5256`. The alpha-residual `0.5256 - 0.5 = 0.026`
+motivates testing subleading corrections to this supplied model. A finite
+fit does not establish that the measured residual vanishes as `h -> 0`.
 
 The continuum diagnostic measurements directly support a power-law approach
 to the LO constant:
@@ -396,7 +397,8 @@ fraction `1/3`. Bounded-support guards inside the runner check:
 - `|alpha_eff - 0.5256| <= 0.020` (right magnitude band).
 - max per-h `sigma^2` residual `<= 5%`.
 - q^4 divided by the full phase-corrected variance is < 1% on the fit window.
-- `h -> 0` limit recovers `C_LO^2 = 6.178`.
+- at `h = 1e-6`, the supplied model gives `sigma^2/h` numerically close
+  to `C_LO^2 = 6.178`; this guard is not a proof of an empirical limit.
 
 All seven guards PASS at the harness-fixed parameters.
 
@@ -437,5 +439,8 @@ extraction protocol.
 
 The original note, runner and cached output are recoverable byte-for-byte at
 Git commit `f24d17d97d372df977476e4a69674577f31af575` under their unchanged
-repository paths. The linked cached log records that earlier execution and is
-not fresh evidence for this correction. No audit status is changed.
+repository paths. The intermediate PR receipt is separately recoverable at
+`3c90f9860c3bae63ee64949e7178290f789dd982` under the same paths. The linked
+cache is the refreshed execution receipt for the corrected runner, not the
+base-commit historical execution. Its capture binds the actual source and
+inputs; neither receipt changes audit status.

@@ -15,6 +15,9 @@ import re
 import sys
 from pathlib import Path
 
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = ['docs/DM_PMNS_CP_ORIENTATION_PARITY_REDUCTION_NOTE_2026-04-20_NOTE_2026-05-17.md', 'docs/DM_PMNS_CP_ORIENTATION_PARITY_REDUCTION_NOTE_2026-04-20.md']
+
 PASS_COUNT = 0
 FAIL_COUNT = 0
 CLASS_A_HITS = 0
@@ -55,7 +58,7 @@ def grep_count(content: str, needle: str) -> int:
 
 def main() -> int:
     print("=" * 78)
-    print("AUDIT-PREP VERIFIER — dm_pmns_cp_orientation_parity_reduction_note_2026-04-20")
+    print("DOCUMENTARY NAME INVENTORY — no semantic or audit certification")
     print("=" * 78)
 
     if not PARENT_PATH.exists():
@@ -93,7 +96,7 @@ def main() -> int:
 
     if FAIL_COUNT == 0:
         print()
-        print("VERIFIED")
+        print("DOCUMENTARY NAME CHECKS MATCHED; no audit verdict or proof certification")
         return 0
     return 1
 

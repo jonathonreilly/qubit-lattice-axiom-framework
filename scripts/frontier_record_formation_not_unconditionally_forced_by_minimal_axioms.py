@@ -1,35 +1,17 @@
 #!/usr/bin/env python3
-"""Class-A verifier (narrow no-go): the current minimal axioms force generic
-record occurrence through the Record sentence "Records form.", but they do not
-force the formation rule/process/state/site/weight/rate.
+"""Finite unitary controls and current axiom-quotation consistency.
 
-MINIMAL_AXIOMS_2026-06-29, Record (verbatim): "Records form." The same memo
-keeps record-production process and formation rules (which admissible
-possibility a new record locks, at which site, with what weight, or at what
-rate) outside axiom content.
-
-Verifies the narrowed target:
-  (0) the live memo contains the exact occurrence sentence "Records form.";
-  (1) H=0 (trivial dynamics): pointer coherence is preserved for all times, so
-      this unitary surface supplies no formation process/rate;
-  (2) a decoupled H = H_S (x) I + I (x) H_E with H!=0 (no system-environment
-      coupling): coherence is preserved, so no coupling/write rule is forced;
-  (3) a Hamiltonian eigenstate is stationary, so no state-trigger rule is fixed
-      by the Hamiltonian surface alone;
-  (4) CONTRAST: a coupled H on a non-eigenstate decoheres in the toy model;
-  (5) the logical reduction: occurrence is axiom content, but the concrete
-      rule/process/state/site/weight/rate remains downstream.
-
-No new axiom: Lattice, Qubit, Admissibility, and Record plus standard
-finite-dimensional unitary evolution for the witness models. This no-go is
-only on forcing the formation rule/process/state/site/weight/rate from the
-minimal axioms.
+Four model calculations plus two documentary checks; not full framework
+countermodels or a universal formation-rule nonderivability theorem.
 """
 
 from __future__ import annotations
 from pathlib import Path
 import numpy as np
 from scipy.linalg import expm
+
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = ("docs/MINIMAL_AXIOMS_2026-06-29.md",)
 
 PASS = 0
 FAIL = 0
@@ -73,8 +55,9 @@ def rounded(values):
 
 def main() -> int:
     memo = LIVE_MINIMAL_AXIOMS.read_text(encoding="utf-8")
+    operative = memo.split("## The Four Framework Axioms", 1)[1].split("## Qualification", 1)[0]
     print("=" * 78)
-    print("NARROW NO-GO: occurrence is axiom content; formation rule/process/state/site/weight/rate is not  [class A]")
+    print("Finite unitary controls and current-premise inventory; no general no-go")
     print("=" * 78)
     n = 4
     psi0 = np.array([1, 1], complex) / np.sqrt(2)
@@ -84,12 +67,12 @@ def main() -> int:
     # ---- (0) live Record occurrence sentence ----
     print("\n-- live axiom-surface check --")
     check('(0) live MINIMAL_AXIOMS_2026-06-29.md contains the exact Record occurrence sentence "Records form."',
-          "Records form." in memo)
+          "Records form." in operative)
 
     # ---- (1) H=0: no formation process/rate is read off from unitary dynamics ----
     print("\n-- unitary surfaces that do not supply the formation rule/process/state --")
     cohs0 = [coherence(expm(-1j * np.zeros((2 ** n, 2 ** n)) * t) @ psi0) for t in (1, 5, 20)]
-    check("(1) H=0 (trivial dynamics): pointer coherence preserved for all t => no formation process/rate is supplied by this unitary surface",
+    check("(1) H=0 (trivial dynamics): pointer coherence preserved (finite samples of the exact identity evolution)",
           all(abs(c - 0.5) < 1e-9 for c in cohs0), detail=f"coh(t=1,5,20) = {rounded(cohs0)}")
 
     # ---- (2) decoupled H != 0: no coupling/write rule is forced ----
@@ -97,8 +80,8 @@ def main() -> int:
     HE = sum(emb(SZ, k, n) for k in range(1, n))
     Hdec = HS + HE                                    # no S-E coupling term
     cohs_dec = [coherence(expm(-1j * Hdec * t) @ psi0) for t in (1, 5, 20)]
-    check("(2) decoupled H = H_S(x)I + I(x)H_E with H != 0 (no coupling): coherence preserved => "
-          "no site/write coupling rule is forced by non-trivial dynamics alone", all(abs(c - 0.5) < 1e-9 for c in cohs_dec),
+    check("(2) decoupled H = H_S(x)I + I(x)H_E with H != 0 (no coupling): coherence preserved for this supplied local eigenstate => "
+          "no fragment writing in this finite fixture", all(abs(c - 0.5) < 1e-9 for c in cohs_dec),
           detail=f"coh(t=1,5,20) = {rounded(cohs_dec)}")
 
     # ---- (3) a coupled-H EIGENSTATE: stationary, no state-trigger rule ----
@@ -106,39 +89,36 @@ def main() -> int:
     w, V = np.linalg.eigh(Hc)
     eig = V[:, 0]
     cohs_eig = [coherence(expm(-1j * Hc * t) @ eig) for t in (1, 5, 20)]
-    check("(3) an eigenstate of any (even coupled) H is stationary => coherence frozen => no state-trigger formation rule is fixed by H alone",
+    check("(3) an eigenstate of any (even coupled) H is stationary => coherence frozen in the supplied unitary model",
           max(cohs_eig) - min(cohs_eig) < 1e-9)
 
     # ---- (4) contrast: a generic coupled H + non-eigenstate can decohere ----
     print("\n-- contrast: coupled non-eigenstate dynamics can decohere --")
     coh_coupled = coherence(expm(-1j * Hc * 3.0) @ psi0)
-    check("(4) a generic coupled H on a non-eigenstate decoheres (companion contrast); (1)-(3) show the concrete formation mechanism is not forced by unitary structure alone",
+    check("(4) supplied coupled H reduces pointer coherence at this tested time; no asymptotic or framework formation claim",
           coh_coupled < 0.4, detail=f"coupled-H coherence = {coh_coupled:.3f}")
 
-    # ---- (5) the reduction: occurrence is present; formation details remain downstream ----
-    print("\n-- the no-go reduction --")
-    occurrence_is_axiom_content = "Records form." in memo
-    formation_rule_surface_outside = all(needle in memo for needle in (
-        "formation rules (which",
-        "which admissible possibility",
-        "at which site",
-        "with what weight",
-        "at what rate",
-    ))
-    process_outside = "record-production process" in memo
-    state_not_privileged = "A law privileges no states." in memo
-    check("(5) current memo supplies occurrence but leaves formation rule/process/state/site/weight/rate outside axiom content",
-          occurrence_is_axiom_content and formation_rule_surface_outside and process_outside and state_not_privileged)
+    # ---- (5) documentary consistency, not a logical independence proof ----
+    normalized = " ".join(operative.split())
+    distribution_clause = (
+        "For each site, the probability distribution over the possibilities is "
+        "determined by, and varies with, the nearest-neighbor conditions."
+    )
+    check("(5) documentary: Admissibility supplies a local distribution; unrecorded sites cannot be read",
+          distribution_clause in normalized and "A site with no record cannot be read." in normalized)
 
     print("\n" + "=" * 78)
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL:
-        print("VERDICT: narrowed formation-rule no-go FAILED.")
+        print("VERDICT: finite control or source-consistency check failed.")
         return 1
-    print("VERDICT: the live Record axiom supplies generic occurrence via \"Records form.\", while "
-          "formation rule/process/state/site/weight/rate remains unforced by the minimal axiom "
-          "surface. The unitary checks preserve the old computations as process/rule negative "
-          "controls, and the coupled non-eigenstate case remains contrast only.")
+    print("per_element: In the supplied H=0 finite model, identity evolution fixes every state amplitude and density-matrix entry; this is not a framework Record-event criterion.")
+    print("per_site: Partial traces of that unchanged finite state are unchanged at each of its four sites; the model supplies no formation-site distribution.")
+    print("per_mode: A supplied eigenstate evolves by a global phase, leaving its density matrix stationary; this does not exclude formation mechanisms outside this unitary fixture.")
+    print("per_block: The supplied decoupled system/environment Hamiltonian factorizes its evolution; the tested local eigenstate retains coherence without deriving a Record process.")
+    print("lattice_wide: These controls concern one four-qubit tensor-product fixture only; no infinite-lattice, all-admissible-model, or full-framework formation/no-formation conclusion is established.")
+    print("Scope: four finite unitary controls and two documentary checks pass. "
+          "These are not full framework countermodels or a physical formation theorem.")
     return 0
 
 

@@ -1,0 +1,256 @@
+{
+  "runner": "scripts/frontier_dm_split2_interval_certified_dominance_closure_2026_04_21.py",
+  "note": "docs/DM_SPLIT2_INTERVAL_CERTIFIED_DOMINANCE_CLOSURE_THEOREM_NOTE_2026-04-21.md",
+  "actual_cap_sec": 120,
+  "helpers": [
+    "scripts/dm_leptogenesis_exact_common.py",
+    "scripts/dm_selector_branch_support.py",
+    "scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py",
+    "scripts/frontier_dm_leptogenesis_ne_charged_source_response_reduction.py",
+    "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py",
+    "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
+    "scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py",
+    "scripts/frontier_dm_neutrino_exact_h_source_surface_preimage_bundle_theorem.py",
+    "scripts/frontier_dm_neutrino_hermitian_bridge_carrier.py",
+    "scripts/frontier_dm_neutrino_positive_polar_h_cp_theorem.py",
+    "scripts/frontier_dm_neutrino_postcanonical_polar_section.py",
+    "scripts/frontier_dm_neutrino_source_bank_z3_doublet_block_selection_obstruction_theorem.py",
+    "scripts/frontier_dm_neutrino_source_surface_active_affine_point_selection_boundary.py",
+    "scripts/frontier_dm_neutrino_source_surface_active_half_plane_theorem.py",
+    "scripts/frontier_dm_neutrino_source_surface_carrier_normal_form.py",
+    "scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py",
+    "scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py",
+    "scripts/frontier_dm_neutrino_source_surface_split2_edge_profile_transition_candidate.py",
+    "scripts/frontier_dm_neutrino_source_surface_split2_low_slack_transport_incompatibility_candidate.py",
+    "scripts/frontier_dm_neutrino_source_surface_split2_lower_repair_upper_face_extremals_candidate.py",
+    "scripts/frontier_dm_neutrino_source_surface_split2_upper_face_local_neighborhoods_candidate.py",
+    "scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem.py"
+  ],
+  "declared_inputs": [
+    "docs/DM_NEUTRINO_SOURCE_SURFACE_CARRIER_SIDE_CONCLUSION_NOTE_2026-04-18.md",
+    "docs/DM_SPLIT2_DENSE_GRID_LIPSCHITZ_DOMINANCE_SUPPORT_NOTE_2026-04-21.md",
+    "docs/DM_SPLIT2_INTERVAL_CERTIFIED_DOMINANCE_CLOSURE_THEOREM_NOTE_2026-04-21.md",
+    "scripts/dm_leptogenesis_exact_common.py",
+    "scripts/dm_selector_branch_support.py",
+    "scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py",
+    "scripts/frontier_dm_leptogenesis_ne_charged_source_response_reduction.py",
+    "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py",
+    "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
+    "scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py",
+    "scripts/frontier_dm_neutrino_exact_h_source_surface_preimage_bundle_theorem.py",
+    "scripts/frontier_dm_neutrino_hermitian_bridge_carrier.py",
+    "scripts/frontier_dm_neutrino_positive_polar_h_cp_theorem.py",
+    "scripts/frontier_dm_neutrino_postcanonical_polar_section.py",
+    "scripts/frontier_dm_neutrino_source_bank_z3_doublet_block_selection_obstruction_theorem.py",
+    "scripts/frontier_dm_neutrino_source_surface_active_affine_point_selection_boundary.py",
+    "scripts/frontier_dm_neutrino_source_surface_active_half_plane_theorem.py",
+    "scripts/frontier_dm_neutrino_source_surface_carrier_normal_form.py",
+    "scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py",
+    "scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py",
+    "scripts/frontier_dm_neutrino_source_surface_split2_edge_profile_transition_candidate.py",
+    "scripts/frontier_dm_neutrino_source_surface_split2_low_slack_transport_incompatibility_candidate.py",
+    "scripts/frontier_dm_neutrino_source_surface_split2_lower_repair_upper_face_extremals_candidate.py",
+    "scripts/frontier_dm_neutrino_source_surface_split2_upper_face_local_neighborhoods_candidate.py",
+    "scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem.py"
+  ],
+  "helper_caps": [
+    {
+      "path": "scripts/dm_leptogenesis_exact_common.py",
+      "inline_cap": null,
+      "registry_entry": {
+        "reason": "Explicit bounded cap for this imported helper or unchanged primary in the 9403-9411 corrigendum review. Source-hash changes invalidate this declaration.",
+        "source_sha256": "4120a70d63082dd2115b7a9337fb91804478f706ef36f602ab210737f8f0dc41",
+        "timeout_sec": 120
+      },
+      "applicable_registry": true
+    },
+    {
+      "path": "scripts/dm_selector_branch_support.py",
+      "inline_cap": null,
+      "registry_entry": {
+        "source_sha256": "4dedef2c46b532406d97bee9e8eed88babac7fa9a53934697a62b57073c37d08",
+        "timeout_sec": 300
+      },
+      "applicable_registry": true
+    },
+    {
+      "path": "scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py",
+      "inline_cap": 120,
+      "registry_entry": null,
+      "applicable_registry": false
+    },
+    {
+      "path": "scripts/frontier_dm_leptogenesis_ne_charged_source_response_reduction.py",
+      "inline_cap": null,
+      "registry_entry": {
+        "source_sha256": "1e0b985ea845172b30e43cdf6330a4dec829ff62f56545eb286f2b12a40bca71",
+        "timeout_sec": 300
+      },
+      "applicable_registry": true
+    },
+    {
+      "path": "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py",
+      "inline_cap": null,
+      "registry_entry": {
+        "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change.",
+        "source_sha256": "7c6c379d4b6e70ad78607eb3c5655d241a9a0cb42a6a1dc54607b16afc529c22",
+        "timeout_sec": 300
+      },
+      "applicable_registry": true
+    },
+    {
+      "path": "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
+      "inline_cap": null,
+      "registry_entry": {
+        "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change.",
+        "source_sha256": "563fa74307f829d7cb673e7a6497a76aad85a5d78c378ddc1dc7b877651fd31f",
+        "timeout_sec": 300
+      },
+      "applicable_registry": true
+    },
+    {
+      "path": "scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py",
+      "inline_cap": null,
+      "registry_entry": {
+        "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change.",
+        "source_sha256": "26be65c14f41b944294a8c6636324cdf865df7ab08580565c4783c589dd7381c",
+        "timeout_sec": 300
+      },
+      "applicable_registry": true
+    },
+    {
+      "path": "scripts/frontier_dm_neutrino_exact_h_source_surface_preimage_bundle_theorem.py",
+      "inline_cap": null,
+      "registry_entry": {
+        "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change.",
+        "source_sha256": "10061fd219064353a68bef3c0c348bf84e9a83ead67c9783da9f4ad2de5d646e",
+        "timeout_sec": 300
+      },
+      "applicable_registry": true
+    },
+    {
+      "path": "scripts/frontier_dm_neutrino_hermitian_bridge_carrier.py",
+      "inline_cap": null,
+      "registry_entry": {
+        "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change.",
+        "source_sha256": "83d978eacf3c919b0153a8268e3881f5cc266619e8afa26da61cba533c2d09d0",
+        "timeout_sec": 300
+      },
+      "applicable_registry": true
+    },
+    {
+      "path": "scripts/frontier_dm_neutrino_positive_polar_h_cp_theorem.py",
+      "inline_cap": null,
+      "registry_entry": {
+        "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change.",
+        "source_sha256": "11ee73d73372c30698e05decdeee3cf8d101b4805b44026f34fbd07f145509cd",
+        "timeout_sec": 300
+      },
+      "applicable_registry": true
+    },
+    {
+      "path": "scripts/frontier_dm_neutrino_postcanonical_polar_section.py",
+      "inline_cap": null,
+      "registry_entry": {
+        "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change.",
+        "source_sha256": "6c09503cbccf1b3a109332c965041248a79fa025fa36bcb8f755b851efe0c113",
+        "timeout_sec": 300
+      },
+      "applicable_registry": true
+    },
+    {
+      "path": "scripts/frontier_dm_neutrino_source_bank_z3_doublet_block_selection_obstruction_theorem.py",
+      "inline_cap": null,
+      "registry_entry": {
+        "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change.",
+        "source_sha256": "e5d9e25e456dd9540e892e97a75c2faf1b0bebe0a5647c4200ccb553077a3819",
+        "timeout_sec": 300
+      },
+      "applicable_registry": true
+    },
+    {
+      "path": "scripts/frontier_dm_neutrino_source_surface_active_affine_point_selection_boundary.py",
+      "inline_cap": null,
+      "registry_entry": {
+        "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change.",
+        "source_sha256": "09dac7696be306d36073b01186ca238cd03cacaec9193808dae06cc3b1cd080a",
+        "timeout_sec": 300
+      },
+      "applicable_registry": true
+    },
+    {
+      "path": "scripts/frontier_dm_neutrino_source_surface_active_half_plane_theorem.py",
+      "inline_cap": null,
+      "registry_entry": {
+        "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change.",
+        "source_sha256": "f539b4aa3f6da7cc83bb653316a9e98981f89f23cec7cdc00a40a0d98ec33612",
+        "timeout_sec": 300
+      },
+      "applicable_registry": true
+    },
+    {
+      "path": "scripts/frontier_dm_neutrino_source_surface_carrier_normal_form.py",
+      "inline_cap": null,
+      "registry_entry": {
+        "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change.",
+        "source_sha256": "30862b9810bd34a9ba4a0848f03f9207c463a79fcde3b6c8e0a193b8e1a6c2b1",
+        "timeout_sec": 300
+      },
+      "applicable_registry": true
+    },
+    {
+      "path": "scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py",
+      "inline_cap": null,
+      "registry_entry": {
+        "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change.",
+        "source_sha256": "4694e84fb6e82dc704f2c39e4a7e70016850feb2becfd9a89128672da5445c70",
+        "timeout_sec": 300
+      },
+      "applicable_registry": true
+    },
+    {
+      "path": "scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py",
+      "inline_cap": null,
+      "registry_entry": {
+        "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change.",
+        "source_sha256": "3467693b9aadc4f1a06b41424442a4701a6c02c97603267be4ff0874c437f765",
+        "timeout_sec": 300
+      },
+      "applicable_registry": true
+    },
+    {
+      "path": "scripts/frontier_dm_neutrino_source_surface_split2_edge_profile_transition_candidate.py",
+      "inline_cap": null,
+      "registry_entry": null,
+      "applicable_registry": false
+    },
+    {
+      "path": "scripts/frontier_dm_neutrino_source_surface_split2_low_slack_transport_incompatibility_candidate.py",
+      "inline_cap": null,
+      "registry_entry": null,
+      "applicable_registry": false
+    },
+    {
+      "path": "scripts/frontier_dm_neutrino_source_surface_split2_lower_repair_upper_face_extremals_candidate.py",
+      "inline_cap": 600,
+      "registry_entry": null,
+      "applicable_registry": false
+    },
+    {
+      "path": "scripts/frontier_dm_neutrino_source_surface_split2_upper_face_local_neighborhoods_candidate.py",
+      "inline_cap": null,
+      "registry_entry": null,
+      "applicable_registry": false
+    },
+    {
+      "path": "scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem.py",
+      "inline_cap": null,
+      "registry_entry": {
+        "reason": "Bounded review execution cap for the conditional DM source repair; invalidated by a source hash change.",
+        "source_sha256": "9f8a4b93731a23370861ec9f07f06ea8fc4f5cdcd926cdd24cdf8e382beb3695",
+        "timeout_sec": 300
+      },
+      "applicable_registry": true
+    }
+  ]
+}

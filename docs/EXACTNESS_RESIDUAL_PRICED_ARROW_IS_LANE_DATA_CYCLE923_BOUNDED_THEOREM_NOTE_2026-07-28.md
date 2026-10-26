@@ -144,7 +144,12 @@ p in {0, 1/2, 1} (symbolic): "interior fixed point of sharpening",
 "uniform two-sector split", "maximum entropy", and "HS
 equipartition 3a^2 = 6|b|^2" are ONE fact in different costumes.
 The distinguished point is SINGLY, not multiply, distinguished.
-(The r <-> 1-r swap fixed point is separate and merely arithmetic.)
+The actual exchange of the supplied fractions is r -> 1/(4r) on r>0;
+its fixed point is the SAME uniformity/equipartition fact, not an independent
+selection. At r=2 it gives1/8, whereas the affine reflection1-r gives-1
+and leaves the allowed nonnegative domain. The affine arithmetic retained
+in the thermalizing-source comparison is a separately supplied map, not
+a fraction exchange or a derived symmetry.
 
 ## The exactness verdict (Q2) — UNEXPLAINED on the current surface, because map-conditional (support-only reading)
 
@@ -315,7 +320,14 @@ the follow-up.
 
 ## Gates, teeth, checker
 
-Primary: 199 PASS / 0 FAIL; 27 source values reproduced
+The source-contract repair replaces the obsolete affine-exchange attribution
+and adds the r=2 counterexample. Both runners declare their complete actual
+file-input closure; current receipts and caches bind the corrected source.
+The historical counts below describe the earlier run, not the refreshed one;
+current scorecards are in the linked receipts. Core map/rate/entropy formulas,
+comparison thresholds and epsilon-window calculations are unchanged.
+
+Historical iteration-2 run: primary 199 PASS / 0 FAIL; 27 source values reproduced
 value-for-value before any new number (both source notes' published
 figures, the durability "~14", the lever on 200 circulants); 12/12
 teeth; the derived-payload determinism digest is identical across a

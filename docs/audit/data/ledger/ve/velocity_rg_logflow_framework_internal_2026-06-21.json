@@ -23,8 +23,6 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "kinetic_isotropy_primitive",
-    "kinetic_isotropy_b4_transitivity_route_no_go_2026-06-20",
     "emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18",
     "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06",
     "emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18",
@@ -43,7 +41,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "75d9d02106fd6ee4d0f3c7b38a98ed4a732b62950959f861707c5ed3aa1b7339",
+  "note_hash": "a7c8d83116b3fc48b1456b744db35da493e5037f8b13e6d302ab7204e304cb8b",
   "note_path": "docs/VELOCITY_RG_LOGFLOW_FRAMEWORK_INTERNAL_2026-06-21.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -58,7 +56,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/velocity_rg_logflow_framework_internal_2026_06_21.py",
-  "title": "Cross-Sector Velocity-RG: the Log-Flow Attractor is Framework-Internal; the Power-Divergent f0 Does Not Factorize (Heat-Kernel-Robust)",
+  "title": "Supplied Wilson/Staggered Symbols: Finite IR/UV Proxy Comparison",
   "transitive_descendants": 12,
   "verdict_rationale": null
 }

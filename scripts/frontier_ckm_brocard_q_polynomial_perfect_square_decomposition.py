@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """Brocard / Q polynomial scalar-multiple square decomposition.
 
-Verifies the NEW retained closed forms in
+Checks conditional algebraic forms in
   docs/CKM_BROCARD_Q_POLYNOMIAL_PERFECT_SQUARE_DECOMPOSITION_THEOREM_NOTE_2026-04-25.md
 
-Key NEW identities on the retained NLO Wolfenstein protected-gamma_bar surface:
+Key NEW identities on the supplied NLO Wolfenstein protected-gamma_bar surface:
 
-  (D1) The pair of fundamental quartic polynomials of the retained surface:
+  (D1) The pair of fundamental quartic polynomials of the supplied surface:
         P(alpha_s)  =  (alpha_s^2 - 4 alpha_s + 96)^2  -  240 (4 - alpha_s)^2
                      [Brocard polynomial, universal equilateral excess],
         Q(alpha_s)  =  (alpha_s^2 - 4 alpha_s + 96)^2  +  80 (4 - alpha_s)^2
@@ -22,8 +22,8 @@ Key NEW identities on the retained NLO Wolfenstein protected-gamma_bar surface:
 
   (D3) NEW scalar-multiple square decomposition (2):
         P(alpha_s) + 3 Q(alpha_s)  =  4 (alpha_s^2 - 4 alpha_s + 96)^2
-                                    =  (N_pair^4 N_quark)^2 perim_sq^2 * 4
-                                    =  4 (N_pair^4 N_quark perim_sq)^2.
+                                    =  (N_pair^4 N_quark)^2 perim_sq^2
+                                    =  (N_pair^4 N_quark perim_sq)^2.
 
        The combination P + 3Q is a scalar multiple of a square in
        (alpha_s^2 - 4 alpha_s + 96) = 48 perim_sq, with structural-integer
@@ -37,13 +37,13 @@ Key NEW identities on the retained NLO Wolfenstein protected-gamma_bar surface:
          * beta = -alpha  (proportional to Q - P, square in (4 - alpha_s)),
          * beta = 3 alpha (proportional to P + 3Q, square in (alpha_s^2 - 4 alpha_s + 96)).
 
-  (D5) Physical interpretation:
+  (D5) Supplied normalized geometry:
         - (4 - alpha_s) is proportional to eta_bar (and therefore to the
-          Jarlskog J_bar in Wolfenstein-normalized form).
+          signed doubled normalized area J_norm; not physical J).
         - (alpha_s^2 - 4 alpha_s + 96) is exactly 48 * perim_sq, i.e. 48
           times the sum of squared sides of the unitarity triangle.
        So the scalar-multiple-square decomposition algebraically separates:
-        - "Jarlskog channel" (Q - P): proportional to J_bar^2 with structural
+        - "normalized-area channel" (Q - P): proportional to J_norm^2 with structural
           integer scaling N_pair^10 N_quark^2.
         - "Perimeter channel" (P + 3Q): proportional to perim_sq^2 with
           structural integer scaling (N_pair^4 N_quark)^2 = N_pair^8 N_quark^2.
@@ -54,20 +54,25 @@ Key NEW identities on the retained NLO Wolfenstein protected-gamma_bar surface:
                                 (alpha_s^2 - 4 alpha_s + 96)^2.
 
        Equivalently:
-        (P + 3Q)(Q - P) / 4  =  ((N_pair^4 N_quark perim_sq)
-                                 (N_pair^3 sqrt(N_quark - 1)(N_pair^2 - alpha_s)))^2
-                                 / N_pair^? ... (structural form).
+        (P + 3Q)(Q - P) = [N_pair^4 sqrt(N_quark - 1)
+                            (alpha_s^2 - 4 alpha_s + 96)(4 - alpha_s)]^2.
+       The bracket is an algebraic square factor, not a principal square root.
 
   (D7) The (P, Q) algebraic system is scalar-multiple-square-decomposable --
-       on the retained NLO Wolfenstein protected-gamma_bar surface, the
+       on the supplied NLO Wolfenstein protected-gamma_bar surface, the
        polynomial pair admits a complete factorization into two
        structural-integer-scaled square channels.
 
-Ground-up status verification: each cited authority's tier extracted from its
-Status: line; closure derived only at extracted retained values.
+Historical status-text assertions are preserved diagnostics, not retention
+proof. Algebra uses supplied counts 2,3,6 and the displayed polynomials.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
+
+# Actual documentary reads/existence checks; presence is not scientific authority.
+AUDIT_INPUT_PATHS = ['docs/CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md', 'docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md', 'docs/CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md']
 
 import math
 import re
@@ -136,9 +141,9 @@ def authority_tier(content: str) -> str:
 
 
 def audit_inputs() -> None:
-    banner("Ground-up status verification of each cited authority")
+    banner("Historical status-text diagnostics (not retention proof)")
 
-    print("  RETAINED-TIER (load-bearing for closure):\n")
+    print("  Historical retained-text expectations (not authority):\n")
 
     retained_authorities = (
         ("docs/CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md",
@@ -161,13 +166,13 @@ def audit_inputs() -> None:
         print(f"    [{rel_path.split('/')[-1]}]")
         print(f"      Status (extracted): {status!r}")
         print(f"      Tier classification: {tier}")
-        check(f"Retained-tier verified: {rel_path.split('/')[-1]}",
+        check(f"Historical retained-text predicate: {rel_path.split('/')[-1]}",
               all_kws and tier == "retained")
         print()
 
 
 def extract_retained_inputs() -> dict:
-    banner("Extracting retained inputs from authority text")
+    banner("Reading supplied count text (not retention proof)")
 
     counts = read_authority(
         "docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md"
@@ -180,9 +185,9 @@ def extract_retained_inputs() -> dict:
     print(f"  N_color extracted:                 {n_color_match.group(0) if n_color_match else 'NOT FOUND'}")
     print(f"  N_quark = N_pair * N_color:        {'FOUND' if n_quark_match else 'NOT FOUND'}")
 
-    check("MAGNITUDES retains N_pair = 2", n_pair_match and int(n_pair_match.group(1)) == 2)
-    check("MAGNITUDES retains N_color = 3", n_color_match and int(n_color_match.group(1)) == 3)
-    check("MAGNITUDES retains N_quark = N_pair * N_color (=6)", bool(n_quark_match))
+    check("MAGNITUDES text contains N_pair = 2", n_pair_match and int(n_pair_match.group(1)) == 2)
+    check("MAGNITUDES text contains N_color = 3", n_color_match and int(n_color_match.group(1)) == 3)
+    check("MAGNITUDES text contains N_quark = N_pair * N_color (=6)", bool(n_quark_match))
 
     return {
         "N_pair": 2,
@@ -336,7 +341,7 @@ def audit_d4_perfect_square_subspaces(N: dict, S: dict) -> None:
 
 
 def audit_d5_physical_interpretation(N: dict, S: dict) -> None:
-    banner("D5: Physical interpretation")
+    banner("D5: Supplied normalized geometry")
 
     a_s = S["a_s"]
     rho_bar = (4 - a_s) / 24
@@ -356,7 +361,7 @@ def audit_d5_physical_interpretation(N: dict, S: dict) -> None:
     check("D5: eta_bar^2 = 5 (4 - alpha_s)^2 / 576",
           diff_eta == 0)
 
-    # Connection: (Q - P) proportional to eta_bar^2 (and hence to Jarlskog^2).
+    # Connection: (Q - P) proportional to eta_bar^2 (and hence to normalized signed area squared).
     # (Q - P) = 320 (4 - alpha_s)^2 = 320 * 576 eta_bar^2 / 5 = 36864 eta_bar^2.
     Q_minus_P = sp.simplify(S["Q_poly"] - S["P_poly"])
     eta_bar_sq_form = sp.simplify(36864 * eta_bar_sq)
@@ -365,7 +370,7 @@ def audit_d5_physical_interpretation(N: dict, S: dict) -> None:
     print(f"    Q - P = {sp.simplify(Q_minus_P)}")
     print(f"    Expected: 36864 eta_bar^2 = {eta_bar_sq_form}")
     print(f"    Difference: {diff_jarlskog}")
-    check("D5 Jarlskog channel: Q - P = 36864 eta_bar^2",
+    check("D5 normalized-area channel: Q - P = 36864 eta_bar^2",
           diff_jarlskog == 0)
 
     # Check structural form:
@@ -377,7 +382,7 @@ def audit_d5_physical_interpretation(N: dict, S: dict) -> None:
     N_pair, N_quark = N["N_pair"], N["N_quark"]
     expected_structural = N_pair ** 10 * N_quark ** 2
     print(f"\n  Structural: 36864 = N_pair^10 N_quark^2 = {N_pair ** 10} * {N_quark ** 2} = {expected_structural}")
-    check("D5: Q - P = N_pair^10 N_quark^2 eta_bar^2 (Jarlskog channel)",
+    check("D5: Q - P = N_pair^10 N_quark^2 eta_bar^2 (normalized-area channel)",
           expected_structural == 36864)
 
     # Connection: (P + 3Q) proportional to perim_sq^2.
@@ -424,17 +429,17 @@ def audit_d6_cross_channel_identity(N: dict, S: dict) -> None:
     #                = 4 * 320 * ((alpha_s^2 - 4 alpha_s + 96)(4 - alpha_s))^2
     # is the SQUARE of structural integer * (alpha_s^2 - 4 alpha_s + 96)(4 - alpha_s).
     # 4 * 320 = 1280. sqrt(1280) = sqrt(N_pair^8 (N_quark-1)) = N_pair^4 sqrt(N_quark-1).
-    # So sqrt((P + 3Q)(Q - P)) = N_pair^4 sqrt(N_quark - 1) (alpha_s^2 - 4 alpha_s + 96)(4 - alpha_s).
-    sqrt_product = N_pair ** 4 * sp.sqrt(N_quark - 1) * (a_s ** 2 - 4 * a_s + 96) * (4 - a_s)
-    diff_sqrt = sp.simplify(product - sqrt_product ** 2)
-    check("D6: sqrt((P + 3Q)(Q - P)) = N_pair^4 sqrt(N_quark - 1) (alpha_s^2 - 4 alpha_s + 96)(4 - alpha_s)",
-          diff_sqrt == 0)
+    # An algebraic square factor is N_pair^4 sqrt(N_quark - 1) (alpha_s^2 - 4 alpha_s + 96)(4 - alpha_s).
+    square_factor = N_pair ** 4 * sp.sqrt(N_quark - 1) * (a_s ** 2 - 4 * a_s + 96) * (4 - a_s)
+    diff_square = sp.simplify(product - square_factor ** 2)
+    check("D6: product equals the square of N_pair^4 sqrt(N_quark - 1) (alpha_s^2 - 4 alpha_s + 96)(4 - alpha_s)",
+          diff_square == 0)
 
 
 def audit_d7_module_structure(N: dict, S: dict) -> None:
     banner("D7: (P, Q) algebraic system - scalar-multiple square decomposition")
 
-    print("  The (P, Q) module on the retained surface has the structure:")
+    print("  The (P, Q) module on the supplied surface has the structure:")
     print("    {alpha P + beta Q : alpha, beta in Q}")
     print("    = (alpha + beta)(alpha_s^2 - 4 alpha_s + 96)^2 + (-240 alpha + 80 beta)(4 - alpha_s)^2.")
     print()
@@ -448,11 +453,11 @@ def audit_d7_module_structure(N: dict, S: dict) -> None:
     print()
     print("  The two scalar-multiple square forms encode:")
     print("    P + 3Q proportional to perim_sq^2  (Perimeter channel),")
-    print("    Q - P proportional to eta_bar^2     (Jarlskog channel).")
+    print("    Q - P proportional to eta_bar^2     (normalized-area channel).")
     print()
     print("  Together they span the (P, Q) module under linear combination:")
-    print("    P  =  ((P + 3Q) - 3(Q - P))/4  =  (perim^2-channel - 3 * Jarlskog-channel)/4,")
-    print("    Q  =  ((P + 3Q) + (Q - P))/4   =  (perim^2-channel + Jarlskog-channel)/4.")
+    print("    P  =  ((P + 3Q) - 3(Q - P))/4  =  (perim^2-channel - 3 * normalized-area-channel)/4,")
+    print("    Q  =  ((P + 3Q) + (Q - P))/4   =  (perim^2-channel + normalized-area-channel)/4.")
 
     a_s = S["a_s"]
     P = S["P_poly"]
@@ -468,14 +473,14 @@ def audit_d7_module_structure(N: dict, S: dict) -> None:
 
 
 def audit_summary() -> None:
-    banner("Summary of NEW retained content")
+    banner("Summary of supplied polynomial algebra; status diagnostics are separate")
 
-    print("  Inputs (retained-tier, ground-up Status verified):")
-    print("    CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA  (retained)")
-    print("    CKM_MAGNITUDES_STRUCTURAL_COUNTS         (retained)")
-    print("    CKM_CP_PHASE_STRUCTURAL_IDENTITY         (retained)")
+    print("  Supplied inputs; historical status-text failures remain:")
+    print("    CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA  (supplied)")
+    print("    CKM_MAGNITUDES_STRUCTURAL_COUNTS         (supplied)")
+    print("    CKM_CP_PHASE_STRUCTURAL_IDENTITY         (supplied)")
     print()
-    print("  NEW retained closed forms:")
+    print("  Conditional algebraic forms:")
     print()
     print("    (D2) Q(alpha_s) - P(alpha_s)  =  N_pair^6 (N_quark - 1) (N_pair^2 - alpha_s)^2,")
     print("         a scalar-multiple square in (4 - alpha_s) with structural-integer scaling.")
@@ -491,25 +496,25 @@ def audit_summary() -> None:
     print("         (alpha_s^2 - 4 alpha_s + 96)^2 and")
     print("         (4 - alpha_s)^2 components).")
     print()
-    print("    (D5) Physical interpretation:")
-    print("         Q - P  =  N_pair^10 N_quark^2 eta_bar^2     [Jarlskog channel],")
+    print("    (D5) Supplied normalized geometry:")
+    print("         Q - P  =  N_pair^10 N_quark^2 eta_bar^2     [normalized-area channel],")
     print("         P + 3Q  =  N_pair^8 N_quark^2 perim_sq^2    [Perimeter channel].")
     print()
     print("    (D6) Cross-channel identity (NEW):")
     print("         (P + 3Q)(Q - P)  =  N_pair^8 (N_quark - 1) (alpha_s^2 - 4 alpha_s + 96)^2 (4 - alpha_s)^2.")
-    print("         sqrt((P + 3Q)(Q - P))  =  N_pair^4 sqrt(N_quark - 1) (alpha_s^2 - 4 alpha_s + 96)(4 - alpha_s).")
+    print("         Algebraic square factor =  N_pair^4 sqrt(N_quark - 1) (alpha_s^2 - 4 alpha_s + 96)(4 - alpha_s).")
     print()
     print("    (D7) The (P, Q) algebraic module is scalar-multiple-square-decomposable on")
-    print("         the retained surface. The two scalar-multiple square forms span the module:")
+    print("         the supplied surface. The two scalar-multiple square forms span the module:")
     print("           P  =  ((P + 3Q) - 3(Q - P))/4,")
     print("           Q  =  ((P + 3Q) + (Q - P))/4.")
     print()
-    print("  All identities exact via sympy; closure on retained-tier authorities only.")
+    print("  Symbolic identities use supplied inputs; no retained authority or physical closure certified.")
 
 
 def main() -> int:
     print("=" * 88)
-    print("Brocard / Q polynomial scalar-multiple square decomposition audit")
+    print("Brocard / Q polynomial scalar-multiple square decomposition diagnostics")
     print("See docs/CKM_BROCARD_Q_POLYNOMIAL_PERFECT_SQUARE_DECOMPOSITION_THEOREM_NOTE_2026-04-25.md")
     print("=" * 88)
 

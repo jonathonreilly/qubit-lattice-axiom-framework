@@ -90,8 +90,9 @@ a theorem*, not a reduction of assumed content: the equivalence
 directions, so the consolidated clause neither strengthens nor weakens
 what was already declared. RR remains declared — it is a quantitative
 slice of the record-scalar-map no-go's middle arrow and is never derived
-here; RR does not force records to form (it conditions on the
-realization; the class may be empty); and the clock window stays a
+here; RR does not force records to form by the particular production
+realization it describes. Record occurrence itself is supplied by the current
+axiom memo; membership in this narrower RR realization class remains open; and the clock window stays a
 separate supplied clause because its *meaning* — not merely its value —
 requires the supplied clock map of the clock/rate interface no-go. This
 note does NOT retire P1.
@@ -104,9 +105,23 @@ audit verdict and downstream status are set only by the independent audit
 lane.
 **Primary runner:**
 [`scripts/observable_principle_p1_rr_consolidation_check_2026_06_11.py`](../scripts/observable_principle_p1_rr_consolidation_check_2026_06_11.py)
-(expected `TOTAL: PASS=30 FAIL=0`, exact SymPy plus deterministic
+(conditional numerical/documentary checks, exact SymPy plus deterministic
 finite-dimensional dynamics, < 5 min; cached:
 [`logs/runner-cache/observable_principle_p1_rr_consolidation_check_2026_06_11.txt`](../logs/runner-cache/observable_principle_p1_rr_consolidation_check_2026_06_11.txt)).
+
+## Current premise and execution correction (2026-10-23)
+
+The prior formation quotation was already false before PR9845. Its old ledger
+status test also cannot establish current premises. Both original source and
+execution remain recoverable at f180e23d89991e68e7f845a6f59d9b87468964c4.
+Current source checks consume the corrected formation scope; historical grades
+in the dated input table and transcript are provenance only. No audit status
+is changed. All quantitative model predicates, thresholds, witnesses and
+symbolic calculations are unchanged. They test formal clauses with supplied
+record labels/readouts and selected finite Hamiltonians, not a physical Record
+production process. Matching operator-norm sensitivities does not by itself
+construct records or their readout. The separate physical realization remains
+an open premise even when the formal diagnostics pass.
 
 ## 0. Honest framing: what is proven, what stays declared
 
@@ -151,7 +166,7 @@ This note explicitly does NOT:
   remains declared, never derived;
 - assert that records form, or that registration must proceed by the
   lattice dynamics (RR conditions on the realization; the
-  record-formation no-go stands; the class may be empty);
+  current Record occurrence premise does not construct this RR realization);
 - derive a clock, a clock rate, or the window value tau (the clock/rate
   no-go stands; (REG-tau) is kept separate *because* of it);
 - construct a probability law for records or assert a branch-to-scalar
@@ -171,7 +186,7 @@ This note explicitly does NOT:
 | Finite-sector readout identity and finite additivity; conditional unit-record schema `I(R_n) = n`, `M = 1` | Lemma C recomputation (T9); the abstract record model | [`RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md`](RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md) — `retained`; [`RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md`](RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md) — `audited_conditional`, consumed only with supplied nonzero disjoint records and supplied readout context. |
 | T1-d Boundary wording, including "independent disjoint source blocks register as disjoint records" | the hostile reverse check (T7): RR does not absorb T1-d | [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md) — unaudited parent; quoted as the declared boundary, not consumed as authority. |
 | The clock is supplied, never derived from counts | why (REG-tau) stays separate (T5) | [`POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md`](POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md) — `retained_no_go`; quoted verbatim. |
-| Record formation is not unconditionally forced | RR conditions on realization, does not force formation | [`RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md`](RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md) — `retained_no_go`; quoted verbatim. |
+| Record occurrence and a local conditional distribution are supplied; production details remain open | RR conditions on a specific realization | [`RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md`](RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md) — current conditional premise boundary; no blanket formation no-go imported. |
 | Firewalls: no probability law from counts; no branch-to-scalar map ("The missing step is the middle arrow.") | Section 5 compliance | [`POST_RECORD_COUNT_PROBABILITY_FIREWALL_2026-06-06.md`](POST_RECORD_COUNT_PROBABILITY_FIREWALL_2026-06-06.md), [`OBSERVABLE_PRINCIPLE_RECORD_SCALAR_MAP_NO_GO_NOTE_2026-06-05.md`](OBSERVABLE_PRINCIPLE_RECORD_SCALAR_MAP_NO_GO_NOTE_2026-06-05.md) — both `retained_no_go`; quoted verbatim. |
 | No-dynamics guardrail ("it disclaims the decoherence *process* that produces it") | RR is a realization clause, not a formation derivation | [`RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md`](RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md) — unaudited proposal; quoted, presence only, no grade asserted. |
 | One qubit per site; `Z^3`/chain adjacency | the explicit-dynamics witnesses (T2, T4, T6, T7) | [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) — approved axiom memo (Lattice, Quantum). |
@@ -350,12 +365,11 @@ is the same either way.
   constructed for records anywhere in this note or runner; every
   sensitivity is an operator norm; realized counts appear only as exact
   witness arithmetic, never as laws.
-- **Record-formation no-go (`retained_no_go`) — respected:** the claim
-  that the baseline forces record formation "does **not** hold
-  unconditionally," and nothing here strengthens that: RR conditions on
-  the realization and does not force records to form; the class may be
-  empty; the theorem is about what follows *if* the readout is so
-  realized.
+- **Current formation boundary:** Record supplies occurrence and Admissibility
+  supplies a local conditional distribution. Their form, numerical values,
+  site/rate and a specific production process remain open construction tasks.
+  RR remains declared: this formal clause does not construct its physical
+  realization. No general nonderivability theorem is imported.
 - **Clock/rate interface no-go (`retained_no_go`) — respected and
   load-bearing:** "Without the supplied `tau`, the same record history
   supports many inequivalent rates." This is precisely why (REG-tau) is
@@ -405,8 +419,8 @@ bookkeeping with proven content-preservation.
 **N6 — Partial-closure path scan.** Named paths: (a) audit-lane
 ratification of RR as the canonical declared realization clause
 (governance; spec is Section 4); (b) a future record-production dynamics
-row deriving RR's establishment facet (must pass the record-formation
-no-go's named escape); (c) a governance admission of (REG-tau)'s window
+row deriving RR's establishment facet under the current occurrence and
+local-conditional-distribution premises; (c) a governance admission of (REG-tau)'s window
 with an identified clock denominator (the clock/rate no-go's audit rule);
 (d) the CAP-K note's named quasilocal refinement (untouched here).
 
@@ -435,7 +449,8 @@ never was (Section 3.5) — both invisible at the prose level.
 python3 scripts/observable_principle_p1_rr_consolidation_check_2026_06_11.py
 ```
 
-Expected output (matches stdout):
+Historical 2026-06-11 transcript (preserved verbatim, including obsolete
+formation and ledger assertions; not current execution evidence):
 
 ```text
 == T1: the consolidation equivalence — exhaustive finite-model verification ==
@@ -487,7 +502,8 @@ A passing run supports only: (i) the equivalence and the arrows on the
 enumerated finite-model family and the explicit-dynamics instances; (ii)
 the witnessed non-arrows; (iii) the recomputed cap/window/selection
 arithmetic; (iv) the minimal-generating-set facts over the model library;
-(v) the wall, ledger, and honest-scope textual facts. It does **NOT**
+(v) current documentary contracts. Historical ledger grades below are
+provenance only and are not consumed by the current runner. It does **NOT**
 establish that the framework satisfies RR, does NOT retire P1, and does
 NOT promote any row.
 
@@ -528,11 +544,10 @@ formalization of Section 2 (predicates defined in-text and in-runner,
 independent codepaths); (4) the retained (F4) LR data for the cone-teeth
 and cap recomputations; (5) explicit finite-dimensional unitary dynamics
 for the witnesses (deterministic, exactly constructed); (6) the retained
-record rows inside Lemma C and `M = 1` (recomputed); (7) ledger reads
-(presence/status checks only). Throughout: no probability law is
+record rows inside Lemma C and `M = 1` (recomputed); (7) source quotation checks, not ledger grades. Throughout: no probability law is
 constructed; no branch-to-scalar map is asserted; no readout is
 constructed, identified, or selected; RR remains declared and is never
-derived; records are never asserted to form; the unbounded-additivity schema
+derived; physical realization of this RR clause is not constructed; the unbounded-additivity schema
 is consumed only under supplied nonzero-record/readout-context conditions.
 
 **Forbidden-imports check:** no new framework axiom; no new repo

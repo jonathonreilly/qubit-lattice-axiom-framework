@@ -1,7 +1,7 @@
-"""Axiom-first Stefan-Boltzmann check.
+"""Conditional continuum-photon Stefan-Boltzmann check.
 
-Verifies the Stefan-Boltzmann law on the framework's retained EW +
-Lorentz + Block 01 KMS surface:
+Checks the standard law for supplied bosonic oscillators, Gibbs equilibrium,
+two polarizations and an unbounded linear continuum dispersion:
 
   u(T) = (pi^2 / 15) (k_B T)^4 / (hbar c)^3
 
@@ -21,6 +21,8 @@ from __future__ import annotations
 
 import math
 
+AUDIT_INPUT_PATHS = ["docs/AXIOM_FIRST_STEFAN_BOLTZMANN_THEOREM_NOTE_2026-05-01.md"]
+
 import numpy as np
 
 
@@ -37,7 +39,7 @@ def planck_occupation(omega: float, T: float) -> float:
 def planck_occupation_from_gibbs(omega: float, T: float, n_max: int = 1000) -> float:
     """<a^dagger a>_beta = sum_n n e^{-beta n omega} / sum_n e^{-beta n omega}.
 
-    This is Block 01 KMS applied to a single harmonic oscillator,
+    This uses the supplied harmonic-oscillator spectrum,
     using the Gibbs sum directly (not the closed-form Planck formula).
     """
     if T <= 0:
@@ -81,12 +83,12 @@ def stefan_boltzmann_constant_SI() -> float:
 
 def main() -> None:
     print("=" * 72)
-    print("AXIOM-FIRST STEFAN-BOLTZMANN CHECK")
+    print("CONDITIONAL CONTINUUM-PHOTON STEFAN-BOLTZMANN CHECK")
     print("=" * 72)
     print()
     print("Setup:")
-    print("  Block 01 KMS (Gibbs state on harmonic oscillator → Planck dist)")
-    print("  retained framework EW + emergent Lorentz (3D photon dispersion)")
+    print("  supplied Gibbs state on harmonic oscillator → Planck distribution")
+    print("  supplied continuum photon dispersion and two polarizations")
     print("  natural units hbar = c = k_B = 1")
     print()
     print("Stefan-Boltzmann: u(T) = (pi^2 / 15) T^4 in natural units")
@@ -205,6 +207,17 @@ def main() -> None:
     print(f"  STATUS: {'PASS' if t6_ok else 'FAIL'}")
     print()
 
+    # Premise-failure controls: positivity does not select oscillator statistics,
+    # and a fixed ultraviolet cutoff does not preserve exact T^4 scaling.
+    from scipy.integrate import quad
+    two_level = math.exp(-1.0) / (1.0 + math.exp(-1.0))
+    t7_ok = abs(two_level - planck_occupation(1.0, 1.0)) > 0.1
+    cutoff_ratios = [quad(lambda x: x**3 / math.expm1(x), 0, 1/T)[0]
+                     / math.pi**2 for T in (0.1, 1.0)]
+    t8_ok = abs(cutoff_ratios[0] - cutoff_ratios[1]) > 0.1
+    print(f"Positive two-level counterexample: {two_level}; PASS={t7_ok}")
+    print(f"Fixed-cutoff u/T^4: {cutoff_ratios}; nonconstant PASS={t8_ok}")
+
     # ----- Summary -----
     print("=" * 72)
     print("SUMMARY")
@@ -216,18 +229,18 @@ def main() -> None:
     print(f"  Test 5 (Wien displacement law):               {'PASS' if t5_ok else 'FAIL'}")
     print(f"  Test 6 (sigma_SB in SI = CODATA 2018):        {'PASS' if t6_ok else 'FAIL'}")
     print()
-    all_ok = t1_ok and t2_ok and t3_ok and t4_ok and t5_ok and t6_ok
+    all_ok = all((t1_ok, t2_ok, t3_ok, t4_ok, t5_ok, t6_ok, t7_ok, t8_ok))
     print(f"  OVERALL: {'PASS' if all_ok else 'FAIL'}")
     print()
     print("Note: this runner verifies the Stefan-Boltzmann law via")
     print("(a) explicit Gibbs-trace evaluation of the Planck distribution")
-    print("    (Test 1, the KMS step from Block 01),")
+    print("    (Test 1, under the supplied oscillator and Gibbs premises),")
     print("(b) numerical integration of the Planck energy spectrum (Tests 2-3),")
     print("(c) the Bose-Einstein integral identity (Test 4),")
     print("(d) the Wien displacement law (Test 5), and")
     print("(e) the SI Stefan-Boltzmann constant matching CODATA 2018 (Test 6).")
-    print("The proof in the companion theorem note composes Block 01 KMS")
-    print("with retained framework EW + emergent Lorentz + 3D mode-counting.")
+    print("The proof in the companion theorem note combines a supplied Gibbs state")
+    print("with supplied oscillator spectrum, linear continuum dispersion and mode-counting.")
     if not all_ok:
         raise SystemExit(1)
 

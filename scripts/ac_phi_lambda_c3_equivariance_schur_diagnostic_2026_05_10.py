@@ -18,6 +18,9 @@ recorded in the source note Section 3). It serves two purposes:
 
 from __future__ import annotations
 
+# Cache identity includes actual note reads and existence checks.
+AUDIT_INPUT_PATHS = ['docs/AC_PHI_LAMBDA_PRESERVED_C3_STRUCTURAL_FORECLOSURE_BOUNDED_THEOREM_NOTE_2026-05-10.md', 'docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md', 'docs/C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md', 'docs/BRANNEN_AMPLITUDE_EQUIPARTITION_BAE_RENAME_META_NOTE_2026-05-09.md', 'docs/MINIMAL_AXIOMS_2026-05-03.md']
+
 AUDIT_TIMEOUT_SEC = 120
 
 

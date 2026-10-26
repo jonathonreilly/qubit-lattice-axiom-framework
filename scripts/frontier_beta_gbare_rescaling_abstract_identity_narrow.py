@@ -77,7 +77,8 @@ section("Pattern A narrow theorem: beta(g/c, N) = c^2 * beta(g, N) (abstract)")
 # ----------------------------------------------------------------------------
 section("Part 1: symbolic algebraic identity (T1) via sympy")
 # ----------------------------------------------------------------------------
-g, c, N = symbols('g c N', positive=True, real=True)
+g, c = symbols('g c', positive=True, real=True)
+N = symbols('N')
 
 beta = 2 * N / g**2
 beta_rescaled = beta.subs(g, g / c)
@@ -170,7 +171,7 @@ for g_val, N_val, c_val in nontrivial_cases:
 
 
 # ----------------------------------------------------------------------------
-section("Part 5: orbit exhaustion of g under sigma_c (T3 surjectivity)")
+section("Part 5: finite rational orbit controls (general proof is c=g0/g_target)")
 # ----------------------------------------------------------------------------
 # For (g0, N0) = (1, 3) and any positive rational g', selecting c = g0 / g'
 # sends g0 -> g'. Cover a representative grid.
@@ -181,7 +182,7 @@ target_grid = [Fraction(1, 7), Fraction(2, 5), Fraction(3, 4), Fraction(1),
 for g_target in target_grid:
     c_choice = g0 / g_target  # positive rational
     g_image = g0 / c_choice
-    check(f"T3 orbit-exhaustion: c = g0/g' = {c_choice} sends g0=1 -> g'={g_target}",
+    check(f"T3 finite orbit control: c = g0/g' = {c_choice} sends g0=1 -> g'={g_target}",
           g_image == g_target,
           detail=f"g0/c = {g_image}")
 
@@ -281,7 +282,7 @@ print("""
     Equivalently, the product beta(g, N) * g^2 = 2 N is invariant under
     the joint rescaling (g, beta) -> (g/c, c^2 * beta).              (T2)
 
-    The orbit of any positive g under sigma_c is the entire positive
+    The orbit of any positive rational g under positive rational sigma_c is the positive
     rational ray. For N>0 each attained beta has one rational g;
     other positive rational beta values may have empty fibers.       (T3)
 

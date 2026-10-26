@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/vector_response_to_labelled_relay_values_forces_lie_algebra_self_coupling_2026_10_21.py
+runner_sha256: 5e5956da4378332d179585534542e693bf474682ab448eacb640c9a6aeaaf84b
+input_fingerprint_sha256: c0cf2810b61dc3e1346d2e4ddee7141d2d523e2dd7b992a6dd3f85628c49fb78
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.45
+status: ok
+----- stdout -----
+[PASS] (1) N=3: sampled six-structure cubic constraint kernel has dimension C(N,3) = 1 and matches the sampled antisymmetric Yang-Mills span  null space 1, YM span 1, joint span 1
+[PASS] (1) N=4: sampled six-structure cubic constraint kernel has dimension C(N,3) = 4 and matches the sampled antisymmetric Yang-Mills span  null space 4, YM span 4, joint span 4
+[PASS] (2) su(2): Jacobi holds (0.0e+00) and K=12 sampled Ward residuals admit independent per-quadruple contact fits (Bose consistency untested)  max relative residual 6.9e-15
+[PASS] (2) su(2)+u(1): Jacobi holds (0.0e+00) and K=12 sampled Ward residuals admit independent per-quadruple contact fits (Bose consistency untested)  max relative residual 8.0e-16
+[PASS] (2) su(3): Jacobi holds (3.3e-16) and K=12 sampled Ward residuals admit independent per-quadruple contact fits (Bose consistency untested)  max relative residual 2.2e-16
+[PASS] (2) seeded N=5 antisymmetric sample: K=12 least-squares contact residual exceeds threshold on Jacobi-violating quadruples and is below threshold elsewhere  Jacobi-violating quadruples 120/625, min residual there 6.59e-03, max elsewhere 5.4e-15
+    residual vs |Jacobi| correlation on violating quadruples: 1.000
+[PASS] (2) N=4 v=0: zero bracket has Jacobi zero and commutator-span rank zero (abelian R^4)
+[PASS] (3) compact reductive Lie algebras: 8 of dimension 12 (su(3)+su(2)+u(1) among them), 2 of dimension 3, 4 of dimension 8  counts 8, 2, 4
+[PASS] (4) exact integer negative control: ad_diag(1,-1) obeys Leibniz but fails star preservation
+[PASS] (4) Der_C(M2(C)) dimension 3 complex / 6 real; star-preserving derivations dimension 3 real  complex dimension 3, star real dimension 3
+[PASS] (4) supplied anti-Hermitian traceless generators span the real star-derivation algebra su(2); rank-one projector stabilizer inside SU(2) has Lie algebra u(1)  real star dimension = 3, Killing eigenvalues [-2. -2. -2.]
+[PASS] (4) complex commutant of eight labelled rank-one projectors has dimension 8; supplied U(8) pointwise stabilizer is U(1)^8 (common phase acts trivially by conjugation)  complex commutant dimension 8
+per_site: the vector-field ansatz (local, covariant, at most one derivative, positive kinetic metric), the Feynman-gauge tree test and the internal dimension N are supplied choices.
+lattice_wide: no gauge group, coupling, matter assignment, link dynamics on the lattice or empirical identification is established.
+elapsed_seconds 0.4
+
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

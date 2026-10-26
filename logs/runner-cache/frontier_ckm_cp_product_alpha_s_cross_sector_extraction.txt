@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ckm_cp_product_alpha_s_cross_sector_extraction.py
-runner_sha256: 9d8c15adba5fd1a94fa51e0a5ab78247461a20faa52f8a2e6f6570f74ab3e764
-timeout_sec: 120
+runner_sha256: 789f64aa920bf29d35ff9330b8f6324df6500594a960a1a43406c7804cc97220
+input_fingerprint_sha256: 7e66e093ac12e6c57c90b6c1cf9fc7180ea7278631f3dde994f6d3ae1d080992
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -12,7 +13,7 @@ See docs/CKM_CP_PRODUCT_ALPHA_S_CROSS_SECTOR_EXTRACTION_THEOREM_NOTE_2026-04-25.
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
-Retained inputs
+Supplied inputs; existence checks do not establish authority
 ----------------------------------------------------------------------------------------
   alpha_s(v) (canonical CMT/plaquette) = 0.103303816122267
   lambda^2 = alpha_s(v)/2              = 0.051651908061134
@@ -30,7 +31,7 @@ Retained inputs
   [PASS] upstream authority present: docs/WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md
 
 ----------------------------------------------------------------------------------------
-Atlas-LO predictions (retained)
+Conditional atlas-LO predictions
 ----------------------------------------------------------------------------------------
   sin(2 beta_d,0) = 2 eta        = 0.745355992499930
   sqrt(5)/3                      = 0.745355992499930
@@ -87,14 +88,16 @@ PDG/LHCb 2024 cross-sector estimator comparator
 ----------------------------------------------------------------------------------------
   PDG sin(2 beta_d)         = 0.7060 +/- 0.011
   LHCb phi_s                = -0.0386 +/- 0.022 rad
-  LHCb sin(2 beta_s) = -phi_s = 0.0386 +/- 0.0220
+  LHCb sin(2 beta_s) approx -phi_s = 0.0386 +/- 0.0220
   PDG product               = 0.027252 +/- 0.015538
   alpha_s_CP (estimator)    = 0.098106 +/- 0.055936
   alpha_s_canonical (CMT)   = 0.103304
-  cross-sector deviation    = -0.093 sigma
-  [PASS] CP-estimated alpha_s within 1 sigma of canonical
-  [PASS] CP-estimated alpha_s within 0.5 sigma under loose comparator
-  [PASS] CP-estimated alpha_s within 0.2 sigma under loose comparator
+  cross-sector deviation    = -0.093 quoted propagated errors
+  First-order independent-input propagation; no covariance/theory budget.
+  Historical sin(2 beta_d) residual / experimental error = +3.578
+  Relative sin(2 beta_s) experimental error = 56.99%
+  Descriptive residuals only: no quantified omitted-order/covariance budget.
+  Loose product agreement does not validate the individual CP factors.
 
 ----------------------------------------------------------------------------------------
 Consistency with Thales cross-system ratio theorem
@@ -108,14 +111,14 @@ Consistency with Thales cross-system ratio theorem
   [PASS] ratio + product determine sin^2(2 beta_s) = 5 alpha_s^2/36
 
 ----------------------------------------------------------------------------------------
-Falsification: future LHCb / HL-LHC precision
+Historical illustrative uncertainty scenarios (not current schedules)
 ----------------------------------------------------------------------------------------
   alpha_s_canonical = 0.1033
 
-  PDG/LHCb 2024 baseline          sigma(phi_s) = 0.0220  sigma(alpha_s_CP) = 0.0589
-  LHCb Run 4 (~2027)              sigma(phi_s) = 0.0050  sigma(alpha_s_CP) = 0.0134
-  HL-LHC end-of-program           sigma(phi_s) = 0.0020  sigma(alpha_s_CP) = 0.0054
-  [PASS] future precision tightens cross-sector consistency
+  PDG/LHCb 2024 baseline          sigma(phi_s) = 0.0220  sigma(alpha_s_CP) = 0.0559
+  LHCb Run 4 (~2027)              sigma(phi_s) = 0.0050  sigma(alpha_s_CP) = 0.0128
+  HL-LHC end-of-program           sigma(phi_s) = 0.0020  sigma(alpha_s_CP) = 0.0053
+  [PASS] supplied scenario uncertainties decrease (not a forecast)
 
 ----------------------------------------------------------------------------------------
 Summary: pure-framework cross-sector alpha_s estimator route
@@ -138,7 +141,7 @@ Summary: pure-framework cross-sector alpha_s estimator route
     Cross-sector deviation: 0.09 sigma under the PDG/LHCb 2024 baseline
 
 ========================================================================================
-TOTAL: PASS=28, FAIL=0
+TOTAL: PASS=25, FAIL=0
 ========================================================================================
 
 ----- stderr -----

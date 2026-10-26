@@ -22,20 +22,7 @@
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
-  "deps": [
-    "conventions_unification_companion_note_2026-05-08",
-    "physical_lattice_foundational_interpretation_note_2026-05-08",
-    "koide_bae_probe_phi_from_z3_character_note_2026-05-09_probe24",
-    "koide_bae_probe_radian_from_dimensions_bounded_note_2026-05-09_probe30",
-    "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
-    "koide_bae_30_probe_campaign_note_2026-05-09",
-    "brannen_amplitude_equipartition_bae_rename_meta_note_2026-05-09",
-    "minimal_axioms_2026-05-03",
-    "koide_brannen_phase_reduction_theorem_note_2026-04-20",
-    "koide_circulant_character_derivation_note_2026-04-18",
-    "c3_symmetry_preserved_interpretation_note_2026-05-08",
-    "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac"
-  ],
+  "deps": [],
   "direct_in_degree": 0,
   "effective_status": "meta",
   "effective_status_reason": "metadata",
@@ -47,7 +34,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "e22205c7fa38cf617fa074f450d7ed49a0811f158aaeb770ce975e8e8d2ac741",
+  "note_hash": "26e98a4f14c6b7014c7eeb570e6b43f1745ce98826b4e20b8bedd87b8f51da81",
   "note_path": "docs/RADIAN_UNIT_CONVENTION_RECLASSIFICATION_NOTE_2026-05-10_radianconv.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -62,7 +49,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_radian_unit_convention_reclassification_2026_05_10_radianconv.py",
-  "title": "Radian Unit Convention Reclassification (Sharpened) \u2014 P as a Unit Convention Under Conventions Unification",
+  "title": "Radian and cycle coordinates: documentary correction",
   "transitive_descendants": 0,
   "verdict_rationale": null
 }

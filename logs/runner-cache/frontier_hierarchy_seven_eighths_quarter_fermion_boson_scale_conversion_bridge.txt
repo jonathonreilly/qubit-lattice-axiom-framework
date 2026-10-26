@@ -1,13 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_seven_eighths_quarter_fermion_boson_scale_conversion_bridge.py
-runner_sha256: a23eadc51347529c710231be6d278e578ea28620c491ad28b0aa5c8d85822c63
+runner_sha256: 05af5ff76e72d46329b54e827a28b46808a87b246e2926f218db324c47da1c57
+input_fingerprint_sha256: 6bf1f5bc1498c835844395db8d34f1083be56491e4ad733c130df536bc887746
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.42
+elapsed_sec: 0.43
 status: ok
 ----- stdout -----
 Section 1: Named support witnesses for 7/8 at d=4
-  PASS: W1: APBC Matsubara determinant per-mode = 7/8
+  PASS: W1: positive root of supplied Matsubara-ratio value = 7/8
   PASS: W2: lattice per-mode (c+1/2)/(c+1) at c=3 = 7/8
   PASS: W3: Riemann-Dirichlet eta(4)/zeta(4) = 7/8
   PASS: W4: integer alignment 2^(d-2)=d only at d=4 for checked d=2..19

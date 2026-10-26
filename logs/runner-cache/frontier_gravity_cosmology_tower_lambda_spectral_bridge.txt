@@ -1,18 +1,22 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gravity_cosmology_tower_lambda_spectral_bridge.py
-runner_sha256: 498c8acdd3a0b5443aeeb7fa8787f49069df39aa1bb6f5be64d325f81d1b6370
-timeout_sec: 120
+runner_sha256: e39f19594e0a2d878cb7b4dc31ff39768904f579aa332bd4c930fee5f816245e
+input_fingerprint_sha256: df2b8025a32d2ed8fb5e9ef24e175d79f48e2d20dde6eb0edfe84905dce87d6f
+timeout_sec: 300
 exit_code: 0
 elapsed_sec: 0.05
 status: ok
 ----- stdout -----
+  [PASS] minimum/comparison slice agrees
+  [PASS] evolving slice counterexample: a=2ell gives Lambda/4
+Conditional comparison R=ell; no inherited closure or physical-slice identity.
 ========================================================================================
 Gravity-cosmology spectral tower Lambda-bridge theorem audit
 See docs/GRAVITY_COSMOLOGY_TOWER_LAMBDA_SPECTRAL_BRIDGE_THEOREM_NOTE_2026-04-25.md
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
-Retained inputs (gravity tower + cosmological constant)
+Supplied inputs (gravity tower + cosmological constant)
 ----------------------------------------------------------------------------------------
   hbar              = 1.054572e-34 J s
   c                 = 2.997925e+08 m/s
@@ -21,7 +25,7 @@ Retained inputs (gravity tower + cosmological constant)
   [PASS] hbar > 0
   [PASS] c > 0
   [PASS] Lambda benchmark > 0
-  [PASS] Lambda = 3/R^2 (retained)
+  [PASS] Lambda = 3/R^2 (supplied)
   [PASS] upstream authority present: docs/GRAVITON_SPECTRAL_TOWER_THEOREM_NOTE_2026-04-24.md
   [PASS] upstream authority present: docs/VECTOR_GAUGE_FIELD_KK_TOWER_THEOREM_NOTE_2026-04-24.md
   [PASS] upstream authority present: docs/SCALAR_HARMONIC_TOWER_THEOREM_NOTE_2026-04-24.md
@@ -137,7 +141,7 @@ Summary: NEW gravity-cosmology spectral bridge
     gravity-tower particle interpretation is separately promoted.
 
 ========================================================================================
-TOTAL: PASS=48, FAIL=0
+TOTAL: PASS=50, FAIL=0
 ========================================================================================
 
 ----- stderr -----

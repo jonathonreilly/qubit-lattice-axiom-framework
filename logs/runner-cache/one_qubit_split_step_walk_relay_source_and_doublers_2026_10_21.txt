@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/one_qubit_split_step_walk_relay_source_and_doublers_2026_10_21.py
+runner_sha256: eca3f317076b5a934a2926a7294c7e93ccc541c1acc5cc3b91be8d44e63e5e10
+input_fingerprint_sha256: 60e4c120565db604e42cd9f5550aa5aa0854a51bd405cf7a80d5ee6c3396de4a
+timeout_sec: 1500
+exit_code: 0
+elapsed_sec: 4.47
+status: ok
+----- stdout -----
+[PASS] plane waves: auxiliary sign mean equals the group velocity  max |mean step - v| 1.4e-10
+[PASS] plane waves: burns + turns (independent axis signs, redraw 2 eps) equal eps v v including shear; burns alone do not  max |burns+turns - eps v v| 1.8e-11; burns alone >= 6.8e-02; |k| 0.1 along [1. 0. 0.]: eps 0.10000, |v| 1.0000; |k| 0.1 along [0.71 0.71 0.  ]: eps 0.09996, |v| 1.0000; |k| 0.1 along [0.58 0.58 0.58]: eps 0.09800, |v| 0.9592; |k| 0.2 along [0.89 0.45 0.  ]: eps 0.19979, |v| 1.0000; |k| 0.15 along [0.3  0.51 0.81]: eps 0.14705, |v| 0.9609
+[PASS] all sampled redraw coefficients are probabilities  eps values [np.float64(0.10000000000000002), np.float64(0.09995829685982469), np.float64(0.09799999576607799), np.float64(0.19978598249176824), np.float64(0.14704731677737934)]
+[PASS] k=(1,0,0) is outside the redraw probability domain  eps 0.9999999999999999; redraw coefficient 1.9999999999999998
+[PASS] long-wavelength dispersion: eps/|k| within 3% of one on the sampled directions  max |eps/|k| - 1| 2.00%
+[PASS] Brillouin-zone scan: eight zero-quasi-energy cones, four of each chirality  [-1. -1.  0.]: +1, [-1.  0. -1.]: +1, [-0.5 -0.5  0.5]: -1, [-0.5  0.5 -0.5]: -1, [ 0. -1. -1.]: +1, [0. 0. 0.]: +1, [ 0.5 -0.5 -0.5]: -1, [0.5 0.5 0.5]: -1
+per_site: the walk (substep order x, y, z), momenta, scan grid and chirality evaluation are supplied choices.
+lattice_wide: no physical matter content, derivation of the update or exact cubic covariance is established.
+elapsed_seconds 4.4
+
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

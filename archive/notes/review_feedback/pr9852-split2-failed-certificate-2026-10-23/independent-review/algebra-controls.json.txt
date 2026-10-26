@@ -1,0 +1,31 @@
+{
+  "generator_characteristic_polynomial": "(x + 2)*(x**2 - 2*x - 2)",
+  "cofactor_identities": [
+    true,
+    true,
+    true
+  ],
+  "float_interval_counterexample": {
+    "x": [
+      1.0,
+      1.0
+    ],
+    "y": [
+      5.551115123125783e-17,
+      5.551115123125783e-17
+    ],
+    "returned": [
+      1.0,
+      1.0
+    ],
+    "exact_sum": "18014398509481985/18014398509481984",
+    "upper_under_encloses": true
+  },
+  "generic_positive_mixture_derivative": {
+    "0.0001": 815.3526766072803,
+    "0.005": -26.000860832114242,
+    "0.02": 0.8143145143135372,
+    "0.3": -0.11156508007421491
+  },
+  "mixture_scope": "Counterexample to generic unimodality inference only; not an actual supplied-kernel counterexample."
+}

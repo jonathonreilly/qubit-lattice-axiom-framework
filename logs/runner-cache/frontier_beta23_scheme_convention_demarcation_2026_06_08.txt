@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_beta23_scheme_convention_demarcation_2026_06_08.py
-runner_sha256: 0cc48b7e6539106df4dff98a13d878934eb0003299649c1398d7e9a4a8308ca7
+runner_sha256: a8484fbdf683fa54961bf02ea9c04980080b98e10746d386e772a6d33a2e6fc4
+input_fingerprint_sha256: 9843af46e24c9edd5c26c8bf732d0d185a894b5c0c90f4b330aa8bb18ca25fd1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.53
+elapsed_sec: 3.33
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -23,14 +24,14 @@ Part 2  (T2) b2', b3' transformation laws + 't Hooft scheme (b2'=b3'=0) exact so
   [PASS] 't Hooft scheme EXISTS for every c1: c2, c3 solve LINEARLY (b2'=b3'=0)  (c2 = (b0*c1**2 + b1*c1 - b2)/b0)
   [PASS] (b2', b3') reach ANY prescribed (t2, t3) — the pair carries NO invariant content
 ==============================================================================
-Part 3  (T3) solvability denominators are exactly b0 and 2 b0 (AF = solvability)
+Part 3  (T3) solvability denominators are exactly b0 and 2 b0 (nonzero b0; no sign requirement)
 ==============================================================================
   [PASS] denominator of the c2 solve is b0; of the c3 solve is 2 b0  (den(c2)=b0, den(c3)=2*b0)
   [PASS] CONTROL: at b0 = 0 the c2-dependence of b2' vanishes (freedom lost; prescription unreachable unless b2' = b2 - b1 c1 happens to hit the target)
 ==============================================================================
 Part 4  (T4) inherited b0 = 7, b1 = 26 (N_f=6, bounded QCD context) = invariant set
 ==============================================================================
-  [PASS] b0 = (11 C_A - 4 T_F N_f)/3 = 7 exactly (retained Casimirs, N_f = 6)  (b0 = 7)
+  [PASS] b0 = (11 C_A - 4 T_F N_f)/3 = 7 exactly (supplied QCD polynomial, N_f = 6)  (b0 = 7)
   [PASS] b1 = (34/3)C_A^2 - 4 C_F T_F N_f - (20/3) C_A T_F N_f = 26 exactly  (b1 = 26)
   [PASS] AF: b0 = 7 > 0 -> the inherited QCD-running context supplies the solvability condition (T3) for its scheme freedom
   [PASS] at (b0,b1) = (7,26), c1 = 0: c2 = -b2/7 and c3 = -b3/14 — exact rationals in (b2, b3); the scheme reaching (b2',b3') = (0,0) is explicit  (c2 = -b2/7, c3 = -b3/14)
@@ -42,18 +43,10 @@ Part 5  (T5) teeth: the demarcation line cannot be moved; rescaling is not a sch
 ==============================================================================
 TOTAL: PASS=15 FAIL=0
 ==============================================================================
-SCOPE (demarcation, NOT closure): under normalization-preserving coupling
-  reparametrizations, b0 and b1 are IDENTICALLY invariant (derived) and b2, b3 are
-  FULLY adjustable (any prescribed pair; 't Hooft scheme explicit; solvable iff
-  b0 != 0 = asymptotic freedom).  The inherited bounded QCD-running coefficients
-  (b0, b1) = (7, 26) are exactly the invariant set, so the L3/L4 'MS-bar structural
-  gap' consists of CONVENTION-side coefficients: at fixed physical spacing the
-  native coefficient set carries the invariant running content, and the MS-bar labels
-  are a literature-comparison DICTIONARY (HK->MSbar conversion integrals = the
-  named admission, owned by the closure_c_l1a structural form; NOT computed here).
-  The alpha_s(M_Z) certificate's imports (dictionary, running, thresholds, Sommer)
-  are UNCHANGED; inherited color/g_bare gates are not retired; the sister b_3
-  N_f-dependence lane is untouched.  No new axiom.
+SCOPE: same-theory scale-independent formal maps with unit leading coefficient.
+b0,b1 are invariant; the fixed-c1 solve for b2,b3 works for nonzero b0, of either sign.
+Supplied QCD polynomials give (7,26); they do not prove framework running or matching.
+Physical HK coupling, continuum identification, normalization, vertices and fermion matching remain open.
 
 ----- stderr -----
 

@@ -1,44 +1,13 @@
 #!/usr/bin/env python3
-"""
-DM PMNS graph-first ordered-chain nonzero-current activation theorem.
-
-Question:
-  Can one derive an explicit sole-axiom nonzero-current law on the retained
-  hw=1 response family itself?
-
-Answer:
-  Yes.
-
-  The graph-first selector plus graph-first cycle-frame theorem already fix:
-    - the ordered diagonal projectors E11, E22, E33,
-    - the canonical forward oriented-cycle frame E12, E23, E31,
-    - and therefore the adjacent ordered chain 1 -> 2 -> 3.
-
-  On that ordered chain there is one unique normalized Hermitian grading
-  element N satisfying
-
-      [N, E12] = -E12,
-      [N, E23] = -E23,
-      min spec(N) = 1,
-
-  namely N = diag(1,2,3).
-
-  Combining that grading with the exact forward cycle C = E12 + E23 + E31
-  gives the canonical sole-axiom active law
-
-      A_ord = N + C.
-
-  This law already produces a nonzero native nontrivial-character current
-
-      J_chi(A_ord) = 1,
-
-  and that current survives exactly on the retained hw=1 response family.
-
-  By the strict/native last-mile reduction theorem, this meets the reduced
-  constructive current-activation target on that response family.
+"""Supplied ordered-chain fixture and response reconstruction.
+Normalized N=diag(1,2,3), chosen C and A=N+C give J_chi=1.
+This constructs a fixture, not a physical source law or current-value selection.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ['docs/DM_LEPTOGENESIS_NE_CHARGED_SOURCE_RESPONSE_REDUCTION_NOTE_2026-04-16.md', 'docs/DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_LAW_DERIVATION_NOTE_2026-04-16.md', 'docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md', 'docs/DM_PMNS_GRAPH_FIRST_ORDERED_CHAIN_NONZERO_CURRENT_ACTIVATION_THEOREM_NOTE_2026-04-21.md', 'docs/DM_WILSON_TO_DWEH_HERMITIAN_SOURCE_FAMILY_TARGET_NOTE_2026-04-18.md', 'docs/DM_WILSON_TO_DWEH_LOCAL_CHAIN_PATH_ALGEBRA_TARGET_NOTE_2026-04-18.md', 'docs/PMNS_GRAPH_FIRST_CYCLE_FRAME_SUPPORT_NOTE.md', 'docs/PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md', 'docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md', 'scripts/frontier_dm_leptogenesis_pmns_projector_interface.py', 'scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18.py', 'scripts/frontier_graph_first_selector_derivation.py', 'scripts/frontier_graph_first_su3_integration.py', 'scripts/frontier_pmns_active_four_real_source_from_transport.py', 'scripts/frontier_pmns_c3_character_holonomy_closure.py', 'scripts/frontier_pmns_c3_character_mode_reduction.py', 'scripts/frontier_pmns_c3_nontrivial_current_boundary.py', 'scripts/frontier_pmns_current_bank_value_selection_nogo.py', 'scripts/frontier_pmns_graph_first_cycle_frame_support.py', 'scripts/frontier_pmns_lower_level_end_to_end_closure.py', 'scripts/frontier_pmns_oriented_cycle_channel_value_law.py', 'scripts/frontier_pmns_oriented_cycle_reduced_channel_nonselection.py', 'scripts/frontier_pmns_oriented_cycle_selection_structure.py', 'scripts/frontier_pmns_sole_axiom_hw1_source_transfer_boundary.py', 'scripts/frontier_pmns_three_flux_holonomy_closure.py', 'scripts/frontier_pmns_twisted_flux_transfer_holonomy_boundary.py', 'scripts/frontier_pmns_uniform_scalar_deformation_boundary.py', 'scripts/pmns_lower_level_utils.py']
 
 import sys
 from pathlib import Path
@@ -175,7 +144,7 @@ def part3_the_ordered_chain_law_activates_the_native_current() -> np.ndarray:
     j = nontrivial_character_current(a_ord)
 
     check(
-        "The canonical sole-axiom active law is N + C on the ordered chain",
+        "The canonical supplied-fixture active law is N + C on the ordered chain",
         np.linalg.norm(a_ord - (n + CYCLE)) < 1e-12,
     )
     check(
@@ -235,23 +204,16 @@ def part5_reduction_consequence() -> None:
     print("PART 5: REDUCTION CONSEQUENCE")
     print("=" * 88)
 
-    reduction_note = read(
-        "docs/DM_PMNS_NATIVE_CURRENT_LAST_MILE_REDUCTION_THEOREM_NOTE_2026-04-21.md"
-    )
-    check(
-        "The prior last-mile reduction note records nonzero J_chi production as the exact remaining strict/native burden",
-        "derive a sole-axiom law producing nonzero J_chi" in reduction_note,
-    )
     j = nontrivial_character_current(ordered_chain_active_law())
     check(
-        "The ordered-chain theorem supplies one explicit sole-axiom nonzero-current law",
+        "The ordered-chain theorem supplies one explicit supplied-fixture nonzero-current law",
         abs(j - 1.0) < 1e-12,
         f"J_chi(A_ord)={j:.12f}",
     )
     check(
-        "So the reduced constructive target is met on the retained hw=1 response family",
-        abs(j) > 1e-12 and "derive a sole-axiom law producing nonzero J_chi" in reduction_note,
-        "reduction target + exact current activation",
+        "The supplied fixture has nonzero current",
+        abs(j) > 1e-12,
+        "numerical factor only; downstream documentary factor is checked separately",
     )
 
 
@@ -282,7 +244,7 @@ def main() -> int:
     print("=" * 88)
     print()
     print("Question:")
-    print("  Can one derive an explicit sole-axiom nonzero-current law on the")
+    print("  Can one derive an explicit supplied-fixture nonzero-current law on the")
     print("  retained hw=1 response family?")
 
     part1_graph_first_and_chain_algebra_fix_the_ordered_carrier()
@@ -301,7 +263,7 @@ def main() -> int:
     print("    - the canonical ordered-chain law A_ord = N + C produces J_chi = 1")
     print("    - that current survives exactly on the retained response family")
     print()
-    print("  Therefore one explicit sole-axiom nonzero-current law is derived on")
+    print("  Therefore one explicit supplied-fixture nonzero-current law is derived on")
     print("  the retained hw=1 response family, meeting the reduced constructive target.")
     print()
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")

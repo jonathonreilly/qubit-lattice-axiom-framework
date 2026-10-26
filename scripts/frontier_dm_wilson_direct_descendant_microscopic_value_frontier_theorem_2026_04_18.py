@@ -1,17 +1,13 @@
 #!/usr/bin/env python3
-"""
-Direct Wilson-descendant frontier reduction after auditing the local Schur note.
-
-Purpose:
-  Verify the honest current-main theorem order:
-    1. once D, D_-, L_e, and E_e are supplied, the local Schur family is
-       already downstream algebra;
-    2. current main still lacks a Wilson-native descendant theorem;
-    3. so the real frontier is microscopic value law for D_- / L_e plus any
-       Wilson-native support provenance still needed for E_e.
+"""Conditional supplied-input or documentary diagnostics.
+No unique physical target, semantic exhaustion or absence theorem follows
+from microscopic-selector text or the Wilson keyword inventory.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = ('docs/DM_LEPTOGENESIS_FULL_MICROSCOPIC_REDUCTION_NOTE_2026-04-16.md', 'docs/DM_LEPTOGENESIS_NE_CHARGED_SOURCE_RESPONSE_REDUCTION_NOTE_2026-04-16.md', 'docs/DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_LAW_DERIVATION_NOTE_2026-04-16.md', 'docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md', 'docs/DM_WILSON_DIRECT_DESCENDANT_LOCAL_SCHUR_SOURCE_FAMILY_THEOREM_NOTE_2026-04-18.md', 'docs/DM_WILSON_DIRECT_DESCENDANT_MICROSCOPIC_VALUE_FRONTIER_THEOREM_NOTE_2026-04-18.md', 'docs/DM_WILSON_TO_DWEH_HERMITIAN_SOURCE_FAMILY_CURRENT_BANK_BOUNDARY_NOTE_2026-04-18.md', 'scripts/dm_leptogenesis_exact_common.py', 'scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py', 'scripts/frontier_dm_leptogenesis_pmns_projector_interface.py')
 
 import sys
 from pathlib import Path
@@ -174,22 +170,9 @@ def main() -> int:
         "It is the actual microscopic charge-preserving operator `D`." in full_reduction
         and "the actual microscopic value law of the full charge-preserving operator `D`" in full_reduction,
     )
-    check(
-        "The charged source-response note already reduces the remaining object further to D_- and its Schur pushforward",
-        "`dW_e^H` is the exact charged-sector Schur pushforward" in charged_reduction
-        and "evaluate the microscopic charge-`-1` operator `D_-` and its Schur pushforward" in charged_reduction,
-    )
-    check(
-        "The projected-source note already says once dW_e^H is known the downstream selected transport column is algorithmic",
-        "selected flavored transport column is algorithmic once" in projected_reduction
-        and "derive `dW_e^H` on `E_e` from `Cl(3)` on `Z^3`" in projected_reduction,
-    )
-    check(
-        "Current main still does not contain a Wilson-to-dW_e^H descendant theorem or Wilson Hermitian source family",
-        "does **not** already have" in current_bank
-        and "a Wilson-to-`dW_e^H` descendant theorem" in current_bank
-        and "or a Wilson-side Hermitian source family" in current_bank,
-    )
+    print("DOCUMENTARY SCOPE (unscored): charged/projected source identities assume supplied dW_e^H, simple spectrum, ascending labels and finite transport inputs; no physical value or universal target is derived.")
+    print("DOCUMENTARY SCOPE (unscored): charged/projected source identities assume supplied dW_e^H, simple spectrum, ascending labels and finite transport inputs; no physical value or universal target is derived.")
+    print("UNSCORED SCOPE: supplied reconstruction/documentary context; no unique-target or absence theorem follows.")
 
     print("\n" + "=" * 88)
     print("PART 2: THE LOCAL SCHUR NOTE IS CONDITIONAL ON SUPPLIED D AND E_e")
@@ -278,11 +261,7 @@ def main() -> int:
     print("\n" + "=" * 88)
     print("PART 5: FRONTIER CONCLUSION")
     print("=" * 88)
-    check(
-        "The honest remaining direct-descendant frontier is microscopic value law for D_- / L_e plus any Wilson-native support provenance for E_e",
-        True,
-        "conditional local Schur algebra is downstream once D and E_e are supplied",
-    )
+    print("UNSCORED SCOPE: supplied reconstruction/documentary context; no unique-target or absence theorem follows.")
 
     print("\n" + "=" * 88)
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")

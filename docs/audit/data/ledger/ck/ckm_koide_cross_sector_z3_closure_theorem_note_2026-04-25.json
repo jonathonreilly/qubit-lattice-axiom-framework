@@ -14,20 +14,16 @@
   "chain_closure_explanation": null,
   "claim_id": "ckm_koide_cross_sector_z3_closure_theorem_note_2026-04-25",
   "claim_scope": null,
-  "claim_type": "positive_theorem",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "author_hint",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "three_generation_structure_note",
-    "ckm_magnitudes_structural_counts_theorem_note_2026-04-25",
-    "minimal_axioms_2026-04-11",
-    "cl3_color_automorphism_theorem",
-    "cl3_taste_generation_theorem"
+    "cl3_color_automorphism_theorem"
   ],
   "direct_in_degree": 6,
   "effective_status": "unaudited",
@@ -40,7 +36,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "1250bbe8bc96022ea496decafd99b39809c1a1266426d9845d551d3fcc585d93",
+  "note_hash": "9ce91b6d4d14f86abb3fd23cb1ed7be630777d4b1edcf780fde18c5baa92d88c",
   "note_path": "docs/CKM_KOIDE_CROSS_SECTOR_Z3_CLOSURE_THEOREM_NOTE_2026-04-25.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -81,7 +77,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_ckm_koide_cross_sector_z3_closure.py",
-  "title": "Cross-Sector Closure N_gen = N_color = 3 via Retained Three-Generation Structure and Retained Magnitudes Counts",
+  "title": "Conditional equality of supplied generation and color counts",
   "transitive_descendants": 27,
   "verdict_rationale": null
 }

@@ -25,7 +25,7 @@ bare_retained_allowed: false
 
 ## Target Blocker
 
-The audited-conditional row `hierarchy_dimensional_compression_note` still
+The diagnostic parent `hierarchy_dimensional_compression_note` still
 needs a physical electroweak order-parameter/readout bridge identifying the
 fixed positive D=4 density with the EW Higgs order-parameter coordinate and
 the relevant endpoint coefficient surface.
@@ -45,9 +45,9 @@ not derive the absolute EW scale, and does not use an observed EW value.
 
 ## Theorem
 
-Using only the vector normalization in the defined algebra of
+Define the vector explicitly below. The related convention in
 [`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md),
-take the neutral representative
+is context, not imported authority. Take the neutral representative
 
 ```text
 H(v) = (0, v/sqrt(2))^T,       v > 0.
@@ -77,7 +77,7 @@ is exactly
 rho_* = A(L) v(L)^4.
 ```
 
-The cited theorem supplies only this vector identity. It does not make `H` a
+The identity follows directly by multiplying the displayed vector by its conjugate transpose. It does not make `H` a
 physical Higgs carrier, make `v` a vacuum expectation value, establish gauge
 invariance, or identify `rho_*` with a physical density. Those are precisely
 the still-open physical bridge hypotheses of this note.
@@ -101,7 +101,7 @@ A(y^4 - x^4) = A(y - x)(y + x)(y^2 + x^2) > 0.
 ```
 
 Thus the map `v -> A v^4` is strictly increasing on `v > 0`, hence injective
-there, so a positive density fixes exactly one positive coordinate; on all of
+there. Existence follows from `v=(rho_*/A)^(1/4)>0`, so a positive density fixes exactly one positive coordinate; on all of
 `R` the same map is even, so positivity of `v` is what selects the branch
 rather than a convention.
 
@@ -112,7 +112,7 @@ coefficient ratio is a perfect fourth power: `A_ref = 16`, `A_L = 81`, and
 `(v_L/v_ref)^4 = 16/81 = A_ref/A_L`, all exact in rational arithmetic. Second,
 the real solve at the `7/8` endpoint pair, where
 `(7/8)^(1/4) = 0.967168210134` reproduces the fixed density with a relative
-residual below `1e-15`.
+residual tested against `1e-15`; the current capture must establish that outcome.
 
 This is the same fourth-root readout as the fixed-density bridge
 [`HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`](HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md),
@@ -122,15 +122,16 @@ additional hypothesis.
 
 ## Compatibility with the defined scalar readouts
 
-The defined quadratic-form theorem gives the formal scalar readouts
+Supply real `g,gY`, with `g != 0`, and `v>0`. Define the formal scalar readouts
 
 ```text
 MW2 = g^2 v^2 / 4,
 MZ2 = (g^2 + gY^2) v^2 / 4,
-rho = 1.
+cos2 = g^2/(g^2+gY^2),
+rho = MW2/(MZ2*cos2) = 1.
 ```
 
-Thus at fixed `g,gY` the positive square roots of the formal readouts scale
+All denominators are nonzero under these hypotheses; `g=0` would make this rho ratio undefined and is excluded. Thus at fixed `g,gY` the positive square roots of the formal readouts scale
 linearly with `v`:
 
 ```text
@@ -149,8 +150,7 @@ VEV still requires the open physical bridge stated above.
 
 ## Endpoint Application Boundary
 
-The hierarchy endpoint coefficient note supplies bounded endpoint algebra such
-as
+Supply the following coefficients, whose finite-sum derivation is given in the conditional coefficient bridge, without importing a physical interpretation:
 
 ```text
 A_2 = 1/(8 u_0^2),
@@ -200,7 +200,7 @@ drift apart silently.
 | S1 order-parameter coordinate | `q = 2 H^dagger H = v^2` over a rational grid; exact `rho_* = A v^4 > 0` over an `(A, v)` grid; the positive strict-monotonicity factorization; exact fourth-root recovery of the coordinate; the even-branch control | 5 |
 | S2 fixed-density fourth-root law | endpoint ratio `7/8` independent of `u_0^2`; the exact rational fourth-power witness; the real endpoint solve to machine precision; the two negative controls measured in the density equation | 4 |
 | S3 formal scalar-readout compatibility | `rho = 1` across couplings and coordinates; `(MW2(L)/MW2(ref))^2 = A_ref/A(L)` computed exactly; independence from `(g, gY)` | 3 |
-| S4 source firewalls | bounded-support status fields; the load-bearing markdown links; the stated open residuals; the parent-note citation | 4 |
+| S4 source firewalls | bounded-support status fields; the related context/conditional-bridge links; the stated open residuals; the parent-note citation | 4 |
 | S5 verification-total consistency | this table, the Expected fence, and the runner's executed per-section counts agree | 1 |
 
 ```text
@@ -221,3 +221,13 @@ Expected:
 TOTAL: PASS=17 FAIL=0
 VERDICT: bounded support passes for the EW order-parameter D=4 density readout bridge. Endpoint selection, absolute scale, and hierarchy-to-physical-Higgs-density identification remain open.
 ```
+
+## Recovery and execution boundary
+
+The complete preceding argument, runner and cache are preserved at Git commit
+`6919e7f72cc95c3df7d6a4e9aa1f43ab6d449dff` and in the external original-source
+inventory `repair-9849-dimensional-readers/original-identities.json`. Historical
+ledger assertions are not current scientific premises; no ledger is substituted
+or restamped. The old cache is historical until a bounded execution binds the
+revised source and its actual inputs. This source checkpoint claims no fresh run
+or independent audit verdict.

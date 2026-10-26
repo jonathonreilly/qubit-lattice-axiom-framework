@@ -14,20 +14,16 @@
   "chain_closure_explanation": null,
   "claim_id": "dm_selector_shifted_relative_action_recovered_packet_closure_theorem_note_2026-04-21",
   "claim_scope": null,
-  "claim_type": "positive_theorem",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "author_hint",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16",
-    "dm_selector_relative_action_recovered_branch_separation_support_theorem_note_2026-04-21",
-    "dm_selector_relative_action_recovered_projection_support_theorem_note_2026-04-21",
-    "dm_selector_shifted_doublet_imag_sign_support_theorem_note_2026-04-21",
-    "dm_abcc_exact_target_surface_source_cubic_closure_theorem_note_2026-04-21"
+    "dm_selector_supplied_bank_seed_relative_action_finite_diagnostic_note_2026-10-23"
   ],
   "direct_in_degree": 0,
   "effective_status": "unaudited",
@@ -68,7 +64,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "087e1fecdea97720fce2b6b40afe01f78f655228a55f29b317198fb348a4fb52",
+  "note_hash": "4e4d00b95731c0dae01f367c28d5e5c2dcdca7c77cd1863c0683d2dd107a298c",
   "note_path": "docs/DM_SELECTOR_SHIFTED_RELATIVE_ACTION_RECOVERED_PACKET_CLOSURE_THEOREM_NOTE_2026-04-21.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -146,7 +142,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_dm_selector_shifted_relative_action_recovered_packet_closure_2026_04_21.py",
-  "title": "DM Selector Shifted-Relative-Action Recovered-Packet Closure Theorem",
+  "title": "Supplied shifted-relative-action finite packet diagnostic",
   "transitive_descendants": 0,
   "verdict_rationale": null
 }

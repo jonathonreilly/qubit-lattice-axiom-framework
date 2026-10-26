@@ -14,17 +14,16 @@
   "chain_closure_explanation": null,
   "claim_id": "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28",
   "claim_scope": null,
-  "claim_type": "bounded_theorem",
-  "claim_type_author_hint": "bounded_theorem",
-  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
-    "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10"
+    "g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28"
   ],
   "direct_in_degree": 2,
   "effective_status": "unaudited",
@@ -37,7 +36,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "5917d1d8c52785f3224c1658e624a7c753eeedb6c00c90040c2154c1f9bb99ce",
+  "note_hash": "b26e6bda02e097079b15756d25dfe7229467dc72c8e8d4aa28d895a34345f938",
   "note_path": "docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -651,7 +650,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -660,7 +659,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py",
-  "title": "Dirac / Weyl Fermion DOF From Lorentz and Chirality Admission Bridge Note",
+  "title": "Supplied Dirac/Weyl matrix fixtures and count comparison",
   "transitive_descendants": 8,
   "verdict_rationale": null
 }

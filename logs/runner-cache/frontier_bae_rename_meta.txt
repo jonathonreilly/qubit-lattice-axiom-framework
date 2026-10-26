@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_bae_rename_meta.py
-runner_sha256: 38f1754f2d4dcf5aed001fa36cfb206242f21934e63eb67c88fbcd097290a2ae
+runner_sha256: 872b2e57e85c3d3902d698abd42e88434947405d7f2fc3a66732256a934a4bc7
+input_fingerprint_sha256: 93ee23b7a71e594f759524b7679374b1d1ff0596d09746c71dad4adebe1c298d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 BAE-rename meta clarification check

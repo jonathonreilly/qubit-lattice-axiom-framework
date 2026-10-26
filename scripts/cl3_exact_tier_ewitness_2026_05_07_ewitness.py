@@ -1,80 +1,12 @@
-"""
-Exact-tier ε_witness push: numba-accelerated path-integral W1 closure.
-
-Authority role
---------------
-Source-note proposal -- audit verdict and downstream status set only by
-the independent audit lane.
-
-Strategy
-========
-The prior bounded theorem (PR #674) established:
-  - <P_iso>(beta_W=6, 4^4)         = 0.5970 ± 0.0010
-  - <P_sigma>(g^2=1, xi=4, 4^3x8)  = 0.414  ± 0.002
-  - rel_shift = 0.21 · s_t = 0.105·g^2/xi   (Convention C-iso, leading)
-
-This runner pushes toward ε_witness ~ 3×10⁻⁴ via three engineering paths:
-
-  Path A: numba-accelerated MC for ~10x speedup. Refactor heatbath
-    inner loop into @njit kernels. Run high-statistics ensembles
-    (5000+ measurement sweeps) with multi-seed averaging.
-
-  Path B: Larger lattices for thermodynamic-limit extrapolation.
-    Spatial volumes L^3 in {4, 6} (cap at 6^3 due to compute).
-    Fit <P>(L) = <P>_inf + a/L^2 + b/L^4.
-
-  Path C: Convention C-iso analytic refinement to higher order.
-    Compute NLO O(g^4/xi^2) correction to rel_shift = 0.105·g^2/xi.
-    Verify via direct heat-kernel-vs-Wilson temporal-plaquette eval
-    at multiple xi.
-
-Implementation
-==============
-- numba-jitted SU(2) and SU(3) helpers, vectorized matmul
-- @njit heatbath_link / overrelax_link kernels
-- Vectorized plaquette measurement
-- Block-jackknife error estimation
-- Multi-seed ensemble averaging
-
-Anisotropic Wilson action (standard Wilson convention):
-    S = -(beta_sigma/N_c) sum_{spatial-spatial p} Re Tr U_p
-        -(beta_tau/N_c)   sum_{spatial-temporal p} Re Tr U_p
-with
-    beta_sigma = 2 N_c / (g^2 xi),   beta_tau = 2 N_c xi / g^2.
-
-Plaquette expectation:  <P> = (1/N_c) <Re Tr U_plaq>.
-
-In the Hamilton limit xi -> infinity, <P_sigma> -> <P_H>_KS, the
-Hamilton-form spatial plaquette expectation in H_KS at g^2 = bare.
-
-References
-----------
-- Cabibbo N., Marinari E. (1982), Phys. Lett. B119, 387 -- SU(N)
-  pseudo-heat-bath via SU(2) subgroup sweeps.
-- Kennedy A.D., Pendleton B.J. (1985), Phys. Lett. B156, 393 -- SU(2)
-  exact heat-bath sampler.
-- Lüscher M., Wolff U. (1990), Nucl. Phys. B339, 222 -- error analysis
-  / autocorrelation in lattice simulations.
-- Engels et al. (1990), Nucl. Phys. B342, 7 -- SU(3) plaquette benchmarks.
-- Klassen T. (1998), Nucl. Phys. B533, 557 -- anisotropic SU(3) tuning.
-- Karsch F. (1982), Nucl. Phys. B205, 285 -- anisotropic SU(2) couplings.
-- Drouffe J.M., Zuber J.B. (1983), Phys. Rep. 102 -- strong-coupling expansion.
-- Menotti P., Onofri E. (1981), Nucl. Phys. B190, 288 -- heat-kernel action.
-
-Verifies:
-  1. Self-test:  isotropic SU(3) at beta=6, agrees with Engels 1990.
-  2. Path A:    high-statistics 4^3 x 16 anisotropic xi=4 with 5+ seeds.
-  3. Path B:    finite-size scaling fit on {4^3 x 16, 6^3 x 24}.
-  4. Path C:    NLO analytic refinement of Convention C-iso.
-
-Usage:
-    python3 scripts/cl3_exact_tier_ewitness_2026_05_07_ewitness.py
-        --mode self_test
-    python3 scripts/cl3_exact_tier_ewitness_2026_05_07_ewitness.py
-        --mode all  --n_thermalize 200 --n_measure 1000
+"""SU(2) single-plaquette diagnostic, plus historical SU(3) MC modes.
+Default Path C compares action deficits, not trace plaquettes. Its finite-grid
+fit is not an SU(3) systematic bound. Explicit MC modes are preserved but not
+validated by the B02 correction; no Hamilton-limit convergence is certified.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 120
 
 import argparse
 import json
@@ -684,9 +616,11 @@ def haar_su2(theta):
 
 def single_plaq_wilson_su2(beta):
     """SU(2) Wilson single-plaquette <1 - (1/N_c) Re Tr U> = 1 - I_2(beta)/I_1(beta)."""
-    from scipy.special import iv as bessel_iv
+    from scipy.special import ive as bessel_iv
+    if beta < 0:
+        raise ValueError("beta must be nonnegative")
     if beta < 1e-10:
-        return 0.5
+        return 1.0 - beta / 4.0
     return float(1.0 - bessel_iv(2, beta) / bessel_iv(1, beta))
 
 
@@ -696,26 +630,8 @@ def single_plaq_hk_su2(s):
 
 
 def path_c_nlo_refinement(g2_list, xi_list, fit_max_order=4):
-    """Path C: NLO refinement of Convention C-iso.
-
-    For SU(2) Wilson vs heat-kernel:
-        <P>_W(beta_W) - <P>_HK(s_t) = ?  with beta_W = N_c/s_t
-
-    The leading-order match is exact at infinite beta_W (small s_t).
-    The relative shift is known from prior to be linear in s_t with
-    coefficient ~0.21 for SU(2). Here we extend:
-
-      1. Direct numerical eval of (P_W - P_HK)/P_HK at xi in {1,2,4,8,16,32,64}
-         to extract polynomial coefficients in s_t.
-      2. Fit rel_shift(s_t) = a1·s_t + a2·s_t^2 + a3·s_t^3 + ...
-         to extract NLO and beyond.
-      3. Compare to small-s_t Taylor expansion:
-         P_HK = 3s/4 - 9s^2/32 + 27s^3/128 - ...
-         P_W(2/s) = ?  via Bessel asymptotic.
-
-    Returns dict with rows, leading and NLO fitted coefficients.
-    """
-    print("\n=== Path C (NLO): Convention C-iso analytic refinement ===")
+    """Fit a supplied finite grid; report separate small-s asymptotic coefficients."""
+    print("\n=== Path C: SU(2) single-plaquette diagnostic ===")
     print("    Direct comparison of SU(2) Wilson vs HK temporal plaquette")
     print("    extracting linear, quadratic, cubic coefficients in s_t.\n")
 
@@ -779,24 +695,15 @@ def path_c_nlo_refinement(g2_list, xi_list, fit_max_order=4):
         for i, a in enumerate(a_coefs, start=1):
             print(f"    a_{i} (coefficient of s_t^{i}) = {a:+.6f}")
 
-    print("\n  Compare to leading Taylor expansion of (P_W - P_HK):")
-    print("    SU(2) HK: P_HK(s) = 3s/4 - 9s^2/32 + 27s^3/128 - ...")
-    print("    SU(2) Wilson at beta = 2/s: P_W(beta) = 1 - I_2(beta)/I_1(beta).")
-    print("    For beta -> infinity (s -> 0):")
-    print("      I_2(b)/I_1(b) = 1 - 3/(2b) + 15/(8b^2) - 105/(16b^3) + ...")
-    print("                    = 1 - 3s/4 + 15 s^2/32 - 105 s^3/128 + ...")
-    print("    Hence P_W(2/s) = 3s/4 - 15 s^2/32 + 105 s^3/128 - ...")
-    print("\n    (P_W - P_HK)(s) = (15/32 - 9/32) s^2 + (-105/128 + 27/128) s^3 + ...")
-    print("                    = (3/16) s^2 - (39/64) s^3 + ...")
-    print("                    = 0.1875 s^2 - 0.609 s^3 + ...")
-    print("\n    rel_shift(s) = (P_W - P_HK)/P_HK(s)")
-    print("                ~ (0.1875 s^2 - 0.609 s^3) / (3s/4 - 9s^2/32)")
-    print("                ~ 0.25 s + O(s^2)")
-    print("    Leading coefficient: 0.250 (analytic).")
-    print(f"    Numerical fit a_1: {a_coefs[0]:+.4f}" if a_coefs[0] is not None else "")
+    print("\n  SU(2) asymptotics as s -> 0+ (D denotes action deficit):")
+    print("    I2(2/s)/I1(2/s) = 1 - 3s/4 + 3s^2/32 + 3s^3/64 + 63s^4/2048 + O(s^5)")
+    print("    D_HK = 3s/4 - 9s^2/32 + 9s^3/128 - 27s^4/2048 + O(s^5)")
+    print("    (D_W-D_HK)/D_HK = s/4 - s^2/16 - 9s^3/128 + O(s^4)")
+    print("    Finite-grid coefficients are fit diagnostics, not Taylor coefficients or error bounds.")
+    print("    No SU(3) or Hamilton-limit error follows from this SU(2) comparison.")
 
     # Predict at canonical operating points
-    print("\n  Predicted Convention C-iso shift at canonical operating points:")
+    print("\n  Fitted SU(2) single-plaquette relative deficit shift:")
     if a_coefs[0] is not None:
         for xi_pred in [1.0, 2.0, 4.0, 8.0, 16.0, 32.0]:
             s = 1.0 / (2.0 * xi_pred)  # at g^2 = 1
@@ -814,7 +721,7 @@ def path_c_nlo_refinement(g2_list, xi_list, fit_max_order=4):
         "analytic_LO_coef": 0.25,
         "interpretation": (
             "rel_shift(s_t) = a_1*s_t + a_2*s_t^2 + ... where a_1 = 1/4 analytically "
-            "(SU(2)) and a_2 captures NLO Convention C-iso correction beyond linear."
+            "(SU(2)); fitted coefficients are not asymptotic coefficients or SU(3) error bounds."
         ),
     }
 
@@ -925,7 +832,7 @@ def main() -> int:
     parser.add_argument(
         "--mode", choices=[
             "self_test", "path_a", "path_b", "path_c", "all", "fast",
-        ], default="fast",
+        ], default="path_c",
     )
     parser.add_argument("--g2", type=float, default=1.0)
     parser.add_argument("--xi", type=float, default=4.0)

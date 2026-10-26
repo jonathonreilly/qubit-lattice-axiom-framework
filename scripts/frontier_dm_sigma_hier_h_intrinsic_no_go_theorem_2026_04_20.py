@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
 """
-Frontier runner - H-intrinsic / mu<->tau-even no-go for sigma_hier.
+Finite supplied-pin illustration of conditional fixed-H / row-swap invariance.
+No complete source census, physical selector exclusion or I12 closure is proved.
 """
 
 from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = ['docs/DM_SIGMA_HIER_H_INTRINSIC_NO_GO_THEOREM_NOTE_2026-04-20.md', 'scripts/frontier_sigma_hier_uniqueness_theorem.py']
 
 import sys
 
@@ -46,11 +50,11 @@ def main() -> int:
     p_minus = vecs[list(sigma_minus), :]
     swap_mutau = np.array([[1.0, 0.0, 0.0], [0.0, 0.0, 1.0], [0.0, 1.0, 0.0]])
 
-    print("=== Part 1: surviving pair at the pin ===")
+    print("=== Part 1: supplied pair at the pin ===")
     check("sigma=(2,0,1) passes all 9 magnitude bands", count_passes(np.abs(p_plus)) == 9)
     check("sigma=(2,1,0) passes all 9 magnitude bands", count_passes(np.abs(p_minus)) == 9)
     check(
-        "The two surviving PMNS candidates differ only by the mu<->tau row swap",
+        "The two supplied row-labeled candidates differ only by the mu<->tau row swap",
         np.allclose(p_plus, swap_mutau @ p_minus, atol=1e-12),
     )
 
@@ -74,22 +78,22 @@ def main() -> int:
         abs_rows_plus == abs_rows_minus,
     )
     check(
-        "The row-labeled magnitude matrices are not identical, so the no-go is not overclaimed",
+        "The row-labeled magnitude matrices are not identical, so the conditional scope is explicit",
         not np.allclose(np.abs(p_plus), np.abs(p_minus), atol=1e-12),
     )
 
     sin_plus = jarlskog_sin_dcp(p_plus)
     sin_minus = jarlskog_sin_dcp(p_minus)
-    check("The Jarlskog sign flips across the surviving pair", np.sign(sin_plus) == -np.sign(sin_minus))
+    check("The Jarlskog sign flips across the supplied pair", np.sign(sin_plus) == -np.sign(sin_minus))
     check(
-        "The two surviving values are numerically +/-0.987",
+        "The two supplied values are numerically +/-0.987",
         abs(abs(sin_plus) - 0.9873607592) < 1e-6 and abs(abs(sin_minus) - 0.9873607592) < 1e-6,
         f"sin+={sin_plus:+.10f}, sin-={sin_minus:+.10f}",
     )
 
-    print("\n=== Part 4: N5 execution certificate — what this runner resolves ===")
+    print("\n=== Part 4: finite execution coverage — no global or physical certificate ===")
     print(
-        "per_element: checked — the surviving pair is qualified element by element, not "
+        "per_element: checked — the supplied pair is qualified element by element, not "
         "by a pooled norm: count_passes(|P|) tests all 9 individual PMNS magnitude bands "
         "separately for each of sigma=(2,0,1) and sigma=(2,1,0), and the row-labeled "
         "magnitude matrices are then compared entrywise at atol 1e-12 to show they do "
@@ -99,7 +103,7 @@ def main() -> int:
         "per_site: checked and not executed — no lattice site index exists in this "
         "computation. Everything is read off one pinned 3x3 Hermitian H_pin at "
         "(m_*, delta_*, q_+*) = (0.657061, 0.933806, 0.715042), whose three rows are "
-        "charged-lepton flavor labels; the surviving ambiguity is a labeling question at "
+        "charged-lepton flavor labels; the supplied labeling comparison is a labeling question at "
         "a single point, so there is no site to resolve."
     )
     print(
@@ -112,21 +116,21 @@ def main() -> int:
     print(
         "per_block: checked — the mu<->tau swap is block-resolved: it fixes the electron "
         "row and acts only inside the 2x2 mu-tau doublet block, and the runner verifies "
-        "P_+ = S_(mu tau) P_- to atol 1e-12. The Jarlskog sign flip between +/-0.9873607592 "
+        "P_+ = S_(mu tau) P_- to atol 1e-12. The computed sin(delta_CP) sign flip between +/-0.9873607592 "
         "is produced entirely by that one doublet-block transposition."
     )
     print(
         "lattice_wide: checked and not executed — there is no lattice, extent, or "
-        "asymptotic limit here. The evidence is exact linear algebra at the single pinned "
+        "asymptotic limit here. The evidence is floating numerical illustration at the single supplied "
         "chamber point above; no volume scaling or continuum statement is attempted, and "
-        "none is needed since the obstruction is already exhibited at that one pin."
+        "no physical or exhaustive obstruction is inferred from that one pin."
     )
 
     print("\nInterpretation:")
-    print("  The surviving sigma_hier ambiguity is not an ambiguity of H_pin.")
-    print("  It is the residual mu<->tau flavor-label ambiguity after")
+    print("  The compared labels use the same supplied H_pin.")
+    print("  The comparison is a mu<->tau row-label swap after")
     print("  diagonalization. Any selector family living only on H_pin, or any")
-    print("  mu<->tau-even PMNS scalar family, is blind to it.")
+    print("  explicitly mu<->tau-even scalar family, has equal values under these premises.")
     print(f"\nPASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1
 

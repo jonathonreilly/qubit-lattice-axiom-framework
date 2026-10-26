@@ -8,15 +8,15 @@ substitution implication: given
   (X1) Native SU(2) beta=16 one-plaquette interval support
        u_0(SU(2)) in [u_lo, u_hi] = [96/100, 98/100], supplied by the
        2026-06-18 direct class-angle integral bridge.
-  (X2) Retained b_2 = 19/6 (SU2_WEAK_BETA_COEFFICIENT_NARROW retained_bounded).
-  (X3) Retained native SU(2) gauge structure from Cl(3) bivector irrep
-       (NATIVE_GAUGE_CLOSURE_NOTE retained).
-  (X4) Retained_bounded one-hop lattice-alpha anchor
+  (X2) supplied b_2 = 19/6 (SU2_WEAK_BETA_COEFFICIENT_NARROW supplied).
+  (X3) supplied native SU(2) gauge structure from Cl(3) bivector irrep
+       (NATIVE_GAUGE_CLOSURE_NOTE supplied).
+  (X4) Supplied one-hop lattice-alpha anchor
        1/alpha_bare |_lattice = 16 pi, with beta_W = 16 as a corollary
        (SU2_WEAK_ALPHA_LATTICE_ONE_OVER_SIXTEEN_PI_ANCHOR_NARROW_THEOREM).
-  (X5) Retained tadpole-improvement vertex-power identity
+  (X5) supplied tadpole-improvement vertex-power identity
        alpha_2^tadpole = alpha_bare / u_0^2
-       (ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM retained).
+       (ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM supplied).
   (X6) Framework scale-log bridge supplies ln(M_Pl/v_cand) = L_cand
        and licenses the rounded exact-symbolic surrogate L = 38.44.
   (X7) Framework inverse-alpha integration bridge supplies the
@@ -55,11 +55,11 @@ required before any effective status change.
 
 from __future__ import annotations
 
-AUDIT_TIMEOUT_SEC = 300
-AUDIT_INPUT_PATHS = ['docs/G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md', 'docs/SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md']
-
 import sys
 from pathlib import Path
+
+AUDIT_INPUT_PATHS = ("docs/G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md", "docs/SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md")
+AUDIT_TIMEOUT_SEC = 300
 
 try:
     from sympy import (
@@ -110,12 +110,14 @@ def main() -> int:
     print("Audit companion (exact-symbolic) for")
     print("G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17")
     print("Goal: sympy verification of g_2(v) bounded interval from u_0 in [0.96, 0.98]")
-    print("Inputs (cited):")
+    print("Conditional supplied-input algebra; not a physical uncertainty interval or observational match.")
+    print("Real coupling requires positive denominator throughout the input interval.")
+    print("Inputs (cited propositions, no current retained authority asserted):")
     print("  (X1) u_0(SU(2)) in [96/100, 98/100]   ... native beta=16 one-plaquette bridge")
-    print("  (X2) b_2 = 19/6                        ... retained_bounded")
-    print("  (X3) Cl(3) bivector -> SU(2)           ... retained")
-    print("  (X4) 1/alpha_2^bare |_lattice = 16 pi  ... retained_bounded one-hop anchor")
-    print("  (X5) alpha_2^tadpole = alpha_bare/u_0^2 ... retained")
+    print("  (X2) b_2 = 19/6                        ... supplied")
+    print("  (X3) Cl(3) bivector -> SU(2)           ... supplied")
+    print("  (X4) 1/alpha_2^bare |_lattice = 16 pi  ... supplied one-hop anchor")
+    print("  (X5) alpha_2^tadpole = alpha_bare/u_0^2 ... supplied")
     print("  (X6) ln(M_Pl/v_cand) = 38.442..., L=38.44 rounded ... framework bridge")
     print("  (X7) one-loop inverse-alpha integration ... framework bridge")
     print("=" * 88)
@@ -127,7 +129,7 @@ def main() -> int:
     bridge_text = BRIDGE_NOTE.read_text(encoding="utf-8")
     check("source note exists", NOTE.exists(), detail=str(NOTE.relative_to(ROOT)))
     check(
-        "(X4) source note cites the retained_bounded SU2 lattice-alpha anchor",
+        "(X4) source note cites the supplied SU2 lattice-alpha anchor",
         "SU2_WEAK_ALPHA_LATTICE_ONE_OVER_SIXTEEN_PI_ANCHOR_NARROW_THEOREM_NOTE_2026-05-28.md"
         in note_text,
     )
@@ -246,7 +248,8 @@ def main() -> int:
     # d/du_0 [1/alpha_2(v)] = d/du_0 [16 pi u_0^2 - (b_2/(2 pi)) L]
     #                       = 32 pi u_0  (positive for u_0 > 0)
     # Therefore 1/alpha_2(v) is strictly increasing in u_0, alpha_2(v) is
-    # strictly decreasing in u_0, and g_2(v) is strictly decreasing in u_0.
+    # strictly decreasing in u_0, and g_2(v) is strictly decreasing in u_0,
+    # provided D=1/alpha_2(v)>0 throughout the supplied interval.
     d_inv_alpha_du0 = diff(inv_alpha_v_sym, u0)
     check(
         "(M1) d/du_0 [1/alpha_2(v)] = 32 pi u_0 (positive for u_0 > 0)",
@@ -328,12 +331,12 @@ def main() -> int:
     # 0.65-0.69 (one decimal digit of tolerance for the lattice running);
     # tight check is g_2 in [0.6, 0.75].
     check(
-        "(I4) g_lo > 0.6 (loose physical sanity bound)",
+        "(I4) g_lo > 0.6 (loose numerical range check)",
         bool(g_lo > Float("0.6")),
         detail=f"g_lo = {Numeric(g_lo, 10)}",
     )
     check(
-        "(I5) g_hi < 0.75 (loose physical sanity bound)",
+        "(I5) g_hi < 0.75 (loose numerical range check)",
         bool(g_hi < Float("0.75")),
         detail=f"g_hi = {Numeric(g_hi, 10)}",
     )
@@ -383,13 +386,13 @@ def main() -> int:
         detail=f"midpoint = {Numeric(midpoint, 12)}",
     )
 
-    # (C3) Comparison of interval to retained inputs only (no PDG):
+    # (C3) Comparison of interval to supplied inputs only (no PDG):
     # Note: the framework's bare lattice value at v=lattice would give
     #   g_2|_lattice = sqrt(1/4) = 1/2 = 0.5 (NOT a v-scale value).
     # After tadpole + running, the interval is centered well above 1/2
     # because the running reduces 1/alpha_2 from ~16 pi u_0^2 ~ 46-48
     # down to ~27, increasing alpha and hence g_2.
-    g2_lattice = sqrt(Rational(1, 4))  # = 1/2, retained-bounded
+    g2_lattice = sqrt(Rational(1, 4))  # = 1/2, supplied
     check(
         "(C3) g_2|_lattice = sqrt(1/4) = 1/2 (one-hop anchor corollary)",
         g2_lattice == Rational(1, 2),

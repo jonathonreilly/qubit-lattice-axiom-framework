@@ -17,7 +17,7 @@ recorded there as separate named admissions:
      = 1/alpha_2(mu_UV) - (b_2/(2 pi)) ln(mu_UV/mu_IR).
    ```
 
-2. Given the approved scale-reference primitive `a^-1 = M_Pl` and the
+2. Given the supplied scale-reference primitive `a^-1 = M_Pl` and the
    hierarchy candidate readout surface
    `v_cand = M_Pl * (7/8)^(1/4) * alpha_LM^16`, the dimensionless log
    interval is fixed internally as
@@ -54,9 +54,14 @@ hierarchy candidate map, where `M_Pl` cancels:
 ln(M_Pl/v_cand) = -ln((7/8)^(1/4) alpha_LM^16).
 ```
 
-This update adds a second runner check against the current repo value surface:
-the reusable-values index records `v = 246.282818290129 GeV`, and the accepted
-unit-conversion runner uses the Planck-ruler decimal `M_Pl = 1.22e19 GeV`.
+The 2026-06-18 source asserted a second check against a publication index.
+That historical index is unavailable in this source packet. Its attestation
+is now explicitly unavailable/not executed, unscored, and is not a current
+publication claim. The surviving calculation uses supplied decimals
+`v = 246.282818290129 GeV` and `M_Pl = 1.22e19 GeV`; surviving source-text
+checks establish only that the observable note and unit-conversion runner
+contain those literals. They do not establish a physical VEV or validate
+those sources' broader claims.
 Directly computing
 
 ```text
@@ -66,9 +71,8 @@ ln(1.22e19 / 246.282818290129) = 38.441487082215616...
 still rounds to the same exact-symbolic surrogate `3844/100 = 38.44`. Using
 the hierarchy runner's more precise Planck decimal `1.2209e19 GeV` gives
 `38.44222451516312...`, matching the dimensionless candidate-map computation.
-Thus the downstream `g_2(v)` row's scale-log input is stable across the two
-repo-local ways of reading the same surface; the old `38.44` is not a free
-external constant.
+Thus these two supplied numerical constructions round to the same value;
+this is not independent physical validation of either construction.
 
 ## Inputs
 
@@ -107,13 +111,13 @@ needed to compute `ln(M_Pl/v_cand)`. It does not use the fenced PDG
 comparator and does not close the hierarchy row's B3/B4/B5 formula
 gates.
 
-**(B5) Current value-surface cross-check.** The repo reusable-values index
-`docs/publication/ci3_z3/USABLE_DERIVED_VALUES_INDEX.md` records
-`v = 246.282818290129 GeV`, and
-`scripts/unit_conversion_is_accepted_non_bounding_ruler_runner.py` records the
-accepted non-bounding Planck-ruler decimal `M_Pl_GeV = 1.22e19` for direct
-unit-conversion arithmetic. These are used only to harden the scale-log
-readout; they add no new axiom and no observed `g_2(v)` comparator.
+**(B5) Supplied-decimal cross-check (historically called current value-surface cross-check).**
+The original publication locator
+`docs/publication/ci3_z3/USABLE_DERIVED_VALUES_INDEX.md` is historical
+provenance only. Its attestation is unavailable/not executed, not a premise
+or a successful check. The constants `246.282818290129` and `1.22e19` are
+supplied inputs for the direct arithmetic. The actual observable-note and
+unit-runner text reads remain documentary checks, not physical derivations.
 
 ## Theorem A: inverse-alpha one-loop integration
 
@@ -202,7 +206,7 @@ the framework hierarchy candidate log:
 |L_cand - L_100| = 0.00222451516312... < 0.003.
 ```
 
-The current value-surface cross-check gives the same conclusion without
+The supplied-decimal cross-check gives the same conclusion without
 re-expanding the hierarchy candidate map:
 
 ```text
@@ -214,7 +218,7 @@ L_direct := ln(1.22e19 / 246.282818290129)
 
 Using `1.2209e19` in the direct readout gives `L_cand` to the displayed
 precision because the quoted `v_cand` is generated from that same runner
-decimal. Both repo-local readings therefore support the same rounded
+decimal. Both supplied numerical readings therefore give the same rounded
 two-decimal exact surrogate.
 
 ## What This Claims
@@ -225,10 +229,10 @@ two-decimal exact surrogate.
   computed from the repo's scale-reference primitive and hierarchy
   candidate map; the two-decimal value `38.44` is a rounded readout of
   `L_cand`, not an independent external number.
-- The current direct value-surface readout
+- The supplied direct numerical readout
   `ln(1.22e19 / 246.282818290129)` also rounds to `38.44`, so the scale-log
-  surrogate is stable under the repo's accepted Planck-ruler decimal and
-  reusable EW-scale value.
+  surrogate agrees for these two supplied decimal choices. This is not a
+  physical error budget or a current publication-index attestation.
 - The bridge is reusable by downstream rows that need only the
   inverse-alpha integration formula or the Planck-to-hierarchy-candidate
   scale log.
@@ -258,5 +262,14 @@ python3 scripts/audit_companion_su2_weak_one_loop_inverse_alpha_scale_log_bridge
 Expected summary:
 
 ```text
-TOTAL: PASS=27 FAIL=0
+TOTAL: PASS=26 FAIL=0
 ```
+
+The unavailable historical index assertion was removed from the scored
+checks, not converted to PASS. Its original source/cache and missing-path
+finding are preserved in the repair evidence. All calculus and numerical
+predicates are unchanged. Documentary cross-note reads (including the G2
+citation-backlink) remain actual inputs; they do not provide circular
+mathematical proof. A successful runner would certify only the listed
+conditional calculations and surviving text checks, not the missing
+historical attestation or the physical validity of the supplied readout.

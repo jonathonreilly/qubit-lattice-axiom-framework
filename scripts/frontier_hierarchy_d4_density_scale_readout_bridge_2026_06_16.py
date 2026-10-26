@@ -8,14 +8,13 @@ The checked theorem is deliberately narrow:
 
 It fixes exponent, inverse/direct placement, sign, and baseline
 normalization for the coefficient-to-scale map. The endpoint coefficients are
-recomputed here from the APBC small-m coefficient formula instead of imported
+recomputed here from the supplied finite APBC coefficient formula instead of imported
 from the live audit status of the endpoint note. It does not identify the
 electroweak VEV with this readout.
 """
 
 from __future__ import annotations
 
-import json
 import math
 import sys
 from fractions import Fraction
@@ -29,11 +28,12 @@ NOTE_PATH = (
     / "HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md"
 )
 PARENT_NOTE_PATH = ROOT / "docs" / "HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md"
-LEDGER_PATH = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
+
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = ['docs/HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md', 'docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md']
 
 PASS = 0
 FAIL = 0
-RETAINED_GRADES = {"retained", "retained_bounded", "retained_no_go"}
 
 
 def check(name: str, ok: bool, detail: str = "") -> None:
@@ -63,10 +63,6 @@ def note_text(path: Path) -> str:
     return path.read_text(encoding="utf-8")
 
 
-def ledger_rows() -> dict:
-    return json.loads(LEDGER_PATH.read_text(encoding="utf-8"))["rows"]
-
-
 def apbc_modes(lt: int) -> list[float]:
     return [(2 * n + 1) * math.pi / lt for n in range(lt)]
 
@@ -85,7 +81,7 @@ def endpoint_coefficient_inf(u0: float = 1.0) -> float:
 def main() -> int:
     print("Hierarchy D=4 density-scale readout bridge verifier")
     print("Status authority: independent audit lane only.")
-    print("No observed target value, fitted coefficient, textbook import, or new axiom is load-bearing.")
+    print("Premises: positive coefficients and a supplied quartic law; no physical identification is proved.")
 
     section("Fixed positive D=4 density algebra")
     rho = 5.0
@@ -112,23 +108,23 @@ def main() -> int:
         f"ratio={scale_ratio(a_ref, 1.0):.15f}",
     )
 
-    section("Exact endpoint applications")
+    section("Supplied coefficient applications")
     u0 = 1.0
     a2 = endpoint_coefficient(2, u0)
     a4 = endpoint_coefficient(4, u0)
     ainf = endpoint_coefficient_inf(u0)
     check(
-        "APBC small-m coefficient gives A_2 = 1/(8 u0^2)",
+        "supplied finite coefficient gives A_2 = 1/(8 u0^2)",
         abs(a2 - 1.0 / (8.0 * u0**2)) < 1.0e-15,
         f"A_2={a2:.15f}",
     )
     check(
-        "APBC small-m coefficient gives A_4 = 1/(7 u0^2)",
+        "supplied finite coefficient gives A_4 = 1/(7 u0^2)",
         abs(a4 - 1.0 / (7.0 * u0**2)) < 1.0e-15,
         f"A_4={a4:.15f}",
     )
     check(
-        "continuum APBC average gives A_inf = 1/(4 sqrt(3) u0^2)",
+        "supplied angular-average formula is consistent with A_inf = 1/(4 sqrt(3) u0^2)",
         abs(ainf - 1.0 / (4.0 * math.sqrt(3.0) * u0**2)) < 1.0e-15,
         f"A_inf={ainf:.15f}",
     )
@@ -162,57 +158,19 @@ def main() -> int:
     check("temporal-average scalar endpoint has the same inverse-fourth-root placement", abs(scalar_scale - expected_scalar) < 1.0e-15)
     check("temporal-average scalar endpoint compresses downward relative to L_t=2", scalar_ratio > 1.0 and scalar_scale < 1.0)
 
-    section("Dependency status checks")
-    rows = ledger_rows()
-    expected = {
-        "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10": RETAINED_GRADES,
-    }
-    statuses = {cid: rows.get(cid, {}).get("effective_status") for cid in expected}
-    for cid, allowed in expected.items():
-        check(
-            f"dependency {cid} is retained-grade in live ledger",
-            statuses[cid] in allowed,
-            f"effective_status={statuses[cid]}",
-        )
-    endpoint_status = rows.get("hierarchy_effective_potential_endpoint_note", {}).get("effective_status")
-    check(
-        "endpoint-note audit status is reported only as context, not load-bearing",
-        True,
-        f"hierarchy_effective_potential_endpoint_note effective_status={endpoint_status}",
-    )
-
-    section("Source boundary hygiene")
+    section("Documentary scope checks (not proof or audit status)")
     note = note_text(NOTE_PATH)
     parent = note_text(PARENT_NOTE_PATH)
     flat = " ".join(note.split())
     parent_flat = " ".join(parent.split())
-    required_note_phrases = [
-        "fixed positive D=4 density-coefficient readout",
-        "2026-06-18 endpoint-algebra hardening",
-        "recomputed inside this packet from the APBC small-m coefficient formula",
-        "v(L) / v(L_ref) = (A_ref / A(L))^(1/4)",
-        "This bridge does not identify the electroweak VEV with that fixed-density readout",
-        "No observed target value",
-        "HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md",
-        "TOTAL: PASS=17 FAIL=0",
-    ]
-    flat_note = " ".join(note.split())
-    missing = [phrase for phrase in required_note_phrases if phrase not in flat_note]
-    forbidden_specific_imports = ["v_obs", "C_obs", "PDG"]
-    present_forbidden = [phrase for phrase in forbidden_specific_imports if phrase in note]
-    check(
-        "bridge note states theorem, boundary, dependencies, and expected scorecard",
-        not missing and not present_forbidden,
-        f"missing={missing}; present_forbidden={present_forbidden}",
-    )
-    check(
-        "parent dimensional-compression note wires bridge as source-side support but keeps physical VEV premise open",
-        "HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md" in parent
-        and "fixed-density coefficient-to-scale bridge" in parent_flat
-        and "recompute the endpoint coefficient ratios" in parent_flat
-        and "still does not identify the electroweak VEV" in parent_flat
-        and "proposal_allowed: false" in parent,
-    )
+    check("source states positive supplied quartic premises and open physical identification",
+          "stipulated quartic density law" in flat
+          and "does not identify the electroweak VEV" in flat
+          and "missing-ledger membership contract" in flat
+          and "withdrawn from current authority" in flat)
+    check("parent keeps coefficient identification open",
+          "HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md" in parent
+          and "does not identify the computed condensate ratio" in parent_flat)
 
     print()
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

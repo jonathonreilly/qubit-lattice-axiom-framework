@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_beta_gbare_squared_rescaling_invariance.py
-runner_sha256: 3a9bb4ac56a0ee7804c5329bf82c601c76b3e4803ddb4d21ce7229104d04a110
+runner_sha256: ecdbb5912d9edb00238b0f19963d79c32adc960acadc44d225f0c72589d1084b
+input_fingerprint_sha256: be564e60b6beb40e0986757a6f40489583c885a37534ac6f5f0c29a647e75559
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 frontier_beta_gbare_squared_rescaling_invariance.py
@@ -44,14 +45,14 @@ narrowing: physical Wilson-surface induction quarantined as open
   [PASS] physical Wilson-surface interpretation stated conditional and open
 
 ----------------------------------------------------------------------------------------
-load-bearing dependency and reader-context file checks
+documentary dependency/context checks (text presence is not proof)
 ----------------------------------------------------------------------------------------
   [PASS] dependency exists: docs/BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md
   [PASS] dependency exists: docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md
   [PASS] abstract identity states pure polynomial algebra
   [PASS] abstract identity has no load-bearing dependencies
-  [PASS] abstract identity proves beta(g/c,N)=c^2 beta(g,N)
-  [PASS] abstract identity proves product invariance
+  [PASS] documentary: abstract note states beta(g/c,N)=c^2 beta(g,N)
+  [PASS] documentary: abstract note states product invariance
   [PASS] reader-context rescaling note carries T_a -> c T_a scalar rescaling map
   [PASS] rescaling note does NOT supply the beta-routing (open bridge stays open)
   [PASS] rescaling note does not claim to derive Wilson matching / action-surface uniqueness

@@ -47,6 +47,14 @@ methodological angles. All probes adhered to:
 
 ## The 30 probes (PR-cited)
 
+Current correction: Probe 15 does not establish physical limit exhaustion.
+Its former combinatorial/cardinality justification is false; closure of nested
+finite cyclic groups can be U(1). The historical table and other campaign
+claims are not independently revalidated by this correction. Probe 15 cannot
+support the terminal-campaign instruction below or a requirement for a new
+physical primitive; admissibility of a proposed limiting construction remains
+an open, source-specific question.
+
 ### Round 1 — Within retained content (algebra-level)
 
 | # | Probe | Mechanism | PR | Outcome |
@@ -89,7 +97,7 @@ methodological angles. All probes adhered to:
 
 | # | Probe | Mechanism | PR | Outcome |
 |---|---|---|---|---|
-| 15 | Probe 15 | Continuum-limit derivation | #788 | barred (combinatorial vs Lie-group distinction) |
+| 15 | Probe 15 | Continuum-limit derivation | #788 | historical exclusion withdrawn: finite cyclic groups can have dense union; current supplied finite circulant lemma leaves physical limits open |
 | 16 | Probe 16 | Q-readout functional pivot | #789 | sharpened: F2 ruled out, F1 vs F3 residue |
 | 17 | Probe 17 | Lattice non-conjugation lift | #787 | barred (U(1)_b is spectrum-non-preserving) |
 
@@ -244,13 +252,20 @@ Runner verifies:
 3. The 2 positive candidate results are recorded (m_τ Wilson chain, φ_dimensionless=2/9).
 4. The structural impossibility claims are recorded (Probes 14, 17, 25+27+28).
 5. The partial-falsification candidate (Probe 29 κ=1 vs empirical κ=2) is recorded.
-6. The 2 remaining admissions (BAE + P) are correctly counted.
+6. The historical report lists 2 remaining admissions (BAE + P); the reader does not certify that count as current mathematics.
 7. No new axiom, no theorem promotion, no admission reclassification.
 8. Cross-references to retained foundational notes present.
 
-## Review-loop rule
+## Review-loop rule: historical and nonbinding
 
-Going forward:
+The former terminal-campaign instruction is withdrawn. The dated campaign
+claims and conclusions in this record, including the admission count, are
+historical reports, not independently confirmed by this correction. Future
+BAE constructions are not required here to leave the C3 structural class;
+their own premises and proofs must be assessed. No physical route exhaustion
+is established by this documentary record.
+
+Former instructions (preserved for history, not operative):
 
 1. The 30-probe campaign on BAE is **terminal**. New BAE-closure attempts must explicitly identify why they're outside the C_3 rep-theory structural class (since the campaign has structurally established F3 forcing within that class).
 2. Partial-falsification candidate (Probe 29 κ=1 vs κ=2) is recorded; not yet adjudicated by audit lane.

@@ -40,7 +40,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "0a9ad0022a7bdeb43769afec8a987edd5bd0edc051c3d0aa343313e71e58656e",
+  "note_hash": "0c3044c1630e0e19be495b22bf20aa72b26719de04e9b77960ae59ff6f6989ca",
   "note_path": "docs/AXIOM_FIRST_FIRST_LAW_BH_MECHANICS_THEOREM_NOTE_2026-05-01.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -86,7 +86,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/axiom_first_first_law_bh_mechanics_check.py",
-  "title": "Axiom-First First Law of Black Hole Mechanics",
+  "title": "Conditional First Law of Black Hole Mechanics",
   "transitive_descendants": 14,
   "verdict_rationale": null
 }

@@ -1,24 +1,25 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_bh_quarter_wald_noether_framework_carrier.py
-runner_sha256: 6d3e82a715c42593f27f78b48b7fb30c4949cc88453294081ea2e79bb999131e
-timeout_sec: 120
+runner_sha256: 8d4c7a6176a1508f2c09d2cea1d47ad3e58aa6b8f98ab4124fb3c72d458ccd52
+input_fingerprint_sha256: e9669a94deeecb45fd8b815068ed6a927899019a5bd451b635c13016bd2225fe
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.63
+elapsed_sec: 0.66
 status: ok
 ----- stdout -----
 ========================================================================
 BH 1/4 bounded Wald-Noether carrier composition (Block 5) audit
 ========================================================================
 
-Section 1: 5 retained chain authority audits
+Section 1: documentary source-presence/token checks, not authority proof
 ------------------------------------------------------------------------
-[PASS] PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER theorem exists — retained on main
-[PASS] Primitive carrier theorem: c_cell = 1/4 — Theorem 3 result
-[PASS] PLANCK_BOUNDARY_DENSITY_EXTENSION theorem exists — retained on main
-[PASS] UNIVERSAL_GR_DISCRETE_GLOBAL_CLOSURE_NOTE exists — retained framework GR action
-[PASS] UNIVERSAL_QG_CANONICAL_TEXTBOOK_GEOMETRIC_ACTION_EQUIVALENCE exists — retained Einstein-Hilbert equivalence
-[PASS] Framework gravitational action ≡ canonical textbook EH — EH equivalence clause
-[PASS] PLANCK_SOURCE_UNIT_NORMALIZATION exists — retained source-unit normalization
+[PASS] PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER theorem exists — nonempty source text; status not checked
+[PASS] Primitive carrier theorem: c_cell = 1/4 — formula phrase present; upstream proof not checked
+[PASS] PLANCK_BOUNDARY_DENSITY_EXTENSION theorem exists — nonempty source text; status not checked
+[PASS] UNIVERSAL_GR_DISCRETE_GLOBAL_CLOSURE_NOTE exists — nonempty action source text; physical identification assumed
+[PASS] UNIVERSAL_QG_CANONICAL_TEXTBOOK_GEOMETRIC_ACTION_EQUIVALENCE exists — nonempty equivalence source text; theorem not checked
+[PASS] Equivalence source contains Einstein-Hilbert or textbook phrase — phrase-presence only, not equivalence proof
+[PASS] PLANCK_SOURCE_UNIT_NORMALIZATION exists — nonempty normalization source text; bridge assumed
 [PASS] Source-unit normalization: G_kernel = 1/(4π) and G_Newton,lat = 1 separation — source-unit separation clause
 
 Section 2: framework primitive c_cell computation (numerical)
@@ -29,11 +30,13 @@ Section 2: framework primitive c_cell computation (numerical)
 
 Section 3: Wald-Noether formula for Einstein-Hilbert (admitted)
 ------------------------------------------------------------------------
-[PASS] Wald-Noether for Einstein-Hilbert: S = A/(4G_N) (admitted) — S_Wald|_EH = A/(4G_N), coefficient = 1/4 in 1/G_N units
+[PASS] Exact normalized binormal contraction equals -2
+[PASS] Wald L=alpha R entropy density is 4pi alpha
+[PASS] Conditional Wald-EH evaluation gives A/(4G)
 
 Section 4: composition c_cell = 1/(4 G_N) ⇒ G_Newton,lat = 1
 ------------------------------------------------------------------------
-[PASS] G_Newton,lat = 1 forced by c_cell = 1/4 in framework lattice units — G_Newton,lat solve = [1]
+[PASS] Conditional G_lat=1 from supplied c_cell=1/4 and Wald-area identification — G_Newton,lat solve = [1]
 [PASS] S_BH = A · c_cell = A/4 in framework lattice units — S_BH = A · 1/4 = A/4 (lattice units)
 [PASS] Match to standard S_BH = A/(4G_N) with G_Newton,lat = 1 — S_BH (framework) = A/4 = A/(4·G_Newton,lat) = standard form
 
@@ -45,23 +48,23 @@ Section 5: V1 bounded-status firewall fields
 [PASS] V1 carries bare_retained_allowed: false — V1 firewall
 [PASS] V1 records wald_formula_status: admitted_universal_physics_input — V1 firewall: Wald formula admitted
 [PASS] V1 records gravitational_boundary_action_density_identification_status: explicit_bridge_premise — V1 firewall: bridge premise named
-[PASS] V1 records g_newton_lat_eq_1_status: forced_by_chain — V1 firewall: G_Newton,lat = 1 forced
+[PASS] V1 records g_newton_lat_eq_1_status: forced_by_chain — documentary status-token presence only; G_lat=1 remains conditional
 
-Section 6: forbidden imports check
+Section 6: limited syntactic assignment-token scan
 ------------------------------------------------------------------------
-[PASS] forbidden import not used as proof input: S_BH_obs — no observational comparator enters proof
-[PASS] forbidden import not used as proof input: M_Pl_obs — no observational comparator enters proof
-[PASS] forbidden import not used as proof input: G_Newton_obs — no observational comparator enters proof
+[PASS] assignment-token pattern absent: S_BH_obs — limited lexical check; not proof of absence of observational inputs
+[PASS] assignment-token pattern absent: M_Pl_obs — limited lexical check; not proof of absence of observational inputs
+[PASS] assignment-token pattern absent: G_Newton_obs — limited lexical check; not proof of absence of observational inputs
 
 ========================================================================
 FAIL count: 0
 BH_QUARTER_BOUNDED_COMPOSITION_VERIFIED = True
 WALD_FORMULA_STATUS = admitted_universal_physics_input
 BRIDGE_PREMISE_STATUS = explicit_bridge_premise
-G_NEWTON_LAT = 1 (forced by chain)
-(This flag verifies the V1 chain authorities + algebraic identities. The result remains bounded because Wald and the gravitational boundary/action-density bridge are admitted load-bearing inputs.)
+G_NEWTON_LAT = 1 (conditional on supplied entropy/area and EH bridge)
+(This flag reports documentary checks and conditional algebra only. The result remains bounded because Wald and the gravitational boundary/action-density bridge are admitted load-bearing inputs.)
 
-All Block 5 chain authorities + algebraic identities verified.
+Documentary checks and supplied finite algebra passed; no dependency theorem certified.
 
 ----- stderr -----
 

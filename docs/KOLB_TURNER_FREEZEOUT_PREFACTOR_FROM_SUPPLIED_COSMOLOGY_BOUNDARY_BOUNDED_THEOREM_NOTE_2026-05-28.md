@@ -39,16 +39,15 @@ K  =  s_0 * sqrt(45 / pi) / (rho_c / h^2)                              (P*)
 so that, when substituted into the Kolb-Turner relic abundance formula
 
 ```text
-Omega_X h^2  =  K * x_F / ( sqrt(g_*(T_F)) * M_Pl * <sigma_v> )         (KT)
+Omega_X h^2  ~  K * x_F / ( sqrt(g_*(T_F)) * M_Pl * <sigma_v> )         (KT)
 ```
 
-reproduces the textbook constant `K ~ 1.04 x 10^9 GeV^-1` numerically (to
-within the conventional `~3%` Boltzmann tail-integration coefficient choice
-that distinguishes the textbook `K = 1.07 x 10^9 GeV^-1` from the explicit
-`sqrt(45 / pi)` value; see Section "Numerical evaluation").
+gives a supplied numerical comparison K ~ 1.04 x 10^9 GeV^-1 versus the
+quoted textbook comparator 1.07 x 10^9 GeV^-1. The roughly 3% difference is
+not derived here as a kinetic or subleading-tail correction.
 
 Given the already-listed Tier-A `S` scale input carried by `M_Pl` in
-`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` and the retained
+`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` and the conditional
 `g_*` declared-inventory arithmetic per
 [`SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`](SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md),
 the prefactor `K` reduces to an algebraic combination of `M_Pl`, the
@@ -61,8 +60,10 @@ the local supplied premise packet below.
 ## Statement
 
 Let `T_0`, `H_100`, and `g_*S(T_0)` be abstract positive real symbols, and
-let `M_Pl` be a positive real symbol identified with the Planck mass
+let `M_Pl` be a positive real symbol used as the supplied Planck mass
 admission carried by the Tier-A `S` entry of the admitted-input registry.
+Also supply m_X>0, x_F>0, g_*(T_F)>0 and <sigma_v>>0. These and
+H_100>0, M_Pl>0 ensure all displayed denominators are positive.
 Let `pi` denote the standard transcendental period. Suppose the five
 premises (P1)–(P5) hold:
 
@@ -72,7 +73,7 @@ P1 (Friedmann)        :  H^2 = (8 pi / 3) * G_N * rho                  (F1)
 P2 (Stefan-Boltzmann) :  rho_rad(T) = (pi^2 / 30) * g_*(T) * T^4       (SB)
 P3 (Entropy density)  :  s(T)        = (2 pi^2 / 45) * g_*S(T) * T^3   (SD)
 P4 (Boltzmann tail)   :  Y_infty     ~ x_F * sqrt(45 / pi) /
-                                       (sqrt(g_*(T_F)) * M_Pl * <sigma_v>)
+                                       (sqrt(g_*(T_F)) * m_X * M_Pl * <sigma_v>)
                                                                        (BT)
                           (s-wave Kolb-Turner solution, leading order).
 P5 (Entropy conservation)
@@ -103,7 +104,7 @@ so that
 
 ```text
 Omega_X h^2  =  m_X * s_0 * Y_infty / (rho_c / h^2)
-             =  K * x_F / ( sqrt(g_*(T_F)) * M_Pl * <sigma_v> )        (KT)
+             ~  K * x_F / ( sqrt(g_*(T_F)) * M_Pl * <sigma_v> )        (KT)
 ```
 
 is the Kolb-Turner relic-abundance form.
@@ -119,7 +120,10 @@ K  =  ( (2 pi^2 / 45) * g_*S(T_0) * T_0^3 ) * sqrt(45 / pi) /
 
 ## Proof
 
-Pure algebraic substitution.
+Pure algebraic substitution at the supplied leading-tail order. If
+Y_infty=Y_leading+deltaY, then Omega=Omega_leading+m_X*s_0*deltaY/(rho_c/h^2).
+No bound on deltaY is supplied. K itself is defined exactly by (D3);
+the approximate abundance relation does not become exact through cancellation.
 
 **Step 1 (relate `Y_infty` to `Omega_X h^2`).** By (EC) and the
 identification `Omega_X h^2 = m_X n_X / (rho_c / h^2)`,
@@ -131,14 +135,14 @@ Omega_X h^2  =  m_X * s_0 * Y_infty / (rho_c / h^2).                   (1)
 **Step 2 (substitute (BT)).** By (BT),
 
 ```text
-Y_infty  =  x_F * sqrt(45 / pi) / ( sqrt(g_*(T_F)) * m_X * M_Pl * <sigma_v> ).
+Y_infty  ~  x_F * sqrt(45 / pi) / ( sqrt(g_*(T_F)) * m_X * M_Pl * <sigma_v> ).
                                                                        (2)
 ```
 
-The `m_X` cancels against the `m_X` in (1), giving
+The supplied positive `m_X` cancels at leading order against (1), giving
 
 ```text
-Omega_X h^2  =  [ s_0 * sqrt(45 / pi) / (rho_c / h^2) ]
+Omega_X h^2  ~  [ s_0 * sqrt(45 / pi) / (rho_c / h^2) ]
                 *  x_F / ( sqrt(g_*(T_F)) * M_Pl * <sigma_v> ).        (3)
 ```
 
@@ -188,19 +192,19 @@ expanding flat homogeneous-isotropic spatial slice.
   (Milne / McCrea-Milne Newton-Poisson reduction).
 - (P2) Stefan-Boltzmann per-degree-of-freedom prefactor:
   `AXIOM_FIRST_STEFAN_BOLTZMANN_THEOREM_NOTE_2026-05-01.md`
-  framework-side authority for the `(pi^2 / 30)` per-DOF factor and the
-  associated `(2 pi^2 / 45)` entropy density factor on the same partition.
+  conditional supplied-continuum calculation of the `(pi^2 / 30)` per-DOF
+  factor. Oscillator statistics, Gibbs equilibrium, continuum measure and
+  linear dispersion remain supplied. The associated `(2 pi^2 / 45)`
+  entropy factor additionally uses the equilibrium identity `s=(rho+p)/T`,
+  zero chemical potential and `p=rho/3` on that same supplied partition.
 - (P3) Entropy density `s = (2 pi^2 / 45) g_*S T^3`: same authority as
   (P2) (paired partition).
 - (P4) Boltzmann freeze-out tail integration with the leading
   `sqrt(45 / pi)` Y_infty coefficient: named textbook step from
   Kolb & Turner, *The Early Universe* (1990), Eqs. 5.40–5.49. This is an
   external textbook step at this note's scope and is **not** derived by
-  this note (see "Boundary"). The standard published constant
-  `K = 1.07 x 10^9 GeV^-1` corresponds to the slightly higher
-  `sqrt(45 / pi) ~ 3.78 -> 3.90` numerical replacement that absorbs
-  the careful Boltzmann tail integral correction (the "3.79" factor in
-  Kolb-Turner Eq. 5.45).
+  this note (see "Boundary"). The comparator 1.07 x 10^9 GeV^-1 is supplied;
+  no explanation of its difference from this leading expression is established.
 - (P5) Entropy conservation `s a^3 = const`: textbook consequence of
   adiabatic expansion on a flat homogeneous-isotropic spatial slice; not
   derived here.
@@ -211,7 +215,7 @@ are:
 - `g_*(T_F)` and `g_*S(T_0)`: the SM relativistic / entropic degree-count
   arithmetic per
   [`SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`](SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md)
-  (retained_bounded). At electroweak-scale freeze-out
+  (literature-conditioned supplied inventory). Under ideal ultrarelativistic conditions
   `g_*(T_F) = g_*S(T_F) = 106.75`; at present
   `g_*S(T_0) = 2 + (7 / 8) * 6 * (4 / 11) = 43 / 11 ~ 3.91`. Both follow
   from the finite SM declared inventory; the present-day value uses the
@@ -241,15 +245,12 @@ Substituting standard values:
 | `sqrt(45 / pi)` | `3.7847` | leading Boltzmann-tail coefficient |
 | `K` (this note, leading coefficient) | `1.039 x 10^9 GeV^-1` | (D3) substitution |
 | `K` (Kolb-Turner Eq. 5.45 published) | `1.07 x 10^9 GeV^-1` | textbook |
-| relative deviation | `-2.9%` | `~3%` Boltzmann-tail-integration coefficient |
+| relative deviation | `-2.9%` | supplied comparison only |
 
-The `~3%` numerical residual is the standard textbook gap between the
-leading `sqrt(45 / pi) ~ 3.78` coefficient (from the bare s-wave tail) and
-the slightly higher `~3.90` effective coefficient that absorbs the
-log-tail subleading integration correction in Kolb-Turner Eq. 5.45 (often
-written as the "3.79" coefficient in the Y_infty integration). Both are
-in standard use; the published `1.07 x 10^9 GeV^-1` corresponds to the
-latter convention.
+The numerical residual is a comparison of supplied conventions/values only.
+This algebra does not derive a subleading kinetic correction or verify the
+textbook equation attribution. The old stronger attribution is preserved in
+source recovery, not retained as an active conclusion.
 
 ## What this claims
 
@@ -257,8 +258,7 @@ latter convention.
   (rho_c / h^2)`, **conditional on** the cited premises (P1)–(P5) and the
   cited cosmological-boundary inputs `(T_0, H_100, g_*S(T_0))`.
 - A bounded numerical evaluation `K ~ 1.04 x 10^9 GeV^-1` agreeing with
-  the textbook constant `K = 1.07 x 10^9 GeV^-1` within `~3%` (the
-  conventional Boltzmann-tail coefficient choice).
+  the textbook constant `K = 1.07 x 10^9 GeV^-1` within `~3%` (a supplied numerical comparator, not a derived correction).
 - A factorization that exposes the M_Pl dependence in `K`, allowing the
   parent `eta = C * m_DM^2` formula in
   `DM_ETA_FREEZEOUT_BYPASS_QUANTITATIVE_THEOREM_NOTE_2026-04-25.md`
@@ -287,19 +287,14 @@ latter convention.
   `DM_ETA_FREEZEOUT_BYPASS_QUANTITATIVE_THEOREM_NOTE_2026-04-25.md`.
 - Does **not** consume any PDG observed value, fitted selector, or
   framework-derived dark-sector coupling; all inputs are either
-  retained-grade support, already-listed Tier-A scale input, or local
+  local conditional support, the listed scale input, or local
   supplied textbook cosmological-boundary inputs.
 
 ## Boundary
 
-- The Boltzmann freeze-out tail integration that supplies the leading
-  `sqrt(45 / pi)` coefficient (P4) is a textbook Kolb-Turner step; the
-  `~3%` convention gap between `sqrt(45 / pi) ~ 3.78` and the published
-  `K = 1.07 x 10^9 GeV^-1` (which corresponds to `~3.90`) is documented
-  above and is the standard Boltzmann subleading-correction choice. This
-  note is intentionally bounded at the algebraic identity (P*) and the
-  numerical evaluation thereof; sharpening the Boltzmann tail coefficient
-  is the subject of a separate downstream item if needed.
+- The mass-containing leading-tail expression P4 is supplied. The approximately 3%
+  comparison with 1.07e9 does not prove a physical or textbook correction.
+  Physical freeze-out kinetics, tail errors and convention matching remain open.
 - The cosmological boundary inputs `(T_0, H_100, g_*S(T_0))` are
   textbook-named; deriving them on the framework axiom is out of scope
   and would require separate notes.
@@ -321,7 +316,7 @@ C   = K * x_F / ( sqrt(g_*) * M_Pl * pi * alpha_X^2 * R * 3.65e7 )
 uses the constant `K = 1.07 x 10^9 GeV^-1` as a hidden numerical input.
 This narrow theorem replaces that hidden constant by the explicit
 algebraic identity (P*), so the parent identity becomes a function of
-already-named framework primitives plus the cited textbook
+supplied algebraic parameters plus the cited textbook
 cosmological-boundary and Boltzmann-tail inputs. The parent identity's
 quantitative match to the Planck `eta_obs` and its open lanes (G1–G4 on
 the structural mass-identity audit) are not altered.
@@ -343,8 +338,9 @@ the structural mass-identity audit) are not altered.
   law (P1). Consumed here as a supplied premise source, not as a retained
   dependency.
 - `AXIOM_FIRST_STEFAN_BOLTZMANN_THEOREM_NOTE_2026-05-01.md`
-  — framework-side Stefan-Boltzmann source for (P2) and (P3). Consumed here
-  as a supplied premise source unless and until independently retained.
+  — supplied-continuum Stefan-Boltzmann source for (P2), with the additional
+  equilibrium entropy identity stated in (P3). Physical mode selection and
+  lattice-to-continuum matching remain open; no framework derivation is inherited.
 - `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
   — central index for the already-listed Tier-A `S` empirical scale-setting
   input carrying `M_Pl`. Meta note, not load-bearing evidence.
@@ -394,13 +390,13 @@ proposed_claim_scope: |
   entropy density, Boltzmann-tail leading coefficient, entropy
   conservation) and the named cosmological-boundary inputs
   (T_0, H_100, g_*S(T_0)). Premises are sourced via markdown-link
-  dependency to the retained/effective SM relativistic DOF count import
+  dependency to the literature-conditioned supplied SM relativistic DOF count import
   note (g_*, g_*S). P1-P5 and the cosmological-boundary values are local
   supplied premises. M_Pl enters as the already-listed Tier-A S scale input
   carried by the admitted-input registry. The Boltzmann freeze-out
   kinetics themselves (P4) are the textbook Kolb-Turner step and are not
   derived here. Numerical evaluation reproduces K ~ 1.04e9 GeV^-1, within
-  the conventional ~3% Boltzmann-tail subleading-coefficient gap from the
+  ~3% of the supplied comparator
   textbook K = 1.07e9 GeV^-1.
 new_axiom_admission: false
 audit_status_authority: independent audit lane only
@@ -416,24 +412,16 @@ bare_retained_allowed: false
 forbidden_imports_used: false
 ```
 
-## Cross-references
+## Historical cross-reference context
 
-- `cosmology_from_mass_spectrum_note` — the retained DM cosmology
-  cascade context that consumes the parent freeze-out-bypass quantitative
-  theorem.
-- `r_base_group_theory_derivation_theorem_note_2026-04-24` — retained
-  group-theory identity `R_base = 31/9` used in the parent identity's
-  `R` factor.
-- `cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10`
-  — retained spatial flatness `k = 0` on `Z^3` underlying the Friedmann
-  premise (P1).
-- `hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10`
-  — retained framework authority for the `(7/8)` fermion thermal factor
-  used inside `g_*` and `g_*S`.
-
-These are plain-text non-load-bearing cross-references for the audit lane;
-the only load-bearing one-hop dependency is the retained/effective SM
-relativistic DOF count link above.
+The prior source named `cosmology_from_mass_spectrum_note`,
+`r_base_group_theory_derivation_theorem_note_2026-04-24`,
+`cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10`, and
+`hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10`
+as retained authorities. Those attributions are historical context, not premise
+confirmation by this algebraic note. In particular spatial cell flatness does
+not supply a physical Friedmann law, and a thermal integral does not select
+particle content. The supplied inventory dependency remains conditional.
 
 ## Audit dependency repair links
 

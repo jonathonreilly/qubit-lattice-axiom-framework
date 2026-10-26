@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/d4_hinge_sum_frame_doublet_identification_gap_audit_and_metric_reading_removal_2026_10_26.py
+runner_sha256: 4feb11f9f4ba24055ce22b781a742375c95e6b5ac4c9c82f50dc396adc6b168a
+input_fingerprint_sha256: 87fddf02215d744173c4ca507e09c417cd576fd24893c0307c7e2f9562a42421
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.80
+status: ok
+----- stdout -----
+PASS: A1 W(F4) (1152 elements) permutes the 3 root 4-frames through S3 = W(F4)/W(D4_short): kernel 192 holds every short reflection and no long one  [|W| = 1152; image 6; kernel 192]
+PASS: A2 the doublet is the 2-dim irrep of that S3 pulled back to W(F4): norm 1; absent from Sym^2 V (non-metric; Sym^2 V = 1 + 9); once in Sym^4 V (matter quartic)  [<chi,chi> = 1; mult Sym2 0, Sym4 1; Sym2(Sym2 V) 1 (h h y allowed by symmetry)]
+PASS: A3 frames = the 3 nonzero classes of D4/2D4*; hole types = the 3 of D4*/D4, permuted by the OTHER S3 (triality, kernel W(D4_long)); joint image S3 x S3  [root classes [8, 8, 8]; hole kernel 192; joint 36; the dual rotation D4* -> D4 swaps the two S3s]
+  (A done 0.5s)
+PASS: B1 (a) four-derivative terms cannot gap it: k = 0 doublet entry is an exact zero; the hinge sum gives -(k^2 + b k^4) only  [|Y Q(0) Y|/|Q| = 2e-10; fit c0 = -2e-09, c2 = -1.0000, b = -0.068 (lattice units)]
+PASS: B2 (b) nonlinear hinge sum along the doublet: carries linear curvature, no quadratic term, S3 cubic Sum u^3 and quartic (Sum u^2)^2 (u = frame length changes)  [max linear deficit 5.66/unit; S_cell = 45.28 Sum u^3 + 40.00 (Sum u^2)^2 (relaxed; unrelaxed quartic 42.00); flat point is an INFLECTION, not a modulus]
+PASS: B3 a uniform traceless lattice strain t lifts exactly the doublet, as t^2 (S3 forbids order t); isotropic strain keeps it massless  [lifted Q eigs/t^2 = [5.51, 15.83] (> 0: m^2 = -eig, TACHYONIC) (doublet share 0.999); isotropic zeros 24; whether lattice strain is physical = vertex-gauge question, OPEN]
+  (B done 1.2s)
+PASS: C1 (c) one-loop vacuum energy on the doublet (no symmetry forbids it): scalar M < 0 (tachyonic), Dirac M > 0 (gapping); Planck-scale either way  [M_scalar = -0.5942, M_Dirac = 5.1480 per unit 4-volume (lattice units); m^2 = 8 pi G M/4; cell volume v2 = -4.000]
+  C2 note: CL-3's vacuum standard (respond only to departures from the vacuum of the same edges) removes this
+     same-edge vacuum term exactly, so as written the loop does NOT gap the doublet.
+PASS: D1 (d) records/metric-only reading: the doublet is exactly orthogonal to every metric reading (Sum_r a_g (r h r) = 0), and the RAW metric block is already 2 x linearised sqrt(g) R  [orthogonality 2e-15; raw c = 1.9998..2.0000, resid 5e-05; at 2nd order it reads as pure volume (h = 2.0e-04 x 1 at u = .01)]
+  (C, D done 1.3s)
+PASS: E1 coupling at four-derivative order: Sum_frame (r.p)^4 = 4 Sum p^4 + 24 P_g, so the doublet vertex is (s/6) Sum a_g P_g; rest matter (p = E t) charges the frame holding the tick root  [identity 9e-14; vertex ratio 0.993..1.005 (O(p^2) corrections); P_traceless(E t) = E^4 (2,-1,-1)/12]
+PASS: E2 fifth force from doublet exchange (massless, composition-dependent): alpha = s^2 (l E1)^2 (l E2)^2 / 6912 vs gravity; Eot-Wash (alpha < 1e-3 at 50 um) and MICROSCOPE (eta < 1e-15)  [nucleon-nucleon alpha = 4.6e-76; eta ~ alpha ~ 1e-75]
+PASS: E3 extra GW polarisations: emitted doublet power / tensor <= max((k l)^2 mixing, (l E_q)^4 matter) at 100 Hz; Delta N_eff if thermalised at the Planck scale (SM g* = 106.75 comparator)  [mixing 6e-80, matter 9e-76; Delta N_eff = 0.054 (0 if never thermalised) vs < ~0.17-0.3]
+PASS: E4 PPN: the doublet feeds g_tt only through the O(k^3) mixing or at O(U^3), so |beta - 1|_doublet <~ l/r and gamma is untouched; metric beta inherited  [|beta - 1|_doublet <~ 8e-46 at 1 AU (bound ~8e-5); metric-sector beta = 1 ARGUED (Regge -> EH convergence for fat complexes), not computed]
+elapsed 1.3s
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

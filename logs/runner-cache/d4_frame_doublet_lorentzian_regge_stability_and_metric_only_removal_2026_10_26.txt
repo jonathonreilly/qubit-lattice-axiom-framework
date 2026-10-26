@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/d4_frame_doublet_lorentzian_regge_stability_and_metric_only_removal_2026_10_26.py
+runner_sha256: aef0c3f2737442a49bc44faf133641a929ca408173ca515a23cdb713713af858
+input_fingerprint_sha256: d7f21a5d395075ba12f46b3c2252777b9cbba9c9f73ba9be37a52ca33e79152a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 6.48
+status: ok
+----- stdout -----
+PASS: V1 squared-length Schlaefli Hessian (d2S = Sum dA d eps) at the W(F4) point equals the length Hessian of d4-frame-modes  [rel diff 2e-10 at K = 0 and generic K]
+PASS: V2 continued hinge sum on the Lorentzian lattice is i x (real symmetric); Hermitian at real K; sin^2 + cos^2 = 1 for continued dihedrals  [|Re|/|Im| 0e+00; herm 1e-09; trig 3e-15 (lam = 0.9, 1.1)]
+PASS: V3 exact k = 0 zeros: 24 at the Euclidean W(F4) point (12 gauge + 10 metric + doublet), 23 on the Lorentzian lattice; lam = 1 has null spokes AND null triangles  [zeros {'E': 24, 'L.9': 23, 'L1.1': 23}; spokes s = (1 - lam)/2 -> 0; min |area| at lam = 1: 7e-09 -> primary lam = 1 -+ 0.1 (pre-registered)]
+  (V done 0.5s)
+PASS: L1 tick time splits the doublet: y1 = (0,1,-1) (the two non-tick frames) stays an EXACT k = 0 zero; y0 = (2,-1,-1) (tick frame) is lifted; the swap x2<->x3 fixes t and sends y1 -> -y1 (no y1^3 term)  [off-null share (y0, y1): lam .9 [0.766, 0.0], lam 1.1 [0.726, 0.0] (y1 share 1e-09)]
+  real-time census, k = .05 (lattice units), omega>0 branches: speed | Krein sign vs graviton | content
+   lam 0.9 axis: graviton x2 c=0.9487 (sqrt lam 0.9487) +; y1 c=1.0541 (1/sqrt lam) -; y0 omega=2.182 +; metric-heavy x2 omega=2.296 -; off-circle |ln z| >= 12.9
+   lam 0.9 diag: graviton x2 c=0.9486 (sqrt lam 0.9487) +; y1 c=1.0540 (1/sqrt lam) -; y0 omega=2.182 +; metric-heavy x2 omega=2.296 -; off-circle |ln z| >= 13.2
+   lam 1.1 axis: graviton x2 c=1.0488 (sqrt lam 1.0488) +; y1 c=0.9535 (1/sqrt lam) -; y0 omega=2.252 +; metric-heavy x2 omega=2.154 -; off-circle |ln z| >= 12.9
+   lam 0.99 axis: graviton x2 c=0.9950 (sqrt lam 0.9950) +; y1 c=1.0050 (1/sqrt lam) -; y0 omega=2.218 +; metric-heavy x2 omega=2.229 -; off-circle |ln z| >= 11.8
+   lam 1.01 axis: graviton x2 c=1.0050 (sqrt lam 1.0050) +; y1 c=0.9950 (1/sqrt lam) -; y0 omega=2.225 +; metric-heavy x2 omega=2.214 -; off-circle |ln z| >= 11.7
+   lam 0.5 axis: graviton x2 c=0.7071 (sqrt lam 0.7071) +; y1 c=1.4141 (1/sqrt lam) -; y0 omega=1.942 +; metric-heavy x2 omega=2.671 -; off-circle |ln z| >= 14.0
+PASS: L2 Lorentzian census (all on |z| = 1, 12 roots): graviton x2 on the light cone of g_L; y1 massless on its OWN cone (c = 1/sqrt lam) with Krein sign OPPOSITE the graviton (ghost); y0 massive (omega ~ 2.2) healthy; a metric-heavy pair (omega ~ 2.2) ghost  [7 (lam, direction) cases; no tachyon (no root off |z| = 1 below the float floor |ln z| ~ 10-30)]
+PASS: L3 controls: the far off-circle roots are float zeros of the rank-6 end coefficients (one-sided, move under z -> e^2 z); a genuine z, 1/z pair appears only for lam > 3 (pair-offset roots time-like)  [lam 3.5: |ln z| = [-1.178, 1.178] invariant under rescaling (genuine instability); lam in [0.5, 1.1]: none]
+PASS: L4 contrast (R-a): Euclidean lattice strained along the root (lam = .9), momentum-continued: y0 pole at REAL Euclidean frequency = tachyon (B3 of d4-frame-modes)  [y0-dominated Euclidean real root(s) at |omega_E| = [0.1873] at k = .05 (m^2 < 0 in R-a); the same strain read as Lorentzian (R-b) gives a real-frequency y0 at 2.18]
+  (L done 2.2s)
+PASS: M1 metric-only reading removes the doublet nonlinearly: spokes fix the metric completely (g = delta), so no frame-rescaled length set (any u) is metric-read  [metric directions left free by the spokes: 0; least-squares distance / |deformation| = [1.0, 0.999, 0.995] at u = .01, .1, .3]
+  graviton c = 1 + A (ka)^2 at ka = .07 (the two polarisations): full: axis [-0.166, 0.167] face [-0.125, 0.125] body [-0.001, 0.001]; raw: axis [-0.167, 0.167] face [-0.125, 0.125] body [0.0, 0.0]; mid: axis [-0.207, 0.379] face [0.004, 0.168] body [0.013, 0.013]
+PASS: M2 birefringence SURVIVES the metric-only reading unchanged (line-integrated reading, exactly gauge-covariant): +-1/6 axis, +-1/8 face, 0 body diagonal; validated on the full model  [gauge residual full 1e-08, raw 2e-08]
+PASS: M3 control: the midpoint reading is NOT gauge-exact and adds a polarisation-averaged shift; its splitting is nonzero but reading-dependent (pre-registered 'both readings' criterion: PARTIAL)  [gauge residual 7e-06; axis mean shift +0.086, half-split 0.293]
+elapsed 6.0s
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

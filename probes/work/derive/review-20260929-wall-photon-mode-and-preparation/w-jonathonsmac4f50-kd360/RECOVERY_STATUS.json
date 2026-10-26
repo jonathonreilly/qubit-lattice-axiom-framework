@@ -1,0 +1,71 @@
+{
+ "task": "J:derive:review-20260929-wall-photon-mode-and-preparation:a1",
+ "source_branch": "claude/toe-walls-20260929",
+ "source_head": "4bd42747e57c4d604f66a63eed2db099ea38af4e",
+ "source_head_verified_in_fetch": true,
+ "origin_main_read": "3e1a2dd2531590dabf85bee8db56175ba9b96e90",
+ "source_objects": [
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/SUMMARY.md",
+   "sha256": "3c0b6cf9ab651069fef19ba4c020483b8c402a5a525047d9a6521b4f132e10d0",
+   "source_map_sha256": "3c0b6cf9ab651069fef19ba4c020483b8c402a5a525047d9a6521b4f132e10d0",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/WALLS.md",
+   "sha256": "23a9f40130f5104ca48a15d7a14cfb1400df156faf08e01abdceb653010b7494",
+   "source_map_sha256": "23a9f40130f5104ca48a15d7a14cfb1400df156faf08e01abdceb653010b7494",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T77.md",
+   "sha256": "9422772efba70d38db6b0c62f5e5c008b82d65065f04dd6bf3090f20edf482eb",
+   "source_map_sha256": "9422772efba70d38db6b0c62f5e5c008b82d65065f04dd6bf3090f20edf482eb",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T77.md",
+   "sha256": "75120b348b63deea41d3218abfacee3d45642bb505c26d986e8c7b82dd6e650f",
+   "source_map_sha256": "75120b348b63deea41d3218abfacee3d45642bb505c26d986e8c7b82dd6e650f",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T78.md",
+   "sha256": "10aaccdfa43e3a4bd80fd5bf05fea4a4f633e97883c4ebbc5b8325aa51b7fa77",
+   "source_map_sha256": "10aaccdfa43e3a4bd80fd5bf05fea4a4f633e97883c4ebbc5b8325aa51b7fa77",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T78.md",
+   "sha256": "d27ab572cee1e07b179f211332a6f9337b7e289e002e81fd2b46c691c3350823",
+   "source_map_sha256": "d27ab572cee1e07b179f211332a6f9337b7e289e002e81fd2b46c691c3350823",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T79.md",
+   "sha256": "9677eb9d015b997a26bba1283bb26263bf6649835e1d51e18152a3d9edddbd7e",
+   "source_map_sha256": "9677eb9d015b997a26bba1283bb26263bf6649835e1d51e18152a3d9edddbd7e",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T79.md",
+   "sha256": "98702ebadac959e3dd396878459afe719dc0245718cc0de522aa39ec2283422f",
+   "source_map_sha256": "98702ebadac959e3dd396878459afe719dc0245718cc0de522aa39ec2283422f",
+   "verified": true
+  }
+ ],
+ "check_py_sha256": "1f8d405c403947fcaf5fa1089b46973c78840e78cc0897cec177156b886921c6",
+ "chosen_obligation": "lowest physical transverse level (k=pi) of the supplied ice-rule link model with correct ground-space/sector treatment; exact on the 2x2x2 torus only",
+ "first_unresolved_step": "ATTEMPT.md step 12: any rigorous statement for a torus larger than 2x2x2 (size and momentum scaling): there is no certified lower bound on the lowest transverse-coupled level, or on its weight, once the exact sector inertia/Krylov route leaves the 864-state component; the static input S(k)>=S_*>0 at RK is supplied by Monte Carlo, not proved",
+ "remaining_obligations": [
+  "size/momentum scaling of the lowest coupled level (L>2); next exact-arithmetic candidate 2x2x4 prism (1,551,976 states) is beyond rational inertia in this runner",
+  "lower bound on the weight of the lowest level (or a gap above it) uniform in size; three moments cannot supply it",
+  "dynamic linear dispersion and stability away from the tuned point: no argument here; v<1 brackets are at k=pi, L=2",
+  "proof that the static transverse structure factor of uniform ice stays bounded below (supplied by main MC only)",
+  "preparation obligation (deferred-20260926-local-rk-preparation): not advanced here; see probes/work/derive/deferred-20260926-local-rk-preparation",
+  "tensor task reuse: the ground-eigenspace-exclusion rule (step 9) is the only transfer; no tensor channel built"
+ ],
+ "hit_claimed": true,
+ "hit_scope": "exact L=2 finite statements only (global gap doublet uncoupled; lowest transverse level distinct, degree-16 algebraic; 70.4% weight; certified brackets at v=3/4,1/2,1/4,0)",
+ "check_result": "TOTAL: PASS=27 FAIL=0, runtime about 68 s, peak memory about 0.42 GB"
+}

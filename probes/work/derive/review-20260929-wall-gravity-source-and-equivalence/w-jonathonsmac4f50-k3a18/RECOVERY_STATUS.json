@@ -1,0 +1,133 @@
+{
+ "task_id": "J:derive:review-20260929-wall-gravity-source-and-equivalence:a1",
+ "source_branch": "claude/toe-walls-20260929",
+ "source_head": "4bd42747e57c4d604f66a63eed2db099ea38af4e",
+ "source_head_verified_in_object_store": true,
+ "source_objects": [
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/SUMMARY.md",
+   "sha256": "3c0b6cf9ab651069fef19ba4c020483b8c402a5a525047d9a6521b4f132e10d0",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/WALLS.md",
+   "sha256": "23a9f40130f5104ca48a15d7a14cfb1400df156faf08e01abdceb653010b7494",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T60.md",
+   "sha256": "a9677c3886aec05629a666b93e0e93ea191882e907e9af707072900735135795",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T60.md",
+   "sha256": "ce94a410547ebabf55fc6ba55f853679cf1269e8e514c5dbd1964b3a5cea68f6",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T61.md",
+   "sha256": "6040f86cfc54b4484885a548989d8e4e4f6dc302e98785e60e8d1333f0810a43",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T61.md",
+   "sha256": "e40843778944068d9fcc431b2e2d60f131c15a4e47c2dd4be699c625c4de6b0b",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T62.md",
+   "sha256": "82a67c64b097c4ded550282057da8570e642f51d2fcee520c849111b15719e13",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T62.md",
+   "sha256": "7c00d042868dc578dd052a4fd147d419854b3ffc4df6d87a07759a90ba99bd3a",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T63.md",
+   "sha256": "14df935f1737c5be4d06a1e32ef37c91bc596cad335fa5132e293f5d8273909c",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T63.md",
+   "sha256": "1c25d90136e4322630c22644616be9adde17217f1be2d11a0dae1451b25dddbe",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T67.md",
+   "sha256": "f81a2ce99bac8e9b01668445b8f925f3f48486460dc50ea3c99beb9bf3f8a47f",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T67.md",
+   "sha256": "71ea57c4e882cce88205e87c91b8cdf046a0aac734a074a7c04ef4638b393c49",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T68.md",
+   "sha256": "b611c32802bd83f47e8a58081f5a88b9183c7d024c49159222ac07ff07debab5",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T68.md",
+   "sha256": "7b19b5edd9d0a98bcb283b0c2b92f41504e58c70c7630f2575286386f669538f",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T69.md",
+   "sha256": "f62de08d88061f331c200fdd7f7621c15f9e8f2cd7c7b98f63952192ec1ba036",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T69.md",
+   "sha256": "2994a8350290fb837efa8fbb74d40a21ac0205beec7e9783016e14ce99ae14f4",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T70.md",
+   "sha256": "414818ad8a628c0e1705f68c54b26d8a4e5c613af5b879a26e263f78c6895e38",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T70.md",
+   "sha256": "2ea5e141bea58891c702836f75da0616bb91f126f5469775671bca701ce97547",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T71.md",
+   "sha256": "05cb7bb52a947ba2af539503d8efdec1e631e0dc7054332e3de0c22c8f1e0fb9",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T71.md",
+   "sha256": "9d336b06042bb05ac2d9c2bf311cdf4acb02ed3a8317f8ebe8366763ae807b1e",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T72.md",
+   "sha256": "327cc25dd0e98e1e45f72f6a5ec6f44fdca39cb37b47c65e281580719fd936a4",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T72.md",
+   "sha256": "ed65b44058c1e2e83b472fac53de5ad9bd5e401cc910e211f5b813d86890d4bb",
+   "verified": true
+  }
+ ],
+ "all_source_hashes_match_SOURCE_MAP": true,
+ "main_checkout_head": "a77a3449c91a753b06ce2a63876cd460b62cb4cf",
+ "axioms_read": "docs/MINIMAL_AXIOMS_2026-06-29.md (complete), docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md (complete), docs/audit/data/axiom_premise_nodes.json (node list)",
+ "check_py_sha256": "c4c821bf31d2a1cf8004f24ab0bad40dc87debf4f80075949383805f7ca30ca1",
+ "chosen_obligation": "quadrupole radiation power versus static helicity weights for the block-101 mode action with stress coupling (beta=-alpha), with bending in the same coordinates",
+ "first_unresolved_step": "Step 14 of ATTEMPT.md: a native physical source. No compact content is exhibited whose (e, P, Theta) satisfy the action's own source identity e'' = c^2 d_i d_j Theta_ij with c^2 = K wbar^2/(4 alpha). The landed constraint-algebra note shows the walker's frame response fails it; the two-step content meets it only at alpha=K/4 (landed, own, unrefereed). Until such a source is exhibited the radiation formula is a conditional statement about any source obeying the identity.",
+ "remaining_obligations": [
+  "native source obeying the identity (see first_unresolved_step)",
+  "lattice-symbol corrections to the TT dispersion and the multipole expansion (continuum symbol used here)",
+  "gauge-fixed Newtonian potential in the dynamical case (u depends on a free xi'' at beta=-alpha); orbit dynamics and a binary comparison are not computed",
+  "composite fall at O(binding): only the reduction W = J_tot/(kappa P_tot) and the stationary-body monopole statement are shown; T72's composite deficit is not re-derived here",
+  "nonlinear and strong-field extension, and a referee not of the same model family"
+ ],
+ "negative_claims_promoted": "none",
+ "same_family_unrefereed": true
+}

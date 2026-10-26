@@ -1,0 +1,197 @@
+{
+ "task_id": "J:derive:review-20260929-wall-flavour-mass-scheme-checks:a1",
+ "chosen_obligation": "exact Koide pair (T39): (r,delta)=(1/2,2/9) against measured charged-lepton masses, with mass scheme, covariance and statistical reading",
+ "source_branch": "claude/toe-walls-20260929",
+ "source_head": "4bd42747e57c4d604f66a63eed2db099ea38af4e",
+ "main_commit_read": "a77a3449c91a753b06ce2a63876cd460b62cb4cf",
+ "source_objects": [
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/SUMMARY.md",
+   "sha256": "3c0b6cf9ab651069fef19ba4c020483b8c402a5a525047d9a6521b4f132e10d0",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/WALLS.md",
+   "sha256": "23a9f40130f5104ca48a15d7a14cfb1400df156faf08e01abdceb653010b7494",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T23.md",
+   "sha256": "a6345e901d8fc828b30068f20023d8edfa76b09c980410d0ed03481cca2dbe9d",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T23.md",
+   "sha256": "5f0b05690bc45076403a7c6d31911fd6947bc88b16aafedaf7bad1fc9ff801b8",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T36.md",
+   "sha256": "770bfc4321920020c89ef4ad73b7178f833f2573155a5b3a7fa1aea28443133b",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T36.md",
+   "sha256": "091f19695c3906c8261bc31a74140df023b2a38dc7a1cf6dbcfcbd984af88eb1",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T37.md",
+   "sha256": "d5675fea656944e854cd7f974bbe717b3d0835e5db139fa6913fec375deae783",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T37.md",
+   "sha256": "14e8f41a5a5bfdbb934b3676ea6cee1b7c8c587da7a28a1c031a51aa4cc47630",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T38.md",
+   "sha256": "dd5085a8f4773aba24ddc472b5395a612192353b4449213e36eee42f05c2c5e4",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T38.md",
+   "sha256": "49f247c13ffa4432f5f2ca4bee3eac2b1a35e1c378d68364f7584d32b6854352",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T39.md",
+   "sha256": "c23c396c559e456de646dcedbd9417a3ad91c15a9b4d8a0fa819e90faf3bb637",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T39.md",
+   "sha256": "05ba219efd372c125374a891b4b523ffa8b5ab1e41337d2066befa8562763b25",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T40.md",
+   "sha256": "0e146916342fac5c8c8bf684c7ac2d0533874e74bfda0e2fd0c733eb5a871185",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T40.md",
+   "sha256": "7d75f9f60635f337e4ba57a8a9bbac468bc2a234d7fc7227f7930e8fe46471f6",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T44.md",
+   "sha256": "0fb7dc762cde70f92412a34017f18a876ad1e56140ad9071aba5f5fe486d9d0c",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T44.md",
+   "sha256": "081f683706b6e917f0a242b511f6a2a28b51ce006e8c8789ac3c476fc18472f5",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T45.md",
+   "sha256": "01e2ea8d846cf99d6220e59585110d5656bab8060b7cf6cf72e34f28b330631a",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T45.md",
+   "sha256": "b426221b618a7b52838a891b531f7250d50d7b7541f07ab4f8830441038bf508",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T46.md",
+   "sha256": "a5c9b0b7f400dba834ead140ccd9db36b11bd806ffb0daecc0a9f2b8ffd13608",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T46.md",
+   "sha256": "e3374c91ed401aeaa92b7e73ded506fc513897df2dbdc1cab46662f4b873c01b",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T47.md",
+   "sha256": "43fbd9112924f92646dd91d21cdc9e75fa8a893704913efe4426bcb57e62853b",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T47.md",
+   "sha256": "2ead03ee924afec10d7a6413cccb27656f24e033f8510c1429d2c7d07fc50918",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T48.md",
+   "sha256": "17113b68e131fb1fe9f76ae2ebcabdd0b48b84f6fda0c9623834396c420903c3",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T48.md",
+   "sha256": "9cd29f190e1fdda755740fe10e11e57d04d75141cc782c753e3f302c5de048e3",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T49.md",
+   "sha256": "8400d80fb1a93ccbb807a88514dcb3b4855f3358ea38716851c0f0e27388e5dc",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T49.md",
+   "sha256": "ba1731a5b1f0f5da3b66abcf252ead336cd3f68325c37f6ec743e308a12d11a5",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T50.md",
+   "sha256": "38a449a47d829b1e6c2d53e6ed0f672ff85681f3568e2deedcbb5b166eae1010",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T50.md",
+   "sha256": "a030c93c038b4df682e039e3f132c2ab4873661512a43dcf9d1f999c82f8465e",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T51.md",
+   "sha256": "386b6c37b90d248591fdacdae4c38e288000c93b4853e3e737d8c3133b166f97",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T51.md",
+   "sha256": "08d623e20ccf6f536727f047422c401871794a17a209e4667c15aed8e30befc1",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T52.md",
+   "sha256": "d3b1fc04be13d8da07640aaacc9bbfc50b67b60e2e32d1f55408dabe9a010f2f",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T52.md",
+   "sha256": "6205f7d57b943bfa6bfe6ebc3a043faad8e7b76e91abfc9ea24c009b47317f66",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T53.md",
+   "sha256": "dcd975eede3ef2d771ae5b1114a79054cb56d43ef06105329a520fb2b311ef95",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T53.md",
+   "sha256": "79ff2d8d2dab786472172360d2f86dbc17ca4aef18ba25e95c616edb4e3d1208",
+   "verified": true
+  }
+ ],
+ "check_py_sha256": "1ded3f77c1af9dc98f9715dac5d53c147925344280380e4f31ec1c6c521231ff",
+ "check_result": "TOTAL: PASS=35 FAIL=0",
+ "external_inputs": {
+  "CODATA2022_me_MeV": "0.51099895069(16) (NIST web page, retrieved this session)",
+  "CODATA2022_mmu_over_me": "206.7682827(46) (NIST web page, retrieved this session)",
+  "tau_mass_MeV": "1776.93 +- 0.09 (PDG live listing S035M, current; the 2025 summary PDF was not machine-readable here); Belle II 1777.09+-0.08+-0.11 (arXiv:2305.19116, PRD 108 032006) and BESIII 1776.91+-0.12 as alternates",
+  "alpha_inverse": "137.035999177 (CODATA 2022, quoted from memory, not re-fetched; result insensitive)",
+  "two_loop_relation": "Melnikov and van Ritbergen, hep-ph/9912391, Eq.(10) and Eq.(13); formulas read from a text extraction of the PDF, transcription validated by reproducing 13.4434 and 8.2366 in check.py E5"
+ },
+ "first_unresolved_step": "Step 14: the own-scale MS-bar map uses the QCD-to-QED colour mapping of a published two-loop relation, the massless-light-lepton approximation, a one-loop MS-bar-to-on-shell alpha relation, and order-of-magnitude bounds for hadronic vacuum polarisation and O(alpha^3); none was refereed or checked against a QED-specific source. More basically, the framework supplies no mass scheme, so which scheme (if any) the pair is asserted in is undecided (owner/lane decision, not derivable here).",
+ "remaining_obligations": [
+  "State the mass scheme in which the pair (1/2, 2/9) is asserted; the axioms and registered primitives supply none.",
+  "Check the O(alpha^2) lepton pole to MS-bar relation against a QED-specific primary source (including finite-mass electron loop in the muon relation and hadronic vacuum polarisation).",
+  "Common-mu MS-bar beyond fixed first order (resummation) was not done.",
+  "Other mass schemes (for example masses at the Z scale with full QED/electroweak running) not assessed.",
+  "No derivation of r=1/2 or delta=2/9 is attempted or implied."
+ ],
+ "independence": "same family (Claude Sonnet 5.5), unrefereed; no cross-model confirmation has been run"
+}

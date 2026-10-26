@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/d4_zoom_fixed_point_fermion_has_only_real_positive_poles_but_site_positivity_needs_a_one_slice_buffer_2026_10_26.py
+runner_sha256: d853cdbd19acb949d53662fab63e7ca098409aa4031f43957a875955e37d8077
+input_fingerprint_sha256: 530dc0f625e3ee65b857a2d8eba0c5b85f4f74ab6738d641d184cb79ddff19ba
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 31.95
+status: ok
+----- stdout -----
+PASS 1a blocking kernel w = (1 | 1/2 roots | 1/8 norm-4)/16 is W(F4)-invariant, a partition of unity over D4/2D4, f = 0 on pi D4* \ 2pi D4* | 1152/1152 elements; 16 cosets, weight 1 each; max|f| at the 15 classes 1e-32; limit smearing hull = 2V, time half-width 1.4142 = 2 slice spacings (1/sqrt2 each)
+PASS 1b zoom identity: Pi(2q) = f(q) Pi(q) exact, so G* is the fixed point of the explicit factor-2 map; numerical residual falls with the image cutoff | refinement 5e-15; R(G*)-G* rel. 2.1e-07 (N=5), 5.9e-08 (N=6) [pre-reg 1e-8 not reached: cutoff-limited]
+PASS 1c W(F4) covariance of G* computed directly at random momenta: rho(Ap) = A rho(p), sigma(Ap) = sigma(p) | 2e-16
+PASS 1d fixed-point Dirac kernel D* = G*^-1 is exponentially local (L = 12 D4 torus, W(F4) orbits computed directly) | a=0.5:root 1.90 a=0.5:short 1.94 a=1.0:root 1.72 a=1.0:short 1.75 per unit length; 89 orbits
+PASS 1e Ginsparg-Wilson g5 D + D g5 = 2 alpha D g5 D and g5-hermiticity exact; overlap of D* (m0 = 1/2alpha) returns D* | GW 9e-16, overlap 7e-16
+PASS 1f no doublers: D* vanishes only at p = 0; |D*| = 1/alpha at the 15 classes of pi D4* (rho = 0 there) | min alpha|D*| over grid p != 0: 0.27; max alpha|D*| - 1: 0e+00
+PASS 1g lowest band from the root-slice correlator equals sqrt(k^2 + m^2) (axis, face, body, generic; m = 0, 0.3) | max dev 4.1e-09 (image-cutoff limited)
+PASS 1h dimension six: k^2 coefficient of v - 1 vanishes in every direction (massless fixed point) | axis +9e-10 face +2e-10 body +3e-10 gen +6e-10
+PASS 2a exact fixed point, root slicing: for n >= 4 the slice correlator IS a sum of real poles exp(-E_K tau), E_K = |k + K| (all transverse images K), residues PSD; no complex pair, no ghost | n=3:2e-03 n=4:7e-09 n=5:1e-09 n=6:8e-11 n=8:2e-11 (|direct - residue sum|/|G|); Im Pi(iE)/|Pi|, Im phase <= 1e-14; n = 3 carries a non-pole piece
+PASS 2b site Hankel forms: unbuffered (slices i, j >= 1) INDEFINITE; buffered (i, j >= 2, separations >= 4 slices) positive to float floor | wrong-sign (unbuf / buf): 8.7e-03/-1e-13 6.4e-03/3e-15 5.3e-03/4e-13 9.2e-03/-6e-14
+PASS 2c range-R truncations (D4 shells |x|^2 <= 2R) of D*: a complex pair at EVERY R and every sampled k (both alpha); real ghosts at some R (non-monotone) | #complex poles min-max / real wrong-sign: a=0.5 R1: 2-2/5e-16; a=0.5 R2: 2-4/3e-16; a=0.5 R3: 2-6/9e-01; a=0.5 R4: 4-6/1e+00; a=1.0 R1: 2-2/3e-16; a=1.0 R2: 2-4/5e-01; a=1.0 R3: 2-6/1e+00; a=1.0 R4: 6-6/5e-16
+PASS 2d zoom rungs from the nearest-neighbour start (w = 1): blocking keeps every pole, so the Lee-Wick pair survives each finite rung at 2^n Re E; its buffered weight falls doubly-exponentially | NN pair Re E = 2.57 -> rung n at 2.57*2^n; wrong-sign unbuf/buf n=0,1,2: 1.4e-03/2e-04 2.4e-03/7e-07 6.9e-03/-2e-15
+PASS 3a truncated fixed-point coefficients (shells |x|^2 <= 8) are exactly W(F4)-covariant: a(Ax) = a(x), b(Ax) = A b(x) | 6e-17
+PASS 3b one loop with the fixed-point fermion (m = 0.5, alpha = 1/2) on the L = 16 D4 torus: no O(4)-breaking dim-6 piece; first breaking is J6; Z^4 control breaks at dim 6 | Yukawa: dim6 1e-15, dim8 9e-05->J6 2e-15; mass: dim6 1e-15, dim8 8e-03->J6 7e-15; gamma: dim6 2e-15, dim8 3e-02->J6 2e-15; Z4 dim6 2.8e-02 1.3e-01 2.1e-01
+LEDGER replaced: matter tick (CL-1 half-tick unitaries for matter), Wilson/m0 window, repaired overlap kernel, cubic zoom-fixed-point law + its radiative clause,
+  D4 'bosons-only' narrowing (pole sense). Still to build: copy sign / one light copy, slab chirality + gauged index on D4, families, D4 hinge sums.
+VERDICT: PARTIAL. Fixed point exists, W(F4)-exact, local, GW, no doublers, exact band, dim-6 = 0 at one loop by symmetry; poles all real
+  and positive (no Lee-Wick pair) but only for the exact (infinite-tower) weight; site RP holds with a one-slice buffer, not unbuffered;
+  every finite truncation and every finite rung keeps a complex pair.
+runtime 31.5 s
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

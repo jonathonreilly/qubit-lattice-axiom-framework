@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20261004-boundary-degeneracies:a1",
+ "type": "judgment",
+ "lane": "review-science-20261004",
+ "worker": "w-jonathonsmac4f50-kff3c",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261004-boundary-degeneracies/w-jonathonsmac4f50-kff3c/check.py",
+ "seed": 76652,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "60e39de1",
+ "started_utc": "20261026T010413Z",
+ "elapsed_s": 103.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "exact weighted jets, complement gap, explicit punctured-ball isolation and a zero occupied-bundle Chern number at the u = P/4 zone-centre merger for Jx != Jy (fixtures and a uniform curve family), plus the exact pair that makes any such radius shrink as u -> P/4+; scope is the supplied comparator only."
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 51/51 PASS (~30 s); scoped to the supplied comparator at u=kappa^2=P/4, J_z=J_x+J_y, J_x!=J_y: weighted jets exact, zone centre unique zero in explicit quasi-balls, complement gap, zero occupied-bundle Chern number (proved conditional on checked inequalities and standard topology); radius shrinks as J_x/J_y->0,inf and as u->P/4+; degree-to-Chern identification assumed.",
+ "what": "For the supplied comparator resolve one omitted boundary case: u=P/4, equal in-plane couplings, or an endpoint merger. Compute exact jets and complementary gap, prove punctured-neighbourhood isolation or exhibit the nonisolated set, and derive the local occupied-bundle statement. Seven finite boundary fixtures do not settle all intermediate couplings. Owner-requested review transfer as science work, not a PR snapshot or adoption. Fetch current main, verify the pinned source objects, and read the actual axiom memo and registered primitive grants. Check related tasks, active claims, completed attempts and referee reports before selecting ONE distinct obligation. Deliver numbered PROVED/CHECKED/ASSUMED steps in probes/work/derive/<problem>/<worker>/ATTEMPT.md, a self-contained disjoint check.py and RECOVERY_STATUS.json listing hashes, the first unresolved step and remaining work. Known review corrections are background, not a new HIT. Commit the checker before run_probe.py; print SUMMARY and HIT only for a demonstrated new result or defect. Use claim.py and ordinary cross-model confirmation. Source recovery alone is not completion. Do not start workers, spawn agents, create PRs, change budgets or edit scientific/audit authority in this task.",
+ "stdout_sha256": "0b8f391e3fbb27d4617469770be750cdf61e8eb7d04800dfe155a63757ac7426",
+ "stdout_tail": " are non-zero at those points (smallest |middle level| 4.039e-09)\nPASS S6.3 FLOAT: det H / (16 s^2 |d_lead|^2) is within 50% of 1 at those points (max deviation 0.018; sanity of the jet at the certified radius)\nPASS S6.F1 FLOAT: Fukui Chern number of the two lowest bands on the quasi-sphere (rho = 0.143) is 1.23e-16 (integer 0 expected); max plaquette phase 0.653 < 1 (resolved)\nPASS S6.F2' FLOAT: Fukui Chern number of the two lowest bands on the quasi-sphere (rho = 0.146) is -2.64e-16 (integer 0 expected); max plaquette phase 0.620 < 1 (resolved)\nelapsed 101.2s\nTOTAL: PASS=51 FAIL=0\nHIT: scoped result for the supplied comparator only: at u = kappa^2 = P/4 on J_z = Jx + Jy with Jx != Jy the zone centre is the unique zero of det H in explicit quasi-balls (x <= rho, |y|,|z| <= rho^4; rho ['143/1000', '3/25', '73/500', '81/500', '81/500', '87/500'] at the six fixtures, uniform rho = 1/20 for Jx/Jy in [1/5,5] and 77/2000 for [1/10,10]) with complement gap > 0 and occupied-bundle Chern number 0 on every quasi-sphere inside; the census runner's weights (1;2,2) leave the whole x-axis as zero set of the leading jet, and any radius shrinks like 2 sqrt(u/(P/4) - 1) as u -> P/4+.\nSUMMARY: exact weighted jets, complement gap, explicit punctured-ball isolation and a zero occupied-bundle Chern number at the u = P/4 zone-centre merger for Jx != Jy (fixtures and a uniform curve family), plus the exact pair that makes any such radius shrink as u -> P/4+; scope is the supplied comparator only.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-kff3c",
+  "at_utc": "20261026T010607Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Scoped conditional result at one merger point of the supplied comparator. Same-family, unrefereed; no cross-model confirmation.",
+  "by": "w-jonathonsmac4f50-kff3c",
+  "at_utc": "20261026T010607Z"
+ }
+}

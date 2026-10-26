@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/rule_fixed_vacuum_emission_makes_species_walls_at_a_times_four_eev_in_tension_with_the_highest_uhecr_events_2026_10_26.py
+runner_sha256: d1e3375c83e4ce431dead1e07abc84b3f3919c98723eb2e6a8b3a0697b1cfb64
+input_fingerprint_sha256: 802e043809e0a37a0b96e5eba0c384fd8c4d3d38becdd73fa5111729a0bb0dd3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 5.12
+status: ok
+----- stdout -----
+[PASS] R1 collinear rate reproduces Frank-Tamm dN/dx dw = alpha (1 - 1/(beta n)^2) for soft photons (normalisation check) | ratio 1.00000
+   A: p -> p gamma (elastic, |M|^2 x G_D^2 .. mu_p^2 G_D^2); l_E = hbar c/Gamma_E
+   axis W@E*  : E_th 3.24 EeV; l(1.01 E_th) 1.5e+02 cm, l(2 E_th) 2.1e+00 cm; Gamma_E ~ eps^1.46; l = 100 Mpc at eps = 3e-19
+   sky  W@2GeV: E_th 4.03 EeV; l(1.01 E_th) 2.2e+03 cm, l(2 E_th) 6.8e+03 cm; Gamma_E ~ eps^1.22; l = 100 Mpc at eps = 7e-21
+   sky  W@E*  : E_th 3.67 EeV; l(1.01 E_th) 1.6e+02 cm, l(2 E_th) 1.8e+00 cm; Gamma_E ~ eps^1.32; l = 100 Mpc at eps = 1e-20
+   body W@E*  : E_th 4.24 EeV; l(1.01 E_th) 1.6e+02 cm, l(2 E_th) 1.2e+00 cm; Gamma_E ~ eps^1.42; l = 100 Mpc at eps = 1e-19
+[PASS] A1 p -> p gamma above threshold: energy-loss length < 1 kpc already at 1.01 E_th on every ray and weighting (G_D^2 suppression included) -> hard wall | worst l(1.01 E_th) = 3.7e+03 cm (1 kpc = 3.1e21 cm); thresholds 3.24-4.44 EeV
+[PASS] A2 near-threshold law Gamma_E ~ eps^(3/2): the 100 Mpc loss length is reached within eps << 1e-3 of E_th, so E_cut = E_th (sharp) | max eps(100 Mpc) = 7e-19; mu_p^2 G_D^2 bracket shortens l by 7.8x
+   B: p -> p pi0 thresholds (EeV): axis/2GeV 6.7, axis/E* 12.5, sky/2GeV 8.0, sky/E* 15.1, body/2GeV 11.5, body/E* 21.3
+[PASS] B1 p -> p pi0 opens above the photon wall on every ray (7-21 EeV > 3.2-4.4 EeV) and is itself a hard wall (l(1.01 E_th) < 1 kpc): it never sets the proton cutoff | max l(1.01 E_th) = 1.8e+02 cm
+   C1 coherent emission (Z^2, Gaussian charge form factor): kinematic threshold ~ sqrt(A) E_th,p; E_cut(l = 1 Mpc), EeV
+   He: kin thr axis/body 6/8; E_cut axis/body inf/inf
+   N : kin thr axis/body 12/16; E_cut axis/body inf/inf
+   Si: kin thr axis/body 17/22; E_cut axis/body inf/inf
+   Fe: kin thr axis/body 24/31; E_cut axis/body inf/inf
+[PASS] C1 coherent channel: kinematically open from ~sqrt(A) x E_th,p but form-factor-dead there; Gaussian-model E_cut for Fe lies above the incoherent wall | Gaussian F_A is a supplied model (falls faster than real large-q tails)
+   C2 incoherent (Z x nucleon elastic, alpha-smeared) E_cut (EeV) at l = 1 kpc / 1 Mpc / 100 Mpc; no-tail | s = 16.5 | s = 8:
+   He axis: 10/10/10 | 4/3/3 | 2/2/2 ; body: 13/13/13 | 5/4/4 | 3/2/2
+   N  axis: 36/36/36 | 12/11/10 | 7/6/6 ; body: 47/47/47 | 16/15/14 | 9/8/7
+   Si axis: 72/72/72 | 25/22/21 | 14/12/11 ; body: 94/94/94 | 32/29/27 | 18/16/15
+   Fe axis: 144/144/144 | 50/45/42 | 27/24/23 ; body: 188/188/188 | 65/58/55 | 36/32/30
+[PASS] C2 incoherent walls: Fermi-core only gives E_cut(Fe) ~ A E_th/(1 + k_F/m); an exponential high-momentum tail (s = 8-16.5, supplied) pulls it far lower | Fe 100 Mpc cut: no tail 144-188 EeV; tails 23-55 EeV
+[PASS] D1 highest events vs heaviest-species wall (Fe, 100 Mpc): Fermi-core-only: wall below the Amaterasu central value on every ray, above its lower-syst edge only on body-like rays; with an exponential tail it is below 1e20 eV (the observed >1e20 flux) | Fe wall 188 (no tail, body) vs Amaterasu 244 (+51/-76), Fly's Eye 320; with tails <= 55 EeV
+   composition floor (no species lighter than A_min = E/E_th arrives): 10^19.5: lnA_min 2.01-2.28; 10^19.8: lnA_min 2.70-2.97; 10^20.0: lnA_min 3.16-3.43
+[PASS] D2 composition floor: no protons above 3.2-4.4 EeV, no He above ~13-17, no CNO above ~45-60 EeV; at 10^19.8-10^20 eV lnA_min = 2.7-3.4 vs Auger SD-DNN <lnA> ~ 3 (pure) | a floor, not a mean: any light admixture above its wall falsifies
+[PASS] D3 direction dependence: E_cut(body)/E_cut(axis) = 1.3-1.4 for every species (cubic l = 4 anisotropy of the maximum energy, lattice frame unknown) | proton 3.24 (axis) -> 4.24 EeV (body); ratio 1.307
+   [S] walls p/He/N (E*, axis-body): He 13-17, N 46-60 EeV (nucleon-level, no Fermi shift); Auger features: ankle 5.0, instep 13, suppression 46 EeV (arXiv:2008.06488) - reading only
+   runtime 4.3 s
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

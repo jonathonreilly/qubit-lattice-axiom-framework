@@ -281,6 +281,13 @@ Bosonized qubit sites (bosonized-sites, 2026-10-26, rethink r3; campaign files):
   - Domain-wall slab (fifth direction as an internal layer label, Borici form): one Weyl per wall, mirror on the far wall, no doubler modes.
   - All 576 W(F4) rotations leave the slab invariant (5e-15), so the walls do not break the protection. The chiral zero mode has dim-6 <= 1e-7 (anisotropy ~ eps^6), against 0.12 for the Z^4 Wilson control.
   - The 16's anomalies cancel; the mirror is unchanged (q_mirror = q_light; far wall still needs gapping).
+- **Gravity at linear order (d4-gravity, PR #10100, 16/16, own re-run identical): PARTIAL.**
+  - Geometry: Delaunay 16-cells, coned from their centres (the D4 cone of #9714/#9772/#9774). Along a root, the 24 directions split 2/16/6: the tick edge (lapse), 8 pair-offset edges, 3 spatial axes. The tick-fraction and pair-offset rule survives as ordinary edges, and CL-1's tick tie is deleted (the 24 equal edges fix it).
+  - The metric part equals 2.000 x linearised sqrt(g) R in every direction. Per unit 4-volume this matches the cubic case, so G = 1/(8 pi kappa) with kappa = 1.
+  - Two TT polarisations travel at c. The graviton splits as c = 1 +- A (ka)^2, with A = (1/6)sqrt((1-S)^2 - 12P): 1/6 on an axis, 0 on the body diagonal, polarisation average 0. At 100 Hz this is ~1e-80, against the GW170817 bound of 1e-15.
+  - Static field: gamma = 1.0000(1), G_N/G_T = 1.0002, frame dragging 1.0001 x Lense-Thirring. beta = 1 is untested (nonlinear).
+  - **NEW: one extra pair of massless modes** (rescalings of the three orthogonal 4-frames of lattice directions). They travel at c with a healthy sign, and matter does not see them at two-derivative order (each frame gives exactly 4p^2). OPEN: whether they gap, couple nonlinearly, or count as dark radiation.
+  - Supplied: the coning centres (not events) and the metric reading.
 - **Still to rebuild on D4:**
   - the copy sign's role in carrying the 16;
   - slab chirality and the 4D index;

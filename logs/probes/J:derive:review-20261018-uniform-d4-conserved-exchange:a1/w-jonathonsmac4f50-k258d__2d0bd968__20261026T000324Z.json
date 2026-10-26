@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20261018-uniform-d4-conserved-exchange:a1",
+ "type": "judgment",
+ "lane": "review-science-20261018",
+ "worker": "w-jonathonsmac4f50-k258d",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261018-uniform-d4-conserved-exchange/w-jonathonsmac4f50-k258d/check.py",
+ "seed": 73004,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "2d0bd968",
+ "started_utc": "20261026T000324Z",
+ "elapsed_s": 26.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "With analytic Regge derivatives, the source's generic O(q) fit residual is identified as an exact corner-registration phase in the trace term (proved algebra, checked against the exchange), the w-weighted-trace form holds to O(q^2) in sampled real and complex directions, but non-uniformity at the complex null cone is checked and no uniform theorem is proved."
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 22/22 PASS; exact algebra for the 6-dim conserved-source space; the O(q) remainder identification and the O(q^2) w-weighted trace form are sampled (51 real, 6 complex directions), not a theorem; the uniform lemma (step 13, U1) is not proved.",
+ "what": "Resolve ONE analytic small-momentum exchange obligation for the supplied D4 carrier: establish or refute a direction-uniform leading tensor form with an explicit remainder on the stated conserved-source space, treating gauge quotient, rank changes and other low modes explicitly. Begin with the exact Laurent Ward identity and current complex finite diagnostics. A small fitted coefficient error is not a bound on the full exchange tensor; generic residuals at .02 exceed .003 and roughly halve at .01. Finite sampled ratios, real-part fits and numerically selected subspaces are not uniform theorems. No physical gravity identification or nonlinear action symmetry is assumed. Owner-requested research work, not accepted science or a replacement PR. Read current main axiom and primitive sources before choosing physical premises. Fetch the named source branch, require the frozen commit and verify source hashes; prefer the corrected current-main notes where they exist. Read the full selected argument and actual inputs, reconcile related tasks and existing claims, then advance ONE unresolved obligation. Use the existing J-agent claim, maximum-thinking and cross-family confirmation protocol. Deliver ATTEMPT.md with numbered PROVED/CHECKED/ASSUMED steps, a disjoint executable check.py and RECOVERY_STATUS.json with source hashes and the first unresolved step. Retrieval, old numerical results, known review corrections and scope cleanup alone are not new HITs. Commit/check results through the normal run_probe workflow. This catalog addition starts no workers, changes no budget, creates no PR, applies no audit verdict and adopts no premise.",
+ "stdout_sha256": "4b8f2d4a6bfc93321c863f23d5ea95b91a0839fb8ecb34b75967dbe427a6a205",
+ "stdout_tail": ") | 0.000->1.33335(pred 1.33333); 0.021->1.83335(pred 1.83333); 0.028->1.92594(pred 1.92593); 0.042->2.00002(pred 2.00000); 0.062->1.83336(pred 1.83333); 0.083->1.33338(pred 1.33333)\nPASS N7 complex directions with |z.z|=1 (6 random): bilinear continuation K = F_w + O(q^2) (ratio 4) while the plain-trace form is O(q) (ratio 2) | ratios w-form [4. 4. 4. 4. 4. 4.], plain [2. 2. 2. 2. 2. 2.]\nPASS N8 complex null cone q.q->0: remainder*(q.q)/|q|^2 stays ~0.06 over q.q=.75,.19,.02 (non-uniform: remainder ~ |q|^2/(q.q)); low eigenvalues = (q.q){1/4 x6, 1/2 x2} | r*zz/t^2 = [0.0588 0.0514 0.0618]\nruntime 24.7 s\nTOTAL: PASS=22 FAIL=0\nHIT: scoped counterexample + structure on the supplied D4 carrier (CHECKED, sampled, not a theorem): the O(q) remainder of the exchange tensor against the source two-invariant form is to first order i*beta/4*[(q.diag T1*)(tr T2)-(tr T1*)(q.diag T2)] (a corner-registration phase of the trace; vanishes on axis/tick/body directions); replacing tr T by sum_mu w_mu T_mumu gives remainder O(q^2) in 51 real and 6 complex directions; remainder blows up like |q|^2/(q.q) toward the complex null cone.\nSUMMARY: With analytic Regge derivatives, the source's generic O(q) fit residual is identified as an exact corner-registration phase in the trace term (proved algebra, checked against the exchange), the w-weighted-trace form holds to O(q^2) in sampled real and complex directions, but non-uniformity at the complex null cone is checked and no uniform theorem is proved.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k258d",
+  "at_utc": "20261026T000357Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Scoped, sampled structure on the supplied D4 carrier: the source's O(q) residual is a corner-registration phase in the trace term; w-weighted trace gives O(q^2) in sampled directions. Route stops at the uniform perturbation lemma. Same-family, unrefereed.",
+  "by": "w-jonathonsmac4f50-k258d",
+  "at_utc": "20261026T000357Z"
+ }
+}

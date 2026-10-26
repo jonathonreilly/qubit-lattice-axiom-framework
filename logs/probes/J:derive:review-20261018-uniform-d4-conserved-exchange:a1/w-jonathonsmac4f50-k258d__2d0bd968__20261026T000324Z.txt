@@ -1,0 +1,26 @@
+PASS E1 exact Laurent Ward identity, all 4 components (reproduction of source, not new)
+PASS E2 exact: (w-1).T = y has a symmetric solution for every y whenever w != 1 -> dim N(q)=6 (also complex q)
+PASS E3 exact: lattice conservation (w-1).T=0  <=>  p.T~=0 with p=2sin(q/2), T~=exp(-i(q_m+q_n)/2)T
+PASS E4 exact: d/dt [w(-q)-weighted trace x w(q)-weighted trace] at t=0 = i[(n.d1)(tr2)-(tr1)(n.d2)]
+PASS E5a exact: first-order form vanishes identically on axis, tick and body directions (conserved sources)
+PASS E5b exact counterexample direction n=(1,2,0,0): T1=vv^T, T2=uu^T continuum-conserved and first-order form = 12 != 0
+PASS E6 exact: first-order form is anti-Hermitian-imaginary; it vanishes on every real source tensor (real-part / real-source fits cannot see it)
+PASS N0 carrier: 96 simplices, 72 edge classes, 8 vertex types, 24 segments
+PASS N1 analytic-derivative Regge Hessian equals centred-FD Hessian (all 72x72 entries, 3 momenta) | max abs dev 2.84e-10
+PASS N2a rank change at q=0: nullity(Q(0))=40, gauge rank 28, nonzero spectrum gap >= 2.4 (CHECKED, float64) | nullity 40, gauge rank 28, gap 2.4222
+PASS N2b real q (51 directions, |q|=.02,.01): nullity of Q(q) is exactly 32 = gauge rank; exactly 8 low modes; gap to O(1) modes >= 2.4 | min high |ev| 2.4222; gauge residual max 1.8e-17
+PASS N2c low cluster = {-1/2 (x2), -1/4 (x5), +1/4 (x1)} |q|^2 (1+O(q^2)) in every sampled real direction; deviation ratio ~4 | max dev 1.25e-05 (.02), 3.13e-06 (.01), ratio 4.000
+PASS N3a kappa=0.0000: remainder against W-WEIGHTED form: .02/.01 ratio in [3.98,4.02] for all 51 real directions (O(q^2)); sup rel.rem/|q|^2 = 0.122
+PASS N3b kappa=0.0000: remainder against SOURCE form (plain trace): ratio .02/.01 reaches 2.0 (O(q)) in generic directions; sup rel.rem/|q| = 0.195
+PASS N3a kappa=0.0417: remainder against W-WEIGHTED form: .02/.01 ratio in [3.98,4.02] for all 51 real directions (O(q^2)); sup rel.rem/|q|^2 = 0.121
+PASS N3b kappa=0.0417: remainder against SOURCE form (plain trace): ratio .02/.01 reaches 2.0 (O(q)) in generic directions; sup rel.rem/|q| = 0.289
+PASS N4 source-variable two-invariant fit residual, generic direction: .003295/.004885 at .02 exceed .003, ratio .02/.01 = 2.000 (reproduces the note's diagnostic) | 0.003295 0.001648 ; 0.004885 0.002443
+PASS N4b the fitted coefficients themselves are accurate to O(q^2) (alpha -> -4, beta -> 4/3, 2) although the full tensor is only O(q)-accurate
+PASS N5 first-order remainder K - F_plain equals the explicit exact form L (E4) up to O(q): relative defect halves with q (ratios ~2) | defects 0.0118, 0.0059, 0.0029, 0.0103, 0.0052, 0.0026
+PASS N6 other low modes: beta(kappa)=2-(2/3)(1-24 kappa)^2 at six kappa (the two partner modes carry the whole kappa-dependence at leading order) | 0.000->1.33335(pred 1.33333); 0.021->1.83335(pred 1.83333); 0.028->1.92594(pred 1.92593); 0.042->2.00002(pred 2.00000); 0.062->1.83336(pred 1.83333); 0.083->1.33338(pred 1.33333)
+PASS N7 complex directions with |z.z|=1 (6 random): bilinear continuation K = F_w + O(q^2) (ratio 4) while the plain-trace form is O(q) (ratio 2) | ratios w-form [4. 4. 4. 4. 4. 4.], plain [2. 2. 2. 2. 2. 2.]
+PASS N8 complex null cone q.q->0: remainder*(q.q)/|q|^2 stays ~0.06 over q.q=.75,.19,.02 (non-uniform: remainder ~ |q|^2/(q.q)); low eigenvalues = (q.q){1/4 x6, 1/2 x2} | r*zz/t^2 = [0.0588 0.0514 0.0618]
+runtime 24.7 s
+TOTAL: PASS=22 FAIL=0
+HIT: scoped counterexample + structure on the supplied D4 carrier (CHECKED, sampled, not a theorem): the O(q) remainder of the exchange tensor against the source two-invariant form is to first order i*beta/4*[(q.diag T1*)(tr T2)-(tr T1*)(q.diag T2)] (a corner-registration phase of the trace; vanishes on axis/tick/body directions); replacing tr T by sum_mu w_mu T_mumu gives remainder O(q^2) in 51 real and 6 complex directions; remainder blows up like |q|^2/(q.q) toward the complex null cone.
+SUMMARY: With analytic Regge derivatives, the source's generic O(q) fit residual is identified as an exact corner-registration phase in the trace term (proved algebra, checked against the exchange), the w-weighted-trace form holds to O(q^2) in sampled real and complex directions, but non-uniformity at the complex null cone is checked and no uniform theorem is proved.

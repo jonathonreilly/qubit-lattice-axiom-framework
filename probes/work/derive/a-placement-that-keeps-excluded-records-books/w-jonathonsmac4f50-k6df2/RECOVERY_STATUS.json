@@ -1,0 +1,37 @@
+{
+  "source_branch": "origin/main (detached checkout, read only); the task names open hand-off PRs #9174, #9195, #9196, #9197, #9200, #9201 (all CLOSED, heads c163ceb3d881, 7aac20aa22a6, d7e6aacc7b8c, 9aa4e51c1c52, 133b1d2ca7dad, 004e5be7e09f) whose notes for blocks 121 and 137 are landed on main; PR branches were not needed and not read",
+  "source_head": "a77a3449c91a753b06ce2a63876cd460b62cb4cf",
+  "source_objects": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "verified": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "verified": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_ONE_RECORD_PER_SITE_KEEPS_THE_BOOKS_ONLY_AT_LEADING_ORDER_TWO_EXCLUDED_RECORDS_LOSE_THEIR_ENERGY_CURRENT_IN_TWO_AND_THREE_DIMENSIONS_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "502485699d72065f1a4e7cfa572fbddca733880db58d5e242e4b8dafa64ebefe",
+      "verified": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_EXACT_BOOKS_NEED_RECORDS_THAT_NEVER_SCATTER_OR_BIND_NOTHING_LOCAL_KEEPS_THEM_UNDER_ONE_RECORD_PER_SITE_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "06c78db9394c0a7ffc39f08385d3cf2bb6aaa528639c2b4e34994ed00ed6d88a",
+      "verified": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_UNDER_ONE_RECORD_PER_SITE_A_COLLISION_CHANGES_THE_RECORDS_TWO_STEP_MOMENTUM_ONLY_AT_THIRD_ORDER_IN_THEIR_OFFSETS_FROM_THE_CONES_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+      "sha256": "e0536f80a25feb0b368c10a0016a9d09b07b5bd06827751c30029d2eb1d70065",
+      "verified": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_ONE_RECORD_PER_SITE_NO_POSSIBILITY_SHIFT_AMONG_NEIGHBOURS_RESTORES_THE_BOOKS_NO_NEIGHBOUR_COIN_TERM_KEEPS_TWO_EXCLUDED_RECORDS_ENERGY_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "d73f92c803d3aa6be81d13f061fcc1786bd34d59794481d4aeea0a0fc8039659",
+      "verified": true
+    }
+  ],
+  "first_unresolved_step": "A1-A3 of ATTEMPT.md: the scattering imports (Birman-Kuroda wave operators and completeness per fiber, direct-integral assembly, stationary on-shell form S = 1 - 2 pi i T) are named and not re-proved; beyond them the symmetric sector (rank-3 contact) still needs the determinant argument, and Z^3 and sector-dependent three-record placements were not run"
+}

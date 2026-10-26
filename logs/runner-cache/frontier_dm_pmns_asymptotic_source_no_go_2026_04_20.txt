@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_pmns_asymptotic_source_no_go_2026_04_20.py
 runner_sha256: 85d9e3f32bbae8ccedbfd59864518a120c9462490e7b9d2624efa3e399fb1a39
-input_fingerprint_sha256: 570193bafca4a1dc52e6abe3e4f569da1f6d4915db51db7e03f482e4c679ee8c
+input_fingerprint_sha256: 8c53621c8425bc3e6df34b50dc7ef6e1b60426756fc92873923e96615a548944
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 11.75
+elapsed_sec: 39.48
 status: ok
 ----- stdout -----
 === Part 1: numerical rank test at twelve supplied representatives ===
@@ -34,7 +34,7 @@ status: ok
 [PASS] ((2, 1, 0), delta_CP=1 pi): only lambda=0 solves A lambda = 0  (min singular value=0.852543)
 
 === Part 2: finite chamber-sphere optimization diagnostic ===
-[PASS] Smallest value found in this finite optimization exceeds the supplied threshold  (best chi^2_inf=0.001079584 at perm=(0, 1, 2), dir=(-0.9956212725653529, 0.09341957044909154, -0.003326480490627972))
+[PASS] Smallest value found in this finite optimization exceeds the supplied threshold  (best chi^2_inf=0.001079584 at perm=(0, 1, 2), dir=(-0.9956212637744453, 0.09341965422847796, -0.0033267587841846473))
 [PASS] The smallest found value is in the supplied numerical comparison band  (best chi^2_inf=0.001079584)
 
 Interpretation:

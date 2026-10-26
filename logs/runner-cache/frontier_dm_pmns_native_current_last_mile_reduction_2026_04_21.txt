@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_pmns_native_current_last_mile_reduction_2026_04_21.py
 runner_sha256: e5924c784d3a322ee9c825a13603f51f7e87d48047d1557a33dbf497334e19f8
-input_fingerprint_sha256: a62052477880a86a6e5a7cd635058ddbb8a57acccd7a22d8fdefe7c3f0b9fa89
+input_fingerprint_sha256: b6b76c0da18aae4e215d72f8f9449a4d6f40aa227f151d7093dfa36d81a5523a
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.27
 status: ok
 ----- stdout -----
 Finite supplied basin/current controls; no physical last-mile closure

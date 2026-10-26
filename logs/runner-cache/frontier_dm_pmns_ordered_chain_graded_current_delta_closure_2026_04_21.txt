@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_pmns_ordered_chain_graded_current_delta_closure_2026_04_21.py
 runner_sha256: d5d815aa12f83a74902b16f17b94f254eb12d0465a2de46edd51b5a98946ca10
-input_fingerprint_sha256: d8095c237b45694bfa1175835f0ca3b9190749257f5671c81c5aad5730cadd57
+input_fingerprint_sha256: 8f960ab94066830fbaa98695c08f9d24f25b9145ff2eb5ac2209bd5585017d54
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.38
+elapsed_sec: 0.93
 status: ok
 ----- stdout -----
   [PASS] The supplied grading is diag(1,2,3)
@@ -17,20 +17,20 @@ PART 2: BASIS VALUES CLOSE THE EXACT GRADED-CURRENT FORMULA
   [PASS] The spectator generator T_m is graded-current blind  (J_N(T_m)=0.000000000000+0.000000000000j)
   [PASS] The delta generator contributes exactly -i/2  (J_N(T_delta)=-0.000000000000-0.500000000000j)
   [PASS] The q_+ generator contributes exactly -3 i / 2  (J_N(T_q)=-0.000000000000-1.500000000000j)
-  [PASS] Affine linearity gives J_N(H) = -1/2 + i(E1/2 - delta/2 - 3 q_+/2)  (max err=1.35e-15)
+  [PASS] Affine linearity gives J_N(H) = -1/2 + i(E1/2 - delta/2 - 3 q_+/2)  (max err=1.44e-15)
 
 ========================================================================================
 PART 3: THE PAIR OF CURRENTS RECOVERS THE FULL AFFINE ACTIVE PAIR
 ========================================================================================
   [PASS] Two affine points with the same q_+ have the same supplied current J_chi  (J0=1.000000000000-0.250000000000j, J1=1.000000000000-0.250000000000j)
   [PASS] The graded current separates those same-q_+ points by their different delta values  (J_N0=-0.500000000000-0.733503419072j, J_N1=-0.500000000000-1.283503419072j)
-  [PASS] The affine current theorem still recovers q_+ exactly as Re J_chi(H)  (max err=1.11e-16)
-  [PASS] The graded-current law recovers delta exactly as E1 - 2 Im J_N(H) - 3 Re J_chi(H)  (max err=1.42e-14)
+  [PASS] The affine current theorem still recovers q_+ exactly as Re J_chi(H)  (max err=8.88e-16)
+  [PASS] The graded-current law recovers delta exactly as E1 - 2 Im J_N(H) - 3 Re J_chi(H)  (max err=1.07e-14)
 
 ========================================================================================
 PART 4: THE CURRENT PAIR SURVIVES EXACTLY ON THE SUPPLIED HW=1 RESPONSE FAMILY
 ========================================================================================
-  [PASS] Active response-column reconstruction recovers the affine Hermitian block exactly  (max err=1.46e-15)
+  [PASS] Active response-column reconstruction recovers the affine Hermitian block exactly  (max err=1.70e-15)
   [PASS] On reconstructed hw=1 response blocks the supplied current still recovers q_+ exactly  (max err=6.66e-16)
   [PASS] On reconstructed hw=1 response blocks the graded current still recovers delta exactly  (max err=1.44e-15)
 Current values and physical H remain supplied; two real coordinates remain free.

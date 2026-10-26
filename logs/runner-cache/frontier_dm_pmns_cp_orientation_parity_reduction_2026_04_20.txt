@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_pmns_cp_orientation_parity_reduction_2026_04_20.py
 runner_sha256: d8f523c930f63c7fd03aa81eddef4fdeafc5ad6cba17aaf3c116a072076301b4
-input_fingerprint_sha256: 790bc5d3f03c0cad2b2f3c6964f92b6cd67178362554648842fb279530b92f4e
+input_fingerprint_sha256: 286326891748e67dbb70c03998f902db39d36ec93992a928e483ba51f4c9b672
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.22
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -14,9 +14,9 @@ DM PMNS CP ORIENTATION PARITY REDUCTION
 Part 1: source cubic equals the ascending-basis Jarlskog bridge
    Basin 1: I_src=+0.303560489497  Delta=+9.267735426413  J_basis=+0.032754548499  I_src/Delta=+0.032754548499
   [PASS] Basin 1: ascending-basis Jarlskog equals I_src / Delta
-   Basin 2: I_src=-225.763564069262  Delta=+12275.668963542588  J_basis=-0.018391141431  I_src/Delta=-0.018391141431
+   Basin 2: I_src=-225.763564069262  Delta=+12275.668963542652  J_basis=-0.018391141431  I_src/Delta=-0.018391141431
   [PASS] Basin 2: ascending-basis Jarlskog equals I_src / Delta
-   Basin X: I_src=-99.766107123954  Delta=+7181.229515524768  J_basis=-0.013892621996  I_src/Delta=-0.013892621996
+   Basin X: I_src=-99.766107123954  Delta=+7181.229515524751  J_basis=-0.013892621996  I_src/Delta=-0.013892621996
   [PASS] Basin X: ascending-basis Jarlskog equals I_src / Delta
 
 Part 2: row-permutation parity is the only extra sign

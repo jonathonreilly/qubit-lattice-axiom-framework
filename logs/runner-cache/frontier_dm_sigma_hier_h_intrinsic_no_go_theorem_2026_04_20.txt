@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_sigma_hier_h_intrinsic_no_go_theorem_2026_04_20.py
 runner_sha256: 64791a0f10e31823a728f709e2229cffa6957759690b33d61fa76eaf348ce429
-input_fingerprint_sha256: 51fdc4d7c504b135091c02063fe75664ecb9975bea065bcd67797193f970dd0e
+input_fingerprint_sha256: f24352d3bcada2ec63d508830de3c2639400cd28050474cd1e4739004d5c81c2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.27
 status: ok
 ----- stdout -----
 === Part 1: supplied pair at the pin ===

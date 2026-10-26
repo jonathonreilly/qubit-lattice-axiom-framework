@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_abcc_exact_target_surface_source_cubic_closure_2026_04_21.py
 runner_sha256: 200d2a7fd9f466dbe6026f1951da22b5bbbeeeea275f455a949b9c63d4c1aa7c
-input_fingerprint_sha256: 87b4fc999e4a09890a1f206fcc7ecf96e831504244aeac89a53989805b6c9308
+input_fingerprint_sha256: 8c17410a54413bdabcf06311a2f4c47d5c3094ab495287209b35d75814107a10
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.20
+elapsed_sec: 0.27
 status: ok
 ----- stdout -----
   [PASS] The supplied table chamber members are 1,2,X
@@ -14,10 +14,10 @@ status: ok
   [PASS] N preserves the opposite-sign control
   [PASS] P preserves the opposite-sign control
 Basin 1 {'margin': 0.015855511490973306, 'I_src': 0.3035604894971678, 'Delta_src': 0.9591738158683554, 'det': 0.9591738158683553}
-Basin N {'margin': -0.35353416185545194, 'I_src': -0.008977592234305503, 'Delta_src': 0.5669135191229506, 'det': 0.5669135191229505}
-Basin P {'margin': -1.529522161855452, 'I_src': 0.6972147906198319, 'Delta_src': -9.86088866239919, 'det': -9.86088866239919}
+Basin N {'margin': -0.35353416185545194, 'I_src': -0.008977592234305503, 'Delta_src': 0.5669135191229506, 'det': 0.5669135191229506}
+Basin P {'margin': -1.529522161855452, 'I_src': 0.6972147906198319, 'Delta_src': -9.86088866239919, 'det': -9.860888662399187}
 Basin 2 {'margin': 24.100437510380544, 'I_src': -225.7635640692625, 'Delta_src': -70537.23275501926, 'det': -70537.23275501918}
-Basin X {'margin': 13.136269667624504, 'I_src': -99.76610712395426, 'Delta_src': -20296.10558347732, 'det': -20296.105583477303}
+Basin X {'margin': 13.136269667624504, 'I_src': -99.76610712395426, 'Delta_src': -20296.10558347732, 'det': -20296.10558347734}
 Completeness, physical positivity and chamber selection are not proved by this table.
 SUMMARY: PASS=6 FAIL=0
 

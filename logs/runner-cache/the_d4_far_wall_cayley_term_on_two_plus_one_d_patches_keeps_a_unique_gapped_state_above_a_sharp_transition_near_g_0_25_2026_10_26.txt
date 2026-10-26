@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/the_d4_far_wall_cayley_term_on_two_plus_one_d_patches_keeps_a_unique_gapped_state_above_a_sharp_transition_near_g_0_25_2026_10_26.py
+runner_sha256: 11783aa1f14f70c81b68f4d788c6b1d37acc0b4338bd3c58eb3071b091f4654d
+input_fingerprint_sha256: c372f434396bca08b0d394149eae91729f3a083a5e74f223966ac27e8a9e6bd9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 14.49
+status: ok
+----- stdout -----
+== A. geometry and exact structure
+PASS A1 [T] D4 has 24 roots; 6 are orthogonal to u_t, = +-n1, +-n2, +-n3, mutually orthogonal: the wall slice is cubic
+PASS A2 [T] Gamma_k Hermitian, {Gamma_i, Gamma_j} = 2 delta_ij; frame U: Gamma1 = sz x 1, Gamma2 = sx x 1, Gamma3 = -sy x tz, g5 = -(1 x tz): 9e-16
+  => the in-plane hop acts on the Clifford factor only: n_A (far-wall Weyl, g5 = -1) and n_B conserved; Omega = P_A P_B
+     moves both by 2; the full 3D wall hop keeps the same split (Gamma3 diagonal in A/B). Z4 twist i*1 commutes with all.
+== B. chain gate (Lx = 4, Ly = 1; earlier twist (-i, +i) on Gamma1 = (+1, -1))
+PASS B1 [F] 1x4: Cayley g = 0.25 gap 2.719, Re Omega 1.130, free 2 sin(pi/8) (d4-far-wall-gapping chain values): 2.7194, 1.1299, 0.7654
+PASS B2 [R] 1x6 (same code, 1.35e6-state sectors): Cayley g = 0.25 lowest excitation 2.702 (chain value): 2.7024
+== C. 2x2 patch (twist i on every wrap), all sectors Q = -8..8
+  Cay g=0.0   gap  2.0000  E0/site  -4.0000  GS sector (0, 0)  lowest excitation in (-1, 0)  GS-sector E1 4.0000
+  Cay g=0.125 gap  1.9458  E0/site  -4.0304  GS sector (0, 0)  lowest excitation in (-1, 0)  GS-sector E1 2.7653
+  Cay g=0.25  gap  0.8861  E0/site  -4.2159  GS sector (0, 0)  lowest excitation in (0, 0)  GS-sector E1 0.8861
+  Cay g=0.35  gap  2.5573  E0/site  -5.3153  GS sector (0, 0)  lowest excitation in (0, 0)  GS-sector E1 2.5573
+  Cay g=0.5   gap  5.6393  E0/site  -7.2873  GS sector (0, 0)  lowest excitation in (-1, 0)  GS-sector E1 5.7192
+  Cay g=1.0   gap 12.8361  E0/site -14.1430  GS sector (0, 0)  lowest excitation in (-1, 0)  GS-sector E1 14.8952
+  ReO g=0.25  gap  1.8389  E0/site  -4.0341  GS sector (0, 0)  lowest excitation in (-1, 0)  GS-sector E1 2.7733
+  ReO g=0.5   gap  1.7514  E0/site  -4.5203  GS sector (0, 0)  lowest excitation in (0, 0)  GS-sector E1 1.7514
+  ReO g=1.0   gap  6.5948  E0/site  -8.2497  GS sector (0, 0)  lowest excitation in (1, 1)  GS-sector E1 9.5204
+PASS C1 [F] g = 0: patch gap = free min|eps| = 2 sqrt(sin^2 k1 + sin^2 k2), k = pi/4 (twisted, no zero mode): 2.0000
+PASS C2 [F] ground state unique in every run, in sector (Q, par) = (0, 0); lowest excitations in |Q| <= 1 (justifies |Q| <= 2 at 2x3)
+PASS C3 [F] 2x2 Cayley: GS-sector gap has an avoided-crossing minimum near g = 0.255 (min 0.877): the crossover from the free-like: g 0.2550, min 0.8767
+     state to the on-site Cayley state; the 1x4 chain's crossover is at g ~ 0.11 (GS-sector gap minimum 1.24)
+== D. 2x3 patch (sectors |Q| <= 2; gaps relative to E0 in (0,0)) [R], one live check
+PASS D1 [F] live: 2x3 Cayley g = 0.5 ground energy in the 1,352,540-state sector reproduces the embedded value: -43.774396
+PASS D2 [T] free 2x3: min|eps| = 2 sqrt(1/2 + 1/4) = 1.732 (finite-size; nodes at k in {0, pi}^2: 4 cones x 2 species, gapless as L -> inf): 1.7321
+  g      gap(2x2) gap(2x3) ratio  2x3/free  E0/site 2x2 2x3   class (pre-set)
+  0.125    1.946    1.666  0.856   0.962    -4.030  -3.975   CLOSING
+  0.25     0.886    0.290  0.327   0.167    -4.216  -4.188   CLOSING
+  0.35     2.557    3.182  1.244   1.837    -5.315  -5.340   OPEN-LIKE
+  0.5      5.639    5.599  0.993   3.233    -7.287  -7.296   OPEN-LIKE
+  2x3 GS-sector gap scan: 0.225:0.69, 0.235:0.323, 0.2375:0.226, 0.24:0.126, 0.2425:0.024, 0.2435:0.017, 0.2445:0.058, 0.25:0.29, 0.26:0.721, 0.275:1.362, 0.3:2.175
+PASS D3 [F] the GS-sector minimum sharpens from 0.877 (2x2, g 0.255) to <= 0.017 (2x3, g 0.2435): a sharp transition at g_x ~ 0.24-0.26
+PASS D4 [F] pre-set class: g = 0.25 CLOSING (it sits on the transition at these sizes); g = 0.125 CLOSING (free-like, ratio = free ratio); g = 0.35 and 0.5 OPEN-LIKE (gap flat or growing, >= 1.8 x free, unique ground state)
+  2D vs 1D at g = 0.5: gap 5.599 (2x3) vs 6.054 (1x6): the strong-coupling gap survives the second direction (-8%).
+  Not run: 2x4 (3.0e8 states; 3.8e7 per momentum, ~0.6 GB/vector: Mac mini feasible), 3x3 (4.5e9: beyond ED).
+Verdict (pre-set): at g = 0.25 CLOSES at these sizes (g = 0.25 is the 2D transition); Cayley gap SURVIVES for g >= 0.35.
+elapsed 14.4s, peak RSS 666 MB
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

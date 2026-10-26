@@ -1,0 +1,69 @@
+# A. block 112 T1 recomputed (retrieval, not new)
+PASS A1 L=3: {C[N],C[M]} P-coefficients == G[xi(N,M)] exactly at c=1/2 (3 random integer lapse pairs)
+PASS A2 L=3: at c=1/3 the bracket differs from G[xi(N,M)] (the landed 'iff c=1/2' direction)
+PASS A1 L=4: {C[N],C[M]} P-coefficients == G[xi(N,M)] exactly at c=1/2 (3 random integer lapse pairs)
+PASS A2 L=4: at c=1/3 the bracket differs from G[xi(N,M)] (the landed 'iff c=1/2' direction)
+# B. span of the relabellings xi(N,M)  (T1(a),(b) recomputed, plus the new minimal-profile table)
+PASS B1 L=3: span of xi(N,M) over ALL lapses has rank 81 == #bonds 81
+PASS B2 L=3: span of xi(M,1) (uniform evolution lapse) has rank 26 == #sites-1 = 26 (gradients only)
+PASS B1 L=4: span of xi(N,M) over ALL lapses has rank 192 == #bonds 192
+PASS B2 L=4: span of xi(M,1) (uniform evolution lapse) has rank 63 == #sites-1 = 63 (gradients only)
+# B3. NEW (finite check): torus rank when the evolution-lapse family is {1} plus sawtooth lapses f(x_a)=x_a (one site defect at the wrap)
+   L=3: bond dof=81; rank of span for families {1}, +1 axis lapse, +2, +3: [26, 51, 72, 81]
+PASS B3 L=3: ranks nondecreasing, start at #sites-1 (data above)
+   L=4: bond dof=192; rank of span for families {1}, +1 axis lapse, +2, +3: [63, 109, 151, 181]
+PASS B3 L=4: ranks nondecreasing, start at #sites-1 (data above)
+   L=5: bond dof=375; rank of span for families {1}, +1 axis lapse, +2, +3: [124, 245, 350, 375]
+PASS B3 L=5: ranks nondecreasing, start at #sites-1 (data above)
+# C. NEW: the preservation condition as an antisymmetric operator A_G on lapses
+PASS C1 L=3: A_G is antisymmetric (G = D^T P for a random integer P)
+PASS C2 L=3: P . {C[N],C[M]} == (K/4alpha) M^T A_G N exactly (random P, N, M)
+PASS C1 L=4: A_G is antisymmetric (G = D^T P for a random integer P)
+PASS C2 L=4: P . {C[N],C[M]} == (K/4alpha) M^T A_G N exactly (random P, N, M)
+# D. NEW: which evolution lapses are consistent at a state with nonzero momentum constraint
+PASS D1 L=3: rank A_G = [26, 26, 26] for 3 random states (full antisymmetric rank 26 of 27 sites => kernel dim 1)
+PASS D2 L=3: A_G applied to the uniform lapse equals the backward divergence of G (so uniform lapse consistent iff div G = 0)
+PASS D3 L=3: a random state has div G != 0, so the uniform clock is NOT a consistent profile there
+PASS D1 L=4: rank A_G = [64, 64, 64] for 3 random states (full antisymmetric rank 64 of 64 sites => kernel dim 0)
+PASS D2 L=4: A_G applied to the uniform lapse equals the backward divergence of G (so uniform lapse consistent iff div G = 0)
+PASS D3 L=4: a random state has div G != 0, so the uniform clock is NOT a consistent profile there
+PASS D4 L=3: det A_G = 0 exactly (27 sites, odd antisymmetric matrix), so EVERY state on the 3^3 torus has a nonzero consistent lapse; on 4^3 (64 sites) D1 shows a trivial kernel for the sampled states
+PASS D5 L=3: a single nonzero bond value of G puts exactly one antisymmetric pair of entries in A_G, so A_G = 0 iff G = 0 (side>=3)
+# E. NEW: lattice version of the drifting transverse relabelling
+PASS E0 L=3: the linear curvature term K sum_x N_x R1(h) is invariant under h -> h + D xi for every lapse N and bond field xi (so h = t D xi, u = 0 stays on the energy-constraint surface at this order)
+PASS E0 L=4: the linear curvature term K sum_x N_x R1(h) is invariant under h -> h + D xi for every lapse N and bond field xi (so h = t D xi, u = 0 stays on the energy-constraint surface at this order)
+PASS E0b L=3: Lambda D(grad M) == (4 alpha/K) dC[M]/dh exactly (the DeWitt momentum of a pure-gradient relabelling is the curvature-constraint gradient); with E0 and symmetry of Lambda these together imply div G = 0 for every drifting relabelling (ATTEMPT.md step 6)
+PASS E0b L=4: Lambda D(grad M) == (4 alpha/K) dC[M]/dh exactly (the DeWitt momentum of a pure-gradient relabelling is the curvature-constraint gradient); with E0 and symmetry of Lambda these together imply div G = 0 for every drifting relabelling (ATTEMPT.md step 6)
+PASS E1 L=3: for random relabelling velocities hdot = D xi at c=1/2, the lattice momentum constraint G = D^T P has div G = 0 EXACTLY (so the uniform clock is consistent on drifting relabellings)
+PASS E2 L=3: and G is nonzero for them (so a uniform clock does not force G = 0)
+PASS E1 L=4: for random relabelling velocities hdot = D xi at c=1/2, the lattice momentum constraint G = D^T P has div G = 0 EXACTLY (so the uniform clock is consistent on drifting relabellings)
+PASS E2 L=4: and G is nonzero for them (so a uniform clock does not force G = 0)
+# F. NEW: minimal evolution-lapse families on a padded box (finite support G, the Z^3 statement)
+   family {1}: unknown finite-support bond fields G: 192; rank 111; surviving dimension 81
+   family {1,x1}: unknown finite-support bond fields G: 192; rank 156; surviving dimension 36
+   family {1,x1,x2}: unknown finite-support bond fields G: 192; rank 192; surviving dimension 0
+   family {1,x1,x2,x3}: unknown finite-support bond fields G: 192; rank 192; surviving dimension 0
+   family {x1,x2,x3} (no uniform): unknown finite-support bond fields G: 192; rank 192; surviving dimension 0
+PASS F1 finite-support G on Z^3 (padded 6^3 box, support in the interior): surviving dims 81 > 36 > 0 = 0 for {1},{1,x1},{1,x1,x2}: the uniform lapse plus linear lapses in two independent directions force G = 0
+PASS F2 identity used in the proof: (A_G x_a)(y) = y_a (div G)(y) + G_a(y) + G_a(y-e_a), checked at every site of the box for random integer G
+PASS F3 with {1, x1}: every surviving finite-support G has G_1 = 0 (the lapse gradient along axis a forces the a-component)
+# G. NEW: lapses consistent with a plane-wave drifting twist on the 4^3 torus
+PASS G1 4^3: the twist xi = e_2 cos(pi x_1/2) has G supported on the e_2 component only, and div G = 0
+PASS G2 any lapse N(x_1, x_3) independent of the twist direction x_2 is consistent with the twist state (3 random profiles)
+PASS G3 a lapse localized on one site is NOT consistent with the twist state
+PASS G4 a lapse with a gradient along the twist direction (sawtooth in x_2) is NOT consistent with the twist state
+   kernel dimension of A_G for this twist on 4^3: 48; G_2 nonzero on x_1 in [0, 2]
+PASS G5 kernel dimension 48 == 48 = sum over x_1-slices of (2 if G!=0 else 4) free values per x_3 line (lapse must be 2-site periodic along the twist direction where the twist is present)
+# H. NEW (data): on the 3^3 torus the unique consistent lapse of a random state is not sign-definite
+PASS H1 12 of 12 random states have a consistent lapse with entries of both signs (positivity of the clock is not automatic); this is data, not a theorem
+# I. NEW (symbolic, continuum comparator form): block 112 T2 at finite, space-and-time-dependent lapse N
+PASS I1 R1(d_i d_j zeta) == 0 identically (gradient relabellings do not change the linear curvature, any zeta(t,x))
+PASS I2 first variation (linear in h) of kinetic + K N R1 under h -> h + d d zeta, N -> N - (2 alpha/K) d_t(zeta_t/N) equals REM up to a TOTAL DIVERGENCE (all 8 Euler operators vanish); REM = 2 alpha zeta_t [2 d_i(1/N) d_j Pi_ij + Pi_ij d_i d_j (1/N)]
+PASS I2c control: with the opposite sign of the compensator the same statement FAILS (the check is sensitive)
+PASS I3 for a lapse depending on t only (any finite N(t)), REM == 0: T2 extends exactly to a finite uniform-in-space, time-dependent lapse in this sector
+PASS I4 for N = 1 + a x_1: REM = 2 alpha zeta_t [ -2a/N^2 (d_j Pi_1j) + 2a^2/N^3 Pi_11 ]: first order in the lapse gradient it is the lapse gradient times the momentum constraint, second order in a Pi_11 term appears
+PASS I5 REM is not identically zero for a lapse with a gradient: this completion of T2 does not extend to spatially varying lapse
+HIT: at flat strain and linear order in the momenta (block 112 stencil), (i) preservation of the clock constraints under lapse N at a state with momentum constraint G is M^T A_G N = 0 for all M with A_G antisymmetric, so the consistent evolution lapses are exactly ker A_G (all lapses iff G = 0; the uniform lapse iff div G = 0, which holds exactly for lattice drifting relabellings; nonzero kernel on odd tori, trivial for sampled states on 4^3); (ii) for finitely supported G on Z^3 the evolution lapses {1, x_1, x_2} force G = 0 and {1, x_a} force G_a = 0 given div G = 0 (exact padded-box rank check), while {1} leaves only div G = 0; (iii) in the continuum-comparator kinetic + K N R1 sector, block 112's T2 compensator extends exactly to finite N(t), and for spatially varying N leaves REM = 2 alpha zeta_t [2 d_i(1/N) d_j Pi_ij + Pi_ij d_i d_j (1/N)] at linear order in h
+# runtime 21.6 s
+TOTAL: PASS=46 FAIL=0
+SUMMARY: PARTIAL The landed T1 reading is re-confirmed on 3^3/4^3 tori; new exact results: the lapse-preservation condition is M^T A_G N with A_G antisymmetric, so at a state with G != 0 the consistent clocks are ker A_G (the algebra restricts the lapse, and forces G = 0 only if every profile must stay allowed); on Z^3 the lapses {1, x_1, x_2} already force G = 0 for finite-support G, while {1} leaves the divergence-free sector that the lattice drifting relabellings occupy exactly; T2's compensator extends exactly to finite N(t) and leaves, for spatially varying N, a remainder first order in grad N times the momentum constraint.

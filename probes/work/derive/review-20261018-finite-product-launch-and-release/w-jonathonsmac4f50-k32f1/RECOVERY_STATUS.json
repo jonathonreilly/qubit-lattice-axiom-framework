@@ -1,0 +1,44 @@
+{
+  "task_id": "J:derive:review-20261018-finite-product-launch-and-release:a1",
+  "source_branch": "main",
+  "source_head": "77565121a9e2598aa4daed6413c5c723241654a5",
+  "source_head_is_ancestor_of_read_only_main_checkout": true,
+  "read_only_main_checkout_head": "a77a3449c91a753b06ce2a63876cd460b62cb4cf",
+  "note_on_main_checkout_head": "the three source files are byte-identical (same sha256) at the checkout HEAD and at the frozen commit",
+  "source_objects": [
+    {
+      "path": "docs/REAL_MEDIATED_VACANCY_NETWORK_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "d4a60c480454e5fee8987b4a9ca786771f73bcb7e7317fc7768513938286f8c2",
+      "verified": true
+    },
+    {
+      "path": "docs/REAL_TWO_BODY_GAP_MEDIATION_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "c525e617abf39a5cddc7c0e891fdcf13f1dbfc35309d38e42fc7c6f12f5b3d77",
+      "verified": true
+    },
+    {
+      "path": "docs/COMMON_PRODUCT_RESONANT_LAUNCH_BOUNDED_THEOREM_NOTE_2026-10-18.md",
+      "sha256": "ef0d1ca5b3d83f7e5740d68d58b97a27bdc25c2bf3fef8b040ed17b188767952",
+      "verified": true
+    }
+  ],
+  "axiom_and_primitive_sources_read": [
+    "docs/MINIMAL_AXIOMS_2026-06-29.md (233 lines, full)",
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md (130 lines, full)"
+  ],
+  "result_label": "PARTIAL",
+  "proved_or_checked_core": "exact all-time right-lead output formula and complete-output bound for ANY left-lead one-head vector through the supplied p=+-1 ladder (infinite leads), with one explicit above-band bound state and located resonance poles; check.py TOTAL PASS=31 FAIL=0",
+  "first_unresolved_step": "ATTEMPT.md step 14 (Lemma B): transfer from the infinite-lead formula to the actual finite device, i.e. removal of the launcher's emitter terminus (backward-momentum Poisson weight ~rho^2 reflects and returns) and of the finite output cut, by a spatial back-tail cut plus the hopping-cone bound, with explicit constants and with a launch time t1 ~ 1/(rho^2 eps) that exceeds the source launch window T=2u0; the finite-time launcher lemmas of the source note must be re-validated at that later time. Not proved; only observed in check.py E1/E2 (finite devices up to ~9.5e3 sites, rho=0.1, 0.05).",
+  "imported_assumed_not_reproved": [
+    "NV20 / section-9 mediator and vacancy bounds (REAL_MEDIATED_VACANCY_NETWORK note, lines 197-234 and 273-370)",
+    "source launcher window: survival, geometric comparison, dispersion, finite transfer (COMMON_PRODUCT_RESONANT_LAUNCH note, lines 28-80)",
+    "monotonicity of the launcher lemmas in rho (smaller rho at fixed L) and their extension to launch times beyond T=2u0"
+  ],
+  "check": {
+    "file": "check.py",
+    "total_pass": 31,
+    "total_fail": 0,
+    "wall_seconds_approx": 115,
+    "peak_memory": "well under 1.5 GB (dense 1406x1406 eigh, sparse 9.5e3-site expm_multiply, 2^21-point FFT)"
+  }
+}

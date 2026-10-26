@@ -1,0 +1,18 @@
+{
+  "task": "J:derive:neighbour-bound-pairs-at-any-binding-in-space:a1",
+  "model": "claude-sonnet-5-5",
+  "main_checkout_head": "a77a3449c91a753b06ce2a63876cd460b62cb4cf",
+  "origin_main_at_end": "3e1a2dd2531590dabf85bee8db56175ba9b96e90",
+  "source_branch": "physics-loop/admissibility-induced-law-block142-pairs-bound-as-neighbours-have-half-the-walkers-speed-squared-20260925",
+  "source_head": "5c7c52847eeb03489813c0ddf3094759f9bd7a9c",
+  "source_pr": {"number": 9227, "state_seen": "CLOSED", "note": "the task text calls blocks 115, 133, 139, 142 (PRs 9157, 9191, 9201, 9227) open; gh pr view shows all four CLOSED; the block 142 and block 115 notes are on the main checkout (landed), so the landed text was used"},
+  "source_objects": [
+    {"path": "docs/ADMISSIBILITY_RULE_ONE_RECORD_PER_SITE_PAIRS_BOUND_AS_NEIGHBOURS_HAVE_HALF_THE_WALKERS_SPEED_SQUARED_ON_A_LINE_AND_NEVER_ITS_SPEED_IN_EVERY_DIRECTION_BOUNDED_THEOREM_NOTE_2026-09-25.md", "where": "main checkout a77a3449c9 (landed text; controls)", "sha256": "fb9b11df679056a0c94dd05d8b9a3661679b28c71318fdf2aa485917d54c0b9e", "verified": true},
+    {"path": "docs/ADMISSIBILITY_RULE_ONE_RECORD_PER_SITE_PAIRS_BOUND_AS_NEIGHBOURS_HAVE_HALF_THE_WALKERS_SPEED_SQUARED_ON_A_LINE_AND_NEVER_ITS_SPEED_IN_EVERY_DIRECTION_BOUNDED_THEOREM_NOTE_2026-09-25.md", "where": "source branch head 5c7c52847e (PR snapshot, differs from landed text)", "sha256": "350fd6eb1acedfe933d08d444617d59c9c9e5bd3b273d49df807548688f596ea", "verified": true},
+    {"path": "docs/ADMISSIBILITY_RULE_A_REST_ENERGY_FROM_BINDING_TWO_WALKERS_IS_EXACT_WITH_THE_WALKERS_OWN_SPEED_IN_ONE_DIMENSION_INVISIBLE_UNDER_ONE_RECORD_PER_SITE_AND_ANISOTROPIC_IN_THREE_BOUNDED_THEOREM_NOTE_2026-09-24.md", "where": "main checkout (block 115, landed)", "sha256": "50c708e3742f9a5daa59f6f1fb48b44fe388d71b9fc2454ede1a9595185d332d", "verified": true},
+    {"path": "docs/ADMISSIBILITY_RULE_ONE_RECORD_PER_SITE_IS_AN_INTERACTION_NOT_A_FREE_SEA_TWO_RECORDS_UNDER_EXCLUSION_AGAINST_FREE_ANTISYMMETRIC_AND_SYMMETRIC_PAIRS_BOUNDED_THEOREM_NOTE_2026-09-22.md", "where": "main checkout (block 78)", "sha256": "1304da384ff3e6a18605271e5259195cb3e7dcd65d4c8bac4d330aa48f6062ca", "verified": true},
+    {"path": "docs/ADMISSIBILITY_RULE_A_PHASE_TIMED_BY_THE_LOCAL_CLOCK_EVERY_PACKET_FALLS_TOWARDS_SLOW_CLOCKS_FORCE_IS_ENERGY_TIMES_GRADIENT_WEIGHT_AND_INERTIA_TIED_BY_THE_WALK_BOUNDED_THEOREM_NOTE_2026-09-21.md", "where": "main checkout (block 54)", "sha256": "f6036ab9a00783efa4bd4a1c031a3ad777e65d94c3d858d405bc813493fb9431", "verified": true},
+    {"path": "docs/MINIMAL_AXIOMS_2026-06-29.md", "where": "main checkout", "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753", "verified": true}
+  ],
+  "first_unresolved_step": "S9 of ATTEMPT.md: the finite-g counterexample (axis sum exactly 3 at g* = 3.6601173879 for M = Pi_pm + (1/4)|S><S|) rests on floating-point lattice integrals (converged and cross-checked three ways) and is not an interval-certified enclosure; also unproved: the closed form 3/2 + (6 + 4 rho/(1-rho))/(g mu)^2 for the dark triplet and the pure-channel 1/g^2 coefficients (numerically identified), and exact threshold values other than 2 sqrt 3."
+}

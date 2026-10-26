@@ -1,0 +1,108 @@
+g 12.0 N 24 time 4.5
+   E0=12.000000 mult=3 null=3 first=8.5e-17  max=0.70875 min=0.70875
+   E0=12.085688 mult=2 null=2 first=3.0e-18  max=1.50934 min=1.50934
+   E0=12.085697 mult=3 null=3 first=3.9e-18  max=1.48053 min=1.48053
+   E0=12.085714 mult=1 null=1 first=2.4e-18  max=1.42409 min=1.42409
+   E0=12.168948 mult=6 null=6 first=1.1e-16  max=0.45036 min=0.45036
+   E0=12.333151 mult=3 null=3 first=3.0e-17  max=-0.58082 min=-0.58082
+   E0=12.405750 mult=3 null=3 first=7.5e-16  max=-1.62307 min=-1.62307
+   E0=12.405779 mult=3 null=3 first=1.9e-17  max=-2.40225 min=-2.40225
+g 12.0 N 40 time 15.9
+   E0=12.000000 mult=3 null=3 first=1.2e-16  max=0.70875 min=0.70875
+   E0=12.085688 mult=2 null=2 first=1.5e-18  max=1.50934 min=1.50934
+   E0=12.085697 mult=3 null=3 first=2.1e-18  max=1.48053 min=1.48053
+   E0=12.085714 mult=1 null=1 first=1.8e-18  max=1.42409 min=1.42409
+   E0=12.168948 mult=6 null=6 first=4.4e-17  max=0.45036 min=0.45036
+   E0=12.333151 mult=3 null=3 first=1.9e-17  max=-0.58082 min=-0.58082
+   E0=12.405750 mult=3 null=3 first=6.7e-16  max=-1.62307 min=-1.62307
+   E0=12.405779 mult=3 null=3 first=1.9e-17  max=-2.40225 min=-2.40225
+g 8.0 N 24 time 3.5
+   E0=8.000000 mult=3 null=3 first=3.1e-16  max=0.72101 min=0.72101
+   E0=8.133117 mult=2 null=2 first=2.4e-18  max=1.51756 min=1.51756
+   E0=8.133188 mult=3 null=3 first=7.0e-18  max=1.44966 min=1.44966
+   E0=8.133331 mult=1 null=1 first=4.8e-18  max=1.32009 min=1.32009
+   E0=8.257554 mult=6 null=6 first=1.3e-16  max=0.38561 min=0.38561
+   E0=8.498706 mult=3 null=3 first=2.6e-17  max=-0.67485 min=-0.67485
+   E0=8.590535 mult=3 null=3 first=1.1e-16  max=-1.54627 min=-1.54627
+   E0=8.590725 mult=3 null=3 first=2.6e-17  max=-2.30273 min=-2.30273
+g 8.0 N 40 time 11.9
+   E0=8.000000 mult=3 null=3 first=3.0e-16  max=0.72101 min=0.72101
+   E0=8.133117 mult=2 null=2 first=2.3e-18  max=1.51756 min=1.51756
+   E0=8.133188 mult=3 null=3 first=3.5e-18  max=1.44966 min=1.44966
+   E0=8.133331 mult=1 null=1 first=3.5e-18  max=1.32009 min=1.32009
+   E0=8.257554 mult=6 null=6 first=5.3e-17  max=0.38561 min=0.38561
+   E0=8.498706 mult=3 null=3 first=3.4e-17  max=-0.67485 min=-0.67485
+   E0=8.590535 mult=3 null=3 first=9.5e-17  max=-1.54627 min=-1.54627
+   E0=8.590725 mult=3 null=3 first=2.3e-17  max=-2.30273 min=-2.30273
+g 6.0 N 24 time 4.1
+   E0=6.000000 mult=3 null=3 first=2.2e-16  max=0.74130 min=0.74130
+   E0=6.186458 mult=2 null=2 first=3.5e-18  max=1.52113 min=1.52113
+   E0=6.186797 mult=3 null=3 first=5.8e-18  max=1.39218 min=1.39218
+   E0=6.187479 mult=1 null=1 first=8.5e-19  max=1.15491 min=1.15491
+   E0=6.350728 mult=6 null=6 first=7.3e-17  max=0.29061 min=0.29061
+   E0=6.661714 mult=3 null=3 first=4.4e-17  max=-0.79411 min=-0.79411
+   E0=6.758207 mult=3 null=3 first=1.7e-16  max=-1.46447 min=-1.46447
+   E0=6.758888 mult=3 null=3 first=9.3e-18  max=-2.19379 min=-2.19379
+g 6.0 N 40 time 9.9
+   E0=6.000000 mult=3 null=3 first=2.0e-16  max=0.74130 min=0.74130
+   E0=6.186458 mult=2 null=2 first=2.1e-18  max=1.52113 min=1.52113
+   E0=6.186797 mult=3 null=3 first=5.3e-18  max=1.39218 min=1.39218
+   E0=6.187479 mult=1 null=1 first=5.8e-18  max=1.15491 min=1.15491
+   E0=6.350728 mult=6 null=6 first=9.8e-17  max=0.29061 min=0.29061
+   E0=6.661714 mult=3 null=3 first=1.9e-17  max=-0.79411 min=-0.79411
+   E0=6.758207 mult=3 null=3 first=1.1e-16  max=-1.46447 min=-1.46447
+   E0=6.758888 mult=3 null=3 first=3.7e-17  max=-2.19379 min=-2.19379
+g 5.0 N 24 time 2.3
+   E0=5.000000 mult=3 null=3 first=8.5e-17  max=0.76678 min=0.76678
+   E0=5.235128 mult=2 null=2 first=6.7e-18  max=1.51306 min=1.51306
+   E0=5.236081 mult=3 null=3 first=5.2e-18  max=1.31424 min=1.31424
+   E0=5.238006 mult=1 null=1 first=6.0e-18  max=0.96148 min=0.96148
+   E0=5.429129 mult=6 null=6 first=9.6e-17  max=0.19089 min=0.19089
+   E0=5.788799 mult=3 null=3 first=4.8e-17  max=-0.90098 min=-0.90098
+   E0=5.879613 mult=3 null=3 first=1.2e-16  max=-1.40338 min=-1.40338
+   E0=5.881082 mult=3 null=3 first=4.5e-17  max=-2.10966 min=-2.10966
+g 5.0 N 40 time 10.8
+   E0=5.000000 mult=3 null=3 first=7.9e-17  max=0.76678 min=0.76678
+   E0=5.235128 mult=2 null=2 first=3.7e-18  max=1.51306 min=1.51306
+   E0=5.236081 mult=3 null=3 first=8.7e-18  max=1.31424 min=1.31424
+   E0=5.238006 mult=1 null=1 first=5.6e-18  max=0.96148 min=0.96148
+   E0=5.429129 mult=6 null=6 first=4.8e-17  max=0.19089 min=0.19089
+   E0=5.788799 mult=3 null=3 first=2.0e-17  max=-0.90098 min=-0.90098
+   E0=5.879613 mult=3 null=3 first=4.2e-17  max=-1.40338 min=-1.40338
+   E0=5.881082 mult=3 null=3 first=3.6e-17  max=-2.10966 min=-2.10966
+g 4.5 N 24 time 2.9
+   E0=4.500000 mult=3 null=3 first=1.0e-16  max=0.79136 min=0.79136
+   E0=4.771347 mult=2 null=2 first=1.1e-17  max=1.49726 min=1.49726
+   E0=4.773117 mult=3 null=3 first=7.1e-18  max=1.23809 min=1.23809
+   E0=4.776708 mult=1 null=1 first=4.3e-18  max=0.79085 min=0.79085
+   E0=4.983406 mult=6 null=6 first=4.8e-17  max=0.11207 min=0.11207
+   E0=5.371237 mult=3 null=3 first=2.3e-17  max=-0.97527 min=-0.97527
+   E0=5.454500 mult=3 null=3 first=2.2e-16  max=-1.36690 min=-1.36690
+   E0=5.456755 mult=3 null=3 first=1.8e-17  max=-2.05783 min=-2.05783
+g 4.5 N 40 time 10.7
+   E0=4.500000 mult=3 null=3 first=3.1e-16  max=0.79136 min=0.79136
+   E0=4.771347 mult=2 null=2 first=3.7e-18  max=1.49726 min=1.49726
+   E0=4.773117 mult=3 null=3 first=3.6e-18  max=1.23809 min=1.23809
+   E0=4.776708 mult=1 null=1 first=5.5e-18  max=0.79085 min=0.79085
+   E0=4.983406 mult=6 null=6 first=6.6e-17  max=0.11207 min=0.11207
+   E0=5.371237 mult=3 null=3 first=1.7e-17  max=-0.97527 min=-0.97527
+   E0=5.454500 mult=3 null=3 first=8.9e-17  max=-1.36690 min=-1.36690
+   E0=5.456755 mult=3 null=3 first=2.0e-17  max=-2.05783 min=-2.05783
+g 4.0 N 24 time 2.7
+   E0=4.000000 mult=3 null=3 first=1.5e-16  max=0.83761 min=0.83761
+   E0=4.321708 mult=2 null=2 first=1.1e-17  max=1.45860 min=1.45860
+   E0=4.325333 mult=3 null=3 first=6.9e-18  max=1.10324 min=1.10324
+   E0=4.332727 mult=1 null=1 first=2.4e-17  max=0.51361 min=0.51361
+   E0=4.553481 mult=6 null=6 first=5.8e-17  max=-0.00073 min=-0.00073
+   E0=4.971161 mult=3 null=3 first=1.5e-17  max=-1.06949 min=-1.06949
+   E0=5.041734 mult=3 null=3 first=8.4e-17  max=-1.32723 min=-1.32723
+   E0=5.045325 mult=3 null=3 first=5.9e-17  max=-1.99956 min=-1.99956
+g 4.0 N 40 time 12.8
+   E0=4.000000 mult=3 null=3 first=6.8e-17  max=0.83761 min=0.83761
+   E0=4.321708 mult=2 null=2 first=1.7e-17  max=1.45860 min=1.45860
+   E0=4.325333 mult=3 null=3 first=1.0e-17  max=1.10324 min=1.10324
+   E0=4.332727 mult=1 null=1 first=3.3e-18  max=0.51361 min=0.51361
+   E0=4.553481 mult=6 null=6 first=4.8e-17  max=-0.00073 min=-0.00073
+   E0=4.971161 mult=3 null=3 first=3.1e-17  max=-1.06949 min=-1.06949
+   E0=5.041734 mult=3 null=3 first=9.4e-17  max=-1.32723 min=-1.32723
+   E0=5.045325 mult=3 null=3 first=1.6e-17  max=-1.99956 min=-1.99956

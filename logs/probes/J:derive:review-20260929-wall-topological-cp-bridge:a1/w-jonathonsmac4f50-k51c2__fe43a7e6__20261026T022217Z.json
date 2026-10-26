@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20260929-wall-topological-cp-bridge:a1",
+ "type": "judgment",
+ "lane": "review-science-20260929",
+ "worker": "w-jonathonsmac4f50-k51c2",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20260929-wall-topological-cp-bridge/w-jonathonsmac4f50-k51c2/check.py",
+ "seed": 81337,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "fe43a7e6",
+ "started_utc": "20261026T022217Z",
+ "elapsed_s": 5.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "On the actual 2D staggered/taste-singlet-mass surface, the combined phase slope equals the kernel trace of Gamma_f (non-integer, Q-nonlinear at finite L) plus an exact anticommutator defect, while the integer -2Q of the 07-02 spectral flow is the signature of the kernel compression under a proved explicit m-window; elapsed 5.3s"
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 92/92 PASS (~6 s); conditional inertia theorem flow(m)=sig(P Gamma_f P | ker D) for m<gamma0*Delta/(1+gamma0) on the 2D staggered surface (the 07-02 note's -2Q was machine-verified only), hypotheses checked on 28 (L,Q) cases; exact first-order defect identity: a single theta_g cannot cancel Q=1 and Q=2 on L=12 (residual ~4pi/L^2); at (L=8,Q=3) dim ker D is 2 not 6; dim ker D=2|Q| not proved and false for large Q/L; possible line-237 discrepancy in the 07-02 note (taste-split zero modes are exact zeros at four (L,Q)).",
+ "what": "For one actual gauge/matter operator identify the exact topological and Hermiticity conditions, prove the finite identity or supply a counterexample, and distinguish finite lattice from continuum index normalization. The physical quantity is the combined phase with its actual source/readout convention. Nonnegative weight and a selected mass chart do not automatically derive that phase or register a new primitive. Owner-requested research transfer after landing review. The source is an unlanded hypothesis, not authority: fetch the named author branch, verify the frozen Git SHA and exact path/hash from probes/work/review-science-20260929/SOURCE_MAP.json. Fetch current origin/main and prefer its corrected bounded sources; read the actual axiom memo and primitive grants before premise judgments. Check related tasks, completed attempts, referee reports and active claims before choosing ONE distinct obligation. Read the complete argument, actual inputs and paired code for that obligation. Known review corrections are background, not a new HIT. Deliver numbered PROVED/CHECKED/ASSUMED steps in ATTEMPT.md, a self-contained check.py with disjoint machinery, and RECOVERY_STATUS.json with hashes, first unresolved step and remaining obligations. Prove finite claims exactly where possible; failed search is not a no-go and negative claims require N1-N8 before promotion. Commit the checker before run_probe.py; print SUMMARY with the actual result and HIT only for a demonstrated new result or defect. Finish through claim.py and ordinary cross-model confirmation. Use the existing maximum-thinking J campaign; do not spawn agents, start workers, change budgets, create PRs or edit scientific/audit authority.",
+ "stdout_sha256": "b67f2cee227de55918b738ce0582d31ad53ad64b386fd8ea639b2621c875611d",
+ "stdout_tail": " orientation of Q or the sign of m5 turns cancellation into addition\nPASS F9 near-kernel theorem (L=8,Q=3, V = 6 lowest |lambda| modes, delta=1.8e-03, Delta=0.702, gamma0=0.851, sig=-6): flow = sig on 40 admissible m-values\nPASS F11 (8,1),(8,2),(12,1),(12,2): the 2|Q| lowest |lambda| are <= 2.4e-15 (exact zeros to roundoff), not taste-split +-lambda pairs as described in 07-02 note:237\nPASS F12 dim ker D != 2|Q| for uniform flux at (L,Q,dim ker,2|Q|) = [(8, 3, 2, 6), (8, 5, 2, 10), (10, 3, 2, 6), (12, 5, 2, 10), (4, 3, 2, 6)]\nPASS F10 (L=8,Q=3) alpha-normalised phase coefficient m*dPhi/dm5: -1.70256 at m=1e-6 (= Tr Gamma_ker = -1.70256, 2 exact zero modes) vs -5.0888 at m=0.05 (6 near-kernel modes): order of limits m->0 vs L->inf matters\nHIT: scoped, same-family, unrefereed: (i) proved conditional inertia theorem flow(m)=sig(P Gamma_f P|ker D) for m<gamma0*Delta/(1+gamma0) (the 07-02 note's -2Q plateau was machine-verified only), with checked hypotheses on 28 (L,Q) cases; (ii) exact defect identity slope = Tr(Gamma P_ker)/m + (m/2)Tr[{Gamma,D}R D+]; (iii) exact Z_4 counterexamples to dim ker D = 2|Q| and to a real weight\nTOTAL: PASS=92 FAIL=0\nSUMMARY: On the actual 2D staggered/taste-singlet-mass surface, the combined phase slope equals the kernel trace of Gamma_f (non-integer, Q-nonlinear at finite L) plus an exact anticommutator defect, while the integer -2Q of the 07-02 spectral flow is the signature of the kernel compression under a proved explicit m-window; elapsed 5.3s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k51c2",
+  "at_utc": "20261026T022228Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Scoped conditional theorem plus exact defect identity on the supplied surface. Same-family, unrefereed; overlaps with 07-02 supplier, 06-11 and T43 kill noted.",
+  "by": "w-jonathonsmac4f50-k51c2",
+  "at_utc": "20261026T022228Z"
+ }
+}

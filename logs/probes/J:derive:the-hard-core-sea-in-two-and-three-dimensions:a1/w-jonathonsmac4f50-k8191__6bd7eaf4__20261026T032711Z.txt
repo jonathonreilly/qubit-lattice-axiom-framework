@@ -1,0 +1,129 @@
+=== S1: gauge reduction of the one-body walk (exact) ===
+PASS S1 [exact] V^dag h V = (real pi-flux hop) x 1_coin, dims=(4, 4) | max|diff|=0, V entries in {0,+-1,+-i}: True
+PASS S1 [exact] V^dag h V = (real pi-flux hop) x 1_coin, dims=(4, 4, 4) | max|diff|=0, V entries in {0,+-1,+-i}: True
+PASS S1 [exact] V^dag h V = (real pi-flux hop) x 1_coin, dims=(8, 8) | max|diff|=0, V entries in {0,+-1,+-i}: True
+PASS S1 [exact] every plaquette of the gauged model carries flux pi (product of hops = -(1/2)^4), dims=(4, 4)
+PASS S1 [exact] every plaquette of the gauged model carries flux pi (product of hops = -(1/2)^4), dims=(4, 4, 4)
+=== S2: many-body gauge check against the original coin-basis generator ===
+PASS S2 [exact] tr H^k, k=1..6 of the original hard-core generator = sum over Nup of gauged sectors, 4x4 torus N=2 fermion | max diff 0.00e+00
+PASS S2 [exact] tr H^k, k=1..6 of the original hard-core generator = sum over Nup of gauged sectors, 4x4 torus N=2 boson | max diff 0.00e+00
+PASS S2 [exact] tr H^k, k=1..4 of the original hard-core generator = sum over Nup of gauged sectors, 4x4 torus N=3 fermion | max diff 0.00e+00
+PASS S2 [exact] tr H^k, k=1..4 of the original hard-core generator = sum over Nup of gauged sectors, 4x4 torus N=3 boson | max diff 0.00e+00
+PASS S2 [float] ring L=8, N=4, fermion: ground = -csc(pi/8) (block 130 T4a) | E0=-2.613125929753
+PASS S2 [float] ring L=8, N=4, boson: ground = -csc(pi/8) (block 130 T4a) | E0=-2.613125929753
+=== S3: SU(2) invariance of the gauged hard-core generator (exact, integer entries of 2H) ===
+PASS S3 [exact] S^- H = H S^-, 4x4 torus N=3 Nup=2 F
+PASS S3 [exact] S^- H = H S^-, 4x4 torus N=3 Nup=2 B
+PASS S3 [exact] S^- H = H S^-, 4x4 torus N=4 Nup=2 F
+PASS S3 [exact] S^- H = H S^-, 4x4 torus N=4 Nup=2 B
+PASS S3 [exact] S^- H = H S^-, 4x4 torus N=5 Nup=3 F
+PASS S3 [exact] S^- H = H S^-, 4x4 torus N=5 Nup=3 B
+=== S4: exact small-cluster results ===
+PASS S4 [exact charpoly, 60-digit root] plaquette (2x2, flux pi) hard-core, F: min over all N and spins = -sqrt(2) | sector minima (N=1..3) ['-0.707106781187', '-1.41421356237', '-0.965925826289']
+PASS S4 [exact charpoly, 60-digit root] plaquette (2x2, flux pi) hard-core, B: min over all N and spins = -sqrt(2) | sector minima (N=1..3) ['-0.707106781187', '-1.41421356237', '-0.965925826289']
+PASS S4 [float] 2x3 patch N=3 F: spectrum of the original coin-basis generator = union of gauged Sz sectors | dim 160, max diff 4.4e-15
+PASS S4 [float] 2x3 patch N=3 B: spectrum of the original coin-basis generator = union of gauged Sz sectors | dim 160, max diff 4.7e-15
+PASS S4 [float] 2x2x2 cube N=3 F: spectrum of the original 3D coin-basis generator = union of gauged Sz sectors | dim 448, max diff 9.3e-15, E0=-2.598076211
+PASS S4 [float] 2x2x2 cube N=4 F: spectrum of the original 3D coin-basis generator = union of gauged Sz sectors | dim 1120, max diff 1.4e-14, E0=-3.464101615
+PASS S4 [float] 2x2x2 cube N=3 B: spectrum of the original 3D coin-basis generator = union of gauged Sz sectors | dim 448, max diff 6.2e-15, E0=-2.509481672
+PASS S4 [exact charpoly, 60-digit root] 2x3 patch N=3 fermion ground energy = -1/2 - sqrt(3) | ~ -2.232050807569
+PASS S4 [exact charpoly] 2x3 patch N=3 boson ground energy = least real root of an integer degree-9 polynomial, ~ -2.11263305 | -2.112633053057746
+PASS S4 [exact charpoly] 2x3 patch N=3: fermion ground < boson ground (exchange sign matters beyond the ring) | difference 0.119418
+=== S5: tile lower bounds and cluster upper bounds [float, all N, all spin sectors] ===
+   patch (2, 2) F: min over N,S = -1.414213562373 at N=2
+   patch (2, 2) B: min over N,S = -1.414213562373 at N=2
+   patch (3, 3) F: min over N,S = -3.414213562373 at N=4
+   patch (3, 3) B: min over N,S = -3.226961688647 at N=5
+   patch (2, 2, 2) F: min over N,S = -3.464101615138 at N=4
+   patch (2, 2, 2) B: min over N,S = -3.020881942162 at N=4
+PASS S4 [float] cube spectrum minimum independent of base position (1, 0, 0) (F)
+PASS S4 [float] cube spectrum minimum independent of base position (1, 0, 0) (B)
+PASS S4 [float] cube spectrum minimum independent of base position (0, 1, 0) (F)
+PASS S4 [float] cube spectrum minimum independent of base position (0, 1, 0) (B)
+PASS S4 [float] cube spectrum minimum independent of base position (1, 1, 1) (F)
+PASS S4 [float] cube spectrum minimum independent of base position (1, 1, 1) (B)
+PASS S5 [float] cube fermion tile minimum = -2*sqrt(3) (spin-polarized spinless sea) | -3.464101615138
+PASS S5 [float] 3x3 fermion tile minimum = -(2+sqrt(2)) = -3.41421356.. | -3.414213562373
+   per-site LOWER bounds on c0 from k^d tiles (each bond covered with total weight 1):
+     d=2 k=2 B: c0 >= -0.7071067812
+     d=2 k=2 F: c0 >= -0.7071067812
+     d=2 k=3 B: c0 >= -0.5378269481
+     d=2 k=3 F: c0 >= -0.5690355937
+     d=3 k=2 B: c0 >= -0.7552204855
+     d=3 k=2 F: c0 >= -0.8660254038
+   per-site UPPER bounds on c0 from product states of disjoint k^d clusters:
+     d=2 k=2 B: c0 <= -0.3535533906
+     d=2 k=2 F: c0 <= -0.3535533906
+     d=2 k=3 B: c0 <= -0.3585512987
+     d=2 k=3 F: c0 <= -0.3793570625
+     d=3 k=2 B: c0 <= -0.3776102428
+     d=3 k=2 F: c0 <= -0.4330127019
+=== S6: free sea and spin-polarized spinless sea (comparators / rigorous bracket for fermions) ===
+   free 2-coin sea per site, d=2: c0_free = -0.95809139868285
+   free 2-coin sea per site, d=3: c0_free = -1.19380 (midpoint grids 96,192: 1.193801, 1.193801; numeric only)
+PASS S6 [exact] 4x4 torus: free 2-coin sea per site = -(2+sqrt2)/4 *... = -(8+4 sqrt2)/16; spin-polarized spinless sea is exactly half | free -0.8535533906, polarized -0.4267766953
+PASS S6 [float] gauged one-body spectrum (16x16 spinless pi-flux hop) is the original 32-level spectrum with each level taken once; spinless sea = half the 2-coin sea = -(4+2 sqrt2) | spinless sea -6.8284271247
+   4^3 torus: free sea per site = -1.1218364368, polarized = -0.5609182184
+=== S7: 4x4 torus at half filling N=8, Sz=0 sector (all spins), both exchange signs ===
+PASS S7 sector dimension N=8,Nup=4 equals C(16,8)*C(8,4)=900900
+PASS S7 [float] F N=8 ground energy: two independent Lanczos runs agree, residual < 1e-11 | E0=-7.458194293716 (2nd run -7.458194293716) resid 4.0e-14
+PASS S7 [float] F N=8 ground state nondegenerate in the Sz=0 sector (gap > 1e-3) | gap 0.026562 (next levels -7.431632 -7.386093)
+PASS S7 [exact] F N=8: exact rational Rayleigh quotient (rigorous upper bound on the ground energy) and exact residual enclosure | E0 <= -16794360302871544/2251799784438109 ~ -7.458194293709 ; an eigenvalue lies within 7.59e-06 of it
+   F ground state <S^2> = 6.000e+00 (Sz=0 so S(S+1)=|S^- psi|^2)
+PASS S7 [float] F bond energies equal in the two directions, sum to E0 | e_x=-3.729097147 e_y=-3.729097147
+   F q=(1,0)*pi/2: first-order 2.4e-16, held/n -0.0874007144, relax/n -0.0069127163, Pi=E2/n -0.0943134307 (cg info 0)
+   F q=(2,0)*pi/2: first-order 8.7e-18, held/n -0.1165342858, relax/n -0.0094214313, Pi=E2/n -0.1259557171 (cg info 0)
+   F q=(1,1)*pi/2: first-order 1.3e-16, held/n -0.0582671429, relax/n -0.0093842717, Pi=E2/n -0.0676514146 (cg info 0)
+   F q=(2,1)*pi/2: first-order 4.0e-16, held/n -0.0291335715, relax/n -0.0087082930, Pi=E2/n -0.0378418645 (cg info 0)
+   F q=(2,2)*pi/2: first-order 0.0e+00, held/n 0.0000000000, relax/n -0.0000000000, Pi=E2/n 0.0000000000 (cg info 0)
+PASS S7 [float] F first-order response of the ground energy vanishes at all tested q (second-order coefficient exists)
+PASS S7 [float] F Pi(pi,pi) = 0 exactly (chessboard of clocks is invisible: held and relaxation both 0)
+PASS S7 [float] F relaxation term <= 0 (concavity of E0 in the bond weights)
+PASS S7 [float] F held term equals (1/2) sum_b alpha_b^2 <B_b> with <B_b> = e_dir/16 (translation-invariant bond energy)
+PASS S7 [float] F finite-difference (eps=0.02) agrees with perturbation theory for Pi(pi/2,0) | FD -0.09431641 vs PT -0.09431343
+PASS S7 [float] F: N=7 sector (Sz=1/2, all spins) ground energy is above the N=8 value (neighbouring filling) | E(7)=-7.139871756 > E(8)=-7.458194294
+   [F] elapsed 117s
+PASS S7 [float] B N=8 ground energy: two independent Lanczos runs agree, residual < 1e-11 | E0=-7.586109962153 (2nd run -7.586109962153) resid 3.3e-14
+PASS S7 [float] B N=8 ground state nondegenerate in the Sz=0 sector (gap > 1e-3) | gap 0.264435 (next levels -7.321675 -7.321675)
+PASS S7 [exact] B N=8: exact rational Rayleigh quotient (rigorous upper bound on the ground energy) and exact residual enclosure | E0 <= -136659207110711648/18014398392937451 ~ -7.586109962145 ; an eigenvalue lies within 8.06e-06 of it
+   B ground state <S^2> = 7.156e-28 (Sz=0 so S(S+1)=|S^- psi|^2)
+PASS S7 [float] B bond energies equal in the two directions, sum to E0 | e_x=-3.793054981 e_y=-3.793054981
+   B q=(1,0)*pi/2: first-order 3.1e-16, held/n -0.0888997261, relax/n -0.0041720071, Pi=E2/n -0.0930717332 (cg info 0)
+   B q=(2,0)*pi/2: first-order 2.3e-17, held/n -0.1185329682, relax/n -0.0157236667, Pi=E2/n -0.1342566348 (cg info 0)
+   B q=(1,1)*pi/2: first-order 5.9e-17, held/n -0.0592664841, relax/n -0.0058864356, Pi=E2/n -0.0651529197 (cg info 0)
+   B q=(2,1)*pi/2: first-order 5.4e-16, held/n -0.0296332420, relax/n -0.0089555245, Pi=E2/n -0.0385887665 (cg info 0)
+   B q=(2,2)*pi/2: first-order 0.0e+00, held/n 0.0000000000, relax/n -0.0000000000, Pi=E2/n 0.0000000000 (cg info 0)
+PASS S7 [float] B first-order response of the ground energy vanishes at all tested q (second-order coefficient exists)
+PASS S7 [float] B Pi(pi,pi) = 0 exactly (chessboard of clocks is invisible: held and relaxation both 0)
+PASS S7 [float] B relaxation term <= 0 (concavity of E0 in the bond weights)
+PASS S7 [float] B held term equals (1/2) sum_b alpha_b^2 <B_b> with <B_b> = e_dir/16 (translation-invariant bond energy)
+PASS S7 [float] B finite-difference (eps=0.02) agrees with perturbation theory for Pi(pi/2,0) | FD -0.09307458 vs PT -0.09307173
+PASS S7 [float] B: N=7 sector (Sz=1/2, all spins) ground energy is above the N=8 value (neighbouring filling) | E(7)=-7.158519542 > E(8)=-7.586109962
+   [B] elapsed 193s
+   free 2-coin sea Pi_free(pi/2,0)=-0.19194192, (pi,0)=-0.21338907, (pi,pi)=0.00e+00; c0_free/4=-0.21338835
+=== S8: summary of per-site volume term c0 = E0/n and stiffness indicator ===
+   4x4 torus, N=8: c0(F)=-0.4661371434  c0(B)=-0.4741318726  free=-0.8535533906  polarized=-0.4267766953
+   F: Pi(pi/2,0)=-0.09431343  c0/4=-0.11653429  difference=0.02222086  Pi(pi,0)=-0.12595572
+PASS S8 [float] F: Pi(pi/2,0) > c0/4 on the 4x4 torus (positive stiffness indicator, same sign as the ring)
+   F: Pi(q)-c0/4 at q*(2/pi) in {(1, 0): np.float64(0.022221), (2, 0): np.float64(-0.009421), (1, 1): np.float64(0.048883), (2, 1): np.float64(0.078692), (2, 2): np.float64(0.116534)}
+   F: kappa_eff = 4 (Pi-c0/4)/|q|^2_lat at q=(pi/2,0), |q|^2_lat = 2(1-cos q) = 2: 0.04444
+   B: Pi(pi/2,0)=-0.09307173  c0/4=-0.11853297  difference=0.02546123  Pi(pi,0)=-0.13425663
+PASS S8 [float] B: Pi(pi/2,0) > c0/4 on the 4x4 torus (positive stiffness indicator, same sign as the ring)
+   B: Pi(q)-c0/4 at q*(2/pi) in {(1, 0): np.float64(0.025461), (2, 0): np.float64(-0.015724), (1, 1): np.float64(0.05338), (2, 1): np.float64(0.079944), (2, 2): np.float64(0.118533)}
+   B: kappa_eff = 4 (Pi-c0/4)/|q|^2_lat at q=(pi/2,0), |q|^2_lat = 2(1-cos q) = 2: 0.05092
+PASS S8 [float] exchange signs give different half-filled energies on the 4x4 torus | c0F-c0B = 0.00799473
+   ring (block 130 closed form) at q=pi/2: Pi=-0.04959469, c0/4=-0.07957747, difference 0.02998278, kappa_eff=0.05997 (kappa->1/(6pi)=0.05305 as q->0)
+   free 2-coin sea on the 4x4 torus: Pi_free - c0_free/4 at q (pi/2,0), (pi/2,pi/2), (pi,pi/2), (pi,0): [np.float64(0.021446), np.float64(0.0625), np.float64(0.125), np.float64(-1e-06)]
+PASS S8 [float] torus value of c0(F) within [3x3-tile lower bound, spin-polarized upper bound] | -0.569036 <= -0.466137 <= -0.426777
+PASS S8 [float] torus value of c0(B) above the 3x3-tile lower bound and below the 3x3-cluster-product upper bound's complement (torus beats clusters) | -0.537827 <= -0.474132 <= -0.358551
+=== rigorous-bracket table (per site) ===
+   d=2, both signs: lower -1/sqrt(2) = -0.707107 [exact, plaquette tile]; 3x3-tile (float): F -0.569036, B -0.537827
+   d=2 fermion upper: c0_free/2 = -0.479046 (half the free 2-coin sea; Slater state of one coin, exact reduction)
+   d=2 boson  upper: plaquette-product -sqrt(2)/4 = -0.353553 [exact]; 3x3-cluster (float) -0.358551
+   d=3 lower: (3/4)(-sqrt2) = -1.060660 [exact, plaquette tiles]; cube tile (float): F -0.866025, B -0.755220
+   d=3 fermion upper: c0_free/2 = -0.59690 (numeric quadrature)
+   d=3 boson upper: cube-product (float) -0.377610 ; plaquette-product -sqrt(2)/4 = -0.353553 [exact]
+TOTAL: PASS=63 FAIL=0
+runtime 193s
+HIT: scoped exact partial results for the 2D/3D hard-core sea (walk sigma_j D_j, one record per site): (i) exact gauge reduction to an SU(2)-invariant pi-flux real hopping model (L even), hence ground energy over all spins is read in the Sz<=1/2 sector; (ii) exact bracket c0 in [-1/sqrt2, c0_free/2] (d=2, fermionic) and [-1/sqrt2, -sqrt2/4] (d=2, bosonic), lower (3/4)(-sqrt2) in d=3; (iii) exact 2x3-cluster counterexample: the exchange signs have different ground energies in 2D (-1/2-sqrt3 vs -2.1126...) so block 130's one-twist-set statement does not extend; (iv) float-only on the 4x4 torus at half filling: E0/n = -0.466137143 (F), -0.474131873 (B), Pi(pi/2,0) = -0.09431343 (F), -0.09307173 (B), Pi(pi,pi)=0, relaxation <= 0.
+SUMMARY: PARTIAL the 2D/3D hard-core walk is exactly an SU(2)-symmetric pi-flux problem; exact two-sided bounds and an exact exchange-sign counterexample are shown, and the 4x4 torus half-filled energies and rate-mode coefficients are computed in floating point only; the exact torus value and the infinite-volume stiffness sign are not certified.

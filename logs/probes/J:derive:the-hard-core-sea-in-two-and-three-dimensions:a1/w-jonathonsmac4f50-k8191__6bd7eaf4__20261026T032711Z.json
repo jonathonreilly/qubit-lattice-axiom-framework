@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:the-hard-core-sea-in-two-and-three-dimensions:a1",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-jonathonsmac4f50-k8191",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/the-hard-core-sea-in-two-and-three-dimensions/w-jonathonsmac4f50-k8191/check.py",
+ "seed": 85231,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "6bd7eaf4",
+ "started_utc": "20261026T032711Z",
+ "elapsed_s": 194.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL the 2D/3D hard-core walk is exactly an SU(2)-symmetric pi-flux problem; exact two-sided bounds and an exact exchange-sign counterexample are shown, and the 4x4 torus half-filled energies and rate-mode coefficients are computed in floating point only; the exact torus value and the infinite-volume stiffness sign are not certified."
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 63/63 PASS (169 s, 1.28 GB peak); PARTIAL. Exact gauge reduction of the 2D/3D walk with one record per site to an SU(2)-invariant real pi-flux hopping model (sides divisible by 4; coin-basis generator matched on small tori), so ground energy is read in the S_z<=1/2 sector; exact brackets on c0 per site (2D lower -1/sqrt2 exact; 3D lower -1.0607 exact; tile values floating point); relaxation term of Pi(q) <=0, Pi(pi,pi)=0; exact 2x3 cluster with 3 records: fermion -1/2-sqrt3 vs boson -2.1126 (degree-9 root), so block 130's T3 does not carry to 2D; 4x4 torus N=8 c0=-0.466137 (F) / -0.474132 (B) and Pi values are floating point only; Pi at (pi,0) below c0/4 unexplained; no certified lower bound on the 4x4 ground energy (step 14); blocks 54, 76, 78, 130 taken as landed.",
+ "what": "DERIVATION, independent attempt 1 of 2: The hard-core sea's volume term and clock stiffness beyond the ring. LANDED FIRST: origin/main is the science authority; read each named note as landed (git show origin/main:docs/<note>) before any PR branch, and where a PR's wording differs from the landed text, the landed text controls. Blocks 126-130 are OPEN hand-off PRs (#9182, #9184, #9185, #9186, #9187): read them on their branches (gh pr view <n> --json files,headRefName; git fetch origin <branch>; git show origin/<branch>:<note>). They are by the supervisor's model family (Claude) and harvest Grok-refereed probes attempts; nothing in them is adopted. SETTING: block 130 (PR #9187): on a ring, under one record per site, block 78's reduced walk's records are one twisted spinless band; the sea (lowest state over all N) is half filled; its volume term c0 = -1/pi and clock stiffness kappa = 1/(6 pi) are exactly half the free sea's, with the same sign; both exchange signs share one twist set. Block 76 as landed keeps only a declared comparator in 3D. In 2D and 3D hops flip coins and records pass, so the reduction fails. TASK: (a) the 4x4 torus with the 2D walk sigma_1 S_x + sigma_2 S_y at half filling, in momentum sectors (translations times the coin-sublattice parity): the exact ground energy per site for both exchange signs and the second-order coefficient of the rate mode u = eps cos(q.x) at the smallest q; (b) rigorous two-sided bounds on the hard-core sea's volume term per site in 2D and 3D (for example between the free sea's and zero, or against the ring's); (c) the sign of the induced stiffness, with a certificate if possible. HIT: (a) exact, or (b)-(c) with proofs. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/the-hard-core-sea-in-two-and-three-dimensions/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes AS LANDED ON MAIN (git show origin/main:<note>); use a PR branch (git fetch origin <branch>; git show origin/<branch>:<note>; gh pr view <n> --json files,headRefName,state) only for a note that is not on main; any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/the-hard-core-sea-in-two-and-three-dimensions/<name>/check.py\"",
+ "stdout_sha256": "80733a286bb2a6c3abc2cff94e07c1babb20be3d3fe755fce5e123ff25a9c8f8",
+ "stdout_tail": "on)\n   d=2 boson  upper: plaquette-product -sqrt(2)/4 = -0.353553 [exact]; 3x3-cluster (float) -0.358551\n   d=3 lower: (3/4)(-sqrt2) = -1.060660 [exact, plaquette tiles]; cube tile (float): F -0.866025, B -0.755220\n   d=3 fermion upper: c0_free/2 = -0.59690 (numeric quadrature)\n   d=3 boson upper: cube-product (float) -0.377610 ; plaquette-product -sqrt(2)/4 = -0.353553 [exact]\nTOTAL: PASS=63 FAIL=0\nruntime 193s\nHIT: scoped exact partial results for the 2D/3D hard-core sea (walk sigma_j D_j, one record per site): (i) exact gauge reduction to an SU(2)-invariant pi-flux real hopping model (L even), hence ground energy over all spins is read in the Sz<=1/2 sector; (ii) exact bracket c0 in [-1/sqrt2, c0_free/2] (d=2, fermionic) and [-1/sqrt2, -sqrt2/4] (d=2, bosonic), lower (3/4)(-sqrt2) in d=3; (iii) exact 2x3-cluster counterexample: the exchange signs have different ground energies in 2D (-1/2-sqrt3 vs -2.1126...) so block 130's one-twist-set statement does not extend; (iv) float-only on the 4x4 torus at half filling: E0/n = -0.466137143 (F), -0.474131873 (B), Pi(pi/2,0) = -0.09431343 (F), -0.09307173 (B), Pi(pi,pi)=0, relaxation <= 0.\nSUMMARY: PARTIAL the 2D/3D hard-core walk is exactly an SU(2)-symmetric pi-flux problem; exact two-sided bounds and an exact exchange-sign counterexample are shown, and the 4x4 torus half-filled energies and rate-mode coefficients are computed in floating point only; the exact torus value and the infinite-volume stiffness sign are not certified.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k8191",
+  "at_utc": "20261026T033032Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Scoped exact reduction and brackets; the 4x4 numbers are float. Same-family, unrefereed.",
+  "by": "w-jonathonsmac4f50-k8191",
+  "at_utc": "20261026T033032Z"
+ }
+}

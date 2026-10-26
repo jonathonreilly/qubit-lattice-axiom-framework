@@ -1,0 +1,162 @@
+{
+  "task": "J:derive:review-20260929-wall-local-code-and-gauge-selection:a1",
+  "source_branch": "claude/toe-walls-20260929",
+  "source_head": "4bd42747e57c4d604f66a63eed2db099ea38af4e",
+  "source_head_verified_by_fetch": true,
+  "main_checkout_head": "a77a3449c91a753b06ce2a63876cd460b62cb4cf (detached read-only checkout; no change to docs/U1_* between it and origin/main at time of reading)",
+  "source_objects": [
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/SUMMARY.md",
+      "sha256": "3c0b6cf9ab651069fef19ba4c020483b8c402a5a525047d9a6521b4f132e10d0",
+      "source_map_sha256": "3c0b6cf9ab651069fef19ba4c020483b8c402a5a525047d9a6521b4f132e10d0",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/WALLS.md",
+      "sha256": "23a9f40130f5104ca48a15d7a14cfb1400df156faf08e01abdceb653010b7494",
+      "source_map_sha256": "23a9f40130f5104ca48a15d7a14cfb1400df156faf08e01abdceb653010b7494",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/attacks/T18.md",
+      "sha256": "05164810fe3c890fab234146800041f2f59ac1a568534997a14cd319c6b5d0b6",
+      "source_map_sha256": "05164810fe3c890fab234146800041f2f59ac1a568534997a14cd319c6b5d0b6",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/kills/T18.md",
+      "sha256": "715e420904c13825c9ea32cc6048b71cb61c75aac8d04e4f668c537908fe84c0",
+      "source_map_sha256": "715e420904c13825c9ea32cc6048b71cb61c75aac8d04e4f668c537908fe84c0",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/attacks/T19.md",
+      "sha256": "322ecc7847b4aa91fb5c7e7476b27c38a870226ca7a0d5c2c9c7eacaa1070309",
+      "source_map_sha256": "322ecc7847b4aa91fb5c7e7476b27c38a870226ca7a0d5c2c9c7eacaa1070309",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/kills/T19.md",
+      "sha256": "f16e7a643278f22b808a4cbd15ca3186d17e8bec2d8633da3e0dd1966d890c1f",
+      "source_map_sha256": "f16e7a643278f22b808a4cbd15ca3186d17e8bec2d8633da3e0dd1966d890c1f",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/attacks/T20.md",
+      "sha256": "5952766874bd99d82926d37c2f29a1847ef520a4d9ea007749569987238d0c5d",
+      "source_map_sha256": "5952766874bd99d82926d37c2f29a1847ef520a4d9ea007749569987238d0c5d",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/kills/T20.md",
+      "sha256": "0fc02f0b9899beba3e5827104e293050f13c8047cd17e5599f84a9aff19b3d44",
+      "source_map_sha256": "0fc02f0b9899beba3e5827104e293050f13c8047cd17e5599f84a9aff19b3d44",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/attacks/T25.md",
+      "sha256": "458ed2c918fa17bcf5a5ae2df8ce3d169136cb0d56e6d80351a295d592cfd2fb",
+      "source_map_sha256": "458ed2c918fa17bcf5a5ae2df8ce3d169136cb0d56e6d80351a295d592cfd2fb",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/kills/T25.md",
+      "sha256": "29c717418611733ec709b0450b725bde9b6ab849c44bfc45cc15f12fb79eb46f",
+      "source_map_sha256": "29c717418611733ec709b0450b725bde9b6ab849c44bfc45cc15f12fb79eb46f",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/attacks/T26.md",
+      "sha256": "3262525890196552d6f889f2d033d55975313d8e4bb640327a6cb2334669cd21",
+      "source_map_sha256": "3262525890196552d6f889f2d033d55975313d8e4bb640327a6cb2334669cd21",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/kills/T26.md",
+      "sha256": "a07273dd1b84977588f6329fcf75d60eb815d8ad464cfb19c6d0626336e7cd0f",
+      "source_map_sha256": "a07273dd1b84977588f6329fcf75d60eb815d8ad464cfb19c6d0626336e7cd0f",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/attacks/T27.md",
+      "sha256": "8bfb8cfa4abda63edc9cc872e8474db913d0bec76d5ecbd4a8e236da2c066481",
+      "source_map_sha256": "8bfb8cfa4abda63edc9cc872e8474db913d0bec76d5ecbd4a8e236da2c066481",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/kills/T27.md",
+      "sha256": "36846323d84c4a50702c2fbeb69a39fb6f67d3493de5524299ce262a10b1b8cd",
+      "source_map_sha256": "36846323d84c4a50702c2fbeb69a39fb6f67d3493de5524299ce262a10b1b8cd",
+      "verified": true
+    }
+  ],
+  "additional_objects_read": [
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/attacks/T79.md",
+      "sha256": "9677eb9d015b997a26bba1283bb26263bf6649835e1d51e18152a3d9edddbd7e",
+      "source_map_sha256": "9677eb9d015b997a26bba1283bb26263bf6649835e1d51e18152a3d9edddbd7e",
+      "verified": true,
+      "note": "read as background (assigned in SOURCE_MAP to the photon-mode task); not one of this task's named objects"
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/kills/T79.md",
+      "sha256": "98702ebadac959e3dd396878459afe719dc0245718cc0de522aa39ec2283422f",
+      "source_map_sha256": "98702ebadac959e3dd396878459afe719dc0245718cc0de522aa39ec2283422f",
+      "verified": true,
+      "note": "read as background (assigned in SOURCE_MAP to the photon-mode task); not one of this task's named objects"
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/attacks/T77.md",
+      "sha256": "9422772efba70d38db6b0c62f5e5c008b82d65065f04dd6bf3090f20edf482eb",
+      "source_map_sha256": "9422772efba70d38db6b0c62f5e5c008b82d65065f04dd6bf3090f20edf482eb",
+      "verified": true,
+      "note": "read as background (assigned in SOURCE_MAP to the photon-mode task); not one of this task's named objects"
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/kills/T77.md",
+      "sha256": "75120b348b63deea41d3218abfacee3d45642bb505c26d986e8c7b82dd6e650f",
+      "source_map_sha256": "75120b348b63deea41d3218abfacee3d45642bb505c26d986e8c7b82dd6e650f",
+      "verified": true,
+      "note": "read as background (assigned in SOURCE_MAP to the photon-mode task); not one of this task's named objects"
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/attacks/scripts/T79_scratch/PREREG.md",
+      "sha256": "3e33305ba5876e7da91c5309608d5f9ee12307a630391eb90c86a30d05d7655c",
+      "source_map_sha256": "3e33305ba5876e7da91c5309608d5f9ee12307a630391eb90c86a30d05d7655c",
+      "verified": true,
+      "note": "read as background (assigned in SOURCE_MAP to the photon-mode task); not one of this task's named objects"
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/attacks/scripts/T79_scratch/RESULT.txt",
+      "sha256": "ecb7ffe0158edbdef33e0e8da2d35242a05a2c76865252afdf4de323fa6498cc",
+      "source_map_sha256": "ecb7ffe0158edbdef33e0e8da2d35242a05a2c76865252afdf4de323fa6498cc",
+      "verified": true,
+      "note": "read as background (assigned in SOURCE_MAP to the photon-mode task); not one of this task's named objects"
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/attacks/scripts/T79_scratch/test_T79.py",
+      "sha256": "1582ba36e9ee34519dfa17a61f2b6fdca2f830e7fd369d2d8b1f7d65cd153260",
+      "source_map_sha256": "1582ba36e9ee34519dfa17a61f2b6fdca2f830e7fd369d2d8b1f7d65cd153260",
+      "verified": true,
+      "note": "read as background (assigned in SOURCE_MAP to the photon-mode task); not one of this task's named objects"
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/kills/scripts/T79_scratch/kill_checks_out.txt",
+      "sha256": "3a5d3936f4e0040ff93671701382c52c75841c35374ee4511150b1c5c470e107",
+      "source_map_sha256": "3a5d3936f4e0040ff93671701382c52c75841c35374ee4511150b1c5c470e107",
+      "verified": true,
+      "note": "read as background (assigned in SOURCE_MAP to the photon-mode task); not one of this task's named objects"
+    }
+  ],
+  "chosen_obligation": "Wall T79 neighbourhood (listed in WALLS.md/SUMMARY.md): exact, grid-free classification of bounded orbits in the supplied 10-coefficient covariant nearest-neighbour vertex/edge/face/cube flow class, and the role of the magnetic Gauss row inside it",
+  "first_unresolved_step": "Step 11 of ATTEMPT.md: boundedness of orbits in both time directions (equivalently a positive diagonal invariant) and the 10-coefficient payload/locality class are SUPPLIED premises; nothing here derives them from Lattice/Qubit/Admissibility/Record or the registered primitives, and nothing connects the linear class to a bounded-domain qubit-link law or to a selected irreversible formation law.",
+  "remaining_obligations": [
+    "T79/T02: derive or exclude the premise 'no runaway in either time direction' for unrecorded field values from the axioms (not attempted)",
+    "infinite-volume (l2) version of Theorem 1 via the symbol: argued only, not executed",
+    "link of the linear class to a spin-1/2 or finite-spin link model's Hessian (T78; assigned to the photon-mode task)",
+    "T77 uniform-measure half and the covariant-role question: untouched",
+    "T18/T19: general (non-Pauli, all-range) proof that one-qubit-per-mode ancilla-free encodings need growing range, and whether the 'local qubit X representative' hypothesis of the 2026-09-14 note can be dropped: untouched; the T19 SAT quantifier is not rechecked here",
+    "T20, T25, T26, T27: source objects hash-verified and read; no new computation"
+  ],
+  "same_family_unrefereed": true
+}

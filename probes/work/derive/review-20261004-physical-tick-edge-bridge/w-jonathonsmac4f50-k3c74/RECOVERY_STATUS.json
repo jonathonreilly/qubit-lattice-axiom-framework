@@ -1,0 +1,22 @@
+{
+  "source_branch": "main",
+  "source_head": "94083c1bb4c89d746c8e4214b46a260efc16a433",
+  "current_main_checked": "a77a3449c91a753b06ce2a63876cd460b62cb4cf",
+  "source_objects": [
+    {"path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md", "sha256": "e6952f8bb3fb033a96e9fac6e10d877b3b3576f7ead872f2140ed832ac166700", "verified": true},
+    {"path": "docs/MIN_TIME_STEP_IS_THE_PLANCK_TIME_FROM_THE_SINGLE_SCALE_REFERENCE_PRIMITIVE_NARROW_THEOREM_NOTE_2026-06-08.md", "sha256": "cd30888631f0039c41ea6cc5fa0c094e5166f82a195c62cc432b6f42d9ad460f", "verified": true},
+    {"path": "docs/MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md", "sha256": "9c70abdc9b80bb0f6dcfc1ec35596f8b96030ec8942a1bd6e839d39d99696f46", "verified": true},
+    {"path": "docs/POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md", "sha256": "461f375c3a36e58aee197299cd8bc433f8ec2bc0c347b1140adae2e791fd9859", "verified": true},
+    {"path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md", "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292", "verified": true},
+    {"path": "scripts/min_time_step_is_planck_time_from_scale_reference_primitive_runner.py", "sha256": "b8c38640f035d723affc64bd8b9f68a379d4ac983dc497fc5393ed86e3ae45ae", "verified": true}
+  ],
+  "first_unresolved_step": "ATTEMPT.md step 8 premise (U_N) with inscribed radius rho(N)=1: the axioms and registered primitives supply no update map; a strictly six-neighbour tick gives the empty interval 1 <= c*a_tau/a_s <= 1/sqrt(3), so a tick=edge tie needs a supplied cube-type (or wider) tick or a quasi-local tick. Separately, r = a_s/l_P = G_lat^(-1/2) is unsupplied (G_lat = 1 or c_cell = 1/4 with the BP identification).",
+  "remaining_work": [
+    "decide which tick realisation is meant (three axis layers, wider support, or quasi-local) and test saturation (S) and round cone (R) on it",
+    "supply or derive record synchrony (F) and photon/matter universality of c",
+    "supplier for r: G_lat = 1 (c_cell = 1/4 with BP) or state the Planck-mass convention of the ruler",
+    "read open PRs 9872, 9899, 10020, 10024, 10048, 10053, 9955 for overlap (not read here)"
+  ],
+  "hit_claimed": false,
+  "provenance": "Claude Sonnet 5.5, single session, same-family, unrefereed"
+}

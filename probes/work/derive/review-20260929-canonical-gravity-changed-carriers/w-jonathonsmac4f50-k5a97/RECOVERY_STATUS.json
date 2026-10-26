@@ -1,0 +1,603 @@
+{
+ "task_id": "J:derive:review-20260929-canonical-gravity-changed-carriers:a1",
+ "source_branch": "claude/toe-viability-probes-20260927",
+ "source_head": "fd51a1f4c7f38c124d6f0f7dde396198eadf8b36",
+ "current_main_head_read": "3e1a2dd2531590dabf85bee8db56175ba9b96e90",
+ "main_wt_detached_head": "a77a3449c91a753b06ce2a63876cd460b62cb4cf",
+ "source_objects": [
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/APPROACH_REGISTRY.md",
+   "sha256": "5a82e2f98b74272a7b42f919e06753bbcc60e8a844c940a645ca6b70ed057c67",
+   "expected_sha256": "5a82e2f98b74272a7b42f919e06753bbcc60e8a844c940a645ca6b70ed057c67",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/ASSUMPTIONS.md",
+   "sha256": "165a498c661676218a08813958eeaf9c47d6f3cfcfe418bade0b3c6663bac9bb",
+   "expected_sha256": "165a498c661676218a08813958eeaf9c47d6f3cfcfe418bade0b3c6663bac9bb",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/OUTSIDE_VIEW.md",
+   "sha256": "e5ae633f959950e8c6670f6e73cadfb506100e1bbc7ea4f4d3b80cdadd9da8c1",
+   "expected_sha256": "e5ae633f959950e8c6670f6e73cadfb506100e1bbc7ea4f4d3b80cdadd9da8c1",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/ROUTES.md",
+   "sha256": "3856517758d4f86da392b1675573d11b4e019e56a625ed15581e15f0ec92f6d9",
+   "expected_sha256": "3856517758d4f86da392b1675573d11b4e019e56a625ed15581e15f0ec92f6d9",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/SUMMARY.md",
+   "sha256": "fde6228c9ebf341483fad1690c28283bd71e796ea3aec1f14f8de75dad54cd91",
+   "expected_sha256": "fde6228c9ebf341483fad1690c28283bd71e796ea3aec1f14f8de75dad54cd91",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/TESTS.md",
+   "sha256": "9dee2b425204a249e844446804d6a5f3cfd5e21aa794f317a294237f3768420b",
+   "expected_sha256": "9dee2b425204a249e844446804d6a5f3cfd5e21aa794f317a294237f3768420b",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/WALL.md",
+   "sha256": "00abbe699211d8af1d3b69daf40cdd3b508e2a9d2491e65608acd867d49993e0",
+   "expected_sha256": "00abbe699211d8af1d3b69daf40cdd3b508e2a9d2491e65608acd867d49993e0",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/agent1_condensed_matter.md",
+   "sha256": "81b0f7eac18b22bb636403e7d92ec59566bfc7a57a2fc9b1f3a3742bdab19712",
+   "expected_sha256": "81b0f7eac18b22bb636403e7d92ec59566bfc7a57a2fc9b1f3a3742bdab19712",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/agent2_quantum_gravity.md",
+   "sha256": "3daf9009b611c2bc57ec15c3b2d427229fb1dc89a14ca0cbe530b281ae7911e8",
+   "expected_sha256": "3daf9009b611c2bc57ec15c3b2d427229fb1dc89a14ca0cbe530b281ae7911e8",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/agent3_axioms_price.md",
+   "sha256": "6f480cfec1bce59f8776881e1c35a9ee759aca43c52a745bfcfcf87d1be9b75d",
+   "expected_sha256": "6f480cfec1bce59f8776881e1c35a9ee759aca43c52a745bfcfcf87d1be9b75d",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/agent4_misframing.md",
+   "sha256": "3eea8d7fdcd5a8f60076ef64c31757bfdc29de6a8b7f56cbd933f3a68a02629c",
+   "expected_sha256": "3eea8d7fdcd5a8f60076ef64c31757bfdc29de6a8b7f56cbd933f3a68a02629c",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/kill1_price_strong.md",
+   "sha256": "ae484e4027a4d77a15022274d2fe5439c0fb99bc067927e3e9b69a9003dcb561",
+   "expected_sha256": "ae484e4027a4d77a15022274d2fe5439c0fb99bc067927e3e9b69a9003dcb561",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/kill2_nonground_a1.md",
+   "sha256": "85c8180cf0a4422f7c3a13ce857b63f2ff1983ac2a5d1325d882c367b84c565e",
+   "expected_sha256": "85c8180cf0a4422f7c3a13ce857b63f2ff1983ac2a5d1325d882c367b84c565e",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/kill3_entanglement_statics.md",
+   "sha256": "e9de51b029d1aedde82d708b2245703c5ab571e60d5c4693ac30a4ac767c9aa9",
+   "expected_sha256": "e9de51b029d1aedde82d708b2245703c5ab571e60d5c4693ac30a4ac767c9aa9",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/kill4_induced_purity.md",
+   "sha256": "0aa62bc86479c6d2b40503933b63a5432a05dcf058f27142b0484b6db155b370",
+   "expected_sha256": "0aa62bc86479c6d2b40503933b63a5432a05dcf058f27142b0484b6db155b370",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/neutral_brief.md",
+   "sha256": "b798c1f46fd91c65bcabbd7211de0dc2c190920a0b420ecb4cc33fc98eafe8e3",
+   "expected_sha256": "b798c1f46fd91c65bcabbd7211de0dc2c190920a0b420ecb4cc33fc98eafe8e3",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/agents/routes_for_kill.md",
+   "sha256": "50ad77c1c53d8dbe39cfeceffe347d6b8202f7f76797ee4530861994c0138e53",
+   "expected_sha256": "50ad77c1c53d8dbe39cfeceffe347d6b8202f7f76797ee4530861994c0138e53",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/T1_output.txt",
+   "sha256": "7f505a208b4efcf271d692939e8f653847df8f98e242522c310f895f8119998e",
+   "expected_sha256": "7f505a208b4efcf271d692939e8f653847df8f98e242522c310f895f8119998e",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/T1_signed_compression_channel.py",
+   "sha256": "5346e7c8900a59924d24db36e14488cf05bfb1f9341bdafcd8d8019f6d451864",
+   "expected_sha256": "5346e7c8900a59924d24db36e14488cf05bfb1f9341bdafcd8d8019f6d451864",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/_p18_defs.py",
+   "sha256": "20980fd00b5af2b27589d06df4c732064a9b4b2eb4e2984d8fc7669f37eab9c7",
+   "expected_sha256": "20980fd00b5af2b27589d06df4c732064a9b4b2eb4e2984d8fc7669f37eab9c7",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/agents/agent4_checks.py",
+   "sha256": "86eceeeae3c561f24da969abbf57bd11fb8a6ecc1ac9bfdefa5c6268a160344a",
+   "expected_sha256": "86eceeeae3c561f24da969abbf57bd11fb8a6ecc1ac9bfdefa5c6268a160344a",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/agents/bogoliubov_check.py",
+   "sha256": "dac810bae99aee6e5934f7232cc39b3719a52ce629f007c237020df0fb941af2",
+   "expected_sha256": "dac810bae99aee6e5934f7232cc39b3719a52ce629f007c237020df0fb941af2",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/agents/kill2_checks.py",
+   "sha256": "a4f77ac29f1382c0707881040cf2cfb901cc485e537183e5d4aaaf6ba228d7d6",
+   "expected_sha256": "a4f77ac29f1382c0707881040cf2cfb901cc485e537183e5d4aaaf6ba228d7d6",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/agents/kill3_area_law_anisotropy.py",
+   "sha256": "f19d6564e1dd3fef3b7f2bd197f417120f38a5bb74e93b28b76b51a14c1a7d53",
+   "expected_sha256": "f19d6564e1dd3fef3b7f2bd197f417120f38a5bb74e93b28b76b51a14c1a7d53",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/agents/kill3_ppn_coordinates.py",
+   "sha256": "d266c579caeddbb555b332bbd519d23315a177d5fce28a26825d582e4a33270e",
+   "expected_sha256": "d266c579caeddbb555b332bbd519d23315a177d5fce28a26825d582e4a33270e",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/agents/kill4_checks.py",
+   "sha256": "669eccf2281cd15c1060aace40aa0764c796154973536b9cdac6e9db8f8ee3b2",
+   "expected_sha256": "669eccf2281cd15c1060aace40aa0764c796154973536b9cdac6e9db8f8ee3b2",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/exercises/gravity-wall-finite-records-20260929/scripts/agents/snf_torsion.py",
+   "sha256": "c0444b933728ef2538b850608b4f45c6e85142bc467273337c6b0198e88f3d34",
+   "expected_sha256": "c0444b933728ef2538b850608b4f45c6e85142bc467273337c6b0198e88f3d34",
+   "verified": true
+  },
+  {
+   "path": "docs/AN_EXACT_ADDITIVE_GAUSS_LAW_ON_DISCRETE_SLOTS_NEEDS_ITS_VARIABLE_STORED_ON_EVERY_SLOT_IT_TOUCHES_SO_ONLY_THE_PURE_ASSIGNMENTS_CARRY_THE_FULL_TENSOR_RULES_AS_EXACT_ADDITIVE_LAWS_BOUNDED_THEOREM_NOTE_2026-09-28.md",
+   "sha256": "316d5f05321fef6c8541d218b397e915529b44e65c55041e68f22dc01c321574",
+   "expected_sha256": "316d5f05321fef6c8541d218b397e915529b44e65c55041e68f22dc01c321574",
+   "verified": true
+  },
+  {
+   "path": "docs/A_LAPSE_SET_BY_RECORD_EVENTS_AT_LINEAR_ORDER_POSITIVE_RECORD_KINETICS_EITHER_KEEP_EINSTEINS_NEGATIVE_SCALAR_OR_ADD_A_SCALAR_GRAVITON_THE_CLOSING_LAPSE_NEEDS_THE_DEWITT_LINE_BOUNDED_THEOREM_NOTE_2026-09-28.md",
+   "sha256": "5776d04133ea0829e13d086aec408147c74a5a48732b25498d6336a61a83a36c",
+   "expected_sha256": "5776d04133ea0829e13d086aec408147c74a5a48732b25498d6336a61a83a36c",
+   "verified": true
+  },
+  {
+   "path": "docs/A_NEIGHBOURHOOD_CONSTRAINT_ON_Z3_QUBITS_EVIDENCE_OF_A_GAPLESS_FIELD_PATTERN_AND_A_PROTECTED_MASSLESS_PHOTON_IN_THE_HARMONIC_REGIME_BOUNDED_THEOREM_NOTE_2026-09-28.md",
+   "sha256": "ddc08eab2095439a56ca04da3bb67bb2428557101f201127fae4879628236880",
+   "expected_sha256": "ddc08eab2095439a56ca04da3bb67bb2428557101f201127fae4879628236880",
+   "verified": true
+  },
+  {
+   "path": "docs/A_QUANTUM_LINK_DEFORMATION_OF_THE_LINEAR_SCALAR_CONSTRAINT_ON_TENSOR_SLOTS_OF_SPIN_TWO_OR_MORE_KEEPS_DEWITT_WEAKLY_INVARIANT_BUT_ITS_CLASSICAL_ALGEBRA_IS_NOT_FIRST_CLASS_ON_THE_WHOLE_CONSTRAINT_SURFACE_BOUNDED_THEOREM_NOTE_2026-09-28.md",
+   "sha256": "54948429867ccbe5f38dbc54a1f47b400c9b2643c8aef0f021ecd80403a42a4f",
+   "expected_sha256": "54948429867ccbe5f38dbc54a1f47b400c9b2643c8aef0f021ecd80403a42a4f",
+   "verified": true
+  },
+  {
+   "path": "docs/BREAKING_THE_MOMENTUM_RULE_WITH_AN_ON_SITE_METRIC_STIFFNESS_IN_THE_SWAPPED_ASSIGNMENT_MAKES_THE_TT_HARMONIC_MODES_LINEAR_BUT_THE_HELICITY_ONE_PARTNERS_MOVE_WITH_THEM_BOUNDED_THEOREM_NOTE_2026-09-29.md",
+   "sha256": "79c79d0b20c92f9917d44787ec10e7daa7652a3c6f35b0ce02d65f6bfd0f059f",
+   "expected_sha256": "79c79d0b20c92f9917d44787ec10e7daa7652a3c6f35b0ce02d65f6bfd0f059f",
+   "verified": true
+  },
+  {
+   "path": "docs/EVERY_GAUSS_LAW_COMPATIBLE_MOVE_THAT_FEEDS_THE_TT_CHANNEL_FEEDS_THE_HELICITY_ONE_CHANNEL_AT_LEAST_A_QUARTER_AS_MUCH_ON_DIRECTION_AVERAGE_BOUNDED_THEOREM_NOTE_2026-09-29.md",
+   "sha256": "85f296570020eb89deab691dc602acd668a24a50d776d293f4bef7f0a205b5da",
+   "expected_sha256": "85f296570020eb89deab691dc602acd668a24a50d776d293f4bef7f0a205b5da",
+   "verified": true
+  },
+  {
+   "path": "docs/IF_THE_MEMBERS_LEADING_ACTION_RESPECTS_THE_HYPERCUBIC_TICK_SURFACE_IT_IS_UNIQUE_BETA_EQUALS_MINUS_ALPHA_AND_ALPHA_EQUALS_K_OVER_FOUR_FOLLOW_BOUNDED_THEOREM_NOTE_2026-09-27.md",
+   "sha256": "491ac7795f38314a53f74618add280a16e90d472c0198d7c243069e3138c75ff",
+   "expected_sha256": "491ac7795f38314a53f74618add280a16e90d472c0198d7c243069e3138c75ff",
+   "verified": true
+  },
+  {
+   "path": "docs/LATTICE_HANDEDNESS_A_FINITE_RANGE_FREE_WALKER_IS_LEFT_RIGHT_BALANCED_WHETHER_TIME_FLOWS_OR_TICKS_A_CHIRAL_FREE_TICK_NEEDS_TAILS_BOUNDED_THEOREM_NOTE_2026-09-27.md",
+   "sha256": "a806aa47c6eee0f379a820ff89bdfd3327ad86c2486814727594512c867063ba",
+   "expected_sha256": "a806aa47c6eee0f379a820ff89bdfd3327ad86c2486814727594512c867063ba",
+   "verified": true
+  },
+  {
+   "path": "docs/ONE_LIGHT_CONE_UNDER_INTERACTIONS_ON_THE_CONTINUOUS_TIME_SURFACE_THE_WALKERS_AND_A_SCALARS_SPEEDS_SEPARATE_AT_SECOND_ORDER_HYPERCUBIC_TICKS_ARE_A_SUFFICIENT_PROTECTION_BOUNDED_THEOREM_NOTE_2026-09-27.md",
+   "sha256": "76102306aebb3e87fb7822bcc8b7fdad8e7b0b6e24a1cfc6e4eb2dd85dd35c0d",
+   "expected_sha256": "76102306aebb3e87fb7822bcc8b7fdad8e7b0b6e24a1cfc6e4eb2dd85dd35c0d",
+   "verified": true
+  },
+  {
+   "path": "docs/ONE_QUBIT_PER_SLOT_UNDER_THE_TENSOR_MOMENTUM_RULE_AN_EXACT_SUM_RULE_BOUNDS_THE_GRAVITON_CHANNEL_BY_Q4_A_LIGHT_CONE_MODE_NEEDS_AN_INCOMPRESSIBLE_ELECTRIC_PATTERN_BOUNDED_THEOREM_NOTE_2026-09-28.md",
+   "sha256": "34313c1e13f80c5a339340558442fb5bea25e1b5e13324c965e731323ee75b8b",
+   "expected_sha256": "34313c1e13f80c5a339340558442fb5bea25e1b5e13324c965e731323ee75b8b",
+   "verified": true
+  },
+  {
+   "path": "docs/RECORDS_AS_BEABLES_UNDER_THE_MOVING_RECORDS_READING_BELLS_JUMP_LAW_GIVES_NEAREST_NEIGHBOUR_MOVES_EQUIVARIANT_ODDS_AND_BELL_CORRELATIONS_WITH_NONLOCAL_ODDS_BOUNDED_THEOREM_NOTE_2026-09-27.md",
+   "sha256": "0ece01e32bc512f4babb4adb87385887dae9a8363778c77f2c3becbe9686a4cb",
+   "expected_sha256": "0ece01e32bc512f4babb4adb87385887dae9a8363778c77f2c3becbe9686a4cb",
+   "verified": true
+  },
+  {
+   "path": "docs/RECORDS_AS_BEABLES_WHICH_RECORD_CARRIES_A_DISTURBANCE_IS_A_CHOICE_OF_IDENTITY_HOP_FOLLOWING_RECORDS_LAG_A_LAPLACE_IDENTITY_TRAVELS_BOUNDED_THEOREM_NOTE_2026-09-28.md",
+   "sha256": "356f1870c246be434082bd30db72b0d117ea639727804ea93cd14ffbc359f479",
+   "expected_sha256": "356f1870c246be434082bd30db72b0d117ea639727804ea93cd14ffbc359f479",
+   "verified": true
+  },
+  {
+   "path": "docs/RECORD_FORMATION_A_SHARP_ONE_SITE_LOCK_COSTS_THE_ENERGY_OF_ITS_BONDS_IN_THE_WALKERS_SEA_ABOUT_TWO_POINT_FOUR_LATTICE_ENERGY_UNITS_PER_RECORD_BOUNDED_THEOREM_NOTE_2026-09-27.md",
+   "sha256": "011ff82f4e1b0ea34b6fe13bbe792dba768b4f9fa563b71fcc4404bfc4ca0839",
+   "expected_sha256": "011ff82f4e1b0ea34b6fe13bbe792dba768b4f9fa563b71fcc4404bfc4ca0839",
+   "verified": true
+  },
+  {
+   "path": "docs/THE_INCOMPRESSIBLE_TENSOR_PATTERN_EXISTS_BUT_ISOTROPY_TIES_A_SPIN_TWO_FIELDS_HELICITIES_A_POSITIVE_MODELS_FIRST_ORDER_GRAVITON_CARRIES_HELICITY_ONE_PARTNERS_BOUNDED_THEOREM_NOTE_2026-09-28.md",
+   "sha256": "96ce6175e7a190bbaf313de5c1e378228e9d156f0ecf7adb2e1f0a4699b9b168",
+   "expected_sha256": "96ce6175e7a190bbaf313de5c1e378228e9d156f0ecf7adb2e1f0a4699b9b168",
+   "verified": true
+  },
+  {
+   "path": "docs/THE_LAMBDA_ONE_QUESTION_THE_DEWITT_FORM_IS_POSITIVE_ON_THE_MOMENTUM_SECTOR_WEAK_INVARIANCE_ADDS_NOTHING_IN_LIFTED_CLOCK_ENCODINGS_FINITE_SLOTS_NEED_A_NON_ADDITIVE_TIME_GAUGE_BOUNDED_THEOREM_NOTE_2026-09-28.md",
+   "sha256": "328bfae27c39fd0c6a73118e6f69bea3f8ed2f35301e16c3c5a8ea89dfa7ca60",
+   "expected_sha256": "328bfae27c39fd0c6a73118e6f69bea3f8ed2f35301e16c3c5a8ea89dfa7ca60",
+   "verified": true
+  },
+  {
+   "path": "docs/THE_OWNERS_FROZEN_BOX_READING_WITH_COUNT_THRESHOLD_FORMATION_RULES_UPWARD_RULES_FREEZE_INTO_ONE_STATE_CROWDING_RULES_INTO_MANY_EXACT_SMALL_BOX_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-29.md",
+   "sha256": "ef2fc7726c11163d521b29126dfb3c79e26794bd6904f089b363e0f30764ec70",
+   "expected_sha256": "ef2fc7726c11163d521b29126dfb3c79e26794bd6904f089b363e0f30764ec70",
+   "verified": true
+  },
+  {
+   "path": "docs/THE_PHOTON_TRIPLET_COMPOSITES_PARTNERS_ARE_NOT_GAPPED_BY_GAUGE_INVARIANT_LOCAL_HARMONIC_TERMS_AND_EVERY_TESTED_CONSTRAINT_SET_REMOVING_THE_HELICITY_ONE_PARTNERS_LEAVES_NO_TT_VISIBLE_FIRST_MOMENTS_BOUNDED_THEOREM_NOTE_2026-09-28.md",
+   "sha256": "26baae21ed0c3dcabc7ca380ca18dc3bc91e55a34410ca337300002c3316c25c",
+   "expected_sha256": "26baae21ed0c3dcabc7ca380ca18dc3bc91e55a34410ca337300002c3316c25c",
+   "verified": true
+  },
+  {
+   "path": "docs/THE_SWAPPED_QUANTUM_LINK_ASSIGNMENT_METRIC_DIAGONAL_MAKES_EINSTEIN_HILBERT_EXACTLY_INVARIANT_BUT_THE_TT_METRIC_F_SUM_OF_GAUSS_LAW_COMPATIBLE_MOVES_IS_BOUNDED_BY_Q_SQUARED_BOUNDED_THEOREM_NOTE_2026-09-28.md",
+   "sha256": "b6b654cb3ab576f2c022cbe316926a6cda4dfe8a7e2d44a5a0109ecc31185f6a",
+   "expected_sha256": "b6b654cb3ab576f2c022cbe316926a6cda4dfe8a7e2d44a5a0109ecc31185f6a",
+   "verified": true
+  },
+  {
+   "path": "docs/THE_TENSOR_COMPLEX_ON_FINITE_SLOTS_AT_THE_HARMONIC_LEVEL_WHATEVER_THE_RESIDUAL_SYMMETRY_TT_MODES_LINEAR_IN_EVERY_DIRECTION_BRING_HELICITY_ONE_CONTENT_AMONG_THE_GAPLESS_MODES_BOUNDED_THEOREM_NOTE_2026-09-29.md",
+   "sha256": "28b0152f7ac5792e70ebc9d43eb2ee86e1c3ffca06e4716dc01f700d67ee60c7",
+   "expected_sha256": "28b0152f7ac5792e70ebc9d43eb2ee86e1c3ffca06e4716dc01f700d67ee60c7",
+   "verified": true
+  },
+  {
+   "path": "docs/THE_WALKERS_SEA_FEELS_THE_SHAPE_OF_A_CONSTANT_METRIC_UNDER_THE_NATURAL_COUPLING_A_DESIGNED_COUPLING_REMOVES_IT_FOR_FREE_MATTER_INTERACTIONS_BRING_IT_BACK_BOUNDED_THEOREM_NOTE_2026-09-27.md",
+   "sha256": "d4ac0bf968e490bd4f2d9a5f32280a0011e11d5b68435e9f0f227da4861621b1",
+   "expected_sha256": "d4ac0bf968e490bd4f2d9a5f32280a0011e11d5b68435e9f0f227da4861621b1",
+   "verified": true
+  },
+  {
+   "path": "docs/TOE_VIABILITY_MAP_WHERE_THE_AXIOMS_ARE_EXPOSED_AND_THE_FASTEST_DECISIVE_TESTS_2026-09-27.md",
+   "sha256": "1a97f39c406f0cd7dd5de1192434b673c633f68cdc139fae27b037e15fdb59a3",
+   "expected_sha256": "1a97f39c406f0cd7dd5de1192434b673c633f68cdc139fae27b037e15fdb59a3",
+   "verified": true
+  },
+  {
+   "path": "docs/UNDER_A_UNITARY_WAVE_WITH_BORN_COUNT_STATISTICS_A_RECORD_COUNT_THAT_NEVER_FALLS_NEVER_RISES_RECORDS_CANNOT_FORM_FROM_NOTHING_BOUNDED_THEOREM_NOTE_2026-09-28.md",
+   "sha256": "bd8e5f201337869e1e5960b06e676638c1395da45d0001207867eef8520b545c",
+   "expected_sha256": "bd8e5f201337869e1e5960b06e676638c1395da45d0001207867eef8520b545c",
+   "verified": true
+  },
+  {
+   "path": "logs/runner-cache/a_lapse_set_by_record_events_physical_auxiliary_or_gauge_2026_09_28.txt",
+   "sha256": "98127080ad3539e0811489b8cae54743538323b7e24011aabf8f319485ecb305",
+   "expected_sha256": "98127080ad3539e0811489b8cae54743538323b7e24011aabf8f319485ecb305",
+   "verified": true
+  },
+  {
+   "path": "logs/runner-cache/a_photon_from_a_neighbourhood_constraint_on_z3_2026_09_28.txt",
+   "sha256": "88cfbc8286fc977503a1569eaef979d26d02ed37e7d79981a87cab08631a1359",
+   "expected_sha256": "88cfbc8286fc977503a1569eaef979d26d02ed37e7d79981a87cab08631a1359",
+   "verified": true
+  },
+  {
+   "path": "logs/runner-cache/a_quantum_link_deformation_of_the_linear_scalar_constraint_on_tensor_slots_of_spin_at_least_two_2026_09_28.txt",
+   "sha256": "d58dc62a08bdbb2289c1fb39c1241f27333611c5a020b9365cecedffd76e9eb7",
+   "expected_sha256": "d58dc62a08bdbb2289c1fb39c1241f27333611c5a020b9365cecedffd76e9eb7",
+   "verified": true
+  },
+  {
+   "path": "logs/runner-cache/breaking_the_momentum_rule_with_an_on_site_metric_stiffness_in_the_swapped_assignment_helicity_one_partners_2026_09_29.txt",
+   "sha256": "c9747dc0da88e52584bddb2f68a910cc3d6ecf5fc689dfb817bd2db5cdc66aec",
+   "expected_sha256": "c9747dc0da88e52584bddb2f68a910cc3d6ecf5fc689dfb817bd2db5cdc66aec",
+   "verified": true
+  },
+  {
+   "path": "logs/runner-cache/every_gauss_law_compatible_move_that_feeds_the_tt_channel_feeds_helicity_one_2026_09_29.txt",
+   "sha256": "458971195ebb2aa610a6dc87d8d0c5e5922625e7552b230284d0f8607673631c",
+   "expected_sha256": "458971195ebb2aa610a6dc87d8d0c5e5922625e7552b230284d0f8607673631c",
+   "verified": true
+  },
+  {
+   "path": "logs/runner-cache/isotropy_ties_spin_two_helicity_sum_rules_and_incompressible_tensor_patterns_2026_09_28.txt",
+   "sha256": "ebec0ef9efb25ec44da2c7d92a5a394ea78aa2634d35143ffdb9f81d2903e795",
+   "expected_sha256": "ebec0ef9efb25ec44da2c7d92a5a394ea78aa2634d35143ffdb9f81d2903e795",
+   "verified": true
+  },
+  {
+   "path": "logs/runner-cache/lattice_handedness_strictly_local_walkers_are_left_right_balanced_whether_time_flows_or_ticks_2026_09_27.txt",
+   "sha256": "1ed81a8bdbd9f1387e4b4c8535f19414249e671206884450cf56182246081831",
+   "expected_sha256": "1ed81a8bdbd9f1387e4b4c8535f19414249e671206884450cf56182246081831",
+   "verified": true
+  },
+  {
+   "path": "logs/runner-cache/lattice_vacuum_feels_the_shape_of_a_constant_metric_2026_09_27.txt",
+   "sha256": "4c4a9ffe5be5076c1273c7b04416fb532010eee6b6dabb330d392444d3d64cc9",
+   "expected_sha256": "4c4a9ffe5be5076c1273c7b04416fb532010eee6b6dabb330d392444d3d64cc9",
+   "verified": true
+  },
+  {
+   "path": "logs/runner-cache/member_leading_action_on_a_hypercubic_tick_surface_is_unique_2026_09_27.txt",
+   "sha256": "acc75e027117989e23975694806ee9c05e99bd22f6c7f310080024c62e9c3c83",
+   "expected_sha256": "acc75e027117989e23975694806ee9c05e99bd22f6c7f310080024c62e9c3c83",
+   "verified": true
+  },
+  {
+   "path": "logs/runner-cache/one_light_cone_under_interactions_continuous_time_surface_speeds_separate_at_second_order_2026_09_27.txt",
+   "sha256": "5ccd01e168f7851e3e383d2d3e9606b03612cb0b8c12c6de7cb248fd536893a9",
+   "expected_sha256": "5ccd01e168f7851e3e383d2d3e9606b03612cb0b8c12c6de7cb248fd536893a9",
+   "verified": true
+  },
+  {
+   "path": "logs/runner-cache/one_qubit_per_slot_carries_the_tensor_momentum_rule_and_an_exact_q4_sum_rule_bounds_its_graviton_channel_2026_09_28.txt",
+   "sha256": "1ea0a896f0f2e8d6a86dcd948f630e4bc8ce65aeed365e6014c8b1663b8c2785",
+   "expected_sha256": "1ea0a896f0f2e8d6a86dcd948f630e4bc8ce65aeed365e6014c8b1663b8c2785",
+   "verified": true
+  },
+  {
+   "path": "logs/runner-cache/record_birth_rate_bound_from_heat_budgets_2026_09_28.txt",
+   "sha256": "21a91263dcf9e1296e00a621adcaaa75298ce3fa5b98305b6646e541a77998d1",
+   "expected_sha256": "21a91263dcf9e1296e00a621adcaaa75298ce3fa5b98305b6646e541a77998d1",
+   "verified": true
+  },
+  {
+   "path": "logs/runner-cache/record_formation_one_site_lock_costs_the_energy_of_its_bonds_2026_09_27.txt",
+   "sha256": "7c37f3b09193d49a08408d0ecb9e3701c7654111095d593909200bb2c5d74dae",
+   "expected_sha256": "7c37f3b09193d49a08408d0ecb9e3701c7654111095d593909200bb2c5d74dae",
+   "verified": true
+  },
+  {
+   "path": "logs/runner-cache/records_as_beables_bells_jump_law_for_the_walker_2026_09_27.txt",
+   "sha256": "ec2532304fc4dc55097dfb73799680010dbd4951216f06cd375c1a1fb4be58c1",
+   "expected_sha256": "ec2532304fc4dc55097dfb73799680010dbd4951216f06cd375c1a1fb4be58c1",
+   "verified": true
+  },
+  {
+   "path": "logs/runner-cache/records_as_beables_which_record_carries_a_disturbance_is_a_choice_of_identity_2026_09_28.txt",
+   "sha256": "8ddd8ee38111c8750a099dcb061d7f564b161f3e8130b1f70eac1c09af680deb",
+   "expected_sha256": "8ddd8ee38111c8750a099dcb061d7f564b161f3e8130b1f70eac1c09af680deb",
+   "verified": true
+  },
+  {
+   "path": "logs/runner-cache/redundant_records_under_the_heisenberg_rule_on_a_uniform_patch_2026_09_27.txt",
+   "sha256": "b72a7844ad9f5c7a244ba9a82f8eaa7b29b1b7ae81b8372821d2aadd7b4bdde2",
+   "expected_sha256": "b72a7844ad9f5c7a244ba9a82f8eaa7b29b1b7ae81b8372821d2aadd7b4bdde2",
+   "verified": true
+  },
+  {
+   "path": "logs/runner-cache/redundant_records_with_a_pointer_impurity_in_the_free_sea_2026_09_28.txt",
+   "sha256": "dba642a240a3bf4b4961ecbe6b7f651fb71bdcf1a2bcbfada1f5c7824f6a1bb4",
+   "expected_sha256": "dba642a240a3bf4b4961ecbe6b7f651fb71bdcf1a2bcbfada1f5c7824f6a1bb4",
+   "verified": true
+  },
+  {
+   "path": "logs/runner-cache/the_lambda_one_question_what_the_dewitt_kinetic_structure_needs_on_the_tensor_complex_2026_09_28.txt",
+   "sha256": "e0c65390604be17a3032ab15000eb4cbcfd7de881ca43938b2902dd1386e9014",
+   "expected_sha256": "e0c65390604be17a3032ab15000eb4cbcfd7de881ca43938b2902dd1386e9014",
+   "verified": true
+  },
+  {
+   "path": "logs/runner-cache/the_owners_frozen_box_reading_counts_of_frozen_record_configurations_2026_09_29.txt",
+   "sha256": "a52838803d24d9ae049af81043960a0ceb36c4bb741a0514b5c02f65c5239a06",
+   "expected_sha256": "a52838803d24d9ae049af81043960a0ceb36c4bb741a0514b5c02f65c5239a06",
+   "verified": true
+  },
+  {
+   "path": "logs/runner-cache/the_photon_triplet_composites_partners_cannot_be_gapped_harmonically_and_constraints_removing_helicity_one_leave_no_tt_visible_first_moments_2026_09_28.txt",
+   "sha256": "662376e05a18baad2ed9c58b51a79031fe6520ecb37644b9dfef21406b055424",
+   "expected_sha256": "662376e05a18baad2ed9c58b51a79031fe6520ecb37644b9dfef21406b055424",
+   "verified": true
+  },
+  {
+   "path": "logs/runner-cache/the_swapped_quantum_link_assignment_metric_diagonal_on_the_tensor_complex_2026_09_28.txt",
+   "sha256": "9558ffffc33ac74ea86b122eb0bbb6645f93a5b05df479a2bf623f9f5d4e39af",
+   "expected_sha256": "9558ffffc33ac74ea86b122eb0bbb6645f93a5b05df479a2bf623f9f5d4e39af",
+   "verified": true
+  },
+  {
+   "path": "logs/runner-cache/the_tensor_complex_dichotomy_exact_transverse_diffeomorphisms_soft_tt_or_gapless_helicity_one_partners_2026_09_29.txt",
+   "sha256": "faef850f2cbaab125566f750168a1386039d39dc8c0da1256aa9ddb952349a6f",
+   "expected_sha256": "faef850f2cbaab125566f750168a1386039d39dc8c0da1256aa9ddb952349a6f",
+   "verified": true
+  },
+  {
+   "path": "logs/runner-cache/under_a_unitary_wave_a_record_count_that_never_falls_never_rises_2026_09_28.txt",
+   "sha256": "42106ae82cb39ca522b1864c52e78cd6f53acc01e0046d51e769bfbe86019733",
+   "expected_sha256": "42106ae82cb39ca522b1864c52e78cd6f53acc01e0046d51e769bfbe86019733",
+   "verified": true
+  },
+  {
+   "path": "logs/runner-cache/which_slot_assignments_carry_the_tensor_constraints_as_exact_additive_gauss_laws_2026_09_28.txt",
+   "sha256": "c52fbfbee335ccdf23f2a410c61a467023e57071a7e48bb3a13343d7ce02606b",
+   "expected_sha256": "c52fbfbee335ccdf23f2a410c61a467023e57071a7e48bb3a13343d7ce02606b",
+   "verified": true
+  },
+  {
+   "path": "scripts/a_lapse_set_by_record_events_physical_auxiliary_or_gauge_2026_09_28.py",
+   "sha256": "69df1b322f22e44855ba55e2fa5c27e22fb4e368c6da22acdabfd97df8d94181",
+   "expected_sha256": "69df1b322f22e44855ba55e2fa5c27e22fb4e368c6da22acdabfd97df8d94181",
+   "verified": true
+  },
+  {
+   "path": "scripts/a_photon_from_a_neighbourhood_constraint_on_z3_2026_09_28.py",
+   "sha256": "0b65857927ba134731bee21cefb5aab19ebe692a090607f32bf45cfb6e41b704",
+   "expected_sha256": "0b65857927ba134731bee21cefb5aab19ebe692a090607f32bf45cfb6e41b704",
+   "verified": true
+  },
+  {
+   "path": "scripts/a_quantum_link_deformation_of_the_linear_scalar_constraint_on_tensor_slots_of_spin_at_least_two_2026_09_28.py",
+   "sha256": "6f97fffe32d620d674f5ebeb01154a7db43cecbe8f298d64783a5d9016486e81",
+   "expected_sha256": "6f97fffe32d620d674f5ebeb01154a7db43cecbe8f298d64783a5d9016486e81",
+   "verified": true
+  },
+  {
+   "path": "scripts/breaking_the_momentum_rule_with_an_on_site_metric_stiffness_in_the_swapped_assignment_helicity_one_partners_2026_09_29.py",
+   "sha256": "de8378e918ba103219e3505f52c49191a306bfc784d0e29fa83f10e675bac479",
+   "expected_sha256": "de8378e918ba103219e3505f52c49191a306bfc784d0e29fa83f10e675bac479",
+   "verified": true
+  },
+  {
+   "path": "scripts/every_gauss_law_compatible_move_that_feeds_the_tt_channel_feeds_helicity_one_2026_09_29.py",
+   "sha256": "85ebba89e7c4bbd5bf675679030852793fb948aa72ddb1d62e0f8ed35d4691d6",
+   "expected_sha256": "85ebba89e7c4bbd5bf675679030852793fb948aa72ddb1d62e0f8ed35d4691d6",
+   "verified": true
+  },
+  {
+   "path": "scripts/isotropy_ties_spin_two_helicity_sum_rules_and_incompressible_tensor_patterns_2026_09_28.py",
+   "sha256": "fb32c0554a911074af69afb59a8e70e3160fd534fe03db1180d9fe73555e4ad8",
+   "expected_sha256": "fb32c0554a911074af69afb59a8e70e3160fd534fe03db1180d9fe73555e4ad8",
+   "verified": true
+  },
+  {
+   "path": "scripts/lattice_handedness_strictly_local_walkers_are_left_right_balanced_whether_time_flows_or_ticks_2026_09_27.py",
+   "sha256": "5b9850567bb0fba521535530b499165fe5cafe5536585ab0a050f8c463efe7c8",
+   "expected_sha256": "5b9850567bb0fba521535530b499165fe5cafe5536585ab0a050f8c463efe7c8",
+   "verified": true
+  },
+  {
+   "path": "scripts/lattice_vacuum_feels_the_shape_of_a_constant_metric_2026_09_27.py",
+   "sha256": "b58abf81e70ec989689c3387593d6092725bbdade637b105b07b52878e323e22",
+   "expected_sha256": "b58abf81e70ec989689c3387593d6092725bbdade637b105b07b52878e323e22",
+   "verified": true
+  },
+  {
+   "path": "scripts/member_leading_action_on_a_hypercubic_tick_surface_is_unique_2026_09_27.py",
+   "sha256": "2155849ab35da2789c5e47c0f47f058247515bbca211dc4591949e7e03525bea",
+   "expected_sha256": "2155849ab35da2789c5e47c0f47f058247515bbca211dc4591949e7e03525bea",
+   "verified": true
+  },
+  {
+   "path": "scripts/one_light_cone_under_interactions_continuous_time_surface_speeds_separate_at_second_order_2026_09_27.py",
+   "sha256": "344a9c25daccbb694cf2cc19b24b9a7d778fcf47d51da6404e1aa24374825a85",
+   "expected_sha256": "344a9c25daccbb694cf2cc19b24b9a7d778fcf47d51da6404e1aa24374825a85",
+   "verified": true
+  },
+  {
+   "path": "scripts/one_qubit_per_slot_carries_the_tensor_momentum_rule_and_an_exact_q4_sum_rule_bounds_its_graviton_channel_2026_09_28.py",
+   "sha256": "6b9b044e1c85855d35501478fa0e2f3b10b5035aeac56540ac23810ff99e814a",
+   "expected_sha256": "6b9b044e1c85855d35501478fa0e2f3b10b5035aeac56540ac23810ff99e814a",
+   "verified": true
+  },
+  {
+   "path": "scripts/record_birth_rate_bound_from_heat_budgets_2026_09_28.py",
+   "sha256": "59da7357f3cc315a703483c8caed2dbb483c68c5c3ba3ff7218f1a7a27164e83",
+   "expected_sha256": "59da7357f3cc315a703483c8caed2dbb483c68c5c3ba3ff7218f1a7a27164e83",
+   "verified": true
+  },
+  {
+   "path": "scripts/record_formation_one_site_lock_costs_the_energy_of_its_bonds_2026_09_27.py",
+   "sha256": "f314ceb203f80a5be05b8fd55d73ab8333f070f67c4f258e694c7444f931c044",
+   "expected_sha256": "f314ceb203f80a5be05b8fd55d73ab8333f070f67c4f258e694c7444f931c044",
+   "verified": true
+  },
+  {
+   "path": "scripts/records_as_beables_bells_jump_law_for_the_walker_2026_09_27.py",
+   "sha256": "e4bcbe8f54cff474379a5b14ab141b636bdabcf33269b4d1babf0f863cd71354",
+   "expected_sha256": "e4bcbe8f54cff474379a5b14ab141b636bdabcf33269b4d1babf0f863cd71354",
+   "verified": true
+  },
+  {
+   "path": "scripts/records_as_beables_which_record_carries_a_disturbance_is_a_choice_of_identity_2026_09_28.py",
+   "sha256": "0d842184fb0a02174491353ffe3c93e4c065d9480ea6cc0a0642c2d15cbfcb22",
+   "expected_sha256": "0d842184fb0a02174491353ffe3c93e4c065d9480ea6cc0a0642c2d15cbfcb22",
+   "verified": true
+  },
+  {
+   "path": "scripts/redundant_records_under_the_heisenberg_rule_on_a_uniform_patch_2026_09_27.py",
+   "sha256": "ed6fbe089a85bade475c2c21b7640600ca981193999e7d595e70f155e0584c99",
+   "expected_sha256": "ed6fbe089a85bade475c2c21b7640600ca981193999e7d595e70f155e0584c99",
+   "verified": true
+  },
+  {
+   "path": "scripts/redundant_records_with_a_pointer_impurity_in_the_free_sea_2026_09_28.py",
+   "sha256": "a756af0f8848e1cb81cf95fe3c4f9d4700a852f8369bc0882bfc4e9535fb8cbf",
+   "expected_sha256": "a756af0f8848e1cb81cf95fe3c4f9d4700a852f8369bc0882bfc4e9535fb8cbf",
+   "verified": true
+  },
+  {
+   "path": "scripts/the_lambda_one_question_what_the_dewitt_kinetic_structure_needs_on_the_tensor_complex_2026_09_28.py",
+   "sha256": "48525dcf22309d101c3bd46bdf8843e335d72d8363e239916f23b94a6de56816",
+   "expected_sha256": "48525dcf22309d101c3bd46bdf8843e335d72d8363e239916f23b94a6de56816",
+   "verified": true
+  },
+  {
+   "path": "scripts/the_owners_frozen_box_reading_counts_of_frozen_record_configurations_2026_09_29.py",
+   "sha256": "5b3b638382d799954f41c4689d75f0ea464383e7461bc849f0526dc9196b0097",
+   "expected_sha256": "5b3b638382d799954f41c4689d75f0ea464383e7461bc849f0526dc9196b0097",
+   "verified": true
+  },
+  {
+   "path": "scripts/the_photon_triplet_composites_partners_cannot_be_gapped_harmonically_and_constraints_removing_helicity_one_leave_no_tt_visible_first_moments_2026_09_28.py",
+   "sha256": "59030022dcc9c19dc5f44e31ad339be5b7313576c36271d7ddfde16f1231ba79",
+   "expected_sha256": "59030022dcc9c19dc5f44e31ad339be5b7313576c36271d7ddfde16f1231ba79",
+   "verified": true
+  },
+  {
+   "path": "scripts/the_swapped_quantum_link_assignment_metric_diagonal_on_the_tensor_complex_2026_09_28.py",
+   "sha256": "179a4e1b4fd42456979fb1d773e0689d1988b2cfafae1299bcdbea4e59a7e864",
+   "expected_sha256": "179a4e1b4fd42456979fb1d773e0689d1988b2cfafae1299bcdbea4e59a7e864",
+   "verified": true
+  },
+  {
+   "path": "scripts/the_tensor_complex_dichotomy_exact_transverse_diffeomorphisms_soft_tt_or_gapless_helicity_one_partners_2026_09_29.py",
+   "sha256": "472fe3a99b686df31e82b394973ac55593a9af13369b1fa3e93f63e3b826905b",
+   "expected_sha256": "472fe3a99b686df31e82b394973ac55593a9af13369b1fa3e93f63e3b826905b",
+   "verified": true
+  },
+  {
+   "path": "scripts/under_a_unitary_wave_a_record_count_that_never_falls_never_rises_2026_09_28.py",
+   "sha256": "c8f61a4fe5ef142957654e6ab9429bde18529226fed0d2ca6469511844e4af18",
+   "expected_sha256": "c8f61a4fe5ef142957654e6ab9429bde18529226fed0d2ca6469511844e4af18",
+   "verified": true
+  },
+  {
+   "path": "scripts/which_slot_assignments_carry_the_tensor_constraints_as_exact_additive_gauss_laws_2026_09_28.py",
+   "sha256": "e2584f0e8ab7a136c4b844d477d247361b70a95fc10ec87637f9cfff481bb658",
+   "expected_sha256": "e2584f0e8ab7a136c4b844d477d247361b70a95fc10ec87637f9cfff481bb658",
+   "verified": true
+  }
+ ],
+ "check_py_sha256": "5f9c536ed3339b4e6341da1240d196a201e93d80c773b4f7e9eb88dd92b6eb42",
+ "verified_all": true,
+ "obligation_chosen": "(1) exact-character recovery of the conditional leading-action counts and linear gauge identity; (2) nonzero-momentum DeWitt quotient kept separate from the homogeneous negative direction (exact all-momentum, plus 3^3 and 4^3 tori); (3) reduced-block analysis of the finite-range mixed identity (controlled infrared completion, weighted-l1 extension, SLAC limit, clock control)",
+ "first_unresolved_step": "Step 20 of ATTEMPT.md: reduction of the full degree-two off-shell mixed identity (1) of the finite-range note to the reduced translation-invariant matrix identity (3) for infinite-range (non-finite-support) kernels. For finite support the note's plateau argument does it; for exponentially or power-law decaying kernels the tails of the cubic jets T3, G3 need uniform decay estimates and a limit argument that is not written here. Beyond that: a controlled-infrared completion of the other brackets (lapse-lapse, shift-shift, field-dependent Jacobi), a physical source, and the gauge reduction remain open.",
+ "remaining_obligations": [
+  "prove or refute the plateau-to-reduced-identity step for uniformly exponentially decaying kernels (needed to promote the weighted-l1 lemma from the reduced identity to the full degree-two identity)",
+  "state and test the remaining brackets (lapse-lapse, shift-shift, field-dependent Jacobi) for the radius-m central-difference family; infrared order of those is not computed here",
+  "identify whether a band-limited (|k| <= kappa) physical subspace is invariant under the nonlinear dynamics so that the order-2m infrared residual bound is a bound on the physical algebra",
+  "explicit physical sources and gauge reduction for any changed-carrier completion (clock or cochain); none is supplied",
+  "N1-N8 discipline for any negative claim before promotion; none of the extension lemmas has been through it",
+  "independent cross-model confirmation (not run: single Sonnet 5.5 worker, same family)"
+ ]
+}

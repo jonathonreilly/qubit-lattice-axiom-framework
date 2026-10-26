@@ -307,7 +307,13 @@ Bosonized qubit sites (bosonized-sites, 2026-10-26, rethink r3; campaign files):
   - The staggered 16 lives on Z^4 = D4 + one hole class and keeps only 384 of the 1152 W(F4) elements (breaks triality).
   - The 16 cosets of D4/2D4 are Fourier-dual to the half-period momenta, so they are tastes, not internal labels. The zoom kernel gaps all 15 nonzero ones.
   - Candidate content clause (not adopted): "Each species is one field of the D4 matter law; species and link charges are supplied; only content anomaly-free in every link factor and mod 16 occurs." This predicts a nu^c in every family. Bent clause: CL-1's copy sign.
-  - OPEN: whether a 4-event (index-4, sqrt2) cell can carry the spin from one mode per event (zoom-out cells are never a cost).
+  - **Spin cell (d4-spin-cell, PR #10104, 11/11, own re-run identical): NO-GO in scope.**
+    - [T] The only W(F4)-invariant cells have 4, 16 and 64 events.
+    - [T] No U(1) phases of any period make the 24 root hops anticommute, so there are no D4 eta phases. Root hops form triangles, so there is no onsite chirality.
+    - The uniform-flux pattern forced by W(F4) (and by its 384 and 192 subgroups) has line zeros, not Dirac points.
+    - [T] By representation counting, the 4-event cell cannot hold one spinor, and the 16-event cell cannot hold one without tastes.
+    - A spinor per event is 4 fermion modes, i.e. FOUR qubits per event.
+    - OPEN: a 16-event spin x taste construction with long hops, and the Chern number of the one gapped flux orbit.
 - **Still to rebuild on D4:**
   - the copy sign's role in carrying the 16;
   - slab chirality and the 4D index;

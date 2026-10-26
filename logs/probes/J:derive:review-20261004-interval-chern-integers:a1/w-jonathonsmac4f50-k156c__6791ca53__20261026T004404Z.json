@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20261004-interval-chern-integers:a1",
+ "type": "judgment",
+ "lane": "review-science-20261004",
+ "worker": "w-jonathonsmac4f50-k156c",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261004-interval-chern-integers/w-jonathonsmac4f50-k156c/check.py",
+ "seed": 75444,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "6791ca53",
+ "started_utc": "20261026T004404Z",
+ "elapsed_s": 24.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "interval enclosures of frames, overlaps, link determinants, branch-consistent plaquette phases and their exact total show the lattice Chern integer of the two lowest bands is +1, 0 and +2 on three gap-certified slices of the supplied comparator B (previously floating point only), with the bridge's numerical hypotheses verified and its proof items (iii)-(iv) only sample-checked."
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 29/29 PASS; interval-enclosed lattice Chern integers +1, 0, +2 on three gap-certified slices of comparator B (J=(6/5,4/5,1), kappa=3/10); bridge lemma items (iii)-(iv) only sample-checked, interval soundness assumed (not formally verified); continuum bridge (step 9) not done.",
+ "what": "Implement disjoint interval enclosures of occupied overlaps, link determinants, branch-consistent plaquette phases and their total on one already gap-certified slice. Prove that the resulting total encloses one integer and verify the hypotheses of the stated continuum/lattice admissibility bridge. A positive middle gap, admissibility bound, mesh agreement or30-digit floating sum does not authenticate the reported integer. Then extend only with explicit certificates. Owner-requested review transfer as science work, not a PR snapshot or adoption. Fetch current main, verify the pinned source objects, and read the actual axiom memo and registered primitive grants. Check related tasks, active claims, completed attempts and referee reports before selecting ONE distinct obligation. Deliver numbered PROVED/CHECKED/ASSUMED steps in probes/work/derive/<problem>/<worker>/ATTEMPT.md, a self-contained disjoint check.py and RECOVERY_STATUS.json listing hashes, the first unresolved step and remaining work. Known review corrections are background, not a new HIT. Commit the checker before run_probe.py; print SUMMARY and HIT only for a demonstrated new result or defect. Use claim.py and ordinary cross-model confirmation. Source recovery alone is not completion. Do not start workers, spawn agents, create PRs, change budgets or edit scientific/audit authority in this task.",
+ "stdout_sha256": "c919a83335f8d82815fe7f5545417a40a21b401ca1264ecb3b70dc31bead6465",
+ "stdout_tail": "1/2] sample of lemma (iii)-(iv): |coarse phase - sum of its 2x2 fine phases| <= edge-mismatch bounds (coarse 4 edges + fine 8 boundary edges) :: observed max 4.46e-07 <= 4.11e-01 over 65536 plaquettes (float phases; consistency evidence only, not a proof of the lemma)\nPASS authenticated slice integers differ across the slab 0<f1<5/16 (C: +1 -> 0); jump = -(supplied census charge) of the one off-plane node in the slab :: C(0)=1, C(5/16)=0, jump -1, census charge +1 at f1=0.2551 (t,d)=(+0.265,+0.813)\nruntime 24s\nTOTAL: PASS=29 FAIL=0\nHIT: scoped new result (interval, not floating point): at the comparator J=(6/5,4/5,1), kappa=3/10, the lattice (Fukui) Chern integers of the two lowest bands are enclosed by outward-rounded interval link determinants and plaquette phases, each window containing exactly one integer: B f1=0: C=1 (mesh 128, window width 1.1e-05); B f1=5/16: C=0 (mesh 256, window width 2.3e-04); B f1-f2=1/2: C=2 (mesh 256, window width 8.3e-07). Scope: lattice integers on the stated meshes; the continuum identification still rests on the stated lemma (items iii-iv not re-proved here).\nSUMMARY: interval enclosures of frames, overlaps, link determinants, branch-consistent plaquette phases and their exact total show the lattice Chern integer of the two lowest bands is +1, 0 and +2 on three gap-certified slices of the supplied comparator B (previously floating point only), with the bridge's numerical hypotheses verified and its proof items (iii)-(iv) only sample-checked.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k156c",
+  "at_utc": "20261026T004433Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Scoped numerical-interval result: lattice Chern integers of the two lowest bands on three slices of comparator B; replaces floating-point values. Same-family, unrefereed; cross-model confirmation owed.",
+  "by": "w-jonathonsmac4f50-k156c",
+  "at_utc": "20261026T004433Z"
+ }
+}

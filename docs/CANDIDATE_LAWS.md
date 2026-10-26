@@ -287,6 +287,12 @@ Bosonized qubit sites (bosonized-sites, 2026-10-26, rethink r3; campaign files):
   - Two TT polarisations travel at c. The graviton splits as c = 1 +- A (ka)^2, with A = (1/6)sqrt((1-S)^2 - 12P): 1/6 on an axis, 0 on the body diagonal, polarisation average 0. At 100 Hz this is ~1e-80, against the GW170817 bound of 1e-15.
   - Static field: gamma = 1.0000(1), G_N/G_T = 1.0002, frame dragging 1.0001 x Lense-Thirring. beta = 1 is untested (nonlinear).
   - **NEW: one extra pair of massless modes** (rescalings of the three orthogonal 4-frames of lattice directions). They travel at c with a healthy sign, and matter does not see them at two-derivative order (each frame gives exactly 4p^2). OPEN: whether they gap, couple nonlinearly, or count as dark radiation.
+  - **Frame-mode follow-up (d4-frame-modes, PR #10101, 12/12, own re-run identical): HARMLESS, NOT GAPPED.**
+    - [T] The pair is the 2-dimensional irrep of S3 = W(F4)/W(D4_short), which permutes the three root 4-frames. It is absent from Sym^2 V, so no metric component carries it. Triality permutes the hole types; the joint image is S3 x S3.
+    - Gapping: four-derivative terms only add k^4. The nonlinear hinge sum (S = 45.28 sum u^3 + 40.0 (sum u^2)^2) has an inflection, and a uniform traceless strain makes the pair TACHYONIC (Euclidean sign supplied; Lorentzian check OPEN). The matter loop gives a Planck-scale mass of species-dependent sign, but CL-3's vacuum standard removes it.
+    - If kept, observables are safe: fifth-force alpha 4.6e-76; extra GW polarisation power <= 9e-76; Delta N_eff 0 (0.054 if thermalised at the Planck scale); |beta - 1| from the pair <= 8e-46.
+    - beta = 1 in the metric sector is argued from Regge -> Einstein-Hilbert convergence (supplied), not solved.
+    - Proposed amendment (UNTESTED): "Edge registers enter only through the metric their records read." This removes the pair exactly and keeps linear GR.
   - Supplied: the coning centres (not events) and the metric reading.
 - **Still to rebuild on D4:**
   - the copy sign's role in carrying the 16;

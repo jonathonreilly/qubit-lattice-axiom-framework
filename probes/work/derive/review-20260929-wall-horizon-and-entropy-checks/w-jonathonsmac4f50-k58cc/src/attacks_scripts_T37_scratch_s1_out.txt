@@ -1,0 +1,20 @@
+leptons (pole):  Q=0.6666605  r=0.4999908  delta=0.22223 (2/9=0.22222)
+common-scale MSbar (mu=162.5): r_up=0.830971 r_down=0.621090
+common-scale masses [GeV] up: [1.19228968e-03 6.01903039e-01 1.62500000e+02]  down: [2.57777446e-03 5.15554891e-02 2.73097031e+00]
+  delta_up=0.0520 delta_down=0.1005 (lepton convention);  Q/3: lep 0.2222 down 0.2491 up 0.2958
+mixed as quoted: r_up=0.7676 r_down=0.5971
+pole factors c,b,t: 1.1641458390427077 1.0953300193510251 1.0460655994247676
+one-loop pole on c,b,t only (light = MSbar 2 GeV): r_up=0.7577 r_down=0.6102
+formal one-loop pole incl. light quarks (alpha_s(2GeV)=0.30): r_up=0.7572 r_down=0.5930
+envelope [0.85,1.15]^3 up: random (min,max)=(np.float64(0.8073033242583347), np.float64(0.8520928000901518))  corners=(np.float64(0.8070896453613687), np.float64(0.8522667357527767))
+envelope [0.85,1.15]^3 down: random (min,max)=(np.float64(0.5782707991597833), np.float64(0.6613715349524072))  corners=(np.float64(0.5775772791447249), np.float64(0.6618436632015137))
+envelope [0.70,1.30]^3 up: corners=(np.float64(0.779118062457653), np.float64(0.8720113178947824))
+envelope [0.70,1.30]^3 down: corners=(np.float64(0.5294614374455358), np.float64(0.7013206438393547))
+up: factor on the heaviest mass alone needed for r=1/2: 0.0584  (a 94% cut)
+up: factor on the middle mass alone needed for r=1/2: 18.817
+down: factor on the heaviest mass alone needed for r=1/2: 0.4463  (a 55% cut)
+down: factor on the middle mass alone needed for r=1/2: 2.688
+lepton MSbar(mu=91187.6 MeV, alpha=1/137): Q-2/3=+1.169e-03  r=0.50175 (pole r-1/2=-9.23e-06)
+lepton MSbar(mu=162500 MeV, alpha=1/137): Q-2/3=+1.172e-03  r=0.50176 (pole r-1/2=-9.23e-06)
+lepton MSbar(mu=91187.6 MeV, alpha=1/128): Q-2/3=+1.255e-03  r=0.50188 (pole r-1/2=-9.23e-06)
+lepton MSbar(mu=162500 MeV, alpha=1/128): Q-2/3=+1.258e-03  r=0.50189 (pole r-1/2=-9.23e-06)

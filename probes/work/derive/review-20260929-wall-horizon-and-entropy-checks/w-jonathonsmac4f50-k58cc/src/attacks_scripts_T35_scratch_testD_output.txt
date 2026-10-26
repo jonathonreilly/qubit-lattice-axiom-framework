@@ -1,0 +1,6 @@
+y_t(M_Pl)=0.4358 -> m_t(1-loop, MSbar-like at 173)=168.9
+window +-3.0% in m_t: y_t(M_Pl) in [0.4065,0.4689] (+-7.6%/-6.7%)  prior prob (log-uniform) = 0.132  bits = 2.92
+window +-1.0% in m_t: y_t(M_Pl) in [0.4256,0.4463] (+-2.4%/-2.3%)  prior prob (log-uniform) = 0.044  bits = 4.51
+window +-0.5% in m_t: y_t(M_Pl) in [0.4307,0.4410] (+-1.2%/-1.2%)  prior prob (log-uniform) = 0.022  bits = 5.51
+flat prior, +-3%: p=0.145 bits=2.78
+y_t(M_Pl) giving pole-proxy in [150,200]: [0.329, 0.7040397727874619]

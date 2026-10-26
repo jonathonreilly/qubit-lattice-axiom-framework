@@ -1,0 +1,20 @@
+tw=7/18: g_2(v)=0.64810 (note 0.64803)  g_1GUT(v)=0.59954? -> g'(v)=0.35972 => g1_GUT=0.46440 (note 0.46438)
+   sin2(MZ)=0.23059 (note 0.23064)  1/aem(MZ)=127.649 (note 127.682)
+
+no staircase (tw=0), no projection: ['0.2233', '136.1493']
+no staircase (tw=0), K=9/8       : ['0.2228', '121.0910']
+staircase tw=7/18, no projection K=1: ['0.2311', '143.5268']
+
+scan: tw minimising |sin2 err|: tw=0.420, sin2 err -0.02%, 1/aem err +0.17%
+   tw window with |sin2|<=0.5% and |1/aem|<=1.0%: [0.365, 0.480]
+   tw window with |sin2|<=1.0% and |1/aem|<=2.0%: [0.305, 0.545]
+   tw window with |sin2|<=2.0% and |1/aem|<=4.0%: [0.185, 0.670]
+   tw=0.2000: sin2 0.2269 (-1.87%), 1/aem 124.46 (-2.73%)
+   tw=0.3000: sin2 0.2289 (-1.01%), 1/aem 126.15 (-1.41%)
+   tw=0.3889: sin2 0.2306 (-0.27%), 1/aem 127.65 (-0.24%)
+   tw=0.5000: sin2 0.2327 (+0.63%), 1/aem 129.52 (+1.23%)
+   tw=0.7000: sin2 0.2363 (+2.19%), 1/aem 132.89 (+3.86%)
+   tw=1.0000: sin2 0.2414 (+4.39%), 1/aem 137.95 (+7.82%)
+
+forking ledger: 70 distinct products of one factor from each of three small sets; those within (1%, 2%): 15 -> [0.3125, 0.328125, 0.333333, 0.351562, 0.375, 0.388889, 0.416667, 0.421875, 0.4375, 0.444444, 0.46875, 0.492188, 0.5, 0.518519, 0.527344]
+fraction of tw in [0,1] that lands in the (1%,2%) window: 0.24000000000000005

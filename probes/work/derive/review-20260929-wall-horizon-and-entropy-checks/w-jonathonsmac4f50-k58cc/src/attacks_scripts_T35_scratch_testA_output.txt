@@ -1,0 +1,9 @@
+loop 1: at M_Pl g1=0.6132 g2=0.5039 g3=0.4895 yt=0.4048 lam=-0.03370
+loop 2: at M_Pl g1=0.6153 g2=0.5054 g3=0.4873 yt=0.3821 lam=-0.01455
+loop 3: at M_Pl g1=0.6154 g2=0.5054 g3=0.4873 yt=0.3863 lam=-0.01522
+yt=0.35 g1=0.6144 g2=0.5041: lane 1-loop beta_lam=+2.850512e-04  mine=+2.850512e-04
+yt=0.35 g1=0.5774 g2=0.5: lane 1-loop beta_lam=+2.076238e-04  mine=+2.076238e-04
+yt=0.38 g1=0.6144 g2=0.5041: lane 1-loop beta_lam=+6.296361e-05  mine=+6.296361e-05
+yt=0.38 g1=0.5774 g2=0.5: lane 1-loop beta_lam=-1.446379e-05  mine=-1.446379e-05
+yt=0.42 g1=0.6144 g2=0.5041: lane 1-loop beta_lam=-3.270824e-04  mine=-3.270824e-04
+yt=0.42 g1=0.5774 g2=0.5: lane 1-loop beta_lam=-4.045098e-04  mine=-4.045098e-04

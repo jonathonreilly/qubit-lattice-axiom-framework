@@ -1,0 +1,8 @@
+R1: yt(v)=0.92115, yt(M_Pl)=0.38892
+kappa_Y=0: run-value yt(v)=0.97702 <-> yt(M_Pl)=0.44470; implied 1+Delta_R vs lifted 0.4358: 1.0205; vs bare 0.4082: 1.0893
+kappa_Y=1: run-value yt(v)=0.92115 <-> yt(M_Pl)=0.38892; implied 1+Delta_R vs lifted 0.4358: 0.8925; vs bare 0.4082: 0.9526
+g3(M_Pl) from alpha_s(v)=0.1033 run up: 0.48711051186287896  g_lat= 1.067410712985008  ratio g_lat/g3(M_Pl)= 2.191311185018078
+Scenario A (Ward partner g3^MS(M_Pl)=0.4871): yt(M_Pl)=0.1989 -> yt(v)=0.6033; kappa_Y=0: tree m=yt(v)*v/sqrt2=99.1 GeV (x~1.08 = 107 GeV pole-scale, order of magnitude)
+Scenario A (Ward partner g3^MS(M_Pl)=0.4871): yt(M_Pl)=0.1989 -> yt(v)=0.6033; kappa_Y=1: tree m=yt(v)*v/sqrt2=105.1 GeV (x~1.08 = 113 GeV pole-scale, order of magnitude)
+one-loop Lambda for g_LM=1.068, b0=7/(16pi^2): 6.127e+14 GeV
+one-loop Lambda for g_bare=1, b0=7/(16pi^2): 1.542e+14 GeV

@@ -1,0 +1,8 @@
+loop 1: critical yt(v)=0.90090  yt(M_Pl)=0.38793  g(M_Pl)=(0.6154,0.5049,0.4892) beta_lam=1.11e-13
+loop 2: critical yt(v)=0.92414  yt(M_Pl)=0.38878  g(M_Pl)=(0.6175,0.5064,0.4871) beta_lam=1.38e-19
+loop 3: critical yt(v)=0.92007  yt(M_Pl)=0.38892  g(M_Pl)=(0.6175,0.5064,0.4871) beta_lam=6.31e-18
+Ward BC tadpole-lifted g_LM/sqrt6 = 0.4358; loop 2: yt(v)=0.97198 ; with sqrt(8/9): 0.91639
+Ward BC tadpole-lifted g_LM/sqrt6 = 0.4358; loop 3: yt(v)=0.96769 ; with sqrt(8/9): 0.91235
+R1 crit (no kappa_Y): yt(v)=0.92007 -> mbar(m)=163.82 at mu*=163.8 -> pole(K=1.0619)=173.96 GeV
+Ward tadpole-lifted, kappa_Y=0: yt(v)=0.96769 x sqrt(8/9) -> mbar(m)=162.55 at mu*=162.5 -> pole(K=1.0619)=172.61 GeV
+Ward tadpole-lifted, kappa_Y=1: yt(v)=0.96769 -> mbar(m)=171.69 at mu*=171.7 -> pole(K=1.0619)=182.32 GeV

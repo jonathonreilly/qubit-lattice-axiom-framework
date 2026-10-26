@@ -1,0 +1,11 @@
+(i) R1 pole masses across shared premises (3-loop, K-series at mu*)
+ kEW=0 alpha_s(v)=0.1033: yt(v)=0.9211 pole=174.2 GeV
+ kEW=0 alpha_s(v)=0.1179: yt(v)=0.9700 pole=183.4 GeV
+ kEW=1 alpha_s(v)=0.1033: yt(v)=0.8829 pole=167.4 GeV
+ kEW=1 alpha_s(v)=0.1179: yt(v)=0.9308 pole=176.5 GeV
+(ii) protected-ratio reading, Ward y = g3^MS(M_Pl)/C on the lane's own gauge trajectory (kEW=0, alpha_s(v)=0.1033)
+ C^2=6.0: yt(M_Pl)=0.1989 yt(v)=0.6033; pole GeV -> kY=0: tree 99.1 (mu* outside bracket); kY=1: tree 105.1 (mu* outside bracket)
+ C^2=3.0: yt(M_Pl)=0.2812 yt(v)=0.7702; pole GeV -> kY=0: 139.9; kY=1: 147.6
+ C^2=2.0: yt(M_Pl)=0.3444 yt(v)=0.8666; pole GeV -> kY=0: 155.9; kY=1: 164.6
+ C^2=1.5: yt(M_Pl)=0.3977 yt(v)=0.9308; pole GeV -> kY=0: 166.5; kY=1: 175.9
+ C^2=1.0: yt(M_Pl)=0.4871 yt(v)=1.0119; pole GeV -> kY=0: 179.9; kY=1: 190.1

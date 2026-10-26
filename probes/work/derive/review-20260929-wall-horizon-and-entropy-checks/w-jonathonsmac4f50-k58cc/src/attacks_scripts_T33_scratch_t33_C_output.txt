@@ -1,0 +1,33 @@
+sanity (SM-extrapolated pair run back down): ['0.23122', '127.95100'] vs 0.23122 127.951
+
+8-state left-handed surface: Tr T3^2 = 2.0000, Tr (Y/2)^2 = 0.6667; Tr-normalised ratio g'^2/g2^2 = 3.000 -> sin^2 = 0.7500  (needs right-handed states for 3/8)
+
+TEST C: IR predictions (2-loop SM running down from M_Pl)
+candidate                                                                      g2^2   gY^2   sin2(MZ)  err%    1/aem(MZ) err%   verdict(<=3%,<=5%)
+c1 counting (1/4, 1/5)                                                         0.2500 0.2000  0.2244    -3.0    136.80    +6.9   FAIL
+c2 Pati-Salam relation (g4^2=1, gL^2=gR^2=1/4) -> gY^2=3/14                    0.2500 0.2143  0.2315    +0.1    132.61    +3.6   PASS
+c2b PS with g4^2 = g_L^2 = g_R^2 = 1/4 (unified) -> gY^2 = 3/20 (sin^2=3/8)    0.2500 0.1500  0.1946   -15.8    157.73   +23.3   FAIL
+c3 SU(5)-type unified g^2=1/4: gY^2 = 3/5 g^2                                  0.2500 0.1500  0.1946   -15.8    157.73   +23.3   FAIL
+c4 universal 1/4 (both)                                                        0.2500 0.2500  0.2471    +6.9    124.25    -2.9   FAIL
+c5 unit tick (SU(2) beta=4: g2^2=1; gY^2=1)                                    1.0000 1.0000  0.0021   -99.1     60.52   -52.7   FAIL
+c6 PS with g4^2=1, gL^2=gR^2=1 (unit tick on all): gY^2 = 3/5                  1.0000 0.6000  0.0019   -99.2     68.86   -46.2   FAIL
+c7 8-state trace normalisation, g2^2=1/4                                       0.2500 0.7500  0.3381   +46.2     90.83   -29.0   FAIL
+
+PS relation: gY^2 as function of (g4^2, gR^2 = gL^2 = 1/4):
+   g4^2=     0.25: gY^2=0.1500  sin2=0.1946 (-15.8%)  1/aem=157.73 (+23.3%)
+   g4^2=     0.50: gY^2=0.1875  sin2=0.2177 (-5.8%)  1/aem=140.98 (+10.2%)
+   g4^2=     1.00: gY^2=0.2143  sin2=0.2315 (+0.1%)  1/aem=132.61 (+3.6%)
+   g4^2=     2.00: gY^2=0.2308  sin2=0.2390 (+3.4%)  1/aem=128.43 (+0.4%)
+   g4^2=     4.00: gY^2=0.2400  sin2=0.2430 (+5.1%)  1/aem=126.34 (-1.3%)
+   g4^2=1000000000.00: gY^2=0.2500  sin2=0.2471 (+6.9%)  1/aem=124.25 (-2.9%)
+
+TRIAL FACTOR
+box of the counting pair: |err sin2| <= 2.95%, |err 1/aem| <= 6.92%
+family F = {(1/n, 1/m): n,m=1..12}: pairs at least as good as (4,5) in BOTH errors: [(4, 5, np.float64(-2.95), np.float64(6.92))]
+family pairs meeting (3%, 5%): []
+1-loop boxes: counting pair |err|=(3.44%, 6.38%); PS pair (0.37%, 3.10%)
+base rate (random log-uniform pair in [0.1,0.5]^2): in counting-pair box 0.0047; in PS-pair box 0.0003; in (3%,5%) PASS box 0.0033
+expected chance hits among 144 family pairs: counting box 0.67; PS box 0.04; PASS box 0.47
+family pairs (1-loop) at least as good as (4,5): [(4, 5)]
+family pairs (1-loop) meeting the (3%,5%) PASS bar: []
+finer family (p/q, p<=3, q<=20, value in [0.08,0.6]; 44 values, 1936 pairs): pairs meeting (3%,5%): 9; sample [((1, 4), (2, 9)), ((1, 4), (3, 13)), ((1, 4), (3, 14)), ((2, 8), (2, 9)), ((2, 8), (3, 13)), ((2, 8), (3, 14)), ((3, 12), (2, 9)), ((3, 12), (3, 13)), ((3, 12), (3, 14))]

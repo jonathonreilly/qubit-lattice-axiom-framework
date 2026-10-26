@@ -1,0 +1,67 @@
+{
+ "source_branch": "claude/toe-walls-20260929",
+ "source_head": "4bd42747e57c4d604f66a63eed2db099ea38af4e",
+ "source_head_verified_present_in_fetched_branch": true,
+ "source_objects": [
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/SUMMARY.md",
+   "sha256": "3c0b6cf9ab651069fef19ba4c020483b8c402a5a525047d9a6521b4f132e10d0",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/WALLS.md",
+   "sha256": "23a9f40130f5104ca48a15d7a14cfb1400df156faf08e01abdceb653010b7494",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T73.md",
+   "sha256": "dca3b7d3c0d3369af9d6898f03ec4e933cd06494f47abaeb33386941094ec790",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T74.md",
+   "sha256": "3f4736e15f2347df521a4f96cc9c66d0c7aa414305ee4b7423f85a685259612a",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T75.md",
+   "sha256": "7f8e7e52eed4011b417ec738f119df1891e8a9489143080dcb12ba21294419b7",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/attacks/T76.md",
+   "sha256": "c34d3aba25f543f9bffc02e2fc35ff28dbba1da88fc1627f9a1716b81406c3c7",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T73.md",
+   "sha256": "9358771d2c9ed00a5b6a092e76f6557bed4dd11a0adfe898d9cc1effc9324cb4",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T74.md",
+   "sha256": "78082cb823aa38f8a0be88a714e1299fa99a984a9dcc7631ab5a70dde4d5c7e7",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T75.md",
+   "sha256": "a2d813bd9c0a26ab2b11502859dabb3a567497db61ed853bab63c226852ca642",
+   "verified": true
+  },
+  {
+   "path": ".claude/science/walls/toe-walls-20260929/kills/T76.md",
+   "sha256": "242c63cc5bf1fd555072dd277d7d93cba8457d4ecdd49555a859c6d6f5d3f82d",
+   "verified": true
+  }
+ ],
+ "check_py_sha256": "2add064e9e08155f768c3197485e01e53f4bcd90515c66970019ae8004bd09f6",
+ "first_unresolved_step": "ATTEMPT step 9: the exact thermality is a statement about a supplied homogeneous Fermi vacuum cut by a lapse that vanishes at the cut. Nothing here derives a linear-zero rate from record dynamics (T75 route R2/B3 untouched), a horizon, an outgoing flux, or Hawking emission; and the clocked-walker H(k)=sigma*sin k (block-147) sea was not run, only the tight-binding chain used by T75 test A.",
+ "remaining_obligations": [
+  "Show the staggered clock phi_j phi_{j+1}=a j (the exact thermal profile) is or is not selected by any admissibility/record rule; smooth lapses are only asymptotically thermal",
+  "Quantify how the framework profile a*sqrt(j(j+1)) approaches thermality as the wedge grows (kill K1 numbers suggest ~1/ln N for the lowest level; not proved here)",
+  "Higher dimensions: area normalization, orientation (T74) and the exact Rindler profile on Z^3 not addressed",
+  "Same exact question for the block-147 walker sea and for tick (unitary) dynamics rather than a Hamiltonian",
+  "Process entropy of formation (T73/T76) not touched; cross-link review-20260929-formation-frozen-boundary-counts for the frozen-count recursion",
+  "Prior-art check in literature (Eisler-Peschel type half-chain entanglement Hamiltonian) not done; repo grep of main found none; open-PR title search found none"
+ ]
+}

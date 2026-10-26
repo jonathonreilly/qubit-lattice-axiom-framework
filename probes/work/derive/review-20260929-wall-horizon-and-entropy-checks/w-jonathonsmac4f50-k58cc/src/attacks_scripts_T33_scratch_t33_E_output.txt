@@ -1,0 +1,10 @@
+tr T15^2 = 0.5000000000000001  (canonical 1/2)
+T15 / (B-L) = [0.61237244 0.61237244 0.61237244 0.61237244]  sqrt(3/8) = 0.6123724356957945
+lane Y eigenvalues (with multiplicity): [np.float64(-1.0), np.float64(-1.0), np.float64(0.3333), np.float64(0.3333), np.float64(0.3333), np.float64(0.3333), np.float64(0.3333), np.float64(0.3333)]  ; Tr Y = -2.220446049250313e-16
+g4=1.0, gR=0.5: g'^2 = 0.2143  (formula 1/(1/gR^2+(2/3)/g4^2) = 0.2143)
+g4=1.0, gR=1000000000.0: g'^2 = 1.5000  (formula 1/(1/gR^2+(2/3)/g4^2) = 1.5000)
+g4=0.5, gR=0.5: g'^2 = 0.1500  (formula 1/(1/gR^2+(2/3)/g4^2) = 0.1500)
+SU(4) only, g4^2=1.0: g'^2(M_Pl)=1.5: sin2(MZ)=0.3722, 1/aem(MZ)=82.5
+SU(4) only, g4^2=0.25: g'^2(M_Pl)=0.375: sin2(MZ)=0.2855, 1/aem(MZ)=107.5
+SM-extrapolated (g2^2, gY^2)=(0.2557, 0.2281); with gR^2=gL^2=g2^2 the PS relation needs (2/3)/g4^2 = 0.472 -> g4^2 = 1.411
+SM-extrapolated g3^2 = 0.2375 versus lane g3^2 = 1  (factor 4.21)

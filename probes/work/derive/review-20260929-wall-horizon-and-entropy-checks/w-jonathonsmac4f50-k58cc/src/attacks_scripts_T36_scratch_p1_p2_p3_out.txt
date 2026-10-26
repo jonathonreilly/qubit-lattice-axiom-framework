@@ -1,0 +1,46 @@
+==============================================================================
+P1  law level: commutant of the 24 rotation lifts
+==============================================================================
+hw=1 invariant under all 24 rotation lifts (max leakage out): 0.0
+characters of hw=1 restriction == characters of the 3x3 rotation matrices (T1 = vector rep): True
+commutant dim of O on hw=1 (complex 3x3): 1  -> generic levels: 1
+commutant dim of O on the full 8-dim kernel: 8 (2A1+2T1 predicts 8)
+older premise: S_3 permutation rep on 3 corners: commutant dim 2 levels 2 (A1+E: 2)
+
+KS one-site shift lifts on the 8-dim kernel:
+  shift 0: sends hw=1 states out of hw=1 with weight 1.000  (1.0 = fully out)
+  shift 1: sends hw=1 states out of hw=1 with weight 1.000  (1.0 = fully out)
+  shift 2: sends hw=1 states out of hw=1 with weight 1.000  (1.0 = fully out)
+commutant dim of <rotations, shifts> on the full kernel: 2 (1 = irreducible: hw grading is not preserved by the exact one-site translations)
+hw-grading operator Z1+Z2+Z3 commutes with rotations (max |[R,Z]|): 0.0   with shifts: [np.float64(1.9999999999999998), np.float64(1.9999999999999998), np.float64(1.9999999999999998)]
+
+==============================================================================
+P2  subgroup lattice of the 24 rotations: which residual symmetries split hw=1?
+==============================================================================
+number of subgroups found: 30 (S_4 has 30)
+ |H|  commutant_dim  levels  inv_traceless_sym  inv_axial  equivalence_holds   #subgroups
+   1              9       3                  5          3               True   1
+   2              5       3                  3          1               True   9
+   3              3       3                  1          1               True   4
+   4              3       3                  1          1               True   3
+   4              3       3                  2          0               True   4
+   6              2       2                  1          0               True   4
+   8              2       2                  1          0               True   3
+  12              1       1                  0          0               True   1
+  24              1       1                  0          0               True   1
+violations of  (levels>=2) <=> (spatial quadrupole or axial vector allowed): 0
+residual groups that keep the triplet degenerate (irreducible): [12, 24] (orders 12 = tetrahedral T and 24 = O)
+smallest commutant dimension among subgroups giving 3 distinct levels: 3
+
+==============================================================================
+P3  locking in the corner model: staircase masses r_a per axis and the hw=0 branch
+==============================================================================
+staircase masses 2r_a on the triplet; predicted stiffness 1/(2 r_a) (E0 = -sum p_a^2/(2 r_a))
+  isotropic r=(1,1,1)    fitted diag(K) = [0.499999 0.499999 0.499999]  predicted = [0.5 0.5 0.5]  rel.err = 2.49e-06
+  r=(1,0.1,0.01)         fitted diag(K) = [ 0.463746  5.013413 49.339254]  predicted = [ 0.5  5.  50. ]  rel.err = 7.25e-02
+  r=(1,0.007,1e-5)       fitted diag(K) = [ 1571.988251  1720.014683 19334.603901]  predicted = [    0.5         71.428571 50000.      ]  rel.err = 3.14e+03
+
+general Hermitian source S on the triplet (masses M1 = 2 r I + S); prediction E0 = -v^dag M1^-1 v, v_a = <e_a| p.Gamma |0>
+  worst relative deviation exact vs perturbative prediction over 6 random p: 9.12e-05
+  eigenvalues of triplet mass matrix M1: [1.825358 2.146454 3.139964]
+  eigenvalues of inverse (light-state stiffness tensor): [0.318475 0.465885 0.547838]

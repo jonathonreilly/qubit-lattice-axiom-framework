@@ -1,0 +1,12 @@
+(a) RUNNING: 1848 perturbative UV samples kept (all singular values <= 2.5 at M_Pl, no Landau blow-up).
+    ratio-of-ratios IR/UV over all sector/pair combinations: min 0.724, 1st pct 0.845, median 1.134, 99th pct 1.529, max 1.799
+    share of samples with amplification > 10 (either direction): 0.0000
+    hierarchical start (up: 3e-6, 3e-3, 1): IR singular values [1.19489241e+00 5.09083949e-03 5.09086271e-06]  ratios 0.0042605003046158295 4.260519735826135e-06
+    extreme start diag(1,1,2.9): IR ratios (2nd/3rd, 1st/3rd) = 0.5488373813977642 0.5488373813977642  (UV: 0.345, 0.345)
+(b) ANARCHY PRICE (reading): 2000000 complex-Gaussian 3x3 draws: median sv2/sv1 = 0.572, median sv3/sv1 = 0.1941;
+    fraction with sv2/sv1 < 0.0222 AND sv3/sv1 < 2.25e-05: 0.00e+00  (0 of 2000000)
+    fraction with sv2/sv1 < 0.022 alone: 0.00e+00;   sv3/sv1 < 2.3e-5 alone: 0.00e+00
+      P(sv3/sv1 < 0.1) = 1.69e-01
+      P(sv3/sv1 < 0.03) = 1.65e-02
+      P(sv3/sv1 < 0.01) = 1.84e-03
+      P(sv3/sv1 < 0.003) = 1.66e-04

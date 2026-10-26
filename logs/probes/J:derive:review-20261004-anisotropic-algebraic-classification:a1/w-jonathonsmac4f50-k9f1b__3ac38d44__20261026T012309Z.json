@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20261004-anisotropic-algebraic-classification:a1",
+ "type": "judgment",
+ "lane": "review-science-20261004",
+ "worker": "w-jonathonsmac4f50-k9f1b",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261004-anisotropic-algebraic-classification/w-jonathonsmac4f50-k9f1b/check.py",
+ "seed": 77789,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "3ac38d44",
+ "started_utc": "20261026T012309Z",
+ "elapsed_s": 191.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "for all positive couplings the second swap-inversion line (x, 1-x, 1/2) carries a touching exactly on the locus Jx = Jy, Jz (4 kappa^2 + Jx^2) = 8 kappa^2 Jx (D = 16 SOS+ SOS-), and at the five supplied couplings the complexified rank<=2 scheme has length 34 = 4 + 10 + 20 with the 10 swap-plane points never on the real torus (modular GF(32003) evidence)."
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 52/52 PASS (~2-7 min under load); symbolic result on the second swap-inversion line (x,1-x,1/2) for the supplied comparator: det M = 16*SOS+*SOS-, middle-band touching iff J_x=J_y and J_z(4k^2+J_x^2)=8k^2 J_x (the handover family is the complete touching set of that line); the length-34 = 4+10+20 scheme count is modular (GF(32003), five fixtures, good prime not verified); step 14 (symbolic elimination of the 20-point stratum) unresolved.",
+ "what": "Prove one open algebraic branch/exceptional-locus result for the supplied positive-coupling comparator. Separate roots in certified brackets from a complete real torus census; enforce signs, nonzero denominators and torus realizability. Finite quintic/cubic examples do not establish a universal degree or orbit pattern. A complete open arc or exact exceptional-locus counterexample is useful; do not extrapolate a sample table. Owner-requested review transfer as science work, not a PR snapshot or adoption. Fetch current main, verify the pinned source objects, and read the actual axiom memo and registered primitive grants. Check related tasks, active claims, completed attempts and referee reports before selecting ONE distinct obligation. Deliver numbered PROVED/CHECKED/ASSUMED steps in probes/work/derive/<problem>/<worker>/ATTEMPT.md, a self-contained disjoint check.py and RECOVERY_STATUS.json listing hashes, the first unresolved step and remaining work. Known review corrections are background, not a new HIT. Commit the checker before run_probe.py; print SUMMARY and HIT only for a demonstrated new result or defect. Use claim.py and ordinary cross-model confirmation. Source recovery alone is not completion. Do not start workers, spawn agents, create PRs, change budgets or edit scientific/audit authority in this task.",
+ "stdout_sha256": "90a12bd6a0da48f1b3585088a638b06a0b7c4ed4362f7e56f77069dc82071e38",
+ "stdout_tail": "fied count of the sources (6)\nPASS D5[C] upper bound on real-torus points from the strata (line: roots of q in [-1,1] x 2; generic: unit-circle roots of the squared factor give <= 2 points each; swap plane: 0) = 2 + 4, equal to the interval-certified count of the sources (6)\nPASS D5[F] upper bound on real-torus points from the strata (line: roots of q in [-1,1] x 2; generic: unit-circle roots of the squared factor give <= 2 points each; swap plane: 0) = 2 + 4, equal to the interval-certified count of the sources (6)\nPASS D5[G] upper bound on real-torus points from the strata (line: roots of q in [-1,1] x 2; generic: unit-circle roots of the squared factor give <= 2 points each; swap plane: 0) = 0 + 4, equal to the interval-certified count of the sources (4)\nHIT: on the line f = (x, 1-x, 1/2) the comparator's det M = 16 SOS+ SOS- (three squares each), so for every positive Jx, Jy, Jz, kappa a middle-band touching exists there iff Jx = Jy and Jz = 8 kappa^2 Jx/(4 kappa^2 + Jx^2) (the handover family is the complete touching set of that line); for Jx != Jy there is none\nTOTAL: PASS=52 FAIL=0\nSUMMARY: for all positive couplings the second swap-inversion line (x, 1-x, 1/2) carries a touching exactly on the locus Jx = Jy, Jz (4 kappa^2 + Jx^2) = 8 kappa^2 Jx (D = 16 SOS+ SOS-), and at the five supplied couplings the complexified rank<=2 scheme has length 34 = 4 + 10 + 20 with the 10 swap-plane points never on the real torus (modular GF(32003) evidence).\n\n[stderr]\n# runtime 190.5 s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k9f1b",
+  "at_utc": "20261026T012626Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Scoped symbolic result on one line plus modular evidence for the complex scheme length. Same-family, unrefereed.",
+  "by": "w-jonathonsmac4f50-k9f1b",
+  "at_utc": "20261026T012626Z"
+ }
+}

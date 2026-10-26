@@ -1,0 +1,68 @@
+# A. background identities of the supplied M (symbolic couplings)
+PASS A1 M(z) + M(1/z)^T = 0 (anti-Hermitian on the torus)
+PASS A2 char poly of M has no mu^3 and no mu^1 term (spectrum +-l1, +-l2, det M = l1^2 l2^2 >= 0 on the torus)
+# B. symmetries valid for all couplings (exact identities)
+PASS B0 P is real orthogonal with P^2 = -1
+PASS B1 P M(z1,z2,z3) P^-1 = M(1/z2,1/z1,1/z3) as a Laurent identity in z and in all couplings (operator symmetry)
+PASS B2 det M(z1,z2,z3) = det M(z2,z1,z3) (spectral swap symmetry)
+PASS B3 det M(z) = det M(1/z) (inversion)
+PASS B4 negative control: det M(z1,z2,z3) != det M(1/z2,1/z1,z3) (z3 must be inverted with the pair)
+PASS B5 P commutes with M on the line (x, 1-x, 0)
+PASS B5 P commutes with M on the line (x, 1-x, 1/2)
+PASS B6 det M at the eight points z_j = +-1 equals 16 g^2 with g listed in TRIM_EXPECT; so a TRIM touching needs g = 0, i.e. Jz = Jx+Jy, Jz = |Jx-Jy|, Jx^2 = Jy^2+Jz^2+4k^2 or Jy^2 = Jx^2+Jz^2+4k^2 (the two other points have g > 0 for positive couplings)
+PASS B7 g(1,1,-1) = (Jx+Jy)^2+Jz^2 > 0 and g(-1,-1,-1) = (Jx-Jy)^2+Jz^2+16k^2 > 0 for all positive couplings (sums of squares)
+# C. the P-fixed line z2 = 1/z1, z3 = -1  (f = (x, 1-x, 1/2))
+PASS C1 det M(w^2, w^-2, -1) = 16 SOS+ SOS-  (Laurent identity in w, symbolic Jx,Jy,Jz,kappa): SOS+- = (Jz -+ 2k s)^2 + ((Jx+Jy)C -+ 4k S)^2 + (Jx-Jy)^2 S^2, C,S = cos,sin(pi x), s = 2CS
+PASS C2 explicit eigenvectors of P for +i and -i
+PASS C3 the two 2x2 blocks of M on the line have real determinants 4 SOS- (P=+i) and 4 SOS+ (P=-i)
+PASS C4 SOS+- = A -+ 4 kappa (Jx+Jy+Jz) sin 2 pi x,  A = Jx^2+Jy^2+Jz^2 + 2JxJy cos + 4k^2(1-cos)(3+cos)  (so det M >= 0 on the line is an identity)
+PASS C5 solving the three SOS+ equations: cos 2 pi x = (4k^2-Jx^2)/(4k^2+Jx^2), Jz = 8 k^2 Jx/(4k^2+Jx^2), Jx = Jy
+PASS C6 SOS+ vanishes identically at Jy = Jx, Jz = 8k^2Jx/(4k^2+Jx^2), tan(pi x) = Jx/(2k)
+PASS C7 coupling B (Jx != Jy): det M/16 = SOS+ SOS- on the line (x,1-x,1/2) has grid minimum 2.23201 > 0 (floating cross-check; the proof is C1+C5)
+PASS C7 coupling A (Jx != Jy): det M/16 = SOS+ SOS- on the line (x,1-x,1/2) has grid minimum 0.302704 > 0 (floating cross-check; the proof is C1+C5)
+PASS C7 coupling C (Jx != Jy): det M/16 = SOS+ SOS- on the line (x,1-x,1/2) has grid minimum 1.71121 > 0 (floating cross-check; the proof is C1+C5)
+PASS C7 coupling F (Jx != Jy): det M/16 = SOS+ SOS- on the line (x,1-x,1/2) has grid minimum 37.5271 > 0 (floating cross-check; the proof is C1+C5)
+PASS C7 coupling G (Jx != Jy): det M/16 = SOS+ SOS- on the line (x,1-x,1/2) has grid minimum 10.3269 > 0 (floating cross-check; the proof is C1+C5)
+PASS C8 at Jx=Jy=Jp, Jz=8k^2Jp/(4k^2+Jp^2), e^{2 pi i x}=(2k+iJp)^2/(4k^2+Jp^2): all sixteen 3x3 minors of M vanish (rank <= 2), symbolic in Jp, kappa
+PASS C9 tr M = 0 there; with C8 a double zero level (touching of the middle bands at E=0)
+PASS C10a positive control (1,1,18/13; 3/4) at z1 = (5+12i)/13: rank M <= 2 exactly
+PASS C10b negative control: Jz moved off the locus -> minors nonzero at that point
+PASS C10c negative control: Jx != Jy -> minors nonzero at that point
+# D. complex census of the rank<=2 scheme (modular Groebner + exact slices) at the five supplied couplings
+PASS D1[B] rank<=2 points with z1 z2 = 1: exactly z3 = 1 and z1^2 q((z1+1/z1)/2) = 0 (landed line quadratic), 4 complex points; no point with z3 = -1
+# Q'[B](x) = 6561*x**5 + 182250*x**4 + 2003940*x**3 + 11064420*x**2 + 29877520*x + 86152832    (swap-plane quintic, w + 1/w = x)
+PASS D2[B] swap plane z1=z2: 10 complex points, w=z3 root of a squarefree palindromic degree-10 polynomial P(w)=w^5 Q'(w+1/w), z1 linear in w; Q' (degree 5, factors [5]) has 0 real roots in [-2,2], so no |z3|=1 and none on the real torus
+PASS D3[B] GF(32003): scheme length 34; char poly of mult-by-z3 = (x-1)^4 * P_swap * (x^5 Q5((x+1/x)/2))^2 (4 + 10 + 20 points)
+PASS D4[B] supplied Q5 irreducible over Q with exactly 1 root(s) in [-1,1]; z3-polynomials of the three strata pairwise coprime and none vanishes at z3=1 except the line stratum
+PASS D1[A] rank<=2 points with z1 z2 = 1: exactly z3 = 1 and z1^2 q((z1+1/z1)/2) = 0 (landed line quadratic), 4 complex points; no point with z3 = -1
+# Q'[A](x) = 87169610025*x**5 - 11473811190*x**4 + 2211554830536*x**3 - 6714065821296*x**2 - 169945392115120*x + 571819474901280    (swap-plane quintic, w + 1/w = x)
+PASS D2[A] swap plane z1=z2: 10 complex points, w=z3 root of a squarefree palindromic degree-10 polynomial P(w)=w^5 Q'(w+1/w), z1 linear in w; Q' (degree 5, factors [5]) has 0 real roots in [-2,2], so no |z3|=1 and none on the real torus
+PASS D3[A] GF(32003): scheme length 34; char poly of mult-by-z3 = (x-1)^4 * P_swap * (x^5 Q5((x+1/x)/2))^2 (4 + 10 + 20 points)
+PASS D4[A] supplied Q5 irreducible over Q with exactly 1 root(s) in [-1,1]; z3-polynomials of the three strata pairwise coprime and none vanishes at z3=1 except the line stratum
+PASS D1[C] rank<=2 points with z1 z2 = 1: exactly z3 = 1 and z1^2 q((z1+1/z1)/2) = 0 (landed line quadratic), 4 complex points; no point with z3 = -1
+# Q'[C](x) = 2073600*x**5 + 33691265*x**4 + 267564634*x**3 - 949049399*x**2 - 3057197580*x + 7873497620    (swap-plane quintic, w + 1/w = x)
+PASS D2[C] swap plane z1=z2: 10 complex points, w=z3 root of a squarefree palindromic degree-10 polynomial P(w)=w^5 Q'(w+1/w), z1 linear in w; Q' (degree 5, factors [5]) has 0 real roots in [-2,2], so no |z3|=1 and none on the real torus
+PASS D3[C] GF(32003): scheme length 34; char poly of mult-by-z3 = (x-1)^4 * P_swap * (x^5 Q5((x+1/x)/2))^2 (4 + 10 + 20 points)
+PASS D4[C] supplied Q5 irreducible over Q with exactly 1 root(s) in [-1,1]; z3-polynomials of the three strata pairwise coprime and none vanishes at z3=1 except the line stratum
+PASS D1[F] rank<=2 points with z1 z2 = 1: exactly z3 = 1 and z1^2 q((z1+1/z1)/2) = 0 (landed line quadratic), 4 complex points; no point with z3 = -1
+# Q'[F](x) = 9685512225*x**5 - 21278897640*x**4 - 155888448021*x**3 - 2775198040988*x**2 + 8422160099134*x + 122659166771517    (swap-plane quintic, w + 1/w = x)
+PASS D2[F] swap plane z1=z2: 10 complex points, w=z3 root of a squarefree palindromic degree-10 polynomial P(w)=w^5 Q'(w+1/w), z1 linear in w; Q' (degree 5, factors [5]) has 0 real roots in [-2,2], so no |z3|=1 and none on the real torus
+PASS D3[F] GF(32003): scheme length 34; char poly of mult-by-z3 = (x-1)^4 * P_swap * (x^5 Q5((x+1/x)/2))^2 (4 + 10 + 20 points)
+PASS D4[F] supplied Q5 irreducible over Q with exactly 1 root(s) in [-1,1]; z3-polynomials of the three strata pairwise coprime and none vanishes at z3=1 except the line stratum
+PASS D1[G] rank<=2 points with z1 z2 = 1: exactly z3 = 1 and z1^2 q((z1+1/z1)/2) = 0 (landed line quadratic), 4 complex points; no point with z3 = -1
+# Q'[G](x) = 102515625*x**5 + 2976598125*x**4 + 20197121175*x**3 - 83641913145*x**2 - 117156567620*x + 377037667976    (swap-plane quintic, w + 1/w = x)
+PASS D2[G] swap plane z1=z2: 10 complex points, w=z3 root of a squarefree palindromic degree-10 polynomial P(w)=w^5 Q'(w+1/w), z1 linear in w; Q' (degree 5, factors [5]) has 0 real roots in [-2,2], so no |z3|=1 and none on the real torus
+PASS D3[G] GF(32003): scheme length 34; char poly of mult-by-z3 = (x-1)^4 * P_swap * (x^5 Q5((x+1/x)/2))^2 (4 + 10 + 20 points)
+PASS D4[G] supplied Q5 irreducible over Q with exactly 1 root(s) in [-1,1]; z3-polynomials of the three strata pairwise coprime and none vanishes at z3=1 except the line stratum
+# D5 reading of D1-D4 (assumes GF(32003) is a good prime for the five ideals; CHECKED only at the five couplings)
+PASS D5[B] upper bound on real-torus points from the strata (line: roots of q in [-1,1] x 2; generic: unit-circle roots of the squared factor give <= 2 points each; swap plane: 0) = 2 + 4, equal to the interval-certified count of the sources (6)
+PASS D5[A] upper bound on real-torus points from the strata (line: roots of q in [-1,1] x 2; generic: unit-circle roots of the squared factor give <= 2 points each; swap plane: 0) = 2 + 4, equal to the interval-certified count of the sources (6)
+PASS D5[C] upper bound on real-torus points from the strata (line: roots of q in [-1,1] x 2; generic: unit-circle roots of the squared factor give <= 2 points each; swap plane: 0) = 2 + 4, equal to the interval-certified count of the sources (6)
+PASS D5[F] upper bound on real-torus points from the strata (line: roots of q in [-1,1] x 2; generic: unit-circle roots of the squared factor give <= 2 points each; swap plane: 0) = 2 + 4, equal to the interval-certified count of the sources (6)
+PASS D5[G] upper bound on real-torus points from the strata (line: roots of q in [-1,1] x 2; generic: unit-circle roots of the squared factor give <= 2 points each; swap plane: 0) = 0 + 4, equal to the interval-certified count of the sources (4)
+HIT: on the line f = (x, 1-x, 1/2) the comparator's det M = 16 SOS+ SOS- (three squares each), so for every positive Jx, Jy, Jz, kappa a middle-band touching exists there iff Jx = Jy and Jz = 8 kappa^2 Jx/(4 kappa^2 + Jx^2) (the handover family is the complete touching set of that line); for Jx != Jy there is none
+TOTAL: PASS=52 FAIL=0
+SUMMARY: for all positive couplings the second swap-inversion line (x, 1-x, 1/2) carries a touching exactly on the locus Jx = Jy, Jz (4 kappa^2 + Jx^2) = 8 kappa^2 Jx (D = 16 SOS+ SOS-), and at the five supplied couplings the complexified rank<=2 scheme has length 34 = 4 + 10 + 20 with the 10 swap-plane points never on the real torus (modular GF(32003) evidence).
+
+[stderr]
+# runtime 190.5 s

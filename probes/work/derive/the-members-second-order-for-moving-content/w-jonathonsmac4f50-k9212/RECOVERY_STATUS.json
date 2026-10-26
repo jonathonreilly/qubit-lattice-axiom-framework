@@ -1,0 +1,47 @@
+{
+ "source_branch": "none named by the task; all definitions read from the detached checkout of origin/main (read only)",
+ "source_head": "a77a3449c91a753b06ce2a63876cd460b62cb4cf",
+ "source_objects": [
+  {
+   "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+   "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+   "verified": true
+  },
+  {
+   "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+   "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+   "verified": true
+  },
+  {
+   "path": "docs/ADMISSIBILITY_RULE_A_LEDGER_LINEAR_IN_THE_RATES_EVERY_CLOCK_A_MULTIPLIER_THE_LEDGER_A_WALL_TERM_AND_THE_CURVATURE_MEMBER_DOUBLES_THE_BENDING_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+   "sha256": "3a54bebf805d1722b225c1af9326fd610580ec2cbdcf9dad409aefad952b3f80",
+   "verified": true
+  },
+  {
+   "path": "docs/ADMISSIBILITY_RULE_BLOCK_60S_DECLARED_NUMBERS_UNIT_FREE_SPEEDS_FORCE_S_EQUALS_P_PLUS_TWO_POSITIVE_CONTENT_FORCES_THE_KINETIC_SIGN_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+   "sha256": "e85af15f0b21c546dd4cb090798cc6988e5122cead0be73e01cf1525c9b8c17e",
+   "verified": true
+  },
+  {
+   "path": "docs/ADMISSIBILITY_RULE_ANGLES_ARE_THE_TILT_OF_THE_COINS_FRAME_WITH_THEM_TWO_DISTURBANCES_TRAVEL_AT_ONE_DIRECTION_FREE_SPEED_AND_THE_PRICE_IS_A_CONSERVED_STRESS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+   "sha256": "0d631bc3e1ceaabca7f8bf37cfa8a463cb8ec4b97c512b14cccfc297790315f6",
+   "verified": true
+  },
+  {
+   "path": "docs/ADMISSIBILITY_RULE_THE_CURVATURE_MEMBERS_CONSTRAINT_ALGEBRA_CLOSES_ON_THE_LATTICE_ONLY_AT_BETA_EQUALS_MINUS_ALPHA_AND_THERE_THE_WALKERS_OWN_STATES_CANNOT_BE_ITS_CONTENT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+   "sha256": "68c4ca6960b2d6c1a81ec8207064e0b4ca9f95df6451d0a22753b66fbe9983b8",
+   "verified": true
+  },
+  {
+   "path": "docs/ADMISSIBILITY_RULE_TWO_STEP_CONTENT_KEEPS_SYMMETRIC_BOOKS_WHERE_THE_MEMBER_KEEPS_ITS_FIELDS_AND_A_BOND_SHIFT_KEEPS_EVERY_CONSTRAINT_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+   "sha256": "6623c7432bfe1548ac53724c85f9bb082d8060d4e937c851aa7816476cfc7795",
+   "verified": true
+  },
+  {
+   "path": "docs/ADMISSIBILITY_RULE_THE_MEMBERS_PULL_CARRIES_THE_VELOCITY_TERMS_THAT_GIVE_PULL_BOUND_PAIRS_WEIGHT_ONE_ALONG_EVERY_AXIS_AT_FIRST_ORDER_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+   "sha256": "a1b29015d3a814cf9c28a5346e394c7c38bdbc8424615d1a86e9f196fe92241a",
+   "verified": true
+  }
+ ],
+ "first_unresolved_step": "A1 (equivalence of 'constraints preserved at second order for all initial data' with the local gauge identity delta0 S3 + delta1 S2 = 0) is assumed, not proved; then: lattice (non-leading-weight) corrections, matter sources, and the overall scale lambda of the cubic vertex"
+}

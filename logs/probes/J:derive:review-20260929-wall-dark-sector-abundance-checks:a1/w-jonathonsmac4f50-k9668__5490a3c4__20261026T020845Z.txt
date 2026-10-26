@@ -1,0 +1,45 @@
+PASS A1 su(3), su(2), Y mutually commute (exact)
+PASS A1b generators close: [J1,J2]=iJ3 and [T1,T2]=iT3 (exact)
+PASS A1c Tr Y = 0 and Tr(Y) split 6*(1/3)+2*(-1) (exact)
+PASS A2 C_3 = (4/3) P_sym x 1 and C_2 = (3/4) 1 on all of C^8 (exact matrix identity)
+PASS A3 no gauge singlet exists: C_2 has the single eigenvalue 3/4 > 0 (so ker = {0})
+PASS A4 rational basis: stacked generators have rank 8 (joint null space of G x S is {0}) | rank=8
+PASS A5 Schur: commutant of su(3) x su(2) in M_8 has dimension 2 (= span{P_sym x 1, P_anti x 1}) | dim=2
+PASS A6 tracelessness fixes Y up to scale: b = -3a, so a = 1/3 gives the embedding's Y = diag(1/3 on quarks, -1 on leptons)
+PASS A7 charges Q = T3 + Y/2: {2/3 x3, -1/3 x3, 0 x1, -1 x1} | {2/3: 3, -1/3: 3, 0: 1, -1: 1}
+PASS A8 the Q=0 eigenspace is 1-dim and its state has (C_3, C_2, Y) = (0, 3/4, -1): the electrically neutral colour-singlet is the T3=+1/2 member of a weak doublet, not a gauge singlet (exact) | (0, 3/4, -1)
+PASS A9 for each of the 3 choices of weak-fibre qubit, |000> and |111> have (C_3,C_2,Y)=(4/3,3/4,1/3) exactly (READING: axis permutation is a relabelling, so this cannot fail; it is not a discriminating test)
+PASS A10 counter-embedding: su(2)' = P_sym x spin on the same C^8 is a valid su(2) commuting with su(3); C_3 + C_2' has eigenvalue 0 with multiplicity 2, i.e. two true SU(3) x SU(2)' singlets | {25/12: 6, 0: 2}
+PASS A11 in the counter-embedding both singlets can be Y-neutral only if the quark hypercharge is 0 (6a + c + d = 0 with c=d=0 gives a=0); with a = 1/3 the singlet charges satisfy c + d = -2
+PASS B1 Gamow factor: e^{-pi eta}|Gamma(1+i eta)|^2 = 2 pi eta/(e^{2 pi eta}-1) to 1e-40
+PASS B2a Kummer form r e^{-ir} 1F1(1+i eta;2;2ir) solves u''+(1+2 eta/r)u=0 and has u'(0)=1
+PASS B2b |psi(0)|^2/|psi_free(0)|^2 from the Kummer solution's asymptotic amplitude equals 2 pi eta/(1-e^{-2 pi eta}) (eta=alpha/v_rel, k=mu v_rel) to 1e-5 | rel errors 4.0e-09, 3.2e-08, 2.1e-07, 1.6e-07
+PASS B3a convention identity: S_cm(alpha, beta = v_rel/2) == S_rel(alpha, v_rel) (symbolic)
+PASS B3b archived lane form with v = v_rel equals the correct kernel at HALF the coupling: S_old(alpha,v) == S_rel(alpha/2,v) (symbolic)
+PASS B3c reduced mass: mu = m/2, k = mu v_rel, Bohr momentum mu alpha, eta = mu alpha/k = alpha/v_rel (symbolic)
+PASS B4a relative-speed density 4 pi v^2 (x/4pi)^{3/2} e^{-x v^2/4} is normalised and has <v^2> = 6/x (x = m/T) (symbolic)
+PASS B4b in the per-particle CM speed u = v_rel/2 the weight is u^2 e^{-x u^2}: the density transforms to 4 pi u^2 (x/pi)^{3/2} e^{-x u^2} (symbolic)
+PASS B5a <S> at x=25, alpha=alpha_LM: relative-speed convention == CM-speed convention (25 digits agree to 1e-15) | <S>=2.06142897327
+PASS B5b archived pairing (pi-form with relative-speed weight) equals the correct <S> at alpha/2 (to 1e-15) | archived=1.475171904 correct=2.061428973
+PASS B5c large-x limit <S> -> 2 sqrt(pi) alpha sqrt(x) (1/v enhancement law) within 1e-5 at x=1e12
+PASS C0 scipy thermal average used in the ODE equals the mpmath one of Part B (1e-10) | 2.061428973273
+PASS C1 supplied Kolb-Turner formula at (16 v, alpha_LM, S=1, self-conjugate counting) gives 0.1275 (as in the bypass note) | 0.12750
+PASS C2 Boltzmann solve with S=1, self-conjugate counting gives Omega h^2 within 3% of the Kolb-Turner closed form (validates the solver against the supplied model) | ODE=0.12585 KT=0.12750
+PASS C3 counting: two-species (chi, chibar) solve with n_chi = n_chibar gives total Omega = 2 x the one-species result (S=1, same sigma v; PROVED by the symmetric reduction, CHECKED numerically) | 0.25169 vs 0.25169
+INFO Dirac pair, attractive U(1)_D at alpha_X = alpha_LM, 16 v:  Omega h^2 (correct kernel) by T_chi = T cutoff x_max: 1e+03:0.0850, 1e+04:0.0760, 1e+06:0.0727, 1e+08:0.0724
+INFO same with archived half-argument kernel: 1e+03:0.1357, 1e+04:0.1239, 1e+06:0.1195, 1e+08:0.1191
+PASS C4 monotone: later cutoff of the Coulomb-enhanced annihilation lowers Omega (Omega(1e3) > Omega(1e4) > Omega(1e6) >= Omega(1e8))
+PASS C5 dark pair alone, Dirac counting, correct kernel, same alpha_X in sigma v and in the Coulomb force: Omega h^2 lies in [0.070, 0.088] for every cutoff 1e3..inf, so it misses the lane's 0.1275 by -33% to -43% and Planck 0.120 by -29% to -40% | min=0.0724 max=0.0850
+PASS C6 closed-form Kolb-Turner with S(x_F=25) in sigma v and Dirac counting is NOT a valid propagation of a 1/v-growing sigma v: it overstates the Boltzmann result by more than 40% for every cutoff | KT(S_25)=0.1237
+PASS C7 archived half-argument kernel in the same Dirac model gives 0.12-0.14 for cutoffs 1e3..1e4 (the number the lane's 'S_dark = 1, Dirac' picture can be confused with; READING: coincidence of two errors, not a result) | 0.1357 0.1239
+INFO m*(Omega=0.12)/v for Dirac + correct kernel: 1e+03:19.0, 1e+04:20.1, 1e+06:20.6, 1e+08:20.6
+PASS C8 Omega ~ m^2 at fixed alpha up to the logarithmic shift of the freeze-out point: Omega(1.3 m)/Omega(m) = 1.69 within 1% | 1.6797 (so m* by the m^2 law is good to about 0.3%)
+PASS C9 the mass needed for Omega = 0.12 is 19.0-20.7 v (not 16 v) in the dark-alone Dirac model with the correct kernel | 19.01-20.59 v
+PASS C10 premise sensitivity at cutoff 1e4: spin degeneracy g=2->4 changes Omega by less than 12%, g_*=106.75->100 by less than 5% | dg=+0.016 dgstar=+0.034
+PASS C11 archived endpoint reproduced: pi-form kernel gives R(alpha_LM) = 5.44202 (archived 5.442020) | 5.442019868
+PASS C12 corrected kernel: S_vis = 2.3143, R(alpha_LM) = 7.9716 (corrigendum 2.314 / 7.972) | S_vis=2.31433 R=7.97157
+PASS C13 eta_pred(16 v) = 4.38e-10 (-28.4%) and the matching mass is 4657 GeV = 18.9 v (corrigendum) | eta=4.3819e-10 m=4656.9
+PASS C14 single comparator-reproducing coupling alpha=0.0454 gives eta_pred about 2.56e-9 (+318%); corrigendum quotes 2.55e-9 (+317%): difference is the rounding of 0.0454 | eta=2.5584e-09
+INFO runtime 9.6s
+TOTAL: PASS=39 FAIL=0
+SUMMARY: exact charge census shows no SU(3)xSU(2) singlet on the base x fibre taste cube (and exhibits the counter-embedding that has two), derives S=2*pi*alpha/v_rel/(1-exp(-2*pi*alpha/v_rel)) from the Kummer/Gamma solution and shows the archived form is the same kernel at half the coupling, and shows a dark Dirac pair feeling alpha_X=alpha_LM gives Omega h^2 of 0.072-0.085 at 16 v (not 0.1275) with the Kolb-Turner closed form overstating it by over 40%.

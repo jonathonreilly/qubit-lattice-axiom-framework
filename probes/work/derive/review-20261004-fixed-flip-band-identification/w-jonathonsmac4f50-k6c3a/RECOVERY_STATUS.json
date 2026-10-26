@@ -1,0 +1,56 @@
+{
+ "source_branch": "main",
+ "source_head": "2868a0c453e667d1267f0e1e7403732a11893d78",
+ "current_main_checked": "a77a3449c91a753b06ce2a63876cd460b62cb4cf",
+ "source_objects": [
+  {
+   "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_ABOVE_J_EQUALS_TWO_THE_FLIPPING_LINE_NODE_IS_A_CUBIC_POINT_THAT_EMITS_A_PLANE_PAIR_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+   "sha256": "33ee04522acd4a5ac33f3a7c64e790ea84040810ebdfca5ac00c2fb17803572c",
+   "verified": true,
+   "verified_at_commit": "2868a0c453e667d1267f0e1e7403732a11893d78",
+   "same_at_current_main_a77a3449c9": true
+  },
+  {
+   "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_CERTIFIED_TOUCHING_CENSUS_ACROSS_COUPLING_REGIMES_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+   "sha256": "26ea04b4e26432e8763fc984190284f62ee2478a57a07c0c1aa6bb8ad79a2a84",
+   "verified": true,
+   "verified_at_commit": "2868a0c453e667d1267f0e1e7403732a11893d78",
+   "same_at_current_main_a77a3449c9": true
+  },
+  {
+   "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_THE_CUBIC_FLIP_POINTS_HAVE_EXPLICIT_DEGREE_ONE_NEIGHBOURHOODS_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+   "sha256": "85050dcb0a24a37ddd471b821db48ec23301f63d899d9f7c09b3909af84df50b",
+   "verified": true,
+   "verified_at_commit": "2868a0c453e667d1267f0e1e7403732a11893d78",
+   "same_at_current_main_a77a3449c9": true
+  },
+  {
+   "path": "scripts/composite_site_network_flux_free_certified_touching_census_across_coupling_regimes_2026_10_01.py",
+   "sha256": "95eff14789f60cb0392aef67d75324f7fe6be5418597e991c58f289f742fb69d",
+   "verified": true,
+   "verified_at_commit": "2868a0c453e667d1267f0e1e7403732a11893d78",
+   "same_at_current_main_a77a3449c9": true
+  },
+  {
+   "path": "scripts/composite_site_network_flux_free_cubic_flip_points_have_explicit_degree_one_neighbourhoods_2026_10_01.py",
+   "sha256": "55d560d4803ea4857e7689376ca183804a1c83fb68482aa865d66b9f76a51d79",
+   "verified": true,
+   "verified_at_commit": "2868a0c453e667d1267f0e1e7403732a11893d78",
+   "same_at_current_main_a77a3449c9": true
+  },
+  {
+   "path": "scripts/composite_site_network_flux_free_region_b_line_node_flip_is_a_cubic_point_emitting_a_plane_pair_2026_10_01.py",
+   "sha256": "d5b931ba486cc4c27250878e40c7773e2a652b506acfb154ea04b88656fa0df2",
+   "verified": true,
+   "verified_at_commit": "2868a0c453e667d1267f0e1e7403732a11893d78",
+   "same_at_current_main_a77a3449c9": true
+  }
+ ],
+ "first_unresolved_step": "ATTEMPT.md step 8: interval-certified (outward-rounded) location of the line node and plane-(ii) pair inside the shifted box Q for every |eps|<=eps0; the scalar-vanishing step (steps 1-6) is proved conditional on the supplied detC<0 bound and the supplied vector-zero count",
+ "remaining_work": [
+  "interval/exact-field enclosure of the closed-form family points in the shifted box using the exact K-valued m, lambda, a1, b1 of the source runner (here m, lambda, a1, b1 are 60-digit numerical reconstructions)",
+  "re-derive or independently referee the source's complement-gap inequality and vector-zero count (supplied here, only recomputed to high precision)",
+  "cross-model confirmation; claim.py and run_probe.py not run (read-only view)"
+ ],
+ "check_py_sha256": "25e8314f82ff1866c72edac23d8d94e0b40d5f23950e4f813c4c33345633094a"
+}

@@ -1,5 +1,5 @@
 {
- "edge_count": 16088,
+ "edge_count": 16082,
  "node_count": 7439,
  "nodes": {
   "3d_correction_master_note": {
@@ -5691,8 +5691,8 @@
    "out_degree": 0
   },
   "dm_neutrino_source_surface_info_geometric_selection_obstruction_note_2026-04-17": {
-   "deps_hash": "b2df0184d814",
-   "out_degree": 6
+   "deps_hash": "7b192e32580b",
+   "out_degree": 5
   },
   "dm_neutrino_source_surface_intrinsic_slot_theorem_note_2026-04-16": {
    "deps_hash": "c5c774f0df8a",
@@ -5703,8 +5703,8 @@
    "out_degree": 3
   },
   "dm_neutrino_source_surface_microscopic_polynomial_impossibility_theorem_note_2026-04-17": {
-   "deps_hash": "51f297ab4337",
-   "out_degree": 8
+   "deps_hash": "1e9444e7dddd",
+   "out_degree": 2
   },
   "dm_neutrino_source_surface_microscopic_positive_probe_representation_theorem_note_2026-04-17": {
    "deps_hash": "c21de55e06c6",
@@ -6595,8 +6595,8 @@
    "out_degree": 6
   },
   "ew_kappa_self_energy_object_pin_mc_undecidable_no_go_note_2026-06-08": {
-   "deps_hash": "748eef87af1a",
-   "out_degree": 3
+   "deps_hash": "a0c3816e9108",
+   "out_degree": 4
   },
   "ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09": {
    "deps_hash": "e3b0c44298fc",

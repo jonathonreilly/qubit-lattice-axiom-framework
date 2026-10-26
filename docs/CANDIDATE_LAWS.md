@@ -228,6 +228,11 @@ Bosonized qubit sites (bosonized-sites, 2026-10-26, rethink r3; campaign files):
   - the interacting (loop) check;
   - rebuilding the copy sign and the families;
   - 8 heavy link modes per site.
+- **Interacting check (d4-interacting-check, PR #10095, 8/8, own re-run identical): PARTIAL.**
+  - [T] W(F4) has 1, 3, 16 invariant tensors at ranks 2, 4, 6 (O(4): 1, 3, 15; hypercubic: 1, 4, 31), so no loop order can induce a dimension-6 term.
+  - Five one-loop self-energies (phi^3, phi^4 sunset, Yukawa, overlap fermion under scalar exchange): dim-4 isotropic to 1e-14 (one speed of light); dim-6 residual <= 8e-15 on D4 vs 3e-2 to 2.3e-1 on the hypercubic control; the dim-8 J6 ratios are species-dependent (-0.380 to -0.036). Photon exchange not done.
+  - The 8 heavy link modes are gapped (>= 36), with one gauge zero and no photon doublers.
+  - **FAIL: fermion reflection positivity along a root.** Only 7 twisted reflection maps exist (no pure reflection), and the natural one gives an indefinite fermion form. This is a necessary-condition test only. Open routes: a twisted reflection, or a unitary real-time fermion step on D4 events.
 - **Ledger:** net about -2 clauses.
 - **Smuggling gate:** no fitted numbers; no observed structure named; untested prediction = photon decay near 2e20 eV, with electron/photon Lorentz-violation ratio exactly 16; bent clause = CL-1's tick.
 

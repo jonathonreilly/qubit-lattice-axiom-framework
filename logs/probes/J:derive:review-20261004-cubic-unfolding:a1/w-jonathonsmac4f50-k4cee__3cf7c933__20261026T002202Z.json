@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20261004-cubic-unfolding:a1",
+ "type": "judgment",
+ "lane": "review-science-20261004",
+ "worker": "w-jonathonsmac4f50-k4cee",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20261004-cubic-unfolding/w-jonathonsmac4f50-k4cee/check.py",
+ "seed": 74122,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "3cf7c933",
+ "started_utc": "20261026T002202Z",
+ "elapsed_s": 72.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "re-verifies the supplied jets at J=13/6, 5/2, 3 and J0, shows the scalar part is slaved (|s0|<=|d|) and every family point (complex ones too) is a zero of the Schur vector, so multiplicity counts 3 (generic J) and 4 (J0) are saturated by the exact families; the census itself is the argument in ATTEMPT.md, not a finite search; runtime 71 s"
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 44/44 PASS; the node-count census near the flip is conditional on the supplied jets and a multiplicity-conservation theorem cited from memory; radii non-constructive, not uniform in J; jets re-checked numerically (not interval-certified) at four couplings; merged points on coincidence curves not covered.",
+ "what": "For the supplied four-site comparator, prove an exhaustive actual neighbourhood census near the line flip on each stated open J interval and at the exceptional root J^3-4J-4=0. The landed analytic isolation/degree and exact family identities are available; leading-form counts and finite searches do not exclude extra pairs. Supply uniform or explicitly pointwise remainder, scalar-zero, uniqueness and domain bounds. Start with one coupling interval or the exceptional point, not an unsupported all-parameter assertion. Owner-requested review transfer as science work, not a PR snapshot or adoption. Fetch current main, verify the pinned source objects, and read the actual axiom memo and registered primitive grants. Check related tasks, active claims, completed attempts and referee reports before selecting ONE distinct obligation. Deliver numbered PROVED/CHECKED/ASSUMED steps in probes/work/derive/<problem>/<worker>/ATTEMPT.md, a self-contained disjoint check.py and RECOVERY_STATUS.json listing hashes, the first unresolved step and remaining work. Known review corrections are background, not a new HIT. Commit the checker before run_probe.py; print SUMMARY and HIT only for a demonstrated new result or defect. Use claim.py and ordinary cross-model confirmation. Source recovery alone is not completion. Do not start workers, spawn agents, create PRs, change budgets or edit scientific/audit authority in this task.",
+ "stdout_sha256": "71dba4b540c5247b144af7af0689fddbd3ad5343000390d73e4e51e65fc062c0",
+ "stdout_tail": "ne + 2 plane-(ii)) of d with s0=0; det signs [-1, -1, 1, 1] sum 0 (local degree 0) :: separation 0.002825\nPASS N4e[J0,eps-] four distinct zeros of d (2 line, 2 plane-(ii)), all NON-real (complex family points), s0=0 :: separation 0.002828\nPASS N4f[J0,eps-] finite check: at 30 random real points near the node either e1.d > 0 or |e2.d| > 1e-6 (finite sample, no real zero seen; not part of the proof)\nPASS N5 two-parameter pattern near (J0,kappa_f(J0)), J=J0+-0.004: u_f > u_*, and the four family points are zeros of d (complex ones included) with 0 / 2 / 4 real ones for u<u_*, u_*<u<u_f, u>u_f :: [('0.004', [0, 2, 4], True), ('-0.004', [0, 2, 4], True)]\nTOTAL: PASS=44 FAIL=0\nHIT: scoped conditional result: for each fixed J in (2,J0) or (J0,1+sqrt5) the zero-energy double-level (middle-band touching) set near the flipping line node is exactly {line node} for kappa<=kappa_f and {line node, plane-(ii) pair} for kappa>kappa_f, and near (J0,kappa_f(J0)) it is exactly the real points among the four line/plane-(ii) family points (0, 2, 4), given the supplied jets and conservation of multiplicity (ATTEMPT.md steps 2-11); radii non-constructive\nSUMMARY: re-verifies the supplied jets at J=13/6, 5/2, 3 and J0, shows the scalar part is slaved (|s0|<=|d|) and every family point (complex ones too) is a zero of the Schur vector, so multiplicity counts 3 (generic J) and 4 (J0) are saturated by the exact families; the census itself is the argument in ATTEMPT.md, not a finite search; runtime 71 s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k4cee",
+  "at_utc": "20261026T002319Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Scoped conditional census (1 vs 3 nodes across kappa_f; 0/2/4 near J0) given landed jets and a cited multiplicity theorem not re-read. Same-family, unrefereed.",
+  "by": "w-jonathonsmac4f50-k4cee",
+  "at_utc": "20261026T002319Z"
+ }
+}

@@ -1,0 +1,47 @@
+PASS E1 charpoly of M has no lam^3 and no lam^1 term, identically in z1,z2,z3,J,kappa :: so spec H(f) = {+-l1, +-l2}, det H = l1^2 l2^2 >= 0, and a touching of the middle pair is at E = 0
+PASS E2 line identity D(z,1/z,1) = 16 [J^2 + 4 c^2 u - 2c - 4u - 2]^2
+PASS E3a adj(M) = 0 mod (u z^4 - z^3 + (J^2-2u-2) z^2 - z + u) on the line family z=(z,1/z,1): rank M <= 2 at every root, complex included :: 16/16 entries reduce to 0
+PASS E3b adj(M) = 0 mod the two cosine quadratics of plane family (ii): rank M <= 2 at every (complex) point of the family :: 16/16 entries reduce to 0; z1 root of z^2-2az+1 (a=1-J/(4u)), z3 root of z^2-2bz+1
+PASS E4 flip node: cos 2 pi f3 = 1 and cos 2 pi x = c_F at u_f; q(c_F;u_f)=0, dq/dc = 2N/A, disc_c q (u_f) = 4N^2/A^2 :: so the line root c_F is simple iff N != 0; plane-(ii) pair is born from it at kappa_f (f3 = 0 there)
+PASS E5 u_f lies above the vertex -S/8 of disc_c(q)(u) on (2, 1+sqrt5) (numerator sign, Sturm count) :: numerator has 0 roots in (2,3.236), value at 5/2 = 173/16; with disc(u_f)=4N^2/A^2 >= 0 this gives u_f >= u_* with equality iff N = 0
+PASS N0[J=13/6] H(f0,kappa_f) has levels 0,0,+-4J
+PASS N1a[J=13/6] d(node)=0, s0(node)=0, d_t(node)=0, Jacobian rank 2 (x_u,x_v orthogonal) :: |x_u|=0.313951 |x_v|=1.79693 cos=-6.63e-28
+PASS N1b[J=13/6] reduced function phi(t,kappa_f) = g t^3 + O(t^4), g != 0 (order exactly 3) :: g_est=1.3576281  landed-formula sqrt(J^4(J+2)/8)/|N|=1.3576836;  U/t^2 -> -1.59257 vs sqrt(A)(J+2)/(2N)=-1.59261
+PASS N2[J=13/6] slaving |s0| <= |d| at 25 random real points (consequence of det H >= 0, det C < 0) :: max |s0|/|d| = 0.003336
+PASS N3a[J=13/6,eps+] argument principle: phi(.,kappa) has exactly 3 zeros in |t|<0.14 (kappa/kappa_f-1=0.0003015) :: winding = 3.0
+PASS N3b[J=13/6,eps+] line node and plane-(ii) pair are zeros of d with s0 = 0 (pair real) :: max |d|,|s0| over the three points < 1e-25; the three points are pairwise distinct
+PASS N3c[J=13/6,eps+] simple zeros; sign of det d_(u,v,t) at (line, pair) = [-1, 1, 1], sum = +1 (local degree +1 conserved)
+PASS N3a[J=13/6,eps-] argument principle: phi(.,kappa) has exactly 3 zeros in |t|<0.14 (kappa/kappa_f-1=-0.0003013) :: winding = 3.0
+PASS N3b[J=13/6,eps-] line node and plane-(ii) pair are zeros of d with s0 = 0 (pair purely imaginary t = +-i y, y=arccosh c) :: max |d|,|s0| over the three points < 1e-25; the three points are pairwise distinct
+PASS N3c[J=13/6,eps-] the single real zero (line node) is simple and has det d_(u,v,t) sign +1 :: det=0.0015472
+PASS N0[J=5/2] H(f0,kappa_f) has levels 0,0,+-4J
+PASS N1a[J=5/2] d(node)=0, s0(node)=0, d_t(node)=0, Jacobian rank 2 (x_u,x_v orthogonal) :: |x_u|=0.217758 |x_v|=2.62189 cos=-2.28e-27
+PASS N1b[J=5/2] reduced function phi(t,kappa_f) = g t^3 + O(t^4), g != 0 (order exactly 3) :: g_est=2.8838987  landed-formula sqrt(J^4(J+2)/8)/|N|=2.8846154;  U/t^2 -> 2.29554 vs sqrt(A)(J+2)/(2N)=2.29612
+PASS N2[J=5/2] slaving |s0| <= |d| at 25 random real points (consequence of det H >= 0, det C < 0) :: max |s0|/|d| = 0.003006
+PASS N3a[J=5/2,eps+] argument principle: phi(.,kappa) has exactly 3 zeros in |t|<0.14 (kappa/kappa_f-1=0.0004605) :: winding = 3.0
+PASS N3b[J=5/2,eps+] line node and plane-(ii) pair are zeros of d with s0 = 0 (pair real) :: max |d|,|s0| over the three points < 1e-25; the three points are pairwise distinct
+PASS N3c[J=5/2,eps+] simple zeros; sign of det d_(u,v,t) at (line, pair) = [-1, 1, 1], sum = +1 (local degree +1 conserved)
+PASS N3a[J=5/2,eps-] argument principle: phi(.,kappa) has exactly 3 zeros in |t|<0.14 (kappa/kappa_f-1=-0.00046) :: winding = 3.0
+PASS N3b[J=5/2,eps-] line node and plane-(ii) pair are zeros of d with s0 = 0 (pair purely imaginary t = +-i y, y=arccosh c) :: max |d|,|s0| over the three points < 1e-25; the three points are pairwise distinct
+PASS N3c[J=5/2,eps-] the single real zero (line node) is simple and has det d_(u,v,t) sign +1 :: det=0.0033009
+PASS N0[J=3] H(f0,kappa_f) has levels 0,0,+-4J
+PASS N1a[J=3] d(node)=0, s0(node)=0, d_t(node)=0, Jacobian rank 2 (x_u,x_v orthogonal) :: |x_u|=2.2 |x_v|=5.87878 cos=-1.8e-27
+PASS N1b[J=3] reduced function phi(t,kappa_f) = g t^3 + O(t^4), g != 0 (order exactly 3) :: g_est=0.64681895  landed-formula sqrt(J^4(J+2)/8)/|N|=0.64682952;  U/t^2 -> 0.22727 vs sqrt(A)(J+2)/(2N)=0.227273
+PASS N2[J=3] slaving |s0| <= |d| at 25 random real points (consequence of det H >= 0, det C < 0) :: max |s0|/|d| = 0.002956
+PASS N3a[J=3,eps+] argument principle: phi(.,kappa) has exactly 3 zeros in |t|<0.14 (kappa/kappa_f-1=0.001522) :: winding = 3.0
+PASS N3b[J=3,eps+] line node and plane-(ii) pair are zeros of d with s0 = 0 (pair real) :: max |d|,|s0| over the three points < 1e-25; the three points are pairwise distinct
+PASS N3c[J=3,eps+] simple zeros; sign of det d_(u,v,t) at (line, pair) = [-1, 1, 1], sum = +1 (local degree +1 conserved)
+PASS N3a[J=3,eps-] argument principle: phi(.,kappa) has exactly 3 zeros in |t|<0.14 (kappa/kappa_f-1=-0.001516) :: winding = 3.0
+PASS N3b[J=3,eps-] line node and plane-(ii) pair are zeros of d with s0 = 0 (pair purely imaginary t = +-i y, y=arccosh c) :: max |d|,|s0| over the three points < 1e-25; the three points are pairwise distinct
+PASS N3c[J=3,eps-] the single real zero (line node) is simple and has det d_(u,v,t) sign +1 :: det=0.016883
+PASS N4a[J0] H(f0,kappa_f(J0)) levels 0,0,+-4J0; d(node)=0 and s0(node)=0 at the exceptional root :: J0=2.3829757679062374941
+PASS N4b[J0] Jacobian rank 1: d_u = d_t = 0 (to 1e-25), d_v != 0 :: |d_v|=2.285227
+PASS N4c[J0] 2-jet of the v-eliminated reduced map: two binary quadratic forms with nonzero resultant (no common complex tangent) => multiplicity 2*2 = 4 :: Q1 = (0.3238994 u^2 + 2.82e-34 ut + 0.5 t^2), Q3 = (7.09e-35 u^2 + 1.091553 ut + 4.86e-63 t^2), Res/scale=0.135922
+PASS N4d[J0] landed normal form reproduced: F1 = c_uu u^2 + c_tt t^2 + c_eps eps, F2 = b v, F3 = c_ut u t with c_uu = J0^2/(4(J0+2)), c_tt = 1/2, c_uu,c_tt > 0, c_eps < 0 (frame normalised |d_tt| = 1) :: c_uu=0.3238994356 (landed 0.3238994356), c_tt=0.5, c_eps=-2.817609, b=2.285227, c_ut=1.091553; off-pattern entries <= 4.76e-30
+PASS N4e[J0,eps+] four distinct REAL zeros (2 line + 2 plane-(ii)) of d with s0=0; det signs [-1, -1, 1, 1] sum 0 (local degree 0) :: separation 0.002825
+PASS N4e[J0,eps-] four distinct zeros of d (2 line, 2 plane-(ii)), all NON-real (complex family points), s0=0 :: separation 0.002828
+PASS N4f[J0,eps-] finite check: at 30 random real points near the node either e1.d > 0 or |e2.d| > 1e-6 (finite sample, no real zero seen; not part of the proof)
+PASS N5 two-parameter pattern near (J0,kappa_f(J0)), J=J0+-0.004: u_f > u_*, and the four family points are zeros of d (complex ones included) with 0 / 2 / 4 real ones for u<u_*, u_*<u<u_f, u>u_f :: [('0.004', [0, 2, 4], True), ('-0.004', [0, 2, 4], True)]
+TOTAL: PASS=44 FAIL=0
+HIT: scoped conditional result: for each fixed J in (2,J0) or (J0,1+sqrt5) the zero-energy double-level (middle-band touching) set near the flipping line node is exactly {line node} for kappa<=kappa_f and {line node, plane-(ii) pair} for kappa>kappa_f, and near (J0,kappa_f(J0)) it is exactly the real points among the four line/plane-(ii) family points (0, 2, 4), given the supplied jets and conservation of multiplicity (ATTEMPT.md steps 2-11); radii non-constructive
+SUMMARY: re-verifies the supplied jets at J=13/6, 5/2, 3 and J0, shows the scalar part is slaved (|s0|<=|d|) and every family point (complex ones too) is a zero of the Schur vector, so multiplicity counts 3 (generic J) and 4 (J0) are saturated by the exact families; the census itself is the argument in ATTEMPT.md, not a finite search; runtime 71 s

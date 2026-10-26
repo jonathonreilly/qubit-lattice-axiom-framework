@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/the_d4_spinor_register_keeps_the_spin12_far_wall_gap_and_the_cayley_term_as_w_f4_scalars_and_its_root_line_chain_stays_gapped_to_l_8_2026_10_26.py
+runner_sha256: bb6a51ceca1e756e65113473b736310aeb54d6eb77714629099e6045b40004fa
+input_fingerprint_sha256: 19e4a62471a7e9aaf07b7a0d08052a87a4e3eb1f62c30ec37adb444a953f38d2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 23.23
+status: ok
+----- stdout -----
+== A. symmetry of the on-site gapping terms under the W(F4) spinor lift
+PASS A1 [T] W(F4) has 1152 elements (576 proper); lifts S obey S g_mu S^-1 = R_mu^nu g_nu: 1e-15
+PASS A2 [T] proper lifts commute with g5 and act on P- and P+ with det 1 (SU(2)_- x SU(2)_+), so the Weyl form eps is invariant and B_a = psi_-^T (M_a x eps) psi_- (the Spin(12) pair) is invariant under every rotation: [S,g5] 0e+00, |det-1| 1e-15, eps 1e-15
+PASS A3 [T] improper lifts anticommute with g5: they map the far-wall (P-) term onto the P+ term with |det| = 1, i.e. onto the wall-swapped slab; B B^+ is phase-blind, so H_+ + H_- is invariant under all 1152 lifts: 0e+00, 1e-15
+PASS A4 [T] det S = 1 and S unitary for all 1152: the spinor image lies in SU(4) inside Spin(7); the Fock lift commutes with the Cayley 4-form on the 4 spinor modes (spectrum -14 (1), 0 (8), +2 (7)): it is a W(F4) scalar: det 3e-15, [U,Phi] 2e-14
+PASS A5 [T] W(F4)+ invariants: Sym2, Sym4, Sym3 x V = 1, 1, 1 (= SO(4)): no dim-6 term for bosons or the fermion kinetic vector at any order; the gapping term adds no tensor, so no LIV is induced. Sym6, Sym5 x V (dim-8) =: [1, 1, 1, 2, 2]
+== B. on-site spectrum: far-wall Weyl field 16 x 2 D4 spinor components, Fock 2^32 by sectors
+PASS B1 [T] M_a symmetric => the Lorentz form on the flavour index must be antisymmetric (eps): the D4 Weyl spin is that index; the six Spin(4) generators restricted to P- span su(2)_- (rank 3), P+ part acts trivially: rank 3
+PASS B2 [T] Fock identity sum_a {B_a,B_a^+} = 2[144 - 2 S(S+1) - C2_10 - J^2] with S the D4 Lorentz SU(2)_- : on N = 0, 1 (c0, one-body part) and the full N = 4 sector (35960 states, sparse): c0 160.0, max dev 0e+00
+PASS B3 [F] sparse Lanczos, N = 4 (J = -6): lowest -F = -108 = -(144 - 36), unique, Lorentz scalar (S = 0) and Spin(10) singlet: levels [-108.0, -88.0, -88.0, -88.0], <S^2> 5e-18, <C2_10> 2e-16
+  => with spin10-two-flavour (cited [T]): H = -g F has the unique Lorentz-, Spin(10)- and PH-singlet ground state E0 = -144 g at N = 16,
+     gap 4 g (N = 16 +- 4 singlets), fermion gap 13 g. The register's Weyl half IS the two-16s flavour index: Fock space unchanged.
+  [T] full Dirac register on the far layer: H_+ + H_- (one Casimir per chirality, disjoint commuting modes): unique product ground
+      state E0 = -288 g, gap 4 g, fermion gap 13 g; invariant under all 1152 lifts (A3). The P+-P- cross term is not tested.
+== C. 1+1D root-line reduction of the D4 register (Cayley / Re Omega on the 4 spinor modes)
+PASS C1 [T] Gamma = i g(u_t) g(n) is Hermitian, Gamma^2 = 1, eigenvalues (-1,-1,+1,+1); |det Ug| = 1 so Omega -> phase x Omega and omega^omega is unchanged: in the Gamma eigenbasis the D4 chain is the proxy chain with hop signs (-,-,+,+)
+PASS C2 [F] gate: L = 4 D4 chain = proxy chain in every sector (even L: staggering the Gamma = -1 modes maps one onto the other): 3e-13
+PASS C3 [F] g = 0: free gap 2 sin(pi/2L) at L = 4: 0.7654
+  model g     L=4     L=5(D4 bc)  L=6    | embedded proxy L=4, 6, 8 [R]   rho = D(Lmax even)/D(4)  class
+  ReO  0.125   0.803    0.686     -     | 0.803 0.550 0.42   0.523  CLOSING
+  ReO  0.25    1.130    1.067    0.917  | 1.130 0.917 0.824   0.729  INCONCLUSIVE
+  Cay  0.125   0.993    0.943     -     | 0.993 0.791 0.714   0.719  INCONCLUSIVE
+  Cay  0.25    2.719    2.708    2.702  | 2.719 2.702 2.702   0.994  OPEN
+  ReO  0.5     2.936    2.931     -     | 2.936 2.929   -     0.998  OPEN
+  Cay  0.5     6.082    6.161     -     | 6.082 6.054   -     0.995  OPEN
+PASS C4 [F] live L = 4 and L = 6 (g = 0.25) reproduce the embedded proxy values (exact equivalence, even L)
+PASS C5 [F] Cayley on the D4 register is OPEN at g = 0.25 (L = 4..8, gap flat to 1%) and 0.5; Re Omega alone is not OPEN at 0.25
+PASS C6 [F] weak coupling g = 0.125 is not OPEN for either form (crossover; Re Omega free-like)
+  Not computed: L = 7 on the D4 boundary (3.4e6-state sectors, > 1.5 GB); 3+1D far wall with the Spin(12) term (2^32 per event).
+Verdict (pre-set criteria): PARTIAL. (1), (2) PASS; (3) Cayley OPEN on the D4 root-line reduction; the 3+1D far wall is untested.
+elapsed 22.8s, peak RSS 599 MB
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

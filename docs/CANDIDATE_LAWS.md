@@ -314,6 +314,11 @@ Bosonized qubit sites (bosonized-sites, 2026-10-26, rethink r3; campaign files):
     - [T] By representation counting, the 4-event cell cannot hold one spinor, and the 16-event cell cannot hold one without tastes.
     - A spinor per event is 4 fermion modes, i.e. FOUR qubits per event.
     - OPEN: a 16-event spin x taste construction with long hops, and the Chern number of the one gapped flux orbit.
+  - **16-event spin x taste (d4-spin-taste-16, PR #10105, 11/11, own re-run identical): PARTIAL.**
+    - [T] H^1(W(F4), F2^4) = 0, so any group covering W(F4) fixes an event class. The 16 cell modes then split 1 + 3 + 12, which is not End(S) = 1, 1, 4, 4, 6. So full W(F4), or any protected group containing a reflection, gives no spin x taste for any kernel range or phases.
+    - Control: KS on Z^4 matches End(S), but is unprotected (2 quartic invariants).
+    - OPENING: rotations-only (no improper element) protected subgroups of W(F4), orders 96-576. They pass the counting test, and spin splits into two Weyl halves there, so the obstruction does not apply. No kernel built yet. A rotations-only symmetry is intrinsically chiral.
+    - Taste rotates like a spinor, so it is a doubler label, not internal.
 - **Still to rebuild on D4:**
   - the copy sign's role in carrying the 16;
   - slab chirality and the 4D index;

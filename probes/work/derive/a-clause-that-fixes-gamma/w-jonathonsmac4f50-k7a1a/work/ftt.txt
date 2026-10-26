@@ -1,0 +1,1 @@
+Mul(Rational(1, 4), Pow(Add(Pow(sin(Symbol('k1', real=True)), Integer(2)), Pow(sin(Symbol('k2', real=True)), Integer(2)), Pow(sin(Symbol('k3', real=True)), Integer(2))), Rational(-1, 2)), Pow(sin(Symbol('k1', real=True)), Integer(2)))

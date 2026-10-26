@@ -1,0 +1,36 @@
+== A exact algebra ==
+PASS A1 H_w = H + (1/2){U,H} + (1/8){U^2,H} + (1/4)UHU + O(U^3), entrywise (sympy series)
+PASS A2 |<+(k+q)| (H(k)+H(k+q))/2 |-(k)>|^2 = (r1-r2)^2 (1-n1.n2)/8 (identically) (sympy, rational parametrisation of the directions)
+PASS A3 (1-c)[X/4 - Y^2/(4X)] = (1-c) r1 r2/(r1+r2) (sympy)
+PASS A4 bond Hessian of (2/gamma)(phi_x-phi_y)^2 at u=0 is (1/gamma)[[1,-1],[-1,1]]  =>  symbol L(q)/gamma (sympy)
+PASS A5 <sum sin^2>=3/2 and <(sum sin^2)^2>=21/8 (exact moments) (<A^2>=21/8)
+PASS A6 exact Holder/Jensen bracket  (3/2)^(3/2)/sqrt(21/8) <= <r> <= sqrt(3/2) [1.1339,1.2247]  (coarse)
+== B torus: dense diagonalisation vs closed form ==
+PASS B0 torus walk is Hermitian (antiperiodic 6^3)
+PASS B1 sea energy per site on the torus = -<r> on the same k-grid (c0_torus=-1.1984145368)
+PASS B2 weight one: E_sea[u+c] = e^c E_sea[u] (dense, random u)
+PASS B3 dense second variation of E_sea == closed-form Hessian symbol (7 modes, 6^3 torus) (max relative deviation 3.61e-06; O(a^2) finite-difference error)
+== C/D structure of the Hessian ==
+PASS C1 sum rule: h(q=0) = c0 = -<r>  (Euler identity for a weight-one local F) (<r>=1.193801717 on the 48^3 grid)
+PASS C2 decomposition h(q) = c0 + kappa L(q) - R(q), kappa=<r>/12, R>=0 (exact on the grid) (max deviation 3.1e-16)
+PASS D1 compact form  h(q) - c0 = < (r r' - d.d')/(r + r') >  (equal to the bubble form) (max deviation 3.9e-16, 10 modes)
+PASS D2 sandwich 0 < h(q) - c0 <= kappa L(q) on the sampled modes 
+PASS D3 raw sea Hessian vanishes only at the chessboard: h(Q)=0, h<0 elsewhere (sampled) (h(Q)=2.1e-17; max sampled h = -0.6292)
+PASS D4 (h-c0)/L = kappa - R/L exactly and R/L -> 0 as q -> 0 (about q^2 log(1/q)), so (h-c0)/L -> kappa = <r>/12 ((h-c0)/L = 0.099353, 0.099005, 0.098168; kappa=0.099483; R/L=1.30e-04,4.78e-04,1.32e-03)
+PASS D5 stability threshold of the localisation family: Hessian of F_theta positive for all q != 0 iff theta > theta_* (theta_* ~ 0.0550 at q=(1.40,1.40,1.40); coarse global scan max 0.0550 at (7, 7, 7)x2pi/32; float)
+PASS D6 hence stable members of the family have gamma_theta = 12/(theta <r>) < about 12/(theta_* <r>) (gamma_theta=10.05 at theta=1; stable range gamma < ~183; float)
+== E dichotomy and bare+induced ==
+PASS E1 the walk is blind to the chessboard of clocks: E_sea[a*eps] = E_sea[0] (dense, a=0.3,0.7,1.1)
+PASS E2 site-normal-ordered remainder on the chessboard = V|c0|(cosh a - 1) != 0 (so F_site is NOT chessboard-invariant)
+PASS E3 bond-normal-ordered remainder vanishes on the chessboard (F_bond is chessboard-invariant) 
+PASS E4 dichotomy: in F_theta, chessboard-invariance <=> theta = 0 <=> zero q^2 stiffness (kappa_theta = theta <r>/12) (follows from C2, E2, E3: chessboard cost = theta V |c0| (cosh a - 1))
+PASS E5 bare stiffness (2/gamma_b) plus site-normal-ordered sea: Hessians add, 1/gamma = 1/gamma_b + 1/gamma_ind, so gamma <= gamma_ind (sympy)
+== F certified bracket ==
+PASS F1 interval-certified bracket of <r> = int sqrt(sum sin^2) d^3k/(2pi)^3 [1.19379966849, 1.19380183175] width 2.16e-6 (42s)
+PASS F2 certified bracket of gamma_ind = 12/<r> [10.0519196, 10.0519378]
+PASS F3 consistent with the quadrature value 1.19380112142979520212 of the earlier attempt 
+PASS F4 independent 96^3 midpoint sum lies in the certified bracket (<r>_96 = 1.193801158)
+RUNTIME 264s
+HIT: for the supplied walk H=sum sigma_j sin k_j and its half-filled sea, the sea-energy Hessian is h(q)=c0+<r>L/12-R(q) with R>=0 (raw sea: h<0 for all q except the chessboard), the site-normal-ordered Hessian is the positive closed form <(r r'-d.d')/(r+r')> with 0<h<=<r>L/12, so gamma=12/<r> lies in the interval-certified bracket [10.0519196, 10.0519378] (kappa=<r>/12 itself and the bubble kernel were already in earlier attempts); the family theta*T_site+(1-theta)*T_bond is stable only for theta>theta_*~0.055 (float scan), so the sea fixes gamma only after a supplied choice of theta.
+TOTAL: PASS=27 FAIL=0
+SUMMARY: the sea's exact Hessian splits as c0 + kappa L - R with kappa=<r>/12; with a per-site vacuum subtraction its Hessian is the positive closed form <(r r'-d.d')/(r+r')> giving gamma = 12/<r> in a certified bracket around 10.052, while the raw sea is repulsive in every mode, weight-one scale covariance forces c0 = F[uniform]/V so a 1/R tail needs a vanishing uniform energy, and the localisation of the subtraction (theta) is left open above a stability threshold.

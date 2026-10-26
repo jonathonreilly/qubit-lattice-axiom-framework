@@ -1,0 +1,64 @@
+===== runner cache v1 =====
+runner: scripts/raw_xmax_sigma_above_46_eev_flowed_proton_beam_tension_2026_10_26.py
+runner_sha256: d286813b217951959dc8a3af388afc31bb4bc6a3ed6d0746f322fb19f9b6faca
+input_fingerprint_sha256: 804e545a27232fdcd56d64c5301218342ec996293a7be4c55e4c5c727cb76dd7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 21.96
+status: ok
+----- stdout -----
+A  hadronic-model moments (GMB param.) at 1e19 eV: p / Fe <X>, sigma
+   QGSJetII-04  p 790.2 / 61.1   Fe 694.8 / 22.5
+   EPOS-LHC     p 805.4 / 58.2   Fe 709.5 / 17.1
+   Sibyll2.3c   p 818.3 / 62.5   Fe 715.6 / 22.4
+PASS A1 parametrization reproduces Auger ICRC2013 proton anchors X0(1e19): EPOS-LHC 806.1, QGSJetII-04 790.4
+B  x_lead (1 - x = r/3, r ~ P^-2): 46 EeV 0.9952-0.9984; 1e20 0.9990-0.9997
+PASS B1 r ~ P^-2 scaling of the 1e20 residual reproduces the upstream 1e19 residual 0.10-0.28 (3-body FEM) | scaled 0.10-0.30
+C  toy at 10^19.74: p <X> 717.4 sig 53.4; Fe <X> 653.2 sig 7.1; Nmu Fe/p 1.19
+PASS C1 toy calibration: sigma_p within 40-75, and variance mapping sigma_p,model^2 + (toy Fe^2 - toy p^2) gives model Fe sigma within 8 | mapped Fe 26.5/21.8/28.6 vs model 21.8/16.5/21.3
+D  corners (f_sigma, kappa, f_N): pred <X>, sigma at 19.74 | worst pull over DNN bins >46 EeV (X, sigma) | lost
+   pre (0.33,std,0.3): 1079, 165 | 6.6, 14.9 | Nmu/p 0.97 | lost 0.01
+   pre (0.33,std,1): 1044, 185 | 5.7, 16.0 | Nmu/p 1.00 | lost 0.01
+   pre (0.33,std,1.5): 1018, 150 | 5.6, 13.9 | Nmu/p 1.00 | lost 0.00
+   pre (0.33,high,1): 3341, 1018 | 99.0, 99.0 | Nmu/p 0.06 | lost 1.00
+   pre (1,std,0.3): 893, 56 | 3.1, 4.9 | Nmu/p 0.97 | lost 0.00
+   pre (1,std,1): 841, 53 | 1.9, 4.2 | Nmu/p 1.00 | lost 0.00
+   pre (1,std,1.5): 823, 58 | 1.8, 4.7 | Nmu/p 1.00 | lost 0.00
+   pre (1,high,1): 2745, 876 | 99.0, 99.0 | Nmu/p 0.16 | lost 1.00
+   pre (2,std,0.3): 830, 33 | 1.7, 2.2 | Nmu/p 0.97 | lost 0.00
+   pre (2,std,1): 784, 32 | 0.4, 2.4 | Nmu/p 1.00 | lost 0.00
+   pre (2,std,1.5): 771, 34 | 0.7, 2.5 | Nmu/p 1.00 | lost 0.00
+   pre (2,high,1): 2424, 891 | 99.0, 99.0 | Nmu/p 0.30 | lost 1.00
+   ext (2,std,0.5): 818, 39 | 1.2, 2.2 | Nmu/p 1.00 | lost 0.00
+   ext (2,std,1): 787, 34 | 0.4, 2.3 | Nmu/p 1.00 | lost 0.00
+   ext (2,std,1.5): 775, 34 | 0.6, 2.1 | Nmu/p 1.01 | lost 0.00
+   ext (2,low,0.5): 816, 31 | 1.2, 2.1 | Nmu/p 0.98 | lost 0.00
+   ext (2,low,1): 787, 33 | 0.4, 1.9 | Nmu/p 1.00 | lost 0.00
+   ext (2,low,1.5): 770, 34 | 0.6, 2.2 | Nmu/p 1.01 | lost 0.00
+   ext (4,std,0.5): 787, 28 | 0.3, 1.6 | Nmu/p 0.99 | lost 0.00
+   ext (4,std,1): 758, 28 | 1.1, 1.6 | Nmu/p 1.00 | lost 0.00
+   ext (4,std,1.5): 743, 27 | 1.8, 1.6 | Nmu/p 1.00 | lost 0.00
+   ext (4,low,0.5): 799, 27 | 0.6, 1.6 | Nmu/p 0.97 | lost 0.00
+   ext (4,low,1): 771, 27 | 0.6, 1.6 | Nmu/p 1.00 | lost 0.00
+   ext (4,low,1.5): 751, 27 | 1.4, 1.6 | Nmu/p 1.00 | lost 0.00
+   ext (8,std,0.5): 773, 26 | 0.5, 1.5 | Nmu/p 0.99 | lost 0.00
+   ext (8,std,1): 746, 26 | 1.7, 1.5 | Nmu/p 1.00 | lost 0.00
+   ext (8,std,1.5): 731, 26 | 2.4, 1.5 | Nmu/p 1.00 | lost 0.00
+   ext (8,low,0.5): 789, 26 | 0.3, 1.5 | Nmu/p 0.98 | lost 0.00
+   ext (8,low,1): 760, 26 | 1.1, 1.5 | Nmu/p 1.00 | lost 0.00
+   ext (8,low,1.5): 744, 26 | 1.8, 1.5 | Nmu/p 1.01 | lost 0.00
+E  standard pure proton: worst pull <X> 2.0, sigma 4.9
+PASS E1 pure standard protons above 46 EeV: sigma(Xmax) misses by > 3 combined sigma (the known exclusion)
+PASS E2 'transparent' corner (kappa = 1 - (1-x_lead)/2): showers escape / Xmax > 1500 -> excluded outright | lost fraction min 1.00
+PASS E3 every pre-registered corner with f_sigma <= 1 is EXCLUDED (> 3 sigma) | min worst pull 4.2
+F  best pre-registered corner (2.0, 'std', 0.3) worst pull 2.2 -> TENSION
+   best extended corner (8.0, 'low', 1.0) worst pull 1.5 -> CONSISTENT
+PASS F1 pre-registered verdict computed (most favourable corner decides) | TENSION
+PASS F2 every fitting corner needs f_sigma >= 2 (cross section of the flowed hadron decides) | f_sigma of fitting corners [2.0, 4.0, 8.0]
+G  FD lgE>=19.5 (N=37): data 779.8, 26.5; best corner 830, 36 (pulls 1.6, 1.2); std p 840, 59 (pulls 1.9, 5.2)
+PASS G1 FD direct-fluorescence bin agrees with the DNN verdict for std protons (sigma pull > 3)
+runtime 21.6 s
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

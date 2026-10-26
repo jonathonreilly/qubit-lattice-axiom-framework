@@ -1,9 +1,0 @@
-group C1 order 1 range 1
-near-pair classes 13
-unknowns 679 stay 13
-unitarity constraints 13070 time 6.3
-S raw 80172 new distinct 77628 time 7.7
-S-dag raw 80172 new distinct 70740 time 9.2
-distinct constraints 161438
-R1-only propagation: zeros 174 of 679  non-stay 666  contradiction False
-# reviewer note: run stopped deliberately during the optional branching stage (exponential in C1); the R1-only line above reproduces the author's C1 count (174 zeros of 679). No TOTAL line: not counted.

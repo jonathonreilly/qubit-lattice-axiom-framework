@@ -1,7 +1,0 @@
-elements (R, t mod 2) preserving (P0,P1): 24; swapping: 24
-PASS for every R in O exactly one translation class t mod 2 preserves both partitions (so the stabiliser is a full O about the cube centre, times 2Z^3)
-PASS rotations about the lattice site 0 (t=0) preserving the partitions form a group of order 3 (C3 about (1,1,1)); O about a site is NOT a symmetry
-PASS pure translations preserving the partitions: only t = 0 mod 2 (i.e. 2Z^3); e_1 is not a symmetry
-PASS translation by (1,1,1) swaps P0 <-> P1 (time-glide symmetry only)
-PASS the preserving element for each R is the rotation about the cube centre (t = c - Rc mod 2)
-TOTAL: PASS=5 FAIL=0

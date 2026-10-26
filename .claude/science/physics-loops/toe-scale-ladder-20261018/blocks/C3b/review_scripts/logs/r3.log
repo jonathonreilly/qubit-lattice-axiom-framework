@@ -1,5 +1,0 @@
-PASS  j1 (tau_0, xi_0) unchanged when all data beyond rho+1 is resampled (fresh + adversarial)  0 changes in 474 resamples
-PASS  j2 power control: adversarial resampling beyond rho-1 changes (tau_0, xi_0) in some samples  2/198
-PASS  j3 P(rho>=n) <= min_t [P(tau_0>t) + c_n t^(n+1)/(n+1)!], n=2..10  n=2: P=0.902 bound=0.969; n=5: P=0.695 bound=0.908; n=8: P=0.520 bound=0.819
-PASS  j4 J3: lam=0 on empty history, no seeds -> no site forms  
-TOTAL: PASS=4 FAIL=0

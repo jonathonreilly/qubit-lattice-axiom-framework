@@ -1,4 +1,0 @@
-[PASS] L=2 canonical flip component has 864 states, A symmetric 0/1
-[PASS] measurement anchor: V=0 ground state S_yy(pi,0,0) = 0.25303701 (repo 09-04 note) :: 0.25303701; E0 = -9.0267209135
-0.9 1.0 [0.3, 0.6, 0.9, 0.5] Nf_end 8.1037 +- 0.0162 exact 8.1043 z=-0.0 [8.111 8.061 8.049 8.145 8.125 8.132]
-0.9 3.0 [0.3, 0.6, 0.9, 0.5] Nf_end 8.1045 +- 0.0105 exact 8.1082 z=-0.3 [8.111 8.128 8.099 8.134 8.064 8.091]

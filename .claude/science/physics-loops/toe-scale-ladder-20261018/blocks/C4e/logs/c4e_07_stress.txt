@@ -1,2 +1,0 @@
-PASS: stress configurations (2-7 face pairs + singles, packed): L_i^2 = id and U^-8 U^8 = id  configs=700 active-unit events=4083 failures=0 (100s)
-TOTAL: PASS=1 FAIL=0

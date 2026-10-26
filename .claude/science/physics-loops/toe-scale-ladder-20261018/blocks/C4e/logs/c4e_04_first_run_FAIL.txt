@@ -1,8 +1,0 @@
-# Transcription (verbatim lines) of the FIRST run of c4e_04_verify_construction.py, whose log file was
-# overwritten by the corrected re-run. Kept to record the falsified prediction. Lines copied from the
-# terminal output of that run; nothing else of that run differed from the re-run except the label
-# "56 other near-pair orbits" (corrected to "relative positions").
-FAIL: axis action with particle-hole (odd R): two-hole state is static while the two-magnon pair moves => no O covariance for any odd R  holes after U: [(0, 0, 1), (1, 1, 1)] ; pair after U: [(0, 0, 1), (1, 1, 1)]
-TOTAL: PASS=10 FAIL=1
-# Diagnosis: the prediction "hole pairs are static" was false; U commutes with global particle-hole
-# conjugation (holes glide exactly like magnon pairs). Replaced by an explicit U C = C U check.

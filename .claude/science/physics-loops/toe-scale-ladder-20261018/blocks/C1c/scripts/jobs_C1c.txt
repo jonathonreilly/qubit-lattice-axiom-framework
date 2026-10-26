@@ -1,7 +1,0 @@
-# TAG L SEED START BETAS NCHUNKS_TOTAL THERM EVERY TIER BASE_CHUNKS(from C1b)
-L4_s3 4 103 canonical @../data/ladders/L4.txt 17 2000 2 1 3
-L4_s4 4 104 mixW_rot @../data/ladders/L4.txt 17 2000 2 1 3
-L6_s3 6 203 canonical @../data/ladders/L6.txt 40 2000 2 2 0
-L6_s4 6 204 mixW_rot @../data/ladders/L6.txt 42 2000 2 2 2
-L8E_s3 8 303 canonical 16 40 1000 2 3 2
-L8E_s5 8 305 mixW_rot 16 40 1000 2 3 0

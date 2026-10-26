@@ -1,8 +1,0 @@
-rv1_vertex_numeric: TOTAL: PASS=11 FAIL=0
-rv1b_seg4_full_ansatz: TOTAL: PASS=3 FAIL=0
-rv2_seg4_groebner: TOTAL: PASS=7 FAIL=0
-rv3_forcing: TOTAL: PASS=10 FAIL=0
-rv4_pair_symmetry: TOTAL: PASS=12 FAIL=0
-rv5_layers: TOTAL: PASS=3 FAIL=0
-rv1c_inspect: informational (degenerate D->infinity limit), no checks
-TOTAL: PASS=46 FAIL=0

@@ -1,3 +1,0 @@
-targeted single-flip influence lower bounds: {'L1': 3, 'L2': 3, 'U': 5}
-PASS influence lower bounds within proved upper bounds (L1, L2 <= 3; U <= 6)
-TOTAL: PASS=1 FAIL=0   [74s]

@@ -1,6 +1,0 @@
-PASS single magnon fixed by U and U^-1 (Z^3; TI gives all sites) 
-PASS single hole in the full background fixed by U and U^-1 (torus L=12, 18 sites) 
-PASS vacuum and antivacuum fixed 
-PASS all 1098 magnon pairs |rho|<=6: face pairs glide by v = rho_b rho_c e_a for 3 ticks, all others static (prediction = C4e glider) [6 moving, 1092 static]
-PASS all 364 hole pairs |rho|<=4 (torus L=12, full background): face hole pairs glide by -rho_b rho_c e_a (declared prediction from Theta-covariance), others static [6 moving, 358 static]
-TOTAL: PASS=5 FAIL=0

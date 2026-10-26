@@ -1,9 +1,0 @@
-bstar|th=0.0|hang=1.5708|L1|n=32|T=3.0|Fh=own|oct=(1, 1, 1) 7s
-bstar|th=0.0|hang=1.5708|L1|n=32|T=3.0|Fh=own|oct=(1, 1, -1) 7s
-bstar|th=0.0|hang=1.5708|L1|n=32|T=3.0|Fh=own|oct=(1, -1, 1) 7s
-bstar|th=0.0|hang=1.5708|L1|n=32|T=3.0|Fh=own|oct=(1, -1, -1) 7s
-bstar|th=0.0|hang=1.5708|L1|n=32|T=3.0|Fh=own|oct=(-1, 1, 1) 8s
-bstar|th=0.0|hang=1.5708|L1|n=32|T=3.0|Fh=own|oct=(-1, 1, -1) 7s
-bstar|th=0.0|hang=1.5708|L1|n=32|T=3.0|Fh=own|oct=(-1, -1, 1) 7s
-bstar|th=0.0|hang=1.5708|L1|n=32|T=3.0|Fh=own|oct=(-1, -1, -1) 7s
-bstar 32 0.0 L1 {'dA': '-1.024862683e-14', 'dB': '-1.024862683e-14', 'fA': '-9.245267846e-15', 'fB': '-9.245267846e-15', 'wA': '-9.072271871e-15', 'wB': '-9.072271871e-15', 'zA': '-8.741069243e-15', 'zB': '-8.741069243e-15'}

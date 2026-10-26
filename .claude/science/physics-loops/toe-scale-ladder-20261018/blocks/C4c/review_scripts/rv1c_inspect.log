@@ -1,5 +1,0 @@
-PASS parameter count 16 + 54 = 70
-commutator^2 2.784140635450811e-07 hop norm 0.9999999979118507
-||D|| = 2462.8187682281837  D pattern (depends only on n_2): [-851.8 -851.8 -180.6 -180.6 -851.8 -851.8 -180.6 -180.6 -851.8 -851.8
- -180.6 -180.6 -851.8 -851.8 -180.6 -180.6]
-=> degenerate limit h ~ c n_2 + O(1) hop with c -> infinity; not a solution (informational, no PASS/FAIL)

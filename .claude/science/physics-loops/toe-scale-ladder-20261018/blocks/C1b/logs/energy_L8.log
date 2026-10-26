@@ -1,4 +1,0 @@
-L8E_s3: nb=10 E = -443.362 +- 0.425
-L8E_s3: nb=20 E = -443.362 +- 0.366
-L8E_s3: nb=40 E = -443.362 +- 0.313
-L8E_s3: fifths [np.float64(-443.318), np.float64(-444.831), np.float64(-443.446), np.float64(-442.289), np.float64(-442.913)]  W visited [(np.int64(0), np.int64(0), np.int64(0))]  nmeas=2174  E/Np=-0.28865

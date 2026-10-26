@@ -1,8 +1,0 @@
-L=8: units square=1536 tetra=1536, |N1|=[32] |N2|=[178] (built 0s)
-PASS: L=8 torus: independent implementation, L_i o L_i = id on random configs  configs=60, active units=64, failures=0 (9s)
-PASS: L=8 torus: independent implementation agrees with c4e_layers on U  disagreements=0
-L=10: units square=3000 tetra=3000, |N1|=[32] |N2|=[178] (built 9s)
-PASS: L=10 torus: independent implementation, L_i o L_i = id on random configs  configs=25, active units=64, failures=0 (18s)
-PASS: L=10 torus: independent implementation agrees with c4e_layers on U  disagreements=0
-PASS: 8^3 torus, independent code: all k=2 configs (magnon at origin) + 8%% random sample of k=3: L_i^2 = id  configs=10923 failures=0 (53s)
-TOTAL: PASS=5 FAIL=0

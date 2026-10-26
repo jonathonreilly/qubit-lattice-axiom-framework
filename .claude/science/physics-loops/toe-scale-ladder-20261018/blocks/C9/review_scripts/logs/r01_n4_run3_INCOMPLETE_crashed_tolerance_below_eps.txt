@@ -1,7 +1,0 @@
-r01 sigma-image search; n=4 starts=200 budget=950.0s seed=12
-PASS A Lemma B: 30 random generic invariant pairs with one-site overlap never commute (min rel ||[g,h]|| = 7.653e-02)
-PASS A converse: trivial vector channel at overlap => commute
-PASS A Heisenberg bonds sharing one site do not commute
-PASS B n=4: dim Hermitian vector operators = 28, Schur-Weyl spin-1 multiplicity in (1/2)^(2n) = 28
-PASS C n=4: the 4 window shifts sigma_k are exact solutions (max residual 1.3e-12)
-PASS C n=4: control (sigma_0+sigma_1)/sqrt2 violates constraints (constraints active)

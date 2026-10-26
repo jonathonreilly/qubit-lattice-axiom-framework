@@ -1,7 +1,0 @@
-PASS L=8: covariance under all 24 g (site+cube centred, phases) and a random translation on 16 finite-density/stress configs (768 pairs; 16 changed sites)
-  [t=6s]
-PASS L=10: covariance under all 24 g (site+cube centred, phases) and a random translation on 16 finite-density/stress configs (768 pairs; 96 changed sites)
-  [t=15s]
-PASS L=12: covariance under all 24 g (site+cube centred, phases) and a random translation on 10 finite-density/stress configs (480 pairs; 160 changed sites)
-  [t=31s]
-TOTAL: PASS=3 FAIL=0   [31s]

@@ -1,7 +1,0 @@
-PASS (ii) L=10: exact per-layer dependency radius from definition: L1=3, L2=3 (claim 3)
-PASS (ii) L=10: empirical max influence distance over 2000 flips: {'L1': 3, 'L2': 3, 'U': 4, 'Uinv': 3} (bounds 3,3,6,6); U radius hist {1: 21, 2: 27, 3: 10, 4: 2}; 108s
-PASS (ii) L=12: exact per-layer dependency radius from definition: L1=3, L2=3 (claim 3)
-PASS (ii) L=12: empirical max influence distance over 600 flips: {'L1': 2, 'L2': 3, 'U': 4, 'Uinv': 3} (bounds 3,3,6,6); U radius hist {1: 5, 2: 13, 3: 4, 4: 1}; 61s
-PASS (ii) sparse search, 30000 cluster+flip trials: max U influence distance found = 3 (witness ([(0, 0, 0), (1, -1, 0), (1, 0, -3), (1, 1, -3), (1, 1, -2)], (-1, -1, 0)))
-INFO section local wall time 180s
-TOTAL: PASS=5 FAIL=0

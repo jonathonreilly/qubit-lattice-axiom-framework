@@ -1,3 +1,0 @@
-c10_exact: PASS=15 FAIL=0
-c10_numeric: PASS=35 FAIL=0
-TOTAL: PASS=50 FAIL=0

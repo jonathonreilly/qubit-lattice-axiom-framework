@@ -1,6 +1,0 @@
-[INFO] L=2 beta=1.0 seed=1: frozen vertices nF+nP = 2+4
-[INFO] states: 32; transitions to undiscovered states: 0
-[PASS] global balance pi K = pi with pi ∝ exp(-g beta Ibar) max|z|=2.61 chi2=37.6/31 (diag. approx) p=0.192
-[PASS] detailed balance pi_i K_ij = pi_j K_ji (pairs with >= 50 counts) pairs=496 chi2=533.5 max|z|=3.18 p=0.118
-[INFO] TV(stationary(K_hat), pi) = 0.0034
-TOTAL: PASS=2 FAIL=0

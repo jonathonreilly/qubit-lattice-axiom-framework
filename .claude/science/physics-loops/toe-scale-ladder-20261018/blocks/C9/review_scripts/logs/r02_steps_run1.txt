@@ -1,8 +1,0 @@
-PASS D geometry: 20000 random sets, 'all generic extremal differences = +-e' iff e-bond (bad=0)
-PASS D geometry: among all 2-point sets in 5^3, exactly the 100 x-bonds pass (got 100)
-PASS D sign: a+bP self-adjoint unitary, non-scalar, tau=1/2 -> [(0, 1)] (expect only (0,1))
-PASS G site elimination: vector ops on {0,1,2} commuting with all swaps among {1,2,3}: dim = 1 (expect 1, sigma_0)
-PASS G control: commuting only with P_12 (no outside site) leaves dim 5 > 1
-PASS (1) 6-cycle: distinct vertices, edge vectors pairwise +-distinct, S^- psi = 0
-PASS (1) translates of psi share no pair state (exact, |t|_inf <= 3; disjoint beyond)
-TOTAL: PASS=7 FAIL=0

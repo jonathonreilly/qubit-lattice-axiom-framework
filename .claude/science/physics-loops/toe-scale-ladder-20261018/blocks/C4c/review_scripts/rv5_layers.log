@@ -1,4 +1,0 @@
-PASS Lemma F: commuting (non-diagonal) layer, |supp alpha^n(X_3)| <= |S-S| = 3 for n=1..8 :: [3, 3, 3, 3, 3, 3, 3, 3]
-PASS staircase of non-commuting SWAP translates acts as a translation (sigma^z_0 -> single site) :: [7]
-PASS SWAP translates do not commute
-TOTAL: PASS=3 FAIL=0

@@ -1,7 +1,0 @@
-INFO tested 2578011 (d,x) pairs with G_x(d) in the k<=3 sector, 15502 window keys; skipped 600 d without stored preimage; 20s
-PASS X-locality (a): modification inside B_2(x): 0 violations; e.g. []
-PASS X-locality (b): modification depends only on d ∩ B_2(x): 0 conflicts; e.g. []
-INFO C3 orbits whose matched image is involved in an out-of-ball violation: 0
-INFO conflict types (source class of the two sides): {}
-INFO conflicts with BOTH sides forced (k<=2 rule / spectator lemma): 0; e.g. []
-TOTAL: PASS=2 FAIL=0

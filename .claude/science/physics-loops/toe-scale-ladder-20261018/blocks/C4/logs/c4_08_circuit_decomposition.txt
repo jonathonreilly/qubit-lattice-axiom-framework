@@ -1,5 +1,0 @@
-PASS solution 1: symplectic, det 1, O-covariant with phases (full)
-PASS solution 1: M = 1 + v v^dag Lambda with v self-orthogonal (transvection by the Pauli string [((-1, -1, 0), 'Z'), ((-1, 0, -1), 'Y'), ((-1, 0, 1), 'Y'), ((-1, 1, 0), 'Z'), ((0, -1, -1), 'X'), ((0, -1, 1), 'X'), ((0, 1, -1), 'X'), ((0, 1, 1), 'X'), ((1, -1, 0), 'Z'), ((1, 0, -1), 'Y'), ((1, 0, 1), 'Y'), ((1, 1, 0), 'Z')]), i.e. alpha = prod_r exp(+-i pi/4 P_r): commuting gates, finite depth
-PASS solution 2: symplectic, det 1, O-covariant with phases (full)
-PASS solution 2: M = 1 + v v^dag Lambda with v self-orthogonal (transvection by the Pauli string [((-1, 0, 0), 'X'), ((0, -1, 0), 'Y'), ((0, 0, -1), 'Z'), ((0, 0, 1), 'Z'), ((0, 1, 0), 'Y'), ((1, 0, 0), 'X')]), i.e. alpha = prod_r exp(+-i pi/4 P_r): commuting gates, finite depth
-TOTAL: PASS=4 FAIL=0

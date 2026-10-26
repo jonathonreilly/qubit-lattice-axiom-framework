@@ -1,2 +1,0 @@
-PASS Z^3: L1^2 = L2^2 = id and U^-1 U = id, N conserved, on 61295 configs (all k<=3 in 4^3 box + all k=4 in 3^3 box) [bad 0,0,0; 15936 configs moved by U; 212s]
-TOTAL: PASS=1 FAIL=0

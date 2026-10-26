@@ -1,8 +1,0 @@
-PASS: Gamma pairwise anticommuting Hermitian involutions
-Gamma1..Gamma5 = (-1+0j) * 1 ; transposes product = (-1+0j)
-smallest singular values of C-system: [2.82842712 2.82842712 0.        ]
-PASS: nullspace of {C Gamma_j = Gamma_j^T C} is 1-dimensional and C invertible (=> Phi^T = C Phi C^-1)
-PASS: S^5: max |tr(theta^3)(t1,t2,t3)| over 2000 random points/frames = 1.1e-13 < 1e-12
-PASS: R^6\0 (unnormalised, arbitrary tangent vectors): max = 1.2e-15 < 1e-11
-PASS: control S^3 -> SU(2): form nonzero at random points (median 12.19)
-TOTAL: PASS=5 FAIL=0

@@ -1,7 +1,0 @@
-[PASS] W=1 start state satisfies Gauss law
-[PASS] W=0 and W=1 components are disjoint; W=0 component has 864 states :: |W=0| = 864, |W=1| = 464, overlap 0
-[INFO] exact L=2 V=0.0: E0(W=0) = -9.0267209135, E0(W=1) = -7.3991109799, dE = 1.6276099336
-[INFO] exact L=2 V=0.5: E0(W=0) = -4.2558112626, E0(W=1) = -3.5243535036, dE = 0.7314577591
-[PASS] W=1 open-path QMC vs exact, L=2 V=0.0 T=4.0 (4 chains) :: Emix -7.4015+-0.0105 vs -7.3991 (z=-0.2); Nf_mid 8.0359+-0.0118 vs 8.0544 (z=-1.6); Nf_end 7.4015+-0.0105 vs 7.3991 (z=+0.2); 72s
-[PASS] W=1 open-path QMC vs exact, L=2 V=0.5 T=4.0 (4 chains) :: Emix -3.5250+-0.0066 vs -3.5243 (z=-0.1); Nf_mid 7.4443+-0.0153 vs 7.4440 (z=+0.0); Nf_end 7.0500+-0.0132 vs 7.0487 (z=+0.1); 99s
-TOTAL: PASS=4 FAIL=0

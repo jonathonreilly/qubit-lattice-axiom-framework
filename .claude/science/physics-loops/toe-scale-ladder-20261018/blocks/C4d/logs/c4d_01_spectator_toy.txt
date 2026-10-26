@@ -1,9 +1,0 @@
-PASS U unitary
-PASS U conserves magnon number
-PASS single magnons frozen exactly (phase 1)
-PASS pair dynamics is non-trivial (lemma not vacuous) :: max 1-|<xy|U|xy>| = 0.132
-effective range r = 3
-PASS finite range r <= 3 :: r = 3
-PASS spectator lemma: U|C+w> = U|C> (x) |w> for all |C| in {2,3}, dist(w,C) > r :: 40 cases
-PASS control: the identity FAILS for some spectator at dist <= r (test is discriminating) :: 1100 near cases differ
-TOTAL: PASS=7 FAIL=0

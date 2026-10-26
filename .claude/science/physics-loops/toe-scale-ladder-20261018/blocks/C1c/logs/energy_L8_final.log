@@ -1,8 +1,0 @@
-L8E_s3: nb=10 E = -443.788 +- 0.164
-L8E_s3: nb=20 E = -443.788 +- 0.192
-L8E_s3: nb=40 E = -443.788 +- 0.202
-L8E_s3: fifths [np.float64(-443.427), np.float64(-444.015), np.float64(-443.77), np.float64(-443.672), np.float64(-444.056)]  W visited [(np.int64(0), np.int64(0), np.int64(0))]  nmeas=14135  E/Np=-0.28892
-L8E_s5: nb=10 E = -443.914 +- 0.231
-L8E_s5: nb=20 E = -443.914 +- 0.218
-L8E_s5: nb=40 E = -443.914 +- 0.208
-L8E_s5: fifths [np.float64(-444.162), np.float64(-444.376), np.float64(-443.141), np.float64(-444.395), np.float64(-443.497)]  W visited [(np.int64(0), np.int64(0), np.int64(0))]  nmeas=10224  E/Np=-0.28901

@@ -1,8 +1,0 @@
-INFO 478 sources, 391669 admissible candidate images (author filter), 3s
-PASS forced X-table: 2545227 forced transitions, 442 keys, internal conflicts/out-of-ball 0 (0 = forced data alone are X-local)
-INFO candidates surviving X-local unary filter: 388024 of 391669; orbit edges 6142; 32s
-INFO sources with no surviving candidate: 0; e.g. []
-INFO maximum matching with X-local unary filter: 478 of 478
-INFO wrote logs/matching_xfiltered_s-1.json (check full X-locality with MATCHING_JSON=... rv_xlocal.py)
-PASS filter + matching computation completed
-TOTAL: PASS=2 FAIL=0

@@ -1,5 +1,0 @@
-PASS (iii) U(1): N conserved by U on 200 random torus configs (L=10)
-PASS (iv-aux) particle-hole: U(~c) = ~U(c) on 200 random torus configs (L=10)
-PASS TI: U commutes with random torus translations (50 configs, L=10)
-INFO section u1 wall time 8s
-TOTAL: PASS=3 FAIL=0

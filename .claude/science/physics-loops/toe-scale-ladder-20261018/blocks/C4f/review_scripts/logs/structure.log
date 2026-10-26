@@ -1,4 +1,0 @@
-PASS parity step: T maps B->B, A->A; odd R maps B<->A; Gamma->Gamma; {D,D'}->{D,D'} (3888 unit images)
-PASS squares: every R in O maps square units to square units, diagonals to diagonals
-PASS complement of D within S is D' for every template (crossing = XOR on S)
-TOTAL: PASS=3 FAIL=0   [0s]

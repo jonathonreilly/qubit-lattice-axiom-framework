@@ -1,7 +1,0 @@
-# 1D intuition probe (not a 3D claim). Each line: radius r, number conservation imposed?, second mover, window cutoff.
-r=1 cons=True two=False Kmax=all : UNSAT
-r=2 cons=True two=False Kmax=all : UNSAT
-r=3 cons=False two=False Kmax=all : UNSAT
-r=3 cons=False two=False Kmax=4 : SAT
-r=3 cons=False two=True Kmax=3 : UNSAT
-r=2 cons=False two=True Kmax=all : UNSAT

@@ -1,9 +1,0 @@
-PASS M_C symplectic (M^dag Lambda M = Lambda)
-PASS tr M_C = 0 (involution, as in C4)
-PASS M_K symplectic (M^dag Lambda M = Lambda)
-PASS tr M_K = 0 (involution, as in C4)
-PASS M_C M_K symplectic
-PASS det(M_C M_K) = 1
-tau has 24 monomials: [(-4, -2, 0), (-4, 0, -2), (-4, 0, 2), (-4, 2, 0), (-2, -4, 0), (-2, 0, -4), (-2, 0, 4), (-2, 4, 0), (0, -4, -2), (0, -4, 2), (0, -2, -4), (0, -2, 4), (0, 2, -4), (0, 2, 4), (0, 4, -2), (0, 4, 2), (2, -4, 0), (2, 0, -4), (2, 0, 4), (2, 4, 0), (4, -2, 0), (4, 0, -2), (4, 0, 2), (4, 2, 0)]
-PASS tau = orbit sum of (4,2,0) (24 monomials), nonconstant
-TOTAL: PASS=7 FAIL=0

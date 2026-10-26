@@ -1,2 +1,0 @@
-L4_s4 4 104 mixW_rot @../data/ladders/L4.txt 3 2000 2
-L6_s4 6 204 mixW_rot @../data/ladders/L6.txt 2 2000 2

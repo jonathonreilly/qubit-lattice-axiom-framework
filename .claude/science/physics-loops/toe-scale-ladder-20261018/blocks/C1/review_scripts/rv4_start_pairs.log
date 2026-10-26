@@ -1,5 +1,0 @@
-[INFO] pair z: {(8, 16, 0): np.float64(-0.8), (8, 16, 1): np.float64(-0.75), (8, 32, 0): np.float64(-1.27), (8, 32, 1): np.float64(0.33), (10, 20, 0): np.float64(-1.08), (10, 20, 1): np.float64(2.3), (10, 40, 0): np.float64(0.08), (10, 40, 1): np.float64(-2.16), (12, 24, 0): np.float64(-0.11), (12, 24, 1): np.float64(-0.3)}
-[INFO] with the 5-decimal per_chain.md inputs: chi2 = 14.19/10 (rounding moves z by ~0.1-0.2)
-[PASS] NOTE 5.3: 10 start pairs total chi2 12.8/10, two largest tensions W=1 L=10 at 2.1 and 2.0 sigma (full-precision summary.json) :: chi2 = 12.78/10; largest [((10, 20.0, 1), np.float64(2.12)), ((10, 40.0, 1), np.float64(-2.05))]
-[INFO] L=6 T=12 W=0 three starts: chi2 = 6.27/2 (per-chain binned errors); spread 3.7e-4 per plaquette = 0.24 total, vs dE(L=6) = 0.44
-TOTAL: PASS=1 FAIL=0

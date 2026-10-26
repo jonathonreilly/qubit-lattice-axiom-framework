@@ -1,9 +1,0 @@
-bstar zA: rho_vac = -4.03172629 (N=96: -4.03172630); t = 0.19362549; bubble q^0 = -0.07931835; total q^0 TT coefficient = -0.369757; covariant expectation -rho_vac/2 = 2.015863; mismatch = -2.385620
-bstar zB: rho_vac = -4.03172629 (N=96: -4.03172630); t = 0.19362549; bubble q^0 = -0.07440269; total q^0 TT coefficient = -0.364841; covariant expectation -rho_vac/2 = 2.015863; mismatch = -2.380704
-bstar dA: rho_vac = -4.03172629 (N=96: -4.03172630); t = 0.19362549; bubble q^0 = -0.07604125; total q^0 TT coefficient = -0.366479; covariant expectation -rho_vac/2 = 2.015863; mismatch = -2.382343
-PASS [numerical] bstar: vacuum energy density and contact integral converged (N=96 vs 160, rel < 1e-4)
-iso zA: rho_vac = -4.03454394 (N=96: -4.03454395); t = 0.19396372; bubble q^0 = -0.08566631; total q^0 TT coefficient = -0.376612; covariant expectation -rho_vac/2 = 2.017272; mismatch = -2.393884
-iso zB: rho_vac = -4.03454394 (N=96: -4.03454395); t = 0.19396372; bubble q^0 = -0.07625185; total q^0 TT coefficient = -0.367197; covariant expectation -rho_vac/2 = 2.017272; mismatch = -2.384469
-iso dA: rho_vac = -4.03454394 (N=96: -4.03454395); t = 0.19396372; bubble q^0 = -0.07939000; total q^0 TT coefficient = -0.370336; covariant expectation -rho_vac/2 = 2.017272; mismatch = -2.387608
-PASS [numerical] iso: vacuum energy density and contact integral converged (N=96 vs 160, rel < 1e-4)
-TOTAL: PASS=2 FAIL=0

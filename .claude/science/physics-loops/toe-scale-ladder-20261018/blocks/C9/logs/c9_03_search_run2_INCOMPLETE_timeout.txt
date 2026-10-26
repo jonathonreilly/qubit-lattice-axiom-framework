@@ -1,4 +1,0 @@
-C9/03 optimisation search for alpha(P_{0,e1}) candidates; seed 11
-[1D] window [(0,), (1,), (2,), (3,)]; Hermitian SU(2)-invariant algebra dim = 14
-[1D] imposed commuting translates: 4
-[1D] expected solutions: [((0,), (1,)), ((1,), (2,)), ((2,), (3,))]

@@ -1,6 +1,0 @@
-L=4 L4_s3: nchunks=14 W2 chunkmean=0.1129+-0.0135  P1=0.1099+-0.0137
-L=4 L4_s4: nchunks=14 W2 chunkmean=0.1100+-0.0139  P1=0.1080+-0.0133
-L=4: start-diff z(W2, chunk errors) = +0.15
-L=6 L6_s3: nchunks=19 W2 chunkmean=0.0495+-0.0107  P1=0.0493+-0.0107
-L=6 L6_s4: nchunks=21 W2 chunkmean=0.0395+-0.0080  P1=0.0395+-0.0080
-L=6: start-diff z(W2, chunk errors) = +0.75

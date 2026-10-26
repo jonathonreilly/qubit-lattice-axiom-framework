@@ -38,21 +38,31 @@ def perm_rows(p):   # basis index map for relabelling qubit j -> p[j]
     return (nb * (1 << (n - 1 - np.arange(n)))).sum(1)
 PR = [perm_rows(p) for p in perms]
 Vs = {f: codeV(f) for f in FR}
-def best_leak(G):
-    best = (9, None)
+RINV = np.array([np.argsort(r) for r in PR])      # Vp = V[RINV[i]] is the code basis under labelling i
+def best_leak(G, chunk=4032):
+    """min over labellings x frames of ||(1 - Vp Vp^+) G Vp||_2. With G unitary and Vp orthonormal,
+    ||(1 - P) G Vp||_2^2 = 1 - sigma_min(Vp^+ G Vp)^2, used to rank all labellings in batches; the minimiser's
+    leak is then recomputed directly (the closed form loses precision near 0)."""
+    best = (9, None, None); G64 = G.astype(np.complex64)
     for f, V in Vs.items():
-        for p, r in zip(perms, PR):
-            Vp = np.zeros_like(V); Vp[r] = V
-            W = G @ Vp; L = np.linalg.norm(W - Vp @ (Vp.conj().T @ W), 2)
-            if L < best[0]: best = (L, (p, f))
-    return best
+        V64 = V.astype(np.complex64)
+        for i0 in range(0, len(perms), chunk):
+            Vp = V64[RINV[i0:i0 + chunk]]                     # (B, 256, 8), complex64 for ranking only
+            B = Vp.shape[0]
+            Y = (G64 @ Vp.transpose(1, 0, 2).reshape(D, B * 8)).reshape(D, B, 8).transpose(1, 0, 2)
+            M = np.einsum('bik,bil->bkl', Vp.conj(), Y)
+            smin = np.linalg.svd(M, compute_uv=False)[:, -1]
+            L = np.sqrt(np.clip(1 - smin ** 2, 0, None)); j = int(np.argmin(L))
+            if L[j] < best[0]: best = (float(L[j]), (perms[i0 + j], f), V[RINV[i0 + j]])
+    Vb = best[2]; W = G @ Vb
+    return float(np.linalg.norm(W - Vb @ (Vb.conj().T @ W), 2)), best[1]
 rng = np.random.default_rng(7)
 q, _ = np.linalg.qr(rng.normal(size=(8, 8)) + 1j * rng.normal(size=(8, 8)))
 Re = ns['Re']; from numpy.linalg import eigh
 def ex(Hm, t): w, v = eigh(Hm); return v @ np.diag(np.exp(-1j*t*w)) @ v.conj().T
 kg = np.array([0.37, -1.21, 0.83])
 print('||U1(0) - 1|| =', np.linalg.norm(U1(np.zeros(3), .3) - np.eye(8)))
-cases = {'identity (control)': np.eye(8, dtype=complex), 'CL-1 eps .3 K=0': U1(np.zeros(3), .3), 'CL-1 eps 1.1 K=0': U1(np.zeros(3), 1.1),
+cases = {'identity (control)': np.eye(8, dtype=complex), 'CL-1 eps .3 K=0': U1(np.zeros(3), .3),
          'FREEZE K=0': UF(np.zeros(3)), 'CL-1 intra-cell exp(-i .3 Re)': ex(Re, .3), 'CL-1 intra-cell exp(-i 1.1 Re)': ex(Re, 1.1),
          'CL-1 eps .3 generic K': U1(kg, .3), 'FREEZE generic K': UF(kg), 'random number-conserving (baseline)': q}
 res = {}

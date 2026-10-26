@@ -34,7 +34,8 @@ def check(tag, ok, msg, det=""):
     print(f"{'PASS' if ok else 'FAIL'}: {tag} {msg}" + (f"  [{det}]" if det else ""), flush=True)
 def run(part):
     p = HERE / f"asymmetry_misalignment_part_{part}_2026_10_26.py"
-    env = dict(os.environ, OPENBLAS_NUM_THREADS='1', OMP_NUM_THREADS='1')
+    nt = '4' if part == 'code_space_match' else '1'      # the 8! x 6 labelling search is the one heavy part
+    env = dict(os.environ, OPENBLAS_NUM_THREADS=nt, OMP_NUM_THREADS=nt)
     t = time.time(); r = subprocess.run([sys.executable, '-I', str(p)], capture_output=True, text=True, timeout=900, env=env)
     out = r.stdout + r.stderr
     print(f"  ({part}: exit {r.returncode}, {time.time() - t:.1f} s)", flush=True)

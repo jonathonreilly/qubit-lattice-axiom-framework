@@ -29,9 +29,11 @@ for name, Uf in (("CL-1 U1(k), eps=0.3", lambda K: U1(K)), ("CL-1 U1(k), eps=1.1
     cov = collections.Counter()
     gs = [np.array(np.eye(3)[list(q)]) @ np.diag(s) for q in itertools.permutations(range(3)) for s in itertools.product([1, -1], repeat=3)]
     found7 = 0
+    p7 = [p for p in perms if ctype(p) == (1, 7)]
+    MK = [np.abs(Uf(K)) for K in Ks[:2]]                       # moduli computed once (same test as before)
     for g in gs:
-        for p in perms:
-            if ctype(p) != (1, 7): continue
+        MgK = [np.abs(Uf(g @ K)) for K in Ks[:2]]
+        for p in p7:
             Pm = np.eye(8)[list(p)].T
-            if all(np.abs(Pm @ np.abs(Uf(K)) @ Pm.T - np.abs(Uf(g @ K))).max() < 1e-9 for K in Ks[:2]): found7 += 1
+            if all(np.abs(Pm @ a @ Pm.T - b).max() < 1e-9 for a, b in zip(MK, MgK)): found7 += 1
     print(f"   order-7 (Singer-type) site permutations covariant with ANY O_h momentum map: {found7}")

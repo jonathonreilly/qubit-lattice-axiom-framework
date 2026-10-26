@@ -1,0 +1,21 @@
+{
+  "source_branch": "physics-loop/admissibility-induced-law-block147-the-members-zero-mode-tests-the-zero-of-energy-20260925",
+  "source_head": "df4a90a84bdbb0ec425a75b694d02675b843c41f",
+  "source_objects": [
+    {"path": "docs/ADMISSIBILITY_RULE_THE_MEMBERS_ZERO_MODE_TESTS_THE_ZERO_OF_ENERGY_IF_THE_MEMBER_SEES_THE_HALF_FILLED_SEA_A_CLOSED_LATTICE_BOUNCES_OR_CANNOT_MOVE_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+     "ref": "df4a90a84bdbb0ec425a75b694d02675b843c41f (PR #9240 head, branch version)",
+     "sha256": "58f2733d2134457e1c6539927c25d4a49f77a30758eb0d9ed261f6b5076da929", "verified": true},
+    {"path": "docs/ADMISSIBILITY_RULE_THE_MEMBERS_ZERO_MODE_TESTS_THE_ZERO_OF_ENERGY_IF_THE_MEMBER_SEES_THE_HALF_FILLED_SEA_A_CLOSED_LATTICE_BOUNCES_OR_CANNOT_MOVE_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+     "ref": "main a77a3449c91a753b06ce2a63876cd460b62cb4cf (landed text; controls; differs from the branch version)",
+     "sha256": "031a0e666ec8e1ad36082c48efce47458ef922a73fa67f8afbbebfd4ec8cb7f2", "verified": true},
+    {"path": "docs/ADMISSIBILITY_RULE_THE_LATTICE_EXPANDS_WITH_THE_STATIC_PULLS_COUPLING_IFF_ALPHA_EQUALS_K_OVER_FOUR_AND_TOP_SPEED_WALKERS_LOSE_ENERGY_AS_ONE_OVER_THE_LENGTH_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+     "ref": "main a77a3449c91a753b06ce2a63876cd460b62cb4cf (block 146, landed)",
+     "sha256": "a08b1b7c08bf9dc8a578e93a5a3a0de2096f502c1ab90eeb54d4d375ace9c473", "verified": true},
+    {"path": "docs/ADMISSIBILITY_RULE_THE_LATTICE_EXPANDS_WITH_THE_STATIC_PULLS_COUPLING_IFF_ALPHA_EQUALS_K_OVER_FOUR_AND_TOP_SPEED_WALKERS_LOSE_ENERGY_AS_ONE_OVER_THE_LENGTH_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+     "ref": "block 146 PR #9237 head 600adb94e5c416c79467b5c2f5f806619c2c92b7 (branch version)",
+     "sha256": "cdc74e06a797c3e959032dc9a43d7d032a82b364be88c541fc79163cc92a6973", "verified": true},
+    {"path": "docs/MINIMAL_AXIOMS_2026-06-29.md", "ref": "main a77a3449c91a", "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753", "verified": true},
+    {"path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md", "ref": "main a77a3449c91a", "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69", "verified": true}
+  ],
+  "first_unresolved_step": "ATTEMPT.md step 12: the leading-adiabatic effective action is not controlled where lamdot > 2 mu (proved to be everywhere in the m0<=mu window and near tau_* generally) nor near a bounce on the time scale 1/lamddot; a non-adiabatic (exact time-dependent) treatment of the massive sea, and the question whether the member sees the sea's energy at all, remain open."
+}

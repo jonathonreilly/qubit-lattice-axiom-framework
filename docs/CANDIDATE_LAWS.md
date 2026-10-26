@@ -329,6 +329,12 @@ Bosonized qubit sites (bosonized-sites, 2026-10-26, rethink r3; campaign files):
     - The index gives +Q for Q = 0, 1, 2 but 0 for Q = -1, so the index theorem is not established.
     - FATAL for the gate: the gauge kinetic invariant count <Lambda^2, Lambda^2> = 4 (SO(4): 2). So F.F can be anisotropic at DIMENSION 4, which conflicts with measured photon isotropy.
     - The 4-mode spinor register stays the working candidate. The 64-event cell is untested.
+- **Far-wall mirror gapping on D4 (d4-far-wall-gapping, PR #10108, 14/14, own re-run identical up to noise digits): PARTIAL.**
+  - [T] Every W(F4) rotation's spinor lift has determinant 1 on each handedness block, and all 1152 lifts lie in SU(4) within Spin(7). So the Spin(12) term and the Cayley term are W(F4)-invariant (commute to 2e-14).
+  - The on-site term's invariant counts at orders 2, 4 and 3+1 are 1, 1, 1 (as SO(4)), so gapping induces no dim-6 LIV.
+  - On-site: the "two 16s" are exactly the 4-mode register's two Weyl spin components, and the Fock space stays at 32 modes. Sparse Lanczos on the N = 4 sector (35,960 states) gives a unique Lorentz-scalar Spin(10)-singlet ground level. With the cited rep theory: -144g, gap 4g.
+  - The D4 root-line reduction is exactly the Cayley proxy chain (gate 2e-13), so the 3450 chain is not the relevant proxy. Cayley at g = 0.25 gives gaps 2.719/2.702/2.702 at L = 4/6/8 (stays open); weak coupling is inconclusive.
+  - OPEN: the 3+1D far wall itself, and the cross-handedness Dirac variant.
 - **Still to rebuild on D4:**
   - the copy sign's role in carrying the 16;
   - slab chirality and the 4D index;

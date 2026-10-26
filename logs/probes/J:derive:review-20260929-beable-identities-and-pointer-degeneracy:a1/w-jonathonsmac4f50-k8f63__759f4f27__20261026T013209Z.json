@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:review-20260929-beable-identities-and-pointer-degeneracy:a1",
+ "type": "judgment",
+ "lane": "review-science-20260929",
+ "worker": "w-jonathonsmac4f50-k8f63",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20260929-beable-identities-and-pointer-degeneracy/w-jonathonsmac4f50-k8f63/check.py",
+ "seed": 78329,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "759f4f27",
+ "started_utc": "20261026T013209Z",
+ "elapsed_s": 2.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "exact-arithmetic proof-checks that the Laplace/Slater-column carrier weights t_i (sum t_i = 1) are invariant only under the Levi group (column scaling, sea-GL), and under adding sea orbitals to the added column (same state, same amplitudes) they sweep the whole hyperplane sum t = 1, so any carrier distribution on the occupied sites (including 'site j carries it') is realized by some representative; the orthogonal 'canonical' choice depends on the inner product."
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 20/20 PASS (~1 s); elementary linear algebra on one sub-obligation (Slater-column/Laplace carrier assignments): any carrier weight vector with sum 1 and support in nonzero dual entries is realized by an equivalent representative; 'canonical' orthogonal choice depends on the inner product; L=12 enumeration shows up to 15% spread; source's 12x12 ten-times example not reproduced; no process realizing the assignments beyond marginals; equivariance proof, L=10 pointer and MI records not attempted.",
+ "what": "Independently prove continuous-time current equivariance with its Born-initial and nonexplosion assumptions, then bound finite-step simulation error. Test Slater-column carrier assignments under basis changes with exact determinants. For the pointer impurity diagonalize the antiperiodic one-particle problem first: L=10 has zero modes and a nonunique half-filled sea. Specify a deterministic ground vector or mixed preparation and test state dependence. Mutual-information fragment averages are not automatically classical independent records or universal redundancy. Owner-requested research transfer after landing review. The source is an unlanded hypothesis, not authority: fetch the named author branch, verify the frozen Git SHA and exact path/hash from probes/work/review-science-20260929/SOURCE_MAP.json. Fetch current origin/main and prefer its corrected bounded sources; read the actual axiom memo and primitive grants before premise judgments. Check related tasks, completed attempts, referee reports and active claims before choosing ONE distinct obligation. Read the complete argument, actual inputs and paired code for that obligation. Known review corrections are background, not a new HIT. Deliver numbered PROVED/CHECKED/ASSUMED steps in ATTEMPT.md, a self-contained check.py with disjoint machinery, and RECOVERY_STATUS.json with hashes, first unresolved step and remaining obligations. Prove finite claims exactly where possible; failed search is not a no-go and negative claims require N1-N8 before promotion. Commit the checker before run_probe.py; print SUMMARY with the actual result and HIT only for a demonstrated new result or defect. Finish through claim.py and ordinary cross-model confirmation. Use the existing maximum-thinking J campaign; do not spawn agents, start workers, change budgets, create PRs or edit scientific/audit authority.",
+ "stdout_sha256": "9fab0bf839556f2f0d2a76987c24eb821eec1e743e219545b2493fb832fdff09",
+ "stdout_tail": "8766   (extreme assignments: min 0.5088, max 30.4145)\nPASS C7c same state, same Bell-sampled ensemble: carrier <d^2> over the tested representatives spans [12.331, 14.804]; the per-configuration extremes are 0.509 and 30.414\nPASS C7d ring: sum_conf |A_i0 M_i0|^2 = |phi(x)|^2 (1 - n_sea(x)) for the plain-e_0 representative (max dev 1.4e-16)\nPASS C7e mpmath(50 digits) physical ring L=12, one configuration: det and sum t invariant to 1e-40, t itself moves by >1e-3 under col0 += 10 col1 - 3 col4\nPASS C8 (context) antiperiodic ring L=10 has exactly 2 one-body zero modes (m=[2, 7]); L=12 has none -- the ring sizes used in C7 are non-degenerate at half filling\nTOTAL: PASS=20 FAIL=0\nINFO runtime 1.5 s\nHIT: for a fixed Slater state and sea, the Laplace carrier assignment over equivalent representatives of the added orbital realizes EVERY weight vector on the occupied sites that sums to 1 (support = nonzero dual entries), so it carries no information beyond the state; the 'canonical' choice depends on an inner product.\nSUMMARY: exact-arithmetic proof-checks that the Laplace/Slater-column carrier weights t_i (sum t_i = 1) are invariant only under the Levi group (column scaling, sea-GL), and under adding sea orbitals to the added column (same state, same amplitudes) they sweep the whole hyperplane sum t = 1, so any carrier distribution on the occupied sites (including 'site j carries it') is realized by some representative; the orthogonal 'canonical' choice depends on the inner product.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-k8f63",
+  "at_utc": "20261026T013216Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Scoped exact characterization (elementary). Same-family, unrefereed.",
+  "by": "w-jonathonsmac4f50-k8f63",
+  "at_utc": "20261026T013216Z"
+ }
+}

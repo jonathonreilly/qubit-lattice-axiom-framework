@@ -1,0 +1,64 @@
+{
+ "source_branch": "main",
+ "source_head": "2868a0c453e667d1267f0e1e7403732a11893d78",
+ "source_objects": [
+  {
+   "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_CERTIFIED_TOUCHING_CENSUS_ACROSS_COUPLING_REGIMES_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+   "sha256": "26ea04b4e26432e8763fc984190284f62ee2478a57a07c0c1aa6bb8ad79a2a84",
+   "verified": true
+  },
+  {
+   "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_CERTIFIED_TOUCHING_CENSUS_WITH_CHARGES_AT_FIVE_ANISOTROPIC_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+   "sha256": "a9a7a5386d0f29480dbc5418edaa85c26d97c53ac24850c53bc6c97bf545d227",
+   "verified": true
+  },
+  {
+   "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_OFF_PLANE_TOUCHINGS_ARE_QUINTIC_ALGEBRAIC_POINTS_AT_FIVE_ANISOTROPIC_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+   "sha256": "fe4d95928e0fcf6439ced8c4ab7b6551066c535d238cc3f0784d335ccd555dad",
+   "verified": true
+  },
+  {
+   "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_THE_CELL_CUT_SURFACE_ARC_AT_KAPPA_THREE_TENTHS_IS_AN_INTERVAL_CERTIFIED_ALGEBRAIC_CURVE_ENDING_AT_THE_LINE_NODE_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+   "sha256": "e835ab7f9e2b1e2d826ec1feb69d00b5c0bc5f0956ac85010cf1e9f1633c496f",
+   "verified": true
+  },
+  {
+   "path": "scripts/composite_site_network_flux_free_certified_touching_census_across_coupling_regimes_2026_10_01.py",
+   "sha256": "95eff14789f60cb0392aef67d75324f7fe6be5418597e991c58f289f742fb69d",
+   "verified": true
+  },
+  {
+   "path": "scripts/composite_site_network_flux_free_certified_touching_census_with_charges_at_five_anisotropic_couplings_2026_10_01.py",
+   "sha256": "dae34fab9de520abf864984c886ec1b5aa2b6c99f0bbfcff3026e9db81abdc51",
+   "verified": true
+  },
+  {
+   "path": "scripts/composite_site_network_flux_free_exact_surface_arc_of_the_cell_cut_slab_at_kappa_three_tenths_2026_10_01.py",
+   "sha256": "a53f3c10ec04243cd95e63f52e7072c3226576835d610750ad83ed9254dcac05",
+   "verified": true
+  },
+  {
+   "path": "scripts/composite_site_network_flux_free_off_plane_touchings_are_quintic_algebraic_points_at_five_anisotropic_couplings_2026_10_01.py",
+   "sha256": "49bd1b9f0ac5f27f21a93fcf73cb036dd14af08d76fad4d7549e0cf685b6b6f4",
+   "verified": true
+  }
+ ],
+ "hash_verification_method": "git show <pinned commit>:<path> | shasum -a 256, all eight equal to the task's stated values",
+ "deliverables": {
+  "ATTEMPT.md": "numbered steps",
+  "check.py": "52 checks, TOTAL: PASS=52 FAIL=0, about 2-3 min",
+  "RECOVERY_STATUS.json": "this file"
+ },
+ "result": "PARTIAL with one scoped new result: on the mirror line (x,1-x,1/2) det M = 16 SOS+ SOS-, so for all positive couplings a touching there exists iff Jx=Jy and Jz(4k^2+Jx^2)=8k^2Jx; plus a modular GF(32003) complex census (length 34 = 4+10+20) at five couplings",
+ "first_unresolved_step": "ATTEMPT.md step 14: symbolic elimination over Q(Jx,Jy,Jz,kappa) of the 20-point generic stratum to a polynomial in cos 2 pi f3 (degree 5 for generic couplings, its discriminant and resultant with the swap-plane quintic Q', realizability conditions d^2>=0 and nonzero denominators); the rational Groebner computation of the full system at B did not finish in 26 min (sympy)",
+ "remaining_work": [
+  "prove the length-34 count and the swap-plane exclusion for all positive couplings (steps 12-13), or find a coupling where they fail",
+  "verify that GF(32003) is a good prime for each of the five ideals (exact Groebner basis or a second prime)",
+  "extend the census to Jz > Jx+Jy and Jx = Jy",
+  "independent referee of step 3 identity (done here only by sympy expansion) and of the modular steps",
+  "check overlap of ATTEMPT step 6 (TRIM hypersurfaces) with the event-coverage task"
+ ],
+ "not_done_by_design": [
+  "claim.py, commit of the checker, run_probe.py, cross-model confirmation: read-only worker, no repository access beyond reading"
+ ]
+}

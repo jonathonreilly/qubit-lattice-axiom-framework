@@ -21,6 +21,8 @@ AUDIT_INPUT_PATHS = (
     "scripts/asymmetry_misalignment_part_slab_family_characters_2026_10_26.py",
     "scripts/asymmetry_misalignment_part_misalignment_cp_2026_10_26.py",
     "scripts/asymmetry_misalignment_part_locality_hierarchy_2026_10_26.py",
+    "scripts/asymmetry_misalignment_part_sector_crosstalk_2026_10_26.py",
+    "scripts/asymmetry_misalignment_part_posthoc_generic_vertex_2026_10_26.py",
 )
 import os, re, subprocess, sys, time
 from pathlib import Path
@@ -124,6 +126,31 @@ check("M4 [F]", rc == 0 and "-> PASS" in o and "C2 FAIL  C3 FAIL" in o and "-> F
       "C: a single-site vertex gives an exactly rank-1 Yukawa (s = 3,0,0), the uniform vertex an exactly degenerate one; but local "
       "eps^|c| profiles do not give a hierarchy (C2, C3 FAIL) and the democratic term is incompatible with a non-scalar real twist (C4 FAIL)",
       (re.search(r"C2/C3: local[^\n]*", o) or re.search("x", "x")).group(0))
+
+print("== X: sector cross-talk on the slab (the decisive test of M; its own criteria, D1-D7, were fixed before its first run)")
+rc, o = run('sector_crosstalk')
+st = {t: ('PASS' if re.search(rf"^PASS: {t} ", o, re.M) else 'FAIL' if re.search(rf"^FAIL: {t} ", o, re.M) else None)
+      for t in ('D1', 'D2', 'D2r', 'D3', 'D4', 'D5', 'D6', 'D7')}
+th2 = num(r"D2 decisive cross-talk, generic potentials: min_Delta median \|theta_bar_ind\| = ([0-9.e+-]+)", o)
+th2r = num(r"D2r restricted shallow potential \(supplied\): min_Delta median \|theta_bar_ind\| = ([0-9.e+-]+)", o)
+check("X1 [F]", "TOTAL: PASS=2 FAIL=6" in o and st == {'D1': 'FAIL', 'D2': 'FAIL', 'D2r': 'FAIL', 'D3': 'FAIL', 'D4': 'PASS',
+                                                      'D5': 'PASS', 'D6': 'FAIL', 'D7': 'FAIL'},
+      "the pre-registered cross-talk runner reproduces its outcome: PASS = D4 (generic vertex theta = O(1)), D5 (Ls convergence); "
+      "FAIL = D1 (on-site vertex: scalar Yukawa ~ 1, J undefined), D2, D2r, and D3/D6/D7 on precision only (1e-10..1e-11 vs a 1e-12 threshold)",
+      str(st))
+check("X2 [F]", th2 is not None and th2 > 0.1,
+      "DECISIVE (D2): with each order entering the other species' densities at kappa = 1, the induced theta_bar is O(1) and flat in the "
+      "sector separation (Delta = 1..18, Ls = 40): separating the sectors protects nothing; theta_ind is linear in kappa, so the mechanism "
+      "needs kappa < ~1e-10 (the Nelson-Barr quality problem in lattice form)", f"min_Delta median |theta_ind| = {th2}")
+check("X3 [F]", th2r is not None and 1e-10 < th2r < 1e-8,
+      "D2r (supplied restriction: the shallow order's density also respects the deep sector's residual antiunitary) removes the flat leak; "
+      "the remainder decays with depth and reaches 4e-10 at Delta = 18, just above the 1e-10 threshold", f"{th2r}")
+rc, o = run('posthoc_generic_vertex')
+row18 = re.search(r"^\s+18 \| max ([0-9.e+-]+)\s+([0-9.e+-]+)\s+([0-9.e+-]+)", o, re.M)
+check("X4 [F] post hoc", rc == 0 and row18 is not None and float(row18.group(1)) < 1e-9 and float(row18.group(3)) > 1,
+      "post hoc (disclosed, not pre-registered): a generic vertex symmetrised to each sector's residual gives theta_tree = 0 with "
+      "|J|/Jmax 0.2-0.5, but the deep sector's leak grows to O(10) with depth (Gamma/M propagation outlives the deep Yukawa)",
+      row18.group(0).strip() if row18 else "")
 
 print(f"TOTAL: PASS={NP[0]} FAIL={NP[1]}")
 sys.exit(0 if NP[1] == 0 else 1)

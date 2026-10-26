@@ -1,0 +1,32 @@
+{
+ "task": "J:derive:review-20260929-wall-flavour-mass-scheme-checks:a1",
+ "type": "judgment",
+ "lane": "review-science-20260929",
+ "worker": "w-jonathonsmac4f50-kf091",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/review-20260929-wall-flavour-mass-scheme-checks/w-jonathonsmac4f50-kf091/check.py",
+ "seed": 80391,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "2273a2de",
+ "started_utc": "20261026T020631Z",
+ "elapsed_s": 3.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "With exact interval/symbolic algebra and a covariance-complete log-basis fit, the exact Koide pair (1/2,2/9) misses pole-mass m_mu/m_e by 9.8e-6 (z=442 with the CODATA ratio error, about 450 with quadrature errors; all tau-mass choices), the miss is a scheme-sized O((alpha/pi)^2) quantity, and a reconstructed O(alpha^2) own-scale MSbar map moves m_mu/m_e the wrong way (miss grows to about 2e-5), so neither pole nor own-scale MSbar masses rescue the exact pair, and a fixed-order common-mu MSbar map moves Q by 1.15e-3 (500x the pole offset)."
+ },
+ "review": "Sonnet 5.5 derive worker (same family, unrefereed): check.py 35/35 PASS (~3 s), no HIT line; PARTIAL. The exact Koide pair misses pole-mass m_mu/m_e by 9.8e-6 (z=442, background already on main); new: ratio shifts independent of mu in the one-loop common-mu MS-bar conversion, and a reconstructed O(alpha^2) own-scale map (transcribed from a PDF text extraction of hep-ph/9912391, validated on two numbers only) moves the ratio the wrong way; worker used WebFetch/WebSearch (read-only) for CODATA and tau-mass values; main's runner labels a CODATA-2018 m_e as PDG 2024 (immaterial).",
+ "what": "Choose one alleged defect: common-scale down-quark bridge, exact Koide pair, E-centre interpolation, or neutrino mixing. Read the current primary source and actual registered primitive boundary, independently implement the comparison and state mass scheme, input covariance and statistical interpretation. Verify latest experimental inputs from primary publications. Do not copy the campaign's quoted significance, declare a universal exclusion, or interpret an author table as an owner adoption. Owner-requested research transfer after landing review. The source is an unlanded hypothesis, not authority: fetch the named author branch, verify the frozen Git SHA and exact path/hash from probes/work/review-science-20260929/SOURCE_MAP.json. Fetch current origin/main and prefer its corrected bounded sources; read the actual axiom memo and primitive grants before premise judgments. Check related tasks, completed attempts, referee reports and active claims before choosing ONE distinct obligation. Read the complete argument, actual inputs and paired code for that obligation. Known review corrections are background, not a new HIT. Deliver numbered PROVED/CHECKED/ASSUMED steps in ATTEMPT.md, a self-contained check.py with disjoint machinery, and RECOVERY_STATUS.json with hashes, first unresolved step and remaining obligations. Prove finite claims exactly where possible; failed search is not a no-go and negative claims require N1-N8 before promotion. Commit the checker before run_probe.py; print SUMMARY with the actual result and HIT only for a demonstrated new result or defect. Finish through claim.py and ordinary cross-model confirmation. Use the existing maximum-thinking J campaign; do not spawn agents, start workers, change budgets, create PRs or edit scientific/audit authority.",
+ "stdout_sha256": "5a785f855eb4de7e5cb1594ccc34aa052545bf33ec8b625df4e8f84d7a748230",
+ "stdout_tail": "pole) is O(alpha^2)\nPASS E8 [C] sign: the two O(alpha^2) pieces have opposite sign; net ln(x_own/x_pole) is negative (-1.0e-5 .. -1.2e-5) | -1.06e-5\n   exact pair vs own-scale-converted data: z_x=918.48, z_w=1.05 ; truncation allowance on ln x: 8.84e-7 (39.7 sigma_R)\nPASS E9 [C] in the own-scale scheme the exact pair's miss of m_mu/m_e is about 2.1e-5 and exceeds 20x the truncation allowance | miss=2.043e-5, allowance=8.84e-7\nPASS E9b [C] robustness: even with every neglected piece inflated tenfold (allowance 10x), the own-scale miss exceeds it by >2x | miss/(10*allowance)=2.31\nPASS E10 [C] tau-direction in the own-scale scheme stays consistent (|z_w|<2) | 1.05\n   required scheme shift of ln(m_mu/m_e) pole->scheme for the exact pair: 9.8335e-6 ; pole-scheme is off by it; own-scale is off by 2.0434e-5\nPASS E11 [C] required shift is positive (+9.8e-6) while both computed O(alpha^2) own-scale pieces net negative\nTOTAL: PASS=35 FAIL=0\nSUMMARY: With exact interval/symbolic algebra and a covariance-complete log-basis fit, the exact Koide pair (1/2,2/9) misses pole-mass m_mu/m_e by 9.8e-6 (z=442 with the CODATA ratio error, about 450 with quadrature errors; all tau-mass choices), the miss is a scheme-sized O((alpha/pi)^2) quantity, and a reconstructed O(alpha^2) own-scale MSbar map moves m_mu/m_e the wrong way (miss grows to about 2e-5), so neither pole nor own-scale MSbar masses rescue the exact pair, and a fixed-order common-mu MSbar map moves Q by 1.15e-3 (500x the pole offset).\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-kf091",
+  "at_utc": "20261026T020641Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

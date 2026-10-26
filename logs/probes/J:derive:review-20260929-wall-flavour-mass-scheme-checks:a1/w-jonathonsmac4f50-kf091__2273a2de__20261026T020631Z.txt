@@ -1,0 +1,47 @@
+PASS A1 [P] sum of the three roots is exactly 3 for every theta (sympy)
+PASS A2 [P] sum of squared roots is exactly 6 for every theta (sympy); hence Q=6/9=2/3 phase-blind | S2=6
+PASS A3 [P] general family: Q=(1+2r)/3 (sympy), so r=1/2 <=> Q=2/3 | 2*r/3 + 1/3
+PASS B1 [P] at delta=2/9 all three roots are strictly positive (interval) | vE=[0.0403499082192073732687247792520506526266019787, 0.0403499082192073732687247792520506526266019787] vM=[0.58021192014753721473991637719648207227441866, 0.58021192014753721473991637719648207227441866] vT=[2.37943817163325541199135884355146727509902528, 2.37943817163325541199135884355146727509902528]
+PASS B2 [P] ordering electron<muon<tau is rigorous (intervals disjoint)
+PASS B3 [P] x_pred=m_mu/m_e of the exact pair enclosed in [206.7703159, 206.7703160] (interval, 40 digits) | x_pred=[206.770315972729388612550339317775077462237952, 206.770315972729388612550339317775077462237952] width [2.17760328489828760851208443520421011815907794e-36, 2.17760328489828760851208443520421011815907794e-36]
+PASS B4 [P] y_pred=m_tau/m_mu of the exact pair enclosed to width <1e-30 (interval) | y_pred=[16.8180467333775170565339113255607246534398196, 16.8180467333775170565339113255607246534398196]
+PASS B5 [P] d ln x/d delta > 0 on all of [0.20,0.24] (interval); lower bound | [36.5273772206008095863801814597726565865263681, 36.5273772206008095863801814597726565865263681]
+PASS B6 [P] x(0.20)<206.768 and x(0.24)>206.77: with B5 the delta fitting any m_mu/m_e in that range is unique | bracket
+PASS C0 [D] repo-labelled 'PDG2024' m_e differs from CODATA-2022 m_e by 6.9e-10 MeV (1.35e-9 relative)
+PASS C1 [D] ratio from the repo-labelled pair vs CODATA-2022 ratio differ by <0.1 sigma_R | R_repo=206.768282988 (sigma 4.5e-6)
+   [current] z_x=442.014  z_w=0.6108  chi2(2 dof, scale profiled)=1.9538e+5
+   [tau=BelleII] z_x=442.014  z_w=-0.7722  chi2(2 dof, scale profiled)=1.9538e+5
+   [tau=BESIII] z_x=442.014  z_w=0.4238  chi2(2 dof, scale profiled)=1.9538e+5
+PASS C2 [C] scipy MeV-space correlated-covariance chi2 agrees with closed-form log-basis chi2 to 1% (linearisation) | scipy=1.9538e+05 closed=195376.0
+PASS C3 [C] corr(ln m_mu/m_e, ln m_tau/m_mu) is below 1e-3 in magnitude (shared m_mu) | -0.000439
+PASS C4 [C] z_x > 400 for every tau-mass choice (the miss is a statement about m_mu/m_e alone) | 442.01, 442.01, 442.01
+PASS C5 [C] y-direction (m_tau/m_e) is consistent: |z_w|<1.5 for every tau-mass choice | 0.611, -0.772, 0.424
+PASS C6 [C] chi2 of the pair equals z_x^2 to within 0.1 percent for the current set
+   best-scale deviations (e, mu, tau): -1.18e-15, 9.83e-6, 3.09e-5
+PASS C7b [C] ...with the scale fitted, each mass is reproduced to better than 1e-4 relative
+PASS D1 [P/C] delta fitting m_mu/m_e at r=1/2 is 2/9 - 1.75e-7 (and the exact bracket from B6 is unique) | -1.75149e-7
+PASS D2 [C] sigma_delta from m_mu/m_e is about 4e-10 and 2/9 lies about 430-450 sigma from the fit | sigma=3.96e-10, z=442.01
+PASS D3 [C] at delta=2/9 the r fitting m_mu/m_e is r* (offset from 1/2 printed); z_w(r*) acceptable | r*-1/2=-2.1322e-7, z_w(r*)=0.406
+   2-sigma window of r along the m_mu/m_e arc (from m_tau): [0.499981452, 0.500011938]
+PASS D4 [C] the m_mu/m_e arc passes through the 2-sigma tau window at both r=1/2 and delta=2/9 ...
+PASS D5 [C] ... but the two crossings are different points: separation in delta at r=1/2 is 1.75e-7 (transverse), i.e. the pair needs r and delta from different points of the arc
+   ln(x_pred/x_obs)=9.8335e-6 ; theory floor sigma_th on ln(m_mu/m_e) for z_eff<=2: 4.917e-6 ; (alpha/pi)^2=5.395e-6
+PASS D6 [C] the miss is 9.8e-6 relative, a floor of about 4.9e-6 would make 2 sigma; ratio floor/(alpha/pi)^2 printed (~0.9) | floor/(alpha/pi)^2=0.9113
+PASS E1 [P] one-loop fixed-alpha conversion: eps_1-eps_2 = (3a/2) ln(m1/m2), independent of mu (sympy) | log((m1/m2)**(3*a/2))
+PASS E2 [P] first-order weights of d ln Q sum to zero (scale invariance), so the common eps cancels
+   first-order common-mu MSbar shift of Q: dQ=0.0011497 ; of ln(m_mu/m_e): 0.018577
+PASS E3 [C] first-order shift of Q is mu-independent, about 1.1e-3 to 1.3e-3, >100x |Q_pole-2/3| | Q_pole-2/3=-2.203e-6
+PASS E4 [C] exponentiated conversion at mu=1.8,3,5 GeV stays within 5 percent of the mu-independent first-order dQ | 0.001159, 0.001161, 0.001163
+PASS E5 [T] reconstruction reproduces the published QCD numbers 13.4434 (N_L=0) and 13.4434-5*1.0414=8.2364 (N_L=5) | 13.4434, 8.236562
+PASS E6 [T] QED (C_F=T_R=1, C_A=0): N_L-independent coefficient c0 and per-light-lepton slope = -(71/96+pi^2/12) | c0=0.16591305, slope=-1.562050367
+   own-scale MSbar: ln(x_own/x_pole)=-1.06e-5 (running-coupling piece -1.918e-5, N_L piece 8.428e-6) ; ln(w_own/w_pole)=-2.203e-5
+PASS E7 [C] the O(alpha) own-scale conversion is flavour-universal (cancels in ratios) so ln(x_own/x_pole) is O(alpha^2)
+PASS E8 [C] sign: the two O(alpha^2) pieces have opposite sign; net ln(x_own/x_pole) is negative (-1.0e-5 .. -1.2e-5) | -1.06e-5
+   exact pair vs own-scale-converted data: z_x=918.48, z_w=1.05 ; truncation allowance on ln x: 8.84e-7 (39.7 sigma_R)
+PASS E9 [C] in the own-scale scheme the exact pair's miss of m_mu/m_e is about 2.1e-5 and exceeds 20x the truncation allowance | miss=2.043e-5, allowance=8.84e-7
+PASS E9b [C] robustness: even with every neglected piece inflated tenfold (allowance 10x), the own-scale miss exceeds it by >2x | miss/(10*allowance)=2.31
+PASS E10 [C] tau-direction in the own-scale scheme stays consistent (|z_w|<2) | 1.05
+   required scheme shift of ln(m_mu/m_e) pole->scheme for the exact pair: 9.8335e-6 ; pole-scheme is off by it; own-scale is off by 2.0434e-5
+PASS E11 [C] required shift is positive (+9.8e-6) while both computed O(alpha^2) own-scale pieces net negative
+TOTAL: PASS=35 FAIL=0
+SUMMARY: With exact interval/symbolic algebra and a covariance-complete log-basis fit, the exact Koide pair (1/2,2/9) misses pole-mass m_mu/m_e by 9.8e-6 (z=442 with the CODATA ratio error, about 450 with quadrature errors; all tau-mass choices), the miss is a scheme-sized O((alpha/pi)^2) quantity, and a reconstructed O(alpha^2) own-scale MSbar map moves m_mu/m_e the wrong way (miss grows to about 2e-5), so neither pole nor own-scale MSbar masses rescue the exact pair, and a fixed-order common-mu MSbar map moves Q by 1.15e-3 (500x the pole offset).

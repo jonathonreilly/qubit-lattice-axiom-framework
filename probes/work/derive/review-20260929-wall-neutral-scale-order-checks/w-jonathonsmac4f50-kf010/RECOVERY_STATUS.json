@@ -1,0 +1,78 @@
+{
+  "task": "J:derive:review-20260929-wall-neutral-scale-order-checks:a1",
+  "source_branch": "claude/toe-walls-20260929",
+  "source_head": "4bd42747e57c4d604f66a63eed2db099ea38af4e",
+  "source_head_verified": true,
+  "source_objects": [
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/SUMMARY.md",
+      "sha256": "3c0b6cf9ab651069fef19ba4c020483b8c402a5a525047d9a6521b4f132e10d0",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/WALLS.md",
+      "sha256": "23a9f40130f5104ca48a15d7a14cfb1400df156faf08e01abdceb653010b7494",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/attacks/T21.md",
+      "sha256": "0cd82dc7873303a9a4fd049721005971d6e6dd08058f879fcc6434f90664dd44",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/kills/T21.md",
+      "sha256": "85e93634bfd6f3220f4d8d3c188d0c1a025f2c3287cc040bcea343d084045036",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/attacks/T80.md",
+      "sha256": "61200828b5c41fc0a4b8403d511d76b95f000fca286af4746af5547a8b695fa7",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/kills/T80.md",
+      "sha256": "8efec51fe10722d15d4e929255dbc4749359e198e84b4ecbfa6d8a7be794eec3",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/attacks/T81.md",
+      "sha256": "73d43b67daac5e340c5184b53cac6b0e2e1602c4dc5fdd6a49fbc2fb4dd15a7c",
+      "verified": true
+    },
+    {
+      "path": ".claude/science/walls/toe-walls-20260929/kills/T81.md",
+      "sha256": "0a1df406a349106663646aa47bd8157a9b4e48b4c9023d1b38f2690fc5224443",
+      "verified": true
+    }
+  ],
+  "main_commit_read": "a77a3449c91a753b06ce2a63876cd460b62cb4cf",
+  "main_files_read": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    }
+  ],
+  "check_py_sha256": "028733221e886e3cc88c9beff0e4661cc0959e6e38f1d3bf1a63837a61c0e43d",
+  "check_result": "TOTAL: PASS=42 FAIL=0",
+  "first_unresolved_step": "ATTEMPT.md step 9 with the contentful extension of step 5: no infrared/reflection-positive bound for the supplied six-content gas below 9/62500, and no argument that a covariant permanent-record formation rule reaches the Gibbs measure (premise EQUIL). The 0.412 value itself is a numerical Ising K_c, unproved, inside the proved bracket (0.36388, 25/49).",
+  "remaining_obligations": [
+    "narrower rigorous bracket for 3D Ising K_c (no proof of 0.2216546 expected)",
+    "reflection positivity / infrared bound for the six-content vacancy gas below the neutral scale",
+    "canonical (fixed density) ensemble",
+    "pointwise framed/plus-boundary statement for 1.4e-4 < g < 0.36388",
+    "equilibration premise EQUIL"
+  ],
+  "imported_named_theorems_not_reproved": [
+    "Froehlich-Simon-Spencer 1976 Gaussian domination",
+    "Simon 1980 / Lieb 1980 inequality",
+    "Watson integral closed form (Glasser-Zucker); checked numerically"
+  ],
+  "not_attempted": [
+    "T80 neutral loop-gas/stiffness claims",
+    "T81 six-axis p thresholds"
+  ]
+}

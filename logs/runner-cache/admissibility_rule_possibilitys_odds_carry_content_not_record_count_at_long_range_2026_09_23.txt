@@ -4,7 +4,7 @@ runner_sha256: 4979656a5eb40b3e83bcf1acf4b03b753069eaff4f141baf2ecad78e7e0ba252
 input_fingerprint_sha256: 6723e564ae507174eb2a7b001a462e533dbcb8e72b7b247606bf256d6acbb9e6
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 13.40
+elapsed_sec: 42.44
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

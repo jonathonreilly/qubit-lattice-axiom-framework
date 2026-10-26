@@ -1,7 +1,7 @@
 # SM anomaly consistency on a supplied matter-content surface
 
 **Date:** 2026-05-03
-**Type:** positive_theorem
+**Type:** bounded_theorem
 **Claim type:** bounded_theorem — synthesis-aggregator anomaly-cancellation theorem (assembles five exact perturbative anomaly trace identities plus the nonperturbative SU(2) Witten Z_2 parity into a single closure statement on the supplied Cl(3)/Z³ left-handed-frame matter content)
 **Claim scope:** the five perturbative anomaly traces `(SU(3)^3, SU(2)^2 U(1)_Y, SU(3)^2 U(1)_Y, grav^2 U(1)_Y, U(1)_Y^3)` and the nonperturbative `SU(2)` Witten Z_2 parity all vanish exactly on the supplied Cl(3)/Z³ left-handed-frame Standard-Model fermion content with the supplied `N_c = 3` graph-first colour, supplied native `SU(2)_L` gauge structure, supplied three-generation structure, supplied left-handed `Q_L`, `L_L` content, and supplied one-generation right-handed completion (`u_R`, `d_R`, `e_R`, `nu_R`). These cancellations are exact-Fraction or integer-parity statements; none uses an observed mass, mixing angle, or cross-section.
 **Status:** awaiting independent audit. Under the scope-aware classification framework, ratified status is computed by the audit pipeline from audit-lane data; no author-side retained tier is asserted in source.
@@ -313,7 +313,7 @@ The runner uses `fractions.Fraction` for matter traces and SymPy for the exact P
 ## 6. Honest claim-status
 
 ```yaml
-proposed_claim_type: positive_theorem
+proposed_claim_type: bounded_theorem
 status_authority: independent audit lane only
 audit_required_before_effective_retained: true
 actual_current_surface_status: synthesis-aggregator anomaly-cancellation theorem assembling five exact perturbative anomaly trace identities plus the SU(2) Witten Z_2 parity into a single closure statement on the supplied Cl(3)/Z³ LH-frame matter content

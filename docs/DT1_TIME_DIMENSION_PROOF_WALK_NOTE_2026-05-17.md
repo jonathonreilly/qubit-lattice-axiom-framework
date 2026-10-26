@@ -8,12 +8,21 @@
 **Type:** fix-record meta-note (records what was patched; no new science content).
 **Status authority:** independent audit lane only. This note does not set or predict the parent's audit outcome.
 
+**Superseded record (2026-10-26).** On 2026-10-21 the parent was rewritten
+as a conditional arithmetic note. It withdraws the former full-chain claim
+that the `d_t = 1` proof path has no lattice-action or staggered-phase
+dependency, and the Step 2-4 table rows patched below no longer exist. This
+record is historical: it documents the May 17 routing (F-C), tier-descriptor
+(F-A) and admission-inheritance (F-B) edits to that earlier revision, which
+remains recoverable at commit `f24d17d97d372df977476e4a69674577f31af575`. The
+paired runner now checks only the corrected parent's premise boundaries.
+
 ## 1. Source character
 
 `DT1_TIME_DIMENSION_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-08.md`
-is a **bounded proof-walk** that establishes lattice-independence of the
+was, in its May revision, a **bounded proof-walk** asserting lattice-independence of the
 `d_t = 1` forcing chain inside the cited
-`ANOMALY_FORCES_TIME_THEOREM.md`. It exhibits, step-by-step, that the
+`ANOMALY_FORCES_TIME_THEOREM.md`. It argued, step-by-step, that the
 load-bearing inputs at each step of the parent's argument are
 algebraic/structural (multiplicities, Dynkin indices, Clifford parity,
 single-clock codimension-1 evolution) and that none of them is a
@@ -111,8 +120,9 @@ framing-fix decomposition.
 
 **Fix:** the Step 4 row now explicitly links to the upstream F-B
 framing-fix and labels itself as the inherited branch. The proof-walk's
-own claim is unchanged: it still asserts lattice-independence of the
-entire `d_t = 1` chain (both branches) modulo the cited authorities.
+own claim was unchanged by this fix: it then still asserted
+lattice-independence of the entire `d_t = 1` chain (both branches) modulo
+the cited authorities. The 2026-10-21 rewrite withdrew that claim.
 
 ## 3. What this fix does NOT do
 
@@ -127,47 +137,26 @@ entire `d_t = 1` chain (both branches) modulo the cited authorities.
   any other source theorem note.
 - It does **not** set or predict an audit outcome.
 
-## 4. Suggested auditor verdict
+## 4. Audit boundary
 
-`audited_conditional` (bounded proof-walk retained; effective tier
-inherits the weaker of the cited companions' tiers, which are both
-currently `unaudited`).
-
-The corrected note:
-
-- routes the chirality-grading citation to the companion that actually
-  derives it;
-- gives honest tier descriptors for the cited companions;
-- makes the upstream-admission inheritance from
-  `ANOMALY_FORCES_TIME_THEOREM` explicit.
-
-Once the cited companions audit through, the proof-walk's effective
-tier rises accordingly without further surgical edits.
+This record suggests no audit verdict. The independent audit lane alone
+sets status for the parent and for the cited companions.
 
 ## 5. Verification
 
 Paired runner:
 `scripts/frontier_dt1_time_dimension_proof_walk_downstream_fix.py`
 
-Programmatically verifies:
-
-- **F-C:** Step 2 table row and Dependencies list now cite
-  `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07`; the
-  stale `CPT_EXACT_NOTE` routing is no longer the sole/primary
-  chirality-grading citation; `CPT_EXACT_NOTE` contains 0 `γ_5`
-  occurrences; the KS companion contains the `{ε, D_staggered} = 0`
-  anticommutator derivation.
-- **F-A:** stale `proposed_retained` / `audit-pending` descriptors
-  retired for the two cited companions; `unaudited` descriptors
-  appear; the 2026-05-17 corrective wording is present.
-- **F-B:** Step 4 row of the proof-walk table now references the
-  upstream `F-B` framing-fix note and labels itself as the
-  inherited (admission (iv)) branch; the derived-branch label appears
-  for Step 3.
-- **Structural invariants:** `bounded_theorem` claim type unchanged;
-  proof-walk table still names Steps 1-5 with the same step labels;
-  the "load-bearing inputs" list is unchanged in scope; the verdict
-  wording is preserved.
+Since the 2026-10-21 parent rewrite this runner is a documentary scope
+guard on the corrected parent. It checks that the parent states its
+supplied spatial dimension, supplied clock cap and irreducible
+reconstruction restriction, the doubled-carrier counterexample, the
+Kawamoto-Smit source with its supplied premises, the withdrawal of the
+full-chain lattice-independence claim, the open emergent-dynamics gate,
+the primary arithmetic runner and the recovery revision. It no longer
+checks the May table-row edits described above, which the rewrite
+superseded. Its checks are text-presence checks, not mathematical or
+status evidence.
 
 Cached output: `logs/runner-cache/frontier_dt1_time_dimension_proof_walk_downstream_fix.txt`.
 

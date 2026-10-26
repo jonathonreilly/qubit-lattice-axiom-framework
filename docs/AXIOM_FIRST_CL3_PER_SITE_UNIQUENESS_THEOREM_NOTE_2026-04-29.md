@@ -409,8 +409,9 @@ of the staggered-Dirac realization gate.
 
 - Real / quaternionic uniqueness statements. The note works over
   the complex field, matching the package's complex-amplitude
-  structure (derived in `docs/AXIOM_REDUCTION_NOTE.md` from the
-  unitarity axiom).
+  structure (supplied by the current Qubit axiom's `M_2(C)`
+  presentation; the older `docs/AXIOM_REDUCTION_NOTE.md` derivation of
+  complex amplitudes from unitarity has been withdrawn).
 - Derivation of the chirality convention from physical input. The
   package convention `γ_i = σ_i` (positive chirality) is adopted as
   a normalisation choice consistent with the standard Pauli sign

@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_fs_rotation_exchange_record_axiom_invariance_2026_06_04.py
 runner_sha256: 5bc03b46025ef5e22857d0f215108eafc6b4e586a875c610f87ee5b095def19a
-input_fingerprint_sha256: f1e973f5dba9f18d10411df9dfaf9bb60c8d5e7af475f7653c0592c700749c8f
-timeout_sec: 300
+input_fingerprint_sha256: 38bb285f43ee799e3371a337d3f33645f4a279667c2147e7eb7716161926f29a
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.33
+elapsed_sec: 3.89
 status: ok
 ----- stdout -----
 FS Rotation-Exchange Discrete-Insufficiency Record-Axiom Invariance Companion Runner
 ========================================================================
-Repo root: /Users/jonreilly/Documents/Codex/grok-review-20261021/batch09-worktree
-Parent note: /Users/jonreilly/Documents/Codex/grok-review-20261021/batch09-worktree/docs/FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_NARROW_NO_GO_NOTE_2026-05-28.md
+Repo root: /home/user/qubit-lattice-axiom-framework/.claude/worktrees/agent-a24cc4b344c329aca
+Parent note: /home/user/qubit-lattice-axiom-framework/.claude/worktrees/agent-a24cc4b344c329aca/docs/FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_NARROW_NO_GO_NOTE_2026-05-28.md
 Companion source note: docs/FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_RECORD_AXIOM_INVARIANCE_COMPANION_NOTE_2026-06-04.md
 
 Scope: supplied finite matrices and separately labeled documentary guards.
@@ -105,7 +105,7 @@ BLOCK 9: <hcb gens> = <JW gens> = M_4(C) (complex dim 16)
 ========================================================================
 BLOCK 10: Parent note Record-axiom usage scan (load-bearing)
 ========================================================================
-  PASS parent_note_present :: /Users/jonreilly/Documents/Codex/grok-review-20261021/batch09-worktree/docs/FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_NARROW_NO_GO_NOTE_2026-05-28.md
+  PASS parent_note_present :: /home/user/qubit-lattice-axiom-framework/.claude/worktrees/agent-a24cc4b344c329aca/docs/FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_NARROW_NO_GO_NOTE_2026-05-28.md
   PASS DOCUMENTARY_current_finite_sections_found
   PASS DOCUMENTARY_scope_representation assumption
   PASS DOCUMENTARY_scope_scalar algebra
@@ -160,8 +160,8 @@ BLOCK 11: Repeated finite calculation, not independent evidence
 ========================================================================
 BLOCK 12: DOCUMENTARY historical May20/June4 memo tokens
 ========================================================================
-  PASS old_memo_present :: /Users/jonreilly/Documents/Codex/grok-review-20261021/batch09-worktree/docs/MINIMAL_AXIOMS_2026-05-20.md
-  PASS new_memo_present :: /Users/jonreilly/Documents/Codex/grok-review-20261021/batch09-worktree/docs/MINIMAL_AXIOMS_2026-06-04.md
+  PASS old_memo_present :: /home/user/qubit-lattice-axiom-framework/.claude/worktrees/agent-a24cc4b344c329aca/docs/MINIMAL_AXIOMS_2026-05-20.md
+  PASS new_memo_present :: /home/user/qubit-lattice-axiom-framework/.claude/worktrees/agent-a24cc4b344c329aca/docs/MINIMAL_AXIOMS_2026-06-04.md
   PASS old_memo_has_qubit_content :: historical qubit local-algebra content present
   PASS old_memo_has_Z3_lattice_content :: historical Z^3 lattice content present
   PASS new_memo_has_Quantum_content :: Quantum = one-qubit / M_2(C) / Cl(3,0) preserved

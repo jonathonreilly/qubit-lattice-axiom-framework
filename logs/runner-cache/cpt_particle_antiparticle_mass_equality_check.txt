@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cpt_particle_antiparticle_mass_equality_check.py
 runner_sha256: 5a3b1aa4bb01ffbf567083e9640114c1e0db6e11186a348388eee0a3f11ff33f
-timeout_sec: 300
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.22
 status: ok
 ----- stdout -----
 ========================================================================

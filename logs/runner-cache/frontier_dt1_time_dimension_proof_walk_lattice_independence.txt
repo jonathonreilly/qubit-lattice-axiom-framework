@@ -2,9 +2,9 @@
 runner: scripts/frontier_dt1_time_dimension_proof_walk_lattice_independence.py
 runner_sha256: 78d091aed423c666a17a6f9ba8361bc1fd3d46e658cb5b371f49706c577768a7
 input_fingerprint_sha256: a0d5df17efbcdbdd1d24f0c750ee5fe9a6cb94748ba3dc9177153b24461fd78c
-timeout_sec: 300
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.06
 status: ok
 ----- stdout -----
 frontier_dt1_time_dimension_proof_walk_lattice_independence.py

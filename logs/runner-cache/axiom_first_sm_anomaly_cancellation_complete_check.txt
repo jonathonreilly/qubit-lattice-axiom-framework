@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_sm_anomaly_cancellation_complete_check.py
 runner_sha256: 7044360ef969178da85e53cdab65e331ca921576c6deadf5f3237454fefd54a0
-timeout_sec: 300
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.24
+elapsed_sec: 0.67
 status: ok
 ----- stdout -----
 ================================================================================

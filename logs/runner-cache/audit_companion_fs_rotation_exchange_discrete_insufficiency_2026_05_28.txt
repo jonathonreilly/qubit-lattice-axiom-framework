@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_fs_rotation_exchange_discrete_insufficiency_2026_05_28.py
 runner_sha256: cfe698b2f0529daefd983d92b685de39168877e858f5fc5d26f38255682642b9
-timeout_sec: 300
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.32
+elapsed_sec: 3.79
 status: ok
 ----- stdout -----
 ==============================================================================

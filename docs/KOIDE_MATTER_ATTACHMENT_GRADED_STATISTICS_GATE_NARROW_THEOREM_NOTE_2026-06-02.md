@@ -102,8 +102,9 @@ cited bounded authority: `2O` acts as `-1` on the faithful 2-dim irrep), but it
 is decoupled from the cross-site exchange operator
 (`fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28`,
 cited no-go authority: the on-site sign and the two-site exchange are decoupled
-on the discrete lattice; the rotation -> exchange Finkelstein-Rubinstein
-bridge is continuum-only). So the four single-site levers all miss the same
+on the discrete lattice; a rotation -> exchange (Finkelstein-Rubinstein-type)
+bridge would need configuration-space exchange data that the on-site sign
+does not supply). So the four single-site levers all miss the same
 cross-site target.
 
 ## Disposition

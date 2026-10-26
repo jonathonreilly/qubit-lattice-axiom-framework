@@ -1,7 +1,7 @@
 # Gravity source index and open interpretation obligations
 
 **Date:** historical ladder 2026-04-15; scope correction 2026-10-21.
-**Claim type:** support/meta. This index establishes no theorem or audit grade.
+**Claim type:** meta. This support index establishes no theorem or audit grade.
 
 The ladder collects supplied Poisson, finite-rank, bilinear-action and Gaussian models. In the [discrete assembly source](UNIVERSAL_GR_DISCRETE_GLOBAL_CLOSURE_NOTE.md), the declared fresh evidence is one Lorentzian background and one chart overlap. Its lift, slice generator and wider atlas structure are imported. Algebraic overlap compatibility does not identify the family with physical Einstein or Regge dynamics.
 

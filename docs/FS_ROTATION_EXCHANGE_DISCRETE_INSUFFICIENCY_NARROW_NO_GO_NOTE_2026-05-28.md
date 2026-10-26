@@ -30,6 +30,8 @@ Relevant alternatives include lattice emergent fermions in [Levin–Wen (2003)](
 
 Continuum spin-statistics theorems and Finkelstein–Rubinstein constructions have their own symmetry, configuration-space, field and quantization hypotheses. This note does not establish those hypotheses or claim that the several constructions are equivalent. A discrete set with its discrete topology has no nonconstant continuous paths; this fact alone does not rule out configuration spaces built using graph edges, histories, interpolation or emergent continuum dynamics. No literature-wide exhaustion claim is made.
 
+The pre-correction revision named two such open routes as its §7 paths: path 1, a lattice-native graph-braid `pi_1` of the discretized configuration space `UD_N` of tokens on the site graph; path 2, an independently supplied graded-locality principle, which a parity superselection rule alone does not provide (see above). Both remain open alternatives that need additional data. Neither is refuted or taken here.
+
 ## Negative-claim stress test
 
 - **N1 alternatives:** direct identification of −I₄ with P and generation of P by those two scalar elements are refuted by steps 1–2. Bare ladders are a concrete countermodel to sign-only forcing. Jordan–Wigner strings, lattice gauge/bosonization structure, and configuration-path/continuum constructions remain real alternatives requiring additional data; they are not refuted here.

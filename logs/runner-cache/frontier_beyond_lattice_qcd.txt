@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_beyond_lattice_qcd.py
 runner_sha256: 213fb7242ae8d4ee2a1c2c878b58cf5b296932903c90f9e7313c0458825249ab
-timeout_sec: 300
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 4.90
+elapsed_sec: 20.53
 status: ok
 ----- stdout -----
 ========================================================================
@@ -24,9 +24,9 @@ Runner surface: coupling f changes quantum propagation diagnostics.
 Grid: 32^3,  k=6.0,  mass_strength=8.0
 Source: (1, 16, 16),  Mass: (16, 20, 16)
 
-  Case A (free, f=0):        0.2s
-  Case C (with gravity):     2.0s
-  Case D (one feedback step):  2.4s
+  Case A (free, f=0):        0.6s
+  Case C (with gravity):     9.8s
+  Case D (one feedback step):  9.5s
 
   Measure 1: Y-centroid at detector plane (deflection)
     Free:            15.9925
@@ -66,24 +66,24 @@ Test: Sorkin three-slit parameter I_3 vanishes numerically.
   Slits at y = 7, 10, 13
   Barrier at x = 10
 
-  |I_3|_max       = 7.19e-09
-  |I_3|_rms       = 1.66e-09
-  |I_3|/P_total   = 1.62e-16
+  |I_3|_max       = 2.12e-09
+  |I_3|_rms       = 7.27e-10
+  |I_3|/P_total   = 4.78e-17
 
   Wavenumber sweep:
-    k=  2.0: |I_3|_max/P = 5.80e-17  [PASS]
-    k=  4.0: |I_3|_max/P = 1.62e-16  [PASS]
-    k=  6.0: |I_3|_max/P = 1.40e-16  [PASS]
-    k=  8.0: |I_3|_max/P = 8.41e-17  [PASS]
-    k= 10.0: |I_3|_max/P = 6.38e-17  [PASS]
-    k= 15.0: |I_3|_max/P = 1.56e-16  [PASS]
-    k= 20.0: |I_3|_max/P = 9.76e-17  [PASS]
+    k=  2.0: |I_3|_max/P = 9.04e-17  [PASS]
+    k=  4.0: |I_3|_max/P = 4.78e-17  [PASS]
+    k=  6.0: |I_3|_max/P = 1.85e-16  [PASS]
+    k=  8.0: |I_3|_max/P = 6.82e-17  [PASS]
+    k= 10.0: |I_3|_max/P = 7.72e-17  [PASS]
+    k= 15.0: |I_3|_max/P = 9.24e-17  [PASS]
+    k= 20.0: |I_3|_max/P = 3.77e-17  [PASS]
 
   Slit spacing sweep (k=6.0):
-    spacing=2: |I_3|_max/P = 1.83e-16  [PASS]
-    spacing=3: |I_3|_max/P = 1.40e-16  [PASS]
-    spacing=4: |I_3|_max/P = 1.36e-16  [PASS]
-    spacing=5: |I_3|_max/P = 1.27e-16  [PASS]
+    spacing=2: |I_3|_max/P = 1.69e-16  [PASS]
+    spacing=3: |I_3|_max/P = 1.85e-16  [PASS]
+    spacing=4: |I_3|_max/P = 7.80e-17  [PASS]
+    spacing=5: |I_3|_max/P = 9.47e-17  [PASS]
 
   CONTROL: Nonlinear (cubic) propagator => I_3 != 0
     Nonlinear: |I_3|_max/P = 1.61e-01  (should be >> 0)
@@ -120,7 +120,7 @@ Concrete answer to 'how is this different from lattice QCD?':
   2. The linear path-sum satisfies the Sorkin I_3 diagnostic.
      A full probability/readout theorem needs a separate bridge.
 
-Total runtime: 4.6s
+Total runtime: 20.0s
 
 ----- stderr -----
 

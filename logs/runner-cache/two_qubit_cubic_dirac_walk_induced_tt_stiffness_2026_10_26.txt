@@ -1,0 +1,75 @@
+===== runner cache v1 =====
+runner: scripts/two_qubit_cubic_dirac_walk_induced_tt_stiffness_2026_10_26.py
+runner_sha256: 438cb4bec24704c909b56e09467d6a7bc31977ef0cc9e37025883d68374f313b
+input_fingerprint_sha256: e1239c624636d0f8c0b7536ce1d2492cc91d0718f179250f82a4e2dbcd2a7392
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 189.14
+status: ok
+----- stdout -----
+== A. exact identities
+PASS [exact] EH normalisation T2g (h_xy): cell average of sqrt(gamma) R at O(h^2) = -(1/4) <(d h)^2>
+PASS [exact] EH normalisation T2g (h_xy): O(h) term integrates to zero
+PASS [exact] EH normalisation Eg (h_xx = -h_yy): cell average of sqrt(gamma) R at O(h^2) = -(1/4) <(d h)^2>
+PASS [exact] EH normalisation Eg (h_xx = -h_yy): O(h) term integrates to zero
+PASS [exact] half-density covariant Dirac operator = (1/2){alpha^a e_a^i, p_i} + O(h^2) for arbitrary symmetric h(x)
+PASS [exact] tr a1 = -R/3 for D^2 = -nabla^2 + R/4 (four spinor components)
+PASS [exact] Gamma_E = -(1/2) log det D^2 with proper-time cutoff gives 1/(16 pi G) = Lambda**2/(96*pi**2) = Lambda^2/(96 pi^2) per Dirac fermion
+PASS [exact] the walk's five Gammas are Hermitian anticommuting involutions
+PASS [exact] Tr[P+(a) O P-(b) O] = Tr[P-(a) O P+(b) O] = o^2 (1 + a.b) - 2 (a.o)(b.o)
+PASS [exact] rho(1-u) = 1 + u/3 + 2u^2/15 + 2u^3/35 + 8u^4/315 + O(u^5)
+PASS [exact] rho'(1-u) = -1/3 - 4u/15 - 6u^2/35 - 32u^3/315 + O(u^4)
+   continuum sharp cutoff: int dOmega F2 = -52*pi/105; c_G / Lambda^2 = 13/(840*pi**2)
+PASS [exact] continuum sharp-cutoff TT bubble: c_G = 13 Lambda^2/(840 pi^2) = (52/35) x the heat-kernel value
+== B. exact diagonalisation of k-chains vs the second-order formula (L = 6)
+   bstar theta=0.3 M1A: ED -17.031886210717 formula -17.031886257255 rel 2.7e-09
+PASS [numerical] bstar M1A L=6: exact-diagonalisation lambda^2 coefficient = second-order formula (rel < 1e-6)
+   bstar theta=0.3 M1B: ED -16.119437112216 formula -16.119437113848 rel 1.0e-10
+PASS [numerical] bstar M1B L=6: exact-diagonalisation lambda^2 coefficient = second-order formula (rel < 1e-6)
+   bstar theta=0.3 M2B: ED -3.892288463684 formula -3.892288509555 rel 1.2e-08
+PASS [numerical] bstar M2B L=6: exact-diagonalisation lambda^2 coefficient = second-order formula (rel < 1e-6)
+   bstar theta=0.3 M4A: ED -9.167950612602 formula -9.167950686879 rel 8.1e-09
+PASS [numerical] bstar M4A L=6: exact-diagonalisation lambda^2 coefficient = second-order formula (rel < 1e-6)
+   bstar theta=0.3 L2A: ED -0.531398908876 formula -0.531398976032 rel 1.3e-07
+PASS [numerical] bstar L2A L=6: exact-diagonalisation lambda^2 coefficient = second-order formula (rel < 1e-6)
+   gold theta=0.4 M1A: ED -21.360759763963 formula -21.360759749478 rel 6.8e-10
+PASS [numerical] gold M1A L=6: exact-diagonalisation lambda^2 coefficient = second-order formula (rel < 1e-6)
+== C. O(h) vertices of M1-M4 converge to the minimal-coupling vertex
+   M1: max |o/a - (1/2) s eps.p| = 1.25e-04 (a=0.02), 3.13e-05 (a=0.01); slope 2.00
+PASS [numerical] M1: (1/a) vertex -> continuum minimal-coupling vertex with error O(a^2) (slope 2.00)
+   M2: max |o/a - (1/2) s eps.p| = 5.87e-04 (a=0.02), 1.47e-04 (a=0.01); slope 2.00
+PASS [numerical] M2: (1/a) vertex -> continuum minimal-coupling vertex with error O(a^2) (slope 2.00)
+   M3: max |o/a - (1/2) s eps.p| = 3.20e-04 (a=0.02), 8.00e-05 (a=0.01); slope 2.00
+PASS [numerical] M3: (1/a) vertex -> continuum minimal-coupling vertex with error O(a^2) (slope 2.00)
+   M4: max |o/a - (1/2) s eps.p| = 1.55e-02 (a=0.02), 7.77e-03 (a=0.01); slope 1.00
+PASS [numerical] M4: (1/a) vertex -> continuum minimal-coupling vertex with error O(a^1) (slope 1.00)
+== D. Brillouin-zone TT stiffness coefficients (theta = 0)
+   b* M1 N64: zA 8.6101512e-03 zB 8.3076408e-03 fA 7.2418786e-03 fB 6.9339023e-03 dA 6.6489094e-03 dB 6.6489094e-03 gA 7.0825209e-03 gB 7.1060268e-03
+   b* M1 N96: zA 8.6101511e-03 zB 8.3076469e-03 fA 7.2418805e-03 fB 6.9339064e-03 dA 6.6489129e-03 dB 6.6489129e-03 gA 7.0825243e-03 gB 7.1060298e-03
+PASS [numerical] b* M1: two resolutions (N = 64/96 outer grid, finer inner rule) agree to rel 7.3e-07 < 1e-5
+   b* M1 cubic fit: A = 1.143378e-02, B = 5.484022e-03, C = 9.731517e-04; isotropic c_G = 7.3667286e-03
+PASS [numerical] b* M1: O_h cubic form fitted on z, (110), (111) predicts the generic (1,2,3) direction (rel 9.3e-15 < 2e-5)
+PASS [numerical] b* M1: (111) TT polarisations are degenerate (C3 symmetry)
+   b* M1: polarisation-summed stiffness spans 24.6% of 2 c_G^iso over z, (110), (111)
+PASS [numerical] b* M1: the induced TT stiffness is cubic-anisotropic (spread over directions > 10%)
+PASS [numerical] b* M1: c_G^iso = 7.366729e-03 reproduces the recorded production value 7.36673e-3 (same implementation; rel < 1e-5)
+   iso M1 N64: zA 9.214302e-03 zB 8.620243e-03 fA 6.693674e-03 fB 5.298249e-03 dA 5.233276e-03 dB 5.233276e-03; c_G^iso = 6.634503e-03
+PASS [numerical] iso M1: c_G^iso = 6.63450e-03 reproduces the recorded value 6.63451e-03 (rel < 1e-4)
+   bstar M2 N64: zA 3.795618e-03 zB 3.725089e-03 fA 3.594055e-03 fB 3.535440e-03 dA 3.500816e-03 dB 3.500816e-03; c_G^iso = 3.604195e-03
+PASS [numerical] bstar M2: c_G^iso = 3.60420e-03 reproduces the recorded value 3.60420e-03 (rel < 1e-4)
+   bstar M4 N64: zA 7.697497e-03 zB 1.023856e-02 fA 8.700093e-03 fB 1.063185e-02 dA 9.892851e-03 dB 9.892851e-03; c_G^iso = 9.524900e-03
+PASS [numerical] bstar M4: c_G^iso = 9.52490e-03 reproduces the recorded value 9.52490e-03 (rel < 1e-4)
+PASS [numerical] sign: c_G > 0 in every computed TT channel (M1 at b* and b_iso; M2, M4 at b*)
+PASS [numerical] non-uniqueness: couplings with the same continuum vertex give c_G^iso differing by a factor 2.64 > 2
+   plain midpoint rule zA: N=96 8.6114578e-03, N=128 8.6108861e-03, h^2-extrapolated 8.6101511e-03; partition-of-unity value 8.6101511e-03
+PASS [numerical] b* M1 zA: plain midpoint quadrature (different rule, h^2-extrapolated) agrees with the partition-of-unity value (rel 3.2e-09 < 1e-5)
+   heat-kernel-equivalent cutoff: Lambda_eff a = 2.6419 = 0.8410 pi
+PASS [numerical] b* M1: Lambda_eff/(pi/a) = 0.841 lies in the pre-declared window [0.1, 10]
+PASS [numerical] b* lapse L1 q||z: O(q^2) lapse stiffness vanishes (|c_N| = 1.1e-12 < 1e-10)
+PASS [numerical] b* lapse L1 q||d: O(q^2) lapse stiffness vanishes (|c_N| = 1.2e-12 < 1e-10)
+PASS [numerical] b* lapse L2 q||z: O(q^2) lapse stiffness vanishes (|c_N| = 9.1e-13 < 1e-10)
+PASS [numerical] b* lapse L2 q||d: O(q^2) lapse stiffness vanishes (|c_N| = 1.0e-12 < 1e-10)
+TOTAL: PASS=38 FAIL=0
+
+----- stderr -----
+

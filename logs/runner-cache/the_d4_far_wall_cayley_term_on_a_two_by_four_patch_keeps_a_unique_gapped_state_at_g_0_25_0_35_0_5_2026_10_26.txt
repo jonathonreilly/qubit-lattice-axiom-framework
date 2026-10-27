@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/the_d4_far_wall_cayley_term_on_a_two_by_four_patch_keeps_a_unique_gapped_state_at_g_0_25_0_35_0_5_2026_10_26.py
+runner_sha256: d9473dcc03a45cadb3a503a42fe235468c581c92d01283f3673c106ced52ccdf
+input_fingerprint_sha256: a0f16afc9cfd87399428853bdb47a842892fa969558158b5dd0eb204aeb67fa3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 43.47
+status: ok
+----- stdout -----
+d4-far-wall-2x4 runner; labels [T] exact, [F] finite live, [R] embedded Mac mini 2x4 values
+PASS A1 [T] Gamma_k Hermitian, square 1, anticommuting
+PASS A2 [T] frame: Gamma1 = sz x 1, Gamma2 = sx x 1, g5 = -(1 x tz); h_A = h_B | A <-> B exchange is exact, so Q -> -Q
+PASS B1 [T] T_k (c_r -> w c_{r+e}, w = -i on a wrap) commutes with the twisted hop; w = +i does not | max|[T,h]| = 0.0e+00 (w=-i), 2.83 (w=+i)
+PASS B2 [T] momentum basis diagonalises T_x, T_y in every Fock sector (2x2) | max off-diagonal 1.5e-15
+PASS B3 [T] same at 2x3 (Z2 x Z3 magnetic translations) | max off-diagonal 3.1e-15
+PASS C1 [F] 2x2 momentum-sector matvec = parent Kronecker matvec mapped through the basis | max err 1.1e-14
+PASS C2 [F] 2x2 min over momenta of e0 = parent full-sector e0, sectors (0,0),(0,1),(1,0) | max err 6.4e-14
+PASS C3 [F] 2x2 gap g=0.25 = parent 0.886 | gap 0.8861, GS (Q,par)=(0,0)
+PASS C3 [F] 2x2 gap g=0.35 = parent 2.557 | gap 2.5573, GS (Q,par)=(0,0)
+PASS C3 [F] 2x2 gap g=0.50 = parent 5.639 | gap 5.6393, GS (Q,par)=(0,0)
+PASS D1 [F] 2x3 gap g=0.25 = parent 0.290 (sectors (0,0),(1,0), all 6 momenta) | gap 0.2896, E0/site -4.188, 14 s
+PASS D1 [F] 2x3 gap g=0.35 = parent 3.182 (sectors (0,0),(1,0), all 6 momenta) | gap 3.1819, E0/site -5.340, 12 s
+PASS D1 [F] 2x3 gap g=0.50 = parent 5.599 (sectors (0,0),(1,0), all 6 momenta) | gap 5.5989, E0/site -7.296, 10 s
+PASS E1 [R] embedded 2x4 rows: 3 g x 4 (Q,par) x 8 momenta; every sector dim = live recount; sums = C(16,n) formula | GS sector 37,569,958 states (Q=0 total 300,546,630), 3 s
+PASS E2 [F] free 2x4 single-particle gap | Delta_free = 1.6080 (2x3: 1.7321)
+PASS E3 [R] g=0.25: unique GS in (Q,par,K)=(0,0,(0,0)); (1,0),(1,1) momentum spectra coincide | E0/site -4.219, e1-e0 in GS K 0.938, resid 2e-07
+PASS E4 [R] g=0.25 pre-set class: SURVIVING | gap 2x2 0.886 -> 2x3 0.290 -> 2x4 0.700; 2x4/2x3 = 2.414; 2x4/free = 0.44
+PASS E3 [R] g=0.35: unique GS in (Q,par,K)=(0,0,(0,0)); (1,0),(1,1) momentum spectra coincide | E0/site -5.342, e1-e0 in GS K 4.947, resid 5e-07
+PASS E4 [R] g=0.35 pre-set class: SURVIVING | gap 2x2 2.557 -> 2x3 3.182 -> 2x4 2.900; 2x4/2x3 = 0.911; 2x4/free = 1.80
+PASS E3 [R] g=0.50: unique GS in (Q,par,K)=(0,0,(0,0)); (1,0),(1,1) momentum spectra coincide | E0/site -7.296, e1-e0 in GS K 8.556, resid 5e-07
+PASS E4 [R] g=0.50 pre-set class: SURVIVING | gap 2x2 5.639 -> 2x3 5.599 -> 2x4 5.628; 2x4/2x3 = 1.005; 2x4/free = 3.50
+PASS E5 [R] verdict at these sizes: no fixed g closes; all three SURVIVING (ratio >= 0.9, unique GS) | g=0.25 gap is non-monotone (0.886, 0.290, 0.700): 2x3 sits on its own avoided crossing
+wall 43.4 s, peak RSS 171 MB
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

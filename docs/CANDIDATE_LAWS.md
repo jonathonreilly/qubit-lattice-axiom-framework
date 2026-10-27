@@ -343,6 +343,16 @@ Bosonized qubit sites (bosonized-sites, 2026-10-26, rethink r3; campaign files):
     - At g >= 0.35 it survives: 2.557 -> 3.182 at 0.35; 5.639 -> 5.599 at 0.5. Unique symmetric ground state.
     - Two width-2 patches only, so this is a trend. Decider: 2x4 on the Mac mini (fits 6 GB, hours).
     - Reading: the mirror gaps in a strong-coupling symmetric phase. The far-wall coupling must sit above the crossover. That is a phase condition, not a fitted number.
+  - **2x4 patch (d4-far-wall-2x4, PR #10113, 22/22, own re-run identical; Mac mini, 1 worker, peak 3.1 GB, 9.9 h):**
+
+    | g | gap 2x2 / 2x3 / 2x4 | 2x4 / 2x3 | 2x4 / free gap 1.608 |
+    |---|---|---|---|
+    | 0.25 | 0.886 / 0.290 / 0.700 | 2.41 | 0.44 (below free: closing by the parent's test; 2x3 sits on its own transition near g ~ 0.2435) |
+    | 0.35 | 2.557 / 3.182 / 2.900 | 0.911 | 1.80 |
+    | 0.5 | 5.639 / 5.599 / 5.628 | 1.005 | 3.50 |
+
+    - The ground state is unique and symmetric at every g.
+    - Verdict: the strong-coupling gapped phase holds through 2x4 for g >= 0.35. At g = 0.25 the result is inconclusive or closing.
 - **Predictions recomputed under this law (d4-predictions-recompute, PR #10110, 11/11, own re-run identical).**
   - Blocking keeps poles, so the matter dim-8 coefficient is -0.1185/16^n at rung n (body ray). The exact fixed point is relativistic (< 1e-8). Photon and graviton are unchanged (links are not zoomed).
   - Rung 0 / 1 / 2 / 3, at E* = hbar c/2L:

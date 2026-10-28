@@ -417,8 +417,10 @@ on scale n (cost ≍ η, allowed); the intermediate spikes cannot.**
 
 **Highest-value missing object, per this review: "lead decision D1's remainder bound for composite-co-closed
 (NC-Γ), which is written nowhere."**
-**>>> IT WAS WRITTEN CONCURRENTLY.** BFT_B session 9 §31's **Proposition NCR** is exactly that bound, in
-product form, PROVEN-HERE and exact. The reviewer could not see it (the two ran in parallel). So (NC-Γ)'s
+**>>> IT WAS WRITTEN CONCURRENTLY — but it is NOT the bound the review asked for.** BFT_B session 9 §31's
+**Proposition NCR** is an exact *identity* in product form. **[CORRECTED by REVIEW_BFT_B_S9_S10, which marks
+§36.5 (v)'s "REVIEW_BFT_A_S8's request is already answered" WRONG: an identity is not a bound. The lead
+repeated that claim; it is withdrawn.]** The reviewer could not see it (the two ran in parallel). So (NC-Γ)'s
 remainder IS written, and what remains is only its two factors — **(CO-fun)** and **(GT-sup)** — which are
 now BFT_B session 10's entire scope, commissioned with the review's exact spike data forwarded to it.
 
@@ -869,8 +871,11 @@ pinned compensation charge.
 
 **(NC-Γ) for Γ_E: COMPLETE at critical points; one scalar left off them. Theorem NCE (§36.5):**
 - **(i) PROVEN as an implication at every critical point of 𝔉_k**, m = 0, trivial background, **every gauge
-  fixing**, k,T-uniformly. Curvature half = Corollary COF-crit; residual half = session 9's Corollary RHT-V;
-  remainder vanishes by GT-split / FG (iii).
+  fixing**, ~~k,T-uniformly~~ **[CORRECTED by REVIEW_BFT_B_S9_S10: NOT k-uniform. Corollary COF-crit (§35.6)
+  is WRONG — it substitutes a per-level row bound for Theorem COF's ‖j‖_Pc = max_l L^{θ(k-l)}π_l(j_l),
+  which differ by L^{θ(k-1)}; the sharper route leaves ≈ 25(k-1). The lead banked the uniform form here and
+  in HANDOFF.md; both are corrected.]** Curvature half = Corollary COF-crit; residual half = session 9's
+  Corollary RHT-V; remainder vanishes by GT-split / FG (iii).
 - **(ii) Off the critical set both routes of §31.3 land on the same object:**
   D(S^E_0(S)) = I_χ^T D(S), so **the whole obstruction is the compensation charge Q_X = ⟨χ^5_X D(S)⟩ — one
   scalar per level-k box** — appearing twice, as the (P0) size of Γ_E^T D(S) and as the root charge of
@@ -1337,3 +1342,81 @@ feature of the problem rather than a coincidence of two estimates.*
    check. Both lanes were right about different columns; the one the proof uses is PLD's. HANDOFF corrected.*
 
 **Four downgrades recorded, one of them of the worker's own §19.4.**
+
+## REVIEW_BFT_B_S9_S10 — 101 KB, 27 findings. It REFUTES a claim the lead had already banked.
+
+### >>> THE REFUTATION: Corollary COF-crit (§35.6) is WRONG, so Theorem NCE (i) is NOT k-uniform
+Theorem COF is correct, but its RHS carries **‖j‖_Pc = max_l L^{θ(k-l)}π_l(j_l)**, and §35.6 substitutes the
+**per-level** row bound π_l(V_l) ≤ 2C_NC C_bch κ_+L²η² — which §29.4 l.3729/3735 and §19.4 l.2629 both call
+"uniform in l" — **as if it were that norm. They differ by L^{θ(k-1)}.** The sharper in-proof route
+(π_0(C(j)) ≤ Σ_l π_l(ĵ_l)) gives a factor (k-1); optimising θ ≈ 1/((k-1)lnL) gives **≈ 25(k-1)**.
+**Three independent records already said this:** lane A's binding [RBA2-fix] B3 (l.819-824, "the entire
+level-count loss sits in the level-0 image"); REVIEW_BFT_A_S8's S8-13 ("the level sum stops being geometric,
+and the factor k returns"); and **§36.5 (iv) ITSELF** ("the factor k … untouched") — **which contradicts
+§36.5 (i) two pages earlier.** The missing input has a name: lane A's **(SPD)/(W2)**, OPEN.
+**>>> The reviewer notes that SESSION24_RESULTS.md and HANDOFF.md "have already banked the k,T-uniform
+form." That is me, twice. Both corrected above and in HANDOFF §5, which now puts the factor k first.**
+*Lead's failure mode: session 10 asserted k,T-uniformity; three files already contradicted it, one of them
+the same section two pages later; I propagated it into the binding handoff without cross-checking the lane's
+own neighbouring text.*
+
+### What the reviewer could NOT break
+- **Lemma RT-cc: CONFIRMED, rebuilt from scratch.** Both suspected failure points are **absent**:
+  ev^{(0→l+1)T} is injective on the **whole** space (distinct roots → distinct level-0 sites), and the
+  cascade's consistency condition is **genuinely EQUIVALENT** to composite co-closedness, because the
+  total-zero half of D(S) ⟂ Λ_0 is automatic (Σ_z ev^T d*j_l = Σ_X d*j_l = 0). **The keystone holds.**
+- **Lemma FT, RHT-cc (K_f = 8.7377 verified), W0-use (checked line-by-line against BFT_A l.2465-2494),
+  SPLIT, DF-cc, COF-size, COF-res, MASSLESS, GT-split, GT-ell: CONFIRMED.** **ΓT-op (d)'s constant 20 is
+  verified and it DOES apply to Y^p_{*,0}** (its hypothesis class is "any level-0 1-form"). **Corollary
+  RHT-V's "for every gauge fixing" is exact and earned.**
+- **Session 10 beats session 9 on (CO-fun), cleanly, and there is NO circularity** — the lead's primed
+  attack vector comes back clean. **(CC-0) ⟺ ψ_{k-1} = 0 ⟺ r_{k-1} co-closed, which is exactly what W0's own
+  step 3 uses**, so it is the **right** hypothesis, not a convenient one. Theorem COF quantifies over
+  sources, is **non-vacuous without any critical point**, and assumes nothing BFT-0 must prove.
+- **Both FAILs handled correctly.** bb9's diagnosis is real (one expression, verified by diff) and **the fix
+  is *forced* by the criteria file's own pre-registered energy, not fitted**; bb9b tests the same thing; and
+  bb10c's C4(a) really is the inequality COF-size uses.
+
+### Other binding findings
+- **§31.1 *Reading* 2** ("λ's level-k-root part is TE's tent data") is **WRONG**, refuted by the same lane's
+  §36.1; **no erratum covers it.**
+- **(BFT-5_E) clause (c) is CONDITIONAL, not PROVEN** — it is recorded PROVEN at the background Z(V_k) via a
+  **trivial-background** lemma.
+- **§36.5 (v)'s "REVIEW_BFT_A_S8's request is already answered" is WRONG: an identity is not the bound that
+  review asked for.** *The lead repeated this claim in the ledger; withdrawn above.*
+- **The n² omission is NOT harmless in §31.3 (R2)** — the implication needs a third, unnamed input
+  n²‖D^⊥(S)‖_1.
+- **§36.2's "(GT-sup) is not a spike question" is NOT-VERIFIED:** it reduces to **(Y-sup^loc)**, which
+  demands max_own|Y^p_0| ≲ 1/n near p — **contradicted by the |z|^{-3} profile behind 𝒩(Y^p) ≍ n.**
+  *So (GT-sup) may be a spike-support question after all; forwarded to the (TENT-Q) worker, reversing my
+  earlier relay.*
+- **Provenance verified to the byte** (l.1-3569 = 409782 B exactly; §28's block 5259+119+80 = 5458,
+  confirming both in-place corrections). Two process issues: **bb10_criteria.md has birth = mod = 13:12:15**,
+  so "born 13:09:13, amendment appended" is **unsupported and the pre-amendment text is unrecoverable**; and
+  **bb10c is not labelled post-hoc.**
+
+### Part P — the lead's "could this check have failed?" lens, and it found a great deal
+Of **bb9b's 15 verdicts: 5 unforced, 4 tautological or forced.** **A3 is the literal transpose of the
+script's own definition Q = Qstr − dfun∘h** and therefore **cannot carry Lemma RT-cc (b)** — so §33.1's
+"A3 + A7 carry the funnel part" **fails**. **B0 has near-zero power** (any operator built from r_l is
+annihilated by Ξ — shown empirically; **B0 passed on the buggy energy**). B4 is forced.
+Of **bb10's 11: 3 unforced**, and **A4 — which the criteria file calls the "central test" — cannot fail if
+A3 passes.** bb10c's C4/C5 are session 10's **only** gates with power *and* a non-vacuous hypothesis, and
+**C4(b) failed.**
+**The funnel inside the ρ-recursion is tested NOWHERE, and no check reaches §35.6** — the very step now
+refuted. The reviewer explicitly does **not** hold session 11's abelian-vacuity finding against these checks
+(at the trivial background the chain maps *are* abelian), **but notes that (CC-0) at critical points rests
+entirely on Lemma CD (i), a nonabelian identity no lane-B check touches.**
+*Lead: this is the fourth and most productive application of the lens. It is now the standing first question
+for every check in this project.*
+
+**Exact re-derivations:** funnel kernel rebuilt from the definition (max|c| = 1/3, ℓ¹ row sum 4/3 ≤ 2, all
+links interior); K_f = 8.73768…; bb10c C4's B^ψ = (1792, 2116/3, 2440/9) and (916, 1240/3, 1564/9),
+B^ξ = 648/108; bb10 A8's 332 and 108 — **all matching the stored outputs to the last digit.**
+
+**Verdicts.** (Res-Hölder) at m = 0: **Theorem RHT-cc closed, unconditional, with no 𝔉_k-criticality**;
+**Corollary RHT-V closed only as the (H-inv+) *increment*, not as N_res ≤ C_Vη².** **Theorem NCE has content
+and is not circular, but not the claimed uniformity.**
+**Biggest live wall: the level-count factor k in the level-0 image of the non-co-closed plain rows** —
+**upstream of (TENT-Q), (NEUT-box) and (Y-sup^loc), all three of which could be granted and still leave
+≈ 25(k-1).**

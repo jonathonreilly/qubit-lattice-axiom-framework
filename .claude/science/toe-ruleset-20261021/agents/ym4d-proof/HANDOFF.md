@@ -92,9 +92,18 @@ CONST_T.md has everything after (★) in closed form; **at q = 8, C_T ≥ 1.27e1
 absorption exponent is a = q/(q-4), so a = 2 squares the one-step constant, costing 3.5e7). STAR_CONST.md
 was commissioned for exactly this; if it has landed, read it.
 
-**5. (TENT-Q) / (NEUT-box): one scalar per level-k box.** Off the critical set, the entire remaining
-obstruction to (NC-Γ) for Γ_E is the compensation charge ⟨χ⁵_X D(S)⟩. **(Y-sup^loc)** — the other factor —
-is a **lane-A linear-package item** now, not lane B's.
+**5. The level-count factor k, which is UPSTREAM of (TENT-Q), (NEUT-box) and (Y-sup^loc).**
+REVIEW_BFT_B_S9_S10 refutes **Corollary COF-crit (§35.6)**: it substitutes a per-level row bound for Theorem
+COF's ‖j‖_Pc = max_l L^{θ(k-l)}π_l(j_l), which differ by L^{θ(k-1)}, so **Theorem NCE (i) is NOT k-uniform**
+and the sharper route leaves **≈ 25(k-1)**. Three independent records agree (lane A's [RBA2-fix] B3,
+REVIEW_BFT_A_S8's S8-13, and **§36.5 (iv) contradicting §36.5 (i)**). The missing input is lane A's
+**(SPD)/(W2)**, OPEN. **All three of (TENT-Q), (NEUT-box) and (Y-sup^loc) could be granted and still leave
+≈ 25(k-1)** — so attack the factor k first. *An earlier version of this file banked the k,T-uniform form;
+that was the lead's error.*
+Below it: the compensation charge ⟨χ⁵_X D(S)⟩ ((TENT-Q)/(NEUT-box)), one scalar per level-k box; and
+**(Y-sup^loc)**, whose reduction from (GT-sup) the review marks **NOT-VERIFIED** (it demands
+max_own|Y^p_0| ≲ 1/n near p, contradicted by the |z|^{-3} profile behind 𝒩(Y^p) ≍ n), so **(GT-sup) may be a
+spike-support question after all.**
 
 **6. FLOW: (T-a1-M) and (T-b) are ONE wall** (the fine background-dependent inverse H_⊥(U)^{-1}), and
 **(T-c)** (plane-wave ↔ constant-Cartan-flux exchange) decides whether §104-§107 reaches the target at all.

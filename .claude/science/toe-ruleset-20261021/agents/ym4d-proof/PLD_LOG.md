@@ -91,3 +91,48 @@
   wording edits. Final PLD.md 211079 bytes, md5 35b33c8fb3702f9de47d0afbdb7edf9a.
 - Files written this session: PLD.md, PLD_LOG.md, checks/p5_criteria.md, checks/p5_pld.py, checks/p5_out.txt, checks/p5_err.txt,
   checks/p5_time.txt. Nothing else edited; no commits, PRs, pushes; no CL or axiom edits.
+
+## Session 6 (2026-10-28)
+- 12:05-12:28 UTC: read (read-only, nothing written) DRIVE_BRIEF, HANDOFF.md, PLD.md §16-§17, PLD_LOG.md, REVIEW_PLD_S4 (binding,
+  all), REVIEW_PLD_S3 l.320-380 (Arch-1/2/3, binding), HW.md §18.1-§19, §24.2-§24.3, §25, §30-§33, REVIEW_HW_S4 l.320-384 (E1-1,
+  X-1, E2-1, (CRC-1) verdict), RLARGE.md v3 l.386-404, l.86-96, l.490-495, plus greps for c_lcr / (LCR) / ε_1 / t_pr. An unwritten
+  exploratory pass chose the targets; the §18.2+ derivations existed only as an unwritten sketch when §18.0 was written.
+- **12:28:16 UTC (`date -u`): PRE-STATED (session 6) = §18.0 appended to PLD.md (with the session-6 input header above it),
+  statements only (T15 the two walls together, T16 status discipline, T17 check p6, T18 requests). It is the FIRST edit of this
+  session: before any session-6 derivation, before checks/p6_criteria.md and before any check. File stat BEFORE the append:
+  211079 bytes, 1966 lines, md5 35b33c8fb3702f9de47d0afbdb7edf9a, mtime 2026-10-28 08:03:19 local (= PLD_LOG's session-5 closing
+  stat, so §17 is byte-identical to what REVIEW_PLD_S5 reviews). File stat AFTER the append (12:29:12 UTC): 218872 bytes,
+  2045 lines, md5 198a3a0f1fc584e39862cd21f0d7ca0d. PRE-STATED block size = 218872 - 211079 = **7793 bytes** (79 lines).
+  APPEND-ONLY discipline: no line of §0-§17 is altered in this session.
+- 12:30-12:47 UTC: §18.1-§18.9 appended in five appends (derivations, BEFORE the criteria; disclosed in checks/p6_time.txt
+  and in §18.10). §18.1 (E2^𝔉) in PLD's language + per-item verdict; §18.2 (C_S′), Lemma FT^far′, Proposition FAR;
+  **§18.3 PROVENANCE BREAK** (REVIEW_PLD_S5 was delivered by the lead between the §18.2 append and 12:40:59 UTC; §18.0-§18.2
+  were written without it and are left as written; B1-B6 adopted from §18.4 on); §18.4 Lemma BUF + the one-ring cost in HW's
+  constants; §18.5 Proposition CHAIN ((NP-F6) MET), the union-form excess line (b′), branch 2 attempted ((EG-cur),
+  (EG-link)); **§18.6 PROVENANCE BREAK 2** (REVIEW_HW_S5's essentials relayed by the lead between the §18.5 append at
+  12:42:20 and the §18.6 append at 12:44:53; REVIEW_HW_S5 itself NOT read here, its content labelled [relayed]) +
+  Proposition PATCH + the three deltas + the TF-1 verdict; §18.7 (CEM^{COL}), Theorem NA-PRICE^{E+}, Cor. E2-RED,
+  Proposition ONE, Proposition SPLIT; §18.8 c_lcr; §18.9 the match check (M-1…M-7).
+  One in-session correction appended, not edited: the §18.3 "≈ 12:45 UTC" estimate was written before the clock was read and
+  is replaced by "between the §18.2 append and 12:40:59 UTC" in an appended [§18.3 timing correction] block. Append-only
+  discipline held throughout: `head -1966 PLD.md` is byte-identical to the session-5 file (md5 35b33c8fb3702f9de47d0afbdb7edf9a,
+  211079 bytes), verified after the last append.
+- 12:50:40 UTC: checks/p6_criteria.md written (md5 d6e90f4899385fbec5f668d033a2efeb, 7254 bytes), BEFORE the script; every
+  criterion quotes only constants recorded in RLARGE / HW / PROOF / earlier PLD sessions / the p4-p5 records, with the source
+  named inline. 12:51:17 UTC: checks/p6_pld.py written (md5 12db2379d1ea159c6072922b0e611c6e); not edited after the run.
+- 12:51:26 UTC: ONE run, 0.04 s real, 14.7 MB max RSS, exit 0, nice 10, one thread (OMP/OPENBLAS/MKL/VECLIB = 1),
+  PYTHONDONTWRITEBYTECODE=1, `python3 -I`, load 2.52/2.30/2.05 at launch. **The numeric lock was NOT taken**, per the
+  session-24 brief's exemption for exact rational/symbolic arithmetic in plain python: p6_pld.py imports only `fractions`,
+  `math`, `sys` — no numpy, no BLAS, no linear algebra, no sampling. Justification and full run record in checks/p6_time.txt.
+  No re-run, no trap, no pkill, no process left.
+  **SUMMARY AS RUN: FAIL: F2; all other criteria PASS, including all three negative controls (A3, B3n, E1n).** F2 is a
+  SCRIPT defect (it formed the finite partial sum Σ_{m=1}^{199}3^{-m} = ½ − 3^{-199} and demanded exact equality with the
+  criterion's infinite series), reported as a FAIL; nothing re-run, no criterion or script edited; the post-hoc hand
+  arithmetic 2401·32·80/2 + 81 = 3073361 is recorded in p6_time.txt and LABELLED post-hoc, and F2 is not counted as passed.
+  No statement in §18 depends on the numerical value of Δ_sh.
+- 12:52-12:54 UTC: §18.10 (check record incl. the F2 failure), §18.11 (outcome, status CHANGES with direction, tally +2
+  PROVEN-HERE unreviewed, the single biggest obstruction = (CEM-2)), §18.12 (FOR OTHER FILES: PLD owner, HW, RLARGE, SF/PROOF,
+  next reviewer) appended. Final PLD.md 312681 bytes, 2931 lines, md5 4a6a0f251567738cebf28cfdaac352ea.
+- Files written this session: PLD.md (appended only), PLD_LOG.md (appended only), checks/p6_criteria.md, checks/p6_pld.py,
+  checks/p6_out.txt, checks/p6_err.txt, checks/p6_time.txt. Nothing else edited anywhere; no commits, pushes or PRs; no git
+  command run; no axiom or CL edit; no numeric lock taken or released.

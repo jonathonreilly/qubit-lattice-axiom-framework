@@ -1964,3 +1964,968 @@ p5_time.txt)
   (p5 B5), so the reading needs an energy (ℓ²) qualifier [for the HW owner to check against INH/CF].
 - **Node A / SF / review.** The open target for (SDP)^A is (J-NS^cd): an energy-graded price of a coarse centre over a finer centre
   defect; Proposition CD (b) states the contracting form that would suffice. (LCR)_k remains the small-field input.
+
+# Session 6 (2026-10-28, lane E)
+
+Read for this session before the pre-statement (read-only, nothing written): DRIVE_BRIEF (session 24); HANDOFF.md;
+PLD.md §16 (session 4) and §17 (session 5) in full, plus §15.4 pointers; PLD_LOG.md; REVIEW_PLD_S4.md in full (binding);
+REVIEW_PLD_S3.md l.320-380 (the Arch-1/Arch-2/Arch-3 architecture verdict, binding: the PLD-desc "Reading" / look-ahead
+architecture is WRONG and is not rebuilt on here); HW.md §18.1-§19 (the (SDP)^A / (SF-cap)^A / interface rows), §24.2-§24.3
+(TEL-f, TF-1, (SDP)^{A,far}/(SF-cap)^{A,far}, (E1), E1-1, (E2), E2-1, Lemma SL, wall (CRC-1)), §25 (check (d)), §30-§33
+(the column-relaxed family 𝔉_𝔥, Theorem LI^U-0′, Lemma SH-att, Lemma COL, **(E2^𝔉)_{θ,ρ}**, Theorem CRC-2T, §30.5
+Cor. CRC-HW, §30.6 arithmetic, §30.7 the residual (W-𝔉)); REVIEW_HW_S4.md l.320-384 (E1-1, **X-1 cross-lane for PLD**,
+E2-1, the (CRC-1) verdict); RLARGE.md v3 l.386-404 (the (M-f^A)/(SF-cap)^A/(SDP)^A consumer block), l.86-96 (a, a_bad,
+c_pr, t_pr, ε_1 ≲ 6.7·10⁻⁴⁰), l.490-495 (rows 9, 10b, 10c); grep only for c_lcr / (LCR) / ε_1 / t_pr across the lane files
+(line locations). An unwritten exploratory pass chose the targets below; no session-6 text, criteria or script existed
+when it ran, and the derivations of §18.2-§18.7 existed only as an unwritten sketch at the moment §18.0 was written.
+
+## 18.0 PRE-STATED (session 6) — statements only (written 2026-10-28 12:28 UTC, `date -u`; THE FIRST EDIT OF THIS SESSION:
+before any session-6 derivation, before checks/p6_criteria.md, and before any session-6 check)
+
+**This section cites nothing produced in session 6.** File stat of PLD.md *before* this append: 211079 bytes, 1966 lines,
+md5 35b33c8fb3702f9de47d0afbdb7edf9a, mtime 2026-10-28 08:03:19 local (= the file REVIEW_PLD_S5 is to review; identical to
+PLD_LOG's session-5 closing stat). Session 6 APPENDS ONLY: it alters no line of §0-§17, because REVIEW_PLD_S5 is being
+written concurrently against §17.
+
+**Setting.** That of §16-§17 (SU(2); bad-only, history-independent defects; (F_R) with g_K² ≤ 1/(2R); Q a level-k cube,
+k ≥ 1, finer field U_{k-1}; ε_1 ≤ min{1/(4A_d), t_pr}; a_bad = c_pr ε_1², c_pr = 1/(640·53²); max{6θ, 24θ}(1 + 2Rg_K²) < 1).
+Laws: the COL-DEC family of §17.2 and, newly in scope, HW's column-relaxed family 𝔉_𝔥 of HW §30.1 with its weights
+h^{R,1}_j (HW Theorem LI^U-0′) and its finer spectators F_<.
+
+**T15 (the two walls, together; the target).** Both open walls that reduce to node-A pricing are in scope:
+(α) **(J-NS^cd)_k** (PLD §17.4), the residual of Theorem NA-PRICE^E (i); (β) **(E2^𝔉)_{θ,ρ}** (HW §30.3), the good-buffer
+screening input of Theorem CRC-2T, asked uniformly over 𝔉_𝔥. Deliver, with all quantifiers:
+- **(a)** (E2^𝔉) restated in PLD's own language, and a verdict — supplies / supplies in part / does not touch — for each of
+  session 5's Lemmas GEO, FT^far, COL-DEC, DIL-L, MD and Theorem NA-PRICE^E (i) against it, with the exact quantifier,
+  weight-class and set-class differences named;
+- **(b)** the induction-on-levels test for (J-NS^cd): either a proof via Proposition CD (b) (with the contraction factor,
+  the base case, and a check that no constant or allowance compounds), or a precise statement of where the induction
+  breaks, naming the minimal missing input and the direction in which it fails;
+- **(c)** a search for ONE statement that yields both (α) and (β); if found, stated exactly, with the implications proven,
+  with its logical strength against the hypotheses it replaces stated plainly (stronger / weaker / incomparable), and with
+  the resulting hypothesis list for (SDP)^{A,far} and for (E2^𝔉);
+- **(d)** the match check: Theorem NA-PRICE^E (i)'s delivered statement against (i) HW §24.3's (SDP)^{A,far}_θ, (ii)
+  HW §30.3's (E2^𝔉), (iii) RLARGE v3 row 10b's (SDP)^A_θ — allowance form, weight class, set class, level range — with
+  every mismatch reported as a finding, and what Theorem NA-PRICE^E becomes if (J-NS^cd) is discharged;
+- **(e)** the **c_lcr** verdict: what actually depends on c_lcr (value vs existence vs uniformity), either a certificate or
+  the precise statement of what a certificate must deliver, and an explicit list of any statement now labelled PROVEN in
+  this file or quoted from it that in fact rests on the uncertified value.
+- **Success:** (α) and (β) both reduced to ONE named single-level statement that is not a two-level defect probability,
+  with the implications PROVEN-HERE from (CLS-min) and that statement alone, constants explicit and independent of
+  g, K, T, k, 𝔥 and the pattern, and the delivered statements in the form HW and RLARGE consume.
+- **Partial success:** the same with the one statement still containing a large-field clause, or covering only one of
+  (α), (β), or with the level range short of k ≥ 1; or a proof of (b) that closes (J-NS^cd) with a named contraction.
+- **Valid failure outcomes:** **(NP-F6)** the level induction of Proposition CD (b) cannot close, the exact obstruction
+  named and shown not to be removable by any pointwise certificate available in §16-§17 (CW, DIL-L, KD, MD);
+  **(NP-F7)** no single statement covers both walls, with the structural reason (the two walls quantify over different
+  weight classes or different set classes) and a counter-instance; **(NP-F8)** (E2^𝔉) as stated in HW §30.3 is not
+  deliverable by node A because its set class (far level-j cubes Y) lies outside the class on which PLD's law conversion
+  is exact, with the minimal enlargement of HW's hypothesis named and its cost in HW's own constants computed;
+  **(NP-F9)** the far-weight uniformity asked by PLD §16.7's (LCR) / §17.2 Cor. LAW (b) is not available (REVIEW_HW_S4
+  X-1), so the session-5 interface deliveries that quantify over every far weight w must be restated.
+- **Not success:** an exponent or constant depending on k, K, T or 𝔥; a fixed-V price of a bad coarse cube; a level or
+  column recursion presented as uniform without an explicit contraction factor AND an explicit check that no allowance
+  compounds; any use of (H-w′), HIST-sum or (RLF-3′) at levels ≥ k; any rebuild on the PLD-desc "Reading" / look-ahead
+  architecture (REVIEW_PLD_S3 Arch-1/2/3); any input that is (J-NS^cd) or (J-NS^dir) renamed; claiming a statement
+  PROVEN whose constant is c_lcr or any other uncertified constant.
+
+**T16 (status discipline for session 6).** Every item added in §18 carries one of PROVEN-HERE / ARGUED / CONDITIONAL
+(with the named input) / OPEN, and every status CHANGE to a session-4 or session-5 item is recorded as a change, with the
+direction (upgrade / downgrade) stated, in §18.8. Downgrades are reported in the same place as upgrades.
+
+**T17 (check p6; criteria file checks/p6_criteria.md written BEFORE checks/p6_*.py).** Exact integer / rational arithmetic
+only (plain python, `fractions.Fraction`, single thread, no BLAS, no numeric lock needed per the session-24 brief):
+(A) every explicit constant of T15 (c); (B) the geometric counts the one-ring enlargement of T15 (d)/(NP-F8) costs in
+HW §30's constants (b_n, b_D, g²_CRC, n_♯), computed from HW's own recorded formulas; (C) the a_A ≥ θa_bad inequalities at
+λ = ½ with the exact c_pr = 1/1797760; (D) the geometric series Σ_{i≥1}L^{k-i} against L^k at L = 3; with a negative
+control for each of (B) and (C). No criterion may contain a constant derived in session 6.
+
+**T18 (requests for other owners).** Everything session 6 wants changed in RLARGE.md, HW.md, SQ.md, HIST.md, SF.md or
+PROOF.md is written only as a request in §18.9 "FOR OTHER FILES (session 6; not edited)". No file but PLD.md, PLD_LOG.md
+and checks/p6_* is touched; no git command is run.
+
+# Session 6 derivations (written after §18.0, from 12:30 UTC; §18.1-§18.9 were written BEFORE checks/p6_criteria.md,
+which contains no constant derived in this session; the order is disclosed in §18.10 and in PLD_LOG)
+
+**Index convention for §18.** That of §16 ("Index convention for §16"), with HW §30's objects added: 𝔉_𝔥 (the column-relaxed
+family, HW §30.1), Col(y)/[y] (open/closed column), "y is R-free" (its OPEN column, levels > level(y), is unconstrained in R),
+h^{R,F}_j (the future weight of HW §21-§22, insensitive to level-j links whose endpoint cubes are all R-free by HW Theorem
+LI^U-0′), ν^{R,F}_j (the past law of levels ≤ j of R with the finer spectators F_< inserted), ν^w := wν/E_ν[w].
+N_1(X) := the ℓ^∞ index-neighbourhood of a set X of cubes of one level (|N_1(X)| ≤ 3^d|X| = 81|X| at d = 4, L = 3).
+X_j(S) := the level-j links with an endpoint at a site of a cube of S (interior links ℓ(S) plus crossing links);
+ℓ*(S) := the level-j links with BOTH endpoint sites in cubes of S; L^∂_{j-1}(S) := the level-(j-1) links with an endpoint in a
+level-(j-1) cube under a cube of S (all as §17.2).
+
+## 18.1 T15 (a): (E2^𝔉) in PLD's language, and what session 5 supplies
+
+**(E2^𝔉)_{θ,ρ} restated (HW §30.3, verbatim content, PLD indexing).** For R ∈ 𝔉_𝔥, a level j ≥ k_0, a finite set Γ of
+level-(j+1) cubes and a finite set Y of level-j cubes outside col_j(Γ) with col_j(Γ) ∪ Y R-free, with ν := ν^{R,F}_j and
+w := h^{R,1}_j:
+  E_{ν^w}[Π_{Q∈Γ}e^{θmin{π_Q, Y^f_Q}}·1{Y ⊂ D_j}·1{Buf^R_ρ(col_jΓ ∪ Y) ∩ D_j = ∅}] ≤ C_fc^{|Γ|}(C_Ae^{-a_Au_j})^{|Y|}e^{c_A‖col_jΓ ∪ Y‖_sh},
+with π_Q = a_badu_{j+1}, Y^f_Q = 24u_{j+1}F^col_Q(U_j), G_Q = {no level-j cube under Q is in D_j}, ρ = 3L - 1 = 8, and
+C_fc, C_A, a_A ≥ θa_bad, c_A independent of g, K, T, 𝔥 and of the pattern R.
+
+**What it demands, in PLD's terms (three separable demands).** Apply HW's own Lemma CAP (ii)-(iii) / CAP-dec pointwise, per
+Q ∈ Γ: e^{θmin{π_Q,Y^f_Q}} ≤ e^{θY^f_Q}1_{G_Q} + e^{θπ_Q}1_{G^c_Q} and 1_{G^c_Q} ≤ Σ_{x∈col_jQ}1{x ∈ D_j} (81 terms); expand the
+product over Γ into 2^{|Γ|} ordered partitions Γ = Γ_0 ⊔ Γ_1 and each Γ_1-factor into its 81 choices x: Γ_1 → col_j(Γ_1); and
+drop the buffer indicator (it is ≤ 1, so it only WEAKENS the demand — see the Remark below). Then (E2^𝔉) follows from:
+- **(D1) the (SF-cap) half at level j+1**: E_{ν^w}[Π_{Q∈Γ_0}e^{θY^f_Q}·F] ≤ c_sf^{|Γ_0|}e^{c‖·‖_sh}E_{ν^w}[F], with
+  F := the Γ_1- and Y-indicators (functions of the level-≤j fields off Γ_0's columns);
+- **(D2) the (SDP) half at level j**, for the ONE set S := Y ⊔ x(Γ_1) of level-j cubes: ν^w(S ⊂ D_j) ≤ (C_Ae^{-a_Au_j})^{|S|}e^{c_A‖·‖_sh},
+  jointly with (D1) in the SAME expectation (CAP-dec's combination, HW §15);
+- **(D3) a_A ≥ θa_bad**, which is what converts the uncapped factor e^{θπ_Q} = e^{θa_badu_{j+1}} ≤ e^{θa_badR}e^{θa_badu_j} into the
+  constant C_fc = c_sf + 81C_Ae^{θa_badR}.
+**So (E2^𝔉) is not a new kind of object: it is (SF-cap) + (SDP) at one level, combined by CAP-dec, under HW's own weighted
+past law — with two differences from everything PLD has proven, both in the QUANTIFIERS, not in the mechanism.**
+*Remark (the buffer is not a hypothesis that helps the statement, it is a restriction of its scope).* 1{Buf ∩ D_j = ∅} ≤ 1,
+so (E2^𝔉) is WEAKER than the same bound without it. A proof is therefore free to ignore the buffer; what the buffer can do
+is make the bound TRUE, by cutting down the configurations the weight w is allowed to charge (HW §24.3: "the real content of
+(E2) is screening"). §18.7 says exactly where in the proof the buffer has to be used, and §18.3 shows that for the LAW
+CONVERSION a different and cheaper hypothesis — one ring of R-free cubes — suffices and is exact.
+
+**Verdict on each session-5 item against (E2^𝔉).**
+
+| session-5 item (§17) | supplies (E2^𝔉)? | exactly why |
+|---|---|---|
+| **Lemma GEO (i), (iii), (iv)** | **supplies**, unchanged | pure geometry + bad-only + declaration; §18.2 shows only the clause S ∩ 𝒰_k = ∅ of (C_S) is used by them |
+| **Lemma GEO (ii)** | **does not apply** | it derives X_j(S) ∩ L^far_j(𝔥) = ∅ from "S is in the columns of A ⊂ 𝒰_{j+1}". (E2^𝔉)'s Y is FAR by construction (not R-free before the relaxation, hence not in a history column: §18.2 Proposition FAR). GEO (ii) is the step §18.3 must replace |
+| **Lemma FT^far** | **supplies after its hypothesis is weakened** | its stated hypothesis L_G ∩ X_j(S) = ∅ is NOT met by w = h^{R,1}_j: HW Theorem LI^U-0′ makes w insensitive only to links all of whose endpoint cubes are R-free, and a crossing link from Y to a non-R-free neighbour has a non-free endpoint cube and lies in X_j(Y) ∖ ℓ(Y). Its PROOF uses only ℓ(S) (§18.2 Lemma FT^far′), so the top-level conversion is available for HW's weight as it stands |
+| **Lemma COL-DEC** | **does NOT supply as stated** | it genuinely needs L_G ∩ X_j(S) = ∅: its proof integrates the X_j(S) links out (∫k_c = 1), and a k_c that survives reads U_{j-1} on L^∂_{j-1}(S) by GEO (i). With w reading crossing links, the push-down to level j-1 is contaminated on the boundary blocks of S's cubes (80 of the 81 at L = 3), which is where Lemma MD's choice function lives. **Repaired by Lemma BUF (§18.3), not by weakening** |
+| **Lemma DIL-L** | **does not touch (E2^𝔉)** | it is a deterministic statement about moving a COARSE KERNEL CENTRE. (E2^𝔉) contains no centre event. DIL-L is wall (α)'s tool only |
+| **Lemma MD** | **supplies in part, conditionally** | it is a tool inside (D2); it needs COL-DEC (hence Lemma BUF) and it needs a kernel at level j-1, i.e. j ≥ 2, so it does not reach (E2^𝔉) at j = k_0 ≤ 1 |
+| **Theorem NA-PRICE^E (i)** | **is exactly (D2), on the wrong set class and under an input expected false** | it delivers (SDP) for S satisfying (C_S) under laws ν_G with L_G ∩ X_k(S) = ∅. (E2^𝔉)'s S = Y ⊔ x(Γ_1) fails (C_S)'s column clause for the Y part, and the "any w" quantifier of §17.4 is the (E1) sup form that REVIEW_HW_S4 E1-1/X-1 expect FALSE (§18.7, §18.9 M-4) |
+| **(SF-cap)^𝔉_{j} = (LCR)_j in G-form** | **is exactly (D1)**, with the same two quantifier problems | §17.6 already delivers (SF-cap)^{A,far} this way; X-1 is the objection |
+| **Cor. LAW (a)-(d)** | **supplies (D3)'s bookkeeping and the no-compounding fact** | Cor. LAW (c) is correct and is what makes a level recursion free of allowance growth (used in §18.5) |
+
+**Net verdict for T15 (a).** Session 5 supplies the ARCHITECTURE of (E2^𝔉) completely — the decomposition (D1)+(D2)+(D3) is
+CAP-dec plus §17's own lemmas — and supplies the top-level law conversion for HW's weight after a hypothesis is weakened
+that its own proof never used. It does NOT supply (i) the SET class (far Y), (ii) the push-down COL-DEC for HW's weight,
+(iii) the level range (j ≥ 1 rather than j ≥ 2), or (iv) the two open halves (D1), (D2) themselves. **(i)-(iii) are closed in
+§18.2-§18.4 and §18.6; (iv) is the single remaining wall (§18.6, §18.7).**
+
+## 18.2 T15 (a) repair, part 1: the condition (C_S′), Lemma FT^far′, Proposition FAR. PROVEN-HERE (counted, one item [E6] (1))
+
+**Audit of (C_S) (which clause each of §17.2's lemmas actually uses).** (C_S) of §17.2 is "S ∩ 𝒰_k = ∅, AND S lies in the
+level-k part of the columns of 𝒰_m for some m > k". Reading §17.2's proofs:
+- GEO (i): no clause (pure geometry: a level-k link reads U_{k-1} only in its two endpoint blocks).
+- GEO (iii): no clause (bad-only defects + S declared).
+- GEO (iv): **the first clause only.** Its proof is "Φ_{k-1} reads links with both endpoints in the level-(k-1) column of
+  some Q″ ∈ 𝒰_k; Q″ ∉ S, so no such link has an endpoint under a cube of S". The step needs exactly S ∩ 𝒰_k = ∅, plus the
+  disjointness of the level-(k-1) columns of distinct level-k cubes (a partition of sites, §0).
+- GEO (ii): **the second clause**, essentially (it is the statement that S's links are not far).
+- FT^far, COL-DEC: GEO (i), (iii), (iv) only.
+**So define (C_S′): S ∩ 𝒰_k = ∅.** Then **GEO (i), (iii), (iv), Lemma FT^far and Lemma COL-DEC all hold under (C_S′) in place
+of (C_S)**, with their proofs unchanged. (C_S) ⇒ (C_S′). GEO (ii) is the only part of §17.2 that needs the column clause, and
+§18.3 replaces it for far sets.
+
+**Lemma FT^far′ (the kernel-event conversion, hypothesis weakened to the interior links): PROVEN-HERE.** Let k ≥ 1, S a
+finite set of level-k cubes satisfying (C_S′), ν = ν_G a law of §17.2's form with
+  **L_G ∩ ℓ(S) = ∅**   (only the links INTERIOR to the cubes of S; crossing links are allowed),
+ν′ := ν_G with S declared at level k, and F ≥ 0 bounded measurable in (U_0, …, U_{k-1}). Then
+  **E_ν[1{S ⊂ D_k}·F] ≤ E_{ν′}[Π_{Q∈S}p_K(Q | U_{k-1})·F].**
+*Proof.* Step 1 of §17.2's proof is unchanged: on {S ⊂ D_k} the declared cubes count as defects, so 1_{R,k} = 1_{R′,k}, and
+1_{R′} ≤ 1_R pointwise (HW (m1)) gives Z_{ν′} ≤ Z_ν and equality of the numerators. Step 2 integrates the links of ℓ(S) at
+fixed (U_0, …, U_{k-1}) and U_k off ℓ(S). The factors of ν′'s density that could read U_k on ℓ(S) are: (a) the kernel factors
+Π_{c∈ℓ(S)}k_c(·; M̄_c(U_{k-1})); (b) 1_{R′,k}, which reads no link of X_k(S) ⊇ ℓ(S) by GEO (iii); (c) the spectators Φ_{k′},
+k′ < k, which read levels < k; (d) G, excluded by the hypothesis L_G ∩ ℓ(S) = ∅. Nothing else is present (a past law of
+levels ≤ k has no K_k and no coarser constraint). So, conditionally, the links of ℓ(S) carry the product density Π_{c∈ℓ(S)}k_c,
+and ζ_Q reads only ℓ(Q) ⊂ ℓ(S) (bad-only: interior plaquettes, §16.3); Lemma TD gives the factorisation into Π_Qp_K(Q|U_{k-1}). ∎
+*What is new.* §17.2's stated hypothesis L_G ∩ X_k(S) = ∅ is strictly stronger than its own proof uses, and the difference is
+exactly the crossing links — exactly where HW's weight w = h^{R,1}_j fails it (§18.1). **So the top-level kernel-event
+conversion is available for HW's weight with no repair at all, no (LI^U), and cost 1.** What is NOT repaired this way is the
+push-down: Lemma COL-DEC does use the X_k(S) hypothesis (§18.1), and §18.3 supplies it instead of weakening it.
+
+**Proposition FAR (HW's far sets and history-cube columns satisfy (C_S′)): PROVEN-HERE (elementary, counted with FT^far′).**
+Let 𝔥 be admissible and R ∈ 𝔉_𝔥, so S_R ⊂ S_{R(𝔥)} (HW §30.1: R = R_{S(𝔥)∖𝒞}).
+- **(i)** If a level-j cube y is NOT R-free then y ∉ 𝒰_j. Hence every set Y of non-R-free level-j cubes satisfies (C_S′).
+- **(ii)** If Γ is a set of level-(j+1) cubes with Γ ∩ A_{j+1}(𝔥) = ∅ (in particular Γ ⊂ S^{(j+1)}(𝔥): HW's animals and far
+  defects), then col_j(Γ) ∩ 𝒰_j = ∅, so every S ⊂ col_j(Γ) satisfies (C_S′). The same holds for Γ = 𝒰_{j+1} by HW Lemma DJ
+  and H-nest (iii) (a history cube's descendants at finer levels lie in the small-field regions), which is §17.2's own
+  justification of (C_S).
+*Proof.* (i) Write A_m(𝔥) := Σ(Ω^c_{m-1}) ∪ N_1(𝒰_m) (HW §22, l.1076), S^{(m)}(𝔥) = all ∖ A_m(𝔥), and recall 𝒰_m ⊂ Ω^c_m and
+H-nest (i): Σ(Ω^c_{m-1}) ⊂ Ω^c_m. Claim: y ∈ 𝒰_j ⇒ π^{m-j}(y) ∈ A_m(𝔥) for every m > j. Induction on m: for m = j + 1,
+y ∈ 𝒰_j ⊂ Ω^c_j gives π(y) ∈ π(Ω^c_j) ⊂ Σ(Ω^c_j) = the first part of A_{j+1}(𝔥) (Σ(X) = N_1(π(X)) ⊇ π(X)). For the step,
+π^{m-j}(y) ∈ Σ(Ω^c_{m-1}) ⊂ Ω^c_m (H-nest (i)), so π^{m+1-j}(y) ∈ π(Ω^c_m) ⊂ Σ(Ω^c_m) ⊂ A_{m+1}(𝔥). Hence no pair
+(m, π^{m-j}(y)), m > j, lies in S_{R(𝔥)} ⊇ S_R, i.e. y is R-free. Contrapositive: y not R-free ⇒ y ∉ 𝒰_j.
+(ii) Let x ∈ col_j(Γ), i.e. π(x) ∈ Γ. If x ∈ 𝒰_j then by (i)'s claim π(x) ∈ A_{j+1}(𝔥), contradicting Γ ∩ A_{j+1}(𝔥) = ∅. ∎
+*Reading.* (i) is the exact sense in which "far" and "history" are complementary: HW's species-1 polymers (non-R-free level-j
+defects) are automatically outside 𝒰_j, so the only clause of (C_S) that PLD's law conversion uses is free for them. The
+clause that is NOT free is GEO (ii), and it is the weight, not the set, that it is about.
+
+## 18.3 PROVENANCE BREAK: REVIEW_PLD_S5 landed mid-session, and what it changes
+
+**Record (honest ordering).** §18.0 (12:28:16 UTC), §18.1 and §18.2 were written WITHOUT REVIEW_PLD_S5.md, which did not
+exist when this session started reading. The lead delivered it at ≈ 12:45 UTC, after §18.2 was appended. §18.1 and §18.2 are
+left exactly as written; nothing in them is adjusted after the fact. From §18.4 on, the review's binding fixes B1-B6 are
+adopted. The two independent passes agree where they overlap, and the review is the earlier authority on §17:
+- **S5-6 = §18.1/§18.2's FT^far observation, independently.** The review: "The hypothesis L_G ∩ X_k(S) = ∅ is stronger than
+  the proof uses: only L_G ∩ ℓ(S) = ∅ is consumed. … the gap between the two is precisely where (E2^𝔉) lives." §18.2 states
+  and proves that lemma (FT^far′). The review notes the gap; §18.2 supplies the statement. Credit to the review for the
+  priority.
+- **S5-26 reason 2 = §18.1's COL-DEC/GEO (ii) row, independently.** Same mechanism, same conclusion.
+- **S5-26 reason 2's set clause is SHARPER in §18.2 than in the review.** The review says Y "violates (C_S)" and treats that
+  as part of the obstruction. §18.2 shows that **(C_S)'s column clause is not used by GEO (i), (iii), (iv), FT^far or
+  COL-DEC** — only S ∩ 𝒰_k = ∅ is, which Proposition FAR proves HW's far Y satisfies automatically. So (C_S) is NOT an
+  obstruction for (E2^𝔉); **GEO (ii) alone is**, i.e. the obstruction is about the WEIGHT, not about the SET. That is what
+  makes §18.4's repair possible and cheap.
+- **S5-8/B1 (buffered weights) is a constraint §18.1-§18.2 did not impose.** Adopted from §18.4 on, with the review's own
+  verification: the buffer indicator is a function of U_k on the interiors of cubes at level-(k+1) index distance ≥ 2 from A,
+  hence disjoint from X_k(S), so FT^far, FT^far′, GEO and COL-DEC are unaffected by it. **No statement below is asserted for
+  all far weights.**
+- **S5-9/S5-10/B2 (union allowance) is adopted**: every allowance below is the union form ‖·‖_sh, never the slice s_k(𝔥).
+  §18.5 supplies the one displayed line B2 (b) asks for.
+- **S5-20/B3 (F-conditioned form) is adopted**: everything below is stated as E_ν[(…)·F] ≤ (…)E_ν[F].
+- **S5-27/B4 (name clash) is adopted**: PLD's (SF-cap)^𝔉 is written **(SF-cap)^{COL}** below (the COL-DEC law family), and the
+  new hypothesis of §18.6 carries no 𝔉 superscript. HW's 𝔉_𝔥 and (E2^𝔉) keep their meaning.
+- **S5-13**: §17.3's "max_e|W_e| = 2/81" holds only over the links interior to a corner block; over supp W the maximum is
+  1/27. Nothing in §18 uses either number.
+- **S5-25**: the review finds no status error on c_lcr in §17. §18.8's independent audit agrees, and adds what a certificate
+  must deliver and one number that is NOT a c_lcr matter.
+- **The review's (d)** names the biggest live wall as "(J-NS^cd) restricted to buffered far weights — specifically its (EG)
+  content", with branch 1 of REVIEW_PLD_S4 Part 3 dead by computation and branch 2 "still not attempted". §18.5 (c) attempts
+  branch 2 and finds one definite thing about it; §18.6 offers a route that does not pass through it.
+
+## 18.4 T15 (a) repair, part 2: Lemma BUF, and the cost of the extra ring. PROVEN-HERE (counted with §18.2, item [E6] (1))
+
+**Lemma BUF (one ring of R-free cubes restores GEO (ii) for far sets, exactly): PROVEN-HERE.** Let 𝔥 be admissible,
+R ∈ 𝔉_𝔥, j ≥ 0, and 𝒜 a finite set of level-j cubes such that **every cube of N_1(𝒜) is R-free**. Put w := h^{R,1}_j. Then
+  **L_w ∩ X_j(𝒜) = ∅.**
+*Proof.* Let c ∈ X_j(𝒜): one endpoint site of c lies in a cube y ∈ 𝒜. The other endpoint site lies in y or in a cube y′ with
+ℓ^∞ index distance 1 from y (|u − v| ≤ 1 for a nearest-neighbour link, and the level-j cubes partition the sites). So both
+endpoint cubes of c lie in N_1(𝒜) and are R-free. By HW Theorem LI^U-0′ with A := X_j(𝒜) and F ≡ 1 (the spectator
+hypothesis is vacuous at F ≡ 1), h^{R,1}_j(U) = h^{R,1}_j(U′) whenever U and U′ agree off X_j(𝒜). ∎
+**Consequences (each immediate).** Let S be a finite set of level-j cubes with N_1(S) R-free and S ∩ 𝒰_j = ∅ ((C_S′), which
+Proposition FAR gives for HW's far Y and for col(Γ) under a non-relaxed Γ). Then:
+- **(a)** ν^w = ν_G with G := w satisfies FT^far's FULL hypothesis L_G ∩ X_j(S) = ∅, so **Lemma FT^far applies verbatim**
+  (FT^far′ is not even needed here; it is needed only if one declines to buy the ring).
+- **(b) Lemma COL-DEC applies**: the marginal of ν′ (:= ν^w with S declared at level j) on U_{≤j-1} is G′·ν^{(j-1)}_{j-1}/E[G′]
+  with G′ = Φ_{j-1}·H′ not reading U_{j-1} on L^∂_{j-1}(S). Its first clause (which is all that is used below) needs only
+  j ≥ 1; the explicit product-kernel display of §17.2 needs j ≥ 2.
+- **(c)** Hence the whole of §17.2-§17.4 (Cor. LAW, DIL-L, MD where j ≥ 2, Theorem NA-PRICE^E (i)) is available **under HW's
+  own weight on FAR sets**, which S5-26 reason 2 records as unavailable. The pattern family is not an obstruction either:
+  Lemma BUF is applied ONCE, to R ∈ 𝔉_𝔥, BEFORE the declaration, and the declaration does not change the weight — FT^far and
+  COL-DEC carry the same G through, and their other inputs (HW Lemma DECL, (m1), GEO) hold for every R_{S,E}. **This answers
+  S5-26 reason 1 for the law conversion** (it does not answer it for the two open halves, which §18.6 states over 𝔉_𝔥).
+- **(d)** Compatibility with B1: the buffer indicator 1{Buf^R_ρ(col S) ∩ D_j = ∅} may be multiplied into w freely; it reads
+  interiors of cubes at distance ≥ 2 (level-(j+1) index), disjoint from X_j(S), so (a)-(c) are unaffected (review S5-26's own
+  one-line verification). Below, "buffered weight" means w times that indicator, and all statements are for buffered weights
+  only.
+**What the hypothesis costs, and whether HW can buy it.** HW §30.3 asks only "col(Γ) ∪ Y R-free"; Lemma BUF asks
+"N_1(col(Γ) ∪ Y) R-free", one ring more. Inside Theorem CRC-2T the ring is BUYABLE, at a bounded cost in HW's own constants:
+in step (4), replace R″ := R′^{-Col(Y)} by
+  **R‴ := R′^{-(Col(Y) ∪ Col(N_1(col 𝒟 ∪ Y)))}.**
+- *It stays in the family.* Col(X) is upward closed by definition and a union of upward-closed sets is upward closed; the set
+  is finite (finite torus). So R‴ ∈ 𝔉_𝔥, and 1_{R′} ≤ 1_{R‴} pointwise ((m1)).
+- *It is bought by HW's own induction hypothesis*, since N(R′) < N(R): ρ^F_{R′}(Col(N_1(col 𝒟 ∪ Y))) ≤ exp(c_U·#_{R′}(·)) and
+  #_{R′}(Col(Z)) ≤ Σ_{r≥1}|π^r(Z)| ≤ ‖Z‖_sh for Z := N_1(col 𝒟 ∪ Y).
+- *The geometric price is one factor 81.* ‖N_1(X)‖_sh ≤ 81‖X‖_sh, because |N_1(X)| ≤ 3^d|X| = 81|X| and
+  sh_m(N_1(X)) ⊂ N_1(sh_m(X)) (iterate HW Lemma SL's step Σ(N_1(X)) = N_1(π(N_1(X))) ⊂ N_1(N_1(π X)) = N_1(Σ(X))), so
+  |sh_m(N_1(X))| ≤ 81|sh_m(X)|. Hence the extra factor is ≤ e^{81c_U‖col 𝒟 ∪ Y‖_sh}, and step (4)'s own
+  e^{c_U‖col 𝒟 ∪ Y‖_sh} becomes e^{82c_U‖col 𝒟 ∪ Y‖_sh}.
+- *Net effect on HW §30.4's constants*: **c_+ = c_A + c_U becomes c_+′ = c_A + 82c_U**, and b_n, b_D, x_*, ε_2 are affine in
+  (c_+, c_U), so every one of HW's three activity conditions (S1), (S2), (T) survives with b_n, b_D larger by at most the
+  factor (c_A + 82c_U)/(c_A + c_U) ≤ 82, i.e. **g²_CRC smaller by ≤ 82 and n_♯ larger by ≤ 82** (check p6 B computes the
+  exact numbers from HW's own recorded formulas). These are g-independent constants, so this is a lower g_0 and a bigger
+  n_♯, not a loss of uniformity — HW §30.6's own reading of b_n.
+- *Nothing else in CRC-2T moves.* Y is determined relative to R′ before the extra relaxation, so step (4)'s decomposition is
+  unchanged; and Buf^{R‴}_ρ ⊂ Buf^{R″}_ρ (fewer non-free cubes), so the buffer clause of E_Y becomes WEAKER and the inclusion
+  {Y(c) = Y} ⊂ E_Y survives. Step (5)'s peel only gains (more cubes unconstrained).
+**Status.** Lemma BUF: PROVEN-HERE. The affordability of the ring inside Theorem CRC-2T: PROVEN-HERE as arithmetic about
+HW's recorded formulas (it is a request to the HW owner, §18.12, not an edit of HW.md; HW must re-run its own step (4) with
+R‴ to confirm nothing else in its proof reads R″).
+
+**[§18.3 timing correction, appended not edited.]** §18.3 says the review landed "at ≈ 12:45 UTC". That time was written
+before the clock was read and is wrong: the §18.3+§18.4 append completed at 12:40:59 UTC (`date -u`), so the review landed
+BETWEEN the §18.2 append and 12:40:59 UTC, and no later time is supportable. The §18.3 line is left as written, per the
+append-only rule for this file; this correction is the record. (Same discipline as PLD_LOG's [RPLD-fix B3] entry.)
+
+## 18.5 T15 (b): does induction on levels close (J-NS^cd)? Proposition CHAIN. PROVEN-HERE (structure/arithmetic about the
+available certificates; not counted) — outcome **(NP-F6) MET**
+
+Throughout: (J-NS^cd)_k is read in its B1/B2/B3 form — buffered far weights, union allowance ‖S_cd‖_sh, F-conditioned.
+
+**(a) The direction in the handoff's suggestion is not available.** The suggested shape was "assume (SDP) at level i + 1
+(coarser), price the level-i configuration using it". It cannot be run, for a reason that is not a technicality:
+**{Q ∈ 𝒞_k(U_{k-1})} is not a level-k defect event.** 𝒞_k is a function of the FINER field U_{k-1} (§16.3), and the only
+implication Lemma KD supplies runs the other way: Q ∉ 𝒞_k ⇒ p_K(Q | U_{k-1}) ≤ p_mis. The converse inclusion
+{Q ∈ 𝒞_k} ⊂ {Q ∈ D_k} is **false**: a kernel centre with an interior plaquette at exactly ‖1 − V^0_P‖ = ε_1/2 and kernel
+fluctuations of size (κu_{k-1})^{-1/2} ≪ ε_1 leaves Q GOOD with probability → 1 as g → 0 (this is the same elementary fact
+that p4's negative control C1n measured: a centre 10σ below threshold gave 0 hits in 10⁵). So no (SDP) at any level, coarse
+or fine, bounds ν(Q ∈ 𝒞_k); the centre event has to be priced by its ENERGY (Lemma CW), not by a defect probability. **The
+only admissible direction is Proposition CD (b)'s, fine → coarse.**
+
+**(b) In CD (b)'s direction the induction has no base, and the base is exactly the level the theorem cannot reach.**
+CD (b) derives (J-NS^cd)_k from Theorem NA-PRICE^E (i) at level k − 1. NA-PRICE^E is proven for k ≥ 2 (Lemma MD applies
+FT^far at level k − 1, which needs a kernel there). So the lowest instance the induction can even state is (J-NS^cd)_3 from
+level 2, and **(J-NS^cd)_2 requires NA-PRICE^E at level 1, which requires the level-0 analogue of MD and (LCR)_0, both OPEN**
+(§16.5 "Level 0", §17.6). This is §17.4's own disclosure and review S5-22's "CD (b) closes nothing today"; it is recorded
+here as the FIRST of three independent reasons, because it is fatal on its own and independent of η.
+
+**(b′) The allowance does NOT compound, and the line review B2 (b) asks for is available. PROVEN-HERE.** For S a set of
+level-k cubes and any choice function x: S → col_{k-1}(S) (one level-(k-1) cube under each Q ∈ S),
+  **‖x(S)‖_sh ≤ ‖S‖_sh + (1 + Δ_sh)·|S|,  Δ_sh = 3073361, depth-free.**
+*Proof.* ‖X‖_sh := |X| + Σ_{r≥1}|sh_{lev(X)+r}(X)| (HW §30.2). Here |x(S)| = |S|. Since π(x_Q) = Q, the extra finest shadow
+level is sh_k(x(S)) = Σ(x(S)) = N_1(π(x(S))) = N_1(S); for r ≥ 1, sh_{k+r}(x(S)) = Σ^r(N_1(S)). By p4 D2a (exact shadow sets
+in Z⁴) sh_m(x_Q) ⊇ sh_m(Q) for every m, and by §16.6 (b) / p4 D2b the TOTAL excess per cube is depth-free,
+Σ_m(|sh_m(x_Q)| − |sh_m(Q)|) ≤ Δ_sh = 3073361 (the measured value is 256). Writing E_Q^{(m)} := sh_m(x_Q) ∖ sh_m(Q),
+  sh_m(x(S)) = ∪_{Q∈S}sh_m(x_Q) ⊂ sh_m(S) ∪ ∪_{Q∈S}E_Q^{(m)},
+so |sh_m(x(S))| ≤ |sh_m(S)| + Σ_{Q∈S}|E_Q^{(m)}|; summing over m gives Σ_m|sh_m(x(S))| ≤ Σ_m|sh_m(S)| + Δ_sh|S|, and adding
+|x(S)| = |S| gives the claim. ∎
+*Consequence.* In the UNION currency ‖·‖_sh, CD (b)'s recursion carries c(k) = c(k − 1) exactly (the Δ_sh|S| term is
+per-cube and goes into C_cd, as §16.7 already placed it), so **Corollary LAW (c) is correct and review item B2 (b) is
+discharged.** In the slice currency s_k(𝔥) the recursion does not type-check at all (review S5-9 (a)), which is a second,
+independent reason to work in ‖·‖_sh. **So compounding is NOT the obstruction. η is.**
+
+**(c) η < 1/324 is not obtainable from any certificate in §16-§17, and the reason is that the certificates are NESTED, not
+additive.** Pointwise, the event of (J-NS^cd)_k at a cube Q with witness x (level k − 1) gives two certificates:
+  (E_k)   F^col_Q(U_{k-1}) ≥ a_bad/4      (Lemma CW at level k, from Q ∈ 𝒞_k);
+  (E_{k-1}) F^col_x(U_{k-2}) ≥ a_bad/4    (Lemma CW at level k − 1, from x ∈ 𝒞_{k-1}).
+These do not add. Lemma CW's branch (b) proves (E_k) by ℰ_P(V^0) ≤ κΦ_{∂P}(U_{k-1}, V^0) + ℰ^<_P(U_{k-1}) = ℰ^<_P(U_{k-1})
+(HW Lemma TE (i), zero mismatch at the kernel centre) and ℰ^<_P ≤ F^col_Q, i.e. **(E_k) is a lower bound on a sum that
+already CONTAINS the finer cone terms** (TE (iii)'s column-term identification), and (E_{k-1}) is a lower bound on a
+sub-sum of that same tower one level down. Hence the two together certify
+  F^col_Q(U_{k-1}) ≥ a_bad/4,  **not** a_bad/2,
+and the price available from them is ONE factor e^{-6θa_bad u_k}, not two. Iterating down a chain Q ⊃ x_{k-1} ⊃ … ⊃ x_{k-m}
+of centre defects multiplies the COMBINATORIAL cost by 81^m (the choice functions, per level, CD (b)'s own counting) and the
+PRICE by 1. So **η = 1 is not an artefact of a crude union bound; it is what the available pointwise certificates give.**
+This is the precise, inequality-level content of §17.4 (c)'s sentence "its energy sits in the deeper coherent field".
+
+**(d) The one additive currency is identically zero on the event.** Lemma DIL-L (ii) is genuinely additive across levels: it
+charges Σ_{e∈E}φ_e, the KERNEL energy, and the kernel energies of different levels are exponents of different kernel
+factors, hence add under the product-kernel law COL-DEC supplies. But a **centre** defect is by definition a cube whose own
+kernel centre is bad, so φ_e = 0 on its blocks is admissible (the field may sit AT its own centre and still be bad), and
+DIL-L (ii) returns the bound 0. §17.6's grading (rate λκu_{k-2}(r_*/(2F_*))(5ε_1/256)², requiring κ ≥ κ_eg = 2.0069·10⁻⁴,
+exactly as review S5-5 recomputed it) is therefore (EG)'s MISMATCH half, which Lemma MD already prices at the strictly
+larger rate λκε_1²/256. **The additive currency and the event are disjoint. That is the whole difficulty in one line.**
+
+**(e) The favourable sub-case has a huge pointwise certificate that cannot be cashed.** [ARGUED; abelian, linear order.]
+On a COHERENT chain the curvature multiplies by L² per level upward (p5 B3, exact: F_P = L²b = 9b for a uniform field b), so
+a chain of depth m forces coarse curvature ≥ L^{2m}ε_1 and, by CW's branch (b) at that threshold,
+F^col_Q ≥ c_pr min{(L^{2m}ε_1)², t_pr²} = L^{4m}a_bad while L^{2m}ε_1 ≤ t_pr. Already at m = 1 the implied price
+e^{-6θ·81·a_bad u_k} = e^{-486 a u_k / (θ a_bad / a)} ≈ e^{-4.9·10¹⁰} (at the recorded a = θa_bad ≈ 1.0·10⁻⁸⁶, g_K² ≈ 10⁻⁹⁴,
+so a u_k ≈ 10⁸) annihilates the 324 per level, and the chain's depth is g-independently bounded by
+m ≤ log(2/ε_1)/(2 log L) ≈ 41.4 (ε_1 ≲ 6.7·10⁻⁴⁰ is a g-independent threshold, RLARGE §0 under (TH-ch″)), so even
+81^{41.4} ≈ 10^{79} is a constant. **But cashing F^col_Q ≥ L^{4m}a_bad requires a moment of e^{θY^f_Q} on a column that
+CONTAINS a defect, and that is exactly the factor 1_{G_Q} that (SF-cap)^{COL} excludes.** So the sub-case where the physics
+is most favourable funnels into the SAME single missing object as the sub-case where it is least favourable.
+
+**(f) Branch 2 of REVIEW_PLD_S4 Part 3, attempted (the (EG) route the review calls unattempted): ONE definite finding.**
+Branch 1 (thin cluster, raised threshold) is dead by computation (p5 B6, (NP-F5) MET; review S5-15 confirmed it
+independently with R_∞(U4) ≥ 3.33). So every centre defect must be priced by branch 2: an energy-graded in-step activity
+  |ρ_Y| ≤ C^{|Y|}e^{-a_eg u_{k-1}·ℰ_+(Y)/ε_1²},  ℰ_+(Y) := Y's energy ABOVE ITS COMPLETION  (REVIEW_PLD_S4 l.248-259).
+**Finding (EG-cur) [PROVEN-HERE as a disjunction; the currency question is decided, the lemma it needs is named].**
+(EG) is stated with an unqualified "energy above its completion", and the two candidate currencies give OPPOSITE verdicts:
+- **In the KERNEL-energy currency** (ℰ_+ := Σ_{e}φ_e, the quantity DIL-L (ii) charges and the only one the kernel factors
+  themselves grade), **(EG) is VACUOUS on exactly the configurations (J-NS^cd) is about**: by (d), a centre defect admits
+  φ_e = 0, so ℰ_+ = 0 and the bound degenerates to |ρ_Y| ≤ C^{|Y|}. §17.6's "kernel-energy grading available now" is
+  therefore not branch 2's half, as §17.6 itself says.
+- **In the CURVATURE-energy currency** (ℰ_+ := Σ_pφ_p(A)², A := the difference from the kernel-centre completion U° of
+  DIL-L (ii)), the DETERMINISTIC half EXISTS and is computed: §17.3's ℓ²-lasso constants give
+  **Σ_pφ_p(A)² ≥ (ε_1/(4·0.2811))² = 0.791ε_1²** for a centre-moving cluster spread over the four corner blocks, and
+  **≥ (ε_1/(4·0.1512))² = 2.735ε_1²** if it lies in one block (review S5-22 reproduces both). So branch 2 is not empty.
+**What is therefore needed, exactly, and it is one lemma, not a programme:**
+- **(EG-link) [node A; OPEN; NEW, named here]:** for a level-(k-1) cube x ∈ D_{k-1} ∩ 𝒞_{k-1} under Q, with U° the
+  kernel-centre completion of DIL-L (ii) on x's blocks, the CL^J / R1^J in-step activity of x is graded by the CURVATURE
+  energy of U − U°: |ρ_x| ≤ C·e^{-a_eg u_{k-1}Σ_pφ_p(U − U°)²/ε_1²}, with a_eg·0.791 ≥ θa_bad.
+- The two currencies are linked only if U° is a local MINIMISER of the curvature energy on x's blocks. U° is by construction
+  the mode of the KERNEL (the S4′ centre), and nothing in §16-§17 identifies it with a curvature minimiser. **That
+  identification — kernel mode = local curvature minimiser, to within a constant factor in the quadratic form — is the
+  precise missing ingredient of branch 2.** It is a deterministic, single-level, small-field statement about the S4′ centre
+  map, i.e. of the SAME kind as DIL-L and computable by the same linear-order machinery as p5 B. It is NOT attempted here.
+- Proposition CC does not refute (EG-link): in CC's coherent datum the realised field sits a distance δ from the completion,
+  so Σφ_p(A)² ~ δ² is small and (EG) predicts no price, which is what CC exhibits (§16.8, and REVIEW_PLD_S4 l.259 says the
+  same). **CC and (EG-link) are consistent; CC bites only on threshold-graded activities.**
+
+**(g) Verdict on T15 (b): (NP-F6) MET.** Induction on levels does not close (J-NS^cd). Three independent reasons, in
+increasing depth: **no base case** (b); **no contraction from the available certificates** (c)+(d), because CW's certificates
+across levels are nested and the one additive certificate vanishes on centre defects; and even the favourable coherent
+sub-case **cannot cash its certificate** (e). Compounding is NOT a reason: in the union currency the allowance does not
+compound ((b′), which discharges review item B2 (b)). The minimal missing inputs are, exactly and alternatively:
+**(EG-link)** (branch 2, the kernel-mode/curvature-minimiser identification, §18.5 (f)) **or** the single defect-tolerant
+moment **(CEM^{COL})** of §18.6, which needs no currency conversion and no level recursion at all.
+
+## 18.6 PROVENANCE BREAK 2 (REVIEW_HW_S5 landed), and T15 (c) part 1: the union-form attached-patch allowance, stated.
+Proposition PATCH: PROVEN-HERE (elementary, counted with §18.2/§18.4 as item [E6] (1))
+
+**Record.** The lead delivered REVIEW_HW_S5's essentials between the §18.5 append (12:42:20 UTC) and this one. §18.0-§18.5
+are left exactly as written. REVIEW_HW_S5 itself was NOT read in full here (its content is used only as the lead relayed it,
+and is labelled [relayed] where it is load-bearing). Three undeclared deltas between HW §30.3's (E2^𝔉) and node A's actual
+statements are relayed, plus the (CRC-1) status and one narrowing in node A's favour. §18.6 answers them; §18.7 gives the
+single statement.
+
+### 18.6.1 The object HW's gas needs, in PLD's language
+**Definition (attached patch, patch allowance).** For a level j, a finite set Γ of level-(j+1) cubes and a finite set Y of
+level-j cubes, the **attached patch** is **P(Γ, Y) := col_j(Γ) ∪ Y** (a set of level-j cubes), and its union-form shadow sum
+is ‖P‖_sh := |P| + Σ_{r≥1}|sh_{j+r}(P)| (HW §30.2's ‖·‖_sh, union form, levels ≤ K − 1). HW §30.3 asks node A's allowance in
+the form **e^{c_A‖P(Γ, Y)‖_sh}**, one depth term for the WHOLE patch.
+
+**Proposition PATCH: PROVEN-HERE (elementary).**
+- **(i) Monotonicity, and the reconciliation.** ‖·‖_sh is monotone under inclusion of sets of one level: sh_{j+1}(X) = Σ(X) =
+  N_1(π(X)) is monotone (X ⊂ X′ ⇒ π X ⊂ π X′ ⇒ N_1(π X) ⊂ N_1(π X′)); iterating, sh_{j+r}(X) ⊂ sh_{j+r}(X′) for all r, and
+  |X| ≤ |X′|; so ‖X‖_sh ≤ ‖X′‖_sh. Consequently, for **every** set S of level-j cubes with S ⊂ P(Γ, Y) — in particular
+  **S := Y ⊔ x(Γ_1)** for any Γ_1 ⊂ Γ and any choice function x: Γ_1 → col_j(Γ_1), which is the set the CAP-dec expansion of
+  §18.1 produces — **e^{c‖S‖_sh} ≤ e^{c‖P(Γ, Y)‖_sh}.** So a node-A statement delivered in the union form **on its own set**
+  lands in HW's patch currency with no further hypothesis and no new geometric lemma. (This is §16.5's own monotonicity step,
+  l.1432-1433, applied across the interface.)
+- **(ii) The slice does not reconcile, in either direction.** There is no inequality between s_k(𝔥) and ‖S‖_sh: HW SL-1's own
+  example (a history with components only at level k + 1) gives s_k(𝔥) = 0 while ‖S‖_sh ≥ |S| ≥ 1; and a deep history with
+  |S| = 1 gives s_k(𝔥) arbitrarily large while ‖S‖_sh is bounded by 1 + 81 + 256(K − j − 2). **So REVIEW_PLD_S5's B2 is not
+  cosmetic, and the two reviews' convergence on the currency is correct: the slice is simply the wrong object.**
+- **(iii) The thing that must NOT appear is PER-CUBE depth.** For a single DETACHED level-j cube y,
+  ‖{y}‖_sh = 1 + Σ_{r≥1}|sh_{j+r}({y})| ≈ 1 + 81 + 256(K − j − 2) (the 4⁴-block stabilisation: Σ(y) is 81 cubes, and from
+  then on π compresses a 4⁴ block to ≤ 2⁴ and N_1 re-expands it to 4⁴ = 256; §16.6 (b), p4 D2b, HW §30.2 Reading), i.e. it
+  contains a term LINEAR IN THE DEPTH K − j. HW's gas can afford Y at all only because Lemma SH-att merges an ATTACHED
+  cluster's shadows into the patch's: ‖P ∪ Y‖_sh ≤ 6561‖P‖_sh + c_att(ρ)|Y| with c_att(8) = 1229313, depth-free in |Y|.
+  **So the requirement on node A is not about the SIZE of the allowance constant. It is that the allowance be attached to the
+  PATCH — one depth term for the whole of it — and never to the individual cubes of Y.**
+- **(iv) Where the requirement actually lands (the finding).** Theorem NA-PRICE^E (i) (§17.4) and Theorem NA-PRICE^{E+}
+  (§18.7) **generate no allowance of their own**: on the HW route the law conversion is exact (Cor. LAW (a): c_T = 0; Lemma
+  FT^far's "No (LI^U), no shadow allowance"), Lemma KD is pointwise, Lemma CW is pointwise, and Lemma MD contributes only the
+  per-cube factor 81 and (by §18.5 (b′)) a per-cube depth-free Δ_sh. **Every allowance in the delivered bound is TRANSMITTED,
+  unchanged, from the small-field hypothesis.** Therefore the union-form attached-patch allowance is **a clause of the
+  HYPOTHESIS, not a theorem about the patch**, and that is why no statement in PLD §16-§17 has the shape REVIEW_HW_S5 is
+  looking for: the shape has to be written into the moment, where PLD has so far written none.
+- **(v) What it would take, exactly.** Node A owes the small-field moment with its allowance in one of
+  - **(P0) no allowance at all** (c = 0), which is what Cor. LAW (b) already delivers on the exactly-converted law
+    ("c_sf = c_lcr, c_f = 0"), or
+  - **(P1) a per-cube constant only**, e^{c|A∖A′|}, absorbed into c_sf^{|A∖A′|} (sufficient because ‖P‖_sh ≥ |P| ≥ |A∖A′|),
+  and must NOT be in either of
+  - **(P2) per-cube union-form sums** e^{cΣ_{Q∈A∖A′}‖{Q}‖_sh} (the per-cube depth term of (iii); unaffordable, §16.6 (b)), or
+  - **(P3) the slice** s_k(𝔥) (not convertible, (ii)).
+  **So "what it would take" is: prove the moment under the exactly-converted law and state it with a per-cube constant and
+  no shadow sum.** Nothing else is needed on PLD's side; (i) does the conversion. **And if the moment comes with (P0), node A
+  delivers c_A = 0, which is STRICTLY STRONGER than HW asks and strictly better for HW's own constants: c_+ = c_A + c_U
+  drops to c_U, so b_n = 531441·38418·c_+ + 38417c_U and b_D = 38416(531441c_+ + c_U) drop by the factor
+  (c_A + c_U)/c_U, and g²_CRC = a/(b_n + aR + log(12800C_ℓ)) rises by it** (check p6 B2).
+  *Status.* Proposition PATCH: PROVEN-HERE. The moment itself: OPEN, and it is §18.7's single statement.
+
+### 18.6.2 The three undeclared deltas, answered; and the TF-1 switch
+Each is relayed from REVIEW_HW_S5 by the lead, and answered from PLD's side only.
+- **Delta 1 (allowance currency).** Answered by Proposition PATCH: PLD can meet HW's patch form, and what node A actually
+  owes is (P0) or (P1), not HW's union form as such. **Renegotiation request (§18.12): (E2^𝔉) should state its allowance
+  requirement as "node A's moment carries at most a per-cube constant", with ‖P‖_sh derived by monotonicity, so that the two
+  lanes stop quoting incomparable currencies.** The delta is then declared and closed.
+- **Delta 2 (level coverage, and the level-0 clause).** PLD covers **k ≥ 2** as of §17 and **k ≥ 1** as of §18.7; level 0 is
+  OPEN in both ((LCR)_0 / the level-0 Wilson window moment, §16.5 "Level 0", §17.6). HW's level-0 clause reads "with
+  Π_{Q∈Γ}e^{θX_Q} for Γ a set of level-0 cubes (Wilson window moment), Y at level 0" — with Γ and Y at the SAME level, while
+  the body of (E2^𝔉) has Γ at level j + 1 and Y at level j. **Confirmed mis-levelled from PLD's side**; the consistent
+  reading is Γ at level 0 with the Wilson window X_Q and NO Y (there is no level −1), or Γ at level 1 with Y at level 0.
+  Either way **PLD delivers neither today**, and this is a two-level hole at the bottom of the tower that TEL-f needs
+  (review S5-21 (ii)). Not closed here; recorded as the second-largest residual after the moment (§18.11).
+- **Delta 3 (F_< is a free unquantified symbol) — FREE on PLD's side, and that is good news.** HW §30.1 fixes F_< as "a
+  bounded weight that is a function of U_0, …, U_{k_0-1}" with all relaxations at levels ≥ k_0 + 1 and j ≥ k_0. So F_< reads
+  only levels ≤ k_0 − 1 ≤ j − 1, i.e. **strictly finer than the level-(k−1) column links that FT^far, COL-DEC and the
+  moment's G-hypothesis are about** (with k := j + 1, those are level-j links; F_< reads levels ≤ j − 1). In FT^far and
+  COL-DEC such a weight is one of the factors "Φ_{k′}, k′ < k, which read levels < k" and is excluded by the same line of the
+  proof. Hence **(E2^𝔉) may be quantified "for every bounded measurable F_< ≥ 0 of U_{<k_0}" at zero cost to PLD's law
+  conversion**, and node A's statements should be written that way. Request in §18.12.
+- **The TF-1 switch (HW §30.5 uses FINER-first telescoping on the (E2) route) is NOT a regression for node A.** PLD §17.2
+  builds its law with the finer capped spectators already in: "ν^{(k)}_k is the past law of levels ≤ k: density
+  ∝ e^{-S_0}Π_{i<k}K_iΠ_{j≤k}1_{R(𝔥),j}Π_{k′<k}Φ_{k′}", and Lemma GEO (iv) is precisely the clause that handles Φ_{k-1}
+  (the Φ_{k′} with k′ < k − 1 read levels < k − 1 and sit inside ν^{(k-1)}_{k-1}). This is the identification review S5-26
+  calls "correct and useful". **So switching TF-1 off reinstates no node-A law mismatch: the law PLD §17 is written for IS
+  HW's finer-first law, not the coarse-first one.** What TF-1 was protecting is a different thing — the (E1) form of the
+  weight — and that is dead for other reasons (E1-1). Reported back rather than absorbed, as asked, with this verdict.
+- **(CRC-1) status (relayed): dissolved as a wall but CONDITIONAL on (E2^𝔉).** Accepted, and the consequence is recorded in
+  §18.11: the single statement of §18.7 is then RLARGE's critical-path item 1, and it is node A's, i.e. this lane's.
+- **One narrowing in node A's favour (relayed, and it changes what must be proven).** HW §24.3 doubted that a good buffer can
+  screen, because bad-only goodness reads only the INTERIOR plaquettes of the buffer cubes, so far curvature can sit on the
+  straddling plaquettes (the LI-pw mechanism). REVIEW_HW_S5 finds the doubt does not transfer: LI-pw is **pointwise**, while
+  (E2^𝔉) is an **expectation**, and the measure suppresses the straddling configurations at cost e^{-c/g_j²}. **Accepted, and
+  used in §18.7: it means the screening content of the moment is a DECOUPLING under the measure, not a deterministic
+  geometric statement about buffer-good configurations.** §18.7 (c) states the decoupling.
+
+## 18.7 T15 (c): ONE statement for both walls. (CEM^{COL}), Theorem NA-PRICE^{E+}, Corollary E2-RED, Proposition ONE.
+Implications PROVEN-HERE (counted, item [E6] (2)); the statement itself OPEN
+
+### 18.7.0 The law class, written out (B1-compliant: no sup over weights)
+**Definition 𝔏^buf_k(R, 𝒜) (generators, not a sup).** Fix an admissible 𝔥, R ∈ 𝔉_𝔥, k ≥ 1, and a finite set 𝒜 of level-k
+cubes with **N_1(𝒜) R-free** and **𝒜 ∩ 𝒰_k = ∅**. 𝔏^buf_k(R, 𝒜) is the set of laws on (U_0, …, U_{k-1}) obtained by the
+following three steps, and by nothing else:
+1. take the past law ν^{R′,F_<}_m of levels ≤ m of a pattern R′ equal to R with finitely many cubes of 𝒜 ∪ col_{k-1}(𝒜)
+   DECLARED at level k or k − 1, for m ∈ {k − 1, k}, with any bounded measurable F_< ≥ 0 of U_{<k_0} inserted (k_0 ≤ k − 1);
+2. weight it by the **buffered far weight** w := h^{R,1}_m·1{Buf^R_ρ(𝒜_m) ∩ D_m = ∅}, where 𝒜_k := 𝒜, 𝒜_{k-1} := col_{k-1}(𝒜),
+   ρ = 3L − 1 = 8 (HW §30.3) — **and by no other weight**;
+3. take the marginal on (U_0, …, U_{k-1}).
+By **Lemma BUF** (at level m, applied to 𝒜_m, whose N_1 is R-free) together with **Lemma COL-DEC** (first clause, m ≥ 1) and
+**Lemma GEO (i), (iii), (iv)** under (C_S′) (Proposition FAR), every law ν ∈ 𝔏^buf_k(R, 𝒜) satisfies
+  **L_ν-weight ∩ L^∂_{k-1}(𝒜) = ∅**,
+i.e. it is of COL-DEC's form with respect to 𝒜: no factor of its density reads U_{k-1} on the level-(k-1) links with an
+endpoint under a cube of 𝒜. (The buffer indicator is compatible: it reads interiors of cubes at level-(k+1) index distance
+≥ 2 from 𝒜, hence disjoint from X_k(𝒜) — review S5-26's one-line verification, and §18.4 (d).)
+*Why this class and not §17.4's.* §17.4 quantifies over **every** ν_G with L_G ∩ X_k(S) = ∅, which contains HW's (E1) and is
+expected FALSE (HW [RHW4-fix E1-1], review S5-8). 𝔏^buf_k is generated by HW's own weights only. **Nothing below is asserted
+for all far weights.**
+
+### 18.7.1 The single statement
+**(CEM^{COL})_k [node A; NEW; OPEN; "column energy moment on COL-DEC laws"].** There is c_cem < ∞, independent of
+g ≤ g_0, k, K, T, 𝔥, R, 𝒜, A, A′, F and F_<, such that for every admissible 𝔥, every R ∈ 𝔉_𝔥, every k ≥ 1, every finite set
+A of level-k cubes with N_1(A) R-free and A ∩ 𝒰_k = ∅, every A′ ⊂ A, every ν ∈ 𝔏^buf_k(R, A), and every bounded measurable
+F ≥ 0 of the level-≤(k-1) fields OFF the columns of A ∖ A′,
+  **E_ν[Π_{Q∈A∖A′}e^{θY^f_Q}·F] ≤ (c_cem)^{|A∖A′|}·E_ν[F],   24θ(1 + 2Rg_K²) < 1,**
+with Y^f_Q := 24u_kF^col_Q(U_{k-1}) (HW §4's column energy, level index shifted as in §16).
+**The ONLY difference from (SF-cap)^{COL}_{k-1} (= §16.7's (LCR) in G-form, = §17.4's (SF-cap)^𝔉 renamed per B4) is that the
+factor Π_{Q}1_{G_Q} is ABSENT: the moment is asked on every column, defect-carrying ones included.** Four properties, each
+load-bearing and each checkable against §17.0's pre-stated bar:
+- **single level**: Y^f_Q is a functional of U_{k-1} alone, and the law is a law of level ≤ k − 1. No level-(k-1) defect
+  probability occurs anywhere in it, so it is NOT "(SDP)^A one level down" and NOT (J-NS^cd) renamed;
+- **a moment, not a probability**: it is of exactly the kind already named as node A's small-field input since §16.7;
+- **allowance (P1), i.e. per-cube and no shadow sum**: by Proposition PATCH (v) this is what the interface needs, and it is
+  what Cor. LAW (b)'s c_f = 0 already achieves for the G_Q-restricted version;
+- **defect-tolerant**: the one thing it adds.
+
+**Theorem NA-PRICE^{E+} (i): (SDP)^{A,far} at every level k ≥ 1, F-conditioned, in the union currency, for buffered far
+weights. CONDITIONAL (implication PROVEN-HERE; counted [E6] (2)) ⇐ (CLS-min) + (CEM^{COL})_k.**
+Under the standing setting of §18.0 ((F_R) with g_K² ≤ 1/(2R), SU(2), bad-only history-independent defects,
+ε_1 ≤ min{1/(4A_d), t_pr}, max{6θ, 24θ}(1 + 2Rg_K²) < 1), for every admissible 𝔥, every R ∈ 𝔉_𝔥, every **k ≥ 1**, every
+finite set S of level-k cubes with **N_1(S) R-free** and **S ∩ 𝒰_k = ∅**, every ν ∈ 𝔏^buf_k(R, S)-generating law at level k
+(i.e. ν = ν^w of step 2 before the marginal), and every bounded measurable F ≥ 0 of the level-≤(k-1) fields off the columns
+of S:
+  **E_ν[1{S ⊂ D_k}·F] ≤ (C_Ae^{-a_Au_k})^{|S|}·E_ν[F],**
+  **a_A := min{λκε_1²/256, 6θa_bad},  C_A := 2·max{n_int(1 − λ)^{-3/2}e^{λκε_1²R/256}, c_cem},  c_A := 0,**
+for any fixed λ ∈ (0, 1); and **a_A ≥ θa_bad unconditionally** (6θa_bad ≥ θa_bad; and λκε_1²/256 ≥ θa_bad at λ = ½ whenever
+κ ≥ 256c_pr/12 = 1/84270 = 1.18666·10⁻⁵, with the exact c_pr = 1/(640·53²) = 1/1797760, check p6 C1).
+*Proof.* Pointwise, since every Q ∈ S is bad on {S ⊂ D_k},
+  1{S ⊂ D_k} ≤ Σ_{T⊂S}Π_{Q∈T}1{ζ_Q = 1}1{Q ∉ 𝒞_k(U_{k-1})}·Π_{Q∈S∖T}1{Q ∈ 𝒞_k(U_{k-1})}
+(2^{|S|} subsets T; for Q ∈ S ∖ T the factor 1{ζ_Q = 1} ≤ 1 is dropped — review S5-19's wording repair applied: the only
+U_k-dependent factors kept are the 1{ζ_Q = 1}, Q ∈ T). Fix T and put **F_T := Π_{Q∈S∖T}1{Q ∈ 𝒞_k}·Π_{Q∈T}1{Q ∉ 𝒞_k}·F**, a
+function of U_{k-1} and of F's variables, hence of U_{≤k-1}.
+(1) *Law conversion, exact.* N_1(S) R-free and Lemma BUF give L_w ∩ X_k(S) = ∅ for the buffered w, so Lemma FT^far applies
+verbatim (no (LI^U), no allowance, Cor. LAW (a)). Declaring S at level k (ν ↦ ν′):
+  E_ν[Π_{Q∈T}1{ζ_Q = 1}·F_T] ≤ E_{ν′}[Π_{Q∈T}p_K(Q | U_{k-1})·F_T].
+(2) *Kernel branch.* Lemma KD with the 1{Q ∉ 𝒞_k} factors of F_T: p_K(Q | U_{k-1})1{Q ∉ 𝒞_k} ≤ p_mis, and
+u_{k-1} ≥ u_k − R ((F_R)) gives p_mis ≤ n_int(1 − λ)^{-3/2}e^{λκε_1²R/256}·e^{-λκε_1²u_k/256}.
+(3) *Centre branch, pointwise.* Lemma CW (CONDITIONAL ⇐ (CLS-min)): on {Q ∈ 𝒞_k}, F^col_Q ≥ a_bad/4, so Y^f_Q ≥ 6a_badu_k and
+1 ≤ e^{θY^f_Q}e^{-6θa_badu_k}. Hence
+  E_{ν′}[F_T] ≤ e^{-6θa_badu_k·|S∖T|}·E_{ν′}[Π_{Q∈S∖T}e^{θY^f_Q}·F′],  F′ := Π_{Q∈T}1{Q ∉ 𝒞_k}·F.
+(4) *The moment.* By Lemma COL-DEC (first clause; k ≥ 1) the marginal of ν′ on U_{≤k-1} lies in 𝔏^buf_k(R, S); F′ is
+measurable off the columns of S ∖ T (1{Q ∉ 𝒞_k} for Q ∈ T reads M̄_c, c ∈ ℓ(Q), whose S4′ contours stay in the endpoint
+blocks under Q, and T ∩ (S∖T) = ∅; review S5-19 checked exactly this measurability). So (CEM^{COL})_k with A := S, A′ := T
+gives E_{ν′}[Π_{S∖T}e^{θY^f_Q}F′] ≤ c_cem^{|S∖T|}E_{ν′}[F′] ≤ c_cem^{|S∖T|}E_{ν′}[F] (drop the indicators, F ≥ 0).
+(5) *Assemble.* E_{ν′}[F] ≤ E_ν[F] by step (1)'s DECL/(m1) chain applied to F alone (Z_{ν′} ≤ Z_ν, equal numerators on the
+declared event; or directly 1_{R′} ≤ 1_R). Each of the two per-cube factors is ≤ (C_A/2)e^{-a_Au_k}, so summing the 2^{|S|}
+subsets gives Π_{Q∈S}(b_1 + b_2) ≤ (C_Ae^{-a_Au_k})^{|S|}, times E_ν[F]. ∎
+**What this removes against §17.4 (five things).** (1) No (J-NS^cd) — the centre branch is priced directly by the moment.
+(2) No Lemma MD, hence no factor 81 per cube and **no restriction k ≥ 2: level 1 is covered**, since the proof needs a kernel
+at level k only (review S5-21 (ii)'s hole shrinks from two levels to one). (3) No level recursion of any kind, so RLARGE's
+requirement "never derived from (SDP)^A at level k − 1" is met by construction, not by moving content into a hypothesis
+(§17.4's NA-3 problem). (4) No defect-type split, so the four-branch 4^{|S|} count drops to 2^{|S|} and C_A's four-way max
+drops to two. (5) **c_A = 0**, i.e. allowance (P0): by Proposition PATCH (v) this is strictly stronger than HW asks and lowers
+HW's own b_n, b_D (check p6 B2). The statement is F-conditioned (B3), in the union currency with c_A = 0 (B2), and for
+buffered weights only (B1).
+
+**Corollary E2-RED ((E2^𝔉′) from the same single input): CONDITIONAL (implication PROVEN-HERE; counted with [E6] (2)) ⇐
+(CLS-min) + (CEM^{COL}).** Let **(E2^𝔉′)_{θ,ρ}** be HW §30.3's (E2^𝔉)_{θ,ρ} with three declared changes: its hypothesis
+"col(Γ) ∪ Y R-free" strengthened to **"N_1(col_j(Γ) ∪ Y) R-free"** (§18.4, buyable inside Theorem CRC-2T at ≤ ×82 on b_n,
+b_D, n_♯); F_< universally quantified (§18.6.2 Delta 3, free); and Γ ∩ A_{j+1}(𝔥) = ∅ or Γ = 𝒰_{j+1} (Proposition FAR (ii),
+true for CRC-2T's animals and for Cor. CRC-HW). Then (E2^𝔉′) holds with
+  **C_fc := c_cem + 81·C_Ae^{θa_badR},  C_A, a_A as in Theorem NA-PRICE^{E+},  a_A ≥ θa_bad,  c_A = 0,**
+i.e. with exactly HW §30.3's constant C_fc = c_sf + 81C_Ae^{θa_badR} at c_sf := c_cem.
+*Proof.* Write k := j + 1. Per Q ∈ Γ, HW Lemma CAP (ii)-(iii) pointwise: e^{θmin{π_Q,Y^f_Q}} ≤ e^{θY^f_Q}1_{G_Q} +
+e^{θπ_Q}1_{G^c_Q}, and 1_{G^c_Q} ≤ Σ_{x∈col_j Q}1{x ∈ D_j} (81 terms); π_Q = a_badu_{j+1} ≤ a_bad(u_j + R) by (F_R), so
+e^{θπ_Q} ≤ e^{θa_badR}e^{θa_badu_j}. Expand into the 2^{|Γ|} ordered partitions Γ = Γ_0 ⊔ Γ_1 and the 81^{|Γ_1|} choice
+functions x, and drop the buffer indicator (≤ 1; it may equally be kept inside w, §18.7.0 step 2). For a fixed (Γ_0, Γ_1, x)
+put **S := Y ⊔ x(Γ_1)**, a set of level-j cubes with S ⊂ P(Γ, Y) = col_j(Γ) ∪ Y, so N_1(S) is R-free by hypothesis and
+S ∩ 𝒰_j = ∅ by Proposition FAR ((i) for Y, (ii) for x(Γ_1)). Then
+  E_{ν^w}[Π_{Γ_0}e^{θY^f_Q}·1{S ⊂ D_j}] ≤ c_cem^{|Γ_0|}·E_{ν^w}[1{S ⊂ D_j}]  by (CEM^{COL})_{j+1} with A := Γ_0 ∪ Γ_1,
+A′ := Γ_1 and F := 1{S ⊂ D_j} (measurable on the level-≤j fields; for Q ∈ Γ_0 the columns are disjoint from x(Γ_1) by the
+partition, and from Y since Y lies outside col_j(Γ)), the law being in 𝔏^buf_{j+1}(R, Γ_0) by Lemma BUF at level j applied to
+col_j(Γ_0);
+  E_{ν^w}[1{S ⊂ D_j}] ≤ (C_Ae^{-a_Au_j})^{|S|}  by Theorem NA-PRICE^{E+} at level j with F := 1.
+Collecting, each Q ∈ Γ contributes ≤ c_cem + 81e^{θa_badR}C_Ae^{(θa_bad − a_A)u_j} ≤ c_cem + 81C_Ae^{θa_badR} = C_fc, using
+a_A ≥ θa_bad; and each y ∈ Y contributes C_Ae^{-a_Au_j}. The allowance is e^{0} ≤ e^{c_A‖P(Γ,Y)‖_sh} for any c_A ≥ 0
+(Proposition PATCH (i) is not even needed, since c_A = 0). ∎
+
+**Proposition ONE (one statement for both walls): PROVEN-HERE (logic).** Assume (CLS-min). Then (CEM^{COL})_k implies
+- **(a) (SF-cap)^{COL}_{k-1}** (§16.7's (LCR) in G-form / §17.4's (SF-cap)^𝔉 renamed), with c_sf = c_cem and c_f = 0:
+  multiply the integrand by Π_Q1_{G_Q} ≤ 1;
+- **(b) (J-NS^cd)_k** (§17.4), with C_cd = c_cem, **a_cd = 6θa_bad ≥ θa_bad**, and allowance e^{0}: pointwise
+  1{Q ∈ 𝒞_k, Q has a centre defect} ≤ 1{Q ∈ 𝒞_k} ≤ e^{θY^f_Q}e^{-6θa_badu_k} by Lemma CW;
+- hence **(c) Theorem NA-PRICE^E (i) of §17.4** (whose three inputs are (CLS-min), (SF-cap)^{COL}, (J-NS^cd)) **and Theorem
+  NA-PRICE^{E+} of §18.7**, and
+- **(d) (E2^𝔉′)** by Corollary E2-RED.
+**So both open walls of this session's scope — (J-NS^cd) (wall α) and (E2^𝔉) (wall β) — reduce to the single statement
+(CEM^{COL}) plus (CLS-min).** Moreover (b) gives a_cd = 6θa_bad, so **K12 reads θ ↑ 1/24 with a_A = a_bad/4** (check p6 C2),
+and the fallback θ ≈ a_ret/a_bad ≈ 8·10⁻⁷ (n_H × ≈ 5·10⁴) is no longer forced.
+**Logical strength, stated plainly (this is a consolidation, not a discharge).** (CEM^{COL}) is, as far as anything here
+shows, **STRICTLY STRONGER** than the conjunction (SF-cap)^{COL} + (J-NS^cd) it replaces: it implies both, and nothing here
+derives it from them. So:
+- **(J-NS^cd) is NOT discharged, and Theorem NA-PRICE^E (i) stands exactly as session 5 left it.** §18.7 is an ALTERNATIVE
+  route with one hypothesis instead of two, offered for the four reasons below, and the lane now carries both.
+- Reasons it is nevertheless the better target: (1) it is single-level and contains no defect probability, so it passes
+  §17.0's "not success" list and RLARGE's "never from (SDP)^A at level k − 1", which (J-NS^cd) does not; (2) it is the same
+  KIND of object as the input node A has owed since §16.7, so it adds no new category of difficulty; (3) it makes
+  a_A ≥ θa_bad unconditional and settles K12; (4) it covers k = 1 and carries c_A = 0, i.e. exactly the interface currency
+  §18.6 shows is needed. Against it: it is stronger, and if it is FALSE the lane must come back to branch 2 / (EG-link)
+  (§18.5 (f)). §18.7.2 says what is known about whether it is false.
+
+### 18.7.2 What (CEM^{COL}) reduces to, and whether it is false. Proposition SPLIT: PROVEN-HERE (logic; not counted)
+
+**Proposition SPLIT.** (CEM^{COL})_k follows, with c_cem = c_1·c_2, from two statements that share no variable:
+- **(CEM-1)_k [the moment; single level, NO far field, NO probability]:** for every R ∈ 𝔉_𝔥, k ≥ 1, A, A′, F as in
+  (CEM^{COL}) and the UNWEIGHTED past law ν_0 := ν^{R′,F_<}_{k-1} (step 1 of §18.7.0, w ≡ 1),
+    E_{ν_0}[Π_{Q∈A∖A′}e^{θY^f_Q}·F] ≤ c_1^{|A∖A′|}E_{ν_0}[F].
+- **(CEM-2)_k [the decoupling; the screening content]:** for the same data and the buffered far weight w of §18.7.0 step 2,
+    E_{ν_0}[Π_{Q∈A∖A′}e^{θY^f_Q}·w·F]·E_{ν_0}[F] ≤ c_2·E_{ν_0}[Π_{Q∈A∖A′}e^{θY^f_Q}·F]·E_{ν_0}[w·F].
+*Proof.* E_{ν^w}[Πe^{θY^f}F]/E_{ν^w}[F] = (E_{ν_0}[Πe^{θY^f}wF]/E_{ν_0}[wF]) ≤ c_2·(E_{ν_0}[Πe^{θY^f}F]/E_{ν_0}[F]) ≤ c_2c_1^{|A∖A′|}. ∎
+
+**(CEM-1): what it is and what it needs.** It is exactly **(LCR)_{k-1} with the factor 1_{G_Q} deleted**. Its two ingredients
+are named and neither involves the far field:
+- **(a) the main-term reduction OFF G_Q.** HW §6's F^col_Q(U_{k-1}) ≤ Σ_{x∈col Q}𝓔^{an}_{k-1,x}(U_{k-1}) is stated and proven
+  only on G_Q (defect-free column), because the representation (I^E_{k-1})″ has main-term densities only on small-field
+  regions. Off G_Q the needed inequality is F^col_Q ≤ Σ_{x∈col Q∖B}𝓔^{an}_{k-1,x} + Σ_{x∈B}(the R-operated large-field energy
+  of x), B := D_{k-1} ∩ col Q. **Nothing in PLD §16-§17 or HW §6 writes this**, and it is the first thing a proof of
+  (CEM-1) must write. It is a statement about ONE representation at ONE level, deterministic.
+- **(b) the coupling response for the full representation.** With (a), the moment becomes a coupling shift
+  u_{k-1} → (1 − λ_f)u_{k-1} inside the FULL (small-field + R-operated) representation, λ_f = 24θ(1 + 2Rg_K²) < 1. For the
+  small-field part this is (LCR) verbatim; for the R-operated part it is the requirement that CL^J/R1^J's activity bounds be
+  uniform in u on [(1 − λ_f)u, u]. §17.5 already recorded that CE-exp^k's hypotheses (N5-unif, L-loc) **do not state** that
+  uniformity. **So (CEM-1) = (LCR) + the reduction (a) + u-uniformity of the activity bounds on [(1 − λ_f)u, u].** All three
+  are single-level and small-field-or-representation statements. This is the honest content of "(EG) and (LCR^punct) merged".
+- *Relation to the Gaussian heuristic.* The unweighted moment's expected value is (1 − λ_f)^{-dof/2} per column with
+  dof = 3n_int·81 = 52488 at SU(2), d = 4, L = 3, i.e. log c_1 ≈ 26244·log(1/(1 − λ_f)) ≈ 1.82·10⁴ at λ_f = ½ (check p6 D1).
+  That is far below every ceiling it has to respect (§18.8), so (CEM-1)'s difficulty is entirely its PROOF, not its size.
+
+**(CEM-2): the screening content, and why the buffer-good EVENT alone cannot supply it. [the sharp negative]**
+(CEM-2) is a correlation bound between the future likelihood h^{R,1} (restricted to buffer-good far fields) and the column
+energy functional, under the past law. Two facts fix its difficulty:
+- **(α) Without it, the statement is FALSE at the recorded thresholds, and the arithmetic is the same one in two guises**
+  (REVIEW_HW_S4 X-1; HW [RHW4-fix E1-1]). If a weight may condition the far field on a configuration whose conditional mean
+  forces column curvature of order ε_1, the moment behaves as e^{λ_fu_{k-1}ℰ_*} with u_{k-1}ℰ_* of order u·ε_1²; at the
+  recorded g_K² ≈ 10⁻⁹⁴ and ε_1 ≈ 6.7·10⁻⁴⁰, **u·ε_1² = 4.49·10¹⁵** (check p6 A2), so the moment is e^{10¹⁵⁺} and no
+  g-independent c_cem exists. For a g-independent constant the FORCED mean column energy must be O(g_K²), i.e. forced
+  curvature ≲ g_K ≈ 10⁻⁴⁷.
+- **(β) Buffer-goodness bounds the curvature only by ε_1, and the gap is exactly the same number.** "No defect in the buffer"
+  means every INTERIOR plaquette of every buffer cube has ‖1 − V_P‖ < ε_1 = 6.7·10⁻⁴⁰. The ratio of what is needed to what is
+  given is (ε_1/g_K)² = **4.49·10¹⁵** — the identical quantity as in (α) (check p6 A2 verifies the identity
+  u·ε_1² = (ε_1/g_K)² at u = 1/g_K²). **So the good-buffer EVENT is not the mechanism of (CEM-2): a g-independent constant
+  cannot be extracted from a curvature bound at the defect threshold.** What must do the work is that w = h^{R,1} is a
+  LIKELIHOOD and not an adversary — i.e. typicality under the chain measure, not a configuration-space bound.
+- **(γ) The relayed narrowing is consistent with (β) and points the same way.** REVIEW_HW_S5 [relayed] narrows HW §24.3's
+  pessimism: HW doubted screening because bad-only goodness ignores the straddling plaquettes (the LI-pw mechanism), and the
+  reviewer observes that LI-pw is **pointwise** while (E2^𝔉) is an **expectation**, the offending configurations costing
+  e^{-c/g_j²}. That is precisely the typicality route of (β): the straddling configurations are rare under the measure, not
+  excluded by the event. **Taken together, (β) and (γ) say: (CEM-2) is a decay-of-correlations / decoupling estimate for the
+  past law between a far region and a column separated by one R-free ring, with the buffer indicator as a convenience and
+  not as the mechanism.** That is the same KIND of object as R1^J's gas convergence and as the (CRC-1) assessment in
+  REVIEW_HW_S4 ("a volume-uniform decoupling or cluster estimate … the obstruction is the representation, not convergence").
+- **(δ) What is NOT available, so that nobody re-walks it.** A purely geometric/deterministic screening lemma ("a buffer with
+  interior curvature < ε_1 forces column curvature ≲ g") is excluded by (β): the two thresholds differ by 4.49·10¹⁵ and ε_1
+  is g-independent while g_K is not, so no inequality between them can hold uniformly in g. And **Lemma SCR-type footprint
+  shrinking is not a decoupling**: conditioning on U_{k-1}, the level-k links interior to an R-free region are conditionally
+  independent with kernels centred at M̄_c(U_{k-1}), so the far weight has NO direct footprint there (this is Lemma BUF +
+  COL-DEC, already proven), and the lattice-unit footprint of the pushed-down weight shrinks by Σ_{r≥1}L^{k-r} = L^k/(L − 1)
+  = L^k/2 < L^k at L = 3 (check p6 E1), so one R-free ring of level-k cubes screens the footprint at EVERY finer level. **But
+  the correlation remains**, because the past law is not a product measure: the far weight biases U_{k-1} OUTSIDE the region
+  and U_{k-1} inside is coupled to it through the level-(k-1) kernel and 1_{R,k-1}. Recorded so that "the footprint shrinks"
+  is never mistaken for "the weight decouples". [The shrinking statement needs, beyond one level, the closed columns [𝒜]
+  relaxed — upward closed, hence inside 𝔉_𝔥, but feeding back into (CRC); it is used in NO counted item here.]
+
+**Verdict on whether (CEM^{COL}) is false.** Its (CEM-1) half is not known to be false and its expected size is tiny; its
+(CEM-2) half is FALSE if the weight class is widened to all far weights ((α), which is HW's E1-1 and review X-1), and is
+OPEN for the buffered class {h^{R,1}_m·1{Buf good}} that §18.7.0 fixes. **No counterexample to (CEM^{COL}) as stated is
+known, and §18.7.2 (β) shows precisely which route to it cannot work.** Status: **OPEN**, split into (CEM-1) (OPEN, three
+named single-level ingredients) and (CEM-2) (OPEN, a decoupling estimate).
+
+## 18.8 T15 (e): the c_lcr verdict
+
+**(i) What actually depends on c_lcr (traced through the lane files as they stand).**
+  c_lcr → c_sf (§16.7: c_sf = e^{2c_U(81+Δ_sh)}c_lcr; §17.2 Cor. LAW (b) on the HW route: **c_sf = c_lcr exactly**)
+        → C_A (§16.5, §17.4: C_A = 4·max{…, c_sf, …}; §18.7: C_A = 2·max{…, c_cem}) and
+          C_fc = c_sf + 81C_Ae^{θa_badR} (HW §15/§18.1, RLARGE l.391)
+        → C_ℓ = (1 − λ_*)^{-3n_int/2}C_fc (HW §30.4)
+        → HW's x_* = C_Ae^{a_AR + c_+c_att(ρ)}e^{-a_A/g_K²} and ε_2 = 6400^{n_♯}(2C_ℓe^{b_n+aR}e^{-a/g_K²})^{n_♯+1}
+        → the activity conditions (S1) Δ_ρ²x_* ≤ ½, (S2) ε_2 ≤ ½ and 2ε_2 ≤ c_U, and the ceiling
+          g²_CRC = a/(b_n + aR + log(12800C_ℓ)).
+**In every one of these, c_lcr enters only through log c_lcr, additively, against b_n ≈ 2.04·10¹⁰·c_+ (HW §30.6).** Hence:
+- **The VALUE of c_lcr is NOT load-bearing.** g²_CRC changes by the factor (1 + log c_lcr/b_n)^{-1}: at HW's recorded
+  b_n = 20416938755·c_+ ≈ 2.04·10¹⁰c_+, a c_lcr as large as **e^{10⁹}** moves g²_CRC by under 5% (check p6 B3), and the
+  Gaussian heuristic's own value gives log c_lcr ≈ 1.82·10⁴ (check p6 D1), thirteen orders below even that. The negative
+  control: log c_lcr = 10¹¹ WOULD bind (it moves g²_CRC by a factor ≈ 5.9), so the non-bindingness is a real inequality and
+  not a tautology (check p6 B3n).
+- **What IS load-bearing is EXISTENCE and UNIFORMITY**, in a list every item of which is used somewhere: g ≤ g_0 (the whole
+  smallness regime), k (level-uniform constants, RLARGE row 10b, HW §18.1 "the SAME constant at every level"), K and T
+  (volume), 𝔥 and **R ∈ 𝔉_𝔥** (REVIEW_RLARGE_V3 S-4, REVIEW_HW_S4 CR-2, HW §30.7's open node-A question), the sets A, A′, the
+  conditioning function F, the inserted F_< (§18.6.2 Delta 3), and **the weight class**.
+- **And the weight-class uniformity is NOT available in the form §16.7 states it** (REVIEW_HW_S4 X-1 + HW E1-1 + review
+  S5-8): over all G that do not read the column links, no finite g-uniform c_lcr exists, by §18.7.2 (α)'s arithmetic. **So a
+  certificate is impossible for (LCR) as written, independently of any analytic work.** That is a defect of the statement,
+  not of the constant.
+
+**(ii) The certificate target, stated exactly (what a certificate must deliver).** A proof of
+  E_ν[Π_{Q∈A∖A′}exp(λ_fu_{k-1}Σ_{x∈col Q}𝓔^{an}_{k-1,x})·1_{G_Q}·F] ≤ c_lcr^{|A∖A′|}·E_ν[F]
+with (1) λ_f = 24θ(1 + 2Rg_K²) < 1; (2) **the law class 𝔏^buf_k(R, A∖A′) of §18.7.0** — generated by HW's own buffered far
+weights, NOT a sup over G; (3) uniformity in g ≤ g_0, k ≥ 1, K, T, 𝔥, R ∈ 𝔉_𝔥, A, A′, F, F_<; (4) the allowance in form
+(P0) or (P1) of Proposition PATCH (v) — per-cube at worst, no shadow sum, never the slice; (5) the numerical side condition
+**log c_lcr ≤ 10⁹** (so HW's (S1)/(S2) ceilings move by < 5%). Clauses (2) and (4) are new asks and are the ones §16.7 and
+§17.6 get wrong; (5) is generous by thirteen orders. **The analytic content is clause (3)'s g-uniformity on the class (2),
+i.e. (CEM-2) restricted to defect-free columns.**
+
+**(iii) Statements that rest on the uncertified VALUE: none. The audit, item by item.**
+- §16.7 Theorem NA-PRICE (ii), §17.2 Cor. LAW (b), §17.4 Theorem NA-PRICE^E (i), §17.6's two interface lines, §17.8 (b),
+  §18.7's Theorem NA-PRICE^{E+} and Cor. E2-RED: **all labelled CONDITIONAL on a named input containing the constant**, with
+  "c_lcr not certified" said explicitly in §16.7, §16.11 (ii), §17.5 and §17.8 (b). **No mislabel.** This agrees with
+  REVIEW_PLD_S5 S5-25 ("no status error in PLD S5"; "I found nothing claimed PROVEN that rests on c_lcr"), reached here by an
+  independent trace.
+- **But one statement does rest on something worse than an uncertified constant, and it is a STATUS DOWNGRADE this session
+  records:** §17.2 Cor. LAW (b) and §17.6's "(SF-cap)^{A,far}_θ at level k (HW H6): ⇐ (LCR)_k in G-form with G = w
+  (directly…), c_sf = c_lcr, c_f = 0 exactly", and §17.4's parenthesis "(in particular HW's (E1) law ν^{(k),w}_k, **any w**)",
+  are delivered from (LCR) quantified over a class for which no finite g-uniform constant exists ((i) last bullet). The
+  IMPLICATIONS are valid; the INPUT is not merely uncertified but **expected false in that generality**. This is exactly
+  review binding fix B1, reached independently here, and §18.7 restates everything on 𝔏^buf_k. **§17 is not edited (it is
+  under review); the downgrade is recorded here and requested in §18.12.**
+- **One number that is NOT a c_lcr matter, flagged because it is larger than any c_lcr effect.** §16.8 computes σ_fl² =
+  16(1 + O(α_*))/λ_min with **λ_min ≥ 3.17·10⁻³** (sourced to RLARGE §0 and SF Proposition CI-0's 4.23·10⁻³). REVIEW_PLD_S3's
+  binding fix **L0-1** instructs that wherever an N5-sf0 "gap" is quoted the numbers are λ_min ≈ 7·10⁻⁸² (product-rule m) or
+  **≥ γ′(1 − ε_R)/9 ≈ 6.6·10⁻¹⁰** via Proposition RW-ℓ² (PROOF l.5322-5325). The two quote DIFFERENT sources, so L0-1 may or
+  may not govern §16.8 — a question for the SF / PROOF owners, not decidable in this lane. **If it does, a_ret falls by the
+  factor 3.17·10⁻³/6.6·10⁻¹⁰ = 4.80·10⁶** (check p6 D2), so a_ret/a_bad ≈ 8.03·10⁻⁷ becomes **≈ 1.67·10⁻¹³**, the K12
+  fallback θ falls with it and n_H rises by 4.8·10⁶. **Not resolved here, not used here, and §18.7's a_A = min{λκε_1²/256,
+  6θa_bad} does not depend on a_ret at all** — which is a further reason to prefer the §18.7 route: on it, the a_ret
+  question stops being load-bearing for θ. Request in §18.12.
+
+## 18.9 T15 (d): the match check, and what NA-PRICE^E becomes if (J-NS^cd) is discharged
+
+| clause | RLARGE v3 row 10b / §3 | HW §24.3 (after SL-1) | HW §30.3 (E2^𝔉) | PLD §17.4 / §17.6 delivers | PLD §18.7 delivers |
+|---|---|---|---|---|---|
+| law | every μ ∈ ℛ_𝔥^↑ ∪ {μ_{R(𝔥)}} | ν^{(k),w}_k, w = h_k | ν^{R,F}_j weighted by h^{R,1}_j, every R ∈ 𝔉_𝔥, F_< free | every ν_G with L_G ∩ X_k(S) = ∅, **any w** | 𝔏^buf_k(R, S): HW's buffered weights only, every R ∈ 𝔉_𝔥, F_< quantified |
+| set | every S ⊂ Λ_k | S under A ⊂ 𝒰_{k+1} | **far Y** ⊔ Γ's column, Γ at level j+1 | S with (C_S) | S with N_1(S) R-free and (C_S′) — covers far Y |
+| allowance | "c_A·shadow sums" | ‖S‖_sh (union; slice STRUCK) | c_A‖col Γ ∪ Y‖_sh (patch) | **s_k(𝔥)** (slice) | **c_A = 0** |
+| levels | every k | k ≥ 0 + level-0 clause | j ≥ k_0 + a (mis-levelled) level-0 clause | **k ≥ 2** | **k ≥ 1** |
+| exponent | a_A ≥ θa_bad | a_A ≥ θa_bad | a_A ≥ θa_bad | a_A ≥ θa_bad ⟺ a_cd ≥ θa_bad | a_A ≥ θa_bad unconditional |
+| form | probability | probability | one joint expectation | unconditioned probability | F-conditioned |
+| joint with (SF-cap) | via CAP-dec | via CAP-dec | **built in** | not written | Cor. E2-RED |
+
+**Findings (each a mismatch, each reported as such).**
+- **M-1 (allowance; binding).** §17.4 l.1848/l.1856 and §17.6 deliver the per-level slice s_k(𝔥); HW struck it [SL-1] for the
+  union form and HW §30.3 wants the patch form; by Proposition PATCH (ii) the slice is **incomparable** to both. §18.7
+  delivers c_A = 0, which satisfies every one of the three. (Independently found here and in review S5-9/S5-10/B2, and in
+  REVIEW_HW_S5 from the other side — the two reviews converging on the currency is correct.)
+- **M-2 (set class; binding) — and the sharpening.** HW §30.3 asks the price of a **far** set Y. PLD §17's (C_S) does not
+  cover it and GEO (ii) fails there (review S5-26 reason 2). **Sharpening (§18.2, §18.4): (C_S) is NOT the obstruction** —
+  only its clause S ∩ 𝒰_k = ∅ is used by GEO (i), (iii), (iv), FT^far and COL-DEC, and Proposition FAR proves HW's far Y
+  satisfies it automatically. The obstruction is GEO (ii), i.e. the WEIGHT, and **Lemma BUF closes it exactly** for one extra
+  R-free ring, which Theorem CRC-2T can buy for ≤ ×82 on b_n, b_D, n_♯ (§18.4, check p6 B1).
+- **M-3 (level range).** RLARGE and HW ask every k ≥ 0; §17 delivers k ≥ 2; §18.7 delivers k ≥ 1. **Level 0 remains OPEN**
+  ((LCR)_0 / the Wilson window moment), and HW's own level-0 clause of (E2^𝔉) is mis-levelled (§18.6.2 Delta 2). TEL-f needs
+  every level, so the interface is **not** delivered. This is the largest residual after (CEM^{COL}) itself.
+- **M-4 (weight class; binding, and it cuts against PLD).** §17.4/§17.6's "any w" is STRONGER than HW asks and is expected
+  FALSE (E1-1, X-1, §18.7.2 (α)). §18.7 restricts to 𝔏^buf_k. The sup-form statement is not to be proven.
+- **M-5 (RLARGE only).** Row 10b still asks for every μ ∈ ℛ_𝔥^↑ ∪ {μ_{R(𝔥)}} and every S ⊂ Λ_k — which neither HW §24.3 nor
+  HW §30.3 now asks, and which neither §17 nor §18 delivers. The row needs restating to the (E2^𝔉′) form.
+- **M-6 (form).** HW's (E2^𝔉) is ONE joint expectation; §17.4's theorem is an unconditioned probability. Review B3 and §18.7
+  state the F-conditioned form, which is what CAP-dec and (E2^𝔉) actually consume.
+- **M-7 (F_< unquantified).** Free on PLD's side, §18.6.2 Delta 3; a declaration fix in HW, not a cost.
+
+**What Theorem NA-PRICE^E becomes if (J-NS^cd)_k is discharged (with C_cd, a_cd ≥ θa_bad, allowance c_cd).** Its statement is
+unchanged in form and becomes **(SDP)^{A,far}_θ in HW §24.3's shape**:
+  E_ν[1{S ⊂ D_k}F] ≤ (C_Ae^{-a_Au_k})^{|S|}e^{c_cd‖S‖_sh}E_ν[F],  a_A = min{λκε_1²/256, 6θa_bad, a_cd} ≥ θa_bad,
+  C_A = 4max{n_int(1−λ)^{-3/2}e^{λκε_1²R/256}, c_sf, 81n_int(1−λ)^{-3/2}e^{2λκε_1²R/256}, C_cd},
+for **k ≥ 2**, S satisfying (C_S), and laws of COL-DEC's form — once M-1, M-4 and M-6 are applied (union currency, buffered
+weights, F-conditioned). **But that is NOT (E2^𝔉), and four further items are needed, which is the main structural answer of
+this session:** (1) the far-set class (M-2: Proposition FAR + Lemma BUF + the extra R-free ring, §18.2-§18.4); (2) the
+allowance in a form the interface can read (M-1: Proposition PATCH, so (P0)/(P1) in the hypothesis); (3) the JOINT
+combination with the (SF-cap) half in one expectation (M-6, M-7: Cor. E2-RED via CAP-dec); (4) levels k = 1 and 0 (M-3).
+**So discharging (J-NS^cd) alone would not deliver what HW consumes.** §18.2-§18.4 supply (1) and (2) and half of (4)
+(k = 1, through §18.7); (3) follows from §18.7; level 0 stays OPEN.
+
+## 18.10 T17: check p6 (criteria checks/p6_criteria.md 12:50:40 UTC, md5 d6e90f4899385fbec5f668d033a2efeb, written BEFORE
+the script; script checks/p6_pld.py 12:51:17 UTC, md5 12db2379…; output checks/p6_out.txt; stderr checks/p6_err.txt;
+record checks/p6_time.txt)
+
+- One run, 12:51:26 UTC, 0.04 s, 14.7 MB, exit 0, nice 10, one thread, `python3 -I`, no numpy/BLAS, load 2.52 at launch.
+  **The numeric lock was NOT taken**, and deliberately: the brief exempts exact rational/symbolic arithmetic in plain python,
+  and p6 imports only `fractions`, `math`, `sys` (no numpy, no linear algebra, no sampling). Justification recorded in
+  checks/p6_time.txt. No re-run, no trap, no pkill, no process left.
+- **SUMMARY AS RUN: FAIL: F2. All other criteria PASS, including every negative control (A3, B3n, E1n).**
+- **The F2 failure, reported as a failure.** F2 asked for the exact identity 81 + 2401·32·80·Σ_{m≥1}3^{-m} = Δ_sh = 3073361
+  with the INFINITE series; the script formed the finite partial sum Σ_{m=1}^{199} = ½ − 3^{-199} as an exact Fraction and
+  demanded exact equality, which cannot hold. **This is a SCRIPT defect, not a mathematical failure and not a criterion
+  defect.** Nothing was re-run and no file was edited after the run. The post-hoc hand arithmetic
+  (2401·32·80/2 + 81 = 3073280 + 81 = 3073361) is recorded in p6_time.txt and **labelled post-hoc; F2 is NOT counted as
+  passed.** §18.5 (b′)'s proof does not use the numerical value of Δ_sh, only that it is finite and depth-free, which
+  §16.6 (b) and p4 D2b supply, so no statement in §18 moves.
+- **Rigorous and load-bearing (all PASS):** A1 (exact c_pr = 1/1797760 = 5.562478·10⁻⁷, κ_min = 1/84270 = 1.186662·10⁻⁵);
+  **A2** (the identity u·ε_1² ≡ (ε_1/g_K)² at u = 1/g_K², and its value **4.489·10¹⁵** at the recorded g_K² = 10⁻⁹⁴,
+  ε_1 = 6.7·10⁻⁴⁰ — this is §18.7.2 (α)/(β)'s number, and the identity is why the two guises of the obstruction are the same
+  quantity); **B1** (b_n(1,1) = 20416938755 exactly, reproducing HW's "≈ 2.04·10¹⁰c_+"; the one-extra-ring cost of §18.4 is
+  exactly ×82 on both b_n and b_D); **B2** (g²_CRC = 4.8979·10⁻⁹⁷ at c_+ = 1, reproducing HW §30.6's recorded 4.9·10⁻⁹⁷ to
+  0.0%; and ÷82.0000 after the ring); **B3** (log c_lcr = 10⁹ shifts g²_CRC by 1.0490, i.e. < 5%); **C1** (the a_A ≥ θa_bad
+  equivalence holds with equality at κ_min, strictly at κ = 1, and FAILS at κ_min/2 — so the inequality is sharp);
+  **C2** (a_A/a_bad = **1/4** exactly at θ = 1/24, κ = 1, λ = ½, i.e. the 6θa_bad entry binds; κ_crit = 1/14045 =
+  7.119972·10⁻⁵); **C3** (the 2-branch assembly of §18.7, 0 violations); **E1** (the geometric series identity and the strict
+  bound Σ_{r=1}^{i}L^{k-r} = (L^k − L^{k-i})/(L−1) ≤ L^k/2 < L^k at L = 3, all k ≤ 30); **F1** (the detached-cube union-form
+  shadow sum is 82 + 256(K−j−2), linear in the depth — Proposition PATCH (iii)); **G1** (m_* = 41.3678 and the coherent
+  one-level price exponent 6L⁴a/g_K² = 4.86·10¹⁰ ≫ m_*·log 324 = 239.14, i.e. §18.5 (e)'s price beats the 324-per-level count
+  over the whole admissible chain depth, by eight orders).
+- **Negative controls (all behaved as designed):** A3 (at ε_1 := g_K the A2 quantity is exactly 1, so §18.7.2's gap is the
+  gap and not an artefact of the formula); B3n (log c_lcr = 10¹¹ WOULD bind, shift 5.8979 — so B3 is a real inequality);
+  E1n (at L = 2 the shrinking bound FAILS at (k, i) = (2, 2), so L ≥ 3 is load-bearing in §18.7.2 (δ)).
+- **Informational / conditional:** D1 (dof = 3n_int·81 = 52488, Gaussian log c_1 = 18190.95 at λ_f = ½ — the heuristic's own
+  value, thirteen orders below §18.8 (ii)(5)'s side condition 10⁹, and NOT a proven constant); D2 (the λ_min ratio
+  3.17·10⁻³/6.6·10⁻¹⁰ = 4.8030·10⁶, so a_ret/a_bad would become 1.6719·10⁻¹³ **if** REVIEW_PLD_S3's L0-1 governs §16.8's
+  λ_min — a question for the SF/PROOF owners, §18.8 (iii), with no claim attached).
+- **Scope.** Arithmetic about recorded constants and about bounds PLD/HW already state. p6 tests NOTHING about the lattice
+  measure: not (CLS-min), not (LCR), not (CEM^{COL})/(CEM-1)/(CEM-2), not (E2^𝔉), not (J-NS^cd), not Theorem CRC-2T, and
+  nothing nonabelian. In particular **no number in p6 is evidence for or against the single open statement of §18.7.**
+
+## 18.11 T16 + outcome against the pre-stated targets (§18.0), status changes, and tally
+
+**T15 (a): MET.** (E2^𝔉) is restated in PLD's language and decomposed into (D1) + (D2) + (D3) (§18.1), with a per-item
+verdict for GEO, FT^far, COL-DEC, DIL-L, MD, NA-PRICE^E (i) and Cor. LAW. Verdict: session 5 supplies the ARCHITECTURE and
+the top-level conversion, and not the set class, the push-down for HW's weight, the level range or the two open halves —
+**which is REVIEW_PLD_S5 S5-26's verdict, reached independently (§18.3 records the provenance), with one sharpening: (C_S)
+is not the obstruction, GEO (ii) is** (§18.2, §18.9 M-2). **(NP-F8) MET**, with the minimal enlargement named (one R-free
+ring) and its cost computed in HW's own constants (×82; p6 B1, B2).
+**T15 (b): (NP-F6) MET.** Induction on levels does not close (J-NS^cd). Three independent reasons (§18.5): no base case; no
+contraction, because CW's certificates across levels are NESTED not additive and the one additive currency (DIL-L (ii)'s
+kernel energy) is identically zero on centre defects; and the favourable coherent sub-case cannot cash its (huge, p6 G1)
+pointwise certificate. **Compounding is NOT a reason: §18.5 (b′) PROVES the union-form excess line
+‖x(S)‖_sh ≤ ‖S‖_sh + (1 + Δ_sh)|S| that review item B2 (b) asked for, so Cor. LAW (c) is correct in the union currency.**
+Branch 2 of REVIEW_PLD_S4 attempted (§18.5 (f)): **finding (EG-cur)** — (EG) is VACUOUS in the kernel-energy currency and
+non-empty in the curvature-energy currency, and the single missing ingredient is the identification of the S4′ kernel mode
+with a local curvature minimiser, named **(EG-link)** and left OPEN.
+**T15 (c): PARTIAL SUCCESS as pre-stated, and the honest qualifier.** ONE statement, **(CEM^{COL})_k** (§18.7.1), yields
+both walls: Proposition ONE derives (SF-cap)^{COL}, (J-NS^cd), Theorem NA-PRICE^E (i), the new Theorem NA-PRICE^{E+} and
+(E2^𝔉′) from it plus (CLS-min). It is single-level, a moment, defect-tolerant, carries allowance (P0) (c_A = 0) and covers
+k ≥ 1. **It is STRICTLY STRONGER than the two hypotheses it replaces** — stated plainly in §18.7's "Logical strength" —
+so this is a consolidation, not a discharge; **(J-NS^cd) is not discharged and Theorem NA-PRICE^E (i) stands as session 5
+left it.** The pre-stated "Success" bar (which required the implications from (CLS-min) and the one statement ALONE, which
+is met, AND that it not be a two-level defect probability, which is met) is reached except that the statement is stronger
+than the conjunction; §18.0 did not require weakness, so **T15 (c) is recorded as the pre-stated Partial success, with the
+strength disclosed**, not as Success.
+**T15 (d): MET.** Seven mismatches M-1…M-7 (§18.9), the three-way table, and the exact statement of what NA-PRICE^E becomes
+if (J-NS^cd) is discharged — together with the finding that **discharging it alone would still not deliver (E2^𝔉)**, four
+further items being needed, of which §18.2-§18.7 supply three and a half.
+**T15 (e): MET.** §18.8: the value of c_lcr is NOT load-bearing (it enters only as log c_lcr against b_n ≈ 2.04·10¹⁰c_+;
+p6 B3/B3n), existence + uniformity are, the weight-class uniformity is unavailable in §16.7's form so **no certificate for
+(LCR) as written is possible**, and the certificate target is stated in five clauses. **No statement labelled PROVEN rests
+on the uncertified value** (independent audit, agreeing with review S5-25) — but §17.2 Cor. LAW (b), §17.4's "any w" and
+§17.6's two interface lines rest on an input **expected false in that generality**, which is a status DOWNGRADE recorded
+below. One number flagged that is larger than any c_lcr effect (the λ_min / a_ret question, p6 D2).
+**T16: MET** (this section; the status changes are listed with their direction). **T17: MET with one disclosed FAIL**
+(F2, a script defect; §18.10). **T18: MET** (§18.12; nothing outside PLD.md, PLD_LOG.md and checks/p6_* was written).
+
+**Counted, PROVEN-HERE (unreviewed): 2 items.**
+- **[E6] (1)** The interface repair, one item: **(C_S′)** (the clause audit of (C_S)), **Lemma FT^far′** (FT^far under
+  L_G ∩ ℓ(S) = ∅), **Proposition FAR** (i)-(ii) (HW's far sets and animal columns satisfy (C_S′)), **Lemma BUF** (one R-free
+  ring ⇒ L_w ∩ X_j(𝒜) = ∅, so FT^far and COL-DEC apply to HW's own weight on FAR sets) and **Proposition PATCH** (the
+  allowance-currency reconciliation: monotonicity, the slice's incomparability, the per-cube-depth prohibition, and the
+  localisation of the patch allowance into the hypothesis).
+- **[E6] (2)** **Theorem NA-PRICE^{E+} (i)** as an implication ⇐ (CLS-min) + (CEM^{COL}), with **Corollary E2-RED**
+  ((E2^𝔉′) from the same input) and **Proposition ONE** (both walls from the one statement).
+**Not counted:** §18.5's Proposition CHAIN (structure/arithmetic about the available certificates) including the union-form
+excess line (b′) and the branch-2 finding (EG-cur); Proposition SPLIT (§18.7.2, logic); §18.8's audit; §18.9's table.
+**ARGUED (uncounted):** §18.5 (e) (the coherent-chain curvature growth and its depth bound; abelian, linear order).
+**OPEN, newly named here:** **(CEM^{COL})_k** [node A; the single residual], split into **(CEM-1)_k** (the defect-tolerant
+unweighted moment: (LCR) + the main-term reduction off G_Q + u-uniformity of the activity bounds on [(1−λ_f)u, u]) and
+**(CEM-2)_k** (the decoupling / screening estimate for the buffered far weight); **(EG-link)** [node A; the branch-2
+ingredient]; **𝔏^buf_k(R, 𝒜)** (the B1-compliant law class) and **(E2^𝔉′)** (HW's (E2^𝔉) with the three declared changes).
+**Renamed per review B4:** (SF-cap)^𝔉 → **(SF-cap)^{COL}**.
+
+**Status CHANGES to earlier items, with direction.**
+- **DOWNGRADE.** §17.2 Cor. LAW (b), §17.4's parenthesis "any w", §17.6's "(SDP)^{A,far} for every far weight w" and
+  "(SF-cap)^{A,far} ⇐ (LCR)_k in G-form": the implications stand, the INPUT is expected false in that generality
+  (§18.7.2 (α); HW E1-1; reviews X-1 and S5-8). Everything in §18 is restated on 𝔏^buf_k.
+- **DOWNGRADE.** §17.4/§17.6's allowance in the slice s_k(𝔥) does not deliver HW's H7 or HW's (E2^𝔉): the slice is
+  incomparable to both (Proposition PATCH (ii)).
+- **UPGRADE.** The far-set class and the push-down for HW's weight, recorded as missing by review S5-26, are supplied
+  (Proposition FAR + Lemma BUF), at a computed cost in HW's constants.
+- **UPGRADE.** The union-form excess line review B2 (b) left open is PROVEN (§18.5 (b′)).
+- **UPGRADE.** Level 1 is covered by Theorem NA-PRICE^{E+} (§17 covered k ≥ 2); the bottom hole shrinks from two levels to
+  one. Level 0 remains OPEN.
+- **UPGRADE (conditional).** K12: on the §18.7 route a_cd = 6θa_bad, so θ ↑ 1/24 with a_A = a_bad/4 (p6 C2), and the
+  fallback θ ≈ 8·10⁻⁷ (n_H × ≈ 5·10⁴) is no longer forced; a_ret stops being load-bearing for θ, which also defuses the
+  λ_min question of §18.8 (iii).
+- **NO CHANGE.** (J-NS^cd), Theorem NA-PRICE^E (i), Lemma MD, Lemma DIL-L, the p5 numbers and (NP-F5) all stand.
+**Tally proposal: +2 PROVEN-HERE (unreviewed); 0 OPEN items closed.** Row 10b's residual is EITHER (J-NS^cd) (session 5,
+unchanged) OR (CEM^{COL}) (session 6, one hypothesis instead of two, and the only one of the two that also delivers
+(E2^𝔉′)); the lane carries both routes and the integrator chooses.
+
+**The single biggest remaining obstruction in this scope, named.** **(CEM-2)**: a decoupling estimate, under the past law of
+a pattern in 𝔉_𝔥, between HW's buffered far weight h^{R,1}_m·1{buffer good} and the coarse column-energy functional
+F^col_Q(U_{k-1}), across one R-free ring. It is the whole screening content of (E2^𝔉); it is NOT obtainable from the
+buffer-good event alone, because the event bounds curvature by ε_1 while a g-independent constant needs it bounded by
+≈ g_K, and those differ by the factor 4.489·10¹⁵ (p6 A2, A3). Everything else in the lane is proven, or reduces to
+(CEM-1), which is three named single-level small-field/representation statements.
+
+## 18.12 FOR OTHER FILES (session 6; not edited)
+
+Nothing below is applied anywhere. Session 6 wrote only PLD.md (appended), PLD_LOG.md (appended) and checks/p6_*. No git
+command was run; no commit, push or PR; no axiom or CL edit.
+
+**To the PLD owner (next session's in-place [RPLD5-fix] pass; §17 is deliberately untouched here because REVIEW_PLD_S5 was
+being written against it).**
+1. Apply review B1-B6 as the review states them. §18 is already written in the B1/B2/B3/B4-compliant form, so §18 needs no
+   change: use §18.7.0 for the law class, §18.6.1 for the allowance currency, §18.7's theorem statement for the
+   F-conditioned form, and (SF-cap)^{COL} for the renamed input.
+2. Record in §17.6 and §17.9 the DOWNGRADE of §18.11 (the "any w" / (E1) quantifier and the slice currency), and in §17.3
+   the review's S5-13 correction (max_e|W_e| = 1/27 over supp W, 2/81 only over the interior links of a corner block).
+   Nothing in §18 uses either number.
+3. §17.4's (J-NS^cd) and Theorem NA-PRICE^E (i) should carry the union allowance ‖S‖_sh and the F-conditioned form; §18.5
+   (b′) supplies the excess line B2 (b) asks for, ready to quote.
+
+**To the HW owner (lane H) — four requests, all cheap, one of them a renegotiation.**
+1. **Buy one extra R-free ring in Theorem CRC-2T step (4)**: replace R″ := R′^{-Col(Y)} by
+   R‴ := R′^{-(Col(Y) ∪ Col(N_1(col 𝒟 ∪ Y)))}. It is upward closed, hence in 𝔉_𝔥; it is bought by CRC-2T's own induction
+   hypothesis since N(R′) < N(R); the geometric price is one factor 81 (‖N_1(X)‖_sh ≤ 81‖X‖_sh, from Lemma SL's own step
+   Σ(N_1(X)) ⊂ N_1(Σ(X))), so step (4)'s e^{c_U‖·‖_sh} becomes e^{82c_U‖·‖_sh} and c_+ = c_A + c_U becomes c_A + 82c_U.
+   **Exact cost (check p6 B1, B2): b_n and b_D grow by exactly ×82 and g²_CRC falls by exactly ×82.0000 (4.8979·10⁻⁹⁷ →
+   5.9731·10⁻⁹⁹ at c_+ = 1); n_♯ grows by ×82.** g-independent, so a lower g_0 and a bigger n_♯, not a loss of uniformity.
+   **Why: without the ring, h^{R,1}_j may read the crossing links of X_j(Y), GEO (ii) fails and Lemma COL-DEC breaks, so
+   node A has no product-kernel law one level down for far cubes (review S5-26 reason 2). With the ring, Lemma BUF (§18.4)
+   makes the whole of PLD §17.2-§17.4 available on far sets.** HW must re-run its own step (4)-(5) with R‴ to confirm that
+   nothing else in its proof reads R″ specifically; §18.4 checks only the parts of CRC-2T it quotes.
+2. **Renegotiate (E2^𝔉)'s allowance clause.** By Proposition PATCH (§18.6.1), what node A can and should owe is "the
+   small-field moment carries at most a PER-CUBE constant and no shadow sum" (form (P0) or (P1)); HW's union-form patch
+   allowance e^{c_A‖col Γ ∪ Y‖_sh} then follows by monotonicity, because every set node A prices is a subset of the patch.
+   State it that way so the lanes stop quoting incomparable currencies. **And note the gain: §18.7 delivers c_A = 0, so
+   c_+ = c_A + c_U drops to c_U and HW's own b_n, b_D fall by the factor (c_A + c_U)/c_U, g²_CRC rising by it.**
+3. **Quantify F_< universally** in (E2^𝔉) ("for every bounded measurable F_< ≥ 0 of U_{<k_0}"). It is free on node A's side:
+   F_< reads only levels ≤ k_0 − 1 ≤ j − 1, i.e. strictly finer than the links FT^far, COL-DEC and the moment's G-hypothesis
+   are about, and in those proofs it is one of the "Φ_{k′}, k′ < k" factors already excluded (§18.6.2 Delta 3).
+4. **Fix the level-0 clause of (E2^𝔉)**, which is mis-levelled: the body has Γ at level j + 1 and Y at level j, while the
+   clause puts both at level 0. The consistent readings are Γ at level 0 with the Wilson window X_Q and no Y, or Γ at level 1
+   with Y at level 0. Node A delivers neither today (§18.9 M-3): k = 1 is covered by §18.7, k = 0 is OPEN.
+5. **Reported back, not absorbed (as the lead asked): the TF-1 switch-off is NOT a node-A regression.** PLD §17.2 builds its
+   past law with the finer capped spectators Φ_{k′}, k′ < k, already inserted, and Lemma GEO (iv) is exactly the clause that
+   handles Φ_{k-1}. So HW §30.5's finer-first order IS the law PLD §17 is written for (review S5-26 says the same). What
+   TF-1 protected was the (E1) form of the weight, which is dead for other reasons (E1-1). No action needed beyond deleting
+   the worry.
+
+**To the RLARGE integrator.**
+1. **Row 10b.** Two routes, both node A's, and the row should name both: (i) (SDP)^{A,far} ⇐ (CLS-min) + (SF-cap)^{COL} +
+   (J-NS^cd) (PLD §17.4; k ≥ 2); (ii) (SDP)^{A,far} ⇐ (CLS-min) + **(CEM^{COL})** (PLD §18.7; k ≥ 1, c_A = 0, a_A ≥ θa_bad
+   unconditional, and it also delivers (E2^𝔉′) by Cor. E2-RED). Route (ii) has ONE hypothesis and is the only one that
+   reaches HW's (E2^𝔉); its hypothesis is strictly stronger. Add rows **(CEM^{COL})** [node A, P], **(CEM-1)**, **(CEM-2)**
+   and **(EG-link)** [node A].
+2. **Row 10b's quantifiers are stale** (§18.9 M-5): it asks every μ ∈ ℛ_𝔥^↑ ∪ {μ_{R(𝔥)}} and every S ⊂ Λ_k, which neither
+   HW §24.3 nor HW §30.3 asks and neither PLD §17 nor §18 delivers. Restate it to HW's (E2^𝔉′) form.
+3. **The requirement "never derived from (SDP)^A at level k − 1"** (RLARGE l.396-404, quoting HW §18.1) needs a ruling for
+   one case: Proposition CD (b)'s CONTRACTING level induction (324ηe^{a_AR} ≤ 1) is convergent, not LOOP-const, so it is not
+   obviously what the prohibition is aimed at. §18.5 does not rely on the ruling either way (CD (b) fails for three other
+   reasons), but if the ruling is "prohibited" then CD (b) should be struck from the route list rather than left open.
+4. **K12.** On route (ii), θ ↑ 1/24 with a_A = a_bad/4 and the fallback θ ≈ a_ret/a_bad ≈ 8·10⁻⁷ is not forced; a_ret then
+   enters only (RLF-0)/(RLF-δ), where any a_ret > 0 suffices. Record both readings against the chosen route.
+5. **Critical path.** With (CRC-1) dissolved-but-conditional on (E2^𝔉) [relayed from REVIEW_HW_S5], item 1 of the critical
+   path is **(E2^𝔉)**, i.e. node A's; §18.7/§18.11 name its single residual as **(CEM-2)** plus **(CEM-1)**.
+
+**To the SF / PROOF owners (one question, and it is bigger than any c_lcr effect).**
+PLD §16.8 computes σ_fl² = 16(1 + O(α_*))/λ_min with λ_min ≥ 3.17·10⁻³, sourced to RLARGE §0 and SF Proposition CI-0
+(4.23·10⁻³). REVIEW_PLD_S3's binding fix **L0-1** instructs that wherever a "gap" of N5-sf0 is quoted the numbers are
+λ_min ≈ 7·10⁻⁸² or ≥ γ′(1 − ε_R)/9 ≈ 6.6·10⁻¹⁰ via Proposition RW-ℓ² (PROOF l.5322-5325). **Does L0-1 govern §16.8's
+λ_min, or are the two quoting genuinely different operators?** If it governs, a_ret falls by ×4.8030·10⁶ (p6 D2), so
+a_ret/a_bad ≈ 8.03·10⁻⁷ becomes ≈ 1.67·10⁻¹³, the K12 fallback θ falls with it, and n_H rises by the same factor. Not
+decidable in this lane; not used in §18 (route (ii)'s a_A does not involve a_ret at all).
+
+**To the next reviewer of this lane (REVIEW_PLD_S6), the three places to attack first.**
+1. **Is (CEM^{COL}) false?** §18.7.2 (α) shows the sup-over-weights version is; §18.7.2 (β) shows the buffer-good event
+   cannot supply the constant. Look for a buffered weight h^{R,1} and a pattern R ∈ 𝔉_𝔥 under which the conditional mean
+   column energy is bounded below by a g-independent multiple of ε_1². If one exists, route (ii) dies and the lane returns
+   to branch 2 / (EG-link).
+2. **Is Lemma BUF's ring enough?** It gives L_w ∩ X_j(𝒜) = ∅ for N_1(𝒜) R-free. Check that nothing else in PLD §17.2-§17.4,
+   used on far sets, silently needs GEO (ii) itself rather than its consequence, and that Proposition FAR (ii)'s hypothesis
+   Γ ∩ A_{j+1}(𝔥) = ∅ really covers every Γ that Theorem CRC-2T feeds (its animals, and 𝒰_{j+1} in Cor. CRC-HW).
+3. **Is Proposition ONE's strength claim right?** It asserts (CEM^{COL}) ⇒ (SF-cap)^{COL} + (J-NS^cd) and no converse. Try
+   the converse: does the pair, plus (CLS-min) and the kernel lemmas, give back the defect-tolerant moment? If it does, the
+   consolidation is free and §18.7's "strictly stronger" disclosure should be withdrawn in PLD's favour.

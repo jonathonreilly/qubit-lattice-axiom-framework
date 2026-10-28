@@ -444,3 +444,101 @@ a proof the session lacked. The pre-stated expectation (≥ 2 of 5 narrow, demot
    FILES; FLOW's 1.03 GB cap breach and an unlogged threshold relaxation; PLD's immaterial rule-2
    tautology), plus two criteria files that were themselves wrong (SQ's q5, FLOW's B4 — the latter fixing a
    FAIL at pre-registration).
+
+## PLD session 6 — the node-A walls (T51-D). LANDED.
+
+PLD.md l.1-1966 verified byte-identical (md5 35b33c8f…); §18.0 PRE-STATED was the first edit (12:28:16 UTC,
+7793 bytes). §18.0-§18.12. **Counted PROVEN-HERE (unreviewed): 2.** **0 OPEN items closed.**
+Check p6: **SUMMARY "FAIL: F2"**, all else PASS including all three negative controls. F2 is a script defect
+(a finite partial sum against the criterion's infinite series); reported as a FAIL, **nothing re-run or
+edited**, hand arithmetic labelled post-hoc, F2 not counted as passed, and no §18 statement depends on it.
+Lock deliberately not taken (exact `fractions`/`math` only, no BLAS); justified in checks/p6_time.txt.
+
+**(J-NS^cd): still OPEN. Induction on levels does NOT close it** (Proposition CHAIN, §18.5). Three
+independent reasons:
+1. **No base case.** NA-PRICE^E is proven for k ≥ 2, so CD (b)'s induction bottoms out exactly where the
+   theorem cannot reach.
+2. **No contraction.** The two pointwise certificates the event gives — F^col_Q(U_{k-1}) ≥ a_bad/4 (CW at
+   level k) and F^col_x(U_{k-2}) ≥ a_bad/4 (CW at k-1) — are **nested, not additive**: TE (i)/(iii) make the
+   second a sub-sum of the tower the first already bounds. So they certify a_bad/4, not a_bad/2, and η = 1
+   is what the certificates *give*, not a crude bound. The one genuinely additive currency, DIL-L (ii)'s
+   kernel energy, is **identically zero on centre defects by definition**.
+3. Even the coherent sub-case, which carries a huge certificate (F^col_Q ≥ L^{4m}a_bad, price exponent
+   4.86e10 against 324/level), **cannot cash it**: cashing needs a moment on a defect-carrying column.
+
+**>>> The lead's pre-stated failure mode NA-F1 is HALF REFUTED, and I record that against myself.** I
+pre-stated "the level induction for (J-NS^cd) **compounds**, so the energy grading is not closed by
+induction alone." The conclusion holds; **the mechanism I guessed is wrong.** Compounding is *not* a reason:
+the worker **proved** the union-form excess line ‖x(S)‖_sh ≤ ‖S‖_sh + (1 + Δ_sh)|S| that REVIEW_PLD_S5's
+B2(b) left open, so **Corollary LAW (c) is right in the union currency**. The real obstruction is the
+*nesting* of the certificates, which is a different and more interesting failure.
+
+**Branch 2 (the route REVIEW_PLD_S4 left unattempted) WAS attempted. Finding (EG-cur):** (EG) is **vacuous**
+in the kernel-energy currency and **non-empty** in the curvature-energy currency. The single missing
+ingredient is the identification of the S4′ kernel mode with a local curvature minimiser, named
+**(EG-link)**, OPEN.
+
+**(E2^𝔉): not supplied by session 5 (confirming REVIEW_PLD_S5 independently) — but its law-conversion
+obstruction is now CLOSED.**
+- **Sharpening of the review: (C_S) is NOT the obstruction.** Only its clause S ∩ 𝒰_k = ∅ is used by GEO
+  (i),(iii),(iv), FT^far and COL-DEC, and **Proposition FAR** proves HW's far Y satisfies it automatically.
+  **The obstruction is GEO (ii) alone — about the *weight*, not the *set*.**
+- **Lemma BUF:** one extra R-free ring gives L_w ∩ X_j(𝒜) = ∅ via LI^U-0′, so **FT^far and COL-DEC both
+  apply to HW's own weight on far sets.** CRC-2T can buy the ring; exact cost **×82 on b_n, b_D, n_♯ and
+  ÷82.0000 on g²_CRC** (p6 B1/B2). The pre-stated (NP-F8) is MET with the minimal enlargement named *and
+  priced*. *Lead: forwarded to HW session 6, since ÷82 lands on its lever — on the pre-ring figures, full
+  removal of the ×6561 gives ~3.2e-93/c₊, and ÷82 gives ~3.9e-95/c₊, still ~2.5× below the recorded 1e-94
+  ceiling. So "the headline failure vanishes" does not survive the ring purchase against that ceiling. It
+  does not matter, because the binding ceiling has ~55 orders of slack, but it must be reported honestly.*
+
+**One lemma for both — YES, with the honest qualifier.** **(CEM^{COL})_k:**
+E_ν[Π_{Q∈A∖A′} e^{θY^f_Q}·F] ≤ c_cem^{|A∖A′|}E_ν[F] on the B1-compliant law class 𝔏^buf_k. It is
+**(SF-cap) with the factor 1_{G_Q} deleted** — single-level, a moment not a probability, defect-tolerant,
+allowance (P0). **Proposition ONE** (proven) derives from it + (CLS-min): (SF-cap)^{COL}, (J-NS^cd),
+NA-PRICE^E (i), the new NA-PRICE^{E+}, and (E2^𝔉′) (Corollary E2-RED). **Qualifier recorded prominently by
+the worker: it is strictly STRONGER than the pair it replaces, so this is a CONSOLIDATION, not a
+discharge** — (J-NS^cd) and NA-PRICE^E stand as session 5 left them. *This is the right label and the
+worker volunteered it.*
+
+**Proposition PATCH (proven) — the statement REVIEW_HW_S5 called "a differently-shaped statement nobody has
+written", now written, with a structural explanation of WHY nobody had.** Monotonicity of ‖·‖_sh means any
+set node A prices is ⊂ the patch, so **HW's union form follows free**; the slice is **incomparable** to both
+consumers; per-cube depth is the thing that must never appear; and the finding: **NA-PRICE generates no
+allowance at all, it only TRANSMITS the hypothesis's — so the patch allowance is a CLAUSE OF THE
+HYPOTHESIS.** That is why no §16-§17 statement has that shape. What it would take: the moment with a
+per-cube constant and no shadow sum. *Lead: this is the root diagnosis of the HW/PLD interface defect that
+two reviews found from opposite sides.*
+
+**NA-PRICE^{E+} (proven implication ⇐ (CLS-min) + (CEM^{COL})) is a large simplification of the pricing:**
+a_A = min{λκε_1²/256, 6θa_bad} ≥ θa_bad **unconditionally**, c_A = 0, F-conditioned, **k ≥ 1**, **no MD, no
+81, no recursion, 2^{|S|} instead of 4^{|S|}**. K12 then reads θ ↑ 1/24 with a_A = a_bad/4 (p6 C2).
+If (J-NS^cd) is discharged, NA-PRICE^E becomes (SDP)^{A,far} in HW §24.3's shape at k ≥ 2 — **but still not
+(E2^𝔉)**: four further items are needed (far-set class, allowance form, joint CAP-dec combination, levels 1
+and 0), of which §18 supplies three and a half.
+
+**Seven interface mismatches M-1…M-7 reported** (allowance, set class, levels, weight class, RLARGE's stale
+quantifiers, form, F_<). **And a correction to REVIEW_HW_S5: the TF-1 switch-off is NOT a node-A
+regression** — PLD §17.2 is already written for the finer-first law. *Lead: two lanes now disagree on this;
+recorded, not adjudicated here.*
+
+**c_lcr verdict.** The **value** is not load-bearing (it enters only as log c_lcr against b_n ≈ 2.04e10·c₊;
+log c_lcr = 1e9 shifts g²_CRC by 4.9%, 1e11 would bind — p6 B3/B3n). **Existence and uniformity are.** No
+statement labelled PROVEN rests on the value (independent audit, agreeing with REVIEW_PLD_S5's S5-25). But
+**no certificate for (LCR) as written is possible: the weight-class uniformity it asserts is expected
+false.** A certificate target is stated in five clauses.
+**>>> Flagged as bigger than any c_lcr effect, and it is PROOF-owned (mine):** §16.8's λ_min = 3.17e-3
+against REVIEW_PLD_S3's binding L0-1 (6.6e-10). **If L0-1 governs, a_ret falls ×4.80e6** (p6 D2). A question
+for SF/PROOF; route (ii) defuses it. *Carried into the consolidation.*
+
+**Single biggest remaining obstruction: (CEM-2).** A decoupling estimate, under the past law of a pattern in
+𝔉_𝔥, between HW's buffered far weight and F^col_Q(U_{k-1}), across one R-free ring. **It is not obtainable
+from the buffer-good event alone** — the event bounds curvature by ε_1 while a g-independent constant needs
+≈ g_K, and those differ by **4.489e15** (p6 A2, with negative control A3 showing it is the gap and not a
+formula artefact). **The mechanism must be the weight's *typicality*, not the event** — the same direction
+as REVIEW_HW_S5's narrowing (LI-pw is pointwise, (E2^𝔉) is an expectation). Everything else reduces to
+**(CEM-1)** = (LCR) + the main-term reduction off G_Q + u-uniformity of the activity bounds on
+[(1-λ_f)u, u] — three named single-level statements.
+
+**Scoring T51-D:** PASS on reporting a status for both walls and on the one-lemma question (answered yes,
+with the correct "consolidation not discharge" label). NA-F1 half-refuted as above. 0 OPEN items closed —
+the worker says so plainly, which is the behaviour the anti-inflation clause asked for.

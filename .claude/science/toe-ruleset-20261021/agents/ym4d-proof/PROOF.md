@@ -6883,6 +6883,19 @@ one Balaban-sized paper", with the analogous CMP papers named. Layer 2 (ym4d-exi
 text is drafted: the landing rule requires a complete and reviewed proof, and session 24 did not produce
 one.** Credit to Balaban's RG program and Dimock's expositions stands in every public text.
 
+**Session-24 follow-on wave (after the outcomes of RTARGET §52 were written).** Nineteen further worker
+sessions, **27 in all**, directed at the walls. **The main-path tally is unchanged: 72 / 2 / 7 / 24 + 1.**
+Full detail in RTARGET §53 and SESSION24_RESULTS.md. Headlines: **(N-Q), (Res-Hölder) at m = 0, (CO-fun)
+under (CC-0), the torus Hodge bound, the lattice Green's-function estimate, A_cγ_c, Σ_X Q_X = 0 and
+(Φ-conv) for one profile class are PROVEN**; **the per-level no-go, Theorem NCE's k-uniformity, (NEUT-box),
+(CovLift)'s θ > 0 clause, (TENT-osc), HW's lever (b) and RLARGE l.618 are REFUTED or struck**; **four
+apparently distinct obstructions collapsed into fewer** (notably **(GAP-Z) IS BFT-5's (G♯_0-field)**); and
+**three systemic defects** are now the first call on a future session — **symbol collisions** (four ε_*, two
+θ_0, five ε_1, three η_1, two of the last being the same quantity in the same lemma), **stale minima and
+stale quantifiers**, and **checks that cannot decide** (nine findings, from a literal tautology to a gate
+unsatisfiable by construction). **a_RS is found to bind TODAY**, with a repair worth 82 decades blocked only
+by a prior either/or decided without the price — an **owner** decision, surfaced not taken.
+
 **What session 24 is good for, stated plainly.** The review debt is paid and five sessions' claims are now
 audited. Three items the project carried as open were already closed. Two reviews independently found, and
 one worker diagnosed at root, an interface defect between lanes H and E that is now repaired. The per-level

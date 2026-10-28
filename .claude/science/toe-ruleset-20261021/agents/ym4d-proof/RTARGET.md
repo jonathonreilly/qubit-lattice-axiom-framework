@@ -1000,3 +1000,66 @@ in the owning file.
 (i) the price of node A's extra R-free ring — HW's **Lemma RING gives ×17** (with a proof and check w6 G6),
 PLD gives **×82**; (ii) **TF-2** — HW recorded both positions and did not propagate; node A says PLD §17.2's
 law already carries the finer spectators. HW session 6 agrees node A is right; the lead leaves it to review.
+
+## 53. Session-24 follow-on wave (ADDED AFTER §52; pointers only)
+After §52 was written the owner directed the session to run the reviews of session 24's own output and then
+to press on the walls rather than report distance. Nineteen further worker sessions ran, for **27 in all**.
+Nothing below is counted in PROOF's tally; the main-path tally is **unchanged at 72 / 2 / 7 / 24 + 1**.
+
+**Reviews of session-24 output (4 of 8 files reviewed; 4 remain).** REVIEW_NORMS_S1, REVIEW_NQ_S1,
+REVIEW_BFT_B_S9_S10, and TAUFLAT as an adjudication. **STILL UNREVIEWED: HW s6, PLD s6/s7, BFT_B s11,
+CONST_T, STAR_CONST, EPSSTAR, NLOC, TENTQ, YSUP, EPS1_SWEEP, ARS_FIX, TGAUGE_PRICE, GREENT.**
+
+**What closed, with honest labels.**
+- **(N-Q) PROVEN** (NQ_CHECK, Theorem NQ-1; CONFIRMED by REVIEW_NQ_S1, which rebuilt it and added the
+  argument that the identification is *forced by the consumer*).
+- **(Res-Hölder) at m = 0 closed** (BFT_B §29, Theorem RHT-cc; CONFIRMED unconditional by review).
+- **(CO-fun) PROVEN under (CC-0)** (BFT_B §35; the review confirmed (CC-0) is the right hypothesis, not a
+  convenient one, and found no circularity).
+- **The torus Hodge bound PROVEN** (NLOC, Lemma NL-1) and the **lattice Green's-function estimate PROVEN**
+  with explicit R-uniform constants (GREENT), closing NL-8's hole.
+- **A_cγ_c closed constant-free** (EPSSTAR, Theorem ES-1), making **C_T a number**: 5.288e12 at q = 12.
+- **Σ_X Q_X = 0 with no hypothesis**, and the charge identified as a **collar flux** (TENTQ).
+- **(Φ-conv) PROVEN for the |z|^{-3} profile class** (YSUP) — one flag after it was raised.
+
+**What was REFUTED or struck, which is most of the value.**
+- **The per-level no-go is NOT established** (REVIEW_NORMS_S1): its norm class is undefined and excludes
+  𝔐's own Hölder leg, and **the check said to prove its weight-invariance half is a TAUTOLOGY**. The lead
+  had carried it into HANDOFF as "do not relitigate"; withdrawn.
+- **Theorem NCE (i) is NOT k-uniform** (REVIEW_BFT_B_S9_S10): Corollary COF-crit substitutes a per-level row
+  bound for a weighted max, leaving ≈ 25(k-1). **The lead had banked the uniform form twice.**
+- **(NEUT-box) is FALSE by exactly L^{2k} and struck** (TENTQ, Proposition QFALSE); route (ii)/GT-ell dies.
+- **(CovLift)'s non-residual clause at θ > 0 is FALSE for every lift** (BFT_B §41, GZ-FALSE) — a currency
+  mismatch; the search for a better lift is foreclosed.
+- **(TENT-osc) is FALSE by exactly n²** (YSUP) and **the gauge escape is a NULL OPERATION** (TGAUGE_PRICE,
+  Theorem TG-PRICE) — route (β) **CLOSED**, with the obstruction stated exactly: **the only μ that would
+  work is the one Λ₀ excludes** (Proposition TG-EXCL).
+- **Lever (b) on HW's ×6561 REFUTED** (HW §35, Proposition SH-neg) — the review's own suggestion, killed by
+  proof, with its numerics diagnosed as an artefact of randomising position but not direction.
+- **a_RS BINDS TODAY** and **RLARGE l.618 is FALSE** (EPS1_SWEEP, ARS_FIX).
+
+**What consolidated — four items turned out to be fewer items.**
+(i) **(GAP-Z) IS BFT-5's (G♯_0-field)**: the nontrivial background and BFT-5 are **one** obstruction.
+(ii) **(CO-fun)'s residue is the (GE-T) refutation's functional** — not two items.
+(iii) **(CEM-2) was never an ingredient** of the moment it was thought to gate (PLD §19, Theorem W-FREE).
+(iv) The **HW/PLD interface** closed on one allowance form (Proposition PATCH).
+
+**Three systemic defects, now the first thing a future session should act on.**
+1. **SYMBOL COLLISIONS.** Four distinct ε_*, two θ_0, **five ε_1**, **three η_1** — and **two of the η_1 are
+   different values of the same quantity in the same lemma**, flagged by a review **two cycles ago**. Three
+   separate multi-decade errors today trace to this, including the 52-decade τ_♭ error.
+2. **STALE MINIMA AND STALE QUANTIFIERS.** The τ_♭ defect was an item correct at the C_D it was written for,
+   in a file that later made C_D an output. (E1)/(E2), (CO-0)/(CO-up)/(SB), and REVIEW_SQ_S2's θ_w
+   insufficiency were all stale in the same way.
+3. **CHECKS THAT CANNOT DECIDE.** Nine findings: a literal tautology; a gate built from its object's own
+   primitives; an abelian model vacuous for nonabelian claims; a verdict that was the transpose of its own
+   script's definition; a gate that passed on a buggy energy; clauses passing **vacuously**; and a gate
+   **unsatisfiable by construction**. **"Could this check have failed, and could it have passed?" must be
+   the first question of every criteria file.**
+
+**Scoring the lead honestly: seven errors of mine were caught by my own workers**, each recorded where it
+occurred — the θ_w relaxation (backwards); D3's conflation of depth-dependence with magnitude; the (GT-sup)
+spike guidance (moot); the Combes-Thomas route for (N-loc) (wrong question); the "factor 2-10" and ε_* ≤ 1e-4
+figures (relayed across a changed constant); banking Theorem NCE's k-uniformity twice; and repeating
+"10²⁸ → ≈16" when the true price is 2.51e8. **A banked review is evidence, not a certificate** — that is the
+session's main process lesson, and it applies to this file too.

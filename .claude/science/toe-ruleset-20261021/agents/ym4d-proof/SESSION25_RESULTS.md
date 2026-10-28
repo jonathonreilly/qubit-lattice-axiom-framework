@@ -1306,3 +1306,27 @@ exactly what the Opus R4 worker (ROTDEF.md) is testing. **Opus panellist P5 drop
 23 REFUTED, 26 NOT-VERIFIED; hit rates SQ 75.9 %, BFT 66.7 %, FLOW 68.0 %. **Most dangerous NOT-VERIFIED: the
 uniform S_E projection / no-cancellation estimate used to bank the GE-T refutation and discard downstream
 PW/SR content** — i.e. lead decision D1's premise may itself be unsupported.
+
+**C2 — BFT lane B sessions 9-11 — `REVIEW55_BFTB.md`** (claude-opus-5-5, max). **21 CONFIRMED, 9 NOT-VERIFIED,
+18 REFUTED**; exact checks r55b_dip, r55b_num pass, dip control fired. **Three reversals of BANKED verdicts —
+none applied to PROOF.md until the Codex check (CODEX_REVIEW_C2.md) reports:**
+- **(CO-fun) as stated is TRUE on the whole composite-co-closed class** (given COF's lane-A inputs) — via an
+  exact **dipole identity** (canonical root-charged source = top residual qδ_b + box-local divergence-form
+  qG_b; LIN0/GU bound it with no L^{2k−3}) plus the max-flow split. **Independent of, and stronger than, C7's
+  X1** — two Opus 5.5 reviewers, different batches, same conclusion. The [S10-fix 1] restriction to (CC-0)
+  would be unnecessary; (TENT-Q) would not block the curvature half.
+- **Proposition GZ-FALSE refuted:** GZ-SLOT assumes 𝔉_k = Σ_j F_j, but TOWER-VAR has its Wilson term at level 0
+  only; the θ > 0 content of the g_Z clause is just (C_g-θ) for the residual slot; (CURV-dec) is not an input;
+  "a better lift is foreclosed" would be withdrawn. (Disagrees with REVIEW55_LEAD H15's narrower reading;
+  Codex asked to settle.)
+- **Corollary COF-crit has a second defect** (Lemma CD only for gauge directions vanishing at the roots).
+  The level-count factor k remains (agrees with S10-6).
+- Also: l.3810 is false pointwise (correct value at **l.4202**) but true as a functional on Λ_0; BFT-5_E (c) is
+  CONDITIONAL on (N1-nd), not PROVEN; **TRANSP is a sketch, never cite it as PROVEN**; "(GAP-Z) is BFT-5's input
+  (1)" — dependent, not identical; (Y-sup^loc) is false near p for every representative.
+- **What still blocks BFT-5 clause (b): its scope** — background Z(V_k), the full 𝔐-pair bound, weighted
+  locality, and the factor k for the rows.
+**Pending PROOF.md changes (after Codex):** withdraw [S24-note 3] and the "(CovLift) θ > 0 REFUTED" line;
+drop (CURV-dec) from the open list; upgrade "(CO-fun) under (CC-0)" to "as stated, given COF"; correct the
+[S24] item 4 (NCE not k-uniform; bulk term ≍ n⁴‖D^⊥‖_∞ missed; (Res-Hölder) closed only relative to the top
+residual).

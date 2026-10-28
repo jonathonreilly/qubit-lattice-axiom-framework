@@ -357,3 +357,90 @@ non-residual g_Z components at θ > 0 (OPEN). Second: the off-critical-set curva
 norm pair, and its closure was by an identity (the forced cascade) rather than by a better estimate, so it
 is not the Π_ex tail of COMP-F1 in disguise. Target T51-E is PASS on (Res-Hölder), (CO-0), (CO-up), the
 (NC-Γ) restatement and BFT-5's statement; FAIL on (Mult-Y) and (CovLift), not attempted.
+
+## REVIEW_BFT_A_S8 (T51-A, 5 of 5 — T51-A COMPLETE). 586 lines, 18 findings, 9 binding fixes.
+
+BFT_A.md still 351969 B; no git, no numeric lock, no floating-point job — the reviewer's new results are
+exact rational arithmetic (scripts in the reviewer's scratch: revA8/rev8_exact.py, rev8_psi.py).
+
+**>>> THE STAND-IN QUESTION, ANSWERED LOUDLY — AND THIS IS A CONSTRUCTIVE REVERSAL.**
+**The refutation of (GE-T) does not need the stand-in at all, and the route §38.8 uses to it is WRONG.**
+§38.8 l.3582-3585 routes the tent coefficient through "ψ_u(X) ≈ … is the level-0 spike a of §38.4
+(measured a = -0.0022; ARGUED identification)". **That identification is not available:** ψ_u(X) =
+(h^{0→k}u)(c_X) and sp_0 are different functionals, and ba8's own output separates them (at the non-level-k
+root, S_C0 has sp_0 = 0 with φ_1 = -0.002619; CG has sp_0 = -0.0017 with φ_1 = -0.000713 — slope ≈ -1.1, a
+factor-3.7 sensitivity **the session never reports**). Worse, *a* was measured at a level-k root in two
+representatives that are **not S_E**, and lane B's **PROVEN** §16.2 Step 1 forces sp_0(Π_Ex; c_X) to be a
+partition-of-unity remainder, O(n^-3), **not** *a*.
+
+**But ψ_u carries no representative, so the reviewer computed it exactly.** For u := ⅛d*δ_p (p the
+(0,1)-plaquette at c_X + (1,0,0,0)) — co-closed, admissible with R = 1 — lane B's §16.2 Step 0 gives
+**λ^E_X(u) = 0 for every box containing supp u**, so Π_E u⃗ = u⃗ and **nothing can cancel the tent**.
+Exactly: **φ₁ = -1/432, φ₂ = -17/104976, same sign, ratio 17/243, ψ_u = -65/26244 at k = 2.** Tent
+ℓ¹ = (130/6561)·L^{3(k-l)} against (GE-T)'s C_GT·L^{-3l}: **(GE-T) is FALSE by ≍ L^{3k}**, modulo two
+routine estimates. The same exact computation reproduces E3's zero-pattern exactly (0 at four symmetric
+offsets, ±1/54 at the asymmetric ones) and the measured φ₂/φ₁ ≈ 6.9%.
+
+**Verdict: lead decision D1 (one slice, S_E) is WELL FOUNDED — for the TENT reason, not the measured-spike
+reason.** The spike half does rest on the stand-in; the transport is sound in substance but the file's
+justification is one clause ("plus terms smooth at Z"). The reviewer **supplies the missing estimate**
+(Σ_X dχ⁵_X = 0 plus d*a_X = 0 at interior sites ⇒ no point divergence in S_E), and REVIEW_BFT_B_S8 derived
+the same thing independently. (PW-i) for Y^p itself stays ARGUED.
+*Lead note: the reviewer found a better proof of the session's own refutation than the session had. This is
+the second constructive reversal pattern in this project's history — the checker supplying the result rather
+than only breaking it.*
+
+**All three of the lead's primed checks came back clean.** No PROVEN item depends on TE's size or on FS;
+PW-E is nowhere used as if it had content; nothing closes the factor k or (PW-ii).
+
+**PW-cc CONFIRMED, and its uniformity in k and T holds.** m′ := m*′/3 is pinned *before* the estimate
+(l.1471); S(m′) = coth⁴(m′/2) is a ℤ⁴ sum dominating every torus; G_D(m′) = e^{20m′}G_D♭ is k,T-uniform;
+κ_± are standing parameters. Every exponent re-done. **This is the session's one unconditional theorem.**
+
+**DF, RF, TE (identity), RC: CONFIRMED. PW-E: CONFIRMED as an implication**, with the correction that one of
+its *other* inputs (EP-rec's c_r = 24) is itself ARGUED. **Proposition SR is now VACUOUS for S_E**, not
+merely short of (PW-ii) — §40's PW-SR row misleads.
+
+**Provenance CONFIRMED** (byte boundaries exact). But **the §36 disclosure pre-states the whole session-8
+story, so F3/F4 carry no pre-registration weight** — the session says so, though §40 alone would not reveal
+it. **ba8's verdicts match the pre-registered criteria exactly** (both re-derived: ρ = 8.0244 ≥ 4 and
+0.2303 ≥ 0.1644 ⇒ F3; 0 > 0.11515 false ⇒ not F6). Three disclosure fixes: undisclosed "F6-test YES"
+print-floor lines at three offsets; "ε = 0 exactly" unsupported by a 6-decimal print; E4 uninformative and
+misplaced. One undisclosed plan deviation (E1b run at (3,1), pre-registered (2,2)).
+
+**The biggest live wall, now sharpened into a DICHOTOMY by the exact ratio 17/243.** A representative map
+top-anchored for Y^p *and* 𝔐^∇-compatible for configurations. The dichotomy: **the full σ correction costs
+a forbidden L^{2l(Z)}η point gradient, while §38.8's cheap "move only φ₁" escape leaves ≈ 7.5% of the spike,
+still level- and k-independent, so (PW-i) still fails. Every finite funnel truncation leaves a
+level-independent remainder.** Good news and the lever: **the level-k tents CAN be removed by a gauge smooth
+on scale n (cost ≍ η, allowed); the intermediate spikes cannot.**
+
+**Highest-value missing object, per this review: "lead decision D1's remainder bound for composite-co-closed
+(NC-Γ), which is written nowhere."**
+**>>> IT WAS WRITTEN CONCURRENTLY.** BFT_B session 9 §31's **Proposition NCR** is exactly that bound, in
+product form, PROVEN-HERE and exact. The reviewer could not see it (the two ran in parallel). So (NC-Γ)'s
+remainder IS written, and what remains is only its two factors — **(CO-fun)** and **(GT-sup)** — which are
+now BFT_B session 10's entire scope, commissioned with the review's exact spike data forwarded to it.
+
+---
+
+# T51-A SCORED: COMPLETE. All five outstanding hostile reviews written.
+
+**Headline survival:** CRC-2T survives; EPS-T survives with one added hypothesis; FLOW S13 survives;
+lane A's refutation survives on *better* grounds than it claimed; lane B S8 was already confirmed.
+**No headline was refuted outright.** Three were narrowed, one session's reported verdicts were reversed
+three times, one session's framing was relabelled (bestiary, not cluster expansion), and one review supplied
+a proof the session lacked. The pre-stated expectation (≥ 2 of 5 narrow, demote or refute) is **met**.
+
+**What the five reviews changed about the project's state, collectively:**
+1. **The constants crisis was false.** The smallness condition is satisfiable; the binding ceiling has ~55
+   orders of slack; HANDOFF's resume step 3 is withdrawn; the whole tightening is one ×6561 geometric factor
+   that is probably removable.
+2. **Three "open" items were already closed** by lane reviews nobody had reconciled ((CO-0), (CO-up), (SB)).
+3. **Two reviews independently converged on the HW/PLD allowance currency** as the real interface defect.
+4. **The target's adequacy problem largely dissolved** (SQ proved θ_w = 2 natively), and was replaced by two
+   concrete constants: (CONST-T) and D3's compounding factor.
+5. **Process debt found: three rule breaches** (HW's rule-2 criteria contamination and missing FOR OTHER
+   FILES; FLOW's 1.03 GB cap breach and an unlogged threshold relaxation; PLD's immaterial rule-2
+   tautology), plus two criteria files that were themselves wrong (SQ's q5, FLOW's B4 — the latter fixing a
+   FAIL at pre-registration).

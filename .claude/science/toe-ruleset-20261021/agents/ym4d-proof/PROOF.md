@@ -2,6 +2,8 @@
 
 > **PROVENANCE WARNING (2026-10-28T22:11:08Z, lead now claude-opus-5-5).** Every Claude-authored result in sessions 24 and 25 — lead consolidation and all worker files, commits 811b8ed6de through 666a71b7b9 — was produced on **claude-opus-5**, not the owner-required model (Claude: Opus 5.5 at extra effort or higher; Codex: gpt-6-astra at max). The owner has ruled that work likely unreliable. **Treat every session-24/25 status, fix, flag, refutation and number in this file as PROVISIONAL** until the Opus 5.5 review sweep recorded in SESSION25_RESULTS.md §PROVENANCE has re-established it. The only session-24/25 checks run at an approved setting are the Codex gpt-6-astra/max reviews (`CODEX_REVIEW_*.md`). The tally is reported as 72 / 2 / 7 / 24 + 1 **pending** that sweep.
 
+> **[S26-REVIEW] CORRECTIONS FROM THE OPUS 5.5 RE-REVIEW (2026-10-28T22:47:53Z).** REVIEW55_LEAD.md re-checked 157 lead claims in this header, the [S24] tail, HANDOFF, RTARGET §51-§54 and INTEGRATION_AUDIT: **83 CONFIRMED, 4 NOT-VERIFIED, 70 REFUTED** (35 misstated the source, 19 went stale against work the lead had read, 16 faithful to a source that is itself refuted). Sampled source fidelity: 41/49 when written, 31/49 still true now. **Read every session-24/25 bullet below against REVIEW55_LEAD.md** (ids H*, T*, F*) and REVIEW55_ARS.md. Outright reverts, marked inline: **[S24-fix 1]** (REVIEW_NORMS_S1 RN1-7c says PROOF's Z_col ≥ 27 × spread is TRUE; this was a false erratum — restate as an addition); the **N1-8 'correction stands' sentence** in the no-go withdrawal; **every obstruction count** — ONE ([S24-note 2]), THREE ([S25-fix 2]), TWO ([S25-fix 5]): three named requirements, no established identification between any two, independence count NOT-VERIFIED, and the 'P proven, Q not attempted, so P ≠ Q' argument is invalid; 'Highest leverage: (HESS-rel)' (refuted); **[S24-flag 1]** (no live constant conflict: [SF7-edit] already adopted λ_min ≥ 3.17·10⁻³ — copy it into the body lines still printing 6.6·10⁻¹⁰); the **θ_0 clause of [S24-flag 2a]** (the 52 decades are in η_♭, 26.04 in τ_♭, and TAUFLAT says 'not a symbol confusion'). In the [S24] tail: 'per-level route dead by theorem' → **OPEN**; 'a_RS binds TODAY, 82 decades' → **REFUTED** (see [S25-fix 4]; a_RS has no live consumer); 'RLARGE l.618 false' → **TRUE as written**; GREENT's constants are **COMPUTED, not proven**; (CEM-2) → (BCH-1); NCE is **not** k-uniform. Also: '+63.619 decades' is an upper benchmark (θ at its supremum, a_A dropped, C_Ω = 1), not a margin; (TENT-osc) is false only CONDITIONAL on the profile input; GZ-FALSE holds only for the fixed representative (BFT_B §42.2) — the infimum form reduces to (CURV-dec), OPEN. **Tally 72 / 2 / 7 / 24 + 1 is correct and does not move** — but it counts PROOF's 105 items only, so it cannot register lane-level progress either way.
+
 **Session-24 header (lead: review discharge, integration audit, consolidation).** A lead session: it
 commissions, audits and consolidates, and **proves no new mathematics of its own**. Targets pre-stated in
 RTARGET.md §51 at 12:15:32 UTC (2026-10-28), before any session-24 derivation or worker report; outcomes
@@ -9,7 +11,7 @@ scored in RTARGET.md §52. Worker results are in their own files; the lead's run
 SESSION24_RESULTS.md and the target audit is INTEGRATION_AUDIT.md. **Tally after session 24:
 72 / 2 / 7 / 24 + 1 (unchanged).** No item of this ledger changed status category; the session's corrections
 are to *diagnoses, statements and stale cross-references*, listed at [S24].
-- **[S24-fix 1] PROOF.md's Z_col diagnosis (l.6211-6213) is WRONG.** It attributes Z_col = 156 to "the
+- **[S24-fix 1] [REVERTED S26 — REVIEW55_LEAD H1: a false erratum]** PROOF.md's Z_col diagnosis (l.6211-6213) is WRONG.** It attributes Z_col = 156 to "the
   L^{d-1} = 27 crossing links of one coarse link times the spread". NORMS.md Proposition N1-8 proves by an
   exact mass-balance identity that Z_col is the **column mass of the curvature kernel**, L^d·K̄ ≈ 9.7 plus
   (2/(d-1))K_ρ ≈ 1.5, and that **the crossing-link count vanishes once the leg is measured through d₁X**.
@@ -20,7 +22,7 @@ are to *diagnoses, statements and stale cross-references*, listed at [S24].
   is never defined and excludes 𝔐's own Hölder leg; its part (i) is the vacuous l = k anchoring identity;
   **check n1-D is a tautology** (it discards its only derived quantity and returns d - 4 for any input), so
   the weight-invariance half has no computational support; part (ii) bounds an estimate from above with no
-  lower-bound input; and pre-registered outcome (O3) was never tested. **Proposition N1-8's correction of
+  lower-bound input; and pre-registered outcome (O3) was never tested. **[REVERTED S26 — REVIEW55_LEAD H2b]** **Proposition N1-8's correction of
   the Z_col diagnosis stands; the no-go built on top of it does not. The per-level route is OPEN, not
   refuted.**
 - **[S24-fix 2] The BFT clause table ([S23], l.6695 area) is STALE in three places.** (CO-0) is lane A's
@@ -45,7 +47,7 @@ are to *diagnoses, statements and stale cross-references*, listed at [S24].
 - **[S24-fix 4] (BB-mix) should be promoted to a named clause, BFT-6.** It is OPEN (BFT_B_LOG l.28) and it is
   the single gate on layer 2's expansion: REVIEW_X12 fix 3 re-points (L-loc)_k to it, since BFT-3 stops at
   n ≤ 4 and "all-order decay at k = 1 (BB-3_1) is proven but insufficient". See INTEGRATION_AUDIT A4.
-- **[S24-flag 1] A PROOF-owned constant conflict, raised by PLD session 6 and NOT resolved here.** PLD
+- **[S24-flag 1] [REVERTED S26 — REVIEW55_LEAD H7: no live conflict]** A PROOF-owned constant conflict, raised by PLD session 6 and NOT resolved here.** PLD
   §16.8's λ_min = 3.17·10⁻³ against REVIEW_PLD_S3's binding L0-1 (6.6·10⁻¹⁰). **If L0-1 governs, a_ret falls
   by ×4.80·10⁶** (p6 D2). Route (ii) defuses it. For SF/PROOF to settle.
 - **[S24-flag 4] (Φ-conv) is a project-wide dependency that had not been named.** TENTQ §4.4: the
@@ -58,7 +60,7 @@ are to *diagnoses, statements and stale cross-references*, listed at [S24].
   (ii)/GT-ell is dead with it. Conversely **Proposition QN (PROVEN): Σ_X Q_X(S) = 0 for every chain source,
   with no hypothesis**, and **Proposition QSBP: the charge is a COLLAR FLUX of the source**, not a box
   average — so the per-box charges leave the problem entirely (Theorem TQ-INT).
-- **[S24-flag 2a] THE NAMING HAZARD IS SYSTEMIC, not three accidents.** Session 24 found **four** distinct
+- **[S24-flag 2a] [θ_0 CLAUSE REVERTED S26 — REVIEW55_LEAD H10b]** THE NAMING HAZARD IS SYSTEMIC, not three accidents.** Session 24 found **four** distinct
   ε_* (EPSSTAR §5), **two** distinct θ_0 — whose collision caused the 52-decade τ_♭ error (TAUFLAT §1) —
   and **at least FIVE** distinct ε_1 (EPS1_SWEEP §1), of which **BFT_B's is an O(1) FORMULA stated in the
   same words as RLARGE's choice**, so an instruction to "lower ε_1" would be read by lane B as addressed to
@@ -107,12 +109,12 @@ are to *diagnoses, statements and stale cross-references*, listed at [S24].
   ≈ 9.7 decades and would need C_T ≲ 3.5e10, **below this route's own floor** (c_s ≥ 319.2 ⟹ C_T ≥ 4.4e12).
   Adjudication commissioned (TAUFLAT.md): whether the DESC-ε replacement is load-bearing, or whether
   AE-red's own route (CONDITIONAL ⇐ (MS-Sob)) carries it. **A banked review is evidence, not a certificate.**
-- **[S24-note 2] A SECOND accounting double-count removed, and it is larger.** BFT_B §43 (session 11):
+- **[S24-note 2] [REVERTED S26 — REVIEW55_LEAD H14: no established identification]** A SECOND accounting double-count removed, and it is larger.** BFT_B §43 (session 11):
   **(GAP-Z), the only remaining obstruction to the nontrivial background, IS BFT-5's input (1)
   (G♯_0-field), moved off the trivial chain** — LINEAR_PACKAGE §10's "propagator bounds at a general
   background [cf. CMP 95, 96, 99]". **The nontrivial background and BFT-5 are ONE obstruction, not two, and
   this ledger must not count them twice.**
-  **>>> [S25-fix 2] THIS IS REFUTED (NBG_B §6, session 25; ADJUDICATED in NBG_ADJ.md, which UPHOLDS the
+  **[REVERTED S26 — REVIEW55_LEAD H14b: the count of three is not established either]** **>>> [S25-fix 2] THIS IS REFUTED (NBG_B §6, session 25; ADJUDICATED in NBG_ADJ.md, which UPHOLDS the
   non-identity and AMENDS the count to TWO — read [S25-fix 5] below before using any number here).** The
   instruction that follows is correct; four of its details are not.
   **They are THREE obstructions, not one, and the
@@ -132,7 +134,7 @@ are to *diagnoses, statements and stale cross-references*, listed at [S24].
   phrase *"lane A's U = 1 package"*, which this lane uses for two different things — LINEAR_PACKAGE (PROVEN)
   and (G♯_0-field) (OPEN). That is systemic defect 1 operating on a **phrase** rather than a letter; NORMS
   l.631-634 makes the same conflation independently and earlier and is probably its source.
-  **[S25-fix 5] ADJUDICATION (NBG_ADJ.md, a third worker, both files read).** The question was **ill-posed
+  **[REVERTED S26 — REVIEW55_LEAD H14c: the count of two is not established; HESS-rel refuted]** **[S25-fix 5] ADJUDICATION (NBG_ADJ.md, a third worker, both files read).** The question was **ill-posed
   as asked**: the two workers counted in different units, and the name (GAP-Z) carries **three inequivalent
   objects**. Distinct *statements*: **three**, no pairwise implication — T55-E right. Independent
   *paper-scale obstructions*: **TWO, (GAP-Z) and (G♯_0-field)**; **(N-bg) is not one of them, it is
@@ -6947,7 +6949,7 @@ apparently distinct obstructions collapsed into fewer** (notably **(GAP-Z) IS BF
 **three systemic defects** are now the first call on a future session — **symbol collisions** (four ε_*, two
 θ_0, five ε_1, three η_1, two of the last being the same quantity in the same lemma), **stale minima and
 stale quantifiers**, and **checks that cannot decide** (nine findings, from a literal tautology to a gate
-unsatisfiable by construction). **a_RS is found to bind TODAY**, with a repair worth 82 decades blocked only
+unsatisfiable by construction). **[REVERTED S26 — see [S25-fix 4]: a_RS has no live consumer] a_RS is found to bind TODAY**, with a repair worth 82 decades blocked only
 by a prior either/or decided without the price — an **owner** decision, surfaced not taken.
 
 **What session 24 is good for, stated plainly.** The review debt is paid and five sessions' claims are now

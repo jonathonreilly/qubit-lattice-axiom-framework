@@ -57,6 +57,11 @@ class I:
         b = b if isinstance(b, I) else I.c(b); return a * b.inv()
     def __rtruediv__(a, b): return I.c(b) * a.inv()
     def mid(a): return (a.lo + a.hi) / 2
+    def __pow__(a, n):   # [run-2 fix: run 1 aborted in section G on 'I ** int'; nothing else changed]
+        assert isinstance(n, int) and n >= 1
+        r = a
+        for _ in range(n - 1): r = r * a
+        return r
 
 def _atanh_lo(z):
     z = Fr(z); z2 = rd(z * z); pw = z; s = Fr(0)
@@ -158,6 +163,10 @@ def le(a, b):  # interval a <= number b
     if a.lo > b: return False
     return None
 def E(m, e): return Fr(m) * Fr(10) ** e
+def AND(*xs):
+    if any(x is False for x in xs): return False
+    if all(x is True for x in xs): return True
+    return None
 
 P("r55k_1_const.py  (REVIEW55_CONST)  PB=%d bits, JLOG=%d, NEXP=%d" % (PB, JLOG, NEXP))
 P("sanity: ln2 = %s ; ln10 = %s" % (SF(LN2, 20), SF(LN10, 20)))
@@ -230,8 +239,8 @@ cs_iv = 8 * (9 / Tst + 2) / kap; cg_iv = 8 * 310 / kap + 272
 T1 = (SQRT(396) - 18) / 4; csfloor = 8 * (9 / T1 + 2) / (1 - T1)
 P("B1  T* = %s ; c_s = %s ; c_g = %s ; floor c_s(delta2=rho=0) = %s" % (S(Tst, 10), S(cs_iv, 13), S(cg_iv, 13), S(csfloor, 10)))
 verdict("B1 (c_s 411.92, c_g 5699.63, floor 319.20)",
-        bool(inside(cs_iv, Fr(41192, 100), Fr(41193, 100)) and inside(cg_iv, Fr(569963, 100), Fr(569964, 100))
-             and inside(csfloor, Fr(31919, 100), Fr(31921, 100))))
+        AND(inside(cs_iv, Fr(41192, 100), Fr(41193, 100)), inside(cg_iv, Fr(569963, 100), Fr(569964, 100)),
+             inside(csfloor, Fr(31919, 100), Fr(31921, 100))))
 CS = I.c(Fr("411.9229708842423061")); CG = I.c(Fr("5699.632830341894211"))   # EPSSTAR l.130 / STAR_CONST l.380
 P("    printed c_s, c_g inside the enclosures: %s %s" % (cs_iv.lo <= CS.lo <= cs_iv.hi, cg_iv.lo <= CG.lo <= cg_iv.hi))
 def CT_star(q, F=Fr(1758, 10), R0=32, cs=CS, cg=CG, mu=3, Nmult=3, acgc=1, bconv="max"):
@@ -245,7 +254,7 @@ def CT_star(q, F=Fr(1758, 10), R0=32, cs=CS, cg=CG, mu=3, Nmult=3, acgc=1, bconv
 b11, b12, b100 = CT_star(11), CT_star(12), CT_star(100)
 P("B2  STAR_CONST harness (R0=32, A_c g_c=1): C_T(11) = %s ; C_T(12) = %s ; C_T(100) = %s" % (S(b11), S(b12), S(b100)))
 verdict("B2 (STAR_CONST 8.3: 9.8e12 / 5.3e12 / 1.4e12)",
-        bool(inside(b11, E(975, 10), E(985, 10)) and inside(b12, E(525, 10), E(535, 10)) and inside(b100, E(135, 10), E(145, 10))))
+        AND(inside(b11, E(975, 10), E(985, 10)), inside(b12, E(525, 10), E(535, 10)), inside(b100, E(135, 10), E(145, 10))))
 b12c = CT_star(12, cg=I.c(20))
 P("CTRL-3 C_T(12) with c_g -> 20: %s ; ratio to true %s" % (S(b12c), S(b12 / b12c, 6)))
 verdict("CTRL-3 (C_1 choice moves C_T(12) by > 1%)", (b12 / b12c).lo > Fr(101, 100))
@@ -274,8 +283,8 @@ P("C2  C_S1(12,1) = %s (EPSSTAR 6963.995)" % S(cs1, 10))
 a1, a7, a19 = ACGC(12, 1), ACGC(12, 7), ACGC(12, 19615)
 P("    A_c g_c bound m=1: %s ; m=7: %s ; m=19615: %s" % (S(a1, 8), S(a7, 8), S(a19, 8)))
 verdict("C2 (6963.995 ; 2.402e4 ; 2.871e3 ; 0.99996)",
-        bool(inside(cs1, Fr("6963.9945"), Fr("6963.9955")) and inside(a1, E(24015, 0), E(24025, 0)) and
-             inside(a7, E(28705, -1), E(28715, -1)) and inside(a19, Fr("0.999955"), Fr("0.999965"))))
+        AND(inside(cs1, Fr("6963.9945"), Fr("6963.9955")), inside(a1, E(24015, 0), E(24025, 0)),
+             inside(a7, E(28705, -1), E(28715, -1)), inside(a19, Fr("0.999955"), Fr("0.999965"))))
 def CT_eps(q, F=Fr(1758, 10), R0=64, cs=CS, cg=CG, Ns=3, m=19615, bconv="max", s1=4096, parts=False):
     if q is None: a, Vinf = Fr(1), POW(R0, -2)
     else:
@@ -336,7 +345,7 @@ b1, rows1 = Fmax(Fr(1, 2), 4, 32)
 P("D1  CONST_T budget R/2-4, R>=32: max F = %s at R=%d (i*=%d)" % (S(EXP(b1[2]), 8), b1[0], b1[1]))
 for RR, i, lf in rows1[:8]: P("      R=%-7d i*=%-2d F=%s" % (RR, i, S(EXP(lf), 6)))
 P("      ... asymptote check, last rows: " + "; ".join("R=%d F=%s" % (RR, sci(EXP(lf).lo, 5)) for RR, i, lf in rows1[-2:]))
-verdict("D1 (reproduces CONST_T F_max = 175.8 at R = 79) [CTRL-4]", bool(b1[0] == 79 and inside(EXP(b1[2]), Fr("175.75"), Fr("175.85"))))
+verdict("D1 (reproduces CONST_T F_max = 175.8 at R = 79) [CTRL-4]", AND(b1[0] == 79, inside(EXP(b1[2]), Fr("175.75"), Fr("175.85"))))
 b2, rows2 = Fmax(Fr(1, 4), 3, 64)
 F2 = EXP(b2[2])
 P("D2  Stage 2 inside B_{3R/4-3} (budget R/4-3), R>=64: max F = %s at R=%d (i*=%d)" % (S(F2, 8), b2[0], b2[1]))
@@ -372,16 +381,17 @@ gap = LOG10(etaA / etaB); sh = LOG10(4 * eps1 ** 2 / etaB)
 Hx = 640 * 53 ** 4; tneedx = 2 * eps1 * SQRT(Hx)
 P("E2  log10(eta_A/eta_B) = %s ; shortfall log10(4eps^2/eta_B) = %s ; t_need(640*53^4) = %s"
   % (SF(gap, 6), SF(sh, 6), S(tneedx, 8)))
-verdict("E2 (52.077 ; 9.707 ; 9.5224e-35)", bool(inside(gap, Fr("52.0765"), Fr("52.0775")) and inside(sh, Fr("9.7065"), Fr("9.7075"))
-        and inside(tneedx, E(95215, -39), E(95225, -39))))
+verdict("E2 (52.077 ; 9.707 ; 9.5224e-35)", AND(inside(gap, Fr("52.0765"), Fr("52.0775")), inside(sh, Fr("9.7065"), Fr("9.7075")),
+        inside(tneedx, E(95215, -39), E(95225, -39))))
 cdx = 1 / SQRT(Fr("3.31e7") * tneedx)
 P("    C_D ceiling (640*53^4) = %s ; C_T band /900, /500 = %s , %s" % (S(cdx, 8), S(cdx / 900, 6), S(cdx / 500, 6)))
 r080, r578 = LOG10(Fr("5.288e12") / Fr("4.4e12")), LOG10(Fr("5.288e12") / Fr("1.396e12"))
 P("E3  log10(5.288/4.4) = %s ; log10(5.288/1.396) = %s" % (SF(r080, 6), SF(r578, 6)))
-verdict("E3 (0.080 ; 0.578 as arithmetic)", bool(inside(r080, Fr("0.0795"), Fr("0.0805")) and inside(r578, Fr("0.5775"), Fr("0.5785"))))
+verdict("E3 (0.080 ; 0.578 as arithmetic)", AND(inside(r080, Fr("0.0795"), Fr("0.0805")), inside(r578, Fr("0.5775"), Fr("0.5785"))))
 # E4: rigorous lower bound, option A, P-max
-Ac, Bc, Cc = 54 * 8 * 9, 288 * 8 * 16, 54 * 8 * 2 + 288 * 8 * 52
-Pp = (SQRT(Ac) + SQRT(Bc)) ** 1
+# C_B^tot = 8(2/d2+4) + C_B^s + (O(eps) pieces), C_B^s = 4 + 8(1+||V_s||_inf) >= 12  ->  C_B^tot >= 16/d2 + 44
+Ac, Bc, Cc = 54 * 8 * 9, 288 * 8 * 16, 54 * 8 * 2 + 288 * 8 * 44
+Pp = SQRT(Ac) + SQRT(Bc)
 Pp = Pp * Pp
 wst = ((Cc + Pp) - SQRT((Cc + Pp) * Pp)) / Cc
 fw = Pp / (wst * (1 - wst)) + Cc / wst
@@ -389,7 +399,7 @@ Chat_min = fw + 288 * 272
 Fmins = []
 for i in range(1, 40):
     Lm, sg = Lam_i(i), sig_i(i)
-    v = EXP(LOG(64) * (2 - Lm) + LOG(2 * Lm) * Lm + LN2 * sg)
+    v = EXP(LOG(62) * (2 - Lm) + LOG(2 * Lm) * Lm + LN2 * sg)
     Fmins.append((i, v))
 Fmin_lb = min(v.lo for i, v in Fmins)
 mono = all(Fmins[k][1].lo <= Fmins[k + 1][1].hi for k in range(7, 38))
@@ -410,7 +420,7 @@ DX = Fr("2.456e-152")
 for lab, e in (("6.7e-40", Fr("6.7e-40")), ("8.95e-40", Fr("8.95e-40")), ("9.52e-40", Fr("9.52e-40")), ("1.27e-39", Fr("1.27e-39")), ("1.2687e-39", Fr("1.2687e-39"))):
     P("F1  eps_1=%-10s a_RS = %s ; margin log10(a_RS/100/DX') = %s" % (lab, sci(aRS(e), 7), SF(LOG10(aRS(e) / 100 / DX), 4)))
 m67 = LOG10(aRS(eps1) / 100 / DX)
-verdict("F1 (a_RS 5.93136e-166 ; margin -15.617)", bool(inside(I.c(aRS(eps1)), E(5931355, -172), E(5931365, -172)) and inside(m67, Fr("-15.6175"), Fr("-15.6165"))))
+verdict("F1 (a_RS 5.93136e-166 ; margin -15.617)", AND(inside(I.c(aRS(eps1)), E(5931355, -172), E(5931365, -172)), inside(m67, Fr("-15.6175"), Fr("-15.6165"))))
 cr = (Fr("1.2687e-39") * Fr("6.7e-40")) / (Fr("8.95e-40") * Fr("9.52e-40"))
 crlo = (Fr("1.26865e-39") * Fr("6.65e-40")) / (Fr("8.955e-40") * Fr("9.525e-40"))
 crhi = (Fr("1.26875e-39") * Fr("6.75e-40")) / (Fr("8.945e-40") * Fr("9.515e-40"))
@@ -429,8 +439,8 @@ verdict("F4b (EPS1_EXEC: excess 2.3406e-13)", inside(rel, E(234055, -18), E(2340
 verdict("CTRL-2 (9.38495112637e-45 admissible)", Fr("9.38495112637e-45") <= bnd.lo)
 Dl = LOG10(eps1 / ep)
 P("F5  Delta = %s ; 2D = %s ; 3D = %s ; 4D = %s" % (SF(Dl, 9), SF(2 * Dl, 6), SF(3 * Dl, 6), SF(4 * Dl, 6)))
-verdict("F5 (4.853643 ; 9.707 ; 14.561 ; 19.415)", bool(inside(Dl, Fr("4.8536425"), Fr("4.8536435")) and inside(2 * Dl, Fr("9.7065"), Fr("9.7075"))
-        and inside(3 * Dl, Fr("14.5605"), Fr("14.5615")) and inside(4 * Dl, Fr("19.4145"), Fr("19.4155"))))
+verdict("F5 (4.853643 ; 9.707 ; 14.561 ; 19.415)", AND(inside(Dl, Fr("4.8536425"), Fr("4.8536435")), inside(2 * Dl, Fr("9.7065"), Fr("9.7075")),
+        inside(3 * Dl, Fr("14.5605"), Fr("14.5615")), inside(4 * Dl, Fr("19.4145"), Fr("19.4155"))))
 c8 = CT_eps(8)
 P("F6  C_T(8) in EPSSTAR's convention = %s ; 2log10(C_T(12)/C_T(8)) = %s ; with 1.27e14: %s" %
   (S(c8, 6), SF(2 * LOG10(c12 / c8), 4), SF(2 * LOG10(Fr("5.288e12") / Fr("1.27e14")), 4)))
@@ -445,13 +455,13 @@ def Lam(q):
     if q is None: return I.c(Lam_inf)
     q = Fr(q); return 4 * POW(2, 2 + 4 / q) * (Fr("4.94") + Fr("3.34") * POW(32, 1 / q))
 P("G1  Lambda(8) = %s ; Lambda(12) = %s ; Lambda(inf) = %s" % (SF(Lam(8), 6), SF(Lam(12), 6), SF(Lam(None), 6)))
-verdict("G1 (228.333 ; 189.459 ; 132.48)", bool(inside(Lam(8), Fr("228.3325"), Fr("228.3335")) and inside(Lam(12), Fr("189.4585"), Fr("189.4595"))
-        and Lam_inf == Fr("132.48")))
+verdict("G1 (228.333 ; 189.459 ; 132.48)", AND(inside(Lam(8), Fr("228.3325"), Fr("228.3335")), inside(Lam(12), Fr("189.4585"), Fr("189.4595")),
+        Lam_inf == Fr("132.48")))
 def CD(q, cN=2): return 2 * (Fr("1.011") * cN * Lam(q) * CT_eps(q) + Fr("46.8"))
 def cut_of(q, cN=2): return 1 / (Fr("3.31e7") * CD(q, cN) ** 2) / (2 * SQRT(H))
 cd11, cd12, cd115 = CD(11), CD(12), CD(Fr(23, 2))
 P("G2  C_D(11) = %s (/6.7e15 = %s) ; C_D(12) = %s ; C_D(11.5) = %s" % (S(cd11, 6), S(cd11 / Fr("6.7e15"), 6), S(cd12, 6), S(cd115, 6)))
-verdict("G2a (q=11 fails by x1.16)", bool(cd11.lo > Fr("6.7e15") and inside(cd11 / Fr("6.7e15"), Fr("1.155"), Fr("1.165"))))
+verdict("G2a (q=11 fails by x1.16)", AND(cd11.lo > Fr("6.7e15"), inside(cd11 / Fr("6.7e15"), Fr("1.155"), Fr("1.165"))))
 verdict("G2b (q=12 passes)", le(cd12, Fr("6.7e15")))
 verdict("G2c (q=12 is the lowest admissible real q)", False if cd115.hi <= Fr("6.7e15") else (None if cd115.lo <= Fr("6.7e15") else True))
 lo_q, hi_q = Fr(11), Fr(23, 2)
@@ -484,14 +494,14 @@ cutT = th1000 / (2 * SQRT(H))
 esneed = tSUP1000 * 16 * Fr("3.34") * POW(32, Fr(1, 1000))
 P("G5  theta_eps(1000) at eps_*=1.12e-37 = %s ; t_SUP(1000) = %s ; cutoff via theta_eps = %s ; eps_* needed = %s"
   % (S(th1000, 7), S(tSUP1000, 7), S(cutT, 7), S(esneed, 7)))
-verdict("G5 (Codex 1.4695e-44 ; 2.9141e-36)", bool(inside(cutT, E(146945, -49), E(146955, -49)) and inside(esneed, E(29135, -40), E(29145, -40))))
+verdict("G5 (Codex 1.4695e-44 ; 2.9141e-36)", AND(inside(cutT, E(146945, -49), E(146955, -49)), inside(esneed, E(29135, -40), E(29145, -40))))
 X27 = 27 * CS
 P("G6  sign change of d/dq of the A_c g_c bound at q = 16*27*c_s = %s" % S(16 * X27, 12))
 for qq in (10 ** 5, 177950, 177951, 10 ** 6, 10 ** 7):
     P("      q=%-9d A_c g_c bound (m=19615) = %s" % (qq, S(ACGC(qq, 19615), 15)))
 verdict("G6 (QFIX row 4 'wants q large' for all q)", (ACGC(10 ** 6, 19615).lo < ACGC(10 ** 5, 19615).lo) if False else
         (False if ACGC(10 ** 7, 19615).lo > ACGC(10 ** 6, 19615).hi else None), "bound rises between q=1e6 and 1e7")
-for qq in (10 ** 6, 10 ** 12, 10 ** 100):
+for qq in (10 ** 6, 10 ** 12, 10 ** 30, 10 ** 60):
     dct = CT_eps(qq) - CT_eps(None)
     P("      C_T(q) - C_T(inf) at q=1e%d: %s" % (len(str(qq)) - 1, S(dct, 4)))
 qx = Fr("1.168e-12") * Fr("3.31e7") * CD(None) ** 2

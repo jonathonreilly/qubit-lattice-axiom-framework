@@ -1231,3 +1231,15 @@ the **final** Codex file and the source together.
   re-centring** — 81.057 of the 82.141 decades; re-centring adds only 1.083.
 - **Pending PROOF.md fixes (to batch after C1 reports):** pointer from the S24 consolidation paragraph
   (string "a_RS is found to bind TODAY") to [S25-fix 4]; [S25-fix 1] should cite KN_ADOPT §3.2, not §5.
+
+**C1 — the lead's consolidation layer — `REVIEW55_LEAD.md`** (claude-opus-5-5, max). 157 claims:
+**83 CONFIRMED, 4 NOT-VERIFIED, 70 REFUTED** — 35 misstated the source, 19 went stale against work the lead
+had already read, 16 faithfully relayed a source that is itself refuted. Source fidelity 41/49 when written,
+31/49 still true. Of the lead's 14 self-corrections: 9 right, 2 partly, 3 wrong ([S25-fix 2], [S25-fix 5],
+§52 #3). **Applied:** a corrections block at the top of PROOF.md's header and inline REVERTED markers on
+[S24-fix 1], the N1-8 sentence, all three obstruction counts, [S24-flag 1] and the θ_0 clause of [S24-flag 2a].
+**Not yet applied (needs a fresh HANDOFF after the sweep):** the critical-path items CP1-CP5/CP7, the
+target restatement per THETAW-as-corrected-by-Codex, and RTARGET §52's rescoring (T51-B, T51-C → PARTIAL;
+T51-E wrong on three counts). Notable: §54's question was mis-posed — it asked whether **(N-bg)** equals
+(G♯_0-field) when session 24 had identified **(GAP-Z)** with it; that is the ill-posedness NBG_ADJ later
+diagnosed. The q lever is **12.04 decades live, not 24.09** (Codex QFIX).

@@ -1,0 +1,13 @@
+D1: PASS  root covariance Q d = d ev exactly (level 1->2: True; level 0->1: True)
+D2[mu=0]: PASS  (a) d*v=0:True (b) supp v in R:True (c) d*G=v solvable in R:True (#plaq=10, |supp G|=10, max|G|=1/3) (d) identity on 20 chains:True
+D3[mu=0]: PASS  |supp v|=27, |supp G|=10, D(path) nonzero at level-0 sites [(13, 13), (22, 13)] (level-2 roots 9X+4)
+D4[mu=0] control: PASS  identity with G := 0 FAILS on some chain (control fires)
+D8[mu=0]: PASS  <delta_b, r_1(x)> - <path_b, x_1> = -<G, dx_1> on 20 chains
+D2[mu=1]: PASS  (a) d*v=0:True (b) supp v in R:True (c) d*G=v solvable in R:True (#plaq=10, |supp G|=6, max|G|=1/3) (d) identity on 20 chains:True
+D3[mu=1]: PASS  |supp v|=13, |supp G|=6, D(path) nonzero at level-0 sites [(13, 13), (13, 22)] (level-2 roots 9X+4)
+D4[mu=1] control: PASS  identity with G := 0 FAILS on some chain (control fires)
+D8[mu=1]: PASS  <delta_b, r_1(x)> - <path_b, x_1> = -<G, dx_1> on 20 chains
+D5: PASS  d*(Q_1^T delta_b) nonzero:True, root-supported:True, total 0:True, = ev^T d* delta_b:True; D(S^s) nonzero at level-0 sites [(13, 13), (22, 13)]
+D6: PASS  lower residual slot s_0 (random, 3 draws): D(S) = 0 at every level-0 site
+D7: PASS  D(S) = 0 pointwise:True; D(S^j) != 0 somewhere:True  (S = residual delta_b + plain current -path_b satisfies (CC-0) while its plain part does not)
+VERDICT r55b_dip: ALL PASS (D4 controls fired)

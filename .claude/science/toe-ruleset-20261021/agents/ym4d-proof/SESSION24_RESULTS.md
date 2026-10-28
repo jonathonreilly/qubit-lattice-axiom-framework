@@ -831,3 +831,68 @@ criterion mis-transcribed. A1, A2, B4 PASS. ct1_moser.py Block C is superseded b
 nothing rests on it. **Also recorded: three of the worker's four pre-stated structural expectations were
 refuted, including E4 ("raising q will cost"), which was backwards — and that refutation is the finding that
 decides the task.**
+
+## BFT_B session 10 — (CO-fun) and (GT-sup). LANDED. Two diagnoses refuted, including the lead's.
+
+§34 (PRE-STATED, first edit, 13:07:28 UTC, 13525 bytes), §35, §36, §37.1-§37.4, appended only — no line of
+§1-§33 touched.
+
+**(CO-fun): PROVEN under a strengthened hypothesis — and session 9's own diagnosis of it was WRONG.**
+Session 9 said (CO-fun) was open because "the funnel pieces are co-closed only collectively, so Theorem W0
+cannot take them one at a time." **The funnel is not the obstruction at all.** Two facts (§35.1-§35.3):
+(a) **Theorem W0 uses d*j_0 = 0 in exactly one essential place** — step 2's representative freedom — and
+that is a condition on the **total** object paired with Y^p_0, **never on individual pieces**;
+(b) the funnel is produced by the ρ-recursion, so **it never enters the dual pairing
+f_0(p) = n²⟨S, Y^p⟩ at all.**
+What does enter is the level-0 dual push-down C(j) = Σ_l (Q^{(0→l)})^T j_l, whose funnel parts **regroup**
+(the brief's route 2): ξ_i = R_{i+1}(D(S)) - ψ_i, so under **D(S) = 0 as a function — call it (CC-0) —**
+C(j) = Σ_l (Q_str^{(0→l)})^T ĵ_l, which is co-closed and priced k,T-uniformly by Lemma FT.
+**Theorem COF: (CO-fun) PROVEN as an implication under (CC-0)** (m = 0, trivial background, 0 < α < θ;
+inputs YH, W0 steps 3-4, GU, LIN0 and PW-cc's residual estimates, all CONFIRMED in lane A).
+**Lemma CD (i) gives (CC-0) at every critical point of 𝔉_k** (§35.6).
+**(CO-fun) as stated in §31.2 is FALSE without (CC-0)** — pre-stated S10-F4 occurs; erratum [S10-fix 1], and
+§31.2's stated reason is superseded. Also proven: the free dΔ_0^{-1} form of (CO-fun) **loses a factor T**
+(massless kernel ℓ¹ ≍ torus side), so the dual pairing is the only route (§35.8).
+
+**(GT-sup): CONDITIONAL, and expected TRUE, not false. >>> This refutes the lead's forwarded guidance.**
+I forwarded REVIEW_BFT_A_S8's exact spike data and told this worker that "the decisive question is whether
+the spikes of λ^{Γ_E}_* are supported where D(S) lives". **The question is moot.**
+λ^{Γ_E}_*(p) = Λ(Y^p_{*,0}), so lane B's own **PROVEN Lemma ΓT-op (d)** applies:
+**sup|λ| ≤ 20·max_X ‖(Y^p_*)^c_0‖_{∞,Ñ_X} with an ABSOLUTE constant** (§36.2). So **(GT-sup) is not a
+question about spike support at all** — it is a local sup bound on the chosen representative's own level-0
+field, named **(Y-sup^loc)**. Further: **the level-k root charges drop out of the remainder identically**
+(Λ(x)(c_Y) = 0; §36.1), and lane A's own arithmetic in Lemma RC's *Reading* puts the L^{2k-3}η² in
+|D(R)(Z)|·n² with σ ≈ 0.003 **k-independent** — so **§31.3's expectation that (GT-sup) is false rests on
+attributing the growth to the wrong factor** (erratum [S10-fix 2], ARGUED). The alternative ℓ^∞×ℓ¹ route
+(§36.4) is conditional instead on **(NEUT-box)**, box-local neutrality, whose obstruction is ΓT-op (e)'s
+pinned compensation charge.
+
+**(NC-Γ) for Γ_E: COMPLETE at critical points; one scalar left off them. Theorem NCE (§36.5):**
+- **(i) PROVEN as an implication at every critical point of 𝔉_k**, m = 0, trivial background, **every gauge
+  fixing**, k,T-uniformly. Curvature half = Corollary COF-crit; residual half = session 9's Corollary RHT-V;
+  remainder vanishes by GT-split / FG (iii).
+- **(ii) Off the critical set both routes of §31.3 land on the same object:**
+  D(S^E_0(S)) = I_χ^T D(S), so **the whole obstruction is the compensation charge Q_X = ⟨χ^5_X D(S)⟩ — one
+  scalar per level-k box** — appearing twice, as the (P0) size of Γ_E^T D(S) and as the root charge of
+  Proposition COF-res paired against Φ_k(Y^p_0) = Proposition TE's tent coefficient. **(TENT-Q) and
+  (NEUT-box) are two faces of it.**
+- **Cross-lane:** D^root and D^⊥ **partition** the two targets, neither drives both; and **(CO-fun)'s
+  residue is the SAME FUNCTIONAL as the (GE-T) refutation, so they must not be priced as two items.**
+  *Lead: that last point removes a double-count from the project's open accounting.*
+
+**Single remaining obstruction:** curvature half → **(TENT-Q)**, the compensation charge ⟨χ^5_X D(S)⟩;
+(GT-sup) → **(Y-sup^loc)**, a local sup bound on a named representative's field — **a lane-A linear-package
+item**, i.e. it leaves lane B entirely.
+
+**Checks.** bb10 (d = 2, L = 3, k = 2, exact Fraction, no lock, 5.95 s): **ALL PASS** (A1-A8, B0, B1) — the
+regrouping identity, the root-charge defect identity and J_0 = C(j) - (Q_str^{(0→k)})^T ρ_{k-1} all exact.
+bb10c (k = 3, criteria written before the script, no bb10 criterion retuned): **NOT ALL PASS — C4(b)
+FAILED**, disclosed, diagnosed and **kept with no rerun**: the test family inflates π_0(j_0) (solve_div is an
+antiderivative), so the two available bounds did not separate on the data. **The FAIL is of a
+*demonstration*, not a lemma** — C4(a), the inequality Proposition COF-size actually uses, passed everywhere,
+and C1/C2/C3/C5 confirmed Lemma DF-cc at three levels with its hypothesis shown load-bearing.
+**The worker also corrected its own §37.1 in §37.4:** under (CC-0) the two groupings are the *same vector* at
+every k, differing only in the available bound.
+
+§37's FOR OTHER FILES records that **REVIEW_BFT_A_S8's closing request — D1's remainder bound, "written
+nowhere" — is Proposition NCR** (§31.1, written concurrently), and that this session supplies its two factors.

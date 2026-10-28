@@ -493,3 +493,73 @@
 - **Failure modes:** RHcc-F1, RHcc-F2, RHcc-F4 do not occur (proven); **RHcc-F3 OCCURS** as pre-stated and expected (the
   (P0) slot now enters N_res, with the exponentially small weight L^{-(1-α)k}).
 - **Checks: bb9 NOT ALL PASS (B3, B4 FAIL, script bug, record kept); bb9b ALL PASS** on the same unaltered criteria.
+
+## Session 10 (2026-10-28 UTC) — lane B, the two items session 9 isolated: (CO-fun) and (GT-sup)
+
+### Provenance
+- Task: close (CO-fun) and (GT-sup), the two named open items of §31.2 and §31.3, so that (NC-Γ) for Γ_E is complete.
+  Scope given: trivial background, m = 0, one slice S_E (DRIVE_BRIEF D1). Owned files: a new "# Session 10" appended to
+  the END of BFT_B.md, this log entry, and new `checks/bb10_*` files. **Append-only: no line of §1-§33 or of any earlier
+  log entry is altered.**
+- Reading before the first edit (exploratory, not recorded in the file): BFT_B §27-§33 in full (session 9, unreviewed),
+  §16.1-16.2, §24.1, §25.1 (c)-(e), §26 FOR OTHER FILES; REVIEW_BFT_B_S8; REVIEW_BFT_A_S8 (landed during this session's
+  reading) Parts 4-6, "Verdict on the stand-in transport", "The biggest live wall in lane A"; BFT_A §26.0-26.2,
+  §28.4-28.9, §38.1-38.6, §38.8, Lemma CD (l.2789); HANDOFF.md; `checks/bb9b_rtcc.py`.
+- **First edit: §34, the PRE-STATED section, statements only.** `TZ=UTC date` immediately before the append: 13:07:28.
+  `TZ=UTC stat` immediately after: **mod 13:07:28, size 496400** (BFT_B.md was 482875 at the end of session 9, so §34 plus
+  its "# Session 10" heading is **13525 bytes**). §34 cites nothing produced in this session; its only claim is file order.
+  It names the two targets, the definitions (Λ_0, D^root/D^⊥, (CC-0), C(j), ξ_i, (Y-sup^loc), (NEUT-box)), the planned
+  statements with planned labels, six failure modes (S10-F1..S10-F6) and the plan of check bb10.
+- Appends after §34, in order, each after the one before: **§35** (the (CO-fun) proofs; mod 13:19:26, size 520502),
+  **§36** (the (GT-sup) proofs and Theorem NCE; mod 13:21:20, size 535218), **§37.1-§37.3** (check record, outcome table,
+  what (NC-Γ) rests on; mod 13:23:08, size 551268), **§37.4** (the correction to §37.1's limitation 2 and the bb10c
+  record, including a disclosed FAIL; mod 13:26:10, size 555646).
+- **Checks.** `checks/bb10_criteria.md` born 13:09:13 with an amendment at 13:12:09, **both before**
+  `checks/bb10_cof3`… precisely: before `checks/bb10_cof.py` (born 13:14:02). bb10 ran 13:14-13:15: **ALL PASS**
+  (A1-A8, B0, B1), 5.95 s, 27.8 MB. Then `checks/bb10c_criteria.md` born 13:24:27, **before**
+  `checks/bb10c_cof3.py` (born 13:25:13); bb10c ran 13:25: **NOT ALL PASS — C4 (b) FAILED**, 0.39 s, 22.4 MB;
+  output and script kept unaltered, **no rerun**. No numeric lock was taken for either (exact `fractions.Fraction`,
+  no numpy, no BLAS, single thread, `python3 -I`, nice 10); DRIVE_BRIEF rule 6 exempts them. Both scripts copy bb9b's
+  operator construction (bb9b itself untouched); bb10c's only change to that copy is K = 3.
+- Files written this session: BFT_B.md (appends only — **no line of §1-§33 altered**), BFT_B_LOG.md,
+  `checks/bb10_criteria.md`, `checks/bb10_cof.py`, `checks/bb10.out`, `checks/bb10.time`,
+  `checks/bb10c_criteria.md`, `checks/bb10c_cof3.py`, `checks/bb10c.out`, `checks/bb10c.time`.
+  **No git command was run; no commit, PR or push; no axiom and no other lane file touched.** Requests for other owners
+  are in §37's "FOR OTHER FILES (session 10; not edited)".
+
+### Results by name (session 10; all unreviewed)
+- **PROVEN-HERE:** **Lemma W0-use** (co-closedness enters BFT_A §28.5 twice: step 2's representative freedom, which is a
+  condition on the **total** object paired with Y^p_0, and step 3's straightening, which **is** the funnel and is priced by
+  Lemma FT; steps 1, 4, 5 use sups and divergence form only); **Lemma SPLIT** (every slot of a Setting LIN^cc source is
+  composite-co-closed, so slot-by-slot superposition **is** available); **Lemma DF-cc** (ξ_i = R_{i+1}(D(S)) − ψ_i; under
+  (CC-0), C(j) = Σ_l(Q_str^{(0→l)})^Tĵ_l, and the same at every intermediate level); **Proposition COF-size**
+  (π_0(C(j)) ≤ C_C(||j^c_0||_∞ + ||j||_{Pc}), k-, T-uniform); **Proposition COF-res** (the residue is the level-k root
+  charges against the response's funnel Φ_k(Y^p_0) = Proposition TE's tent coefficient); **Remark MASSLESS** (the free
+  dΔ_0^{-1} route loses a factor T); **Proposition GT-split** (the level-k root charges never enter the gauge-fixing
+  remainder; Λ(x)(c_Y) = 0); **Proposition GT-loc** (sup|λ^{Γ_E}_*| ≤ 20·local coarse field sup, absolute constant).
+- **PROVEN as an implication:** **Theorem COF = (CO-fun) under (CC-0)** (inputs quoted and CONFIRMED in lane A: Theorem YH,
+  W0 steps 3-4 with LES-div/Lemma LE/BL-C, Theorem GU, Corollary LIN0, Theorem PW-cc's residual estimates; plus session 9's
+  Lemma RT-cc and Lemma FT); **Corollary COF-crit** (so **the curvature half of (NC-Γ)_cc is closed at critical points of
+  𝔉_k**); **Proposition GT-ell** (the ℓ^∞ × ℓ¹ route and its exact price); **Theorem NCE (i)**: **(NC-Γ) for Γ_E holds at
+  every critical point of 𝔉_k, m = 0, trivial background, every gauge fixing, k- and T-uniformly.**
+- **ARGUED:** **Proposition GT-attr** — lane A's own arithmetic puts the L^{2k−3}η² of Lemma RC's *Reading* in |D(R)(Z)|·n²
+  and not in σ, so **(GT-sup) is expected TRUE**, not false ([S10-fix 2]).
+- **CONDITIONAL:** **(GT-sup)** on the new named item **(Y-sup^loc)** (a local sup bound on a named representative's
+  level-0 field), with the absolute constant 20; alternatively on **(NEUT-box)** via Proposition GT-ell.
+- **Refuted / corrected:** **(CO-fun) as stated in §31.2 is FALSE without (CC-0)** (S10-F4 OCCURS; erratum [S10-fix 1]),
+  and its stated **reason** for being open ("Theorem W0 cannot take the funnel pieces one at a time") is **superseded** —
+  the funnel is not a source, it never enters the dual pairing, and the regrouping of Lemma DF-cc makes the one object that
+  is paired co-closed. §31.3's expectation that (GT-sup) is false is corrected ([S10-fix 2]). §37.1's own limitation 2 is
+  corrected in §37.4 (the two groupings are the same **vector**; they differ in the available **bound**).
+- **Still OPEN, now named and sharp:** **(TENT-Q)** = **(NEUT-box)** — off the critical set the whole of (NC-Γ) for Γ_E
+  reduces to **one scalar per level-k box**, the compensation charge ⟨χ^5_XD(S)⟩, which appears both as the (P0) size of
+  the slice correction Γ_E^TD(S) and as the root charge of Proposition COF-res; **(Y-sup^loc)**.
+- **Failure modes:** **S10-F1 OCCURS** (expected, harmless: W0 step 3's straightening is the funnel);
+  **S10-F2 does not occur**; **S10-F3 does not occur**; **S10-F4 OCCURS** (expected); **S10-F5 OCCURS** (expected: the
+  massless route loses T); **S10-F6 OCCURS** (expected: the remainder is dominated by the coarse cell of p).
+- **Not attempted:** (Y-sup^loc); (NEUT-box) and its relation to lane A's Proposition OB; m > 0; θ > 0; the nontrivial
+  background; the factor k; (PW-ii).
+- **Checks: bb10 ALL PASS; bb10c NOT ALL PASS (C4 (b) FAILED, disclosed, diagnosed, record kept, no rerun).** The FAIL is
+  of a **demonstration** (that the two available bounds separate on the test data), not of a lemma: the constructed family
+  inflates π_0(j_0) because `solve_div` builds an antiderivative, so B^ψ_0 exceeded B^ξ_0 on every instance. C4 (a) — the
+  inequality Proposition COF-size actually uses — passed everywhere.

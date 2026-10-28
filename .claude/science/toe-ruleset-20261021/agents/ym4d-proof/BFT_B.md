@@ -3942,3 +3942,366 @@ The fan-in bundle of PROOF.md l.6695 was (H-inv+) [(CO-0), (CO-up), (G♯-rough)
 - **SF (lane F).** Lemma G-pert's smallness hypothesis t = ||x^r||_{X_c} + ||B^r||_D ≤ ρ_0 is **supplied on frames**, k- and T-uniformly, by BFT_B's Corollary CL-iv (sup_j||log Z^off_j||_{C^{1,α}} ≤ C_1ε). So BNA-F4's objection ("no global gauge makes the data small") bites only at the gluing step, and (G♯-patch) narrows to (G♯-patch^Ω): glue the frame-local inverses using CL-iv's transition gauges κ_X (||log κ_X||_{C^{2,α}} ≤ Cε). This is a narrowing of your wall, not a proof of it.
 - **HIST.** (R♯)'s frame form is not a new wall: Lemma Rω-frame (§32.3, ARGUED) transfers (R♯_ω) from the trivial chain to Z(V_k) in frames at the cost of a polynomial in C_1ε, with the commutator-to-divergence-form step written without explicit constants.
 - **REVIEW (next lane-B review).** Check first, in this order: (1) §29.1 (a) — the induction Ψ'_l = Ψ'_{l-1} + ev^{(0→l)T}d*j_l and the claim that composite co-closedness alone forces each Ψ_l onto the level-(l+1) roots (this is the load-bearing step; bb9b A5/A6 and B2 test it in d = 2, k = 2); (2) §29.2 (i) — that each level-l link lies in **one** block and that |c(X, b)| ≤ 1, since ||h_l^T||_{ℓ^∞→ℓ^∞} ≤ 1 is what keeps the funnel in the (Pl-c) class; (3) §29.3's index swap and the constant K_f; (4) §29.4's claim that V is composite-co-closed at critical points, and the crude C_NC; (5) §31.2's reduction of the curvature tower to f_0 and the exact statement of (CO-fun) — in particular whether Corollary LIN0's superposition really cannot absorb a collectively-co-closed set of level-0 currents; (6) §31.3 (R2)'s sign conventions in Proposition NCR; (7) §32.2's (G♯-patch^Ω) narrowing, against SF's [RSF2-fix GP-1/GP-2] scope; (8) the bb9 B3/B4 FAIL, its diagnosis, and that bb9b changes exactly one expression.
+
+# Session 10 (2026-10-28 UTC)
+
+## 34. PRE-STATED (session 10) — statements only; the FIRST edit of session 10, appended at the end of BFT_B.md at 2026-10-28 13:07 UTC, before any session-10 proof, any erratum entry, any criteria file and any script. Nothing in §34 cites a result of this session. Exploratory reading (BFT_B §27-§33 in full, §16.1-16.2, §24.1, §25.1 (c)-(e), §26 FOR OTHER FILES; REVIEW_BFT_B_S8; REVIEW_BFT_A_S8 Parts 4-6 and its closing sections; BFT_A §26.0-26.2, §28.4-28.9, §38.1-38.6, §38.8, Lemma CD (l.2789); HANDOFF; checks/bb9b_rtcc.py) preceded this append and is not recorded; the only claim §34 makes is file order. **§27-§33 are not edited** (append-only ownership): session 9 is the record, and anything this session has to correct in it is entered as a dated erratum below, naming the line it corrects.
+
+### 34.0 Scope and targets
+
+Lead decisions in force: those of §27.0 (one slice S_E; lane A's root-funnel spikes in S_E are real; (PW-i)_{Γ_E} and lane A's (GE-T) expected FALSE at large k; (NC-Γ) restated for composite-co-closed sources plus a remainder; lane B owns BFT-5). **Background: trivial. Mass: m = 0.** Every statement below is at the trivial background and at m = 0 unless it says otherwise; nothing here is claimed at θ > 0 or for the background-covariant slice (N1).
+
+Two targets, both isolated by session 9 (§31.2, §31.3, §33.2), both in product form, and together exactly what is left of (NC-Γ) for Γ_E:
+
+1. **(CO-fun)** — (CO-0) for the funnel-augmented J_0 of Lemma RT-cc (d), as stated in §31.2. Session 9 left it OPEN with the diagnosis "the funnel pieces are co-closed only collectively, so Theorem W0 cannot take them one at a time". That diagnosis is to be **tested, not assumed**. The two questions to settle are: (a) where co-closedness of the plain current actually enters lane A's Theorem W0 (§28.5) — step by step, with the line named; and (b) whether a **regrouping** of the funnel cascade is co-closed where the naive per-level pieces are not.
+2. **(GT-sup)** — a bound on sup{|λ^{Γ_E}_*(p)(z)| : z ∈ supp D(S)}, uniform in k and T, for a named representative Y^p_*, or a sharp statement of which configurations break it. The decisive question posed to this session is whether the spikes of λ^{Γ_E}_* sit where D(S) lives.
+
+### 34.1 Definitions used below (none is new mathematics; they fix names)
+
+- **Λ_0 and the pinned level.** Λ_0 := level-0 functions that are **constant on the level-k roots** (BFT_A §26.0); composite co-closedness of a chain source S is Ξ^TS = 0 as a functional on Λ_0, i.e. (§27.1) the level-0 function D(S) = d*S_0 + Σ_{1≤l≤k-1}ev^{(0→l)T}d*S_l is supported on the level-k roots and has total 0.
+- **The two parts of the composite divergence.** D^root(S) := D(S)·1{level-k roots} and **D^⊥(S) := D(S) - D^root(S)** (the off-root part). Composite co-closedness is exactly D^⊥(S) = 0. **Strict composite co-closedness (CC-0)** is the stronger D(S) = 0 as a level-0 function, i.e. D^root(S) = 0 as well.
+- **Dual push-down of the plain currents.** For a collection of plain currents j = (j_0, …, j_{k-1}): **C(j) := Σ_{0≤l≤k-1}(Q^{(0→l)})^Tj_l** (a level-0 1-form; Q the full composite average, ev^{(0)} = 1, Q^{(0→0)} = 1).
+- **The regrouped funnel functions.** ξ_i := Σ_{l>i}ev^{(i+1→l)T}d*j_l (a level-(i+1) function), for 0 ≤ i ≤ k - 2; ψ_i and Ψ_i as in §27.1; ĵ_l := j_l + h_l^Tψ_l as in §27.1.
+- **Gauge transport function.** λ^Γ_*(p) as in §27.1. For Γ = Γ_E the representative-to-slice map is Π_E = 1 + DΛ (§16.1), so λ^{Γ_E}_*(p) = Λ(Y^p_{*,0}) with Λ = Σ_Xχ^5_Xλ^E_X of §16.1.
+- **Named input (Y-sup^loc).** A k-, T-uniform bound, for a named representative Y^p_*, on max{|Y^p_{*,0}(b)| : b ⊂ Ñ_X} for the boxes X whose tent is not identically zero on the set being tested, in coarse units: max_X ||(Y^p_*)^c_0||_{∞,Ñ_X}. (Stated as a name, not claimed.)
+- **Named input (NEUT-box).** Box-local neutrality of the off-root composite divergence: max_X|Q_X(D^⊥(S))| = max_X|⟨χ^5_XD^⊥(S)⟩| ≤ C n^{-3}||D^⊥(S)||_∞ (the compensation-charge slot of Lemma ΓT-op (e)). (Stated as a name, not claimed.)
+
+### 34.2 (CO-fun): statements (STEP 2)
+
+- **Lemma W0-use (where co-closedness enters Theorem W0).** An audit, by step, of BFT_A §28.5: in which of its five steps the hypothesis d*j_0 = 0 is used, and for what. The claim to be decided: that it is used in **exactly one** place, and that steps 1, 3, 4, 5 use only sup bounds on the level-0 plain part and the divergence-form structure of G_0, so that they hold verbatim when the level-0 plain part is enlarged by the funnel terms of Lemma RT-cc (d). *Planned: PROVEN-HERE as a reading of a cited proof (every line of §28.5 named), or REFUTED with the step that fails.*
+- **Lemma DF-cc (funnel-modified dual push-down).** For every collection of plain currents j of a Setting LIN^cc source: (i) d*C(j) = D(S); (ii) the funnel parts of the per-level push-downs regroup, ξ_i = (the level-(i+1) root restriction of D(S)) - ψ_i, so that under (CC-0) **C(j) = Σ_l(Q_str^{(0→l)})^Tĵ_l** with ĵ_l of §27.1, which is exactly the plain part of the assembled J_0 of Lemma RT-cc (d); (iii) the same regrouping at every intermediate level: Σ_{l>m}(Q^{(m+1→l)})^Tj_l = Σ_{l>m}(Q_str^{(m+1→l)})^Tĵ_l under (CC-0). *Planned: PROVEN-HERE* (BL-2 (b) transposed, Proposition RF's h^{(0→l)} = Φ_l, injectivity of ev^T, Lemma RT-cc (a)).
+- **Proposition COF-size.** Under (CC-0) and in the (P0) + (Pl-c) classes, π_0(C(j)) ≤ C_C(||j^c_0||_∞ + ||j||_{Pc}) with C_C explicit in (d, L, θ) and independent of k and T. *Planned: PROVEN-HERE* (Lemma DF-cc (ii), Lemma FT (ii)-(iii), the coarse-unit contraction of Q_str^T).
+- **Theorem COF ((CO-fun) under (CC-0)).** For every Setting LIN^cc source in the (P0) + (Pl-c) + (G) + (R) classes that in addition satisfies (CC-0), the level-0 response obeys ||f_0||_∞ + [f_0]^∞_α ≤ C_fun(||G^c_0||_∞ + [G^c_0]_α + ||j^c_0||_∞ + ||j||_{Pc} + ||G||_Y + ||s||_R + κ_+||r^c_{k-1}||_∞) with C_fun independent of k, T, α fixed in (0, θ). *Planned: PROVEN or CONDITIONAL on named lane-A items, each named; the source-slot splitting S = S^G + S^j + S^s is to be shown legitimate (each piece composite-co-closed) or the claim withdrawn.*
+- **Corollary COF-crit.** At every critical point of 𝔉_k, (CC-0) holds for the rows (BFT_A Lemma CD (i): Ξ^T𝔑^0 = -K'^T_x∇(𝔉_k∘exp) = 0 as a level-0 function), so Theorem COF applies there and the curvature half of (NC-Γ)_cc is discharged **at the fixed point of the contraction**. *Planned: PROVEN as an implication.*
+- **Proposition COF-res (the residue when root charges are present).** For a Setting LIN^cc source with D^root(S) ≠ 0 the only term of f_0 not covered by Theorem COF is exactly **n²⟨D^root(S), h^{(0→k)}Y^p_{*,0}⟩ = n²Σ_XD(S)(c_X)Φ_k(Y^p_{*,0})(c_X)** — the level-k root charges paired against the **funnel of the response**, which is Proposition TE's tent coefficient. *Planned: PROVEN-HERE (the identity); its size OPEN and named (TENT-Q).*
+
+### 34.3 (GT-sup): statements (STEP 3)
+
+- **Proposition GT-split.** For every source S, every gauge fixing Γ and every representative: ⟨D(S), λ^Γ_*(p)⟩ = ⟨D^⊥(S), λ^Γ_*(p)⟩. The level-k root charges **never** enter the gauge-fixing remainder of Proposition NCR; for Γ_E this is exact and pointwise, since Λ(x)(c_Y) = 0 at every level-k root Y (§16.1 (c)). *Planned: PROVEN-HERE (one line).* Consequence to be recorded: with Proposition COF-res, D^root and D^⊥ partition the composite divergence between the two targets — D^root drives (CO-fun)'s residue, D^⊥ drives (GT-sup)'s — and no part of D(S) drives both.
+- **Proposition GT-loc (box-local reduction).** sup{|λ^{Γ_E}_*(p)(z)| : z ∈ Z} ≤ 2M_n·max{max_{Ñ_X}|Y^p_{*,0}| : X with χ^5_X not identically 0 on Z} for every set Z, with M_n = 2(4n + 1); in coarse units the factor 2M_n/n ≤ 20 is absolute. Hence **(GT-sup) ⟸ (Y-sup^loc)**, and (GT-sup) is not a question about where the spikes sit but a **local sup bound on the chosen representative's own level-0 field** near supp D^⊥(S). *Planned: PROVEN-HERE given Lemma ΓT-op (d) (§25.1 (d), PROVEN-HERE there).*
+- **Proposition GT-attr (attribution of the k-growth).** In Lemma RC's *Reading* (BFT_A l.3548-3552) the factor that grows with k is |D(R)(Z)| ≍ L^{-3(k-l(Z))}η² times n² = L^{2k} — the own-unit size of a point charge at a **high-level** root — while σ(Z) ≈ 0.003 is level- and k-independent. The claim to be decided: that sup|λ^{Γ_E}_*| is therefore **not** the k-growing factor, and that §31.3's expectation "(GT-sup) is expected FALSE if sup is taken over all z" rests on attributing lane A's L^{2k-3}η² to the wrong factor of the product. *Planned: ARGUED, with the arithmetic written out; a dated erratum to §31.3 if it holds.*
+- **Proposition GT-ell (the ℓ^∞ × ℓ¹ route and its exact price).** |n²⟨D^⊥(S), λ^{Γ_E}_*(p)⟩| = n²|⟨Γ_E^TD^⊥(S), Y^p_{*,0}⟩| ≤ n²||Γ_E^TD^⊥(S)||_∞·||Y^p_{*,0}||_1, and with Lemma ΓT-op (e) and Theorem YH's 𝒩* ≤ C_YNn at the 𝒩-minimising representative this is ≤ 5^dC_YN[c_1||(D^⊥)^c||_∞ + c_2n³max_X|Q_X(D^⊥)|]. So on this route (GT-sup) holds k-, T-uniformly **iff** (NEUT-box) holds, and the obstruction is the pinned compensation charge of ΓT-op (e), not the spikes. *Planned: PROVEN-HERE as an implication (constants explicit); the status of (NEUT-box) to be quoted from lane A's Proposition OB, not re-judged.*
+- **Status of (GT-sup) to be entered.** One of: PROVEN with its constant; CONDITIONAL on (Y-sup^loc) or (NEUT-box) (named); or FALSE with the configurations that break it exhibited. No other outcome is to be recorded.
+
+### 34.4 Failure modes (considered before this append; no pre-registration weight beyond the labels)
+
+- **S10-F1.** Theorem W0's proof turns out to use d*j_0 = 0 a second time, in a step that sup bounds cannot replace (the candidate is §28.5 step 3's identification of the residual term with a **straight** push-down). Expected: OCCURS, and is exactly the funnel term, i.e. harmless because Lemma FT prices it.
+- **S10-F2.** The regrouping ξ_i = (root restriction of D(S)) - ψ_i fails because the sum over l > i and the cascade over l' ≤ i are different sums. Expected: does not occur (the two differ by D(S) itself, which is what makes (CC-0) the hypothesis of Lemma DF-cc (ii)).
+- **S10-F3.** The source-slot splitting S = S^G + S^j + S^s is not legitimate because a piece fails to be composite-co-closed. Expected: does not occur (divergence-form slots are level-wise co-closed; residual slots are Ξ-orthogonal because r_l(Ξλ) = 0).
+- **S10-F4.** (CO-fun) as stated in §31.2 is **false** for Setting LIN^cc sources with nonzero root charges, because the class controls no norm of D^root(S). Expected: OCCURS; the honest outcome is then Theorem COF under (CC-0) plus Proposition COF-res, and a correction to §31.2's statement.
+- **S10-F5.** The free level-0 route f_0 = n²dΔ_0^{-1}J_0 paired against Δ_0^{-1}d*δ_p is not T-uniform (the lattice-Green gradient has ℓ¹ ≍ the torus side, Lemma N1G's M_n/4). Expected: OCCURS; the massless route is therefore not available and the dual pairing with the exponentially decaying response Y^p is the only route. To be recorded whichever way it goes, since §31.2's statement of (CO-fun) is written in the dΔ_0^{-1} form.
+- **S10-F6.** (GT-sup) is dominated by the coarse cell containing p, where the response field is largest, so that no support-avoidance statement about the spikes can save it. Expected: OCCURS as a structural fact; the question is then whether the own-unit sup is k-uniform (Proposition GT-attr).
+
+### 34.5 Checks (criteria file to be written after this section and before any script)
+
+- **bb10** (exact rational arithmetic, `fractions.Fraction` and Python ints only, no numpy, no BLAS, single thread; DRIVE_BRIEF rule 6 exempts it from the numeric lock): the model of bb9b — d = 2, L = 3, k = 2, κ_0 = 1, κ_1 = 2, roots = block centres, axial order 0 then 1 — with the operator construction copied unaltered from `checks/bb9b_rtcc.py` (which is not edited).
+  - Part A (no solve, top side T = 2): (A1) the regrouping identity of Lemma DF-cc (ii) on a basis of composite-co-closed sources with d*j_l ≠ 0, i.e. C(j) = Σ_l(Q_str^{(0→l)})^Tĵ_l; (A2) d*C(j) = D(S); (A3) ξ_i = (root restriction of D(S)) - ψ_i; (A4) Λ(c_Y) = 0 at every level-k root (§16.1 (c)) in this model's Γ_E-free form, i.e. the pin convention; (A5) the coarse-size claim of Proposition COF-size as an inequality on the model's data.
+  - Part B (exact solve, top side T = 1): (B1) for a source with D(S) = 0 strictly, C(j) is co-closed; (B2) for a source with D^root(S) ≠ 0, C(j) is not co-closed and the defect is exactly the root charge; (B3) the residue identity of Proposition COF-res against a directly computed response.
+  - Controls: (C1) a collection whose regrouping is done with the **naive** per-level funnel (no regrouping) fails the size claim, i.e. the regrouping is load-bearing; (C2) dropping (CC-0) breaks A1.
+  - Scope limitation to be reported whatever the outcome: d = 2 and k = 2, abelian, so the check tests the algebra of the regrouping and not the d = 4 arithmetic; at T = 1 the top charge vanishes (as in bb9b's B4), so Part B's root-charge branch must be run at T = 2 or declared untested.
+
+## 35. Proofs, Step 2: (CO-fun) (appended after §34 (13:07:28 UTC), after `checks/bb10_criteria.md` (13:09:13 UTC) and its amendment (13:12:09), and after `checks/bb10_cof.py` ran (13:14-13:15); §27-§33 are not edited)
+
+Target 1 of §34.0. **Session 9's diagnosis of (CO-fun) is wrong in one respect and right in another, and the two have to be separated.** §31.2 wrote: "the funnel pieces … are **co-closed only collectively** (d*J_0 = 0 while d*(h_0^Tψ_0) ≠ 0 in general), so they cannot be fed into Theorem W0's hypothesis one at a time, and Corollary LIN0's superposition … does not apply to them." The first half of that sentence is a true statement about the funnel pieces; the inference is not, for two independent reasons, both of which are proved below:
+1. **The funnel is not a source.** It is produced by the ρ-recursion of Lemma RT-cc, so it does not appear in the dual pairing f_0(p) = n²⟨S, Y^p⟩ at all. What has to be fed into a dual bound is the **source**, and the superposition that matters is the splitting of the *source* into its slots — which is legitimate, because every slot of a Setting LIN^cc source is itself composite-co-closed (§35.2).
+2. **The funnel reappears, but on the level-0 dual push-down, where a regrouping makes it co-closed and keeps its coarse size.** The regrouping is §35.3, Lemma DF-cc; it is the brief's route 2, and it is the content of this section.
+
+What survives of the diagnosis is this: the hypothesis that makes the push-down co-closed is **(CC-0)**, D(S) = 0 as a level-0 function — strictly stronger than composite co-closedness, which only puts D(S) on the level-k roots. (CO-fun) as stated in §31.2 is therefore **not true as stated** for the full Setting LIN^cc class (S10-F4 OCCURS, §35.7), and is true under (CC-0), which is exactly what Lemma CD (i) supplies at critical points of 𝔉_k (§35.6).
+
+**Convention, stated once (and a reading note for the review).** f_0 = n²dx_0 in the coarse units of BFT_A §26.0 (G^c = n²G, j^c = n³j). With that convention the duality is **dx_0(p) = ⟨S, Y^p_Γ⟩**, i.e. f_0(p) = n²⟨S, Y^p_Γ⟩ — the form used in BFT_A 28.5 step 2 ("f_0(p) = Σ_qG^c_0(q)dY^p_0(q) + n²⟨j_0, Y^p_0 + dλ⟩"), in Lemma RC ("f^♯_0 - f^E_0 = n²⟨D(S), σ⟩") and in 38.6. **Both BFT_A §26.2's display of Lemma FG (ii) and §31.1's display of Proposition NCR omit that n²**; the omission changes nothing in either statement (every term of NCR carries the same factor), but the next lane-B review should decide whether to enter it as an erratum. Every display in §35 and §36 carries the n² explicitly.
+
+### 35.1 Lemma W0-use: PROVEN-HERE (a reading of BFT_A §28.5, line by line)
+
+*Claim.* In the proof of Theorem W0 (BFT_A l.2465-2494) the hypothesis d*j_0 = 0 is used in exactly **two** places, and only one of them is an obstruction to enlarging the level-0 plain part by the funnel terms of Lemma RT-cc (d).
+
+*Step 1 (duality, l.2467-2468).* "dx_0(p) = Ê(Y^p, x) = Ê(x, Y^p) = ⟨G_0, dY^p_0⟩ + ⟨j_0, Y^p_0⟩." This is Lemma DUAL (§23.2) and the symmetry of the quadratic form. **No co-closedness.**
+
+*Step 2 (sup, l.2469-2471).* "f_0(p) = Σ_qG^c_0(q)dY^p_0(q) + n²⟨j_0, Y^p_0 + dλ⟩ **for every λ**. So, by homogeneity and Theorem YH, ||f_0||_∞ ≤ C_YH(…) + n²·n^{-3}||j^c_0||_∞·C_YNn." The words "for every λ" are the use: ⟨j_0, dλ⟩ = ⟨d*j_0, λ⟩ = 0 is what licenses replacing ||Y^p_0||_1 by the gauge-optimal 𝒩(Y^p) ≤ C_YNn of Theorem YH. **This is use (A), and it is essential**: for a plain current that is not co-closed the pairing depends on the representative, and no k-uniform bound on ||Y^p_0||_1 for a fixed representative is available (that is (PW-ℓ¹); for Γ_E it is expected FALSE, [RBB8-fix RS8-3]).
+
+*Step 3 (residuals, l.2472-2478).* "κ_iQ_i^Tr_i = κ_{i-1}r_{i-1}. So κ_ir_i = κ_{k-1}(Q^{(i+1→k)})^Tr_{k-1}, with r_{k-1} co-closed … and |r_i| ≤ κ̂L^{-3(k-1-i)}sup|r_{k-1}|." Co-closedness enters here only through **r_{k-1}**, not through j_0, and it is used to replace Q^T by the straight Q_str^T in the push-down (BL-2 (c)); the rest is Lemma TOPD plus Proposition W, which are statements about Y^{(b)}. In the composite-co-closed setting d*ρ_l = ψ_l ≠ 0 and the straightening costs exactly the funnel term h_l^Tψ_l — **this is use (B), S10-F1 OCCURS as expected, and it is harmless**: Lemma RT-cc (b) performs the substitution exactly and Lemma FT prices it, with no power of L^{k-l} (Lemma FT (ii)).
+
+*Step 4 (Hölder of f_0, l.2479-2490).* The level-0 equation is used in the form "d*F = d*G_0 + j_0 - κ_{k-1}(Q_str^{(0→k)})^Tr_{k-1}. So componentwise -ΔB_ν = Σ_μ∂^-_μG_{μν} - h_ν, with h := j_0 - κ_{k-1}(Q_str^{(0→k)})^Tr_{k-1} and **sup|h| ≤ n^{-3}(||j^c_0||_∞ + κ_+sup|r_{k-1}|)**", and then LES-div, which asks for "n^{1-α}sup|h|" and for [G_0]_{α;fine}. **The plain slot enters through its sup alone**; nothing in LES-div, Lemma LE or BL-C asks that h be co-closed. So step 4 is available verbatim for **any** enlargement of h by plain currents with a sup bound — the funnel terms of Lemma RT-cc (d) included.
+
+*Step 5 (upper levels, l.2491-2493).* f_j = 𝒜^{(0→j)}f_0 - R_j with ||(dr_i)^c|| ≤ 4L^{k-1-i}||r^c_i|| and Lemma RH. **No co-closedness**; it is the step §31.2 (b) already used.
+
+*Conclusion.* Use (A) is the only real one, and it is a statement about the **total** object paired with Y^p_0: it asks that the level-0 plain object entering the pairing be co-closed, not that it be a sum of co-closed pieces. Use (B) is the funnel itself and is priced by Lemma FT. ∎
+
+**What this already settles.** The Hölder half, the residual half and the upper-level tower of (CO-fun) are not obstructed by the funnel. Only the sup half is, and only through the co-closedness of the one object that is paired with Y^p_0. §35.3 produces that object.
+
+### 35.2 Lemma SPLIT (source-slot superposition is available): PROVEN-HERE
+
+*Claim.* Let S = (G_l, j_l, s_l, B_k = 0) be a Setting LIN^cc source and write S^G := the collection of divergence-form slots (d*G_l, 0 ≤ l ≤ k - 1), S^s := the residual-slot sources (s_l), S^j := the plain currents (j_l). Then **each of S^G, S^s, S^j is composite-co-closed**, and D(S^G) = D(S^s) = 0, D(S^j) = D(S); if S satisfies (CC-0) then so does S^j.
+
+*Proof.* D(S) = d*S_0 + Σ_{1≤l≤k-1}ev^{(0→l)T}d*S_l (§27.1). For a divergence-form slot S_l = d*G_l we have d*S_l = d*d*G_l = 0 (d*d* = 0 on 2-forms), so every level-wise divergence-form collection has D = 0: composite-co-closed, and strictly so. For a residual slot the energy term is -⟨s_i, r_i(x)⟩, and r_i(x + Ξλ) = r_i(x) for every λ by root covariance (§29.4), so Ξ^T annihilates the residual slots identically: D(S^s) = 0. Linearity of D gives D(S^j) = D(S). ∎
+
+*Consequence (correcting §31.2).* **Superposition is available**, and Corollary LIN0's objection does not apply: the pieces that are being superposed are *source slots*, each composite-co-closed, not funnel pieces. The G-slots go to Theorem W0 (l = 0) and Theorem GU (l ≥ 1) and the s-slots to Corollary LIN0, all three CONFIRMED (Proposition CO-use (i), (ii), REVIEW_BFT_A_S6 l.23-24, 151, 181, 198). What is left for this session is **S^j alone**.
+
+### 35.3 Lemma DF-cc (the funnel regrouping of the dual push-down): PROVEN-HERE
+
+*Statement.* Let j = (j_0, …, j_{k-1}) be the plain currents of a Setting LIN^cc source, C(j) := Σ_{0≤l≤k-1}(Q^{(0→l)})^Tj_l (§34.1), ξ_i := Σ_{l>i}ev^{(i+1→l)T}d*j_l, and let R_{i+1}(D) denote the level-(i+1) function with ev^{(0→i+1)T}R_{i+1}(D) = D for a level-0 function D supported on the level-(i+1) roots. Then:
+
+**(i)** d*C(j) = D(S). In particular C(j) is co-closed **iff (CC-0) holds**.
+**(ii)** ev^{(0→i+1)T}(ξ_i + ψ_i) = D(S) for every 0 ≤ i ≤ k - 1, hence **ξ_i = R_{i+1}(D(S)) - ψ_i**, and
+  **C(j) = Σ_{0≤l≤k-1}(Q_str^{(0→l)})^Tĵ_l - Σ_{0≤i≤k-1}(Q_str^{(0→i)})^Th_i^TR_{i+1}(D(S))**  (†)
+with ĵ_l = j_l + h_l^Tψ_l of §27.1. Under (CC-0) the second sum vanishes and ψ_{k-1} = 0, so **C(j) = Σ_l(Q_str^{(0→l)})^Tĵ_l**, which is exactly the plain part of the assembled J_0 of Lemma RT-cc (d).
+**(iii)** The same at every intermediate level: for 0 ≤ m ≤ k - 2, Σ_{l>m}(Q^{(m+1→l)})^Tj_l = Σ_{l>m}(Q_str^{(m+1→l)})^Tĵ_l under (CC-0).
+
+*Proof.* **(i)** d*(Q^{(0→l)})^T = ev^{(0→l)T}d* is BL-2 (c) iterated (the transpose of root covariance Q_ld = d ev; it is Lemma DF (iii)'s first line and needs no co-closedness). Summing over l gives d*C(j) = Σ_lev^{(0→l)T}d*j_l = D(S^j) = D(S) by Lemma SPLIT. ∎(i)
+
+**(ii)** By Proposition RF, Q^{(0→l)} = Q_str^{(0→l)} - d∘h^{(0→l)} with h^{(0→l)} = Σ_{i<l}ev^{(i+1→l)}h_iQ_str^{(0→i)}. Transposing, with d^T = d* in the §23.1 convention (Lemma DF (i)),
+  (Q^{(0→l)})^T = (Q_str^{(0→l)})^T - Σ_{i<l}(Q_str^{(0→i)})^Th_i^Tev^{(i+1→l)T}d*.
+Summing over l and exchanging the order of the double sum (the pair (i, l) runs over i < l, which is the same set read by l or by i):
+  C(j) = Σ_l(Q_str^{(0→l)})^Tj_l - Σ_i(Q_str^{(0→i)})^Th_i^T[Σ_{l>i}ev^{(i+1→l)T}d*j_l] = Σ_l(Q_str^{(0→l)})^Tj_l - Σ_i(Q_str^{(0→i)})^Th_i^Tξ_i.
+Now apply ev^{(0→i+1)T} to ξ_i. Placements compose, ev^{(0→i+1)T}ev^{(i+1→l)T} = ev^{(0→l)T} (§29.1 (a)), so ev^{(0→i+1)T}ξ_i = Σ_{l>i}ev^{(0→l)T}d*j_l = D(S) - Ψ_i, while ev^{(0→i+1)T}ψ_i = Ψ_i is Lemma RT-cc (a) (†). Adding, ev^{(0→i+1)T}(ξ_i + ψ_i) = D(S). Since D(S) is supported on the level-k roots (composite co-closedness) and the level-k roots are a subset of the level-(i+1) roots, R_{i+1}(D(S)) exists; ev^{(0→i+1)T} is injective (it places a level-(i+1) function on distinct level-0 sites, §29.1 (a)), so ξ_i = R_{i+1}(D(S)) - ψ_i. Substituting and collecting, with the convention that the i = k - 1 term carries ψ_{k-1} = R_k(D(S)) (ξ_{k-1} = 0 because the sum over l > k - 1 is empty, and ev^{(0→k)T}ψ_{k-1} = Ψ_{k-1} = D(S)), gives (†). Under (CC-0), D(S) = 0 forces every R_{i+1}(D(S)) = 0 and ψ_{k-1} = 0. ∎(ii)
+
+**(iii)** Identical, with (Q^{(m+1→l)})^T = (Q_str^{(m+1→l)})^T - Σ_{m+1≤i<l}(Q_str^{(m+1→i)})^Th_i^Tev^{(i+1→l)T}d* and the same exchange of sums; the inner bracket is again ξ_i, and under (CC-0) ξ_i = -ψ_i. ∎(iii)
+
+*Reading.* The content of (ii) is that the **two groupings of the same exact object differ by where the funnel is read**. In the naive grouping the funnel at level i is h_i^Tξ_i, which reads the divergences of the **higher** levels l > i; in the regrouped one it is h_i^Tψ_i, which reads the divergences of the **lower** levels l' ≤ i (Lemma RT-cc (a)) and is then pushed down by the straight average, which contracts by L^{-3} per level. Composite co-closedness is exactly the identity that lets one be traded for the other: the two sums are negatives of each other because the total divergence is 0. **That is why the funnel is affordable.** §35.4 is the arithmetic.
+
+### 35.4 Proposition COF-size: PROVEN-HERE
+
+*Statement.* Under (CC-0) and in the (P0) + (Pl-c) classes (π_0(j_0) = ||j^c_0||_∞, π_l(j_l) ≤ L^{-θ(k-l)}||j||_{Pc} for l ≥ 1, θ > 0):
+  **π_0(C(j)) ≤ C_C(||j^c_0||_∞ + ||j||_{Pc}),  C_C := (1 + 2d(1 - L^{-3})^{-1})(1 + (1 - L^{-θ})^{-1}),**
+independent of k and T (d = 4, L = 3: C_C ≤ 9.31(1 + (1 - 3^{-θ})^{-1})).
+
+*Proof.* Three facts, each already proven.
+1. *Coarse-unit contraction of the straight push-down.* One step gives |Q_str^Tv| ≤ L^{-3}sup|v| in own units (exactly L terms of weight L^{-4}, BL-2 (c); Theorem PW-cc's level-0 step). Iterating, sup_own|(Q_str^{(0→l)})^Tv| ≤ L^{-3l}sup_own|v|, hence **π_0((Q_str^{(0→l)})^Tv) = L^{3k}sup_own ≤ L^{3(k-l)}sup_own|v| = π_l(v)**: the straight push-down is a contraction *in coarse units*. (bb10 A6 tests the one-step inequality exactly, with the exponent L^{-(d-1)} of the model.)
+2. *The funnel's coarse size.* Lemma FT (iii): π_l(ĵ_l) ≤ π_l(j_l) + 2d(1 - L^{-3})^{-1}max(L^{-θ(k-l)}||j||_{Pc}, L^{-3l}||j^c_0||_∞) ≤ (1 + 2d(1 - L^{-3})^{-1})(L^{-θ(k-l)}||j||_{Pc} + L^{-3l}||j^c_0||_∞).
+3. *Summability.* By Lemma DF-cc (ii) and 1, π_0(C(j)) ≤ Σ_lπ_l(ĵ_l), and by 2 the sum is ≤ (1 + 2d(1 - L^{-3})^{-1})[(1 - L^{-θ})^{-1}||j||_{Pc} + (1 - L^{-3})^{-1}||j^c_0||_∞]. ∎
+
+*What makes this work, in one line.* The funnel at level l draws on the levels **at or below** l (Lemma FT (ii)) and is then pushed down from level l with the full L^{-3l}; in the naive grouping the funnel at level 0 draws on the levels **above** 0 and is pushed down by nothing, which costs L^{3l} per level. The regrouping of Lemma DF-cc (ii) is what converts the second into the first.
+
+### 35.5 Theorem COF ((CO-fun) under (CC-0)): PROVEN as an implication
+
+*Statement.* At m = 0, the trivial background, 0 < α < θ < 1: there is C_fun < ∞, independent of k and T, such that for every Setting LIN^cc source in the (P0) + (Pl-c) + (G) + (R) classes that satisfies **(CC-0)**, the level-0 response obeys
+  **||f_0||_∞ + [f_0]^∞_α ≤ C_fun(||G^c_0||_∞ + [G^c_0]_α + ||j^c_0||_∞ + ||j||_{Pc} + ||G||_Y + ||s||_R + κ_+||r^c_{k-1}||_∞).**
+
+*Inputs, by name, with the status quoted and not re-judged.* Theorem YH (𝒩* ≤ C_YNn; CONFIRMED, REVIEW_BFT_A_S6 l.23, 128); Theorem W0 steps 3-4 and their inputs LES-div (PROOF l.3422, reviewed), Lemma LE and BL-C (CONFIRMED with W0, l.23, 151); Theorem GU (CONFIRMED, l.24, 181); Corollary LIN0 (CONFIRMED in its stated scope, l.24, 198); Theorem PW-cc's residual estimates (CONFIRMED and uniform in k, T, REVIEW_BFT_A_S8 S8-4); Lemma RT-cc, Lemma FT (session 9, unreviewed); Lemma SPLIT, Lemma DF-cc, Proposition COF-size (this session).
+
+*Proof.* By Lemma SPLIT, f_0 = f_0[S^G] + f_0[S^s] + f_0[S^j], each term the response to a composite-co-closed source, and S^j satisfies (CC-0) with S.
+
+**(a) The G-slots.** Level 0: Theorem W0 gives ||f_0[G_0]||_∞ ≤ C_YH(||G^c_0||_∞ + [G^c_0]^∞_α) and the full ||x||_inv bound, so also [f_0]_α. Levels l ≥ 1: Theorem GU gives ||f_0[G_l]||_∞ ≤ 6C_YB(k - l + 1)²||G^c_l||_∞ and ||x(G_l)||_inv ≤ C_GU(k - l + 1)²L^{α(k-l)}||G^c_l||_∞; with the (G)-class weights ω_l = L^{θ(k-l)} and α < θ, Σ_{l≥1}(k - l + 1)²L^{(α-θ)(k-l)} ≤ S_{α,θ} < ∞ independently of k, which is GU's own "hence for 0 < α < θ" clause. Total: ≤ C(||G^c_0||_∞ + [G^c_0]_α + ||G||_Y).
+
+**(b) The s-slots.** Corollary LIN0 with G = j = B_k = 0 bounds ||x(s)||_inv ≤ C||s||_R; its hypothesis "level-wise co-closed plain currents" is vacuous here (there are none), and the s-slots are composite-co-closed by Lemma SPLIT. Total: ≤ C||s||_R.
+
+**(c) The plain currents: the sup half.** By Lemma DUAL / Lemma FG (ii) in the n² convention and Lemma DF (ii) summed over l,
+  f_0[S^j](p) = n²[⟨C(j), Y^p_0⟩ - Σ_{0≤m<k-1}⟨Σ_{l>m}(Q^{(m+1→l)})^Tj_l, r_m(Y^p)⟩].
+*First term.* By Lemma DF-cc (i) and (CC-0), C(j) is **co-closed**, so ⟨C(j), Y^p_0⟩ = ⟨C(j), Y^p_0 + dλ⟩ for every level-0 λ, and therefore
+  n²|⟨C(j), Y^p_0⟩| ≤ n²sup|C(j)|·𝒩(Y^p) ≤ n²·n^{-3}π_0(C(j))·C_YNn = C_YNπ_0(C(j)) ≤ C_YNC_C(||j^c_0||_∞ + ||j||_{Pc})
+by Theorem YH and Proposition COF-size. **This is use (A) of Lemma W0-use, discharged for the total object and not piece by piece — which is all Theorem W0's step 2 ever needed.**
+*Residual terms.* By Lemma DF-cc (iii) the operators are the straight ones acting on ĵ, so sup_own|Σ_{l>m}(Q_str^{(m+1→l)})^Tĵ_l| ≤ Σ_{l>m}L^{-3(l-m-1)}sup_own|ĵ_l|. For Y^p the residual ℓ¹ norms are Theorem PW-cc's: ||r_{k-1}(Y^p)||_1 ≤ 4n^{-2}G_D(m')S(m')/κ_- and ||r_m(Y^p)||_1 ≤ κ̂L^{k-1-m}||r_{k-1}(Y^p)||_1, i.e. ≤ AL^{k-1-m}n^{-2} with A := 4κ̂G_D(m')S(m')/κ_- — both proved there from the single source G_0 = δ_p of Y^p and used here unchanged. Writing m = l - 1 - a (a ≥ 0) and sup_own|ĵ_l| = L^{-3(k-l)}π_l(ĵ_l):
+  n²Σ_m|⟨·, r_m(Y^p)⟩| ≤ AΣ_lΣ_{a≥0}L^{k-l+a}L^{-3a}L^{-3(k-l)}π_l(ĵ_l) = AΣ_lL^{-2(k-l)}π_l(ĵ_l)Σ_{a≥0}L^{-2a} ≤ A(1 - L^{-2})^{-2}max_lπ_l(ĵ_l),
+k- and T-uniformly, and max_lπ_l(ĵ_l) ≤ C_C(||j^c_0||_∞ + ||j||_{Pc}) by Proposition COF-size's step 2. So
+  **||f_0[S^j]||_∞ ≤ [C_YNC_C + A(1 - L^{-2})^{-2}C_C](||j^c_0||_∞ + ||j||_{Pc}).**
+(The residual terms carry L^{-2(k-l)}, so they are not the binding part; the binding part is the co-closed level-0 pairing.)
+
+**(d) The plain currents: the Hölder half.** By Lemma W0-use, step 4 of §28.5 applies to the j-only problem with its own level-0 equation d*dx_0 = J_0[S^j], J_0[S^j] = C(j) - (Q_str^{(0→k)})^Tρ_{k-1} (Lemma RT-cc (d) with G = 0, rewritten by Lemma DF-cc (ii); bb10 B1 checks this identity exactly). There is **no divergence-form term** in this problem, so step 4's estimate reads, in coarse units and for coarse scales ρ_c ≤ ¼,
+  ρ_c^{-α}Osc_2(f_0[S^j]) ≤ 2C_α[C_E||f_0[S^j]||_∞ + π_0(C(j)) + κ_+||r^c_{k-1}||_∞],
+with 4^α||f_0||_∞ for ¼ < ρ_c ≤ 1 and the n < 16 case as there; nothing in LES-div or Lemma LE asks for co-closedness of the plain slot, and sup|J_0[S^j]| ≤ n^{-3}(π_0(C(j)) + κ_+||r^c_{k-1}||_∞). With (c) this bounds [f_0[S^j]]^∞_α.
+
+Collecting (a)-(d) gives the displayed bound, with C_fun explicit in (C_YH, C_YN, C_YB, C_GU, C_α, C_E, A, C_C, S_{α,θ}, κ_±, d, L, α, θ) and uncomputed through C_K exactly as lane A's constants are. ∎
+
+*Honest scope.* (1) **PROVEN as an implication**, not PROVEN-HERE: Theorem YH, LES-div, Theorem GU and Corollary LIN0 are quoted, not re-derived. (2) The hypothesis is **(CC-0)**, not plain composite co-closedness. (3) m = 0, trivial background, 0 < α < θ. (4) The term κ_+||r^c_{k-1}||_∞ is kept because (CO-fun)'s statement in §31.2 allows it; it is needed only in (d), and only for the j-slots, so it could be removed by running (d) through Lemma TOPD as W0 step 3 does — not done here.
+
+### 35.6 Corollary COF-crit: PROVEN as an implication
+
+At every critical point of 𝔉_k∘exp the rows satisfy (CC-0): BFT_A Lemma CD gives Ξ^T𝔑^0(x; B) = -K'^T_x∇(𝔉_k∘exp)(x; B) as an **identity of level-0 functions**, so ∇(𝔉_k∘exp) = 0 forces D(𝔑^0) = 0 everywhere, the level-k roots included (and lane A's own reading says exactly this: "Lemma CD forces D = 0 only at critical points", l.3552). The co-closed completions d*W_l of Corollary NC are strictly composite-co-closed by Lemma SPLIT, so the remainders V = 𝔑^0 - d*W satisfy (CC-0) too. Hence, at a critical point of 𝔉_k and for ||x||_𝔐 ≤ η ≤ η_0:
+  **||f_0||_∞ + [f_0]^∞_α ≤ C_funC'η²,** k-, T- and Γ-uniformly,
+by Theorem COF with Corollary NC's slot sizes (ω_l||W^c_l||_∞ ≤ CL^{-(1-θ)(k-l)}η², π_l(V_l) ≤ 2C_NCC_bchκ_+L²η², §29.4) and Corollary RHT-V's bound on the top residual. **With §31.2 (a) and Corollary RHT-V (the residual half, already PROVEN unconditionally in session 9), this closes the curvature half of (NC-Γ)_cc at critical points: (NC-Γ)_cc is PROVEN at critical points of 𝔉_k, at m = 0 and the trivial background, for every gauge fixing.** ∎
+
+### 35.7 Proposition COF-res (the residue when the level-k root charges do not vanish): PROVEN-HERE; (CO-fun) as stated in §31.2 is FALSE
+
+*Statement.* Let S be a Setting LIN^cc source with D(S) ≠ 0 (so D(S) = D^root(S), supported on the level-k roots, total 0). Then, with every other term bounded as in Theorem COF, the single extra term in f_0 is exactly
+  **n²⟨D^root(S), h^{(0→k)}Y^p_{*,0}⟩ = n²Σ_XD(S)(c_X)·Φ_k(Y^p_{*,0})(c_X),**
+the level-k root charges paired against the **funnel of the response** at the level-k roots. This is Proposition TE's tent coefficient ψ_{Y^p}(X) = (h^{(0→k)}Y^p_0)(c_X) — the quantity REVIEW_BFT_A_S8 S8-7 computes exactly.
+
+*Proof.* By Lemma DF-cc (ii) the defect of the regrouping is -Σ_i(Q_str^{(0→i)})^Th_i^TR_{i+1}(D(S)) (bb10 A5 checks this identity exactly, with a nonzero defect). Pairing with Y^p_0 and moving the operators across,
+  ⟨Σ_i(Q_str^{(0→i)})^Th_i^TR_{i+1}(D), Y^p_0⟩ = Σ_i⟨R_{i+1}(D), h_iQ_str^{(0→i)}Y^p_0⟩ = Σ_XD(c_X)Σ_i(ev^{(i+1→k)}h_iQ_str^{(0→i)}Y^p_0)(X),
+where the last step uses that R_{i+1}(D) is supported on the level-k roots (as level-(i + 1) sites), so pairing a level-(i+1) function v against it reads v at the level-k roots, i.e. ev^{(i+1→k)}v. By Proposition RF, Σ_{i<k}ev^{(i+1→k)}h_iQ_str^{(0→i)} = h^{(0→k)} = Φ_k. ∎
+
+*Why this makes (CO-fun) as stated FALSE (S10-F4 OCCURS).* The (P0) + (Pl-c) + (G) + (R) classes bound no norm of D^root(S) beyond what follows from the currents' sups, and the pairing above is a **point** pairing at the level-k roots: a single root charge of own size q contributes n²·q·Φ_k(Y^p_0)(c_X), with Φ_k(Y^p_0) level- and k-independent in own units (REVIEW_BFT_A_S8 S8-5: Φ_l = Σ_{i<l}φ_{i+1} converges, exact ratio φ_2/φ_1 = 17/243). Since the class permits q of own size L^{-3}π_{k-1}(j_{k-1}), the term reaches ≍ L^{2k-3}π_{k-1}(j_{k-1}) — the same L^{2k-3} as Lemma RC's *Reading*, by the same mechanism. **So (CO-fun) is true under (CC-0) and false without it**, and the correct statement of the curvature half of (NC-Γ)_cc is Theorem COF plus the named item **(TENT-Q)**:
+
+> **(TENT-Q), named and stated.** A k-, T-uniform bound on n²Σ_X|Q_X|·|Φ_k(Y^p_{*,0})(c_X)| for the level-k root charges Q_X = D(S)(c_X) that occur in the contraction, for a named representative Y^p_*. **OPEN.** By Proposition TE the same object is the tent coefficient whose non-vanishing refutes (GE-T) (REVIEW_BFT_A_S8 S8-7, exact: ψ_u = -65/26244 at k = 2 for an admissible dipole), so no bound on it can come from (GE-T)-type statements; and by §36.5 it is **the same obstruction** the gauge-fixing remainder reduces to.
+
+*An erratum entered for §31.2 (binding on this session's own reading, not on session 9's text, which stands).* **[S10-fix 1]** §31.2's display of (CO-fun) quantifies over "every Setting LIN^cc source in the (P0) + (Pl-c) + (G) + (R) classes". Read instead: **every such source satisfying (CC-0)** (equivalently: every such source at a critical point of 𝔉_k, Lemma CD (i)); for the others the extra term of Proposition COF-res is present and is not bounded by those norms. §31.2's reason for (CO-fun) being open — "the funnel pieces … cannot be fed into Theorem W0's hypothesis one at a time" — is **superseded** by Lemma W0-use and Lemma DF-cc: the funnel never had to be fed in piece by piece.
+
+### 35.8 Remark MASSLESS (why §31.2's dΔ_0^{-1} form cannot be used directly): PROVEN-HERE; S10-F5 OCCURS
+
+§31.2 states (CO-fun) for "f_0 = n²dΔ_0^{-1}J_0". That identity is exact (Lemma RT-cc (d)) and, read as a pairing, f_0(p) = n²⟨J_0, G^p⟩ with the **free** level-0 field G^p := Δ_0^{-1}d*δ_p — which would make the funnel terms free of charge, since G^p is independent of the chain and the estimate would need only sup|J_0|. **It is not available T-uniformly.** On the level-0 torus of side Tn the lattice-Green gradient has ℓ¹ norm of the order of the torus side: Lemma N1G, as used in §25.1 (c), gives Σ_z|∇_μG_M(z)| = M_n/4 with M_n = 2(4n + 1) for a box of side ≍ 4n, i.e. ℓ¹ ≍ (side)/2, and the same count on the full torus gives ≍ Tn; the shell count that produces it is Σ_{r≤N}r^{d-1}r^{-(d-1)} = N. Hence n²·sup|J_0|·||G^p||_1 ≍ n²·n^{-3}π_0(J_0)·Tn = T·π_0(J_0): **a factor T**. The response Y^p is exponentially decaying on the coarse scale (Proposition W, used in W0 step 3 and PW-cc), which is exactly why 𝒩(Y^p) ≤ C_YNn is T-uniform while the massless kernel's ℓ¹ is not. **So the dual pairing with Y^p is the only route, and the co-closedness of the paired object is unavoidable** — which is why (CC-0), and not merely a sup bound, is the hypothesis of Theorem COF. The next review should decide whether to restate §31.2's (CO-fun) in the dual form; the statement proved here (Theorem COF) is equivalent to it for the quantity that matters, ||f_0||_∞ + [f_0]^∞_α.
+
+## 36. Proofs, Step 3: (GT-sup), and what is left of (NC-Γ) for Γ_E (appended after §35)
+
+Target 2 of §34.0. The question put to this session was whether the spikes of λ^{Γ_E}_* sit where D(S) lives. **The answer is that the question decomposes, and that neither half of it is about spike support.** §36.1 removes the level-k root charges from the remainder exactly; §36.2 shows that what is left is a **local sup bound on the chosen representative's own level-0 field**, with an absolute constant; §36.3 shows that the k-growth recorded in Lemma RC's *Reading* belongs to the other factor of §31.3's product; §36.4 gives the second route and its exact price; §36.5 assembles.
+
+### 36.0 What λ^{Γ_E}_*(p) is: PROVEN-HERE (one line)
+
+Π_E = 1 + ΞΛ on chains (§16.1 (c), writing Ξ for lane B's D), Π_E maps onto S_E = Ker Γ_E and is the identity there (§16.1 (d)), so Y^p_{Γ_E} = Π_EY^p_* = Y^p_* + ΞΛ(Y^p_{*,0}); comparing with Proposition NCR's defining relation Y^p_* + Ξλ = Y^p_Γ and using that ΓΞ is injective on Λ_0/const,
+  **λ^{Γ_E}_*(p) = Λ(Y^p_{*,0}) = Σ_Xχ^5_Xλ^E_X(Y^p_{*,0}).** ∎
+So (GT-sup) is a statement about the box-Neumann potentials of the representative's level-0 field, and every tool of §24.1/§25.1 applies to it.
+
+### 36.1 Proposition GT-split: PROVEN-HERE
+
+*Statement.* For every chain source S, every gauge fixing Γ, every representative Y^p_* and every p:
+  **n²⟨D(S), λ^Γ_*(p)⟩ = n²⟨D^⊥(S), λ^Γ_*(p)⟩** — the level-k root charges D^root(S) never enter the gauge-fixing remainder of Proposition NCR.
+
+*Proof.* λ^Γ_*(p) ∈ Λ_0/const and Λ_0 = level-0 functions **constant on the level-k roots** (BFT_A §26.0). Σ_zD(S)(z) = 0 for every chain source (D(S) is a sum of lattice divergences and of placements of divergences, each of total 0; this is also DF (iii)'s "ΣD(j) = 0"), so the pairing is independent of the additive constant, and one may take the representative with λ|{level-k roots} = 0. Then ⟨D(S), λ⟩ = Σ_{z not a level-k root}D(S)(z)λ(z) = ⟨D^⊥(S), λ⟩. For Γ = Γ_E no choice of constant is needed: **Λ(x)(c_Y) = λ^E_Y(x)(c_Y) = 0 at every level-k root Y** by §16.1 (c) (the pin λ(c_X) = 0), so the statement is pointwise. ∎
+
+*Complementarity (this is the structural finding).* With Proposition COF-res, the two parts of the composite divergence drive the two targets, and **neither drives both**:
+
+| part of D(S) | where it acts | the item it feeds |
+|---|---|---|
+| D^root(S) (level-k roots) | the **curvature half** for composite-co-closed sources: the pairing of the root charges with the response's level-k funnel Φ_k(Y^p_0) | **(TENT-Q)** (§35.7) |
+| D^⊥(S) (everything else) | the **gauge-fixing remainder** n²⟨D^⊥(S), λ^Γ_*(p)⟩ of Proposition NCR | **(GT-sup)** (this section) |
+
+Composite co-closedness is exactly D^⊥(S) = 0, which is why Lemma FG (iii) kills the second and not the first; (CC-0) is exactly D(S) = 0, which kills both.
+
+### 36.2 Proposition GT-loc: PROVEN-HERE given Lemma ΓT-op (d)
+
+*Statement.* For every set Z of level-0 sites and every chain x,
+  **sup_{z∈Z}|Λ(x)(z)| ≤ 2M_n·max{max_{Ñ_X}|x_0| : X with χ^5_X not identically 0 on Z},  M_n = 2(4n + 1),**
+i.e., in coarse units (x^c_0 = nx_0) with the absolute constant 2M_n/n ≤ 20,
+  **sup_{z∈Z}|Λ(x)(z)| ≤ 20·max{||x^c_0||_{∞,Ñ_X} : |z - c_X|_∞ < 1 for some z ∈ Z}.**
+Hence, taking Z = supp D^⊥(S) and x = Y^p_*: **(GT-sup) ⟸ (Y-sup^loc)**, with constant 20, uniformly in k and T.
+
+*Proof.* Λ(x)(z) = Σ_Xχ^5_X(z)λ^E_X(x)(z), and χ^5 ≥ 0 with Σ_Xχ^5_X = 1 (§16.1 (b): σ_5 = 1 - p with p(t) = 10t³ - 15t⁴ + 6t⁵ ∈ [0, 1] on [0, 1], and the product over directions), so Λ(x)(z) is a **convex combination** of the λ^E_X(x)(z) over the X with χ^5_X(z) > 0, i.e. with |z - c_X|_∞ < 1 (§16.1 (g)); at most 2^d of them. Lemma ΓT-op (d) (§25.1 (d), PROVEN-HERE): for z ∈ Ñ_X, |λ^E_X(x)(z)| = |⟨(λ^E_X)^Tδ_z, x_0⟩| ≤ ||(λ^E_X)^Tδ_z||_1max|x_0| ≤ M_n||δ_z - δ_{c_X}||_1max_{Ñ_X}|x_0| = 2M_nmax_{Ñ_X}|x_0|. Taking the max over the boxes in the convex combination and then the sup over z ∈ Z gives the display; 2M_n/n = 4(4n + 1)/n ≤ 20 for n ≥ 2 is §25.1 (d)'s own arithmetic. ∎
+
+*What this settles, and it is the session's answer to the question as put.* **(GT-sup) is not a question about where the spikes of λ^{Γ_E}_* sit.** The gauge transport function is, pointwise, at most 20 times the coarse sup of the representative's own level-0 field on the ≤ 2^d boxes that see the point — and the boxes have coarse half-width 2, so the field is read within coarse distance 3 of supp D^⊥(S) (Lemma ΓT-op (b)'s locality). No cancellation, no spike structure and no support comparison enters this bound. What (GT-sup) needs is (Y-sup^loc), a **local sup bound on a named representative's field** — an object of lane A's linear package, not of the slice.
+
+*Where the difficulty actually is (S10-F6 OCCURS, as pre-stated).* (Y-sup^loc) is a statement about |Y^p_{*,0}| near supp D^⊥(S), and the response field is largest in the coarse cell containing p. So a global (Y-sup^loc) is a statement about the core of the response, not about its tail, and no support-avoidance property of the spikes can replace it: if supp D^⊥(S) meets the coarse cell of p — which it does for a generic non-critical configuration, since D^⊥(S) = (-K'^T_x∇(𝔉_k∘exp))^⊥ is supported wherever the Newton residual is — then the core value is what enters.
+
+### 36.3 Proposition GT-attr (the k-growth is in the other factor): ARGUED
+
+*Claim.* sup|λ^{Γ_E}_*(p)| is **not** the factor that grows with k in Lemma RC's *Reading*; the growth is in |D(R)(Z)|·n².
+
+*The arithmetic, quoted and re-done.* BFT_A l.3548-3552 reads: "the difference is n²Σ_ZD(R)(Z)σ(Z), with **σ(Z) ≈ sp ≈ 0.003** at the roots Z next to p. Since **|D(R)(Z)| can be as large as … ≍ L^{-3(k-l(Z))}η²**, the difference can reach ≍ L^{3l(Z)-k}η² (up to L^{2k-3}η² for l(Z) = k - 1)". Multiplying out: n²·L^{-3(k-l)}η²·0.003 = L^{2k-3(k-l)}·0.003η² = L^{3l-k}·0.003η². **Every power of L comes from n² = L^{2k} and from the own-unit size L^{-3(k-l)} of a point charge at a level-l root; σ contributes the k-independent 0.003.** In the product form of §31.3 (R2), |remainder| ≤ n²||D(S)||_1·sup|λ|, the growth therefore sits in the **first** factor — the one Lemma CD makes O(||∇(𝔉_k∘exp)||) — and not in (GT-sup).
+*Independent support for the k-independence of the λ factor.* REVIEW_BFT_A_S8 S8-5 proves that Φ_l = Σ_{i<l}φ_{i+1} is a **convergent** series with exact ratio φ_2/φ_1 = 17/243 and same-sign terms, so Φ_∞ is finite and the spike is level- and k-independent in own units *as a functional of the field*; §38.5's two measurements (sp_1 = 0.00319 at (k, T) = (3, 1) and the same value at (2, 2)) agree with that. Together with Proposition GT-loc, which bounds the whole of λ (spikes, tents and bulk) by 20× the local coarse field sup, the λ factor is k-uniform **given (Y-sup^loc)**.
+
+*Status: ARGUED, with the named reason.* It is not PROVEN here because (i) σ ≈ 0.003 is quoted from ba8 and S8-5, neither re-derived in this lane, and (ii) (Y-sup^loc) itself is not proven.
+
+*Erratum entered against this session's own reading of §31.3 (session 9's text stands as the record).* **[S10-fix 2]** §31.3's bullet "lane A argues (38.6, ARGUED) that the associated Γ_E-response carries terms up to ≍ L^{2k-3}η². **So (GT-sup) is expected FALSE if sup is taken over all z**, and the whole question is whether supp D(S) avoids, or is small where, λ^{Γ_E}_* is large" attributes lane A's L^{2k-3}η² to the λ factor. Read instead: lane A's own arithmetic puts that growth in |D(R)(Z)|·n²; sup|λ^{Γ_E}_*| is bounded by 20·||(Y^p_*)^c_0||_{∞,loc} (Proposition GT-loc) with no k- or T-dependence in the constant, so **(GT-sup) is expected TRUE, conditionally on (Y-sup^loc)**, and the question is not support-avoidance. The *conclusion* of §31.3 — that the original (NC-Γ) for Γ_E is (NC-Γ)_cc + (GT-sup) and fails only through (GT-sup) — is unaffected; only the expectation recorded for (GT-sup) is corrected. (Session 9's "expected relation" in §27.4 is likewise unaffected.)
+
+### 36.4 Proposition GT-ell (the second route, and its exact price): PROVEN-HERE as an implication
+
+*Statement.* Choose Y^p_* := the 𝒩-minimising representative of Y^p (so ||Y^p_{*,0}||_1 = 𝒩(Y^p) ≤ C_YNn, Theorem YH). Then, for every source S,
+  n²|⟨D^⊥(S), λ^{Γ_E}_*(p)⟩| = n²|⟨Γ_E^TD^⊥(S), Y^p_{*,0}⟩| ≤ n²||Γ_E^TD^⊥(S)||_∞·𝒩(Y^p)
+    **≤ 5^dC_YN[(M_n/4)·n³||D^⊥(S)||_∞ + 2^dC_∞·n³max_X|Q_X(D^⊥(S))|],  C_∞ ≤ 1.71, M_n/4 ≤ (4n + 1)/2,**
+where Q_X(φ) := ⟨χ^5_Xφ⟩ = Σ_wχ^5_X(w)φ(w) is Lemma ΓT-op (e)'s pinned compensation charge. The first term is 2.5·5^dC_YN·(n⁴||D^⊥(S)||_∞), i.e. the sup of D^⊥(S) in the level-0 dual coarse unit n⁴; the second carries only n³ against a box sum of ≍ (4n)^d terms, so it is the binding one unless the box charges cancel.
+
+*Proof.* The identity is Lemma DF (i) (⟨D, Γ_Ex⟩ = ⟨Γ_E^TD, x_0⟩, Γ_E reading x_0 only) together with §36.0 and Proposition GT-split; the first inequality is Hölder; the second is Lemma ΓT-op (e) (§25.1 (e), PROVEN-HERE for d = 4): ||Γ_E^Tφ||_∞ ≤ 5^d[(M_n/4)||φ||_∞ + 2^dC_∞max_X|Q_X(φ)|]. ∎
+
+*The condition this isolates, stated correctly.* The two terms are comparable iff
+  **(NEUT-box): max_X|⟨χ^5_XD^⊥(S)⟩| ≤ C·n·||D^⊥(S)||_∞,**
+i.e. the box average of D^⊥(S) is smaller than its sup by a factor n^{d-1} = n³. (The form written in §34.1 put the n-power on the wrong side of the inequality; this is the requirement the derivation produces, and it is the correct normalisation. The pre-stated §34.1 line is left as the record.) Without cancellation a box of ≍ (4n)^d sites gives |Q_X| ≍ n^d||D^⊥||_∞ and the second term exceeds the first by ≍ n^{d-1}. **So on this route the obstruction to (GT-sup) is the pinned compensation charge of Lemma ΓT-op (e) — a box-local neutrality condition on D^⊥(S) — and not the spikes.** §25.1 (e) already records that this term "is real and grows like n^d" (bb8t T3), so the condition cannot be removed from the route; it has to be supplied by the source.
+*Status of (NEUT-box): quoted, not judged.* Lane A's Proposition OB (BFT_A §26.2) shows that the analogous **per-piece** local neutrality fails for a general nonabelian configuration ("the per-piece totals of β_m are κ_m[r_m(c), x_{m+1}(c)], which do not vanish for a general nonabelian configuration"). Whether OB's obstruction is literally (NEUT-box) is **not decided here**: OB is about the pieces β_m of the level-wise rows, (NEUT-box) is about the box averages of the composite divergence. The two are plainly related and the relation is worth one session; this session does not claim it.
+
+### 36.5 Theorem NCE (what is left of (NC-Γ) for Γ_E): assembled status
+
+**(i) At critical points of 𝔉_k: PROVEN as an implication.** At a critical point, Lemma CD (i) gives (CC-0); then the residual half of (NC-Γ)_cc is Corollary RHT-V and §31.2 (a) (session 9, unconditional), the curvature half is Corollary COF-crit (§35.6), and the gauge-fixing remainder vanishes identically because D^⊥(S) = 0 (Lemma FG (iii), or Proposition NCR with Proposition GT-split). **So (NC-Γ) for Γ_E holds at every critical point of 𝔉_k, at m = 0, at the trivial background, for every gauge fixing, with constants independent of k and T.** This is the scope the contraction needs at its fixed point, and it is the scope lead decision D1 asked for.
+
+**(ii) Off the critical set: one named obstruction, reached by both routes.** Let S be a general source and use §31.3 (R1): ⟨S, Y^p_{Γ_E}⟩ = ⟨S^E_0(S), Y^p⟩ with S^E_0(S) = S + Γ_E^TD(S) (Lemma GE (c)). By Lemma DF (iii), d*Γ_E^TD = -D + I_χ^TD, so
+  **D(S^E_0(S)) = I_χ^TD(S), i.e. the corrected source is composite-co-closed with level-k root charges exactly Q_X = ⟨χ^5_XD(S)⟩.**
+Therefore Theorem COF applies to S^E_0(S) **except** for Proposition COF-res's residue, whose charges are these same Q_X; and the (P0)-slot size of the correction Γ_E^TD(S) is, by Lemma ΓT-op (e), π_0(Γ_E^TD(S)) ≤ 5^d[(M_n/4)n³||D(S)||_∞ + 2^dC_∞n³max_X|Q_X(D(S))|] — the same two terms as Proposition GT-ell, with the same compensation charge in the second. So:
+
+> **The whole of (NC-Γ) for Γ_E, off the critical set, reduces to one scalar per level-k box: the compensation charge Q_X(D(S)) = ⟨χ^5_XD(S)⟩ — (a) as the (P0)-slot size of the slice correction Γ_E^TD(S), and (b) as the root charge of Proposition COF-res, paired against the response's level-k funnel Φ_k(Y^p_{*,0})(c_X) = Proposition TE's tent coefficient. Both routes of §31.3, (R1) and (R2), land on it. Name: (TENT-Q) + (NEUT-box), two faces of the same quantity. OPEN.**
+
+**(iii) (GT-sup): CONDITIONAL on (Y-sup^loc), with the absolute constant 20** (Proposition GT-loc), and — by Proposition GT-attr — **expected TRUE** rather than expected false, the k-growth of Lemma RC's *Reading* belonging to the charge factor. On the alternative route (Proposition GT-ell) it is CONDITIONAL on (NEUT-box) instead, with no input about the representative's field. **Not PROVEN**: neither (Y-sup^loc) nor (NEUT-box) is proven here, and this session did not attempt them.
+
+**(iv) What this does NOT reach, stated plainly.** Nothing above is at θ > 0, at m > 0 or at a nontrivial background; every lane-A input used is at the trivial background. The factor k in (NC-Γ) and (PW-ii) are untouched (REVIEW_BFT_A_S8 S8-12, S8-13 stand). Proposition SR remains vacuous for S_E. (GE-T) remains refuted (S8-7), and nothing here revives it: Proposition COF-res shows the tent functional is exactly what (CO-fun)'s residue is, so the two refutations are the same fact seen twice.
+
+**(v) A note for lane A, since REVIEW_BFT_A_S8 closed by asking for it.** That review's "biggest live wall" section says lead decision D1's route "only meets composite-co-closed sources up to ∇𝔉-multiplied remainders" is the one that sidesteps the dichotomy, and that "**the remainder bound it needs is written nowhere**" — calling it "the single highest-value missing object in lane A". It is written: **Proposition NCR (§31.1, session 9, PROVEN-HERE)** is that bound, in exact product form, and §35-§36 of this session supply its two factors — D^root via (TENT-Q) and D^⊥ via (GT-sup) ⟸ (Y-sup^loc). The review could not see §31, which was written concurrently.
+
+## 37. Session-10 check record, outcome and notes for other files (written after §36)
+
+### 37.1 Check bb10
+
+**Criteria:** `checks/bb10_criteria.md`, born **13:09:13 UTC**, with one amendment appended at **13:12:09 UTC**. **Both were written before any bb10 script existed** (`checks/bb10_cof.py` born 13:14:02). **No criterion was retuned at any point, and no test was added after seeing an outcome.** The amendment, disclosed in full: (i) A6/A7's push-down exponent corrected from L^{-3} (the d = 4 value) to **L^{-(d-1)}**, which is L^{-1} in the d = 2 model — had it been run as first written it would have failed for an error in the criteria file and not for a fact about the lemma; (ii) a note that A7's second half is expected **vacuous** at k = 2 and is not to be read as support; (iii) a new test **A8** comparing the coarse sizes of the regrouped and the naive funnel.
+
+**No numeric lock was taken.** Exact rational arithmetic in plain python (`fractions.Fraction` and Python ints; no numpy, no BLAS), which DRIVE_BRIEF rule 6 exempts. Environment: `nice -n 10`, OMP/OPENBLAS/MKL/VECLIB threads = 1, `PYTHONDONTWRITEBYTECODE=1`, `python3 -I`, `/usr/bin/time -l`; load average 3.27 at launch. **5.95 s real, 27.8 MB peak** (`checks/bb10.out`, `checks/bb10.time`). The model and the entire operator construction (`Lev`, the sparse helpers, `build`, `solve_div`, `rnd`, `gauss`) are **copied verbatim from `checks/bb9b_rtcc.py`, which is not edited**: d = 2, L = 3, k = 2, κ_0 = 1, κ_1 = 2, roots = block centres, axial order 0 then 1; Part A at T = 2 (level sides 18, 6, 2), Part B an exact 180 × 180 rational solve at T = 1.
+
+**`checks/bb10.out` — ALL PASS.**
+
+| id | what it tests | result |
+|---|---|---|
+| A1 | Lemma DF (ii) telescoping at level 1 | PASS (exact; **trivial at k = 2** — an exactness check of the operators, not of content) |
+| A2 | d*C(j) = D(S) on 10 random collections | PASS (exact) |
+| A3 | **Lemma DF-cc (ii):** ξ_0 = R_1(D(S)) − ψ_0, with ψ_0 ≠ 0 and ξ_0 ≠ 0 | PASS (exact, non-vacuous) |
+| A4 | **Lemma DF-cc (ii) under (CC-0):** C(j) = ĵ_0 + Q_str,0^Tĵ_1, with h_0^Tψ_0 ≠ 0, and ψ_{k−1} = 0 | PASS (exact, non-vacuous) |
+| A5 | **control:** with D^root(S) ≠ 0 the defect is exactly −Σ_i(Q_str^{(0→i)})^Th_i^TR_{i+1}(D(S)) and is **nonzero** | PASS (exact) — so A4's hypothesis (CC-0) is load-bearing |
+| A6 | |Q_str^Tv| ≤ L^{−(d−1)}|v|; |h_0^Tψ_0| ≤ |ψ_0| ≤ |d*j_0| | PASS |
+| A7 | naive funnel exceeds L^{−(d−1)}|ĵ_1|; regrouped does not | PASS, **second half vacuous at k = 2** (ψ_1 = 0 under (CC-0)), exactly as the amendment pre-registered |
+| A8 | π_0(h_0^Tψ_0) ≤ 2dπ_0(j_0) and π_0(h_0^Tξ_0) ≤ 2dL^{d−1}π_1(j_1) | PASS, both bounds loose (332 and 108 against 24-30) |
+| B0 | criticality Hx = S, Ξ^Tx = 0, source strictly (CC-0) | PASS (exact) |
+| B1 | d*C(j) = 0 at (CC-0); **J_0 = C(j) − (Q_str^{(0→k)})^Tρ_{k−1}** (ties §35's C(j) to Lemma RT-cc (d)'s J_0) | PASS (exact) |
+
+**Scope limitations, stated whether or not they are convenient.**
+1. **d = 2 and abelian**: the check tests the *algebra* of the regrouping, not the d = 4 arithmetic of the exponents (the proofs of §35 are dimension-free except for the explicit 2d and the L^{-(d-1)} push-down).
+2. **k = 2 makes A8's content vanish.** Under (CC-0) at k = 2 one has ψ_0 = −ξ_0 exactly (A3 with D(S) = 0), so the regrouped and the naive funnel are the **same vector**: the printed ratio π_0(h_0^Tξ_0)/π_0(h_0^Tψ_0) is **1 in all four instances** (27/27, 30/30, 24/24, 27/27). **So bb10 verifies the regrouping identity and does not — cannot — exhibit its size gain.** The gain is a k ≥ 3 phenomenon: it is the difference between a funnel at level i that reads the levels l' ≤ i and is pushed down by L^{-3i} (Lemma FT (ii)) and one at level 0 that reads the levels l > 0 and is pushed down by nothing. At k = 2 each of those sums has one term and they coincide. **The size claim of Proposition COF-size therefore rests on Lemma FT (ii) and the push-down contraction, both proven, and not on this check.**
+3. **A1 is trivial at k = 2** (the telescoping has a single residual term that cancels algebraically); lane A's ba8 E1b tests it at k = 3.
+4. **Part B does not exercise the root charges**: at T = 1 the level-2 lattice has one site, so a root-supported function with total 0 vanishes. This was pre-registered (§34.5, criteria B2); **A5 carries the root-charge algebra at T = 2, without a solve.**
+5. s = G = 0 throughout, so the s- and G-slots of Theorem COF are untested numerically; they are handled by quoted lane-A theorems (Lemma SPLIT, §35.5 (a)-(b)) and are untouched by this session's change.
+6. The box-Neumann objects (λ^E_X, Λ, Γ_E^T) are **not** in this model: §36 rests entirely on Lemma ΓT-op (d), (e) as proven in §25.1, and on §16.1 (b), (c), (g). bb10 tests nothing in §36.
+
+### 37.2 Outcome table (session 10; all unreviewed)
+
+| Item | Status | Note |
+|---|---|---|
+| **Lemma W0-use** (where co-closedness enters Theorem W0) | **PROVEN-HERE** as a reading of BFT_A §28.5 | two uses: (A) step 2's representative freedom (essential, and it is about the **total** paired object); (B) step 3's straightening of the push-down (= the funnel; **S10-F1 OCCURS**, harmless, priced by Lemma FT). Steps 1, 4, 5 use sups and divergence form only |
+| **Lemma SPLIT** (source-slot superposition) | **PROVEN-HERE** | every slot of a Setting LIN^cc source is composite-co-closed (d*d* = 0 for G-slots; r_l(Ξλ) = 0 for s-slots), so W0/GU/LIN0 may be used slot by slot. **S10-F3 does not occur**; this corrects §31.2's "Corollary LIN0's superposition does not apply" |
+| **Lemma DF-cc** (the funnel regrouping of the dual push-down) | **PROVEN-HERE** | ξ_i = R_{i+1}(D(S)) − ψ_i; under (CC-0), C(j) = Σ_l(Q_str^{(0→l)})^Tĵ_l and the same at every intermediate level. **S10-F2 does not occur.** bb10 A2-A5 (exact) |
+| **Proposition COF-size** | **PROVEN-HERE** | π_0(C(j)) ≤ C_C(||j^c_0||_∞ + ||j||_{Pc}), C_C = (1 + 2d(1 − L^{−3})^{−1})(1 + (1 − L^{−θ})^{−1}), k-, T-uniform; from Lemma FT (ii)-(iii) and the coarse-unit contraction of Q_str^T |
+| **Theorem COF** = **(CO-fun) under (CC-0)** | **PROVEN as an implication** | inputs quoted: Theorem YH, W0 steps 3-4 (LES-div, Lemma LE, BL-C), Theorem GU, Corollary LIN0, Theorem PW-cc's residual estimates — all CONFIRMED in lane A — plus Lemma RT-cc, Lemma FT (session 9) and §35.2-35.4. m = 0, trivial background, 0 < α < θ |
+| **Corollary COF-crit** | **PROVEN as an implication** | (CC-0) holds at critical points (Lemma CD (i) is an identity of level-0 functions), so **the curvature half of (NC-Γ)_cc is closed there**; with session 9's residual half, **(NC-Γ)_cc is PROVEN at critical points of 𝔉_k** |
+| **Proposition COF-res** | **PROVEN-HERE** (the identity); its size **OPEN** = **(TENT-Q)** | the only uncovered term is n²Σ_XD(S)(c_X)Φ_k(Y^p_{*,0})(c_X) — the level-k root charges against the **response's funnel**, i.e. **Proposition TE's tent coefficient** (exact at k = 2 in REVIEW_BFT_A_S8 S8-7) |
+| **(CO-fun) as stated in §31.2** | **FALSE without (CC-0)** — **S10-F4 OCCURS** | erratum **[S10-fix 1]**: read §31.2's quantifier as "every such source satisfying (CC-0)". Its stated *reason* for being open ("W0 cannot take the funnel pieces one at a time") is **superseded**: the funnel never had to be fed in piece by piece |
+| **Remark MASSLESS** | **PROVEN-HERE**; **S10-F5 OCCURS** | the free-kernel form f_0 = n²⟨J_0, Δ_0^{-1}d*δ_p⟩ loses a factor **T** (lattice-Green gradient ℓ¹ ≍ torus side; Lemma N1G/M_n). The dual pairing with the exponentially decaying Y^p is the only route, which is why (CC-0) and not a sup bound is the hypothesis |
+| **Proposition GT-split** | **PROVEN-HERE** | n²⟨D(S), λ^Γ_*(p)⟩ = n²⟨D^⊥(S), λ^Γ_*(p)⟩ for every Γ; pointwise for Γ_E because Λ(x)(c_Y) = 0 (§16.1 (c)). **The level-k root charges never enter the gauge-fixing remainder**, and by COF-res they are exactly what the curvature residue is: D^root and D^⊥ **partition** the two targets |
+| **Proposition GT-loc** | **PROVEN-HERE** given Lemma ΓT-op (d) | sup_{supp D^⊥}|λ^{Γ_E}_*(p)| ≤ 2M_n·(local field sup) ≤ **20·max_X||(Y^p_*)^c_0||_{∞,Ñ_X}** in coarse units, absolute constant. **So (GT-sup) ⟸ (Y-sup^loc) and is not a question about spike support at all** |
+| **Proposition GT-attr** | **ARGUED** | lane A's own arithmetic (l.3548-3552) puts the L^{2k−3} in |D(R)(Z)|·n², with σ ≈ 0.003 k-independent (and S8-5's exact ratio 17/243 makes Φ_l convergent). Erratum **[S10-fix 2]** to §31.3's expectation: **(GT-sup) is expected TRUE**, conditionally on (Y-sup^loc) |
+| **Proposition GT-ell** | **PROVEN as an implication** | the ℓ^∞ × ℓ¹ route at the 𝒩-minimising representative: bound 5^dC_YN[(M_n/4)n³||D^⊥||_∞ + 2^dC_∞n³max_X|Q_X(D^⊥)|]; it closes **iff (NEUT-box)**: max_X|⟨χ^5_XD^⊥⟩| ≤ Cn||D^⊥||_∞. The obstruction is ΓT-op (e)'s **pinned compensation charge** |
+| **(GT-sup)** | **CONDITIONAL on (Y-sup^loc)** (constant 20), or on **(NEUT-box)** on the other route; **expected TRUE** | not PROVEN: neither input is proven here, and neither was attempted |
+| **Theorem NCE** — **(NC-Γ) for Γ_E** | **(i) PROVEN as an implication at critical points of 𝔉_k** (m = 0, trivial background, every Γ, k-, T-uniform); **(ii) off the critical set: one named obstruction** | off the critical set both routes of §31.3 land on the **same scalar per level-k box**, the compensation charge Q_X(D(S)) = ⟨χ^5_XD(S)⟩: as the (P0) size of Γ_E^TD(S) and as COF-res's root charge. **(TENT-Q) + (NEUT-box) are two faces of it** |
+| **S10-F6** | **OCCURS** | (GT-sup) is dominated by the coarse cell containing p, where the response field is largest; no support-avoidance statement about the spikes can replace a field bound there |
+| Check bb10 | **ALL PASS** (A1-A8, B0, B1), 5.95 s, 27.8 MB, no lock | with the six scope limitations of §37.1, of which limitation 2 is the material one: **k = 2 cannot exhibit the size gain of the regrouping, only its identity** |
+| Not attempted | — | (Y-sup^loc); (NEUT-box) and its relation to Proposition OB; m > 0; θ > 0; the nontrivial background; the factor k; (PW-ii) |
+
+### 37.3 What (NC-Γ) now rests on, in lane B's reading
+
+1. **At the fixed point of the contraction it rests on nothing further** (m = 0, trivial background): Theorem NCE (i).
+2. **Off the critical set it rests on one scalar per level-k box**, the compensation charge ⟨χ^5_XD(S)⟩, in the two equivalent forms (TENT-Q) and (NEUT-box). Lemma CD makes D(S) itself O(||∇(𝔉_k∘exp)||), so this is a **second-order** quantity along the contraction multiplied by a k-independent tent factor; what is missing is the comparison of the two, not a new mechanism.
+3. **(GT-sup) rests on (Y-sup^loc)** — a local sup bound on a named representative's level-0 field — which is an item of lane A's linear package, not of the slice.
+4. Unchanged and still first: **the nontrivial background** ((N1), (CovLift)'s non-residual g_Z at θ > 0), then **m > 0** (DX_m, DB_m), then (H-rem^∇), (FP♯'), (CL-4). Everything in §35-§36 is at the trivial background and m = 0.
+
+## FOR OTHER FILES (session 10; not edited)
+
+- **BFT_A (lane A).**
+  1. **REVIEW_BFT_A_S8's closing request is already answered.** Its "biggest live wall" section calls lead decision D1's remainder bound "the single highest-value missing object in lane A" and says it "is written nowhere". It is **Proposition NCR** (BFT_B §31.1, session 9, PROVEN-HERE, exact), and this session supplies its two factors: §36.1 proves that the pairing sees only D^⊥(S), and §35.7 proves that the root part D^root(S) feeds a different item.
+  2. **(CO-fun) is closed where you need it.** Theorem COF (§35.5) + Corollary COF-crit (§35.6): the curvature half of (NC-Γ)_cc holds at every critical point of 𝔉_k, k-, T-uniformly, at m = 0 and the trivial background. The mechanism is that **Theorem W0's use of d*j_0 = 0 is a statement about the total object paired with Y^p_0** (Lemma W0-use), and that the funnel parts of the dual push-down **regroup** into the cascade functions ψ_i that Lemma FT prices (Lemma DF-cc). Nothing in W0 had to be reopened.
+  3. **(CO-fun)'s residue and your tent coefficient are the same object.** Proposition COF-res: the uncovered term is n²Σ_XD(S)(c_X)Φ_k(Y^p_0)(c_X) = Σ_X(root charge)·(Proposition TE's ψ_{Y^p}(X)). So the exact computation of REVIEW_BFT_A_S8 S8-7 (ψ_u = −65/26244 at k = 2, φ_2/φ_1 = 17/243, same sign) is **directly the constant of (TENT-Q)**, and the (GE-T) refutation and (CO-fun)'s residue are one fact seen twice. Please do not price them as two items.
+  4. **A new named item that is yours, and it is small: (Y-sup^loc).** A k-, T-uniform bound on max_{Ñ_X}|Y^p_{*,0}| in coarse units, for a named representative, on the boxes meeting supp D^⊥(S). By Proposition GT-loc, (GT-sup) follows from it with the **absolute** constant 20. Your 𝒩* ≤ C_YNn is an ℓ¹ bound and does not give it; the core of the response is the hard case.
+  5. **Correction to the expectation recorded for (GT-sup)** ([S10-fix 2], §36.3): your own arithmetic in Lemma RC's *Reading* puts the L^{2k−3}η² in |D(R)(Z)|·n², not in σ. The gauge transport sup is k-uniform given (Y-sup^loc); (GT-sup) is expected **true**.
+  6. **One session's worth of work, offered:** whether Proposition OB's failure of per-piece local neutrality is literally (NEUT-box) (§36.4). If it is, (NC-Γ) off the critical set is settled negatively and the contraction has to be arranged to meet only composite-co-closed sources (your §38.8 alternative); if it is not, (NEUT-box) is the cheapest remaining route.
+- **PROOF.md (the master ledger).** For the BFT-0/1/2 and BFT-5 rows: **(CO-fun)** → PROVEN under (CC-0) (Theorem COF), i.e. at critical points of 𝔉_k (Corollary COF-crit), and **FALSE as stated in BFT_B §31.2 without (CC-0)** (Proposition COF-res); **(GT-sup)** → CONDITIONAL on the new named item **(Y-sup^loc)**, expected true, not open-ended; **(NC-Γ) for Γ_E** → PROVEN as an implication at critical points, m = 0, trivial background (Theorem NCE (i)), and off the critical set reduced to the single named item **(TENT-Q) = (NEUT-box)**, the compensation charge ⟨χ^5_XD(S)⟩. New named items to carry: **(TENT-Q)**, **(Y-sup^loc)**, **(NEUT-box)**. Nothing above is counted in PROOF's tally by this session.
+- **REVIEW (next lane-B review).** Check first, in this order: (1) **Lemma DF-cc (ii)'s exchange of the double sum and the injectivity step** — it is the load-bearing algebra, and bb10 A3/A4/A5 test it only at d = 2, k = 2; (2) **Lemma W0-use**, against BFT_A l.2465-2494 line by line, in particular the claim that LES-div and Lemma LE ask nothing of the plain slot but its sup; (3) **Lemma SPLIT** against Corollary LIN0's actual hypotheses (does LIN0's statement cover an s-only source with no co-closed plain currents?); (4) **Theorem COF step (c)'s residual sum** and its exchange m = l − 1 − a; (5) **Proposition COF-res**, in particular that R_{i+1}(D) is supported on the level-k roots *as level-(i+1) sites* and that the pairing therefore reads ev^{(i+1→k)}; (6) **Proposition GT-loc**, in particular that χ^5 ≥ 0 makes Λ a convex combination, and whether §25.1 (d)'s max_{Ñ_X}|x_0| is the right localisation; (7) **Proposition GT-ell**'s normalisation and the derived form of **(NEUT-box)** (the §34.1 pre-stated form had the n-power on the wrong side; §36.4's is the derived one); (8) **Theorem NCE (ii)**'s identification D(S^E_0(S)) = I_χ^TD(S) via Lemma DF (iii); (9) the two errata **[S10-fix 1]**, **[S10-fix 2]** against §31.2/§31.3; (10) bb10's **scope limitation 2** — that k = 2 cannot separate the two groupings — and whether a k = 3, d = 2 run (no solve needed; Part A only) should be required before Proposition COF-size is accepted.
+
+### 37.4 Correction to §37.1's limitation 2, and check bb10c (k = 3) — **including a disclosed FAIL**
+
+**Correction, entered immediately after §37.1 was written and before bb10c existed (the §37.1 text stands as the record; §27-§33 remain untouched).** §37.1's limitation 2 says the size gain of the regrouping "is a k ≥ 3 phenomenon". **That is wrong, and the mistake is instructive.** Under (CC-0) one has ξ_i = −ψ_i **exactly, at every k and every i** (Lemma DF-cc (ii) with D(S) = 0), so the regrouped and the naive funnel are **the same vector** — there is no size ratio to exhibit at any k, and bb10's A8 ratio 1 is the content, not an artefact. What the two groupings differ in is **which bound is available for that one vector**:
+  **B^ψ_i := 2dΣ_{l'≤i}L^{−3(i−l')}π_{l'}(j_{l'})** (Lemma FT (ii): the funnel at level i reads the levels **at or below** i, and the straight push-down contracts) against
+  **B^ξ_i := 2dΣ_{l>i}L^{3(l−i)}π_l(j_l)** (reading ξ_i directly: the funnel at level i reads the levels **above** i, with an L^{3(l−i)} penalty per level and no contraction).
+B^ψ_i is bounded by 2d(1 − L^{−3})^{−1}max_lπ_l(j_l) uniformly in k; B^ξ_i is not bounded uniformly in k at fixed i. **Proposition COF-size uses B^ψ only**, so nothing in §35 depends on a comparison of the two; the comparison is narrative, and it is the narrative that bb10c tested and did not support.
+
+**bb10c.** Criteria `checks/bb10c_criteria.md` born **13:24:27 UTC**, written after bb10 ran and **before** `checks/bb10c_cof3.py` (born 13:25:13); **no bb10 criterion was retuned and bb10's files are unaltered.** The script is bb9b's operator construction with **exactly one change, K = 3 in place of K = 2** (stated in its header), Part A only, T = 1, level sides 27, 9, 3, 1, exact `Fraction`, no lock, **0.39 s, 22.4 MB** (`checks/bb10c.out`, `checks/bb10c.time`).
+
+| id | what it tests | result |
+|---|---|---|
+| C1 | ξ_i = −ψ_i for i = 0, 1, 2 at k = 3, with two nonzero cascade levels | **PASS** (exact) |
+| C2 | **Lemma DF-cc (ii) at k = 3:** C(j) = Σ_l(Q_str^{(0→l)})^Tĵ_l, with h_l^Tψ_l ≠ 0 for some l ≥ 1 | **PASS** (exact, non-vacuous) |
+| C3 | d*C(j) = D(S) = 0 | **PASS** (exact) |
+| C4 (a) | V_i := π_0((Q_str^{(0→i)})^Th_i^Tψ_i) ≤ B^ψ_i for every i, every collection | **PASS** (V = 72-108 against B^ψ = 916-1792; i = 2 gives V = 0 since ψ_2 = 0 at T = 1) |
+| C4 (b) | B^ξ_0 > B^ψ_0 in at least one collection | **FAIL** — it happened in **none** |
+| C5 | control: a random collection fails the root-support test **and** fails C2's identity | **PASS** |
+
+**VERDICT bb10c: NOT ALL PASS — C4 FAILED.** The output and the script are kept unaltered as the record, and **no rerun was made** (there is no bb10d).
+
+**Diagnosis of the C4 (b) FAIL, and what it does and does not touch.** The constructed family takes j_1, j_2 random and lets j_0 solve d*j_0 = −(placements), via `solve_div`, which builds an **antiderivative**: its level-0 values are cumulative sums over rows of 27 sites, so π_0(j_0) came out 229-448 while π_1(j_1) = 27 and π_2(j_2) = 9. With the (P0) slot inflated by a factor ≈ 10-50 relative to the upper slots, B^ψ_0 = 2dπ_0(j_0) (916-1792) simply exceeds B^ξ_0 = 2d(L·π_1 + L²·π_2) = 648 on this data, and the comparison cannot fire. The **form** of the two bounds is visible in the printed numbers (B^ξ_0 = 4(3·27 + 9·9) carries the L and L² penalties on the levels above 0; B^ψ_0 = 4·π_0(j_0) carries none), and in the (Pl-c) class with π_l ≤ L^{−θ(k−l)}||j||_{Pc} one has B^ξ_0 ≍ L^{3(k−1)−θ}||j||_{Pc}, which does grow with k while B^ψ_0 does not. **But that is an algebraic statement, not a measurement, and bb10c did not measure it.**
+Consequences, stated plainly: (1) **No lemma of §35 is affected** — Proposition COF-size uses B^ψ, whose instances all passed (C4 (a)), and Lemma DF-cc (ii) passed at k = 3 (C2) with its hypothesis shown load-bearing (C5). (2) The claim that "the regrouping is what supplies the k-uniform bound" is **supported only algebraically** (by the two bound forms, §35.4) and **not by any check**; the next review should treat it as such. (3) A family with a **balanced** (P0) slot would be the right instrument, and designing one after seeing this result would be a post-hoc probe; it is **not** run here.

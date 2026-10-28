@@ -1,0 +1,25 @@
+[bb10] PART A, T = 2: level sides [18, 6, 2] (d = 2, L = 3, k = 2)
+[bb10] push-down exponent used: L^{-(d-1)} = L^{-1} (criteria amendment (i))
+A1 DF(ii) telescoping at level 1 (trivial at k = 2; exactness check) : PASS
+A2 d* C(j) = D(S) on random collections                              : PASS
+A3 xi_0 = R_1(D(S)) - psi_0 (exact), non-vacuous (psi_0, xi_0 != 0) True : PASS
+A4 Lemma DF-cc (ii) under (CC-0): C = jhat_0 + Qstr_0^T jhat_1, h_0^Tpsi_0 != 0 True : PASS
+A5 control: root-charge defect = -sum_i Qstr^T h_i^T R_{i+1}(D(S)) exactly, defect != 0 True : PASS
+A6 |Qstr^T v| <= L^{-(d-1)}|v| ; |h_0^T psi_0| <= |psi_0| <= |d*j_0|  : PASS
+A7 naive funnel exceeds L^{-(d-1)}|jhat_1| True ; regrouped does not True (vacuous at k=2: True) : PASS
+   A8[0] pi_0(h_0^Tpsi_0) = 27  pi_0(h_0^Txi_0) = 27  pi_0(j_0) = 83  pi_1(j_1) = 9  ratio = 1  (True,True)
+   A8[1] pi_0(h_0^Tpsi_0) = 30  pi_0(h_0^Txi_0) = 30  pi_0(j_0) = 173/2  pi_1(j_1) = 9  ratio = 1  (True,True)
+   A8[2] pi_0(h_0^Tpsi_0) = 24  pi_0(h_0^Txi_0) = 24  pi_0(j_0) = 86  pi_1(j_1) = 9  ratio = 1  (True,True)
+   A8[3] pi_0(h_0^Tpsi_0) = 27  pi_0(h_0^Txi_0) = 27  pi_0(j_0) = 173/2  pi_1(j_1) = 9  ratio = 1  (True,True)
+A8 pi_0(h_0^Tpsi_0) <= 2d pi_0(j_0) and pi_0(h_0^Txi_0) <= 2d L^{d-1} pi_1(j_1) : PASS
+[bb10] Part A done, t = 0.1 s
+[bb10] PART B, T = 1: level sides [9, 3, 1], unknowns 180
+[bb10] A built, t = 0.2 s
+B: D(S) = 0 strictly : True ; d*j_0 != 0 : True
+[bb10] solve done, t = 5.9 s
+B0 criticality Hx = S, Xi^T x = 0, source strictly (CC-0)             : PASS
+B1 d*C(j) = 0 True ; J_0 = C(j) - (Qstr^{(0->k)})^T rho_{k-1} True        : PASS
+B2 scope (pre-registered): at T = 1 the level-2 lattice has 1 site(s), so a root-supported
+   function with total 0 vanishes: the root-charge branch is NOT exercised in Part B (A5 carries it at T = 2).
+[bb10] t = 5.9 s
+VERDICT bb10 (A1, A2, A3, A4, A5, A6, A7, A8, B0, B1): ALL PASS

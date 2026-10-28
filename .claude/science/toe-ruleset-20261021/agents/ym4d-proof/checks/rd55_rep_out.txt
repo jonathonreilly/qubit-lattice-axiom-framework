@@ -1,0 +1,10 @@
+C1 group order 384, closed=True -> PASS
+C2 <V,V>=1 <A,A>=1 -> PASS
+C3 dim S2A=21 dim L2A=15 -> PASS
+C4 m(triv in S2A)=1 m(det in S2A)=1 -> R1 HOLDS; det-count as expected
+C6 control m(A in L2A)=1 m(A in AxA)=1 (=m(A in S2A)+m(A in L2A)? True) -> PASS
+C5 m(A in S2A)=0 m(Axdet in S2A)=0 -> R2 HOLDS
+C8 <6',6'>=1 <6',A>=0 -> PASS
+info <A,Axdet>=1 (A ~ A x det under H(4) iff 1)
+info S2A decomposition over listed irreps: {'triv': Fraction(1, 1), 'det': Fraction(1, 1), '3=diag-triv': Fraction(1, 1), "6'": Fraction(1, 1)}; remainder dim=10, <rem,rem>=3
+C7 Q_cub: 1 vs 1/2; Q_inv: 2 vs 2 -> PASS

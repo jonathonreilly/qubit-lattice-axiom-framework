@@ -1426,3 +1426,17 @@ BFT-5 clause (b).** Codex check launched (CODEX_REVIEW_TOPCC.md). **Clause (b) s
 Lemma H-FREE: the data map is the same for both h_l operators (the collision is harmless for the assembly).
 (TENT-Q) and relatives off the critical path. 25 CONFIRMED / 1 NOT-VERIFIED / 4 REFUTED (all four are the
 "(CO-fun)[cc] FALSE" family). **Launched on Opus 5.5: GSHARP55.md — (G♯_0-field).**
+
+**Step 5 — `SMALLNESS_DAG.md`** (claude-opus-5-5, max) — the dependency graph that retires the decade ledgers.
+189 nodes (164 live), 362 edges, each with file + locating string (machine-verified verbatim); checker
+dag55_2, seven designed-FAIL controls behaved as designed. **The written hierarchy is ACYCLIC.** Two cycles appear
+only with 4 extra edges: **the n_♯ loop** — node A's constants must be proved **independent of the cutoff n_♯**
+(never stated; the one unstated quantifier the whole order depends on; sent to the NODEA55 worker) — and **FI-1**,
+a coupling fixed point RLARGE's Option A removes as an "integration choice". **Exactly one live node grows with K:
+C_fun** (the level-count constant; path to g_0 through BFT-5 (b), (a5-G♯), Thm A5, (I_k^E)″, C_A) — **removed at
+critical points by Lemma TR if it survives review.** **No live node grows with volume.** Six live nodes have open
+uniformity (N5 threshold and σ_fl need BFT; R_0 needs Theorem UNIV's k-step; CE-exp^k needs locality beyond BFT-3;
+C_4 of (MOM_4)). **REFUTED: RLARGE's (TC) fails with its own ε_loc by ×15-23 — U3 negative as written** (repair
+argued). Quantifier order: structure → N5/SF/SQ/BFT constants → ε_1 → node A → θ → a → n_H → n_♯ → g_0 → R(g) →
+K_0, T_1. **Decade ledgers retired: every live constraint is one-sided on a later choice.** Codex review launched
+(CODEX_REVIEW_DAG.md). RLARGE U1/U3/FI-1 queued for Opus. **Launched on Opus 5.5: COFM55.md — clause (b) at m > 0.**

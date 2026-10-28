@@ -157,3 +157,57 @@ All times UTC (machine clock; local time is UTC-4).
 - 11:35 UTC frozen-block check: HW.md §29 (from "\n---\n# Session 5 of lane H" to the end of the §29 append) is 3695 bytes, equal
   to the 138298 - 134603 bytes appended at 11:11:57; md5 of the block 7830e9f0…. HW.md now 178489 bytes, md5 1f0a6b37…
   (before this log entry). No commits, PRs, pushes; no edits outside HW.md, HW_LOG.md, checks/w5*; no process left running.
+
+## Session 6 (2026-10-28), lane H worker
+Scope (owned, append-only): a new "# Session 6 of lane H" at the END of HW.md; this session-6 entry in HW_LOG.md; new files
+checks/w6_*. Nothing else, anywhere. No git command of any kind is run in this session.
+Binding input: REVIEW_HW_S5.md (714 lines), read in full before any writing; md5 recorded below.
+- 12:46-12:53 UTC Read (read-only): REVIEW_HW_S5.md (all 715 lines), DRIVE_BRIEF.md, HW.md §29-§33 (l.1424-1734) and
+  §24.3 (l.1255-1312, l.1370-1380), HIST.md §7.1 (l.450-471: Σ(A) := N_1(π(A)), sh_{j+m} := Σ^m) and §7.2 (l.486-503,
+  Lemma H-geo) and §7.4 (l.527-556, (H-w), Theorem HIST-sum), PLD.md l.1400-1420 (§16.5 NA-PRICE) and l.1850-1910
+  (Theorem NA-PRICE^E (i), Proposition CD, §17.5, §17.6), HANDOFF.md l.45-75, HW_LOG.md session 5.
+- **12:53:30 UTC PRE-STATED (session 6): HW.md §34 appended (statements only), FIRST edit of the session.** Before the
+  edit: HW.md 178489 bytes, md5 1f0a6b378b99001fb387b45261e3a4ea (equal to the session-5 closing md5, so nothing had
+  changed since session 5 closed). After the edit: **184569 bytes, md5 4ca20560d2ed2ef7c9f7110dc3176434; the §34 block is
+  184569 - 178489 = 6080 bytes** (from "\n---\n# Session 6 of lane H" to the end of the §34 append). No session-6
+  derivation was written before it, and §34 cites nothing produced in session 6.
+- 12:54-12:58 UTC Lead relay: **PLD session 6 (lane E, node A) landed**, with four requests to this lane (PLD §18.12) and
+  two corrections to this session's inputs (the ring price on HW's constants; node A's denial of REVIEW_HW_S5 S5-19). Read
+  (read-only) PLD.md l.2188-2240 (§18.4 Lemma BUF and the ring), l.2347-2440 (§18.6 Proposition PATCH, the three deltas,
+  the TF-1 verdict), l.2694-2722 (§18.9 M-1…M-7), l.2732-2760 (check p6), plus the §18 section index. §34's PRE-STATED
+  block was already written and is NOT altered by this: W1 (c) already required the resulting g²_CRC "either way", and
+  the ring is folded in as a new cost, reported separately in every table.
+- 12:58-13:01 UTC HW.md §35 written (§35.1-§35.4: Lemmas SH-1, SH-2, COV, Corollary H-geo′, Lemma SH-att′, Proposition
+  SH-neg). **The proofs were written BEFORE any w6 script existed**; the w6 checks are confirmatory for the proven
+  statements and pre-registered for the three questions whose answers were not known (G1's radius-1 behaviour, G3's
+  verdict, G6's ring ratio, A2's coincidence, A3's direction, N1/N2).
+- **13:01:43 UTC checks/w6_criteria.md written, BEFORE every w6 script** (10414 bytes, **md5
+  060c532292f0953042fafd4b2d559760** — recorded here because REVIEW_HW_S5 S5-2 noted that mtimes do not survive a
+  checkout and asked for a hash). It contains **no constant derived in session 6** and says so, listing each constant it
+  uses with its prior source; every criterion is labelled PRE-REGISTERED or CONFIRMATORY, per [RHW5-fix W5-1].
+- 13:02:23 UTC checks/w6_shadow.py (md5 b822ec8058653cebedd07eea3a76870e); run at 13:02:23-13:03:00, exit 0, 36.1 s,
+  empty stderr, load 3.13 at start, nice 10, pure-Python exact integer sets (no numpy, no BLAS), **no numeric lock taken
+  and none needed** (brief rule 6). Output checks/w6_shadow.out (md5 024f6a1173de3d2d168387c5e7878a98): G1-G6 all PASS;
+  **G3 = the additive form REFUTED** (excess exactly 27M + 55, slope 27 at every M in 2..29, E(30) = 865 > 258).
+- 13:04:21 UTC checks/w6_arith.py (md5 66dfd5415358f6b73e60df68ee7c59cf); run, exit 0, 0.01 s, empty stderr; plain-Python
+  Decimal at 120 digits, no mpmath. Output checks/w6_arith.out (md5 1dbe5d38e1552fa4b419917c8d8c407a): A1-A6 PASS;
+  session 5's four S5-12 numbers reproduced; **session 6 g²_CRC = 1.52362e-94/c_+ (no ring), 8.96376e-96/c_+ (ring ×17),
+  1.85835e-96/c_+ (ring ×82)**; ×311.1 on session 5 at every ring value.
+- 13:05:08 UTC checks/w6_gas.py (md5 a761226645951fa663708859e3f28a82); run, exit 0, <1 s, empty stderr; exact Fraction
+  enumeration. Output checks/w6_gas.out (md5 5444e82f4317532a0a9411fe17dc6999): **N1, N2 PASS — this is §29's promised
+  check-(ii) negative control, which session 5 never ran** (REVIEW_HW_S5 S5-25 scope defect 1). Recorded with its
+  limitation: the exact ratio does not diverge at the threshold, so the control tests the bound, not the model.
+- 13:07-13:15 UTC HW.md §35.5-§35.7 (Lemma COL′, Lemma RING and the confirmation of PLD §18.12 request 1, the constants
+  table and the ledger), §36 (Theorem CRC-2T′ restated; V2 (a) NOT DELIVERED), §37 ((E2^𝔉′), the seven deltas, the TF-1
+  disagreement, §24.3's narrowing), §38 (the eleven [RHW5-fix] errata and §38.1's process debt, including the session-5
+  rule-2 breach), §39 (check w6 record), §40 (outcomes, tally 10), §41 (FOR OTHER FILES — the rule-8 repair).
+- 13:15 UTC close. HW.md **254211 bytes, md5 3634180e26da6088b0674034eec8893e**; the session-6 append is
+  254211 − 178489 = 75722 bytes, of which §34 (PRE-STATED) is the first 6080. **No line of §0-§33 was altered**: every
+  binding fix is an erratum in §38 naming the line it corrects. No commits, PRs or pushes; no git command of any kind was
+  run this session; no edits outside HW.md, HW_LOG.md, checks/w6*; no process left running; no numeric lock held.
+- **Honest statuses for the session.** PROVEN-HERE: Lemmas SH-1, SH-2, COV, SH-att′, COL′, RING; Corollary H-geo′;
+  **Proposition SH-neg** (the refutation). CONDITIONAL ⇐ (E2^𝔉′) [node A]: Theorem CRC-2T′ [HW-11, re-labelled], Corollary
+  CRC-HW, (CRC)_k, (M-f^cap) under μ_{R(𝔥)}. OPEN: (E2^𝔉′) itself, and its level j = 0 on both lanes' sides. ARGUED:
+  nothing new. FAILED/REFUTED: the reviewer's conjectured additive form of Lemma SH-att (S5-14 (2)), and with it the hope
+  that the 10⁻⁹⁴ breach vanishes — it persists at ×11.2 once node A's ring is bought, while remaining ×3.6·10⁵⁶ slack
+  against the ceiling that actually binds (DX′).

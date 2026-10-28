@@ -1,0 +1,18 @@
+G1 shadow radius: violations t=1: 9076, t=2: 0, t=3: 0 ; first t=1 witness ('S-rand', 5, 2, 192, 81)
+G2 translate coverings: N_2 by {-1,1}^4 failures 0 ; N_3 by {-2,0,2}^4 failures 0 ; N_4 by {-3,0,3}^4 failures 0 ; N_3 by only {-2,2}^4 successes 0 (must be 0)
+G3 DECISIVE: excess E(M) for the all-ones base-3 position, P={z}, Y={z+8e_1}, |Y|=1:
+    M= 2  ||P||_sh=    163  ||PuY||_sh=    272  E=   109  E/M=54.50  ratio=1.6687
+    M= 5  ||P||_sh=    406  ||PuY||_sh=    596  E=   190  E/M=38.00  ratio=1.4680
+    M=10  ||P||_sh=    811  ||PuY||_sh=   1136  E=   325  E/M=32.50  ratio=1.4007
+    M=20  ||P||_sh=   1621  ||PuY||_sh=   2216  E=   595  E/M=29.75  ratio=1.3671
+    M=29  ||P||_sh=   2350  ||PuY||_sh=   3188  E=   838  E/M=28.90  ratio=1.3566
+    M=30  ||P||_sh=   2431  ||PuY||_sh=   3296  E=   865  E/M=28.83  ratio=1.3558
+    slopes E(M+1)-E(M) for M=2..29: min 27 max 27 (all >= 1: True); constant tail present: False; E(30)=865 vs 258
+    VERDICT: additive form REFUTED
+    S-adv at M=30, |Y|>1: max excess per Y-cube 4235.0 ; max ||PuY||/||P|| 5.7141
+G4 attachment inequality on 320 samples: violations with factor 81: 0 ; with session-5's 6561: 0 (c_att=1229313)
+G5 informational: smallest multiplicative factor the samples force = max (||PuY||_sh - c_att*|Y|)/||P||_sh = 0.0000
+G6 ring price: violations of |sh_r(N_1 X)| <= 16|sh_r(X)| (r>=1) or |N_1 X| <= 81|X|: 0 ; max per-level ratio 3.3730 ; max (sum_{r>=1} sh(N_1X))/(sum_{r>=1} sh(X)) 2.7833 (PLD §18.4 quotes 82 = 81+1)
+RESULTS: G1:PASS G2:PASS G3:PASS G4:PASS G5:PASS G6:PASS
+OVERALL G PASS
+secs 36.1

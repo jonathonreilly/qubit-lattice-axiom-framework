@@ -651,3 +651,83 @@ pre-stated failure modes correctly adjudicated as non-occurring, and the fourth 
 *every* per-level route — a sharper outcome than the target asked for. The anti-inflation clause is honoured:
 0 main-path OPEN items are claimed closed, and (H-C)'s C_♭ clause is labelled CONDITIONAL on two named
 inputs, not PROVEN.
+
+## HW session 6 — the ×6561 lever and the interface repair. LANDED.
+
+Append-only verified: the first 178489 bytes of HW.md still hash to session 5's closing md5 (prefix md5
+1f0a6b37… re-verified); 178489 → 254211 bytes. §34-§41. All 11 [RHW5-fix] fixes applied as errata in §38,
+each naming the line it corrects. **Tally 9 → 10.**
+
+### Target 1: the lever. Beaten on one side, REFUTED on the other.
+
+- **Lever (a) verified and then beaten.** The reviewer's free gain was 6561 → 2401. **The real constant is
+  81** (**Lemma COV**): a radius-3 neighbourhood is a *union of 3⁴ translates* of the radius-1 one, so the
+  attached cluster's shadow is covered by 81 translates of a set already counted in ‖P‖_sh, instead of being
+  charged a volume ratio 7⁴ or 9⁴. **×81 off 6561 — ×29.6 beyond what the review offered.**
+- **A second, independent gain. Lemma SH-2:** Σ^m(X) ⊆ N_2(π^m(X)), sharpening HIST's H-geo (i) from radius
+  3 to **radius 2**, and **radius 2 is optimal** (radius 1 fails, 9076 witnesses). Hence
+  2401/38416/38417 → **625/10000/10001**, and c_att(8) 1229313 → **320001**. A further ×3.84.
+- **>>> Lever (b) is REFUTED, not proven (Proposition SH-neg, PROVEN).** At the all-ones base-3 position,
+  P = {z}, Y = {z + 8e₁}: the excess is **exactly 27M + 55 over M levels with |Y| = 1**, so **no
+  depth-independent additive constant exists**; the minimum multiplicative constant is ≥ 4/3 (≥ 5.714 on
+  samples). The lemma REVIEW_HW_S5 named as the missing ingredient —
+  "π^r(Y) ⊂ N_1(π^r(P)) ⇒ Σ^{r+c}(P∪Y) = Σ^{r+c}(P)" — **is false there**: the projections stay at distance
+  1 for ever. **The reviewer's empirical depth-stability was an artefact:** check B2 and the re-runs
+  randomised *position* and were adversarial only in *direction*.
+  *Lead note: this is the fourth reversal of the session and the first in which a LANE refutes a REVIEWER's
+  constructive suggestion, with a proof and an explicit diagnosis of why the numerics misled. The review's
+  "the multiplicative factor is probably removable" was the single most optimistic claim in the five
+  reviews, and it is now dead.*
+- **Net: ×311.1 on g²_CRC, ÷311.2 on n_♯, ÷81 on c_f**, at any ring value.
+- **The ring, folded in and made CHEAPER than node A priced it. Lemma RING: ×17, not ×82** — sh_r(X) is
+  *already* N₁-thickened, so N₁ of it is a union of 2⁴ translates, not 3⁴ (w6 G6: 0 violations, observed
+  max 2.783). HW bought node A's extra R-free ring in step (4) and confirmed PLD §18.12 request 1 (nothing
+  else in CRC-2T reads R″). *Lead: two lanes now give different prices for the same ring, ×17 against ×82.
+  HW's has a proof and a check. Recorded for the next review, not adjudicated here.*
+- **g²_CRC, reported honestly:** **1.52362e-94/c₊ without the ring (ABOVE 1e-94 by ×1.52)**;
+  **8.96376e-96/c₊ with the ×17 ring (BELOW 1e-94 by ×11.16)**; 1.85835e-96 at PLD's ×82.
+  n_♯: 9.99e96 → **5.46e95**. **"The headline failure vanishes" does NOT survive the ring purchase** —
+  stated plainly in §35.7 (i); even the unattainable additive form would give ≈ 3.9e-95 post-ring, still
+  below 1e-94. *The lead's forwarded arithmetic was right in direction and the lane confirmed it rather than
+  quoting the flattering pre-ring number.*
+- **Pre-stated failure mode (W-F3) materialised.** With HIST's 38417/38416 left alone, REL-boot's r ≤ ½ and
+  HIST-sum's condition become binding at **2.33e-96** (gain only ×4.77); the full ×311 is **CONDITIONAL on
+  HIST adopting Corollary H-geo′** (request in §41, proof supplied). REVIEW_HW_S5's S5-12 four-way
+  coincidence survives only in that variant (spread 1.0001 against 3.8415).
+- **Not a crisis.** Slack against DX′ is **×3.59e56**. **HANDOFF's "lower g_0 / recheck the SF thresholds"
+  is WITHDRAWN** (§41 item 1) — now withdrawn independently by two lanes.
+
+### Target 2: Theorem CRC-2T′ — restated, not weakened
+An **induction on the finite integer N(R) = |S_R|**, with exact telescoping, proven step containment and
+event algebra, (S1) the standard Δ²z ≤ ½ criterion, and the closing condition a fixed inequality (c_U := 1
+on input). **Gas framing dropped; §29 Target V2 (a) recorded NOT DELIVERED.** Off-route consumers named
+(RLARGE K8, EXISTENCE).
+
+### Target 3: >>> THE HW/PLD INTERFACE IS NOW REPAIRED
+**(E2^𝔉′)'s allowance is restated as PLD Proposition PATCH's requirement** — *the moment carries at most a
+per-cube constant and no shadow sum* — with the union/patch form derived by monotonicity, **so it is no
+longer a request**. Slice agreed incomparable; per-cube depth never asked. **F_< universally quantified**
+over bounded functions of U_{<k₀}. The mis-levelled level-0 clause is replaced by **(0a)** Γ at level 0 with
+Y = ∅ **or (0b)** Γ at level 1 with Y at level 0, **both OPEN on both sides** — the largest residual after
+the moment, since TEL-f needs every level. Seven deltas tabulated (D1-D7); **M-1…M-7 answered by number**
+in §41. **TF-2: both positions recorded and not propagated — node A is right** (PLD §17.2's law already
+carries the finer spectators); flagged for the lead. §24.3's straddling-plaquette doubt narrowed per S5-17;
+the real residual is the no-volume-cost conditioning = **node A's (CEM-2)**, a decoupling under the measure.
+*Lead: the defect that two reviews found from opposite sides, and that node A diagnosed at root (the patch
+allowance is a clause of the hypothesis, not a theorem), is closed in one session by the two lanes agreeing
+on PATCH's form. This is the clearest win of the parallel setup.*
+
+### Target 4: process debt discharged
+Session 5's **rule-2 breach recorded** (b_n, b_D, c_att in the w5 criteria; A1/A4/A5 are reproduction
+checks). **w6's criteria contain no session-6 constant**, every criterion is labelled PRE-REGISTERED or
+CONFIRMATORY, and the criteria md5 is in HW_LOG as the reviewer asked. **§29's never-run check-(ii) control
+was RUN** (w6 N, PASS: above threshold the bound is vacuous while the exact ratio stays finite — with the
+limitation stated, that it tests the bound and not the model). Stale n_H corrected (1.81e91 reviewed; at
+HW's own B_0 ≈ n_T; **on session-6 constants n_H > n_T, so (T) adds nothing to H8′**). **§41 FOR OTHER FILES
+added — the rule-8 breach repaired.**
+**Negative results reported as such:** lever (b) refuted; the 1e-94 breach persists (×11.2); w6 criterion G5
+came out identically uninformative and is **reported as a defective criterion, not as evidence**.
+
+**Biggest remaining obstruction in scope: none that is HW's.** The single live wall is one node-A statement
+— the moment under the exactly-converted law, with a per-cube constant and no shadow sum — plus its level-0
+case. *So lane H is now clear and the whole chain waits on node A's (CEM-1)/(CEM-2) and the level-0 clause.*

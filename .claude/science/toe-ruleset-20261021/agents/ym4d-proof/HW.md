@@ -1732,3 +1732,680 @@ CRC-HW, the TF-1 caveat (§30.5). Status changes: (CRC) / wall (CRC-1): OPEN →
 the (E2) route → H6′ = (E2^𝔉) [OPEN, node A]; (E1): expected false in sup form [inference]; constants: g_0 lowered to
 g_K² ≲ 4.9·10⁻⁹⁷/c_+, n_♯ ≳ 10⁹⁷c_+. No literature result is load-bearing beyond Lemma NR's randomisation lemma and Harris'
 inequality inside the toy check (not in any proof). No edits outside HW.md, HW_LOG.md, checks/w5*.
+
+---
+# Session 6 of lane H (2026-10-28): the ×6561, restated CRC-2T, and (E2^𝔉) renegotiated
+
+REVIEW_HW_S5.md is **BINDING** for this session (11 binding fixes [RHW5-fix CST-1, CST-2, CST-3, SH-1, E2-2, TF-2, GAS-1,
+SYM-1, W5-1, SC-1, NIT]). This session is APPEND-ONLY: it alters no line of §0-§33. Every fix therefore appears below as an
+**erratum entry** naming the line it corrects and stating the correction; the corrected text itself stays where it is.
+
+## 34. Session-6 pre-stated targets (2026-10-28 12:53 UTC; FIRST edit of the session; statements only, written before any
+session-6 derivation and citing nothing produced in session 6)
+
+### Target W1 (STEP 1, the main effort): remove or reduce the multiplicative factor in Lemma SH-att
+REVIEW_HW_S5 (S5-12, S5-14) localises the whole session-5 tightening of the coupling ceiling in ONE number: the ×6561 that
+Lemma SH-att's N_4 step (l.1506-1508) puts into c_f = 6561·81·c_+ = 531441c_+ and hence into b_n, b_D, B_*, B_0.
+- (a) Verify the reviewer's free one-line gain (sh_{j+r}(P) ⊇ N_1(π^r(P)) ⇒ N_3 for N_4, i.e. 2401 for 6561) and take it.
+- (b) Decide the reviewer's conjecture that the multiplicative factor is **removable altogether**, i.e. whether
+  ‖P ∪ Y‖_sh ≤ ‖P‖_sh + c(ρ)|Y| holds with c independent of K. PROVE it or REFUTE it with an explicit configuration.
+  The reviewer's evidence is B2 (0 violations, max excess 193/Y-cube) plus re-runs at M = 20/40/80 and an adversarial
+  sampler (max 257.25), all depth-stable; the missing lemma the reviewer names is
+  "π^r(Y) ⊂ N_1(π^r(P)) ⇒ Σ^{r+c}(P ∪ Y) = Σ^{r+c}(P) for a fixed c".
+- (c) Whichever way (b) goes, state and prove the best constant obtainable, as a lemma with a complete proof, and give the
+  resulting g²_CRC, n_T and the comparison against the recorded (RLF-δ) ceiling and against REL-boot / HIST-sum / n_H.
+- (d) Report the breach honestly in both directions: per REVIEW_HW_S5 S5-13 the binding programme ceiling is
+  g_0² ≈ 2.5·10⁻¹⁵²/C_Ω (REVIEW_SF_S7 l.335, RLARGE l.618, REVIEW_RLARGE_V3 l.61 "It still does not bind against DX′"), so
+  session 5's "the smallness condition fails ⇒ lower g_0" is an over-reaction; HANDOFF's instruction to lower g_0 and
+  recheck the SF thresholds is to be withdrawn in FOR OTHER FILES.
+- Failure modes to watch: (W-F1) a "sharpening" that silently changes the hypothesis of SH-att (the chain/attachment
+  condition) so that step (6) of Theorem CRC-2T can no longer apply it; (W-F2) an improvement proved only for a single
+  anchor and then used for a union over trees; (W-F3) a constant improved in HW while the SAME geometric constant is left
+  unsharpened in HIST/REL-boot, so that the binding inequality merely moves to another lane's copy of it; (W-F4) a
+  per-level gain that is multiplied by the number of levels and so reintroduces a depth term.
+
+### Target W2 (STEP 2): claim the right theorem — restate Theorem CRC-2T as what it is
+Per S5-8/GAS-1: §30.4's "two-type gas" is a bestiary (no partition function, no compatibility relation, no Mayer identity,
+no Kotecký-Preiss criterion) and §29's Target V2 (a) ("bounded by the gas's partition-function ratio, or by its polymer
+sum") is NOT delivered. Restate Theorem CRC-2T, without weakening it, as an **induction on the finite number N(R) = |S_R|
+of constrained pairs** with the telescoping exact and step (4)'s event algebra proven, i.e. as the thing that closes the
+m = k+1 step REVIEW_HW_S4 said could not close; drop the gas framing and record V2 (a) as not delivered.
+
+### Target W3 (STEP 3): hand (E2^𝔉) back in the shape node A can owe
+Per S5-16/E2-2 and S5-19/TF-2, (E2^𝔉) as stated at l.1524-1530 is strictly stronger than what node A owes, in three
+undeclared ways: the allowance currency (PLD gives the slice s_k(𝔥) at PLD l.1856 or ‖S‖_sh at PLD l.1408; (E2^𝔉) wants the
+union form over the attached patch); the level range (PLD l.1905 covers k ≥ 2 only, (LCR)_0 OPEN) against (E2^𝔉)'s level-0
+clause, which is itself mis-levelled; and F_< as a free unquantified symbol. Restate (E2^𝔉) asking node A only for what
+node A can owe: quantify F_<, fix the level-0 clause, declare the deltas, and either justify switching TF-1 off for the
+route of record or restore it. State the real wall precisely (the union-form allowance e^{c_A‖col Γ ∪ Y‖_sh} over the whole
+attached patch) even if it cannot be proven here; a correct statement is the deliverable. Record also the favourable
+narrowing S5-17 (§24.3's straddling-plaquette doubt does not transfer, LI-pw being pointwise and (E2^𝔉) an expectation).
+
+### Target W4 (STEP 4): process debt
+- Record as a BREACH of binding rule 2 that checks/w5_criteria.md contains b_n, b_D, c_att derived in session 5, and that
+  A1/A4/A5's PASS bands were drawn around §30.6's own hand values (reproduction checks, not pre-registrations). Do not
+  repeat it: no w6 criteria file may contain a constant derived in session 6.
+- §29's promised check-(ii) negative control (activities above the stated threshold, where the bound must fail or the
+  expansion must diverge; max 2z² was 0.783) was never run: run it or record it as not run.
+- Correct the stale n_H comparator at l.1643 and the two ceiling factors at l.1640.
+- End the session with a "## FOR OTHER FILES (not edited)" section (the brief's rule 8, breached since session 4).
+
+### Check w6 (criteria first: checks/w6_criteria.md, then the scripts; exact integer arithmetic, no numeric lock)
+(i) Exact shadow computations on Z⁴ (L = 3, floor blocking) testing the inequality forms of W1 (a)-(c) and the
+refutation/confirmation of W1 (b) at increasing depth, including positions chosen adversarially rather than at random.
+(ii) The negative control §29 promised and never ran: the two-species toy at activities above the stated threshold.
+Informational, never a proof. Every criterion is to be labelled either PRE-REGISTERED (outcome unknown when written) or
+CONFIRMATORY (a check of a statement proven earlier in the session), per [RHW5-fix W5-1].
+
+# Session-6 derivations (written after §34; typed from 12:58 UTC. Lane-H inputs read before writing: REVIEW_HW_S5.md in
+full; PLD.md §18 (session 6 of lane E, which landed during this session — §18.4 Lemma BUF, §18.6 Proposition PATCH,
+§18.9 M-1…M-7, §18.12's four requests to this lane) as relayed by the lead and then read directly at l.2188-2240,
+l.2347-2440, l.2694-2722, l.2732-2760. Nothing of PLD.md, HIST.md, RLARGE.md or HANDOFF.md is edited here.)
+
+## 35. STEP 1 (Target W1): the multiplicative factor of Lemma SH-att
+
+### 35.1 The question, localised (and the reviewer's localisation verified)
+REVIEW_HW_S5 S5-12 reports that at the session-5 constants four quantities coincide: (S2)'s ceiling 4.89789·10⁻⁹⁷,
+REL-boot's own r ≤ ½ ceiling at B_* = c_f + 1, HIST-sum's own condition at B_0 = c_f + 2, and (T)'s threshold against
+n_H(a, B_0). **I reproduced all four independently in plain-Python `Decimal` at 120 digits** (check w6 A4, no mpmath, no
+BLAS, no lock): 4.897894·10⁻⁹⁷, 4.898021·10⁻⁹⁷, 4.898012·10⁻⁹⁷ and n_T = 9.991038·10⁹⁶ against n_H = 9.991019·10⁹⁶.
+**CONFIRMED, and the consequence is accepted: (S2) and (T) impose nothing beyond H8′'s pre-existing r ≤ ½ and
+n_♯ ≥ n_H(a, B_0), and the entire session-5 tightening is the factor that Lemma SH-att's N_4 step puts into
+c_f = 6561·81·c_+ = 531441c_+.** So there is exactly one lever, and §30.6 l.1652's "A sharper SH-att or column bound lowers
+it; not needed" is wrong on the second clause — erratum [RHW5-fix SH-1] below.
+What follows replaces the factor 6561 by **81**, the per-level shadow constants 2401/38416/38417 by **625/10000/10001**, and
+c_att(8) = 1229313 by **320001**; and it **REFUTES** the reviewer's conjecture that the multiplicative factor is removable.
+
+### 35.2 Three shadow lemmas
+Throughout: level-j cubes are indexed by Z⁴ (floor blocking), π(X) = coordinatewise ⌊·/L⌋, N_t(X) = the ℓ^∞ radius-t
+neighbourhood, Σ(X) := N_1(π(X)), sh_{j+r}(X) := Σ^r(X) (HIST §7.1 l.455-457), ‖X‖_sh := Σ_{r≥0}|Σ^r(X)| over levels
+≤ K − 1. Σ, π, N_t are monotone under inclusion and distribute over unions. X is an ARBITRARY finite set of level-j cubes
+(no *-connectedness is used in §35.2).
+
+**Lemma SH-1 (the shadow contains a collar of its projection): PROVEN-HERE (elementary, not counted).** For every X and
+every r ≥ 1, **Σ^r(X) ⊇ N_1(π^r(X))**.
+*Proof.* r = 1 is the definition. If Σ^r(X) ⊇ N_1(π^r(X)) ⊇ π^r(X), then by monotonicity of N_1∘π,
+Σ^{r+1}(X) = N_1(π(Σ^r(X))) ⊇ N_1(π(π^r(X))) = N_1(π^{r+1}(X)). ∎
+(This is the ingredient of the reviewer's free lever (a), S5-14 (1). Taken; it is subsumed in Lemma SH-att′ below, which
+gives 81 rather than the reviewer's 2401.)
+
+**Lemma SH-2 (the shadow radius is 2, not 3): PROVEN-HERE (elementary, not counted; it SHARPENS HIST Lemma H-geo (i)).**
+For every X and every r ≥ 1, **Σ^r(X) ⊆ N_2(π^r(X))**.
+*Proof.* For integers u, v, |⌊u/L⌋ − ⌊v/L⌋| ≤ ⌊|u − v|/L⌋ + 1, so |u − v| ≤ 2 and L ≥ 3 give
+**π(N_2(B)) ⊆ N_1(π(B))**. Hence Σ(N_2(B)) = N_1(π(N_2(B))) ⊆ N_1(N_1(π(B))) = N_2(π(B)): radius 2 is a fixed point of
+the collar-plus-projection recursion, where H-geo (i) used radius 3 (t ↦ ⌊t/L⌋ + 2 fixes t = 2 as well as t = 3). Now
+r = 1: Σ(X) = N_1(π(X)) ⊆ N_2(π(X)). Step: Σ^{r+1}(X) = Σ(Σ^r(X)) ⊆ Σ(N_2(π^r(X))) ⊆ N_2(π^{r+1}(X)). ∎
+*Optimality.* Radius 1 does NOT work: Σ^r({x}) can be a box of side 4 (not 3) about π^r(x) — one 4⁴-block per level, the
+256 of §30.2's Reading — so N_1(π^r(X)) can fail to contain Σ^r(X). Check w6 G1 confirms both halves on 320 samples at
+depths 5/10/20/30: **t = 2 and t = 3 have 0 violations, t = 1 has 9076.** So 2 is the smallest radius with this property.
+**Corollary H-geo′ (the per-level shadow constants, re-derived): PROVEN-HERE (elementary, not counted).** For a *-connected
+set 𝒟 of n level-j cubes and m ≥ 1, with CE-geo′ (g1′) as in H-geo (ii) (|π^m(𝒟)| ≤ 16 + 32(n − 1)L^{−m}):
+  **|sh_{j+m}(𝒟)| ≤ 625·(16 + 32(n − 1)L^{−m})**  and  **Σ_{m=0}^{M}|sh_{j+m}(𝒟)| ≤ 10001n + 10000M**  (L = 3, d = 4),
+in place of H-geo (iii)'s 2401(16 + 32(n−1)L^{−m}) and H-geo (iv)'s 38417n + 38416M.
+*Proof.* |N_2(A)| ≤ 5⁴|A| = 625|A| with Lemma SH-2 and H-geo (ii) gives the first. For the second: the m = 0 term is n;
+Σ_{m≥1}625·16 = 10000 per level; Σ_{m≥1}625·32(n−1)L^{−m} = 20000(n−1)/(L−1) = 10000(n−1); total
+≤ n + 10000M + 10000(n−1) ≤ 10001n + 10000M. ∎
+(625·16 = 10000 and 625·32/(L−1) = 10000 at L = 3, exactly as 2401·16 = 38416 and 2401·32/2 = 38416 before. **HIST.md is not
+this lane's file: H-geo (i), (iii), (iv) are RE-DERIVED here, not edited there, and the request to HIST is in FOR OTHER
+FILES. Everything in §35 that uses 10001/10000 is therefore proven HERE; everything that quotes HIST's own 38417/38416 —
+REL-boot's r ≤ ½, HIST-sum's condition, c_B and n_H — is reported BOTH ways in §35.7, because a constant sharpened in HW
+and left unsharpened in HIST merely moves the binding inequality to HIST's copy of it. That is pre-stated failure mode
+(W-F3), and it materialised: see §35.7.**)
+
+**Lemma COV (translate covering): PROVEN-HERE (elementary, not counted).** For every set A of cubes of one level,
+  **N_2(A) = ⋃_{t∈{−1,1}^d}(N_1(A) + t),  N_3(A) = ⋃_{t∈{−2,0,2}^d}(N_1(A) + t),  N_4(A) = ⋃_{t∈{−3,0,3}^d}(N_1(A) + t),**
+hence **|N_2(A)| ≤ 2^d|N_1(A)| = 16|N_1(A)|** and **|N_3(A)|, |N_4(A)| ≤ 3^d|N_1(A)| = 81|N_1(A)|** in d = 4.
+*Proof.* "⊇" is immediate (|t_i| + 1 ≤ the radius). For "⊆" fix a ∈ A and x ∈ N_s(a) and choose t coordinatewise: for
+s = 2, t_i := −1 if x_i ≤ a_i and +1 otherwise, so x_i ∈ [a_i + t_i − 1, a_i + t_i + 1]; for s = 3, t_i := −2, 0, +2
+according as x_i ≤ a_i − 1, x_i = a_i, x_i ≥ a_i + 1; for s = 4, t_i := −3, 0, +3 according as x_i ≤ a_i − 2,
+|x_i − a_i| ≤ 1, x_i ≥ a_i + 2. In each case x ∈ N_1(a) + t ⊆ N_1(A) + t. ∎
+*Minimality.* Three translates per coordinate are needed at radius 3 (two 3-point intervals cannot cover 7 points) and two
+at radius 2. Check w6 G2: the three identities hold with exact set equality on every sample, and the 2-per-coordinate
+variant of the N_3 identity succeeds on none. **This single lemma is where the whole factor 81 comes from**: it converts
+"the attached cluster's shadow sits in a radius-3 or radius-4 collar of P's shadow" from a volume ratio 7⁴ = 2401 or
+9⁴ = 6561 into a COVERING by 3⁴ = 81 translates of a set already counted in ‖P‖_sh.
+
+### 35.3 Lemma SH-att′: the multiplicative factor is 81
+**Lemma SH-att′ (shadow of an attached cluster, sharpened): PROVEN-HERE (elementary, not counted; replaces Lemma SH-att
+l.1498-1510 with the same hypotheses).** L ≥ 3, d = 4. Let P, Y be sets of level-j cubes and ρ ≥ 1 be such that every
+y ∈ Y is joined to P by a chain y = y_0, y_1, …, y_s ∈ P with y_0, …, y_{s−1} ∈ Y and consecutive ℓ^∞ index distance ≤ ρ
+(the hypothesis of Lemma SH-att, unchanged — pre-stated failure mode (W-F1) is avoided by changing nothing in it). Then
+  **‖P ∪ Y‖_sh ≤ 81·‖P‖_sh + c′_att(ρ)·|Y|,  c′_att(ρ) := 1 + 40000ρ  (c′_att(8) = 320001).**
+*Proof.* Take the forest of Lemma SH-att verbatim: trees τ_i, each with one anchor z_i ∈ P and cube set Y_i ⊂ Y,
+Σ_i|Y_i| = |Y|, each τ_i a connected union of segments through the centres of its cubes of Euclidean length
+ℓ_i ≤ 2ρ|Y_i| (ℓ² ≤ √d·ℓ^∞ = 2ρ per step in d = 4), and τ_i meets the box of every cube of π^r(Y_i) and of π^r(z_i).
+Put r_i := ⌊log_L ℓ_i⌋ (ℓ_i ≥ 1 whenever Y_i ≠ ∅). Σ^r distributes over unions, so for each r ≥ 1
+  Σ^r(P ∪ Y) = Σ^r(P) ∪ ⋃_i Σ^r(Y_i),
+and we split the trees at level r into (a) ℓ_iL^{−r} < 1, i.e. r ≥ r_i + 1, and (b) r ≤ r_i.
+*(a) — this is the step that carried the 6561.* Scaling level-(j+r) boxes to unit cubes, τ_i has length ℓ_iL^{−r} < 1 and
+meets the unit box of π^r(z_i), so every point of τ_i is at Euclidean distance < 1 from it and
+**π^r(Y_i) ⊆ N_1(π^r(z_i)) ⊆ N_1(π^r(P))**. By Lemma SH-2,
+  Σ^r(Y_i) ⊆ N_2(π^r(Y_i)) ⊆ N_2(N_1(π^r(P))) = N_3(π^r(P)),
+and by Lemma SH-2 again Σ^r(P) ⊆ N_2(π^r(P)) ⊆ N_3(π^r(P)). So the WHOLE of Σ^r(P) together with ALL case-(a) trees at
+that level lies in N_3(π^r(P)) — one set, no per-tree multiplicity, so pre-stated failure mode (W-F2) is avoided. By
+Lemma COV and then Lemma SH-1 (r ≥ 1),
+  |N_3(π^r(P))| ≤ 81·|N_1(π^r(P))| ≤ 81·|Σ^r(P)|.
+*(b).* By Lemma SH-2 and (g1′) applied to the scaled τ_i, |Σ^r(Y_i)| ≤ 625|π^r(Y_i)| ≤ 625(16 + 32ℓ_iL^{−r}), so
+  Σ_{r=1}^{r_i}|Σ^r(Y_i)| ≤ 10000r_i + 625·32ℓ_i/(L−1) = 10000r_i + 10000ℓ_i ≤ 20000ℓ_i ≤ 40000ρ|Y_i|
+(using log_Lℓ ≤ ℓ for ℓ ≥ 1, L = 3).
+*r = 0.* |P ∪ Y| ≤ |P| + |Y| ≤ 81|P| + |Y|.
+Summing over r ≥ 0 and over i: ‖P ∪ Y‖_sh ≤ 81Σ_{r≥0}|Σ^r(P)| + |Y| + 40000ρ|Y| = 81‖P‖_sh + (1 + 40000ρ)|Y|. ∎
+*Gain.* 6561 → **81** on the multiplicative factor (the reviewer's free lever (a) gave 2401; Lemma COV gives 81, a further
+×29.6) and 1229313 → **320001** on c_att(8) (×3.84, from Lemma SH-2). Check w6 G4: **0 violations** of
+‖P∪Y‖_sh ≤ 81‖P‖_sh + c_att(8)|Y| on 320 samples at depths 5/10/20/30, including samples whose base point is on the
+all-ones base-3 orbit (the adversarial POSITIONS of §35.4, which no earlier run used); the session-5 inequality has 0
+violations too. The largest excess per Y-cube observed anywhere was 4235 (at depth 30), well inside c′_att(8) = 320001.
+*Honest note on check w6 G5.* G5 was pre-registered as "max (‖P∪Y‖_sh − c_att|Y|)/‖P‖_sh" to record how loose the
+multiplicative factor is. It came out 0.0000 and is **uninformative as pre-registered**: with the session-5 c_att = 1229313
+the subtracted term exceeds the whole norm on every sample, so the quantity is ≤ 0 identically. Reported as a defective
+criterion, not as evidence. The informative number is in §35.4: the samples force a multiplicative factor ≥ 5.714.
+
+### 35.4 Proposition SH-neg: the factor CANNOT be removed (the reviewer's conjecture is REFUTED)
+REVIEW_HW_S5 S5-14 (2) and S5-24 conjectured, from B2's 0 violations and depth-stability at M = 10/20/40/80 plus an
+adversarial sampler (max excess 257.25 per Y-cube), that **‖P ∪ Y‖_sh ≤ ‖P‖_sh + c(ρ)|Y|** holds with c independent of the
+depth, which would have taken g²_CRC to ≈ 3.2·10⁻⁹³/c_+. It does not.
+
+**Proposition SH-neg (no additive form exists): PROVEN-HERE (counted with [HW-12] below).** Let L = 3, d = 4, ρ ≥ 8. For
+every M ≥ 2 put ζ := (3^{M+1} − 1)/2 (all base-3 digits 1), z := (ζ, ζ, ζ, ζ), y := z + 8e_1, P := {z}, Y := {y}; Y is
+ρ-attached to P at ρ = 8 and |Y| = 1. Then, with ‖·‖_sh summed over the levels j…j+M,
+  **‖P ∪ Y‖_sh − ‖P‖_sh = 27M + 55**  and  **‖P ∪ Y‖_sh / ‖P‖_sh → 108/81 = 4/3.**
+Hence no inequality ‖P ∪ Y‖_sh ≤ ‖P‖_sh + c(ρ)|Y| can hold with c independent of the number of levels, and no
+multiplicative constant below 4/3 is possible in Lemma SH-att′.
+*Proof.* Work coordinatewise: Σ, π and N_1 act independently on the four coordinates, so Σ^r of a product set is the
+product of the one-dimensional Σ^r's. In one dimension write ζ_r := π^r(ζ). Since (3^m − 1)/2 = 1 + 3·(3^{m−1} − 1)/2, we
+have ζ_r = (3^{M+1−r} − 1)/2 exactly, and **ζ_r ≡ 1 mod 3 for r ≤ M − 1**; so ζ_r − 1 = 3ζ_{r+1}, ζ_r = 3ζ_{r+1} + 1,
+ζ_r + 1 = 3ζ_{r+1} + 2 all project to ζ_{r+1}.
+(i) *P's shadow is minimal at every level.* C_r := {ζ_r − 1, ζ_r, ζ_r + 1}: Σ({ζ}) = N_1(ζ_1) = C_1, and if Σ^r({ζ}) = C_r
+with r ≤ M − 1 then π(C_r) = {ζ_{r+1}} and Σ^{r+1}({ζ}) = N_1(ζ_{r+1}) = C_{r+1}. So Σ^r({z}) = C_r⁴, of size 3⁴ = 81, for
+1 ≤ r ≤ M, and ‖P‖_sh = 1 + 81M.
+(ii) *Y's shadow is one cube wider, for ever.* η := ζ + 8 = 3(ζ_1 + 3), so π(η) = ζ_1 + 3 and Σ({η}) = {ζ_1+2, ζ_1+3,
+ζ_1+4}, disjoint from C_1. Next, ζ_1 + 2 = 3(ζ_2+1), ζ_1 + 3 = 3ζ_2+4, ζ_1 + 4 = 3ζ_2+5 all project to ζ_2 + 1, so
+Σ²({η}) = {ζ_2, ζ_2+1, ζ_2+2} and Σ²({η}) ∖ C_2 = {ζ_2 + 2}. Then {ζ_2, ζ_2+1, ζ_2+2} projects to {ζ_3, ζ_3+1} (the last
+element is 3(ζ_3+1)), giving Σ³({η}) = {ζ_3−1, …, ζ_3+2}, and the 4-element form **D_r := {ζ_r−1, ζ_r, ζ_r+1, ζ_r+2}** is
+invariant: π(D_r) = {ζ_{r+1}, ζ_{r+1}+1} and N_1 of that is D_{r+1}. So for 3 ≤ r ≤ M, Σ^r({η}) = D_r and
+Σ^r({η}) ∖ C_r = {ζ_r + 2}, exactly one element; at r = 2 also one; at r = 1, three.
+(iii) *Assembling.* Σ^r({z, y}) = Σ^r({z}) ∪ Σ^r({y}) = (Σ^r_{1D}({ζ}) ∪ Σ^r_{1D}({η})) × C_r³, so
+|Σ^r({z,y})| − |Σ^r({z})| = |Σ^r_{1D}({η}) ∖ C_r|·|C_r|³ = 27 for 2 ≤ r ≤ M and 81 at r = 1, and 1 at r = 0. Summing:
+the excess is 1 + 81 + 27(M − 1) = 27M + 55, and ‖P∪Y‖_sh/‖P‖_sh = (1 + 108M + 55)/(1 + 81M) → 4/3. ∎
+*Check w6 G3 (the decisive pre-registered test).* Computed exactly for M = 2…30: the excess is 109, 190, 325, 595, 838,
+**865** at M = 2, 5, 10, 20, 29, 30, i.e. **27M + 55 exactly**; every slope E(M+1) − E(M) equals **27**; there is no
+constant tail; E(30) = 865 exceeds 258, the largest per-Y-cube excess any prior run recorded. **Pre-registered verdict:
+REFUTED.** On adversarially POSITIONED samples with |Y| > 1 at depth 30 the excess reached 4235 per Y-cube and the ratio
+‖P∪Y‖_sh/‖P‖_sh reached **5.714**, so the proven factor 81 is loose by at most ≈ 14 on the evidence, not by ≈ 5·10³.
+*Why the reviewer's evidence pointed the other way (diagnosis).* B2 and the reviewer's re-runs sampled POSITIONS at random
+and only the DIRECTION of attachment adversarially. The excess is depth-stable at a generic position, because π's floor
+dynamics drives both shadows to the same attracting 4⁴-block within O(log) levels. The all-ones base-3 position is the
+exception: there P's shadow stays on the minimal 3⁴ orbit at every level, and the attached cube's never joins it. The
+mechanism is exactly the one the reviewer asked for ("π^r(Y) ⊂ N_1(π^r(P)) ⇒ Σ^{r+c}(P ∪ Y) = Σ^{r+c}(P) for a fixed c")
+and it is **false**: in the construction π^r(y) stays at distance 1 from π^r(z) for ever, and the shadows never merge.
+
+### 35.5 Lemma COL′: the column bound at the sharpened constants
+**Lemma COL′: PROVEN-HERE (elementary, not counted; replaces Lemma COL l.1515-1518).** For a *-connected set 𝒟 of n
+level-m cubes and col(𝒟) its 81n level-(m−1) descendants, with M := K − 1 − m:
+  **‖col 𝒟‖_sh ≤ 81·(n + ‖𝒟‖_sh) ≤ 81·(10002n + 10000M)**  and  **|[𝒟] ∩ S_R| ≤ 10001n + 10000M.**
+*Proof.* π(col 𝒟) = 𝒟, so Σ^r(col 𝒟) = Σ^{r−1}(N_1(𝒟)) for r ≥ 1. The r = 0 term is |col 𝒟| = 81n = 81|Σ⁰(𝒟)|; the r = 1
+term is |N_1(𝒟)| ≤ 81|𝒟| = 81|Σ⁰(𝒟)|. For r ≥ 2, iterating π(N_1(B)) ⊆ N_1(π(B)) gives π^{r−1}(N_1(𝒟)) ⊆ N_1(π^{r−1}(𝒟)),
+so by Lemma SH-2, Lemma COV and Lemma SH-1 (at r − 1 ≥ 1)
+  |Σ^{r−1}(N_1 𝒟)| ≤ |N_2(N_1(π^{r−1}𝒟))| = |N_3(π^{r−1}(𝒟))| ≤ 81|N_1(π^{r−1}(𝒟))| ≤ 81|Σ^{r−1}(𝒟)|.
+Summing, ‖col 𝒟‖_sh ≤ 81|𝒟| + 81Σ_{s≥0}|Σ^s(𝒟)| = 81(n + ‖𝒟‖_sh), and Corollary H-geo′ bounds ‖𝒟‖_sh by 10001n + 10000M.
+For the second claim, [𝒟] ∩ S_R ⊆ ∪_{r≥0}π^r(𝒟) and |π^r(𝒟)| ≤ |sh_{m+r}(𝒟)|, so Corollary H-geo′ again. ∎
+(Against l.1516: 81(38418n + 38416M) → 81(10002n + 10000M), and 38417n + 38416M → 10001n + 10000M. The factor 81 is Lemma
+SL's and is unchanged; what changed is the per-level constant, by Lemma SH-2.)
+
+### 35.6 The extra R-free ring node A needs (PLD §18.4), and a cheaper price for it
+PLD session 6 proves **Lemma BUF** (PLD l.2190-2197): if every cube of N_1(𝒜) is R-free then L_w ∩ X_j(𝒜) = ∅ for
+w = h^{R,1}_j, by **this lane's Theorem LI^U-0′** with F ≡ 1 — so Lemma FT^far and Lemma COL-DEC apply to HW's own weight on
+FAR sets, which is what (E2^𝔉) needs and what review S5-26 (PLD's reviewer) had recorded as unavailable. The hypothesis is
+one ring stronger than §30.3's "col(Γ) ∪ Y R-free". PLD §18.12 request 1 asks this lane to buy it and to confirm that
+nothing else in Theorem CRC-2T reads R″ specifically. **Both are done here.**
+
+**(a) The purchase (accepted).** In step (4) of Theorem CRC-2T replace R″ := R′^{−Col(Y)} by
+  **R‴ := R′^{−(Col(Y) ∪ Col(N_1(col 𝒟 ∪ Y)))} ∈ 𝔉_𝔥.**
+**(b) Lemma RING (the price is ×17, not ×82): PROVEN-HERE (elementary, not counted).** For every set X of level-j cubes,
+  **|sh_{j+r}(N_1(X))| ≤ 16·|sh_{j+r}(X)|  (r ≥ 1),  hence  #_{R′}(Col(N_1(X))) ≤ 16·Σ_{r≥1}|sh_{j+r}(X)| ≤ 16‖X‖_sh,**
+so step (4)'s allowance e^{c_U‖X‖_sh} becomes **e^{17c_U‖X‖_sh}** and **c_+ = c_A + c_U becomes c_+ := c_A + 17c_U**, in
+place of PLD §18.4's e^{82c_U‖X‖_sh} and c_A + 82c_U.
+*Proof.* PLD's own step, iterated, gives Σ^r(N_1(X)) ⊆ N_1(Σ^r(X)). For r ≥ 1 put A_r := π(Σ^{r−1}(X)), so that
+Σ^r(X) = N_1(A_r) **is itself N_1-thickened**; then by Lemma COV at radius 2,
+  N_1(Σ^r(X)) = N_1(N_1(A_r)) = N_2(A_r) = ⋃_{t∈{−1,1}^4}(N_1(A_r) + t) = ⋃_{t∈{−1,1}^4}(Σ^r(X) + t),
+a union of 2⁴ = 16 translates of a set already counted. For the second claim, Col is the OPEN column, so only r ≥ 1 enters:
+#_{R′}(Col(Z)) ≤ Σ_{r≥1}|π^r(Z)| ≤ Σ_{r≥1}|sh_{j+r}(Z)| at Z := N_1(X). ∎
+PLD's 81 is the bound |N_1(W)| ≤ 3^d|W| applied per level; it is correct but does not use the fact that the level-r shadow
+is already a union of 3⁴-blocks, which is what gives 2^d. Check w6 G6 (pre-registered): **0 violations** of
+|sh_r(N_1 X)| ≤ 16|sh_r(X)| on 320 samples at depths to 30; the observed maxima are 3.373 per level and 2.783 for the whole
+r ≥ 1 sum, so even 17 is loose by ≈ 5 and the true price is nearer ×4.
+**(c) Nothing else in Theorem CRC-2T reads R″ (PLD §18.12 request 1, confirmed here by walking the proof).**
+- *Step (4)'s decomposition.* Y(c) is defined relative to **R′**, before the extra relaxation, so the partition of
+  configurations by {Y(c) = Y} is untouched. R‴ ∈ 𝔉_𝔥 (Col(·) is upward closed and a union of upward-closed sets is upward
+  closed; the torus is finite), and 1_{R′} ≤ 1_{R‴} pointwise by (m1).
+- *The event E_Y.* col(𝒟) ∪ Y is R‴-free (it was R″-free and R‴ relaxes more), and every non-R‴-free cube is non-R′-free, so
+  the two clauses used at l.1574-1576 survive verbatim; Buf^{R‴}_ρ ⊆ Buf^{R″}_ρ, so the buffer clause of E_Y is WEAKER and
+  the inclusion {Y(c) = Y} ⊆ E_Y still holds. E_Y is still a function of U_{m−1}.
+- *The induction hypothesis.* It is applied at R′ to the upward-closed set Col(Y) ∪ Col(N_1(col 𝒟 ∪ Y)), with
+  N(R′) < N(R) unchanged; the two #-counts add, which is where Lemma RING's 16 and step (4)'s own 1 combine into 17.
+- *Step (5)'s peel.* It needs every cube of 𝒟 to be R-free at level m and 𝒟 unconstrained at level m; R‴ relaxes a superset
+  of what R″ relaxed, so both hold, Theorem LI^U-0′ applies as before, and 1_{R‴,m} still does not read int 𝒟's level-m
+  links. (E2^𝔉) is then applied at R = R‴, where its new hypothesis "N_1(col Γ ∪ Y) R-free" is satisfied by construction.
+- *Steps (6)-(8).* Unchanged: the Y-sum, (S1), (T) and −log(1 − p) ≤ 2p read only the constants, which §35.7 re-reads.
+**Status.** Lemma RING: PROVEN-HERE. The purchase inside Theorem CRC-2T: PROVEN-HERE as a modification of step (4) whose
+only effect on the proof is the constant c_+ = c_A + 17c_U. **CONDITIONAL on nothing of HW's; it is required only because
+node A's route needs it, so a lane that later discharges (E2^𝔉) without Lemma BUF may delete the ring and recover §35.7's
+no-ring column.**
+
+### 35.7 The constants after §35.2-§35.6, and the honest ledger (check w6 A, Decimal 120 digits)
+The session-5 formulas are unchanged in SHAPE. Writing C_sh for Lemma SH-att′'s multiplicative factor, 81 for Lemma SL's
+column factor, (h_n, h′_n, h_D) for the per-level shadow constants and c_+ for the allowance,
+  **b_n = C_sh·81·h_n·c_+ + h′_n·c_U,  b_D = h_D·(C_sh·81·c_+ + c_U),  c_f = C_sh·81·c_+,**
+with (C_sh, h_n, h′_n, h_D) = (6561, 38418, 38417, 38416) in session 5 and **(81, 10002, 10001, 10000)** here, and
+c_+ = c_A + c_U with no ring, c_A + 17c_U with §35.6's ring, c_A + 82c_U at PLD's price. At c_A = 0, c_U = 1, C_ℓ = 1, R = 0:
+| scenario | c_+ | b_n | b_D | c_f | **g²_CRC** | **n_T** |
+|---|---|---|---|---|---|---|
+| session 5, no ring | 1 | 20416938755 | 20415875872 | 531441 | 4.89789·10⁻⁹⁷ | 9.99104·10⁹⁶ |
+| session 5, ring ×82 | 82 | 1674185866133 | 1674098709808 | 43578162 | 5.97305·10⁻⁹⁹ | 8.19264·10⁹⁸ |
+| **session 6, no ring** | 1 | 65633123 | 65620000 | 6561 | **1.52362·10⁻⁹⁴** | **3.21128·10⁹⁴** |
+| **session 6, ring ×17 (§35.6)** | 17 | 1115603075 | 1115380000 | 111537 | **8.96376·10⁻⁹⁶** | **5.45840·10⁹⁵** |
+| session 6, ring ×82 (PLD's price) | 82 | 5381106005 | 5380030000 | 538002 | 1.85835·10⁻⁹⁶ | 2.63286·10⁹⁶ |
+At every ring value the session-5 → session-6 gain is **×311.1 on g²_CRC, ÷311.2 on n_♯ and ÷81 on c_f** (the ×81 of Lemma
+COV and the ×3.84 of Lemma SH-2 multiply). Also c_att(8): 1229313 → 320001; (S1)'s ceiling 1.83822·10⁻⁹³ (so (S1) is still
+implied by (S2), as §30.6 said); g²_ret = 3.67644·10⁻⁹⁸; Δ_ρ² = 6.9756·10⁹ unchanged.
+
+**(i) Against the recorded (RLF-δ) ceiling 10⁻⁹⁴ (check w6 A3, pre-registered).**
+- session 5, no ring: BELOW by ×204.17 — session 5's headline, reproduced.
+- session 6, **no ring: ABOVE by ×1.52** — i.e. the breach would have disappeared outright for c_+ ≤ 1.52.
+- session 6, ring ×17: **BELOW by ×11.16**. session 6, ring ×82: BELOW by ×53.81.
+- session 5 carrying the same ring: BELOW by ×3470.9 (×17) or ×16741.9 (×82).
+**So the answer to Target W1 (b)-(c) is: the breach against 10⁻⁹⁴ is reduced from ×204 to ×11.2, and it does NOT
+disappear.** Two independent reasons, and both must be said: the multiplicative factor is **not removable** (Proposition
+SH-neg), and node A's buffer ring costs ×17 on top. Even the unattainable additive form would give 3.2·10⁻⁹³/82 ≈
+3.9·10⁻⁹⁵ after the ring, still below 10⁻⁹⁴. **The reviewer's "the breach simply disappears" (S5-14 (2)) is withdrawn, and
+so is the hope attached to it.**
+**(ii) Failure mode (W-F3) materialised: the gain is HW-internal until HIST moves.** With HIST's own 38417/38416 left in
+place, REL-boot's r ≤ ½ (B_* = c_f + 1) and HIST-sum's condition (B_0 = c_f + 2) give **2.33375·10⁻⁹⁶** at the ×17 ring —
+BELOW g²_CRC = 8.96·10⁻⁹⁶, so **they, not (S2), become the binding inequality** (breach ×42.85 against 10⁻⁹⁴), and
+n_H = 2.09688·10⁹⁶ exceeds n_T = 5.4584·10⁹⁵ by ×3.84. With Corollary H-geo′'s 10001/10000 substituted in HIST's own
+statements, all four coincide again — spread **1.0001** — reproducing S5-12's coincidence at the new constants
+(check w6 A2, pre-registered; the answer was not known when the criteria were written). **Hence: ÷81 on c_f is HW's
+unconditionally (it is Lemma COV, used inside HW's own Corollary CRC-HW), and the further ×3.84 on the programme's ceilings
+is CONDITIONAL on HIST adopting Corollary H-geo′** — FOR OTHER FILES item 2. Until then the honest programme number at the
+×17 ring is **2.33·10⁻⁹⁶/c_+**, still ×4.77 above session 5's 4.898·10⁻⁹⁷.
+**(iii) Against the ceiling that actually binds ([RHW5-fix CST-2], and this is the point of the exercise).**
+REVIEW_RLARGE_V3 l.61 ("It still does not bind against DX′"), REVIEW_SF_S7 l.335 and RLARGE l.618 record the binding
+programme ceiling as **g_0² ≈ 2.5·10⁻¹⁵²/C_Ω**. At c_+ = 1, C_Ω = 1, session 6's g²_CRC with the ×17 ring exceeds it by
+**×3.5855·10⁵⁶**, and g²_CRC ≥ 2.5·10⁻¹⁵² holds while **c_+ ≤ 6.0954·10⁵⁷** (check w6 A5). Session 5's own number already
+had ×1.96·10⁵⁵ of slack. **So (S2) costs the programme nothing at the recorded constants, in session 5 or in session 6**,
+and the open risk is that c_A is uncertified (PLD l.1902), not that g_0 must move. **HANDOFF's "g_0 therefore has to be
+lowered. Recheck the downstream constants, including the SF thresholds" is an over-reaction and is withdrawn** (FOR OTHER
+FILES item 1). This is a bookkeeping event, not a crisis, and §30.6/§32/§33's framing implies a crisis that does not exist.
+**(iv) What session 5's headline becomes.** "(S2) FAILS at the recorded ceiling and needs g_0 lowered" (l.1641, l.1724,
+§33) is **half withdrawn**: the arithmetic failure against 10⁻⁹⁴ survives (×11.2 with the ring), but (a) its ATTRIBUTION to
+(S2) is wrong — (S2) ≡ REL-boot's r ≤ ½ ≡ HIST-sum's own condition, all of which predate this route (S5-12, reproduced in
+w6 A4); (b) its SIZE was an artefact of two geometric constants, now reduced by ×311; (c) its CONSEQUENCE ("lower g_0,
+recheck the SF thresholds") is withdrawn, there being ≈ 56 orders of slack against DX′; and (d) the one new real cost is
+node A's ring, which session 5 did not know about. **Nothing in the chain is in crisis and nothing downstream needs to
+move.**
+
+## 36. STEP 2 (Target W2): Theorem CRC-2T restated as what it is
+
+**[RHW5-fix GAS-1, applied as an erratum.]** §30.4's heading "The two-type gas, and the theorem" and §33 l.1720's "(a) The
+gas written" overstate. **The correction, binding and accepted:** §30.4 describes a two-species bestiary — far defects,
+animals, column and collar linking, per-type decay — and **no polymer partition function, no compatibility (hard-core)
+relation, no Mayer identity and no Kotecký-Preiss criterion is constructed or used anywhere in §30** (l.1610 already says
+the KP name is cited for orientation only). Consequently **§29's Target V2 (a) — "the ratio … is bounded by the gas's
+partition-function ratio, or by its polymer sum" — is NOT DELIVERED**, and §33's "V2: MET as an implication" should read
+"V2 (a): NOT DELIVERED as written; (b)-(d) MET as implications". §30.4's symbols z_1, z_2 are retained only as names for
+the two per-step bounds (x in step (6), the step bound in steps (6)-(7)); they are not polymer activities of any gas that
+is summed.
+**What the session actually proved is better than what V2 (a) asked for**, and that is the claim to make: it needs **no
+polymer representation of 1_R**, which REVIEW_HW_S4 Priority 6 identified as the real obstruction ("The obstruction is the
+representation, not convergence"), and it closes the m = k + 1 step that REVIEW_HW_S4 l.1321 said could not close ("For
+m = k + 1 it is (CRC)_k itself: the induction does not close"). Accordingly:
+
+**Theorem CRC-2T′ ((CRC) for the column-relaxed family, by induction on the number of constrained pairs): CONDITIONAL
+[HW-11, re-labelled; implication PROVEN-HERE in §30 and re-constanted here; counted once, not twice].** Assume (F_R) (lower
+half and u_m ≤ u_{m−1} + R) with g_K² ≤ 1/(2R), SU(2) (SU(N ≥ 3): (KS-N)), bad-only history-independent defects,
+(CLS-min), max{6θ, 24θ}(1 + 2Rg_K²) < 1, **(E2^𝔉′)_{θ,ρ} of §37 with ρ = 3L − 1**, and (S1), (S2), (T) **at the constants
+of §35.7** for some c_U ∈ (0, 1]. Then for every admissible 𝔥, every R ∈ 𝔉_𝔥 and every upward-closed set 𝒞′ of pairs at
+levels ≥ k_0 + 1 (in particular Col(B) for a set B of level-k cubes, k ≥ k_0),
+  **ρ^F_R(𝒞′) ≤ exp(2ε_2·#_R(𝒞′)) ≤ exp(c_U·#_R(𝒞′)),**
+and in particular **(CRC)_k holds with c_U := 2ε_2** (F ≡ 1, k_0 = k, R = R(𝔥)), uniformly in g ≤ g_0, K, T, 𝔥.
+*Proof.* §30.4's proof verbatim, with four replacements: Lemma SH-att → **Lemma SH-att′** (§35.3) in step (6); Lemma COL →
+**Lemma COL′** (§35.5) in steps (3) and (6); step (4)'s R″ → **R‴** with Lemma RING (§35.6), which is the only change to
+the argument and changes only c_+; and the constants b_n, b_D, c_att, c_+ read from §35.7. Nothing else moves (§35.6 (c)
+walks every step). ∎
+**The accurate description of the proof, for the record.** It is an **induction on the finite integer N(R) := |S_R| ∈ ℕ**,
+the number of constrained (level, cube) pairs of the pattern, at fixed (𝔥, T, K) and with a FIXED constant c_U; the base is
+#_R(𝒞′) = 0; every inner use of the hypothesis — step (1)'s R_{t−1}, step (3)'s R_{t−1} with 𝒞′ = [𝒟], step (4)'s R′ and
+(now) the ring — is at a strictly smaller value of N; the telescoping
+ρ^F_R(𝒞′) = Π_t Z^F(R_{t−1})/Z^F(R_t) = Π_t[1 − p_t]^{−1} is an **exact identity**; step (2)'s containment and step (4)'s
+event algebra are proven set inclusions; step (6) is a Mayer-TYPE factorisation used only as an over-counting inequality,
+with (S1) the standard Δ²z ≤ ½ criterion for the far-defect species and the reverse cross-species direction paid by the
+induction's own c_U and closed by 2ε_2 ≤ c_U; and the closing condition is a fixed inequality on constants, checked once —
+**not a nonlinear bootstrap (V-F4) and not a fixed-point problem**, since c_U := 1 may be taken on input. The proof is
+therefore **neither a cluster expansion nor a convergence proof for a gas**; it is the inductive (Kotecký-Preiss-SHAPED,
+not Kotecký-Preiss) leaf-summation written as a recursion on constrained pairs. l.1605-1614's "Relation to Theorem CE /
+CE-col" is accurate and stands.
+**[RHW5-fix NIT, item 4.]** Theorem CRC-2T′ with F ≡ 1 also serves the **off-route consumers** named in §23's table —
+RLARGE row K8 and EXISTENCE's single-cube union bound — since those ask (CRC) for R = R(𝔥) and single cubes, a special
+case of 𝒞′ = Col(B), |B| = 1. §32's list does not say so; it should (one clause, free).
+**Not added, and not claimed:** a cluster expansion, a polymer gas, a Kotecký-Preiss criterion, any partition-function
+bound of the gas, or any reduction in the programme's binding coupling ceiling (§35.7 (iii)).
+
+## 37. STEP 3 (Target W3): (E2^𝔉) restated so that it asks node A only for what node A can owe
+
+PLD session 6 (lane E) landed during this session and settles most of this. Its three load-bearing results for this lane
+are **Lemma BUF** (PLD §18.4, which uses THIS lane's Theorem LI^U-0′), **Proposition FAR** (PLD §18.2: HW's far Y and
+animal columns satisfy the only clause of (C_S) that GEO (i), (iii), (iv), FT^far and COL-DEC use, namely S ∩ 𝒰_j = ∅ — so
+the SET class was never the obstruction; the obstruction is GEO (ii), i.e. the WEIGHT), and **Proposition PATCH** (PLD
+§18.6.1), whose finding is the valuable part: **Theorem NA-PRICE^E/E+ generate no allowance at all, they only TRANSMIT the
+small-field hypothesis's**, so the patch allowance is a **clause of the hypothesis**, which is exactly why no PLD §16-§17
+statement has that shape. §37's statement is written to PLD's shape, not invented here.
+
+**(E2^𝔉′)_{θ,ρ} [OPEN; owner node A; replaces (E2^𝔉) of l.1524-1530 and H6-H7 on the (E2) route].** There are C_fc, C_A,
+a_A ≥ θa_bad and c_A, independent of g, K, T, 𝔥 and of the pattern, such that for
+- every R ∈ 𝔉_𝔥 (every upward-closed relaxation at levels ≥ k_0 + 1),
+- every level **j ≥ max{k_0, 1}** (see the level clause below),
+- every finite set Γ of level-(j+1) cubes with **Γ ∩ A_{j+1}(𝔥) = ∅ or Γ = 𝒰_{j+1}** (Proposition FAR (ii)'s hypothesis,
+  which Theorem CRC-2T′ supplies: Γ = 𝒟 is a set of constrained cubes in step (5), Γ = 𝒰_{k+1} in Corollary CRC-HW),
+- every finite set Y of level-j cubes outside col(Γ) with **N_1(col(Γ) ∪ Y) R-free** (one ring more than l.1526 asked;
+  bought inside Theorem CRC-2T′ by §35.6 at ×17 on c_U), and
+- **every** bounded measurable F_< ≥ 0 that is a function of U_0, …, U_{k_0−1} (**universally quantified**; free on node A's
+  side, PLD §18.6.2 Delta 3 / M-7),
+the following holds with ν := ν^{R,F}_j (the past law of levels ≤ j of R with F_< inserted) and w := h^{R,1}_j times the
+buffer indicator (the "buffered weight" of PLD §18.4 (d)):
+  **E_{ν^w}[Π_{Q∈Γ}e^{θ min{π_Q, Y^f_Q}}·1{Y ⊂ D_j}·1{Buf^R_ρ(col Γ ∪ Y) ∩ D_j = ∅}]
+      ≤ C_fc^{|Γ|}·(C_Ae^{−a_Au_j})^{|Y|}·e^{c_A‖col Γ ∪ Y‖_sh}.**
+**How the allowance clause is to be read (the renegotiation, PLD §18.12 request 2).** What node A must PROVE is **not** the
+displayed union form. It is: *node A's small-field moment carries at most a per-cube constant and no shadow sum* — form
+**(P0)** (no allowance, c = 0) or **(P1)** (e^{c|A∖A′|}, absorbed into c_sf^{|A∖A′|}) of PLD Proposition PATCH (v). The
+displayed e^{c_A‖col Γ ∪ Y‖_sh} then follows **free**, by monotonicity of ‖·‖_sh (PATCH (i)): every set node A actually
+prices — Y ⊔ x(Γ_1) for a choice function x, which is what the CAP-dec expansion produces — is a SUBSET of the patch
+col(Γ) ∪ Y, and ‖·‖_sh is monotone. The forms node A must NOT be asked for, and HW does not ask for, are **(P2)** per-cube
+union sums e^{cΣ_{Q}‖{Q}‖_sh} (which carry the per-cube depth term 81 + 256(K − j − 2) of §30.2's Reading, unaffordable at
+a_A ≈ 10⁻⁸⁶ at any coupling) and **(P3)** the slice s_k(𝔥) (**incomparable** to both the union and patch forms, in both
+directions: PATCH (ii)). **So the currency dispute is closed: HW's requirement is "per-cube constant, no shadow sum, never
+the slice, and never per-cube depth"; the patch form is a consequence, not a request.** And if the moment comes with (P0),
+node A delivers **c_A = 0**, which is strictly stronger than HW asks and lowers HW's own constants by (c_A + c_U)/c_U
+(PLD §18.7 (5) claims exactly this).
+**The level clause ([RHW5-fix E2-2], and l.1530's clause is withdrawn as ill-formed).** l.1530 put Γ and Y both at level 0
+while the body has Γ at level j+1 and Y at level j, where at level 0 there is no finer level and col(Γ) is undefined. The
+two consistent readings are **(0a)** Γ a set of level-0 cubes with the Wilson window Π_{Q∈Γ}e^{θX_Q} and **Y = ∅**, or
+**(0b)** Γ at level 1 with Y at level 0. PLD delivers **j ≥ 1** (PLD §18.7; §17 alone gives k ≥ 2, PLD l.1905) and
+**neither (0a) nor (0b)**: level 0 is OPEN on both sides ((LCR)_0 / the level-0 Wilson window moment, PLD §16.5 "Level 0",
+§18.9 M-3). Since Lemma TEL-f needs every level, **the interface is NOT delivered, and the bottom two levels are a named
+hole, not a detail.** Theorem CRC-2T′ and Corollary CRC-HW are therefore CONDITIONAL on a hypothesis that is OPEN at j = 0
+even after PLD session 6, and §32's H6′ row did not flag the level restriction at all.
+**The deltas, now all declared (S5-16, and their status after PLD §18).**
+| delta | (E2^𝔉)'s demand | node A's position after PLD §18 |
+|---|---|---|
+| D1 allowance currency | union form over the attached patch (≠ PLD l.1408's ‖S‖_sh, ≠ PLD l.1856's slice) | **ANSWERED**: Proposition PATCH — the patch form follows from a per-cube-constant moment by monotonicity; the slice is incomparable and is the wrong object (M-1) |
+| D2 level range | every j ≥ k_0, plus a level-0 clause | j ≥ 1 delivered (PLD §18.7); **j = 0 OPEN**; HW's level-0 clause was mis-levelled and is replaced above (M-3) |
+| D3 F_< free symbol | unquantified at l.1528 | **ANSWERED**: universally quantifiable at zero cost (M-7); done above |
+| D4 set class (far Y) | the price of a FAR set | **ANSWERED**: (C_S) was not the obstruction (Proposition FAR); GEO (ii) was, and Lemma BUF closes it for one extra R-free ring, bought here at ×17 (M-2) |
+| D5 family uniformity over 𝔉_𝔥 | uniform in the pattern | not an obstruction for the law conversion (Lemma BUF is applied once, before the declaration); still open for the two open halves, which PLD §18.6 states over 𝔉_𝔥 |
+| D6 weight class | the one weight h^{R,1}_j (not "any w") | **in HW's favour**: PLD §17's "any w" is STRONGER than HW asks and is expected false (E1-1, M-4); PLD §18.7 restricts to 𝔏^buf_k, which is HW's class |
+| D7 form | ONE joint expectation (Γ-moment and Y-probability together) | PLD §17.4 states an unconditioned probability; PLD §18.7's Cor. E2-RED states the F-conditioned joint form, which is what CAP-dec and (E2^𝔉′) consume (M-6) |
+**[RHW5-fix TF-2], recorded with BOTH positions, not absorbed.** REVIEW_HW_S5 S5-19 holds that §30.5's finer-first order
+switches TF-1 off and thereby **reinstates** the node-A law mismatch TF-1 was introduced to remove (no PLD statement being
+written under laws carrying the finer capped spectators). **Node A denies this** (PLD §18.6.2, §18.12 request 5): PLD §17.2
+builds ν^{(k)}_k with the finer capped spectators Π_{k′<k}Φ_{k′} already inserted, and Lemma GEO (iv) is the clause that
+handles Φ_{k−1}; so "the law PLD §17 is written for IS HW's finer-first law". **On the evidence I can check, node A is
+right and the review's S5-19 is to be narrowed**: the law class in PLD §18.7.0 is HW's, and HW's F_< reads only levels
+≤ k_0 − 1 ≤ j − 1, strictly finer than the links FT^far/COL-DEC are about. What TF-1 protected was the **(E1)** form, which
+E1-1 expects false for independent reasons. I therefore do **not** propagate S5-19's conclusion; §30.5's "TF-1 caveat" is a
+presentational caveat, not a node-A regression. **This is a disagreement between two binding documents and is flagged for
+the lead** (FOR OTHER FILES item 5); nothing in §35-§37 depends on which way it is resolved.
+**[RHW5-fix NIT, item 5: the favourable narrowing of §24.3's doubt, accepted.]** l.1298-1302's session-5 doubt (bad-only
+goodness reads only the INTERIOR plaquettes of the buffer cubes, so far curvature can sit on the straddling plaquettes —
+the LI-pw mechanism) is **correct as an observation about LI-pw and does not transfer to (E2^𝔉′)**: Proposition LI-pw is a
+POINTWISE statement exhibiting two configurations, while (E2^𝔉′) is an EXPECTATION under ν^w for the one weight
+w = h^{R,1}_j ∈ [0, 1], and a buffer configuration carrying O(1) straddling holonomy at level j costs level-j action of
+order u_j = 1/g_j², i.e. has ν-probability e^{−c/g_j²}. The measure suppresses exactly the configurations LI-pw constructs.
+**So the straddling-plaquette worry is not an obstruction to (E2^𝔉′), and l.1298-1302 is narrowed accordingly** (erratum;
+the struck-through discipline cannot be applied from an appended section, so this paragraph is the correction of record).
+**What is left is a different and better-posed difficulty**, and both lanes have now reached it from opposite sides:
+ν^w(·) ≤ ν(·)/E_ν[w] with E_ν[w] = Z^F(R)/Z^F(past), so (E2^𝔉′) fails unless conditioning on the coarser constraints costs
+no volume factor — a **positivity-of-density statement with a boundary allowance**, which is what the patch allowance
+encodes. Node A's own session-6 verdict is the same statement from the other side: their single biggest obstruction is
+**(CEM-2)**, a decoupling across one R-free ring that is **not obtainable from the buffer-good event alone** (the event
+bounds curvature by ε_1 where a g-independent constant needs ≈ g_K, a gap they measure at 4.489·10¹⁵), so the mechanism
+must be the weight's **typicality under the measure** — i.e. a decoupling under the measure, not a deterministic geometric
+statement about buffer-good configurations. **That is the exact residual of the whole HW route, and it is one statement,
+owned by node A.**
+
+## 38. STEP 4 (Target W4): the eleven binding fixes as errata, and the process debt
+
+This session cannot edit §0-§33, so each binding fix is recorded here as an **erratum naming the line it corrects**. All
+eleven are applied; none is declined.
+
+| # | fix | line(s) corrected | correction of record |
+|---|---|---|---|
+| 1 | **[RHW5-fix CST-1]** | l.1638-1643, l.1709-1712, §33 l.1723-1725 | **§35.1.** (S2) is numerically the SAME inequality as REL-boot's r ≤ ½ at B_* = 531441c_+ + 1 (4.898021·10⁻⁹⁷) and as HIST-sum's own condition at B_0 = 531441c_+ + 2 (4.898012·10⁻⁹⁷), against (S2)'s 4.897894·10⁻⁹⁷; and (T)'s n_T = 9.991038·10⁹⁶ is numerically n_H(a, B_0) = 9.991019·10⁹⁶. All reproduced in independent Decimal-120 arithmetic (w6 A4). **So (S2) and (T) imposed nothing new, and the entire session-5 tightening was the ×6561 of SH-att's N_4 step entering c_f.** §30.6's "(S2) is the binding inequality" is correct only as an identity with constraints H8′ already carried. |
+| 2 | **[RHW5-fix CST-2]** | l.1640-1642, l.1709-1712; HANDOFF l.57-59 | **§35.7 (iii).** The binding programme ceiling is g_0² ≈ 2.5·10⁻¹⁵²/C_Ω (REVIEW_SF_S7 l.335; RLARGE l.618; REVIEW_RLARGE_V3 l.61 "It still does not bind against DX′"). g²_CRC exceeds it by ×3.59·10⁵⁶ at c_+ = 1 (w6 A5), and the proviso is c_+ ≲ 6.1·10⁵⁷. **So (S2) costs the programme nothing**; the open risk is that c_A is uncertified (PLD l.1902). HANDOFF's "g_0 therefore has to be lowered. Recheck the downstream constants, including the SF thresholds" is **WITHDRAWN** (FOR OTHER FILES item 1 — HANDOFF is the lead's file). |
+| 3 | **[RHW5-fix CST-3]** | l.1643 and l.1640 | l.1643's comparator **n_H ≳ 2·10⁸⁷ is STALE**: the reviewed value is n_H ≥ 1.810·10⁹¹ (REVIEW_RLARGE_V3 Part 4, fix N3-1: "the dominant term is c_B, not 4"), and at HW's own B_0 = 531441c_+ it is 1.0·10⁹⁷c_+ ≈ n_T. **"n_♯ grows by ≈ 10¹⁰" is struck**; the honest figure is the c_f jump (≈ 6.6·10³ against session 4's own value), and on session 6's constants n_H(a, B_0) = 2.09688·10⁹⁶ at the ×17 ring EXCEEDS n_T = 5.4584·10⁹⁵, i.e. **(T) adds nothing to H8′ at all**. l.1640's "a factor ≳ 2·10²" hides a difference of 2700×: the two factors are **204.17** (against 10⁻⁹⁴) and **5.5126·10⁵** (against 2.7·10⁻⁹¹); both are now ×311.1 smaller. |
+| 4 | **[RHW5-fix SH-1]** | l.1498-1510 (Lemma SH-att), l.1651-1652 ("not needed") | **§35.2-§35.5.** l.1652's "A sharper SH-att or column bound lowers it; not needed" is **RETRACTED**: it was the only thing needed. The reviewer's free lever (2401 for 6561) is taken and superseded: Lemma COV gives **81**, Lemma SH-2 gives 625/10000/10001 for 2401/38416/38417, and c_att(8) = 1229313 → 320001. The reviewer's second gain (the additive form, "the breach simply disappears") is **REFUTED** by Proposition SH-neg, with the missing lemma it named shown to be FALSE. |
+| 5 | **[RHW5-fix E2-2]** | l.1524-1530, l.1699 (H6′) | **§37.** F_< universally quantified over bounded measurable functions of U_{<k_0}; the level-0 clause replaced ((0a)/(0b), both OPEN) and the level restriction j ≥ 1 flagged; seven deltas declared in a table; the allowance clause restated as the per-cube-constant requirement with the patch form derived by monotonicity. |
+| 6 | **[RHW5-fix TF-2]** | §30.5 l.1626-1631, l.1699 | **§37**, with BOTH positions recorded: the review's S5-19 (the finer-first order reinstates the node-A law mismatch) and node A's denial (PLD §18.6.2: PLD §17.2's law already carries the finer capped spectators). I judge node A right and do not propagate S5-19; flagged for the lead. |
+| 7 | **[RHW5-fix GAS-1]** | §30.4 heading, l.1605-1614, §33 l.1720 | **§36.** "The gas described"; no partition function, compatibility relation, Mayer identity or KP criterion is constructed or used; **§29 V2 (a) NOT DELIVERED**; the induction is better than the expansion asked for because it needs no polymer representation of 1_R. |
+| 8 | **[RHW5-fix SYM-1]** | l.1273/l.1373 vs l.1690 (c_f); l.1543 vs l.1690 (C_ℓ); l.1549 vs PLD l.1417 (c_U) | (a) **c_f**: SL-1's c_f := 81(c_A + c_sf′) is **superseded** by §32 l.1690's 531441c_+ and now by §35.7's C_sh·81·c_+; **(E2^𝔉′)'s c_A stands for c_A + c_sf′**, c_sf′ having been absorbed into the single node-A constant. (b) **C_ℓ**: §30.4 l.1543's UNPRIMED C_ℓ = (1−λ_*)^{−3n_int/2}C_fc is the one ε_2 and (S2) need; §32 l.1690's PRIMED C_ℓ (with C_fc′ = 2C_fc e^{c_f}) is the one REL-boot's r and B_0 need. **Two values, one symbol: an integrator must not feed the primed value into ε_2.** The difference is additive ≈ 5.3·10⁵c_+ in the log and immaterial against b_n. (c) **c_U**: HW's c_U is the (CRC) constant; PLD's c_U is the (LI^U) ratio constant of PLD l.1417's c_A = 6c_U + c_ns. **PLD's c_U is 0 on this route (Theorem LI^U-0; REVIEW_HW_S4 X-2) and is a DIFFERENT SYMBOL from HW's**, so §30.6's "Order of constants (non-circular)" is non-circular; and PLD's own session-5/6 form has no c_U at all (c_A = c_cd, now c_A = 0 in PLD §18.7). Read **c_+ ≤ c_A + 17c_U** wherever the derivation needs the input value (c_U^in = 1), the output being c_U^out = 2ε_2. |
+| 9 | **[RHW5-fix W5-1]** | §31 l.1665-1683 | **§38.1** below (the w5 defects, disclosed) and **§39** (w6's own criteria labelled PRE-REGISTERED or CONFIRMATORY, with the criteria file's md5 recorded in HW_LOG as the review asked). |
+| 10 | **[RHW5-fix SC-1]** | the absence of the section since session 4 | **§41**, the required "## FOR OTHER FILES (not edited)" section. |
+| 11 | **[RHW5-fix NIT]** | l.1484, l.1572, l.1477-1479, §32, l.1298-1302 | (a) **l.1484**: read "F_< ≥ 0 a fixed bounded weight **with Z^F(∅) > 0**"; it is automatic in the application (Φ ∈ [1, e^{θπ}] ≥ 1) but not from "F_< ≥ 0 bounded" alone. (b) **l.1572**: step (5) needs BOTH that every cube of 𝒟 is R‴-free (for h^{R‴,1}_m) AND that (m, x) ∉ S_{R‴} for x ∈ 𝒟 (for 1_{R‴,m}); both hold because the relaxation is of the CLOSED column [𝒟], not the open one, and "R-free" (open column) and "unconstrained at level m" are different properties. (c) **l.1477-1479**: a pair (m+1, π(x)) in the upward closure of 𝒞 need not lie in S(𝔥), so 𝒞 ∪ {…} is not literally upward closed as a set of pairs; immaterial because R_{S(𝔥)∖𝒞} = R_{S(𝔥)∖(𝒞 ∪ anything off S(𝔥))}, so one may replace 𝒞 by its upward closure WLOG. (d) off-route consumers: §36. (e) §24.3's doubt narrowed: §37. |
+
+### 38.1 The process debt, recorded honestly
+- **Binding rule 2 was BREACHED in session 5 (CONFIRMED, S5-3).** checks/w5_criteria.md l.8-12 defines its PASS conditions
+  in terms of **b_n, b_D and c_att(ρ)**, all three first derived in §30.2/§30.4 of the SAME session (HW_LOG l.150-151 says
+  so plainly and does not call it a breach). Worse, **A1's band [4.0·10⁻⁹⁷, 5.5·10⁻⁹⁷], A4's [5·10⁹⁶, 2·10⁹⁷] and A5's
+  [1.0·10⁻⁹⁷, 2.0·10⁻⁹⁷] are brackets drawn around §30.6's own hand values** (4.9·10⁻⁹⁷, 1.0·10⁹⁷, 1.6·10⁻⁹⁷). **A1, A4
+  and A5 are therefore REPRODUCTION checks of §30.6's hand arithmetic, not pre-registrations**, and §31's "A (arithmetic,
+  50-digit)" and §33's "Check w5: OVERALL PASS" present them as pre-registered verdicts. A2 and A3 are genuinely
+  informative. The criteria file stays frozen; this paragraph is the disclosure. **Not repeated here:
+  checks/w6_criteria.md contains no constant derived in session 6** (it says so, and lists every constant it uses with its
+  prior source), and §39 labels every w6 criterion PRE-REGISTERED or CONFIRMATORY.
+- **§31's other defects, disclosed (S5-23, S5-25).** (a) §31's "Exact arithmetic (log space)" should read "50-digit";
+  mp.dps = 50 cannot represent ceil(n_T) − 1 at the 10⁹⁷ scale, so w5's n_♯ is effectively n_T (an error of 1 part in
+  10⁹⁷, immaterial). (b) "OVERALL PASS (A1-A5, B1-B3, C1-C3)" is literally true and reads as success, while **A3's PASS
+  records a FAIL of (S2) at the recorded coupling**; the OVERALL line should say so. (c) §31's scope line claims C "tests
+  the step containment and the two-species activity formula"; it has **no coverage of step (6), Lemma SH-att, (S1) or
+  Δ_ρ²**, so **(S1)'s convergence had no numerical coverage in w5 at all** beyond A2's arithmetic.
+- **§29's promised check-(ii) negative control was never run (S5-25, scope defect 1), and is RUN HERE.** §29 l.1462-1464
+  pre-registered "(ii) … with a negative control (activities above the stated threshold, where the bound must fail or the
+  expansion must diverge)". No w5 grid point had 2z² ≥ 1 (the maximum was 0.783 at (p, q, q′) = (0.3, 0.1, 0.9), which I
+  reproduce exactly), and criterion C3 (dropping the finer contribution) is a DIFFERENT control; the substitution was
+  nowhere disclosed. **Check w6 N runs the promised one in the same toy, in exact Fraction arithmetic**: see §39 N, where
+  it PASSES as pre-registered and where I also record what it does and does not show.
+- **No numeric lock was taken this session and none was needed**: every w6 computation is exact integer, exact Fraction or
+  plain-Python Decimal arithmetic, single-threaded, with no numpy and no BLAS (the brief's rule 6; the same ground on
+  which REVIEW_HW_S5's Part 8 re-derivations were run).
+
+## 39. Check w6 (criteria checks/w6_criteria.md 13:01:43 UTC, md5 060c532292f0953042fafd4b2d559760, written BEFORE every
+script; scripts checks/w6_shadow.py 13:02:23, checks/w6_arith.py 13:04:21, checks/w6_gas.py 13:05:08; records
+checks/w6_{shadow,arith,gas}.{out,err})
+Three independent runs, all exact (integer sets / Fraction / Decimal-120), plain Python, single thread, no numpy, no BLAS,
+nice 10, **no numeric lock taken and none needed** (brief rule 6); 36.1 s + 0.01 s + 0.0 s; exit 0 each; empty stderr each;
+no process left. **Every criterion is labelled below as the criteria file requires.** OVERALL: **G PASS, A PASS, N PASS** —
+and, as [RHW5-fix W5-1] demands, the substantive content behind those words is: **G3's PASS records the REFUTATION of the
+reviewer's conjecture**, and **A3's report records that g²_CRC still breaches the recorded 10⁻⁹⁴ ceiling by ×11.16 once
+node A's ring is bought** (it exceeds it by ×1.52 without the ring).
+- **G1 (PRE-REGISTERED) PASS.** 320 samples (S-rand and the adversarially positioned S-adv) at depths 5/10/20/30:
+  Σ^r(X) ⊆ N_t(π^r(X)) has **0 violations at t = 3 and t = 2, and 9076 at t = 1** (first witness at depth 5, r = 2, where
+  |Σ²(X)| = 192 against |N_1(π²X)| = 81). Confirms Lemma SH-2 and its optimality.
+- **G2 (PRE-REGISTERED) PASS.** The three translate identities of Lemma COV hold with **exact set equality** on every
+  sample; the 2-translates-per-coordinate variant of the N_3 identity succeeds on **none**, so 3⁴ is minimal at radius 3
+  and 2⁴ at radius 2.
+- **G3 (PRE-REGISTERED; THE DECISIVE TEST) PASS = the additive form is REFUTED.** For P = {z}, Y = {z + 8e_1} at the
+  all-ones base-3 position: E(M) = 109, 190, 325, 595, 838, 865 at M = 2, 5, 10, 20, 29, 30, i.e. **exactly 27M + 55**;
+  every slope E(M+1) − E(M) = **27**; no constant tail; E(30) = 865 > 258 (the largest per-Y-cube excess any prior run
+  recorded); ‖P∪Y‖_sh/‖P‖_sh = 1.3558 at M = 30, falling to 4/3. On S-adv samples with |Y| > 1 at depth 30 the excess
+  reached 4235 per Y-cube and the ratio reached **5.714**.
+- **G4 (CONFIRMATORY) PASS.** 0 violations of ‖P∪Y‖_sh ≤ 81‖P‖_sh + c_att(8)|Y| (session-5 c_att) on all 320 samples, and
+  0 violations of the session-5 inequality. A reproduction check of Lemma SH-att′, not a pre-registration.
+- **G5: REPORTED AS DEFECTIVE, not as evidence.** The pre-registered quantity max (‖P∪Y‖_sh − c_att|Y|)/‖P‖_sh came out
+  0.0000 because with c_att(8) = 1229313 the subtracted term exceeds the whole norm on every sample; the criterion is
+  identically ≤ 0 and carries no information. The informative looseness figure is G3's 5.714.
+- **G6 (PRE-REGISTERED) PASS.** 0 violations of |sh_r(N_1 X)| ≤ 16|sh_r(X)| (r ≥ 1) and |N_1 X| ≤ 81|X|; the observed
+  maxima are **3.373** per level and **2.783** for the whole r ≥ 1 sum, against PLD §18.4's quoted price 82 and §35.6's
+  proven 17. So Lemma RING is right and still loose by ≈ 5.
+- **A1, A6 (CONFIRMATORY) PASS; A4 (CONFIRMATORY) PASS.** §35.7's table is reproduced to all printed digits, and session
+  5's own four numbers reproduce the review's S5-12 values (4.897894·10⁻⁹⁷ / 4.898021·10⁻⁹⁷ / 4.898012·10⁻⁹⁷ /
+  9.991019·10⁹⁶ against 9.991038·10⁹⁶), with b_n = 20416938755 identical as an integer.
+- **A2 (PRE-REGISTERED) PASS, and the answer was not knowable from the criteria.** At the session-6 constants the S5-12
+  four-way coincidence **survives only if HIST's per-level constants are sharpened too**: spread **1.0001** with
+  10001/10000, spread **3.8415** with HIST's 38417/38416 (where REL-boot and HIST-sum become binding at 2.33375·10⁻⁹⁶ and
+  n_H = 2.09688·10⁹⁶ exceeds n_T by ×3.84). Pre-stated failure mode (W-F3), materialised and reported.
+- **A3 (PRE-REGISTERED) PASS as a report.** Six scenarios: session 5 no ring 4.89789·10⁻⁹⁷ (BELOW 10⁻⁹⁴ by ×204.17);
+  session 5 ring ×17 2.88112·10⁻⁹⁸ (×3470.9); session 5 ring ×82 5.97305·10⁻⁹⁹ (×16741.9); **session 6 no ring
+  1.52362·10⁻⁹⁴ (ABOVE by ×1.52)**; **session 6 ring ×17 8.96376·10⁻⁹⁶ (BELOW by ×11.16)**; session 6 ring ×82
+  1.85835·10⁻⁹⁶ (BELOW by ×53.81).
+- **A5 (PRE-REGISTERED) PASS as a report.** Slack against DX′ (C_Ω = 1) at c_+ = 1: **×3.5855·10⁵⁶** (session 6, ×17
+  ring); g²_CRC ≥ 2.5·10⁻¹⁵² while c_+ ≤ 6.0954·10⁵⁷. Session 5's own slack was ×1.9592·10⁵⁵.
+- **N1, N2 (PRE-REGISTERED) PASS — §29's promised control, finally run.** Exact Fraction enumeration of the w5 Part-C toy
+  at three grid points with 2z² ≥ 1 (2z² = 1.0614, 1.2661, 1.9583) and three with 2z² < 1 (0.7828, 0.9960, 0.9997, the
+  first being w5's own maximum, reproduced). At every point above the threshold the bound 1/(1 − 2z²) is **VACUOUS**
+  (1 − 2z² ≤ 0) while the exact ratio stays finite (1.956, 2.397, 13.370); below the threshold the exact ratio satisfies
+  the bound everywhere. **So the pre-registered alternative "the bound must fail or the expansion must diverge" is
+  realised as the DIVERGENCE OF THE BOUND.**
+  **What this control does NOT show, stated plainly:** the exact ratio does not diverge at 2z² = 1 — at the near-threshold
+  point 2z² = 0.9997 the bound is 3311 while the exact ratio is 2.152. The threshold 2z² < 1 is therefore an artefact of
+  the per-step union bound, not a transition of the model. The control verifies that the stated threshold is where the
+  BOUND stops being informative; it is weak evidence about the gas and no evidence at all about the YM chain.
+- **Scope of w6, stated as §31's should have been.** G is exact geometry of ‖·‖_sh on Z⁴ and tests Lemmas SH-1, SH-2, COV,
+  SH-att′, RING and Proposition SH-neg only. A is arithmetic of §35.7 with node-A constants scanned symbolically. N is a
+  monotone toy in which Harris' inequality replaces node A and the induction. **Nothing in w6 touches Theorem CRC-2T′'s
+  induction, (E2^𝔉′), (S1)'s convergence at the real constants, or the measure of the YM chain.**
+
+## 40. Outcomes against the session-6 pre-stated targets (§34), status changes, and tally
+
+- **W1 (a): MET and superseded.** The reviewer's free lever (6561 → 2401) is verified (Lemma SH-1) and then beaten:
+  **Lemma COV gives 81** (§35.3).
+- **W1 (b): DECIDED, in the negative.** **Proposition SH-neg (PROVEN-HERE)**: the additive form
+  ‖P∪Y‖_sh ≤ ‖P‖_sh + c(ρ)|Y| is **FALSE**, with an explicit one-cube configuration whose excess is exactly 27M + 55 over
+  M levels; the lemma the reviewer named as the missing step ("π^r(Y) ⊂ N_1(π^r(P)) ⇒ Σ^{r+c}(P∪Y) = Σ^{r+c}(P) for a
+  fixed c") is false in the same configuration, where the two projections stay at distance 1 for ever. No multiplicative
+  constant below 4/3 exists; the proven one is 81 and the samples force ≥ 5.714.
+- **W1 (c): MET.** §35.7's table and ledger; **g²_CRC = 1.52362·10⁻⁹⁴/c_+ without node A's ring and 8.96376·10⁻⁹⁶/c_+
+  with it (×311.1 on session 5 either way), n_♯ ≳ 3.21·10⁹⁴ resp. 5.46·10⁹⁵ (÷311.2), c_f ÷81.**
+- **W1 (d): MET.** §35.7 (iii): ≈ 56 orders of slack against DX′; the breach is a bookkeeping event; HANDOFF's
+  lower-g_0 instruction withdrawn (§41 item 1).
+- **W2: MET.** §36: Theorem CRC-2T′ restated as an induction on N(R) = |S_R|, nothing weakened, the gas framing dropped,
+  **§29 V2 (a) recorded NOT DELIVERED**, the off-route consumers named.
+- **W3: MET, and largely by node A.** §37: (E2^𝔉′) with F_< quantified, the level-0 clause replaced and j = 0 recorded
+  OPEN on both sides, seven deltas tabulated (five answered by PLD §18, one in HW's favour, one OPEN), the allowance
+  clause restated as PLD Proposition PATCH's per-cube requirement with the patch form derived by monotonicity, the TF-1
+  question recorded with both positions, and §24.3's doubt narrowed per S5-17.
+- **W4: MET.** §38's eleven errata and §38.1's process debt; §29's never-run control run in §39 N.
+- **Check w6: G PASS, A PASS, N PASS** (§39), with G3's PASS being a refutation and A3's a persisting breach.
+
+**Session-6 tally (unreviewed).** Counted: **[HW-12]** the sharpened shadow geometry and the refutation of the additive
+form — Lemmas SH-1, SH-2, COV, SH-att′, COL′, RING (all PROVEN-HERE, elementary) together with **Proposition SH-neg**
+(PROVEN-HERE), which is what makes the package a result rather than a bookkeeping improvement. Total counted, all
+sessions: 9 + 1 = **10**. [HW-11] is **re-labelled** (Theorem CRC-2T → CRC-2T′) and **not re-counted**. Uncounted:
+Corollary H-geo′ (a re-derivation of HIST's own lemma), the verification of PLD §18.12 request 1 (§35.6 (c)), and the
+erratum table.
+**Status changes.** Lemma SH-att → superseded by **Lemma SH-att′** (6561 → 81; c_att(8) 1229313 → 320001). HIST H-geo (i),
+(iii), (iv) → **sharpened and re-derived here** as Corollary H-geo′ (N_3 → N_2; 2401/38416/38417 → 625/10000/10001);
+**HIST.md itself is NOT edited** and the request is §41 item 2. The additive form of SH-att: the reviewer's open conjecture
+→ **REFUTED**. Theorem CRC-2T step (4): R″ → R‴, buying node A's extra R-free ring at **×17** on c_U (PLD's own price was
+×82; Lemma RING). Constants: **g²_CRC 4.898·10⁻⁹⁷/c_+ → 8.964·10⁻⁹⁶/c_+** (with ring) **or 1.524·10⁻⁹⁴/c_+** (without),
+**n_♯ 9.99·10⁹⁶ → 5.46·10⁹⁵ or 3.21·10⁹⁴**, **c_f 531441c_+ → 6561c_+**. §29 V2 (a): MET → **NOT DELIVERED**.
+HANDOFF's "lower g_0, recheck the SF thresholds": **withdrawn**. REVIEW_HW_S5 S5-19 (TF-1 reinstates a node-A law
+mismatch): **not propagated**, node A contradicting it; flagged for the lead. **H6′ = (E2^𝔉′) remains OPEN, and j = 0
+remains OPEN on both sides — that, and not any constant, is the residual of the HW route.**
+No literature result is load-bearing in §35-§38 beyond CE-geo′ (g1′) (PROVEN-HERE in PROOF L5 [S11]) and Harris'
+inequality inside the toy control (not in any proof). No edits outside HW.md, HW_LOG.md, checks/w6*.
+
+## 41. FOR OTHER FILES (not edited) — [RHW5-fix SC-1]
+
+Nothing below is applied anywhere. Session 6 wrote only HW.md (appended), HW_LOG.md (appended) and checks/w6_*. No git
+command of any kind was run; no commit, push or PR; no axiom edited; no other lane's file touched. **This section has been
+missing since session 4 although §30.3, §30.7 and §32 raised demands on PLD and on RLARGE — that was a breach of the
+brief's rule 8, and this is the repair.**
+
+**1. To the lead (HANDOFF.md).**
+- l.57-59 reads "The smallness condition tightens. The binding condition is g_K² < 4.9e-97/(c_A + c_U), and it fails the
+  recorded ceiling of 1e-94. — g_0 therefore has to be lowered. — Recheck the downstream constants, including the SF
+  thresholds." **Please withdraw the two instructions.** The honest replacement: *"This route's ceiling and threshold move
+  by g-independent constants only. After session 6 the condition is g_K² < 8.96·10⁻⁹⁶/c_+ (c_+ = c_A + 17c_U), which is
+  ×11.2 below the recorded (RLF-δ) ceiling 10⁻⁹⁴ but ×3.6·10⁵⁶ ABOVE the ceiling that actually binds the programme,
+  g_0² ≈ 2.5·10⁻¹⁵²/C_Ω (REVIEW_SF_S7 l.335, RLARGE l.618, REVIEW_RLARGE_V3 l.61). Nothing downstream needs to move and
+  the SF thresholds do not need rechecking; the open risk is that c_A is uncertified (PLD l.1902)."*
+- The disagreement to adjudicate: **REVIEW_HW_S5 S5-19 vs PLD §18.6.2 / §18.12 item 5** on whether §30.5's finer-first
+  order reinstates a node-A law mismatch. §37 records both and sides with node A; nothing in §35-§38 depends on it.
+- For the next review's brief: the single live wall in this lane is **one node-A statement** — the small-field moment under
+  the exactly-converted law with a per-cube constant and no shadow sum, plus its level-0 case. Everything else in §30-§38
+  is either proven or arithmetic.
+
+**2. To HIST.md (owner of Lemma H-geo).** §35.2 proves, for an ARBITRARY set X of level-j cubes and every m ≥ 1,
+**Σ^m(X) ⊆ N_2(π^m(X))** — radius 2, not H-geo (i)'s radius 3 — because π(N_2(B)) ⊆ N_1(π(B)) for L ≥ 3 makes radius 2 a
+fixed point of the collar-plus-projection recursion. The proof is three lines and strictly sharpens; nothing weakens.
+Consequences, if adopted: **H-geo (iii)** |sh_{j+m}(𝒟)| ≤ **625**(16 + 32(n−1)L^{−m}) in place of 2401(…); **H-geo (iv)**
+Σ_{m=0}^{M}|sh_{j+m}(𝒟)| ≤ **10001n + 10000M** in place of 38417n + 38416M; hence **c_B := 10000B_0/log L** in Theorem
+HIST-sum (HIST l.550), n_H and γ_H in proportion, and HIST l.551's condition
+6400C_ℓe^{**10001**B_0}e^{−a/g_K²} ≤ ½. **Why it matters to this lane:** with HIST's 38417/38416 left in place, REL-boot's
+r ≤ ½ and HIST-sum's own condition become the binding inequalities at 2.33·10⁻⁹⁶/c_+ instead of HW's 8.96·10⁻⁹⁶/c_+, i.e.
+the ×3.84 that Corollary H-geo′ buys is lost at the lane boundary (check w6 A2, spread 3.8415 vs 1.0001). This is the
+pre-stated failure mode (W-F3) and it has materialised. The optimality note is also worth recording: radius 1 does NOT
+work (a single cube's shadow is a 4⁴-block, not a 3⁴-block), so 2 is the end of the line.
+**Also for HIST's record:** §35.4's Proposition SH-neg shows that the per-level shadow of an attached cluster does **not**
+merge into its anchor's: at the all-ones base-3 position two cubes at distance 8 have shadows that differ by 27 cubes at
+every level, for ever. HIST §7.2's Reading ("its size settles at ≤ 2401·16 cubes per level") is unaffected, but any future
+claim that attached shadows merge should cite this counterexample.
+
+**3. To RLARGE.md (row 10g / critical-path item 1).** REVIEW_HW_S5 grepped RLARGE.md and found **no occurrence of "CRC" or
+"(E2^𝔉)" at all**, while row 10g / critical-path item 1 still reads as "(CRC-1), a two-species cluster expansion". Three
+corrections:
+- **(CRC-1) is dissolved as a wall**: Theorem CRC-2T′ closes the same-level regress by inducting on the number of
+  constrained pairs. It should be **struck from the critical path** — but note that (CRC) itself is NOT discharged: it is
+  CONDITIONAL on (E2^𝔉′), so no file may write "(CRC) PROVEN" or treat H9 as closed.
+- **The critical-path item should be re-labelled** "**(E2^𝔉′)**: good-buffer screening under the past law of every
+  column-relaxed pattern, for the one weight h^{R,1}_j, with node A's allowance asked as a **per-cube constant with no
+  shadow sum** (the union-form patch allowance then following by monotonicity), for levels j ≥ 1 — level 0 OPEN." It is
+  **one node-A statement, not a cluster-expansion project**.
+- **M-5 (PLD §18.9, agreed here).** Row 10b still asks for every μ ∈ ℛ_𝔥^↑ ∪ {μ_{R(𝔥)}} and every S ⊂ Λ_k. **Neither
+  §24.3 nor §30.3 nor §37 asks that**, and neither PLD §17 nor §18 delivers it; the row should be restated to the
+  (E2^𝔉′) form. Also: the coupling-ceiling rows that quote 4.9·10⁻⁹⁷ or 10⁻⁹⁴ for this route should quote §35.7's table.
+
+**4. To PLD.md / node A (lane E) — the seven mismatches answered by number, and three deliverables from this side.**
+- **M-1 (allowance; binding) — ACCEPTED AND IMPLEMENTED.** (E2^𝔉′) now asks the allowance as Proposition PATCH (v)'s
+  **(P0) or (P1)**: *the moment carries at most a per-cube constant and no shadow sum*. HW derives the patch form itself by
+  monotonicity (PATCH (i)); it is no longer a request. The slice is agreed to be **incomparable** and is not asked for by
+  anyone. If §18.7 delivers **c_A = 0**, HW's constants improve by (c_A + 17c_U)/(17c_U) — please keep that claim visible,
+  it is now the largest remaining lever on HW's ceiling.
+- **M-2 (set class) — ACCEPTED, and the ring is BOUGHT, at a cheaper price than §18.4's.** §35.6 buys the extra R-free
+  ring in step (4) (R‴ := R′^{−(Col(Y) ∪ Col(N_1(col 𝒟 ∪ Y)))}) and walks every subsequent step of the proof: **nothing
+  else in Theorem CRC-2T reads R″ specifically** (§18.12 request 1's confirmation, now given — Y is fixed relative to R′
+  before the extra relaxation; Buf^{R‴}_ρ ⊆ Buf^{R″}_ρ so E_Y only weakens; step (5)'s peel only gains). **And the price
+  is ×17, not ×82: Lemma RING** (§35.6 (b)) proves |sh_r(N_1 X)| ≤ **2^d** |sh_r(X)| = 16|sh_r(X)| for r ≥ 1, because
+  sh_r(X) = N_1(π(sh_{r−1}(X))) is **already N_1-thickened**, so N_1(sh_r(X)) = N_2(π(sh_{r−1}X)) is a union of 2⁴
+  translates of sh_r(X) (Lemma COV at radius 2) rather than 3⁴. §18.4's 81 is |N_1(W)| ≤ 3^d|W| applied per level, which
+  does not use that. Only the OPEN column enters #_{R′}, so the m = 0 term never appears and the clean statement is
+  **c_+ = c_A + 17c_U**. Check w6 G6: 0 violations, observed maxima 3.373 per level and 2.783 in the r ≥ 1 sum — so even
+  17 is loose by ≈ 5. Please re-read §18.4's "×82" as "×17" when quoting HW's constants.
+- **M-3 (levels) — AGREED, and HW's own clause is FIXED.** §37 replaces l.1530's mis-levelled level-0 clause by (0a)
+  Γ at level 0 with the Wilson window and **Y = ∅**, or (0b) Γ at level 1 with Y at level 0, and records that **node A
+  delivers neither** and that j = 0 is OPEN on both sides. HW agrees this is the largest residual after the moment itself,
+  because Lemma TEL-f needs every level: **the interface is not delivered**, and §32's H6′ row failed to flag it.
+- **M-4 (weight class) — AGREED, and it cuts in HW's favour.** HW asks only for the one weight h^{R,1}_j (times the buffer
+  indicator), i.e. PLD §18.7.0's 𝔏^buf_k. The "any w" / (E1) sup form is **not to be proven**: HW's own E1-1 expects it
+  false, and §37 does not ask for it. Please do not spend labour there.
+- **M-5 — see item 3 above (it is RLARGE's row, not HW's).**
+- **M-6 (form) — AGREED.** (E2^𝔉′) is ONE joint expectation (the Γ-moment and the Y-probability under the same ν^w), which
+  is what CAP-dec consumes; Cor. E2-RED's F-conditioned form is the right shape.
+- **M-7 (F_<) — DONE.** (E2^𝔉′) now reads "for **every** bounded measurable F_< ≥ 0 that is a function of U_0, …,
+  U_{k_0−1}". Free on both sides, as §18.6.2 Delta 3 says.
+- **Three things from this side that node A may use.** (i) **Lemma RING** above (×17 for the ring). (ii) **Lemma COV** (a
+  radius-s neighbourhood is a union of translates of the radius-1 one: 2^d at s = 2, 3^d at s = 3, 4) — it is what reduced
+  HW's own 6561 to 81 and may do the same wherever PLD multiplies by |N_s|/1 rather than covering. (iii) **Corollary
+  H-geo′** (per-level shadow 625/10000/10001), which shortens PLD's own quoted per-cube depth term from
+  81 + 256(K − j − 2) only in its 2401-derived parts; PLD §18.6.1 (iii)'s 81 + 256(K−j−2) is the single-cube value and is
+  unaffected, and PLD §18.6.1 (iii)'s quotation of HW's lemma should be updated to **‖P ∪ Y‖_sh ≤ 81‖P‖_sh + 320001|Y|**.
+- **One warning for node A's §18.11 reading of HW's constants.** PLD §18.6.1 (v) and check p6 B2 quote b_n, b_D and
+  g²_CRC in their session-5 form (531441·38418c_+ + 38417c_U, 4.8979·10⁻⁹⁷). Those are superseded by §35.7; the shape is
+  unchanged, so "÷82" becomes "÷17" and the base value becomes 1.52362·10⁻⁹⁴/c_+.
+
+**5. To whoever writes REVIEW_HW_S6.** Three places to attack first: (i) **Lemma COV's use in Lemma SH-att′ case (a)** —
+it is where the factor 81 comes from, and the step that must be checked is that the WHOLE of Σ^r(P) together with ALL
+case-(a) trees lies in the one set N_3(π^r(P)) (no per-tree multiplicity); (ii) **Proposition SH-neg's ζ_r ≡ 1 mod 3
+claim**, which holds only for r ≤ M − 1 and which the whole refutation rests on; (iii) **§35.6 (c)'s walk of steps (4)-(7)
+with R‴**, which is a proof-reading claim about text this session may not edit, and so is exactly the kind of claim that
+should be re-walked by someone else. The arithmetic of §35.7 is reproduced in checks/w6_arith.py and is cheap to redo
+independently in any exact-decimal toolchain.

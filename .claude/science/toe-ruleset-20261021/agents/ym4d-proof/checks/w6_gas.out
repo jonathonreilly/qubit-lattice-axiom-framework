@@ -1,0 +1,13 @@
+N: the never-run negative control: the two-species bound rho <= 1/(1 - 2z^2) at activities above the threshold
+   z := q + (1 - (1-p)^3)(q' - q) ; exact enumeration of the 2^12 * 3^4 configurations in Fraction arithmetic
+   p=0.3   q=0.5    q'=0.95   : z=0.795650  2z^2=1.266118  exact ratio=2.397230  bound=VACUOUS (1 - 2z^2 = -0.266118 <= 0)
+   p=0.9   q=0.5    q'=0.99   : z=0.989510  2z^2=1.958260  exact ratio=13.370399  bound=VACUOUS (1 - 2z^2 = -0.958260 <= 0)
+   p=0.3   q=0.4    q'=0.9    : z=0.728500  2z^2=1.061424  exact ratio=1.956407  bound=VACUOUS (1 - 2z^2 = -0.061424 <= 0)
+   p=0.1   q=0.6    q'=0.99   : z=0.705690  2z^2=0.995997  exact ratio=2.084458  bound=249.797177
+   p=0.02  q=0.707  q'=0.707  : z=0.707000  2z^2=0.999698  exact ratio=2.152374  bound=3311.258278
+   p=0.3   q=0.1    q'=0.9    : z=0.625600  2z^2=0.782751  exact ratio=1.493573  bound=4.603007
+   N1: 3 points with 2z^2 >= 1; at every one the bound is VACUOUS (1 - 2z^2 <= 0) while the exact ratio is finite (max 13.370399): PASS
+   N2: 3 points with 2z^2 < 1 (nearest to the threshold 2z^2 = 0.999698, ratio 2.152374, bound 3311.258278); the exact ratio stays bounded and satisfies the bound: PASS
+RESULTS: N1:PASS N2:PASS
+OVERALL N PASS
+secs 0.0

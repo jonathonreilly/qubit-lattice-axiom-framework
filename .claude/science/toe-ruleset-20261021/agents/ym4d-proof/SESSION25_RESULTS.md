@@ -1349,3 +1349,36 @@ residual).
   on a non-live branch (and HW l.826 repeats it).
 **Follow-on launched on Opus 5.5 (NODEA55.md):** repair the five statements with F_< restricted, handle j = k_0
 and level 0, and attack the weighted-law decoupling.
+
+**C5 — the constants chain — `REVIEW55_CONST.md`** (claude-opus-5-5, max). 64 claims: **31 CONFIRMED,
+6 NOT-VERIFIED, 27 REFUTED.** Main finding (neither Codex review caught it): **every C_T figure in the chain is
+computed on a radius schedule Stage 1 does not support** (CONST_T's F = 175.8 starts Stage 2 at R − 4, but
+Stage 1 only controls V_c inside B_{3R/4−3}); with EPSSTAR's own radii F = 672.03, and the telescope's exact
+exponent replaces the max of F by the asymptote 16/α². Corrected C_T(12): 2.02·10¹³ (file's bound — fails) /
+7.70·10¹² (exact exponent) / 2.5-3.2·10¹² (re-allocated Stage 1). **So the ε_1 targets 9.38·10⁻⁴⁵ and
+3.8·10⁻⁴³ are NOT safe as written (fail by ×1.54 and ×2.11 under EPSSTAR's own radii): land only the
+parametric form of ε_1^cut, after stating the Stage-1/Stage-2 radius split.** Survives: the q-lever
+(24.089-24.092 decades in every construction), q = 8 dead, Theorem ES-1, ε_* = 10⁻⁴ inadmissible, option A
+dead (by a rigorous bound, not "0.080 decades"), (MS-Sob) on the path while ε_1 = 6.7·10⁻⁴⁰ is in force.
+These are constants, not truth: the constants still exist and are uniform; Step 5's DAG is where they belong.
+
+---
+
+## §SWEEP55 TOTAL — the Opus 5.5 re-review of sessions 24-25 is complete
+
+| batch | claims | CONFIRMED | NOT-VERIFIED | REFUTED |
+|---|---|---|---|---|
+| C1 lead consolidation layer | 157 | 83 | 4 | 70 (45 %) |
+| C2 BFT lane B s9-11 | 48 | 21 | 9 | 18 (38 %) |
+| C3 HW / PLD | 59 | 29 | 7 | 23 (39 %) |
+| C4 NORMS / N-Q chain | 51 | 28 | 11 | 12 (24 %) |
+| C5 constants chain | 64 | 31 | 6 | 27 (42 %) |
+| C6 a_RS / KN-step | 56 | 33 | 2 | 21 (38 %) |
+| C7 tent / face-b / CO-fun | 77 | 44 | 11 | 22 (29 %) |
+| C8 N-loc / T-UNIF / exponents | 59 | 32 | 5 | 22 (37 %) |
+| **TOTAL** | **571** | **301 (53 %)** | **55** | **215 (37.7 %)** |
+
+**The owner's call to re-review everything was right: 38 % of what sessions 24-25 asserted is refuted.** Not
+every refutation is a loss — several reversed wrong *refutations* (CO-fun on the composite class, GZ-FALSE,
+the per-level no-go), which re-opens routes. Survivors with the most weight: (T-UNIF) (pending Codex
+re-check), NQ-1, N1-15 (conditional), a_RS-not-consumed, the ring is free, the smallness alarm is false.

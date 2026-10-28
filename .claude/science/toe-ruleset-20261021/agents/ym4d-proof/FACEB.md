@@ -754,3 +754,38 @@ steps that would make it available). It should be promoted out of a parenthetica
 **To PROOF.md's owner.** Nothing in this file moves the tally. If face (b) is carried in the ledger it
 should be carried **with its companion**: *"one of two `L^{2k−3}` defects of the `Γ_E`-response off the
 critical set, both linear in `D(S)`; face (b) is necessary but not sufficient."*
+
+---
+
+## 11. Discipline, and one disclosure about this file's own edits
+
+**Order and times.** §1 PRE-STATED (statements only, no constant from this session), **first edit of this
+file, 2026-10-28T21:17:09Z** → `checks/fb1_criteria.md` **21:20:47Z**, with pre-registered PASS/FAIL,
+designed-FAIL control and scope limitations, and **no constant derived in this session** →
+`checks/fb1_bianchi.py` → `checks/fb1_out.txt` (ALL PASS; `fb1_err.txt` empty) → §2 onwards. Exact
+integer and exact `Decimal`/`Fraction` arithmetic in plain python; **no numpy, no BLAS, no machine-wide
+numeric lock taken**; runtime under 2 s.
+
+**No FAIL to report**, and the **designed-FAIL control A6 FIRED** on all three clauses it targets (A1:
+6 nonzero; A2: 25/25; A3: 7/10 under a single flipped incidence sign). One probe is labelled **post-hoc**
+(§7.3, the three-fraction consistency arithmetic, run after §5.5 and not pre-registered).
+
+**Disclosure about edits to this file.** After §10 was written I made one **citation-correction pass**
+over §2-§10, replacing 39 `file:line` references with the lines I had re-verified by `grep`/`sed` against
+the live files. **No statement, status, number or conclusion was changed** — only line numbers, and in
+one place the wording of a citation that attributed "the tent attains Lemma TENT-TV" to TENTQ when the
+sentence I meant is in TGAUGE_PRICE. This is recorded rather than left silent because this lane's defect
+1 is precisely mis-cited symbols, and an uncorrected `file:line` is worse than none.
+
+**What a hostile reviewer should attack first, in this order.**
+1. **§3.3 / Proposition FB-ONE-LEG** — the claim that face (b) is not the binding item. It is **ARGUED**
+   and rests on BFT_A §38.6/§38.8, which are ARGUED there, and I did not re-derive `σ ≈ 0.003`. If the
+   `σ`-spike term is not of size `L^{2k−3}` in the `Γ_E` response, my central finding weakens to a
+   remark.
+2. **§6.2 assumptions (X1) and (X2)** — the self-map reading, and the identification of `η`. Neither is
+   written in any file I read. If (X2) is false, the decade figures are in the wrong currency.
+3. **§4.3 / Proposition FB-BOOT** — whether `Σ_q|G_e(q)| ≤ ½` is the right form of the bootstrap at the
+   point of use, and whether some other statement in §38.7 already supplies the sign I say is missing.
+4. **§5.5 / Proposition FB-LOCAL** — the `93.46 %` localisation. It is read off **quoted** rationals
+   (`φ_1 = −1/54`, `φ_2 = −17/13122`), which I checked for mutual consistency but did **not** rebuild
+   from the funnel.

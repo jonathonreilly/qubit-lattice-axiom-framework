@@ -413,3 +413,67 @@ SYMBOLS.md therefore carries the exact old string.
 
 **Biggest obstruction in scope: C_1 and κ** — ~3900 lines and ≥18 objects, every one file-local today, no
 single session can rename them, and they are the most likely home of the next collision defect.
+
+---
+
+## T55-G — `FACEB.md` (63.6 KB) + `checks/fb1_*`. **Face (b) is not the binding item.**
+
+**Identified.** Face (b) is **(TENT-osc)** (TENTQ l.381, l.544): n²·osc_𝔅(Φ_k(Y^p_{*,0})) ≤ C_osc, uniformly
+in k, T, p, 𝔅, bounding Proposition COF-res's residue 𝒯_p(S) = n²Σ_X D(S)(c_X)Φ_k(Y^p_{*,0})(c_X)
+(BFT_B l.4114). **Defect-1 pin: n = L^k** — not n_i, not T — **and the square sits on neither leg**: it is
+the explicit prefactor of f_0 = n²dΔ_0^{-1}J_0 (BFT_B l.4130), the **fine→coarse curvature unit
+conversion**. What must decay is Φ_k in *own* units, which YSUP l.159-168 proves is dimensionless and
+k-free. **So face (b) is the demand that a k-free dimensionless rational be ≤ L^{−2k}.**
+
+**What the consumer needs: O(1), k-uniformly, and it can absorb nothing** (BFT_A l.2809 ‖f_0‖_∞ ≤ C_SRη²,
+l.2812; BFT_B l.3974). Sharper than "the constant must be k-uniform": **both sides are homogeneous of
+degree 2 in η, so lowering η buys exactly zero against this defect** — unlike every other margin in the
+lane.
+
+**Sharp or artefact — neither answer the brief expected.** (i) **No estimate to sharpen (PROVEN):** the
+chain is three identities and one inequality, the inequality is attained in both directions (TENT-TV
+attained, TG-TV the matching lower bound), and at most 2d = 8 separates bound from object. **ARTEFACT is
+unreachable through the estimator.** (ii) **Unconditional form supplied — Proposition FB-CLASS, PROVEN:**
+the witness u = ⅛d*δ_p lies in the admissible class, so sup_{v∈𝒴} n²osc_𝔅(Φ_k(v)) ≥ 2.4768e-3·n², i.e.
+**no proof of (TENT-osc) can run through the profile bound and co-closedness alone** — YSUP's verdict with
+the conditionality removed, and strictly weaker than "false". (iii) **But sharpness for the actual
+response is OPEN — Proposition FB-BOOT, PROVEN and elementary:** from §38.7's
+Y^p ≡ g^♮ + Z″ + Σ_q G_e(q)Y^q with Σ_q|G_e(q)| ≤ ½ (BFT_A l.3568), the same two lines give M ≤ 2(A+B)
+**and no lower bound at all** — the ½ admits cancellation of as much as A. **What is missing is a SIGN
+STATEMENT on G_e, not an estimate, and the funnel coefficients are already sign-coherent.**
+
+**Five escapes tried, none representative-theoretic, all fail — four by the same identity d∘d = 0.**
+(1) Bianchi / one-leg differentiation is **already fully applied** on the source leg (it *is* TQ-INT,
+optimal by TG-TV); on the response leg it removes only the **exact** part, and the n²-attaining witness is
+**purely co-exact** (verified exactly: δu = 0, du ≠ 0, ⟨dμ,u⟩ = 0) — it removes nothing that is there.
+(2) Divergence-form rewriting is done on the source leg; on the response leg it **is** the composite
+gauge, closed by TG-PRICE at ρ = 1. (3) The twisted Koszul complex: h_i **is** a Koszul homotopy and the
+twist is the identity at the trivial background where the n² is measured — it belongs to (N-bg).
+(4) Summation by parts: settled both ways, **≤ 0.90 decades left against 173 needed**. (5) **d = 4
+marginality is real and correctly accounted** (log-free because d − 1 − 3 = 0), **but 93.46 % of the
+obstruction — φ_1/Φ_k = 243/260 exactly — sits on one 3⁴ block, where no asymptotics operate.** Hence
+**Proposition FB-LOCAL: the n² is in the scheme's definition (h_0), not in the analysis.**
+
+**Price — FB-F5 occurs: there is no exchange rate.** The requirement is k-uniformity, the deficit is
+exponential in k, and the inequality is degree-2 homogeneous. Through the self-map reading the cost is
+P(k) = (2k−3)log₁₀3 decades of η: 8.11 at k = 10, 38.65 at 42, **173.58 at k = 183.4**, 337.90 at 355.6.
+Break-even against DX′ (151.610 decades) at **k\* = 160.380**; at the lane's quoted 183.4 that is
+**+21.97 decades beyond DX′**. **Assumption X2 — the identification of BFT's η with what DX′/ε_1 bound —
+is stated nowhere the worker could find, and is flagged rather than adopted.**
+
+**AGAINST THE LEAD AND THE LANE (D6): face (b) is not the item to close.** BFT_A l.3597-3601 records that
+the Γ_E response carries n²Σ_Z D(R)(Z)σ(Z), reaching **L^{2k−3}** at the level-(k−1) roots — *"plus the
+tent term"*. **Two different objects, both L^{2k−3}, and D1 has already accepted the first as real.**
+Removing face (b)'s n² leaves (NC-Γ) for Γ_E failing by L^{2k−3} anyway. But both are n²⟨D(S), ·⟩
+(Proposition FB-ONE-LEG, ARGUED): **one leg, one mechanism**, and Lemma CD prices it exactly as
+D(S) = −K′^T_x∇(𝔉_k∘exp).
+
+**Biggest obstruction in scope — not the n².** It is the **circularity in Corollary FB-NBHD**: the only
+thing that can pay L^{2k} is the smallness of ∇(𝔉_k∘exp) along the contraction; the contraction needs
+(NC-Γ) to take the steps that produce that smallness; and (NC-Γ) needs the smallness. **That is exactly
+BFT_A l.3613's parenthetical, marked "Not attempted", and it should be promoted out of a parenthetical.**
+Below it, much cheaper: **the sign statement on G_e** (now T55-O).
+
+Checks fb1 A1-A7 **all PASS, no FAIL**, designed-FAIL control A6 **fired** on all three clauses it targets.
+One erratum flagged to YSUP that changes no number: YSUP l.249 mixes normalisations (φ_1 = −1/54 and
+φ_2 = −17/13122 un-normalised against ψ_u = −65/26244 ⅛-normalised, giving φ_1/ψ_u = 7.477 > 1).

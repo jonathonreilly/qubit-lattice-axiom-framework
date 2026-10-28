@@ -1116,3 +1116,60 @@ session's whole ordering is wrong**; T55-A is spec'd to try to break it first.
 The lead claims **no new mathematics** this session. Every PROVEN this session is a worker's, named
 with its file and section. The master tally moves only on a worker's proof, and a reversal of a
 banked item is recorded against whoever banked it, the lead included.
+
+---
+
+## §55. Session 26 — owner decision and pre-stated targets (written 2026-10-28T22:25:45Z, BEFORE any Step 1/4/5 work)
+
+**Lead: claude-opus-5-5.** Sessions 24-25 are PROVISIONAL (SESSION25_RESULTS.md §PROVENANCE) pending the
+Opus 5.5 + Codex gpt-6-astra/max review sweep now running.
+
+**Owner decision (verbatim choice: "Fixed torus").** The target is **T_fin^OS** (PLAN_S26.md §6). T_OS on
+R^4 is a labelled OPEN problem. The plan is PLAN_S26.md §4.
+
+**Worker floor.** Claude Opus 5.5 at xhigh or max, set explicitly, model ID printed as line one and checked
+by the lead; Codex gpt-6-astra at max, banner checked. Nothing banked as PROVEN without a cross-family check.
+
+### Pre-stated targets
+
+- **T56-1 (Step 1) — Balaban, read directly.** BALABAN_EXTRACT.md: the exact statements (norms, hypotheses,
+  constants, what is uniform in k) of (a) the k-fold-constrained background field — existence, regularity,
+  analyticity (CMP 102); (b) the background-field propagator bounds and their random-walk expansions
+  (CMP 95, 96, 99); (c) how the induction keeps constants from compounding across steps. Read through
+  legitimate open copies only; no PDF and no extracted full text enters the repository; brief quotations
+  with page references only.
+- **T56-4 (Step 4) — the level-count factor.** Determine from source text (not from session-24/25 summaries)
+  what the ≈ 25(k−1) factor multiplies, at what field scale, and whether it is absorbed — by a
+  level-dependent small-field threshold, by exponential level decay, or by asymptotic-freedom running.
+- **T56-5 (Step 5) — the smallness DAG.** Every threshold and constant on the live route as a node, every
+  constraint "A ≤ f(B, …)" as an edge, machine-checked for (i) cycles and (ii) dependence on K or on the
+  coarse side T. Retires the decade ledgers.
+
+### Named failure modes (pre-stated)
+
+- **BAL-F1** a paper cannot be read legitimately for free → name it and stop; never Sci-Hub/LibGen, pay
+  nothing. **BAL-F2** Balaban's k-uniformity depends on the hard constraint in a way the soft scheme cannot
+  reproduce → evidence for Step 3 (decision 4), not a failure of Step 1. **BAL-F3** a load-bearing PROOF.md
+  paraphrase of Balaban is wrong → list each.
+- **KF-F1** the factor is not in the source text (an artefact of session-24/25 derivations) → say so and
+  where it came from. **KF-F2** it multiplies a quantity of fixed size (a threshold like ε_1, not shrinking
+  with k) → a genuine non-uniformity; name the minimal repair. **KF-F3** it multiplies a quantity ∝ g_k² →
+  absorbed by AF only marginally (constant ∝ 1/log L): the d = 4 marginality again, to be named as such.
+- **DAG-F1** a cycle exists → name every node on it. **DAG-F2** a node grows with K or T → name it.
+  **DAG-F3** a node cannot be placed because its symbol names more than one object → list, do not guess.
+
+### Anti-inflation clause (unchanged)
+The lead proves no mathematics. Every PROVEN is a worker's, named with its file, and banked only after a
+cross-family check.
+
+### §55 CORRECTION (2026-10-28T22:27:10Z) — the owner's guidance is the FULL proof
+The "Owner decision (verbatim choice: Fixed torus)" above is **withdrawn by the owner**: *"i choose fixed torus
+only because you seem to think thats the best direction here, obtain consensus. my guidence here is for you to
+get the full proof!"* **The target is T_OS on R^4.** T_fin^OS is milestone 1, not the target. T56-1, T56-4 and
+T56-5 stand unchanged (every route needs them). Added:
+- **T56-R4 — OS1 on R^4.** Find a route to E(4) invariance of an infinite-volume limit point that does not
+  assume uniqueness or a mass gap, or establish precisely which IR input any route must supply.
+  Failure modes: **R4-F1** every candidate route reduces to uniqueness of the infinite-volume state — then
+  say exactly which estimate and whether it is weaker than a gap; **R4-F2** a route exists but loses RP or
+  gauge invariance — name what it loses and whether it can be restored.
+- **T56-C — consensus on the route.** Panellists P1-P5 (PLAN_S26.md §7), independent, both model families.

@@ -684,6 +684,8 @@ the whole file:
 **Goal (owner).** Derive, independently, the existence of 4D pure SU(N) Yang-Mills as a continuum limit of lattice gauge
 theory satisfying the Osterwalder-Schrader (OS) axioms. No mass gap is claimed.
 
+**[OWNER GUIDANCE, 2026-10-28T22:27:10Z; recorded by the lead, claude-opus-5-5]** **The target is the FULL proof: T_OS on R^4** (below). An earlier note here recorded a retarget to the fixed torus; the owner has withdrawn it — the choice was deference to the lead's recommendation, not a decision to aim lower (*"my guidance here is for you to get the full proof! … obtain consensus"*). **T_fin on the torus is a milestone on the way to T_OS, not a replacement for it**, and OS1 on R^4 (the blocker recorded in item 3 of §0 and at L9b) is ON the critical path with its own attack. The route is being settled by an independent multi-model consensus panel (PLAN_S26.md §7). The original text below is unchanged.
+
 Probe document only. No PR, no CL edit, no axiom edit. The lemma DAG follows
 `../openai-balaban-review/review.md` section 6 (L1-L10, F1-F4, C1-C4), refined below.
 

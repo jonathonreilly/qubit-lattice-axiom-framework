@@ -6,6 +6,7 @@
 has now either landed or been withdrawn; read this file instead of it.*
 
 ## Goal
+- **OWNER GUIDANCE 2026-10-28: the target is the FULL proof, T_OS on R^4.** T_fin on the torus is a milestone, not a replacement; OS1 on R^4 is on the critical path with its own attack. An earlier retarget-to-torus note was withdrawn by the owner. Route under independent consensus review (PLAN_S26.md §7). **The critical path below predates this and the Opus 5.5 review; PLAN_S26.md supersedes it.**
 - Constructive UV stability (layer 1) and existence (layer 2: OS axioms, non-triviality) of 4D lattice
   SU(N) Yang-Mills.
 - Method: a soft gauge-covariant RG with S4′ averaging ("decision 4": soft, not Balaban's hard

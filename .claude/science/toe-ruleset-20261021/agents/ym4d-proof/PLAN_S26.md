@@ -153,3 +153,56 @@ of YM4 with an infrared cutoff", Commun. Math. Phys. 155 (1993) — a finite-vol
 - **Stopped:** decade/margin ledgers, q-tuning, rename campaigns beyond a single canonical symbol table,
   new constants work of any kind until Step 5's DAG says a constant is on a cycle or grows with K or T.
 - Ledger entries become short: verdict, file, one sentence, pointer. The worker file is the record.
+
+---
+
+## 6. Owner decision: "Fixed torus" (2026-10-28)
+
+**T_fin^OS is the target.** Precisely: PROOF.md §0's T_fin — on the torus T^4_M (side L^M in resolution-0
+units), the lattice measures along a tuned asymptotically free sequence of bare couplings **converge** as
+L^{-K} → 0 to a limit state on a gauge-invariant observable algebra, non-trivial, reflection positive, with
+the torus symmetries — **plus** consistency across resolutions **plus** OS0-type regularity for a named
+class of smeared or gradient-flowed local observables (the class is fixed at Step 7).
+
+**One thing nobody may do silently.** T_fin says *converge* — the whole sequence. Subsequential limits are
+free by compactness (EXISTENCE §0 (a)); convergence of the whole sequence needs uniqueness of the
+finite-volume limit (the lane's estimate E7). If only subsequential limits turn out to be reachable, that is
+a weaker theorem, **T_fin^sub**, and it must be labelled as such — not quietly substituted.
+
+**What this changes, immediately.**
+- R^4 / OS1: labelled OPEN, no default worker time.
+- Volume-uniformity is still needed: inside one RG run on a fixed physical torus the intermediate coarse
+  sides are L^{M+K-k}, unbounded as K → ∞. So T-uniformity work (TUNIF) stays relevant, pending its review.
+- Infinite-volume items (EXISTENCE §0 (d), L8d) leave the critical path.
+- Steps 1, 4 and 5 start as reviewer slots free; targets pre-stated in RTARGET §55.
+
+---
+
+## 7. CORRECTION to §6 — the owner's guidance is the FULL proof
+
+**§6 is withdrawn.** The owner, verbatim: *"sorry i choose fixed torus only because you seem to think thats
+the best direction here, obtain consensus. my guidence here is for you to get the full proof!"*
+
+So: **the target is T_OS on R^4** (OS0-OS3, non-trivial, no mass gap claimed). The lead's §1 recommendation
+to scale down was the lead's opinion, offered as a decision; it is withdrawn as a decision and goes to the
+consensus panel as one view among several.
+
+**What stays true regardless of route.** Every route to T_OS passes through layer 1 (uniform UV control) and
+through finite-volume limits, so **T_fin is milestone 1**, and Steps 1, 4 and 5 of §4 are needed on every
+route. Nothing about them changes.
+
+**What changes.** OS1 on R^4 — E(4) invariance of an infinite-volume limit, which the lane recorded in
+sessions 1-3 as needing uniqueness (IR control comparable to a mass gap) — **goes onto the critical path
+now, with its own attack**, instead of being parked. The lead's claim that it is out of reach is exactly the
+kind of claim this lane has repeatedly got wrong; it gets the same scrutiny as any no-go.
+
+**The consensus panel (launched now).** Independent panellists from both model families, each given the
+primary sources and the question, and asked to form a view **before** reading this file:
+- **P1** — what T_OS actually requires, split UV vs IR; is "OS1 needs uniqueness" right; rank the routes.
+- **P2** — adversarial: construct a route to OS1 in infinite volume **without** uniqueness or a gap.
+- **P3** — audit the lane's infrared-obstruction analysis against the literature and against the lane's own
+  inference about what the OpenAI claim did.
+- **P4, P5** — Opus 5.5 panellists on the same questions, as Claude reviewer slots free, for cross-family
+  agreement.
+The lead synthesises; where the panel disagrees, the disagreement is recorded, not resolved by the lead's
+preference.

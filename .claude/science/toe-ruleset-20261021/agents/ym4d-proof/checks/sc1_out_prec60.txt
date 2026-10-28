@@ -1,0 +1,105 @@
+==============================================================================
+SC1-1  harness validation: the beta-telescope B(m)   [pre-registered]
+==============================================================================
+  B(4    ) = 43.9486193106807341818  CONST_T = 43.95     rel.dev = 3.142e-05  ok
+  B(8    ) = 1931.48113931513953092  CONST_T = 1931.5    rel.dev = 9.765e-06  ok
+  B(4.17 ) = 51.6143435690240904621  CONST_T = 51.45     rel.dev = 3.194e-03  ok
+  SC1-1 VERDICT: PASS
+
+==============================================================================
+SC1-2  harness validation: reproduce CONST_T 6.3's q_min table   [pre-registered]
+==============================================================================
+  pre-registered reading: C_1 = 20 wherever C_1 appears alone
+    C_1C_V = 1         q_min got = 10      CONST_T = 9       MISMATCH
+    C_1C_V = 100       q_min got = 16      CONST_T = 16      ok
+    C_1C_V = 2000      q_min got = 30      CONST_T = 31      MISMATCH
+    C_1C_V = 1E+4      q_min got = 56      CONST_T = 132     MISMATCH
+    C_1C_V = 5E+4      q_min got = None    CONST_T = None    ok
+  SC1-2 VERDICT: FAIL
+
+  [POST-HOC, SC1-2b] same formula, C_1 = C_V = sqrt(C_1C_V):
+    C_1C_V = 1         q_min got = 9       CONST_T = 9       C_T at q_min = 8.60e+12   ok
+    C_1C_V = 100       q_min got = 16      CONST_T = 16      C_T at q_min = 7.44e+12   ok
+    C_1C_V = 2000      q_min got = 31      CONST_T = 31      C_T at q_min = 9.95e+12   ok
+    C_1C_V = 1E+4      q_min got = 134     CONST_T = 132     C_T at q_min = 9.99e+12   MISMATCH
+    C_1C_V = 5E+4      q_min got = None    CONST_T = None    C_T at q_min = -          ok
+  SC1-2b (post-hoc, NOT a pre-registered verdict): does not reproduce
+
+==============================================================================
+SC1-3  monotonicity   [pre-registered]
+==============================================================================
+  q_min over C_1C_V grid ['1', '10', '100', '1000', '1E+4'] : [9, 12, 16, 25, 134]  -> non-decreasing: True
+  C_T(q) strictly decreasing on q in [8,400] for every grid point: True
+  SC1-3 VERDICT: PASS
+
+==============================================================================
+SC1-4  THE RESULT (reported; no pre-registered pass value)
+==============================================================================
+  budget allocations (STAR_CONST 6.2):
+    d2=0.0625   rho=0.0625   T*=0.4180788  t=0.1393596  s0=0.2787192  kappa=0.4569211  c_s=411.92297   (chosen)
+    d2=0        rho=0        T*=0.4749371  t=0.1583123  s0=0.3166247  kappa=0.5250628  c_s=319.19798   (unattainable floor)
+    d2=0.125    rho=0.25     T*=0.3023431  t=0.1007810  s0=0.2015621  kappa=0.3226568  c_s=787.64795   (generous curvature)
+  => c_s = 411.922970   (rounded up: 412)
+  => C_B^tot = 310, c_g = 5699.63283
+
+  six combinations (multiplicity convention x beta-power convention), A_c*gamma_c = 1:
+  mult     beta    mu(q=8)      C_T(q=8)     q_min   
+  M-lit    P-ct    6174         3.486e+21    62      
+  M-lit    P-max   6174         3.486e+21    None    
+  M-ct     P-ct    486          2.160e+19    20      
+  M-ct     P-max   486          2.160e+19    74      
+  M-sharp  P-ct    3            8.246e+14    10      
+  M-sharp  P-max   3            8.246e+14    11      
+
+  detail, M-sharp (mu = 3 exactly, q-free):
+    beta convention P-ct:
+      q=8    a=2       src=9.896e+08  cut=1.842e+06  ||V_s||inf=1.287e+01  C_T=8.246e+14  over
+      q=9    a=1.8     src=1.164e+08  cut=1.778e+06  ||V_s||inf=8.758e+00  C_T=4.611e+13  over
+      q=10   a=1.6666  src=2.793e+07  cut=1.742e+06  ||V_s||inf=6.436e+00  C_T=6.993e+12  UNDER
+      q=11   a=1.5714  src=1.008e+07  cut=1.719e+06  ||V_s||inf=5.002e+00  C_T=1.939e+12  UNDER
+      q=12   a=1.5     src=4.692e+06  cut=1.705e+06  ||V_s||inf=4.055e+00  C_T=8.025e+11  UNDER
+      q=16   a=1.3333  src=7.882e+05  cut=1.677e+06  ||V_s||inf=2.276e+00  C_T=1.646e+11  UNDER
+      q=20   a=1.25    src=3.230e+05  cut=1.667e+06  ||V_s||inf=1.609e+00  C_T=9.695e+10  UNDER
+      q=30   a=1.1538  src=1.154e+05  cut=1.657e+06  ||V_s||inf=1.014e+00  C_T=6.004e+10  UNDER
+      q=50   a=1.0869  src=5.642e+04  cut=1.652e+06  ||V_s||inf=7.004e-01  C_T=4.494e+10  UNDER
+      q=100  a=1.0416  src=3.474e+04  cut=1.650e+06  ||V_s||inf=5.308e-01  C_T=3.732e+10  UNDER
+    beta convention P-max:
+      q=8    a=2       src=9.896e+08  cut=1.842e+06  ||V_s||inf=1.287e+01  C_T=8.246e+14  over
+      q=9    a=1.8     src=1.164e+08  cut=1.778e+06  ||V_s||inf=8.758e+00  C_T=9.826e+13  over
+      q=10   a=1.6666  src=2.793e+07  cut=1.742e+06  ||V_s||inf=6.436e+00  C_T=2.468e+13  over
+      q=11   a=1.5714  src=1.008e+07  cut=1.719e+06  ||V_s||inf=5.002e+00  C_T=9.812e+12  UNDER
+      q=12   a=1.5     src=4.692e+06  cut=1.705e+06  ||V_s||inf=4.055e+00  C_T=5.320e+12  UNDER
+      q=16   a=1.3333  src=7.882e+05  cut=1.677e+06  ||V_s||inf=2.276e+00  C_T=2.050e+12  UNDER
+      q=20   a=1.25    src=3.230e+05  cut=1.667e+06  ||V_s||inf=1.609e+00  C_T=1.655e+12  UNDER
+      q=30   a=1.1538  src=1.154e+05  cut=1.657e+06  ||V_s||inf=1.014e+00  C_T=1.474e+12  UNDER
+      q=50   a=1.0869  src=5.642e+04  cut=1.652e+06  ||V_s||inf=7.004e-01  C_T=1.421e+12  UNDER
+      q=100  a=1.0416  src=3.474e+04  cut=1.650e+06  ||V_s||inf=5.308e-01  C_T=1.401e+12  UNDER
+
+  sensitivity in A_c*gamma_c (the Stage-1 / eps_* input I do not own), M-sharp:
+    P-ct   q_min at A_c*gamma_c = 1:10, 10:10, 100:10, 1000:10, 4738:10
+    P-max   q_min at A_c*gamma_c = 1:11, 10:11, 100:11, 1000:12, 4738:None
+  largest A_c*gamma_c still clearing 1e13 (M-sharp), by q:
+    P-ct   q=10:5.05e+03, q=12:1.21e+04, q=16:1.72e+04, q=30:2.42e+04, q=100:3e+04
+    P-max   q=10:none, q=12:3.35e+03, q=16:4.37e+03, q=30:4.53e+03, q=100:4.55e+03
+
+  sensitivity in c_s (floor 319 / chosen 412 / generous 821), M-sharp, A_c*gamma_c = 1:
+    P-ct   c_s=319:q_min=10, c_s=412:q_min=10, c_s=821:q_min=11
+    P-max   c_s=319:q_min=11, c_s=412:q_min=11, c_s=821:q_min=13
+
+==============================================================================
+SC1-5  precision control   [pre-registered; run this file at 40 and at 60 and diff]
+==============================================================================
+  precision used in this run: 60 significant digits
+  key values for the diff:
+    B(4)=43.94861931068073418  B(8)=1931.481139315139530
+    c_s=411.9229708842423061  c_g=5699.632830341894211  T*=0.418078893226500489
+    M-lit    P-ct   q_min=62     floor(log10 C_T(8))=21
+    M-lit    P-max  q_min=None   floor(log10 C_T(8))=21
+    M-ct     P-ct   q_min=20     floor(log10 C_T(8))=19
+    M-ct     P-max  q_min=74     floor(log10 C_T(8))=19
+    M-sharp  P-ct   q_min=10     floor(log10 C_T(8))=14
+    M-sharp  P-max  q_min=11     floor(log10 C_T(8))=14
+
+==============================================================================
+SUMMARY: SC1-1 PASS | SC1-2 FAIL | SC1-3 PASS | SC1-4 reported | SC1-5 by diff
+==============================================================================

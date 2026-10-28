@@ -896,3 +896,59 @@ every k, differing only in the available bound.
 
 §37's FOR OTHER FILES records that **REVIEW_BFT_A_S8's closing request — D1's remainder bound, "written
 nowhere" — is Proposition NCR** (§31.1, written concurrently), and that this session supplies its two factors.
+
+## STAR_CONST.md — (CONST-T) now carries a NUMBER. 606 lines, §1-§12.
+
+**The two constants, COMPUTED exactly.**
+| | value | status |
+|---|---|---|
+| **C_1** (the (★) prefactor) | **5.70e3** | COMPUTED, from the cut-off bookkeeping of steps (2)+(4) |
+| **C_V^source** | **7.23e-2** | COMPUTED |
+| **C_1·C_V^source** | **411.92 ≤ 412** (exact floor over all δ-budgets: **319.20**) | **COMPUTED (exact)** |
+| C_1·C_V^{curv,lin} = 17.5·C_K′c_N | [68, 3.4e5] | CONDITIONAL — C_K′ not in SQ.md |
+| C_1·C_V^{curv,quad} | ≈ 3.0e6 at (c_N, C_B) = (1, 3.6) | CONDITIONAL — C_B not in SQ.md |
+| ‖V_s‖_∞ ≤ R^{-2+8/q} < 1 | — | **PROVEN** (answers CONST_T §8.1 ask (b)) |
+
+**q_min = 11** (conservative β-power) or 10. **>>> YES: the (CLS-min) → RLARGE interface carries a number at
+q ≈ 12 — C_T ≤ 5.3e12 against the 1e13 ceiling, so C_D ≈ 1e15 ≤ 6.7e15.**
+
+**But the PASS rests on two restatements of SQ.md §15.1, both PROVED here, neither new mathematics. With (★)
+exactly as written there is NO admissible q.** Two more wrong steps, in the session's established pattern:
+1. **V must carry THREE coefficients, not one** (l.1480). With a single C_V the product is max{…} ≈ 3.0e6,
+   because the **quadratic curvature** coefficient — harmless in itself, its potential has norm ∝ ε_*² — is
+   **promoted into a multiplier of the SOURCE term, the one raised to the power a.** **This alone is a
+   blocker, independent of every multiplicity.**
+2. **The source term's neighbourhoods are 3 plaquettes and 3 links, not N_3 = 14406 or N_1 = 486**
+   (Lemmas A1-A3, §2.2: D_1* and D_2 are each exactly **3** covariant differences, not "≤ 6"; the source
+   pairs each plaquette with exactly **2**; each link is the far link of exactly **3** plaquettes).
+   **Worth 162× in the one-step base: q_min 74 → 11.**
+Six-row table (multiplicity × β-power) at A_cγ_c = 1: M-sharp 10/11; CONST_T's 486 → 20/74; **SQ literal →
+62 / none ≤ 400.**
+
+**Answers to the lead's specific asks.**
+- **η does NOT enter C_1 or C_V^source.** Steps (2) and (4) are pure calculus on ζ, w; the source group never
+  touches U. η enters only the curvature coefficients, through c_N, BIA and WB. **CONST_T §5.3 CONFIRMED**,
+  its reason sharpened. No contradiction with REVIEW_SQ_S4's S4-3.
+- **Not pinnable in (★):** (i) **C_B and C_K′** — SQ gives only C_K′ ≤ 200·96 = 1.92e4 from counts it calls
+  crude, and nothing for C_B; the missing estimate is an entrywise bound on WB's kernel k(p,p′) and BIA's BCH
+  remainder. Harmless for C_T, but it means **the single-C_V reading of (★) has no number at all**.
+  (ii) **A_cγ_c / ε_*** — in step (5), outside steps (2)-(4): §8.3 gives the **condition A_cγ_c ≤ 3.4e3**
+  rather than a value, and notes CONST_T's SUPPLIED 4.7e3 **just fails** it, so ε_* must drop a factor 2-10
+  (free: ~30 decades of headroom). (iii) Sharpness of 412 — OPEN, worth ≈8×, immaterial.
+- **A β-power correction to CONST_T (§6.4, §11.2):** the V_c branch has a_c = 2 with a β⁴ coefficient, so the
+  telescope needs **B(4·max{a,2}) = B(8) = 1931.5 for every q ≥ 8**, not B(4a). Worth 28× at q = 32; it moves
+  CONST_T's q_min at C_1C_V = 1 from 9 to ≈ 12.
+
+**Checks — one pre-registered FAIL, handled exactly right.** SC1-1 PASS. **SC1-2 FAIL** — the pre-registered
+reading "C_1 = 20 wherever C_1 appears alone" gave 10/16/30/56/none against CONST_T's 9/16/31/132/none; **the
+error is in the worker's own criterion** (CONST_T §6.3 splits the product as C_1 = C_V = √(C_1C_V)). Failing
+output kept unaltered; post-hoc SC1-2b (labelled) reproduces 4 of 5 (134 against 132, traced to CONST_T's
+B(4a) column being ≈8% low at mid-range; no CONST_T conclusion changes). SC1-3 PASS (monotonicity;
+independently confirms CONST_T §4.2's q-lever). SC1-5 PASS. 22 s, plain python `-I`, no numpy/BLAS, no lock.
+**Disclosed in §12: sc1_criteria.md's header says 13:3x UTC; it was actually 13:43. The order is correct
+(STAR_CONST §1 13:31 → criteria 13:43 → script 13:50) and the worker did NOT edit the criteria file to fix
+the minute.** *That is the right call and worth noting as the standard.*
+
+**Biggest remaining obstruction: ε_* / A_cγ_c**, in Stage 1 step (5) (l.1489-1494). §8.3's inequality
+**A_cγ_c ≤ 3.4e3 is now the only thing between CONST_T §6.1's formula and a PROVEN number**, and it is one
+bounded session, independent of everything else. *Lead: commissioned immediately as EPSSTAR.md.*

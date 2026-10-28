@@ -1890,3 +1890,71 @@ Exact Fraction; Decimal for display only, verified at 50 and 100 digits (worst d
 **Biggest remaining in scope: not the arithmetic — THE DECISION.** One lemma replacement worth **82 decades
 today**, hypotheses available bar one word, nothing broken. What stands in the way is that **RLARGE v3
 already decided it the other way, without the price.** Below it: a_RS stays CONDITIONAL on (PLD)_k (i).
+
+## TGAUGE_PRICE.md — verdict **EQUAL, exactly**, and now PROVEN rather than ARGUED. Route (β) CLOSED.
+## 68.6 KB. §1 PRE-STATED 15,495 bytes, first edit 15:23 UTC. Three disclosed FAILs. 
+
+### The explicit μ (PROVEN + COMPUTED)
+The condition is exactly **A^{(0→k)}μ(X) = -Φ_k(c_X)** with μ = 0 at the level-k roots. Two solutions, with
+s := (1 - n^{-d})^{-1}: **μ_flat** = Σ_X(-sΦ_k(c_X))(1_{B_X} - δ_{c_X}) — constant on each block with a
+**one-site hole at the centre** — and **μ_pt** = Σ_X(-n^dΦ_k(c_X))δ_{c_X+e_0}, **one fine site per box**.
+Both verified exactly, through the forward funnel, to set **Φ_k ≡ 0** in d = 2 (k = 2,3) and d = 4 (k = 1,2).
+
+### Theorem TG-PRICE (PROVEN-HERE): the gauge is a NULL OPERATION
+With P := n²⟨C(j),Y^p_0⟩, M := n²⟨Σ_l(Q_str^{(0→l)})^Tĵ_l, Y^p_0⟩ and 𝒯 the COF-res residue: M = P + 𝒯, and
+**ΔP = n²⟨C(j),dμ⟩ = n²⟨D(S),μ⟩ = 0 for EVERY μ ∈ Λ₀** — because **d*C(j) = D^root(S) sits on the level-k
+roots, and every composite gauge function is constant there.** Hence ΔM = Δ𝒯 = -𝒯, i.e.
+**ρ = |ΔM|/|𝒯| = 1 exactly**, measured in **12 cells** (3 models × 2 fields × 2 μ) plus 4 in tg1.
+**The gauge sends (M, 𝒯) ↦ (P, 0): the residue is RELABELLED, not removed — a NULL OPERATION on the
+quantity to be bounded** (Corollary TG-NULL). **TP-F3, the only route to "strictly less", does not occur:
+COF step (c)'s main pairing carries the SAME explicit n² as the residue.**
+
+Independently, on the estimator's own terms: **Lemma TG-TV (PROVEN)** gives
+‖d(A^{(0→l)}μ)‖₁ ≥ (n/L^l)^{d-1}osc₁(Φ) = Lemma TENT-TV's bound ÷ 2d, so **no μ beats the tent**; and
+**Proposition TG-OPT** gives exactly ρ_tv(l) = s(1 + L^{-l}n^{1-d}) → 1 (657/656 and 1641/1640 at d = 4,
+k = 2 — 0.15%). **So TENTQ's "natural but not forced" choice was OPTIMAL**, and §2.2 makes it moot.
+
+### Termination and finite support — neither is the mechanism
+μ **is** finitely supported — one level-k block, even **one fine site** — but from the witness's **compact
+support**, not the termination; and **it does not help**, since the price depends on μ only through
+A^{(0→k)}μ. The cheapest-support μ makes the ℓ¹×sup *estimate* **worst by exactly L^{k-l}** at an identical
+exact price. **The termination pins the MAGNITUDE** (Φ_k(u) = -65/26244 for all k ≥ 2), so the equal price is
+a **k-independent constant × n² — it survives every level.** It is **not** what forces the equality.
+
+### >>> Route (β) is CLOSED. Face (b) IS an obstruction. The n² is real.
+New invariant form offered: **(Y-N*)** — Theorem YH's norm with the inf restricted to Λ₀ — one statement,
+**no (CC-0), no charges, no tent**; OPEN, sharpness OPEN, **expected false by n².**
+
+### Two findings beyond the brief
+1. **SOURCE-DISAGREES with TENTQ §2.7:** its display Σ_l⟨ĵ_l, d(ev^{(0→l)}μ)⟩ is **wrong** —
+   **Q_str∘d = d∘A, the BLOCK AVERAGE**, not ev; checked exactly, **the ev form fails at every l ≥ 1.**
+   (Size conclusion unaffected; **erratum, not refutation**.)
+2. **>>> Proposition TG-EXCL — from the DESIGNED-FAIL CONTROL, and constructive.** The **root-delta μ would
+   be cheaper by exactly L^{dk}** (ρ_root = 1/(L^{dk} - 1); measured 1/80, 1/728, 1/6560) — **but ΔP ≠ 0, so
+   it is NOT a gauge. What would free face (b) is PRECISELY what Λ₀'s definition excludes.** *That is the
+   sharpest statement of an obstruction produced today: not "we could not find a μ", but "the only μ that
+   would work is exactly the one the gauge group does not contain."*
+
+### Checks — and the worker found its own gates VACUOUS
+tg1: 2.06 s, 79 MB, **three disclosed FAILs** — **clause Z: the script failed to implement its own
+non-vacuity criterion, making three models' generic-field clauses VACUOUS, not PASSes**; the consequential
+F; and clause E(ii), whose **criterion was wrong** (it omitted the root hole μ ∈ Λ_* forces). Outputs and
+criteria kept **unaltered**; repaired under **tg1b** with criteria untouched: 4.07 s, 205 MB, **ALL PASS**,
+ledger closed on one source. **Both designed-FAIL controls fired in ALL models** (a corrupted root offset
+breaks TGAUGE; a flat straight-average multiplicity is rejected by its own mass assertion and breaks B4).
+Outside references **rebuilt exactly**: COF-res's identity, TGAUGE, and S8-7's four rationals.
+*Eighth and final application of the check-power lens — and this one caught its own clauses passing
+vacuously. The practice is now fully formed and should be the first paragraph of every future brief.*
+
+### Scope, and a one-sided limitation the worker volunteered
+m = 0, trivial background, d = 4, L = 3, abelian/linearised, k ≤ 3. **§2.2 is UNCONDITIONAL on the profile
+input, so YSUP's flagged Z″₀-cancellation attack point does not touch this verdict either way.** No
+k-uniformity for (NC-Γ) claimed (RS10-1 stands, upstream). **One-sided limitation: COF step (c)'s r_m(Y^p)
+terms are not inert under the shift and are not computed — any change is ADDITIONAL cost, so the verdict can
+only move towards WORSE.**
+
+### Biggest obstruction left
+**Face (b) has NO representative-theoretic escape at all**, so the n² must be met either as **(Y-N*)** on
+the response (**expected fatal**) or — **the one route not already expected to fail, requested to lane A** —
+as **Σ_X|Q_X| ≲ n^{-2} on the SOURCE**, since max|Φ_k| ≤ 3.89·C₀ is k-uniform and **its lower bound is
+attained.**

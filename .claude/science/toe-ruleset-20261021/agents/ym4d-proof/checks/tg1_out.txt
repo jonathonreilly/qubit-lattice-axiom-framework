@@ -1,0 +1,248 @@
+tg1: TGAUGE_PRICE session 25.  criteria: checks/tg1_criteria.md (written first, not amended).
+
+==============================================================================
+=== P1 (d=2,k=2,T=3): n=9, level-0 side=27, 9 level-2 boxes, |HT|=12 ===
+A   TGAUGE at every X (9 boxes): PASS
+G   CONTROL 2 (off(k):=0 in the block average): clause A then FAILS at 6/9 boxes -> control FIRES (PASS of the control)
+
+--- field = generic: #(nu != 0) = 3; T_res = 0 (ZERO)
+B   mu_flat : mu(c_X)==0 everywhere: True;  A^(0->k)mu == nu: True;  Phi_k(x0+dmu)(c_X)==0 on supp nu: True
+B   mu_pt   : mu(c_X)==0 everywhere: True;  A^(0->k)mu == nu: True;  Phi_k(x0+dmu)(c_X)==0 on supp nu: True
+B   mu_root : mu(c_X)==0 everywhere: False;  A^(0->k)mu == nu: False;  Phi_k(x0+dmu)(c_X)==0 on supp nu: True
+C1  n^2 <Chat_def, x0> = 0;   T_res = 0;   PASS
+C2  mu_flat : n^2 <Chat_def, dmu> = 0;  -T_res = 0;  PASS;   rho = |dM|/|T_res| = n/a
+C2  mu_pt   : n^2 <Chat_def, dmu> = 0;  -T_res = 0;  PASS;   rho = |dM|/|T_res| = n/a
+D1  d*C(j) == D(S) at all 2 sites: True;   D2  D(S) root-supported & neutral: True  (|supp D(S)| = 2, sum = 0)
+D3  mu_flat : <C(j), dmu> = 0;  <d*C(j), mu> = 0;  adjoint OK: True;  zero: True
+D3  mu_pt   : <C(j), dmu> = 0;  <d*C(j), mu> = 0;  adjoint OK: True;  zero: True
+D3  mu_root : <C(j), dmu> = 0;  <d*C(j), mu> = 0;  adjoint OK: True;  zero: True
+F   CONTROL 1 (mu_root outside Lambda_*): <C(j), dmu_root> = 0 -> control DOES NOT FIRE -> D3 has no power
+E   mu_flat  (field generic): osc_1(nu) = 6175/6804
+E     l=0: ||d(A^(0->l)mu)||_1 = 65113/1680   rho_est = 4.745076923076923   [informational: /tent TV = 1.200203993585806, 2d = 4, L^(k-l) = 9]
+E     l=1: ||d(A^(0->l)mu)||_1 = 1999427/166320   rho_est = 4.41537062937063   [informational: /tent TV = 1.1229149882314367, 2d = 4, L^(k-l) = 3]
+E   mu_pt    (field generic): osc_1(nu) = 6175/6804
+E     l=0: ||d(A^(0->l)mu)||_1 = 74651/231   rho_est = 39.56475524475525   [informational: /tent TV = 10.00737775589279, 2d = 4, L^(k-l) = 9]
+E     l=1: ||d(A^(0->l)mu)||_1 = 74651/2079   rho_est = 13.188251748251748   [informational: /tent TV = 3.3540300010539013, 2d = 4, L^(k-l) = 3]
+
+--- field = one-block: #(nu != 0) = 1; T_res = 6791685/272272 (NONZERO)
+B   mu_flat : mu(c_X)==0 everywhere: True;  A^(0->k)mu == nu: True;  Phi_k(x0+dmu)(c_X)==0 on supp nu: True
+B   mu_pt   : mu(c_X)==0 everywhere: True;  A^(0->k)mu == nu: True;  Phi_k(x0+dmu)(c_X)==0 on supp nu: True
+B   mu_root : mu(c_X)==0 everywhere: False;  A^(0->k)mu == nu: False;  Phi_k(x0+dmu)(c_X)==0 on supp nu: True
+C1  n^2 <Chat_def, x0> = 6791685/272272;   T_res = 6791685/272272;   PASS
+C2  mu_flat : n^2 <Chat_def, dmu> = -6791685/272272;  -T_res = -6791685/272272;  PASS;   rho = |dM|/|T_res| = 1
+C2  mu_pt   : n^2 <Chat_def, dmu> = -6791685/272272;  -T_res = -6791685/272272;  PASS;   rho = |dM|/|T_res| = 1
+D1  d*C(j) == D(S) at all 2 sites: True;   D2  D(S) root-supported & neutral: True  (|supp D(S)| = 2, sum = 0)
+D3  mu_flat : <C(j), dmu> = 0;  <d*C(j), mu> = 0;  adjoint OK: True;  zero: True
+D3  mu_pt   : <C(j), dmu> = 0;  <d*C(j), mu> = 0;  adjoint OK: True;  zero: True
+D3  mu_root : <C(j), dmu> = 1358337/2178176;  <d*C(j), mu> = 1358337/2178176;  adjoint OK: True;  zero: False
+E   mu_flat  (field one-block): osc_1(nu) = 2263895/3675672
+E     l=0: ||d(A^(0->l)mu)||_1 = 6791685/272272   rho_est = 4.5   [informational: /tent TV = 1.125, 2d = 4, L^(k-l) = 9]
+E     l=1: ||d(A^(0->l)mu)||_1 = 452779/58344   rho_est = 4.2   [informational: /tent TV = 1.05, 2d = 4, L^(k-l) = 3]
+E   mu_flat: (i) rho_est >= 1 everywhere: True;  (ii) rho_est <= 2d = 4 everywhere: False
+E   mu_pt    (field one-block): osc_1(nu) = 2263895/3675672
+E     l=0: ||d(A^(0->l)mu)||_1 = 6791685/34034   rho_est = 36.0   [informational: /tent TV = 9.0, 2d = 4, L^(k-l) = 9]
+E     l=1: ||d(A^(0->l)mu)||_1 = 2263895/102102   rho_est = 12.0   [informational: /tent TV = 3.0, 2d = 4, L^(k-l) = 3]
+E   mu_pt:   (i) rho_est >= 1 everywhere: True;  (iii) rho_est >= L^(k-l) everywhere: True
+
+==============================================================================
+=== P2 (d=2,k=3,T=2): n=27, level-0 side=54, 4 level-3 boxes, |HT|=12 ===
+A   TGAUGE at every X (4 boxes): PASS
+G   CONTROL 2 (off(k):=0 in the block average): clause A then FAILS at 4/4 boxes -> control FIRES (PASS of the control)
+
+--- field = generic: #(nu != 0) = 1; T_res = 132351/704 (NONZERO)
+B   mu_flat : mu(c_X)==0 everywhere: True;  A^(0->k)mu == nu: True;  Phi_k(x0+dmu)(c_X)==0 on supp nu: True
+B   mu_pt   : mu(c_X)==0 everywhere: True;  A^(0->k)mu == nu: True;  Phi_k(x0+dmu)(c_X)==0 on supp nu: True
+B   mu_root : mu(c_X)==0 everywhere: False;  A^(0->k)mu == nu: False;  Phi_k(x0+dmu)(c_X)==0 on supp nu: True
+C1  n^2 <Chat_def, x0> = 132351/704;   T_res = 132351/704;   PASS
+C2  mu_flat : n^2 <Chat_def, dmu> = -132351/704;  -T_res = -132351/704;  PASS;   rho = |dM|/|T_res| = 1
+C2  mu_pt   : n^2 <Chat_def, dmu> = -132351/704;  -T_res = -132351/704;  PASS;   rho = |dM|/|T_res| = 1
+D1  d*C(j) == D(S) at all 2 sites: True;   D2  D(S) root-supported & neutral: True  (|supp D(S)| = 2, sum = 0)
+D3  mu_flat : <C(j), dmu> = 0;  <d*C(j), mu> = 0;  adjoint OK: True;  zero: True
+D3  mu_pt   : <C(j), dmu> = 0;  <d*C(j), mu> = 0;  adjoint OK: True;  zero: True
+D3  mu_root : <C(j), dmu> = 132351/256256;  <d*C(j), mu> = 132351/256256;  adjoint OK: True;  zero: False
+F   CONTROL 1 (mu_root outside Lambda_*): <C(j), dmu_root> = 132351/256256 -> control FIRES (PASS of the control)
+E   mu_flat  (field generic): osc_1(nu) = 44117/85536
+E     l=0: ||d(A^(0->l)mu)||_1 = 132351/2288   rho_est = 4.153846153846154   [informational: /tent TV = 1.0384615384615385, 2d = 4, L^(k-l) = 27]
+E     l=1: ||d(A^(0->l)mu)||_1 = 1808797/96096   rho_est = 4.054945054945055   [informational: /tent TV = 1.0137362637362637, 2d = 4, L^(k-l) = 9]
+E     l=2: ||d(A^(0->l)mu)||_1 = 2691137/432432   rho_est = 4.021978021978022   [informational: /tent TV = 1.0054945054945055, 2d = 4, L^(k-l) = 3]
+E   mu_pt    (field generic): osc_1(nu) = 44117/85536
+E     l=0: ||d(A^(0->l)mu)||_1 = 132351/88   rho_est = 108.0   [informational: /tent TV = 27.0, 2d = 4, L^(k-l) = 27]
+E     l=1: ||d(A^(0->l)mu)||_1 = 44117/264   rho_est = 36.0   [informational: /tent TV = 9.0, 2d = 4, L^(k-l) = 9]
+E     l=2: ||d(A^(0->l)mu)||_1 = 44117/2376   rho_est = 12.0   [informational: /tent TV = 3.0, 2d = 4, L^(k-l) = 3]
+
+--- field = one-block: #(nu != 0) = 1; T_res = -1995713/45760 (NONZERO)
+B   mu_flat : mu(c_X)==0 everywhere: True;  A^(0->k)mu == nu: True;  Phi_k(x0+dmu)(c_X)==0 on supp nu: True
+B   mu_pt   : mu(c_X)==0 everywhere: True;  A^(0->k)mu == nu: True;  Phi_k(x0+dmu)(c_X)==0 on supp nu: True
+B   mu_root : mu(c_X)==0 everywhere: False;  A^(0->k)mu == nu: False;  Phi_k(x0+dmu)(c_X)==0 on supp nu: True
+C1  n^2 <Chat_def, x0> = -1995713/45760;   T_res = -1995713/45760;   PASS
+C2  mu_flat : n^2 <Chat_def, dmu> = 1995713/45760;  -T_res = 1995713/45760;  PASS;   rho = |dM|/|T_res| = 1
+C2  mu_pt   : n^2 <Chat_def, dmu> = 1995713/45760;  -T_res = 1995713/45760;  PASS;   rho = |dM|/|T_res| = 1
+D1  d*C(j) == D(S) at all 2 sites: True;   D2  D(S) root-supported & neutral: True  (|supp D(S)| = 2, sum = 0)
+D3  mu_flat : <C(j), dmu> = 0;  <d*C(j), mu> = 0;  adjoint OK: True;  zero: True
+D3  mu_pt   : <C(j), dmu> = 0;  <d*C(j), mu> = 0;  adjoint OK: True;  zero: True
+D3  mu_root : <C(j), dmu> = -1995713/16656640;  <d*C(j), mu> = -1995713/16656640;  adjoint OK: True;  zero: False
+E   mu_flat  (field one-block): osc_1(nu) = 1995713/16679520
+E     l=0: ||d(A^(0->l)mu)||_1 = 1995713/148720   rho_est = 4.153846153846154   [informational: /tent TV = 1.0384615384615385, 2d = 4, L^(k-l) = 27]
+E     l=1: ||d(A^(0->l)mu)||_1 = 81824233/18738720   rho_est = 4.054945054945055   [informational: /tent TV = 1.0137362637362637, 2d = 4, L^(k-l) = 9]
+E     l=2: ||d(A^(0->l)mu)||_1 = 121738493/84324240   rho_est = 4.021978021978022   [informational: /tent TV = 1.0054945054945055, 2d = 4, L^(k-l) = 3]
+E   mu_flat: (i) rho_est >= 1 everywhere: True;  (ii) rho_est <= 2d = 4 everywhere: False
+E   mu_pt    (field one-block): osc_1(nu) = 1995713/16679520
+E     l=0: ||d(A^(0->l)mu)||_1 = 1995713/5720   rho_est = 108.0   [informational: /tent TV = 27.0, 2d = 4, L^(k-l) = 27]
+E     l=1: ||d(A^(0->l)mu)||_1 = 1995713/51480   rho_est = 36.0   [informational: /tent TV = 9.0, 2d = 4, L^(k-l) = 9]
+E     l=2: ||d(A^(0->l)mu)||_1 = 1995713/463320   rho_est = 12.0   [informational: /tent TV = 3.0, 2d = 4, L^(k-l) = 3]
+E   mu_pt:   (i) rho_est >= 1 everywhere: True;  (iii) rho_est >= L^(k-l) everywhere: True
+
+==============================================================================
+=== P3 (d=4,k=1,T=2): n=3, level-0 side=6, 16 level-1 boxes, |HT|=216 ===
+A   TGAUGE at every X (16 boxes): PASS
+G   CONTROL 2 (off(k):=0 in the block average): clause A then FAILS at 6/16 boxes -> control FIRES (PASS of the control)
+
+--- field = generic: #(nu != 0) = 2; T_res = 0 (ZERO)
+B   mu_flat : mu(c_X)==0 everywhere: True;  A^(0->k)mu == nu: True;  Phi_k(x0+dmu)(c_X)==0 on supp nu: True
+B   mu_pt   : mu(c_X)==0 everywhere: True;  A^(0->k)mu == nu: True;  Phi_k(x0+dmu)(c_X)==0 on supp nu: True
+B   mu_root : mu(c_X)==0 everywhere: False;  A^(0->k)mu == nu: False;  Phi_k(x0+dmu)(c_X)==0 on supp nu: True
+C1  n^2 <Chat_def, x0> = 0;   T_res = 0;   PASS
+C2  mu_flat : n^2 <Chat_def, dmu> = 0;  -T_res = 0;  PASS;   rho = |dM|/|T_res| = n/a
+C2  mu_pt   : n^2 <Chat_def, dmu> = 0;  -T_res = 0;  PASS;   rho = |dM|/|T_res| = n/a
+D   DEGENERATE at k = 1 (the inner sum over i < k-1 is empty) -- not a PASS
+E   mu_flat  (field generic): osc_1(nu) = 226/243
+E     l=0: ||d(A^(0->l)mu)||_1 = 72236/325   rho_est = 8.851245745405038   [informational: /tent TV = n/a, 2d = 8, L^(k-l) = 3]
+E   mu_pt    (field generic): osc_1(nu) = 226/243
+E     l=0: ||d(A^(0->l)mu)||_1 = 288944/455   rho_est = 25.289273558300106   [informational: /tent TV = n/a, 2d = 8, L^(k-l) = 3]
+
+--- field = one-block: #(nu != 0) = 1; T_res = 547/3024 (NONZERO)
+B   mu_flat : mu(c_X)==0 everywhere: True;  A^(0->k)mu == nu: True;  Phi_k(x0+dmu)(c_X)==0 on supp nu: True
+B   mu_pt   : mu(c_X)==0 everywhere: True;  A^(0->k)mu == nu: True;  Phi_k(x0+dmu)(c_X)==0 on supp nu: True
+B   mu_root : mu(c_X)==0 everywhere: False;  A^(0->k)mu == nu: False;  Phi_k(x0+dmu)(c_X)==0 on supp nu: True
+C1  n^2 <Chat_def, x0> = 547/3024;   T_res = 547/3024;   PASS
+C2  mu_flat : n^2 <Chat_def, dmu> = -547/3024;  -T_res = -547/3024;  PASS;   rho = |dM|/|T_res| = 1
+C2  mu_pt   : n^2 <Chat_def, dmu> = -547/3024;  -T_res = -547/3024;  PASS;   rho = |dM|/|T_res| = 1
+D   DEGENERATE at k = 1 (the inner sum over i < k-1 is empty) -- not a PASS
+E   mu_flat  (field one-block): osc_1(nu) = 547/13608
+E     l=0: ||d(A^(0->l)mu)||_1 = 547/60   rho_est = 8.4   [informational: /tent TV = n/a, 2d = 8, L^(k-l) = 3]
+E   mu_flat: (i) rho_est >= 1 everywhere: True;  (ii) rho_est <= 2d = 8 everywhere: False
+E   mu_pt    (field one-block): osc_1(nu) = 547/13608
+E     l=0: ||d(A^(0->l)mu)||_1 = 547/21   rho_est = 24.0   [informational: /tent TV = n/a, 2d = 8, L^(k-l) = 3]
+E   mu_pt:   (i) rho_est >= 1 everywhere: True;  (iii) rho_est >= L^(k-l) everywhere: True
+
+==============================================================================
+=== P4 (d=4,k=2,T=2): n=9, level-0 side=18, 16 level-2 boxes, |HT|=216 ===
+A   TGAUGE at every X (16 boxes): PASS
+G   CONTROL 2 (off(k):=0 in the block average): clause A then FAILS at 8/16 boxes -> control FIRES (PASS of the control)
+
+--- field = generic: #(nu != 0) = 4; T_res = 0 (ZERO)
+B   mu_flat : mu(c_X)==0 everywhere: True;  A^(0->k)mu == nu: True;  Phi_k(x0+dmu)(c_X)==0 on supp nu: True
+B   mu_pt   : mu(c_X)==0 everywhere: True;  A^(0->k)mu == nu: True;  Phi_k(x0+dmu)(c_X)==0 on supp nu: True
+B   mu_root : mu(c_X)==0 everywhere: False;  A^(0->k)mu == nu: False;  Phi_k(x0+dmu)(c_X)==0 on supp nu: True
+C1  n^2 <Chat_def, x0> = 0;   T_res = 0;   PASS
+C2  mu_flat : n^2 <Chat_def, dmu> = 0;  -T_res = 0;  PASS;   rho = |dM|/|T_res| = n/a
+C2  mu_pt   : n^2 <Chat_def, dmu> = 0;  -T_res = 0;  PASS;   rho = |dM|/|T_res| = n/a
+D1  d*C(j) == D(S) at all 2 sites: True;   D2  D(S) root-supported & neutral: True  (|supp D(S)| = 2, sum = 0)
+D3  mu_flat : <C(j), dmu> = 0;  <d*C(j), mu> = 0;  adjoint OK: True;  zero: True
+D3  mu_pt   : <C(j), dmu> = 0;  <d*C(j), mu> = 0;  adjoint OK: True;  zero: True
+D3  mu_root : <C(j), dmu> = 0;  <d*C(j), mu> = 0;  adjoint OK: True;  zero: True
+F   CONTROL 1 (mu_root outside Lambda_*): <C(j), dmu_root> = 0 -> control DOES NOT FIRE -> D3 has no power
+E   mu_flat  (field generic): osc_1(nu) = 36352/1515591
+E     l=0: ||d(A^(0->l)mu)||_1 = 71061991109/502341840   rho_est = 8.090292053280054   [informational: /tent TV = n/a, 2d = 8, L^(k-l) = 9]
+E     l=1: ||d(A^(0->l)mu)||_1 = 532478207351/101724222600   rho_est = 8.08290365871085   [informational: /tent TV = n/a, 2d = 8, L^(k-l) = 3]
+E   mu_pt    (field generic): osc_1(nu) = 36352/1515591
+E     l=0: ||d(A^(0->l)mu)||_1 = 973451933/765765   rho_est = 72.70180256098242   [informational: /tent TV = n/a, 2d = 8, L^(k-l) = 9]
+E     l=1: ||d(A^(0->l)mu)||_1 = 973451933/62026965   rho_est = 24.233934186994137   [informational: /tent TV = n/a, 2d = 8, L^(k-l) = 3]
+
+--- field = one-block: #(nu != 0) = 1; T_res = 35213/38880 (NONZERO)
+B   mu_flat : mu(c_X)==0 everywhere: True;  A^(0->k)mu == nu: True;  Phi_k(x0+dmu)(c_X)==0 on supp nu: True
+B   mu_pt   : mu(c_X)==0 everywhere: True;  A^(0->k)mu == nu: True;  Phi_k(x0+dmu)(c_X)==0 on supp nu: True
+B   mu_root : mu(c_X)==0 everywhere: False;  A^(0->k)mu == nu: False;  Phi_k(x0+dmu)(c_X)==0 on supp nu: True
+C1  n^2 <Chat_def, x0> = 35213/38880;   T_res = 35213/38880;   PASS
+C2  mu_flat : n^2 <Chat_def, dmu> = -35213/38880;  -T_res = -35213/38880;  PASS;   rho = |dM|/|T_res| = 1
+C2  mu_pt   : n^2 <Chat_def, dmu> = -35213/38880;  -T_res = -35213/38880;  PASS;   rho = |dM|/|T_res| = 1
+D1  d*C(j) == D(S) at all 2 sites: True;   D2  D(S) root-supported & neutral: True  (|supp D(S)| = 2, sum = 0)
+D3  mu_flat : <C(j), dmu> = 0;  <d*C(j), mu> = 0;  adjoint OK: True;  zero: True
+D3  mu_pt   : <C(j), dmu> = 0;  <d*C(j), mu> = 0;  adjoint OK: True;  zero: True
+D3  mu_root : <C(j), dmu> = 35213/1574400;  <d*C(j), mu> = 35213/1574400;  adjoint OK: True;  zero: False
+E   mu_flat  (field one-block): osc_1(nu) = 35213/1574640
+E     l=0: ||d(A^(0->l)mu)||_1 = 2570549/19680   rho_est = 8.012195121951219   [informational: /tent TV = n/a, 2d = 8, L^(k-l) = 9]
+E     l=1: ||d(A^(0->l)mu)||_1 = 19261511/3985200   rho_est = 8.004878048780487   [informational: /tent TV = n/a, 2d = 8, L^(k-l) = 3]
+E   mu_flat: (i) rho_est >= 1 everywhere: True;  (ii) rho_est <= 2d = 8 everywhere: False
+E   mu_pt    (field one-block): osc_1(nu) = 35213/1574640
+E     l=0: ||d(A^(0->l)mu)||_1 = 35213/30   rho_est = 72.0   [informational: /tent TV = n/a, 2d = 8, L^(k-l) = 9]
+E     l=1: ||d(A^(0->l)mu)||_1 = 35213/2430   rho_est = 24.0   [informational: /tent TV = n/a, 2d = 8, L^(k-l) = 3]
+E   mu_pt:   (i) rho_est >= 1 everywhere: True;  (iii) rho_est >= L^(k-l) everywhere: True
+
+==============================================================================
+=== H: rebuild of REVIEW_BFT_A_S8 S8-7's exact rationals (d=4, k=2) ===
+H   phi1  : got -1/432   want -1/432   OK
+H   phi2  : got -17/104976   want -17/104976   OK
+H   ratio : got 17/243   want 17/243   OK
+H   Phi_2 : got -65/26244   want -65/26244   OK
+H   Phi_k(u) at the 2d one-coarse-step neighbours of X: [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]
+
+==============================================================================
+=== VERDICTS ===
+  A/P1 (d=2,k=2,T=3)        : PASS
+  A/P2 (d=2,k=3,T=2)        : PASS
+  A/P3 (d=4,k=1,T=2)        : PASS
+  A/P4 (d=4,k=2,T=2)        : PASS
+  B-mu_flat/P1 (d=2,k=2,T=3): PASS
+  B-mu_flat/P2 (d=2,k=3,T=2): PASS
+  B-mu_flat/P3 (d=4,k=1,T=2): PASS
+  B-mu_flat/P4 (d=4,k=2,T=2): PASS
+  B-mu_pt/P1 (d=2,k=2,T=3)  : PASS
+  B-mu_pt/P2 (d=2,k=3,T=2)  : PASS
+  B-mu_pt/P3 (d=4,k=1,T=2)  : PASS
+  B-mu_pt/P4 (d=4,k=2,T=2)  : PASS
+  C1/P1 (d=2,k=2,T=3)       : PASS
+  C1/P2 (d=2,k=3,T=2)       : PASS
+  C1/P3 (d=4,k=1,T=2)       : PASS
+  C1/P4 (d=4,k=2,T=2)       : PASS
+  C2-mu_flat/P1 (d=2,k=2,T=3): PASS
+  C2-mu_flat/P2 (d=2,k=3,T=2): PASS
+  C2-mu_flat/P3 (d=4,k=1,T=2): PASS
+  C2-mu_flat/P4 (d=4,k=2,T=2): PASS
+  C2-mu_pt/P1 (d=2,k=2,T=3) : PASS
+  C2-mu_pt/P2 (d=2,k=3,T=2) : PASS
+  C2-mu_pt/P3 (d=4,k=1,T=2) : PASS
+  C2-mu_pt/P4 (d=4,k=2,T=2) : PASS
+  D1/P1 (d=2,k=2,T=3)       : PASS
+  D1/P2 (d=2,k=3,T=2)       : PASS
+  D1/P4 (d=4,k=2,T=2)       : PASS
+  D2/P1 (d=2,k=2,T=3)       : PASS
+  D2/P2 (d=2,k=3,T=2)       : PASS
+  D2/P4 (d=4,k=2,T=2)       : PASS
+  D3/P1 (d=2,k=2,T=3)       : PASS
+  D3/P2 (d=2,k=3,T=2)       : PASS
+  D3/P4 (d=4,k=2,T=2)       : PASS
+  E-i-flat/P1 (d=2,k=2,T=3) : PASS
+  E-i-flat/P2 (d=2,k=3,T=2) : PASS
+  E-i-flat/P3 (d=4,k=1,T=2) : PASS
+  E-i-flat/P4 (d=4,k=2,T=2) : PASS
+  E-i-pt/P1 (d=2,k=2,T=3)   : PASS
+  E-i-pt/P2 (d=2,k=3,T=2)   : PASS
+  E-i-pt/P3 (d=4,k=1,T=2)   : PASS
+  E-i-pt/P4 (d=4,k=2,T=2)   : PASS
+  E-ii-flat/P1 (d=2,k=2,T=3): FAIL
+  E-ii-flat/P2 (d=2,k=3,T=2): FAIL
+  E-ii-flat/P3 (d=4,k=1,T=2): FAIL
+  E-ii-flat/P4 (d=4,k=2,T=2): FAIL
+  E-iii-pt/P1 (d=2,k=2,T=3) : PASS
+  E-iii-pt/P2 (d=2,k=3,T=2) : PASS
+  E-iii-pt/P3 (d=4,k=1,T=2) : PASS
+  E-iii-pt/P4 (d=4,k=2,T=2) : PASS
+  F/P1 (d=2,k=2,T=3)        : FAIL
+  F/P2 (d=2,k=3,T=2)        : PASS
+  F/P4 (d=4,k=2,T=2)        : FAIL
+  G/P1 (d=2,k=2,T=3)        : PASS
+  G/P2 (d=2,k=3,T=2)        : PASS
+  G/P3 (d=4,k=1,T=2)        : PASS
+  G/P4 (d=4,k=2,T=2)        : PASS
+  H                         : PASS
+  Z-mu/P1 (d=2,k=2,T=3)     : PASS
+  Z-mu/P2 (d=2,k=3,T=2)     : PASS
+  Z-mu/P3 (d=4,k=1,T=2)     : PASS
+  Z-mu/P4 (d=4,k=2,T=2)     : PASS
+  Z/P1 (d=2,k=2,T=3)        : FAIL
+  Z/P2 (d=2,k=3,T=2)        : PASS
+  Z/P3 (d=4,k=1,T=2)        : FAIL
+  Z/P4 (d=4,k=2,T=2)        : FAIL
+  OVERALL: NOT ALL PASS
+  FAILS: ['Z/P1 (d=2,k=2,T=3)', 'F/P1 (d=2,k=2,T=3)', 'E-ii-flat/P1 (d=2,k=2,T=3)', 'E-ii-flat/P2 (d=2,k=3,T=2)', 'Z/P3 (d=4,k=1,T=2)', 'E-ii-flat/P3 (d=4,k=1,T=2)', 'Z/P4 (d=4,k=2,T=2)', 'F/P4 (d=4,k=2,T=2)', 'E-ii-flat/P4 (d=4,k=2,T=2)']

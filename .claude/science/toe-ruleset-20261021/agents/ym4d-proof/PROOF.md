@@ -68,7 +68,7 @@ are to *diagnoses, statements and stale cross-references*, listed at [S24].
   "RLARGE's η_1"**) and η_1^gauge (SQ l.1679, a bound variable). **Two of these are different VALUES of the
   SAME quantity in the SAME lemma**, and REVIEW_PLD_S3 l.463 said so — **it has survived two review
   cycles.** The traceless-log step also carries an **unadvertised N-dependence** (ε_1 < 78/N).
-- **[S24-flag 6] a_RS BINDS TODAY, and RLARGE l.618 is FALSE.** EPS1_SWEEP re-verified RLARGE l.617-618
+- **[S24-flag 6] a_RS BINDS TODAY, and RLARGE l.618 is FALSE.** **>>> [S25-fix 4] REFUTED IN FULL (ARS_BIND.md, session 25). a_RS binds NOTHING on the live RLF-step v3 route, and RLARGE l.618 is TRUE as written.** `a_RS` occurs in RLARGE.md exactly **five** times — l.830, 1020, 1023, 1024, 1247 — **all inside Appendix A (frozen v1, begins l.824)**, and **zero** times in HIST, HW, PLD, SQ, BFT_A/B, NORMS or LINEAR_PACKAGE. The live constant list is (C_ℓ, B_0, E_0, a, n_♯) at RLARGE l.545. A construction attempt over **eight** routes failed, two of them using none of the review's evidence: a_RS's own input (a_η from (PLD)_k (i)) is itself on l.513-514's **"Not hypotheses of RLF-step v3"** list, along with "RS-joint and the greedy joint pricing". Lemma RS's clauses (R1)-(R5) contain no a_RS at all. **The live exponent a = θa_bad = 1.040·10⁻⁸⁶ clears DX′ by +63.619 decades at every live ε_1.** So **(C2) is DISSOLVED — vacuous in both horns**, and the breach, the repair and the rescue were all priced against the same superseded route: **three sessions measured one dead object from three directions.** Two corrections to the session-25 review that found this: its "zero grep hits" claim is **false** (ARS_FIX cites §3.5 at l.294 and l.788 and even quotes the replacement exponent — it saw it and did not follow it), and its RS-lin comparison is to a baseline nobody reads: **the live a is 2.203 decades BETTER than RS-lin's 6.525·10⁻⁸⁹.** RS-lin is nonetheless PROVEN and live (re-derived by hand from PM and KQ), and η_q, not η_1, is the threshold v3 actually uses — in RLARGE's live body **η_1 has no consumer and η_q has three** (l.82-83, l.297, l.443). The original text follows, retained as the record: — EPS1_SWEEP re-verified RLARGE l.617-618
   against HW session 6's ×82 closed-column numbers: **a_RS/10² sits 15.62 decades BELOW the DX′ ceiling
   already, with no change to anything** (a_RS ∝ ε_1⁴, an exponent no earlier pricing declared). l.617 is
   scoped and correct; **l.618's unscoped "RLF's own ceilings do not bind" is false.** The fix is **already
@@ -110,7 +110,10 @@ are to *diagnoses, statements and stale cross-references*, listed at [S24].
   (G♯_0-field), moved off the trivial chain** — LINEAR_PACKAGE §10's "propagator bounds at a general
   background [cf. CMP 95, 96, 99]". **The nontrivial background and BFT-5 are ONE obstruction, not two, and
   this ledger must not count them twice.**
-  **>>> [S25-fix 2] THIS IS REFUTED (NBG_B §6, session 25). They are THREE obstructions, not one, and the
+  **>>> [S25-fix 2] THIS IS REFUTED (NBG_B §6, session 25; ADJUDICATED in NBG_ADJ.md, which UPHOLDS the
+  non-identity and AMENDS the count to TWO — read [S25-fix 5] below before using any number here).** The
+  instruction that follows is correct; four of its details are not.
+  **They are THREE obstructions, not one, and the
   "must not count them twice" instruction above is WRONG — banked by the lead and used to set session 25's
   priority ordering before it was checked.** The refutation is three lines: (GAP-Z)'s own definition
   (BFT_B l.4334, l.4590) is *"the background analogue of the package constant M of LINEAR_PACKAGE
@@ -126,7 +129,29 @@ are to *diagnoses, statements and stale cross-references*, listed at [S24].
   (GAP-Z) is its **input**, (G♯_0-field) sits **above its output**. **Diagnosis:** the collapse rides on the
   phrase *"lane A's U = 1 package"*, which this lane uses for two different things — LINEAR_PACKAGE (PROVEN)
   and (G♯_0-field) (OPEN). That is systemic defect 1 operating on a **phrase** rather than a letter; NORMS
-  l.631-634 makes the same conflation independently and earlier and is probably its source. Behind it, two session-scale items: (N1-nd), which BFT-0's own
+  l.631-634 makes the same conflation independently and earlier and is probably its source.
+  **[S25-fix 5] ADJUDICATION (NBG_ADJ.md, a third worker, both files read).** The question was **ill-posed
+  as asked**: the two workers counted in different units, and the name (GAP-Z) carries **three inequivalent
+  objects**. Distinct *statements*: **three**, no pairwise implication — T55-E right. Independent
+  *paper-scale obstructions*: **TWO, (GAP-Z) and (G♯_0-field)**; **(N-bg) is not one of them, it is
+  downstream** — T55-D right that (N-bg) adds no paper, wrong about what it reduces to. Open *work items*
+  on the (N-bg) branch: **six** — (CL-4), BFT-1 at the weight pair, (GAP-Z), (N-loc)^Z, Combes-Thomas
+  [ARGUED], (C_g-θ) BCH remainder [ARGUED]. **The graph:** (G♯_0-field) ⟸ [multi-level per-level-slice gap]
+  + [(G♯_0-fine)]; (GAP-Z) ⟸ [flat 𝔐-pair bound] + [(HESS-rel), GAP]; (N-bg) ⟸ (CL-4) + BFT-1 + (GAP-Z) +
+  (N-loc)^Z + CT (Theorem NB-5), **and the two subtrees share no node**. Four amendments to [S25-fix 2]
+  above: three obstructions → **two**; the three-line proof is **unsound** under BFT_B l.4334's operative
+  clause (a slice coercivity, not M) and is replaced by NBG_ADJ §2.4's proof; four mismatches → **three**
+  (two were reading-dependent); and **the cite "PROOF l.3588" has drifted — the string is at l.3614**,
+  inside this very note. **Z = 1 IS admissible** (𝒦(ε) = {f_k ≤ ε}, BFT_B l.2865), so the step the lead
+  flagged does not fail. A cleaner refutation neither worker gave: **PROOF l.3613/3615 make (G♯_0-field) =
+  [per-level-slice gap] + [(G♯_0-fine)]**, and (G♯_0-fine) is OPEN for an unrelated reason (l.3612, K≠0
+  alias symbol not analytic in a strip); (GAP-Z) is at most the first, **on the wrong slice**, and
+  disclaims the second. **Against T55-D specifically:** its "two independent derivations" claim is
+  **false** — §A4.2's second leg is cited verbatim from BFT_B l.4594/l.4737, the very claim under
+  refutation. **Highest leverage: (HESS-rel)** (session-scale) — **but T55-D names the wrong flat input**:
+  a Neumann series in the 𝔐→Y pair needs the **Z = 1 composite-slice bound in that pair**, not
+  (G♯_0-field), which lives in the §33 pair on the per-level slice. **That fourth object's status is
+  recorded NOWHERE, and one lane-B sentence settles whether the cheapest route to (GAP-Z) is open.** Behind it, two session-scale items: (N1-nd), which BFT-0's own
   uniqueness clause pays for, and (CURV-dec).
 - **[S24-note 3] (CovLift)'s non-residual g_Z clause at θ > 0 is FALSE** (BFT_B §41, Proposition GZ-FALSE,
   PROVEN): it demands coarse-curvature decay at rate θ while BFT-1's maximal θ_w^c = 2 gives none — a

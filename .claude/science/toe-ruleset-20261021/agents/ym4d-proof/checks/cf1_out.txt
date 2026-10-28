@@ -1,0 +1,93 @@
+==============================================================================
+cf1 PART A — the funnel kernel h_l, rebuilt from its definition (exact Fractions)
+==============================================================================
+
+(d=2, L=3, M=3)  registered: max|c| = 1/3, l1 row = 4/3
+  A1 support violations   = 0           PASS
+  A2 max|c(X,b)|          = 1/3         PASS   (FT(i) published bound 1: ok)
+  A3 max_X l1 row sum     = 4/3         PASS   (FT(i) published bound 4: ok)
+  A4 max owners per link  = 1           PASS
+  A5 ||h^T||_inf, ||h^T||_1 = 1/3, 4/3   PASS   [derived from A2-A4; LOW POWER, disclosed]
+  A6 max |h(const)|       = 0           PASS
+  A7 max multiplicity     = 1           PASS
+
+(d=3, L=3, M=3)  registered: max|c| = 1/3, l1 row = 2
+  A1 support violations   = 0           PASS
+  A2 max|c(X,b)|          = 1/3         PASS   (FT(i) published bound 1: ok)
+  A3 max_X l1 row sum     = 2           PASS   (FT(i) published bound 6: ok)
+  A4 max owners per link  = 1           PASS
+  A5 ||h^T||_inf, ||h^T||_1 = 1/3, 2   PASS   [derived from A2-A4; LOW POWER, disclosed]
+  A6 max |h(const)|       = 0           PASS
+  A7 max multiplicity     = 1           PASS
+
+(d=4, L=3, M=3)  registered: max|c| = 1/3, l1 row = 8/3
+  A1 support violations   = 0           PASS
+  A2 max|c(X,b)|          = 1/3         PASS   (FT(i) published bound 1: ok)
+  A3 max_X l1 row sum     = 8/3         PASS   (FT(i) published bound 8: ok)
+  A4 max owners per link  = 1           PASS
+  A5 ||h^T||_inf, ||h^T||_1 = 1/3, 8/3   PASS   [derived from A2-A4; LOW POWER, disclosed]
+  A6 max |h(const)|       = 0           PASS
+  A7 max multiplicity     = 1           PASS
+
+(d=5, L=3, M=2)  registered: max|c| = 1/3, l1 row = 10/3
+  A1 support violations   = 0           PASS
+  A2 max|c(X,b)|          = 1/3         PASS   (FT(i) published bound 1: ok)
+  A3 max_X l1 row sum     = 10/3        PASS   (FT(i) published bound 10: ok)
+  A4 max owners per link  = 1           PASS
+  A5 ||h^T||_inf, ||h^T||_1 = 1/3, 10/3   PASS   [derived from A2-A4; LOW POWER, disclosed]
+  A6 max |h(const)|       = 0           PASS
+  A7 max multiplicity     = 1           PASS
+
+(d=4, L=5, M=2)  registered: max|c| = 2/5, l1 row = 24/5
+  A1 support violations   = 0           PASS
+  A2 max|c(X,b)|          = 2/5         PASS   (FT(i) published bound 1: ok)
+  A3 max_X l1 row sum     = 24/5        PASS   (FT(i) published bound 16: ok)
+  A4 max owners per link  = 1           PASS
+  A5 ||h^T||_inf, ||h^T||_1 = 2/5, 24/5   PASS   [derived from A2-A4; LOW POWER, disclosed]
+  A6 max |h(const)|       = 0           PASS
+  A7 max multiplicity     = 1           PASS
+
+  B3 d-independence across [(2, 3, 3), (3, 3, 3), (4, 3, 3), (5, 3, 2), (4, 5, 2)]: PASS
+
+==============================================================================
+cf1 PART B — unit bookkeeping: is a power of L^(k-l) present?
+==============================================================================
+  B1 exponent of L in pi_l(.)/pi_l'(.) equals -3(l-l'), k-free, for all k<=8: PASS
+     (k-independence checked separately, varying k at fixed (l,l'): PASS)
+  B2 sum_{l'<=l} L^-3(l-l') < (1-L^-3)^-1 = 27/26 for all l<=8: PASS
+
+==============================================================================
+cf1 CONTROLS — each MUST fire (defect 3). A control that passes voids its gate.
+==============================================================================
+
+C1  root at the block CORNER instead of the centre
+    max|c| = 2/3 -> A2 FAIL   (must be FAIL)
+    l1 row = 4 -> A3 FAIL   (must be FAIL)
+    |h(const)| = 1 -> A6 FAIL   (must be FAIL)
+    A1 PASS, A4 PASS, A7 PASS   (must all still PASS: support/diagonality are convention-free)
+    C1 FIRED: True;  intact-as-registered: True
+
+C2  BACK-TRACKING path (coordinate 0 steps -1 and back before proceeding)
+    max multiplicity = 3 -> A7 FAIL   (must be FAIL)
+    l1 row = 8/3 -> A3 PASS   (must be FAIL)
+    A1 PASS (reported, not registered either way)
+    C2 FIRED: True
+
+C3  WRAP-AROUND path (coordinate 0 goes the long way round the torus)
+    A1 support violations = 0 -> A1 PASS   (must be FAIL)
+    max owners per link   = 1 -> A4 PASS   (must be FAIL)
+    C3 FIRED: False
+
+C4  NAIVE grouping exponent (level-i funnel reading the levels l > i)
+    sum_{i<l} L^+3(l-i) at l = 1..8: ['27', '756', '20439', '551880'] ... 293292210960
+    B2 on the naive grouping: FAIL   (must be FAIL)
+    B1 k-independence on the naive grouping: PASS   (registered: must still PASS — the k-cancellation is NOT what separates the groupings)
+    C4 FIRED: True
+
+==============================================================================
+SUMMARY
+==============================================================================
+  Part A gates at every (d,L) run : ALL PASS
+  Part B gates                    : B1 PASS, B2 PASS
+  Controls fired                  : C1 True, C2 True, C3 False, C4 True
+  C1 left A1/A4/A7 intact         : True

@@ -551,3 +551,172 @@ SC's Q is the straight average, 𝔮₀ = 1 and Theorem N1-15 is UNCONDITIONAL**
 abelian/linearised, uniformly in k and T. (Theorem NQ-1 in NQ_CHECK.md already claims it PROVEN with
 𝔮₀ = 1 + d(L+1)/(2L); that file is session-24 and must be re-read before the ledger row moves. Now
 T55-P.) **Not proven and still the larger wall: (N-bg) and (H-C)'s C_♭ clause on the class.**
+
+---
+
+## T55-M — `ARS_BIND.md` + `checks/ab1_*`. **a_RS binds NOTHING. Three sessions measured a dead object.**
+
+**VERDICT: NO.** `a_RS` occurs in RLARGE.md exactly **five** times — l.830, 1020, 1023, 1024, 1247 —
+**all inside Appendix A (frozen v1, begins l.824)** — and **zero** times in HIST, HW, PLD, SQ, BFT_A/B,
+NORMS or LINEAR_PACKAGE. l.1020/1023/1024 are superseded by l.832 and l.435; l.1247 is check c32's
+record, which its own reading note calls illustrative. **The live constant list is (C_ℓ, B_0, E_0, a,
+n_♯), RLARGE l.545.**
+
+**A construction attempt over EIGHT routes failed**, two using none of the review's evidence. Cleanest
+is **(K8)**: a_RS := min{a_η, κε_1²/(256N)} with *"a_η from (PLD)_k (i)"* (l.1020-1021) — and l.513-514
+lists **(PLD)_k (i)-(ii)** and *"RS-joint and the greedy joint pricing"* among the **"Not hypotheses of
+RLF-step v3"**. **a_RS's own input is off the route.** **(K7)** refutes ARS_FIX l.298-300 directly:
+Lemma RS's clauses (R1)-(R5) contain **no a_RS**; the weight Ce^{−a_RS/g²} is formed only at superseded
+l.1023; and l.615-617's subject is three named items, all carrying exponent **a**.
+
+**l.830** is live text (a v3 reading note) and the only live mention — but it repairs the g_k → g_{k+1}
+conversion **performed only at l.1023**, which the live route does not perform (l.114-116: *"On the HW
+route the bad window is priced at its own level's coupling u_j, so the defect price itself carries no
+e^{aR}"*). KN_ADOPT §4's 0.30103 decades is correct arithmetic against a live hypothesis about a
+**superseded site**.
+
+**>>> THE LIVE EXPONENT a = θa_bad = 1.040·10⁻⁸⁶ CLEARS DX′ BY +63.619 DECADES, at every live ε_1.**
+(check A7; A10 finds no sign changes across all four, so (C6) does not rescue (C2) either.)
+**(C2) is DISSOLVED — vacuous in both horns. RLARGE l.618 is TRUE as written, and PROOF.md's
+[S24-flag 6] is REFUTED** (recorded as [S25-fix 4]).
+
+**Two corrections to T55-H, the review that opened this — and to the lead for relaying them.**
+(i) Its **"zero grep hits" claim is FALSE**: ARS_FIX cites §3.5 at **l.294 and l.788** and even quotes
+*"(a = min{θa_bad, a_A})"* — **it saw the replacement exponent and did not follow it**, which is a
+different and more interesting failure than not looking. The lead copied "zero grep hits" into this
+ledger without checking. (ii) Its *"the one place η_1²/(2N) becomes a cost"* misses **HIST l.1379**.
+Three of the review's four quotations hold verbatim (l.435, l.438, l.835); **#3 is truncated** — l.439
+reads *"stands **for the frozen lemmas**"* — but correcting it reverses nothing.
+
+**RS-lin: PROVEN and live, and it rescues nothing.** Re-derived by hand from PM (l.140-149) and KQ
+(l.155-166) — proven, not cited — and live via CL^J (step 1 of RLF-step v3). **η_q is already the
+threshold v3 uses: in RLARGE's live body η_1 has NO consumer and η_q has three** (l.82-83, l.297,
+l.443). But RS-lin's *defect-pricing* use is RS-joint ⇐ (PLD-q)_k, on the same l.513 excluded list.
+**POST-HOC: the live a is 2.203 decades BETTER than RS-lin's 6.525·10⁻⁸⁹** — T55-H compared RS-lin to
+the baseline it had just shown nobody reads, never to **a**.
+
+**Checks A1-A10 all PASS, all four designed-FAIL controls fired.** a_RS = 5.931360·10⁻¹⁶⁶ (matches the
+SYMBOLS ledger to 0.000000 decades); A9 splits the 79.84 into 78.950 (η_q²/η_1² = 4/ε_1², exactly
+HIST l.181) + 0.887 (625/81); C_Ω reversal at 4.2149·10¹⁵ (T55-H had 4.14·10¹⁵, from carrying −15.617).
+**Defect-2 note: the −15.62 breach is at an unstated C_Ω = 1.** **Symbol hygiene: c_RS is ≥2 objects
+with no SYMBOLS.md entry** (625 at l.1021 vs 81 at l.435/HIST l.185-186 — worth 0.887 decades), and
+**n_♯ is 2 objects, twelve lines apart** (l.1024 vs l.829).
+
+---
+
+## T55-K — `NBG_ADJ.md` + `checks/ad1_*`. **TWO obstructions. The question was ill-posed.**
+
+**The count depends on the unit, and the name (GAP-Z) carries THREE inequivalent objects.** Distinct
+**statements**: three, no pairwise implication — **T55-E right here**. Independent **paper-scale
+obstructions**: **TWO — (GAP-Z) and (G♯_0-field); (N-bg) is NOT one, it is downstream** — T55-D right
+that (N-bg) adds no paper, **wrong about what it reduces to**. Open **work items** on the (N-bg) branch:
+**six** — (CL-4), BFT-1 at the weight pair, (GAP-Z), (N-loc)^Z, Combes-Thomas [ARGUED], (C_g-θ) BCH
+remainder [ARGUED].
+
+**The graph:** (G♯_0-field) ⟸ [multi-level per-level-slice gap] + [(G♯_0-fine)]; (GAP-Z) ⟸ [flat 𝔐-pair
+bound] + [(HESS-rel), GAP]; (N-bg) ⟸ (CL-4) + BFT-1 + (GAP-Z) + (N-loc)^Z + CT (Theorem NB-5), or via
+NORMS route (ii) bypassing both. **The two subtrees share no node. (N-bg) has no outgoing edge.**
+
+**What survives of T55-E:** the non-identity, **UPHELD and PROVEN**. **Z = 1 IS admissible** (𝒦(ε) =
+{f_k ≤ ε}, BFT_B l.2865) — the step the lead flagged does not fail. The phrase diagnosis is confirmed
+and sharpened: *"lane A's U = 1 package"* appears at **three** sites with two meanings, **one of them
+backticked so grep misses it**. **What does not survive:** the three-line proof is **unsound** under
+BFT_B l.4334's operative clause (a slice coercivity, not M); two of four mismatches are
+reading-dependent; and the count of three. **A refutation needing no banked PROVEN, which neither
+worker gave: PROOF l.3613/3615 make (G♯_0-field) = [per-level-slice gap] + [(G♯_0-fine)]**, and
+(G♯_0-fine) is OPEN for an unrelated reason (l.3612 — the K ≠ 0 alias symbol is not analytic in a
+strip); **(GAP-Z) is at most the first, on the wrong slice, and disclaims the second.**
+
+**What survives of T55-D:** Lemmas NB-1/NB-2/NB-3 and Theorems NB-4/NB-5 all stand; the reduction is
+**non-circular** (first-order hypotheses, third-order conclusion) and non-trivial; NB-4 re-derived
+independently without pre-registering its numbers. **What does not:** its **"two independent
+derivations" claim is FALSE** — §A4.2's second leg is cited verbatim from BFT_B l.4594/l.4737, *the very
+claim under refutation* — and its own §A4.1 table lists BFT-1 at the critical chain as a second
+background-specific OPEN input, so (N-bg) does **not** reduce to (GAP-Z) alone. **Both headlines
+contradict their own bodies**, and on the one row where their reasoning meets they agree.
+
+**PROOF.md [S25-fix 2] STANDS, amended at four points** (recorded as [S25-fix 5]). **Collapses the most:
+(GAP-Z)** — it discharges (C-I), Theorem TRANSP's whole (H-inv+)_Z bundle, and (H3)'s M half for NB-5,
+closing the BFT background branch and the (N-bg) branch together. It does **not** close (G♯_0-field).
+
+**>>> Highest leverage per unit work: (HESS-rel), session-scale — but T55-D NAMES THE WRONG FLAT INPUT.**
+A Neumann series in the 𝔐→Y pair needs the **Z = 1 composite-slice bound in that pair**, not
+(G♯_0-field), which lives in the §33 pair on the per-level slice. **That fourth object's status is
+recorded NOWHERE. One lane-B sentence settles whether the cheapest route to (GAP-Z) is open.** (T55-Q.)
+
+Checks: ad1-A reproduction control PASS, ad1-B PASS, **ad1-C and ad1-D designed-FAIL controls both
+fired** — and ad1-D **resolves T55-D's disclosed na1-B FAIL** as a pre-registration error with both
+forms negative and the conclusion undamaged. Honest limit: finding A6 (the fourth object) is **ARGUED**
+— the worker searched for a *record* of that bound, not for a proof.
+
+---
+
+## T55-J — `THETAW.md` §T0-§T7 + `checks/tw1_*`. **SATISFIABLE. The clash was the symbol defect one level up.**
+
+**SIX jobs, not three** — and all six already have lane names, so no new vocabulary: **J1 θ_w^c**
+(curvature displacement = BFT-1's curvature decay), **J2 θ_w^r** (residual), **J3 θ** (the source weight
+ω_l), **J4 α** (Campanato/Hölder), **J5 m** (*also quantified once for three jobs* — 𝔐's weight l.396,
+BFT-3's tree rate l.412, BFT-4's polymer weight l.415), and **J6 θ_A — a MISSING CLAUSE.** BFT-1 states
+a curvature bound and a soft-fluctuation bound and **no potential bound**, yet **Theorem N1-15 consumes
+|ζ^c_jY|_∞ ≤ 𝔠_PL^{−(k−j)} twice in every cubic vertex** (NORMS l.530, 536, 544-545, 550); 𝔐^∇ carries
+it silently through a coarse-unit convention (BFT_A l.378) **with no symbol and no clause**.
+
+**Consumed windows vs stated.** θ_w^c: stated (0,2], **consumed {2} — a point, not an interval** (floor
+≥2 forced in both branches of θ_A = min(1, θ_w^c−1); ceiling ≤2 ARGUED). θ_w^r: stated (0,2],
+**consumed > 2 strictly** — *the stated interval excludes every admissible value*, and **𝔐 as built
+records only 2, sitting exactly on A = 1**. θ: **(0,1) with α < θ** — θ < 1 because C_P = L/(e(1−θ)lnL)
+diverges, α < θ necessary by counterexample — i.e. **narrower at the top than stated but WIDER than the
+¾ ceiling**. **And θ ≤ 1 − α is NOT a proven constraint**: BFT_A l.560-561 says it enters *"only through
+the repaired plain slot (BL-6(c)), ARGUED"*, l.834's proven list is θ > 0, θ < 1, α ≤ θ, and **the ¾
+figure at l.396-397 is superseded 430 lines later by [RBA2-fix] B4.**
+
+**>>> SATISFIABLE, and the worker departed from the lead's framing to say so (D6).** The four
+"incompatible windows" were **three windows on J3 and one requirement on J2** — decoupled they constrain
+**different variables and cannot clash**. **The clash was the single-symbol defect operating one level
+up.** Feasible: **R_lin** (θ_w^c = 2, θ_A = 1, θ_w^r = 3, 0 < α < θ < 1, m = 0) → **A = L^{4−3−2} =
+1/3**; **R_full** (+ nonlinear rows, θ_w^r ≤ 2+θ) → **A = L^{−θ}, a contraction for every θ ∈ (0,1)**.
+New and ARGUED: **A_soft = 1/3 is the data-only rate and an unattained infimum**; the honest composite
+rate is L^{−θ}.
+
+**Genuinely empty: ONE slot.** The two GAP-1 (F3) plain-current rows (BFT_A l.229, l.244) have no level
+decay, and BL-6(b) proves the linear side needs θ > 1−α while the remainder side needs θ ≤ 1−α — empty
+for every (α,θ). **This is also where the ≈25(k−1) level-count factor lives (l.822-824): the θ question
+and the k-factor question are ONE question.**
+
+**>>> MINIMAL REPAIR: one clause, (W2)/(SPD) at BFT_A l.830-831, stated with exponent 1 — and σ > 0
+SUFFICES.** A row at level l of size L^{−σ(k−l)}η² is absorbed by ω_l = L^{θ(k−l)} iff θ ≤ σ, and α has
+no positive floor, so take α = σ/2, θ = σ; the cost of small σ is constants only. **The target the lane
+should prove is "some positive power", not L^{−(m−l)}** — materially easier, and it buys the whole
+region. (T55-R.) Partner (W1)/(G♯-rough) does **not** soften: BFT_A l.996-999 overshoots by L^{(k−l)/4},
+an **irreducible ¼-per-level deficit at α = 0⁺**.
+
+**d = 4 is not a bookkeeping failure, and the direction is the opposite of what was assumed.** At the
+maximal supplies (θ_w^c, θ_A) = (2,1), Wilson reads d ≤ 4 and soft reads θ > d−4: the region is
+non-empty for **d ≤ 4 and EMPTY at d ≥ 5**. But at d = 4 **and only there**, Wilson has **exactly zero
+slack**, θ_w^c is pinned at a point, the whole soft margin collapses onto θ, and both of θ's endpoints
+are excluded by proven consumers. **This is the marginality of the 4D cubic vertex written in weights,
+and the three lanes are reporting one phenomenon.** Caveat: zero-slack rests on the ARGUED ceiling
+θ_w^c ≤ 2 — **proving it is one lower bound on the one-level curvature response on ℤ⁴, and is the
+cheapest named upgrade.**
+
+**Also: θ is THREE objects and α is TWO** — and two of the θ's sit **three lines apart inside the BFT
+clause-set** (the source exponent, and the Hessian threshold θ := (1−K̄)/2 at PROOF l.6326 whose
+C_θ/C_θ^ρ/ε_θ family REVIEW_S22 l.417 names).
+
+**Restatement (THETAW F1, append-ready):** exponents move **out of the existential into the data** —
+θ_w^c := 2 and θ_A := 1 as pinned numerals, θ_w^r a parameter with floor > 2, **(α,θ) universally
+quantified over 0 < α < θ < 1 with constants depending on them**; only ε_0, r_ℂ, m_0, C_0, T_0 stay
+existential. **BFT-1 becomes (1a) curvature / (1b) soft fluctuation / (1c) potential**, (1c) new and
+CONDITIONAL on (N-Q) and (N-loc). BFT-5 reads *"in the (𝔐(α,θ), Y_{α,θ})-pair"*.
+
+Checks: **tw1-A PASS** (the single-θ_w system is EMPTY — reproduces [S24-fix 3] independently);
+tw1-B/B′ FEASIBLE over 440/660 exact points; **tw1-C and tw1-D designed-FAIL controls both fired**
+(θ = 0 → EMPTY; d = 5 → EMPTY). One FAIL disclosed: `tw1_feas.py` aborted at a display line on
+`Fraction(1, 3**(-e))` for non-integer e, after all eight gates had printed; re-run as `tw1b_display.py`
+with criteria untouched. Second cosmetic defect disclosed by the worker: tw1b's bracket line prints a
+false inequality for fractional exponents.
+
+**Biggest obstruction in scope: not the exponents.** It is **(W2)/(SPD) at any positive power** — the
+same obstruction as the level-count factor k that HANDOFF already ranks first — and behind it **(N-Q)**,
+which pins θ_A at its proven ceiling and **appears doubled in both contraction conditions: if θ_A < 1,
+the Wilson clause fails at d = 4 outright.**

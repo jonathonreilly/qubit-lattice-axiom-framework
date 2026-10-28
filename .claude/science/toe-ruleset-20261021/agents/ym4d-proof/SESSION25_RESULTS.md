@@ -1413,3 +1413,16 @@ an artifact of the norm — ARGUED, not proven. 10 CONFIRMED / 1 NOT-VERIFIED / 
 S10-6's ≈25(k−1) (its optimising θ* falls below α = ¼ for k ≥ 5; the honest pre-repair figure was (121/13)(k−1))
 and the lead's "(SPD)/(W2) is the missing input". **Not banked yet: Codex is attacking TR-1
 (CODEX_REVIEW_TR.md).** Follow-on launched on Opus 5.5: **KFACTOR_OFF55.md** — the off-critical contraction.
+
+**(CO-fun) follow-on — `COFUN_CC.md`** (claude-opus-5-5, max). X1 holds at every step (and Lemma FLUX gives an
+explicit face-flux current, no max-flow needed — matching both Codex reviews). **(CO-fun) holds on the whole (cc)
+class, sup AND Hölder halves** (Theorem CC-FUN (b): datum part by BFT_A Prop BL-4 + BL-C, remainder by COF step (d)
+via the new Lemma DEC). **The lead's message to this worker was wrong in one place:** CODEX_REVIEW_C2 already
+CONFIRMS the Hölder half in the (C2-COF) form with the top-response term kept — the banked line in PROOF.md said
+"supremum half" and is corrected to both halves. **New, unreviewed: Lemma TOP-cc** → Hölder half with no response
+term, and **(NC-Γ)_cc in full at the trivial background, m = 0 (Theorem CC-INV) — the gauge-invariant half of
+BFT-5 clause (b).** Codex check launched (CODEX_REVIEW_TOPCC.md). **Clause (b) stays OPEN on three items:
+(G♯_0-field) for the field components; the background transfer incl. the new (CC-dec_Z); Theorem COF at m > 0.**
+Lemma H-FREE: the data map is the same for both h_l operators (the collision is harmless for the assembly).
+(TENT-Q) and relatives off the critical path. 25 CONFIRMED / 1 NOT-VERIFIED / 4 REFUTED (all four are the
+"(CO-fun)[cc] FALSE" family). **Launched on Opus 5.5: GSHARP55.md — (G♯_0-field).**

@@ -192,3 +192,82 @@ binding fix — and that makes **RLARGE row 9 and HW row A5 stale**.
 **Biggest live wall: (CONST-T), EPS-T's Moser constant.** Not the mathematics of route β.
 *Lead reading: this is the most tractable high-value item surfaced so far — a bounded, session-scale
 computation that decides whether the whole (CLS-min) → RLARGE interface carries a number or not.*
+
+## REVIEW_HW_S5 (T51-A, 4 of 5) — landed. 714 lines. The most consequential review of the five.
+
+HW.md's md5 unchanged; no numeric lock taken (everything exact/Decimal in plain python). 11 binding fixes.
+
+**The headline survives and could not be broken.** Theorem CRC-2T (HW.md l.1554-1604) is a correct
+implication. The induction is on the finite integer N(R) = |S_R|, every inner application is at a strictly
+smaller value, the telescoping is exact, and step (4)'s event algebra (three R-freeness / maximality clauses)
+holds. **Both of the lead's primed suspicions fail to materialise:**
+- it is **not** a nonlinear bootstrap — inducting on the *number of constrained pairs* instead of on the
+  level is the session's real idea, and it is what closes the m = k+1 step REVIEW_HW_S4 said could not close;
+- **no one-species criterion is applied to a two-species gas.** (S1) *is* the species-1 criterion in the
+  standard Δ²z ≤ ½ form (step (6)); the far-defect → animal direction is paid by the induction's own c_U and
+  closed by 2ε_2 ≤ c_U. Both cross terms are accounted for.
+
+**But there is no cluster expansion.** §30.4's "two-type gas" is a **bestiary**: no partition function, no
+compatibility relation, no Mayer identity, no Kotecký-Preiss criterion. §29's Target V2(a) ("bounded by the
+gas's partition-function ratio or polymer sum") is **never delivered**. The induction is *better* than what
+was asked and should be claimed as that, not as a cluster expansion.
+
+**>>> THE KEY QUESTION IS ANSWERED FAVOURABLY: the smallness condition IS satisfiable.** The reviewer traced
+the g-dependence of every constant: a = θc_prε_1² with ε_1 at its own **g-free** ceiling; H5 *relaxes* as
+g → 0; c_att, b_n, b_D are pure geometry; a_A ≥ θa_bad. **g²_CRC is a fixed positive number, not a moving
+target.** The self-defeating failure mode does not occur.
+
+**Three reversals of session 5's own reported verdicts** (independent 120-digit Decimal arithmetic):
+1. **(S2) and (T) impose nothing new.** (S2)'s ceiling = 4.89789e-97; REL-boot's r ≤ ½ ceiling at the
+   session's own c_f = **4.89802e-97**; HIST-sum's own condition = **4.898e-97**; (T)'s threshold
+   9.99104e96·c₊ against n_H(a, B_0) = **9.99102e96·c₊**. **The entire tightening is the ×6561 that SH-att's
+   N_4 step puts into c_f.** One lever, not a chain.
+2. **>>> THE BREACH DOES NOT BIND.** REVIEW_RLARGE_V3 l.61 and REVIEW_SF_S7 l.335 put the binding ceiling at
+   **g_0² ≲ 2.5e-152/C_Ω — slack by ~55 orders** for c₊ ≲ 2e55. **HANDOFF's resume step 3, "lower g_0 and
+   recheck the SF thresholds", is WITHDRAWN.** There is no constants crisis; session 5's text implies one
+   that does not exist.
+3. "n_♯ grows by ≈ 10¹⁰" uses a **stale n_H** (2e87); the reviewed value is **1.81e91**, and at HW's own B_0
+   it is 1.0e97·c₊ ≈ n_T.
+
+**The cheapest real gain, which session 5 dismisses as "not needed".** SH-att's **6561 → 2401 is free in one
+line** (use sh(P) ⊇ N_1(π^r P)). And the session's own check B2, plus the reviewer's re-runs at M = 20/40/80
+and an adversarial sampler (max excess 257 per Y-cube, depth-stable), **suggest the multiplicative factor is
+removable altogether — which would put g²_CRC at 3.2e-93/c₊, ABOVE the recorded ceiling, and make session
+5's headline "failure" vanish entirely.** Commissioned as HW session 6, Target 1.
+
+**(E2^𝔉) has three undeclared deltas against node A's actual statements**, i.e. HW is asking node A for
+strictly more than node A owes: (i) **allowance currency** — PLD gives the slice s_k(𝔥) (l.1856) or ‖S‖_sh
+(l.1408), while (E2^𝔉) wants the **union form over the attached patch**, which is neither; (ii) PLD covers
+**k ≥ 2 only** ((LCR)_0 OPEN, l.1905) while (E2^𝔉) carries a level-0 clause that is itself mis-levelled;
+(iii) **F_< is a free unquantified symbol.** Also the route of record switches **TF-1 off**, reinstating the
+node-A law mismatch TF-1 removed.
+
+**A favourable narrowing of the session's own new pessimism.** §24.3's doubt that a good buffer cannot screen
+(straddling plaquettes) **does not transfer**: LI-pw is *pointwise* while (E2^𝔉) is an *expectation*, and the
+measure suppresses the offending configurations at cost e^{-c/g_j²}.
+
+**Process.** §29's pre-statement is **VERIFIED byte-exact** (located by brute-force hash search: 3695 bytes
+at offset 144433, md5 7830e9f0); all six [RHW4-fix] fixes really applied; **w5 fully reproduces — all 11
+verdicts**, in the reviewer's own code on a different toolchain (Decimal-120, pure python, exact Fractions).
+But **binding rule 2 is breached**: the w5 criteria contain b_n, b_D, c_att derived in the same session, and
+A1/A4/A5's PASS bands are brackets drawn around §30.6's own hand values. Criteria-before-script is
+NOT-VERIFIABLE (the worktree checkout normalised all mtimes). §29's promised check-(ii) negative control was
+**never run** (max 2z² = 0.783). HW.md has **no "FOR OTHER FILES" section** despite raising demands on PLD
+and RLARGE — a rule-8 breach.
+
+**Verdict on (CRC-1): dissolved as a wall, NOT discharged.** It is CONDITIONAL on (E2^𝔉), which is strictly
+stronger than what node A owes. **RLARGE's critical-path item 1 should be re-labelled from "(CRC-1), a
+two-species cluster expansion" to "(E2^𝔉)".**
+
+**Biggest live wall: the union-form allowance e^{c_A‖col Γ ∪ Y‖_sh} over the whole attached patch — a
+differently-shaped statement nobody has written.**
+
+**LEAD ACTIONS TAKEN.** (a) HW session 6 commissioned: apply the 11 fixes, take levers (a) and (b) on the
+×6561, restate CRC-2T as an induction on constrained pairs, renegotiate (E2^𝔉) into a form node A can owe,
+and open a FOR OTHER FILES section. (b) The (E2^𝔉) deltas and the real wall forwarded to the node-A worker
+mid-run. (c) **Two reviews now converge on the allowance currency as the crux** — REVIEW_PLD_S5 found PLD
+using a currency HW had struck, and REVIEW_HW_S5 finds HW demanding a third currency PLD never offered. That
+is the HW/PLD interface defect, seen from both sides independently.
+
+**Scoring T51-A:** 4 of 5 in. Three sessions' headlines narrowed or relabelled, one session's reported
+verdicts reversed three times, zero headlines refuted outright. Pre-stated expectation **met**.

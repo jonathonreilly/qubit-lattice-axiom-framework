@@ -563,3 +563,113 @@
   of a **demonstration** (that the two available bounds separate on the test data), not of a lemma: the constructed family
   inflates π_0(j_0) because `solve_div` builds an antiderivative, so B^ψ_0 exceeded B^ξ_0 on every instance. C4 (a) — the
   inequality Proposition COF-size actually uses — passed everywhere.
+
+---
+
+# Session 11 (2026-10-28 UTC) — the nontrivial background: the input audit, (N1), conjugation transport, g_Z at θ > 0
+
+## Step 1 (process): PRE-STATED first
+- **§38 (PRE-STATED, session 11) is the FIRST edit of session 11.** Appended at the end of BFT_B.md; stat time
+  **13:58:33 UTC**; **20,581 bytes** appended (BFT_B.md 555,646 → 576,227 bytes). Statements only. Nothing in §38 cites a
+  result of this session; its only claim is file order. §27-§37 (sessions 9 and 10) are **not edited** — they are under
+  review and they are the record; everything this session has to correct in them is entered as a dated erratum naming the
+  line it corrects.
+- Reading that preceded the append (not recorded, so §38 claims nothing but file order): BFT_B §27-§37 in full, §12.0-§12.3,
+  §15.0-§15.4, §16.1-§16.9, §21.0-§21.3, §22.8-§22.10, §25.5; REVIEW_BFT_B_S5 Parts C, D, E and the overclaim list;
+  REVIEW_S22 l.389-432 (the BFT statement, the norm 𝔐 and the anti-circularity constraint); REVIEW_BFT_A_S8;
+  BFT_A §12.2-§12.3, §21.2, §23.7-§23.12, §26.1-§26.2, §28.4-§28.9, §38; LINEAR_PACKAGE §3, §4, §6, §9, §10;
+  PROOF.md l.6525-6560 and l.6731; HANDOFF; SESSION24_RESULTS.
+- Targets, pre-stated in §38.0: (1) the audit of the six lane-A inputs into Tier A/B/C; (2) (N1) stated clause by clause
+  and its minimal consumption by BFT-0/1/2; (3) transport by conjugation, priced in 𝔐; (4) (CovLift) (iv)'s non-residual
+  g_Z at θ > 0. Six failure modes S11-F1..S11-F6 pre-stated in §38.5; check bb11 planned in §38.6 with the explicit
+  warning that the model must be **nonabelian** (bb9b's and bb10's abelian model is vacuous for every §38.3 statement).
+
+## Step 2 (process): criteria before scripts; the model had to change
+- `checks/bb11_criteria.md` born **13:59:43 UTC** (8,867 bytes), with one amendment appended at **14:02:18 UTC**, **both
+  before any bb11 script existed** (`checks/bb11_bgd.py` born 14:04:15). The amendment has six items and is disclosed in
+  full in the criteria file: A1's exact form (transport prefactor, far corner), A3's norm changed to the exactly-computable
+  Frobenius form (which **strengthens** the constant from 2 to 1), A4b's sign, the box reduced from `Ñ_X` to own
+  half-width 2 (`Ñ_X` is 4107 rational unknowns in this model), B1's tents and B2's **pointwise** intertwining forms, and
+  C2's construction. **No bb11 criterion was retuned after any outcome.**
+- **No constant derived in session 11 appears in either criteria file.** The only constants are the model parameters
+  (`d = 2`, `L = 3`, `k = 2`), the rational rotation entries `3/5, 4/5`, and the elementary `||M v|| ≤ ||M||_F ||v||`.
+- **bb11 is the first lane-B check that is NOT abelian.** For an abelian group `Ad ≡ 1` and every statement of §38.3 is
+  vacuous, so bb9b's and bb10's model could not be reused. bb11 uses **SU(2) in the adjoint** with every `Ad_{Z(b)}` a
+  product of rational 3-4-5 rotations, so all arithmetic stays exact in `ℚ`. `checks/bb9b_rtcc.py` and
+  `checks/bb10_cof.py` are **not edited**; `checks/bb11b_quant.py` reads `checks/bb11_bgd.py` and cuts it at its TESTS
+  banner without modifying it.
+- No numeric lock taken (DRIVE_BRIEF rule 6: exact rational arithmetic in plain python, no numpy/BLAS). Load 1.69 at
+  launch. **bb11: 13.24 s, 20.9 MB. bb11b: 4.22 s, 17.9 MB.**
+
+## Step 3: results (§39-§43 appended; file 576,227 → 660,202 bytes; §27-§37 byte-identical and untouched)
+
+- **§39 Proposition AUDIT (PROVEN-HERE) and Proposition SIX-RED (PROVEN-HERE as a reduction).** The six lane-A inputs
+  decompose into **Tier A** (operator identities, background-free), **Tier B** (four exactness steps: `d*d* = 0`; root
+  covariance; "a constant 2-form is co-closed", which sits inside Theorem YH — **S11-F1 OCCURS**; "a closed 1-form is a
+  gradient" / "`d` of a constant is 0") and **Tier C** (four shared analytic kernels: `M`/`M_f` of LINEAR_PACKAGE Theorem
+  4.2′; `C_α` of LES/LES-div; `C_K`; Lemma LE). **Corollary LIN0 and Theorem CO-upR carry NO kernel of their own**;
+  W0, GU, CO-0R, CO-B rest on the same list, and only W0 needs `𝒩*`. **So the nontrivial background is four shared
+  kernels and four exactness defects, not six background hypotheses.** [S11-fix 1] corrects §33.3/§37.3's reading.
+- **§40 (N1).** Stated clause by clause (a)-(e). **This session REFUTED its own pre-stated Theorem N1-alg** (bb11 **A5
+  FAIL**): §16.1 (a)'s gauge shift uses "`d` of a constant is 0", and `d_Z`(const) `= (Ad_Z − 1)c ≠ 0`. The exact
+  replacement is (40.1) (bb11b A5g, exact). **(N1-a) is PROVEN-HERE in the narrowed form (a′)-(g′)** — the gauge shift on
+  the **pinned** class, which is exactly what §16.1 (d), (e) use (bb11 B1 PASS at a curved nonabelian background) — with
+  uniqueness by **Lemma CL-uniq** (CONFIRMED) and **stronger** at `Z ≠ 1` than at `Z = 1` (bb11 A6). **S11-F4 OCCURS**:
+  covariance becomes equivariance in `(Z, x)`, which is what Theorem GI-cov consumes. **`Λ_0` cannot be read modulo
+  constants at `Z ≠ 1`** (bb11b A6q) — a simplification that costs nothing, since GT-split already takes that
+  representative. **(N1-d) PROVEN as an implication of the new named item (N1-nd)** = Lemma FG (i) at `Z` = the
+  linearisation of BFT-0's own uniqueness clause. **Proposition N1-CONS (PROVEN-HERE as bookkeeping):** BFT-0/1/2
+  consumes **(N1-a) + (N1-d)** for (CL-0)/(FP♯′) — both algebraic — plus (N1-c) for §16.9, and (N1-b)/(N1-e) only as the
+  𝔐-bridge.
+- **§41 conjugation transport.** **Lemma CONJ (PROVEN-HERE):** at a **flat** background `Ad_G` intertwines everything
+  exactly, pointwise — so the deviation from the trivial problem is governed by the background **curvature**, not by
+  `||log Z||`, and `f_j ≤ C_N f_k` holds on all of `𝒦(ε)` gauge-invariantly with no global gauge (**SF's BNA-F4 is about
+  `log Z`, not `F_Z`**). **Theorem BGD:** (a) PROVEN-HERE, `(d_Z d_Z λ)(p) = (U_1 − U_2)λ(far corner)` with
+  `||U_1 − U_2||_F = ||Ad_{W_p} − 1||_F` and own size `≤ c_N C_N L^{−2(k−j)} f_k`; (b) PROVEN-HERE as an identity —
+  **root covariance is EXACT iff the background is a straight-row tower, which §25.5 proves for `Z^off`** — and
+  CONDITIONAL on `(C_g-θ)` for the size off the tower; (c) PROVEN-HERE, **both defects are level-diagonal-relative, so
+  they cost a FACTOR `(1 + C f_k)` with no weight penalty, no factor `k` and no restriction on `θ_w ∈ (0, 2]`**
+  (**S11-F2 does NOT occur**). **Lemma FR-price (PROVEN as an implication of Corollary CL-iv):** in the **box normal
+  form** frame the local kernels (C-II), (C-III), (C-IV) and (N1-b), (N1-c) transport at `(1 − 8c_N C_1 f_k)^{−1}`,
+  k-, T-uniformly; **the complete axial frame cannot be used** (BNA-F4 on one box). **S11-F3 does not occur for T ≥ 17.**
+  **Proposition NL-GLOB:** Theorem 4.2′ is a **momentum-space** argument, so **(C-I) is the only kernel that does not
+  transport**; it splits into **(GAP-Z)** and exponential locality (Combes-Thomas, scalar weight, ARGUED).
+  **Theorem TRANSP (PROVEN as an implication): `(H-inv+)_Z` follows from `(GAP-Z)` + `(N1-nd)` alone, at the price
+  `(1 + C f_k)`.** Anti-circularity checked explicitly: (GAP-Z) is the composite `ℓ²`/symbol input, the same shape as
+  Theorem 4.2′ ⟹ W0/GU ⟹ LIN0 at `Z = 1`; no per-level `C^{(j)}` is used as a Newton inverse.
+- **§42 (CovLift) (iv)'s non-residual `g_Z` at θ > 0. Lemma GZ-SLOT (PROVEN-HERE):** the non-residual components are
+  exactly the **(G) slot with 2-form `F_j(Z)`** plus a plain slot of order `f²`. **Proposition GZ-FALSE (PROVEN-HERE):
+  the clause is FALSE at every θ > 0 for EVERY lift** — it demands coarse-curvature decay at rate θ while BFT-1's
+  **maximal** `θ_w^c = 2` gives `f_l ≤ C f_k` with no decay. **Not a nonlinearity, not a parametrisation artefact — a
+  currency mismatch**, and `θ > 0` is doing real work because Theorem GU needs `θ > α > 0` in the same slot.
+  **Theorem Cg-nr:** the (G)-slot representative is free modulo `Ker d_Z^*` and its consumers take it as input, so the
+  clause reads with `𝔤_l = inf{||(F_l − 𝒫)^c||_∞ : d_Z^* 𝒫 = 0}`; `(N2-lip)` gives the right size, weighted
+  `≤ C(L, θ) f_k` for every `0 ≤ θ < 1`. **S11-F5 OCCURS**: the block-wise `Z`-parallel comparison 2-form is co-closed
+  only inside the blocks, so the residue is a **per-block neutrality condition** (Lemma BOG's no-wrap clause) — the new
+  named item **(CURV-dec)**. A reduction of an OPEN item to a sharper OPEN item.
+- **S11-F6 OCCURS and is answered (ARGUED):** W0 step 4 / CO-0R / CO-B apply LES "on the periodic lift", which has no
+  frame; **Theorem W0-loc is W0 step 4 in box form**, exactly the box Lemma FR-price prices, so the lift is a device and
+  not a requirement — but the box forms of CO-0R's and CO-B's applications are written nowhere.
+- **New named items:** **(N1-nd)**, **(GAP-Z)**, **(CURV-dec)**, all OPEN, all stated. **(GAP-Z) is NOT a new item:**
+  it is BFT-5's input (1), (G♯_0-field), moved off the trivial chain, and LINEAR_PACKAGE §10's paper-scale "propagator
+  bounds at a general background [cf. CMP 95, 96, 99]". **The nontrivial background and BFT-5 are ONE obstruction.**
+- **Errata entered against this session's own reading (sessions 9 and 10 stand as the record):** **[S11-fix 1]** to
+  §33.3 item 1 / §37.3 item 4. Two of this session's own §38 displays were corrected before any script existed, in the
+  criteria amendment: `d_Z d_Z`'s far-corner form and the **pointwise** (not `G(c_X)`) intertwining of Lemma CONJ.
+- **Checks: bb11 NOT ALL PASS (A5 FAIL — a correct FAIL of a wrong pre-stated statement; output and script kept
+  unaltered, NO rerun of bb11); bb11b ALL PASS** under new criteria with four new pre-registered tests. Six scope
+  limitations recorded in §43.1, of which the material one is **limitation 2**: the reduced `5 × 5` box tests the algebra
+  but **nothing** about Lemma FR-price, whose whole content is that the box has fixed **coarse** size.
+- **Not attempted:** lane A's `DX_m`, `DB_m` at `m > 0`; `(GAP-Z)`; `(N1-nd)`; `(CURV-dec)`; the three-neutrality
+  identification; `(TENT-Q)`/`(NEUT-box)`/`(Y-sup^loc)` (session 10's residue).
+
+## Step 4 (process): one self-clarification appended, nothing edited
+- **§43.4** appended (14:17:44 UTC) clarifying §41.2 (c)'s "level-diagonal-relative": the claim is about the **defect
+  operators** (cost = a factor, no weight), while the **one level-crossing composition** in which a defect appears —
+  Lemma SPLIT's `Σ_l ev^{(0→l)T} d_Z* d_Z* G_l` — is priced separately in §41.3 and lands on **(TENT-Q)**. §41.2 and
+  §41.3 stand unaltered as the record, in the same way session 10's §37.4 corrected §37.1 without editing it.
+- **Ownership respected throughout:** the only files written this session are `BFT_B.md` (appended: §38-§43),
+  `BFT_B_LOG.md` (appended), and `checks/bb11_criteria.md`, `checks/bb11_bgd.py`, `checks/bb11.out`, `checks/bb11.time`,
+  `checks/bb11b_criteria.md`, `checks/bb11b_quant.py`, `checks/bb11b.out`, `checks/bb11b.time`. **§27-§37 verified
+  byte-identical** (the first 4307 lines of BFT_B.md are 555,646 bytes, the pre-session size). No git command was run.
+  Every request on another lane is in the "FOR OTHER FILES (session 11; not edited)" section.

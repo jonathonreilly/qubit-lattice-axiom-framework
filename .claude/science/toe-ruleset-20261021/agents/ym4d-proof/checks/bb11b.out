@@ -1,0 +1,9 @@
+bb11b -- the quantifier on the covariant gauge shift (d=2, L=3, K=2, SU(2) adjoint, exact Q)
+
+A5p    PASS  mu(c_X) = 0: lam^{E,Z}(x + d_Z mu) = lam^{E,Z}(x) - mu exactly (curved background)
+A5g    PASS  general mu: lam^{E,Z}(x + d_Z mu) = lam^{E,Z}(x + d_Z kappa) - mu + mu(c_X) exactly, kappa = mu(c_X)
+A5n    PASS  non-vacuity: d_Z kappa != 0 (True) and lam^{E,Z}(x + d_Z kappa) != lam^{E,Z}(x) (True)
+A5a    PASS  abelian background: bb11's original A5 identity holds exactly (so the curvature is the cause)
+A6q    PASS  d_Z(const) != 0 at a curved background, = 0 at the abelian one: Lambda_0 cannot be read modulo constants
+
+VERDICT bb11b: ALL PASS

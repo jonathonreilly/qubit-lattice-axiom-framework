@@ -1087,3 +1087,90 @@ consumer consumes; the C_♭ clause moved OFF (CovLift)/(Mult-Y) and ONTO (N-bg)
 
 **The reviewer's summary judgement:** *"The file's real contribution is Lemma N1-1 + Theorem N1-15 + §N7's
 exponent-pair requirement on BFT-1 — substantial. Its no-go and its headline numbers are not."*
+
+## BFT_B session 11 — the nontrivial background. LANDED, and it CONSOLIDATES two of the project's
+## biggest open items into one.
+
+§38 (PRE-STATED, first edit, 13:58:33 UTC, 20,581 bytes, logged), §39-§43 + FOR OTHER FILES. §27-§37
+verified byte-identical (first 4307 lines = 555,646 bytes).
+
+### 1. The cheap audit paid off: Proposition SIX-RED (PROVEN-HERE)
+The six lane-A inputs decompose into three tiers, line by line:
+- **Tier A** (operator identities, hold at every background): duality/Hessian symmetry, adjointness, the
+  Euler-Lagrange cascade, ev^T injectivity, BL-2(b)'s straight/funnel split, 𝒜's probability-average
+  property, BL-C, telescoping, superposition.
+- **Tier B** — exactly **four** exactness steps: (B1) d*d* = 0; (B2) root covariance; (B3) "a constant
+  2-form is co-closed" (**inside Theorem YH** — S11-F1 occurred); (B4) "a closed 1-form is a gradient" /
+  "**d of a constant is 0**".
+- **Tier C** — exactly **four shared kernels**: (C-I) M, M_f of LINEAR_PACKAGE Thm 4.2′; (C-II) C_α of
+  LES/LES-div; (C-III) C_K; (C-IV) Lemma LE.
+**Corollary LIN0 is Tier A ONLY. Theorem CO-upR is Tier A + B only.** Neither carries an analytic kernel of
+its own. W0, GU, CO-0R and CO-B rest on the **same** Tier-C list; only W0 needs 𝒩*.
+**>>> So the nontrivial background is FOUR KERNELS + FOUR DEFECTS, not six hypotheses**, and (C-II),
+(C-III), (C-IV) are all **local at O(1) coarse scales.** Session 9's framing corrected by [S11-fix 1].
+
+### 2. (N1): stated, mostly closed, with a correct SELF-REFUTATION
+**bb11 A5 FAILED and the FAIL is CORRECT**: the session's own pre-stated Theorem N1-alg claimed EP-alg's
+gauge shift at every background, but it uses "d of a constant is 0", and **d_Z(const) = (Ad_Z - 1)c ≠ 0**.
+Exact replacement (§40.1) verified in bb11b (ALL PASS).
+- **(N1-a): PROVEN-HERE** in the narrowed form — the gauge shift on the **pinned** class, exactly what
+  §16.1(d),(e) use; uniqueness from **Lemma CL-uniq** (CONFIRMED), and **stronger at Z ≠ 1 than at Z = 1**.
+  S11-F4 occurred: covariance → **equivariance in (Z,x)**, the form Theorem GI-cov already consumes.
+- Λ_0/const is **unavailable at Z ≠ 1**; read Λ_0^Z := {λ | roots = 0}. Costs nothing — GT-split already
+  takes that representative.
+- **(N1-d): PROVEN as an implication of (N1-nd)** = Lemma FG (i) at Z = **the linearisation of BFT-0's own
+  uniqueness clause, hence consumed, not added.**
+- **Minimal consumption (Proposition N1-CONS, PROVEN-HERE):** BFT-0/1/2 needs **(N1-a) + (N1-d)** for
+  (CL-0)/(FP♯′) — **both algebraic** — plus (N1-c) for §16.9's fourth use; (N1-b)/(N1-e) only as the
+  𝔐-bridge.
+
+### 3. Conjugation transports, and a reframe of what was thought to block it
+- **Lemma CONJ (PROVEN-HERE): at a FLAT background, Ad_G intertwines everything EXACTLY, pointwise.** So
+  the deviation is governed by the background **CURVATURE**, not ‖log Z‖ — and f_j ≤ C_N f_k holds on all of
+  𝒦(ε) **gauge-invariantly, with no global gauge**. **>>> SF's BNA-F4 is about log Z, not F_Z.** *That is
+  the reframe: the quantity everyone took to be the obstruction was the wrong quantity.*
+- **Theorem BGD:** (a) (d_Z d_Z λ)(p) = (U₁ - U₂)λ(far corner), ‖U₁ - U₂‖_F = ‖Ad_{W_p} - 1‖_F, size
+  ≤ c_N C_N L^{-2(k-j)} f_k — PROVEN-HERE. (b) **root covariance is EXACT iff the background is a
+  straight-row tower — which §25.5 PROVES for Z^off**; off the tower the defect is the background's own
+  straight residual, CONDITIONAL on (C_g-θ). (c) **both defects cost a FACTOR (1 + C f_k) in 𝔐, with no
+  weight penalty, no factor k, and no restriction on θ_w ∈ (0,2]** — S11-F2 did **not** occur.
+- **Lemma FR-price (PROVEN as an implication of CL-iv):** the **box normal form** frame gives d_Z = d + δ
+  with relative size ≤ 8c_N C_1 f_k on Ñ_X; (C-II), (C-III), (C-IV), (N1-b), (N1-c) transport at
+  (1 - 8c_N C_1 f_k)^{-1}, **k- and T-uniformly**. **The complete axial frame cannot be used** (BNA-F4 on
+  one box). T ≥ 17. **(B3) costs nothing** — 𝔐^∇_Z's transported Campanato oscillation was already doing
+  that work.
+- **Proposition NL-GLOB:** Thm 4.2′ is a **momentum-space** argument, so **(C-I) alone does not transport.**
+  It splits into **(GAP-Z)** plus exponential locality (Combes-Thomas, scalar weight, Ad-blind — ARGUED).
+- **Theorem TRANSP (PROVEN as an implication): (H-inv+)_Z follows from (GAP-Z) + (N1-nd) ALONE**, at price
+  (1 + C f_k). **Anti-circularity checked explicitly**: (GAP-Z) is the composite ℓ²/symbol input, the same
+  shape the trivial-background chain already has; no per-level C^{(j)} is used as a Newton inverse.
+
+### 4. (CovLift)'s g_Z at θ > 0: Proposition GZ-FALSE (PROVEN-HERE) — the clause is FALSE
+**False at every θ > 0, for every lift.** It demands coarse-curvature decay at rate θ, while BFT-1's
+**maximal** θ_w^c = 2 gives f_l ≤ C f_k with **no decay**. **Not a nonlinearity and not a parametrisation
+artefact — a CURRENCY MISMATCH.** And **θ > 0 is doing real work**, because **Theorem GU needs θ > α > 0 in
+the same slot**. *This forecloses the search for a better lift, which is a real saving.*
+**Theorem Cg-nr:** the (G)-slot representative is free modulo Ker d_Z*, and W0/GU take it as input, so the
+clause reads with 𝔤_l = inf{‖(F_l - 𝒫)^c‖_∞ : d_Z*𝒫 = 0}; (N2-lip) gives the right size, weighted
+≤ C(L,θ) f_k for every 0 ≤ θ < 1. S11-F5 occurred: the block-wise Z-parallel comparison form is co-closed
+only **inside** blocks, so the residue is a **per-block neutrality condition** (Lemma BOG's no-wrap clause)
+→ new named item **(CURV-dec)**. An OPEN item reduced to a sharper OPEN item.
+*Lead: forwarded to the (TENT-Q) worker — (CURV-dec) and (NEUT-box) have the same shape and may be one item.*
+
+### 5. >>> THE SINGLE REMAINING OBSTRUCTION, AND IT IS NOT NEW
+**(GAP-Z)** is **BFT-5's input (1), (G♯_0-field), moved off the trivial chain** — i.e. LINEAR_PACKAGE §10's
+paper-scale *"propagator bounds at a general background [cf. CMP 95, 96, 99]"*.
+**>>> The nontrivial background and BFT-5 are ONE obstruction, not two, and PROOF must not count them
+twice.** Behind it, two **session-scale** items: **(N1-nd)** (paid by BFT-0's own uniqueness) and
+**(CURV-dec)**.
+
+### 6. Check discipline, and a warning about the earlier checks
+**bb11: NOT ALL PASS — A5 FAILED**, output and script kept unaltered, **no rerun of bb11**; the diagnosis
+was written into new criteria **before bb11b existed**. **bb11b: ALL PASS** (5 new pre-registered tests).
+**The first NONABELIAN lane-B check** (SU(2) adjoint, rational 3-4-5 rotations, exact ℚ) — and it records
+that **the abelian model of bb9b/bb10 is VACUOUS for every §41 statement**, without editing them.
+*Lead: forwarded to the BFT_B s9/s10 reviewer. This is the third independent finding today that a check
+lacked the power to fail, after one tautology and one gate built from the object's own primitives.*
+Six scope limitations recorded; **the material one: the reduced 5×5 box tests the algebra but NOTHING about
+Lemma FR-price, whose whole content is the box's fixed coarse size.** (N1-e) at Z is ARGUED only, and
+S11-F6 occurred (LES "on the periodic lift") with an ARGUED answer via Theorem W0-loc's box form.

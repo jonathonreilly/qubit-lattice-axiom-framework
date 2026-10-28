@@ -38,6 +38,20 @@ are to *diagnoses, statements and stale cross-references*, listed at [S24].
 - **[S24-flag 1] A PROOF-owned constant conflict, raised by PLD session 6 and NOT resolved here.** PLD
   §16.8's λ_min = 3.17·10⁻³ against REVIEW_PLD_S3's binding L0-1 (6.6·10⁻¹⁰). **If L0-1 governs, a_ret falls
   by ×4.80·10⁶** (p6 D2). Route (ii) defuses it. For SF/PROOF to settle.
+- **[S24-note 2] A SECOND accounting double-count removed, and it is larger.** BFT_B §43 (session 11):
+  **(GAP-Z), the only remaining obstruction to the nontrivial background, IS BFT-5's input (1)
+  (G♯_0-field), moved off the trivial chain** — LINEAR_PACKAGE §10's "propagator bounds at a general
+  background [cf. CMP 95, 96, 99]". **The nontrivial background and BFT-5 are ONE obstruction, not two, and
+  this ledger must not count them twice.** Behind it, two session-scale items: (N1-nd), which BFT-0's own
+  uniqueness clause pays for, and (CURV-dec).
+- **[S24-note 3] (CovLift)'s non-residual g_Z clause at θ > 0 is FALSE** (BFT_B §41, Proposition GZ-FALSE,
+  PROVEN): it demands coarse-curvature decay at rate θ while BFT-1's maximal θ_w^c = 2 gives none — a
+  **currency mismatch**, not a nonlinearity, and θ > 0 is load-bearing because Theorem GU needs θ > α > 0 in
+  the same slot. **The search for a better lift is foreclosed.**
+- **[S24-note 4] SF's BNA-F4 is about log Z, not F_Z** (BFT_B §42, Lemma CONJ, PROVEN): at a flat
+  background Ad_G intertwines exactly and pointwise, so background deviation is governed by **curvature**,
+  and f_j ≤ C_N f_k holds gauge-invariantly on all of 𝒦(ε) with **no global gauge**. The obstruction
+  everyone priced was the wrong quantity.
 - **[S24-note] An accounting double-count removed.** BFT_B §36.5: **(CO-fun)'s residue is the same functional
   as the (GE-T) refutation**, so they must not be priced as two items.
 

@@ -41,10 +41,21 @@ provisional until reviewed.**
    condition is **satisfiable** (REVIEW_HW_S5 traced the g-dependence: ε₁ sits at a g-free ceiling, H5
    *relaxes* as g → 0, b_n/b_D/c_att are pure geometry), and **the breach does not bind**: the binding
    ceiling is g_0² ≲ 2.5e-152/C_Ω, with slack ×3.59e56. There is no constants crisis.
-2. **Repairing the per-level induction, in any norm.** NORMS.md §N5 proves it is a **no-go**: the d = 4
-   cubic vertex is marginal, so A ≥ 1 in every scale-covariant norm, and the weight-invariance half is
-   proven — any A < 1 bought with non-canonical weights is cancelled exactly by the initial-condition
-   mismatch. [S22]'s cures (W1)/(W2) cannot help there. **Use the composite route.**
+2. ~~Repairing the per-level induction, in any norm.~~ **THIS INSTRUCTION IS WITHDRAWN by
+   REVIEW_NORMS_S1 (binding fix 1), which was addressed to the lead for exactly this reason.** NORMS.md
+   §N5's per-level **no-go is NOT ESTABLISHED**: "scale-covariant norm family" is used three times and never
+   defined (and as used it **excludes 𝔐's own Hölder leg**); part (i) is true but **vacuous** (it is the
+   l = k anchoring identity, which the file itself calls "the same number organised differently" at
+   l.178-182); **check n1-D is a tautology** — its code computes k·eA + k·((d-4) - eA) after discarding the
+   only derived quantity (`# placeholder, replaced below`) and returns d - 4 whether eA is 10⁶ or 1/3, so
+   "the weight-invariance half is PROVEN" has **no computational support**; part (ii) bounds an estimate
+   from above **with no lower-bound input**, the standard this ledger itself applies at PROOF.md l.6550;
+   and the pre-registered outcome **(O3) was never tested**, although c38 C is literally (O3)'s signature.
+   **The per-level route is therefore OPEN, not refuted, and a future session may attack it.** The
+   composite route remains the better-supported one (Theorem N1-15 is CONFIRMED), but that is a judgement,
+   not a theorem. *Lead's error: the previous version of this file stated the no-go as settled and told the
+   next worker not to relitigate it — a no-go was given less scrutiny than a positive theorem, which is
+   exactly what this project's standing rule forbids.*
 3. **Pricing (CO-fun) and the (GE-T) refutation as two items.** BFT_B §36.5: they are the same functional.
 4. **Treating (CO-0), (CO-up) or (SB) as open.** The first two are lane A's CONFIRMED Theorems W0 and GU;
    Theorem CO-B removes the third.

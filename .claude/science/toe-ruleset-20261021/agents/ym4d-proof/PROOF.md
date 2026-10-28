@@ -11,10 +11,16 @@ are to *diagnoses, statements and stale cross-references*, listed at [S24].
   L^{d-1} = 27 crossing links of one coarse link times the spread". NORMS.md Proposition N1-8 proves by an
   exact mass-balance identity that Z_col is the **column mass of the curvature kernel**, L^d·K̄ ≈ 9.7 plus
   (2/(d-1))K_ρ ≈ 1.5, and that **the crossing-link count vanishes once the leg is measured through d₁X**.
-  This matters beyond bookkeeping: the wrong diagnosis made the per-level route look like a *norm* problem,
-  whereas NORMS.md §N5 shows it is a **marginality no-go** that no scale-covariant norm can repair (the
-  d = 4 cubic vertex is marginal, so A ≥ 1; the weight-invariance half is proven). **Failure mode CURV-F2 is
-  therefore not repairable in the per-level form, and [S22]'s cures (W1)/(W2) cannot help there.**
+  This matters beyond bookkeeping: the wrong diagnosis made the per-level route look like a *norm* problem.
+  **[S24-fix 1a, applied after REVIEW_NORMS_S1] The stronger claim this entry first made — that NORMS.md
+  §N5 establishes a marginality no-go, so CURV-F2 is unrepairable in the per-level form and [S22]'s cures
+  (W1)/(W2) cannot help — is WITHDRAWN.** REVIEW_NORMS_S1 finds the no-go NOT ESTABLISHED: the norm class
+  is never defined and excludes 𝔐's own Hölder leg; its part (i) is the vacuous l = k anchoring identity;
+  **check n1-D is a tautology** (it discards its only derived quantity and returns d - 4 for any input), so
+  the weight-invariance half has no computational support; part (ii) bounds an estimate from above with no
+  lower-bound input; and pre-registered outcome (O3) was never tested. **Proposition N1-8's correction of
+  the Z_col diagnosis stands; the no-go built on top of it does not. The per-level route is OPEN, not
+  refuted.**
 - **[S24-fix 2] The BFT clause table ([S23], l.6695 area) is STALE in three places.** (CO-0) is lane A's
   **Theorem W0, CONFIRMED** (REVIEW_BFT_A_S6 l.23, 151); (CO-up) is **Theorem GU, CONFIRMED** (same review,
   l.24, 181), so REVIEW_BFT_A_S4 l.37's "ARGUED" is superseded; and **(SB) is no longer an input at all**

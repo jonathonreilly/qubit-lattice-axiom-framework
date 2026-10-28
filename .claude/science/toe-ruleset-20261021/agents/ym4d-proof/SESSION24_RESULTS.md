@@ -1013,3 +1013,77 @@ settled by an identity** — it needs a **multi-scale axial construction**, alre
 structural wall, and Theorem NQ-1 provably does not cross it** (NQ-1 is abelian/linearised and the slice
 identity has no nonlinear SU(N) analogue). *Forwarded to the (N-loc) worker, which is attacking exactly
 this; route 3 of its brief is where the work is.*
+
+## REVIEW_NORMS_S1 — 887 lines, 15 binding fixes, and one of them is addressed to the LEAD.
+## Tally of NORMS's 23 items: 13 CONFIRMED (2 upgraded by NQ-1), 4 NARROWED, 2 WRONG, 4 unchanged OPEN.
+
+**Theorem N1-15 (A_soft = 1/L = 1/3 uniformly in k): CONFIRMED — at narrower scope.** The reviewer
+**rebuilt the load-bearing "single pullback"** rather than accept the TOWER-VAR citation, which was the
+lead's primary primed attack vector (a hidden per-level recursion re-entering through chain-rule terms):
+D³(𝔉∘Z) = D³𝔉[Z′,Z′,Z′] + 3D²𝔉[Z″,Z′] + D𝔉[Z‴], and **both dangerous terms vanish by *first*-order
+criticality** (𝔉_A = 0 and 𝔉_{AA}a′ + 𝔉_{AB} = 0) — **they appear and are annihilated, not dropped.** The
+exponents were re-derived from the definitions at d = 2…6.
+**Scope corrections: d = 4 ONLY** (every imported input is d = 4; LINEAR_PACKAGE l.56, l.166-171), and the
+constant **𝔚 + 13.5𝔖 is ≳ 10⁷** at the proven locality rate, **not O(1)**.
+
+### >>> THE MAIN FINDING: the per-level NO-GO IS NOT ESTABLISHED
+(a) **"scale-covariant norm family" is used three times and never defined** — and as used it **excludes
+𝔐's own Hölder leg**, i.e. the very norm the project's target is stated in.
+(b) Part (i) is true but **VACUOUS**: it is the l = k anchoring identity, which the file itself calls "the
+same number organised differently" at l.178-182.
+(c) **Check n1-D is a TAUTOLOGY.** Its code computes k·eA + k·((d-4) - eA) **after discarding the only
+derived quantity** (`# placeholder, replaced below`), so it returns d - 4 whether eA is 10⁶ or 1/3.
+**"The weight-invariance half is PROVEN" therefore has NO computational support.**
+(d) Part (ii) bounds an **estimate** from above **with no lower-bound input** — the standard this project
+already applies at PROOF.md l.6550.
+(e) **Pre-registered outcome (O3) was never tested**, although c38 C ("the Wilson cubic times the quadratic
+normalisation, both → 1, plus an O(K²) irrelevant remainder") is literally (O3)'s signature.
+
+**>>> BINDING FIX 1 IS ADDRESSED TO THE LEAD: HANDOFF.md l.44-47 carried this unestablished no-go into a
+"do not relitigate" list.** I wrote that instruction, and it is wrong. **Corrected in this session:**
+HANDOFF.md item 2 is struck and replaced with the reviewer's diagnosis plus an explicit note that the
+per-level route is **OPEN, not refuted**; PROOF.md's [S24-fix 1] has the no-go half **withdrawn** as
+[S24-fix 1a], with Proposition N1-8's Z_col correction retained (it stands on its own).
+*The lesson is the project's own standing rule, which I failed to apply: no-gos need the same scrutiny as
+positive theorems. I upgraded decision D2 "from a judgement to a theorem" on the strength of a tautological
+check.*
+
+### The headline gain figure is WRONG as stated
+"≈ 10³ gain per level" sets **𝔠_vol = 𝔠_ax = 1**. But **Proposition N1-10's own bracket (l.371) forces
+𝔠_ax ≳ 5.46**, so 𝔠_ax² ≳ 30; and **𝔠_vol is Corollary N1-9's c_m = coth(m′/2)^d — 3.7 / 80 / 7.4e6** at
+𝒦's far-measured, near-measured and proven rates. Carrying both: **A_per ≤ 32-49 (gain 26-39)** at
+𝔠_vol = 1, and **no gain at all** at 𝒦's near-field rate. **The same coth^d object is treated as 10²⁰ in
+§N9 and as 1 in §N1.**
+
+### NQ_CHECK confirmed independently, and NORMS's slip located
+The reviewer re-derived the telescoping induction and **brute-forced ‖h‖ = d(L²-1)/(4L)**; (N-Q) is PROVEN,
+𝔮_0 = 11/3. It also located the **arithmetic** slip in NORMS — a spurious L^{j-1-i} on factors the file
+simultaneously declares non-growing — the second half of the M/ev conflation story.
+**The lead's forwarded items verified:** Q_str misdefinition confirmed **entrywise, 135 against 81 entries**,
+NORMS's support a **strict subset with 54 missing**; benign (every norm it uses agrees for both) **but it
+contradicts the file's own import (I8), which Lemma N1-4's proof uses.** M/ev conflation confirmed and
+placed causally.
+
+### The lead's sharpened L-question, answered favourably
+**A_soft = 1/L < 1 at EVERY admissible odd L ≥ 3, not only L = 3.** 𝔮_0 = 1 + d(L+1)/(2L) **decreases** in
+L (11/3, 17/5, 23/7 → 3); the 𝔮_0 = p_L/L coincidence carries nothing. What worsens with L is the prefactor
+L^{d-1}/(L-1). *So the NQ review's F7 scope worry is resolved in NORMS's favour.*
+
+### >>> A CONSTRUCTIVE DISAGREEMENT WITH THE NQ REVIEW (RN1-20): (N-loc) may be UNNECESSARY
+Locality enters Theorem N1-15 in **exactly one place and for one purpose** — to replace a torus volume
+T_k^d by c_m ≈ 52⁴. **For tori of bounded level-k side, which is what NAH-unif's hypothesis quantifies
+over, that replacement is not needed**, so Theorem N1-15 would hold **without (N-loc)** on that class.
+The one unproven step is a **torus Hodge bound |B^{coex}|_∞ ≤ c_d·R·|dB|_∞**. The reviewer's judgement:
+**"one session, not a paper, and it should PRECEDE opening the multi-scale axial gauge."**
+*Lead: forwarded immediately to the (N-loc) worker, superseding the steer toward the multi-scale axial
+construction that I had relayed from the NQ review. Two reviewers disagreed about where the work is and the
+cheaper route won.*
+
+### Biggest live wall: (N-bg), NOT (N-loc)
+Theorem N1-15 bounds **the third Taylor coefficient at V_k = 1**; **(H-C) names the Lipschitz constant on
+the class.** And NQ-1's slice identity **has no nonabelian analogue** (PROOF.md l.1159-1161).
+**The reviewer's honest ledger line, which the lead adopts: "Nothing this session discharges a clause any
+consumer consumes; the C_♭ clause moved OFF (CovLift)/(Mult-Y) and ONTO (N-bg)."**
+
+**The reviewer's summary judgement:** *"The file's real contribution is Lemma N1-1 + Theorem N1-15 + §N7's
+exponent-pair requirement on BFT-1 — substantial. Its no-go and its headline numbers are not."*

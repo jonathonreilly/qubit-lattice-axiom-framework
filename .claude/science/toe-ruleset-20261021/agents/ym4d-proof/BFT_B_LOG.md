@@ -418,3 +418,78 @@
 - ARGUED: GE-T's sharper bulk sup (given BA-7); Remark GE-T' (log n loss of the operator route). OPEN: S_E vs 𝒩-optimal in ℓ¹;
   non-residual g_Z components at θ > 0; (v); (Mult-Y) / GAP 1 (not attempted).
 - Checks: bb8t, bb8w ALL PASS; bb8n NOT ALL PASS (L-c; defect identically 0); bb8n_defect PASS.
+
+## Session 9, 2026-10-28 UTC
+- 12:20-12:26 Read (read-only): DRIVE_BRIEF.md (scratchpad), HANDOFF.md, **REVIEW_BFT_B_S8.md in full (binding)**, REVIEW_BFT_B_S5
+  l.430-519, REVIEW_BFT_B_S6 Part B (l.91-215) and its fix list, BFT_B §18.1 (l.2480-2515) and §19.1-19.6 (l.2576-2650), §25.1
+  l.3405-3420 and §25.5-§26 (l.3480-3569), BFT_A §26.0-26.2 (l.2199-2270), §28.7-28.10 (l.2510-2560), §31.1 (l.2777-2812), BL-2 and
+  its proof (l.488-500, 598-620), PROOF.md l.6590-6713 (cross-lane map and the BFT clause table), REVIEW_BFT_A_S4 l.25-40,
+  REVIEW_BFT_A_S6 l.23-26, 151, 181, 198, 219-224, REVIEW_BFT_A_S7 l.48, 289-320, SF l.695-723, 881-895.
+  At 12:22:43 `TZ=UTC stat` (this worktree was created at 12:03:19, so every file's birth time reads 12:03:19 and birth times carry no
+  information here; sizes and mod times do): BFT_B.md 409782 B, BFT_B_LOG.md 44498 B, BFT_A.md 351969 B, REVIEW_BFT_B_S8.md 38842 B.
+  `ls checks | grep -c ^bb9` = 0. Load averages 1.92 2.00 2.08.
+- 12:27:05 **§27 "PRE-STATED (session 9)" appended in one write — the FIRST edit of session 9** (statements only: scope and targets;
+  definitions Setting LIN^cc, D(S), Ψ_l/ψ_l, h_l^T, ĵ_l, π_l, J_0, λ^Γ_*; Lemma RT-cc; Lemma FT; Theorem RHT-cc; Corollary RHT-V;
+  Theorem RHT_m-cc; failure modes RHcc-F1..F4; Proposition CO-use; Proposition NCR; (NC-Γ)_cc; Proposition INV-cc; the named open
+  items (CO-fun) and (GT-sup); (BFT-5_E); Proposition BFT5-red; Lemma Rω-frame; the [RBB8-fix] erratum list; check bb9).
+  `TZ=UTC stat` BFT_B.md: mod 12:27:05, size 424557 — **growth 14775 bytes = §27 exactly**. No session-9 erratum entry, proof,
+  criteria file or script exists before this time.
+- 12:28:06 **§28 "[RBB8-fix] Errata entries for session 8"** appended (RS8-1..RS8-9, every fix required by REVIEW_BFT_B_S8,
+  each naming the line it corrects; §24-§26 untouched, append-only ownership). `stat` size 429816 — growth 5259 B. One
+  in-place correction of my own §28 header at 12:28:19 (the draft said "appended 12:31", the actual append was 12:28:06;
+  size 429935) and a second wording correction of the same header at 12:42:41 (size 482875). Both are corrections to
+  session-9 text only; no line of §1-§26 was touched at any point — verified at 12:42 by `sed -n '1,3569p' | wc -c` =
+  **409782 B**, byte-for-byte the session-8 final size.
+- 12:30:43 **§29 "Proofs, Step 2"** appended (Lemma RT-cc PROVEN-HERE; Lemma FT PROVEN-HERE; Theorem RHT-cc PROVEN-HERE;
+  Corollary RHT-V PROVEN as an implication; Theorem RHT_m-cc PROVEN-HERE, c_w = 14). Growth 14241 B. Written **before** the
+  criteria file and before any script.
+- 12:31:25 `checks/bb9_criteria.md` (A1-A6, B0-B7 with pre-registered PASS/FAIL verdicts; no constant derived in this
+  session); 12:34:06 one **amendment appended to the criteria** adding test A7 (funnel non-vacuity) — appended **before any
+  script existed**, and so disclosed in the criteria file itself. 12:35:37 `checks/bb9_rtcc.py`.
+- 12:35:52 **bb9 run: NOT ALL PASS — B3 and B4 FAILED.** 6.13 s, 27.5 MB. No numeric lock taken: exact `fractions.Fraction`
+  / int arithmetic in plain python, no numpy, no BLAS (DRIVE_BRIEF rule 6). Environment: nice 10, OMP/OPENBLAS/MKL/VECLIB
+  threads = 1, PYTHONDONTWRITEBYTECODE=1, `python3 -I`, `/usr/bin/time -l`, no `timeout`, no trap. **Cause, found after the
+  run: a script bug** — the level-1 gradient applied Q_1^T twice, so Part B solved the wrong energy (B0 passed because the
+  same buggy operator built and checked the system). `checks/bb9.out` and `checks/bb9_rtcc.py` are **kept unaltered as the
+  record of the FAIL.**
+- 12:36:21 `checks/bb9b_rtcc.py` = bb9_rtcc.py with that **one expression** corrected and nothing else changed (the fix is
+  stated in its header); **the criteria file was not retuned and no test was added after seeing an outcome.**
+  12:36:27 **bb9b run: ALL PASS** (A1-A7, B0-B7). 6.14 s, 28.2 MB. No process left; no `checks/__pycache__` (no `-B` needed:
+  `-I` plus PYTHONDONTWRITEBYTECODE).
+- 12:38:58 **§30 (Proposition CO-use) and §31 (the (NC-Γ) restatement)** appended in one write. Growth 15193 B.
+- 12:40:10 **§32 (BFT-5: (BFT-5_E), Proposition BFT5-red with the (G♯-patch^Ω) narrowing, Lemma Rω-frame ARGUED)** appended.
+  Growth 7539 B.
+- 12:41:45 **§33 (check record including the disclosed bb9 FAIL, outcome table, what BFT-0/1/2 now rests on) and
+  "FOR OTHER FILES (session 9)"** appended. Growth 15410 B. One in-place correction inside §31.2 at 12:42:21 (an
+  over-precise "·L^{-m}" on the s-slot replaced by the term-by-term decay L^{-θ(m+1)} / L^{-m}; size 482795).
+- Final `TZ=UTC stat` BFT_B.md: mod 12:42:41, size 482875. Files written this session: BFT_B.md (appends plus three
+  in-place corrections of session-9 text only), BFT_B_LOG.md, `checks/bb9_criteria.md`, `checks/bb9_rtcc.py`,
+  `checks/bb9.out`, `checks/bb9.time`, `checks/bb9b_rtcc.py`, `checks/bb9b.out`, `checks/bb9b.time`. **No git command was
+  run; no commit, PR or push; no axiom, CL or other lane file touched.** Requests for other owners are in §33's
+  "FOR OTHER FILES (session 9; not edited)".
+
+### Results by name (session 9; all unreviewed)
+- Errata: REVIEW_BFT_B_S8's RS8-1..RS8-9 entered as [RBB8-fix] erratum entries in §28, including the three the task named
+  (RS8-2 rewording, RS8-3 the GE-T → **Lemma ΓT-op** rename, RS8-8 withdrawal of "S_E vs 𝒩-optimal in ℓ¹") and RS8-9.
+- **PROVEN-HERE:** **Lemma RT-cc** (d*ρ_l is the level-(l+1)-root restriction of Σ_{l'≤l}d*j_{l'}; the recursion with
+  ĵ_l = j_l + h_l^Tψ_l; d*J_0 = 0, f_0 = n²dΔ_0^{-1}J_0); **Lemma FT** (||h_l^T||_{ℓ^∞→ℓ^∞} ≤ 1, block-interior support,
+  π_l(h_l^Tψ_l) ≤ 2dΣ_{l'≤l}L^{-3(l-l')}π_{l'}(j_{l'}), e^{2m} weighted); **Theorem RHT-cc** (K_f = 8.737 at d = 4, L = 3,
+  α = ¼); **Theorem RHT_m-cc** (c_w = 14); **Proposition NCR**; Proposition CO-use (bookkeeping).
+- **PROVEN as an implication:** **Corollary RHT-V** — **(Res-Hölder) = EP-F4 closed at m = 0 for the non-co-closed BCH₂
+  remainder V_l**, at critical points and for every gauge fixing, given lane A's Lemma CD (i), Proposition NC, Corollary NC;
+  **Proposition INV-cc** (reduction); **Proposition BFT5-red** (with the new (G♯-patch^Ω) narrowing).
+- **CONDITIONAL:** **(NC-Γ)_cc** — residual half PROVEN unconditionally, curvature half CONDITIONAL on the newly named
+  **(CO-fun)**.
+- **ARGUED:** **Lemma Rω-frame** (the frame rewriting of (R♯_ω) is not a new wall; the commutator-to-divergence-form step
+  has no explicit constants).
+- **Stated, OPEN, with precise statements:** **(CO-fun)**, **(GT-sup)**, **(BFT-5_E)** (owner lane B, status OPEN with its
+  inputs named; clause (c) PROVEN by Proposition NCR).
+- **Status corrections carried to other files (not edited):** (CO-0) = Theorem W0 and (CO-up) = Theorem GU are PROVEN in
+  lane A and CONFIRMED by REVIEW_BFT_A_S6 — REVIEW_BFT_A_S4's ARGUED (CO-up) and REVIEW_BFT_B_S5's "(CO-0), (CO-up) OPEN"
+  are stale; **(SB) is no longer an input to (H-inv+)** (Theorem CO-B removes it, REVIEW_BFT_A_S5 l.373). Hence **(H-inv+)
+  at m = 0 and the trivial background, for level-wise co-closed classes, is PROVEN as an implication with every input
+  CONFIRMED by a lane review.**
+- **Not attempted:** Step 5's (Mult-Y) / GAP 1 and the nonabelian (CovLift) items (targets 1-4 consumed the session).
+- **Failure modes:** RHcc-F1, RHcc-F2, RHcc-F4 do not occur (proven); **RHcc-F3 OCCURS** as pre-stated and expected (the
+  (P0) slot now enters N_res, with the exponentially small weight L^{-(1-α)k}).
+- **Checks: bb9 NOT ALL PASS (B3, B4 FAIL, script bug, record kept); bb9b ALL PASS** on the same unaltered criteria.

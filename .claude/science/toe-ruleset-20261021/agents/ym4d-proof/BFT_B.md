@@ -3567,3 +3567,378 @@ and (I-id)_Z [ARGUED, with the hypercubic symmetrisation note RS7-6 (b)].
   iteration and its last-scale term); 25.5 (the exact row recursion for levels j ≥ 1; the C^{2,α} of the transition gauges κ_X); bb8n's L-c
   failure and the post-run probe.
 - **HIST / SF.** The nonabelian Q_ax-consistency of the framed DD8 chain is exact (row product = coarse link), not only to O(σ²).
+
+## 27. PRE-STATED (session 9) — statements only; the FIRST edit of session 9, appended at the end of BFT_B.md at 2026-10-28 12:27 UTC, before any [RBB8-fix] erratum entry, any session-9 proof, any criteria file and any script. Nothing in §27 cites a result of this session. Exploratory reading (REVIEW_BFT_B_S8 in full, REVIEW_BFT_B_S5 l.430-500, REVIEW_BFT_B_S6 Part B, BFT_B §18.1/§19.1-19.6, BFT_A §26.0-26.2, §28.7-28.9, §31.1, PROOF.md l.6590-6713, SF Lemma G-pert) preceded this append and is not recorded; the only claim §27 makes is file order. §24-§26 are not edited: every fix required by REVIEW_BFT_B_S8 is entered in §28 as a dated erratum naming the line it corrects.
+
+### 27.0 Scope and targets
+
+Lead decisions in force (DRIVE_BRIEF D1-D3; REVIEW_BFT_B_S8 "Cross-lane" 4): one slice S_E; lane A's root-funnel spikes in S_E are real; (PW-i)_{Γ_E} and lane A's (GE-T) are expected FALSE at large k, so lane A's PW-E is empty for S_E; (NC-Γ) is to be restated for composite-co-closed sources plus a remainder bound; lane B owns BFT-5.
+
+Targets, in the order attempted:
+1. **(Res-Hölder) = EP-F4** beyond the level-wise co-closed classes — i.e. exactly the part left OPEN by [RBB6-fix RS6-1]: the non-co-closed BCH₂ remainder V_l of BFT_A §26.2.
+2. **(CO-0), (CO-up):** decide whether lane A's items are usable by lane B verbatim for (H-inv+), with citations.
+3. **The (NC-Γ) restatement** for composite-co-closed sources, plus a remainder bound.
+4. **BFT-5:** precise statement and honest status.
+5. If (1)-(4) go well: (Mult-Y) / GAP 1 and the nonabelian (CovLift) items.
+
+### 27.1 Definitions used below (none is new mathematics; they fix names)
+
+- **Setting LIN^cc.** Setting LIN of BFT_A §7.1 with the level-wise co-closedness of the plain currents j_l (0 ≤ l ≤ k - 1) **dropped** and replaced by the single condition **Ξ^TS = 0** (composite co-closedness, BFT_A §26.0). Divergence-form sources G_l, residual sources s_l and the data B_k are unchanged; residual sources are never required co-closed in Setting LIN either.
+- **Composite divergence.** D(S) := Ξ^TS = d*S_0 + Σ_{1≤l≤k-1}ev^{(0→l)T}d*S_l, a level-0 function; composite co-closedness is D(S) ⟂ Λ_0, i.e. D(S) supported on the level-k roots with total 0.
+- **Root restriction.** For 0 ≤ l ≤ k - 1 write Ψ_l := d*j_0 + Σ_{1≤l'≤l}ev^{(0→l')T}d*j_{l'} (a level-0 function) and, when Ψ_l is supported on the level-(l+1) roots, let **ψ_l** be the level-(l+1) function with ev^{(0→l+1)T}ψ_l = Ψ_l.
+- **Funnel transpose.** h_l : level-l 1-forms → level-(l+1) functions of BL-2 (b) (h_l(w)(X) = the average over y ∈ B(X) of the integral of w along the axial path a(c_X → y) in a fixed coordinate order); h_l^T its transpose, level-(l+1) functions → level-l 1-forms. Root convention: block centres (§15.0); the statements below are convention-free (they need only "the axial paths of a block stay inside that block").
+- **Modified currents.** ĵ_l := j_l + h_l^Tψ_l (a level-l plain current), ĵ_0 := j_0.
+- **Coarse plain unit.** π_l(j) := L^{3(k-l)}·sup_own|j| = ||j^c_l||_∞ (§19.2 convention).
+- **Assembled level-0 current.** J_0 := j_0 + d*G_0 - Q_0^Tρ_0 (the level-0 Euler-Lagrange right side, so that d*dx_0 = J_0).
+- **Gauge transport function.** For a gauge fixing Γ and a representative Y^p_* of the level-0 plaquette response, λ^Γ_*(p) ∈ Λ_0/const is the element with Y^p_* + Ξλ^Γ_*(p) = Y^p_Γ.
+
+### 27.2 (Res-Hölder) for composite-co-closed sources: statements (STEP 2)
+
+- **Lemma RT-cc (residual transport for composite-co-closed sources).** Let S be a Setting LIN^cc source and x a critical point of E_src (one exists iff Ξ^TS = 0, Lemma FG (i)). Then for 0 ≤ l ≤ k - 1:
+  (a) *Solvability cascade.* Each Ψ_l is supported on the level-(l+1) roots, and d*ρ_l = ψ_l; explicitly ψ_l(Z) = Σ_{0≤l'≤l}(d*j_{l'})(z_Z) at every level-(l+1) root Z, where z_Z is the level-0 site of Z and each d*j_{l'} is read in its own level-l' units. In particular d*ρ_l = 0 for every l iff every d*j_{l'} vanishes at the roots that matter, and Lemma RT (a) is the special case j level-wise co-closed.
+  (b) *One-step recursion.* ρ_{l-1} = (Q_{str,l})^Tρ_l - d*G_l - ĵ_l for 1 ≤ l ≤ k - 1.
+  (c) *Transport.* For 0 ≤ i ≤ k - 2: **r_i = κ_i^{-1}[s_i + (Q_str^{(i+1→k)})^Tρ_{k-1} - Σ_{l=i+1}^{k-1}(Q_str^{(i+1→l)})^T(d*G_l + ĵ_l)]** — Lemma RT (c) verbatim with j_l replaced by ĵ_l.
+  (d) *Level-0 consistency.* d*J_0 = 0; hence f_0 = n²dΔ_0^{-1}J_0 (Proposition CO's form), with J_0 = j_0 + d*G_0 + h_0^Tψ_0 - (Q_str^{(0→k)})^Tρ_{k-1} + Σ_{l≥1}(Q_str^{(0→l)})^T(d*G_l + ĵ_l).
+  *Planned: PROVEN-HERE* (Euler-Lagrange; d*Q_l^T = ev^Td*; ev^T injective; BL-2 (b) transposed; support bookkeeping on Ξ^TS).
+- **Lemma FT (funnel transpose: size, support, weight).** For every level-(l+1) function ψ: (i) h_l^Tψ is supported on the level-l links whose two endpoints lie in one level-(l+1) block, and (h_l^Tψ)(b) = c(X(b), b)·ψ(X(b)) with |c(X, b)| ≤ 1; hence **||h_l^T||_{ℓ^∞→ℓ^∞} ≤ 1** in own units, and ||h_l^T||_{ℓ¹→ℓ¹} ≤ d(L - 1); (ii) sup_own|ψ_l| ≤ 2dΣ_{0≤l'≤l}sup_own|j_{l'}|, so **π_l(h_l^Tψ_l) ≤ 2dΣ_{0≤l'≤l}L^{-3(l-l')}π_{l'}(j_{l'})**; (iii) in the (Pl-c) + (P0) class (π_l(j_l) ≤ L^{-θ(k-l)}||j||_{Pc} for l ≥ 1, π_0(j_0) = ||j^c_0||_∞): π_l(ĵ_l) ≤ L^{-θ(k-l)}||j||_{Pc} + 2d(1 - L^{-3})^{-1}max(||j||_{Pc}L^{-θ(k-l)}, L^{-3l}||j^c_0||_∞); (iv) weighted: h_l^T reads ψ at coarse distance ≤ 1 and d* at coarse distance ≤ 1, so each funnel term costs at most e^{2m} in the weights of 19.6. *Planned: PROVEN-HERE.*
+- **Theorem RHT-cc ((Res-Hölder) for composite-co-closed sources, m = 0).** For every Setting LIN^cc source and every critical point of E_src, uniformly in k ≥ 2, T ≥ 1 and in the level, N_res(x) obeys the bound of Theorem RHT with π_l(j_l) replaced by π_l(ĵ_l); consequently, for sources in the (P0) + (Pl-c) + (G) + (R) classes,
+  N_res(x) ≤ (5/κ_-)[(κ_+||r^c_{k-1}||_∞ + ||s^c_{k-1}||_∞)/(L^{1-α} - 1) + L^{-θ}||s||_R/(L^{θ-α} - 1) + (1 - L^{-(1-α)})^{-1}(Σ_{1≤l≤k-1}L^{-(1-α)(k-l)}(π_l(j_l) + 6L^{k-l}||G^c_l||_∞) + K_fΣ_{0≤l≤k-1}L^{-(1-α)(k-l)}π_l(j_l))],
+  with **K_f := 2d/(1 - L^{-(2+α)})** (d = 4, L = 3, α = ¼: K_f ≤ 8.74). The same with 7 in place of 5 for N^∞_res. *Planned: PROVEN-HERE* (Lemma RT-cc + Lemma FT + Lemma TC; no elliptic step).
+- **Corollary RHT-V ((Res-Hölder) for the non-co-closed BCH₂ remainder).** Let ||x||_𝔐 ≤ η ≤ η_0 and let the source be the rows of BFT_A Corollary NC at a critical point of 𝔉_k (where the full remainder is composite-co-closed, Lemma CD (i)), with the co-closed completions d*W_l in the (G)/(P0) slots and the remainders V_l (local, d*V_l = d*R^B_l) as plain currents. Then N_res of the response obeys the Theorem RHT-cc bound with π_l(V_l) ≤ C_NCπ_l(R^B_l) ≤ 2C_NCC_bchκ_+L²η², i.e. **N_res ≤ C_Vη² uniformly in k, T and in the level**, and the bound is the same for the response under any gauge fixing Γ (the residuals r_l are exactly composite-gauge invariant). *Planned: PROVEN as an implication* (Theorem RHT-cc; BFT_A Lemma CD (i), Proposition NC, Corollary NC; 19.4's BCH₂ sizes).
+- **Theorem RHT_m-cc (weighted).** For 0 ≤ m the same with e^{c_wm}, c_w := 14 [crude], the weighted sups of 19.6 and K_f unchanged. *Planned: PROVEN-HERE.*
+- **Failure modes** (considered before this append; no pre-registration weight beyond the labels): **RHcc-F1** the cascade (a) fails because Ψ_l is not supported on the level-(l+1) roots. Expected: does not occur. **RHcc-F2** the funnel term is not a *plain* level-l source of the (Pl-c) type (e.g. its coarse size carries a power of L^{k-l}). Expected: does not occur, by Lemma FT (i). **RHcc-F3** the level-0 current j_0 ceases to drop out of r_i, so the (P0) slot now enters N_res. Expected: OCCURS (it is the price of dropping co-closedness); harmless, because its weight L^{-(1-α)k} is exponentially small in k. **RHcc-F4** the funnel iterates: (Q_str^{(i+1→l)})^Tĵ_l is not the composite transpose of ĵ_l. Expected: does not occur, because the one-step substitution is made at every level before iterating.
+
+### 27.3 (CO-0) and (CO-up) for (H-inv+): statements (STEP 3)
+
+- **Proposition CO-use (what lane B may cite, and for what).** Record, with citations and without re-judging: (i) which of (CO-0) = (G♯_0-lev0) and (CO-up) = (G♯-up) are PROVEN in lane A and CONFIRMED by a lane-A review, and at what scope (m, α, θ, source class, background); (ii) whether REVIEW_BFT_A_S4's "(CO-up) is mostly bookkeeping once (CO-0) is in hand (ARGUED)" is still the operative status or has been superseded; (iii) what, after (i)-(ii), is still missing for lane B's (H-inv+) on 𝒞_glob at m = 0, and what at m > 0. *Planned: a bookkeeping proposition, PROVEN-HERE as bookkeeping only; every status quoted, none re-judged.*
+
+### 27.4 (NC-Γ) restated for composite-co-closed sources: statements (STEP 4)
+
+- **Proposition NCR (exact gauge-fixing remainder).** For every chain source S, every gauge fixing Γ and every representative Y^p_* of the level-0 plaquette response: **f_0^Γ(S)(p) = ⟨S, Y^p_*⟩ + ⟨D(S), λ^Γ_*(p)⟩**, and the same identity with Y^{(b)} for r_{k-1}(b). In particular the whole dependence of a gauge-fixed response on the gauge fixing is the pairing of the composite divergence D(S) with the gauge transport function. *Planned: PROVEN-HERE* (Lemma FG (ii) plus one line).
+- **(NC-Γ)_cc (restatement of (NC-Γ) for composite-co-closed sources).** *Statement.* There are C_cc, C_cc' < ∞, independent of k, T and of the gauge fixing Γ, such that for every Setting LIN^cc source S arising as the row collection of a configuration with ||x||_𝔐 ≤ η ≤ η_0 at a critical point of 𝔉_k (BFT_A Lemma CD (i)) the response x = 𝓛_Γ^{-1}S obeys ||x||_inv ≤ C_ccη² and N_res(x) ≤ C_cc'η², uniformly in k, T, Γ. *Planned: to be split into the residual half and the curvature half, and each given its own honest status; the residual half via Theorem RHT-cc, the curvature half reduced to a named item.*
+- **Proposition INV-cc (what the curvature half needs).** For a Setting LIN^cc source, the residual terms L^{k-1-j}||r^c_j||_∞ of ||x||_inv are bounded by Lemma RT-cc + Lemma TC alone, k-, T-, level-uniformly; and the curvature terms ||f_j||_∞ + [f_j]_α reduce, by f_j = 𝒜^{(0→j)}f_0 - R_j with ||(dr_i)^c|| ≤ 4L^{k-1-i}||r^c_i|| (BFT_A §23) together with Theorem RHT-cc, to the single level-0 statement sup|f_0| + [f_0]_α for f_0 = n²dΔ_0^{-1}J_0 with the J_0 of Lemma RT-cc (d). *Planned: PROVEN as a reduction.*
+- **Named open item (CO-fun).** (CO-0) for the funnel-augmented J_0: the Theorem W0 / Theorem YH dual bound for f_0 = n²dΔ_0^{-1}J_0 when J_0 carries, besides lane A's §18.7 terms, the level-0 funnel h_0^Tψ_0 and the funnel images (Q_str^{(0→l)})^Th_l^Tψ_l (co-closed only collectively). *Stated, not claimed.*
+- **Named open item (GT-sup).** sup_p sup{|λ^{Γ_E}_*(p)(z)| : z ∈ supp D(S)} bounded uniformly in k and T for a named representative Y^p_* and the sources that occur in the contraction. *Stated, not claimed.* Expected relation: (NC-Γ)_cc + (GT-sup) ⟹ the original (NC-Γ) for Γ_E; and (GT-sup) is the precise form of the "compensating L^{-2k}" that REVIEW_BFT_B_S8 Cross-lane 4 item 4 asks route (i) for.
+
+### 27.5 BFT-5: statements (STEP 5)
+
+- **(BFT-5_E) (lane B's statement of BFT-5, for composite-co-closed sources).** There are ε_5 > 0 and C_5 < ∞, depending only on (N, L, κ_±) and not on k or T (T ≥ 5), such that for every V_k ∈ 𝒦(ε_5): the S_E-slice Hessian H_E := ∇²(𝔉_k∘exp)(Z(V_k)) restricted to S_E is invertible, and for every composite-co-closed source S the response x = H_E^{-1}S obeys the (G♯) bounds of SF's 𝔐-pair, ||x||_𝔐 ≤ C_5||S||_{𝔐*}, together with BFT-3's weighted locality at rate ≥ m_Y. For a general source the same holds for the gauge-invariant part, with the slice-dependent remainder given exactly by Proposition NCR (Lemma RC's n²⟨D(S), σ⟩ and Proposition TE's tents are its two pieces).
+- **Proposition BFT5-red (reduction and status).** (BFT-5_E) ⇐ (G♯_0-field) at U = 1 [lane A] + (R♯_ω) in local frames + SF's Lemma G-pert on X_c-small patches + (G♯-patch) by (CovLift)-covariant gluing; and, for the composite-co-closed clause, (NC-Γ)_cc. *Planned: the reduction PROVEN as bookkeeping; (BFT-5_E) itself OPEN with its inputs named.*
+- **Lemma Rω-frame (the first narrow lemma).** In a local frame Ω on which Corollary CL-iv gives ||log Z^off||_{C^{1,α}} ≤ C_1ε, the (R♯_ω) remainder of the frame-written chain at the background Z(V_k) obeys the same divergence-form-plus-level-0-current bound as at the trivial background, with constants depending on C_1ε only. *Planned: ARGUED or CONDITIONAL; it is not expected to be PROVEN in this session.*
+
+### 27.6 Errata to session 8 required by REVIEW_BFT_B_S8 (to be entered in §28, tagged [RBB8-fix]; §24-§26 not edited)
+
+RS8-1 (cosmetic, 22.2 heading l.2989); **RS8-2 (binding, the reading at l.3415-3417 and its copy in §26 FOR OTHER FILES)**; **RS8-3 (binding, rename lane B's Lemma GE-T and record lane A's (GE-T) as expected FALSE for S_E)**; RS8-4, RS8-5, RS8-6, RS8-7 (cosmetic); **RS8-8 (binding, remove "S_E vs 𝒩-optimal in ℓ¹" from the open lists)**; RS8-9 (binding, dated note on §26's "What (CovLift) rests on now").
+
+### 27.7 Checks (criteria files to be written after this section and before any script)
+
+- **bb9** (exact rational arithmetic, pure Python `fractions`, single thread, no BLAS, no numeric lock needed): d = 2, L = 3, κ_0 = 1, κ_1 = 2, roots = block centres, k = 2.
+  - Part A, no solve, top side T = 2: the operator identities Q_ld = d ev, d*Q_l^T = ev^Td*, Q_l^T = Q_{str,l}^T - h_l^Td*; the row sums of h_l^T (Lemma FT (i)); and, over a basis of composite-co-closed sources, the support claim of Lemma RT-cc (a) for Ψ_0 and Ψ_1.
+  - Part B, exact solve, top side T = 1 (180 unknowns): a critical point for a composite-co-closed source whose plain currents are **not** level-wise co-closed; then d*ρ_0 = ψ_0 (Lemma RT-cc (a)), the transport identity (c), d*J_0 = 0 (d), and the pointwise bound |h_0^Tψ_0| ≤ sup|ψ_0|.
+  - Controls: a source that is not composite-co-closed has no critical point; and the transport identity (c) **fails** if the funnel term is dropped, whenever ψ ≠ 0.
+  - Scope limitation to be reported whatever the outcome: at T = 1 the top charge vanishes, so ψ_{k-1} = 0 and Part B does not exercise a nonzero funnel inside the ρ-recursion; Part A does exercise it at the level of the cascade.
+
+## 28. [RBB8-fix] Errata entries for session 8, required by REVIEW_BFT_B_S8 (appended 2026-10-28 12:28:06 UTC, after §27; the planned time 12:31 written in the draft header was corrected in place immediately after the append, to the actual stat time — the exact stat times of both writes are in BFT_B_LOG session 9)
+
+§24-§26 are *not* edited (append-only ownership). Each entry below names the line it corrects and stands as the corrected text. Where a fix renames an object, the new name is used from §29 on; the old name is kept wherever it already stands in §24-§26, with this section as the pointer.
+
+- **[RBB8-fix RS8-1] (cosmetic; §22.2 heading, l.2989).** The heading still reads "IMPORTED-AND-REVERIFIED". Per the RS7-3 tag the Metzler/maximum-principle replacement is written out in the file, so the correct label is **PROVEN-HERE**. No constant changes.
+- **[RBB8-fix RS8-2] (binding; l.3415-3417, "In the dual form of (PW-i) … it cannot be dropped", and its copy in §26 FOR OTHER FILES "The root part is of the order of (PW-i)'s dual target and cannot be dropped").** That sentence compares the sup of a level-0 *source* with the sup of a *response*; they are different quantities and the comparison is void. **Read instead:** Q_X = ⟨j, (Ξχ^5_X)_l⟩ — the root charges of §24.1 (f) are exactly the dual of lane A's tents (BFT_A Proposition TE), and ||(Ξχ^5_X)_l||_1 = 8L^{3(k-l)} exactly, which fixes the size constant of TE at 8 = 2d. (PW-i)_{Γ_E} at level l therefore requires every level-k-root tent coefficient a to obey 8|a|L^{3(k-l)} ≲ C_PL^{k-3l}, i.e. |a| ≲ C_PL^{-2k}/8. Sup bounds on Γ_E^TD(j) do **not** control the response: the identity 𝒟_l = ||(Π_EY)_l||_1 (BFT_A 38.1) is the exact statement, and the root charges add no new requirement to the dual target — they are one of the two mechanisms (with the funnel spikes) by which (PW-i)_{Γ_E} fails at large k.
+- **[RBB8-fix RS8-3] (binding; §24.1, §25.1, §26 table and §26 FOR OTHER FILES, every occurrence of "Lemma GE-T").** Lane B's lemma is renamed **Lemma ΓT-op** ("the operator lemma for Γ_E^T"), and Remark GE-T' is renamed **Remark ΓT-op'**. From §29 on, "Lemma ΓT-op" means §24.1/§25.1's (a)-(f). **Lemma ΓT-op does not imply BFT_A §36.0's hypothesis (GE-T)**: that is a different and strictly stronger statement (||(Π_Eu⃗^♮)_l||_1 ≤ C_GTL^{-3l}R for co-closed, decaying u), and plugging ΓT-op (c), (e) or (f) into the pairing loses up to n³. **Lane A's (GE-T) is recorded here as "expected FALSE for S_E (ARGUED: BFT_A 38.8; REVIEW_BFT_B_S8 Cross-lane 1-3)"**, so no correct lemma about Γ_E^T can supply it.
+- **[RBB8-fix RS8-4] (cosmetic; §25 correction (2)).** Lemma N1G and ΓT-op (c), (e) are d-independent (the transverse-sum + monotonicity proof uses no property of d); they hold in every dimension with 2^d images. The restriction to d = 4, with 16 images, is the case needed and is harmless.
+- **[RBB8-fix RS8-5] (cosmetic; 25.1 (e), l.3387).** The telescoping sum should start at t = y_μ, not at t = 0; the bound is unchanged. Record in addition the exact value **C_∞ = (1 - M^{-4})/8**: by symmetry -ΔG(0) = 2d(G(0) - G(e_1)) = 1 - M^{-4}, which is the measured value.
+- **[RBB8-fix RS8-6] (cosmetic; 25.4, the distance iteration's last scale).** With the stated stopping rule "iterate while nr_{i+1} ≥ 32", the last scale satisfies n < 64·2^m/r_0 ≤ 256·2^m, so the last term is ≤ **1024η**, not 512η. Constants only; M(1/4) ≤ C(η + f_0 + [F_0]_{Lip}) and Theorem N1-loc are unchanged.
+- **[RBB8-fix RS8-7] (cosmetic; §26 check record).** (i) bb8n and bb7n place roots at block **corners** (fine site 3X) while §15.0 uses block **centres**; Theorem N2-loc (c) needs only "root = subdivision node", so it holds in both conventions. (ii) bb8n_defect's prediction post-dates the observed 0.0000 printout; it carries no pre-registration weight and is a resolution check only (the FAIL in bb8n.out stands as the record, and Theorem N2-loc (c) rests on its proof). (iii) bb8n's VERDICT line lists all four tests rather than the failing one; §26's prose is correct.
+- **[RBB8-fix RS8-8] (binding; §24.1 Remark GE-T' planned clause, the §26 table row "Remark GE-T' | ARGUED; comparison OPEN", and §26 FOR OTHER FILES "The ℓ¹ comparison of S_E with the 𝒩-optimal representative is not supplied").** **"S_E against the 𝒩-optimal representative in ℓ¹" is removed from lane B's open set.** It is not needed: lane A's route (Lemma DF + Theorem PW-cc + its own (GE-T)) never uses a general comparison — PW-cc bounds co-closed pairings through 𝒩_l, which is representative-independent, and the non-co-closed part is (GE-T)'s job; Remark ΓT-op' shows the comparison is unavailable in operator form at k-uniform level (the 1 + log n loss), and its structured special case is lane A's (GE-T), which is expected FALSE. The item is withdrawn, not left open.
+- **[RBB8-fix RS8-9] (binding; §26 "What (CovLift) rests on now").** **(CovLift) is unaffected by the cross-lane finding.** Lemma ΓT-op and the (PW-i)_{Γ_E} failure concern the *linear response* on the slice, not the covariant lift: (CovLift) (i)-(iii) on 𝒦(ε) and (iv)'s first clause in frames stand exactly as recorded. The (PW-ℓ¹) / (NC-Γ) consequence of the cross-lane finding belongs to lane A's linear package and to the statement of BFT-5 ((BFT-5_E) of §27.5 and §32 below), not to §26's (CovLift) list.
+
+## 29. Proofs, Step 2: (Res-Hölder) for composite-co-closed sources (appended after §28; written before the bb9 criteria file and before any script)
+
+Target 1 of §27.0. What is already closed, and what is not: Theorem RHT (= Theorem RH, §19.3) and Theorem RHT_m close (Res-Hölder) at m = 0 and m > 0 for **level-wise co-closed** Setting-LIN source classes, and this was CONFIRMED (REVIEW_BFT_B_S6 B.3, B.6). The part that stayed OPEN is the one named in [RBB6-fix RS6-1]: the **non-co-closed BCH₂ remainder V_l** of BFT_A §26.2, for which Lemma RT (a) fails because it uses d*j_l = 0 at every level. §29 closes exactly that gap, by proving that the funnel terms which appear when co-closedness is dropped are *explicitly determined by the source* and are themselves plain level-l sources of the same class.
+
+### 29.1 Lemma RT-cc: PROVEN-HERE
+
+*Euler-Lagrange equations.* As in 19.1 — and note that their derivation uses no co-closedness, since they are only the stationarity equations of E_src. For 1 ≤ l ≤ k - 1,
+  ρ_{l-1} = Q_l^Tρ_l - d*G_l - j_l,   (E_l)
+and at level 0
+  d*dx_0 + Q_0^Tρ_0 - d*G_0 - j_0 = 0.   (E_0)
+Existence of a critical point: Ker H = Ran Ξ (Lemma FG (i)), so (E_0), (E_l) are solvable iff S ⟂ Ran Ξ, i.e. iff Ξ^TS = 0. Composite co-closedness is therefore exactly the solvability condition, not an extra hypothesis.
+
+*(a) The solvability cascade and the explicit ψ_l.* Put ψ_l := d*ρ_l (a level-(l+1) function). Apply d* to (E_0): d*(d*dx_0) = 0 and d*(d*G_0) = 0 (d*d* = 0 on 2-forms), while d*Q_0^T = ev^{(0→1)T}d* (BL-2 (c), the transpose of root covariance Q_ld = d ev; no co-closedness enters). Hence
+  ev^{(0→1)T}ψ_0 = d*j_0 = Ψ_0.   (★0)
+Apply d* to (E_l), 1 ≤ l ≤ k - 1, with the same two facts:
+  ψ_{l-1} = ev^{(l→l+1)T}ψ_l - d*j_l   (★l)
+as level-l functions. Since the level-(l+1) roots are a subset of the level-l roots, evaluation composes, ev^{(l→l+1)}∘ev^{(0→l)} = ev^{(0→l+1)}, hence so do the placements: ev^{(0→l)T}∘ev^{(l→l+1)T} = ev^{(0→l+1)T}. Applying ev^{(0→l)T} to (★l) and writing Ψ'_l := ev^{(0→l+1)T}ψ_l gives Ψ'_{l-1} = Ψ'_l - ev^{(0→l)T}d*j_l, i.e. Ψ'_l = Ψ'_{l-1} + ev^{(0→l)T}d*j_l; with Ψ'_0 = Ψ_0 from (★0), induction gives
+  **ev^{(0→l+1)T}ψ_l = Ψ_l for every 0 ≤ l ≤ k - 1.**   (†)
+Two consequences.
+ - *Support.* Each Ψ_l is supported on the level-(l+1) roots. This also follows from composite co-closedness alone, without reference to x: Ψ_{k-1} = Ξ^TS = D(S), so Ψ_l = D(S) - Σ_{l'=l+1}^{k-1}ev^{(0→l')T}d*j_{l'}, where D(S) is supported on the level-k roots and each subtracted term on the level-l' roots, and for l' ≥ l + 1 all of these sets are contained in the level-(l+1) roots. **So RHcc-F1 does not occur, and the cascade is a property of the source, not of the solution.**
+ - *Determination.* ev^{(0→l+1)T} places a level-(l+1) function on distinct level-0 sites, so it is injective, and (†) determines ψ_l: at a level-(l+1) root Z with level-0 site z_Z,
+   **ψ_l(Z) = Σ_{0≤l'≤l}(d*j_{l'})(z_Z)**,
+   each d*j_{l'} read at z_Z in its own level-l' units (the maps ev^T are placements and carry no rescaling, so this identity is one between raw lattice values). If every j_l is co-closed then Ψ_l = 0, so ψ_l ≡ 0: Lemma RT (a) is the special case. ∎(a)
+
+*(b)* Transposing BL-2 (b)'s one-step identity Q_l = Q_{str,l} - d∘h_l gives Q_l^T = Q_{str,l}^T - h_l^Td*, so Q_l^Tρ_l = Q_{str,l}^Tρ_l - h_l^Tψ_l and (E_l) reads
+  ρ_{l-1} = Q_{str,l}^Tρ_l - d*G_l - ĵ_l,   ĵ_l := j_l + h_l^Tψ_l. ∎(b)
+
+*(c)* Iterate (b) downwards from l = k - 1 to l = i + 1. Every step now applies the **straight** transpose, so the operators standing in front of the sources are exactly the straight composites and no co-closedness is needed to straighten them:
+  ρ_i = (Q_str^{(i+1→k)})^Tρ_{k-1} - Σ_{l=i+1}^{k-1}(Q_str^{(i+1→l)})^T(d*G_l + ĵ_l),
+and r_i = (ρ_i + s_i)/κ_i. **RHcc-F4 does not occur**: the one-step substitution is made before iterating, so the funnel never has to be commuted past a composite average. ∎(c)
+
+*(d)* (E_0) is d*dx_0 = J_0 with J_0 := j_0 + d*G_0 - Q_0^Tρ_0; by (★0), d*J_0 = d*j_0 - ev^{(0→1)T}ψ_0 = 0. Substituting (b) at l = 0 and then (c) at i = 0,
+  J_0 = j_0 + d*G_0 + h_0^Tψ_0 - (Q_str^{(0→k)})^Tρ_{k-1} + Σ_{1≤l≤k-1}(Q_str^{(0→l)})^T(d*G_l + ĵ_l).
+Finally, on the torus write x_0 = dφ + d*ω + c (Hodge; c a constant 1-form). Then dx_0 = dd*ω and, since d*d* = 0, J_0 = d*d(d*ω) = Δ_0(d*ω) with Δ_0 the componentwise lattice Laplacian (Δ_0 = d*d + dd* on 1-forms on Z^d, which commutes with d and d*). J_0 has zero mean in each component (⟨J_0, ce_μ⟩ = ⟨dx_0, d(ce_μ)⟩ = 0), so Δ_0^{-1}J_0 is defined and
+  **f_0 = (dx_0)^c = n²dΔ_0^{-1}J_0**,
+which is exactly the form of BFT_A Proposition CO. ∎(d)
+
+*Reading.* The content of (a) is that dropping level-wise co-closedness does **not** make the residual divergences unknown: the whole cascade of divergences d*ρ_l is a *root restriction of the source's own divergences*, forced by root covariance and the injectivity of ev^T, and the consistency conditions it imposes are automatically met by composite co-closedness. The price is one extra explicit plain source per level, h_l^Tψ_l. Lemma FT prices it.
+
+### 29.2 Lemma FT: PROVEN-HERE
+
+*(i) Support, kernel coefficients, operator norms.* By BL-2 (b), h_l(w)(X) = avg_{y∈B(X)}∫_{a(c_X→y)}w with a(c_X→y) the axial path in a fixed coordinate order. Such a path is monotone in every coordinate, so it traverses each level-l link at most once, with coefficient ±1 according to orientation; hence
+  h_l(w)(X) = Σ_b c(X, b)w(b),   c(X, b) = L^{-d}·(signed count of y ∈ B(X) whose path uses b) ∈ [-1, 1].
+B(X) is a box and c_X ∈ B(X), so every such path stays **inside** B(X); therefore c(X, b) = 0 unless both endpoints of b lie in B(X). In particular a level-l link belongs to at most one block, and the transpose is diagonal in the block index:
+  **(h_l^Tψ)(b) = c(X(b), b)·ψ(X(b)),  |c(X(b), b)| ≤ 1,**
+so h_l^Tψ is supported on the block-interior level-l links, vanishes on every block-crossing link, and |h_l^Tψ| ≤ sup|ψ| pointwise: **||h_l^T||_{ℓ^∞→ℓ^∞} ≤ 1** in own units. Also Σ_b|c(X, b)| ≤ max_{y∈B(X)}|y - c_X|_1 ≤ d(L - 1) (= d(L - 1)/2 for the centre convention), so ||h_l^T||_{ℓ¹→ℓ¹} ≤ d(L - 1). ∎(i)
+
+*(ii) Sizes.* With (d*v)(z) = Σ_μ[v_μ(z - e_μ) - v_μ(z)] (2d terms), Lemma RT-cc (a) gives, in raw values,
+  sup|ψ_l| ≤ Σ_{0≤l'≤l}sup|d*j_{l'}| ≤ 2dΣ_{0≤l'≤l}sup_own|j_{l'}|,
+and by (i) sup_own|h_l^Tψ_l| ≤ sup|ψ_l|. Multiplying by L^{3(k-l)} and using sup_own|j_{l'}| = L^{-3(k-l')}π_{l'}(j_{l'}):
+  **π_l(h_l^Tψ_l) ≤ 2dΣ_{0≤l'≤l}L^{-3(l-l')}π_{l'}(j_{l'}).**
+So the funnel source at level l is a plain level-l current whose coarse size is a geometric (ratio L^{-3}) average of the coarse sizes of the source's own and *lower* levels. **RHcc-F2 does not occur**: no power of L^{k-l} appears. ∎(ii)
+
+*(iii) The (P0) + (Pl-c) class.* With π_l(j_l) ≤ L^{-θ(k-l)}||j||_{Pc} for 1 ≤ l ≤ k - 1 and π_0(j_0) = ||j^c_0||_∞, (ii) gives
+  π_l(h_l^Tψ_l) ≤ 2d[ L^{-θ(k-l)}||j||_{Pc}Σ_{u≥0}L^{-(3+θ)u} + L^{-3l}||j^c_0||_∞ ] ≤ 2d[ (1 - L^{-3})^{-1}L^{-θ(k-l)}||j||_{Pc} + L^{-3l}||j^c_0||_∞ ],
+so ĵ_l lies in the same (Pl-c) class up to the factor 1 + 2d(1 - L^{-3})^{-1} (= 9.31 at d = 4, L = 3) plus the exponentially small level-0 term. ∎(iii)
+
+*(iv) Weights.* In the weights w(z) = e^{md(z,X_0)} of 19.6 (d the ℓ¹ coarse torus distance), h_l^T at a level-l link b reads ψ_l at X(b), whose coarse diameter is ρ_{l+1} ≤ 1; ψ_l(Z) reads d*j_{l'} at the level-0 site z_Z of Z, inside that same block; and d* reads j_{l'} at coarse distance ≤ ρ_{l'} ≤ 1. The total displacement is ≤ 2 coarse units, so every bound of (ii), (iii) holds in the weighted sups with a factor e^{2m}. ∎(iv)
+
+### 29.3 Theorem RHT-cc: PROVEN-HERE
+
+By Lemma RT-cc (c) the formula for r_i is Lemma RT (c) with j_l replaced by ĵ_l, and by Lemma TC (whose sup bounds for (Q_str^{(a→b)})^T hold for **any** current, co-closedness being needed nowhere in its proof — BL-2 (c)'s computation (Q_str^Tj)(b) = L^{-4}Σ_{i<L}j(X(b - ie_μ), μ) is unconditional, as REVIEW_BFT_B_S6 B.2 records) the three geometric sums of 19.3 go through verbatim. This gives the bound of Theorem RHT with π_l(j_l) → π_l(ĵ_l).
+
+It remains to collect the funnel part. By Lemma FT (ii), with the level-l plain terms entering r_i for m = k - 1 - i ≥ k - l,
+  Σ_{1≤l≤k-1}L^{-(1-α)(k-l)}π_l(h_l^Tψ_l) ≤ 2dΣ_{0≤l'≤k-1}π_{l'}(j_{l'})Σ_{u≥0}L^{-(1-α)(k-l'-u)}L^{-3u}
+    = 2dΣ_{0≤l'≤k-1}L^{-(1-α)(k-l')}π_{l'}(j_{l'})Σ_{u≥0}L^{-(2+α)u} = K_fΣ_{0≤l'≤k-1}L^{-(1-α)(k-l')}π_{l'}(j_{l'}),
+with K_f = 2d/(1 - L^{-(2+α)}). At d = 4, L = 3, α = ¼: L^{-(2+α)} = 3^{-2.25} = 0.08434, so K_f = 8/0.91566 = **8.737**. Adding this to the plain sum of Theorem RHT gives the displayed bound of §27.2, and the same with 7 in place of 5 for N^∞_res. Nothing depends on k, T or the level beyond the geometric sums. ∎
+
+**RHcc-F3 OCCURS, as expected and harmlessly.** In Lemma RT (c) the level-0 slots j_0 and G_0 do not enter r_i at all. Here j_0 does enter, through ψ_l for every l; G_0 still does not (it contributes d*d*G_0 = 0 to the cascade). Its weight is L^{-(1-α)k}||j^c_0||_∞, exponentially small in k, so the (P0) slot never binds. This is the precise price of dropping co-closedness.
+
+**Reading: where the gain comes from.** Theorem RHT's content is the extra L^{-m} that criticality (transport) supplies against the inverse estimate's loss L^{(1+α)m} (REVIEW_BFT_B_S6 B.3: ||x||_inv alone gives only L^{αm}, which is not summable). Theorem RHT-cc keeps that gain because the funnel source is a *plain level-l* source, so it is transported with the same L^{-2} per level in coarse units; the only new input is that its coarse size does not grow with k - l, which is Lemma FT (i)-(ii). The reviewer's lever of REVIEW_BFT_B_S6 B.4 ("Theorem RH would carry over with π_l replaced by π_l + C·(coarse size of d*ρ_l)") is thereby not only confirmed but made explicit and k-uniform: the "coarse size of d*ρ_l" is the geometric convolution of Lemma FT (ii), with no unknown constant.
+
+### 29.4 Corollary RHT-V: PROVEN as an implication
+
+*Hypotheses used, by name.* (1) BFT_A **Lemma CD (i)** (PROVEN-HERE there, given (GI)): at every critical point of 𝔉_k the full remainder 𝔑^0(x; B) is composite-co-closed, Ξ^T𝔑^0 = -K'^T_x∇(𝔉_k∘exp)(x; B) = 0. (2) BFT_A **Proposition NC** (CONFIRMED, REVIEW_BFT_A_S6 l.224) and **Corollary NC** (CONFIRMED-WITH-FIX, same review): the rows split as R^B_l = d*W_l + V_l with d*W_l in the (G) slot (l ≥ 1) or the (P0) slot (l = 0) and ω_l||W^c_l||_∞ ≤ CL^{-(1-θ)(k-l)}η², V_l local with d*V_l = d*R^B_l. (3) 19.4's row sizes: π_l(R^B_l) ≤ 2C_bchκ_+L²η², uniform in l.
+
+*Composite co-closedness of V.* Each d*W_l is level-wise co-closed, hence composite-co-closed (Ξ^T of a level-wise co-closed chain source is 0). So at a critical point of 𝔉_k, Ξ^TV = Ξ^T𝔑^0 - Ξ^T(d*W) = 0: **V is a Setting LIN^cc source.** (Off the critical set it is not, and Proposition NCR of §31 prices the difference.)
+
+*Sizes.* By Lemma BOG, Σ_b|𝔅u(b)| ≤ 4qΣ_z|u(z)| for u supported in a cube of side q with Σu = 0 (the no-wrap condition of Corollary NC's fix). With u = d*R_c supported in a level-l cube of side q_R, Σ_z|d*R_c| ≤ 2d(q_R + 1)^dsup|R_c|, and at most N_R pieces meet a link, so
+  sup_own|V_l| ≤ C_NCsup_own|R^B_l|,  **C_NC := 8dN_Rq_R(q_R + 1)^d** (crude; depends only on (d, q_R, N_R)),
+hence π_l(V_l) ≤ C_NCπ_l(R^B_l) ≤ 2C_NCC_bchκ_+L²η², uniform in l.
+
+*Conclusion.* Theorem RHT-cc with s = 0 (the commutator rows are residual-type and are covered by the s-term, [RBB6-fix RS6-2]), G = W, j = V, B_k = 0:
+  N_res(x) ≤ (5/κ_-)[κ̂||r^c_{k-1}||_∞/(L^{1-α} - 1) + (1 + K_f)(1 - L^{-(1-α)})^{-1}·2C_NCC_bchκ_+L²η²·Σ_{l}L^{-(1-α)(k-l)} + 6(1 - L^{-(1-α)})^{-1}Σ_lL^{(α-θ)(k-l)}||W||_Y]
+  ≤ **C_Vη²**, C_V explicit in (L, d, κ_±, α, θ, q_R, N_R, C_bch), uniformly in k, T and in the level (using ||r^c_{k-1}||_∞ ≤ ||x||_inv ≤ G_Rη² or Corollary LIN0's bound for the top term).
+
+*Gauge-fixing independence.* For every λ ∈ Λ_0, r_l(x + Ξλ) = Q_l(x_l + d ev^{(l)}λ) - (x_{l+1} + d ev^{(l+1)}λ) = r_l(x) by root covariance, so every r_l, and hence N_res, is **exactly** composite-gauge invariant. By Lemma FG (iii), for a composite-co-closed source the gauge-fixed response x_Γ = 𝓛_Γ^{-1}S satisfies Γx_Γ = 0 and Hx_Γ = S, i.e. x_Γ *is* a critical point. Therefore the bound holds for the response under **every** gauge fixing Γ, Γ_E included, with the same constant. ∎
+
+**Status entered.** (Res-Hölder) = EP-F4 at m = 0: **closed for the non-co-closed BCH₂ remainder**, as an implication of Lemma CD (i) + Proposition NC + 19.4's sizes, at critical points of 𝔉_k (equivalently at fixed points of Φ_E, Lemma CD (ii)) and for every gauge fixing. The remaining scope caveats, stated plainly: (1) it is a *critical-point* statement, exactly as Theorem RHT already was — off the critical set the source is not composite-co-closed and §31's remainder governs; (2) it rests on lane A's Lemma CD, which is PROVEN there *given (GI)*; (3) C_NC is crude and the explicit (q_R, N_R) of the BCH₂ pieces are lane A's.
+
+### 29.5 Theorem RHT_m-cc: PROVEN-HERE
+
+19.6's weighted proof applies unchanged to the ĵ-form of Lemma RT-cc (c): the transported sup bounds are weighted with e^{5m}, the inverse estimate costs 5e^{5m}L^{(1+α)m}, d*G reads within 2 (e^{2m}), giving e^{10m} for the top and plain terms and e^{12m} for the G-terms as before; by Lemma FT (iv) each funnel term costs a further e^{2m}. Hence the weighted bound holds with
+  **c_w := 14** [crude],
+K_f unchanged, and for 0 ≤ m < m_*'. With Corollary EP-LRL(b) (T ≥ 5, [RBB5-fix RS5-3]) this gives **lane A's LRL (b) for the composite-co-closed sources as well**, with the same weighted-reach caveat ([RBB5-fix RS5-4], ARGUED). ∎
+
+## 30. Proofs, Step 3: Proposition CO-use — what lane B may cite for (CO-0) and (CO-up) (appended after the bb9 criteria file and after bb9/bb9b ran)
+
+Target 2 of §27.0. Every status below is **quoted** from the latest lane-A review that judged the item; none is re-judged here. This is bookkeeping, and it is PROVEN-HERE only as bookkeeping.
+
+### 30.1 Proposition CO-use: PROVEN-HERE (bookkeeping)
+
+**(i) (CO-0) = (G♯_0-lev0).** Lane A's **Theorem W0** (statement BFT_A §26.1, proof §28.5): for a level-0 divergence-form source G_0 and a co-closed plain level-0 current j_0 (B_k = 0, no other source), for every 0 < α < 1, uniformly in k, T: ||f_0||_∞ ≤ C_YH(||G^c_0||_∞ + [G^c_0]^∞_α) + C_YN||j^c_0||_∞ and ||x||_inv ≤ C_W0(||G^c_0||_∞ + [G^c_0]_α + ||j^c_0||_∞). **Status quoted: CONFIRMED** (REVIEW_BFT_A_S6 l.23 and l.151). Its inputs Theorem YH (l.23, 128) and Lemma FG (l.26) are CONFIRMED there too. Weighted: **Theorem W0_m** for 0 ≤ m ≤ m_Y, with Lemma LES-dd, Theorem W0-loc, Lemma WT, Lemma QH_m, **all quoted CONFIRMED** (REVIEW_BFT_A_S7 l.48, 289, 314).
+
+**(ii) (CO-up) = (G♯-up).** Lane A's **Theorem GU** (BFT_A §26.1, proof §28.7): for 1 ≤ l ≤ k - 1 and a level-l divergence-form source, ||x(G_l)||_inv ≤ C_GU(k - l + 1)²L^{α(k-l)}||G^c_l||_∞, hence ||x(G)||_inv ≤ C_GU'max_lω_l||G^c_l||_∞ for 0 < α < θ (the sup part needs only θ > 0). **Status quoted: CONFIRMED** (REVIEW_BFT_A_S6 l.24 and l.181).
+
+**Answer to the question put to lane B.** **Yes — both are usable by lane B verbatim, but only through Theorem W0 and Theorem GU with REVIEW_BFT_A_S6's confirmations.** REVIEW_BFT_A_S4 l.32-37's entry — "Proposition CO: CONFIRMED as bookkeeping; (CO-0) is a new kind of problem; (CO-up) is mostly bookkeeping once (CO-0) is in hand (ARGUED, fix T6)" — is **superseded**: it records the status of the *T6 reduction* at a time when Theorems W0 and GU did not exist. Lane B must not cite it as the live status of (CO-up); the live status is Theorem GU, CONFIRMED. The same holds for REVIEW_BFT_B_S5's open list (l.451, 478), which predates lane A session 6: its entry "(CO-0), (CO-up) for (H-inv+): OPEN" is stale, and §27.0's instruction to treat REVIEW_BFT_B_S5 l.475-500 as the authoritative open list must be read with that correction.
+
+**(iii) What this leaves for (H-inv+).** PROOF.md l.6695 lists the (H-inv+) bundle as [(CO-0), (CO-up), (G♯-rough) curvature half, (SB)] + (Res-Hölder). Member by member, with quoted statuses:
+- **(CO-0):** PROVEN (Theorem W0), CONFIRMED. Weighted to m ≤ m_Y (Theorem W0_m), CONFIRMED.
+- **(CO-up):** PROVEN (Theorem GU), CONFIRMED.
+- **(G♯-rough) curvature half:** PROVEN (Theorems CO-0R, CO-upR, Corollary G♯R = Theorem G♯-rough of BFT_A §12.1, all gauge-invariant outputs, m = 0, 0 < α < θ), **CONFIRMED** (REVIEW_BFT_A_S5 l.30, with the Campanato-vs-pointwise remark U5 on CO-upR).
+- **(SB): no longer an input.** REVIEW_BFT_A_S5 records that **Theorem CO-B "removes 13.7's (SB) gap outright"** (l.373; l.215 "this bypasses 13.7's Gap 2 (SB) entirely") and that CO-B is CONFIRMED (l.30). (SB) itself remains OPEN as a statement (BFT_A l.1642) but is not needed by the bundle.
+- **(Res-Hölder):** PROVEN for the level-wise co-closed Setting-LIN classes (Theorem RHT, RHT_m; CONFIRMED, REVIEW_BFT_B_S6 B.3, B.6) and, by §29 of this session, for **composite-co-closed** sources as well (Theorem RHT-cc, Corollary RHT-V, Theorem RHT_m-cc; PROVEN-HERE / PROVEN as an implication, unreviewed).
+- **Assembly:** Corollary LIN0 (BFT_A §28.8) is exactly (H-inv) at m = 0 on BL-7's pair for level-wise co-closed plain currents, **CONFIRMED in its stated scope** (REVIEW_BFT_A_S6 l.24, 198); lane B's **Corollary RH-inv** (§19.4, CONFIRMED-WITH-FIX, REVIEW_BFT_B_S6 B.4) gives (H-inv+) ⟺ (H-inv) for 0 < α < θ, with G_+ = (1 + C_1)G + C_2.
+
+**Conclusion (status, entered honestly).** **(H-inv+) at m = 0, at the trivial background, for the level-wise co-closed Setting-LIN source classes on 𝒞_glob, is PROVEN as an implication, and every one of its inputs is CONFIRMED by a lane review.** The PROOF.md l.6695 clause-table entry for BFT-0/1/2 is therefore **stale in three places**: (CO-0) and (CO-up) are no longer open, (SB) is no longer an input, and (Res-Hölder) is no longer open at m = 0 in either the level-wise co-closed or the composite-co-closed scope. What the clause genuinely still needs is listed in §33's table: the nontrivial background (the background-covariant slice (N1)), (H-rem^∇) third order [ARGUED], (FP♯'), m > 0 (lane A's DX_m, DB_m, quoted OPEN in REVIEW_BFT_A_S7 l.320), the off-critical-set curvature half (the new named item (CO-fun) of §31), and PROOF's own (CL-4) for BFT-0's identification clause. ∎
+
+**What is NOT claimed.** Lane A's items are quoted, not re-verified here; this session did not re-open Theorem W0's or Theorem GU's proofs. The weighted members at m > 0 are confirmed only up to m_Y and only for W0's own source classes: the weighted sups of GU, CO-0R and CO-B are quoted OPEN (REVIEW_BFT_A_S7 l.320), so **(H-inv+)_m for m > 0 is NOT claimed here** and BFT-3 at k ≥ 2 still rests on it.
+
+## 31. Proofs, Step 4: the (NC-Γ) restatement for composite-co-closed sources, and the remainder (appended after §30)
+
+Target 3 of §27.0, and the lead decision of DRIVE_BRIEF D1. Lane A's (NC-Γ) as originally stated — sup_p|⟨V_l, (Y^p_Γ)_l⟩| summable in l, uniformly in k, T, for all configurations of the ball — is **expected FALSE for Γ_E away from the critical set** (BFT_A 38.6, 38.8; REVIEW_BFT_B_S8 Cross-lane 3-4, ARGUED). §31 replaces it.
+
+### 31.1 Proposition NCR: PROVEN-HERE
+
+By Lemma FG (ii), for x = 𝓛_Γ^{-1}S the gauge-invariant outputs are f_0(x)(p) = ⟨S, Y^p_Γ⟩ and r_{k-1}(x)(b) = ⟨S, Y^{(b)}_Γ⟩. Let Y^p_* be any representative of the level-0 plaquette response and λ := λ^Γ_*(p) ∈ Λ_0/const the element with Y^p_* + Ξλ = Y^p_Γ (it exists and is unique modulo constants because ΓΞ is a bijection of Λ_0/const onto Ran Γ — the defining property of a gauge fixing, used the same way in 28.9 (ii)). Then
+  **f_0^Γ(S)(p) = ⟨S, Y^p_*⟩ + ⟨S, Ξλ⟩ = ⟨S, Y^p_*⟩ + ⟨D(S), λ^Γ_*(p)⟩,**
+and identically with Y^{(b)} for r_{k-1}(b). ∎
+
+*Three readings, all exact.*
+1. **The whole dependence of a gauge-fixed response on the gauge fixing is the pairing of the source's composite divergence with the gauge transport function.** If D(S) = 0 the response is representative-independent — which is Lemma FG (iii) — and if D(S) ≠ 0 the defect is *bilinear*: one factor is the source's own composite divergence, the other is a property of the slice alone.
+2. **It contains lane A's Lemma RC and Proposition TE as special cases.** Taking Y^p_* = the top-anchored representative C0#, λ^{Γ_E}_*(p) is the gauge function carrying C0# into S_E; its root values are lane A's σ (the spikes, Lemma RC's n²Σ_ZD(R)(Z)σ(Z)) and its level-k-root part is TE's tent data. Proposition NCR says that these two are not two separate corrections but the root-supported and tent parts of one object, λ^{Γ_E}_*(p).
+3. **It converts "(NC-Γ) for Γ_E" into a product of two named quantities**, one of which the contraction controls: see 31.3.
+
+### 31.2 (NC-Γ)_cc: the residual half PROVEN, the curvature half reduced
+
+Let S be a Setting LIN^cc source. By Lemma FG (iii), x_Γ = 𝓛_Γ^{-1}S satisfies Γx_Γ = 0 and Hx_Γ = S for **every** gauge fixing Γ: the response *is* the Setting-LIN critical point, and all gauge-invariant outputs (f_j, r_j, ||x||_inv, N_res) are Γ-independent. So for composite-co-closed sources there is nothing left of the gauge-fixing dependence that (NC-Γ) was about, and the content of (NC-Γ)_cc is the *size* of those outputs. Splitting ||x||_inv = max_j[||f_j||_∞ + [f_j]_α + L^{k-1-j}||r^c_j||_∞]:
+
+**(a) The residual terms: PROVEN** (this session). L^{k-1-i}||r^c_i||_∞ is bounded by Lemma RT-cc (c) + Lemma TC alone, with the funnel priced by Lemma FT: for m = k - 1 - i,
+  L^m||r^c_i||_∞ ≤ (κ_-^{-1})L^m[||s^c_i|| + L^{-2m}(||ρ_{k-1}|| + Σ_{l>i}(π_l(ĵ_l) + 6L^{k-l}||G^c_l||))] ,
+so, term by term and uniformly in m = k - 1 - i: the s-term contributes κ_-^{-1}L^{-θ(m+1)}||s||_R (by ω^R_i = L^{θ(k-i)}), and every other term contributes κ_-^{-1}L^{-m} times (κ_+||r^c_{k-1}||_∞ + ||s^c_{k-1}||_∞ + (1 + K_f)max_{l}π_l(j_l)(1 - L^{-1})^{-1} + 6max_lL^{k-l}||G^c_l||·(…)), each of which is a norm of the source or the top residual. Hence max_i L^{k-1-i}||r^c_i||_∞ ≤ C(||s||_R + κ_+||r^c_{k-1}||_∞ + (1 + K_f)max_lπ_l(j_l) + ||G||_Y), k-, T- and level-uniformly, with the dependence on i decaying like L^{-θ(m+1)} in the s-slot and like L^{-m} in all the others. And N_res is bounded by Theorem RHT-cc. **Both halves of the residual content of (NC-Γ)_cc are therefore closed, for every gauge fixing, at m = 0; and at m > 0 by Theorem RHT_m-cc with c_w = 14.**
+
+**(b) The curvature terms: reduced to one named level-0 statement.** For j ≥ 1, BFT_A §23 gives f_j = 𝒜^{(0→j)}f_0 - R_j with R_j = Σ_{i<j}𝒜^{(i+1→j)}(dr_i)^c and ||(dr_i)^c|| ≤ 4L^{k-1-i}||r^c_i|| (BL-2 (e)), and [R_j]_α is controlled by the same residual data plus a residual-Hölder input, which is exactly Theorem RHT-cc. Since 𝒜 is a probability average in coarse units (BL-2 (d)) and BL-C converts Campanato to pointwise, **the whole curvature tower is controlled by sup|f_0| + [f_0]_α together with the residual data of (a)**. By Lemma RT-cc (d), f_0 = n²dΔ_0^{-1}J_0 with J_0 **co-closed** and
+  J_0 = j_0 + d*G_0 + h_0^Tψ_0 - (Q_str^{(0→k)})^Tρ_{k-1} + Σ_{1≤l≤k-1}(Q_str^{(0→l)})^T(d*G_l + ĵ_l).
+Compared with lane A's §18.7 J_0 this has exactly two extra pieces, the level-0 funnel h_0^Tψ_0 and the funnel images (Q_str^{(0→l)})^Th_l^Tψ_l, whose coarse sizes are bounded by Lemma FT (ii)-(iii) (the images cost no more than π_l(h_l^Tψ_l), by BL-2 (c)'s unconditional coarse-unit contraction). **This is Proposition INV-cc: PROVEN as a reduction.**
+
+**The named open item (CO-fun), stated precisely.** *There is C_fun < ∞, independent of k and T, such that for every Setting LIN^cc source in the (P0) + (Pl-c) + (G) + (R) classes, the level-0 response f_0 = n²dΔ_0^{-1}J_0 of Lemma RT-cc (d) obeys ||f_0||_∞ + [f_0]^∞_α ≤ C_fun(||G^c_0||_∞ + [G^c_0]_α + ||j^c_0||_∞ + ||j||_{Pc} + ||G||_Y + ||s||_R + κ_+||r^c_{k-1}||_∞).* **Status: OPEN.** Why it is not a corollary of Theorem W0: the funnel pieces are level-0 plain currents of the same coarse order as the images lane A already carries, but they are **co-closed only collectively** (d*J_0 = 0 while d*(h_0^Tψ_0) ≠ 0 in general), so they cannot be fed into Theorem W0's hypothesis one at a time, and Corollary LIN0's superposition (which treats each source class separately, 28.8) does not apply to them. The structural facts available for an attack on it, both proven here: the funnel pieces are supported on the **block-interior** links of the blocks that carry the composite divergence (Lemma FT (i)), and their coarse size is the geometric convolution of Lemma FT (ii) — no power of L^{k-l}. [RHcc-F3's level-0 term is the only place where the (P0) slot enters.]
+
+**Status entered for (NC-Γ)_cc, honestly.** **CONDITIONAL on (CO-fun).** The residual half (both L^{k-1-j}||r^c_j|| and N_res) is PROVEN unconditionally and Γ-uniformly; the curvature half is PROVEN given (CO-fun). At a critical point of 𝔉_k the rows are composite-co-closed (Lemma CD (i)), so this is the statement the contraction needs **at its fixed point**; Corollary RHT-V is its residual half made explicit with η².
+
+### 31.3 The remainder: (NC-Γ) off the critical set
+
+Let S be any source (not composite-co-closed), for instance the row collection at a non-critical iterate. Two exact statements:
+
+**(R1) The gauge-fixed response is the composite-co-closed response of a corrected source.** Lemma GE (c) gives S^E_0(S) = S + Γ_E^TD(S) with D(S^E_0(S)) = 0, and since Y^p_{Γ_E} ∈ Ker Γ_E,
+  ⟨S, Y^p_{Γ_E}⟩ = ⟨S^E_0(S), Y^p_{Γ_E}⟩ - ⟨D(S), Γ_EY^p_{Γ_E}⟩ = ⟨S^E_0(S), Y^p_{Γ_E}⟩ = ⟨S^E_0(S), Y^p⟩
+for any representative Y^p. **So every Γ_E-response is a composite-co-closed response, of the source S corrected by the box-local level-0 1-form Γ_E^TD(S)**, whose size, support and composite divergence are given exactly by **Lemma ΓT-op** (§24.1/§25.1, renamed by [RBB8-fix RS8-3]): support within coarse distance 3 of supp D(S), ℓ¹ norm ≤ 4M_n||D(S)||_1 = 8(4n + 1)||D(S)||_1, sup ≤ C(n + L^{3(k-l)})||D(S)||_∞, and d*Γ_E^TD = -D + Σ_XQ_Xδ_{c_X} with |Q_X| ≤ 8L^{3(k-l)}||D||_∞. This is the precise sense in which the restated (NC-Γ) is "(NC-Γ)_cc plus a remainder": the remainder is the *response to one explicit level-0 1-form*, not an uncontrolled term.
+
+**(R2) The remainder as a bilinear pairing (the quantitative form).** By Proposition NCR with any representative Y^p_*,
+  **f_0^{Γ_E}(S)(p) - ⟨S, Y^p_*⟩ = ⟨D(S), λ^{Γ_E}_*(p)⟩,  hence  |remainder| ≤ ||D(S)||_1·sup{|λ^{Γ_E}_*(p)(z)| : z ∈ supp D(S)}.**
+Therefore **(NC-Γ)_cc + (GT-sup) ⟹ (NC-Γ) for Γ_E**, where (GT-sup) is the named item of §27.4: a k-, T-uniform bound on the gauge transport function λ^{Γ_E}_*(p) restricted to supp D(S), for a named representative Y^p_*. **(GT-sup): OPEN.** Three facts about it, recorded:
+- It is exactly the quantity lane A's spikes measure. With Y^p_* = C0#, λ^{Γ_E}_*(p) at the roots next to p is lane A's σ ≈ 0.003 at k = 2, 3 (ba8), and lane A argues (38.6, ARGUED) that the associated Γ_E-response carries terms up to ≍ L^{2k-3}η². So (GT-sup) is **expected FALSE if sup is taken over all z**, and the whole question is whether supp D(S) avoids, or is small where, λ^{Γ_E}_* is large. This is precisely REVIEW_BFT_B_S8 Cross-lane 4's "the remainder's composite divergence at those roots must carry a compensating L^{-2k}, or be supported away from p's roots" — now in the form of a product of two separately named factors, which is the form in which it can be checked.
+- **The remainder vanishes identically at critical points and is quadratically small along the iteration.** By Lemma CD, D(𝔑^0(x; B)) = Ξ^T𝔑^0 = -K'^T_x∇(𝔉_k∘exp)(x; B), so ||D(S)||_1 ≤ ||K'_x||·||∇(𝔉_k∘exp)(x)||_1: the remainder carries the *gradient of the functional*, which is 0 at a critical point and is the Newton residual along the contraction. Hence the remainder is a **second-order** quantity in the iteration, multiplied by the (possibly k-growing) λ^{Γ_E}_*. What route (i) needs is only that the product stays bounded; that is a statement about where D(S) sits, not about its size alone.
+- **It is representative-free in a useful way.** λ^{Γ_E}_*(p) depends on the choice of Y^p_*, but the *remainder* does not: changing Y^p_* changes ⟨S, Y^p_*⟩ and ⟨D(S), λ⟩ by opposite amounts. So (GT-sup) may be attempted with whichever representative makes λ smallest on supp D(S) — including lane A's top-anchored C0#, which REVIEW_BFT_B_S8 Cross-lane 4 item 3 already licenses as an evaluation device requiring no slice decision.
+
+**The restatement settled on, in one line.** **(NC-Γ)_cc** (composite-co-closed sources: Γ-independent outputs; residual half PROVEN, curvature half CONDITIONAL on (CO-fun)) **plus the remainder identity of Proposition NCR**, whose two factors are ||D(S)||_1 = O(||∇𝔉_k||) by Lemma CD and the gauge transport sup (GT-sup), OPEN. Lane A's original (NC-Γ) is recovered as (NC-Γ)_cc + (GT-sup), and is expected FALSE only through (GT-sup).
+
+## 32. Proofs, Step 5: BFT-5 — statement, reduction, status (appended after §31)
+
+Target 4 of §27.0. BFT-5 had **no status recorded in any BFT review or lane file** (PROOF.md l.6698 says so explicitly: "only REVIEW_S22's definition"). REVIEW_BFT_B_S8 Part F recommends lane B as its owner and proposes a statement; §32 adopts that recommendation, states the clause, reduces it, and gives it an honest status.
+
+### 32.1 (BFT-5_E): the statement lane B owns
+
+> **(BFT-5_E).** There are ε_5 > 0 and C_5 < ∞, depending only on (N, L, κ_±) and **not** on k or T (T ≥ 5), such that for every V_k ∈ 𝒦(ε_5):
+> (a) *Invertibility.* The composite slice Hessian at the background, H_E := ∇²(𝔉_k∘exp)(Z(V_k)) restricted to the slice S_E (equivalently 𝓛_E = H_E + Γ_E^TΓ_E on the full chain space), is invertible.
+> (b) *Composite-co-closed sources.* For every composite-co-closed source S (Ξ^TS = 0, §27.1), the response x = H_E^{-1}S obeys the (G♯) bounds in SF/RTARGET §33's 𝔐-pair, ||x||_𝔐 ≤ C_5||S||_{𝔐*}, together with BFT-3's weighted locality at rate ≥ m_Y; and by Lemma FG (iii) these bounds are **independent of the gauge fixing**, so (b) is a statement about the orbit, not about S_E.
+> (c) *General sources.* For a general source the same bounds hold for the gauge-invariant part of the response, and the slice-dependent remainder is given **exactly** by Proposition NCR: f_0^{Γ_E}(S)(p) - ⟨S, Y^p_*⟩ = ⟨D(S), λ^{Γ_E}_*(p)⟩, whose two pieces are Lemma RC's root terms n²⟨D(S), σ⟩ and Proposition TE's tents. No k-uniform bound on (c) is claimed.
+> (d) *Scope.* m = 0 for (a)-(c); the weighted form of (b) at 0 ≤ m ≤ m_Y is stated as the weighted clause and is **not** claimed at the same status.
+
+Clause (c) is the reason (BFT-5_E) can be stated at all under the one-slice lead decision: it quarantines the slice dependence in a single exact bilinear term instead of asserting a bound that is expected false (BFT_A 38.6).
+
+### 32.2 Proposition BFT5-red: PROVEN as bookkeeping (the reduction), with one narrowing that is new
+
+**(BFT-5_E) (a), (b) ⇐ (1) + (2) + (3) + (4), and (c) is Proposition NCR (PROVEN, §31.1).**
+1. **(G♯_0-field)** — (G♯) for the chain Hessian at the **trivial** chain in the §33 pair, with the weighted constants. *Status quoted:* OPEN, lane A's U = 1 package (PROOF l.3473, l.6698; it also needs the abelian multi-level physical gap).
+2. **(R♯_ω)** — the gradient remainder in divergence form at the trivial chain, with the Lipschitz form, as stated in PROOF l.3533-3545. *Status quoted:* "a precise statement, not a proven one" (PROOF l.3546); two of its three parts are "argued, not written", and 𝔥_0 additionally needs Lemma G♯_0-plain (OPEN).
+3. **SF's Lemma G-pert** — *Status quoted:* **PROVEN-HERE (implication; not counted)** (SF l.881, l.967), with scope [RSF2-fix GP-1/GP-2]: it bounds the Hessian in the **trivial slice at x^r**, for B-NA-red's class, i.e. for chains x^r with t := ||x^r||_{X_c} + ||B^r||_D ≤ min{ρ_0, 1/(4GC_R), 1/(4G_wC_{R,w})} — "data small in ONE global gauge".
+4. **(G♯-patch)** — the non-abelian local-gauge patching in Schauder norms. *Status quoted:* OPEN, and SF records it as "the B-NA wall itself, not a new sub-item of it" ([RSF2-fix GPa-1]).
+
+**The narrowing that lane B contributes (this is the new content of 32.2).** Step 3's hypothesis is exactly "the background chain is X_c-small in one gauge", and SF's BNA-F4 says no *global* gauge achieves it on a large torus because holonomies accumulate. **Corollary CL-iv supplies it on every frame, k- and T-uniformly:** on a frame Ω (V^h = e^b with ||b|| ≤ ε) the composite background written in frames satisfies sup_j||log Z^off_j||_{C^{1,α}} ≤ C_1ε with C_1 independent of k and T, and (CovLift) (i)-(iii) give the covariance of Z^off on 𝒦(ε) for every gauge, T ≥ 5. Hence:
+
+> **(G♯-patch^Ω), the narrowed form.** Given (1), (2) and Corollary CL-iv, (G♯-patch) reduces to gluing the **frame-local** inverses supplied by Lemma G-pert on the frames of a (CovLift)-covariant cover into a global inverse in the §33 pair, with the transition gauges of CL-iv (the κ_X = g_X g_{X_*}^{-1} of 25.5, ||log κ||_{C^{2,α}} ≤ Cε) as the patch gauges. No step of the gluing has to produce the smallness: CL-iv has produced it.
+
+That is a genuine reduction of a named OPEN item to a different named OPEN item, and it is why BFT-5 belongs to lane B: the frames, Z^off, the transition gauges and their C^{1,α}/C^{2,α} control are lane B's objects (§25.5, §22.12, (CovLift)).
+
+**Honest status of (BFT-5_E): OPEN, with inputs named.** Not ARGUED, not CONDITIONAL on a single item: it rests on two independently OPEN inputs ((G♯_0-field), (R♯_ω)) and on (G♯-patch^Ω). Clause (b)'s composite-co-closed formulation additionally inherits (NC-Γ)_cc's status, i.e. it is CONDITIONAL on (CO-fun) for the curvature half, and its residual half is PROVEN (§31.2 (a), Theorem RHT-cc). Clause (c) is PROVEN (§31.1). Clause (d)'s weighted form additionally needs lane A's DX_m, DB_m (quoted OPEN). ∎
+
+### 32.3 Lemma Rω-frame: ARGUED (the transfer), with the gap named
+
+*Statement as argued.* Let Ω be a frame on which Corollary CL-iv holds, write the chain in the frame gauge, and let 𝔑^Ω denote the gradient remainder of the frame-written functional at the background Z(V_k). Then **(R♯_ω) at the trivial chain + Corollary CL-iv ⟹ (R♯_ω) for 𝔑^Ω at Z(V_k) on Ω**, with C_R replaced by C_R·P(C_1ε) for an explicit polynomial P, and the weights unchanged.
+
+*Argument.* Writing the configuration in the frame replaces each level-l link variable by its conjugate by Z^off, i.e. x_l ↦ Ad_{Z^off_l}x_l + log Z^off_l in coarse units. Three facts make the (R♯_ω) structure survive this.
+1. *Divergence form is preserved under conjugation by a gauge.* If 𝔑_l = d_l^*𝔊_l then the conjugated current is d_l^*(Ad_{Z}𝔊_l) + (a commutator term bilinear in ∇^clog Z^off and 𝔊_l), and the commutator term is itself in divergence form at the cost of one more 2-form of size ||∇^clog Z^off||_∞·||𝔊_l|| (write [∇^clog Z, 𝔊] = d^*(…) on a plaquette, as in 22.5's increment formula). By CL-iv, ||∇^clog Z^off_l||_∞ ≤ C_1ε uniformly in l, k, T.
+2. *The Hölder slot.* [𝔊_0]_{α,m} picks up ||log Z^off_0||_{C^{1,α}} ≤ C_1ε by the discrete chain rule of 25.5 (v), with the same constants.
+3. *The level-0 plain current 𝔥_0.* Conjugation adds to 𝔥_0 a term of the form (∂q/∂x)^T[∇^clog Z^off, dx + q], of the same order ||x||²_{X_c}·C_1ε. It does **not** change the fact that 𝔥_0 is a plain current, so Lemma G♯_0-plain is needed exactly as at the trivial chain, and not more.
+
+*The gap, named.* (i) Step 1's "the commutator term is itself in divergence form" is written at the level of 22.5's increment formula, **not with explicit constants**, exactly as 25.5's analogous BCH tails are ([RBB8-fix RS8-6]'s neighbour). (ii) The argument is a *transfer*: (R♯_ω) is not proven at the trivial chain either (PROOF l.3546), so Lemma Rω-frame cannot upgrade anything by itself. **Its only content, and it is the content REVIEW_BFT_B_S8 Part F asked for, is that the frame rewriting is not a new wall:** (R♯_ω) in frames costs a factor P(C_1ε) over (R♯_ω) at U = 1, with C_1 from CL-iv and no k- or T-dependence. Status: **ARGUED**, not PROVEN, and explicitly not CONDITIONAL (a CONDITIONAL would require the constants of (i) to be written).
+
+## 33. Session-9 check record, outcome and notes for other files (written after §32)
+
+### 33.1 Check bb9 / bb9b — including a disclosed FAIL
+
+**Criteria:** `checks/bb9_criteria.md`, born 12:31:25 UTC, with one amendment appended at 12:34:06 adding test A7. **Both were written before any script existed** (`checks/bb9_rtcc.py` born 12:35:37). No criterion was retuned at any point.
+
+**No numeric lock was taken.** The check is exact rational arithmetic in plain python (`fractions.Fraction` and Python ints only; no numpy, no BLAS), which DRIVE_BRIEF rule 6 exempts from the lock. Environment: `nice -n 10`, OMP/OPENBLAS/MKL/VECLIB thread variables = 1, `PYTHONDONTWRITEBYTECODE=1`, `python3 -I`, `/usr/bin/time -l`, no `timeout`, no trap. Model: d = 2, L = 3, k = 2, κ_0 = 1, κ_1 = 2, roots = block centres, axial order 0 then 1; Part A on the top side T = 2 (level sides 18, 6, 2), Part B an exact 180 × 180 rational solve on the top side T = 1 (level sides 9, 3, 1).
+
+**First run, `checks/bb9.out` — NOT ALL PASS; B3 and B4 FAILED.** 6.13 s, 27.5 MB peak. A1-A7, B0-B2, B5-B7 PASS; **B3 FAIL, B4 FAIL**. Cause, found after the run by reading the script: a **bug in the script's Hessian assembly** — the level-1 gradient applied Q_1^T twice (`mapply(mt(Q1), mapply(mt(Q1), r1, n1L), n1L)`), so Part B solved the wrong energy. Because the same buggy operator was used to build the system and to verify B0, B0 passed on the wrong functional; B3, which compares the solution against the *correct* one-step recursion, failed, and B4's control fired consistently. **The FAIL is kept as the record and `checks/bb9.out` and `checks/bb9_rtcc.py` are not altered.**
+
+**Rerun, `checks/bb9b.out` — ALL PASS.** `checks/bb9b_rtcc.py` (born 12:36) is `bb9_rtcc.py` with that one expression corrected and nothing else changed; its header states the fix. 6.14 s, 28.2 MB peak. Same criteria file, no criterion retuned, no test added after seeing an outcome.
+
+| id | what it tests | result |
+|---|---|---|
+| A1 | Q_l d = d ev (root covariance), l = 0, 1 | PASS (exact) |
+| A2 | d*Q_l^T = ev^Td* | PASS (exact) |
+| A3 | Q_l^T = Q_{str,l}^T − h_l^Td* | PASS (exact) |
+| A4 | Lemma FT (i): one block per link, |c(X, b)| ≤ 1 (max = 1/3), no block-crossing link carries the funnel | PASS |
+| A5 | Lemma RT-cc (a) cascade support: Ψ_0 on the level-1 roots, Ψ_1 on the level-2 roots, with d*j_0 ≠ 0, on six constructed composite-co-closed sources | PASS |
+| A6 | control: a random source has d*j_0 not root-supported **and** is not composite-co-closed (so A5 is a real constraint) | PASS |
+| A7 | funnel non-vacuity: h_l^T(d*ρ) ≠ 0 for l = 0, 1 with ratio max|h^Td*ρ|/max|d*ρ| = 1/3 ≤ 1 | PASS |
+| B0 | criticality: Hx = S and Ξ^Tx = 0 exactly for the composite-co-closed source | PASS |
+| B1 | non-vacuity: d*j_0 ≠ 0 and ψ_0 = d*ρ_0 ≠ 0 (so the source is **not** level-wise co-closed and Lemma RT (a) does not apply) | PASS |
+| B2 | **Lemma RT-cc (a):** ψ_0 equals the level-1-root restriction of d*j_0, and ev^Tψ_0 = d*j_0 | PASS (exact) |
+| B3 | **Lemma RT-cc (b), (c):** ρ_0 = Q_{str,1}^Tρ_1 − ĵ_1 | PASS (exact) |
+| B4 | control branch: ψ_1 = 0 at T = 1 (as pre-registered), and the funnel-free identity then holds | PASS, consistent |
+| B5 | **Lemma RT-cc (d):** d*J_0 = 0 and d*dx_0 = J_0 | PASS (exact) |
+| B6 | Lemma FT (i) at the solution: max|h_0^Tψ_0| = 2 ≤ max|ψ_0| = 6, no crossing link | PASS |
+| B7 | control: a source with Ξ^TS' ≠ 0 has no critical point (Hx' ≠ S') | PASS |
+
+**Scope limitations of bb9b, stated whether or not they are convenient.** (1) d = 2, not 4; the proofs of §29 are dimension-free except for the explicit 2d, so this tests the algebra, not the d = 4 arithmetic of Theorem RHT's exponents. (2) Abelian; the chain maps are the linear ones, which is the setting of Lemma RT-cc. (3) k = 2, so the transport is one step. (4) **At T = 1 the top charge vanishes, so ψ_1 = 0 and Part B does not exercise a nonzero funnel inside the ρ-recursion** — this was pre-registered in §27.7 and in the criteria's B4, and A3 + A7 at T = 2 carry that part (the funnel operator is nonzero, its norm is 1/3 ≤ 1, and A3 is the identity that puts it into the recursion). (5) κ_1 ≠ κ_0 was used so that ρ_l ≠ κ r_l coincidences cannot hide an error; s = G = 0, so the s- and G-slots of Theorem RHT-cc are untested numerically (they are untouched by this session's change).
+
+### 33.2 Outcome table (session 9; all unreviewed)
+
+| Item | Status | Note |
+|---|---|---|
+| Fixes of REVIEW_BFT_B_S8 (RS8-1..RS8-9) | entered as errata, tagged [RBB8-fix], §28 | §24-§26 not edited; each entry names the line it corrects. RS8-2, RS8-3, RS8-8, RS8-9 (binding) and RS8-1, 4, 5, 6, 7 (cosmetic) all entered |
+| **Lemma RT-cc** (residual transport for composite-co-closed sources) | **PROVEN-HERE** | the cascade ev^{(0→l+1)T}ψ_l = Ψ_l; ψ_l = the level-(l+1)-root restriction of Σ_{l'≤l}d*j_{l'}; the recursion with ĵ_l = j_l + h_l^Tψ_l; d*J_0 = 0 and f_0 = n²dΔ_0^{-1}J_0. bb9b A1-A3, A5, B0-B3, B5 |
+| **Lemma FT** (funnel transpose) | **PROVEN-HERE** | ||h_l^T||_{ℓ^∞→ℓ^∞} ≤ 1 (one block per link; block-interior support); π_l(h_l^Tψ_l) ≤ 2dΣ_{l'≤l}L^{-3(l-l')}π_{l'}(j_{l'}); e^{2m} in the weights. bb9b A4, A7, B6 |
+| **Theorem RHT-cc** ((Res-Hölder) for composite-co-closed sources, m = 0) | **PROVEN-HERE** | Theorem RHT's bound with π_l(ĵ_l); funnel factor K_f = 2d/(1 − L^{−(2+α)}) = 8.737 at d = 4, L = 3, α = ¼ |
+| **Corollary RHT-V** ((Res-Hölder) for the non-co-closed BCH₂ remainder V_l) | **PROVEN as an implication** | given BFT_A Lemma CD (i) + Proposition NC + Corollary NC + 19.4's row sizes: N_res ≤ C_Vη², k-, T-, level-uniform, for **every** gauge fixing. **This closes the part of EP-F4 that [RBB6-fix RS6-1] left OPEN** |
+| **Theorem RHT_m-cc** (weighted) | **PROVEN-HERE** | c_w = 14 [crude]; with Corollary EP-LRL(b) it extends lane A's LRL (b) (T ≥ 5) to composite-co-closed sources, same ARGUED weighted-reach caveat |
+| **Proposition CO-use** | **PROVEN-HERE as bookkeeping** | (CO-0) = Theorem W0 and (CO-up) = Theorem GU are **usable verbatim**, CONFIRMED by REVIEW_BFT_A_S6; REVIEW_BFT_A_S4's ARGUED (CO-up) and REVIEW_BFT_B_S5's "(CO-0), (CO-up) OPEN" are **stale**; **(SB) is no longer an input** (Theorem CO-B removes it, REVIEW_BFT_A_S5 l.373) |
+| **(H-inv+) at m = 0, trivial background, level-wise co-closed classes** | **PROVEN as an implication**, every input CONFIRMED by a lane review | Theorems W0, GU, CO-0R, CO-upR, CO-B, Corollary G♯R, Corollary LIN0 + lane B's Corollary RH-inv and Theorem RHT |
+| **Proposition NCR** (exact gauge-fixing remainder) | **PROVEN-HERE** | f_0^Γ(S)(p) = ⟨S, Y^p_*⟩ + ⟨D(S), λ^Γ_*(p)⟩; contains Lemma RC and Proposition TE as its root and tent parts |
+| **(NC-Γ)_cc** (the restatement) | **residual half PROVEN; curvature half CONDITIONAL on (CO-fun)** | Γ-independence is Lemma FG (iii); residuals and N_res by Lemma RT-cc + Theorem RHT-cc; curvature tower reduced to sup|f_0| + [f_0]_α for the funnel-augmented J_0 |
+| **Proposition INV-cc** | **PROVEN as a reduction** | residual terms of ||x||_inv unconditional; curvature terms ⟸ (CO-fun) |
+| **(CO-fun)** (new named item) | **OPEN**, stated precisely (§31.2) | the funnel pieces are co-closed only collectively, so Theorem W0 cannot take them one at a time; they are block-interior supported with no L^{k−l} growth |
+| **(GT-sup)** (new named item) | **OPEN**, stated precisely (§27.4, §31.3) | (NC-Γ)_cc + (GT-sup) ⟹ lane A's original (NC-Γ) for Γ_E; the remainder is ||D(S)||_1·sup|λ^{Γ_E}_*| on supp D(S), and ||D(S)||_1 = O(||∇(𝔉_k∘exp)||) by Lemma CD |
+| **(BFT-5_E)** | **stated (§32.1); status OPEN with its inputs named** | ⇐ (G♯_0-field) [OPEN] + (R♯_ω) [stated, not proven] + Lemma G-pert [PROVEN in SF, implication] + (G♯-patch^Ω); clause (b) inherits (NC-Γ)_cc; clause (c) PROVEN (Proposition NCR) |
+| **Proposition BFT5-red**, with the **(G♯-patch^Ω)** narrowing | **PROVEN as bookkeeping**; the narrowing is new | CL-iv supplies G-pert's X_c-smallness **on every frame**, k- and T-uniformly, so (G♯-patch) reduces to gluing frame-local inverses with CL-iv's transition gauges |
+| **Lemma Rω-frame** | **ARGUED** (explicitly not CONDITIONAL) | the frame rewriting is not a new wall: (R♯_ω) in frames costs P(C_1ε) over (R♯_ω) at U = 1. Gap: the commutator-to-divergence-form step is written without explicit constants |
+| Step 5 ((Mult-Y) / GAP 1; nonabelian (CovLift) items) | **not attempted** | targets 1-4 consumed the session |
+| Failure modes | **RHcc-F1, F2, F4 do not occur** (proven); **RHcc-F3 OCCURS** as expected (the (P0) slot now enters N_res, with weight L^{−(1−α)k}: harmless) | |
+| bb9 / bb9b | **bb9 NOT ALL PASS (B3, B4 FAIL — script bug in the Hessian assembly, disclosed, record kept); bb9b ALL PASS (same criteria, one-line fix)** | |
+
+### 33.3 What BFT-0/1/2 now rests on, in lane B's reading
+
+The fan-in bundle of PROOF.md l.6695 was (H-inv+) [(CO-0), (CO-up), (G♯-rough) curvature half, (SB)] + (Res-Hölder). After §29-§31, **at m = 0 and the trivial background that whole bundle is closed**: (CO-0) and (CO-up) are PROVEN and CONFIRMED in lane A, the (G♯-rough) curvature half likewise, (SB) is not an input, and (Res-Hölder) is PROVEN both for level-wise co-closed classes (session 6) and for composite-co-closed sources (this session). **The single biggest remaining obstruction to BFT-0/1/2 is therefore no longer in that bundle.** It is, in order:
+1. **the nontrivial background** — every lane-A item above is at the trivial background; the background-covariant slice is (N1), and (CovLift)'s non-residual g_Z components at θ > 0 are OPEN;
+2. **the off-critical-set curvature half** — (CO-fun) for composite-co-closed sources and (GT-sup) for the remainder, i.e. what is left of (NC-Γ);
+3. **m > 0** — lane A's DX_m, DB_m (quoted OPEN), which BFT-3 at k ≥ 2 needs through weighted (H-inv+)_m;
+4. (H-rem^∇) third order [ARGUED], (FP♯′), and PROOF's own (CL-4) for BFT-0's identification clause.
+
+## FOR OTHER FILES (session 9; not edited)
+
+- **BFT_A (lane A).**
+  1. **(Res-Hölder) for your V_l is closed at m = 0**, at critical points, for every gauge fixing: Theorem RHT-cc + Corollary RHT-V (§29.3, §29.4). It uses your Lemma CD (i), Proposition NC, Corollary NC and 19.4's row sizes, nothing else. The mechanism: when level-wise co-closedness is dropped, d*ρ_l is **not** unknown — it is the level-(l+1)-root restriction of Σ_{l'≤l}d*j_{l'}, forced by root covariance and the injectivity of ev^T, and the resulting funnel source h_l^Tψ_l is a plain level-l current with ||h_l^T||_{ℓ^∞→ℓ^∞} ≤ 1 and coarse size 2dΣ_{l'≤l}L^{-3(l-l')}π_{l'}(j_{l'}). So **[RBA5-fix] U7's restriction of your scope to co-closed BCH₂ rows can be lifted** for the residual-gradient outputs.
+  2. **Your (NC-Γ) is replaced, not repaired.** Proposition NCR (§31.1) is exact: f_0^Γ(S)(p) = ⟨S, Y^p_*⟩ + ⟨D(S), λ^Γ_*(p)⟩. Your Lemma RC's n²⟨D(R), σ⟩ and Proposition TE's tents are the root-supported and tent parts of the single object λ^{Γ_E}_*(p). Route (i)'s lemma (REVIEW_BFT_B_S8 Cross-lane 4 item 4) is therefore the **product** of two separately named factors: ||D(S)||_1, which your Lemma CD makes O(||∇(𝔉_k∘exp)||) and hence zero at critical points and second-order along the contraction, and **(GT-sup)**, a bound on λ^{Γ_E}_* restricted to supp D(S). The remainder is representative-free, so you may choose the representative that makes λ smallest on supp D(S) — including your top-anchored C0#.
+  3. **New item for your side of the curvature half: (CO-fun)** (§31.2), (CO-0) for the funnel-augmented J_0. It is the only thing between (NC-Γ)_cc and a full gauge-invariant bound for composite-co-closed sources. Two facts to use: the funnel pieces are supported on **block-interior** level-l links only (Lemma FT (i)), and their coarse size carries no power of L^{k-l} (Lemma FT (ii)).
+  4. **Status corrections for your file's bookkeeping** (not edits): your (CO-up) is Theorem GU, CONFIRMED by REVIEW_BFT_A_S6 l.181 — REVIEW_BFT_A_S4 l.37's "ARGUED, fix T6" is superseded; and (SB) is no longer an input to (H-inv+) (REVIEW_BFT_A_S5 l.373: Theorem CO-B removes it).
+  5. Exact value for your 38.4/38.8, as RS8-2 records: the tent size is **8L^{3(k-l)} exactly**, and the (GE-T) requirement concerns the **level-k differences** of ψ_u (REVIEW_BFT_B_S8's P8-a).
+- **PROOF.md (the master ledger).** The BFT clause table at l.6693-6698 is stale in four places, all in the BFT-0/1/2 row and the BFT-5 row:
+  - "(CO-0) = (G♯_0-lev0), (CO-up)" → PROVEN in lane A (Theorems W0, GU), CONFIRMED by REVIEW_BFT_A_S6 l.23-24, 151, 181;
+  - "(SB)" → not an input; Theorem CO-B removes it (REVIEW_BFT_A_S5 l.373);
+  - "**(Res-Hölder)**" → PROVEN at m = 0 for level-wise co-closed classes (Theorem RHT, CONFIRMED) and, unreviewed, for composite-co-closed sources (Theorem RHT-cc, Corollary RHT-V, this session). "LRL (b) ⇐ (Res-Hölder)_m (T ≥ 5)" → supplied by Theorem RHT_m-cc as well;
+  - BFT-5's "no status recorded in any BFT review or lane file" → **owner lane B; statement (BFT-5_E) in BFT_B §32.1; status OPEN with inputs (G♯_0-field), (R♯_ω), (G♯-patch^Ω), and clause (c) PROVEN**.
+  New named items to carry: **(CO-fun)** and **(GT-sup)** (both OPEN, both stated in BFT_B §31). Nothing above is counted in PROOF's tally by this session.
+- **SF (lane F).** Lemma G-pert's smallness hypothesis t = ||x^r||_{X_c} + ||B^r||_D ≤ ρ_0 is **supplied on frames**, k- and T-uniformly, by BFT_B's Corollary CL-iv (sup_j||log Z^off_j||_{C^{1,α}} ≤ C_1ε). So BNA-F4's objection ("no global gauge makes the data small") bites only at the gluing step, and (G♯-patch) narrows to (G♯-patch^Ω): glue the frame-local inverses using CL-iv's transition gauges κ_X (||log κ_X||_{C^{2,α}} ≤ Cε). This is a narrowing of your wall, not a proof of it.
+- **HIST.** (R♯)'s frame form is not a new wall: Lemma Rω-frame (§32.3, ARGUED) transfers (R♯_ω) from the trivial chain to Z(V_k) in frames at the cost of a polynomial in C_1ε, with the commutator-to-divergence-form step written without explicit constants.
+- **REVIEW (next lane-B review).** Check first, in this order: (1) §29.1 (a) — the induction Ψ'_l = Ψ'_{l-1} + ev^{(0→l)T}d*j_l and the claim that composite co-closedness alone forces each Ψ_l onto the level-(l+1) roots (this is the load-bearing step; bb9b A5/A6 and B2 test it in d = 2, k = 2); (2) §29.2 (i) — that each level-l link lies in **one** block and that |c(X, b)| ≤ 1, since ||h_l^T||_{ℓ^∞→ℓ^∞} ≤ 1 is what keeps the funnel in the (Pl-c) class; (3) §29.3's index swap and the constant K_f; (4) §29.4's claim that V is composite-co-closed at critical points, and the crude C_NC; (5) §31.2's reduction of the curvature tower to f_0 and the exact statement of (CO-fun) — in particular whether Corollary LIN0's superposition really cannot absorb a collectively-co-closed set of level-0 currents; (6) §31.3 (R2)'s sign conventions in Proposition NCR; (7) §32.2's (G♯-patch^Ω) narrowing, against SF's [RSF2-fix GP-1/GP-2] scope; (8) the bb9 B3/B4 FAIL, its diagnosis, and that bb9b changes exactly one expression.

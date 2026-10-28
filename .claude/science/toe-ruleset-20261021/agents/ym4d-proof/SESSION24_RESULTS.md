@@ -271,3 +271,89 @@ is the HW/PLD interface defect, seen from both sides independently.
 
 **Scoring T51-A:** 4 of 5 in. Three sessions' headlines narrowed or relabelled, one session's reported
 verdicts reversed three times, zero headlines refuted outright. Pre-stated expectation **met**.
+
+## BFT_B session 9 — the (H-inv+) attack (T51-E). LANDED, and it is the session's biggest advance.
+
+Append-only discipline verified byte-for-byte: BFT_B.md l.1-3569 still exactly 409782 B (the session-8 final
+size), BFT_B_LOG.md l.1-420 unchanged at 44498 B. §27 PRE-STATED was the first edit (12:27:05 UTC, growth
+logged as 14775 B exactly, statements only). §28 records all nine [RBB8-fix] errata as dated entries naming
+the lines they correct, including RS8-3's rename of lane B's GE-T to **Lemma ΓT-op** (the name clash with
+lane A's refuted (GE-T) is gone).
+
+**1. (Res-Hölder) = EP-F4 is CLOSED at m = 0 for the part that was open.** The gap left by [RBB6-fix RS6-1]
+was the non-co-closed BCH₂ remainder V_l. The mechanism is the good kind — an identity, not an estimate:
+when level-wise co-closedness is dropped, **d*ρ_l is not unknown**. It is *forced* to be the
+level-(l+1)-root restriction of Σ_{l'≤l} d*j_{l'}, by root covariance (d*Q_l^T = ev^T d*) and the
+injectivity of ev^T — and **composite co-closedness is exactly the consistency condition for that cascade**
+(Lemma RT-cc, PROVEN-HERE). The resulting funnel source is then a plain level-l current with
+‖h_l^T‖_{ℓ^∞→ℓ^∞} ≤ 1, supported on block-interior links (Lemma FT, PROVEN-HERE). Theorem RHT goes through
+with funnel factor **K_f = 2d/(1 - L^{-(2+α)}) = 8.737** at d = 4, L = 3, α = ¼ (Theorem RHT-cc,
+PROVEN-HERE). Corollary RHT-V is PROVEN as an implication of lane A's Lemma CD (i) + Proposition NC:
+**N_res ≤ C_V η², k-, T- and level-uniform, for every gauge fixing**, since the residuals are exactly
+composite-gauge invariant. Weighted: Theorem RHT_m-cc with c_w = 14 (crude), which **extends lane A's
+LRL (b) at T ≥ 5 to composite-co-closed sources**. Scope stated plainly in §29.4: a critical-point
+statement (as RHT already was), resting on Lemma CD (PROVEN in lane A *given (GI)*), with C_NC crude.
+
+**2. (CO-0) and (CO-up) are usable by lane B verbatim — and the project's open list was STALE.**
+(CO-0) = lane A's **Theorem W0**, CONFIRMED (REVIEW_BFT_A_S6 l.23, 151). (CO-up) = **Theorem GU**,
+CONFIRMED (same review, l.24, 181). REVIEW_BFT_A_S4 l.37's "(CO-up) mostly bookkeeping … ARGUED" is
+**superseded** — it predates Theorem GU. REVIEW_BFT_B_S5's "(CO-0), (CO-up) OPEN" is **stale**. And
+**(SB) is no longer an input at all**: REVIEW_BFT_A_S5 l.373 records that Theorem CO-B removes it.
+**Consequence: (H-inv+) at m = 0, trivial background, level-wise co-closed classes on 𝒞_glob is PROVEN as
+an implication, with every input CONFIRMED by a lane review.** PROOF.md's BFT clause table (l.6695) is
+**stale in three places** — lead to fix in the consolidation.
+*Lead note: three items the project was carrying as open had already been discharged by lane reviews and
+nobody had reconciled the lists. This is the cost of per-lane open lists with no cross-lane reconciliation,
+and it is the same defect class as the HW/PLD currency mismatch.*
+
+**3. The (NC-Γ) restatement under lead decision D1.** Two parts.
+- **(NC-Γ)_cc:** for composite-co-closed sources, Lemma FG (iii) makes the response *be* the Setting-LIN
+  critical point, so every gauge-invariant output is Γ-independent — **the spikes and tents cancel
+  identically.** The **residual half** (both L^{k-1-j}‖r^c_j‖ and N_res) is **PROVEN unconditionally**; the
+  **curvature half** is **CONDITIONAL** on one new named item, **(CO-fun)** = (CO-0) for the
+  funnel-augmented J_0 (which §29.1 (d) proves is co-closed, with f_0 = n²dΔ_0^{-1}J_0). (CO-fun) is OPEN
+  because the funnel pieces are co-closed only *collectively*, so Theorem W0 cannot take them one at a time.
+- **The remainder: Proposition NCR, PROVEN-HERE and exact:**
+  f_0^Γ(S)(p) = ⟨S, Y^p_*⟩ + ⟨D(S), λ^Γ_*(p)⟩. **The entire gauge-fixing dependence is the pairing of the
+  source's composite divergence with the gauge transport function**, and lane A's Lemma RC root terms and
+  Proposition TE tents are the root and tent parts of that one object. So the remainder bound factorises as
+  ‖D(S)‖_1 · sup|λ^{Γ_E}_*| on supp D(S) — the first factor O(‖∇(𝔉_k∘exp)‖) by Lemma CD (zero at critical
+  points, second order along the contraction), the second a new named OPEN item **(GT-sup)**.
+  **(NC-Γ)_cc + (GT-sup) ⟹ lane A's original (NC-Γ) for Γ_E**, and the original fails *only* through
+  (GT-sup). This is route (i)'s lemma in product form — the form in which it is checkable.
+
+**4. BFT-5 now has a statement and a status.** **(BFT-5_E)** (§32.1) for composite-co-closed sources, with
+clause (c) quarantining the slice dependence in Proposition NCR's exact bilinear term.
+**Status: OPEN, inputs named** — (G♯_0-field) [OPEN, lane A], (R♯_ω) [stated, not proven, PROOF-owned],
+(G♯-patch^Ω); clause (b) inherits (NC-Γ)_cc and **clause (c) is PROVEN**. The new content is a narrowing:
+SF's Lemma G-pert needs the background X_c-small in one gauge, which BNA-F4 says no global gauge supplies —
+but **Corollary CL-iv supplies exactly that on every frame, k- and T-uniformly**, so (G♯-patch) narrows to
+gluing frame-local inverses with CL-iv's transition gauges. Lemma Rω-frame delivered as **ARGUED**
+(explicitly not CONDITIONAL): the frame rewriting is not a new wall, costing P(C_1ε); the gap is that the
+commutator-to-divergence-form step has no explicit constants.
+
+**Not attempted:** (Mult-Y)/GAP 1 and the nonabelian (CovLift) items. Targets 1-4 used the session.
+
+**Check bb9, with a disclosed FAIL — process handled correctly.** criteria 12:31:25 with an amendment adding
+A7 at 12:34:06, both before any script. Exact Fraction arithmetic, no numpy/BLAS, no lock taken (rule 6
+exempts exact arithmetic), nice 10, 1 thread, 6.1 s, 28 MB.
+- **bb9.out: NOT ALL PASS — B3, B4 FAIL.** Cause found after the run: a **script bug** (the level-1 gradient
+  applied Q_1^T twice), so Part B solved the wrong energy. **Output and script kept unaltered as the record.**
+- **bb9b.out: ALL PASS** (A1-A7, B0-B7), same criteria, **no criterion retuned**, one expression changed.
+  Verifies root covariance, d*Q^T = ev^T d*, the funnel split, |c(X,b)| ≤ 1 with max 1/3 and one block per
+  link, the cascade support claim with its control, funnel non-vacuity, and at the exact 180×180 critical
+  point ψ_0 = the root restriction of d*j_0, the funnel-corrected recursion, and d*J_0 = 0.
+  Scope limits reported: d = 2, abelian, k = 2; at T = 1 the top charge vanishes so Part B does not exercise
+  a nonzero funnel inside the ρ-recursion (pre-registered; A3/A7 at T = 2 carry that part).
+
+**>>> THE BIGGEST OBSTRUCTION TO BFT-0/1/2 HAS MOVED.** It is no longer in the (H-inv+) + (Res-Hölder)
+bundle — **that bundle is closed at m = 0 and the trivial background.** It is now **the nontrivial
+background**: every lane-A input above (W0, GU, CO-0R, CO-upR, CO-B, LIN0) is proven *at the trivial
+background only*, so BFT-0/1/2 turns on the background-covariant slice **(N1)** together with (CovLift)'s
+non-residual g_Z components at θ > 0 (OPEN). Second: the off-critical-set curvature half, **(CO-fun)** +
+**(GT-sup)**. Third: m > 0 via lane A's DX_m, DB_m (quoted OPEN), which BFT-3 at k ≥ 2 needs.
+
+**Scoring T51-E:** the pre-stated failure mode **HI-F1 does NOT occur** — (Res-Hölder) did not fail in every
+norm pair, and its closure was by an identity (the forced cascade) rather than by a better estimate, so it
+is not the Π_ex tail of COMP-F1 in disguise. Target T51-E is PASS on (Res-Hölder), (CO-0), (CO-up), the
+(NC-Γ) restatement and BFT-5's statement; FAIL on (Mult-Y) and (CovLift), not attempted.

@@ -36,7 +36,7 @@ are to *diagnoses, statements and stale cross-references*, listed at [S24].
   θ_w^r = 3). **With a single common θ_w there is no solution in (0, 2] for any consumer**, so BFT-1's
   existential "there exist … θ_w ∈ (0, 2]" cannot support the composite route as written. This merges with
   REVIEW_SQ_S2's item (2). Note it is the **maximal** curvature weight: a weaker BFT-1 is not a safer one.
-  **[S25-fix 3] This fix has a CEILING as well as a floor, and together they leave the target with NO
+  **[S25-fix 3] [PARTLY REVERTED S26 — REVIEW55_TUNIF: the decoupled system IS satisfiable (residual needs θ_w^r > 2, not = 3); the "¾" is B4's example value at α = ¼, not a superseded ceiling]** This fix has a CEILING as well as a floor, and together they leave the target with NO
   admissible exponent** (NBG_B NB7). REVIEW_S22 l.392-399 uses **one θ_w for three jobs** — 𝔐's
   displacement weight, 𝔐's source weight ω_l, and BFT-1's background decay — and quantifies it once.
   Four incompatible windows result: lane A proves its pair only for α ≤ θ ≤ 1 − α ≤ ¾ (BFT_A l.396,

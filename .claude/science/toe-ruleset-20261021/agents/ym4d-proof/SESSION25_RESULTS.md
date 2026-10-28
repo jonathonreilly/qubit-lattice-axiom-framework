@@ -1255,3 +1255,23 @@ re-derived; Q = Q_root and ‖Q‖ = 205/27 re-enumerated). **𝔑 = +∞ even a
 its proposed one-line repair fails on constant torus modes. The per-level no-go's withdrawal is right.
 **AGAINST THIS LEDGER:** the T55-F/T55-P entries' "(N-Q) is the missing input … 𝔮₀ = 1 if straight
 average" is stale. **Applied:** PROOF.md's leftover "D2 … upgraded to a theorem" paragraph marked struck.
+
+**C8 — (N-loc), T-uniformity, exponents — `REVIEW55_TUNIF.md`** (claude-opus-5-5, max). 59 claims:
+**32 CONFIRMED, 5 NOT-VERIFIED, 22 REFUTED** (11 load-bearing). Three exact checks (r55u_1-3), controls fired.
+- **(T-UNIF): CONFIRMED**, with repairs (𝔠_L recomputed with the missing 𝔠₀; root-correction cost; e^{O(dη′)}
+  from Q^j's range; Corollary N2-exp-b added to imports). TU-0..TU-3 re-derived by an independent symbolic
+  implementation (every pole cancels, Φ ≡ 0, 24 instances incl. resonant twists). The cell-1-form →
+  chain-admissibility step is discharged. **Disagrees with Codex's overall NOT-VERIFIED**, settling its four
+  open items — Codex re-check launched (CODEX_REVIEW_TUNIF2.md) before anything is banked. **If it holds:
+  N1-15 is conditional on (N-Q) = NQ-1 only (CONFIRMED by C4), uniform in k AND T.**
+- **NEW: NLOC's Theorem NL-3′ is REFUTED** — its line-sum inequality uses single-source decay for a general
+  datum; the T-free sup bound comes from TU-4 instead. Do not land NLOC FOR OTHER FILES item 1.
+- **σ > 0 suffices for (W2)/(SPD): REFUTED** as THETAW states and uses it; **and its premise is stale: SPD at
+  exponent 1 is already PROVEN in carrier form (BFT_A §13.6), and lane A's live route uses neither (W2) nor
+  (SB).** **AGAINST THIS LEDGER: the "CONVERGENCE" note above ("(SPD)/(W2) upstream of everything") is
+  mislabelled.** The ≈25(k−1) factor sits in BFT_B COF-crit for the non-co-closed part V_l of the BCH₂ rows;
+  S10-6 shows no θ removes it; the missing object is **a carrier-type input Theorem COF can consume for V_l**.
+  Step 4's brief corrected accordingly before launch. Do not restart T55-R as specified.
+- THETAW's decoupling is faithful and satisfiable and may be landed; its BFT replacement text may not (its
+  (1c) is false at the literal reading — a flat torus holonomy breaks it; the ¾ is B4's example at α = ¼,
+  not a superseded ceiling; ω₀ must be L^{θk} in the residual slot). PROOF.md [S25-fix 3] misquotes BFT_A.

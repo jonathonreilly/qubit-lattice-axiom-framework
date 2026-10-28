@@ -477,3 +477,77 @@ Below it, much cheaper: **the sign statement on G_e** (now T55-O).
 Checks fb1 A1-A7 **all PASS, no FAIL**, designed-FAIL control A6 **fired** on all three clauses it targets.
 One erratum flagged to YSUP that changes no number: YSUP l.249 mixes normalisations (φ_1 = −1/54 and
 φ_2 = −17/13122 un-normalised against ψ_u = −65/26244 ⅛-normalised, giving φ_1/ψ_u = 7.477 > 1).
+
+---
+
+## T55-F — `TUNIF.md` §U0-§U9 + `checks/tu1_*`, `tu1b_*`. **(T-UNIF) PROVEN. The open half of (N-loc) closes.**
+
+**Statement (§U2.2).** T is the **coarse (level-k) side**; T_j = T·L^{k−j}, fine side TL^k.
+**(T-UNIF)** *There are 𝔚, 𝔖 < ∞ depending only on (N, L, d, κ_±, m′) — independent of k, of the level
+index j, of the level-k link x and of T — with* **N3(D³E_k^br(1)) ≤ 𝔚·L^{(d−4)k} + 𝔖·L^{d−1}/(L−1) for
+every k ≥ 1 and every T ≥ T_0**, at d = 4, trivial background, abelian/linearised, N3 at **m = 0**.
+
+**Four quantifiers nobody had fixed in one place.** (Q1) Only a *lower* bound on T exists anywhere in
+layer 1, so this is a **T → ∞** statement. (Q2) It is **logically independent of k-uniformity**: "uniform
+in k at fixed T" already covers the unbounded family of fine volumes TL^k (UV limit at fixed physical
+volume), whereas T → ∞ is the thermodynamic limit at fixed spacing. (Q3) **The norm must be m = 0**,
+because the consumer's N_0 row sum is attained at a **global sign pattern** — at any m > 0 the
+T-dependence vanishes for free from the sup bound alone, **and that is the wrong theorem**. (Q4)
+T-uniformity does **not** inherit NORMS §N7's weight-pair obstruction: no torus sum passes through θ_w.
+
+**PROVEN-HERE.** NLOC §L7 had reduced the open half to **(N-loc-cell)**, *"the twisted analogue of Lemma
+NL-10 (b) — one lemma, not a programme"*. That lemma is §U4.4. **Lemmas TU-0/TU-1/TU-2 + Theorem TU-3:**
+in the twisted cell complex (coarse momentum p, cell 𝒞 = (Z/L^k)^d, D_μ the e^{ip_μ}-twisted difference),
+a **closed** analytic 2-form is D∧b̂ with b̂ analytic on the shrunken strip and
+**|b̂| ≤ 2(1+κ(η,η′))·L^k·|F̂|**. **The first obstruction Ω is absorbed by a SPREAD gauge function
+b̂₁ = −μ/L^k — the concentrated choice costs L^{2k} and is the trap** (failure mode U-F2). **The second
+obstruction Φ ≡ 0 identically for every closed F̂** at d ≥ 3, because D_γΦ = 0 forces ν_γΦ = 0 and ν_γ is
+not a zero divisor. **(N-loc-cell) is discharged — its conditions are IMPLIED by closedness, not
+verified.** Corollaries TU-4/TU-5 and Theorem TU-6 carry it to (N-loc-b′), to **(N-loc♯) with 𝔠_L free of
+j, k, x, T**, and to **Theorem N1-15 uniform in k AND T**, with A_soft = 1/L and all four exponent counts
+untouched. One representative carries both legs (U-F4 does not occur); admissibility is restored by Lemma
+N1-6's interpolant (U-F5 does not occur).
+
+**Price, scored both ways: 2(1+κ)c_{η′} = 7.9·10⁹, T-FREE**, against T^d = 2.8·10²⁸, against GREENT's
+log-growing 𝒮_T = 2.51·10⁸ (31× cheaper at T₀, unbounded after), and against the ideal
+c_{m*′} = 7.4·10⁶ (×1.07·10³ — **rate quality, not structure**).
+
+**(N-loc-b) as literally stated is not deliverable** for the representative built here: the chain's
+constant mode is exactly c_j = L^{−(k−j)}c_k with |c_k| = T^{−d}, **and no gauge changes a torus mean**.
+Repaired as **(N-loc-b′)** = exponential decay + that explicit constant mode, whose ℓ¹ mass is exactly one
+unit of the budget. Failure mode U-F7 occurred and is reported.
+
+**(GT-sup): the lane's record conflated two propositions; there was no disagreement to resolve.** The
+reduction is **CORRECT** and the review did not say otherwise — REVIEW_BFT_B_S9_S10 S10-14's NOT-VERIFIED
+is against the *headline* and [S10-fix 2]'s "expected TRUE", while listing the implication itself as
+CONFIRMED. Proposition GT-loc re-derived: convex combination over ≤ 2^d boxes (χ⁵ ≥ 0, Σχ⁵ = 1) plus
+Lemma ΓT-op (d)'s duality bound on *any* level-0 1-form gives 2M_n/n = 16 + 4/n ≤ 20, absolute, k- and
+T-uniform. Added: the remainder is representative-free, so the review's free-field refutation of
+(Y-sup^loc) needs the unstated premise that no admissible representative is spread near p. **T plays no
+role: (GT-sup) is a k-counting question.** And ΓT-op (d)'s ℓ¹×sup step **is lead decision D3's defect one
+level down** (≈ n of loss).
+
+**"Layer 2 needs T-uniform constants" (NLOC §L5, HANDOFF item 1) is NOT traced to any consumer.** Every
+row of EXISTENCE §21.3 consuming the (H-C)/BFT family asks for *level*-uniformity; "volume-uniform"
+(162 occurrences) attaches only to that lane's own hypotheses and conclusions. Recorded as ARGUED with
+the reason it is probably right anyway, and routed to the existence lane.
+
+**AGAINST THE LEAD (D6), twice.** The brief called the log T *"irreducible"*; **it is irreducible only
+for the Coulomb representative, which is the wrong one** — the worker used no GREENT constant and nothing
+in GREENT is refuted. And the (GT-sup) "loose end" the brief asked about was a conflation, not a
+disagreement.
+
+**Checks.** tu1-A/B/E **PASS** (zero discrepancies in D∧b = F at d = 4, ℓ ∈ {3,9} and d = 3, ℓ = 5;
+budget ratio *falls* with ℓ — the signature of one factor of L^k). **tu1-C designed-FAIL control FAILED
+AS DESIGNED** (non-closed input → 12 and 10 discrepancies, Φ = 1). **tu1-D FAIL, reported, criteria and
+output unaltered** — the worker's own criterion was **unsatisfiable by the truth** (four points span three
+decades, so a true 1/ε pole can give at most ≈10³; measured 947.6). **Second instance in two sessions of
+a gate that cannot pass.** Repaired as tu1b-D PASS: uncorrected ratios 9.53 → 10.0000 (clean simple pole)
+while the corrected max|b| is **exactly constant over six decades**.
+
+**Smallest remaining missing input: (N-Q)** — ‖Q^j‖_{∞→∞} ≤ 𝔮₀L^j. It is Theorem N1-15's **only**
+remaining input, and NORMS §N4 calls it *"a question about a DEFINITION, not a theorem"*: **if Setting
+SC's Q is the straight average, 𝔮₀ = 1 and Theorem N1-15 is UNCONDITIONAL** at d = 4, trivial background,
+abelian/linearised, uniformly in k and T. (Theorem NQ-1 in NQ_CHECK.md already claims it PROVEN with
+𝔮₀ = 1 + d(L+1)/(2L); that file is session-24 and must be re-read before the ledger row moves. Now
+T55-P.) **Not proven and still the larger wall: (N-bg) and (H-C)'s C_♭ clause on the class.**

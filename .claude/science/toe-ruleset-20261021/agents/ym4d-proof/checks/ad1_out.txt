@@ -1,0 +1,39 @@
+=== ad1-A  REPRODUCTION CONTROL (must PASS or the gate is void) ===
+  (d, th_wc, th_wr, th_A) = (4, 2, 3, 1)   [th_A from NORMS l.656-657]
+  1-derivative Wilson exponent at d=4 : 0   (NORMS: 'exactly marginal' => 0)
+  1-derivative soft slope     at d=4 : -1   (NORMS: subcritical for d<5 => <0)
+  1-derivative soft slope     at d=5 : 0   (NORMS: critical at d=5 => 0)
+  ad1-A: PASS
+
+=== ad1-B  THE GATE: are the four NEW families strictly subcritical at (4,2,3,1)? ===
+  3deriv_wilson   exponent = -4
+  0deriv_wilson   exponent = -1
+  3deriv_soft     exponent = -8
+  0deriv_soft     exponent = -2
+  ad1-B: PASS   (criterion: all four < 0)
+  critical dimensions (d at which each new family's exponent vanishes), reported only:
+    3deriv_wilson   d_crit = 8
+    0deriv_wilson   d_crit = 5
+    3deriv_soft     d_crit = 12
+    0deriv_soft     d_crit = 6
+
+=== ad1-C  DESIGNED-FAIL CONTROL (must FIRE: ad1-B's criterion must FAIL here) ===
+  (d, th_wc, th_wr, th_A) = (4, 0, 3, -1)
+  3deriv_wilson   exponent = 4
+  0deriv_wilson   exponent = 7
+  3deriv_soft     exponent = -8
+  0deriv_soft     exponent = 4
+  ad1-B's criterion at this input: FAIL
+  ad1-C: CONTROL FIRED (gate is falsifiable)
+
+=== ad1-D  SECOND DESIGNED-FAIL CONTROL (formula sensitivity) ===
+  leg-counting 3-derivative soft slope : -8   (= d - 4*th_wr)
+  alternative form                     : -4   (= d - th_wr - 2*th_wc - th_A)
+  ad1-D: CONTROL FIRED (the gate is formula-sensitive, not a tautology)
+  robustness line (separate, not a pass): both negative? True  -> ad1-B's verdict does not depend on which form is used
+
+=== SUMMARY ===
+  ad1-A reproduction control : PASS
+  ad1-B gate                 : PASS
+  ad1-C designed-FAIL control: FIRED
+  ad1-D designed-FAIL control: FIRED

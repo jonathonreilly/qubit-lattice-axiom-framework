@@ -1382,3 +1382,10 @@ These are constants, not truth: the constants still exist and are uniform; Step 
 every refutation is a loss — several reversed wrong *refutations* (CO-fun on the composite class, GZ-FALSE,
 the per-level no-go), which re-opens routes. Survivors with the most weight: (T-UNIF) (pending Codex
 re-check), NQ-1, N1-15 (conditional), a_RS-not-consumed, the ring is free, the smallness alarm is false.
+
+**Step 1 — `BALABAN_EXTRACT.md`** (claude-opus-5-5, max). **BLOCKED (BAL-F1 for all twelve CMP papers)**: the
+fetch tool cannot read PDFs and the hosts refuse it; owner action needed (local copies). From secondary sources:
+6 CONFIRMED, 5 NOT-VERIFIED, **8 REFUTED PROOF.md paraphrases of Balaban** (BAL-F3). Balaban's thresholds are
+fixed, not g_k-scaled (PLAN_S26 §2e was wrong; corrected in §11). **No readable Balaban paper proves the coupling
+flow** — FLOW55.md launched. Tool incident disclosed by the worker: one free arXiv PDF (Dimock 1712.10029) was
+auto-saved by the fetch tool outside the repository; nothing entered the repository.

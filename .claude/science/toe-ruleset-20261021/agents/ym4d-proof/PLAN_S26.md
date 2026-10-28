@@ -276,3 +276,31 @@ On the sphere route it is (nearly) sufficient; on the flat route it is necessary
 regulators are tested at once. Related literature found by the panel and verified to exist: T. Gantumur,
 *Rotationally invariant dynamical lattice regulators for Euclidean QFT*, arXiv:2512.22072 (RP proved for a
 gauge-invariant dynamical-lattice regulator) — a JHEP citation given for it could not be confirmed.
+
+---
+
+## 11. Step 1 is blocked; what it found anyway; one correction to this plan
+
+**Blocked (BAL-F1, all twelve CMP papers).** The worker's fetch tool cannot read PDFs, and the hosts refuse it
+(Deep Blue 403 / script page; Project Euclid's bot check, which may not be circumvented; Springer paywall).
+**To finish Step 1 the owner must place local copies** (free, legitimately obtained, outside the repository, as
+was done for CMP 109). BALABAN_EXTRACT.md §10 has the reading plan to section and equation.
+
+**CORRECTION to §2e and RTARGET T56-4 (the lead's error):** Balaban does **not** absorb level-count factors with
+a small-field threshold scaling with g_k. His thresholds are **fixed** (ε_0, ε_1). His mechanism: background
+field, propagators and covariances defined once from the full k-step constraint and bounded directly at each k
+(constants depend on L and M only), earlier levels re-evaluated at that single background, level remainders
+geometric — all conditional on the effective coupling staying ≤ γ at every scale. Step 4 was told mid-run.
+
+**Findings that move the critical path (from secondary sources; strong evidence, not proof):**
+- **No readable Balaban paper proves the coupling flow** (CMP 122 II's main theorem is conditional on the
+  couplings staying ≤ γ). The flow must be supplied in either scheme. **Launched: FLOW55.md (Opus 5.5) — the
+  coupling flow via the trivial background plus Ward identities, Balaban's route, bypassing FLOW's
+  H_⊥(U)^{-1} wall.**
+- FLOW's fine inverse H_⊥(U)^{-1} is a wall of FLOW's own route, not a background-field wall.
+- (N-bg) and (H-C) would come out as derivative bounds from analyticity of the composite background field.
+- Choosing the hard scheme would not import CMP 102 for (0.4) as is; CMP 98 would need re-proving first.
+- BAL-F2 (does k-uniformity need the hard constraint?) narrows to two items: exact absorption of sources in the
+  range of Q_k^T, and the multiplier term matching the soft residual rows.
+- 8 PROOF.md paraphrases of Balaban are wrong (BAL-F3), including CMP 99 cited as "CMP 95/96/102b" and an
+  unsourced "β_j → 2b₀ ln L attributed to CMP 109".

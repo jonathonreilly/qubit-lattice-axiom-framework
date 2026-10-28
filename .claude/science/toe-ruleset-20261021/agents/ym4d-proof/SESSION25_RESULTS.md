@@ -1193,7 +1193,7 @@ good"*; *"stop all agents that are not opus 55 extra agents or astra max agents"
 - **Not stopped:** six Codex runs still writing (TUNIF, KN, QFIX, THETAW, COFUN, DECADES), all
   gpt-6-astra/max — within the owner's rule.
 - **PROVISIONAL banners** added to the top of PROOF.md and HANDOFF.md.
-- **Review sweep launched** on Opus 5.5 at max effort (8 reviewers, ), plus Codex
+- **Review sweep launched** on Opus 5.5 at max effort (8 reviewers, one `REVIEW55_<batch>.md` each), plus Codex
   gpt-6-astra/max reviewers for the files not yet cross-checked. Every session-24/25 claim stays
   PROVISIONAL until a sweep verdict covers it.
 

@@ -122,6 +122,25 @@ spike-support question after all.**
 
 **7. (BB-mix), proposed as BFT-6.** OPEN, and the single gate on layer 2's entire cluster expansion.
 
+**8. (MS-Sob) and (SQ-dev) are BACK ON THE CRITICAL PATH — this list did not name them.** TAUFLAT.md
+adjudicated EPSSTAR §6.6 to **CONFIRMED**: τ_♭ is a min whose two entries **both bind**, the joint window is
+**C_D ≤ 455.28** exactly against a current C_D = 4.76e15, and the **DESC-ε (iii)** clause fails by **9.707
+decades of energy / 4.854 of ε_1**. Because SQ §16 records that **DESC-ε's hypothesis (REG-min) is
+DISCHARGED while AE-red's (MS-Sob) is OPEN**, DESC-ε was **the only route to AE-red's size clause free of an
+open hypothesis** — so its failure is a **status regression**, not the loss of a convenience. **SQ §0.5's
+"all five are discharged by DESC-ε" dies for 3 of 5 consumers** (HIST A5 (A), HIST (I_k^E)′ (a4), SF.md),
+and **(MS-Sob)/(SQ-dev) return to the critical path.**
+*Survives, so do not over-read this:* (CLS-min) to HW TE (ii) and RLARGE branch (iii) (margin ×1.99);
+RLARGE's a_bad; **A5 via AE-red, which clears by 63.00 decades**; DESC-ε (i)/(ii); RED-0; EPS-T/EPS-0/
+(REG-min); and **layer 2 is unchanged**, since the existence lane already records (AE) OPEN and contains
+**zero** occurrences of DESC-ε or (REG-min).
+*Cheapest repairs, priced by TAUFLAT:* **(C) lower ε_1 by 4.854 decades to ≤ 9.38e-45 — zero new
+mathematics, OWNER-GATED and now under audit (EPS1_SWEEP.md), because nobody has swept the ε_1 consumers and
+lowering it enlarges the large-field region. (D) prove (MS-Sob)**, which restores all three consumers at
+once and is already the route of record. **(A) sharpening C_T is DEAD** (0.080 decades of room against 4.854
+needed); **(B)** sharpening C_err's prefactor lands ≈1.7 decades short; **(F)** a weaker DESC-ε is **not
+available** — the quadratic τ_♭ dependence *is* the descent mechanism.
+
 ## Two target restatements to make before proving anything about BFT-1
 - **BFT-1 needs a WEIGHT PAIR** (curvature θ_w^c = 2, residual θ_w^r = d - 1 = 3). With a single common θ_w
   there is **no solution in (0, 2] for any consumer**. Note θ_w^c = 2 is the **maximal** curvature weight: a

@@ -181,7 +181,10 @@ steps). e^{100} should be 1.6e4.
   needs the lead.* Also q5's W1-W3/B1 run on a side-3 torus where WB's locality claim is untestable.
 
 **Thresholds the session never states, though its own constants force them:** θ_0 ≤ 1.46e-13,
-τ_R ≤ 2.75e-15 (**now the binding entry of τ_♭, displacing 1.43e-10**), η_♭ 1e-26 → 4.2e-36,
+τ_R ≤ 2.75e-15 (**[CORRECTED by TAUFLAT §6.5: τ_R is NOT the binding entry. τ_♭ is a min with TWO
+entries that BOTH bind (SQ.md l.317-319), and θ_0^SUP/C′ is the binding one at the current C_D; "τ_♭ = τ_R"
+is an EVALUATION, not an identity. This entry also carried "C_D ≈ (0.5-0.9)e3·C_T" alongside it, which is
+what makes the two inconsistent — the lead propagated both in one paragraph.]**), η_♭ 1e-26 → 4.2e-36,
 t_pr 7.6e-9 → 1.5e-13. (CVX-K) really is unused, including inside LU-ex. LU-ex's replacement for the
 continuity method is complete and the Łojasiewicz withdrawal is correct.
 
@@ -1587,3 +1590,78 @@ Hölder (GT-sup).
 closed.** **Biggest remaining in scope: the own-unit size of Y^p's level-0 field IN THE NORM THE FUNNEL
 ACTUALLY USES** — one lane-A object serving both faces, expected false in sup at the core, undecided in the
 block-averaged norm.
+
+## TAUFLAT.md — EPSSTAR §6.6 adjudicated ARGUED → **CONFIRMED**. 645+ lines. And it flags the lead twice.
+
+### 1. The conflict is REAL, and the dissolution gate fired without saving it
+The symbol-identity gate (pre-registered as the likeliest dissolution) **did** fire: **θ_0 IS two symbols** —
+θ_0^SUP := 1/(2C_err) (SQ.md l.188) and θ_0^{SQ4} := min{θ_G, θ_ε} (l.1622) — and **REVIEW_SQ_S4's S4-14
+item 4 had already flagged the collision, saying "both constraints apply".** **That is what makes the
+conflict real:** τ_R and θ_0^SUP/C′ are **two separate entries of the SAME min** defining τ_♭ (SQ.md
+l.317-319), so **"τ_♭ = τ_R" is an EVALUATION, not an identity.** Verdict **DISTINCT-AND-BOTH-BIND**.
+Exact arithmetic (Fraction, 0.04 s, no lock): joint-consistency window **C_D ≤ 455.283301** exactly, against
+a current C_D = 4.76e15 — outside by **×1.045e13**; η_♭ = **4.20662e-36** (entry τ_R) against
+**3.52310e-88** (entry θ_0^SUP/C′) = **52.077 decades**; DESC-ε (iii) **fails by 9.707 decades of energy /
+4.854 of ε_1**, strengthening factor 142125 = 5.153 decades. **All of EPSSTAR's headline figures are exact.**
+**The defect is a STALE MINIMUM, not an error:** S4-14 item 2 is correct at C_D ∈ {0.45, 2, 2.25}; **S4-16,
+in the same file, turns C_D into an output (≈(0.5-0.9)e3·C_T) and nobody re-ran item 2.** S4-16 itself is
+sound — its t_pr ≤ θ_0^SUP is an upper bound valid whichever entry binds.
+**>>> Power check PASSED, explicitly:** with C_D set inside the window and nothing else changed, **both
+verdicts flip** (CONFLICT-ABSENT, CLAUSE-HOLDS). **Not a tautology.** *This is the first worker to apply the
+session's check-power lens to its own adjudication, and it is now the standard to brief.*
+
+### 2. One pre-registered verdict FAILED — against the source, making the finding STRONGER
+**TF1-E SOURCE-DISAGREES.** EPSSTAR's three repair figures are each off by **√10** (3.16359 against
+3.16228) — a one-decade slip under a square root. Corrected: t_pr required **9.5224e-35√C_3** (not 3.01e-35);
+C_D ≤ **1.7812e13/C_3^¼** (not 3.17e13); C_T ≲ **1.98e10-3.56e10** (not 3.5-6.3e10). **So the repair bar is
+1.78× HARDER than reported, and the finding is marginally stronger than its own author stated.** Output kept
+unaltered, criteria untouched.
+
+### 3. Load-bearing — YES, and it is a STATUS REGRESSION, not a lost convenience
+The fact the lead's framing lacked is in **SQ.md's own §16 tally**: *"PRICE-iii and DESC-ε have their
+hypothesis (REG-min) discharged by §15.3"* (via Theorem EPS-0, CONFIRMED by REVIEW_SQ_S4). So:
+
+| route to AE-red's size clause | hypothesis | status |
+|---|---|---|
+| Theorem AE-red | (MS-Sob) | **OPEN** (HIST l.1323; ⇐ ARGUED ⇐ two further OPEN) |
+| Corollary DESC-ε | (REG-min) | **DISCHARGED** |
+
+**DESC-ε was the ONLY route free of an OPEN hypothesis** → LOAD-BEARING. It is a **replacement offered and
+not yet adopted**: SQ l.348 says consumers "may cite DESC-ε *instead*"; HIST still states A5 ⇐ … + (MS-Sob)
+through AE-red; and **EXISTENCE.md contains ZERO occurrences of DESC-ε or (REG-min).**
+**Dies:** SQ §0.5's "all five are discharged by DESC-ε" for **3 of 5** consumers (HIST A5 (A), HIST
+(I_k^E)′ (a4), SF.md — all take the size clause); **and with it, (MS-Sob)/(SQ-dev) RETURN TO THE CRITICAL
+PATH — which HANDOFF.md's seven-item list did not name.** *Fixed: HANDOFF item 8 added.*
+**Survives:** (CLS-min) to HW TE (ii) and RLARGE branch (iii) (infimum form, linear clause, margin ×1.99);
+RLARGE's a_bad; **A5 via AE-red, clearing by 63.00 decades** (62.70 at C_S = 1e4); DESC-ε (i)/(ii); RED-0
+(uses only DESC-ε's *conventions*); EPS-T/EPS-0/(REG-min). **Layer 2 unchanged.**
+
+### 4. Cheapest alternative: lower ε_1 — and nobody had priced it
+- **(A) Sharpen C_T: DEAD.** Only **0.080 decades** above its own floor (4.4e12), buying 0.160 against
+  **4.854** needed.
+- **(B) Sharpen C_err's prefactor** — a second lever the lead's framing missed (SQ's own "C_e and K crude by
+  orders of magnitude… unclaimed"). Priced post-hoc: deleting the whole 4C_e bracket (96.3% of C_err) gives
+  only **1.433 decades**; the residue needs K/C_D from 78.3 to **1.525** (×51.3) against h6's measured
+  ×18.9. Most optimistic package lands **≈1.7 decades short.** One session, not a repair.
+- **>>> (C) Lower ε_1 by 4.854 decades, to ≤ 9.38e-45 — CHEAPEST, ZERO new mathematics.** ε_1 enters
+  **quadratically with the helpful sign**, and **RLARGE records only a CEILING, never a floor** (SQ l.312 /
+  HW l.603's "ε_1 ≥ C′τ_♭" is a *branch selector* that already fails today). ε_1 < t_pr improves from ×1.99
+  to **×142125**. Declared price: a_bad 2.5e-85→5e-95, n_H 2e87→1e97, wrap levels 184→205,
+  g_K² 1e-88→1e-98 — and **RLARGE l.617-618 says these do not bind** (DX′ ceiling 54 decades below).
+  **OWNER-GATED:** the worker did not sweep every ε_1 consumer, and **lowering ε_1 enlarges the large-field
+  region.** *Lead: commissioned the sweep (EPS1_SWEEP.md). The decision itself is the owner's, not mine.*
+- **(D) Prove (MS-Sob)** — cheapest that restores **all three** consumers at once, paper-scale, and already
+  the route of record. **(E)** REVIEW_HIST_S4's per-scale sup pricing (Balaban CMP 109) would retire the
+  item entirely. **(F) A weaker DESC-ε: NOT available** — the quadratic τ_♭ dependence **is** the descent
+  mechanism, not bookkeeping.
+
+### 5. Disclosures, including two against the lead
+- TF1-E failed as pre-registered; reported unaltered.
+- tf1b_criteria.md and tf1b_posthoc.py **share an mtime second**, so **file order is not demonstrable for
+  the post-hoc probe**; no pre-registered verdict rests on it, and its one check with force (reconstructing
+  S4-16's C_err to ×1.00274) is stated.
+- Scope deviation, declared: post-hoc files prefixed `tf1b_`, not `tf1_`; new files, nothing overwritten,
+  not renamed because the mtimes would go stale.
+- **>>> SESSION24_RESULTS.md PROPAGATED THE INCONSISTENCY.** Its REVIEW_SQ_S4 entry carries "τ_R… now the
+  binding entry of τ_♭" **and** "C_D ≈ (0.5-0.9)e3·C_T" **in the same entry** — the two are inconsistent, and
+  I wrote both in one paragraph without noticing. *Corrected at the source entry above.*

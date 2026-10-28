@@ -249,3 +249,30 @@ Owner: *"opus 5.5 is smarter than codex. assign work accordingly (maybe review w
 the rotation-defect identity for one renormalized local observable, proved uniform in volume or reduced to
 the first term that needs coarse-law information. It goes first in the Opus queue. The synthesis is final
 only after the Opus panellists report; disagreements will be recorded, not resolved by preference.
+
+---
+
+## 10. The consensus panel is complete (P1, P2, P3 Codex; P4 Opus 5.5)
+
+**Unanimous.** (i) The full theorem T_OS on R^4 does **not** require uniqueness of the infinite-volume state
+or a mass gap — P1 and P4 give proved counterexamples to the implication, P3 shows uniqueness is not even
+sufficient. (ii) OS0, OS2, OS3, translations, the hypercubic group and non-freeness need only local,
+volume-uniform ultraviolet bounds plus compactness; **only the non-lattice rotations can need more.**
+(iii) The torus is a useful laboratory, not a necessary milestone. (iv) The lane's "two-family" route to OS1
+and naive rotation averaging do not work as written (P4 proves averaging fails even for the best Gaussian).
+
+**Split, recorded not resolved.** *Which finite volume.* The three Codex panellists rank first a flat-torus
+rotation-defect estimate, whose boundary term P2 itself calls "infrared information". **P4 ranks first a round
+4-sphere S^4_R** — reflection positivity across the equator at every cutoff (claimed proved), SO(5) invariance
+reduced to **fixed-volume universality** (argued ultraviolet, not proved), R → ∞ by compactness with SO(5)
+contracting to E(4). Costs: Balaban-type action bounds replace the torus-only chessboard large-field bounds;
+a slowly varying bare coupling and an equatorial seam; and the owner must accept S^4 lattice regularizations
+as "arising as such a limit". Under review by Codex (CODEX_REVIEW_P4.md).
+
+**The consensus next target, shared by every route: rotated-lattice universality in bounded regions** — two
+lattice regularizations differing by a rotation give the same local continuum correlations at fixed volume.
+On the sphere route it is (nearly) sufficient; on the flat route it is necessary with a boundary term on top.
+**Launched on Opus 5.5 (UNIV55.md)**, alongside the flat-route rotation-defect test (ROTDEF.md), so both
+regulators are tested at once. Related literature found by the panel and verified to exist: T. Gantumur,
+*Rotationally invariant dynamical lattice regulators for Euclidean QFT*, arXiv:2512.22072 (RP proved for a
+gauge-invariant dynamical-lattice regulator) — a JHEP citation given for it could not be confirmed.

@@ -113,3 +113,7 @@ Exactly one of:
   will not wait on it, and will not duplicate it. My job is its input, not its route.
 
 ---
+
+
+---
+**[LEAD, 2026-10-28T22:11:08Z] ABANDONED DRAFT.** This worker ran on claude-opus-5 (wrong model) and was STOPPED mid-run by the lead on the owner's instruction. Nothing in this file is a result. The target will be re-run on Opus 5.5.

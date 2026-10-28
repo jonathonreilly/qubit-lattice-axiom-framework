@@ -1,5 +1,7 @@
 # YM4 existence via the Balaban RG: lemma ledger (sessions 1-23, 2026-10-26/28)
 
+> **PROVENANCE WARNING (2026-10-28T22:11:08Z, lead now claude-opus-5-5).** Every Claude-authored result in sessions 24 and 25 — lead consolidation and all worker files, commits 811b8ed6de through 666a71b7b9 — was produced on **claude-opus-5**, not the owner-required model (Claude: Opus 5.5 at extra effort or higher; Codex: gpt-6-astra at max). The owner has ruled that work likely unreliable. **Treat every session-24/25 status, fix, flag, refutation and number in this file as PROVISIONAL** until the Opus 5.5 review sweep recorded in SESSION25_RESULTS.md §PROVENANCE has re-established it. The only session-24/25 checks run at an approved setting are the Codex gpt-6-astra/max reviews (`CODEX_REVIEW_*.md`). The tally is reported as 72 / 2 / 7 / 24 + 1 **pending** that sweep.
+
 **Session-24 header (lead: review discharge, integration audit, consolidation).** A lead session: it
 commissions, audits and consolidates, and **proves no new mathematics of its own**. Targets pre-stated in
 RTARGET.md §51 at 12:15:32 UTC (2026-10-28), before any session-24 derivation or worker report; outcomes

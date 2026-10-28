@@ -89,3 +89,7 @@ No git. I write only `KFACTOR.md` and `checks/kf1_*`. Demands on other files go 
 "## FOR OTHER FILES (not edited)" section at the end of this file.
 
 ---
+
+
+---
+**[LEAD, 2026-10-28T22:11:08Z] ABANDONED DRAFT.** This worker ran on claude-opus-5 (wrong model) and was STOPPED mid-run by the lead on the owner's instruction. Nothing in this file is a result. The target will be re-run on Opus 5.5.

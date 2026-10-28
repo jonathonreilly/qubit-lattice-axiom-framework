@@ -1,0 +1,53 @@
+================================================================================================
+ar1c  POST-HOC rebuild checks for Lemma KN / Corollary KN-step (EXISTENCE l.1756-1784).
+No pre-registered verdict. A_d=9 L^2=9 c_1=1/117
+================================================================================================
+
+[1] Lemma KN's  ||R|| <= (e^delta-1)^2 + delta^2 e^delta <= 3 delta^2  for delta <= 1/4.
+    The ratio ((e^d-1)^2 + d^2 e^d)/d^2 is increasing in d, so the worst case is d = 1/4:
+      delta=1/1000  ratio = 2.00200e+0
+      delta=1/100   ratio = 2.02011e+0
+      delta=1/20    ratio = 2.10276e+0
+      delta=1/10    ratio = 2.21126e+0
+      delta=1/5     ratio = 2.44688e+0
+      delta=1/4     ratio = 2.57475e+0
+    worst (delta=1/4) ratio = 2.57475e+0  <= 3 ?  YES -- STEP-1-HOLDS
+    (and e^{1/2}+e^{1/4} = 2.93275e+0 <= 3, which is the bound EXISTENCE actually writes)
+
+[2] Lemma KN's threshold is EXACT algebra, not an estimate:
+    1/2 x^2 - 3 sqrt(N) delta^2 x >= 1/4 x^2  <=>  1/4 x >= 3 sqrt(N) delta^2  <=>  x >= 12 sqrt(N) delta^2.
+    So the '12' of EXISTENCE l.1758 is forced by the 1/2 -> 1/4 margin; STEP-2-IDENTITY.
+
+[3] For unitary Z: ||1-Z||_HS^2 = tr((1-Z)*(1-Z)^dag) = tr(2 - Z - Z^dag) = 2 Re tr(1 - Z^{-1}).
+    Exact identity (Z^dag = Z^{-1}); STEP-3-IDENTITY.
+
+[4] KN-step's re-centring: ||1-W'_P|| <= L^2 eta + 4(e^delta - 1), delta <= (pi/3) A_d eta (RS (R1)).
+    Need 4(e^delta - 1) <= 5.5 A_d eta.  Worst case delta = 1/4 gives coefficient
+      4*(e^{1/4}-1)/(1/4)*(pi/3) = 4.75889e+0   <= 5.5 ?  YES
+    and (L^2 + 5.5 A_d) * c_1 = 1/2  -> the first part is exactly t/2 on {eta < c_1 t}: EXACT-HALF
+    exhaustiveness: t/2 + 4*(t/8) = t, so {eta < c_1 t} and all four ||V_c - W'_c|| < t/8
+    forces ||1 - V_P|| < t.  The dichotomy is exhaustive by construction: DICHOTOMY-EXHAUSTIVE.
+
+[5] KN-step's t <= 1/(106 sqrt(N) A_d^2 c_1^2), rebuilt: KN is applied at t/8, so t/8 >= 12 sqrt(N) delta^2
+    with delta <= (pi/3) A_d c_1 t gives t <= 1/(8*12*(pi/3)^2 sqrt(N) A_d^2 c_1^2).
+      my coefficient 8*12*(pi/3)^2 = 1.05276e+2 ; EXISTENCE writes 106 -> ratio 1.00688e+0 (REPRODUCES)
+
+[6] Feeding RS (R1) into KN's hypothesis.  RS (R1) gives ||T^sigma_y - S_c||_op <= A_d eta, i.e.
+    ||S_c^{-1} T - 1||_op <= A_d eta.  A traceless X with e^X = S_c^{-1}T and ||X||_op <= (pi/3)A_d eta
+    exists iff the eigenphases can be chosen in (-pi,pi) summing to EXACTLY 0.  det = 1 puts the sum
+    in 2 pi Z, and each |theta_j| <= (pi/3) A_d eta, so the sum is 0 whenever N (pi/3) A_d eta < 2 pi,
+    i.e. eta < 6/(N A_d).  At eta = c_1 eps_1 that reads eps_1 < 6/(N A_d c_1):
+      N=2   chart condition: eps_1 < 3.90000e+1
+      N=3   chart condition: eps_1 < 2.60000e+1
+      N=8   chart condition: eps_1 < 9.75000e+0
+      N=38  chart condition: eps_1 < 2.05263e+0
+    Every live eps_1 is ~1e-40, so CHART-AVAILABLE at every N up to astronomically large values.
+    (EXISTENCE l.1772's 'A_d eta <= 1' is the weaker, sufficient-for-the-ribbon-step form.)
+
+[7] The kernel branch constant is the SAME before and after:
+    RS (R4) l.998-999: bracket >= eps^2/(128N) - 2 A_d eta_1 >= eps^2/(256N)  (needs eta_1 <= eps^2/(512 N A_d))
+    KN at t/8       : exponent kappa (t/8)^2/(4N) = kappa t^2/(256N)          (needs only delta <= 1/4)
+    Both land on kappa eps_1^2/(256 N): SAME-CONSTANT, by different routes. So a_RS's SECOND entry
+    is untouched by the adoption and only a_eta moves.
+
+================================================================================================

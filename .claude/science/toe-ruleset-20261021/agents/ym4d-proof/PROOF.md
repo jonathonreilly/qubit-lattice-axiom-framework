@@ -55,13 +55,36 @@ are to *diagnoses, statements and stale cross-references*, listed at [S24].
   it and would cascade into 𝒞_glob. **Symbol 1 alone has FOUR live numerical values in force** (1.27e-39,
   quoted as current by NORMS l.746; 9.52e-40; 8.95e-40; 6.7e-40). **A lane-wide symbol audit and rename is
   now a prerequisite for any further constant work**, and "which value is in force?" must be settled before
-  any of them is quoted again.
+  any of them is quoted again. **And η_1 is THREE symbols (ARS_FIX §1), worse in kind than ε_1's five:**
+  η_1^RS (RLARGE's quadratic min), η_1^KN (c_1ε_1 — **which PLD already uses in EIGHT places, calling it
+  "RLARGE's η_1"**) and η_1^gauge (SQ l.1679, a bound variable). **Two of these are different VALUES of the
+  SAME quantity in the SAME lemma**, and REVIEW_PLD_S3 l.463 said so — **it has survived two review
+  cycles.** The traceless-log step also carries an **unadvertised N-dependence** (ε_1 < 78/N).
 - **[S24-flag 6] a_RS BINDS TODAY, and RLARGE l.618 is FALSE.** EPS1_SWEEP re-verified RLARGE l.617-618
   against HW session 6's ×82 closed-column numbers: **a_RS/10² sits 15.62 decades BELOW the DX′ ceiling
   already, with no change to anything** (a_RS ∝ ε_1⁴, an exponent no earlier pricing declared). l.617 is
   scoped and correct; **l.618's unscoped "RLF's own ceilings do not bind" is false.** The fix is **already
   PROVEN and was already requested**: adopt **KN-step's linear η_1** (EXISTENCE l.1771; REVIEW_PLD_S3 item
-  E9, never carried out), worth **+66.52 decades**. Commissioned as ARS_FIX.md.
+  E9, never carried out). **ARS_FIX.md confirms it independently and corrects three figures.** The margin
+  today is **-15.62 to -18.41 decades** (worse than first reported: l.1023 prices n cubes with
+  c_RS = 5⁴ = 625 and l.1024 forms a_♯ = min{a″, a_♭, **a_RS/c_RS**}), negative at **all four live ε_1**.
+  The linear η_1 takes it to **+66.52**, i.e. **a gain of 82.141 decades at TODAY's ε_1 — not 92**, which is
+  the gain at the *proposed* ε_1 (the difference is exactly 2 × 4.854; **l.63-66 of this file carries the
+  same slip**). KN-step's lemma is **REBUILT and PROVEN**, reproducing EXISTENCE's constants independently
+  (106 → 105.276; 5.5 → 4.75889; (L² + 5.5A_d)c_1 = **½ exactly**, which is what makes its dichotomy
+  exhaustive), and the mechanism is that re-centring makes the kernel error **quadratic** where (R4) had it
+  **linear** — **so the adoption replaces (R3) AND (R4); it is not a constant swap.** Hypotheses H2-H7 are
+  available in RLARGE; **H1 is not** — Lemma KN needs M̄_c to be a mixture with **nonnegative normalised
+  weights**, where RLARGE l.992 says only "a mean of the T^σ_y", so the repair is **CONDITIONAL on that one
+  sentence**. Carried through: n_♯ falls 82.14 decades (2.27e169 → 1.64e87) and its level count 355.6 →
+  183.4, **exposing a second defect in RLARGE §5.4** (l.612 reports 184 levels from n_H while l.1024 says the
+  induction uses n_♯); m_τ becomes ε_1-independent at 3/4/5. **Nothing breaks**, and one recorded fact dies:
+  l.65's "η_1 ≤ η_q", endorsed CORRECT by REVIEW_RLARGE_V2 §2.3, **reverses** to 39.38 (N = 2) / 59.08
+  (N = 3), taking HIST l.186's route comparison with it **in the favourable direction** (the RS route becomes
+  1551× better). **a_RS's STATUS is unchanged** — CONDITIONAL on (PLD)_k (i) before and after.
+  **>>> OWNER DECISION, not a defect: it was never adopted because REVIEW_PLD_S3's E9 was an EITHER/OR and
+  RLARGE v3 took the other horn at l.830 — a choice made without the price in front of it.** The cheaper
+  horn (fixing PLD's text) is worth nothing on this ceiling. **Either way l.618 needs editing.**
 - **[S24-flag 2] A NAMING HAZARD across lanes: FOUR distinct symbols are called ε_*.** EPSSTAR §5:
   EPS-T's ε_*; **N5-sf0's α_*/(10p_L(4R_*+5)L)**, which is the one this ledger quotes as
   ε_* = 2.476e-13/C_Δ in [SF7-edit]; BG-b's (ε_1²/(4NB))^{1/2}; and BFT_B l.2719's local one. **They must

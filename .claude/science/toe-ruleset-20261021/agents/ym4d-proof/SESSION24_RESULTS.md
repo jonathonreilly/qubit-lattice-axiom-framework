@@ -1814,3 +1814,79 @@ untouched); nothing nonabelian, at m > 0, θ > 0, or at a background; **no respo
 every statement about Y^p_{*,0} is CONDITIONAL on its core being in the |z|^{-3} class** (BFT_A §38.7 /
 Theorem YH), **and whether Z″₀'s funnel could cancel g₀'s is the one place the negative verdict could be
 attacked** (flagged to lane A).
+
+## ARS_FIX.md — a_RS confirmed binding and WORSE; the lemma rebuilt; and the reason it was never adopted.
+
+**a_RS binds today: CONFIRMED independently from RLARGE's own definitions** (l.64 → l.981/l.1026 → l.1020),
+not from EPS1_SWEEP's summary. (V1) η_1's quadratic entry is active for all ε_1 < 512 (N = 2) / 768 (N = 3),
+and a_RS's a_η entry for ε_1 < **814.587** — so **a_RS ∝ ε_1⁴ at every admissible ε_1**. (V2) the margin
+against DX′ = 2.456e-152/C_Ω is **negative at all four live ε_1** (-14.506, -15.007, -15.114, **-15.617**)
+and under **both** ceiling conventions. **RLARGE l.618's unscoped claim is FALSE.**
+**Unfavourable correction:** l.1023 prices n cubes as (Ce^{-a_RS/g²})^{n/c_RS} with **c_RS = 5⁴ = 625**, and
+l.1024 forms a_♯ = min{a″, a_♭, **a_RS/c_RS**}. **The honest margin today is -15.62 to -18.41 decades, up to
+2.80 WORSE than reported.** Scope caveat EPS1_SWEEP omitted: l.832 declares a_♯/c_RS/n_♯ "superseded" while
+l.830 still corrects Lemma RS *in a_RS*; **either way l.618 needs editing.**
+
+**KN-step's linear η_1: REBUILT and PROVEN, not cited.** EXISTENCE's constants come back **independently**:
+**106 → 8·12·(π/3)² = 105.276** (ratio 1.00688), **5.5 → 4.75889**, and **(L² + 5.5A_d)c_1 = ½ exactly**,
+which is what makes the dichotomy exhaustive (t/2 + 4·(t/8) = t). **The mechanism:** re-centring at
+W′ = Se^{X̄} makes the kernel error **quadratic** in δ (‖R‖ ≤ 3δ²) where RLARGE (R4) had it **linear**
+(-2δ_c) — **and that linear δ_c loss IS the quadratic entry of l.64, so the adoption replaces (R3) AND (R4);
+it is not a constant swap.** Strong structural check: **the kernel-branch constant κε_1²/(256N) comes out
+IDENTICAL by both routes**, so only a_η moves.
+**Hypotheses: H2-H7 all available in RLARGE** at the point of consumption (D4-norm (2) and g² ≤ κ are the
+*same* tools (R4) already uses; conditional independence is Lemma TD). **H1 is NOT: Lemma KN needs M̄_c to
+be a mixture with nonnegative normalised weights, where RLARGE l.992 says only "a mean of the T^σ_y".**
+Convexity is load-bearing, so **the repair is CONDITIONAL on that one sentence.** Also flagged: the
+traceless-log step carries an **N-dependence** (ε_1 < 78/N), **unadvertised** by "g-independent constants".
+
+### >>> Why it was never adopted — and it is not an omission
+**REVIEW_PLD_S3's E9 was an EITHER/OR, and RLARGE v3 took the other horn at l.830** ("η_1 is v2/v3's η_1
+(E9)") — **a decision taken without the price in front of it.** The cheaper horn (fixing PLD's text) is
+**worth nothing on this ceiling.** *So this is an owner decision to revisit with the price attached, not a
+bug to fix. Surfaced, not taken.*
+
+### Margins (C_Ω = 1; ε_1 unchanged, both values reported)
+| | today ε_1 = 6.7e-40 | proposed 9.38495112638e-45 |
+|---|---|---|
+| quadratic η_1, /10² | **-15.617** | **-35.032** |
+| linear η_1, /10² | **+66.523** | **+56.816** |
+| with the c_RS divisor | -18.413 → +63.728 | -37.828 → +54.020 |
+| **gain** | **+82.141** | **+91.848** |
+
+**SOURCE-DISAGREES on the headline: the gain at TODAY's ε_1 is 82.141 decades, not 92** — 91.85 is the gain
+at the *proposed* ε_1, the difference being exactly 2 × 4.854. **Both of EPS1_SWEEP's margin figures
+(+66.52, +56.82) reproduce to 0.01 decade; only their DIFFERENCE was attributed to the wrong ε_1. PROOF.md
+l.63-66 carries the same slip.** *Corrected in my flag above.*
+**Carried through:** n_♯ falls **82.14 decades** (2.27e169 → 1.64e87), its level count 355.6 → 183.4 —
+**exposing a second defect in RLARGE §5.4**, since l.612 reports 184 levels from n_H while l.1024 says the
+induction uses n_♯. **m_τ** goes from 66/90/122 to an **ε_1-independent 3/4/5**.
+
+### η_1 is THREE symbols — and worse in kind than ε_1's five
+η_1^RS (RLARGE's quadratic min); **η_1^KN (c_1ε_1 — which PLD already uses in EIGHT places, calling it
+"RLARGE's η_1")**; η_1^gauge (SQ l.1679, a bound variable). **Unlike ε_1's five, TWO of these are different
+VALUES of the SAME quantity in the SAME lemma.** REVIEW_PLD_S3 l.463 said so, and **it has survived two
+review cycles.** *Fourth naming finding of the session; added to [S24-flag 2a].*
+
+### What the adoption would break: nothing — one recorded fact dies
+**RLARGE l.65's "η_1 ≤ η_q", endorsed "CORRECT" by REVIEW_RLARGE_V2 §2.3, REVERSES** to η_1/η_q = 39.38
+(N = 2) / 59.08 (N = 3); HIST l.186's route comparison reverses with it, **in the favourable direction** (the
+RS route becomes **1551× better**). **Three consumers that COULD have failed did not:** RS-compatibility
+(REVIEW_PLD_S3 l.305) holds with ×12.99 to spare; PLD's LD-arith no-go for SU(2)/SU(3) stands under both
+forms; INH is unaffected. **The repair does not change a_RS's STATUS** — CONDITIONAL on (PLD)_k (i) before
+and after, and REVIEW_PLD_S3 l.309 shows no threshold choice restores in-step derivation.
+
+### Discipline
+§0 pre-stated 15:11Z → ar1_criteria.md (**zero constants**) 15:20Z → first script 15:23Z.
+**One FAIL reported as a FAIL:** ar1_margins.py's power line printed "NO POWER" through a **reporting bug**
+(it compared two aggregate verdict strings, both "CONFIRMED", instead of the per-row BINDS/NOT-BINDING).
+Script and output kept **byte-unaltered**; re-run as ar1b_power.py with criteria untouched — all verdicts
+and gains **diff-identical**, **HAS-POWER**.
+**Power constructed and run: the margin crosses zero at exponent p* = 3.61975 today** (3.23718 at the
+proposed ε_1), with the sign flipping ±0.411 across it; **the hypothesis checks fail at t = 2, 10, 1000;
+RS-compatibility fails at the counterfactual c_1 = 1/6.** Graded strong/medium/weak per check.
+Exact Fraction; Decimal for display only, verified at 50 and 100 digits (worst disagreement 4.6e-49 decades).
+
+**Biggest remaining in scope: not the arithmetic — THE DECISION.** One lemma replacement worth **82 decades
+today**, hypotheses available bar one word, nothing broken. What stands in the way is that **RLARGE v3
+already decided it the other way, without the price.** Below it: a_RS stays CONDITIONAL on (PLD)_k (i).

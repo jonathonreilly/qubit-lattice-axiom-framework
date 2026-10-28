@@ -1,0 +1,40 @@
+C: templates built: |w| = 216, |Q_mu| = [459, 459, 459, 459], w2 = 104/729  (0.0 s)
+  row 0/324: nnz 2160, running N = 16.515223, M1 = 10.268738  (0 s, RSS 33 MB)
+  row 27/324: nnz 2160, running N = 21.628318, M1 = 35.532130  (1 s, RSS 48 MB)
+  row 54/324: nnz 2160, running N = 25.476020, M1 = 35.724502  (2 s, RSS 62 MB)
+  row 81/324: nnz 840, running N = 25.476020, M1 = 35.724502  (2 s, RSS 75 MB)
+  row 108/324: nnz 2160, running N = 25.476020, M1 = 35.724502  (3 s, RSS 86 MB)
+  row 135/324: nnz 2160, running N = 25.476020, M1 = 35.724502  (4 s, RSS 101 MB)
+  row 162/324: nnz 2160, running N = 25.476020, M1 = 35.724502  (5 s, RSS 112 MB)
+  row 189/324: nnz 839, running N = 25.476020, M1 = 41.076452  (5 s, RSS 124 MB)
+  row 216/324: nnz 840, running N = 25.476020, M1 = 41.076452  (6 s, RSS 133 MB)
+  row 243/324: nnz 2160, running N = 25.476020, M1 = 41.076452  (7 s, RSS 143 MB)
+  row 270/324: nnz 2160, running N = 25.476020, M1 = 41.076452  (7 s, RSS 154 MB)
+  row 297/324: nnz 840, running N = 25.476020, M1 = 41.076452  (8 s, RSS 164 MB)
+C1: range inside 3^4 blocks (exact zeros elsewhere): True; nu_w = 30/13; max support distance 11
+C2: exact symmetry on the reference block: True
+C3: N_exact = 10462237/410670 = 25.4760196752; M1_exact = 449171/10935 = 41.0764517604  (c35 floats 25.4760, 41.0765)
+C4: gamma_0/2 = 7.9365079365e-09; M1*m*(1+40m) = 7.9277552510e-09 at m = 1.93e-10: True; at m_4 = 9.66e-11: M1*m4*(1+40m4) = 3.967985e-09 <= gamma_0/4 = 3.968254e-09: True
+C1 PASS
+C2 PASS
+C3 PASS
+C4 PASS
+Part C: PASS (time 8 s, peak RSS 175 MB)
+        8.41 real         8.26 user         0.08 sys
+           184090624  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               13600  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 117  voluntary context switches
+                1434  involuntary context switches
+        138958890867  instructions retired
+         31266029295  cycles elapsed
+           181043800  peak memory footprint

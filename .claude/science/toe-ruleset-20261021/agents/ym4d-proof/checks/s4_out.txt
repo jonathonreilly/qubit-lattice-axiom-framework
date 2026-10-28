@@ -1,0 +1,22 @@
+A1 HALO(a) small X: n>=ell: PASS | violations 0
+A2 HALO(b) n>=max(1,ell-1)>=ell/2: PASS | violations 0 of 4124 pairs
+A3 HALO(c) dist to W >= ell+5: PASS | violations 0 of 42 pairs
+A4 HALO(d) sizes, U connected: PASS | violations 0
+A5 HALO(e) large X in exactly one W: PASS | violations 0
+A6 non-vacuity (A2 pairs with ell>=2 >= 50): PASS | 3036
+A7 NEG CONTROL n>=ell violated: PASS | violations of the stronger claim: 139
+B1 SH pointwise: PASS | violations 0
+B2 SH shell sum <= 2 Gamma_0 e^{-p^2/16}: PASS | violations 0; max ratio 1.495884
+B3 SH non-vacuity (ell>=2 reached; growth present): PASS | all grid points reach ell>=2: True; growth: True
+C1 kt0, log Bt, log C1t: PASS | kt0=217.0472 logBt=574.677 logC1t=580.750 kap0=151.3152 w8=0.02724
+C2 CE-col rate threshold: PASS | kappa_c^* = 1149.921
+C3 CE-col norm threshold (SF displayed form): PASS | threshold 1853.49; log ratio at 1149.92 = 703.57
+C4 CE-col norm threshold (next-input rate): PASS | threshold 2499.39 (difference to C3: 645.90); rate exponent there 2698.9 >= 0
+C5 CE-Q-col rate threshold: PASS | kappa_c^Q* = 1478.492; norm thresholds: displayed form 2073.23, next-input form 2938.18
+C6 SN-1 exact 1.0398: PASS | exact 1.039844; rounded display 1.040070; la=0.0151515, w=0.0236350
+C7 sum_{j>=1} e^{-(4^j-1)/8} <= 1: PASS | 0.841024
+C8 p_0(CE-Q-col) < p_0(CE-Q): PASS | M=3.1426e+14 (muM=15179.0); p0 CE-Q-col 4.2371e+04; CE-Q (khat=kc-k0) 7.6614e+05; CE-Q (c1 khat) 7.2053e+05
+D1 TILT (plain MC + 4 SE <= bound): PASS | violations 0; max ratio plain 0.3436; max ratio exact-tilt (+4 SE) 0.3436
+D2 RES witnesses (>=3 of 5): PASS | good 5/5; [resid, max|A|, recon, plaq change]: [4.9e-17,0.407,2.7e-16,2.2e-16] [3.6e-17,0.350,4.5e-16,1.7e-16] [3.9e-17,0.459,2.4e-16,2.8e-16] [2.9e-17,0.445,2.2e-16,3.3e-16] [5.9e-17,0.497,1.7e-16,1.9e-16]
+D3 control: generic slice directions move plaquettes: PASS | target sup 0.445; max plaquette change per sample: 5.149e-01, 4.135e-01, 4.452e-01, 3.705e-01, 3.643e-01; |h(A)| 2.7e-17
+OVERALL: PASS 21/21  (runtime 7.1 s)

@@ -1,0 +1,1 @@
+h5b_diag.py (POST HOC, after h5 B3 failed): lock 00:32:03 UTC; 0.1 s; 57 MB; load 3.32; 33% free; nice 10, threads 1.

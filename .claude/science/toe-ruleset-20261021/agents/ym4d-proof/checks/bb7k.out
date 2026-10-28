@@ -1,0 +1,13 @@
+setup: d = 2, SU(2), n = 3, coarse side 5; U0 n max|A| = 0.3; descents max|d*w| = 1.0e-12; corner spread: U0 max 0.083, U_s min/median/max 1.392/2.159/2.764
+K1 root values max|log G^off(U_s)(c_Y)| = 6.5e-19: PASS
+K2 face consistency max distance = 5.6e-17: PASS
+K3 G_0-invariance max link distance = 7.0e-11 (descents max|d*w| 1.0e-12): PASS
+K4 constant covariance max link distance = 2.5e-15: PASS
+K5 idempotence max|log G^off(Pi^off(U_s))| = 7.2e-11 (descents max|d*w| 1.0e-12): PASS
+K6 root-value covariance max link distance = 1.6e-15, max d(hhat(c_Y), k(c_Y)) = 1.5e-16: PASS
+K7 continuity: max output step 0.4173 vs max root step 0.0511 (ratio 8.17 <= 20): PASS; fraction of sites with spread > r_1 along the path: start 0.00, middle 0.64, end 1.00
+K8 clustered data: max d(G^off, m^geo) = 3.2e-18: PASS; informational max d(m^geo, Karcher) = 2.05e-06
+K9 informational: max d(Pi^off(U_s)^(hhat^-1), Pi^off(U0)) = 4.7e-11; n max|log| links: Pi^off(U0) 0.2240, Pi^off(U_s) 8.3682
+K10 control (Karcher on spread data): max disagreement between two starts = 0.000, non-converged runs = 0: FAIL
+VERDICT: NOT ALL PASS (K1-K8, K10)
+[t = 63.3 s]

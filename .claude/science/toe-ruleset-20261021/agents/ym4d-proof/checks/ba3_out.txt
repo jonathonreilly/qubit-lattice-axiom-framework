@@ -1,0 +1,29 @@
+R2: commutator row vs residual form, max rel dev 3.4e-15; BCH max err/eps^3 0.255
+R1 kap=(1.0, 1.0): |d*w|/|w| 3.2e-15, max cos(w, Q^T C_2) 7.7e-16, |mean w|/|w| 4.0e-16; |Q_1w perp Ran d|/|Q_1w| 3.7e-14; BR-1 rel 1.78e-12 (CG res 8.9e-13/9.6e-13, 140/143 it); info |Q_1w|/|Q_1j| 0.064, |w|/|j| 0.889
+   (2 s, RSS 491 MB)
+R1 kap=(0.5, 2.0): |d*w|/|w| 3.4e-15, max cos(w, Q^T C_2) 4.5e-16, |mean w|/|w| 2.7e-16; |Q_1w perp Ran d|/|Q_1w| 1.2e-14; BR-1 rel 3.85e-12 (CG res 8.3e-13/8.2e-13, 143/147 it); info |Q_1w|/|Q_1j| 0.186, |w|/|j| 0.878
+R3 kap=(0.5, 2.0): configuration rel 2.26e-14 (CG res 9.2e-13/9.8e-13, 124/124 it)
+   (3 s, RSS 725 MB)
+T=3 k=1 cfg a: R4 |Lam - Q x_0| / ||f_0|| = 0.0638 (bound 10); R5a |lam(roots)| 0.0e+00, |lam(Px)|/|Px| 1.2e-15; R5b 3.8e-16; R5c ||(Px)^c_0|| 1.741, ratio to bounds 0.0162 / 0.0052 (||x_0^c|| 2.853, ||f_0|| 1.246, max|Lam| 1.741)
+T=3 k=1 cfg b: R4 |Lam - Q x_0| / ||f_0|| = 0.0589 (bound 10); R5a |lam(roots)| 0.0e+00, |lam(Px)|/|Px| 6.0e-16; R5b 2.0e-16; R5c ||(Px)^c_0|| 13.292, ratio to bounds 0.0021 / 0.0010 (||x_0^c|| 11.769, ||f_0|| 84.200, max|Lam| 5.398)
+T=3 k=1 cfg c: R4 |Lam - Q x_0| / ||f_0|| = 0.0965 (bound 10); R5a |lam(roots)| 0.0e+00, |lam(Px)|/|Px| 7.7e-16; R5b 2.8e-16; R5c ||(Px)^c_0|| 0.591, ratio to bounds 0.0044 / 0.0019 (||x_0^c|| 0.687, ||f_0|| 1.722, max|Lam| 0.508)
+   (2 s, RSS 725 MB)
+T=2 k=2 cfg a: R4 |Lam - Q x_0| / ||f_0|| = 0.0668 (bound 10)
+T=2 k=2 cfg b: R4 |Lam - Q x_0| / ||f_0|| = 0.0101 (bound 10)
+T=2 k=2 cfg c: R4 |Lam - Q x_0| / ||f_0|| = 0.0381 (bound 10)
+   (1 s, RSS 725 MB)
+T=4 k=1 cfg a: R4 |Lam - Q x_0| / ||f_0|| = 0.0722 (bound 10); R5a |lam(roots)| 0.0e+00, |lam(Px)|/|Px| 9.0e-16; R5b 3.8e-16; R5c ||(Px)^c_0|| 1.752, ratio to bounds 0.0186 / 0.0055 (||x_0^c|| 3.126, ||f_0|| 1.071, max|Lam| 1.752)
+T=4 k=1 cfg b: R4 |Lam - Q x_0| / ||f_0|| = 0.0607 (bound 10); R5a |lam(roots)| 0.0e+00, |lam(Px)|/|Px| 5.1e-16; R5b 2.0e-16; R5c ||(Px)^c_0|| 13.107, ratio to bounds 0.0021 / 0.0010 (||x_0^c|| 13.229, ||f_0|| 81.448, max|Lam| 5.835)
+T=4 k=1 cfg c: R4 |Lam - Q x_0| / ||f_0|| = 0.1071 (bound 10); R5a |lam(roots)| 0.0e+00, |lam(Px)|/|Px| 1.3e-15; R5b 2.7e-16; R5c ||(Px)^c_0|| 0.612, ratio to bounds 0.0046 / 0.0020 (||x_0^c|| 0.707, ||f_0|| 1.710, max|Lam| 0.516)
+   (6 s, RSS 725 MB)
+R0: PASS
+R1a: PASS
+R1b: PASS
+R1c: PASS
+R2: PASS
+R3: PASS
+R4: PASS
+R5a: PASS
+R5b: PASS
+R5c: PASS
+ba3: time 14 s, peak RSS 725 MB

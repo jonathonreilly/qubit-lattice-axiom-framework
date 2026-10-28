@@ -1,0 +1,9 @@
+SU2Model NC=3: 157464 axial paths, 629856 contours, 0.9 s, RSS 0.08 GB
+D background t=0.2: CONVERGED it=217 |g|/|g0|=7.1e-10 83 s
+D1 telescoping: max |h_U(D_U lam) - (M_U lam - lam(c))| / max|D_U lam| = 1.86e-15
+D critical U*: |H D_U lam|/|D_U lam| / median|Hv|/|v| = max 3.70e-08, min 3.60e-08 (median |Hv|/|v| = 7.354e+00)
+D start U0: |H D_U lam|/|D_U lam| / median|Hv|/|v| = max 1.88e-02, min 1.85e-02 (median |Hv|/|v| = 7.348e+00)
+D1: PASS
+D2: PASS
+D3: PASS
+c29 D: PASS; time 94 s, peak RSS 0.34 GB

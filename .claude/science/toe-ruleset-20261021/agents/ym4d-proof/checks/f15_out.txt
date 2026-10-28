@@ -1,0 +1,89 @@
+f15 start; SMOKE = False
+Part A (Lemma CL-V)
+    SU(2) root (1,2): q = 1.000, hbar = 0.000; last sample Hess = 6.8229073580e+03, 2Q = 6.8229073580e+03
+  [PASS] A1 explicit root Hessian = exact second derivative (SU(2)): max rel = 1.34e-16 (<= 1e-11)
+    SU(3) root (1,2): q = 0.900, hbar = 0.250; last sample Hess = 7.3512029920e+03, 2Q = 7.3512029920e+03
+    SU(3) root (1,3): q = 1.200, hbar = 0.100; last sample Hess = 6.9496257546e+03, 2Q = 6.9496257546e+03
+    SU(3) root (2,3): q = 0.300, hbar = -0.350; last sample Hess = 7.1678386025e+03, 2Q = 7.1678386025e+03
+  [PASS] A1 explicit root Hessian = exact second derivative (SU(3)): max rel = 1.33e-16 (<= 1e-11)
+  [PASS] A1x no root/root' and root/Cartan cross terms (SU(3)): max rel = 2.32e-16 (<= 1e-12)
+  [PASS] A2 root covariant gradient D_U = derivative of the gauge orbit (SU(3)): max rel = 4.94e-11 (<= 1e-8)
+  [PASS] A1c control (spin term dropped) fails the A1 comparison: max rel = 1.015e-02 (>= 1e-3)
+    SU(2) khat#0 N_2 = 157 (s = 0.04002): E1 = 1.2968e-02, E1(spin 1) = 4.9558e-01, E2 = 6.1476e-04
+    SU(2) khat#0 N_2 = 314 (s = 0.02001): E1 = 6.4843e-03, E1(spin 1) = 4.9558e-01, E2 = 1.5375e-04
+    SU(2) khat#0 N_2 = 628 (s = 0.01001): E1 = 3.2422e-03, E1(spin 1) = 4.9558e-01, E2 = 3.8476e-05
+    SU(2) khat#1 N_2 = 157 (s = 0.04002): E1 = 2.4348e-02, E1(spin 1) = 8.5244e-01, E2 = 4.2056e-04
+    SU(2) khat#1 N_2 = 314 (s = 0.02001): E1 = 1.2175e-02, E1(spin 1) = 8.5233e-01, E2 = 1.0517e-04
+    SU(2) khat#1 N_2 = 628 (s = 0.01001): E1 = 6.0874e-03, E1(spin 1) = 8.5230e-01, E2 = 2.6318e-05
+    SU(2) khat#2 N_2 = 157 (s = 0.04002): E1 = 2.0115e-02, E1(spin 1) = 6.1932e-01, E2 = 5.0066e-04
+    SU(2) khat#2 N_2 = 314 (s = 0.02001): E1 = 1.0058e-02, E1(spin 1) = 6.1930e-01, E2 = 1.2520e-04
+    SU(2) khat#2 N_2 = 628 (s = 0.01001): E1 = 5.0290e-03, E1(spin 1) = 6.1929e-01, E2 = 3.1335e-05
+    SU(3)(1,2) khat#0 N_2 = 157 (s = 0.04002): E1 = 1.2968e-02, E1(spin 1) = 4.9558e-01, E2 = 6.1477e-04
+    SU(3)(1,2) khat#0 N_2 = 314 (s = 0.02001): E1 = 6.4843e-03, E1(spin 1) = 4.9558e-01, E2 = 1.5374e-04
+    SU(3)(1,2) khat#0 N_2 = 628 (s = 0.01001): E1 = 3.2422e-03, E1(spin 1) = 4.9558e-01, E2 = 3.8466e-05
+    SU(3)(1,2) khat#1 N_2 = 157 (s = 0.04002): E1 = 2.4348e-02, E1(spin 1) = 8.5244e-01, E2 = 4.2055e-04
+    SU(3)(1,2) khat#1 N_2 = 314 (s = 0.02001): E1 = 1.2175e-02, E1(spin 1) = 8.5233e-01, E2 = 1.0516e-04
+    SU(3)(1,2) khat#1 N_2 = 628 (s = 0.01001): E1 = 6.0874e-03, E1(spin 1) = 8.5230e-01, E2 = 2.6312e-05
+    SU(3)(1,2) khat#2 N_2 = 157 (s = 0.04002): E1 = 2.0115e-02, E1(spin 1) = 6.1932e-01, E2 = 5.0066e-04
+    SU(3)(1,2) khat#2 N_2 = 314 (s = 0.02001): E1 = 1.0058e-02, E1(spin 1) = 6.1930e-01, E2 = 1.2520e-04
+    SU(3)(1,2) khat#2 N_2 = 628 (s = 0.01001): E1 = 5.0290e-03, E1(spin 1) = 6.1929e-01, E2 = 3.1327e-05
+  [PASS] A3 O_1 leading part = O^c (spin coefficient 2): E1 at the finest s, decreasing: max E1 = 6.087e-03 (<= 0.03), E1(finest) <= 0.7 E1(previous) for all: True
+  [PASS] A3 O_2 degree-0 part = q^2/2 (diamagnetic): max E2 = 3.848e-05 (<= 0.03)
+  [PASS] A3 O_0 = lambda(k) 1 (sanity): max abs = 6.74e-19 (<= 1e-12)
+  [PASS] A3c control (spin coefficient 1) fails: min E1 = 4.956e-01 (>= 0.2)
+  (Part A time 3.2 s)
+Part B (S4' symbols at U = 1; T-split)
+  [PASS] B0(i) one-step closed form = S4' contour sums: max abs = 5.98e-15 (<= 1e-12)
+  [PASS] B0(ii) composite closed form = product of one-step symbols (n = 2..4): max rel = 2.28e-14 (<= 1e-11)
+  [PASS] B0(iii) covariance M^(n) s = Dhat_l (n = 1..4): max abs = 9.49e-16 (<= 1e-11)
+    K_a n = 1: x^blk = 1.171092945808e+00, 1.201149542395e+00, 1.207593084795e+00, 1.212210254131e+00
+    K_a n = 2: x^blk = 1.155234039134e+00, 1.187755195489e+00, 1.194739482549e+00, 1.199746806173e+00
+    K_a n = 3: x^blk = 1.153480835822e+00, 1.186264549066e+00, 1.193306517103e+00, 1.198355473811e+00
+    K_a n = 4: x^blk = 1.153286143694e+00, 1.186098887181e+00, 1.193147231799e+00, 1.198200790739e+00
+    K_a n = 5: x^blk = 1.153264512549e+00, 1.186080479816e+00, 1.193129532507e+00, 1.198183602483e+00
+    K_a n = 6: x^blk = 1.153262109105e+00, 1.186078434547e+00, 1.193127565907e+00, 1.198181692660e+00
+    K_a: Delta_n = 2.2987e-02, 2.5589e-03, 2.8440e-04, 3.1601e-05, 3.5112e-06; ratios 0.1113, 0.1111, 0.1111, 0.1111
+  [PASS] B1 T-split geometric convergence n = 5 (K_a): Delta_n/Delta_(n-1) = 0.1111 (in [0.07, 0.16])
+  [PASS] B1 T-split geometric convergence n = 6 (K_a): Delta_n/Delta_(n-1) = 0.1111 (in [0.07, 0.16])
+    K_a: ||s_i|| (i = 0..5) = 2.0000e+00, 2.1606e-01, 2.3931e-02, 2.6581e-03, 2.9534e-04, 3.2815e-05
+    K_a: straight path Delta^sp_n = 2.5961e+00, 7.8709e+00, 2.3631e+01, 7.0908e+01, 2.1274e+02
+  [PASS] B3 control: straight-path T-split symbol diverges (K_a): ratios 3.001, 3.000 (>= 2)
+    K_a: <V, N_n V> = 1.3451543040e-03, 1.7824528072e-03, 1.9509345619e-03, 2.1215798300e-03, 2.2926547593e-03, 2.4637781456e-03
+    K_a: increments delta_n/|Dhat|^2 = 5.773775e-04, 2.224512e-04, 2.253077e-04, 2.258750e-04, 2.259390e-04
+  [PASS] B2 (W6) longitudinal growth from d.h: constant positive increments (K_a): delta = 1.7107e-04, 1.7112e-04, ratio 1.0003
+    K_b n = 1: x^blk = 2.927365659395e-02, 3.960827673913e-02, 4.360021189415e-02, 2.158272380375e-02
+    K_b n = 2: x^blk = 2.217158659885e-02, 3.051369480513e-02, 3.364171938439e-02, 1.563586505211e-02
+    K_b n = 3: x^blk = 2.137661773588e-02, 2.940635063135e-02, 3.239340380185e-02, 1.501715059061e-02
+    K_b n = 4: x^blk = 2.128779453445e-02, 2.928103804525e-02, 3.225139702172e-02, 1.494869328249e-02
+    K_b n = 5: x^blk = 2.127791423384e-02, 2.926707344628e-02, 3.223555860863e-02, 1.494108764453e-02
+    K_b n = 6: x^blk = 2.127681622587e-02, 2.926552115995e-02, 3.223379781012e-02, 1.494024254843e-02
+    K_b: Delta_n = 1.4579e-02, 1.7479e-03, 1.9754e-04, 2.2011e-05, 2.4467e-06; ratios 0.1199, 0.1130, 0.1114, 0.1112
+  [PASS] B1 T-split geometric convergence n = 5 (K_b): Delta_n/Delta_(n-1) = 0.1114 (in [0.07, 0.16])
+  [PASS] B1 T-split geometric convergence n = 6 (K_b): Delta_n/Delta_(n-1) = 0.1112 (in [0.07, 0.16])
+    K_b: ||s_i|| (i = 0..5) = 2.0000e+00, 1.5270e-01, 1.6223e-02, 1.7937e-03, 1.9919e-04, 2.2130e-05
+    K_b: straight path Delta^sp_n = 2.5324e+00, 7.7808e+00, 2.3539e+01, 7.0815e+01, 2.1264e+02
+  [PASS] B3 control: straight-path T-split symbol diverges (K_b): ratios 3.008, 3.003 (>= 2)
+    K_b: <V, N_n V> = 1.2886662359e-02, 1.4498259176e-02, 1.6537750669e-02, 1.8595080560e-02, 2.0654523539e-02, 2.2714207866e-02
+    K_b: increments delta_n/|Dhat|^2 = 1.767893e-04, 2.237286e-04, 2.256854e-04, 2.259172e-04, 2.259437e-04
+  [PASS] B2 (W6) longitudinal growth from d.h: constant positive increments (K_b): delta = 2.0594e-03, 2.0597e-03, ratio 1.0001
+    K_c n = 1: x^blk = 1.537347132131e+02, 1.537574969967e+02, 1.537654719188e+02, 1.537711684816e+02
+    K_c n = 2: x^blk = 1.537187209926e+02, 1.537440307958e+02, 1.537528900091e+02, 1.537592182670e+02
+    K_c n = 3: x^blk = 1.537169441324e+02, 1.537425345364e+02, 1.537514919819e+02, 1.537578904126e+02
+    K_c n = 4: x^blk = 1.537167467041e+02, 1.537423682852e+02, 1.537513366451e+02, 1.537577428726e+02
+    K_c n = 5: x^blk = 1.537167247676e+02, 1.537423498128e+02, 1.537513193855e+02, 1.537577264792e+02
+    K_c n = 6: x^blk = 1.537167223303e+02, 1.537423477603e+02, 1.537513174677e+02, 1.537577246577e+02
+    K_c: Delta_n = 2.2778e-02, 2.5309e-03, 2.8121e-04, 3.1246e-05, 3.4718e-06; ratios 0.1111, 0.1111, 0.1111, 0.1111
+  [PASS] B1 T-split geometric convergence n = 5 (K_c): Delta_n/Delta_(n-1) = 0.1111 (in [0.07, 0.16])
+  [PASS] B1 T-split geometric convergence n = 6 (K_c): Delta_n/Delta_(n-1) = 0.1111 (in [0.07, 0.16])
+    K_c: ||s_i|| (i = 0..5) = 2.0000e+00, 2.2217e-01, 2.4685e-02, 2.7427e-03, 3.0475e-04, 3.3861e-05
+  [PASS] B1 C-part s_i geometric (i = 4, 5; all K): ratios in [0.07, 0.16]
+  [PASS] B1 step control h_u 0.3 vs 0.15: max rel = 1.2e-13 (<= 1e-9)
+    K_a: kappa<V, C_n V> = 1.00000000, 1.21983741, 1.35314283, 1.47683547, 1.59946004, 1.72196594; bound 1.00000000, 1.09467344, 1.18934688, 1.28402031, 1.37869375, 1.47336719
+    K_a: increments = 2.198374e-01, 1.333054e-01, 1.236926e-01, 1.226246e-01, 1.225059e-01
+    K_b: kappa<V, C_n V> = 1.00000000, 2.43811407, 3.90859992, 5.38248131, 6.85673749, 8.33103529; bound 1.00000000, 2.13948991, 3.27897982, 4.41846974, 5.55795965, 6.69744956
+    K_b: increments = 1.438114e+00, 1.470486e+00, 1.473881e+00, 1.474256e+00, 1.474298e+00
+    K_c: kappa<V, C_n V> = 1.00000000, 1.11204995, 1.12543424, 1.12785561, 1.12905889, 1.13012682; bound 1.00000000, 1.00081233, 1.00162466, 1.00243698, 1.00324931, 1.00406164
+    K_c: increments = 1.120500e-01, 1.338428e-02, 2.421377e-03, 1.203275e-03, 1.067930e-03
+  [PASS] B4 LONG-n lower bound kappa<V, C_n V> >= 1 + (n-1)|Dhat|^2/8: all n, all K
+SUMMARY: 25/25 verdict lines PASS; FAIL: none
+total time 38.4 s

@@ -1,0 +1,37 @@
+D3 S-bump R=3 T=2 M=6: Q_a(m'=0.25) 366.6095, Q_a(m'=0.5) 251.7172; S1 |dA-F| 1.0e-15, |d*A| 2.4e-16 (0 s, RSS 61 MB)
+D3 S-bump R=3 T=4 M=12: Q_a(m'=0.25) 292.2339, Q_a(m'=0.5) 205.6466; S1 |dA-F| 6.2e-16, |d*A| 2.0e-16 (0 s, RSS 69 MB)
+D3 S-bump R=3 T=8 M=24: Q_a(m'=0.25) 229.3995, Q_a(m'=0.5) 162.7362; S1 |dA-F| 5.1e-16, |d*A| 2.0e-16 (1 s, RSS 215 MB)
+D3 S-bump R=3 T=1 M=3: Q_a(m'=0.25) 45.4190, Q_a(m'=0.5) 35.6269; S1 |dA-F| 1.0e-15, |d*A| 1.5e-16 (0 s, RSS 215 MB)
+D3 S-bump R=9 T=1 M=9: Q_a(m'=0.25) 86.3377, Q_a(m'=0.5) 63.9862; S1 |dA-F| 1.0e-14, |d*A| 3.5e-16 (0 s, RSS 216 MB)
+D3 S-bump R=27 T=1 M=27: Q_a(m'=0.25) 104.7523, Q_a(m'=0.5) 75.1340; S1 |dA-F| 4.4e-14, |d*A| 5.2e-16 (28 s, RSS 441 MB)
+D3 S-bump R=9 T=2 M=18: Q_a(m'=0.25) 390.3330, Q_a(m'=0.5) 255.2701; S1 |dA-F| 5.0e-15, |d*A| 4.5e-16 (1 s, RSS 441 MB)
+D3 S-cusp R=3 T=2 M=6: Q_a(m'=0.25) 372.5158, Q_a(m'=0.5) 251.0149; S1 |dA-F| 5.4e-16, |d*A| 2.3e-16 (0 s, RSS 441 MB)
+D3 S-cusp R=3 T=4 M=12: Q_a(m'=0.25) 215.9156, Q_a(m'=0.5) 151.2015; S1 |dA-F| 3.5e-16, |d*A| 2.2e-16 (0 s, RSS 441 MB)
+D3 S-cusp R=3 T=8 M=24: Q_a(m'=0.25) 218.5013, Q_a(m'=0.5) 152.5698; S1 |dA-F| 2.2e-16, |d*A| 3.0e-16 (1 s, RSS 441 MB)
+D3 S-cusp R=3 T=1 M=3: Q_a(m'=0.25) 40.7259, Q_a(m'=0.5) 31.8978; S1 |dA-F| 5.8e-16, |d*A| 1.9e-16 (0 s, RSS 441 MB)
+D3 S-cusp R=9 T=1 M=9: Q_a(m'=0.25) 78.5701, Q_a(m'=0.5) 59.0441; S1 |dA-F| 9.6e-16, |d*A| 2.8e-16 (0 s, RSS 441 MB)
+D3 S-cusp R=27 T=1 M=27: Q_a(m'=0.25) 94.5582, Q_a(m'=0.5) 70.3146; S1 |dA-F| 3.9e-15, |d*A| 5.3e-16 (28 s, RSS 441 MB)
+D3 S-cusp R=9 T=2 M=18: Q_a(m'=0.25) 314.0332, Q_a(m'=0.5) 232.7984; S1 |dA-F| 1.1e-15, |d*A| 3.5e-16 (1 s, RSS 441 MB)
+D3 S-jump R=3 T=2 M=6: Q_a(m'=0.25) 357.5002, Q_a(m'=0.5) 242.9684; S1 |dA-F| 5.3e-16, |d*A| 1.8e-16 (0 s, RSS 441 MB)
+D3 S-jump R=3 T=4 M=12: Q_a(m'=0.25) 198.5443, Q_a(m'=0.5) 142.7709; S1 |dA-F| 3.8e-16, |d*A| 2.5e-16 (0 s, RSS 441 MB)
+D3 S-jump R=3 T=8 M=24: Q_a(m'=0.25) 200.4226, Q_a(m'=0.5) 144.3099; S1 |dA-F| 2.8e-16, |d*A| 2.2e-16 (1 s, RSS 441 MB)
+D3 S-jump R=3 T=1 M=3: Q_a(m'=0.25) 39.0125, Q_a(m'=0.5) 30.5982; S1 |dA-F| 7.7e-16, |d*A| 2.1e-16 (0 s, RSS 441 MB)
+D3 S-jump R=9 T=1 M=9: Q_a(m'=0.25) 77.0029, Q_a(m'=0.5) 58.1714; S1 |dA-F| 1.1e-15, |d*A| 3.7e-16 (0 s, RSS 441 MB)
+D3 S-jump R=27 T=1 M=27: Q_a(m'=0.25) 86.1481, Q_a(m'=0.5) 71.4896; S1 |dA-F| 3.3e-15, |d*A| 4.8e-16 (29 s, RSS 441 MB)
+D3 S-jump R=9 T=2 M=18: Q_a(m'=0.25) 272.8081, Q_a(m'=0.5) 220.8612; S1 |dA-F| 1.1e-15, |d*A| 4.7e-16 (1 s, RSS 441 MB)
+D3 S-noise R=3 T=2 M=6: Q_a(m'=0.25) 179.2894, Q_a(m'=0.5) 132.5518; S1 |dA-F| 4.3e-16, |d*A| 3.5e-16 (0 s, RSS 441 MB)
+D3 S-noise R=3 T=4 M=12: Q_a(m'=0.25) 121.5750, Q_a(m'=0.5) 95.5609; S1 |dA-F| 3.2e-16, |d*A| 4.4e-16 (0 s, RSS 441 MB)
+D3 S-noise R=3 T=8 M=24: Q_a(m'=0.25) 105.2395, Q_a(m'=0.5) 80.7463; S1 |dA-F| 2.1e-16, |d*A| 3.3e-16 (1 s, RSS 441 MB)
+D3 S-noise R=3 T=1 M=3: Q_a(m'=0.25) 27.7660, Q_a(m'=0.5) 22.7309; S1 |dA-F| 5.0e-16, |d*A| 4.7e-16 (0 s, RSS 441 MB)
+D3 S-noise R=9 T=1 M=9: Q_a(m'=0.25) 42.0907, Q_a(m'=0.5) 34.6529; S1 |dA-F| 8.4e-16, |d*A| 6.1e-16 (0 s, RSS 441 MB)
+D3 S-noise R=27 T=1 M=27: Q_a(m'=0.25) 44.3413, Q_a(m'=0.5) 37.2828; S1 |dA-F| 8.4e-16, |d*A| 8.4e-16 (30 s, RSS 441 MB)
+D3 S-noise R=9 T=2 M=18: Q_a(m'=0.25) 107.4950, Q_a(m'=0.5) 94.0573; S1 |dA-F| 7.2e-16, |d*A| 5.6e-16 (1 s, RSS 441 MB)
+T3 S-bump m'=0.25 doubling T (R=3): seq 366.6095, 292.2339, 229.3995; last incr -62.8343 vs 0.5|prev| 37.1878 + 3.6661 -> PASS
+T3 S-bump m'=0.25 tripling R (T=1): seq 45.4190, 86.3377, 104.7523; last incr +18.4146 vs 0.5|prev| 20.4593 + 0.4542 -> PASS
+T3 S-bump m'=0.5 doubling T (R=3): seq 251.7172, 205.6466, 162.7362; last incr -42.9104 vs 0.5|prev| 23.0353 + 2.5172 -> PASS
+T3 S-bump m'=0.5 tripling R (T=1): seq 35.6269, 63.9862, 75.1340; last incr +11.1479 vs 0.5|prev| 14.1796 + 0.3563 -> PASS
+T3 S-cusp m'=0.25 doubling T (R=3): seq 372.5158, 215.9156, 218.5013; last incr +2.5857 vs 0.5|prev| 78.3001 + 3.7252 -> PASS
+T3 S-cusp m'=0.25 tripling R (T=1): seq 40.7259, 78.5701, 94.5582; last incr +15.9881 vs 0.5|prev| 18.9221 + 0.4073 -> PASS
+T3 S-cusp m'=0.5 doubling T (R=3): seq 251.0149, 151.2015, 152.5698; last incr +1.3684 vs 0.5|prev| 49.9067 + 2.5101 -> PASS
+T3 S-cusp m'=0.5 tripling R (T=1): seq 31.8978, 59.0441, 70.3146; last incr +11.2705 vs 0.5|prev| 13.5731 + 0.3190 -> PASS
+ba4 D3: time 126.9 s, peak RSS 441 MB

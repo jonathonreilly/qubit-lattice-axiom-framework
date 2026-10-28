@@ -1,0 +1,10 @@
+D1 plateau 0.5 (scale 11.5): slice identity residual 6.862e-04
+D1 plateau 1.0 (scale 11.0): slice identity residual 9.444e-16
+D1 plateau 1.5 (scale 10.5): slice identity residual 8.778e-16
+D1 plateau 2.0 (scale 10.0): slice identity residual 9.130e-16
+D1 measured radius of Pi (max l-inf midpoint distance over nonzero entries): 1.50
+  [t = 1.4s]
+D2 mu^2 = 1.0: frame max|dE(U^h)-dE(U)| = 7.105e-15; frame-free max|dE(U^h)-dE(U)| = 2.130e-10
+D2 mu^2 = 0.25: frame max|dE(U^h)-dE(U)| = 3.553e-15; frame-free max|dE(U^h)-dE(U)| = 1.910e-05
+D2 mu^2 = 0.05: frame max|dE(U^h)-dE(U)| = 2.132e-14; frame-free max|dE(U^h)-dE(U)| = 1.344e-02
+  [t = 40.1s]

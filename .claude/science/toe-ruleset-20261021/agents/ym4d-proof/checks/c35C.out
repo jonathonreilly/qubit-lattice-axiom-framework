@@ -1,0 +1,12 @@
+C1: ||w||^2 = 104/729 = 0.142661; sum|w| = 8/3 = 2.666667; max|w| = 10/81; nu_w = 30/13 = 2.307692 (N5-sl bound n_Pi - 1 <= 576); float rows 2.307692307692
+C2: symmetry 1.1e-15; N^num(0) = 25.4760; sum|O~|d = 41.0765; m=1e-12: D^num 4.108e-11 vs Dfrak 2.011e-03; m=1e-09: D^num 4.108e-08 vs Dfrak 2.011e+00; m=1e-06: D^num 4.108e-05 vs Dfrak 2.011e+03; m=0.001: D^num 4.115e-02 vs Dfrak 2.038e+06;
+C2: gamma_0 = 1.5873e-08; m_cov^num = 1.9321e-10 (D^num <= gamma_0/2); N5-triv m_cov(i=0) = 1.0093e-17; ratio 1.914e+07; m_4^num (<= gamma_0/4) = 9.6607e-11  (11 s, RSS 1082 MB)
+C3: Bloch validation residual 1.5e-14; gamma_meas = 3.984916e-02 at K = (2pi/8)(4, 4, 4, 4); proven gamma_0 = 1.587e-08; ratio 2.510e+06  (36 s)
+C3: gamma_meas^LB (2c_E d*d) = 8.138000e-03 at K = (2pi/8)(0, 0, 0, 4); proven gamma_i = 1.29e-10; ratio 6.309e+07  (62 s)
+C2 (validation on T = 5): max |entry| outside the 1-block range 0.0e+00; D-value T5 vs T3 rel diff 5.5e-15
+C4: CG info 0, residual 9.5e-13; m_meas = 0.4328 vs m_cov^num = 1.932e-10; p(r) = 1.66e-01 6.21e-02 4.69e-02 4.38e-02 4.20e-02 3.58e-02 3.00e-02 2.54e-02 2.28e-02 1.96e-02 1.68e-02 5.33e-03 4.17e-03 3.72e-03 1.71e-03 9.30e-04 5.61e-04 2.19e-04 1.48e-04 9.15e-05 7.85e-05 7.02e-05 6.66e-05 5.58e-05 4.47e-05 3.48e-05 2.62e-05 2.46e-05 2.35e-05  (65 s, RSS 1082 MB)
+C1 PASS
+C3 PASS
+C4 PASS
+C2 PASS
+Part C: PASS (time 65 s, peak RSS 1082 MB)

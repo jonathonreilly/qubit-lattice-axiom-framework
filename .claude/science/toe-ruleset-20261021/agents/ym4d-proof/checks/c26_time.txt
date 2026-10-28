@@ -1,0 +1,6 @@
+c26 (criteria checks/c26_criteria.md written before the script), 2026-10-27, nice 10, BLAS/OMP/MKL/vecLib threads 1, one job at a time.
+A first launch with python3 -I failed at "import numpy" (numpy is in the user site; -I excludes it) before any computation; all runs below are without -I (the scripts read no downloaded files).
+Part A: 15:48:59 UTC, 5.1 s wall, peak RSS 458 MB, load 1.91, 41% free. Output c26_outA.txt. All PASS.
+Part B: 15:49:15 UTC, 53 s wall, peak RSS 218 MB, load 1.77, 43% free. Output c26_outB.txt. Q5, Q6 PASS; N_f grows with T (see addendum).
+Criteria addendum written 15:50:55 UTC after Parts A and B, before Part C was coded. Part C was appended to the script (Parts A and B code unchanged; the __main__ dispatch line was changed to a dict to add "C").
+Part C: 15:51:41 UTC, 79 s wall, peak RSS 850 MB, load 1.46. Output c26_outC.txt. V3 PASS; Q7 FAILED as pre-registered: N_f^rep(T=24)/N_f^rep(T=12) = 10.749/9.738 = 1.104 at k = 5 (threshold 1.1); the k-part of Q7 passes (10.251 at k = 6 vs 10.093 max k <= 3). Reading (informational, not a criterion): the T-increments 0.50, 0.31, 0.21 (T = 12 -> 16 -> 20 -> 24) fit c/T with c ~ 24 (predicted 0.50, 0.30, 0.20), i.e. a summable |x|^{-5} tail; a |x|^{-4} (log) tail would give increments in ratio 0.77, 0.82 instead of the observed 0.62, 0.68.

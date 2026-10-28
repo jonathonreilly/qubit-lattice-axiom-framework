@@ -1,0 +1,3 @@
+lock acquired 11:34:05 load { 2.54 3.25 3.25 }
+exit 0
+lock released 11:34:07

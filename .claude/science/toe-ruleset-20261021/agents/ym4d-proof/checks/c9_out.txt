@@ -1,0 +1,11 @@
+PASS A d=2 ||dA||^2+||d*A||^2 = sum ||d_nu A_mu||^2 on the torus | rel 0.0e+00
+PASS A d=3 ||dA||^2+||d*A||^2 = sum ||d_nu A_mu||^2 on the torus | rel 0.0e+00
+PASS A d=4 ||dA||^2+||d*A||^2 = sum ||d_nu A_mu||^2 on the torus | rel 0.0e+00
+PASS B0 tent density omega: integral 1, sup 1 (n = 5) | int 1.000, sup 1.000
+PASS B a=1.0: lambda_min(Delta + a Q_str^dag Q_str) >= min(1/5, a/2) = 0.2 | min 1.0000; d2n2T8:1.000 d2n4T8:1.000 d2n8T8:1.000 d2n16T8:1.000 d3n2T6:1.000 d3n4T6:1.000 d3n6T6:1.000 d4n2T4:1.000 d4n3T4:1.000 d4n4T4:1.000
+PASS B a=0.2: lambda_min(Delta + a Q_str^dag Q_str) >= min(1/5, a/2) = 0.1 | min 0.2000; d2n2T8:0.200 d2n4T8:0.200 d2n8T8:0.200 d2n16T8:0.200 d3n2T6:0.200 d3n4T6:0.200 d3n6T6:0.200 d4n2T4:0.200 d4n3T4:0.200 d4n4T4:0.200
+PASS B a=0.02: lambda_min(Delta + a Q_str^dag Q_str) >= min(1/5, a/2) = 0.01 | min 0.0200; d2n2T8:0.020 d2n4T8:0.020 d2n8T8:0.020 d2n16T8:0.020 d3n2T6:0.020 d3n4T6:0.020 d3n6T6:0.020 d4n2T4:0.020 d4n3T4:0.020 d4n4T4:0.020
+INFO all (d,n,T): 222:0.020 223:0.020 224:0.020 228:0.020 242:0.020 243:0.020 244:0.020 248:0.020 282:0.020 283:0.020 284:0.020 288:0.020 2162:0.020 2163:0.020 2164:0.020 2168:0.020 322:0.020 323:0.020 324:0.020 326:0.020 342:0.020 343:0.020 344:0.020 346:0.020 362:0.020 363:0.020 364:0.020 366:0.020 422:0.020 423:0.020 424:0.020 432:0.020 433:0.020 434:0.020 442:0.020 443:0.020 444:0.020 452:0.020 453:0.020
+PASS C d=4: ||omega||^2_{H^-1} for Q_str bounded in n (n = 2..6 values within 25% of each other, not growing like n) | 0.1105, 0.0994, 0.0955, 0.0937, 0.0927
+runtime 2 s
+TOTAL: PASS=8 FAIL=0

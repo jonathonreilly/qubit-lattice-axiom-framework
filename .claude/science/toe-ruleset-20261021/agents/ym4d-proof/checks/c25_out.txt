@@ -1,0 +1,5 @@
+d=2: 2015 instances, max N/(2^d + 2^(d-1) sqrt(d) l) = 1.0000, max N/(3^d (1+l)) = 0.4444
+d=3: 2015 instances, max N/(2^d + 2^(d-1) sqrt(d) l) = 1.0000, max N/(3^d (1+l)) = 0.2963
+d=4: 2015 instances, max N/(2^d + 2^(d-1) sqrt(d) l) = 1.0000, max N/(3^d (1+l)) = 0.1975
+Q1 no violation of N <= 2^d + 2^(d-1) sqrt(d) l: PASS (0 of 6045)
+c25: time 7.5 s, peak RSS 40 MB

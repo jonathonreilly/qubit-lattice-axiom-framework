@@ -1,0 +1,66 @@
+f13 (lane C, session 10) start 2026-10-28 09:08:35 UTC; SMOKE = False
+Part A (Lemma FINE-IR: fine scalar polarisation x_0(q))
+    x_0(0.001) = 1.7094259677096e-02   (h = 0.05: step-halving rel change 3.7e-14)
+    x_0(0.002) = 1.5631125343779e-02   (h = 0.05: step-halving rel change 3.6e-14)
+    x_0(0.005) = 1.3696971623163e-02   (h = 0.05: step-halving rel change 3.6e-14)
+    x_0(0.01) = 1.2233855429957e-02   (h = 0.05: step-halving rel change 3.7e-14)
+    x_0(0.02) = 1.0770789139877e-02   (h = 0.05: step-halving rel change 3.7e-14)
+    x_0(0.05) = 8.8370488412497e-03   (h = 0.05: step-halving rel change 3.7e-14)
+    x_0(0.1) = 7.3752133691437e-03   (h = 0.05: step-halving rel change 3.8e-14)
+    x_0(0.3) = 5.0672364954074e-03   (h = 0.05: step-halving rel change 3.9e-14)
+    x_0(0.6) = 3.6338740399112e-03   (h = 0.05: step-halving rel change 4.0e-14)
+    x_0(0.8) = 3.0532641688603e-03   (h = 0.05: step-halving rel change 4.1e-14)
+    step halving at the Part B q = P/3^n values: max rel change 4.1e-14
+  [PASS] A1 step control (all q used): max rel change under h -> h/2 = 4.1e-14 (threshold 1e-10)
+  [PASS] A2 symmetrisation identity q = 0.3: sym = 5.0672364954074e-03, unsym = 5.0672364952990e-03, rel = 2.1e-11 (threshold 1e-9)
+  [PASS] A2 symmetrisation identity q = 0.6: sym = 3.6338740399112e-03, unsym = 3.6338740398847e-03, rel = 7.3e-12 (threshold 1e-9)
+  [PASS] A3 log slope (S10-F1): -dx_0/dlog q on [1e-3, 1e-2] = 2.1108467444e-03, 2c_g = 2.1108579925e-03, rel = 5.3e-06 (threshold 1e-3)
+    [reported] a_0 = 2.512968892484e-03 (window [1e-3, 0.05]); window [2e-3, 0.1]: 2.512968893063e-03; change 5.8e-13
+Part B ((VC)/(UIR): Y_n(P) = x_n(P) - 2 c_g log(1/P), scalar proxy L = 3, s = 4)
+    f12 functions from checks/f12_proxy_2pt.py, md5 fea3107e2931de7daf0424d2ac25e0bd (executed unchanged)
+  [PASS] B1 step control n = 1: max_P |Y(N_K=16) - Y(N_K=12)| = 3.2e-12 (h_u = 0.3; threshold 1e-9)
+    n = 1 (0 s): Y_n(P) = 4.119740261184e-03, 4.120010939325e-03, 4.121012136231e-03, 4.124687671226e-03, 4.138023461781e-03, 4.185156095743e-03, 4.254256666924e-03
+    [reported] Y_n(0.05) - (a_0 - rho_n[f12]) = 9.927e-08
+  [PASS] B1 step control n = 2: max_P |Y(N_K=16) - Y(N_K=12)| = 5.6e-12 (h_u = 0.3; threshold 1e-9)
+    n = 2 (0 s): Y_n(P) = 4.265562505570e-03, 4.265719732289e-03, 4.266339327205e-03, 4.268777222775e-03, 4.278315439244e-03, 4.314842526475e-03, 4.371678435342e-03
+    [reported] Y_n(0.05) - (a_0 - rho_n[f12]) = 5.342e-08
+  [PASS] B1 step control n = 3: max_P |Y(N_K=16) - Y(N_K=12)| = 3.3e-12 (h_u = 0.3; threshold 1e-9)
+    n = 3 (0 s): Y_n(P) = 4.279356771525e-03, 4.279501778993e-03, 4.280080507241e-03, 4.282386998974e-03, 4.291527382648e-03, 4.326966587396e-03, 4.382570126465e-03
+    [reported] Y_n(0.05) - (a_0 - rho_n[f12]) = 4.844e-08
+  [PASS] B1 step control n = 4: max_P |Y(N_K=16) - Y(N_K=12)| = 8.1e-12 (h_u = 0.3; threshold 1e-9)
+    n = 4 (1 s): Y_n(P) = 4.280872856161e-03, 4.281016507223e-03, 4.281590715976e-03, 4.283882696053e-03, 4.292979230439e-03, 4.328298860268e-03, 4.383767251273e-03
+    [reported] Y_n(0.05) - (a_0 - rho_n[f12]) = 4.790e-08
+  [PASS] B1 step control n = 5: max_P |Y(h_u=0.15) - Y(h_u=0.1)| at N_K = 12 = 2.4e-11 (threshold 1e-9)
+    [reported] n = 5: max_P |Y(N_K=16,h_u=0.15) - Y(N_K=12,h_u=0.15)| = 9.7e-12
+    n = 5 (10 s): Y_n(P) = 4.281041147593e-03, 4.281184687314e-03, 4.281758416940e-03, 4.284048797734e-03, 4.293140461281e-03, 4.328446825869e-03, 4.383900228548e-03
+    [reported] |Y_2 - Y_1|(P) = 1.4582e-04, 1.4571e-04, 1.4533e-04, 1.4409e-04, 1.4029e-04, 1.2969e-04, 1.1742e-04; max 1.4582e-04 at P = 0.05
+    [reported] |Y_3 - Y_2|(P) = 1.3794e-05, 1.3782e-05, 1.3741e-05, 1.3610e-05, 1.3212e-05, 1.2124e-05, 1.0892e-05; max 1.3794e-05 at P = 0.05
+  [PASS] B2 ratio n = 3: Delta_3/Delta_2 = 0.09460 (threshold 0.2; L^-2 = 0.11111)
+  [PASS] B3 uniformity n = 3: |dY|(0.05) = 1.3794e-05 vs 2|dY|(0.4) = 2.7220e-05
+    [reported] |Y_4 - Y_3|(P) = 1.5161e-06, 1.5147e-06, 1.5102e-06, 1.4957e-06, 1.4518e-06, 1.3323e-06, 1.1971e-06; max 1.5161e-06 at P = 0.05
+  [PASS] B2 ratio n = 4: Delta_4/Delta_3 = 0.10991 (threshold 0.2; L^-2 = 0.11111)
+  [PASS] B3 uniformity n = 4: |dY|(0.05) = 1.5161e-06 vs 2|dY|(0.4) = 2.9914e-06
+    [reported] |Y_5 - Y_4|(P) = 1.6829e-07, 1.6818e-07, 1.6770e-07, 1.6610e-07, 1.6123e-07, 1.4797e-07, 1.3298e-07; max 1.6829e-07 at P = 0.05
+  [PASS] B2 ratio n = 5: Delta_5/Delta_4 = 0.11100 (threshold 0.2; L^-2 = 0.11111)
+  [PASS] B3 uniformity n = 5: |dY|(0.05) = 1.6829e-07 vs 2|dY|(0.4) = 3.3220e-07
+Part C (vector bordered identity; SU(2) root sector at Cartan backgrounds, torus 6x6x3x3, l = 3)
+    [flat twisted] S = -2.877698e-13, max|grad S| = 0.000e+00, max|H - H^T| (raw FD) = 7.23e-16, signs (A, K_F, X, B) = +1+1+1+1, 11 s
+    [flat twisted] log det A~ = 5.190075961596e+03; log det K_F + log det X + log det(delta + b^T X^-1 b) = 5.190075961596e+03
+    [flat twisted] max|delta| = 5.551e-16, max|b - D_l g| = 4.163e-16, ||E||_F = 8.747475e-14, max|E - E_formula| = 2.442e-15 (max|E| = 2.442e-15)
+    [plane wave p = 2pi/6] S = 8.099999e-05, max|grad S| = 9.553e-04, max|H - H^T| (raw FD) = 1.91e-03, signs (A, K_F, X, B) = +1+1+1+1, 11 s
+    [plane wave p = 2pi/6] log det A~ = 5.190075797703e+03; log det K_F + log det X + log det(delta + b^T X^-1 b) = 5.190075797703e+03
+    [plane wave p = 2pi/6] max|delta| = 6.428e-06, max|b - D_l g| = 5.638e-05, ||E||_F = 2.545584e-02, max|E - E_formula| = 3.340e-15 (max|E| = 9.553e-04)
+    [plane wave p = 4pi/6] S = 2.430000e-04, max|grad S| = 2.866e-03, max|H - H^T| (raw FD) = 5.73e-03, signs (A, K_F, X, B) = +1+1+1+1, 11 s
+    [plane wave p = 4pi/6] log det A~ = 5.190075793774e+03; log det K_F + log det X + log det(delta + b^T X^-1 b) = 5.190075793774e+03
+    [plane wave p = 4pi/6] max|delta| = 1.435e-05, max|b - D_l g| = 1.432e-04, ||E||_F = 7.636750e-02, max|E - E_formula| = 2.665e-15 (max|E| = 2.866e-03)
+  [PASS] C1 (T4) det identity, flat: rel = 7.7e-15 (threshold 1e-9)
+  [PASS] C1 (T4) det identity, plane wave: rel = 0.0e+00 (threshold 1e-9)
+  [PASS] C2 ghost Jacobi, plane wave: rel = 1.8e-16 (threshold 1e-10)
+  [PASS] C3 M D_U = D_l iota^T, plane wave: max = 2.2e-16 (threshold 1e-12)
+  [PASS] C4 delta = 0 at flat: max|delta| = 5.6e-16 (threshold 1e-7)
+  [PASS] C4 b = D_l g at flat: max|b - D_l g| = 4.2e-16 (threshold 1e-7)
+  [PASS] C5 E_U = O(eps p^2) (S10-F4): ||E(4pi/6)||/||E(2pi/6)|| = 2.99999925 vs 3 (threshold 1e-3 rel)
+  [PASS] C6 (T5) two-step ghost decimation, plane wave: rel = 2.3e-15 (threshold 1e-10)
+    [reported] max|E - E_formula|: flat 2.4e-15, p = 2pi/6 3.3e-15, p = 4pi/6 2.7e-15; ||E||_F/eps = 2.545584e+01, 7.636750e+01
+    [reported] defect sizes: max|delta| = 6.428e-06 (2pi/6), 1.435e-05 (4pi/6); max|b - D_l g| = 5.638e-05, 1.432e-04
+Summary: 23/23 verdict lines PASS; total 56 s

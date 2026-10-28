@@ -1,0 +1,4 @@
+wait start 03:46:29
+lock acquired 03:52:29; load 4.10 4.30 3.93; System-wide memory free percentage: 43%
+exit 0
+lock released 03:52:30; load 4.10 4.30 3.93

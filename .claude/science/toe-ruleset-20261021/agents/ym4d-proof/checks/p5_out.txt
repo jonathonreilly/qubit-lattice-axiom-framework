@@ -1,0 +1,16 @@
+B1 div-free=True  B2 local=True  B3 F_P(uniform b=1)=9 pass=True  B4 gauge->0 True
+   |supp W|=540  F_c=[0.41289437585733885, 0.41289437585733885, 0.41289437585733885, 0.41289437585733885]  F_*=0.412894
+B5 X        n=216 m=648 R_inf=2.037037 (dual 2.037037) R_2=0.151173 max|W|=0.024691 resid=8.5e-16 ok=True
+B5 X+mu     n=216 m=648 R_inf=2.037037 (dual 2.037037) R_2=0.151173 max|W|=0.024691 resid=7.0e-16 ok=True
+B5 X+nu     n=216 m=648 R_inf=2.037037 (dual 2.037037) R_2=0.151173 max|W|=0.024691 resid=6.4e-16 ok=True
+B5 X+mu+nu  n=216 m=648 R_inf=2.037037 (dual 2.037037) R_2=0.151173 max|W|=0.024691 resid=1.0e-15 ok=True
+B5 U4       n=864 m=2376 R_inf=6.716049 (dual 6.716049) R_2=0.281095 max|W|=0.024691 ok=True
+B6 rule on R_inf(U4)=6.716049: NP-F5 MET (linear order)
+B7 non-gauge-invariant functional: status=3 value=None pass=True
+C1 DIL-L(i) violations=0/300 max lhs/rhs=0.8637 pass=True;  C1n(f/2) violated in 6 pass=True
+C2 max|phi - r d^2/2|=1.8e-15 pass=True;  C3 max(lhs-rhs)=-1.5e-04 pass=True
+A1 True;  A2 kappa_eg=2.006901e-04 (F_*=0.412894)
+A3 tau=0.05: gamma=(1-tau-1/sqrt24)/R=0.111059
+A3 tau=0.1: gamma=(1-tau-1/sqrt24)/R=0.103614
+A3 tau=0.2: gamma=(1-tau-1/sqrt24)/R=0.088724
+SUMMARY: ALL PASS

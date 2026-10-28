@@ -1,0 +1,20 @@
+PASS d=2 L=9 k=2 (R) domain max||Z-1||<=1/2 and recursion delta_j <= rho delta_(j+1) + c C_A F (rho=0.56) | F=0.299, max||Z-1||=0.048, delta_j/F (j=0..k)=0.031,0.014,0.000
+PASS d=2 L=9 k=2 (C) coarse curvature F_j <= F + 4 delta_j | F_j/F=0.069,0.605,1.000
+PASS d=2 L=9 k=2 (P) scalar iterated transports: theta_I <= d(d-1)F/4, theta_II <= theta_I-bound + stage sum | theta_I/F=0.012 (bound 0.50), theta_II/F=0.013 (bound 0.50), 3s
+PASS d=2 L=7 k=2 (R) domain max||Z-1||<=1/2 and recursion delta_j <= rho delta_(j+1) + c C_A F (rho=0.72) | F=0.993, max||Z-1||=0.222, delta_j/F (j=0..k)=0.029,0.018,0.000
+PASS d=2 L=7 k=2 (C) coarse curvature F_j <= F + 4 delta_j | F_j/F=0.095,0.949,1.000
+PASS d=2 L=7 k=2 (P) scalar iterated transports: theta_I <= d(d-1)F/4, theta_II <= theta_I-bound + stage sum | theta_I/F=0.021 (bound 0.50), theta_II/F=0.021 (bound 0.50), 1s
+PASS d=3 L=5 k=2 (R) domain max||Z-1||<=1/2 and recursion delta_j <= rho delta_(j+1) + c C_A F (rho=1.21, >=1: k-uniformity not covered) | F=0.684, max||Z-1||=0.150, delta_j/F (j=0..k)=0.031,0.035,0.000
+PASS d=3 L=5 k=2 (C) coarse curvature F_j <= F + 4 delta_j | F_j/F=0.045,0.767,1.000
+PASS d=3 L=5 k=2 (P) scalar iterated transports: theta_I <= d(d-1)F/4, theta_II <= theta_I-bound + stage sum | theta_I/F=0.036 (bound 1.50), theta_II/F=0.037 (bound 1.51), 6s
+PASS d=3 L=3 k=3 (R) domain max||Z-1||<=1/2 and recursion delta_j <= rho delta_(j+1) + c C_A F (rho=2.02, >=1: k-uniformity not covered) | F=0.525, max||Z-1||=0.149, delta_j/F (j=0..k)=0.083,0.057,0.028,0.000
+PASS d=3 L=3 k=3 (C) coarse curvature F_j <= F + 4 delta_j | F_j/F=0.142,0.732,0.876,1.000
+PASS d=3 L=3 k=3 (P) scalar iterated transports: theta_I <= d(d-1)F/4, theta_II <= theta_I-bound + stage sum | theta_I/F=0.073 (bound 1.50), theta_II/F=0.073 (bound 1.52), 8s
+PASS d=4 L=3 k=2 (R) domain max||Z-1||<=1/2 and recursion delta_j <= rho delta_(j+1) + c C_A F (rho=2.35, >=1: k-uniformity not covered) | F=0.437, max||Z-1||=0.130, delta_j/F (j=0..k)=0.078,0.071,0.000
+PASS d=4 L=3 k=2 (C) coarse curvature F_j <= F + 4 delta_j | F_j/F=0.159,0.784,1.000
+PASS d=4 L=3 k=2 (P) scalar iterated transports: theta_I <= d(d-1)F/4, theta_II <= theta_I-bound + stage sum | theta_I/F=0.084 (bound 3.00), theta_II/F=0.079 (bound 3.03), 3s
+PASS d=4 L=3 k=2 (R) domain max||Z-1||<=1/2 and recursion delta_j <= rho delta_(j+1) + c C_A F (rho=2.35, >=1: k-uniformity not covered) | F=0.369, max||Z-1||=0.097, delta_j/F (j=0..k)=0.068,0.068,0.000
+PASS d=4 L=3 k=2 (C) coarse curvature F_j <= F + 4 delta_j | F_j/F=0.122,0.605,1.000
+DIAG d=4 L=3 k=2 large field, outside the domain ||Z-1||<=1/2 of L1e (no claim): recursion holds | F=6.228, max||Z-1||=1.597, delta_j/F=0.107,0.082,0.000
+runtime 23 s
+TOTAL: PASS=17 FAIL=0

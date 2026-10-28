@@ -1,0 +1,5 @@
+x10 run record
+wait start 04:29:23 UTC; lock acquired 04:31:03 UTC; lock released (rmdir, once, no trap) 04:33:17 UTC
+load at acquisition: { 5.14 5.44 4.51 }
+System-wide memory free percentage: 43%
+exit code 0; nice 10; OMP/OPENBLAS/MKL/VECLIB threads 1; python3 without -I; no timeout

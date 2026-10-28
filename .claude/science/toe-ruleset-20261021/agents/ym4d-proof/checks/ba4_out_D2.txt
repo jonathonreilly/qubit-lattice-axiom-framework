@@ -1,0 +1,24 @@
+D2 T=2 XR-designed: Q_XR 0.0372, Q_RP 0.3008; r_0(0,0) 1.2137e+00 vs <w,B'_0> 1.2137e+00 (S2 rel 5.8e-13 ok); |d*w|/|w| 2.2e-15; CG res 3.9e-13
+D2 T=2 RP-designed: Q_XR 0.0039, Q_RP 1.1518; r_0(0,0) -7.0728e-02 vs <w,B'_0> -7.0728e-02 (S2 rel 2.4e-12 ok); |d*w|/|w| 7.0e-15; CG res 3.5e-13
+D2 T=2 random: Q_XR 0.0043, Q_RP 0.3367; r_0(0,0) 5.5412e-02 vs <w,B'_0> 5.5412e-02 (S2 rel 2.5e-12 ok); |d*w|/|w| 1.9e-15; CG res 7.0e-13
+D2 T=2 S3: <w,Q^T F A>/(sup|w| sum|Q^T F A|) 7.8e-17, |d* F A|/|F A| 4.0e-16; <w, A - Q^T F A> vs <w, B'_0> rel 4.6e-15; FC(ii) ratio max|A - Q^T F A|/(L max|grad A|) 0.157 (0 s, RSS 69 MB)
+D2 T=3 XR-designed: Q_XR 0.1777, Q_RP 0.5434; r_0(0,0) 6.3167e+00 vs <w,B'_0> 6.3167e+00 (S2 rel 1.6e-13 ok); |d*w|/|w| 1.9e-15; CG res 5.7e-13
+D2 T=3 RP-designed: Q_XR 0.0945, Q_RP 1.3746; r_0(0,0) -6.2996e-01 vs <w,B'_0> -6.2996e-01 (S2 rel 9.3e-13 ok); |d*w|/|w| 1.2e-14; CG res 6.4e-13
+D2 T=3 random: Q_XR 0.0056, Q_RP 0.3091; r_0(0,0) -1.0468e-01 vs <w,B'_0> -1.0468e-01 (S2 rel 9.6e-12 ok); |d*w|/|w| 1.4e-15; CG res 8.7e-13
+D2 T=3 S3: <w,Q^T F A>/(sup|w| sum|Q^T F A|) 4.9e-16, |d* F A|/|F A| 5.2e-16; <w, A - Q^T F A> vs <w, B'_0> rel 9.0e-15; FC(ii) ratio max|A - Q^T F A|/(L max|grad A|) 0.154 (0 s, RSS 99 MB)
+D2 T=4 XR-designed: Q_XR 0.2542, Q_RP 0.5552; r_0(0,0) 9.8766e+00 vs <w,B'_0> 9.8766e+00 (S2 rel 1.6e-12 ok); |d*w|/|w| 3.3e-15; CG res 7.7e-13
+D2 T=4 RP-designed: Q_XR 0.1442, Q_RP 1.5025; r_0(0,0) -1.1239e+00 vs <w,B'_0> -1.1239e+00 (S2 rel 1.5e-13 ok); |d*w|/|w| 1.1e-14; CG res 7.9e-13
+D2 T=4 random: Q_XR 0.0096, Q_RP 0.3332; r_0(0,0) 1.9482e-01 vs <w,B'_0> 1.9482e-01 (S2 rel 2.2e-12 ok); |d*w|/|w| 2.3e-15; CG res 9.8e-13
+D2 T=4 S3: <w,Q^T F A>/(sup|w| sum|Q^T F A|) 4.9e-16, |d* F A|/|F A| 7.9e-16; <w, A - Q^T F A> vs <w, B'_0> rel 6.7e-15; FC(ii) ratio max|A - Q^T F A|/(L max|grad A|) 0.158 (1 s, RSS 258 MB)
+D2 T=5 XR-designed: Q_XR 0.3254, Q_RP 0.5760; r_0(0,0) 1.3074e+01 vs <w,B'_0> 1.3074e+01 (S2 rel 4.6e-13 ok); |d*w|/|w| 4.2e-15; CG res 8.4e-13
+D2 T=5 RP-designed: Q_XR 0.1774, Q_RP 1.5129; r_0(0,0) -1.4098e+00 vs <w,B'_0> -1.4098e+00 (S2 rel 1.1e-12 ok); |d*w|/|w| 2.2e-14; CG res 9.0e-13
+D2 T=5 random: Q_XR 0.0080, Q_RP 0.3021; r_0(0,0) 1.6690e-01 vs <w,B'_0> 1.6690e-01 (S2 rel 2.0e-11 ok); |d*w|/|w| 2.0e-15; CG res 9.8e-13
+D2 T=5 S3: <w,Q^T F A>/(sup|w| sum|Q^T F A|) 3.9e-16, |d* F A|/|F A| 2.5e-16; <w, A - Q^T F A> vs <w, B'_0> rel 4.8e-15; FC(ii) ratio max|A - Q^T F A|/(L max|grad A|) 0.159 (3 s, RSS 658 MB)
+T2 XR-designed Q_XR T = 2..5: seq 0.0372, 0.1777, 0.2542, 0.3254; last incr +0.0712 vs 0.5|prev| 0.0383 + 0.0004 -> FAIL
+   XR-designed Q_RP (informational) T = 2..5: seq 0.3008, 0.5434, 0.5552, 0.5760; last incr +0.0207 vs 0.5|prev| 0.0059 + 0.0030 -> FAIL
+T2 RP-designed Q_XR T = 2..5: seq 0.0039, 0.0945, 0.1442, 0.1774; last incr +0.0332 vs 0.5|prev| 0.0248 + 0.0000 -> FAIL
+   RP-designed Q_RP (informational) T = 2..5: seq 1.1518, 1.3746, 1.5025, 1.5129; last incr +0.0103 vs 0.5|prev| 0.0640 + 0.0115 -> PASS
+T2 random Q_XR T = 2..5: seq 0.0043, 0.0056, 0.0096, 0.0080; last incr -0.0016 vs 0.5|prev| 0.0020 + 0.0000 -> PASS [informational]
+   random Q_RP (informational) T = 2..5: seq 0.3367, 0.3091, 0.3332, 0.3021; last incr -0.0311 vs 0.5|prev| 0.0121 + 0.0034 -> PASS
+S2 all ok: True; S3 max 4.9e-16, d*z max 7.9e-16
+ba4 D2: time 3.6 s, peak RSS 658 MB

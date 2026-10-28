@@ -1,0 +1,6 @@
+B1 (bootstrap proxy): k = 1, T = 12
+  r=3: sum|j'| 4.5475e+00, max|j'| on core (d <= r/2-3) 0.0e+00 (rel 0.0e+00), sum|e| 5.1529e+00, q 9, q*sum|e| 4.6376e+01 (0 s, RSS 469 MB)
+  r=4: sum|j'| 3.7544e+00, max|j'| on core (d <= r/2-3) 0.0e+00 (rel 0.0e+00), sum|e| 4.2957e+00, q 12, q*sum|e| 5.1548e+01 (1 s, RSS 649 MB)
+  r=6: sum|j'| 4.0745e+00, max|j'| on core (d <= r/2-3) 2.2e-16 (rel 2.2e-13), sum|e| 4.4044e+00, q 15, q*sum|e| 6.6066e+01 (1 s, RSS 704 MB)
+  r=9: sum|j'| 2.6645e+00, max|j'| on core (d <= r/2-3) 3.3e-16 (rel 1.6e-12), sum|e| 2.5485e+00, q 21, q*sum|e| 5.3519e+01 (1 s, RSS 704 MB)
+B1 FAIL

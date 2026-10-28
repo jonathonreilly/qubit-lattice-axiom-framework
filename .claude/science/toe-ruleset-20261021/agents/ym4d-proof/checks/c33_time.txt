@@ -1,0 +1,19 @@
+# c33 run record (session 18, 2026-10-27)
+- Order: RLARGE.md §13 (session-18 targets) written 21:47 UTC; then c33_criteria.md; then c33_bfour.py (one pre-run
+  edit for speed: per-tuple terms computed once per field; no criterion touched); then the runs. Each part run once.
+- Run WITHOUT -I (numpy/mpmath in user site-packages); the script reads no downloaded files. PYTHONDONTWRITEBYTECODE=1,
+  nice 10, OPENBLAS/OMP/MKL/vecLib threads 1, one job at a time, no `timeout`.
+- B: 17:50 local, load (1-min) 2.34, 37% free; 140.7 s, peak RSS 61 MB. **PASS (B1-B4).** Tuple localisation invariant
+  under all 384 elements of B_4 about x to ≤ 1.3e-15; the fattened localisation changes by 0.68-3.9 (relative) for every
+  random seed; the review's case {x - e_1} vs {x + e_1} confirmed; on constant data the two agree to 2.7e-14.
+- A: 17:52 local, load 5.11, 35% free; 12.4 s, peak RSS 73 MB. **FAIL as pre-registered** (A1, A4, A5), on the constant
+  seed only: there the brute-force coefficient c_3 = a_3 - a_1a_2 + a_1³/3 (a_3 ≈ 2.6e5, c_3 ≈ 109) loses digits in
+  double precision, and the relative errors are 2.9e-9 (A1, A4) and 2.9e-9 (A5's c_N/T² comparison) against the written
+  1e-10 / 1e-12. On the five random seeds A1 and A4 hold (≤ 5.6e-12) and A2, A3 hold on all seeds (tuple localisation
+  invariant to ≤ 6.2e-14 under all 8 elements; fattened changes by 0.61-2.0); A5's F^tup = F^fat comparison holds (4.8e-13).
+- POST-RUN diagnostic (c33_diag_mp.py; not a criterion, written after the FAIL): the constant seed at 40 digits. Tuple
+  totals equal the brute-force log coefficients to 0, 1.1e-37, 3.0e-34 (N = 1, 2, 3). So the FAIL is a float-cancellation
+  artefact of the brute-force side, not a failure of the tuple identity. No criterion edited; the FAIL stands as recorded.
+- Scope: toy scalar activities (not Wilson/soft-kernel activities); d = 2 (N ≤ 3, whole torus) and d = 4 (N ≤ 2, the
+  tuples meeting x only). It tests the localisation combinatorics and the permutation property, not GT-lat' (ii) itself
+  (c32 D tests that).

@@ -1,0 +1,24 @@
+f6: iterated two-level covariant chain vs single block; criteria checks/f6_criteria.md
+[V1] PASS :: rank-1 vector 1.1e-16, coefficient 1.5e-16, diagonal 0.0e+00
+[V2] FAIL :: L2=1 vs f5 ell=3: total 1.2e-04, M-only 1.8e-16; cov integrand max 0.0e+00
+   [V2' POST-HOC] torus (fine side 6) class sums, L2=1 vs f5: max rel 8.6e-18 (within 1e-10)
+   (t=0s)
+[V3] NOT EVALUATED :: untwisted torus has q = 0 in class P = 0, where the class formula is singular; see V3'
+   [V3' POST-HOC, twisted torus] within 1e-10 :: k=[1, 1, 0, 0]: |Ward| 1.5e-12 (scale 1.68e+02); M-only 1.3e+00 (scale 1.78e+02); k=[1, 2, 1, 0]: |Ward| 3.1e-12 (scale 4.04e+02); M-only 1.4e+00 (scale 4.25e+02)
+   (t=2s)
+[V4] PASS :: max relative symmetry defect 2.5e-14
+   (t=2s)
+[Q6] PASS :: c_it(9,1): n=10 0.004209281, n=14 0.004209206, rel 1.8e-05  [313s]
+   l=9: kc=0.25: it c=0.00566655 cM=0.00592210 cK=-0.00025555 ccov=-0.00013717 | single c=0.00580311 cM=0.00592210 cK=-0.00011899; kc=1.0: it c=0.00420928 cM=0.00463382 cK=-0.00042454 ccov=-0.00013717 | single c=0.00434451 cM=0.00463382 cK=-0.00028932; kc=4.0: it c=0.00277945 cM=0.00350804 cK=-0.00072858 ccov=-0.00013717 | single c=0.00291138 cM=0.00350804 cK=-0.00059666  [iter 182s, single 36s, t=534s, load 6.3]
+   l=15: kc=0.25: it c=0.00681871 cM=0.00699927 cK=-0.00018056 ccov=-0.00006154 | single c=0.00687999 cM=0.00699927 cK=-0.00011928; kc=1.0: it c=0.00535877 cM=0.00570883 cK=-0.00035006 ccov=-0.00006154 | single c=0.00541951 cM=0.00570883 cK=-0.00028933; kc=4.0: it c=0.00392338 cM=0.00457769 cK=-0.00065432 ccov=-0.00006154 | single c=0.00398290 cM=0.00457769 cK=-0.00059480  [iter 1355s, single 281s, t=2170s, load 3.8]
+   [rule] projected l=21 time 6872s, load 3.8: SKIP
+[V1b] PASS :: max |c_it^M - c_s^M|/|c_s^M| = 1.0e-10
+[V5] PASS :: max |Im| = 4.6e-17 (max |c| = 7.00e-03)
+   kc=0.25: s_it^K(9,15) +0.06954, s^Delta(9,15) +0.06982, s^cov(9,15) +0.07014; total s_it 1.0685, s_s 0.9987
+   kc=1.0: s_it^K(9,15) +0.06907, s^Delta(9,15) +0.06908, s^cov(9,15) +0.07014; total s_it 1.0660, s_s 0.9970
+   kc=4.0: s_it^K(9,15) +0.06888, s^Delta(9,15) +0.06715, s^cov(9,15) +0.07014; total s_it 1.0609, s_s 0.9937
+[G6] FAIL :: |s_it^K(9,15)| x 48pi^2 <= 0.005 for each kc (values above)
+[H6] FAIL :: |s^Delta(9,15)| x 48pi^2 <= 0.005 for each kc (values above)
+[C6] FAIL :: |s^cov(9,15)| x 48pi^2 <= 0.005 for each kc (values above)
+[G6'] NOT EVALUATED :: l = 21 not run (rule)
+f6 done: PASS=5 FAIL=4; wall 2169.9s

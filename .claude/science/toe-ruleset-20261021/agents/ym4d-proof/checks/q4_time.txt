@@ -1,0 +1,6 @@
+mkdir 10:17:46 load 5.66 3.60 3.21 System-wide memory free percentage: 36%
+exit 0 at 10:17:57
+       10.58 real        10.19 user         0.12 sys
+            78790656  maximum resident set size
+            56803856  peak memory footprint
+rmdir 10:17:57

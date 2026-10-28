@@ -1,0 +1,7 @@
+n = 3 (S = 13): Coulomb iterations 18, max|d*w| = 3.8e-13; N': A1 = 0.15418, A2 = 0.14741, A3 = 0.11468; full box: 0.23916, 0.23180, 0.16818; f_0 = 0.28499, Lip proxy = 0.37202; (A1+A2+A3)/(f_0+Lip) = 0.6336; |w - a_lin|/|w| = 2.62e-01
+n = 9 (S = 37): Coulomb iterations 16, max|d*w| = 3.2e-13; N': A1 = 0.16418, A2 = 0.16308, A3 = 0.14699; full box: 0.25734, 0.27637, 0.29653; f_0 = 0.29710, Lip proxy = 0.41305; (A1+A2+A3)/(f_0+Lip) = 0.6678; |w - a_lin|/|w| = 2.71e-01
+n = 27 (S = 109): Coulomb iterations 14, max|d*w| = 4.6e-13; N': A1 = 0.16793, A2 = 0.17798, A3 = 0.12280; full box: 0.26375, 0.33003, 0.46628; f_0 = 0.30134, Lip proxy = 0.42435; (A1+A2+A3)/(f_0+Lip) = 0.6459; |w - a_lin|/|w| = 2.74e-01
+W0 convergence and pinning: PASS
+W1 interior C^(1,alpha) flat in n (N1L-F1): PASS
+VERDICT: ALL PASS (W0, W1)
+[t = 0.1 s]

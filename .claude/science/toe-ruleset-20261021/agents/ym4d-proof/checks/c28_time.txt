@@ -1,0 +1,20 @@
+c28 (criteria checks/c28_criteria.md written 16:50:58 UTC, tidied 16:52 and given a pre-script addendum, all before
+checks/c28_exp.py existed), 2026-10-27, nice 10, OPENBLAS/OMP/MKL/vecLib threads 1, one job at a time.
+- A first launch of Part A with python3 -I failed at "import numpy" (user-site numpy; -I excludes it) before any
+  computation, as in c26; all runs below are without -I (the script reads no downloaded files).
+- Part A: 16:55:05 UTC, 2.2 s wall, peak RSS 169 MB, load 1.8, 43% free. Output c28A.out. VALID (all PASS).
+- Part B: 16:55:13 UTC, 4.4 s wall, peak RSS 98 MB, load 2.1, 37% free. Output c28B.out. FAIL as pre-registered:
+  the sub-check beta_mu(x) >= b_* fails at n = 27, kappa in {1, 0.25}, at the pre-registered point x = 0, where the
+  bound is sharp (beta_mu(0) = kappa = b_* exactly). Post-run diagnostic (a one-line python call of blocks() at
+  z = 0): beta_mu(0)/b_* - 1 = 0.0 (n = 3, 9) and -5.551e-16 (n = 27). Every other sub-check holds with margin.
+  Criterion not edited.
+- Part C: 16:55:33 UTC, 21 s wall, peak RSS 694 MB (peak memory footprint 1.21 GB), load 2.1, 40% free. Output
+  c28C.out. C1, C2 PASS; C3, C4 FAIL as pre-registered (the fit window x in [3, T/2 - 2] is pre-asymptotic: local rates
+  fall from ~2.0 at x = 1 towards the limit, so the fitted rate drifts with T and exceeds the singularity rate).
+  Post-run, informational (not criteria):
+  - three-parameter fit log K = c - m x - alpha log x on REVIEW_S11_S12's rev1112/rd32.out (k = 1) and rd32k3.out
+    (k = 3), windows [6,13], [8,13], [5,12]: m = 0.950, 0.972, 0.934 (k = 1) and 0.906, 0.930, 0.884 (k = 3);
+  - Newton from w = i sqrt(kappa) for the zero of Den = Psi * prod(beta) at p = (w, 0, 0, 0): Im w = 1.0365, 0.9873,
+    0.9822 (kappa = 1, k = 1, 2, 3); 0.5042, 0.4788, 0.4762 (kappa = 0.25); 2.4624, 2.3743, 2.3651 (kappa = 4); at
+    p_perp = (0.3, 0, 0) the zeros move up (1.071, 1.025, 1.021 at kappa = 1).
+- Part D: 16:56:28 UTC, 2.3 s wall, peak RSS 99 MB, load 2.0, 49% free. Output c28D.out. PASS.

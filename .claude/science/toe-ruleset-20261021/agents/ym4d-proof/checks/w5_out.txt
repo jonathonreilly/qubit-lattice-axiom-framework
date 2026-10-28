@@ -1,0 +1,10 @@
+Part A
+  cA=0 Cl=1 R=0: g2_CRC*c+=4.898e-97 nT/c+=9.991e+96 log_eps2(g2/2)=-2.04e+107 log_eps2(1e-94)=2.03e+107 g2_ret*c+=1.627e-97
+  cA=1 Cl=1 R=0: g2_CRC*c+=4.898e-97 nT/c+=9.991e+96 log_eps2(g2/2)=-8.16e+107 log_eps2(1e-94)=8.14e+107 g2_ret*c+=1.627e-97
+  cA=100 Cl=1 R=0: g2_CRC*c+=4.898e-97 nT/c+=9.991e+96 log_eps2(g2/2)=-2.08e+111 log_eps2(1e-94)=2.08e+111 g2_ret*c+=1.627e-97
+  b_n(cA=0)=20416938755 b_D(cA=0)=20415875872 c_att=1229313 Delta_rho^2=6.9756e+09
+Part B: samples=160 B1 violations=0 B2 violations=0 max excess per Y-cube=193.0 (c_att=1229313); detached excess M=5: 1106, M=10: 2386
+Part C: configs in R^-B minus R: 5222, not through site 0: 0; grid points 27; C2 violations 0; C3 (z0=q) violations 18; max ratio/bound 1.0000 at p=0.02 q=0.001 q'=0.001 (ratio 1.0000)
+RESULTS: A1:PASS A2:PASS A3:PASS A4:PASS A5:PASS B1:PASS B2:PASS B3:PASS C1:PASS C2:PASS C3:PASS
+OVERALL PASS
+secs 1.6

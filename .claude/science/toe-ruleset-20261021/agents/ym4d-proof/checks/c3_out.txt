@@ -1,0 +1,29 @@
+setup: SU(2) fundamental scalar, d=4, a=1.0; lemma bound m_lb = min(2,a) - d A_max^2, A_max <= (d-1)F/2
+  lattice n=1 T=6 start 0s
+  lattice n=2 T=4 start 0s
+  lattice n=3 T=3 start 1s
+  [0s] n1 free: F 0.000 Amax 0.000 (<= 0.000) gap 1.0000 m_lb 1.000/1.000
+  [0s] n1 smooth F=.1: F 0.100 Amax 0.000 (<= 0.150) gap 1.0051 m_lb 1.000/0.910
+  [0s] n1 smooth F=.2: F 0.200 Amax 0.000 (<= 0.300) gap 1.0202 m_lb 1.000/0.640
+  [0s] n1 smooth F=.3: F 0.300 Amax 0.000 (<= 0.450) gap 1.0452 m_lb 1.000/0.190
+  [0s] n1 rough F=.2: F 0.200 Amax 0.000 (<= 0.300) gap 1.0040 m_lb 1.000/0.640
+  [0s] n1 large (rough 3.0): F 1.998 Amax 0.000 (<= 2.998) gap 3.7676 m_lb 1.000/-34.941
+  [0s] n2 free: F 0.000 Amax 0.000 (<= 0.000) gap 1.0000 m_lb 1.000/1.000
+  [1s] n2 smooth F=.1: F 0.100 Amax 0.066 (<= 0.150) gap 1.0018 m_lb 0.983/0.910
+  [1s] n2 smooth F=.2: F 0.200 Amax 0.132 (<= 0.300) gap 1.0072 m_lb 0.931/0.640
+  [1s] n2 smooth F=.3: F 0.300 Amax 0.198 (<= 0.450) gap 1.0161 m_lb 0.844/0.190
+  [1s] n2 rough F=.2: F 0.200 Amax 0.097 (<= 0.300) gap 1.0007 m_lb 0.962/0.640
+  [1s] n2 large (rough 3.0): F 7.997 Amax 3.991 (<= 11.996) gap 11.0862 m_lb -62.727/-574.599
+  [2s] n3 free: F 0.000 Amax 0.000 (<= 0.000) gap 1.0000 m_lb 1.000/1.000
+  [2s] n3 smooth F=.1: F 0.100 Amax 0.055 (<= 0.150) gap 1.0010 m_lb 0.988/0.910
+  [3s] n3 smooth F=.2: F 0.200 Amax 0.111 (<= 0.300) gap 1.0041 m_lb 0.951/0.640
+  [3s] n3 smooth F=.3: F 0.300 Amax 0.167 (<= 0.450) gap 1.0092 m_lb 0.889/0.190
+  [4s] n3 rough F=.2: F 0.200 Amax 0.073 (<= 0.300) gap 1.0003 m_lb 0.978/0.640
+  [4s] n3 large (rough 3.0): F 17.993 Amax 5.998 (<= 26.990) gap 24.7723 m_lb -142.890/-2912.767
+PASS 1 [L3s-i] axial-gauge link bound A_max <= (d-1)F/2 (complete axial tree, near-centre root), all n, all backgrounds
+PASS 2 [L3s-ii] gap(H_A) >= min(2,a) - d A_max^2 whenever the bound is positive (n = 1,2,3)
+PASS 3 gauge invariance of the spectrum (random SU(2) gauge transform, smooth F=.2)
+PASS 4 free gap >= min(2,a) = 1 for n = 1,2,3 (uniform discrete Poincare, PROOF.md eq. P) | free gaps 1.0000, 1.0000, 1.0000
+PASS 5 [L3s-iii] block-block ||1_D G 1_D'|| <= (2/m_lb) exp(-mu rho_inf), n=2 T=4 smooth F=.2 | m_lb 0.931, proven mu 0.147, max ratio to bound 0.038, measured envelope rate 1.78/unit (proven >= 0.147)
+runtime 5 s
+TOTAL: PASS=5 FAIL=0

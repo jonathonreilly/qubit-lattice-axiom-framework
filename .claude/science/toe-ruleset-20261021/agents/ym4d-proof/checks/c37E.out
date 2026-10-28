@@ -1,0 +1,6 @@
+E: fibres built  (1 s, RSS 534 MB)
+E: H_1 grid built  (42 s, RSS 536 MB)
+E1: gauge annihilation level 0 7.8e-14, level 1 1.4e-12; per-mode ratio 0.030950 (c36 D1 0.030950)  (45 s, RSS 536 MB)
+E2 level 0 (torus side 4): exact K_p = 0.06188 (row site (np.int64(0), np.int64(2), np.int64(1), np.int64(1)), plane (0, 1)); exact K_rho = 2.21918; nan count 0; max imag 9.7e-17  (111 s, RSS 536 MB)
+E2 level 1 (torus side 4): exact K_p = 0.10323 (row site (np.int64(0), np.int64(0), np.int64(0), np.int64(2)), plane (1, 3)); exact K_rho = 2.07397; nan count 0; max imag 2.2e-16  (178 s, RSS 536 MB)
+E: informational (E1 holds)

@@ -1,0 +1,14 @@
+A1: PASS  violations 0 of 791 kept sets (skipped 233)
+A2: PASS  max |F_S|/B_S (|S|>=1) = 1.083e-04; kept 791
+A3: PASS  unrefined domain contains the pole for some S
+B1: PASS  scalar Hölder bounds hold in 200 trials (N_0 = 6.516)
+B2: PASS  block Hölder bounds (factor 4) hold in 200 trials (N_0 = 20.687)
+B3: PASS  max linear ratio 0.787, max cubic ratio 3.247e-02
+C1: PASS  max (y - y_bg)/(c_y a) = 0.9091
+C2: PASS  y_bg <= 2.2 p_L alpha in every sample
+C3: PASS  aligned (y - y_bg)/(l a): min 1.0000, max 1.0000
+D1: PASS  kappa_0 = 151.3152, tilde kappa_0 = 217.0472, kappa_0 + 2 tilde + 3 = 588.410
+D2: PASS  kappa_c^* = 1149.921 (w_8 = 0.02724)
+D3: PASS  273 route never reproduces the rate on the grid
+D4: PASS  CE-Q per-site shell sums bounded
+OVERALL: PASS 13/13

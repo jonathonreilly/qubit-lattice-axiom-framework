@@ -1,0 +1,19 @@
+      103.65 real        99.70 user         3.80 sys
+           390627328  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               63370  page reclaims
+                 154  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 398  voluntary context switches
+               10104  involuntary context switches
+       1668067572756  instructions retired
+        391126372433  cycles elapsed
+           408355680  peak memory footprint
+[S11, R910-fix] Disclosure added 2026-10-27: REVIEW_S9_S10's audit of the session-9 transcript found one pre-run code edit (a diagonal-term line, 13:22:02 UTC) after the smoke test and before the only run (13:22:27 UTC). It was not disclosed in session 9.

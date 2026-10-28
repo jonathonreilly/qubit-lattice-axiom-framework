@@ -1,0 +1,14 @@
+PASS a SU(2) gauge covariance U'[gUg^-1] = g(c_X) U' g(c_Y)^dag (random g on all fine sites) | err 5.8e-16
+PASS b SU(2) U' unitary with det 1 | |UU^+-1| 1.4e-15, |det-1| 6.7e-16
+PASS c SU(2) pure gauge U_b = g_x g_y^-1 averages to g(c_X) g(c_Y)^-1 | err 6.8e-16
+PASS f SU(2) reflection covariance: V[thetaU] = theta(V[U]) (unreflected dir exact; reflected dir = inverse, exact) | err 1.4e-16, 2.7e-16
+PASS d SU(2) linearisation: log U' = average of path logs + O(t^2): relative error -> 0 at least linearly (halving ratio >= 1.6; observed ~4 = second-order agreement) | rel err 3.34e-03, 8.24e-04, 2.05e-04
+PASS e SU(2) one coarse plaquette, physical units: F_coarse <= 1.5 F_fine,max (smooth fields) | F_fine,max / F_coarse(one plaquette): 1.530/0.211, 3.089/0.430
+PASS a SU(3) gauge covariance U'[gUg^-1] = g(c_X) U' g(c_Y)^dag (random g on all fine sites) | err 5.7e-15
+PASS b SU(3) U' unitary with det 1 | |UU^+-1| 5.2e-15, |det-1| 1.7e-15
+PASS c SU(3) pure gauge U_b = g_x g_y^-1 averages to g(c_X) g(c_Y)^-1 | err 6.0e-15
+PASS f SU(3) reflection covariance: V[thetaU] = theta(V[U]) (unreflected dir exact; reflected dir = inverse, exact) | err 9.2e-17, 1.1e-15
+PASS d SU(3) linearisation: log U' = average of path logs + O(t^2): relative error -> 0 at least linearly (halving ratio >= 1.6; observed ~4 = second-order agreement) | rel err 4.95e-03, 1.25e-03, 3.15e-04
+PASS e SU(3) one coarse plaquette, physical units: F_coarse <= 1.5 F_fine,max (smooth fields) | F_fine,max / F_coarse(one plaquette): 2.418/0.493, 5.005/0.966
+runtime 3 s
+TOTAL: PASS=12 FAIL=0

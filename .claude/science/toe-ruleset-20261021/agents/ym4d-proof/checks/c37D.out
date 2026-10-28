@@ -1,0 +1,6 @@
+D: fibres built  (1 s, RSS 552 MB)
+D1 kappa=0.25: K_p = 2.474983, K_rho = 4.703237  (16 s, RSS 559 MB)
+D1 kappa=4.0: K_p = 1.979593, K_rho = 1.341506  (31 s, RSS 559 MB)
+D1 kappa=16.0: K_p = 1.976948, K_rho = 0.650702  (47 s, RSS 559 MB)
+D2 kappa=1: K_A = 1.388008; Z_row = 2.848907; Z_col = 156.078934; Z_col Z_row^2 = 1266.778931; (1 + Z_col) max(1, Z_row)^2 = 1274.895142  (62 s, RSS 559 MB)
+D: informational

@@ -1,0 +1,14 @@
+f7: uniform scalar U(1) chain, L = 3, composite-covariance term; criteria checks/f7_criteria.md
+   n=1 ell=3: brute c=0.000000000000e+00  closed -0.000000000000e+00  diff +0.00e+00  [0.0s]
+   n=2 ell=9: brute c=-1.371742112483e-04  closed -1.371742112483e-04  diff +0.00e+00; finite-eps (Richardson) -1.371742192e-04  [0.0s]
+   n=3 ell=27: brute c=-1.509269913477e-04  closed -1.509269913477e-04  diff +0.00e+00; finite-eps (Richardson) -1.509269913e-04  [0.1s]
+   n=4 ell=81: brute c=-1.524366977917e-04  closed -1.524366977917e-04  diff +0.00e+00; finite-eps (Richardson) -1.524366666e-04  [4.4s]
+   c_inf = -1.526251526252e-04
+[P1] PASS :: |c_1| = 0.0e+00 (<= 1e-15)
+[P4] PASS :: gauge A1=-x2: -1.509269913477e-04; centre 27(1,-2,0,3): -1.509269913477e-04; max rel 0.0e+00 (<= 1e-12)
+[P5] PASS :: s = 0.25, 1, 4: max rel 0.0e+00 (<= 1e-12)
+[P2] PASS :: max |c_n - closed|, n = 2..4: 0.00e+00 (<= 1.53e-14)
+[P3] PASS :: |c_2 - f6 stored -0.00013717| = 4.21e-09 (<= 1e-8)
+[F7] PASS :: |c4-c3|/|c3-c2| = 0.1098 (<= 0.2); |c4|/|c_inf| = 0.998765 (<= 1 + 1e-10)
+   informational: finite-eps minus brute: n=2: -8.0e-12, n=3: +1.4e-14, n=4: +3.1e-11
+f7 done; wall 4.7s; ru_maxrss 370950144 (bytes on darwin)

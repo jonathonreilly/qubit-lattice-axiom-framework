@@ -1,0 +1,1 @@
+x11 run: lock acquired 05:04:36 UTC, released 05:04:41 UTC (mkdir/rmdir once, no trap); load at acquisition 2.29 2.87 3.05; nice 10; BLAS/OMP threads 1; python3 without -I; no timeout; exit 0

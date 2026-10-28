@@ -1,0 +1,14 @@
+A: d=2 T=9; connected sets 2025; tuples (phi^T != 0) 22923
+  seed 0: A1 err 9.62e-13; A4 err 9.74e-13; A2 max rel change 8.34e-15; fattened max rel change 9.09e-01; c = ['124.273083', '-213.757007', '890.263663']
+  seed 1: A1 err 5.83e-13; A4 err 5.66e-13; A2 max rel change 1.00e-14; fattened max rel change 6.06e-01; c = ['107.710364', '-129.407920', '423.555985']
+  seed 2: A1 err 5.64e-12; A4 err 5.60e-12; A2 max rel change 1.75e-14; fattened max rel change 9.84e-01; c = ['124.062566', '-222.455533', '995.387937']
+  seed 3: A1 err 8.79e-13; A4 err 8.61e-13; A2 max rel change 6.22e-14; fattened max rel change 2.02e+00; c = ['137.309107', '-399.281515', '3359.089918']
+  seed 4: A1 err 1.89e-12; A4 err 1.87e-12; A2 max rel change 1.26e-14; fattened max rel change 1.04e+00; c = ['121.559607', '-214.741620', '894.522135']
+  const: |F^tup - F^fat| rel 4.83e-13; |F^tup - c_N/T^2| rel 2.91e-09
+  seed const: A1 err 2.93e-09; A4 err 2.91e-09; A2 max rel change 0.00e+00; fattened max rel change 0.00e+00; c = ['116.099683', '-87.391108', '108.675178']
+A1: FAIL
+A2: PASS
+A3: PASS
+A4: FAIL
+A5: FAIL
+Part A: FAIL

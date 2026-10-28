@@ -1,0 +1,60 @@
+P1 B_4 character norm of Lambda^2 = 1.000000000000 (rotation subgroup: 2.000000000000)
+P2 invariant quadratic forms on su(2)(x)Lambda^2: dim = 1, singular-value gap = 6.586e+14
+  abelian  F1: c=8.9999999254  r-diff ratio=4.0665  even|0.2|=7.2e-14  gauge=1.2e-13
+  abelian  F2: c=-77.9999973642  r-diff ratio=4.0653  even|0.2|=1.8e-12  gauge=1.8e-12
+  abelian  F3: c=-2.1185380614  r-diff ratio=4.0074  even|0.2|=7.1e-15  gauge=3.6e-14
+  sd       F1: c=8.9999999672  r-diff ratio=4.1216  even|0.2|=1.3e-14  gauge=5.8e-14
+  sd       F2: c=-78.0000004193  r-diff ratio=4.1100  even|0.2|=2.3e-13  gauge=9.1e-13
+  sd       F3: c=-2.1185380607  r-diff ratio=4.0238  even|0.2|=1.4e-14  gauge=7.1e-15
+  asd      F1: c=9.0000000600  r-diff ratio=4.1426  even|0.2|=4.4e-14  gauge=1.3e-13
+  asd      F2: c=-77.9999984338  r-diff ratio=4.1312  even|0.2|=3.6e-12  gauge=2.0e-12
+  asd      F3: c=-2.1185380538  r-diff ratio=4.0642  even|0.2|=7.1e-15  gauge=1.4e-14
+  generic  F1: c=8.9999999995  r-diff ratio=4.1193  even|0.2|=9.2e-15  gauge=1.6e-13
+  generic  F2: c=-77.9999993122  r-diff ratio=4.0940  even|0.2|=1.4e-12  gauge=2.5e-12
+  generic  F3: c=-2.1185380588  r-diff ratio=3.9779  even|0.2|=7.1e-15  gauge=3.6e-14
+  generic  F1: c=9.0000001535  r-diff ratio=4.2337  even|0.2|=2.9e-14  gauge=3.2e-14
+  generic  F2: c=-78.0000010360  r-diff ratio=3.9409  even|0.2|=0.0e+00  gauge=4.5e-13
+  generic  F3: c=-2.1185380618  r-diff ratio=3.8014  even|0.2|=7.1e-15  gauge=7.1e-15
+  generic  F1: c=8.9999998248  r-diff ratio=4.1303  even|0.2|=1.0e-15  gauge=1.0e-13
+  generic  F2: c=-77.9999984613  r-diff ratio=4.1138  even|0.2|=1.1e-12  gauge=1.6e-12
+  generic  F3: c=-2.1185380481  r-diff ratio=4.0099  even|0.2|=7.1e-15  gauge=4.3e-14
+P5 F1: c mean 8.9999999884, relative spread 3.65e-08
+  P6 F1 abelian: R(0.1)/R(0.05) = 64.216
+  P6 F1 sd: R(0.1)/R(0.05) = 64.393
+  P6 F1 asd: R(0.1)/R(0.05) = 64.459
+  P6 F1 generic: R(0.1)/R(0.05) = 64.385
+  P6 F1 generic: R(0.1)/R(0.05) = 64.558
+  P6 F1 generic: R(0.1)/R(0.05) = 64.432
+P5 F2: c mean -77.9999991711, relative spread 4.71e-08
+  P6 F2 abelian: R(0.1)/R(0.05) = 64.216
+  P6 F2 sd: R(0.1)/R(0.05) = 64.359
+  P6 F2 asd: R(0.1)/R(0.05) = 64.424
+  P6 F2 generic: R(0.1)/R(0.05) = 64.309
+  P6 F2 generic: R(0.1)/R(0.05) = 63.753
+  P6 F2 generic: R(0.1)/R(0.05) = 64.383
+P5 F3: c mean -2.1185380574, relative spread 6.48e-09
+  P6 F3 abelian: R(0.1)/R(0.05) = 64.027
+  P6 F3 sd: R(0.1)/R(0.05) = 64.080
+  P6 F3 asd: R(0.1)/R(0.05) = 64.209
+  P6 F3 generic: R(0.1)/R(0.05) = 63.939
+  P6 F3 generic: R(0.1)/R(0.05) = 63.393
+  P6 F3 generic: R(0.1)/R(0.05) = 64.040
+P8 F1: c = 8.999999988422, n_B/4 = 9.0
+P9 control Ca (B_4 broken): c spread 0.804
+  P10 control Cb (iota broken) abelian: odd(0.2) = 1.036e-02, ratio 0.2/0.1 = 32.709
+  P10 control Cb (iota broken) sd: odd(0.2) = 2.565e-03, ratio 0.2/0.1 = 29.792
+  P10 control Cb (iota broken) asd: odd(0.2) = 1.375e-03, ratio 0.2/0.1 = 29.359
+  P10 control Cb (iota broken) generic: odd(0.2) = 4.217e-03, ratio 0.2/0.1 = 36.453
+  P10 control Cb (iota broken) generic: odd(0.2) = 1.264e-02, ratio 0.2/0.1 = 27.834
+  P10 control Cb (iota broken) generic: odd(0.2) = 6.500e-03, ratio 0.2/0.1 = 31.374
+P1: PASS
+P2: PASS
+P3: PASS
+P4: PASS
+P5: PASS
+P6: PASS
+P7: PASS
+P8: PASS
+P9: PASS
+P10: PASS
+c19 overall: PASS (10/10)

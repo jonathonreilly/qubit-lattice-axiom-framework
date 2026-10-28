@@ -1,0 +1,36 @@
+== A: cross-plane covariance c(r) of a block flux (unit coupling), block side 3^r, spatial torus 3 blocks ==
+A1 r=1: c=2.8414209594e-04  single-mode=2.317697e-04  c>=single: True  (0.0s)
+A1 r=2: c=2.3394670303e-04  single-mode=1.969252e-04  c>=single: True  (0.0s)
+A1 r=3: c=2.2890725455e-04  single-mode=1.933324e-04  c>=single: True  (0.0s)
+A1 r=4: c=2.2835337750e-04  single-mode=1.929365e-04  c>=single: True  (0.3s)
+A3 continuum c_inf=2.2828422731e-04 (tail bound 1.97e-52); single-mode continuum=1.928870e-04
+   r=1: (c(r)-c_inf)/c_inf = +2.4469e-01
+   r=2: (c(r)-c_inf)/c_inf = +2.4804e-02
+   r=3: (c(r)-c_inf)/c_inf = +2.7292e-03
+   r=4: (c(r)-c_inf)/c_inf = +3.0291e-04
+A2 r=1: FFT c=2.841420963550e-04  periodic transfer c=2.841420963550e-04  rel diff=7.63e-16  ||Pi_ex psi||^2=0.180592
+A2 r=2: FFT c=2.339467032020e-04  periodic transfer c=2.339467032020e-04  rel diff=3.59e-15  ||Pi_ex psi||^2=0.146336
+A: PASS
+== B1: signal-to-noise bound, scalar case ==
+B1: 1800 cases, max Var/bound = 0.999900 at ('sign', np.float64(0.01), None)
+== B2: c(X) = smallest nonzero eigenvalue of P_X d d^* P_X (periodic 4^4) ==
+B2 one plaquette: dim V_X=1 of |X|=1, c(X)=4.000000
+B2 two, shared link, same plane: dim V_X=2 of |X|=2, c(X)=3.000000
+B2 two, shared link, different planes: dim V_X=2 of |X|=2, c(X)=3.000000
+B2 2x2 planar square: dim V_X=4 of |X|=4, c(X)=2.000000
+B2 six faces of a 3-cube: dim V_X=5 of |X|=6, c(X)=4.000000
+B: PASS
+== C: Monte Carlo of the free soft chain (fine 54 x 9^3, one straight step) ==
+C closed-form inputs (r=1, N0=54): <theta psi, Pi_ex psi>=2.84142096e-04, <psi, Pi_ex psi>=1.80592080e-01
+C1: g0=1.0, sigma^2=0.05, lambda=1.6210, v=0.380592, c=2.841421e-04: MC Q=3.256207e-04 +- 1.14e-04, closed form 2.747537e-04, z=+0.45, closed/SE=2.4, Var-term check E e^(i lam Y)=0.60631 vs 0.60653  (288s)
+C2: g0=0.05, sigma^2=0.05, lambda=2.2335, v=0.200451, c=7.103552e-07: MC Q=3.404071e-05 +- 1.16e-04, closed form 1.303685e-06, z=+0.28, closed/SE=0.0, Var-term check E e^(i lam Y)=0.60659 vs 0.60653  (287s)
+C: FAIL
+== D (informational): sup_lambda Q, (F)-type mismatch vs constant couplings; m=2, kappa=20, beta=0.37, g=1 ==
+D K=5: (F)-type sup Q=1.7738e-04 (g0^2=3.2977e-01, K*supQ=0.0009);  constant couplings sup Q=2.1113e-04
+D K=10: (F)-type sup Q=1.2532e-04 (g0^2=1.9744e-01, K*supQ=0.0013);  constant couplings sup Q=2.1102e-04
+D K=30: (F)-type sup Q=5.7678e-05 (g0^2=7.5789e-02, K*supQ=0.0017);  constant couplings sup Q=2.1102e-04
+D K=100: (F)-type sup Q=1.9963e-05 (g0^2=2.4010e-02, K*supQ=0.0020);  constant couplings sup Q=2.1102e-04
+D K=1000: (F)-type sup Q=2.1222e-06 (g0^2=2.4541e-03, K*supQ=0.0021);  constant couplings sup Q=2.1102e-04
+D K=10000: (F)-type sup Q=2.1356e-07 (g0^2=2.4595e-04, K*supQ=0.0021);  constant couplings sup Q=2.1102e-04
+OVERALL: FAIL
+wall time 575.6s

@@ -1,0 +1,17 @@
+E4 C_3(n), n = 2..24: 0.3021 0.4296 0.4988 0.5418 0.5709 0.5919 0.6078 0.6201 0.6301 0.6382 0.6450 0.6507 0.6557 0.6600 0.6637 0.6670 0.6700 0.6726 0.6750 0.6771 0.6791 0.6808 0.6825
+E5 b_n/(pi/2)^4 max 0.9098; C_beta/163 max 0.4871; ||d gamma||^2/(20 eps^2) max 0.4190
+E5 ||d phi~||^2/(22||d_c m||^2) max 0.0204; sum delta^2/(216||d_c m||^2) max 0.0003
+d=4 T=2 n=3: E1 1.2e-15  E2 max ratio 0.013  E6 max ratio 0.0006  E3 rel 7.8e-16, r-m=h(A_c) 5.9e-01  (3 s, RSS 295 MB)
+d=4 T=2 n=5: E1 8.9e-14  E2 max ratio 0.006  E6 max ratio 0.0001  (5 s, RSS 350 MB)
+d=2 T=4 n=3: E1 1.0e-15  E2 max ratio 0.003  E6 max ratio 0.0002  E3 rel 1.4e-15, r-m=h(A_c) 3.2e-01  (0 s, RSS 350 MB)
+d=2 T=4 n=5: E1 1.7e-14  E2 max ratio 0.003  E6 max ratio 0.0001  E3 rel 3.4e-15, r-m=h(A_c) 9.1e-03  (0 s, RSS 350 MB)
+d=2 T=4 n=7: E1 2.4e-14  E2 max ratio 0.004  E6 max ratio 0.0001  E3 rel 7.2e-15, r-m=h(A_c) 1.0e-02  (0 s, RSS 350 MB)
+d=3 T=3 n=3: E1 3.6e-14  E2 max ratio 0.005  E6 max ratio 0.0004  E3 rel 3.9e-15, r-m=h(A_c) 9.0e-03  (1 s, RSS 350 MB)
+I1 max inf_orbit/(||dA||^2 + ||QA||^2) over the tested A in H_0: 2.7964 (proven constant 3.5e6)
+E1: PASS
+E2: PASS
+E3: FAIL
+E4: PASS
+E5: PASS
+E6: PASS
+c27: time 15 s, peak RSS 350 MB

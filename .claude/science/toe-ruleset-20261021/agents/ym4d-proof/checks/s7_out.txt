@@ -1,0 +1,74 @@
+[    0.0s, RSS    34 MB] == Part A: exact rows ==
+[    6.1s, RSS   184 MB] rows at kappa = 1 built; nnz per row in [837, 838, 839, 840, 2160]
+A1: support in 3^4 blocks True; exact symmetry True; N_0(|O~_0|) = 10462237/410670 = 25.4760196752  PASS
+A2: hyperoctahedral covariance mismatches (3 generators): O~_0 0, 1 - Pi 0  PASS
+A2n: reflection through x_0 = 0 (not the block centre): mismatches 490902  PASS
+    1 - Pi block-diagonal: True; N_0(|1 - Pi|) = 30/13 (PROOF nu_w = 30/13)
+A4 (report): q = N_0(|Pi Q^T Q Pi|) = 161215/985608 = 0.1635690863
+    common denominator D = 2838551040; coupling range D_A (midpoint l1) = 10.0; float conversion is correctly rounded
+[   19.8s, RSS   373 MB] == Part B: certificate ==
+A3: canonical column types [0, 4, 11, 16, 23, 52, 59, 167], orbit sizes [64, 96, 32, 48, 48, 8, 24, 4] (sum 324)  PASS
+[   94.4s, RSS   757 MB] torus inverse columns [0, 4] done (solve residual at sampled k 9.7e-15)
+[  106.6s, RSS   757 MB]   column 0: |Stab| = 6, zeroed 0; K type-sum max 0.3871, E type-sum max 2.359e-03 (total 2.422e-01); exact spot check True (worst ratio 3.25e-04)
+[  113.2s, RSS   757 MB]   column 4: |Stab| = 4, zeroed 0; K type-sum max 0.3682, E type-sum max 2.299e-03 (total 2.300e-01); exact spot check True (worst ratio 1.49e-04)
+[  180.5s, RSS   757 MB] torus inverse columns [11, 16] done (solve residual at sampled k 1.7e-14)
+[  186.6s, RSS   810 MB]   column 11: |Stab| = 6, zeroed 0; K type-sum max 1.0205, E type-sum max 3.334e-03 (total 3.405e-01); exact spot check True (worst ratio 2.62e-04)
+[  193.0s, RSS   810 MB]   column 16: |Stab| = 8, zeroed 0; K type-sum max 0.3350, E type-sum max 2.222e-03 (total 2.188e-01); exact spot check True (worst ratio 1.64e-04)
+[  260.8s, RSS   810 MB] torus inverse columns [23, 52] done (solve residual at sampled k 5.1e-15)
+[  266.8s, RSS   816 MB]   column 23: |Stab| = 4, zeroed 0; K type-sum max 0.9772, E type-sum max 3.273e-03 (total 3.360e-01); exact spot check True (worst ratio 3.77e-04)
+[  275.5s, RSS   816 MB]   column 52: |Stab| = 48, zeroed 0; K type-sum max 0.4224, E type-sum max 2.190e-03 (total 2.596e-01); exact spot check True (worst ratio 1.69e-04)
+[  342.5s, RSS   816 MB] torus inverse columns [59, 167] done (solve residual at sampled k 1.2e-14)
+[  348.7s, RSS   867 MB]   column 59: |Stab| = 8, zeroed 0; K type-sum max 0.9273, E type-sum max 3.189e-03 (total 3.287e-01); exact spot check True (worst ratio 3.41e-04)
+[  357.3s, RSS   867 MB]   column 167: |Stab| = 48, zeroed 0; K type-sum max 0.8432, E type-sum max 3.019e-03 (total 3.093e-01); exact spot check True (worst ratio 2.16e-03)
+B1: max |K~ - torus column| on the support = 2.03e-16  PASS; sign-forced zeros 0; torus solve residual 1.7e-14
+B2: certified (midpoint metric)  m      k_m          k'_m         e_m
+                                0.0    132.842054   132.842054   4.381436e-01
+                                0.005  137.953040   137.953040   5.056699e-01
+                                0.01   143.331452   143.331452   5.843553e-01
+                                0.02   154.968509   154.968509   7.835355e-01
+                                0.03   167.928624   167.928624   1.056661e+00
+B2: e_0 = 4.381436e-01 < 1: PASS
+B2x: exact rational spot checks of E (top + random, every canonical column): PASS (worst |E_exact - fl E| / radius = 2.16e-03)
+B3: e_0 + delta k_0 = 4.381446e-01 < 1 (delta = gamma_0/2 = 7.9365e-09): PASS
+B4: float N_0(|G_12|) = 132.938670 <= certified k_0/(1 - e_0) = 236.434158; float lambda_min(symbol) at K = (pi,...) [((0, 0, 0, 0), 0.11111111111110786), ((6, 6, 6, 6), 0.03984916402127239)] >= certified (1 - e_0)/k_0 = 4.229507e-03: PASS
+B5n: residual column total, R = 2: 6.7416e+00 vs R = 5: 2.4224e-01: PASS
+[  357.3s, RSS   867 MB] == Part C: arithmetic ==
+C1: c_inf^# = 236.434602  (trivial background: c^nat_0 = 236.434158; PROOF's 2.0e37; float N_0(|G_12|) = 132.9387)
+    lambda_min(O~(U,V)) >= 4.229499e-03 on N(alpha_*) (real); lambda_min(O~_0) >= 4.229507e-03; measured 0.039849
+    m = 0.005: N_m^mid(|C(U,V)|) <= 279.0714; |C(b,b')| <= 280.4702 e^(-0.005 d_base(b,b'))
+    m = 0.01: N_m^mid(|C(U,V)|) <= 344.8425; |C(b,b')| <= 348.3082 e^(-0.01 d_base(b,b'))
+    m = 0.02: N_m^mid(|C(U,V)|) <= 715.9133; |C(b,b')| <= 730.3757 e^(-0.02 d_base(b,b'))
+    kappa-window (CI-0/CI-bg with half the margin): |kappa - 1| <= 1.2929e-02
+    pre-registered target c_inf^# <= 1e3: MET
+C2: CHEB-f: a = 4.229499e-03, b = 25.476020, theta = ln rho_0 = 2.577109e-02/block; rho = rho_0^(1/2), mu = ln(rho)/24 = 5.368976e-04/fine unit
+    N_mu(|O~^(1/2)|) <= 5.7181e+16 (summed to D = 11673 + geometric tail); N_mu(|O~^(-1/2)|) <= 2.0114e+17
+C3: C_bg = 1.639525e+05 (PROOF constants: 1.39e40)
+    eps_br entries: eps_*/(1 + 36 p_L c) = 1.816e-29/C_Delta (PROOF eps_*); 1/(24 c^2 C_flat) = 7.454e-07/C_flat; r_flat/(24 c) = 1.762e-04 r_flat; r_flat/144; 1/(1728 c K_FP) = 4.757e-09
+    (TH-ch'') at tau^A: eps_1 <= min{ 1.269e-39 [(TH-ch') entries], 1.037e-29/C_Delta, 4.257e-07/C_flat, 1.006e-04 r_flat, 3.966e-03 r_flat, 2.717e-09 }
+    (TH-ch'') at tau^#: eps_1 <= min{ 3.879e-23 [(TH-ch') entries], 1.037e-29/C_Delta, 4.257e-07/C_flat, 1.006e-04 r_flat, 3.966e-03 r_flat, 2.717e-09 }
+C4: control (gamma_0): m = 9.6607e-11, R_* = 1.7227e+12, T_0 = 6.8907e+12, eps_* = 1.7451e-24/C_Delta (PROOF: 9.66e-11, 1.7e12, 6.9e12, 1.7e-24)
+    with certified lambda_min(O~_0) = 4.229507e-03: m = 2.5715e-05, R_* = 3.2331e+06, T_0 = 1.2932e+07, eps_* = 2.4764e-13/C_Delta  (proposed; gain x1.419e+11)
+    eps_br's first entry with it: 2.645e-18/C_Delta; (TH-ch'') eps_1 entry 1.510e-18/C_Delta
+C5: control (session-5 inputs): g_DX'^2 C_Omega N'^2 f^8 ~ 1.493e-237 (SF: 1.49e-237), R_sh = 1.610e+12
+    tau^A column, N_r = 1: (i) old gap and rate: 7.314e-180/C_Omega; (ii) certified ||C|| <= 1/lambda: 4.687e-173/C_Omega; (iii) + CHEB-f rate mu and its N_mu(|O~^(1/2)|): 2.456e-152/C_Omega (R_sh = 1.568e+05, m_sh = 1.195e+20, |Omega_B| = 3.872e+22)
+C6: 1/(24 c^2) = 1.0417e-76; /(1.011 sqrt 3) = 5.9486e-77; n_* = 2.699e+154/1.802e+154; n_# joint 3.53e+163-2.83e+167; RS inf-inf; a_bad 1.84e-159; levels 80.9
+    at c_inf^# (C_flat = C_Delta = 1, r_flat = 1/220, proposed eps_*): eps_1 = 1.269e-39; n_* = 5.934e+79; levels 41.8; a_bad 8.35e-85
+R1: wall 357.8 s, peak RSS 867 MB: PASS
+A1 PASS
+A2 PASS
+A2n PASS
+A3 PASS
+B1 PASS
+B2 PASS
+B2x PASS
+B3 PASS
+B4 PASS
+B5n PASS
+C1 PASS
+C2 PASS
+C3 PASS
+C4 PASS
+C5 PASS
+C6 PASS
+R1 PASS
+OVERALL PASS 17/17

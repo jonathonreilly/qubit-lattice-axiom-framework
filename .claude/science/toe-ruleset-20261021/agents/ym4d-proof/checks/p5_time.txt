@@ -1,0 +1,13 @@
+p5 run record (lane E, session 5). Times UTC (local EDT + 4 h), from `date -u` / `stat`.
+- checks/p5_criteria.md written by 11:30:24 UTC (file mtime; local 07:30:24 EDT; its header says "≈11:33 UTC", an estimate written before the clock was read: disclosed, header not edited; md5 755218e7…), after PLD.md §17.0 (11:22:35) and the [RPLD4-fix] edits
+  (11:23-11:24), before any written session-5 derivation and before checks/p5_pld.py.
+- checks/p5_pld.py written after the criteria (final mtime 11:32:11 UTC); one pre-run edit (dead code removed from plaq_matrix, no logic change).
+- Numeric lock: `until mkdir .../locks/numeric` loop started 11:32:22, acquired 11:32:22 (no wait); one run 11:32:22-11:32:27
+  (4.1 s wall, 257 MB max RSS); released by one rmdir at 11:32:27; no trap, no pkill, no process left. Load at start
+  3.40/3.58/3.36; 36% memory free. nice 10; OMP/OPENBLAS/MKL/VECLIB threads 1; PYTHONDONTWRITEBYTECODE=1; python3 without -I;
+  no timeout. Exit 0. Output: p5_out.txt (stderr, the /usr/bin/time block, in p5_err.txt).
+- SUMMARY: ALL PASS. B6 decision rule (pre-registered): R_inf(U4) = 6.716049 (= 544/81 to the printed digits) ≥ 0.746:
+  "NP-F5 MET (linear order)" in the sup-curvature form. Not edited after the run: criteria, script.
+- Reading notes (written after the run): R_inf(one corner block) = 2.037037 (= 55/27 to the printed digits); R_2 = 0.151173
+  (one block), 0.281095 (four blocks); max|W_e| on int x = 0.024691 (= 2/81); F_* = 0.412894. The LP values are numerical
+  (primal = dual to 1e-7), not exact rationals; the rational identifications above are by limit_denominator and are not used.

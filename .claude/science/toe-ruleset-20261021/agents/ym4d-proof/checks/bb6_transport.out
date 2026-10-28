@@ -1,0 +1,16 @@
+Part A: d = 4, L = 3, k = 2, T = 2; unknowns x0: 419904, x1: 5184; nnz Q0 = 1251936, D2_0 = 2519424; build 0.1 s
+A0 root covariance max|Q d lam - d ev lam|/max|lam| = 1.49e-15: PASS
+A1 CG: info 0, iterations 172, 0.9 s, relative residual 8.70e-14: PASS
+A2 co-closedness max|d*rho_0|/max|rho_0| = 1.62e-12, max|d*rho_1|/max|rho_1| = 1.79e-11: PASS
+A3 funnel max|Q1^T rho1 - Qstr1^T rho1|/max|rho1| = 5.97e-12: PASS
+A4 transport max|k0 r0 - [s0 + Qstr1^T rho1 - d*G1 - j1]|/max|k0 r0| = 1.15e-12: PASS
+A5 control (non-co-closed v) max|Q1^T v - Qstr1^T v|/max|v| = 8.725e-01 (must be >= 1e-3): PASS
+A6 coarse sup of Qstr1^T rho1 = 3.3557e-01 vs L^-2 max|rho1| = 3.3557e-01 (ratio 1.000): PASS
+  informational coarse sups of the r0 pieces (level-1 units): s0 1.420e+01, Qstr^T rho1 3.356e-01, d*G1 2.813e+01, j1 3.248e+01
+Part B: H_m = coarse-unit (Q_str^{(L^m)})^T rho, random level-k rho on side T = 2
+  m = 1: S_m L^(2m)/max|rho| = 1.0000 [B1 PASS]; D_m/(2 L^m S_m) = 0.9253 [B2 PASS]; P_m/(2 L^(am) D_m) = 0.7598 [B3 PASS]; L^((1-a)m) P_m/max|rho| = 2.8122; D_m L^m/max|rho| = 1.8506
+  m = 2: S_m L^(2m)/max|rho| = 1.0000 [B1 PASS]; D_m/(2 L^m S_m) = 0.9253 [B2 PASS]; P_m/(2 L^(am) D_m) = 0.6795 [B3 PASS]; L^((1-a)m) P_m/max|rho| = 2.5151; D_m L^m/max|rho| = 1.8506
+  m = 3: S_m L^(2m)/max|rho| = 1.0000 [B1 PASS]; D_m/(2 L^m S_m) = 0.9253 [B2 PASS]; P_m/(2 L^(am) D_m) = 0.6795 [B3 PASS]; L^((1-a)m) P_m/max|rho| = 2.5151; D_m L^m/max|rho| = 1.8506
+B4 [guess, informational] normalised Hoelder proxy varies by factor 1.118 (<= 3?): holds
+VERDICT: ALL PASS (A0-A6, B1-B3)
+[t = 5.4 s]

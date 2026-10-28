@@ -1,0 +1,16 @@
+s2 (lane F session 2); OMP threads: 1
+A1: PASS  max rel |sum_S F_S - Phi| = 0.00e+00  (|B| = 6, |F| = 12)
+A2: PASS  max change of F_S under re-draw off B u S = 0.00e+00
+A3: PASS  max |F_S|/(h prod e^-mu delta) = 7.602e-02  (h = 4.758e+01)
+A4: PASS  max ratio S!=0: 1.803e-02; |S|>=3: 3.030e-03
+B1: PASS  Y *-connected and contains every q(y), 200 trials
+B2: PASS  max (added tree length - sum(2n+1)) = 0.000
+B3: PASS  min (delta - M n) = 1
+C1: PASS  kappa_0 = 151.3152, kappa_c = 457.9456, kappa' = 469.0360, w_8 = 0.02724, 273 kappa' + 1296 w_8 = 128082.1
+C2: PASS  M_min = 3.1873e+13, W(M_min) = 2.7172e-02, mu M_min = 1539.48
+D1: PASS  SU(3) fraction in exp(D_3) = 0.9752  (SU(2) 1.0000)
+D2: PASS  SU(4) fraction in exp(D_4) = 0.9486  (SU(5) 0.9257, informational)
+D3: PASS  exactly one spread<2pi traceless log in every sample; reconstruction err 3.1e-15
+E1: PASS  max (||1-U'_p|| - ||1-U_p|| - 4(e^s-1)) = -1.522e-02 over 10000 samples
+E2: PASS  4(e^0.01-1) = 0.040201 vs 0.0405
+OVERALL: PASS (14/14)

@@ -1,0 +1,2 @@
+== Part A: 1D multilevel Bessel constants (largest frame eigenvalue) ==
+L=3 box  bound 14.928 | 3.7321 5.4654 6.6615 7.4934 8.0865 8.5204 8.8453 9.0939 9.2877

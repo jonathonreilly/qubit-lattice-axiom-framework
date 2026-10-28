@@ -1,0 +1,23 @@
+build L=3 n=4 Tc=4: fine side 324, 1.3 s
+  control C1: A_j (j=0..3) = [0.0629 0.1883 0.5523 1.183 ]  ratios [0.334 0.341 0.467]  -> SUMMABLE (expected SUMMABLE)
+  control C2: A_j (j=0..3) = [0.4314 0.9981 1.9717 2.9213]  ratios [0.432 0.506 0.675]  -> SUMMABLE (expected SUMMABLE)
+  control C3: A_j (j=0..3) = [3.937  4.009  3.9134 3.7613]  ratios [0.982 1.024 1.04 ]  -> NOT-SUMMABLE (expected NOT-SUMMABLE)
+model L=3 n=4 Tc=4 kappa=1.0: CG it 4161/4122, rel.res 4.1e-12/4.1e-12, tau-stability 3.8e-07, 16.3 s
+  A_j = [0.23887 0.70714 2.06327 5.69131]  ratios [0.338 0.343 0.363]  -> SUMMABLE
+  G_j = [0.765   2.0449  4.65794 9.65851]  S_j = [1.2505 1.4836 2.147  3.6275]  sup|f_0|/max|dB_n| = 1.071
+  level-0 osc share in cubes meeting a level-n centre line: 0.130 (cube fraction 0.143)
+model L=3 n=4 Tc=4 kappa=10.0: CG it 19333/16636, rel.res 6.3e-12/5.9e-12, tau-stability 1.2e-07, 73.3 s
+  A_j = [ 0.71499  2.09013  5.83553 12.7341 ]  ratios [0.342 0.358 0.458]  -> SUMMABLE
+  G_j = [ 2.27827  5.8629  12.76497 21.25193]  S_j = [3.0561 3.7405 5.459  7.5771]  sup|f_0|/max|dB_n| = 2.846
+  level-0 osc share in cubes meeting a level-n centre line: 0.120 (cube fraction 0.143)
+build L=5 n=3 Tc=2: fine side 250, 1.1 s
+  control C1: A_j (j=0..2) = [0.1221 0.6002 1.9021]  ratios [0.204 0.316]  -> SUMMABLE (expected SUMMABLE)
+  control C2: A_j (j=0..2) = [0.4903 1.6904 2.48  ]  ratios [0.29  0.682]  -> SUMMABLE (expected SUMMABLE)
+  control C3: A_j (j=0..2) = [4.5003 4.5302 4.3633]  ratios [0.993 1.038]  -> NOT-SUMMABLE (expected NOT-SUMMABLE)
+model L=5 n=3 Tc=2 kappa=1.0: CG it 4158/4220, rel.res 5.4e-12/5.5e-12, tau-stability 3.6e-07, 10.9 s
+  A_j = [0.46496 2.24038 9.61954]  ratios [0.208 0.233]  -> SUMMABLE
+  G_j = [0.97688 4.15929 9.61954]  S_j = [1.9964 2.8162 6.6007]  sup|f_0|/max|dB_n| = 2.101
+  level-0 osc share in cubes meeting a level-n centre line: 0.078 (cube fraction 0.078)
+V1 (tau-stability, CG converged): PASS
+V2 (controls classify as expected): PASS
+c20 diagnostic: VALID; model classifications above are the finding

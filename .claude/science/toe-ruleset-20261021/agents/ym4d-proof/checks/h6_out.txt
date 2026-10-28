@@ -1,0 +1,59 @@
+A/B setup d=4 k=2 shapes [(18, 18, 9, 9), (6, 6, 3, 3), (2, 2, 1, 1)]  (0.6 s)
+smooth seed 1: D(t)= 3.65e-03 8.96e-03 2.46e-02 7.52e-02 2.38e-01 slope 1.58
+smooth seed 2: D(t)= 2.16e-01 4.00e-01 6.67e-01 8.15e-01 1.83e-01 slope -0.31
+smooth seed 3: D(t)= 1.93e-02 3.82e-02 7.45e-02 1.39e-01 2.20e-01 slope 0.85
+noise  seed 4: D(t)= 7.40e-04 1.49e-03 2.99e-03 6.07e-03 1.25e-02 slope 1.02
+noise  seed 5: D(t)= 1.43e-04 3.36e-04 8.69e-04 2.53e-03 8.16e-03 slope 1.54
+noise  seed 6: D(t)= 9.11e-05 1.77e-04 3.35e-04 5.92e-04 8.65e-04 slope 0.77
+res    seed 7: D(t)= 1.42e-03 2.83e-03 5.63e-03 1.11e-02 2.18e-02 slope 0.98
+res    seed 8: D(t)= 1.48e-03 2.97e-03 5.97e-03 1.21e-02 2.46e-02 slope 1.02
+res    seed 9: D(t)= 8.98e-04 1.80e-03 3.60e-03 7.22e-03 1.46e-02 slope 1.01
+coh    seed 0: D(t)= 1.30e-07 5.21e-07 2.08e-06 8.33e-06 3.33e-05 slope 2.00
+t=0.01 rows: fam seed | R_NA R_lin | eps | max|log U_i^g|/eps (i=0,1,2) | max|a0|-max|a1|/L | gauge-inv err | holV err
+  smooth 1: 0.0132 0.0136 | 3.600e-02 | 0.831 2.163 2.318 | +0.110eps | 7.3e-15 | 3.3e-16
+  smooth 2: 0.0002 0.0007 | 3.139e-02 | 0.840 2.310 3.419 | +0.070eps | 8.9e-15 | 3.3e-16
+  smooth 3: 0.0504 0.0469 | 5.951e-02 | 0.646 1.797 1.796 | +0.047eps | 6.3e-15 | 3.3e-16
+  noise  4: 0.0000 0.0000 | 5.250e-02 | 1.388 1.355 0.311 | +0.936eps | 7.4e-15 | 3.3e-16
+  noise  5: 0.0000 0.0000 | 4.888e-02 | 1.464 1.139 0.644 | +1.084eps | 8.2e-15 | 3.3e-16
+  noise  6: 0.0000 0.0000 | 5.471e-02 | 1.369 1.301 0.567 | +0.935eps | 9.2e-15 | 3.3e-16
+  res    7: 0.0346 0.0344 | 4.064e-02 | 0.667 1.423 0.888 | +0.193eps | 5.1e-15 | 3.3e-16
+  res    8: 0.0100 0.0101 | 4.130e-02 | 0.543 1.284 0.665 | +0.115eps | 4.0e-15 | 3.3e-16
+  res    9: 0.0213 0.0214 | 4.009e-02 | 0.588 1.763 0.726 | -0.000eps | 4.0e-15 | 3.3e-16
+  coh    0: 16.0000 16.0000 | 5.000e-03 | 0.000 0.000 1.000 | +0.000eps | 0.0e+00 | 0.0e+00
+A4 (info) smooth: max R_NA 0.0573  max R_lin 0.0469
+A4 (info) noise: max R_NA 0.0000  max R_lin 0.0000
+A4 (info) res: max R_NA 0.0352  max R_lin 0.0344
+A4 (info) coh: max R_NA 16.0005  max R_lin 16.0000
+PASS A1 R_NA <= N*C_loc = 80 (all samples, all t)
+FAIL A2 |R_NA/R_lin - 1| <= 0.05 at t = 0.0025
+FAIL A3 deviation slope in [0.7, 2.3] (or below floor)
+PASS B1 MSG gauge leaves every s and phi invariant (<= 1e-11)
+PASS B2 hol_V(S_c) = exp(a_c) and |Ia| <= max|a|/L
+PASS B3 C_meas <= 450 | max C_meas = 3.534
+A/B done (148.9 s)
+C table: k | fam seed | C_meas | C_ax(level-0 axial) | eps
+  k=1 noise  11: 1.508 | 1.508 | 3.108e-02
+  k=1 noise  12: 1.357 | 1.357 | 2.378e-02
+  k=1 smooth 13: 3.679 | 2.820 | 5.487e-02
+  k=1 smooth 14: 8.034 | 4.304 | 3.235e-02
+  k=2 noise  11: 1.005 | 1.918 | 4.605e-02
+  k=2 noise  12: 1.392 | 2.077 | 4.510e-02
+  k=2 smooth 13: 4.740 | 1.132 | 5.494e-02
+  k=2 smooth 14: 8.432 | 1.569 | 3.201e-02
+  k=3 noise  11: 1.512 | 4.010 | 4.836e-02
+  k=3 noise  12: 1.295 | 3.359 | 5.452e-02
+  k=3 smooth 13: 5.116 | 0.396 | 5.503e-02
+  k=3 smooth 14: 8.598 | 0.538 | 3.180e-02
+  k=4 noise  11: 1.694 | 5.540 | 5.778e-02
+  k=4 noise  12: 1.795 | 6.087 | 5.503e-02
+  k=4 smooth 13: 5.243 | 0.134 | 5.505e-02
+  k=4 smooth 14: 8.646 | 0.181 | 3.176e-02
+  k=5 noise  11: 1.642 | 9.026 | 7.095e-02
+  k=5 noise  12: 1.511 | 10.179 | 7.063e-02
+  k=5 smooth 13: 5.285 | 0.045 | 5.505e-02
+  k=5 smooth 14: 8.655 | 0.060 | 3.177e-02
+PASS C1 C_meas(k) <= 450, k = 1..5
+PASS C2 depth-uniformity max C(5) <= 1.5 max C(2) + 0.5 | max C(5) = 8.655, max C(2) = 8.432
+PASS C3 contrast C_ax(5)/C_meas(5) >= 2 (noise) | 5.50 6.74
+runtime 153.3 s
+TOTAL: PASS=7 FAIL=2  OVERALL FAIL

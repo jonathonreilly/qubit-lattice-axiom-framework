@@ -1,0 +1,7 @@
+K1: n=240 max=8.882e-16 threshold=1e-12 PASS
+K2: n=160 max=3.048e-08 threshold=1e-07 PASS
+K3: n=80 max=1.894e-08 threshold=1e-08 FAIL
+K4: n=240 max=5.953e-09 threshold=1e-07 PASS
+K5: n=240 max=3.701e-11 threshold=1e-08 PASS
+K6: n=12 max=1.667e-05 threshold=5e-02 PASS
+OVERALL: FAIL

@@ -1,0 +1,11 @@
+C N=2 eps1=0.25: beta'=0.3715 a''=0.00703 n_*=1531
+C N=2 eps1=0.5: beta'=0.3715 a''=0.02813 n_*=382
+C N=2 eps1=1.0: beta'=0.3715 a''=0.11250 n_*=95
+C N=2 eps1=2.0: beta'=0.3715 a''=0.45000 n_*=23
+C N=3 eps1=0.25: beta'=0.8359 a''=0.00469 n_*=1020
+C N=3 eps1=0.5: beta'=0.8359 a''=0.01875 n_*=255
+C N=3 eps1=1.0: beta'=0.8359 a''=0.07500 n_*=63
+C N=3 eps1=2.0: beta'=0.8359 a''=0.30000 n_*=15
+C RS constants (d=4, L=3, N=2, kappa=1, eps1=0.5): A_4=9.0, eta_1=2.7127e-05, plaquette exponent eta_1^2/(2N)=1.8396e-10, kernel exponent kappa eps1^2/(256N)=4.8828e-04
+C CL constants: n_l=216, n_P=1296, b_1=2496.0, eps_loc=3.5384e-03
+C1 PASS

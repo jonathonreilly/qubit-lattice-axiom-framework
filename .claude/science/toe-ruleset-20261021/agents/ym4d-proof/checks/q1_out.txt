@@ -1,0 +1,24 @@
+== Part A: 1D multilevel Bessel constants (largest frame eigenvalue) ==
+L=3 box  bound 14.928 | 3.7321 5.4654 6.6615 7.4934 8.0865 8.5204 8.8453 9.0939 9.2877
+L=3 tri  bound 21.533 | 3.6180 4.0435 4.0983 4.1046 4.1052 4.1053 4.1053 4.1053 4.1053
+L=3 edge bound  2.953 | 1.0000 1.0947 1.1287 1.1436 1.1510 1.1550 1.1572 1.1586 1.1594
+L=5 box  bound 10.472 | 3.9021 5.1603 5.8908 6.3470 6.6468
+L=5 tri  bound 16.229 | 3.8794 4.0059 4.0107 4.0109 4.0109
+L=5 edge bound  4.982 | 1.0000 1.1085 1.1332 1.1419 1.1456
+A1 (all <= proven bounds): PASS;  A2 (lam(9) <= 1.05 lam(6), L=3): FAIL
+== Part B: 4D cone boxes (L=3) ==
+k=2 B3: const err 0.0e+00, interior P-repro err 0.0e+00, dQstr err 4.5e-16
+k=2 B-adv eigenvalues per component: 1.1706 1.1706 1.1706 1.1706 1.1706 1.1706
+k=3 B3: const err 0.0e+00, interior P-repro err 0.0e+00
+k=3 B-adv eigenvalues per component: 1.6521 1.6437 1.6437 1.6437 1.6437 1.6361
+family  seed |  R_D(k=2)  R_D(k=3) |  R_F(k=2)  R_F(k=3)
+rand      1 |    0.9954    0.9998 |    1.0000    1.0055
+rand      2 |    0.9962    0.9999 |    1.0000    1.0054
+exact     3 |    0.9994    1.0001 |    1.0000    1.0009
+exact     4 |    0.9995    1.0001 |    1.0000    1.0009
+res       5 |    1.0024    1.0149 |    1.0000    1.0117
+res       6 |    1.0026    1.0148 |    1.0000    1.0118
+smooth    0 |    0.2376    0.2849 |    1.0000    1.9285
+B2 smooth: R_F ratio 1.929 (>=1.4), R_D 0.23762 -> 0.28495
+B1: PASS  B2: PASS  B3: PASS
+OVERALL: FAIL   (wall 377.8 s, peak RSS 782 MB)

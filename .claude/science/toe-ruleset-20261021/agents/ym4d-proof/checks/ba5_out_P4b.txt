@@ -1,0 +1,7 @@
+P4/P3/P5 (Theorem Y, Lemma DUAL, CO-0R sup): k = 2
+  k=2 T=2 l=0: D 1.6143 (Dhat 0.5381), U 5.1353; DUAL rel 1.2e-13; S 0.5381; CG res 8e-13/9e-13 (115/120 it), coarse 2e-13/2e-13 (12 s, RSS 108 MB)
+  k=2 T=2 l=1: D 0.8329 (Dhat 0.4164), U 2.3354; DUAL rel 1.1e-11; S 0.5704; CG res 8e-13/9e-13 (115/120 it), coarse 5e-15/4e-15 (18 s, RSS 108 MB)
+  k=2 T=3 l=0: D 1.7129 (Dhat 0.5710), U 5.8113; DUAL rel 1.2e-12; S 0.5710; CG res 9e-13/8e-13 (145/152 it), coarse 9e-13/9e-13 (48 s, RSS 276 MB)
+  k=2 T=3 l=1: D 1.0125 (Dhat 0.5062), U 3.0792; DUAL rel 6.5e-12; S 0.6212; CG res 9e-13/8e-13 (145/154 it), coarse 3e-15/2e-15 (61 s, RSS 276 MB)
+  k=2 T=4 l=0: D 1.7784 (Dhat 0.5928), U 6.1747; DUAL rel 1.4e-11; S 0.5928; CG res 9e-13/1e-12 (189/202 it), coarse 3e-13/9e-13 (154 s, RSS 802 MB)
+  k=2 T=4 l=1: D 1.1291 (Dhat 0.5645), U 3.5379; DUAL rel 2.3e-12; S 0.6911; CG res 9e-13/1e-12 (189/203 it), coarse 2e-15/3e-15 (198 s, RSS 802 MB)

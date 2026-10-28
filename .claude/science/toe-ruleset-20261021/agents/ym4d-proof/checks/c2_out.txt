@@ -1,0 +1,6 @@
+PASS A1 (1/2)a2_vec - a2_gh = (11/12) C_A F^aF^a and C_A = N for SU(2), SU(3), SU(4) | SU(2): C_A 2.000000, ((1/2)a2v - a2gh)/(C_A F^2) = 0.916666666667; SU(3): C_A 3.000000, ((1/2)a2v - a2gh)/(C_A F^2) = 0.916666666667; SU(4): C_A 4.000000, ((1/2)a2v - a2gh)/(C_A F^2) = 0.916666666667
+PASS A2 b0 = 4 c C_A/(16 pi^2) with the measured c equals 11N/(48 pi^2) (derivation PROOF.md L4b) | b0(SU2,SU3,SU4) = 0.04643888, 0.06965831, 0.09287775
+PASS B1 lattice E^2 log coefficient: slope of int (w+m^2)^-2 vs ln(1/m^2) -> 1/(16 pi^2) | slopes/target 1.0056, 1.0031, 1.0017
+PASS B2 lattice Om^2 log coefficient: slope of [ln det_B - ln det_0]/(Vol B^2) vs ln(1/m^2) -> 1/(96 pi^2) within 10% (L=64 torus, 1-2 flux quanta; finite-size limited, FINITE DIAGNOSTIC) | B = 0.00153, 0.00307; slopes/target 0.9367, 0.9784, 1.0951; trace check True
+runtime 30 s
+TOTAL: PASS=4 FAIL=0

@@ -1,0 +1,6 @@
+  E1a step 0->1: max|Qv - (Q_str v - d h v)| / max|Qv| = 2.64e-15
+  E1a step 1->2: max|Qv - (Q_str v - d h v)| / max|Qv| = 2.05e-15
+  E1b push-down (l = 2): |lhs - rhs|/|lhs| = 5.59e-16
+  E1b top identity: |lhs - rhs|/|lhs| = 4.63e-15
+  E1c RF l = 1: max|sp_l - RF| / max|sp_l| = 1.98e-15 (0 s, RSS 102 MB)
+  E1c RF l = 2: max|sp_l - RF| / max|sp_l| = 3.57e-15 (0 s, RSS 102 MB)

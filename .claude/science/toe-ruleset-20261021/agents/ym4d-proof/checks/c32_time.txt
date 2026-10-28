@@ -1,0 +1,11 @@
+# c32 run record (session 17, 2026-10-27)
+- Order: RLARGE.md §0-§8 written; then c32_criteria.md; then c32_rlarge.py; then the runs. No criterion edited, no
+  pre-run code edit after the criteria other than writing the script; each part run once.
+- Run WITHOUT -I (numpy lives in user site-packages, as for c29-c31); the script reads no downloaded files.
+  PYTHONDONTWRITEBYTECODE=1, nice 10, OPENBLAS/OMP/MKL/vecLib threads 1, one job at a time, no `timeout`.
+- 17:17 local. Load (1-min) before the runs 2.47, 2.27, 1.83, 1.84 (D, C, B, A); free memory 39% (before D), 36% (before A).
+- D: 0.27 s, peak RSS 36 MB, PASS. C: 0.05 s, 29 MB, C1 PASS (informational table). B: 1.45 s, 41 MB, PASS.
+  A: 3.74 s, 40 MB, PASS.
+- Scope: Part A is d = 4, L = 3, SU(2) only, on one coarse plaquette in the (0,1) plane; sharpness (A5) and the pairing
+  control (A6) use abelian embedded fields. Part B3 is d = 1 (the d = 4 combinatorics are B1-B2). Part C uses the one-loop
+  rate [inference].

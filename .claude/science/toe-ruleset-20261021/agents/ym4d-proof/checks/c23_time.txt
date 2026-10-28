@@ -1,0 +1,5 @@
+c23 (criteria checks/c23_criteria.md written before the script), 2026-10-27, nice 10, BLAS/OMP/MKL/vecLib threads 1, one job at a time.
+Pre-run smoke test (disclosed): before Part A, the geometry pieces were exercised once at a tiny size (d = 2, T = 3, k = 1): one LSMR solve (E <= E_W held), Q(constant) = L x constant, root covariance Q d lambda = d ev lambda to 4e-16. No code was edited after it; no full run preceded the reported runs.
+Part A: first run = reported run. 65.7 s wall, peak RSS 469 MB, load 1.88 before start, 37% free memory. Output checks/c23_outA.txt.
+Part B: first run = reported run. 256 s wall, peak RSS 473 MB, load 1.98 before start, 39% free memory. Output checks/c23_outB.txt.
+Part A criterion Q3 FAILED as pre-registered; the criterion is not edited (see PROOF L5 [S11] for the reading).

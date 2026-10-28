@@ -1,0 +1,5 @@
+c_D(L=3): float 0.08521754; exact Cholesky certifies Lap > 2663/31250 = 0.085216: True
+s_M(1) = 0.110423; K_FP (with s_M >= s_M(1)/2) = 514.475
+product rule: 8coth^4(a/2)/(g'(1-eR)) = 2.29e+82; 81 sqrt(3 n_Omega)/(g'(1-eR)) = 1.33e+53; c_inf = 1.33e+53; K_1 = 1 + 36 p_L c_inf = 5.27e+55; gap old 7.00e-82, RW-l2 6.61e-10; 1/(24 c_inf^2) = 2.35e-108
+N5-w0: 8coth^4(a/2)/(g'(1-eR)) = 3.95e+51; 81 sqrt(3 n_Omega)/(g'(1-eR)) = 1.96e+37; c_inf = 1.96e+37; K_1 = 1 + 36 p_L c_inf = 7.77e+39; gap old 4.05e-51, RW-l2 6.61e-10; 1/(24 c_inf^2) = 1.08e-76
+gamma_1/gamma_0 = 2c_E = 0.00814; gamma_0 = 1.5873e-08, gamma_1 = 1.2917e-10 (x2 sharpened: 3.1746e-08, 2.5835e-10)

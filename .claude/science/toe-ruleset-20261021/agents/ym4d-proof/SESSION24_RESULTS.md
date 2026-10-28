@@ -542,3 +542,112 @@ as REVIEW_HW_S5's narrowing (LI-pw is pointwise, (E2^𝔉) is an expectation). E
 **Scoring T51-D:** PASS on reporting a status for both walls and on the one-lemma question (answered yes,
 with the correct "consolidation not discharge" label). NA-F1 half-refuted as above. 0 OPEN items closed —
 the worker says so plainly, which is the behaviour the anti-inflation clause asked for.
+
+## NORMS.md — the attack on the constant-compounding wall (T51-C). LANDED. 918 lines.
+## This is the session's biggest result, and it corrects the lead on two points.
+
+### Part 1: the per-level route is PROVABLY dead, by a no-go, not a gap
+
+In the field-strength norm, Z_col·Z_row² = 1266.87 is replaced by
+**A_per = 𝔠_vol·𝔠_ax²·L^{d-4}·(L²K̄) ∈ [1.08, 1.38]·𝔠** — a gain of **920-1171 per level** (check n1-E).
+**But A_per < 1 is a NO-GO, and not because of a bad norm:**
+- **Z_col = 156 is the column mass of 𝒦 = L^d·K̄ ≈ 9.7 plus (2/(d-1))K_ρ ≈ 1.5** (Proposition N1-8, an exact
+  mass-balance identity). **>>> PROOF.md's own diagnosis is WRONG:** "Z_col ≥ the L^{d-1} = 27 crossing
+  links of one coarse link times the spread" (PROOF.md l.6211-6213) misidentifies the count. The right count
+  is L^d·K̄, and **the crossing-link count vanishes once the leg is measured through d₁X.** Lead to correct
+  in the consolidation.
+- **Z_row = 2.849 → 𝔠_ax/L** (smooth value 1/L = 0.333, factor 8.55). **Z_row ≥ 1 is a slice artefact:**
+  pure-gauge coarse directions map to the concentrated lift J. **Lemma N1-2 (proved here)** licenses a
+  spread representative — E3 and TOWER-VAR (d) hold for *any* admissible gauge reparametrisation of the
+  critical family.
+- The residue is **L²K̄ ≥ 1**, with equality only in the smooth limit (K_p^♯ → 1/L² *from below*).
+  **The d = 4 cubic vertex is marginal, so A ≥ 1 in EVERY scale-covariant norm** — and the
+  weight-invariance half of that is **PROVEN** (check n1-D PASS at six (θ_w, θ_A) pairs): **any A < 1 bought
+  with non-canonical weights is cancelled exactly by the initial-condition mismatch.**
+  Pre-stated failure mode **N-F2 occurs for every per-level route.**
+
+*Lead reading: this upgrades decision D2 from a judgement to a theorem. The per-level route was labelled GAP;
+it is now a no-go. No future session should attempt to repair it in any norm.*
+
+### Part 2: the composite route — A_soft = 1/3 < 1. THE DELIVERABLE.
+
+By **TOWER-VAR (d)** the level-k third derivative is a **single pullback** by the chain-minimiser map, so
+there is **no per-level recursion and no per-level covariance — the anti-circularity constraint is satisfied
+by construction**, not by argument. Three exponents add up: (d-2)k, -k, -k → **(d-4)k = 0** for the level-0
+Wilson vertex (marginal, incurred **once**), and (n+d-1), -n, -n → **(d-1)-n** for the level-j soft vertex.
+So **A_soft = 1/L = 1/3 < 1**, and **N3(D³E_k^br(1)) ≤ 𝔚 + 13.5·𝔖 uniformly in k** (Theorem N1-15).
+The contraction comes from the residual decaying by L^{-(d-1)} per level while the curvature decays by
+L^{-2}: **margin exactly one power of L.**
+
+**(H-C)'s C_♭ clause: DISCHARGED at the trivial background, CONDITIONAL on (N-Q) and (N-loc).**
+PROVEN-HERE: Lemmas N1-1, N1-2, **N1-4 (intermediate-level curvature decay θ_w = 2 on the torus,
+reproducing SQ's REG-lin (d) constant C_0 + 4κ̂L²/(L²-1) by an independent route — an independent
+cross-lane confirmation)**, N1-5/6/7, N1-8/9, N1-13 (i).
+**Scope, stated plainly by the worker:** the *other* (H-C) clauses (𝔠_∞, A_in, A_out, c_K, 1/m₁, Z-tails)
+are untouched, and the Lipschitz-on-the-class statement that BR1 and δ_Sch actually consume needs
+**(N-bg)**, OPEN.
+
+**Pre-stated failure modes: NORM-F1 does NOT occur** (conversion cost is 2(d-1) = 6, no L^{d-1}).
+**NORM-F2 does NOT occur in §N6** — every response used is the response to level-k *data*, i.e. to d_k X,
+which is **exact, not merely closed**; the Bianchi defect, Z and its tails return only in (N-bg), which is
+where NORM-F2 must be re-examined. Same reason COMP-F1 / Π_ex does not arise. **NORM-F3 (circularity) does
+not occur, by construction.**
+
+### Part 3: >>> TWO CORRECTIONS TO THE LEAD, both recorded against me
+
+1. **My relaxation of θ_w was wrong, and backwards.** I told this worker (mid-run) that since SQ had proven
+   θ_w = 2 natively, it need not chase large θ_w and that A < 1 on any (0, θ̄] would serve. The worker's
+   answer: **A = L^{d - θ_w^r - 2θ_A} with θ_A = min(1, θ_w^c - 1), so A < 1 ⟺ θ_w^r + 2θ_A > d. This route
+   needs the MAXIMAL θ_w^c = 2 and does not get easier at small θ_w.** My guidance would have pointed it away
+   from the only working parameter choice. It ignored the relaxation and delivered (θ_w^c, θ_w^r, θ_A) =
+   (2, 3, 1).
+2. **My framing of D3 was wrong on magnitudes.** I wrote that the 1267-per-level factor "is the sole origin
+   of every astronomical smallness condition". The worker: **"only partly right — it is the origin of the
+   depth-dependence."** C_θ is dominated by 288·A_in·coth⁴(m₁/2)·ℓ_θ, with 288𝔠_∞³C_♭ ≈ 9.0e9·C_♭ some
+   **10³² below it**. So **g_K² = 4.9e-97/c₊ is UNCHANGED and g_0 still has to be lowered.** What
+   1267-per-level threatened was the *existence* of a k-independent ε_BG, not the magnitudes. Corollary
+   SF-thr-k already makes ε₁ k-independent *given* (BG-unif).
+   *Consequence for the project: the magnitude problem and the uniformity problem are DIFFERENT problems with
+   different causes. D3 conflated them. The uniformity problem is now solved at the trivial background
+   (Part 2); the magnitude problem is coth⁴(m₁/2)-dominated and untouched. The consolidation must separate
+   them.*
+
+### Part 4: BFT-1 must be stated as a PAIR of weights — a new target defect
+
+**With a single common θ_w there is NO solution in (0, 2].** A < 1 requires θ_w^r + 2θ_A > d = 4, met by
+(curvature 2, residual 3). So **BFT-1 as stated — one existential θ_w ∈ (0, 2] — cannot support this route,
+and must be restated with a weight PAIR (curvature θ_w^c = 2, residual θ_w^r = d - 1 = 3)**, merging with
+REVIEW_SQ_S2's item (2).
+*This REVIVES a form of INTEGRATION_AUDIT's A1, which I had withdrawn. Withdrawn for SQ's reason
+(SQ proved θ_w = 2 natively); reinstated for a different and stronger reason (one weight is not enough for
+anybody). Audit to be updated.*
+
+**BFT-4:** the worker's route is an **ALTERNATIVE** to BFT-4 for the C_♭ clause at third order, **avoiding
+(CovLift), (Mult-Y), (Pair-loc) and (I-id) entirely**, and a **tool** (the n = 3 instance) inside it
+otherwise. *That is a large simplification of the BFT-4 route if it holds.*
+
+### Part 5: the single remaining obstruction, and the cheap check that decides it
+
+**(N-Q): ‖Q^j‖_{∞→∞} ≤ 𝔮₀·L^j with 𝔮₀ bounded in j** — whether the S4′ funnel (axial) legs accumulate in
+the *composite* transport. **It is immediate with 𝔮₀ = 1 if Setting SC's Q is the straight average**
+(‖Q_str^j‖ = L^j exactly). **The files are ambiguous:** J-str writes Q^T = Q_str^T - h^T d*, while SQ's
+SHIFT writes "Q^m is the straight average". Crude p_L^j is insufficient and costs (11/3)² ≈ 13.4 per level.
+Three-case reading in [N1-corr 1]: **bounded 𝔮₀ → uniform; polynomial → C_♭ ≲ k²; crude → 13.4/level.**
+The bypass is the **multi-scale axial gauge** already named OPEN under (CL-1), which would also give (N-loc).
+
+**The worker names the cheapest decisive check in the project: compute max_c Σ_b |Q^j(c,b)| for j = 1, 2, 3
+at L = 3, d = 4 for Setting SC's actual Q, against 3, 9, 27 (bounded) versus 11, 121, 1331 (crude). Exact
+rational arithmetic, no lock, seconds.** *Lead: commissioned immediately as NQ_CHECK.md.*
+
+**Disclosed labelling defect (the worker's own):** check n1-C's criterion and script hard-code the residual
+exponent as 3, so their d-general formula (d-5)n+3 is wrong off d = 4; the correct exponent is (d-1)-n. The
+d = 4 verdict the criterion covers is unaffected, and §N6/§N7 use the correct form.
+
+**Spin-off, ARGUED only:** the same divergence-form cure should take CURV-F2′/F2″'s 4𝔠_∞ ≈ 1.26e3 step to
+O(1), **making all three failure modes one artefact.**
+
+**Scoring T51-C: PASS.** A stated, A derived in both routes, the θ_w-range delivered, three of four
+pre-stated failure modes correctly adjudicated as non-occurring, and the fourth (N-F2) shown to occur for
+*every* per-level route — a sharper outcome than the target asked for. The anti-inflation clause is honoured:
+0 main-path OPEN items are claimed closed, and (H-C)'s C_♭ clause is labelled CONDITIONAL on two named
+inputs, not PROVEN.

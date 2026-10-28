@@ -113,3 +113,40 @@ usable or vacuous.
 **Revised reading.** The target BFT-0..5 plus BFT-6 (= (BB-mix)) is, as far as this audit can tell, now
 sufficient for its consumers. The binding uncertainty has moved from the *adequacy of the target* to the
 *size of two constants*: C_T here, and the per-level compounding factor of decision D3.
+
+## 7. Second revision, after NORMS.md (same session)
+
+**A1 is REINSTATED, for a different and stronger reason than it was first raised.** Section 6 withdrew it
+because SQ proved theta_w = 2 natively, so SQ no longer depended on how BFT-1 quantifies theta_w. That
+withdrawal was correct as far as SQ goes. But NORMS.md Theorem N1-15 shows the defect is more basic:
+
+    A = L^(d - theta_w^r - 2*theta_A),  theta_A = min(1, theta_w^c - 1),  so  A < 1  <=>  theta_w^r + 2*theta_A > d.
+
+At d = 4 this is met by the PAIR (curvature theta_w^c = 2, residual theta_w^r = 3), and **with a single
+common theta_w there is no solution in (0, 2] at all.** BFT-1 as stated carries one existential
+theta_w in (0, 2]. **So BFT-1 cannot support the composite route as written, for anybody -- not only for SQ --
+and must be restated with a weight pair.** This merges with REVIEW_SQ_S2's item (2).
+
+**Recommendation (A1'):** restate BFT-1 with two weights, curvature theta_w^c = 2 and residual
+theta_w^r = d - 1, and record per consumer which it needs. This costs nothing to state and it is the
+statement the only working route actually needs. Note that it is also the MAXIMAL curvature weight: NORMS.md
+records explicitly that this route "needs the maximal theta_w^c = 2 and does not get easier at small
+theta_w", so a weaker BFT-1 is not a safer BFT-1 here.
+
+**A5 ((CONST-T)) stands and is under way.** A4 ((BB-mix), proposed as BFT-6) stands.
+
+**A6 (new): PROOF.md's own diagnosis of Z_col is wrong.** PROOF.md l.6211-6213 attributes Z_col = 156 to
+"the L^(d-1) = 27 crossing links of one coarse link times the spread". NORMS.md Proposition N1-8 proves by
+an exact mass-balance identity that it is the column mass of the curvature kernel, L^d * Kbar ~ 9.7 plus
+(2/(d-1)) * K_rho ~ 1.5, and that **the crossing-link count vanishes once the leg is measured through d_1 X**.
+Lead to correct in the consolidation. This matters beyond bookkeeping: the wrong diagnosis is what made the
+per-level route look like a norm problem, when NORMS.md shows it is a marginality no-go that no
+scale-covariant norm can fix.
+
+**Revised reading, superseding Sections 4-6.** The target's shortfall is now: A1' (BFT-1 as a weight pair),
+A4 ((BB-mix) / BFT-6). The binding uncertainties are two constants, (CONST-T) and the composite route's
+(N-Q), both under way. **And one conceptual correction the lead must carry: the MAGNITUDE problem and the
+UNIFORMITY problem are different problems with different causes.** Decision D3 conflated them. The
+uniformity problem is solved at the trivial background by Theorem N1-15, conditional on (N-Q) and (N-loc);
+the magnitude problem is dominated by 288*A_in*coth^4(m_1/2)*ell_theta, is some 10^32 above the C_flat term,
+and is untouched by anything in this session.

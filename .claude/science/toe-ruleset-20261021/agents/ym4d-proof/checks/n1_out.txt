@@ -1,0 +1,46 @@
+n1-A  e_per(d=4, 2, 1) = 2   (expected d-2 = 2)
+n1-A  marginal exponent d-4 at d=3 : -1
+n1-A  marginal exponent d-4 at d=4 : 0
+n1-A  marginal exponent d-4 at d=5 : 1
+n1-A  PASS
+n1-B  Wilson term, ordering 1 exponent/k = 0
+n1-B  Wilson term, ordering 2 exponent/k = 0
+n1-B  general d=3: (d-2)-1-1 = -1 ; (d-1)-2-1 = -1
+n1-B  general d=4: (d-2)-1-1 = 0 ; (d-1)-2-1 = 0
+n1-B  general d=5: (d-2)-1-1 = 1 ; (d-1)-2-1 = 1
+n1-B  PASS
+n1-C  n=1 : ordering1 = 2, ordering2 = 2, expected (d-5)n+3 = 2
+n1-C  n=2 : ordering1 = 1, ordering2 = 1, expected (d-5)n+3 = 1
+n1-C  n=3 : ordering1 = 0, ordering2 = 0, expected (d-5)n+3 = 0
+n1-C  n=5 : ordering1 = -2, ordering2 = -2, expected (d-5)n+3 = -2
+n1-C  per-level ratio L^(d-5) at d=4, L=3 : 1/3  (<1 required)
+n1-C  geometric sum over n>=1 : L^3 * sum L^-n = 27 * 1/2 = 27/2
+n1-C  PASS
+n1-D  tw=0 tA=0 : log_L A = 2 ; invariant total/k = 0
+n1-D  tw=0 tA=1 : log_L A = 4 ; invariant total/k = 0
+n1-D  tw=1 tA=0 : log_L A = 1 ; invariant total/k = 0
+n1-D  tw=1 tA=1 : log_L A = 3 ; invariant total/k = 0
+n1-D  tw=2 tA=0 : log_L A = 0 ; invariant total/k = 0
+n1-D  tw=2 tA=1 : log_L A = 2 ; invariant total/k = 0
+n1-D  PASS
+n1-E  (informational, no verdict)
+n1-E  Kbar=0.111111 : L^2*Kbar = 0.999999 ; L^d*Kbar = 9.0000 ; (L^2 Kbar)^3 = 1.0000
+n1-E  Kbar=0.1138 : L^2*Kbar = 1.024200 ; L^d*Kbar = 9.2178 ; (L^2 Kbar)^3 = 1.0744
+n1-E  Kbar=0.1154 : L^2*Kbar = 1.038600 ; L^d*Kbar = 9.3474 ; (L^2 Kbar)^3 = 1.1203
+n1-E  Kbar=0.1202 : L^2*Kbar = 1.081800 ; L^d*Kbar = 9.7362 ; (L^2 Kbar)^3 = 1.2660
+n1-E  Kbar=0.1236 : L^2*Kbar = 1.112400 ; L^d*Kbar = 10.0116 ; (L^2 Kbar)^3 = 1.3765
+n1-E  Z_col*Z_row^2 = 1266.8703 ; (1+Z_col)(1+Z_row)^2 = 2327.1089
+n1-E  gain old/new at Kbar=0.1202 (a=3) : 1000.7
+n1-E  gain old/new at Kbar=0.1202 (a=1) : 1171.1
+n1-E  gain old/new at Kbar=0.1236 (a=3) : 920.3
+n1-E  gain old/new at Kbar=0.1236 (a=1) : 1138.9
+n1-E  K_rho=2.074 : (2/3)K_rho = 1.3827
+n1-E  K_rho=2.219 : (2/3)K_rho = 1.4793
+n1-E  K_rho=2.614 : (2/3)K_rho = 1.7427
+n1-E  Z_row vs smooth 1/L : 2.8490 vs 0.3333  (ratio 8.55)
+n1-E  Z_col vs L^d*Kbar(0.1202) : 156.08 vs 9.74  (ratio 16.03)
+n1-E  theta_w delivered by Kbar: log_L(1/Kbar) for 0.1111/0.1202/0.1236:
+n1-E    Kbar=0.111111 -> theta_w = 2.0000
+n1-E    Kbar=0.1202 -> theta_w = 1.9284
+n1-E    Kbar=0.1236 -> theta_w = 1.9030
+SUMMARY A=PASS B=PASS C=PASS D=PASS

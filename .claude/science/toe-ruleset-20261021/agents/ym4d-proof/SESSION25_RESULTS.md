@@ -1330,3 +1330,22 @@ none applied to PROOF.md until the Codex check (CODEX_REVIEW_C2.md) reports:**
 drop (CURV-dec) from the open list; upgrade "(CO-fun) under (CC-0)" to "as stated, given COF"; correct the
 [S24] item 4 (NCE not k-uniform; bulk term ≍ n⁴‖D^⊥‖_∞ missed; (Res-Hölder) closed only relative to the top
 residual).
+
+**C3 — HW and PLD — `REVIEW55_HWPLD.md`** (claude-opus-5-5, max). 59 claims: **29 CONFIRMED, 7 NOT-VERIFIED,
+23 REFUTED**; exact / rigorous-interval checks, criteria hashed before each script.
+- **"The smallness alarm is false" CONFIRMED** (slack 55.3-57.8 decades across conventions; ×3.59e56 is one).
+  Lever (b) refuted and lever (a) beaten (×81 not ×2401): CONFIRMED.
+- **The ring is FREE** — its pairs at each level lie in the shadow; "the closed column is what the proof
+  uses" REFUTED, HW's open ring is what is needed, HW §41 item 4 stands. Every "g²_CRC at the ×82 ring" figure
+  is pessimistic (×82 in (S2)); no not-binding verdict flips. **HANDOFF cross-lane item 1 must be reversed:
+  HW was right.**
+- **A universally quantified F_< makes (E2^𝔉′), (CEM^{COL}), (ACT′), (LCR^act′), (BCH-1) FALSE as written**
+  (plus PLD Delta 3/M-7, 𝔏^buf, E2-RED, HW §37). Fix: quantify over the specific capped history spectators —
+  REVIEW_HW_S5's fix E2-2, which was reversed instead of applied.
+- **"(CEM-2) dissolved" REFUTED** (the pattern constraint is HW's n_♯-cluster constraint, not a product of
+  per-cube indicators; (EQ-bc) vacuous). Residual: **the weighted-law decoupling inside (ACT′)/(CEM^{COL})**.
+  j = k_0 reopens; level 0 needs (0a) and (0b). PLD §18.5 (b′)'s depth-free Δ_sh is false (multiplicative).
+- SYMBOLS' m_τ = 66/90/122 CONFIRMED with caveats (≥ 66; in a retired architecture); HW l.604's ×9 CONFIRMED but
+  on a non-live branch (and HW l.826 repeats it).
+**Follow-on launched on Opus 5.5 (NODEA55.md):** repair the five statements with F_< restricted, handle j = k_0
+and level 0, and attack the weighted-law decoupling.

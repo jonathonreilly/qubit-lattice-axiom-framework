@@ -21,7 +21,7 @@ Review verdicts: CONFIRMED / NOT-VERIFIED / REFUTED. Claim statuses: PROVEN / AR
 
 ### F1 — TU-0/TU-1/TU-2/TU-3 survive the isolated-fiber attack
 
-**Verdict: CONFIRMED for the analytic-family statements; claim status: PROVEN.** Attachments: `TUNIF.md:259–275` (twisted difference and TU-0), `283–290` (TU-1), `296–308` (TU-2), `317–339` (TU-3). This does not yet validate TU-4/TU-5/TU-6's consumer bridge.
+**Verdict: CONFIRMED for TU-0/TU-1/TU-2 and the intended 2π-periodic analytic-family version of TU-3; claim status: PROVEN with that explicit domain.** The literal omission of periodicity from TU-3 is addressed in F10; this qualification supersedes any broader reading of this initial finding. Attachments: `TUNIF.md:259–275` (twisted difference and TU-0), `283–290` (TU-1), `296–308` (TU-2), `317–339` (TU-3). This does not yet validate TU-4/TU-5/TU-6's consumer bridge.
 
 Independent reconstruction: along a line write `a=σg/(z−1)`. The function `a+Σ_{i<u}g(i)` has difference `g(u)` at interior sites, while its seam difference is `(z−1)a−Σ_{i<ℓ−1}g(i)=g(ℓ−1)`. The homogeneous equation forces a line-constant value with `(z−1)a=0`. Operators in distinct coordinates commute, including the seam factors.
 
@@ -61,7 +61,7 @@ The m>0 theorem would be a meaningful weaker/easier theorem if its weighted tran
 
 Write n=k−j. A single unit coarse link in orientation v has mean vector `c_k=T^{−d}e_v`; if its harmonic response is `c_j=L^{−n}c_k`, summing over the **one occupied orientation** gives exactly `T^dL^{dn} L^{−n}T^{−d}=L^{(d−1)n}`. Summing the maximum component over all d orientations yields the conservative upper bound **d L^{(d−1)n}**, not equality for this δ_x. This harmless factor-d overcount leaves the T-free conclusion intact. The harmonic response formula itself relies on Q preserving the mean sector and on orthogonality in the chain form, not just on `Q(const c)=Lc`; its full chain derivation is not supplied by the allowed sections.
 
-The subtraction of the constructed primitive's mean has a different missing factor. Line 392 assumes `|mean b|≤𝔠_0L^{−k}c_{η′}T^{−d}`. Multiplying by the number `dT^dL^{dk}` of level-0 links gives **d𝔠_0c_{η′}L^{(d−1)k}**, not the stated **dc_{η′}L^{(d−1)k}**. The lost factor is **𝔠_0**; at transported levels the direct Q estimate also brings its 𝔮_0 when applicable. Using only the stated envelope and harmonic bound, a safe level-0 estimate for `b−mean b+c_0` is **d(2𝔠_0c_{η′}+1)L^{(d−1)k}**. This is a sufficient triangle bound, not a lower bound or a claim of optimality. The file gives no inequality allowing the omitted 𝔠_0 to be replaced by 1, and M in 𝔠_0 is a free imported bound. Its displayed all-level 𝔠_L therefore is not established by this arithmetic.
+The subtraction of the constructed primitive's mean has a different missing factor. Line 392 assumes `|mean b|≤𝔠_0L^{−k}c_{η′}T^{−d}`. Multiplying by the number `dT^dL^{dk}` of level-0 links gives **d𝔠_0c_{η′}L^{(d−1)k}**, not the stated **dc_{η′}L^{(d−1)k}**. The lost factor is **𝔠_0**; at transported levels the direct Q estimate also brings its 𝔮_0 when applicable. Using only the stated envelope and harmonic bound, a safe level-0 estimate for `b−mean b+c_harm,0` is **d(2𝔠_0c_{η′}+1)L^{(d−1)k}**. This is a sufficient triangle bound, not a lower bound or a claim of optimality. The file gives no inequality allowing the omitted 𝔠_0 to be replaced by 1, and M in 𝔠_0 is a free imported bound. Its displayed all-level 𝔠_L therefore is not established by this arithmetic.
 
 Symbol check: `TUNIF.md:365` and `578` both define **𝔠_0=4(d−1)(1+κ)M**. There is no factor-two discrepancy between them. The error above is the omission of the entire 𝔠_0 in the mass calculation.
 
@@ -71,7 +71,7 @@ Symbol check: `TUNIF.md:365` and `578` both define **𝔠_0=4(d−1)(1+κ)M**. T
 
 I replaced only the spread correction with `b_1=−μ·1_{u_1=0}`, recomputed the remaining components by the same line solve, and kept the script's original seed and exact sequence of generated inputs. These are exactly the three instances judged by tu1-E:
 
-| Instance | ℓ,d | concentrated max|b| | exact max|F| | max|b|/(ℓ max|F|) | E's ≤100 gate | curl discrepancies |
+| Instance | ℓ,d | concentrated max∣b∣ | exact max∣F∣ | max∣b∣/(ℓ max∣F∣) | E's ≤100 gate | curl discrepancies |
 |---|---|---|---|---|---|---|
 | A1 | 3,4 | 72/5 | 43/2 | 48/215 | passes | 0 |
 | A5 | 9,4 | 629/15 | 28 | 629/3780 | passes | 0 |
@@ -111,3 +111,97 @@ What remains unverified in the supplied chain transfer:
 
 For consumer compatibility, `NORMS.md:423` still states two exponential estimates, including a weighted input-to-output estimate. A nonzero constant tail does not satisfy those literal estimates: the rank-one mean map P has `Pδ_x=T^{−d}`, row and column norms both 1, but `T^{−d}≤C e^{−η T/2}` fails for sufficiently large T for every fixed C,η>0. Thus (N-loc-b′) is sufficient for the **unweighted row/column budgets after they are proved**, but is not the original exponential hypothesis. NLOC §L7 identifies the potential ℓ¹ mass as the relevant missing object, which supports this restricted repair. The complete proof of Theorem N1-15 is in NORMS §N6, outside the user's allowed sections; every use of (N-loc) there cannot be certified from §N4/§N7 alone. The request to close all named (N-loc) rows is therefore premature on this review's evidence.
 
+### F7 — The claimed preregistration chronology contradicts the recorded run times
+
+**Verdict: NOT-VERIFIED** for preregistration; **CONFIRMED** for the internal timestamp contradiction. Attachments: `checks/tu1_criteria.md:3`, `checks/tu1b_criteria.md:3`, `TUNIF.md:524,668–671`.
+
+The first criterion says it was written at **21:33 UTC**, before the script existed. TUNIF's run record places tu1 at **21:31:33–21:31:35 UTC**. The replacement criterion says **21:36 UTC**, while the run record places tu1b at **21:32:18 UTC**. These cannot all be the actual event times with the claimed ordering. The existing documents do not decide whether a timestamp is wrong or the criteria were written after the runs. No accusation about intent or invented replacement time is justified; preregistration is unverified until an independent chronology is supplied.
+
+**Verdict: REFUTED** for the labels “four decades” and “six decades.” Attachments: `checks/tu1_out.txt:64`, `checks/tu1b_pole.py:3,22`, `TUNIF.md:549`. Four points from 10^-1 to 10^-4 span **3 decades**; six points from 10^-1 to 10^-6 span **5 decades**, with respectively 3 and 5 adjacent ratios. TUNIF correctly repairs the first interval count in its prose, but repeats the second error.
+
+**Verdict: REFUTED** for “fractions only” if applied to the D verdict arithmetic. Attachments: `TUNIF.md:525–526`; `checks/tu1_twisted.py:275–284`; `checks/tu1b_pole.py:17–23`. The fields and residuals use exact rationals, but both D gates convert maxima to float before computing ratios and comparing thresholds. F2's rational replay establishes the same outcomes for these instances; floating-point rounding did not cause the original FAIL. A/B/E use the exact stored rational quantities.
+
+### F8 — Drifted PROOF citations; explicit physics scope is retained
+
+**Verdict: REFUTED** for the line citations; **CONFIRMED** for the cited statements at the relocated strings. Attachments: `TUNIF.md:218–219`.
+
+- “Lemma BR1 opens ‘Let T ≥ T_0’ (PROOF l.5842)” now points to Lemma U0's exact-lift assertion. The matching BR1 statement is at **PROOF.md:5892**.
+- “C_♭ := 4S_♭n_1/r_♭ … (l.5835–5840)” now points into a coupling-window discussion and the beginning of U0. The formula and finite-variable argument are at **PROOF.md:5885–5890**.
+
+These are observed current locations found by string search, not a uniform offset assumption. The cited material at PROOF 6110–6135 really concerns level induction/background uniformity; it does not establish the new TU-6 transfer. No inference from an audit ledger was used.
+
+**Verdict: CONFIRMED** for preservation of the stated d=4, trivial-background, abelian/linearised caveats in the target's main statement and handoffs. Attachments: `TUNIF.md:104–106,165–168,433–440,562–563,641–644,676–679`; `NORMS.md:671–673`. The file explicitly declines to discharge the small-field (H-C) Hessian Lipschitz bound or (N-bg). TU-3 itself is a scalar/linear cochain theorem valid for d≥3; it does not furnish a nonlinear background theorem. The final “unconditional” sentence retains the physics scope but still overstates closure of the bridge identified in F6.
+
+The scale exponents can be checked without a ledger: at d=4, `(θ_w^c,θ_w^r,θ_A)=(2,3,1)` gives Wilson exponent `4−2−2=0` and soft exponent `4−3−2=−1`, hence A_soft=1/L. Summing the soft terms gives **L^3/(L−1)**. The number **13.5=27/2** at `TUNIF.md:397,405` is correct only for **L=3**, not for the entire odd-L≥3 range in §U1; for L=5 the same series is **125/4=31.25**. **Verdict: REFUTED** for reading 13.5 as the evaluated series for all stated L; **CONFIRMED** at the standing L=3 specialization. This is an L-quantifier repair, not evidence against k- or T-uniform convergence.
+
+### F9 — Symbol, quantifier, and unchecked-import register
+
+**Verdict: CONFIRMED** for the following distinct meanings; no comparisons between them were accepted without identifying the object.
+
+| Symbol | Source and meaning | Review consequence |
+|---|---|---|
+| κ(η,η′) | TUNIF 285: analytic division loss | Used only with its strip arguments in F1 |
+| κ=1 / κ_± | TUNIF 115–116,410: coupling parameters | Not the division loss; setting the coupling to 1 does not set κ(η,η′)=1 |
+| κ̂ C_R | TUNIF 378; NORMS 395–398: residual-transport coefficient | All-level depth/locality statement not supplied by I-A alone |
+| μ in TU-3 | TUNIF 320–321: transverse primitive of Ω, size O(ℓ²G) | Spread by 1/ℓ in the cell |
+| μ in admissibility correction | TUNIF 402–403,465: coarse scalar with d_kμ=I−R_k | Different object; F6 estimates its interpolated gradient |
+| m | TUNIF 180–187: test-norm weight | m=0 is the claimed consumer norm |
+| m_*′,η′ and c_{η′} | TUNIF 110–127,365,379: analytic/decay rates and a geometric sum | η′ stays strictly below the available strip; c_{η′} is finite independently of the test weight m=0 |
+| T | TUNIF 102–103: coarse torus side; 159: also a trilinear form name | Volume counting always uses the former |
+
+The two additional source files used beyond the named target/check artifacts and allowed NLOC/NORMS sections were **docs/ai_methodology/SCIENCE_WORKFLOW.md** (operating rules) and **PROOF.md** (string searches and bounded consumer/citation ranges only). No snapshots, audit ledgers, git metadata, or other lane sources were read. Check scripts were inspected as the expressly requested tu1/tu1b check artifacts. No full PROOF read, numerical package, background job, or write outside this deliverable was used.
+
+**NOT-VERIFIED imports and exclusions:** LINEAR_PACKAGE's claimed strip bound uniform in k and the fine offset u, its periodisation statement, the actual Setting SC residual/mean identities, NQ_CHECK's result, the full NORMS §N6 proof, and the other consumers in BFT_B/EXISTENCE were not independently established under this read scope. In particular the comparison prices and crossover in §U4.7 are not certified here: the quoted GREENT formula was not supplied, and the “located rate” is explicitly not a proven strip. The §U6 claims involving BFT_B and representative changes likewise receive no independent confirmation from this review. Named imports are premises, not evidence supplied by their PROVEN labels.
+
+### F10 — TU-3's displayed construction needs an explicit periodicity hypothesis
+
+**Verdict: REFUTED** for analyticity of the displayed construction under the literal “closed and analytic on S_η” hypotheses alone; **CONFIRMED** for the intended periodic-symbol version proved in F1. Claim status: **PROVEN after adding 2π-periodicity**, not a refutation of the Fourier-symbol application. Attachments: `TUNIF.md:283–287` explicitly assumes periodicity in TU-1, but `296–300,317–324` do not state it for F. This is a quantifier/domain omission, not a zero-divisor failure.
+
+Here is an exact bounded analytic counterexample to the formula as literally quantified. Let d≥3, choose any allowed ℓ, and put `a_1(u;p)=f(p_1)=e^{ip_1/2}`, `a_beta=0` for beta≥2, independent of all cell coordinates. Then
+
+`F_1beta=−f(p_1)ν_beta·1_{u_beta=ℓ−1}`, and `F_beta,gamma=0`.
+
+This is exact, hence closed, analytic on the entire strip, and bounded there by `e^{η/2}(1+e^η)`. Its Ω_beta is `−ℓν_beta·1_{u_beta=ℓ−1}`, so the TU-3 formulas give μ=−ℓ and b_1=1. The remaining line solve is
+
+`b_beta=(u_1+ℓ/ν_1)·(1−e^{ip_1/2})ν_beta·1_{u_beta=ℓ−1}`.
+
+At `p_1=2π`, ν_1=0 but `1−e^{ip_1/2}=2`; for any transverse ν_beta≠0 this has a genuine pole. The advertised b is therefore not analytic on S_η′ even though F meets the literal written hypotheses. At p_1=0 the ratio is removable: its limit is −1/2. What fails is extending that cancellation to the other resonances without periodicity.
+
+A coarse Fourier symbol is naturally periodic, so this example is excluded by the intended application. The repair is to state **F is 2π-periodic in the momentum coordinates**, or explicitly work on the complexified momentum torus. With that repair, the cancellation at all resonances and the one-power bound are exactly those rebuilt in F1. The report does not use this wording defect to claim that the physical T-uniformity statement is false.
+
+## Summary table
+
+| Finding | Review verdict | Claim status / consequence |
+|---|---|---|
+| F1: TU-0/TU-1/TU-2 and periodic TU-3, including resonances and spread | CONFIRMED | PROVEN for periodic analytic families; not arbitrary isolated fibers |
+| F10: TU-3 construction under analytic-only literal hypotheses | REFUTED | Add periodicity; an exact nonperiodic family produces a pole at p_1=2π |
+| F2: tu1-D “cannot pass” diagnosis | REFUTED | Original gate passes an explicit exact closed input; original seed FAIL is legitimate |
+| F2: repaired D as a simple-pole discriminator | REFUTED | Lower-bound gate also accepts a double pole; observed seed formula is a simple pole |
+| F3: m=0 matches the named N_0 consumer | CONFIRMED | Global input patterns must be controlled |
+| F3: m>0 follows from an unweighted sup bound alone | REFUTED | Weighted response transport is missing from that inference |
+| F4: constant-mode budget | REFUTED in its stated arithmetic | Actual one-orientation mass is one budget unit; subtraction loses 𝔠_0 |
+| F5: E would catch the concentrated two-power construction | REFUTED | All three concentrated mutations pass E exactly |
+| F5: C detects its advertised non-closed perturbation | CONFIRMED | Exact counts 12/10, worst 21/5 and 3, Φ=1 |
+| F6: root correction's scale/volume mechanism | CONFIRMED conditionally | Explicit repaired operator bounds A'=2A+1, B'=2B+1 |
+| F6: full TU-5/TU-6 / closure of every (N-loc) consumer | NOT-VERIFIED | CONDITIONAL; GAP in the all-level, same-representative budget and consumer audit |
+| F7: preregistration chronology | NOT-VERIFIED | Recorded times contradict the claimed order |
+| F7: decade counts / fractions-only D gates | REFUTED | 3 and 5 decades; D decisions used floats, independently reproduced exactly |
+| F8: PROOF line citations | REFUTED | BR1 relocated to 5892; C_♭ argument to 5885–5890 |
+| F8: d=4 / trivial / abelian-linearised scope | CONFIRMED | No discharge of (N-bg) or the background (H-C) clause |
+| F8: 13.5 with unrestricted odd L | REFUTED | Correct series L³/(L−1), 13.5 only at L=3 |
+
+**Disposition:** retain TU-3 with explicit momentum periodicity as an independently reconstructed analytic-cell theorem. Do not propagate “T-UNIF / N-loc closed, conditional on N-Q alone” on this review. The all-level chain estimate needs its exact residual/mean premises, corrected constants, and the consumer substitution written out for one common admissible representative. None of the findings is a counterexample to the existence of a T-uniform representative; the strongest positive claim is **NOT-VERIFIED**, not declared false.
+
+**Most dangerous unverified point:** the passage from the analytic fine curvature primitive to a single root-fixed chain representative with simultaneous row and column bounds, using the actual all-level residual and mean identities. TU-3 and the existing check suite do not certify that passage.
+
+Review completed: 2026-10-28 22:09:33 UTC.
+
+## Stdout summary
+
+```text
+VERDICTS: TU-0/1/2 and periodic TU-3 CONFIRMED; analytic-only TU-3 formula REFUTED; full TU-5/6 T-UNIF NOT-VERIFIED / CONDITIONAL (chain-transfer GAP).
+REFUTED GATES: tu1-D can pass (exact growth 1000, corrected variation 1); tu1b's lower-bound gate accepts ratio 100 from a double pole. Concentrated tu1-E ratios 48/215, 629/3780, 253/1401 all pass.
+CORRECTIONS: one-link harmonic mass d*L^((d-1)n) -> L^((d-1)n); constructed-mean budget d*c_eta*L^((d-1)k) -> d*c_0*c_eta*L^((d-1)k). Four/six sample points span 3/5 decades. The soft sum is L^3/(L-1): 13.5 at L=3, 125/4 at L=5. PROOF citations 5842 -> 5892 and 5835-5840 -> 5885-5890.
+OTHER REFUTATIONS: m>0 does not follow from unweighted sup control alone; D verdict arithmetic used floats; literal TU-3 needs periodicity (otherwise its formula has a pole at p_1=2*pi).
+MOST DANGEROUS UNVERIFIED: simultaneous row/column bounds for the same root-fixed chain after all-level residual transport and harmonic matching.
+```

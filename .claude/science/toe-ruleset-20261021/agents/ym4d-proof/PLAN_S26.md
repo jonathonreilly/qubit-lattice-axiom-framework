@@ -206,3 +206,16 @@ primary sources and the question, and asked to form a view **before** reading th
   agreement.
 The lead synthesises; where the panel disagrees, the disagreement is recorded, not resolved by the lead's
 preference.
+
+---
+
+## 8. Role split (owner, 2026-10-28): Opus 5.5 does the work, Codex reviews it
+
+Owner: *"opus 5.5 is smarter than codex. assign work accordingly (maybe review with codex, work with opus?)"*
+- **All derivation, proof attempts, route construction and synthesis: Claude Opus 5.5 at max effort.**
+- **All checking: Codex gpt-6-astra at max**, as the cross-family reviewer of each Opus result before it is
+  banked.
+- In-flight exceptions, left to finish because stopping them would waste most of their work: the Opus 5.5
+  re-review sweep (C1-C5, C7, C8), and the Codex panellists (their role in the consensus is now a second,
+  critical opinion; the Opus panellists P4/P5 are the primary analysis). The completed Codex Step-4 analysis
+  (KFACTOR55.md) is kept as a review input; Step 4 itself is re-run by Opus 5.5, independently first.

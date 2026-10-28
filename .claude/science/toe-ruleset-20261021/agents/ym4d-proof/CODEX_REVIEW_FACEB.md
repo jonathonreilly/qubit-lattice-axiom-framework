@@ -295,3 +295,51 @@ Applying W therefore gives
 
 For n_i>=9 the two transverse members of each boundary pair occupy the same averaging block and have identical longitudinal multiplicity, so every Q_(n_i)u link is zero. This proves the all-k termination under these explicit conventions. Plain Python Fraction arithmetic separately checked both binomial sums, the four-link profile and divergence, and every displayed fraction. No numerical linear solve, quadrature, or array library was used.
 
+# Summary table
+
+All lane file references above are relative to `.claude/science/toe-ruleset-20261021/agents/ym4d-proof/`. Review verdicts apply only to the exact claim in the row; they are not audit statuses.
+
+| target | review verdict | claim status after review | decisive result |
+|---|---|---|---|
+| FB-CLASS: explicit profile+co-closed witness | CONFIRMED under the explicit centered/link-base model | PROVEN for that construction | four boundary links; exact funnel -65/26244 for k>=2; nonzero oscillation on a specified nondegenerate cell |
+| FB-CLASS: equality to -0.0024768 and that witness's rounded lower certificate | REFUTED | GAP until coefficient corrected | magnitude is 65/26244; rounding overshoot is 89/2050312500 |
+| FB-CLASS: full actual-response admissibility / exact source convention match | NOT-VERIFIED | OPEN | g_0 is not automatically the named response Y_*; complete slice, profile metric and blocking constraints not inspected |
+| FB-NOEST | REFUTED as written | GAP | strict pairing inequalities, missing charge comparison, and an unverified competitor domain; no universal pointwise factor 8 |
+| FB-LOCAL: 243/260 and common normalization | CONFIRMED | PROVEN for the witness | both normalized and unnormalized ratios equal 243/260; YSUP:249 really mixes them |
+| FB-LOCAL: every fix must change h_0 | REFUTED as a general implication | GAP | actual-response restrictions/cancellations remain possible without changing h_0 |
+| FB-BOOT: no lower bound / only kernel signs missing | REFUTED | GAP | (2/3)||a+z||<=M<=2||a+z||; G>=0 alone does not control Z'' or source signs |
+| Actual (TENT-osc) / actual sharpness | NOT-VERIFIED | OPEN | no lower or upper oscillation statement for the named physical response was proved here |
+| Baseline price arithmetic | CONFIRMED | CONDITIONAL on X1/X2 and constants | D in [151.609771637,151.609771638]; k* in [160.379708394,160.379708395] |
+| Doubled-currency break-even 81.7 | REFUTED | PROVEN correction | k* in [80.939854197,80.939854198] |
+| Price as a programme-ceiling comparison without X2 | NOT-VERIFIED | GAP | mathematically evaluable numbers, no verified exchange rate |
+| `dimensionless` implies `k-free` | REFUTED | GAP | the cited exact test already changes from -80/81 to -6560/6561 |
+| A1-A6 supplied integer outcomes | CONFIRMED | PROVEN for executed checks only | reproduced the clean criteria and control counts (6,25,7) |
+| Gate certification of normalization/admissibility | REFUTED | GAP | the mutation D1->2D1 passes A1-A6, including the control |
+| Derivative/source-leg type identification | REFUTED | GAP | im(delta2) consists of link fields; D(S) is a scalar in a pulled-back im(delta1) |
+| Broad positive reframing / fatality conclusion | REFUTED as an inference | GAP | it abandons an unclosed response-specific route while retaining a universal headline |
+| Older TQ-INT/TQ-osc citations | REFUTED | GAP | correct anchors are TENTQ:263-268 and 289-292, respectively |
+| PROOF.md and other out-of-scope citations | NOT-VERIFIED | OPEN for this review | not read; no fabricated line-drift finding |
+| TENT-TV pointwise step and generic osc=max assertion | REFUTED as stated | GAP | use step L^l/n; a zero alone gives max|Phi|<=osc<=2max|Phi| |
+
+# Numerical corrections and their scope
+
+| refuted statement | correction |
+|---|---|
+| `65/26244 = 0.0024768` exactly | 65/26244 is strictly smaller by 89/2050312500; use the exact fraction or downward bound 0.0024767 |
+| doubled-currency `k* approximately 81.7` | 80.939854197 < k* < 80.939854198; approximately 80.940 |
+| at most `8` between the bound and every actual source pairing | no finite universal pointwise factor; nonzero co-exact sources can give zero pairing; a separately scoped operator-norm comparison remains unverified |
+| the bootstrap gives `nothing below` | M >= (2/3)||a+z|| >= (2/3)max(A-B,0), with A and B supremum norms |
+| TENT-TV's all-level pointwise factor `15/(8n)` | 15 L^l/(8n), optionally capped at 1; at l=k,n=9 the stated 5/24 cannot bound the endpoint difference 1 |
+| `osc=max|Phi|` from a zero alone | max|Phi|<=osc<=2max|Phi|; equality needs an additional sign/extremum condition |
+
+The checked numbers **243/260**, **93.46%**, **151.610**, **160.380**, **42.552**, and the baseline P(k) rows require no arithmetic correction. The mixed YSUP ratio **486/65** is numerically correct for mismatched normalizations and physically inappropriate as a fractional contribution; use a common normalization to obtain **243/260**.
+
+**Single most dangerous unverified item:** whether the actual named response, with its full representative/slice constraints and total forcing g^natural+Z'', has a k-uniform nonzero *coarse-cell oscillation* after the bootstrap. Neither the compact source witness, a profile upper bound, two same-sign witness terms, nor positivity of G establishes that identification. Until it is resolved, exporting the class counterexample as a refutation of actual (TENT-osc), or treating the response route as closed, is unsupported.
+
+Completion UTC: 2026-10-28 22:05:49 UTC. Only this deliverable was created/appended; no git commands, no .git access, no source edits, no external ledger reads, and no non-rational numerical job were used.
+
+# Stdout summary
+
+REFUTED: FB-BOOT's no-lower-bound/sign-only claim; FB-NOEST's universal sharpness inference; the broad reframed no-go; k-free-from-units; gate normalization certification. CONFIRMED: the explicit profile-class witness under stated conventions, 243/260, baseline price arithmetic. NOT-VERIFIED: actual-response admissibility and (TENT-osc), external source identities.
+Corrections: 0.0024768 -> exact 65/26244 (safe lower decimal 0.0024767); 81.7 -> 80.939854197...; universal factor 8 -> no finite pointwise ratio; no bootstrap lower bound -> M>=(2/3)max(A-B,0); 15/(8n) -> 15 L^l/(8n); zero-implies-osc=max -> max<=osc<=2max.
+Most dangerous unverified: the actual constrained response's coarse-cell oscillation after g^natural, Z'' and bootstrap cancellation.

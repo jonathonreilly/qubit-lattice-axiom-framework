@@ -27,7 +27,7 @@ Set every link of Z, including V, to the group identity. Then Ad_1 is the identi
 
 However, "the class considered" does not specify a complete set, normed domain, zero-mode convention, or coercivity normalization. The validity of a uniform flat composite gap is a separate question, not a consequence of the formal substitution. If the author intends a punctured background class, the theorem must say so, and extension to its closure would require continuity on fixed identified domains. No such repair is silently assumed here.
 
-The flat zero-mode check can be done without a spectral estimate. In Setting SC (`LINEAR_PACKAGE.md:85-89`), on zero top datum, zero quadratic energy forces dB_0=0 and B_{i+1}=QB_i. On a periodic flat lattice write B_0=dλ+a with a constant harmonic 1-form. Root covariance and the straight average give B_i=d(ev^{(i)}λ)+L^i a. The top equation has zero average derivative, hence a=0 and ev^{(k)}λ is constant; subtract that constant. The remaining null direction is exactly a composite gauge direction with λ zero on coarse roots. On each connected rooted box the defining minimizer in `BFT_B.md:4332` is then −λ, so Λ(B)=−λ and the condition Λ(B)=0 removes it. Thus there is no *new exact zero-mode degeneracy* at the trivial chain on this slice. This establishes finite-size nondegeneracy, **not** a lower bound uniform in k,T.
+The flat zero-mode check can be done without a spectral estimate. In Setting SC (`LINEAR_PACKAGE.md:85-89`), with κ_i>0 and zero top datum, zero quadratic energy forces dB_0=0 and B_{i+1}=QB_i. On a periodic flat lattice write B_0=dλ+a with a constant harmonic 1-form. Root covariance and the straight average give B_i=d(ev^{(i)}λ)+L^i a. The top equation has zero average derivative, hence a=0 and ev^{(k)}λ is constant; subtract that constant. The remaining null direction is exactly a composite gauge direction with λ zero on coarse roots. On each connected rooted box the defining minimizer in `BFT_B.md:4332` is then −λ, so Λ(B)=−λ and the condition Λ(B)=0 removes it. Thus there is no *new exact zero-mode degeneracy* at the trivial chain on this slice. This establishes finite-size nondegeneracy, **not** a lower bound uniform in k,T.
 
 ### F2 — (GAP-Z)|_{Z=1} is not identified with Theorem 4.2′'s M; the direct source distinguishes the objects
 
@@ -39,7 +39,7 @@ Re-derivation: for a quadratic energy F(x,b)=½⟨x,Hx⟩−⟨x,Jb⟩+q(b), the
 
 Consequently "background analogue of M" is precisely the assertion that needs proof. It cannot supply its own proof. Theorem 4.2′'s full analytic-strip certificate is not reproduced in the allowed source, so its numerical M and claimed theorem status are **NOT-VERIFIED** here; the mismatch of the stated operators is directly checkable without banking that theorem.
 
-There is also a literal M collision: `LINEAR_PACKAGE.md:219-221` gives 4.2′ **its own** M, explicitly noting reuse of 4.2's letter; `LINEAR_PACKAGE.md:237-238` fixes subsequent M to 4.2′. Neither one has been defined to equal a composite inverse norm M_Z.
+There is also a literal M collision: `LINEAR_PACKAGE.md:219-221` gives 4.2′ **its own** M, explicitly noting reuse of 4.2's letter; `LINEAR_PACKAGE.md:236-237` fixes subsequent M to 4.2′. Neither one has been defined to equal a composite inverse norm M_Z.
 
 ### F3 — Proof status is not a non-implication proof, and the §12 dilemma does not repair it
 
@@ -47,7 +47,7 @@ There is also a literal M collision: `LINEAR_PACKAGE.md:219-221` gives 4.2′ **
 
 "P has a proof" and "Q has not been attempted" are compatible with P=Q, P⇒Q, Q⇒P, or neither. They describe knowledge, not truth. If P=Q were established, a proof of P would reveal an overlooked proof of Q; it would not contradict Q's earlier workflow label. This gate cannot decide the proposed identity even if its status reports are perfectly current.
 
-The exact RTARGET/PROOF phrase "not attempted" is **NOT-VERIFIED**: those two files are outside the exhausted additional-file budget, and their numerical citations have not been silently trusted. What is directly corroborated is narrower: `LINEAR_PACKAGE.md:470-471` lists the per-level multi-level gap and full configuration response as OPEN; the scoped BFT_B search finds the same named flat-field input reported OPEN at the string "Status quoted: OPEN, lane A's U = 1 package". Neither is a certificate that the statements are mathematically independent.
+The exact RTARGET/PROOF phrase "not attempted" is **NOT-VERIFIED**: those two files are outside the exhausted additional-file budget, and their numerical citations have not been silently trusted. What is directly corroborated is narrower: `LINEAR_PACKAGE.md:470-471` lists the per-level multi-level gap and full configuration response as OPEN; `BFT_B.md:4594` quotes the same named flat-field input as "Status quoted: OPEN, lane A's U = 1 package". Neither is a certificate that the statements are mathematically independent.
 
 Horn 2 of §12 correctly anticipates that an inverse and a response can differ. Its conclusion does not follow: disproving the advertised analogy leaves open whether a precisely stated full composite inverse estimate could imply a flat field estimate after slice/norm transfers. Therefore §12's assertion that **both horns establish all of §6's verdict** is false as an argument.
 
@@ -116,7 +116,7 @@ Finally, G♯f controls divergence-form/co-closed sources in its own per-level s
 
 **Verdict: REFUTED for the displayed identity; NOT-VERIFIED for the corrected reduction.** Attachments: `NBG_A.md:275-277`, `NBG_A.md:290-291`, `NBG_A.md:360-367`.
 
-Let W(t) be the plaquette product, W(0)=exp(X), and S=W′(0)W(0)^{-1} its left-trivialized variation. The transported signed sum of link variations is S. It is **not**, in general, the derivative of Y(t)=log W(t). Differentiating exp(Y(t)) gives
+Let W(t) be the plaquette product, W(0)=exp(X), and S=W′(0)W(0)^{-1} its left-multiplicative variation. The transported signed sum of link variations is S. It is **not**, in general, the derivative of Y(t)=log W(t). Differentiating exp(Y(t)) gives
 
 `S = ∫_0^1 exp(s ad_X) Y′(0) ds`,
 
@@ -171,6 +171,14 @@ One further ambiguity matters mathematically: `BFT_B.md:4334` calls a bound "on 
 - BFT_B explicitly says its checks test no Tier-C quantity, no GAP-Z, no Combes–Thomas argument, no k-uniformity, and no d=4 arithmetic. Those tests cannot promote TRANSP's missing analytic conversion to a proved implication.
 
 No check scripts were opened: the two additional-file slots were used for SCIENCE_WORKFLOW and LINEAR_PACKAGE. No PASS from a cited script is a finding of this review. The exact symbolic calculations above are the calculations actually performed.
+
+### F12 — Nonzero curvature does not forbid translation invariance
+
+**Verdict: REFUTED for the universal sentence; the narrower obstruction to conjugating a curved connection to the flat one survives.** Attachment: `BFT_B.md:4587` ("No gauge makes a background with F_Z ≠ 0 translation invariant"), relied on in `NBG_A.md:450-452`.
+
+Take constant links Z_μ(x)=g_μ, with two small noncommuting SU(2) matrices g_1,g_2, embedded in SU(N) if needed. Their plaquette is the constant, nonidentity commutator g_1g_2g_1^{-1}g_2^{-1}. Curvature is nonzero and arbitrarily small when the g_μ approach the identity, while d_Z and the constant-background local Hessian have spatially constant coefficients. The background is already translation invariant. One can exhibit such g_μ exactly as unit quaternions a+bi and a+bj, with a=(1−t²)/(1+t²), b=2t/(1+t²), 0<t<1 rational: their products differ by 2b²k≠0.
+
+This does not transport the particular flat scalar-symbol cancellation to a curved background: the Fourier symbol now acts nontrivially on color, and the requisite inverse bounds remain unproved. Nontrivial plaquette holonomy also cannot be conjugated to the identity. The valid narrow assertion is therefore **no gauge equivalence to the flat operator by the stated construction**, not "nonzero curvature makes Fourier analysis impossible." No membership in the particular critical-tower class is asserted for this counterexample; it refutes the universal background sentence as written.
 
 ## Six ordered implications, adjudicated at consumer strength
 
@@ -228,7 +236,7 @@ Thus the convenient answer fails in the requested stronger sense: it is not true
 
 The load-bearing BFT_B references **4334, 4590, and 4596** were located by string and checked against the current text; they still match. Theorem 4.2′ still occurs at LINEAR_PACKAGE line **219**. No drift is alleged for these. The direct RTARGET and PROOF citations, including "not attempted" and the cited consumer/table locations, are **NOT-VERIFIED** under the two-additional-file limit. This report does not manufacture a drift finding from the warning that other citations have drifted.
 
-Files additionally read: `docs/ai_methodology/SCIENCE_WORKFLOW.md` (selected ranges) and `LINEAR_PACKAGE.md` (selected definitions/theorems/disclaimers). No snapshot or audit-ledger file was opened; no git command, network query, numerical library, or long-running job was used. Only this deliverable was written. Initial broad string-location searches exposed short matches outside some requested section bodies; substantive derivation used the scoped excerpts and the two additional sources. This search-scope deviation is disclosed rather than hidden.
+Files additionally read: `docs/ai_methodology/SCIENCE_WORKFLOW.md` (selected ranges) and `LINEAR_PACKAGE.md` (selected definitions/theorems/disclaimers). No snapshot or audit-ledger file was opened; no git command, network query, numerical library, or long-running job was used. Only this deliverable was written. Initial broad locator output included matches outside some requested section bodies, and one surrounding BFT_B range included an unrelated preceding check record. This scope deviation is disclosed rather than hidden; it is a procedural limitation of this review. No result from that preceding record is used in the adjudication.
 
 **Most dangerous NOT-VERIFIED step:** a uniform inverse-to-localized-response estimate on the **actual critical chain throughout the consumer's chart**, with compatible source spaces and slices. Replacing it by the proven-looking symbol M would allow the lane to erase the analytic obligation without proving it.
 
@@ -242,10 +250,11 @@ Files additionally read: `docs/ai_methodology/SCIENCE_WORKFLOW.md` (selected ran
 | Three-line status proof and §12 dilemma | **REFUTED** | Proof incompleteness cannot establish mathematical non-implication. |
 | Four independently fatal mismatches | **REFUTED** | Background specialization is valid; locality plus a gap can generate decay; slice/source transfers remain GAP. |
 | TRANSP from "exactly two" inputs | **REFUTED** as a PROVEN implication | Its proof also consumes an unproved decay conversion and reconstruction; its class is Z^{off}, not automatically the critical chart. |
-| HESS-rel | Literal formula **REFUTED**; framed version **NOT-VERIFIED** | Align gauges/slices/sources and prove ||H_0^{-1}E||<1 uniformly. |
+| HESS-rel | Literal formula **REFUTED**; framed version **NOT-VERIFIED** | Align gauges/slices/sources and prove ‖H_0^{-1}E‖<1 uniformly. |
 | Background logarithm derivative | **REFUTED** | Replace S by S−[X,S]/2+[X,[X,S]]/12+…; a bounded-factor repair is possible but unverified in the full argument. |
 | Relaxed residual threshold >1 | **REFUTED** when 7/4<c<2 | Correct strict floor: r>max(1,7−3c); at c=9/5 it is 8/5. The claimed admissible r=6/5 gives exponent +2/5. |
 | Fixed-pair exponent arithmetic | **CONFIRMED** | At (c,r,a)=(2,3,1): −4,−1,−8,−2; sums 27/8 and 531441/6560. |
+| Nonzero curvature forbids translation invariance | **REFUTED** | Constant noncommuting links give a curved translation-invariant background; the flat-symbol bound still needs a separate proof. |
 | Six failed implications | **NOT-VERIFIED** | Six unconditional project arrows remain unverified; zero model-specific non-implication certificates were established. Conditional routes are stated above. |
 | ONE / TWO / THREE independent obstructions | **NOT-VERIFIED** | Keep three named requirements; zero verified equivalence identifications. Do not convert this into a theorem of independence. |
 

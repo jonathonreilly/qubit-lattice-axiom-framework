@@ -2929,3 +2929,777 @@ decidable in this lane; not used in §18 (route (ii)'s a_A does not involve a_re
 3. **Is Proposition ONE's strength claim right?** It asserts (CEM^{COL}) ⇒ (SF-cap)^{COL} + (J-NS^cd) and no converse. Try
    the converse: does the pair, plus (CLS-min) and the kernel lemmas, give back the defect-tolerant moment? If it does, the
    consolidation is free and §18.7's "strictly stronger" disclosure should be withdrawn in PLD's favour.
+
+# Session 7 (2026-10-28, lane E)
+
+Read for this session before the pre-statement (read-only, nothing written): the session-24 DRIVE_BRIEF; HANDOFF.md
+(post-session-24 rewrite) in full; **PLD.md §18 (session 6) in full, §16.5-§16.8 and §17.2-§17.6 as pointed to from §18**;
+PLD_LOG.md's session-6 entries; **HW.md §0 (conventions), §4 (tower energies, Lemma TE, Lemma W-bad, Lemma DJ), §21-§22
+(Lemma TILT, Lemma FP, Lemma NR, Theorem LI^U-0, Corollary LI-0), §23 (Proposition LI-pw), §30.1-§30.4 (𝔉_𝔥, Theorem
+LI^U-0′, Lemma SH-att, Lemma COL, (E2^𝔉)), §34 (session-6 targets), §37 ((E2^𝔉′) restated, the level clause (0a)/(0b), the
+seven deltas, the TF-2 both-positions record, the §24.3 narrowing), §38 (the eleven errata), §40 (outcomes), §41 (FOR OTHER
+FILES)**; REVIEW_PLD_S5.md and REVIEW_HW_S5.md (both binding) in the parts §18 and §37 quote; REVIEW_PLD_S4.md's branch 1 /
+branch 2 of Part 3; SESSION24_RESULTS.md's PLD-s6 and HW-s6 entries. An unwritten exploratory pass chose the targets below;
+no session-7 text, criteria or script existed when it ran.
+
+## 19.0 PRE-STATED (session 7) — statements only (written 2026-10-28 14:03 UTC, `date -u`; THE FIRST EDIT OF THIS SESSION:
+before any session-7 derivation, before checks/p7_criteria.md, and before any session-7 check)
+
+**This section cites nothing produced in session 7.** File stat of PLD.md *before* this append: 312681 bytes, 2931 lines,
+md5 4a6a0f251567738cebf28cfdaac352ea, which is PLD_LOG's session-6 closing stat exactly. Session 7 **APPENDS ONLY**: it
+alters no line of §0-§18, and it writes nothing outside PLD.md, PLD_LOG.md and checks/p7_*.
+
+**Setting.** That of §18.0, unchanged: SU(2); bad-only, history-independent defects; (F_R) with g_K² ≤ 1/(2R);
+ε_1 ≤ min{1/(4A_d), t_pr}; a_bad = c_pr ε_1², c_pr = 1/(640·53²); max{6θ, 24θ}(1 + 2Rg_K²) < 1, and λ_f := 24θ(1 + 2Rg_K²).
+Laws: the class 𝔏^buf_k(R, 𝒜) of §18.7.0. Objects: (CEM^{COL})_k, (CEM-1)_k, (CEM-2)_k of §18.7.1-§18.7.2; HW's (E2^𝔉′) and
+its level-0 readings (0a) (Γ at level 0, Wilson window, Y = ∅) and (0b) (Γ at level 1, Y at level 0) of HW §37.
+
+**T19 (the target). (CEM-2) and (CEM-1), by the mechanism §18.7.2 (β)/(γ) and REVIEW_HW_S5 both name — the weight's
+typicality under the measure, not the buffer-good event.** Deliver, with all quantifiers:
+- **(a) (CEM-2).** Either a proof, or a reduction of it to a strictly smaller named statement, by one of the two routes the
+  brief names: (i) a large-deviation / Chebyshev split in which the non-decoupling configurations are paid for by the
+  measure, or (ii) a conditional-independence / Markov structure across the R-free ring. For whichever route is taken,
+  state exactly what is PROVEN, what the residual is, and **the price in the lane's own currency** (a per-cube constant, a
+  single constant, or an allowance), together with an explicit comparison against the 4.489·10¹⁵ that §18.7.2 (α)/(β) price
+  the EVENT route at. Any claim that the mechanism closes (CEM-2) must come with the residual named and its status.
+- **(b) (CEM-1), one part at a time**: (LCR); the main-term reduction off G_Q; u-uniformity of the activity bounds on
+  [(1 − λ_f)u, u]. For each: PROVEN, reduced (to what), or untouched (why). A proof that two of the three are the same
+  statement, or that one of them is not needed, counts as progress and is to be stated as such.
+- **(c) the restated (LCR)**, in the form (CEM-1) actually consumes, with every quantifier, replacing the form §16.7 states
+  (for which §18.8 (i) proves no certificate is possible), and with a statement of which of §18.8 (ii)'s five certificate
+  clauses the restatement keeps, drops or replaces.
+- **(d) the level-0 clause.** Decide which of HW §37's (0a) and (0b) is the weaker, and attack it: either deliver it, or
+  reduce it to a named statement whose SIZE and KIND are stated (single-level / finite-dimensional / paper-scale).
+- **(e) the single remaining obstruction to (SDP)^A**, named, with its kind and its owner.
+- **Success:** (CEM-2) PROVEN from (CLS-min) and single-level small-field inputs already named in §16-§18, with constants
+  explicit and independent of g, K, T, k, 𝔥, R and the pattern; or (CEM^{COL}) replaced by ONE statement strictly weaker
+  than it which implies it and which is not (CEM-2) renamed.
+- **Partial success:** a PROVEN reduction of (CEM-2) to a named statement that is strictly smaller than (CEM-2) (fewer
+  quantifiers, a probability rather than a moment, a first moment rather than an exponential moment, one scalar rather than
+  a product over cubes, or weight-free rather than weighted), with the reduction's price computed; or the same for (CEM-1);
+  or (0a)/(0b) reduced to a finite-dimensional statement.
+- **Valid failure outcomes:** **(NP-F10)** the Markov / conditional-independence structure across the R-free ring does not
+  exist, with the exact factor of the past law's density that breaks it; **(NP-F11)** the typicality route closes (CEM-2)
+  only at a price that is not in an admissible currency (k-, K-, T-, 𝔥- or volume-dependent), with the price computed and
+  the dependence exhibited; **(NP-F12)** the restated (LCR) is not consumable by (CEM-1) because the consumer needs a
+  quantifier the restatement drops, with the consumer's own line quoted; **(NP-F13)** (0a) and (0b) are both strictly
+  harder than the k ≥ 1 case for a named structural reason (no finer level to condition on), with the reason proven.
+- **Not success:** a constant or exponent depending on k, K, T, 𝔥 or the volume presented as uniform; a per-level or
+  per-ring recursion presented as convergent without an explicit convergence factor AND an explicit check that nothing
+  compounds; any statement quantified over ALL far weights or over a sup of weights (§18.7.2 (α), review B1); any use of
+  the slice currency s_k(𝔥); any input that is (CEM-2), (J-NS^cd) or (CEM^{COL}) renamed; claiming PROVEN for a statement
+  whose constant is c_lcr, c_cem, c_1, c_2 or any other uncertified constant; any rebuild on the PLD-desc "Reading" /
+  look-ahead architecture (REVIEW_PLD_S3 Arch-1/2/3).
+
+**T20 (status discipline).** Every item added in §19 carries exactly one of PROVEN-HERE / ARGUED / CONDITIONAL (with the
+named input) / OPEN, and every status CHANGE to a session-4, -5 or -6 item is recorded as a change with its direction in
+§19.10. Downgrades are reported in the same place as upgrades. Indicative power counting is labelled indicative and is
+never counted.
+
+**T21 (check p7; criteria file checks/p7_criteria.md written BEFORE checks/p7_*.py, containing NO constant derived in
+session 7).** Exact rational / Decimal arithmetic only (plain python, `fractions`, `decimal`, single thread, no BLAS, no
+numpy, no numeric lock per the session-24 brief's exemption): (A) the recorded identity u·ε_1² = (ε_1/g_K)² = 4.489·10¹⁵ of
+p6 A2 re-formed independently, and the margin (1 − λ_f)·u·ε_1² at λ_f = ½; (B) the equipartition value
+(dof/2)·log(1/(1 − λ_f)) at dof = 52488 and λ_f = ½ against p6 D1's recorded 18190.95, and against §18.8 (ii) (5)'s side
+condition 10⁹; (C) the one-step coupling ratio u_k/u_{k-1} ≤ (1 − Rg_k²)^{-1} ≤ 1 + 2Rg_K² under Rg_K² ≤ ½, as an exact
+rational inequality at the recorded R and g_K²; (D) the outward-ring sum Σ_{r≥1} r^{d-1}·r^{-2(d-2)} at d = 4 (the
+indicative power count of the boundary-charge regress), compared against a convergent control at d = 5. Each criterion is
+labelled PRE-REGISTERED (outcome unknown when written) or CONFIRMATORY (a check of something proven earlier in the
+session), with a negative control for (B) and (D).
+
+**T22 (requests for other owners).** Everything session 7 wants changed in HW.md, RLARGE.md, PROOF.md, NORMS.md, SQ.md or
+HANDOFF.md is written only as a request in §19.11 "FOR OTHER FILES (session 7; not edited)". No file but PLD.md, PLD_LOG.md
+and checks/p7_* is touched. **No git command is run.**
+
+# Session 7 derivations (written after §19.0, from 14:06 UTC; §19.1-§19.8 were written BEFORE checks/p7_criteria.md, which
+contains no constant derived in this session; the order is disclosed in §19.9 and in PLD_LOG)
+
+**Index convention for §19.** That of §16-§18, with the following written out once, because every statement below depends
+on exactly which variables each functional reads. Levels are HW §0's: the level-m field U_m lives on the **level-m links**,
+whose endpoints are **level-m sites**; a **level-m cube** Q is the L^d block of level-m sites (81 at d = 4, L = 3), so Q has
+**n_int = 216** interior level-m links ℓ(Q) (both endpoints at sites of Q) and 81 **level-(m−1) descendants**
+col_{m-1}(Q) (one level-(m−1) cube per level-m site of Q). region(Q) := the set of unit cells under Q. For a set 𝒳 of
+level-m cubes, ℓ(𝒳) := ∪_{Q∈𝒳}ℓ(Q), and
+  **𝔏_{m}(𝒳) := the level-m links both of whose endpoint sites lie in cubes of 𝒳**
+(so ℓ(𝒳) ⊂ 𝔏_m(𝒳), the difference being the links crossing between two cubes of 𝒳). Chain data (HW §0, quoted and used
+below, not re-derived): W = e^{-S_0(U_0)}Π_{m<K}K_m(U_{m+1}, U_m), S_0 = u_0Σ_p s(U_0(p)), K_m = Π_c k^{(m)}_c with
+k^{(m)}_c(V; M) = e^{-κu_mφ_M(V)}/∫e^{-κu_mφ_M}, u_m = 1/g_m², and the equalised chain energy
+E(chain) = Σ_p s(U_0(p)) + κΣ_mΦ_m(U_m, U_{m+1}), Φ_m(U, V) = Σ_cφ_{M̄_c(U)}(V_c).
+
+## 19.1 What each functional reads (Lemma READ), and a gap in §18.7.0's use of Lemma BUF
+
+Fix k ≥ 1, a finite set A of level-k cubes, A′ ⊂ A, and write **S := A ∖ A′**. The objects of (CEM^{COL})_k are
+  **Z := Π_{Q∈S}e^{θY^f_Q},  Y^f_Q = 24u_kF^col_Q(U_{k-1});  w := h^{R,1}_m·1{Buf^R_ρ(𝒜_m) ∩ D_m = ∅};  F.**
+
+**Lemma READ: PROVEN-HERE (elementary; it is bookkeeping, counted with Lemma DLR below).**
+- **(i) Z reads U_{k-1} on 𝔏_{k-1}(col_{k-1}(S)) and on nothing else.** By HW §4, F^col_Q(U_{k-1}) is the infimum over
+  (U_0, …, U_{k-2}) of the chain terms of levels ≤ k−1 in Q's column, whose **level-(k−1) terms are the kernel terms
+  κφ_{M̄_c(U_{k-2})}(U_{k-1,c}) of the level-(k−1) links c with both endpoints in Q's level-(k−1) descendants**, i.e.
+  c ∈ 𝔏_{k-1}(col_{k-1}(Q)); all other terms are functions of (U_0, …, U_{k-2}), over which the infimum is taken. The
+  infimum of a family of functions of U_{k-1}|_{𝔏_{k-1}(col_{k-1}Q)} is such a function.
+- **(ii) The columns of distinct level-k cubes are disjoint**, and so are the sets 𝔏_{k-1}(col_{k-1}(Q)) — because the
+  level-(k−1) cubes under distinct level-k cubes are distinct and the level-(k−1) sites are partitioned among the
+  level-(k−1) cubes. Hence Z factorises over Q ∈ S into functions of disjoint blocks of U_{k-1}.
+- **(iii) 1_{R,k-1} factorises per level-(k−1) cube**, each factor 1{ζ_x = 0} reading U_{k-1} on ℓ(x) only (bad-only
+  defects, interior plaquettes). For x ∉ col_{k-1}(S), ℓ(x) ∩ 𝔏_{k-1}(col_{k-1}(S)) = ∅.
+- **(iv) Φ_{k-1} reads no link of 𝔏_{k-1}(col_{k-1}(S)) when S ∩ 𝒰_k = ∅.** Φ_{k-1} = Π_{Q″∈𝒰_k}e^{θmin{π_{Q″},Y^f_{Q″}}}
+  reads U_{k-1} on 𝔏_{k-1}(col_{k-1}(Q″)) by (i); Q″ ∈ 𝒰_k and S ∩ 𝒰_k = ∅ give Q″ ∉ S, and (ii) gives disjointness. [This
+  is Lemma GEO (iv)'s content, rebuilt in the present notation; it uses only the clause (C_S′) of §18.2.]
+- **(v) F_< reads no link of U_{k-1} at all**, since F_< is a function of U_0, …, U_{k_0-1} with k_0 ≤ k − 1.
+- **(vi) The weight.** By HW Theorem LI^U-0′, h^{R,1}_m(U_m) is insensitive to the level-m links **all of whose endpoint
+  cubes are R-free**, and the buffer indicator reads interior plaquettes of non-R-free cubes at level-(m+1) index distance
+  ≥ 2 from 𝒜_m. So **w reads no link of 𝔏_m(𝒜_m) provided every cube of N_1(𝒜_m) is R-free** (a level-m link with an
+  endpoint site in a cube of 𝒜_m has both endpoint cubes in N_1(𝒜_m)). This is Lemma BUF of §18.4.
+
+**Finding (BUF-CC) [a gap in §18.7.0, with its repair and its price]: PROVEN-HERE.**
+§18.7.0 applies Lemma BUF "at level m, applied to 𝒜_m, whose N_1 is R-free", with 𝒜_k := 𝒜 and **𝒜_{k-1} := col_{k-1}(𝒜)**,
+under the hypothesis "**N_1(𝒜) R-free**" stated at level k. **That hypothesis does not give what Lemma BUF needs at
+m = k − 1.** By HW §30.1, a level-m cube x is R-free iff its **open** column {(i, π^{i-m}(x)) : m < i ≤ K − 1} misses S_R.
+For a level-(k−1) cube x with π(x) = Q, the open column of x is {(k, Q)} ∪ (the open column of Q). Hence
+  **x is R-free ⟺ Q is R-free AND (k, Q) ∉ S_R ⟺ the CLOSED column [Q] misses S_R.**
+"N_1(𝒜) R-free" is the open-column statement for the level-k cubes of N_1(𝒜) and says nothing about the pairs (k, Q)
+themselves. Since N_1(col_{k-1}(𝒜)) ⊆ col_{k-1}(N_1(𝒜)), Lemma BUF at m = k − 1 requires
+  **(RING-cc): [N_1(𝒜)] ∩ S_R = ∅ — every pair (i, π^{i-k}(Q)), i ≥ k, Q ∈ N_1(𝒜), is unconstrained (closed column).**
+*Repair.* Replace the hypothesis "N_1(𝒜) R-free" by (RING-cc) throughout §18.7.0, §18.7.1 and Theorem NA-PRICE^{E+}. Nothing
+else in §18.2-§18.7 changes: (RING-cc) ⇒ N_1(𝒜) R-free, and Proposition FAR (i)-(ii), Lemma FT^far′ and Lemma COL-DEC use
+only (C_S′).
+*Price, and it settles a cross-lane disagreement.* The relaxation that buys (RING-cc) inside Theorem CRC-2T′ step (4) is of
+the **closed** column [N_1(·)] rather than the open one Col(N_1(·)). HW §41 item 4 (Lemma RING) prices the open column at
+**×17** on c_U, with the explicit reason "Only the OPEN column enters #_{R′}, so the m = 0 term never appears"; for the
+closed column the m = 0 term **does** appear, and HW's own two inequalities give it exactly:
+  #_R([N_1(X)]) = |N_1(X) ∩ S^{(lev)}_R| + #_R(Col(N_1(X))) ≤ 81|X| + 16Σ_{r≥1}|sh_r(X)| ≤ 81‖X‖_sh,
+using |N_1(X)| ≤ 3^d|X| = 81|X| (r = 0) and HW Lemma RING's |sh_r(N_1X)| ≤ 2^d|sh_r(X)| = 16|sh_r(X)| for r ≥ 1. So step
+(4)'s e^{c_U‖·‖_sh} becomes e^{82c_U‖·‖_sh} and **c_+ = c_A + 82c_U**, not c_A + 17c_U. **HANDOFF's open cross-lane
+disagreement "HW's Lemma RING says ×17, PLD says ×82" is therefore settled, and both lanes are right about different
+objects: ×17 is correct for the OPEN column (Lemma BUF at level k), ×82 for the CLOSED column (Lemma BUF at level k − 1),
+and the proof of (CEM^{COL})/(E2^𝔉′) needs the level-(k−1) application, hence ×82.** HW §41 item 4's instruction "Please
+re-read §18.4's ×82 as ×17" is to be withdrawn for the level-(k−1) use; §18.4's own ×82 stands. Request in §19.11.
+*Why this is not avoidable by using the level-k weight only.* If w is taken at m = k (w = h^{R,1}_k(U_k), §18.7.0's other
+generator), then step 3's marginal on (U_0, …, U_{k-1}) converts it into a level-(k−1) weight: by HW Lemma TILT (i),
+  ∫dU_k K_{k-1}(U_k, U_{k-1})1_{R′,k}(U_k)h^{R,1}_k(U_k) = h^{R″,1}_{k-1}(U_{k-1})
+for the pattern R″ carrying R's constraints at levels ≥ k together with R′'s at level k (**Lemma MARG, PROVEN-HERE**:
+Fubini and TILT (i) verbatim, the level-k constraint being one of TILT's 1_{R,k+1}-factors one level down). So both
+generators of 𝔏^buf_k produce a level-(k−1) future weight, and (vi) is applied at m = k − 1 in both cases. **This also
+tidies §18.7.0: its two generators collapse to one form, {h^{R″,1}_{k-1}·(a buffer factor)}.**
+
+## 19.2 Route (ii) of T19 (a): the Markov structure across the R-free ring. Lemma DLR and Theorem W-FREE.
+PROVEN-HERE (counted, item [E7] (1))
+
+Throughout §19.2-§19.6: k ≥ 1, 𝒜 a finite set of level-k cubes with **(RING-cc)** and 𝒜 ∩ 𝒰_k = ∅, 𝒜′ ⊂ 𝒜, S := 𝒜 ∖ 𝒜′,
+ν ∈ 𝔏^buf_k(R, 𝒜) the marginal law on (U_0, …, U_{k-1}) of §18.7.0, written ν = ν^w_0 with ν_0 := ν^{R′,F_<}_{k-1} the
+unweighted past law and w the (now single, by Lemma MARG) buffered level-(k−1) future weight. Write
+  **𝔏 := 𝔏_{k-1}(col_{k-1}(S)),  𝔊 := σ(all variables of ν_0 except U_{k-1}|_𝔏).**
+
+**Lemma DLR (the far weight is eliminated exactly, not estimated): PROVEN-HERE.**
+- **(i) (the factor audit)** The only factors of ν_0's density that read U_{k-1} on 𝔏 are
+  (α) the kernels of K_{k-2}: Π_{c∈𝔏}k^{(k-2)}_c(U_{k-1,c}; M̄_c(U_{k-2})), one per link, and
+  (β) the constraint factors Π_{x∈col_{k-1}(S)∩S^{(k-1)}_{R′}}1{ζ_x = 0}, one per level-(k−1) cube, each reading ℓ(x) ⊂ 𝔏.
+  Nothing else does: ν_0 = ν^{R′,F_<}_{k-1} has density ∝ e^{-S_0}Π_{i<k-1}K_iΠ_{m≤k-1}1_{R′,m}Π_{k′<k-1}Φ_{k′}F_<, so its
+  **top kernel is K_{k-2} and its top capped spectator is Φ_{k-2}, a function of U_{k-2}**; 1_{R′,m} for m ≤ k − 2 reads
+  levels ≤ k − 2; Lemma READ (iii) removes the level-(k−1) constraint factors of cubes outside col_{k-1}(S); Lemma READ (v)
+  removes F_<. (If one works instead with the level-k law before §18.7.0's marginal, the extra factors are Φ_{k-1},
+  removed by Lemma READ (iv) under (C_S′), and K_{k-1}, whose kernels read U_{k-1}|_𝔏 only through M̄_c, c ∈ X_k(S); both
+  cases are covered.)
+- **(ii) (the weight and the conditioning are 𝔊-measurable)** w reads no link of 𝔏_{k-1}(col_{k-1}(𝒜)) ⊇ 𝔏 by Lemma
+  READ (vi) under (RING-cc); F is a function of the level-≤(k−1) fields off the columns of S, hence reads no link of 𝔏.
+- **(iii) (the conditional law is local and factorised)** By (i), conditionally on 𝔊 the variables U_{k-1}|_𝔏 have law
+    **P_S(dU_{k-1}|_𝔏 ; U_{k-2}) ∝ Π_{c∈𝔏}k^{(k-2)}_c(dU_{k-1,c}; M̄_c(U_{k-2}))·Π_{x}1{ζ_x = 0},**
+  which depends on 𝔊 **only through U_{k-2} restricted to region(S)** — because M̄_c(U_{k-2}) reads U_{k-2} only in c's two
+  endpoint blocks (HW Lemma FP), which for c ∈ 𝔏 are level-(k−2) cubes under cubes of col_{k-1}(S) — and which
+  **factorises over Q ∈ S**, by Lemma READ (ii) (disjoint link blocks) and the per-cube form of (β).
+- **(iv) (the identity)** Therefore, with
+    **ζ_Q(U_{k-2}|_{region(Q)}) := ∫e^{θY^f_Q}dP_Q / ∫dP_Q ∈ [1, ∞)  and  ζ := Π_{Q∈S}ζ_Q,**
+  (P_Q the Q-factor of P_S), one has ζ = E_{ν_0}[Z | 𝔊] and hence, for every ν = ν^w_0 ∈ 𝔏^buf_k(R, 𝒜),
+    **E_ν[Z·F] = E_ν[ζ·F]  and  E_{ν_0}[Z·wF] = E_{ν_0}[ζ·wF].**
+*Proof.* (i), (ii) are the audits above. (iii) is the definition of a conditional density: divide the joint density by its
+integral over U_{k-1}|_𝔏 and cancel every factor not reading 𝔏. (iv) is the tower property, legitimate because wF is
+𝔊-measurable by (ii) and Z is a function of U_{k-1}|_𝔏 by Lemma READ (i). ∎
+
+**Theorem W-FREE ((CEM-2) is not an ingredient of (CEM^{COL}); the weight enters only through one local functional):
+PROVEN-HERE.** Under (RING-cc) and 𝒜 ∩ 𝒰_k = ∅, for every ν ∈ 𝔏^buf_k(R, 𝒜) and every admissible F,
+  **(CEM^{COL})_k holds with constant c_cem ⟺ E_ν[ζ·F] ≤ c_cem^{|S|}E_ν[F],**
+with ζ = Π_{Q∈S}ζ_Q the explicit, bounded, **product** functional of U_{k-2}|_{region(S)} of Lemma DLR (iv). In
+particular:
+- **(a) the far weight h^{R,1} does not appear in ζ at all**, and no decoupling, correlation or mixing estimate between the
+  weight and the column energy is required: the separation across the R-free ring is a **Markov** statement, exact, with
+  cost 1, and (RING-cc) is exactly the hypothesis that makes it exact;
+- **(b) (CEM-2) as stated in §18.7.2 is therefore not the obstruction it was named as.** Proposition SPLIT's factorisation
+  (CEM^{COL}) = (CEM-1)·(CEM-2) is valid but **lossy**: it estimates the ratio E_{ν^w}[ZF]/E_{ν^w}[F] by comparing it to
+  the unweighted ratio, where Lemma DLR computes it exactly. What survives of (CEM-2) is **only** the ν^w-law of
+  U_{k-2}|_{region(S)} — i.e. one level down, one region, and a first-level-of-conditioning question, not a correlation
+  inequality;
+- **(c) and the gain is one level of regress, not a discharge.** ζ_Q is a moment of exactly the same shape as Y^f_Q's
+  moment, one level finer and conditioned. §19.3-§19.5 say what that buys and what it does not.
+**Remark (the honest negative, so that (a) is not over-read). ζ_Q is NOT bounded pointwise in U_{k-2}, and that is the
+whole residual.** On a configuration whose kernel centres {M̄_c(U_{k-2})}_{c∈𝔏_Q} force column curvature of order ε_1, the
+conditional law P_Q is concentrated where F^col_Q ≳ c_prε_1², so ζ_Q ≳ e^{24θc_prε_1²u_k} = e^{24θa_badu_k}, and at the
+recorded a·u_k ≈ 10⁸ (§18.5 (e)) this is e^{10⁸⁺}; letting the forced curvature be O(1) gives ζ_Q ≤ e^{24θu_k·n_Q} and no
+better. **So §18.7.2 (α)'s negative transfers verbatim to the ess-sup of ζ_Q, and route (ii) does not by itself close
+anything: it relocates the whole difficulty into the ν^w-law of one local functional.** That relocation is what §19.3
+exploits.
+
+## 19.3 The action trade: Lemma DOM and Theorem AT. PROVEN-HERE (counted, item [E7] (2))
+
+**Notation (the chain's own action, written out).** With no kernel normalisers,
+  **𝔄(U_0, …, U_K) := u_0Σ_ps(U_0(p)) + Σ_{m<K}κu_mΦ_m(U_m, U_{m+1}),  Φ_m(U, V) = Σ_cφ_{M̄_c(U)}(V_c)** (HW §0),
+so that W = e^{-𝔄}·Π_{m,c}(∫e^{-κu_mφ_{M̄_c}})^{-1}, the normalisers being functions of the finer field only. For a level-k
+cube Q define its **column action below level k**
+  **𝔄^col_Q := u_0Σ_{p∈col_0(Q)}s(U_0(p)) + Σ_{i=1}^{k-1}κu_{i-1}Σ_{c∈𝔏_i(col_i(Q))}φ_{M̄_c(U_{i-1})}(U_{i,c}),**
+i.e. **exactly the terms of 𝔄 that HW §4's definition of F^col_Q counts, each at the coupling the chain itself charges it.**
+By HW Lemma DJ the sets of terms of distinct level-k cubes are disjoint, so 𝔄^col_S := Σ_{Q∈S}𝔄^col_Q is a sub-sum of 𝔄.
+
+**Lemma DOM (the moment's exponent is λ_f times the chain's own column action): PROVEN-HERE.** Assume (F_R) with
+0 < β_- ≤ β_+ and Rg_K² ≤ ½ (the standing setting). Then for every k ≥ 1, every level-k cube Q and every
+(U_0, …, U_{k-1}),
+  **θ·Y^f_Q = 24θ·u_k·F^col_Q(U_{k-1}) ≤ λ_f·𝔄^col_Q(U_0, …, U_{k-1}),  λ_f := 24θ(1 + 2Rg_K²).**
+*Proof.* F^col_Q(U_{k-1}) is an **infimum** over (U_0, …, U_{k-2}) of the equalised column terms (HW §4), so it is bounded
+above by the value of that sum at the **actual** fields:
+  F^col_Q(U_{k-1}) ≤ Σ_{p∈col_0(Q)}s(U_0(p)) + Σ_{i=1}^{k-1}κΣ_{c∈𝔏_i(col_i Q)}φ_{M̄_c(U_{i-1})}(U_{i,c}).
+Multiply by u_k and compare term by term with 𝔄^col_Q, whose corresponding terms carry u_0 and u_{i-1}: the ratio is
+u_k/u_i for some 0 ≤ i ≤ k − 1. By (F_R)'s lower bound with β_- > 0, u_i − u_k ≥ β_-(k − i)log L − R ≥ −R, so
+u_i ≥ u_k − R > 0 and
+  u_k/u_i ≤ u_k/(u_k − R) = 1/(1 − Rg_k²) ≤ 1 + 2Rg_k² ≤ 1 + 2Rg_K²,
+using 1/(1 − x) ≤ 1 + 2x for x ≤ ½, Rg_k² ≤ Rg_K² ≤ ½ (g_k ≤ g_K for k ≤ K, (F_R)) — this is RLARGE l.106 (i)-(ii)'s own
+step. Multiplying the term-by-term comparison by 24θ gives the claim. ∎
+**Reading, and why this is the right currency.** λ_f = 24θ(1 + 2Rg_K²) is **not** a convenient abbreviation: it is exactly
+the one-step coupling slack, and the standing side condition **λ_f < 1 says precisely that the moment's exponent is
+strictly below the chain's own action in the column**. The κ of the kernel exponent and the κ of the equalised energy
+cancel identically — so the side condition is λ_f < 1 and **not** λ_f < κ, which I checked because κ is only ever bounded
+below in this lane (κ ≥ 1/84270, p6 C1); the check is negative and is recorded so that nobody re-imposes a κ.
+
+**Theorem AT (action trade: the moment is a local coupling-lowering ratio): PROVEN-HERE.** For λ ∈ [0, 1) and a nonneg
+bounded G, define the lowered partition function
+  **𝒵[λ; G] := ∫ e^{-(𝔄 - λ𝔄^col_S)}·𝔑·1_{R′}·F_<·G,  𝔑 := Π(the original kernel normalisers),**
+over the variables of ν_0 (levels ≤ k − 1), so that 𝒵[0; G] = E_{ν_0}[G]·Z_{ν_0}. Then:
+- **(i)** E_{ν_0}[Z·G] ≤ E_{ν_0}[e^{λ_f𝔄^col_S}·G] = 𝒵[λ_f; G]/𝒵[0; G]·E_{ν_0}[G];
+- **(ii)** λ ↦ log 𝒵[λ; G] is convex, real-analytic on [0, 1) when G ≢ 0, with
+    **d/dλ log 𝒵[λ; G] = E_{λ,G}[𝔄^col_S],  E_{λ,G} := the expectation under the law ∝ e^{-(𝔄-λ𝔄^col_S)}𝔑1_{R′}F_<G;**
+- **(iii) hence, for every nonneg G and in particular for G := wF,**
+    **E_{ν^G_0}[Z] ≤ exp(∫_0^{λ_f}E_{λ,G}[𝔄^col_S]dλ).**
+*Proof.* (i) is Lemma DOM exponentiated (Z = Π_Qe^{θY^f_Q} ≤ e^{λ_f𝔄^col_S} pointwise) and the definition of 𝒵. (ii)
+𝔄^col_S is bounded (a finite sum of bounded terms: s and φ are bounded on compact groups), so 𝒵[λ; G] is finite and its
+λ-derivative may be taken inside; the derivative of the log is the expectation of 𝔄^col_S under the λ-tilted law, and
+convexity is the variance. (iii) is (i) and (ii) integrated, since log(𝒵[λ_f]/𝒵[0]) = ∫_0^{λ_f}(d/dλ)log𝒵. ∎
+**Remark (the normalisers are harmless, and that is why this is exact).** Lowering the coupling in the exponent does not
+change 𝔑, which is a function of the finer fields only; so 𝒵[λ; ·] is a genuine one-parameter exponential family in λ with
+sufficient statistic 𝔄^col_S, and (ii) is the standard identity for such a family. No representation, no main-term
+expansion and no small-field restriction is used anywhere in §19.3.
+
+## 19.4 T19 (b)-(c): (ACT), the collapse of (CEM-1)'s three ingredients, and the restated (LCR).
+Implications PROVEN-HERE (counted with §19.3, item [E7] (2)); the statement itself OPEN
+
+**(ACT)_k [node A; NEW; OPEN; "column-action moment"].** There is c_act < ∞, independent of g ≤ g_0, k ≥ 1, K, T, 𝔥,
+R ∈ 𝔉_𝔥, 𝒜, 𝒜′, F and F_<, such that for every datum as in §19.2 and every ν = ν^w_0 ∈ 𝔏^buf_k(R, 𝒜),
+  **E_{ν_0}[e^{λ_f𝔄^col_S}·wF] ≤ c_act^{|S|}·E_{ν_0}[wF],   λ_f = 24θ(1 + 2Rg_K²) < 1.**
+
+**Proposition ACT-EQ: PROVEN-HERE.**
+- **(i) (ACT)_k ⇒ (CEM^{COL})_k with c_cem = c_act**, by Theorem AT (i) and Lemma DLR (which is not even needed for this
+  direction).
+- **(ii) (ACT)_k is EXACTLY equivalent to a mean-action bound**: by Theorem AT (ii), with G := wF,
+    **log(E_{ν_0}[e^{λ_f𝔄^col_S}G]/E_{ν_0}[G]) = ∫_0^{λ_f}E_{λ,G}[𝔄^col_S]dλ,**
+  so (ACT)_k holds with log c_act = λ_f·B iff **E_{λ,G}[𝔄^col_S] ≤ B|S|** on average over λ ∈ [0, λ_f]; a per-λ bound is
+  sufficient and the averaged one is necessary. **This is an identity, not an estimate.**
+- **(iii) (ACT)_k is STRICTLY STRONGER than (CEM^{COL})_k.** The converse of (i) fails, and for a structural reason worth
+  recording: F^col_Q is an **infimum** over the finer fields, so a bound on the moment of u_kF^col_Q does not bound the
+  mean of 𝔄^col_Q — the infimum discards exactly the finer-field excess that 𝔄^col_Q charges. So §19.4 offers a second
+  route to (CEM^{COL}), not a reformulation of it, and the lane carries both. (Same discipline as §18.7's "consolidation,
+  not a discharge".)
+
+**Proposition CEM1-COLLAPSE (the three named ingredients of (CEM-1) collapse to one, and two of them are not needed on
+this route): PROVEN-HERE (logic about the two routes; not counted).** (CEM-1)_k of §18.7.2 is (ACT)_k with w ≡ 1 up to
+(iii)'s strengthening, and §18.7.2's three ingredients fare as follows.
+- **(a) "the main-term reduction OFF G_Q" is NOT NEEDED.** §18.7.2 (a) asks for F^col_Q ≤ Σ_{x∈col Q∖B}𝓔^{an}_{k-1,x} +
+  Σ_{x∈B}(R-operated large-field energy) and records that "nothing in PLD §16-§17 or HW §6 writes this, and it is the
+  first thing a proof of (CEM-1) must write". **Lemma DOM writes a different and sufficient inequality that needs no
+  representation at all**: F^col_Q is already defined (HW §4) as an infimum of the chain's own terms, so bounding it by
+  those terms at the actual fields is immediate, holds on and off G_Q alike, and involves neither 𝓔^{an} nor the
+  small-field/large-field split. **So ingredient (a) is a requirement of the representation route only.**
+- **(b) "the coupling response for the full representation"** becomes, on this route, the mean-action bound of (ii) — no
+  representation, no activities.
+- **(c) "u-uniformity of the activity bounds on [(1 − λ_f)u, u]"** is **not a separate hypothesis on this route**: the
+  interval is the integration variable of the identity (ii), and what must be uniform is the mean column action, not any
+  activity bound. §17.5's recorded worry that CE-exp^k's hypotheses (N5-unif, L-loc) "do not state" that uniformity is
+  therefore a defect of the representation route, not of (CEM-1).
+- **Net: on the (ACT) route (CEM-1)'s three ingredients collapse to ONE statement — a mean column-action bound, uniform in
+  λ ∈ [0, λ_f] and in everything else — at the price of (iii)'s strengthening.** This is the answer to T19 (b).
+
+**The restated (LCR). (LCR^act)_m [NEW; replaces §16.7's (LCR) and §18.8 (ii)'s certificate target]: OPEN.**
+There is B < ∞ such that for every m ≥ 1, every R ∈ 𝔉_𝔥 with 𝒜 satisfying (RING-cc) and 𝒜 ∩ 𝒰_m = ∅, every 𝒜′ ⊂ 𝒜,
+every bounded measurable F ≥ 0 of the level-≤(m−1) fields off the columns of S := 𝒜 ∖ 𝒜′, every bounded measurable
+F_< ≥ 0 of U_{<k_0}, every w of §18.7.0's (single, by Lemma MARG) buffered form, and every λ ∈ [0, λ_f]:
+  **E_{λ,wF}[𝔄^col_S] ≤ B·|S|,   uniformly in g ≤ g_0, m, K, T, 𝔥, R, 𝒜, 𝒜′, F, F_<, λ.**
+**Against §18.8 (ii)'s five certificate clauses, one by one.**
+1. **λ_f < 1: KEPT**, and now visibly structural (Lemma DOM: it is the statement that the moment's exponent is below the
+   chain's own action). It appears as the length of the λ-interval, not as a coupling shift inside a representation.
+2. **"the law class 𝔏^buf_k, not a sup over G": KEPT but DEMOTED.** By Lemma DLR the weight does not enter the conditional
+   law of the column variables at all, so the class matters only through the **law of U_{m-1}|_{region(S)}** it induces.
+   §18.8 (i)'s fatal objection — that no finite g-uniform constant exists over all G not reading the column links — does
+   not apply to a **first moment** of 𝔄^col: §18.7.2 (α)'s arithmetic bounds a conditional **exponential** moment from
+   below, and the restatement asks no exponential moment of the far field. (What it does ask is §19.5's (BCH-1).)
+3. **uniformity in g, m, K, T, 𝔥, R, 𝒜, 𝒜′, F, F_<: KEPT in full, and extended to λ.** This is the whole analytic content.
+4. **"the allowance in form (P0) or (P1)": DROPPED as a clause, and satisfied.** A first-moment bound carries no
+   allowance; exponentiating by (ii) gives log c_act = λ_f B, a per-cube constant, i.e. **form (P0) with c_A = 0** in
+   Proposition PATCH (v)'s classification. Nothing in §19.3-§19.4 introduces a shadow sum or a slice.
+5. **"log c_lcr ≤ 10⁹": KEPT, restated as B ≤ 10⁹/λ_f**, i.e. **B ≤ 2·10⁹ at λ_f = ½**. The equipartition value of B is
+   dof/(2(1 − λ)) ≤ dof = 52488 at λ ≤ ½ (§19.5), thirteen orders below the ceiling (check p7 B).
+**So the restatement keeps clauses 1, 3 and 5, demotes clause 2 and discharges clause 4** — and, unlike §16.7's form, it is
+not refuted by §18.8 (i), because it is a first moment and not an exponential one. **It is the form (CEM-1) consumes**:
+(ACT)|_{w≡1} ⇒ (CEM-1) by Proposition ACT-EQ (i) with w ≡ 1.
+
+## 19.5 CORRECTION (appended, not edited): (ACT) as stated in §19.4 is WITHDRAWN, and the repair. PROVEN-HERE for the
+repair; the withdrawal is ARGUED and binding on §19.4
+
+**This section corrects §19.4, written 14:12 UTC, before any check. §19.4 is left exactly as written (the file is
+append-only); this is the correction of record, and it is binding: no later section uses (ACT) or Proposition
+CEM1-COLLAPSE (a) in the form §19.4 states them.** The defect was caught by applying §19.0's own "Not success" clause
+("a constant or exponent depending on k … presented as uniform") to my own statement.
+
+**The defect, exactly.** (ACT) is stated with **𝔄^col_S, the chain's ACTUAL action in the column**. That functional
+contains the term u_0Σ_{p∈col_0(Q)}s(U_0(p)) — the bare action of **every fine plaquette in the column of Q** — and
+region(Q) contains 81^{k+1} unit cells at d = 4, L = 3. So 𝔄^col_Q is **extensive in the column's fine volume**, and the
+lane's own equipartition bookkeeping (the bookkeeping that produces p6 D1's dof) gives
+E_{ν_0}[𝔄^col_Q] ≍ (3/2)·(number of column degrees of freedom) ≍ 81^{k+1}; Jensen then gives
+  **E_{ν_0}[e^{λ_f𝔄^col_Q}] ≥ e^{λ_fE_{ν_0}[𝔄^col_Q]} ≍ e^{c·λ_f·81^{k+1}},**
+which is not bounded by any k-uniform c_act. **Status of the refutation: ARGUED** — it rests on the equipartition lower
+bound for E[𝔄^col_Q], which is not proven here — but it is decisive enough to withdraw the hypothesis, because a route
+whose own heuristic value is e^{81^k} must not be carried. **(ACT) is WITHDRAWN.** Lemma DOM itself is unaffected (it is a
+correct pointwise inequality); what was wrong was to exponentiate it against a measure, because **Lemma DOM throws away
+exactly the infimum that makes F^col small.**
+
+**Lemma DOM′ (the repair; the minimised column action): PROVEN-HERE.** Define, for a level-k cube Q and a level-(k−1)
+field,
+  **𝔞^col_Q(U_{k-1}) := inf_{(U_0,…,U_{k-2})}[u_0Σ_{p∈col_0(Q)}s(U_0(p)) + Σ_{i=1}^{k-1}κu_{i-1}Σ_{c∈𝔏_i(col_i Q)}φ_{M̄_c(U_{i-1})}(U_{i,c})],**
+the same sum as 𝔄^col_Q but **minimised over the finer fields** — i.e. HW §4's F^col_Q with each term carried at the
+coupling the chain charges it. Then, under the standing setting,
+  **θ·Y^f_Q = 24θu_kF^col_Q(U_{k-1}) ≤ λ_f·𝔞^col_Q(U_{k-1}),  λ_f = 24θ(1 + 2Rg_K²),**
+and 𝔞^col_Q is **not extensive in the column's fine volume**: it vanishes on every U_{k-1} that admits a zero-energy finer
+completion, and in general it is the minimal action cost of the coarse configuration.
+*Proof.* Lemma DOM's term-by-term comparison u_k·(term) ≤ (1 + 2Rg_K²)·(u_i-weighted term) is pointwise in the finer
+fields; take the infimum over the same variables on both sides. The vanishing statement is immediate from the definition
+(a completion with all terms zero gives infimum 0). ∎
+
+**What survives, and what does not.**
+- **Theorem AT survives verbatim with 𝔄^col_S replaced by 𝔞^col_S**, because 𝔞^col_S is bounded and the only property used
+  is that λ ↦ ∫e^{-(𝔢 - λ𝔞^col_S)} is an exponential family with sufficient statistic 𝔞^col_S, where **𝔢** is whatever
+  exponent the relevant law has. So the identity
+    **log(E_{ν^G}[e^{λ_f𝔞^col_S}]) = ∫_0^{λ_f}E_{λ,G}[𝔞^col_S]dλ**
+  holds, and with it the reduction "the moment is the integral of a MEAN". **This is the part of §19.4 that stands.**
+- **(ACT′)_k [the repaired statement; node A; OPEN]:** E_{ν_0}[e^{λ_f𝔞^col_S}·wF] ≤ c_act^{|S|}E_{ν_0}[wF], equivalently
+  (identically) **E_{λ,wF}[𝔞^col_S] ≤ B|S| for λ ∈ [0, λ_f] on average**, with log c_act = λ_f B. (ACT′) ⇒ (CEM^{COL})_k
+  with c_cem = c_act by Lemma DOM′, and (ACT′) is still strictly stronger than (CEM^{COL}) for §19.4 (iii)'s reason.
+- **Proposition CEM1-COLLAPSE (a) is WITHDRAWN: §18.7.2's ingredient (a) IS needed, and §18.7.2 was right.** The reason is
+  now sharp and is the useful part of the correction. The trade e^{λ_f𝔞^col} against the measure requires comparing
+  𝔞^col_Q — the **minimised** column action — with the exponent of the law of U_{k-1} **after the finer levels have been
+  integrated out**. Those differ by the fluctuation (determinant/entropy) terms:
+    −log(level-(k−1) marginal density) = 𝔞^{total}(U_{k-1}) − log(the finer fluctuation integral at U_{k-1}),
+  and the statement that the marginal's exponent **dominates** 𝔞^col locally and uniformly, with the fluctuation terms
+  bounded per degree of freedom, is **exactly the small-field representation (I^E)″ and §18.7.2 (a)'s main-term
+  reduction.** So the representation cannot be bypassed; what Lemma DOM′ does buy is that the inequality to be proven is
+  between two **actions** (the minimised column action and the marginal's exponent) rather than between F^col and a sum of
+  activity energies 𝓔^{an}, and that it is needed **on and off G_Q alike with the same statement** — which is what
+  §18.7.2 (a) asked for and nobody had written.
+- **Proposition CEM1-COLLAPSE (b)-(c) stand**: on the identity route, (b) is the mean bound and (c) is the integration
+  variable, so **(CEM-1)'s ingredients (b) and (c) are ONE statement and not two**. The honest tally for T19 (b) is
+  therefore **three ingredients → two**: (a) the main-term/representation domination (unchanged, still OPEN, still the
+  first thing to write) and (b+c) one mean-action bound uniform on [0, λ_f].
+- **The restated (LCR) of §19.4 stands with 𝔄^col replaced by 𝔞^col**: call it **(LCR^act′)_m**, with clauses 1, 3, 5 kept,
+  clause 2 demoted and clause 4 discharged exactly as §19.4 states. In clause 5 the bound is B ≤ 10⁹/λ_f = 2·10⁹ at
+  λ_f = ½, and the equipartition value of B for 𝔞^col is dof/(2(1 − λ)) with dof the number of level-(k−1) group degrees
+  of freedom the column's top terms involve; at the lane's recorded **dof = 3n_int·81 = 52488** (p6 D1) the identity gives
+  log c_act = (dof/2)log(1/(1 − λ_f)) = **18190.95 at λ_f = ½ — p6 D1's recorded value, exactly** (check p7 B1). **So
+  §18.7.2's "Gaussian heuristic" is not a Gaussian approximation at all: it is the equipartition value of an exact
+  identity, and this session identifies it as such.** (Which geometric count dof = 3n_int·81 is — the level-(k−1) links of
+  𝔏_{k-1}(col_{k-1}Q) or a two-level count — is a question for the owner of §18.7.2, request in §19.11; the identity does
+  not depend on the answer, only the number does.)
+
+## 19.6 T19 (a): the typicality mechanism, priced; and the status of (CEM-2). Proposition TRADE and Theorem OUT:
+PROVEN-HERE (counted, item [E7] (3)); the residual (BCH-1) OPEN
+
+**Proposition TRADE (what the measure buys that the event cannot, priced in both currencies): PROVEN-HERE (elementary
+probability; the numbers are arithmetic about recorded constants, check p7 A).** Let 𝔟 ≥ 0 be any functional measured in
+**action units** (so that the measure's own suppression of {𝔟 > t} is at rate e^{-t}).
+- **(i) The event route.** "No defect in the buffer" bounds the field: every interior plaquette of every buffer cube has
+  ‖1 − V_P‖ < ε_1, so the forced column action it permits is 𝔟 ≤ C·n·u·ε_1² = C·n·(ε_1/g_K)², the identity p6 A2 records
+  at **4.489·10¹⁵**. Through the identity of §19.5 this gives log c_act ≥ λ_f·4.489·10¹⁵ = **2.245·10¹⁵ at λ_f = ½**,
+  against §18.8 (ii) clause 5's admissible ceiling log c ≤ 10⁹: **the event route misses the ceiling by a factor
+  2.245·10⁶ in the LOG** (check p7 A2). That is a sharper statement of §18.7.2 (α)/(β) than "it differs by 4.489·10¹⁵":
+  in the first-moment currency the miss is 2.2·10⁶ in the exponent, not e^{10¹⁵}.
+- **(ii) The measure route.** If ν(𝔟 > t) ≤ Ce^{-t} for all t ≥ 0, then
+    **E_ν[𝔟] ≤ 1 + log⁺C  and  E_ν[e^{λ𝔟}] ≤ 1 + Cλ/(1 − λ) for λ < 1,**
+  the second by the layer-cake ∫_0^∞λe^{λt}ν(𝔟 > t)dt. **So the price of typicality is 1/(1 − λ_f) per cube in the
+  exponential currency and 1 + log⁺C in the first-moment currency** — at λ_f = ½ a factor 2, and in the log a quantity of
+  size log C, i.e. equipartition-sized (≈ dof/2 ≈ 5·10⁴), **eleven orders below the event route's 2.245·10¹⁵ and five
+  orders below the ceiling.**
+- **(iii) Why the thresholds cancel, structurally.** The event bounds the FIELD at the g-independent threshold ε_1, and
+  converting a field bound into an action bound costs the factor u = 1/g_K² — which is where 4.489·10¹⁵ = (ε_1/g_K)² comes
+  from. The measure prices the same configuration in ACTION units, where the suppression rate is **the same u** that
+  multiplies it; so u cancels and only (1 − λ_f) and a degree-of-freedom count survive. **This is the whole content of
+  "the mechanism must be the weight's typicality, not the event", and it is why §18.7.2 (δ)'s "no inequality between ε_1
+  and g_K can hold uniformly in g" is true and yet not fatal.**
+
+**Theorem OUT (the outside decomposition: the weight survives only in a first moment): PROVEN-HERE.** Let
+𝔉_out := σ(all fields of ν_0 restricted to the links not touching region(S)). Under (RING-cc) and the reading of
+(CEM^{COL})'s hypothesis that **F is a function of the level-≤(k−1) fields off the columns of S at every level** (which is
+what the two consumers supply: Cor. E2-RED's F = 1{Y ⊔ x(Γ_1) ⊂ D_j} reads interiors of cubes disjoint from col(Γ_0), and
+Theorem NA-PRICE^{E+} step (4)'s F′ = Π_{Q∈T}1{Q ∉ 𝒞_k}·F reads blocks under T, disjoint from S ∖ T — §18.7's own
+measurability check):
+- **(i)** w and F are 𝔉_out-measurable (Lemma READ (vi) for w under (RING-cc); hypothesis for F);
+- **(ii)** hence, for every λ ∈ [0, λ_f], E_{λ,wF}[·|𝔉_out] = E_λ[·|𝔉_out] and
+    **E_{λ,wF}[𝔞^col_S] = E_{λ,wF}[ E_λ[𝔞^col_S | 𝔉_out] ];**
+- **(iii)** therefore (ACT′)_k, hence (CEM^{COL})_k, follows from the conjunction
+  - **(EQ-bc)_k [conditional equipartition with the boundary charge; WEIGHT-FREE and LAW-CLASS-FREE; OPEN]:** there are
+    B_0 < ∞ and an 𝔉_out-measurable charge 𝔟_Q ≥ 0 such that E_λ[𝔞^col_Q | 𝔉_out] ≤ B_0 + 𝔟_Q, ν_0-a.s., for every
+    λ ∈ [0, λ_f] and every Q ∈ S;
+  - **(BCH-1)_k [the boundary charge's first moment under the weighted law; OPEN]:**
+    E_{λ,wF}[Σ_{Q∈S}𝔟_Q] ≤ B_1·|S| for every λ ∈ [0, λ_f],
+  with B = B_0 + B_1 and log c_act = λ_f(B_0 + B_1).
+*Proof.* (i) is the audit. (ii) wF is 𝔉_out-measurable, so it cancels between numerator and denominator of the conditional
+expectation; then the tower property. (iii) is (ii) plus (EQ-bc) plus (BCH-1), and then §19.5's identity. ∎
+**What the charge must be, stated honestly.** 𝔟_Q cannot be the ess-inf of 𝔞^col_Q given 𝔉_out: 𝔞^col_Q is a functional of
+the INSIDE variables and the conditional law has full support, so that ess-inf is 0 and (EQ-bc) would collapse to the
+uniform-in-boundary-condition bound that §18.7.2 (α) refutes. The charge has to be the **boundary-forced conditional
+free-energy excess**, 𝔟_Q := 𝔉_Q(bc) − inf_{bc′}𝔉_Q(bc′) with 𝔉_Q(bc) := −log∫e^{−𝔄^{in}(·, bc)}d(inside fields).
+**Supplying that definition and proving (EQ-bc) with it is part of (EQ-bc) and is not done here.** This is the one place
+where §19.6 states less than it would like, and it is stated as such.
+
+**Status of (CEM-2) after §19.2-§19.6.**
+- **(CEM-2) as stated in §18.7.2 is NOT an ingredient of (CEM^{COL}) and should not be attacked as one.** Theorem W-FREE
+  computes the weighted ratio exactly where Proposition SPLIT estimates it; §18.11's "single biggest remaining
+  obstruction" is therefore mis-named, and the correct residual is (BCH-1). **This is a downgrade of §18.7.2's SPLIT from
+  "the reduction" to "a lossy reduction", recorded in §19.10.**
+- **(BCH-1) is strictly smaller than (CEM-2), in four named ways:** a **first** moment, not an exponential one; **one
+  scalar per cube** (the boundary charge), not a product of column-energy moments; a functional of the **outside** field
+  only, not a joint functional of inside and outside; and **no comparison of two laws** — (CEM-2) is a correlation
+  inequality between two expectations, (BCH-1) is a single expectation. **A reduction of an OPEN item to a sharper OPEN
+  item, which is the honest unit of progress here.**
+- **Two routes to (BCH-1), both priced, neither taken.**
+  - **(ρ1) the outward regress.** Bound 𝔟_Q by the action in the adjacent collar, then apply (EQ-bc) in the collar, and so
+    on outward. Each ring r contributes its own equipartition term times the forcing factor of that ring. **Indicative
+    power count** (labelled indicative, not a proof): a boundary perturbation at level-(k−1) distance r forces interior
+    amplitude ∼ r^{-(d-2)}, hence interior action ∼ r^{-2(d-2)}, and the ring carries ∼ r^{d-1} sources, so the regress
+    sums Σ_{r≥1}r^{d-1-2(d-2)} = Σ_{r≥1}r^{3-4} = Σ r^{-1} at **d = 4: logarithmically divergent**, against
+    Σ r^{-2} < ∞ at d = 5 (check p7 D, with the d = 5 control). **So the naive outward regress is MARGINAL in exactly the
+    d = 4 sense that NORMS §N5 and the brief's D3 diagnosis identify** (the d = 4 cubic vertex is marginal; the
+    Bianchi/derivative cancellation is what takes K_p from 2.27 to ≈ 0.12). The regress therefore has to be resummed by
+    the same cancellation, and that is not a local repair.
+  - **(ρ2) relax the ring in the weight, and pay with (CRC).** Pointwise, **w ≤ w^{-𝒞}** for every upward-closed 𝒞
+    (HW (m1): 1_R ≤ 1_{R^{-𝒞}} increases the future probability, and Buf^{R^{-𝒞}}_ρ ⊆ Buf^R_ρ weakens the buffer clause),
+    and with 𝒞 := [N_1(col_{k-1}(𝒜))] the relaxed weight w^{-𝒞} is blind to the ring by Theorem LI^U-0′. One then
+    conditions on the fields outside region(N_1(S)) and pays the ratio E_λ[w^{-𝒞}F]/E_λ[wF] ≤ e^{c_U#_R(𝒞)} ≤
+    e^{82c_U‖S‖_sh} by (CRC) — which **Theorem CRC-2T′ step (4) already buys from its own induction on N(R)**, because
+    N(R^{-𝒞}) < N(R). **Three costs, all g-independent and all declared:** (1) the closed-column price of Finding
+    (BUF-CC), ×82 not ×17; (2) **c_A = 0 is given up**: the allowance becomes e^{82c_U‖P‖_sh}, i.e. exactly the union-form
+    patch allowance HW §30.3/§37 asks for — so this route stays inside HW's budget but loses §18.7's (5) strictly-stronger
+    claim; (3) the consumers' F reads the ring (both of them do), so the conditioning needs F off the columns of N_1(S),
+    which costs a **colouring/Hölder step**: split S into χ ≤ 5^d = 625 classes at mutual ℓ^∞ distance ≥ 3 and apply
+    Hölder with exponent χ, which requires **χλ_f < 1, i.e. θ < 1/(24·625) ≈ 6.7·10⁻⁵** — a tightening of §18.7's
+    θ ↑ 1/24, though still far above the previously-feared fallback θ ≈ 8·10⁻⁷. **Status: ARGUED as a route (the steps are
+    named and priced; the (CRC) non-circularity condition is "the relaxation must be of a pattern with strictly fewer
+    constrained pairs, so CRC-2T′'s own induction supplies it", which is exactly how §18.4/§35.6 already buy the ring).
+    NOT a proof, and the circularity risk is declared: if an integrator ever lets (CRC) be bought from (E2^𝔉′) at the SAME
+    N(R), this route is circular.**
+
+## 19.7 T19 (d): the level-0 clause. (0a) is the weaker, and Theorem L0 reduces it to one finite-dimensional statement.
+PROVEN-HERE (the implication and the dimension count; counted, item [E7] (4)); (W0-EQ) OPEN
+
+**Which of (0a), (0b) is weaker: (0a), and strictly. PROVEN-HERE.** HW §37's readings are **(0a)** Γ a set of level-0
+cubes with the Wilson window Π_{Q∈Γ}e^{θX_Q} and **Y = ∅**, and **(0b)** Γ at level 1 with Y at level 0.
+- (0a) contains **no Y-factor**, hence no defect probability at all: it is a pure moment.
+- (0b) contains the factor (C_Ae^{-a_Au_0})^{|Y|} for Y at level 0, i.e. it requires **(SDP) at level 0**. Every route to
+  (SDP) in this lane (Lemma FT^far, Lemma MD, Theorem NA-PRICE^{E±} step (1)) converts a defect event into a kernel event
+  by integrating the level-m links at fixed U_{m-1}; at m = 0 **there is no U_{-1} and no kernel to integrate**, which is
+  exactly what §16.5 "Level 0" and §17.6 record as OPEN. So (0b) ⇒ (0a)'s difficulty plus a strictly additional OPEN item.
+**Hence (0a) is the one to attack, and T19 (d)'s "pick whichever is weaker" is answered: (0a).**
+
+**Theorem L0 ((0a) is an exact mean-energy statement about the bare Wilson measure on one block): PROVEN-HERE.** At level
+0, HW §4 defines F^col_A(U_0) := Σ of the level-0 plaquettes in A **with no infimum**, and HW Lemma W-bad's level-0 window
+is X_Q := u_0Σ_{p⊂int Q}s(U_0(p)). Since S_0 = u_0Σ_ps(U_0(p)) (HW §0), we have **θX_Q = θ·𝔄^{int Q} exactly** — Lemma DOM′
+holds at level 0 as an **identity**, with θ in place of λ_f and with **no (F_R) factor at all** (there is no coarser
+coupling to compare). Consequently, with ν_0 the bare law (density ∝ e^{-S_0}1_{R,0}F_<, and F_< ≡ 1 since k_0 ≤ 0) and
+w = h^{R,1}_0 the level-0 future weight:
+- **(i) (exact identity)** E_{ν^{wF}_0}[Π_{Q∈Γ}e^{θX_Q}] = exp(∫_0^θ E_{λ,wF}[Σ_{Q∈Γ}𝔄^{int Q}]dλ) — Theorem AT with
+  equality, since the domination is an identity;
+- **(ii) (DLR, no finer level needed)** e^{-S_0} is a nearest-neighbour Gibbs density, so with
+  𝔉_out := σ(U_0 off ∪_{Q∈Γ}int Q) the conditional law of U_0|_{int Q} given 𝔉_out is the Wilson measure on int Q with the
+  observed boundary data, times the factor 1{ζ_Q = 0} if Q ∈ S^{(0)}_R — **the kernel's Markov property of §19.2 is
+  replaced by the bare measure's own DLR property**, and w, F are 𝔉_out-measurable exactly as in Theorem OUT ((RING-cc) at
+  level 0 reads: every cube of N_1(Γ) has unconstrained closed column);
+- **(iii) (the reduction)** therefore **(0a) ⟸ (W0-EQ) + (BCH-0)**, where
+  - **(W0-EQ) [OPEN; finite-dimensional]:** there are B_0 < ∞ and a boundary charge 𝔟^{(0)}_Q (the conditional free-energy
+    excess of §19.6) such that, for every boundary datum, every λ ∈ [0, θ] and every level-0 cube Q,
+    E_λ[u_0Σ_{p⊂int Q}s(U_0(p)) | 𝔉_out] ≤ B_0 + 𝔟^{(0)}_Q;
+  - **(BCH-0)** = (BCH-1) at level 0, the same residual as at every other level;
+  with log C_fc^{(0)} = θ(B_0 + B_1).
+- **(iv) (the size and kind of (W0-EQ), computed)** (W0-EQ) is a statement about **one L^d = 3⁴ block**: int Q has
+  **n_int = 216** links, so **648 real dimensions**; the gauge transformations that fix the boundary datum are those at
+  sites all of whose 8 incident links are interior, i.e. at the **single centre site** of a 3⁴ block, giving **3 gauge
+  directions and 645 transverse ones**. So (W0-EQ) is a **Laplace-asymptotics statement on a fixed 645-dimensional
+  transverse section of a compact manifold, uniform over the compact space of boundary data, at couplings ≥ (1 − θ)u_0**.
+  Its equipartition value is B_0 = 645/(2(1 − λ)) ≤ 645 for λ ≤ ½, giving
+    **log C_fc^{(0)} = (645/2)·log(1/(1 − θ)) = 13.73 at θ = 1/24** (check p7 C2), i.e. C_fc^{(0)} ≈ 9.0·10⁵ — twelve
+  orders inside §18.8 (ii) clause 5's ceiling.
+*Proof.* (i) and (ii) are Theorems AT and OUT specialised, with the two substitutions named; (iii) is Theorem OUT (iii);
+(iv) is the dimension count (216 interior links of a 3⁴ block: 2·3³ = 54 per direction, ×4; one interior site) and the
+identity of (i) at the equipartition value. ∎
+**Consequence for the pre-stated failure mode. (NP-F13) is REFUTED, by my own pre-statement's standard.** §19.0 listed as
+a valid failure outcome "(0a) and (0b) are both strictly harder than the k ≥ 1 case for a named structural reason (no
+finer level to condition on)". **That reason does not hold**: at level 0 the bare Wilson measure supplies the DLR property
+directly, and in one respect level 0 is **easier** than k ≥ 1 — Lemma DOM′ is an identity there, with no (F_R) slack and
+no infimum, so the extensivity defect of §19.5 cannot occur. **The honest ranking is: (0a) is the single most tractable
+instance of the whole family, and it has been left OPEN because it was mis-levelled (HW §37) and nobody separated it from
+(0b).** The residual (BCH-0) is the same residual as everywhere else, so (0a) adds nothing new beyond (W0-EQ).
+**Status.** (0a) ⟸ (W0-EQ) + (BCH-0): **PROVEN-HERE as an implication.** (W0-EQ): **OPEN, single-level,
+finite-dimensional (645 transverse dimensions), no RG, no representation, no history — session-scale, not paper-scale.**
+(0b): **OPEN and strictly harder**, needing a level-0 (SDP) that this lane has no route to.
+
+## 19.8 T19 (e): the hypothesis chain for (SDP)^A after session 7, and the single remaining obstruction
+
+**The chain, written out with every input named and its owner.**
+  (SDP)^{A,far}_θ at level k ≥ 1, F-conditioned, union currency, buffered weights
+    ⇐ Theorem NA-PRICE^{E+} (i) (§18.7, implication PROVEN there)
+    ⇐ (CLS-min) [OPEN; owner SQ/HIST via (REG-min) or (AE)] + (CEM^{COL})_k + **(RING-cc)** [new, §19.1; bought inside
+      Theorem CRC-2T′ step (4) at **×82** on c_U]
+  (CEM^{COL})_k ⇐ **Lemma DOM′** [PROVEN-HERE, §19.5] + **(ACT′)_k**
+  (ACT′)_k ⟺ a mean-𝔞^col bound on λ ∈ [0, λ_f] [**identity**, Theorem AT, PROVEN-HERE]
+    ⇐ **(EQ-bc)_k** [OPEN; **weight-free and law-class-free**; = the small-field moment node A has owed since §16.7, in
+      the action currency; its own residual input is §18.7.2 (a)'s representation domination, unchanged] +
+      **(BCH-1)_k** [OPEN; the only statement in the whole chain that still mentions the far weight].
+**Everything else in the chain is proven or is arithmetic.** (CEM-2) does not appear: Theorem W-FREE removes it.
+
+**The single remaining obstruction, named: (BCH-1)** — the **first moment, under the buffered-weighted past law, of the
+boundary-forced conditional free-energy excess of a level-k cube's column**, uniformly in g, k, K, T, 𝔥, R ∈ 𝔉_𝔥, 𝒜, 𝒜′,
+F, F_< and λ ∈ [0, λ_f]. KIND: a single scalar per cube, a first moment, a functional of the outside field alone, no
+comparison of two laws. OWNER: node A (this lane). It is **strictly smaller than (CEM-2)** in the four ways listed in
+§19.6, and it is the whole of what the far weight still costs.
+
+**And it is removable, at a declared price.** Route (ρ2) of §19.6 removes (BCH-1) entirely — pointwise (m1) monotonicity
+w ≤ w^{-𝒞}, the ring relaxation bought from Theorem CRC-2T′'s own induction on N(R), and a colouring/Hölder step —
+leaving
+  **(SDP)^A ⇐ (CLS-min) + (RING-cc) + ONE weight-free, law-class-free, single-level statement (EQ-bc),**
+with **no decoupling estimate, no correlation inequality and no statement about h^{R,1} anywhere in the chain.** The
+three prices, all g-independent and all computed: ×82 instead of ×17 on c_U (Finding (BUF-CC), p7 F1); **c_A = 0 given up
+in favour of the union-form patch allowance e^{82c_U‖P‖_sh}**, which is exactly what HW §30.3/§37 asks for (so the route
+stays inside HW's budget, but §18.7 (5)'s "strictly stronger than HW asks" claim is lost on it); and θ ≤ 1/(24·5^d)
+= 6.67·10⁻⁵ (p7 E1), which tightens §18.7's θ ↑ 1/24 but stays **80 times above** the previously-feared fallback
+θ ≈ 8·10⁻⁷. **Status of route (ρ2): ARGUED (steps named and priced, not proven), with the circularity condition
+declared.**
+
+## 19.9 T21: check p7 (criteria checks/p7_criteria.md 14:20:23 UTC, md5 ceaf6aa8f145413a3dd4f35ea673c955, 5869 bytes,
+written BEFORE the script; script checks/p7_pld.py 14:20:56 UTC, md5 d182f1d6f8d662bec4066e38d4b6cf30; output
+checks/p7_out.txt; stderr checks/p7_err.txt; record checks/p7_time.txt)
+
+- **Order, disclosed.** §19.0 (14:03:44 UTC) was the first edit. §19.1-§19.8 were written next, 14:06-14:22 UTC, and
+  **before** checks/p7_criteria.md existed. The criteria file was then written (14:20:23), then the script (14:20:56),
+  then the single run (14:21). **No constant derived in session 7 appears in a PASS/FAIL condition**; every number in the
+  criteria file is sourced inline to RLARGE / HW / PLD sessions ≤ 6 or is pure lattice geometry. Two criteria (A2, C2)
+  are reproductions of hand arithmetic written earlier in §19.6/§19.7 and are **labelled CONFIRMATORY, not
+  pre-registered**, per [RHW5-fix W5-1]; the other eleven are PRE-REGISTERED.
+- One run, 14:21 UTC, 17.51 s, 19.6 MB, exit 0, nice 10, one thread (OMP/OPENBLAS/MKL/VECLIB = 1),
+  PYTHONDONTWRITEBYTECODE=1, `python3 -I`, load 2.99/2.58/2.31 at launch. **The numeric lock was NOT taken**, and
+  deliberately: the brief exempts exact rational/symbolic arithmetic in plain python, and p7_pld.py imports only
+  `fractions`, `decimal`, `sys` (no numpy, no BLAS, no linear algebra, no sampling). Justification in
+  checks/p7_time.txt. No re-run, no trap, no pkill, no process left.
+- **SUMMARY AS RUN: 13 criteria, 0 FAIL. All four negative controls (A3, B2, C1n, D2) behaved as designed.**
+- **The load-bearing result is B1.** (dof/2)·ln(1/(1 − λ_f)) at dof = 52488, λ_f = ½ computes to **18190.954606**
+  against p6 D1's independently recorded **18190.95** (diff 0.0046). §18.7.2 calls that number "the Gaussian
+  heuristic's own value"; §19.5's identity says it must be the **equipartition** value of an exact partition-function
+  identity, and it is. **This is the one number in p7 that tests a session-7 claim rather than reproducing arithmetic,
+  and it passes against an externally recorded value.**
+- Also PASS, and used in §19: **A1** (u·ε_1² ≡ (ε_1/g_K)² exactly, value 4.489·10¹⁵ = p6 A2's recorded value, re-formed
+  from ε_1 = 67/10⁴¹ and g_K² = 10⁻⁹⁴); **A2** (margin 2.2445·10¹⁵; the event route misses §18.8 (ii) clause 5's ceiling
+  by **2.2445·10⁶ in the log**, which is §19.6 (i)'s sharpening); **B3** (the equipartition B = 52488 sits **4.58
+  decades** inside the restated ceiling 10⁹/λ_f = 2·10⁹); **C1** (the exact rational step 1/(1 − x) ≤ 1 + 2x of
+  Lemma DOM, 0 violations on x ∈ {2⁻¹…2⁻¹⁰}); **C2** (the level-0 window log C_fc^{(0)} = **13.7254756**, §19.7 (iv));
+  **D1** (the d = 4 ring exponent is −1 and the partial-sum increments match ln 10 to 0.02%, i.e. **logarithmically
+  divergent**); **E1** (χ = 625, θ_max = 6.6667·10⁻⁵ > 8·10⁻⁷); **F1** (1 + 3^d = 82 and 1 + 2^d = 17 at d = 4, the
+  closed- and open-column ring prices of Finding (BUF-CC), differing by exactly 81/16).
+- **Negative controls.** **A3**: with ε_1 := g_K the A1 quantity is exactly 1, so the 4.489·10¹⁵ is a statement about the
+  two thresholds and not about the formula (p6 A3, reproduced). **B2**: the identity vanishes at λ = 0 and gives
+  362574.26 at λ = 1 − 10⁻⁶, so the λ-dependence is the claimed one. **C1n**: the inequality 1/(1 − x) ≤ 1 + 2x **FAILS**
+  at x = 3/4 (4 vs 5/2), so Rg_K² ≤ ½ is load-bearing in Lemma DOM′. **D2**: at d = 5 the same exponent formula gives −2
+  and the partial sum converges to π²/6 within 10⁻⁵, so D1's divergence is a property of d = 4 and not of the script.
+- **Scope, stated as narrowly as it is.** p7 is arithmetic about constants recorded in earlier sessions and about
+  inequalities PLD/HW already state. It tests **nothing** about the lattice measure: not (CLS-min), not (LCR^act′), not
+  (EQ-bc), not (BCH-1)/(BCH-0), not (W0-EQ), not (CEM^{COL})/(CEM-1)/(CEM-2), not (E2^𝔉′), and nothing nonabelian.
+  **No number in p7 is evidence for or against any open statement of §19**, and D1/D2 are an INDICATIVE power count that
+  proves nothing about the regress — they only show that the count PLD §19.6 (ρ1) performs is marginal at d = 4 and
+  convergent at d = 5.
+
+## 19.10 T20 + outcome against the pre-stated targets (§19.0), status changes, and tally
+
+**T19 (a): PARTIAL SUCCESS as pre-stated, by route (ii), and the pre-stated failure mode (NP-F10) is NOT met.** The
+Markov / conditional-independence structure across the R-free ring **exists and is exact**: Lemma DLR computes
+E_ν[Z·F] = E_ν[ζ·F] with the far weight eliminated at cost 1, and Theorem W-FREE states the consequence —
+**(CEM-2) as stated in §18.7.2 is not an ingredient of (CEM^{COL}) and is not to be attacked as one.** The residual is
+**(BCH-1)**, strictly smaller than (CEM-2) in four named ways (§19.6). The typicality mechanism is **priced**:
+1/(1 − λ_f) per cube in the exponential currency, 1 + log⁺C in the first-moment currency, against the event route's
+4.489·10¹⁵ — which in the first-moment currency misses the admissible ceiling by **2.2445·10⁶ in the log** (p7 A2), a
+sharper statement than §18.7.2's. The structural reason the thresholds cancel is §19.6 (iii). **(NP-F11) is also not
+met**: every price computed is g-independent and in an admissible currency (per-cube constants, or the union-form patch
+allowance HW already asks for).
+**T19 (b): MET, with a self-correction.** (CEM-1)'s three ingredients become **two**: (a) the representation domination
+is **unchanged and still OPEN** — §19.4's claim that it is unnecessary was WITHDRAWN in §19.5, with the sharp reason
+(the trade compares 𝔞^col with the exponent of the level-(k−1) **marginal**, and the fluctuation terms between them are
+exactly the representation's content); (b) and (c) **merge into one** mean-action bound uniform on λ ∈ [0, λ_f], because
+the u-interval is the integration variable of an exact identity and not a separate hypothesis on activity bounds.
+**T19 (c): MET.** **(LCR^act′)_m** (§19.4, with §19.5's 𝔞^col substitution): a **first-moment** statement, with clauses
+1, 3, 5 of §18.8 (ii) kept, clause 2 demoted (the weight does not enter the column's conditional law at all) and
+clause 4 discharged (a first moment carries no allowance; exponentiating gives form (P0)). It is **not refuted by
+§18.8 (i)**, whose impossibility argument bounds a conditional **exponential** moment from below and says nothing about a
+first moment — which is the exact sense in which §16.7's (LCR) needed restating. **(NP-F12) is not met**: (LCR^act′) is
+consumable, by Proposition ACT-EQ (i) with w ≡ 1.
+**T19 (d): MET, and the pre-stated (NP-F13) is REFUTED.** **(0a) is strictly weaker than (0b)** (proof in §19.7: (0b)
+needs a level-0 (SDP), for which this lane has no route, there being no U_{-1} to integrate). **Theorem L0** reduces
+(0a) to **(W0-EQ)**, a Laplace-asymptotics statement on **one 3⁴ block, 648 dimensions, 645 transverse after the single
+interior site's gauge directions**, uniform over the compact space of boundary data, at couplings ≥ (1 − θ)u_0 — plus the
+same (BCH-0) residual as every other level. Its equipartition value gives **log C_fc^{(0)} = 13.7254756** (p7 C2),
+twelve orders inside the ceiling. **Level 0 is the most tractable instance in the family, not the hardest**: Lemma DOM′
+is an identity there, with no (F_R) slack and no infimum, so §19.5's extensivity defect cannot occur, and the bare
+Wilson measure's own DLR property replaces the kernel's Markov property.
+**T19 (e): MET** (§19.8): the chain is written out, and the single remaining obstruction is **(BCH-1)** — removable
+altogether by route (ρ2) at three computed prices, after which **(SDP)^A ⇐ (CLS-min) + (RING-cc) + one weight-free
+single-level statement**.
+**T20: MET** (this section). **T21: MET, 0 FAIL** (§19.9; two criteria honestly labelled CONFIRMATORY rather than
+pre-registered). **T22: MET** (§19.11; nothing outside PLD.md, PLD_LOG.md and checks/p7_* was written; no git command
+was run).
+
+**Counted, PROVEN-HERE (unreviewed): 3 items.**
+- **[E7] (1) The read/Markov package:** **Lemma READ** (the exact read-sets of Z, 1_{R,k-1}, Φ_{k-1}, F_<, w),
+  **Finding (BUF-CC)** (the closed-column gap in §18.7.0's use of Lemma BUF, its repair (RING-cc), and the ×82-not-×17
+  price, which settles HANDOFF's open cross-lane disagreement), **Lemma MARG** (§18.7.0's two generators collapse to one
+  level-(k−1) future weight), **Lemma DLR** (the exact elimination of the far weight by the chain's Markov property) and
+  **Theorem W-FREE** ((CEM-2) is not an ingredient; the weight enters only through one local product functional).
+- **[E7] (2) The action-trade package:** **Lemma DOM** and **Lemma DOM′** (the moment's exponent is λ_f times the
+  chain's own — minimised — column action, with λ_f = 24θ(1 + 2Rg_K²) rebuilt from (F_R) and the κ's shown to cancel),
+  **Theorem AT** (the moment is a local coupling-lowering ratio, and its log is the integral of a MEAN), **Proposition
+  ACT-EQ**, **Proposition TRADE** (the typicality price, both currencies), **Theorem OUT** (the outside decomposition:
+  (ACT′) ⇐ (EQ-bc) + (BCH-1)), and the restated **(LCR^act′)**. **Includes the withdrawal of (ACT) and of Proposition
+  CEM1-COLLAPSE (a) (§19.5), which is part of the counted item, not an erratum to it.**
+- **[E7] (3) The level-0 reduction:** **Theorem L0**, the strict ordering (0a) < (0b), the 645-dimensional count, and the
+  refutation of (NP-F13).
+**Not counted:** §19.6's route (ρ1) power count (INDICATIVE) and route (ρ2) (ARGUED); §19.5's refutation of (ACT)
+(ARGUED, resting on an unproven equipartition lower bound); §19.8's chain table.
+**OPEN, newly named here:** **(RING-cc)** (the closed-column ring hypothesis); **(ACT′)_k** (the column-action moment);
+**(LCR^act′)_m** (the restated (LCR)); **(EQ-bc)_k** (conditional equipartition with the boundary charge; weight-free);
+**(BCH-1)_k** / **(BCH-0)** (the boundary charge's first moment under the weighted law — **the single obstruction**);
+**(W0-EQ)** (the level-0 one-block mean-energy statement).
+
+**Status CHANGES to earlier items, with direction.**
+- **DOWNGRADE.** §18.7.2's **Proposition SPLIT** is demoted from "the reduction of (CEM^{COL})" to **a lossy reduction**:
+  it estimates by comparison a ratio that Lemma DLR computes exactly. Consequently **§18.11's "single biggest remaining
+  obstruction = (CEM-2)" is superseded**; the obstruction is (BCH-1). (CEM-1) and (CEM-2) remain well-posed statements;
+  they are no longer the route of record.
+- **DOWNGRADE.** §18.7.0's law class, §18.7.1's (CEM^{COL}) and Theorem NA-PRICE^{E+}'s hypothesis "**N_1(𝒜) R-free**" is
+  **insufficient**: Lemma BUF at level k − 1 needs the **closed** column, (RING-cc) (Finding (BUF-CC)). The implications
+  of §18.7 all stand with the strengthened hypothesis; the hypothesis is to be restated.
+- **DOWNGRADE (cross-lane).** HW §41 item 4's instruction "Please re-read §18.4's ×82 as ×17" is **withdrawn for the
+  level-(k−1) application**: HW's Lemma RING is correct for the OPEN column, and the proof needs the CLOSED one, where
+  the price is ×82 (p7 F1). **§18.4's own ×82 stands.** HANDOFF's cross-lane disagreement 1 is thereby settled, with both
+  lanes right about different objects.
+- **DOWNGRADE (self, same session).** **(ACT)** as stated in §19.4 → **WITHDRAWN** (§19.5), with the extensivity
+  argument; Proposition CEM1-COLLAPSE (a) → withdrawn with it.
+- **UPGRADE.** **(CEM-2) → not needed** (Theorem W-FREE), replaced by the strictly smaller (BCH-1).
+- **UPGRADE.** **(CEM-1): three named ingredients → two**, (b) and (c) being one statement.
+- **UPGRADE.** §18.7.2's "Gaussian heuristic" **log c_1 ≈ 1.82·10⁴** → **identified as the equipartition value of an
+  exact identity**, reproduced to 0.0046 (p7 B1). It is no longer a heuristic; what is open is the mean-action bound, not
+  the arithmetic.
+- **UPGRADE.** The **level-0 clause (0a)** → reduced to one finite-dimensional statement with a computed window constant;
+  **(0a) < (0b)** strictly; and level 0 is reclassified from "the largest residual after the moment" (HW §37, §18.9 M-3)
+  to **the most tractable instance of the family**. (0b) stays OPEN and strictly harder.
+- **UPGRADE.** §18.7.0's two weight generators → **one** (Lemma MARG).
+- **UPGRADE (conditional).** If route (ρ2) is taken, **no statement in the (SDP)^A chain mentions the far weight**.
+- **NO CHANGE.** (CLS-min); §18.7.2 (a)'s representation domination (still OPEN, still the first thing to write);
+  Lemmas CW, KD, MD, DIL-L; Proposition FAR; Lemma BUF as a lemma; Proposition PATCH; (EG-link); (J-NS^cd); Theorem
+  NA-PRICE^E (i); every p4/p5/p6 number.
+**Tally proposal: +3 PROVEN-HERE (unreviewed); 0 OPEN items closed.** Row 10b's residual on route (ii) is no longer
+(CEM^{COL}) as a single statement but the pair **(EQ-bc) + (BCH-1)**, of which the first is weight-free and the second is
+removable by route (ρ2) at a computed price.
+
+**The single biggest remaining obstruction in this scope, named.** **(BCH-1)**: the first moment, under the
+buffered-weighted past law of a pattern in 𝔉_𝔥, of the boundary-forced conditional free-energy excess of a level-k
+cube's column, uniformly in g, k, K, T, 𝔥, R, 𝒜, 𝒜′, F, F_< and λ ∈ [0, λ_f]. It is the **only** item left in the
+(SDP)^A chain whose statement mentions the far weight; it is one scalar per cube and a first moment; and route (ρ2)
+removes it at the price of c_A = 0, ×82, and θ ≤ 6.67·10⁻⁵. **Everything else reduces to (CLS-min) and to (EQ-bc), a
+weight-free, law-class-free, single-level small-field statement whose level-0 case is 645-dimensional.**
+
+## 19.11 FOR OTHER FILES (session 7; not edited)
+
+Nothing below is applied anywhere. Session 7 wrote only PLD.md (appended), PLD_LOG.md (appended) and checks/p7_*. **No
+git command of any kind was run**; no commit, push or PR; no axiom or CL edit; no numeric lock taken or released; no
+other lane's file touched, read-only access only.
+
+**To the PLD owner (next session's in-place pass).**
+1. **Restate §18.7.0, §18.7.1 and Theorem NA-PRICE^{E+}'s hypothesis as (RING-cc)** (the closed column of N_1(𝒜)
+   unconstrained), per Finding (BUF-CC). The implications are unaffected; only the hypothesis moves. Record the ×82 price
+   there, not ×17.
+2. **Record that §18.11's named obstruction is superseded**: (CEM-2) is not an ingredient of (CEM^{COL}) (Theorem
+   W-FREE), and the residual is (BCH-1). Keep (CEM-1)/(CEM-2) as well-posed statements but not as the route of record.
+3. **Replace §16.7's (LCR) by (LCR^act′)** (§19.4 as corrected in §19.5) in every interface line, and delete §18.8 (ii)
+   clause 4 as a separate ask (a first moment carries no allowance).
+4. **§18.7.2's dof = 3n_int·81 = 52488 needs its geometric count stated.** p7 B1 confirms that this dof reproduces
+   p6 D1's 18190.95 through the equipartition identity, but §18.7.2 does not say which set of links it counts. My reading
+   is that it is the level-(k−1) group degrees of freedom the column's top terms involve; if it is instead a two-level
+   count, the identity is unchanged and only the number moves. Please state the count.
+
+**To the HW owner (lane H) — three items, one of them a reversal of §41 item 4.**
+1. **The ring price is ×82, not ×17, for the application node A actually makes.** HW §41 item 4's Lemma RING
+   (|sh_r(N_1X)| ≤ 2^d|sh_r(X)|, r ≥ 1) is correct, and so is its reason "only the OPEN column enters #_{R′}, so the
+   m = 0 term never appears" — **but node A's Lemma BUF is applied at level k − 1, to col_{k-1}(𝒜), and a level-(k−1)
+   cube is R-free only if the CLOSED column of its level-k parent is unconstrained** (Finding (BUF-CC): the open column
+   of a level-(k−1) cube contains the pair (k, π(x))). With the closed column the m = 0 term does appear and HW's own two
+   inequalities give #_R([N_1X]) ≤ 81|X| + 16Σ_{r≥1}|sh_r(X)| ≤ 81‖X‖_sh, i.e. **c_+ = c_A + 82c_U** (p7 F1: 1 + 3^d = 82
+   against 1 + 2^d = 17, ratio exactly 81/16). **So please re-instate ×82 for the level-(k−1) use, keep ×17 for the
+   level-k use, and withdraw §41 item 4's instruction to node A.** This also settles HANDOFF's open cross-lane
+   disagreement 1: both lanes were right about different objects. Consequences for §35.7's table: g²_CRC and n_♯ move by
+   82/17 = 4.82 relative to the session-6 figures on the level-(k−1) row.
+2. **The level-0 clause (0a) is the tractable one, and it is now reduced.** §37 records (0a) and (0b) as "OPEN on both
+   sides, the largest residual after the moment". §19.7's Theorem L0 reduces **(0a)** to one finite-dimensional
+   statement — mean plaquette energy on a single 3⁴ block, 645 transverse dimensions, uniform in the boundary datum, at
+   couplings ≥ (1 − θ)u_0, with the boundary free-energy excess subtracted — plus the same (BCH-0) residual as every
+   other level, and computes the resulting window constant log C_fc^{(0)} = 13.73 (p7 C2). **(0b) is strictly harder**
+   (it needs a level-0 (SDP), for which there is no U_{-1} to integrate). **Please state (E2^𝔉′)'s level-0 clause as (0a)
+   only**, and drop (0b): node A has a route to (0a) and none to (0b).
+3. **§37's own diagnosis is confirmed and sharpened.** §37 ends with "ν^w(·) ≤ ν(·)/E_ν[w] … so (E2^𝔉′) fails unless
+   conditioning on the coarser constraints costs no volume factor — a positivity-of-density statement with a boundary
+   allowance". §19.2's Lemma DLR shows that **no such positivity is needed for the column's conditional law**: the far
+   weight factors out exactly by the chain's Markov property across one R-free ring, at cost 1. The positivity
+   requirement survives **only** for the boundary charge's first moment, (BCH-1) — and route (ρ2) discharges even that
+   from CRC-2T′'s own induction, at the patch allowance e^{82c_U‖P‖_sh} that §37 already asks for. **So §37's "that is
+   the exact residual of the whole HW route, and it is one statement, owned by node A" is right, and the statement is
+   (BCH-1), not (CEM-2).**
+
+**To the RLARGE integrator.**
+1. **Row 10b, route (ii)** should name its hypotheses as **(CLS-min) + (RING-cc) + (EQ-bc) + (BCH-1)**, not
+   (CLS-min) + (CEM^{COL}); and should record that (BCH-1) is removable by route (ρ2) at the price c_A = 0 → the patch
+   allowance, ×82, and θ ≤ 6.67·10⁻⁵. Add rows **(RING-cc)**, **(ACT′)**, **(LCR^act′)**, **(EQ-bc)**, **(BCH-1)**,
+   **(BCH-0)**, **(W0-EQ)** [all node A], and mark **(CEM-2)** as *not on the route of record* (not refuted; superseded).
+2. **K12 needs both readings recorded.** On route (ii) without (ρ2), §18.7's θ ↑ 1/24 stands. **With (ρ2) the colouring
+   step forces θ ≤ 1/(24·5^d) = 6.67·10⁻⁵** (p7 E1) — still 80× above the feared fallback θ ≈ 8·10⁻⁷, so n_H rises by
+   ≤ 5^d = 625 rather than by ≈ 5·10⁴. Please record the pair, not a single number.
+3. **The critical-path item 1 label should change** from "(E2^𝔉′): good-buffer screening" to "**(EQ-bc) + (BCH-1)**: a
+   conditional equipartition bound for the column action, plus the boundary charge's first moment", because §19.2 shows
+   the screening content is a **Markov** statement that is already proven, not an estimate to be obtained.
+
+**To the owners of NORMS.md / PROOF.md (one connection, offered as a question, not a claim).**
+§19.6's route (ρ1) — the outward regress for the boundary charge — is **logarithmically divergent at d = 4 under naive
+power counting and convergent at d = 5** (p7 D1/D2, labelled INDICATIVE). That is the same marginality NORMS §N5 proves
+for the per-level route ("the d = 4 cubic vertex is marginal, so A ≥ 1 in every scale-covariant norm") and the same one
+the brief's D3 diagnosis attributes to counting every fine leg at its sup size. **Question for those owners: is the
+Bianchi/derivative cancellation that takes K_p^sharp from 2.27 to ≈ 0.12 on closed inputs the same resummation the
+boundary-charge regress needs?** If it is, (BCH-1) and the constants problem are one problem and should be worked once;
+if it is not, (ρ1) is a dead route and (ρ2) is the only one. I cannot decide this from inside this lane.
+
+**To the lead (HANDOFF.md).**
+- **Cross-lane disagreement 1 is settled** (item 1 to HW above): ×17 open column, ×82 closed column, the proof needs the
+  closed one. It can come off the "left open on purpose" list.
+- **The critical-path entry 3 should be rewritten.** It currently reads "(CEM-1) and (CEM-2), plus the level-0 clause".
+  The honest replacement after session 7: *"(EQ-bc) — a conditional equipartition bound for the column action, weight-free
+  and law-class-free — plus (BCH-1), the boundary charge's first moment under the weighted law, which route (ρ2) can
+  remove at a computed price. (CEM-2) is not an ingredient (PLD Theorem W-FREE). The level-0 clause is reduced to one
+  645-dimensional one-block statement (PLD Theorem L0) and is the most tractable instance, not the largest residual."*
+- **For the next review's brief, three places to attack first:** (i) **Lemma DLR (i)'s factor audit** — it is the whole
+  basis of the session and a single missed factor of the past law's density breaks it; (ii) **§19.5's withdrawal of
+  (ACT)** — the extensivity refutation rests on an unproven equipartition lower bound, so a reviewer should decide
+  whether the withdrawal was necessary or over-cautious; (iii) **Finding (BUF-CC)** — it reverses a binding instruction
+  in HW §41 and changes a constant two lanes quote, so it should be re-walked independently against HW §30.1's own
+  definition of "R-free".

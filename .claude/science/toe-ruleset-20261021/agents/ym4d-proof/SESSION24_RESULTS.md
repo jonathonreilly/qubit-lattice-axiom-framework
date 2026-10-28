@@ -1256,3 +1256,84 @@ file edited to fix it.**
 **Flagged for CONST_T's owner: §2.4(d)'s A := 36·C_1·|N|^{1/σ′} appears to be 18** — its own
 Z = 144·C_1·Q·β⁴d⁻²Σ is consistent with 18, not 36. Not used, so **every number above is up to 2.83×
 pessimistic.**
+
+## PLD session 7 — (CEM-2) DISSOLVED, (LCR) restated past its own impossibility, ring price settled.
+## §19.0-§19.11. Append-only verified by hash (head -2931 = 312681 bytes, md5 4a6a0f25…, pre-session stat).
+## 13 criteria, 0 FAIL, four negative controls as designed. Tally: +3 PROVEN-HERE, 0 OPEN closed.
+
+### (CEM-2): not closed — **DISSOLVED as an ingredient**
+**Lemma DLR + Theorem W-FREE (PROVEN-HERE): across one R-free ring the chain's MARKOV PROPERTY eliminates
+the far weight EXACTLY, at cost 1.** The factor audit shows the only density factors reading the
+column-interior level-(k-1) links are the kernels of K_{k-2} and the per-cube badness indicators, while w
+and F are measurable w.r.t. the complement — so E_ν[Z·F] = E_ν[ζ·F] with ζ an explicit **local product**
+functional of U_{k-2} inside region(S). **Therefore §18.7.2's Proposition SPLIT is a LOSSY reduction** — it
+estimates by comparison a ratio that is **computable exactly** — and **(CEM-2) is NOT an ingredient of
+(CEM^COL).** §18.11's named obstruction is **superseded.** *Honest negative kept by the worker: ζ is not
+bounded pointwise, so this relocates rather than closes.*
+*Lead: I briefed this worker to attack (CEM-2) as the chain's binding obstruction. It was not an ingredient
+of the thing it was supposed to gate. Third time today that the named wall dissolved on inspection.*
+
+**Typicality was the right mechanism, and it is now PRICED:** 1/(1-λ_f) per cube in the exponential
+currency, 1 + log⁺C in the first-moment currency. The event route gives u·ε_1² = 4.489e15, which in the
+first-moment currency **misses §18.8's own ceiling by 2.2445e6 *in the log*** (p7 A2) — a sharper statement
+than "they differ by 4.489e15". **The structural reason the thresholds cancel:** the event bounds the
+*field* at a g-independent threshold (costing a factor u to convert to action), while the measure prices it
+in *action* units where the suppression rate is the same u. Residual: **(BCH-1)**, strictly smaller than
+(CEM-2) in four ways (first moment; one scalar per cube; outside field only; no comparison of two laws).
+
+### (CEM-1): three parts → two, with a self-correction
+- **(a) the main-term reduction off G_Q: unchanged, still OPEN, still first to write.** The worker claimed
+  in §19.4 that it was unnecessary and **WITHDREW that in §19.5** (appended, not edited): the trade compares
+  the *minimised* column action with the exponent of the level-(k-1) **marginal**, and the fluctuation terms
+  between them are exactly the representation's content. **§18.7.2 was right.**
+- **(b) + (c) are ONE statement. Theorem AT:** the moment is a local coupling-lowering ratio whose log is
+  ∫₀^{λ_f} E_λ[𝔞^col] dλ — so the u-interval is the **integration variable of an exact identity**, not a
+  separate hypothesis on CL^J/R1^J activity bounds.
+- **Also withdrawn: (ACT) as first stated** (its functional is extensive, ≍ 81^{k+1}; refutation ARGUED),
+  repaired by **Lemma DOM′** with the minimised action.
+- λ_f = 24θ(1 + 2Rg_K²) **rebuilt** from (F_R); **the κ's cancel, so the side condition is λ_f < 1, not
+  λ_f < κ** (negative check recorded).
+
+### >>> (LCR) restated past its own impossibility: **(LCR^act′)**, a FIRST moment
+E_{λ,wF}[𝔞^col_S] ≤ B|S| for λ ∈ [0, λ_f], uniform in g, m, K, T, 𝔥, R, 𝒜, 𝒜′, F, F_<. Against §18.8(ii):
+clauses **1, 3, 5 kept**, clause 2 (law class) **demoted** (the weight never enters the column's conditional
+law), clause 4 (allowance) **discharged**. **It escapes §18.8(i)'s impossibility because that argument
+bounds a conditional EXPONENTIAL moment from below and says nothing about a FIRST moment.** Clause 5 becomes
+B ≤ 2e9; the equipartition value is 52488 — **4.58 decades inside** (p7 B3).
+**p7 B1: (dof/2)·ln(1/(1-λ_f)) = 18190.954606 against p6 D1's recorded 18190.95** — so §18.7.2's "Gaussian
+heuristic" is the **equipartition value of an exact identity.**
+*PLD §18 had recorded that "no certificate for (LCR) as written is possible". The restatement is the way
+through: the impossibility was about the exponential moment, and the chain only needs the first.*
+
+### Level 0: (0a) reduced, and HW's reading of it reversed
+**(0a) is strictly weaker than (0b)** (PROVEN: (0b) needs a level-0 (SDP), and there is no U_{-1} to
+integrate). **Theorem L0: (0a) ⟸ (W0-EQ) + (BCH-0)**, where (W0-EQ) is a Laplace statement on **one 3⁴
+block, 648 dimensions, 645 transverse**, uniform in the boundary datum; equipartition gives
+log C_fc⁽⁰⁾ = 13.7254756 (p7 C2). **Level 0 is the MOST TRACTABLE instance, not the largest residual** —
+Lemma DOM′ is an *identity* there, and the bare Wilson measure's DLR replaces the kernel's Markov property.
+**HW §37 should state the level-0 clause as (0a) only.** (NP-F13) refuted.
+
+### Single remaining obstruction to (SDP)^A: (BCH-1)
+The first moment, under the buffered-weighted past law, of the boundary-forced conditional free-energy
+excess of a column. **It is the ONLY item in the chain whose statement still mentions the far weight.**
+**Route (ρ2) removes it** (pointwise (m1) w ≤ w^{-𝒞}, ring relaxation bought from CRC-2T′'s own induction, a
+colouring/Hölder step), leaving **(SDP)^A ⇐ (CLS-min) + (RING-cc) + one weight-free single-level statement
+(EQ-bc)**. Three declared prices: ×82; **c_A = 0 given up** for the patch allowance HW already asks for; and
+θ ≤ 1/(24·5⁴) = 6.67e-5, **still 80× above the feared fallback**. ARGUED, with the circularity condition
+declared.
+**Route (ρ1) (outward regress) is log-DIVERGENT at d = 4 and convergent at d = 5** (p7 D1/D2, INDICATIVE) —
+**the same marginality as NORMS §N5**, raised by the worker as a question to those owners.
+*Lead: d = 4 marginality now surfaces independently in two unrelated lanes. Worth treating as a structural
+feature of the problem rather than a coincidence of two estimates.*
+
+### Two cross-lane consequences
+1. **Finding (BUF-CC): a gap in §18.7.0.** Lemma BUF at level k-1 needs the **closed** column of N_1(𝒜)
+   unconstrained, not "N_1(𝒜) R-free". Repair: hypothesis **(RING-cc)**; implications unaffected.
+2. **>>> THIS SETTLES HANDOFF's open cross-lane disagreement 1, AND REVERSES HW §41 item 4 — and my steer
+   was wrong.** **×17 is right for the OPEN column** (level-k BUF); **×82 for the CLOSED column**
+   (level-(k-1) BUF), **which is the application the proof actually makes.** p7 F1: 1 + 3⁴ = 82 against
+   1 + 2⁴ = 17, **ratio exactly 81/16. §18.4's ×82 stands.**
+   *I recorded in HANDOFF.md that "HW's is the better-supported figure" because Lemma RING had a proof and a
+   check. Both lanes were right about different columns; the one the proof uses is PLD's. HANDOFF corrected.*
+
+**Four downgrades recorded, one of them of the worker's own §19.4.**

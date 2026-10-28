@@ -108,8 +108,13 @@ is a **lane-A linear-package item** now, not lane B's.
 - **Promote (BB-mix) to BFT-6.**
 
 ## Two cross-lane disagreements left open on purpose
-1. **The price of node A's extra R-free ring:** HW's Lemma RING says **×17** (with a proof and check w6 G6);
-   PLD says **×82**. HW's is the better-supported figure; a reviewer should settle it.
+1. ~~The price of node A's extra R-free ring (×17 against ×82).~~ **SETTLED by PLD session 7 (p7 F1), and
+   the lead's steer was wrong.** Both lanes were right about different columns: **×17 is correct for the
+   OPEN column** (level-k BUF), **×82 for the CLOSED column** (level-(k-1) BUF) — **and the closed column is
+   the application the proof actually makes**, so **§18.4's ×82 stands** and **HW §41 item 4 is reversed**.
+   1 + 3⁴ = 82 against 1 + 2⁴ = 17, ratio exactly 81/16. *The earlier version of this file called HW's the
+   better-supported figure because Lemma RING carried a proof and a check; it did, for a column the proof
+   does not use. A proof of the wrong statement is not better support.*
 2. **TF-2:** HW recorded both positions and did not propagate. Node A says PLD §17.2's law already carries
    the finer spectators, and HW session 6 agrees. A reviewer should close it.
 

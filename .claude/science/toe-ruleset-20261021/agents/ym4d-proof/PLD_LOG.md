@@ -136,3 +136,53 @@
 - Files written this session: PLD.md (appended only), PLD_LOG.md (appended only), checks/p6_criteria.md, checks/p6_pld.py,
   checks/p6_out.txt, checks/p6_err.txt, checks/p6_time.txt. Nothing else edited anywhere; no commits, pushes or PRs; no git
   command run; no axiom or CL edit; no numeric lock taken or released.
+
+## Session 7 (lane E, 2026-10-28)
+- Pre-session stat of PLD.md: 312681 bytes, 2931 lines, md5 4a6a0f251567738cebf28cfdaac352ea (= PLD_LOG's session-6
+  closing stat exactly; nothing changed PLD.md between the sessions).
+- 14:03:44 UTC (`date -u`): **FIRST EDIT of session 7** = the PRE-STATED section **§19.0** (statements only; cites nothing
+  produced in session 7), appended. Post-append stat: **320712 bytes, 3012 lines, md5 6fff447c91bf896eba3ebc205dbfae2c**;
+  the §19.0 append is therefore **8031 bytes, 81 lines**. Targets T19 (a)-(e), T20 (status discipline), T21 (check p7),
+  T22 (FOR OTHER FILES). Written before checks/p7_criteria.md and before any session-7 check, as the brief's binding
+  rule 1 requires.
+- Scope owned this session: a new "# Session 7" appended to the END of PLD.md, this session-7 entry appended to
+  PLD_LOG.md, and new files under checks/ prefixed `p7_`. **APPEND ONLY**: no line of §0-§18 of PLD.md and no earlier line
+  of PLD_LOG.md is altered. Nothing else anywhere is written. No git command is run at any point.
+- 14:06-14:22 UTC: derivations §19.1-§19.8 appended, **all before checks/p7_criteria.md existed**.
+  §19.1 Lemma READ + **Finding (BUF-CC)** (the closed-column gap in §18.7.0's use of Lemma BUF; repair (RING-cc); price
+  ×82 not ×17, settling HANDOFF's cross-lane disagreement 1) + Lemma MARG. §19.2 **Lemma DLR** and **Theorem W-FREE**
+  (the far weight is eliminated exactly by the chain's Markov property across one R-free ring; (CEM-2) is not an
+  ingredient of (CEM^{COL})). §19.3 Lemma DOM + **Theorem AT** (the moment is a local coupling-lowering ratio whose log
+  is the integral of a MEAN; λ_f = 24θ(1 + 2Rg_K²) rebuilt from (F_R); the κ's shown to cancel, so the side condition is
+  λ_f < 1 and not λ_f < κ). §19.4 (ACT), Proposition ACT-EQ, Proposition CEM1-COLLAPSE, the restated (LCR).
+  **§19.5 is a CORRECTION of §19.4, appended not edited: (ACT) as stated there is WITHDRAWN** (its functional 𝔄^col is
+  extensive in the column's fine volume, ≍ 81^{k+1}, so its own heuristic value is e^{c·81^k}; refutation labelled
+  ARGUED), repaired by **Lemma DOM′** with the MINIMISED column action 𝔞^col, and **Proposition CEM1-COLLAPSE (a) is
+  withdrawn with it** — §18.7.2's ingredient (a) is needed after all, and the reason is now sharp. §19.6 Proposition
+  TRADE + **Theorem OUT** ((ACT′) ⇐ (EQ-bc) + (BCH-1)), the status of (CEM-2), and routes (ρ1)/(ρ2) priced. §19.7
+  **Theorem L0** ((0a) < (0b) strictly; (0a) reduced to one 645-dimensional one-block statement). §19.8 the (SDP)^A chain
+  and the single obstruction.
+- 14:20:23 UTC: **checks/p7_criteria.md** written (md5 ceaf6aa8f145413a3dd4f35ea673c955, 5869 bytes), BEFORE the script.
+  **No constant derived in session 7 appears in a PASS/FAIL condition**; every number is sourced inline to RLARGE / HW /
+  PLD sessions ≤ 6 (p4/p5/p6 records) or is pure lattice geometry. Per [RHW5-fix W5-1] each criterion is labelled
+  PRE-REGISTERED (eleven) or **CONFIRMATORY (two: A2 and C2, reproductions of hand arithmetic already in §19.6/§19.7 —
+  these are NOT pre-registrations and are labelled as such)**. 14:20:56 UTC: checks/p7_pld.py written
+  (md5 d182f1d6f8d662bec4066e38d4b6cf30); not edited after the run.
+- 14:21 UTC: ONE run, 17.51 s real, 19.6 MB max RSS, exit 0, nice 10, one thread (OMP/OPENBLAS/MKL/VECLIB = 1),
+  PYTHONDONTWRITEBYTECODE=1, `python3 -I`, load 2.99/2.58/2.31 at launch. **The numeric lock was NOT taken**, per the
+  session-24 brief's exemption for exact rational/symbolic arithmetic in plain python: p7_pld.py imports only
+  `fractions`, `decimal`, `sys` — no numpy, no BLAS, no linear algebra, no sampling. Full record in checks/p7_time.txt.
+  No re-run, no trap, no pkill, no process left.
+  **SUMMARY AS RUN: 13 criteria, 0 FAIL, all four negative controls (A3, B2, C1n, D2) as designed.** The load-bearing
+  one is **B1**: (dof/2)·ln(1/(1 − λ_f)) = 18190.954606 at dof = 52488, λ_f = ½, against p6 D1's independently recorded
+  18190.95 — so §18.7.2's "Gaussian heuristic" is the **equipartition value of an exact identity**, as §19.5 claims.
+- 14:22-14:26 UTC: §19.9 (check record incl. the CONFIRMATORY labelling and the narrow scope statement), §19.10 (outcome
+  against §19.0, status CHANGES with direction including **four downgrades, one of them of this session's own §19.4**,
+  tally +3 PROVEN-HERE unreviewed, the single obstruction = **(BCH-1)**), §19.11 (FOR OTHER FILES: PLD owner, HW owner
+  incl. the reversal of HW §41 item 4, RLARGE integrator, NORMS/PROOF owners, the lead) appended.
+- **Append-only VERIFIED by hash, not by assertion:** `head -2931 PLD.md` is 312681 bytes with md5
+  **4a6a0f251567738cebf28cfdaac352ea** — identical to the pre-session stat — so no line of §0-§18 was altered. Final
+  PLD.md **389932 bytes, 3705 lines, md5 4170694696b905ee612199fd83465b81**.
+- Files written this session: PLD.md (appended only), PLD_LOG.md (appended only), checks/p7_criteria.md, checks/p7_pld.py,
+  checks/p7_out.txt, checks/p7_err.txt, checks/p7_time.txt. **Nothing else edited anywhere; no commits, pushes or PRs;
+  no git command run at any point; no axiom or CL edit; no numeric lock taken or released.**

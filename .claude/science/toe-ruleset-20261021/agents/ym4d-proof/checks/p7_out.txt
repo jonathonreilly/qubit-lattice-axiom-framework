@@ -1,0 +1,16 @@
+PASS A1: u*eps1^2 = (eps1/gK)^2 exactly: True ; value = 4.489000e+15 (p6 A2 recorded 4.489e15)
+PASS A2: margin (1-lam)*u*eps1^2 = 2.2445e+15 ; log-miss ratio vs 1e9 ceiling = 2.2445e+06
+PASS A3: negative control: with eps1 := gK the quantity is 1 (must be exactly 1)
+PASS B1: (dof/2)*ln(1/(1-lam)) at dof=52488, lam=1/2 = 18190.954606 ; p6 D1 recorded 18190.95 ; diff 0.00460661
+PASS B2: negative control: E(lam=0) = 0 (must be 0); E(lam=1-1e-6) = 362574.25908 (must exceed 1e5)
+PASS B3: equipartition B = dof/(2(1-lam)) = 52488 vs restated ceiling 1e9/lam = 2.00000000E+9 ; margin 4.5809 decades
+PASS C1: 1/(1-x) <= 1+2x for x in {2^-1..2^-10}: 0 violations
+PASS C1n: negative control at x=3/4: 1/(1-x) = 4 vs 1+2x = 5/2 (inequality must FAIL)
+PASS C2: level-0 window log C_fc = ((3*216-3)/2)*ln(1/(1-1/24)) = 13.7254756
+PASS D1: d=4 exponent = -1 ; increments 2.302135 and 2.302540 vs ln10 = 2.302585 (log-divergent)
+PASS D2: negative control d=5: exponent = -2 ; sum to 1e5 = 1.64492406 vs pi^2/6 = 1.64493406 (convergent)
+PASS E1: chi = 5^4 = 625 ; theta_max = 1/(24*chi) = 6.6667e-05 ; recorded fallback theta 8e-7
+PASS F1: closed-column price 1+3^d = 82 ; open-column price 1+2^d = 17 ; ratio 3^d/2^d = 81/16
+
+SUMMARY: 13 criteria, 0 FAIL
+FAILS: none

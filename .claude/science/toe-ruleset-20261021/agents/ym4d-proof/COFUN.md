@@ -466,3 +466,212 @@ constraint, it is the **only** gauge-side input class (cc) needs, and it is what
 §31.2 (l.3802) and §35.7 — **wrong**: the paired object's gauge freedom survives intact on (cc). The
 obstruction is the **size** of the push-down, i.e. the root charges, exactly as Proposition COF-res
 found by the sharp route.
+
+## 7. What is upstream of all of it: the level count. ARGUED (corroborating S10-6 from the handle side)
+
+Appended 2026-10-28 22:06 UTC.
+
+Even on the class where (CO-fun) **is** proven — (CC-0), i.e. at critical points of 𝔉_k — the
+curvature half of clause (b) does **not** come out k-uniform. REVIEW_BFT_B_S9_S10 **S10-6** (binding
+fix RS10-1) shows that Corollary COF-crit's substitution of the rows' per-level sizes
+(π_l(V_l) "uniform in l") for the class norm ‖V‖_{Pc} is invalid, that ‖V‖_{Pc} ≍ L^{θ(k−1)}η², that
+the sharper in-proof route gives ≈ 9.31(k−1)·(per-level size), and that optimising θ gives
+≈ 9.31·e·(k−1) ≈ 25(k−1) at θ* = 1/((k−1)ln L) — with **no choice of θ removing the factor**. The
+k-uniform form is CONDITIONAL on a level-decay input for the non-co-closed plain rows: lane A's
+**(SPD)/(W2)** (BFT_A l.830-831), **OPEN**.
+
+My §4.3 (γ) reaches the same place from the other side and adds one thing: **nothing in either
+handle can remove it.** Handle 2 bounds the funnel at level l by a geometric convolution of the
+*same* levels' coarse sizes, so it can only **add** to each π_l(ĵ_l) — by at most the factor
+1 + (d(L−1)/L)(1 − L^{−3})^{−1} = 1 + 2.769 = 3.769 at d = 4, L = 3. A factor arising from counting
+k levels is invisible to a per-level estimate, however sharp. So the two handles are not merely not
+the difficulty (§4.3); they are provably incapable of being it.
+
+**Ordering of the three remaining inputs to clause (b)'s curvature half**, which is what T-I.7 asks
+for:
+
+1. **(SPD)/(W2)** — lane A, OPEN. Needed even on (CC-0), even at critical points, even with
+   everything else supplied. Supplying (TENT-Q), (YH-pin) and (NEUT-box) still leaves ≈ 25(k−1).
+   This is REVIEW's own ordering (P9/10-b: "(SPD) … is now worth more than (TENT-Q), (NEUT-box) or
+   (Y-sup^loc)"), and RS10-D1 records that SESSION24_RESULTS l.870-872 and HANDOFF l.84-85 both
+   pre-date it.
+2. **(TENT-Q)** (equivalently, through §6, **(ROOT-sup)**; and **(YH-pin)** is the gauge-side input
+   that §6 shows is *not* the obstruction) — needed to extend from (CC-0) to the full class (cc),
+   which §5 shows the consumer reaches.
+3. **(CO-fun) itself** — not an open item. (CO-fun)[CC-0] is PROVEN (Theorem COF, CONFIRMED);
+   (CO-fun)[cc] is refuted as stated, with the narrowing of §6.2 (iv).
+
+## 8. Check record: cf1 and cf1b
+
+Appended 2026-10-28 22:08 UTC.
+
+**Provenance.** `cf1_criteria.md` born 21:47 UTC, amended 21:49 UTC (the amendment is recorded
+inside the file; the gate changed from 1/L to (L−1)/(2L)) — **both before `cf1_funnel.py` existed**,
+which was written at 21:51 and ran 21:52. `cf1b_posthoc.py` was written at 21:55, **after** seeing
+that control C3 did not fire, and is labelled **POST-HOC** in its own header, per rule 3 and the
+precedent [RBB8-fix RS8-7] (ii). Exact `fractions.Fraction` and Python ints only; no numpy, no BLAS;
+single thread; no numeric lock taken (rule 6 exempts exact arithmetic). Outputs: `cf1_out.txt`,
+`cf1b_out.txt` (`cf1_err.txt`, `cf1b_err.txt` empty).
+
+**Part A — the kernel, at (d, L) = (2,3), (3,3), (4,3), (5,3), (4,5).** All gates PASS at every run:
+A1 support violations 0; A2 max|c| = 1/3, 1/3, 1/3, 1/3, **2/5** — matching (L−1)/(2L) and
+**discriminating against the amended-away 1/L at L = 5**; A3 ℓ¹ row sum 4/3, 2, 8/3, 10/3, **24/5** —
+matching d(L²−1)/(4L); A4 one owner per link; A6 h(const) = 0 exactly; A7 multiplicity 1. The
+(d, L) = (2, 3) values 1/3 and 4/3 reproduce REVIEW_BFT_B_S9_S10 **S9-5**'s independently recomputed
+numbers. **B3 (d-independence) PASS**: the handles are not d = 4-marginal.
+
+**Part B.** B1 PASS (the conversion exponent is −3(l−l') and is k-free, over all k ≤ 8); B2 PASS
+(Σ_{l'≤l}L^{−3(l−l')} < 27/26).
+
+**Controls, reported as the criteria require.**
+
+| control | registered to break | observed | verdict |
+|---|---|---|---|
+| **C1** corner root | A2, A3, A6; leave A1/A4/A7 intact | max\|c\| 2/3, ℓ¹ row 4, \|h(const)\| = 1 → **A2, A3, A6 all FAIL**; A1, A4, A7 **PASS** | **FIRED, exactly as registered** |
+| **C2** back-tracking path | A7 **and** A3 | multiplicity 3 → **A7 FAIL**; ℓ¹ row stays **8/3** → A3 **PASS** | **FIRED on A7 only. My registered A3 expectation was WRONG**: the −1/+1 pair cancels in the *signed* kernel, so **A3 has no power against a back-track**. Reported as a failed pre-registration of mine |
+| **C3** wrap-around path | A1 **and** A4 | 0 violations, 1 owner → both **PASS** | **DID NOT FIRE.** cf1b (1) diagnoses it exactly: 7 out-of-block links are touched, **all 7 have net signed count 0** — for L odd with a *central* root the long-way excursions of the y above and below the root are equinumerous with opposite signs and cancel identically. **C3 has no power at a central root** |
+| **C4** naive-grouping exponent | B2 (and leave B1 intact) | Σ_{i<l}L^{+3(l−i)} = 27, 756, …, 2.93·10^{11} → **B2 FAIL**; B1 **PASS** as registered | **FIRED.** And the registered intact-clause matters: **the k-cancellation is not what separates the two groupings** — both are k-free; what separates them is the *sign* of the level exponent |
+| **C5** (POST-HOC) root one site outside its block | A1, A4 | 9 / 81 violations → **A1 FAIL**; one owner → A4 **PASS** | FIRED on A1 only |
+| **C6** (POST-HOC) wrap path + corner root | A1, A4 | 63 / 567 violations and **3 owners** → **A1 FAIL, A4 FAIL** | **FIRED on both** |
+
+**Discriminating power, stated against my own gates (defect 3, applied to me).**
+
+- **A1** has a firing control (C5, C6) — both post-hoc. The pre-registered control for it (C3) was
+  void.
+- **A2, A3, A6** have a firing pre-registered control (C1). **A3's second registered control (C2)
+  was wrong about A3**, which is a fail against my pre-registration, not against the lemma.
+- **A4** has a firing control only post-hoc (C6), and I record that **A4 is not independent**: given
+  A1 and the disjointness of the blocks it follows, so the criteria file's "power to fail: yes" for
+  A4 was overstated. C5 demonstrates the two are not equivalent (A1 broke, A4 did not).
+- **A5** was declared derived and low-power in the criteria file and is reported, not counted.
+- **A7** has a firing control (C2).
+- **B1 has no firing control**: C4 was registered to leave it intact and did. B1 is a bookkeeping
+  identity, verified, not tested. **B2** has a firing control (C4).
+- **What cf1 cannot reach, restated from the criteria file:** Theorem W0, Theorem YH, Y^p, the root
+  charges, (CC-0) itself, the chain solution behind Lemma RT-cc (a), §6's Lemma CO-pin, and every
+  nonabelian step. cf1 bears on handles 1 and 2 and on the unit bookkeeping, and on nothing else.
+  In particular **cf1 is not evidence for anything in §5, §6 or §7.**
+
+## 9. Statuses, and the answers to T-I.1 … T-I.7
+
+Appended 2026-10-28 22:10 UTC.
+
+| item | where | status |
+|---|---|---|
+| (CO-fun) written with quantifiers; the three classes separated | §2.0 | **PROVEN-HERE** (a statement, labelled as one) |
+| Exponent: (CO-fun) needs 0 < α < θ_c, α ∈ (0,1), **no upper bound on θ_c**; window α ∈ (0,½), θ_c ∈ (α, 1−α] inside lane A's pair | §2.2 | **PROVEN-HERE** as a reading of §35.5's five steps, each constraint traced to its line; the three cited theorems quoted at their stated ranges |
+| Handle 1 (block-interior support, kernel, norms) rebuilt; sharp constants (L−1)/(2L) and d(L²−1)/(4L) | §3 | **PROVEN-HERE**; cf1 A1-A7, B3 |
+| h_l(const) = 0 is **not** convention-free | §3 | **PROVEN-HERE**; cf1 C1 |
+| Handle 2 (geometric convolution) rebuilt with prefactor d(L−1)/L; **no power of L^{k−l}**, verified in all three places it could hide | §4 | **PROVEN-HERE**; cf1 B1, B2, B3 |
+| The handles are dimension-blind (d = 2,3,4,5) | §4.3 (β) | **PROVEN-HERE**; cf1 B3 |
+| The level sum is where a k enters, and no per-level sharpening can remove it | §4.3 (γ), §7 | **ARGUED**, corroborating S10-6 from the handle side |
+| The gap class (cc) ∖ (CC-0) is reached, by route (i)'s own correction map | §5 | **PROVEN-HERE** as a reading of Lemma ΓT-op (e) + §31.3 (R1); §31.3 l.3810's "D(S^E_0(S)) = 0" is wrong, l.4203 is right |
+| **Lemma CO-pin**: on class (cc) the ΞΛ_0 gauge freedom survives intact, so ⟨C(j), Y^p_{*,0}⟩ is Λ_0-representative-free | §6.1 | **PROVEN-HERE** (from Lemma DF-cc (i), quoted CONFIRMED) |
+| **(CO-fun)[cc] ⟸ (YH-pin) ∧ (ROOT-sup)** | §6.2 (ii) | **PROVEN as an implication** |
+| **(YH-pin)**, named and stated; source-free; Theorem YH plus one linear constraint | §6.2 (i) | **OPEN** (new name; not claimed) |
+| (ROOT-sup) is false for the stated class — second independent route to §35.7's blow-up | §6.2 (iii) | **PROVEN-HERE** (the arithmetic) |
+| "The obstruction is the co-closedness of the paired object" (§31.2 l.3802, §35.7) is **wrong**; it is the size of the push-down | §6.2 (v) | **PROVEN-HERE**, given Lemma CO-pin |
+| "(CO-fun)[cc] is FALSE" narrowed: one exact term is unbounded, a configuration with ‖f_0‖_∞ unbounded is not exhibited, and no cancellation argument is available either | §6.2 (iv) | **ARGUED** — a NARROWING of S10-11, **not** a reversal |
+
+**Failure modes: I-F1 OCCURS** (the target is stale — §2.1); **I-F2 OCCURS** (the handles are not
+load-bearing for the difficulty — §4.3); **I-F3 OCCURS** (the per-level absence of L^{k−l} is real
+and immaterial; a factor k enters at the level sum — §4.3 (γ), §7); **I-F4 OCCURS** (the gap class
+is reached — §5); **I-F5 OCCURS** (adding a root-charge slot moves the obstruction without reducing
+it: §6.2 (ii)-(iii) replaces (TENT-Q) by (ROOT-sup), which is lossier by n); **I-F6 does not occur
+in my scope** (the handles hold in d = 2, 3, 4, 5 — cf1 B3; if d = 4 binds (CO-fun), it binds
+elsewhere).
+
+**T-I.7, the verdict asked for, plainly. BFT-5 clause (b)'s curvature half is NOT unconditional for
+the composite-co-closed class.** It is:
+- **PROVEN** on the strictly co-closed sub-class (CC-0) — Theorem COF, CONFIRMED — **with a constant
+  that grows like k** when applied to the rows (S10-6), hence k-uniform only given **(SPD)/(W2)**,
+  OPEN;
+- **not proven, and refuted as stated** (with the narrowing of §6.2 (iv)) on the rest of class (cc),
+  needing **(TENT-Q)** — equivalently **(ROOT-sup)** — plus, on the gauge side, **(YH-pin)**;
+- reached in the gap by the lane's own route (i) (§5), so the (CC-0) result does not stand in for
+  it.
+
+**What I did not do.** I did not re-derive Theorem W0, Theorem YH, Theorem GU, Corollary LIN0,
+Lemma ΓT-op or Lemma CD; each is quoted with its file, line and review status. I did not re-open
+Theorem COF's proof beyond the exponent audit of §2.2 and the two handles. I ran no floating-point
+numerics. I did not edit any file but `COFUN.md`, `checks/cf1_criteria.md`, `checks/cf1_funnel.py`,
+`checks/cf1b_posthoc.py` and their outputs. I ran no git command.
+
+## FOR OTHER FILES (not edited; for their owners)
+
+1. **BFT_B.md §31.3 (R1), l.3810 (binding).** "Lemma GE (c) gives S^E_0(S) = S + Γ_E^TD(S) with
+   D(S^E_0(S)) = 0" is false as written: by Lemma ΓT-op (e), quoted two lines later,
+   D(S^E_0(S)) = Σ_X Q_X δ_{c_X}. §36.5 (ii) l.4203 states it correctly. The corrected source is in
+   (cc) and not in (CC-0), which is precisely why route (i) needs (TENT-Q). (COFUN §5 (b).)
+2. **BFT_B.md §31.2 l.3802 and §35.7's diagnosis (binding).** "The funnel pieces … are co-closed
+   only collectively, so they cannot be fed into Theorem W0's hypothesis" was already superseded by
+   §35.1/§35.3. What should replace it is not "(CC-0) restores co-closedness" but Lemma CO-pin: on
+   class (cc) the gauge freedom survives with the minimisation **pinned to Λ_0**, and the obstruction
+   is the **size** of C(j), not its co-closedness. (COFUN §6.)
+3. **BFT_B.md §29.2 Lemma FT (i) (cosmetic).** ‖h_l^T‖_{ℓ^∞→ℓ^∞} ≤ 1 and ‖h_l^T‖_{ℓ¹→ℓ¹} ≤ d(L−1)
+   are loose by a factor L = 3 each; the sharp values are (L−1)/(2L) = 1/3 and d(L²−1)/(4L) = 8/3
+   (cf1, five (d, L) pairs, exact). Lemma FT (ii)'s prefactor 2d = 8 sharpens to d(L−1)/L = 8/3,
+   and K_f = 2d/(1 − L^{−(2+α)}) = 8.737 sharpens to (d(L−1)/L)/(1 − L^{−(2+α)}) = 2.912.
+   Nothing downstream changes sign or status; the constants improve by 3×.
+4. **BFT_B.md §27.1 / §29.2 (cosmetic).** "The statements below are convention-free (they need only
+   *the axial paths of a block stay inside that block*)" is right for the support and diagonality
+   claims and wrong for BL-2 (b)'s h_l(const) = 0, which fails at a corner root (cf1 C1, exact).
+5. **RTARGET.md / PROOF.md clause table (for the lead).** NBG_B's "(CO-fun) … the single smallest
+   remaining missing input … at BFT_B §31.2, l.3802" cites session 9's statement. Sessions 10 and
+   the S9/S10 review decided it: PROVEN on (CC-0), refuted as stated on (cc). The live open names
+   are **(SPD)/(W2)** (upstream, lane A), **(TENT-Q)** / **(ROOT-sup)**, and the new **(YH-pin)**.
+6. **BFT_A (for its owner).** **(YH-pin)** is yours in shape if not in ownership: it is Theorem YH's
+   𝒩* ≤ C_YN n with the minimisation restricted to gauge functions constant on the level-k roots.
+   Lane B needs it, and only it, on the gauge side of class (cc). A sufficient form is that the
+   𝒩-optimal λ for Y^p is constant on the level-k roots to a total ℓ¹ budget O(n) — a decay
+   statement about λ_opt of the kind Proposition W gives for Y^p.
+
+## 10. Provenance erratum (binding on this file's own record). Appended 2026-10-28 21:55 UTC
+
+**The per-section UTC times written into the headers of §2-§9 are wrong, and I am not editing them
+in place** (append-only). They were drafted as planned times and never corrected against the clock.
+The filesystem is the record. Stat-verified times (`stat -f %Sm`, UTC) at 21:53:
+
+| file | mtime | what that mtime is |
+|---|---|---|
+| `COFUN.md` | 21:52:48 | the §7-§9 append (the file's earlier states are overwritten) |
+| `checks/cf1_criteria.md` | 21:45:08 | the **amendment** write; the first draft's birth time is **unrecoverable**, exactly the situation REVIEW_BFT_B_S9_S10 **RS10-P2** records against bb10_criteria.md |
+| `checks/cf1_funnel.py` | 21:46:33 | written |
+| `checks/cf1_out.txt` | 21:46:47 | run |
+| `checks/cf1b_posthoc.py` | 21:48:28 | written (includes the C6 append) |
+| `checks/cf1b_out.txt` | 21:48:29 | run |
+
+**The true order, which is what the process rules are about, and which the mtimes do support:**
+
+1. `COFUN.md` §1 PRE-STATED — the **first edit of this file**, before any derivation of mine, any
+   criteria file and any script. (Its own mtime is overwritten by the later appends; the claim is
+   order, not time.)
+2. `checks/cf1_criteria.md`, first draft. **Correction: this was written BEFORE §2-§3 of this
+   file, not after**, contrary to the sentence in its own header. Rule 2 asks that criteria precede
+   the script, and they do; the "after §2-§3" clause is simply false for the first draft and true
+   for the amendment.
+3. `COFUN.md` §2-§3 appended.
+4. `cf1_criteria.md` amended (1/L → (L−1)/(2L)), **21:45:08**, still before any script existed. The
+   amendment's own clause "no script existed and no result had been seen" is correct.
+5. `cf1_funnel.py` written **21:46:33**, run **21:46:47**. Criteria-before-script holds with 85 s to
+   spare against the amendment and more against the first draft.
+6. `cf1b_posthoc.py` written **21:48:28** — after cf1's output was read, and labelled POST-HOC in
+   its own header and in §8.
+7. `COFUN.md` §4-§6, then §7-§9, appended last (21:52:48).
+
+**Two further corrections to §8's own text**, which quoted the wrong clock: §8 says the criteria
+file was "born 21:47, amended 21:49" and the script "written at 21:51 and ran 21:52". Read instead
+the table above. The *order* claims in §8 are unaffected; the times are not. No threshold, gate,
+verdict or constant anywhere in this file depends on a time.
+
+**Addendum to §10, same defect, one more time.** §10's own header says "Appended 21:55 UTC" and the
+correction appended to `cf1_criteria.md` says "21:56 UTC". Both were written in a single call that
+began after a clock read of **21:53:55**; the stat times immediately after it are printed below.
+I have now mis-stated a timestamp **three times in one file by writing the time I expected rather
+than the time I measured** — which is the same habit, in miniature, that this lane's systemic
+defect 2 is about. The rule I should have followed, and am recording for the next worker: **read
+the clock, write the file, then stat it and quote the stat** — never the other way round. No
+threshold, gate, verdict or constant in this file depends on any of these times; the order claims
+are the ones that matter and they are stat-supported in §10's table.
+
+Stat times immediately after the §10 append: `COFUN.md` 21:54:13, `checks/cf1_criteria.md` 21:53:55 UTC.

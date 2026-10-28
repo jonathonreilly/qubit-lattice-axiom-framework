@@ -720,3 +720,89 @@ false inequality for fractional exponents.
 same obstruction as the level-count factor k that HANDOFF already ranks first — and behind it **(N-Q)**,
 which pins θ_A at its proven ceiling and **appears doubled in both contraction conditions: if θ_A < 1,
 the Wilson clause fails at d = 4 outright.**
+
+---
+
+## T55-I — `COFUN.md` (§1-§10, 677 l.) + `checks/cf1_*`. **I-F1: the target was STALE. And (SPD) is upstream of everything.**
+
+**AGAINST THE LEAD AND AGAINST T55-E (D6).** The brief located (CO-fun) at BFT_B §31.2 l.3802 — **that
+is session 9's statement, and session 10 of the same file already decided it.**
+REVIEW_BFT_B_S9_S10 adjudicated: **§35.5 Theorem COF proves it under (CC-0)** (*"correct and I could not
+break it"*, S10-6), and **§35.7 refutes it as stated** (S10-11, CONFIRMED). **T55-E's "single smallest
+remaining missing input" rests on reading §31.2 without §35-§36**, and the lead relayed it unchecked.
+The worker did the re-derivations asked for, then did the work that was actually left.
+
+**THREE classes go by the name (CO-fun)** — the phrase-collision defect again: **(lw)** level-wise
+co-closed, **PROVEN**; **(CC-0)** D(S) = 0, **PROVEN**; **(cc)** composite-co-closed (D(S) root-supported
+and neutral), **FALSE AS STATED**. Decision D1's class is (cc).
+
+**Statement (§2.0), with quantifiers.** There is C_fun < ∞ depending only on (N, L, d, κ_±, α, θ_c) —
+**not** on k, T, the basepoint X_0, the level l, or the source — such that for every k ≥ 1, T ≥ 5,
+basepoint, and every Setting LIN source S in a class 𝒞 ⊂ (P0)+(Pl-c)+(G)+(R) with B_k = 0, the level-0
+response obeys ‖f_0‖_∞ + [f_0]^∞_α ≤ C_fun(‖G^c_0‖_∞ + [G^c_0]_α + ‖j^c_0‖_∞ + ‖j‖_Pc + ‖G‖_Y + ‖s‖_R +
+κ_+‖r^c_{k−1}‖_∞), at m = 0, trivial background.
+
+**Exponent: it needs 0 < α < θ_c, α ∈ (0,1), and NO upper bound on θ_c of its own** — traced step by
+step through §35.5 (GU binds α < θ; BL-5 l.518 says *"no upper restriction on θ"*; COF-size needs only
+θ_c > 0). **So (CO-fun) does not need θ_w^r = 3 and sits inside lane A's proven window. NB7's
+four-window incompatibility does not bind it.**
+
+**Both handles re-derived from the definition, both SHARPER than stated — and neither is where the
+difficulty is (I-F2).** FT (i): sharp norms are ‖h_l^T‖_{∞→∞} = (L−1)/(2L) = **1/3** and
+‖h_l^T‖_{1→1} = d(L²−1)/(4L) = **8/3**, against the file's 1 and d(L−1) = 8 — **loose by 3× each**.
+FT (ii): prefactor sharpens 2d = 8 → d(L−1)/L = **8/3**; K_f 8.737 → **2.912**. **The absence of
+L^{k−l} is real**, checked in all three places it could hide (the unit-conversion exponent is exactly
+−3(l−l′), k-free; constants are (d,L)-only; the handles hold at d = 2,3,4,5, so they are not
+d = 4-marginal). **But I-F3 occurs: the k-factor enters at the LEVEL SUM**, which is geometric only if
+π_l(j_l) decays in l — and the consumer's rows are *"uniform in l"*. **No per-level sharpening can ever
+remove it** (the funnel adds ≤ 3.769× per level).
+
+**NEW, PROVEN-HERE — Lemma CO-pin (§6), and it RELOCATES the obstruction.** On class (cc), with no
+(CC-0): ⟨C(j), dλ⟩ = ⟨D(S), λ⟩ = 0 for **every** λ ∈ Λ_0, so ⟨C(j), Y^p_{*,0}⟩ is exactly
+Λ_0-representative-free and **Theorem W0's gauge-optimisation survives with the minimisation pinned.**
+Consequences: it discharges **half of binding fix RS10-6**; it names **(YH-pin)** (Theorem YH's
+𝒩* ≤ C_YN n with λ constrained constant on the level-k roots — source-free, OPEN); and **§31.2's and
+§35.7's framing is WRONG** — *"the paired object is co-closed only collectively"* is not the obstruction,
+**the gauge freedom is intact**. The obstruction is the **coarse size** π_0(C(j)), carrying
+0.3462·n³·max|Q_X| — **a second independent route to the same blow-up** (L^{3k−3} here against
+COF-res's sharp L^{2k−3}). Honest narrowing, ARGUED not a reversal: **neither route exhibits ‖f_0‖_∞
+unbounded** — both bound one term of a decomposition — and no cancellation argument is available
+either, so the practical verdict is unchanged.
+
+**I-F4 OCCURS — the gap (cc)∖(CC-0) IS reached, by the lane's own route (i).** Lemma ΓT-op (e) gives
+D(S + Γ_E^T D(S)) = Σ_X Q_X δ_{c_X} ≠ 0. **BFT_B l.3810's *"with D(S^E_0(S)) = 0"* is WRONG**; l.4203
+states it correctly. **So a (CC-0) theorem does not stand in for clause (b).**
+
+**VERDICT: BFT-5 clause (b)'s curvature half is NOT unconditional for the composite-co-closed class.**
+PROVEN on (CC-0) only, with a constant growing like k (k-uniform only given (SPD)); on the rest of (cc)
+it needs **(TENT-Q)/(ROOT-sup)** — n³·max_X|D(S)(c_X)| ≤ C(class norms) — **plus (YH-pin)**.
+
+**>>> Smallest named missing thing, in order: (1) (SPD)/(W2) — lane A, OPEN — UPSTREAM OF EVERYTHING.**
+Even on (CC-0) at critical points the curvature half carries ≈ **25(k−1)** (S10-6 / RS10-1). Then
+(2) (TENT-Q)/(ROOT-sup), then (3) the new (YH-pin).
+
+**Checks.** cf1 all gates PASS at (d,L) = (2,3), (3,3), (4,3), (5,3), (4,5), exact Fractions. **Control
+C1 fired exactly as registered** and left A1/A4/A7 intact as registered; **C4 fired**; **C2 fired on A7
+but the worker's registered A3 expectation was WRONG** (signed back-track cancels — reported as its own
+failed pre-registration); **C3 did NOT fire**, and cf1b diagnoses the exact cancellation (7
+out-of-block links, all net zero at a central root) and supplies post-hoc C5/C6, of which **C6 breaks
+A1 and A4**. The worker also records that **A4 is not independent of A1** and that **B1 has no firing
+control**. **§10 is a provenance erratum against itself**: three section timestamps were written from
+expectation rather than measurement; the stat-verified ordering holds, the quoted clock times did not.
+
+---
+
+## >>> CONVERGENCE: three independent lines now name (SPD)/(W2) as the upstream item
+
+- **T55-J (THETAW)**: the **one genuinely empty slot** in the decoupled weight system, and **σ > 0
+  suffices** where the clause is written at exponent 1 — *"materially easier, and it buys the whole
+  region."*
+- **T55-I (COFUN)**: *"upstream of everything"* — even on the proven class the curvature half carries
+  ≈ 25(k−1) without it.
+- **HANDOFF** already ranks the level-count factor k as the lane's first critical-path item — and
+  **T55-J proved the θ question and the k-factor question are ONE question** (BFT_A l.822-824, the same
+  two GAP-1 (F3) plain-current rows).
+
+T55-R is attacking it at positive σ. A second worker (T55-S) now attacks the same clause from the
+k-factor side, since T55-I establishes that **no per-level sharpening can remove it** — so the repair,
+if there is one, is not local.

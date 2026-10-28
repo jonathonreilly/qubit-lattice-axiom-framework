@@ -99,3 +99,41 @@ single link `Z(0, 2)` replaced by `R` (which destroys flatness at the plaquettes
    every torus and every `V` of the class", with no representative named); the separate argument that the
    same failure occurs for the lane's own lift `Z^off` is made in `HESSREL.md` from SF's BNA-F4 and
    Corollary CL-iv's frame-locality, **not** from this check.
+
+---
+
+## AMENDMENT, 2026-10-28 21:53:48 UTC — a defect in MY OWN criteria, disclosed, with the corrected gate
+
+**The defect.** Gate **hr1-A** above says "Compute the exact integer matrix `E := d_Z^*d_Z − d^*d` on
+`R³`-valued **functions** on the torus". That is `d_Z` acting on **0-forms**, i.e. the Faddeev-Popov /
+chain-gauge block (the operator of BFT_B.md l.4578, Lemma FR-price step 4, where `λ` is a 0-form). The
+**Wilson block of `Hess𝔉_k`** is `d_Z^*d_Z` with `d_Z` acting on **1-forms** (`½‖dB_0‖²` of PROOF.md
+l.6613, `B_0` a level-0 1-form). **So hr1-A as pre-registered tested an adjacent operator, not the one
+named in (HESS-rel).** The script `checks/hr1_flat.py` and its output `checks/hr1_out.txt` were already
+run when this was noticed; **they are kept unaltered and are NOT rerun**, and their verdicts stand for
+the operator they actually tested (which is a real lane object — §41.4 step 4's normal operator).
+
+**Status of the original gates after this amendment.** hr1-A and hr1-B remain valid **as evidence about
+the Faddeev-Popov block and about the two defects B1/B2** (B1 and B2 were computed from the plaquette
+data directly and are unaffected by the 0-form/1-form distinction; hr1-C1/C2/C3/C4 likewise stand). They
+are **not** by themselves evidence about the Wilson Hessian block, and nothing in `HESSREL.md` may claim
+they are.
+
+**Corrected gates, pre-registered now, before `checks/hr1_wilson.py` is written (it does not exist at the
+time of writing). These are POST-HOC relative to the first run and are labelled post-hoc wherever they
+are reported.**
+
+- `d_Z` on 1-forms: `(d_Zu)(p) = u(z,μ) + Ad_{Z(z,μ)}u(z+e_μ,ν) − Ad_{Z(z,ν)}u(z+e_ν,μ) − u(z,ν)`
+  (the same convention as above), `p` the plaquette at `z` with `μ < ν`; `d^*` the transpose.
+- **hr1-A′ (the Wilson-block currency gate).** `E_W := d_Z^*d_Z − d^*d` on **1-forms**, on the same exactly
+  flat nonabelian pure-gauge configuration.
+  - **PASS (route survives):** `E_W = 0` exactly.
+  - **FAIL (route refuted):** `E_W ≠ 0`, with an exhibited witness `u` and exact integers `‖E_Wu‖²`,
+    `‖(d^*d)u‖²`.
+- **hr1-A″ (the gauge-fixed block).** `E_H := (d_Z^*d_Z + d_Zd_Z^*) − (d^*d + dd^*)` on 1-forms — the shape
+  of the Hessian with a Feynman fixing. Same PASS/FAIL rule.
+- **Controls, same rules as before and each must behave as stated or the corresponding gate is withdrawn:**
+  **hr1-C1′** constant gauge ⟹ `E_W = E_H = 0` (control fires iff both are `0`);
+  **hr1-C2′** abelian ⟹ `E_W = E_H = 0` (control fires iff both are `0`);
+  **hr1-C4′** the exhibited witness must satisfy `‖(d^*d)u‖² > 0`.
+- **hr1-D′** the flatness precondition is re-checked by the new script independently.

@@ -1,0 +1,92 @@
+check nd1 -- T55-P.  L=3, d=4, block radius 1, 24 coordinate orders.
+
+supports: Q_root [459, 459, 459, 459] | Q_str^LP [135, 135, 135, 135] | Q_str^NORMS [81, 81, 81, 81] | h 216
+row l1 of h = 8/3 (= 2.6666666666666665)
+
+### gate A  (slice identity  Q_root = Q_str^LP - d.h)
+   mu=0: differing entries = 0
+   mu=1: differing entries = 0
+   mu=2: differing entries = 0
+   mu=3: differing entries = 0
+   gate A: PASS
+### control A' (designed to FAIL: the same identity with NORMS sec.N1's Q_str)
+   mu=0: differing entries = 108
+   mu=1: differing entries = 108
+   mu=2: differing entries = 108
+   mu=3: differing entries = 108
+   control A': FAILED AS DESIGNED
+
+### gate B  (||Q_root||_{inf->inf} > L ?)
+   mu=0: ||Q_root|| = 205/27 = 7.592593   (L = 3)
+   mu=1: ||Q_root|| = 205/27 = 7.592593   (L = 3)
+   mu=2: ||Q_root|| = 205/27 = 7.592593   (L = 3)
+   mu=3: ||Q_root|| = 205/27 = 7.592593   (L = 3)
+   gate B: PASS
+### control B' (designed to FAIL the '> L' test: the same code path on Q_str^LP)
+   mu=0: ||Q_str^LP|| = 3
+   mu=1: ||Q_str^LP|| = 3
+   mu=2: ||Q_str^LP|| = 3
+   mu=3: ||Q_str^LP|| = 3
+   control B': FAILED AS DESIGNED
+
+level-2 supports: Q^(2) [47385, 47385, 47385, 47385] | Q_str^(2) [12393, 12393, 12393, 12393]
+
+### gate C  (exact values, and the session-24 bounds)
+   j=1: ||Q^j|| = 205/27 = 7.592593  (all four directions equal: True)
+        target 205/27  | sharp bound 25/3  | q0*L^j = 11  | L^j = 3 | p_L^j = 11
+   j=2: ||Q^j|| = 2021/81 = 24.950617  (all four directions equal: True)
+        target 2021/81  | sharp bound 91/3  | q0*L^j = 33  | L^j = 9 | p_L^j = 121
+   gate C: PASS
+   control C' (value strictly between L^j and p_L^j at both j): holds -- neither frame is right, as designed
+
+### gate D  (telescoping at j=2:  Q^(2) = Q_str^(2) - D_2[ev_1 h_0 + h_1 S_0])
+   mu=0: differing entries = 0   (|Q^(2)| = 47385, |rhs| = 47385)
+   mu=1: differing entries = 0   (|Q^(2)| = 47385, |rhs| = 47385)
+   mu=2: differing entries = 0   (|Q^(2)| = 47385, |rhs| = 47385)
+   mu=3: differing entries = 0   (|Q^(2)| = 47385, |rhs| = 47385)
+   gate D: PASS
+### control D' (designed to FAIL: far-end shift L e_mu instead of L^2 e_mu)
+   mu=0: differing entries = 33534
+   mu=1: differing entries = 33534
+   mu=2: differing entries = 33534
+   mu=3: differing entries = 33534
+   control D': FAILED AS DESIGNED
+
+### gate E  (root covariance through the composite: Q^(j)(d_0 lam) = lam(L^j e_mu) - lam(0))
+   j=1 mu=0: got 42, want 42  -> ok
+   j=1 mu=1: got 18, want 18  -> ok
+   j=1 mu=2: got 0, want 0  -> ok
+   j=1 mu=3: got 0, want 0  -> ok
+   j=2 mu=0: got 774, want 774  -> ok
+   j=2 mu=1: got 162, want 162  -> ok
+   j=2 mu=2: got 0, want 0  -> ok
+   j=2 mu=3: got 0, want 0  -> ok
+   gate E: PASS
+### control E' (designed to FAIL: Q_str^LP in place of Q_root; Q_str.d = d.blockmean, not d.ev)
+   j=1 mu=0: got 48, want 42  -> DIFFERS (fires)
+   j=1 mu=1: got 18, want 18  -> agrees
+   j=1 mu=2: got 0, want 0  -> agrees
+   j=1 mu=3: got 0, want 0  -> agrees
+   j=2 mu=0: got 954, want 774  -> DIFFERS (fires)
+   j=2 mu=1: got 162, want 162  -> agrees
+   j=2 mu=2: got 0, want 0  -> agrees
+   j=2 mu=3: got 0, want 0  -> agrees
+   control E': FAILED AS DESIGNED  (fired in 2 of 8 cases)
+
+### POST-HOC probe P1 (run after seeing E'; labelled post-hoc, no pre-registered verdict)
+    E' with lam2(x) = x2^3 + x3^3, to see whether the directions in which E' did not fire
+    are a property of lam1 or of the operator.
+   j=1 mu=0: Q_str gives 0, root value 0 -> agrees
+   j=1 mu=1: Q_str gives 0, root value 0 -> agrees
+   j=1 mu=2: Q_str gives 33, root value 27 -> differs
+   j=1 mu=3: Q_str gives 33, root value 27 -> differs
+   j=2 mu=0: Q_str gives 0, root value 0 -> agrees
+   j=2 mu=1: Q_str gives 0, root value 0 -> agrees
+   j=2 mu=2: Q_str gives 909, root value 729 -> differs
+   j=2 mu=3: Q_str gives 909, root value 729 -> differs
+
+### POST-HOC probe P2: ||h . Q_str^(i)|| for i = 0, 1 (the only lossy step of the assembly)
+   i=0: ||h Q_str^(i)|| = 8/3 = 2.666667   (/L^i = 2.666667)
+   i=1: ||h Q_str^(i)|| = 56/9 = 6.222222   (/L^i = 2.074074)
+
+SUMMARY  gateA=True A'=True | gateB=True B'=True | gateC=True C'=True | gateD=True D'=True | gateE=True E'=True

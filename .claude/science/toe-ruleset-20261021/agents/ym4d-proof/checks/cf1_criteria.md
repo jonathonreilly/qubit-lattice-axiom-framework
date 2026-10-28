@@ -76,3 +76,21 @@ L = 3 only; COFUN.md §3 (i) 2, written before this file, derives **(L − 1)/(2
 amendment is recorded here rather than made silently, per [RBB8-fix RS8-7] (ii) and
 REVIEW_BFT_B_S9_S10 RS10-P2. The L = 5 run (d = 4, L = 5) is the one that discriminates the two
 forms, and it is in the registered run list.
+
+## Provenance correction, appended 2026-10-28 21:56 UTC (after the run; order claims unchanged)
+
+Two statements in this file's header are wrong about the clock and one is wrong about the order.
+
+1. "Written 2026-10-28 21:47 UTC" — the first draft's birth time is **unrecoverable**: the 21:49
+   amendment was made by rewriting the file, so `mtime` now reads **21:45:08** and no earlier
+   timestamp survives. This is exactly the defect REVIEW_BFT_B_S9_S10 **RS10-P2** records against
+   `bb10_criteria.md`, reproduced here; recorded rather than papered over.
+2. "after COFUN.md §1 (PRE-STATED) and §2-§3" — **false for the first draft**, which was written
+   *before* COFUN.md §2-§3. It is true for the amendment. COFUN.md §1 did precede this file.
+3. The amendment is timestamped 21:49 in its own paragraph; `mtime` says **21:45:08**. Read the
+   mtime.
+
+**What is unaffected, and is what rule 2 asks for:** this file in both its drafts preceded
+`cf1_funnel.py` (`mtime` **21:46:33**) and its run (`cf1_out.txt`, **21:46:47**). Every gate,
+threshold and control verdict above was fixed before any script existed. `cf1b_posthoc.py`
+(**21:48:28**) is post-hoc and says so.

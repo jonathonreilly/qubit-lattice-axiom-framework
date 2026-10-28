@@ -1,0 +1,27 @@
+F(optimised)=175.803  F(written)=4080.0  B(8)=1931.48  B(4)=43.949
+
+A_s gamma_s = 36*C_1*C_V*|N_1| = 17496 * (C_1 C_V)
+
+C_1*C_V      C_T(q=8,opt)   C_T(q=8,writ)  q_min    C_T(q_min)
+1            1.274e+14      2.956e+15      9        8.498e+12
+3            1.146e+15      2.66e+16       10       8.719e+12
+10           1.273e+16      2.955e+17      12       4.657e+12
+100          1.273e+18      2.954e+19      16       7.32e+12
+1000         1.273e+20      2.954e+21      25       9.537e+12
+2000         5.092e+20      1.182e+22      31       9.86e+12
+10000        1.273e+22      2.954e+23      132      9.986e+12
+50000        3.183e+23      7.386e+24      None     nan     
+
+the largest C_1*C_V for which q=8 still clears 1e13 (optimised schedule):
+   C_1*C_V <= 0.2799   (both constants are >= 1 in any expansion, so q=8 cannot clear it)
+
+C_T at the forced floor C_1*C_V = 1, by q:
+   q=8     C_T=1.274e+14
+   q=10    C_T=1.406e+12
+   q=12    C_T=1.518e+11
+   q=16    C_T=1.799e+10
+   q=20    C_T=6.761e+09
+   q=24    C_T=3.946e+09
+   q=32    C_T=2.257e+09
+   q=50    C_T=1.395e+09
+   q=100   C_T=9.901e+08

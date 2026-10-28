@@ -731,3 +731,103 @@ came out identically uninformative and is **reported as a defective criterion, n
 **Biggest remaining obstruction in scope: none that is HW's.** The single live wall is one node-A statement
 — the moment under the exactly-converted law, with a per-cube constant and no shadow sum — plus its level-0
 case. *So lane H is now clear and the whole chain waits on node A's (CEM-1)/(CEM-2) and the level-0 clause.*
+
+## NQ_CHECK.md — (N-Q) decided. PROVEN. Theorem N1-15 now waits on ONE input.
+
+**The "conflict" in the files was not a conflict, and both statements are correct about different objects.**
+Setting SC's Q is **Q_root, the full S4′ order-averaged root map** — *not* the straight average: PROOF.md
+l.2060, RTARGET.md l.414 and SQ.md l.15 all say so in the definition. **J-str** (LINEAR_PACKAGE l.166-171,
+PROOF.md l.2093) is about Q_root: Q = Q_str - d∘h exactly, so Q^T = Q_str^T **only on co-closed forms**.
+**SQ's SHIFT** parenthesis is SQ's *declared convention*, not a claim about Q_root: SQ.md l.655 states
+"Q := Q_str (§0.4)", and SQ §0.4 l.352-357 **proves** that substitution legitimate for what SQ measures.
+And the quantity SHIFT bounds cannot see the difference: **d∘Q_root^{(m)} = d∘Q_str^{(L^m)} exactly**
+(PROOF.md l.2545; SQ.md l.411). One object, no duplicated reading.
+*Load-bearing nuance the worker flagged:* SQ §0.4's substitution is a **gauge shift**, so it moves the
+*potentials* — which is exactly what Lemma N1-11 bounds, and why (N-Q) was a real question: 𝔮_0 > 1 measures
+precisely the accumulated funnel gauge.
+
+**Exact values (COMPUTED, exact; gates G1-G5 all PASS).** max_c Σ_b |Q^j(c,b)| at d = 4, L = 3 on ℤ⁴
+(which dominates every torus):
+
+| j | exact | decimal | L^j | p_L^j | ratio to L^j |
+|---|---|---|---|---|---|
+| 1 | **205/27** | 7.592593 | 3 | 11 | 2.530864 |
+| 2 | **2021/81** | 24.950617 | 9 | 121 | 2.772291 |
+| 3 | **6115/81** | 75.493827 | 27 | 1331 | 2.796068 |
+
+Increments 0.241427 → 0.023777, shrinking ×10 per level. 25.7 s, 856 MB, single thread, exact integers over
+1944^j, no lock. G1 made c8(f)'s 2e-16 slice identity **entrywise exact**; G4 confirmed ‖Q_str^j‖ = L^j
+exactly with non-negative entries.
+
+**Case 1 holds and it is PROVEN for all j. Theorem NQ-1 (PROVEN-HERE):**
+‖Q^j‖_{∞→∞} ≤ L^j + (d(L²-1)/(2L))·(L^j-1)/(L-1) ≤ **𝔮_0 L^j with 𝔮_0 = 1 + d(L+1)/(2L)**, uniformly in j,
+on ℤ^d and every torus. **At d = 4, L = 3: 𝔮_0 = 11/3.** It uses only two PROVEN imports (the slice identity
+and root covariance Q∘d = d∘ev) via the exact telescoping
+Q^{(j)} = Q_str^{(j)} - d_j Σ_{i<j} ev^{(j-1-i)} h Q_str^{(i)}, then ‖Q_str^{(i)}‖ = L^i exactly, ‖ev‖ = 1,
+‖h‖ ≤ d(L²-1)/(4L) = 8/3, ‖d∘G‖ ≤ 2‖G‖. The proven bound dominates all three computed values
+(8.33/30.33/96.33 against 7.59/24.95/75.49) — the analytic and exact routes cross-check. A post-hoc run
+verified the telescoping identity entrywise, 0 differing entries.
+
+**>>> It also refutes NORMS.md's own pessimistic sub-estimate.** NORMS.md's named hole ("h applied to a pure
+gauge") and its polynomial estimate 𝔮_0 ≤ 1 + 2d‖h‖j/L are **artefacts of expanding with the block mean M**,
+which is self-referential (h^{(m+1)} = Mh^{(m)} + hQ^{(m)}); **the ev form never applies h to a pure gauge
+and is j-independent.**
+
+**Scope, honestly:** abelian / linearised — exactly Setting SC's, (N-Q)'s and Lemma N1-11's scope and no
+further. L3g(a)-slice says there is no nonlinear SU(N) analogue of the identity, so **this does nothing for
+(N-bg)**.
+
+**Consequences:** (N-Q) ARGUED → **PROVEN**. Lemma N1-11 **PROVEN-HERE** with 𝔮_0 = 11/3 in 𝔠_P.
+**Theorem N1-15 is CONDITIONAL ON (N-loc) ALONE**, conclusion unchanged (A_soft = 1/3,
+N3(D³E_k^br(1)) ≤ 𝔚 + 13.5·𝔖), now uniform in k with no depth-dependence entering through the transport.
+No smallness condition, ε_1 or g_K² changes.
+**(N-loc) — the exponential locality of the gauge-variant representative, i.e. the multi-scale axial gauge
+already named as (CL-1)'s open half — is now the single named input of Theorem N1-15.**
+
+## CONST_T.md — (CONST-T) decided. The answer is "not at q = 8, yes at q ≈ 30".
+
+Everything after the energy inequality (★) is expanded with explicit constants, giving the closed formula
+(§6.1): **C_T = √6·F·B(4a)·[ ½(36·C_1·C_V·486)^a + ½(A_cγ_c)² + 288·C_1·Q ], a = q/(q-4).**
+
+- **At q = 8 — the value SQ.md fixes (l.1621) — C_T ≥ 1.27e14, i.e. OVER the 1e13 threshold, for every
+  C_1·C_V ≥ 1**, and C_1, C_V ≥ 1 are *forced* (each multiplies a bracket of nonnegative terms). Best
+  estimate **5e20**, honest interval **[1.3e14, 3.2e23]**. A **PROVEN conditional negative** about this
+  route's output — explicitly *not* a lower bound on the optimal constant in EPS-T's conclusion.
+- **At q ≈ 30-100: C_T ≈ 1.2e12, interval [6e10, 3.3e13] — UNDER 1e13** across all but the worst corner.
+
+**>>> The fix is a free parameter nobody had looked at, and the worker's own prediction about it was
+backwards.** q is a free parameter of EPS-T that the lane happened to fix at 8, and **q = 8 is the WORST
+admissible choice**: the Moser absorption exponent is a = q/(q-4), so q = 8 gives a = 2 — a full squaring of
+the one-step constant. Raising q drives a → 1. **Compatibility checked clause by clause:** q > 4 ✓;
+scale-invariance exact for every q (the identity (-2 + 4/σ)·σ/(σ-2) = -2) ✓; EPS-0b-avg holds for every q
+with θ_G ∝ 1/q, which has ~25 decades of headroom above ε_1 ✓; and **C_T′ falls from 22.63·C_T to 16·C_T, so
+the ceiling itself rises to ~1.7e13** ✓. Two structural facts make it clean: **χ = 2 is forced** (lattice
+d = 4 Sobolev) and **A_sγ_s = 36·C_1·C_V·|N_1| is exactly independent of q** (the neighbour-multiplicity
+exponents cancel). So q touches only a and B(4a).
+**q_min against C_1·C_V: 9 at 1, 16 at 100, 31 at 2000, 132 at 1e4, unreachable at 5e4.**
+
+**Smaller levers, all priced and none sufficient at q = 8:** radius schedule 23× (the written r_i spends R/8
+of an available R/2 - 4, though its geometric *shape* is already optimal — Lemma S), N_3/N_1 split 160×,
+β⁴ → β² in (★) 44×, B(m) against 2^{2m} 34×.
+**The step with the most slack: the Young absorption of the supercritical potential** (§2.4(e)) — it raises
+the entire one-step constant to the power a, costing 3.5e7 at q = 8.
+
+**Does the interface carry a number? Not as EPS-T is written. It does at q ≳ 30**, conditional on
+C_1·C_V ≲ 1e4 and ε_* ≤ 1e-4. **The only remaining blocker is (★) itself** — steps (2)-(4), l.1471-1487,
+where C_1 and C_V live. Expanding them to numbers converts §6.1 from CONDITIONAL to PROVEN **by
+substitution, with no further derivation; one session, independent of every other lane.**
+*Lead: commissioned immediately as STAR_CONST.md.*
+
+**Corrections found.** l.1504's e^{100} should be **255**, not REVIEW_SQ_S4's 1.6e4 — the review applies the
+crude p ≥ R/64 at the one worst R and **over-states by 64×**. S4-6's R_0 = 128 confirmed independently
+(i_* = 0 on [64,128)), but its "C_T ≥ 128² = 16384" is **not the leading contribution**, swamped by ≥ 6
+decades. S4-3's added hypothesis is necessary but changes no factor of C_T that matters (the dominant term
+uses 𝒮 and k only, never η).
+
+**Failed checks, reported as fails.** Three of six pre-registered verdicts FAILED (B1, B2, B3) — **all
+errors in the worker's own criteria**, not in SQ.md or the review: F peaks at the *right* edge of each dyadic
+block, so max F is 4080 at R = 255 (not 2048 at 128) and 175.8 at R = 79; and i_* = 0 on [64,128), which the
+criterion mis-transcribed. A1, A2, B4 PASS. ct1_moser.py Block C is superseded by post-hoc ct1b/ct1c and
+nothing rests on it. **Also recorded: three of the worker's four pre-stated structural expectations were
+refuted, including E4 ("raising q will cost"), which was backwards — and that refutation is the finding that
+decides the task.**

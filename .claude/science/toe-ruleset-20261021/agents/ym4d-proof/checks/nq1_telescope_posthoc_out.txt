@@ -1,0 +1,37 @@
+      Q_root mu=0 level 1->0 : 459 nonzero entries (0.0s)
+      Q_str mu=0 level 1->0 : 135 nonzero entries (0.0s)
+telescope j=1 mu=0 : 0 entries differ  (lhs 459, rhs 459) -> ok
+      Q_root mu=1 level 1->0 : 459 nonzero entries (0.0s)
+      Q_str mu=1 level 1->0 : 135 nonzero entries (0.0s)
+telescope j=1 mu=1 : 0 entries differ  (lhs 459, rhs 459) -> ok
+      Q_root mu=2 level 1->0 : 459 nonzero entries (0.0s)
+      Q_str mu=2 level 1->0 : 135 nonzero entries (0.0s)
+telescope j=1 mu=2 : 0 entries differ  (lhs 459, rhs 459) -> ok
+      Q_root mu=3 level 1->0 : 459 nonzero entries (0.0s)
+      Q_str mu=3 level 1->0 : 135 nonzero entries (0.0s)
+telescope j=1 mu=3 : 0 entries differ  (lhs 459, rhs 459) -> ok
+      Q_str^(1) mu=0 level 1->0 : 135 nonzero entries (0.0s)
+      Q_str^(1) mu=1 level 1->0 : 135 nonzero entries (0.0s)
+      Q_str^(1) mu=2 level 1->0 : 135 nonzero entries (0.0s)
+      Q_str^(1) mu=3 level 1->0 : 135 nonzero entries (0.0s)
+      Q_root mu=0 level 2->1 : 459 nonzero entries (0.0s)
+      Q_root mu=0 level 1->0 : 47385 nonzero entries (0.0s)
+      Q_str mu=0 level 2->1 : 135 nonzero entries (0.0s)
+      Q_str mu=0 level 1->0 : 12393 nonzero entries (0.0s)
+telescope j=2 mu=0 : 0 entries differ  (lhs 47385, rhs 47385) -> ok
+      Q_root mu=1 level 2->1 : 459 nonzero entries (0.0s)
+      Q_root mu=1 level 1->0 : 47385 nonzero entries (0.0s)
+      Q_str mu=1 level 2->1 : 135 nonzero entries (0.0s)
+      Q_str mu=1 level 1->0 : 12393 nonzero entries (0.0s)
+telescope j=2 mu=1 : 0 entries differ  (lhs 47385, rhs 47385) -> ok
+      Q_root mu=2 level 2->1 : 459 nonzero entries (0.0s)
+      Q_root mu=2 level 1->0 : 47385 nonzero entries (0.0s)
+      Q_str mu=2 level 2->1 : 135 nonzero entries (0.0s)
+      Q_str mu=2 level 1->0 : 12393 nonzero entries (0.0s)
+telescope j=2 mu=2 : 0 entries differ  (lhs 47385, rhs 47385) -> ok
+      Q_root mu=3 level 2->1 : 459 nonzero entries (0.0s)
+      Q_root mu=3 level 1->0 : 47385 nonzero entries (0.0s)
+      Q_str mu=3 level 2->1 : 135 nonzero entries (0.0s)
+      Q_str mu=3 level 1->0 : 12393 nonzero entries (0.0s)
+telescope j=2 mu=3 : 0 entries differ  (lhs 47385, rhs 47385) -> ok
+POST-HOC telescope identity: ALL MATCH

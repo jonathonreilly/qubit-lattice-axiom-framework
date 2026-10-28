@@ -1243,3 +1243,15 @@ target restatement per THETAW-as-corrected-by-Codex, and RTARGET §52's rescorin
 T51-E wrong on three counts). Notable: §54's question was mis-posed — it asked whether **(N-bg)** equals
 (G♯_0-field) when session 24 had identified **(GAP-Z)** with it; that is the ill-posedness NBG_ADJ later
 diagnosed. The q lever is **12.04 decades live, not 24.09** (Codex QFIX).
+
+**C4 — NORMS and the (N-Q) chain — `REVIEW55_NORMS.md`** (claude-opus-5-5, max). 51 claims: **28 CONFIRMED,
+11 NOT-VERIFIED, 12 REFUTED.** **Theorem N1-15 holds as a CONDITIONAL theorem** — given (N-loc) or NLOC's
+fixed-T bypass, d = 4, uniform in k; its regime is "SU(N) cubic vertex pulled back by a linear,
+colour-by-colour chain map", **not** "abelian/linearised" (in one real colour the vertex vanishes).
+**NQ_DEF's "unconditional, uniformly in k and T" is NOT established** (the T-uniform part rests on TUNIF
+TU-5/TU-6, NOT-VERIFIED; NQ_DEF also omits NL-3′ from its inputs). **A_soft = 1/L, attained exactly** —
+THETAW's "unattained infimum, honest rate L^{−θ}" is REFUTED for N1-15. **NQ-1 CONFIRMED** (𝔮₀ = 11/3,
+re-derived; Q = Q_root and ‖Q‖ = 205/27 re-enumerated). **𝔑 = +∞ even at the trivial background**, and
+its proposed one-line repair fails on constant torus modes. The per-level no-go's withdrawal is right.
+**AGAINST THIS LEDGER:** the T55-F/T55-P entries' "(N-Q) is the missing input … 𝔮₀ = 1 if straight
+average" is stale. **Applied:** PROOF.md's leftover "D2 … upgraded to a theorem" paragraph marked struck.

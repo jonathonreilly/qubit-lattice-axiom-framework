@@ -6897,7 +6897,7 @@ every worker's findings: SESSION24_RESULTS.md.
 **Lead decisions taken (RTARGET §51), with their fate.**
 - **D1 (one slice, S_E).** CONFIRMED by REVIEW_BFT_A_S8, on better grounds than lane A had: the (GE-T)
   refutation does not need the Coulomb stand-in, and ψ_u is computable exactly.
-- **D2 (the per-level route is closed).** **Upgraded from a judgement to a theorem** by NORMS.md §N5. No
+**[REVERTED S26 — REVIEW55_NORMS / REVIEW55_LEAD T3, T20: the per-level route is OPEN, not dead; the no-go was never proved (its check n1-D is a tautology). Struck.]** - **D2 (the per-level route is closed).** **Upgraded from a judgement to a theorem** by NORMS.md §N5. No
   future session should attempt to repair the per-level induction in any norm.
 - **D3 (the constants are the target).** **Half right, and corrected.** The 1267-per-level factor is the
   origin of the **depth-dependence**, not of the magnitudes. The *uniformity* problem is now solved at the

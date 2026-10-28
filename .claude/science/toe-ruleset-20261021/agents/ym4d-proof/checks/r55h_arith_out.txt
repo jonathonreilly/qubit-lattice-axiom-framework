@@ -1,0 +1,94 @@
+A1 HW §35.7 table
+  s5 c+=1: b_n=20416938755 b_D=20415875872 c_f=531441 integers match: True
+  g2CRC s5 c+=1                                              printed 4.89789e-97  enclosure [4.897893908e-97, 4.897893908e-97] -> OK
+  n_T s5 c+=1                                                printed 9.99104e96   enclosure [9.991038207e+96, 9.991038207e+96] -> OK
+  s5 c+=82: b_n=1674185866133 b_D=1674098709808 c_f=43578162 integers match: True
+  g2CRC s5 c+=82                                             printed 5.97305e-99  enclosure [5.973052456e-99, 5.973052456e-99] -> OK
+  n_T s5 c+=82                                               printed 8.19264e98   enclosure [8.192636102e+98, 8.192636102e+98] -> OK
+  s6 c+=1: b_n=65633123 b_D=65620000 c_f=6561 integers match: True
+  g2CRC s6 c+=1                                              printed 1.52362e-94  enclosure [1.523620712e-94, 1.523620712e-94] -> OK
+  n_T s6 c+=1                                                printed 3.21128e94   enclosure [3.211284841e+94, 3.211284841e+94] -> OK
+  s6 c+=17: b_n=1115603075 b_D=1115380000 c_f=111537 integers match: True
+  g2CRC s6 c+=17                                             printed 8.96376e-96  enclosure [8.963761520e-96, 8.963761520e-96] -> OK
+  n_T s6 c+=17                                               printed 5.45840e95   enclosure [5.458401229e+95, 5.458401229e+95] -> OK
+  s6 c+=82: b_n=5381106005 b_D=5380030000 c_f=538002 integers match: True
+  g2CRC s6 c+=82                                             printed 1.85835e-96  enclosure [1.858354021e-96, 1.858354021e-96] -> OK
+  n_T s6 c+=82                                               printed 2.63286e96   enclosure [2.632857175e+96, 2.632857175e+96] -> OK
+A1 VERDICT: PASS
+A2 S5-12 four-way coincidence at s5 c+=1
+  (S2) s5                                                    printed 4.89789e-97  enclosure [4.897893908e-97, 4.897893908e-97] -> OK
+  (S2) s5                                                    printed 4.897894e-97 enclosure [4.897893908e-97, 4.897893908e-97] -> OK
+  REL-boot s5 (B*=c_f+1, 38417)                              printed 4.89802e-97  enclosure [4.898021401e-97, 4.898021401e-97] -> OK
+  REL-boot s5 (B*=c_f+1, 38417)                              printed 4.898021e-97 enclosure [4.898021401e-97, 4.898021401e-97] -> OK
+  HIST-sum s5 (B0=c_f+2, 38417)                              printed 4.898e-97    enclosure [4.898012184e-97, 4.898012184e-97] -> OK
+  HIST-sum s5 (B0=c_f+2, 38417)                              printed 4.898012e-97 enclosure [4.898012184e-97, 4.898012184e-97] -> OK
+  n_T s5                                                     printed 9.99104e96   enclosure [9.991038207e+96, 9.991038207e+96] -> OK
+  n_T s5                                                     printed 9.991038e96  enclosure [9.991038207e+96, 9.991038207e+96] -> OK
+  n_H(B0=c_f) = [9.991019409e+96, 9.991019409e+96] vs printed 9.99102e96 -> OK
+  n_H(B0=c_f) = [9.991019409e+96, 9.991019409e+96] vs printed 9.991019e96 -> OK
+  n_H(B0=c_f+2) = [9.991057009e+96, 9.991057009e+96] vs printed 9.99102e96 -> mismatch
+  n_H(B0=c_f+2) = [9.991057009e+96, 9.991057009e+96] vs printed 9.991019e96 -> mismatch
+A2 VERDICT (S2/REL/HIST/n_T): PASS (n_H rows are records of which B0 reproduces)
+A3 decision ratios
+  s5 slack vs 2.5e-152 (3 s.f.)                              printed 1.96e55      enclosure [1.959157563e+55, 1.959157563e+55] -> OK
+  s5 slack vs 2.5e-152 (5 s.f.)                              printed 1.9592e55    enclosure [1.959157563e+55, 1.959157563e+55] -> OK
+  s6 x17 slack vs 2.5e-152                                   printed 3.5855e56    enclosure [3.585504608e+56, 3.585504608e+56] -> OK
+  break-even c_+ (s6)                                        printed 6.0954e57    enclosure [6.095412529e+57, 6.095412529e+57] -> OK
+  1e-94 / g2 s5                                              printed 204.17       enclosure [2.041693876e+02, 2.041693876e+02] -> OK
+  1e-94 / g2 s6 x17                                          printed 11.16        enclosure [1.115603084e+01, 1.115603084e+01] -> OK
+  1e-94 / g2 s6 x82                                          printed 53.81        enclosure [5.381106014e+01, 5.381106014e+01] -> OK
+  g2 s6 no ring / 1e-94                                      printed 1.52         enclosure [1.523620712e+00, 1.523620712e+00] -> OK
+  g2 s5 x17 (w6 A3)                                          printed 2.88112e-98  enclosure [2.881119167e-98, 2.881119167e-98] -> OK
+  g2 gain s5->s6 at c+=1                                     printed 311.1        enclosure [3.110767078e+02, 3.110767078e+02] -> OK
+  n_T gain s5->s6 at c+=1                                    printed 311.2        enclosure [3.111227655e+02, 3.111227655e+02] -> MISMATCH
+  g2 gain s5->s6 at c+=17                                    printed 311.1        enclosure [3.111208180e+02, 3.111208180e+02] -> OK
+  n_T gain s5->s6 at c+=17                                   printed 311.2        enclosure [3.111668446e+02, 3.111668446e+02] -> OK
+  g2 gain s5->s6 at c+=82                                    printed 311.1        enclosure [3.111230036e+02, 3.111230036e+02] -> OK
+  n_T gain s5->s6 at c+=82                                   printed 311.2        enclosure [3.111690288e+02, 3.111690288e+02] -> OK
+  (S1) ceiling s6 x17                                        printed 1.83822e-93  enclosure [1.838221657e-93, 1.838221657e-93] -> OK
+  g2_ret s6 x17 (a_ret=2.0e-91)                              printed 3.67644e-98  enclosure [3.676443313e-98, 3.676443313e-98] -> OK
+  REL-boot s6 x17 (38417)                                    printed 2.33375e-96  enclosure [2.333746602e-96, 2.333746602e-96] -> OK
+  1e-94 / REL-boot s6 x17                                    printed 42.85        enclosure [4.284955355e+01, 4.284955355e+01] -> OK
+  n_H s6 x17 (38416, B0=c_f+2)                               printed 2.09688e96   enclosure [2.096918218e+96, 2.096918218e+96] -> MISMATCH
+  n_H / n_T s6 x17                                           printed 3.84         enclosure [3.841634446e+00, 3.841634446e+00] -> OK
+  spread candidates at x17, HIST as written: (S2)/HIST-sum = [3.840966, 3.840966]; (S2)/REL = [3.840932, 3.840932]; n_H/n_T = [3.841634, 3.841634]
+  spread candidates at x17, H-geo': (S2)/HIST-sum = [0.999909, 0.999909]; (S2)/REL = [0.999900, 0.999900]; n_H/n_T = [1.000009, 1.000009]
+A3 VERDICT: FAIL (see MISMATCH lines)
+A4 RECORD: HW-route binding ceiling min{(S2), REL-boot, HIST-sum}
+  c+=1   HIST as written  binding=HIST 3.966196e-95   decades above 2.5e-152: [57.2004, 57.2004]
+  c+=1   H-geo'           binding=HIST 1.523541e-94   decades above 2.5e-152: [57.7849, 57.7849]
+  c+=17  HIST as written  binding=HIST 2.333726e-96   decades above 2.5e-152: [55.9701, 55.9701]
+  c+=17  H-geo'           binding=(S2) 8.963762e-96   decades above 2.5e-152: [56.5546, 56.5546]
+  c+=82  HIST as written  binding=HIST 4.838281e-97   decades above 2.5e-152: [55.2868, 55.2868]
+  c+=82  H-geo'           binding=(S2) 1.858354e-96   decades above 2.5e-152: [55.8712, 55.8712]
+A5 PLD l.1097 m_tau
+  (i) eta=c_1 eps (c_1=1/117): (3, 4, 5)  -> PLD (3,4,5) CONFIRMED
+  (ii) eta=RLARGE l.64 at eps=6.7e-40, N=2: (66, 90, 122) -> SYMBOLS (66,90,122) CONFIRMED
+  (iii) control eta=RLARGE l.64 at eps=2: (5, 7, 10) -> REVIEW_PLD_S3 (5,7,10) CONFIRMED
+  (i') c_1-route depth is eps-independent: at eps=2 (3, 4, 5)
+A6 HW l.604 coefficient B(theta) = (1/640)(theta/53)^2
+  B(1e-8) = 5.562477750e-23 ; B(3e-8) = 5.006229975e-22 (exact 9/17977600000000000000000) -> SYMBOLS 5.00623e-22 CONFIRMED
+  ratios: B(3e-8)/B(1e-8) = 9 ; B(3e-8)/5e-23 = 28125/2809 = 10.012460 ; SQ l.216 'approx 3e-23 at C_D=2': B(3e-8)/16 = 3.1289e-23
+A7 c_lcr shift factors
+  PLD p6 B3 factor at s5 b_n                                 printed 1.0490       enclosure [1.048978939e+00, 1.048978939e+00] -> OK
+  RECORD s6 c+=1: (S2) factor [16.236207, 16.236207]; (S1) factor [3125.762, 3125.762]
+  RECORD s6 c+=17: (S2) factor [1.896376, 1.896376]; (S1) factor [184.822, 184.822]
+  RECORD s6 c+=82: (S2) factor [1.185835, 1.185835]; (S1) factor [39.110, 39.110]
+  RECORD s5 c+=1 (S1) factor (c_att=1229313): [814.447, 814.447]
+A8 u*eps_1^2
+  u eps^2 at g2=1e-94                                        printed 4.489e15     enclosure [4.489000000e+15, 4.489000000e+15] -> OK
+  RECORD at g2=2.5e-152: 1.7956e+73
+  RECORD at the x82 HW-route binding value 4.83828e-97: 9.2781e+17
+R1-R4 RECORDS (reviewer's sharpened ring accounting; no pass/fail)
+  R1 open ring merged: c_+=1: g2CRC [1.523621e-94, 1.523621e-94]  n_T 3.211285e+94  c_f 6561
+     REL-boot(HIST as written) 3.966800e-95  HIST-sum 3.966196e-95
+     REL-boot(H-geo') 1.523773e-94  HIST-sum 1.523541e-94
+  R2 closed ring merged: g2CRC [1.523470e-94, 1.523470e-94]  n_T 3.211285e+94 (b_D unchanged)  (S1) 3.123981e-92
+     ratio R2 / x82 row = 81.9796 ; R2 / x17 row = 16.9959
+  R3 x82 as tabulated: (S2) 1.858354e-96, REL(38417) 4.838290e-97, HIST(38417) 4.838281e-97
+  R4 R1 (S2)                  decades vs 2.5e-152 [57.7849, 57.7849]; vs 1e-94 [0.1829, 0.1829]
+  R4 R1 REL HIST-as-written   decades vs 2.5e-152 [57.2005, 57.2005]; vs 1e-94 [-0.4016, -0.4016]
+  R4 R2 (S2)                  decades vs 2.5e-152 [57.7849, 57.7849]; vs 1e-94 [0.1828, 0.1828]
+  R4 x82 (S2)                 decades vs 2.5e-152 [55.8712, 55.8712]; vs 1e-94 [-1.7309, -1.7309]
+  R4 x82 HIST-sum as written  decades vs 2.5e-152 [55.2868, 55.2868]; vs 1e-94 [-2.3153, -2.3153]
+SUMMARY: A1 PASS | A2 PASS | A3 FAIL | mismatches: ['n_T gain s5->s6 at c+=1', 'n_H s6 x17 (38416, B0=c_f+2)']

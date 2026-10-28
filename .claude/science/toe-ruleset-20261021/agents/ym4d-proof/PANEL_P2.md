@@ -26,7 +26,7 @@
 
 **CONDITIONAL — common setting used below.** Let A be a commutative local gauge-invariant observable *-algebra, with compatible Euclidean pullbacks α_g, an antilinear reflection Θ across x_0=0, and positive-half algebra A_+. In formulas, ΘF means the complex conjugate of F pulled back by the reflection. A state is RP if q_ω(F)=ω((ΘF)F)≥0 for every F∈A_+. Assume the indicated products and moments are continuous in the topology used to take limits. This common algebra and topology are hypotheses, not consequences of the soft-block construction.
 
-**PROVEN — elementary closure facts.** The conditions q_ω(F)≥0 are closed affine inequalities in ω, so states RP for one fixed Θ form a closed convex set. If g preserves the positive half-space and commutes with Θ, α_g takes A_+ into itself and
+**PROVEN — elementary closure facts.** The conditions Im q_ω(F)=0 and Re q_ω(F)≥0 are closed real-affine conditions in ω, so states RP for one fixed Θ form a closed convex set. If g preserves the positive half-space and commutes with Θ, α_g takes A_+ into itself and
 
     q_(g·ω)(F) = q_ω(α_g F) ≥ 0,
 
@@ -297,6 +297,8 @@ in the relevant shells, with constants independent of cutoff and outer box on th
     Spatial-plane to time-space-plane conjugation: True
 
 **PROVEN — meaning of that check.** The last line used a (1,2) rotation with entries 3/5 and 4/5 and conjugated it by the exchange of coordinates 0 and 1, yielding the corresponding (0,2) rotation. This finite check confirms the arithmetic instance; the all-angle/all-plane proof is the group argument in §3. The counterexamples rely on the written analytic proofs, not on numerical extrapolation. No check of the full Yang–Mills construction was run or claimed.
+
+**PROVEN — final precision correction.** During the post-plan self-check I made the real/imaginary parts of the closed RP conditions explicit in §2. This changes no estimate or conclusion and imports no premise from the lead's plan.
 
 **CONDITIONAL — final ranked answer.**
 

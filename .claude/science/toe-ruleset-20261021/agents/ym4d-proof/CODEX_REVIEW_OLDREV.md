@@ -33,6 +33,8 @@ Furthermore, DESC retains theta_SUP/C' separately. Its C_D is now max(2(1.011A_0
 
 There is an additional inequality-direction problem in the ceiling itself: SQ.md:1526 gives `||F_0||_2 <= a theta`, a=2.47 sqrt(2). The review substitutes this upper bound into `beta >= C_q L³ C_1 ||F_0||_2` as if it were equality/a lower bound. That substitution cannot prove a necessary upper bound on the *largest actual* theta_G. One may instead explicitly choose a conservative envelope `beta_bar=A theta+B theta²`, where `A=C_q L³(C_1 a+C_2)` and `B=C_q L³ C_3(a+C_X)²`, and impose beta_bar<=1/16 together with LEV-E. For B>0 its positive cutoff is `1/[8(A+sqrt(A²+B/4))]`. The omitted C_2,C_3 terms and the chosen envelope must be stated before any number is banked.
 
+In particular the displayed `beta >= 4.29e11 theta` is not the consequence of that substitution: the isolated term `C_q L³ C_1 ||F_0||_2` is bounded **above** by the corresponding multiple of theta. Likewise `e=242.9 theta` is an envelope, not an equality for every configuration. A cutoff derived from the envelope in LEV-E (the review's 3.04e-13) is a conservative sufficient choice for that condition, not a demonstrated necessary ceiling on the actual configuration-dependent expression.
+
 **CONFIRMED**: the name collision and the need to rename it. The two definitions remain literally `theta_0` at SQ.md:188 and 1622; no S4 rename is present in these cited regions. The review itself also confuses its item numbers: its opening summary's “form, S4-14” is body S4-15, and its opening “numbers, S4-13” is body S4-14.
 
 ### Q2 — S4-6's mandatory R_0 change confuses a bounded stopping factor with a failure
@@ -101,7 +103,7 @@ Likewise “only the C_T half is live” is unsupported: epsilon_* has no proved
 
 **CONFIRMED**: determinant-normalized polar decomposition is not a general SU(2) maximizer; quaternion projection is the right replacement. **REFUTED** if “only on the quaternion line” is read as an iff. Attachments: REVIEW_SQ_S4.md:404–422 and binding fix 6; SQ.md:1701–1709.
 
-For `M=diag(99/100+i/5,1)`, arbitrarily near the identity after replacing 1/10 by a smaller parameter, the determinant-normalized polar factor has phase with cos t=10/sqrt(101), sin t=1/sqrt(101). The objective on diagonal SU(2) matrices is `(199/100) cos t + (1/5) sin t`. Its derivative at that polar phase is **1/(100 sqrt(101))**, nonzero. The optimal objective squared exceeds the polar objective squared by **1/1,010,000**, exactly. This independently validates the failure mechanism without reproducing any floating-point residual.
+For `M=diag(99/100+i/5,1)`, the determinant-normalized polar factor has phase with cos t=10/sqrt(101), sin t=1/sqrt(101). This is the member s=1/10 of `M(s)=diag((1+i s)^2,1)`, which approaches identity as s tends to zero and remains nonstationary for every nonzero sufficiently small s. The objective on diagonal SU(2) matrices at s=1/10 is `(199/100) cos t + (1/5) sin t`. Its derivative at that polar phase is **1/(100 sqrt(101))**, nonzero. The optimal objective squared exceeds the polar objective squared by **1/1,010,000**, exactly. This independently validates the failure mechanism without reproducing any floating-point residual.
 
 Every SU(2) matrix is a unit vector in the real quaternion subspace under the real trace pairing, so Cauchy–Schwarz maximizes the objective by normalizing the orthogonal projection of M onto that subspace. However, M=diag(2,1) is outside that subspace and has polar factor I, which is also its SU(2) maximizer. Correct wording: exactness is guaranteed on the quaternion span and fails for general complex perturbations; it is not exclusive to that span. The historical 3.7e-9, 1.2e-16 and 4.4e-16 outputs remain **NOT-VERIFIED**.
 
@@ -250,7 +252,7 @@ Original vocabulary is quoted faithfully below, including NARROWED, WRONG and CO
 | SQ-17c | S4-17 recorded residuals/PASSes and reversal of S3 | NOT-VERIFIED | SQ.md:1701–1709 reports them; scripts, output and S3 review not read. |
 | SQ-18a | S4-18 face-start d-intertwining with SQ's Q_2 is false | CONFIRMED | SQ.md:402–406,1717–1722. On a finite patch take only a_2(x)=x_1 x_2. The face-start coarse curl is L²[LX_2+(L-1)/2]: the transverse x_1 average shifts by L, while the longitudinal line has mean LX_2+(L-1)/2. The tent/Stokes average of da=x_2 is L²[LX_2+L-1], since its in-plane tent mean is LX_2+L-1. Their difference is L²(L-1)/2, nonzero. Embed the patch in a larger torus if needed. The correct all-starts averaged-lines operator telescopes around each square. |
 | SQ-18b | S4-18 error in criterion, not merely script; no pre-registered valid test | NOT-VERIFIED | Criterion/script contents and chronology are outside the read set. The mathematical distinction is verified; the attribution is not. |
-| SQ-19a | S4-19 side-3 locality test is blind; recommend side>=9 | CONFIRMED | REVIEW_SQ_S4.md:450–464 quotes the side. On that domain every periodic coordinate distance<=1, so all N_1,N_2,N_3 are global. Side>=9 permits an outside-support control; no rerun authorized here. |
+| SQ-19a | S4-19 side-3 locality test is blind; recommend side>=9 | CONFIRMED | REVIEW_SQ_S4.md:450–464 quotes the side. On that domain every periodic coordinate distance<=1, so all N_1,N_2,N_3 are global. Side>=9 permits an outside-support control; no rerun performed here. |
 | SQ-19b | S4-19 W1/W2/R1/T1/G1 execution and process clean | NOT-VERIFIED | SQ.md:1711–1724 is only a report; implementation/lock evidence not read. |
 | SQ-20 | S4-20 CVX-K not needed | CONFIRMED | SQ.md:1620–1639,1675–1697; dependency inspection above. |
 | SQ-21 | S4-21 LU-ex CONFIRMED-WITH-FIX; sector/epsilon_U/import disclosures | NOT-VERIFIED | SQ.md:1646–1685: flow compactness yields a critical subsequence without Lojasiewicz, and open/closed continuation is valid if GAP and the stated Hessian bound hold. Imported reflection/Hessian inputs and numerical epsilon_U were not independently established. Sector discharge must use Q3's corrected condition. |
@@ -266,7 +268,8 @@ M4-2/M4-3 are covered by SQ-6; M4-4 by SQ-14a; M4-7 by SQ-5. Binding fixes 1–1
 
 | Review atom | Original verdict / order | Re-review verdict | Source attachment and disposition |
 |---|---|---|---|
-| BFT-1 | S8-1 provenance CONFIRMED-WITH-FIX | NOT-VERIFIED | BFT_A.md:3273–3285,3647–3653: byte endpoints and unchanged birth time cannot prove no same-length in-place edits; old hashes/logs unavailable within scope. |
+| BFT-1a | S8-1 provenance CONFIRMED-WITH-FIX | NOT-VERIFIED | BFT_A.md:3273–3285,3647–3653: old hashes/logs unavailable within scope. |
+| BFT-1b | S8-1 unchanged birth time implies every edit was an append | REFUTED | REVIEW_BFT_A_S8.md:23 and BFT_A.md:3647–3653. Replacing an interior character preserves birth time and can preserve byte length; appending afterward also preserves both recorded prefix-length checkpoints. The implication is invalid even if the historical edit order happened to be correct. |
 | BFT-2 | S8-2 eight prior fixes faithful | NOT-VERIFIED | BFT_A.md:3373–3441 contains P7-1..P7-8; faithfulness to unread S7 and its source proofs not certified. |
 | BFT-3 | S8-3 DF CONFIRMED | CONFIRMED | BFT_A.md:3465–3477; algebraic implication re-derived above. |
 | BFT-4 | S8-4 PW-cc CONFIRMED, uniform k,T | CONFIRMED | BFT_A.md:3481–3498; exponents and fixed-parameter uniformity conditional on the named YH/data estimates. P8-2's explicit dependence/no-current clarification is valid. |
@@ -275,13 +278,14 @@ M4-2/M4-3 are covered by SQ-6; M4-4 by SQ-14a; M4-7 by SQ-5. Binding fixes 1–1
 | BFT-6a | S8-6 TE identity CONFIRMED | CONFIRMED | BFT_A.md:3510–3512; gauge substitution. |
 | BFT-6b | S8-6 size exactly 8L^(3(k-l)) | REFUTED | B4: T=1 gives zero. |
 | BFT-6c | S8-6 no positive proof depends on TE size/FS | CONFIRMED | BFT_A.md:3465–3578 separates the algebraic results and conditional PW-E from the size/refutation claims. |
-| BFT-7a | S8-7 withdraw psi_u=level-0 spike | CONFIRMED | BFT_A.md:3291–3294,3582–3585 defines a path functional and a divergence functional, respectively; Q3/B3's exact curl example has d*u=0 but psi nonzero. |
+| BFT-7a | S8-7 withdraw psi_u=level-0 spike | CONFIRMED | BFT_A.md:3291–3294,3582–3585 defines a path functional and a divergence functional, respectively; B3's exact curl example has d*u=0 but psi nonzero. |
 | BFT-7b | S8-7 exact first two coefficients and psi_2 | CONFIRMED | B3 re-derived them with Fractions and finite incidence counts. |
 | BFT-7c | S8-7 GE-T false | NOT-VERIFIED | B1/B3: the infinite funnel tail is now resolved for this witness; the S_E projection/no-cancellation estimate is not. |
 | BFT-7d | S8-7/P8-9 refutation is already proved | REFUTED | B1: finite-depth evidence and two explicitly unproved estimates were promoted to a theorem. |
 | BFT-7e | geometric higher tail / every finite truncation leaves remainder | REFUTED | B3: the exhibited compact curl has phi_i=0 for i>=3. No such conclusion for the distinct Green field follows from it. |
+| BFT-7f | the gradient test certifies the funnel functional | REFUTED | REVIEW_BFT_A_S8.md:244–245,385–386: h(d lambda)=mean(lambda)-lambda(root) cannot determine h on co-closed inputs; see B6 below. The independently rebuilt coefficients in B3 do survive. |
 | BFT-8 | S8-8/P8-3 transport estimate supplied, sound | REFUTED | B5: partition unity provides no bound on harmonic-potential differences. The transport itself remains NOT-VERIFIED. |
-| BFT-9a | S8-9 spike threshold exponent | CONFIRMED | BFT_A.md:3532–3535: if a fixed positive spike exists, 8|sp|<=C_P L^(k-3l) fails for l>k/3+constant. Conditional arithmetic only. |
+| BFT-9a | S8-9 spike threshold exponent | CONFIRMED | BFT_A.md:3532–3535: if a fixed positive spike exists, 8 abs(sp)<=C_P L^(k-3l) fails for l>k/3+constant. Conditional arithmetic only. |
 | BFT-9b | P8-4 exact psi values +/-1/54 | REFUTED | B3: those are phi_1; psi_k for k>=2 is +/-130/6561 on the stated unnormalized sources. |
 | BFT-9c | S8-9 six-decimal zero cannot certify 1e-10 | CONFIRMED | BFT_A.md:3530,3662 distinguishes “exact” from “to print precision”; a displayed zero only bounds rounding error by about 5e-7. One nonzero offset still rejects universal vanishing. |
 | BFT-10a | S8-10 RC projection and response sign | CONFIRMED | BFT_A.md:3537–3547; algebra above. |
@@ -321,7 +325,7 @@ P8-1: **NOT-VERIFIED** as a criterion/script deviation; source BFT_A.md:3479 doe
 | FLOW-10b | binding fix 3 puts P-poles under Pi-loc too | REFUTED | FLOW.md:4749–4758 never uses Pi. The review itself calls P-poles unconditional at lines 627 and 683. Separate its label from VC-T1. |
 | FLOW-11 | S13-11 Pi-loc locality/analyticity unargued | REFUTED | F2: direct-sum local Hessian and analytic maximizer give these clauses. |
 | FLOW-12a | S13-12 normalization degree 12/30 is conservative | CONFIRMED | FLOW.md:4603–4608; degree=2(r+1)(2r+1). A sharper denominator must be derived for its specified entries, not inferred from test data. |
-| FLOW-12b | S13-12 permits |K|^(-30) | REFUTED | F3: generic fixed-P power 12 at r=2; commensurate P=pi power 36; simultaneous-soft power 60. |
+| FLOW-12b | S13-12 permits abs(K)^(-30) | REFUTED | F3: generic fixed-P power 12 at r=2; commensurate P=pi power 36; simultaneous-soft power 60. |
 | FLOW-13a | S13-13 historical FAIL/PASS reports honest | NOT-VERIFIED | FLOW.md:4800–4815 reports them candidly; artifacts/implementation not read. |
 | FLOW-13b | S13-13 ordered “predetermined FAIL” diagnosis | REFUTED | F1: O(delta^4) has no positive lower coefficient. |
 | FLOW-13c | S13-13 B4 scaling supports truncation; B3 scaling untested | CONFIRMED | On the review's printed B4 numbers, ratios are 1220000/121 and 440/3. B3's smaller values sit at the stated floor. This is conditional arithmetic/diagnostic evidence, not exactness or a reproduced run. |
@@ -339,3 +343,94 @@ P8-1: **NOT-VERIFIED** as a criterion/script deviation; source BFT_A.md:3479 doe
 | FLOW-23 | S13-23 coefficient expansion/P-poles/conditional convergence | CONFIRMED | FLOW.md:4737–4763; jets of order<=2, geometric product bound and inverse-series algebra re-derived above. Global exact-lift wording and optimized infrared bounds are separate. |
 
 Binding fixes 1–11 at REVIEW_FLOW_S13.md:636–675 are all dispositioned: (1) FLOW-1b; (2) FLOW-8a; (3) FLOW-10a/10b/11; (4) FLOW-4a/4b; (5) FLOW-6; (6) FLOW-12a/12b; (7) FLOW-13b/13c, with the worse quoted B3 eigenvalue unverified against raw output; (8) FLOW-14; (9) FLOW-9/3b/16b/22, including adding the existing §108 result to Outcomes; (10) FLOW-2; (11) FLOW-15/17. The proposed larger/small-momentum/SU(3) probe is a sensible future discrimination test, not work executed here. The claimed 75 and strict 70 are arithmetic tallies built on an unread earlier 70/66 and incompletely qualified statements, hence **NOT-VERIFIED** as mathematical status counts. T-a1-M, T-a3, T-b and T-c remain OPEN in the read source; the corrected local results do not close them.
+
+### B6 — A gradient-only test cannot identify a funnel on the co-closed counterexample
+
+**REFUTED** as a sufficient certification argument. Attachments: REVIEW_BFT_A_S8.md:244–245 and 385–386 (`So the code's funnel is the object ...`); the target input is defined at BFT_A.md:3307–3313.
+
+Let u=d*delta_p and replace the tested functional by `h_tilde(v)=h(v)+alpha <u,v>` at the tested root. For every lambda, `<u,d lambda>=<delta_p,dd lambda>=0`. Thus h_tilde passes **every** gradient identity `h(d lambda)=mean(lambda)-lambda(root)` exactly, for every alpha. But `h_tilde(u)-h(u)=alpha ||u||²`, nonzero for alpha!=0. The advertised check is blind precisely to the co-closed input used for the refutation. This does not refute the coefficients: B3 derives them from the full signed-path definition instead. A decisive test must also probe the complementary input space, or verify every path coefficient.
+
+## Systemic audit: symbols, quantifiers, and discriminating checks
+
+### Symbol register and stale quantifiers
+
+| Object | Current source anchors | Consequence |
+|---|---|---|
+| theta_SUP versus theta_REG | SQ.md:188 versus 1622; both enter 318–319/1633 | The unexecuted rename is necessary; neither a shared spelling nor an upper ceiling identifies the active minimum. |
+| C_D | SQ.md:145–146 versus output formula 1634 | A calculation at historical input C_D=2 cannot be reused after C_D depends on C_T. |
+| C_1 | SQ.md:190 (SUP-price value 160), 1487 (Moser constant), 1587 (CARL coefficient) | These are different constants. Q1 uses the CARL value only; Q4 uses SUP-price's full formula. No cross-comparison by name is accepted. |
+| q_transport versus q_source | SQ.md:1096–1099 versus 1459/1621 | The contraction ratio is <1; the integrability exponent is >4 and then chosen as 8. The summation and moment bounds use different objects. |
+| phi_i, Phi_l, psi_u, sp_l | BFT_A.md:3291–3294,3307–3309 | A single funnel term, a partial sum, the top funnel, and a representative's divergence are not interchangeable. B3 repairs both a symbol mistake and an unsupported asymptotic extrapolation. |
+| C_tag(K) versus C_cross(K) | FLOW.md:4283 versus 4781–4782 | The former may bound the whole Schur subtraction; the latter bounds a cross entry. F6's definition C_tag=kappa C_cross² reconciles them. |
+| Pi(M) versus P_n(U) | FLOW.md:1452–1456 versus 4602–4605/4749 | Pi is the local maximizer Hessian; P is the transverse projector. P-poles does not acquire a Pi-loc hypothesis from its neighbor. |
+| lambda-degree versus momentum power | FLOW.md:4603–4608 | Each soft lambda contributes two momentum powers. Which shifted factors vanish depends on the path to the infrared limit. |
+
+The comparison `epsilon_1<t_pr` remains a **CONDITIONAL** consumer test, not a numerical delivery. Neither epsilon_* nor the Moser constant has the evaluated bound needed to close all its minima in the permitted source. BFT's k-uniform refutation cannot be certified by k=2 alone, and its T>=1 exact-size claim must include the collapsed T=1 torus. FLOW's local analytic expansion must not silently quantify over wrapped Cartan lifts. A 1/n upper bound does not exclude the much faster L^(-2n) rate.
+
+### Could the cited check fail for the right reason?
+
+All implementation and execution verdicts below are **NOT-VERIFIED**: the scripts and raw outputs are outside the read budget. This is a design audit of the gates as stated in the permitted text, with algebraic witnesses where possible. A printed PASS never substitutes for a proof.
+
+| Check family and source | Discrimination audit |
+|---|---|
+| SQ q4b P0 and K1–K6; REVIEW_SQ_S4.md:404–422, SQ.md:1700–1709 | P0 can fail: Q5 supplies a nonstationary polar output. Objective-value accuracy is second order in stationarity error and therefore K3 passing cannot establish P0. The individual K1/K2/K4/K5/K6 implementations and their independence are not specified sufficiently in these ranges; their PASS labels remain NOT-VERIFIED. |
+| SQ review R1/R2/R3; REVIEW_SQ_S4.md:20–29 | R1 is replaced here by exact Q5. R2 can match all historical constant examples while missing a changed input/minimum; Q1/Q4 expose that failure. R3's byte arithmetic can fail and its 7853-byte equality survives; it cannot prove chronology or absence of in-place edits. |
+| SQ q5 T1/T2/T2b; SQ.md:1711–1722 | T1 can reject wrong tent weights or composition. T2 separates face-start and all-starts maps: SQ-18a's a_2=x_1 x_2 is an exact rejecting input. Equal mass and constant-field checks cannot distinguish them. T2b is expressly post hoc; it does not retroactively alter T2's criterion. |
+| SQ q5 W1/W2/W3/B1; REVIEW_SQ_S4.md:450–464 | W1 tests flat cancellation; W2 can detect covariance errors if its operator is independently constructed. W3/B1 at side 3 cannot test support outside N_2/N_3 because there are no such sites. Their global ratios can still fail, but do not decide locality. The literal BIA tree count fails Q6. |
+| SQ q5 R1/G1; SQ.md:1714–1716 | R1 can reject a reflection that creates crossing curvature or changes norms. G1 can reject an incorrect finite-tree inequality on sampled adapted data; finitely many random cases do not establish the universal moment theorem. Its analytic proof is separately reconstructed above. |
+| SQ failure modes S4-F1..F5; SQ.md:1363–1368 | F1 is addressed by the local WB cancellation, F2 by exact template sums, F3 by LEV-E's additive induction, F4 by the local funnel identity. Side-3 data cannot decide F1/F4 locality. F5 concerns the separate coercivity route; CVX-K's nonuse does not prove that coercivity claim. |
+| BFT E1 / BA8-F1,F5; BFT_A.md:3353–3363 | An independently evaluated DF/RF residual can reject a wrong sign or transport. E1 explicitly replaces Gamma_E by the exact algebra it uses, so its passing cannot certify construction or bounds of the actual S_E projector. B6 gives a whole invisible family for the gradient-only h test. |
+| BFT E2 / BA8-F3,F6; REVIEW_BFT_A_S8.md:391–409 | F3 has both a ratio and a size clause: zero/near-zero spikes cannot win by ratio alone at the quoted nonzero reference threshold. F6 must be evaluated at that F3 offset. The printed decisive numbers reject F6; symmetric-offset print-floor ratios are not another theorem. Finite-k spikes do not settle k-uniformity. |
+| BFT E3 / BA8-F4; BFT_A.md:3530–3531 and REVIEW_BFT_A_S8.md:295–308 | One adequately resolved nonzero offset rejects universal cancellation. Six-decimal zeros cannot certify a 1e-10 all-offset condition. Exact zeros of psi for a curl source cannot certify zeros of epsilon=phi_1(y) for a different Green-function representative. |
+| BFT E4 / BA8-F2; BFT_A.md:3364–3368,3499 | A random pairing gives a lower bound on a supremum, so a large sample could refute a specified upper bound. Small samples cannot certify it. The proof, not E4, must carry PW-cc. |
+| BFT BA8-F7 / MR; BFT_A.md:3348–3358,3622–3640 | This comparison is meaningful only with a fixed rate unit, allowed scale choices, and a proved consumer requirement. Those outside consumers are not re-read here. A quoted upper ceiling on m_Y cannot alone decide every requirement. |
+| FLOW f16 A1 / S13-F1; FLOW.md:4612–4617 | Exact-map, off-diagonal, oddness, and cubic-ratio tests can reject distinct errors. Small-lift samples cannot test the wrapped-lift quantifier; F5 passes D' while falsifying the all-lift formula. A cubic ratio also needs a nonzero resolved denominator. |
+| FLOW f16 A2/A3 / S13-F2; FLOW.md:4614–4617 | Comparing independently computed nonlinear-map derivatives to the closed formula can reject incorrect root weights. The proposed weight=1 negative control can distinguish them on the chosen nontrivial field; it is not guaranteed to reject at zero field. Covariance identities alone cannot certify all matrix entries, and the two-half-scale ratio needs a resolved difference. Implementation independence remains NOT-VERIFIED. |
+| FLOW f16 B1 / S13-F3; FLOW.md:4620–4622 | Product-composition and projection identities can reject an independently implemented recursion. If the compared side is merely defined from that same identity the check is circular; script inspection would be needed to exclude this. Either way it does not test convergence or the longitudinal Schur lower bound. |
+| FLOW f16 B2 / S13-F4; FLOW.md:4622–4623,4820–4822 | The specified ratios can pass or fail on a chosen nonzero pair of coefficients. One depth ratio at lambda>=3 has no sensitivity to small momentum, all depths, or SU(3) Part-B behavior. The alleged 0.5-to-0.6 relaxation is unverified from excluded criteria; both printed ratios pass the original gate. |
+| FLOW f16 B3/B4 / S13-F5,F6; FLOW.md:4623–4625,4803–4815 | Both could pass: F1's exact linear Richardson control disproves predetermined failure. B4's printed scaling supports a truncation diagnosis only. B3 lacks that scaling evidence. A post-hoc smaller step is a new test, not a replacement pre-registration. An analytic P-poles derivation, not observed residual decay, establishes the identity. |
+| FLOW reviewer toy maximizer; REVIEW_FLOW_S13.md:89–90,257–296 | Testing Im r_i equality can reject nonstationarity; its printed spread already fails the claimed 1e-10 agreement. The exact Lagrange derivation, not that optimizer output, repairs the proof. |
+
+The strongest newly exposed blind gate is B6: even exact success on every gradient input leaves the entire co-closed component of the asserted funnel undetermined. The strongest false gate diagnosis is S13-13: a big-O upper bound was used as if it were a positive lower bound.
+
+### Citation and scope audit
+
+Located source statements by strings and checked the displayed current ranges. Key target anchors (SQ theta definitions and §§15.1–15.5; BFT §§36–40; FLOW §§103–110) still contain the cited subject matter. Confirmed specific mistakes: SQ.md:1277's §15.6 points to §15.5; FLOW.md:4645's §30(C3) points to §37(C3); REVIEW_SQ_S4's opening S4 item labels drift relative to its own body. These are specific mismatches, not a claim of uniform line drift.
+
+The reviews' PROOF.md references (including FLOW's cited 6600–6660/6633/6637ff) are **NOT-VERIFIED**: checking them would exceed the two optional-file budget. The same applies to logs, criteria, scripts, previous reviews, BFT_B, LINEAR_PACKAGE, HW/RLARGE, and audit ledgers. No assertion about their current content, historical reproducibility, or applied downstream status is certified here. Only this deliverable was written; no target repair, git command, floating-point run, or external scientific-status update was performed.
+
+## Summary table and hit rates
+
+Counts below are the **unique split rows in the three verdict-inventory tables**, not the old reviews' theorem tallies. A repeated fix inherits its linked row and is not counted twice; standalone excluded-artifact checks mentioned in the mapping paragraphs are not additional counted atoms. This makes the denominator reproducible and avoids rewarding repeated headline claims. Each CONFIRMED row states the exact scope checked; conditional algebra is not counted as proof of its hypotheses.
+
+| Review | CONFIRMED | REFUTED | NOT-VERIFIED | Total listed atoms | Hit rate among decided atoms | Confirmed / all listed atoms |
+|---|---:|---:|---:|---:|---:|---:|
+| REVIEW_SQ_S4 | 22 | 7 | 9 | 38 | 22/29 = **75.9%** | 22/38 = 57.9% |
+| REVIEW_BFT_A_S8 | 16 | 8 | 9 | 33 | 16/24 = **66.7%** | 16/33 = 48.5% |
+| REVIEW_FLOW_S13 | 17 | 8 | 8 | 33 | 17/25 = **68.0%** | 17/33 = 51.5% |
+| Total | 55 | 23 | 26 | 104 | 55/78 = **70.5%** | 55/104 = 52.9% |
+
+Coverage: every S4-1..S4-22, M4-1..M4-8 and SQ binding order 1..10 is dispositioned; every S8-1..S8-18 and P8-1..P8-9 is dispositioned; every S13-1..S13-23 and FLOW binding order 1..11 is dispositioned. The positive-check section independently derives nine SQ groups, seven BFT groups, and seven FLOW groups, exceeding five sampled confirmations per review. Historical script execution, provenance and outside dependencies receive NOT-VERIFIED rather than a guessed verdict. Exact-arithmetic recount found no missing main numbered item or duplicate inventory ID.
+
+| Refuted number or numerical conclusion | Corrected result | Derivation / finding |
+|---|---|---|
+| SQ theta_G ceiling 1.46e-13 and tau_R ceiling 2.75e-15 used to identify a binding entry; eta_flat approximately 4.2e-36, t_pr approximately 1.5e-13 | No evaluated binding minimum. theta_REG=min(theta_G,epsilon_*/[(1336/25)2^(5/8)]), and DESC also retains theta_SUP. On the review's own C_T=16384 choice, t_pr<6e-22, tau_flat<6e-22/53, eta_flat<(6e-22)^2/(640·53^4). | Q1/Q4. The beta>=4.29e11 theta substitution is invalid; e=242.9 theta and LEV-E's 3.04e-13 describe a conservative envelope/choice. A conservative CARL envelope cutoff is 1/[8(A+sqrt(A²+B/4))], with the other conditions retained. |
+| SQ's 1/4 neighborhood is sufficient for every SU(N) | It fails at N=32. A sufficient replacement is eta<=min(1/4,1/N), or an explicitly identity-centered SU(N) logarithm sector. | Q3: central element has eta=2sin(pi/32)<1/4 but P=0. |
+| SQ requires R_0=128 instead of 64; stopping factor identified with 128² | R_0=64 works after absorbing its finite interval. For R>=128 the actual factor has supremum 256 (integer maximum 255), and equals 128 at R=128. The larger envelope has maximum 16384. | Q2: exact dyadic exponent. No necessary optimal C_T>=16384 follows. |
+| SQ cube faces have at most two non-tree edges | Four in the listed tree gauge. | Q6: explicit z=1 face. |
+| SQ 1/(3.31e7·6.7e-40)=6.7e15; this condition is iff | The reciprocal is 10^36/22177, approximately 4.509e31. Its square root is approximately 6.7e15; the corrected necessary condition is C_D<(2A epsilon_1)^(-1/2), with 16,532,779<A<16,532,781. | Q4: exact rational substitution and rational square-root enclosure. It remains insufficient to close the full minimum. |
+| BFT psi=+/-1/54 | That is phi_1. For the stated unnormalized source and k>=2, psi=+/-130/6561; normalized negative witness gives -65/26244. | B3: integer path sums -36 and -204. |
+| BFT 0.5% tail, approximately 7.5% remainder, every finite truncation nonzero | After phi_1 the exact remainder is (17/243)phi_1; after phi_2 it is zero for this witness, at every greater depth. | B3: opposite-edge cancellation gives Q_str^(n)u=0 for n>=9. This does not settle the different Y^p input. |
+| BFT exact tent norm 8L^(3(k-l)) for the whole stated setting | Zero at T=1. | B4: the sole periodized partition function is identically 1. Larger T needs its own discrete sum. |
+| FLOW Im r agreement <=1e-10 | Printed spread is 8.6e-8. | F6: subtract the printed extrema; exact stationarity theorem survives. |
+| FLOW normalized bound allows a universal abs(K)^(-30) | At r=2: powers 12 for fixed generic P, 36 at P=pi e_2, 60 in a joint soft limit. At r=1: generic power 8, joint soft power 24. | F3: each soft lambda is quadratic in momentum. These are bound allowances, not actual poles. |
+| FLOW delta=0.02 and O(delta^4) force failure against 1e-7 | delta^4=1/6,250,000, but c delta^4 passes for abs(c)<5/8, including c=0. | F1: exact linear Richardson control. B4's printed coefficient is 7625, giving the empirical requirement delta^4<1/76,250,000,000, not a pre-run impossibility theorem. |
+| FLOW D' implies every abs(h_j delta)<pi/3 | Wrapped delta=2pi can have identity group element. The explicit identity-link witness has Q_root a=2pi/27 while its nonlinear output is identity. | F5: three out of 81 contour starts cross the chosen link; coefficient 1/27. |
+
+Other rejected conclusions: the proposed SQ repair does not license retaining all old statuses; BFT's GE-T-to-SR template drops PW-ii, its transport proof lacks potential estimates, and its gradient gate cannot certify a co-closed funnel; FLOW's Pi-loc criticism misses the direct-sum Hessian, its P-poles label imports an unused hypothesis, and its W_n refutation needs the supplied lower bound. The apparent Schur-factor error is a symbol-definition ambiguity, not a demonstrated dropped factor.
+
+**Single most dangerous unverified item:** the k-uniform bound/no-cancellation estimate for the **actual S_E projection of the compact curl witness**, BFT_A.md:3307–3313 and REVIEW_BFT_A_S8.md:258–264. Resolving the funnel tail does not resolve that projection. The old review used the claimed GE-T refutation to call PW/SR vacuous, despite also admitting that PW-i for the actual Y^p response was not refuted. Until the projection estimate and the distinct response bridge are proved, that downstream exclusion remains **ARGUED/GAP**, not PROVEN. No verdict here declares GE-T true.
+
+Completion: 2026-10-28 UTC. This report is the deliverable; source-side fixes and downstream audit actions are outside this assignment.
+
+Final verification: plain-Python exact arithmetic independently reproduced phi_1=-1/54, phi_2=-17/13122 and phi_3=0; checked the face/all-starts witness (9 versus 18 at L=3), C_err's symbolic coefficients and rational enclosure, the conditional C_D/t_pr bounds, the reciprocal, and the stationarity spread. The inventory recount is 104 unique rows: 55 CONFIRMED, 23 REFUTED, 26 NOT-VERIFIED. These checks validate the stated local derivations and report arithmetic only; they do not turn excluded dependencies or historical runs into PASSes.

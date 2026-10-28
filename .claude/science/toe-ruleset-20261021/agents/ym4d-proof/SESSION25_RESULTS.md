@@ -1275,3 +1275,34 @@ average" is stale. **Applied:** PROOF.md's leftover "D2 … upgraded to a theore
 - THETAW's decoupling is faithful and satisfiable and may be landed; its BFT replacement text may not (its
   (1c) is false at the literal reading — a flat torus holonomy breaks it; the ¾ is B4's example at α = ¼,
   not a superseded ceiling; ω₀ must be L^{θk} in the residual slot). PROOF.md [S25-fix 3] misquotes BFT_A.
+
+**C7 — tent / face (b) / (CO-fun) — `REVIEW55_TENT.md`** (claude-opus-5-5, max). 77 units: **44 CONFIRMED,
+11 NOT-VERIFIED, 22 REFUTED**; check r55t passed every clause except the designed test E2, controls fired.
+- **>>> Finding X1 (the reviewer's own derivation — NOT banked; Codex check CODEX_REVIEW_X1.md running):
+  "(CO-fun) on composite-co-closed sources is FALSE" does not hold.** Root charges = divergence of a coarse
+  current b, ‖b‖_∞ ≤ Σ_l π_l (max-flow/cut); Q_{k-1}^T b is the datum B_k = b/κ_{k-1}, handled by LINEAR_PACKAGE
+  Thm 4.2(ii) uniformly in k, T; the root-charge-free remainder is covered by Theorem COF. **Sup half only.**
+  If it holds, (TENT-Q), (TENT-osc), face (b), the G_e sign, FACEB's circularity, (YH-pin), (ROOT-sup) are
+  not obstructions. **Follow-on launched on Opus 5.5 (COFUN_CC.md): the Hölder half and BFT-5 (b)'s
+  curvature half on the (cc) class, conditional on X1.**
+- (NEUT-box) refutation CONFIRMED for the source class (exact ratio (4/3)(n² − 1/n)), but it does **not**
+  refute neutrality of the contraction's actual rows — stop citing it against a dipole route.
+- GS-ZERO CONFIRMED and not vacuous (Lemma LD admits r = ∞, BFT_A l.1711). K′_0 = 0 CONFIRMED; "the circularity
+  does not close" NOT-VERIFIED.
+- **New collision: two operators both called h_l** (4!-order average, LINEAR_PACKAGE §1.2, vs one fixed order,
+  BFT_B §27.1/§29.2 and COFUN); on one witness Φ_k = −1/72 vs −65/26244.
+- Lemma SPLIT's "D(S^s) = 0" false for a non-co-closed top residual slot; BFT_B §35.6's reading of Lemma CD at
+  the roots not supported. COFUN's "no per-level sharpening can remove k" REFUTED (lane A's Prop SR does).
+- **Disagreement to settle (Step 4 worker):** this review names "(SPD)/(W2)" as upstream of the k-factor;
+  REVIEW55_TUNIF says SPD at exponent 1 is already proven in carrier form and the factor sits in COF-crit for V_l.
+
+**Codex panellist P2 — `PANEL_P2.md`:** CONDITIONAL — a selected, unaveraged subsequence can give E(4)
+invariance and RP without uniqueness or a gap (abstract implication proven); OPEN — the estimates, the local
+field bridge, a genuine non-free witness. **All three Codex panellists now agree on the route.** Least sure:
+whether the soft RG can deliver the renormalized rotational Ward identity with vanishing boundary torque —
+exactly what the Opus R4 worker (ROTDEF.md) is testing. **Opus panellist P5 dropped as redundant with R4.**
+
+**Codex OLDREV — `CODEX_REVIEW_OLDREV.md`** (the three Opus 5 reviews of earlier lanes): 55 CONFIRMED,
+23 REFUTED, 26 NOT-VERIFIED; hit rates SQ 75.9 %, BFT 66.7 %, FLOW 68.0 %. **Most dangerous NOT-VERIFIED: the
+uniform S_E projection / no-cancellation estimate used to bank the GE-T refutation and discard downstream
+PW/SR content** — i.e. lead decision D1's premise may itself be unsupported.

@@ -890,3 +890,54 @@ uniformly inf-sup stable. Random-walk expansion and general backgrounds are out 
 - Status changes recorded (no count change): Proposition NAH-unif′ GAP as written (CURV-F2″); Proposition COMP GAP ((CL-4));
   level-0 constants on the session-23 class: 𝔠_∞^♯ = 315.19, λ_min ≥ 3.17·10⁻³, ε_* = 2.476·10⁻¹³/C_Δ (κ_0 = 1). Tally
   72 / 2 / 7 / 24 + 1.
+
+## 51. Session-24 (lead: review discharge, integration audit, consolidation) — PRE-STATED
+**Written 2026-10-28 12:15:32 UTC, before any session-24 derivation, consolidation edit or result of any session-24
+worker. Statements only. Nothing here cites a session-24 result.** Session 24 is a lead session: it commissions work,
+audits the target against its consumers, and consolidates. It proves no new mathematics of its own.
+
+**Standing facts this session takes as given (recorded so that the pre-statement is checkable):** the tally entering the
+session is 72 / 2 / 7 / 24 + 1; five sessions were unreviewed at handoff (HW S5, PLD S5, SQ S4, BFT A S8, FLOW S13);
+REVIEW_BFT_B_S8 is written and binding; the named target is BFT-0..5.
+
+**Lead decisions taken at the head of the session (before any worker reported), recorded as decisions, not results.**
+- **D1 (one slice).** Both BFT lanes use the elliptic slice S_E. Lane A's root-funnel spikes in S_E are accepted as real
+  (ARGUED via an exact identity, REVIEW_BFT_B_S8's adjudication), so (PW-i)/(GE-T) for Γ_E is false at large k and lane
+  A's PW-E is empty for S_E. (NC-Γ) is to be restated for composite-co-closed sources plus a remainder bound. Lane B owns
+  BFT-5. *This ratifies REVIEW_BFT_B_S8's recommendation; the decision was the lead's to make and is now made.*
+- **D2 (the per-level route is closed).** Its level-uniform form is GAP (CURV-F2, CURV-F2′, CURV-F2″). The composite /
+  BFT route is the single route. No further effort is to be spent repairing the per-level induction except through D3.
+- **D3 (the constants are the target).** The measured one-level curvature contraction is K_p^♯ ≈ 0.11-0.13 ≈ 1/L²
+  (a contraction) while the proven recursion compounds by Z_colZ_row² ≈ 1.27·10³ per level. Closing that gap, in the
+  norm 𝔐 of REVIEW_S22 l.389-398 and subject to the anti-circularity constraint, is the highest-value open problem and
+  is commissioned this session (NORMS.md).
+
+**Targets (statements only; each is to be judged PASS / PARTIAL / FAIL in §52 after the fact).**
+- **T51-A (review discharge).** The five outstanding hostile reviews are written by reviewers that did not write the
+  sessions: REVIEW_HW_S5, REVIEW_PLD_S5, REVIEW_SQ_S4, REVIEW_BFT_A_S8, REVIEW_FLOW_S13. Each ends with binding fixes,
+  an independent tally, and a verdict on its lane's headline claim. *Pre-stated expectation, to be scored honestly: at
+  least two of the five will narrow, demote or refute a headline claim of the session they review.*
+- **T51-B (integration audit).** INTEGRATION_AUDIT.md answers: if every clause of BFT were proven, would the chain close?
+  The audit is to be scored FAIL if it finds no shortfall and PASS only if each shortfall it names is traced to a quoted
+  consumer requirement and a quoted clause.
+- **T51-C (the constants).** NORMS.md states a curvature-adapted norm, re-derives E3's recursion constant A in it, and
+  reports the θ_w-range on which A < 1. *Pre-stated failure modes, each to be reported if it occurs:*
+  - **NORM-F1:** the norm that kills Z_col is too weak for (H-C)'s consumers, so a conversion reintroduces L^{d-1}.
+  - **NORM-F2:** the Bianchi restriction to closed inputs is not preserved by the blocking map, so the 2.27 → 0.12
+    cancellation is unavailable at level i ≥ 1.
+  - **NORM-F3:** the recursion is circular (it inverts the per-level covariances C^{(j)} as Newton inverses).
+  - **NORM-F4:** A < 1 holds only at θ_w below what a consumer needs.
+- **T51-D (node A).** PLD session 6 reports a status for (J-NS^cd) and for HW's (E2^𝔉), and states whether one lemma
+  covers both. *Failure mode **NA-F1:** the level induction for (J-NS^cd) compounds, so the energy grading is not closed
+  by induction alone.*
+- **T51-E ((H-inv+)).** BFT_B session 9 reports a status for (Res-Hölder), (CO-0), (CO-up), the (NC-Γ) restatement under
+  D1, and BFT-5. *Failure mode **HI-F1:** (Res-Hölder) fails in every norm pair tried, and the failure is the Π_ex tail
+  already recorded as COMP-F1 rather than a new one.*
+- **T51-F (honest distance).** The consolidation states the remaining work in the project's own measure
+  (LINEAR_PACKAGE §10: paper-scale and session-scale tasks), not in the flat OPEN count, which REVIEW_S15_CONVERGENCE
+  recorded as a counting artefact. No public text is drafted: the landing rule requires a complete and reviewed proof,
+  and this session does not expect to produce one.
+
+**Anti-inflation clause (pre-stated).** Session 24 adds no PROVEN-HERE item of its own. Any change to the tally comes
+only from a review's adjudication of an earlier session, or from a worker's file, and is attributed there. If the
+workers' net contribution to the main-path tally is zero, §52 says so plainly.

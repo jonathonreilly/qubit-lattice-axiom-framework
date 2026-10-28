@@ -1958,3 +1958,74 @@ only move towards WORSE.**
 the response (**expected fatal**) or — **the one route not already expected to fail, requested to lane A** —
 as **Σ_X|Q_X| ≲ n^{-2} on the SOURCE**, since max|Φ_k| ≤ 3.89·C₀ is k-uniform and **its lower bound is
 attained.**
+
+## GREENT.md — the Green's-function bound PROVEN, and the "≈16" price CORRECTED by 1.6e7. 699 lines.
+## Outcome (G-O1). Two clauses FAILED, including a new failure mode: a gate UNSATISFIABLE BY CONSTRUCTION.
+
+### 1. The statement needed — derived, and NL-8 named only one of its three parts
+NLOC's consumer is a single number, the **cell sum 𝒮** in 𝔏_j ≤ d·𝔠_P·𝒮·L^{(d-1)n}. **Proposition NL-8's
+own phrasing names only ONE of the three things it needs.** The correct list, at d = 4 on (ℤ/R)^d with
+R = T·L^k:
+- **(GT-1)** |∇_μG(x)| ≤ C_1|x|^{-(d-1)}, uniformly in R — the kernel of d₀*Δ₀^{-1} is **one** difference of
+  the scalar G (Lemma GT-0);
+- **(GT-2)** |∇_μ∇_λG(x)| ≤ C_2|x|^{-d} — **this is the one that does the work; (GT-1) alone gives a cell
+  sum ≈ T, not log T**;
+- **(GT-3)** a **FIRST-MOMENT** bound Σ_z|z - z₀|·|F₀(z)| — **the vanishing mean alone buys nothing.**
+  Needs a new constant c_m⁽¹⁾ = Σ_X(|X|₁ + d)e^{-m′|X|₁} = **108.1·c_m** at the proven rate.
+
+### 2. PROVEN, with explicit R-uniform constants
+Route: 1-D Fourier bounds + an **exponential-tilt** bound giving Gaussian decay **with** the right
+t^{-1/2}/t^{-1}/t^{-3/2} prefactor — **plain Chernoff has no prefactor and yields only |x|^{-(d-2)}, which
+is exactly where a naive assembly dies** — plus periodisation at cost Ω ≤ 3.
+**C₁ = 54, C₂ = 1703** (Euclidean); **429 and 27250** in coarse ℓ¹. **R-uniform, no logarithmic creep** (the
+profile converges to 1.096 and 6.557 as s → ∞). Status: **COMPUTED upper Riemann sums of explicit elementary
+integrals**, not closed form — the worker flags this as reviewer-attack item (i). Loose by ≈3e2 and ≈1e3
+against the exactly computed maxima.
+**>>> The zero mode NEVER enters** — every kernel entry is a difference of G, and the source is exact hence
+mean-zero. **So the log T is NOT from the zero mode** (as the lead's brief supposed): **it is the ℓ¹ sum of
+a |X|^{-d} profile over a box of side T, and hence IRREDUCIBLE.**
+
+### 3. >>> The improved price is NOT ≈16 — the lead repeated this error too
+| | value |
+|---|---|
+| NLOC Corollary NL-4's cell sum T^d | 2.80e28 |
+| **GREENT's 𝒮_T at T = T₀** | **2.51e8** |
+| **gain** | **1.11e20** |
+| ideal (N-loc) at the same proven rate, c_m | 7.36e6 → **only 34× better** |
+
+**"log T ≈ 16" is the log FACTOR; the constant in front is ≈1.5e7.** NLOC §L9 item 13 and its FOR OTHER
+FILES item 7 ("down to log T ≈ 16") are **wrong as a price statement**, and **I repeated "10²⁸ → ≈16" in
+HANDOFF.md and to the owner.** Logarithmic *growth* is confirmed (𝒮_T/log 2T ≈ 1e7 over T = 1e3…1e12).
+*Corrected in HANDOFF.md item 1.*
+
+### 4. Corollary NL-4 becomes NL-4′
+Substitution c_m ↦ 𝒮_T and 𝔠_P ↦ 𝔠_P^coul, i.e. the factor **T^d/c_m = 3.8e21 replaced by 34.**
+**A_soft = 1/L and all four exponent counts untouched.** Critically, **both legs come from ONE admissible
+representative** (the Coulomb field at level 0 plus NL-3 step (3)'s nested correction) — which §L2 (A3)
+requires and **NL-9 shows is exactly where the naive trade dies.**
+
+### 5. T-uniformity: NO
+**A log T is not T-uniform.** N1-15 is unconditional at **fixed** T ≥ T₀ with a **(log T)-sized constant**;
+**the sup leg is T-uniform, the ℓ¹ leg is not.** **(N-loc-b)/(N-loc-cell) is still open and still needed for
+layer 2.** **(N-bg) and (H-C)'s C_♭ clause are untouched — nothing here bears on them.**
+
+### 6. Checks — and a NEW failure mode of the check-power lens
+**PASS:** gt1-B (solver validated exactly; **two independent computations of the kernel column gave
+byte-identical output**), **gt1-C (proof ≥ exact measurement: 53.6 ≥ 0.1698 and 1702.7 ≥ 1.7165)**,
+**gt2-E (R-uniformity: both maxima DECREASE from R = 8 to 24)**, gt1b-A.
+**FAIL gt1-A** — gt1_green.py's d* is **minus the true adjoint**, so it tested -Δ; script and output kept
+unaltered, re-run as **gt1b-A: PASS, 0/23328 discrepancies.**
+**>>> FAIL gt1-D, its re-run gt1b-D, and gt2-F** — the monotonicity gate **quantified over shells up to the
+torus half-period, where reflection symmetry suppresses the kernel, so NO true power law could pass it: the
+gate was UNSATISFIABLE BY CONSTRUCTION.** Post-hoc (labelled), a fixed-direction probe at R = 24 and 32 is
+decisive: s⁴|b_A| bounded and falling (0.268 → 0.158) while s⁴|b_B| grows (0.347 → 0.572), local exponents
+4.1-4.7 against 3.4-4.0. **The designed-FAIL arm does fail the d-th-power claim, so the gate had power — but
+this is a post-hoc reading, not a passed gate**, and the worker says so.
+*Ninth check-power finding, and a NEW mode: not a gate that cannot fail, but a gate that cannot PASS. Both
+ends of the same defect — a criterion written without checking it is satisfiable by the truth.*
+
+### 7. Could not pin
+Closed forms for the two constants (quadrature-based upper sums). **The ≈1e3 of looseness is all in Lemma
+GT-A's four integral bounds and the single-coordinate reduction costing d^{d-1} = 256 — sharpening it would
+push 𝒮_T to ≈1e5-1e6, BELOW c_m**, and the worker flags it as **the cheapest remaining factor.** The
+far-region bookkeeping in GT-4(b) is crude but **verified immaterial** (𝔠_i × 100 moves 𝒮_T by 0.19%).

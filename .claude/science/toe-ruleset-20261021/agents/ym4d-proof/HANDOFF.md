@@ -69,9 +69,23 @@ NQ-1** gives **Theorem NL-3′** and hence **Corollary NL-4: Theorem N1-15 is UN
 background, linearised, at FIXED coarse side T ≥ T₀, with no (N-loc) at all** — confirming REVIEW_NORMS_S1's
 RN1-20. **So (N-loc) is bypassed, and what is actually open is uniformity in T, which layer 2 needs** and
 which "had never been written down" as the content of the open half. Price at fixed T: T^d ≈ 2.8e28.
-- **Cheapest win in the lane (ARGUED, commissioned as GREENT.md):** the **Coulomb representative**'s
-  |x|^{-d} tail (= LINEAR_PACKAGE Prop 3.7's Π_ex) gives **log T instead of T^d — 10²⁸ → ≈ 16** — and needs
-  only a classical lattice Green's-function bound. **A log T is still not T-uniformity; say so.**
+- **DONE, and the price was mis-stated by 1.6e7.** GREENT.md **PROVES** the lattice Green's-function
+  estimate with explicit R-uniform constants (**C₁ = 54, C₂ = 1703** Euclidean; 429 and 27250 in coarse ℓ¹),
+  closing Proposition NL-8's hole — **and NL-8 named only ONE of the three ingredients it needs**: the
+  **second**-difference bound (GT-2) is what does the work, since (GT-1) alone gives a cell sum ≈ T; and a
+  **first-moment** bound (GT-3) is required, because the vanishing mean alone buys nothing.
+  **The price: 𝒮_T = 2.51e8, not ≈16.** "log T ≈ 16" is the log **factor**; the constant in front is
+  ≈1.5e7. The gain over T^d = 2.80e28 is **1.11e20**, and the ideal (N-loc) at the same proven rate is
+  **only 34× better** — so **Corollary NL-4′ replaces the factor T^d/c_m = 3.8e21 by 34**, with A_soft = 1/L
+  and every exponent count untouched. *The "≈16" claim in NLOC §L9 item 13 and in the previous version of
+  this file was the lead's error, repeated from NLOC.*
+  **The log T is NOT from the zero mode** (which never enters, since every kernel entry is a difference of
+  G and the source is mean-zero) — it is the ℓ¹ sum of a |X|^{-d} profile over a box of side T, and so
+  **irreducible**. **A log T is not T-uniformity: the sup leg is T-uniform, the ℓ¹ leg is not**, so
+  **(N-loc-b)/(N-loc-cell) remains open and layer 2 still needs it.**
+  *Cheapest remaining factor, named:* the ≈1e3 of looseness sits in Lemma GT-A's four integral bounds and a
+  single-coordinate reduction costing d^{d-1} = 256; sharpening it would push 𝒮_T to **≈1e5-1e6, below
+  c_m**.
 - **(N-loc-cell)** is the reduced fine half: **a finite list of cell-flux divisibility conditions on the
   already-proven symbol**, i.e. **(CL-1)'s open half in scalar form rather than a construction to invent.**
   Its leading condition is PROVEN.

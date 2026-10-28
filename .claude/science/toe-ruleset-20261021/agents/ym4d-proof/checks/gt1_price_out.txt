@@ -1,0 +1,33 @@
+gt1_price.py -- GREENT.md section G3 arithmetic.  COMPUTED (exact shell counts, scalar floats).
+Theorem GT-1/GT-2 constants used (coarse l^1 form, as REPORTED in section G2): C_1^(1)=429 C_2^(1)=27250
+
+=== PROVEN rate m_*' (kappa=1, L=3) : m' = 0.0384 ===
+   c_m = sum_X e^{-m'|X|_1} = coth(m'/2)^4            = 7.36222e+06
+   c_m^(1) = sum_X (|X|_1+4) e^{-m'|X|_1}             = 7.96158e+08   (ratio to c_m: 108.1)
+   profile coefficients:  q_n = 7.0339e+06   q_ii = 0.000139087   q_i = 1.44883e-06 ; profile falls below 1 at shell s = 52
+   CELL SUM  S_T  at T = T_0 = 1.2932e7               = 2.51355e+08
+   NLOC.md Corollary NL-4 cell sum  T^d               = 2.79681e+28
+   a true (N-loc) at this rate      c_m               = 7.36222e+06
+   GAIN over NLOC's T^d : 1.113e+20      COST over an ideal (N-loc): 34.14
+     T = 1000        S_T = 7.37775e+07      S_T / log(2T) = 9.70642e+06
+     T = 1e+05       S_T = 1.60152e+08      S_T / log(2T) = 1.31207e+07
+     T = 1e+07       S_T = 2.46532e+08      S_T / log(2T) = 1.46647e+07
+     T = 1.293e+07   S_T = 2.51355e+08      S_T / log(2T) = 1.47263e+07
+     T = 1e+09       S_T = 3.32911e+08      S_T / log(2T) = 1.55447e+07
+     T = 1e+12       S_T = 4.6248e+08       S_T / log(2T) = 1.63281e+07
+
+=== LOCATED rate (NOT proven) : m' = 1.0000 ===
+   c_m = sum_X e^{-m'|X|_1} = coth(m'/2)^4            = 21.9276
+   c_m^(1) = sum_X (|X|_1+4) e^{-m'|X|_1}             = 162.345   (ratio to c_m: 7.404)
+   profile coefficients:  q_n = 121476   q_ii = 11.7799   q_i = 0.122707 ; profile falls below 1 at shell s = 19
+   CELL SUM  S_T  at T = T_0 = 1.2932e7               = 4.6637e+06
+   NLOC.md Corollary NL-4 cell sum  T^d               = 2.79681e+28
+   a true (N-loc) at this rate      c_m               = 21.9276
+   GAIN over NLOC's T^d : 5.997e+21      COST over an ideal (N-loc): 2.127e+05
+     T = 1000        S_T = 1.59693e+06      S_T / log(2T) = 210097
+     T = 1e+05       S_T = 3.08863e+06      S_T / log(2T) = 253040
+     T = 1e+07       S_T = 4.58041e+06      S_T / log(2T) = 272461
+     T = 1.293e+07   S_T = 4.6637e+06       S_T / log(2T) = 273236
+     T = 1e+09       S_T = 6.07219e+06      S_T / log(2T) = 283530
+     T = 1e+12       S_T = 8.30986e+06      S_T / log(2T) = 293384
+

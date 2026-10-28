@@ -1,133 +1,154 @@
-# YM4D proof push: handoff (2026-10-28)
+# YM4D proof push: handoff (rewritten after session 24, 2026-10-28)
+
+*Supersedes the 2026-10-28 pre-session-24 handoff entirely. Everything the old handoff said was in flight
+has now either landed or been withdrawn; read this file instead of it.*
 
 ## Goal
-- Constructive UV stability (layer 1) and existence (layer 2: OS axioms, non-triviality) of 4D lattice SU(N) Yang-Mills.
-- Method: a soft gauge-covariant RG with S4' averaging ("decision 4": soft chosen over Balaban's hard delta-constraint).
-- Credit Balaban (CMP series; the 1987 CMP 109:249-301 PDF is in literature/) and Dimock in every public text.
-- Nothing has been posted or landed.
+- Constructive UV stability (layer 1) and existence (layer 2: OS axioms, non-triviality) of 4D lattice
+  SU(N) Yang-Mills.
+- Method: a soft gauge-covariant RG with S4′ averaging ("decision 4": soft, not Balaban's hard
+  delta-constraint).
+- **Credit Balaban (CMP series 1983-1989; CMP 109:249-301 (1987) read directly) and Dimock in every public
+  text.** Imports are allowed but must be re-verified on our own structures.
+- **Nothing has been posted or landed, and nothing should be.** No statement in this repository claims 4D
+  Yang-Mills existence or a mass gap.
 
-## Where things stand
-- **Master file: PROOF.md.**
-  - Tally 72 PROVEN / 2 / 7 / 24 OPEN + 1.
-  - The CROSS-LANE STATUS map is at the end of the session-23 consolidation.
-- **Frozen, outside-readable piece: LINEAR_PACKAGE.md v1.1.**
-- **Lane files** (each has a matching REVIEW_* per session; read the latest review first, since it lists the binding fixes):
-  - RLARGE.md v3: large-field R-operation;
-  - FLOW.md: coupling flow, normalisation u = 2N/g², ghost share 1/22, T-tel exact;
-  - BFT_A.md and BFT_B.md: background-field theorem clauses 0-5, as stated in REVIEW_S22 Part 5;
-  - HW.md, PLD.md, SQ.md, SF.md (computer-assisted certificates), HIST.md.
-- **Existence lane: ../ym4d-existence/E/EXISTENCE.md.**
-  - Paused until the layer-1 outputs exist.
-  - Its consumer list says which layer-1 outputs it needs.
+## Read these, in this order
+1. **This file.**
+2. **SESSION24_RESULTS.md** — the lead's ledger of all eleven session-24 worker reports, with every finding
+   and every reversal. It is the fastest way to the current state.
+3. **RTARGET.md §51-§52** — session 24's pre-stated targets and the honest scoring, including three
+   corrections to the lead.
+4. **INTEGRATION_AUDIT.md** — whether the named target suffices for its consumers (it does not yet; two
+   named additions).
+5. **PROOF.md's session-24 header and [S24]** — the four binding corrections to this ledger and the
+   critical-path summary.
+6. Then the lane file and the latest REVIEW_* for whichever lane you are taking.
 
-## Critical path (REVIEW_RLARGE_V3 top 3, plus the other lanes)
-1. **(LI^U) future-insensitivity.** The wall is (CRC-1), a two-species cluster expansion. HW session 5 was running.
-2. **Node-A in-step returned price.** PLD session 5 was running (NA-PRICE on the extracted representation).
-3. **The (CLS-min) chain.** (CLS-min) ⇐ (REG-min) ⇐ (EPS-0b), the lattice Uhlenbeck gauge, taken as lane B's S_E. SQ session 4 was running.
-4. **BFT.**
-   - (NC-Γ) via the (PW-i) dual form: BFT A session 8 was running.
-   - Lane B session 8 PROVED GE-T, N2-loc, N1-loc and CL-iv. Its review, REVIEW_BFT_B_S8.md, was running.
-   - Still open: non-residual g_Z at θ > 0, (CovLift)(v), (Mult-Y)/GAP 1, and m > 0.
-   - BFT-5 has no owner yet.
-5. **FLOW.** (T-a1) and the m_n lemma were in FLOW session 13 (running). Still open: (T-a2), (T-b), (T-c), (L-loc2).
+## THE REVIEW DEBT IS PAID
+All five reviews the old handoff asked for are written: **REVIEW_HW_S5, REVIEW_PLD_S5, REVIEW_SQ_S4,
+REVIEW_BFT_A_S8, REVIEW_FLOW_S13.** No headline was refuted outright; three were narrowed, one session's
+reported verdicts were reversed three times, one framing was relabelled, and REVIEW_BFT_A_S8 supplied a
+proof its session lacked.
 
-On resume: check each lane file's newest section and the REVIEW_* files. Agents running at handoff may have finished; do not trust this list over the files.
+**UNREVIEWED, and these are the next reviews to run:** HW session 6, PLD session 6, BFT_B sessions 9 and 10,
+NORMS.md, NQ_CHECK.md, CONST_T.md, STAR_CONST.md. Every one is from session 24 and none has been audited.
+Given this project's record — sixteen reversals historically, five more today — **treat all of them as
+provisional until reviewed.**
 
-## Process rules (binding)
-- **Hostile review after every session**, written to REVIEW_<LANE>_S<n>.md by a reviewer that did not write the session.
-- **Provenance.**
-  - The PRE-STATED section is the very first edit of a session and holds statements only. Log its stat and byte size in the *_LOG.md file.
-  - Write the criteria files before the scripts. They may contain no constants derived in the same session.
-- **Numerics.**
-  - Take the lock with `until mkdir <scratch>/locks/numeric; do sleep 20; done`, run, then `rmdir` exactly once.
-  - Never pkill.
-  - Run with nice 10 and one thread.
-  - Run only when load < 8 and at least 30% of memory is free.
-  - Keep each job under 20 min and under 1 GB.
-  - Run one numeric job machine-wide (8 GB machine).
-- **Statuses.** Use PROVEN / ARGUED / OPEN honestly. A failed check is reported as a fail, with any post-hoc probe labelled post-hoc.
-- **Never edit the axioms.**
-- **Imports are allowed** but must be re-verified on our structures.
-- **No Sci-Hub/LibGen**, and pay for nothing.
-- **Landing (only once the full proof is complete and reviewed):**
-  - one PR (note + runner + cache), landed by an independent review-loop agent;
-  - then draft the HN / OpenAI-thread text for the owner to approve word for word.
+## WITHDRAWN: things the old handoff told you to do that you must NOT do
+1. **"Lower g_0 and recheck the SF thresholds."** WITHDRAWN, independently by two lanes. The smallness
+   condition is **satisfiable** (REVIEW_HW_S5 traced the g-dependence: ε₁ sits at a g-free ceiling, H5
+   *relaxes* as g → 0, b_n/b_D/c_att are pure geometry), and **the breach does not bind**: the binding
+   ceiling is g_0² ≲ 2.5e-152/C_Ω, with slack ×3.59e56. There is no constants crisis.
+2. **Repairing the per-level induction, in any norm.** NORMS.md §N5 proves it is a **no-go**: the d = 4
+   cubic vertex is marginal, so A ≥ 1 in every scale-covariant norm, and the weight-invariance half is
+   proven — any A < 1 bought with non-canonical weights is cancelled exactly by the initial-condition
+   mismatch. [S22]'s cures (W1)/(W2) cannot help there. **Use the composite route.**
+3. **Pricing (CO-fun) and the (GE-T) refutation as two items.** BFT_B §36.5: they are the same functional.
+4. **Treating (CO-0), (CO-up) or (SB) as open.** The first two are lane A's CONFIRMED Theorems W0 and GU;
+   Theorem CO-B removes the third.
+5. **The thin-cluster escape for (J-NS^cd)** (dead by computation) and **any finite funnel truncation** for
+   the (PW-i) spikes (every one leaves a level-independent remainder, REVIEW_BFT_A_S8's dichotomy).
 
-## Update after the handoff list was written: HW session 5 finished
-- **Theorem CRC-2T** proves (CRC) for every column-relaxed pattern. It is not yet reviewed; the review writes REVIEW_HW_S5.md.
-- **The smallness condition tightens.** The binding condition is g_K² < 4.9e-97/(c_A + c_U), and it fails the recorded ceiling of 1e-94.
-  - g_0 therefore has to be lowered.
-  - Recheck the downstream constants, including the SF thresholds.
-- **New wall: (E2^𝔉).** This is the good-buffer screening bound, required uniformly over the column-relaxed family. It needs an input from node A, which is the PLD lane's work.
+## The critical path now, in priority order
 
-## Update: BFT lane A session 8 finished
-- **Proven (unreviewed):**
-  - Lemma DF;
-  - Theorem PW-cc, the co-closed half of the dual (PW-i), uniform in k and T;
-  - Propositions RF and TE;
-  - Lemma RC.
-- **Conflict with lane B.** Lane A argues that (GE-T) and (PW-i) for Γ_E are *false* at large k, because of a root-funnel spike: the measured ratio is ρ = 8.02, but on a Coulomb stand-in, not on S_E itself. Lane B claims GE-T is PROVEN, with root charges.
-  - REVIEW_BFT_B_S8.md has been asked to settle this. Look for the section "Cross-lane GE-T adjudication".
-- **Lead decision pending:** whether to adopt lane A's representative that moves the spikes to level 0 (one slice or two). Make it after that review.
-- **Still open:** (PW-ii), which Proposition SR needs, and the factor k in (NC-Γ).
+**1. (N-loc) — the single named input of a proven contraction.** NORMS.md Theorem N1-15 gives
+**A_soft = 1/L = 1/3 uniformly in k** for the composite third derivative, and after NQ_CHECK.md's **Theorem
+NQ-1 ((N-Q) PROVEN, 𝔮_0 = 11/3)** it is **conditional on (N-loc) alone**. (N-loc) is the exponential
+locality of the gauge-variant representative, i.e. **the multi-scale axial gauge already named as (CL-1)'s
+open half.** Closing it discharges (H-C)'s C_♭ clause at the trivial background and gives an **alternative
+to BFT-4** that avoids (CovLift), (Mult-Y), (Pair-loc) and (I-id) entirely. *Highest value in the project.*
+Scope warning: NQ-1 is abelian/linearised, exactly Setting SC's scope, and does nothing for **(N-bg)**,
+which is what BR1 and δ_Sch actually consume.
 
-## Update: PLD session 5 finished (node-A in-step price)
-- **Proven (unreviewed):**
-  - Lemmas GEO, FT^far and COL-DEC: on HW's route the law conversion costs nothing (c_f = 0).
-  - Lemma DIL-L.
-  - Lemma MD: a returned defect whose own kernel centre is good is priced by its own kernel.
-- **Implication:** Theorem NA-PRICE^E (i), (SDP)^{A,far} ⇐ (CLS-min) + (SF-cap) + (J-NS^cd).
-- **New wall: (J-NS^cd).** A bad coarse centre sits above a finer defect whose own centre is also bad. It needs an energy-graded price, i.e. (SDP) one level down; check whether induction on levels closes it.
-- **Also open:** c_lcr is uncertified. The working value is θ ≈ 8e-7.
-- **Reviews running:** REVIEW_PLD_S5.md (it includes whether this supplies HW's (E2^𝔉)) and REVIEW_BFT_A_S8.md.
+**2. The nontrivial background: (N1) + (CovLift)'s non-residual g_Z at θ > 0.** Now the biggest BFT
+obstruction, because **every lane-A input (W0, GU, CO-0R, CO-upR, CO-B, LIN0) is proven at the trivial
+background only.** Paper-scale.
 
-## Update: SQ session 4 finished (the Uhlenbeck / CLS-min wall)
-- **Theorem EPS-T:** lattice ε-regularity, PROVEN but unreviewed. Its Moser constants are not explicit.
-- **Route β gives a chain of implications:** Proposition EPS-0b-avg ⇒ (EPS-0) ⇒ (REG-min) ⇒ (CLS-min). The funnel product is integrable, not bounded.
-- **Route α:** the lattice Uhlenbeck gauge LU-ex is PROVEN. (CVX-K) is still OPEN but is not needed.
-- **Check failures:** two checks failed and are disclosed (q4b P0; q5 T2, which was rerun post-hoc as T2b).
-- **Review:** REVIEW_SQ_S4.md is running. It decides whether (CLS-min) is actually delivered to RLARGE.
-- **If it holds,** two of the three RLARGE critical-path walls reduce to: (E2^𝔉), (J-NS^cd), and the explicit constants.
+**3. (CEM-1) and (CEM-2), plus the level-0 clause (0a)/(0b).** The whole HW/node-A chain reduces to these.
+**(CEM-2)** is a decoupling across one R-free ring and is **not obtainable from the buffer-good event
+alone** — the event bounds curvature by ε₁ where a g-independent constant needs ≈ g_K, a gap of 4.489e15 —
+so **the mechanism must be the weight's typicality, not the event** (both REVIEW_HW_S5 and PLD §18 point
+this way). **(CEM-1)** = (LCR) + the main-term reduction off G_Q + u-uniformity, three named single-level
+statements. The level-0 clause is OPEN on both sides and is the largest residual after the moment.
 
-## PAUSED 2026-10-28 for handoff: what was stopped mid-run
-At the owner's request, every agent below was stopped. No result from any of them is complete.
-- **FLOW session 13 ((T-a1) and the m_n lemma).** It was stopped during its f16 smoke run.
-  - FLOW.md, FLOW_LOG.md and checks/f16_* may contain a partial §103+.
-  - Treat everything after the [RFL12-fix] entries as unfinished and unreviewed.
-- **Reviews stopped before writing anything.** Rerun each one, using the same scope as the session claims above:
-  - REVIEW_BFT_B_S8, including the cross-lane GE-T adjudication against BFT_A §36-§40;
-  - REVIEW_BFT_A_S8;
-  - REVIEW_HW_S5;
-  - REVIEW_PLD_S5;
-  - REVIEW_SQ_S4.
-- **Numeric lock.** It was held by a stopped agent. No process was running, so it was released.
-- **Not committed:** literature/balaban_cmp109 PDF and its extracted text. The paper is copyrighted, so they stay local and are left out of the public repo.
+**4. (CONST-T): expand C_1 and C_V in the energy inequality's steps (2)-(4)** (SQ.md l.1471-1487).
+CONST_T.md has everything after (★) in closed form; **at q = 8, C_T ≥ 1.27e14, provably over the 1e13 the
+(CLS-min) → RLARGE interface needs; at q ≈ 30 it is under**, with compatibility checked clause by clause
+(q > 4; scale-invariance exact for every q; EPS-0b-avg with ~25 decades of headroom; and C_T′ falls
+22.63 → 16·C_T so the ceiling itself rises to ~1.7e13). **q = 8 is the worst admissible choice** (the Moser
+absorption exponent is a = q/(q-4), so a = 2 squares the one-step constant, costing 3.5e7). STAR_CONST.md
+was commissioned for exactly this; if it has landed, read it.
 
-Suggested order on resume:
-1. Run the five reviews.
-2. Settle GE-T and decide one slice or two for BFT.
-3. Lower g_0 and recheck the SF thresholds.
-4. Work (J-NS^cd) and (E2^𝔉) together; both need node-A pricing.
-5. Rerun FLOW S13.
+**5. (TENT-Q) / (NEUT-box): one scalar per level-k box.** Off the critical set, the entire remaining
+obstruction to (NC-Γ) for Γ_E is the compensation charge ⟨χ⁵_X D(S)⟩. **(Y-sup^loc)** — the other factor —
+is a **lane-A linear-package item** now, not lane B's.
 
-## Update: REVIEW_BFT_B_S8.md finished, including the GE-T adjudication
-- **Lane B S8 confirmed.** Binding fixes: RS8-2 (rewording), RS8-3 (rename lane B's GE-T lemma to stop the name clash), RS8-8 (drop the S_E-vs-optimal comparison).
-- **The lanes do not contradict each other.** They proved and refuted two different statements that share the name GE-T.
-  - Lane A's funnel spikes are real in S_E (ARGUED, via an exact identity).
-  - So (PW-i) for S_E fails at large k, and PW-E is empty for S_E.
-- **Recommendation: keep one slice (S_E).**
-  - Restate (NC-Γ) for composite-co-closed sources, plus a remainder bound.
-  - Use two slices only if that lemma fails; that decision is the lead's.
-  - Make lane B the owner of BFT-5, stated for composite-co-closed sources.
-- **To turn the argument into a measurement:** run S_E directly at T = 5, k = 2. It needs a dedicated numeric slot.
+**6. FLOW: (T-a1-M) and (T-b) are ONE wall** (the fine background-dependent inverse H_⊥(U)^{-1}), and
+**(T-c)** (plane-wave ↔ constant-Cartan-flux exchange) decides whether §104-§107 reaches the target at all.
 
-## Update: FLOW session 13 finished (supersedes the "stopped mid-run" note)
-- **FLOW.md §103–§110 is complete and consistent.** Nothing in it has been reviewed yet; REVIEW_FLOW_S13 still needs to run.
-- **PROVEN:** Lemma Cartan-𝔪, Lemma Cartan-T and Proposition SLICE-U. SLICE-U requires pairing with the gradient at U; pairing at U = 1 grows.
-- **PROVEN, given (Π-loc) (ARGUED):** VC-T1 and P-poles.
-- **Check f16:**
-  - 19 of 21 pre-stated verdicts passed. B3 and B4 failed because the finite-difference step was too coarse; they pass at smaller steps, but those runs were not pre-stated.
-  - Transverse coefficients shrink about 0.107 per level (L^{-2} = 0.111). This covers only 2 levels and the (3,3,1,1) torus.
-  - One smoke run used 1.03 GB.
-- **OPEN:** (T-a1-M), (T-a3), (T-b), (T-c) and (L-loc2).
-- **Still to run:** the reviews REVIEW_FLOW_S13, REVIEW_BFT_A_S8, REVIEW_HW_S5, REVIEW_PLD_S5 and REVIEW_SQ_S4.
+**7. (BB-mix), proposed as BFT-6.** OPEN, and the single gate on layer 2's entire cluster expansion.
+
+## Two target restatements to make before proving anything about BFT-1
+- **BFT-1 needs a WEIGHT PAIR** (curvature θ_w^c = 2, residual θ_w^r = d - 1 = 3). With a single common θ_w
+  there is **no solution in (0, 2] for any consumer**. Note θ_w^c = 2 is the **maximal** curvature weight: a
+  weaker BFT-1 is not a safer one.
+- **Promote (BB-mix) to BFT-6.**
+
+## Two cross-lane disagreements left open on purpose
+1. **The price of node A's extra R-free ring:** HW's Lemma RING says **×17** (with a proof and check w6 G6);
+   PLD says **×82**. HW's is the better-supported figure; a reviewer should settle it.
+2. **TF-2:** HW recorded both positions and did not propagate. Node A says PLD §17.2's law already carries
+   the finer spectators, and HW session 6 agrees. A reviewer should close it.
+
+## One PROOF-owned constant conflict
+PLD §16.8's λ_min = 3.17e-3 against REVIEW_PLD_S3's binding L0-1 (6.6e-10). **If L0-1 governs, a_ret falls
+×4.80e6.** Route (ii) defuses it. For SF/PROOF to settle.
+
+## Process rules (binding, unchanged — and three were breached in session 23/24, so read them)
+- **Hostile review after every session**, written to REVIEW_<LANE>_S<n>.md by a reviewer that did not write
+  the session.
+- **PRE-STATED first.** The first edit of a session holds statements only; log its byte size in the *_LOG.md.
+- **Criteria before scripts, and a criteria file may contain NO constant derived in the same session.**
+  HW session 5 breached this (b_n, b_D, c_att in the w5 criteria). SQ's q5 criteria and FLOW's B4 criteria
+  were themselves wrong — FLOW's fixed a FAIL at pre-registration. **Check your own criteria against this.**
+- **A "FOR OTHER FILES" section** whenever you raise a demand on another lane. HW.md lacked one through
+  session 5; §41 repairs it.
+- **Numerics.** Take the lock with `until mkdir <scratch>/locks/numeric; do sleep 20; done`, run, `rmdir`
+  exactly once. Never pkill. nice 10, one thread. Under 20 min and under 1 GB — **FLOW session 13 breached
+  the 1 GB cap at 1.03 GB and it was consequential**, forcing the torus substitution that weakened its
+  evidence. One numeric job machine-wide. Exact rational/symbolic arithmetic in plain python needs no lock.
+- **Statuses.** PROVEN / ARGUED / CONDITIONAL (name the input) / GAP / OPEN, honestly. A failed check is
+  reported as a fail, output and script kept unaltered, re-runs under a new id with criteria untouched, and
+  any post-hoc probe labelled post-hoc. Session 24's workers did this well — four disclosed FAILs, none
+  dressed up — and that is the standard.
+- **Never edit the axioms. No Sci-Hub/LibGen. Pay for nothing.**
+- **Landing (only once the full proof is complete and reviewed):** one PR landed by an independent
+  review-loop agent; then draft the HN / OpenAI-thread text for the owner to approve word for word.
+  **This condition is not met and is not close to being met.**
+
+## The honest distance to finish
+PROOF.md [S16] records REVIEW_S15_CONVERGENCE's finding that **the flat "24 OPEN" is a counting artefact**
+and that the weighted critical-path DAG is the honest measure. The count has now been flat for sessions
+15-24 while substantial mathematics was added — including today.
+
+**LINEAR_PACKAGE.md §10 (frozen 2026-10-27) gives layer 1 as about 6-7 PAPER-SCALE tasks and 15-18
+session-scale tasks**, paper-scale meaning "about one Balaban-sized paper", with the analogous CMP papers
+named: background fields for SU(N) [cf. CMP 102, parts of 99]; propagator bounds at a general background
+[cf. CMP 95, 96, 99]; localisation and polymer bounds for one soft RG step [cf. CMP 116]; the coupling flow
+over all scales [cf. CMP 109 Thm 2, CMP 119]; large-field renormalisation [P×2; cf. CMP 122 I and II];
+assembly [cf. CMP 119]. **Layer 2 is additionally at 9 HYPOTHESIS-NEW and 12 OPEN** (EXISTENCE §21.5) and is
+paused on the layer-1 outputs in its §21.3 consumer list.
+
+**Read that as the real answer to "how far".** It is several Balaban-sized papers, not several sessions.
+What is genuinely in reach as a deliverable is the frozen linear package plus the conditional existence
+architecture — "if layer 1 delivers X, then the OS axioms and non-triviality follow" — which is a theorem
+about the reduction and is valuable whether or not X is ever proven.
+
+## The pattern worth carrying forward
+Across all eleven session-24 worker reports, **the mathematics was largely sound and the orders of magnitude
+were hiding in quantifiers, currencies and incidentally-fixed parameters**: q = 8 (worst admissible, cost
+3.5e7), a single θ_w where a pair was needed, a ×6561 shadow constant that was really ×81, the (E1)/(E2)
+quantifier mismatch, and an allowance currency that two lanes had each denominated differently. **Before
+attacking an estimate, check what someone fixed once and nobody revisited.**

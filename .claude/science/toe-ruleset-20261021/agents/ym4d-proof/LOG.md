@@ -1091,3 +1091,40 @@ RLARGE, FLOW, HIST, PLD, SF, SQ, HW, BFT_A, BFT_B, LINEAR_PACKAGE or agents/ym4d
      each uses (REVIEW_S22 FOR OTHER FILES); SF.md l.252's stale "margin ≈ 10" (S21-2 residue); RLARGE row 3a.
   4. BFT lane A: SQ's requirements (θ_w > 1 stated; cone-box uniqueness, REVIEW_SQ_S2 items 1-5); BFT-5 has no owner yet.
 - **Checkpoint.** PROOF_session23_snapshot.md (= PROOF.md at 09:14 UTC).
+
+# Session 24 (lead; 2026-10-28) — review discharge, integration audit, consolidation
+
+**A lead session: no new mathematics of its own; the main-path tally is unchanged at 72 / 2 / 7 / 24 + 1.**
+
+- **12:15:32 UTC** RTARGET.md §51 appended (PRE-STATED: targets T51-A..F, lead decisions D1-D3, failure modes
+  NORM-F1..F4 / NA-F1 / HI-F1, anti-inflation clause), before any worker was briefed on a result and before
+  any consolidation edit. RTARGET.md 89255 bytes after the append.
+- INTEGRATION_AUDIT.md created (lead-owned; not counted in this tally). Revised twice during the session as
+  REVIEW_SQ_S4 and NORMS.md landed: shortfalls A1-A3 withdrawn, A1 reinstated on stronger grounds, A5
+  ((CONST-T)) and A6 (this ledger's wrong Z_col diagnosis) added.
+- SESSION24_RESULTS.md created (lead's running ledger of worker reports; not counted).
+- **Eleven workers commissioned and completed**, single-writer file ownership, none permitted to run git:
+  five hostile reviews (REVIEW_HW_S5, REVIEW_PLD_S5, REVIEW_SQ_S4, REVIEW_BFT_A_S8, REVIEW_FLOW_S13); HW
+  session 6; PLD session 6; BFT_B sessions 9 and 10; NORMS.md; CONST_T.md; NQ_CHECK.md; STAR_CONST.md.
+  Append-only discipline verified by prefix md5/byte-size on HW.md, PLD.md and BFT_B.md.
+- **PROOF.md edited only here:** a session-24 header (four binding corrections [S24-fix 1]-[S24-fix 4], one
+  flag, one note) and the [S24] consolidation section at the end. **100 insertions, 0 deletions.** No
+  REVIEW file, earlier snapshot, LINEAR_PACKAGE, RLARGE, FLOW, HIST, SF, SQ, HW, PLD or BFT lane file was
+  edited by the lead.
+- **13:29 UTC** RTARGET.md §52 appended (outcomes, scored honestly, including three corrections to the lead).
+- HANDOFF.md rewritten in full, superseding the pre-session-24 version.
+
+**FOR OTHER FILES (lead requests; not edited by the lead).**
+1. **SQ.md / SF.md / PROOF's SF owner:** settle PLD §16.8's λ_min = 3.17e-3 against REVIEW_PLD_S3's binding
+   L0-1 (6.6e-10). If L0-1 governs, a_ret falls ×4.80e6 (PLD p6 D2).
+2. **SQ.md:** EPS-T's q is a free parameter fixed at l.1621 to 8, which is its **worst admissible value**
+   (CONST_T.md). Restate EPS-T with q carried, or fix q ≈ 30. Also: the S4-3 hypothesis, R_0 = 128 (not 64),
+   l.1504's e^{100} = 255 (not 1.6e4), and SHIFT's wording needs one clarifying clause (NQ_CHECK item).
+3. **RLARGE.md:** relabel critical-path item 1 from "(CRC-1), a two-species cluster expansion" to
+   **(E2^𝔉)**; row 9 and HW row A5 are stale after SQ session 4's θ_w = 2.
+4. **HIST.md:** adopt Corollary H-geo′ (proof supplied in HW §41). Without it, HW's full ×311 gain collapses
+   to ×4.77 — pre-stated failure mode (W-F3).
+5. **The BFT owners:** restate BFT-1 with a weight pair (curvature 2, residual d - 1) and promote (BB-mix)
+   to **BFT-6**.
+6. **A reviewer:** settle the two cross-lane disagreements — the ring price (HW's Lemma RING ×17 against
+   PLD's ×82) and TF-2.

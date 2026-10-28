@@ -1,5 +1,41 @@
 # YM4 existence via the Balaban RG: lemma ledger (sessions 1-23, 2026-10-26/28)
 
+**Session-24 header (lead: review discharge, integration audit, consolidation).** A lead session: it
+commissions, audits and consolidates, and **proves no new mathematics of its own**. Targets pre-stated in
+RTARGET.md §51 at 12:15:32 UTC (2026-10-28), before any session-24 derivation or worker report; outcomes
+scored in RTARGET.md §52. Worker results are in their own files; the lead's running ledger is
+SESSION24_RESULTS.md and the target audit is INTEGRATION_AUDIT.md. **Tally after session 24:
+72 / 2 / 7 / 24 + 1 (unchanged).** No item of this ledger changed status category; the session's corrections
+are to *diagnoses, statements and stale cross-references*, listed at [S24].
+- **[S24-fix 1] PROOF.md's Z_col diagnosis (l.6211-6213) is WRONG.** It attributes Z_col = 156 to "the
+  L^{d-1} = 27 crossing links of one coarse link times the spread". NORMS.md Proposition N1-8 proves by an
+  exact mass-balance identity that Z_col is the **column mass of the curvature kernel**, L^d·K̄ ≈ 9.7 plus
+  (2/(d-1))K_ρ ≈ 1.5, and that **the crossing-link count vanishes once the leg is measured through d₁X**.
+  This matters beyond bookkeeping: the wrong diagnosis made the per-level route look like a *norm* problem,
+  whereas NORMS.md §N5 shows it is a **marginality no-go** that no scale-covariant norm can repair (the
+  d = 4 cubic vertex is marginal, so A ≥ 1; the weight-invariance half is proven). **Failure mode CURV-F2 is
+  therefore not repairable in the per-level form, and [S22]'s cures (W1)/(W2) cannot help there.**
+- **[S24-fix 2] The BFT clause table ([S23], l.6695 area) is STALE in three places.** (CO-0) is lane A's
+  **Theorem W0, CONFIRMED** (REVIEW_BFT_A_S6 l.23, 151); (CO-up) is **Theorem GU, CONFIRMED** (same review,
+  l.24, 181), so REVIEW_BFT_A_S4 l.37's "ARGUED" is superseded; and **(SB) is no longer an input at all**
+  (REVIEW_BFT_A_S5 l.373: Theorem CO-B removes it). Hence **(H-inv+) at m = 0, trivial background,
+  level-wise co-closed classes on 𝒞_glob is PROVEN as an implication with every input CONFIRMED by a lane
+  review** (BFT_B §28-§30). **(Res-Hölder) = EP-F4 is closed at m = 0** (BFT_B §29, Theorem RHT-cc).
+- **[S24-fix 3] BFT-1 must be restated with a WEIGHT PAIR.** NORMS.md: A = L^{d - θ_w^r - 2θ_A} with
+  θ_A = min(1, θ_w^c - 1), so A < 1 ⟺ θ_w^r + 2θ_A > d, met at d = 4 by (curvature θ_w^c = 2, residual
+  θ_w^r = 3). **With a single common θ_w there is no solution in (0, 2] for any consumer**, so BFT-1's
+  existential "there exist … θ_w ∈ (0, 2]" cannot support the composite route as written. This merges with
+  REVIEW_SQ_S2's item (2). Note it is the **maximal** curvature weight: a weaker BFT-1 is not a safer one.
+- **[S24-fix 4] (BB-mix) should be promoted to a named clause, BFT-6.** It is OPEN (BFT_B_LOG l.28) and it is
+  the single gate on layer 2's expansion: REVIEW_X12 fix 3 re-points (L-loc)_k to it, since BFT-3 stops at
+  n ≤ 4 and "all-order decay at k = 1 (BB-3_1) is proven but insufficient". See INTEGRATION_AUDIT A4.
+- **[S24-flag 1] A PROOF-owned constant conflict, raised by PLD session 6 and NOT resolved here.** PLD
+  §16.8's λ_min = 3.17·10⁻³ against REVIEW_PLD_S3's binding L0-1 (6.6·10⁻¹⁰). **If L0-1 governs, a_ret falls
+  by ×4.80·10⁶** (p6 D2). Route (ii) defuses it. For SF/PROOF to settle.
+- **[S24-note] An accounting double-count removed.** BFT_B §36.5: **(CO-fun)'s residue is the same functional
+  as the (GE-T) refutation**, so they must not be priced as two items.
+
+
 **Session-23 header (consolidation: REVIEW_S22 fixes; accepted SF edits; BR1 (v)'s radius; BFT as the single target; the
 cross-lane map).** An editing session: no new mathematics beyond applying the fixes, no numeric job. Pointer lists and the
 new material are at the end of this file ([S23]). Only PROOF.md, RTARGET.md and LOG.md were edited.
@@ -6711,3 +6747,67 @@ BFT-4 at k ≥ 2, and PROOF's own (CL-4) for the identification. BFT-3 and BFT-4
   are GAP as written (both were already uncounted implications); CURV-F2″ recorded. Target: BFT (OPEN). **Tally after
   session 23: 72 / 2 / 7 / 24 + 1 (unchanged; no item changed status category: the SF7 edits change constants of PROVEN
   items, BR1v-fix restates a PROVEN lemma's radius, and the R22 fixes concern uncounted [S22] items).**
+
+---
+
+# [S24] Session-24 consolidation (lead; 2026-10-28). No new mathematics; pointers, corrections and the
+# honest distance.
+
+**What this session was.** A lead session. It paid the review debt the handoff left (five hostile reviews),
+audited the named target against its consumers, commissioned seven worker sessions, and consolidated. It
+proves nothing of its own and **the main-path tally is unchanged at 72 / 2 / 7 / 24 + 1**. Pre-stated
+targets: RTARGET §51. Outcomes, including three corrections to the lead: RTARGET §52. Running ledger with
+every worker's findings: SESSION24_RESULTS.md.
+
+**Lead decisions taken (RTARGET §51), with their fate.**
+- **D1 (one slice, S_E).** CONFIRMED by REVIEW_BFT_A_S8, on better grounds than lane A had: the (GE-T)
+  refutation does not need the Coulomb stand-in, and ψ_u is computable exactly.
+- **D2 (the per-level route is closed).** **Upgraded from a judgement to a theorem** by NORMS.md §N5. No
+  future session should attempt to repair the per-level induction in any norm.
+- **D3 (the constants are the target).** **Half right, and corrected.** The 1267-per-level factor is the
+  origin of the **depth-dependence**, not of the magnitudes. The *uniformity* problem is now solved at the
+  trivial background (Theorem N1-15, A_soft = 1/3, conditional on (N-loc) alone after Theorem NQ-1); the
+  *magnitude* problem is coth⁴(m₁/2)-dominated, some 10³² above the C_♭ term, and is untouched.
+  **These are two different problems with different causes, and this ledger had conflated them.**
+
+**Where the layer-1 critical path now stands** (statuses are the owning files'; nothing re-judged here).
+1. **(CRC-1) / (LI^U).** Dissolved as a wall, not discharged: CONDITIONAL on (E2^𝔉). Theorem CRC-2T′ is an
+   induction on the number of constrained pairs, not a cluster expansion (§29 Target V2 (a) NOT DELIVERED).
+   **RLARGE's critical-path item 1 should be relabelled (E2^𝔉).**
+2. **Node A.** (J-NS^cd) OPEN; level induction does not close it (the certificates are nested, not
+   additive). (E2^𝔉)'s law-conversion obstruction is **closed** (the obstruction was GEO (ii) alone, about
+   the weight not the set; Lemma BUF buys it with one R-free ring). **The HW/PLD interface is repaired** —
+   both lanes now state the allowance in Proposition PATCH's form. The chain waits on **(CEM-1)/(CEM-2)**
+   and the level-0 clause (0a)/(0b), **OPEN on both sides**.
+3. **(CLS-min).** Delivered to RLARGE **clause by clause with no mismatch** (REVIEW_SQ_S4) — but it carries
+   a number only if **C_T ≲ 1e13**, and at the q = 8 SQ fixes, **C_T ≥ 1.27e14**: provably over. **At
+   q ≈ 30 it is under**, with compatibility checked clause by clause, so **(CONST-T) reduces to expanding
+   C_1 and C_V inside the energy inequality's steps (2)-(4)** (STAR_CONST.md).
+4. **BFT.** (H-inv+) and (Res-Hölder) closed at m = 0 on the trivial background; **Theorem NCE gives (NC-Γ)
+   for Γ_E at every critical point of 𝔉_k**, uniformly in k and T, for every gauge fixing. Off the critical
+   set the whole obstruction is **one scalar per level-k box**, the compensation charge ⟨χ⁵_X D(S)⟩
+   ((TENT-Q) / (NEUT-box)). **The biggest BFT obstruction is now the NONTRIVIAL BACKGROUND**: every lane-A
+   input is proven at the trivial background only, so BFT-0/1/2 turns on **(N1)** plus (CovLift)'s
+   non-residual g_Z at θ > 0. Then m > 0 via DX_m, DB_m. BFT-5 has a statement, (BFT-5_E), OPEN with inputs
+   named.
+5. **FLOW.** (T-a2) unconditional at orders 1-2; (T-a1) about half, conditional on (Π-loc). **(T-a1-M) and
+   (T-b) are ONE wall** — the fine background-dependent inverse H_⊥(U)^{-1}. (T-c), the plane-wave ↔
+   constant-Cartan-flux exchange, decides whether §104-§107 reaches the target at all.
+
+**The honest distance to finish.** [S16] already records REVIEW_S15_CONVERGENCE's finding that **the flat 24
+is a counting artefact** and that the weighted critical-path DAG is the honest measure; the count has now
+been flat for sessions 15-24 while substantial mathematics was added. LINEAR_PACKAGE §10 (frozen 2026-10-27)
+gives layer 1 as **about 6-7 paper-scale tasks and 15-18 session-scale tasks**, paper-scale meaning "about
+one Balaban-sized paper", with the analogous CMP papers named. Layer 2 (ym4d-existence §21.5) is at
+**9 HYPOTHESIS-NEW and 12 OPEN** of its own and is paused on the layer-1 outputs in its §21.3 consumer list.
+**Nothing in this repository claims 4D Yang-Mills existence or a mass gap, and nothing should. No public
+text is drafted: the landing rule requires a complete and reviewed proof, and session 24 did not produce
+one.** Credit to Balaban's RG program and Dimock's expositions stands in every public text.
+
+**What session 24 is good for, stated plainly.** The review debt is paid and five sessions' claims are now
+audited. Three items the project carried as open were already closed. Two reviews independently found, and
+one worker diagnosed at root, an interface defect between lanes H and E that is now repaired. The per-level
+route is dead by theorem rather than by label, and the composite route has a proven contraction at 1/3
+uniformly in k. One parameter fixed incidentally at q = 8 was costing seven orders of magnitude. **The
+pattern across all eleven worker reports is the same: the mathematics was largely sound, and the orders of
+magnitude were hiding in quantifiers, currencies and incidentally-fixed parameters.**

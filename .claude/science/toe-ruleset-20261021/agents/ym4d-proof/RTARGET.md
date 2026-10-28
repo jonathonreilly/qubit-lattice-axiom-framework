@@ -941,3 +941,62 @@ REVIEW_BFT_B_S8 is written and binding; the named target is BFT-0..5.
 **Anti-inflation clause (pre-stated).** Session 24 adds no PROVEN-HERE item of its own. Any change to the tally comes
 only from a review's adjudication of an earlier session, or from a worker's file, and is attributed there. If the
 workers' net contribution to the main-path tally is zero, §52 says so plainly.
+
+## 52. Session-24 outcomes against §51 (ADDED AFTER the workers reported; pointers only)
+Scored honestly, including against the lead. Full detail in SESSION24_RESULTS.md; each item's mathematics is
+in the owning file.
+
+- **T51-A (review discharge): PASS.** All five reviews written by reviewers that did not write the sessions:
+  REVIEW_HW_S5 (714 l.), REVIEW_PLD_S5 (561 l.), REVIEW_SQ_S4, REVIEW_BFT_A_S8 (586 l.), REVIEW_FLOW_S13
+  (727 l.). The pre-stated expectation (≥ 2 of 5 narrow, demote or refute a headline) is **met**: no headline
+  was refuted outright, three were narrowed, one session's reported verdicts were reversed three times, one
+  session's framing was relabelled (a bestiary, not a cluster expansion), and REVIEW_BFT_A_S8 **supplied a
+  proof its session lacked** (ψ_u computed exactly: φ₁ = -1/432, φ₂ = -17/104976, ratio 17/243, so (GE-T) is
+  false by ≍ L^{3k} without the Coulomb stand-in). **Lead decision D1 is confirmed, on better grounds than
+  the session claimed.**
+- **T51-B (integration audit): PASS, and revised twice during the session.** INTEGRATION_AUDIT.md found four
+  shortfalls; A1-A3 were withdrawn when REVIEW_SQ_S4 showed SQ proves θ_w = 2 natively and EPS-T + NREFL
+  supply the free-boundary cone-box clause; **A1 was then reinstated on stronger grounds** by NORMS.md
+  (with a single common θ_w there is no solution in (0, 2] **for anybody**, so BFT-1 needs a weight pair);
+  A4 ((BB-mix), proposed as **BFT-6**) stands; **A5 ((CONST-T)) and A6 (PROOF.md's wrong Z_col diagnosis)
+  were added.**
+- **T51-C (the constants): PASS, with a sharper outcome than asked.** NORMS.md: the per-level route is a
+  **no-go** (A ≥ 1 in every scale-covariant norm, because the d = 4 cubic vertex is marginal; the
+  weight-invariance half **proven**) — so **N-F2 occurs for every per-level route** and decision D2 is
+  upgraded from a judgement to a theorem. The composite route gives **A_soft = 1/L = 1/3**, uniformly in k.
+  **NORM-F1, NORM-F2 (in §N6) and NORM-F3 do not occur**; NORM-F3 does not occur *by construction*.
+- **T51-D (node A): PASS on reporting; 0 OPEN items closed, as the worker states plainly.** (J-NS^cd) stays
+  OPEN; induction on levels does not close it. One lemma does cover both walls ((CEM^{COL})), with the
+  worker's own correct label: **a consolidation, not a discharge**, since it is strictly stronger than the
+  pair it replaces. **NA-F1 is half refuted: the conclusion holds, the lead's guessed mechanism (compounding)
+  is wrong** — the worker *proved* the union-form excess line, so the obstruction is the **nesting** of the
+  certificates. **Proposition PATCH** writes the allowance statement REVIEW_HW_S5 called "a differently-shaped
+  statement nobody has written", and explains why nobody had: **NA-PRICE generates no allowance, it only
+  transmits the hypothesis's.**
+- **T51-E ((H-inv+)): PASS on four of five targets.** **HI-F1 does not occur.** (Res-Hölder) = EP-F4 is
+  **closed at m = 0** by an identity (the forced cascade of Lemma RT-cc), not by a better estimate; (CO-0)
+  and (CO-up) were **already discharged** by lane A reviews and the project's open list was stale, and (SB)
+  is no longer an input; (NC-Γ) restated; BFT-5 has a statement, **(BFT-5_E)**, with clause (c) PROVEN.
+  (Mult-Y) and (CovLift) not attempted. **Session 10 then proved (CO-fun) under (CC-0) and showed (GT-sup)
+  is not a spike-support question**, completing **Theorem NCE: (NC-Γ) for Γ_E at every critical point of
+  𝔉_k**, uniformly in k and T, for every gauge fixing.
+- **T51-F (honest distance): PASS.** Stated in LINEAR_PACKAGE §10's measure, not the flat OPEN count. **No
+  public text drafted**, per the landing rule.
+- **Anti-inflation clause: HONOURED.** Session 24 adds no PROVEN-HERE item of its own, and the main-path
+  tally is unchanged.
+
+**Three corrections to the lead, recorded against me.**
+1. **The θ_w relaxation I sent NORMS mid-run was backwards.** The composite route needs the **maximal**
+   θ_w^c = 2 and does not get easier at small θ_w. The worker ignored the relaxation and was right to.
+2. **Decision D3's framing conflated two problems.** The 1267-per-level factor is the origin of the
+   **depth-dependence**, not of the **magnitudes**, which are dominated by 288·A_in·coth⁴(m₁/2)·ℓ_θ some
+   **10³²** higher. So **g_K² is unchanged and g_0 still has to be lowered.** The uniformity problem is now
+   solved at the trivial background; the magnitude problem is untouched by anything in this session.
+3. **The (GT-sup) guidance I forwarded was moot.** I said the decisive question was whether the spikes sit
+   where D(S) lives; lane B's own proven Lemma ΓT-op (d) bounds the transport function with an **absolute**
+   constant, so (GT-sup) was never a spike-support question.
+
+**Two cross-lane disagreements recorded and NOT adjudicated here** (for the next reviews):
+(i) the price of node A's extra R-free ring — HW's **Lemma RING gives ×17** (with a proof and check w6 G6),
+PLD gives **×82**; (ii) **TF-2** — HW recorded both positions and did not propagate; node A says PLD §17.2's
+law already carries the finer spectators. HW session 6 agrees node A is right; the lead leaves it to review.

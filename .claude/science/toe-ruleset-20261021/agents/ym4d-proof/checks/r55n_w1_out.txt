@@ -1,0 +1,36 @@
+cand  1 : T(d lam, Y, W) = 16 ; Ward RHS = 16 ; BCH-1 control T' = 32 ; abelian T = 0
+cand  2 : T(d lam, Y, W) = -8 ; Ward RHS = -8 ; BCH-1 control T' = -16 ; abelian T = 0
+cand  3 : T(d lam, Y, W) = 7 ; Ward RHS = 7 ; BCH-1 control T' = 14 ; abelian T = 0
+cand  4 : T(d lam, Y, W) = 7 ; Ward RHS = 7 ; BCH-1 control T' = 14 ; abelian T = 0
+cand  5 : T(d lam, Y, W) = -14 ; Ward RHS = -14 ; BCH-1 control T' = -28 ; abelian T = 0
+cand  6 : T(d lam, Y, W) = 17/2 ; Ward RHS = 17/2 ; BCH-1 control T' = 17 ; abelian T = 0
+cand  7 : T(d lam, Y, W) = -17 ; Ward RHS = -17 ; BCH-1 control T' = -34 ; abelian T = 0
+cand  8 : T(d lam, Y, W) = 19/2 ; Ward RHS = 19/2 ; BCH-1 control T' = 19 ; abelian T = 0
+cand  9 : T(d lam, Y, W) = -141/2 ; Ward RHS = -141/2 ; BCH-1 control T' = -141 ; abelian T = 0
+cand 10 : T(d lam, Y, W) = -17 ; Ward RHS = -17 ; BCH-1 control T' = -34 ; abelian T = 0
+cand 11 : T(d lam, Y, W) = -57/2 ; Ward RHS = -57/2 ; BCH-1 control T' = -57 ; abelian T = 0
+cand 12 : T(d lam, Y, W) = 41/2 ; Ward RHS = 41/2 ; BCH-1 control T' = 41 ; abelian T = 0
+cand 13 : T(d lam, Y, W) = -31/2 ; Ward RHS = -31/2 ; BCH-1 control T' = -31 ; abelian T = 0
+cand 14 : T(d lam, Y, W) = 34 ; Ward RHS = 34 ; BCH-1 control T' = 68 ; abelian T = 0
+cand 15 : T(d lam, Y, W) = 37/2 ; Ward RHS = 37/2 ; BCH-1 control T' = 37 ; abelian T = 0
+cand 16 : T(d lam, Y, W) = 79/2 ; Ward RHS = 79/2 ; BCH-1 control T' = 79 ; abelian T = 0
+cand 17 : T(d lam, Y, W) = -151/2 ; Ward RHS = -151/2 ; BCH-1 control T' = -151 ; abelian T = 0
+cand 18 : T(d lam, Y, W) = -1/2 ; Ward RHS = -1/2 ; BCH-1 control T' = -1 ; abelian T = 0
+cand 19 : T(d lam, Y, W) = 13 ; Ward RHS = 13 ; BCH-1 control T' = 26 ; abelian T = 0
+cand 20 : T(d lam, Y, W) = 26 ; Ward RHS = 26 ; BCH-1 control T' = 52 ; abelian T = 0
+w1-0 H(d lam, .) == 0 for all candidates: True
+w1-1 Ward identity exact for all 20 candidates: True ; control w1-1' (BCH coefficient 1) fired in 20 of 20
+w1-2 witnesses with T(d lam, Y, W) != 0: 20 of 20 (first: candidate 1) ; abelian control all zero: True
+w1-3 Z = [lam-bar, d mu]: sum_p |dZ_p|^2 = 48 ; T(d lam, d mu, Z) = 24 ; (1/2)sum|dZ|^2 = 24
+w1-4 torus seed 1: constant h = ((1, -2, -1), (-1, 2, -1)), dh = 0, T(h, Y, W) = 12
+w1-4 torus seed 2: constant h = ((2, 2, -2), (2, -1, 0)), dh = 0, T(h, Y, W) = -107
+w1-4 torus seed 3: constant h = ((1, -1, 2), (2, 1, -2)), dh = 0, T(h, Y, W) = 103
+w1-4 torus seed 4: constant h = ((2, -1, 0), (2, -1, 1)), dh = 0, T(h, Y, W) = 34
+w1-4 torus seed 5: constant h = ((1, 1, -1), (2, 1, 2)), dh = 0, T(h, Y, W) = -88
+w1-4 torus seed 6: constant h = ((2, 1, -2), (2, -2, 0)), dh = 0, T(h, Y, W) = 0
+w1-4 torus seed 7: constant h = ((0, -2, 1), (-2, -2, -2)), dh = 0, T(h, Y, W) = 51/2
+w1-4 torus seed 8: constant h = ((2, 2, 0), (-2, 1, -2)), dh = 0, T(h, Y, W) = -64
+w1-4 torus seed 9: constant h = ((0, 0, -1), (1, -2, 1)), dh = 0, T(h, Y, W) = -281/2
+w1-4 torus seed 10: constant h = ((-1, -1, 2), (1, 0, -1)), dh = 0, T(h, Y, W) = 14
+w1-4 constant (harmonic) modes with T(h,Y,W) != 0: 9 of 10 (informational)
+SUMMARY w1-0=PASS w1-1=PASS w1-2=PASS w1-3=PASS

@@ -1209,3 +1209,25 @@ decade figure in this ledger and in SESSION24_RESULTS.md was reached by claude-o
 **PROVISIONAL**. That includes the lead's corrections to PROOF.md. A result the Codex wave
 independently confirmed is better supported but is still not re-established until the sweep has read
 the **final** Codex file and the source together.
+
+---
+---
+
+# §SWEEP55 — Opus 5.5 / Codex re-review verdicts (short entries; the review file is the record)
+
+**C6 — a_RS / KN-step complex — `REVIEW55_ARS.md`** (claude-opus-5-5, max). 56 claims: **33 CONFIRMED,
+2 NOT-VERIFIED, 21 REFUTED.** Agrees with CODEX_REVIEW_KN F1-F10 and settles F4/F5 positively.
+- **a_RS binds nothing on the live route: CONFIRMED** (now three independent reads: ARS_BIND, Codex KN F3,
+  this review). But ARS_BIND's "all three l.615 conditions carry a" is REFUTED: **(RLF-δ) carries a_ret,
+  whose value no source states (RLARGE U1)** — so l.618 is CONFIRMED for HIST-sum and REL-seq and
+  NOT-VERIFIED for (RLF-δ). **The real open item here is U1: fix a_ret and a_A.**
+- **Do not land the KN-step patch.** KN′/KN-step′ are correct but buy nothing live; η_1 has no live
+  consumer; the live threshold is RS-lin's η_q (PROVEN, re-derived).
+- **475 distinct transporters, not 633: CONFIRMED** three ways (Codex, enumeration, exact SU(2) holonomies).
+- **AGAINST THIS LEDGER:** "RLARGE l.65's η_1 ≤ η_q is FALSE" (T55-A entry above) is **WRONG** — l.65 is true
+  as written; 512/13 and 768/13 belong to the *proposed* threshold. The "keystone lands" headline is wrong
+  as written. The 814.587 branch point is REFUTED (κ ≥ 128/13689 decides it, for every ε_1 and N).
+- New: a three-line sharpening of RLARGE's own (R4) gives a linear threshold ε_1/(32√N A_d) **without
+  re-centring** — 81.057 of the 82.141 decades; re-centring adds only 1.083.
+- **Pending PROOF.md fixes (to batch after C1 reports):** pointer from the S24 consolidation paragraph
+  (string "a_RS is found to bind TODAY") to [S25-fix 4]; [S25-fix 1] should cite KN_ADOPT §3.2, not §5.

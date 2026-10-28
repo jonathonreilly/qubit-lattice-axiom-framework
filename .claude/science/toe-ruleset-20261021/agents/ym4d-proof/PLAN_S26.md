@@ -219,3 +219,33 @@ Owner: *"opus 5.5 is smarter than codex. assign work accordingly (maybe review w
   re-review sweep (C1-C5, C7, C8), and the Codex panellists (their role in the consensus is now a second,
   critical opinion; the Opus panellists P4/P5 are the primary analysis). The completed Codex Step-4 analysis
   (KFACTOR55.md) is kept as a review input; Step 4 itself is re-run by Opus 5.5, independently first.
+
+---
+
+## 9. Consensus so far (Codex panellists P1, P3; Opus P4 running, P5 queued) — the lead's §1 was wrong
+
+**Two independent panellists agree, and both disagree with the lead.**
+- **OS1 does not logically require uniqueness** of the infinite-volume state. P1 PROVES it: a two-phase
+  mixture satisfies OS0-OS3 and fails clustering. P3 adds: even a unique cutoff limit with coordinate RP and
+  hypercubic symmetry need not be rotation invariant (explicit Gaussian example) — so uniqueness is neither
+  necessary nor, alone, sufficient. **The lead's §1 claim that rotations need mass-gap-scale infrared control
+  is not established** — it conflated several different uniqueness statements.
+- **Route ranked first by both:** keep the Wilson lattice and its reflection positivity; make the UV RG
+  volume-uniform with local gauge-invariant sources; take a **diagonal** limit a → 0, R → ∞; prove rotation
+  invariance by a **quantified rotation-defect estimate** on the selected state sequence. P1 proves the
+  assembly: four inputs (regularity, RP, rotation defect → 0, a calibrated non-freeness witness) give the full
+  theorem, with no uniqueness, clustering or gap.
+- **The hardest step, named by both:** nonperturbative rotation restoration on a renormalized local
+  gauge-invariant algebra, uniform in volume after integrating the unrestricted coarse field. It may still
+  need long-distance information — but nothing shows it needs a gap.
+- **The torus is a useful milestone, not a necessary one**, and full-sequence torus convergence (T_fin) is
+  not needed at all: a diagonal subsequence suffices. Every estimate should carry its volume dependence
+  visibly from the start.
+- **Non-freeness needs a calibrated local witness.** A nonzero connected 4-point of a composite observable
+  proves nothing (Y = X² − 1 of a Gaussian has fourth cumulant 48); nor do tiny-torus Polyakov loops. This
+  bears directly on the existence lane's non-triviality items.
+
+**Consequence for §4.** Step R4 is now a concrete Opus 5.5 task — P3's "smallest discriminating artifact":
+the rotation-defect identity for one renormalized local observable, proved uniform in volume or reduced to
+the first term that needs coarse-law information. It goes first in the Opus queue. The synthesis is final
+only after the Opus panellists report; disagreements will be recorded, not resolved by preference.

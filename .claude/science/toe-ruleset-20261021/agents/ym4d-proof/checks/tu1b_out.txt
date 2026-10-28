@@ -1,0 +1,11 @@
+eps        max|b| corrected     max|b| uncorrected   residual(corrected)
+1e-1               10.5333              171.429            0
+1e-2               10.5333              1633.29            0
+1e-3               10.5333              16251.9            0
+1e-4               10.5333               162438            0
+1e-5               10.5333          1.62429e+06            0
+1e-6               10.5333          1.62429e+07            0
+
+successive ratios (uncorrected): 9.5275 9.9504 9.9950 9.9995 10.0000
+corrected variation over six decades = 1
+tu1b-D : PASS

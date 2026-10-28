@@ -1,0 +1,70 @@
+==============================================================================
+tu1-A / tu1-B / tu1-E : the construction on exact closed inputs
+==============================================================================
+  [A1 d=4 l=3 generic] l=3 d=4 z=['2/3', '5/4', '3/7', '7/5']
+      residual nonzero entries = 0   worst = 0.000e+00
+      max|Phi| = 0.000e+00   max|D_beta mu - Omega_beta| = 0.000e+00
+      max|b| = 17.4667   max|F| = 21.5   ratio/(l*max|F|) = 0.2708
+  [A2 d=4 l=3 z1~1] l=3 d=4 z=['1000001/1000000', '5/4', '3/7', '7/5']
+      residual nonzero entries = 0   worst = 0.000e+00
+      max|Phi| = 0.000e+00   max|D_beta mu - Omega_beta| = 0.000e+00
+      max|b| = 14.7389   max|F| = 21.5   ratio/(l*max|F|) = 0.2285
+  [A3 d=4 l=3 z2~1] l=3 d=4 z=['2/3', '1000001/1000000', '3/7', '7/5']
+      residual nonzero entries = 0   worst = 0.000e+00
+      max|Phi| = 0.000e+00   max|D_beta mu - Omega_beta| = 0.000e+00
+      max|b| = 18.0556   max|F| = 19.85   ratio/(l*max|F|) = 0.3032
+  [A4 d=4 l=3 z1,z2~1] l=3 d=4 z=['1000001/1000000', '1000001/1000000', '3/7', '7/5']
+      residual nonzero entries = 0   worst = 0.000e+00
+      max|Phi| = 0.000e+00   max|D_beta mu - Omega_beta| = 0.000e+00
+      max|b| = 11.4238   max|F| = 23.2   ratio/(l*max|F|) = 0.1641
+  [A5 d=4 l=9 generic] l=9 d=4 z=['2/3', '5/4', '3/7', '7/5']
+      residual nonzero entries = 0   worst = 0.000e+00
+      max|Phi| = 0.000e+00   max|D_beta mu - Omega_beta| = 0.000e+00
+      max|b| = 21.9976   max|F| = 28   ratio/(l*max|F|) = 0.08729
+  [A6 d=4 l=9 z1~1] l=9 d=4 z=['10001/10000', '5/4', '3/7', '7/5']
+      residual nonzero entries = 0   worst = 0.000e+00
+      max|Phi| = 0.000e+00   max|D_beta mu - Omega_beta| = 0.000e+00
+      max|b| = 25.2487   max|F| = 28   ratio/(l*max|F|) = 0.1002
+  [A7 d=3 l=5 generic] l=5 d=3 z=['2/3', '5/4', '3/7']
+      residual nonzero entries = 0   worst = 0.000e+00
+      max|Phi| = 0.000e+00   max|D_beta mu - Omega_beta| = 0.000e+00
+      max|b| = 17.3167   max|F| = 20.0143   ratio/(l*max|F|) = 0.173
+  [A8 d=3 l=5 z1,z2~1] l=5 d=3 z=['1000001/1000000', '1000001/1000000', '3/7']
+      residual nonzero entries = 0   worst = 0.000e+00
+      max|Phi| = 0.000e+00   max|D_beta mu - Omega_beta| = 0.000e+00
+      max|b| = 16.2667   max|F| = 16.5   ratio/(l*max|F|) = 0.1972
+
+tu1-A  (D^b = F exactly, every instance)      : PASS
+tu1-B  (Phi = 0 exactly, every instance)      : PASS
+tu1-E  (max|b| <= 100*l*max|F|, generic z)    : PASS
+
+==============================================================================
+tu1-C : DESIGNED-FAIL control #1 -- a non-closed input
+==============================================================================
+  [C1 d=4 l=3 generic] l=3 d=4 z=['2/3', '5/4', '3/7', '7/5']
+      residual nonzero entries = 12   worst = 4.200e+00
+      max|Phi| = 1.000e+00   max|D_beta mu - Omega_beta| = 7.000e+00
+      max|b| = 24.6867   max|F| = 26.9643   ratio/(l*max|F|) = 0.3052
+  [C2 d=3 l=5 generic] l=5 d=3 z=['2/3', '5/4', '3/7']
+      residual nonzero entries = 10   worst = 3.000e+00
+      max|Phi| = 1.000e+00   max|D_beta mu - Omega_beta| = 5.000e+00
+      max|b| = 18.6   max|F| = 19.2   ratio/(l*max|F|) = 0.1938
+
+tu1-C  control breaks the identity (expected) : CONTROL FAILED AS DESIGNED
+tu1-C  control gives Phi != 0 somewhere       : True
+
+==============================================================================
+tu1-D : DESIGNED-FAIL control #2 -- omit b_1 and watch the 1/eps pole
+==============================================================================
+  eps=1e-1:  max|b| corrected =      10.5333   uncorrected =      171.429   residual(corrected) = 0
+  eps=1e-2:  max|b| corrected =      10.5333   uncorrected =      1633.29   residual(corrected) = 0
+  eps=1e-3:  max|b| corrected =      10.5333   uncorrected =      16251.9   residual(corrected) = 0
+  eps=1e-4:  max|b| corrected =      10.5333   uncorrected =       162438   residual(corrected) = 0
+
+  uncorrected growth over 4 decades = 947.6  (criterion: >= 1e3)
+  corrected variation over the same = 1  (criterion: < 10)
+tu1-D  : FAIL
+
+==============================================================================
+SUMMARY  tu1-A PASS | tu1-B PASS | tu1-C control FAILED-AS-DESIGNED | tu1-D FAIL | tu1-E PASS
+==============================================================================

@@ -32,6 +32,14 @@ are to *diagnoses, statements and stale cross-references*, listed at [S24].
   θ_w^r = 3). **With a single common θ_w there is no solution in (0, 2] for any consumer**, so BFT-1's
   existential "there exist … θ_w ∈ (0, 2]" cannot support the composite route as written. This merges with
   REVIEW_SQ_S2's item (2). Note it is the **maximal** curvature weight: a weaker BFT-1 is not a safer one.
+  **[S25-fix 3] This fix has a CEILING as well as a floor, and together they leave the target with NO
+  admissible exponent** (NBG_B NB7). REVIEW_S22 l.392-399 uses **one θ_w for three jobs** — 𝔐's
+  displacement weight, 𝔐's source weight ω_l, and BFT-1's background decay — and quantifies it once.
+  Four incompatible windows result: lane A proves its pair only for α ≤ θ ≤ 1 − α ≤ ¾ (BFT_A l.396,
+  l.827); SF's own (a5-G♯) says θ ∈ (0,1] (SF l.680); the target says (0,2]; and the composite
+  contraction **requires θ_w^r = 3**, verified as A = L^{4−3−2} = L^{−1} = A_soft. **So widening the
+  interval does not repair BFT: the four exponents must be DECOUPLED.** BFT-5, stated "in the 𝔐-pair",
+  inherits the defect. This is a defect in the lane's single named target as written, not in a consumer.
 - **[S24-fix 4] (BB-mix) should be promoted to a named clause, BFT-6.** It is OPEN (BFT_B_LOG l.28) and it is
   the single gate on layer 2's expansion: REVIEW_X12 fix 3 re-points (L-loc)_k to it, since BFT-3 stops at
   n ≤ 4 and "all-order decay at k = 1 (BB-3_1) is proven but insufficient". See INTEGRATION_AUDIT A4.
@@ -81,7 +89,7 @@ are to *diagnoses, statements and stale cross-references*, listed at [S24].
   induction uses n_♯); m_τ becomes ε_1-independent at 3/4/5. **Nothing breaks**, and one recorded fact dies:
   l.65's "η_1 ≤ η_q", endorsed CORRECT by REVIEW_RLARGE_V2 §2.3, **reverses** to 39.38 (N = 2) / 59.08
   (N = 3), taking HIST l.186's route comparison with it **in the favourable direction** (the RS route becomes
-  1551× better). **a_RS's STATUS is unchanged** — CONDITIONAL on (PLD)_k (i) before and after.
+  **201.0×** better). **[S25-fix 1]** This line read *"1551×"* until session 25. **1551.148 is (η_1/η_q)² alone**; HIST l.186 names *two* factors, and the second — HIST's own cube factor **625/81 = 7.7160** — works *against* the RS route. 1551.148/7.7160 = **201.029** at N = 2, **452.315** at N = 3. The sign of the reversal is unchanged; the size was wrong. Written by the lead from ARS_FIX l.536-537, which carries the same error; refuted by an independent rebuild (KN_ADOPT §5). **a_RS's STATUS is unchanged** — CONDITIONAL on (PLD)_k (i) before and after.
   **>>> OWNER DECISION, not a defect: it was never adopted because REVIEW_PLD_S3's E9 was an EITHER/OR and
   RLARGE v3 took the other horn at l.830 — a choice made without the price in front of it.** The cheaper
   horn (fixing PLD's text) is worth nothing on this ceiling. **Either way l.618 needs editing.**
@@ -101,7 +109,24 @@ are to *diagnoses, statements and stale cross-references*, listed at [S24].
   **(GAP-Z), the only remaining obstruction to the nontrivial background, IS BFT-5's input (1)
   (G♯_0-field), moved off the trivial chain** — LINEAR_PACKAGE §10's "propagator bounds at a general
   background [cf. CMP 95, 96, 99]". **The nontrivial background and BFT-5 are ONE obstruction, not two, and
-  this ledger must not count them twice.** Behind it, two session-scale items: (N1-nd), which BFT-0's own
+  this ledger must not count them twice.**
+  **>>> [S25-fix 2] THIS IS REFUTED (NBG_B §6, session 25). They are THREE obstructions, not one, and the
+  "must not count them twice" instruction above is WRONG — banked by the lead and used to set session 25's
+  priority ordering before it was checked.** The refutation is three lines: (GAP-Z)'s own definition
+  (BFT_B l.4334, l.4590) is *"the background analogue of the package constant M of LINEAR_PACKAGE
+  Theorem 4.2′"*, so **(GAP-Z)|_{Z=1} is M, which is PROVEN** (frozen v1.1), while **(G♯_0-field) is
+  "not attempted"** (RTARGET l.654; PROOF l.3588) — if (GAP-Z) were (G♯_0-field) moved off the trivial
+  chain, restricting to Z = 1 would prove it. It does not. All six ordered implications fail (NBG_B §6.3),
+  on four independent mismatches: background (U = 1 vs general Z), slice (abelian per-level h^(i) = 0 +
+  Feynman vs composite/S_E), **norm type** (weighted sup/Campanato Schauder pair *with* e^{md} decay vs
+  ℓ²/symbol *with no decay claimed* — this row alone kills the direction at any background), and output
+  class (gauge-variant configuration vs gauge-invariant outputs). (N-bg) is a **third-derivative** bound on
+  D³E_k^br(V) (NORMS l.629), not an invertibility statement at all, and its route (ii) bypasses both.
+  **Direction of the error:** BFT_B l.4596 writes the chain `4.2′'s M ⟹ W ⟹ Y, YH ⟹ W0, GU ⟹ LIN0`;
+  (GAP-Z) is its **input**, (G♯_0-field) sits **above its output**. **Diagnosis:** the collapse rides on the
+  phrase *"lane A's U = 1 package"*, which this lane uses for two different things — LINEAR_PACKAGE (PROVEN)
+  and (G♯_0-field) (OPEN). That is systemic defect 1 operating on a **phrase** rather than a letter; NORMS
+  l.631-634 makes the same conflation independently and earlier and is probably its source. Behind it, two session-scale items: (N1-nd), which BFT-0's own
   uniqueness clause pays for, and (CURV-dec).
 - **[S24-note 3] (CovLift)'s non-residual g_Z clause at θ > 0 is FALSE** (BFT_B §41, Proposition GZ-FALSE,
   PROVEN): it demands coarse-curvature decay at rate θ while BFT-1's maximal θ_w^c = 2 gives none — a
@@ -6889,7 +6914,7 @@ Full detail in RTARGET §53 and SESSION24_RESULTS.md. Headlines: **(N-Q), (Res-H
 under (CC-0), the torus Hodge bound, the lattice Green's-function estimate, A_cγ_c, Σ_X Q_X = 0 and
 (Φ-conv) for one profile class are PROVEN**; **the per-level no-go, Theorem NCE's k-uniformity, (NEUT-box),
 (CovLift)'s θ > 0 clause, (TENT-osc), HW's lever (b) and RLARGE l.618 are REFUTED or struck**; **four
-apparently distinct obstructions collapsed into fewer** (notably **(GAP-Z) IS BFT-5's (G♯_0-field)**); and
+apparently distinct obstructions collapsed into fewer** (notably **(GAP-Z) IS BFT-5's (G♯_0-field)** — **REFUTED in session 25, see [S25-fix 2]: they are three obstructions, not one**); and
 **three systemic defects** are now the first call on a future session — **symbol collisions** (four ε_*, two
 θ_0, five ε_1, three η_1, two of the last being the same quantity in the same lemma), **stale minima and
 stale quantifiers**, and **checks that cannot decide** (nine findings, from a literal tautology to a gate

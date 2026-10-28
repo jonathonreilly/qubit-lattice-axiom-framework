@@ -1,0 +1,47 @@
+fb1 — FACEB.md / T55-G.  criteria: checks/fb1_criteria.md (21:20:47Z)
+lattice: periodic Z_4^4  |  sites 256  links 1024  plaquettes 1536
+
+=== CLEAN COMPLEX ===
+A1  d(d phi) nonzero components over 8 phi : 0 -> PASS
+A2  <d phi, delta W> nonzero over 25 pairs : 0 -> PASS
+A3  <d mu, u> nonzero over 10 mu          : 0 -> PASS
+A4  u != 0                                 : True
+A4  delta u == 0  (u is co-closed)         : True
+A4  d u != 0      (u carries curvature)    : True
+A4  |supp u| = 4  distinct values: [-1, 1]
+A4  -> PASS
+A5  <d phi, j> nonzero for generic j       : 5 /5 -> PASS
+
+=== A6  DESIGNED-FAIL CONTROL (one incidence sign flipped) ===
+corrupted plaquette row 0: entry (link 0) +1 -> -1
+A1 under corruption: nonzero = 6 -> CONTROL FIRED (A1 fails)
+A2 under corruption: nonzero = 25 -> CONTROL FIRED (A2 fails)
+A3 under corruption: nonzero = 7 -> CONTROL FIRED (A3 fails)
+A6  -> PASS (control failed the clauses, as designed)
+
+=== A7  PRICE ARITHMETIC (exact decimal, 50 and 100 digits) ===
+  P(10)                          8.111061
+  P(160)                         151.247438
+  P(183)                         173.195015
+  P(183.4)                       173.576712
+  P(355.6)                       337.897273
+  P(356)                         338.278970
+  P(42)                          38.646822
+  excess_at_183.4_vs_DXprime     21.966941
+  excess_at_42_vs_eps1           -0.527104
+  k_star_DXprime                 160.379708
+  k_star_eps1                    42.552379
+  need_DXprime_decades           151.609772
+  need_eps1_decades              39.173925
+  worst 50-vs-100-digit disagreement: 2.08114725108464641632860013888073390301894696418649E-47
+A7  -> PASS
+
+=== SUMMARY ===
+  A1 : PASS
+  A2 : PASS
+  A3 : PASS
+  A4 : PASS
+  A5 : PASS
+  A6 : PASS
+  A7 : PASS
+ALL PASS

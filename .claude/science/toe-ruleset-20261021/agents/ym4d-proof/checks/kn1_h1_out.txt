@@ -1,0 +1,65 @@
+==============================================================================
+kn1-1 / kn1-4  --  H1 (S4' convexity) and the patch identities
+criteria: checks/kn1_criteria.md (written first).  Exact Fraction arithmetic.
+==============================================================================
+
+## kn1-1  CONVEX / NOT-CONVEX / DEGENERATE-BUT-CONVEX
+
+Object: PROOF.md l.1754   M_bar_c(U) := (d! L^d)^{-1} * sum_sigma sum_{y in B(X)} T^sigma_y(U)
+Index set: PROOF.md l.711-714   sigma in S_d (d! orders) x y in B(X) (L^d sites).
+
+   (d,L)  #orders   #sites     #index              w_i  min w_i>=0   sum w_i  exact 1?
+  (2, 3)        2        9         18             1/18        True         1      True
+  (3, 3)        6       27        162            1/162        True         1      True
+  (4, 3)       24       81       1944           1/1944        True         1      True
+  (5, 3)      120      243      29160          1/29160        True         1      True
+  (4, 5)       24      625      15000          1/15000        True         1      True
+
+VERDICT kn1-1 (uniform family, all five (d,L)):  CONVEX
+
+Degeneracy leg (the DEGENERATE-BUT-CONVEX outcome).
+A complete-axial path c_X -> y in order sigma visits the coordinates in which y differs
+from c_X; orders that permute only the COINCIDING coordinates give the SAME path.
+So the induced weight on a DISTINCT transporter is m/(d! L^d) with m = the number of
+orders giving it, m >= 1, sum_distinct m = d! L^d.  Enumerated at (d,L)=(4,3):
+  sites |B(X)| = 81,  index pairs = 1944,  distinct (path,y) = 633
+  sum of multiplicities m = 1944  (must equal d! L^d = 1944)
+  induced weights all > 0 : True
+  induced weights sum to  : 1  (exact 1? True)
+  distinct induced values : [Fraction(1, 1944), Fraction(1, 486), Fraction(1, 162), Fraction(1, 81)]
+VERDICT degeneracy leg: DEGENERATE-BUT-CONVEX  -- in either case nonnegative and normalised.
+
+## kn1-1 DESIGNED-FAIL CONTROL (mandatory; criteria (c-i),(c-ii) and the ||M||<=1 leg)
+
+  signed family: w = ['4', '-3'],  sum = 1  (total mass still 1)
+  T_1 = e^X, T_2 = e^-X,  X = i*theta*diag(1,-1) in su(2),  theta = 1/4,  S = 1
+  (c-i) rejected by the nonnegativity clause? True   -> control FAILS clause (i): True
+  delta = max_i ||X_i||_op = 0.25            Lemma KN' bound 3*delta^2 = 0.1875
+  ||X_bar||_op = 1.75  (EXCEEDS delta: the convex-hull step is what fails)
+  ||R||_op = ||W'^-1 M_bar - 1||_op = 1.369394
+  (c-ii) does the control BREAK ||R|| <= 3 delta^2 ?  True   (exceeds by x7.303)
+  ||M_bar||_op = 1.984444   violates PROOF.md l.1755's ||M_bar_c||_op <= 1 ?  True
+VERDICT control: HAS-POWER   -- convexity is load-bearing in KN' and the gate can fail.
+
+## kn1-4  the patch's identities (exact Fractions, d = 4, L = 3)
+
+  A_d(L) = (d-1)L(L-1)/2 = 9            [RLARGE.md l.973]
+  (i)   c_1 = 1/(2(L^2 + 5.5 A_d)) = 1/117   == 1/117 ? True
+  (ii)  (L^2 + 5.5 A_d) * c_1 = 1/2            == 1/2 ? True
+  (iii) t/2 + 4*(t/8) = 1 t                 == t ? True
+  (iv)  N=2: (t/8)^2/(4N) = 1/512   t^2/(256N) = 1/512   equal? True
+  (iv)  N=3: (t/8)^2/(4N) = 1/768   t^2/(256N) = 1/768   equal? True
+VERDICT kn1-4: IDENTITIES-HOLD
+
+  DESIGNED-FAIL control for kn1-4: replace 5.5 by 5, keep c_1 = 1/117.
+    (L^2 + 5 A_d) * (1/117) = 6/13   == 1/2 ? False   -> control FAILS: True
+    control verdict: HAS-POWER
+
+==============================================================================
+SUMMARY  kn1-1 = CONVEX (DEGENERATE-BUT-CONVEX);  control = HAS-POWER;  kn1-4 = IDENTITIES-HOLD
+==============================================================================
+
+Disclosure: the (c-ii) and ||M||<=1 legs of the control use double-precision complex
+arithmetic.  The margins are 0.98 against a 0.1875 threshold and 1.98 against 1, i.e.
+~15 orders above double-precision error, so no verdict turns on the precision.
+Everything else in this script is exact Fraction arithmetic.

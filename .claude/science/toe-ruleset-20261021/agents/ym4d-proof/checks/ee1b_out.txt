@@ -1,0 +1,51 @@
+==============================================================================
+ee1b-1  RE-RUN of ee1-1 (C6), criteria file untouched
+==============================================================================
+
+-- MAIN: TB-1 factor = 0.7056
+class    corr          recorded        predicted        ratio
+old      pre       1.268700E-39     1.268700E-39     1.000000
+old      TB1       8.950000E-40     8.951947E-40     1.000218
+rerun    pre       9.520000E-40     9.515250E-40     0.999501
+rerun    TB1       6.700000E-40     6.713960E-40     1.002084
+worst deviation = x1.002084   ->  FACTORISES
+
+-- DESIGNED-FAIL CONTROL (TB-1 replaced by 1/2): TB-1 factor = 0.5
+class    corr          recorded        predicted        ratio
+old      pre       1.268700E-39     1.268700E-39     1.000000
+old      TB1       8.950000E-40     6.343500E-40     0.708771
+rerun    pre       9.520000E-40     9.515250E-40     0.999501
+rerun    TB1       6.700000E-40     4.757625E-40     0.710093
+worst deviation = x1.410893   ->  DOES-NOT-FACTORISE
+
+ee1b-1 MAIN    : FACTORISES
+ee1b-1 CONTROL : DOES-NOT-FACTORISE   (criteria require DOES-NOT-FACTORISE)
+ee1b-1 POWER   : HAS-POWER (main and control separate)
+
+Which cell is predicted by which factor, i.e. where the independence lies:
+  base 1.2687e-39            REVIEW_SF_S7 l.196  ((TH-ch') at tau^A, a_p entry only, old class)
+  x 0.7056 (TB-1)            REVIEW_SF_S7 l.199  (full (TH-bg) min{a_p,a_c}, n_K term)
+  x 0.75   (class)           REVIEW_SF_S7 l.251  ('slightly worse (x0.75) otherwise')
+  -> 6.7e-40                 RLARGE l.72, l.612; REVIEW_SF_S7 l.53, l.247, l.297
+  Neither factor was read from the cell it predicts.
+
+==============================================================================
+[POST-HOC, EE1-P1]  (C4): at what precision in eta_flat does the verdict live?
+Written AFTER seeing ee1-2(a) return NO-DISCRIMINATION. Not pre-registered.
+==============================================================================
+
+eta_flat as published, and as EPS1_SWEEP 4.5 carries it:
+eta_flat source                                     value  prop HOLDS  TAUFLAT HOLDS
+TAUFLAT l.196, l.213   (6 s.f.)        3.523100000000E-88        True           True
+TAUFLAT l.561          (3 s.f.)        3.520000000000E-88       False          False
+EPS1_SWEEP 4.5        (12 s.f.)        3.523092305780E-88       False          False
+
+So the (C4) discrimination exists only at >= 7 significant figures of eta_flat.
+Relative gap between the two candidate cuts:
+  (TAUFLAT / proposed) - 1 = 9.4552E-7
+Relative width of eta_flat's own input band, from C_D ~ (0.5-0.9)e3*C_T (S4-16):
+  eta_flat varies by x10.4976 across the C_D band alone = 1.0211 decades
+  the CUT itself varies by x3.2400 across that band = 0.5105 decades
+
+  ratio of (input band width) to (the gap (C4) adjudicates) = x2.369E+6
+  i.e. (C4) adjudicates a gap ~10^-6 relative inside an input band of ~x3.24.

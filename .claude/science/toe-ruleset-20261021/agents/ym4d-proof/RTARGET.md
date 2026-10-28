@@ -1063,3 +1063,56 @@ spike guidance (moot); the Combes-Thomas route for (N-loc) (wrong question); the
 figures (relayed across a changed constant); banking Theorem NCE's k-uniformity twice; and repeating
 "10²⁸ → ≈16" when the true price is 2.51e8. **A banked review is evidence, not a certificate** — that is the
 session's main process lesson, and it applies to this file too.
+
+---
+
+## §54. Session 25 — pre-stated targets (written 2026-10-28T21:02:17Z, BEFORE any derivation this session)
+
+**Owner instruction (2026-10-28):** execute, do not surface. The two items §52/§53 left as
+owner decisions are hereby taken as instructed; this section records what is being attempted
+and the named ways each attempt can fail, before anything is derived.
+
+**The lead's reading of the two "decisions", stated so it can be refuted:** they are not a fork.
+EPS1_SWEEP §5 calls **(C2)** *"the binding condition; everything else is bookkeeping"*, and (C2)
+**is** the 82-decade adoption (ARS_FIX §4.1). So the chain is: discharge H1 → adopt KN-step' →
+(C2) discharged → the ε_1 move carries only bookkeeping conditions. **If this reading is wrong the
+session's whole ordering is wrong**; T55-A is spec'd to try to break it first.
+
+### Pre-stated targets
+
+- **T55-A (keystone).** Decide hypothesis **H1** of Lemma KN' (ARS_FIX §3.3): M̄_c must be a
+  **mixture with nonnegative normalised weights**, where RLARGE l.996 says only *"M̄_c is a mean of
+  the T^σ_y"*. Settle it from the **S4' definition itself**, not from the word "mean". Then, only if
+  H1 holds, write the adoption patch for RLARGE §6 (η_1 := c_1ε_1, c_1 = 1/117 at d=4, L=3).
+- **T55-B.** Execute the ε_1 move under (C1), (C3)-(C7); ε_1^cut ≤ 9.38495·10⁻⁴⁵, scoped to
+  RLARGE §0's χ_Q threshold only.
+- **T55-C.** Lane-wide **symbol audit and rename** (4 ε_*, 2 θ_0, 5 ε_1, 3 η_1). Named by §53 as a
+  prerequisite for any further constant work.
+- **T55-D/E.** **(N-bg)** — the structural wall — from two independent sides: its own, and BFT-5's
+  (G♯_0-field), which [S24-flag] identifies as the *same* obstruction.
+- **T55-F.** **T-uniformity.**
+- **T55-G.** **Face (b)'s n²**: find the escape or prove none exists and price it.
+- **T55-H.** Hostile review of **ARS_FIX.md** and **EPS1_SWEEP.md** — the two files being acted on.
+  §53's own lesson: a banked review is evidence, not a certificate.
+
+### Named failure modes (pre-stated, so a failure is recorded as a failure)
+
+- **H1-F1** H1 is false, or true only for a *sub*-family of S4' contours → KN-step' is CONDITIONAL
+  and the adoption does not land; the 82.141 decades are not available and (C2) must be discharged
+  by its second horn (recording the 15.62/35.03-decade shortfall) instead.
+- **H1-F2** H1 holds but the S4' average that makes it hold is **not** the average RLARGE §6 (R1)
+  actually uses → the patch would be to a different object.
+- **C2-F1** (C2) is *not* the binding condition and one of (C1), (C3)-(C7) is more than bookkeeping
+  → §54's ordering above is wrong and T55-B must stop.
+- **SYM-F1** A rename changes a *value* somewhere, not just a name → the audit has found a real
+  defect and must stop and report it rather than rename through it.
+- **NBG-F1** (N-bg) and BFT-5's (G♯_0-field) are **not** the same obstruction → [S24-flag]'s
+  collapse is wrong and the obstruction count goes back up.
+- **ARITH-F1** ARS_FIX's 82.141 is wrong → it was computed at today's ε_1 and 91.85 at the proposed
+  one (ARS_FIX §8.6 item 2 corrects the ledger's "92"); a review must re-derive both, not re-read them.
+
+### Anti-inflation clause (as §51, unchanged)
+
+The lead claims **no new mathematics** this session. Every PROVEN this session is a worker's, named
+with its file and section. The master tally moves only on a worker's proof, and a reversal of a
+banked item is recorded against whoever banked it, the lead included.

@@ -1,0 +1,83 @@
+na1 -- background-vertex exponent bookkeeping (criteria: na1_criteria.md)
+
+==============================================================================
+na1-A  symbolic exponents (control: the 1-derivative rows must equal NORMS l.650-651)
+==============================================================================
+  W 1-deriv  (delta in the differentiated slot)     leading = [d - 1tc - 2ta         ]   const = [0]
+  W 1-deriv  (delta in an undiff. slot)             leading = [d - 1tc - 2ta         ]   const = [0]
+  W 3-deriv  (delta in a differentiated slot)       leading = [d - 4tc               ]   const = [0]
+  W 0-deriv  (delta in an undiff. slot)             leading = [d - 1tc - 3ta         ]   const = [0]
+  S 1-deriv  (delta in the residual slot)           leading = [d - 1tr - 2ta         ]   const = [tr]
+  S 1-deriv  (delta in a potential slot)            leading = [d - 1tr - 2ta         ]   const = [tr]
+  S 3-deriv  (delta in a residual slot)             leading = [d - 4tr               ]   const = [4tr]
+  S 0-deriv  (delta in a potential slot)            leading = [d - 1tr - 3ta         ]   const = [tr]
+
+na1-A  (1-derivative families reproduce NORMS Sec.N7 exactly): PASS
+
+na1-B  pre-registered vs computed leading coefficients:
+  W 3-deriv    pre-registered [d - 4tc                   ]  computed [d - 4tc                   ]  match
+  W 0-deriv    pre-registered [d - 1tc - 3ta             ]  computed [d - 1tc - 3ta             ]  match
+  S 3-deriv    pre-registered [d - 2tc - 1tr - 1ta       ]  computed [d - 4tr                   ]  MISMATCH
+  S 0-deriv    pre-registered [d - 1tr - 3ta             ]  computed [d - 1tr - 3ta             ]  match
+na1-B: FAIL
+
+==============================================================================
+na1-C  at (d, theta_w^c, theta_w^r, theta_A) = (4, 2, 3, 1)
+==============================================================================
+  W 1-deriv  (delta in the differentiated slot)     leading = [d - 1tc - 2ta         ]   const = [0]   -> 0
+  W 1-deriv  (delta in an undiff. slot)             leading = [d - 1tc - 2ta         ]   const = [0]   -> 0
+  W 3-deriv  (delta in a differentiated slot)       leading = [d - 4tc               ]   const = [0]   -> -4
+  W 0-deriv  (delta in an undiff. slot)             leading = [d - 1tc - 3ta         ]   const = [0]   -> -1
+  S 1-deriv  (delta in the residual slot)           leading = [d - 1tr - 2ta         ]   const = [tr]   -> -1
+  S 1-deriv  (delta in a potential slot)            leading = [d - 1tr - 2ta         ]   const = [tr]   -> -1
+  S 3-deriv  (delta in a residual slot)             leading = [d - 4tr               ]   const = [4tr]   -> -8
+  S 0-deriv  (delta in a potential slot)            leading = [d - 1tr - 3ta         ]   const = [tr]   -> -2
+
+  new families (must all be <= -1): [('W 3-deriv', '-4'), ('W 0-deriv', '-1'), ('S 3-deriv', '-8'), ('S 0-deriv', '-2')]
+  1-deriv Wilson (must be 0, marginal): ['0', '0']
+na1-C: PASS
+
+na1-D  largest d for which each family's leading coefficient is < 0, at (tc,tr,ta)=(2,3,1):
+  W 3-deriv  (delta in a differentiated slot)       subcritical for d < 8
+  W 0-deriv  (delta in an undiff. slot)             subcritical for d < 5
+  S 3-deriv  (delta in a residual slot)             subcritical for d < 12
+  S 0-deriv  (delta in a potential slot)            subcritical for d < 6
+na1-D (all critical dimensions > 4): PASS
+
+  [compare] W 1-deriv  (delta in the differentiated slot) subcritical for d < 4
+  [compare] W 1-deriv  (delta in an undiff. slot)    subcritical for d < 4
+  [compare] S 1-deriv  (delta in the residual slot)  subcritical for d < 5
+  [compare] S 1-deriv  (delta in a potential slot)   subcritical for d < 5
+
+==============================================================================
+na1-E  DESIGNED-FAIL CONTROL: theta_w^c = 0 (the (CL-3) weightless form), theta_A = 0
+==============================================================================
+  W 1-deriv  (delta in the differentiated slot)     leading = [d - 1tc - 2ta         ]   const = [0]   -> 4
+  W 1-deriv  (delta in an undiff. slot)             leading = [d - 1tc - 2ta         ]   const = [0]   -> 4
+  W 3-deriv  (delta in a differentiated slot)       leading = [d - 4tc               ]   const = [0]   -> 4
+  W 0-deriv  (delta in an undiff. slot)             leading = [d - 1tc - 3ta         ]   const = [0]   -> 4
+  S 1-deriv  (delta in the residual slot)           leading = [d - 1tr - 2ta         ]   const = [tr]   -> 1
+  S 1-deriv  (delta in a potential slot)            leading = [d - 1tr - 2ta         ]   const = [tr]   -> 1
+  S 3-deriv  (delta in a residual slot)             leading = [d - 4tr               ]   const = [4tr]   -> -8
+  S 0-deriv  (delta in a potential slot)            leading = [d - 1tr - 3ta         ]   const = [tr]   -> 1
+
+  na1-C re-evaluated at this input: FAIL
+na1-E control PASSED (the gate CAN fail)
+
+==============================================================================
+na1-F  DESIGNED-FAIL CONTROL: P6 corrupted (background curvature does not decay)
+==============================================================================
+  W 1-deriv  (delta in the differentiated slot)     leading = [d - 1tc - 2ta         ]   const = [0]   -> 0
+  W 1-deriv  (delta in an undiff. slot)             leading = [d - 1tc - 2ta         ]   const = [0]   -> 0
+  W 3-deriv  (delta in a differentiated slot)       leading = [d - 3tc               ]   const = [0]   -> -2
+  W 0-deriv  (delta in an undiff. slot)             leading = [d - 3ta               ]   const = [0]   -> 1
+  S 1-deriv  (delta in the residual slot)           leading = [d - 1tr - 2ta         ]   const = [tr]   -> -1
+  S 1-deriv  (delta in a potential slot)            leading = [d - 1tr - 2ta         ]   const = [tr]   -> -1
+  S 3-deriv  (delta in a residual slot)             leading = [d - 4tr               ]   const = [4tr]   -> -8
+  S 0-deriv  (delta in a potential slot)            leading = [d - 1tr - 3ta         ]   const = [tr]   -> -2
+
+  na1-C re-evaluated with P6 corrupted: FAIL
+na1-F control PASSED (the gate CAN fail)
+
+==============================================================================
+SUMMARY  na1-A PASS | na1-B FAIL | na1-C PASS | na1-D PASS | na1-E control PASSED | na1-F control PASSED

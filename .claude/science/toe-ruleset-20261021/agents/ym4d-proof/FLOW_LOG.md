@@ -586,3 +586,42 @@
 - checks/f16_criteria.md written (new file, single write). Its stat, copied before any f16 script exists (`ls checks | grep
   '^f16'` shows only: f16_criteria.md):
     f16_criteria.md birth=2026-10-28 11:39:15 mtime=2026-10-28 11:39:15 size=4580 (UTC)
+- 11:44:47 UTC. First f16 smoke attempt (flow13/dev.py, F16_SMOKE=1) via flow13/run.sh: NUMERIC LOCK acquired (load 2.75, memory
+  free 42%); the run was interrupted by a session pause/handoff before producing any output (smoke_out.txt and smoke_time.txt
+  empty). The lock directory was found absent at 11:51:14 UTC (released during the pause) and no f16/dev.py process was running.
+  No result of this attempt is used.
+- 11:51:28-11:51:46 UTC. Smoke 1 (F16_SMOKE=1: Part A SU(2) only; Part B on level-n torus (3, 3, 1, 1)), NUMERIC LOCK, released once,
+  load 3.26, memory free 38%; Part A 6/6 PASS; Part B stopped at a structure-alignment assertion of my coefficient accumulator.
+  Fix: accumulate the Richardson combinations as sparse sums (no structure assumption).
+- 11:52:03-11:52:26 UTC. Smoke 2 (same settings), lock acquired/released once, load 3.05, memory 38%; 572 MB peak. Part B: B2 PASS
+  (ratios 0.106, 0.108); B1 FAILED at 1.4e-8 / 1.7e-7 for P(A − Q): an instrument defect (the Frobenius norm was taken as sqrt of
+  a trace, i.e. sqrt of roundoff); fix: compute ||P X||_F directly by column blocks. B3 (λ_min −3e-9) and B4 (1.2e-3) failed by
+  finite-difference truncation: the level-n background is ≈ 7.5ε, so δ = 0.02 is an effective step 0.15 in the field.
+- 11:53:49-11:54:36 UTC. Smoke 3 (F16_SMOKE=1, F16_TOP=3,3,2,1, with an ADDENDUM pass at δ = 0.002), lock acquired/released once,
+  load 3.72, memory 39%. Peak RSS 1.03 GB: this smoke run EXCEEDED the 1 GB job limit (by ~3%); recorded as a violation. At δ =
+  0.02: B1 PASS (after the fix), B2 PASS, B3 FAIL (−2.9e-9), B4 FAIL (6.7e-3); at δ = 0.002: B3 PASS (−1e-15), B4 6.8e-7 (δ⁴
+  scaling: factor 1e-4 for δ/10, so the closed form is right and the residual is truncation).
+- DEVIATIONS from §103 / f16_criteria.md decided after the smokes (recorded before the official run): (1) the pre-stated Part B
+  torus (3, 3, 2, 2) cannot run under 1 GB with this implementation (extrapolated ~2 GB from 1.03 GB at (3, 3, 2, 1)); the
+  official run uses (3, 3, 1, 1) (sectors K_1 ≠ 0). (2) The pre-stated δ = 0.02, 0.04 verdicts are kept and printed as the
+  verdicts; two ADDENDUM passes, NOT pre-stated, repeat Part B with δ = (0.002, 0.004) and (0.0005, 0.001), same thresholds,
+  labelled add1-/add2-. Thresholds unchanged.
+- checks/f16_cartan_slice.py = cmp-identical copy of flow13/dev.py (final edit: the addendum loop, syntax-checked, not smoke-run
+  in this exact form): birth = mtime 11:54:59 UTC, size 25561, md5 7c81a91bfff45189e025be6b22547cca.
+- 11:55:17-11:56:22 UTC. Official f16 run (F16_TOP=3,3,1,1), one NUMERIC LOCK acquisition, released once with rmdir (no trap);
+  load 3.03, memory free 38% checked inside the lock; nice 10, 1 thread; 65.35 s real, peak RSS 548 MB (checks/f16_time.txt =
+  the real and maximum-resident lines; raw in flow13/f16_time_raw.txt). Outputs: checks/f16_out.txt (birth 11:55:17, mtime
+  11:56:22, 6137 B), checks/f16_time.txt (11:56:22, 101 B). PRE-STATED verdicts 19/21 PASS (B3, B4 FAIL at δ = 0.02:
+  finite-difference truncation); ADDENDUM (not pre-stated) 9/10 PASS (add1-B4 1.2e-7 > 1e-7 FAIL; add2-B4 8.3e-10 PASS).
+  Headlines: Cartan-T closed forms = finite differences of the nonlinear chain and S4' maps to ≤ 7.7e-10 (SU(2), SU(3));
+  transverse 𝒞 coefficients decay 0.106 / 0.108 per level (L^{-2} = 0.111); the U = 1 bookkeeping term does not decay (0.966).
+- 11:59:32 UTC. FLOW.md §104 (Lemma Cartan-𝔪, PROVEN), §105 (Lemma Cartan-T, PROVEN), §106 (Proposition SLICE-U, PROVEN; one
+  clause of (X4) (d) WITHDRAWN: the "decay only like L^{-i}" sentence, only an upper bound is proved and f16 does not show it),
+  §107 (Proposition VC-T1 and Lemma P-poles, PROVEN for the 𝒞-part, orders ≤ 2, given (Π-loc) ARGUED), §108 (the W_n half of
+  LONG-n, counted with LONG-n), §109 (check f16), §110 (outcomes, remaining list, tally 75; strict 70) appended (shell append, same
+  inode). **Statement changes after §103:** the withdrawn (X4) (d) clause; the f16 Part B torus and the addendum (deviations,
+  above). Final stat (UTC): FLOW.md birth=2026-10-28 10:13:14 mtime=11:59:32 size=539577 md5=ff470b2a32b3523aa90b350393198400.
+  No commits, PRs, pushes; no CL or axiom edits; no edits outside FLOW.md, FLOW_LOG.md, checks/f16_* (new: f16_criteria.md,
+  f16_cartan_slice.py, f16_out.txt, f16_time.txt). NUMERIC LOCK acquired five times (the interrupted 11:44:47 attempt,
+  smokes 1, 2, 3 (smoke 3 = the (3,3,2,1) run), official); each released once; lock directory empty; no process left; no __pycache__ in checks/.
+  Session 13 ends.

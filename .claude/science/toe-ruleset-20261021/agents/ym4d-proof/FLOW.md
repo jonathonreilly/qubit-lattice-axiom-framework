@@ -4627,3 +4627,225 @@ c_r(i) := ||[ε^r](P s_iP)||, ratio c_r(2)/c_r(1) ≤ 0.25; ||[ε^r]Q^{(2)}||/||
 closed forms or the covariance are wrong); (S13-F3) (B1) fails (the decomposition algebra is wrong); (S13-F4) (B2) fails (no
 L^{-2i} decay of the transverse coefficients: VC-T1 false or not visible at i ≤ 2); (S13-F5) (B3) fails (the leak bound or its
 non-decay is wrong); (S13-F6) (B4) fails.
+
+---
+# Session-13 proofs (written after §103, the [RFL12-fix] edits and the f16 run)
+
+## 104. Lemma Cartan-𝔪 (the background tower at Cartan configurations): PROVEN-HERE
+
+Statement: §103 (X2).
+*Proof.* (a) At a Cartan U every contour transporter is a product of commuting exponentials: T = exp(θ_TH_1), θ_T the signed
+line sum. So S_c^{-1}T = exp(δ_TH_1), δ_T := θ_T − θ_{S_c}, with eigenvalues e^{ih_kδ_T}. On D' (||S_c^{-1}T − 1|| < 1) every
+|h_kδ_T| < π/3 < π, so the principal log is δ_TH_1 and the S4' average is δ̄H_1. Hence U' = exp(θ_{S_c}H_1)exp(δ̄H_1) =
+exp((avg_Tθ_T)H_1), and avg_Tθ_T = (Q_roota)(X, μ) by the definition of the root map (LINEAR_PACKAGE §1.2: the contour average
+of line integrals). U' is again Cartan; induction on the level gives 𝔪^{S4'}_n(U) = exp((Q_root^{(n)}a)H_1).
+(b) M̄ = avg_Texp(θ_TH_1) = diag(m_k). For t in the maximal torus 𝕋, Re tr((tVt^{-1})^{-1}tMt^{-1}) = Re tr(V^{-1}M), so the unique
+local maximiser obeys W_♮(tMt^{-1}) = tW_♮(M)t^{-1}. M̄ commutes with 𝕋, so W_♮(M̄) lies in the centraliser of 𝕋 in SU(N), which is
+𝕋: W_♮(M̄) = diag(e^{iφ_k}), Σφ_k ∈ 2πZ (φ → 0 as a → 0), and Re tr(diag(e^{−iφ_k})M̄) = Σ|m_k|cos(arg m_k − φ_k). Oddness: H_1 =
+i·(real diagonal), so a ↦ −a sends U ↦ Ū, M̄ ↦ conj(M̄), and W_♮(M̄‾) = conj(W_♮(M̄)) (FLOW §30 (C3)); hence φ ↦ −φ. The
+derivative of 𝔪 at 1 is Q_root (LINEAR_PACKAGE §1.2: both averagings share the linearisation), so on Cartan arguments
+φ = h·(Q_roota) + O(|a|²), and oddness removes the O(|a|²) term. Induction: if 𝔪_j(U) = exp((Q_root^{(j)}a)H_1 + c_j(a)) with
+c_j = O(|a|³), then 𝔪_{j+1} = exp(Q_root(Q_root^{(j)}a + c_j)H_1 + O(|a|³)) = exp((Q_root^{(j+1)}a)H_1 + O(|a|³)).
+(c) For A_1(x) = e^{ipx_2} (other components 0), Q_str gives L^{-4}Σ_{y∈B(X)}Σ_{j<L}A_1(y + je_1) = L·L^{-1}Σ_{|s|≤r}e^{ip(c_2+s)} =
+(sin(Lp/2)/sin(p/2))e^{ip(LX_2 + r)}, only in direction 1. The slice functional vanishes: the only leg of P^σ(c_X → y) that sees
+A_1 is the direction-1 leg, which contributes (y_1 − c_1)e^{ipx_2} with x_2 ∈ {c_2, y_2} fixed by σ and independent of y_1; the
+average over y_1 ∈ c_1 + {−r..r} kills it. So Q_root = Q_str on this wave, and the image is a wave of the same type with amplitude
+factor sin(Lp/2)/sin(p/2), momentum Lp and phase shift pr. Taking real parts and iterating (the factors telescope:
+Π_{j<m}sin(L^{j+1}p/2)/sin(L^jp/2) = sin(L^mp/2)/sin(p/2), phases Σ_jL^jpr = p(L^m − 1)/2) gives (c) for 𝔪^{S4'} exactly, and for 𝔪
+up to O(ε³) by (b). The ratios ρ_i and phase differences are as stated (substitute p = P/ℓ). |sin x| ≤ |x| and |sin(P/2)| ≥ |P|/π on
+|P| ≤ π give ρ_i ≤ (π/2)L^{-i}. Finally ε_n/(εℓ) = sin(P/2)/(ℓ sin(P/2ℓ)), and ℓ sin(P/2ℓ) = (P/2)(1 + O(P²/ℓ²)). ∎
+*Reading.* (1) REVIEW_FLOW_S12 §5 (1)'s "exact" form factor is exact for 𝔪^{S4'}. For the chain map 𝔪 = W_♮∘M̄ of FLOW it is exact
+through second order, which is all the vertex data use. (2) f16 A1 checks this. 𝔪^{S4'} = exp(Q_root aH_1) to 4.4e-15 / 5.0e-15, and
+the tower formula to 7.6e-15. The chain map is exactly diagonal and odd, with a deviation from linear that is cubic (ratios 8.06,
+8.09). Part B checks the level-(n−1) image (2.6e-8 at ε = 0.04, consistent with ε³).
+
+## 105. Lemma Cartan-T (the exact root-sector linearisation at Cartan backgrounds): PROVEN-HERE
+
+Statement: §103 (X3).
+*Proof.* Contour derivative. Write the contour as a product of steps V_s: V_s = U_b forward and U_b^{-1} backward. Then
+U_b → U_be^{tX_b} sends V_s ↦ V_se^{tZ_s}, with Z_s = X_b (forward) and Z_s = −Ad(U_b)X_b (backward). So
+ΠV_se^{tZ_s} = (ΠV_s)exp(tΣ_sAd(R_s^{-1})Z_s + O(t²)), R_s := the product after s. At Cartan U, Ad(exp(cH_1))e_{ij} = e^{iqc}e_{ij},
+so the E_α-coefficient is ξ_T(φ).
+(a) First order of M̄: M̄ + tE, with E_{ij} = avg_Te^{ih_iθ_T}ξ_T and E_{ji} = −avg_Te^{ih_jθ_T}ξ̄_T. W_♮ is analytic (§30, implicit
+function theorem). Write W_♮(M̄ + tE) = W_0e^{tZ}, Z = ze_{ij} − z̄e_{ji} (the root sectors decouple by torus equivariance).
+Stationarity says the anti-hermitian part of V^{-1}M is central. At first order its (ij) entry gives
+e^{−iφ_i}E_{ij} − zr_j − e^{iφ_j}Ē_{ji} − zr̄_i = 0, with r_k := e^{−iφ_k}m_k = avg_Te^{iψ_k(T)}. This reads z·avg_TN̄_T = avg_TN_Tξ_T, and
+avg N̄ → 2 as a → 0. For SU(2), h = ±q/2 and φ_2 = −φ_1 give N_T = 2e^{i(qθ_T/2 − φ_1)} and N̄_T = 2e^{−i(qθ_T/2 − φ_1)}; with
+e^{iφ_1} = m_1/|m_1|, z = avg[e^{iqθ_T/2}ξ_T]/avg[e^{iqθ_T/2}].
+(b) S_c(t)^{-1}T(t) = e^{−tξ_c}Ge^{tξ_T} = G·exp(t(ξ_T − Ad(G^{-1})ξ_c)) + O(t²), G = exp(δ_TH_1), whose E_α-part is ξ_T − e^{−iqδ_T}ξ_c.
+From d/dt exp(Y + tW) = exp(Y)·((1 − e^{−ad_Y})/ad_Y)W one gets d/dt log(Ge^{tZ}) = g(ad_Y)Z, Y = δ_TH_1, and ad_Y = iqδ_T on E_α. So
+X̄(t) = δ̄H_1 + tΞ, Ξ = avg_Tg(iqδ_T)(ξ_T − e^{−iqδ_T}ξ_c). Then U'(t) = S_ce^{tξ_c}exp(δ̄H_1 + tΞ) =
+S_cexp(δ̄H_1)·exp(t e^{−iqδ̄}ξ_c)·exp(t f(iqδ̄)Ξ) + O(t²), which is (b).
+(c) For φ = D_Uω the transported sum telescopes: ξ_γ(D_Uω) = e^{−iqθ_γ}ω(start) − ω(end).
+  - Chain: N_Te^{−iqθ_T} = e^{−i(φ_i − φ_j)}N̄_T (direct, from ψ_i − qθ = ψ_j + φ_j − φ_i and −ψ_j − qθ = −ψ_i − φ_i + φ_j). So
+    z = e^{−i(φ_i − φ_j)}ω(c_X) − ω(c_Y).
+  - S4': ξ_T − e^{−iqδ_T}ξ_c = −(1 − e^{−iqδ_T})ω(c_Y), so the average of g(·)(·) is −iqδ̄ω(c_Y), and f(iqδ̄)(−iqδ̄ω_Y) =
+    −(1 − e^{−iqδ̄})ω_Y. Adding e^{−iqδ̄}ξ_c gives e^{−iq(θ_{S_c} + δ̄)}ω(c_X) − ω(c_Y).
+(d) Chain: φ_k = h_kavg θ + O(|a|³) by §104 (b). So ψ_k(T) = h_k(θ_T − θ̄) + O(|a|³), N_T = 2 + iq(θ_T − θ̄) + O(a²) and
+avg N̄ = 2 + O(a²), giving z = avg ξ + (iq/2)Cov_T(θ, ξ) + O(a²). S4': expanding e^{−iqδ̄}, f, g, e^{−iqδ_T} to first order, the ξ_c
+terms cancel, giving avg ξ + (iq/2)(avg[δξ] − δ̄avg ξ). The covariance is shift-invariant, so Cov(δ, ξ) = Cov(θ, ξ). ∎
+*Reading.* f16 A2 (finite differences of the nonlinear maps, t = 1e-5): chain 2.4e-10, 2.7e-10, 2.8e-10; S4' 7.0e-10, 7.6e-10,
+7.7e-10 (SU(2); SU(3) roots (1,2), (1,3) with h̄ ≠ 0). The naive average fails (7e-2 … 9e-2). A3: covariance to ≤ 2.6e-14; the
+chain/S4' difference is second order (ratios 3.97, 4.03, 3.98).
+
+## 106. Proposition SLICE-U (the covariant decomposition at U): PROVEN-HERE ((a)-(d)); one clause of (d) withdrawn
+
+Statement: §103 (X4).
+*Proof.* (a) Q_kD^{(k)} = T_kD^{(k)} + D^{(k+1)}h_kD^{(k)} = D^{(k+1)}(ev + h_kD^{(k)}). Induction on m, with A^{(m←j)} = Q^{(m)} − D^{(m)}h^{(m)}:
+  A^{(m+1←j)} = (Q_m − D^{(m+1)}h_m)(Q^{(m)} − D^{(m)}h^{(m)})
+  = Q_mQ^{(m)} − D^{(m+1)}[(ev + h_mD^{(m)})h^{(m)} + h_mQ^{(m)} − h_mD^{(m)}h^{(m)}]
+  = Q_mQ^{(m)} − D^{(m+1)}[ev h^{(m)} + h_mQ^{(m)}].
+P_nD^{(n)} = 0 gives the projected identities, and M_U = A^{(n←0)}.
+(b) h_U is built from the paths P^σ(c_X → y), which lie in the box c_X + [−1, 1]⁴, so it is local. Its coefficients are
+exponentials of line sums, so it is analytic. At U = 1 its coefficients are ±1 with the orientation, so h_{1,k} = −h. With
+D_{U'}(1) = −d: Q_k(1) = Q_root + dh = Q_str (LINEAR_PACKAGE §1.2).
+(c) Every entry of Q_k(U) − Q_str is an analytic function of the ≤ 648 background link values in the box of its coarse link, and
+it vanishes at a = 0. Analyticity holds on a polydisc |a_b| ≤ η_0(L, N, q):
+  - SU(2): the denominator avg e^{iqθ_T/2} stays ≥ 1/2 there, since contours have ≤ 11 steps;
+  - SU(N): W_♮'s phases continue holomorphically by the implicit function theorem.
+By the Schwarz lemma each entry is bounded by C_2η, η := max_box|a_b|.
+  - The Schur test with the box incidence (row and column sums ≤ 648) gives ||Q_k − Q_str|| ≤ 648C_2η.
+  - ||Q_str,L|| ≤ L^{-1} (Schur, nonnegative entries, §98).
+  - For the plane wave, |a_b| ≤ |ε_nρ_{n−k}| for complex ε_n, since cos has a real argument.
+So ||Q_k|| ≤ L^{-1} + C_3|ε_nρ| ≤ L^{-1}exp(LC_3|ε_nρ|). This is uniform in the torus (all constants are local).
+(d) Differentiating P_n(U)D^{(n)}(U) = 0 gives [ε]P_n·D_0 = −P_n^0D_1. Since 1 − P_n^0 = D_0Δ_0^+D_0^*:
+ℒ_n = [ε]P_nD_0Δ_0^+D_0^*𝒞_n^0D_0Δ_0^+D_0^*[ε]P_n = P_n^0D_1G_nD_1^*P_n^0 ([ε]P_n is hermitian).
+G_n is diagonal in K with value ⟨D̂, 𝒞̂_n^0D̂⟩/λ̃² = ⟨V, 𝒞̂_n^0V⟩/λ̃ ≥ κ^{-1}[1 + (n − 1)λ̃/8]/λ̃ ≥ κ^{-1}(n − 1)/8 for K ∉ 2πZ⁴ (Proposition
+LONG-n; its alias identity |d_jψ|² = 8 holds on every torus with L^i ≥ 2). On a sector avoiding 0, D_1^*P_n^0 maps into momenta
+K ∓ P of the same sector. So ℒ_n ≥ κ^{-1}((n − 1)/8)P_n^0D_1D_1^*P_n^0.
+Explicitly, P^0(K)D_1(K ← K ∓ P) = β_∓P_{T,ℓ}(K)e_1, |β_∓| = |q|·|[ε]ε_n|/2. So on the K-diagonal ℒ_n grows at least like
+κ^{-1}((n − 1)/8)(q²|[ε]ε_n|²/2)(1 − |D̂_ℓ(K)_1|²/λ̃(K)), which is positive unless K ∥ e_1. By §107 the full second-order transverse
+coefficient converges, so ℒ_n is cancelled by the cross terms of the termwise expansion. ∎
+**Statement change (logged).** The last sentence of (X4) (d) ("termwise first-order pieces such as [ε]P_n(1 − P_n^0)s_i^0P_n^0 decay
+only like L^{-i}") is WITHDRAWN. The proof gives only an upper bound O(L^{-i}), from one Q factor and one D_0h factor. f16 does not
+show L^{-i} decay at i ≤ 2: on the official torus the piece vanishes (8e-16, 2e-14), and on the (3, 3, 2, 1) smoke torus it is
+1.99e-2 → 2.46e-3 (ratio 0.12).
+*Reading.*
+(1) What is load-bearing is the gradient AT U in front of the slice. The slice functional itself can be any local analytic family
+with h_{1,k} = −h. The transported slice, or a background-covariant box-Coulomb slice of the type of BFT_B's S_E (§15; S_E itself
+is set at the trivial chain), both qualify. The covariant choice is what would give flux-type bounds at U_f (ARGUED, not used).
+(2) f16 B1 checks A^{(2)} = Q^{(2)} − D^{(n)}h^{(2)} to 1.8e-14 and P(A^{(i)} − Q^{(i)}) to ≤ 9.5e-15, with covariance to 2.1e-14.
+(3) f16 B3 / add-B3 checks the leak: ℒ^{(1)}, ℒ^{(2)} have norms 3.51 and 3.39 (ratio 0.966, no decay), and
+ℒ − P^0D_1D_1^*P^0/8 ≥ −3e-16 at δ ≤ 0.002.
+(4) With the U = 1 pairing, the data [ε]A^{(i)} = [ε]Q'^{(i)} do not decay (2.92 → 2.95). With the pairing at U, [ε]Q^{(i)} decays
+(1.16 → 0.387).
+
+## 107. Proposition VC-T1 ((T-a1) for the 𝒞-part at the Cartan plane wave) and Lemma P-poles ((T-a2), orders 1, 2): PROVEN-HERE
+
+Statement: §103 (X5). Hypotheses: as stated. (Π-loc) is a named hypothesis, ARGUED: at diagonal M̄, Π(M̄) is torus-invariant,
+hence diagonal in the roots.
+*Proof.* (a) For r ≤ 2 the coefficients depend on the backgrounds only through their linear parts: by §104 (b) the quadratic part
+vanishes, and by the chain rule a second-order Taylor coefficient sees b^{(1)} and b^{(2)} = 0 only. By §104 (c), in level-n
+parametrisation the level-(n − i) background depends only on (i, ε_n, P, ϑ_n), and the level-(n − i) torus has side L^iT. The one-step
+maps are the same at every level (the chain is uniform in level units, §30). P_n depends on the level-n background only. Hence
+s_i and P are n-independent, and 𝒞_n is the sum over j = n − i, i = 0..n − 1.
+(b) Q^{(i)} = Q_{n−1}⋯Q_{n−i}. By §106 (c), for complex |ε_n| ≤ R := η_0/2:
+  ||Q^{(i)}(ε_n)|| ≤ L^{-i}exp(LC_3R Σ_{t≥1}ρ_t) ≤ L^{-i}exp(LC_3Rπ/(2(L − 1))).
+  - Q^{(i)}(ε̄)^* is the holomorphic extension of Q^{(i)*}.
+  - Π^{-1} is bounded and analytic, by (Π-loc).
+  - Cauchy's estimate on |ε_n| = R gives ||[ε_n^r]Q^{(i)}|| ≤ C'_rL^{-i} and ||[ε_n^r](Q^{(i)}Π^{-1}Q^{(i)*})|| ≤ C''_rL^{-2i}, with
+    C_r = C_r(L, N, q).
+  - Since P s_iP = PQ^{(i)}Π^{-1}Q^{(i)*}P (§106 (a)), [ε^r](Ps_iP) = Σ_{r_1+r_2+r_3=r}[ε^{r_1}]P·[ε^{r_2}](QΠ^{-1}Q^*)·[ε^{r_3}]P.
+(c) On a sector {K + tP} avoiding 2πZ⁴ (finite on the torus), Δ_0 ≥ μ_K := min_tλ̃(K + tP) > 0. Since Δ(ε) − Δ_0 = O(ε), Δ(ε) is
+invertible and P is analytic for |ε| < cμ_K.
+  - [ε^r]Δ^{-1} is a sum of products Δ_0^{-1}Δ_{r_1}Δ_0^{-1}⋯Δ_0^{-1}, with ≤ r + 1 diagonal factors 1/λ̃(K + tP), |t| ≤ r. D_r and Δ_r are
+    trigonometric polynomials shifting momentum by ≤ rP (expand e^{−iqa}, a = ε_ncos(PX_2 + ϑ_n)).
+  - Since P = 1 − DΔ^{-1}D^*, N_r·[ε^r]P is a trigonometric polynomial.
+  - At first order only 1/λ̃(K) and 1/λ̃(K + P) occur, through the three terms D_1Δ_0^{-1}D_0^*, D_0Δ_0^{-1}D_1^* and
+    D_0Δ_0^{-1}Δ_1Δ_0^{-1}D_0^*. The result is
+    λ̃(K)λ̃(K+P)[ε]P(K+P←K) = −[βλ̃(K+P)e_1D̂(K)^† − βλ̃(K)D̂(K+P)e_1^T − Δ_1D̂(K+P)D̂(K)^†],
+    with Δ_1 = β(D̂(K+P)_1‾ − D̂(K)_1), β := −iq[ε]ε_ne^{iϑ_n}/2 and D̂(K)_μ := 1 − e^{iK_μ}.
+  - P_{T,ℓ} = P^0 has norm 1 but is non-analytic at K = 0.
+(d) Each entry (K + sP, K) of the product in (b) is a finite sum over intermediate momenta K + tP, |t| ≤ r ≤ 2.
+  - Each [ε^{r_1}]P factor, multiplied by its λ̃-factors (all at |t| ≤ 2), is a bounded trigonometric polynomial; P^0 entries are ≤ 1.
+  - The products of the normalisations divide Ñ_r = N_r².
+  - So Ñ_r(K)|[ε^r](Ps_iP)(K + sP, K)| ≤ C_rL^{-2i}, uniformly in K and in the torus.
+  - Summing over i ≥ n gives sup_KÑ_r(K)|difference| ≤ C_rL^{-2n}. ∎
+*Reading.*
+(1) **The VC-T0 rate holds away from U = 1 for the 𝒞-part, at first and second order, λ̃-normalised and uniformly in K.** The
+growth of LONG-n and (W6) is a D^{(n)}(·)D^{(n)*} term, and it is removed exactly by pairing the slice with D^{(n)}(U).
+(2) The M-part (T-a1-M) is not covered. By §106 (a) it is P_nQ^{(n←0)}H_⊥(U)^{-1}P_⊥Q^{(n←0)*}P_n, which is d∘h-free at every U. Its
+limit needs the fine H_⊥(U)^{-1} expansion, so it is filed with (T-b) (OPEN).
+(3) The degree-4 leading numerator of the limit (the Lemma VC analogue for the vector) is not proved here. Name it (T-a3) (OPEN).
+(4) f16 B2 (i = 1 → 2): transverse coefficients c_1 = 0.178 → 0.0188 (ratio 0.106) and c_2 = 0.628 → 0.0678 (ratio 0.108),
+against L^{-2} = 0.111. [ε^r]Q^{(i)} ratios are 0.334 and 0.418, against L^{-1}(1 + ρ).
+(5) f16 B4 (Lemma P-poles at first order): the finite-difference residual scales like δ⁴: 1.2e-3 (δ = 0.02), 1.2e-7 (0.002),
+8.3e-10 (0.0005). The closed form is therefore exact, and the pre-stated δ was too coarse.
+
+## 108. (W4) addendum: the W_n half of LONG-n (the [RFL12-fix S12-2] Schur argument)
+
+At U = 1 and a level momentum K ≠ 0, write Y = Y_n(K) in the frame (V, ker D̂^†). Then (Y^{-1})_{VV} = 1/(Y_VV − Y_VTY_TT^{-1}Y_TV).
+- Y_TT = Ỹ_n ≥ κ^{-1}P_n (the j = n term), so ||Y_TT^{-1}|| ≤ κ.
+- In Y_VT = Σ_jV^*A_jA_j^*P_n + V^*M(P_T/λ)M^*P_n, the j-terms equal V^*(Q_str^{(L^i)} − d_n∘h^{(i)})Q_str^{(L^i)*}P_n. Their norms are
+  ≤ L^{-2i} + ||h^{(i)}||L^{-i}, with ||h^{(i)}|| ≤ Σ_j||h_j||L^{-j} bounded. The M-term is finite at fixed K (x^{blk} ~ |K|^{-2}). So
+  |Y_VT| ≤ C(K).
+By LONG-n, W_n(K) = (Y^{-1})_{VV} ≤ 1/(κ^{-1}[1 + (n − 1)λ̃(K)/8] − κC(K)²) → 0, and log W_n(K) ≤ −log n + O_K(1). Together with
+W_n ≥ 1/⟨V, YV⟩ this proves the W_n half. It is counted with LONG-n, not as a new item.
+
+## 109. Session-13 check f16 (ADDED AFTER the run; checks/f16_criteria.md, f16_cartan_slice.py, f16_out.txt, f16_time.txt)
+
+**Timeline and run conditions**
+- Criteria written 11:39:15 UTC, before any f16 script (stat in FLOW_LOG).
+- Three smoke runs, logged in FLOW_LOG:
+  - one was interrupted by a session pause;
+  - one hit an accumulator assertion and an instrument defect in B1;
+  - one, on the (3, 3, 2, 1) torus, exceeded the 1 GB limit at 1.03 GB.
+- Deviations decided before the official run:
+  - Part B on the level-n torus (3, 3, 1, 1) instead of (3, 3, 2, 2), for memory;
+  - two ADDENDUM passes, NOT pre-stated, at δ = 0.002 and 0.0005.
+- Script: birth = mtime 11:54:59 UTC, 25561 B, md5 7c81a91bfff45189e025be6b22547cca.
+- Official run: one NUMERIC LOCK acquisition, 11:55:17-11:56:22 UTC, load 3.03, memory free 38%, nice 10, 1 thread; 65.4 s,
+  peak RSS 548 MB.
+
+**Results: PRE-STATED verdicts 19/21 PASS; addendum 9/10 PASS.**
+- **Part A: 16/16 PASS** (SU(2); SU(3), two roots).
+- **Part B (δ = 0.02):**
+  - B1, B2 (r = 1, 2): PASS.
+  - **B3 FAIL** (λ_min −2.9e-9 against the pre-stated −1e-10).
+  - **B4 FAIL** (1.2e-3 against 1e-7).
+  - Both failures are finite-difference truncation. The level-n field is ≈ 7.5ε, so the step in the field is 0.15. The
+    addendum shows it:
+    - B3 passes at δ ≤ 0.002, at −3e-16;
+    - B4 is 1.2e-7 at δ = 0.002, just over the 1e-7 threshold, so add1-B4 FAILs;
+    - B4 is 8.3e-10 at δ = 0.0005, which PASSes;
+    - the δ⁴ scaling identifies the residual as truncation.
+  - B3's non-decay part (ratio 0.966 ≥ 0.5) passes at every δ.
+
+**Reading.**
+(1) S13-F1, F2, F3, F4 do not occur. The pre-stated F5 (B3) and F6 (B4) lines FAIL as recorded. The addendum attributes both to the
+pre-stated finite-difference step, not to the statements.
+(2) The level-transverse 𝒞 coefficients decay at ≈ L^{-2} per level at first and second order. The U = 1 bookkeeping term does not
+decay.
+(3) Limits:
+  - only i ≤ 2;
+  - one small torus (only sectors K_1 ≠ 0, no small K);
+  - SU(2) only in Part B.
+
+## 110. Session-13 outcomes, the remaining UNIV list, tally (ADDED AFTER the derivations and the check)
+
+**Outcomes**
+- (X1) DONE: S12-1..S12-9 applied, tagged [RFL12-fix].
+- (X2) Lemma Cartan-𝔪: PROVEN.
+- (X3) Lemma Cartan-T: PROVEN.
+- (X4) Proposition SLICE-U: PROVEN (a)-(d), with the L^{-i} clause of (d) withdrawn.
+- (X5) Proposition VC-T1 and Lemma P-poles: PROVEN, for the 𝒞-part, orders ≤ 2, given (Π-loc).
+
+**Remaining items for the vector (UIR)/(V-IR)**
+- (L-loc2) [ARGUED].
+- (T-a1-M): the M-part convergence, filed with (T-b) [OPEN].
+- (T-a3): the leading degree-4 numerator of the T-split limit [OPEN].
+- (Π-loc) [ARGUED].
+- (T-b) [OPEN].
+- (T-c) [OPEN].
+- Unchanged: the rate items (s1), (s2⊥) and c'(φ) → c'_0; (COV-GI) at non-critical backgrounds; FI-1; HIST's restatement of
+  CL^J's Setting.
+- Off the list now: the plane-wave form factor of 𝔪_n (§104) and the background dependence of P_k at orders 1, 2 (§107 (c)).
+
+**Theorem UNIV for SU(N) does NOT yet rest only on (L-loc2).**
+
+**Tally (session-13 items unreviewed)**
+- PROVEN-HERE: 70 (confirmed by REVIEW_FLOW_S12; strict 66) + 5 = **75**: Cartan-𝔪, Cartan-T, SLICE-U, VC-T1, P-poles.
+- Strict: 66 + 4 = **70**, with P-poles folded into VC-T1.
+- IMPORTED-AND-REVERIFIED: unchanged (L4b; the Lévy CLT).
+- ARGUED, not counted: (L-loc2); (W6); (Π-loc); the flux-type bound for the covariant slice at U_f; DEF-red.
+- OPEN: (T-a1-M), (T-a3), (T-b), (T-c), (L-loc2) [s], and the rate and cross-lane items.

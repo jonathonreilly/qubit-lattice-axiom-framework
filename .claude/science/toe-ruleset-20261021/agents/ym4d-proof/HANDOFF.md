@@ -109,3 +109,25 @@ Suggested order on resume:
 3. Lower g_0 and recheck the SF thresholds.
 4. Work (J-NS^cd) and (E2^𝔉) together; both need node-A pricing.
 5. Rerun FLOW S13.
+
+## Update: REVIEW_BFT_B_S8.md finished, including the GE-T adjudication
+- **Lane B S8 confirmed.** Binding fixes: RS8-2 (rewording), RS8-3 (rename lane B's GE-T lemma to stop the name clash), RS8-8 (drop the S_E-vs-optimal comparison).
+- **The lanes do not contradict each other.** They proved and refuted two different statements that share the name GE-T.
+  - Lane A's funnel spikes are real in S_E (ARGUED, via an exact identity).
+  - So (PW-i) for S_E fails at large k, and PW-E is empty for S_E.
+- **Recommendation: keep one slice (S_E).**
+  - Restate (NC-Γ) for composite-co-closed sources, plus a remainder bound.
+  - Use two slices only if that lemma fails; that decision is the lead's.
+  - Make lane B the owner of BFT-5, stated for composite-co-closed sources.
+- **To turn the argument into a measurement:** run S_E directly at T = 5, k = 2. It needs a dedicated numeric slot.
+
+## Update: FLOW session 13 finished (supersedes the "stopped mid-run" note)
+- **FLOW.md §103–§110 is complete and consistent.** Nothing in it has been reviewed yet; REVIEW_FLOW_S13 still needs to run.
+- **PROVEN:** Lemma Cartan-𝔪, Lemma Cartan-T and Proposition SLICE-U. SLICE-U requires pairing with the gradient at U; pairing at U = 1 grows.
+- **PROVEN, given (Π-loc) (ARGUED):** VC-T1 and P-poles.
+- **Check f16:**
+  - 19 of 21 pre-stated verdicts passed. B3 and B4 failed because the finite-difference step was too coarse; they pass at smaller steps, but those runs were not pre-stated.
+  - Transverse coefficients shrink about 0.107 per level (L^{-2} = 0.111). This covers only 2 levels and the (3,3,1,1) torus.
+  - One smoke run used 1.03 GB.
+- **OPEN:** (T-a1-M), (T-a3), (T-b), (T-c) and (L-loc2).
+- **Still to run:** the reviews REVIEW_FLOW_S13, REVIEW_BFT_A_S8, REVIEW_HW_S5, REVIEW_PLD_S5 and REVIEW_SQ_S4.

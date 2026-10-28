@@ -172,3 +172,80 @@ One further ambiguity matters mathematically: `BFT_B.md:4334` calls a bound "on 
 
 No check scripts were opened: the two additional-file slots were used for SCIENCE_WORKFLOW and LINEAR_PACKAGE. No PASS from a cited script is a finding of this review. The exact symbolic calculations above are the calculations actually performed.
 
+## Six ordered implications, adjudicated at consumer strength
+
+Notation: **GZ** is a uniformly bounded inverse on a specified composite slice and background class; **Gf** is the flat, per-level-slice, weighted configuration estimate on the admitted divergence-form sources; **N** is the row-sum third-derivative bound throughout the consumer's chart. This separates three statements; it does not assume they are independent.
+
+| Arrow | Verdict for an unconditional implication in this Yang–Mills lane | What is actually established or missing |
+|---|---|---|
+| GZ ⇒ Gf | **NOT-VERIFIED** | Z=1 specializes legitimately, but the required positive-weight/local-regularity estimates, source conversion, and uniformly bounded composite-to-per-level gauge transfer are not supplied. With all those transfers it is a **CONDITIONAL** route. The status and norm impossibility arguments are **REFUTED** (F2–F5). |
+| Gf ⇒ GZ | **NOT-VERIFIED** | Flat control cannot itself estimate a varying Hessian. A matched full flat inverse plus a framed relative perturbation with norm δ<1 gives a background inverse by the derived Neumann formula. The source/slice/Hilbert-norm comparisons and coverage of the entire required Z-class are additional hypotheses. HESS-rel is only stated on Z(V), not all possible GZ consumers (F7). |
+| GZ ⇒ N | **NOT-VERIFIED** | A **CONDITIONAL** route requires H1, H2 at the critical tower, a conversion of GZ to the complete H3 response/localization package, corrected vertex estimates, and the same bounds throughout the chart. TRANSP at Z^{off}, m=0 does not provide that conversion (F4, F6, F8). |
+| N ⇒ GZ | **NOT-VERIFIED** | No reverse argument is given. A third-derivative bound does not supply coercivity; the exact quadratic witness below disproves that inference from regularity alone. The session's reduction arrow is reversed (F4). |
+| Gf ⇒ N | **NOT-VERIFIED** | Compose a valid flat-to-background inverse theorem with the preceding background-to-N route, including every class, chart, norm, and vertex hypothesis. Gf alone supplies none of H1/H2 or the nontrivial-background perturbation estimate. |
+| N ⇒ Gf | **NOT-VERIFIED** | The same quadratic witness has N=0 and an arbitrarily large flat field response to internal forcing. A proof in this particular model would need an additional structural/coercivity theorem; the branch third-derivative estimate itself contains none. |
+
+These are six examinations, **not six proved failures**. A mismatch is a missing bridge until an actual obstruction to that bridge is proved.
+
+Two exact witnesses delimit what the statements alone can prove:
+
+1. `F_n(x,b)=(x−b)^2/(2n)`. The critical branch is x=b, E_n(b)=0, and E_n'''=0 uniformly on every chart; the internal Hessian inverse is n, and adding a source −jx gives x=b+nj. Thus N-type regularity alone controls neither background coercivity nor the flat field response.
+2. `F_n(x,b)=x^2/2+b^2+n^{-2}sin(nb)`. Its full Hessian is diag(1,2−sin(nb)), with lower bound 1 everywhere, but the critical branch x=0 has E_n'''(0)=−n. Uniform inverse bounds alone do not bound third derivatives without vertex/control assumptions.
+
+These are algebraic counterexamples to **generic inferential rules**, not counterexamples satisfying the fixed lattice SU(N) dynamics. They justify withholding the claimed implications, but cannot be promoted to a proof of pairwise independence in this project.
+
+## Dependency graph and count
+
+Use **R** for the missing response/decay/local-regularity and source conversions, **S** for uniformly controlled slice/norm identifications, **C** for coverage of the critical tower and its whole chart, and **P** for a correctly framed perturbation theorem with ||H_0^{-1}E_Z||<1 on the required source space. Every letter is an additional mathematical obligation, not a status label.
+
+```text
+M_response (Theorem 4.2′) ──> selected flat residual/curvature kernels
+          no established edge identifying it with GZ|_{Z=1}
+
+GZ ──[restrict Z=1; R; S]──────────────────────> Gf
+Gf ──[full source extension; S; P; norm comparison]──> GZ on P's class
+GZ ──[R; C]───────────────────────────────────> H3 on the consumer class
+(H1 + H2 + H3 + corrected vertex summation on that class) ──> N
+
+N ──> neither inverse estimate by any argument supplied here
+```
+
+The bracketed arrows are **CONDITIONAL** analytic routes, not completed lane proofs. The Neumann-series step itself and the tensor contraction underlying the last arrow can be derived directly: for a critical lift z(b), differentiating F_x(z(b),b)=0 cancels all terms containing z'' in the third derivative of the branch energy, leaving D³F evaluated on three tangent lifts. In components, T_{xyz}=Σ_{abc}V_{abc}J_{ax}J_{by}J_{cz}, hence
+
+`Σ_{y,z}|T_{xyz}| ≤ Σ_{a,b,c}|V_{abc}| |J_{ax}| (Σ_y|J_{by}|)(Σ_z|J_{cz}|)`.
+
+Appropriate mixed row/sup localization bounds and summable level factors therefore suffice. What is missing is their verification for the actual background, chart, and norm pair—not a reversal of this tensor identity.
+
+**Count ruling:** retain **THREE named, unresolved requirements and ZERO established equivalence identifications** in this review. This is an operational count, **not a theorem of three independent obstructions**. The number of logically independent analytic obstructions is **NOT-VERIFIED**. Neither worker establishes its numerical independence count, and the proposed TWO reconciliation is not established either.
+
+- **TWO sufficient top-level tasks** would be a legitimate conditional work plan if the GZ→N side hypotheses were independently discharged and Gf remained separate. It would not prove exactly two irreducible obstructions or N⇔GZ.
+- **ONE sufficient top-level task** could likewise be a conditional plan if a sufficiently strong general-background propagator theorem also supplied Gf, H1/H2/H3, and the chart/slice transfers. That would not identify the three present statements.
+- **THREE independent obstructions** would require genuine model-specific non-implication results. Neither mismatches nor proof-status labels provide them.
+
+Thus the convenient answer fails in the requested stronger sense: it is not true that both workers' arguments stand while only their counts fail. The three-line argument is invalid, its M identification is wrong as stated, the §12 fallback does not prove non-implication, and the N-side reduction still has substantive unverified premises plus two concrete local errors.
+
+## Reference and scope accounting
+
+The load-bearing BFT_B references **4334, 4590, and 4596** were located by string and checked against the current text; they still match. Theorem 4.2′ still occurs at LINEAR_PACKAGE line **219**. No drift is alleged for these. The direct RTARGET and PROOF citations, including "not attempted" and the cited consumer/table locations, are **NOT-VERIFIED** under the two-additional-file limit. This report does not manufacture a drift finding from the warning that other citations have drifted.
+
+Files additionally read: `docs/ai_methodology/SCIENCE_WORKFLOW.md` (selected ranges) and `LINEAR_PACKAGE.md` (selected definitions/theorems/disclaimers). No snapshot or audit-ledger file was opened; no git command, network query, numerical library, or long-running job was used. Only this deliverable was written. Initial broad string-location searches exposed short matches outside some requested section bodies; substantive derivation used the scoped excerpts and the two additional sources. This search-scope deviation is disclosed rather than hidden.
+
+**Most dangerous NOT-VERIFIED step:** a uniform inverse-to-localized-response estimate on the **actual critical chain throughout the consumer's chart**, with compatible source spaces and slices. Replacing it by the proven-looking symbol M would allow the lane to erase the analytic obligation without proving it.
+
+## Summary table
+
+| Finding | Verdict | Correction / consequence |
+|---|---|---|
+| Z=1 admissibility | **CONFIRMED** for displayed specialization; full class **NOT-VERIFIED** | No explicit exclusion; no special exact flat zero mode after the defined composite gauge fixing; no uniform gap obtained for free. |
+| GZ at Z=1 equals 4.2′'s M | **REFUTED** as stated | M bounds selected response maps; a full inverse needs a separate theorem. |
+| Exact "not attempted" citation | **NOT-VERIFIED** | OPEN field/gap work is corroborated in the direct package, but the excluded RTARGET/PROOF locations were not checked. |
+| Three-line status proof and §12 dilemma | **REFUTED** | Proof incompleteness cannot establish mathematical non-implication. |
+| Four independently fatal mismatches | **REFUTED** | Background specialization is valid; locality plus a gap can generate decay; slice/source transfers remain GAP. |
+| TRANSP from "exactly two" inputs | **REFUTED** as a PROVEN implication | Its proof also consumes an unproved decay conversion and reconstruction; its class is Z^{off}, not automatically the critical chart. |
+| HESS-rel | Literal formula **REFUTED**; framed version **NOT-VERIFIED** | Align gauges/slices/sources and prove ||H_0^{-1}E||<1 uniformly. |
+| Background logarithm derivative | **REFUTED** | Replace S by S−[X,S]/2+[X,[X,S]]/12+…; a bounded-factor repair is possible but unverified in the full argument. |
+| Relaxed residual threshold >1 | **REFUTED** when 7/4<c<2 | Correct strict floor: r>max(1,7−3c); at c=9/5 it is 8/5. The claimed admissible r=6/5 gives exponent +2/5. |
+| Fixed-pair exponent arithmetic | **CONFIRMED** | At (c,r,a)=(2,3,1): −4,−1,−8,−2; sums 27/8 and 531441/6560. |
+| Six failed implications | **NOT-VERIFIED** | Six unconditional project arrows remain unverified; zero model-specific non-implication certificates were established. Conditional routes are stated above. |
+| ONE / TWO / THREE independent obstructions | **NOT-VERIFIED** | Keep three named requirements; zero verified equivalence identifications. Do not convert this into a theorem of independence. |
+

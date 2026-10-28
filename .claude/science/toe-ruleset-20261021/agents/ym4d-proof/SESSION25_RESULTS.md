@@ -1093,3 +1093,78 @@ POST-HOC-HAND. **Designed-FAIL control fired**: freezing C_T and Λ gives object
 (NO-LEVER) against 24.089 live. **Own disclosed FAIL:** `qf1_q.py` squared t_pr_need in the DESC-ε
 ceiling; script and output kept byte-unaltered, re-run as `qf1b`, scope of the error stated. A second
 hand-computed figure was wrong and is corrected by a post-hoc `qf1c`.
+
+---
+
+## T55-O — `GESIGN.md` (851 l., §1-§11) + `checks/gs1_*`. **Both halves dissolve. Neither was the thing.**
+
+### The sign question is MOOT, not open
+
+`G_e = 𝒫e` with e := d*G′ − (Q_str^{(0→k)})^TJ and G′ = χh_p − [Δ_0,χ]ω^p (BFT_A l.1711-1718). The
+decisive fact: **Lemma LD is a one-parameter family in the cutoff radius r, and Y^p does not depend on
+r at all.**
+
+**Proposition GS-ZERO (PROVEN-HERE): at χ ≡ 1 (r = ∞, admitted by Lemma LD at every k, T), G′ = h_p is
+constant, so d*G′ = 0, J = 0, e = 0, and G_e ≡ 0** — the residual sources vanish too, leaving
+Y^p ≡ g^♮ + Z″ exactly. **So the "sign statement on G_e" that FACEB named as the one missing input is
+not missing; it is available in the strongest form a sign statement can take, at a parameter value
+BFT_A already uses** (its own Case B, l.3570-3573, says *"No bootstrap"*).
+
+**And the ½ is a THRESHOLD, not a size** — defect 2 inside a file written the same day. U4′ proves
+Σ|G_e| ≤ 1738C_jL^{−c} with **c free** (l.2344-2346); ½ is that bound at the smallest c Theorem Y needs.
+**FACEB's lead — *"the funnel coefficients are already sign-coherent"* — is about φ_1, φ_2, a DIFFERENT
+object, and on e it is false.** Three elementary theorems settle the finite-r branch, all PROVEN-HERE:
+**GS-ZS** — each component of a compactly supported co-closed 1-form sums to zero, so **e is provably
+sign-incoherent**; **GS-FM** — Σ_z G_{μν} = Σ_z z_μe_ν is antisymmetric, so the signed total is an
+**invariant of e, not an artefact of Lemma PC's axial gauge**; **GS-MOM** — M(d*G′) = M(d*δ_p) exactly,
+for every χ. 𝒫 is a signed cumulative sum, so coherence of 𝒫e is **axis-order dependent**: gs1 A5 gives
+**0/12 generic**, while e = d*δ_q gives 𝒫e = δ_q, coherent — **no general no-go and no general theorem.**
+
+### Sharp or cancelling: NEITHER, pointing SHARP — and the cancellation is priced
+
+**GS-WINDOW (PROVEN):** |Φ_k(Y^p)| ≥ [A(1−2ε) − B]/(1−ε), positive iff B < A(1−2ε). **The cancellation
+the bootstrap admits is 2ε as a fraction of A, not A** — and **FB-BOOT's *"no lower bound at all"* is
+this family at its single degenerate point ε = ½.** Priced: 100 % of A at L^c = 3476C_j, 50 % at
+6952C_j, **1 % at 347600C_j** (5 extra powers of L at L = 3, T ≥ 2.78·10⁶·C_j), **0 % at r = ∞, free.**
+The question reduces to B < A, i.e. two named items: **(GS-A)** A = |Φ_k(y^p)| is k-free (BFT_A measures
+−0.0022 and marks it ARGUED) and **(GS-B)** Φ_k is bounded on the inv-ball, one line from BFT_A
+l.3571-3572 + l.3607-3608. **Given both, face (b)'s n² is SHARP for the response** — with an unsized
+k-threshold, which the worker flags rather than hides.
+
+### The circle is not a circle — CIRCLE-PARTIAL, and arrow (γ) is FALSE as stated
+
+Clause **(FB-CIRC)** written out with full quantifiers (§5.2), merging BFT_A l.2595-2598 and
+l.3612-3613 — **which turn out to be the same proposal in two parentheticals.** The circle **does not
+close**: **(γ) is false** — it quantifies over the whole ball 𝔅_η, while its consumer, a Banach
+iteration, needs the estimate only at **its own iterates**. **The base step is free, by a definition
+rather than an estimate:** K′_0 = K_0 − K_0 = **0 exactly** (BFT_A l.2761), so Lemma CD gives
+D(N_B + 𝔑⁰(0;B)) = 0 — the first linear solve meets a composite-co-closed source, **where Theorem COF is
+PROVEN k-, T-, Γ-uniformly.** **(β) is an identity, not an asymptotic.** What remains is an **O(k)-step
+transient, not L^{2k} of contraction.** Routes: **(R1)** a slice-preserving solve kills one term
+(PROVEN); **(R2)** l.3613's projected iteration kills D at every step, at the cost of **(FP♯′) — one
+scalar per level-k box, already of total zero**; **(R3)** a graded ball — **FAILED and reported**, it
+reproduces η ≤ η_0L^{−2k}; **(R4)** the consumer needs only **dipole neutrality of the root charges
+against a (1+R)^{−2} profile**, strictly weaker than any norm bound on ∇𝔉.
+
+### FB-ONE-LEG HOLDS — upgraded ARGUED → PROVEN for its structural claim
+
+**Not two mechanisms sharing a leg: ONE pairing n²⟨D(S), Ψ^p⟩ split by root level**, and the split is
+*forced*, because σ ∈ Λ_* vanishes at the level-k roots (BFT_A l.3538) while COF-res's D^root lives
+there (BFT_B l.4114). Sizes stay ARGUED where their files leave them. **Flagged: BFT_A §38.6 and
+BFT_B §35.7 quantify over different source classes — combining them double-counts.**
+
+**Three errata in other files:** BFT_A l.1713/l.1904's *"G′ = 0 for r = ∞"* is **literally false**
+(G′ = h_p; what holds is d*G′ = 0); **YSUP l.229-230's *"the very field BFT_A §38.7 takes as g_0"* is
+wrong** (g_0 = 8Δ_0^{−1}u), and **FACEB §4.2 repeats it**; and l.3568 should quote 1738C_jL^{−c}, not ½.
+
+**>>> Biggest change: G_e, Φ_k and face (b) are ALL the wrong target. D(S) is the target** — it is zero
+at the iteration's base point **by definition** — and what stands between the lane and (NC-Γ) for Γ_E is
+**one finite-dimensional object, the level-k root charges**, which HANDOFF already carries as
+**(TENT-Q)/(NEUT-box)**. Against the brief's steer (D6): the worker followed the sign-coherence lead
+only far enough to refute it, then stopped computing signs, *"because the parameter that zeroes the
+kernel is already inside the lemma."*
+
+**Second convergence of the session: (TENT-Q)/(ROOT-sup) is now named by two independent workers** —
+T55-I ranked it second behind (SPD)/(W2), and T55-O arrives at it from the opposite end. Assigned as
+**T55-T**, with the standing caution that session 24 recorded **(NEUT-box) as FALSE by a clean power**,
+while T55-O's (R4) needs only a **strictly weaker dipole-neutrality** form.

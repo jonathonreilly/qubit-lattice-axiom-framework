@@ -248,3 +248,50 @@ N2/N3/N6: two summands at different roots are not thereby independent obstructio
 
 The original ARTEFACT/SHARP-AND-FATAL decision table (FACEB.md:62-68) is capable of expressing an inconclusive result, so it is not intrinsically vacuous. Its application is the problem: SHARP-AND-FATAL requires an input satisfying the lane's hypotheses, while lines 685-689 substitute the enlarged two-condition class and concede that actual sharpness is OPEN. For the actual-response target, the honest outcome is NOT-VERIFIED / OPEN; for the explicitly defined larger class, the corrected counterexample is available.
 
+## R10 — Concrete citation drift and conditional-status mismatch
+
+**Verdict: REFUTED** for the following source locations and the blanket labeling claim; **NOT-VERIFIED** for references outside the allowed files/regions. **Claim status: GAP** for those provenance links, independent of mathematical corrections above.
+
+| FACEB location | claim/citation | observed current source |
+|---|---|---|
+| 117-118 | Theorem TQ-INT at TENTQ.md:253-259 | those lines discuss the prior NEUT-box/GT-ell conclusion; the matching heading is 261 and the statement/proof is 263-268 |
+| 21 | Corollary TQ-osc at TENTQ.md:277 | line 277 is a quantifier in Lemma TENT-TV; the corollary is at 289-292 |
+| 582-584 | every claim using a funnel value is conditional on the source files and labeled so | FB-CLASS at 273 and 672 is expressly `UNCONDITIONAL`; fb1_criteria.md:39-42 makes the same conditionality promise |
+
+FACEB's later TQ-INT references at 240 and 353 use the current matching range. The earlier copies are stale. YSUP.md:249 still contains the normalization mixture FACEB reports. The allowed YSUP normalization and TENTQ named-item anchors match their relevant strings. PROOF.md:6205-6240 at FACEB.md:348 was not inspected, because the two permitted extra files were consumed by the mandatory workflow and selected skill. Its accuracy is NOT-VERIFIED; I do not invent a drift amount. The same limitation applies to BFT_A/B, TGAUGE_PRICE, REVIEW_SF_S7, RLARGE and other external source claims.
+
+No status label or cached acceptance substituted for a derivation in this review. The reconstructed witness arithmetic can support a new precise class theorem, but cannot retroactively make FACEB's unperformed source checks unconditional.
+
+## R11 — Two inherited TENT statements also require missing qualifications
+
+**Verdict: REFUTED** under the stated own-unit lattice derivative and ordinary scalar oscillation conventions; **claim status: GAP** for the unqualified source statements. These are secondary findings about the cited reduction, not a refutation of the correctly scoped witness no-go.
+
+1. **Missing level-step factor.** TENTQ.md:277-287 states the pointwise factor bound |delta_mu(z)|<=15/(8n) for all 0<=l<=k. At l=k, ev samples adjacent coarse roots; choose corner values 0 and 1 along that edge. The tent interpolation takes those endpoint values, so the difference equals 1. The asserted bound is 15/(8n), equal to 5/24 at k=2, n=9. The Lipschitz derivation instead uses a step L^l/n, giving |delta_mu|<=15 L^l/(8n), optionally capped at 1 for the monotone tent. This identifies the scale dependence missing from the source's own proof sentence `the coarse step is 1/n`. It does not by itself invalidate the separately derived global total-variation bound or add a new power of n to the correct source norm conversion.
+
+2. **Zero does not imply oscillation equals maximum absolute value.** TENTQ.md:301-306 asserts osc(Phi)=max|Phi| whenever the corner set contains a zero. With the standard osc=max(Phi)-min(Phi), values {-a,0,+a} have osc=2a and max|Phi|=a. The equality requires all values to have one sign (or a corresponding explicit extremum condition). Merely containing zero gives max|Phi|<=osc<=2 max|Phi|. The R2 witness has one nonzero signed corner and zeros, so its equality and exact coefficient remain valid. This source error matters when extrapolating that equality to arbitrary responses.
+
+## Independent combinatorial certificate for the funnel fractions
+
+This supplements the explicit enumeration in R2 with a short hand derivation; it is not a quotation of the prior rationals. Let W(z,mu) be the coefficient of a link in the centered 81-endpoint, 24-order axial average. For a positive link out of the origin, the mu step precedes all m other nonzero endpoint directions. Summing their choices gives
+
+    W(0,mu) = (1/81) sum_(m=0)^3 binom(3,m) 2^m/(m+1) = 10/81.
+
+For the positive direction-1 link out of (1,0,0,0), direction 0 must precede direction 1, and both precede any of the m active remaining directions:
+
+    W((1,0,0,0),1)
+      = (1/81) sum_(m=0)^2 binom(2,m) 2^m/[(m+1)(m+2)] = 1/54.
+
+The reflected negative-direction links have the opposite W coefficient. Of the unnormalized plaquette's links, h_0 sees only the negative direction-1 link at (1,0,0,0), hence phi_1=-1/54.
+
+After Q_3, the direction-0 pair cancels. The remaining direction-1 links are
+
+    ((1,0,0,0),1): +2/81,    ((1,-1,0,0),1): +1/81,
+    ((0,0,0,0),1): -2/81,    ((0,-1,0,0),1): -1/81.
+
+Applying W therefore gives
+
+    phi_2=(2-1)/(81*54)+(-2+1)*10/(81*81)
+         =(1/54-10/81)/81=-17/13122.
+
+For n_i>=9 the two transverse members of each boundary pair occupy the same averaging block and have identical longitudinal multiplicity, so every Q_(n_i)u link is zero. This proves the all-k termination under these explicit conventions. Plain Python Fraction arithmetic separately checked both binomial sums, the four-link profile and divergence, and every displayed fraction. No numerical linear solve, quadrature, or array library was used.
+

@@ -65,3 +65,49 @@ The subtraction of the constructed primitive's mean has a different missing fact
 
 Symbol check: `TUNIF.md:365` and `578` both define **𝔠_0=4(d−1)(1+κ)M**. There is no factor-two discrepancy between them. The error above is the omission of the entire 𝔠_0 in the mass calculation.
 
+### F5 — tu1-E passes the very concentrated correction it claims to exclude
+
+**Verdict: REFUTED** for “this is the clause that would have caught” U-F2; **CONFIRMED** for the narrow purpose of control C; **NOT-VERIFIED** for independent computational coverage of analytic continuation. Attachments: `TUNIF.md:535–540,554–556`; `checks/tu1_criteria.md:24–46`; `checks/tu1_twisted.py:189–244,255–258`.
+
+I replaced only the spread correction with `b_1=−μ·1_{u_1=0}`, recomputed the remaining components by the same line solve, and kept the script's original seed and exact sequence of generated inputs. These are exactly the three instances judged by tu1-E:
+
+| Instance | ℓ,d | concentrated max|b| | exact max|F| | max|b|/(ℓ max|F|) | E's ≤100 gate | curl discrepancies |
+|---|---|---|---|---|---|---|
+| A1 | 3,4 | 72/5 | 43/2 | 48/215 | passes | 0 |
+| A5 | 9,4 | 629/15 | 28 | 629/3780 | passes | 0 |
+| A7 | 5,3 | 253/14 | 1401/70 | 253/1401 | passes | 0 |
+
+These are new exact rational checks, not rounded values copied from the output. The concentrated version is the precise failure mode identified in TU-3 at 341–345. The finite bracket cannot certify one power rather than two: a ratio proportional to ℓ remains below 100 at all sampled ℓ≤9. Even the observed decrease in the original ratios is not an exponent test, since different random fields were used at different sizes. E is executable and can reject sufficiently large errors; it does not discriminate the advertised scaling defect on its present inputs.
+
+A is a genuine equation test: it constructs b by integration and then differentiates it, rather than defining F to equal the output derivative. Its use of the same D primitive for generating F and checking b creates shared-implementation risk, reduced here by the separate derivation in F1. B is a telescoping identity on its exact inputs, so it can find indexing errors but cannot test the analytic-domain/non-zero-divisor step. This limitation is honestly disclosed at `tu1_criteria.md:30–32`; C does not upgrade B to a test of that step.
+
+For C, the perturbation is a unit 12-plaquette at the origin. Its 123 closedness component contains `D_3δ`, nonzero already at the origin, and its double line sum is exactly 1. Linearity makes the curl residual of the perturbation independent of the random exact part. A separate coordinate-by-coordinate evaluation of the curl, without using the script's Dmu/residual functions for this evaluation, gave **12 discrepancies with worst 21/5** at ℓ=3,d=4, and **10 with worst 3** at ℓ=5,d=3; max Φ=1 in each. C therefore controls detection of this non-closed input and a nonzero obstruction. It says nothing about root admissibility, the infinite-lattice strip bound, or the scaling exponent.
+
+None of the tested twist vectors lies wholly in the theorem's `η≤1/10` strip: every vector retains, for example, `z_3=3/7`, whereas `e^{−1/10}>9/10>3/7`. They remain useful algebra tests. E also compares against max|F| at a single twist, not the supremum G on the entire strip used by TU-3. A failure of this pointwise numerical inequality would not by itself refute the strip theorem. The construction code divides by ν_1 and ν_2 explicitly and never evaluates either exact zero; continuation to the resonances is established by F1's proof, not by these runs.
+
+### F6 — The chain bridge is not the cell theorem; a precise conditional repair
+
+**Verdict: NOT-VERIFIED** for TU-5/TU-6 as a fully checked discharge of (N-loc), with their displayed constants; claim status: **CONDITIONAL**, with a **GAP** in the supplied all-level budget. Attachments: `TUNIF.md:110–127,377–405,441–468,580–583,641–644`; `NORMS.md:382–432`; `NLOC.md:544–546`.
+
+There are three logically distinct steps: (a) reconstruct a local fine primitive from its curvature; (b) transport it with the same residuals to a chain with both row and column bounds; (c) restore the exact top datum by a nested root-compatible gauge change. F1 establishes (a), given the analytic input. It does not alone establish (b) or (c).
+
+The root correction is **repairable without assuming that the gauge scalar μ itself is local**. Here is the missing operator estimate. Let s=L^{k−j}. Multilinearly interpolate a coarse scalar μ on each s-cell. Across a fine edge in direction α, the interpolated difference is `s^{-1}` times a convex combination of the parallel coarse differences `(d_k μ)_α` at that cell's transverse corners. Thus the gradient interpolation H_j obeys
+
+`||H_j h||∞ ≤ s^{-1}||h||∞`, and `||H_j h||1 ≤ s^{d−1}||h||1` for `h=d_kμ`.
+
+For the second estimate, sum the nonnegative transverse hat weights: in each transverse direction their sum for one coarse node is s; in the longitudinal direction s fine edges each contribute 1/s. The product is exactly s^{d−1}. The formula uses coarse **differences**, not absolute values of a possibly nonlocal μ. Nested grids preserve the interpolation at all roots.
+
+Consequently, if a single preliminary chain map R_j already satisfies `||R_j||∞→∞≤A s^{-1}` and `||R_j||1→1≤B s^{d−1}`, uniformly in j,k,T, and `I−R_k` is exact, then
+
+`R'_j=R_j+H_j(I−R_k)`
+
+has top value I, both bounds with **A'=2A+1, B'=2B+1**, and the same uniformity. Its difference from the original chain is a gauge function vanishing at the top roots, provided the harmonic modes were matched first. This independently confirms the *mechanism* of TUNIF's root correction. It does **not** justify carrying the uncorrected explicit constants through unchanged. TUNIF's “adds a term of the same form” leaves that contribution out of its displayed numerical budget.
+
+What remains unverified in the supplied chain transfer:
+
+- I-A as restated at 110–117 supplies f_0 and r_{k−1}. TU-5 at 383–387 uses **all** r_i with their depth factors and local transports. The needed `κ̂ C_R L^{−(d−1)(k−1−i)}` estimate appears in `NORMS.md:395–398`, where it explicitly relies on that file's (I4). It is not re-derived in TUNIF's list (I-A)–(I-E). Both the scaled residual input and its compatibility with the particular Q must be supplied to certify (b). A uniform ∞→∞ estimate on Q^j alone does not specify its column mass or spatial support.
+- The mean sector needs the chain's actual mean-preserving property, not merely its action on constants. For example the two-site map `(y_1,y_2)↦(y_1,y_1)` preserves constants but does not preserve the mean. This is not a counterexample to Setting SC; it pinpoints the missing hypothesis in the stated harmonic argument. The separate missing 𝔠_0 in F4 must also be repaired or avoided by an independently proved stronger mean identity.
+- The 1.17 transport correction in §U9 does not account for these mean and root terms. It only addresses the displacement of supports by Q.
+
+For consumer compatibility, `NORMS.md:423` still states two exponential estimates, including a weighted input-to-output estimate. A nonzero constant tail does not satisfy those literal estimates: the rank-one mean map P has `Pδ_x=T^{−d}`, row and column norms both 1, but `T^{−d}≤C e^{−η T/2}` fails for sufficiently large T for every fixed C,η>0. Thus (N-loc-b′) is sufficient for the **unweighted row/column budgets after they are proved**, but is not the original exponential hypothesis. NLOC §L7 identifies the potential ℓ¹ mass as the relevant missing object, which supports this restricted repair. The complete proof of Theorem N1-15 is in NORMS §N6, outside the user's allowed sections; every use of (N-loc) there cannot be certified from §N4/§N7 alone. The request to close all named (N-loc) rows is therefore premature on this review's evidence.
+

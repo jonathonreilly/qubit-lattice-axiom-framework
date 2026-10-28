@@ -1420,3 +1420,77 @@ and is not circular, but not the claimed uniformity.**
 **Biggest live wall: the level-count factor k in the level-0 image of the non-co-closed plain rows** —
 **upstream of (TENT-Q), (NEUT-box) and (Y-sup^loc), all three of which could be granted and still leave
 ≈ 25(k-1).**
+
+## NLOC.md — (N-loc) BYPASSED at fixed T. 793 lines, 71 KB. One disclosed FAIL with a designed-FAIL control.
+
+### The statement was ambiguous in exactly the way that decided the question
+NORMS.md §N4's version is restated (§L2) as **two** claims about **one** admissible representative (Lemma
+N1-2: nested, trivial at the level-k roots), with constants independent of j, k, the link x **and the torus
+side T**: **(N-loc-a)** |ζ^c_{sm,j}Y|_∞ ≤ 𝔠_P L^{-(k-j)}|Y|_∞ and **(N-loc-b)** the exponentially-local
+kernel form. **§N4's second display is never used by N1-15 and is withdrawn.**
+**>>> "Uniformly in T" is the ENTIRE content of the open half, and it had never been written down.**
+
+### Route 2 confirmed — independently, before the lead's note arrived
+Theorem N1-15 consumes (N-loc) **exactly twice** (steps (2) and (4)), **only** through the column-ℓ¹ masses
+𝔏_j ≤ 𝔠_L L^{(d-1)(k-j)}, and **only to replace a torus cell count T^d by c_m.** It consumes **neither
+exponential decay nor finite support** — so RN1-20 is **CONFIRMED**.
+**But Lemma LOC is NOT the instrument:** it localises the *covariance's* background dependence, not a
+*potential's* gauge representative. So the lead's route 2 **via Lemma LOC** fails, while route 2's
+weaker-hypothesis half **succeeds**.
+
+### PROVEN: the torus Hodge bound, and the bypass
+**Lemma NL-1 (PROVEN):** ∃λ with |B - dλ - h^B|_∞ ≤ 4dR|dB|_∞ on (ℤ/R)^d, the holonomy carried by an
+explicit constant 1-form that **Lemma NL-2** computes exactly (c_j = L^{-(k-j)}c_k). With Theorem NQ-1 this
+gives **Theorem NL-3′: (N-loc-a) with 𝔠_P independent of j, k and T** — the sup half needs only the
+*gauge-invariant* locality, which is already proven (N2-exp).
+**>>> Corollary NL-4: Theorem N1-15 is UNCONDITIONAL at d = 4, trivial background, linearised, at fixed
+coarse side T ≥ T₀, with NO (N-loc)** — at a price of T^d ≈ **2.8e28** against c_m ≈ 7.3e6.
+
+**New tool, PROVEN: Lemma NL-11** — degree-2 analytic division (a closed 2-form symbol is ν∧b̂ with b̂
+analytic, |b̂| ≤ κ(η,η′)|F̂|, one step, every d ≥ 3; F̂(0) = 0 automatic for d ≥ 3). It is the
+exterior-complex companion of LINEAR_PACKAGE Lemma 4.4, **rebuilt not cited**, per the standing rule. It
+yields **Theorem NL-12: the pure-gauge half of (N-loc-b) outright, exponentially local, no box, no string,
+no T.**
+
+### Negatives, PROVEN — including a refutation of the lead's route 1
+- **Global axial gauge fails by a factor T** (a Dirac string — though the string is a transverse pure gauge,
+  Φ = d_⊥g).
+- **Within-cell axial gauge meets the ℓ¹ budget and FAILS the sup budget by L^k: NORMS's near/far trade,
+  carried out, FAILS.**
+- **>>> Route 1 does not transfer, and the lead asked the wrong question.** I briefed: "check first whether
+  the representative's box compressions obey a Combes-Thomas bound — that is the single hypothesis Theorem
+  RW needs, and if it holds, most of the work is already done in the repository." The worker's answer:
+  N5-sf0's gluing works because **R_g is block-diagonal orthogonal and the object is an OPERATOR**; a
+  **potential shifts affinely**, so **Theorem RW has nothing to conjugate** — "Combes-Thomas on box
+  compressions is not the relevant question."
+
+### ARGUED — and it is the cheapest remaining win in the lane
+The **Coulomb representative** has a **|x|^{-d} tail** (= LINEAR_PACKAGE Proposition 3.7's **Π_ex**), giving
+**log T instead of T^d**, i.e. **10²⁸ → ≈ 16**. Missing only **a classical lattice Green's-function bound.**
+*Lead: commissioned immediately as GREENT.md.*
+
+### OPEN, but reduced to scalar form
+**(N-loc-cell):** the fine half reduces to **a finite list of cell-flux divisibility conditions on the
+already-proven symbol**, via the twisted-Koszul form of the level-0 complex (the L^k gain is the telescoping
+sum; **the leading condition is PROVEN** from Lemma 4.4's identity). **This is (CL-1)'s open half — now in
+scalar form rather than a construction to be invented.**
+
+### Scope, stated honestly by the worker
+Rates in coarse distance: η′ < π/2 for the gauge half (**j-, k- and T-free**), m′ < m_*′ for the invariant
+inputs. **No j- or k-degradation anywhere proven. Every statement holds at all odd L ≥ 3; nothing uses p_L
+or 𝔮₀ = p_L/L** (so the NQ review's F7 scope worry does not touch this lane either). Lemma NL-11 needs
+d ≥ 3; Corollary NL-4 is **d = 4 only**.
+**>>> Theorem N1-15 is now unconditional at FIXED T — and NOT uniform in T, which layer 2 needs. And
+(H-C)'s C_♭ clause is NOT discharged:** N1-15 bounds D³E_k^br(1), while (H-C) names the Lipschitz constant
+**on the class**. **(N-bg) is untouched and is the larger wall; NQ-1 provably does not cross it.**
+
+### Disclosed FAIL, handled well, with a DESIGNED-FAIL control
+**nl1-D FAILED as pre-registered** (199/200 inexact divisions, verdict 0). Script, output and criteria
+**unaltered**; re-run under new id nl1-b, all three clauses PASS. Post-hoc diagnosis (**labelled**): the
+helper's synthetic-division remainder *is* E_α p, so the clause tested something **the lemma never claims** —
+which is also, post-hoc, **confirmation that the Dirac-string term is generically non-zero.**
+**nl1-A/B/C PASS with a DESIGNED-FAIL control.** *That control is the right answer to the check-power
+problem four reviews surfaced today, and it is now the standard to brief.*
+**Eight requests in FOR OTHER FILES**, including three corrections to NORMS.md (R_eff undischarged,
+(N-loc) → (N-loc♯) with "uniformly in T", the near/far trade) and, **in item 8, the three of its own claims
+a hostile reviewer should attack first.**

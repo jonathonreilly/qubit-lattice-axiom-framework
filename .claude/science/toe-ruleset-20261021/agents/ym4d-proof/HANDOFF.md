@@ -64,14 +64,26 @@ provisional until reviewed.**
 
 ## The critical path now, in priority order
 
-**1. (N-loc) — the single named input of a proven contraction.** NORMS.md Theorem N1-15 gives
-**A_soft = 1/L = 1/3 uniformly in k** for the composite third derivative, and after NQ_CHECK.md's **Theorem
-NQ-1 ((N-Q) PROVEN, 𝔮_0 = 11/3)** it is **conditional on (N-loc) alone**. (N-loc) is the exponential
-locality of the gauge-variant representative, i.e. **the multi-scale axial gauge already named as (CL-1)'s
-open half.** Closing it discharges (H-C)'s C_♭ clause at the trivial background and gives an **alternative
-to BFT-4** that avoids (CovLift), (Mult-Y), (Pair-loc) and (I-id) entirely. *Highest value in the project.*
-Scope warning: NQ-1 is abelian/linearised, exactly Setting SC's scope, and does nothing for **(N-bg)**,
-which is what BR1 and δ_Sch actually consume.
+**1. T-UNIFORMITY, not (N-loc).** NLOC.md's **Lemma NL-1** (the torus Hodge bound, PROVEN) with **Theorem
+NQ-1** gives **Theorem NL-3′** and hence **Corollary NL-4: Theorem N1-15 is UNCONDITIONAL at d = 4, trivial
+background, linearised, at FIXED coarse side T ≥ T₀, with no (N-loc) at all** — confirming REVIEW_NORMS_S1's
+RN1-20. **So (N-loc) is bypassed, and what is actually open is uniformity in T, which layer 2 needs** and
+which "had never been written down" as the content of the open half. Price at fixed T: T^d ≈ 2.8e28.
+- **Cheapest win in the lane (ARGUED, commissioned as GREENT.md):** the **Coulomb representative**'s
+  |x|^{-d} tail (= LINEAR_PACKAGE Prop 3.7's Π_ex) gives **log T instead of T^d — 10²⁸ → ≈ 16** — and needs
+  only a classical lattice Green's-function bound. **A log T is still not T-uniformity; say so.**
+- **(N-loc-cell)** is the reduced fine half: **a finite list of cell-flux divisibility conditions on the
+  already-proven symbol**, i.e. **(CL-1)'s open half in scalar form rather than a construction to invent.**
+  Its leading condition is PROVEN.
+- **Dead routes, PROVEN dead:** global axial gauge (fails by a factor T, Dirac string); within-cell axial
+  gauge (meets the ℓ¹ budget, **fails the sup budget by L^k** — NORMS's near/far trade, carried out, fails);
+  and **gluing via Theorem RW** — N5-sf0's gluing works because R_g is block-diagonal orthogonal and the
+  object is an *operator*, whereas **a potential shifts affinely, so RW has nothing to conjugate.**
+  *The lead briefed Combes-Thomas on box compressions as the likely quick route; it is not the relevant
+  question.*
+- **Do NOT claim (H-C)'s C_♭ clause from any of this.** N1-15 bounds D³E_k^br(1); **(H-C) names the
+  Lipschitz constant on the class.** **(N-bg) is untouched and is the larger wall**, and NQ-1 provably does
+  not cross it (abelian/linearised; the slice identity has no nonabelian analogue).
 
 **2. The nontrivial background: (N1) + (CovLift)'s non-residual g_Z at θ > 0.** Now the biggest BFT
 obstruction, because **every lane-A input (W0, GU, CO-0R, CO-upR, CO-B, LIN0) is proven at the trivial

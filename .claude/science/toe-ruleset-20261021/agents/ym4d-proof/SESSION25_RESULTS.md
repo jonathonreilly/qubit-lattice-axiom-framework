@@ -1389,3 +1389,27 @@ fetch tool cannot read PDFs and the hosts refuse it; owner action needed (local 
 fixed, not g_k-scaled (PLAN_S26 §2e was wrong; corrected in §11). **No readable Balaban paper proves the coupling
 flow** — FLOW55.md launched. Tool incident disclosed by the worker: one free arXiv PDF (Dimock 1712.10029) was
 auto-saved by the fetch tool outside the repository; nothing entered the repository.
+
+---
+
+## §BANKED (S26) — first results confirmed by BOTH model families
+
+Codex gpt-6-astra (max) checks returned: **CODEX_REVIEW_X1** (X1's sup theorem CONFIRMED, conditional on COF and LP
+inputs; S10-11's sup refutation fails; Hölder NOT-VERIFIED), **CODEX_REVIEW_C2** (both reversals CONFIRMED with
+explicit limits; COF-crit's root-charge assertion refuted by an explicit pure-gauge counterexample; the level-count
+loss then still open), **CODEX_REVIEW_TUNIF2** (all four of REVIEW55_TUNIF's settlements and chain admissibility
+CONFIRMED; repaired (T-UNIF) CONFIRMED at trivial-background scope; NL-3′'s step REFUTED by an exact minimiser
+giving 18T/119). **Banked in PROOF.md's header block "[S26-BANKED]":** repaired (T-UNIF) (hence N1-15 uniform in k
+and T in its regime, given NQ-1); (CO-fun) sup half on the composite-co-closed class (Hölder keeps the top-response
+term); GZ-SLOT/GZ-FALSE refuted ([S24-note 3] marked withdrawn); (CC-0) at every critical point refuted; NL-3′'s
+step refuted; a_RS not consumed on the live route. Lane-level results; the 105-item tally does not move.
+
+**Step 4 — `KFACTOR_O55.md`** (claude-opus-5-5, max). **The level-count factor is NOT a real non-uniformity.**
+**Lemma TR** (proven as an implication, from already-reviewed lane lemmas RT-cc (c) and TC): at critical points the
+residual obeys a transport bound one power of L better than 𝔐^∇'s weight, the BCH₂ rows decay ≲ L^{-(k-1-l)}η², and
+Σ_l π_l = O(η²) uniformly in k and T for every θ < 1, with no (SPD)/(W2)/(SB)/(GI). With (C2-COF), the curvature sup
+half of COF-crit / NCE (i) becomes uniform in k and T. **Off critical points (inside the contraction)** the factor is
+an artifact of the norm — ARGUED, not proven. 10 CONFIRMED / 1 NOT-VERIFIED / 9 REFUTED of others' claims, incl.
+S10-6's ≈25(k−1) (its optimising θ* falls below α = ¼ for k ≥ 5; the honest pre-repair figure was (121/13)(k−1))
+and the lead's "(SPD)/(W2) is the missing input". **Not banked yet: Codex is attacking TR-1
+(CODEX_REVIEW_TR.md).** Follow-on launched on Opus 5.5: **KFACTOR_OFF55.md** — the off-critical contraction.

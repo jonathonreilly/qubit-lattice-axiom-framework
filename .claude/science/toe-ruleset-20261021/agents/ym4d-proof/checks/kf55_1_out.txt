@@ -1,0 +1,12 @@
+A1: C_f = 121/13 (=9.307692); C_f*e in [25.300931, 25.300931] -> PASS
+A2: ln3 in [1.098612288668, 1.098612288668]; theta*>1/4 exactly for k<=4, <1/4 for 5<=k<=10000; undecided=[] -> PASS
+B1 (TR-1 => TR-2 exact algebra, m<=400, 243 combos): PASS
+B2 (N_k <= B_Pc and S_k <= B_S for 2<=k<=400, all combos): PASS
+B3 (control at k=400: old/new >= 10): PASS; min old/new class-norm ratio = 2.129e+49, min old/new sum ratio = 7.560e+01
+B4 (a_0 = 1: no gain claimed at the top level): PASS
+illustration (kappa_hat=2, eta=1/100, A_s=A_j=10, L^theta=2): a_m for m=0..8 = 1.0000, 0.7667, 0.2667, 0.0926, 0.0321, 0.0111, 0.0038, 0.0013, 0.0005
+  k=5: new class norm 3.0667 vs old 16.0; new sum 2.1259 vs old 4
+  k=10: new class norm 3.0667 vs old 512.0; new sum 2.1748 vs old 9
+  k=20: new class norm 3.0667 vs old 524288.0; new sum 2.1750 vs old 19
+  k=40: new class norm 3.0667 vs old 549755813888.0; new sum 2.1750 vs old 39
+OVERALL: PASS

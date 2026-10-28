@@ -38,6 +38,16 @@ are to *diagnoses, statements and stale cross-references*, listed at [S24].
 - **[S24-flag 1] A PROOF-owned constant conflict, raised by PLD session 6 and NOT resolved here.** PLD
   §16.8's λ_min = 3.17·10⁻³ against REVIEW_PLD_S3's binding L0-1 (6.6·10⁻¹⁰). **If L0-1 governs, a_ret falls
   by ×4.80·10⁶** (p6 D2). Route (ii) defuses it. For SF/PROOF to settle.
+- **[S24-flag 4] (Φ-conv) is a project-wide dependency that had not been named.** TENTQ §4.4: the
+  convergence of Σφ_{i+1} is **exact only at i = 1 and ARGUED above it**, and **every quantitative tent
+  statement in this project — including BFT_B §35.7's L^{2k-3} — is conditional on it.** It should be a
+  named OPEN item with an owner.
+- **[S24-flag 5] (NEUT-box) is FALSE and should be STRUCK from the open set.** TENTQ Proposition QFALSE
+  (PROVEN): as derived in BFT_B §36.4 it fails **by exactly L^{2k}** (ratio exactly 9 at k = 1, 81 at k = 2),
+  and it is **not repairable**, because the competing bound |Q_X| ≤ 8Σ_lπ_l(S_l) is **attained**. Route
+  (ii)/GT-ell is dead with it. Conversely **Proposition QN (PROVEN): Σ_X Q_X(S) = 0 for every chain source,
+  with no hypothesis**, and **Proposition QSBP: the charge is a COLLAR FLUX of the source**, not a box
+  average — so the per-box charges leave the problem entirely (Theorem TQ-INT).
 - **[S24-flag 2] A NAMING HAZARD across lanes: FOUR distinct symbols are called ε_*.** EPSSTAR §5:
   EPS-T's ε_*; **N5-sf0's α_*/(10p_L(4R_*+5)L)**, which is the one this ledger quotes as
   ε_* = 2.476e-13/C_Δ in [SF7-edit]; BG-b's (ε_1²/(4NB))^{1/2}; and BFT_B l.2719's local one. **They must

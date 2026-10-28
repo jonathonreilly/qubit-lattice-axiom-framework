@@ -1494,3 +1494,96 @@ problem four reviews surfaced today, and it is now the standard to brief.*
 **Eight requests in FOR OTHER FILES**, including three corrections to NORMS.md (R_eff undischarged,
 (N-loc) → (N-loc♯) with "uniformly in T", the near/far trade) and, **in item 8, the three of its own claims
 a hostile reviewer should attack first.**
+
+## TENTQ.md — the box charges are ELIMINATED and (NEUT-box) is FALSE and withdrawn. 60 KB, §1-§6.
+## All checks PASS, no FAIL — with a per-check power grading, honestly LOW→HIGHEST.
+
+### The answer to "does Q_X vanish, cancel, or is it obstructed?" is none of the three, and better
+- **Proposition QN (PROVEN-HERE):** **Σ_X Q_X(S) = 0 for EVERY chain source, no hypothesis.** The root-charge
+  field I_χ^T D(S) is neutral, so the tent coefficient's constant mode is annihilated identically.
+- **Proposition QSBP (PROVEN-HERE): Q_X(S) = Σ_l ⟨d(ev^{(0→l)}χ⁵_X), S_l⟩** — **the charge is a COLLAR FLUX
+  of the source, never a box average of D(S).** Extends §25.1 (f) from one slot to the composite divergence.
+- **Q_X ≠ 0** (pre-stated TQ-F2 does not occur): the exact configuration
+  S_l = c·sign(d(ev^{(0→l)}χ⁵_X)) gives Q_X = 8c·L^{3(k-l)}.
+- **>>> But |Q_X(S)| ≤ 2d·Σ_l π_l(S_l) = 8Σ_l π_l(S_l), k- and T-uniform, ABSOLUTE constant, and ATTAINED.
+  The tent's total variation L^{3(k-l)} cancels EXACTLY against the own→coarse conversion. The charge was
+  never the problem; the CURRENCY was.** *The fifth currency finding of the session.*
+
+### (NEUT-box): a boundary term that does not vanish — FALSE, and struck
+**Proposition QFALSE (PROVEN-HERE): (NEUT-box) as derived in §36.4 is FALSE by exactly L^{2k}** (post-hoc
+probe tq1b: ratio exactly 9 at k = 1, 81 at k = 2). **Not repairable** — the bound above is attained. A
+currency mismatch, not a cancellation failure. **(NEUT-box) should be STRUCK from the open set, not
+attempted.** *My brief conjectured it was a vanishing boundary term; it is a boundary term and it does not
+vanish, so the conjecture was wrong in both directions.*
+
+### The pin cannot be moved, and it does not matter
+The pin is **constitutive** of S_E — it is what gives ev^{(k)}Λ = 0 and hence makes Π_E a projection along
+𝒢_0 — so pre-stated TQ-F5 occurs. **But Proposition PINC (PROVEN-HERE given ΓT-op (a)): the pinned charge's
+entire contribution to every pairing cancels identically**, with Γ_E^Tφ = -Σ_XΣ_w χ⁵_X(w)φ(w)(A^X_w -
+A^X_{c_X}), one piece of box dipoles and **no pinned term**. Lemma ΓT-op (e)'s second term is a property of
+the **ℓ^∞ norm** (bb8t C1 really attains n^d), **not of the slice**. **Route (ii)/GT-ell is DEAD** — and
+independently so: its *leading* term n⁴‖D‖_∞ already loses a power of n in the (P0) class.
+
+### (TENT-Q) restated: the per-box charges are gone
+**Theorem TQ-INT (PROVEN-HERE): 𝒯_p(S) = n²Σ_l⟨d(ev^{(0→l)}I_χΦ), S_l⟩** — **one** pairing against the
+gradient of the tent-interpolated tent coefficient. With **Lemma TENT-TV**:
+|𝒯_p| ≤ **128**·n²·osc_𝔅(Φ_k(Y^p_{*,0}))·Σ_lπ_l(S_l), **constant absolute**. So
+**(TENT-Q) ⟸ (TENT-osc)**: one scalar inequality on the response field alone.
+
+### Route 1 settled negatively and sharply
+**Proposition TQ-NOGAIN:** neutrality buys **max → osc and nothing more** — Φ_k(v) vanishes at every level-k
+root whose block misses supp v, so **osc = max exactly** (tq1 A8: ratio **1 exactly**).
+**Proposition TGAUGE (a new identity; the check that could most easily have failed):**
+Φ_k(x₀+dμ)(X) - Φ_k(x₀)(X) = A^{(0→k)}μ(X) - μ(c_X), so **the tent coefficient is a REPRESENTATIVE
+ARTEFACT** that can be gauged to a constant (the residue then vanishing by QN) — **at an equal cost in the
+main pairing.** Deficit: **exactly one power of n = L^k relative to (Y-sup^loc)**; the bound reproduces
+§35.7's L^{2k-3} at the core value, **so the two accounts agree, and every L-power in §35.7 is a unit
+conversion on Y^p.**
+
+### Both of the lead's course corrections were addressed BEFORE it closed
+1. **It does not claim k-uniformity; it accepts RS10-1** — and gives a **sharper** version: stating the
+   bound against Σ_lπ_l(S_l) rather than ‖·‖_Pc makes the row loss **exactly the level count k — no power of
+   L, no θ to optimise**, instead of ≈ 25(k-1). **Offered to lane B as cheaper bookkeeping of the same
+   refutation.**
+2. **(GT-sup)'s reopening is independently supported by its own numbers.** §2.8 (iii) reaches the same place
+   from the other side: **sup_own|Y^p_0| ≍ 1, not 1/n, at distance 1 from p.** So **(Y-sup^loc) and
+   (TENT-osc) are BOTH expected FALSE in the sup norm at the core.**
+   **>>> The live question, now sharp: Φ_k is a BLOCK-AVERAGED AXIAL LINE INTEGRAL, not a sup, and the core
+   of a |z|^{-3} field is a vanishing fraction of a block — whether the averaging beats the core is
+   UNDECIDED.** *Lead: commissioned immediately as YSUP.md.*
+3. **New project-wide dependency named: (Φ-conv)**, the convergence of Σφ_{i+1}, **exact only at i = 1 and
+   ARGUED above.** **Every quantitative tent statement in the project, including §35.7's L^{2k-3}, is
+   conditional on it.** *Flagged in PROOF.md.*
+
+### Check-design, answered properly — and a proof that abelian scope is COMPLETE here
+Per-check "tested against what / could it have failed", graded **LOW→HIGHEST**. **A6** (the new identity, two
+disjoint constructions, pseudo-random data) and **A7** (a from-scratch rebuild of S8-7's four exact
+rationals) have real power; **A1/A4 are near-forced and the worker says so.**
+**No check reaches nonabelian content — and §2.0 PROVES that is COMPLETE, not vacuous, here**: every
+operator used is su(N)-componentwise at the trivial background (§24.0, §16.1 (f)). **And the one place where
+abelian WOULD be vacuous, it explicitly does not claim:** §2.9 (c) shows **Σ_X Q_X^Z ≠ 0 at a background**,
+by a holonomy defect, curvature-governed via Lemma CONJ. (CC-0) rests on Lemma CD (i), taken as a named
+input, untouched.
+*This is the right answer to the check-power problem: not "my checks are powerful" but a proof of the scope
+in which the model is complete, plus an explicit refusal to claim the case where it is not.*
+
+### The lead's (NEUT-box) ↔ (CURV-dec) question, answered: THREE objects of one shape
+**The distinguishing variable is the REGULARITY OF THE CUT-OFF.** (CURV-dec)'s residue and Proposition OB
+use **hard** cut-offs (block indicator, piece decomposition) where neutrality is genuinely needed;
+**(NEUT-box) uses the smooth χ⁵, which is exactly why it is defused** — the hard condition becomes a collar
+flux with weight ≤ (15/8)/n. §42.4's "a pattern, not an identification" is **confirmed, with the reason
+added.** **Transferable proposal (offered, not claimed):** run (CURV-dec)'s per-block solve against a
+**quintic-tent partition** instead of a block indicator, absorb the per-box total by a pinned root charge,
+and let PINC dispose of it — the three-step device S_E already implements. Unchecked: whether Lemma BOG's
+constant 4q survives the smoothing.
+
+### New named item: (P0-sup) — the two faces separate
+Pre-stated TQ-F6 occurs. **Face (a) is NOT (NEUT-box):** Theorem COF's **Hölder** half feeds LES-div a
+**pointwise** bound, and ‖Γ_E^TD(S)‖_∞ ≍ n^d‖D‖_∞ **genuinely**. **No neutrality statement repairs it.**
+Proposed repair: take [f_0]_α from **Proposition NCR's DIFFERENCE form**, turning the Hölder half into a
+Hölder (GT-sup).
+
+**Net on the open accounting: -1 ((NEUT-box), withdrawn), +2 ((P0-sup), (TENT-osc)); (TENT-Q) RE-STATED, not
+closed.** **Biggest remaining in scope: the own-unit size of Y^p's level-0 field IN THE NORM THE FUNNEL
+ACTUALLY USES** — one lane-A object serving both faces, expected false in sup at the core, undecided in the
+block-averaged norm.

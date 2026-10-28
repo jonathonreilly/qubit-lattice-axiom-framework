@@ -132,8 +132,8 @@ time of writing.
 ### 2.1 The construction, by file:line
 
 `G_e` is **not** a kernel given by a formula at the point of use. It is the output of one explicit
-operator applied to one explicit current, both produced inside **Lemma LD** (BFT_A.md l.1713-1718,
-proof §23.3 at l.1897-1917):
+operator applied to one explicit current, both produced inside **Lemma LD** (BFT_A.md l.1711-1718,
+proof §23.3 at l.1900-1917):
 
 > *"With `J := 𝔽^{(0→k)}d*G'` and `e := d*G' − (Q_str^{(0→k)})^TJ`, one has `Z = Z' + Σ_qG_e(q)Y^q`,
 > where `G_e := 𝒫e` (Lemma PC), and `Z'` minimises `E_src` with data `β` and the residual-type
@@ -141,27 +141,27 @@ proof §23.3 at l.1897-1917):
 
 The three ingredients, each pinned:
 
-1. **`𝒫`, the operator** — Lemma PC, BFT_A.md l.1708-1711, proof at l.1873-1892. It is a **signed
+1. **`𝒫`, the operator** — Lemma PC, BFT_A.md l.1705-1708, proof §23.1 at l.1874-1892. It is a **signed
    one-sided cumulative sum along the first axis**, iterated down in dimension:
    `G_{aν} := −S_ν + 1[z_a ≥ b]W_ν` with `S_ν(z) := Σ_{t≤z_a}e_ν(t, z')` and
-   `W_ν(z') := Σ_t e_ν(t, z')` (l.1879), plus a transverse `(d−1)`-dimensional copy of itself on the
-   single slice `z_a = b` (l.1882). It satisfies `d*G = e` exactly and `Σ|G| ≤ 3qΣ|e|` on a cube of
+   `W_ν(z') := Σ_t e_ν(t, z')` (l.1879-1880), plus a transverse `(d−1)`-dimensional copy of itself on
+   the single slice `z_a = b` (l.1883). It satisfies `d*G = e` exactly and `Σ|G| ≤ 3qΣ|e|` on a cube of
    side `q`.
-2. **`e`, the current** — `e := d*G' − (Q_str^{(0→k)})^TJ`, co-closed (BFT_A.md l.1911-1913) and
+2. **`e`, the current** — `e := d*G' − (Q_str^{(0→k)})^TJ`, co-closed (BFT_A.md l.1911-1912) and
    supported in a cube of side `q ≤ 2.05r` about `p` (BFT_A.md l.2345, l.2601).
 3. **`G'`, the source of `e`** — `G' := χh_p − [Δ_0, χ]ω^p` with `χ := Φ_{r,p}` a product cutoff at
    radius `r`, `ω^p := Δ_0^{-1}(δ_p − h_p)`, and `h_p` the **constant** 2-form of `p`'s orientation
-   with total sum 1 (BFT_A.md l.1694-1695, l.1713-1714).
+   with total sum 1 (BFT_A.md l.1693-1694, l.1711-1712).
 
 ### 2.2 The free parameter, which is the whole story (defect 2: *"check what someone fixed once"*)
 
 Lemma LD is stated for **every** `χ = Φ_{r,p}` with `1 ≤ r ≤ M/4`, **and for `χ :≡ 1`** ("`r = ∞`"):
-BFT_A.md l.1713, *"Let `χ := Φ_{r,p}` with `1 ≤ r ≤ M/4`, or `χ :≡ 1` ("`r = ∞`")"*. So `G_e` is not
+BFT_A.md l.1711, *"Let `χ := Φ_{r,p}` with `1 ≤ r ≤ M/4`, or `χ :≡ 1` ("`r = ∞`")"*. So `G_e` is not
 one object but a **one-parameter family** `G_e^{(r)}`, while the object it decomposes, `Y^p`, does
 not depend on `r` at all (`Y^p` is defined at BFT_A.md l.1691-1693 as a minimiser of `E_src` with the
 single source `δ_q`, with no `r` in sight).
 
-Theorem Y picks `r := L^{k+c}` when `T ≥ 8L^c` and `r := ∞` otherwise (BFT_A.md l.1868-1869,
+Theorem Y picks `r := L^{k+c}` when `T ≥ 8L^c` and `r := ∞` otherwise (BFT_A.md l.1869,
 dated precision 2), and `c` is then fixed by **`L^c ≥ max(260, 3476C_j)`** ([RBA5-fix] U4′,
 BFT_A.md l.2344-2346). **That choice is made for Theorem Y's constants, not for the bootstrap**, and
 nothing downstream of §38.7 re-examines it.
@@ -170,15 +170,16 @@ nothing downstream of §38.7 re-examines it.
 `G_e` of l.1716, l.1915, l.2345, l.2601, l.3093 and l.3568 are the same object, and `G'`, `G_e` and
 `𝒫` are distinct symbols throughout.
 
-**One correction to FACEB, which changes none of its conclusions.** FACEB §4.2 calls YSUP's witness
-`u = ⅛d*δ_p` *"the very field BFT_A §38.7 takes as `g_0`"*. It is not. §38.7's `g_0` is
-`d*(χω^p)` in Case A (BFT_A.md l.3557) and `y^p = d*ω^p` in Case B (BFT_A.md l.3576) — a lattice
+**One correction, and it belongs to YSUP rather than to FACEB.** The sentence *"the very field
+BFT_A §38.7 takes as `g_0`"*, which FACEB §4.2 repeats, is **YSUP's own**, at YSUP.md l.229-230
+(Theorem YS-CORE (ii)). It is not right. §38.7's `g_0` is
+`d*(χω^p)` in Case A (BFT_A.md l.3557) and `y^p = d*ω^p` in Case B (BFT_A.md l.3570) — a lattice
 **Green's-function dipole**, not a four-link field; `g_0 = Δ_0^{-1}(d*δ_p) = 8Δ_0^{-1}u` at `r = ∞`,
 since `d*h_p = 0`. Both fields lie in FACEB's class `𝒴` (co-closed, profile `(1+|z−p|)^{-3}`;
-`|g_0| ≤ C_0'(1+|z−p|)^{-3}` at BFT_A.md l.3557, `|y^p| ≤ C_K(…)^{-3}` at l.3576), so **Proposition
+`|g_0| ≤ C_0'(1+|z−p|)^{-3}` at BFT_A.md l.3557, `|y^p| ≤ C_K(…)^{-3}` at l.3570), so **Proposition
 FB-CLASS is unaffected**. What is affected is the identification of `A := |Φ_k(g^♮_0)|` with YSUP's
 `2.4768·10⁻³`: BFT_A itself marks that identification **ARGUED** and supports it by a *measurement*,
-`a = −0.0022` at `k = 2, T = 2` (BFT_A.md l.3588-3590), against the witness's exact `−0.0024768`.
+`a = −0.0022` at `k = 2, T = 2` (BFT_A.md l.3583), against the witness's exact `−0.0024768`.
 **GS-F4 occurs, as expected, and changes no conclusion** — but `A` must be carried as a symbol with
 an ARGUED numerical value, not as YSUP's exact rational. I carry it as a symbol (scope limit §1.5.2).
 
@@ -189,7 +190,7 @@ an ARGUED numerical value, not as YSUP's exact rational. I carry it as a symbol 
 ### 3.1 First: the kernel can be taken **identically zero**. **PROVEN-HERE.**
 
 > **Proposition GS-ZERO (PROVEN-HERE, from Lemma LD's own hypotheses).** Take `χ ≡ 1` (`r = ∞`) in
-> Lemma LD, which Lemma LD admits for every `k ≥ 1` and every `T ≥ 1` (BFT_A.md l.1713). Then
+> Lemma LD, which Lemma LD admits for every `k ≥ 1` and every `T ≥ 1` (BFT_A.md l.1711). Then
 > `G' = h_p` is a **constant** 2-form, so
 >
 >   `(d*G')_ν(z) = Σ_μ[G'_{μν}(z − e_μ) − G'_{μν}(z)] = 0` identically,
@@ -203,10 +204,17 @@ an ARGUED numerical value, not as YSUP's exact rational. I carry it as a symbol 
 
 *Proof of the only non-quotation step.* `d*` of a constant 2-form is zero by the convention fixed at
 BFT_A.md l.1872 (each term of `Σ_μ[G_{μν}(z−e_μ) − G_{μν}(z)]` cancels). The energy only ever sees
-`G'` through `−⟨G', dZ_0⟩` (BFT_A.md l.1906), which equals `−⟨d*G', Z_0⟩ = 0`. ∎
+`G'` through `−⟨G', dZ_0⟩` (BFT_A.md l.1909), which equals `−⟨d*G', Z_0⟩ = 0`. ∎
+
+*One textual discrepancy, flagged because a reviewer will meet it.* Lemma LD's statement says
+*"(and `G' = 0` for `r = ∞`)"* (BFT_A.md l.1713) and §23.3 step 1 repeats it (l.1904). Taken
+literally that is **false**: at `χ ≡ 1`, `G' = χh_p = h_p ≠ 0`. What is true, and what every use of
+`G'` needs, is **`d*G' = 0`** and `⟨G', dZ_0⟩ = 0`. The conclusion is unchanged and in fact
+strengthened — `e = 0` follows from `d*G' = 0` alone — but the sentence should be corrected, because
+a reader checking `G' = 0` against `G' := χh_p − [Δ_0, χ]ω^p` will conclude the lemma is wrong.
 
 This is **not new mathematics**: it is BFT_A's own Case B, which states the same collapse in the same
-words — *"`Y^p ≡ g + Z` with `g_0 = y^p` … **No bootstrap.**"* (BFT_A.md l.3576-3579). What is new is
+words — *"`Y^p ≡ g + Z` with `g_0 = y^p` … **No bootstrap.**"* (BFT_A.md l.3570-3573). What is new is
 the observation that **the case split is a choice about Theorem Y's constants, not a constraint on
 the decomposition**: `r = ∞` is available at every `T`, and the only thing it costs is that Lemma
 EX's shell count becomes `J + 2` with `L^J ≤ M/4 = Tn/4`, i.e. `≈ k + log_L T` instead of `k + c`
@@ -271,7 +279,7 @@ it is provably false.** (Target GS2 (iv) answered.)
 >
 >   **`M(d*G') = M(d*δ_p)` = the unit antisymmetric matrix in the `(α, β)` plane, exactly.**
 >
-> *Proof.* `d*G' = d*δ_p − d*dg_0 = d*δ_p − Δg_0` (BFT_A.md l.1901-1903, `g_0` co-closed). `g_0` has
+> *Proof.* `d*G' = d*δ_p − d*dg_0 = d*δ_p − Δg_0` (BFT_A.md l.1903, `g_0` co-closed). `g_0` has
 > compact support in the lift, and `Δ z_μ = 0` for the lattice Laplacian, so
 > `M_{μν}(Δg_0) = Σ_z z_μ(Δg_0)_ν = Σ_z (Δz_μ)(g_0)_ν = 0`. For `d*δ_p`, Lemma GS-FM with the
 > primitive `δ_p` gives `M_{μν} = Σ_z (δ_p)_{μν}(z) = 1` at `(μν) = (αβ)` and 0 otherwise. ∎
@@ -333,7 +341,7 @@ With U4′'s `ε ≤ 1738C_jL^{-c}` (BFT_A.md l.2345), the cancellable fraction 
 
 Going from 100 % to 1 % costs **5 extra powers of `L` at `L = 3`** (`log_3 100 = 4.1918`). Going to
 0 % costs nothing at all and is the `r = ∞` branch BFT_A already writes. *(`C_j = 12C_G`, built from
-`C_K` and `C_φ`, both uncomputed — BFT_A.md l.2328-2330. Per §1.5.4 I quote it and do not size it, so
+`C_K` and `C_φ`, both uncomputed — BFT_A.md l.2331. Per §1.5.4 I quote it and do not size it, so
 the second and third columns are conditional on `C_j`, and the `r = ∞` row is not.)*
 
 ### 4.3 What the question becomes. **Verdict NEITHER, pointing toward SHARP.**
@@ -348,16 +356,16 @@ So the missing input is **not a sign statement and not about `G_e`**: it is the 
 Two named pieces, both outside my scope but both well-posed:
 
 > **(GS-A) `A` is `k`-free and positive.** BFT_A measures `a = −0.0022` at `k = 2, T = 2`, offset
-> `(1,0,0,0)` and marks the identification **ARGUED** (BFT_A.md l.3588-3590); YSUP proves the exact
+> `(1,0,0,0)` and marks the identification **ARGUED** (BFT_A.md l.3583); YSUP proves the exact
 > `k`-free `−65/26244 = −2.4768·10⁻³` for the four-link witness `u`, which is a **different field**
 > (§2.2). **OPEN for `g_0`; ARGUED-and-measured.**
 >
 > **(GS-B) `B = O(n^{-2})`.** BFT_A's own Case B bound is
 > `‖Z_str‖_{inv,m'} ≤ G_D(m')‖β_str‖_{D,m'}` with `‖β_str‖_{D,m'} ≤ C_βe^{128m'L^c}n^{-2}`
-> (BFT_A.md l.3577-3578) — i.e. `Z″` is small **by `n^{-2}`**. What is missing is one line: that `Φ_k`
+> (BFT_A.md l.3571-3572) — i.e. `Z″` is small **by `n^{-2}`**. What is missing is one line: that `Φ_k`
 > is a bounded functional on the `inv`-ball with a `k`-uniform constant. BFT_A's own scaling supports
 > it — `φ_{i+1}(x_0) ≍ L²·(level-i gradient) ≍ L^{2(i+1)}η/n²`, so `Φ_k(x_0) ≍ L^{2k}η/n² = η ≍
-> ‖∇^cx^c_0‖_∞` (BFT_A.md l.3615-3617) — but it is **not written**. **CONDITIONAL on that line.**
+> ‖∇^cx^c_0‖_∞` (BFT_A.md l.3607-3608) — but it is **not written**. **CONDITIONAL on that line.**
 
 > **Corollary GS-SHARP (CONDITIONAL on (GS-A) and (GS-B)).** At `r = ∞`, for every `k` with
 > `L^{2k} > C·C_Z/A`, `|Φ_k(Y^p_{*,0})| ≥ A − B ≥ A/2 > 0`, `k`-freely. **Face (b)'s `n²` is then
@@ -406,9 +414,9 @@ Setting LIN at the **trivial** background, `m = 0`, `d = 4`, `L ≥ 3` odd. `k �
   **`K_0 = −Ξ`** and **`K'_x := K_x − K_0`** (BFT_A.md l.2761).
 - `D(S) := Ξ^TS` — the composite divergence of a source `S`.
 - `Ψ^p` — the root function `σ(Π_EY^p)` at non-level-`k` roots (Lemma RC, BFT_A.md l.3545-3547) and
-  `Φ_k(Y^p_{*,0})` at the level-`k` roots (Proposition COF-res, BFT_B.md l.4110-4116). See §7.
-- `𝔅_η := {x : ‖x‖_𝔐 ≤ η}`; `η_0` is SPD's radius (BFT_A.md l.2807).
-- `C_SR` — Proposition SR's constant (BFT_A.md l.2806-2810), `k`-, `T`-uniform.
+  `Φ_k(Y^p_{*,0})` at the level-`k` roots (Proposition COF-res, BFT_B.md l.4113-4116). See §7.
+- `𝔅_η := {x : ‖x‖_𝔐 ≤ η}`; `η_0` is SPD's radius (BFT_A.md l.2809).
+- `C_SR` — Proposition SR's constant (BFT_A.md l.2808-2811), `k`-, `T`-uniform.
 
 ### 5.2 The clause
 
@@ -441,3 +449,403 @@ Setting LIN at the **trivial** background, `m = 0`, `d = 4`, `L ≥ 3` odd. `k �
 (β) over **orbit indices** `j`; (γ) over **points of `𝔅_η`** again. The mismatch is between (β),
 which delivers smallness only along one orbit, and (γ), which demands the estimate at every point.
 Nothing in the consumer needs the estimate at a point the iteration never visits.
+
+---
+
+## 6. Breaking the circle (target GS5). **The circle does not close. Arrow (γ) is the weakest and
+## is false as stated; the base step is free; what is left is an `O(k)`-step transient.**
+## Written 21:56 UTC.
+
+### 6.1 The base step is free. **PROVEN-HERE from a DEFINITION, not from an estimate.**
+
+> **Proposition GS-BASE (PROVEN-HERE given (GI); independent of the ARGUED bound
+> `|K'_xξ| ≤ C|x||ξ|`).** At `x = 0`,
+>
+>   **`K'_0 = K_0 − K_0 = 0` exactly** (BFT_A.md l.2761 **defines** `K'_x := K_x − K_0`),
+>
+> so Lemma CD gives `D(𝔑^0(0; B)) = Ξ^T𝔑^0(0; B) = −K'^T_0∇𝔉(0; B) = 0`, **for every `B`, every `k`,
+> every `T`**. Since `Ξ^TN_B = 0` identically (BFT_A.md l.2977-2978, a consequence of
+> `r_{k-1}(Ξξ) = 0`, and it does not use (GI)), the **whole source the linear solve meets at the
+> first step**, `N_B + 𝔑^0(0; B)`, is **composite-co-closed**: `(CC-0)` holds exactly.
+>
+> **Hence `(NC-Γ)` is NOT needed to take the first step.** What is needed there is Theorem COF under
+> `(CC-0)`, which is **PROVEN**: `‖f_0‖_∞ + [f_0]^∞_α ≤ C_funC'η²`, `k`-, `T`- **and
+> `Γ`-uniformly** (BFT_B.md l.4108-4110, Corollary COF-crit; and BFT_B.md l.4122:
+> *"(CO-fun) is true under (CC-0) and false without it"*).
+
+This is the brief's **"a-priori bound that supplies the first step for free"**, and it is exact
+rather than approximate: the vanishing is a definition (`K'_0 = 0`), not a smallness.
+
+### 6.2 Arrow (β) is not an asymptotic statement. It is an **exact per-step identity**.
+### **PROVEN-HERE from two quoted definitions.**
+
+> **Lemma GS-STEP (PROVEN-HERE).** Let `x_{j+1} := Φ_E(x_j) = 𝓛_E^{-1}(N_B + 𝔑^0(x_j; B))` with
+> `𝓛_E = H + Γ_E^TΓ_E`. Then **for every `j`, with no convergence assumption**,
+>
+>   **`∇𝔉(x_{j+1}) = 𝔑^0(x_j; B) − 𝔑^0(x_{j+1}; B) − Γ_E^TΓ_Ex_{j+1}`.**
+>
+> *Proof.* `Hx_{j+1} + Γ_E^TΓ_Ex_{j+1} = N_B + 𝔑^0(x_j)` by definition of `x_{j+1}`. Substitute into
+> `∇𝔉(x_{j+1}) = Hx_{j+1} − N_B − 𝔑^0(x_{j+1})`. ∎
+> *(Consistency: at a fixed point `x_j = x_{j+1} = x`, this is `∇𝔉(x) = −Γ_E^TΓ_Ex`, which is exactly
+> the first line of BFT_A's §33.3 (ii), l.2980. So Lemma GS-STEP is the one-step form of a line the
+> lane already has.)*
+
+So the quantity arrow (α) wants is, **at every step and not only in the limit**, a **step difference
+plus the gauge violation**:
+
+  `‖∇𝔉(x_{j+1})‖ ≤ Lip(𝔑^0; 𝔅_η)·‖x_{j+1} − x_j‖ + ‖Γ_E^TΓ_Ex_{j+1}‖`,
+
+with `Lip(𝔑^0; 𝔅_η) ≤ C_Nη` because `𝔑^0` is the quadratic-and-higher part. **Arrow (β) is therefore
+much STRONGER than Clause (FB-CIRC) states**, and it is the brief's *"a different quantity that the
+contraction produces earlier than the smallness"*: the step difference is produced at step `j+1`
+itself.
+
+### 6.3 Arrow (γ) is false as stated. **The weakest arrow, and the one that breaks.**
+
+(γ) asserts that the contraction needs `(NC-Γ)` **at every point of `𝔅_η`**. Its consumer — a Banach
+iteration started at `x_0` — needs the estimate only **at the iterates it visits**. With §6.1 the
+orbit may be started at `x_0 = 0`, where the hypothesis is free, and with §6.2 the requirement at
+step `j+1` is readable from step `j`. The dependency is therefore
+
+  `x_0 (free) → x_1 → x_2 → ⋯`
+
+— **an induction on `j`, not a cycle.** **GS-F5 occurs, on arrow (γ), as pre-registered.**
+
+> **Proposition GS-NOCIRC (PROVEN-HERE as an implication of GS-BASE + GS-STEP + Lemma CD).** Clause
+> (FB-CIRC) is **not circular**. (α) at `x_{j+1}` depends on `∇𝔉(x_{j+1})`, which by Lemma GS-STEP
+> depends on `x_j, x_{j+1}` and the gauge violation, and the induction is anchored at `x_0 = 0`,
+> where `D = 0` exactly and Theorem COF applies unconditionally. **No step of the argument requires
+> its own conclusion.**
+
+### 6.4 What is actually left: an `O(k)`-step transient, priced. **ARGUED.**
+
+Running the induction, at step `j ≥ 1`:
+
+  `‖D(V(x_j))‖ = ‖K'^T_{x_j}∇𝔉(x_j)‖ ≤ C_Kη·[C_Nη·‖x_j − x_{j-1}‖ + ‖Γ_E^TΓ_Ex_j‖]`,
+
+while (α) needs `≤ c_1η²n^{-2}`. With a contraction factor `θ < 1` and `‖x_j − x_{j-1}‖ ≤ θ^{j-1}‖x_1‖`:
+
+  the first term meets the requirement **iff `θ^{j-1}‖x_1‖ ≲ n^{-2}`, i.e. iff
+  `j ≳ 1 + (2k·log L + log‖x_1‖)/log(1/θ)`.**
+
+> **Proposition GS-TRANSIENT (ARGUED; it uses `Lip(𝔑^0) ≤ C_Nη` and `‖K'_x‖ ≤ C_K‖x‖_𝔐`, the second
+> of which BFT_A marks ARGUED at l.2984).** The residual gap in (FB-CIRC) is **not a circularity and
+> not an `L^{2k}` of contraction**: it is the **first `J ≈ 2k·log L / log(1/θ)` steps**, i.e.
+> `O(k)` steps of a geometric iteration, during which `(NC-Γ)` is available only with the extra
+> factor `n²θ^{j-1}‖x_1‖`. **FACEB §6.4's "`2k·log_L` of contraction" is the right count of steps and
+> the wrong reading of its cost**: a Banach iteration runs to convergence; `O(k)` steps is not a
+> price, it is a loop bound. The price is only that the **self-map property** must survive those
+> `O(k)` steps.
+
+### 6.5 Three routes out of the transient, with honest verdicts
+
+**(R1) Iterate inside the slice.** Replace `Φ_E` by a solve that preserves `S_E = Ker Γ_E`. Then
+`Γ_E^TΓ_Ex_j ≡ 0` and Lemma GS-STEP reduces to `∇𝔉(x_{j+1}) = 𝔑^0(x_j) − 𝔑^0(x_{j+1})` exactly,
+removing one of the two terms outright. **Cheap and PROVEN to remove that term** (it is Lemma
+GS-STEP with the second summand zero); it does **not** remove the step-difference term.
+*Status: PROVEN as a reduction; does not close the transient alone.*
+
+**(R2) Iterate the composite-co-closed projection** — BFT_A.md l.2595-2598 and l.3612-3613, the two
+parentheticals, merged. Project the source onto `{D = 0}` at every step. Then `D ≡ 0` at every step,
+`(CC-0)` holds throughout, and Theorem COF gives the `k`-, `T`-, `Γ`-uniform `Cη²` at **every** step,
+not only the first. **The entire transient disappears.** The cost moves to one statement:
+*does the projected iteration still converge to a critical point of `𝔉_k`?* By Lemma CD (ii) a fixed
+point of the **unprojected** map is critical; for the projected map the analogous statement is
+BFT_A's unwritten `(FP♯′)`. **This is the route, and it is a finite-dimensional question:** what the
+projection discards is the level-`k` root charges `Q_X = D(S)(c_X)`, **one scalar per level-`k` box**,
+with `Σ_X Q_X = 0` already (BFT_B.md l.4114). *Status: the reduction is PROVEN-HERE given Theorem COF;
+`(FP♯′)` is OPEN and is the real content of l.3613.*
+
+**(R3) A graded ball** `η_j := η·min(1, n²θ^{j})` — the brief's open-closed / continuous-induction
+shape. **It works formally and buys nothing.** The enlarged radius must stay inside SPD's `η_0`, so
+`ηn² ≤ η_0`, i.e. **`η ≤ η_0L^{-2k}`** — exactly the `L^{-2k}` FACEB §6.4 already priced and
+correctly called *"not a smallness condition, it is the absence of one"*. **Reported as a FAILED
+route**, and reported because a reader would otherwise try it: the open-closed argument is available
+and the connected parameter exists (`j`, or a continuous interpolation of the data), but the set
+where the smallness holds is open-and-closed only in a ball whose radius already carries the `n^{-2}`.
+
+**(R4) A weaker smallness that suffices — and this one is available.** (α)'s sufficient condition is
+a **norm** bound on `∇𝔉`. The consumer does not need a norm bound. By Proposition COF-res the defect
+is `n²Σ_X D(c_X)Φ_k(Y^p_0)(c_X)` with **`Σ_X D(c_X) = 0`** (BFT_B.md l.4114, *"supported on the
+level-`k` roots, total 0"*), and `|Φ_k| ≤ CC_0(1 + R)^{-2}` decays in the fine distance `R`
+(YSUP.md l.232-234, Theorem YS-CORE (iii)). **So what is needed is a dipole-level
+neutrality of the root charges against a `(1+R)^{-2}` profile — not smallness of `∇𝔉` in any norm.**
+That is strictly weaker, it is finite-dimensional, and it is exactly the lane's named
+`(TENT-Q)` / `(NEUT-box)` (BFT_B.md l.4124-4125; HANDOFF.md priority 5). *Status: PROVEN-HERE that
+(R4)'s condition suffices in place of (α)'s; `(TENT-Q)` itself remains OPEN.*
+
+### 6.6 GS5 verdict
+
+**CIRCLE-PARTIAL.** Both pre-registered clauses fit — arrow (γ) **is** weaker than stated
+(CIRCLE-BREAKS's clause) **and** the circle becomes an induction with a named residual gap
+(CIRCLE-PARTIAL's). I record the **less flattering** of the two, CIRCLE-PARTIAL, because the residual
+gap is real: the self-map property over the first `O(k)` steps is not established, (R3) does not
+supply it, and (R2) replaces it by `(FP♯′)`, which is OPEN.
+
+**Weakest arrow: (γ).** It is the only one of the three that is false as written, and it is false for
+a quantifier reason (ball vs orbit), not a quantitative one. **(β) is the strongest** — it is an
+identity, not an asymptotic. **(α) is sound but over-strong**: (R4) shows its sufficient condition is
+not the consumer's necessary one.
+
+---
+
+## 7. FB-ONE-LEG, verified (target GS6). **ONE-LEG-HOLDS, and for a sharper reason than FACEB gives.**
+## Written 21:56 UTC.
+
+FACEB §3.3 states FB-ONE-LEG as *"two functionals of one argument `D(S)`"*, **ARGUED**, resting on
+BFT_A §38.6/§38.8 and on an un-re-derived `σ ≈ 0.003`. Re-deriving the structural half from the two
+primary identities gives something stronger.
+
+- **Lemma RC's identity** (BFT_A.md l.3545-3547, **PROVEN-HERE** there):
+  `f^♯_0[S](p) − f^E_0[S](p) = n²⟨D(S), σ(Π_EY^p)⟩`.
+  Its first line (BFT_A.md l.3538) records **`σ(y) vanishes at the level-k roots`**, so this pairing
+  **sees only the non-level-`k` roots**.
+- **Proposition COF-res** (BFT_B.md l.4113-4116, **PROVEN-HERE** there): the extra term is
+  `n²⟨D^root(S), h^{(0→k)}Y^p_{*,0}⟩ = n²Σ_X D(S)(c_X)Φ_k(Y^p_{*,0})(c_X)`, with `D(S) = D^root(S)`
+  **supported on the level-`k` roots**.
+
+> **Proposition GS-ONELEG (PROVEN-HERE as an implication of the two quoted identities; the SIZES
+> remain ARGUED in their files).** The two `L^{2k−3}` defects are not two mechanisms sharing a leg.
+> They are **one pairing `n²⟨D(S), Ψ^p⟩` split by root level**, with
+>
+>   `Ψ^p(Z) := σ(Π_EY^p)(Z)` at non-level-`k` roots, `Ψ^p(c_X) := Φ_k(Y^p_{*,0})(c_X)` at level-`k`
+>   roots,
+>
+> the split being **forced**, not chosen: `σ ∈ Λ_*` vanishes at the level-`k` roots by construction
+> (BFT_A.md l.3538), so the two supports are complementary and the decomposition is exhaustive. In
+> particular **both vanish identically when `D(S) = 0`**, both are linear in `D(S)`, and both carry
+> the same `n²`.
+
+**FB-ONE-LEG HOLDS**, upgraded from ARGUED to PROVEN **for its structural claim**; the *sizes*
+(`σ ≈ 0.003` measured; `≍ L^{2k−3}` reach) stay ARGUED exactly where BFT_A and BFT_B leave them, and
+I did not re-derive them (§1.5.1). **GS-F6 does not occur** in its refuting form; it occurs in the
+strengthening form the failure mode anticipated — BFT_B itself already says the two reach
+`L^{2k−3}` *"by the same mechanism"* (BFT_B.md l.4122).
+
+**One class mismatch, flagged (it is not a symbol collision, but it is adjacent to defect 1).**
+BFT_B §35.7 quantifies over **Setting LIN^cc** sources, for which `D(S) = D^root(S)` lives **only**
+at the level-`k` roots (BFT_B.md l.4114) — for that class the `σ`-term is identically zero and there
+is literally **one** term. BFT_A §38.6's *Reading* quantifies over a general non-composite-co-closed
+row `R`, for which `D(R)(Z)` is carried at roots of **every** level (BFT_A.md l.3549-3552). **The two
+files are describing the same pairing over two different source classes.** A reader combining them
+without noticing will double-count. *Recorded for BFT_A's and BFT_B's owners in §9.*
+
+> **Consequence, and it is the reason this target should not have been split.** Items GS2-GS3 (the
+> sign/`G_e` question), GS4-GS5 (the `(NC-Γ)` circularity) and the `Γ_E` defect are **one problem**,
+> and the single object is `D(S)`:
+> - `D(S) = −K'^T_x∇(𝔉_k∘exp)(x)` (Lemma CD) — `D` is the whole defect;
+> - `D(S) ≡ 0` at `x = 0` by definition of `K'` (Proposition GS-BASE) — the induction has a base;
+> - `D(S) ≡ 0` at every step under (R2)'s projection — the induction has a route;
+> - and `G_e` never enters any of it, because at `r = ∞` there is no `G_e` (Proposition GS-ZERO).
+>
+> **The `D(S)` leg is the target; `Φ_k` and `G_e` are not.** That agrees with FACEB's own §10 item 1
+> and strengthens it.
+
+---
+
+## 8. Check record `gs1`, with a per-clause statement of discriminating power. Written 21:58 UTC.
+
+Script `checks/gs1_pc.py`, output `checks/gs1_out.txt`, stderr `checks/gs1_err.txt` (empty).
+Exact integer arithmetic, plain python, no numpy, no BLAS, **no machine-wide numeric lock taken**;
+runtime under 2 s; `seed = 20261028`, `N = 7`, `d = 4`, 12 trials.
+
+| clause | result | what it could have shown instead |
+|---|---|---|
+| **A1** `d*(𝒫e) = e` exactly, `supp 𝒫e` inside the cube | **PASS** 12/12 | that my implementation of Lemma PC is not Lemma PC, or that Lemma PC's support claim fails in `d = 4`. A6a shows the clause can fail. |
+| **A2** every component of a co-closed compactly supported `e` sums to 0 (Lemma GS-ZS) | **PASS** 12/12 | a nonzero component sum, refuting GS-ZS. A6a produced component sums `[1,0,0,0]`, so the clause discriminates. |
+| **A3** `Σ_z G_{μν} = Σ_z z_μe_ν` and `M` antisymmetric (Lemma GS-FM) | **PASS** 12/12 | a mismatch, refuting GS-FM. A6b and A6c both produced mismatches. |
+| **A4** the signed totals are the same for two different primitives | **PASS** 12/12, **non-vacuous** (the reversed-axis primitive differs pointwise) | equality holding only because the two primitives coincided — the clause reports VACUOUS in that case, and it did not. |
+| **A5** sign coherence of `𝒫e` | **0 / 12 coherent → SIGN-MIXED**; and `e = d*δ_q` gives `𝒫e = δ_q`, a single `+1`, **coherent** | the opposite: 12/12 coherent would have recorded SIGN-COHERENT-GENERIC. One counterexample settles it, and there were twelve. |
+| **A6 designed-FAIL control** | **FIRED on all three clauses** — A6a (non-co-closed input: exactness FALSE, sums `[1,0,0,0]`), A6b (wrong primitive: totals ≠ moments), A6c (`M̃` not antisymmetric) | had any of the three passed, `gs1` would carry **no control** and A1-A3 would not be evidence. |
+
+**What `gs1` does NOT test, stated plainly.** It does not touch `Q_str^{(0→k)}`, `𝔽^{(0→k)}`, `ω^p`,
+`χ`, `Φ_k`, `Y^p`, `Z″`, the contraction, or the actual current `e = d*G' − (Q_str^{(0→k)})^TJ`.
+Every claim in §3.1, §3.2, §4, §5, §6 and §7 is a **derivation from quoted statements**, not a
+numeric result. `gs1` supports exactly three of them — Lemma GS-ZS, Lemma GS-FM, and Remark
+GS-CUM's two-sided sign finding — and nothing else. A reader must not read its PASSes any wider.
+
+**Post-hoc arithmetic, labelled.** §4.1's table of `[A(1−2ε) − B]/(1−ε)` at `ε = ½, ¼, 1/100, 0` and
+§4.2's three thresholds were computed in exact `Fraction` arithmetic **after** `gs1` ran and were
+**not** pre-registered. They are arithmetic on quoted constants (`1738C_j`, `3476C_j`, `6952C_j` from
+BFT_A.md l.2344-2346) and on §4.1's two-line algebra; they are not a gate and carry no control.
+
+**No FAIL to report in `gs1`.** One route is reported as FAILED in the mathematics: **(R3), the
+graded ball** (§6.5), which reproduces the `η ≤ η_0L^{-2k}` it was meant to avoid.
+
+---
+
+## 9. Outcome
+
+### 9.1 Outcome table
+
+| object | status | content |
+|---|---|---|
+| **`G_e` identified, with its free parameter** (§2) | **PROVEN-HERE** (reading of quoted statements) | `G_e = 𝒫e`, `e = d*G' − (Q_str^{(0→k)})^TJ`, `G' = χh_p − [Δ_0,χ]ω^p`; `𝒫` is a signed one-sided cumulative sum (BFT_A.md l.1879). It is a **one-parameter family in `r`**, while `Y^p` does not depend on `r`. **GS-F1 does not occur** |
+| **Proposition GS-ZERO** (§3.1) | **PROVEN-HERE** | at `χ ≡ 1` (`r = ∞`, admitted by Lemma LD at every `k, T`), `d*G' = 0`, so `J = 0`, `e = 0`, **`G_e ≡ 0`** and the residual sources vanish: `Y^p ≡ g^♮ + Z″` exactly. **The sign statement FACEB names as missing is available in the strongest form there is.** BFT_A writes the same collapse at l.3570-3573 (*"No bootstrap"*) |
+| **The `½` is a threshold, not a size** (§3.2) | **PROVEN-HERE** as a reading of BFT_A.md l.2344-2346 vs l.3568 | `Σ|G_e| ≤ 1738C_jL^{-c}`, `c` free. **GS-F2 occurs** — defect 2 of the session-25 brief, exactly |
+| **Lemma GS-ZS** (§3.3) | **PROVEN-HERE**; `gs1` A2 PASS, control fired | each component of a compactly supported co-closed 1-form sums to zero, so **`e` is provably sign-incoherent**. FACEB's lead (*"the funnel coefficients are already sign-coherent"*) is about a different object and **does not transfer** |
+| **Lemma GS-FM** (§3.3) | **PROVEN-HERE**; `gs1` A3, A4 PASS (A4 non-vacuous), controls fired | `Σ_z G_{μν} = Σ_z z_μe_ν`, antisymmetric: **the signed total `Σ_q G_e(q)` is an invariant of `e`, not an artefact of Lemma PC's axial gauge** |
+| **Lemma GS-MOM** (§3.3) | **PROVEN-HERE** | `M(d*G') = M(d*δ_p)` = the unit in `p`'s plane, exactly, for every `χ`. The second term `M((Q_str^{(0→k)})^TJ)` is **not computed** (out of scope) — the one piece of GS2 (ii) left OPEN |
+| **Remark GS-CUM** (§3.3) | **PROVEN-HERE** (construction) + `gs1` A5 | sign coherence of `𝒫e` ⟺ the partial sums of `e` are one-signed along each axial line, and it is axis-order dependent. `gs1`: **0/12** generic, but `e = d*δ_q` **is** coherent — so **no general no-go and no general theorem**. **GS-F3 occurs in its strong form** |
+| **GS2 verdict** | **SIGN-MOOT** primary; **SIGN-MIXED** subsidiary | the kernel can be taken `≡ 0`; where it is not, `e` is sign-mixed and `𝒫e`'s coherence is `e`- and axis-dependent |
+| **Proposition GS-WINDOW** (§4.1) | **PROVEN-HERE, elementary** | `|Φ_k(Y^p)| ≥ [A(1−2ε) − B]/(1−ε)`: the bootstrap admits a cancellation of **`2ε` as a fraction of `A`**, not of `A`. FB-BOOT's *"no lower bound at all"* is the value of this at the single degenerate point `ε = ½` |
+| **the cancellation, quantified** (§4.2) | **COMPUTED** (exact; post-hoc, on quoted constants) | ≤ `3476C_jL^{-c}` of `A`; 100 % at `L^c = 3476C_j`, 50 % at `6952C_j`, 1 % at `347600C_j` (**5 extra powers of `L` at `L = 3`**, and `T ≥ 2.78·10⁶C_j`), **0 % at `r = ∞`, free** |
+| **Corollary GS-SHARP** (§4.3) | **CONDITIONAL** on **(GS-A)** (`A` is `k`-free; ARGUED-and-measured in BFT_A, l.3583) and **(GS-B)** (`Φ_k` bounded on the `inv`-ball; supported by BFT_A.md l.3607-3608, **not written**) | at `r = ∞`, `|Φ_k(Y^p_{*,0})| ≥ A − B ≥ A/2` for `k ≥ k_0`. **Face (b)'s `n²` is SHARP for the actual response**, with an **unsized** `k`-threshold. **GS3 verdict NEITHER, pointing SHARP** |
+| **Clause (FB-CIRC)** (§5.2) | **STATED** with full quantifiers, merging BFT_A.md l.2595-2598 and l.3612-3613 | three arrows (α) response ⟸ gradient, (β) gradient ⟸ steps, (γ) steps ⟸ response, each quantified over configurations, orbit index, `k` and `T` |
+| **Proposition GS-BASE** (§6.1) | **PROVEN-HERE given (GI)**; independent of the ARGUED `|K'_xξ| ≤ C|x||ξ|` | `K'_0 = 0` **by definition** (BFT_A.md l.2761), so `D(N_B + 𝔑^0(0;B)) = 0` exactly: the first step's source is composite-co-closed and Theorem COF applies **unconditionally**. **The base step is free** |
+| **Lemma GS-STEP** (§6.2) | **PROVEN-HERE** | `∇𝔉(x_{j+1}) = 𝔑^0(x_j) − 𝔑^0(x_{j+1}) − Γ_E^TΓ_Ex_{j+1}`, exactly, at every step. **Arrow (β) is an identity, not an asymptotic** |
+| **Proposition GS-NOCIRC** (§6.3) | **PROVEN-HERE** as an implication | Clause (FB-CIRC) is **not circular**: arrow (γ) quantifies over the ball where its consumer needs only the orbit, and the orbit is anchored where the hypothesis is free. **GS-F5 occurs on arrow (γ)** |
+| **Proposition GS-TRANSIENT** (§6.4) | **ARGUED** (uses `‖K'_x‖ ≤ C‖x‖_𝔐`, ARGUED at BFT_A.md l.2984) | what is left is the **first `J ≈ 2k·log L/log(1/θ)` steps** — `O(k)` steps of a geometric iteration, not `L^{2k}` of contraction. FACEB's step count is right; its reading of the cost is not |
+| **(R1) slice-preserving solve** (§6.5) | **PROVEN** as a reduction | removes `Γ_E^TΓ_Ex_j` from Lemma GS-STEP identically; does not close the transient alone |
+| **(R2) iterate the composite-co-closed projection** (§6.5) | reduction **PROVEN-HERE given Theorem COF**; `(FP♯′)` **OPEN** | kills `D` at **every** step, so Theorem COF's `k`-, `T`-, `Γ`-uniform `Cη²` holds throughout and the transient disappears. The cost is one finite-dimensional statement: **one scalar per level-`k` box**, with `Σ_X Q_X = 0` already. **This is l.3613's real content** |
+| **(R3) graded ball** (§6.5) | **FAILED, reported** | reproduces `η ≤ η_0L^{-2k}`. The open-closed shape is available and buys nothing |
+| **(R4) a weaker smallness that suffices** (§6.5) | sufficiency **PROVEN-HERE**; `(TENT-Q)` **OPEN** | the consumer needs **dipole neutrality of the level-`k` root charges against a `(1+R)^{-2}` profile**, not a norm bound on `∇𝔉`. Strictly weaker, finite-dimensional, and already named as `(TENT-Q)`/`(NEUT-box)` |
+| **GS5 verdict** | **CIRCLE-PARTIAL** | the circle does **not** close; arrow **(γ)** is the weakest and is false as stated; the residual gap is the self-map property over `O(k)` steps |
+| **Proposition GS-ONELEG** (§7) | **PROVEN-HERE** for the structural claim (sizes stay ARGUED in their files) | the two `L^{2k−3}` defects are **one pairing `n²⟨D(S), Ψ^p⟩` split by root level**, the split forced by `σ ∈ Λ_*` vanishing at the level-`k` roots. **ONE-LEG-HOLDS**, upgraded from FACEB's ARGUED. **GS-F6 does not occur** |
+| **the `g_0` / `u` correction** (§2.2) | **PROVEN-HERE** | §38.7's `g_0` is `d*(χω^p)` / `y^p`, **not** YSUP's `⅛d*δ_p` (the claim is YSUP.md l.229-230's own, repeated by FACEB §4.2); `g_0 = 8Δ_0^{-1}u` at `r = ∞`. FB-CLASS unaffected; `A` must be carried as a symbol. **GS-F4 occurs, as expected, changing no conclusion** |
+
+### 9.2 Net on the open accounting
+
+**Nothing is added to or removed from the open set.** `(TENT-osc)`, `(TENT-Q)`, `(NC-Γ)` and
+`(PW-ℓ¹)` all stay exactly as their files leave them. What changes is **which object the lane should
+be attacking**, and the removal of one named missing input that was never missing.
+
+### 9.3 The single biggest thing this changes
+
+**The item FACEB flags as *"below it, and much cheaper"* — a sign statement on `G_e` — is not an open
+item.** It is discharged by Proposition GS-ZERO at a parameter value BFT_A already uses, and the
+inequality it was supposed to rescue (`|Φ_k(Y^p)| ≥ A − B`) follows with no cancellation at all. The
+sharpness of face (b)'s `n²` for the actual response therefore reduces to **(GS-A) + (GS-B)**, two
+one-line statements about `Φ_k(y^p)` and `Φ_k` on the `inv`-ball, neither of which is about the
+bootstrap.
+
+**And the item FACEB flags as the real obstruction is not circular.** Arrow (γ) is false as stated,
+the base step is free by a definition, and the remaining content of BFT_A.md l.3613 is **(R2)**: a
+projected iteration plus `(FP♯′)`, whose cost is one scalar per level-`k` box. That is the same
+finite-dimensional object as `(TENT-Q)`/`(NEUT-box)`, which HANDOFF.md already carries at priority 5.
+**So face (b), the `Γ_E` defect, l.3613's parenthetical and `(TENT-Q)` are one item, and the single
+leg is `D(S)`.**
+
+---
+
+## 10. FOR OTHER FILES (not edited)
+
+**To the lead.**
+1. **T55-O's cheap half is discharged, and it was never a sign question.** Proposition GS-ZERO: take
+   `χ ≡ 1` in Lemma LD and `G_e ≡ 0`. The `½` at BFT_A.md l.3568 is U4′'s threshold, not U4′'s size
+   (`1738C_jL^{-c}`, l.2345) — **defect 2 of the session-25 brief, in a file written today**.
+2. **T55-O's structural half is not a circularity.** `K'_0 = 0` **by definition** (BFT_A.md l.2761),
+   so the contraction's first step meets a composite-co-closed source and Theorem COF applies with
+   no `(NC-Γ)`. Clause (FB-CIRC) §5.2 and Proposition GS-NOCIRC §6.3. What is left is an `O(k)`-step
+   transient and `(FP♯′)`.
+3. **BFT_A.md l.2595-2598 and l.3612-3613 are the same proposal** in two parentheticals, one in
+   §28.12 and one in §38.8. They should be merged into one named target when l.3613 is promoted.
+4. **One thing I did against the brief's steer, per D6.** The brief framed item 1 as *"establish the
+   sign structure of `G_e(q)`"* and said the funnel coefficients' sign coherence is *"a lead worth
+   following"*. I followed it far enough to **refute** it (Lemma GS-ZS: `e` is provably
+   sign-incoherent; and the funnel coefficients are a different object), and then stopped computing
+   signs, because the parameter that makes `G_e` zero is already in the lemma. I report this rather
+   than deliver a sign table nobody needs.
+5. **Two assumptions of mine a reviewer should break first.** (i) That Lemma EX's degradation at
+   `r = ∞` (shell count `≈ k + log_L T`, BFT_A.md l.1928-1930) affects only the *upper* bound on
+   `Φ_k(g^♮)` and not the lower bound FB-BOOT wants — §3.1. If that is wrong, Proposition GS-ZERO
+   still holds but §4.3 loses its `T`-uniformity. (ii) `Lip(𝔑^0; 𝔅_η) ≤ C_Nη` in §6.4, which I did
+   not verify; it is the ordinary statement that `𝔑^0` is the quadratic-and-higher part, but it is
+   not written as a lemma anywhere I looked.
+
+**To BFT_A.md's owner (lane A).**
+- **l.3568 should read `Σ_q|G_e(q)| ≤ 1738C_jL^{-c} ≤ ½` and name `c`**, or §38.7's reader will take
+  `½` for the kernel's size, as FACEB did. The same applies to l.2272 and l.3094.
+- **Case A / Case B is a choice about Theorem Y's constants, not about the decomposition.** l.3573's
+  *"No bootstrap"* holds at `r = ∞` for **every** `T`, and l.3613's consumer does not need Theorem
+  Y's constants. Worth one sentence at l.3556.
+- **l.1713 and l.1904's *"`G' = 0` for `r = ∞`"* is literally false** — at `χ ≡ 1`,
+  `G' = χh_p = h_p ≠ 0`. What holds is `d*G' = 0` (and `⟨G', dZ_0⟩ = 0`), which is all any use needs
+  and is what makes `e = 0`. One-word fix, but a reader who checks it will think Lemma LD is wrong.
+- **l.2761's `K_0 = −Ξ`, `K'_x := K_x − K_0` is load-bearing** far beyond its remark: it gives
+  `K'_0 = 0` exactly and with Lemma CD makes the contraction's first source composite-co-closed. It
+  deserves to be stated as a corollary of Lemma CD rather than left in a definition.
+- **§38.6's *Reading* and BFT_B §35.7 quantify over different source classes** (general
+  non-composite-co-closed rows, `D` at all root levels, vs Setting LIN^cc, `D` at level-`k` roots
+  only). A reader combining them will double-count. §7 here.
+
+**To BFT_B.md's owner (lane B).**
+- §35.7's Proposition COF-res and BFT_A's Lemma RC are **one pairing split by root level**, the split
+  forced by `σ ∈ Λ_*`. Your l.4122 already says *"by the same mechanism"*; §7 here proves the
+  structural half. If you carry it, carry it as `n²⟨D(S), Ψ^p⟩` with `Ψ^p` defined piecewise.
+
+**To FACEB.md's owner (T55-G).**
+- **§4.3, §9.3 and §10's second bullet to YSUP should be withdrawn or restated.** *"A sign or
+  positivity statement on `G_e(q)` is exactly and only what is missing"* is not right: at `r = ∞`
+  there is no `G_e`, and at finite `r` the admissible cancellation is `2ε ≤ 3476C_jL^{-c}` of `A`,
+  not `A`. Proposition FB-BOOT's algebra is correct; it is evaluated at `ε = ½`, which is U4′'s
+  threshold and not U4′'s bound.
+- **§4.2's *"the very field BFT_A §38.7 takes as `g_0`"* is wrong** (§2.2 here) — though the
+  sentence is YSUP.md l.229-230's, not yours. FB-CLASS is
+  unaffected; the identification of `A` with `2.4768·10⁻³` is not.
+- **§6.4's reading of the cost is too pessimistic.** *"`2k·log_L` of contraction"* is a count of
+  **steps** of a geometric iteration, which a Banach argument supplies for free; the cost is the
+  self-map property over those steps, which is a different and smaller thing.
+- **§3.3's FB-ONE-LEG is right, and provable** — see §7.
+
+**To YSUP.md's owner.**
+- The `Z″₀`-cancellation attack point is **not** a sign question. At `r = ∞` the decomposition is
+  `Y^p ≡ g^♮ + Z″` with no bootstrap term, and what is needed is `B < A`, i.e. (GS-A) + (GS-B) of
+  §4.3. (GS-B) is one line from BFT_A.md l.3571-3572 plus l.3607-3608 and is worth writing.
+- **l.229-230's *"the very field BFT_A §38.7 takes as `g_0`"* is an erratum** — §38.7's `g_0` is
+  `d*(χω^p)` (l.3557) or `y^p` (l.3570), and `g_0 = 8Δ_0^{-1}u` at `r = ∞`. Theorem YS-CORE (ii)'s
+  exact `−65/26244` is unaffected; what is affected is the step that reads it off as a bound for the
+  **response**, which is the step FACEB §4.3 found conditional.
+- Note that **`Φ_k` is being evaluated on two different fields** in the two files: `⅛d*δ_p` (yours,
+  exact, `−65/26244`) and `d*(χω^p)` / `y^p` (BFT_A's, measured, `−0.0022`). They differ by
+  `8Δ_0^{-1}`.
+
+**To PROOF.md's owner.** Nothing here moves the tally. If `(TENT-Q)` is carried, it should be
+carried **with** l.3613's `(FP♯′)` and `(NEUT-box)`: §7 and §6.5 (R2)/(R4) say they are one
+finite-dimensional item — one scalar per level-`k` box, already of total zero.
+
+---
+
+## 11. Discipline
+
+**Order and times.** §1 PRE-STATED (statements only; no constant from this session), **first edit of
+this file, 2026-10-28T21:46:35Z** → `checks/gs1_criteria.md` **21:52Z**, with pre-registered PASS/FAIL
+verdicts, a designed-FAIL control and an explicit statement of what the check cannot test, and **no
+constant derived in this session** → `checks/gs1_pc.py` → `checks/gs1_out.txt` (ALL PASS;
+`gs1_err.txt` empty) → §2 onwards, 21:53-21:58Z. Exact integer / `Fraction` arithmetic in plain
+python; **no numpy, no BLAS, no machine-wide numeric lock taken**; runtime under 2 s. **No git
+command was run.**
+
+**Disclosure, made in §1.1 before any derivation.** I read BFT_A §21-§23, §27, §28.12, §31.1,
+§33.3-§33.5, §38.6-§38.9 and BFT_B §35.6-§35.8 **before** writing the PRE-STATED section, and formed
+three suspicions during that reading. Every target and failure mode bearing on them is marked
+**(c)** and carries **no pre-registration weight** (GS-F2, GS-F3, GS-F5, and parts of GS3 and GS5).
+This is the lane's own convention (BFT_A §21.3).
+
+**Statuses.** No claim in this file is marked PROVEN-HERE unless its proof is written out above from
+hypotheses that are quoted with a `file:line`. **CONDITIONAL claims name their input**: Corollary
+GS-SHARP names (GS-A) and (GS-B); Proposition GS-TRANSIENT is ARGUED and names the ARGUED input it
+uses. **One route is reported FAILED** ((R3), §6.5). The designed-FAIL control **FIRED on all three
+clauses**. Two pieces are reported **OPEN and not attempted**: `M((Q_str^{(0→k)})^TJ)` (§3.3) and
+`(FP♯′)` (§6.5).
+
+**Re-derivation rather than citation, per the session-25 rule.** The load-bearing steps I take from
+FACEB are *not* taken from FACEB: Proposition FB-BOOT's algebra is rebuilt in §4.1 with the
+coefficient free; FB-ONE-LEG is rebuilt in §7 from Lemma RC and Proposition COF-res directly; and
+FB-NBHD's circularity is rebuilt in §5.2 from Lemma CD, `Φ_E`'s definition and `𝓛_E` directly. Three
+of FACEB's statements are corrected here (§2.2, §4.1-§4.3, §6.4) and one is confirmed and
+strengthened (§7).
+
+**What a hostile reviewer should attack first, in this order.**
+1. **§3.1 / Proposition GS-ZERO** — whether `r = ∞` is genuinely admissible *at the point of use*
+   in §38.7, as opposed to admissible in Lemma LD. I claim it is, because `Y^p` does not depend on
+   `r` and FB-BOOT is a statement about `Y^p`; if §38.7's consumer secretly needs Theorem Y's
+   `r = L^{k+c}` constants in the same breath, my §4.3 weakens (but Proposition GS-ZERO survives).
+2. **§6.1 / Proposition GS-BASE** — whether the contraction may be started at `x_0 = 0`. If the lane
+   starts it elsewhere (at the free solution, say), the base step is free only if `K'` is small
+   there, which is a bound and not a definition.
+3. **§6.4 / Proposition GS-TRANSIENT** — the `Lip(𝔑^0) ≤ C_Nη` input, and whether `θ` is bounded
+   away from 1 uniformly in `k`. If `θ → 1` with `k`, the step count `J` is not `O(k)`.
+4. **§7 / Proposition GS-ONELEG** — whether `σ(Π_EY^p)` and `Φ_k(Y^p_{*,0})` really are the
+   restrictions of one function, or whether the two files' `D(S)` differ by more than their source
+   class.

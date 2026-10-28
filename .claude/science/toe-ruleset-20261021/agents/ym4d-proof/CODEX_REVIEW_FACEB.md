@@ -104,3 +104,147 @@ The inference about all fixes changes quantifiers. The exact fractions are those
 
 The very identity quoted at FACEB.md:144 and YSUP.md:167 is Phi_k(d delta_c)(c)=3^(-4k)-1. Its values -80/81 and -6560/6561 at k=1,2 differ by -80/6561. Units do not depend on k, but a dimensionless value can. This is a dependency error, not a change in the meaning of n: n=3^k is consistently identified. The stronger profile-class example v_k=n^(-2)u in R3 shows directly that the allowed k-dependent input family may supply the missing smallness. Neither unit conversion nor an upper profile hypothesis supplies a lower bound on that family.
 
+## R5 — Baseline prices check, but the doubled-currency break-even is wrong
+
+**Verdict: CONFIRMED** for the displayed rounded P(k), 151.610 decades, k*=160.380, and k*=42.552 at FACEB.md:505-531. **Verdict: REFUTED** for k* approximately 81.7 at FACEB.md:536-537. **Claim status: CONDITIONAL** on X1, X2, and the frozen reference constants; **PROVEN** for the arithmetic formulas below.
+
+I used rational interval arithmetic, not Decimal or floating point. For x>=1 and t=(x-1)/(x+1), sum the first 80 terms of
+
+    log(x)=2 sum_{j>=0} t^(2j+1)/(2j+1),
+
+and bound the positive remainder by 2 t^161/[161(1-t^2)]. I used log(10)=3 log(2)+log(5/4), and divided positive intervals with outward bounds. This gives the following rigorous intervals (decimal endpoints are rationals):
+
+| quantity | enclosing interval |
+|---|---|
+| log10(3) | [0.477121254, 0.477121255] |
+| DXprime decades | [151.609771637, 151.609771638] |
+| epsilon1 decades | [39.173925197, 39.173925198] |
+| kstar DXprime | [160.379708394, 160.379708395] |
+| kstar epsilon1 | [42.552379043, 42.552379044] |
+| kstar doubled currency | [80.939854197, 80.939854198] |
+| P(10) | [8.111061330, 8.111061331] |
+| P(42) | [38.646821632, 38.646821633] |
+| P(160) | [151.247437746, 151.247437747] |
+| P(183) | [173.195015463, 173.195015464] |
+| P(917/5) | [173.576712467, 173.576712468] |
+| P(1778/5) | [337.897272592, 337.897272593] |
+| P(356) | [338.278969596, 338.278969597] |
+
+For the baseline C_Omega=1 and omitted C_SR, the exact symbolic formulas are
+
+    D = 152 - log10(307/125),
+    k* = (3 + D/log10(3))/2,
+    2P(k)=D  =>  k*_double = (3 + D/[2 log10(3)])/2
+                           = (k* + 3/2)/2.
+
+Thus the doubled-currency break-even is approximately 80.940, not 81.7. The first violating integer levels are 161 in the original currency and 81 in the doubled currency (given these reference assumptions).
+
+The table is mathematically meaningful as conditional bookkeeping. Without X2 it says nothing about exhausting the programme ceiling: eta, DXprime's bounded quantity, and the particular epsilon_1 have no verified common unit or identification. Without X1 it does not even establish this self-map's constraint. The claims that X1/X2 occur nowhere in the full repository are NOT-VERIFIED under the read limit; their absence from the inspected derivation is explicit. The source identity/value of epsilon_1, C_SR, and C_Omega is also NOT-VERIFIED outside the quoted assumptions.
+
+Keep the constants live: if DXprime=(307/125)10^(-152)/C_Omega and the eta ceiling is 3^(3-2k)/C_SR, then
+
+    k* = [3 + {152-log10(307/125)+log10(C_Omega)-log10(C_SR)}/log10(3)]/2.
+
+The tabulated 160.380 freezes C_Omega=1 and omits log10(C_SR); it is not a fixed programme threshold when either constant is an output. Likewise a change of currency eta proportional to g_0 rather than g_0^2 must transform the entire ceiling and any prefactor, not merely relabel its units. The homogeneity observation at FACEB.md:475-479 is correct as a conditional algebraic statement: decreasing a nonzero eta cancels out of C(k)eta^2<=C_SR eta^2 and cannot repair nonuniform C(k).
+
+## R6 — FB-NOEST is not three identities plus one universally attained inequality
+
+**Verdict: REFUTED** for the claimed inference and the unrestricted factor-8 comparison at FACEB.md:234-255, 405-418, 646-648, 671. **NOT-VERIFIED** for the separate TG-TV/TG-OPT theorems and their admissible competitor class, whose source is outside this review's read budget. **Claim status: GAP** for FB-NOEST as written; **PROVEN** for the distinctions and corrected error estimate below.
+
+**What is an identity.** With Q_X(S)=sum_l <d(ev chi_X),S_l>, one obtains
+
+    sum_X Q_X(S) Phi_X
+      = sum_l <sum_X Phi_X d(ev chi_X),S_l>
+      = sum_l <d(ev sum_X Phi_X chi_X),S_l>.
+
+This re-derives TQ-INT (TENTQ.md:263-268, 355-361). FACEB step 1 uses D(S)(c_X), whereas TQ-INT uses Q_X(S); the identification between the root charge and the tent-weighted charge is imported, not proved in the inspected text. The original COF-res identity therefore remains NOT-VERIFIED here, rather than being accepted from its status label.
+
+**What is an inequality.** TENT-TV explicitly invokes the triangle inequality (TENTQ.md:283-287). Going from the exact pairing to TQ-osc also requires
+
+    |sum_l <F_l,S_l>| <= sum_l |<F_l,S_l>|
+                         <= sum_l ||F_l||_1 ||S_l||_infinity,
+
+followed by the norm conversion and the bound of a sum of corner deviations by a multiple of oscillation. These can be packaged as one corollary but remain different opportunities for strictness. FACEB step 4 is a decay upper bound plus an asserted dominance conclusion, not a third identity. In particular its core Theta(C_0) is precisely the response lower bound that section 4.3 leaves OPEN.
+
+**Attainment has quantifiers.** A one-corner Phi and c=0 give Psi=Phi_X chi_X; the triangle inequality in the global TENT-TV bound is then equality. For arbitrary unconstrained slot fields, choosing S_l proportional to sign(F_l), with one nonzero slot, attains the dual norm ||F_l||_1. These facts establish possible saturation in a large source class. They do not say that the nonlinear physical source has that sign pattern, or even that this pattern is admissible after all row constraints.
+
+Conversely, a nonzero co-exact source slot S_l=delta W has <d(ev Psi),S_l>=<dd(ev Psi),W>=0 for every Psi while its source norm is positive. It can be supported on one interior plaquette of a coarse cell. Thus a nonzero oscillation can coexist with zero residue. No finite universal ratio, in particular 8, compares the upper bound to the actual object for all such sources. FACEB itself recognizes this null subspace at lines 355-357. A worst-case operator-norm sharpness claim needs explicit suprema and an admissible joint extremizer; it is not a pointwise lower bound and has not been established for the actual source here.
+
+**The claimed multiplicative asymptotic lacks a charge hypothesis.** Write a=Phi_(X_p). If all other corner values have magnitude <=C C_0 n^(-2), the exact identity gives only
+
+    | |T_p(S)| - n^2 |Q_(X_p) a| | <= C C_0 sum_(X!=X_p) |Q_X|.
+
+Converting this to FACEB's (1+O(n^(-2))) requires control of
+
+    C_0 sum_(X!=X_p)|Q_X| / |Q_(X_p) a|.
+
+No such bound is supplied. A neutral charge vector (Q_core,Q_1,Q_2)=(0,1,-1), with potential (a,n^(-2),0), has residue 1 while the claimed leading product is zero. Neutrality does not exclude it. Such a charge pair can be realized in the unconstrained chain-source model by a unit path between two non-core corner roots: the pairing with d chi_X telescopes to their root indicator differences. This is a counterexample to the claimed deduction from those algebraic/decay premises, not a claim to have constructed a nonlinear Yang-Mills row.
+
+**The lower-bound domain is missing.** FACEB describes the remaining freedom as a level-0 extension of prescribed root values (lines 408-414), then imports a bound for `every admissible competitor`. Prescribed root values alone do not imply ||d mu||_1>=n^3 osc at l=0: an extension supported only at one root, with value a, has ||d mu||_1=8|a| on a large 4D torus, whereas the claimed lower bound is n^3|a| (729|a| when n=9). A block-average constraint could exclude this extension. It must be stated and matched before using TG-TV. I do not assert that this extension satisfies the uninspected TG-TV hypotheses.
+
+Therefore FB-NOEST does not establish that all estimator improvements for the actual source/response are impossible. The much narrower class obstruction in R2 survives independently: fixed exact witness values cannot be reduced by sharpening an upper estimate on that same witness.
+
+## R7 — Gate audit: a normalization-breaking mutation passes A1-A6, including the designed failure
+
+**Verdict: REFUTED** for the claimed normalization/admissibility corroboration and the strong independence language at FACEB.md:573-575 and checks/fb1_criteria.md:21-23, 30. **CONFIRMED** for the limited cochain identities and the recorded integer A1-A6 outcomes. **Claim status: PROVEN** for the explicit blind spot; **NOT-VERIFIED** for using these checks to decide any funnel, response, or estimator no-go.
+
+I executed only the first 161 lines' integer definitions of fb1_bianchi.py in memory, then called its core with the stated seed. I did not run its Decimal section or write a test file. The unmodified core reproduced A1-A5 acceptance and the designed-control counts (6,25,7). I then replaced every plaquette-incidence coefficient c by 2c and repeated the same clean and one-sign-flip tests:
+
+| incidence | A1-A5 criteria satisfied | A6 control fires | nonzero witness values | corrupted A1/A2/A3 counts |
+|---|---|---|---|---|
+| D1 | all five | yes | {-1,+1} | 6 / 25 / 7 |
+| 2 D1 | all five | yes | {-2,+2} | 6 / 25 / 7 |
+
+The second incidence violates the registered unit-coefficient plaquette convention and, after the claimed 1/8 normalization, violates the C_0=1 profile at distance 1: 1/4>1/8. Yet every integer gate clause, including its designed-failure control, accepts it. This is not an error alleged in the unchanged script's coefficients; it is an executed counterexample to the gate's power to certify the imported normalization. A4 prints support/values at script lines 149-150 and 182, but its acceptance expression at line 183 checks only three booleans. It does not assert support=4, coefficients={-1,+1}, the location relative to the block root, or any profile inequality.
+
+| gate | what it can decide | unresolved or dependent part |
+|---|---|---|
+| A1 | can detect d1 d0 != 0 on sampled inputs; local symbolic cancellation proves the correctly defined identity | not orientation/scale fidelity to an external convention; finite sampling is not the universal proof |
+| A2 | can detect a defect in the transpose-application routine or a nonzero d1 d0 pairing | algebraically <d0 phi,d1^T W>=<d1 d0 phi,W>; the same incidence defines both sides, so it is not independent evidence for the incidence normalization |
+| A3 | checks that the selected co-boundary is orthogonal to tested gradients | translation to site 0 is harmless for cochain algebra but cannot validate the witness's root placement for h_0 |
+| A4 | excludes a zero witness and a non-co-closed witness | does not enforce the numerical support values or admissibility used by FB-CLASS |
+| A5 | proves a generic pairing need not vanish | says nothing about the funnel or physical source class |
+| A6 | detects the chosen single-entry sign corruption | does not detect coherent scale errors, whole-row orientation reversals, or a wrong source/response identification |
+| A7 | can reject insufficient numerical agreement between two precisions | a coherently wrong formula, coefficient, constant identity, or currency gives the same answer at both precisions and passes |
+
+The A7 source (fb1_bianchi.py:212-243) compares two evaluations of the same formula with the same constants. It cannot adjudicate X2 or catch the separate 81.7 error, which is not one of its rows. Decimal logarithms are rounded transcendental evaluations, not exact rational arithmetic; the `exact decimal` description at FACEB.md:502, 566 and script:209 is inaccurate. This review instead used the rigorous rational intervals in R5. The recorded 50-versus-100-digit discrepancy itself was not independently reproduced and remains NOT-VERIFIED.
+
+The strongest honest gate conclusion is: the supplied integer implementation passes several consistency checks and one local corruption control. That is useful, but cannot confer the claimed proposition statuses. This is precisely the `could this check have failed in the way that matters?` distinction.
+
+## R8 — The no-go reuses d and delta at different form degrees
+
+**Verdict: REFUTED** for the deduction at FACEB.md:355-385, 365-370, 722-724 that the tested orthogonality exhausts the source/response derivative or gauge routes. **Claim status: PROVEN** for the type distinction and counterexamples; **OPEN** for whether any such route improves the full response.
+
+Pin the symbols to their actual maps:
+
+    d0: vertices -> links,        delta1=d0^T: links -> vertices,
+    d1: links -> plaquettes,      delta2=d1^T: plaquettes -> links.
+
+fb1_bianchi.py:54-65 defines d0 and d1. Its line 129 uses delta2 to construct the link witness; line 145 uses delta1 to test its divergence. What d1 d0=0 actually proves is
+
+    <d0 phi, delta2 W>=0,       delta1 delta2 W=0.
+
+The root source D(S) in FACEB.md:377 is instead a sum of pulled-back delta1 S_l, hence a scalar. It does not belong to the co-exact-link subspace im(delta2) merely because it is called a divergence. A single source link S from a to b gives delta1 S=delta_b-delta_a, and <Phi,delta1 S>=Phi(b)-Phi(a), which need not vanish. Thus `D(S) is entirely inside the second` at line 367 conflates different degrees. The relevant cancellation requires S_l=delta2 W_l, not just the tautology that its scalar divergence is a divergence.
+
+On the response leg, differentiating a 1-form means d1 Y. The identity Phi_k d0=A-ev concerns inserting an exact 1-form; it is not a formula for recovering Phi_k Y from d1 Y. In fact d1 u!=0, so curvature differentiation does see the witness. Orthogonality to im(d0) is not proof that an arbitrary scalar funnel functional annihilates all gauge additions. From FACEB's own quoted identity,
+
+    Phi_k(u+d0 mu)-Phi_k(u)=A mu-ev mu,
+
+which is generally nonzero regardless of delta1 u=0. The total source pairing may compensate this change; checking that is the separate, uninspected TG-PRICE theorem, not a consequence of the witness's being co-exact. Therefore `there is nothing for a gauge to act on` at line 724 is an invalid second proof of that theorem.
+
+Finally, `annihilates exactly the exact part` omits harmonic 1-forms on a periodic torus. A nonzero constant 1-form is d1-closed but not the gradient of a periodic scalar, since its integral around a winding cycle is nonzero. This does not alter the local witness calculation; it refutes the stated exhaustive kernel description.
+
+## R9 — The positive reframing retreats from its quantified headline and never repairs it
+
+**Verdict: REFUTED** for the positive headline as a conclusion of the presented evidence (FACEB.md:632-648) and for its downstream reuse at 683-689, 699-707, 732-746. **CONFIRMED** that lines 639-645 disclose a real limitation. **Claim status: GAP** for the broad no-go; **PROVEN** only for the explicitly constructed profile-class obstruction under the stated model.
+
+The headline says `Every k-uniform bound on T_p must come from the D(S) leg`. That universally excludes an actual-response property making Phi_k small. The next paragraph acknowledges exactly that unclosed possibility and switches to `a no-go about available routes`. These are different claims. The retreat is visible, rather than hidden, but the headline and several outcome/dispatch statements retain the stronger quantifier. FB-CLASS only says the two named inequalities do not imply a uniform bound for every field satisfying them. It cannot show that `no such property is currently available` in all lane hypotheses, and it cannot identify the only possible future repair.
+
+An honest positive equivalent is: for every k>=2 there exists a co-closed C_0=1 profile field on the specified nondegenerate torus and a cell for which n^2 osc(Phi_k v)=(65/26244)3^(2k). Equivalently, for every finite C there is a k and such a v/cell violating that C. That statement retains the same class and quantifiers as the scoped negative claim. It does not mention the actual response or forbid response-specific cancellation.
+
+The five named routes are not five independently exhausted mechanism families: FACEB.md:336-338 itself says three reuse one identity and a fourth is its homotopy. R6 and R8 identify unproved transitions in their purported closure. Under docs/ai_methodology/skills/no-go-discipline/SKILL.md N1, merely naming five routes cannot certify the five-family requirement. N4/N5 require matching the residual and resolution: a class witness and a single scalar funnel coordinate are not a lower bound for the physical response or total f_0. N7's actionable counter-route is already present: prove a structural restriction or cancellation for the actual named Y_* (or bound its total forcing as in R1), and test its coarse-cell oscillation. This remains unclosed.
+
+N2/N3/N6: two summands at different roots are not thereby independent obstructions, and neither the quoted `sigma` size nor the absence of cancellation with the remaining response has been established here. X1/X2 and the precise source/representative constraints are explicit unresolved premises, not evidence of impossibility. N8's cross-cycle/ledger search was not performed because the owner's read boundary forbids it. No formal no-go packet acceptance or retained status is asserted; the user authorized only this scoped review, not ledger edits, commits, or an audit workflow.
+
+The original ARTEFACT/SHARP-AND-FATAL decision table (FACEB.md:62-68) is capable of expressing an inconclusive result, so it is not intrinsically vacuous. Its application is the problem: SHARP-AND-FATAL requires an input satisfying the lane's hypotheses, while lines 685-689 substitute the enlarged two-condition class and concede that actual sharpness is OPEN. For the actual-response target, the honest outcome is NOT-VERIFIED / OPEN; for the explicitly defined larger class, the corrected counterexample is available.
+

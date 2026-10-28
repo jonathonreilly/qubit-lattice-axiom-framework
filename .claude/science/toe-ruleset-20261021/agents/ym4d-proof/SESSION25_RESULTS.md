@@ -806,3 +806,290 @@ expectation rather than measurement; the stat-verified ordering holds, the quote
 T55-R is attacking it at positive σ. A second worker (T55-S) now attacks the same clause from the
 k-factor side, since T55-I establishes that **no per-level sharpening can remove it** — so the repair,
 if there is one, is not local.
+
+---
+---
+
+# CODEX WAVE — four independent hostile reviews, gpt-6-astra at max effort
+
+**Provenance, recorded per the workhorse skill.** External CLI worker profile, `codex exec` v0.165.0
+(updated from 0.159.1 this session), model **gpt-6-astra**, `model_reasoning_effort = max`, verified live
+in each run's banner. Launched per `docs/ai_methodology/skills/workhorse/SKILL.md` §"External CLI Worker
+Launch & Reliability" (closed stdin, prompt from a spec file, captured log, bounded read list, one
+deliverable, incremental writes). Four workers, four deliverables, no git. **The skill's own preference
+is the reason for this wave:** *"prefer primary and checker from different model families to reduce one
+source of correlated error."* Every review before this one in sessions 24 and 25 was Claude checking
+Claude.
+
+**Headline: the cross-family wave refuted things the same-family reviews had passed, and it refuted them
+mostly on FORM — the kind of error a reviewer sharing the author's habits does not see.**
+
+## CX-1 — `CODEX_REVIEW_GAPZ.md`. **The whole obstruction-count dispute used an invalid form of argument.**
+
+**F3 is the finding of the wave.** NBG_B's three-line refutation, NBG_ADJ's adjudication of it, and the
+lead's two PROOF.md corrections all turn on comparing **proof statuses**:
+
+> *"P has a proof" and "Q has not been attempted" are compatible with P = Q, P ⇒ Q, Q ⇒ P, or neither.
+> They describe knowledge, not truth.* If P = Q were established, a proof of P would reveal an
+> overlooked proof of Q — it would not contradict Q's earlier workflow label.
+
+**This gate cannot decide the proposed identity even if its status reports are perfectly current.**
+Verdict REFUTED, and it applies to all three Claude workers at once. §12's claim that both horns
+establish §6's verdict is **false as an argument**.
+
+**F2 — the non-identity survives, but for a completely different reason, and the reason is sharper.**
+Theorem 4.2′'s **M bounds response kernels**, not the composite Hessian inverse. Exact scalar witness:
+F_a(x,b) = a(x−b)²/2 with a = 1/n gives x(b) = b and dx/db = 1 for **every** n while F_xx^{−1} = n —
+**full observation of the data response leaves the inverse unbounded.** So *"background analogue of M"*
+is precisely the assertion that needs proof and cannot supply its own. **Plus a literal M collision**:
+LINEAR_PACKAGE l.219-221 gives 4.2′ **its own M**, explicitly noting reuse of 4.2's letter, and l.237-238
+re-points subsequent M to 4.2′. Neither has been defined to equal a composite inverse norm M_Z.
+
+**F1** — Z = 1 **is** a legitimate specialization (confirming NBG_ADJ against the lead's worry), and the
+reviewer supplies a **flat zero-mode check needing no spectral estimate**: on zero top datum, zero
+quadratic energy forces dB_0 = 0 and B_{i+1} = QB_i; writing B_0 = dλ + a with a constant harmonic
+1-form, root covariance gives B_i = d(ev^{(i)}λ) + L^i a, the top equation kills a, and Λ(B) = 0 removes
+the remaining null direction. **Finite-size nondegeneracy, PROVEN — not a k,T-uniform lower bound.**
+But *"the class considered"* specifies **no complete set, normed domain, zero-mode convention or
+coercivity normalisation** — NOT-VERIFIED.
+
+**F4** — the "convenient TWO" **reverses a reduction**: the actual theorem is (H1 ∧ H2 ∧ H3) ⇒ (N-bg),
+which is not (N-bg) ⇒ (GAP-Z). And **H3 is a full background response package with constants uniform in
+k, T and the field, including localisation and decay** — not a bare inverse bound. Counts require a
+counting convention **and** a dependency proof; the prose supplies neither.
+
+**F5 — the four mismatches do not establish four barriers**, each being a GAP rather than a proof of
+non-implication — and the **norm/decay row is refuted by an exact counterexample on ℤ⁴**:
+H = 9I − Σ_{μ=1}^4 (S_μ + S_μ^*) has gap ≥ 1, and in the exp(m·dist) weighted norm each shift costs
+e^m, giving ‖H^{−1}‖ ≤ 1/(9 − 8e^m) for e^m < 9/8. **A local operator with an unweighted inverse bound
+CAN produce a weighted sup bound with decay.** So the row NBG_B said *"alone kills the direction at any
+background"* kills nothing; the arrow is **NOT-VERIFIED, not false.**
+
+**F6** — Theorem TRANSP is **narrower than its proposed consumers** (at Z = Z^off(V), m = 0, T ≥ 17,
+composite-co-closed sources, ε ≤ ε_1 and 8c_N C_1 ε ≤ ½) **and inherits ARGUED steps** — its step 3
+consumes §41.5(ii), called ARGUED and lacking the required O(m) constant, and step 5 consumes (N1-e),
+called ARGUED. **"PROVEN given exactly two inputs" is REFUTED.**
+
+**F7 — independently refutes (HESS-rel)**, by the same mechanism the Claude worker found
+(**see CX-5 below: two model families, same refutation, same witness structure**) — *gauge covariance is
+conjugacy, not equality*; for a nonconstant pure gauge the off-diagonal block goes from −I to −R while
+f_k = 0, so H_{1^g} − H_1 need not vanish. **And it adds the condition-number point**: the needed
+condition is δ := ‖H_0^{−1}(H_Z − H_0)‖ < 1, and **a bound on the inverse does not bound this**. Exact
+witness: H_0 = diag(1, n), E = diag(−1, 0) — ‖H_0^{−1}‖ = 1 and ‖E‖/‖H_0‖ = 1/n → 0, **yet H_0 + E is
+singular for every n**. *"The weights remove it"* is not such an estimate.
+
+## CX-2 — `CODEX_REVIEW_KN.md`. **The adoption's arithmetic survives; three claims around it do not.**
+
+**F1 — REFUTED the "633 distinct transporters".** 633 is the count of **(y, axial-path) labels**, which
+the reviewer proves exactly (Σ_k C(4,k)2^k k! with multiplicities 24/k!, histogram {1:384, 4:192, 12:48,
+24:9}). **But those labels are not distinct transporters**: RLARGE l.989-991 says a μ-directed rectangle
+is degenerate, so for y − c_X ∈ {−e_μ, 0, +e_μ} all **72** indexed terms give the same straight S_c,
+merged weight **72/1944 = 1/27, absent from the claimed list.** Independent enumeration of the freely
+reduced word gives **475 reduced transport paths** with weights {1/1944, 1/486, **1/324**, 1/162,
+**5/486**, **2/81**, **1/27**} — three of them new — and a second counting derivation
+Σ_{k=0}^3 C(3,k)2^k k!(1 + 2k) = 475 reproduces the histogram without the algorithm. **Convexity
+survives every merging**, so H1 stands; the refinement was wrong.
+
+**F2 — REFUTED a stale minimum inside the patch.** KN_ADOPT §8.1's *"it would take ε_1 > 814.587 for the
+other branch"* is false: after η_1 = ε_1/117, a_RS = (ε_1²/N)·min{1/27378, κ/256}, so **the branch
+boundary is κ = 128/13689, independent of ε_1 and N** — there is no ε_1 crossover at all. **The criteria
+file imported κ = 1 with no supporting definition in the permitted ranges.** *(The Claude worker
+ARS_BIND independently flagged the same constant, κ = 128/13689 = 9.35·10⁻³ — **two families, two
+routes, same number.**)*
+
+**F3 — REFUTED both the lead's framing AND the Claude review's replacement.** The live ceiling at
+RLARGE l.616-618 uses **a**, not a_RS, so *"replacing a by a_RS/625 and declaring l.618 false is a change
+of object, not a correction of its arithmetic"* — **independent cross-family confirmation of ARS_BIND.**
+And the replacement baseline fares no better: *"its own phrase 'lane's own best proven route' is not
+established by the PROVEN-HERE list at RLARGE l.628"* — the permitted text supplies neither RS-lin's
+proof nor a live v3 use of its joint pricing. **The live gain is NOT-VERIFIED / GAP — neither 82.1406
+nor 2.3033.**
+
+## CX-3 — `CODEX_REVIEW_TUNIF.md`. **The theorem survives its hardest attack. Three surrounding items do not.**
+
+**F1 — TU-0/TU-1/TU-2/TU-3 CONFIRMED, status PROVEN**, after an explicit **isolated-fibre attack** —
+the exact line of attack the lead's spec asked for. The reviewer rebuilt the division estimate
+independently (rotating by e^{−ia/2} gives Re ≥ (2/π)e^{−η′}, hence |e^{iw} − 1| ≥ (2/π)e^{−η′}|w|,
+then Cauchy), and confirmed **Φ ≡ 0 by analytic continuation on the open set e^{ip_γ} ≠ 1** — noting
+that *"evaluation at p_γ = 0 first would invalidate cancellation, but that is not the stated proof."*
+At all-resonant momentum a constant nonzero plaquette **is** a closed non-exact fibre field, **but it is
+not the restriction of a closed analytic family of the required kind** — so it is not a counterexample.
+It also confirms **no extra power of ℓ is hidden** in the spread correction, with explicit estimates
+|μ| ≤ (1+κ)ℓ²G, |b_1| ≤ (1+κ)ℓG, |b_β| ≤ 2(1+κ)ℓG. **Boundary flagged:** admissibility as a cell 1-form
+is **not** admissibility as a nested chain reparametrisation fixing all level-k roots — a separate
+obligation in TU-6.
+
+**F2 — REFUTED the "gate unsatisfiable by the truth" excuse, and this one matters for the lane's own
+discipline.** A pure pole A/ε over four decades grows by **exactly 1000**, satisfying the original
+≥ 1000 threshold; it is the **positive regular part** that pushes the ratio below. The reviewer builds
+an **exact input of the actual construction** (ℓ=3, d=4, a_1(u) = 1_{u_1=2}, the script's own twists)
+for which max|b| = 8/21 corrected and 4/(7ε) uncorrected, growth exactly 1000 — **the original gate
+passes**. For seed 777 it reproduces the recorded 947.5525 exactly. **So the FAIL was real and the
+diagnosis was wrong**: an over-demanding threshold for *this* pole plus its regular part, not a gate that
+no pole can satisfy. **And the replacement gate is itself GAP**: it only checks lower bounds on ratios,
+and **a double pole has successive ratios 100, satisfying every inequality in it** — *"must approach 10"*
+is implemented as neither convergence, monotonicity, nor an upper bound.
+
+**F3 — the m = 0 necessity CONFIRMED for the named consumer; the general inference REFUTED.** The
+reviewer grants the sign-pattern argument for a scalar row, **but refutes the transport step**: the
+decay factors concern the **responses at the vertex**, while the decay restriction is on the **coarse
+input**, and an unweighted ∞→∞ bound does not transport it. Counterexample: (RY)(p) = Y(x) for all p has
+‖R‖_{∞→∞} = 1 uniformly in T while the local cubic on three unit decay-admissible inputs equals T^d.
+**So the m > 0 case is not vacuous — it is a meaningful weaker theorem whose weighted transport
+hypotheses are unproved.** No hidden m > 0 substitution was found in the main statement.
+
+**F4 — REFUTED the mean-subtraction arithmetic. A whole constant is missing.** TUNIF l.392 assumes
+|mean b| ≤ 𝔠_0 L^{−k}c_{η′}T^{−d}; multiplying by the dT^dL^{dk} level-0 links gives
+**d·𝔠_0·c_{η′}L^{(d−1)k}, not the stated d·c_{η′}L^{(d−1)k} — the lost factor is 𝔠_0.** A safe
+replacement is d(2𝔠_0c_{η′} + 1)L^{(d−1)k}. **So the displayed all-level 𝔠_L is not established by this
+arithmetic**, and M inside 𝔠_0 is a free imported bound. (The reviewer also checked and **withdrew** an
+apparent 𝔠_0 definition collision between l.365 and l.578 — they agree — and said so explicitly in the
+finding rather than leaving the heading standing.)
+
+## CX-4 — `CODEX_REVIEW_FACEB.md`. **The no-go survives; the "one cheap missing condition" does not.**
+
+**R1 — REFUTED FB-BOOT's "no lower bound at all".** From y = a + Gy with ‖G‖ ≤ ½ the reviewer derives
+**M ≥ (2/3)max(A − B, 0)** alongside M ≤ 2(A+B), **with no sign hypothesis on G needed** — sharp, since
+G = −½, z = 0 gives y = (2/3)a and G = +½ gives y = 2a. *"FACEB inserts its rough upper bound into a
+pointwise reverse triangle inequality and mistakes that failed estimate for nonexistence of lower
+estimates."* **And positivity of G alone is insufficient anyway** (a = (1), z = (−1), G = (0) cancels
+exactly). **So the "single cheap missing condition" — the sign statement on G_e that T55-O was launched
+to establish — is not established as the missing thing.** Also: FACEB's A must be a supremum in p or
+proved p-independent; l.296 defines only a single value.
+
+**R2 — the witness is admissible and co-closed, CONFIRMED by explicit reconstruction** (the four-link
+boundary tabulated, δu = 0 at each vertex, du = 1/2 at the plaquette, profile C_0 = 1 under an explicit
+centred axial convention). The reviewer **re-derives the funnel from scratch** — h averaging over
+t ∈ {−1,0,1}⁴ and 24 coordinate orders, Q_n over offsets with weight n^{−4} — gets φ_1 = −1/54 and
+φ_2 = −17/13122, and **proves termination** (for n_i ≥ 9 both transverse members of each oppositely
+signed pair lie in the same centred block, so Q_{n_i}u = 0 identically) **rather than inferring it from
+spot checks**. Hence Φ_k(u) = −65/26244 for k ≥ 2. **But the decimal certificate is rounded the WRONG
+WAY: 0.0024768 − 65/26244 = 89/2050312500 > 0.** Use 65/26244 or 0.0024767.
+
+**R3 — 243/260 CONFIRMED exactly** and free of the neighbouring normalisation mixture; **YSUP l.249's
+mixed ratio is 486/65**, and the fix is to correct its total to −130/6561. **But "any fix must change
+h_0" is REFUTED as too strong** — v_k = n^{−2}u is admissible with the same profile constant and gives
+n²osc = 65/26244, so a class counterexample does not force an h_0 redesign for an identified response
+family.
+
+**R4 — REFUTED "dimensionless ⇒ k-independent".** The very identity FACEB quotes is
+Φ_k(dδ_c)(c) = 3^{−4k} − 1, whose values **−80/81 and −6560/6561 at k = 1,2 differ**. *"Units do not
+depend on k, but a dimensionless value can."*
+
+**R5 — the price table CONFIRMED by rigorous rational interval arithmetic** (log via the (x−1)/(x+1)
+series, 80 terms, explicit remainder bound; log₁₀3 ∈ [0.477121254, 0.477121255]; DX′ ∈
+[151.609771637, 151.609771638]; k\* ∈ [160.379708394, 160.379708395]) — **except the doubled-currency
+break-even, which is 80.940, not 81.7**, with the exact formula k\*_double = (k\* + 3/2)/2. And the
+standing caveat is sharpened: **160.380 freezes C_Ω = 1 and omits log₁₀(C_SR), so it is not a fixed
+programme threshold when either is an output.**
+
+---
+
+## T55-L — `HESSREL.md` §H0-§H9 (755 l.) + `checks/hr1_*`. **(HESS-rel) REFUTED. The cheap route to (GAP-Z) is dead.**
+
+**PROVEN-HERE, with an exact integer witness, and independently confirmed by CX-1 F7 from another model
+family.** **Lemma HR-1:** at a **pure gauge**, from gauge invariance of 𝔉_k (PROOF l.6605) plus Lemma
+CONJ, Hess𝔉_k(Z) − Hess𝔉_k(1) = [M_G, Hess𝔉_k(1)]M_G^{−1} ≠ 0 **while f_k = 0 exactly** — and the
+configuration is **the lane's own lift**, Z^off(1^g) = 1^g by (CovLift) covariance (BFT_B l.3845). Not
+rescued for curved lifts (BNA-F4).
+
+**The extension fails at the first term, for an independent reason:** d_Z − d = (Ad_Z − 1) is
+**connection**-sized while B1/B2 are **curvature**-sized, so NBG_A §A4.3's *"the rest is the replacement
+of d, Q by d^Z, Q^Z, which is what B1/B2 price"* is **false** — B1 prices d_Zd_Z, B2 prices root
+covariance, **neither prices d_Z − d**.
+
+**The three adjectives re-derived from the definitions, and all three hold — but two needed repair.**
+*Slot-wise*: holds for B2 literally, but **for B1 the stated reason is wrong** — the "operator already
+present in that slot" would be d∘d, **identically zero**, so there is no 𝒪; the correct form is
+E_{B1} = e_j·(ι_j ∘ ev_c). *Weight-free*: holds **only given an unstated hypothesis (W-lev)** — that the
+weight families are indexed by level alone, not form degree (B1 maps 0-forms to 2-forms); lane A's
+ω_l = L^{θ(k−l)} satisfies it. *Factor-k-free*: holds, by geometric level decay. **O4 does not occur.**
+
+**The Neumann series converges — and that is the problem.** Proposition HR-3 (PROVEN-HERE as an
+implication) needs only M_0‖E‖ < 1, in a window **ϑ^Y − ϑ^𝔐 ≤ 2**, wider than anything the lane assumes.
+**So the series adds no exponent condition: 100 % of the content is (HESS-rel), which is false.**
+
+**Two hidden inputs surfaced. (FWD-0)** — ‖Hess𝔉_k(1)‖_{𝔐→Y} ≤ Λ_0 — **is stated nowhere in the lane**,
+and the series is controlled by the **condition number** Λ₀M₀, not M₀. *(CX-1 F7 found the same gap
+independently, with the witness H_0 = diag(1,n), E = diag(−1,0).)* And **B2's size is CONDITIONAL on
+(C_g-θ)** (BFT_B l.4547), **a conditionality NBG_A §A4.3's quotation drops.**
+
+**Lane B had a reason, recorded three times, and it is not §41.5(i).** Lane B did not decline the Neumann
+series — it **uses** it locally (§41.4 step 4, §41.5(ii)). The recorded reason is **S11-F6** (BFT_B
+l.4377, pre-stated session 11, OCCURS at l.4746): *"needs more than a Neumann series because the
+background connection is small only in the frame."* **And the route is not unwalked** — it is lane A's
+own (BFT_B l.103; Theorem BA, BFT_A l.89/205), valid on 𝒞_glob and needing **(UHL) + (SL-cov)** outside
+it, **both OPEN**. §41.5(i)'s premise is F_Z ≠ 0, so it **is** silent on flat-with-holonomy — that part
+of NBG_A's reading was right, and is now established.
+
+**Mid-flight correction handled explicitly, not re-labelled (§H9.2).** The worker built HR-3 against
+(G♯_0-field) because the lead's brief said so; after the lead relayed NBG_ADJ A6 it named the right
+object **(FLAT-𝔐)**, status unrecorded — **and stated that its own result is independent of it**, since
+§H4 concerns the **left-hand side**: *even if T55-Q finds (FLAT-𝔐) PROVEN, the route still fails.*
+
+**Disclosed defect in its own criteria:** hr1-A tested d_Z on **0-forms** (the FP block), not the Wilson
+block on 1-forms; criteria amended **before** the corrected script existed, originals kept and not
+re-run, corrected gates labelled post-hoc. **hr1-A′ fails harder:** E_W has 1536 nonzero entries and
+‖E_Wu‖²/‖(d*d)u‖² = 8/10 — **the "perturbation" is 0.894 of the operator it perturbs, at zero
+curvature.**
+
+**New wall: (FLAT-REF)** — a **global** lattice Uhlenbeck/Coulomb gauge with a flat reference,
+**(UHL)-strength, OPEN**. The repaired reduction is (GAP-Z) ⟸ (FLAT-REF) + (FLAT-𝔐 over the flat
+moduli) + (HESS-rel′) + (FWD-0). **NBG_A §A4.3's *"(N-bg) adds no paper: the paper is the flat
+(G♯_0-field)"* is NOT SUPPORTED, on three independent grounds.**
+
+---
+
+## T55-N — `QFIX.md` (608 l., §1-§12) + `checks/qf1_*`. **q was never chosen. Fixing it is worth 24 decades.**
+
+**Fourteen consumers of q found. THIRTEEN want q large; exactly ONE wants it small** — θ_G ∝ 1/q, and
+**it is not even the binding entry of its own minimum until q > 5.57·10²⁶**. **AGAINST THE LEAD (D6):**
+the brief asserted that the opposition between consumers *"is the actual content of the decision"*;
+the worker **pre-registered that as (X1) before looking** and **refuted it**.
+
+**Where the current value came from, and neither reason is live.** **SQ l.1621 fixed q := 8 as a
+convenience** (it makes ϑ = ½ exactly) — **provably the worst admissible value**. **EPSSTAR §7.1 moved
+it to 12 as the FIRST q under a rounded proxy** — *"answering 'is there any admissible q?', not 'which
+one'."* **The admissible range, re-derived: q > 4 structurally, floored at q ≥ 8 by the one clause using
+ϑ = 4/q ≤ ½, and there is NO upper constraint anywhere.** CONST_T §4.2 l.307-308's *"all hold for every
+q > 4"* is **false** on (4,8). **And the inherited "q ≥ 11" fails at its own lower endpoint** — it tests
+a rounded proxy that is itself a q = 8 evaluation; against the real condition **C_D(11) = 7.74·10¹⁵ >
+6.7·10¹⁵ at c_N = 2, so q = 11 fails by ×1.16.** The consumer floor is **q ≥ 12**.
+
+**The objective.** a_RS ∝ ε_1⁴ (unique integer power, fitting all five ARS_FIX rows to 0.0002 %) and
+ε_1^cut ∝ C_D^{−2}, so **a_RS ∝ C_D^{−8} — one decade of C_D is eight decades of margin.** Curve against
+DX′: q = 8 → −52.66, q = 11 → −36.72, q = 12 → −34.47, q = 32 → −29.20, q = 100 → −28.75, q = 1000 →
+−28.59, sup −28.575. **Total lever 24.089 decades; 8.148 of it above q ≥ 11; q = 12 leaves 5.898 on the
+table.** It is a **knee, not a peak**: q = 32 costs 0.63, q = 100 costs 0.17, q = 1000 costs 0.017.
+
+**Argmax q = 1000 by the pre-registered rule; the optimum is at the endpoint q → ∞ and nothing caps q.**
+The cap is **C_T's saturation**, and at the plateau **98.66 % of Ĉ is the cut-off term and 98.57 % is
+288·c_g alone** — so the named next targets are **c_g = 5699.63** and, before it, the **P-max vs P-ct
+β-power** (STAR_CONST §6.4, ARGUED), **worth 13.15 decades — enough to dissolve the ε_1 edit entirely.**
+
+**New ε_1^cut target: ε_1 ≤ 3.8·10⁻⁴³** (q = 1000, c_N = 2, C_3 = 1), 3.5·10⁻⁴³ at q = 100. Against
+EPS1_EXEC's 9.38·10⁻⁴⁵ that is **+1.610 decades**, and **the forced lowering falls from 4.854 to 3.244
+decades.**
+
+**Two corrections to inherited numbers.** (a) **EPSSTAR l.525 is inconsistent with its own l.521 + l.527
+by exactly √10**: t_pr ≥ 9.52·10⁻³⁵ not 3.01·10⁻³⁵, so **C_D ≤ 1.78·10¹³ not 3.17·10¹³** — unfavourable,
+×1.78. (b) **S4-16's "(0.5-0.9)·10³" is 2.022·Λ(8)·c_N — the band is c_N**, and the prefactor itself
+falls 17 % by q = 12 and ×1.72 by the plateau. Restoring it moves four downstream figures: C_D(12) =
+4.05·10¹⁵ not 4.76·10¹⁵; EPSSTAR's ×1.99 a_bad margin becomes ×2.75; TAUFLAT's 9.707-decade shortfall
+becomes 9.428; EPS1_EXEC's 1.690-decade spread becomes 2.037.
+
+**Two new symbol collisions, neither in SYMBOLS.md: two different `q` inside ONE formula for C_D**
+(SQ l.1524's decay ratio in B_0 against the Moser exponent in A_0), and **θ_0^{SQ4}'s binding entry has
+flipped from θ_G to θ_ε** since ε_* = 1e-4 was ruled inadmissible.
+
+**Biggest thing this changes:** it converts a 1.69-decade bookkeeping question into **24.089 decades of
+DX′ margin**, and **collapses (H2)** from 6.365 decades of ε_1^cut at q = 12 to **1.038 at the plateau**
+— so the conditionality EPSSTAR called *"the difference between a number and no number"* largely
+evaporates once q is parked. **It does not repair a_RS**: the supremum is −28.575 against an unlowered
+baseline of −15.617.
+
+Checks QF1-1,2,3,3b,4,5,6,7,9 PASS; **QF1-8 FAIL** (= EPSSTAR l.525 not self-consistent), labelled
+POST-HOC-HAND. **Designed-FAIL control fired**: freezing C_T and Λ gives objective spread exactly 0
+(NO-LEVER) against 24.089 live. **Own disclosed FAIL:** `qf1_q.py` squared t_pr_need in the DESC-ε
+ceiling; script and output kept byte-unaltered, re-run as `qf1b`, scope of the error stated. A second
+hand-computed figure was wrong and is corrected by a post-hoc `qf1c`.

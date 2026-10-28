@@ -205,10 +205,28 @@ neighbourhood is the 3-plaquette/3-link set (|𝒩_S| = 3), not CONST_T's 486**.
 A_sγ_s = 36·c_s·486 instead of 36·c_s·3, i.e. the *base* of the source term rises ×162 and
 C_T = 8.05·10¹⁵ (`EPSSTAR.md` l.590). **It is worth 6.365 decades of ε_1^cut because it multiplies the
 base that a raises to the power a** — so **(H2) and q act on the same term, and (H2)'s value therefore
-falls as q rises**: at a → 1 the ×162 in the base is ×162 in Ĉ's source term, which is itself only
-1.34 % of Ĉ at the plateau. **At the plateau, (H2) is worth ≈ 0.9 decades of C_T, not 3.18.**
-[COMPUTED from the term split, `qf1b_out.txt` "[ADDED] Where C_T sits at the plateau".] **Status:
-ARGUED** — I did not re-derive STAR_CONST's Lemmas A1-A3; I read them, and `HANDOFF.md` lists
+collapses as q rises**: at a → 1 the ×162 in the base survives only in a term that is 1.34 % of Ĉ.
+[**COMPUTED (exact)**, `checks/qf1c_posthoc.py` / `qf1c_out.txt`, **POST-HOC** — see the correction note
+below:]
+
+| q | C_T at \|𝒩_S\| = 3 | C_T at \|𝒩_S\| = 486 | (H2) is worth |
+|---|---|---|---|
+| 12 | 5.28835·10¹² | 8.05087·10¹⁵ | **×1522.4 = 3.183 dec of C_T = 6.365 of ε_1^cut** |
+| 100 | 1.39600·10¹² | 7.44616·10¹² | ×5.334 = 0.727 dec of C_T = **1.454 of ε_1^cut** |
+| → ∞ | 1.38509·10¹² | 4.57338·10¹² | ×3.302 = 0.519 dec of C_T = **1.038 of ε_1^cut** |
+
+The q = 12 row **independently reproduces `EPSSTAR.md` l.563's "(H2) is worth 1523× at q = 12"** to
+four figures, from a harness that shares no code with `checks/es1_eps.py`.
+
+> **So raising q does not only move the number — it dissolves most of (H2)'s leverage.** At q = 12
+> (H2) is the difference between a number and no number; at the plateau it is worth **1.04 decades of
+> ε_1^cut**, i.e. **4.15 decades of DX′-margin instead of 25.5.**
+
+**Correction to my own first draft of this subsection, disclosed:** I first wrote "(H2) is worth ≈ 0.9
+decades of C_T at the plateau" from hand arithmetic. **That was wrong**; the computed value is **0.519**
+(and 0.727 at q = 100). The hand figure is superseded; the table above is the computed one.
+
+**Status: ARGUED** — I did not re-derive STAR_CONST's Lemmas A1-A3; I read them, and `HANDOFF.md` lists
 STAR_CONST as UNREVIEWED.
 
 ---
@@ -428,6 +446,11 @@ Scripts: `checks/qf1_q.py` (first run) and **`checks/qf1b_q.py`** (re-run under 
 untouched). Outputs: `qf1_out.txt`, `qf1_out_prec60.txt`, `qf1b_out.txt`, `qf1b_out_prec60.txt`.
 Exact `Fraction`/`Decimal` only; no numpy, no BLAS, single thread, no numeric lock taken (rule 6).
 
+A third script, **`checks/qf1c_posthoc.py` / `qf1c_out.txt`, is POST-HOC and carries no pre-registered
+verdict.** It exists only because I quoted two hand-computed secondary numbers (§3.3, §12.4) and had to
+confirm or correct them; **one of the two was wrong and is corrected in §3.3**. It incidentally
+reproduces `EPSSTAR.md` l.563's "(H2) is worth 1523×" as 1522.4 from independent code.
+
 | id | verdict | evidence |
 |---|---|---|
 | **QF1-1** reproduction | **PASS** | all 14 EPSSTAR rows within **0.022 %**; B(4), B(8) within 3·10⁻⁵ and 1·10⁻⁵ of `CONST_T.md` §3.1 |
@@ -553,8 +576,12 @@ The **9.707-decade** energy shortfall and the **4.854-decade** ε_1 shortfall ar
 C_D = 0.9·10³·C_T(q = 12). With the prefactor's own q-dependence restored they are **9.428 / 4.714** at
 q = 12 and **6.479 / 3.240** at the q-plateau. Suggested: carry both as functions of q beside their
 numbers, exactly as l.566-567 instructs for η_♭. Option **A stays dead** at every q (QFIX §6: the
-plateau is 98.57 % c_g, so the c_s room `EPSSTAR.md` l.608 prices at q = 12 is ≈ 0.001 decades once q
-is spent — the 0.578 decades `EPS1_EXEC.md` §4.5 found over q **is the q-lever itself, not room in c_s**).
+plateau is 98.57 % c_g). Priced exactly [`checks/qf1c_out.txt`, POST-HOC]: the room between
+c_s = 411.92297 and `EPSSTAR.md` l.608's floor c_s ≥ 319.2 is **0.1166 decades of C_T at q = 12**
+(reproducing TAUFLAT's 0.080 against its rounded 4.4·10¹² floor), **0.0067 at q = 32** and **0.0014 at
+the plateau** — so **the 0.578 decades `EPS1_EXEC.md` §4.5 found "over q" is the q-lever itself, not
+room in c_s**, and once q is spent option A has ≈ 0.001 decades, not 0.578. Option A stays dead either
+way; the point is that the two were never additive.
 
 ### 12.5 For `EPS1_EXEC.md`'s owner / whoever lands (C4)
 

@@ -649,3 +649,107 @@ package's own method rather than outside it — **ARGUED**, with uniformity over
    Its only exponent condition is `ϑ^Y − ϑ^𝔐 ≤ 2` between the `Y` and `𝔐` level weights (my symbols,
    §H5.2). So the `θ_w` repair, whatever it concludes, does not constrain this route and this route
    should not be cited as a consumer of `θ_w`.
+
+---
+
+## §H9 CORRECTIONS (appended 2026-10-28 21:55:52 UTC; §H0-§H8 stand unaltered as the record)
+
+Two corrections. The first is **to my own check**, found by me. The second is **to the input my brief
+named**, delivered mid-flight by the lead from `NBG_ADJ.md` (T55-K). Neither changes the verdict of §H4;
+the second strengthens it by removing a second leg the route was standing on.
+
+### H9.1 A defect in MY OWN criteria, and the corrected gate. Disclosed.
+Gate **hr1-A** (§H7) computed `d_Z^*d_Z − d^*d` with `d_Z` acting on **0-forms**. That is the
+Faddeev-Popov / chain-gauge block — a real lane object (it is exactly the normal operator of §41.4 step
+4's Neumann series, BFT_B.md l.4578) — but it is **not** the Wilson block of `Hess𝔉_k`, which has `d_Z`
+acting on **1-forms** (`½‖dB_0‖²`, PROOF.md l.6613). **So hr1-A as pre-registered tested an adjacent
+operator.** The amendment at `checks/hr1_criteria.md` (2026-10-28 21:53:48 UTC) records the defect and
+pre-registers the corrected gates **before** `checks/hr1_wilson.py` was written; `checks/hr1_flat.py` and
+`checks/hr1_out.txt` were **not** rerun and are **not** edited. The corrected gates are **POST-HOC**
+relative to the first run and are labelled so here.
+
+| gate (post-hoc) | rule | result |
+|---|---|---|
+| **hr1-D′** | PASS iff the configuration is exactly flat | **PASS** (0 of 64 non-flat) |
+| **hr1-A′** (Wilson block, 1-forms) | PASS iff `E_W := d_Z^*d_Z − d^*d = 0` | **FAIL (route refuted)** — **1536** nonzero integer entries; witness `‖E_Wu‖² = 8` against `‖(d^*d)u‖² = 10` |
+| **hr1-A″** (Feynman-fixed shape) | PASS iff `E_H := (d_Z^*d_Z + d_Zd_Z^*) − (d^*d + dd^*) = 0` | **FAIL (route refuted)** — **1024** nonzero entries |
+| **hr1-C1′** control | fires iff both are `0` for a constant gauge | **FIRED** |
+| **hr1-C2′** control | fires iff both are `0` in the abelian case | **FIRED** |
+| **hr1-C4′** control | fires iff `‖(d^*d)u‖² > 0` | **FIRED** (`= 10`) |
+
+Output `checks/hr1_wilson_out.txt`, stderr `checks/hr1_wilson_err.txt` (empty). **The corrected gate
+fails harder than the original**: on the Wilson block the "perturbation" has norm `√(8/10) ≈ 0.894` of
+the operator it is supposed to perturb, **at exactly zero curvature**. §H4's verdict is unchanged and is
+now exhibited on the right operator.
+
+### H9.2 The flat input named in my brief is the wrong object, and I say so rather than re-label
+`NBG_ADJ.md` **Finding A6** (ARGUED there) rules, against NBG_A §A4.3, that a Neumann series stated in
+the **𝔐 → Y** pair needs the flat inverse **in that same pair and on the composite slice**, whereas
+**`(G♯_0-field)` is stated "in the §33 pair" (BFT_B.md l.3840) on the per-level slice**. The required
+object is a **fourth** object — the adjudication's *flat 𝔐-pair composite-slice bound* — whose status is
+**recorded nowhere**, and which `FLATZ.md` (T55-Q) was launched to pin down. `FLATZ.md` did not exist
+when I checked (2026-10-28 21:54 UTC); I did not wait on it and I have not duplicated that work.
+
+**Stated plainly, as asked.** §H5's **Proposition HR-3 is structurally correct and its proof is
+unaffected** — it is the ordinary two-norm Neumann estimate and uses only that the forward and inverse
+bounds live in matching pairs. **But the input I named in it, `(G♯_0-field)`, does not exist in the pair
+the proposition is stated in.** I built the series against it because my brief named it; I am not
+re-labelling it silently. The correct reading of HR-3 is:
+
+> **Proposition HR-3′ (the correction).** Proposition HR-3 holds verbatim with `(G♯_0-field)` replaced
+> throughout by **(FLAT-𝔐)**: *the `Z = 1` composite-slice chain-Hessian inverse bound
+> `‖𝓛_1^{−1}‖_{Y→𝔐} ≤ M_0`, in lane B's own `𝔐 → Y` pair, `k`- and `T`-uniformly* — `NBG_ADJ.md` Finding
+> A6's fourth object, **status unrecorded**. Likewise **(FWD-0)** of §H1.1 is a statement about that same
+> operator in that same pair.
+
+**This correction does not rescue, weaken or alter §H4.** §H4 is a statement about the **left-hand side**
+of (HESS-rel) — the operator `E` — and is therefore **independent of which flat bound sits on the right**.
+Lemma HR-1 and Corollary HR-2 use no flat inverse bound at all. So:
+
+> **Even if T55-Q finds (FLAT-𝔐) PROVEN, the route still fails**, because `‖E‖` is not `O(f_k)` in any
+> pair, on any slice, for any comparison chain whose connection is zero. The two failures are
+> independent, and mine is the one that does not depend on an unrecorded status.
+
+Correspondingly, in §H6: **(G♯_0-flat)** must be read as *(FLAT-𝔐) uniformly over the flat chains* — the
+fourth object over the flat moduli — and the sentence in §H6.2 item 2 becomes stronger, not weaker: the
+repaired route needs an object that is not merely larger than `(G♯_0-field)` but **is not `(G♯_0-field)`
+at all**. §H6.3's observation survives intact and gains force: it says the *method* of LINEAR_PACKAGE
+Theorem 4.2′ (momentum-space continuation) is not blocked at a flat background with non-trivial
+holonomy — a statement about the method, not about which pair the conclusion is read in.
+
+### H9.3 NBG_A §A4.2's "two independent derivations": I never used it, and it is false
+The lead reports that NBG_A §A4.2's second leg is cited verbatim from BFT_B l.4594/l.4737 — the very
+claim under refutation — so the collapse is **single-sourced**. **Nothing in this file rests on NBG_A
+§A4.2.** §H2's answer to TL5 is sourced directly to BFT_B.md l.103, l.4377, l.4746, l.4578, l.4591 and
+BFT_A.md l.27, l.89-90, l.232, l.250-255, l.306, l.309 and PROOF.md l.6835, each read in place. §H4 rests
+on PROOF.md l.6605 and BFT_B.md l.4517-4527 (Lemma CONJ) plus my own re-derivation and arithmetic. The
+only thing I take from NBG_A is the **wording of the target** (§H0.2), which I quote in order to refute.
+
+### H9.4 Two further items from the concurrent files, checked against my own result
+1. **`THETAW.md` (T55-J).** `θ ≤ 1 − α` is **not** a proven constraint (`BFT_A.md` l.560-561, l.833-834;
+   the `¾` ceiling of l.396-397 is superseded), and `(α, θ)` are universally quantified over
+   `0 < α < θ < 1`. **I inherited no `¾` cap**: §H5.2's window is `ϑ^Y − ϑ^𝔐 ≤ 2` in my own symbols, and
+   with `ϑ^Y = θ < 1` and `ϑ^𝔐 ≥ 0` it holds with more than `L²` to spare. THETAW's warning that **θ is
+   three objects and α is two** does not bite here, because §H5.2 never reads a `θ` out of a file: it
+   derives the condition from the weight exponents it defines itself. The window stands.
+2. **`NBG_ADJ.md` §4.2.** (N-bg)'s live consumer needs only an `O(k)`-uniform (GAP-Z), not an
+   `O(1)`-uniform one. **This does not help the route.** The Neumann condition is `M_0‖E‖_{𝔐→Y} < 1`;
+   with `M_0 = O(k)` it becomes `‖E‖ ≲ 1/k`, and §H4 gives `‖E‖ = O(1)`, which fails for every `k`. A
+   weaker target does not repair a perturbation that is not small.
+
+### H9.5 Status after the corrections — unchanged where it matters
+**(GAP-Z): UNCHANGED, OPEN.** **(HESS-rel) as stated in NBG_A §A4.3: REFUTED** (Corollary HR-2,
+PROVEN-HERE; exhibited on the Wilson block by the corrected post-hoc gate hr1-A′, with both controls
+firing). **The route now fails for two independent reasons** — the perturbation is not curvature-sized
+(mine, §H4, independent of any unrecorded status), and the flat input it names is the wrong object in the
+wrong pair on the wrong slice (`NBG_ADJ.md` A6, ARGUED). The repaired reduction of §H6.1 stands with
+`(G♯_0-flat)` re-read as *(FLAT-𝔐) over the flat moduli*:
+
+> **(GAP-Z) ⟸ (FLAT-REF) + (FLAT-𝔐 over the flat moduli) + (HESS-rel′) + (FWD-0)**, all OPEN or
+> unrecorded, with **(FLAT-REF)** of `(UHL)` strength and therefore the wall.
+
+**Additions to the FOR OTHER FILES list below, from §H9:** item 2 of that list is unaffected; items 1 and
+4 should be read with `(G♯_0-field)` replaced by `(FLAT-𝔐)`; and for **`FLATZ.md` (T55-Q)**: *the object
+you are pinning down is needed by this route only on the right-hand side; HESSREL §H4 refutes the route
+on its left-hand side, so a PROVEN verdict from you does not revive (HESS-rel) as stated. It does revive
+the §H6.1 repaired reduction, whose remaining wall is then (FLAT-REF), a global `(UHL)`-strength gauge.*

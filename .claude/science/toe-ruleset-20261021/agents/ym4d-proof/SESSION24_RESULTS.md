@@ -1741,3 +1741,76 @@ omitted, and price ε_1 at values 14-57 decades BELOW this proposal**, so the pr
 against the lane's existing tables.
 *Sixth application of the check-power lens, and the first in which a worker caught its own gate being
 powerless, said so, and fixed it under a new id. That is now the fully-formed practice.*
+
+## YSUP.md — the averaging does NOT beat the core. (TENT-osc) is FALSE by exactly n² = L^{2k}.
+## Two disclosed FAILs kept unaltered, TWO designed-FAIL controls that both FIRED, one kept abort.
+
+### 1. Φ_k's exact form and normalisation (PROVEN)
+**Φ_k(v)(c_X) = Σ_{i<k}⟨K_i, v⟩** with **K_i := (Q_str^{(0→i)})^T h_i^T δ_{Y_{i+1}}**. **supp K_i is EXACTLY
+the level-(i+1) block of c_X** (both ends attained — the h-kernel's longitudinal range {-1,0} and the
+Q_str^T overhang n_i - 1 cancel to the block edge); **sup|K_i| = (10/81)n_i^{-3}** exactly;
+**‖K_i‖₁ ≤ (8/3)n_i** (exact asymptote 2n_i). Normalisation pinned against an outside formula with **no free
+parameter**: Φ_k(dδ_{c_X}) = L^{-dk} - 1 exactly at k = 1, 2 (TENTQ's TGAUGE). **No spurious power of n, and
+§35.7's L^{2k-3} = n²/27 is reproduced.**
+
+### 2. The exact block average — and the lead's guess was right for the wrong operator
+For |v| ≤ C₀(1+|b-p|_∞)^{-3} in d = 4: the **block-averaged axial line integral is Θ(n_i^{-2})** (measured
+16.72·C₀·n_i^{-2} at i = 6; ρ = 1.796, 1.901, 1.955 → 2). A **FULL** block average of the same field over
+the same block is **Θ(n_i^{-3})** (measured 30.68·C₀·n_i^{-3}, ρ → 3).
+**>>> "The brief's O(n^{-3}) is the right answer for the wrong operator."** *I briefed the full-average
+power; the object is an axial line integral.*
+
+### 3. The dimension count, and a THIRD independent appearance of d = 4 marginality
+An axial line integral averages **d - 1 = 3 transverse directions and SUMS along the fourth**: per-link
+weight n_i^{-(d-1)}, not n_i^{-d}; kernel ℓ¹ mass n_i, not 1. Against the profile,
+‖v‖_{ℓ¹(block)} ≍ 64n_i — **marginal and log-free, because d - 1 - 3 = 0 EXACTLY at d = 4.**
+*Third independent appearance of d = 4 marginality today, after NORMS §N5's cubic vertex and PLD §19's
+route (ρ1) (log-divergent at d = 4, convergent at d = 5). This is a structural feature of the problem.*
+**>>> But the power of the averaging is NOT what decides it, and my framing was wrong about which block.**
+Φ_k's level-i term reads only the **level-(i+1)** block, not the level-k block. **At i = 0 that block has
+side L = 3: the core is not a vanishing fraction of a 3⁴ block — it IS the whole of it, and the gain is 1.**
+Even a per-level gain of n_i^{-3} would leave Φ_k = Θ(1).
+
+### 4. The verdict, with an exact and striking lower bound
+**0.0024768·C₀ ≤ max_X|Φ_k| ≤ 3.89·C₀, uniform in k and T.** The lower bound is **exact**: for u = ⅛d*δ_p
+**the series TERMINATES — φ₃ = φ₄ = φ₅ = 0 exactly — so Φ_k = -65/26244 for EVERY k ≥ 2.**
+**(TENT-osc) needs ≲ n^{-2}: fails by exactly n². (Y-sup^loc) needs ≲ 1/n and the averaged currency also
+gives Θ(C₀): fails by exactly n.** The rescue fails in **both** currencies. **The far field is |·|^{-2}
+(PROVEN), so the failure is strictly a CORE phenomenon.**
+
+### 5. What is delivered anyway — and a project-wide dependency discharged
+**(TENT-Q) is k- and T-uniform OUTSIDE p's coarse cell:** |𝒯_p(S)| ≤ 128·C·C₀·R_c^{-3}·Σ_lπ_l(S_l)
+(ARGUED) — **shrinking the open item by T^d to the single core cell.**
+**>>> (Φ-conv) is PROVEN for this profile class** (ratio L^{-2} = 1/9; the prior exact 17/243 sits under
+it). *So [S24-flag 4]'s project-wide dependency is discharged for this class, one flag after it was raised.*
+
+### 6. The fallbacks
+**Hölder fallback (ARGUED): sound for face (a)** — it **removes (P0-sup) entirely** and lands on an object
+that is O(C₀) with one extra power of decay, so it is **not harder than (GT-sup)**. **No help at all for
+face (b)**, which carries the explicit n² of 𝒯_p.
+**Bonus (ARGUED, hole named): (GT-sup) may hold WITHOUT (Y-sup^loc)** — λ^E_X(x)(z) = ⟨A^X_{c_X} - A^X_z,
+x_0⟩ is a **marginal convolution of two |·|^{-3} kernels in d = 4**, giving O(C₀), **which recovers exactly
+the factor n that REVIEW_BFT_B_S9_S10's S10-14 measures GT-loc to lose.** Needs the **box Neumann
+Green's-function gradient profile**; not proven, not checked. *Lead: this connects directly to GREENT.md,
+running now on lattice Green's functions.*
+
+### 7. Check discipline — the strongest of the session
+**Two disclosed FAILs kept unaltered:** ys1 A2(c) (the worker had pre-registered ‖K_i‖₁ as an *equality*;
+only ≤ is derivable — **no statement uses the equality**) and ys1 A4 (band test inconclusive on the
+staircase field at i ≤ 3). Repaired under a new id with the **original criteria untouched**: ys1b B1-B5 all
+PASS. **TWO designed-FAIL controls both FIRED** (ys1 A7: corrupting off(l) gives 0 instead of -1/54;
+ys1b2 B5: flattening the longitudinal multiplicity changes every value — **and ys1b_power.py's own mass
+assertion caught it and aborted, and that abort is KEPT**). ys1 A1 **rebuilt all four of
+REVIEW_BFT_A_S8's S8-7 rationals exactly.**
+
+### 8. The one finite computation that decides face (b)
+**Proposition TGAUGE's price.** Φ_k is a representative artefact that can be **gauged to zero**; TENTQ
+prices the gauge as an **EQUAL** cost in the main pairing — **ARGUED, with NO μ CONSTRUCTED.** **With the
+|·|^{-2} profile now in hand the natural μ is explicit, so this is ONE FINITE EXACT COMPUTATION, and it
+decides whether face (b) is an obstruction at all.** *Lead: commissioned as TGAUGE_PRICE.md.*
+
+**Not claimed, stated by the worker:** no k-uniformity for (NC-Γ) (RS10-1's upstream factor k accepted and
+untouched); nothing nonabelian, at m > 0, θ > 0, or at a background; **no response field computed anywhere —
+every statement about Y^p_{*,0} is CONDITIONAL on its core being in the |z|^{-3} class** (BFT_A §38.7 /
+Theorem YH), **and whether Z″₀'s funnel could cancel g₀'s is the one place the negative verdict could be
+attacked** (flagged to lane A).

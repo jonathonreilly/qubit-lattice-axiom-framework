@@ -1,0 +1,100 @@
+e1_sweep.py -- exact Fraction arithmetic; Decimal for display only.
+Criteria: checks/e1_criteria.md (written first; contains no constant).
+
+=== transcription gate ===
+  eta_flat  = c_♭ t_pr²/C'⁴      = 3.52309E-88   (TAUFLAT §2.2 reports 3.52310e-88)
+  1/(c_♭/C'⁴)                    = 5.04991E+9   (TAUFLAT §2.2 reports 5.04991e9)
+  a_bad(E_t)                     = 2.49700E-85   (RLARGE l.93 reports ~2.5e-85)
+  a(E_t) = θ a_bad               = 1.04042E-86   (RLARGE l.612 reports ≲1.0e-86)
+  n_H(E_t)                       = 2.06700E+87   (RLARGE l.612 reports ≳2e87)
+  wrap(E_t)                      = 183.635   (RLARGE l.612 reports ≈184)
+  g2_crc(E_t) at ring x82        = 1.93346E-96   (HW l.2006 table reports 1.85835e-96)
+  a_ret(E_t)                     = 2.00509E-91   (HW l.1635 reports ≈2.0e-91)
+  eps_loc/eps_1                  = 0.007   ((TC) needs ≥ 0.136719)
+  n_star(E_t)                    = 4.25838E+80   (RLARGE l.611 reports 1.19e80 at 8.95e-40)
+  n_star(8.95e-40)               = 2.38643E+80
+  E_p vs t_pr/(2C'²√640)         = 1.0000009  (ratio to TAUFLAT's 9.38496e-45)
+
+=== e1-1 SCALING CENSUS (claimed exponent n: value ∝ ε^n) ===
+  E_t = 6.7E-40   E_p = 9.38496E-45   E_p/E_t = 0.0000140074  (-4.854 decades)
+  a_bad        RLARGE l.88         n=+2  2.4970E-85     -> 4.8993E-95      ratio 1.9621E-10    ok
+  a = θa_bad   RLARGE l.87         n=+2  1.0404E-86     -> 2.0414E-96      ratio 1.9621E-10    ok
+  a''          RLARGE l.1245       n=+2  5.0501E-80     -> 9.9087E-90      ratio 1.9621E-10    ok
+  a_ret        PLD l.1595          n=+2  2.0051E-91     -> 3.9341E-101     ratio 1.9621E-10    ok
+  eta_1        RLARGE l.64         n=+2  4.8709E-83     -> 9.5570E-93      ratio 1.9621E-10    ok
+  a_eta        RLARGE l.1248       n=+4  5.9314E-166    -> 2.2834E-185     ratio 3.8497E-20    ok
+  a_RS         RLARGE l.1020       n=+4  5.9314E-166    -> 2.2834E-185     ratio 3.8497E-20    ok
+  a_RS (KN-st) EXISTENCE l.1771    n=+2  8.1982E-84     -> 1.6085E-93      ratio 1.9621E-10    ok
+  eps_loc      RLARGE l.907        n=+1  4.69E-42       -> 6.5695E-47      ratio 0.000014007   ok
+  eta_1 (KN)   EXISTENCE l.1771    n=+1  5.7265E-42     -> 8.0213E-47      ratio 0.000014007   ok
+  n_star       RLARGE l.1017       n=-2  4.2584E+80     -> 2.1703E+90      ratio 5.0966E+9     ok
+  n_H          RLARGE l.612        n=-2  2.0670E+87     -> 1.0535E+97      ratio 5.0966E+9     ok
+  u_0          EXISTENCE l.3556    n=-2  1.4257E+80     -> 7.2663E+89      ratio 5.0966E+9     ok
+  g2_crc  x82  HW l.1639/2006      n=+2  1.9335E-96     -> 3.7936E-106     ratio 1.9621E-10    ok
+  g2_hist      HW l.2024           n=+2  5.0338E-97     -> 9.8768E-107     ratio 1.9621E-10    ok
+  g2_ret       HW l.2008           n=+2  3.6764E-98     -> 7.2134E-108     ratio 1.9621E-10    ok
+  g2_rlarge    RLARGE l.617        n=+2  1.0404E-88     -> 2.0414E-98      ratio 1.9621E-10    ok
+  g2_rs        RLARGE l.617 form   n=+4  5.9314E-168    -> 2.2834E-187     ratio 3.8497E-20    ok
+  -- invariant / log entries --
+  eps_loc/eps_1  (TC, RLARGE l.84)   0.007 -> 0.007   invariant: True ; (TC) met: False / False
+  (TC) shortfall factor              19.5312  (ε-independent)
+  wrap levels    RLARGE l.612        183.6 -> 204.0   (+20.3)
+  n_* torus levels log_L(n_*^1/4)    42.2 -> 47.3   (+5.1)
+  coherent-chain depth PLD l.2307    41.4 -> 46.5   (+5.1); 81^depth 78.9 -> 88.7
+  a·u_k at the ε-driven ceiling      5.38111E+9 -> 5.38111E+9   (invariant? True)
+  (CEM-2) gap ε²/g_K² at g_K²=1e-94  4.4890E+15 -> 8.8077E+5
+     [HW l.2170 records 4.489e15 at E_t; reproduced: 4.4890E+15]
+  (CEM-2) gap at the ε-driven g_CRC  2.3217E+17 -> 2.3217E+17   (invariant? True)
+  (CEM-2) gap at the ε-free  g_DX    1.8278E+73 -> 3.5862E+63   (improves by 9.707 decades)
+  VERDICT e1-1: CLASSIFICATION-HOLDS
+
+=== e1-2 FLOOR: the window  g << ||.|| < ε_1  must stay open ===
+   (EXISTENCE l.4191 'ε only has to contain the typical field ≍ g'; l.3112 'distance ≫ g but < ε_1')
+  ε-free binding ceiling g_DX² (REVIEW_SF_S7 l.203)     ε/g: 36.63 -> 31.78
+      decades of margin at E_p; verdict FLOOR-RESPECTED
+  ε-driven ceiling g²_CRC x82 (HW l.2006)               ε/g: 8.68 -> 8.68
+      decades of margin at E_p; verdict FLOOR-RESPECTED
+  VERDICT e1-2: FLOOR-RESPECTED
+
+=== e1-3 DECLARED PRICE (TAUFLAT §4 C l.411-413) ===
+  a_bad  mine 4.89929E-95     TAUFLAT 5E-95       ratio 0.979858   ok
+  a      mine 2.04137E-96     TAUFLAT 2E-96       ratio 1.02069    ok
+  n_H    mine 1.05348E+97     TAUFLAT 1.00000E+97  ratio 1.05348    ok
+  g_K²   mine 2.04137E-98     TAUFLAT 1E-98       ratio 2.04137    OUTSIDE x1.2
+  wrap  mine 204.0   TAUFLAT 205   diff -1.0
+  VERDICT e1-3: SOURCE-DISAGREES ['g_K²']
+  PRICE-COMPLETENESS: steepest exponent in TAUFLAT's declared list = 2 (a_bad, g_K², n_H);
+    steepest exponent found in the sweep = 4 (a_eta, a_RS, g2_rs, RLARGE l.1020/l.1248).
+    VERDICT: PRICE-INCOMPLETE  (the ε^4 branch costs 19.415 decades, not 9.707)
+
+=== e1-4 DOES THE PRICE BIND (each ceiling against g_DX² = 2.456e-152/C_Ω) ===
+  g²_CRC ring x82      HW l.2006          E_t 1.9335E-96     E_p 3.7936E-106    margin 55.90 -> 46.19 decades   NOT-BINDING
+      margin exhausted at c_+·C_Ω = 7.8724E+55 (E_t) / 1.5446E+46 (E_p)
+  HIST-side ceiling    HW l.2024          E_t 5.0338E-97     E_p 9.8768E-107    margin 55.31 -> 45.60 decades   NOT-BINDING
+      margin exhausted at c_+·C_Ω = 2.0496E+55 (E_t) / 4.0215E+45 (E_p)
+  g²_ret               HW l.2008          E_t 3.6764E-98     E_p 7.2134E-108    margin 54.18 -> 44.47 decades   NOT-BINDING
+      margin exhausted at c_+·C_Ω = 1.4969E+54 (E_t) / 2.9371E+44 (E_p)
+  RLARGE a/10²         RLARGE l.617       E_t 1.0404E-88     E_p 2.0414E-98     margin 63.63 -> 53.92 decades   NOT-BINDING
+      margin exhausted at c_+·C_Ω = 4.2362E+63 (E_t) / 8.3118E+53 (E_p)
+  RS/joint a_RS/10²    RLARGE l.1020      E_t 5.9314E-168    E_p 2.2834E-187    margin -15.62 -> -35.03 decades   BINDS-ALREADY
+      margin exhausted at c_+·C_Ω = 2.4150E-16 (E_t) / 9.2973E-36 (E_p)
+  RS/joint under KN-st EXISTENCE l.1771   E_t 8.1982E-86     E_p 1.6085E-95     margin 66.52 -> 56.82 decades   NOT-BINDING
+      margin exhausted at c_+·C_Ω = 3.3380E+66 (E_t) / 6.5494E+56 (E_p)
+  VERDICT e1-4: FAIL -- binding ceilings: ['RS/joint']
+
+=== e1-5 POWER (counterfactuals chosen by the script) ===
+  E_c1 = 1E-80  (chosen below g_DX = 1.567E-76)
+    e1-2 at E_p : FLOOR-RESPECTED     e1-2 at E_c1 : FLOOR-VIOLATED     FLIPPED: True
+  E_c2 = E_t = 6.7E-40
+    DESC-ε(iii) at E_p : CLAUSE-FAILS   at E_c2 : CLAUSE-FAILS   FLIPPED: False
+    e1-2 at E_c2 : FLOOR-RESPECTED (must stay FLOOR-RESPECTED)
+  VERDICT e1-5: NO POWER
+
+=== e1-6 PRECISION ===
+  VERDICT e1-6: PASS (verdicts identical at 40 and 80 digits)
+
+=== the three live numerical values of the SAME symbol (stale-evaluation note) ===
+  NORMS l.746 / SF l.2837    1.27E-39   (a_bad = 8.972E-85)
+  RLARGE l.611 TB-1          8.95E-40   (a_bad = 4.456E-85)
+  RLARGE l.71 first entry    9.52E-40   (a_bad = 5.041E-85)
+  RLARGE l.72 headline       6.7E-40   (a_bad = 2.497E-85)

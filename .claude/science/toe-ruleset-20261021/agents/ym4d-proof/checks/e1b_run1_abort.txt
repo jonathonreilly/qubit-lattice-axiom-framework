@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/e1b_power.py", line 80, in <module>
+    % (L10(E_x / dec(G_DX2,60).sqrt()).quantize(Decimal('0.01')),
+           ~~~~^~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for /: 'Fraction' and 'decimal.Decimal'

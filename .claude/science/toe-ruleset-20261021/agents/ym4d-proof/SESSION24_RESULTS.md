@@ -1665,3 +1665,79 @@ RLARGE's a_bad; **A5 via AE-red, clearing by 63.00 decades** (62.70 at C_S = 1e4
 - **>>> SESSION24_RESULTS.md PROPAGATED THE INCONSISTENCY.** Its REVIEW_SQ_S4 entry carries "τ_R… now the
   binding entry of τ_♭" **and** "C_D ≈ (0.5-0.9)e3·C_T" **in the same entry** — the two are inconsistent, and
   I wrote both in one paragraph without noticing. *Corrected at the source entry above.*
+
+## EPS1_SWEEP.md — ε_1 is FIVE symbols, and something binds TODAY. Verdict: SAFE WITH NAMED CONDITIONS.
+## §0-§7, checks e1_*, e1b_*, e1c_*. Three checks reported as failures, unaltered.
+
+### >>> ε_1 is at least FIVE distinct symbols, and one of them is a trap
+| # | symbol | where |
+|---|---|---|
+| 1 | the χ_Q plaquette cut — **the subject of option C** | RLARGE l.58; same symbol in HIST/HW/PLD/SF/PROOF/EXISTENCE |
+| 2 | **BFT_B's Theorem N2 threshold on the coarse flatness f_k, defined BY A FORMULA in O(1) constants** | BFT_B l.3058, l.2870 |
+| 3 | FLOW's analyticity disc radius | FLOW l.1927, l.2834 |
+| 4 | FLOW's mode amplitude | FLOW l.771 |
+| 5 | an exponent index on a loop word | EXISTENCE l.2205 |
+
+**Symbol 2 is the dangerous one:** BFT_B states it in **the same words** as RLARGE ("There are ε_1 > 0 …
+such that"), but it is **an O(1) formula, not a choice**. Written as "lower ε_1", **lane B would read the
+proposal as addressed to them**, and carried into 𝒦(ε_1) it would **cascade into 𝒞_glob**. TAUFLAT's
+identity check (HIST A5 ↔ RLARGE a_bad) was correct **but did not read BFT_B or FLOW**.
+**And symbol 1 has FOUR live numerical values in force:** 1.27e-39 (SF l.2837, **quoted as current by NORMS
+l.746**), 9.52e-40, 8.95e-40, 6.7e-40.
+*Third naming hazard of the session, after four ε_* and two θ_0. This is now a systemic defect, not three
+accidents.*
+
+### The consumer list
+**Ceiling-side: 19 found, all helped or neutral** — (TH-ch′), (TH-ch″), the five-entry ceiling min, N5
+compatibility, ε_1 < 2sin(π/N), HIST A5's ½δ_a, SF STEP 3, PLD (G0-1)(a)/(c), PLD INH, PROOF's 2D window,
+PROOF l.4306's divergence window (which **widens**), EXISTENCE's non-triviality clause, KN-step's A_dη ≤ 1,
+HW l.826, PLD's C_A exponentials.
+**Floor-side: exactly ONE — and TAUFLAT did not have it.** TAUFLAT wrote "nothing bounds ε_1 from below";
+**true of the seven files it read, FALSE in the existence lane** (EXISTENCE l.4191 "ε only has to contain
+the typical field ≍ g", l.3112 coercivity "at distance ≫ g but < ε_1", with a constant at PLD l.995, an ℓ¹
+margin ∝ g/ε_1). **It is respected: the window ε_1/g is 10^36.63 today → 10^31.78 after**, at the
+ε_1-*independent* DX′ coupling, and exactly invariant at the ε_1-driven ones.
+**Ratios (9 evaluated):** ε_loc/ε_1, θa_bad/(ε_1²/2N), α_E/ε_1, a·u_k and the (CEM-2) gap at the ε-driven
+ceiling are **exactly invariant**; the **(CEM-2) gap IMPROVES by 9.707 decades** at the DX′ coupling; PLD
+l.995's ℓ¹ margin is the one with the unhelpful sign. **(TC)/U3 fails by ×19.53 at EVERY ε_1** — option C
+neither helps nor hurts it. *A separate pre-existing failure, newly visible.*
+
+### Large-field cost, quantified
+Wrap levels **183.6 → 204.0**; torus-caveat levels 42.2 → 47.3; coherent-chain depth 41.4 → 46.5
+(81^depth 10^78.9 → 10^88.7). **The suppression exponent ε_1²/(4Ng²) is EXACTLY INVARIANT** (2.90218e16) at
+the ε-driven ceiling; at DX′ the affordable level count falls 1.197e72 → 2.349e62, leaving **60.06 decades**
+over the ~205-level wrap requirement. **HW's b_n, b_D, c_f, c_att and the ×82 ring contain no ε_1 and are
+unchanged. More expensive, nothing broken.**
+
+### >>> The declared price is INCOMPLETE, and RLARGE l.618 is FALSE — a_RS BINDS TODAY
+Four of five figures reproduce; **g_K² SOURCE-DISAGREES ×2.04** (TAUFLAT's 1-s.f. rounding, favourable
+direction). **Two exponents are steeper than the declared ±2: a_RS ∝ ε_1⁴ (19.415 decades)** and the Cauchy
+C³ constant on 𝔇_{α_E} ∝ ε_1^{-3} (14.561, ARGUED).
+**RLARGE l.617-618 re-verified against HW s6's ×82 closed-column numbers — and it FAILS.** g²_CRC
+1.934e-96 → 3.794e-106 (margin over DX′ **55.90 → 46.19** decades), HIST-side 55.31 → 45.60, g²_ret
+54.18 → 44.47, RLARGE's a/10² 63.63 → 53.92 (**so TAUFLAT's "54 decades" is the POST-move figure**).
+**>>> But a_RS/10² sits 15.62 decades BELOW DX′ ALREADY TODAY**, and 35.03 after. **l.617 is scoped and
+correct; l.618's unscoped "RLF's own ceilings do not bind" is FALSE.**
+**The fix is already proven and was already requested: adopt KN-step's linear η_1** (EXISTENCE l.1771,
+PROVEN; requested as REVIEW_PLD_S3 **E9** and never carried out) → **+66.52 today, +56.82 after: a 92-decade
+gain.** *Lead: commissioned as ARS_FIX.md. This is independent of option C and matters either way.*
+**Also: TAUFLAT's quoted 9.38496e-45 is 9.46e-7 ABOVE its own bound, so the clause FAILS at it.** The exact
+bound is **9.38495112638e-45**, 4.8536 decades below 6.7e-40.
+
+### Verdict: SAFE WITH NAMED CONDITIONS. **ε_1 was changed nowhere.**
+(C1) scope to RLARGE §0's χ_Q cut only; **(C2) adopt KN-step's linear η_1, or scope RLARGE l.618 — the only
+non-bookkeeping condition**; (C3) record the floor as ε_1 ≫ g; (C4) use 9.38495e-45; (C5) price the ε⁴ and
+ε^{-3} branches; (C6) **settle which of the four ε_1 values is in force first**; (C7) conditional on
+c₊·C_Ω ≲ 1.5e46 and on DX′ remaining binding.
+
+### Check discipline — and a worker catching its OWN check having no power
+Three reported as failures, unaltered: **e1-3 SOURCE-DISAGREES**; **e1-4 FAIL (a_RS binds already)**; and
+**e1-5 NO POWER on its first run** — the clause verdict could not flip **precisely because the quoted value
+sits on the wrong side of its bound** — re-run under new id `e1b` with criteria untouched, it is
+**HAS-POWER** (both counterfactuals flip: floor at ε_1 = 1e-80, clause at ε_1 = 6.7e-40).
+Independent constructions named: the floor against EXISTENCE's own window statements; the price against HW
+§35.7's table and **SF §16.3/§19.4's ε_1-scaling tables — which already carry the ε^{-4} row TAUFLAT
+omitted, and price ε_1 at values 14-57 decades BELOW this proposal**, so the proposal is conservative
+against the lane's existing tables.
+*Sixth application of the check-power lens, and the first in which a worker caught its own gate being
+powerless, said so, and fixed it under a new id. That is now the fully-formed practice.*

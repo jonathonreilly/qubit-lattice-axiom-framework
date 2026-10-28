@@ -48,6 +48,20 @@ are to *diagnoses, statements and stale cross-references*, listed at [S24].
   (ii)/GT-ell is dead with it. Conversely **Proposition QN (PROVEN): Σ_X Q_X(S) = 0 for every chain source,
   with no hypothesis**, and **Proposition QSBP: the charge is a COLLAR FLUX of the source**, not a box
   average — so the per-box charges leave the problem entirely (Theorem TQ-INT).
+- **[S24-flag 2a] THE NAMING HAZARD IS SYSTEMIC, not three accidents.** Session 24 found **four** distinct
+  ε_* (EPSSTAR §5), **two** distinct θ_0 — whose collision caused the 52-decade τ_♭ error (TAUFLAT §1) —
+  and **at least FIVE** distinct ε_1 (EPS1_SWEEP §1), of which **BFT_B's is an O(1) FORMULA stated in the
+  same words as RLARGE's choice**, so an instruction to "lower ε_1" would be read by lane B as addressed to
+  it and would cascade into 𝒞_glob. **Symbol 1 alone has FOUR live numerical values in force** (1.27e-39,
+  quoted as current by NORMS l.746; 9.52e-40; 8.95e-40; 6.7e-40). **A lane-wide symbol audit and rename is
+  now a prerequisite for any further constant work**, and "which value is in force?" must be settled before
+  any of them is quoted again.
+- **[S24-flag 6] a_RS BINDS TODAY, and RLARGE l.618 is FALSE.** EPS1_SWEEP re-verified RLARGE l.617-618
+  against HW session 6's ×82 closed-column numbers: **a_RS/10² sits 15.62 decades BELOW the DX′ ceiling
+  already, with no change to anything** (a_RS ∝ ε_1⁴, an exponent no earlier pricing declared). l.617 is
+  scoped and correct; **l.618's unscoped "RLF's own ceilings do not bind" is false.** The fix is **already
+  PROVEN and was already requested**: adopt **KN-step's linear η_1** (EXISTENCE l.1771; REVIEW_PLD_S3 item
+  E9, never carried out), worth **+66.52 decades**. Commissioned as ARS_FIX.md.
 - **[S24-flag 2] A NAMING HAZARD across lanes: FOUR distinct symbols are called ε_*.** EPSSTAR §5:
   EPS-T's ε_*; **N5-sf0's α_*/(10p_L(4R_*+5)L)**, which is the one this ledger quotes as
   ε_* = 2.476e-13/C_Δ in [SF7-edit]; BG-b's (ε_1²/(4NB))^{1/2}; and BFT_B l.2719's local one. **They must

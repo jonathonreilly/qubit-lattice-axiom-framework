@@ -952,3 +952,64 @@ the minute.** *That is the right call and worth noting as the standard.*
 **Biggest remaining obstruction: ε_* / A_cγ_c**, in Stage 1 step (5) (l.1489-1494). §8.3's inequality
 **A_cγ_c ≤ 3.4e3 is now the only thing between CONST_T §6.1's formula and a PROVEN number**, and it is one
 bounded session, independent of everything else. *Lead: commissioned immediately as EPSSTAR.md.*
+
+## REVIEW_NQ_S1 — (N-Q) CONFIRMED PROVEN. 636 lines, findings NQ-1…NQ-30.
+
+**The reviewer REBUILT rather than checked**: re-derived the Step 1 telescoping by induction from the two
+cited identities, and re-implemented the whole computation from primary definitions in deliberately
+different code (tuple keys instead of bit packing, Fraction instead of integers over a common denominator,
+its own composition recursion, and a streaming coordinate sweep for j = 3 so the 4.1M-entry row is never
+resident). Peaks 52 / 482 / 914 MB; no lock (rule-6 exemption). **All three exact values reproduce,
+including j = 3: 205/27, 2021/81, 6115/81, supports 459 / 47,385 / 4,113,747, all four directions.**
+
+**>>> A CONSTRUCTIVE STRENGTHENING: the identification of Q is FORCED, not chosen — by an argument NQ_CHECK
+did not make.** PROOF (s23) l.2060 defines Setting SC's Q as Q_root verbatim; RTARGET l.414 and NORMS l.102
+agree; SQ's `Q := Q_str` is a declared local convention (l.655/§0.4) whose proof the reviewer re-derived and
+found correct. **And the CONSUMER forces it:** Lemma N1-11 step (4) uses
+B_j = Q^j B_0 − Σ Q^{j−1−i} r_i, **exact only for Q_root**, while NORMS's own Lemma N1-4 says the Q_str
+version holds only "modulo a level-j pure gauge" — **exactly the quantity a potential bound measures.**
+So the ambiguity could not have been resolved the other way.
+
+**Both of the lead's primed suspicions about the proof are UNFOUNDED.** (a) The slice identity
+Q = Q_str − d∘h is an **unrestricted operator identity**; co-closedness attaches only to J-str's *transpose*,
+so the telescoping is not confined to a subspace. (b) **‖d∘G‖ ≤ 2‖G‖ is exactly right**, because h lands in
+**0-forms**, where d has two terms in every dimension — the 2(p+1)-term worry would bite only if the
+correction were d of a 1-form, which is precisely what the slice identity avoids. Also ‖h‖ = 8/3 is an
+**equality**, ‖ev^m‖ = 1, ‖Q_str^{(i)}‖ = L^i exactly, and **𝔮_0 = 11/3 is the exact sup of the proven ratio.**
+
+**>>> THE FORK GOES TO NQ_CHECK, settled entrywise.** The ev-form and M-form composite slice functionals are
+**the same operator** (0 differing of 23,328 at j = 2), and **h∘d = M − ev exactly** (0 differing of 81). So
+**NORMS's j-linear growth is a bookkeeping loss, not a different quantity**, and its "h applied to a pure
+gauge" hole genuinely does not arise in the ev form, where every h acts on Q_str^{(i)}B_0.
+
+**One factual error (F1, binding).** G1 does **NOT** "strengthen check c8(f)'s 2e-16 to an entrywise exact
+identity". In nq1_qnorm.py, Q_root and d∘h are assembled **from the same two primitives by the same code
+path**, so G1 is **near-tautological**; c8(f) tested that the *nonlinear* U(1) S4′ map linearises to Q_root,
+which G1 **assumes**. **F2:** G4 and G5 cannot fail for this construction, G2 cannot detect a wrong far-end
+offset, **only G3 has real power**, and **no gate compared Q_root against an independent construction** —
+the reviewer's own re-implementation supplies that missing control, and agrees.
+*Lead: so the clean FAIL-free sweep was honest but under-powered; the reviewer's rebuild is what actually
+certifies it. Worth remembering: a gate assembled from the same primitives as the object cannot test it.*
+
+**New finding (F5), not in NQ_CHECK and in NORMS's scope: NORMS §N1 l.103-104 MISDEFINES Q_str** —
+L^{d−1} transverse paths instead of the **L^d block legs**, **81 against the correct 135 entries.** Benign
+for NORMS's conclusions, but it should be a third withdrawn text item. **Also NORMS l.414-415 conflates M
+with ev.** *Forwarded to the NORMS reviewer and to the (N-loc) worker.*
+
+**Other binding fixes.** F3: the theorem's quantifier does not cover the intermediate composites its consumer
+uses (no gap, one line). F4: the "Lemma N1-11 → PROVEN-HERE" instruction over-reaches NQ_CHECK's own scope.
+F6: the PROOF.md line numbers resolve in the **session-23 snapshot**, undisclosed and mixed with live RTARGET
+numbers. **F7: the j = 1 clause of the BOUNDED criterion was vacuous a priori** (𝔫₁ ≤ p_L = 11 forces
+R₁ ≤ 11/3), **and 𝔮₀ = p_L/L only at L = 3.** F9: 𝔠_P still carries C_f, C_R, R_eff.
+
+**Process hygiene passes.** Criteria precede the script by 2 min 03 s on the filesystem; the reviewer
+**re-anchored p_L = 11 to PROOF's own pre-session p_L := 5L − 4 and re-derived it as L + d(L−1) at d = 4**,
+so no criteria constant is session-derived — the rule three sister lanes breached. The FAIL-free sweep is
+honest, not retuned; the staged run used the stored script.
+
+**>>> Biggest live wall, and a sobering honest reading: "(N-Q) was the small one."** (N-loc) **cannot be
+settled by an identity** — it needs a **multi-scale axial construction**, already OPEN under PROOF's
+**(CL-1)** — and **NORMS's near/far trade is "stated, not carried out."** Behind it, **(N-bg) is the
+structural wall, and Theorem NQ-1 provably does not cross it** (NQ-1 is abelian/linearised and the slice
+identity has no nonlinear SU(N) analogue). *Forwarded to the (N-loc) worker, which is attacking exactly
+this; route 3 of its brief is where the work is.*

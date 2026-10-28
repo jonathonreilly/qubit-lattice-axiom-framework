@@ -22,7 +22,7 @@ BFT-4 (branch-action class), BFT-5 (linear stability at the background). Its con
 | SF | BFT-1 (theta_w > 0), BFT-2, BFT-5 | **YES** (existential theta_w in (0,2] implies theta_w > 0) | — |
 | FLOW | BFT-2, BFT-3 at z = 0, V_k = 1, orders <= 4 | **YES** | — |
 | RLARGE | BFT-3 (R_bg, load-bearing under v2); BFT-1 one-step (C_I, not load-bearing) | **YES** | — |
-| SQ | the cone-local analogue of BFT-1 for **minimisers** ((REG-min)); plus theta_w > 1 **as a stated value**; plus a cone-box uniqueness / eps-regularity clause with **free boundary** | **NO, three ways** | **A1, A2, A3 below** |
+| SQ | the cone-local analogue of BFT-1 for **minimisers** ((REG-min)); plus theta_w > 1 **as a stated value**; plus a cone-box uniqueness / eps-regularity clause with **free boundary** | **~~NO, three ways~~ RESOLVED, see Sec. 6** | ~~A1, A2, A3~~ **withdrawn; replaced by (CONST-T)** |
 | EXISTENCE, (L-loc)_k | all-order mixed-derivative decay | **NO** as BFT-3 (orders <= 4); re-pointed by REVIEW_X12 fix 3 to BFT-4's **(BB-mix)** with per-cube smallness | **A4 below** |
 | EXISTENCE, (c3-nz) level-uniform | cubic Taylor data of E_k^br at V = 1, k-uniform | BFT-3 at n = 3 is OPEN; REVIEW_X12 fix 9 puts it inside BFT-4 | covered by A4 |
 | EXISTENCE, (BG-reg) | |B_D(V)|^2 <= c_B L^{-4n} Q_w(V) | BFT-1 + BFT-3 at n = 1; REVIEW_X12 fix 4: BB-3_1 (k = 1) PROVEN, general k <= (H-G_w) OPEN, BFT-1 only on C_glob as an implication | scope item, not a target defect |
@@ -84,3 +84,32 @@ and is paused on the layer-1 outputs listed in its Sec. 21.3 consumer list.
 tasks, not several sessions. No statement in this repository claims 4D Yang-Mills existence or a mass gap,
 and none should be drafted. The deliverable that is in reach is the conditional architecture plus the
 individual proven components, credited to Balaban's program and Dimock's expositions.
+
+## 6. Revision after REVIEW_SQ_S4 (same session, 2026-10-28)
+
+**A1, A2 and A3 are withdrawn.** REVIEW_SQ_S4 records that REVIEW_SQ_S2's "BFT as stated is insufficient"
+is now **moot for SQ**: SQ session 4 **proves theta_w = 2** (so the theta_w > 1 that SQ consumes is in hand
+natively and does not depend on how BFT-1 quantifies theta_w), and **EPS-T + NREFL supply the free-boundary
+cone-box clause** (A3). (REG-min) is delivered by route beta natively rather than as a corollary of BFT-1,
+which is what "a sibling, not a corollary" always meant — so A2 was a real gap in the *routing*, and SQ has
+closed it by proving the sibling rather than by extending BFT.
+
+Consequences the lead must carry:
+- SQ Sec. 13.8 was not updated, which makes **RLARGE row 9 and HW row A5 stale**. Binding fix on SQ's owner.
+- **The audit's question still had to be asked**, and its answer is now much better than when Sec. 2-4 were
+  written: of the four named shortfalls, three are closed and one remains.
+
+**A4 stands, and is now the whole of the shortfall.** (L-loc)_k needs all-order mixed-derivative decay;
+BFT-3 stops at n <= 4 by construction; REVIEW_X12 fix 3 re-points it to BFT-4's **(BB-mix)**, which is OPEN
+(BFT_B_LOG l.28). Recommendation unchanged: **promote (BB-mix) to a named clause, BFT-6.**
+
+**A5 (new, from REVIEW_SQ_S4): (CONST-T).** EPS-T's Moser constant C_T is uncomputed, and the
+(CLS-min) -> RLARGE interface carries a number only if C_T <~ 1e13. The reviewer's read of the written proof
+puts C_T in 1e9-1e15, i.e. straddling. This is not a defect of the target BFT; it is a missing constant on a
+delivered interface, and it is the most tractable high-value item in the project right now: a bounded,
+session-scale computation whose outcome decides whether route beta's clean clause-by-clause delivery is
+usable or vacuous.
+
+**Revised reading.** The target BFT-0..5 plus BFT-6 (= (BB-mix)) is, as far as this audit can tell, now
+sufficient for its consumers. The binding uncertainty has moved from the *adequacy of the target* to the
+*size of two constants*: C_T here, and the per-level compounding factor of decision D3.

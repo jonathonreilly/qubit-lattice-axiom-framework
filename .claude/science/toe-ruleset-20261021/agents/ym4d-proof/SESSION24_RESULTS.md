@@ -132,3 +132,63 @@ node-A worker mid-run.
 
 **Scoring T51-A:** 2 of 5 in. This review narrows a headline (the quantifier) and finds a struck currency;
 FLOW_S13 narrowed two items. The pre-stated expectation (≥ 2 of 5 narrow, demote or refute) is **met**.
+
+## REVIEW_SQ_S4 (T51-A, 3 of 5) — landed.
+
+**The decision the handoff asked for: (CLS-min) delivery is PARTIAL — yes in form, no in number.**
+
+Clause by clause against HW.md l.178-180 and RLARGE.md l.88-90, route β's chain produces **exactly** what
+RLARGE consumes: every m ≥ 1, level-m side ≥ 3, *every* top V, min-form in ‖1-V_P‖²_op, ℰ_P(V) as the
+cone-local **free-boundary infimum**, depth-uniform, cone-local not global. **No level-uniformity, norm,
+boundary or cone-locality mismatch.** c_pr = 5.56e-7 unchanged. This is a better result than expected: the
+interface is clean.
+
+**But the number is not there.** RLARGE uses a_bad = c_pr·min{ε_1², t_pr²} = c_pr ε_1², valid only while
+ε_1 < t_pr, which REVIEW_RLARGE_V3 l.286/l.313 pins as C_D ≲ 7e15. Session 4 turns C_D from an O(1)
+parameter into **C_D ≈ (0.5-0.9)e3 · C_T**, where C_T is EPS-T's **uncomputed** Moser constant (via
+A_0 = c_N·C_T'·(…), C_T' = 22.6 C_T, G = 2(1.011 A_0 + B_0)). **So the condition reads C_T ≲ 1e13, and
+nothing bounds C_T.** The reviewer's read of the written proof puts it in 1e9-1e15 — **straddling the
+threshold.** C_err = 1.655e7·C_D² was re-derived and validated against all three recorded θ_0 values, so the
+inequality is exact. **Answer to the brief's question: yes, a downstream consumer needs a number from EPS-T,
+to one decade.** New OPEN item **(CONST-T)**; the lane tally is 14 / 1 / **2**, not 14 / 1 / 1.
+
+**"Integrable, not bounded": no slippage. The reviewer could not break it.** The averaged → pointwise arrow
+is *inside* EPS-T and is licensed by q > d = 4 (the source enters in divergence form through
+⟨𝒮, D_1*(ψu)⟩; V_s sits in ℓ^{q/2} with q/2 > d/2, at exactly constant scale-invariant norm). The q = 8
+bookkeeping was re-done: hypothesis and conclusion sides are identically scale-invariant. TPL, (N1), (N2),
+LEV-E, LOC-T, CARL and GARSIA all re-derive correctly; CARL is the genuine mechanism and is depth-uniform
+for the stated reason. S4-F1…F4 all correctly adjudicated as non-occurring.
+
+**One real hole (S4-3, binding).** EPS-T's proof asserts "|u| ≤ ε … so every plaquette has η ≤ c_Nε ≤ ¼"
+(l.1467). **Circular:** §15.0's comparison is itself conditional on ‖1-U‖ ≤ ¼, and small |𝒫| does not give
+small ‖1-U‖ — in SU(2), U = -1 gives 𝒫 = 0 with ‖1-U‖ = 2. BIA, WB and the R_1 bound all need η small.
+The fix is one added hypothesis, discharged in every application. The reviewer could not build a
+counterexample, so **not WRONG** — but the proof does not cover the stated class.
+
+**Label and arithmetic defects.** EPS-T's PROVEN label **overstates what is written** (the Moser bookkeeping
+is asserted, not expanded) — relabel. R_0 = 64 should be **128** (at 64 ≤ R < 128 the iteration runs zero
+steps). e^{100} should be 1.6e4.
+
+**The two failed checks.**
+- **q4b P0 is substantive about the check, not the mathematics, and it REVERSES REVIEW_SQ_S3 R1.** The
+  reviewer reproduced the mechanism independently in pure python: the det-normalised polar factor of
+  complex-perturbed M has residual 3.7e-9 against the quaternion-projection maximiser's 1.2e-16, with a
+  value gap of 4.4e-16 — second order, so K3 still passes.
+- **q5 T2: the error is in the pre-registered criterion itself**, not only in the script (q5_criteria.md
+  defines the wrong Q_str). It falsifies d∘Q_str^{uniform} = Q_2∘d, leaves TPL untouched (T1 exact), but
+  **exposes a real conflict between BFT_B l.2189 and LINEAR_PACKAGE l.71** that the session referred to lane
+  B without citations. *LINEAR_PACKAGE is FROZEN v1.1 (errata only), so this is an erratum candidate and
+  needs the lead.* Also q5's W1-W3/B1 run on a side-3 torus where WB's locality claim is untestable.
+
+**Thresholds the session never states, though its own constants force them:** θ_0 ≤ 1.46e-13,
+τ_R ≤ 2.75e-15 (**now the binding entry of τ_♭, displacing 1.43e-10**), η_♭ 1e-26 → 4.2e-36,
+t_pr 7.6e-9 → 1.5e-13. (CVX-K) really is unused, including inside LU-ex. LU-ex's replacement for the
+continuity method is complete and the Łojasiewicz withdrawal is correct.
+
+**>>> This revises INTEGRATION_AUDIT.md. REVIEW_SQ_S2's "BFT as stated is insufficient" is now MOOT for SQ:
+θ_w = 2 is PROVEN, and EPS-T + NREFL supply the free-boundary cone-box clause.** §13.8 was not updated —
+binding fix — and that makes **RLARGE row 9 and HW row A5 stale**.
+
+**Biggest live wall: (CONST-T), EPS-T's Moser constant.** Not the mathematics of route β.
+*Lead reading: this is the most tractable high-value item surfaced so far — a bounded, session-scale
+computation that decides whether the whole (CLS-min) → RLARGE interface carries a number or not.*

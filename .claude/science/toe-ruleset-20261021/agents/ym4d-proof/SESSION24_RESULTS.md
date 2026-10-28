@@ -1174,3 +1174,85 @@ lacked the power to fail, after one tautology and one gate built from the object
 Six scope limitations recorded; **the material one: the reduced 5×5 box tests the algebra but NOTHING about
 Lemma FR-price, whose whole content is the box's fixed coarse size.** (N1-e) at Z is ARGUED only, and
 S11-F6 occurred (LES "on the periodic lift") with an ARGUED answer via Theorem W0-loc's box form.
+
+## EPSSTAR.md — A_cγ_c closed, C_T is a number, and a 52-decade conflict found inside a banked review.
+## 834 lines, §1-§11. 9/9 pre-registered verdicts PASS.
+
+### The result is stronger than the task asked for
+From (H3), σ_c = 4 ⟹ ϑ_c = ½, **a_c = 2**, σ′_c = 4/3:
+**A_c = 36·C_1·|N_3|^{3/4} = 4.731e4·C_1**, **γ_c = R·‖V_c‖_{ℓ⁴(B_{3R/4-3})}** with
+C_1·V_c = Φ := c_K·M_3u + c_RB·(M_1u)². Step (5) yields **two inequalities on the same norm of the same Φ** —
+(ABS-ε), which is the **definition** of ε_*, and (5′) with C_S1(q,m) = 6964 (m = 1) → 5686 (m → ∞) at
+q = 12, **96% of it from 4096·c_g**. Dividing one by the other **eliminates every SUPPLIED constant**:
+
+> **Theorem ES-1 [PROVEN]: A_cγ_c ≤ (1 + √6)·C_S1(q,m)/m** — no c_K, c_RB, C_K′, C_B, c_N or ε_* in it.
+
+At **m = 1** (Stage 1 exactly as written) A_cγ_c ≤ **2.40e4**, 7.2× over the 3.4e3 target. **m = 7 gives
+2.87e3 and clears it**; m = 19615 gives A_cγ_c ≤ 1. **So STAR_CONST §6.3's ARGUED claim and its §8.4 item 1
+("C_B, C_K′ harmless for C_T") are now PROVEN**: C_T's number is identical at all four C_K′×c_N corners and
+at C_B ∈ {3.6, 1e2, 1e4}.
+
+### >>> TWO ERRORS IN THE LEAD'S BRIEF, both the lead's to own
+I briefed "ε_* must drop by a factor of 2-10" and gave ε_* ≤ 1e-4 as a working figure, taking both from
+STAR_CONST §8.3. **Both are wrong.** The real drop factor is **2.4e4 to 6.8e11**, for two reasons the worker
+disclosed:
+1. **STAR_CONST §8.3 quoted A_cγ_c = 236.9·C_1 at CONST_T's SUPPLIED C_1 = 20, while itself computing
+   C_1 = 5699.6.** At its own C_1 the figure is **1.35e6, not 4.7e3.**
+2. **ε_* = 1e-4 is not admissible at all** — (ABS-ε) caps it at 1.93e-6/c_K ≤ **2.8e-8**.
+*I relayed a figure computed at one value of a constant into a context using another value of the same
+constant. That is the same class of error this session has been finding all day, committed by the lead.*
+
+### >>> A NAMING HAZARD, and I walked the worker into it
+**There are FOUR distinct symbols called ε_* in this lane:** EPS-T's; **N5-sf0's α_*/(10p_L(4R_*+5)L)**;
+BG-b's (ε_1²/(4NB))^{1/2}; and BFT_B l.2719's local one. **My brief offered "PROOF's ε_* = 2.476e-13/C_Δ"
+as a comparator — that is N5-sf0's, NOT EPS-T's, and the near-coincidence with the new value is a
+coincidence.** A rename request is filed in the worker's FOR OTHER FILES. *Carried into PROOF.md as a flag:
+four symbols sharing a name across lanes is a defect waiting to be a wrong conclusion.*
+
+### Lowering ε_* is free, with 21-25 decades to spare — the important half of the task
+- EPS-T's ε_* propagates through **exactly one channel**: θ_ε = ε_*/84 (l.1622). Every other use is
+  **hypothesis-side**, where lowering helps. ε_U/ε_G are route (α), dead per S4-20.
+- The **covering direction is discharged by construction**: FORCE defines τ_R with θ_0/C′ in its min.
+- **No-change floor: ε_* ≥ 84·θ_0^SUP = 1.12e-37.** τ_♭'s binding entry is **θ_0^SUP = 1/(3.31e7·C_D²) =
+  1.33e-39, not τ_R = 2.75e-15** — so **nothing downstream moves at all.** Slack **21.1 decades** at the
+  crudest C_K′, **25.1** at the measured one. (REVIEW_SQ_S4's S4-16 "~30 orders" is right in order but
+  5-9 decades optimistic: it compared θ_ε with ε_1, not with the binding entry.)
+  **No consumer needs ε_* above the new value.**
+- **ε_* needed: 1.44e-12** (measured C_K′ = 3.9) **to 1.46e-16** (WB's written C_K′ = 1.92e4, c_N = 2).
+
+### C_T, with an honest status
+**C_T(q = 12) = 5.288e12; q_min = 11** (9.774e12 at q = 11, 2.031e12 at q = 16, plateau 1.40e12), under
+STAR_CONST's conservative B(8). The worker's independent harness **reproduces STAR_CONST §8.3's q-row to
+three digits**. Breakdown: source **73.8%**, cut-off **26.2%**, **curvature branch 0.00% — A_cγ_c is out of
+the problem.**
+**Status: COMPUTED (exact); PROVEN given (H1)-(H4); CONDITIONAL on (H2)** — STAR_CONST's two restatements of
+SQ §15.1, **which SQ.md does not state today** (without them C_T = 8.05e15 and **no q works**) — **and
+CONDITIONAL on CONST_T.md and STAR_CONST.md, both UNREVIEWED. Not PROVEN unconditionally.** *The worker
+labelled this itself, unprompted.*
+
+### The interface: YES for RLARGE, but the margin is thin
+**C_D = 4.76e15 ≤ 6.7e15, so a_bad = c_pr·ε_1² holds.** Margin **only ×1.41 in C_D and ×1.99 in t_pr
+against ε_1.**
+
+### >>> NEW OPEN (§6.6, ARGUED): a 52-decade conflict inside REVIEW_SQ_S4, which this session had banked
+**REVIEW_SQ_S4 uses two different binding entries of τ_♭.** S4-16 correctly takes t_pr ≤ θ_0^SUP; but
+**S4-14 item 2 computes η_♭ ≈ 4.2e-36 from τ_♭ = τ_R, which requires C_D ≤ 4.55e2** — at C_D ≈ 4.76e15,
+**η_♭ = 3.5e-88, a 52-decade difference.** The **DESC-ε replacement for AE-red** needs η_♭ ≥ 4C_3ε_1², i.e.
+ε_1 ≤ t_pr/(1.42e5√C_3), **5.15 decades stronger than the linear clause S4-16 passed. It fails by ≈ 9.7
+decades**, and closing it would need **C_T ≲ 3.5e10 — below this route's own floor** (c_s ≥ 319.2 forces
+C_T ≥ 4.4e12). The worker states it costs **the replacement**, not RLARGE and not A5-via-AE-red, and
+recommends it as the next task because **it is a review decision, not a derivation.**
+*Lead: commissioned immediately as TAUFLAT.md. Note what this means about my own process — I banked
+REVIEW_SQ_S4 as a clean result nine commits ago, and a downstream worker found an internal 52-decade
+inconsistency in it. A review is evidence, not a certificate.*
+
+### Discipline
+**9/9 pre-registered verdicts PASS** (ES1-1…ES1-7), exact Fraction/Decimal, python3 -I, no lock, 1.91 s;
+40- and 60-digit runs differ in exactly two lines, both the stated precision. **No FAIL — and the worker
+says so plainly rather than manufacturing one, while naming the limitation its criteria cannot catch (an
+error in its own §3 derivation).** **Two provenance disclosures:** es1_criteria.md's header says 14:14
+(actual 14:11) and §1's says 14:00:05 (actual 14:00:12); both **forward-dated**, orders correct, **neither
+file edited to fix it.**
+**Flagged for CONST_T's owner: §2.4(d)'s A := 36·C_1·|N|^{1/σ′} appears to be 18** — its own
+Z = 144·C_1·Q·β⁴d⁻²Σ is consistent with 18, not 36. Not used, so **every number above is up to 2.83×
+pessimistic.**

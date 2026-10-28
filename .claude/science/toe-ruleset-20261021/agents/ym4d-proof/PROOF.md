@@ -38,6 +38,18 @@ are to *diagnoses, statements and stale cross-references*, listed at [S24].
 - **[S24-flag 1] A PROOF-owned constant conflict, raised by PLD session 6 and NOT resolved here.** PLD
   §16.8's λ_min = 3.17·10⁻³ against REVIEW_PLD_S3's binding L0-1 (6.6·10⁻¹⁰). **If L0-1 governs, a_ret falls
   by ×4.80·10⁶** (p6 D2). Route (ii) defuses it. For SF/PROOF to settle.
+- **[S24-flag 2] A NAMING HAZARD across lanes: FOUR distinct symbols are called ε_*.** EPSSTAR §5:
+  EPS-T's ε_*; **N5-sf0's α_*/(10p_L(4R_*+5)L)**, which is the one this ledger quotes as
+  ε_* = 2.476e-13/C_Δ in [SF7-edit]; BG-b's (ε_1²/(4NB))^{1/2}; and BFT_B l.2719's local one. **They must
+  not be compared, and the lead already caused one false comparison by doing so.** A rename is requested of
+  the lane owners. The same hazard should be checked for τ_♭ and θ_0.
+- **[S24-flag 3] An internal 52-decade inconsistency in REVIEW_SQ_S4, found downstream (EPSSTAR §6.6,
+  ARGUED).** S4-16 takes t_pr ≤ θ_0^SUP (correct: θ_0^SUP = 1/(3.31e7·C_D²) is τ_♭'s binding entry, not
+  τ_R), but **S4-14 item 2 computes η_♭ ≈ 4.2e-36 from τ_♭ = τ_R, which requires C_D ≤ 4.55e2**, whereas the
+  chain now has C_D ≈ 4.76e15, giving η_♭ = 3.5e-88. The **DESC-ε replacement for AE-red** then fails by
+  ≈ 9.7 decades and would need C_T ≲ 3.5e10, **below this route's own floor** (c_s ≥ 319.2 ⟹ C_T ≥ 4.4e12).
+  Adjudication commissioned (TAUFLAT.md): whether the DESC-ε replacement is load-bearing, or whether
+  AE-red's own route (CONDITIONAL ⇐ (MS-Sob)) carries it. **A banked review is evidence, not a certificate.**
 - **[S24-note 2] A SECOND accounting double-count removed, and it is larger.** BFT_B §43 (session 11):
   **(GAP-Z), the only remaining obstruction to the nontrivial background, IS BFT-5's input (1)
   (G♯_0-field), moved off the trivial chain** — LINEAR_PACKAGE §10's "propagator bounds at a general

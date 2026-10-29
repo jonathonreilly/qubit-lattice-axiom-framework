@@ -1875,3 +1875,13 @@ producers cover two-point orbits; F6 — iterated vs joint limits (DIAG missing)
 UIR2_55). Torus RP is IMPORTED-AND-REVERIFIED, not banked (HANDOFF corrected). **Most dangerous leaf: non-freeness on the
 OS algebra.** Codex review launched (CODEX_REVIEW_ASSEMBLY.md); sphere items forwarded to SEAM55; NONFREE55 launched
 with F1 added to its brief.
+
+**ALIGN55 — finished** (claude-opus-5-5, max). (ALIGN-ℓ) restated so it survives Codex BGT §6: (H) level-locality +
+(P1′) C^{1,θ} gauge function (exponent θ, not α) + (P2-tw) twisted-charge completion; **Lemma RED′** turns these + five
+slice-independent background estimates into GA's (A1)-(A2) (S_E only as a reference representative). **Corollary NEC-E:
+S_E fails (A1)** (t_* ≥ |[z^c_{k−1}, v̂]|·L^{(2+θ)k−6−θ}/(2d), even at small pure gauges) — settles Codex BGT §2's open
+item negatively. **Multiscale axial-in-blocks (Dimock 1410.2798 form) fails the field half** (seam losses L^{k−l−2} /
+L^{k−l−4}). New candidate **Λ_HC** (hierarchical Coulomb-detail gauge): algebra proven (HC-1); regularity ARGUED via (DET)
++ (HB); subdivision certified for L = 3 only (al55_sub P3 FAIL for a 5-adic scheme, disclosed); weighted version OPEN
+(r^{−7} kernel). Theorem R2-glob♯ as a reduction with 13 inputs. 6/5/3. **Codex review launched (CODEX_REVIEW_ALIGN.md);
+follow-up launched: ALIGN2_55** — prove Λ_HC's regularity ((DET), (HB), subdivision, (A)/(B), weighted, Hessian terms).

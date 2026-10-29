@@ -1,0 +1,16 @@
+PASS H1(MA) Lambda_HC Xi_1 nu = -nu (3 random nu)
+PASS H2(MA) ev^(l) Lambda_HC x = lambda_l, all l (2 random chains)
+PASS H7 R S_0 = 1, constants reproduced, j, j^2, j^3 reproduced (1D)
+PASS H8 d S_0 = S_1 d (commuting pair), MA levels 1->0 and 2->1
+PASS H1(MB) Lambda_HC Xi_1 nu = -nu (3 random nu)
+PASS H2(MB) ev^(l) Lambda_HC x = lambda_l, all l (2 random chains)
+PASS H3(MB) lambda_l independent of x_m (m < l), dependent on x_l
+PASS H4(MB) Lambda_HC x^phi vanishes on level-1 sites | level-0 value at y0 = 0
+PASS H5(MB) <q, Lambda_HC x> = sum_m <c_m, x_m>, and c_m = 0 for m < l (q on level-l sites, l = 0, 1, 2)
+PASS H6(MB) x_l = 0 gives lambda_l = S_0 lambda_{l+1}
+CONTROL FIRES K1 without the detail projection, nested restriction fails
+CONTROL FIRES K2 non-interpolatory S_0 (cubic B-spline) breaks H1 or H2 | H1 ok=True, H2 ok=False
+CONTROL FIRES K3 dropping S_0 lambda_{l+1} breaks H1
+CONTROL FIRES K4 omitting S^(m->0)T in the transpose formula breaks H5 (q on level-0 sites)
+CONTROL FIRES K5 underived link scheme (s^[1] := s) breaks H8
+SUMMARY: 15 items, all ok = True

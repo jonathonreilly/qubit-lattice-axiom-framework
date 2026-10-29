@@ -1,0 +1,446 @@
+{
+  "schema": "review-uniform-soft-sources-v1",
+  "captured_utc": "2026-10-29T18:12:17.511986+00:00",
+  "methodology_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "workspace": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "author_receipt": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_receipt.json",
+    "sha256": "4e980541b2bddc77586bfa7f9285ebb4428684268aedaf750b232d9c9b45fe6a"
+  },
+  "author_files": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "sha256": "c7b7890187b9a350aea19e606957c606922fe741c6615382c3a4da0cd60d92c4",
+      "bytes": 26375,
+      "matches_frozen": true,
+      "reviewer_read_coverage": "Complete content/stream read; source implementations only after independent successful runs."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01.py",
+      "sha256": "4fa4a16746a0d7cb2d6c73416a8077d984015723278108372a48a4d3c311650d",
+      "bytes": 13513,
+      "matches_frozen": true,
+      "reviewer_read_coverage": "Complete content/stream read; source implementations only after independent successful runs."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_bloch_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches_frozen": true,
+      "reviewer_read_coverage": "Complete content/stream read; source implementations only after independent successful runs."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_bloch_out.json",
+      "sha256": "6fd353bfef9de4406ba80163bcf0f3310b5b38caf3cdbe8c1ae948f2f7a5a2b1",
+      "bytes": 11721,
+      "matches_frozen": true,
+      "reviewer_read_coverage": "Complete content/stream read; source implementations only after independent successful runs."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_criteria.md",
+      "sha256": "c3df93a5846c19d7f3af56dcda74fc9fdb350648c7deca161642fe8000ccdf85",
+      "bytes": 2717,
+      "matches_frozen": true,
+      "reviewer_read_coverage": "Complete content/stream read; source implementations only after independent successful runs."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_periodic_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches_frozen": true,
+      "reviewer_read_coverage": "Complete content/stream read; source implementations only after independent successful runs."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_periodic_out.json",
+      "sha256": "1531629d3c38b51e94a6082eff1f9fae7c4aef9e4cb18515ee428ce30ca89f07",
+      "bytes": 6281,
+      "matches_frozen": true,
+      "reviewer_read_coverage": "Complete content/stream read; source implementations only after independent successful runs."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_strip_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches_frozen": true,
+      "reviewer_read_coverage": "Complete content/stream read; source implementations only after independent successful runs."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_strip_out.json",
+      "sha256": "14fc01ec85f2bb5d6acd7d50b4b02e14a8402e1b53abf98ce976a16f7949d2a5",
+      "bytes": 5798,
+      "matches_frozen": true,
+      "reviewer_read_coverage": "Complete content/stream read; source implementations only after independent successful runs."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_02.py",
+      "sha256": "7aa7442b3f29606b3c076a9e6f6bde39b3f344d4905f8ee39217767980806421",
+      "bytes": 4350,
+      "matches_frozen": true,
+      "reviewer_read_coverage": "Complete content/stream read; source implementations only after independent successful runs."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_02_criteria.md",
+      "sha256": "6b476964c0bd01e8a012ff60955a0e5005eeb0d1707eda3498613536b31a1e41",
+      "bytes": 1713,
+      "matches_frozen": true,
+      "reviewer_read_coverage": "Complete content/stream read; source implementations only after independent successful runs."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_02_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches_frozen": true,
+      "reviewer_read_coverage": "Complete content/stream read; source implementations only after independent successful runs."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_02_out.json",
+      "sha256": "f69616b6011206d82e46081803bfe61f6d2cf289e4db0861dd67988947dc727e",
+      "bytes": 6679,
+      "matches_frozen": true,
+      "reviewer_read_coverage": "Complete content/stream read; source implementations only after independent successful runs."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_inputs.json",
+      "sha256": "e61933a28ea8538a6e596ffa7e188bf6f0b107a49cb68a83f25713b970b0ea8f",
+      "bytes": 10796,
+      "matches_frozen": true,
+      "reviewer_read_coverage": "Complete content/stream read; source implementations only after independent successful runs."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_primary_sources.json",
+      "sha256": "241065b085afc90c1833cf76b23b51fd3f71f5dc429c9bc72cda18bb7eb1ee8b",
+      "bytes": 615,
+      "matches_frozen": true,
+      "reviewer_read_coverage": "Complete content/stream read; source implementations only after independent successful runs."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_primary_sources02.json",
+      "sha256": "d0c52e176064badd40eab464d9854656a82df94c6bc78b378c0d9aef129231bf",
+      "bytes": 1331,
+      "matches_frozen": true,
+      "reviewer_read_coverage": "Complete content/stream read; source implementations only after independent successful runs."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153,
+      "matches_frozen": true,
+      "reviewer_read_coverage": "Complete content/stream read; source implementations only after independent successful runs."
+    }
+  ],
+  "mathematical_and_documentary_sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LINEAR_PACKAGE.md",
+      "sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad",
+      "bytes": 48089,
+      "matches_author_manifest": true,
+      "reviewer_read_coverage": "Sections 1, 2.4\u20132.5, 3.1, 3.4\u20133.8, 4.1\u20134.3, 6.7; proof-bearing selected coverage. Section 4 omitted by an initial truncation was reread at lines 219\u2013267."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF_session16_snapshot.md",
+      "sha256": "4f376e3a6dd22701218d61fbd06bad3ab83575a4bfe195914a3217df580b4b9f",
+      "bytes": 488224,
+      "matches_author_manifest": true,
+      "reviewer_read_coverage": "Lines 1927\u20131959 (CR and J-str); 2181\u20132218 (N2-a); 2380\u20132505 (IT-str, LED-dual/symb/unif); 2649\u20132798 (EXP-id/real/strip, N2-exp); 3113\u20133168 (N2-exp-prime); 3230\u20133239 (KF). Complete displayed arguments in these ranges."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FLOW.md",
+      "sha256": "085cd225228a23847b053650fe8bff4c14529d7e630a74565b301d39855e442f",
+      "bytes": 539577,
+      "matches_author_manifest": true,
+      "reviewer_read_coverage": "Sections 89, 97, 98: lines 4146\u20134167 and 4403\u20134459, exact derivative/root-straight and longitudinal-domain statements."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_S13_S14.md",
+      "sha256": "875bf6b27bd37e832e7766cc95b96f0d2233eeb960fd16e82aa19d5dee794d62",
+      "bytes": 33308,
+      "matches_author_manifest": true,
+      "reviewer_read_coverage": "Lines 73\u2013125 and 249\u2013278, N2-exp and N2-exp-prime findings and repairs."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_S15_CONVERGENCE.md",
+      "sha256": "329f0980a3570c8e068b6454490ec62aa80fb850e05d89843d1955ba75a4fb24",
+      "bytes": 27703,
+      "matches_author_manifest": true,
+      "reviewer_read_coverage": "Lines 1\u2013150, including full repaired intermediate-curvature proof KF and repaired strip constants."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_S16_S17.md",
+      "sha256": "8ab27ebdb373f5c771a5d005827c4e32fad1c3736aed173691d134c49db123ec",
+      "bytes": 40178,
+      "matches_author_manifest": true,
+      "reviewer_read_coverage": "Lines 1\u2013200, repaired strip discussion and linear-package statement assessment; labels not treated as premises."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RESIDUAL_FULL_COLOUR_ASTRA.md",
+      "sha256": "1ce9460989e5491bd491dcc348add15207e63013a0c537cd6c51caa19f0e3dd7",
+      "bytes": 36980,
+      "matches_author_manifest": true,
+      "reviewer_read_coverage": "Lines 1\u201370 and 215\u2013265, normalization FC1/FC2 and FC17\u2013FC20; exact neutral quartic, actual target and scope. Not a fresh full review of FC3\u2013FC16."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RESIDUAL_FULL_COLOUR_ASTRA.md",
+      "sha256": "0b504129260e0269ae8dffa79f2113a6bb94675edc37c084fe8f9be6464e67bc",
+      "bytes": 29488,
+      "matches_author_manifest": true,
+      "reviewer_read_coverage": "Complete 149-line report, for prior frozen scope and provenance; labels not premises."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_full_colour_receipt.json",
+      "sha256": "e30df91f8682af55d857295b928e04f9bfa75c77f352ad51f88c2b3521e24d1d",
+      "bytes": 15395,
+      "matches_author_manifest": true,
+      "reviewer_read_coverage": "Documentary identity verified from manifest; not claimed as a complete content read."
+    }
+  ],
+  "methodology": [
+    {
+      "path": "AGENTS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "bytes": 1118,
+      "reviewer_read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "bytes": 11788,
+      "reviewer_read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "reviewer_read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "bytes": 24561,
+      "reviewer_read_coverage": "complete, with reread of initially truncated sections"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "bytes": 5767,
+      "reviewer_read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "bytes": 5188,
+      "reviewer_read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "bytes": 12608,
+      "reviewer_read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "bytes": 12940,
+      "reviewer_read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "bytes": 7554,
+      "reviewer_read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "42a24d3df296f01e4189eadd1ef8b92f316bd8d14229f14643641e39939d159e",
+      "bytes": 21536,
+      "reviewer_read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "bytes": 23216,
+      "reviewer_read_coverage": "complete, reread after initial output truncation; integration gates assigned to coordinator"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "bytes": 30709,
+      "reviewer_read_coverage": "Substantial reading; minor output truncation in V4/V5 not claimed read. No new discovery or PR stage executed by this reviewer."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "bytes": 16755,
+      "reviewer_read_coverage": "Substantial reading; primitive boilerplate partly truncated. Actual primitive registry, procedure and all registered primitive notes read separately in full."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "bytes": 16454,
+      "reviewer_read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "reviewer_read_coverage": "complete"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333,
+      "reviewer_read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "bytes": 6427,
+      "reviewer_read_coverage": "complete"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416,
+      "reviewer_read_coverage": "complete"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "bytes": 2581,
+      "reviewer_read_coverage": "complete"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "bytes": 4770,
+      "reviewer_read_coverage": "complete"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "bytes": 5313,
+      "reviewer_read_coverage": "complete"
+    },
+    {
+      "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+      "bytes": 3694,
+      "reviewer_read_coverage": "complete"
+    },
+    {
+      "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "4df23ed611d808e3dd28d2a14b5407a16c9eb4d2c632017666b9a240a78199ce",
+      "bytes": 22309,
+      "reviewer_read_coverage": "lines 1\u201390 only; no queue mutation or whole-repo review"
+    },
+    {
+      "path": "docs/repo/DEFERRED_DECISIONS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+      "bytes": 10595,
+      "reviewer_read_coverage": "complete; no parked decision used as a premise or blocker"
+    },
+    {
+      "path": "docs/repo/CONTROLLED_VOCABULARY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+      "bytes": 39977,
+      "reviewer_read_coverage": "lines 1\u201390 only; scoped linter used for owned review prose"
+    },
+    {
+      "path": "docs/audit/README.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f",
+      "bytes": 35690,
+      "reviewer_read_coverage": "lines 1\u201390 only; detailed applicable audit-compatibility review gate read separately"
+    },
+    {
+      "path": "docs/CANONICAL_HARNESS_INDEX.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f2665b763f69e4baef4648d15b517b2701d975a8131f4665703c40c07283782c",
+      "bytes": 109438,
+      "reviewer_read_coverage": "introduction lines 1\u201324 and case-insensitive targeted search for Yang.Mills, soft.minimi, neutral.quartic (no match); not full file"
+    }
+  ],
+  "installed_skills": [
+    {
+      "path": "/Users/jonBridger/.codex/skills/review-loop/SKILL.md",
+      "sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "bytes": 20680,
+      "read_coverage": "complete"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "bytes": 9276,
+      "read_coverage": "complete"
+    }
+  ],
+  "primary_literature": [
+    {
+      "official_metadata_url": "https://arxiv.org/abs/1410.2798v3",
+      "pdf_url": "https://arxiv.org/pdf/1410.2798v3",
+      "local_only_path": "/tmp/uniform_soft_minimizer_primary/axial.pdf",
+      "sha256": "4742e86f6c701b15a598e0ff661b7881d8e7e6d3c2a60c45c0a60bed8c7c16b4",
+      "bytes": 292405,
+      "reviewer_read_pdf_pages_one_based": [
+        12,
+        13,
+        14,
+        20,
+        21
+      ],
+      "method": "Official arXiv metadata opened; existing frozen PDF bytes independently hashed and read by numbered PyMuPDF pages. No assertion of an independent download or full-paper read.",
+      "import_class": "non-derivation analogy",
+      "repository_republication": false
+    },
+    {
+      "official_metadata_url": "https://arxiv.org/abs/1712.10029v3",
+      "pdf_url": "https://arxiv.org/pdf/1712.10029v3",
+      "local_only_path": "/tmp/uniform_soft_minimizer_primary/multiscale.pdf",
+      "sha256": "1747a54afe35b9fa51ebf96d8257cbe7ea0f002d6fdd203daaff80950b60de8e",
+      "bytes": 600279,
+      "reviewer_read_pdf_pages_one_based": [
+        26,
+        27,
+        38,
+        39,
+        40,
+        43
+      ],
+      "method": "Official arXiv metadata opened; existing frozen PDF bytes independently hashed and read by numbered PyMuPDF pages. No assertion of an independent download or full-paper read.",
+      "import_class": "non-derivation analogy",
+      "repository_republication": false
+    }
+  ],
+  "existing_literature_ledger": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_full_colour_literature.md",
+    "sha256": "4894a6530bc2eb3337ea3d8793756b95a8ce769b8e117be85e700727412562d9",
+    "bytes": 8339,
+    "read_coverage": "complete 65-line ledger; lookup aid only"
+  },
+  "independence_order": "Criteria before independent code. Both programs implemented and successfully executed before author runners were read. Author prose numerical summaries had been visible; shared mathematical formulas and strip parameters disclosed.",
+  "scope": "All-depth analytic proof reconstruction within normalized supplied model; finite controls support implementations only. No whole-PR or independent audit verdict."
+}

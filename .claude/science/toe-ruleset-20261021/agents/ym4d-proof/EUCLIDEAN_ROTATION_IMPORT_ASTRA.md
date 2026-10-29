@@ -329,9 +329,11 @@ state need not be RP for the fixed test plane.
 ## 5. A bounded-observable spectral comparison that does not use R-exp
 
 **Conditional spectral-cone lemma.** Suppose one ordinary probability law
-has a local observable net on R^d, translations acting strongly continuously
-on its L2 space, measure-preserving coordinate and diagonal reflections,
-and RP on the closed positive-half L2 subspaces. Suppose bounded observables
+has a local observable net on R^d. Geometric translations and coordinate
+and diagonal reflections act covariantly on that net, preserve the law,
+and satisfy the usual reflection–translation relations. Assume translations
+act strongly continuously on its L2 space, and RP holds on the closed
+positive-half L2 subspaces. Suppose bounded observables
 with compact positive supports have dense images in each relevant OS
 quotient. Then the coordinate time generator H and each tangential
 translation generator P_j satisfy

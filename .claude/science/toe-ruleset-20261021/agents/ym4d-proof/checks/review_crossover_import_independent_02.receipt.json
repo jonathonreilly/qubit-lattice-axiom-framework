@@ -1,0 +1,34 @@
+{
+  "command": [
+    "/usr/local/bin/python3",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_independent_02.py"
+  ],
+  "cwd": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "started_utc": "2026-10-29T18:24:53.031644+00:00",
+  "elapsed_seconds": 0.7891744999797083,
+  "exit_code": 0,
+  "author_runner_read": false,
+  "change": "Only replace mpmath default ~1e-71 equality tolerance for quadrature by explicit 1e-60. Attempt01 zero-coupling quadrature error is 4.392276e-67, not an identity failure. Original two failures retained.",
+  "artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_independent_02.py",
+      "sha256": "eaf77dcf3b3add6be6962a961973801468d46afbf95d73eedde4da54e088eacf",
+      "bytes": 16008
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_independent_02.stdout.json",
+      "sha256": "e0906081d92d0b53f62d205077583891e20f86ff9738b9c9c49ba7771992b3b9",
+      "bytes": 38273
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_independent_02.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_criteria.md",
+      "sha256": "258daa80239433d0662a3b625395ce734527512c28c7b4d8db222bee2b736f30",
+      "bytes": 3481
+    }
+  ]
+}

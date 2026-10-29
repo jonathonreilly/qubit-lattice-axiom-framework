@@ -1,0 +1,26 @@
+{
+  "schema": "scoped-review-findings-v1",
+  "source_sha256": "de024b1d6df4a959fb85b2743be2141e93446e735a8ebe6672ff8f28f233e33f",
+  "findings": [
+    {
+      "id": "CIB-R1",
+      "type": "BUG",
+      "scope": "diagnostic sensitivity only",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_exact.py",
+      "function": "pivot_geometry",
+      "evidence": "Replacing diameter = 4 * R * (q - 1) by 3 * R * (q - 1) still passes79/79 and exits0; review_crossover_import_mutations_01.json",
+      "effect": "No independent coordinate-based test of the claimed exact diameter in author runner. Written formula is correct and reviewer computed it independently.",
+      "requested_fix": "Compute diameter from actual 4D point set using independently implemented l1 extrema and assert equality with formula. Preserve attempt01."
+    },
+    {
+      "id": "CIB-R2",
+      "type": "PROOF_OBLIGATION",
+      "scope": "admissibility of marked witness only",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CROSSOVER_LITERATURE_BRIDGE_ASTRA.md",
+      "location": "Section1 normalization source derivatives",
+      "evidence": "D_t K_XY=I has weighted operator row2, exceeding<1/8; derivatives themselves are algebraically correct.",
+      "effect": "Unmarked rank witness remains valid; the sentence calling raw t derivatives a general marked-lemma test needs an admissible parameter family.",
+      "requested_fix": "Use t(s)=t0(1+s), t0=1/64, |s|\u22641/4. Weighted orders0\u20133 row\u22645/128<1/8. Chain factors t0 and t0\u00b2 retain rank growth; no actual optical-source realization asserted."
+    }
+  ]
+}

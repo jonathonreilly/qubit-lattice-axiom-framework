@@ -1,6 +1,6 @@
 # Uniform soft-minimizer curvature and residual kernels
 
-Author proof unit in the supplied SU(N) Wilson / normalized S4′ soft-kernel model. **FC19 follows from the existing linear package with `theta=L^-2`; consequently FC20 gives a depth-uniform neutral quartic jet.** The new work is the exact identification of that earlier result with this consumer, the separate absolute weighted row and column estimates, and their application to the actual contour spreads. The uniform analytic data-kernel theorem and intermediate-curvature lemma are prior work, explicitly credited below. This unit is awaiting independent review; it supplies no audit verdict.
+Author proof unit for the **u-stripped tree phase** of the supplied SU(N) Wilson / normalized S4′ soft-kernel model. **FC19 follows from the existing linear package with `theta=L^-2`; consequently FC20 gives a depth-uniform neutral quartic jet of the stationary tree value `T_n`.** The new work is the exact identification of that earlier result with this consumer, the separate absolute weighted row and column estimates, and their application to the actual contour spreads. The uniform analytic data-kernel theorem and intermediate-curvature lemma are prior work, explicitly credited below. This unit is awaiting independent review; it supplies no audit verdict.
 
 ```yaml
 actual_current_surface_status: exact-support
@@ -19,7 +19,7 @@ The full Yang–Mills existence and physical continuum mass-gap problem remains 
 
 ## 1. Exact target and reusable source
 
-Fix `d=4`, `N>=2`, odd `L>=3`, `0<kappa_-<=kappa_j<=kappa_+<infinity`, depth `n>=1`, and a periodic top torus of side `T>=3`. The requested constant-kappa case is included. At the trivial field, each real colour has the quadratic energy
+Fix `d=4`, `N>=2`, odd `L>=3`, `0<kappa_-<=kappa_j<=kappa_+<infinity`, depth `n>=1`, and a periodic top torus of side `T>=3`. The requested constant-kappa case is included. The quadratic part at the trivial field of the normalized tree phase, with the overall factor `u=1/g^2` removed, is, for each real colour,
 
 ```
 E(a_0,...,a_(n-1);v)
@@ -28,7 +28,7 @@ E(a_0,...,a_(n-1);v)
 a_n=v.                                                        (US1)
 ```
 
-These are integrated link variables in each level's own unit lattice, and all adjoints use ordinary counting inner products. This is the Hessian of the **normalized** soft action; the contour-spread quadratic term has been canceled by its normalization. Replacing it by the unnormalized kernel would change US1 and invalidate the result. The fourth-order polar terms are retained in FC18.
+These are integrated link variables in each level's own unit lattice, and all adjoints use ordinary counting inner products. US1 is the quadratic part of the **u-stripped normalized tree phase** `F_tree=sum_p s(U_p)+sum_(j,c) kappa_j phi_(M_c(U_j))(U_(j+1),c)`, where `phi_M(V)=N^-1[max_W Re tr(W^-1 M)-Re tr(V^-1 M)]` and the maximum is over `SU(N)`. Its stationary value is the `T_n` used in FC18–FC20. The quadratic contour-spread term cancels in this phase. The exact finite-u negative logdensity also contains the field-dependent logarithm of a Haar integral, whose quadratic spread contribution is nonzero at finite u; US1 is not its full Hessian divided by u. FC18's fourth-order polar terms refer to `F_tree` and `T_n`.
 
 Write `r_j=a_(j+1)-Q_root,j a_j`, `f_j=d_2 a_j`, and `F_j=L^(2(n-j)) f_j`. The older linear package uses the opposite residual sign and calls `F_j` its `f_j`. This sign changes no absolute norm. `z_(j,tau)=theta_tau(a_j)-average_tau theta_tau(a_j)` is the actual S4′ spread attached to a level-(j+1) link; `tau` includes the coordinate ordering and block point. Distances throughout this note are in **top-level lattice units**.
 

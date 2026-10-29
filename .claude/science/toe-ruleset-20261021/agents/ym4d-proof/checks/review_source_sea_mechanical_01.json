@@ -1,0 +1,22 @@
+{
+  "created_at_utc": "2026-10-29T18:14:08.240229+00:00",
+  "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "checks": {
+    "all_original_frozen_inputs_unchanged": true,
+    "independent_implementations_and_first_outputs_unchanged": true,
+    "all_nine_invariant_groups_and_twenty_control_predicates_pass": true,
+    "reviewer_python_syntax": true,
+    "owned_text_whitespace_and_empty_execution_stderr": true,
+    "vocabulary_lint_report_and_criteria": true,
+    "existing_report_local_links": true
+  },
+  "details": {
+    "aggregate_counts": {
+      "invariant_groups": 9,
+      "control_predicates": 20
+    },
+    "vocabulary_lint_stdout": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)",
+    "receipt_link_pending_final_creation": true
+  },
+  "scope": "owned source review artifacts only; not combined candidate validation"
+}

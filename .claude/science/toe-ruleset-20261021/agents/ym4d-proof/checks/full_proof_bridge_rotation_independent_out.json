@@ -1,0 +1,84 @@
+{
+  "actual_contours": {
+    "boundary_witness": {
+      "L": 5,
+      "height": -4,
+      "point": [
+        -2,
+        2,
+        0,
+        0
+      ]
+    },
+    "paths": 118608,
+    "vertex_visits": 2002224
+  },
+  "clover": {
+    "constant_source_sum_multiplier": 2,
+    "diagonal_radii": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "plaquette_source_coefficient": "f0/2 + f1/2 + f2/2 + f3/2"
+  },
+  "crossing_orientation": {
+    "correct": "9072/5525",
+    "negative_quadratic": "-3",
+    "positive_quadratic": "3",
+    "wrong": "-336/221"
+  },
+  "derivative_gaussian": {
+    "complex_pole_numerator": "-359438400/815730721",
+    "isotropic_control": "exact zero",
+    "mirror_identities": 16,
+    "polynomial_remainder_nonzero": true,
+    "rational_rotation": "5/13, 12/13"
+  },
+  "diagonal_plaquette_geometry": {
+    "pairs": 5832,
+    "straddlers": 270
+  },
+  "normalizer_control": {
+    "fixed_coarse_RP_form": "-1/4",
+    "integrated_coarse_RP_form": "0",
+    "integrated_fine_marginal": [
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4"
+    ]
+  },
+  "periodic_scalar_control": {
+    "connected_nonfixed_sites": 12,
+    "coordinate_eigenvalues": {
+      "2/105": 2,
+      "2/15": 1,
+      "2/315": 1
+    },
+    "determinant": "-19/3675",
+    "diagonal_gram": "Matrix([[2/45, 5/63], [5/63, 8/315]])",
+    "orbit_values": {
+      "(0, 0)": "83/315",
+      "(0, 1)": "5/63",
+      "(0, 2)": "2/45",
+      "(1, 1)": "2/45",
+      "(1, 2)": "2/63",
+      "(2, 2)": "8/315"
+    }
+  },
+  "spectral_algebra": {
+    "full_spatial_cone_proved": false,
+    "mass_gap_proved": false,
+    "v_u_transform": "exact half factors; analytic proof required"
+  }
+}

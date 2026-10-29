@@ -1,0 +1,173 @@
+{
+  "created_utc": "2026-10-29T19:16:15.721564+00:00",
+  "all_ok": true,
+  "runs": [
+    {
+      "label": "covariance_author",
+      "command": [
+        "/usr/local/bin/python3",
+        "soft_fluctuation_check.py",
+        "--mode",
+        "all"
+      ],
+      "copies": {
+        "soft_fluctuation_check.py": "1ff38b76aca0b46097d589432d058ede2abd2f8d06dfae15469702889867cc27"
+      },
+      "temporary_directory": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-bridge-root-replay-gpxtwj2j/covariance_author",
+      "exit_code": 0,
+      "wall_seconds": 17.690397262573242,
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_bridge_covariance_author_out.json",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_bridge_covariance_author_err.txt",
+      "stdout_sha256": "0481f128f536415acd58aba906b27645f98bc609ae0818f7271c4d0531ff1397",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reference": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_all_02.json",
+      "reference_sha256": "73cd2a8ef4f5db16018c4355e646924d0ff345dcd84826d5fd4333d2d8d61b88",
+      "excluded_top_level_field": "elapsed_seconds",
+      "exact_non_time_json_match": true,
+      "differing_top_level_keys": [],
+      "source_and_reference_unchanged": true
+    },
+    {
+      "label": "crossover_independent",
+      "command": [
+        "/usr/local/bin/python3",
+        "review_crossover_import_independent_02.py"
+      ],
+      "copies": {
+        "review_crossover_import_independent_02.py": "eaf77dcf3b3add6be6962a961973801468d46afbf95d73eedde4da54e088eacf"
+      },
+      "temporary_directory": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-bridge-root-replay-gpxtwj2j/crossover_independent",
+      "exit_code": 0,
+      "wall_seconds": 0.9814481735229492,
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_bridge_crossover_independent_out.json",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_bridge_crossover_independent_err.txt",
+      "stdout_sha256": "e0906081d92d0b53f62d205077583891e20f86ff9738b9c9c49ba7771992b3b9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reference": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_independent_02.stdout.json",
+      "reference_sha256": "e0906081d92d0b53f62d205077583891e20f86ff9738b9c9c49ba7771992b3b9",
+      "excluded_top_level_field": null,
+      "exact_non_time_json_match": true,
+      "differing_top_level_keys": [],
+      "source_and_reference_unchanged": true
+    },
+    {
+      "label": "crossover_mark",
+      "command": [
+        "/usr/local/bin/python3",
+        "review_crossover_import_mark_admission.py"
+      ],
+      "copies": {
+        "review_crossover_import_mark_admission.py": "1fad264243a0c02383296d10bb0929fe7827da05dd3a64580ee96eed1ecfad75"
+      },
+      "temporary_directory": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-bridge-root-replay-gpxtwj2j/crossover_mark",
+      "exit_code": 0,
+      "wall_seconds": 0.344257116317749,
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_bridge_crossover_mark_out.json",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_bridge_crossover_mark_err.txt",
+      "stdout_sha256": "293165f11b61a1188ef1988209256c39cf8681efe5842901268f6d64584157d2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reference": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mark_admission_01.stdout.json",
+      "reference_sha256": "293165f11b61a1188ef1988209256c39cf8681efe5842901268f6d64584157d2",
+      "excluded_top_level_field": null,
+      "exact_non_time_json_match": true,
+      "differing_top_level_keys": [],
+      "source_and_reference_unchanged": true
+    },
+    {
+      "label": "rotation_controls",
+      "command": [
+        "/usr/local/bin/python3",
+        "review_euclidean_rotation_additional_controls.py"
+      ],
+      "copies": {
+        "review_euclidean_rotation_additional_controls.py": "a741dd716c91bacc81d2d20a79eadbddb9a50a9244211c7e11955af6224d4316",
+        "euclidean_rotation_import_exact.py": "7af6babaaaa29e89c0562896f30efa8da45e09a1e0c3a53ba1d9f2567b193cb0"
+      },
+      "temporary_directory": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-bridge-root-replay-gpxtwj2j/rotation_controls",
+      "exit_code": 0,
+      "wall_seconds": 0.3025641441345215,
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_bridge_rotation_controls_out.json",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_bridge_rotation_controls_err.txt",
+      "stdout_sha256": "36b54d5546ed2ad11fd01ec62438bafde0b6e894c73100bc684b60e7680f3b9e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reference": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_additional_controls.stdout.json",
+      "reference_sha256": "36b54d5546ed2ad11fd01ec62438bafde0b6e894c73100bc684b60e7680f3b9e",
+      "excluded_top_level_field": null,
+      "exact_non_time_json_match": true,
+      "differing_top_level_keys": [],
+      "source_and_reference_unchanged": true
+    },
+    {
+      "label": "rotation_independent",
+      "command": [
+        "/usr/local/bin/python3",
+        "review_euclidean_rotation_independent.py"
+      ],
+      "copies": {
+        "review_euclidean_rotation_independent.py": "d119d453c5c7ac6a4805fc4a6c160d34d0b82e826794f862c43db3c3fe636ed4"
+      },
+      "temporary_directory": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-bridge-root-replay-gpxtwj2j/rotation_independent",
+      "exit_code": 0,
+      "wall_seconds": 1.4970970153808594,
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_bridge_rotation_independent_out.json",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_bridge_rotation_independent_err.txt",
+      "stdout_sha256": "0d4cccc7b99947b605b8d787227dee32367ebfedd1e74ae244966fb762d44289",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reference": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_attempt01.stdout.json",
+      "reference_sha256": "0d4cccc7b99947b605b8d787227dee32367ebfedd1e74ae244966fb762d44289",
+      "excluded_top_level_field": null,
+      "exact_non_time_json_match": true,
+      "differing_top_level_keys": [],
+      "source_and_reference_unchanged": true
+    },
+    {
+      "label": "rotation_matrix",
+      "command": [
+        "/usr/local/bin/python3",
+        "review_euclidean_rotation_matrix_mutations_attempt02.py"
+      ],
+      "copies": {
+        "review_euclidean_rotation_matrix_mutations_attempt02.py": "3e7d2cd00e8ac08e0a02976c35a97581df41d2be0672090cc10332783f128331",
+        "euclidean_rotation_import_exact.py": "7af6babaaaa29e89c0562896f30efa8da45e09a1e0c3a53ba1d9f2567b193cb0"
+      },
+      "temporary_directory": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-bridge-root-replay-gpxtwj2j/rotation_matrix",
+      "exit_code": 0,
+      "wall_seconds": 0.27659177780151367,
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_bridge_rotation_matrix_out.json",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_bridge_rotation_matrix_err.txt",
+      "stdout_sha256": "bd1c78a9f4ac38b0434788508e703f7b0633e7ad8b71e99c81f760572022b467",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reference": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_matrix_mutations_attempt02.stdout.json",
+      "reference_sha256": "bd1c78a9f4ac38b0434788508e703f7b0633e7ad8b71e99c81f760572022b467",
+      "excluded_top_level_field": null,
+      "exact_non_time_json_match": true,
+      "differing_top_level_keys": [],
+      "source_and_reference_unchanged": true
+    },
+    {
+      "label": "tree_group_author",
+      "command": [
+        "/usr/local/bin/python3",
+        "soft_fluctuation_tree_group.py"
+      ],
+      "copies": {
+        "soft_fluctuation_tree_group.py": "4815deb9b3bb71483dfeec5fb55d67312dbb11e0823862ef8b0973e30593c19a"
+      },
+      "temporary_directory": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-bridge-root-replay-gpxtwj2j/tree_group_author",
+      "exit_code": 0,
+      "wall_seconds": 0.7244079113006592,
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_bridge_tree_group_author_out.json",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_bridge_tree_group_author_err.txt",
+      "stdout_sha256": "df49c9e873cec3b242fca226d309d59a5974c32091ebe8b6af6bcc70698d998d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reference": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_tree_group_02.json",
+      "reference_sha256": "503eef57f75af37c79e15c0fcc1d30394d2d98975517080ec03727f700d42492",
+      "excluded_top_level_field": "elapsed_seconds",
+      "exact_non_time_json_match": true,
+      "differing_top_level_keys": [],
+      "source_and_reference_unchanged": true
+    }
+  ],
+  "frozen_artifact_records": 116,
+  "scope": "Five reviewed-bridge diagnostic reproductions and two covariance-author reproductions. This adds no independent proof review or continuum theorem."
+}

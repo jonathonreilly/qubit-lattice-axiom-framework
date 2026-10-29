@@ -1,0 +1,23 @@
+{
+  "label": "rotation_independent",
+  "command": [
+    "/usr/local/bin/python3",
+    "review_euclidean_rotation_independent.py"
+  ],
+  "copies": {
+    "review_euclidean_rotation_independent.py": "d119d453c5c7ac6a4805fc4a6c160d34d0b82e826794f862c43db3c3fe636ed4"
+  },
+  "temporary_directory": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-bridge-root-replay-gpxtwj2j/rotation_independent",
+  "exit_code": 0,
+  "wall_seconds": 1.4970970153808594,
+  "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_bridge_rotation_independent_out.json",
+  "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_bridge_rotation_independent_err.txt",
+  "stdout_sha256": "0d4cccc7b99947b605b8d787227dee32367ebfedd1e74ae244966fb762d44289",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "reference": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_attempt01.stdout.json",
+  "reference_sha256": "0d4cccc7b99947b605b8d787227dee32367ebfedd1e74ae244966fb762d44289",
+  "excluded_top_level_field": null,
+  "exact_non_time_json_match": true,
+  "differing_top_level_keys": [],
+  "source_and_reference_unchanged": true
+}

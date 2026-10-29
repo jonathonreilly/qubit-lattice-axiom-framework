@@ -1,0 +1,12 @@
+{
+  "frozen_at_utc": "2026-10-29T18:01:31.414278+00:00",
+  "statement": "All three independent implementations and first outputs were completed before reading the author checker; the author checker has now been read.",
+  "files": {
+    "review_source_sea_geometry.py": "0ffc45711e80337446db0825ff98bd6db754a3cecb4b33a1f25a674ef987195d",
+    "review_source_sea_geometry_01.json": "443aebc331c5ad7ce251ecbacbee35b017a2665a78d32fb50c55a331c0bd5c78",
+    "review_source_sea_refinement.py": "a402029f38081ddfc2c9d4fc03112cf81f123716771561d73c5ba892991eb0a6",
+    "review_source_sea_refinement_01.json": "1bcb708797d6a5c7cb484cac5bb116f26d093ce0a12b4423d7359e73247d3ab2",
+    "review_source_sea_su2.py": "08ba1bdfccd0ec4ecc562d487dd4cb201ff55b1bd0cc5bc43fcad1c53f76b278",
+    "review_source_sea_su2_01.json": "368b63b25d9f232bd9d5576cdd507ae4c2270b7525970bdeca9f54334da28311"
+  }
+}

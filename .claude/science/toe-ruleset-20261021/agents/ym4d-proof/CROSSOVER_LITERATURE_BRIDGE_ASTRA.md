@@ -89,7 +89,11 @@ Two normalization checks make this distinction operational.
   \partial_t^2\tfrac d2\log(1-t^2)
       =-\frac{d(1+t^2)}{(1-t^2)^2}.
   \]
-  Subtracting the zero-source vacuum constant does not remove these derivatives. This is a test of the general marked lemma, **not** a claim that Kirk's actual fixed optical precision has this source dependence. Even for fixed precision, normalizers of different decompositions into bad cores need not be one common scalar across the sum of label histories.
+  These are algebraic derivatives with respect to t; taking t itself as the structural mark would violate the small marked-row hypothesis because the weighted first derivative would be 2. For an admissible marked witness, set `t(s)=t0(1+s)`, `t0=1/64`, `|s|<=1/4`. The weighted block row through derivative order three is at most `max(2t0(1+1/4),2t0,0,0)=5/128<1/8`. At s=0 the derivatives of the logarithmic normalizer with respect to s are
+
+  `-d t0^2/(1-t0^2)` and `-d t0^2(1+t0^2)/(1-t0^2)^2`.
+
+  Subtracting the zero-source vacuum constant does not remove these nonzero, rank-dependent responses. This correctly parameterized example tests the general marked lemma; it is **not** a claim that Kirk's actual fixed optical precision has this source dependence. Even for fixed precision, normalizers of different decompositions into bad cores need not be one common scalar across the sum of label histories. This paragraph is the scoped CIB-R2 correction; the unmarked rank argument is unchanged.
 
 Corollary 4.2, PDF pp.23–24, is itself a correct trace-sensitive Gaussian estimate:
 
@@ -192,6 +196,8 @@ Larger fixed separation accommodates bounded pivot buffers without changing this
 
 This is a counterexample to the **geometric implication used in the proof**, not yet to the actual family of reference activities. If those activities hit at most two pivots, or obey a stronger tree-length estimate, the required conclusion may be repairable. That structural information has to be supplied for the exact reference inventory. The existing diameter row by itself does not supply it. No synthetic many-body activity is represented here as an activity of the Wilson measure.
 
+The manuscript does print potential stronger suppliers: §4.6 uses the support-tree weight `exp(kappa tau(X))`, Lemma 6.22/(59) asserts a support-size weight, and Appendix A Theorem A.20(E1)/(233) gives `exp(a1 tau(X))` for the reference, regular and irregular activities. Their retained reserve and complete upstream hypotheses have not been validated here. They may repair the literal diameter step if matched to the exact inventory; the finding is not that every stronger estimate is absent from the paper.
+
 ## 4. The compact-Haar part has a valid bounded form
 
 For clarity, the basic pivot mechanism can be reconstructed directly from the finite-volume Wilson measure at \(\beta_W\ge0\). On a nondegenerate four-dimensional hypercubic lattice, a link belongs to at most six plaquettes. At fixed values \(\eta\) of all other links, its conditional energy has oscillation at most \(12\beta_W\), since each normalized real character lies in \([-1,1]\). Therefore its **normalized** conditional density satisfies
@@ -221,6 +227,8 @@ The source algebra needed for a physical gap is much larger than these separatel
 [checks/crossover_import_attempt01.py](checks/crossover_import_attempt01.py) is an immutable snapshot of the first executed diagnostic. Its [receipt](checks/crossover_import_attempt01.receipt.json) records the command, hashes, and successful exit; [stdout](checks/crossover_import_attempt01.stdout.json) records the runtime versions and **79/79 checks**. There were no earlier failed runs hidden by replacement.
 
 The checks include exact rational determinants and an independent plus/minus diagonalization; rejected missing-rank, wrong-Schur-sign, and omitted-normalizer mutations; zero-coupling, fixed-rank, and fixed-HS controls; rectangular Schur identities; analytic marked normalizers checked by high-precision finite differences; the four-dimensional pivot geometry and a single-path control; and an exact finite-group product-minorization illustration. The finite-group check tests the algebra of (8), not `SU(N)` integration or continuum physics. The asymptotic rank and geometry conclusions are proved by (2) and (6), not by extrapolating finite tests. There is no lattice simulation here.
+
+**Review corrections CIB-R1/CIB-R2.** The original runner and its 79/79 output remain preserved. Its geometry calculation inserted the displayed diameter formula without independently checking it; a wrong coefficient survived. The [additive corrected runner](checks/crossover_import_exact_v2.py) now computes the actual point-set diameter from all signed coordinate extrema and compares it to that formula. It also tests the admissible marked responses above and rejects missing chain factors. The [repair receipt](checks/crossover_import_control_fix_receipt.json) binds the new evidence and affected review. These corrections do not turn the finite controls into a continuum result.
 
 The numerical values are only diagnostics. At \(t=1/64\), \(-\log r_d(0,0)\) rises from approximately \(0.000122085\) at \(d=1\) to \(128.0156\) at \(d=1,048,576\), with precisely the same printed operator row. The proof is its exact linear dependence on \(d\).
 

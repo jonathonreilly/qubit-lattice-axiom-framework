@@ -15,48 +15,65 @@ terminal obligation. Worker names and alternative wordings do not create
 additional families. Rows are related; no count of independent barriers or
 percentage completion is asserted.
 
-### Next producer checkpoint — 29 October 2026
+### Reviewed producer checkpoint — 29 October 2026
 
-Three additional author units are frozen and preserved, with their independent
-review status kept separate from their diagnostic results.
+Four bounded units now have fresh independent reviews, including affected
+confirmation of the corrections. They do not complete either continuum target.
 
-- [Uniform soft minimizer](UNIFORM_SOFT_MINIMIZER_ASTRA.md): the candidate
-  proves FC19 with `theta=L^-2` using the actual stationary chain, uniform
-  complex strip, local Stokes fillings and separate weighted row/column
-  counting. Its consequence is the neutral FC20 quartic bound. Charged
-  exchange, the finite-part increment and nonlinear flow remain open.
-  A fresh Astra/max review is completing its report.
-- [Source sea construction](SOURCE_SEA_CONSTRUCTION_ASTRA.md): the candidate
-  uses a reflection-positive cell-penalty family and its infinite-penalty
-  limit to price exact rough histories relative to the integrated all-cut
-  reference at every admissible even volume. Clean coarse mismatches use the
-  actual normalized kernel; correlated refinements and localized original
-  sources are retained. This is not the fixed-V connected source logarithm
-  or a multilevel induction. Fresh review found an unimplemented negative
-  control in the original diagnostics; the [additive repair](checks/source_sea_control_fix_receipt.json)
-  constructs its probability law explicitly and has received affected
-  independent confirmation. Original code, outputs and manifest are preserved.
-- [Crossover literature bridge](CROSSOVER_LITERATURE_BRIDGE_ASTRA.md): the
-  author identifies a missing mode count in a printed Gaussian determinant
-  inference and an unsupported diameter-to-incidence inference in Kirk v4.
-  These are scoped proof-inference findings awaiting separate review, not
-  counterexamples to its actual Wilson construction or a whole-paper verdict.
-  The dimension-aware replacement and fixed-cell forest organization are
-  constructive leads; physical continuum clustering is still unproved.
+- [Uniform soft minimizer](UNIFORM_SOFT_MINIMIZER_ASTRA.md):
+  [review](REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md) and
+  [scope correction](checks/review_uniform_soft_scope_confirmation.md)
+  confirm FC19 with `theta=L^-2` and neutral FC20 for the **u-stripped tree
+  phase and stationary value T_n**. The exact finite-u density retains a
+  positive normalizer spread term. Charged quartic exchange and the full
+  finite-part increment remain open.
+- [Source sea](SOURCE_SEA_CONSTRUCTION_ASTRA.md):
+  [review](REVIEW_SOURCE_SEA_CONSTRUCTION_ASTRA.md) confirms the one-level
+  integrated-reference estimate, including the closed-cell chessboard
+  hypotheses, correlated refinements and localized original sources.
+  SEA-CONTROL-01 is repaired with an explicitly enumerated probability law.
+  Fixed-V connected logarithms, nonvanishing and multilevel closure remain
+  unconstructed.
+- [Crossover literature bridge](CROSSOVER_LITERATURE_BRIDGE_ASTRA.md):
+  [review](REVIEW_CROSSOVER_LITERATURE_BRIDGE_ASTRA.md) confirms the scoped
+  trace/rank and diameter-inference findings after CIB-R1/R2 corrections.
+  The marked witness is now admissible and the geometry control measures its
+  generated points. Stronger support-size/tree estimates printed in the
+  candidate paper remain possible repair suppliers. No actual optical-matrix
+  counterexample or whole-paper verdict is claimed.
+- [Reflection-to-rotation bridge](EUCLIDEAN_ROTATION_IMPORT_ASTRA.md):
+  [review](REVIEW_EUCLIDEAN_ROTATION_IMPORT_ASTRA.md) confirms finite free-box
+  diagonal Wilson RP and the conditional bounded-observable spectral cone,
+  with invariant geometric translations now explicit. Same-state periodic
+  transfer and the global source bound remain missing. The full external
+  RPM1 theorem is not certified, and the cone is not a positive mass gap.
 
-[Coordinator reproduction](checks/full_proof_next_authors_replay_summary.json)
-reproduced all six original author invocations. All scientific output fields
-agree; only four declared runtime fields are excluded from comparison.
-[Byte binding](checks/full_proof_next_authors_bindings.json) verifies 46 frozen
-artifacts and 118 artifact/input records. The minimizer's first 56 predicates
-repeat in three invocations, and the source program reports six test groups;
-these are not a count of independent proofs. The corrected source runner
-passes all six groups with the other recorded results unchanged.
+The [identity-background covariance construction](SOFT_FLUCTUATION_COVARIANCE_ASTRA.md)
+now supplies an explicit finite-u Gaussian reference, local tree measure,
+weighted inverse/square root and restricted-integral dictionary. Its chart
+radius and traceless principal-log domain were corrected during independent
+review; the final review packet is being frozen. General coarse backgrounds,
+the chart complement and interacting source activities are further work.
+A separate author is extending the full-colour stationary-jet construction,
+reusing the reviewed T-UNIF cubic estimate and retaining the forced
+second-order current and quartic exchange.
 
-The primary-literature register now also names the exact chessboard imports,
-the two-level forest construction, and a pinned public rotation-invariance
-proposal. A fresh Astra/max worker is checking the latter's actual probability,
-source-growth, reflection and regulator hypotheses against this lane.
+[Review reproduction](checks/full_proof_next_reviews_replay_summary.json)
+and [bridge/covariance reproduction](checks/full_proof_bridge_reviews_replay_summary.json)
+reproduce fourteen diagnostic invocations exactly apart from their declared
+timing fields. They bind 174 frozen artifact records, with the original
+covariance source preserved at its recorded commit, and separately bind the
+corrected sources. These are coordinator reproductions, not another
+independent mathematical review. Original failures and superseded evidence
+remain preserved.
+
+Concurrent Claude progress is retained: [HRP R2](REVIEW_HRP_R2.md) resolves
+its earlier bounded coordinate-RP hold; [SOFTHARD review](REVIEW_SOFTHARD.md)
+leaves four comparison-memo corrections open and recommends provisional
+KEEP-SOFT. Neither supplies continuum existence or a physical mass threshold.
+The literature register now contains 35 explicitly scoped entries, with
+primary-source coverage distinguished from complete proof certification.
+
 Both **full continuum existence and the physical continuum mass gap remain
 OPEN**. No audit grade or whole-PR verdict is added at this checkpoint.
 

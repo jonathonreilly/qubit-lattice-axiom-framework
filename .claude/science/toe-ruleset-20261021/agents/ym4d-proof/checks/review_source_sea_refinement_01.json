@@ -1,0 +1,70 @@
+{
+  "checks": {
+    "periodic_Z2_penalty_chessboard_reference_and_holes": true,
+    "normalized_fine_marginal_and_original_integrated_reference": true,
+    "joint_refinement_with_correlated_insertion_and_original_sources": true,
+    "clean_mismatch_conditional_product_with_dirty_unrestricted": true
+  },
+  "negative_controls": {
+    "remove_penalty_before_infinite_limit_rejected": true,
+    "raw_probability_is_not_reference_ratio": true,
+    "unreplaced_sea_history_rejected": true,
+    "uniform_coarse_reference_rejected": true,
+    "dropped_kernel_normalizer_rejected": true,
+    "dirty_link_clean_tail_rejected": true
+  },
+  "periodic_Z2": {
+    "configurations": 256,
+    "realized_patterns": 8,
+    "Z_delta": 0.125,
+    "penalty_runs": [
+      {
+        "h": 0,
+        "Z_h": 0.17106977993347383,
+        "max_chessboard_ratio": 1.0
+      },
+      {
+        "h": 0.2,
+        "Z_h": 0.1557793476429214,
+        "max_chessboard_ratio": 1.0
+      },
+      {
+        "h": 1.3,
+        "Z_h": 0.1283899856448859,
+        "max_chessboard_ratio": 1.0
+      },
+      {
+        "h": 5,
+        "Z_h": 0.12500207058038176,
+        "max_chessboard_ratio": 1.0
+      },
+      {
+        "h": 15,
+        "Z_h": 0.12500000000000427,
+        "max_chessboard_ratio": 1.0
+      }
+    ]
+  },
+  "refinement": {
+    "joint_states": 128,
+    "bins_with_insertion": 85,
+    "max_replacement_error": 1.3985787785349405e-17,
+    "unreplaced_history_gap": 0.08890788575380595,
+    "uniform_reference_gap": 0.47656389276943334,
+    "Z_cut_V": {
+      "(-1, -1)": 0.006014752493624448,
+      "(-1, 1)": 0.0189229922390057,
+      "(1, -1)": 0.0189229922390057,
+      "(1, 1)": 0.1274644958825835
+    },
+    "Z_delta": 0.03125,
+    "Z_cut": 0.04283130821355483,
+    "Z_W": 0.05284885119669063,
+    "normalizer_omission_gap": 0.042563353549034504,
+    "max_clean_refinement_ratio": 1.0000000000000002,
+    "clean_mismatch_probability": 0.008162571153159897,
+    "dirty_mismatch_probability": 0.5
+  },
+  "scope": "finite Z2 gauge/conditional slice diagnostics, not SU(N), 4D RP, or continuum proofs",
+  "seconds": 0.006312847137451172
+}

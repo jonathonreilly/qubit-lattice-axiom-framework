@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-10-29T19:20:58.499136+00:00",
+  "entries": 35,
+  "root_read_in_full": [
+    "UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+    "SOURCE_SEA_CONSTRUCTION_ASTRA.md",
+    "CROSSOVER_LITERATURE_BRIDGE_ASTRA.md",
+    "EUCLIDEAN_ROTATION_IMPORT_ASTRA.md",
+    "SOFT_FLUCTUATION_COVARIANCE_ASTRA.md",
+    "REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+    "checks/review_uniform_soft_scope_review.md",
+    "REVIEW_SOURCE_SEA_CONSTRUCTION_ASTRA.md",
+    "REVIEW_CROSSOVER_LITERATURE_BRIDGE_ASTRA.md",
+    "REVIEW_EUCLIDEAN_ROTATION_IMPORT_ASTRA.md",
+    "REVIEW_SOFTHARD.md"
+  ],
+  "primary_read_coverage_authority": [
+    "checks/review_uniform_soft_source_manifest.json",
+    "checks/review_source_sea_read_coverage.json",
+    "checks/review_crossover_import_read_manifest.json",
+    "checks/review_euclidean_rotation_coverage.json",
+    "checks/soft_fluctuation_primary_sources.json"
+  ],
+  "root_primary_scope": "This integration consumes the listed precise author/reviewer primary coverage; it does not claim a new root full-paper read.",
+  "external_theorem_limits": "RPM1 and Kirk full dependency chains not certified; Dimock analogies require actual-model hypotheses.",
+  "current_main_reconfirmed": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "bookkeeping_issue": "An initial status-file lookup used the nonexistent APPROACH.md; resolved to actual APPROACH_REGISTRY.md and SESSION25_RESULTS.md before any edits.",
+  "both_full_targets": "OPEN"
+}

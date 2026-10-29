@@ -361,11 +361,17 @@ necessary in any subsequent forest expansion.
 
 ## 6. Exact normalized change of variables, with remainder and complement
 
-Choose a fixed HS exponential-chart radius r smaller than the injectivity
-radius. Let `Omega_r` be the event that all non-tree links of the unique
-pinned tree representative have principal logarithms of norm <r. This event
-is invariant under root-pinned gauges and under global conjugation. This is a **global small-link chart**. In particular it is not defined
-by small curvature alone and does not cover all flat holonomies.
+Choose a fixed radius `0<r<min{injectivity radius, pi/sqrt(N)}` in the HS
+norm. Let `Omega_r` be the event that every non-tree link of the unique
+pinned tree representative belongs to `exp{A in su(N): ||A||_HS<r}`.
+Equivalently, its matrix principal logarithm is traceless and has HS norm
+less than r. The radius keeps every logarithm eigenvalue inside the principal
+branch; also `|tr Log W|<=sqrt(N)||Log W||_HS<pi`, so `det W=1` forces
+`tr Log W=0`. Thus this event is exactly the image of the specified
+traceless coordinate ball. It is invariant under root-pinned gauges and
+under global conjugation. This is a **global small-link chart**. In particular
+it is not defined by small curvature alone and does not cover all flat
+holonomies.
 
 In this chart define the scalar function
 

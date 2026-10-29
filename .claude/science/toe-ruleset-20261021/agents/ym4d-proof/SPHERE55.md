@@ -863,3 +863,46 @@ purely ultraviolet question IF the inputs hold in conditional form; none is prov
 - **Codex verdicts used — all AGREED after reading their arguments:** CODEX_REVIEW_P4 §1.1, §1.2, §2.1-§2.3, §3.1-§3.2,
   §4.1-§4.3; CODEX_REVIEW_UNIV §7.1-§7.3, §8, §11 (items 5, 7, 8 used); CODEX_REVIEW_TQ banked item 8;
   CODEX_REVIEW_ROTDEF banked items 1, 3 and Finding 3 (incorporated as table row Tm5).
+
+## 14. H_RP erratum — 2026-10-29 (append-only author correction; review pending)
+
+This subsection preserves the earlier text and overrides only the statements
+identified below. The complete author proof is [HRP.md](HRP.md), §§2–6;
+it has not yet received the independent review required for banking.
+
+1. **Role of coordinate RP (§1.5 versus §§5.2/13).** Section 1.5 says:
+   “The theta_mu RP is proved exactly as in §2 (same three ingredients);
+   I do not use it below except as a cross-check of the flat limit (§5).”
+   Its last clause contradicts §5.2's “The equatorial RP is not needed
+   for the flat limit at S” and §13's statement that “the RP planes
+   through S are exact lattice RP planes theta_mu of this construction”.
+   The correction is: **coordinate θ_μ RP is the finite-cutoff RP input
+   used by the flat-limit route at S.** Given separately established
+   continuum SO(4)_S state invariance it supplies RP for all great spheres
+   through S; translation invariance of the flat limit then supplies
+   affine-plane RP. Equatorial RP is not used in that chain.
+2. **Complete coordinate-prism argument (§2).** The chart crossing links
+   are μ edges from −a/2 to +a/2 in each chart. A seam link C_v preserves
+   chart coordinates and never crosses x_μ=0. The only extra crossing
+   plaquettes are e×[0,1] with e=(v,θ_μv); they are individually
+   θ_μ-invariant. Their boundary word is B_s C_{θ_μv} B_n^{-1} C_v^{-1}.
+   Splitting B_s and B_n into two independent Haar half-links gives
+   W_+W_-^{-1} inside the real trace, with W_-=θ_μW_+ and W_+
+   positive-half determined. Alternatively the matching-link gauge
+   transformation makes B_s=B_n=1 for gauge-invariant observables.
+   HRP §5 proves the incidence classification, measure symmetry and
+   positive-kernel integration explicitly. No regulator change is needed.
+3. **Position-dependent coefficient (§2).** The displayed “weight
+   (beta/4) k_e >= 0” is shorthand for constant cell coupling only.
+   For the actual §1.4 profile use β̂_p=¼Σ_{Q⊃p}2N/G(aΩ(z_Q))².
+   It is nonnegative and θ_μ-paired whenever the prescribed G is real,
+   finite and nonzero at the local spacings. RP uses those properties,
+   not a constant β, an observed range of k_e, or a seam-to-bulk bound.
+4. **Scope and status.** The author theorem covers bounded measurable
+   observables supported in a closed lattice half, hence the local
+   gauge-invariant clover
+   approximants. Its continuum use consumes the convergence and domain
+   hypotheses spelled out in HRP §6. It does not prove SO(5) restoration,
+   seam transparency, H_reg/(EXT), interaction, or a mass gap. The
+   former one-line coordinate-RP claim has a complete author proof now;
+   independent review and any later banking remain separate steps.

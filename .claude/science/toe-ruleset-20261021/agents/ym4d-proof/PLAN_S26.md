@@ -304,3 +304,15 @@ geometric — all conditional on the effective coupling staying ≤ γ at every 
   range of Q_k^T, and the multiplier term matching the soft residual rows.
 - 8 PROOF.md paraphrases of Balaban are wrong (BAL-F3), including CMP 99 cited as "CMP 95/96/102b" and an
   unsourced "β_j → 2b₀ ln L attributed to CMP 109".
+
+---
+
+## 12. Correction to §2d (the lead's overstatement), from CODEX_REVIEW_DAG
+
+§2d said decade bookkeeping "does not bear on truth" and SMALLNESS_DAG went on to "retire the decade ledgers".
+**That holds for one-sided constraints only.** Codex REFUTES unconditional retirement: **(TC), EXISTENCE's
+Compatibility (K), and the complex-width interface are two-sided feasibility windows** — a quantity squeezed from
+both sides, where the window must be non-empty and magnitudes therefore decide. (TC) is one, and it fails
+(RLARGE_U55.md, running, is repairing it). Rule from here: magnitudes are irrelevant for one-sided bounds on later
+choices and **essential for every two-sided window**; the DAG must tag each window and each must be checked
+numerically. A cutoff-family edge n_♯ → SC_k was also missing from the graph.

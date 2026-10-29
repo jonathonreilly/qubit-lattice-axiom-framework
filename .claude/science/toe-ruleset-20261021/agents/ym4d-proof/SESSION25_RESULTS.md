@@ -1459,3 +1459,23 @@ inputs, (NOISE-ADD) (nonlinear case open) and (ANTI-♭). **Most of the existenc
 the bar** (Lemma DIFF, LO-D, (WC)/NT-red, NT-pol, (H-sig^S), SIG-FREE, …; Corollary SEP (a) is the lane's own proof
 that soft running can be faked by noise). Codex review launched (CODEX_REVIEW_HINT.md). Note for Step 3: the soft
 scheme costs two extra witness inputs a hard scheme does not.
+
+**Node A — `NODEA55.md`** (claude-opus-5-5, max). Restricting F_< is necessary **but not sufficient**: the five
+statements also quantify over the conditioning F, and **Proposition F-UNIV (proven, explicit at k = 1)** shows
+(CEM^{COL}), (ACT′), (LCR^act′), (BCH-1) and the F-conditioned (SDP)/B3 are FALSE with universal F. All five restated
+with F_< restricted to capped history spectators and no F, constants uniform in n_♯; Lemma LT (moments polynomial in
+1/g² for the restricted class, e^{c/g²} otherwise). **New route (4°)** (relax a fixed 8-cube neighbourhood of the
+column; proven implications): node A then owes only the Y = ∅ case of (E2^𝔉′); j = k_0 recovered; level 0 reduces
+to one Wilson-moment statement (W0). **Residual:** by HW's TILT identity the weight drops out; in the linearised
+Gaussian model the moment bound is PROVEN via Prékopa-Leindler and Anderson's theorem (anti-correlation constant
+exactly 1) — "typicality, not the event" made precise: weight and constraints are symmetric and quasi-concave.
+**Missing for the real chain: (M1) an effective-action lower bound and (M2) an Anderson-type correlation
+inequality for the nonabelian chain, plus the n_♯ allowance.** 10 CONFIRMED / 9 REFUTED of prior claims; 14 new
+results proven. Codex review launched (CODEX_REVIEW_NODEA.md).
+
+**Codex returns:** TR CONFIRMED at the quadratic level (full nonlinear NOT-VERIFIED); TOP-cc / CC-FUN / CC-INV
+CONFIRMED as source-only linear estimates (gauge-invariant half of clause (b) at Z = 1 now holds with no response
+term); sphere route's equatorial RP CONFIRMED but the route does not yet rank first; DAG acyclicity CONFIRMED but
+**unconditional ledger retirement REFUTED — two-sided feasibility windows need magnitudes** (PLAN_S26 §12 corrects
+the lead). All banked in PROOF.md's [S26-BANKED] block. **Launched on Opus 5.5: HIGHER55.md — the higher-order
+exact-source estimates that would promote TR and CC-CRIT to full nonlinear.** Node A's (M1)+(M2) queued.

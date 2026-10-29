@@ -2,6 +2,8 @@
 
 This is a separately reviewable continuation. The original model note and the harmonic/free-symbol checkpoint remain frozen. The target is the actual normalized action's residual coefficient, not a new physical axiom. Every auxiliary gap below is distinct from the physical Hamiltonian mass gap now included in the full requested theorem.
 
+The load-bearing local sources are the [frozen harmonic lattice bridge](residual_det_lattice_bridge_working.md), the [finite/model determinant construction](../RESIDUAL_DETERMINANT_ASTRA.md), the [actual root-sector residual definition](../UIR2_55.md), the [normalized flow conventions](../FLOW55.md), and the [actual contour/action definitions](../PROOF.md). The [harmonic-bridge review](../REVIEW_RESIDUAL_LATTICE_BRIDGE_ASTRA.md) confirms only its stated finite/free input; it does not review the new vertices below.
+
 ## Pre-stated target and discriminating criteria
 
 At fixed depth n and κ>0, preserve the same finite determinant and gauge domains as the harmonic checkpoint. Derive a local off-shell residual representation, then prove that its mixed equation-of-motion/background coefficient is continuous and that its quadratic-residual coefficient is negligible after multiplying by the two external O(P²) residual factors. The needed conclusion is the actual Ρ_n=0 (or an explicit weaker all-increments bound), not free-symbol equality alone.

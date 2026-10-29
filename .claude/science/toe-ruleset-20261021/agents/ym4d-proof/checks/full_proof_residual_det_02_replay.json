@@ -1,0 +1,24 @@
+{
+  "started_utc": "2026-10-29T12:39:58.766947+00:00",
+  "duration_seconds": 0.634,
+  "scope": "Coordinator reproduction of author finite checks; independent mathematical review pending",
+  "command": [
+    "/usr/local/bin/python3",
+    "-B",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_02.py"
+  ],
+  "script_sha256": "c40c579b6d0686051d7b13bb8108586675480d9ba7cdd500c9362ee5171b78ef",
+  "exit_code": 0,
+  "stderr_bytes": 0,
+  "stdout_exact_match": true,
+  "outputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_residual_det_02_replay_out.txt",
+      "sha256": "44d47437576b0a9740cc429c3e699d315dd41c67d640479163d29d7359e32277"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_residual_det_02_replay_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

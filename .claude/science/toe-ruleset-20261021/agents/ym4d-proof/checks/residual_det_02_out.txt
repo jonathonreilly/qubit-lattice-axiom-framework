@@ -1,0 +1,20 @@
+PASS exact off-shell fine gauge-row identity
+PASS ungaugefixed augmented fine null vector
+PASS triangular shear has unit determinant modulus
+PASS shear exposes Delta_A squared
+PASS shear coarse-gauge mixed block vanishes
+PASS permutation determinant after shear
+PASS h-first determinant agrees
+PASS designed control: one Delta_A power missing
+PASS designed control: h determinant omitted
+PASS massive coarse elimination gives actual gauge profile
+PASS designed control: D_A substituted for D_B rejected
+PASS complete residual determinant ratio
+PASS local congruence restores Feynman gauge block
+PASS profile Jacobian
+PASS complete derivative-bearing EOM completion
+PASS designed control: quadratic congruence term necessary
+PASS profile-compensated determinant equality
+SCOPE: exact finite algebra, including off-shell rows and every determinant factor
+SCOPE: neither actual lattice/alias matching nor a full Yang-Mills proof is tested
+OVERALL: 17/17 predicates true

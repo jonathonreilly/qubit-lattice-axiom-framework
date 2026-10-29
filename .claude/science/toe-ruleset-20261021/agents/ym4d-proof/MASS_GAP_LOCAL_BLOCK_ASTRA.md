@@ -50,9 +50,10 @@ new physical premise is imported.
 
 Methodology, freshness, primitive-registry and prior-art reads use main
 `ca2bc7ddf64790da96cd43d42017d000fbfe4808`. Their exact sources and read scopes
-are bound in the [manifest](checks/massgap_block_manifest.json). The installed
-[physics-loop skill](/Users/jonBridger/.codex/skills/physics-loop/SKILL.md)
-and its already-read same-revision references govern this continuation.
+are bound in the [manifest](checks/massgap_block_manifest.json). The installed physics-loop skill and its already-read same-revision
+references govern this continuation; the portable
+[repository entry](../../../../../docs/ai_methodology/skills/physics-loop/SKILL.md)
+is linked for repository readers.
 The prior-art endpoint notes are
 [constrained-fiber Dobrushin control](../../../../../docs/WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md),
 [raw-action Hessian decay](../../../../../docs/WILSON_STAGGERED_RAW_CONSTRAINED_ACTION_HESSIAN_DECAY_BOUNDED_THEOREM_NOTE_2026-07-12.md),

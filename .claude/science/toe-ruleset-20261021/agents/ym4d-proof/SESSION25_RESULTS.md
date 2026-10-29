@@ -1993,3 +1993,9 @@ the Ward-profile algebra (scalar c_4 = 0) and the traceless term, the N5 multile
 explicit power hypotheses), CS/pseudoscalar seam exclusions, the joint diagonal on the separated domain. Corrections: N5's
 1/2 exponent → o(1) without power assumptions; LCS-b counterexample c_4 = 1/(u+2). Most dangerous (shared with
 OSLEAF55's job): a positivity-compatible extension from separated products to the full OS algebra.
+
+**CX-RLOC** (`CODEX_REVIEW_RLOC.md`). **(R) CONFIRMED as an implication** (corrected qualitative form). H3 and F^σ PROVEN;
+both BFT-3 routes, the decoupling family and BFT-4 (a) on 𝒞_glob lose the (R) premise. REFUTED inside RLOC55: full
+pair-patch polydisc containment, a κ-independent slot supremum, literal cell-only locality, some source/citation
+conversions; Wilson routing needs 6 pairs; BCH gives 144 not 9. The printed K_1 is not certified (finite replacement
+proved) — no downstream smallness minimum may use the printed value.

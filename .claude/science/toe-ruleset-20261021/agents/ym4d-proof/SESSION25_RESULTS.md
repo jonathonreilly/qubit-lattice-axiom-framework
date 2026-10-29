@@ -2095,3 +2095,10 @@ for σ > 0) replace the global critical-value polymers for (I_k^E)″; first-der
 A naive perturbative (BFT-coer) fails exactly (pure gauge, critical value 0, positive linear energy). REFUTED: four
 inherited claims (incl. HIST (c5″) "needs the global minimiser"). Self-withdrawn corollary E11. **Codex review launched
 (CODEX_REVIEW_MINCB.md). Launched: B2_55** — STEP55's single remaining input (B2).
+
+**CX-DICT** (`CODEX_REVIEW_DICT.md`). Dictionary banked at Codex's scopes; its corrected restatements applied as ONE
+override bullet at the end of [S26-BANKED] (scope sentence; E^cb naming; normalisation map; 144 not 9 with η ≤ 1/144; all
+original lane-A hypotheses incl. LR-pot retained — DICT55's "LR-pot off the chain" REFUTED; weight factors e^{2μ}/e^{3μ}/
+e^{5μ/2}; N_Σ for GV-E; names). REFUTED in DICT55: LR-pot's exclusion, blanket gauge-saturation transport, the literal
+normaliser repair (needs +κud), the unqualified weight comparison. Not banked: the 12/17/15 certificate as a status claim.
+Most dangerous (unchanged): consumers read curvature-small data, banked BFT is on a chosen global-potential-small chart.

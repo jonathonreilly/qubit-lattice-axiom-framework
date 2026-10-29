@@ -1,0 +1,131 @@
+{
+  "recorded_utc": "2026-10-29T19:34:25.057276+00:00",
+  "purpose": "Source identity and subsequent unchanged-byte check; not proof certification",
+  "sources": [
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/softhard/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOFTHARD.md",
+      "bytes": 83985,
+      "sha256": "c85bc8244adf6589c31862a3536edfe4aa7b8343c14a54fc19c01bf06d26f1b2"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/softhard/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SOFTHARD.md",
+      "bytes": 41649,
+      "sha256": "c15c26b926a8682b01eab8670991eef9b12bd17bd555c2d1b42fd87aa913c174"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/softhard/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "bytes": 35373,
+      "sha256": "950a86086a93f729c39008bd628f7bdc72715c3bcc1374f280bb22f2b10eaa26"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/softhard/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSEMBLY55.md",
+      "bytes": 84890,
+      "sha256": "253ea55619c7fd09d278add27b840c989a2a35160eb22a0385ea700f01fac9c7"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/softhard/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_ASSEMBLY.md",
+      "bytes": 43744,
+      "sha256": "189d7d5fda338860ad446b65047979bb4b36129a83697ad4412a9b41dd1cdd59"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/softhard/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "bytes": 10035,
+      "sha256": "512091e8fe13a80711e3c1e253fac39d4717275b01cfbdaa000fee0732df2dd8"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/softhard/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/REC_LIB.md",
+      "bytes": 68974,
+      "sha256": "79e570f5c21c0ceceb4dc076fabb1e7ce696afa1bbd4630da036456d3de53b13"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/softhard/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_REC_LIB.md",
+      "bytes": 27780,
+      "sha256": "bc3e0605118496656b9757a2ab8008b22a24880dda4a495206f7a10c67f6c286"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/softhard/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SF.md",
+      "bytes": 324498,
+      "sha256": "e966acccb5410b8aa86c55ccad6054bc7ac39265f41bdf8945f5eb83cd9ff847"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/softhard/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "bytes": 94345,
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/softhard/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/LINEAR_PACKAGE.md",
+      "bytes": 48089,
+      "sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/softhard/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "bytes": 772086,
+      "sha256": "50534f5ac1c1efe3aca10cedfbca32608f2fd47d9429f32566627b42aebed406"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/softhard/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/RLARGE.md",
+      "bytes": 134489,
+      "sha256": "4f3d2777bcd736ad6936946f6c072ebebd8fe2638839538ea0db28825f2438d2"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/softhard/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/RECOVERY_CLUSTER_ASTRA.md",
+      "bytes": 34340,
+      "sha256": "9c9264bd4d92b60798e48ccd2eb0ff230e221c3ffd2107c0f6443ec86de563cf"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/softhard/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RECOVERY_CLUSTER_ASTRA.md",
+      "bytes": 25661,
+      "sha256": "f3b3c8baed4e53cf4f3213342b97e51587576b59be4fb8d61fc3cbb3565dc2a0"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/softhard/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "bytes": 48847,
+      "sha256": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/softhard/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md",
+      "bytes": 48141,
+      "sha256": "ac985bb9b41a0d9d52ead7c2932df73e59c713c28c5c45f0629003552eee1243"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/softhard/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/sh_dimock_III.pdf",
+      "bytes": 424487,
+      "sha256": "280155600421bc183ce66a10a809eebf2fbbf2fe7a47f928408304dc5444d615"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/softhard/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/sh_dimock_II.pdf",
+      "bytes": 953179,
+      "sha256": "9b5216ec475c98c1acaaf82f7ac82e19567b9ab099a17a08f142162adac7589c"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/arxiv/review_residual_full_colour_literature_dimock_multiscale.pdf",
+      "bytes": 600279,
+      "sha256": "1747a54afe35b9fa51ebf96d8257cbe7ea0f002d6fdd203daaff80950b60de8e"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/arxiv/review_residual_full_colour_literature_adams_lee.pdf",
+      "bytes": 274675,
+      "sha256": "db2ed3d832a763abea185bbf1d14c95faf48a7e9366393df80b5c2ab1980ae3f"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/arxiv/review_residual_full_colour_literature_luscher_weisz.pdf",
+      "bytes": 211800,
+      "sha256": "9abc4201c94d34b534b86f90092f2e64aacb2b8a5938549f51cd65b408289f4e"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/arxiv/review_residual_full_colour_literature_dimock_axial.pdf",
+      "bytes": 292405,
+      "sha256": "4742e86f6c701b15a598e0ff661b7881d8e7e6d3c2a60c45c0a60bed8c7c16b4"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/arxiv/review_residual_full_colour_literature_bgm.pdf",
+      "bytes": 303862,
+      "sha256": "d8fcf7ec954df18660b0ed456ac846f8b33f0f3eda9a02c9857d62139d3a63b5"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/arxiv/review_residual_full_colour_literature_nielsen.pdf",
+      "bytes": 114576,
+      "sha256": "eff771d66b5847027107b662dfecf347588c5f3f61cd6c0f82775bf91c48e31d"
+    }
+  ]
+}

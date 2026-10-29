@@ -1,0 +1,72 @@
+{
+  "checkpoint_utc": "2026-10-29 12:26 UTC",
+  "coverage": "Complete RECOVERY_CLUSTER_ASTRA and CODEX_REVIEW_STEP; STEP55 5.1-5.4/S8/S9 and exact-action/NZ source premises; PROOF N5-bg/N5-an/CT/RW/N5-sf0/N5-sf_i and NA-FP necessary arguments; SRC2 MB/E11, CODEX_REVIEW_SRC2 F1/F2/F7, B2 consumer caveat. Other source ranges are not certified by their file hash.",
+  "execution": {
+    "all_passed": true,
+    "command": "python3 checks/source_return_exact.py > checks/source_return_results.json",
+    "exit_code": 0,
+    "gates": 21
+  },
+  "methodology_revision": "6c269770273c3fe00de350d5a3c14cacb70c2833",
+  "outputs": [
+    {
+      "bytes": 45268,
+      "path": "SOURCE_LOCAL_RETURN_ASTRA.md",
+      "sha256": "7da909685242b9c9f13e597a641e337d5928f5905211392b154e8f3649bda1ca"
+    },
+    {
+      "bytes": 11529,
+      "path": "checks/source_return_exact.py",
+      "sha256": "a41aec8a773fbd2f00f9cf675186f5aa4d62395602fe55b687f88656d44b03aa"
+    },
+    {
+      "bytes": 3307,
+      "path": "checks/source_return_results.json",
+      "sha256": "7da955603c753fcefc16e938c33ab2f8d47ad8c480f437cace3010eda7a611a5"
+    }
+  ],
+  "review_state": "Author construction; fresh independent mathematical review pending. No audit status changes.",
+  "science_baseline": "962f97c259d8c241df632a07e27f498f4ad33b09",
+  "sources": [
+    {
+      "bytes": 34340,
+      "path": "RECOVERY_CLUSTER_ASTRA.md",
+      "sha256": "9c9264bd4d92b60798e48ccd2eb0ff230e221c3ffd2107c0f6443ec86de563cf"
+    },
+    {
+      "bytes": 46090,
+      "path": "CODEX_REVIEW_STEP.md",
+      "sha256": "32bab8cbc920447280b3da93a1754bf792509a115bbf8cfffc7101350fe64a0d"
+    },
+    {
+      "bytes": 94345,
+      "path": "STEP55.md",
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce"
+    },
+    {
+      "bytes": 765802,
+      "path": "PROOF.md",
+      "sha256": "5a083e0f8263ca129b427ed7dc248171869a29ce9551b48794e05d9eb79cfa39"
+    },
+    {
+      "bytes": 87410,
+      "path": "SRC2_55.md",
+      "sha256": "66206a0bc13e5c4c264136abb0aa8a5620e66958a561fc7c0fcee4ff3989676c"
+    },
+    {
+      "bytes": 40778,
+      "path": "CODEX_REVIEW_SRC2.md",
+      "sha256": "b817b7a8639c0585628cdadb169c80bb3fc3ff4afb22cbd76539c15fc695938e"
+    },
+    {
+      "bytes": 48911,
+      "path": "B2_55.md",
+      "sha256": "b178059680f29adc5f4bdac0b07621c2f1697047364cdde0f5963cf25040164d"
+    },
+    {
+      "bytes": 81497,
+      "path": "LARGE55.md",
+      "sha256": "79bc36d60687376716aa425ad3c271b681ca9549f5d217693e2736b805cdf0e7"
+    }
+  ]
+}

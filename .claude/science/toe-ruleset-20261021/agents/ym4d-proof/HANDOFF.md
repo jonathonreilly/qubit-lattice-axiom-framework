@@ -31,9 +31,10 @@ Current assignments use fresh `gpt-6-astra / max` contexts:
 
 - **Residual determinant author:** the actual completed-gauge-row Hessian,
   grouped infrared symbols and the all-increments flow estimate.
-- **Source-local return author:** actual level-zero operator localization,
-  connected-support incidence bounds and exact normalized return identity,
-  retaining the background-substitution and higher-level action interfaces.
+- **Source-local return author — first construction delivered:** actual
+  level-zero operator localization, all-order global-chart source
+  substitution and exact return identities; fresh review is next. Actual
+  history/contour-face control and higher-level interfaces remain open.
 - **Independent UIR reviewer — completed:** the frozen recovery argument
   has been checked through distinct derivations and an independent program;
   its bounded claims are confirmed with explicit conditional/open limits.
@@ -66,6 +67,33 @@ written argument. [The frozen receipt](checks/review_uir_receipt.json) and
 [Coordinator replay](checks/full_proof_uir_replay.json) also passed, matching
 stdout after excluding only the UTC line. All 28 recovered files, nine
 historical briefs and 19 prior continuation artifacts retain their hashes.
+
+### Source-local construction checkpoint, pending independent review
+
+[SOURCE_LOCAL_RETURN_ASTRA.md](SOURCE_LOCAL_RETURN_ASTRA.md) now supplies an
+actual level-zero proposal: connected covariance/determinant atoms with
+row, column and support-incidence norms; an exact nonlinear tree-gauge Haar
+identity retaining all denominator factors; a fixed-sector coefficient
+source instance at V=I; and an all-order critical-map construction on a
+specified global chart in the original coarse/source variables. The latter
+is composed into the Hessian and determinant expansions. It is not a
+curvature-only, arbitrary-holonomy or all-coarse-field theorem.
+
+The exact contour comparison keeps its side integrals. Their normalized
+history-uniform bound, arbitrary retained indicators, outside-chart/cut
+failures and higher-level action/induction identities remain open. These
+author arguments are awaiting independent review. All 21 exact finite
+controls reproduced with identical stdout and empty stderr; see the
+[author receipt](checks/source_return_receipt.json) and
+[coordinator replay](checks/full_proof_source_return_replay.json).
+
+During the independent cluster review, the reviewer found that the abstract
+operator lemma needed an explicit β≥0 restriction. That narrow domain
+repair has been made and confirmed in the same review context; the main
+CX-R application already chooses β>0. The full cluster review is still
+active. [Repair provenance](checks/full_proof_cluster_fix.json) records the
+old and corrected hashes. This is an explicit revision of one prior
+continuation file; its original bytes remain at the frozen Git commit.
 
 ## Goal and source identity
 

@@ -1,0 +1,24 @@
+{
+  "started_utc": "2026-10-29T12:30:50.138684+00:00",
+  "duration_seconds": 0.209,
+  "scope": "Coordinator reproduction; independent mathematical review pending",
+  "command": [
+    "/usr/local/bin/python3",
+    "-B",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_return_exact.py"
+  ],
+  "script_sha256": "a41aec8a773fbd2f00f9cf675186f5aa4d62395602fe55b687f88656d44b03aa",
+  "exit_code": 0,
+  "stderr_bytes": 0,
+  "stdout_exact_match": true,
+  "outputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_source_return_replay_out.json",
+      "sha256": "7da955603c753fcefc16e938c33ab2f8d47ad8c480f437cace3010eda7a611a5"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_source_return_replay_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

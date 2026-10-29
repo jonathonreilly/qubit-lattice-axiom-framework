@@ -100,7 +100,8 @@ Use a fixed product probability measure μ = ⊗_x μ_x on W, with
 |W_x|_∞ ≤ p. A fixed collar is allowed by taking some μ_x to be point masses.
 All complex z vary in a product domain D; every supremum below is uniform on
 D and on supp μ, and the relevant functions are holomorphic on an open
-neighborhood of D (or the bounds hold on all compact subdomains). Define
+neighborhood of D (or the bounds hold on all compact subdomains). Fix
+**β≥0** for the support norms and operator lemma below. Define
 
     ||U||_β := sup_v Σ_{S∋v} e^{β|S|} ||U_S||_∞.
 

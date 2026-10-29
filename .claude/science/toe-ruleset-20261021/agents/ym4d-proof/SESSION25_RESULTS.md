@@ -2302,3 +2302,21 @@ and verified the hashes of all 28 originals, nine historical briefs and
 not a new cross-family receipt, audit verdict or full-proof certification.
 The actual residual and source-local return constructions continue; the
 generic cluster proposal is now undergoing independent review.
+
+### Actual level-zero source-local construction, pending review
+
+SOURCE_LOCAL_RETURN_ASTRA supplies an original-variable operator/parametrix
+construction, exact Haar/tree-gauge return identity, fixed-sector V=I source
+instance and global-chart all-order source-local critical-map substitution.
+The source coordinates and the action are explicit. The contour-side terms,
+history indicators and complements are retained; their full normalized
+return bounds and the higher-level action/induction interfaces are not
+proved. Fresh independent review is next. All 21 finite controls replayed
+exactly with empty stderr, as recorded in `checks/source_return_receipt.json`
+and `checks/full_proof_source_return_replay.json`.
+
+The cluster reviewer also requested an explicit β≥0 restriction in the
+generic operator lemma. This narrow repair is confirmed in the same reviewer
+context; its old/new hashes are in `checks/full_proof_cluster_fix.json`.
+The original continuation remains available at the frozen commit. No
+whole-cluster or full-proof acceptance is inferred from this scoped fix.

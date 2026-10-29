@@ -91,6 +91,16 @@
 > remain open. This is a same-family, fresh-context check, not an extension
 > of the older cross-family [S26-BANKED] heading or full-proof acceptance.
 >
+> **New source-local producer proposal, 29 October:**
+> [SOURCE_LOCAL_RETURN_ASTRA.md](SOURCE_LOCAL_RETURN_ASTRA.md) constructs
+> level-zero operator atoms and a global-chart original-source critical map,
+> and retains all factors and contour sides in the exact return identity.
+> Its 21 finite controls reproduce, but independent review is pending.
+> Actual history-uniform face bounds, all-coarse-field coverage and the
+> higher-level action/induction interfaces remain open. The separate generic
+> cluster lemma has received an explicit β≥0 domain repair during review;
+> its full review is still in progress.
+>
 > Current continuation and exact remaining obligations are in [HANDOFF.md](HANDOFF.md).
 > **T_OS remains OPEN; no mass gap is claimed.**
 

@@ -1,0 +1,327 @@
+{
+  "method": "bounded source ranges/pages; normalize whitespace, Markdown emphasis/backticks and Unicode compatibility glyphs",
+  "checks": [
+    {
+      "source": "HANDOFF.md",
+      "lines": [
+        14,
+        14
+      ],
+      "quote": "Include existence and the mass gap.",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "STEP55.md",
+      "lines": [
+        247,
+        247
+      ],
+      "quote": "S_eff(U; V) := −log ρ_k(U) + Σ_c[t_kψ_{M̄_c(U)}(V_c) + log 𝒩̃_{t_k}(M̄_c(U))] + const(V).",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "CODEX_REVIEW_LARGE.md",
+      "lines": [
+        29,
+        29
+      ],
+      "quote": "The last term depends on U.",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "CODEX_REVIEW_STEP.md",
+      "lines": [
+        200,
+        200
+      ],
+      "quote": "Actual returned-activity zero-freeness therefore remains **OPEN**",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "CODEX_REVIEW_LARGE.md",
+      "lines": [
+        63,
+        63
+      ],
+      "quote": "a positive sum of normalized kernels can have quotient poles at scale 1/t, smaller than 1/√t",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "LARGE55.md",
+      "lines": [
+        274,
+        274
+      ],
+      "quote": "a **new large-field type, the mismatch**",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "CODEX_REVIEW_LARGE.md",
+      "lines": [
+        41,
+        41
+      ],
+      "quote": "At M=0, ψ is identically zero and every positive-δ event in MIS is empty, while the coarse link is Haar.",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "PROOF.md",
+      "lines": [
+        800,
+        801
+      ],
+      "quote": "must be re-verified for the soft version before it can be load-bearing.",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "REVIEW_BFT_B_S8.md",
+      "lines": [
+        350,
+        350
+      ],
+      "quote": "the **tents ↔ root charges** correspondence is exact, and the **spikes are a separate, Q-specific effect**.",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "CODEX_REVIEW_C2.md",
+      "lines": [
+        308,
+        308
+      ],
+      "quote": "Withdraw §35.7's falsity verdict and `[S10-fix 1]`'s mandatory CC-0 restriction.",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "CODEX_REVIEW_ALIGN.md",
+      "lines": [
+        70,
+        70
+      ],
+      "quote": "a nonzero top-link charge",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "PROOF.md",
+      "lines": [
+        233,
+        233
+      ],
+      "quote": "S_E — and any alignment reading only x_0 — fails (A1)",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "RECOVERY_ALIGNMENT_ASTRA.md",
+      "lines": [
+        251,
+        251
+      ],
+      "quote": "Covariant field NC(log)",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "RECOVERY_ALIGNMENT_ASTRA.md",
+      "lines": [
+        252,
+        252
+      ],
+      "quote": "Full R2",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "PROOF.md",
+      "lines": [
+        2086,
+        2087
+      ],
+      "quote": "compare the block laws of the soft RG variables V with those of S4''(U) used by L7a/L8a, or run the RG with observable sources.",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "REVIEW_SF_S7.md",
+      "lines": [
+        163,
+        163
+      ],
+      "quote": "|κ_0 - 1| < 2.585·10⁻²",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "CODEX_REVIEW_LARGE.md",
+      "lines": [
+        43,
+        43
+      ],
+      "quote": "conditioning can force a rare mismatch.",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "CODEX_REVIEW_LARGE.md",
+      "lines": [
+        45,
+        45
+      ],
+      "quote": "Exact integration of unobserved raw kernels does not compare a history with the small-field reference or control polymers crossing its boundary.",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "CODEX_REVIEW_LARGE.md",
+      "lines": [
+        84,
+        84
+      ],
+      "quote": "an increasing absolute count and a vanishing all-good probability, not a positive limiting fraction of bad plaquettes",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "CODEX_REVIEW_LCONV.md",
+      "lines": [
+        266,
+        266
+      ],
+      "quote": "FOL's local zero-kernel-curvature identity",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "CODEX_REVIEW_LCONV.md",
+      "lines": [
+        267,
+        267
+      ],
+      "quote": "no universal convexity/Peierls no-go",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "CODEX_REVIEW_LCONV.md",
+      "lines": [
+        267,
+        267
+      ],
+      "quote": "no exact lowered-coupling identity",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "HANDOFF.md",
+      "lines": [
+        412,
+        412
+      ],
+      "quote": "Make the action interfaces agree.",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "PROOF.md",
+      "lines": [
+        26,
+        26
+      ],
+      "quote": "Bounds on one action do not identify another.",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "SF.md",
+      "lines": [
+        1634,
+        1635
+      ],
+      "quote": "as a δ-constraint",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "SF.md",
+      "lines": [
+        1636,
+        1636
+      ],
+      "quote": "averaged, NOT fixed.",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "SPHERE2_55.md",
+      "lines": [
+        509,
+        509
+      ],
+      "quote": "The softness of the seam kernels is load-bearing for the sup form",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "CODEX_REVIEW_SPHERE2.md",
+      "lines": [
+        249,
+        249
+      ],
+      "quote": "Tree-level stiffness growth is a mechanism, not an all-coarse-field transparency theorem.",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "checks/sh_dimock_I.pdf",
+      "page": 4,
+      "quote": "The positive constant a is arbitrary",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "checks/sh_dimock_II.pdf",
+      "page": 31,
+      "quote": "This difficult step is not necessary for this model.",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "checks/sh_dimock_III.pdf",
+      "page": 33,
+      "quote": "The analysis can be adapted to treat correlation functions as well.",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "/Users/jonBridger/ym4d-lanes/arxiv/review_residual_full_colour_literature_dimock_axial.pdf",
+      "page": 13,
+      "quote": "the Landau gauge at α = 0",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "/Users/jonBridger/ym4d-lanes/arxiv/review_residual_full_colour_literature_dimock_multiscale.pdf",
+      "page": 43,
+      "quote": "abelian versions of non-abelian results",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    },
+    {
+      "source": "checks/sh_dimock_QED.pdf",
+      "page": 1,
+      "quote": "ultraviolet stability bound in a fixed finite volume",
+      "match_after_whitespace_and_markdown_normalization": true,
+      "present_in_report": true
+    }
+  ]
+}

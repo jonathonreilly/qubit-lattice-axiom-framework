@@ -1,0 +1,143 @@
+{
+  "branch_head": "4f04b662f4d72d7ef269f6d9693ae9ff6424acf9",
+  "main": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "required_sources": [
+    {
+      "path": "HANDOFF.md",
+      "bytes": 35373,
+      "sha256": "950a86086a93f729c39008bd628f7bdc72715c3bcc1374f280bb22f2b10eaa26"
+    },
+    {
+      "path": "ASSEMBLY55.md",
+      "bytes": 84890,
+      "sha256": "253ea55619c7fd09d278add27b840c989a2a35160eb22a0385ea700f01fac9c7"
+    },
+    {
+      "path": "CODEX_REVIEW_ASSEMBLY.md",
+      "bytes": 43744,
+      "sha256": "189d7d5fda338860ad446b65047979bb4b36129a83697ad4412a9b41dd1cdd59"
+    },
+    {
+      "path": "PROOF.md",
+      "bytes": 772086,
+      "sha256": "50534f5ac1c1efe3aca10cedfbca32608f2fd47d9429f32566627b42aebed406"
+    },
+    {
+      "path": "REVIEW_S9_S10.md",
+      "bytes": 29644,
+      "sha256": "ed678ffdb60de71c1ee055be91ad580fd63b0b20c2a10588995d58ca48ff66cb"
+    },
+    {
+      "path": "RTARGET.md",
+      "bytes": 107352,
+      "sha256": "e98f1c9c5ee9a7d7f4f90fd9d3cd6958895ffdba5363ca3c167f04b18871cd55"
+    },
+    {
+      "path": "STEP55.md",
+      "bytes": 94345,
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce"
+    },
+    {
+      "path": "CODEX_REVIEW_STEP.md",
+      "bytes": 46090,
+      "sha256": "32bab8cbc920447280b3da93a1754bf792509a115bbf8cfffc7101350fe64a0d"
+    },
+    {
+      "path": "ALIGN55.md",
+      "bytes": 62980,
+      "sha256": "0dfe94ab23778d30ed2a3065dbebea120b5ad36025739bbdb0a8ab1cd6975ff7"
+    },
+    {
+      "path": "CODEX_REVIEW_ALIGN.md",
+      "bytes": 39134,
+      "sha256": "1bff77f44a321eaa0f82eb57767bdf648d5b1e1b60fc4b0db89c79db00adb907"
+    },
+    {
+      "path": "CODEX_REVIEW_ALIGN2.md",
+      "bytes": 49811,
+      "sha256": "5dc47e3232053c805105b6f03d145db0a053f4f8da97e8e51afb323218cc335c"
+    },
+    {
+      "path": "RECOVERY_ALIGNMENT_ASTRA.md",
+      "bytes": 28078,
+      "sha256": "c58b51c8d19a87f473e0ecc86d582919ff7962417357db7b7c65eb83f2073fb4"
+    },
+    {
+      "path": "BFT_A.md",
+      "bytes": 352591,
+      "sha256": "553d56f46ea457aa1b6a97c2a53f435739d3fadb6c9af0cf89676f41a7266902"
+    },
+    {
+      "path": "BFT_B.md",
+      "bytes": 662171,
+      "sha256": "b6ddf451a4dfe2028a9f23fe7fe696ce11f1c17e497709ac3761da3e7a1172c6"
+    },
+    {
+      "path": "REVIEW_BFT_B_S8.md",
+      "bytes": 38842,
+      "sha256": "9461895f9b28b535b39c350f85dcb813328cb08cd1d7775a1f29ae33502b4c19"
+    },
+    {
+      "path": "SPHERE2_55.md",
+      "bytes": 77878,
+      "sha256": "b81136033a1893ca9bb5957d4aee07caae90609faa4ffe84f2f7769984280dd1"
+    },
+    {
+      "path": "LARGE55.md",
+      "bytes": 81497,
+      "sha256": "79bc36d60687376716aa425ad3c271b681ca9549f5d217693e2736b805cdf0e7"
+    },
+    {
+      "path": "LCONV55.md",
+      "bytes": 56764,
+      "sha256": "79a45d830c12282558cbaea63bfca2cf32d0e979b4e07a26a8bdba3e2fbbba16"
+    },
+    {
+      "path": "CODEX_REVIEW_LARGE.md",
+      "bytes": 47027,
+      "sha256": "cc9d86b0aca6d301e7c4111a8e4eaaafccf4c121323aaa0cb9026448ab38f777"
+    },
+    {
+      "path": "CODEX_REVIEW_LCONV.md",
+      "bytes": 39409,
+      "sha256": "536a2a690ab12e6f4e94827003d500159f40b2132b5cac05a85a0978242a0dcd"
+    },
+    {
+      "path": "literature/NOTES.md",
+      "bytes": 39234,
+      "sha256": "f0429e7ce7df3b179bea681ebaa677e3735376561002697f34b083da25e202a1"
+    }
+  ],
+  "arxiv_read_only": [
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/arxiv/review_residual_full_colour_literature_adams_lee.pdf",
+      "bytes": 274675,
+      "sha256": "db2ed3d832a763abea185bbf1d14c95faf48a7e9366393df80b5c2ab1980ae3f"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/arxiv/review_residual_full_colour_literature_bgm.pdf",
+      "bytes": 303862,
+      "sha256": "d8fcf7ec954df18660b0ed456ac846f8b33f0f3eda9a02c9857d62139d3a63b5"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/arxiv/review_residual_full_colour_literature_dimock_axial.pdf",
+      "bytes": 292405,
+      "sha256": "4742e86f6c701b15a598e0ff661b7881d8e7e6d3c2a60c45c0a60bed8c7c16b4"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/arxiv/review_residual_full_colour_literature_dimock_multiscale.pdf",
+      "bytes": 600279,
+      "sha256": "1747a54afe35b9fa51ebf96d8257cbe7ea0f002d6fdd203daaff80950b60de8e"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/arxiv/review_residual_full_colour_literature_luscher_weisz.pdf",
+      "bytes": 211800,
+      "sha256": "9abc4201c94d34b534b86f90092f2e64aacb2b8a5938549f51cd65b408289f4e"
+    },
+    {
+      "path": "/Users/jonBridger/ym4d-lanes/arxiv/review_residual_full_colour_literature_nielsen.pdf",
+      "bytes": 114576,
+      "sha256": "eff771d66b5847027107b662dfecf347588c5f3f61cd6c0f82775bf91c48e31d"
+    }
+  ]
+}

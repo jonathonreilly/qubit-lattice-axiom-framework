@@ -1,0 +1,10 @@
+N1 (ln 2 enclosure): PASS  width = 3.449255e-60, lo - 0.6931471805599453 = 9.417232e-18
+N2 (m_Y <= ln2/4160 <= 1.67e-4): PASS  ln2/4160 in [1.66621918e-4, 1.66621918e-4]
+C5 (claim ln2/4160 <= 1.66e-4): FIRES  lo/4160 = 1.66621918e-4
+N3 (e^{4m(L^c+4)} <= 2^(264/1040) <= 6/5 for L^c >= 260, m <= ln2/(16L^c)): PASS  4.1*260 = 1066 >= 1056: True; (6/5)^1040 >= 2^264: True
+C6 (claim 4(L^c+4) <= 4.1 L^c at L^c = 100): FIRES  416 vs 410
+N4 (BW coefficient <= 1/2 at m_Y): PASS  exponent 42/160 <= 1
+N5 (ln-2 branch binds for all tabulated m_*'): PASS  min m_*'/6 = 2.333333e-3 > ln2/4160 = 1.666219e-4
+N6 (informational): e^(40 m_Y) <= 1/(1 - 40*ln2/4160) = 1.00670959e0
+
+VERDICT cm55_num: ALL PASS (all controls fired) [5 criteria, 2 controls]

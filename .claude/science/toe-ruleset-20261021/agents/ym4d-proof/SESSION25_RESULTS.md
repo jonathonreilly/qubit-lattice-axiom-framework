@@ -1479,3 +1479,20 @@ term); sphere route's equatorial RP CONFIRMED but the route does not yet rank fi
 **unconditional ledger retirement REFUTED — two-sided feasibility windows need magnitudes** (PLAN_S26 §12 corrects
 the lead). All banked in PROOF.md's [S26-BANKED] block. **Launched on Opus 5.5: HIGHER55.md — the higher-order
 exact-source estimates that would promote TR and CC-CRIT to full nonlinear.** Node A's (M1)+(M2) queued.
+
+**R4 — `ROTDEF.md`** (claude-opus-5-5, max) — the rotation-defect test, the crux of OS1 on the flat route. **Not
+proven; reduced exactly.** An **exact lattice rotation identity** (integration by parts along a cut-off rotation;
+every configuration, every torus; r-independent) for the centred, smeared clover energy density. **The
+rotation-breaking insertion is dimension 6** (no dimension-4 gauge-invariant operator carries a rotation generator's
+hypercubic representation — exact check; dimension 5 excluded by total inversion; no O(1) or power-divergent contact
+counterterm survives). **Conditional theorem:** given BFT-0..5, RLF v3, the coupling flow and two NEW short-distance
+inputs **CD** (conditional decay given the reference-scale field, uniform in the coarse field) and **SRC**
+(source-inserted RG), the defect is, uniformly in the torus, minus ONE coarse covariance **TQ = Cov_ν(E_K[F̃], 𝒥_r)**
+— "no rotation charge at infinity" — up to UV error; **OS1 for the pair ⇔ TQ → 0.** **TQ is implied by o(|x|⁻⁴)
+decay, in log-Cesàro mean, of the coarse stress-channel covariance — weaker than a gap (|x|⁻⁸ with no gap
+suffices), additive over invariant mixtures, and not implied by uniqueness (uniqueness gives no rate; argued).**
+R4-F2 does not occur (Wilson state untouched, everything gauge invariant). Rate at best logarithmic in a. **So OS1 =
+UV inputs (CD + SRC, shared with OS0; SRC's bulk part plausibly UNIV55's interior universality) + one named, weak
+infrared input TQ.** 16 PROVEN, 4 CHECKED, 3 CONDITIONAL, 6 ARGUED, 1 OPEN. Codex review launched
+(CODEX_REVIEW_ROTDEF.md). **Launched on Opus 5.5: TQ55.md — attack TQ directly, via reflection-positivity
+infrared bounds.**

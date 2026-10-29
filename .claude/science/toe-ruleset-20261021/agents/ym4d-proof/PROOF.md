@@ -76,8 +76,10 @@
 > constructive replacement for CX, including original-source locality and the
 > full denominator factors. Its actual Yang–Mills hypotheses and exact return
 > identity remain unconstructed at the full history-uniform scope. Alignment
-> remains **author support pending independent review**, not an addition to
-> [S26-BANKED]. Four new finite check
+> is now [independently checked at its conditional scope](REVIEW_RECOVERY_ALIGNMENT_ASTRA.md),
+> including the narrow BA-5 repair; generic-field NC(log) and weighted/global
+> interfaces remain open. This is not an addition to the older cross-family
+> [S26-BANKED]. Four original finite check
 > scripts and their controls reproduced; they do not certify these analytic
 > claims or their remaining hypotheses.
 >

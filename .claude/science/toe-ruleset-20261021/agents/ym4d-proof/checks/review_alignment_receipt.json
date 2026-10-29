@@ -1,0 +1,212 @@
+{
+  "utc": "2026-10-29T13:51:40.136857+00:00",
+  "review_unit": "Frozen alignment continuation; finite-lattice conditional implications only",
+  "frozen_science_revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+  "frozen_continuation_sha256": "c58b51c8d19a87f473e0ecc86d582919ff7962417357db7b7c65eb83f2073fb4",
+  "methodology_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "source_coverage_inventory": "checks/review_alignment_source_inventory.json",
+  "methodology_coverage_inventory": "checks/review_alignment_methodology_inventory.json",
+  "source_reads": "Full and partial reads are distinguished in the inventories; hashes do not certify unread spans.",
+  "model_provenance": "Coordinator requested gpt-6-astra/max/fresh context; exact runtime identity not independently attested by worker.",
+  "full_objective_outside_disposition": [
+    "R4 SU(N) existence",
+    "OS0-OS3",
+    "non-freeness",
+    "positive physical mass gap"
+  ],
+  "remaining_local_interfaces": [
+    "generic-field NC(log) in actual covariant sharp norm",
+    "weighted alignment/background transfer",
+    "matched upstream inverse and global critical-background inputs",
+    "full HD/FW/reference-projection/background-transfer assembly"
+  ],
+  "same_context_repair": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT_A.md",
+    "frozen_sha256": "8074d6c5efe3648bfb28e3463a6076cf6df74c9c358a8613390044148ac6fbe0",
+    "intermediate_sha256": "d8429af529a4c36b23887a35a1db0600eadad07076c0567dd587e11cd279072b",
+    "confirmed_final_sha256": "553d56f46ea457aa1b6a97c2a53f435739d3fadb6c9af0cf89676f41a7266902",
+    "coverage": "Complete two-hunk diff: section 3.5 stationarity contraction and historical note zero-phase clarification; surrounding relevant context read. All other repaired-file content only has frozen bounded coverage.",
+    "nature": "Reconciliation of a known historical formula issue; not a new global theorem or numerical constant."
+  },
+  "review_iterations": 1,
+  "same_context_fix_followups": 2,
+  "commits_created": 0,
+  "PR_actions": 0,
+  "full_pipeline_runs": 0,
+  "unexpected_mathematical_checker_failures": 0,
+  "expected_nonzero_exit_controls": 6,
+  "authority": "Reviewer evidence only; no audit result, status authority, whole-PR PASS or N-gate packet PASS.",
+  "artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RECOVERY_ALIGNMENT_ASTRA.md",
+      "bytes": 29644,
+      "sha256": "bad865a1491447ddf97f4afccbfa3a6992b91b698288a583f34de7b9d5991e82"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_author_mutant_S1_normalization.py",
+      "bytes": 6449,
+      "sha256": "7f8dc3d85a7727d92da291cb4c6ac316149fa8c7a51cb83997492d39f57920a4"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_author_mutant_S1_normalization_err.txt",
+      "bytes": 593,
+      "sha256": "3dd4de3028b315baee38d19180fc062f8bf194bb766dac0fa620f4d643e1b5ca"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_author_mutant_S1_normalization_out.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_author_mutant_coarse_sign.py",
+      "bytes": 6461,
+      "sha256": "eb5db7d06c61446b7e53958d3027cc44073bbaa1c696811216ea1b57de024e70"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_author_mutant_coarse_sign_err.txt",
+      "bytes": 715,
+      "sha256": "ade5d955026d473e6c27bd8f9f60c9eb8c96e5fc89237637051f60661d6cbdd6"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_author_mutant_coarse_sign_out.txt",
+      "bytes": 449,
+      "sha256": "0a1a976a027c6e643006fe64087bd1db0d7a17bd975a230e7f17f304f55f4d15"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_author_mutant_harmonic.py",
+      "bytes": 6410,
+      "sha256": "7204d8afdd94ef949d16a83e6c1e3ec447ce09ec4ea9f20f7846d4e4b9ec3a59"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_author_mutant_harmonic_err.txt",
+      "bytes": 631,
+      "sha256": "9ec518d192ae2232d6cabd6b26314b169fad141a640daa6f016f29491bc7b6f4"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_author_mutant_harmonic_out.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_author_mutant_midpoint.py",
+      "bytes": 6444,
+      "sha256": "ecd6afe7cb0596c00dcdfddfacefde7131cceb31f7f3d15a135cc392e08f7731"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_author_mutant_midpoint_err.txt",
+      "bytes": 678,
+      "sha256": "f5e67098d1c3e3f844519c6349b69a53f9ac9fab7335a60302e6d424119318d0"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_author_mutant_midpoint_out.txt",
+      "bytes": 239,
+      "sha256": "baa54ad1fdd0e3f2538647dc503a380961a61b1c9a7f6faaef32bb3a55b32175"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_author_mutant_uncentered.py",
+      "bytes": 6452,
+      "sha256": "f14b2e62ec7c5dc5455dbaba39b16cc0e62452b4abfd4ac6c459923f38b3f5fa"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_author_mutant_uncentered_err.txt",
+      "bytes": 682,
+      "sha256": "fc28251510ef33afd8c19da4fa5b4b52b97387fe495721d36d96b84c4d5c30fe"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_author_mutant_uncentered_out.txt",
+      "bytes": 239,
+      "sha256": "baa54ad1fdd0e3f2538647dc503a380961a61b1c9a7f6faaef32bb3a55b32175"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_author_original.py",
+      "bytes": 6451,
+      "sha256": "72fbf46b0563a0246240f26d7802294911a00131b047ad1b82823eb1f0aebefa"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_author_original_err.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_author_original_out.txt",
+      "bytes": 942,
+      "sha256": "0c586f808eb0af726653c0aedc5fbca2a42f29e1d5900746d223128004989187"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_controls.py",
+      "bytes": 2874,
+      "sha256": "e5cf6ad81513bc8f0b5e073a1e2526b7efc8abdfbfed30f160bf87ac89aa59bb"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_controls_err.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_controls_out.json",
+      "bytes": 1749,
+      "sha256": "f1f8db3d3d008ff1f0954ad5390fb97b5b608a469bf688ee62f5bcc25e248c8e"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_criteria.md",
+      "bytes": 7162,
+      "sha256": "df58aa9472a1e21f075dcd3eedfa8fbd8eba29f52008e1890a987a67a104c92b"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_exact.py",
+      "bytes": 10235,
+      "sha256": "ed089a21126e7327ef79f10517d2a0a31d408f84777b629d219d946de53e1401"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_exact_err.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_exact_out.json",
+      "bytes": 3153,
+      "sha256": "f58c5753e9cde4ca786fcb8c588afc4deebfc61be4a2d9704c76b6e8f41f7347"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_final_verification.json",
+      "bytes": 578,
+      "sha256": "31073dc0387fb86f315684bfdba9cfdc2fe8d0c63a128a6b2b41fcc2376cb454"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_methodology_inventory.json",
+      "bytes": 6807,
+      "sha256": "0243ab354b28b6eb00a840c5c846339d1dfca5beba96425635a26eb6279ea6e9"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_mutant_scale_propagation.py",
+      "bytes": 9910,
+      "sha256": "7ea26b635c3d6d896037249a363d7fd5ab26e726e681c6dbb9b95d9da6dc557a"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_mutant_scale_propagation_err.txt",
+      "bytes": 600,
+      "sha256": "f4d0912e6644b58afb347322bfb57ba41534ab3eb81e4c6a175987775a8ff01c"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_mutant_scale_propagation_out.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_mutant_scale_propagation_result.json",
+      "bytes": 190,
+      "sha256": "1275123a1b3515ec788e5751ea187d3ccabe787dcafa3abcf9fa2bb4ea07da52"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_operational_failures.txt",
+      "bytes": 653,
+      "sha256": "51c3b3722f1c46e5ae340c40183f07ef3307e2f0cf82219e3894c60e99931ddb"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_source_inventory.json",
+      "bytes": 8703,
+      "sha256": "f381b48b8de4a24956415564ac1fd20b5113b76d61ad66df069979f4f68f3e9a"
+    }
+  ],
+  "receipt_hash_policy": "This receipt excludes itself; handoff supplies its SHA256."
+}

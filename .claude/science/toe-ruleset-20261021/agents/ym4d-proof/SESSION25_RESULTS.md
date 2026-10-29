@@ -2377,3 +2377,16 @@ conclusion is confirmed; the historical note now allows the zero-phase
 exception. [Repair provenance](checks/full_proof_alignment_ba5_fix.json)
 records both original and reviewed hashes. The full alignment review is
 finishing; this correction does not supply generic-field NC(log).
+
+
+### Alignment continuation independently checked, 29 October
+
+[REVIEW_RECOVERY_ALIGNMENT_ASTRA.md](REVIEW_RECOVERY_ALIGNMENT_ASTRA.md)
+confirms the stated unweighted finite-lattice implications after the
+previously acknowledged BA-5 inconsistency was reconciled in its proof body.
+Direct image sums, oriented-segment moments, AC1 with independent coarse
+data and scale bookkeeping pass; all six deliberately corrupted controls
+fail as intended. The review preserves strict θ>α for the summed residual
+and the sufficient P2 window α+θ≤1. Generic-field NC(log), weighted/global
+transfer and unverified upstream inverse/background inputs remain open.
+The physical mass gap and full existence are outside this unit.

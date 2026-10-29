@@ -53,8 +53,10 @@ Current assignments use fresh `gpt-6-astra / max` contexts:
   the explicitly conditional model corollary are confirmed.
 - **Independent source-return reviewer — completed:** all five scoped
   repairs and the bounded construction are confirmed with frozen evidence.
-- **Independent alignment reviewer — active:** fresh review of the frozen
-  recovery continuation.
+- **Independent alignment reviewer — completed:** the frozen conditional
+  continuation and the narrow BA-5 repair are confirmed.
+- **Independent harmonic-bridge reviewer — active:** the new finite/free
+  lattice unit, followed by the separate conditional mass-gap criterion.
 
 Same-family context separation is disclosed and is not described as
 cross-family review. The coordinator owns integration and PR updates. See
@@ -121,6 +123,18 @@ deliberately corrupted author scripts failed at the intended gates and
 their outputs are preserved. The coordinator replay matches exactly.
 [The receipt](checks/review_cluster_receipt.json) binds the final source
 and evidence; it does not certify the new source-return instantiation.
+
+[The alignment review](REVIEW_RECOVERY_ALIGNMENT_ASTRA.md) confirms the
+unweighted periodization, stated sufficient P2 window, direct AC(log),
+restricted source-cost comparison and local chart conversion under their
+explicit inputs. The summed residual estimate retains θ>α and the P2
+argument retains α+θ≤1. Generic-field NC(log), weighted/global transfer
+and upstream inverse/background interfaces remain open. Its independent
+checks use direct image sums and full oriented segments; all six deliberate
+corruptions are detected. [The receipt](checks/review_alignment_receipt.json)
+binds full/partial coverage and the confirmed BA-5 stationarity repair.
+[Coordinator replay](checks/full_proof_alignment_review_replay.json) matches
+the independent runner's stdout exactly, with empty stderr.
 
 The source-return review has additionally identified two domain/reference
 corrections. Physical covariance subtraction is now restricted to the

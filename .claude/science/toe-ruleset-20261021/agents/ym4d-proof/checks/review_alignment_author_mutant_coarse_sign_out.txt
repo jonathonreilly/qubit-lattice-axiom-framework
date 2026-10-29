@@ -1,0 +1,6 @@
+P m=3: Md, harmonic, completion PASS; merged controls FIRE; Mmerged(1)[1]=-8/9
+P m=5: Md, harmonic, completion PASS; merged controls FIRE; Mmerged(1)[1]=40/99
+P m=9: Md, harmonic, completion PASS; merged controls FIRE; Mmerged(1)[1]=8/153
+C d=4 L=3: all four directions zeroth/midpoint moments and BCH2 areas PASS
+C d=4 L=5: all four directions zeroth/midpoint moments and BCH2 areas PASS
+C controls: lower-corner and single transverse contour FIRE

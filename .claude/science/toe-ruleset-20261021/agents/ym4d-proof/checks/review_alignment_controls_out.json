@@ -1,0 +1,56 @@
+{
+  "author_original": {
+    "exit_code": 0,
+    "elapsed_seconds": 0.845231999992393,
+    "expected": "success",
+    "actual_stdout_bytes": 942,
+    "actual_stderr_bytes": 0
+  },
+  "author_mutant_harmonic": {
+    "exit_code": 1,
+    "elapsed_seconds": 0.019015332974959165,
+    "expected": "assertion failure",
+    "actual_stdout_bytes": 0,
+    "actual_stderr_bytes": 631
+  },
+  "author_mutant_S1_normalization": {
+    "exit_code": 1,
+    "elapsed_seconds": 0.01827937498455867,
+    "expected": "assertion failure",
+    "actual_stdout_bytes": 0,
+    "actual_stderr_bytes": 593
+  },
+  "author_mutant_midpoint": {
+    "exit_code": 1,
+    "elapsed_seconds": 0.04770329099847004,
+    "expected": "assertion failure",
+    "actual_stdout_bytes": 239,
+    "actual_stderr_bytes": 678
+  },
+  "author_mutant_coarse_sign": {
+    "exit_code": 1,
+    "elapsed_seconds": 0.8048626249656081,
+    "expected": "assertion failure",
+    "actual_stdout_bytes": 449,
+    "actual_stderr_bytes": 715
+  },
+  "author_mutant_uncentered": {
+    "exit_code": 1,
+    "elapsed_seconds": 0.05654329201206565,
+    "expected": "assertion failure",
+    "actual_stdout_bytes": 239,
+    "actual_stderr_bytes": 682
+  },
+  "BA5_exact_counterexample": {
+    "t": "1/1000",
+    "determinant_real": "8999971000027000001/9000027000027000009",
+    "determinant_imaginary_nonzero": "47999984000/27000081000081000027",
+    "distinct_singular_values_squared": [
+      "9000001/9000009",
+      "8999986000009/9000018000009",
+      "8999955000075000001/9000027000027000009"
+    ],
+    "logarithm_HS_squared_upper_bound": "7/125000",
+    "interpretation": "Scalar determinant phase times U(3) polar factor violates SU(3) stationarity; BA5 quadratic conclusion is independently recoverable."
+  }
+}

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_mutant_scale_propagation.py", line 229, in <module>
+    print(scale_bookkeeping())
+          ^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_mutant_scale_propagation.py", line 198, in scale_bookkeeping
+    assert propagated==3*h_m
+           ^^^^^^^^^^^^^^^^^
+AssertionError

@@ -2011,3 +2011,17 @@ residual / plain-current slots. Still ARGUED: (AC)_log, (P2-tw)_log, output conv
 a2_55_lp registered OVERALL FAIL (gate B2 predicted a nonzero quadratic detail; measured 0 — disclosed, not re-registered).
 **Codex review launched (CODEX_REVIEW_ALIGN2.md). Launched: SPHERE2_55** (LCS-a and N5-T*, the sphere route's unassigned
 inputs).
+
+**OSLEAF55 — finished** (claude-opus-5-5, max). **Codex work-list item 1 done (pending Codex): the formulation is FORCED to
+be separated Schwinger distributions on ^0𝒮** (Proposition FS: Lemma V + F-tune make ordinary moments of the smeared
+clover field incompatible with a non-vacuous normalisation); algebra 𝒜 = ⊕ ^0𝒮_n with positive half 𝒜_+ and all maps
+fixed; reconstruction re-derived from separated distributions (Wightman step imported from OS II [m-sec], growth match
+s = 11, β = p+3 via SRCCD55 Prop. E(a), itself NOT-VERIFIED); CLOSURE-sep (no contact values, no ordinary positivity).
+**EXT: (X1) — a smeared per-scale separated bound with λ-power down to c_*a — is necessary AND sufficient** (Prop. MIN,
+Thm EXT). **Theorem BRIDGE: (SP_λ) ⇒ OS growth, RP on 𝒜_+ and invariance on all of 𝒜 from the separated domain** (Lemma TP:
+separated products are dense; empty contact domain) — answers Codex SEAM's most dangerous bridge, with ONE analytic input.
+TRAJ written (TR-0..TR-9; 8 conflicts fixed; u_K − R_F ≥ γ^{−2} implied by g_ref ≤ g_1). 12/3/7. OS I/II primary texts
+not readable (Project Euclid returned empty) — checked against open reviews (arXiv:2104.02090, 2407.18222), marked
+[m-sec]. **Owner-level reading flagged: OWN-alg** (T_OS's "state" in OS's own separated-distribution sense — this is the
+standard OS formulation, not a weakening; recorded as the lead's recommendation). **Codex review launched
+(CODEX_REVIEW_OSLEAF.md). Launched: SRC2_55** — (X1)/(SP_λ) from the per-step package (Codex item 13).

@@ -5,6 +5,45 @@ Git at `46dc04b05c`. The late review dispositions in PROOF.md's
 `[S27-RECOVERY]` block override older completion claims. It does not certify the
 full proof, independent audit status, or a mass gap.
 
+## Active full-proof goal — 29 October 2026
+
+The owner has now explicitly requested completion and independent checking of
+**the full proof**, continuing with Astra/max workers and pushing progress to
+PR #10114. The goal is active; the earlier bounded recovery handoff is not the
+stopping condition. The existing PR target is T_OS as specified below. A
+clarification about whether to add a mass-gap theorem has been requested;
+the current determinant and return tasks are prerequisites for either scope.
+
+Completion requires a single precisely stated observable/test algebra and
+free-comparator class, a common lattice model and coupling trajectory, all
+analytic estimates and action/domain identifications actually consumed,
+compatible cutoff/volume limits, the full stated OS properties and the
+non-freeness witness on that same reconstructed theory. Each substantive
+new argument and the final assembly need independent checks. A conditional
+assembly with an unproved Yang–Mills input, a finite test, a renamed action,
+or a list of resolved local lemmas is not full-proof completion.
+
+Continuation baseline: `962f97c259d8c241df632a07e27f498f4ad33b09`.
+Methodology refreshed and unchanged at
+`6c269770273c3fe00de350d5a3c14cacb70c2833`.
+
+Current assignments use fresh `gpt-6-astra / max` contexts:
+
+- **Residual determinant author:** the actual completed-gauge-row Hessian,
+  grouped infrared symbols and the all-increments flow estimate.
+- **Source-local return author:** actual level-zero operator localization,
+  connected-support incidence bounds and exact normalized return identity,
+  retaining the background-substitution and higher-level action interfaces.
+- **Independent UIR reviewer:** the frozen recovery argument and its actual
+  dependencies, through an independent derivation/check path. Cluster and
+  alignment reviews follow as reviewer capacity becomes available; new author
+  results then receive their own separate-context checks.
+
+Same-family context separation is disclosed and is not described as
+cross-family review. The coordinator owns integration and PR updates. See
+[the approach registry](APPROACH_REGISTRY.md) for mechanisms, terminal
+obligations and the distinction between intermediate support and full closure.
+
 ## Goal and source identity
 
 The inherited target is **T_OS on R^4**: a non-free Euclidean SU(N) Yang–Mills

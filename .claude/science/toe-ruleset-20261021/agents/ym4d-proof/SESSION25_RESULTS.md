@@ -2102,3 +2102,12 @@ original lane-A hypotheses incl. LR-pot retained — DICT55's "LR-pot off the ch
 e^{5μ/2}; N_Σ for GV-E; names). REFUTED in DICT55: LR-pot's exclusion, blanket gauge-saturation transport, the literal
 normaliser repair (needs +κud), the unqualified weight comparison. Not banked: the 12/17/15 certificate as a status claim.
 Most dangerous (unchanged): consumers read curvature-small data, banked BFT is on a chosen global-potential-small chart.
+
+**TSE55 — finished** (claude-opus-5-5, max). **Theorem TS: the two-sided n = 2 asymptotic-freedom bound for the witness,
+¼c_bub I₈ u^{−2} ≤ W_m ≤ (7/4)c_bub I₈ u^{−2}, c_bub = 12(N²−1)/π⁴, conditional on ONE open YM input (PL-1L)** (each step's
+contribution to the e two-point function = its one-loop running value up to u^{−ϑ}) plus (K-dec) (pre-S24 lemmas), (FLOW-pw)
+(any positive two-sided bracket), (LGF) (cited, not re-derived). Upper half (κ_e = 1, enough for H-RED^e) from (SRC-rel)
+alone. REFUTED the brief's structure (the fine levels' one-loop source-source term is a fixed fraction, not suppressed —
+the whole all-level bubble must be the leading term). Lemma V's mechanism gives 0 at separated points; a fixed source
+radius gives no AF envelope. **(PL-1L)'s core = SRCAN55's (LOC-e): one shared missing estimate.** **Codex review launched
+(CODEX_REVIEW_TSE.md). Launched: LOCE55** — the shared estimate (CAN-e) and a re-derivation of (LGF).

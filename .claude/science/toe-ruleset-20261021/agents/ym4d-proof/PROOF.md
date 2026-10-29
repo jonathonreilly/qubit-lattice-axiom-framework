@@ -96,12 +96,13 @@
 > [SOURCE_LOCAL_RETURN_ASTRA.md](SOURCE_LOCAL_RETURN_ASTRA.md) constructs
 > level-zero operator atoms and a global-chart original-source critical map,
 > and retains all factors and contour sides in the exact return identity.
-> Its 21 finite controls reproduce, but independent review is pending.
+> [Its independent review](REVIEW_SOURCE_LOCAL_RETURN_ASTRA.md) confirms the
+> repaired bounded construction; its 21 author finite controls reproduce.
 > Actual history-uniform face bounds, all-coarse-field coverage and the
 > higher-level action/induction interfaces remain open. Its physical-covariance
 > and contour-reference claims have received scoped review corrections;
-> its vacuum subtraction and cluster threshold are now explicit. The rest
-> of that independent review is in progress.
+> its vacuum subtraction, cluster threshold and form dimension are now
+> explicit and confirmed. The review does not establish a full return bound.
 >
 > **Generic cluster review completed:**
 > [REVIEW_RECOVERY_CLUSTER_ASTRA.md](REVIEW_RECOVERY_CLUSTER_ASTRA.md)
@@ -121,7 +122,19 @@
 > ultraviolet-completion hypothesis.
 >
 > Current continuation and exact remaining obligations are in [HANDOFF.md](HANDOFF.md).
-> **T_OS remains OPEN; no mass gap is claimed.**
+> **Expanded owner target, 29 October:** the owner explicitly requests
+> **existence and the physical mass gap**. T_OS remains an open milestone;
+> the mass gap is also open. [MASS_GAP_TARGET.md](MASS_GAP_TARGET.md) records
+> the spectral target and missing uniform infrared estimate. The historical
+> exclusion of a mass gap below describes the earlier scope, not the current
+> stopping condition. Auxiliary Hessian gaps are not a physical gap.
+>
+> **Residual model review completed:**
+> [REVIEW_RESIDUAL_DETERMINANT_ASTRA.md](REVIEW_RESIDUAL_DETERMINANT_ASTRA.md)
+> independently confirms the finite completion and stated model calculation;
+> the model zero-residue conclusion still requires a common covariant
+> regulator. The actual lattice residual and its all-increments estimate
+> remain open. A new harmonic-lift/free-symbol checkpoint awaits review.
 
 > **PROVENANCE WARNING (2026-10-28T22:11:08Z, lead now claude-opus-5-5).** Every Claude-authored result in sessions 24 and 25 — lead consolidation and all worker files, commits 811b8ed6de through 666a71b7b9 — was produced on **claude-opus-5**, not the owner-required model (Claude: Opus 5.5 at extra effort or higher; Codex: gpt-6-astra at max). The owner has ruled that work likely unreliable. **Treat every session-24/25 status, fix, flag, refutation and number in this file as PROVISIONAL** until the Opus 5.5 review sweep recorded in SESSION25_RESULTS.md §PROVENANCE has re-established it. The only session-24/25 checks run at an approved setting are the Codex gpt-6-astra/max reviews (`CODEX_REVIEW_*.md`). The tally is reported as 72 / 2 / 7 / 24 + 1 **pending** that sweep.
 

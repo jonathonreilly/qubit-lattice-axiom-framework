@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "supports_connected": true,
+    "supports_contain_endpoints": true,
+    "two_term_incidence_bound": true,
+    "omitted_marked_right_term_rejected": true
+  },
+  "M_A": "1",
+  "B_A": "1",
+  "M_B": "1",
+  "B_B": "3",
+  "B_AB": "3",
+  "one_term_bound": "1",
+  "two_term_bound": "4",
+  "all_passed": true
+}

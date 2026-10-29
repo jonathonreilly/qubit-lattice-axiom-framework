@@ -143,10 +143,15 @@ same fact (L odd). The pairing of the two axial legs by order (S4', not Balaban'
 ## 3.5 BA-5 (polar part at second order): PROVEN-HERE (absolute constant c_pol not computed)
 M = Σw_je^{Y_j} = e^{Ȳ}(1 + H_2 + R_3) with H_2 := ½(Σw_jY_j² - Ȳ²) and |R_3| ≤ c y³ (expand e^{-Ȳ}e^{Y_j} to third order;
 e^{-Ȳ}Σw_je^{Y_j} = 1 + ½ΣwY² - ½Ȳ² + O(y³), the first-order terms cancelling). Y_j ∈ su(N) are anti-Hermitian, so Y_j², Ȳ²
-are Hermitian and H_2 is Hermitian with |H_2| ≤ y². The polar (unitary) factor of e^{Ȳ}P, P positive Hermitian, is e^{Ȳ}; the
-polar map is Lipschitz near 1 (|pol(1 + H + R) - 1| ≤ c'|R| for |H|, |R| ≤ 1/10, H Hermitian), and the SU(N) maximiser differs
-from the U(N) polar factor by the phase e^{-i arg det/N} with |arg det(1 + H_2 + R_3)| ≤ N|R_3|·(1 + O(y²)). So W_0 = e^{Ȳ}e^{R'},
-|R'| ≤ c_pol y³, and X_0 = BCH(Ȳ, R') = Ȳ + O(y³). ∎ NA-alg's 9.2y² is therefore not sharp at second order; the y² content of
+are Hermitian and H_2 is Hermitian with |H_2| ≤ y². **[29 October alignment-review repair]** Use the actual SU(N)
+stationarity equation, not a scalar phase correction of the U(N) polar factor (the latter exact claim was already
+withdrawn in the RBA1-fix note below). On the local maximizing branch supplied by NA-alg write W_0=e^{Ȳ}e^{R'},
+R'∈su(N), and let Π_su be the anti-Hermitian traceless projection. Stationarity is
+Π_su(e^{-R'}(1+H_2+R_3))=0. At R_3=0 its solution is R'=0. The derivative in R' there is
+Z↦−Z−Π_su(ZH_2), which is −I+O(y²) and has a uniformly bounded inverse for small y. The residual at R'=0 is
+Π_su R_3=O(y³). Expanding the equation gives a contraction on |R'|≤C|R_3|: the remainder has Lipschitz norm
+O(|H_2|+|R_3|+|R'|). This selects the same local NA-alg maximizing branch and proves |R'|≤c_pol y³ without
+assuming an exact phase formula. Therefore X_0=BCH(Ȳ,R')=Ȳ+O(y³). ∎ NA-alg's 9.2y² is therefore not sharp at second order; the y² content of
 X_0 - Ȳ is zero, and all second-order soft structure is in Ȳ, i.e. in BA-4.
 
 ## 3.6 BA-6: PROVEN-HERE (size bounds; constants explicit at second order). **BFT-A-F2 OCCURS in §33's X_c; does not occur in 𝔐^∇.**
@@ -365,9 +370,10 @@ cross term ½[D, -D'] vanishes because D' = D. The reviewer's r1-R1u measures th
 (O(t³)). The pairing may matter for the oscillation term or beyond second order (c17(B): ratio 3.96 for general fields).
 A second proof of BA-4's constant-field part (reviewer): T = PSP^{-1} for a direction-constant field, so
 log T = Ad_P(Ltx̄_μ), whose second order Lt²[D, x̄_μ] is linear in d.
-Minor (reviewer Part 3/4): BA-3's BCH₂ count "·2s²" overcounts by 2 (harmless). BA-5's "differs from the U(N) polar
-factor by the phase" is exact only for P ∝ 1; the conclusion stands (stationarity moves the maximiser by O(y⁵)); c_pol
-is uncomputed (r1-R2 diagnostic ≈ 0.017 on its sample).
+Minor (reviewer Part 3/4, scope wording clarified 29 October): BA-3's BCH₂ count "·2s²" overcounts by 2 (harmless).
+BA-5's scalar phase correction is not generally exact when P is nonscalar and the determinant-correcting phase
+is nonzero; when that phase is zero the U(N) polar factor already lies in SU(N). The conclusion follows from the
+stationarity proof now written in §3.5; c_pol is uncomputed (r1-R2 diagnostic ≈ 0.017 on its sample).
 
 **[RBA1-fix] F6 (BA-6, l.152-169).**
 - *Lipschitz form at second order (by polarisation; the reviewer's argument, written out).* Let B(u, v) be the symmetric

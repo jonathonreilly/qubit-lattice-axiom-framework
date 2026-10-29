@@ -10,9 +10,11 @@ full proof, independent audit status, or a mass gap.
 The owner has now explicitly requested completion and independent checking of
 **the full proof**, continuing with Astra/max workers and pushing progress to
 PR #10114. The goal is active; the earlier bounded recovery handoff is not the
-stopping condition. The existing PR target is T_OS as specified below. A
-clarification about whether to add a mass-gap theorem has been requested;
-the current determinant and return tasks are prerequisites for either scope.
+stopping condition. The owner has explicitly answered the scope question:
+**“Include existence and the mass gap.”** T_OS is now a necessary milestone
+within the expanded target. [MASS_GAP_TARGET.md](MASS_GAP_TARGET.md) records
+the physical spectral target, a conditional spectral reduction and the
+missing infrared estimate. It is not a mass-gap proof.
 
 Completion requires a single precisely stated observable/test algebra and
 free-comparator class, a common lattice model and coupling trajectory, all
@@ -22,19 +24,24 @@ non-freeness witness on that same reconstructed theory. Each substantive
 new argument and the final assembly need independent checks. A conditional
 assembly with an unproved Yang–Mills input, a finite test, a renamed action,
 or a list of resolved local lemmas is not full-proof completion.
+The physical mass threshold must remain positive under cutoff and volume
+removal and apply to a dense family of physical observable states. Internal
+Hessian gaps do not meet this requirement.
 
 Continuation baseline: `962f97c259d8c241df632a07e27f498f4ad33b09`.
-Methodology refreshed and unchanged at
-`6c269770273c3fe00de350d5a3c14cacb70c2833`.
+Methodology refreshed at `ca2bc7ddf64790da96cd43d42017d000fbfe4808`;
+the methodology sources are unchanged from `6c269770273c3fe00de350d5a3c14cacb70c2833`.
 
 Current assignments use fresh `gpt-6-astra / max` contexts:
 
 - **Residual determinant author:** the finite completion and grouped
   principal-model checkpoint is delivered; the actual lattice bridge
   continues in a separate working artifact.
-- **Source-local return author — first construction delivered:** actual
+- **Source-local return author — continuation active:** actual
   level-zero operator localization, all-order global-chart source
-  substitution and exact return identities; fresh review is next. Actual
+  substitution and exact return identities are independently checked at
+  their stated scope. A separate fixed-reference return construction is
+  in progress. Actual
   history/contour-face control and higher-level interfaces remain open.
 - **Independent UIR reviewer — completed:** the frozen recovery argument
   has been checked through distinct derivations and an independent program;
@@ -42,8 +49,12 @@ Current assignments use fresh `gpt-6-astra / max` contexts:
 - **Independent cluster reviewer — completed:** the corrected generic
   CX-R theorem, its constants and sufficient regimes are confirmed under
   their explicit hypotheses.
-- **New independent source-return and residual reviewers — active:** the
-  two frozen construction units. Alignment review remains queued.
+- **Independent residual reviewer — completed:** finite identities and
+  the explicitly conditional model corollary are confirmed.
+- **Independent source-return reviewer — completed:** all five scoped
+  repairs and the bounded construction are confirmed with frozen evidence.
+- **Independent alignment reviewer — active:** fresh review of the frozen
+  recovery continuation.
 
 Same-family context separation is disclosed and is not described as
 cross-family review. The coordinator owns integration and PR updates. See
@@ -72,7 +83,7 @@ stdout after excluding only the UTC line. All 28 recovered files and nine
 historical briefs remain unchanged. The replay also records the pre-fix
 hashes of all 19 prior continuation artifacts.
 
-### Source-local construction checkpoint, pending independent review
+### Source-local construction checkpoint, independently checked at its stated scope
 
 [SOURCE_LOCAL_RETURN_ASTRA.md](SOURCE_LOCAL_RETURN_ASTRA.md) now supplies an
 actual level-zero proposal: connected covariance/determinant atoms with
@@ -85,8 +96,9 @@ curvature-only, arbitrary-holonomy or all-coarse-field theorem.
 
 The exact contour comparison keeps its side integrals. Their normalized
 history-uniform bound, arbitrary retained indicators, outside-chart/cut
-failures and higher-level action/induction identities remain open. These
-author arguments are awaiting independent review. All 21 exact finite
+failures and higher-level action/induction identities remain open.
+[The independent review](REVIEW_SOURCE_LOCAL_RETURN_ASTRA.md) confirms the
+repaired level-zero/global-chart unit with those boundaries. All 21 author finite
 controls reproduced with identical stdout and empty stderr; see the
 [author receipt](checks/source_return_receipt.json) and
 [coordinator replay](checks/full_proof_source_return_replay.json).
@@ -120,10 +132,16 @@ retains both counterexamples and old/new source hashes; those two repairs
 are confirmed in the same context. The normalizer bound now explicitly
 subtracts its vacuum value, and the specialization explicitly selects
 β=μ_0+2 with interaction norm at most 1/4. Confirmation of these precision
-clarifications is complete in the same reviewer context; the rest of that
-review is in progress.
+clarifications is complete in the same reviewer context. A final form-degree
+label was corrected from n to n_d. The full bounded review is now complete.
+Its independent runs pass 28 predicates, 16 controls and four additional
+incidence predicates. The first failed symbolic-comparison attempt and
+three surviving author-checker mutations are preserved as limitations;
+distinct controls cover those omissions. [The receipt](checks/review_source_return_receipt.json)
+and [exact coordinator replay](checks/full_proof_source_review_replay.json)
+bind the source, complete/partial coverage and evidence.
 
-### Residual determinant checkpoint, pending independent review
+### Residual determinant checkpoint, independently checked at its stated scope
 
 [RESIDUAL_DETERMINANT_ASTRA.md](RESIDUAL_DETERMINANT_ASTRA.md) gives the
 actual finite Hodge/Schur completion, including moving frames and gauge
@@ -135,16 +153,34 @@ The model zero-residue corollary requires a common covariant ultraviolet
 completion; it is not a value of the actual lattice residual.
 
 The actual lattice/alias/BCH identification and every actual residual
-increment bound remain open. The author continues that bridge while a
-fresh reviewer checks the frozen §§1–4. Both exact scripts reproduced
+increment bound remain open. [The independent review](REVIEW_RESIDUAL_DETERMINANT_ASTRA.md)
+confirms the frozen §§1–4, retaining the regulator hypothesis for the
+model corollary. Both author scripts reproduced
 their 21 and 17 predicates with identical stdout and empty stderr. The
 [frozen manifest](checks/residual_det_frozen_manifest.json) and
 `checks/full_proof_residual_det_0{1,2}_replay.json` bind this checkpoint.
 
+The independent reviewer preserved an initial 51/52 run: the sole failure
+was an incorrect expectation that the chosen reduced-model gauge Grams
+would fail to commute. A separate genuinely noncommuting fixture and
+polarized Schur-jet calculation passed 27/27. [The review receipt](checks/review_residual_receipt.json)
+and [coordinator replay](checks/full_proof_residual_review_replay.json)
+retain both outcomes; replay differs only in UTC fields. No author-source
+correction was needed.
+
+The author has separately frozen an [actual finite/free lattice bridge](checks/residual_det_lattice_bridge_working.md)
+for review. It preserves the point-lift quartic-mode failure and constructs
+a harmonic lift with its scalar Gram factor, internal Dirichlet gap and
+all-alias free principal matrix. Its compatible charged-sector regulator
+is explicit; the periodic/full-colour limit and off-shell vertices remain
+open. This new unit is author support, not part of the completed model review.
+
 ## Goal and source identity
 
-The inherited target is **T_OS on R^4**: a non-free Euclidean SU(N) Yang–Mills
-limit satisfying the stated OS0–OS3 formulation. The work uses a soft
+The inherited milestone is **T_OS on R^4**: a non-free Euclidean SU(N) Yang–Mills
+limit satisfying the stated OS0–OS3 formulation. The expanded goal adds the
+physical mass gap and the associated complete reconstruction requirements.
+The work uses a soft
 gauge-covariant renormalization group with S4′ averaging, building on
 **Tadeusz Balaban's** lattice-gauge RG programme and **J. Dimock's** expositions.
 No mass gap, uniqueness or clustering is claimed. The precise OS observable

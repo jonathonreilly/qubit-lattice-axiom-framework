@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_return_author_parametrix_sign.py", line 341, in <module>
+    assert result['all_passed']
+           ~~~~~~^^^^^^^^^^^^^^
+AssertionError

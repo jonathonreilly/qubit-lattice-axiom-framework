@@ -1,0 +1,46 @@
+{
+  "checks": {
+    "A_first_jet": true,
+    "A_mixed_jet": true,
+    "B_first_jet_at_b0": true,
+    "B_mixed_jet_at_b0": true,
+    "C_first_jet_at_b0": true,
+    "C_mixed_jet_at_b0": true,
+    "Gram_commutator_nonzero": true,
+    "K_and_DeltaA_noncommute": true,
+    "K_selfadjoint": true,
+    "Schur_fixture_noncommuting": true,
+    "all_model_factors_noncommuting": true,
+    "all_scalar_blocks_invertible": true,
+    "exact_fine_row": true,
+    "full_Hodge_Schur_factorization": true,
+    "inverse_first_jet": true,
+    "inverse_mixed_jet": true,
+    "joint_and_W_invertible": true,
+    "missing_gauge_Gram_control": true,
+    "missing_h_factor_control": true,
+    "missing_transverse_Gram_control": true,
+    "noncommuting_massive_elimination": true,
+    "noncommuting_shear_determinant": true,
+    "omitted_A_cross_derivative_control": true,
+    "omitted_C_pairing_control": true,
+    "six_determinant_residual_exact": true,
+    "transverse_schur_noncommuting": true,
+    "wrong_transverse_completion_control": true
+  },
+  "details": {
+    "Grams": {
+      "coarse_gauge": "4376679/14641",
+      "coarse_transverse": "4376679/312481",
+      "fine_gauge": "41",
+      "fine_transverse": "41/4"
+    },
+    "noncommuting_Delta_commutator": "Matrix([[0, 215/121], [-215/121, 0]])"
+  },
+  "finished_utc": "2026-10-29T12:57:06.100500+00:00",
+  "passed": 27,
+  "python": "3.12.8",
+  "started_utc": "2026-10-29T12:57:03.938151+00:00",
+  "sympy": "1.14.0",
+  "total": 27
+}

@@ -1,0 +1,539 @@
+{
+  "schema": "scoped-independent-review-read-manifest-v1",
+  "source_commit": "731e46a915bccbc8b32beed8abdc96dc76976082",
+  "methodology_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "recorded_utc": "2026-10-29T13:08:45.236364+00:00",
+  "coverage_statement": "Full frozen note and author controls; exact contextual ranges only. Source reading is not blanket certification of every incidentally encountered historical claim. No evolving author work used.",
+  "sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RESIDUAL_DETERMINANT_ASTRA.md",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "git_blob": "db2a486dfedaea89c2123fa4f9097916c7a30bb8",
+      "bytes": 27582,
+      "lines": 334,
+      "sha256": "2b5059568c92659717c0c021dd4460899408f7647ca8a3ea4a60b76809400ec8",
+      "read_ranges": [
+        [
+          1,
+          334
+        ]
+      ],
+      "complete_file_read": true,
+      "purpose": "Complete frozen target; each claimed finite algebra, model, pole-table and fixed-depth statement independently examined."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RECOVERY_UIR_ASTRA.md",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "git_blob": "c0dc4213af551f5cabe4270958ec3c866c5dacb6",
+      "bytes": 35284,
+      "lines": 272,
+      "sha256": "0cbb4f9a967022ab669cae087617f390b2bfb481034012aac85e7cfc9928bc40",
+      "read_ranges": [
+        [
+          1,
+          272
+        ]
+      ],
+      "complete_file_read": true,
+      "purpose": "Preceding normalization, regulated Phi, fixed-depth tree/germ source and open residual boundary; independent re-derivation of newly used premises."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RECOVERY_UIR_ASTRA.md",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "git_blob": "ee904fb5dd86e867c50551bda269dc13cd943c9a",
+      "bytes": 26968,
+      "lines": 192,
+      "sha256": "347b7ae680b2c305cc7bb5de8b4496d069bbea309a6df71f18109c54a22c4098",
+      "read_ranges": [
+        [
+          1,
+          192
+        ]
+      ],
+      "complete_file_read": true,
+      "purpose": "Preceding independent review provenance/scope; not substituted for verification of newly consumed steps."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UIR2_55.md",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "git_blob": "3f5934189db747cf771287f79877307ec77e52d1",
+      "bytes": 35453,
+      "lines": 320,
+      "sha256": "bc10b5cc37c8f10cb339e234a3ca3aa252fd401cfb75476334c8c94aa8f5a6f3",
+      "read_ranges": [
+        [
+          103,
+          164
+        ]
+      ],
+      "complete_file_read": false,
+      "purpose": "Actual normalized Phi definition, determinant factors, chart and chain-rule/gauge conventions; LOC claims not imported merely from the source label."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UIR55.md",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "git_blob": "cb1163efb60e1c42531137501a1e233c6b97c09d",
+      "bytes": 68640,
+      "lines": 625,
+      "sha256": "4c6d80473a80714e2a5aa1e241e8835648bbe3c65a7bca38a5758faf3c5accb4",
+      "read_ranges": [
+        [
+          114,
+          297
+        ],
+        [
+          406,
+          420
+        ]
+      ],
+      "complete_file_read": false,
+      "purpose": "Actual free symbols, S4-prime correction, residual definition and telescope consumer; no independent certification of all historical numerical or uniform claims."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FLOW55.md",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "git_blob": "808c10f576b55f00a6c80435ca8b22445cb6b84b",
+      "bytes": 70208,
+      "lines": 616,
+      "sha256": "56d2707f4b571585db26cf2a077dbaee57bc936c76821cdbc50710e4b36e9d25",
+      "read_ranges": [
+        [
+          341,
+          393
+        ]
+      ],
+      "complete_file_read": false,
+      "purpose": "Actual orbit-average source, separate gauge invariance, normalized level group, ghost factors and h minimization."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FLOW.md",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "git_blob": "e9d9dd71e1bb69ab0319a83cf75b691cf32e2143",
+      "bytes": 539577,
+      "lines": 4851,
+      "sha256": "085cd225228a23847b053650fe8bff4c14529d7e630a74565b301d39855e442f",
+      "read_ranges": [
+        [
+          20,
+          42
+        ],
+        [
+          113,
+          150
+        ],
+        [
+          600,
+          685
+        ],
+        [
+          1033,
+          1117
+        ],
+        [
+          1580,
+          1649
+        ]
+      ],
+      "complete_file_read": false,
+      "purpose": "Actual normalization erratum, one-loop source, colour tadpole, fixed-endpoint gap, local vertex/inverse facts; unrelated uniform claims not certified."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "git_blob": "9c01460d3f1226028852a725dbd4b249f645b82d",
+      "bytes": 766420,
+      "lines": 7116,
+      "sha256": "dbcd5314ddddcd26fe39f6e6684437bc76488410c8c314660c04c134b6d08608",
+      "read_ranges": [
+        [
+          881,
+          943
+        ],
+        [
+          3349,
+          3442
+        ],
+        [
+          6769,
+          6815
+        ]
+      ],
+      "complete_file_read": false,
+      "purpose": "T_OS target and S4-prime conventions, NA-alg normalized soft density/analytic germ, TOWER-VAR local functional. NA-FP and adjoining historical diagnostics incidentally read, not promoted."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT_A.md",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "git_blob": "f6ed941ee8fa2fc85843efc7ef23cbaf73b05df9",
+      "bytes": 351969,
+      "lines": 3744,
+      "sha256": "8074d6c5efe3648bfb28e3463a6076cf6df74c9c358a8613390044148ac6fbe0",
+      "read_ranges": [
+        [
+          20,
+          38
+        ]
+      ],
+      "complete_file_read": false,
+      "purpose": "Actual composite action, gauge group and coordinate/unit conventions."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT34_55.md",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "git_blob": "f46fc2a27ad771822dc7735b69cc2ccbcc816eab",
+      "bytes": 70280,
+      "lines": 670,
+      "sha256": "f714a647910c4fd19570ecd192b98144b6c54d37c8c4f30c73bd20d426ef717d",
+      "read_ranges": [
+        [
+          76,
+          205
+        ]
+      ],
+      "complete_file_read": false,
+      "purpose": "Explicit uniform producer hypotheses H1/H2/H3 and their conditional boundary; no claim that this unit proves those hypotheses."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_01.py",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "git_blob": "9abe7634564e3e9df0b2a80c33a1cd45aafb3df5",
+      "bytes": 6881,
+      "lines": 126,
+      "sha256": "71cf096c4ca6544867e353de6691a02a35c2505f1650fb013028ca7e3cc03216",
+      "read_ranges": [
+        [
+          1,
+          126
+        ]
+      ],
+      "complete_file_read": true,
+      "purpose": "Complete author evidence inspection; empty stderr verified by byte length/hash; no author replay counted as independent mathematics."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_01_criteria.md",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "git_blob": "8a622aa649b0b89d510d7bcb6a0d550fa1edb232",
+      "bytes": 2471,
+      "lines": 12,
+      "sha256": "510e36c106f83da6e7f8de042d0f55bb3fef050e35a95ad11efdb64a24e5b994",
+      "read_ranges": [
+        [
+          1,
+          12
+        ]
+      ],
+      "complete_file_read": true,
+      "purpose": "Complete author evidence inspection; empty stderr verified by byte length/hash; no author replay counted as independent mathematics."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_01_err.txt",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "lines": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "read_ranges": [],
+      "complete_file_read": false,
+      "purpose": "Complete author evidence inspection; empty stderr verified by byte length/hash; no author replay counted as independent mathematics."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_01_out.txt",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "git_blob": "a799c065332132f5b141fde450387541304dce1d",
+      "bytes": 1614,
+      "lines": 27,
+      "sha256": "4af6420348c3ecc0e58cb4d841ebe1095a50f8593cd4ec6508330bff283c0457",
+      "read_ranges": [
+        [
+          1,
+          27
+        ]
+      ],
+      "complete_file_read": true,
+      "purpose": "Complete author evidence inspection; empty stderr verified by byte length/hash; no author replay counted as independent mathematics."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_02.py",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "git_blob": "2e9f36e22e3aa36a0c7b6e66faa2c3376d567b74",
+      "bytes": 3378,
+      "lines": 63,
+      "sha256": "c40c579b6d0686051d7b13bb8108586675480d9ba7cdd500c9362ee5171b78ef",
+      "read_ranges": [
+        [
+          1,
+          63
+        ]
+      ],
+      "complete_file_read": true,
+      "purpose": "Complete author evidence inspection; empty stderr verified by byte length/hash; no author replay counted as independent mathematics."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_02_criteria.md",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "git_blob": "d029ba25328f84a7ca63cfc140b4808ffff7de1b",
+      "bytes": 1450,
+      "lines": 11,
+      "sha256": "eedfd7da720fa59a0d76e3d2b775a9c41931d59592ad885b47db63bfefc229d9",
+      "read_ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "complete_file_read": true,
+      "purpose": "Complete author evidence inspection; empty stderr verified by byte length/hash; no author replay counted as independent mathematics."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_02_err.txt",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "lines": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "read_ranges": [],
+      "complete_file_read": false,
+      "purpose": "Complete author evidence inspection; empty stderr verified by byte length/hash; no author replay counted as independent mathematics."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_02_out.txt",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "git_blob": "bc4a04ba24d10f3d2ce2bec33ee4891cbb6667ed",
+      "bytes": 967,
+      "lines": 20,
+      "sha256": "44d47437576b0a9740cc429c3e699d315dd41c67d640479163d29d7359e32277",
+      "read_ranges": [
+        [
+          1,
+          20
+        ]
+      ],
+      "complete_file_read": true,
+      "purpose": "Complete author evidence inspection; empty stderr verified by byte length/hash; no author replay counted as independent mathematics."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_frozen_manifest.json",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "git_blob": "edccf2a2df35af3bcc52b7b68118c4df21706467",
+      "bytes": 1831,
+      "lines": 53,
+      "sha256": "819948a5a0a53f5291465e9a2ea112ab842272662f2bd8b98f3617839ce64db5",
+      "read_ranges": [
+        [
+          1,
+          53
+        ]
+      ],
+      "complete_file_read": true,
+      "purpose": "Every declared artifact byte length and SHA256 verified against immutable Git objects."
+    },
+    {
+      "path": "AGENTS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "06a5d79cfd2e5e6886f0702e96bd40b3d581a5ae",
+      "bytes": 1118,
+      "lines": 26,
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "read_ranges": [
+        [
+          1,
+          26
+        ]
+      ],
+      "complete_file_read": true,
+      "purpose": "Current-main operating/authority instruction; no scientific premise supplied."
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "bea573caf2b0ea43a2c6519c9a474d7a10d82965",
+      "bytes": 11788,
+      "lines": 193,
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "read_ranges": [
+        [
+          1,
+          193
+        ]
+      ],
+      "complete_file_read": true,
+      "purpose": "Current-main operating/authority instruction; no scientific premise supplied."
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "ba6fc9a69f3e6dfca01f3257d611d1a057def305",
+      "bytes": 2180,
+      "lines": 35,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "read_ranges": [
+        [
+          1,
+          35
+        ]
+      ],
+      "complete_file_read": true,
+      "purpose": "Current-main operating/authority instruction; no scientific premise supplied."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "4796f0492a9d04a8f779c29960240dff32ee0b60",
+      "bytes": 24561,
+      "lines": 370,
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "read_ranges": [
+        [
+          1,
+          370
+        ]
+      ],
+      "complete_file_read": true,
+      "purpose": "Current-main operating/authority instruction; no scientific premise supplied."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "1ec31f6e817cb259df1bdafa4a358b12e0ac15b8",
+      "bytes": 5188,
+      "lines": 96,
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "read_ranges": [
+        [
+          1,
+          96
+        ]
+      ],
+      "complete_file_read": true,
+      "purpose": "Current-main operating/authority instruction; no scientific premise supplied."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "90d142bceca9de62e2941519ddd17650cb6366e6",
+      "bytes": 12608,
+      "lines": 183,
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "read_ranges": [
+        [
+          1,
+          183
+        ]
+      ],
+      "complete_file_read": true,
+      "purpose": "Current-main operating/authority instruction; no scientific premise supplied."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "7f46ba9028f7b047cf7589521d89b7492e25273c",
+      "bytes": 12940,
+      "lines": 248,
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "read_ranges": [
+        [
+          1,
+          248
+        ]
+      ],
+      "complete_file_read": true,
+      "purpose": "Current-main operating/authority instruction; no scientific premise supplied."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "04ea075224460de0223a1a0b22a68423c6df1a3a",
+      "bytes": 7554,
+      "lines": 140,
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "read_ranges": [
+        [
+          1,
+          140
+        ]
+      ],
+      "complete_file_read": true,
+      "purpose": "Current-main operating/authority instruction; no scientific premise supplied."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "da1bc02c3d9d3ba6b667139762ffa8d66efc73b1",
+      "bytes": 23216,
+      "lines": 394,
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "read_ranges": [
+        [
+          1,
+          394
+        ]
+      ],
+      "complete_file_read": true,
+      "purpose": "Current-main operating/authority instruction; no scientific premise supplied."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "cd4b0f2a9bf9b2bb20e2316993cc49f669430c0e",
+      "bytes": 4975,
+      "lines": 126,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "read_ranges": [
+        [
+          1,
+          126
+        ]
+      ],
+      "complete_file_read": true,
+      "purpose": "Current-main operating/authority instruction; no scientific premise supplied."
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+      "bytes": 11333,
+      "lines": 233,
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "read_ranges": [
+        [
+          1,
+          233
+        ]
+      ],
+      "complete_file_read": true,
+      "purpose": "Current-main operating/authority instruction; no scientific premise supplied."
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "0075998454899efb1b83e71daea5bc60d3499d49",
+      "bytes": 6427,
+      "lines": 130,
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "read_ranges": [
+        [
+          1,
+          130
+        ]
+      ],
+      "complete_file_read": true,
+      "purpose": "Current-main operating/authority instruction; no scientific premise supplied."
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "git_blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa",
+      "bytes": 6416,
+      "lines": 52,
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "read_ranges": [
+        [
+          1,
+          52
+        ]
+      ],
+      "complete_file_read": true,
+      "purpose": "Current-main operating/authority instruction; no scientific premise supplied."
+    }
+  ]
+}

@@ -760,12 +760,12 @@ formula, before any estimate.
 Let D=[-p,p]^(n_d). Let A_0(w) be the actual reference affine chart and
 A_z(w)=b(z)+sigma K(z)^(-1/2)w. Assume the straight homotopy H(s,w) from
 A_0 to A_z stays within the holomorphic chart of the **target** integrand
-f_z(a) da_1...da_n. Orient the side chain so Stokes gives
+f_z(a) da_1...da_{n_d}. Orient the side chain so Stokes gives
 
     ∫_{A_z(D)} f_z(a)da - ∫_{A_0(D)} f_z(a)da
         = ∫_{H([0,1]×∂D)} f_z(a)da.                          (39)
 
-The n-form is closed because it is holomorphic; the boundary-of-a-product
+The n_d-form is closed because it is holomorphic; the boundary-of-a-product
 identity proves (39), including at complex z. The side is a sum of 2n_d
 explicit face integrals with the corresponding Jacobian minors. Thus the
 reference denominator equals the moving-contour expression **minus** that

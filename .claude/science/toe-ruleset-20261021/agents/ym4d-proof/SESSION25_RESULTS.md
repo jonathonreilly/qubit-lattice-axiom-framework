@@ -2345,3 +2345,35 @@ applied with explicit old/new hashes in
 The normalizer vacuum subtraction and the CX-R rate/threshold have also
 been made explicit and confirmed in the same context. The remaining review
 continues. No full-proof conclusion follows.
+
+
+### Full-proof continuation: mass-gap scope and residual review, 29 October
+
+The owner has explicitly expanded the target to existence **and the physical
+mass gap**. T_OS alone is a milestone; the completion contract and missing
+infrared estimate are recorded in [MASS_GAP_TARGET.md](MASS_GAP_TARGET.md).
+Its elementary spectral reduction is author support pending independent
+review. No actual uniform mass-gap estimate has been constructed.
+
+[The residual review](REVIEW_RESIDUAL_DETERMINANT_ASTRA.md) is complete: it
+confirms the frozen finite identities and the model corollary under its
+explicit common-regulator hypothesis. The first independent run preserves
+51/52 outcomes because the intended noncommuting fixture actually commuted;
+the supplementary noncommuting and mixed-jet run passes 27/27. Coordinator
+replay reproduces both, excluding only UTC fields. The actual lattice
+residual remains open. A separate harmonic-lift/free-symbol checkpoint is
+frozen for review; its fixed-depth auxiliary gap is not a physical gap.
+
+[The source-return review](REVIEW_SOURCE_LOCAL_RETURN_ASTRA.md) is also
+complete after five scoped corrections. Independent checks pass 28
+predicates, 16 controls and four incidence predicates. Its failed symbolic
+comparison and three surviving author mutations remain in the evidence.
+The author continues the fixed-reference return in a separate source file.
+
+During the alignment review, BFT_A §3.5 was reconciled with its older
+RBA1 correction: the generally false exact SU(N) scalar-phase formula is
+replaced by the actual stationarity contraction. The same quadratic
+conclusion is confirmed; the historical note now allows the zero-phase
+exception. [Repair provenance](checks/full_proof_alignment_ba5_fix.json)
+records both original and reviewed hashes. The full alignment review is
+finishing; this correction does not supply generic-field NC(log).

@@ -1,0 +1,36 @@
+{
+  "frozen_utc": "2026-10-29T13:17:21.816356+00:00",
+  "scope": "actual finite harmonic determinant identity, fixed-depth Dirichlet gap, free Gram cancellation and actual free principal symbol; not residual closure",
+  "checks": {
+    "passed": 27,
+    "total": 27,
+    "stderr_bytes": 0
+  },
+  "artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_lattice_bridge_working.md",
+      "bytes": 23645,
+      "sha256": "bb67ad564747c4c9954ae93f88aa3f43a806c88b0aefedd5ef54a945e1512c6b"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_03.criteria.md",
+      "bytes": 2119,
+      "sha256": "26c7c6c94aa4a20dfd88bb879cb8c16823abf0e4bfe11a862a4780129bdd9d4c"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_03.py",
+      "bytes": 6749,
+      "sha256": "314a97be670bdf3d743e83ecbf81e5e18b98482b87ebe92ff0c3f4df409f56d3"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_03.out.json",
+      "bytes": 2766,
+      "sha256": "a6aeb59df181debdbd67dd53036b27dd1ddae726c7a1b5950c918e6d73358c6a"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_03.err",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

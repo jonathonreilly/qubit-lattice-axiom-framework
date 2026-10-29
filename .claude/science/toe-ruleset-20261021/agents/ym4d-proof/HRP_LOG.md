@@ -159,3 +159,68 @@ and HANDOFF.md. No editable prompt/brief file changed. No platform
 instruction, axiom, audit or ledger file changed. The only temporary
 mutation outside the assigned folder was the exact root-level numeric
 lock explicitly prescribed by the brief, which was removed after the job.
+
+## [RHRP-7 fix 2026-10-29] Exact consumer wording
+
+- Scope: only REVIEW_HRP item 7's binding wording fix and the requested
+  checks-section pointer. Only HRP.md and this log changed; no editable
+  prompt or brief changed. No numerics, commits, review/audit invocation
+  or banking action.
+- HRP §9 now quotes the exact N1F/N1S consumer statements, PANEL_P1's
+  localization/renormalization sentence, P4's polynomial RP clause and
+  its qualifications, and OSLEAF55's restricted-domain RP clauses and
+  CONTRACT-sep assumptions. The item 7 qualifications are preserved
+  word for word. Quoted OSLEAF55 banking language grants no new status.
+- The complete original §9 remains visible as a blockquote; removing
+  only its quote prefixes recovers the original section body exactly.
+  Outside §9, HRP has only the one added pointer to
+  `checks/hrp_lead_rerun.md`. That report was not altered or independently
+  rechecked here; its execution report belongs to the lead.
+- Mechanical checks completed before this log append: all eleven copied
+  excerpts match their named sources word for word (line-wrap whitespace
+  normalized for comparison); exact original-§9 recovery; expected whole
+  HRP file content; no added trailing whitespace; git diff --check;
+  all 2,322 other folder
+  files unchanged by content hash. No scientific runner was invoked.
+- Recovery/source identity: pre-fix HRP SHA-256
+  `d85027730ac0c7d4c6102ede801be3f4f8cd3b89a34910675280cde15a5f11b7`;
+  post-fix HRP SHA-256
+  `f1f991dea8062bfc7176a68cc639beacd848d4fb9cdd0bd4917198e39dac51b5`.
+  This log's pre-append SHA-256 is
+  `8431dc348de69c17d1e3525e904e65048f3a8134ee40b5d4a94fcb4d10854c2c`.
+- Current HEAD: `93a9d1a141849dfac1d8f1a585a17e43211ef271`.
+  The workflow, integrator skill and freshness reference match the local
+  `origin/main` snapshot `ca2bc7ddf64790da96cd43d42017d000fbfe4808`.
+  No fetch, index/ref mutation or commit was performed; remote freshness
+  is unverified.
+
+Native stat receipts (HRP after the wording edit; HRP_LOG before this append):
+
+```text
+HRP.md | bytes=51453 | mtime=2026-10-29T14:09:27-0400 | birth=2026-10-29T13:52:51-0400
+HRP_LOG.md | bytes=9584 | mtime=2026-10-29T13:52:51-0400 | birth=2026-10-29T13:52:51-0400
+```
+
+Byte counts against the pre-fix snapshots; line-change counts from
+`git diff --numstat` (only the two authorized files changed):
+
+```text
+HRP.md     | 46818 -> 51453 bytes (+4635); 94 insertions(+), 34 deletions(-)
+HRP_LOG.md | 9584 -> 13056 bytes (+3472); 65 insertions(+), 0 deletions(-)
+```
+
+Consumer/review source identities, unchanged during the edit:
+
+| File | Bytes | SHA-256 |
+|---|---:|---|
+| REVIEW_HRP.md | 23660 | `b02e4fad071318c6558699469eae78397986f325fde7c26848cfd45acea42fd6` |
+| ASSEMBLY55.md | 84890 | `253ea55619c7fd09d278add27b840c989a2a35160eb22a0385ea700f01fac9c7` |
+| PANEL_P1.md | 39059 | `feba5a1f2c0fc2c6ebc3373a5edfc3aec2ff0bb242550f4112b00e4d5a74a645` |
+| CODEX_REVIEW_P4.md | 46014 | `12d59c044e86af2fe66806332aed9a2e98181409e075151a983c4b4eeb7d1b34` |
+| OSLEAF55.md | 97416 | `7ba9423f52e7da40f5bf2a44dd4fb49d477405bb70cf5b41de3c0482bf2e0df0` |
+| checks/hrp_lead_rerun.md | 2724 | `8d6e63e75f3e868496bb4b56ce7d1d11614e7d9334477972e45f0ccf79b2c89a` |
+
+Current checkpoint: item 7's requested author wording fix is applied.
+Independent acceptance of that fix and independent re-inspection of the
+lead rerun remain outside this task. The original unbanked status and
+all named upstream obligations remain in force.

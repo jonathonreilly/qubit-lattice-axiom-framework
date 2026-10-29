@@ -1,0 +1,379 @@
+{
+  "corrected_source": {
+    "bytes": 34340,
+    "coverage": "Complete original source plus exhaustive exact-byte comparison proving the only change is beta >= 0",
+    "finding_id": "Cluster-domain-1",
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RECOVERY_CLUSTER_ASTRA.md",
+    "same_reviewer_fix_confirmation": true,
+    "sha256": "9c9264bd4d92b60798e48ccd2eb0ff230e221c3ffd2107c0f6443ec86de563cf"
+  },
+  "coverage_note": "Read coverage is an honest reviewer record, not a machine proof that semantic reading occurred.",
+  "excluded_evolving_source": "SOURCE_LOCAL_RETURN_ASTRA.md was not read or used",
+  "fix_provenance": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_cluster_fix.json",
+    "role": "Coordinator-authored repair record read as provenance; source bytes independently compared",
+    "sha256": "6e4bb5b364f20345500d796bd36c7d76f5226a327ed59e8c6024fb453aea1595"
+  },
+  "frozen_science_revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+  "methodology_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "reads": [
+    {
+      "bytes": 34277,
+      "git_blob": "412a534f9d7de3d8158bdcc931aa76d3dc3b8adc",
+      "line_count": 581,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RECOVERY_CLUSTER_ASTRA.md",
+      "read_coverage": "complete",
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "role": "Frozen reviewed unit and exact source/evidence provenance; criteria embedded in note",
+      "sha256": "2c4a9abd12082f756a82ab94999757abd2ebc64950f957ce47ab0a049da2e04f"
+    },
+    {
+      "bytes": 11068,
+      "git_blob": "ac56c7916a0820bf04f88c89ae9a1e4bca75ac68",
+      "line_count": 296,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/recovery_cluster_exact.py",
+      "read_coverage": "complete",
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "role": "Frozen reviewed unit and exact source/evidence provenance; criteria embedded in note",
+      "sha256": "5f51587d7f1630f6db15fef1dd697340a096839808ea00941b751a12bd70f0e6"
+    },
+    {
+      "bytes": 2120,
+      "git_blob": "2e9e1e7020c34db0638ebeb685e9fb4245977624",
+      "line_count": 55,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/recovery_cluster_results.json",
+      "read_coverage": "complete",
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "role": "Frozen reviewed unit and exact source/evidence provenance; criteria embedded in note",
+      "sha256": "32cd636afae7bf554020db1903051c7efac9357c681f59816e8e2345d1be4239"
+    },
+    {
+      "bytes": 6103,
+      "git_blob": "ffeec3a99b72a650930a942c82dd3015fba15c54",
+      "line_count": 106,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/recovery_cluster_receipt.json",
+      "read_coverage": "complete",
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "role": "Frozen reviewed unit and exact source/evidence provenance; criteria embedded in note",
+      "sha256": "d8e2a3fcbb99d85364408fa718f9e4a225bd9a05f96f3b5ec96e9c2a724e7d65"
+    },
+    {
+      "bytes": 11270,
+      "git_blob": "a2d916864d3558a507428b13d087723100eb72ab",
+      "line_count": 286,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/recovery_20261029/continuations.json",
+      "read_coverage": "complete",
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "role": "Frozen reviewed unit and exact source/evidence provenance; criteria embedded in note",
+      "sha256": "97e5423c4c7e415aa3a5fd59beb0736dba6664738824a00f856e630a63807a6c"
+    },
+    {
+      "bytes": 94345,
+      "git_blob": "05c5e3168eac736e409c87b52ce6e5bb69d81513",
+      "line_count": 812,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "read_coverage": [
+        [
+          243,
+          277
+        ],
+        [
+          312,
+          376
+        ],
+        [
+          470,
+          543
+        ],
+        [
+          656,
+          697
+        ]
+      ],
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "role": "Necessary original premises/arguments for source-coverage ledger; not blanket certification of these files",
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce"
+    },
+    {
+      "bytes": 46090,
+      "git_blob": "2924ec80053f5e46fe938f24c6dcff6f3d13e556",
+      "line_count": 318,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_STEP.md",
+      "read_coverage": [
+        [
+          108,
+          215
+        ]
+      ],
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "role": "Necessary original premises/arguments for source-coverage ledger; not blanket certification of these files",
+      "sha256": "32bab8cbc920447280b3da93a1754bf792509a115bbf8cfffc7101350fe64a0d"
+    },
+    {
+      "bytes": 765055,
+      "git_blob": "fecdb92b7f4a5c5c102231393ad6e74255a3b052",
+      "line_count": 7095,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "read_coverage": [
+        [
+          5660,
+          5845
+        ]
+      ],
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "role": "Necessary original premises/arguments for source-coverage ledger; not blanket certification of these files",
+      "sha256": "c02d86c5363f2ae76b585240b1d96d4f70653bf02505bc641884984f57122e3a"
+    },
+    {
+      "bytes": 70280,
+      "git_blob": "f46fc2a27ad771822dc7735b69cc2ccbcc816eab",
+      "line_count": 670,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT34_55.md",
+      "read_coverage": [
+        [
+          98,
+          131
+        ],
+        [
+          229,
+          307
+        ]
+      ],
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "role": "Necessary original premises/arguments for source-coverage ledger; not blanket certification of these files",
+      "sha256": "f714a647910c4fd19570ecd192b98144b6c54d37c8c4f30c73bd20d426ef717d"
+    },
+    {
+      "bytes": 87410,
+      "git_blob": "2105deb8c2634265107df40690b3659dfbcb70c7",
+      "line_count": 748,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SRC2_55.md",
+      "read_coverage": [
+        [
+          389,
+          430
+        ],
+        [
+          633,
+          748
+        ]
+      ],
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "role": "Necessary original premises/arguments for source-coverage ledger; not blanket certification of these files",
+      "sha256": "66206a0bc13e5c4c264136abb0aa8a5620e66958a561fc7c0fcee4ff3989676c"
+    },
+    {
+      "bytes": 48911,
+      "git_blob": "aaf2f134f142630f80438d3ad1dd3511e6509b00",
+      "line_count": 443,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/B2_55.md",
+      "read_coverage": [
+        [
+          273,
+          292
+        ],
+        [
+          323,
+          357
+        ],
+        [
+          426,
+          435
+        ]
+      ],
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "role": "Necessary original premises/arguments for source-coverage ledger; not blanket certification of these files",
+      "sha256": "b178059680f29adc5f4bdac0b07621c2f1697047364cdde0f5963cf25040164d"
+    },
+    {
+      "bytes": 32427,
+      "git_blob": "8118dc4dfdd0e9cf53be2fe15d4f1c564f85858d",
+      "line_count": 237,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_B2.md",
+      "read_coverage": [
+        [
+          116,
+          160
+        ]
+      ],
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "role": "Necessary original premises/arguments for source-coverage ledger; not blanket certification of these files",
+      "sha256": "d7baa377f386e6a6800e6056b87fdaf89b3811dd3845b958050a2176420108ed"
+    },
+    {
+      "bytes": 40778,
+      "git_blob": "b348389e3f6001126ef4d674cafce252f7ec9dbd",
+      "line_count": 273,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_SRC2.md",
+      "read_coverage": [
+        [
+          22,
+          53
+        ],
+        [
+          108,
+          125
+        ]
+      ],
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "role": "Necessary original premises/arguments for source-coverage ledger; not blanket certification of these files",
+      "sha256": "b817b7a8639c0585628cdadb169c80bb3fc3ff4afb22cbd76539c15fc695938e"
+    },
+    {
+      "bytes": 48089,
+      "git_blob": "42ea8895aba35e5a945e6efa3f46ea40d30d2810",
+      "line_count": 538,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LINEAR_PACKAGE.md",
+      "read_coverage": [
+        [
+          290,
+          329
+        ]
+      ],
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "role": "Necessary original premises/arguments for source-coverage ledger; not blanket certification of these files",
+      "sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad"
+    },
+    {
+      "bytes": 1118,
+      "git_blob": "06a5d79cfd2e5e6886f0702e96bd40b3d581a5ae",
+      "line_count": 26,
+      "path": "AGENTS.md",
+      "read_coverage": "complete",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "Methodology/authority boundary; not a physics premise for the generic theorem",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0"
+    },
+    {
+      "bytes": 11788,
+      "git_blob": "bea573caf2b0ea43a2c6519c9a474d7a10d82965",
+      "line_count": 193,
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "read_coverage": "complete",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "Methodology/authority boundary; not a physics premise for the generic theorem",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "bytes": 2180,
+      "git_blob": "ba6fc9a69f3e6dfca01f3257d611d1a057def305",
+      "line_count": 35,
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "read_coverage": "complete",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "Methodology/authority boundary; not a physics premise for the generic theorem",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "bytes": 24561,
+      "git_blob": "4796f0492a9d04a8f779c29960240dff32ee0b60",
+      "line_count": 370,
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "read_coverage": "complete",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "Methodology/authority boundary; not a physics premise for the generic theorem",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23"
+    },
+    {
+      "bytes": 5188,
+      "git_blob": "1ec31f6e817cb259df1bdafa4a358b12e0ac15b8",
+      "line_count": 96,
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "read_coverage": "complete",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "Methodology/authority boundary; not a physics premise for the generic theorem",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482"
+    },
+    {
+      "bytes": 12608,
+      "git_blob": "90d142bceca9de62e2941519ddd17650cb6366e6",
+      "line_count": 183,
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "read_coverage": "complete",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "Methodology/authority boundary; not a physics premise for the generic theorem",
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14"
+    },
+    {
+      "bytes": 12940,
+      "git_blob": "7f46ba9028f7b047cf7589521d89b7492e25273c",
+      "line_count": 248,
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "read_coverage": "complete",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "Methodology/authority boundary; not a physics premise for the generic theorem",
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85"
+    },
+    {
+      "bytes": 7554,
+      "git_blob": "04ea075224460de0223a1a0b22a68423c6df1a3a",
+      "line_count": 140,
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "read_coverage": "complete",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "Methodology/authority boundary; not a physics premise for the generic theorem",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e"
+    },
+    {
+      "bytes": 23216,
+      "git_blob": "da1bc02c3d9d3ba6b667139762ffa8d66efc73b1",
+      "line_count": 394,
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "read_coverage": "complete",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "Methodology/authority boundary; not a physics premise for the generic theorem",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7"
+    },
+    {
+      "bytes": 4975,
+      "git_blob": "cd4b0f2a9bf9b2bb20e2316993cc49f669430c0e",
+      "line_count": 126,
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "read_coverage": "complete",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "Methodology/authority boundary; not a physics premise for the generic theorem",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "bytes": 16941,
+      "git_blob": "b1b498432c82d68c4e59fb5601df5dbfc73ea72e",
+      "line_count": 354,
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "read_coverage": "complete",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "Methodology/authority boundary; not a physics premise for the generic theorem",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+    },
+    {
+      "bytes": 11333,
+      "git_blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+      "line_count": 233,
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "read_coverage": "complete",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "Methodology/authority boundary; not a physics premise for the generic theorem",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "bytes": 6427,
+      "git_blob": "0075998454899efb1b83e71daea5bc60d3499d49",
+      "line_count": 130,
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "read_coverage": "complete",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "Methodology/authority boundary; not a physics premise for the generic theorem",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "bytes": 6416,
+      "git_blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa",
+      "line_count": 52,
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "read_coverage": "complete",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "Methodology/authority boundary; not a physics premise for the generic theorem",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    }
+  ],
+  "science_read_policy": "Git object reads only, except exact coordinator beta-domain correction explicitly requested and confirmed"
+}

@@ -75,8 +75,9 @@
 > [RECOVERY_CLUSTER_ASTRA.md](RECOVERY_CLUSTER_ASTRA.md) supplies a generic
 > constructive replacement for CX, including original-source locality and the
 > full denominator factors. Its actual Yang–Mills hypotheses and exact return
-> identity remain unconstructed. Alignment and cluster remain **author support
-> pending independent review**, not additions to [S26-BANKED]. Four new finite check
+> identity remain unconstructed at the full history-uniform scope. Alignment
+> remains **author support pending independent review**, not an addition to
+> [S26-BANKED]. Four new finite check
 > scripts and their controls reproduced; they do not certify these analytic
 > claims or their remaining hypotheses.
 >
@@ -97,9 +98,27 @@
 > and retains all factors and contour sides in the exact return identity.
 > Its 21 finite controls reproduce, but independent review is pending.
 > Actual history-uniform face bounds, all-coarse-field coverage and the
-> higher-level action/induction interfaces remain open. The separate generic
-> cluster lemma has received an explicit β≥0 domain repair during review;
-> its full review is still in progress.
+> higher-level action/induction interfaces remain open. Its physical-covariance
+> and contour-reference claims have received scoped review corrections;
+> its vacuum subtraction and cluster threshold are now explicit. The rest
+> of that independent review is in progress.
+>
+> **Generic cluster review completed:**
+> [REVIEW_RECOVERY_CLUSTER_ASTRA.md](REVIEW_RECOVERY_CLUSTER_ASTRA.md)
+> confirms the conditional construction after the explicit β≥0 repair,
+> including both tree expansions, zero-freeness and the stated sufficient
+> regimes. The full-factor result still consumes an exact actual return
+> identity. Its 17 independent checks and 11 controls pass; six intentionally
+> corrupted author scripts fail as intended. This same-family confirmation
+> does not certify the new Yang–Mills producer or close N1.
+>
+> **Residual construction checkpoint, pending review:**
+> [RESIDUAL_DETERMINANT_ASTRA.md](RESIDUAL_DETERMINANT_ASTRA.md) supplies
+> actual finite determinant completion and a separately specified model
+> gauge-shear/vertex calculation. Its two finite scripts reproduce 21+17
+> predicates. The actual lattice/alias identification and every actual
+> residual bound remain open; the model corollary retains its covariant
+> ultraviolet-completion hypothesis.
 >
 > Current continuation and exact remaining obligations are in [HANDOFF.md](HANDOFF.md).
 > **T_OS remains OPEN; no mass gap is claimed.**

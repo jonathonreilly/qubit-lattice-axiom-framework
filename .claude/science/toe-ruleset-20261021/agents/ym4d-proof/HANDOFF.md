@@ -29,8 +29,9 @@ Methodology refreshed and unchanged at
 
 Current assignments use fresh `gpt-6-astra / max` contexts:
 
-- **Residual determinant author:** the actual completed-gauge-row Hessian,
-  grouped infrared symbols and the all-increments flow estimate.
+- **Residual determinant author:** the finite completion and grouped
+  principal-model checkpoint is delivered; the actual lattice bridge
+  continues in a separate working artifact.
 - **Source-local return author — first construction delivered:** actual
   level-zero operator localization, all-order global-chart source
   substitution and exact return identities; fresh review is next. Actual
@@ -38,9 +39,11 @@ Current assignments use fresh `gpt-6-astra / max` contexts:
 - **Independent UIR reviewer — completed:** the frozen recovery argument
   has been checked through distinct derivations and an independent program;
   its bounded claims are confirmed with explicit conditional/open limits.
-- **Independent cluster reviewer — active:** the frozen generic CX-R
-  theorem and its constants. Alignment and new author results receive
-  separate-context checks as coherent units become available.
+- **Independent cluster reviewer — completed:** the corrected generic
+  CX-R theorem, its constants and sufficient regimes are confirmed under
+  their explicit hypotheses.
+- **New independent source-return and residual reviewers — active:** the
+  two frozen construction units. Alignment review remains queued.
 
 Same-family context separation is disclosed and is not described as
 cross-family review. The coordinator owns integration and PR updates. See
@@ -65,8 +68,9 @@ samples do not prove all-momentum positivity; that conclusion has its own
 written argument. [The frozen receipt](checks/review_uir_receipt.json) and
 [read manifest](checks/review_uir_source_manifest.json) bind the coverage.
 [Coordinator replay](checks/full_proof_uir_replay.json) also passed, matching
-stdout after excluding only the UTC line. All 28 recovered files, nine
-historical briefs and 19 prior continuation artifacts retain their hashes.
+stdout after excluding only the UTC line. All 28 recovered files and nine
+historical briefs remain unchanged. The replay also records the pre-fix
+hashes of all 19 prior continuation artifacts.
 
 ### Source-local construction checkpoint, pending independent review
 
@@ -90,10 +94,52 @@ controls reproduced with identical stdout and empty stderr; see the
 During the independent cluster review, the reviewer found that the abstract
 operator lemma needed an explicit β≥0 restriction. That narrow domain
 repair has been made and confirmed in the same review context; the main
-CX-R application already chooses β>0. The full cluster review is still
-active. [Repair provenance](checks/full_proof_cluster_fix.json) records the
+CX-R application already chooses β>0. The full generic review is now
+complete. [Repair provenance](checks/full_proof_cluster_fix.json) records the
 old and corrected hashes. This is an explicit revision of one prior
 continuation file; its original bytes remain at the frozen Git commit.
+
+[REVIEW_RECOVERY_CLUSTER_ASTRA.md](REVIEW_RECOVERY_CLUSTER_ASTRA.md)
+confirms the operator/incidence/logdet construction, scalar-coordinate
+composition, both connected/tree expansions and zero-freeness, as well as
+the weak-neighbor and fixed-positive-mass sufficient regimes. FULL/VAR
+still require the exact actual denominator identity and its prefactors.
+The independent implementation passed 17 checks and 11 controls; six
+deliberately corrupted author scripts failed at the intended gates and
+their outputs are preserved. The coordinator replay matches exactly.
+[The receipt](checks/review_cluster_receipt.json) binds the final source
+and evidence; it does not certify the new source-return instantiation.
+
+The source-return review has additionally identified two domain/reference
+corrections. Physical covariance subtraction is now restricted to the
+full operator or a Π-invariant integrated subspace; arbitrary coordinate
+compressions still have augmented-operator bounds. The contour size
+estimate now specifies the same-B, zero-epsilon reference. The original
+Stokes identity is unchanged. [The source repair record](checks/full_proof_source_return_fix.json)
+retains both counterexamples and old/new source hashes; those two repairs
+are confirmed in the same context. The normalizer bound now explicitly
+subtracts its vacuum value, and the specialization explicitly selects
+β=μ_0+2 with interaction norm at most 1/4. Confirmation of these precision
+clarifications is complete in the same reviewer context; the rest of that
+review is in progress.
+
+### Residual determinant checkpoint, pending independent review
+
+[RESIDUAL_DETERMINANT_ASTRA.md](RESIDUAL_DETERMINANT_ASTRA.md) gives the
+actual finite Hodge/Schur completion, including moving frames and gauge
+Gram factors. Its separately specified soft-distance model has a nonzero
+transverse completion whose two separate poles are integrable. Restoring
+the eliminated gauge variable before expanding yields an exact shear and
+massive-block elimination that avoid the earlier artificial double poles.
+The model zero-residue corollary requires a common covariant ultraviolet
+completion; it is not a value of the actual lattice residual.
+
+The actual lattice/alias/BCH identification and every actual residual
+increment bound remain open. The author continues that bridge while a
+fresh reviewer checks the frozen §§1–4. Both exact scripts reproduced
+their 21 and 17 predicates with identical stdout and empty stderr. The
+[frozen manifest](checks/residual_det_frozen_manifest.json) and
+`checks/full_proof_residual_det_0{1,2}_replay.json` bind this checkpoint.
 
 ## Goal and source identity
 

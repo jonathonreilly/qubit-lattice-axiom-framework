@@ -239,10 +239,15 @@ Integrating each atom against a^{-1/2}/π gives the branch K^{-1/2} and
     M(K^{-1/2})≤2wQ_m/[sqrt(γ)(1-r)],
     B(K^{-1/2})≤2Jn_R wQ_m/[sqrt(γ)(1-r)^2].                   (11)
 
-For Setting N5-bg's physical square root, subtract the explicitly
-block-local I-Π_U; add its own finite M and B bounds to (11). For complex
-variables all transposes and quadratic forms are bilinear. The square
-root is the positive one on real data, and is its holomorphic continuation.
+On the full space, or a Π_U-invariant integrated subspace, Setting N5-bg's
+physical square root is obtained by subtracting the explicitly block-local
+I-Π_U; add its own finite M and B bounds to (11). On arbitrary coordinate
+compressions, (10)–(11) bound only the compressed augmented operator.
+Subtracting the compressed I-Π_U does not in general give a physical
+covariance; that interpretation requires a region-specific slice and gap.
+For complex variables all transposes and quadratic forms are bilinear. The
+augmented square root is positive on real data and is continued holomorphically;
+the physical covariance on the stated invariant slice is positive there.
 
 **Small tori and R dependence.** The local curvature-only derivation of
 (4) requires nonwrapping collars, for example T≥4R+2r_dep+2. Reusing the old
@@ -497,6 +502,8 @@ compressions inherit (24).
 
 ### 3.2 Fix the cutoff before introducing the coefficient source
 
+Choose the target rate μ_0≥0 and use β=μ_0+2 in all support bounds for
+this specialization, with the corresponding R and covariance constants.
 Use Q=Q_0(u), independent of epsilon, and C=Q_0(u)^(-1/2). Define the actual
 small-field sector by its **fixed reference** tree coordinates
 a=sigma C W and chi_p(W). This definition is made at epsilon=0 and kept
@@ -542,13 +549,18 @@ All scalar choices are counted by the binomial coefficient; no q factor
 is omitted. Use r=3 and H proportional to u/N=sigma^(-2) for baseline
 action remainders, r=2 and bounded H for -log j, and r=2 with H proportional
 to rho sigma^(-2) for (25). Terms from log Ntilde are uniformly bounded
-on a fixed complex field neighborhood for real u>0 and only improve the
+on a fixed complex field neighborhood for real u>0 only after subtracting
+the field-independent vacuum value: the uniformly bounded objects are
+log Ntilde_t(M)−log Ntilde_t(I) and its field derivatives/remainders.
+The vacuum logarithm itself grows with log t and stays in S_0, not the
+fluctuation interaction. The field-dependent remainders only improve the
 large-u powers. On x/a_*≤1/2 the three coefficient series explicitly
 bound (27) by (26). The locality includes the original epsilon_p in B;
 the support of A alone is not used as the coefficient support.
 
 For any fixed p and sufficiently small fixed rho and sufficiently large
-u, (26) is less than the generic product-measure threshold. Thus, subject
+u, require the right side of (26) to be at most 1/4 at the chosen
+β=μ_0+2. This is the generic CX-R product-measure threshold. Thus, subject
 to the independently checked CX-R combinatorial lemma, (19) is zero-free
 and its **epsilon-dependent** logarithm has connected original-source
 activities. For p(u) growing logarithmically, the sufficient condition is
@@ -762,6 +774,13 @@ be kept as a real-domain restriction or decomposed before (39). It cannot
 be swept through the homotopy under this argument.
 
 There is a useful size fact for the intended weak-coupling window.
+For this estimate fix B and take the reference specifically to be
+
+    A_0^(B)(w)=b(B,0)+sigma K(B,0)^(-1/2)w,
+
+varying only epsilon in A_z. The general Stokes identity (39) allows any
+stated reference satisfying its homotopy hypothesis; the estimate here uses
+this same-B, zero-epsilon reference.
 b(0,epsilon)=0 for every small epsilon, by the exact trivial-field
 stationarity and uniqueness. Hence the analytic difference
 b(B,epsilon)-b(B,0), which vanishes both at B=0 and at epsilon=0, has a

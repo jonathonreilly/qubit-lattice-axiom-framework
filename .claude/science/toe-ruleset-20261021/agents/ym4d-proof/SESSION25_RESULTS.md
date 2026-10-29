@@ -2320,3 +2320,28 @@ generic operator lemma. This narrow repair is confirmed in the same reviewer
 context; its old/new hashes are in `checks/full_proof_cluster_fix.json`.
 The original continuation remains available at the frozen commit. No
 whole-cluster or full-proof acceptance is inferred from this scoped fix.
+
+### Cluster review complete; new determinant/source units under review
+
+REVIEW_RECOVERY_CLUSTER_ASTRA now confirms the complete corrected generic
+CX-R theorem and its stated sufficient regimes, including both connected
+expansions and zero-freeness. FULL/VAR retains its exact-return hypothesis.
+The independent program passed 17 checks and 11 controls; six saved author
+mutants fail as intended. Coordinator reproduction matches exactly. This
+is conditional mathematical support, not actual Yang–Mills/N1 closure.
+
+RESIDUAL_DETERMINANT_ASTRA adds an exact finite completion and a separately
+specified principal-model calculation using an augmented gauge shear,
+massive-block elimination and grouped separate poles. Both exact scripts
+reproduce 21+17 predicates. Its conditional model corollary does not prove
+the actual lattice residual, whose alias/BCH/regulator bridge is still in
+development. A fresh independent reviewer is checking the frozen unit.
+
+The source-return reviewer has requested two narrow corrections: a
+Π-invariant domain for physical-covariance subtraction, and the same-B,
+zero-epsilon reference for the contour displacement estimate. Both are
+applied with explicit old/new hashes in
+`checks/full_proof_source_return_fix.json` and confirmed in the same context.
+The normalizer vacuum subtraction and the CX-R rate/threshold have also
+been made explicit and confirmed in the same context. The remaining review
+continues. No full-proof conclusion follows.

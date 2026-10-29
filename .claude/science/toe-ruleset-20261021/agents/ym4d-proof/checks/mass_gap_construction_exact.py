@@ -7,7 +7,7 @@ from fractions import Fraction
 
 import numpy as np
 import scipy
-from scipy.special import iv
+from scipy.special import iv, roots_jacobi
 import sympy as sp
 
 checks = []
@@ -134,6 +134,44 @@ for beta in (.25,1.,3.,8.):
     cycle_rows.append({"beta":beta,"top_eigenvalue":float(e[-1]),"ratio":r,
         "kinetic_only_ratio":float(rs[1]**4),"ratio_bound":bound,"convergence_error":error})
 diagnostics["cycle_transfer"]=cycle_rows
+# Independent coordinate-space construction. This does not use Bessel values,
+# the trigonometric character matrix, or the implemented cycle eigenvalues.
+# Haar class measure is (2/pi)*sqrt(1-x*x) dx. The characters are U_n(x).
+coord_beta=.7
+coord_x,coord_raw_weights=roots_jacobi(96,.5,.5)
+coord_weights=(2/np.pi)*coord_raw_weights
+coord_chars=np.empty((14,len(coord_x)))
+coord_chars[0]=1
+coord_chars[1]=2*coord_x
+for n in range(2,len(coord_chars)):
+    coord_chars[n]=2*coord_x*coord_chars[n-1]-coord_chars[n-2]
+coord_coeffs=coord_chars@(coord_weights*np.exp(coord_beta*coord_x))
+coord_eigenvalues=coord_coeffs/np.arange(1,len(coord_chars)+1)
+coord_kernel=(coord_chars.T*(coord_eigenvalues**4))@coord_chars
+coord_A=np.exp(-coord_beta*(1-coord_x)/2)
+coord_weighted_A=np.sqrt(coord_weights)*coord_A
+coord_transfer=coord_weighted_A[:,None]*coord_kernel*coord_weighted_A[None,:]
+coord_spectrum=np.linalg.eigvalsh(coord_transfer)
+coord_ratio=float(coord_spectrum[-2]/coord_spectrum[-1])
+impl_spectrum,impl_ratio,_,_=cycle_transfer(coord_beta,36,160)
+# The implementation removes exp(-beta) from the two A factors and c_0^4
+# from the four raw convolution eigenvalues. Restore exactly those scalars.
+coord_top_in_impl_units=float(coord_spectrum[-1]*np.exp(coord_beta)/coord_coeffs[0]**4)
+coord_ratio_relative_error=abs(impl_ratio/coord_ratio-1)
+coord_top_relative_error=abs(float(impl_spectrum[-1])/coord_top_in_impl_units-1)
+check("cycle_coordinate_kernel_ratio",coord_ratio_relative_error<2e-9,
+      {"beta":coord_beta,"implementation":impl_ratio,"coordinate":coord_ratio,
+       "relative_error":coord_ratio_relative_error})
+check("cycle_coordinate_kernel_top",coord_top_relative_error<2e-9,
+      {"beta":coord_beta,"implementation":float(impl_spectrum[-1]),
+       "coordinate_in_implementation_units":coord_top_in_impl_units,
+       "relative_error":coord_top_relative_error})
+diagnostics["cycle_coordinate_comparison"]={
+    "beta":coord_beta,"Haar_nodes":96,"characters":14,
+    "raw_top_eigenvalue":float(coord_spectrum[-1]),"raw_constant_coefficient":float(coord_coeffs[0]),
+    "coordinate_ratio":coord_ratio,"ratio_relative_error":coord_ratio_relative_error,
+    "top_relative_error":coord_top_relative_error,
+    "scope":"Finite diagnostic tied to actual cycle_transfer; no continuum estimate."}
 check("spatial_factor_omission_control",any(abs(q["ratio"]-q["kinetic_only_ratio"])>1e-5 for q in cycle_rows),
       "At least one actual finite-cycle ratio changes when the spatial plaquette factor is omitted.","negative_control")
 wrong_character_ratio=float(2*iv(2,8.)/iv(1,8.))

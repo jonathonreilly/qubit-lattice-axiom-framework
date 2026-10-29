@@ -435,7 +435,9 @@ hard-history/collar interfaces in a separate unit; no full-return claim follows.
 The first finite-volume mass-gap unit is preserved at `cdc877b0452b`. Its
 negative-orientation/complex-lambda clarification is now applied and confirmed
 in the same reviewer context. Review also found two implementation mutations
-that the original author checker failed to reject; a coordinate-space
-transfer comparison and targeted mutation replay are being added. The
+that the original author checker failed to reject. The added coordinate-space
+transfer comparison passes, and both mutations are now rejected in coordinator
+and independent reviewer replays. The repaired 47-predicate run and the
+order-eight coefficient wording are recorded alongside the original packet. The
 written finite-volume result has no reported substantive defect so far;
 final review and the physical uniform infrared estimate remain outstanding.

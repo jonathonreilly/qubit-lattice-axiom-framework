@@ -49,6 +49,19 @@ adjusted to the results.
    spatial size grows: evaluate log(epsilon)=-2 beta |E_s| at beta=1 and
    |E_s|=3n^3, n in {4,8,16}. Never turn this failure of a lower bound into an
    upper bound on the physical gap.
+10. Review-driven addition, specified before the repaired run: compare the
+    actual cycle_transfer implementation at beta=0.7, 36 characters and 160
+    nodes against a separately assembled coordinate-space Haar operator.
+    Use 96 Gauss-Jacobi nodes for weight sqrt(1-x^2), 14 characters constructed
+    by the Chebyshev recurrence, direct integrals for character coefficients,
+    division by representation dimension, all four link eigenvalues and the
+    actual magnetic factors. Compare the spectral ratio and the correctly
+    rescaled leading eigenvalue with relative error <2e-9. This recomputes an
+    alternate integral operator; no reviewer numerical answer is an input.
+    The fourth-power-to-first-power and representation-dimension mutations
+    of the actual implementation must now be rejected. Earlier disconnected
+    formula controls alone did not detect either implementation mutation;
+    the original 45-predicate run and surviving mutations remain preserved.
 
 Record source identities, Python/package versions, every check/control, and
 actual failures. Stdout and stderr are preserved. The finite check scope is

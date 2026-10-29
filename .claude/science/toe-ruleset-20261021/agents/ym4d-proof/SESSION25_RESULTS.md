@@ -2467,5 +2467,7 @@ the actual history/return construction.
 
 The mass-gap construction's orientation clarification is confirmed, while
 review of its author checker found two surviving cycle-transfer mutations.
-A new independent coordinate-kernel comparison is being added. Original
+The new independent coordinate-kernel comparison passes, and both mutations
+are rejected in coordinator and reviewer replays. The order-eight wording
+now avoids an unproved nonvanishing claim. Original
 source/checker bytes and all failures remain preserved at their checkpoints.

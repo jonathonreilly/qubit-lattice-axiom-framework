@@ -167,8 +167,10 @@
 > [MASS_GAP_CONSTRUCTION_ASTRA.md](MASS_GAP_CONSTRUCTION_ASTRA.md) supplies
 > a full finite-volume Wilson transfer bound and exact SU(2) soft-loop/source
 > identities. The bound degenerates with volume; the source identities retain
-> the unestimated fine covariance. Its 45 controls reproduce and fresh review
-> is active. This closes no physical-gap target row or full-theory obligation.
+> the unestimated fine covariance. Its repaired 47-predicate program includes
+> an independent coordinate-space transfer comparison that rejects two
+> implementation mutations missed by the original controls. Fresh review
+> remains active; no physical-gap target row or full-theory obligation closes.
 
 > **PROVENANCE WARNING (2026-10-28T22:11:08Z, lead now claude-opus-5-5).** Every Claude-authored result in sessions 24 and 25 — lead consolidation and all worker files, commits 811b8ed6de through 666a71b7b9 — was produced on **claude-opus-5**, not the owner-required model (Claude: Opus 5.5 at extra effort or higher; Codex: gpt-6-astra at max). The owner has ruled that work likely unreliable. **Treat every session-24/25 status, fix, flag, refutation and number in this file as PROVISIONAL** until the Opus 5.5 review sweep recorded in SESSION25_RESULTS.md §PROVENANCE has re-established it. The only session-24/25 checks run at an approved setting are the Codex gpt-6-astra/max reviews (`CODEX_REVIEW_*.md`). The tally is reported as 72 / 2 / 7 / 24 + 1 **pending** that sweep.
 

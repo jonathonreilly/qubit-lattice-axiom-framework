@@ -423,7 +423,7 @@ their stated larger scope.
 |---|---|---|
 | Full physical transfer operator | Constructed (1)-(9) from the finite Wilson action with the spatial factor and all invariant states | Replace volume-small (7) by a Wilson-specific local/block estimate; an assertion of a uniform gap alone would be target-equivalent once existence is supplied |
 | Strong-coupling endpoint from direct one-link contraction | Prior-art check found existing Dobrushin bounds; the Wilson row majorant is at most 18 beta in d=4, useful only at small bare beta | Actual exact RG crossover to an endpoint with a uniform interaction norm and source remainder; this is a stronger sufficient package than a physical gap, and is not established |
-| Soft-noise continuation with exact observable transport | Derived (12)-(23); computed the first nonzero separated-loop coefficient and kept the source-only term | Prove physical-distance decay of actual Wilson covariances in (18)/(23), with common constants and all products; a single loop-sector estimate is weaker than the full target |
+| Soft-noise continuation with exact observable transport | Derived (12)-(23); computed the order-eight separated-loop coefficient and kept the source-only term | Prove physical-distance decay of actual Wilson covariances in (18)/(23), with common constants and all products; a single loop-sector estimate is weaker than the full target |
 
 For the endpoint row, each four-dimensional link belongs to six plaquettes,
 with three other links per plaquette. One changed neighboring link gives
@@ -476,8 +476,16 @@ transfer implementation. They also test deliberate errors in normalization,
 representation dimension, Perron factors, link count and electric-gap
 inheritance. Neither finite quadrature nor a truncated character matrix is
 used as proof of an infinite-volume assertion. The written arguments carry
-the finite general statements. Independent review remains pending. The final run passes 45 checks,
-including 11 deliberate negative controls, with empty stderr. The first run
+the finite general statements. Independent review remains pending. The original frozen run passes 45 checks,
+including 11 deliberate negative controls, with empty stderr.
+Review found that two implementation mutations still passed those checks.
+The [repaired run](checks/mass_gap_construction_results_v2.json) adds an
+independently assembled coordinate-space Haar transfer comparison, passing
+47 predicates with empty stderr. Both formerly surviving mutations now fail
+the actual spectral-ratio and leading-eigenvalue comparisons; the
+[repair record](checks/full_proof_massgap_checker_fix.json) preserves their
+exact scripts and outputs. These remain finite implementation checks.
+The first run
 and its exact script are also preserved; the subsequent change evaluates
 the very small minorization with `1-ratio > exp(-8 beta)` to avoid subtracting
 exp(-64) from one in binary floating point. No scientific criterion changed.

@@ -2471,3 +2471,21 @@ The new independent coordinate-kernel comparison passes, and both mutations
 are rejected in coordinator and reviewer replays. The order-eight wording
 now avoids an unproved nonvanishing claim. Original
 source/checker bytes and all failures remain preserved at their checkpoints.
+
+### Finite Wilson transfer and soft-source unit independently checked
+
+[The fresh review](REVIEW_MASS_GAP_CONSTRUCTION_ASTRA.md) confirms the full
+finite-volume transfer bound and exact SU(2) normalized forward/source
+identities after the orientation, implementation-check and coefficient-scope
+corrections. All 50 independent predicates reproduce except elapsed time,
+with empty stderr; [coordinator verification](checks/full_proof_massgap_construction_review_replay.json)
+checks 104 artifact, source and methodology bindings. The original 49/50
+roundoff failure, two surviving original implementation mutations, corrected
+mutation failures and metadata freshness repair remain preserved.
+
+The positive mathematical claims have bounded support; the three-family
+no-go packet remains below the five-family requirement and receives no
+packet or whole-PR landing PASS. This is not a physical impossibility claim.
+No MG0–MG5 row closes. The author has resumed the Wilson-specific local/block
+construction in a separate unit, retaining the physical-time, ground-state
+and dense-observable requirements.

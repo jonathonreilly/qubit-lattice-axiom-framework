@@ -65,10 +65,14 @@ Current assignments use fresh `gpt-6-astra / max` contexts:
   determinant identities, free Hodge factors and the all-mode/A7 argument
   are confirmed. The same reviewer has completed the separate conditional
   mass-gap criterion review and is now reviewing the actual vertex unit.
-- **Physical mass-gap author — checkpoint delivered:** actual full
+- **Physical mass-gap author — local/block construction active:** actual full
   finite-volume Wilson transfer bound and exact SU(2) soft-loop/source
-  transport. A fresh reviewer is checking this unit. Its bound loses
-  volume uniformity; no crossover or physical gap is established.
+  transport are independently checked after three narrow corrections.
+  Their bound loses volume uniformity. The next unit targets Wilson-specific
+  local/block estimates; no crossover or physical gap is established.
+- **Fresh mass-gap construction reviewer — completed:** finite transfer,
+  normalized SU(2) forward images and source identities confirmed at their
+  explicit scope. No MG row or full publication/landing packet is certified.
 
 Same-family context separation is disclosed and is not described as
 cross-family review. The coordinator owns integration and PR updates. See
@@ -441,3 +445,21 @@ and independent reviewer replays. The repaired 47-predicate run and the
 order-eight coefficient wording are recorded alongside the original packet. The
 written finite-volume result has no reported substantive defect so far;
 final review and the physical uniform infrared estimate remain outstanding.
+
+### Finite Wilson transfer and soft-source unit independently checked
+
+[The fresh review](REVIEW_MASS_GAP_CONSTRUCTION_ASTRA.md) confirms the full
+finite-volume transfer bound and exact SU(2) normalized forward/source
+identities after the orientation, implementation-check and coefficient-scope
+corrections. All 50 independent predicates reproduce except elapsed time,
+with empty stderr; [coordinator verification](checks/full_proof_massgap_construction_review_replay.json)
+checks 104 artifact, source and methodology bindings. The original 49/50
+roundoff failure, two surviving original implementation mutations, corrected
+mutation failures and metadata freshness repair remain preserved.
+
+The positive mathematical claims have bounded support; the three-family
+no-go packet remains below the five-family requirement and receives no
+packet or whole-PR landing PASS. This is not a physical impossibility claim.
+No MG0–MG5 row closes. The author has resumed the Wilson-specific local/block
+construction in a separate unit, retaining the physical-time, ground-state
+and dense-observable requirements.

@@ -1,0 +1,84 @@
+{
+  "author_source_sha256": "526d1aa38d28e4adcb4676a535a0304195a24528c3538b61091955ae691d820c",
+  "mutations": [
+    {
+      "mutation": "omit_normalizer",
+      "exit": 1,
+      "seconds": 0.4676040830090642,
+      "failed_checks": [
+        "normalized_first_moment",
+        "first_three_coefficients",
+        "normalizer_omission_control"
+      ],
+      "source_sha256": "0f7512093f9e9f9c2567e49adc213eb3260c7278d2f8a0d25523281f2a52b83d",
+      "stdout_sha256": "24ef5850d2f313a6cee665b1f479aec8d2fb31229c29946d2af979516b1fa95e",
+      "stderr_bytes": 0
+    },
+    {
+      "mutation": "omit_spatial",
+      "exit": 1,
+      "seconds": 0.4989036250044592,
+      "failed_checks": [
+        "spatial_factor_omission_control"
+      ],
+      "source_sha256": "9fd2c11796e31cd76b77aed8be96d55d1dc61c7a2c8a337826b68240a2748e7e",
+      "stdout_sha256": "8eeefbba2f19bb35eabf034b8e6d032516a229b1c6dcb6e1a3fe2c4bae33ee3b",
+      "stderr_bytes": 0
+    },
+    {
+      "mutation": "omit_perron",
+      "exit": 1,
+      "seconds": 0.43209949997253716,
+      "failed_checks": [
+        "Doob_stochastic_reversible",
+        "Doob_exact_denominator",
+        "Doob_minorization"
+      ],
+      "source_sha256": "131aae12de12cc2f8979723e0d7cda4b1bf19990baaab261520fa750aa43db20",
+      "stdout_sha256": "4d701773f06d15814dd98fd9c44ce6784a6f7ad3760a2fe4e644b6ef1c9b9c41",
+      "stderr_bytes": 0
+    },
+    {
+      "mutation": "wrong_dagger",
+      "exit": 1,
+      "seconds": 0.42493241699412465,
+      "failed_checks": [
+        "orientation_dagger_control",
+        "loop_root_gauge_covariance"
+      ],
+      "source_sha256": "0624912e279f6bc85a0106489ab2576454ee2b7b363e87342b8863c928c64ac2",
+      "stdout_sha256": "f5fb24ccf1e8a6179787137e78256983d26034a02aaad6dc04de84212fd2cc27",
+      "stderr_bytes": 0
+    },
+    {
+      "mutation": "drop_source_log",
+      "exit": 1,
+      "seconds": 0.4209406659938395,
+      "failed_checks": [
+        "lambda_zero_source_only_term",
+        "discard_source_only_term_control"
+      ],
+      "source_sha256": "8789e7e5d834f14aaaba28363cef14874d53aefdad15e52e372d384e5263e16b",
+      "stdout_sha256": "2dddb360e5f42c51cbf9ceb7b1a9a54df6478ddef3b3452a38114a4607f26e18",
+      "stderr_bytes": 0
+    },
+    {
+      "mutation": "wrong_cycle_power",
+      "exit": 0,
+      "seconds": 0.42363662499701604,
+      "failed_checks": [],
+      "source_sha256": "252e1c8636185c539d926554ea940405af9bc68ef977971dd21a86909386a6a7",
+      "stdout_sha256": "dd124806040e50a7c87c8ee60c7740c8fe1a207161c92ca9dd30d5a50ec91481",
+      "stderr_bytes": 0
+    },
+    {
+      "mutation": "wrong_dimension",
+      "exit": 0,
+      "seconds": 0.4222986249951646,
+      "failed_checks": [],
+      "source_sha256": "4fb69db8e7e94c626e0e0d708cd5c6af0c43b77cb00ec5913cb801a5d25ed9f2",
+      "stdout_sha256": "eaf0376726ed5a59d6fe968c47d87cbf74000c50963a8aee88ceeda3a35448e5",
+      "stderr_bytes": 0
+    }
+  ]
+}

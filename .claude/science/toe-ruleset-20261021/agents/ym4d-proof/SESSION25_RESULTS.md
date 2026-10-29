@@ -1945,3 +1945,13 @@ FOL locally) but the no-go is NARROWER than LCONV55 claimed: Codex does not bank
 universal convexity/Peierls no-go, or the lowered-coupling identity. Open question: does the negative direction respect
 the actual coarse collar and stay negative in the consumer's chart/metric. Node A proceeds via STEP55's one-step route
 either way (forwarded).
+
+**RLOC55 — finished** (claude-opus-5-5, max). **(R) proved as an implication of banked inputs:** every proof behind
+ROW^(σ), KOFF §4.3 (1)-(3), the Wilson estimates and CB already bounds one density's slot by its own variables (only
+intra-density or intra-routing-block cancellations); written out with explicit local domains (Lemma SUPP: soft-density
+support = an explicit box; Wilson Hölder pairs need a fixed patch of coarse radius ≤ 2 + 2/n), Theorem LOC (per-density
+bounds on complex local sets, k-, T-uniform; the L^{−σm} level factor from SG's product structure is the step to
+scrutinise), Lemmas ZL and RT. REFUTED: BFT4W55 §3.4's printed 𝒦_D (corrected; no bound changes). Checks rl55_1/2 (geometry
+only; link counts 459 / 4125 match Codex HIGHER). If Codex confirms, BFT-4 (a), H3, F^σ and both BFT-3 routes lose the (R)
+premise. **Codex review launched (CODEX_REVIEW_RLOC.md). Launched: DICT55** — Codex work-list item 3, the proof's single
+dictionary and the exact lane-A linear inputs under [S26-BANKED].

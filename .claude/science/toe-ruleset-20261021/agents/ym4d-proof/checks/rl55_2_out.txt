@@ -1,0 +1,20 @@
+L=3 mu=0: |N_c| = 459, |Omega_c| = 459, equal: True
+   control (y = c_X only): |N_c| = 3 (strict subset: True)
+L=3 mu=1: |N_c| = 459, |Omega_c| = 459, equal: True
+   control (y = c_X only): |N_c| = 3 (strict subset: True)
+L=3 mu=2: |N_c| = 459, |Omega_c| = 459, equal: True
+   control (y = c_X only): |N_c| = 3 (strict subset: True)
+L=3 mu=3: |N_c| = 459, |Omega_c| = 459, equal: True
+   control (y = c_X only): |N_c| = 3 (strict subset: True)
+L=5 mu=0: |N_c| = 4125, |Omega_c| = 4125, equal: True
+   control (y = c_X only): |N_c| = 5 (strict subset: True)
+L=5 mu=1: |N_c| = 4125, |Omega_c| = 4125, equal: True
+   control (y = c_X only): |N_c| = 5 (strict subset: True)
+L=5 mu=2: |N_c| = 4125, |Omega_c| = 4125, equal: True
+   control (y = c_X only): |N_c| = 5 (strict subset: True)
+L=5 mu=3: |N_c| = 4125, |Omega_c| = 4125, equal: True
+   control (y = c_X only): |N_c| = 5 (strict subset: True)
+Q1 (N_c == Omega_c): PASS
+Q2 (staircases inside N_c): PASS
+K1 (control fires): FIRES
+OVERALL rl55_2: PASS

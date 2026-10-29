@@ -143,9 +143,11 @@
 > [vertex continuation](checks/residual_det_vertices_working.md) supplies
 > an auxiliary off-shell gauge-change identity, a tuned gauge path and
 > grouped Ward/pole argument for zero residual per paired charged root at
-> fixed depth. Its 13 exact algebra controls reproduce. The analytic
-> argument awaits independent review; the neutral/full-periodic comparison
-> remains open. This does not promote UIR, existence or the physical gap.
+> fixed depth. [Independent review](REVIEW_RESIDUAL_VERTICES_ASTRA.md) confirms
+> the actual charged-sector argument and its volume-first, then momentum-zero
+> limit. Its 162 lattice and 30 exact controls reproduce. The neutral/full-periodic
+> comparison and depth-uniform tree bounds remain open; no UIR, existence
+> or physical-gap closure follows.
 >
 > **Normalized return continuation, 29 October:** the separate
 > [fixed-reference proposal](SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md)

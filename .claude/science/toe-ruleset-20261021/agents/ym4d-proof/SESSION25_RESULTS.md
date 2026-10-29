@@ -2489,3 +2489,21 @@ packet or whole-PR landing PASS. This is not a physical impossibility claim.
 No MG0–MG5 row closes. The author has resumed the Wilson-specific local/block
 construction in a separate unit, retaining the physical-time, ground-state
 and dense-observable requirements.
+
+### Actual charged-sector residual vertex argument independently checked
+
+[The completed vertex review](REVIEW_RESIDUAL_VERTICES_ASTRA.md) confirms
+zero residual F² coefficient at every fixed depth for the specified paired
+real antiperiodic charged-root sector, volume first and external momentum
+then tending to zero. It independently reconstructs the normalized auxiliary
+face, nonflat Wilson endpoint row, tuned path, covariant massive elimination,
+all six Nielsen groups, four residual determinant groups and limit passage.
+No mathematical source correction was required.
+
+The 162 actual-lattice controls and 30 exact algebra controls reproduce except
+UTC fields, with empty stderr. [Exact bindings](checks/full_proof_residual_vertices_review_bindings.json)
+verify 12 review artifacts, 10 new source bindings, 22 inherited ranges and
+three unchanged prior reports. The packaging-only preflight error and raw
+diff are preserved. Neutral/full-periodic/full-colour matching and H1/H2/H3
+remain open; the author has resumed those constructions in a separate unit.
+This does not close UIR, existence/reconstruction or the physical mass gap.

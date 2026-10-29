@@ -1,0 +1,7 @@
+{
+  "correction": "Allow only that exact pending receipt path during preflight, write the receipt, then require all report links to resolve.",
+  "final_status": "all report links resolve after receipt creation",
+  "first_attempt": "The packaging validator checked the report link to the not-yet-created receipt before writing that receipt; it exited with AssertionError: checks/review_residual_vertices_receipt.json.",
+  "scientific_controls_changed": false,
+  "source_or_report_content_changed_for_correction": false
+}

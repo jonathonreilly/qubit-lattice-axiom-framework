@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-29T15:47:05.077135+00:00",
+  "script": "review_residual_vertices_01.py",
+  "script_sha256": "a50dba62a66a47df0df8752c9564806a425a2cca33337a5799b39cd937dc2ffb",
+  "exit_code": 0,
+  "passed": 162,
+  "total": 162,
+  "same_excluding_only_started_and_finished_utc": true,
+  "stderr_bytes": 0,
+  "elapsed_seconds": 0.9136307500302792,
+  "stdout_sha256": "1fd138240e078bb7e57d88e901f25e58eeea45c286bec433db855091ed8bcfdc"
+}

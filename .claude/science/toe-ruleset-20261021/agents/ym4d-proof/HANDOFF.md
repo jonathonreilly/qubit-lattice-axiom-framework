@@ -34,10 +34,11 @@ the methodology sources are unchanged from `6c269770273c3fe00de350d5a3c14cacb70c
 
 Current assignments use fresh `gpt-6-astra / max` contexts:
 
-- **Residual determinant author — checkpoint delivered:** finite/model,
+- **Residual determinant author — full-colour extension active:** finite/model,
   harmonic-lattice and actual vertex units are frozen separately. The last
-  unit proposes zero residual in the stated paired-root regulator sector;
-  its analytic proof awaits independent review.
+  unit's zero residual in the stated paired-root regulator sector is now
+  independently confirmed. Neutral/full-periodic matching and the uniform
+  tree producers remain open and are the next construction targets.
 - **Source-local return author — hard-history construction active:** actual
   level-zero operator localization, all-order global-chart source
   substitution and exact return identities are independently checked at
@@ -64,7 +65,8 @@ Current assignments use fresh `gpt-6-astra / max` contexts:
 - **Independent harmonic-bridge reviewer — completed:** finite charged
   determinant identities, free Hodge factors and the all-mode/A7 argument
   are confirmed. The same reviewer has completed the separate conditional
-  mass-gap criterion review and is now reviewing the actual vertex unit.
+  mass-gap criterion and actual vertex reviews. The latter confirms the
+  charged-sector zero coefficient at each fixed depth in the stated limit order.
 - **Physical mass-gap author — local/block construction active:** actual full
   finite-volume Wilson transfer bound and exact SU(2) soft-loop/source
   transport are independently checked after three narrow corrections.
@@ -463,3 +465,21 @@ packet or whole-PR landing PASS. This is not a physical impossibility claim.
 No MG0–MG5 row closes. The author has resumed the Wilson-specific local/block
 construction in a separate unit, retaining the physical-time, ground-state
 and dense-observable requirements.
+
+### Actual charged-sector residual vertex argument independently checked
+
+[The completed vertex review](REVIEW_RESIDUAL_VERTICES_ASTRA.md) confirms
+zero residual F² coefficient at every fixed depth for the specified paired
+real antiperiodic charged-root sector, volume first and external momentum
+then tending to zero. It independently reconstructs the normalized auxiliary
+face, nonflat Wilson endpoint row, tuned path, covariant massive elimination,
+all six Nielsen groups, four residual determinant groups and limit passage.
+No mathematical source correction was required.
+
+The 162 actual-lattice controls and 30 exact algebra controls reproduce except
+UTC fields, with empty stderr. [Exact bindings](checks/full_proof_residual_vertices_review_bindings.json)
+verify 12 review artifacts, 10 new source bindings, 22 inherited ranges and
+three unchanged prior reports. The packaging-only preflight error and raw
+diff are preserved. Neutral/full-periodic/full-colour matching and H1/H2/H3
+remain open; the author has resumed those constructions in a separate unit.
+This does not close UIR, existence/reconstruction or the physical mass gap.

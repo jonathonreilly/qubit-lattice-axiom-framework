@@ -335,3 +335,16 @@ Three results converge (none yet fully cross-checked; Codex reviews running):
 ultraviolet: the construction and seam transparency (SPHERE55, running), universality's UV items N1-N5 / W0-W3,
 the large-field comparison, and the reflection positivity across the equator (banked). The flat route stays as
 the alternative; its single infrared input is now precisely named.
+
+---
+
+## 14. Correction to §13, from CODEX_REVIEW_TQ (2026-10-29)
+
+Two sentences of §13 are stronger than what was checked. **"Reflection positivity cannot supply TQ"** is CONFIRMED only
+for generic coordinate RP (which permits arbitrarily slow power-law reflected correlations); that RP *combined with the
+Wilson-specific inputs* cannot give TQ is NOT-VERIFIED. **"TQ fails exactly when rotations break spontaneously with
+gapless modes"** — the exclusive-Goldstone "iff" — is NOT-VERIFIED. What stands: TQ ⇔ Λ = 0 for the centred Wilson
+two-point orbit; the rotlet shows conservation, symmetry and an infrared bound alone do not force TQ (it is not a
+Wilson/RP-state counterexample); invariant sphere states need no shell argument, conditional on their construction.
+The ranking (sphere route first) is unchanged: it rests on the sphere needing no infrared input, not on these two
+sentences.

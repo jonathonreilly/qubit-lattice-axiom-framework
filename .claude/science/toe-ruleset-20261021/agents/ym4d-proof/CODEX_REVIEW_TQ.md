@@ -86,6 +86,15 @@ SHA-256 identifiers of the mathematical sources read:
 | `checks/tq55_a_out.txt` | `d2ab580b1ab5bccd04f485de89800a84f50423d414bbfe5675d7bc6c9651ae5c` |
 | `checks/tq55_a_err.txt` | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
 
+At the closing source check, TQ55, ROTDEF, P4, UNIV55, and all tq55_a
+evidence files retained the hashes above. `PROOF.md` changed elsewhere
+during this review to
+`3271bfd9bfbc501b0ad65a166ae00fdf25e8a1fe672a1f515041c1c4107d00b7`.
+The mathematical L9a RP proof was re-read and matches the proof used here.
+The entire L9a block, from its heading to immediately before L9a′, has
+SHA-256 `05193ff2cb0d1367e2b344dbce043e34c5151970862a71f7fafa883f570f35f5`.
+No other portions of that evolving file are being certified.
+
 ## 1. Wilson-only charge and sampling-safe sufficient conditions
 
 **CONFIRMED, conditional.** Source: `L/TQ55.md`, `Proposition 1.1`,
@@ -431,6 +440,7 @@ At reflected separation \(t=2h\), the coefficient is
 \(3/(256\pi^4)>0\). Thus this free example has no RA-1 margin. A gap
 implies the stated uniform conditions only when its channel decay and
 prefactors are uniform along the normalized sequence.
+
 ## 5. Reflection-odd order: the lemma is valid; its interpretation is narrower
 
 **CONFIRMED on the RP observable algebra, with “almost every component.”**
@@ -695,6 +705,9 @@ write behavior.
    \([1/(1+i+j)]_{i,j=1}^3\) were \(1/3,1/240,1/378000\);
    the Maxwell Wick coefficient was \(6(1/2)^2\,2=3\).
    The Hankel sample is only a control; the all-exponent RP proof is (11)–(12).
+   A separate exact enumeration of all sixteen body-diagonal signs also
+   returned \(1/16\) and \(5/32\) for the two rank-four tensor evaluations
+   in review §5.
 
 No Wilson decay estimate, numerical Yang–Mills simulation, sphere
 construction, or NODEA_RES55 computation was run. Literature recollections

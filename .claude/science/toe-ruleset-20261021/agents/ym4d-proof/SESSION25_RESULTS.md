@@ -1708,3 +1708,32 @@ ALIGN / NSL / LCONV / SRCAN workers at them.
 **Resume order next session:** (1) bank CODEX_REVIEW_{BGT,TQ,SRCCD}; (2) Codex-review BFT34_55; (3) relaunch the seven
 stopped workers on Opus 5.5 max, with the arXiv corpus; (4) rewrite HANDOFF.md from PLAN_S26 §4-§13 and this ledger;
 (5) only when every input of the full theorem is closed and cross-checked, package the PR for publication.
+
+---
+
+# §RESUME — session 26 resumed after the usage limit (2026-10-29T02:43Z)
+
+**Banked (PROOF.md [S26-BANKED], 02:43Z batch):**
+- **CX-BGT** (`CODEX_REVIEW_BGT.md`): Theorem GA CONFIRMED with its exact hypotheses, and it does escape the
+  condition-number objection (the claimed *necessity* of a uniform forward/condition-number bound is REFUTED; the old
+  relative-estimate warning stands). GA-slice algebra, GA-PG (pure-gauge; nontrivial-holonomy flat connections need a
+  separate argument), Lemma OC, KER_Z/SF_Z (soft-covariance sign must be the actual-generator form), RW♯ CONFIRMED.
+  **REFUTED as printed:** BGT55 §6.2's "exact BCH factorisation"; §6.3's literal (ALIGN-ℓ)(β) and "Γ_PL satisfies (β)";
+  the covariant-cut necessity. **NOT-VERIFIED:** R2, R2-glob. So the open item is no longer "(ALIGN-ℓ) as BGT55 stated it"
+  but *an actual alignment with uniform quotient/source/defect estimates* — ALIGN55 has been told to restate it.
+- **CX-TQ** (`CODEX_REVIEW_TQ.md`): the reductions CONFIRMED (Λ = ‖S′‖_∞, sampled/annular/Cesàro sufficient conditions,
+  rotlet, RA/RA-1, reflection-odd lemma, sphere-state invariance conditional). **Two lead/worker statements cut back:**
+  "RP cannot supply TQ" is CONFIRMED only for generic coordinate RP — "RP + Wilson-specific inputs cannot give TQ" is
+  NOT-VERIFIED; and the "TQ fails iff spontaneous rotation breaking with gapless modes" (exclusive Goldstone) is
+  NOT-VERIFIED. The ledger lines above that state these more strongly are superseded by this entry.
+- **CX-SRCCD** (`CODEX_REVIEW_SRCCD.md`): Proposition B (Markov chain, exact source recursion) and Lemma V CONFIRMED;
+  Lemma V's incompatibility is scoped (SRC-E + non-vacuity + an unconditional separated upper bound along a slowly
+  vanishing coupling, in particular (F_R)) — "no blanket theorem for all dimension-four composites". **NOT-VERIFIED:**
+  SRC-E′/O/W′ from the literal package, SRC-OW, Proposition E's OS0 conclusion (singleton, all-order LF moment and
+  large-distance weight gaps). Under (F_R) only a logarithmic rate is available.
+
+**Launched (all claude Opus 5.5, effort max, set explicitly):** the seven stopped workers resumed on their partial drafts
+(UIR55, NSL55, LCONV55, SPHERE55, ALIGN55, HINT2_55, SRCAN55), each told which landed Codex review to read and pointed at
+the arXiv Balaban-method corpus; plus **BFT4W55** (BFT-4's local inputs: (H3)_m, (W-comm)^σ_J, W-mult^σ, σ-pair (f)/(E3^∇),
+lane B §10.8 on the P_cc family). **Codex gpt-6-astra max** (banner verified): CODEX_REVIEW_BFT34 (Lemma WD, BFT3-glob,
+GV-E_m, Proposition CX, RW-cc + CCL, route-T trees, the b34_1 FAIL/fix).

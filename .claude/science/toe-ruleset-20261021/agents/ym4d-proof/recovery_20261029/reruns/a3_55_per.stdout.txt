@@ -1,0 +1,30 @@
+  P=3: merged M(1)(1) = -8/9; sum_J m1(1,J) = 10/81
+  P=5: merged M(1)(1) = 40/99; sum_J m1(1,J) = 32/297
+  P=9: merged M(1)(1) = 8/153; sum_J m1(1,J) = 440/4131
+I0: PASS (Codex F5 rows and merged values reproduced)
+I1: PASS 
+I2: PASS 
+I3: PASS 
+I4: PASS 
+CI1: FIRES (merged operator fails dM - 1 + S1 B = 0)
+CI2: FIRES (n = 0 paths alone do not kill constants)
+  [Part I time 0.12s]
+  [levels built 0.3s]
+II1: PASS (matrix identities at all four levels: stronger than registered)
+II2: PASS 
+  Z_b cycles: True; fillings exact: True; max l_inf radius of F_b about its link: 6
+    E_torus == Ntilde_per d1 at side 9: True
+    E_torus == Ntilde_per d1 at side 27: True
+    E_torus == Ntilde_per d1 at side 15: True
+II3: PASS (radius 6)
+CF4: FIRES (non-derived S1 breaks the cycle property)
+II4: PASS 
+CF3: FIRES (dropping the Ntilde term breaks the identity)
+CF1: FIRES (merged M on the wrapping torus does not kill constants)
+CF2: FIRES (merged E does not vanish on constants)
+  [Part II time 3.7s]
+III1: PASS 
+III2: PASS 
+CIII1: FIRES (lower-corner offsets leave a quadratic term)
+CIII2: FIRES (a single contour leaves a quadratic term)
+OVERALL PASS (total time 4.3s)

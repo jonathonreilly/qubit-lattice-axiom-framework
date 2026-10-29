@@ -2162,3 +2162,71 @@ reduces to (HC_k) + (B2)": the per-step cluster expansion also needs exponential
 REPAIRED Theorem CX (Codex STEP R9 refutes CX as stated). NOT-VERIFIED: STEP55's I1 row omits the per-block PG transfer and
 the main-term identification. **Codex review launched (CODEX_REVIEW_B2.md). Launched: GL55** — (GL) + (LUD) for BFT-4's
 (c₀) on the full small-curvature class. Theorem CX's repair waits for CODEX_REVIEW_STEP.
+
+
+## RECOVERY — 2026-10-29: late results and corrected disposition
+
+Coordinator: Codex. User requested recovery of Claude's work and PR progress,
+then explicitly discussed continuing from the saved state with Astra max
+workers. This section supersedes the unreviewed completion claims in the last
+session-26 delivery entries above. It is not a new mathematical audit.
+
+Source head `46dc04b05c5842a03ae3af64caa77628f099128f` already matched the PR
+branch. The recovery inventory contains **28** additional/modified original
+files (not the preliminary estimate 29): eight completed reviews; UIR2_55 and
+ALIGN3_55 partial derivations; six pre-stated-only worker plans; three exact
+check bundles. All eight Claude workers terminated on the weekly limit. All
+eight Codex reviews completed on gpt-6-astra/max according to their runtime
+banners. Exact hashes and notifications are in `recovery_20261029/manifest.json`.
+Nine historical brief files are also preserved for reproducible continuation.
+
+**CX-STEP:** preserve the 1/38 linear certificate and single-normaliser result
+at their scopes. Withdraw the global iff stripe threshold, the sufficiency of
+HC_k+B2 for higher-level CX, the unqualified mismatch sign and the full returned
+log-normalizer bound. R9 requires real spatial source/background locality;
+R11 includes determinant and main-term variation. The actual history-uniform
+returned denominator and hole/reference/return interfaces remain open.
+
+**CX-MINCB / CX-B2:** repaired restricted-minimum and derivative mechanisms are
+conditional. Item 8 is not closed. The chart-radius and residual transport
+repairs, regional centred-polymer class and boundary conditions must be proved.
+E^cb_k has not been identified with E_i^NA; B2 and its Hessian consequence do not
+supply that identification or full higher-level positivity.
+
+**CX-LANEA:** the specified linear subset and coefficient 9 for s<=1/27 survive.
+The original full primed-weight interval does not follow from the smaller
+unprimed construction. The blanket premise-discharge inference above is too
+broad; retain every other nonlinear/chart/locality hypothesis.
+
+**CX-SRC2:** conditional frozen/top => separated regularity survives with
+s=21, beta=123/2. MB is an identity under factorisation, not a construction of
+N1. N1's complete normalised, strictly source-local all-V representation and
+N2's plane-dependent complex flow remain open. Smeared estimates do not imply
+point-image/Ward bounds. No unconditional X1 or H_reg has been obtained.
+
+**CX-TSE:** the conditional TS coefficient and fractions survive, but PL-1L's
+actual quantum matching/lower bound and the needed order-two LGF estimate do
+not. The claim that LOC-e and the lower-bound matching are “one shared missing
+estimate” is withdrawn: an upper image bound fixes neither normalization nor
+a positive two-point contribution.
+
+**CX-SPHERE2:** preserve scoped Ward/analytic algebra and positive-measure
+conditional-mean arguments. Withdraw universal “no seam tuning”: a mixed
+parity-even dimension-three two-sided seam operator is allowed. Complex-measure
+contraction and a moving-J rate do not follow. Quantum trace matching,
+all-product bounds and uniform arbitrary-crossing seam transparency are open.
+
+**CX-OFFGLOB2:** corrected chain rules, signs and conditional relative patching
+are useful; the paired data-reset self-map is not supplied. OFF', ID',
+BFT3-off and HINV cannot be treated as completed. The corrected multiplicity
+is 7^d; the review also repairs pullback and Newton gate formulas. GL/LUD and
+the actual off-global polymer interface remain open.
+
+PROOF.md now has a prominent `[S27-RECOVERY]` override with exact review
+pointers. HANDOFF.md is the current checkpoint and replaces stale “running”
+and “unassigned” statuses. Three new bounded continuations were dispatched
+on gpt-6-astra/max, with separate files: coupling-flow partial proof,
+periodic-alignment partial proof, and a constructive CX repair. New Codex
+mathematics remains author work until independently checked; no cross-family
+receipt is fabricated. T_OS and H_reg/H_Euc/H_int remain open, and no mass gap
+is claimed. The workflow builds on Tadeusz Balaban and J. Dimock throughout.

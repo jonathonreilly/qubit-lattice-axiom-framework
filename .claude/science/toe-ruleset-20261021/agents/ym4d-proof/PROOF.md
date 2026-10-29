@@ -1,5 +1,69 @@
 # YM4 existence via the Balaban RG: lemma ledger (sessions 1-23, 2026-10-26/28)
 
+> **[S27-RECOVERY — 2026-10-29, CURRENT DISPOSITION]** The eight reviews that
+> completed after Claude's usage limit are now preserved. The entries below
+> qualify the older [S26-BANKED] pointers and supersede the unreviewed completion
+> claims at the end of SESSION25_RESULTS.md. This is a source/status reconciliation,
+> not a new independent audit or a proof of the full theorem. Read each review's
+> exact hypotheses and "Exactly what may be banked" section before reuse.
+>
+> - **STEP:** [CODEX_REVIEW_STEP.md](CODEX_REVIEW_STEP.md) confirms the linear
+>   coercivity constant **1/38** at L=3, kappa=1 and single-normaliser zero-freeness
+>   in their stated domains. It refutes Theorem CX's full background-local
+>   conclusion from its written premises (R9), the zero log-variation bound for
+>   the complete returned denominator (R11), and the unqualified mismatch-price
+>   sign (R12). Stripe samples establish a crossing, not a global iff threshold.
+>   A history/region/cutoff-uniform zero-free domain for the **actual returned
+>   denominator**, higher-level positivity and the hole/reference/return
+>   interfaces remain open.
+> - **Minimum and action identity:** [CODEX_REVIEW_MINCB.md](CODEX_REVIEW_MINCB.md)
+>   R1/R3/R7/R12/R14 does **not** certify closure of assembly item 8 or the
+>   BFT4B consumer bridge. The restricted-minimum mechanism needs corrected
+>   residual transport, radius inclusions and actual regional/centred-polymer
+>   interfaces. [CODEX_REVIEW_B2.md](CODEX_REVIEW_B2.md) confirms B2 and the
+>   Hessian/Lipschitz deductions as named-input implications; it does not prove
+>   **E^cb_k = E_i^NA**, full (HC_k) consumer identification, higher-level
+>   one-step positivity or CX. Bounds on one action do not identify another.
+> - **Source regularity:** [CODEX_REVIEW_SRC2.md](CODEX_REVIEW_SRC2.md) confirms
+>   the frozen/top implication and the separated-test exponents **s=21,
+>   beta=123/2**, conditional on all of N1 (R0-R5) and N2 (Flow-pos).
+>   Neither input is constructed for Yang–Mills. MB is a factorisation identity,
+>   not a proof of the complete normalised all-coarse-field, source-local
+>   representation. Smeared coupling bounds do not supply unsmeared point-image
+>   or W1/W3 bounds (F4/F7). H_reg remains open.
+> - **Non-freeness:** [CODEX_REVIEW_TSE.md](CODEX_REVIEW_TSE.md) confirms the
+>   conditional two-sided assembly with **c_bub=12(N^2-1)/pi^4**, fractions
+>   **1/4 and 7/4**, and its named inputs. The actual (PL-1L) matching/lower
+>   bound remains open. **LOC-e upper image control and two-point matching are
+>   different obligations** (R4). The required order-two lattice Green-function
+>   estimate is not re-derived by this review. No Yang–Mills non-freeness follows.
+> - **Linear premises:** [CODEX_REVIEW_LANEA.md](CODEX_REVIEW_LANEA.md) supports
+>   its specified linear subset and the sharp Wilson coefficient **9** for
+>   s<=1/27. This can replace the conservative **144** only at that step's
+>   scope. The smaller unprimed decay-rate construction does **not** certify
+>   the original full interval **m<m_*'**. The older TOP-cc_m pointer below
+>   must be read with this restriction and the explicit scale adjustment.
+>   Other nonlinear, chart and locality premises remain named conditions.
+> - **Sphere:** [CODEX_REVIEW_SPHERE2.md](CODEX_REVIEW_SPHERE2.md) preserves
+>   the stated Ward algebra and conditional analytic estimates. It refutes the
+>   universal **"no seam tuning"** claim: a parity-even mixed dimension-three
+>   two-sided seam operator is allowed (F3). Positive-measure conditional-mean
+>   contraction cannot be exported to complex measures (F5). Quantum trace
+>   matching, all-product bounds and uniform wild-crossing seam transparency
+>   remain open. No H_Euc closure follows.
+> - **Off-global backgrounds:** [CODEX_REVIEW_OFFGLOB2.md](CODEX_REVIEW_OFFGLOB2.md)
+>   supplies corrected chain rules, signs and conditional local patching, but
+>   rejects OFF'/ID'/BFT3-off/HINV as completed constructions. The paired
+>   data-reset self-map is missing; the pullback, charge and Newton formulas
+>   require the displayed corrections. The box intersection count is **7^d**,
+>   not 6^d. BFT-0 through BFT-3 on the full curvature-small class remain open.
+>
+> **Interrupted output:** UIR2_55.md and ALIGN3_55.md are substantial but
+> unfinished, unreviewed partial derivations. BOX55, FLOWPOS55, GL55, INDUCT55,
+> LOCE55 and WARD55 contain plans only. Their presence is not completion.
+> Current continuation and exact remaining obligations are in [HANDOFF.md](HANDOFF.md).
+> **T_OS remains OPEN; no mass gap is claimed.**
+
 > **PROVENANCE WARNING (2026-10-28T22:11:08Z, lead now claude-opus-5-5).** Every Claude-authored result in sessions 24 and 25 — lead consolidation and all worker files, commits 811b8ed6de through 666a71b7b9 — was produced on **claude-opus-5**, not the owner-required model (Claude: Opus 5.5 at extra effort or higher; Codex: gpt-6-astra at max). The owner has ruled that work likely unreliable. **Treat every session-24/25 status, fix, flag, refutation and number in this file as PROVISIONAL** until the Opus 5.5 review sweep recorded in SESSION25_RESULTS.md §PROVENANCE has re-established it. The only session-24/25 checks run at an approved setting are the Codex gpt-6-astra/max reviews (`CODEX_REVIEW_*.md`). The tally is reported as 72 / 2 / 7 / 24 + 1 **pending** that sweep.
 
 > **[S26-BANKED] RESULTS CONFIRMED BY BOTH MODEL FAMILIES (2026-10-28T23:39:35Z).** Each item below was established or re-derived by Claude Opus 5.5 and independently checked by Codex gpt-6-astra (max). Exact statements are in the cited files; these lines are pointers, not restatements. They are lane-level results and do not move the 105-item tally.

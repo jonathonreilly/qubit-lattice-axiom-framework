@@ -1802,3 +1802,13 @@ lower noise comparison; hard/Branch D). 17 PROVEN-HERE, 4 ARGUED; check h2_55_a 
 not fire), replaced by a2 PASS — disclosed. **Codex review launched (CODEX_REVIEW_HINT2.md).**
 **Launched: ASSEMBLY55** — the full theorem's proof tree from T_OS to leaves, every producer→consumer arrow checked
 (norm, class, convention, quantifiers), missing leaves found, ordered list of OPEN leaves.
+
+**UIR55 — finished** (claude-opus-5-5, max). **(UIR^♮) still OPEN, but no longer a many-scale one-loop estimate.** Lemma
+P♮ (U = 1 propagator = gapped transverse + massless Feynman longitudinal, no cross block); Lemma SPLIT (exact
+transverse split at every V near 1 — refutes FLOW55 §5.5's "Woodbury split unavailable off-shell"); **Theorem TEL**: the
+deviation telescopes exactly, β[G^♮_⊥,n] + (21/22)β_0^std n log L = a^⊥(J_0) − a^⊥(J_n) + Ρ_n, the universal slope coming
+only from the n-independent fine Wilson functional; Lemma FP; **Theorem UIR-T: (TC-b) at orders 3, 4 (n-uniform tree-jet
+bounds) + (ρ-null) (Ρ_n = 0 at fixed n, ARGUED) ⇒ (UIR^♮)**, and b_∞ = β_0^std log L. Leading coefficient 21/22 re-derived
+symbolically (ui55_2; run 1 failed on a double-counted q², disclosed, fixed with criteria unchanged). Refuted: FLOW §24
+(F2)'s symbol (missing D_ℓ(q_μ); bounds survive). **Codex review launched (CODEX_REVIEW_UIR.md). Follow-up launched:
+UIR2_55** — (TC-b) at orders 3, 4 and the (ρ-null) enumeration.

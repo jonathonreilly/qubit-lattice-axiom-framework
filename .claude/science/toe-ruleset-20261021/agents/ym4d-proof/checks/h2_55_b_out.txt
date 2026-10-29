@@ -1,0 +1,23 @@
+PASS  B1.1 G^(1)(cB) = c G^(c)(B)  
+PASS  B1.2 Phi^(1)(cB) = c Phi^(c)(B) (alpha0 symbolic)  
+PASS  B1.3 E^(1)(cB) = c^2 E^(c)(B)  
+PASS  B1.4 c=0: G is abelian dB (only first jets), E is quadratic in first jets  
+FIRES  B1-F G built without c (D keeps c): scaling identity fails  
+PASS  B2.1 (dOmega)Omega^-1 = cD + c^2/2 [l,D] + c^3/6 [l,[l,D]]  
+PASS  B2.2 A^Omega coefficients c^0, c^1, c^2  c^2 coeff = A*lambda**2/2 + D*lambda**2/3 - lambda*A*lambda - 2*lambda*D*lambda/3 + lambda**2*A/2 + lambda**2*D/3
+FIRES  B2-F "1/2 [l,[l,D]]" refuted by the series  
+PASS  B3.1 tr T^a T^b = -delta/2 (SU(2), SU(3))  
+PASS  B3.2 sum_bd f^abd f^dbe = -N delta (N = 2, 3)  
+PASS  B3.3 sum f^2 = N(N^2-1) (6, 24)  6, 24
+FIRES  B3-F generators -i lambda^a (no 1/2): sum f f = -4N delta, gate B3.2 fails  (a=e=1) value -12
+PASS  B4.1 (p^2 d - pp):(d - pp/p^2) = 3 p^2  3*q1**2 + 3*q2**2 + 3*q3**2 + 3*q4**2
+PASS  B4.2 IR: first/tree = N, second/tree = -N, sum 0 (N=2,3)  
+FIRES  B4-F coefficient 1 for [l,[l,A_T]] gives sum -N != 0  [-2, -3]
+PASS  B5.0 abelian plaquette sum of corner differences = 0  
+PASS  B5.1 2 - tr P not identically 0; value at a=b=pi/4 nonzero  2-trP = 4*sin(a)**2*sin(b)**2; at pi/4: 1
+FIRES  B5-F commuting X, Y: 2 - tr P = 0 (flat)  0
+PASS  B6.1 q_m(p-q)_n - (p-q)_m q_n = q_m p_n - p_m q_n  
+PASS  B6.2 sum (q_m p_n - p_m q_n)^2 = 2(q^2 p^2 - (q.p)^2)  
+FIRES  B6-F unsymmetrised vertex keeps -q_m q_n  coeff of q0 q1 = -1
+gates: 15/15 pass; controls: 6/6 fire
+VERDICT: PASS

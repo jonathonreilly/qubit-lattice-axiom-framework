@@ -1777,3 +1777,28 @@ with fixed regularity radii; and the corpus cannot show that no flow proof exist
 "8 refuted paraphrases" → 2 supported narrowly / 2 rejected / 4 not verified. Banked only: the scoped scalar/abelian
 mechanisms, the Gaussian composition identity, the linear hard-source identity with the corrected soft shift, the F3
 finite-scale correction (alternative cutoff has a summable n^{−3/2} tail). No new 4D statement. F2 forwarded to LARGE55.
+
+**BFT4W55 — finished** (claude-opus-5-5, max). **BFT-4 (a) on 𝒞_glob as an implication** (Theorem BFT4a-glob: bounded
+local polymers for the composite critical value on the global-gauge polydisc, k-, T-uniform; pieces invariant under
+CONSTANT gauges only). Theorem H3 ((H3)_m, point-centred, every 1-Lipschitz weight; one named reading (R) for Codex to
+test first); W-mult^σ and (W-comm)^σ_J proven with contour-CENTRED cutoffs — **Proposition CORNER: W-mult^σ is FALSE under
+the lane's default lower-corner positions** (ratio ~L^{σ(k−1)}), so the centred convention becomes binding; Corollary H2W
+(weighted linear estimate for μ ≤ ln 2/(16R_H + 80) from m = 0 inputs — Codex BFT34's R7 fix); σ-pair (f), (E3^∇),
+clause (d) proven. Design change: the slice projection Π_E must sit inside every box piece of the walk. REFUTED in BFT34_55:
+the exponent L^{3+σ} → L^{4+σ} (agrees with Codex R6); Corollary RW-cc-walk as printed. Check b4w55_1 PASS (4 controls
+fired; decides nothing about k-uniformity or d = 4). 14/1/2. **Codex review launched (CODEX_REVIEW_BFT4W.md).**
+**Launched: BFT4B55** (BFT-4 (b), locally gauge-invariant pieces on 𝒞_glob: first whether (b) is consumed at all; then
+(CovLift), (Mult-Y), (Pair-loc), (I-id)_Z).
+
+**HINT2_55 — finished** (claude-opus-5-5, max). Comparator side repaired against every Codex HINT objection, relative
+to an explicit identification (ID♮) (free counterpart = order-c² term at links e^{cA}); Lemma NOBS (the nonabelian flow
+of a free field is not a free-theory observable); PSD matrix-valued colour class; any number of Källén–Lehmann
+subtractions; Lemma INT (Codex's inter-scale bound) proven; H_int ⇐ (UIR^♮_br) + (SF-g) + (RLF-δ) + (SF-cont) + (SF-∞) +
+(TS-up) + (TS-low) + (MOM-E) relative to (ID♮). FLOW needs only a two-sided linear bound with positive slope, not 21/22.
+**New, ARGUED: (TS-up) for the bare flowed density is NOT standard UV stability** — fine-level concentrations amplified by
+L^{4(k−j)}, beyond the lane's e^{−c p(g)²}; it needs the lattice form of the small-instanton condition 11N/3 > 4
+(forwarded to LARGE55). The witness choice is coupled to the scheme choice (soft/bare-flowed; soft/block + NOISE-ADD + a
+lower noise comparison; hard/Branch D). 17 PROVEN-HERE, 4 ARGUED; check h2_55_a registered FAIL (a control that could
+not fire), replaced by a2 PASS — disclosed. **Codex review launched (CODEX_REVIEW_HINT2.md).**
+**Launched: ASSEMBLY55** — the full theorem's proof tree from T_OS to leaves, every producer→consumer arrow checked
+(norm, class, convention, quantifiers), missing leaves found, ordered list of OPEN leaves.

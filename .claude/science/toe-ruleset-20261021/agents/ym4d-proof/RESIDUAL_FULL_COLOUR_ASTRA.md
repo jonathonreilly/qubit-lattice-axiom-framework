@@ -67,7 +67,7 @@ Let the coarse torus have V_c=T^4 sites and V_f=ell^4 V_c fine sites. The follow
     L_har=J-I A^-1 I*Delta_f J,
     S=J*Delta_f J-J*Delta_f I A^-1 I*Delta_f J.
 
-Then ev L_har=1, Delta_f L_har=J S, L_har 1_c=1_f, ker S=span(1_c), and A is positive. Write P_c0=1_c 1_c*/V_c and P_cperp=1-P_c0. The coarse h/gauge parameter is **1_c-perp**. Its harmonic lift has Gram (S|1_c-perp)^2. Consequently the exact completed fine fixing is
+Then ev L_har=1, Delta_f L_har=J S, L_har 1_c=1_f, ker S=span(1_c), and A is positive. Write P_c0=1_c 1_c*/V_c and P_cperp=1-P_c0. The coarse h/gauge parameter is **1_c-perp**. The gauge-fixing column Delta_f L_har on that parameter space has Gram (S|1_c-perp)^2. Consequently the exact completed fine fixing is
 
     Q_per = 1-Delta_f L_har (S|perp)^-2 L_har* Delta_f
           = P_int + J P_c0 J*,                                      (FC3)

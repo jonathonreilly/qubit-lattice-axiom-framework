@@ -1,0 +1,12 @@
+{
+  "recorded_utc": "2026-10-29T16:51:20.449998+00:00",
+  "original_commit": "47a916398fb58231d809695485812faf25c70ce9",
+  "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RESIDUAL_FULL_COLOUR_ASTRA.md",
+  "original_sha256": "e18ce796044a7f1a1f0a086043e5c072ed7e8b7da9af5097ff34e64526de7944",
+  "repaired_sha256": "1ce9460989e5491bd491dcc348add15207e63013a0c537cd6c51caa19f0e3dd7",
+  "old_text": "Its harmonic lift has Gram (S|1_c-perp)^2.",
+  "new_text": "The gauge-fixing column Delta_f L_har on that parameter space has Gram (S|1_c-perp)^2.",
+  "reason": "Reviewer correctly distinguished the harmonic lift, its gradient and the actual gauge-fixing column. Displayed FC3 already uses Delta_f L_har, whose Gram is S\u00b2; no determinant formula or estimate changes.",
+  "review_status": "Narrow changed-source confirmation pending; full independent review in progress",
+  "original_preservation": "Original frozen source and author manifest remain valid at the original commit; neither manifest nor old checks rewritten"
+}

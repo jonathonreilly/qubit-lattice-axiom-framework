@@ -2084,3 +2084,14 @@ as an implication** (k-, T-, region-uniform; coupling spectator; analytic in sou
 needs). Geometric mismatch proved pointwise. REFUTED: LARGE55's total action omits the normaliser; LCONV55/LARGE55 used
 mass κ instead of κ₀/L² (9× at L = 3). **Codex review launched (CODEX_REVIEW_STEP.md). Launched: ALIGN3_55** (queued
 brief: periodic repair, (P2-tw)_log, (AC)_log, source restriction, output conversions).
+
+**MINCB55 — finished** (claude-opus-5-5, max). **Codex item 8 answered: no min-tower reader needs global minimality** (census:
+ten use critical values / lower bounds; five need a chart minimum with a quadratic margin). **Theorem RSM_j: the per-level
+critical value IS the minimum of the one-step functional on a fixed own-unit ball, with a quadratic margin** (one-step
+convexity with the coarse field FIXED — consistent with LCONV55's non-convexity when coarse levels are free); RSM-tower
+(radius does not grow with depth); PROOF's "(MIN_1) weakened" met on 𝒞_glob. (MIN-cb) uniform stays OPEN but unused.
+**BFT4B bridge: the critical chain's own assigned terms** (nonnegative, holomorphic, sum to E^cb, k-uniform per-cube bound
+for σ > 0) replace the global critical-value polymers for (I_k^E)″; first-derivative locality ARGUED; (DENS-reg) OPEN.
+A naive perturbative (BFT-coer) fails exactly (pure gauge, critical value 0, positive linear energy). REFUTED: four
+inherited claims (incl. HIST (c5″) "needs the global minimiser"). Self-withdrawn corollary E11. **Codex review launched
+(CODEX_REVIEW_MINCB.md). Launched: B2_55** — STEP55's single remaining input (B2).

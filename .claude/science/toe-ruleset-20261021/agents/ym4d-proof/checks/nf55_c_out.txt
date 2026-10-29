@@ -1,0 +1,6 @@
+C1: nonzero residual coefficients with order <= 2M+1: [] -> True
+C1-F (factor 1 instead of 1/2): nonzero coefficients: [((13, 0), -13/14863564800), ((11, 0), -11/88473600), ((9, 0), -1/81920)] -> fires: True
+C2: max Lg power 1 | constant 1 | coeff z^2 Lg 1/2 -> True
+C3: Lg powers in {0..3} up to z^6: True | z^0 coefficient 1 -> True
+RESULTS: {'C1': True, 'C1-F': True, 'C2': True, 'C3': True}
+VERDICT: PASS

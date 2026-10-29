@@ -2025,3 +2025,17 @@ not readable (Project Euclid returned empty) — checked against open reviews (a
 [m-sec]. **Owner-level reading flagged: OWN-alg** (T_OS's "state" in OS's own separated-distribution sense — this is the
 standard OS formulation, not a weakening; recorded as the lead's recommendation). **Codex review launched
 (CODEX_REVIEW_OSLEAF.md). Launched: SRC2_55** — (X1)/(SP_λ) from the per-step package (Codex item 13).
+
+**NONFREE55 — finished** (claude-opus-5-5, max). **An identification-free non-freeness witness on the produced field e —
+against canonical free theories (T_NF), not against generalized free fields.** Definition T_NF: the theory of e is not a
+local composite of any canonical free theory (finitely many free fields, any masses, tensor products, Maxwell with N²−1
+colours) nor a uniformly-bounded mixture. No-gos: NG1 (no continuous function of finitely many separated two-point values
+works — PANEL_P1 item 4 as literally stated cannot be met; the witness must be a fixed-scale FAMILY with uniform bounds),
+NG2 (every OS two-point function is a GFF's), NG3 (a log-damped GFF composite meets AF bounds — excluding GFFs has no
+route). **Theorem FS (free side): free composites have power-law short-distance two-point functions; Corollary SEP-e:
+log-suppression (λ⁸S₂ → 0 but λ^{8−η}S₂ → ∞) proves T_NF.** YM side = (TS-e-up) + (TS-e-low), two-sided n = 2 bounds with an
+asymptotic-freedom envelope, on the SAME algebra as OS0 — replaces TS-up/TS-low/MOM-E/flowed observables/ID♮; (LF-inst)
+leaves H_int (heuristically only an observable-weighted decoupling estimate needed). Checks nf55_a/b/c PASS (free Maxwell
+:F²: 2-point 48(N²−1)/(π⁴|x|⁸), 4-point ≠ 0). **Owner-level definition flagged: what "not free" means (T_NF recommended;
+(NF-GFF) has no route; HINT2's ID♮ statement is a third target).** **Codex review launched (CODEX_REVIEW_NONFREE.md).
+Launched: TSE55** — (TS-e-up)/(TS-e-low).

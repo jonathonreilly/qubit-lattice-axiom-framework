@@ -34,9 +34,10 @@ the methodology sources are unchanged from `6c269770273c3fe00de350d5a3c14cacb70c
 
 Current assignments use fresh `gpt-6-astra / max` contexts:
 
-- **Residual determinant author:** the finite completion and grouped
-  principal-model checkpoint is delivered; the actual lattice bridge
-  continues in a separate working artifact.
+- **Residual determinant author — checkpoint delivered:** finite/model,
+  harmonic-lattice and actual vertex units are frozen separately. The last
+  unit proposes zero residual in the stated paired-root regulator sector;
+  its analytic proof awaits independent review.
 - **Source-local return author — continuation active:** actual
   level-zero operator localization, all-order global-chart source
   substitution and exact return identities are independently checked at
@@ -56,7 +57,11 @@ Current assignments use fresh `gpt-6-astra / max` contexts:
 - **Independent alignment reviewer — completed:** the frozen conditional
   continuation and the narrow BA-5 repair are confirmed.
 - **Independent harmonic-bridge reviewer — active:** the new finite/free
-  lattice unit, followed by the separate conditional mass-gap criterion.
+  lattice unit, the separate conditional mass-gap criterion, then the new
+  actual vertex unit, with separate reports and receipts.
+- **Physical mass-gap author — active:** exact coarse-flow/source transport
+  and direct physical transfer estimates, with a uniform infrared bound as
+  the target. No crossover or physical gap is established.
 
 Same-family context separation is disclosed and is not described as
 cross-family review. The coordinator owns integration and PR updates. See
@@ -186,8 +191,19 @@ The author has separately frozen an [actual finite/free lattice bridge](checks/r
 for review. It preserves the point-lift quartic-mode failure and constructs
 a harmonic lift with its scalar Gram factor, internal Dirichlet gap and
 all-alias free principal matrix. Its compatible charged-sector regulator
-is explicit; the periodic/full-colour limit and off-shell vertices remain
-open. This new unit is author support, not part of the completed model review.
+is explicit; its review is separate from the completed model review.
+
+The new [actual vertex checkpoint](checks/residual_det_vertices_working.md)
+defines an auxiliary off-shell function distinct from the original Φ,
+retains the Wilson equation-of-motion row, and constructs a normalized
+gauge path after minimizing the high aliases. Its candidate Ward and
+separate-pole argument gives zero residual coefficient per paired charged
+root at fixed depth, in the source's volume-first antiperiodic convention.
+The 13 exact algebra controls reproduce byte-for-byte in
+[coordinator replay](checks/full_proof_residual_vertices_replay.json).
+Those controls do not validate the analytic argument. Independent review
+and the neutral/full-periodic comparison remain open; the proposal is not
+an unconditional full-colour residual or coupling-flow theorem.
 
 ## Goal and source identity
 

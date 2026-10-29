@@ -1,0 +1,63 @@
+{
+  "scope": "finite algebra and partial gauge-path derivative only",
+  "checks": [
+    {
+      "name": "periodic_3_power_4_dirichlet_harmonic_constant",
+      "ok": true
+    },
+    {
+      "name": "actual_interior_norm_r_80",
+      "ok": true
+    },
+    {
+      "name": "path_endpoints",
+      "ok": true
+    },
+    {
+      "name": "path_exact_normalization",
+      "ok": true
+    },
+    {
+      "name": "direct_80d_schur_energy_one",
+      "ok": true
+    },
+    {
+      "name": "partial_dotted_fixing_not_total_derivative_vanishes",
+      "ok": true
+    },
+    {
+      "name": "minimizing_high_vector_changes_with_parameter",
+      "ok": true
+    },
+    {
+      "name": "control_naive_midpoint_is_25_over_21",
+      "ok": true
+    },
+    {
+      "name": "control_naive_partial_does_not_vanish",
+      "ok": true
+    },
+    {
+      "name": "off_shell_logdet_derivative_equals_Nielsen_trace",
+      "ok": true
+    },
+    {
+      "name": "off_shell_gauge_row_is_nonzero",
+      "ok": true
+    },
+    {
+      "name": "control_dropping_off_shell_row_gives_wrong_derivative",
+      "ok": true,
+      "detail": {
+        "derivative_at_zero": "1/4"
+      }
+    },
+    {
+      "name": "zero_gauge_row_normalized_determinant_is_gauge_independent",
+      "ok": true
+    }
+  ],
+  "passed": 13,
+  "total": 13,
+  "all_ok": true
+}

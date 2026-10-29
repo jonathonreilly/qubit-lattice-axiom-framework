@@ -2390,3 +2390,17 @@ fail as intended. The review preserves strict θ>α for the summed residual
 and the sufficient P2 window α+θ≤1. Generic-field NC(log), weighted/global
 transfer and unverified upstream inverse/background inputs remain open.
 The physical mass gap and full existence are outside this unit.
+
+### Actual residual vertex proposal — frozen for review, 29 October
+
+[The new vertex unit](checks/residual_det_vertices_working.md) retains the
+off-shell Wilson equation-of-motion row in an auxiliary determinant
+function and tunes the gauge path after the high-gradient minimization.
+It proposes a complete Ward/pole argument for zero residual coefficient
+in each paired charged root sector at fixed depth, with the volume-first
+antiperiodic convention stated in UIR2_55. Its 13 exact algebra controls
+reproduce with empty stderr. These checks do not prove the analytic
+covariance or limit steps; the independent reviewer will examine those.
+The neutral/full-periodic comparison remains a separate open interface.
+An Astra/max author is also beginning the actual physical infrared
+construction; no mass-gap estimate or full existence result is claimed.

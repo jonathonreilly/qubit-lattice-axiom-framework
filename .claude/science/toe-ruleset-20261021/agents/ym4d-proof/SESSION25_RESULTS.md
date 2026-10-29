@@ -1906,3 +1906,11 @@ through the poles (resolves ASSEMBLY55 F3), Ward/covariance algebra, CS parity c
 flat-limit argument. Analytic inputs (W0, W1, W3, N5, SRC-E, U-mom, U-NT) NOT-VERIFIED; symmetry of a STATE needs the
 estimates on a determining algebra of all finite products (ASSEMBLY F4). Most dangerous: nonvacuity — fine-field moment
 bounds together with a normalisation keeping separated correlations nonzero (the Lemma V tension). Forwarded to SEAM55.
+
+**BFT4B55 — finished** (claude-opus-5-5, max). **Theorem T0: BFT-4 (b) on 𝒞_glob has no consumer on the live route**
+(seven consumers traced; on 𝒞_glob (a) suffices via Cauchy in the global chart). Off 𝒞_glob the consumers need (c₀) —
+bounded local holomorphic pieces on the gauge-invariant class — and **Lemma AVG** (endpoint-gauge averaging) gives local
+invariance for free, so (c₀) ⇒ (b). (CovLift), (Mult-Y), (Pair-loc), (I-id)_Z leave the critical path. REFUTED: BFT34_55
+§2.1's "sup meaningful only for gauge-invariant R(X)"; BB-4c (ii)'s flat-point clause for BFT4a-glob's pieces (feeds only
+(iii), off route). Check b4b55_1 PASS (tests AVG's algebra only). **Codex review launched (CODEX_REVIEW_BFT4B.md);
+(c₀) forwarded to OFFGLOB2_55.**

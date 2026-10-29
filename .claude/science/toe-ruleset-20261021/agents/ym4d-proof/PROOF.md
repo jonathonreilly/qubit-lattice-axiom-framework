@@ -75,10 +75,21 @@
 > [RECOVERY_CLUSTER_ASTRA.md](RECOVERY_CLUSTER_ASTRA.md) supplies a generic
 > constructive replacement for CX, including original-source locality and the
 > full denominator factors. Its actual Yang–Mills hypotheses and exact return
-> identity remain unconstructed. These new proofs are **author support pending
-> independent review**, not additions to [S26-BANKED]. Four new finite check
+> identity remain unconstructed. Alignment and cluster remain **author support
+> pending independent review**, not additions to [S26-BANKED]. Four new finite check
 > scripts and their controls reproduced; they do not certify these analytic
 > claims or their remaining hypotheses.
+>
+> **Completed independent UIR check, 29 October:**
+> [REVIEW_RECOVERY_UIR_ASTRA.md](REVIEW_RECOVERY_UIR_ASTRA.md) confirms the
+> frozen recovery unit's narrowed finite algebra, normalization, minimum germ
+> and fixed-depth tree-jet periodization. It finds no material defect in those
+> claims. Its independent implementation passes 57/57 predicates, including
+> mutation controls; these finite checks supplement the written derivations.
+> Uniform weighted estimates still require H1/H2/H3 and the same-link term.
+> Actual principal-symbol matching and the all-increments residual bound
+> remain open. This is a same-family, fresh-context check, not an extension
+> of the older cross-family [S26-BANKED] heading or full-proof acceptance.
 >
 > Current continuation and exact remaining obligations are in [HANDOFF.md](HANDOFF.md).
 > **T_OS remains OPEN; no mass gap is claimed.**

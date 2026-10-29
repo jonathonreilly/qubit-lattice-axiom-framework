@@ -34,15 +34,38 @@ Current assignments use fresh `gpt-6-astra / max` contexts:
 - **Source-local return author:** actual level-zero operator localization,
   connected-support incidence bounds and exact normalized return identity,
   retaining the background-substitution and higher-level action interfaces.
-- **Independent UIR reviewer:** the frozen recovery argument and its actual
-  dependencies, through an independent derivation/check path. Cluster and
-  alignment reviews follow as reviewer capacity becomes available; new author
-  results then receive their own separate-context checks.
+- **Independent UIR reviewer — completed:** the frozen recovery argument
+  has been checked through distinct derivations and an independent program;
+  its bounded claims are confirmed with explicit conditional/open limits.
+- **Independent cluster reviewer — active:** the frozen generic CX-R
+  theorem and its constants. Alignment and new author results receive
+  separate-context checks as coherent units become available.
 
 Same-family context separation is disclosed and is not described as
 cross-family review. The coordinator owns integration and PR updates. See
 [the approach registry](APPROACH_REGISTRY.md) for mechanisms, terminal
 obligations and the distinction between intermediate support and full closure.
+
+### First completed independent check in the full-proof continuation
+
+[REVIEW_RECOVERY_UIR_ASTRA.md](REVIEW_RECOVERY_UIR_ASTRA.md) checks the frozen
+recovery unit at `962f97c259d8c241df632a07e27f498f4ad33b09`. It reports no
+material defect in the narrowed claims: regulated finite Schur identities,
+the normalization map, finite-volume germs, fixed-depth all-momentum
+positivity and exact tree-jet periodization. Uniform weighted jets remain
+conditional on H1/H2/H3 and the corrected same-link term. Actual grouped
+principal-symbol matching, the residual increment bound and full T_OS
+remain open.
+
+The reviewer used different exact algebra, mixed-source stationary jets,
+an alternative scalar integration, actual d=4 S4′ contour controls and
+Fourier/image checks: **57/57 predicates passed**. The numerical momentum
+samples do not prove all-momentum positivity; that conclusion has its own
+written argument. [The frozen receipt](checks/review_uir_receipt.json) and
+[read manifest](checks/review_uir_source_manifest.json) bind the coverage.
+[Coordinator replay](checks/full_proof_uir_replay.json) also passed, matching
+stdout after excluding only the UTC line. All 28 recovered files, nine
+historical briefs and 19 prior continuation artifacts retain their hashes.
 
 ## Goal and source identity
 

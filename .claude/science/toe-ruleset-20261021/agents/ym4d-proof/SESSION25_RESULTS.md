@@ -2280,3 +2280,25 @@ Next exact targets: NC(log)'s all-order generic-field conversion, the grouped
 residual principal symbol, and the actual source-local fluctuation/return
 representation. Review the new proposals before dependent theorem assembly.
 The full T_OS target and its substantive outstanding inputs remain open.
+
+### Full-proof continuation: first independent review, 29 October 2026
+
+The owner's active goal is now completion and independent checking of the
+full T_OS proof, not completion of the bounded recovery assignments.
+REVIEW_RECOVERY_UIR_ASTRA checks the frozen recovery unit at `962f97c259d8`
+and finds no material defect in its narrowed claims. Regulated finite
+identities, the source normalization, finite-volume germs, fixed-depth
+all-momentum positivity and exact tree-jet periodization have separate
+independent derivations. Uniform weighted transfer remains conditional on
+H1/H2/H3 and the diagonal envelope term. The actual residual matching and
+all-increments bound remain open.
+
+Its distinct implementation passed 57/57 predicates; numerical momentum
+samples are controls, not the proof of all-momentum positivity. The
+coordinator reproduced the output except its UTC line, with empty stderr,
+and verified the hashes of all 28 originals, nine historical briefs and
+19 prior continuation artifacts. Evidence is in `checks/review_uir_*` and
+`checks/full_proof_uir_replay*`. This is same-family fresh-context checking,
+not a new cross-family receipt, audit verdict or full-proof certification.
+The actual residual and source-local return constructions continue; the
+generic cluster proposal is now undergoing independent review.

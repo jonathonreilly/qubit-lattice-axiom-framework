@@ -1,0 +1,28 @@
+{
+  "source_revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+  "methodology_revision": "6c269770273c3fe00de350d5a3c14cacb70c2833",
+  "completed_utc": "2026-10-29T12:10:58.986880+00:00",
+  "observed_HEAD_at_completion": "93eccd50df0c37cf7430b99d5877519eefd00557",
+  "target_note_sha256": "0cbb4f9a967022ab669cae087617f390b2bfb481034012aac85e7cfc9928bc40",
+  "report": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RECOVERY_UIR_ASTRA.md",
+    "sha256": "347b7ae680b2c305cc7bb5de8b4496d069bbea309a6df71f18109c54a22c4098"
+  },
+  "source_manifest": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uir_source_manifest.json",
+    "sha256": "85439e1be753f1821542b799fd52fe378d9cbee00d70c52b818b7f7ad5fbcbe8"
+  },
+  "independent_execution": {
+    "command": "python3 -B .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uir_01.py",
+    "exit_code": 0,
+    "predicates_passed": 57,
+    "predicates_total": 57,
+    "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uir_01_out.txt",
+    "stdout_sha256": "e80cdcf6b49b1c7df72bea88fd2ec1e6ffed5af488e8b186cccd3c28e56af0b2",
+    "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uir_01_err.txt",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "recommendation": "bounded source claims independently confirmed; actual producer and residual closure conditional/open",
+  "whole_PR_PASS": false,
+  "audit_verdict": null
+}

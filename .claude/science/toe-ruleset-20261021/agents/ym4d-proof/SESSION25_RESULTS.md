@@ -1885,3 +1885,18 @@ L^{k−l−4}). New candidate **Λ_HC** (hierarchical Coulomb-detail gauge): alg
 + (HB); subdivision certified for L = 3 only (al55_sub P3 FAIL for a 5-adic scheme, disclosed); weighted version OPEN
 (r^{−7} kernel). Theorem R2-glob♯ as a reduction with 13 inputs. 6/5/3. **Codex review launched (CODEX_REVIEW_ALIGN.md);
 follow-up launched: ALIGN2_55** — prove Λ_HC's regularity ((DET), (HB), subdivision, (A)/(B), weighted, Hessian terms).
+
+**OFFGLOB55 — finished** (claude-opus-5-5, max). **Theorem OFF: BFT-0/1/2 outside 𝒞_glob as an implication, k-, T-uniform
+(T ≥ 4R+6).** The class is small-curvature with arbitrary holonomy — a SMALL-field problem, mislabelled "large fields" in
+HANDOFF (corrected). Proposition C4: 𝒞*_glob is a strict subclass (witness with every gauge having a link ≥ 0.44√ε), so
+global-potential-linear theorems cannot give ε-linear BFT bounds. (UHL) splits three ways; only (UHL-data) = Lemma AX is
+needed (proved); HESSREL's (FLAT-REF) is FALSE at O(ε). **Covariant routing + (LOC-cc_U) proved for every configuration**
+(cut-off pieces made exactly cc; constant ≈ 221; og55_1 24/24 identities, 20/20 designed failures). **Theorem GP**
+(frame-patched right inverse) ⇒ (G♯-patch) and Corollary GP-R2 ((R2), (N1-nd) at m = 0 outside 𝒞_glob, NO alignment).
+**Proposition L2: on 𝒞_glob too, (N1-nd) and the slice response follow from the linearised K^(σ) map + CCP (c) without an
+alignment** (comparison lemmas NE, CONV argued; σ-pair) — this may make the alignment programme unnecessary; ALIGN2_55
+told to check that first. Not needed on this route: (UHL), (SL-cov), (LOC-GA)'s alignment, Z^sm, lane B's (N1). ARGUED:
+(W-comm)^σ / W-mult^σ off 𝒞_glob, CONV + (ND), RG, FP. 12/4/5 (refuted: HESSREL §H6.2 "FLAT-REF is the wall"; BGT55 "no
+new mechanism"; NSL55 "needs (N1)"; GV55's list read as necessary; the HANDOFF label). **Codex review launched
+(CODEX_REVIEW_OFFGLOB.md). Follow-up launched: OFFGLOB2_55** — the argued lemmas, identification clause, BFT-3/4 (a)
+outside 𝒞_glob, boxes.

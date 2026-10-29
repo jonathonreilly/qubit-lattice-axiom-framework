@@ -1581,3 +1581,28 @@ pre-registered** (a control that could not fire — the worker's own design erro
 R, S (hence η_H, C_*) uncomputed. 20 CONFIRMED / 2 NV / 0 REFUTED. Codex review launched (CODEX_REVIEW_HIGHER.md).
 **Launched on Opus 5.5: BFT34_55.md — BFT-3 (locality) and BFT-4 (polymer representation), the two clauses of the
 named target nobody had touched.**
+
+**Codex batch (KOFF, GSHARP, COFM, ROTDEF, NODEA, HINT, RLU) — banked in PROOF.md's [S26-BANKED] block, scoped exactly
+as each review's "Exactly what may be banked".** Highlights: Theorem K^(σ) CONFIRMED conditionally (printed LA-1
+REFUTED, LA-1′ substituted); GF-E / GF-E′ CONFIRMED — (G♯_0-field) on S_E at m = 0 is not an open wall; clause (b)
+with decay CONFIRMED (no DX_m/DB_m); rotation reduction CONFIRMED in part (blanket contact exclusion FAILS; Cesàro and
+mixture arguments need repair; |x|⁻⁸ sufficiency banked); non-freeness comparator CONFIRMED only for quadratic abelian
+observables, Yang-Mills side NOT-VERIFIED; W-cb♯ and FI-1 CONFIRMED conditionally.
+
+**GV55** (claude-opus-5-5, max): the two files fit after one source-norm repair (Proposition GV-E: GF-E rerun in the
+J-based norm N_Σ); **Theorem BFT-E (implication): BFT-0 slice form, BFT-1, BFT-2 close on 𝒞_glob (Z = 1, m = 0,
+T ≥ 3), uniform in k and T**; the field half with decay closes via weighted CC-INV (GV-E_m), no DX_m/DB_m. Not delivered:
+BFT-0's identification clause, needing **(NSL)** — a nonlinear S_E slice-attainment lemma at every depth (S_E is not
+preserved under restriction to lower depth: rank count). **Clause (b) at Z = 1 now open only on (R2), the background.**
+8 REFUTED incl. the lead's "residual-weight gap" premise. Codex review launched.
+
+**NODEA_RES55** (claude-opus-5-5, max): **the Anderson-type mechanism for (M2) is REFUTED** — two exact
+counterexamples (a symmetric strongly log-concave law where a tilt raises a slab's probability; a Gaussian at cutoff
+n = 1 where the tilt de-correlates defects). **Replacement: Theorem BL-TILT** (Brascamp-Lieb along the tilt path)
+proves the consumer's statement (LCR°) directly wherever the law is log-concave, volume-uniformly, with no
+(M1)/(M2) split. **But the real chain is NOT convex on the single-level small-field set**: an exact Hessian check at a
+uniform-field critical point gives Rayleigh quotients −1.07, −0.52 — **lattice Nielsen-Olesen modes**. Node A's residual
+is now **(LC°)**: convexity on defect-free regions (C² form), convexity of the small-field core, a large-field
+Peierls bound — whether the MULTISCALE small-field constraint restores convexity (argued, not proven). Proposition NU:
+cutoff-uniformity in n_♯ follows from an n-independent constrained Peierls bound. Codex review launched.
+**Launched on Opus 5.5: NSL55.md (the slice-attainment lemma) and LCONV55.md (multiscale convexity).**

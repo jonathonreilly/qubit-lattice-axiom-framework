@@ -1,0 +1,17 @@
+## PRE-STATED
+
+Independent hostile review of `FLOW55.md`, requested 2026-10-28 (local date). Reviewer: Codex, independent of the target's authorship. This is a mathematical review, not an audit-status promotion. Only this file may be written. No git commands. Large-file content is read by search and bounded `sed` ranges. Arithmetic checks will use exact integers, rationals, or symbolic expressions; no floating-point agreement will count as evidence.
+
+Prior exposure before this block: the user's claims and priorities; `FLOW55.md` headings/search matches, lines 1–83 and 568–616 (including both errata and the author's status inventory); the repository science-workflow instructions and the initial review-loop skill instructions. I have not yet read the proofs in §§3–6 or the check implementations. No independent calculation has yet run. The author’s reported PASS results and upstream review labels are not independent evidence.
+
+Pre-stated tests, in the requested order:
+
+1. **K̄ / K̄-1L.** Check the gauge-action/covariance identity, the distinction between invariance and Hessian transversality at stationary versus arbitrary points, all Schur-complement terms, induced quotient measures, primes/zero modes, and determinant normalizations. Independently derive a finite-dimensional block identity and test any claimed cancellation with exact non-diagonal positive matrices. A missing field-dependent determinant, omitted residual-curvature term, or false off-shell Hessian inference refutes the corresponding statement; a missing analytic hypothesis yields NOT-VERIFIED.
+2. **K̄-tad.** Reproduce the transported-covariance finite checks only after reading their scope; independently inspect the contraction and its linearization. Identify the exact imported Green-function bound and its source, dimension, zero-mode convention, volume uniformity, and weighted summability requirements. Check erratum 1's chain-rule limit and whether it suffices for the marginal coefficient. Pure-gauge cancellation alone does not prove vanishing on transverse low momentum.
+3. **GH0 / UIR♮.** Follow the ghost determinant scaling and Taylor coefficient through the fine/level subtraction, including additive constants and volume/infrared limits. Re-derive the equivalence algebra only with its actual prerequisites. An unproved prerequisite is not repaired by naming the residual estimate.
+4. **WARD-J / JET-MARG.** Derive the infinitesimal link-log gauge transformation through cubic order and the Taylor identities at orders 2–4. Independently classify the relevant hypercubic cubic tensor structures and their transverse subspace; distinguish that finite classification from locality/analyticity and the full marginal-jet theorem.
+5. **W-loc and normalization.** Inspect FLOW's actual F-rem/F-flow/F-tune/F-ind hypotheses and proofs, plus the stated C1/C2 interfaces, using locating strings. Independently check the exact coefficient arithmetic, including `11 = 12 − 1`, `2N·2b_0`, and `1/22 : 21/22`.
+
+Verdicts will be **CONFIRMED**, **NOT-VERIFIED**, or **REFUTED**, each attached to a file and locating string. CONFIRMED may apply to an explicitly stated conditional implication, but will not silently confirm its hypotheses. Any literature recollection will carry `[m]`; sourced imports will be distinguished from recollection. The final section will state exactly what may be banked and which route-level conclusions remain unsupported.
+
+---

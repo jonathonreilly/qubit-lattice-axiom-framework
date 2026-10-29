@@ -1972,3 +1972,11 @@ nonvacuity finding** (coarse-image norm instead of Var F; uniform in n on an exa
 on the sphere assembled as an implication; SRC-E and U-mom dropped from the input list. 15/4/5. **Codex review launched
 (CODEX_REVIEW_SEAM.md). Launched: MINCB55** — Codex work-list item 8 (min-tower consumers: (MIN-cb) or a critical-value
 restatement + restricted minimum + large-field comparison).
+
+**CX-OFFGLOB** (`CODEX_REVIEW_OFFGLOB.md`). **Theorem OFF is NOT banked — the off-global construction is a GAP** (with
+viable local components). Banked: Lemma AX, C4, flat-torus construction, U1 (3.3ε_0, not 1.1ε_0), U2, real covariant
+routing + exact cc localisation, exact lift, NK recurrence; L1/L2 conditionally (a limited no-alignment mechanism — NOT a
+retirement of ALIGN55). REFUTED in OFFGLOB55: U1's coefficient, real-frame AP on complex pure gauges, a gauge-product
+order, generator signs, ΓK's leading sign, a localisation coefficient. Most dangerous: uniform root-preserving relative
+frame patching. My earlier "a paper-scale wall becomes local bookkeeping" was premature; forwarded to OFFGLOB2_55 (now
+priority: FP/RG lemmas, complex convention, GP's error operator) and ALIGN2_55 (alignment stays on the path).

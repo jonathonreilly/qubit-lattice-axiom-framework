@@ -1900,3 +1900,9 @@ told to check that first. Not needed on this route: (UHL), (SL-cov), (LOC-GA)'s 
 new mechanism"; NSL55 "needs (N1)"; GV55's list read as necessary; the HANDOFF label). **Codex review launched
 (CODEX_REVIEW_OFFGLOB.md). Follow-up launched: OFFGLOB2_55** — the argued lemmas, identification clause, BFT-3/4 (a)
 outside 𝒞_glob, boxes.
+
+**CX-SPHERE** (`CODEX_REVIEW_SPHERE.md`). Banked: construction, RP for the equator and the four coordinate great spheres
+through the poles (resolves ASSEMBLY55 F3), Ward/covariance algebra, CS parity correction, and a repaired conditional
+flat-limit argument. Analytic inputs (W0, W1, W3, N5, SRC-E, U-mom, U-NT) NOT-VERIFIED; symmetry of a STATE needs the
+estimates on a determining algebra of all finite products (ASSEMBLY F4). Most dangerous: nonvacuity — fine-field moment
+bounds together with a normalisation keeping separated correlations nonzero (the Lemma V tension). Forwarded to SEAM55.

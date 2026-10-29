@@ -44,7 +44,7 @@ T_OS on R^4 follows, along one diagonal subsequence a_j → 0, R_j → ∞ with 
 - **H_RP** — reflection positivity for one common reflection, errors → 0;
 - **H_Euc** — the Euclidean symmetry defect → 0 on a dense subgroup (only non-lattice rotations are hard);
 - **H_int** — a calibrated local non-freeness witness bounded away from the free class.
-H_RP: Wilson reflection positivity on the torus is IMPORTED-AND-REVERIFIED in PROOF.md (L9a), not cross-family banked; the sphere's equatorial RP is banked; the coordinate reflections θ_μ the sphere route uses at the pole are not yet proved (ASSEMBLY55 F3). Everything else rests on the
+H_RP: Wilson reflection positivity on the torus is IMPORTED-AND-REVERIFIED in PROOF.md (L9a), not cross-family banked; the sphere's equatorial RP is banked; the coordinate reflections θ_μ at the pole are now proved (CODEX_REVIEW_SPHERE item 2). Everything else rests on the
 UV RG below.
 
 **Route to H_Euc.** *Sphere (leading)*: on S^4_R rotations are exact, the Killing-field Ward identity has no shell term,
@@ -66,7 +66,7 @@ TQ itself is unproved, and whether RP plus Wilson-specific inputs can give it is
 | BFT off 𝒞_glob (a SMALL-field problem: small curvature, arbitrary holonomy/frames) | Theorem OFF: BFT-0/1/2 as an implication via covariant routing + frame-patched right inverse (GP), no (UHL)/(SL-cov)/alignment needed — pending Codex; five local lemmas ARGUED; identification clause, BFT-3/4, boxes open | OFFGLOB55 (Codex running); OFFGLOB2_55 (running) |
 | Node A (single-level measure) | reductions + BL-TILT banked; multiscale convexity REFUTED (LCONV55, Codex review running) — replacement: one-step conditional positivity + per-step small-field cluster expansion + (SDP)^A tilted | LARGE55 (design); per-step N5/N6 not yet assigned |
 | SRC (source-inserted RG; gives CD, OS0) | Prop. B, Lemma V, SA-CF/SA-PC/SA-TC/SA-S, SA-K banked (scoped); open: (A) complex envelopes for the tilted chain incl. large coarse fields, (B) real conditional decay = a decaying polymer representation (same object as BFT-4), (LOC-e), the OS0 extension estimate | not yet assigned (waits on LARGE55, BFT-4) |
-| H_Euc, sphere route | equatorial RP, Proposition T banked; construction + seam + UV items open | SPHERE55 (running) |
+| H_Euc, sphere route | construction, RP (equator + four pole planes), Ward algebra, Proposition T banked; conditional flat-limit argument banked; open: W0, N5 (SEAM55), W1/W3/SRC-E/U-mom (shared with SRC), full-algebra (all-n) invariance, nonvacuity of the moment normalisation | SEAM55 (running) |
 | H_int | comparator mathematics banked (HINT2_55); conditional reduction to (TS-up), (TS-low), (MOM-E); **open bridge: a non-freeness criterion that does not rest on the identification rule (ID♮)** | queued (NONFREE) |
 
 ## Systemic defects to check in every claim

@@ -2143,3 +2143,13 @@ decay); open core: small-field seam RG + wild-crossing-data absorption (argued; 
 stiffness). W1 needs an o(log) budget for the traceless S^(3,6′) insertion. **Codex review launched
 (CODEX_REVIEW_SPHERE2.md). Launched: WARD55** — W1 (all n), W3 and the SRC-M trace clause via SRC2_55's frozen/top
 representation.
+
+**OFFGLOB2_55 — finished** (claude-opus-5-5, max). **Codex's two most dangerous OFFGLOB gaps addressed (pending Codex):
+Lemma RFP (root-preserving relative frame patching, R-independent constant) ⇒ UQ′ (real uniqueness modulo root-trivial
+gauges); the parametrix defined on source representations with a bounded error operator at critical points ⇒ exact right
+inverse, kernel = gauge directions; complex data by holomorphic continuation in fixed real frames.** Consequences: Theorem
+OFF′ (BFT-0/1/2, BFT-5 (b) on the full small-curvature class), Theorem ID′, BFT-3 for E_k^br, gauge invariance of E_k^br on
+the whole class. Claims no use of premise (R). NOT delivered: BFT-4 off 𝒞_glob — (c₀) cannot be moved frame by frame
+(§7.3); reduced to (GL) (a locally determined reference configuration) + (LUD); boxes; RLARGE's localised background. No
+numeric check run. **Codex review launched (CODEX_REVIEW_OFFGLOB2.md). Launched: BOX55** — the linear package on boxes
+(ASSEMBLY ML11).

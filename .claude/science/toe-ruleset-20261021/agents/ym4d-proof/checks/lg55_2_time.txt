@@ -1,0 +1,1 @@
+python3 lg55_2_s4p.py > lg55_2_out.txt 2> lg55_2_err.txt  2.87s user 0.01s system 99% cpu 2.881 total

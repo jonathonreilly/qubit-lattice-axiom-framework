@@ -1920,3 +1920,16 @@ certificate, R2-glob♯ as an implication. REFUTED inside ALIGN55: RED′'s inte
 pure-gauge example, axial growth as a norm test; AC product L^{−4} not L^{−2}. Most dangerous: the all-order Hessian-
 difference estimate in the actual chart/norms. Forwarded to ALIGN2_55 (which is also checking whether OFFGLOB55's
 GP/L2 make the alignment unnecessary).
+
+**LARGE55 — finished** (claude-opus-5-5, max). **The brief's simple action-vs-entropy mechanism FAILS in d = 4 (Theorem
+DENSE: bare-level large fields are dense for every fixed cut up to 0.629 SU(2) / 0.538 SU(3) and every coupling-scaled cut,
+so log(Z_K/Z_K^{sf}) → ∞ exponentially in K — large fields must be renormalised every step); Proposition NOFREEZE (with
+coupling-scaled cuts nothing can be frozen).** But much of v3 can go: keep the R-operation and HIST-sum, replace the
+HW/PLD/SQ pricing layer by Balaban-type inductive pricing — Lemma MIS (kernel-mismatch large fields suppressed for every
+SU(N): (KS-N) no longer needed), Lemma COL (coarse variables above a frozen region integrate out exactly), Lemma KA
+(kernel activities analytic in the coarse field, width g/√κ; RLARGE S4-5's "conflict" is a two-sided window), Lemma
+PRICE ⇐ (BFT-coer). Drops 15 of 38 rows incl. three paper-scale walls. (N3)/(M2) are not extra inputs (Lemmas TL, PP);
+(LF-diff) is needed on every route and was missing from RLARGE's DAG. (TS-up) cannot come from any cut-based counting —
+supports the block-witness (Branch D) route for H_int. 11/8/3 on inherited; 15 proven here. **Codex review launched
+(CODEX_REVIEW_LARGE.md) — a route choice, so it waits on the cross-family verdict before anything is dropped.
+Launched: STEP55** (I1 one-step positivity + per-step cluster expansion, I2 (BFT-coer)) — needed on every route.

@@ -64,7 +64,7 @@ TQ itself is unproved, and whether RP plus Wilson-specific inputs can give it is
 | BFT-4 | (a) on 𝒞_glob banked conditionally on the local premise (R); (b) has no consumer (BFT4B55 Theorem T0, pending Codex) — off 𝒞_glob the target is (c₀), bounded local holomorphic pieces, which gives (b) for free by Lemma AVG | RLOC55 on (R); OFFGLOB2_55 on (c₀) (both running) |
 | BFT-5 (b) background transfer | Theorem GA banked; needs an actual alignment with uniform quotient/source/defect bounds, then (LOC-GA) off 𝒞_glob | ALIGN55 (running) |
 | BFT off 𝒞_glob (a SMALL-field problem: small curvature, arbitrary holonomy/frames) | Theorem OFF: BFT-0/1/2 as an implication via covariant routing + frame-patched right inverse (GP), no (UHL)/(SL-cov)/alignment needed — pending Codex; five local lemmas ARGUED; identification clause, BFT-3/4, boxes open | OFFGLOB55 (Codex running); OFFGLOB2_55 (running) |
-| Node A (single-level measure) | reductions + BL-TILT banked; multiscale convexity REFUTED (LCONV55, Codex review running) — replacement: one-step conditional positivity + per-step small-field cluster expansion + (SDP)^A tilted | LARGE55 (design); per-step N5/N6 not yet assigned |
+| Node A / one RG step (small-field region) | reductions + BL-TILT banked; multiscale convexity REFUTED (LCONV55, Codex review running); needed: one-step conditional positivity + per-step cluster expansion (I1) + main-term coercivity (BFT-coer, I2) | STEP55 (running) |
 | SRC (source-inserted RG; gives CD, OS0) | Prop. B, Lemma V, SA-CF/SA-PC/SA-TC/SA-S, SA-K banked (scoped); open: (A) complex envelopes for the tilted chain incl. large coarse fields, (B) real conditional decay = a decaying polymer representation (same object as BFT-4), (LOC-e), the OS0 extension estimate | not yet assigned (waits on LARGE55, BFT-4) |
 | H_Euc, sphere route | construction, RP (equator + four pole planes), Ward algebra, Proposition T banked; conditional flat-limit argument banked; open: W0, N5 (SEAM55), W1/W3/SRC-E/U-mom (shared with SRC), full-algebra (all-n) invariance, nonvacuity of the moment normalisation | SEAM55 (running) |
 | H_int | comparator mathematics banked (HINT2_55); conditional reduction to (TS-up), (TS-low), (MOM-E); **open bridge: a non-freeness criterion that does not rest on the identification rule (ID♮)** | queued (NONFREE) |
@@ -84,3 +84,9 @@ Line numbers in PROOF.md drift — locate by string.
 18 producer→consumer mismatches and 13 missing leaves were found; ASSEMBLY55 §7-§9 is the current list of open leaves
 and supersedes the table above wherever they differ. Most dangerous: a non-freeness witness on the OS algebra itself
 (NONFREE55), then BFT off 𝒞_glob (OFFGLOB55).
+
+## Large-field architecture (LARGE55, 2026-10-29; Codex review running — a route choice, so it waits for the cross-family verdict)
+Recommendation: keep RLARGE v3's R-operation (returned-cluster renormalisation, forced in d = 4 by Theorem DENSE) and
+HIST-sum's arithmetic; replace v3's HW/PLD/SQ moment-pricing layer by Balaban-type level-by-level pricing (Lemmas MIS,
+COL, KA, PRICE). Would drop 15 of RLARGE §4.2's 38 rows incl. (CLS-min)⇐(REG-min), (AE)⇐(MS-Sob), (SDP)^A, and (KS-N).
+New/remaining inputs I1-I11 (LARGE55 §6.4); (LF-diff) (I10) is needed by UNIV and SRC on every route.

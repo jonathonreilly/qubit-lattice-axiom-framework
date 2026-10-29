@@ -1,0 +1,17 @@
+feasibility eps+eps^3<=1 on grid: True (max grid eps = 341/500)
+N=2: monotone=True eps_lo(beta_up)=629/1000 eps_lo(1.1*beta_up)=61/100 eps_hi(beta_lo)=63/100
+N=3: monotone=True eps_lo(beta_up)=269/500 eps_lo(1.1*beta_up)=13/25 eps_hi(beta_lo)=539/1000
+N=4: monotone=True eps_lo(beta_up)=19/40 eps_lo(1.1*beta_up)=459/1000 eps_hi(beta_lo)=119/250
+N=5: monotone=True eps_lo(beta_up)=429/1000 eps_lo(1.1*beta_up)=83/200 eps_hi(beta_lo)=43/100
+N=6: monotone=True eps_lo(beta_up)=197/500 eps_lo(1.1*beta_up)=19/50 eps_hi(beta_lo)=79/200
+N=8: monotone=True eps_lo(beta_up)=341/1000 eps_lo(1.1*beta_up)=41/125 eps_hi(beta_lo)=171/500
+N=10: monotone=True eps_lo(beta_up)=303/1000 eps_lo(1.1*beta_up)=73/250 eps_hi(beta_lo)=38/125
+P1 (eps_lo(2) in [0.600,0.640]): PASS
+P2 (eps_lo(3) in [0.500,0.560]): PASS
+P3 (monotone for every N): PASS
+P4 (eps_lo non-increasing in N): PASS
+C1 (control: condition FAILS at eps=0.682, N=2, beta_lo): PASS
+C2 (control: condition holds at eps=0.001, N=10, beta_up): PASS
+report: lane eps_1=6.7e-40 satisfies C (with 1.1*beta_up) for all N listed: True
+report: at N=2, eps=629/1000: eps^2*A*beta_up = 20202034664558963491/5062500000000000000 ~ 3.990525 (display only)
+OVERALL: PASS

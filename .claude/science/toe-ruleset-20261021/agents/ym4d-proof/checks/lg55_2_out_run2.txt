@@ -1,0 +1,13 @@
+d=2 L=3: G0=True G1(gauge=0)=True G1(nongauge!=0)=True G2=True H3=True wmax=4/9 R1=2/9 (0.22222) R1c=2/9 (0.22222) R1(b0)=2/9 (0.22222) R2=5/81 (0.06173) omega=-1/4 (-0.25000; predicted -(L^d-1)/(2dL^d)=-2/9) gauge-remainder=7/36 (0.194444) #links(B0)=12
+d=2 L=5: G0=True G1(gauge=0)=True G1(nongauge!=0)=True G2=True H3=True wmax=9/25 R1=4/25 (0.16000) R1c=3/25 (0.12000) R1(b0)=3/25 (0.12000) R2=13/625 (0.02080) omega=-1/4 (-0.25000; predicted -(L^d-1)/(2dL^d)=-6/25) gauge-remainder=11/100 (0.110000) #links(B0)=40
+d=3 L=3: G0=True G1(gauge=0)=True G1(nongauge!=0)=True G2=True H3=True wmax=19/81 R1=2/27 (0.07407) R1c=2/27 (0.07407) R1(b0)=2/27 (0.07407) R2=5/729 (0.00686) omega=-1/6 (-0.16667; predicted -(L^d-1)/(2dL^d)=-13/81) gauge-remainder=11/162 (0.067901) #links(B0)=54
+d=3 L=5: G0=True G1(gauge=0)=True G1(nongauge!=0)=True G2=True H3=True wmax=71/375 R1=4/125 (0.03200) R1c=3/125 (0.02400) R1(b0)=3/125 (0.02400) R2=13/15625 (0.00083) omega=-1/6 (-0.16667; predicted -(L^d-1)/(2dL^d)=-62/375) gauge-remainder=17/750 (0.022667) #links(B0)=300
+d=4 L=3: G0=True G1(gauge=0)=True G1(nongauge!=0)=True G2=True H3=True wmax=4/27 R1=2/81 (0.02469) R1c=2/81 (0.02469) R1(b0)=2/81 (0.02469) R2=5/6561 (0.00076) omega=-1/8 (-0.12500; predicted -(L^d-1)/(2dL^d)=-10/81) gauge-remainder=5/216 (0.023148) #links(B0)=216
+d=4 L=5: G0=True G1(gauge=0)=True G1(nongauge!=0)=True G2=True H3=True wmax=81/625 R1=4/625 (0.00640) R1c=3/625 (0.00480) R1(b0)=3/625 (0.00480) R2=13/390625 (0.00003) omega=-1/8 (-0.12500; predicted -(L^d-1)/(2dL^d)=-78/625) gauge-remainder=23/5000 (0.004600) #links(B0)=2000
+G0: PASS
+G1: PASS
+G2: PASS
+H3: PASS
+H4: PASS
+H5: PASS
+OVERALL (gates G0-G2 and hypotheses H3-H5): PASS

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_universal_gr_sakharov_gnewton_induced_scale_2026_06_17.py
-runner_sha256: 7d3ab3a79cfad0e85f778bdbc76b1bc3f876fa7744ba54f4b3b1c1aaa786dff5
+runner_sha256: 8d1338e212fa1d828fae6c3dfc4e03926a022ab6badfb39147218a0dccd2551d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 1.37
 status: ok
 ----- stdout -----
 === Seeley-DeWitt coefficients of the Dirac operator (induced gravity) ===
@@ -29,10 +29,12 @@ PASS C7 proper-time cutoff integral gives Lambda^2/(4pi)^2, so the EH weight is 
 PASS C8 needed rescaling 16 pi^2 is irrational, so no rational scheme factor (1/2, 2, 4, 8, ...) gives 48 pi^3
   info: N_f = 8, Lambda = 1/a:  l_P/a = sqrt(G/a^2) = 1.0854 (matching line), 13.6396 (former printed value)
 PASS C9 former implied l_P/a is 4 pi times the matching-line value (sqrt of the (4pi)^2 ratio)
-  NOTE: 3 pi is the coefficient of the matching line only.  The 1/2 in det D = (det D^2)^(1/2), the fermion
-        sign, and the cutoff scheme (Lambda = 1/a vs pi/a) are O(1) factors this note does not evaluate;
-        the claim remains the scaling G ~ a^2/N_f, not a value of l_P/a.
-TOTAL: PASS=9 FAIL=0
+  addendum: with the half-factor, 1/(16 pi G) = Lambda**2/(96*pi**2) per Dirac fermion, G = 6*pi/(N_f Lambda^2); N_f = 8, Lambda = 1/a: l_P/a = 1.5350
+PASS C10 half-factor: Gamma_E = -(1/2) log det D^2 gives 1/(16 pi G) = Lambda^2/(96 pi^2) per Dirac fermion, so G = 6 pi/(N_f Lambda^2) = 2 x the supplied 3 pi form
+  NOTE: 3 pi is the coefficient of the supplied matching line; C10 evaluates the 1/2 in det D = (det D^2)^(1/2)
+        (giving 6 pi).  The fermion sign and the cutoff scheme (Lambda = 1/a vs pi/a) are O(1) factors this note
+        does not evaluate; the claim remains the scaling G ~ a^2/N_f, not a value of l_P/a.
+TOTAL: PASS=10 FAIL=0
 
 ----- stderr -----
 

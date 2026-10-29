@@ -28,6 +28,20 @@ withdrawn as conclusions of this packet; this runner does not test them.
 The determinant half-factor, sign, cutoff identification, matter count and
 physical source bridge remain open. No exhaustive route obstruction is claimed.
 
+*Addendum (2026-10-18, restated 2026-10-26), determinant half-factor.* Take the Dirac
+determinant as det D = (det D^2)^(1/2), so the Euclidean effective action is
+Gamma_E = -(1/2) log det D^2 = (1/2) int_{1/Lambda^2}^inf (ds/s) Tr exp(-s D^2) with the
+proper-time cutoff of this note. With tr a_1 = -R/3, its a_1 term is
+-(Lambda^2/(96 pi^2)) int sqrt(g) R per Dirac fermion: half of the
+(4 pi)^-2 (1/3) Lambda^2 weight in the supplied matching line. Matching to the Euclidean
+S_EH = -(1/(16 pi G)) int sqrt(g) R gives 1/(16 pi G) = N_f Lambda^2/(96 pi^2), that is
+`G = 6 pi/(N_f Lambda^2)`, twice the supplied value. The runner checks this as C10 and
+keeps the checks of the supplied 3 pi form. For the illustrative N_f = 8 and Lambda = 1/a of
+the corrigendum below, G/a^2 becomes 6 pi/N_f and l_P/a becomes 1.535 instead of 1.085.
+The fermion sign, the cutoff identification, the matter count and the physical source bridge
+stay open; this addendum evaluates only the half-factor. It was first recorded in PR #9831
+(frozen head `e294c1dc745dad0c95b4c8688efc6f3f0be03613`, campaign block C8, section 11).
+
 ## Corrigendum (2026-09-30)
 
 **In plain words.** This note printed the wrong number in front of its estimate for Newton's

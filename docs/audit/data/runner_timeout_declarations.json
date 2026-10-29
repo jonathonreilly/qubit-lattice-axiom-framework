@@ -75,6 +75,11 @@
       "source_sha256": "fdd8cf3a24d2187156d7283330503ef004fcc75e9ab0fff730a1979d9b2b692f",
       "timeout_sec": 1800
     },
+    "scripts/axiom_first_sm_anomaly_cancellation_complete_check.py": {
+      "reason": "Explicit source-bound review cap for supplied anomaly consistency arithmetic. Existing successful cache has timeout_sec 120; no runner execution, physics certification or audit policy change. A source change invalidates this declaration.",
+      "source_sha256": "7044360ef969178da85e53cdab65e331ca921576c6deadf5f3237454fefd54a0",
+      "timeout_sec": 120
+    },
     "scripts/axiom_first_spectrum_condition_check.py": {
       "reason": "Explicit maximum 1800-second ceiling for this exact source in scoped B11 portability packaging. Conservative bounded execution budget, not a measured runtime, proof endorsement, or permission to run unrelated primaries. Fresh unchanged caches may be reused; failed or timed-out executions remain failures.",
       "source_sha256": "61c4aa453dc582549a7b71747988bf6601e06d646285aa20415dc173fe2de4fa",

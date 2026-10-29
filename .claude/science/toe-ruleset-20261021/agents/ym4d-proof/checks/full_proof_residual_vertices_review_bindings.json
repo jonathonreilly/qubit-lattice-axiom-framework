@@ -207,6 +207,7 @@
   ],
   "scope": "Mechanical exact-byte verification; direct/partial/inherited read scopes remain those of the frozen manifest.",
   "verified_at_head_before_status_edits": "94baab819b7eb80087f7616b4eaad799fa1a2541",
-  "verification_utc": "2026-10-29T15:47:04+00:00",
-  "line_number_scope": "Current line numbers were observed before the subsequent coordinator status-only edits; pinned source/range hashes remain the binding evidence."
+  "line_number_scope": "Current line numbers were observed before the subsequent coordinator status-only edits; pinned source/range hashes remain the binding evidence.",
+  "recorded_utc": "2026-10-29T15:49:53.835360+00:00",
+  "verification_time_provenance": "Bindings were verified in the same coordinator call as the two timestamped15:47:05 replay records. No separate exact timestamp was captured for the binding step; an estimated second has been removed."
 }

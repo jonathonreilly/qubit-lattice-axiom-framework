@@ -890,19 +890,62 @@ L-GNS uses the test action D_M(Λ^−1)^T F(Λ^−1x); this reduces to the
 printed D_E(R) action for real Euclidean rotations. Wightman Hermiticity
 follows from the positive kernel, including its vacuum component.
 
-Quantitatively, ||J||_1=||C||_1=||C^−1||_1=1 in this basis.
-For an orthogonal four-dimensional R, ||R||_1≤2, so
-||D_E(R)||_1≤2^r_max; on n slots the bound is 2^(r_max n).
-For a boost of real unit spatial direction v and real or complex rapidity u,
-the vector generator is K(v)=[[0,v^T],[v,0]], with induced norm
-||K(v)||_1=||v||_1≤sqrt(3). Its exponential power series therefore gives
-||exp(u K(v))||_1≤exp(||v||_1|u|). Induced ℓ¹ norms multiply for tensor
-products and take the maximum over direct sums, so
-||D_M||_1≤exp(r_max ||v||_1|u|) and the n-slot cost is at most
-exp(sqrt(3) r_max n|u|). For a coordinate-axis boost ||v||_1=1, recovering
-the sharper exp(r_max n|u|). Spacetime chain-rule factors are still those
-of L-HILB. Component aggregation costs at most m^n as above.
-These are explicit finite factors and introduce no unbounded label sum. ∎
+[R-fix 2026-10-29 REC-1] **Corrected tensor bounds (binding review item 1).**
+The original paragraph is preserved below as a superseded quotation.
+Its arbitrary-direction boost bound and norm-one-generator justification
+are false; the corrected statement and proof follow the quotation.
+
+> Quantitatively, ||J||_1=||C||_1=||C^−1||_1=1 in this basis.
+> For an orthogonal four-dimensional R, ||R||_1≤2, so
+> ||D_E(R)||_1≤2^r_max; on n slots the bound is 2^(r_max n).
+> A boost of rapidity u has ||D_M||_1≤exp(r_max|u|), hence costs at most
+> exp(r_max n|u|). This bound also holds for complex u: the vector boost
+> generator has induced ℓ¹ norm one, and its exponential power series
+> is bounded by exp(|u|). Spacetime chain-rule factors are
+> still those of L-HILB. Component aggregation costs at most m^n as above.
+> These are explicit finite factors and introduce no unbounded label sum. ∎
+
+In the same fixed Cartesian basis,
+||J||_1=||C||_1=||C^−1||_1=1. For a real R∈O(4), columnwise
+Cauchy–Schwarz gives ||R||_1≤2, hence ||D_E(R)||_1≤2^r_max
+and ||D_E(R)^(⊗n)||_1≤2^(r_max n).
+
+For **every real v∈R³ with ||v||_2=1 and every u∈C** (including real
+rapidity), define Λ(v,u)=exp(uK(v)), where
+
+    K(v) = [[0, v^T], [v, 0]],
+    ||K(v)||_1 = max(||v||_1, |v_1|, |v_2|, |v_3|)
+               = ||v||_1 ≤ sqrt(3).
+
+The time-column sum is ||v||_1; the other column sums are |v_j|.
+For the induced norm on the complexified Cartesian ℓ¹ space, the
+exponential series and submultiplicativity therefore give
+
+    ||Λ(v,u)||_1 ≤ Σ_(k≥0) |u|^k ||K(v)||_1^k/k!
+                = exp(||v||_1 |u|).
+
+Induced ℓ¹ norms multiply under tensor products and take the maximum
+under a block diagonal direct sum. Thus (15.2), for every n≥0 and every
+nonnegative integer r_max bounding the tensor ranks, gives
+
+    ||D_M(Λ(v,u))||_1 ≤ exp(r_max ||v||_1 |u|)
+                     ≤ exp(sqrt(3) r_max |u|),
+    ||D_M(Λ(v,u))^(⊗n)||_1 ≤ exp(r_max n ||v||_1 |u|)
+                           ≤ exp(sqrt(3) r_max n |u|).   (15.3)
+
+The n=0 or r_max=0 case has norm one. For a coordinate-axis direction
+v=±e_j, ||v||_1=1, so the original exponent remains valid in precisely
+that restricted class, for real and complex u. It fails in general:
+for v=(3/5,4/5,0), u=log 2, the time column is
+(5/4,9/20,3/5,0), whose ℓ¹ norm is 23/10>2=exp(|u|).
+This exact rank-one counterexample explains the correction.
+
+The coordinate-axis matrices B_1(±iθ) and their inverses in L-LOCAL
+retain the factor exp(r_max n|θ|). Any arbitrary-direction tensor
+boost estimate instead uses (15.3). Spacetime chain-rule factors
+remain those of L-HILB, and component aggregation still costs at most
+m^n. All these are finite factors; no unbounded label sum or new
+physical premise is introduced. ∎
 
 For symmetric/antisymmetric tensors one may retain the redundant full
 Cartesian components and impose their linear identities; the above
@@ -1058,6 +1101,15 @@ the ordered data, including configurations with equal times but distinct
 positions. No contact extension has been used. The tensor-power version
 uses exactly (15.1) and the tensor RP/covariance rules in L-LABEL. ∎
 
+[R-fix 2026-10-29 REC-1] **Downstream tensor scope (binding review item 1).**
+The tensor-power extension above uses the corrected fixed-basis bounds
+(15.3): exp(r_max n ||v||_1 |u|), or the direction-independent
+exp(sqrt(3) r_max n |u|), for real unit v and real or complex u.
+The coordinate-axis continuation in L-LOCAL keeps its original exponent.
+The phase, reflection and real-rotation bounds were rechecked in §15.
+This repairs the tensor constant only; the scalar conditional theorem
+and the OPEN analytic producer L-CONT retain their stated scope.
+
 **Original E0′ target: CONDITIONAL / NOT CLOSED.** The implication
 E0′,E1,E2,E3,(Re) ⇒ L-CONT is OPEN even for one scalar in this artifact.
 The finite-label bookkeeping does not prove that implication. Calling
@@ -1160,6 +1212,22 @@ This limits procedural promotion and makes no claim against the theorem.
 
 ## Consumers
 
+[R-fix 2026-10-29 REC-4] **Growth and mass-gap reuse conditions retained
+(binding review item 4); producer residues R-SRC and R-MG remain OPEN.**
+The s=11, β=p+3 assertion requires Z=1 and the uniform unconditional
+input (16.1) with b_0=p+2. If that exponent is obtained by the cumulant
+route, the all-order outer-cumulant and conditional-singleton inputs
+stated in §16, including (16.4), must actually be supplied; literal
+SRC-κ conditional estimates alone do not supply them.
+
+MG0 requires the same complete hierarchy and the identified full
+Hamiltonian H_Wightman=H_OS. MG1–MG4 require actual dense-family decay
+with a uniform positive physical rate, common limits, and a nonzero
+excited sector, with the vacuum/density qualifications in L-GAP and
+MASS_GAP_TARGET. No such producer or physical identification is added
+here. R-SRC and R-MG in the Open residue table name these unfinished
+obligations; the conditional reconstruction does not discharge them.
+
 | Consumer | What this file supplies | What it does not discharge |
 |---|---|---|
 | OSLEAF55 REC(a)–(d) | Full re-derivation with correct m-insertion translation weight and adjoint formula | No sharp-time field or unconditional Minkowski field follows from these parts alone |
@@ -1173,15 +1241,41 @@ This limits procedural promotion and makes no claim against the theorem.
 
 ## Open residue
 
+[R-fix 2026-10-29 REC-2] **R-CONT remains OPEN (binding review item 2).**
+Before claiming completed REC or ASSEMBLY55 N9, supply a proof from the
+printed E0′–E3, (Re), S_0=1 hypotheses that constructs the all-gap
+domains for the field products, proves compatibility on overlaps and
+domain exhaustion, and propagates the quantitative growth estimates
+through unbounded insertion degree. The proof must include all spatial
+variables and removal of smearing. The single-cut/bounded-chain result,
+the budgets in (6.2), a renamed analytic hypothesis, or access to a
+literature source does not discharge these steps. No such proof is
+supplied by this correction. This is an open residue already for one
+scalar; §18 remains an honestly conditional theorem.
+
 | ID | Exact missing item | Scope / reopening evidence |
 |---|---|---|
 | R-CONT | Prove from E0′–E3,(Re),S_0=1 the functions, matching and bound (6.1), with all spatial variables and all mixed field words | A complete iterative-domain/estimate proof or a different fully proved construction; currently OPEN already for one scalar |
 | R-TENSOR | For a representation beyond the explicit tensor-power class, provide and verify D_E,J,C,D_M and their reality/covariance relations; prove its version of R-CONT | No classification or “verbatim adaptation” is banked; tensor-power downstream implication only is proved |
+| [R-fix 2026-10-29 REC-3] R-CONSUMERS | Apply binding review item 3 in the external OSLEAF55/ASSEMBLY55 consumers; retain insertion count, separated REC(d), imported/open REC(e)/N9, S_0, (Re), absent E4, proper-orthochronous scope and explicit tensor dictionaries | OPEN source-side follow-through: this task edits only REC_LIB.md and its log; the local qualifications below are retained, not a claim that those consumer files were repaired |
 | R-SRC | Produce the uniform unconditional input of L-GROW, including conditional singletons and all-order averaging if that route is used | External to the abstract reconstruction theorem; the actual Yang–Mills E0′ producer remains open |
 | R-MG | Establish dense-family exponential decay with one positive physical rate, common limits, unique vacuum and a nonzero excited sector in the intended complete field family | External physical estimates; L-GAP is only an implication |
 | R-REVIEW | Independently check the new boundary, kernel, gluing and identification proofs | Author readback is not independent confirmation; no audit status is assigned |
 
 ## Binding fixes to OSLEAF55
+
+[R-fix 2026-10-29 REC-3] **Consumer requirements retained; source repairs
+remain OPEN (binding review item 3, residue R-CONSUMERS).** The existing
+numbered instructions below remain binding. In particular, OSLEAF55's
+translation estimate must retain the insertion count in
+(1+m u²)^(k/2); REC(d) remains a separated Euclidean insertion construction.
+REC(e) and ASSEMBLY55 N9 remain imported/open. Every restatement retains
+S_0=1, (Re), the absence of an assumed E4/unique vacuum, and the proper
+orthochronous Poincaré scope. General tensors require explicit reflection
+and Wick dictionaries; the arbitrary-representation bridge remains
+R-TENSOR, OPEN. These restrictions are preserved in this library.
+OSLEAF55 and ASSEMBLY55 are outside the permitted edits and have not
+been repaired here; recording their obligations does not complete them.
 
 1. In REC(b)'s Peetre estimate replace `(1+u²)^(k/2)` by
    `(1+m u²)^(k/2)` for a test with m insertions. Keep the dependence

@@ -98,3 +98,413 @@ At 2026-10-29T18:00:43.302366+00:00, documentation validation reported:
 - No tracked changes and no unexpected untracked output paths; supplied author/reviewer briefs remain inputs. Final status and artifact receipts are recorded in `checks/sh_validation.json`.
 
 These checks establish provenance, citation transcription and write scope. They do not upgrade the author recommendation to an independent science review.
+
+## [R-fix 2026-10-29 B4] Revision baseline and pre-script criteria
+
+Binding scope: B1–B4 only; no commits. Local methodology and integrator skill match cached origin/main ca2bc7ddf64790da96cd43d42017d000fbfe4808. No fetch or ref mutation was needed for this source-only revision; remote freshness is not claimed. The memo matches the reviewed hash. Current HEAD is a63ade893a7f76b9ee1925170545bf7489ad0f18. Original line locators remain historical; new crosswalk and v2 quote receipts use current files.
+
+The baseline records 2831 files and the original memo/log text for preservation and scope checks. No old script or output was changed.
+
+```json
+{
+  "log_pre_append": {
+    "path": "SOFTHARD_LOG.md",
+    "bytes": 11907,
+    "st_mode": "0o100644",
+    "st_ino": 563524565,
+    "st_mtime_ns": 1793298867016003308,
+    "st_ctime_ns": 1793298867016003308,
+    "sha256": "97a5ea25344c6f16f59d7d2870814bf3dccd968a0301f36076040d7cee3bfea4"
+  },
+  "edits": [
+    {
+      "path": "checks/sh_revision_v2_criteria.md",
+      "bytes": 2951,
+      "st_mode": "0o100644",
+      "st_ino": 563550535,
+      "st_mtime_ns": 1793305213230207879,
+      "st_ctime_ns": 1793305213230207879,
+      "sha256": "a94e0da5d03cb419057aa0f12f1f8cea9c5945bc4d8912f5a6beb9078a8de233"
+    },
+    {
+      "path": "checks/sh_revision_v2_baseline.json",
+      "bytes": 1059968,
+      "st_mode": "0o100644",
+      "st_ino": 563550537,
+      "st_mtime_ns": 1793305213707942503,
+      "st_ctime_ns": 1793305213707942503,
+      "sha256": "6ae5a16984da49c83f769b264e83648452a41a690e7192a6ec9f2b3722cb3702"
+    }
+  ]
+}
+```
+
+## [R-fix 2026-10-29 B4] Corrected literature locators
+
+Edits: L2 section/page range; C2 Remark 3 locator; explicit R8 inherited locator. Both replaced memo paragraphs are retained as quotations. Direct pypdf extraction of the identical-hash Dimock II file confirms pages 28, 29 and 31. Also corrected the new baseline inventory to include pre-existing files with v2 in their names; the original log snapshot remains the pre-edit version. No frozen receipt was rewritten.
+
+```json
+{
+  "utc": "2026-10-29T20:21:22.979307+00:00",
+  "memo_before": {
+    "path": "SOFTHARD.md",
+    "bytes": 83985,
+    "st_mode": "0o100644",
+    "st_ino": 563524564,
+    "st_mtime_ns": 1793298867014635474,
+    "st_ctime_ns": 1793298867014635474,
+    "sha256": "c85bc8244adf6589c31862a3536edfe4aa7b8343c14a54fc19c01bf06d26f1b2"
+  },
+  "memo_after": {
+    "path": "SOFTHARD.md",
+    "bytes": 85513,
+    "st_mode": "0o100644",
+    "st_ino": 563524564,
+    "st_mtime_ns": 1793305282979283725,
+    "st_ctime_ns": 1793305282979283725,
+    "sha256": "14ec85b277025736a46afe22faf271a0faf1706ac38d452821657ae0c8232ce9"
+  },
+  "baseline_before": {
+    "path": "checks/sh_revision_v2_baseline.json",
+    "bytes": 1059968,
+    "st_mode": "0o100644",
+    "st_ino": 563550537,
+    "st_mtime_ns": 1793305213707942503,
+    "st_ctime_ns": 1793305213707942503,
+    "sha256": "6ae5a16984da49c83f769b264e83648452a41a690e7192a6ec9f2b3722cb3702"
+  },
+  "baseline_after": {
+    "path": "checks/sh_revision_v2_baseline.json",
+    "bytes": 1067339,
+    "st_mode": "0o100644",
+    "st_ino": 563550537,
+    "st_mtime_ns": 1793305282977917681,
+    "st_ctime_ns": 1793305282977917681,
+    "sha256": "ea9acb4add76e7f8c7933c50ddc838129896c83e44d52b40c90f58ffc0537c46"
+  },
+  "baseline_files": 2850,
+  "log_pre_append": {
+    "path": "SOFTHARD_LOG.md",
+    "bytes": 13495,
+    "st_mode": "0o100644",
+    "st_ino": 563524565,
+    "st_mtime_ns": 1793305213709046055,
+    "st_ctime_ns": 1793305213709046055,
+    "sha256": "f5c0a67c607b7136bad3d97b804fa8da39e778b43a0ecedbda85c1051cf202a2"
+  }
+}
+```
+
+## [R-fix 2026-10-29 B2] Differential ledger and common/interface register
+
+Edits: replaced the operative §4 classification by a soft-specific ledger (§4.1) and separate common/map/gauge register (§4.2); preserved the complete original §4 as a visible quotation (§4.3). Split C4/C5/C6/C9/C11/C12/C13, assigned returned denominators to CW1, DENSE to CW5, gauge averaging to GI1, and terminal work to CW8. Normalizer/residual cross-references are not additive costs. No source theorem or recommendation changed.
+
+```json
+{
+  "utc": "2026-10-29T20:22:47.486337+00:00",
+  "memo_before": {
+    "path": "SOFTHARD.md",
+    "bytes": 85513,
+    "st_mode": "0o100644",
+    "st_ino": 563524564,
+    "st_mtime_ns": 1793305282979283725,
+    "st_ctime_ns": 1793305282979283725,
+    "sha256": "14ec85b277025736a46afe22faf271a0faf1706ac38d452821657ae0c8232ce9"
+  },
+  "memo_after": {
+    "path": "SOFTHARD.md",
+    "bytes": 93279,
+    "st_mode": "0o100644",
+    "st_ino": 563524564,
+    "st_mtime_ns": 1793305367486161151,
+    "st_ctime_ns": 1793305367486161151,
+    "sha256": "83bde5aa880a32574de3a53f8e126d917b54862b0524944c6993223a27625f63"
+  },
+  "log_pre_append": {
+    "path": "SOFTHARD_LOG.md",
+    "bytes": 15540,
+    "st_mode": "0o100644",
+    "st_ino": 563524565,
+    "st_mtime_ns": 1793305282980276654,
+    "st_ctime_ns": 1793305282980276654,
+    "sha256": "d268b604e314e186ce3b5aa1da12a725ea1619d0af90c23426cbe8a3bf32b992"
+  }
+}
+```
+
+## [R-fix 2026-10-29 B1] Result inventory repair
+
+Edits: replaced both completeness assertions by a finite, source-identified coverage claim; narrowed the live G28/TSE row and quoted its original; added I1–I6 (named NQ-1/T-UNIF/N1-15 theorem and imports, Node A/RLARGE, residual/BL-TILT, off-global including later review qualifications, TSE application split, and every science bullet in the review-scoped S26 registry); replaced the final switch-loss paragraph while quoting its original. The existing kernel scan supplies no completeness credit. Statuses remain quoted candidate dispositions. Later producer work is explicitly outside this binding-fix revision.
+
+```json
+{
+  "utc": "2026-10-29T20:25:24.051343+00:00",
+  "memo_before": {
+    "path": "SOFTHARD.md",
+    "bytes": 93279,
+    "st_mode": "0o100644",
+    "st_ino": 563524564,
+    "st_mtime_ns": 1793305367486161151,
+    "st_ctime_ns": 1793305367486161151,
+    "sha256": "83bde5aa880a32574de3a53f8e126d917b54862b0524944c6993223a27625f63"
+  },
+  "memo_after": {
+    "path": "SOFTHARD.md",
+    "bytes": 109580,
+    "st_mode": "0o100644",
+    "st_ino": 563524564,
+    "st_mtime_ns": 1793305524051287600,
+    "st_ctime_ns": 1793305524051287600,
+    "sha256": "be70c97ad04ef4d28dc09bc8aea6a30fa3eab9a8e7726fb4e5d3fd08df427893"
+  },
+  "log_pre_append": {
+    "path": "SOFTHARD_LOG.md",
+    "bytes": 16975,
+    "st_mode": "0o100644",
+    "st_ino": 563524565,
+    "st_mtime_ns": 1793305367486836756,
+    "st_ctime_ns": 1793305367486836756,
+    "sha256": "b730988975c3c48437ddb95735cd7aa1d2362d15da1acbc71ad81cfa9741e69e"
+  }
+}
+```
+
+## [R-fix 2026-10-29 B3] Falsifiable OPEN return contract
+
+Edits: quoted and replaced both programme-level decision questions; added §8.1 HRT-a–e; cross-referenced the H2 collar obligation. The new statement specifies a quantified admissible map class, history/data domains, exact quotient/coarea measure and full ratio, original-source polydisc and marked polymer norm, exponential return budget within the g^6 extraction allowance, an explicit reproduced polymer class, own-sequence flow and history estimates, and distinct activity/extraction collars. Construction and all estimates are OPEN outputs. No proof or class-nonemptiness claim is made. Sources read for the consumer match: HIST §7.1, RLARGE §0/§1.2, FLOW §9, RECOVERY_CLUSTER §1/§4/§5, SOURCE_LOCAL_RETURN_CONTINUATION §1/§2, SRCCD §3.2 and E12, and SF A4.
+
+```json
+{
+  "utc": "2026-10-29T20:29:22.237447+00:00",
+  "memo_before": {
+    "path": "SOFTHARD.md",
+    "bytes": 109580,
+    "st_mode": "0o100644",
+    "st_ino": 563524564,
+    "st_mtime_ns": 1793305524051287600,
+    "st_ctime_ns": 1793305524051287600,
+    "sha256": "be70c97ad04ef4d28dc09bc8aea6a30fa3eab9a8e7726fb4e5d3fd08df427893"
+  },
+  "memo_after": {
+    "path": "SOFTHARD.md",
+    "bytes": 124445,
+    "st_mode": "0o100644",
+    "st_ino": 563524564,
+    "st_mtime_ns": 1793305762237407214,
+    "st_ctime_ns": 1793305762237407214,
+    "sha256": "2916ddd518e150ba04e51cb5399ed077261dcf19fab7672779b05c475c9cd0fb"
+  },
+  "log_pre_append": {
+    "path": "SOFTHARD_LOG.md",
+    "bytes": 18563,
+    "st_mode": "0o100644",
+    "st_ino": 563524565,
+    "st_mtime_ns": 1793305524052009162,
+    "st_ctime_ns": 1793305524052009162,
+    "sha256": "057ddbf9a5bba7871908972bff1a2367c8f6bff3761c15dc44292882177efce4"
+  }
+}
+```
+
+## [R-fix 2026-10-29 B3] Marked norm made unambiguous; [R-fix 2026-10-29 B1] / [R-fix 2026-10-29 B4] completion boundary
+
+Edits: put the volume-fraction divisor inside the marked rooted sum and specify zero-weight behavior, preserving the intermediate wording; quote and supersede the original delivered-scope/limitations paragraphs to record the actual binding review and scoped inventory. Name the two missing PDF quote checks and six missing external-PDF hashes as open B4 residue. A filename search over /Users/jonreilly/Projects and /private/tmp found no supplied axial/multiscale or six-original PDF copies; no sandbox denial was encountered. Four moved Dimock PDFs are locally available. No completeness claim is made for the missing sources.
+
+```json
+{
+  "utc": "2026-10-29T20:31:27.135889+00:00",
+  "memo_before": {
+    "path": "SOFTHARD.md",
+    "bytes": 124445,
+    "st_mode": "0o100644",
+    "st_ino": 563524564,
+    "st_mtime_ns": 1793305762237407214,
+    "st_ctime_ns": 1793305762237407214,
+    "sha256": "2916ddd518e150ba04e51cb5399ed077261dcf19fab7672779b05c475c9cd0fb"
+  },
+  "memo_after": {
+    "path": "SOFTHARD.md",
+    "bytes": 126619,
+    "st_mode": "0o100644",
+    "st_ino": 563524564,
+    "st_mtime_ns": 1793305887135622124,
+    "st_ctime_ns": 1793305887135622124,
+    "sha256": "6f8a3301a0f8af9187a1e941ab98aa7f808b69125fef83abf05faf9bb8a8c8c6"
+  },
+  "log_pre_append": {
+    "path": "SOFTHARD_LOG.md",
+    "bytes": 20319,
+    "st_mode": "0o100644",
+    "st_ino": 563524565,
+    "st_mtime_ns": 1793305762238288314,
+    "st_ctime_ns": 1793305762238288314,
+    "sha256": "908f1685e1ecfccc8e0cc1cb3a30b49e2d9c23ece273b0a78134cd90777b6df9"
+  }
+}
+```
+
+## [R-fix 2026-10-29 B4] New checker, before execution
+
+Created the v2 documentation checker after its criteria. It preserves every frozen script/output and will execute once. It records historical source drift separately, checks the finite registry index without granting semantic completeness, and reports unavailable PDFs as residue. It refuses to overwrite a v2 result. No external source download or numerical physics run is part of this checker.
+
+```json
+{
+  "utc": "2026-10-29T20:33:22.172214+00:00",
+  "checker": {
+    "path": "checks/sh_revision_v2_check.py",
+    "bytes": 14431,
+    "st_mode": "0o100644",
+    "st_ino": 563757295,
+    "st_mtime_ns": 1793306002115232981,
+    "st_ctime_ns": 1793306002115232981,
+    "sha256": "bfe18912bb57094778a26ba37e96853bfbcbef65c960e6743a238768c11e315a"
+  },
+  "criteria": {
+    "path": "checks/sh_revision_v2_criteria.md",
+    "bytes": 2951,
+    "st_mode": "0o100644",
+    "st_ino": 563550535,
+    "st_mtime_ns": 1793305213230207879,
+    "st_ctime_ns": 1793305213230207879,
+    "sha256": "a94e0da5d03cb419057aa0f12f1f8cea9c5945bc4d8912f5a6beb9078a8de233"
+  },
+  "log_pre_append": {
+    "path": "SOFTHARD_LOG.md",
+    "bytes": 21991,
+    "st_mode": "0o100644",
+    "st_ino": 563524565,
+    "st_mtime_ns": 1793305887136654302,
+    "st_ctime_ns": 1793305887136654302,
+    "sha256": "d5e90003d1a61990b8eb585483f1e9a8be443584be426ccdf176038c03bd8b94"
+  }
+}
+```
+
+## [R-fix 2026-10-29 B4] Single v2 checker execution
+
+The new checker ran once, sequentially, with all recorded thread controls equal to 1 and no pools. Result: PARTIAL_UNAVAILABLE_INPUTS. This is an author documentation check, not a science verdict.
+
+```json
+{
+  "results_file_post_write": {
+    "path": "checks/sh_revision_v2_results.json",
+    "bytes": 1119024,
+    "st_mode": "0o100644",
+    "st_ino": 563757414,
+    "st_mtime_ns": 1793306116797845491,
+    "st_ctime_ns": 1793306116797845491,
+    "sha256": "bd0e1ebb125ceab2915ec1ea3b48a19df8ccafcfa3a96d5a40bba6b636607412"
+  },
+  "memo_checked": {
+    "path": "SOFTHARD.md",
+    "bytes": 126619,
+    "st_mode": "0o100644",
+    "st_ino": 563524564,
+    "st_mtime_ns": 1793305887135622124,
+    "st_ctime_ns": 1793305887135622124,
+    "sha256": "6f8a3301a0f8af9187a1e941ab98aa7f808b69125fef83abf05faf9bb8a8c8c6"
+  },
+  "log_pre_append": {
+    "path": "SOFTHARD_LOG.md",
+    "bytes": 23397,
+    "st_mode": "0o100644",
+    "st_ino": 563524565,
+    "st_mtime_ns": 1793306002173296998,
+    "st_ctime_ns": 1793306002173296998,
+    "sha256": "959c3d6b823522e57d24d49282fe7e16b01fe7d29b13c69e54ea0b6a17248f46"
+  },
+  "peak_rss_bytes": 79740928,
+  "quote_counts": {
+    "MATCH": 32,
+    "UNAVAILABLE": 2
+  },
+  "errors": [],
+  "open_residue": [
+    {
+      "kind": "hash_input_unavailable",
+      "path": "/Users/jonBridger/ym4d-lanes/arxiv/review_residual_full_colour_literature_adams_lee.pdf",
+      "group": "external_pdf"
+    },
+    {
+      "kind": "hash_input_unavailable",
+      "path": "/Users/jonBridger/ym4d-lanes/arxiv/review_residual_full_colour_literature_bgm.pdf",
+      "group": "external_pdf"
+    },
+    {
+      "kind": "hash_input_unavailable",
+      "path": "/Users/jonBridger/ym4d-lanes/arxiv/review_residual_full_colour_literature_dimock_axial.pdf",
+      "group": "external_pdf"
+    },
+    {
+      "kind": "hash_input_unavailable",
+      "path": "/Users/jonBridger/ym4d-lanes/arxiv/review_residual_full_colour_literature_dimock_multiscale.pdf",
+      "group": "external_pdf"
+    },
+    {
+      "kind": "hash_input_unavailable",
+      "path": "/Users/jonBridger/ym4d-lanes/arxiv/review_residual_full_colour_literature_luscher_weisz.pdf",
+      "group": "external_pdf"
+    },
+    {
+      "kind": "hash_input_unavailable",
+      "path": "/Users/jonBridger/ym4d-lanes/arxiv/review_residual_full_colour_literature_nielsen.pdf",
+      "group": "external_pdf"
+    },
+    {
+      "kind": "quote_source_unavailable",
+      "path": "/Users/jonBridger/ym4d-lanes/arxiv/review_residual_full_colour_literature_dimock_axial.pdf",
+      "quote": "the Landau gauge at α = 0"
+    },
+    {
+      "kind": "quote_source_unavailable",
+      "path": "/Users/jonBridger/ym4d-lanes/arxiv/review_residual_full_colour_literature_dimock_multiscale.pdf",
+      "quote": "abelian versions of non-abelian results"
+    }
+  ]
+}
+```
+
+## Current revision checkpoint — [R-fix 2026-10-29 B1] [R-fix 2026-10-29 B2] [R-fix 2026-10-29 B3] [R-fix 2026-10-29 B4]
+
+Author dispositions: B1 applied (review-scoped named-result crosswalk); B2 applied (differential cost versus common/interface registers); B3 statement supplied, with its map construction and every scientific estimate explicitly OPEN; B4 locator applied, documentation reproduction PARTIAL because external inputs are unavailable. The binding review's HOLD is not replaced by a self-issued approval. KEEP-SOFT and decision 4 are unchanged.
+
+The one checker execution returned exit 2 for PARTIAL_UNAVAILABLE_INPUTS, with no documentation errors: 32 quotation matches, 2 unavailable quotations, 6 unavailable original external PDF hashes, the corrected Dimock II locators matched, all 51 literal Markdown file paths exist, and all 44 science bullets in the defined registry interval have assignments. The index-only parser also collected the P4 comparison reference as an extraneous number 4; this is not an additional registry result and does not certify semantics. The unchanged prefix, original nonempty memo lines and original log prefix were all verified. No changes occurred to the 2,850 baseline files except SOFTHARD.md and this log. The four new outputs are the v2 criteria, baseline, checker and result JSON; the four PDFs in lit_local predated this task. No frozen checker or output was overwritten.
+
+**Actual sandbox limitation:** the launch printed `nice: setpriority: Operation not permitted`. The optional priority adjustment was refused; Python nevertheless executed once. The result reports BLAS=1 and every specified thread variable=1, no pools, and peak RSS 79,740,928 bytes (<2,000,000,000). No claim is made that the requested nice priority was attained. No second run was made.
+
+Historical source drift is seven manifest entries covering five files: PROOF.md, HANDOFF.md, APPROACH_REGISTRY.md, SESSION25_RESULTS.md and SPHERE55.md. All were already different at this task's baseline and remained unchanged. Read-only git objects at 4f04b662f4d72d7ef269f6d9693ae9ff6424acf9 reproduce the frozen PROOF/HANDOFF/SPHERE hashes. Their diff locates the PROOF/HANDOFF changes in newer producer checkpoints (outside this bounded result-status update); the old S26 registry is unchanged apart from its offset. SPHERE55's appended coordinate-RP author erratum was read completely: it clarifies the coordinate-plane input, prism proof and position-dependent positive reflection-paired weight, leaves its independent review separate and adds no seam/continuum closure. The revision gives that addition no new theorem credit. APPROACH_REGISTRY and SESSION25_RESULTS are inventory locators, not proof premises for these repairs.
+
+Recovery/next decision: read this checkpoint and the exact v2 hashes before continuing. The only unfinished binding verification is B4's unavailable-source residue; restore the six original PDFs by their frozen SHA-256 identities before claiming those checks complete. HRT and the new portability assignments still need any independently requested scientific review; this task launches none. Full RG/source/continuum and physical-gap obligations remain open. No commit, ref update, push, PR, audit write or editable prompt change was made.
+
+```json
+{
+  "utc": "2026-10-29T20:37:27.988470+00:00",
+  "memo_final": {
+    "path": "SOFTHARD.md",
+    "bytes": 126619,
+    "st_mode": "0o100644",
+    "st_ino": 563524564,
+    "st_mtime_ns": 1793305887135622124,
+    "st_ctime_ns": 1793305887135622124,
+    "sha256": "6f8a3301a0f8af9187a1e941ab98aa7f808b69125fef83abf05faf9bb8a8c8c6"
+  },
+  "result_final": {
+    "path": "checks/sh_revision_v2_results.json",
+    "bytes": 1119024,
+    "st_mode": "0o100644",
+    "st_ino": 563757414,
+    "st_mtime_ns": 1793306116797845491,
+    "st_ctime_ns": 1793306116797845491,
+    "sha256": "bd0e1ebb125ceab2915ec1ea3b48a19df8ccafcfa3a96d5a40bba6b636607412"
+  },
+  "log_pre_append": {
+    "path": "SOFTHARD_LOG.md",
+    "bytes": 26263,
+    "st_mode": "0o100644",
+    "st_ino": 563524565,
+    "st_mtime_ns": 1793306116799297241,
+    "st_ctime_ns": 1793306116799297241,
+    "sha256": "9b9c6826535e54a559f62b9918411e7cbe6b99827cd172e40464fccb3f31a3c9"
+  }
+}
+```

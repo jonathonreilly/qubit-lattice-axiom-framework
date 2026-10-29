@@ -1,13 +1,12 @@
 # REC-CONT — quantitative continuation work, 2026-10-29
 
-**Target status: OPEN. This is a partial proof, not the requested completed
-E0′ ⇒ L-CONT theorem.** The new results below are a bounded tube-extension
-lemma, a local positive-kernel lifting lemma, a conditional finite-stage
-continuation with an explicit factorial majorant, and a conditional passage
-from polynomially bounded time continuation to the full forward tube.
-Production of the analytic seed from E0′ and quantitative exhaustion remain
-unproved. In particular, the auxiliary constants `D,K,gamma,t` below have
-**not** been derived from OSLEAF55's `alpha,beta,s`.
+**Target status: PROVEN, with fresh independent source review: LAND.**
+The proof derives continuous ordered kernels from the flat-test E0′ bound,
+constructs the analytic seed with explicit hierarchy-wide constants, proves
+quantitative exhaustion of the time domains, and applies the spatial tube
+and boundary construction. The input is E0′–E3, reality and S_0=1, with the
+specified finite Cartesian tensor dictionary. No physical existence or
+mass-gap claim is made. Independent review is recorded in the lane log.
 
 PROVEN denotes an author proof of precisely the printed statement, including
 its hypotheses. ARGUED denotes an unfinished route. OPEN denotes a missing
@@ -18,9 +17,9 @@ The fresh review and its source identities are recorded in
 ## 1. Exact target and inputs
 
 The following is the exact statement from [REC_LIB.md §6](REC_LIB.md),
-including its status and its qualification on output exponents:
+including its current status and its qualification on output exponents:
 
-> **Status: OPEN from E0′–E3. Statement to be proved.** For each n and
+> **Status: PROVEN from E0′–E3, (Re), S_0=1; see REC_CONT.md.** For each n and
 > ordered label word a, there are holomorphic functions 𝒲_n^a on
 >
 >     𝒯_n={z∈C^(4n): Im(z_(j+1)−z_j)∈V_+, 1≤j<n},
@@ -161,6 +160,191 @@ differences of the kernel. Existence and convergence of the corresponding
 mixed derivatives make these vectors Cauchy. Repeating proves every finite
 derivative. No delta function is treated as a flat Schwartz test. ∎
 
+### 3.1 RC-REAL — removing smearing with finite distribution order
+
+**PROVEN from the stated inputs.** On every strictly time-ordered real
+chart the distributions S_n, n≥2, have jointly continuous kernels. For
+`g_i=t_(i+1)-t_i>0`, `δ=min g_i`, and spatial gaps ξ_i, put
+
+    R=1+Σg_i+Σ|ξ_i|,   L_0=R+δ^(-1).
+
+Uniformly in n and component words, one has
+
+    |S_n(X)|≤D_0 K_0^n(n!)^(gamma_0) L_0^(t_0 n),
+    D_0=max(1,alpha),  gamma_0=beta+24s+100,
+    t_0=12s+36.                                       (3.2)
+
+Here are explicit, deliberately generous constants. Define
+
+    b_s=2s+10,  c_s=4s+15,
+    K_1=2^(r_max+beta+7s+4) 10^s c_s^(2s) 5^(s+3)
+                                                exp(4s+3),
+    K_0=K_1 2^(8s+39)(8c_s)^(c_s)(48b_s)^(b_s)
+                            128^(2s+c_s) exp(9s+40).   (3.3)
+
+No unspecified degree-dependent constant enters this statement.
+
+**Finite-order cutoff.** For any integer M≥1 let u_M be the uniform
+probability density on `[-1/(8M),1/(8M)]`, and let η be any fixed smooth
+nonnegative probability density supported in `[-1/8,1/8]`. Set
+
+    c_M=1_[-3/4,3/4] * u_M^(*M) * η.
+
+Then c_M is smooth, takes values in [0,1], equals one on [-1/2,1/2],
+and is supported in [-1,1]. For q≤M, differentiate q distinct uniform
+factors. Each derivative has total variation 8M, so
+
+    ||c_M^(q)||_∞≤(8M)^q.                              (3.4)
+
+No derivatives of η occur in this bound. Only the finitely many orders
+specified below are used; an all-order analytic cutoff is not assumed.
+
+**Local chart and directions.** Translate the reference configuration
+so X_1=0. Define
+
+    δ_0=min(1,δ),  ell=δ_0/128,  d=4n,
+    m=(2s+4)n+2,  h=m+d+1,  M=m+h,
+    ε=δ_0/(4R).                                       (3.5)
+
+Let Q be the closed coordinate cube about X of half-side ell. All its
+compact smooth tests are flat at the coincidence planes. Use the unit
+directions e_0 and
+`e_a=(e_0+ε e_a^sp)/sqrt(1+ε²)`, a=1,2,3. Their projections of each
+adjacent reference gap are at least δ_0/2: the numerator is at least
+`δ_0-εR=3δ_0/4`, and ε≤1/4. Let v_(j,a) translate the last n-j
+points in direction e_a, for j=0,...,n-1.
+
+**The cut estimate as a distribution estimate.** For every smooth φ
+supported in Q, every j≥1, and every integer q≥0,
+
+    |(D_(v_(j,a))^q S_n)(φ)|
+      ≤A_n q!(4/δ_0)^q R^(2sn)ell^(-2sn)||φ||_(C^m),
+    A_n=alpha ((2n)!)^(beta/2)2^(r_max n+sn+d)
+                     10^(sn)n^(sn)(8M)^(2sn)(d+1)^(m/2)
+      ≤alpha K_1^n(n!)^(beta+4s+3).                    (3.6)
+
+The C^m norm here is the maximum of all derivatives of total order at
+most m, without a weight. To prove the estimate, use the product cutoff
+`b(Y)=Π_(ν=1)^d c_M((Y_ν-X_ν)/(2ell))`. It equals one on Q and
+is supported in the cube of half-side 2ell. With the unnormalized Fourier
+transform in this paragraph,
+
+    φ(Y)=b(Y)(2π)^(-d)∫φhat(p)exp(ip·Y)dp.             (3.7)
+
+Every integrand factorizes across cut j. Rotate the two block tests so
+e_a becomes the time axis. Original-coordinate cutoffs are rotated with
+the tests; no product support is presumed after rotation. Each point's
+support displacement has Euclidean norm at most 4ell. Place the
+reflection plane at `a_*=e_a·X_j+δ_0/8` and take semigroup parameter
+`τ=δ_0/4`. The left block, after translation by -a_*, reflection and
+reversal, has positive ordered times; the right block, translated by
+`-a_*-τ`, does also. Their nearest support times are at least
+`3δ_0/32`. Internal projected gaps remain positive. RC-CUT therefore
+applies at z=τ, with derivative cost q!(4/δ_0)^q.
+
+Every transformed point has Euclidean norm at most 3R. For a block of
+r points the weight in its 2sr seminorm is bounded by
+`(10n)^(sr)R^(2sr)`. A row of an orthogonal four-dimensional matrix has
+ℓ¹ norm at most 2. Thus the chain rule, (3.4) and Leibniz's rule give
+the block estimate
+
+    ||F_p||_(2sr),1≤2^(r_max r)(10n)^(sr)R^(2sr)
+                      (8M/ell)^(2sr)(1+|p_block|)^(2sr). (3.8)
+
+The tensor factor is the induced component sum norm of the rotation;
+reflection and reversal cost one. The two block estimates multiply.
+Their factorials are bounded by `((2n)!)^(beta/2)`. To integrate them,
+use the integer m/2 and
+
+    |φhat(p)|≤(1+|p|²)^(-m/2)
+                    (2ell)^d(d+1)^(m/2)||φ||_(C^m),
+    (1+|p|)^(2sn)≤2^(sn)(1+|p|²)^(sn),
+    m/2-sn=d/2+1,
+    ∫(1+|p|²)^(-d/2-1)dp=vol(B_d)≤2^d.                (3.9)
+
+The first inequality follows by expanding (1-Δ)^(m/2); its absolute
+coefficient sum is (d+1)^(m/2). Dropping `(2ell)^d≤1` and
+`(2π)^(-d)≤1` gives the displayed A_n. Also
+`M≤c_s n`, `d+1≤5n`, and
+`sn+2sn+m/2=(4s+2)n+1≤(4s+3)n`. Apply
+`((2n)!)^(beta/2)≤2^(beta n)(n!)^beta` and `n^n≤e^n n!` to
+obtain the final inequality in (3.6) with exactly (3.3).
+
+For real small cut displacement, (3.7) gives the translated distribution.
+The integrable block bound and RC-CUT justify differentiating its
+holomorphic integral. Its q-th derivative is the distribution derivative
+in (3.6); no higher test seminorm depending on q is introduced. For j=0,
+common-translation invariance makes every positive-order derivative of
+S_n zero. The q=0 estimate uses any genuine cut, so (3.6) is valid for
+all directions needed below.
+
+**Continuous representative by Fourier inversion.** Set
+`χ(Y)=Π_ν c_M((Y_ν-X_ν)/ell)` and `T=χS_n`. This is a compactly
+supported distribution on full R^d, since multiplication by χ takes
+every test into the strictly ordered flat space. It agrees with S_n
+near X. The product rule for distributions, followed by (3.6), gives
+
+    |(v_(j,a)·p)^h That(p)|,
+    |That(p)| ≤ B_n R^(2sn)ell^(-(2sn+m+h))(1+|p|)^m,
+    B_n=A_n 2^(m+h)(2n)^h(8M)^(m+h)h!.                (3.10)
+
+Both quantities on the left have the same bound. Indeed `||v||_1≤2n`
+and
+
+    ||(D_v^(h-q)χ)exp(-ip·Y)||_(C^m)
+      ≤2^m(1+|p|)^m(2n)^(h-q)(8M/ell)^(m+h-q).
+
+Only derivatives through m+h=M occur. In the sum over q, use q!≤h!,
+the binomial sum 2^h, and `(4/δ_0)ell=1/32` to get (3.10).
+The undifferentiated estimate follows from q=0 and the same enlarged
+constant. Compact support permits the Fourier pairings; equivalently
+insert a test equal to one near that support.
+
+These directions span every real coordinate with the quantitative bound
+
+    max_(0≤j<n,0≤a≤3)|v_(j,a)·p|≥ε|p|/(12sqrt(n)).     (3.11)
+
+For a proof let z_j=Σ_(i>j)p_i and let A be the maximum on the left.
+Then `|z_j^0|≤A` and `|z_j^a|≤3A/ε`, hence `|z_j|≤6A/ε`.
+With z_n=0, `p_i=z_(i-1)-z_i` proves (3.11). The common-translation
+directions j=0 are essential here, including for χS_n.
+
+Combining (3.10),(3.11), separately for |p|≤1 and |p|≥1, gives
+
+    |That(p)|≤B_n R^(2sn)ell^(-(2sn+m+h))
+             (24sqrt(n)/ε)^h(1+|p|)^(-d-1).            (3.12)
+
+Its integral is finite, since
+`∫(1+|p|)^(-d-1)dp=vol(B_d)≤2^d`. Fourier inversion represents
+T by a continuous function. This proves a continuous local representative
+of S_n, and the representatives agree on overlaps as distributions,
+hence pointwise. This is a direct removal of distribution smearing.
+
+**Complete hierarchy budget.** Inserting ell and ε in (3.12) and
+bounding the inverse-Fourier prefactor by one gives
+
+    |S_n(X)|≤A_n 2^(m+2h+d)(2n)^h(8M)^M h!
+        48^h n^(h/2)128^(2sn+M)
+        R^(2sn+h)δ_0^(-(2sn+m+2h)).                   (3.13)
+
+Here `m≤(2s+5)n`, `h≤b_s n`, and `M≤c_s n` for n≥2.
+Beyond A_n, all powers of n in (3.13) are bounded by
+`n^((2b_s+c_s+b_s/2)n)=n^((9s+40)n)`; use `h!≤(b_s n)^(b_s n)`.
+Their conversion by `n^n≤e^n n!`, and the remaining displayed
+numerical factors, are bounded by `(K_0/K_1)^n(n!)^(9s+40)`
+with (3.3). The resulting factorial exponent is β+13s+43, no larger
+than gamma_0. Finally R≤L_0, δ_0^(-1)≤L_0, and
+
+    4sn+m+3h=(12s+28)n+11≤(12s+36)n.
+
+This proves (3.2). Every derivative order used is linear in n; every
+power of n is O(n) with coefficient fixed by s. This is where E0′,
+rather than unrelated fixed-degree distribution bounds, supplies the
+hierarchy-wide factorial and linear-power budget. Translation invariance
+holds pointwise after continuity, and multiplication by C^(⊗n) preserves
+the component bounds. RC-POINT now gives actual point-vector limits for
+all mixed reflected kernels, with their original distributional values. ∎
+
 ## 4. RC-TUBE — bounded tube convexification, rebuilt
 
 **PROVEN.** Let U be a bounded connected open subset of R^d, and let f be
@@ -214,6 +398,44 @@ If P is nonvanishing and holomorphic on the entire convex tube and
 back. The majorant P must actually be supplied; a pointwise weight with
 absolute values cannot simply be called holomorphic.
 
+### 4.1 RC-CROSS — starting with one complex time at a time
+
+**PROVEN.** Fix a>0. Suppose, for each j=1,...,k, a continuous function
+f_j is defined on `R^k+i(-a,a)e_j`, is holomorphic in its j-th variable,
+and satisfies `|f_j|≤M`. Suppose all these functions restrict to the same
+continuous f_0 on R^k. Then they have a unique joint holomorphic extension
+to
+
+    {u∈C^k: Σ_j |Im u_j|<a},                            (4.5)
+
+with the same bound M. No open transverse neighborhood of the axes is
+assumed. This is a bounded cross version of the preceding Fourier proof.
+
+**Proof.** Multiply each f_j by `exp(-εΣu_i²)`, ε>0, obtaining g_j.
+For every axial y the horizontal slice is in L²(R^k), with the common
+bound `M exp(εa²)(π/(2ε))^(k/4)`. On a compact substrip, the
+one-variable Cauchy estimate and the Gaussian give differentiation of
+these slices as distributions. Their Fourier transforms satisfy
+
+    ĝ_(te_j)(p)=exp(-tp_j) ĝ_0(p),   |t|<a.              (4.6)
+
+To justify the equality, test on compact momentum supports and solve
+`∂_t ĝ=-p_j ĝ`; the common initial slice fixes the integration constant.
+No derivative in a transverse complex variable is used here.
+
+The convex hull of the axial intervals is the open l¹ ball in (4.5).
+For any finite convex representation of a point in this ball, apply
+Hölder exactly as in (4.3), with the common ĝ_0. This gives the same L²
+bound for its exponentially weighted transform. Summing at the vertices
+of a small box around the point gives (4.4), hence absolutely convergent
+holomorphic Fourier inversion. At every axial slice that inverse equals
+g_j almost everywhere by L² uniqueness, and everywhere by continuity.
+Multiplication by `exp(εΣu_i²)` therefore extends all f_j. The identity
+theorem on the common real slice proves uniqueness and independence of ε.
+Finally apply this existence construction to every `1/(f_j-c)`, |c|>M.
+Their extensions obey `(F-c)H=1` by uniqueness from the real slice.
+As in RC-TUBE, F cannot take any value of modulus greater than M. ∎
+
 ## 5. RC-LIFT — Hilbert vectors from a local analytic kernel
 
 **PROVEN conditional lemma.** Suppose real-parameter Hilbert vectors
@@ -249,8 +471,9 @@ of a number called a continued norm.
 
 ## 6. RC-STAGE — a precisely conditional domain construction
 
-**PROVEN conditional construction.** The seed hypothesis in this section
-is an additional analytic input, presently OPEN from (1.2).
+**PROVEN construction from SEED.** The following domain argument is stated
+with its analytic input explicit. Sections 3.1 and 6.1 derive that input
+from (1.2), RP and Euclidean covariance, with constants (3.3),(6.9).
 
 Use n fields and k=n-1 relative gaps. Let `a=π/2`. For n≥2 define
 
@@ -293,9 +516,9 @@ restricted Schwinger distributions, and satisfying
 
 Compatibility includes different baselines on their overlaps. The
 real Euclidean reflected kernels are those of the original mixed OS
-form. This last clause is an identification, not ordinary same-half
-Euclidean positivity. SEED does not follow here from “tempered and real
-analytic”; both its analyticity and its quantitative estimate are missing.
+form. This clause specifies the identification with the original reflected
+positive form. Section 6.1 proves all these clauses from the continuous
+kernel estimate (3.2); no ordinary same-half positivity is assumed.
 
 Under SEED, F_n extends to all the domains
 
@@ -373,6 +596,64 @@ summed in these bounds; with the sum norm, finite mixed words share the
 same estimates. A maximum-component test norm would introduce the separate
 factor `m^n`, where m is the total number of components.
 
+### 6.1 Producing SEED from a quantitative continuous real kernel
+
+**PROVEN implication.** Suppose the ordered real distributions have
+continuous kernels satisfying, uniformly in component words and n≥2,
+
+    |S_n(X)|≤D_0 K_0^n(n!)^(gamma_0)
+       [1+Σg_i+(min g_i)^(-1)+Σ|ξ_i|]^(t_0 n),          (6.8)
+
+where g_i>0 are their real time gaps, D_0,K_0≥1, gamma_0≥0 and
+t_0 is a nonnegative integer. Then SEED holds with
+
+    D=D_0,  gamma=gamma_0,  t=t_0,
+    K=K_0 2^(gamma_0)4^(t_0).                          (6.9)
+
+This implication requires no prior joint analyticity of S_n. Its real-kernel
+input is precisely (3.2), with the explicit constants (3.3). Thus (6.9)
+derives every SEED constant from s,alpha,beta,r_max.
+
+**Proof.** RC-POINT applies to every reflected real kernel, giving
+continuous Hilbert point vectors and all mixed inner-product identities.
+For fixed b,ξ and each j, allow only u_j to be complex with
+`|Im u_j|<π/2`; all other u_i are real. Make the cut and the spatial
+placements described in §6, now using only real point vectors. Insert
+`exp(-(b_j/2+exp(u_j))H)`. This bounded operator makes the resulting
+matrix element holomorphic in u_j and jointly continuous in every real
+parameter. Its equality to the real S_n kernel follows by taking the
+Hilbert limits in the smeared cut identity. For tensors use the same
+phases as in §6. Thus every axial function has the same real restriction.
+
+In either reflected norm kernel the internal real gaps are duplicated,
+the central gap is b_j/2, and the central spatial difference is zero.
+Its bracket in (6.8) is bounded by
+
+    2[L+Σ_(i≠j) exp(u_i)]≤4|P(exp(u);L)|.              (6.10)
+
+Taking the two norm square roots therefore gives power t_0 n and
+constant
+
+    D_0 K_0^n 4^(t_0 n)
+        [(2j)!(2(n-j))!]^(gamma_0/2)
+      ≤D_0[K_0 4^(t_0)2^(gamma_0)]^n(n!)^(gamma_0).
+
+The inequality uses the binomial bounds
+`(2j)!(2(n-j))!≤(2n)!≤4^n(n!)²`. Divide the axial functions by the
+holomorphic nonzero P^(t_0 n). RC-CROSS supplies a bounded joint
+extension to `Σ|Im u_i|<π/2`, which contains U_(n,0). Multiplication
+by P^(t_0 n) gives precisely (6.4).
+
+For completeness the extension is continuous in ξ: on a compact set of
+ξ the axial functions have a common bound and are pointwise continuous.
+Gaussian damping makes their slices L²-continuous by dominated
+convergence. Apply the Hölder argument to differences of two parameter
+values and then use the box-vertex Fourier-inversion bound on a smaller
+angular set. This gives local uniform convergence of the extensions.
+Different baselines agree by the connected-overlap argument in §6,
+which uses their common real restriction. All reflected identities on
+that restriction are the original OS identities. ∎
+
 ## 7. RC-FACTORIAL — solving the finite-stage constant recurrence
 
 **PROVEN under SEED.** A majorant for (6.6), for n≥2 and N≥0, is
@@ -394,63 +675,112 @@ For raw E0′ the analogous elementary budget is, explicitly,
       ≤max(1,alpha)^(1/2^N) n^(beta n)2^(beta nN),
     s(2^N n)/2^N=sn.                                  (7.2)
 
-Equation (7.2) is arithmetic, not an analytic-continuation proof. To use
-(7.1) for the actual hierarchy requires the missing conversion from
-`(s,alpha,beta)` to the constants in SEED. No choice `t=s`, `gamma=beta`,
-or an unproved “harmless” mollifier constant is made here.
+For the actual hierarchy the constants in (7.1) are now (3.2),(3.3),(6.9).
+In particular t=12s+36 and gamma=beta+24s+100 include the finite-order
+cutoff, Fourier factorization and unsmearing costs. The linear exponent
+survives each cut because its two square-root contributions add to tn;
+the enlarged-degree factorial contributes only the exponential in nN in
+(7.1). Section 8 controls that N-dependence explicitly.
 
-## 8. RC-EXHAUST — the unproved geometric/quantitative step
+## 8. RC-EXHAUST — a quantitative sparse-coordinate proof
 
-**OPEN.** It remains to prove, for the actual construction or a justified
-replacement, that the time domains cover every point with Re ζ_j>0,
-with an entrance-depth/bound estimate sufficient for a polynomial bound.
-Even a proof of qualitative exhaustion alone would not control (7.1).
+**PROVEN geometry and its consequence under the established SEED.** The exact
+domains (6.1) exhaust every product time half-plane with logarithmic
+entrance depth. The controlling parameter is the number of nonzero
+angular coordinates, including in higher-degree reflected configurations.
 
-Here is one explicit sufficient estimate, not an established one. For
-`δ=min Re ζ_j`, set `b_j=Re ζ_j/2`, `w_j=ζ_j-b_j`, and
+Normalize a=1 temporarily and write `K_(d,N)=closure(U_(d,N)/a)`.
+An open convex set G containing zero satisfies `λ closure(G)⊂G` for
+0≤λ<1: a ball about zero and an approximation to a closure point give
+this inclusion by convexity. Consequently a reflected vector in K gives
+an internal vector in `closure(V/a)`, by radial shrinking and passage
+to the limit. Closed cut boxes with central coordinate in [-1,1] thus
+belong to the next K. Each K is also solid: coordinatewise reduction of
+absolute values follows by averaging independent sign changes.
+
+Set
+
+    r_(0,N)=1,  r_(h,0)=0 (h≥1),
+    r_(h,N+1)=(r_(h,N)+r_(h-1,N))/2.                   (8.3)
+
+These radii lie in [0,1] and decrease with h. For every ambient degree
+d≥2, K_(d,N) contains the cube of radius r_(h,N) on **any support of
+at most 2h coordinates**, with zero in all other coordinates.
+
+**Proof by simultaneous induction on N for every d,h.** At N=0 only
+zero is required when h≥1; for h=0 the support is empty. At the next
+stage, a support of size at most 2h-2 already has radius
+`r_(h-1,N)≥r_(h,N+1)`. For size 2h-1 cut at its middle active
+coordinate. Each reflected side has 2h-2 active coordinates, so both
+sides have radius r_(h-1,N), while the central coordinate reaches 1
+in the closure. Solidity gives the required smaller cube.
+
+For size 2h let the active positions be p_1<...<p_(2h). Cut at p_h,
+using radius r_(h-1,N) on the left and r_(h,N) on the right, with
+central coordinate 1. The reflected supports have sizes 2h-2 and 2h.
+Cut also at p_(h+1), interchanging the side radii. In the average of
+these two points, every active coordinate other than the middle two
+equals r_(h,N+1); the middle two equal `(1+r_(h,N))/2`, which is
+at least that radius. Solidity finishes the induction. Positions of
+inactive coordinates and the ambient reflected degrees never enter. ∎
+
+Pascal's identity solves (8.3): with binomial coefficients zero for j>N,
+
+    1-r_(h,N)=2^(-N) Σ_(j=0)^(h-1) binom(N,j)
+             ≤2^(h-1)(3/4)^N.                          (8.4)
+
+For the inequality use `1≤2^(h-1)2^(-j)` for j<h, enlarge the sum to
+j=0,...,N, and apply the binomial theorem. Put
+`h=ceil((n-1)/2)` and `ell_0=log(4/3)`. For 0<ε≤1 choose
+
+    N_ε=ceil([h log 2+log(1/ε)]/ell_0).                (8.5)
+
+Then the closure of U_(n,N_ε) contains the full cube of radius
+`a(1-ε/2)`. Radial shrinking puts the cube of radius `a(1-ε)` in
+the **open** U_(n,N_ε); ε=1 uses membership of zero. This proves
+coverage with a rate, not merely coverage of closures.
+
+Now let `δ=min Re ζ_j>0`, `b_j=Re ζ_j/2`, `w_j=ζ_j-b_j`, and
 
     R=1+Σ|ζ_j|+Σ|ξ_j|+δ^(-1).
 
-If there are finite nonnegative c_0(n),c_1(n) and the angular point
-`arg w` belongs to U_(n,N) for some
+Writing θ_j=arg w_j, one has
+`sin(a-|θ_j|)=Re w_j/|w_j|≥δ/(2R)`. Since sin v≤v for v≥0,
+`(a-|θ_j|)/a≥δ/(πR)`. Equation (8.5) with ε=δ/(πR) therefore
+gives `arg w∈U_(n,N)` with
 
-    N≤c_0(n)+c_1(n)log(R/δ),                            (8.1)
+    N≤c_0(n)+c_1 log(R/δ),
+    c_0(n)=1+[h log 2+log π]/ell_0,  c_1=1/ell_0.      (8.1)
 
-then (6.3) and (7.1), with `Q=16^t2^gamma`, imply
+These constants are finite and nonnegative. With `Q=16^t 2^gamma`,
+the proved finite-stage estimates (6.3),(7.1) consequently give
 
-    |F_n(ζ,ξ)|≤D K^n n^(gamma n)(3n)^(tn) Q^(nc_0(n))
-                          R^[tn+2nc_1(n)log Q].         (8.2)
+    |F_n(ζ,ξ)|≤B_n R^(p_n),
+    B_n=D K^n n^(gamma n)(3n)^(tn)Q^(n c_0(n)),
+    p_n=tn+2n log Q/ell_0.                             (8.2)
 
-Indeed `L+Σ|w_j|≤3R`, `|P|≤3nR`, and `R/δ≤R²`.
-The estimate (8.1), or another sufficient propagation argument, is not
-proved. It is a proposed sufficient condition; there is no assertion that
-the original OS construction must have this depth bound.
+Indeed `L+Σ|w_j|≤3R`, `|P|≤3nR`, and `R/δ≤R²`. For
+ζ=τ-it, k=n-1, Euclidean norms give
 
-A tempting simplification is to retain only a common cube radius at every
-degree. It loses information about reflected angular configurations,
-whose central coordinate is zero. For cube radii r_(n,N), averaging the
-cut boxes gives the valid new lower radius
+    R≤sqrt(2k)(1+|(t,ξ)|+|τ|)(1+δ^(-1)).                (8.6)
 
-    min_(1≤i<n) [a + Σ_(j<i) r_(2(n-j),N)
-                         + Σ_(j>i) r_(2j,N)]/(n-1).     (8.3)
+Thus (9.1) holds with `p=p_n≥0`, `C=B_n(2k)^(p_n/2)`, under SEED.
+Overlaps patch by §6. Each compact subset enters some finite stage
+uniformly, so the union is jointly holomorphic and continuous in ξ.
 
-The minimum cannot silently be replaced by its endpoint term. For n=4
-and seed radii `r_(m,0)=a/[2(m-1)]`, the endpoint term is `19a/45`,
-whereas the middle term is `2a/5`. These exact fractions follow by
-substitution in (8.3). This is a check on that simplification, not a
-counterexample to reconstruction or to the full domains (6.1).
+There is no summation of the growing numbers A_(n,N). The factorial
+budget (7.1), whose powers rely on the linear seed exponent, gives
+`Q^(nN)`; the entrance rate converts that factor into a fixed polynomial
+in R at each n. This is the explicit growth control required by this
+route. The prefactor B_n may grow as `Q^O(n²)`; the exact L-CONT target
+allows n-dependent constants and imposes no output factorial bound.
 
-The finite domains, kernel lift, and factorial budget therefore do not
-yet establish either a common continuation on the entire time half-plane
-or its global bound. A successful proof must resolve both the seed and
-this quantitative step.
+## 9. RC-SPACE — from complex times to the full tube
 
-## 9. RC-SPACE — a conditional route from complex times to the full tube
-
-**PROVEN conditional lemma.** Let k=n-1≥1. Suppose the missing time
-continuation has been supplied as functions `F_n(ζ,ξ)`, holomorphic in
+**PROVEN conditional lemma, applied with §8.** Let k=n-1≥1. Suppose the time
+continuation is given as functions `F_n(ζ,ξ)`, holomorphic in
 all Re ζ_j>0, continuous in real spatial gaps, matching the phase-converted
-Schwinger functions, and obeying, for fixed finite C,p,
+Schwinger functions, and obeying, for fixed finite C and p≥0,
 
     |F_n(τ-it,ξ)|≤C(1+|(t,ξ)|+|τ|)^p
                          (1+(min τ_j)^(-1))^p.          (9.1)
@@ -460,8 +790,8 @@ Then it determines a tempered distribution W in all 4k relative real
 coordinates, a Fourier transform supported in `(closed V_+)^k`, and a
 holomorphic continuation to the full forward tube. In particular spatial
 complexification need not be obtained by a further unproved envelope
-theorem. The constants C,p in this lemma are **supplied**, not established
-from (1.2).
+theorem. The hypotheses of this lemma are now supplied by §§3–8, with
+`p=p_n` from (8.2) and `C=B_n(2k)^(p_n/2)` from (8.6).
 
 ### 9.1 Boundary values in time, with the spatial variables retained
 
@@ -624,7 +954,7 @@ the conditional lemma. ∎
 
 ## 10. Tensor and finite-family accounting
 
-**PROVEN bookkeeping, conditional on the analytic producer.** All actual
+**PROVEN bookkeeping, with the analytic producer in §§3–8.** All actual
 E0′ cut estimates use the input triple `(s,alpha,beta)` unchanged in the
 sum norm. Every continuation estimate above is uniform in the finitely
 many component words when SEED is. The phase identity used in RC-STAGE is
@@ -645,27 +975,47 @@ u costs at most
 
 Indeed the vector generator `[[0,v^T],[v,0]]` has induced ℓ¹ norm
 `||v||_1`, and the exponential series and tensor products give the bounds.
-No incorrect direction-independent exponent 1 is used. These finite
-matrix estimates do not produce the missing SEED functions or their
-constants.
+No direction-independent exponent 1 is used. The real-rotation factor
+already enters K_1 in (3.3); the seed construction keeps the component
+sum norm and incurs no additional field-count factor.
 
-## 11. Statement match
+## 11. Exact L-CONT conclusion and statement match
 
-| Exact input or target clause | Result here | Status for the requested implication |
+**PROVEN author theorem.** For every n≥2 set k=n-1 and take p_n and the
+constant `C=B_n(2k)^(p_n/2)` from §8. Equations (3.2),(6.9) give the
+actual seed, §8 gives (9.1), and §9 therefore applies to the original
+hierarchy. With `q=ceil(p_n)`, `d=4k`, `M=2q+d+3` and
+`L_mu=M+d+1`, its output constants can be chosen as
+
+    A_n=B_n^(target)=L_mu,
+    C_n=2^(L_mu) C_tube,
+
+where C_tube is the explicit constant (9.9), with (9.2) and §9.3's
+Fourier and fixed-bump constants. The B_n in (8.2) is a time-bound
+prefactor, distinct from this target exponent. These constants are finite
+and independent of the component word. They give exactly REC-LIB (6.1)
+on every point of the full forward tube, including complex spatial gaps.
+
+The functions are invariant under common complex translations, have the
+tempered boundaries proved in §9, and match the original S_n on every
+compact strictly ordered Euclidean test. Tensor matching is exactly
+(1.1), not scalar invariance of individual tensor components. Section 2
+gives 𝒲_0=1 and the constant n=1 function, with d_1=1; it also covers
+alpha=0. No E4, unique vacuum, or physical-existence input has been added.
+
+| Exact input or target clause | Proof | Disposition |
 |---|---|---|
-| OSLEAF55 D1, weight and total derivative order | (1.2), (2.2), (3.1); no norm replacement with an unnamed n-dependent factor | Matched |
-| Flat `^0𝒮` tests, partial products, S_0=1 | §§1–3; mollifiers stay strictly ordered; point vectors require a continuous kernel | Matched; no unrestricted Euclidean moment algebra assumed |
-| One s,alpha,beta for every degree | (2.1), (2.3), (3.1), (7.2) | Explicit actual input; conversion to SEED remains OPEN |
-| Mixed several-field RP and tensor reflection | §§1–3,6,10 | Matched with the exact Cartesian dictionary |
-| Existence on the full forward tube for every word | Conditional finite stages §6; conditional full spatial tube §9 | OPEN from E0′ |
-| Overlap compatibility | §6, including different baselines | PROVEN conditional on SEED, for constructed finite domains |
-| Exhaustion of all time gaps | §8 | OPEN; no unproved domain theorem is cited as a solution |
-| Holomorphy-envelope input | §4 | Bounded tube convexification rebuilt; no general envelope claim |
-| Polynomial bound (6.1) | (6.6),(7.1) at finite stages; (8.2) conditional on (8.1); (9.9) conditional on (9.1) | OPEN from E0′ |
-| Tempered boundary in every real variable | §9.1 and §9.3 | PROVEN given the time bound, with explicit seminorm constants |
-| Common complex translation; n=0,1 | §§2,9.3 | Constant cases proved; general case conditional on producer |
-| Wick matching (15.1) | §§1,6,9,10 | Preserved by every proved conditional step |
-| No unique-vacuum or physical-existence assertion | No E4 or source/decay estimates introduced | Preserved |
+| E0′ on flat tests with one s,alpha,beta | (1.2), (3.5)–(3.13) | Used with the original weight and total derivative order |
+| Point-kernel identification and removal of smearing | RC-REAL and RC-POINT | PROVEN for all ordered real charts and mixed reflected kernels |
+| Hierarchy-wide seed constants | (3.2),(3.3),(6.9) | Explicit functions of the input triple and r_max |
+| Joint time holomorphy, spatial continuity and overlap compatibility | RC-CROSS, §6.1, RC-STAGE | PROVEN for the actual kernels |
+| Quantitative exhaustion | Sparse-coordinate induction (8.3)–(8.5), depth (8.1) | PROVEN with c_1=1/log(4/3) |
+| Growth after continuation | (7.1),(8.2),(8.6) | PROVEN; no unjustified infinite-stage majorant is used |
+| All complex spatial variables and exact bound (6.1) | §9.2–§9.3 and the constants above | PROVEN |
+| Tempered boundary in every real variable | §9.1 and §9.3 | PROVEN, independently of approach inside the product cone |
+| Common complex translation; n=0,1 | §§2,9.3 | PROVEN |
+| Finite mixed Cartesian tensors and Wick matching (15.1) | (3.8), §§6,9,10 | PROVEN in the specified class |
+| No general representation or spinor extension | §1 and §10 | Scope unchanged |
 
 ## 12. Literature and scope
 
@@ -686,19 +1036,19 @@ broader constructive Yang–Mills program; no estimate from their work is
 an input here. No claim of novelty for the established library mechanisms
 is made. No numerical checks were run.
 
-## Open residue
+## Completion and remaining scope
 
-**R-CONT remains OPEN, already for one scalar.** This file does not fulfill
-the author brief's request for a completed proof of E0′ ⇒ L-CONT.
+The two analytic obligations in REVIEW_REC_CONT are discharged by the
+printed author proofs: RC-SEED by §§3.1,4.1,6.1 and RC-EXHAUST by §8.
+Their composition through §9 proves RC-TARGET with the exact clauses
+checked in §11. The fresh hostile review in
+[checks/reccont2_review.md](checks/reccont2_review.md) resolves both binding
+obligations and ends VERDICT: LAND. It is same-family/fresh-context source
+review; it confers no audit grade. Provenance is in REC_CONT_LOG.md.
 
-| ID | Exact unfinished obligation | What would resolve it |
-|---|---|---|
-| RC-SEED | Produce the analytic functions and bound (6.4) from the actual flat-distribution E0′/RP/covariance hypotheses, with explicit `t,D,K,gamma` determined by `s,alpha,beta` and the finite tensor data | A proof of joint Euclidean/time analyticity and quantitative removal of smearing; (3.1) alone does not do this |
-| RC-EXHAUST | Prove quantitative coverage of the time half-plane by (6.1), or replace it with a fully proved scheme giving a global polynomial bound | A valid domain exhaustion and estimate argument; (8.1) is one sufficient, unproved option |
-| RC-TARGET | Supply (9.1) from those two missing steps, for all n and mixed words | Then §9 supplies the complex spatial variables and the exact L-CONT bound; presently this antecedent is missing |
-
-These are dependent obligations in one reconstruction argument, not
-independent physical obstructions or a no-go result. No finite-stage
-lemma, successful mechanical check, review verdict on a conditional lemma,
-or paper-access success closes them. REC-LIB remains conditional and
-OSLEAF55 REC(e)/ASSEMBLY55 N9 are not promoted.
+REC_LIB's R-CONT status is updated following that review.
+No source-side consumer, axiom, audit or ledger is edited. This abstract
+reconstruction result does not supply an actual Yang–Mills hierarchy,
+unconditional constructive estimates, a spectral gap, or an extension
+beyond the stated finite Cartesian tensor class. OSLEAF55 and ASSEMBLY55
+consumer texts are outside the permitted edit scope.

@@ -230,3 +230,137 @@ Affected-fix confirmation: I read both revised passages.
 Neither clarification proves SEED or quantitative exhaustion. The original target remains unachieved. No numerical experiments were run.
 
 VERDICT: HOLD
+
+## Pass 2 — assignment and source freeze, 2026-10-29
+
+This pass executes `briefs_reccont/AUTHOR_BRIEF_RECCONT2.md` under
+`PROCESS_LIGHT.md`. The two binding obligations are the actual analytic
+seed and quantitative continuation sufficient for the exact L-CONT target.
+The permitted outputs are REC_CONT.md, this log, REC_LIB.md's R-CONT status
+only if both obligations are proved, and `checks/reccont2_*`. No commits.
+
+Local HEAD is `2625fe3c42cc19cd1a56adbd904eb56ff77fdc75`; freshly fetched
+origin/main is `ca2bc7ddf64790da96cd43d42017d000fbfe4808`. The workflow,
+workhorse, freshness and review instructions match that main revision.
+The planning entry point was read without checking out its orphan branch.
+The exact target, input premises and downstream question remain those in
+the working contract above. Main status is not inferred from these local
+research files.
+
+| Input | SHA-256 before pass 2 |
+|---|---|
+| REC_CONT.md | `b239ed3cd0265de5cb4caacb8cf7326c33d14e366444661ee41bd0483d3faad2` |
+| REC_CONT_LOG.md | `4a9d74edcf8c15427733628489f03f916cefad536f42f46fafb9de6753956c0e` |
+| REC_LIB.md | `39f27404e50e69cce0e501e7be55aa76b5a59f2730327bdff2e233420f97e562` |
+| OSLEAF55.md | `7ba9423f52e7da40f5bf2a44dd4fb49d477405bb70cf5b41de3c0482bf2e0df0` |
+| REVIEW_REC_CONT.md | `b0367eb769784ee9e6a370e2b63ab169c603c928fafc5e0b07c68419e447900f` |
+| AUTHOR_BRIEF_RECCONT2.md | `832ff408c2d7383752dfdb8f9d56eb08c9e7369625e02e5fad6924a8bebee9d8` |
+
+No numerical experiment is planned. Two restricted-input host workers
+assist the author with the sparse angular geometry and distribution-to-
+continuous-kernel estimate, respectively. Both have fresh contexts and
+explicit maximum reasoning effort, with the session model inherited.
+They are author assistance, not independent review. Their work is read-only;
+no separate worktree or worker output files are needed. The supervisor
+checks and integrates the mathematics in the permitted source. A separate
+fresh hostile reviewer will receive the frozen result without the author
+conversation. Same-family review will be disclosed.
+
+Primary-source retrieval again reached service/iframe HTML at the OS II
+Project Euclid PDF and an article page at Springer. CERN's Glaser PDF
+returned an anti-bot page. Those pages were not bypassed. The accessible
+Zinoviev abstract explicitly retains its additional weak spectral condition;
+that condition is not assumed here. No PDF was saved, and no literature
+result is used without a proof in the source.
+
+### Pass 2 author work and frozen review candidate
+
+The source now contains four new proof blocks: (i) RC-REAL uses finite-order
+convolution cutoffs, a Fourier decomposition across each reflected cut,
+rotated tail translations, and an integrable Fourier bound to produce
+continuous kernels; (ii) RC-CROSS combines the axial analytic functions by
+Gaussian Fourier interpolation; (iii) §6.1 constructs SEED with explicit
+D,K,gamma,t; (iv) §8 proves sparse-coordinate exhaustion with logarithmic
+entrance depth and composes it with the factorial majorant. Section 11
+checks the exact full-tube target, including tensor phases and all spatial
+variables. The unchanged conditional lemmas are reused with these inputs.
+
+The read-only geometry worker supplied the sparse-coordinate induction.
+The read-only seed worker supplied the local distribution/Fourier route.
+The supervisor checked both derivations, rebuilt the cross-axis lemma and
+seed composition, replaced every unspecified constant in the real-kernel
+estimate by (3.3), checked the resulting factorial arithmetic, integrated
+the text, and read the complete author diff. These are author checks.
+No numerical experiments or proof runners were used. An initial whitespace
+check caught an extra final blank line in this log; it was corrected.
+The subsequent `git diff --check` was clean.
+
+REC_LIB remains byte-identical to the pass-2 input while the mathematical
+candidate is reviewed. The scope rule permits its R-CONT status change
+only if both obligations withstand proof checking. The baseline L-CONT
+quotation in REC_CONT therefore still includes its original OPEN marker.
+The separate reviewer will decide both binding obligations and end with
+LAND or HOLD; no desired result is prescribed.
+
+Frozen candidate REC_CONT.md: 52078 bytes, SHA-256
+`6900197a60ca57234311b9ee3cf2ec442cb1e2de8e19c426014e82e5141a7578`.
+
+### Pass 2 independent review and status synchronization
+
+The fresh hostile reviewer `/root/reccont2_review` received the complete
+frozen source and a restricted set of input definitions, target clauses,
+previous review and author log. The requested launch configuration was
+`gpt-6-astra`, effort `low`, `fork_turns=none`, as the current review skill
+specifies. The host does not expose an independently resolved runtime model
+identifier; none is claimed. This is **same-family/fresh-context: Codex
+reviewing Codex**, with separation from both author workers and the author
+conversation. The full report is
+[checks/reccont2_review.md](checks/reccont2_review.md).
+
+The reviewer independently checked the cut geometry, distribution Fourier
+factorization, unsmearing, explicit K_1/K_0 arithmetic, axial cross lemma,
+SEED production, sparse-coordinate induction, entrance depth, factorial
+propagation and full target matching. Its verdict is **LAND**, with both
+binding obligations **RESOLVED** and no material mathematical finding
+requiring repair. There was no second numerical runner, Lean build, formal
+audit, or whole-repository landing pipeline; none is represented as run.
+
+Following that verdict, REC_LIB's R-CONT status references were synchronized
+in place, including the §6 marker, Cartesian tensor producer statement,
+R-CONT residue and the repeated descriptions of this same obligation.
+The original no-go route record is labeled as the original pass, with the
+current R-CONT status stated explicitly. Theorem bodies, the R-TENSOR,
+R-CONSUMERS, R-SRC, R-MG and R-REVIEW rows, and all external consumers are
+unchanged. This is a status-only update, not downstream scientific promotion.
+
+REC_CONT then received four status/link replacements: its header, the
+quotation's status introduction and marker, and its completion paragraph.
+Reversing precisely those replacements in memory recovers the review's
+frozen source SHA-256 exactly. No mathematical proof bytes changed after
+review. The original reviewer was requested to confirm only these affected
+status passages and REC_LIB's status-only diff in the same context.
+
+Final author source checks established that the exact L-CONT quotation
+matches the synchronized library statement; HEAD and the index are unchanged;
+OSLEAF55, the prior review, PROCESS_LIGHT and both supplied pass-2 briefs
+retain their initial hashes; unrelated residue rows are byte-identical;
+all changed tracked paths satisfy the author allowlist; local links resolve;
+and newline/whitespace checks pass. No numerical experiment was run, so no
+numerical preregistration was required. No commits, pushes, audit/ledger
+writes, axiom edits or external messages occurred.
+
+### Pass 2 final receipt
+
+The original reviewer confirmed the final status-only diff in the same
+context, found no overreach, verified unchanged theorem/proof bodies, and
+retained **VERDICT: LAND**. Its addendum records the final source hashes.
+The complete target is therefore marked PROVEN in the author source and
+R-CONT status; this is reviewed source mathematics, not an audit grade or
+an external consumer update. No unproved analytic residue remains within
+this exact L-CONT scope.
+
+| Final artifact | Bytes | SHA-256 |
+|---|---:|---|
+| REC_CONT.md | 52198 | `ac7ac0854fb320f183779f67be136063dfb750ee3f13b869acad10a7ac12a278` |
+| REC_LIB.md | 75139 | `47dd75c7ca3c4f9f1af43139292d1fcfa6774b10f8e6ea2babc05ad67a48e29a` |
+| checks/reccont2_review.md | 16241 | `d5489fd797470a76479a4467beb844215489bc55a16dd34bf7a1d07d841e7b5c` |

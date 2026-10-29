@@ -92,11 +92,11 @@
 
 # Results — author proof library, 2026-10-29
 
-**Overall status: CONDITIONAL.** The quantitative continuation lemma
-L-CONT below is OPEN. This file proves the Hilbert/semigroup construction
-and a downstream reconstruction theorem from an explicit analytic input.
-It does not prove E0′ ⇒ that input. In particular it does not replace
-OSLEAF55 REC(e) by an unconditional library theorem.
+**R-CONT status: PROVEN in [REC_CONT.md](REC_CONT.md), with independent
+source review in [checks/reccont2_review.md](checks/reccont2_review.md).**
+That proof now supplies L-CONT from E0′–E3, (Re), S_0=1 for the stated
+finite Cartesian tensor class. This file's downstream conditional theorem
+is unchanged. No external consumer or physical-existence status is updated.
 
 PROVEN means proved here from the hypotheses printed with the lemma.
 ARGUED means a proposed mechanism whose missing step is identified. OPEN
@@ -325,9 +325,9 @@ values of other time gaps prove holomorphy on their entire product
 half-plane. The all-gap assertion in approach step 2 is part of L-CONT
 below, not a consequence silently appended to this lemma.
 
-## 6. L-CONT — the exact open analytic input
+## 6. L-CONT — the exact analytic input
 
-**Status: OPEN from E0′–E3. Statement to be proved.** For each n and
+**Status: PROVEN from E0′–E3, (Re), S_0=1; see REC_CONT.md.** For each n and
 ordered label word a, there are holomorphic functions 𝒲_n^a on
 
     𝒯_n={z∈C^(4n): Im(z_(j+1)−z_j)∈V_+, 1≤j<n},
@@ -859,8 +859,9 @@ clause of L-CONT by
 
     𝒲_n(jx_1,...,jx_n)=C^(⊗n) S_n(x_1,...,x_n).          (15.1)
 
-Its analytic and quantitative clauses are still an OPEN producer. Given
-those clauses, all downstream conclusions hold for these tensor fields.
+Its analytic and quantitative clauses are proved in REC_CONT.md for this
+Cartesian tensor class. Given those clauses, all downstream conclusions
+hold for these tensor fields.
 
 **Proof of the tensor implication.** Entrywise J²=1, |C_aa|=1 and
 bar C J=C. For a vector Lorentz transformation Λ,
@@ -1108,15 +1109,15 @@ exp(sqrt(3) r_max n |u|), for real unit v and real or complex u.
 The coordinate-axis continuation in L-LOCAL keeps its original exponent.
 The phase, reflection and real-rotation bounds were rechecked in §15.
 This repairs the tensor constant only; the scalar conditional theorem
-and the OPEN analytic producer L-CONT retain their stated scope.
+and the analytic producer L-CONT retain their stated scope; its current
+R-CONT status is recorded below.
 
-**Original E0′ target: CONDITIONAL / NOT CLOSED.** The implication
-E0′,E1,E2,E3,(Re) ⇒ L-CONT is OPEN even for one scalar in this artifact.
-The finite-label bookkeeping does not prove that implication. Calling
-the preceding theorem an unconditional reconstruction would hide the
-principal content of OS II behind an added hypothesis. N9 therefore
-remains open. The result does isolate that analytic obligation from
-boundary values, locality, field domains and generator identity.
+**R-CONT target: PROVEN in REC_CONT.md.** Its pass-2 proof derives the
+analytic seed and quantitative exhaustion from E0′,E1,E2,E3,(Re),S_0=1,
+including the stated finite Cartesian tensor class. The independent review
+resolves both binding obligations. This updates the status of the analytic
+input to the preceding conditional theorem; external N9/REC(e) consumer
+text and source-side follow-through remain outside this status-only edit.
 
 ## 19. Literature, author verification and scope discipline
 
@@ -1140,7 +1141,11 @@ result is claimed. Author verification consists of the proofs, dependency
 and hypothesis match, and readback of the two allowed deliverables;
 it is not an independent proof check.
 
-### No-Go Discipline Gate — incomplete reconstruction, not an impossibility result
+### No-Go Discipline Gate — original REC-LIB pass
+
+The following route record describes the original pass, when R-CONT was
+open. Its current status is PROVEN as recorded below; no no-go conclusion
+or other residue status is changed by that update.
 
 - **N1, actual routes.** The single-cut/continued-kernel route was attempted;
   its all-degree quantitative domain enlargement is unproved. The direct
@@ -1199,7 +1204,7 @@ This limits procedural promotion and makes no claim against the theorem.
 | D4, line 157: scalar full E(4) pullback | E1 in §§1,3,8 | Exact; connected Poincaré group is the reconstructed unitary group |
 | D6, lines 161–164: partial products only | L-DOM and L-INS | Exact in Euclidean space; full Minkowski products appear only after L-POS |
 | D7, line 165: S_0=1 | §§1,3 | Explicit; the abbreviated approach target needs this convention |
-| E0′, line 205: one s∈N and α,β≥0, all n≥1 and F∈E_n | §1 and open implication in §6 | Exact input; E0′⇒L-CONT is not proved |
+| E0′, line 205: one s∈N and α,β≥0, all n≥1 and F∈E_n | §1 and §6; REC_CONT.md | Exact input; R-CONT is proved by the reviewed continuation proof |
 | E1, line 207: Euclidean covariance for every g∈E(4) | §1; L-BOOST | Exact scalar hypothesis, including the time reflection |
 | E2, line 208: Σ_(n,r) S_(n+r)(ΘF_n*⊗F_r)≥0 on A_+ | B and L-HILB/L-POS | Exact; mixed-label sums required for several fields |
 | E3, line 209: permutation symmetry | L-DOM/L-LOCAL | Exact; permutation acts on field labels too |
@@ -1207,8 +1212,8 @@ This limits procedural promotion and makes no claim against the theorem.
 | E4/clustering, lines 210–211: not assumed | L-VAC and §18 | No unique vacuum asserted without an additional proved condition |
 | REC(a)–(c), lines 216–221 | L-HILB | PROVEN; F6 insertion-number repair included |
 | REC(d), lines 222–226 | L-INS | PROVEN with support gap; no sharp time-zero field claim |
-| REC(e), lines 227–232 | §18 conditional theorem | OPEN from the printed OS hypotheses because L-CONT is OPEN |
-| Larger-family paragraph, lines 513–517 | L-LABEL | Finite scalar case explicit; tensor powers have an explicit Wick/J dictionary; arbitrary D and analytic producer still require proof |
+| REC(e), lines 227–232 | §18 conditional theorem | L-CONT is supplied by REC_CONT.md; external REC(e) source follow-through remains outside this edit |
+| Larger-family paragraph, lines 513–517 | L-LABEL | Finite scalar/tensor-power analytic producer supplied by REC_CONT.md; arbitrary D still requires its separate dictionary and proof |
 
 ## Consumers
 
@@ -1231,34 +1236,32 @@ obligations; the conditional reconstruction does not discharge them.
 | Consumer | What this file supplies | What it does not discharge |
 |---|---|---|
 | OSLEAF55 REC(a)–(d) | Full re-derivation with correct m-insertion translation weight and adjoint formula | No sharp-time field or unconditional Minkowski field follows from these parts alone |
-| OSLEAF55 REC(e) | Full downstream reconstruction given L-CONT, with boundary-value and local-gluing proofs | E0′⇒L-CONT; hence the load-bearing OS import is not retired |
+| OSLEAF55 REC(e) | Full downstream reconstruction given L-CONT, with boundary-value and local-gluing proofs; R-CONT now proved in REC_CONT.md | External REC(e) consumer source follow-through remains required |
 | OSLEAF55 L3/GROW and reviewed s=11,β=p+3 | Quantified Z=1 unconditional growth implication in L-GROW | Singleton, all-order averaging, separated bounds and actual continuum hierarchy |
-| ASSEMBLY55 N9 (REC) | A named remaining analytic lemma and explicit downstream theorem | N9 remains OPEN; a source-access success alone would not close the full-proof bar |
-| ASSEMBLY55 §9 item 18 (EXT and REC) | Exact restricted-domain reconstruction interface | EXT's actual RG estimates and L-CONT's proof remain necessary |
+| ASSEMBLY55 N9 (REC) | Reviewed R-CONT proof in REC_CONT.md and the explicit downstream theorem | External N9 consumer status is unchanged by this R-CONT-only edit |
+| ASSEMBLY55 §9 item 18 (EXT and REC) | Exact restricted-domain reconstruction interface; R-CONT supplied by REC_CONT.md | EXT's actual RG estimates and external consumer follow-through remain necessary |
 | MASS_GAP_TARGET MG0 / Hamiltonian | Conditional equality H_Wightman=H_OS on the full reconstructed space | No unconditional complete Yang–Mills hierarchy or physical identification |
 | MASS_GAP_TARGET MG1–MG4 | Reflected-correlation identity, dense-family spectral implication, invariant-mass equivalence | No decay producer, uniform physical rate, cutoff passage or nonzero excited state |
 | HANDOFF full-proof bar | Honest dependency/status separation | No complete existence theorem, mass-gap proof or independent certification |
 
 ## Open residue
 
-[R-fix 2026-10-29 REC-2] **R-CONT remains OPEN (binding review item 2).**
-[REC_CONT.md](REC_CONT.md) supplies new author proofs of bounded tube
-convexification, local Hilbert-kernel lifting, a conditional finite-stage
-continuation with factorial estimates, and a conditional passage from
-polynomially bounded time continuation to the full spatial forward tube.
-It does not derive its quantitative analytic seed from the printed
-E0′–E3, (Re), S_0=1 hypotheses, or prove quantitative domain exhaustion.
-Its auxiliary seed constants are not established functions of s, alpha,
-beta. Those missing steps, including removal of Euclidean smearing, must
-be supplied before claiming completed REC or ASSEMBLY55 N9. The
-single-cut result, finite-stage estimates, or a literature citation do not
-close them. The residue remains open already for one scalar; §18 remains
-an honestly conditional theorem. Independent review of this continuation
-work is recorded in REC_CONT_LOG.md.
+[R-fix 2026-10-29 REC-2, pass 2] **R-CONT: PROVEN for the stated finite
+Cartesian tensor class.** [REC_CONT.md](REC_CONT.md) derives continuous
+ordered kernels from E0′, removes smearing, constructs SEED with explicit
+constants fixed by s,alpha,beta,r_max, and proves logarithmic entrance
+depth for the continuation domains. Its factorial estimate therefore gives
+the polynomial time bound; the spatial and boundary construction proves
+exactly §6's L-CONT conclusion, with tensor matching (15.1).
+The fresh [independent review](checks/reccont2_review.md) resolves both
+binding obligations and ends VERDICT: LAND. This is same-family/fresh-context
+source review, not an audit grade. Provenance and checks are recorded in
+[REC_CONT_LOG.md](REC_CONT_LOG.md). No other residue or external consumer
+status is promoted by this update.
 
 | ID | Exact missing item | Scope / reopening evidence |
 |---|---|---|
-| R-CONT | Prove from E0′–E3,(Re),S_0=1 the functions, matching and bound (6.1), with all spatial variables and all mixed field words | A complete iterative-domain/estimate proof or a different fully proved construction; currently OPEN already for one scalar |
+| R-CONT | Functions, matching and bound (6.1) from E0′–E3,(Re),S_0=1, with all spatial variables and mixed words | PROVEN in REC_CONT.md §§3–11; both binding obligations RESOLVED by checks/reccont2_review.md |
 | R-TENSOR | For a representation beyond the explicit tensor-power class, provide and verify D_E,J,C,D_M and their reality/covariance relations; prove its version of R-CONT | No classification or “verbatim adaptation” is banked; tensor-power downstream implication only is proved |
 | [R-fix 2026-10-29 REC-3] R-CONSUMERS | Apply binding review item 3 in the external OSLEAF55/ASSEMBLY55 consumers; retain insertion count, separated REC(d), imported/open REC(e)/N9, S_0, (Re), absent E4, proper-orthochronous scope and explicit tensor dictionaries | OPEN source-side follow-through: this task edits only REC_LIB.md and its log; the local qualifications below are retained, not a claim that those consumer files were repaired |
 | R-SRC | Produce the uniform unconditional input of L-GROW, including conditional singletons and all-order averaging if that route is used | External to the abstract reconstruction theorem; the actual Yang–Mills E0′ producer remains open |

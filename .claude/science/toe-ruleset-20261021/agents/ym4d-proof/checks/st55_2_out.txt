@@ -1,0 +1,39 @@
+
+=== subspace S_dep, dep = (0,)  dim = 36  norm weight = 432  t=0.0s
+tau=0 dep=(0,): G0 zero-mismatch True; dim H_red = 30; v_C horizontal True; RQ_bare(v_C) = 0 ; RQ_ker(v_C, kappa=1) = 2/9
+   kappa_0 = 1 : H_cond PD on H_red: True ; certified lower bound on min RQ: 111/500 ; RQ_cond(v_C) = 2/9
+   C2 (tau=0): bare PSD on H_red: True, rank 18 of 30 (kernel dim 12)
+   t=5.0s
+tau=1/50 dep=(0,): G0 zero-mismatch True; dim H_red = 28; v_C horizontal True; RQ_bare(v_C) = -300160032/35234420633 ; RQ_ker(v_C, kappa=1) = 556914801414358843512595951682/2501362060979831665665369258681
+   G1 (= -27648 tau^2 (2 + s^-2) and v_C in H_red): True ; G2 bare not PSD on H_red (v_C certifies): True
+   kappa_0 = 1 : H_cond PD on H_red: True ; certified lower bound on min RQ: 191/1000 ; RQ_cond(v_C) = 535605839814346141974932199458/2501362060979831665665369258681
+   t=10.3s
+tau=1/20 dep=(0,): G0 zero-mismatch True; dim H_red = 28; v_C horizontal True; RQ_bare(v_C) = -1926408/36501827 ; RQ_ker(v_C, kappa=1) = 60205964958916287003158/267706032472281046052439
+   G1 (= -27648 tau^2 (2 + s^-2) and v_C in H_red): True ; G2 bare not PSD on H_red (v_C certifies): True
+   kappa_0 = 1 : H_cond PD on H_red: True ; certified lower bound on min RQ: 31/500 ; RQ_cond(v_C) = 46077602490844155014702/267706032472281046052439
+   kappa_0 = 1/10 : H_cond PD on H_red: False ; certified lower bound on min RQ: - ; RQ_cond(v_C) = -40538829860902516440701/1338530162361405230262195
+   t=15.4s
+tau=1/10 dep=(0,): G0 zero-mismatch True; dim H_red = 28; v_C horizontal True; RQ_bare(v_C) = -486432/2376833 ; RQ_ker(v_C, kappa=1) = 3759478156136598482/16104039689207948481
+   G1 (= -27648 tau^2 (2 + s^-2) and v_C in H_red): True ; G2 bare not PSD on H_red (v_C certifies): True
+   kappa_0 = 1 : H_cond PD on H_red: False ; certified lower bound on min RQ: - ; RQ_cond(v_C) = 463697495862695858/16104039689207948481
+   t=20.5s
+
+=== subspace S_dep, dep = (0, 1)  dim = 108  norm weight = 144  t=20.5s
+tau=0 dep=(0, 1): G0 zero-mismatch True; dim H_red = 84; v_C horizontal True; RQ_bare(v_C) = 0 ; RQ_ker(v_C, kappa=1) = 2/9
+   kappa_0 = 1 : H_cond PD on H_red: True ; certified lower bound on min RQ: 111/500 ; RQ_cond(v_C) = 2/9
+   C2 (tau=0): bare PSD on H_red: True, rank 72 of 84 (kernel dim 12)
+   t=26.5s
+tau=1/50 dep=(0, 1): G0 zero-mismatch True; dim H_red = 82; v_C horizontal True; RQ_bare(v_C) = -300160032/35234420633 ; RQ_ker(v_C, kappa=1) = 556914801414358843512595951682/2501362060979831665665369258681
+   kappa_0 = 1 : H_cond PD on H_red: True ; certified lower bound on min RQ: 191/1000 ; RQ_cond(v_C) = 535605839814346141974932199458/2501362060979831665665369258681
+   t=32.6s
+tau=1/20 dep=(0, 1): G0 zero-mismatch True; dim H_red = 82; v_C horizontal True; RQ_bare(v_C) = -1926408/36501827 ; RQ_ker(v_C, kappa=1) = 60205964958916287003158/267706032472281046052439
+   kappa_0 = 1 : H_cond PD on H_red: True ; certified lower bound on min RQ: 31/500 ; RQ_cond(v_C) = 46077602490844155014702/267706032472281046052439
+   t=38.7s
+tau=1/10 dep=(0, 1): G0 zero-mismatch True; dim H_red = 82; v_C horizontal True; RQ_bare(v_C) = -486432/2376833 ; RQ_ker(v_C, kappa=1) = 3759478156136598482/16104039689207948481
+   kappa_0 = 1 : H_cond PD on H_red: False ; certified lower bound on min RQ: - ; RQ_cond(v_C) = 463697495862695858/16104039689207948481
+   t=44.4s
+
+C1 (kappa_0 = 1/10 at tau = 1/20 not PSD, v_C certifies) fired: True
+C2 (tau = 0: bare PSD with kernel, H_cond PD) holds on both subspaces: True
+report tau=1/10: H_cond PD on H_red(0): False ; on H_red(0,1): False
+OVERALL: PASS  total 44.4s

@@ -2072,3 +2072,15 @@ H-RED^e conditional; NG1/NG2 only on the no-zero-mode subclass (universal form R
 witness does not give NF-GFF or non-Gaussianity. Most dangerous: (TS-e-low) at every short scale for the same normalised e
 (forwarded to TSE55). The definitional question (T_NF) is with the owner.
 **CX-ALIGN2 → ALIGN3 queued; slots full.**
+
+**STEP55 — finished** (claude-opus-5-5, max). **I2 (BFT-coer) linear coercivity PROVEN: c_co = 1/38 at κ ≡ 1, L = 3** (6.47×
+LINEAR_PACKAGE's c_E; exact check st55_1, true minimum ≈ 0.03095), with a tail-free local charge decomposition (what Codex
+said PRICE lacked); chart PRICE form conditional on BFT-1. **I1(a) one-step positivity: level 0 is a theorem** (pre-S24
+N5-sf0 (b), re-derived; the stripe carries one-step mass κ₀/L²); exact stripe check: positivity iff β < β_c ∈ (0.118, 0.125)
+at κ₀ = 1 — a real chart constraint; levels ≥ 1 reduced to ONE input (B2) (ℓ² bound on the background map's derivative,
+sharp L^{k−j}); twisted-collar holes not verified. **Zero-free normaliser:** a single kernel normaliser has no zeros on a
+fixed coupling-independent complex neighbourhood (complex Haar + polar re-centring). **I1(b) per-step cluster expansion
+as an implication** (k-, T-, region-uniform; coupling spectator; analytic in sources — what SRC's decaying-polymer route
+needs). Geometric mismatch proved pointwise. REFUTED: LARGE55's total action omits the normaliser; LCONV55/LARGE55 used
+mass κ instead of κ₀/L² (9× at L = 3). **Codex review launched (CODEX_REVIEW_STEP.md). Launched: ALIGN3_55** (queued
+brief: periodic repair, (P2-tw)_log, (AC)_log, source restriction, output conversions).

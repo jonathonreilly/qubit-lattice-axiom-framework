@@ -1,0 +1,61 @@
+{
+  "utc": "2026-10-29T14:35:49.562845+00:00",
+  "receipt_sha256": "a876428823713710364cb3170f06d60732065f7b8fb7c729742d658d4b071536",
+  "verified_review_artifacts": 12,
+  "verified_context_sources": 20,
+  "verified_source_ranges": 27,
+  "results": [
+    {
+      "script": "review_residual_bridge_01.py",
+      "exit_code": 0,
+      "passed": 45,
+      "total": 45,
+      "same_except": [
+        "started_utc",
+        "finished_utc",
+        "utc"
+      ],
+      "match": true,
+      "stderr_bytes": 674,
+      "stderr_exact_match": true,
+      "seconds": 0.4308300840202719,
+      "stdout_sha256": "83a301c006ec0e50ab87a0dbd43d8ecc9530bd026ccd271f60ac8d6c8e9ea458",
+      "stderr_sha256": "e822d5fb0f9eb7aca6933a8b9e3ec27f9827e544f4ca0dbeb12af3229a00ea2b"
+    },
+    {
+      "script": "review_residual_bridge_02.py",
+      "exit_code": 0,
+      "passed": 48,
+      "total": 48,
+      "same_except": [
+        "started_utc",
+        "finished_utc",
+        "utc"
+      ],
+      "match": true,
+      "stderr_bytes": 0,
+      "stderr_exact_match": true,
+      "seconds": 1.8548137919860892,
+      "stdout_sha256": "e3d329416c503036f376489885f038642026e161d1e3c81d226e4c888365ad79",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "script": "review_residual_bridge_03.py",
+      "exit_code": 0,
+      "passed": 6,
+      "total": 6,
+      "same_except": [
+        "started_utc",
+        "finished_utc",
+        "utc"
+      ],
+      "match": true,
+      "stderr_bytes": 0,
+      "stderr_exact_match": true,
+      "seconds": 0.05057195801055059,
+      "stdout_sha256": "d9b7ee2a707d1ade9eedad93adc6dd319048eca26df9532953fc936f0a64cffc",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "scope": "Reproduction of frozen independent finite controls. Preserved NumPy slogdet warnings are not suppressed; the separate Cholesky diagnostic confirms determinant values, not a resolved backend warning cause."
+}

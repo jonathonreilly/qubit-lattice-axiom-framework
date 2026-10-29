@@ -1,0 +1,37 @@
+{
+  "external_primary_sources": "See review_massgap_target_external_sources.json and review_massgap_target_external_fetch_diagnostic.json; PDF sections 3\u20134 and the dated announcement were read, not the unreleased proof.",
+  "methodology_provenance": "Same-context full methodology reads at current-main pin recorded in review_residual_source_manifest.json; no new authority or whole-PR certification inferred.",
+  "methodology_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "prior_reports_unchanged": {
+    "REVIEW_RESIDUAL_DETERMINANT_ASTRA.md": "3ec369126f85df9cc090cb92f136537c6cc422b7fb5ea107f91465a1f2e52038",
+    "REVIEW_RESIDUAL_LATTICE_BRIDGE_ASTRA.md": "57fb90b190ccc3280f841b5343aa24d4913aafe5d646e512d01c34799fa6c43b"
+  },
+  "schema": "scoped-independent-review-read-manifest-v1",
+  "sources": [
+    {
+      "bytes": 7323,
+      "complete_file_read": true,
+      "lines": 130,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_TARGET.md",
+      "read_ranges": [
+        [
+          1,
+          130
+        ]
+      ],
+      "revision": "9761471ab46e659ce856e2b9c7c10fef2b06cf5c",
+      "sha256": "d721bd77d36e6f96a1ce408c57d333776e17058a453b8c887ec0daf9f067cedf"
+    },
+    {
+      "binding": "Coordinator frozen SHA256, asserted before reading; complete original plus full exact diff; all other bytes unchanged.",
+      "bytes": 7507,
+      "coverage": "Complete 133-line corrected file by full original reading plus complete diff; scientific changes confined to section 3 onset/window and MG3.",
+      "lines": 133,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_TARGET.md",
+      "revision": null,
+      "same_context_fix_confirmation": true,
+      "sha256": "105440c10b9a2fc91b2be366f439053de05fd3d3497596f8f28993b0fe42de7b"
+    }
+  ],
+  "utc": "2026-10-29T14:36:13.650886+00:00"
+}

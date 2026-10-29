@@ -1,0 +1,30 @@
+{
+  "checks": {
+    "auxiliary_mass_cannot_supply_positive_remaining_lower_bound": true,
+    "fixed_time_limit_can_have_extra_vacuum": true,
+    "full_determinant_mu_k_squared": true,
+    "hidden_channel_violates_every_positive_exponential_rate": true,
+    "hidden_continuous_spectrum_correlation": true,
+    "hidden_low_spectral_projection_has_positive_mass": true,
+    "low_spectral_weight_breaks_target_rate": true,
+    "low_spectral_weight_cannot_cancel": false,
+    "massive_block_Schur_is_massless": true,
+    "observable_dependent_rate_can_close": true,
+    "one_small_eigenvalue_violates_common_half_rate": true,
+    "positive_cutoff_gap_can_close": true,
+    "selected_gapped_channel_exact": true,
+    "threshold_endpoint_allowed": true,
+    "uncontrolled_onset_window_empty": true,
+    "zero_momentum_has_zero_eigenvalue": true
+  },
+  "details": {
+    "auxiliary_Schur": "k**2",
+    "dense_varying_rate_counterexample": "On C Omega plus l2(N), H e_j=(1/j)e_j; finite-support vectors have dense span and individual positive exponential rates, but inf excited spectrum=0.",
+    "hidden_continuous_correlation": "1/t - exp(-t)/t",
+    "lemma_scope": "The projection proof is analytic in the report. Finite exact controls cannot prove an interacting lattice estimate.",
+    "onset_counterexample": "C_T(t)=1, m=1, A=1; requiring the bound only for 2T<=t<=T is vacuous while the fixed-time limit remains 1. The corrected common onset excludes this loophole."
+  },
+  "passed": 15,
+  "total": 16,
+  "utc": "2026-10-29T14:29:45.777463+00:00"
+}

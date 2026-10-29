@@ -136,7 +136,8 @@
 > independently confirms the finite completion and stated model calculation;
 > the model zero-residue conclusion still requires a common covariant
 > regulator. The actual lattice residual and its all-increments estimate
-> remain open. A new harmonic-lift/free-symbol checkpoint awaits review.
+> remain open. The separate harmonic-lift/free-symbol checkpoint is now
+> [independently confirmed at its finite charged-sector scope](REVIEW_RESIDUAL_LATTICE_BRIDGE_ASTRA.md).
 >
 > **Actual residual vertex proposal, 29 October:** the separate
 > [vertex continuation](checks/residual_det_vertices_working.md) supplies
@@ -150,9 +151,15 @@
 > [fixed-reference proposal](SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md)
 > derives a nontrivial-B small-chart source bound and normalized cube/ball
 > affine-return logarithms with full prefactors and marked supports. The
-> 49 author predicates reproduce; fresh review is underway, with an initial
-> complex-B/hard-history scope clarification identified. General histories,
+> 49 author predicates reproduce; fresh review is underway. Its initial
+> complex-B/hard-history scope correction is confirmed. General histories,
 > collars, all coarse fields and higher-level action matching remain open.
+>
+> **Physical gap criterion review completed:**
+> [the separate review](REVIEW_MASS_GAP_TARGET_ASTRA.md) confirms the spectral
+> reduction after explicitly fixing the decay onset time uniformly in cutoff
+> and volume. This is a sufficient criterion, with no actual infrared bound
+> or MG0–MG5 closure. The full existence-and-mass-gap goal remains active.
 
 > **PROVENANCE WARNING (2026-10-28T22:11:08Z, lead now claude-opus-5-5).** Every Claude-authored result in sessions 24 and 25 — lead consolidation and all worker files, commits 811b8ed6de through 666a71b7b9 — was produced on **claude-opus-5**, not the owner-required model (Claude: Opus 5.5 at extra effort or higher; Codex: gpt-6-astra at max). The owner has ruled that work likely unreliable. **Treat every session-24/25 status, fix, flag, refutation and number in this file as PROVISIONAL** until the Opus 5.5 review sweep recorded in SESSION25_RESULTS.md §PROVENANCE has re-established it. The only session-24/25 checks run at an approved setting are the Codex gpt-6-astra/max reviews (`CODEX_REVIEW_*.md`). The tally is reported as 72 / 2 / 7 / 24 + 1 **pending** that sweep.
 

@@ -2418,3 +2418,24 @@ the arbitrary-history scope of one complex-B analyticity assertion. The
 original frozen packet precedes the narrow repair. Full hard-history/collar
 and all-coarse-field return, higher-level induction, existence and the
 physical mass gap remain open.
+
+### Separate bridge and physical-gap criterion reviews — completed
+
+[The harmonic bridge review](REVIEW_RESIDUAL_LATTICE_BRIDGE_ASTRA.md) confirms
+the finite charged-sector identities, all gauge/Gram factors, the fixed-depth
+Dirichlet construction, free Hodge cancellation and all-mode/A7 estimates.
+Its 45+48+6 controls reproduce except UTC; the original NumPy determinant
+warnings and the independent Cholesky diagnostic are preserved. Actual
+off-shell vertices and neutral/full-periodic matching are separate work.
+
+[The physical-gap criterion review](REVIEW_MASS_GAP_TARGET_ASTRA.md) confirms
+the spectral reduction and counterexamples. It required a cutoff/volume-
+independent onset t_F and an eventually admissible fixed-time window; that
+narrow correction is confirmed. The first 15/16 control run preserves a
+structural symbolic-equality error, and a separate 4/4 exact-polynomial
+diagnosis confirms the intended inequality. Both outcomes reproduce.
+This supplies no actual infrared estimate or MG0–MG5 closure.
+
+The fresh source-continuation review also confirmed the narrow C8 correction:
+complex-B continuation is restricted to empty history or a separately
+justified holomorphic fixed-W pullback. Its remaining review is ongoing.

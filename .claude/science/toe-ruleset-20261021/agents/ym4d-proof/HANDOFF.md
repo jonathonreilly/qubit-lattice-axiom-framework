@@ -60,9 +60,10 @@ Current assignments use fresh `gpt-6-astra / max` contexts:
   including the distinct scalar-cube and link-ball domains.
 - **Independent alignment reviewer — completed:** the frozen conditional
   continuation and the narrow BA-5 repair are confirmed.
-- **Independent harmonic-bridge reviewer — active:** the new finite/free
-  lattice unit, the separate conditional mass-gap criterion, then the new
-  actual vertex unit, with separate reports and receipts.
+- **Independent harmonic-bridge reviewer — completed:** finite charged
+  determinant identities, free Hodge factors and the all-mode/A7 argument
+  are confirmed. The same reviewer has completed the separate conditional
+  mass-gap criterion review and is now reviewing the actual vertex unit.
 - **Physical mass-gap author — active:** exact coarse-flow/source transport
   and direct physical transfer estimates, with a uniform infrared bound as
   the target. No crossover or physical gap is established.
@@ -191,11 +192,16 @@ and [coordinator replay](checks/full_proof_residual_review_replay.json)
 retain both outcomes; replay differs only in UTC fields. No author-source
 correction was needed.
 
-The author has separately frozen an [actual finite/free lattice bridge](checks/residual_det_lattice_bridge_working.md)
-for review. It preserves the point-lift quartic-mode failure and constructs
+The [actual finite/free lattice bridge](checks/residual_det_lattice_bridge_working.md)
+has been [independently checked](REVIEW_RESIDUAL_LATTICE_BRIDGE_ASTRA.md).
+It preserves the point-lift quartic-mode failure and constructs
 a harmonic lift with its scalar Gram factor, internal Dirichlet gap and
 all-alias free principal matrix. Its compatible charged-sector regulator
-is explicit; its review is separate from the completed model review.
+is explicit. The independent 45+48+6 controls reproduce except UTC fields;
+the original NumPy determinant warnings remain preserved, and a separate
+Cholesky calculation confirms the values. [Replay](checks/full_proof_bridge_review_replay.json)
+binds these outcomes. This confirms the finite/free unit, not its later
+off-shell vertex proposal or full periodic/neutral matching.
 
 The new [actual vertex checkpoint](checks/residual_det_vertices_working.md)
 defines an auxiliary off-shell function distinct from the original Φ,
@@ -215,10 +221,19 @@ insertions and connected affine-return logarithms on the selected global
 small chart. It retains the source linear term, action and Jacobian factors,
 and every remote support mark. [Coordinator replay](checks/full_proof_source_cont_replay.json)
 matches all 44+5 author predicates except UTC/elapsed fields, with empty
-stderr. Fresh mathematical review is in progress. Its first provisional
-finding requires narrowing a complex-B analyticity sentence for arbitrary
-hard histories; the original frozen packet is preserved before that repair.
+stderr. Fresh mathematical review is in progress. Its first finding about
+complex-B analyticity with arbitrary hard histories has been narrowly
+corrected and confirmed in the same context. [Repair provenance](checks/full_proof_source_cont_history_fix.json)
+preserves the original frozen packet and before/after hashes.
 Neither general history matching nor the full return is claimed.
+
+The separate [mass-gap criterion review](REVIEW_MASS_GAP_TARGET_ASTRA.md)
+confirms the spectral lemma and the fixed-time passage after making the
+onset t_F explicitly independent of cutoff and volume. Its first 15/16
+control run retains a SymPy structural-equality error; the separate 4/4
+exact-polynomial diagnosis and both replays preserve that history.
+[The target note](MASS_GAP_TARGET.md) still has no actual infrared producer;
+MG0–MG5 and the full existence-and-mass-gap goal remain open.
 
 ## Goal and source identity
 

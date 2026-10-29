@@ -1,0 +1,19 @@
+contours (S4' in d=2): 18  max letters: 7 ; control contours: 1
+[B1/B2 sample 0] Omega coefficients eps^0..eps^4 per i: [['0', '0', '2', '1552/9', '-1978/27'], ['0', '0', '4', '-25', '-250'], ['0', '0', '0', '-61', '829/27']]
+[B1/B2 sample 0] sample P eps^3 vs BCH2-row prediction: [('-88/9', '-88/9'), ('16/3', '16/3'), ('0', '0')]
+[B1/B2 sample 1] Omega coefficients eps^0..eps^4 per i: [['0', '0', '4', '211', '1402/27'], ['0', '0', '-2', '-126', '3812/27'], ['0', '0', '-2', '-1051/3', '613/27']]
+[B1/B2 sample 1] sample P eps^3 vs BCH2-row prediction: [('4/3', '4/3'), ('0', '0'), ('0', '0')]
+[B1/B2 sample 2] Omega coefficients eps^0..eps^4 per i: [['0', '0', '-2', '590/9', '-32'], ['0', '0', '6', '-812/9', '778/27'], ['0', '0', '0', '-703/9', '-178/27']]
+[B1/B2 sample 2] sample P eps^3 vs BCH2-row prediction: [('-8/3', '-8/3'), ('0', '0'), ('0', '0')]
+[B3 sample 0] Omega coefficients eps^0..eps^4 per i: [['0', '0', '0', '452/9', '-2020/27'], ['0', '0', '0', '-27', '-10897/27'], ['0', '0', '0', '-1004/9', '-2584/9']]
+[B3 sample 0] P eps^3, eps^4 coefficients (first 3 links, i=0): [('0', '21410/81'), ('0', '-10948/81'), ('0', '0')]
+[B3 sample 1] Omega coefficients eps^0..eps^4 per i: [['0', '0', '0', '1447/9', '-226'], ['0', '0', '0', '791/9', '-282'], ['0', '0', '0', '125/9', '-3623/27']]
+[B3 sample 1] P eps^3, eps^4 coefficients (first 3 links, i=0): [('0', '-11242/81'), ('0', '3664/27'), ('0', '0')]
+[B4 control] Omega coefficients eps^0..eps^4 per i: [['0', '0', '0', '-320', '-534'], ['0', '0', '-72', '-10', '12620/3'], ['0', '0', '72', '64', '-11978/3']]
+[B4 control] control: Omega eps^2 coeffs ['0', '-72', '72'] ; P eps^3 coeffs (test links present in the single contour): [(((1, 1), 1), '1152'), (((4, 1), 1), '576'), (((3, 2), 0), '0')]
+B1 (Omega = 2 eps^2 rho2 + O(eps^3)): PASS
+B2 (P = O(eps^3), eps^3 coeff == independent BCH2-row prediction; nonvacuous): PASS [match: True  nonvacuous: True ]
+B3 (rho = 0: Omega = O(eps^3), P = O(eps^4); nonvacuous): PASS [orders: True  P eps^4 nonzero somewhere: True  Omega eps^3 nonzero somewhere: True ]
+B4 (control, single contour, no S4' average): FIRES
+B5 (sanity: phi, dphi, det M real; det W0 == 1): PASS
+OVERALL hg55_2: PASS

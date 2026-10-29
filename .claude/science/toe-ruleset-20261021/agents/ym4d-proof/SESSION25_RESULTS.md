@@ -1523,3 +1523,18 @@ LIN0_m (weighted (H-inv) for level-wise co-closed classes) as a by-product. **RE
 Combes-Thomas template does not apply (M·a(m) ≈ m·n). TOP-cc_m and the datum part hold for all m < m_*′.
 **Clause (b) now OPEN only on: the field half at m > 0, and the background transfer (R2).** Codex review launched
 (CODEX_REVIEW_COFM.md). **Launched on Opus 5.5: BGT55.md — the background transfer.** Field half at m > 0 queued.
+
+**Off-critical k-factor — `KFACTOR_OFF55.md`** (claude-opus-5-5, max). **Theorem K^{(σ)}: the composite contraction
+for 𝔉_k (residual weight 2 + σ, σ ∈ (0,1]; σ = 1 is NORMS's weight 3) closes with radius and smallness threshold
+independent of k and T, given ONE input (GV^{(σ)})_Γ** — the gauge-dependent half of the linear estimate (potentials
+and coarse C^{1,α}) for composite-co-closed sources in one slice; the lane's (G♯_0-field^∇). The rows obey
+π_l ≤ A_B L^{−σ(k−1−l)}η², A = L^{−σ}; **the ≈25(k−1) factor is exactly the σ = 0 endpoint.** **The off-critical
+remainder is AVOIDED, not bounded:** a modified iteration routing the off-root divergence level by level (Lemma HR,
+Prop CCP) feeds 𝓛_Γ^{-1} only composite-co-closed sources, its fixed points are exactly the critical points on the
+slice, and its correction is k-, T-uniform for σ > 0 (Prop CB; ~k² at σ = 0). **Lemma SG:** the higher-order rows
+inherit the residual's level decay at every order (local constants (LA) remain) — narrows CODEX_REVIEW_TR item 5.
+**Lemma TOP♯** proves KFACTOR_O55's Remark TOP-crit. REFUTED: HANDOFF item 5's "the factor k is upstream of (TENT-Q),
+(NEUT-box), (Y-sup^loc)". Check ko55_1 PASS (incl. a vacuous first draft of A4, caught and amended before the
+script). Codex review launched (CODEX_REVIEW_KOFF.md). HIGHER55 told to check Lemma SG rather than re-derive it.
+**Launched on Opus 5.5: GV55.md — does GSHARP55's Theorem GF-E deliver (GV^{(σ)})_Γ (closing Theorem K^{(σ)} and
+with it BFT-0/1/2), and the field half at m > 0** (merged with the queued field-half item).

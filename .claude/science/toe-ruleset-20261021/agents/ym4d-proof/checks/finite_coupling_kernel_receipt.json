@@ -1,0 +1,111 @@
+{
+  "frozen_utc": "2026-10-29T22:43:05.738841+00:00",
+  "unit": "finite_coupling_kernel",
+  "author_configuration": "User-requested Astra/max; backend identity not independently observable.",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_COUPLING_KERNEL_ASTRA.md",
+    "sha256": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b"
+  },
+  "read_manifest": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_coupling_kernel_read_manifest.json",
+    "sha256": "627122351b7005245f5c88248acb6b06decd1b2721c88eff8ab2935c01c25dce"
+  },
+  "artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_COUPLING_KERNEL_ASTRA.md",
+      "bytes": 30169,
+      "sha256": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_coupling_kernel_01.py",
+      "bytes": 9901,
+      "sha256": "df7b497469d73c1bc2b8faa7caea589a1f619057fec5b78566d376462e4001b0"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_coupling_kernel_01_results.json",
+      "bytes": 10708,
+      "sha256": "2a8ba99ae55e124d38290217d36936269cf576ff9bf0fe01063ce930e1f42552"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_coupling_kernel_criteria.md",
+      "bytes": 2677,
+      "sha256": "bd584a7adfb56b38961431d16661769bab25374f18fe26881d8b6f22f9c25ea0"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_coupling_kernel_preexecution_amendment.json",
+      "bytes": 3585,
+      "sha256": "5105ef4d0c1e95795fa3d0f45ab8e0fa8bd32cc79c670577619e5c4936d49dd1"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_coupling_kernel_read_manifest.json",
+      "bytes": 11179,
+      "sha256": "627122351b7005245f5c88248acb6b06decd1b2721c88eff8ab2935c01c25dce"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_coupling_kernel_run01_gate.json",
+      "bytes": 971,
+      "sha256": "39c62493297320d529eff772982b586850f5fb3abf2f8f4e4c01142ea22abbc9"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_coupling_kernel_run02_gate.json",
+      "bytes": 969,
+      "sha256": "9f775bd9340588fc9e3420bd335bfd4483230e576d32b98bbadc0aa631ba23b6"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_coupling_kernel_run02_output.txt",
+      "bytes": 10708,
+      "sha256": "2a8ba99ae55e124d38290217d36936269cf576ff9bf0fe01063ce930e1f42552"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_coupling_kernel_run02_run.json",
+      "bytes": 385,
+      "sha256": "d2c6c122bea6dcfb5b1c5d7ef365c208943795f5d90a95aec02a01f6019ccb97"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_coupling_kernel_run02_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_coupling_kernel_runner.py",
+      "bytes": 2950,
+      "sha256": "0bbbcac46f4f7d6b98f237b0c7439be5f7747a59854197e7c15fa197b80588d1"
+    }
+  ],
+  "input_pin_count": 17,
+  "all_input_pins_verified_unchanged": true,
+  "local_prose_link_count": 5,
+  "all_local_links_resolve_after_receipt_write": true,
+  "numerical_evidence": {
+    "result": "35/35 including5 detected mutations",
+    "actual_checker_runs": 1,
+    "gate_failures": 1,
+    "mathematical_run_failures": 0,
+    "preexecution_amendment": "Subleading SU2 spread coefficient sign corrected analytically before any child execution; original text/hashes preserved, no tolerance change.",
+    "resource_report": "Run01 failed49%memory; run02 passed54%, load2.616<5, nice15, threads1, CPU/wall90s, RSS300MiB watchdog; actual0.775s, peak136304KiB."
+  },
+  "protected_frozen_sources": {
+    "COVARIANT_COMPLEMENT_ASTRA.md": "af4c8206ccc2ce86274e5f92643e28154abb010b7f413d5cf578035efb1eaa7b",
+    "UNIFORM_ONE_LOOP_COUPLING_ASTRA.md": "b7baa6a711969c8fc96538009bb8f9f9acdde3f14f6d2f570a6ca5b9391516ce"
+  },
+  "proof_boundary": {
+    "proved_here": [
+      "uniform independent-complex SU(N) scalar kernel Laplace remainder and mixed derivatives on a fixed parameter neighborhood for sufficiently large real stiffness",
+      "whole compact-cycle translation with holomorphic Haar and exact SU saddle",
+      "actual S4prime field/coarse chart and preintegration local row/column bounds",
+      "exact determinant/spread Hessian remainder identification"
+    ],
+    "provider_corollary": "FK23 uses CB14 at its exact one-step complex-original-source domain with the explicit extra curvature/image cap; individual source derivatives only.",
+    "not_proved": [
+      "interacting connected fluctuation remainder",
+      "integrated complex source denominator nonvanishing",
+      "hard complement return",
+      "multilevel nonlinear coupling map",
+      "uniform all-depth nonlinear inverse",
+      "continuum existence",
+      "physical continuum mass gap"
+    ]
+  },
+  "independent_review_state": "Awaiting fresh independent reviewer; author freeze is not a review or audit verdict.",
+  "operations": "No Git, shared status, audit or lock mutation. Frozen CC and UL source hashes reverified unchanged."
+}

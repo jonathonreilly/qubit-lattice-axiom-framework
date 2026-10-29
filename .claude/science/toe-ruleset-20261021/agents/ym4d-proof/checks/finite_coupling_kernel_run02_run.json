@@ -1,0 +1,8 @@
+{
+  "exit_code": 0,
+  "elapsed_seconds": 0.7749096250045113,
+  "peak_rss_kib": 136304,
+  "termination_reason": null,
+  "program": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_coupling_kernel_01.py",
+  "program_sha256": "df7b497469d73c1bc2b8faa7caea589a1f619057fec5b78566d376462e4001b0"
+}

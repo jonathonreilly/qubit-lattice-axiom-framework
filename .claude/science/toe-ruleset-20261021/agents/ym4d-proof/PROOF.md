@@ -349,16 +349,21 @@
 > to PASS, and its temporary raw-replay directory is unavailable here. These
 > verification limits do not turn the repaired specification into a theorem.
 >
-> The current [reconstruction-library R2](REVIEW_REC_LIB_R2.md) confirms the
-> corrected tensor constant and conditional lemmas, with R-CONT, the general
-> tensor dictionary, consumer edits, unconditional moments and physical decay
-> still open. The earlier [coordinator tensor correction](checks/full_proof_rec_tensor_fix.json)
-> and [affected review](REVIEW_REC_TENSOR_FIX_ASTRA.md) remain preserved against
-> their earlier source revision; they are not restamped onto R2.
-> The subsequent [REC-CONT review](REVIEW_REC_CONT.md) is HOLD: the analytic seed
-> from the permitted distribution hypotheses and quantitative domain exhaustion
-> remain unproved. Its conditional finite-stage and spatial/boundary lemmas
-> are retained; the new REC_LIB residue paragraph does not close R-CONT.
+> The [reconstruction-library R2](REVIEW_REC_LIB_R2.md) and earlier
+> [coordinator tensor correction](checks/full_proof_rec_tensor_fix.json) with
+> [affected review](REVIEW_REC_TENSOR_FIX_ASTRA.md) retain their original scopes
+> and source identities. The historical [REC-CONT HOLD](REVIEW_REC_CONT.md)
+> is now followed by [pass-2 LAND](REVIEW_REC_CONT_R2.md) and a separate
+> [author-side independent review](checks/reccont2_review.md). These bind the
+> current [continuation source](REC_CONT.md): the analytic seed is constructed
+> from E0-prime through E3, reality and normalization on flat tests, and a
+> sparse-coordinate induction supplies quantitative domain exhaustion. They
+> confirm the exact L-CONT implication for the specified finite Cartesian
+> tensor family, including the full tube and tempered boundary. The general
+> tensor dictionary, external consumer edits, actual Yang-Mills hierarchy,
+> unconditional moments and physical decay remain open. The auxiliary review
+> explicitly requested Astra/low; the separate pass-2 report does not identify
+> its effort setting. Neither is relabeled as an Astra/max review.
 >
 > The current [LIB1 R2](REVIEW_LIB1_R2.md) confirms the conditional finite-graph
 > library and its separate v2 norm-control repair. The earlier
@@ -391,6 +396,22 @@
 > obligations. Original e-only non-freeness and OWN-free are not discharged.
 > The literature register now contains 39 explicitly scoped entries, with
 > primary-source coverage distinguished from complete proof certification.
+>
+> The [finite-coupling kernel draft](FINITE_COUPLING_KERNEL_ASTRA.md) is now
+> [frozen](checks/finite_coupling_kernel_receipt.json), with fresh independent
+> Astra/max review active. It constructs a uniform O(1/u) analytic remainder
+> for the actual normalized SU(N) kernel after extraction of its tree phase,
+> probability Haar factor and full colour Hessian determinant. It retains the
+> scalar SU saddle constraint, actual S4-prime readers and the exact finite-u
+> spread term; the already counted one-loop determinant is not added twice.
+> The author reports 35/35 finite predicates, including five controls. The
+> 49-percent memory gate failure and a sign correction made before any
+> numerical execution remain recorded. This is a single-kernel author result;
+> it does not close the interacting RG remainder or integrated source return.
+>
+> Other active Astra/max authors pursue the fixed source radius with bounded
+> nonlinear decorations and the original-law coercivity/tail estimate. Their
+> unfinished work is not an established conclusion.
 >
 > Both **full continuum existence and the physical continuum mass gap remain
 > OPEN**. No audit grade or whole-PR verdict is added at this checkpoint.

@@ -1939,3 +1939,9 @@ separations and the original PANEL_P1 closure banked. REFUTED in ASSEMBLY55: F2a
 necessity, its ordering. **Codex's corrected 17-item ordered work list is now the authoritative remaining-work list
 (HANDOFF points to it).** Items 1-2 (one OS formulation/algebra; absolute non-freeness on it) precede all estimates —
 forwarded to OSLEAF55 and NONFREE55.
+
+**CX-LCONV** (`CODEX_REVIEW_LCONV.md`). The counterexamples are real (stripe, bare-action quotient, exponential chart,
+FOL locally) but the no-go is NARROWER than LCONV55 claimed: Codex does not bank an unrestricted refutation of (LC-1′), a
+universal convexity/Peierls no-go, or the lowered-coupling identity. Open question: does the negative direction respect
+the actual coarse collar and stay negative in the consumer's chart/metric. Node A proceeds via STEP55's one-step route
+either way (forwarded).

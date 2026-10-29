@@ -58,7 +58,7 @@ TQ itself is unproved, and whether RP plus Wilson-specific inputs can give it is
 | Input | Status (banked pieces in [S26-BANKED]) | File / worker |
 |---|---|---|
 | Coupling flow | conditionally reduced (FLOW55) to one trivial-background estimate (UIR^♮) | UIR55 (running) |
-| BFT-0 identification | slice form banked; the nonlinear slice lemma (NSL) open | NSL55 (running) |
+| BFT-0 identification | banked conditionally (NSL + Theorem ID, Balaban's convention, trivial background, 𝒞_glob); identification with PROOF's per-level BR1 actions not banked — needed only if a consumer uses them | NSL55 + CODEX_REVIEW_NSL |
 | BFT-1/2 | banked on 𝒞_glob, conditional on named lane-A linear inputs (K^(σ), GV-E, TR∞) | — |
 | BFT-3 | banked conditionally on the global potential-small domain (Lemma WD, route C); per-level identification and the full curvature-small class open | BFT34_55 + CODEX_REVIEW_BFT34 |
 | BFT-4 | not implied by analyticity + BFT-3 (Prop. CX); reduced to local ARGUED items + (CovLift) | BFT4W55 (running) |

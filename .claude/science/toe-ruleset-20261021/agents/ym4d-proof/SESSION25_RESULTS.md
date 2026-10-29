@@ -1824,3 +1824,8 @@ U-NT, on top of layer 1 with ACTION-BASED large-field bounds (no chessboard on t
 P4 S4(b)'s "seam Chern–Simons excluded by θ_eq" (it is θ_eq-even; excluded instead by small-gauge invariance + coordinate
 reflections). 17 PROVEN-HERE / 3 CONDITIONAL / 4 ARGUED; checks sp55_kill, sp55_seam PASS with controls firing. **Codex
 review launched (CODEX_REVIEW_SPHERE.md). Follow-up launched: SEAM55** — N5 and W0, the sphere route's own inputs.
+
+**CX-NSL** (`CODEX_REVIEW_NSL.md`). NSL55 banked conditionally: (NSL), Corollary K-U (meets Codex's own fixed-radius
+uniqueness bar), Theorem ID (I1)-(I4), composite tower in Balaban's convention. Codex's most dangerous remaining item:
+uniform E_j^cb = E_j^br (the independently prescribed BR1 actions) — NSL55 says no BFT-route consumer needs it; whether
+ANY consumer does is now a question for ASSEMBLY55 (told).

@@ -348,3 +348,23 @@ two-point orbit; the rotlet shows conservation, symmetry and an infrared bound a
 Wilson/RP-state counterexample); invariant sphere states need no shell argument, conditional on their construction.
 The ranking (sphere route first) is unchanged: it rests on the sphere needing no infrared input, not on these two
 sentences.
+
+---
+
+## 15. Corrections to §11, from CODEX_REVIEW_BALX (Codex checked BALABAN_EXTRACT against ten open arXiv expositions)
+
+- **"Balaban's thresholds are fixed (ε_0, ε_1), not g_k-scaled" — REFUTED as a general account** (F2). The expositions
+  use coupling-dependent integration cuts (Dimock I §3.2: p_k = (−log λ_k)^p; QED3: p(e_k) = (−log e_k)^p for the
+  small/large-field split) alongside fixed deterministic regularity radii (Goswami's σ-model: ε_0, ε_1). Both kinds of
+  object exist; §11 conflated them. A fixed CMP 109 background class may exist (not verified). Consequence: the
+  coupling-scaled threshold option is not excluded; LARGE55 was told.
+- **"No readable Balaban paper proves the coupling flow" — REFUTED as a negative inference** (F8). A theorem conditional
+  on g_k ≤ γ is compatible with a separate theorem arranging that hypothesis (the QED3 papers do exactly that for their
+  non-marginal parameters). What stands: **no verified 4D marginal-flow theorem is imported from the checked corpus**, so
+  the flow must still be supplied here (FLOW55 → (UIR^♮), UIR55 running). The plan does not change; the sentence does.
+- Of BALABAN_EXTRACT's eight refuted PROOF.md paraphrases (§11, "BAL-F3"), Codex supports 2 narrowly, rejects 2 and
+  leaves 4 NOT-VERIFIED (F10). Do not cite "8 paraphrases are wrong".
+- **Codex's most dangerous unverified item:** a k- and volume-uniform inverse bound for the actual nonabelian composite
+  Hessian on our slice, in our source norms, with curvature and residual/multiplier terms. On the trivial background it
+  is banked (GF-E, K^(σ), GV-E); at Z ≠ 1 it is exactly what Theorem GA + alignment (ALIGN55) and OFFGLOB55 must supply.
+  Scalar/abelian uniformity from the expositions does not supply it.

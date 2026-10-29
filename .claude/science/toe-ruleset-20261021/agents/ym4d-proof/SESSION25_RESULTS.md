@@ -1770,3 +1770,10 @@ only ~(log ℓ_ref/a)^{−1/α}); (LOC-e) — the singleton reduced to the flow 
 errata E1-E9 in place. **Codex review launched (CODEX_REVIEW_SRCAN.md).**
 **Launched in the freed slot: LARGE55** (Opus 5.5 max) — first-principles simplification of the large-field part
 (RLARGE v3's ~30-item DAG vs an action-based Balaban/Dimock large/small-field split), then close what remains.
+
+**CX-BALX** (`CODEX_REVIEW_BALX.md`, gpt-6-astra max, against the ten arXiv expositions). Two lead statements in
+PLAN_S26 §11 corrected (§15): Balaban-method thresholds are NOT generally fixed — coupling-dependent cuts p(g_k) coexist
+with fixed regularity radii; and the corpus cannot show that no flow proof exists, only that none is imported. BAL-F3's
+"8 refuted paraphrases" → 2 supported narrowly / 2 rejected / 4 not verified. Banked only: the scoped scalar/abelian
+mechanisms, the Gaussian composition identity, the linear hard-source identity with the corrected soft shift, the F3
+finite-scale correction (alternative cutoff has a summable n^{−3/2} tail). No new 4D statement. F2 forwarded to LARGE55.

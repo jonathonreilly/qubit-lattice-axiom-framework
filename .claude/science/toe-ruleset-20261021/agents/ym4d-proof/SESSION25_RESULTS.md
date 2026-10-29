@@ -1980,3 +1980,10 @@ retirement of ALIGN55). REFUTED in OFFGLOB55: U1's coefficient, real-frame AP on
 order, generator signs, ΓK's leading sign, a localisation coefficient. Most dangerous: uniform root-preserving relative
 frame patching. My earlier "a paper-scale wall becomes local bookkeeping" was premature; forwarded to OFFGLOB2_55 (now
 priority: FP/RG lemmas, complex convention, GP's error operator) and ALIGN2_55 (alignment stays on the path).
+
+**CX-LARGE** (`CODEX_REVIEW_LARGE.md`). Lemmas TL, PP, DENSE, MIS, COL, KA banked (scoped). **The route recommendation
+did NOT pass the two-family check:** replacing v3's pricing is a worthwhile candidate, not a verified simplification; no
+RLARGE rows are dropped. REFUTED in LARGE55: an omitted kernel normaliser, unsupported analyticity/source implications,
+overbroad freezing conclusions. Most dangerous: a zero-free domain for normalised returned activities. Codex's
+milestone (one normalised history-compatible step on a chart with a hole) forwarded to STEP55. (Codex disclosed a
+range-read protocol exception in its own review.)

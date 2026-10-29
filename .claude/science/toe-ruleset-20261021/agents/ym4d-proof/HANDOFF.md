@@ -87,8 +87,11 @@ formulation and observable algebra (OSLEAF55, running); (2) an absolute non-free
 algebra (NONFREE55, running) — the single most dangerous item. DIAG is proven (Codex R2). ASSEMBLY55's 18 mismatch labels
 are superseded by the review's scope-specific verdicts.
 
-## Large-field architecture (LARGE55, 2026-10-29; Codex review running — a route choice, so it waits for the cross-family verdict)
+## Large-field architecture (LARGE55; Codex verdict 2026-10-29: candidate route, NOT adopted — nothing dropped from RLARGE)
 Recommendation: keep RLARGE v3's R-operation (returned-cluster renormalisation, forced in d = 4 by Theorem DENSE) and
 HIST-sum's arithmetic; replace v3's HW/PLD/SQ moment-pricing layer by Balaban-type level-by-level pricing (Lemmas MIS,
 COL, KA, PRICE). Would drop 15 of RLARGE §4.2's 38 rows incl. (CLS-min)⇐(REG-min), (AE)⇐(MS-Sob), (SDP)^A, and (KS-N).
 New/remaining inputs I1-I11 (LARGE55 §6.4); (LF-diff) (I10) is needed by UNIV and SRC on every route.
+Codex's milestone that would make the route comparison real: one normalised, history-compatible step on a chart with a hole
+(main-term price, mismatch implication, normalised returned-activity analytic norm incl. a ZERO-FREE normaliser, reference
+comparison, failed returns) — this is STEP55's task.

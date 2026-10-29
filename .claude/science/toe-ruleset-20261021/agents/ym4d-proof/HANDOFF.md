@@ -526,3 +526,39 @@ three unchanged prior reports. The packaging-only preflight error and raw
 diff are preserved. Neutral/full-periodic/full-colour matching and H1/H2/H3
 remain open; the author has resumed those constructions in a separate unit.
 This does not close UIR, existence/reconstruction or the physical mass gap.
+
+### H_RP author packet and F25 wording correction — 29 October 2026
+
+ASSEMBLY55 §7 F25 records the earlier HANDOFF sentence: “H_RP is exact
+for the Wilson action on the torus and on the sphere's equator (banked)”.
+That sentence is not present verbatim in this newer handoff revision;
+this appended correction addresses the historical wording identified by
+F25 without altering earlier text.
+
+Correct status: the torus result was PROOF L9a's pre-S24
+**IMPORTED-AND-REVERIFIED** entry, not an [S26-BANKED] result. The
+reviewed equatorial sphere RP did not supply the coordinate great-sphere
+RP consumed by N1S. [HRP.md](HRP.md) now supplies an author proof for
+finite periodic SU(N) Wilson link/site RP with both periodic planes,
+the zero-source soft-chain bare-marginal transfer, and θ_μ RP for the
+actual sphere prism regulator. It also states the conditional limit
+implications on the ordinary-polynomial and restricted OS domains
+separately. **The new packet is pending independent review, not banked.**
+
+The proof uses nonnegative reflection-paired crossing coefficients and
+the stated local observable support. Normalized auxiliary kernels
+preserve the bare marginal; nonzero source tilts generally change it.
+Coordinate RP is used by SPHERE55 §§5.2/13; the appended §14 corrects
+§1.5's contrary “cross-check” wording. No regulator modification is
+proposed. H_reg/(EXT), common-algebra selection, cap state invariance,
+the diagonal and trajectory inputs, H_int, existence and the physical
+mass gap remain outside this result.
+
+Exact-check scripts and immutable criteria are in `checks/hrp_*`.
+The initial run was stopped before calculation because the sandbox
+denied the mandated nice-priority change; the failed attempt and
+resource receipts are preserved. [HRP_LOG.md](HRP_LOG.md) records the
+current execution disposition and recovery command. The separate
+reviewer should read the full HRP proof, the appended SPHERE55 erratum,
+and actual check evidence before deciding what may be banked. No
+PROOF tally, audit ledger, commit, push or PR was changed by this author.

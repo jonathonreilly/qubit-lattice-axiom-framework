@@ -1914,3 +1914,9 @@ invariance for free, so (c₀) ⇒ (b). (CovLift), (Mult-Y), (Pair-loc), (I-id)_
 §2.1's "sup meaningful only for gauge-invariant R(X)"; BB-4c (ii)'s flat-point clause for BFT4a-glob's pieces (feeds only
 (iii), off route). Check b4b55_1 PASS (tests AVG's algebra only). **Codex review launched (CODEX_REVIEW_BFT4B.md);
 (c₀) forwarded to OFFGLOB2_55.**
+
+**CX-ALIGN** (`CODEX_REVIEW_ALIGN.md`). Banked: RED′ (corrected), NEC-E (S_E fails the alignment), HC-1 algebra, L = 3
+certificate, R2-glob♯ as an implication. REFUTED inside ALIGN55: RED′'s intermediate charge identity, a derivative-only
+pure-gauge example, axial growth as a norm test; AC product L^{−4} not L^{−2}. Most dangerous: the all-order Hessian-
+difference estimate in the actual chart/norms. Forwarded to ALIGN2_55 (which is also checking whether OFFGLOB55's
+GP/L2 make the alignment unnecessary).

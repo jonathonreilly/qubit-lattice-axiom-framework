@@ -1,4 +1,4 @@
-nice: setpriority: Operation not permitted
-        0.08 real         0.02 user         0.01 sys
-time: sysctl kern.clockrate: Operation not permitted
-numeric_exit=1 cleanup_exit=0
+real 1.41
+user 1.38
+sys 0.01
+numeric_exit=2 cleanup_exit=0

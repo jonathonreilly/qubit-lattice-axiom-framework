@@ -1654,3 +1654,17 @@ nothing excludes that (Elitzur's argument is exactly ROTDEF's identity, whose le
 REFUTED (it is an |x|⁻⁴ stress tail). **Sphere route: no shell term, invariance survives even if TQ fails — now the
 leading route (PLAN_S26 §13).** Codex review launched (CODEX_REVIEW_TQ.md). **Launched on Opus 5.5: HINT2_55.md — the
 Yang-Mills side of the non-freeness witness.**
+
+**SRC and CD — `SRCCD55.md`** (claude-opus-5-5, max). **CD is not a separate input: it follows from SRC by an exact
+identity** (Proposition B): the soft chain is Markov across levels, so the conditional covariance given U_K is the sum of
+expected one-step conditional covariances, each one RG step's integrand; decay rate = the soft-constraint mass, NOT a
+physical gap; no coarse-law information (check sc55_tel passes, controls fire). Same identity = the solved second-order
+source recursion (linear at first order, triangular above). **So ONE node, SRC — the RG with a complex,
+position-dependent coupling conditioned on U_K — serves OS0, the flat route, the sphere Ward route and P4's S4(a).**
+**Lemma V (proven, unconditional for small g_0): Var(O_a(f)) ≥ 1.5·10⁻⁶ g_0⁴a⁻⁴(‖f‖² − O(a)) uniformly in the torus** —
+**REFUTES ROTDEF's SRC-E** and P4 §2.1's "local moment bounds for point-like dimension-4 composites are OPEN" (they are
+FALSE; only flowed/separated forms survive). Precise statements SRC-κ / SRC-M / SRC-I; OS0 needs SRC-κ's e_a part + SRC-I
+(Peierls) with no coarse decay (Prop E). SRC-W → SRC-W′ (insertion contact term). Missing for SRC: BFT and N5/N6 with a
+source-dependent coupling; RLF per-step conditioned on U_K; (F_R) with slowly varying coupling; large coarse fields
+(= UNIV55's N3); SRC-M. 11 CONFIRMED / 5 NV / 3 REFUTED. Codex review launched (CODEX_REVIEW_SRCCD.md). **Launched on
+Opus 5.5: SRCAN55.md — SRC via analyticity of the RG in position-dependent complex couplings.**

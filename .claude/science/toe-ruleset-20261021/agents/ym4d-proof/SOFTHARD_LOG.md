@@ -508,3 +508,207 @@ Recovery/next decision: read this checkpoint and the exact v2 hashes before cont
   }
 }
 ```
+
+## Softhard3 R2 binding repair — first in-place edit
+
+[R-fix 2026-10-29 B3] Replaced the fixed-V return with a joint two-level integration/reinsertion on common external data. The replacement states both adjoining kernels, frozen/interior link sets, the full pushforward/disintegration and quotient/coarea factors, the positive-reference domain, and an exact zero-reference residual measure. Only components larger than n_sharp can enter the history; small residuals remain open until the stated coverage theorem is proved. The output measure is explicitly converted to a two-field next input, with a separate transport estimate. Related decision-test, norm, nonvanishing, induction, history and open-obligation paragraphs were aligned; superseded B3 quotations were removed rather than retained. This supplies a proposed contract, not its proof.
+
+[R-fix 2026-10-29 B4] Updated the verification boundary to R2: the reviewer authenticated the words of the two unavailable local quotations online; all six historical external PDF byte hashes remain open. No fresh author PDF authentication is claimed. The old v2 checker/results remain frozen evidence for their old input; no numerical calculation or checker change is part of this statement repair. B1/B2 and the corrected Dimock II locators are untouched.
+
+Scope: author repairs only, no commit/ref mutation, no prompt edits. Source HEAD 364ea2b6eccd044b34ada4eb551ea1d08dd6b8a6; cached origin/main ca2bc7ddf64790da96cd43d42017d000fbfe4808. The workflow, integrator skill and freshness procedure were checked identical to that cached main; remote freshness is not claimed. PROCESS_LIGHT controls the in-place edit. The R2 review and the HIST/RLARGE consumer definitions were read at the hashes below. Full pre-edit inventory and recovery copies: /private/tmp/softhard3-r2-5uwsgsfp/ (2,982 files). No denial of a required step has occurred; the unavailable `python` command was replaced by `python3` before any edit. No frozen checker was executed.
+
+```json
+{
+  "utc": "2026-10-29T21:21:45.838810+00:00",
+  "memo_before": {
+    "sha256": "6f8a3301a0f8af9187a1e941ab98aa7f808b69125fef83abf05faf9bb8a8c8c6",
+    "size": 126619,
+    "mode": "0o100644",
+    "inode": 563759011,
+    "mtime_ns": 1793307068064618351,
+    "ctime_ns": 1793307068064618351
+  },
+  "memo_after": {
+    "path": "SOFTHARD.md",
+    "bytes": 133318,
+    "st_mode": "0o100644",
+    "st_ino": 563759011,
+    "st_mtime_ns": 1793308874522042345,
+    "st_ctime_ns": 1793308874522042345,
+    "sha256": "5613e84fab8b3b835eae65fda0a9091af40a43efe10a4d4e12256f4c328d9e6b"
+  },
+  "log_pre_append": {
+    "path": "SOFTHARD_LOG.md",
+    "bytes": 30508,
+    "st_mode": "0o100644",
+    "st_ino": 563759012,
+    "st_mtime_ns": 1793307068065258194,
+    "st_ctime_ns": 1793307068065258194,
+    "sha256": "479feba5ffa188a037b68c809f7f32c93cfbbf2c063ade2776a2b6e6cf58068a"
+  },
+  "sources": [
+    {
+      "path": "REVIEW_SOFTHARD_R2.md",
+      "bytes": 18251,
+      "st_mode": "0o100644",
+      "st_ino": 563759010,
+      "st_mtime_ns": 1793307068064222803,
+      "st_ctime_ns": 1793307068064222803,
+      "sha256": "02b7b7ee556df6f501bc0c206497192423b01633c1907fa3bd6ff2019d75ab0b"
+    },
+    {
+      "path": "PROCESS_LIGHT.md",
+      "bytes": 1497,
+      "st_mode": "0o100644",
+      "st_ino": 563758884,
+      "st_mtime_ns": 1793307067767109336,
+      "st_ctime_ns": 1793307067767109336,
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab"
+    },
+    {
+      "path": "HIST.md",
+      "bytes": 203830,
+      "st_mode": "0o100644",
+      "st_ino": 563237045,
+      "st_mtime_ns": 1793294574982968381,
+      "st_ctime_ns": 1793294574982968381,
+      "sha256": "0bafb04ecda4b88f13f958026f4c817b3d536207a0de2d1f347f425e5f61097c"
+    },
+    {
+      "path": "RLARGE.md",
+      "bytes": 134489,
+      "st_mode": "0o100644",
+      "st_ino": 563237210,
+      "st_mtime_ns": 1793294575026172506,
+      "st_ctime_ns": 1793294575026172506,
+      "sha256": "4f3d2777bcd736ad6936946f6c072ebebd8fe2638839538ea0db28825f2438d2"
+    }
+  ]
+}
+```
+
+## Softhard3 in-place consistency pass
+
+[R-fix 2026-10-29 B3] Put both fields directly in the output norm and its chart definition; removed the redundant corrective wording below the formula. [R-fix 2026-10-29 B4] Removed the superseded completion quotation adjacent to the updated verification boundary, including its stale assertion that no reviewer had run. No resolved B1/B2 text or frozen evidence changed.
+
+```json
+{
+  "utc": "2026-10-29T21:23:00.749374+00:00",
+  "memo_before": {
+    "path": "SOFTHARD.md",
+    "bytes": 133318,
+    "st_mode": "0o100644",
+    "st_ino": 563759011,
+    "st_mtime_ns": 1793308874522042345,
+    "st_ctime_ns": 1793308874522042345,
+    "sha256": "5613e84fab8b3b835eae65fda0a9091af40a43efe10a4d4e12256f4c328d9e6b"
+  },
+  "memo_after": {
+    "path": "SOFTHARD.md",
+    "bytes": 132759,
+    "st_mode": "0o100644",
+    "st_ino": 563759011,
+    "st_mtime_ns": 1793308980748980716,
+    "st_ctime_ns": 1793308980748980716,
+    "sha256": "17e807f2a01c7c19f66ee5a320739c0ac9e2be6b6fbf1c022d1cd8ddeb337ead"
+  },
+  "log_pre_append": {
+    "path": "SOFTHARD_LOG.md",
+    "bytes": 34569,
+    "st_mode": "0o100644",
+    "st_ino": 563759012,
+    "st_mtime_ns": 1793308905841778944,
+    "st_ctime_ns": 1793308905841778944,
+    "sha256": "50588e0b8ba9067dd8c04155832846ef6a845f53ccb5f1d4ba1fc5962e61ce7f"
+  }
+}
+```
+
+## Softhard3 fresh statement check and narrow corrections
+
+[R-fix 2026-10-29 B3] A fresh read-only same-family Codex reviewer examined memo 17e807f2a01c7c19f66ee5a320739c0ac9e2be6b6fbf1c022d1cd8ddeb337ead against R2 and the HIST/RLARGE consumers. Its statement-only verdict was HOLD, with two concrete findings: (1) a fixed-W density determined only dV-almost everywhere can lose mass when subsequently evaluated on a singular hard kernel; (2) the terminal prefix implicitly introduced 𝒰_K beyond HIST's last history level K−1. The reviewer accepted the joint-interior ratio, full kernels, source-preserving rewriting and exact zero-reference residue as adequate statement-level repairs, with the support-coverage theorem still OPEN. This was a fresh-context check, not cross-family evidence or theorem certification.
+
+Applied the two corrections in place: define the next output by the joint pushforward including both kernels, then demand its Radon–Nikodym representation relative to dHaar(V) K_(j+1)(dW|V), with a named singular remainder S. Define a separate complete terminal integral with histories ending at K−1; all top-field defects remain in that integral. Clarified that any bare-return multiplier belongs in the actual initial two-field input. No estimates or singular/zero-reference coverage are claimed proved. The reviewer will inspect this exact delta before the author checkpoint.
+
+```json
+{
+  "utc": "2026-10-29T21:29:58.854316+00:00",
+  "memo_before": {
+    "path": "SOFTHARD.md",
+    "bytes": 132759,
+    "st_mode": "0o100644",
+    "st_ino": 563759011,
+    "st_mtime_ns": 1793308980748980716,
+    "st_ctime_ns": 1793308980748980716,
+    "sha256": "17e807f2a01c7c19f66ee5a320739c0ac9e2be6b6fbf1c022d1cd8ddeb337ead"
+  },
+  "memo_after": {
+    "path": "SOFTHARD.md",
+    "bytes": 134852,
+    "st_mode": "0o100644",
+    "st_ino": 563759011,
+    "st_mtime_ns": 1793309398853988506,
+    "st_ctime_ns": 1793309398853988506,
+    "sha256": "890c3726f86ad7dc557f5c16a8f6e99a014896acee18a480ef44f81fc6069968"
+  },
+  "log_pre_append": {
+    "path": "SOFTHARD_LOG.md",
+    "bytes": 35903,
+    "st_mode": "0o100644",
+    "st_ino": 563759012,
+    "st_mtime_ns": 1793308980750441344,
+    "st_ctime_ns": 1793308980750441344,
+    "sha256": "42203f398d3099b7e14bf413d1c251e7aae1efad9d1586f0b729f7f32c599a25"
+  }
+}
+```
+
+## Current softhard3 checkpoint — R2 binding fixes
+
+- **B1 — RESOLVED in R2, preserved.** No crosswalk/result-credit edits in this task.
+- **B2 — RESOLVED in R2, preserved.** No differential-cost or common/interface ledger edits in this task.
+- **B3 — STATEMENT REPAIR COMPLETE; theorem OPEN.** The joint interiors, both adjoining kernels, common external measure, positive-reference domain, exact zero-reference residue, joint output representation and separate terminal operation are specified. Support coverage (𝓡=0), absence/representation of singular output S, map/atlas existence, analytic/source/transport estimates, histories and terminal bounds remain proof obligations in SOFTHARD.md. A positive small residual cannot be put in the large-component history. No hard-return theorem or physical closure has been established.
+- **B4 — LOCATOR RESOLVED; historical byte verification PARTIAL.** R2 confirms the two missing-local quotation fragments online. The six original external PDF hashes remain unauthenticated; none matches any file in the current working-folder inventory. This is unavailable-input residue, not a new sandbox denial. The current task did not download or authenticate replacement PDFs.
+
+The fresh read-only same-family Codex reviewer re-examined the two corrected definitions on memo SHA-256 890c3726f86ad7dc557f5c16a8f6e99a014896acee18a480ef44f81fc6069968 and found no remaining blocking definition defect. Its final finding: the joint pushforward/Radon–Nikodym representation retains singular mass explicitly, and the terminal integral includes all top-field sectors while histories end at K−1. Original-source, reference-support and transport requirements remain consistent. **VERDICT: LAND — statement repair only.** This is not proof of the open obligations, cross-family independence, scientific/audit status or authorization to land. The historical R2 review file and its HOLD remain untouched.
+
+Author verification: complete changed arguments/diffs and relevant HIST/RLARGE premises inspected; git diff --check passes. The 2,982-file inventory differs only in SOFTHARD.md and SOFTHARD_LOG.md; every frozen check script/output and every consumer/review source is unchanged. No files were added in the working folder. No new checker or numerical run was needed; frozen v2 preservation tests describe the old input and were not rerun or promoted to current verification. This task's edits were in place, with no newly struck/quoted original paragraphs. Every memo edit has pre/post stat, byte count and hash receipts above; log appends record their pre-append stat to avoid a self-referential final receipt. No commits, ref mutations, audit files, prompt files or other repository files changed.
+
+Recovery: the current memo and this checkpoint are the active handoff. Initial snapshots, the full diff and full final scope inventory are under /private/tmp/softhard3-r2-5uwsgsfp/. Reopen B4 byte authentication only with the actual frozen PDF identities; reopen HRT science with an exhibited construction and the named support/representation/estimate obligations, not this statement verdict. The next reviewer should use the final memo hash below.
+
+```json
+{
+  "utc": "2026-10-29T21:32:23.245086+00:00",
+  "head": "364ea2b6eccd044b34ada4eb551ea1d08dd6b8a6",
+  "baseline_files": 2982,
+  "current_files": 2982,
+  "changed_existing": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOFTHARD.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOFTHARD_LOG.md"
+  ],
+  "added_files": [],
+  "all_frozen_checks_unchanged": true,
+  "diff_check": {
+    "exit_code": 0,
+    "output": ""
+  },
+  "memo_final": {
+    "path": "SOFTHARD.md",
+    "bytes": 134852,
+    "st_mode": "0o100644",
+    "st_ino": 563759011,
+    "st_mtime_ns": 1793309398853988506,
+    "st_ctime_ns": 1793309398853988506,
+    "sha256": "890c3726f86ad7dc557f5c16a8f6e99a014896acee18a480ef44f81fc6069968"
+  },
+  "log_pre_append": {
+    "path": "SOFTHARD_LOG.md",
+    "bytes": 38232,
+    "st_mode": "0o100644",
+    "st_ino": 563759012,
+    "st_mtime_ns": 1793309398854937966,
+    "st_ctime_ns": 1793309398854937966,
+    "sha256": "f769579ea15579ec5378c508f1e596ba8130221071d13dd9c0037d94a12ad029"
+  }
+}
+```

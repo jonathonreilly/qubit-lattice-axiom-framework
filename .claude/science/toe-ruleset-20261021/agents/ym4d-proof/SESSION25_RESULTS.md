@@ -1737,3 +1737,11 @@ stopped workers on Opus 5.5 max, with the arXiv corpus; (4) rewrite HANDOFF.md f
 the arXiv Balaban-method corpus; plus **BFT4W55** (BFT-4's local inputs: (H3)_m, (W-comm)^σ_J, W-mult^σ, σ-pair (f)/(E3^∇),
 lane B §10.8 on the P_cc family). **Codex gpt-6-astra max** (banner verified): CODEX_REVIEW_BFT34 (Lemma WD, BFT3-glob,
 GV-E_m, Proposition CX, RW-cc + CCL, route-T trees, the b34_1 FAIL/fix).
+
+**CX-BFT34** (`CODEX_REVIEW_BFT34.md`, gpt-6-astra max). BFT-3 on the global potential-small domain banked as a
+conditional implication (Lemma WD + route C, rates μ/4 / μ/3). Refuted or repaired inside BFT34_55: an m-collision and
+a false endpoint-summability assertion in the residual leg (R2, repaired: the funnel convolution is k-uniform, 121/13
+at d=4, L=3); a missing factor L in the commutator exponent count (R6); RW-cc-walk's advertised weight radius not
+proved from its premises (R7); the small-torus citation 16 → 256 cells, e^{4μ} → e^{8μ}; X⁺ attachment −n → −3n/2.
+Proposition CX is a scalar obstruction, not a Yang–Mills-class counterexample. **BFT-4 remains OPEN**; the most
+dangerous unverified step is (H2)^Lip from the cc walk — forwarded to BFT4W55 (running).

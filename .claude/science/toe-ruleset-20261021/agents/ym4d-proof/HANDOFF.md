@@ -60,7 +60,7 @@ TQ itself is unproved, and whether RP plus Wilson-specific inputs can give it is
 | Coupling flow | conditionally reduced (FLOW55) to one trivial-background estimate (UIR^♮) | UIR55 (running) |
 | BFT-0 identification | slice form banked; the nonlinear slice lemma (NSL) open | NSL55 (running) |
 | BFT-1/2 | banked on 𝒞_glob, conditional on named lane-A linear inputs (K^(σ), GV-E, TR∞) | — |
-| BFT-3 | implication on 𝒞_glob (Theorem BFT3-glob) | BFT34_55; Codex review running |
+| BFT-3 | banked conditionally on the global potential-small domain (Lemma WD, route C); per-level identification and the full curvature-small class open | BFT34_55 + CODEX_REVIEW_BFT34 |
 | BFT-4 | not implied by analyticity + BFT-3 (Prop. CX); reduced to local ARGUED items + (CovLift) | BFT4W55 (running) |
 | BFT-5 (b) background transfer | Theorem GA banked; needs an actual alignment with uniform quotient/source/defect bounds, then (LOC-GA) off 𝒞_glob | ALIGN55 (running) |
 | BFT off 𝒞_glob (large fields) | OPEN: (G♯-patch), (UHL), (SL-cov), (LOC-GA); RLARGE W-cb♯/FI-1 banked conditionally | not yet assigned |

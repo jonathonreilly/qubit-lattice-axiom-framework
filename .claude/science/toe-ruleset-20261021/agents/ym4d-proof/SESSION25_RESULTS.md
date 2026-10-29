@@ -1848,3 +1848,10 @@ exponential/axial charts (lc55_3); Lemma FOL lifts it to the chain as ~u_0β². 
 half of nr-15 / §7 item 4, and (LC-1′) as stated. Convexity and Peierls windows do not overlap. Replacement proposed:
 (LCR°) via one-step conditional positivity (ARGUED) + per-step small-field cluster expansion with locally lowered
 coupling + (SDP)^A tilted. **Codex review launched (CODEX_REVIEW_LCONV.md); forwarded to LARGE55.**
+
+**CX-SRCAN** (`CODEX_REVIEW_SRCAN.md`). SRCAN55's scoped identities and conditional estimates banked (10 items). REFUTED
+inside it: a positive flow lower bound without an extra smallness hypothesis; unrestricted holomorphy in Δ; two signs
+(E1's −j̄ → +j̄; E_tree = −∂_zS_tree). NOT-VERIFIED: SA-WD's weighted contraction, (LOC-e), tilted large-field envelopes.
+**Useful clarification: the OS0 "scale window" is a finite-a issue** — fixed separated test functions eventually fit a
+fixed-radius domain; the full test space needs a uniform extension estimate. Most dangerous: the cutoff-uniform complex
+derivative envelope for the tilted chain, including LARGE coarse fields (→ LARGE55's design).

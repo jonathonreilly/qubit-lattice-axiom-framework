@@ -65,7 +65,7 @@ TQ itself is unproved, and whether RP plus Wilson-specific inputs can give it is
 | BFT-5 (b) background transfer | Theorem GA banked; needs an actual alignment with uniform quotient/source/defect bounds, then (LOC-GA) off 𝒞_glob | ALIGN55 (running) |
 | BFT off 𝒞_glob (large fields) | OPEN: (G♯-patch), (UHL), (SL-cov), (LOC-GA); RLARGE W-cb♯/FI-1 banked conditionally | not yet assigned |
 | Node A (single-level measure) | reductions + BL-TILT banked; multiscale convexity REFUTED (LCONV55, Codex review running) — replacement: one-step conditional positivity + per-step small-field cluster expansion + (SDP)^A tilted | LARGE55 (design); per-step N5/N6 not yet assigned |
-| SRC (source-inserted RG; gives CD, OS0) | Prop. B, Lemma V banked; SRC-E′/O/W′, SRC-OW, Prop. E open | SRCAN55 (running) |
+| SRC (source-inserted RG; gives CD, OS0) | Prop. B, Lemma V, SA-CF/SA-PC/SA-TC/SA-S, SA-K banked (scoped); open: (A) complex envelopes for the tilted chain incl. large coarse fields, (B) real conditional decay = a decaying polymer representation (same object as BFT-4), (LOC-e), the OS0 extension estimate | not yet assigned (waits on LARGE55, BFT-4) |
 | H_Euc, sphere route | equatorial RP, Proposition T banked; construction + seam + UV items open | SPHERE55 (running) |
 | H_int | free comparator banked for a narrower class; Yang–Mills side open | HINT2_55 (running) |
 

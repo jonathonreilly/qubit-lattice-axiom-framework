@@ -1668,3 +1668,10 @@ FALSE; only flowed/separated forms survive). Precise statements SRC-κ / SRC-M /
 source-dependent coupling; RLF per-step conditioned on U_K; (F_R) with slowly varying coupling; large coarse fields
 (= UNIV55's N3); SRC-M. 11 CONFIRMED / 5 NV / 3 REFUTED. Codex review launched (CODEX_REVIEW_SRCCD.md). **Launched on
 Opus 5.5: SRCAN55.md — SRC via analyticity of the RG in position-dependent complex couplings.**
+
+**Codex batch (FLOW55, HIGHER, GV, NRES, UNIV) — banked in [S26-BANKED].** TR∞ / CC-CRIT∞ CONFIRMED conditionally;
+GV-E and the corrected slice contraction CONFIRMED, (NSL) genuinely needed (S_E non-preservation proven by an exact
+witness); the flow's conditional reduction to (UIR^♮) CONFIRMED, (UIR^♮) open; node A's counterexamples and BL-TILT
+(repaired) CONFIRMED; Proposition T CONFIRMED, purely-UV OS1 not yet verified. Each review also refuted one
+overclaim (k̃ normalization; blanket level-0 decay; the rank proof; same-rate moment/mean equivalence; topology and
+decay-necessity wording).

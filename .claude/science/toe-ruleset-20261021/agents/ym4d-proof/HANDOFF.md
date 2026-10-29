@@ -80,10 +80,12 @@ Line numbers in PROOF.md drift — locate by string.
 3. When every row above is closed and cross-checked: assemble the proof of T_OS in one document, have it reviewed
    end to end by both families, then package PR 10114 for the owner's publication pass.
 
-## Interface audit (ASSEMBLY55, 2026-10-29; Codex review running)
-18 producer→consumer mismatches and 13 missing leaves were found; ASSEMBLY55 §7-§9 is the current list of open leaves
-and supersedes the table above wherever they differ. Most dangerous: a non-freeness witness on the OS algebra itself
-(NONFREE55), then BFT off 𝒞_glob (OFFGLOB55).
+## The current work list (2026-10-29)
+**CODEX_REVIEW_ASSEMBLY.md, "Corrected ordered OPEN work list" (17 items), is the authoritative list of remaining work**
+and supersedes the table above wherever they differ. Its first two items precede all estimates: (1) fix ONE OS
+formulation and observable algebra (OSLEAF55, running); (2) an absolute non-freeness criterion and witness on that same
+algebra (NONFREE55, running) — the single most dangerous item. DIAG is proven (Codex R2). ASSEMBLY55's 18 mismatch labels
+are superseded by the review's scope-specific verdicts.
 
 ## Large-field architecture (LARGE55, 2026-10-29; Codex review running — a route choice, so it waits for the cross-family verdict)
 Recommendation: keep RLARGE v3's R-operation (returned-cluster renormalisation, forced in d = 4 by Theorem DENSE) and

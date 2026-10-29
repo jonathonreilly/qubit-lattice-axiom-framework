@@ -1933,3 +1933,9 @@ PRICE ⇐ (BFT-coer). Drops 15 of 38 rows incl. three paper-scale walls. (N3)/(M
 supports the block-witness (Branch D) route for H_int. 11/8/3 on inherited; 15 proven here. **Codex review launched
 (CODEX_REVIEW_LARGE.md) — a route choice, so it waits on the cross-family verdict before anything is dropped.
 Launched: STEP55** (I1 one-step positivity + per-step cluster expansion, I2 (BFT-coer)) — needed on every route.
+
+**CX-ASSEMBLY** (`CODEX_REVIEW_ASSEMBLY.md`). DIAG PROVEN by Codex; norm conversion, conditional germ lemma, six logical
+separations and the original PANEL_P1 closure banked. REFUTED in ASSEMBLY55: F2a's shortcut, unconditional F23, LF-inst
+necessity, its ordering. **Codex's corrected 17-item ordered work list is now the authoritative remaining-work list
+(HANDOFF points to it).** Items 1-2 (one OS formulation/algebra; absolute non-freeness on it) precede all estimates —
+forwarded to OSLEAF55 and NONFREE55.

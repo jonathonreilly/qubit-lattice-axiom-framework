@@ -1755,3 +1755,18 @@ elsewhere"; K_G ≤ 1.5·10³ → ≤ 1403.1, check ns55_3, finiteness only used
 [S26-BANKED] said "(NSL) is genuinely needed" — Codex GV said only that direct restriction fails and NSL is one sufficient
 repair. Corrected in PROOF.md; the summary line above ("(NSL) genuinely needed") is superseded. **Not banked until
 CODEX_REVIEW_NSL (launched).** Open: boxes; off 𝒞_glob / Z ≠ 1 (needs (N1)) — **launched OFFGLOB55 (Opus 5.5 max).**
+
+**SRCAN55 — finished** (claude-opus-5-5, max). **Analyticity gives smeared SRC, not decay.** Proposition SA-S: (A) uniform
+complex bounds on cross-support second derivatives (no decay) + (B) second-order conditional decay at REAL
+position-dependent couplings ⇒ smeared SRC-κ (e-part) at all orders, constants geometric in n, rate any fraction < 1 of
+the real one (check sa55_hm PASS, designed-fail controls fired). Proposition SA-K: the composite contraction (K^(σ),
+BFT-0/1/2 on 𝒞_glob) survives complex position-dependent couplings, k-, T-uniform, jointly holomorphic. Lemma SA-J: the
+Hölder condition on the Wilson coefficient is needed already at tree level. REFUTED: SRCCD55 §5.0's hypothesis read for
+Φ_k itself (Lemma SA-CF — a counterterm must come off first); the brief's "decay inherited from BFT-3" (z₁z₂). **Decay
+enters only through (D1) a polymer representation with decaying activities — analyticity in DECOUPLING (bond)
+parameters, as in Balaban/Dimock — or (D2) real CD.** So SRC's decay node is the same object as BFT-4's decoupling
+family (BFT4W55, running), with the coupling as a spectator. New: the OS0 scale window [ca, δ_a) (smeared bounds reach
+only ~(log ℓ_ref/a)^{−1/α}); (LOC-e) — the singleton reduced to the flow derivative O(g_r⁴). 6/2/2 on inherited items;
+errata E1-E9 in place. **Codex review launched (CODEX_REVIEW_SRCAN.md).**
+**Launched in the freed slot: LARGE55** (Opus 5.5 max) — first-principles simplification of the large-field part
+(RLARGE v3's ~30-item DAG vs an action-based Balaban/Dimock large/small-field split), then close what remains.

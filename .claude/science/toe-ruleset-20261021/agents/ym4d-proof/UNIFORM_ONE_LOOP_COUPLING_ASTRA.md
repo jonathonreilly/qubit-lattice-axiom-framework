@@ -300,12 +300,47 @@ legs and charged internal legs; it uses no Cartan-only quartic shortcut.
 For the determinant it is convenient to use the symmetric background
 split `U=e^(B/2) e^X e^(B/2)`. It differs from `U=e^B e^Y` by the exact
 linear quantum transformation `Y=Ad_(e^-B/2) X`, of determinant one.
-Transform H and D together, so the gauge-fixed determinant and Delta
-are unchanged, including off shell. This split and link centering give
-ordinary inversion parity to its vertices. The change of charts is local
-and analytic; lower-jet differences just found cannot lower the stated
-orders. This also justifies the two-power improvement when comparing
-Wilson with its leading continuum operator in Section 6.
+Writing this orthogonal matrix as M gives `H_s=M*H_r M`, `D_s=M*D_r`,
+and hence `O_s=M*O_r M` and `Delta_s=Delta_r`, including off shell.
+The vector determinant is exactly unchanged when its complement and
+induced measure are transported with M. This is not an exact invariance
+of the prescribed FIXED free-complement determinant. The Hessian in each
+split still includes the force times the second quantum derivative of
+the nonlinear map to action-log coordinates; off-shell stationarity is
+not assumed.
+
+Here is the correction on that fixed regulator. Let P0 project onto the
+free vector harmonics, Q=1-P0, `O0=0 direct-sum D` with D positive on Q,
+`O=O0+e O1+e^2 O2+...`, and `M=exp(e A)`, A*=-A. Put
+`U=P0 A Q`, `F=P0 O1 Q`. Expanding `M*O M` and the compressed logarithm
+gives
+
+    [e^2]{log det_Q(M*O M)-log det_Q O}
+          =2 Re tr(D^-1 F*U)-tr(U*U).                     (UL13a)
+
+Indeed the off-diagonal part of `Q[O1,A]Q` is `F*U+U*F`, and that of
+`(1/2)Q[[O0,A],A]Q` is `-(D U*U+U*U D)/2`. Within-Q commutator terms
+cancel against the corresponding bubble terms, since conjugation entirely
+within Q preserves its determinant. These signs correspond to `Y=M X`
+and `O_s=M*O_r M`; UL13a is an e^2 coefficient, not the second derivative.
+It generally is nonzero. The vector determinant's outside factor 1/2
+is applied to this correction as to every other vector term.
+
+For the actual single external plane wave, U and F connect a free
+constant mode only to the shifted momenta +/-P e2. Their ranks and
+matrix entries are bounded independently of volume; UL14 bounds D^-1
+there at each fixed P!=0. The correction after division by T^4 is
+therefore at most `T^-4 C_J(P)`, with finite C_J(P), and vanishes in
+the prescribed volume-first limit. This does not give a uniform finite-T
+statement as P tends to zero. The scalar Delta is unchanged already
+before this limit.
+
+Thus the symmetric split may be used for the same volume-first Bloch
+coefficient. Together with link centering it gives ordinary inversion
+parity to the vertices. The local analytic change of coordinates and its
+retained off-shell force term cannot lower the jet-difference orders just
+found. This also supplies the two-power improvement in the Wilson versus
+continuum comparison in Section 6, in that same volume-first convention.
 
 Put `O_T=H_T(B)+D_B D_B*`, `G_T=O_T(0)^-1`. For real k!=0, UL5 and the
 exact longitudinal eigenvalue lambda(k) give

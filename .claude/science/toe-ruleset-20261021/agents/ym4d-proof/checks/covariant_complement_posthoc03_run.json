@@ -1,0 +1,8 @@
+{
+  "exit_code": 0,
+  "elapsed_seconds": 0.5253316659945995,
+  "peak_rss_kib": 53680,
+  "termination_reason": null,
+  "program": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_posthoc.py",
+  "program_sha256": "4ac0a1439508a34ebeb2e86b4ad287f5a9aa12d7cb71fd5fbe63a8304ba53c7a"
+}

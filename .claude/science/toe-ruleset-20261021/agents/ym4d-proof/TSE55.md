@@ -228,7 +228,10 @@ the sum is a weighted sum of squares. This is why no per-level positivity argume
   hypotheses of FREE and TS retain their separate scope.
 - **Lemma FREE (PROVEN-HERE given (LGF)).** Let L_free := 2λ⁸(N² − 1)Σ_{p,q}w_f(p)w_g(q)𝔊^F(p,q)² (lattice, coupling 1). There are
   d_0 = d_0(f, g, L) and R_0 such that for K − m ≥ d_0 and R ≥ R_0: **½c_bubI_8 ≤ L_free ≤ (3/2)c_bubI_8.**
-  *Proof.* Lattice distances between the supports are r ≥ D_−λ/a − 2 ≥ ½D_−L^{K−m} once L^{K−m} ≥ 4/D_−. By (LGF) and |D| ≤ C_Dr^{−4},
+  *Proof.* Lattice distances between the supports are r ≥ D_−λ/a − 2 ≥ ½D_−L^{K−m} once L^{K−m} ≥ 4/D_−.
+  Increase R_0 to at least 8(D_+ + 1), retaining the support condition of §1.2.
+  Since λ ≤ 1 and a ≤ 1, r ≤ D_+λ/a + 2 ≤ T/4 for T = R/a. Thus the
+  entire kernel comparison lies in LGF's stated torus range. By (LGF) and |D| ≤ C_Dr^{−4},
   |𝔊^F² − D²| ≤ C(r^{−9} + r^{−4}T^{−4}), and Σ_pw_f ≤ 12a^{−4}‖f‖_1 for a/λ small (Riemann), so the replacement error is
   ≤ C(f,g)[(a/λ)D_−^{−9} + D_−^{−4}(λ/R)⁴] (λ ≤ 1). Replacing w_f(p) by f_λ(x_p) costs a relative O(a‖∇f‖_∞/(λ‖f‖_∞))·…, and the
   Riemann sum of the smooth integrand f_λ(x)g_λ(y)|x − y|^{−8} on {|x − y| ≥ D_−λ} differs from the integral by a relative O(a/λ).

@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-29T21:21:07.329144+00:00",
+  "exposure": "Full frozen target 977d901f2c886a533c9eb1b487414e1a081df681463003eb231a3ef2b1b26670 read. No author numerical implementation or results file read. These additional controls are source-exposed, before reviewer implementation/execution.",
+  "checks": [
+    {
+      "name": "symmetric_split_actual_plaquette",
+      "object": "One SU(2) Wilson plaquette with four independent noncommuting background links and all12 quantum directions; background has nonzero gradient.",
+      "pass": "With60-digit arithmetic, right/symmetric Hessian, gradient, gauge completion and scalar Gram transformations have max error<1e-45; det of adjoint map differs from1 by<1e-45. Leaving gauge generator untransformed must cause discrepancy>1e-8."
+    },
+    {
+      "name": "fixed_complement_adjoint_change",
+      "object": "Exact rational4x4 family with1-dimensional free kernel, three positive free eigenvalues, and background-dependent orthogonal mixing.",
+      "pass": "Exact difference of second logdet coefficients is 2tr(D^-1 F^T U)-tr(U^T U); it is nonzero. Omitting either mixed term or induced Gram term, or asserting zero merely from det M=1, is rejected. Fixed-rank normalized difference scales exactly asT^-4."
+    },
+    {
+      "name": "actual_paired_paths",
+      "object": "All7776 oriented paths of the L3,d4 pairedS4-prime single-cell family.",
+      "pass": "Exact integer path equality under a generating reflection and axis exchange; actual zero-momentum map equals3I. Complex root-gradient identity has error<3e-12; dropping the second axial leg must exceed1e-5."
+    }
+  ],
+  "mutations": "Implemented parameter/operator changes in the same functions; marked source-exposed. No universal constant is fitted from sample extrema.",
+  "resources": "Read coordinator lock logs/physics_worker_lock.json; do not mutate it. nice10; five thread environment variables1; free memory>=50%, all load averages<20, own RSS<2GB, elapsed<60seconds. Abort rather than relax a resource gate."
+}

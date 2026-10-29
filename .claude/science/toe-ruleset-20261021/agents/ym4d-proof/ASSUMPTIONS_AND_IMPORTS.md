@@ -42,7 +42,6 @@ The supplied mathematical model data remain SU(N), N>=2, the specified Wilson ac
 | [B34](LITERATURE_BRIDGES.md#b34) | [Sokal, 1982](https://www.numdam.org/article/AIHPA_1982__37_4_317_0.pdf) | background context | Same-state scalar boundary comparison; no gauge-state independence theorem assumed. |
 | [B35](LITERATURE_BRIDGES.md#b35) | [Jaffe–Jäkel–Martinez](https://arxiv.org/abs/1302.5935v1) | background context | Scalar-cylinder spectral precedent; no four-dimensional field or mass threshold imported. |
 | [B36](LITERATURE_BRIDGES.md#b36) | [Michta–Slade](https://arxiv.org/abs/2101.04717v4) | background context | Scalar real-mass heat/resolvent comparison; no complex twisted-cell or gauge-source estimate imported. |
-
 | [B37](LITERATURE_BRIDGES.md#b37) | [Balaban–Feldman–Knörrer–Trubowitz, Part4](https://arxiv.org/abs/1609.01748v1) | background context | Finite-degree field-map comparison; no gauge-force estimate imported. |
 | [B38](LITERATURE_BRIDGES.md#b38) | [Balaban–Feldman–Knörrer–Trubowitz, Part3](https://arxiv.org/abs/1609.01747v1) | background context | Contour-method comparison; its incomplete full-error argument supplies no complement theorem. |
 | [B39](LITERATURE_BRIDGES.md#b39) | [Kim–Adams–Lee](https://arxiv.org/pdf/0710.1930v1) | background context | One-loop comparison with explicit rate/infrared hypotheses; no uniform-depth or nonlinear estimate imported. |

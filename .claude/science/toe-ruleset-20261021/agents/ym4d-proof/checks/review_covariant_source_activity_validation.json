@@ -1,0 +1,59 @@
+{
+  "time_utc": "2026-10-29T21:58:26.562824+00:00",
+  "target_12_bindings_unchanged": true,
+  "independent_18_bindings_unchanged": true,
+  "compiled_review_python_files": 13,
+  "compile_creates_no_bytecode": true,
+  "review_json_parse": true,
+  "local_links_existing_except_final_receipt_being_created": true,
+  "independent_baselines": {
+    "geometry": {
+      "predicates": 5,
+      "all_assertions_passed": true,
+      "elapsed": 4.753771791001782
+    },
+    "atoms": {
+      "predicates": 44,
+      "all_assertions_passed": true,
+      "elapsed": 0.033530208049342036
+    },
+    "incidence": {
+      "predicates": 0,
+      "all_assertions_passed": true,
+      "elapsed": 0.10033224994549528
+    },
+    "flux": {
+      "predicates": 7,
+      "all_assertions_passed": true,
+      "elapsed": 3.6106729590101168
+    },
+    "fibre": {
+      "predicates": 27,
+      "all_assertions_passed": true,
+      "elapsed": 1.666871249966789
+    }
+  },
+  "source_copy_probes": {
+    "baselines_passed": 2,
+    "expected_mutation_failures": 5,
+    "unexpected_failures": 0,
+    "survivors_in_executed_probes": 0,
+    "exact_named_assertions_verified": true,
+    "hash_execution_linkage_verified": true
+  },
+  "resource_summary": {
+    "samples": 67,
+    "maximum_rss_bytes": 98320384,
+    "minimum_free_percent": 54,
+    "maximum_load": 2.37548828125,
+    "all_nice_at_least_10": true,
+    "all_five_thread_variables_one": true,
+    "sequential_no_pools": true,
+    "maximum_copied_child_seconds": 1.5105153329786845
+  },
+  "threshold_relaxations": false,
+  "blocking_scientific_findings": [],
+  "scientific_repair_required": false,
+  "author_and_prior_reviews_modified": false,
+  "scope": "SA1-SA34 only; LAND; no whole-PR/library or audit authority"
+}

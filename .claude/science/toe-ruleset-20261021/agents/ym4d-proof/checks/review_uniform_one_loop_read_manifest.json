@@ -1,0 +1,211 @@
+{
+  "utc": "2026-10-29T21:45:34.977759+00:00",
+  "reviewer": "/root/soft_fluctuation_covariance; requested Astra/max; same-family independent target reviewer; related covariance/CB/SA author, not UL/CJ/BC author",
+  "target_original_sha256": "977d901f2c886a533c9eb1b487414e1a081df681463003eb231a3ef2b1b26670",
+  "target_final_sha256": "b7baa6a711969c8fc96538009bb8f9f9acdde3f14f6d2f570a6ca5b9391516ce",
+  "source_reads": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_ONE_LOOP_COUPLING_ASTRA.md",
+      "sha256": "b7baa6a711969c8fc96538009bb8f9f9acdde3f14f6d2f570a6ca5b9391516ce",
+      "bytes": 38024,
+      "read_scope": "Complete original688 lines at old freeze; complete changed region in final723-line source. Exact sole-region diff independently verified. Final target.",
+      "identity_origin": "current file, unchanged relevant mathematical bytes"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_one_loop_fixed_complement_correction.json",
+      "sha256": "b21338a5b2035c5f7b65c13b10721a1a7769ea576d8c23692270b92adbd1957a",
+      "bytes": 1415,
+      "read_scope": "Complete affected old/new-byte receipt and local derivation.",
+      "identity_origin": "current file, unchanged relevant mathematical bytes"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_one_loop_receipt.json",
+      "sha256": "5e5a7b59c0b69b4e618ddb04de747c4f3ab1e1851b99ec6323553be3b27296aa",
+      "bytes": 2133,
+      "read_scope": "Complete original47-line receipt, preserved as historical before correction;31 artifact/input identities verified when all matched.",
+      "identity_origin": "current file, unchanged relevant mathematical bytes"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_one_loop_read_manifest.json",
+      "sha256": "c98c5530c75f1d6a000587d7915754e9c08ed45659b22bce0c29cbebcdea2194",
+      "bytes": 14500,
+      "read_scope": "Parsed all artifact/input identities; external-read and model entries1-83 and provenance/resource/nonclaims145-220 read. Metadata only, not proof weight.",
+      "identity_origin": "current file, unchanged relevant mathematical bytes"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HINT2_55.md",
+      "sha256": "e617800fa0426a6099b5b6966cf383d118eeed33f363b5c9ff866108a6537dbf",
+      "bytes": 67652,
+      "read_scope": "Exact R2.3 table and B-BR consumer, lines370-386; every0<=j<=n quantifier and beta-prime/R-prime contract.",
+      "identity_origin": "current file, unchanged relevant mathematical bytes"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RESIDUAL_FULL_COLOUR_ASTRA.md",
+      "sha256": "1ce9460989e5491bd491dcc348add15207e63013a0c537cd6c51caa19f0e3dd7",
+      "bytes": 36980,
+      "read_scope": "Full consumed proof1-225, then through231 boundary. FC1-FC17 actual normalizer/neutral/Gram/projector/volume-first source; later candidate producers not consumed.",
+      "identity_origin": "current file, unchanged relevant mathematical bytes"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RESIDUAL_FULL_COLOUR_ASTRA.md",
+      "sha256": "0b504129260e0269ae8dffa79f2113a6bb94675edc37c084fe8f9be6464e67bc",
+      "bytes": 29488,
+      "read_scope": "Complete149-line scoped review, with truncated middle independently recovered. Wrong neutral deletion and fixed-rank-only shortcuts rejected.",
+      "identity_origin": "current file, unchanged relevant mathematical bytes"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_UIR.md",
+      "sha256": "74860ce5d301819ec626940ff1d6cf1a6326cb9c2639c9329a7f1083e087b952",
+      "bytes": 33039,
+      "read_scope": "Complete219-line corrected review across preparation reads; initial1-25 reread, R1-R13 and final summaries consumed. Corrected1/2 bubble, common-class FP and TEL boundaries; old wrong1/4 not accepted.",
+      "identity_origin": "current file, unchanged relevant mathematical bytes"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UIR55.md",
+      "sha256": "4c6d80473a80714e2a5aa1e241e8835648bbe3c65a7bca38a5758faf3c5accb4",
+      "bytes": 68640,
+      "read_scope": "Selected249-347: exact a-perp/TEL/J-class/FP definitions, old bubble display identified as wrong and replaced by corrected review and new derivation. No acceptance of old rho-null argument.",
+      "identity_origin": "current file, unchanged relevant mathematical bytes"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LINEAR_PACKAGE.md",
+      "sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad",
+      "bytes": 48089,
+      "read_scope": "Selected49-164 complete: geometry, paired root map, own-unit counting, scalar symbol definitions and energy/coercivity. Existing unprimed-strip repairs reused through previously read US contracts.",
+      "identity_origin": "current file, unchanged relevant mathematical bytes"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "sha256": "203d4edbf97078d88fcb488f164e525d2671fe5a2a910c5f6e49f615e8f41bfe",
+      "bytes": 26860,
+      "read_scope": "Inherited complete US1-US17 proof from prior covariance/background/source assignment, unchanged corrected tree-phase hash. Top-data curvature/residual kernels and periodization consumed; no finite-u Hessian claim.",
+      "identity_origin": "current file, unchanged relevant mathematical bytes"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "sha256": "78d40a5480aafe94c30ee5c0b827d30b84ec629dfccaa91b44c98cfe08ecf3d9",
+      "bytes": 17036,
+      "read_scope": "Inherited full prior read with both scope correction records; reused only its bounded normalized-tree confirmation.",
+      "identity_origin": "current file, unchanged relevant mathematical bytes"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_scope_review.md",
+      "sha256": "1fec8e9c3c34c00a08dc775e94edfab25031c0bbe3d719f7d42c5587ce05ff11",
+      "bytes": 8764,
+      "read_scope": "Inherited full prior scope derivation, after independent finite-u derivation in earlier assignment; finite-u spread distinction retained.",
+      "identity_origin": "current file, unchanged relevant mathematical bytes"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_scope_confirmation.md",
+      "sha256": "fbc18b292c385876eabd205cb1781667933b88fa7dc8e7abff914e0836da338b",
+      "bytes": 3557,
+      "read_scope": "Inherited full corrected scope confirmation; unchanged.",
+      "identity_origin": "current file, unchanged relevant mathematical bytes"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHARGED_STATIONARY_JET_ASTRA.md",
+      "sha256": "85b91738993f09f7e40a49f4c957c164a684bf499185629a82775229f6437254",
+      "bytes": 26289,
+      "read_scope": "Fresh complete mathematical proof1-395: CJ1-CJ19 including common representative, current/funnel, completed exchange and CJ18 sufficient interface. Later evidence/literature sections not reread as proof.",
+      "identity_origin": "current file, unchanged relevant mathematical bytes"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CHARGED_STATIONARY_JET_ASTRA.md",
+      "sha256": "f7e02d766c8885dceeeac8d2264784cdc65b85a771ae556efa5935d45236836d",
+      "bytes": 20208,
+      "read_scope": "Fresh selected1-241: scope plus all consumed analytic proofs. Later numerical/literature record not reread or claimed independently reproduced.",
+      "identity_origin": "current file, unchanged relevant mathematical bytes"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BOTTOM_SECOND_CURVATURE_ASTRA.md",
+      "sha256": "b735eb1d551c9ba80925c0d22830b17ce823735bf7d9ac5d2e19ddabb2ff3ade",
+      "bytes": 28850,
+      "read_scope": "Fresh complete source, all lines via1-570 reads: actual sources, heat counting, joint analytic division, both null sheets, harmonic value, reciprocal gluing, periodization and BC26.",
+      "identity_origin": "current file, unchanged relevant mathematical bytes"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_BOTTOM_SECOND_CURVATURE_ASTRA.md",
+      "sha256": "d4597d612af42aa994475767fe4f33828b8eb2fa4e2762d696fb529e6c5c134b",
+      "bytes": 22149,
+      "read_scope": "Fresh complete113-line review, truncated middle48-78 separately recovered. Exact conditional BC3/CJ18 and BC26 confirmation.",
+      "identity_origin": "current file, unchanged relevant mathematical bytes"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FLOW.md",
+      "sha256": "085cd225228a23847b053650fe8bff4c14529d7e630a74565b301d39855e442f",
+      "bytes": 539577,
+      "read_scope": "Fresh selected112-165 and252-329: exact normalized-kernel/coset correction, uniform-kappa stripped tower, original coupling convention, tree normalization, smooth aliases, renormalized transport and F-tel including FT-1/TOW repair. No finite-u theorem consumed.",
+      "identity_origin": "current file, unchanged relevant mathematical bytes"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FLOW55.md",
+      "sha256": "56d2707f4b571585db26cf2a077dbaee57bc936c76821cdbc50710e4b36e9d25",
+      "bytes": 70208,
+      "read_scope": "Fresh selected431-477: ghost cancellation, original B_n relation, corrected normalizations. Locator search elsewhere is not a full read.",
+      "identity_origin": "current file, unchanged relevant mathematical bytes"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497,
+      "read_scope": "Complete11-line owner process previously read and applied. Numerical-only preregistration; edit in place; fresh scoped LAND/HOLD.",
+      "identity_origin": "current file, unchanged relevant mathematical bytes"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_one_loop_01.py",
+      "sha256": "6cb6ffaddb6b47d526784098bf9eb96bdd3bb1757c7b5b0dad65a3d8fb5091f7",
+      "bytes": 10914,
+      "read_scope": "Complete author code read only AFTER the independent38/38 run. Reproduced from byte-identical temporary copy, not imported by independent code.",
+      "identity_origin": "current file, unchanged relevant mathematical bytes"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_one_loop_01_results.json",
+      "sha256": "de69b2d04e24adbace7c45ef5357525e40a6934073ade5de8fc5a1b5f6ff2d39",
+      "bytes": 5576,
+      "read_scope": "Complete structured results parsed for exact reproduction comparison; numerical evidence only.",
+      "identity_origin": "current file, unchanged relevant mathematical bytes"
+    }
+  ],
+  "primary_reads": [
+    {
+      "local_pdf": "/tmp/review_uniform_one_loop_primary/0710.1930v1.pdf",
+      "url": "https://arxiv.org/pdf/0710.1930v1",
+      "sha256": "9b8abe3d312f6361869f8cb2aebd0fb9f79a546a8f2683fa174cc560377aeb00",
+      "bytes": 87112,
+      "read_scope": "Complete extracted text through web lines0-505 in overlapping reads, including Sections1-5 and references. Load-bearing comparison: setup, quantitative rate dependency, IR finiteness and no doublers. No imported power-counting theorem.",
+      "retrieval": "Version-pinned official arXiv web opens plus native curl with normal TLS; no retrieval failure. Full PDFs only under/tmp."
+    },
+    {
+      "local_pdf": "/tmp/review_uniform_one_loop_primary/hep-lat9504006v1.pdf",
+      "url": "https://arxiv.org/pdf/hep-lat/9504006v1",
+      "sha256": "9abc4201c94d34b534b86f90092f2e64aacb2b8a5938549f51cd65b408289f4e",
+      "bytes": 211800,
+      "read_scope": "Introduction and Section2.1 (web0-228 includes additional2.2 context); Section5.1-5.2 complete (web692-915), plus opening of6 seen. All-order sections not read in full or imported. Background/ghost/Haar attribution only.",
+      "retrieval": "Version-pinned official arXiv web opens plus native curl with normal TLS; no retrieval failure. Full PDFs only under/tmp."
+    }
+  ],
+  "methods": {
+    "installed_skills": "physics-loop and review-loop read completely earlier in this continuing assignment and announced; no repeated permission workflow",
+    "current_main_methodology": "ca2bc7ddf64790da96cd43d42017d000fbfe4808, root freshly confirmed; local stale main not used",
+    "owner_process": "PROCESS_LIGHT at43ac056899 supersedes older packaging where different",
+    "publication_and_audit": "Root only; reviewer made no Git/shared/audit edits"
+  },
+  "documentation_drift": "Coordinator updated TSE55/LITERATURE_BRIDGES/ASSUMPTIONS_AND_IMPORTS/front statuses after initial31-binding verification. Author historical input identities remain at88130072aa; no UL mathematical producer changed. Such drift is not a numerical failure. No new LGF/REC/LIB1/SOFTHARD theorem consumed in this review.",
+  "independence_chronology": [
+    "Prior corrected UIR exposes expected coefficients; numeric plan declared before frozen target read.",
+    "Final old target received and all688 lines read; supplementary numerical criteria source-exposed, before implementation.",
+    "First execution stopped49%-free resource gate, before mathematical imports.",
+    "Unchanged script then38/38 before author code read.",
+    "Author checker read and reproduced24/24 in temporary copy.",
+    "Author narrow F1 correction verified against independent block formula/control; only changed region reread."
+  ],
+  "no_claims": [
+    "uniform finite-T coupling estimate",
+    "jet or b_n convergence",
+    "uniform nonlinear analytic field neighborhood",
+    "finite-u remainder or nonlinear RG",
+    "whole-PR or audit authority",
+    "continuum existence/nontriviality",
+    "positive physical continuum Hamiltonian gap"
+  ]
+}

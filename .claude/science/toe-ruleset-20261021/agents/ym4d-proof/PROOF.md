@@ -180,8 +180,10 @@
 > [The full-colour review](REVIEW_RESIDUAL_FULL_COLOUR_ASTRA.md) confirms the
 > complete residual coefficient cancellation at each fixed depth in the
 > specified original volume-first one-loop convention, and the exact neutral
-> quartic. FC19 remains open; FC20 is conditional. The only repair clarified
-> which gauge-fixing column has Gram S squared.
+> quartic. That unit alone leaves FC19 and the remaining FC20 inputs open;
+> the later reviewed tree and uniform one-loop constructions below supply
+> their stated bounded-jet and finite-part results. Nonlinear finite-u flow
+> remains open. The residual repair clarified the column with Gram S squared.
 > [The hard-history review](REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md) confirms
 > the exact raw history/source identity and completion-good pointwise gas with
 > a fixed positive source radius. Failure activities and the outer sea remain
@@ -210,7 +212,8 @@
 >   confirm FC19 with `theta=L^-2` and neutral FC20 for the **u-stripped tree
 >   phase and stationary value T_n**. The exact finite-u density retains a
 >   positive normalizer spread term. The charged quartic is separately
->   reviewed below; the full finite-part increment remains open.
+>   reviewed below; the uniform one-loop increment now has its own reviewed
+>   construction. The nonlinear finite-u remainder remains open.
 > - [Source sea](SOURCE_SEA_CONSTRUCTION_ASTRA.md):
 >   [review](REVIEW_SOURCE_SEA_CONSTRUCTION_ASTRA.md) confirms the one-level
 >   integrated-reference estimate, including the closed-cell chessboard
@@ -264,8 +267,9 @@
 > 137/137, with only declared timing fields excluded. The source-specific
 > complex-zero division, harmonic value, reciprocal gluing and distinct
 > row/column density bounds are part of the analytic review. This supplies
-> the full-colour bounded-jet interface; its actual finite-part/coupling
-> consumer is the next construction, not an automatic completed theorem.
+> the full-colour bounded-jet interface. Its uniform one-loop consumer now has
+> the separate independent confirmation below, under the stated contracts;
+> nonlinear finite-u coupling flow remains open.
 >
 > The [covariant background construction](COVARIANT_SOFT_BACKGROUND_ASTRA.md)
 > now has a [fresh independent review](REVIEW_COVARIANT_SOFT_BACKGROUND_ASTRA.md)
@@ -276,27 +280,47 @@
 > The review preserves its original finite-difference and sensitivity failures,
 > then confirms the affected controls with unchanged tolerances; six actual
 > author-code mutations are rejected. The smooth critical point need not
-> satisfy the hard good-event cuts. Fixed-V connected source activities,
-> nonvanishing, all complementary histories and the full transform remain
-> further work; a separate activity construction is in progress.
+> satisfy the hard good-event cuts. The selected-sector source activities and
+> nonvanishing now have the separate review below. All complementary histories
+> and the full normalized transform remain further work.
 >
-> Two new author units are frozen and undergoing separate hostile reviews.
 > The [covariant source-activity construction](COVARIANT_SOURCE_ACTIVITY_ASTRA.md)
-> proposes connected atoms in the original coarse data, a zero-free selected
-> actual Haar sector under explicit curvature/cut margins, and normalized
-> complex contour return. Its source vacuum, full determinant and exact
-> complementary integrals remain explicit. Author diagnostics report 36/36
-> and 32/32 finite predicates. The normalized complement and hard-history
-> integration remain open; the next construction targets that interface.
+> now has a [fresh independent scoped LAND review](REVIEW_COVARIANT_SOURCE_ACTIVITY_ASTRA.md)
+> for SA1–SA34. It constructs connected atoms in the original coarse data,
+> a zero-free selected actual Haar sector and normalized complex contour return.
+> The full determinant, source vacuum and both exact complementary integrals
+> are retained. The review independently rebuilds the geometry, matrix/support
+> algebra, full-colour normalization and boundary flux, then rejects five actual
+> source mutations. Its full atom replay matches the author output exactly;
+> the original 98-second actual run was read and its exact prefix was replayed,
+> with a separate complete independent fibre calculation. Growing cutoff radius
+> still requires a shrinking relative-source radius. The fixed-radius full H24
+> source transform and normalized complement remain open.
 >
 > The [uniform one-loop construction](UNIFORM_ONE_LOOP_COUPLING_ASTRA.md)
-> proposes a common analytic jet class and
+> now has a [fresh independent scoped LAND review](REVIEW_UNIFORM_ONE_LOOP_COUPLING_ASTRA.md).
+> Under its named normalized-tree, linear and current contracts it establishes
 > `|B_n-B_j-beta0*(n-j)*log L|<=2*C_FP` for every `0<=j<=n`, with each
-> coefficient defined volume first. It retains neutral finite terms and the
-> corrected bubble coefficient. Author controls report 24/24 predicates,
-> including eight mutation detections. Neither set of finite checks certifies
-> the uniform argument. Nonlinear finite-u flow, the full source transform
-> and both continuum targets remain open.
+> coefficient defined volume first. The affected determinant repair retains the
+> fixed-complement correction and proves its disappearance only in that order
+> of limits; transported-complement invariance is distinguished explicitly.
+> The review's 38/38 independent predicates and the exact 24/24 author replay
+> support the analytic review. The original source receipt and separate
+> [correction receipt](checks/uniform_one_loop_fixed_complement_correction.json)
+> retain their distinct source identities. Nonlinear finite-u flow, finite-volume
+> uniformity, the full source transform and both continuum targets remain open.
+>
+> The [original-law boundary construction](COVARIANT_COMPLEMENT_ASTRA.md)
+> now has a [fresh independent scoped LAND review](REVIEW_COVARIANT_COMPLEMENT_ASTRA.md).
+> It derives Haar caps, conditional-density and elementary hard-boundary L1
+> bounds for the actual cut law, plus a complex raw-integral envelope. The
+> successful gas is retained, while witness blocks avoid all retained-failure
+> readers. A sea-side insertion needs the separate H8 replacement before it
+> can represent the pre-return event. Independent diagnostics pass 19/19; the
+> original auxiliary finite-width diagnostic reproduces 23/24, including its
+> failed ratio. The separate narrower post-hoc probe reproduces 3/3 and does
+> not retroactively pass it. These results do not estimate the complete
+> normalized complement, optimized-completion boundary or complex nonvanishing.
 >
 > [Review reproduction](checks/full_proof_next_reviews_replay_summary.json)
 > and [bridge/covariance reproduction](checks/full_proof_bridge_reviews_replay_summary.json)
@@ -316,8 +340,9 @@
 > its bounded coordinate-RP hold. [SOFTHARD R2](REVIEW_SOFTHARD_R2.md) resolves
 > the result crosswalk, cost classification and literature locator, but remains
 > HOLD: its fixed-fibre ratio does not implement the adopted next-level return.
-> Historical external-PDF byte verification is also explicitly incomplete.
-> KEEP-SOFT remains provisional.
+> The [six historical PDF hashes are now recovered and verified](checks/full_proof_softhard_pdf_recovery.json).
+> This repairs byte availability only; the conditional-object defect remains
+> and KEEP-SOFT stays provisional. The original R2 report is unchanged.
 >
 > The current [reconstruction-library R2](REVIEW_REC_LIB_R2.md) confirms the
 > corrected tensor constant and conditional lemmas, with R-CONT, the general
@@ -325,12 +350,17 @@
 > still open. The earlier [coordinator tensor correction](checks/full_proof_rec_tensor_fix.json)
 > and [affected review](REVIEW_REC_TENSOR_FIX_ASTRA.md) remain preserved against
 > their earlier source revision; they are not restamped onto R2.
+> The subsequent [REC-CONT review](REVIEW_REC_CONT.md) is HOLD: the analytic seed
+> from the permitted distribution hypotheses and quantitative domain exhaustion
+> remain unproved. Its conditional finite-stage and spatial/boundary lemmas
+> are retained; the new REC_LIB residue paragraph does not close R-CONT.
 >
 > The current [LIB1 R2](REVIEW_LIB1_R2.md) confirms the conditional finite-graph
 > library and its separate v2 norm-control repair. The earlier
 > [coordinator repair](LIB1_NORM_CONTROL_FIX.md) and
-> [affected review](REVIEW_LIB1_NORM_CONTROL_ASTRA.md) are preserved at
-> `fcdd32c83bc5aed08ef4f3aa5da512e668d8b216`. Current executable evidence uses
+> [affected review](REVIEW_LIB1_NORM_CONTROL_ASTRA.md) remain tied to the repair
+> bytes at `fcdd32c83bc5aed08ef4f3aa5da512e668d8b216`; the review was added later.
+> Current executable evidence uses
 > `checks/lib1_check_v2.py`; `checks/lib1_check.py` is restored as the historical
 > v1 input. Both repair histories resolve the ineffective norm control at their
 > respective source identities. The current R2 also discloses the old validator's
@@ -342,9 +372,12 @@
 > [scoped independent LAND review](REVIEW_LGF.md): explicit infinite-lattice
 > and finite-torus estimates, zero-mode accounting and the free curvature
 > consumer. The [TSE55 adoption](checks/full_proof_lgf_consumer_adoption.json)
-> now applies its convention, torus-order, image and status fixes; those consumer
-> edits await their own affected review. No interacting H_int, continuum
-> existence or physical mass threshold follows from the free library.
+> now applies its convention, torus-order, image and status fixes, including
+> the explicit support-to-torus range. The [fresh affected review](REVIEW_LGF_CONSUMER_ASTRA.md)
+> confirms that amendment at its frozen source identity; the author-freeze
+> pending label is superseded by this review. This is not a whole-TSE55 review.
+> No interacting H_int, continuum existence or physical mass threshold follows
+> from the free library.
 >
 > The [two-scale OS-algebra witness](W_T0.md) has a
 > [scoped independent LAND review](REVIEW_W_T0.md) for its conditional

@@ -1,0 +1,119 @@
+diff --git a/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/TSE55.md b/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/TSE55.md
+index ef19143d6e..d8ea98807b 100644
+--- a/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/TSE55.md
++++ b/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/TSE55.md
+@@ -5,6 +5,12 @@ Reviewer model: claude-opus-5-5
+ Author: Opus 5.5 worker (claude-opus-5-5), session 26. Deliverable of queue brief `tse.md`.
+ Writes only this file and `checks/ts55_*`. No git.
+ 
++Coordinator amendment, 29 October 2026: the LGF paragraph and its status
++references now consume the independently reviewed local scalar/free library.
++These consumer edits await affected review; [their receipt](checks/full_proof_lgf_consumer_adoption.json)
++records the original and amended source identities. Other TS hypotheses retain
++their stated status.
++
+ ## 0. PRE-STATED (written before any derivation; statements only)
+ 
+ UTC time at start: 2026-10-29 05:31:58 UTC (from `date -u`).
+@@ -191,17 +197,41 @@ the sum is a weighted sum of squares. This is why no per-level positivity argume
+   Riemann sums give **λ⁸Cov → c_bub·I_8/u², c_bub := 2·6(N² − 1)/π⁴ = 12(N² − 1)/π⁴**, I_8 := ∫∫f(x)g(y)|x − y|^{−8}dxdy ∈
+   [‖f‖_1‖g‖_1D_+^{−8}, ‖f‖_1‖g‖_1D_−^{−8}] (> 0). Consistency: NONFREE55's e ≈ F^aF^a/(2u) with 48(N² − 1)/(π⁴r⁸) gives
+   48/(2u)² = 12/u² (CODEX_REVIEW_NONFREE R13); the clover route (N² − 1)/32·16·24 = 12(N² − 1) agrees (ts55_1 A4).
+-- **(LGF) [m], IMPORTED-standard, not re-derived here.** For the lattice Laplacian's Green's function G on Z⁴ and lattice
+-  differences ∇^α, |α| ≤ 2: |∇^αG(x) − ∂^α(4π²|x|²)^{−1}| ≤ C_LGF|x|^{−3−|α|} for |x| ≥ 1 [m: the standard asymptotic expansion of
+-  the simple-random-walk Green's function and its differences, e.g. Lawler–Limic, *Random Walk: A Modern Introduction*, §4.3];
+-  and on the torus of side T (zero mode removed) the same holds for 1 ≤ |x| ≤ T/4 with an extra C′_LGF·T^{−4} at |α| = 2 (ARGUED:
+-  the image sum of ∂²|y|^{−2} converges orbit-by-orbit because the hyperoctahedral average of y_μy_ρ is δ_{μρ}|y|²/4, which kills
+-  the |y|^{−4} term; the zero-mode correction is a quadratic polynomial whose second differences are O(T^{−4})).
+-  𝔊^F = P_ex = dΔ⁻¹d* (Feynman gauge, Weitzenböck: componentwise scalar Laplacian), so 𝔊^F(p,q) = D_{μν,ρσ}(x_p − x_q) +
+-  O(r^{−5}) + O(T^{−4}).
++- **(LGF) — locally proved scalar/free library; independent LAND review.**
++  [LGF](LGF.md), equations (1)–(5), uses the positive graph Laplacian
++  Δ = Σ_j(2I − S_j − S_j⁻¹) = 8(I − P), with counting inner product,
++  λ(ξ) = 4Σ_j sin²(ξ_j/2), and c_4 = 1/(4π²). Explicitly,
++  G(x) = (2π)⁻⁴∫_[−π,π]⁴ exp(iξ·x)/λ(ξ)dξ and
++  G_T(x) = T⁻⁴Σ_{ξ∈(2π/T)Z⁴ mod 2π, ξ≠0} exp(iξ·x)/λ(ξ).
++  The latter has counting mean zero and ΔG_T = δ_0 − T⁻⁴.
++  Oriented differences are ∇_j⁺ = S_j − I and ∇_j⁻ = I − S_j⁻¹,
++  with repeated indices allowed. For 0 ≤ m = |α| ≤ 2 and A = 2^1000,
++  |∇^αG(x) − ∂^α(c_4|x|⁻²)| ≤ A|x|^(−3−m) for |x| ≥ 1;
++  on the torus, for 1 ≤ |x| ≤ T/4, the bound is
++  A|x|^(−3−m) + A T^(−2−m). Thus the torus corrections at orders
++  zero, one and two are respectively T⁻², T⁻³ and T⁻⁴.
++  For the zero-mean continuum torus Green function, the grouped image identity is
++  K_T(z) = S_T(z) + C_T + |z|²/(8T⁴), 0 < |z| < T/2, where
++  S_T(z) = Φ(z) + Σ_OΣ_{n∈O}[Φ(z+Tn) − Φ(Tn)] and Φ(z) = c_4|z|⁻²;
++  O ranges over complete signed-permutation orbits of nonzero integer vectors.
++  LGF equations (19)–(20), (29)–(32)
++  supply the lattice Fourier-shell remainder and its alias constant −a_*T⁻⁴;
++  no unregularized lattice image sum is used.
++  LGF equations (37)–(41) prove the counting-norm Weitzenböck identity and
++  𝔊^F = P_ex = dΔ_1⁻¹d* for the quadratic one-colour law at coupling one,
++  with gauge and harmonic link modes contributing no curvature. For plaquette
++  base points x_p, x_q and 1 ≤ r = |x_p − x_q| ≤ T/4,
++  |𝔊^F(p,q) − D_{μν,ρσ}(x_p − x_q)| ≤ 2^1002(r⁻⁵ + T⁻⁴).
++  Its squared-kernel error is bounded by 2^2010(r⁻⁹ + r⁻⁴T⁻⁴), as needed below.
++  [The independent LGF review](REVIEW_LGF.md) confirms this library scope.
++  This supplies only FREE's kernel input; its test-function sums and the other
++  hypotheses of FREE and TS retain their separate scope.
+ - **Lemma FREE (PROVEN-HERE given (LGF)).** Let L_free := 2λ⁸(N² − 1)Σ_{p,q}w_f(p)w_g(q)𝔊^F(p,q)² (lattice, coupling 1). There are
+   d_0 = d_0(f, g, L) and R_0 such that for K − m ≥ d_0 and R ≥ R_0: **½c_bubI_8 ≤ L_free ≤ (3/2)c_bubI_8.**
+-  *Proof.* Lattice distances between the supports are r ≥ D_−λ/a − 2 ≥ ½D_−L^{K−m} once L^{K−m} ≥ 4/D_−. By (LGF) and |D| ≤ C_Dr^{−4},
++  *Proof.* Lattice distances between the supports are r ≥ D_−λ/a − 2 ≥ ½D_−L^{K−m} once L^{K−m} ≥ 4/D_−.
++  Increase R_0 to at least 8(D_+ + 1), retaining the support condition of §1.2.
++  Since λ ≤ 1 and a ≤ 1, r ≤ D_+λ/a + 2 ≤ T/4 for T = R/a. Thus the
++  entire kernel comparison lies in LGF's stated torus range. By (LGF) and |D| ≤ C_Dr^{−4},
+   |𝔊^F² − D²| ≤ C(r^{−9} + r^{−4}T^{−4}), and Σ_pw_f ≤ 12a^{−4}‖f‖_1 for a/λ small (Riemann), so the replacement error is
+   ≤ C(f,g)[(a/λ)D_−^{−9} + D_−^{−4}(λ/R)⁴] (λ ≤ 1). Replacing w_f(p) by f_λ(x_p) costs a relative O(a‖∇f‖_∞/(λ‖f‖_∞))·…, and the
+   Riemann sum of the smooth integrand f_λ(x)g_λ(y)|x − y|^{−8} on {|x − y| ≥ D_−λ} differs from the integral by a relative O(a/λ).
+@@ -415,7 +445,7 @@ no (LGF)). And (PL-1L) ⇒ (PL-up) with A_up := A_1 + A_Λ (Lemma Λ-size). PROV
+ 
+ ### 5.3 What the theorems use and do not use; quantifiers
+ - **Used:** Proposition B (banked); Proposition GT (exact); Lemma KD (pre-S24 lane theorems); Lemmas SUM, AF-cmp, Λ-size (arithmetic of
+-  FLOW-pw); Lemma FREE ((LGF) [m]); the named inputs. **Not used:** e ∝ Θ (CODEX_REVIEW_NONFREE R13: not banked), Lemma V, any
++  FLOW-pw); Lemma FREE (the reviewed scalar/free (LGF) library); the named inputs. **Not used:** e ∝ Θ (CODEX_REVIEW_NONFREE R13: not banked), Lemma V, any
+   coincident-point variance, any flowed observable, (ID♮), (MOM-E), any exact one-loop slope (only b_± > 0: the (B-BR)/(UIR^♮_br)
+   weakening suffices — the TS bounds are stated in terms of the chain's own u_{K−m}, whatever its slope).
+ - **Quantifier order** (as H-RED^e needs, CODEX_REVIEW_NONFREE R11): m_0, d_0, R_0 and the constants depend on (N, L, κ, f, g, g_ref,
+@@ -440,8 +470,12 @@ for (SF-cont) along the A5 sequence) apply. **This file needs only b_± > 0 and
+ ### 6.2 (K-dec) — PROVEN as an implication of pre-S24 lane theorems (Lemma KD)
+ LINEAR_PACKAGE Lemmas 2.5, 2.7, 4.4 (frozen v1.1) and PROOF Theorem N5-triv (pre-S24). Not session-24/25 material.
+ 
+-### 6.3 (LGF) — IMPORTED-standard [m]
+-Lattice Green's function asymptotics with second differences (§2.4); torus clause ARGUED. Only Lemma FREE uses it.
++### 6.3 (LGF) — locally proved scalar/free library; independent LAND review
++[LGF](LGF.md), equations (1)–(5), (19)–(20), (29)–(32), (37)–(41), supplies
++§2.4's exact normalization, infinite-lattice and finite-torus estimates, and
++free curvature kernel. [REVIEW_LGF](REVIEW_LGF.md) confirms those statements.
++Only FREE consumes this input. No interacting estimate or other TS hypothesis
++is discharged by that review.
+ 
+ ### 6.4 (PL-1L) — OPEN. What it reduces to (ARGUED, not proven here), and what is missing
+ (PL-1L) is "each RG step reproduces its one-loop contribution to the e two-point function". It would follow from five per-step
+@@ -532,7 +566,7 @@ Corollary SEP-e (CODEX_REVIEW_NONFREE bank 1, PROVEN with the repairs) gives the
+ | Proposition GT, Lemmas SUM, AF-cmp, Λ-size, FINE, LV-sep | this file §2.3, §3.3–§3.5, §4.1–§4.2 | **PROVEN-HERE** (checks ts55_2, ts55_3) | this file |
+ | exact coefficient c_bub = 12(N² − 1)/π⁴ | this file §2.4 | **PROVEN-HERE** (ts55_1; agrees with nf55_a and Codex R8/R13) | this file |
+ | (K-dec) | Lemma KD (§3.2) | **PROVEN as implication of pre-S24 lane theorems** (LINEAR_PACKAGE 2.5, 2.7, 4.4; PROOF N5-triv) | LINEAR_PACKAGE / PROOF |
+-| (LGF) | §2.4 | **IMPORTED-standard [m]** (torus clause ARGUED) | literature |
++| (LGF) | §2.4 | **Locally proved scalar/free library; independent LAND review** | [LGF](LGF.md), [review](REVIEW_LGF.md) |
+ | **(PL-1L)** | §5.2 | **OPEN**; ⟸ (P1)–(P5) **ARGUED** (§6.4) | STEP55 (P1, P2), SRC2_55/LOC-e (P3), (P4) induction, LF (P5) |
+ | (SRC-rel) [route (B) upper half only] | §5.1 | **OPEN** | SRC2_55 T1 in relative-radius form |
+ | (CSL) [only for κ_e = 2 via route (B)] | §5.1, §4.3 | **OPEN**; tree level = SA-E1 (banked, conditional on BFT-E) | SRC / LOC-e |
+@@ -618,7 +652,7 @@ reduction of §6.4.
+ | 3 | Curvature chain F_{i+1} = Q_2F_i + dξ_i/√κ is Markov; Σ_i𝔎_i = P_ex exactly; 𝔎_i = level-i fluctuation in the fine curvature (§2.2) | PROVEN-HERE |
+ | 4 | Proposition GT: per-level one-loop terms Λ_i^{run} sum exactly to the running bubble W^{lead}; per-level terms have no sign (§2.3) | PROVEN-HERE (ts55_2) |
+ | 5 | Σ_{μνρσ}X² = (4d − 8)tr T² + 4(tr T)²; Σ_{μ<ν,ρ<σ}D² = 6/(π⁴r⁸); c_bub = 12(N² − 1)/π⁴ (§2.4) | PROVEN-HERE (ts55_1; third independent route) |
+-| 6 | (LGF) (§2.4) | IMPORTED-standard [m]; torus clause ARGUED |
++| 6 | (LGF) (§2.4) | Locally proved scalar/free library; independent LAND review ([LGF](LGF.md), [review](REVIEW_LGF.md)) |
+ | 7 | Lemma FREE: ½c_bubI_8 ≤ L_free ≤ (3/2)c_bubI_8 for K − m ≥ d_0, R ≥ R_0 (§2.4) | PROVEN-HERE given (LGF) |
+ | 8 | Lemma KD = (K-dec) (§3.2) | PROVEN as an implication of LINEAR_PACKAGE 2.5/2.7/4.4 + PROOF N5-triv (pre-S24) |
+ | 9 | Lemma SUM (§3.3) | PROVEN-HERE (ts55_3 S1, control fired) |
+@@ -661,7 +695,7 @@ reduction of §6.4.
+ 1. **H_int's Yang–Mills side is now one named input.** (TS-e-up) and (TS-e-low) — for exactly the Z ≡ 1 clover field of OSLEAF55's
+    algebra — follow, by a complete argument (Theorem TS), from **(PL-1L)** (per-step one-loop accuracy for the e-source, with
+    per-step decay at fine levels and canonical suppression at coarse levels) plus linear/flow inputs that are pre-S24 lane theorems
+-   ((K-dec)), FLOW's conditional bracket ((FLOW-pw)) and a classical lattice fact ((LGF) [m]). The upper half alone, with κ_e = 1
++   ((K-dec)), FLOW's conditional bracket ((FLOW-pw)) and the reviewed scalar/free lattice library (LGF). The upper half alone, with κ_e = 1
+    (enough for H-RED^e), follows from **(SRC-rel)** — SRC2_55's target in relative-radius form — with no one-loop computation.
+ 2. **Critical-path merge.** (PL-1L)'s irreducible pieces are (P3) canonical localisation of e-images above the source scale and (P5)
+    large-field decoupling. (P3) is the same object as SRCAN55's (LOC-e) (the OS0 singleton, CODEX_REVIEW_SRCAN item 9). So the OS0

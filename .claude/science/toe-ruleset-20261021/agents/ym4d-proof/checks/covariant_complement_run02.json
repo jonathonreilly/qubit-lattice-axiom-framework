@@ -1,0 +1,10 @@
+{
+  "exit_code": 1,
+  "elapsed_seconds": 1.5764817079761997,
+  "peak_rss_kib": 65072,
+  "termination_reason": null,
+  "program": "covariant_complement_01.py",
+  "stdout": "covariant_complement_02_output.txt",
+  "stderr": "covariant_complement_02_stderr.txt",
+  "previous_resource_only_failure": "covariant_complement_01_stderr.txt; RLIMIT_RSS rejected before runpy executed"
+}

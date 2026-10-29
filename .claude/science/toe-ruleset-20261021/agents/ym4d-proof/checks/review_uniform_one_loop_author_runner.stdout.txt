@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-29T21:36:00.630517+00:00",
+  "declaration": "First reproduction after complete independent38/38 run and full author-code read; exact all-field comparison, no changed thresholds.",
+  "source_sha256": "6cb6ffaddb6b47d526784098bf9eb96bdd3bb1757c7b5b0dad65a3d8fb5091f7",
+  "temporary_copy": "/tmp/review_uniform_one_loop_author_0dsdxyfo/uniform_one_loop_01.py",
+  "exit_code": 0,
+  "results_match_exactly": true,
+  "passed": 24,
+  "total": 24,
+  "resource_gates": [
+    {
+      "stage": "before",
+      "free_percent": 53,
+      "load": [
+        1.92626953125,
+        2.22314453125,
+        2.08447265625
+      ],
+      "own_rss_bytes": 21577728
+    },
+    {
+      "stage": "after",
+      "free_percent": 54,
+      "load": [
+        1.92626953125,
+        2.22314453125,
+        2.08447265625
+      ],
+      "own_rss_bytes": 21577728
+    }
+  ],
+  "child_peak_rss_bytes": 109625344,
+  "elapsed_seconds": 2.2949193340027705,
+  "original_source_unchanged": true
+}

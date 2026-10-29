@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_source_activity_probe_atoms_wrong_sign.py", line 52, in <module>
+    ck('actual_parametrix_identity',np.linalg.norm(K@P-(ident-R),np.inf)<1e-12)
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_source_activity_probe_atoms_wrong_sign.py", line 7, in ck
+    if not v:raise AssertionError(n)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: actual_parametrix_identity

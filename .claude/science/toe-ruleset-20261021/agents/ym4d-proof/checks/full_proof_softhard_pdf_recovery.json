@@ -1,0 +1,65 @@
+{
+  "created_utc": "2026-10-29T21:42:47.639812+00:00",
+  "scope": "Fresh byte-authentication of the six original external PDFs unavailable to REVIEW_SOFTHARD_R2.",
+  "manifest_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/sh_source_manifest.json",
+  "manifest_sha256": "67bf6d3c7760f2b9fd17a2f9524e381c061544296d7a8919a1a094fb6e487993",
+  "files": [
+    {
+      "historical_path": "/Users/jonBridger/ym4d-lanes/arxiv/review_residual_full_colour_literature_adams_lee.pdf",
+      "available_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_full_colour_literature_adams_lee.pdf",
+      "expected_sha256": "db2ed3d832a763abea185bbf1d14c95faf48a7e9366393df80b5c2ab1980ae3f",
+      "actual_sha256": "db2ed3d832a763abea185bbf1d14c95faf48a7e9366393df80b5c2ab1980ae3f",
+      "expected_bytes": 274675,
+      "actual_bytes": 274675,
+      "matches": true
+    },
+    {
+      "historical_path": "/Users/jonBridger/ym4d-lanes/arxiv/review_residual_full_colour_literature_bgm.pdf",
+      "available_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_full_colour_literature_bgm.pdf",
+      "expected_sha256": "d8fcf7ec954df18660b0ed456ac846f8b33f0f3eda9a02c9857d62139d3a63b5",
+      "actual_sha256": "d8fcf7ec954df18660b0ed456ac846f8b33f0f3eda9a02c9857d62139d3a63b5",
+      "expected_bytes": 303862,
+      "actual_bytes": 303862,
+      "matches": true
+    },
+    {
+      "historical_path": "/Users/jonBridger/ym4d-lanes/arxiv/review_residual_full_colour_literature_dimock_axial.pdf",
+      "available_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_full_colour_literature_dimock_axial.pdf",
+      "expected_sha256": "4742e86f6c701b15a598e0ff661b7881d8e7e6d3c2a60c45c0a60bed8c7c16b4",
+      "actual_sha256": "4742e86f6c701b15a598e0ff661b7881d8e7e6d3c2a60c45c0a60bed8c7c16b4",
+      "expected_bytes": 292405,
+      "actual_bytes": 292405,
+      "matches": true
+    },
+    {
+      "historical_path": "/Users/jonBridger/ym4d-lanes/arxiv/review_residual_full_colour_literature_dimock_multiscale.pdf",
+      "available_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_full_colour_literature_dimock_multiscale.pdf",
+      "expected_sha256": "1747a54afe35b9fa51ebf96d8257cbe7ea0f002d6fdd203daaff80950b60de8e",
+      "actual_sha256": "1747a54afe35b9fa51ebf96d8257cbe7ea0f002d6fdd203daaff80950b60de8e",
+      "expected_bytes": 600279,
+      "actual_bytes": 600279,
+      "matches": true
+    },
+    {
+      "historical_path": "/Users/jonBridger/ym4d-lanes/arxiv/review_residual_full_colour_literature_luscher_weisz.pdf",
+      "available_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_full_colour_literature_luscher_weisz.pdf",
+      "expected_sha256": "9abc4201c94d34b534b86f90092f2e64aacb2b8a5938549f51cd65b408289f4e",
+      "actual_sha256": "9abc4201c94d34b534b86f90092f2e64aacb2b8a5938549f51cd65b408289f4e",
+      "expected_bytes": 211800,
+      "actual_bytes": 211800,
+      "matches": true
+    },
+    {
+      "historical_path": "/Users/jonBridger/ym4d-lanes/arxiv/review_residual_full_colour_literature_nielsen.pdf",
+      "available_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_full_colour_literature_nielsen.pdf",
+      "expected_sha256": "eff771d66b5847027107b662dfecf347588c5f3f61cd6c0f82775bf91c48e31d",
+      "actual_sha256": "eff771d66b5847027107b662dfecf347588c5f3f61cd6c0f82775bf91c48e31d",
+      "expected_bytes": 114576,
+      "actual_bytes": 114576,
+      "matches": true
+    }
+  ],
+  "all_six_match": true,
+  "limits": "Hashes only; no new primary-paper theorem review, no full documentation-checker replay and no repair of the separate B3 conditional-object defect. Original review and failed/unavailable reports remain unchanged.",
+  "full_text_policy": "PDFs remain untracked; only this receipt is eligible for staging."
+}

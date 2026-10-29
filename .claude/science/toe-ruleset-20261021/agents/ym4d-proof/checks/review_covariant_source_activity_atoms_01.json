@@ -1,0 +1,499 @@
+{
+  "checks": [
+    {
+      "name": "real positive covariant precision",
+      "passed": true,
+      "detail": 1.5087344596205052
+    },
+    {
+      "name": "nontrivial winding retained",
+      "passed": true,
+      "detail": 2.741966945395383
+    },
+    {
+      "name": "noncommuting colour transports",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "patch identity a=0.0",
+      "passed": true,
+      "detail": 6.661338147750939e-16
+    },
+    {
+      "name": "absolute weighted residual a=0.0",
+      "passed": true,
+      "detail": {
+        "row": 0.024745580541203075,
+        "column": 0.030176275368127413,
+        "M": 0.030176275368127413,
+        "B": 0.21719234242734434
+      }
+    },
+    {
+      "name": "right-ordered inverse a=0.0",
+      "passed": true,
+      "detail": 2.220446049250313e-16
+    },
+    {
+      "name": "marked product incidence a=0.0",
+      "passed": true,
+      "detail": {
+        "actual": 14.945775347223325,
+        "bound": 871974.1708845124
+      }
+    },
+    {
+      "name": "Neumann remainder a=0.0 n=0",
+      "passed": true,
+      "detail": {
+        "error": 1.0417838872338411e-08,
+        "bound": 17040.384313026174
+      }
+    },
+    {
+      "name": "Neumann remainder a=0.0 n=1",
+      "passed": true,
+      "detail": {
+        "error": 2.220446049250313e-16,
+        "bound": 514.2153294085965
+      }
+    },
+    {
+      "name": "Neumann remainder a=0.0 n=2",
+      "passed": true,
+      "detail": {
+        "error": 2.220446049250313e-16,
+        "bound": 15.517103378746157
+      }
+    },
+    {
+      "name": "Neumann remainder a=0.0 n=3",
+      "passed": true,
+      "detail": {
+        "error": 2.220446049250313e-16,
+        "bound": 0.4682483844727442
+      }
+    },
+    {
+      "name": "wrong residual sign rejected",
+      "passed": true,
+      "detail": 2.083567774467682e-08
+    },
+    {
+      "name": "wrong noncommuting order rejected",
+      "passed": true,
+      "detail": 2.516417726782261e-09
+    },
+    {
+      "name": "patch identity a=0.3",
+      "passed": true,
+      "detail": 6.661338147750939e-16
+    },
+    {
+      "name": "absolute weighted residual a=0.3",
+      "passed": true,
+      "detail": {
+        "row": 0.009988463373045932,
+        "column": 0.011486707444591808,
+        "M": 0.011486707444591808,
+        "B": 0.09079156490483431
+      }
+    },
+    {
+      "name": "right-ordered inverse a=0.3",
+      "passed": true,
+      "detail": 1.1102230246251565e-16
+    },
+    {
+      "name": "marked product incidence a=0.3",
+      "passed": true,
+      "detail": {
+        "actual": 5.2661000957195085,
+        "bound": 282461.3796426821
+      }
+    },
+    {
+      "name": "Neumann remainder a=0.3 n=0",
+      "passed": true,
+      "detail": {
+        "error": 3.389007057671456e-09,
+        "bound": 5246.968334914158
+      }
+    },
+    {
+      "name": "Neumann remainder a=0.3 n=1",
+      "passed": true,
+      "detail": {
+        "error": 1.1102230246251565e-16,
+        "bound": 60.27039023419595
+      }
+    },
+    {
+      "name": "Neumann remainder a=0.3 n=2",
+      "passed": true,
+      "detail": {
+        "error": 1.1102230246251565e-16,
+        "bound": 0.692308340191592
+      }
+    },
+    {
+      "name": "Neumann remainder a=0.3 n=3",
+      "passed": true,
+      "detail": {
+        "error": 1.1102230246251565e-16,
+        "bound": 0.007952343365231759
+      }
+    },
+    {
+      "name": "patch identity a=2.0",
+      "passed": true,
+      "detail": 4.440892098500626e-16
+    },
+    {
+      "name": "absolute weighted residual a=2.0",
+      "passed": true,
+      "detail": {
+        "row": 0.00032673968358983225,
+        "column": 0.00031088147510915584,
+        "M": 0.00032673968358983225,
+        "B": 0.003172012151359737
+      }
+    },
+    {
+      "name": "right-ordered inverse a=2.0",
+      "passed": true,
+      "detail": 5.551115123125783e-17
+    },
+    {
+      "name": "marked product incidence a=2.0",
+      "passed": true,
+      "detail": {
+        "actual": 0.09892475266217211,
+        "bound": 4329.215925501325
+      }
+    },
+    {
+      "name": "Neumann remainder a=2.0 n=0",
+      "passed": true,
+      "detail": {
+        "error": 5.1592714479699675e-11,
+        "bound": 73.12888501250846
+      }
+    },
+    {
+      "name": "Neumann remainder a=2.0 n=1",
+      "passed": true,
+      "detail": {
+        "error": 5.551115123125783e-17,
+        "bound": 0.02389410875026424
+      }
+    },
+    {
+      "name": "Neumann remainder a=2.0 n=2",
+      "passed": true,
+      "detail": {
+        "error": 5.551115123125783e-17,
+        "bound": 7.80715353272238e-06
+      }
+    },
+    {
+      "name": "Neumann remainder a=2.0 n=3",
+      "passed": true,
+      "detail": {
+        "error": 5.551115123125783e-17,
+        "bound": 2.5509068750189516e-09
+      }
+    },
+    {
+      "name": "patch identity a=20.0",
+      "passed": true,
+      "detail": 4.440892098500626e-16
+    },
+    {
+      "name": "absolute weighted residual a=20.0",
+      "passed": true,
+      "detail": {
+        "row": 1.138018512619311e-08,
+        "column": 1.0941093081768038e-08,
+        "M": 1.138018512619311e-08,
+        "B": 1.2153289034333541e-07
+      }
+    },
+    {
+      "name": "right-ordered inverse a=20.0",
+      "passed": true,
+      "detail": 1.3877787807814457e-17
+    },
+    {
+      "name": "marked product incidence a=20.0",
+      "passed": true,
+      "detail": {
+        "actual": 6.552160892234502e-07,
+        "bound": 0.025010042052322913
+      }
+    },
+    {
+      "name": "Neumann remainder a=20.0 n=0",
+      "passed": true,
+      "detail": {
+        "error": 4.008031197385677e-16,
+        "bound": 0.00039195573017135777
+      }
+    },
+    {
+      "name": "Neumann remainder a=20.0 n=1",
+      "passed": true,
+      "detail": {
+        "error": 1.3877787807814457e-17,
+        "bound": 4.460528770622247e-12
+      }
+    },
+    {
+      "name": "Neumann remainder a=20.0 n=2",
+      "passed": true,
+      "detail": {
+        "error": 1.3877787807814457e-17,
+        "bound": 5.076164317039172e-20
+      }
+    },
+    {
+      "name": "Neumann remainder a=20.0 n=3",
+      "passed": true,
+      "detail": {
+        "error": 1.3877787807814457e-17,
+        "bound": 5.776768965888139e-28
+      }
+    },
+    {
+      "name": "patch read collar coefficient matters",
+      "passed": true,
+      "detail": 8.772790406824355e-10
+    },
+    {
+      "name": "Stieltjes square root",
+      "passed": true,
+      "detail": 1.1102230246251565e-15
+    },
+    {
+      "name": "full scalar determinant homotopy",
+      "passed": true,
+      "detail": {
+        "trace": 66.32940763965354,
+        "spectral": 66.32940763965354
+      }
+    },
+    {
+      "name": "three identical colour determinants rejected",
+      "passed": true,
+      "detail": {
+        "full": 66.32940763965354,
+        "wrong": 64.8028770685665
+      }
+    },
+    {
+      "name": "column omission fails marked-incidence bound",
+      "passed": true,
+      "detail": {
+        "actual_at_remote": 10666298010.43584,
+        "row_only_wrong_bound": 4549688586.5000305,
+        "correct_global_bound": 584634983365.2539,
+        "n": 256,
+        "m": 256,
+        "beta": 4.0
+      }
+    },
+    {
+      "name": "remote mark cannot be omitted",
+      "passed": true,
+      "detail": {
+        "actual": 10666298010.43584,
+        "root_only_bound": 2274844293.2500153
+      }
+    },
+    {
+      "name": "support-size and filled-box cost retained",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "patch_norms": [
+    {
+      "a": 0.0,
+      "P": {
+        "row": 547654.3546521752,
+        "column": 547654.3669492339,
+        "M": 547654.3669492339,
+        "B": 24954300.254086427
+      },
+      "R": {
+        "row": 0.024745580541203075,
+        "column": 0.030176275368127413,
+        "M": 0.030176275368127413,
+        "B": 0.21719234242734434
+      }
+    },
+    {
+      "a": 0.3,
+      "P": {
+        "row": 451539.13128838834,
+        "column": 451539.13510019553,
+        "M": 451539.13510019553,
+        "B": 21021292.316872504
+      },
+      "R": {
+        "row": 0.009988463373045932,
+        "column": 0.011486707444591808,
+        "M": 0.011486707444591808,
+        "B": 0.09079156490483431
+      }
+    },
+    {
+      "a": 2.0,
+      "P": {
+        "row": 223740.77762659732,
+        "column": 223740.77767526227,
+        "M": 223740.77767526227,
+        "B": 11077648.788153965
+      },
+      "R": {
+        "row": 0.00032673968358983225,
+        "column": 0.00031088147510915584,
+        "M": 0.00032673968358983225,
+        "B": 0.003172012151359737
+      }
+    },
+    {
+      "a": 20.0,
+      "P": {
+        "row": 34441.94636242647,
+        "column": 34441.94636242668,
+        "M": 34441.94636242668,
+        "B": 1829865.9056008845
+      },
+      "R": {
+        "row": 1.138018512619311e-08,
+        "column": 1.0941093081768038e-08,
+        "M": 1.138018512619311e-08,
+        "B": 1.2153289034333541e-07
+      }
+    }
+  ],
+  "resources": [
+    {
+      "where": "start",
+      "rss": 55984128,
+      "free": 56,
+      "load": [
+        2.0078125,
+        1.87548828125,
+        1.8935546875
+      ],
+      "nice": 10,
+      "elapsed": 0.0036167920334264636,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "resolvent a=0.0",
+      "rss": 57622528,
+      "free": 56,
+      "load": [
+        2.0078125,
+        1.87548828125,
+        1.8935546875
+      ],
+      "nice": 10,
+      "elapsed": 0.01031945802969858,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "resolvent a=0.3",
+      "rss": 58425344,
+      "free": 56,
+      "load": [
+        2.0078125,
+        1.87548828125,
+        1.8935546875
+      ],
+      "nice": 10,
+      "elapsed": 0.014257958042435348,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "resolvent a=2.0",
+      "rss": 59047936,
+      "free": 56,
+      "load": [
+        2.0078125,
+        1.87548828125,
+        1.8935546875
+      ],
+      "nice": 10,
+      "elapsed": 0.018186625035014004,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "resolvent a=20.0",
+      "rss": 59047936,
+      "free": 56,
+      "load": [
+        2.0078125,
+        1.87548828125,
+        1.8935546875
+      ],
+      "nice": 10,
+      "elapsed": 0.02180891705211252,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "completion",
+      "rss": 59129856,
+      "free": 56,
+      "load": [
+        2.0078125,
+        1.87548828125,
+        1.8935546875
+      ],
+      "nice": 10,
+      "elapsed": 0.033530208049342036,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    }
+  ],
+  "scope": "Generic matrix/support mechanism diagnostic. Base actual Yang-Mills precision is the separately reviewed CB input; this test does not identify this covariant cycle matrix with it."
+}

@@ -23,5 +23,13 @@
   "unconsumed_discovery": "A third-party OpenAI research catalogue appeared in search but timed out on opening; no mathematical or benchmark claim is based on it.",
   "register_entries": 36,
   "full_existence": "OPEN",
-  "physical_continuum_mass_gap": "OPEN"
+  "physical_continuum_mass_gap": "OPEN",
+  "Faria_da_Veiga_OCarroll": {
+    "checked_utc": "2026-10-29T20:44:35.886691+00:00",
+    "arxiv": "https://arxiv.org/html/2509.03513v2",
+    "metadata": "https://arxiv.org/abs/2509.03513",
+    "latest_listed_version_date": "2026-01-24",
+    "read": "v1 introduction and complete section IV; v2 abstract, introductory scope/setup and complete section IV. Appendix material appeared in search context, but no complete appendix or detailed spectral proof was reviewed.",
+    "scope": "The newer version explicitly disclaims a physical-gap proof from the Haar quadratic term. Its conclusion leaves continuum persistence and larger-beta results as further work. No theorem imported."
+  }
 }

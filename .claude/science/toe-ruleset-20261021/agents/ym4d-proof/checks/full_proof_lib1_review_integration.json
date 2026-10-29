@@ -1,0 +1,49 @@
+{
+  "created_utc": "2026-10-29T20:48:57.153406+00:00",
+  "scope": "Independent affected B1 review integration and current literature-register synchronization.",
+  "root_review_read": "Complete167-line affected review, plus current receipt and bound input/source checks.",
+  "review_receipt_sha256": "e7f443ec37f077e9a9cc2075b0642267dc7c9d3f5a41da932c56056b5994b387",
+  "changes": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "before_sha256": "8976bbb35a8d77286340c8a98e08332b19d0cdafa74bd81c1f4d6ca72cca7101",
+      "after_sha256": "1587cd5d8afe9aaed4523c8434f68a80db9dea0cdc056ef9a3948494361eb940"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "before_sha256": "de7b07e88f14fba3dc3f2a9813b0841800d35c97976ffb07ea175e9f5d51b14c",
+      "after_sha256": "5d5d3eeb04858c1e557451c0d56e3e22c9413a7b0e949ddd652667d7902623b3"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "before_sha256": "744ff8129f7b559046a6b6a19de9dbd76bb3a3db6a8c652dabc61a42df88349b",
+      "after_sha256": "e8bebeb1fe1528373be821e0a3d6f92242e4768a9627457f3312bf0256fc5cf5"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "before_sha256": "24dd4134309a07a9a463acfe4ae14767d0cbf4a96e0fe4bf61fce762063f14d1",
+      "after_sha256": "3043f894187d435bc1c64cff5b459b628f78fbbcce3bc9b9717d262a78316b4f"
+    }
+  ],
+  "legacy_PROOF_body_unchanged": true,
+  "additional_root_scientific_replay": false,
+  "numerical_or_mathematical_source_repair": false,
+  "full_existence": "OPEN",
+  "physical_gap": "OPEN",
+  "mechanical_validation": {
+    "review_artifacts": 19,
+    "repair_input_artifacts": 18,
+    "files": 28,
+    "local_links_checked": 358,
+    "vocabulary": {
+      "files": [],
+      "schema_version": 1,
+      "summary": {
+        "files_with_violations": 0,
+        "total_auto_correctable": 0,
+        "total_needs_human": 0
+      }
+    },
+    "whitespace_exit": 0
+  }
+}

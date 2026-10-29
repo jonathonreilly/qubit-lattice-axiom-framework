@@ -1,0 +1,377 @@
+{
+  "case": "original_active",
+  "status": "completed",
+  "reason": null,
+  "exit_code": 0,
+  "binding": {
+    "source_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_original.py",
+    "base_source_sha256": "63256a04b6d2fc46dad13ee26ae0b0c592e93ac7d271157076ef32d23650fdbc",
+    "compiled_source_sha256": "518b6958f306bf572e55c8ec1774f30c4d0578c9e96dfca3535acab78903d5b3",
+    "substitution": {
+      "from": "output_full = norm(grouped, out_labels, allv, allv, 1)",
+      "to": "output_full = norm(grouped, out_labels, lam, lam, 1)"
+    },
+    "execution": "Exact function definitions compiled; main() invoked. Only the I/O footer is skipped."
+  },
+  "runtime_full_output_calls": {},
+  "author_report": {
+    "kind": "finite author check; not an independent proof review",
+    "started_utc": "2026-10-29T20:38:57.729913+00:00",
+    "counts": {
+      "polynomial_identity_with_inactive_remainder": 2187,
+      "active_norm_contraction": 2187,
+      "bounded_hole_full_norm": 2184,
+      "rooted_entropy_bound": 576,
+      "two_closure_algorithms": 36873,
+      "new_polymer_class": 36873,
+      "containment_and_active_identity": 36873,
+      "ambient_tree_monotonicity": 36873,
+      "all_original_monomial_sources_retained": 36873,
+      "pointwise_decay_bound": 8972,
+      "no_hole_identity": 3,
+      "native_4d_closure": 6288,
+      "native_4d_geometry": 6288,
+      "native_4d_tree": 6288,
+      "mutation_setup_full_hole": 1,
+      "mutation_rejected_drop_inactive_remainder": 1,
+      "mutation_rejected_erase_inactive_source": 1,
+      "mutation_rejected_fill_intersected_only": 1,
+      "mutation_rejected_identify_active_and_full_norms": 1
+    },
+    "resources": [
+      {
+        "where": "before any enumeration",
+        "max_rss_bytes": 24543232,
+        "load_averages": [
+          2.82373046875,
+          2.4091796875,
+          2.2998046875
+        ],
+        "memory_free_percent": 57,
+        "nice": 20,
+        "thread_environment": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1"
+        },
+        "elapsed_seconds": 0.0021584589849226177
+      },
+      {
+        "where": "path6: start",
+        "max_rss_bytes": 24543232,
+        "load_averages": [
+          2.82373046875,
+          2.4091796875,
+          2.2998046875
+        ],
+        "memory_free_percent": 57,
+        "nice": 20,
+        "thread_environment": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1"
+        },
+        "elapsed_seconds": 0.0036661250051110983
+      },
+      {
+        "where": "path6: nested pair 250",
+        "max_rss_bytes": 24543232,
+        "load_averages": [
+          2.82373046875,
+          2.4091796875,
+          2.2998046875
+        ],
+        "memory_free_percent": 57,
+        "nice": 20,
+        "thread_environment": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1"
+        },
+        "elapsed_seconds": 0.03381233400432393
+      },
+      {
+        "where": "path6: nested pair 500",
+        "max_rss_bytes": 24543232,
+        "load_averages": [
+          2.82373046875,
+          2.4091796875,
+          2.2998046875
+        ],
+        "memory_free_percent": 57,
+        "nice": 20,
+        "thread_environment": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1"
+        },
+        "elapsed_seconds": 0.06685895897680894
+      },
+      {
+        "where": "path6: end",
+        "max_rss_bytes": 24576000,
+        "load_averages": [
+          2.82373046875,
+          2.4091796875,
+          2.2998046875
+        ],
+        "memory_free_percent": 57,
+        "nice": 20,
+        "thread_environment": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1"
+        },
+        "elapsed_seconds": 0.1024321669829078
+      },
+      {
+        "where": "cycle6: start",
+        "max_rss_bytes": 24592384,
+        "load_averages": [
+          2.82373046875,
+          2.4091796875,
+          2.2998046875
+        ],
+        "memory_free_percent": 57,
+        "nice": 20,
+        "thread_environment": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1"
+        },
+        "elapsed_seconds": 0.10386045899940655
+      },
+      {
+        "where": "cycle6: nested pair 250",
+        "max_rss_bytes": 24608768,
+        "load_averages": [
+          2.82373046875,
+          2.4091796875,
+          2.2998046875
+        ],
+        "memory_free_percent": 57,
+        "nice": 20,
+        "thread_environment": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1"
+        },
+        "elapsed_seconds": 0.14316304196836427
+      },
+      {
+        "where": "cycle6: nested pair 500",
+        "max_rss_bytes": 24625152,
+        "load_averages": [
+          2.82373046875,
+          2.4091796875,
+          2.2998046875
+        ],
+        "memory_free_percent": 57,
+        "nice": 20,
+        "thread_environment": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1"
+        },
+        "elapsed_seconds": 0.19085420900955796
+      },
+      {
+        "where": "cycle6: end",
+        "max_rss_bytes": 24625152,
+        "load_averages": [
+          2.82373046875,
+          2.4091796875,
+          2.2998046875
+        ],
+        "memory_free_percent": 57,
+        "nice": 20,
+        "thread_environment": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1"
+        },
+        "elapsed_seconds": 0.24371087498730049
+      },
+      {
+        "where": "box2x3: start",
+        "max_rss_bytes": 24641536,
+        "load_averages": [
+          2.82373046875,
+          2.4091796875,
+          2.2998046875
+        ],
+        "memory_free_percent": 57,
+        "nice": 20,
+        "thread_environment": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1"
+        },
+        "elapsed_seconds": 0.24524533399380744
+      },
+      {
+        "where": "box2x3: nested pair 250",
+        "max_rss_bytes": 24657920,
+        "load_averages": [
+          2.82373046875,
+          2.4091796875,
+          2.2998046875
+        ],
+        "memory_free_percent": 57,
+        "nice": 20,
+        "thread_environment": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1"
+        },
+        "elapsed_seconds": 0.2903749169781804
+      },
+      {
+        "where": "box2x3: nested pair 500",
+        "max_rss_bytes": 24657920,
+        "load_averages": [
+          2.82373046875,
+          2.4091796875,
+          2.2998046875
+        ],
+        "memory_free_percent": 57,
+        "nice": 20,
+        "thread_environment": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1"
+        },
+        "elapsed_seconds": 0.34478033398045227
+      },
+      {
+        "where": "box2x3: end",
+        "max_rss_bytes": 24674304,
+        "load_averages": [
+          2.82373046875,
+          2.4091796875,
+          2.2998046875
+        ],
+        "memory_free_percent": 57,
+        "nice": 20,
+        "thread_environment": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1"
+        },
+        "elapsed_seconds": 0.40969254198716953
+      },
+      {
+        "where": "native 4d end",
+        "max_rss_bytes": 24674304,
+        "load_averages": [
+          2.82373046875,
+          2.4091796875,
+          2.2998046875
+        ],
+        "memory_free_percent": 57,
+        "nice": 20,
+        "thread_environment": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1"
+        },
+        "elapsed_seconds": 0.4232968339929357
+      },
+      {
+        "where": "completion",
+        "max_rss_bytes": 24674304,
+        "load_averages": [
+          2.82373046875,
+          2.4091796875,
+          2.2998046875
+        ],
+        "memory_free_percent": 57,
+        "nice": 20,
+        "thread_environment": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1"
+        },
+        "elapsed_seconds": 0.4246562920161523
+      }
+    ],
+    "mutations": {
+      "drop_inactive_remainder": "rejected by exact witness",
+      "erase_inactive_source": "rejected by exact witness",
+      "fill_intersected_only": "rejected by exact witness",
+      "identify_active_and_full_norms": "rejected by exact witness"
+    },
+    "graphs": [
+      {
+        "name": "path6",
+        "vertices": 6,
+        "nested_active_pairs": 729,
+        "connected_supports": 21
+      },
+      {
+        "name": "cycle6",
+        "vertices": 6,
+        "nested_active_pairs": 729,
+        "connected_supports": 31
+      },
+      {
+        "name": "box2x3",
+        "vertices": 6,
+        "nested_active_pairs": 729,
+        "connected_supports": 40
+      }
+    ],
+    "native_4d": {
+      "vertices": 16,
+      "degree": 4,
+      "active_sets": 137,
+      "support_instances": 6288
+    },
+    "norm_witness": {
+      "graph": "four-cycle",
+      "input_support": [
+        0
+      ],
+      "inactive_component": [
+        1,
+        2,
+        3
+      ],
+      "input_full_norm": 2,
+      "output_full_norm": 16,
+      "output_active_norm": 2,
+      "mu": "log(2)",
+      "activity_supremum": 1
+    }
+  }
+}

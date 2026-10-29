@@ -139,12 +139,14 @@ abstract tensor bridge and actual unconditional moment inputs remain open.
 None supplies continuum existence or a physical mass threshold.
 The separately recovered [LIB1 review](REVIEW_LIB1.md) confirms the written
 fixed-mask saturation/counting implications, retaining the stronger-rate
-and bounded-hole conditions for its full-norm bound. The package remains
-on HOLD against its original ineffective active/full-norm mutation control.
-The [committed B1 repair](LIB1_NORM_CONTROL_FIX.md) reproduces the old survivor
-and rejects three actual replacements through shared exact norm witnesses;
-independent affected confirmation is pending. Reference integration and
-unrestricted-history source estimates are still open.
+and bounded-hole conditions for its full-norm bound. Its original B1 HOLD
+is resolved by the [committed repair](LIB1_NORM_CONTROL_FIX.md) and
+[fresh affected review](REVIEW_LIB1_NORM_CONTROL_ASTRA.md). An independent
+set-based oracle confirms the shared full-norm computation and both exact
+witnesses; the original survivor is reproduced and three corrected selector
+mutations fail at the intended assertions. This is a scoped LAND for B1,
+not another whole-library review. Reference integration and source estimates
+for unrestricted histories are still open.
 The literature register now contains 36 explicitly scoped entries, with
 primary-source coverage distinguished from complete proof certification.
 

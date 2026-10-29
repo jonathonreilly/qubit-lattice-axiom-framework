@@ -2404,3 +2404,17 @@ covariance or limit steps; the independent reviewer will examine those.
 The neutral/full-periodic comparison remains a separate open interface.
 An Astra/max author is also beginning the actual physical infrared
 construction; no mass-gap estimate or full existence result is claimed.
+
+### Fixed-reference return continuation — frozen for review, 29 October
+
+[The source continuation](SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md) proposes
+the actual nontrivial-B source bound, common product-measure pinning
+cancellation, normalized local insertions and connected affine-return
+logarithms for scalar cubes and Hilbert–Schmidt link balls. All main action,
+Jacobian, source-force and remote-support terms are retained. The 44+5
+author predicates reproduce, excluding only recorded UTC/elapsed fields.
+A fresh reviewer is testing the full argument and has provisionally flagged
+the arbitrary-history scope of one complex-B analyticity assertion. The
+original frozen packet precedes the narrow repair. Full hard-history/collar
+and all-coarse-field return, higher-level induction, existence and the
+physical mass gap remain open.

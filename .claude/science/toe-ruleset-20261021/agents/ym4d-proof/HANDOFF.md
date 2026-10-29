@@ -38,12 +38,13 @@ Current assignments use fresh `gpt-6-astra / max` contexts:
   harmonic-lattice and actual vertex units are frozen separately. The last
   unit proposes zero residual in the stated paired-root regulator sector;
   its analytic proof awaits independent review.
-- **Source-local return author — continuation active:** actual
+- **Source-local return author — continuation delivered:** actual
   level-zero operator localization, all-order global-chart source
   substitution and exact return identities are independently checked at
-  their stated scope. A separate fixed-reference return construction is
-  in progress. Actual
-  history/contour-face control and higher-level interfaces remain open.
+  their stated scope. The separate fixed-reference and normalized-face
+  construction is frozen for fresh independent review. General hard
+  histories, actual collar/return matching and higher-level interfaces
+  remain open.
 - **Independent UIR reviewer — completed:** the frozen recovery argument
   has been checked through distinct derivations and an independent program;
   its bounded claims are confirmed with explicit conditional/open limits.
@@ -54,6 +55,9 @@ Current assignments use fresh `gpt-6-astra / max` contexts:
   the explicitly conditional model corollary are confirmed.
 - **Independent source-return reviewer — completed:** all five scoped
   repairs and the bounded construction are confirmed with frozen evidence.
+- **Fresh source-return continuation reviewer — active:** common pinning
+  majorants, remote marked supports, homotopy force and full-factor flux,
+  including the distinct scalar-cube and link-ball domains.
 - **Independent alignment reviewer — completed:** the frozen conditional
   continuation and the narrow BA-5 repair are confirmed.
 - **Independent harmonic-bridge reviewer — active:** the new finite/free
@@ -204,6 +208,17 @@ The 13 exact algebra controls reproduce byte-for-byte in
 Those controls do not validate the analytic argument. Independent review
 and the neutral/full-periodic comparison remain open; the proposal is not
 an unconditional full-colour residual or coupling-flow theorem.
+
+The [fixed-reference return continuation](SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md)
+proposes the actual nontrivial-B bound O(σp³+ρp²), normalized pin/local
+insertions and connected affine-return logarithms on the selected global
+small chart. It retains the source linear term, action and Jacobian factors,
+and every remote support mark. [Coordinator replay](checks/full_proof_source_cont_replay.json)
+matches all 44+5 author predicates except UTC/elapsed fields, with empty
+stderr. Fresh mathematical review is in progress. Its first provisional
+finding requires narrowing a complex-B analyticity sentence for arbitrary
+hard histories; the original frozen packet is preserved before that repair.
+Neither general history matching nor the full return is claimed.
 
 ## Goal and source identity
 

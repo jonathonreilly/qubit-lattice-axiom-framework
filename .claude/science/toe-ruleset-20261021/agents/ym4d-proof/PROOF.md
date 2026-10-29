@@ -145,6 +145,14 @@
 > fixed depth. Its 13 exact algebra controls reproduce. The analytic
 > argument awaits independent review; the neutral/full-periodic comparison
 > remains open. This does not promote UIR, existence or the physical gap.
+>
+> **Normalized return continuation, 29 October:** the separate
+> [fixed-reference proposal](SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md)
+> derives a nontrivial-B small-chart source bound and normalized cube/ball
+> affine-return logarithms with full prefactors and marked supports. The
+> 49 author predicates reproduce; fresh review is underway, with an initial
+> complex-B/hard-history scope clarification identified. General histories,
+> collars, all coarse fields and higher-level action matching remain open.
 
 > **PROVENANCE WARNING (2026-10-28T22:11:08Z, lead now claude-opus-5-5).** Every Claude-authored result in sessions 24 and 25 — lead consolidation and all worker files, commits 811b8ed6de through 666a71b7b9 — was produced on **claude-opus-5**, not the owner-required model (Claude: Opus 5.5 at extra effort or higher; Codex: gpt-6-astra at max). The owner has ruled that work likely unreliable. **Treat every session-24/25 status, fix, flag, refutation and number in this file as PROVISIONAL** until the Opus 5.5 review sweep recorded in SESSION25_RESULTS.md §PROVENANCE has re-established it. The only session-24/25 checks run at an approved setting are the Codex gpt-6-astra/max reviews (`CODEX_REVIEW_*.md`). The tally is reported as 72 / 2 / 7 / 24 + 1 **pending** that sweep.
 

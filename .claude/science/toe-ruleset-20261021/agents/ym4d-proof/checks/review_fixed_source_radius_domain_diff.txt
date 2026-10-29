@@ -1,0 +1,94 @@
+--- original-frozen-source
++++ corrected-frozen-source
+@@ -150,16 +150,27 @@
+ functional can be bounded in that reader norm; the constant coefficient at
+ k=0 is the original probability integral.
+ 
+-Replacing nu_i by the normalized full real Gaussian of precision 1+eta_i
+-changes this moment bound by at most
++The full-Gaussian comparison is restricted to POLYNOMIAL moments. Define
++`gamma_eta(P)=(1+eta)^(1/2)(2pi)^(-1/2)
++integral_R exp[-(1+eta)x^2/2] P(x) dx`, with the square-root branch one
++at eta=0. For P(z)=z^k, the coefficient majorant of
++`(nu_i-gamma_(eta_i))(P)`, in the same auxiliary parameters and substitution
++norm as (FR8), is at most
+ 
+     C_0 exp(-p^2/64) B^k k!.                               (FR9)
+ 
+-Indeed the difference is the two real tails and the two end segments, plus
+-the difference of scalar normalizers. Insert half of their Gaussian decay
+-before the exponential-moment bound just used. Cauchy at the SAME fixed
+-eta,t circles retains this factor. For bounded 1<=p<=4, enlarge C_0; for
+-p>=4 the tail integrals directly give it. In particular
++For a polynomial sum_k c_k z^k, sum these bounds with weights |c_k|.
++No full-real Gaussian integral is assigned here to the arbitrary bounded
++finite-polydisc readers allowed in (FR8). Entire holomorphy alone would not
++supply Gaussian integrability either. The U=0 comparison in section 3 uses
++only polynomial coefficients; it justifies their absolute summation by an
++explicit global quadratic domination, separately from (FR9).
++
++For these polynomial moments the difference is the two real tails and the
++two end segments, plus the difference of scalar normalizers. Insert half of
++their Gaussian decay before the exponential-moment bound just used. Cauchy
++at the SAME fixed eta,t circles retains this factor. For bounded 1<=p<=4,
++enlarge C_0; for p>=4 the tail integrals directly give it. In particular
+ `log q_p + (1/2)log(1+eta)-log z_p` has zero constant coefficient and a
+ nonconstant coefficient majorant `C_0 a_i exp(-p^2/64)`.
+ 
+@@ -360,12 +371,35 @@
+ The slack between beta-3 and mu pays all reader marks. This proves a
+ multi-reader connected estimate, not just an estimate for one insertion.
+ 
+-For the first estimate of (FR13), set U=0 and compare each scalar functional
+-and its normalizer to the full real Gaussian. Telescope one vertex change
+-at a time and use (FR9). Every nontrivial Gaussian tree has an E pair; its
+-changed-vertex count is absorbed by a differentiated planted-tree series.
+-Thus the connected difference is `C delta exp(-p^2/64)`. The scalar
+-normalizer difference has the same bound and zero constant coefficient.
++For the first estimate of (FR13), set U=0. Expand each remaining quadratic
++exponential into monomials; selected forest edges are already polynomial.
++Compare scalar functionals and normalizers coefficientwise, telescoping one
++vertex change at a time and applying (FR9) only to polynomial moments.
++The subsequent absolute sum has a global majorant on every mixed real/end
++integration domain. With the positive pair coefficients e_ij and
++`s_i=sum_(j!=i)e_ij<=1/64`, quadratic stability gives
++
++    sum_(i<j)e_ij |z_i z_j| <= sum_i s_i |z_i|^2/2.
++
++Thus, after summing the absolute quadratic Taylor series inside the integral,
++its product majorant is
++`product_i |z_i|^(k_i)
++ exp[-Re((1+eta_i)z_i^2)/2+s_i|z_i|^2/2]`.
++Real-coordinate factors are integrable since `1-r-s_i>0`; end-coordinate
++factors satisfy the same Gaussian decay used in (FR8). On a changed real
++tail `|x|>=p`, reserve `exp(-p^2/64)` and retain Gaussian precision
++`1-r-s_i-1/32>0`; on a changed end segment reserve the same factor using
++`Re((1+eta_i)z_i^2)>=3p^2/4` and `|z_i|<=(1+r)p`.
++The remaining moments are bounded as in (FR8). This justifies termwise
++integration and recombination by absolute convergence, without summing loose
++factorial bounds over the degrees of the residual exponential. It also
++retains the tail factor after summation. No nonlinear decoration is extended
++to or integrated on the full real domain in this comparison.
++
++Every nontrivial Gaussian tree has an E pair; its changed-vertex count is
++absorbed by a differentiated planted-tree series. Thus the connected
++difference is `C delta exp(-p^2/64)`. The scalar normalizer difference has
++the same bound and zero constant coefficient.
+ The full Gaussian integral equals `det(I+E)^(-1/2)`: diagonalize a real
+ positive perturbation, then analytically continue on `M(E)<1`; its branch
+ is one at E=0. The trace series itself has reader bound
+@@ -582,8 +616,12 @@
+ The pinned versions were freshly checked and matching cached PDFs were read;
+ full external PDFs/text remain only under /tmp. [The read manifest](checks/fixed_source_radius_read_manifest.json)
+ records exact coverage, predecessor identities and the scalar diagnostic's
+-code exposure. [The freeze receipt](checks/fixed_source_radius_receipt.json)
+-binds this note and evidence for a NEW hostile review. This is an author
++code exposure. [The original freeze receipt](checks/fixed_source_radius_receipt.json)
++records the initial source and unchanged evidence. [The domain-correction
++receipt](checks/fixed_source_radius_domain_correction.json) binds the current
++source after restricting (FR9) to polynomial moments and justifying the
++U=0 quadratic summation; the bounded finite-contour decoration theorem is
++unchanged. Affected independent confirmation is required. This is an author
+ construction under PROCESS_LIGHT, not an audit, whole-PR review or
+ self-assignment of retained grade. No frozen SA/CB/UL, shared status, Git,
+ lock, reviewer or audit artifact was edited.

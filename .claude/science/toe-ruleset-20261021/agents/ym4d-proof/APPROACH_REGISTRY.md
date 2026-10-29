@@ -301,14 +301,21 @@ survived. That limitation is preserved and the independent derivative check
 detects the omission. The original resource failure and pre-execution sign
 amendment remain. This review does not close the interacting RG remainder.
 
-The [fixed-source-radius author packet](FIXED_SOURCE_RADIUS_ASTRA.md) is
-[frozen for fresh Astra/max review](checks/fixed_source_radius_receipt.json).
-It proposes the actual selected Haar-sector logarithm at fixed positive rho
-and growing p with sigma*p^3 small, retaining its shrinking coarse-curvature
-window, critical vacuum, determinant and all contour ends. Author diagnostics
-are 54/54 across two preregistered runs. The review is checking the full
-Gaussian comparison's reader domain; no completed review is claimed yet.
-Both complementary integrals and non-holomorphic histories remain untreated.
+The [fixed-source-radius construction](FIXED_SOURCE_RADIUS_ASTRA.md) now has a
+[fresh independent scoped LAND review](REVIEW_FIXED_SOURCE_RADIUS_ASTRA.md).
+It proves the actual selected Haar-sector logarithm at fixed positive rho
+and growing p with sigma*p^3 small, retaining the shrinking coarse-curvature
+window, critical vacuum, determinant and every contour end. Review found
+FR-DOMAIN-1: finite-polydisc holomorphy does not define a full-real Gaussian
+integral. The [in-place correction](checks/fixed_source_radius_domain_correction.json)
+restricts that comparison to polynomial moments and justifies its U=0
+quadratic summation; affected independent confirmation resolves the finding.
+The finite-contour nonlinear decoration theorem is unchanged. Both author
+programs reproduced 54/54 predicates and 17 controls after the independent
+analytic freeze. These are source-exposed reproductions; two checks are only
+algebraic sanity checks. The original source, finding and evidence remain
+preserved. Both complementary integrals, non-holomorphic histories and full
+complex normalization remain untreated.
 
 The [local coercivity/tail construction](CUT_SECTOR_COERCIVITY_ASTRA.md) now
 has a [fresh independent scoped LAND review](REVIEW_CUT_SECTOR_COERCIVITY_ASTRA.md).
@@ -320,7 +327,8 @@ complement remain separate obligations. Author and reviewer used analytic
 proofs without new numerical experiments; the original packaging failure
 and prior CC failures remain preserved.
 
-An Astra/max author is now pursuing the [interacting selected-core remainder](briefs_finite_coupling/AUTHOR_BRIEF_INTERACTING_CORE.md).
-The [graded-complement brief](briefs_return/AUTHOR_BRIEF_GRADED_COMPLEMENT.md)
-records the next proposed localization and boundary-payment task. Both briefs
-are research plans, not established lemmas or full RG/complement results.
+Astra/max authors now pursue the [interacting selected-core remainder](briefs_finite_coupling/AUTHOR_BRIEF_INTERACTING_CORE.md)
+and the [graded-complement construction](briefs_return/AUTHOR_BRIEF_GRADED_COMPLEMENT.md).
+The first includes a separately justified gauge-invariant ball-sector variant;
+the second must localize hard witnesses and pay actual exterior/reference
+costs. These are active research tasks, not established RG/complement results.

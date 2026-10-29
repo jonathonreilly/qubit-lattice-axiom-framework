@@ -62,3 +62,7 @@ B05 and B32. The new fixed-radius and coercivity packets remain at the review
 states linked in the handoff. The [REC-CONT pass-2 review](REVIEW_REC_CONT_R2.md)
 confirms the locally rebuilt abstract continuation implication; it supplies
 neither the actual Yang-Mills hierarchy nor the physical mass gap.
+
+The coordinator's [return follow-up coverage](checks/full_proof_return_primary_followup.json)
+records the additional bounded Dimock read and the localization/denominator
+interface passed to the graded-complement author. It adds no imported theorem.

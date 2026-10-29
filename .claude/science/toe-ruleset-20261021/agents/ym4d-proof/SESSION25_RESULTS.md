@@ -1568,3 +1568,16 @@ are β × Wilson. b_0's leading coefficient comes only from the multiscale state
 Remainder |ρ_k| ≤ C_ΠE_2g_k² + g_k⁶ conditional on (SF-g), (RLF-δ). 4/4 exact checks pass, all controls fire; 0
 refuted. Codex review launched (CODEX_REVIEW_FLOW55.md). **Launched on Opus 5.5: UIR55.md — (UIR^♮) by exact Fourier
 analysis at the trivial background.**
+
+**Higher-order source estimates — `HIGHER55.md`** (claude-opus-5-5, max). **Discharged as an implication: at every
+critical point, trivial background, m = 0, full nonlinear COF-crit, NCE (i) (composite-co-closed form) and CC-CRIT
+hold uniformly in k, T and Γ** (Theorem TR∞, Corollary CC-CRIT∞). Meets CODEX_REVIEW_TR §3's repair literally: δG_l = 0
+for l ≥ 1; ‖δs^c_i‖ ≤ C L^{−2m}η³; π_l(δj_l) ≤ C L^{−(k−l)}η³ (geometric per level). (LA) written out (analyticity with
+k-, T-, level-free R, S; LA-1/2/3). A second independent route via the nonlinear residual ŵ and a "no cubic term"
+lemma. **Lemma SG CONFIRMED** (exact at N = 3 through ε⁴), with one precision: rows inherit decay only up to an
+additive (ρ − r) term, small only because of the **S4′ second-order cancellation (BA-4)** — the one place a level
+count could return; removing the average makes it appear (control B4). Checks: hg55_1/2/4 pass; **hg55_3 FAILED as
+pre-registered** (a control that could not fire — the worker's own design error, disclosed) and was redone as hg55_4.
+R, S (hence η_H, C_*) uncomputed. 20 CONFIRMED / 2 NV / 0 REFUTED. Codex review launched (CODEX_REVIEW_HIGHER.md).
+**Launched on Opus 5.5: BFT34_55.md — BFT-3 (locality) and BFT-4 (polymer representation), the two clauses of the
+named target nobody had touched.**

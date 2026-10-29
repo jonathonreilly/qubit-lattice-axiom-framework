@@ -2054,3 +2054,9 @@ none refuted). REFUTED: ASSEMBLY55 N24's blanket label; BA-3's 9s_j² as justifi
 "2η + 9η²" display — constants only). Most dangerous: FL7 — every banked BFT result is on 𝒞_glob, consumers read the
 larger curvature-small class. 29 flags with restatements. **Codex review launched (CODEX_REVIEW_DICT.md); the [S26-BANKED]
 wording fixes wait for it. Launched: LANEA55** — re-derive the 16 on-chain hidden premises.
+
+**CX-OSLEAF** (`CODEX_REVIEW_OSLEAF.md`). **Codex work-list item 1 is DONE and banked:** the separated-distribution formulation,
+REC(a)-(d), lattice RP to the restricted limit, EXT sufficiency and the SP ⇒ TP ⇒ EXT ⇒ CLOSURE chain, CONTRACT-sep
+(conditional), the Z = 1 growth match to OS II, the trajectory arithmetic. Corrections: g_std = √(2N)·g_FLOW; SU(3) clover
+maximum 18; translation weight 1 + mu²; growth exponent s = max(11, q_X+6). Not banked: (X1)'s global minimality, any actual
+separation estimate. **H_reg now has exactly one analytic input: the separation estimate (X1)/(SP_λ) — SRC2_55's job.**

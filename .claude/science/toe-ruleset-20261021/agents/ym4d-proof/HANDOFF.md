@@ -83,7 +83,7 @@ Line numbers in PROOF.md drift — locate by string.
 ## The current work list (2026-10-29)
 **CODEX_REVIEW_ASSEMBLY.md, "Corrected ordered OPEN work list" (17 items), is the authoritative list of remaining work**
 and supersedes the table above wherever they differ. Its first two items precede all estimates: (1) fix ONE OS
-formulation and observable algebra (OSLEAF55, running); (2) an absolute non-freeness criterion and witness on that same
+formulation and observable algebra — DONE and banked (OSLEAF55 + Codex: separated Schwinger distributions; REC, EXT, CLOSURE); (2) an absolute non-freeness criterion and witness on that same
 algebra (NONFREE55, running) — the single most dangerous item. DIAG is proven (Codex R2). ASSEMBLY55's 18 mismatch labels
 are superseded by the review's scope-specific verdicts.
 

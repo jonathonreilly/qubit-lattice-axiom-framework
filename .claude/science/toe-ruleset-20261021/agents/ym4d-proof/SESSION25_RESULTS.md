@@ -1829,3 +1829,8 @@ review launched (CODEX_REVIEW_SPHERE.md). Follow-up launched: SEAM55** — N5 an
 uniqueness bar), Theorem ID (I1)-(I4), composite tower in Balaban's convention. Codex's most dangerous remaining item:
 uniform E_j^cb = E_j^br (the independently prescribed BR1 actions) — NSL55 says no BFT-route consumer needs it; whether
 ANY consumer does is now a question for ASSEMBLY55 (told).
+
+**CX-UIR** (`CODEX_REVIEW_UIR.md`). UIR55's reduction banked as a conditional infinite-volume implication; REFUTED inside
+it: Lemma FP's bubble coefficient (¼ → ½), an exact witness (−1/128 → −1/64), a control count, the "literal reversal" of
+FLOW55's warning, and finite-volume uniformity "from a definition". Run-2 charge repair legitimate. Most dangerous:
+(ρ-null) incl. the quadratic-residual kernel. Forwarded to UIR2_55.

@@ -168,12 +168,17 @@ scientific notes and the complete covariance review. The subsequently completed 
 are linked above; none of these coordinator replays adds another independent review.
 
 Concurrent Claude progress is retained. [HRP R2](REVIEW_HRP_R2.md) resolves
-its bounded coordinate-RP hold. [SOFTHARD R2](REVIEW_SOFTHARD_R2.md) resolves
-the result crosswalk, cost classification and literature locator, but remains
-HOLD: its fixed-fibre ratio does not implement the adopted next-level return.
-The [six historical PDF hashes are now recovered and verified](checks/full_proof_softhard_pdf_recovery.json).
-This repairs byte availability only; the conditional-object defect remains
-and KEEP-SOFT stays provisional. The original R2 report is unchanged.
+its bounded coordinate-RP hold. [SOFTHARD R3](REVIEW_SOFTHARD_R3.md) now has
+scoped LAND for the corrected comparison memo: the proposed hard return
+jointly integrates the two required interiors, retains both kernels and
+requires the correct two-field output. Zero-reference and singular sectors
+remain explicit residues; constructing the return and proving their removal
+remain OPEN. KEEP-SOFT stays provisional. The historical R2 HOLD is preserved.
+The [six original PDF hashes](checks/full_proof_softhard_pdf_recovery.json) and
+[four additional historical PDF hashes](checks/full_proof_softhard_r3_integration.json)
+are now authenticated. R3's failed historical-checker replay is not promoted
+to PASS, and its temporary raw-replay directory is unavailable here. These
+verification limits do not turn the repaired specification into a theorem.
 
 The current [reconstruction-library R2](REVIEW_REC_LIB_R2.md) confirms the
 corrected tensor constant and conditional lemmas, with R-CONT, the general

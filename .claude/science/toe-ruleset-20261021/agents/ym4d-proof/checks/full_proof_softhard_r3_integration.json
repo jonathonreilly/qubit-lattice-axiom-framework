@@ -1,0 +1,145 @@
+{
+  "created_utc": "2026-10-29T22:28:53.991464+00:00",
+  "merge_head": "656e86c3dcc1a1f3632c092d6534a5247f3245bb",
+  "concurrent_commits": [
+    "2d88f81f69",
+    "a4b91619e7"
+  ],
+  "scope": "Preserve concurrent SOFTHARD statement repair and scoped R3 review; update current status without promoting the hard-return construction.",
+  "root_read_scope": "Complete108-line R3 review; inspected affected source diff at its stated returned-object scope, not the entire SOFTHARD memo. Source/log and historical v2 evidence identities verified.",
+  "bindings": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOFTHARD.md",
+      "bytes": 134852,
+      "sha256": "890c3726f86ad7dc557f5c16a8f6e99a014896acee18a480ef44f81fc6069968"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOFTHARD_LOG.md",
+      "bytes": 42472,
+      "sha256": "635547412b25b33e37c832f40a095922d730299f873e9fd9893e1fba874a55d7"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SOFTHARD_R3.md",
+      "bytes": 20043,
+      "sha256": "ced9c69bf687f313f359a19eda1392e44cc492ccd1c303aad2facc809eb628f2"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SOFTHARD_R2.md",
+      "bytes": 18251,
+      "sha256": "02b7b7ee556df6f501bc0c206497192423b01633c1907fa3bd6ff2019d75ab0b"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/sh_revision_v2_baseline.json",
+      "bytes": 1067339,
+      "sha256": "ea9acb4add76e7f8c7933c50ddc838129896c83e44d52b40c90f58ffc0537c46"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/sh_revision_v2_check.py",
+      "bytes": 14431,
+      "sha256": "bfe18912bb57094778a26ba37e96853bfbcbef65c960e6743a238768c11e315a"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/sh_revision_v2_results.json",
+      "bytes": 1119024,
+      "sha256": "bd0e1ebb125ceab2915ec1ea3b48a19df8ccafcfa3a96d5a40bba6b636607412"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/sh_revision_v2_criteria.md",
+      "bytes": 2951,
+      "sha256": "a94e0da5d03cb419057aa0f12f1f8cea9c5945bc4d8912f5a6beb9078a8de233"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_softhard_pdf_recovery.json",
+      "bytes": 3970,
+      "sha256": "6ab07676c39992be5f12f3b7dd818357c68771137f4b52ea0d6aadffd1d2ce48"
+    }
+  ],
+  "R3_disposition": "LAND for a precise OPEN comparison/return contract, not a constructed hard return or completed proof.",
+  "construction_residue": "Admissible map, zero-reference coverage, singular representation, two-field analytic output, source/marked transport, reference price and actual induction remain open.",
+  "historical_v2_replay": "R3 reports156 current-contract failures; no new full replay or PASS is claimed.",
+  "temporary_R3_raw_evidence": {
+    "reported_path": "/private/tmp/softhard-r3-rg1eakts/",
+    "available_here": false,
+    "attempt": "Exact reported directory read returned No such file or directory; report and author log remain preserved."
+  },
+  "additional_pdf_byte_authentication": {
+    "expected_source": "checks/sh_revision_v2_baseline.json",
+    "files": [
+      {
+        "name": "I",
+        "path": "/tmp/ym_softhard_r3_I_20261029.pdf",
+        "expected_bytes": 565384,
+        "expected_sha256": "2d7aebb50cbbfe5005433ca0b69dc1d631c8f307de24ce2eccc7c36074d88a26",
+        "actual_bytes": 565384,
+        "actual_sha256": "2d7aebb50cbbfe5005433ca0b69dc1d631c8f307de24ce2eccc7c36074d88a26",
+        "matches": true,
+        "url": "https://arxiv.org/pdf/1108.1335v2"
+      },
+      {
+        "name": "II",
+        "path": "/tmp/ym_softhard_r3_II_20261029.pdf",
+        "expected_bytes": 953179,
+        "expected_sha256": "9b5216ec475c98c1acaaf82f7ac82e19567b9ab099a17a08f142162adac7589c",
+        "actual_bytes": 953179,
+        "actual_sha256": "9b5216ec475c98c1acaaf82f7ac82e19567b9ab099a17a08f142162adac7589c",
+        "matches": true,
+        "url": "https://arxiv.org/pdf/1212.5562v2"
+      },
+      {
+        "name": "III",
+        "path": "/tmp/ym_softhard_r3_III_20261029.pdf",
+        "expected_bytes": 424487,
+        "expected_sha256": "280155600421bc183ce66a10a809eebf2fbbf2fe7a47f928408304dc5444d615",
+        "actual_bytes": 424487,
+        "actual_sha256": "280155600421bc183ce66a10a809eebf2fbbf2fe7a47f928408304dc5444d615",
+        "matches": true,
+        "url": "https://arxiv.org/pdf/1304.0705v1"
+      },
+      {
+        "name": "QED",
+        "path": "/tmp/ym_softhard_r3_QED_20261029.pdf",
+        "expected_bytes": 855698,
+        "expected_sha256": "d29c463174383a7e3bd015685f5fb6369baecf3da074ce2eb6eabb4b68456cf4",
+        "actual_bytes": 855698,
+        "actual_sha256": "d29c463174383a7e3bd015685f5fb6369baecf3da074ce2eb6eabb4b68456cf4",
+        "matches": true,
+        "url": "https://arxiv.org/pdf/2009.01156v2"
+      }
+    ],
+    "all_four_match": true,
+    "first_attempt": "Python urllib SSL certificate verification failed before download for all four URLs.",
+    "successful_alternative": "System /usr/bin/curl with ordinary certificate verification downloaded official versioned PDFs; bytes and SHA256 match all four historical baseline records exactly.",
+    "limits": "Byte authentication only; no new whole-paper reading or literature theorem imported. Does not erase the historical checker failures. PDFs remain outside Git."
+  },
+  "documentation_updates": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "bytes": 49560,
+      "sha256": "00041cfe491bf85164ec81449cb2a2e2e591d8e4c911a9826b5f8bf5312d9847",
+      "before_sha256": "83f739c4f5ff01a6ce39c2c09a12a34f22f9b1013f156a623d16e18a012e8020"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "bytes": 24025,
+      "sha256": "1dc3dd88438801b2d22c5764593cf68f7d07e6f459cd166513bdeeb85147d9b1",
+      "before_sha256": "bb863a58337236fba2e1cd44fa8d4f5831868e5cb3f11b072578ac5295db9d6c"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "bytes": 226345,
+      "sha256": "87580bfcccb6eabf1dfa8cc2f965daf4c08b6ff175f28c1c38ba77251334d633",
+      "before_sha256": "652ba6dab2754ac3b5dc7c7298f7fa1f724bb46e0c014463ffd15b9b3df1f420"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "bytes": 786226,
+      "sha256": "23fbcc9fbca5feb2bb034df5224285295bc9e011e125ca9d3bb32d429227cd8f",
+      "before_sha256": "958c621a2ff19d4e4bd3c7e8da39a4a769e22ab2de284e931a4f2270471de32a"
+    }
+  ],
+  "legacy_PROOF_body_unchanged": true,
+  "full_targets": {
+    "continuum_existence": "OPEN",
+    "physical_continuum_mass_gap": "OPEN"
+  }
+}

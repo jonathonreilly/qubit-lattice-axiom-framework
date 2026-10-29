@@ -2132,3 +2132,14 @@ L^c ≥ 6 ln 2/(16m_*)). Bookkeeping: BFT_B's ĵ_0, Lemma FT (iii) max→sum, C_
 (CODEX_REVIEW_LANEA.md) — if confirmed, the "named lane-A inputs" premise under K^(σ)/GV-E/BFT-E/NSL/BFT-1..4 (a) is
 discharged. Launched: INDUCT55** — Codex item 11: the RG induction (R_m) ⇒ (R_{m+1}), the flow/large-field fixed point, and
 every two-sided window with its constants as outputs.
+
+**SPHERE2_55 — finished** (claude-opus-5-5, max). **LCS-a reduced to ONE SRC-M clause** via an exact identity (Proposition M:
+the Ward functional's measure term is an action-density source; zero for rotations); **the SA-K + Cauchy route REFUTED** —
+the tree-level trace coefficient is scheme-dependent (C_F − λ/N for any λ) and the true fluctuation part is O(1), so it
+must come from the quantum source RG. Lemma REG (sector analyticity ⇒ traceless O(g²), Ward ODE solvable — closes Codex
+SEAM F4 under that assumption), Proposition CL. **N5-T*: no seam tuning needed** (dimension-4 seam operators are irrelevant
+on a 3-dimensional seam); tower lemma (conditional means only) and Theorem N5′ (N5 from N5-T* at fine scales + plain
+decay); open core: small-field seam RG + wild-crossing-data absorption (argued; a design condition on seam kernel
+stiffness). W1 needs an o(log) budget for the traceless S^(3,6′) insertion. **Codex review launched
+(CODEX_REVIEW_SPHERE2.md). Launched: WARD55** — W1 (all n), W3 and the SRC-M trace clause via SRC2_55's frozen/top
+representation.

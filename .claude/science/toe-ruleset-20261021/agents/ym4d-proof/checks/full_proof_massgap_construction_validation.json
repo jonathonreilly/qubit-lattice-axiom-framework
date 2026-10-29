@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-29T15:00:09.717147+00:00",
+  "scope": "Original frozen finite-volume transfer and SU(2) soft-source author unit; independent review active",
+  "staged_paths_before_this_record": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_CONSTRUCTION_ASTRA.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_massgap_construction_replay.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_massgap_construction_replay_err.txt",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_massgap_construction_replay_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_attempt01.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_attempt01.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_attempt01.stderr",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_criteria.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_exact.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_manifest.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_results.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_results.stderr",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_vocab.json"
+  ],
+  "staged_whitespace_exit": 0,
+  "vocabulary_files": 6,
+  "vocabulary_violations": 0,
+  "vocabulary_report_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+  "manifest_sha256": "5b1321d6e0fbc11e1445736fbdc61aaf5bf4ca47fee9cef2ce72783c8551dbdb",
+  "replay": "full_proof_massgap_construction_replay.json",
+  "open_review_clarification": "Explicit M-minus=M-adjoint rather than inverse, with holomorphic f_lambda unchanged for complex-lambda continuation. Original source preserved before narrow clarification.",
+  "limits": "Finite-volume bound loses volume uniformity; exact forward source formulas do not prove MG1/MG2 or close any MG0-MG5 row."
+}

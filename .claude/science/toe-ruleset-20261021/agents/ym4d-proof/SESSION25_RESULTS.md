@@ -2439,3 +2439,17 @@ This supplies no actual infrared estimate or MG0–MG5 closure.
 The fresh source-continuation review also confirmed the narrow C8 correction:
 complex-B continuation is restricted to empty history or a separately
 justified holomorphic fixed-W pullback. Its remaining review is ongoing.
+
+### First physical infrared construction attempt — frozen for review
+
+[The author unit](MASS_GAP_CONSTRUCTION_ASTRA.md) derives an actual full
+finite-spatial-volume Wilson transfer bound with the spatial interaction,
+gauge projection and all invariant sectors. Its bound tends to zero with
+volume; this is not an upper bound on the true gap or an MG1 result.
+The distinct SU(2) normalized soft-kernel calculation gives exact forward
+loop images, identifies the surviving fine covariance and retains the
+source-dependent field-independent term at the Haar endpoint. The 45 author
+predicates, including 11 omission controls, reproduce exactly. Fresh review
+is active and has requested an explicit orientation/complex-λ clarification;
+the original frozen source is preserved first. Full existence and every
+MG0–MG5 interface remain open.

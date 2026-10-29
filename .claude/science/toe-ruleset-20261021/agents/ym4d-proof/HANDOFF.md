@@ -64,9 +64,10 @@ Current assignments use fresh `gpt-6-astra / max` contexts:
   determinant identities, free Hodge factors and the all-mode/A7 argument
   are confirmed. The same reviewer has completed the separate conditional
   mass-gap criterion review and is now reviewing the actual vertex unit.
-- **Physical mass-gap author — active:** exact coarse-flow/source transport
-  and direct physical transfer estimates, with a uniform infrared bound as
-  the target. No crossover or physical gap is established.
+- **Physical mass-gap author — checkpoint delivered:** actual full
+  finite-volume Wilson transfer bound and exact SU(2) soft-loop/source
+  transport. A fresh reviewer is checking this unit. Its bound loses
+  volume uniformity; no crossover or physical gap is established.
 
 Same-family context separation is disclosed and is not described as
 cross-family review. The coordinator owns integration and PR updates. See
@@ -234,6 +235,18 @@ control run retains a SymPy structural-equality error; the separate 4/4
 exact-polynomial diagnosis and both replays preserve that history.
 [The target note](MASS_GAP_TARGET.md) still has no actual infrared producer;
 MG0–MG5 and the full existence-and-mass-gap goal remain open.
+
+The [first infrared construction unit](MASS_GAP_CONSTRUCTION_ASTRA.md)
+derives a finite-spatial-volume transfer bound including the magnetic
+factor, gauge projection and complete invariant space. The lower bound
+tends to zero with volume and supplies no MG1 estimate. Its distinct SU(2)
+soft-kernel calculation retains the fine Wilson loop covariance and the
+source-dependent constant term, so a Haar coarse marginal alone cannot
+stand in for observable transport. [Coordinator replay](checks/full_proof_massgap_construction_replay.json)
+reproduces all 45 author predicates, including 11 controls, exactly.
+Independent review is active; it requests a narrow clarification of
+nonunitary-mean orientation and complex-λ continuation. The original frozen
+packet is preserved before that correction. No MG0–MG5 row is closed.
 
 ## Goal and source identity
 

@@ -1,0 +1,500 @@
+{
+  "mode": "source",
+  "result": {
+    "fixtures": [
+      {
+        "name": "null_-1",
+        "phi_abs": 2.220446049250313e-16,
+        "source": 0.2834872144083269,
+        "low_numerator": 1.0677945809320759e-17,
+        "low_curvature": 0.04307739313438268,
+        "harmonic_B": 0.041734199135417024,
+        "g_mean": 0.0024556145410940472
+      },
+      {
+        "name": "null_1",
+        "phi_abs": 2.220446049250313e-16,
+        "source": 0.28421775527566867,
+        "low_numerator": 1.0079369660805555e-17,
+        "low_curvature": 0.04145189046346536,
+        "harmonic_B": 0.040649665192343656,
+        "g_mean": 0.0024849155558969846
+      },
+      {
+        "name": "generic",
+        "phi_abs": 0.005298984382281066,
+        "source": 0.28398230802824215,
+        "low_numerator": 0.0002675702352672045,
+        "low_curvature": 0.05049462613286736,
+        "harmonic_B": 0.04561510949637252,
+        "g_mean": 0.004971899314466461
+      },
+      {
+        "name": "opposite",
+        "phi_abs": 0.0,
+        "source": 0.2760836892908721,
+        "low_numerator": 3.0004408588024367e-19,
+        "low_curvature": 0.041369240058608335,
+        "harmonic_B": 0.04136924005860834,
+        "g_mean": 7.661175668791102e-19
+      },
+      {
+        "name": "constant",
+        "phi_abs": 0.0,
+        "source": 1.3298521375378899e-15,
+        "low_numerator": 2.0800043399382147e-32,
+        "low_curvature": 0.06000000000000019,
+        "harmonic_B": 0.06000000000000019,
+        "g_mean": 3.177784408238939e-33
+      }
+    ],
+    "cauchy": [
+      {
+        "name": "null",
+        "error": 3.897867678844324e-15,
+        "low_curvature": 0.04137503214897128,
+        "nodes": 40,
+        "radius": 0.075
+      },
+      {
+        "name": "opposite",
+        "error": 4.056768701977319e-16,
+        "low_curvature": 0.041369240058608335,
+        "nodes": 40,
+        "radius": 0.075
+      },
+      {
+        "name": "constant",
+        "error": 1.3530861965725334e-15,
+        "low_curvature": 0.06000000000000019,
+        "nodes": 40,
+        "radius": 0.075
+      }
+    ],
+    "cell_sites": 81,
+    "soft_contours": 7776,
+    "kappa": 0.83
+  },
+  "checks": [
+    {
+      "name": "null_-1_Euler",
+      "error": 3.0340311289587367e-15,
+      "tolerance": 2.0273660602221534e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "null_-1_Bianchi",
+      "error": 4.999115605312172e-17,
+      "tolerance": 2.030179546210336e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "null_-1_stationary",
+      "error": 3.0226929579369758e-15,
+      "tolerance": 2.566974428816654e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "null_-1_gauge_annihilation",
+      "error": 6.560907369355407e-16,
+      "tolerance": 2.0000000000000014e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "null_-1_Hodge",
+      "error": 1.4610346627718275e-17,
+      "tolerance": 2e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "null_-1_cochain12",
+      "error": 6.935390276365203e-17,
+      "tolerance": 2e-11,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "null_-1_cochain23",
+      "error": 6.935390276365203e-17,
+      "tolerance": 2e-11,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "null_-1_null_symbol",
+      "error": 2.220446049250313e-16,
+      "tolerance": 2e-12,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "null_-1_numerator",
+      "error": 1.0677945809320759e-17,
+      "tolerance": 2.0273660602221534e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "null_-1_nonzero_curvature",
+      "discrepancy": 0.04307739313438268,
+      "required_exceed": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "null_-1_omit_Wilson_DB",
+      "discrepancy": 8.337085783972465e-05,
+      "required_exceed": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "null_-1_omit_soft_DB",
+      "discrepancy": 1.8388212607077377e-05,
+      "required_exceed": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "null_-1_omit_Bianchi",
+      "discrepancy": 5.4105277045129604e-06,
+      "required_exceed": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "null_-1_conjugate_adjoint",
+      "discrepancy": 1.0071221290220107e-05,
+      "required_exceed": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "null_1_Euler",
+      "error": 2.6671743000369368e-15,
+      "tolerance": 2.0251089008885114e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "null_1_Bianchi",
+      "error": 3.870272419148506e-17,
+      "tolerance": 2.0301692317283806e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "null_1_stationary",
+      "error": 2.8383659804859185e-15,
+      "tolerance": 2.5684355105513373e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "null_1_gauge_annihilation",
+      "error": 5.543103828704501e-16,
+      "tolerance": 2.000000000000001e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "null_1_Hodge",
+      "error": 1.2935099706535392e-17,
+      "tolerance": 2e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "null_1_cochain12",
+      "error": 3.691006157321363e-17,
+      "tolerance": 2e-11,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "null_1_cochain23",
+      "error": 3.691006157321363e-17,
+      "tolerance": 2e-11,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "null_1_null_symbol",
+      "error": 2.220446049250313e-16,
+      "tolerance": 2e-12,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "null_1_numerator",
+      "error": 1.0079369660805555e-17,
+      "tolerance": 2.0251089008885114e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "null_1_nonzero_curvature",
+      "discrepancy": 0.04145189046346536,
+      "required_exceed": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "null_1_omit_Wilson_DB",
+      "discrepancy": 7.64355306625252e-05,
+      "required_exceed": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "null_1_omit_soft_DB",
+      "discrepancy": 1.9360912616434993e-05,
+      "required_exceed": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "null_1_omit_Bianchi",
+      "discrepancy": 7.0228481435153736e-06,
+      "required_exceed": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "null_1_conjugate_adjoint",
+      "discrepancy": 1.262327606119575e-05,
+      "required_exceed": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "generic_Euler",
+      "error": 1.337257262614195e-15,
+      "tolerance": 2.017818157809494e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "generic_Bianchi",
+      "error": 3.337934339503096e-17,
+      "tolerance": 2.031117945611469e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "generic_stationary",
+      "error": 1.4647477455341517e-15,
+      "tolerance": 2.5679646160564845e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "generic_gauge_annihilation",
+      "error": 5.503012074274652e-16,
+      "tolerance": 2.000000000000001e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "generic_Hodge",
+      "error": 1.896924428566255e-17,
+      "tolerance": 2.0005351404705347e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "generic_cochain12",
+      "error": 5.013864287810159e-17,
+      "tolerance": 2e-11,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "generic_cochain23",
+      "error": 5.013864287810159e-17,
+      "tolerance": 2e-11,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "opposite_Euler",
+      "error": 1.782857167617692e-15,
+      "tolerance": 2.0270768936688455e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "opposite_Bianchi",
+      "error": 2.0888836804026045e-17,
+      "tolerance": 2.030003191386325e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "opposite_stationary",
+      "error": 1.770086410566963e-15,
+      "tolerance": 2.5521673785817445e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "opposite_gauge_annihilation",
+      "error": 3.1193323680793206e-16,
+      "tolerance": 2.0000000000000005e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "opposite_Hodge",
+      "error": 3.0004408588024367e-19,
+      "tolerance": 2e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "opposite_cochain12",
+      "error": 0.0,
+      "tolerance": 2e-11,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "opposite_cochain23",
+      "error": 0.0,
+      "tolerance": 2e-11,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "opposite_harmonic",
+      "error": 1.3877787807814457e-17,
+      "tolerance": 2.082738480117217e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "opposite_zero_mean_g",
+      "error": 7.661175668791102e-19,
+      "tolerance": 2e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "constant_Euler",
+      "error": 1.159633089142401e-16,
+      "tolerance": 2.000000000000001e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "constant_Bianchi",
+      "error": 2.7755575615628914e-17,
+      "tolerance": 2.000000000000001e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "constant_stationary",
+      "error": 1.1758159175393587e-16,
+      "tolerance": 2.0000000000000026e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "constant_gauge_annihilation",
+      "error": 5.076237784028033e-16,
+      "tolerance": 2.000000000000001e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "constant_Hodge",
+      "error": 2.0800043399382147e-32,
+      "tolerance": 2e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "constant_cochain12",
+      "error": 0.0,
+      "tolerance": 2e-11,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "constant_cochain23",
+      "error": 0.0,
+      "tolerance": 2e-11,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "constant_harmonic",
+      "error": 1.3877787807814457e-17,
+      "tolerance": 2.1200000000000005e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "constant_zero_mean_g",
+      "error": 3.177784408238939e-33,
+      "tolerance": 2e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "external_face_0",
+      "error": 1.260632036191878e-16,
+      "tolerance": 2.103892903429648e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "external_face_1",
+      "error": 8.673617379884035e-17,
+      "tolerance": 2.103892903429648e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Cauchy_null",
+      "error": 3.897867678844324e-15,
+      "tolerance": 2.0827500642979424e-08,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Cauchy_opposite",
+      "error": 4.056768701977319e-16,
+      "tolerance": 2.082738480117217e-08,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Cauchy_constant",
+      "error": 1.3530861965725334e-15,
+      "tolerance": 2.120000000000003e-08,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Q_constant",
+      "error": 2.220446049250313e-16,
+      "tolerance": 5.5999999999999994e-11,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "wrong_24_divisor",
+      "discrepancy": 41.400000000000006,
+      "required_exceed": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "harmonic_linear_lift",
+      "error": 1.7486012637846216e-15,
+      "tolerance": 2.400000000000003e-09,
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "passed": 61,
+  "total": 61,
+  "seconds": 12.86654737504432,
+  "limits": "Floating point finite diagnostics; independent proof review needed for uniform theorem. No author helper imports."
+}

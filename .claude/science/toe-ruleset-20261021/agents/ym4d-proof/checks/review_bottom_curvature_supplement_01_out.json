@@ -1,0 +1,347 @@
+{
+  "result": {
+    "current": {
+      "sheets": [
+        {
+          "sheet": -1,
+          "current_error": 2.7958856370282858e-15,
+          "low_numerator": 1.128938352889373e-18,
+          "low_curvature": 0.04077354855867659,
+          "complex_theta": true
+        },
+        {
+          "sheet": 1,
+          "current_error": 2.064787363980843e-15,
+          "low_numerator": 2.387968417975055e-18,
+          "low_curvature": 0.04246210824651937,
+          "complex_theta": true
+        }
+      ],
+      "cauchy_error": 5.412102607491445e-15,
+      "cauchy_nodes": 32,
+      "radius": 0.071
+    },
+    "cube": [
+      {
+        "trial": 0,
+        "pure_gradient_curl": 0.0,
+        "curvature": 11.0,
+        "mixed_Bianchi": 128.0,
+        "remainder_Bianchi": 77.0
+      },
+      {
+        "trial": 1,
+        "pure_gradient_curl": 0.0,
+        "curvature": 13.0,
+        "mixed_Bianchi": 166.0,
+        "remainder_Bianchi": 120.0
+      },
+      {
+        "trial": 2,
+        "pure_gradient_curl": 0.0,
+        "curvature": 14.0,
+        "mixed_Bianchi": 56.0,
+        "remainder_Bianchi": 37.0
+      },
+      {
+        "trial": 3,
+        "pure_gradient_curl": 0.0,
+        "curvature": 15.0,
+        "mixed_Bianchi": 128.0,
+        "remainder_Bianchi": 167.0
+      },
+      {
+        "trial": 4,
+        "pure_gradient_curl": 0.0,
+        "curvature": 8.0,
+        "mixed_Bianchi": 46.0,
+        "remainder_Bianchi": 114.0
+      },
+      {
+        "trial": 5,
+        "pure_gradient_curl": 0.0,
+        "curvature": 14.0,
+        "mixed_Bianchi": 102.0,
+        "remainder_Bianchi": 146.0
+      },
+      {
+        "trial": 6,
+        "pure_gradient_curl": 0.0,
+        "curvature": 9.0,
+        "mixed_Bianchi": 46.0,
+        "remainder_Bianchi": 58.0
+      },
+      {
+        "trial": 7,
+        "pure_gradient_curl": 0.0,
+        "curvature": 12.0,
+        "mixed_Bianchi": 146.0,
+        "remainder_Bianchi": 92.0
+      }
+    ]
+  },
+  "checks": [
+    {
+      "name": "cubic_current_sheet_-1",
+      "error": 2.7958856370282858e-15,
+      "tolerance": 2.385678922297121e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_null_numerator_-1",
+      "error": 1.128938352889373e-18,
+      "tolerance": 2.0270653658564777e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_source_-1",
+      "error": 1.1005928451183653e-16,
+      "tolerance": 2.0270653658564777e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_omit_Wilson_DB_-1",
+      "discrepancy": 5.980046491228474e-05,
+      "required_exceed": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "independent_omit_soft_DB_-1",
+      "discrepancy": 1.4143588054754212e-05,
+      "required_exceed": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "independent_omit_Bianchi_-1",
+      "discrepancy": 4.310869331949262e-06,
+      "required_exceed": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "cubic_current_sheet_1",
+      "error": 2.064787363980843e-15,
+      "tolerance": 2.3855245239631387e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_null_numerator_1",
+      "error": 2.387968417975055e-18,
+      "tolerance": 2.028607419011072e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_source_1",
+      "error": 7.762766414143461e-17,
+      "tolerance": 2.028607419011072e-09,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_omit_Wilson_DB_1",
+      "discrepancy": 6.0464444785507954e-05,
+      "required_exceed": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "independent_omit_soft_DB_1",
+      "discrepancy": 1.3158926952143547e-05,
+      "required_exceed": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "independent_omit_Bianchi_1",
+      "discrepancy": 2.4261482469069964e-06,
+      "required_exceed": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "independent_cubic_Cauchy",
+      "error": 5.412102607491445e-15,
+      "tolerance": 2.08174068170184e-08,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cube_gradient_BCH_0",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cube_pure_gradient_Bianchi_0",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cube_factorization_0",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cube_gradient_BCH_1",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cube_pure_gradient_Bianchi_1",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cube_factorization_1",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cube_gradient_BCH_2",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cube_pure_gradient_Bianchi_2",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cube_factorization_2",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cube_gradient_BCH_3",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cube_pure_gradient_Bianchi_3",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cube_factorization_3",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cube_gradient_BCH_4",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cube_pure_gradient_Bianchi_4",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cube_factorization_4",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cube_gradient_BCH_5",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cube_pure_gradient_Bianchi_5",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cube_factorization_5",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cube_gradient_BCH_6",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cube_pure_gradient_Bianchi_6",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cube_factorization_6",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cube_gradient_BCH_7",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cube_pure_gradient_Bianchi_7",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cube_factorization_7",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cube_mixed_af_needed",
+      "discrepancy": 166.0,
+      "required_exceed": 1e-08,
+      "passed": true
+    }
+  ],
+  "passed": 38,
+  "total": 38,
+  "seconds": 6.931460666994099
+}

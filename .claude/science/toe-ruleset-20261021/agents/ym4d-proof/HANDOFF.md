@@ -34,7 +34,7 @@ the methodology sources are unchanged from `6c269770273c3fe00de350d5a3c14cacb70c
 
 ### Reviewed producer checkpoint — 29 October 2026
 
-Six bounded units now have fresh independent reviews, including affected
+Seven bounded units now have fresh independent reviews, including affected
 confirmation of the corrections. They do not complete either continuum target.
 
 - [Uniform soft minimizer](UNIFORM_SOFT_MINIMIZER_ASTRA.md):
@@ -42,8 +42,8 @@ confirmation of the corrections. They do not complete either continuum target.
   [scope correction](checks/review_uniform_soft_scope_confirmation.md)
   confirm FC19 with `theta=L^-2` and neutral FC20 for the **u-stripped tree
   phase and stationary value T_n**. The exact finite-u density retains a
-  positive normalizer spread term. Charged quartic exchange and the full
-  finite-part increment remain open.
+  positive normalizer spread term. The charged quartic is separately
+  reviewed below; the full finite-part increment remains open.
 - [Source sea](SOURCE_SEA_CONSTRUCTION_ASTRA.md):
   [review](REVIEW_SOURCE_SEA_CONSTRUCTION_ASTRA.md) confirms the one-level
   integrated-reference estimate, including the closed-cell chessboard
@@ -79,25 +79,33 @@ The [charged stationary-jet unit](CHARGED_STATIONARY_JET_ASTRA.md) now has a
 the actual cubic and completed quartic identities, the weighted admissible
 linear lift and cubic bound, and the forced second-current transport retaining
 covariant divergence and endpoint funnels. These statements retain their named
-linear inputs and normalized-tree scope. The full-colour quartic estimate is
-conditional on CJ18, the bottom second-curvature estimate; CJ18 remains **OPEN**.
+linear inputs and normalized-tree scope. Its remaining CJ18 input, the
+source-specific bottom second-curvature estimate, now has the separate
+independent confirmation linked below.
 The review's 28/28 one-step, 35/35 depth-two and 15/15 SU(3) controls, plus its
 explicitly post-exposure 10/10 gauge/counting supplement, all
 [reproduce exactly](checks/full_proof_charged_review_replay_summary.json)
 except two declared runtime fields. Author counts and the original 36/37
 ineffective diagnostic remain separately preserved.
 
-Two subsequent author units are frozen for fresh independent review:
-[bottom second curvature](BOTTOM_SECOND_CURVATURE_ASTRA.md) supplies a
-candidate proof of CJ18 and its conditional quartic consequence; the
-[covariant background construction](COVARIANT_SOFT_BACKGROUND_ASTRA.md)
-supplies a candidate finite-u local critical point and Gaussian reference
-for curvature-small coarse fields with holonomy. Their author controls
-report 137/137 and 49/49 plus two 16/16 geometry runs, respectively.
-These counts are finite diagnostics. Neither unit is yet independently
-confirmed. The smooth critical point need not satisfy the hard good-event
-cuts; fixed-V connected source activities and the full transform remain
-further work.
+The [bottom second-curvature unit](BOTTOM_SECOND_CURVATURE_ASTRA.md) now has
+[its own fresh independent review](REVIEW_BOTTOM_SECOND_CURVATURE_ASTRA.md).
+BC3/CJ18 and BC26 are confirmed under the named normalized-tree,
+linear and current contracts, with no requested source repair. The reviewer
+completed 125/125 independent finite predicates and reproduced the author's
+137/137, with only declared timing fields excluded. The source-specific
+complex-zero division, harmonic value, reciprocal gluing and distinct
+row/column density bounds are part of the analytic review. This supplies
+the full-colour bounded-jet interface; its actual finite-part/coupling
+consumer is the next construction, not an automatic completed theorem.
+
+The [covariant background construction](COVARIANT_SOFT_BACKGROUND_ASTRA.md)
+remains under fresh independent review. It supplies a candidate finite-u
+local critical point and Gaussian reference for curvature-small coarse
+fields with holonomy; author controls report 49/49 plus two 16/16 geometry
+runs. These are finite diagnostics. The smooth critical point need not
+satisfy the hard good-event cuts; fixed-V connected source activities and
+the full transform remain further work.
 
 [Review reproduction](checks/full_proof_next_reviews_replay_summary.json)
 and [bridge/covariance reproduction](checks/full_proof_bridge_reviews_replay_summary.json)
@@ -126,8 +134,11 @@ None supplies continuum existence or a physical mass threshold.
 The separately recovered [LIB1 review](REVIEW_LIB1.md) confirms the written
 fixed-mask saturation/counting implications, retaining the stronger-rate
 and bounded-hole conditions for its full-norm bound. The package remains
-on HOLD for an ineffective active/full-norm mutation control; reference
-integration and unrestricted-history source estimates are still open.
+on HOLD against its original ineffective active/full-norm mutation control.
+The [committed B1 repair](LIB1_NORM_CONTROL_FIX.md) reproduces the old survivor
+and rejects three actual replacements through shared exact norm witnesses;
+independent affected confirmation is pending. Reference integration and
+unrestricted-history source estimates are still open.
 The literature register now contains 36 explicitly scoped entries, with
 primary-source coverage distinguished from complete proof certification.
 

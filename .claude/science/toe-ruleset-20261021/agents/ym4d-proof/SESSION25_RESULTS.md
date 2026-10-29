@@ -1812,3 +1812,15 @@ bounds) + (ρ-null) (Ρ_n = 0 at fixed n, ARGUED) ⇒ (UIR^♮)**, and b_∞ = �
 symbolically (ui55_2; run 1 failed on a double-counted q², disclosed, fixed with criteria unchanged). Refuted: FLOW §24
 (F2)'s symbol (missing D_ℓ(q_μ); bounds survive). **Codex review launched (CODEX_REVIEW_UIR.md). Follow-up launched:
 UIR2_55** — (TC-b) at orders 3, 4 and the (ρ-null) enumeration.
+
+**SPHERE55 — finished** (claude-opus-5-5, max). **OS1 on the sphere route reduces to ultraviolet inputs only — each
+needed conditionally on the coarse field and uniformly over ALL coarse configurations; none proved.** Construction (two
+half-shifted stereographic charts; digital ball proved a 4-ball; prism seam with crossing weights (β/4)k_e, 3 ≤ k_e ≤ 6 for
+every radius — no seam parameter, Codex P4's β_p = 0 counterexample excluded; RP at the equator and four coordinate great
+spheres). Exact Killing Ward identity, no shell flux; the only surface term is the seam-slab flux (N5). Boosts carry a
+dimension-4 dilation term cancelled only by the coupling profile (W0, OPEN). R → ∞ needs only local moments + a witness
+uniform in R; equatorial RP is off the flat-limit path. Inputs: W0, W1, W3, N5 (separated form), SRC-E, U-mom/U-alg,
+U-NT, on top of layer 1 with ACTION-BASED large-field bounds (no chessboard on the sphere — LARGE55's question). REFUTED:
+P4 S4(b)'s "seam Chern–Simons excluded by θ_eq" (it is θ_eq-even; excluded instead by small-gauge invariance + coordinate
+reflections). 17 PROVEN-HERE / 3 CONDITIONAL / 4 ARGUED; checks sp55_kill, sp55_seam PASS with controls firing. **Codex
+review launched (CODEX_REVIEW_SPHERE.md). Follow-up launched: SEAM55** — N5 and W0, the sphere route's own inputs.

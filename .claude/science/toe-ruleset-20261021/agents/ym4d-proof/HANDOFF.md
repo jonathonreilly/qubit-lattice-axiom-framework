@@ -61,10 +61,10 @@ TQ itself is unproved, and whether RP plus Wilson-specific inputs can give it is
 | BFT-0 identification | banked conditionally (NSL + Theorem ID, Balaban's convention, trivial background, 𝒞_glob); identification with PROOF's per-level BR1 actions not banked — needed only if a consumer uses them | NSL55 + CODEX_REVIEW_NSL |
 | BFT-1/2 | banked on 𝒞_glob, conditional on named lane-A linear inputs (K^(σ), GV-E, TR∞) | — |
 | BFT-3 | banked conditionally on the global potential-small domain (Lemma WD, route C); per-level identification and the full curvature-small class open | BFT34_55 + CODEX_REVIEW_BFT34 |
-| BFT-4 | not implied by analyticity + BFT-3 (Prop. CX); reduced to local ARGUED items + (CovLift) | BFT4W55 (running) |
+| BFT-4 | (a) on 𝒞_glob banked conditionally on the local reading (R); (b) gauge-invariant pieces open | RLOC55 on (R); BFT4B55 on (b) (both running) |
 | BFT-5 (b) background transfer | Theorem GA banked; needs an actual alignment with uniform quotient/source/defect bounds, then (LOC-GA) off 𝒞_glob | ALIGN55 (running) |
 | BFT off 𝒞_glob (large fields) | OPEN: (G♯-patch), (UHL), (SL-cov), (LOC-GA); RLARGE W-cb♯/FI-1 banked conditionally | not yet assigned |
-| Node A (single-level measure) | reductions + BL-TILT banked; multiscale convexity (LC°) open | LCONV55 (running) |
+| Node A (single-level measure) | reductions + BL-TILT banked; multiscale convexity REFUTED (LCONV55, Codex review running) — replacement: one-step conditional positivity + per-step small-field cluster expansion + (SDP)^A tilted | LARGE55 (design); per-step N5/N6 not yet assigned |
 | SRC (source-inserted RG; gives CD, OS0) | Prop. B, Lemma V banked; SRC-E′/O/W′, SRC-OW, Prop. E open | SRCAN55 (running) |
 | H_Euc, sphere route | equatorial RP, Proposition T banked; construction + seam + UV items open | SPHERE55 (running) |
 | H_int | free comparator banked for a narrower class; Yang–Mills side open | HINT2_55 (running) |

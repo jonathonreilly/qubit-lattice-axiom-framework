@@ -1,0 +1,37 @@
+lc55_1 start
+G1 L=3 tau=1/10 centred-antisymmetric: PASS
+   mu=0 torus(a)=True,True real+(b)=True,True straight=1(c)=True,True transl(d)=True r_c=1
+   mu=1 torus(a)=True,True real+(b)=True,True straight=1(c)=True,True transl(d)=True r_c=2733299/3090903
+   mu=2 torus(a)=True,True real+(b)=True,True straight=1(c)=True,True transl(d)=True r_c=1
+   mu=3 torus(a)=True,True real+(b)=True,True straight=1(c)=True,True transl(d)=True r_c=1
+   record: set of 2-trU_p over level-0 plaquettes = ['0', '4/101', '1600/10201']
+   elapsed 0.6s
+G1 L=3 tau=1/1000 centred-antisymmetric: PASS
+   mu=0 torus(a)=True,True real+(b)=True,True straight=1(c)=True,True transl(d)=True r_c=1
+   mu=1 torus(a)=True,True real+(b)=True,True straight=1(c)=True,True transl(d)=True r_c=2999973000032999999/3000009000009000003
+   mu=2 torus(a)=True,True real+(b)=True,True straight=1(c)=True,True transl(d)=True r_c=1
+   mu=3 torus(a)=True,True real+(b)=True,True straight=1(c)=True,True transl(d)=True r_c=1
+   record: set of 2-trU_p over level-0 plaquettes = ['0', '4/1000001', '16000000/1000002000001']
+   elapsed 1.2s
+G1 L=5 tau=1/10 centred-antisymmetric: PASS
+   mu=0 torus(a)=True,True real+(b)=True,True straight=1(c)=True,True transl(d)=True r_c=1
+   mu=1 torus(a)=True,True real+(b)=True,True straight=1(c)=True,True transl(d)=True r_c=42946110501/52550502505
+   mu=2 torus(a)=True,True real+(b)=True,True straight=1(c)=True,True transl(d)=True r_c=1
+   mu=3 torus(a)=True,True real+(b)=True,True straight=1(c)=True,True transl(d)=True r_c=1
+   record: set of 2-trU_p over level-0 plaquettes = ['0', '4/101']
+   elapsed 6.4s
+G1 L=5 tau=1/1000 centred-antisymmetric: PASS
+   mu=0 torus(a)=True,True real+(b)=True,True straight=1(c)=True,True transl(d)=True r_c=1
+   mu=1 torus(a)=True,True real+(b)=True,True straight=1(c)=True,True transl(d)=True r_c=4999925000449999610000105000001/5000025000050000050000025000005
+   mu=2 torus(a)=True,True real+(b)=True,True straight=1(c)=True,True transl(d)=True r_c=1
+   mu=3 torus(a)=True,True real+(b)=True,True straight=1(c)=True,True transl(d)=True r_c=1
+   record: set of 2-trU_p over level-0 plaquettes = ['0', '4/1000001']
+   elapsed 11.8s
+G1 overall: PASS
+C1a (pattern (beta,0,0)): G1 predicate = False -> control FIRED
+   mu=0 (b)=True M=['1', '0', '0', '0']
+   mu=1 (b)=False M=['2912101/3090903', '0', '0', '580060/3090903']
+   mu=2 (b)=True M=['1', '0', '0', '0']
+   mu=3 (b)=True M=['1', '0', '0', '0']
+C1b (period 2, L=3): all centres positive scalars = False ; coarse plaquettes with 2-trV_P>0: 16 -> control FIRED
+lc55_1 done, 16.1s

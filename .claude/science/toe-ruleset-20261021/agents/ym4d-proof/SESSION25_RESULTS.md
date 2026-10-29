@@ -1834,3 +1834,17 @@ ANY consumer does is now a question for ASSEMBLY55 (told).
 it: Lemma FP's bubble coefficient (¼ → ½), an exact witness (−1/128 → −1/64), a control count, the "literal reversal" of
 FLOW55's warning, and finite-volume uniformity "from a definition". Run-2 charge repair legitimate. Most dangerous:
 (ρ-null) incl. the quadratic-residual kernel. Forwarded to UIR2_55.
+
+**CX-BFT4W** (`CODEX_REVIEW_BFT4W.md`). BFT-4 (a) on 𝒞_glob banked conditionally with ONE named premise, (R): per-density
+local holomorphic estimates on local constraint sets (BFT4W55 took them as a "reading" of the banked aggregate bounds;
+Codex: that is an extra premise, not provenance). Corrections: multilinear LD ¼ → ½; fine-grid diameter; small-torus
+prefactor; E5 remainder O(1). **Launched: RLOC55 — prove (R).**
+
+**LCONV55 — finished** (claude-opus-5-5, max). **NO-GO: multiscale smallness does not make the chain convex on node A's
+region, for any thresholds.** A fine chromomagnetic "stripe" with zero flux through every block (every coarse field
+exactly 1; lc55_1 exact) has gauge-quotient Hessian ≈ −7.3β² (lc55_2), certified down to τ = 10⁻⁴⁴ on a fixed-boundary
+region (lc55_4/4b; the first horizontality control could not fire — disclosed, replaced); first-order failure in
+exponential/axial charts (lc55_3); Lemma FOL lifts it to the chain as ~u_0β². REFUTED: NODEA_RES55 nr-19 / multiscale
+half of nr-15 / §7 item 4, and (LC-1′) as stated. Convexity and Peierls windows do not overlap. Replacement proposed:
+(LCR°) via one-step conditional positivity (ARGUED) + per-step small-field cluster expansion with locally lowered
+coupling + (SDP)^A tilted. **Codex review launched (CODEX_REVIEW_LCONV.md); forwarded to LARGE55.**

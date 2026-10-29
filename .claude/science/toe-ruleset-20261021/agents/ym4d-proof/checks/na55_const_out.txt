@@ -1,0 +1,42 @@
+K1: HW s6 no ring: b_n=65633123 g2 in [1.523620711920e-94, 1.523620711920e-94] ; ring x17: b_n=1115603075 g2 in [8.963761519954e-96, 8.963761519954e-96] -> PASS
+K2 route (4°) at c_U=1, c_A=0: b_n°=12401 b_D°=10000 c_f°=1
+     g2         [8.058170934656e-91, 8.058170934656e-91]
+     nT         [4.893759282940e+90, 4.893759282940e+90]
+     rel_HIST   [1.301507145274e-91, 1.301507145274e-91]
+     hist_HIST  [8.676002371402e-92, 8.676002371402e-92]
+     nH_HIST    [1.880201619898e+91, 1.880201619898e+91]
+     rel_sharp  [4.999500049995e-91, 4.999500049995e-91]
+     hist_sharp [3.331949774459e-91, 3.331949774459e-91]
+     nH_sharp   [4.895909820574e+90, 4.895909820574e+90]
+     binding ceiling (HIST as written) = 8.676002e-92 (hist_HIST): decades above 1e-94 [2.938319662047e+00, 2.938319662047e+00] ; above 2.5e-152 [6.054037965338e+01, 6.054037965338e+01]
+     binding ceiling (H-geo' adopted) = 3.331950e-91 (hist_sharp): decades above 1e-94 [3.522698446264e+00, 3.522698446264e+00] ; above 2.5e-152 [6.112475843759e+01, 6.112475843759e+01]
+     (T°) adds nothing beyond n_H (n_T° < n_H): True
+K2 route (4°) at c_U=1, c_A=1: b_n°=822563 b_D°=820000 c_f°=82
+     g2         [1.215699399980e-92, 1.215699399980e-92]
+     nT         [4.012882612011e+92, 4.012882612011e+92]
+     rel_HIST   [3.136161795842e-93, 3.136161795842e-93]
+     hist_HIST  [3.098817454903e-93, 3.098817454903e-93]
+     nH_HIST    [1.541591134768e+93, 1.541591134768e+93]
+     rel_sharp  [1.204698807228e-92, 1.204698807228e-92]
+     hist_sharp [1.190343754530e-92, 1.190343754530e-92]
+     nH_sharp   [4.012904117387e+92, 4.012904117387e+92]
+     binding ceiling (HIST as written) = 3.098817e-93 (hist_HIST): decades above 1e-94 [1.491195993579e+00, 1.491195993579e+00] ; above 2.5e-152 [5.909325598491e+01, 5.909325598491e+01]
+     binding ceiling (H-geo' adopted) = 1.190344e-92 (hist_sharp): decades above 1e-94 [2.075672397642e+00, 2.075672397642e+00] ; above 2.5e-152 [5.967773238897e+01, 5.967773238897e+01]
+     (T°) adds nothing beyond n_H (n_T° < n_H): True
+     HW s6 x17 HIST-sum (HIST as written) = [2.333725678734e-96, 2.333725678734e-96] ; route(4°)/HW ratio of binding ceilings (HIST as written) = [3.717661613128e+04, 3.717661613128e+04]
+K2-sanity (all enclosures relative width < 1e-6): PASS
+K3: b=1/1000  LHS (2 sin 50b)^2/72 in [1.387731867215e-04, 1.387731867215e-04]  RHS 100(1-cos b) in [4.999999583333e-05, 4.999999583333e-05]  -> True
+K3: b=1/100  LHS (2 sin 50b)^2/72 in [1.276938039255e-02, 1.276938039255e-02]  RHS 100(1-cos b) in [4.999958333472e-03, 4.999958333472e-03]  -> True
+K3: b=3/100  LHS (2 sin 50b)^2/72 in [5.527756935001e-02, 5.527756935001e-02]  RHS 100(1-cos b) in [4.499662510125e-02, 4.499662510125e-02]  -> True
+K3: PASS ; K3n (b = 1/10 must fail): LHS [0.000000000000e+00, 5.108532025212e-02] RHS [4.995834721974e-01, 4.995834721974e-01] -> control fires = True
+K4: 81 slices, (free, inside) counts all (100, 64): True ; (b) no free (1,2)-plaquette off the 81 slices: True ; (c) loop links all outside-outside: True -> PASS
+    distinct per-slice counts: [(100, 64)]
+K5: x/(1-x) <= 2x on x = k/1000, k = 1..500: PASS ; K5n (x = 3/4 violates): True
+K6: links in a 9^4 block = 23328 (4*8*9^3 = 23328) -> PASS ; real dof 3*links = 69984 ; Gaussian-model log c_cem at lambda_f=1/2: [2.425460614215e+04, 2.425460614215e+04]
+K7: (p,q)=(2,2) r=0: theta_max = 1/48 = 0.020833 ; kappa >= 1/84270 = 1.186662e-05
+K7: (p,q)=(2,2) r=1/100: theta_max = 25/1224 = 0.020425 ; kappa >= 5/429777 = 1.163394e-05
+K7: (p,q)=(3/2,3) r=0: theta_max = 1/36 = 0.027778 ; kappa >= 1/42135 = 2.373324e-05
+K7: (p,q)=(3/2,3) r=1/100: theta_max = 25/918 = 0.027233 ; kappa >= 10/429777 = 2.326788e-05
+K7: (p,q)=(7/6,7) r=0: theta_max = 1/28 = 0.035714 ; kappa >= 1/14045 = 7.119972e-05
+K7: (p,q)=(7/6,7) r=1/100: theta_max = 25/714 = 0.035014 ; kappa >= 10/143259 = 6.980364e-05
+SUMMARY: K1=PASS K2=PASS K3=PASS K4=PASS K5=PASS K6=PASS  elapsed 7.1s

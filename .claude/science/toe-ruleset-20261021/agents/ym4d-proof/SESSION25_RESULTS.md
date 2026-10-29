@@ -1440,3 +1440,22 @@ C_4 of (MOM_4)). **REFUTED: RLARGE's (TC) fails with its own ε_loc by ×15-23 �
 argued). Quantifier order: structure → N5/SF/SQ/BFT constants → ε_1 → node A → θ → a → n_H → n_♯ → g_0 → R(g) →
 K_0, T_1. **Decade ledgers retired: every live constraint is one-sided on a later choice.** Codex review launched
 (CODEX_REVIEW_DAG.md). RLARGE U1/U3/FI-1 queued for Opus. **Launched on Opus 5.5: COFM55.md — clause (b) at m > 0.**
+
+**H_int — `HINT55.md`** (claude-opus-5-5, max) — the calibrated non-freeness witness, one of the four inputs of the
+full theorem. **Witness:** W_m = f(t₀) − f(t_m) ≥ c_W for all m ≥ m₁ (t_m → 0), f(t) = t²⟨E(t)⟩ of the BARE lattice
+field (soft noise cannot fake it — the chain's bare marginal is the Wilson measure); in the limit, **"the bare
+charge vanishes"**. **Comparator side PROVEN:** W = 0 on every scale-invariant state (free Maxwell fields at any
+couplings, any gauge, all mixtures); **Källén-Lehmann monotonicity** — positive spectral weight forces f
+non-increasing, the screening sign, so massive and generalised free fields have W ≤ 0 (asymptotic freedom is
+anti-screening, which positivity forbids). **The single-scale candidate is REFUTED** by a free field with contact
+terms (same OS reconstruction, W > 0); **repaired** with the UV family (AF-W), which excludes the whole class 𝔊
+(free / generalised-free with ≤ one subtraction, polynomial contact terms, non-Gaussian states with those
+two-point functions, mixtures — via Fatou, no clustering). Free value A_∞ = 3(N²−1)/(128π²) proved.
+**Theorem H-RED:** H_int ⇐ the coupling flow (F-tune) with β₋ > 0 plus two-sided bounds c₋g_k² ≤ f(t_k) ≤ C₊g_k^{2−2ϑ}
+with ARBITRARY constants — no infrared input, no two-point bound, nothing beyond the sign of the one-loop β
+coefficient. **So non-freeness reduces to the coupling flow (FLOW55.md, running).** Deterministic S4c branch: H_int ⇐
+H-Bal-1 + H-loc-LF + H-sg + (S4c-lin), via EXISTENCE's X-NTAF (undersold; it meets the bar). Soft branch: two new
+inputs, (NOISE-ADD) (nonlinear case open) and (ANTI-♭). **Most of the existence lane's non-triviality results fail
+the bar** (Lemma DIFF, LO-D, (WC)/NT-red, NT-pol, (H-sig^S), SIG-FREE, …; Corollary SEP (a) is the lane's own proof
+that soft running can be faked by noise). Codex review launched (CODEX_REVIEW_HINT.md). Note for Step 3: the soft
+scheme costs two extra witness inputs a hard scheme does not.

@@ -736,39 +736,99 @@ ran in that attempt. Its stdout/stderr/time receipts are preserved as
 constraint clarification recorded in HRP_LOG.md. The written theorems
 above do not depend on those missing numerical receipts.
 
+**[RHRP-7 fix 2026-10-29]** Later evidence: [lead's rerun outside the sandbox](checks/hrp_lead_rerun.md).
+
 ## 9. Banking statement and consumer map
 
-**Author proposal for independent review, not yet banked.** The result
-eligible for later banking is the conjunction of:
+### [RHRP-7 fix 2026-10-29] Exact consumer statements and qualifications
 
-1. §§2–3: finite periodic SU(N) Wilson link and site RP on the stated
-   full bounded half-algebras, both periodic planes included, for
-   reflection-paired nonnegative plaquette coefficients (with the
-   sharper sign qualifications stated there), without global temporal
-   gauge or a trivial-holonomy restriction.
-2. §4: exact zero-source bare-marginal identity and exact RP for local
-   bare-link positive-half approximants, including the actual clover
-   observables with reflection-compatible normalization and support.
-3. §5: RP for every θ_μ of SPHERE55's actual cubical-prism regulator
-   under its real radial nonnegative coefficient prescription; no
-   regulator repair needed.
-4. §6: RP closure on the common limit sequence under the precise
-   convergence and continuity hypotheses for the selected domain;
-   great/affine-plane transport only under separately supplied state
-   invariance. The ordinary-polynomial and restricted OS domains are
-   distinct conditional exports.
+**Author proposal for independent review, not yet banked.** This wording-only
+revision replaces the paraphrased RP exports in the original §9, quoted below.
+Its finite-theorem scope, other consumer boundaries and exclusions still apply.
 
-| Consumer inspected | What it may consume | What remains separate |
-|---|---|---|
-| ASSEMBLY55 N3 → N1F / PANEL_P1 §3 item 2 | Exact finite RP and §6.1 for every polynomial whose required moments converge on the common sequence | H_reg, common algebra and its contact/domain choice; no arbitrary moment existence inferred |
-| ASSEMBLY55 F3, N3 → N1S / CODEX_REVIEW_P4 §4.1 item 4 | Coordinate great-sphere RP from §5, then §5.3/§6.3 | All-order cap state invariance, U-sep or actual moments, DIAG and compatible normalizations |
-| SPHERE55 §§1.5, 2, 5.2, 13 | Actual θ_μ crossing-cell proof; corrected statement of its role | Seam transparency and SO(5) restoration remain analytic inputs |
-| OSLEAF55 D8, RP-lat, CLOSURE-sep(d), CONTRACT-sep RP-pole, E8, BRIDGE(iii) | Finite RP and restricted-domain closure, §6.2 | EXT/SP_λ estimates, reconstruction, algebra acceptance, all other BRIDGE claims |
-| ROTDEF §2.2 and §9 locality/RP discussion | Bare local support and zero-source marginal | No transfer of auxiliary coarse-law positivity or of fixed-flow-time locality |
-| PROOF L9a / E8.1 / E8*-red and L8c | Finite bounded gauge-invariant half RP; §3.3 if a mixed reflection is used | Chessboard iteration, block support/covariance L9a′ and limit identities still need their own proofs |
-| HANDOFF wording tracked by ASSEMBLY55 F25 | This author's proposed scope and pending-review status | No edit to PROOF's banking ledger; no retained status granted |
+**N1F / ASSEMBLY55 N3; PANEL_P1 §3 item 2 (verbatim).**
 
-The upstream inputs H_reg, (EXT), ALG, H_Euc, H_int, trajectory existence,
-and the physical existence/mass-gap target are not closed by this packet.
-The author check cannot fulfill the brief's separate-review requirement.
-No commit, push, PR, axiom edit, audit record or ledger mutation is made.
+> The approximants to every positive-half polynomial obey reflection positivity, or have negative errors tending to zero, for one common time reflection. Localization/renormalization errors are controlled in the same moment topology.
+
+For the zero-source Wilson state and the reflection-compatible local bare-link/clover maps proved here, the inequality is exact eventually for every fixed positive-half polynomial; there is no polynomial-dependent subsequence. Convergence of the required products, the common algebra and any extension to its declared continuum domain remain H_reg/(EXT)/ALG hypotheses. For the exact maps here those errors vanish eventually.
+
+**N1S / ASSEMBLY55 N3 (verbatim).**
+
+> RP for great spheres through the base point S
+
+At finite cutoff HRP proves the four coordinate reflections. At fixed R it gives the quoted great-sphere property on the specified cap domain after the separately supplied continuum convergence and SO(4)_S state invariance. Radius-uniform convergence/continuity and the supplied translation-invariance step give the flat-limit affine-plane property. The ordinary-moment version and the restricted OS-domain version remain distinct conditional statements; the latter does not silently replace literal N1F/N1S. No declaration that H_reg, H_Euc, the trajectory or the physical theory exists should accompany this export.
+
+**CODEX_REVIEW_P4 §4.1 item 4 and its qualifications (verbatim excerpts).**
+
+> Assume continuum sphere states $\omega_R$ have already been constructed, with O(5) invariance, great-sphere RP on the chosen local algebra, and compatible field normalizations. For each compact $K\subset\mathbb R^4$, a sufficient local condition is equicontinuity of every pulled-back Schwinger functional in a fixed test-function seminorm, together with moment control strong enough to pass products.
+
+> Each polynomial RP expression is a finite sum of convergent moments. RP passes for planes through zero; translation invariance moves it to every affine hyperplane.
+
+> Weak convergence alone is enough for bounded continuous half-algebra observables. For unbounded local fields the moment or uniform-integrability hypotheses above are indispensable; weak convergence alone does not preserve expectations of their products.
+
+These are consumer hypotheses and an RP implication, not a claim that HRP
+constructs the sphere states or supplies their invariance or moment bounds.
+
+**OSLEAF55 CLOSURE-sep and CONTRACT-sep (verbatim RP clauses).**
+
+> - **(H_RP-sep)** Lemma RP-lat (exact; no input).
+> - (d) E2 (RP for θ; with (c), for every affine hyperplane);
+
+The CLOSURE-sep export uses §6.2's common-sequence convergence on compact
+separated tests and continuous extension to the restricted OS domain.
+Conclusion (c), used for affine hyperplanes, requires the separately supplied
+H_Euc-sep hypothesis. This export does not establish ordinary polynomial
+moments or any other CLOSURE-sep conclusion.
+
+CONTRACT-sep's supplied assumptions, including the RP consumer, are:
+
+> - **(U-sep)** |S^R_n(F)| ≤ α(n!)^β|F|_{sn} with s, α, β independent of R and n (the separated replacement of SPHERE55's U-mom;
+>   OPEN, the first half of ML8);
+> - **(K-inv)** exact local Killing invariance on 𝒟 for every n: S^R_n(F∘ψ^{-1}_{R,v}) = S^R_n(F) for the boost and pole-rotation
+>   Killing fields v whose flow path keeps supp F inside the chart domain away from the seam, ψ_{R,v} := χ_R^{-1}∘(flow of v)∘χ_R
+>   (all-order input: ML7; CODEX_REVIEW_SPHERE Finding 7);
+> - **(RP-pole)** RP for the four coordinate great spheres through S (banked finite-cutoff RP, passed to S^R by CLOSURE-sep (d)).
+
+The fixed-R continuum extraction, restricted cap domain, compatible
+normalizations and radius-uniform convergence/continuity remain those of
+§§6.2–6.3. (U-sep) and (K-inv) remain separate inputs. The phrase
+“banked finite-cutoff RP” is quoted consumer wording; this revision grants
+no banking or retained status. These restricted-domain exports do not
+silently replace literal N1F/N1S.
+
+### Original §9 wording (preserved verbatim)
+
+> **Author proposal for independent review, not yet banked.** The result
+> eligible for later banking is the conjunction of:
+>
+> 1. §§2–3: finite periodic SU(N) Wilson link and site RP on the stated
+>    full bounded half-algebras, both periodic planes included, for
+>    reflection-paired nonnegative plaquette coefficients (with the
+>    sharper sign qualifications stated there), without global temporal
+>    gauge or a trivial-holonomy restriction.
+> 2. §4: exact zero-source bare-marginal identity and exact RP for local
+>    bare-link positive-half approximants, including the actual clover
+>    observables with reflection-compatible normalization and support.
+> 3. §5: RP for every θ_μ of SPHERE55's actual cubical-prism regulator
+>    under its real radial nonnegative coefficient prescription; no
+>    regulator repair needed.
+> 4. §6: RP closure on the common limit sequence under the precise
+>    convergence and continuity hypotheses for the selected domain;
+>    great/affine-plane transport only under separately supplied state
+>    invariance. The ordinary-polynomial and restricted OS domains are
+>    distinct conditional exports.
+>
+> | Consumer inspected | What it may consume | What remains separate |
+> |---|---|---|
+> | ASSEMBLY55 N3 → N1F / PANEL_P1 §3 item 2 | Exact finite RP and §6.1 for every polynomial whose required moments converge on the common sequence | H_reg, common algebra and its contact/domain choice; no arbitrary moment existence inferred |
+> | ASSEMBLY55 F3, N3 → N1S / CODEX_REVIEW_P4 §4.1 item 4 | Coordinate great-sphere RP from §5, then §5.3/§6.3 | All-order cap state invariance, U-sep or actual moments, DIAG and compatible normalizations |
+> | SPHERE55 §§1.5, 2, 5.2, 13 | Actual θ_μ crossing-cell proof; corrected statement of its role | Seam transparency and SO(5) restoration remain analytic inputs |
+> | OSLEAF55 D8, RP-lat, CLOSURE-sep(d), CONTRACT-sep RP-pole, E8, BRIDGE(iii) | Finite RP and restricted-domain closure, §6.2 | EXT/SP_λ estimates, reconstruction, algebra acceptance, all other BRIDGE claims |
+> | ROTDEF §2.2 and §9 locality/RP discussion | Bare local support and zero-source marginal | No transfer of auxiliary coarse-law positivity or of fixed-flow-time locality |
+> | PROOF L9a / E8.1 / E8*-red and L8c | Finite bounded gauge-invariant half RP; §3.3 if a mixed reflection is used | Chessboard iteration, block support/covariance L9a′ and limit identities still need their own proofs |
+> | HANDOFF wording tracked by ASSEMBLY55 F25 | This author's proposed scope and pending-review status | No edit to PROOF's banking ledger; no retained status granted |
+>
+> The upstream inputs H_reg, (EXT), ALG, H_Euc, H_int, trajectory existence,
+> and the physical existence/mass-gap target are not closed by this packet.
+> The author check cannot fulfill the brief's separate-review requirement.
+> No commit, push, PR, axiom edit, audit record or ledger mutation is made.

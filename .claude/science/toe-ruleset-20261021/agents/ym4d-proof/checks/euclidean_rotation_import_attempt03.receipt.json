@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/usr/local/bin/python3",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_exact.py"
+  ],
+  "cwd": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "started_utc": "2026-10-29T18:21:23.617761+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 0.4608054580166936,
+  "script_sha256": "7af6babaaaa29e89c0562896f30efa8da45e09a1e0c3a53ba1d9f2567b193cb0",
+  "criteria_sha256": "59f486df376c53d9c48e948a304fe5ad215a9390631092b9ad70377e750680b5",
+  "stdout_sha256": "80d04781f93107f134d2b8625e86cc9567431132240a5a5c344865a6d5bfa6ad",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "reason_for_new_run": "Execute previously analytic-only negative-coefficient matrix control; criterion unchanged; prior sources and outputs retained."
+}

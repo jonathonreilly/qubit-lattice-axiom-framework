@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/usr/local/bin/python3",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_exact.py"
+  ],
+  "cwd": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "started_utc": "2026-10-29T18:17:47.484370+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 0.45827704103430733,
+  "script_sha256": "f5a9d71954db53d8e68de86c8b5ee8ae39df0bd3af6557b798f9b4ad7d148cb9",
+  "criteria_sha256": "59f486df376c53d9c48e948a304fe5ad215a9390631092b9ad70377e750680b5",
+  "stdout_sha256": "fb8396b5a079dd8bf23b50cb12005654f138103871144de3dcafff3735201dab",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "previous_source_recovery": "attempt01.py reconstructed by reversing exactly the documented Fourier-check addition; byte hash matches original attempt01 receipt"
+}

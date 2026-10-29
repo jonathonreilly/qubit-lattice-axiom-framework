@@ -1,0 +1,98 @@
+{
+  "created_utc": "2026-10-29T18:23:21.650739+00:00",
+  "scope": "Full author note and all owned evidence frozen; inventory only, no independent review or audit outcome",
+  "source_main_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "cwd": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/EUCLIDEAN_ROTATION_IMPORT_ASTRA.md",
+      "sha256": "71e3ea5e66bc694cee172ab1348594a9645b06df92b3e33b8633cd39c725208e",
+      "bytes": 35576
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt01.py",
+      "sha256": "e6bc4936aab9b85cb7b1d33e24457d9a626c8dca8a8adc32e3c5ec8a81fe5de9",
+      "bytes": 9271
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt01.receipt.json",
+      "sha256": "8b0b3f2423fb57f5ca33cd97b8fcfa199b36240839e37ca563781a2030854ed5",
+      "bytes": 650
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt01.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt01.stdout.json",
+      "sha256": "9dba726dcb6234397f95bb267dc88a0c84adf39daeb3b7dfc83caa87509479c2",
+      "bytes": 6087
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt02.py",
+      "sha256": "f5a9d71954db53d8e68de86c8b5ee8ae39df0bd3af6557b798f9b4ad7d148cb9",
+      "bytes": 9872
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt02.receipt.json",
+      "sha256": "af81b3a9948b8287c30ffc77684f48d9f4bd036dfbd0ccdb2ed928e26a7d5c4d",
+      "bytes": 868
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt02.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt02.stdout.json",
+      "sha256": "fb8396b5a079dd8bf23b50cb12005654f138103871144de3dcafff3735201dab",
+      "bytes": 6178
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt03.receipt.json",
+      "sha256": "da7b039e988229216bb5ee84f7559dbd1ee574d5f6a3ffd6ad0f10323c15b9b0",
+      "bytes": 856
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt03.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt03.stdout.json",
+      "sha256": "80d04781f93107f134d2b8625e86cc9567431132240a5a5c344865a6d5bfa6ad",
+      "bytes": 6496
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_criteria.md",
+      "sha256": "59f486df376c53d9c48e948a304fe5ad215a9390631092b9ad70377e750680b5",
+      "bytes": 4854
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_exact.py",
+      "sha256": "7af6babaaaa29e89c0562896f30efa8da45e09a1e0c3a53ba1d9f2567b193cb0",
+      "bytes": 10432
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_sources.json",
+      "sha256": "f3fc54c975b8609c60025b344b30155d8497733676efaa8c4ac4f8fda0ebbb1d",
+      "bytes": 13902
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_validation.json",
+      "sha256": "88d6ff9e5af45912f66d1305d8bd27fedc8e672b593ad20c0eb6c20bbeb615f1",
+      "bytes": 3972
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153
+    }
+  ],
+  "source_manifest": "checks/euclidean_rotation_import_sources.json",
+  "validation": "checks/euclidean_rotation_import_validation.json",
+  "independent_review": "pending",
+  "full_four_dimensional_existence": "OPEN",
+  "physical_continuum_mass_gap": "OPEN"
+}

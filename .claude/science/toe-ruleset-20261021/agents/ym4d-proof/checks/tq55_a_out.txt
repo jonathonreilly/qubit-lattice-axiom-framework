@@ -1,0 +1,19 @@
+P0 moments <n1^2>=1/4 <n1^4>=1/8 <n1^2n2^2>=1/24 sum=1 -> PASS
+  M=E12-E21: symmetric=True divergence-free=True numerator degrees=[2]
+  M=E13-E31: symmetric=True divergence-free=True numerator degrees=[2]
+  M=E14-E41: symmetric=True divergence-free=True numerator degrees=[2]
+  M=E23-E32: symmetric=True divergence-free=True numerator degrees=[2]
+  M=E24-E42: symmetric=True divergence-free=True numerator degrees=[2]
+  M=E34-E43: symmetric=True divergence-free=True numerator degrees=[2]
+P1 symmetric & divergence-free for all 6 basis M -> PASS
+P2 numerator degree 2 with k=6 (homogeneous degree -4) -> PASS
+P3 flux/|S^3| (M=J=E12-E21) = 1/2 (expected 1/2) -> PASS
+P4 flux/|S^3| (M=E12-E21, J=E34-E43) = 0 (expected 0) -> PASS
+  improvement Phi=|x|^-2: k=6 symmetric=True divergence-free=True flux(J12)=0 flux(J13)=0
+  improvement Phi=x1 x2 |x|^-4: k=8 symmetric=True divergence-free=True flux(J12)=0 flux(J13)=0
+P5 improvement tensors divergence-free with zero flux -> PASS
+C1 |x|^-5 divergence nonzero=True; |x|^-7 divergence nonzero=True -> FIRED
+C2 R^3 analogue with |x|^-6 divergence nonzero=True -> FIRED
+C3 antisymmetric combination divergence nonzero=True -> FIRED
+C4 flux with only the first term of sigma = 0 (must differ from 1/2) -> FIRED
+OVERALL: PASS

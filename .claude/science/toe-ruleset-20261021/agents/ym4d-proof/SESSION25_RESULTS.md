@@ -1625,3 +1625,20 @@ ROTDEF's IR term) and needs no common coarse space.** Seam claim "β_p ≥ 0 mak
 independent hemispheres). Gantumur's regulator does not help this lemma (RP only on a finite cylinder; universality
 conjectural; no gauge continuum analysis). 8 CONFIRMED / 4 NV / 1 REFUTED of P4's claims. Codex review launched
 (CODEX_REVIEW_UNIV.md). **Launched on Opus 5.5: SPHERE55.md — the sphere's Killing-field Ward route and the seam.**
+
+**Background transfer (R2) — `BGT55.md`** (claude-opus-5-5, max). **Not proved; reduced on 𝒞_glob to one open item.**
+**Theorem GA (proved, checked):** for any invertible alignment Υ carrying trivial-background gauge directions onto the
+background's (ΥΞ_1 = Ξ_Z·A), the aligned difference E_Υ = ΥᵀH_ZΥ − H_1 and the transferred sources are composite-co-closed
+at Z = 1, so **only the banked Z = 1 cc-inverse (CC-INV + GF-E) is used**; the series converges when C_b·δ_Υ < 1.
+**Corollary GA-PG: at every pure-gauge background, of any size, E_Υ = 0 exactly** — the failure case that killed HESS-rel
+(CODEX GAPZ F7) passes. Dropped as prerequisites: (FWD-0), the relative-Hessian series, (CC-dec_Z) (circular in direct
+form), the background EP-rec, (N1-nd) (now an output). Exact identities at any critical background: H_ZΞ_Z = 0; Lemma
+SF_Z; the soft linearisation is exactly covariant (REVIEW55_BFTB item 11's defect only bites routes using the
+transported average). **REFUTED: HESSREL item 3** ("every transport is controlled by the condition number") — GA is a
+counterexample. **On 𝒞_glob: the transfer must run in a transport-weighted norm** (Corollary RW♯ proves clause (b) at
+Z = 1 there), the background's residual needs Lemma TR's decay (so HIGHER55 feeds (R2) too), and **S_E must not be the
+alignment** (spikes ~L^{3l}π_l at level 0, argued). **Open: (ALIGN-ℓ)** — an alignment whose level-l gauge values depend
+only on level-l data; the per-level slice Γ_PL meets half by construction, the other half (regularity across levels)
+is GSHARP55 §5.5's gap; **hard-scheme analogue: Balaban's axial-in-blocks gauge, CMP 99:75.** Outside 𝒞_glob: **(LOC-GA)**,
+a local-to-global step, open. 12 CONFIRMED / 4 NV / 1 REFUTED. Codex review launched (CODEX_REVIEW_BGT.md).
+**Launched on Opus 5.5: ALIGN55.md — (ALIGN-ℓ).**

@@ -157,10 +157,17 @@ separate requirements.
 The new [lattice Green-function library](LGF.md) has a
 [scoped independent LAND review](REVIEW_LGF.md): explicit infinite-lattice
 and finite-torus estimates, zero-mode accounting and the free curvature
-consumer. Its binding TSE55 convention, torus-order, image and status edits
-remain outstanding. No interacting H_int, continuum existence or physical
-mass threshold follows from the free library.
-The literature register now contains 36 explicitly scoped entries, with
+consumer. The [TSE55 adoption](checks/full_proof_lgf_consumer_adoption.json)
+now applies its convention, torus-order, image and status fixes; those consumer
+edits await their own affected review. No interacting H_int, continuum
+existence or physical mass threshold follows from the free library.
+
+The [two-scale OS-algebra witness](W_T0.md) has a
+[scoped independent LAND review](REVIEW_W_T0.md) for its conditional
+marked-class separation and finite-cutoff/comparator results. The common
+algebra, matched sequence, moment and sharp-time inputs remain explicit
+obligations. Original e-only non-freeness and OWN-free are not discharged.
+The literature register now contains 39 explicitly scoped entries, with
 primary-source coverage distinguished from complete proof certification.
 
 Both **full continuum existence and the physical continuum mass gap remain

@@ -1961,3 +1961,14 @@ factor 1); interior-chart estimates conditional. **Theorem T0's "no consumer" is
 global critical-value polymers identified with its localised-minimiser, invariant, centred-norm class. So the four
 CovLift-family inputs are not yet off the critical path; the honest target is (c₀) on the invariant consumer domain +
 that identification (forwarded to OFFGLOB2_55).
+
+**SEAM55 — finished** (claude-opus-5-5, max). **W0: a "Ward profile" (dT/dlog s = −B_loc/κ) cancels the dilation term
+identically, given a new matching clause LCS-a** (trace channel of the source-inserted RG, variable coefficients, every
+coarse field, no fine moments); the trajectory profile needs an extra consistency LCS-b; P4's two-loop profile needs b_∞.
+**New: a traceless coupling-gradient term no scalar profile cancels** (O(g²); SPHERE55 omitted it; W0's rate only
+logarithmic). **N5: conditional decay does NOT give seam transparency** (top levels carry an a-independent factor; exact
+model sm55_2); Theorem N5: |Cov| = O((a/ℓ₀)^{1/2}·logs) at fixed R from N5-T*, N5-C, SRC-E′_∞. **Lemma 3.5′ answers Codex's
+nonvacuity finding** (coarse-image norm instead of Var F; uniform in n on an exact model with nonzero covariance). H_Euc
+on the sphere assembled as an implication; SRC-E and U-mom dropped from the input list. 15/4/5. **Codex review launched
+(CODEX_REVIEW_SEAM.md). Launched: MINCB55** — Codex work-list item 8 (min-tower consumers: (MIN-cb) or a critical-value
+restatement + restricted minimum + large-field comparison).

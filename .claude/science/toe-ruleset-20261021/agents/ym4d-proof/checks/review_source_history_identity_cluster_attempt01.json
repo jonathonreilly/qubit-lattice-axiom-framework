@@ -1,0 +1,109 @@
+{
+  "schema": "independent-source-history-identity-cluster-v1",
+  "checks": {
+    "positive_common_zero_source_reference": true,
+    "normalized_coarse_kernel": true,
+    "joint_replacement_Xi0": true,
+    "joint_replacement_Xi1": true,
+    "joint_replacement_Xi2": true,
+    "joint_replacement_Xi3": true,
+    "zero_mass_history_retained": true,
+    "individual_failure_history_0": true,
+    "individual_failure_history_1": true,
+    "individual_failure_history_2": true,
+    "individual_failure_history_3": true,
+    "individual_failure_history_4": true,
+    "individual_failure_history_5": true,
+    "individual_failure_history_6": true,
+    "individual_failure_history_7": true,
+    "histories_partition_full_raw": true,
+    "selector_invariant_for_all_replaced_interiors": true,
+    "remote_original_source_absent": true,
+    "all_order_mechanism_finite_coefficients_through6": true,
+    "exact_full_collar_exclusion": true,
+    "excluded_history_log_difference": true,
+    "two_sided_boundary_cancellation": true,
+    "boundary_crossing_union_hits_inner_boundary": true,
+    "two_source_legs_exact_cost": true,
+    "fixed_radius_positive_remainder": true,
+    "explicit_threshold_rooted_budget": true
+  },
+  "negative_controls": {
+    "replacement_mutation_omit": true,
+    "replacement_mutation_sign": true,
+    "replacement_mutation_normalizer": true,
+    "replacement_mutation_sea_history": true,
+    "product_history_substitution": true,
+    "omit_common_reference": true,
+    "selector_depends_on_replaced_interior": true,
+    "local_original_source_present": true,
+    "omit_repeated_polymers": true,
+    "use_core_support_in_boundary": true,
+    "use_core_support_in_exclusion": true,
+    "wrong_Mayer_edge_sign": true,
+    "drop_compensator_source_cost": true
+  },
+  "data": {
+    "raw_joint_value": [
+      "762989881317927991279215390610421/29871716201040616986792764030976000",
+      "-65260261207896249709575395364817/49524161070146286057051161419776000"
+    ],
+    "common_reference": [
+      "16854419/750141000",
+      "0"
+    ],
+    "histories": {
+      "0": [
+        "294984708009376620336912434909/14616896536806425424315777024000",
+        "-627966398835022460637969971/2657617552146622804421050368000"
+      ],
+      "1": [
+        "64055791804668465215/232914198530478260603808",
+        "1713434949093908436965/14906508705950608678643712"
+      ],
+      "2": [
+        "58961013291953019985/229652094909603214937088",
+        "253451225360104055/16403721064971658209792"
+      ],
+      "3": [
+        "134142491210215397386431964172377/1083984837503361909216735821156057088",
+        "32222720011525168160178604607057/541992418751680954608367910578028544"
+      ],
+      "4": [
+        "24389605994566649788879/48169044444905010460753920",
+        "1593349112980945951/25731327160739856015360"
+      ],
+      "5": [
+        "37286914530327103495375/3986426328219934206631575552",
+        "20600182491518972847875/3543490069528830405894733824"
+      ],
+      "6": [
+        "650880939099134715625/70189179048290158099955712",
+        "170067403843231240625/81887375556338517783281664"
+      ],
+      "7": [
+        "113886351760257511695277249609375/44598233314424032836345702356134920192",
+        "3124934127068438479513216796875/1858259721434334701514404264838955008"
+      ]
+    },
+    "cluster_coefficients": [
+      "0",
+      "370804977/13710311357",
+      "-61356939465552449/375945275011766362898",
+      "2878341956630167448115531/2577163386802154336935516416293",
+      "-866070551400220381125061214454401/141334849803672642071015261195847430958404",
+      "-7589536778214565523659383264132324446943/2422180995503977806120545670117185542385349694742785",
+      "35785280401374746401910556151090763820724935820351/39850626733641303424716553694453789355170477748298186055171094"
+    ],
+    "full_collar_sizes": [
+      81,
+      81,
+      81,
+      81,
+      135
+    ],
+    "cluster_multisets": 461,
+    "threshold_dq_at_ceiling": "9/43336"
+  },
+  "elapsed_seconds": 0.2642021250212565
+}

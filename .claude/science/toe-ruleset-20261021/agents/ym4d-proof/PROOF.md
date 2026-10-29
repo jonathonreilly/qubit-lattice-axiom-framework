@@ -176,19 +176,28 @@
 > the bounded results after three corrections; its 50 controls reproduce.
 > No physical-gap target row or full-theory obligation closes.
 
-> **Three new author candidates, independent review active:**
-> [Full-colour residual](RESIDUAL_FULL_COLOUR_ASTRA.md) proposes the complete
-> coefficient cancellation with neutral/periodic factors retained, at fixed
-> depth and in the stated volume-first limit. [Actual hard-history return](SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md)
-> proposes the source-compensated raw partition and completion-good gas with
-> a fixed relative-source radius; failures and the sea average remain unpriced.
-> [Local physical transfer](MASS_GAP_LOCAL_BLOCK_ASTRA.md), including its
-> [injectivity supplement](checks/massgap_block_injectivity.md), proposes an
-> all-beta local witness and a small-beta fixed-spacing thermodynamic endpoint.
-> All 264 author predicates reproduce. Three fresh Astra/max reviews are in
-> progress; no full existence, continuum mass gap, nonlinear flow or N1/N2
-> closure is asserted. The requested primary-literature integration pass is
-> also active. Exact scopes and evidence are in [HANDOFF.md](HANDOFF.md).
+> **Three new units independently checked, 29 October:**
+> [The full-colour review](REVIEW_RESIDUAL_FULL_COLOUR_ASTRA.md) confirms the
+> complete residual coefficient cancellation at each fixed depth in the
+> specified original volume-first one-loop convention, and the exact neutral
+> quartic. FC19 remains open; FC20 is conditional. The only repair clarified
+> which gauge-fixing column has Gram S squared.
+> [The hard-history review](REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md) confirms
+> the exact raw history/source identity and completion-good pointwise gas with
+> a fixed positive source radius. Failure activities and the outer sea remain
+> unpriced by that unit; N1/N2 and multilevel matching remain open.
+> [The local physical-gap review](REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md) confirms
+> the local witness and fixed-spacing strong-coupling thermodynamic endpoint,
+> including full-space injectivity. It supplies no continuum crossover.
+> All 394 reviewer predicates including controls reproduce; all 264 author
+> predicates were previously reproduced. [Exact bindings](checks/full_proof_three_reviews_bindings.json)
+> and [replay confirmation](checks/full_proof_three_reviews_replay_confirmation.json)
+> retain the timing-comparator failure and its precise resolution. These are
+> same-family independent-context unit reviews, not a whole-proof verdict.
+> The [literature register](LITERATURE_BRIDGES.md) and [import classifications](ASSUMPTIONS_AND_IMPORTS.md)
+> record exact reusable theorems, missing hypotheses and scoped failed imports.
+> Both full existence and the physical continuum mass gap remain OPEN.
+> Current actual-producer work and exact scopes are in [HANDOFF.md](HANDOFF.md).
 
 > **PROVENANCE WARNING (2026-10-28T22:11:08Z, lead now claude-opus-5-5).** Every Claude-authored result in sessions 24 and 25 — lead consolidation and all worker files, commits 811b8ed6de through 666a71b7b9 — was produced on **claude-opus-5**, not the owner-required model (Claude: Opus 5.5 at extra effort or higher; Codex: gpt-6-astra at max). The owner has ruled that work likely unreliable. **Treat every session-24/25 status, fix, flag, refutation and number in this file as PROVISIONAL** until the Opus 5.5 review sweep recorded in SESSION25_RESULTS.md §PROVENANCE has re-established it. The only session-24/25 checks run at an approved setting are the Codex gpt-6-astra/max reviews (`CODEX_REVIEW_*.md`). The tally is reported as 72 / 2 / 7 / 24 + 1 **pending** that sweep.
 

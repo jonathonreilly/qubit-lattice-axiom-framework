@@ -1,0 +1,25 @@
+{
+  "schema": "bounded-unit-findings-v1",
+  "findings": [
+    {
+      "id": "FC3-gram-column-prose",
+      "severity": "minor precision defect",
+      "original_source_sha256": "e18ce796044a7f1a1f0a086043e5c072ed7e8b7da9af5097ff34e64526de7944",
+      "line": 70,
+      "finding": "S^2 is the Gram of Delta_f L_har, not of L_har itself. The displayed FC3 formula already uses the correct column.",
+      "basis": "L_har*Delta_f^2 L_har=S^2 because Delta_f L_har=J S and J*J=I; L_har*L_har and L_har*Delta_f L_har are different.",
+      "requested_repair": "The gauge-fixing column Delta_f L_har on that parameter space has Gram (S|1_c-perp)^2.",
+      "repair_commit": "4f04b662f4d72d7ef269f6d9693ae9ff6424acf9",
+      "repaired_source_sha256": "1ce9460989e5491bd491dcc348add15207e63013a0c537cd6c51caa19f0e3dd7",
+      "disposition": "resolved; same reviewer confirmed exact single-sentence replacement; no formula or test change",
+      "coordinator_record": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_residual_full_colour_gram_fix.json",
+        "sha256": "71ab2638e044c35b63846de773494e73f5ce4d442db6ae9481db944efc203baf",
+        "bytes": 1041,
+        "lines": 12
+      }
+    }
+  ],
+  "remaining_material_repair_findings": 0,
+  "scope": "bounded FC1-FC20 proof-unit review only; FC19/uniform nonlinear producers and full Yang-Mills theorem remain open, not defects concealed by this count"
+}

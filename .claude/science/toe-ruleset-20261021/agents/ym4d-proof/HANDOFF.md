@@ -32,53 +32,64 @@ Continuation baseline: `962f97c259d8c241df632a07e27f498f4ad33b09`.
 Methodology refreshed at `ca2bc7ddf64790da96cd43d42017d000fbfe4808`;
 the methodology sources are unchanged from `6c269770273c3fe00de350d5a3c14cacb70c2833`.
 
-### Three new frozen author candidates — independent review active
+### Three new units independently checked
 
-The [full-colour residual continuation](RESIDUAL_FULL_COLOUR_ASTRA.md) proposes
-zero complete one-loop residual in the specified infinite-volume/Bloch,
-volume-before-momentum limit. Neutral Wilson finite terms, scalar and harmonic
-Gram factors and periodic projector defects are retained. Depth-uniform tree
-producers and nonlinear finite-volume flow remain open.
+The [full-colour residual unit](RESIDUAL_FULL_COLOUR_ASTRA.md) is
+[independently confirmed](REVIEW_RESIDUAL_FULL_COLOUR_ASTRA.md) at each fixed
+depth in its original infinite-volume/Bloch, volume-before-momentum convention.
+Neutral Wilson finite terms, scalar and harmonic Gram factors and exceptional
+periodic projector terms are retained. FC19 remains open and FC20 conditional;
+nonlinear flow and the finite-part increment estimate are not supplied.
 
-The [actual hard-history return](SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md) gives
-an exact raw-Haar source-compensated history partition and a proposed
-completion-good source-local gas, including a fixed positive relative-source
-radius. Its failure weights and the normalized sea expectation remain
-unpriced. Full histories/induction, N1/N2 and coarse holomorphy remain open.
+The [actual hard-history return](SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md) is
+[independently confirmed](REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md) as an exact
+level-zero raw partition and completion-good source-local gas, including its
+fixed positive relative-source radius. Failure activities and the final
+interacting sea average are unpriced by this reviewed unit. Full multilevel
+history/action matching, N1/N2 and required coarse holomorphy remain open.
 
-The [local physical transfer construction](MASS_GAP_LOCAL_BLOCK_ASTRA.md)
-proposes a volume-independent plaquette witness at every finite positive
-beta and a physical-time contraction for 0<beta<=1/32. Its thermodynamic
-endpoint and [full-space injectivity supplement](checks/massgap_block_injectivity.md)
-are fixed-spacing claims, under fresh independent review. Neither supplies
-the ultraviolet crossover or a continuum finite-energy witness.
+The [local physical transfer unit](MASS_GAP_LOCAL_BLOCK_ASTRA.md) and
+[injectivity supplement](checks/massgap_block_injectivity.md) are
+[independently confirmed](REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md). They give an
+all-beta finite-volume local witness with volume-independent constants and,
+for 0<beta<=1/32, a positive finite physical spectral threshold on the full
+invariant thermodynamic Hilbert space at fixed lattice spacing. This is a
+lattice endpoint, not the continuum mass-gap theorem.
 
-Seven author programs reproduce all 264 predicates with empty stderr:
-74 source/history predicates, 131 physical-transfer predicates and 59
-full-colour predicates. [Coordinator bindings](checks/full_proof_three_candidates_bindings.json)
-verify 55 frozen files and 66 source/methodology bindings. These reproductions
-are not independent mathematical verdicts; three fresh Astra/max reviewers
-are checking the arguments. All earlier failed attempts are retained. Both
-full existence and the physical continuum mass gap remain open.
+All 264 author predicates were previously reproduced. Eight independent
+reviewer programs now reproduce 394 predicates including controls: source
+177+32, physical unit 112 plus 8 external-implication checks, residual 30+35.
+[Coordinator bindings](checks/full_proof_three_reviews_bindings.json) verify
+76 frozen review artifacts and 256 artifact/input/methodology records.
+[Replay confirmation](checks/full_proof_three_reviews_replay_confirmation.json)
+retains the initial comparator failure: one runtime field was not excluded;
+after excluding exactly that time field every other output agrees. No
+scientific predicate failed and no checker/tolerance was changed. Original
+reviewer failures and the corrected unexecuted comment remain preserved.
+The reviews are separate-context, same-family confirmations, not cross-family
+reviews or a whole-PR/audit verdict. Both full targets remain **OPEN**.
 
-The owner has additionally requested an arXiv/primary-literature pass for
-every key block. Each reviewer is checking relevant established constructions
-and their exact hypotheses; the coordinator is covering the wider
-reconstruction/symmetry/nontriviality interfaces. No external theorem is
-adopted solely from an abstract or title.
+The requested primary-literature pass is recorded in [LITERATURE_BRIDGES](LITERATURE_BRIDGES.md)
+and [ASSUMPTIONS_AND_IMPORTS](ASSUMPTIONS_AND_IMPORTS.md), with the three detailed
+reviewer ledgers. Applicable cluster and fixed-spacing results are separated
+from unmatched soft/hard, dimension, source and continuum hypotheses. No
+unread abstract supplies a theorem. Complete third-party papers are excluded
+from the publication packet; URLs, version/hash evidence and our analysis remain.
+
+Fresh Astra/max workers now pursue the actual sea/failure producer, uniform
+soft minimizer/FC19, and a deeper continuum-bridge literature check. Their
+new drafts are not incorporated as established conclusions at this checkpoint.
 
 Current assignments use fresh `gpt-6-astra / max` contexts:
 
-- **Residual determinant — full-colour review active:** the finite/model,
-  harmonic and charged-vertex units are independently checked. The separate
-  full-colour candidate is frozen; a fresh reviewer is checking its neutral
-  factors, periodic/Bloch comparison and actual consumer. Uniform tree and
-  nonlinear flow producers remain open.
-- **Source-local return — hard-history review active:** the original and
-  selected-sector continuations are independently checked. The new raw-Haar
-  history/source construction is frozen and under fresh review. Its successful
-  gas has a fixed positive relative-source radius; the failure/sea estimate,
-  all-field source representation and higher-level interfaces remain open.
+- **Uniform soft minimizer — active:** the complete full-colour residual unit
+  is independently checked. A fresh author is deriving FC19 from the actual
+  linear chain and checking existing linear-package proofs and their repairs.
+  The new draft has not yet received independent review.
+- **Actual sea/failure construction — active:** the hard-history unit is
+  independently checked. A fresh author is pricing actual larger defects and
+  checking reference normalization with retained joint source/history data.
+  A joint or integrated estimate is not automatically fixed-V N1.
 - **Independent UIR reviewer — completed:** the frozen recovery argument
   has been checked through distinct derivations and an independent program;
   its bounded claims are confirmed with explicit conditional/open limits.
@@ -100,11 +111,10 @@ Current assignments use fresh `gpt-6-astra / max` contexts:
   are confirmed. The same reviewer has completed the separate conditional
   mass-gap criterion and actual vertex reviews. The latter confirms the
   charged-sector zero coefficient at each fixed depth in the stated limit order.
-- **Physical mass-gap — local/block review active:** the first finite-volume
-  transfer and SU(2) source unit is independently checked. A separate all-beta
-  local witness and small-beta fixed-spacing endpoint are frozen and under
-  fresh review, including the full-space injectivity supplement. No continuum
-  crossover or cutoff-uniform physical gap is established.
+- **Physical continuum bridge — active:** the local/block endpoint and
+  full-space injectivity are independently checked at fixed spacing. A fresh
+  worker is tracing proposed primary-literature crossover estimates and their
+  complete upstream hypotheses. No continuum mass-gap claim is adopted.
 - **Fresh mass-gap construction reviewer — completed:** finite transfer,
   normalized SU(2) forward images and source identities confirmed at their
   explicit scope. No MG row or full publication/landing packet is certified.

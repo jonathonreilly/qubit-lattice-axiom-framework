@@ -18,14 +18,14 @@ percentage completion is asserted.
 | Family | Object and mechanism | Terminal obligation | Strength relative to full target | State and concrete evidence | Next decision / reopen condition |
 |---|---|---|---|---|---|
 | Residual Hessian completion | Exact normalized-chain joint Hessian, harmonic gauge shear and tuned off-shell gauge path with grouped Ward traces | Actual leading transverse block and integrable grouped symbol; a uniform residual or all-increments positive-slope estimate | Weaker: supports coupling flow, not the remaining RG/source/OS inputs | [Finite/model construction](RESIDUAL_DETERMINANT_ASTRA.md) [independently checked](REVIEW_RESIDUAL_DETERMINANT_ASTRA.md); [harmonic bridge independently checked](REVIEW_RESIDUAL_LATTICE_BRIDGE_ASTRA.md); [actual vertex construction](checks/residual_det_vertices_working.md) [independently confirmed](REVIEW_RESIDUAL_VERTICES_ASTRA.md) for zero charged-sector residual at fixed depth, volume first then momentum zero | Construct the neutral/full-periodic consumer comparison and actual depth-uniform tree/source producers before asserting the full flow bound |
-| Source-local resolvent and return | Actual one-step fluctuation operator; original-source atoms, common pinning majorants and normalized affine contour flux | Original-source incidence bounds after any background substitution, and the full return identity with all prefactors/indicators | Weaker: one-step producer support; multiscale induction and all-field source representation remain | [Level-zero/global-chart construction](SOURCE_LOCAL_RETURN_ASTRA.md) [independently checked after five scoped corrections](REVIEW_SOURCE_LOCAL_RETURN_ASTRA.md); [fixed-reference/normalized-face continuation](SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md) [independently checked after two corrections](REVIEW_SOURCE_RETURN_CONTINUATION_ASTRA.md), with common majorants, remote incidences and full-factor cube/ball flux | Construct actual hard-history/collar, all-field and higher-level interfaces; the next hard-history unit is active |
+| Source-local resolvent and return | Actual one-step fluctuation operator; original-source atoms, common pinning majorants and normalized affine contour flux | Original-source incidence bounds after any background substitution, and the full return identity with all prefactors/indicators | Weaker: one-step producer support; multiscale induction and all-field source representation remain | [Level-zero/global-chart construction](SOURCE_LOCAL_RETURN_ASTRA.md) [independently checked after five scoped corrections](REVIEW_SOURCE_LOCAL_RETURN_ASTRA.md); [fixed-reference/normalized-face continuation](SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md) [independently checked after two corrections](REVIEW_SOURCE_RETURN_CONTINUATION_ASTRA.md), with common majorants, remote incidences and full-factor cube/ball flux | Construct actual hard-history/collar, all-field and higher-level interfaces; the hard-history unit is independently checked; actual sea/failure work is active |
 | Centered contour alignment | Periodic image cochains, midpoint cancellations and coarse-unit inverse bounds | Generic-field covariant conversion and all matched background-transfer norms | Weaker: an upstream background-control component | [Alignment argument](RECOVERY_ALIGNMENT_ASTRA.md) [independently checked at its conditional scope](REVIEW_RECOVERY_ALIGNMENT_ASTRA.md) | Derive the all-order generic-field NC(log) remainder and its summed transported norms |
 | Restricted minimization | Regional small-field chain minimization and critical-value identification | Same action, boundary data, domains and radii in the actual consumers; outside-region comparison handled explicitly | Weaker: supplies an action interface used by return/large-field arguments | Open producer work; [late minimum review](CODEX_REVIEW_MINCB.md) and [B2 review](CODEX_REVIEW_B2.md) preserve conditional results and expose unmatched consumers | A new uniform regional construction or a consistent alternative action/large-field architecture is required; renaming E^cb as E^NA is not a new mechanism |
 | Flat Euclidean symmetry | Torque/Ward identities on the fixed flat observable hierarchy | Vanishing all-order rotation defect on the common trajectory with regularity sufficient for group closure | Weaker: one route to H_Euc | Open route; existing assembly and source reviews retain the precise all-order bounds | Derive actual normalized source/torque bounds; pair invariance alone is insufficient |
 | Sphere-to-flat symmetry | Reflection-positive sphere approximants and local contraction | Complex profile flow, all-product Ward matching and seam transparency on the same observable hierarchy | Weaker: alternative route to H_Euc, not an additional mandatory flat-route hypothesis | Open route; [sphere review](CODEX_REVIEW_SPHERE2.md) retains the allowed mixed seam operator | Establish its actual matching and uniformity, including the seam operator; a profile formula alone does not supply flow |
 | Observable non-freeness | Short-distance separated observable hierarchy and free-field comparison | Actual upper/lower matching and a witness preserved by the stated OS reconstruction, for the explicitly selected comparator | Weaker: H_int only; broader comparator classes are separate quantified targets | Open; [two-sided review](CODEX_REVIEW_TSE.md) preserves conditional assembly, with actual lower matching unproved | Derive the same-field quantum matching and required Green-function estimate; avoid substituting an upper image bound for a lower witness |
 | Physical infrared decay via coarse flow | Continue the exact effective action to a fixed physical scale with a provable connected expansion | Uniform reflected-correlation decay for a dense physical observable family on the same trajectory | Stronger than the existing T_OS milestone; supplies MG1 only with reconstruction and source transport | [Actual SU(2) soft-loop/source transport proposal](MASS_GAP_CONSTRUCTION_ASTRA.md) [independently checked at its finite scope](REVIEW_MASS_GAP_CONSTRUCTION_ASTRA.md), retains the unestimated fine covariance and source-only term | Construct the actual crossover and all-observable transport; a Haar coarse marginal does not prove physical clustering |
-| Physical transfer-operator gap | Direct gauge-invariant spectral or coercive estimate for the physical time-translation operator | A positive physical lower bound uniform in ultraviolet cutoff and volume | Alternative mass-gap mechanism; an auxiliary fluctuation gap is insufficient | [Spectral criterion](MASS_GAP_TARGET.md) [independently checked](REVIEW_MASS_GAP_TARGET_ASTRA.md); [full finite-volume transfer proposal](MASS_GAP_CONSTRUCTION_ASTRA.md) [independently checked](REVIEW_MASS_GAP_CONSTRUCTION_ASTRA.md), with an explicitly degenerating lower bound and a confirmed checker repair for two formerly surviving mutations | Derive a Wilson-specific local/block comparison for the actual ground-state kernel, including its ground-state ratios, with volume/cutoff-uniform physical constants |
+| Physical transfer-operator gap | Direct gauge-invariant spectral or coercive estimate for the physical time-translation operator | A positive physical lower bound uniform in ultraviolet cutoff and volume | Alternative mass-gap mechanism; an auxiliary fluctuation gap is insufficient | [Spectral criterion](MASS_GAP_TARGET.md) [independently checked](REVIEW_MASS_GAP_TARGET_ASTRA.md); [full finite-volume transfer proposal](MASS_GAP_CONSTRUCTION_ASTRA.md) [independently checked](REVIEW_MASS_GAP_CONSTRUCTION_ASTRA.md), with an explicitly degenerating lower bound and a confirmed checker repair for two formerly surviving mutations | The local/block comparison is independently checked at fixed spacing and small beta; derive the common cutoff-uniform physical-scale bridge |
 
 The final assembly must verify the common observable maps, physical
 normalizations, trajectory, quantifier order, limits and all required inputs.
@@ -43,37 +43,50 @@ findings are incorporated here only with source and evidence pointers.
 
 ## Latest producer candidates and literature comparison
 
-### Three new frozen author candidates — independent review active
+### Three new units independently checked
 
-The [full-colour residual continuation](RESIDUAL_FULL_COLOUR_ASTRA.md) proposes
-zero complete one-loop residual in the specified infinite-volume/Bloch,
-volume-before-momentum limit. Neutral Wilson finite terms, scalar and harmonic
-Gram factors and periodic projector defects are retained. Depth-uniform tree
-producers and nonlinear finite-volume flow remain open.
+The [full-colour residual unit](RESIDUAL_FULL_COLOUR_ASTRA.md) is
+[independently confirmed](REVIEW_RESIDUAL_FULL_COLOUR_ASTRA.md) at each fixed
+depth in its original infinite-volume/Bloch, volume-before-momentum convention.
+Neutral Wilson finite terms, scalar and harmonic Gram factors and exceptional
+periodic projector terms are retained. FC19 remains open and FC20 conditional;
+nonlinear flow and the finite-part increment estimate are not supplied.
 
-The [actual hard-history return](SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md) gives
-an exact raw-Haar source-compensated history partition and a proposed
-completion-good source-local gas, including a fixed positive relative-source
-radius. Its failure weights and the normalized sea expectation remain
-unpriced. Full histories/induction, N1/N2 and coarse holomorphy remain open.
+The [actual hard-history return](SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md) is
+[independently confirmed](REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md) as an exact
+level-zero raw partition and completion-good source-local gas, including its
+fixed positive relative-source radius. Failure activities and the final
+interacting sea average are unpriced by this reviewed unit. Full multilevel
+history/action matching, N1/N2 and required coarse holomorphy remain open.
 
-The [local physical transfer construction](MASS_GAP_LOCAL_BLOCK_ASTRA.md)
-proposes a volume-independent plaquette witness at every finite positive
-beta and a physical-time contraction for 0<beta<=1/32. Its thermodynamic
-endpoint and [full-space injectivity supplement](checks/massgap_block_injectivity.md)
-are fixed-spacing claims, under fresh independent review. Neither supplies
-the ultraviolet crossover or a continuum finite-energy witness.
+The [local physical transfer unit](MASS_GAP_LOCAL_BLOCK_ASTRA.md) and
+[injectivity supplement](checks/massgap_block_injectivity.md) are
+[independently confirmed](REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md). They give an
+all-beta finite-volume local witness with volume-independent constants and,
+for 0<beta<=1/32, a positive finite physical spectral threshold on the full
+invariant thermodynamic Hilbert space at fixed lattice spacing. This is a
+lattice endpoint, not the continuum mass-gap theorem.
 
-Seven author programs reproduce all 264 predicates with empty stderr:
-74 source/history predicates, 131 physical-transfer predicates and 59
-full-colour predicates. [Coordinator bindings](checks/full_proof_three_candidates_bindings.json)
-verify 55 frozen files and 66 source/methodology bindings. These reproductions
-are not independent mathematical verdicts; three fresh Astra/max reviewers
-are checking the arguments. All earlier failed attempts are retained. Both
-full existence and the physical continuum mass gap remain open.
+All 264 author predicates were previously reproduced. Eight independent
+reviewer programs now reproduce 394 predicates including controls: source
+177+32, physical unit 112 plus 8 external-implication checks, residual 30+35.
+[Coordinator bindings](checks/full_proof_three_reviews_bindings.json) verify
+76 frozen review artifacts and 256 artifact/input/methodology records.
+[Replay confirmation](checks/full_proof_three_reviews_replay_confirmation.json)
+retains the initial comparator failure: one runtime field was not excluded;
+after excluding exactly that time field every other output agrees. No
+scientific predicate failed and no checker/tolerance was changed. Original
+reviewer failures and the corrected unexecuted comment remain preserved.
+The reviews are separate-context, same-family confirmations, not cross-family
+reviews or a whole-PR/audit verdict. Both full targets remain **OPEN**.
 
-The owner has additionally requested an arXiv/primary-literature pass for
-every key block. Each reviewer is checking relevant established constructions
-and their exact hypotheses; the coordinator is covering the wider
-reconstruction/symmetry/nontriviality interfaces. No external theorem is
-adopted solely from an abstract or title.
+The requested primary-literature pass is recorded in [LITERATURE_BRIDGES](LITERATURE_BRIDGES.md)
+and [ASSUMPTIONS_AND_IMPORTS](ASSUMPTIONS_AND_IMPORTS.md), with the three detailed
+reviewer ledgers. Applicable cluster and fixed-spacing results are separated
+from unmatched soft/hard, dimension, source and continuum hypotheses. No
+unread abstract supplies a theorem. Complete third-party papers are excluded
+from the publication packet; URLs, version/hash evidence and our analysis remain.
+
+Fresh Astra/max workers now pursue the actual sea/failure producer, uniform
+soft minimizer/FC19, and a deeper continuum-bridge literature check. Their
+new drafts are not incorporated as established conclusions at this checkpoint.

@@ -1,0 +1,39 @@
+# Assumptions and imports: current full-proof literature pass
+
+This scoped register accompanies [LITERATURE_BRIDGES](LITERATURE_BRIDGES.md). It classifies the sources examined in the 29 October 2026 pass; it does not certify every premise in the legacy manuscript. Full existence and the physical continuum mass gap remain **OPEN**.
+
+The supplied mathematical model data remain SU(N), N>=2, the specified Wilson action, normalized Haar, actual normalized soft S4-prime kernels, fixed positive kappa ranges, and the stated lattice/continuum conventions. They are hypotheses of the construction, not a derivation of the model from the repository's primitive ontology. No empirical value, selector, measured parameter, hidden continuum limit, or new physical axiom is adopted from a paper.
+
+| Bridge | Source | Import class | Status in this checkpoint |
+|---|---|---|---|
+| [B01](LITERATURE_BRIDGES.md#b01) | [Fernández–Procacci](https://arxiv.org/html/math-ph/0605041v2) | literature theorem | Applicable bounded abstract machinery after the actual hypotheses proved in the source unit. |
+| [B02](LITERATURE_BRIDGES.md#b02) | [Jansen–Kolesnikov](https://arxiv.org/html/2112.13134v3) | background context | Comparison, candidate, or screened lead only; not an added premise of the proof. |
+| [B03](LITERATURE_BRIDGES.md#b03) | [Dimock: large fields](https://arxiv.org/html/1212.5562v2) | background context | Comparison, candidate, or screened lead only; not an added premise of the proof. |
+| [B04](LITERATURE_BRIDGES.md#b04) | [Bałaban: convergent gauge expansions](https://doi.org/10.1007/BF01217741) | background context | Comparison, candidate, or screened lead only; not an added premise of the proof. |
+| [B05](LITERATURE_BRIDGES.md#b05) | [Bałaban: large-field return II](https://doi.org/10.1007/BF01238433) | background context | Comparison, candidate, or screened lead only; not an added premise of the proof. |
+| [B06](LITERATURE_BRIDGES.md#b06) | [Bałaban: localization architecture](https://doi.org/10.1007/BF01239022) | background context | Comparison, candidate, or screened lead only; not an added premise of the proof. |
+| [B07](LITERATURE_BRIDGES.md#b07) | [Dimock: Covariant Axial Gauge](https://arxiv.org/abs/1410.2798v3) | background context | Comparison, candidate, or screened lead only; not an added premise of the proof. |
+| [B08](LITERATURE_BRIDGES.md#b08) | [Dimock: multiscale QED](https://arxiv.org/abs/1712.10029v3) | background context | Comparison, candidate, or screened lead only; not an added premise of the proof. |
+| [B09](LITERATURE_BRIDGES.md#b09) | [Brydges–Guadagni–Mitter](https://arxiv.org/abs/math-ph/0303013) | non-derivation analogy | Comparison, candidate, or screened lead only; not an added premise of the proof. |
+| [B10](LITERATURE_BRIDGES.md#b10) | [Adams–Lee](https://arxiv.org/abs/0709.0781) | background context | Comparison, candidate, or screened lead only; not an added premise of the proof. |
+| [B11](LITERATURE_BRIDGES.md#b11) | [Lüscher–Weisz](https://arxiv.org/abs/hep-lat/9504006) | background context | Comparison, candidate, or screened lead only; not an added premise of the proof. |
+| [B12](LITERATURE_BRIDGES.md#b12) | [Iguri–Mazzitelli](https://arxiv.org/abs/hep-th/0107095) | non-derivation analogy | Comparison, candidate, or screened lead only; not an added premise of the proof. |
+| [B13](LITERATURE_BRIDGES.md#b13) | [Lüscher: physical transfer](https://bib-pubdb1.desy.de/record/396349/files/7611148.pdf) | literature theorem | Established mathematical comparison with the explicit normalization/domain match in the bridge; no continuum closure. |
+| [B14](LITERATURE_BRIDGES.md#b14) | [Shen–Zhu–Zhu](https://arxiv.org/pdf/2204.12737v1) | literature theorem | Established mathematical comparison with the explicit normalization/domain match in the bridge; no continuum closure. |
+| [B15](LITERATURE_BRIDGES.md#b15) | [Rebeschini–van Handel](https://arxiv.org/pdf/1308.4117v1) | literature theorem | Established mathematical comparison with the explicit normalization/domain match in the bridge; no continuum closure. |
+| [B16](LITERATURE_BRIDGES.md#b16) | [Chatterjee](https://arxiv.org/pdf/2006.16229v5) | background context | Comparison, candidate, or screened lead only; not an added premise of the proof. |
+| [B17](LITERATURE_BRIDGES.md#b17) | [Faizal–Shabir](https://arxiv.org/pdf/2606.19362v1) | background context | Comparison, candidate, or screened lead only; not an added premise of the proof. |
+| [B18](LITERATURE_BRIDGES.md#b18) | [Kirk, v4, 2 August 2026](https://zenodo.org/records/21765806) | background context | Comparison, candidate, or screened lead only; not an added premise of the proof. |
+| [B19](LITERATURE_BRIDGES.md#b19) | [Ito–Seiler](https://arxiv.org/pdf/0901.4246v1) | background context | Comparison, candidate, or screened lead only; not an added premise of the proof. |
+| [B20](LITERATURE_BRIDGES.md#b20) | [Faria da Veiga–O’Carroll](https://arxiv.org/html/2509.03513v1) | background context | Comparison, candidate, or screened lead only; not an added premise of the proof. |
+| [B21](LITERATURE_BRIDGES.md#b21) | [Osterwalder–Schrader II](https://projecteuclid.org/journals/communications-in-mathematical-physics/volume-42/issue-3/Axioms-for-Euclidean-Greens-functions-II-with-an-Appendix-by/cmp/1103899050.pdf) | literature theorem | Conditional reconstruction import; the actual complete hierarchy and its hypotheses are not yet produced. |
+| [B22](LITERATURE_BRIDGES.md#b22) | [Kravchuk–Qiao–Rychkov](https://arxiv.org/html/2104.02090v2#S9.SS2.SSS2) | background context | Comparison, candidate, or screened lead only; not an added premise of the proof. |
+| [B23](LITERATURE_BRIDGES.md#b23) | [Adamo–Moriwaki–Tanimoto](https://arxiv.org/html/2407.18222v2#S2.SS5) | background context | Comparison, candidate, or screened lead only; not an added premise of the proof. |
+| [B24](LITERATURE_BRIDGES.md#b24) | [Hollands](https://arxiv.org/pdf/0705.3340v4) | background context | Comparison, candidate, or screened lead only; not an added premise of the proof. |
+| [B25](LITERATURE_BRIDGES.md#b25) | [Mund](https://arxiv.org/pdf/1012.1454v4) | background context | Comparison, candidate, or screened lead only; not an added premise of the proof. |
+| [B26](LITERATURE_BRIDGES.md#b26) | [Additional Bałaban leads](https://doi.org/10.1007/BF01215223) | background context | Comparison, candidate, or screened lead only; not an added premise of the proof. |
+| [B27](LITERATURE_BRIDGES.md#b27) | [Osterwalder–Seiler and Seiler](https://doi.org/10.1016/0003-4916(78)90039-8) | background context | Comparison, candidate, or screened lead only; not an added premise of the proof. |
+| [B28](LITERATURE_BRIDGES.md#b28) | [Nair](https://arxiv.org/abs/2608.10133) | background context | Comparison, candidate, or screened lead only; not an added premise of the proof. |
+| [B29](LITERATURE_BRIDGES.md#b29) | [Schmidt](https://arxiv.org/abs/math-ph/9811002) | background context | Comparison, candidate, or screened lead only; not an added premise of the proof. |
+
+The [source review](REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md), [residual review](REVIEW_RESIDUAL_FULL_COLOUR_ASTRA.md) and [physical-gap review](REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md) bind the mathematical scope. In particular, a theorem about an independent scalar sea, a hard abelian block constraint, formal perturbation theory, or a fixed lattice spacing is not an established estimate for the missing soft nonabelian continuum construction. B17 records two failed displayed implications only; B18 is undergoing further review. Neither is adopted as a solution.

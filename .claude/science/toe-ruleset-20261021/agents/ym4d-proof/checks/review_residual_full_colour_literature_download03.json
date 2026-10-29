@@ -1,0 +1,34 @@
+[
+  {
+    "name": "balaban_rg1_springer",
+    "url": "https://link.springer.com/content/pdf/10.1007/BF01215223.pdf",
+    "exit": 0,
+    "stderr": "",
+    "bytes": 333011,
+    "prefix": "<!DOCTYPE html>\n<html lang=\"en\" class=\"no-js\">\n    <head>\n        <meta charset=\"UTF-8\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">"
+  },
+  {
+    "name": "balaban_background_springer",
+    "url": "https://link.springer.com/content/pdf/10.1007/BF01240355.pdf",
+    "exit": 0,
+    "stderr": "",
+    "bytes": 252314,
+    "prefix": "<!DOCTYPE html>\n<html lang=\"en\" class=\"no-js\">\n    <head>\n        <meta charset=\"UTF-8\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">"
+  },
+  {
+    "name": "balaban_variational",
+    "url": "https://deepblue.lib.umich.edu/bitstream/handle/2027.42/46461/220_2005_Article_BF01229381.pdf?sequence=1",
+    "exit": 0,
+    "stderr": "",
+    "bytes": 1959,
+    "prefix": "<!DOCTYPE html><html><!-- Google Tag Manager --><head><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gt"
+  },
+  {
+    "name": "balaban_background_euclid",
+    "url": "https://projecteuclid.org/journals/communications-in-mathematical-physics/volume-99/issue-3/Propagators-for-lattice-gauge-theories-in-a-background-field/cmp/1103942769.pdf",
+    "exit": 0,
+    "stderr": "",
+    "bytes": 1051,
+    "prefix": "<html style=\"height:100%\"><head><META NAME=\"ROBOTS\" CONTENT=\"NOINDEX, NOFOLLOW\"><meta name=\"format-detection\" content=\"telephone=no\"><meta name=\"viewp"
+  }
+]

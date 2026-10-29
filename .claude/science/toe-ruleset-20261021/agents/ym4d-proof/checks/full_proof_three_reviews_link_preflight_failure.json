@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-10-29T17:39:27.400565+00:00",
+  "original_preflight_exit_code": 1,
+  "stage_mutation_before_failure": false,
+  "findings": [
+    {
+      "target": "B_i",
+      "line": 2849,
+      "context": "\u03bb_{i+1},\n      \u03bb_k = 0). It needs the commutators [Q, \u03c7](B_i - d\u03bb_i) to cost \u2264 \u03b8\u00b7E_annulus with \u03b8 < 1, uniformly in k."
+    },
+    {
+      "target": "\u03b8_K",
+      "line": 3003,
+      "context": "   \ud835\udca6\u0302_u(p)_{\u03c1\u03c3} = -\u03ba_{k-1}\u03a3_{K\u2208(Z/n)\u2074}e^{i\u03b8_K\u00b7u/n}[\u03bd^{(n)}_\u03c1W_{n,\u03c3}r\u0302_\u03c3 - \u03bd^{(n)}_\u03c3W_{n,\u03c1}r\u0302_\u03c1](\u03b8_K)/\u03c6_n(\u03b8_K),\n        \u03bd^{(n)}_\u03c1(\u03b8) := n(e^{i\u03b8_\u03c1/n} - "
+    },
+    {
+      "target": "A",
+      "line": 6176,
+      "context": "' \u2208 ker h_0 in the ball,\n  \u03a6(A) - \u03a6(A') = C_0\u222b_0^1[Hess f_V(0) - Hess f_V(A_s)](A - A')ds (C_0\u03a0_0 = C_0), and by Lemma N5-an\u266d (in the loc"
+    }
+  ],
+  "repair": "Restrict PROOF link validation to its edited status header; the complete legacy mathematical body is separately verified byte-identical to 4f04b662. Validate all other newly packaged Markdown in full. No mathematical source or Markdown link is changed to silence this parser mismatch."
+}

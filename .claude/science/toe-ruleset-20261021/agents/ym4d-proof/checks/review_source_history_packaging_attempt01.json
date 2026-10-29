@@ -1,0 +1,379 @@
+{
+  "schema": "independent-source-history-packaging-v1",
+  "checks": {
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_exact.py": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_exact_attempt01.json": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_exact_attempt01.py": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_exact_attempt01.stderr": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_exact_attempt02.json": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_exact_attempt02.py": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_exact_attempt02.stderr": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_exact_attempt03.json": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_exact_attempt03.py": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_exact_attempt03.stderr": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_exact_attempt04.json": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_exact_attempt04.stderr": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_packaging_attempt01.json": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_packaging_attempt02.json": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_radius.py": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_radius_attempt01.json": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_radius_attempt01.stderr": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_read_coverage.json": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_su2.py": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_su2_attempt01.json": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_su2_attempt01.py": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_su2_attempt01.stderr": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_su2_attempt02.json": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_su2_attempt02.py": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_su2_attempt02.stderr": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_su2_attempt03.json": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_su2_attempt03.stderr": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SOURCE_RETURN_CONTINUATION_ASTRA.md": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_receipt.json": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_RETURN_ASTRA.md": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SOURCE_LOCAL_RETURN_ASTRA.md": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/RECOVERY_CLUSTER_ASTRA.md": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RECOVERY_CLUSTER_ASTRA.md": true,
+    "frozen:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_source_return_fix.json": true,
+    "target": true,
+    "author_receipt": true,
+    "consumed:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md": true,
+    "consumed:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/RLARGE.md": true,
+    "consumed:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md": true,
+    "consumed:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md": true,
+    "consumed:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SOURCE_RETURN_CONTINUATION_ASTRA.md": true,
+    "consumed:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/RECOVERY_CLUSTER_ASTRA.md": true,
+    "consumed:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RECOVERY_CLUSTER_ASTRA.md": true,
+    "consumed:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md": true,
+    "consumed:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_STEP.md": true,
+    "consumed:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SRC2_55.md": true,
+    "consumed:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_SRC2.md": true,
+    "consumed:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/LARGE55.md": true,
+    "consumed:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_LARGE.md": true,
+    "consumed:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/B2_55.md": true,
+    "consumed:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_B2.md": true,
+    "consumed:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/PLD.md": true,
+    "consumed:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_PLD_S1_S2.md": true,
+    "consumed:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_exact.py": true,
+    "consumed:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_su2.py": true,
+    "consumed:.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_radius.py": true,
+    "method:AGENTS.md": true,
+    "method:docs/ai_methodology/SCIENCE_WORKFLOW.md": true,
+    "method:docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md": true,
+    "method:docs/ai_methodology/skills/physics-loop/SKILL.md": true,
+    "method:docs/ai_methodology/skills/review-loop/SKILL.md": true,
+    "method:docs/MINIMAL_AXIOMS_2026-06-29.md": true,
+    "method:docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": true,
+    "method:docs/audit/data/axiom_premise_nodes.json": true,
+    "method:docs/ai_methodology/skills/no-go-discipline/SKILL.md": true,
+    "method:docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md": true,
+    "method:docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md": true,
+    "method:docs/ai_methodology/skills/physics-loop/references/DELIVERY.md": true,
+    "method:docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md": true,
+    "method:docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md": true,
+    "method:docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md": true,
+    "method:docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md": true,
+    "method:docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md": true,
+    "method:docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md": true,
+    "skill:/Users/jonBridger/.codex/skills/physics-loop/SKILL.md": true,
+    "skill:/Users/jonBridger/.codex/skills/review-loop/SKILL.md": true,
+    "whitespace:review_source_history_criteria.md": true,
+    "whitespace:review_source_history_criteria_initial.md": true,
+    "whitespace:review_source_history_geometry.py": true,
+    "whitespace:review_source_history_geometry_attempt01.json": true,
+    "json:review_source_history_geometry_attempt01.json": true,
+    "whitespace:review_source_history_geometry_attempt01.py": true,
+    "whitespace:review_source_history_identity_cluster.py": true,
+    "whitespace:review_source_history_identity_cluster_attempt01.json": true,
+    "json:review_source_history_identity_cluster_attempt01.json": true,
+    "whitespace:review_source_history_identity_cluster_attempt01.py": true,
+    "whitespace:review_source_history_inputs.json": true,
+    "json:review_source_history_inputs.json": true,
+    "whitespace:review_source_history_literature.md": true,
+    "whitespace:review_source_history_literature_fetches.json": true,
+    "json:review_source_history_literature_fetches.json": true,
+    "whitespace:review_source_history_literature_fetches_attempt01.json": true,
+    "json:review_source_history_literature_fetches_attempt01.json": true,
+    "whitespace:review_source_history_literature_laplace.py": true,
+    "whitespace:review_source_history_literature_laplace_attempt01.json": true,
+    "json:review_source_history_literature_laplace_attempt01.json": true,
+    "whitespace:review_source_history_literature_laplace_attempt01.py": true,
+    "whitespace:review_source_history_packaging.py": true,
+    "whitespace:review_source_history_read_coverage.json": true,
+    "json:review_source_history_read_coverage.json": true,
+    "whitespace:review_source_history_receipt.json": true,
+    "json:review_source_history_receipt.json": true,
+    "whitespace:review_source_history_su2.py": true,
+    "whitespace:review_source_history_su2_attempt01.json": true,
+    "json:review_source_history_su2_attempt01.json": true,
+    "whitespace:review_source_history_su2_attempt01.py": true,
+    "whitespace:review_source_history_vocab.json": true,
+    "json:review_source_history_vocab.json": true,
+    "whitespace:REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md": true,
+    "all_local_markdown_links_exist": true,
+    "review_source_history_geometry:all_predicates": true,
+    "review_source_history_geometry:all_controls": true,
+    "review_source_history_geometry:snapshot_identical": true,
+    "review_source_history_geometry:stderr_empty": true,
+    "review_source_history_identity_cluster:all_predicates": true,
+    "review_source_history_identity_cluster:all_controls": true,
+    "review_source_history_identity_cluster:snapshot_identical": true,
+    "review_source_history_identity_cluster:stderr_empty": true,
+    "review_source_history_su2:all_predicates": true,
+    "review_source_history_su2:all_controls": true,
+    "review_source_history_su2:snapshot_identical": true,
+    "review_source_history_su2:stderr_empty": true,
+    "review_source_history_literature_laplace:all_predicates": true,
+    "review_source_history_literature_laplace:all_controls": true,
+    "review_source_history_literature_laplace:snapshot_identical": true,
+    "review_source_history_literature_laplace:stderr_empty": true,
+    "predeclared_initial_sha": true,
+    "predeclared_criteria_preserved": true
+  },
+  "scientific_check_counts": {
+    "geometry": {
+      "checks": 101,
+      "controls": 6
+    },
+    "identity_cluster": {
+      "checks": 26,
+      "controls": 13
+    },
+    "su2": {
+      "checks": 36,
+      "controls": 11
+    },
+    "literature_laplace": {
+      "checks": 14,
+      "controls": 2
+    }
+  },
+  "python_files_compiled_without_bytecode": 9,
+  "local_markdown_links": [
+    {
+      "document": "review_source_history_literature.md",
+      "target": "review_source_history_literature_laplace.py",
+      "exists": true
+    },
+    {
+      "document": "review_source_history_literature.md",
+      "target": "review_source_history_literature_laplace_attempt01.json",
+      "exists": true
+    },
+    {
+      "document": "review_source_history_literature.md",
+      "target": "review_source_history_literature_fetches.json",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "checks/source_history_return_receipt.json",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "checks/source_history_return_read_coverage.json",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "checks/review_source_history_receipt.json",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "checks/review_source_history_inputs.json",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "checks/review_source_history_read_coverage.json",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "checks/review_source_history_literature.md",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "checks/review_source_history_criteria_initial.md",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "checks/review_source_history_criteria.md",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "SRC2_55.md",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "PROOF.md",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "RLARGE.md",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "STEP55.md",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "LARGE55.md",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "CODEX_REVIEW_STEP.md",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "CODEX_REVIEW_LARGE.md",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "REVIEW_SOURCE_RETURN_CONTINUATION_ASTRA.md",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "B2_55.md",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "CODEX_REVIEW_B2.md",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "CODEX_REVIEW_SRC2.md",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "PLD.md",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "RECOVERY_CLUSTER_ASTRA.md",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "REVIEW_RECOVERY_CLUSTER_ASTRA.md",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "checks/review_source_history_geometry_attempt01.py",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "checks/review_source_history_geometry_attempt01.json",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "checks/review_source_history_identity_cluster_attempt01.py",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "checks/review_source_history_identity_cluster_attempt01.json",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "checks/review_source_history_su2_attempt01.py",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "checks/review_source_history_su2_attempt01.json",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "checks/review_source_history_literature_laplace_attempt01.py",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "checks/review_source_history_literature_laplace_attempt01.json",
+      "exists": true
+    },
+    {
+      "document": "REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "target": "checks/review_source_history_literature.md",
+      "exists": true
+    }
+  ],
+  "external_links_syntactic_inventory_only": [
+    {
+      "document": "review_source_history_literature.md",
+      "url": "https://arxiv.org/html/math-ph/0605041v2"
+    },
+    {
+      "document": "review_source_history_literature.md",
+      "url": "https://arxiv.org/html/2112.13134v3"
+    },
+    {
+      "document": "review_source_history_literature.md",
+      "url": "https://arxiv.org/html/1212.5562v2"
+    },
+    {
+      "document": "review_source_history_literature.md",
+      "url": "https://doi.org/10.1007/BF01217741"
+    },
+    {
+      "document": "review_source_history_literature.md",
+      "url": "https://scispace.com/pdf/convergent-renormalization-expansions-for-lattice-gauge-29jyexd38e.pdf"
+    },
+    {
+      "document": "review_source_history_literature.md",
+      "url": "https://doi.org/10.1007/BF01238433"
+    },
+    {
+      "document": "review_source_history_literature.md",
+      "url": "https://scispace.com/pdf/large-field-renormalization-ii-localization-exponentiation-h8b7ih93xo.pdf"
+    },
+    {
+      "document": "review_source_history_literature.md",
+      "url": "https://doi.org/10.1007/BF01239022"
+    },
+    {
+      "document": "review_source_history_literature.md",
+      "url": "https://scispace.com/pdf/renormalization-group-approach-to-lattice-gauge-field-4penm4k7hc.pdf"
+    },
+    {
+      "document": "review_source_history_literature.md",
+      "url": "https://arxiv.org/pdf/2606.19362v1"
+    }
+  ],
+  "limitations": "No author diagnostic replay, broad PR check, theorem proof or network link re-fetch is performed by this validator."
+}

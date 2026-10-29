@@ -1,0 +1,449 @@
+{
+  "schema": "independent-source-history-review-v1",
+  "frozen_at_utc": "2026-10-29T17:06:29.264769+00:00",
+  "scope": "Only exact source-history replacement and successful pointwise gas H1-H28 at the frozen level-zero source; no whole-PR, retained audit, physical theorem or route-exhaustion verdict.",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+    "sha256": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+    "bytes": 48847
+  },
+  "report": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+    "sha256": "a0205f0074b1e2a835eba453dae80ef7fb64b09aa792bd46e3d87aa3daf9b2d0",
+    "bytes": 21817
+  },
+  "author_receipt": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_receipt.json",
+    "sha256": "2ba3bbbeb864f81087976bf7abbd02a74d195a721115001e6c4b865bd727354d",
+    "bytes": 24227
+  },
+  "input_manifest": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_inputs.json",
+    "sha256": "1ef9a9ea534d2c7358ac4f8a4911ec28ce44208023db6d12002db77bff0f8297",
+    "bytes": 27278
+  },
+  "read_coverage": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_read_coverage.json",
+    "sha256": "11f76491200d162e4f2c7d39e0468cb2274cb53b2705a4b5fc27f38b0865dd5b",
+    "bytes": 18957
+  },
+  "current_main_methodology_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "main_checked_at_packaging": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "reviewer_independence": {
+    "model_and_effort": "Astra/max as dispatched by parent",
+    "separate_context": true,
+    "same_family_as_author": true,
+    "cross_family": false,
+    "blind_review": false,
+    "author_checker_read_after_first_three_independent_executions": true,
+    "no_subagents": true
+  },
+  "disposition": {
+    "bounded_unit": "supported within explicit assumptions and open boundaries",
+    "material_frozen_source_findings": 0,
+    "independent_literature_import_findings": 1,
+    "full_existence_proved": false,
+    "physical_continuum_mass_gap_proved": false,
+    "failure_histories_priced": false,
+    "sea_nonvanishing_or_clustering_proved": false
+  },
+  "predeclared_criteria": {
+    "initial": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_criteria_initial.md",
+      "sha256": "4057f5366e3a33a03b198dbb711d83dc49975d6484484924205dfc5cccdac223",
+      "bytes": 4000
+    },
+    "extended": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_criteria.md",
+      "sha256": "8ebbc90d89f0a574a7201404dd8fcbd1ffb2928961168ddf0e1d3cd22141c8d5",
+      "bytes": 4894
+    },
+    "initial_unchanged_prefix_preserved": true,
+    "literature_check_added_before_literature_laplace_checker": "Haar-cap contradiction and actual bad-set restriction were predeclared before its implementation/execution. PDF397-398 in that added checklist referred to web page indexing; final primary citation is printed34 / one-based PDF399."
+  },
+  "executions": [
+    {
+      "name": "geometry",
+      "attempt": 1,
+      "replay_command": [
+        "python3",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_geometry.py"
+      ],
+      "working_directory": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+      "exit_code_observed": 0,
+      "script": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_geometry.py",
+        "sha256": "269afa660093ddb09744d9e84affbadb7459add68ae62b41a998b13c2f69d253",
+        "bytes": 8974
+      },
+      "executed_snapshot": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_geometry_attempt01.py",
+        "sha256": "269afa660093ddb09744d9e84affbadb7459add68ae62b41a998b13c2f69d253",
+        "bytes": 8974
+      },
+      "stdout": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_geometry_attempt01.json",
+        "sha256": "321d42c3b886713a95390c11c74055b2ce9aa4ea1d0ef7598f2b4a5f4e138266",
+        "bytes": 5838
+      },
+      "stderr": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_geometry_attempt01.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "checker_reported_elapsed_seconds": 68.11470724997343,
+      "checks": 101,
+      "negative_controls": 6,
+      "all_checks_true": true,
+      "all_controls_detected_mutations": true
+    },
+    {
+      "name": "identity_cluster",
+      "attempt": 1,
+      "replay_command": [
+        "python3",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_identity_cluster.py"
+      ],
+      "working_directory": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+      "exit_code_observed": 0,
+      "script": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_identity_cluster.py",
+        "sha256": "8403f4120d5c2d0d3636c6309bea78273d7d975376e6037dc977581739058079",
+        "bytes": 11269
+      },
+      "executed_snapshot": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_identity_cluster_attempt01.py",
+        "sha256": "8403f4120d5c2d0d3636c6309bea78273d7d975376e6037dc977581739058079",
+        "bytes": 11269
+      },
+      "stdout": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_identity_cluster_attempt01.json",
+        "sha256": "175a3cd3a660c4aad0c8076c01b55a3fcf26c767c4edf469086fe4748f5a40f4",
+        "bytes": 4025
+      },
+      "stderr": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_identity_cluster_attempt01.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "checker_reported_elapsed_seconds": 0.2642021250212565,
+      "checks": 26,
+      "negative_controls": 13,
+      "all_checks_true": true,
+      "all_controls_detected_mutations": true
+    },
+    {
+      "name": "su2",
+      "attempt": 1,
+      "replay_command": [
+        "python3",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_su2.py"
+      ],
+      "working_directory": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+      "exit_code_observed": 0,
+      "script": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_su2.py",
+        "sha256": "ebac7c3e4bd9086b9180f4195cbf32b079aaefa37055ac2ce791e45d5acc2dd2",
+        "bytes": 4943
+      },
+      "executed_snapshot": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_su2_attempt01.py",
+        "sha256": "ebac7c3e4bd9086b9180f4195cbf32b079aaefa37055ac2ce791e45d5acc2dd2",
+        "bytes": 4943
+      },
+      "stdout": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_su2_attempt01.json",
+        "sha256": "127c517065593a4a837e55600652fe8c5e7562e7d8ae0f7b4eda4856c23bbc79",
+        "bytes": 3216
+      },
+      "stderr": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_su2_attempt01.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "checker_reported_elapsed_seconds": 0.16322016599588096,
+      "checks": 36,
+      "negative_controls": 11,
+      "all_checks_true": true,
+      "all_controls_detected_mutations": true
+    },
+    {
+      "name": "literature_laplace",
+      "attempt": 1,
+      "replay_command": [
+        "python3",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_literature_laplace.py"
+      ],
+      "working_directory": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+      "exit_code_observed": 0,
+      "script": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_literature_laplace.py",
+        "sha256": "d5e5a7256959958ee4838900d64416ab4faaef5b273038fe7cfafff07dc85f6a",
+        "bytes": 2013
+      },
+      "executed_snapshot": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_literature_laplace_attempt01.py",
+        "sha256": "d5e5a7256959958ee4838900d64416ab4faaef5b273038fe7cfafff07dc85f6a",
+        "bytes": 2013
+      },
+      "stdout": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_literature_laplace_attempt01.json",
+        "sha256": "ca83e8d845408b49dfffc7ffacecf7c184aec33f0bb81481b6adea601fbac8a5",
+        "bytes": 1765
+      },
+      "stderr": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_literature_laplace_attempt01.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "checker_reported_elapsed_seconds": 0.09094237501267344,
+      "checks": 14,
+      "negative_controls": 2,
+      "all_checks_true": true,
+      "all_controls_detected_mutations": true
+    }
+  ],
+  "totals": {
+    "scientific_checks": 177,
+    "meaningful_negative_controls": 32,
+    "independent_scientific_execution_failures": 0,
+    "author_diagnostics_rerun_by_this_reviewer": false
+  },
+  "packaging": {
+    "validator": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_packaging.py",
+      "sha256": "28551a06644c662306fa7a0742fb55fd6811892c76bab2852bd9804251129880",
+      "bytes": 4430
+    },
+    "result": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_packaging_attempt01.json",
+      "sha256": "3bca641be6c0591256775199bc32c0d75f1f6b5e54fb32c1d9d0b0474ee85d65",
+      "bytes": 18540
+    },
+    "stderr": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_packaging_attempt01.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "exit_code": 0,
+    "predicates": 130,
+    "local_links": 36,
+    "all_predicates_true": true,
+    "all_local_links_resolved": true,
+    "vocabulary_linter": {
+      "path": "scripts/vocab_lint.py",
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "bytes": 14183
+    },
+    "vocabulary_result": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153
+    },
+    "vocabulary_stdout": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_vocab.stdout",
+      "sha256": "2444d4e1b743b929a375761fc055ad820974eddfaad87bf1e8f286e3d541f7b3",
+      "bytes": 204
+    },
+    "vocabulary_stderr": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_vocab.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "vocabulary_exit_code": 0,
+    "vocabulary_violations": 0,
+    "limitation": "The read-only packaging validator verified the receipt path while this receipt was still a marked packaging draft; the final receipt is generated afterward and excludes itself from the artifact manifest. No self-hash is asserted."
+  },
+  "runtime_observed_at_packaging": {
+    "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "executable": "/usr/local/bin/python3",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "numpy": "2.4.1",
+    "scipy": "1.17.0",
+    "mpmath": "1.3.0"
+  },
+  "preserved_failures": {
+    "author_packet": "Source author exact-fixture failure and two author packaging failures remain included, unchanged, in the verified input packet. They are checker/packaging failures, not surviving source counterexamples.",
+    "reviewer_tool_access": "One initial wrong no-go path, one wrong vocabulary-script name and a search mentioning a nonexistent skills directory were corrected. Direct Balaban fetches returned errors/nonpapers; direct DOI/Springer and a guessed KP mirror did not produce readable primaries. No access failure is treated as a scientific failure.",
+    "reviewer_scientific_failures": "None of the four independent diagnostic first attempts failed. The recent literature upper-bound counterexample is an intended successful scientific falsification, not a checker failure."
+  },
+  "literature": {
+    "analysis": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_literature.md",
+      "sha256": "a7c9581d797d3c36978c9677782c6c0d67c9b0e9251252f9f634404acccc3ece",
+      "bytes": 8196
+    },
+    "fetch_metadata": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_literature_fetches.json",
+      "sha256": "53130c1588b5c553eceae106fc1249f6660414f4046a4166edf8ed09b8bedfb8",
+      "bytes": 3355
+    },
+    "original_fetch_attempt": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_literature_fetches_attempt01.json",
+      "sha256": "1f6cc74b02ab365facc68035b2c3bb268c008ee30c6dc357e0c44bc28ac7487f",
+      "bytes": 1550
+    },
+    "local_only_research_inputs": "Full arXiv PDF existed only in process memory; no downloaded complete papers or extracted full texts are in this packet. Failed direct Balaban payload hashes are explicitly error-document hashes, not verified paper versions. Web parsed scanned originals supply only the recorded scoped reading.",
+    "remaining_import_obligation": "F-P graph majorants directly cover the successful gas. Dimock scalar ultralocal sea assumptions and Balaban full gauge RG hypotheses are not established for this source measure. No new imported proof of f, sea, multilevel matching, existence or physical gap."
+  },
+  "artifact_count_excluding_receipt_itself": 30,
+  "artifacts_excluding_receipt_itself": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "sha256": "a0205f0074b1e2a835eba453dae80ef7fb64b09aa792bd46e3d87aa3daf9b2d0",
+      "bytes": 21817
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_criteria.md",
+      "sha256": "8ebbc90d89f0a574a7201404dd8fcbd1ffb2928961168ddf0e1d3cd22141c8d5",
+      "bytes": 4894
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_criteria_initial.md",
+      "sha256": "4057f5366e3a33a03b198dbb711d83dc49975d6484484924205dfc5cccdac223",
+      "bytes": 4000
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_geometry.py",
+      "sha256": "269afa660093ddb09744d9e84affbadb7459add68ae62b41a998b13c2f69d253",
+      "bytes": 8974
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_geometry_attempt01.json",
+      "sha256": "321d42c3b886713a95390c11c74055b2ce9aa4ea1d0ef7598f2b4a5f4e138266",
+      "bytes": 5838
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_geometry_attempt01.py",
+      "sha256": "269afa660093ddb09744d9e84affbadb7459add68ae62b41a998b13c2f69d253",
+      "bytes": 8974
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_geometry_attempt01.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_identity_cluster.py",
+      "sha256": "8403f4120d5c2d0d3636c6309bea78273d7d975376e6037dc977581739058079",
+      "bytes": 11269
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_identity_cluster_attempt01.json",
+      "sha256": "175a3cd3a660c4aad0c8076c01b55a3fcf26c767c4edf469086fe4748f5a40f4",
+      "bytes": 4025
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_identity_cluster_attempt01.py",
+      "sha256": "8403f4120d5c2d0d3636c6309bea78273d7d975376e6037dc977581739058079",
+      "bytes": 11269
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_identity_cluster_attempt01.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_inputs.json",
+      "sha256": "1ef9a9ea534d2c7358ac4f8a4911ec28ce44208023db6d12002db77bff0f8297",
+      "bytes": 27278
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_literature.md",
+      "sha256": "a7c9581d797d3c36978c9677782c6c0d67c9b0e9251252f9f634404acccc3ece",
+      "bytes": 8196
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_literature_fetches.json",
+      "sha256": "53130c1588b5c553eceae106fc1249f6660414f4046a4166edf8ed09b8bedfb8",
+      "bytes": 3355
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_literature_fetches_attempt01.json",
+      "sha256": "1f6cc74b02ab365facc68035b2c3bb268c008ee30c6dc357e0c44bc28ac7487f",
+      "bytes": 1550
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_literature_laplace.py",
+      "sha256": "d5e5a7256959958ee4838900d64416ab4faaef5b273038fe7cfafff07dc85f6a",
+      "bytes": 2013
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_literature_laplace_attempt01.json",
+      "sha256": "ca83e8d845408b49dfffc7ffacecf7c184aec33f0bb81481b6adea601fbac8a5",
+      "bytes": 1765
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_literature_laplace_attempt01.py",
+      "sha256": "d5e5a7256959958ee4838900d64416ab4faaef5b273038fe7cfafff07dc85f6a",
+      "bytes": 2013
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_literature_laplace_attempt01.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_packaging.py",
+      "sha256": "28551a06644c662306fa7a0742fb55fd6811892c76bab2852bd9804251129880",
+      "bytes": 4430
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_packaging_attempt01.json",
+      "sha256": "3bca641be6c0591256775199bc32c0d75f1f6b5e54fb32c1d9d0b0474ee85d65",
+      "bytes": 18540
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_packaging_attempt01.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_read_coverage.json",
+      "sha256": "11f76491200d162e4f2c7d39e0468cb2274cb53b2705a4b5fc27f38b0865dd5b",
+      "bytes": 18957
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_su2.py",
+      "sha256": "ebac7c3e4bd9086b9180f4195cbf32b079aaefa37055ac2ce791e45d5acc2dd2",
+      "bytes": 4943
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_su2_attempt01.json",
+      "sha256": "127c517065593a4a837e55600652fe8c5e7562e7d8ae0f7b4eda4856c23bbc79",
+      "bytes": 3216
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_su2_attempt01.py",
+      "sha256": "ebac7c3e4bd9086b9180f4195cbf32b079aaefa37055ac2ce791e45d5acc2dd2",
+      "bytes": 4943
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_su2_attempt01.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_vocab.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_vocab.stdout",
+      "sha256": "2444d4e1b743b929a375761fc055ad820974eddfaad87bf1e8f286e3d541f7b3",
+      "bytes": 204
+    }
+  ],
+  "repository_mutations": "Owned review and review_source_history_* files only. No author, shared summary, audit authority, git index/commit or PR changes.",
+  "limits": [
+    "Finite diagnostics do not prove all-order convergence; the report supplies the general majorant and analytic zero-free continuation.",
+    "Numerical SU(2) integrations are not interval certificates or unconditional Wilson probability estimates.",
+    "No estimate is supplied for f_Y, final sea average, multilevel matching, higher-level action identity, hard-selector coarse holomorphy, N1/N2, OS/existence or physical continuum gap.",
+    "No exhaustive literature-priority, global no-go, route-exhaustion or retained-grade claim."
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "utc": "2026-10-29T16:58:03.751629+00:00",
+  "downloads": [
+    {
+      "url": "https://bib-pubdb1.desy.de/record/396349/files/7611148.pdf",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_luscher.pdf",
+      "returncode": 0,
+      "stderr": "",
+      "role": "local research cache; not proposed publication attachment",
+      "bytes": 248,
+      "sha256": "4681fa6e4303ecc351521fa1c7c836c9f3d6774b11725d39885ec3bf8ff16561"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2204.12737v1",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_szz_v1.pdf",
+      "returncode": 0,
+      "stderr": "",
+      "role": "local research cache; not proposed publication attachment",
+      "bytes": 525950,
+      "sha256": "21d0cf19e74e13f8468d1f980ba05849a781f28018301ea2b11d7551822597d1"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1308.4117v1",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_comparison_v1.pdf",
+      "returncode": 0,
+      "stderr": "",
+      "role": "local research cache; not proposed publication attachment",
+      "bytes": 492828,
+      "sha256": "5df16281b38a776ed2026c925f0a3c97c3b90a60407390e06e4280beb18cc9da"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2006.16229v5",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_chatterjee_v5.pdf",
+      "returncode": 0,
+      "stderr": "",
+      "role": "local research cache; not proposed publication attachment",
+      "bytes": 335742,
+      "sha256": "34c1e44bf9ca8374103e87a7870557fcc16b7a40e112b90cc9a1e08073d60e4b"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2606.19362v1",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_faizal_v1.pdf",
+      "returncode": 0,
+      "stderr": "",
+      "role": "local research cache; not proposed publication attachment",
+      "bytes": 4636244,
+      "sha256": "0648f30f67719a6c83976f1da53131fc6f9a9ddc9ba1c406345f5ed959b32939"
+    },
+    {
+      "url": "https://arxiv.org/pdf/0901.4246v1",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_ito_seiler_v1.pdf",
+      "returncode": 0,
+      "stderr": "",
+      "role": "local research cache; not proposed publication attachment",
+      "bytes": 86541,
+      "sha256": "a80fbf446b0d251dc18d919c7336375365d7d711187fd1bb676741fcad91b431"
+    }
+  ]
+}

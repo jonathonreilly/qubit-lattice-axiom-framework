@@ -1,0 +1,8 @@
+Mechanical manifest-assembly attempt before final freeze, 2026-10-29 UTC.
+The in-memory PROOF old/current range comparison passed. The attempt then
+passed a list of byte lines to hashlib.sha256 rather than joining it.
+Traceback (most recent call last):
+  File "<stdin>", line 7, in <module>
+TypeError: object supporting the buffer API required
+No output file was written by that failed attempt. Repair: b''.join(lines)
+for the range digest. No scientific implementation or tolerance changed.

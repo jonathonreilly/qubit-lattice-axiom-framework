@@ -1,0 +1,75 @@
+{
+  "source_sha256": "327d033b22281f5f727c018ccb9b1d23d8f7d131bd3633602d6655a9b3de2403",
+  "expected_source_sha256": "327d033b22281f5f727c018ccb9b1d23d8f7d131bd3633602d6655a9b3de2403",
+  "source_matches": true,
+  "checks": [
+    {
+      "name": "principal_inverse_on_traceless_ball_SU2",
+      "passed": true,
+      "max_inverse_error": 7.691850745534255e-16,
+      "max_trace_error": 8.291978215169138e-16,
+      "radius": 1.9992973221712647
+    },
+    {
+      "name": "center_branch_excluded_SU2",
+      "passed": true,
+      "center_principal_norm": 4.442882938158366
+    },
+    {
+      "name": "coordinate_alias_excluded_SU2",
+      "passed": true
+    },
+    {
+      "name": "principal_inverse_on_traceless_ball_SU3",
+      "passed": true,
+      "max_inverse_error": 2.475353146817204e-15,
+      "max_trace_error": 3.1364740713096475e-15,
+      "radius": 1.6324194278107962
+    },
+    {
+      "name": "center_branch_excluded_SU3",
+      "passed": true,
+      "center_principal_norm": 3.6275987284684352
+    },
+    {
+      "name": "coordinate_alias_excluded_SU3",
+      "passed": true
+    },
+    {
+      "name": "principal_inverse_on_traceless_ball_SU5",
+      "passed": true,
+      "max_inverse_error": 3.496854446930323e-15,
+      "max_trace_error": 3.851992832718008e-15,
+      "radius": 1.2644666515873306
+    },
+    {
+      "name": "center_branch_excluded_SU5",
+      "passed": true,
+      "center_principal_norm": 2.8099258924162904
+    },
+    {
+      "name": "coordinate_alias_excluded_SU5",
+      "passed": true
+    },
+    {
+      "name": "principal_inverse_on_traceless_ball_SU10",
+      "passed": true,
+      "max_inverse_error": 4.448217190463899e-15,
+      "max_trace_error": 4.974274464537692e-15,
+      "radius": 0.894112943921649
+    },
+    {
+      "name": "center_branch_excluded_SU10",
+      "passed": true,
+      "center_principal_norm": 1.98691765315922
+    },
+    {
+      "name": "coordinate_alias_excluded_SU10",
+      "passed": true
+    }
+  ],
+  "passed": 12,
+  "total": 12,
+  "analytic_argument": "For ||A||HS<r<pi/sqrt(N), every anti-Hermitian eigenangle lies in (-pi,pi), so principal Log(exp A)=A. Conversely det W=1 and ||Log W||HS<r imply tr Log W in 2pi i Z and |tr Log W|<pi, hence traceless. The two domains coincide exactly. Gaussian cutoff prevents repeated preimages. F21 retains the changed complement.",
+  "scope": "Affected chart repair only; no precision/code/normalization formula changes or full science rerun."
+}

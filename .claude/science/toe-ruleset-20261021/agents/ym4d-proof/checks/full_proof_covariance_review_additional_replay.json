@@ -1,0 +1,31 @@
+{
+  "label": "additional",
+  "command": [
+    "/usr/local/bin/python3",
+    "review_soft_fluctuation_additional_02.py"
+  ],
+  "temporary_directory": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-covariance-review-replay-z0dlicxf/additional",
+  "exit_code": 0,
+  "wall_seconds": 1.319352041988168,
+  "excluded_top_level_fields": [
+    "created_utc"
+  ],
+  "exact_non_time_json_match": true,
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_soft_fluctuation_additional_02.py",
+    "sha256": "fed2c0a7658c147fa793e4a237a3c49c24d54810aae8484659d4fc05b33af7b9"
+  },
+  "reference": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_soft_fluctuation_additional_02.stdout.json",
+    "sha256": "dfb3cd20d7489652a6237df80234155c6410196822eb76a09d2aa2db85c5f48d"
+  },
+  "stdout": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_covariance_review_additional_out.json",
+    "sha256": "31aee8cf9c1b48e26e80f174f78faaf57e9ee26b301294522ad01549d7b89f66"
+  },
+  "stderr": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_covariance_review_additional_err.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  }
+}

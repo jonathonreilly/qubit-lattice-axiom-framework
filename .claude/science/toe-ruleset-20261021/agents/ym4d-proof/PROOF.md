@@ -201,7 +201,7 @@
 
 > ### Reviewed producer checkpoint — 29 October 2026
 >
-> Four bounded units now have fresh independent reviews, including affected
+> Five bounded units now have fresh independent reviews, including affected
 > confirmation of the corrections. They do not complete either continuum target.
 >
 > - [Uniform soft minimizer](UNIFORM_SOFT_MINIMIZER_ASTRA.md):
@@ -232,15 +232,24 @@
 >   transfer and the global source bound remain missing. The full external
 >   RPM1 theorem is not certified, and the cone is not a positive mass gap.
 >
-> The [identity-background covariance construction](SOFT_FLUCTUATION_COVARIANCE_ASTRA.md)
-> now supplies an explicit finite-u Gaussian reference, local tree measure,
-> weighted inverse/square root and restricted-integral dictionary. Its chart
-> radius and traceless principal-log domain were corrected during independent
-> review; the final review packet is being frozen. General coarse backgrounds,
-> the chart complement and interacting source activities are further work.
-> A separate author is extending the full-colour stationary-jet construction,
-> reusing the reviewed T-UNIF cubic estimate and retaining the forced
-> second-order current and quartic exchange.
+> - [Identity-background covariance construction](SOFT_FLUCTUATION_COVARIANCE_ASTRA.md):
+>   [independent review](REVIEW_SOFT_FLUCTUATION_COVARIANCE_ASTRA.md) confirms
+>   the explicit finite-u Gaussian reference, local tree measure, weighted
+>   inverse/square root and restricted-integral dictionary after the
+>   traceless principal-log chart repair. This is a reference Gaussian,
+>   not the interacting covariance or a physical mass threshold. General
+>   coarse backgrounds, the chart complement and interacting source
+>   activities remain further work.
+>
+> The frozen [charged stationary-jet author unit](CHARGED_STATIONARY_JET_ASTRA.md)
+> now gives the actual cubic source, completed quartic exchange and forced
+> second-current transport, retaining covariant divergence and endpoint funnels.
+> Its weighted claims are conditional on the named linear inputs and are under
+> fresh independent review. The full-colour quartic estimate is reduced to
+> CJ18, the bottom second-curvature estimate; CJ18 remains **OPEN**. Its author
+> controls pass 40/40 and 19/19 predicates, with the original 36/37 diagnostic
+> preserved. These samples do not prove a uniform theorem. Separate Astra/max
+> work continues on CJ18 and the curvature-small coarse-background extension.
 >
 > [Review reproduction](checks/full_proof_next_reviews_replay_summary.json)
 > and [bridge/covariance reproduction](checks/full_proof_bridge_reviews_replay_summary.json)
@@ -249,19 +258,26 @@
 > covariance source preserved at its recorded commit, and separately bind the
 > corrected sources. These are coordinator reproductions, not another
 > independent mathematical review. Original failures and superseded evidence
-> remain preserved.
+> remain preserved. The [completed covariance-review replay](checks/full_proof_covariance_review_replay_summary.json)
+> adds three exact reproductions, excluding only the two declared UTC fields;
+> its [bindings](checks/full_proof_covariance_review_bindings.json) also preserve
+> the separate charged author packet. The root coordinator read both new
+> scientific notes and the complete covariance review. That reading and these
+> replays do not replace the pending independent charged-jet review.
 >
 > Concurrent Claude progress is retained: [HRP R2](REVIEW_HRP_R2.md) resolves
 > its earlier bounded coordinate-RP hold; [SOFTHARD review](REVIEW_SOFTHARD.md)
 > leaves four comparison-memo corrections open and recommends provisional
-> KEEP-SOFT. Neither supplies continuum existence or a physical mass threshold.
+> KEEP-SOFT. The newly recovered [reconstruction-library review](REVIEW_REC_LIB.md)
+> records conditional scalar lemmas but holds the packet for an arbitrary-direction
+> tensor-boost norm correction. Its central analytic-continuation producer
+> R-CONT remains open. None supplies continuum existence or a physical mass threshold.
 > The literature register now contains 35 explicitly scoped entries, with
 > primary-source coverage distinguished from complete proof certification.
 >
 > Both **full continuum existence and the physical continuum mass gap remain
 > OPEN**. No audit grade or whole-PR verdict is added at this checkpoint.
 >
-
 > **PROVENANCE WARNING (2026-10-28T22:11:08Z, lead now claude-opus-5-5).** Every Claude-authored result in sessions 24 and 25 — lead consolidation and all worker files, commits 811b8ed6de through 666a71b7b9 — was produced on **claude-opus-5**, not the owner-required model (Claude: Opus 5.5 at extra effort or higher; Codex: gpt-6-astra at max). The owner has ruled that work likely unreliable. **Treat every session-24/25 status, fix, flag, refutation and number in this file as PROVISIONAL** until the Opus 5.5 review sweep recorded in SESSION25_RESULTS.md §PROVENANCE has re-established it. The only session-24/25 checks run at an approved setting are the Codex gpt-6-astra/max reviews (`CODEX_REVIEW_*.md`). The tally is reported as 72 / 2 / 7 / 24 + 1 **pending** that sweep.
 
 > **[S26-BANKED] RESULTS CONFIRMED BY BOTH MODEL FAMILIES (2026-10-28T23:39:35Z).** Each item below was established or re-derived by Claude Opus 5.5 and independently checked by Codex gpt-6-astra (max). Exact statements are in the cited files; these lines are pointers, not restatements. They are lane-level results and do not move the 105-item tally.

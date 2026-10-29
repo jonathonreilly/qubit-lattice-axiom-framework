@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_soft_fluctuation_additional_01.py", line 41, in <module>
+    check('Haar_tilt_mean_'+str(t),0<c<1 and var>0 and abs(c-bessel)<2e-11,c=c,variance=var,bessel=bessel)
+TypeError: check() got multiple values for argument 'c'

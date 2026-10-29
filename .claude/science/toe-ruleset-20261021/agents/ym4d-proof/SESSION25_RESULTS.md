@@ -2558,7 +2558,7 @@ new drafts are not incorporated as established conclusions at this checkpoint.
 
 ### Reviewed producer checkpoint — 29 October 2026
 
-Four bounded units now have fresh independent reviews, including affected
+Five bounded units now have fresh independent reviews, including affected
 confirmation of the corrections. They do not complete either continuum target.
 
 - [Uniform soft minimizer](UNIFORM_SOFT_MINIMIZER_ASTRA.md):
@@ -2589,15 +2589,24 @@ confirmation of the corrections. They do not complete either continuum target.
   transfer and the global source bound remain missing. The full external
   RPM1 theorem is not certified, and the cone is not a positive mass gap.
 
-The [identity-background covariance construction](SOFT_FLUCTUATION_COVARIANCE_ASTRA.md)
-now supplies an explicit finite-u Gaussian reference, local tree measure,
-weighted inverse/square root and restricted-integral dictionary. Its chart
-radius and traceless principal-log domain were corrected during independent
-review; the final review packet is being frozen. General coarse backgrounds,
-the chart complement and interacting source activities are further work.
-A separate author is extending the full-colour stationary-jet construction,
-reusing the reviewed T-UNIF cubic estimate and retaining the forced
-second-order current and quartic exchange.
+- [Identity-background covariance construction](SOFT_FLUCTUATION_COVARIANCE_ASTRA.md):
+  [independent review](REVIEW_SOFT_FLUCTUATION_COVARIANCE_ASTRA.md) confirms
+  the explicit finite-u Gaussian reference, local tree measure, weighted
+  inverse/square root and restricted-integral dictionary after the
+  traceless principal-log chart repair. This is a reference Gaussian,
+  not the interacting covariance or a physical mass threshold. General
+  coarse backgrounds, the chart complement and interacting source
+  activities remain further work.
+
+The frozen [charged stationary-jet author unit](CHARGED_STATIONARY_JET_ASTRA.md)
+now gives the actual cubic source, completed quartic exchange and forced
+second-current transport, retaining covariant divergence and endpoint funnels.
+Its weighted claims are conditional on the named linear inputs and are under
+fresh independent review. The full-colour quartic estimate is reduced to
+CJ18, the bottom second-curvature estimate; CJ18 remains **OPEN**. Its author
+controls pass 40/40 and 19/19 predicates, with the original 36/37 diagnostic
+preserved. These samples do not prove a uniform theorem. Separate Astra/max
+work continues on CJ18 and the curvature-small coarse-background extension.
 
 [Review reproduction](checks/full_proof_next_reviews_replay_summary.json)
 and [bridge/covariance reproduction](checks/full_proof_bridge_reviews_replay_summary.json)
@@ -2606,12 +2615,20 @@ timing fields. They bind 174 frozen artifact records, with the original
 covariance source preserved at its recorded commit, and separately bind the
 corrected sources. These are coordinator reproductions, not another
 independent mathematical review. Original failures and superseded evidence
-remain preserved.
+remain preserved. The [completed covariance-review replay](checks/full_proof_covariance_review_replay_summary.json)
+adds three exact reproductions, excluding only the two declared UTC fields;
+its [bindings](checks/full_proof_covariance_review_bindings.json) also preserve
+the separate charged author packet. The root coordinator read both new
+scientific notes and the complete covariance review. That reading and these
+replays do not replace the pending independent charged-jet review.
 
 Concurrent Claude progress is retained: [HRP R2](REVIEW_HRP_R2.md) resolves
 its earlier bounded coordinate-RP hold; [SOFTHARD review](REVIEW_SOFTHARD.md)
 leaves four comparison-memo corrections open and recommends provisional
-KEEP-SOFT. Neither supplies continuum existence or a physical mass threshold.
+KEEP-SOFT. The newly recovered [reconstruction-library review](REVIEW_REC_LIB.md)
+records conditional scalar lemmas but holds the packet for an arbitrary-direction
+tensor-boost norm correction. Its central analytic-continuation producer
+R-CONT remains open. None supplies continuum existence or a physical mass threshold.
 The literature register now contains 35 explicitly scoped entries, with
 primary-source coverage distinguished from complete proof certification.
 

@@ -2039,3 +2039,7 @@ leaves H_int (heuristically only an observable-weighted decoupling estimate need
 :F²: 2-point 48(N²−1)/(π⁴|x|⁸), 4-point ≠ 0). **Owner-level definition flagged: what "not free" means (T_NF recommended;
 (NF-GFF) has no route; HINT2's ID♮ statement is a third target).** **Codex review launched (CODEX_REVIEW_NONFREE.md).
 Launched: TSE55** — (TS-e-up)/(TS-e-low).
+
+**UIR2_55 — died at the 128k output-token limit** (one oversized response; only its PRE-STATED block reached disk). Relaunched
+on Opus 5.5 max with a resume brief carrying the Codex UIR corrections, the F23 / Codex R3-R6 tree-jet route and the (R)
+result, and an explicit small-appends rule (now also in the shared worker brief).

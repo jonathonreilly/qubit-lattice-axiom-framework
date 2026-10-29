@@ -1,0 +1,52 @@
+{
+  "utc": "2026-10-29T20:27:09.892623+00:00",
+  "registration": "Before writing or executing new numerical code",
+  "actual_SU2": {
+    "L": 3,
+    "T": 3,
+    "varying_edge": [
+      [
+        1,
+        1,
+        0,
+        0
+      ],
+      0
+    ],
+    "coarse_links": "constant V0=exp(0.55 i sigma1), V1=exp(0.11 i sigma2), V2=V3=I; U0 crossing lift",
+    "generator": "unit quaternion axis of commutator V0 V1 V0^-1 V1^-1",
+    "u": 20,
+    "kappa": 1.3,
+    "complex_epsilon": [
+      0.02,
+      0.015
+    ],
+    "source": "only positive (0,1) plaquette at varying crossing edge",
+    "white_interval_radius": 1.25,
+    "precision_decimal_digits": 55,
+    "claims": [
+      "All 24*3^4=1944 paired paths at c=(0,0) equal V0 at zero; precisely 72 contain the varying edge, hence p=1/27. Other coarse paths touching the two endpoint blocks must contain it zero times.",
+      "Independent matrix products for six plaquettes agree with 5(1-cos a)+(1-q cos a+s sin a), at a=-.13,.07,.21, tolerance 2e-12.",
+      "Finite-u SU2 Haar one-link normalizer Bessel and direct group quadrature agree relatively within 1e-35 at a=0,.11 and the complex critical point.",
+      "Fixed real-domain integral equals complete fixed-reference Gaussian factorization within 1e-30 relative.",
+      "Moving source-critical contour logarithmic ratio equals normalized oriented flux within 1e-25 absolute.",
+      "Omitting source vacuum, source linear term, contour side, Haar density, or field-dependent normalizer must each produce discrepancy >1e-10 (state exact affected observable)."
+    ]
+  },
+  "algebraic": {
+    "claims": [
+      "Local derivative generating functions have nonnegative degree>=2 coefficients after exact linear cancellation, checked q=1,2,4 through degree7.",
+      "Scalar support marks root, background and covariance separately; omission controls strictly reduce a positive degree2 or3 coefficient.",
+      "Parametrix sign/order and full trace count checked on a finite noncommuting coefficient matrix, tolerance1e-12; remote coarse/source label omission rejected structurally.",
+      "Hard indicator at an actual SU2 plaquette threshold has sup-norm jump1 under arbitrarily small remote scalar response; no claim of an integrated lower bound."
+    ]
+  },
+  "geometry": {
+    "claims": [
+      "Constant noncommuting coarse holonomy gives ||I-P01||=2|sin(alpha) sin(beta)| and can be scaled to arbitrary prescribed positive curvature d, independent of T.",
+      "With delta_f=eta=d/(2*(L^2+4)), the necessary strong-good condition L^2 delta_f+4eta>=d fails by factor2.",
+      "Explicit sufficient sector margins use scalar-to-HS sqrt(N^2-1), all four plaquette factors, straight-path length L and optionally conservative P=5L."
+    ]
+  },
+  "interpretation": "Finite actual-model diagnostics plus proof-level inequalities; not verification of astronomical sufficient constants nor full conditional law, continuum theory, or hard complement suppression."
+}

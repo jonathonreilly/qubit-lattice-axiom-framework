@@ -1,0 +1,35 @@
+{
+  "recorded_utc": "2026-10-29T20:16:34.724780+00:00",
+  "claim_type": "bounded level-zero source-sector theorem, conditional on separately reviewed covariant background unit",
+  "preregistration_scope": "Before new unit implementation or scientific checks; earlier predecessor reads and the proposed proof route have occurred.",
+  "owned": [
+    "COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+    "checks/covariant_source_activity_*"
+  ],
+  "scope": "d=4 SU(N), fixed odd L>=3, T>=2, real u>=u_*, fixed positive kappa interval, arbitrary compatible coarse holonomies with explicitly small coarse curvature. Original Wilson coefficient sources only; kernel t=kappa*u fixed.",
+  "target": "Instantiate connected original-coarse-data/source atoms of the actual finite-u covariant critical branch and square root, then an exact source-local clustered white-coordinate sector contained in the actual strong-good event under a proved margin. Preserve hard-cut complement and actual history insertions.",
+  "dependencies": "Covariant source SHA87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74 provisional; identity, SOURCE_LOCAL_RETURN, SOURCE_LOCAL_RETURN_CONTINUATION, RECOVERY_CLUSTER, SOURCE_LOCAL_HISTORY_RETURN, SOURCE_SEA_CONSTRUCTION with exact hashes to be recorded. LIB1 not consumed unless precise repaired receipt received.",
+  "falsifiers": [
+    "Actual S4-prime word counts, including incoming links and periodic seam, disagree with claimed coarse reference or one-link conditional reduction.",
+    "A connected-atom construction drops a coarse coefficient, source, matrix endpoint, connector, colour or full support-incidence mark; operator decay alone does not count as the theorem.",
+    "Picard contraction uses fixed-volume IFT, assumes individual V links small, drops finite-u kernel normalizer or Haar, or fails to keep force O(deltaV) at complex original epsilon.",
+    "Selected cube claimed inside G despite failure of explicit fine-curvature or mismatch margins; strong G replaced by original interior-only cut; broad coarse class assumed to make G nonempty.",
+    "Actual normalized one-link source integral disagrees with exact fixed-reference/complex-contour identity including determinant, finite-u normalizer and Haar; a boundary-omission mutation survives.",
+    "Source critical branch or covariance is used to discard u*rho*deltaV^2 vacuum or sqrt(u)*rho*deltaV*p force, or contour estimates are used outside the canonical curvature window.",
+    "A zero-free selected sector is promoted to original full cut integral without a proved normalized complement estimate; correlated-history zero-freeness is assumed."
+  ],
+  "planned_distinct_checks": [
+    "Exact source/atom coefficient enumeration with marked support and determinant/source-label controls.",
+    "Actual noncommuting SU(2) local conditional model, all S4-prime transporter counts, finite-u one-link group normalizer and Haar. Fixed-reference quadrature and source-saddle contour flux by independent routes.",
+    "Centered/wrapping coarse constant holonomy example checking coarse-curvature necessary inequality and explicit cut margins.",
+    "Analytic all-order proof remains required; finite numerical diagnostics are not a uniform theorem."
+  ],
+  "success": "Coherent bounded lemma instantiating an existing conditional supplier and exact remaining hard-cut obstruction, with preserved failures, source/input/read manifest, versioned primary coverage, frozen receipt.",
+  "excluded": [
+    "all-history fixed-V sea mixing/logarithm",
+    "higher-level RG induction",
+    "continuum existence/OS reconstruction",
+    "physical mass gap",
+    "audit authority or Git publication"
+  ]
+}

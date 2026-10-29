@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-29T20:50:10.011397+00:00",
+  "scientific_results": [
+    {
+      "result": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_actual_attempt01.json",
+      "passed": 36,
+      "total": 36,
+      "exit_code": 0,
+      "stderr_empty": true
+    },
+    {
+      "result": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_atoms_attempt01.json",
+      "passed": 32,
+      "total": 32,
+      "exit_code": 0,
+      "stderr_empty": true
+    }
+  ],
+  "source_compile": "both sources compile without bytecode creation",
+  "local_links_existing_except_receipt_about_to_be_created": true,
+  "source_sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+  "no_scientific_failed_runs": true,
+  "thresholds": "All preregistered tolerances unchanged; no post-hoc numerical probe added.",
+  "claims": "Selected sector only; CB dependency independently LAND; current unit awaits fresh review."
+}

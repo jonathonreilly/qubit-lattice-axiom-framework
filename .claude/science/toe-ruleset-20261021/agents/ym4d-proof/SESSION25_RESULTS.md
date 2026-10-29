@@ -2558,7 +2558,7 @@ new drafts are not incorporated as established conclusions at this checkpoint.
 
 ### Reviewed producer checkpoint — 29 October 2026
 
-Eight bounded units now have fresh independent reviews, including affected
+The reviewed units below have fresh independent assessments, including affected
 confirmation of the corrections. They do not complete either continuum target.
 
 - [Uniform soft minimizer](UNIFORM_SOFT_MINIMIZER_ASTRA.md):
@@ -2637,6 +2637,24 @@ satisfy the hard good-event cuts. Fixed-V connected source activities,
 nonvanishing, all complementary histories and the full transform remain
 further work; a separate activity construction is in progress.
 
+Two new author units are frozen and undergoing separate hostile reviews.
+The [covariant source-activity construction](COVARIANT_SOURCE_ACTIVITY_ASTRA.md)
+proposes connected atoms in the original coarse data, a zero-free selected
+actual Haar sector under explicit curvature/cut margins, and normalized
+complex contour return. Its source vacuum, full determinant and exact
+complementary integrals remain explicit. Author diagnostics report 36/36
+and 32/32 finite predicates. The normalized complement and hard-history
+integration remain open; the next construction targets that interface.
+
+The [uniform one-loop construction](UNIFORM_ONE_LOOP_COUPLING_ASTRA.md)
+proposes a common analytic jet class and
+`|B_n-B_j-beta0*(n-j)*log L|<=2*C_FP` for every `0<=j<=n`, with each
+coefficient defined volume first. It retains neutral finite terms and the
+corrected bubble coefficient. Author controls report 24/24 predicates,
+including eight mutation detections. Neither set of finite checks certifies
+the uniform argument. Nonlinear finite-u flow, the full source transform
+and both continuum targets remain open.
+
 [Review reproduction](checks/full_proof_next_reviews_replay_summary.json)
 and [bridge/covariance reproduction](checks/full_proof_bridge_reviews_replay_summary.json)
 reproduce fourteen diagnostic invocations exactly apart from their declared
@@ -2651,26 +2669,38 @@ the separate charged author packet. The root coordinator read both new
 scientific notes and the complete covariance review. The subsequently completed charged-jet review and its separate reproduction
 are linked above; none of these coordinator replays adds another independent review.
 
-Concurrent Claude progress is retained: [HRP R2](REVIEW_HRP_R2.md) resolves
-its earlier bounded coordinate-RP hold; [SOFTHARD review](REVIEW_SOFTHARD.md)
-leaves four comparison-memo corrections open and recommends provisional
-KEEP-SOFT. The newly recovered [reconstruction-library review](REVIEW_REC_LIB.md)
-records conditional scalar lemmas and held the original packet for an
-arbitrary-direction tensor-boost norm correction. The [exact source fix](checks/full_proof_rec_tensor_fix.json)
-is now [independently confirmed](REVIEW_REC_TENSOR_FIX_ASTRA.md), resolving that
-constant alone. Its central analytic-continuation producer R-CONT, general
-abstract tensor bridge and actual unconditional moment inputs remain open.
-None supplies continuum existence or a physical mass threshold.
-The separately recovered [LIB1 review](REVIEW_LIB1.md) confirms the written
-fixed-mask saturation/counting implications, retaining the stronger-rate
-and bounded-hole conditions for its full-norm bound. Its original B1 HOLD
-is resolved by the [committed repair](LIB1_NORM_CONTROL_FIX.md) and
-[fresh affected review](REVIEW_LIB1_NORM_CONTROL_ASTRA.md). An independent
-set-based oracle confirms the shared full-norm computation and both exact
-witnesses; the original survivor is reproduced and three corrected selector
-mutations fail at the intended assertions. This is a scoped LAND for B1,
-not another whole-library review. Reference integration and source estimates
-for unrestricted histories are still open.
+Concurrent Claude progress is retained. [HRP R2](REVIEW_HRP_R2.md) resolves
+its bounded coordinate-RP hold. [SOFTHARD R2](REVIEW_SOFTHARD_R2.md) resolves
+the result crosswalk, cost classification and literature locator, but remains
+HOLD: its fixed-fibre ratio does not implement the adopted next-level return.
+Historical external-PDF byte verification is also explicitly incomplete.
+KEEP-SOFT remains provisional.
+
+The current [reconstruction-library R2](REVIEW_REC_LIB_R2.md) confirms the
+corrected tensor constant and conditional lemmas, with R-CONT, the general
+tensor dictionary, consumer edits, unconditional moments and physical decay
+still open. The earlier [coordinator tensor correction](checks/full_proof_rec_tensor_fix.json)
+and [affected review](REVIEW_REC_TENSOR_FIX_ASTRA.md) remain preserved against
+their earlier source revision; they are not restamped onto R2.
+
+The current [LIB1 R2](REVIEW_LIB1_R2.md) confirms the conditional finite-graph
+library and its separate v2 norm-control repair. The earlier
+[coordinator repair](LIB1_NORM_CONTROL_FIX.md) and
+[affected review](REVIEW_LIB1_NORM_CONTROL_ASTRA.md) are preserved at
+`fcdd32c83bc5aed08ef4f3aa5da512e668d8b216`. Current executable evidence uses
+`checks/lib1_check_v2.py`; `checks/lib1_check.py` is restored as the historical
+v1 input. Both repair histories resolve the ineffective norm control at their
+respective source identities. The current R2 also discloses the old validator's
+incidental REC_LIB hash drift. Bounded holes, the stronger input norm rate,
+reference integration and unrestricted-history source estimates remain
+separate requirements.
+
+The new [lattice Green-function library](LGF.md) has a
+[scoped independent LAND review](REVIEW_LGF.md): explicit infinite-lattice
+and finite-torus estimates, zero-mode accounting and the free curvature
+consumer. Its binding TSE55 convention, torus-order, image and status edits
+remain outstanding. No interacting H_int, continuum existence or physical
+mass threshold follows from the free library.
 The literature register now contains 36 explicitly scoped entries, with
 primary-source coverage distinguished from complete proof certification.
 

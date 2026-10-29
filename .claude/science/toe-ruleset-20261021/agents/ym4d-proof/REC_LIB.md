@@ -1242,16 +1242,19 @@ obligations; the conditional reconstruction does not discharge them.
 ## Open residue
 
 [R-fix 2026-10-29 REC-2] **R-CONT remains OPEN (binding review item 2).**
-Before claiming completed REC or ASSEMBLY55 N9, supply a proof from the
-printed E0′–E3, (Re), S_0=1 hypotheses that constructs the all-gap
-domains for the field products, proves compatibility on overlaps and
-domain exhaustion, and propagates the quantitative growth estimates
-through unbounded insertion degree. The proof must include all spatial
-variables and removal of smearing. The single-cut/bounded-chain result,
-the budgets in (6.2), a renamed analytic hypothesis, or access to a
-literature source does not discharge these steps. No such proof is
-supplied by this correction. This is an open residue already for one
-scalar; §18 remains an honestly conditional theorem.
+[REC_CONT.md](REC_CONT.md) supplies new author proofs of bounded tube
+convexification, local Hilbert-kernel lifting, a conditional finite-stage
+continuation with factorial estimates, and a conditional passage from
+polynomially bounded time continuation to the full spatial forward tube.
+It does not derive its quantitative analytic seed from the printed
+E0′–E3, (Re), S_0=1 hypotheses, or prove quantitative domain exhaustion.
+Its auxiliary seed constants are not established functions of s, alpha,
+beta. Those missing steps, including removal of Euclidean smearing, must
+be supplied before claiming completed REC or ASSEMBLY55 N9. The
+single-cut result, finite-stage estimates, or a literature citation do not
+close them. The residue remains open already for one scalar; §18 remains
+an honestly conditional theorem. Independent review of this continuation
+work is recorded in REC_CONT_LOG.md.
 
 | ID | Exact missing item | Scope / reopening evidence |
 |---|---|---|

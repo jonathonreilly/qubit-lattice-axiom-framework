@@ -1642,3 +1642,15 @@ only on level-l data; the per-level slice Γ_PL meets half by construction, the 
 is GSHARP55 §5.5's gap; **hard-scheme analogue: Balaban's axial-in-blocks gauge, CMP 99:75.** Outside 𝒞_glob: **(LOC-GA)**,
 a local-to-global step, open. 12 CONFIRMED / 4 NV / 1 REFUTED. Codex review launched (CODEX_REVIEW_BGT.md).
 **Launched on Opus 5.5: ALIGN55.md — (ALIGN-ℓ).**
+
+**TQ — `TQ55.md`** (claude-opus-5-5, max). **TQ NOT proven; reflection positivity cannot supply it.** TQ ⇔ Λ = 0 for the
+Wilson measure alone (shell-radius independent); sufficient: o(|x|⁻⁴) on one lattice annulus per scale (Codex's
+sampling repair built in). **Exact "rotlet" (check tq55_a):** a symmetric divergence-free |x|⁻⁴ tensor with non-zero
+rotation charge that also satisfies |ĉ| ≤ C/p² — conservation, symmetry and infrared bounds cannot force TQ. RP gives no
+rate; FSS Gaussian domination exists for Wilson only as a one-direction temporal chain. Cauchy-Schwarz reduction to
+(RA)/(RA-1) PROVEN. **New, PROVEN: RP rules out every reflection-odd order parameter (Lemma 2.3), so rotation-breaking
+order must align with the lattice axes.** TQ fails only through spontaneous breaking of rotations with gapless modes;
+nothing excludes that (Elitzur's argument is exactly ROTDEF's identity, whose leftover IS TQ). ROTDEF §8.2's "|x|⁻³"
+REFUTED (it is an |x|⁻⁴ stress tail). **Sphere route: no shell term, invariance survives even if TQ fails — now the
+leading route (PLAN_S26 §13).** Codex review launched (CODEX_REVIEW_TQ.md). **Launched on Opus 5.5: HINT2_55.md — the
+Yang-Mills side of the non-freeness witness.**

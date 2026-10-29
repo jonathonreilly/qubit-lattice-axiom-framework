@@ -316,3 +316,22 @@ both sides, where the window must be non-empty and magnitudes therefore decide. 
 (RLARGE_U55.md, running, is repairing it). Rule from here: magnitudes are irrelevant for one-sided bounds on later
 choices and **essential for every two-sided window**; the DAG must tag each window and each must be checked
 numerically. A cutoff-family edge n_♯ → SC_k was also missing from the graph.
+
+---
+
+## 13. The route to OS1 has a leader: the sphere (evidence, 2026-10-29)
+
+Three results converge (none yet fully cross-checked; Codex reviews running):
+- **Flat route needs a genuine infrared input** (TQ55): TQ ⇔ Λ = 0 for the Wilson measure; reflection positivity
+  cannot supply it (exact "rotlet" counterexample: a symmetric conserved |x|⁻⁴ stress tensor that satisfies an
+  infrared bound yet carries rotation charge). It fails exactly when rotations break spontaneously with gapless
+  modes — weaker than a gap, but an infrared problem nothing available excludes.
+- **Rotated-lattice universality is ultraviolet at fixed volume** (UNIV55, Proposition T); infrared information
+  enters only to remove a number-of-blocks factor, which the sphere at fixed R does not need.
+- **On S^4 rotations are exact global symmetries**: the Ward identity along a Killing field has no shell term, and
+  SO(5) invariance at every finite R survives R → ∞ **even if rotations break spontaneously in flat space** —
+  symmetry is imposed exactly, not selected.
+**So the sphere route is the leading route to the full theorem with no infrared input.** Its open items are
+ultraviolet: the construction and seam transparency (SPHERE55, running), universality's UV items N1-N5 / W0-W3,
+the large-field comparison, and the reflection positivity across the equator (banked). The flat route stays as
+the alternative; its single infrared input is now precisely named.

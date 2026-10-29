@@ -644,14 +644,15 @@ The recorded run completed with:
   bounded-hole full-norm inequalities;
 - 6,288 support instances on the 2×2×2×2 block torus, across 137 active
   sets; periodic duplicate neighbours correctly reduce its degree to 4;
-- four toy wrong outputs compared: dropping the inactive term, deleting
-  an inactive source, ignoring adjacent inactive components, and identifying
-  the active and full norms. The original active/full comparison did not
-  test the implementation substitution: [review B1](REVIEW_LIB1.md) showed
-  that this mutation survives. The [subsequent repair](LIB1_NORM_CONTROL_FIX.md)
-  connects exact witnesses to the actual full-output computation and records
-  separate corrected-baseline and mutant executions; affected confirmation
-  is pending.
+
+[R-fix 2026-10-29 B1] The original v1 coverage statement is retained
+verbatim below. Its interpretation as evidence that the full-output norm
+implementation rejects active-for-full substitution is withdrawn: the v1
+control compared separate powers of two, without testing that computation.
+
+> - four explicit wrong outputs distinguished: dropping the inactive term,
+>   deleting an inactive source, ignoring adjacent inactive components,
+>   and identifying the active and full norms.
 
 Maximum recorded RSS was 22,167,552 bytes. Across 15 resource samples,
 system-wide free memory was at least 60% and the largest load average was
@@ -664,6 +665,60 @@ Receipts: `checks/lib1_check_result.json`, `checks/lib1_check_stdout.txt`
 and `checks/lib1_check_stderr.txt`. These counts establish only the
 enumerated predicates. They supply neither an independent review nor
 experimental evidence for a cutoff limit or a physical gap.
+
+### [R-fix 2026-10-29 B1] Computation-linked full-norm control
+
+**B1 author repair: implemented and checked.** The updated acceptance
+criteria, `checks/lib1_criteria_v2.md`, were written before
+`checks/lib1_check_v2.py`. The frozen v1 criteria, scripts and outputs are
+unchanged. The v2 bounded-hole inequality and both new exact witnesses call
+the same `full_output_norm` function. Expected values are derived directly
+from the explicit supports, before the new implementation and run:
+
+- On the four-cycle with Λ={0} and one unit input at {0}, saturation gives
+  all four vertices. The input full norm is 2¹=2, every full output root
+  sum is 2⁴=16, and the active output norm is 2¹=2. The computed values
+  were **2, 16, 2**, respectively.
+- On the path 0–1–2 with Λ={0,2}, unit inputs at {0} and {2} saturate to
+  {0,1} and {1,2}. The full rooted sums are (4,8,4), with the unique maximum
+  at inactive vertex 1. The computed input full, output full and output
+  active norms were **2, 8, 2**. Restricting the full-norm roots to Λ would
+  incorrectly give 4.
+
+One sequential invocation ran the baseline once and each of two actual
+in-memory source mutants once. Each mutant changed only the shared
+function's return expression; the inequalities, witnesses, asserted
+constants and resource guards were unchanged. Each trial completed all
+2,184 bounded-hole comparisons before reaching the witnesses.
+
+| Trial | Observed outcome | Separate receipt under `checks/` |
+|---|---|---|
+| Corrected baseline | All finite predicates and both exact norm witnesses passed. | `lib1_check_v2_baseline_result.json` |
+| Active norm substituted for full norm | `AssertionError: four_cycle_full_output_norm_exact`; computed 2, expected 16. | `lib1_check_v2_active_for_full_result.json` |
+| Full weights with inactive roots omitted | `AssertionError: overlap_full_output_norm_exact`; computed 4, expected 8. | `lib1_check_v2_inactive_roots_result.json` |
+
+These are actual rejection outcomes for those two substitutions. The
+three inherited static wrong-output contrasts are labelled as such in v2;
+they are not claimed as additional implementation-mutation executions in
+this repair. The baseline retains the original finite enumeration counts.
+The exact mutation lines and distinct compiled-source hashes are in the
+receipts; the combined receipt is `checks/lib1_check_v2_result.json`, with
+matching `checks/lib1_check_v2_stdout.txt` and empty
+`checks/lib1_check_v2_stderr.txt`.
+
+Across 51 resource observations, maximum RSS was 26,656,768 bytes, minimum
+system-wide free memory was 60%, and the maximum load average was
+2.30078125. The invocation used `nice -n 10` (observed niceness 20), Python
+`-B`, all five thread variables set to 1, and no pools. The suite took
+1.3022756249993108 seconds and exited 0. Resource guards also ran after
+each expected assertion failure. No sandbox/resource step was blocked.
+
+**OPEN (review disposition):** the original reviewer has not confirmed
+this B1 repair; the author does not replace the recorded HOLD or claim
+LAND. No B1 implementation obligation remains unperformed in this author
+pass. These are same-author finite regression checks, not an independent
+review. The immutable PRE-STATED prefix, theorem, hypotheses and analytic
+residues in §12 are unchanged.
 
 ## 11. No-Go Discipline Gate — scope only, no exhausted-route claim
 

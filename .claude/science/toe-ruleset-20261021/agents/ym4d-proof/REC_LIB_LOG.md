@@ -221,3 +221,195 @@ showed the two new REC files alongside the pre-existing untracked lane
 artifacts. Only REC_LIB.md and this log were written by this author.
 No commits, pushes, PRs, audit/ledger files, axiom changes or producer-note
 edits were made. The work is an author artifact awaiting independent check.
+
+## Binding-review corrections — 2026-10-29
+
+This append-only author correction record applies only the four numbered
+items in REVIEW_REC_LIB.md's “Binding fixes and conditions on reuse”.
+IDs REC-1 through REC-4 correspond to review items 1 through 4.
+The original log above remains a historical receipt, including its now
+superseded assertion that the general complex-boost bound was checked.
+REC-1 below records the actual correction; no new review or audit verdict
+is assigned. The initial pre-stated prefix is unchanged.
+
+Entry source identities: REC_LIB.md 68974 bytes,
+SHA-256 `79e570f5c21c0ceceb4dc076fabb1e7ce696afa1bbd4630da036456d3de53b13`;
+REC_LIB_LOG.md 12761 bytes,
+SHA-256 `bc3c5f72ced6b0f609bb0767e49da85a5f6335568dff2a0636b360339b3aeaaf`;
+REVIEW_REC_LIB.md 27780 bytes,
+SHA-256 `bc3e0605118496656b9757a2ab8008b22a24880dda4a495206f7a10c67f6c286`.
+These match the review's two frozen author-artifact identities.
+
+HEAD remains `4f04b662f4d72d7ef269f6d9693ae9ff6424acf9`; fetched origin/main is
+`ca2bc7ddf64790da96cd43d42017d000fbfe4808`. The workhorse skill,
+SCIENCE_WORKFLOW.md and SKILL_FRESHNESS_CHECK.md at that revision match the
+read local copies. Used workhorse's pure-proof/change-validation path for
+this scoped author handoff. Planning instructions were read without
+checking out any planning file. No additional worker or independent
+review was launched.
+
+No checks/rec_* artifacts existed on entry. The repair is analytic and
+does not need a checker change; no script or numerical output is created
+or overwritten. Metadata, hashes and text comparisons are bookkeeping,
+not a scientific runner or numerical PASS. No BLAS/RSS execution receipt
+is claimed. No sandbox-blocked step occurred.
+
+### [R-fix 2026-10-29 REC-1]
+
+Replaced the false arbitrary-direction boost paragraph by a visibly superseded verbatim quotation and a proof of the direction-dependent and universal sqrt(3) bounds for real unit directions and real/complex rapidity. Added the affected tensor-theorem scope note in §18. Rechecked phase/reflection, real-rotation, tensor/direct-sum, coordinate-axis and inverse-boost factors analytically; no numerical checker was needed.
+
+Observed UTC: 2026-10-29T20:19:25.437082+00:00.
+
+REC_LIB.md stat after this edit (bytes are the observed stat size):
+
+```json
+{
+  "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REC_LIB.md",
+  "bytes": 71744,
+  "mode": "-rw-r--r--",
+  "inode": 453170412,
+  "mtime_ns": 1793305149121255466,
+  "ctime_ns": 1793305149121255466,
+  "birth_epoch": 1793298905.447666,
+  "sha256": "bb1e8e82bb54c927a0e59aaec2eb65145e51261a00f3c3fb6429419a4dbb501c",
+  "lines": 1268
+}
+```
+
+Unchanged first 5,169 bytes SHA-256: `8c90178454da5d5a19643cf615105d5aef6d4ebf2bde7650b64098602102809c`.
+
+REC_LIB_LOG.md stat immediately before appending this receipt:
+
+```json
+{
+  "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REC_LIB_LOG.md",
+  "bytes": 12761,
+  "mode": "-rw-r--r--",
+  "inode": 453170473,
+  "mtime_ns": 1793300789731734875,
+  "ctime_ns": 1793300789731734875,
+  "birth_epoch": 1793298967.7756832,
+  "sha256": "bc3c5f72ced6b0f609bb0767e49da85a5f6335568dff2a0636b360339b3aeaaf",
+  "lines": 223
+}
+```
+
+### [R-fix 2026-10-29 REC-2]
+
+Added the explicit review-item-2 R-CONT residue under Open residue: all-gap/product domains, overlap/exhaustion, growth at unbounded degree, spatial variables and desmearing. No R-CONT proof was supplied; REC/N9 completion remains OPEN and the assembled theorem remains conditional.
+
+Observed UTC: 2026-10-29T20:20:18.864369+00:00.
+
+REC_LIB.md stat after this edit (bytes are the observed stat size):
+
+```json
+{
+  "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REC_LIB.md",
+  "bytes": 72500,
+  "mode": "-rw-r--r--",
+  "inode": 453170412,
+  "mtime_ns": 1793305218812661554,
+  "ctime_ns": 1793305218812661554,
+  "birth_epoch": 1793298905.447666,
+  "sha256": "c97860a423b3c4a73f797da36d6f02bf7adbe7ecd2ad11acf34a9b1b5bbdad1f",
+  "lines": 1280
+}
+```
+
+Unchanged first 5,169 bytes SHA-256: `8c90178454da5d5a19643cf615105d5aef6d4ebf2bde7650b64098602102809c`.
+
+REC_LIB_LOG.md stat immediately before appending this receipt:
+
+```json
+{
+  "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REC_LIB_LOG.md",
+  "bytes": 15951,
+  "mode": "-rw-r--r--",
+  "inode": 453170473,
+  "mtime_ns": 1793305165437302457,
+  "ctime_ns": 1793305165437302457,
+  "birth_epoch": 1793298967.7756832,
+  "sha256": "72e5fcf944b462479c8abb59249a6099dfebb389ac14ba3b2dec403112f0fd54",
+  "lines": 295
+}
+```
+
+### [R-fix 2026-10-29 REC-3]
+
+Added an explicit R-CONSUMERS open-residue row and a marked qualification before the preserved OSLEAF55 fix list. Retained insertion count, separated REC(d), imported/open REC(e)/N9, S_0, (Re), absent E4, proper-orthochronous scope and explicit tensor dictionaries. Source-side consumer edits remain OPEN and outside the permitted files; R-TENSOR also remains OPEN.
+
+Observed UTC: 2026-10-29T20:20:18.927281+00:00.
+
+REC_LIB.md stat after this edit (bytes are the observed stat size):
+
+```json
+{
+  "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REC_LIB.md",
+  "bytes": 73790,
+  "mode": "-rw-r--r--",
+  "inode": 453170412,
+  "mtime_ns": 1793305218894301973,
+  "ctime_ns": 1793305218894301973,
+  "birth_epoch": 1793298905.447666,
+  "sha256": "519c6b27007bab8294db92ad716b3b5fe638ee413f32d8da8d2ac51abb177e02",
+  "lines": 1294
+}
+```
+
+Unchanged first 5,169 bytes SHA-256: `8c90178454da5d5a19643cf615105d5aef6d4ebf2bde7650b64098602102809c`.
+
+REC_LIB_LOG.md stat immediately before appending this receipt:
+
+```json
+{
+  "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REC_LIB_LOG.md",
+  "bytes": 17281,
+  "mode": "-rw-r--r--",
+  "inode": 453170473,
+  "mtime_ns": 1793305218864608184,
+  "ctime_ns": 1793305218864608184,
+  "birth_epoch": 1793298967.7756832,
+  "sha256": "466459b2c9045d322e745d79cccb12837c2936bb05640017d4e611215c2fd492",
+  "lines": 335
+}
+```
+
+### [R-fix 2026-10-29 REC-4]
+
+Added the binding growth and mass-gap consumer qualifications: Z=1, uniform unconditional b_0=p+2 input and the actual all-order/singleton cumulant premises; MG0's complete hierarchy and identified full H; MG1–MG4's actual dense-family decay, uniform positive physical rate, common limits and nonzero excited sector. No producer proof was added; R-SRC/R-MG remain OPEN.
+
+Observed UTC: 2026-10-29T20:20:18.984655+00:00.
+
+REC_LIB.md stat after this edit (bytes are the observed stat size):
+
+```json
+{
+  "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REC_LIB.md",
+  "bytes": 74755,
+  "mode": "-rw-r--r--",
+  "inode": 453170412,
+  "mtime_ns": 1793305218955490078,
+  "ctime_ns": 1793305218955490078,
+  "birth_epoch": 1793298905.447666,
+  "sha256": "3a0052652fd4146fd9803b069624ddc7a5357c1a90ff063875a8514a79ef6ae3",
+  "lines": 1310
+}
+```
+
+Unchanged first 5,169 bytes SHA-256: `8c90178454da5d5a19643cf615105d5aef6d4ebf2bde7650b64098602102809c`.
+
+REC_LIB_LOG.md stat immediately before appending this receipt:
+
+```json
+{
+  "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REC_LIB_LOG.md",
+  "bytes": 18694,
+  "mode": "-rw-r--r--",
+  "inode": 453170473,
+  "mtime_ns": 1793305218927458106,
+  "ctime_ns": 1793305218927458106,
+  "birth_epoch": 1793298967.7756832,
+  "sha256": "3109326d650907d522a0fec27806e794352e2314f2543dfb766a75018b299073",
+  "lines": 375
+}
+```

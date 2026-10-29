@@ -1,0 +1,251 @@
+{
+  "format": "author-freeze-receipt-v1",
+  "created_utc": "2026-10-29T18:57:21.136268+00:00",
+  "owner": "soft_fluctuation_covariance Astra/max",
+  "scope": "d=4 normalized paired S4-prime Wilson soft step; fixed V=I; local pinned block-tree chart; exact finite-u quadratic Gaussian reference",
+  "claim_status": "bounded-support; independent review pending",
+  "main_results": [
+    "exact Haar tree quotient with all root/harmonic modes accounted",
+    "exact finite-u spread and Haar Hessian correction",
+    "local path/counting proof of volume-uniform positive quadratic precision",
+    "weighted inverse and positive square root with complete periodic/coordinate/colour counts",
+    "exact restricted actual Haar integral over independent Gaussians, with full prefactors, original sources/cuts and complement retained"
+  ],
+  "proof_labels": [
+    "F2",
+    "F7-F9",
+    "F10-F18",
+    "F19-F22"
+  ],
+  "not_established": [
+    "interacting conditional covariance decay",
+    "arbitrary curvature-small coarse V or frozen exteriors",
+    "fixed-V full sea source logarithm/nonvanishing",
+    "chart-complement suppression",
+    "multilevel induction",
+    "full continuum YM existence",
+    "physical continuum mass gap"
+  ],
+  "novelty_scope": "actual finite-u local-tree density and measure dictionary; existing CT/PG/N5/RW mechanisms explicitly credited",
+  "input_manifest": "checks/soft_fluctuation_inputs.json",
+  "criteria": "checks/soft_fluctuation_criteria.md",
+  "primary_manifest": "checks/soft_fluctuation_primary_sources.json",
+  "executions": [
+    {
+      "command": [
+        "python3",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_check.py",
+        "--mode",
+        "all"
+      ],
+      "timeout_seconds": 600,
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_all_02.json",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_all_02.stderr",
+      "exit_code": 0,
+      "passed": 90,
+      "total": 90,
+      "elapsed_seconds": 17.19851854199078,
+      "python": "3.12.8",
+      "numpy": "2.4.1",
+      "scipy": "1.17.0",
+      "receipt_kind": "raw author diagnostic; not canonical runner-cache envelope",
+      "integrity_reads": []
+    },
+    {
+      "command": [
+        "python3",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_tree_group.py"
+      ],
+      "timeout_seconds": 120,
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_tree_group_02.json",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_tree_group_02.stderr",
+      "exit_code": 0,
+      "passed": 9,
+      "total": 9,
+      "elapsed_seconds": 0.5386986249941401,
+      "receipt_kind": "raw author diagnostic; not canonical runner-cache envelope",
+      "integrity_reads": []
+    }
+  ],
+  "preserved_failed_attempt": {
+    "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_check_attempt01.py",
+    "output": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_spectral_01.json",
+    "result": "38/39; fixed eigenvalue threshold misidentified exact bare rank at momentum1e-7",
+    "repair": "diagnose four numerically near-zero eigenvalues there; preserve exact root-gradient and positive soft-Hessian checks; no positivity threshold relaxed"
+  },
+  "other_preserved_failures": [
+    "initial primary-text form-feed parse failed; explicit PDF PAGE markers succeeded"
+  ],
+  "review_falsifiers": [
+    "actual S4 endpoint/order/weights",
+    "tree measure and coordinate counts",
+    "finite-u normalizer derivative and Haar coefficient",
+    "local chain fillings and multiplicity8",
+    "root and harmonic modes at long wavelength",
+    "periodic images and input/output/colour densities",
+    "determinant/vacuum/scaling/FP factors",
+    "coordinate cutoff versus repeated exponential preimages",
+    "connected activity/source/cut norm not inferred from Gaussian operator bounds"
+  ],
+  "checks_unique_final_total": 99,
+  "earlier_successful_runs_overlap_and_not_added": true,
+  "source_guards": [
+    "full-existence OPEN",
+    "physical-gap OPEN",
+    "original interior cut retained",
+    "all-fine-good reference not substituted",
+    "no coarse integration normalization invoked at fixedV",
+    "Gaussian covariance not interacting covariance"
+  ],
+  "vocabulary_lint": "0 files with violations",
+  "python_compile": "both final runnable scripts passed with cache prefix under /tmp",
+  "root_owned_integration": [
+    "canonical runner-cache",
+    "independent review",
+    "git/PR10114",
+    "shared summaries",
+    "audit"
+  ],
+  "files": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOFT_FLUCTUATION_COVARIANCE_ASTRA.md",
+      "sha256": "7b579f43ff7c04dd922f652c76cb3a1b9a4add3d64d0bf29d6abf0e04f038296",
+      "bytes": 29597
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_all_02.json",
+      "sha256": "73cd2a8ef4f5db16018c4355e646924d0ff345dcd84826d5fd4333d2d8d61b88",
+      "bytes": 15913
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_all_02.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_check.py",
+      "sha256": "1ff38b76aca0b46097d589432d058ede2abd2f8d06dfae15469702889867cc27",
+      "bytes": 20699
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_check_attempt01.py",
+      "sha256": "d4192db80609fe9c52e1aae0ee773d1c7d26d57b8ddc8b47307c79fe35430542",
+      "bytes": 20510
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_criteria.md",
+      "sha256": "5e94d3839275f7a2436bc9e77f13197771d8025140c8af3e612a9c0758e905dd",
+      "bytes": 4648
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_gaussian_01.json",
+      "sha256": "2910ed5952547c7efec0f7a1d61688a0d16e21f470fe031197a5286355927a1b",
+      "bytes": 1870
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_gaussian_01.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_geometry_01.json",
+      "sha256": "94ec36d43ffc707506901352261e64b56683be9fe6d32a599a527381c3f6cda4",
+      "bytes": 2320
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_geometry_01.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_inputs.json",
+      "sha256": "eb651a5f4aca52fbf5d8aafca41b7ee2a03be393d1ed0c06f367ac9f9b592d56",
+      "bytes": 10538
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_periodic_01.json",
+      "sha256": "a111a499389e1203e60bde46b3444f832552534758d5b6f3bcbd5d09c7fc1394",
+      "bytes": 1890
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_periodic_01.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_primary_sources.json",
+      "sha256": "56e8bcee3fe50124b05efcd9391a5116ebd965aed38de7ed137e9111541c6db4",
+      "bytes": 2893
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_prior_search.json",
+      "sha256": "488e9c91e10be71f96f1eee24d45d652692ef30d8aea0a611acd7d7074732b46",
+      "bytes": 1075
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_spectral_01.json",
+      "sha256": "127f89f28fd7d93ddce948ffa68bb66e21f141b280f19fabe5f446536ae7e266",
+      "bytes": 7478
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_spectral_01.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_spectral_02.json",
+      "sha256": "7e75e28726154b481f20bb9520179bad795cbab42fb23e1e7dc8d37955d0293b",
+      "bytes": 7683
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_spectral_02.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_su2_01.json",
+      "sha256": "77f0686684e8e2cd9af21e77f7fd637127d99491bbcc535d331d560e33565321",
+      "bytes": 4015
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_su2_01.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_tree_group.py",
+      "sha256": "4815deb9b3bb71483dfeec5fb55d67312dbb11e0823862ef8b0973e30593c19a",
+      "bytes": 4701
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_tree_group_01.json",
+      "sha256": "c8503a4be462edbf4847a0ec842a5d7b1007dd9286c4ddb2091993f3033dbacd",
+      "bytes": 1285
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_tree_group_01.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_tree_group_02.json",
+      "sha256": "503eef57f75af37c79e15c0fcc1d30394d2d98975517080ec03727f700d42492",
+      "bytes": 1518
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_tree_group_02.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_tree_group_attempt01.py",
+      "sha256": "f270422b6a99da7a8c20bd9c43855ad26bd292ca7d0af9740627f3d84c673209",
+      "bytes": 4435
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/soft_fluctuation_vocab_lint.txt",
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "bytes": 81
+    }
+  ]
+}

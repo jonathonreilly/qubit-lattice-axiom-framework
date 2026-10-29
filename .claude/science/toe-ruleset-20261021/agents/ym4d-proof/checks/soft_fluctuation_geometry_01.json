@@ -1,0 +1,107 @@
+{
+  "scope": "finite author diagnostics; all-volume theorem requires the written local proof",
+  "mode": "geometry",
+  "python": "3.12.8",
+  "numpy": "2.4.1",
+  "scipy": "1.17.0",
+  "elapsed_seconds": 0.45224099996266887,
+  "passed": 15,
+  "total": 15,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "tree_edge_and_free_coordinate_counts",
+      "pass": true,
+      "detail": {
+        "tree": 80,
+        "free": 244
+      }
+    },
+    {
+      "name": "all_7776_actual_contours",
+      "pass": true,
+      "detail": 7776
+    },
+    {
+      "name": "exact_contour_endpoints_and_integer_fillings",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "declared_path_length",
+      "pass": true,
+      "detail": 11
+    },
+    {
+      "name": "uniform_30L2_contour_filling_bound",
+      "pass": true,
+      "detail": 19
+    },
+    {
+      "name": "removed_plaquette_control",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact_internal_and_crossing_fillings",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "declared_internal_crossing_filling_bounds",
+      "pass": true,
+      "detail": {
+        "internal_max": 9,
+        "crossing_max": 15
+      }
+    },
+    {
+      "name": "actual_Qd_root_covariance_zero",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "curl_gradient_zero",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tree_gradient_unimodular_minor_zero",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "actual_Qd_root_covariance_generic",
+      "pass": true,
+      "detail": 9.856160834467555e-16
+    },
+    {
+      "name": "curl_gradient_generic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tree_gradient_unimodular_minor_generic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "missing_endpoint_leg_control",
+      "pass": true,
+      "detail": 0.9876543209876545
+    }
+  ],
+  "details": {
+    "geometry": {
+      "path_filling_max": 19,
+      "path_length_max": 11,
+      "free_per_block": 244,
+      "colour_density_SU2": 732,
+      "curvature_density_SU2": 1458
+    }
+  },
+  "external_scientific_inputs_read": [],
+  "integrity_reads": [],
+  "full_existence_established": false,
+  "physical_continuum_mass_gap_established": false
+}

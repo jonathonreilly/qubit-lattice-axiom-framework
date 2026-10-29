@@ -1,0 +1,19 @@
+G1 Bell B_n <= n! (n=1..80): PASS B_10=115975, 10!=3628800
+C1 false bound B_n <= (n-1)!: FIRED first failure n=2: B=2 > 1
+G2a prod_{i<=K}(1+1/i) = K+1 (K=1..400): PASS K=400 value 401
+G2b prod_{i<=K}(1+1/i^2) < 4 (K=1..400): PASS K=400 value in (1833/500, +1/1000)
+C2 false 'prod(1+1/i) <= 4 for all K<=400': FIRED 
+C2b false 'prod(1+1/i^2) < 3 for all K<=400': FIRED 
+G3 S^+(tau) <= Shat^-(d,L) on all samples: PASS max S^+/Shat^- = 108739/1000000 at d=4, L=7, tau=2
+C3 wrong bound L^4/(L^4-1) exceeded by a rigorous S^-: FIRED 
+G4a harmonic identity (Sum 1/c)^-1 = (u/4)(1-eps^2), 100 complex samples: PASS 
+G4b Lagrange minimiser exact and strictly below 1000 feasible perturbations: PASS 
+G4c size: (u/4)eps^2 > C_b/u at u=1000, eps=1/4, C_b=1000: PASS 125/8 > 1
+C4 'c_eff = u/4' at u=1, eps=1/4: FIRED c_eff=15/64
+G5 p_X=6+alpha, r_X=7, b_X=23/2, s=21, beta=123/2 (both routes): PASS 
+C5 (pre-registered, weak) claims s=20 and beta=61 rejected: FIRED computed s=21, beta=123/2
+C5b (informational, not pre-registered): G5 predicate with wrong (b,r)=(0,0) FAILS as it should
+G6 |eta(x)-eta(y)|^2 <= 4 zeta^2 min(1,|x-y|^2/lam^2) on 2000 pairs: PASS 
+C6 bound without the factor 2 fails somewhere: FIRED 
+gates: 9/9 pass; controls: 7/7 fired
+VERDICT: PASS

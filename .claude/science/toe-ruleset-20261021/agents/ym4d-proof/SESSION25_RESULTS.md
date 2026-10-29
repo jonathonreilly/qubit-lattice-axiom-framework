@@ -2111,3 +2111,13 @@ alone. REFUTED the brief's structure (the fine levels' one-loop source-source te
 the whole all-level bubble must be the leading term). Lemma V's mechanism gives 0 at separated points; a fixed source
 radius gives no AF envelope. **(PL-1L)'s core = SRCAN55's (LOC-e): one shared missing estimate.** **Codex review launched
 (CODEX_REVIEW_TSE.md). Launched: LOCE55** — the shared estimate (CAN-e) and a re-derivation of (LGF).
+
+**SRC2_55 — finished** (claude-opus-5-5, max). **(X1) — H_reg's single analytic input — proved in OSLEAF55's banked sufficient
+form, conditional on (Rep_m^𝒞) (the RG uniform over complex plane-dependent coupling fields; needs STEP55's CX, (B2),
+(I6^𝒞), (LF-src)) and (Flow-pos)** (constants: (SP_λ) b=1, p=2+α; (X1) p_X=6+α, r_X=7, b_X=23/2, c_*=4; E0′ s=21, β=123/2).
+Structural key: a coarse-field-INDEPENDENT frozen part + a bounded top part (Lemma MB: the RG gives this split exactly);
+the frozen first derivative cancels against centring — the singleton bound, bypassing SRC-poly's flaw. **Proposition NF:
+per-step control with the coupling as spectator gives log²(1/a) growth — (Flow-pos) and (I6^𝒞) must be on the critical
+path. Proposition HOM: SA-F's Cauchy argument fails for position-dependent couplings.** 6 inherited REFUTED (incl. SRC-poly
+for singletons; the sup-norm coupling ball; "OS0 needs large-field product moments" → (LF-src) at ONE level). **Codex review
+launched (CODEX_REVIEW_SRC2.md). Launched: FLOWPOS55** — (Flow-pos) for plane-dependent couplings (also the sphere's ML4).

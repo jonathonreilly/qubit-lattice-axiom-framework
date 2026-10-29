@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-10-29T23:01:45.861576+00:00",
+  "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_coupling_kernel_author_erase_weyl_scalar.py",
+  "sha256": "5e15591efff0d47ba318450181d0a676068e003f02eeff05a046d7dbee579462",
+  "substitution": [
+    "+1j*lam*np.sin(ang).sum(axis=0)/3",
+    "+0j*lam*np.sin(ang).sum(axis=0)/3"
+  ],
+  "plan_sha256": "cb5509a5a73119bc34da966a9b05443d2684b08e56150a71480cbb86c53b283e"
+}

@@ -1,0 +1,61 @@
+{
+  "utc": "2026-10-29T23:09:13.719649+00:00",
+  "source_sha256": "9c628d8499abe6e8d23113f008f6c78c182b9ca52fdb6f87a73394cc13c6e882",
+  "input_bindings_verified": 10,
+  "primary_pdf_bindings_verified": 3,
+  "links": [
+    {
+      "target": "COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "exists_or_planned_receipt": true
+    },
+    {
+      "target": "REVIEW_COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "exists_or_planned_receipt": true
+    },
+    {
+      "target": "COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "exists_or_planned_receipt": true
+    },
+    {
+      "target": "SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "exists_or_planned_receipt": true
+    },
+    {
+      "target": "RECOVERY_CLUSTER_ASTRA.md",
+      "exists_or_planned_receipt": true
+    },
+    {
+      "target": "checks/fixed_source_radius_numeric_plan.md",
+      "exists_or_planned_receipt": true
+    },
+    {
+      "target": "checks/fixed_source_radius_mixed_plan.md",
+      "exists_or_planned_receipt": true
+    },
+    {
+      "target": "checks/fixed_source_radius_read_manifest.json",
+      "exists_or_planned_receipt": true
+    },
+    {
+      "target": "checks/fixed_source_radius_receipt.json",
+      "exists_or_planned_receipt": true
+    }
+  ],
+  "predicates": [
+    54,
+    54
+  ],
+  "controls": 17,
+  "scientific_failures": [],
+  "resource_failures": [],
+  "scope_checks": [
+    "actual finite-u phase",
+    "fixed original-source radius",
+    "support-size reader norm",
+    "critical vacuum and complete determinant",
+    "z_p^dimension retained",
+    "internal tree gauge only; root and harmonic modes retained",
+    "both complementary integrals retained",
+    "no whole-transform/nonlinear-RG/continuum/physical-gap claim"
+  ]
+}

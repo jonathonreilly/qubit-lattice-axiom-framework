@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-10-29T23:19:19.559978+00:00",
+  "scope": "Bounded primary literature reading; no full-paper or full-proof certification",
+  "B40": {
+    "version": "0903.3585v1,20 March2009",
+    "url": "https://arxiv.org/html/0903.3585v1",
+    "coordinator_actual_read": "Abstract/introduction, Theorem2.3, standard Gaussian discussion, Theorem4.1 and local Morse/Stokes proof throughLemma4.3; HTML lines25-320 across bounded opens. Not the complete19-page paper.",
+    "author_and_reviewer_coverage": "Pinned in finite_coupling_kernel_read_manifest.json and review_finite_coupling_kernel_read_manifest.json.",
+    "role": "Method attribution only. Uniform constants, probability Haar, full determinant and Lebesgue Gaussian factor rebuilt locally."
+  },
+  "additional_packet_primary_coverage": {
+    "fixed_source_radius": "Author manifest records hep-th/9409094v1 sectionII pp3-6 andsectionV.E pp31-33, and1212.5562v2 AppendixF pp91-92. Coordinator read source discussion, not those complete primary loci again in this turn.",
+    "cut_sector_coercivity": "Author manifest records bounded original Balaban large-field return and Dimock localization passages. Coordinator read the complete local derivation and its literature comparison, not the entire original papers."
+  },
+  "reconstruction_retrieval_limit": {
+    "Osterwalder_Schrader_II": "ProjectEuclid PDF request returned service/security HTML, including ordinary curl; Springer PDF route redirected to subscription article metadata. No protection was bypassed and no primary proof text was obtained on this pass.",
+    "comparison": "Concurrent REC_CONT pass2 and its reviewers independently rebuilt the needed continuation argument. Their exact sources/read limits remain in their reports.",
+    "metadata_correction": "Publisher metadata identifies the OSII appendix as Stephen Summers; no claim of a Glaser-authored appendix is made."
+  },
+  "external_PDFs_committed": false,
+  "new_imported_premises": false
+}

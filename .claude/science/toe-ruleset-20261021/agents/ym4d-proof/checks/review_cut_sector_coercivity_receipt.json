@@ -1,0 +1,57 @@
+{
+  "author_receipt_pin": {
+    "bytes": 10863,
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/cut_sector_coercivity_receipt.json",
+    "sha256": "c1b64e10e94c7dedd0e73195f46e8235f83bbda6665d9a739626ae44eef6fcac"
+  },
+  "binding_findings": 0,
+  "created_utc": "2026-10-29T23:19:17.892935+00:00",
+  "evidence": "analytic reconstruction; no new numerical runs; identity verification only from scripts",
+  "format": "independent-source-review-freeze-v1; not a canonical integration or audit receipt",
+  "historical_proof_input": {
+    "commit": "9658cc870d82401001e56b29f351aec5f5f58fa1",
+    "future_front_status_edits": "do not restamp this historical read identity; coordinator may edit front status after review freeze",
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+    "sha256": "ae55788084e0946faa221743e7fe92419e4faef348f00b98aeceeced625e4b40"
+  },
+  "immutability": "Freeze all five owned artifacts plus this receipt. No automatic restamp. Receipt self-hash reported separately. Future coordinator front-status edits do not change the historical input identity.",
+  "independence": "same-family fresh context, non-author; Astra/max requested, serving backend not independently observable; reasoning frozen before author packaging inspection",
+  "methodology_snapshot": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "owned_files": [
+    {
+      "bytes": 12275,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "sha256": "e5bcf577dab1144c6ce4ac06f1b4558cc44951a7fb3e305199bb91f91736b76a"
+    },
+    {
+      "bytes": 15196,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cut_sector_coercivity_reasoning.md",
+      "sha256": "3782be34577149a8d0f32d937e864dacbb1405455976a2e3c80d28de36638611"
+    },
+    {
+      "bytes": 29303,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cut_sector_coercivity_identity_check.json",
+      "sha256": "6f2bb041b78264fd57d72f104aaf615fc8dc8b9a460d901965065eefe1021bc9"
+    },
+    {
+      "bytes": 33291,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cut_sector_coercivity_read_manifest.json",
+      "sha256": "844e1b25b3cbc7e648feb76aa59e69104cb2c6b708e3d782616ac9409b60f398"
+    },
+    {
+      "bytes": 3841,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cut_sector_coercivity_verification.json",
+      "sha256": "4b198f6a9a70f2e955b6150c5894e253ec1ae5e7a5dbea4da34a79c10273a24d"
+    }
+  ],
+  "review_passes": 1,
+  "scope": "Finite-volume original-law CS1-CS29 and explicitly conditional CS30-CS33 interfaces; no full complement, continuum or mass-gap verdict",
+  "scope_promotions": 0,
+  "source_fixes": 0,
+  "source_pin": {
+    "bytes": 32365,
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+    "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e"
+  },
+  "verdict": "LAND"
+}

@@ -1,0 +1,377 @@
+{
+  "created_utc": "2026-10-29T22:58:07.617782+00:00",
+  "exposure": "Same worker previously reviewed CC and read its checker after independently freezing those review checks. New CS source has no new mathematical checker or numerical results. No author independence from the previous CC review is claimed. Fresh independent review of this new author unit is pending.",
+  "external_primary_reads": [
+    {
+      "binary_downloaded": false,
+      "binary_hash_claimed": false,
+      "coverage": "Fresh primary scan, web extracted lines0-86 (printed355-356 and beginning357) and1707-1768 (tail387 through beginning389, connected localization/activity setup around1.90-1.94). Not the complete38-page paper.",
+      "title": "Tadeusz Balaban, Large Field Renormalization II: Localization, Exponentiation, and Bounds for the R Operation, CMP122 (1989)",
+      "url": "https://scispace.com/pdf/large-field-renormalization-ii-localization-exponentiation-h8b7ih93xo.pdf",
+      "use": "Motivates normalization and connected-region obligations. Hard-block minimizers, inductive densities and running-coupling assumptions are not identified with this original soft-cut law; no external theorem/constant inserted."
+    },
+    {
+      "binary_downloaded": false,
+      "binary_hash_claimed": false,
+      "coverage": "Fresh primary HTML lines1-85,114-131,1964-1983, including large-field penalty discussion and Lemma3.15 localization around covariance square roots. Prior CC AppendixF3090-3155 read is context only. Not the complete paper.",
+      "title": "J. Dimock, The Renormalization Group According to Balaban - II. Large Fields, arXiv1212.5562v2",
+      "url": "https://arxiv.org/html/1212.5562v2",
+      "use": "Scalar d=3 action penalty/coupling/support-localization distinctions; not an import of a hard Yang-Mills complement theorem."
+    }
+  ],
+  "methodology_revision_supplied_and_fetched": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "new_methodology_reads": [
+    {
+      "bytes": 9276,
+      "path": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md",
+      "read_coverage": "Full installed skill read for new author work; PROCESS_LIGHT and coordinator file boundary override generic branch/packaging tasks.",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4"
+    },
+    {
+      "bytes": 30709,
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "read_coverage": "Applicable full discovery/proof-search and empirical discriminator guidance, completed with300-434 after initial batch.",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+    },
+    {
+      "bytes": 16755,
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "read_coverage": "Full336-line claim/premise status reference.",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+    },
+    {
+      "bytes": 16454,
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "read_coverage": "Full, assembled from1-210 and211-309; coordinator owns publication/shared campaign records.",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+    },
+    {
+      "bytes": 5109,
+      "path": "docs/repo/REPO_ORGANIZATION.md",
+      "read_coverage": "Full current organization/navigation guidance; history is not scientific authority.",
+      "sha256": "8aac84c1de58048484fb95bd6ce00b2afa11e6d607c0978d807865398aee2b2c"
+    }
+  ],
+  "not_consumed": [
+    "SOFTHARD R3 actual hard construction (still OPEN)",
+    "Concurrent REC_CONT source/review as a CS premise",
+    "A global Gaussian replacement or selected-sector denominator",
+    "A main/audit retained verdict for this source"
+  ],
+  "predecessor_immutability": {
+    "author_artifacts_verified": 21,
+    "author_receipt": {
+      "bytes": 7584,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_receipt.json",
+      "sha256": "a9536686abb45d8f5fae790fd0c7685ce159a1a0f961cd8cdcd5145fb31d22d4"
+    },
+    "literature_register": "Author CC read snapshot282318... and the old review navigation/status distinction remain as frozen. No current literature-register status is a mathematical input to this CS unit.",
+    "prior_read_manifest": {
+      "bytes": 19257,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_read_manifest.json",
+      "sha256": "506699432302e54a2b322726dc5d984066e7ecdf0d8ff2c59325e75ea0e3be73"
+    },
+    "review_artifacts_verified": 29,
+    "review_receipt": {
+      "bytes": 26249,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_receipt.json",
+      "sha256": "75a01dfe36e64f83db7886528169cddac63bfd2e12258d40313b4504dc05e6bd"
+    }
+  },
+  "reused_methodology_reads": [
+    {
+      "bytes": 11788,
+      "entry_sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "read_coverage": "Read applicable reference; local bytes checked equal fetched main at entry.",
+      "reuse": "Already read in this same continuous worker session during the completed CC review; unchanged bytes verified. Preserve its stated partial/full coverage.",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "bytes": 2180,
+      "entry_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "read_coverage": "Read applicable reference; local bytes checked equal fetched main at entry.",
+      "reuse": "Already read in this same continuous worker session during the completed CC review; unchanged bytes verified. Preserve its stated partial/full coverage.",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "bytes": 24561,
+      "entry_sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "read_coverage": "Read applicable reference; local bytes checked equal fetched main at entry.",
+      "reuse": "Already read in this same continuous worker session during the completed CC review; unchanged bytes verified. Preserve its stated partial/full coverage.",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23"
+    },
+    {
+      "bytes": 5188,
+      "entry_sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "read_coverage": "Read applicable reference; local bytes checked equal fetched main at entry.",
+      "reuse": "Already read in this same continuous worker session during the completed CC review; unchanged bytes verified. Preserve its stated partial/full coverage.",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482"
+    },
+    {
+      "bytes": 12608,
+      "entry_sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "read_coverage": "Read initial scope plus full relevant original-review, frozen-input, per-unit and combined integration rules, including reread90-155. No canonical integration receipt or combined gate claimed.",
+      "reuse": "Already read in this same continuous worker session during the completed CC review; unchanged bytes verified. Preserve its stated partial/full coverage.",
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14"
+    },
+    {
+      "bytes": 12940,
+      "entry_sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "read_coverage": "Read applicable reference; local bytes checked equal fetched main at entry.",
+      "reuse": "Already read in this same continuous worker session during the completed CC review; unchanged bytes verified. Preserve its stated partial/full coverage.",
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85"
+    },
+    {
+      "bytes": 7554,
+      "entry_sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "read_coverage": "Read applicable reference; local bytes checked equal fetched main at entry.",
+      "reuse": "Already read in this same continuous worker session during the completed CC review; unchanged bytes verified. Preserve its stated partial/full coverage.",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e"
+    },
+    {
+      "bytes": 23216,
+      "entry_sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "read_coverage": "Read applicable reference; local bytes checked equal fetched main at entry.",
+      "reuse": "Already read in this same continuous worker session during the completed CC review; unchanged bytes verified. Preserve its stated partial/full coverage.",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7"
+    },
+    {
+      "bytes": 21536,
+      "entry_sha256": "42a24d3df296f01e4189eadd1ef8b92f316bd8d14229f14643641e39939d159e",
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "read_coverage": "Schema reference inspected in initial batch with truncation; no complete-schema reading or canonical receipt validation claimed. This is a source-review evidence receipt; canonical enrollment remains coordinator-owned.",
+      "reuse": "Already read in this same continuous worker session during the completed CC review; unchanged bytes verified. Preserve its stated partial/full coverage.",
+      "sha256": "42a24d3df296f01e4189eadd1ef8b92f316bd8d14229f14643641e39939d159e"
+    },
+    {
+      "bytes": 1118,
+      "path": "AGENTS.md",
+      "read_coverage": "Full applicable worktree instructions.",
+      "reuse": "Already read in this same continuous worker session during the completed CC review; unchanged bytes verified. Preserve its stated partial/full coverage.",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0"
+    },
+    {
+      "bytes": 11333,
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "read_coverage": "Full active axiom document; target is conditional model analysis, no primitive adoption.",
+      "reuse": "Already read in this same continuous worker session during the completed CC review; unchanged bytes verified. Preserve its stated partial/full coverage.",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "bytes": 6427,
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "read_coverage": "Full primitive-check methodology.",
+      "reuse": "Already read in this same continuous worker session during the completed CC review; unchanged bytes verified. Preserve its stated partial/full coverage.",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "bytes": 6416,
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "read_coverage": "Full premise-node registry; read-only.",
+      "reuse": "Already read in this same continuous worker session during the completed CC review; unchanged bytes verified. Preserve its stated partial/full coverage.",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "bytes": 11572,
+      "path": "docs/audit/data/premise_decision_history.json",
+      "read_coverage": "Full decision history; read-only.",
+      "reuse": "Already read in this same continuous worker session during the completed CC review; unchanged bytes verified. Preserve its stated partial/full coverage.",
+      "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113"
+    },
+    {
+      "bytes": 4975,
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "read_coverage": "Full applicable proof-search governance.",
+      "reuse": "Already read in this same continuous worker session during the completed CC review; unchanged bytes verified. Preserve its stated partial/full coverage.",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "bytes": 3694,
+      "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+      "read_coverage": "Full workflow; no shared queue writes.",
+      "reuse": "Already read in this same continuous worker session during the completed CC review; unchanged bytes verified. Preserve its stated partial/full coverage.",
+      "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf"
+    },
+    {
+      "bytes": 22309,
+      "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+      "read_coverage": "Lines1-85 current workflow/context; no queue-wide disposition.",
+      "reuse": "Already read in this same continuous worker session during the completed CC review; unchanged bytes verified. Preserve its stated partial/full coverage.",
+      "sha256": "4df23ed611d808e3dd28d2a14b5407a16c9eb4d2c632017666b9a240a78199ce"
+    },
+    {
+      "bytes": 10595,
+      "path": "docs/repo/DEFERRED_DECISIONS.md",
+      "read_coverage": "Lines1-85 plus visible86-205 context with some batch output truncation; no deferred adoption consumed.",
+      "reuse": "Already read in this same continuous worker session during the completed CC review; unchanged bytes verified. Preserve its stated partial/full coverage.",
+      "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e"
+    },
+    {
+      "bytes": 39977,
+      "path": "docs/repo/CONTROLLED_VOCABULARY.md",
+      "read_coverage": "Relevant initial naming rules and reread88-115; initial batch had partial truncation.",
+      "reuse": "Already read in this same continuous worker session during the completed CC review; unchanged bytes verified. Preserve its stated partial/full coverage.",
+      "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca"
+    },
+    {
+      "bytes": 109438,
+      "path": "docs/CANONICAL_HARNESS_INDEX.md",
+      "read_coverage": "Initial entries and bounded index context; no unrelated retained-lane theorem consumed.",
+      "reuse": "Already read in this same continuous worker session during the completed CC review; unchanged bytes verified. Preserve its stated partial/full coverage.",
+      "sha256": "f2665b763f69e4baef4648d15b517b2701d975a8131f4665703c40c07283782c"
+    },
+    {
+      "bytes": 35690,
+      "path": "docs/audit/README.md",
+      "read_coverage": "Lines1-100: audit boundaries; no verdict assigned.",
+      "reuse": "Already read in this same continuous worker session during the completed CC review; unchanged bytes verified. Preserve its stated partial/full coverage.",
+      "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f"
+    },
+    {
+      "bytes": 20680,
+      "path": "/Users/jonBridger/.codex/skills/review-loop/SKILL.md",
+      "read_coverage": "Full installed skill router; current-main methodology and PROCESS_LIGHT control task scope.",
+      "reuse": "Already read in this same continuous worker session during the completed CC review; unchanged bytes verified. Preserve its stated partial/full coverage.",
+      "sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879"
+    }
+  ],
+  "search_scope": {
+    "local": "Bounded rg statement searches in STEP55/NODEA/H/Sea/CB/CC and related lane notes before selecting this normalized producer; exact loci above. No matching original-law conditional cap comparison found in this inspected scope; no exhaustive novelty claim.",
+    "main": "One early authority fetch and read-only git grep at unchanged mainca2bc7... found no matched original-cut/soft-kernel coercivity or tail entry within searched docs/*.md and lane/*.md. No commit/push/branch/index operations.",
+    "navigation": "Narrow searches of lane registry/status board; no retained-value or audit standing imported."
+  },
+  "source": {
+    "bytes": 32365,
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+    "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e"
+  },
+  "source_inputs": [
+    {
+      "bytes": 1497,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "read_coverage": "Full, read again for this author assignment.",
+      "role": "governing_process",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab"
+    },
+    {
+      "bytes": 10531,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "read_coverage": "Full during prior CC review; unchanged input reused. Supplied model, not framework-axiom derivation.",
+      "role": "premise_boundary",
+      "sha256": "288aee552bf7c83b32d6b0cc1569a99053355544704021e52ddea522ca8ce50b"
+    },
+    {
+      "bytes": 787626,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "read_coverage": "Exact model definitions at1158-1218 and2214-2284, read during prior CC review; no whole-file certification.",
+      "role": "original_model_definition",
+      "sha256": "ae55788084e0946faa221743e7fe92419e4faef348f00b98aeceeced625e4b40"
+    },
+    {
+      "bytes": 28162,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_COMPLEMENT_ASTRA.md",
+      "read_coverage": "Complete527-line frozen source and own complete review during prior assignment. Rebuilt the cut-cap argument locally as CS17-CS20; other CC evidence is context, not tests of this unit.",
+      "role": "cut_cap_predecessor_rebuilt",
+      "sha256": "af4c8206ccc2ce86274e5f92643e28154abb010b7f413d5cf578035efb1eaa7b"
+    },
+    {
+      "bytes": 18450,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_COVARIANT_COMPLEMENT_ASTRA.md",
+      "read_coverage": "Complete own prior review, bounded LAND. Same author/reviewer identity disclosed; this is not independent review of the new CS source.",
+      "role": "predecessor_review_only",
+      "sha256": "721d32877285a05ae35aaabc635fa98d3098b7473c3f364d686d5ed29bcbc071"
+    },
+    {
+      "bytes": 28993,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "read_coverage": "Lines1-215 and410-490. Exact tree variables/reference/paired geometry and G-to-chart CB21-CB24, with supplied domain retained. No whole-source rereview.",
+      "role": "model_and_scoped_chart_input",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74"
+    },
+    {
+      "bytes": 17323,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "read_coverage": "Complete during CC review; unchanged. Only previously reviewed bounded background/chart scope is consumed.",
+      "role": "scoped_upstream_review",
+      "sha256": "3c39ed64cffd800bb930eda9ee8d7dbde20612e307cd90e512896f1aee34d549"
+    },
+    {
+      "bytes": 39217,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "read_coverage": "Lines1-316,337-375,508-635 across current reads and prior unchanged reads. Includes SA13-SA15 critical branch/row bound/actual fixed sector and SA32-SA33 complementary consumer. Remaining implementation/evidence not rereviewed.",
+      "role": "scoped_upstream_SA13_SA15_and_consumer",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54"
+    },
+    {
+      "bytes": 13623,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "read_coverage": "Complete review read, including its conditional/selected-sector limits. Its numerical claims were read as predecessor evidence and not rerun or adopted as new CS checks.",
+      "role": "scoped_upstream_review",
+      "sha256": "f18775b209aba8711f8ad42ff82432f127171b4b241987b295e6f76124964f35"
+    },
+    {
+      "bytes": 48847,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "read_coverage": "Complete mathematical source throughH28, lines1-730, during prior CC review; unchanged bytes reused. CS33 uses H24 only under its exact completion/source/u domain and full failure-reader exclusion.",
+      "role": "scoped_upstream_H24",
+      "sha256": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850"
+    },
+    {
+      "bytes": 21817,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "read_coverage": "Complete during prior CC review; unchanged. No broadened H24 domain or integrated return inferred.",
+      "role": "scoped_upstream_review",
+      "sha256": "a0205f0074b1e2a835eba453dae80ef7fb64b09aa792bd46e3d87aa3daf9b2d0"
+    },
+    {
+      "bytes": 23793,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md",
+      "read_coverage": "Lines1-365 during prior CC review; current exact205-239 and390-431. Integrated sea/chessboard inputs do not provide fixed-V normalization; no Sea tail theorem imported.",
+      "role": "prior_art_scope_comparison",
+      "sha256": "7154244cbfb476ee8ff5a97cb524d076beeba7493420da9b6a2fce8512550438"
+    },
+    {
+      "bytes": 94345,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "read_coverage": "Current115-278,544-574,656-697. Includes linear local charge proof, conditional nonlinear chart argument, pointwise mismatch price and overriding errata. No numerical outputs or banked BFT conclusion adopted.",
+      "role": "prior_art_scope_comparison",
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce"
+    },
+    {
+      "bytes": 46090,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_STEP.md",
+      "read_coverage": "Current24-57, relevant R7/R8 in130-215 (batch partly truncated after the relevant discussion), exact R12 at228-245. No complete-file review claimed.",
+      "role": "prior_art_scope_comparison",
+      "sha256": "32bab8cbc920447280b3da93a1754bf792509a115bbf8cfffc7101350fe64a0d"
+    },
+    {
+      "bytes": 81610,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NODEA55.md",
+      "read_coverage": "Initial1-170 orientation with a truncated early paragraph; actual SPEC/LT83-170 read. Fixed-volume Laplace context only; no uniform construction imported.",
+      "role": "prior_art_scope_comparison",
+      "sha256": "085a78bcae79fe5eb7599fbfa6e95a4d2f165442ed6d03656863da913e142ee7"
+    },
+    {
+      "bytes": 60917,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NODEA_RES55.md",
+      "read_coverage": "Current160-239,355-405,480-525. Tilt/Peierls requirements and open normalization, not numerical certificates or audit status.",
+      "role": "prior_art_scope_comparison",
+      "sha256": "3045e5d939fb8ff9b130326b8916d00185fd5a23177ad6f32687662ae0dfc76b"
+    },
+    {
+      "bytes": 134489,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RLARGE.md",
+      "read_coverage": "270-310 and880-925 from unchanged prior CC reads, plus bounded keyword searches. Pointwise/coarse-law tail context, not a fixed-V local normalization theorem.",
+      "role": "prior_art_scope_comparison",
+      "sha256": "4f3d2777bcd736ad6936946f6c072ebebd8fe2638839538ea0db28825f2438d2"
+    }
+  ]
+}

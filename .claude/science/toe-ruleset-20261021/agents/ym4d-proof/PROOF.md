@@ -394,24 +394,45 @@
 > marked-class separation and finite-cutoff/comparator results. The common
 > algebra, matched sequence, moment and sharp-time inputs remain explicit
 > obligations. Original e-only non-freeness and OWN-free are not discharged.
-> The literature register now contains 39 explicitly scoped entries, with
+> The literature register now contains 40 explicitly scoped entries, with
 > primary-source coverage distinguished from complete proof certification.
 >
-> The [finite-coupling kernel draft](FINITE_COUPLING_KERNEL_ASTRA.md) is now
-> [frozen](checks/finite_coupling_kernel_receipt.json), with fresh independent
-> Astra/max review active. It constructs a uniform O(1/u) analytic remainder
-> for the actual normalized SU(N) kernel after extraction of its tree phase,
-> probability Haar factor and full colour Hessian determinant. It retains the
-> scalar SU saddle constraint, actual S4-prime readers and the exact finite-u
-> spread term; the already counted one-loop determinant is not added twice.
-> The author reports 35/35 finite predicates, including five controls. The
-> 49-percent memory gate failure and a sign correction made before any
-> numerical execution remain recorded. This is a single-kernel author result;
-> it does not close the interacting RG remainder or integrated source return.
+> The [finite-coupling kernel](FINITE_COUPLING_KERNEL_ASTRA.md) now has a
+> [fresh independent scoped LAND review](REVIEW_FINITE_COUPLING_KERNEL_ASTRA.md).
+> It confirms a uniform O(1/u) analytic remainder for the actual normalized
+> SU(N) kernel, its mixed derivatives and the stated local preintegration
+> consequences. Probability Haar, the full colour determinant, the scalar SU
+> constraint and actual S4-prime readers remain. Its determinant is already
+> counted in the one-loop term. The independent 21/21 diagnostics preceded
+> author-code exposure; a later replay reproduced 35/35. Seven executable
+> mutations were detected, while deleting lambda from the author's Weyl phase
+> survived. That limitation is preserved and the independent derivative check
+> detects the omission. The original resource failure and pre-execution sign
+> amendment remain. This review does not close the interacting RG remainder.
 >
-> Other active Astra/max authors pursue the fixed source radius with bounded
-> nonlinear decorations and the original-law coercivity/tail estimate. Their
-> unfinished work is not an established conclusion.
+> The [fixed-source-radius author packet](FIXED_SOURCE_RADIUS_ASTRA.md) is
+> [frozen for fresh Astra/max review](checks/fixed_source_radius_receipt.json).
+> It proposes the actual selected Haar-sector logarithm at fixed positive rho
+> and growing p with sigma*p^3 small, retaining its shrinking coarse-curvature
+> window, critical vacuum, determinant and all contour ends. Author diagnostics
+> are 54/54 across two preregistered runs. The review is checking the full
+> Gaussian comparison's reader domain; no completed review is claimed yet.
+> Both complementary integrals and non-holomorphic histories remain untreated.
+>
+> The [local coercivity/tail construction](CUT_SECTOR_COERCIVITY_ASTRA.md) now
+> has a [fresh independent scoped LAND review](REVIEW_CUT_SECTOR_COERCIVITY_ASTRA.md).
+> CS1--CS29 supply original-law conditional tails with the actual local
+> normalizer, coarse-curvature and full exterior-reader costs. CS30--CS33 keep
+> their exact SA/CB/H hypotheses. No source repair was required. Absorbing the
+> boundary cost and retaining the white witness's location in a connected
+> complement remain separate obligations. Author and reviewer used analytic
+> proofs without new numerical experiments; the original packaging failure
+> and prior CC failures remain preserved.
+>
+> An Astra/max author is now pursuing the [interacting selected-core remainder](briefs_finite_coupling/AUTHOR_BRIEF_INTERACTING_CORE.md).
+> The [graded-complement brief](briefs_return/AUTHOR_BRIEF_GRADED_COMPLEMENT.md)
+> records the next proposed localization and boundary-payment task. Both briefs
+> are research plans, not established lemmas or full RG/complement results.
 >
 > Both **full continuum existence and the physical continuum mass gap remain
 > OPEN**. No audit grade or whole-PR verdict is added at this checkpoint.

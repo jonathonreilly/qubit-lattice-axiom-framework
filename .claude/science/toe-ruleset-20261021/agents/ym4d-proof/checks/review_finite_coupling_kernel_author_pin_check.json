@@ -1,0 +1,141 @@
+{
+  "receipt_artifact_pins": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_COUPLING_KERNEL_ASTRA.md",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_coupling_kernel_01.py",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_coupling_kernel_01_results.json",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_coupling_kernel_criteria.md",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_coupling_kernel_preexecution_amendment.json",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_coupling_kernel_read_manifest.json",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_coupling_kernel_run01_gate.json",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_coupling_kernel_run02_gate.json",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_coupling_kernel_run02_output.txt",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_coupling_kernel_run02_run.json",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_coupling_kernel_run02_stderr.txt",
+      "hash_matches": true,
+      "size_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_coupling_kernel_runner.py",
+      "hash_matches": true,
+      "size_matches": true
+    }
+  ],
+  "author_manifest_input_pins": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_STEP.md",
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOFT_FLUCTUATION_COVARIANCE_ASTRA.md",
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHARGED_STATIONARY_JET_ASTRA.md",
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_ONE_LOOP_COUPLING_ASTRA.md",
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_UNIFORM_ONE_LOOP_COUPLING_ASTRA.md",
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NODEA55.md",
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT_A.md",
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT_B.md",
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HINT2_55.md",
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LITERATURE_BRIDGES.md",
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_one_loop_read_manifest.json",
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_runner.py",
+      "matches": true
+    }
+  ],
+  "amendment": {
+    "old_criteria_hash_valid": true,
+    "new_criteria_hash_valid": true,
+    "old_program_reconstructs_exactly": true,
+    "new_program_hash_valid": true
+  },
+  "stdout_equals_results": true
+}

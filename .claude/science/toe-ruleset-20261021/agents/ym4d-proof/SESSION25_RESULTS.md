@@ -2060,3 +2060,9 @@ REC(a)-(d), lattice RP to the restricted limit, EXT sufficiency and the SP ⇒ T
 (conditional), the Z = 1 growth match to OS II, the trajectory arithmetic. Corrections: g_std = √(2N)·g_FLOW; SU(3) clover
 maximum 18; translation weight 1 + mu²; growth exponent s = max(11, q_X+6). Not banked: (X1)'s global minimality, any actual
 separation estimate. **H_reg now has exactly one analytic input: the separation estimate (X1)/(SP_λ) — SRC2_55's job.**
+
+**CX-ALIGN2** (`CODEX_REVIEW_ALIGN2.md`). Banked (conditional/proven as listed in PROOF.md): N1-L, restricted CONV-P, RED″,
+HD_log/FW_log at all orders, Λ_LP algebra, spline nesting + HB, β = 23/50, CW's obstruction at the constant representative.
+REFUTED: periodic spline constant cancellation (|M(1)| ≥ 1/153), the unrestricted source-infimum inference, a reversed chart
+conversion, CW's telescoping, the a2_55_lp B2 prediction. Most dangerous: full periodic (P2-tw)_log. Queued ALIGN3 (periodic
+repair, (P2-tw)_log, (AC)_log, source restriction, output conversions) for the next free slot.

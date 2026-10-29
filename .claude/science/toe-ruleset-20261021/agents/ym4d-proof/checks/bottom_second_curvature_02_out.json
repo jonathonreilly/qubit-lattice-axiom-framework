@@ -1,0 +1,446 @@
+{
+  "scope": "actual d4 L3 paired-S4' SU2 one-step source, st coefficient, counting inner products",
+  "geometry": {
+    "ell": 3,
+    "sites": 81,
+    "hidden_links": 324,
+    "root": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "gauge_scalar_dimension": 80,
+    "plaquettes": 486,
+    "soft_paths": 7776,
+    "per_coarse_link": 1944,
+    "max_soft_path_length": 11,
+    "kappa": 0.7
+  },
+  "checks": [
+    {
+      "name": "real_Qd_root",
+      "value": 2.0618208375719614e-15,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "real_linear_gauge",
+      "value": 1.6417496574638899e-15,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "real_linear_stationary",
+      "value": 5.258800698408419e-15,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "real_dd_zero",
+      "value": 5.3157923738477197e-17,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "real_cubic_source_gauge",
+      "value": 8.638017183961982e-16,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "real_second_stationary",
+      "value": 3.010552493859945e-15,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "real_current_from_cubic",
+      "value": 3.892744217603029e-16,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "real_Euler",
+      "value": 2.1503666074193544e-15,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "real_Bianchi",
+      "value": 8.314014037170801e-17,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "real_zero_alias_Hodge",
+      "value": 1.0625977817199899e-16,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "complex_Qd_root",
+      "value": 1.2619633398057983e-15,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "complex_linear_gauge",
+      "value": 1.4646661462549902e-15,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "complex_linear_stationary",
+      "value": 4.0144439811083495e-15,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "complex_dd_zero",
+      "value": 5.67191104647595e-17,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "complex_cubic_source_gauge",
+      "value": 1.1705226616672722e-15,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "complex_second_stationary",
+      "value": 4.010978000380291e-15,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "complex_current_from_cubic",
+      "value": 9.825028438643197e-15,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "complex_Euler",
+      "value": 2.4968940171353797e-15,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "complex_Bianchi",
+      "value": 6.258579931430153e-17,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "complex_zero_alias_Hodge",
+      "value": 2.222145023813242e-17,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "constant_Qd_root",
+      "value": 0.0,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "constant_linear_gauge",
+      "value": 1.6375789613221059e-15,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "constant_linear_stationary",
+      "value": 1.0099560077136971e-14,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "constant_dd_zero",
+      "value": 0.0,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "constant_cubic_source_gauge",
+      "value": 8.294496776660045e-16,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "constant_second_stationary",
+      "value": 1.232595164407831e-29,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "constant_current_from_cubic",
+      "value": 2.1200636827814692e-30,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "constant_Euler",
+      "value": 1.3047290728386897e-16,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "constant_Bianchi",
+      "value": 5.551115123125783e-17,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "constant_zero_alias_Hodge",
+      "value": 1.6799815574151177e-31,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "constant_paired_mean_B_zero",
+      "value": 4.8589062461024124e-15,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "constant_harmonic_retained",
+      "value": 5.551115123125783e-17,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "constant_g_zero_harmonic",
+      "value": 2.1912802922805882e-32,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "constant_noncommuting_harmonic_is_nonzero",
+      "value": 0.1422222222222158,
+      "threshold": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "complex_zero_Qd_root",
+      "value": 1.2619633398057983e-15,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "complex_zero_linear_gauge",
+      "value": 1.4646661462549902e-15,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "complex_zero_linear_stationary",
+      "value": 4.0144439811083495e-15,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "complex_zero_dd_zero",
+      "value": 4.7546059879812626e-17,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "complex_zero_cubic_source_gauge",
+      "value": 1.7349455063726962e-15,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "complex_zero_second_stationary",
+      "value": 8.209724703453061e-15,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "complex_zero_current_from_cubic",
+      "value": 1.0573463329761083e-15,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "complex_zero_Euler",
+      "value": 6.468160039423599e-15,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "complex_zero_Bianchi",
+      "value": 9.306674236831801e-17,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "complex_zero_zero_alias_Hodge",
+      "value": 1.8295143193101886e-17,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "complex_null_phi",
+      "value": 1.1519648082658485e-19,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "actual_source_complex_divisibility",
+      "value": 1.8302045551905897e-17,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "reject_missing_Wilson_DB_term",
+      "value": 0.00012961342703675182,
+      "threshold": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "reject_missing_Bianchi_source",
+      "value": 3.2290770416366187e-06,
+      "threshold": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "reject_missing_soft_DB_term",
+      "value": 3.606950131973122e-05,
+      "threshold": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "harmonic_Cauchy_actual_stationary_match",
+      "value": 8.44463540040103e-15,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Cauchy_recovers_retained_B_harmonic",
+      "value": 8.42381872244387e-15,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "two_input_complex_null_Cauchy_actual_stationary_match",
+      "value": 3.1704182310294716e-15,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "quadratic_Bianchi_of_exact_gradient",
+      "value": 7.105427357601002e-15,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "local_Bianchi_exact_quadratic_factorization",
+      "value": 1.4210854715202004e-14,
+      "threshold": 6.363361447583049e-08,
+      "passed": true
+    },
+    {
+      "name": "local_Bianchi_exact_quadratic_factorization",
+      "value": 6.106226635438361e-15,
+      "threshold": 4.727389440127011e-09,
+      "passed": true
+    },
+    {
+      "name": "local_Bianchi_exact_quadratic_factorization",
+      "value": 5.773159728050814e-15,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "reject_omitted_24_normalization",
+      "value": 7.078491255541412,
+      "threshold": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "reject_complex_Hermitian_transpose",
+      "value": 0.6144045878147374,
+      "threshold": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "analytic_negative_momentum_transpose",
+      "value": 4.336808689942018e-19,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "actual_Q_periodic_face",
+      "value": 7.55401865011711e-17,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "actual_linear_lift_periodic_face",
+      "value": 7.200419022730858e-16,
+      "threshold": 1e-09,
+      "passed": true
+    }
+  ],
+  "passed": 61,
+  "total": 61,
+  "records": [
+    {
+      "name": "real",
+      "Nlow_norm": 0.004869355196962348,
+      "Flow_norm": 0.07918838020307675,
+      "Bianchi_norm": 0.046305853102680546,
+      "current_norm": 0.36306679536596925,
+      "soft_B_norm": 0.6916783647530355
+    },
+    {
+      "name": "complex",
+      "Nlow_norm": 0.0014917199361130875,
+      "Flow_norm": 0.10422412557516898,
+      "Bianchi_norm": 0.037288318669135755,
+      "current_norm": 0.07739737260140307,
+      "soft_B_norm": 0.7191079376547006
+    },
+    {
+      "name": "constant",
+      "Nlow_norm": 1.6799815574151177e-31,
+      "Flow_norm": 0.1422222222222158,
+      "Bianchi_norm": 1.3600232051658168e-15,
+      "current_norm": 9.190179481619368e-17,
+      "soft_B_norm": 4.8589062461024124e-15
+    },
+    {
+      "name": "complex_zero",
+      "Nlow_norm": 1.8302045551905897e-17,
+      "Flow_norm": 0.08207894587228044,
+      "Bianchi_norm": 0.03841388653499192,
+      "current_norm": 0.5543997715312056,
+      "soft_B_norm": 0.5900360706955531,
+      "mutation_missing_soft_DB": 3.606950131973122e-05
+    }
+  ],
+  "cauchy": [
+    {
+      "name": "harmonic",
+      "rho": 0.06,
+      "nodes": 48,
+      "error": 8.44463540040103e-15,
+      "source_numerator_sup": 0.004716411297466827,
+      "quotient_norm": 1.2799999999999376,
+      "direct_curvature_norm": 0.1422222222222158
+    },
+    {
+      "name": "two_input_complex_null",
+      "rho": 0.06,
+      "nodes": 48,
+      "error": 3.1704182310294716e-15,
+      "source_numerator_sup": 0.0028706407483901305,
+      "quotient_norm": 0.6854446661746949,
+      "direct_curvature_norm": 0.07616051846385756
+    }
+  ],
+  "elapsed_seconds": 7.217893123626709
+}

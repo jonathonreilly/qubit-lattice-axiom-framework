@@ -1,0 +1,203 @@
+{
+  "schema": "scoped-independent-attempts-v1",
+  "environment": {
+    "python": "3.12.8",
+    "numpy": "2.4.1",
+    "scipy": "1.17.0",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "workdir": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "runs": [
+    {
+      "attempt": "n1_01",
+      "program": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_independent_initial.py",
+      "reproduction_argv": [
+        "python3",
+        "-B",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_independent_initial.py",
+        "--depth",
+        "1"
+      ],
+      "exit_code": 1,
+      "stdout": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_n1_01_out.json",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "read_coverage": "complete reviewer output",
+        "role": "raw run evidence"
+      },
+      "stderr": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_n1_01_err.txt",
+        "sha256": "4174c864ae60442029f40d13790dd44eb2842f91f38bb061334c35bfaa78bf0f",
+        "bytes": 1902,
+        "read_coverage": "complete",
+        "role": "raw run evidence"
+      },
+      "author_checker_exposed": false,
+      "predicates": null,
+      "elapsed_seconds": null,
+      "interpretation": "operational JSON int64 serialization failure; no final result emitted"
+    },
+    {
+      "attempt": "n1_02",
+      "program": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_independent.py",
+      "reproduction_argv": [
+        "python3",
+        "-B",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_independent.py",
+        "--depth",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_n1_02_out.json",
+        "sha256": "33d751fa2b04b151c4547434c55bafc44f3f994f752b7b004da63fb642807100",
+        "bytes": 6663,
+        "read_coverage": "complete reviewer output",
+        "role": "raw run evidence"
+      },
+      "stderr": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_n1_02_err.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "read_coverage": "complete",
+        "role": "raw run evidence"
+      },
+      "author_checker_exposed": false,
+      "predicates": {
+        "passed": 28,
+        "total": 28
+      },
+      "elapsed_seconds": 0.7863919734954834,
+      "interpretation": "finite floating-point controls only; no interval certificate"
+    },
+    {
+      "attempt": "n2_01",
+      "program": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_independent.py",
+      "reproduction_argv": [
+        "python3",
+        "-B",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_independent.py",
+        "--depth",
+        "2"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_n2_01_out.json",
+        "sha256": "6cb72382c3428e2810fd62ee62ea895960a0444ee929f549a314f959b5450a37",
+        "bytes": 7528,
+        "read_coverage": "complete reviewer output",
+        "role": "raw run evidence"
+      },
+      "stderr": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_n2_01_err.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "read_coverage": "complete",
+        "role": "raw run evidence"
+      },
+      "author_checker_exposed": false,
+      "predicates": {
+        "passed": 35,
+        "total": 35
+      },
+      "elapsed_seconds": 6.253345966339111,
+      "interpretation": "finite floating-point controls only; no interval certificate"
+    },
+    {
+      "attempt": "su3_01",
+      "program": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_su3.py",
+      "reproduction_argv": [
+        "python3",
+        "-B",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_su3.py"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_su3_01_out.json",
+        "sha256": "f6eb38abf747c9b4d7e1a87f5258b1d635e7abcfbc64649dfbd436f08013f5bb",
+        "bytes": 3153,
+        "read_coverage": "complete reviewer output",
+        "role": "raw run evidence"
+      },
+      "stderr": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_su3_01_err.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "read_coverage": "complete",
+        "role": "raw run evidence"
+      },
+      "author_checker_exposed": false,
+      "predicates": {
+        "passed": 15,
+        "total": 15
+      },
+      "elapsed_seconds": null,
+      "interpretation": "finite floating-point controls only; no interval certificate"
+    },
+    {
+      "attempt": "gauge_01",
+      "program": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_gauge.py",
+      "reproduction_argv": [
+        "python3",
+        "-B",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_gauge.py"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_gauge_01_out.json",
+        "sha256": "5118ad71a0a151ac3f3fc1554f2a8fd57b7750c5dbed95b7deb1fe4e16950296",
+        "bytes": 2299,
+        "read_coverage": "complete reviewer output",
+        "role": "raw run evidence"
+      },
+      "stderr": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_gauge_01_err.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "read_coverage": "complete",
+        "role": "raw run evidence"
+      },
+      "author_checker_exposed": true,
+      "predicates": {
+        "passed": 10,
+        "total": 10
+      },
+      "elapsed_seconds": null,
+      "interpretation": "finite floating-point controls only; no interval certificate"
+    }
+  ],
+  "sequence": [
+    "criteria written before independent code and before author-checker inspection; full source and coordinator summaries exposed",
+    "initial n1 operational serialization failure preserved",
+    "only shapes converted from NumPy ints to Python ints; formulas and tolerances unchanged",
+    "successful n1 retry and depth2",
+    "SU3 criteria then independent SU3 series run",
+    "author checkers, successful outputs, initial diff and failed detector inspected",
+    "post-exposure gauge/counting criteria then supplement run",
+    "source reconstruction and evidence/report freeze"
+  ],
+  "solver_change": "Moore-Penrose rectangular least-squares slice used instead of initially proposed gauge-completed solve; distinct from author CG implementation",
+  "author_runs_reexecuted": false,
+  "author_initial_failure": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_01_initial_out.json",
+    "passed": 36,
+    "total": 37,
+    "failed": "reject_constant_endpoint_mutation",
+    "value": 1.76506328985706e-18,
+    "required_gt": 0.0001,
+    "meaning": "ineffective detector on centered constant datum, not scientific counterexample"
+  },
+  "threshold_changes": [],
+  "scientific_failures": 0,
+  "unrun": [
+    "depth-two direct group quartic extrapolation",
+    "interval arithmetic certification",
+    "all-depth numerical sampling claimed as proof",
+    "CJ18 proof",
+    "full pipeline/strict lint/changed-evidence integration gate; coordinator scope"
+  ],
+  "notes": "Chronology recorded after the runs; this file is not represented as a pre-exposure freeze. Raw output files and tool-call sequence provide the attempt evidence."
+}

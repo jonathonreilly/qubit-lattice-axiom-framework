@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-10-29T20:11:51.515382+00:00",
+  "scope": "Preserve two unreviewed author freezes and newly recovered LIB1 HOLD alongside already completed scoped reviews.",
+  "base_revision": "f15a7ad33f90d3de8ef2f8b40cada95d009f60bd",
+  "changes": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "before_sha256": "5e7aa8119dfb7d29cc38e6f18d4dcc9fa08b6c0340d05907ece749de516728c8",
+      "after_sha256": "aed3699a78d91bece185601ee28d60d5258700f0a23b60c54b52db8da9355d03"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "before_sha256": "a4f027d8811a3341a5fde758f2a63488c258ad139613311938b0ce5bb358e389",
+      "after_sha256": "7066a0ff76c5b0f99ab197a1a711ccd1662ff01f0a5b35dafd276ff789097309"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "before_sha256": "a873f2163cd6b29d1c0931a1922d4c2b19ca13faec511d68204f9fa08c52b1b6",
+      "after_sha256": "c072e8623b295da90b3998c7ec33017f8b8b5c92f0e41fb0e144fb93a4f38262"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "before_sha256": "b46d6c9d0ca063de573933b4b285fdde4fd255dc1e2923ca6cf13bcfda13392c",
+      "after_sha256": "5e2ec3b59bc19312f10e091dd52466d58496bdbf07751b3e48bcf2cd060ce98e"
+    }
+  ],
+  "bottom_curvature_review": "PENDING",
+  "covariant_background_review": "PENDING",
+  "LIB1": "HOLD: evidence control B1; conditional mathematics separately reviewed",
+  "legacy_PROOF_body_unchanged": true,
+  "full_existence": "OPEN",
+  "physical_continuum_mass_gap": "OPEN"
+}

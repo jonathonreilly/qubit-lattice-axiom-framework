@@ -893,11 +893,15 @@ follows from the positive kernel, including its vacuum component.
 Quantitatively, ||J||_1=||C||_1=||C^−1||_1=1 in this basis.
 For an orthogonal four-dimensional R, ||R||_1≤2, so
 ||D_E(R)||_1≤2^r_max; on n slots the bound is 2^(r_max n).
-A boost of rapidity u has ||D_M||_1≤exp(r_max|u|), hence costs at most
-exp(r_max n|u|). This bound also holds for complex u: the vector boost
-generator has induced ℓ¹ norm one, and its exponential power series
-is bounded by exp(|u|). Spacetime chain-rule factors are
-still those of L-HILB. Component aggregation costs at most m^n as above.
+For a boost of real unit spatial direction v and real or complex rapidity u,
+the vector generator is K(v)=[[0,v^T],[v,0]], with induced norm
+||K(v)||_1=||v||_1≤sqrt(3). Its exponential power series therefore gives
+||exp(u K(v))||_1≤exp(||v||_1|u|). Induced ℓ¹ norms multiply for tensor
+products and take the maximum over direct sums, so
+||D_M||_1≤exp(r_max ||v||_1|u|) and the n-slot cost is at most
+exp(sqrt(3) r_max n|u|). For a coordinate-axis boost ||v||_1=1, recovering
+the sharper exp(r_max n|u|). Spacetime chain-rule factors are still those
+of L-HILB. Component aggregation costs at most m^n as above.
 These are explicit finite factors and introduce no unbounded label sum. ∎
 
 For symmetric/antisymmetric tensors one may retain the redundant full

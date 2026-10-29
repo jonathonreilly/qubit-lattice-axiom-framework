@@ -1,0 +1,15 @@
+{
+  "python_ast": "all reviewer scripts parse, including preserved initial script",
+  "removed_only_reviewer_pyc": true,
+  "local_markdown_missing_targets": [],
+  "absolute_local_markdown_targets": [],
+  "final_receipt_link": "reserved exact output, generated after this check",
+  "git_diff_check": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "trailing_whitespace_including_untracked": [],
+  "source_sha256": "85b91738993f09f7e40a49f4c957c164a684bf499185629a82775229f6437254",
+  "passed": true
+}

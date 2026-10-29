@@ -34,7 +34,7 @@ the methodology sources are unchanged from `6c269770273c3fe00de350d5a3c14cacb70c
 
 ### Reviewed producer checkpoint — 29 October 2026
 
-Five bounded units now have fresh independent reviews, including affected
+Six bounded units now have fresh independent reviews, including affected
 confirmation of the corrections. They do not complete either continuum target.
 
 - [Uniform soft minimizer](UNIFORM_SOFT_MINIMIZER_ASTRA.md):
@@ -74,15 +74,30 @@ confirmation of the corrections. They do not complete either continuum target.
   coarse backgrounds, the chart complement and interacting source
   activities remain further work.
 
-The frozen [charged stationary-jet author unit](CHARGED_STATIONARY_JET_ASTRA.md)
-now gives the actual cubic source, completed quartic exchange and forced
-second-current transport, retaining covariant divergence and endpoint funnels.
-Its weighted claims are conditional on the named linear inputs and are under
-fresh independent review. The full-colour quartic estimate is reduced to
-CJ18, the bottom second-curvature estimate; CJ18 remains **OPEN**. Its author
-controls pass 40/40 and 19/19 predicates, with the original 36/37 diagnostic
-preserved. These samples do not prove a uniform theorem. Separate Astra/max
-work continues on CJ18 and the curvature-small coarse-background extension.
+The [charged stationary-jet unit](CHARGED_STATIONARY_JET_ASTRA.md) now has a
+[complete independent review](REVIEW_CHARGED_STATIONARY_JET_ASTRA.md). It confirms
+the actual cubic and completed quartic identities, the weighted admissible
+linear lift and cubic bound, and the forced second-current transport retaining
+covariant divergence and endpoint funnels. These statements retain their named
+linear inputs and normalized-tree scope. The full-colour quartic estimate is
+conditional on CJ18, the bottom second-curvature estimate; CJ18 remains **OPEN**.
+The review's 28/28 one-step, 35/35 depth-two and 15/15 SU(3) controls, plus its
+explicitly post-exposure 10/10 gauge/counting supplement, all
+[reproduce exactly](checks/full_proof_charged_review_replay_summary.json)
+except two declared runtime fields. Author counts and the original 36/37
+ineffective diagnostic remain separately preserved.
+
+Two subsequent author units are frozen for fresh independent review:
+[bottom second curvature](BOTTOM_SECOND_CURVATURE_ASTRA.md) supplies a
+candidate proof of CJ18 and its conditional quartic consequence; the
+[covariant background construction](COVARIANT_SOFT_BACKGROUND_ASTRA.md)
+supplies a candidate finite-u local critical point and Gaussian reference
+for curvature-small coarse fields with holonomy. Their author controls
+report 137/137 and 49/49 plus two 16/16 geometry runs, respectively.
+These counts are finite diagnostics. Neither unit is yet independently
+confirmed. The smooth critical point need not satisfy the hard good-event
+cuts; fixed-V connected source activities and the full transform remain
+further work.
 
 [Review reproduction](checks/full_proof_next_reviews_replay_summary.json)
 and [bridge/covariance reproduction](checks/full_proof_bridge_reviews_replay_summary.json)
@@ -95,17 +110,25 @@ remain preserved. The [completed covariance-review replay](checks/full_proof_cov
 adds three exact reproductions, excluding only the two declared UTC fields;
 its [bindings](checks/full_proof_covariance_review_bindings.json) also preserve
 the separate charged author packet. The root coordinator read both new
-scientific notes and the complete covariance review. That reading and these
-replays do not replace the pending independent charged-jet review.
+scientific notes and the complete covariance review. The subsequently completed charged-jet review and its separate reproduction
+are linked above; none of these coordinator replays adds another independent review.
 
 Concurrent Claude progress is retained: [HRP R2](REVIEW_HRP_R2.md) resolves
 its earlier bounded coordinate-RP hold; [SOFTHARD review](REVIEW_SOFTHARD.md)
 leaves four comparison-memo corrections open and recommends provisional
 KEEP-SOFT. The newly recovered [reconstruction-library review](REVIEW_REC_LIB.md)
-records conditional scalar lemmas but holds the packet for an arbitrary-direction
-tensor-boost norm correction. Its central analytic-continuation producer
-R-CONT remains open. None supplies continuum existence or a physical mass threshold.
-The literature register now contains 35 explicitly scoped entries, with
+records conditional scalar lemmas and held the original packet for an
+arbitrary-direction tensor-boost norm correction. The [exact source fix](checks/full_proof_rec_tensor_fix.json)
+is now [independently confirmed](REVIEW_REC_TENSOR_FIX_ASTRA.md), resolving that
+constant alone. Its central analytic-continuation producer R-CONT, general
+abstract tensor bridge and actual unconditional moment inputs remain open.
+None supplies continuum existence or a physical mass threshold.
+The separately recovered [LIB1 review](REVIEW_LIB1.md) confirms the written
+fixed-mask saturation/counting implications, retaining the stronger-rate
+and bounded-hole conditions for its full-norm bound. The package remains
+on HOLD for an ineffective active/full-norm mutation control; reference
+integration and unrestricted-history source estimates are still open.
+The literature register now contains 36 explicitly scoped entries, with
 primary-source coverage distinguished from complete proof certification.
 
 Both **full continuum existence and the physical continuum mass gap remain

@@ -1,0 +1,190 @@
+{
+  "created_utc": "2026-10-29T20:00:17.177739+00:00",
+  "artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CHARGED_STATIONARY_JET_ASTRA.md",
+      "sha256": "f7e02d766c8885dceeeac8d2264784cdc65b85a771ae556efa5935d45236836d",
+      "bytes": 20208
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_attempts.json",
+      "sha256": "46afe0390dd9860586d5d91955a702cb815f2c548c2f4ef88d80a8eb9b3ad809",
+      "bytes": 8351
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_criteria.md",
+      "sha256": "2d0e12fea12629b8585c2138df06db2a41c42601b927d0cec812efba6d77e4cc",
+      "bytes": 3804
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_gauge.py",
+      "sha256": "b33b9e10f7087a94c5e2ebb6b208c7cc1f9866895f4587f9761538f1ece68878",
+      "bytes": 2141
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_gauge_01_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_gauge_01_out.json",
+      "sha256": "5118ad71a0a151ac3f3fc1554f2a8fd57b7750c5dbed95b7deb1fe4e16950296",
+      "bytes": 2299
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_gauge_criteria.md",
+      "sha256": "8e3a47179dbefde440a8bb139bc42484f9c23ab2c10f4c061caea675743223b1",
+      "bytes": 858
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_independent.py",
+      "sha256": "96a60bc9d11ca59c01fc480b59dab6aa9378ee3525043805cd9fd2928894117e",
+      "bytes": 18142
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_independent_initial.py",
+      "sha256": "084e05a0f7afc5bd6d11ab5e98f0100f08bd71fdbd1092c1fb93258c97fc76d6",
+      "bytes": 18132
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_mechanical.json",
+      "sha256": "057a1cd9378f28bbb2784b6d5d8566d501305dc1648206ddb459a830d684146f",
+      "bytes": 516
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_n1_01_err.txt",
+      "sha256": "4174c864ae60442029f40d13790dd44eb2842f91f38bb061334c35bfaa78bf0f",
+      "bytes": 1902
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_n1_01_out.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_n1_02_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_n1_02_out.json",
+      "sha256": "33d751fa2b04b151c4547434c55bafc44f3f994f752b7b004da63fb642807100",
+      "bytes": 6663
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_n2_01_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_n2_01_out.json",
+      "sha256": "6cb72382c3428e2810fd62ee62ea895960a0444ee929f549a314f959b5450a37",
+      "bytes": 7528
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_read_manifest.json",
+      "sha256": "dbeda38e3e0e858d74ad84a3d4d0469e464153a061de7eb0995f779b570fa88c",
+      "bytes": 22912
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_su3.py",
+      "sha256": "b4c36fde6a5ee2492af6e81f3bbb63ed645dbfe1d8e000905dee37409a9578e0",
+      "bytes": 4992
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_su3_01_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_su3_01_out.json",
+      "sha256": "f6eb38abf747c9b4d7e1a87f5258b1d635e7abcfbc64649dfbd436f08013f5bb",
+      "bytes": 3153
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_su3_criteria.md",
+      "sha256": "eafdab1047addefd3082705c497e15acd8ffa379e5e988edf0773dd035dc956b",
+      "bytes": 1480
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_charged_jet_receipt.json",
+      "sha256": "ad4226851b1b1d7b29e87f19c42c18a021fd8dd7afbfb5a85eeff5007120962d"
+    }
+  ],
+  "source_and_supporting_proof_inputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHARGED_STATIONARY_JET_ASTRA.md",
+      "sha256": "85b91738993f09f7e40a49f4c957c164a684bf499185629a82775229f6437254",
+      "bytes": 26289
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LINEAR_PACKAGE.md",
+      "sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad",
+      "bytes": 48089,
+      "read_coverage": "complete; truncated Lemma4.4 gap reread lines260-295",
+      "role": "load-bearing linear contracts"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF_session16_snapshot.md",
+      "sha256": "4f376e3a6dd22701218d61fbd06bad3ab83575a4bfe195914a3217df580b4b9f",
+      "bytes": 488224,
+      "read_coverage": "lines2380-2505,2649-2798,3230-3245; not the complete historical proof",
+      "role": "load-bearing unprimed strip and linear curvature proof"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_TUNIF2.md",
+      "sha256": "ade6e777ffe52b04464b0ff8a5fcd3a7eeebb800e0602ef64a47e4150fd703b8",
+      "bytes": 25897,
+      "read_coverage": "lines1-255",
+      "role": "load-bearing repaired periodic analytic primitive and norms"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW55_TUNIF.md",
+      "sha256": "29ca9187347301ba46f0b17fce4d2554b6c09382070095efa239be48e24cf891",
+      "bytes": 62347,
+      "read_coverage": "lines190-285",
+      "role": "load-bearing periodic repair and admissibility"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/TUNIF.md",
+      "sha256": "40b7dd3c41babc8ecd89789ebd2854206444310eaf47cb2820bc8f118ca0af7b",
+      "bytes": 55943,
+      "read_coverage": "lines245-360",
+      "role": "load-bearing TU0-TU3; consumed with repairs"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NQ_DEF.md",
+      "sha256": "3e87bfc8478d8d6dcf648cc01ee47b564a174622ee479ef1868e1d56c639a07c",
+      "bytes": 52899,
+      "read_coverage": "lines203-289",
+      "role": "load-bearing consecutive-level Q and endpoint identity"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NORMS.md",
+      "sha256": "3b2c9f90cde226286c24a7169ba217eea10a203bc468e5613d8854a748aa2bd7",
+      "bytes": 81173,
+      "read_coverage": "lines480-580",
+      "role": "load-bearing coefficientwise weighted norm accounting"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FLOW55.md",
+      "sha256": "56d2707f4b571585db26cf2a077dbaee57bc936c76821cdbc50710e4b36e9d25",
+      "bytes": 70208,
+      "read_coverage": "lines250-355",
+      "role": "load-bearing cubic norm reuse; nonlinear closure not certified"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "sha256": "203d4edbf97078d88fcb488f164e525d2671fe5a2a910c5f6e49f615e8f41bfe",
+      "bytes": 26860,
+      "read_coverage": "complete",
+      "role": "load-bearing linear estimates with u-stripped tree-phase boundary"
+    }
+  ],
+  "scope": "Frozen scoped reviewer packet and its explicitly identified load-bearing source files; historical shared-register hashes remain in their original receipts."
+}

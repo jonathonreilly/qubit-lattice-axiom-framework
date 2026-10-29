@@ -28,7 +28,11 @@ Only SOFTHARD.md, SOFTHARD_LOG.md, and checks/sh_* will be written; the supplied
 
 **ARGUED — verdict: KEEP-SOFT.** Keep the finite-stiffness S4′ blocking kernel, including the already separate NA-FP gauge treatment. This is a recommendation, not an alteration of decision 4. Hard blocking removes a genuine field-dependent single-link normaliser and the stochastic block mismatch. The inspected open literature does not supply the matching four-dimensional SU(N), history-uniform, source-dependent construction needed to turn those savings into a shorter full proof. A switch would also surrender the existing raw-integral smoothing theorem and require new constraint, action, source and seam interfaces. Neither route currently supplies existence and a physical mass gap.
 
-**ARGUED — decision test.** The single question that could reverse this recommendation is: **can the hard route produce one complete, uniformly controlled SU(N) return step on a punctured region, with its actual constrained measure, complex source domain and full denominator, and compose it through the required histories?** A matching theorem must specify the averaging map, gauge fixing, constrained background, Jacobians, indicators, collar and reference comparison; scalar/QED analogies or a bare constrained Hessian do not answer it. A constructive affirmative answer, together with the mixed-interface bounds in H2 below, would make bulk-hard/seam-soft worth reconsidering. The recommendation does not assume that this question has a negative answer.
+[R-fix 2026-10-29 B3] Original programme-level question, retained verbatim:
+
+> **ARGUED — decision test.** The single question that could reverse this recommendation is: **can the hard route produce one complete, uniformly controlled SU(N) return step on a punctured region, with its actual constrained measure, complex source domain and full denominator, and compose it through the required histories?** A matching theorem must specify the averaging map, gauge fixing, constrained background, Jacobians, indicators, collar and reference comparison; scalar/QED analogies or a bare constrained Hessian do not answer it. A constructive affirmative answer, together with the mixed-interface bounds in H2 below, would make bulk-hard/seam-soft worth reconsidering. The recommendation does not assume that this question has a negative answer.
+
+**ARGUED — decision test.** The decision-changing target is the OPEN contract HRT in §8.1: exhibit one member of its specified admissible map class and prove its full returned-ratio/source bound, history prices and iteration closure. H2 must also satisfy its separate collar clause. No existence of such a member or theorem is assumed, and no proof is claimed. The recommendation remains provisional; failure to have a proof is not a universal comparison of research costs.
 
 ## 1. Scope, provenance and claim convention
 
@@ -48,7 +52,11 @@ Only SOFTHARD.md, SOFTHARD_LOG.md, and checks/sh_* will be written; the supplied
 
 **QUOTED — L1.** J. Dimock, *The Renormalization Group According to Balaban — I. Small fields*, [arXiv:1108.1335v2](https://arxiv.org/pdf/1108.1335v2). **Scalar φ⁴ in d=3; its blocking is soft.** §2.1, p.4, (18)–(20) uses a Gaussian in Φ₁−QΦ₀ with a field-independent normalisation; “The positive constant a is arbitrary”. Appendix B, p.39, Theorem 27, (296)–(299), concerns local activities under an ultralocal probability measure. It is a general cluster template, not a verified instance for this gauge theory. The lane's corrected decay/smallness dependence, reviewed in REVIEW_S9_S10.md:110–224, must be retained. Hard blocking therefore has no exclusive ownership of this template.
 
-**QUOTED — L2.** Dimock, *… II. Large fields*, [arXiv:1212.5562v2](https://arxiv.org/pdf/1212.5562v2). **Scalar φ⁴3, again soft Gaussian blocking:** §1, p.2, (5), (8)–(12). §3.1, Theorem 3.1, pp.29–31, (201)–(222), gives the history representation. Remark 3, p.31, explicitly excludes the recycling R-operation from the construction: “This difficult step is not necessary for this model.” This is not an open proof of Balaban's non-abelian large-field return operation.
+[R-fix 2026-10-29 B4] Superseded locator, retained verbatim:
+
+> **QUOTED — L2.** Dimock, *… II. Large fields*, [arXiv:1212.5562v2](https://arxiv.org/pdf/1212.5562v2). **Scalar φ⁴3, again soft Gaussian blocking:** §1, p.2, (5), (8)–(12). §3.1, Theorem 3.1, pp.29–31, (201)–(222), gives the history representation. Remark 3, p.31, explicitly excludes the recycling R-operation from the construction: “This difficult step is not necessary for this model.” This is not an open proof of Balaban's non-abelian large-field return operation.
+
+**QUOTED — L2.** Dimock, *… II. Large fields*, [arXiv:1212.5562v2](https://arxiv.org/pdf/1212.5562v2). **Scalar φ⁴3, again soft Gaussian blocking:** §1, p.2, (5), (8)–(12). §3.3, pp.28–31, (201)–(222) (section heading and (201)–(202) on p.28; Theorem 3.1 begins on p.29), gives the history representation. Remark 3, p.31, explicitly excludes the recycling R-operation from the construction: “This difficult step is not necessary for this model.” This is not an open proof of Balaban's non-abelian large-field return operation.
 
 **QUOTED — L3.** Dimock, *… III. Convergence*, [arXiv:1304.0705v1](https://arxiv.org/pdf/1304.0705v1). **Scalar φ⁴3.** §3.3, pp.23–27, Lemmas 11–13, statements (155), (160), (166), extract large-field prices. Appendix C, pp.35–36, Lemma 20, (246)–(253), bounds coarse energy by fine gradient, mass and mismatch energy with Neumann boundaries. Theorem 2 and Corollary 1, p.33, (221)–(225), conclude partition-function stability. The correlation-function remark says “The analysis can be adapted to treat correlation functions as well.” It is not a source-uniform OS or mass-gap theorem.
 
@@ -104,129 +112,175 @@ Its κ→∞ limit is the covariance of the quadratic form restricted to ker Q, 
 
 completing the square changes b to b+ξ/κ and adds −ξ*b−‖ξ‖²/(2κ). Thus top-range sources and residual degrees of freedom really do simplify under a hard constraint. This argument assumes an invertible finite chart; it proves no uniform constrained Green-function, boundary, nonlinear gauge or source-norm estimate. In particular, the finite-κ calibration window is not a certificate at κ=∞.
 
-## 4. Ledger of costs: what softness creates, enlarges, or merely accompanies
+## 4. Differential soft costs and separate common/interface work
 
-**ARGUED — how to read replacements.** Each L-number below incorporates the exact quotation and section/equation locator in §2; those quotations are printed once to avoid repetitive excerpting. Where no matching hard theorem is available, the entry says so explicitly. “Removed” concerns the named term or obligation, never the entire downstream theorem. The distinction between finite softness, the S4′ averaging map, the gauge choice and generic Yang–Mills difficulties is part of each entry.
+[R-fix 2026-10-29 B2] **ARGUED — operative attribution.** The following two registers supersede the old mixed C1–C15 classification, which is quoted in §4.3 in full. Only §4.1 is the soft-cost ledger. Shared obligations and Q/gauge/interface work are in §4.2 with zero automatic switch savings. This is a qualitative comparison of terms and proof instances, not a sum of independent workloads. Repeated appearances of the same normalizer, residual or source term are cross-references, not additional costs. The original quotations, repairs, replacement mechanisms and literature limits remain applicable.
 
-### C1. Field-dependent kernel normalisation and the wrong stationary action
+### 4.1 Soft-specific increments
 
-**QUOTED.** STEP55.md:247: “S_eff(U; V) := −log ρ_k(U) + Σ_c[t_kψ_{M̄_c(U)}(V_c) + log 𝒩̃_{t_k}(M̄_c(U))] + const(V).” CODEX_REVIEW_LARGE.md:29: “The last term depends on U.” CODEX_REVIEW_STEP.md:315 confirms single-normaliser zero-freeness and the bounded centred Hessian, for complex fields and **real t>0**.
+| Source item | Increment attributable to this finite soft kernel | What exact hard matching removes; replacement cost |
+|---|---|---|
+| C1; soft part of C2 | Fine-field-dependent single-link normalizers and their stationary-action/derivative contributions. | Remove these particular factors. The repaired real-t local theorem remains credited; full complex-coupling/history application remains open. Coarea/FP and the full returned ratio move to common row CW1. No second charge for Den_Y. |
+| C3 | Stochastic mismatch between V and the chosen group-valued block map, together with its MIS price. | Exact equality deletes this event for that map. Map completion and fine-good ⇒ coarse-good are CW2, not deleted. |
+| C4 | Finite-penalty residual fields, residual source slots and the resulting additional chain estimates. | These slots simplify or vanish under exact matching; constrained background/inverse regularity is CW3. The reviewed flat exponential-locality result is already available and is not an unresolved soft failure. |
+| C5, residual part only | The residual-sum term in the root-funnel identity. | It vanishes for an exactly following chain with the same Q. The first two funnel terms and root representation are MI1. |
+| C6, residual/source part only | Additional residual-source transport and finite-soft Hessian/source terms entering the alignment comparison. | Rebuild the hard response on its tangent space. The actual S_E alignment failure and source-norm/chart conversion are MI2; no generic alignment failure is charged to softness. |
+| C7 | Comparing stochastic V coordinates to a separately prescribed deterministic observable map. | Eliminate this comparison only if the hard B equals that observable map at every required level and on its full domain. OS/source matching beyond that equality is CW8. |
+| C8 | Finite stiffness tuning and the present soft operator's κ-dependent calibration and raw complex envelopes. | Replace by a constrained gap and fibre/source analytic domain, not the old constants at κ=∞. Cluster decay thresholds remain CW4. |
+| C9, auxiliary part only | Extra random coarse variables, soft mismatch events and their observed-cone/conditioning contributions. | Replace these kernel-specific terms; do not delete normalized histories, references, collar or failed-return pricing (CW4). |
+| C11, normalizer part only | The field-dependent N_t ratio in the tilted soft density. | This ratio disappears; constraint curvature, conditional convexity and other determinant/reference ratios remain CW6. This is the C1 normalizer in another consumer, not another independent subtotal. |
+| C12, extra action terms only | Finite-penalty and centered/uncentered soft-exponent terms in the action dictionary. | Remove or replace those terms. Critical value versus minimum versus quantum density remains CW7. |
+| C13, changed calculations only | Actual soft propagators, normalizer/block vertices, auxiliary determinants and finite-κ background jets. | Recompute on the constrained tangent and measure. The paid-for conditional uniform cubic NQ-1/T-UNIF/N1-15 result is item I1 below; its generic mathematics survives, its soft instance does not certify a hard jet. Renormalized flow itself is CW8. |
 
-**ARGUED — attribution and price.** This is a genuine cost of the present finite soft kernel with nonunitary mean: it adds stationary-point, derivative, determinant and coupling/source bookkeeping. The omitted term is now corrected, and its local real-t estimate is recently closed; a uniform complex-local-coupling and full-history application is still OPEN. It must not be priced as an entirely unresolved single-link theorem.
+### 4.2 Common work, map/representation and gauge interfaces
 
-**ARGUED — hard replacement.** P1 removes N_t exactly, but P3 replaces smooth full-space integration by a constrained measure, coarea/FP factors and its stationary-point problem. L4 §3.5 (75)–(84) and L6 §1 (4) are open abelian implementations; L1 §2.1 (18)–(20) has a constant normaliser but is scalar **soft** blocking. **Availability: abelian/scalar mechanisms; matching 4D non-abelian construction not located.**
+[R-fix 2026-10-29 B2] **ARGUED — zero automatic switch savings.** This register is outside the soft-cost subtotal. A hard construction can solve one of these obligations, but normalization alone does not do so.
 
-### C2. The returned denominator and the lost full-prefactor bound
+| ID / original items | Common or interface obligation retained under both choices |
+|---|---|
+| CW1 / C2 | The complete returned numerator/reference denominator, zero-free source domain and full-factor identity, with all cuts, action vacua, determinants, Haar/FP/coarea factors and history conditioning. Raw smoothing bounds neither quotient. Credit the generic cluster repair and the reviewed selected-sector returns at their stated scope. |
+| CW2 / C3 | An everywhere group-valued map, admissibility propagation, singular/large-field branches, symmetry and the exact observable dictionary. Arithmetic-mean degeneracy is a map issue; a Dirac symbol does not resolve it. |
+| CW3 / C4 | Nonlinear constrained/background regularity, uniform inverse and differentiated critical map on the actual curved and punctured domains. Flat soft locality is useful existing work; it neither closes nor disproves this shared nonlinear obligation. |
+| MI1 / C5 | Q-specific funnel/pinning terms and the representative/norm choice. Same-Q hardening removes only the residual term assigned to §4.1. Preserve CODEX_REVIEW_C2's withdrawal of mandatory CC-0 and its whole-response cancellations. |
+| MI2 / C6 | The specified S_E alignment/source interface, regular versus axial gauge, log-chart transfer and weighted/global conversion. The recovered periodic and restricted-source statements remain credited; generic covariant NC(log) is still open. No all-soft-gauges obstruction is asserted. |
+| CW4 / C8–C9 | History/reference comparisons, holes, source-conditioned cones, boundary overlap, failed returns, actual cluster atoms and the polymer smallness/entropy budget. PP/COL cancellation is available only on its stated read sets; no blanket deletion of large-field pricing. |
+| CW5 / C10 | Bare Wilson DENSE and four-dimensional counting. P1 fixes the same fine marginal under both normalized kernels. Keep the reviewed absolute-count/all-good-probability scope, without a positive-density or universal-architecture no-go claim. |
+| CW6 / C11 | Bare Wilson nonconvexity and admissibility of its witnesses in the actual conditioned law. The hard second variation must include nonlinear constraint curvature/multipliers. Node A/BL-TILT results are conditional tools, not actual full-chain convexity. |
+| CW7 / C12 | Identification of the regional/global minimum, specified critical value and exact quantum density, with the same normalization and gauge space. Finite-germ identities do not supply a uniform all-history radius. |
+| CW8 / C7,C13,C15 | Source-dependent renormalized flow, observable/OS matching, common limits, same-algebra non-freeness, all-coarse-field seam bounds and the physical continuum mass threshold. The common fine marginal, RP and finite Wilson transfer facts persist; none is the terminal theorem. |
+| GI1 / C14 | Residual gauge averaging, h_U=0, FP injectivity and gauge energy in charts/holes. These are gauge-choice obligations. H1 is the existing mixed gauge prescription; hard physical blocking supplies no decision-4 saving for it. |
 
-**QUOTED.** CODEX_REVIEW_STEP.md:200: “Actual returned-activity zero-freeness therefore remains **OPEN**”. At :214, the small bound applies to the reduced denominator, not the full Den_Y. CODEX_REVIEW_LARGE.md:63: “a positive sum of normalized kernels can have quotient poles at scale 1/t, smaller than 1/√t”.
+### 4.3 Original C1–C15 discussion, retained as quotation
 
-**ARGUED — attribution and price.** Soft smoothing supplies analytic numerator and denominator separately, which encouraged the invalid inference to their ratio. The ratio/zero-free problem itself is not exclusive to softness. The positive ±H mixture is a counterexample to that inference, **not** a counterexample to the actual cut-good denominator. The generic repair is now confirmed (REVIEW_RECOVERY_CLUSTER_ASTRA.md:21–39), and selected empty-history affine returns are confirmed (REVIEW_SOURCE_RETURN_CONTINUATION_ASTRA.md:69–84). All histories, holes, retained indicators and all coarse fields remain OPEN; those recent closures must be credited.
+[R-fix 2026-10-29 B2] Historical text below supplies the original evidence and detailed comparisons; its mixed-ledger heading and classification are superseded by §§4.1–4.2. The B4 locator annotation travels with C2.
 
-**ARGUED — hard replacement.** A fibre partition function and its normalised source/return ratio still need the analogue of the full-factor identity. L1 Appendix B (296)–(299) is a possible generic tool only after localisation and product-measure hypotheses are established. L2 §3.1 Remark 3 explicitly leaves out the R-operation. **Availability: generic/scalar tools; no matching open 4D non-abelian returned-denominator theorem located. No removal credit for this wall.**
-
-### C3. Mismatch events and nondegeneracy of the arithmetic mean
-
-**QUOTED.** LARGE55.md:274 calls mismatch “a **new large-field type, the mismatch**”. CODEX_REVIEW_LARGE.md:41: “At M=0, ψ is identically zero and every positive-δ event in MIS is empty, while the coarse link is Haar.” CODEX_REVIEW_STEP.md:317 retains the condition θ_y<1 for the geometric mismatch price.
-
-**ARGUED — attribution and price.** Finite softness permits coarse data unrelated to the maximising block link. MIS prices its own centred exponent, not an arbitrary plaquette predicate. Turning a bad coarse plaquette into a positively priced mismatch needs a nondegenerate mean, strict chart margins and the actual arithmetic/log-map dictionary. The corrected geometric implication is conditional; its unqualified sign was refuted.
-
-**ARGUED — hard replacement.** For the specified B, V=B(U) eliminates that stochastic mismatch exactly. It substitutes the deterministic implication “fine admissible ⇒ B(U) admissible”, including holes, map domain and singular/large-field branches. L6 (4) enforces exact linear block matching; L5 Theorem 1 (327) supplies abelian constrained regularity. Neither proves that implication for a globally defined SU(N) version of our arithmetic/log map. **Availability: abelian only; actual 4D non-abelian map/admissibility replacement OPEN.** P2 prevents claiming that setting κ=∞ implements Balaban's map automatically.
-
-### C4. Background regularity, residual sources and repeated levels
-
-**QUOTED.** PROOF.md:800–801 says hard-paper inputs “must be re-verified for the soft version before it can be load-bearing.” LINEAR_PACKAGE.md:35 defines BG-b through both plaquette and **soft residual** bounds. RTARGET.md:474–477 names a possible nonanalytic response or shrinking strip as an adverse decision-4 outcome.
-
-**ARGUED — attribution and price.** A finite penalty leaves residual variables, source slots and a composite chain. Their uniform regularity, local minimiser identification and background perturbation must be proved. The feared flat-response power-tail failure is not a live failed test: LINEAR_PACKAGE §§3–4 and PROOF's N2-exp/F-df_0 results give exponential locality at their stated scope. Recent COF, field and higher-order repairs also remove earlier estimation losses, subject to their hypotheses. Nonlinear curved, local/holed and weighted consumer interfaces remain substantive.
-
-**ARGUED — hard replacement.** Constrained minimisation and a covariance on ker DB replace penalty estimates; top-range sources simplify as in P4. L5 §3.9, Theorem 1 (327), is the strongest directly read replacement. Its field, shell and weight hypotheses differ. The hard route still needs nonlinear gauge regularity and a uniform constrained inverse, rather than a lossy product of per-level constants. **Availability: proven abelian regularity; no matching open 4D SU(N) theorem located.** A factor growing with depth in a particular soft proof is not proof that every soft route has that loss.
-
-### C5. Lane A's root-funnel spikes and lane B's tents
-
-**QUOTED.** REVIEW_BFT_B_S8.md:350: “the **tents ↔ root charges** correspondence is exact, and the **spikes are a separate, Q-specific effect**.” BFT_A.md:3691–3693 records that S_E was not directly computed and that the numerical scope was abelian, L=3, κ=1, depth≤3. The exact root-funnel identity is BFT_A.md:3330–3331; its size interpretation is separately ARGUED.
-
-**ARGUED — attribution and price.** Soft-chain response estimates encounter these terms, but their algebraic source is Q=Q_str−dh and the pinned-root representation. Hardening the same Q does not delete its funnel. The soft residual-sum term in RF disappears on an exactly following hard chain; its first two funnel terms do not disappear by that substitution. Changing Q or changing which representative/norm is estimated is a distinct intervention.
-
-**QUOTED — essential update.** CODEX_REVIEW_C2.md:308 says: “Withdraw §35.7's falsity verdict and `[S10-fix 1]`'s mandatory CC-0 restriction.” It preserves the whole-response cancellations and the top-response Hölder term. BFT_B.md:4112–4126 must therefore not be quoted as a current obstruction theorem. The assertion CC-0 at every critical point was itself refuted; later nonlinear uniform estimates are conditional, not consequences of that assertion.
-
-**ARGUED — hard replacement.** L4 §3.5 (75)–(85) separates integration gauge from the regular representative; L5 (327) estimates local gauge representatives. A map/gauge/norm dictionary is needed to use this escape. **Availability: abelian mechanism, not a 4D non-abelian S4′ spike-removal theorem. Count this as a map/representation cost encountered on the soft route, not a wall proven removable by δ.**
-
-### C6. S_E alignment failure, axial seams and the log-chart repair
-
-**QUOTED.** CODEX_REVIEW_ALIGN.md:70 requires “a nonzero top-link charge” of nonvanishing size for its depth-growing obstruction. PROOF.md:233 records: “S_E — and any alignment reading only x_0 — fails (A1)”. ALIGN55.md:91–99 distinguishes axial gauge fixing from regular estimation. RECOVERY_ALIGNMENT_ASTRA.md:251–252 leaves “Covariant field NC(log)” open and “Full R2” a conditional assembly.
-
-**ARGUED — attribution and price.** The incompatible field/source norms and chart transfer arise in the current all-level soft construction, but neither theorem says all soft gauges fail, and neither says hard blocking repairs them. S_E still supplies useful flat field estimates (PROOF.md:208); it fails this different alignment requirement. The axial obstruction has the qualifications in CODEX_REVIEW_ALIGN F6, not an unrestricted no-go. The later periodic image, restricted-source and AC(log) work is a gain already paid for; the generic-field covariant output and weighted/global interfaces remain OPEN.
-
-**ARGUED — hard replacement.** Use the hard method's constrained regular representative and prove its own source/gauge-transfer estimates. L4 §3.5 (75)–(85), quoted in L4, is the explicit abelian example of changing gauge for estimation. **Availability: abelian; no matching 4D non-abelian uniform alignment theorem located.** Substituting an axial representative without a regular gauge transfer would repeat the diagnosed error.
-
-### C7. D4-obs: stochastic RG coordinates versus the observable algebra
-
-**QUOTED.** PROOF.md:2086–2087: “compare the block laws of the soft RG variables V with those of S4''(U) used by L7a/L8a, or run the RG with observable sources.” REVIEW_S9_S10.md:281–284 independently identifies that added obligation.
-
-**ARGUED — attribution and price.** This is genuinely created by using stochastic block variables while retaining an independently defined deterministic observable algebra. P1 proves fine-observable expectations unchanged, but supplies no quantitative regularity of their backward coarse images. The exact source recursion is already reviewed in SRCCD55/CODEX_REVIEW_SRCCD; its N1/N2 estimates are still missing. Thus D4-obs can be addressed by sources without equating the two V laws.
-
-**ARGUED — hard replacement.** If, globally and at every level, B is exactly the deterministic map defining the observables, V=B(U) resolves this identification algebraically. Hard blocking with **Balaban's different map**, or with the arithmetic maximiser, does not. L4 (75) exhibits exact hard linear equality, not the S4″ bridge; L3's p.33 correlation remark explicitly is not a completed source theorem. **Availability: elementary identity under matched maps; no open 4D non-abelian observable/OS comparison theorem located.** Even perfect block equality leaves the common OS algebra, contact domain and physical non-freeness requirements.
-
-### C8. Stiffness, complex widths and competing parameter windows
-
-**QUOTED.** REVIEW_SF_S7.md:161–164 corrects the near-κ=1 window to “|κ_0 - 1| < 2.585·10⁻²” for the specified class, with a κ-dependent inverse bound. CODEX_REVIEW_STEP.md:84 gives the one-step mass κ_0/L², not κ_0. CODEX_REVIEW_LARGE.md:65–69 corrects the sufficient raw-activity window to α<acosh(1+a/(c_ell κ)). SPHERE2_55.md:507–510 flags an excessively stiff seam.
-
-**ARGUED — attribution and price.** Finite κ must simultaneously support pinning/coercivity, the chosen complex envelope, source derivatives and the seam strategy. The calibrated near-one interval is not an upper bound on all possible κ and not a universal impossibility theorem; later background classes require their own substitution. Likewise the stripe samples do not establish an iff crossing or an exact √κ law. The single-normaliser fixed field tube for real t>0 is different from the returned-activity tube and from complex coupling holomorphy. Polymer decay κ_d and counting κ_0^CE are different quantities from stiffness κ_s.
-
-**ARGUED — hard replacement.** Hard constraints eliminate the κ_s tuning variable but replace its gap by constrained coercivity, and its smooth-width estimate by a fibre/contour analytic domain. L4 Proposition 6 (86)–(93) is the abelian gap template. L1 Appendix B's decay threshold remains a cluster condition under either kernel. **Availability: abelian constrained gap and generic cluster tools; matching 4D nonlinear windows OPEN.** Do not take κ→∞ inside estimates proved only on a bounded κ interval. The older TC obstruction is not universally live: PROOF.md:212 records its conditional removal in W-cb♯, while full live margins remain unverified.
-
-### C9. Large fields: mismatch, frozen cones, references and failed returns
-
-**QUOTED.** CODEX_REVIEW_LARGE.md:43: “conditioning can force a rare mismatch.” At :45: “Exact integration of unobserved raw kernels does not compare a history with the small-field reference or control polymers crossing its boundary.” Its final verdict, :315, declines to endorse replacement of v3's pricing obligations as a verified simplification.
-
-**ARGUED — attribution and price.** The soft route has extra random coarse variables above frozen regions and therefore needs MIS/COL plus their source/conditioning interfaces. MIS and COL are valid in their reviewed scope; future-conditioned densities, observed cones and normalised histories require additional estimates. Holes, shadow/reference factors, overlap charges and failed returns are not removed by unconditioned Markov cancellation.
-
-**ARGUED — hard replacement.** Hard block equality removes soft mismatch events; local hard integration on the surviving region replaces the forward auxiliary cone. It still needs a complete sum over histories, boundary terms and a normalised return operation. L6 §4.2.2 (471)–(477) is an abelian large-field construction; L2 Theorem 3.1/Remark 3 explicitly does not supply the required recycling step. **Availability: scalar/abelian, not the needed open 4D non-abelian R-operation.** No pricing rows are discharged merely by switching.
-
-### C10. Dense bare defects and four-dimensional counting
-
-**QUOTED.** CODEX_REVIEW_LARGE.md:84: “an increasing absolute count and a vanishing all-good probability, not a positive limiting fraction of bad plaquettes”. At :306 the reviewed DENSE conclusion retains B_N(ε)β_*<4 and weak-coupling qualifications.
-
-**ARGUED — attribution and price.** This is **not soft-specific**. DENSE is a statement about the bare Wilson measure. P1 shows that normalised hard blocking has exactly the same fine-field probability of those events. A fixed-pattern count is not a universal theorem against all cut choices or architectures. It does show why a proposal that simply drops all bare large fields must confront the same estimate under hard blocking.
-
-**ARGUED — hard replacement.** Renormalise/control their contribution, rather than identify them with impossible hard mismatches. L3 Lemmas 11–13 and L6 (7), (471)–(477) are lower-dimensional price/counting templates. Their super-renormalisable scaling cannot be substituted for marginal 4D flow. **Availability: scalar/QED3 only; no matching 4D history-uniform return proof located. Zero savings for this bare-measure wall.**
-
-### C11. Following directions, nonconvexity and tilted normaliser ratios
-
-**QUOTED.** CODEX_REVIEW_LCONV.md:266 confirms “FOL's local zero-kernel-curvature identity” but makes full-chain use conditional. At :267 its banking restrictions include “no universal convexity/Peierls no-go” and “no exact lowered-coupling identity”. The review's :251 table explains that a field-dependent normaliser ratio remains in the tilt.
-
-**ARGUED — attribution and price.** Soft penalties can vanish along a following tangent while the bare Wilson action has negative curvature. The bare stripe examples are genuine; their admissibility in the actual normalised conditional history is a separate bridge. Finite-soft tilt identities also carry N_t ratios, an additional genuine cost. Bare-action nonconvexity, however, is not caused by adding a soft kernel.
-
-**ARGUED — hard replacement.** Restrict fluctuations to the true constraint tangent and compute the **constrained** second variation, including nonlinear constraint curvature/Lagrange multipliers. A bare negative direction need not lie there; conversely a soft following direction does not become excluded merely because it follows. P4 clarifies the linear case. L4 Proposition 6 supplies an abelian constrained gap, not a nonlinear convexity theorem on every curvature-small SU(N) chart. **Availability: abelian only; no hard rescue of the complete conditional-chain claim verified.** Hard blocking removes the particular N_t tilt ratio but not all determinant/reference ratios.
-
-### C12. Critical branch, global minimum, local action and source normalisation
-
-**QUOTED.** HANDOFF.md:412–416 requires “Make the action interfaces agree.” PROOF.md:25–26: “Bounds on one action do not identify another.” ASSEMBLY55.md:104–105 identifies the global-minimum versus composite-critical-value interface; CODEX_REVIEW_ASSEMBLY.md:69–76 restricts its germ repair to finite k,T and the **same** energy.
-
-**ARGUED — attribution and price.** Soft critical-value towers, the centred φ exponent, the uncentred exponent, the normalised quantum density and the independently prescribed higher-level action have sometimes been interchanged. The finite-κ terms enlarge this dictionary, but classical versus quantum and global versus regional minimisation distinctions also exist under hard constraints. The SU(N) φ versus k̃ distinction is material for N≥3 (PROOF.md:217,244); neither is automatically the full effective action.
-
-**ARGUED — hard replacement.** Identify the regional constrained minimiser and its value with the actual hard RG density's main term, preserving the constraint and FP factors. L5 (327) treats the regularity of a specified constrained minimising orbit; L2's scalar representation names its own main action and boundary terms. **Availability: lower-dimensional examples only; matching 4D identities OPEN.** Hardening does not identify different actions by notation.
-
-### C13. Coupling jets, residual determinants and local source domains
-
-**QUOTED.** HANDOFF.md:422–425 requires the residual-determinant/jet argument, finite-volume interfaces and complex flow on the same objects. At :504–518 it confirms only the specified charged-sector fixed-depth, volume-first result and leaves the remaining matching and H1/H2/H3 open. RECOVERY_CLUSTER_ASTRA.md:522 warns that single-normaliser field analyticity is not uniform complex-coupling analyticity.
-
-**ARGUED — attribution and price.** The soft Hessian has κQ*Q, the normaliser has derivatives and the source-local critical map has κ-dependent jets. Their exact soft-specific calculations would change under hard blocking. The need for renormalised flow, complete determinants, finite-volume/limit control and an admissible coefficient-field class is shared. The latest full-colour author candidate in HANDOFF is not promoted beyond its recorded review status.
-
-**ARGUED — hard replacement.** Recompute the determinant/vertices on the constraint tangent, retain the Jacobian and Ward terms, and prove the same source-dependent trajectory estimate. L4 (75)–(84) gives the free abelian gauge dictionary; L1 and L6 have super-renormalisable flows in different theories. **Availability: no matching open marginal 4D non-abelian source/flow theorem located.** The universal expected beta coefficient is not evidence that these scheme-dependent finite and residual terms agree.
-
-### C14. Residual gauge averaging and apparent “large pure-gauge fields”
-
-**QUOTED.** SF.md:1634–1639 says h_U is imposed “as a δ-constraint” while the residual gauge is “averaged, NOT fixed.” At :1628–1632, a large slice field need not cause a plaquette or kernel mismatch; the Feynman energy must be counted.
-
-**ARGUED — attribution and price.** This is softness of a **gauge-fixing weight**, not the physical blocking kernel. The already existing NA-FP construction is a hybrid in that different sense. Setting V=B(U) does not by itself remove residual gauge directions, local FP injectivity or the requirement to pay their Gaussian energy. The shrunk-chart repair recorded at SF.md:1659–1660 is not a full arbitrary-history statement.
-
-**ARGUED — hard replacement.** Keep a proven mixed gauge identity or supply a different complete gauge fixing with its determinant, chart, locality and regularity estimates. L4 Proposition 5 (75)–(84) explicitly combines hard averaging with soft gauge fixing. **Availability: abelian implementation; no automatic non-abelian global/holed FP theorem. No decision-4 savings credited merely for making the already-hard h_U condition hard again.**
-
-### C15. Shared terminal obligations excluded from a spurious soft-cost total
-
-**QUOTED.** HANDOFF.md:426–438 still requires all-coarse-field source regularity, quantum Ward matching, all-product bounds, seam transparency, the same clover-field lower matching, the declared free-comparator scope and end-to-end assembly. HANDOFF.md:27–29 requires a physical mass threshold after cutoff and volume removal.
-
-**ARGUED.** Neither exact block equality nor the disappearance of N_t supplies these statements. The Wilson marginal, Wilson RP and finite Wilson transfer remain the same by P1; their continuum, symmetry, non-freeness and infrared estimates still need proof. L3's stability/correlation distinction and L6's fixed-volume stability scope give **no** open literature replacement for this full set. These costs belong to both columns. Listing them here prevents the easier hard linear problem from being compared with the full soft Yang–Mills target.
+> ## 4. Ledger of costs: what softness creates, enlarges, or merely accompanies
+>
+> **ARGUED — how to read replacements.** Each L-number below incorporates the exact quotation and section/equation locator in §2; those quotations are printed once to avoid repetitive excerpting. Where no matching hard theorem is available, the entry says so explicitly. “Removed” concerns the named term or obligation, never the entire downstream theorem. The distinction between finite softness, the S4′ averaging map, the gauge choice and generic Yang–Mills difficulties is part of each entry.
+>
+> ### C1. Field-dependent kernel normalisation and the wrong stationary action
+>
+> **QUOTED.** STEP55.md:247: “S_eff(U; V) := −log ρ_k(U) + Σ_c[t_kψ_{M̄_c(U)}(V_c) + log 𝒩̃_{t_k}(M̄_c(U))] + const(V).” CODEX_REVIEW_LARGE.md:29: “The last term depends on U.” CODEX_REVIEW_STEP.md:315 confirms single-normaliser zero-freeness and the bounded centred Hessian, for complex fields and **real t>0**.
+>
+> **ARGUED — attribution and price.** This is a genuine cost of the present finite soft kernel with nonunitary mean: it adds stationary-point, derivative, determinant and coupling/source bookkeeping. The omitted term is now corrected, and its local real-t estimate is recently closed; a uniform complex-local-coupling and full-history application is still OPEN. It must not be priced as an entirely unresolved single-link theorem.
+>
+> **ARGUED — hard replacement.** P1 removes N_t exactly, but P3 replaces smooth full-space integration by a constrained measure, coarea/FP factors and its stationary-point problem. L4 §3.5 (75)–(84) and L6 §1 (4) are open abelian implementations; L1 §2.1 (18)–(20) has a constant normaliser but is scalar **soft** blocking. **Availability: abelian/scalar mechanisms; matching 4D non-abelian construction not located.**
+>
+> ### C2. The returned denominator and the lost full-prefactor bound
+>
+> **QUOTED.** CODEX_REVIEW_STEP.md:200: “Actual returned-activity zero-freeness therefore remains **OPEN**”. At :214, the small bound applies to the reduced denominator, not the full Den_Y. CODEX_REVIEW_LARGE.md:63: “a positive sum of normalized kernels can have quotient poles at scale 1/t, smaller than 1/√t”.
+>
+> **ARGUED — attribution and price.** Soft smoothing supplies analytic numerator and denominator separately, which encouraged the invalid inference to their ratio. The ratio/zero-free problem itself is not exclusive to softness. The positive ±H mixture is a counterexample to that inference, **not** a counterexample to the actual cut-good denominator. The generic repair is now confirmed (REVIEW_RECOVERY_CLUSTER_ASTRA.md:21–39), and selected empty-history affine returns are confirmed (REVIEW_SOURCE_RETURN_CONTINUATION_ASTRA.md:69–84). All histories, holes, retained indicators and all coarse fields remain OPEN; those recent closures must be credited.
+>
+> [R-fix 2026-10-29 B4] Superseded locator, retained verbatim:
+>
+> > **ARGUED — hard replacement.** A fibre partition function and its normalised source/return ratio still need the analogue of the full-factor identity. L1 Appendix B (296)–(299) is a possible generic tool only after localisation and product-measure hypotheses are established. L2 §3.1 Remark 3 explicitly leaves out the R-operation. **Availability: generic/scalar tools; no matching open 4D non-abelian returned-denominator theorem located. No removal credit for this wall.**
+>
+> **ARGUED — hard replacement.** A fibre partition function and its normalised source/return ratio still need the analogue of the full-factor identity. L1 Appendix B (296)–(299) is a possible generic tool only after localisation and product-measure hypotheses are established. L2 §3.3, Remark 3, p.31 explicitly leaves out the R-operation. **Availability: generic/scalar tools; no matching open 4D non-abelian returned-denominator theorem located. No removal credit for this wall.**
+>
+> ### C3. Mismatch events and nondegeneracy of the arithmetic mean
+>
+> **QUOTED.** LARGE55.md:274 calls mismatch “a **new large-field type, the mismatch**”. CODEX_REVIEW_LARGE.md:41: “At M=0, ψ is identically zero and every positive-δ event in MIS is empty, while the coarse link is Haar.” CODEX_REVIEW_STEP.md:317 retains the condition θ_y<1 for the geometric mismatch price.
+>
+> **ARGUED — attribution and price.** Finite softness permits coarse data unrelated to the maximising block link. MIS prices its own centred exponent, not an arbitrary plaquette predicate. Turning a bad coarse plaquette into a positively priced mismatch needs a nondegenerate mean, strict chart margins and the actual arithmetic/log-map dictionary. The corrected geometric implication is conditional; its unqualified sign was refuted.
+>
+> **ARGUED — hard replacement.** For the specified B, V=B(U) eliminates that stochastic mismatch exactly. It substitutes the deterministic implication “fine admissible ⇒ B(U) admissible”, including holes, map domain and singular/large-field branches. L6 (4) enforces exact linear block matching; L5 Theorem 1 (327) supplies abelian constrained regularity. Neither proves that implication for a globally defined SU(N) version of our arithmetic/log map. **Availability: abelian only; actual 4D non-abelian map/admissibility replacement OPEN.** P2 prevents claiming that setting κ=∞ implements Balaban's map automatically.
+>
+> ### C4. Background regularity, residual sources and repeated levels
+>
+> **QUOTED.** PROOF.md:800–801 says hard-paper inputs “must be re-verified for the soft version before it can be load-bearing.” LINEAR_PACKAGE.md:35 defines BG-b through both plaquette and **soft residual** bounds. RTARGET.md:474–477 names a possible nonanalytic response or shrinking strip as an adverse decision-4 outcome.
+>
+> **ARGUED — attribution and price.** A finite penalty leaves residual variables, source slots and a composite chain. Their uniform regularity, local minimiser identification and background perturbation must be proved. The feared flat-response power-tail failure is not a live failed test: LINEAR_PACKAGE §§3–4 and PROOF's N2-exp/F-df_0 results give exponential locality at their stated scope. Recent COF, field and higher-order repairs also remove earlier estimation losses, subject to their hypotheses. Nonlinear curved, local/holed and weighted consumer interfaces remain substantive.
+>
+> **ARGUED — hard replacement.** Constrained minimisation and a covariance on ker DB replace penalty estimates; top-range sources simplify as in P4. L5 §3.9, Theorem 1 (327), is the strongest directly read replacement. Its field, shell and weight hypotheses differ. The hard route still needs nonlinear gauge regularity and a uniform constrained inverse, rather than a lossy product of per-level constants. **Availability: proven abelian regularity; no matching open 4D SU(N) theorem located.** A factor growing with depth in a particular soft proof is not proof that every soft route has that loss.
+>
+> ### C5. Lane A's root-funnel spikes and lane B's tents
+>
+> **QUOTED.** REVIEW_BFT_B_S8.md:350: “the **tents ↔ root charges** correspondence is exact, and the **spikes are a separate, Q-specific effect**.” BFT_A.md:3691–3693 records that S_E was not directly computed and that the numerical scope was abelian, L=3, κ=1, depth≤3. The exact root-funnel identity is BFT_A.md:3330–3331; its size interpretation is separately ARGUED.
+>
+> **ARGUED — attribution and price.** Soft-chain response estimates encounter these terms, but their algebraic source is Q=Q_str−dh and the pinned-root representation. Hardening the same Q does not delete its funnel. The soft residual-sum term in RF disappears on an exactly following hard chain; its first two funnel terms do not disappear by that substitution. Changing Q or changing which representative/norm is estimated is a distinct intervention.
+>
+> **QUOTED — essential update.** CODEX_REVIEW_C2.md:308 says: “Withdraw §35.7's falsity verdict and `[S10-fix 1]`'s mandatory CC-0 restriction.” It preserves the whole-response cancellations and the top-response Hölder term. BFT_B.md:4112–4126 must therefore not be quoted as a current obstruction theorem. The assertion CC-0 at every critical point was itself refuted; later nonlinear uniform estimates are conditional, not consequences of that assertion.
+>
+> **ARGUED — hard replacement.** L4 §3.5 (75)–(85) separates integration gauge from the regular representative; L5 (327) estimates local gauge representatives. A map/gauge/norm dictionary is needed to use this escape. **Availability: abelian mechanism, not a 4D non-abelian S4′ spike-removal theorem. Count this as a map/representation cost encountered on the soft route, not a wall proven removable by δ.**
+>
+> ### C6. S_E alignment failure, axial seams and the log-chart repair
+>
+> **QUOTED.** CODEX_REVIEW_ALIGN.md:70 requires “a nonzero top-link charge” of nonvanishing size for its depth-growing obstruction. PROOF.md:233 records: “S_E — and any alignment reading only x_0 — fails (A1)”. ALIGN55.md:91–99 distinguishes axial gauge fixing from regular estimation. RECOVERY_ALIGNMENT_ASTRA.md:251–252 leaves “Covariant field NC(log)” open and “Full R2” a conditional assembly.
+>
+> **ARGUED — attribution and price.** The incompatible field/source norms and chart transfer arise in the current all-level soft construction, but neither theorem says all soft gauges fail, and neither says hard blocking repairs them. S_E still supplies useful flat field estimates (PROOF.md:208); it fails this different alignment requirement. The axial obstruction has the qualifications in CODEX_REVIEW_ALIGN F6, not an unrestricted no-go. The later periodic image, restricted-source and AC(log) work is a gain already paid for; the generic-field covariant output and weighted/global interfaces remain OPEN.
+>
+> **ARGUED — hard replacement.** Use the hard method's constrained regular representative and prove its own source/gauge-transfer estimates. L4 §3.5 (75)–(85), quoted in L4, is the explicit abelian example of changing gauge for estimation. **Availability: abelian; no matching 4D non-abelian uniform alignment theorem located.** Substituting an axial representative without a regular gauge transfer would repeat the diagnosed error.
+>
+> ### C7. D4-obs: stochastic RG coordinates versus the observable algebra
+>
+> **QUOTED.** PROOF.md:2086–2087: “compare the block laws of the soft RG variables V with those of S4''(U) used by L7a/L8a, or run the RG with observable sources.” REVIEW_S9_S10.md:281–284 independently identifies that added obligation.
+>
+> **ARGUED — attribution and price.** This is genuinely created by using stochastic block variables while retaining an independently defined deterministic observable algebra. P1 proves fine-observable expectations unchanged, but supplies no quantitative regularity of their backward coarse images. The exact source recursion is already reviewed in SRCCD55/CODEX_REVIEW_SRCCD; its N1/N2 estimates are still missing. Thus D4-obs can be addressed by sources without equating the two V laws.
+>
+> **ARGUED — hard replacement.** If, globally and at every level, B is exactly the deterministic map defining the observables, V=B(U) resolves this identification algebraically. Hard blocking with **Balaban's different map**, or with the arithmetic maximiser, does not. L4 (75) exhibits exact hard linear equality, not the S4″ bridge; L3's p.33 correlation remark explicitly is not a completed source theorem. **Availability: elementary identity under matched maps; no open 4D non-abelian observable/OS comparison theorem located.** Even perfect block equality leaves the common OS algebra, contact domain and physical non-freeness requirements.
+>
+> ### C8. Stiffness, complex widths and competing parameter windows
+>
+> **QUOTED.** REVIEW_SF_S7.md:161–164 corrects the near-κ=1 window to “|κ_0 - 1| < 2.585·10⁻²” for the specified class, with a κ-dependent inverse bound. CODEX_REVIEW_STEP.md:84 gives the one-step mass κ_0/L², not κ_0. CODEX_REVIEW_LARGE.md:65–69 corrects the sufficient raw-activity window to α<acosh(1+a/(c_ell κ)). SPHERE2_55.md:507–510 flags an excessively stiff seam.
+>
+> **ARGUED — attribution and price.** Finite κ must simultaneously support pinning/coercivity, the chosen complex envelope, source derivatives and the seam strategy. The calibrated near-one interval is not an upper bound on all possible κ and not a universal impossibility theorem; later background classes require their own substitution. Likewise the stripe samples do not establish an iff crossing or an exact √κ law. The single-normaliser fixed field tube for real t>0 is different from the returned-activity tube and from complex coupling holomorphy. Polymer decay κ_d and counting κ_0^CE are different quantities from stiffness κ_s.
+>
+> **ARGUED — hard replacement.** Hard constraints eliminate the κ_s tuning variable but replace its gap by constrained coercivity, and its smooth-width estimate by a fibre/contour analytic domain. L4 Proposition 6 (86)–(93) is the abelian gap template. L1 Appendix B's decay threshold remains a cluster condition under either kernel. **Availability: abelian constrained gap and generic cluster tools; matching 4D nonlinear windows OPEN.** Do not take κ→∞ inside estimates proved only on a bounded κ interval. The older TC obstruction is not universally live: PROOF.md:212 records its conditional removal in W-cb♯, while full live margins remain unverified.
+>
+> ### C9. Large fields: mismatch, frozen cones, references and failed returns
+>
+> **QUOTED.** CODEX_REVIEW_LARGE.md:43: “conditioning can force a rare mismatch.” At :45: “Exact integration of unobserved raw kernels does not compare a history with the small-field reference or control polymers crossing its boundary.” Its final verdict, :315, declines to endorse replacement of v3's pricing obligations as a verified simplification.
+>
+> **ARGUED — attribution and price.** The soft route has extra random coarse variables above frozen regions and therefore needs MIS/COL plus their source/conditioning interfaces. MIS and COL are valid in their reviewed scope; future-conditioned densities, observed cones and normalised histories require additional estimates. Holes, shadow/reference factors, overlap charges and failed returns are not removed by unconditioned Markov cancellation.
+>
+> **ARGUED — hard replacement.** Hard block equality removes soft mismatch events; local hard integration on the surviving region replaces the forward auxiliary cone. It still needs a complete sum over histories, boundary terms and a normalised return operation. L6 §4.2.2 (471)–(477) is an abelian large-field construction; L2 Theorem 3.1/Remark 3 explicitly does not supply the required recycling step. **Availability: scalar/abelian, not the needed open 4D non-abelian R-operation.** No pricing rows are discharged merely by switching.
+>
+> ### C10. Dense bare defects and four-dimensional counting
+>
+> **QUOTED.** CODEX_REVIEW_LARGE.md:84: “an increasing absolute count and a vanishing all-good probability, not a positive limiting fraction of bad plaquettes”. At :306 the reviewed DENSE conclusion retains B_N(ε)β_*<4 and weak-coupling qualifications.
+>
+> **ARGUED — attribution and price.** This is **not soft-specific**. DENSE is a statement about the bare Wilson measure. P1 shows that normalised hard blocking has exactly the same fine-field probability of those events. A fixed-pattern count is not a universal theorem against all cut choices or architectures. It does show why a proposal that simply drops all bare large fields must confront the same estimate under hard blocking.
+>
+> **ARGUED — hard replacement.** Renormalise/control their contribution, rather than identify them with impossible hard mismatches. L3 Lemmas 11–13 and L6 (7), (471)–(477) are lower-dimensional price/counting templates. Their super-renormalisable scaling cannot be substituted for marginal 4D flow. **Availability: scalar/QED3 only; no matching 4D history-uniform return proof located. Zero savings for this bare-measure wall.**
+>
+> ### C11. Following directions, nonconvexity and tilted normaliser ratios
+>
+> **QUOTED.** CODEX_REVIEW_LCONV.md:266 confirms “FOL's local zero-kernel-curvature identity” but makes full-chain use conditional. At :267 its banking restrictions include “no universal convexity/Peierls no-go” and “no exact lowered-coupling identity”. The review's :251 table explains that a field-dependent normaliser ratio remains in the tilt.
+>
+> **ARGUED — attribution and price.** Soft penalties can vanish along a following tangent while the bare Wilson action has negative curvature. The bare stripe examples are genuine; their admissibility in the actual normalised conditional history is a separate bridge. Finite-soft tilt identities also carry N_t ratios, an additional genuine cost. Bare-action nonconvexity, however, is not caused by adding a soft kernel.
+>
+> **ARGUED — hard replacement.** Restrict fluctuations to the true constraint tangent and compute the **constrained** second variation, including nonlinear constraint curvature/Lagrange multipliers. A bare negative direction need not lie there; conversely a soft following direction does not become excluded merely because it follows. P4 clarifies the linear case. L4 Proposition 6 supplies an abelian constrained gap, not a nonlinear convexity theorem on every curvature-small SU(N) chart. **Availability: abelian only; no hard rescue of the complete conditional-chain claim verified.** Hard blocking removes the particular N_t tilt ratio but not all determinant/reference ratios.
+>
+> ### C12. Critical branch, global minimum, local action and source normalisation
+>
+> **QUOTED.** HANDOFF.md:412–416 requires “Make the action interfaces agree.” PROOF.md:25–26: “Bounds on one action do not identify another.” ASSEMBLY55.md:104–105 identifies the global-minimum versus composite-critical-value interface; CODEX_REVIEW_ASSEMBLY.md:69–76 restricts its germ repair to finite k,T and the **same** energy.
+>
+> **ARGUED — attribution and price.** Soft critical-value towers, the centred φ exponent, the uncentred exponent, the normalised quantum density and the independently prescribed higher-level action have sometimes been interchanged. The finite-κ terms enlarge this dictionary, but classical versus quantum and global versus regional minimisation distinctions also exist under hard constraints. The SU(N) φ versus k̃ distinction is material for N≥3 (PROOF.md:217,244); neither is automatically the full effective action.
+>
+> **ARGUED — hard replacement.** Identify the regional constrained minimiser and its value with the actual hard RG density's main term, preserving the constraint and FP factors. L5 (327) treats the regularity of a specified constrained minimising orbit; L2's scalar representation names its own main action and boundary terms. **Availability: lower-dimensional examples only; matching 4D identities OPEN.** Hardening does not identify different actions by notation.
+>
+> ### C13. Coupling jets, residual determinants and local source domains
+>
+> **QUOTED.** HANDOFF.md:422–425 requires the residual-determinant/jet argument, finite-volume interfaces and complex flow on the same objects. At :504–518 it confirms only the specified charged-sector fixed-depth, volume-first result and leaves the remaining matching and H1/H2/H3 open. RECOVERY_CLUSTER_ASTRA.md:522 warns that single-normaliser field analyticity is not uniform complex-coupling analyticity.
+>
+> **ARGUED — attribution and price.** The soft Hessian has κQ*Q, the normaliser has derivatives and the source-local critical map has κ-dependent jets. Their exact soft-specific calculations would change under hard blocking. The need for renormalised flow, complete determinants, finite-volume/limit control and an admissible coefficient-field class is shared. The latest full-colour author candidate in HANDOFF is not promoted beyond its recorded review status.
+>
+> **ARGUED — hard replacement.** Recompute the determinant/vertices on the constraint tangent, retain the Jacobian and Ward terms, and prove the same source-dependent trajectory estimate. L4 (75)–(84) gives the free abelian gauge dictionary; L1 and L6 have super-renormalisable flows in different theories. **Availability: no matching open marginal 4D non-abelian source/flow theorem located.** The universal expected beta coefficient is not evidence that these scheme-dependent finite and residual terms agree.
+>
+> ### C14. Residual gauge averaging and apparent “large pure-gauge fields”
+>
+> **QUOTED.** SF.md:1634–1639 says h_U is imposed “as a δ-constraint” while the residual gauge is “averaged, NOT fixed.” At :1628–1632, a large slice field need not cause a plaquette or kernel mismatch; the Feynman energy must be counted.
+>
+> **ARGUED — attribution and price.** This is softness of a **gauge-fixing weight**, not the physical blocking kernel. The already existing NA-FP construction is a hybrid in that different sense. Setting V=B(U) does not by itself remove residual gauge directions, local FP injectivity or the requirement to pay their Gaussian energy. The shrunk-chart repair recorded at SF.md:1659–1660 is not a full arbitrary-history statement.
+>
+> **ARGUED — hard replacement.** Keep a proven mixed gauge identity or supply a different complete gauge fixing with its determinant, chart, locality and regularity estimates. L4 Proposition 5 (75)–(84) explicitly combines hard averaging with soft gauge fixing. **Availability: abelian implementation; no automatic non-abelian global/holed FP theorem. No decision-4 savings credited merely for making the already-hard h_U condition hard again.**
+>
+> ### C15. Shared terminal obligations excluded from a spurious soft-cost total
+>
+> **QUOTED.** HANDOFF.md:426–438 still requires all-coarse-field source regularity, quantum Ward matching, all-product bounds, seam transparency, the same clover-field lower matching, the declared free-comparator scope and end-to-end assembly. HANDOFF.md:27–29 requires a physical mass threshold after cutoff and volume removal.
+>
+> **ARGUED.** Neither exact block equality nor the disappearance of N_t supplies these statements. The Wilson marginal, Wilson RP and finite Wilson transfer remain the same by P1; their continuum, symmetry, non-freeness and infrared estimates still need proof. L3's stability/correlation distinction and L6's fixed-volume stability scope give **no** open literature replacement for this full set. These costs belong to both columns. Listing them here prevents the easier hard linear problem from being compared with the full soft Yang–Mills target.
 
 ## 5. Ledger of gains and the exact switch/reuse inventory
 
@@ -250,7 +304,11 @@ completing the square changes b to b+ξ/κ and adds −ξ*b−‖ξ‖²/(2κ). 
 
 ### G4–G28. Itemised dependency and portability register
 
-The following covers the kernel-dependent families identified in the named source packet, its current PROOF disposition and the additional kernel-use scan. Grouping records shared dependencies; it does not count a chain of sublemmas as independent savings. A “conditional” source entry is `QUOTED` as a proved implication, **not** a discharge of its hypotheses. Older raw PROVEN labels that the later reviews qualify are not upgraded here.
+[R-fix 2026-10-29 B1] Superseded coverage statement, retained verbatim:
+
+> The following covers the kernel-dependent families identified in the named source packet, its current PROOF disposition and the additional kernel-use scan. Grouping records shared dependencies; it does not count a chain of sublemmas as independent savings. A “conditional” source entry is `QUOTED` as a proved implication, **not** a discharge of its hypotheses. Older raw PROVEN labels that the later reviews qualify are not upgraded here.
+
+The G register is a family-level comparison, supplemented by the named-result crosswalk in §5.1 below. Its defined inventory is the S26 registry cited by REVIEW_SOFTHARD, now at PROOF.md:308–354, together with the additional results the review names. The original kernel scan is only a locator. Quoted conditional source dispositions remain conditional, and no source theorem is independently recertified by this author revision.
 
 | ID | Existing result(s), files and review locator | What a hard switch actually changes |
 |---|---|---|
@@ -278,9 +336,100 @@ The following covers the kernel-dependent families identified in the named sourc
 | G25 | **Sphere and Euclidean-invariance reductions:** SPHERE55/SPHERE2_55/SEAM55 and CODEX_REVIEW_SPHERE/SPHERE2/SEAM; ROTDEF/UNIV55/TQ55 and reviews. | Bare geometry, RP and Haar Ward identities survive by P1 when observables remain fine-field observables. Total covariance, Markov contraction and conditional comparison logic also survive. Kernel-based coarse images, torque/trace matching, source bounds and N5 seam inputs require new proofs; G2 records the specific soft mechanism lost. No unconditional OS1 theorem exists to invalidate. |
 | G26 | **Wilson mass-gap work:** MASS_GAP_CONSTRUCTION_ASTRA and REVIEW_MASS_GAP_CONSTRUCTION_ASTRA:69–137. | Finite Wilson transfer/positivity/Perron statements and their physical-time normalisation survive, since the fine Wilson law is unchanged. The exact SU(2) soft filter, I₂/I₁ coefficient, distinct-coarse-link factorisation and order-eight source covariance are kernel-specific and must be replaced. They supply no physical uniform gap under either kernel. The later local/block author candidate is not counted as reviewed closure. |
 | G27 | **Purely general analytic tools:** LINEAR_PACKAGE Theorem CE and TG/CE-geo/CE-κ, LES/LES-div, finite-dimensional IFT, Gaussian/Schur identities, generic comparison/diagonal lemmas. | These are retained whenever their explicit hypotheses hold. The hard route inherits neither their Yang–Mills instantiation nor all constants, but does not need to re-prove the abstract mathematics. |
-| G28 | **Fine-observable and free-side results:** HINT/HINT2/NONFREE/TSE comparator mathematics; OSLEAF separated algebra/RP/extension implications; ASSEMBLY DIAG and logical distinctions; corresponding CODEX reviews. | These are not soft-form gains and are not lost. The Yang–Mills matching, non-freeness witness on the same OS theory, extension estimates and full physical-gap inputs remain open regardless of kernel. Retaining the bare marginal is necessary, not sufficient, to close those bridges. |
+| G28 | **Fine-observable and free-side results:** HINT/HINT2/NONFREE comparator mathematics; OSLEAF separated algebra/RP/extension implications; ASSEMBLY DIAG; TSE split at I5 below. | [R-fix 2026-10-29 B1] Preserve these generic/fine-side results at their stated scope. TSE's actual soft Gaussian decomposition and K-dec application instead belong to G6/G10/G20/G22 and require a hard-response match. Same-theory non-freeness and the physical-gap inputs remain open. |
 
-**ARGUED — coverage and limits.** The scan saved in `checks/sh_kernel_inventory.json` searched all top-level Markdown science/review files except snapshots, logs and this report, finding 210 files with the declared kernel/normalisation vocabulary. It is a locator inventory, not evidence that every hit is soft-specific. The register above resolves the identified result families, including the named primary families in the brief, current PROOF-reviewed dependencies, SF's microscopic construction, and the later recovered/source/residual units. General facts inside those families are explicitly separated from the soft-model instance. Numerical checks without a general proof are not silently promoted; historical reviewer language is quoted at the corrected scope. The original soft proofs, tests and files are preserved without modification.
+[R-fix 2026-10-29 B1] Superseded coverage statement, retained verbatim:
+
+> **ARGUED — coverage and limits.** The scan saved in `checks/sh_kernel_inventory.json` searched all top-level Markdown science/review files except snapshots, logs and this report, finding 210 files with the declared kernel/normalisation vocabulary. It is a locator inventory, not evidence that every hit is soft-specific. The register above resolves the identified result families, including the named primary families in the brief, current PROOF-reviewed dependencies, SF's microscopic construction, and the later recovered/source/residual units. General facts inside those families are explicitly separated from the soft-model instance. Numerical checks without a general proof are not silently promoted; historical reviewer language is quoted at the corrected scope. The original soft proofs, tests and files are preserved without modification.
+
+**ARGUED — coverage and limits.** The explicit §5.1 crosswalk assigns every named S26 registry bullet in this review scope and the additionally requested TSE application; it is the coverage record for this comparison. G1–G28 also retain the previously described microscopic, recovery and source-return families. The 210-file scan is not a completeness certificate. The new producer checkpoints that precede the S26 registry in the current PROOF file are outside this frozen comparison revision; their later review status is not inferred from the older G descriptions. This revision changes no theorem, producer note or registry. All surviving abstract results retain their premises, and all changed hard-model applications remain unproved unless explicitly identified otherwise.
+
+### 5.1 Named-result crosswalk for the binding review
+
+[R-fix 2026-10-29 B1] **QUOTED source status / ARGUED portability.** The reviewed memo is the 83,985-byte version with SHA-256 `c85bc8244adf6589c31862a3536edfe4aa7b8343c14a54fc19c01bf06d26f1b2`. The revision uses local HEAD `a63ade893a7f76b9ee1925170545bf7489ad0f18`; the review's old PROOF lines 197, 213, 218 and 237 are now 308, 324, 329 and 348. HANDOFF's off-global warning is now at 511. Exact current source identities and pre-existing drift are in the v2 receipts. This is a bounded repair of that review, not a new review of subsequent producer work or a retained-status decision.
+
+#### I1. NQ-1 / repaired T-UNIF / N1-15: uniform cubic bound
+
+[R-fix 2026-10-29 B1] **QUOTED — paid-for conditional theorem.** Sources: NORMS.md §N6 (Theorem N1-15, currently 507–556), REVIEW55_NORMS.md r55n-A4 and r55n-E1, TUNIF.md TU-3–TU-6, REVIEW55_TUNIF.md U6 and its R1–R7 repairs, CODEX_REVIEW_TUNIF2.md §§1–5, and FLOW55.md §3.5 (especially 283–287). At d=4, odd L≥3 and fixed 0<κ_-≤κ_j≤κ_+, the SU(N) cubic vertex at the trivial background is pulled back by the admissible linear chain representative. The repaired estimate is
+
+    N3(D³ E_k^br(1)) ≤ W_* L^((d−4)k) + S_* L^(d−1)/(L−1).
+
+It is uniform jointly in depth k and the permitted torus sizes T. N3 is the unweighted absolute row-sum norm, not a weighted second-moment or convergence estimate. The imports are NQ-1 for the actual root-averaging Q; the frozen LINEAR_PACKAGE N2-lin, J-str, exponential curvature/residual locality including N2-exp-b and periodic analytic symbols; and the cubic vertex/envelope/admissible-representative identities used in NORMS. These are named inputs, not newly proved here. NQ-1 gives ||Q^(m)||_(∞→∞)≤q_0 L^m with q_0=1+d(L+1)/(2L), hence 11/3 only at d=4,L=3; it does not supply a nonlinear background bound.
+
+The repaired single representative has both potential row/sup and column ℓ¹ bounds with one T-free constant P (CODEX_REVIEW_TUNIF2 §4): P L^(−(k−j)) and P L^((d−1)(k−j)), respectively. Its construction includes the torus mean/harmonic correction, top-root interpolation and bounded whole-transport range factor. Those costs and the missing c_0 are retained in W_*,S_*. S_* depends explicitly on κ_+, κ_+/κ_-, and the soft-vertex/linear constants. The soft geometric factor is 27/2 at L=3 and 125/4 at L=5. Neither a general-L factor 13.5 nor an unrestricted nontrivial-background extension is banked.
+
+**ARGUED — disposition.** Reuse the potential/periodicity, root-interpolation and row/column norm arguments when the hard map has exactly their hypotheses; reuse NQ-1 only for the same linear Q. Reuse Wilson cubic vertex algebra, but bound its pullback using the new hard representative. Retire the actual finite-κ chain representative, residual transport and soft-vertex estimate as evidence for a hard critical value. Reconstruct the constrained critical-map jets, constraint-curvature terms and k,T-uniform norm bounds. Restriction of an all-chain energy lower bound to zero mismatch (G5/G7) is not differentiation of a minimized value. Deleting S_* proves no hard cubic or quartic estimate. This is a local reuse/rebuild unit in addition to R1–R10; it introduces no external proof authority. The source's uniform cubic bound is distinct from the fixed-depth one-loop residual result in G21 and from the weighted/convergent cubic and quartic requirements of FLOW55. Later producer checkpoints require their own scope match.
+
+#### I2. Node A reductions and conditional RLARGE reuse
+
+[R-fix 2026-10-29 B1] **QUOTED / ARGUED.** NODEA55.md and CODEX_REVIEW_NODEA.md:270–276 distinguish: SPEC and restricted-spectator bookkeeping; cutoff-uniform polynomial LT at fixed finite volume; the repaired Hölder consumer implication with far-Y/rate/smallness conditions; fixed-neighbourhood CRC reductions with CEM° and W0 still inputs; the positive-definite Gaussian convex-core theorem; multiplicative push-down geometry and DOM′'s factor 1+2Rg_K². Assign the abstract Hölder, convex-Gaussian, shadow and coupling-bracket arguments to **generic/shared reuse** (G17/G19/G27). Their actual conditioned-law, spectator and moment applications are **open or changed applications**, requiring hard-law input checks, not lost general theorems. The universal-conditioning counterexamples remain scoped evidence against those stated inferences; neither a hard full-chain obstruction nor closure of node A follows.
+
+RLARGE_U55.md / CODEX_REVIEW_RLU.md:377 onward supplies W-cb♯ only with its geometry, CLS-min, normalization and size conditions; it removes TC from that bound, not every collar condition. FI-1 is a conditional IVT/fixed-point construction under uniform trial-parameter estimates and continuity; unique continuous selection additionally needs the stated sufficient regularity. Assign the abstract energy/comparison, parameter-order and fixed-point implications to **generic/shared reuse**; the hard/mixed trial densities and their uniform estimates must be furnished anew (G19/G20, CW4/CW8). If an all-hard design has no auxiliary kernel parameter, that tuning task may be unnecessary; this is not permission to drop effective-coupling matching. No live margin or universal route ranking is inherited.
+
+#### I3. Node A residual / BL-TILT
+
+[R-fix 2026-10-29 B1] **QUOTED / ARGUED.** NODEA_RES55.md / CODEX_REVIEW_NRES.md:469–478: retain NO-ONE's exact model counterexamples at their stated probability laws, BL-TILT with the review's corrected convex-domain approximation and all H-convexity/D1–D4/positive-normalizer assumptions, the quantitative BL-1–BL-4 implications, exact rank and typed moment/comparison algebra, and the finite-patch Wilson nonconvexity witnesses. These are **generic/shared or fine-action results** (G17/G19/G27, CW6). Restricting or disintegrating a measure does not automatically preserve their convexity, means or margins. The constrained-law Peierls and conditional NU application remains **open**; the actual soft normalizer tilt is **changed/unnecessary** under hard blocking (C11). The refuted same-rate equivalence and full-chain extrapolations are not revived. This whole unit is not a soft-specific loss.
+
+#### I4. Off-global components
+
+[R-fix 2026-10-29 B1] **QUOTED / ARGUED.** OFFGLOB55.md / CODEX_REVIEW_OFFGLOB.md, its final bank list, and the later CODEX_REVIEW_OFFGLOB2.md:339 onward preserve bounded-box axial/class estimates, the holonomy/flat-field and frame counterexamples, real hierarchical routing with an explicitly supplied slot representation, the one-level lift, and abstract NK/Neumann/kernel/envelope implications. These are **generic/map-matched reuse** (G12/G13/G14/G27). The small-global-ball inverse, relative patching and weighted deductions remain conditional on their stated analytic, slice and compatible-error inputs; their hard operator/constraint applications are **changed/open**. Theorem OFF/OFF′, UQ/UQ′, the actual patched inverse, full curvature-small/holed coverage and branch identification remain open. Neither a local FP statement nor hard equality closes them. This is consistent with current HANDOFF.md:511.
+
+#### I5. TSE split: comparator versus actual soft response
+
+[R-fix 2026-10-29 B1] **QUOTED / ARGUED.** TSE55.md and CODEX_REVIEW_TSE.md R8–R10 and its final bank list: preserve the clover normalization/Wick algebra and the conditional free-comparator/TS/H-RED implications when their inputs match (G28/G27). Preserve the abstract Gaussian conditional-covariance decomposition as algebra. The actual soft Gaussian chain decomposition uses its conditional covariances and level responses; K-dec composes those particular locality/coercivity bounds. Those are **changed applications** assigned to G6/G10/G20/G22, with the top covariance included. Hard blocking needs its own admissible Gaussian quotient, constrained covariances, response kernels and matched source normalization. Neither the actual PL-1L Yang–Mills input nor the required LGF/source/large-field hypotheses were supplied by that review. Fine marginal preservation does not certify these conditional covariances.
+
+The original G28 row is retained here to make its overbroad TSE assignment visible:
+
+> | G28 | **Fine-observable and free-side results:** HINT/HINT2/NONFREE/TSE comparator mathematics; OSLEAF separated algebra/RP/extension implications; ASSEMBLY DIAG and logical distinctions; corresponding CODEX reviews. | These are not soft-form gains and are not lost. The Yang–Mills matching, non-freeness witness on the same OS theory, extension estimates and full physical-gap inputs remain open regardless of kernel. Retaining the bare marginal is necessary, not sufficient, to close those bridges. |
+
+#### I6. Explicit registry assignment (finite coverage index)
+
+[R-fix 2026-10-29 B1] `Pnnn` is a current PROOF.md line in the S26 registry. Grouped rows retain every constituent's named hypotheses and later dictionary corrections. `Reuse` means unchanged generic/fine-side mathematics or exact same-map reuse; `changed` means a new hard instance is needed; `open` means neither route is credited with an unproved application. Counterexamples retain their original domains. The table covers the science bullets, not the three date separators or the dictionary heading.
+
+| Registry lines / named result | Assignment and operative entry |
+|---|---|
+| P308: NQ-1/T-UNIF/N1-15 | Reuse generic and same-Q parts; changed hard jets; I1, G6/G20. |
+| P309–P311: CO-fun, GZ withdrawal, CC-0 counterexample | Reuse dipole/flux algebra and corrections; changed response/residual application; G10/G11. |
+| P312: NL-3′ proof-step counterexample | Retain its exact soft-chain scope; it is not a hard obstruction or a refutation of T-free representatives; I1. |
+| P313: TOP-cc/CC-FUN/CC-INV | Reuse abstract cancellation; changed source inverse and norms; G10. |
+| P314: quadratic TR | Reuse level-sum argument; changed actual nonlinear/source rows; G11. |
+| P315: sphere RP | Unchanged fine Wilson statement; open seam application; G2/G25. |
+| P316: smallness DAG | Reuse graph arithmetic only; changed premises/margins, no inherited feasibility certificate; CW4/CW8. |
+| P318: K^(σ), HR/CCP/SG/CB | Reuse contraction implications; changed rows/inverse/constraint class; G11. |
+| P319: GF-E/GF-E′ | Changed soft field-response instance; reuse quotient/reconstruction methods; G10/G12. |
+| P320: COF_m/CC-FUN_m/TOP-cc_m | Reuse cancellation logic; changed weighted hard response; G10. |
+| P321: ROTDEF | Unchanged Ward/covariance algebra; open source/torque input; G25. |
+| P322: HINT comparator | Unchanged declared comparator theorem; open same-theory identification; G28. |
+| P323: W-cb♯/FI-1 | Generic conditional reuse; changed or unnecessary auxiliary tuning; I2, G19/G20. |
+| P324: Node A | Generic/shared reuse; changed/open actual-law applications; I2. |
+| P326: TR∞/CC-CRIT∞ | Generic conditional contraction; changed hard sources/jets; G11. |
+| P327: GV-E | Reuse slice identities/contraction; changed field response; G11/G12. |
+| P328: FLOW55 | Generic conditional jet/flow algebra; changed propagator/vertices; I1, G20. |
+| P329: Node A residual | Generic/fine-action reuse; changed/open conditional law; I3. |
+| P330: UNIV Proposition T | Reuse comparison implication; open actual uniform comparison; G25. |
+| P331: a_RS consumer finding | Reuse only the scoped route accounting; recheck consumers for the new hard construction; CW4. |
+| P333: GA/GA-slice/GA-PG | Reuse quotient Neumann/gauge algebra; changed source/inverse match; G12. |
+| P334: TQ reductions | Reuse conditional fine-side reductions; actual rotation estimate open; G25. |
+| P335: SRC Proposition B/Lemma V | Reuse normalized Markov recursion and fine-measure variance; changed images/source estimates; G22. |
+| P336: BFT-3 | Reuse conditional locality/tree calculus; changed background/decoupling instance; G13/G14. |
+| P337: BALABAN_EXTRACT | Reuse finite Gaussian and hard-source algebra only at stated scope; no imported 4D return; P4, R1–R10. |
+| P338: NSL/ID | Generic conditional slice/germ reuse; changed constrained critical action and branch match; G13. |
+| P339: UIR55 | Reuse regulated algebra; changed hard determinant/weighted jets/residual identification; G20/G21. |
+| P340: BFT4a-glob | Reuse centered cancellation and conditional polymer calculus; changed hard local family; G14/G16. |
+| P341: SRCAN | Reuse analytic implications; changed source-local hard action/radii; G22. |
+| P342: HINT2 | Unchanged comparator/conditional implication; open observable-algebra identification; G28. |
+| P343: SPHERE55 | Unchanged fine geometry/RP/Ward algebra; changed coarse/source applications; G25. |
+| P344: ALIGN | Retain scoped S_E obstruction; generic alignment reduction reusable, hard interface open; G12/MI2. |
+| P345: ASSEMBLY | Reuse DIAG/norm-conversion/finite-germ logic; changed or open common inputs; G13/G27/G28. |
+| P346: LCONV | Unchanged bare witnesses; changed normalizer tilt, open constrained-law match; C11/CW6. |
+| P347: BFT-4(b)/AVG | Reuse Haar averaging (centered cost ≤2); open actual local invariant density match; G14. |
+| P348: off-global | Reuse specified local/generic pieces; changed/open hard global extension; I4. |
+| P349: LARGE | Reuse PP/COL on matching read sets and DENSE; retire soft caps/MIS/KA as hard evidence; G19/CW4/CW5. |
+| P350: SEAM | Reuse covariance/Ward algebra; changed seam/source estimates; G2/G25. |
+| P351: RLOC/(R) | Reuse finite-word Wilson/routing calculus; changed soft maximizer/local-family application; G14. |
+| P352: OSLEAF | Unchanged separated-algebra/RP/extension implications; common actual OS inputs open; G28. |
+| P353: ALIGN2 | Reuse chart/interpolation identities under matching maps; changed source/tangent application; G12. |
+| P354: NONFREE | Unchanged declared free-class theorem; open same-theory YM lower matching; G28. |
 
 ## 6. Four concrete hybrids checked against both ledgers
 
@@ -305,6 +454,8 @@ The B_j and collar width are part of the construction, not hidden defaults. For 
 **ARGUED — savings.** The bulk has no single-link N_t and no stochastic block mismatch (C1,C3); same-map hard observables there would resolve that part of C7. Bulk κ-window competition is replaced by constrained coercivity (C8). The seam keeps G2's finite mismatch option. These are actual algebraic savings, conditional only on having defined B.
 
 **ARGUED — losses/new walls.** Automatic smoothing G1 remains in the soft V coordinates only, not the hard bulk coordinates. Rebuild G5–G10's bulk covariance/background instances, G13–G18's action/FP/integrand instances, G20–G24's flow and source-return identifications. Prove mixed hard/soft constrained Green bounds, determinants and Jacobians, source transport across the collar and history closure for polymers intersecting both regions. The collar must dominate every needed localisation halo, with its growth accounted for in seam entropy; “w fixed” is not a proof of that condition. A proof uniform in w or an admissible scale-dependent w_j is required. Seam smallness and transparency remain OPEN even with the soft collar. N_t and returned denominators persist there, and hard conditional denominators persist in the bulk (C2). Changing B from S4″ reintroduces its observable comparison.
+
+[R-fix 2026-10-29 B3] H2 is tested only with HRT-a through HRT-e, including the fixed activity collar, separately treated extraction collar and charged crossing atoms. Its unspecified B_j and width above are candidate data to exhibit, not completed constructions.
 
 **ARGUED — disposition.** This is the most plausible *alternative to investigate* if a complete hard bulk return step is rebuilt. It is not presently cheaper than keeping the existing soft instance: two model interfaces replace one, and no mixed SU(N) theorem was located. Do not adopt HYBRID-bulk-hard/seam-soft before the decision test and its collar interface are proved.
 
@@ -348,6 +499,8 @@ For κ_j→∞, the C1 normaliser still exists at every finite j. P2's M̄=0 exa
 | R9. **Large-field prices — J. Dimock**, L3 §3.3 Lemmas 11–13, and L6 §4.2.2 Lemma 23, (471)–(486). | A failed local small-field test forces enough action/fluctuation energy to pay an exponential block cost with bounded overlap. Soft mismatch prices and hard constrained curvature prices have different hypotheses. Reuse MIS, reviewed coercivity and combinatorial counting where they actually apply. | 3–6 pages for the elementary tail/overlap algebra; 10–20 pages for each fully matched scalar or abelian price with regularity inputs; high/open for uniform non-abelian returned histories. | The scalar elementary tails are explicit; its background price uses prior scalar regularity. The QED proof is printed but depends on L5 regularity and constrained axial estimates. Neither proves our 4D prices. Rebuild the implication “bad test ⇒ paid energy” on the actual fields before copying the tail algebra. |
 | R10. **Boundary-polymer resummation — J. Dimock**, L3 Appendix B Lemma 19, (238)–(245). | Enlarging the inactive region regroups boundary activities while preserving their sum and controlling a decay loss. Both routes; useful for hole/collar interfaces. Reuse the lane's proved hull and connected-support combinatorics if the distances coincide. | 3–6 pages including the polymer counting input, medium; additional source/indicator locality checks for the actual return. | The regrouping proof is given, but imports the counting bound from part II Lemma E.3. Supply that count and the precise punctured-distance definition locally. It does not establish a gauge R-operation. |
 
+[R-fix 2026-10-29 B4] R8 inherits the corrected L2 locator: Dimock II §3.3; the representation (201)–(202) starts on p.28, Theorem 3.1 on p.29, and Remark 3 on p.31. The original R8 completeness limit is unchanged. The v2 receipt uses the identical-hash PDF now at `lit_local/sh_dimock_II.pdf`; historical `checks/` PDF paths are preserved in frozen receipts.
+
 **ARGUED — priority and missing units.** R1 and finite parts of R2 are already elementary local proofs; R3/R4/R10 have substantial reusable lane mathematics. Under KEEP-SOFT, spend the next reconstruction effort on the *actual* full-factor return: spatial source localisation, every indicator/prefactor, zero-free domain, and uniform hole/history estimates. Under a hard alternative, first reconstruct R5–R7 for the exact map and gauge, then R8/R9 for its constrained measure. Do not reconstruct the entire scalar theory merely to cite it internally. No inspected exposition supplies the required all-coarse-field sphere transparency, the lane's common-observable OS/non-free matching, or the physical four-dimensional mass threshold; these are separate new proof units under either route, not overlooked library lemmas.
 
 ## 8. Total remaining work and final recommendation
@@ -366,12 +519,101 @@ For κ_j→∞, the C1 normaliser still exists at every finite j. P2's M̄=0 exa
 
 **ARGUED — verdict: KEEP-SOFT.** The genuine hard savings are the field-dependent single-link normaliser, stochastic mismatch and—only with an identical deterministic map—the extra block-observable identification. Their replacements are substantial: a global map/chart dictionary, constrained measure and gauge treatment, uniformly regular constrained backgrounds, holomorphic source-dependent fibres, full returned denominators, and seam or mixed-interface control. The open sources provide useful rebuild plans, not ready 4D proofs. Much of the single-normaliser and generic cluster work is already repaired; the returned-history problem is common to both routes. The verdict is therefore based on remaining matched proof work, not on elegance, citation authority or treating all prior effort as sunk-cost credit.
 
-**ARGUED — precisely what a switch loses.** Retire the actual finite-κ response, Hessian, covariance, calibration and normaliser formulas as evidence for the new model (G5–G10,G13,G18); rebuild the microscopic small-field/FP/source instances, determinant/flow matching and actual returned atoms (G14–G17,G20–G24). Replace automatic all-fine-weight smoothing (G1), the finite-cost seam option (G2) and the exact SU(2) soft filter (G26). Preserve all abstract algebra, corrected generic cluster tools, matched-map geometry and applicable lower bounds, plus fine Wilson/RP/transfer results (G3,G4,G7,G16,G22–G28). No completed full-proof theorem is being forfeited, because none has been established.
+[R-fix 2026-10-29 B1] Superseded coverage statement, retained verbatim:
 
-**OPEN — single decisive question.** Can we rebuild **one complete 4D SU(N) hard-block return theorem, on the actual punctured structures, uniform in the needed scales, volumes, boundary histories and complex sources, with every constraint/FP Jacobian and the full returned denominator controlled, and a bound stable under iteration**? This is one theorem contract, not a claim that its components are easy. A proof at that scope would change the comparison; a finite constrained Gaussian calculation would not. For H2 its statement must also cover the soft seam collar and its transitions. Until such a construction is supplied and the owner rules, decision 4 remains unchanged.
+> **ARGUED — precisely what a switch loses.** Retire the actual finite-κ response, Hessian, covariance, calibration and normaliser formulas as evidence for the new model (G5–G10,G13,G18); rebuild the microscopic small-field/FP/source instances, determinant/flow matching and actual returned atoms (G14–G17,G20–G24). Replace automatic all-fine-weight smoothing (G1), the finite-cost seam option (G2) and the exact SU(2) soft filter (G26). Preserve all abstract algebra, corrected generic cluster tools, matched-map geometry and applicable lower bounds, plus fine Wilson/RP/transfer results (G3,G4,G7,G16,G22–G28). No completed full-proof theorem is being forfeited, because none has been established.
+
+**ARGUED — revised switch disposition.** The changed soft instances are G5–G10/G13–G24 and I1–I5 where explicitly assigned: in particular the finite-κ cubic representative/soft vertices, the actual Node A conditioned law, off-global hard operator applications and TSE response covariances must be rematched. G1's arbitrary-weight smoothing, G2's finite seam mismatch option and G26's exact soft filter require replacements. Preserve matched lower bounds and geometry, generic potential/norm/convexity/cluster/IVT/envelope mathematics, and fine Wilson/RP/transfer/comparator implications. I6 gives the finite named-result crosswalk; it is not an exhaustive theorem inventory for later producer work. The differential savings are only §4.1; §4.2 remains common/interface work with zero automatic savings. KEEP-SOFT remains provisional, and no full-proof result is claimed lost or completed.
+
+[R-fix 2026-10-29 B3] Original programme-level question, retained verbatim:
+
+> **OPEN — single decisive question.** Can we rebuild **one complete 4D SU(N) hard-block return theorem, on the actual punctured structures, uniform in the needed scales, volumes, boundary histories and complex sources, with every constraint/FP Jacobian and the full returned denominator controlled, and a bound stable under iteration**? This is one theorem contract, not a claim that its components are easy. A proof at that scope would change the comparison; a finite constrained Gaussian calculation would not. For H2 its statement must also cover the soft seam collar and its transitions. Until such a construction is supplied and the owner rules, decision 4 remains unchanged.
+
+**OPEN — decisive estimate.** The statement HRT below replaces the earlier unspecific question. A construction meeting all its domains, full-measure identity, quantitative estimates and iteration requirements would justify reconsidering KEEP-SOFT. An isolated gap or Gaussian computation would not. The construction, its constants and its proof remain OPEN; decision 4 remains unchanged.
+
+### 8.1 HRT: a specified OPEN hard-return contract
+
+[R-fix 2026-10-29 B3] **Proposed theorem statement, not a theorem proved here.** HRT asks for existence of one map/measure/return construction in the class below, with one fixed tuple of constants satisfying the displayed inequalities. Neither that class's nonemptiness nor its estimates are supplied by the literature comparison. The tuple may depend on N,L and the fixed source/polymer rates; it must not depend on step j, total depth K, torus size, admissible history, boundary datum or source configuration. Concrete values and every norm-conversion constant must accompany any claimed proof. This formulation can fail by a map incompatibility, a zero, a norm violation, an unpriced sector or failed closure; none is ruled out by its statement.
+
+**HRT-a: maps and real domains.** Fix N≥2, odd L≥3, d=4, every finite hypercubic torus with terminal side T≥3 and every K≥1. Quantify over families B_j:SU(N)^(E_j)→SU(N)^(E_(j+1)) with the following defining properties: everywhere measurable group values; dependence on a fixed r_B-neighbourhood of each block bond in own-scale units; endpoint gauge covariance under root evaluation; compatibility with translations, coordinate permutations, link reversal and the reflections used by the chosen fine-observable geometry. On every regular chart used for the return, B_j is real analytic, extends holomorphically and is a submersion after the stated gauge quotient. In the matched-observable subclass B_j is S4″ on its domain, and its completion is the map used to define the hard route's deterministic observable hierarchy at every level. An extension with this symmetry/locality/regularity is an **open construction**, not a polar projection silently assumed at zero mean. A different B_j requires a quantitative observable bridge and earns no C7 saving.
+
+Use HIST.md §7.1 histories h=(U_0,...,U_(K−1)): new unreturned *-components have size >n_sharp, avoid the previous one-step shadow Σ=N_1π, and determine the punctured active regions Λ_j and their fixed collars. Include disconnected regions, small tori and all feasible holonomy sectors; gauge fixing may remove only gauge directions. The real external data are all SU(N) links on the frozen complement and coarse links on the active region for which the specified local charts cover the good collar with margin ε_1/2. No global-potential-small restriction may replace this curvature/local condition without identifying and pricing its complement. Use the fixed interior-plaquette test χ_Q=product_(p inside Q) 1{||1−U_p||_op<ε_1} of RLARGE §0. Additional map/chart/gauge/regularity tests must be explicit fixed real tests; their failures join the defect set and must receive the same history-price accounting. Empty fibres and zero-mass references are failure sectors, never silently divided by. Their treatment is part of HRT-e, including any map-critical set of positive measure.
+
+**HRT-b: exact action, quotient and return ratio.** At input j the unnormalized density ρ_(j,h)(U;z) is the *actual* density obtained from the previous step, including its vacuum, Wilson coefficient u_j=1/g_j², inherited polymers, boundary/reference terms and original source insertions. At j=0 it is exactly the Wilson density with those sources. It is not defined by identifying a classical minimum with a quantum density. Divide only the gauge group acting trivially on the fixed collar and coarse anchors, with normalized Haar orbit measure. If a slice atlas is used, supply a partition of unity and exact FP identity covering that quotient. On each regular fibre its measure is
+
+    dν_(B,V,η) = (Δ_FP · J_Haar · w_atlas / J_B) dH_fibre,
+    J_B = sqrt(det(DB DB*)) on the quotient normal space.
+
+Here Δ_FP is the actual slice determinant, J_Haar the coordinate Haar Jacobian (omit it if already included in dH_fibre), and w_atlas the partition weight; every factor occurs once. Retain orbit/zero-mode constants and all boundary/forest factors. This is the coarea form of the normalized group-Dirac kernel, not an independently chosen fibre probability measure. Proving the actual atlas/coarea identity and treating its complement is part of HRT, as is any complex-contour version.
+
+Insert the next-level real indicators before integrating the current level, in HIST's RS order. Let χ_h be the complete retained-history indicator. Let χ_ref require no new defect in the prospective returned region. Let χ_ret be the disjoint sum of that event and all allowed returned defect configurations whose *-components have size ≤n_sharp, with the exact collar-bad branch retained separately as prescribed by HIST §7.1. These are functions of the real fields and fixed data, independent of z. With the same fibre, action, sources, gauge convention and outside factors in both integrals, define
+
+    Z_ref(j,h,z;V,η) = ∫ χ_h χ_ref ρ_(j,h)(U;z) dν_(B,V,η),
+    Z_ret(j,h,z;V,η) = ∫ χ_h χ_ret ρ_(j,h)(U;z) dν_(B,V,η),
+    Xi^H_(j,h)(z;V,η) = Z_ret / Z_ref.
+
+Any further reference normalization is an explicitly displayed factor in both definitions or in their ratio; it cannot be replaced by a single-link normalizer. The complementary large-field/failed-return integrals remain in the full density. A coordinate/whitening proof must identify its complete P exp(−S_crit) det(K)^(-1/2) N_chi Z_red decomposition as in RECOVERY_CLUSTER_ASTRA.md §5, including the source linear term. S_crit is the stationary value of that *exact coordinate action on the constraint*, including measure terms assigned to it, not a different Wilson-only minimum. No positivity/minimum/branch identification is inferred from this convention. A moving-indicator holomorphic continuation is not assumed.
+
+**HRT-c: original sources and the output norm.** Take the original fine-site clover sources η_x in the actual product polydisc D_r={|η_x|<r for every original site x}, with r>0 fixed. The insertion is exp(sum_x a⁴η_x e_a(x)); equivalently its exact clover linear map shifts the original plaquette coefficient u_0 by h_η(p). Use the same original η coordinates throughout the chain, as in SRCCD55.md §3.2 and the fixed-reference return construction. Also require a coefficient-field polydisc for the local step: |ζ_p|<r, multiplying u_j s(U_p) by 1+ζ_p; in the tree-background application restrict to the explicitly defined coefficient class ||ζ||_cf=||ζ_W||_∞+[ζ_W]_α^∞+max_l||ζ_(S,l)||_∞≤r_cf, with the Hölder seminorm in that level's lattice units and r_cf fixed. Arbitrary η and these coefficient variations are not identified. Their maps into each actual input action and the admissible radii must be proved. In the all-hard bulk ζ_(S,l) is absent; it remains on H2's soft bonds. A fixed complex top-field chart of radius ρ>0 about each admitted real datum is also required for the C³ extraction; its indicators need a proved fixed-domain/contour representation. Failure of that representation leaves HRT open.
+
+For connected sets X of level-(j+1) activity blocks, including every connector and halo read by the activity, define
+
+    ||E||_(μ,r,ρ) = sup_b sum_(X contains b) exp(μ |X|)
+                   sup_(η in D_r, ζ in the stated domain, V in the ρ-chart)
+                   |E_X(η,ζ,V; frozen η_boundary)|.
+
+(The boundary symbol η_boundary denotes fixed real links, not the clover source.) All suprema include the admissible histories/data above. Supports are in *original source coordinates*: E_X is independent of sources outside the complete physical read set attached to X. [R-fix 2026-10-29 B3] Source derivatives must retain connected marked supports. For smeared e insertions f_i, define the marked norm by putting sup|D^n E_X[f_1,...,f_n]| / product_i w_(j,X)(f_i) inside the same rooted sum over X. A zero weight requires the corresponding derivative to vanish, with 0/0 defined as 0; otherwise the norm is infinite. Require this marked norm to be at most C_m^n n! r^(−n) times the applicable activity budget (epsilon_j for the returned logarithm), where
+
+    w_(j,X)(f) = min{ ||f||_∞,
+                        ell_(j+1)^(-4) sum_(x in physical read set X) a⁴ |f(x)| }.
+
+[R-fix 2026-10-29 B3] Superseded intermediate marked-norm wording, retained verbatim (its right side still had a free X):
+
+> Source derivatives must retain connected marked supports. For smeared e insertions f_i supported in that read set, require the marked rooted sums, weighted by exp(μ|X|), to obey C_m^n n! r^(−n) times the activity budget times product_i w_(j,X)(f_i), where
+
+This is an additional bound to prove, not a Cauchy consequence of an unweighted sup norm. It names the volume-fraction information missing from the pointwise inference in SRCCD55 E12. The 47-operator list's non-e insertions require their explicitly differentiated Ward/source activities and matching bounds; an e-only theorem is a bounded partial result, not full source closure. Connected support-size decay with μ>0 pays the spanning-tree distance, after explicit conversion to the consumers' polymer distance. Use μ+2 for the interaction norm when applying CX-R, and establish its h≤1/4 condition on the actual constrained product coordinates.
+
+**HRT-d: quantitative return and induction bounds.** There must be constants μ,r,ρ,a_ret,C_ret,C_ext,γ>0 and p≥0, all fixed as above, for which Z_ref and Z_ret are nonzero on these complex domains, Xi has the real-positive logarithm at zero source continued holomorphically, and
+
+    log Xi^H_(j,h) = sum_(X connected) E^H_(j,h)(X),
+    ||E^H_(j,h)||_(μ,r,ρ) ≤ epsilon_j := C_ret g_j^(−p) exp(−a_ret/g_j²),
+    epsilon_j ≤ min{1/256, g_j^6/(4 C_ext)}   for 0<g_j≤γ.
+
+C_ext is an explicitly established operator bound for vacuum/coupling extraction from this norm, including the C³/Cauchy and gauge-averaging costs; it is not set to one by convention. Thus the returned coupling increment obeys |δβ_j|≤g_j^6/4 and fits RLARGE.md:198–202's g_j^6 budget. The above is a full-ratio norm: any uncancelled main action, determinant or cutoff logarithm is included, rather than hidden in a reduced denominator.
+
+For an explicit iteration class take centered, gauge-invariant irrelevant input polymers with ||E_in||_(μ,r,ρ)≤1/64 and their marked version, and demand the ordinary reference step (with its prescribed vacuum/quadratic extraction) satisfy ||E_ref,out||≤(1/2)||E_in||+1/256. Adding the return then gives ||E_out||≤1/64. This is a proposed sufficient budget for SF-irr, not an already verified estimate for either model. Output must have the same activity support meaning, radii, chart/atlas coverage and exact measure form. If a construction instead uses the lane's sharper coupling-dependent polymer budget, it must display the embedding and the reproduced inequality; a weaker norm with no consumer conversion does not meet HRT.
+
+In addition, require the actual combined step's own coupling sequence to satisfy
+
+    u_(j+1) − u_j = −b_j − ρ_j,   |ρ_j|≤C_ρ g_j²,
+    beta_- (m−i) log L − R ≤ u_i−u_m
+                          ≤ beta_+ (m−i) log L + R   (0≤i≤m≤j+1),
+
+with the same constants at the next step, using only data at levels ≤j. Fix beta_-,R before C_ρ and choose γ as in FLOW.md §9; prove the actual one-loop/finite-volume identity needed for b_j, rather than import a scalar or soft value. This ties the return budget to FLOW F-ind and excludes a terminal-coupling assumption used circularly to prove the next step. Base case, last step and any trial-parameter fixed point are part of the requested construction.
+
+**HRT-e: history and H2 closure.** On real data require the *unrenormalized* history weights of the complete hard/mixed chain, with every failed test and complement included, to obey the RLF-3′/H-w′ comparison to Z(empty):
+
+    Z(h) ≤ Z(empty) exp[B_0 sum_(j,D) sum_(k≥j) |sh_k(D)|]
+                     product_(j,D) (C_l exp(−a u_j))^|D|,
+    sum_(h≠empty) Z(h) ≤ Z(empty)
+                 {exp[C_H |T| exp(−(n_sharp+1)a/g_K²)] − 1}.
+
+The constants a,B_0,C_l,C_H,n_sharp are uniform and must satisfy the actual HIST counting/smallness inequalities after all losses. This is an output to prove, not the target assumed as an unnamed hypothesis. It retains the correct empty-history reference and does not identify it with the small-field reference. The vacuum/coupling extraction and the NA-empty comparison in RLARGE.md §1.2 must also be supplied to connect the two. Complex returned-sector bounds alone do not price the outer sea.
+
+For H2 let r_atom be the largest finite activity read halo (including original-source, chart and map reads); choose a symmetry-equivariant soft seam collar of width w≥r_B+r_atom+2 in own-scale blocks, independent of K. All atoms crossing its inner edge enter the *same* rooted/marked norm and epsilon_j budget. Infinite-range covariance tails are decomposed with their full connectors and charged in that norm, never declared to fit a finite collar. Taylor-extraction boxes of radius R_ext are a distinct collar: terms whose extraction boxes hit a hole or the hard/soft interface remain boundary activities with the same bound, as in HIST §7.1. Do not enlarge the persistent history shadow by R_ext; doing so would change its entropy. If w or r_atom must grow with j, the proposed fixed-width H2 contract has not been met until a separately specified uniform entropy-and-norm version is proved. Seam transparency/all-coarse-field OS matching remains CW8 beyond this return test.
+
+[R-fix 2026-10-29 B3] **OPEN scientific obligations.** Exhibit an admissible global map/completion, cover all consumer data or price the excluded sectors, prove the constrained analytic measure identity and source/marked bounds, and establish HRT-d/e including H2 crossing activities. These are explicitly requested outputs, not premises claimed available. B3's correction is the statement of this test; no hard-return, multilevel source, existence or mass-gap theorem has been established by writing it. Independent review of the proposed contract is still required before using it as a research theorem.
 
 ## 9. Completion and validation boundary
 
-**PROVEN / QUOTED — delivered scope.** P1–P4 supply finite mathematical comparisons; C1–C15 price the identified costs; G1–G28 record gains and portability; H1–H4 check concrete hybrids; R1–R10 specify self-contained rebuild units with named credit. Literature scope and local review corrections are stated explicitly. No optional numerical mathematical experiment was run: the disputed marginal identity is settled directly by normalisation, so a finite-group sample would add no evidence.
+[R-fix 2026-10-29 B1] Original completion statement, retained verbatim:
 
-**ARGUED — limitations.** This is the requested author recommendation. It is not an independent audit of every underlying proof, a proof of a hard Yang–Mills RG step, or a change to owner decisions. The separate reviewer has not run. The saved search inventory and source manifests are provenance/locator tools, not mathematical validation. The final mechanical checks and exact source receipts are recorded in SOFTHARD_LOG.md and `checks/sh_validation.json`.
+> **PROVEN / QUOTED — delivered scope.** P1–P4 supply finite mathematical comparisons; C1–C15 price the identified costs; G1–G28 record gains and portability; H1–H4 check concrete hybrids; R1–R10 specify self-contained rebuild units with named credit. Literature scope and local review corrections are stated explicitly. No optional numerical mathematical experiment was run: the disputed marginal identity is settled directly by normalisation, so a finite-group sample would add no evidence.
+
+[R-fix 2026-10-29 B1] **Revised delivered scope.** The finite comparisons P1–P4 and the original evidence remain visible. The operative differential ledger is §4.1, common/interface work is §4.2, and the finite reviewed-result crosswalk is §5.1. HRT is an OPEN proposed contract, not an additional proved comparison. The repair confers no scientific or audit status.
+
+[R-fix 2026-10-29 B4] Original completion statement, retained verbatim:
+
+> **ARGUED — limitations.** This is the requested author recommendation. It is not an independent audit of every underlying proof, a proof of a hard Yang–Mills RG step, or a change to owner decisions. The separate reviewer has not run. The saved search inventory and source manifests are provenance/locator tools, not mathematical validation. The final mechanical checks and exact source receipts are recorded in SOFTHARD_LOG.md and `checks/sh_validation.json`.
+
+[R-fix 2026-10-29 B4] **Revision and verification boundary.** REVIEW_SOFTHARD has run and requested B1–B4; this author revision does not overwrite that HOLD or claim fresh independent approval. The original receipts remain frozen. The new criteria, checker and results use `checks/sh_revision_v2*`, with file-edit receipts in SOFTHARD_LOG.md. The original six supplied external PDFs are absent from this workspace and the searched project/tmp locations. Four Dimock downloads are available at identical hashes in `lit_local/`. **Open residue B4:** fresh verification of the two quotation fragments from the missing axial/multiscale PDFs, and of all six unavailable original external PDF hashes, cannot be completed from these local inputs. This is unavailable-source residue, not an observed sandbox denial. The corrected Dimock II locator was checked directly. Available-input quote/path/hash results and any other failures are reported by the single v2 run; they are documentation checks, not independent mathematical verification.

@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_exact.py", line 158, in <module>
+    ck('zero_mass_histories_retained_as_zero',any(v==Q() for k,v in direct_hist.items() if k))
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_exact.py", line 14, in ck
+    assert condition, name
+           ^^^^^^^^^
+AssertionError: zero_mass_histories_retained_as_zero

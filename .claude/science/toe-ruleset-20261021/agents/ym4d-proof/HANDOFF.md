@@ -32,20 +32,53 @@ Continuation baseline: `962f97c259d8c241df632a07e27f498f4ad33b09`.
 Methodology refreshed at `ca2bc7ddf64790da96cd43d42017d000fbfe4808`;
 the methodology sources are unchanged from `6c269770273c3fe00de350d5a3c14cacb70c2833`.
 
+### Three new frozen author candidates — independent review active
+
+The [full-colour residual continuation](RESIDUAL_FULL_COLOUR_ASTRA.md) proposes
+zero complete one-loop residual in the specified infinite-volume/Bloch,
+volume-before-momentum limit. Neutral Wilson finite terms, scalar and harmonic
+Gram factors and periodic projector defects are retained. Depth-uniform tree
+producers and nonlinear finite-volume flow remain open.
+
+The [actual hard-history return](SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md) gives
+an exact raw-Haar source-compensated history partition and a proposed
+completion-good source-local gas, including a fixed positive relative-source
+radius. Its failure weights and the normalized sea expectation remain
+unpriced. Full histories/induction, N1/N2 and coarse holomorphy remain open.
+
+The [local physical transfer construction](MASS_GAP_LOCAL_BLOCK_ASTRA.md)
+proposes a volume-independent plaquette witness at every finite positive
+beta and a physical-time contraction for 0<beta<=1/32. Its thermodynamic
+endpoint and [full-space injectivity supplement](checks/massgap_block_injectivity.md)
+are fixed-spacing claims, under fresh independent review. Neither supplies
+the ultraviolet crossover or a continuum finite-energy witness.
+
+Seven author programs reproduce all 264 predicates with empty stderr:
+74 source/history predicates, 131 physical-transfer predicates and 59
+full-colour predicates. [Coordinator bindings](checks/full_proof_three_candidates_bindings.json)
+verify 55 frozen files and 66 source/methodology bindings. These reproductions
+are not independent mathematical verdicts; three fresh Astra/max reviewers
+are checking the arguments. All earlier failed attempts are retained. Both
+full existence and the physical continuum mass gap remain open.
+
+The owner has additionally requested an arXiv/primary-literature pass for
+every key block. Each reviewer is checking relevant established constructions
+and their exact hypotheses; the coordinator is covering the wider
+reconstruction/symmetry/nontriviality interfaces. No external theorem is
+adopted solely from an abstract or title.
+
 Current assignments use fresh `gpt-6-astra / max` contexts:
 
-- **Residual determinant author — full-colour extension active:** finite/model,
-  harmonic-lattice and actual vertex units are frozen separately. The last
-  unit's zero residual in the stated paired-root regulator sector is now
-  independently confirmed. Neutral/full-periodic matching and the uniform
-  tree producers remain open and are the next construction targets.
-- **Source-local return author — hard-history construction active:** actual
-  level-zero operator localization, all-order global-chart source
-  substitution and exact return identities are independently checked at
-  their stated scope. The separate fixed-reference and normalized-face
-  construction is now independently checked at its selected-sector scope.
-  The next unit targets actual hard histories and collar/return matching;
-  these and higher-level interfaces remain open.
+- **Residual determinant — full-colour review active:** the finite/model,
+  harmonic and charged-vertex units are independently checked. The separate
+  full-colour candidate is frozen; a fresh reviewer is checking its neutral
+  factors, periodic/Bloch comparison and actual consumer. Uniform tree and
+  nonlinear flow producers remain open.
+- **Source-local return — hard-history review active:** the original and
+  selected-sector continuations are independently checked. The new raw-Haar
+  history/source construction is frozen and under fresh review. Its successful
+  gas has a fixed positive relative-source radius; the failure/sea estimate,
+  all-field source representation and higher-level interfaces remain open.
 - **Independent UIR reviewer — completed:** the frozen recovery argument
   has been checked through distinct derivations and an independent program;
   its bounded claims are confirmed with explicit conditional/open limits.
@@ -67,11 +100,11 @@ Current assignments use fresh `gpt-6-astra / max` contexts:
   are confirmed. The same reviewer has completed the separate conditional
   mass-gap criterion and actual vertex reviews. The latter confirms the
   charged-sector zero coefficient at each fixed depth in the stated limit order.
-- **Physical mass-gap author — local/block construction active:** actual full
-  finite-volume Wilson transfer bound and exact SU(2) soft-loop/source
-  transport are independently checked after three narrow corrections.
-  Their bound loses volume uniformity. The next unit targets Wilson-specific
-  local/block estimates; no crossover or physical gap is established.
+- **Physical mass-gap — local/block review active:** the first finite-volume
+  transfer and SU(2) source unit is independently checked. A separate all-beta
+  local witness and small-beta fixed-spacing endpoint are frozen and under
+  fresh review, including the full-space injectivity supplement. No continuum
+  crossover or cutoff-uniform physical gap is established.
 - **Fresh mass-gap construction reviewer — completed:** finite transfer,
   normalized SU(2) forward images and source identities confirmed at their
   explicit scope. No MG row or full publication/landing packet is certified.

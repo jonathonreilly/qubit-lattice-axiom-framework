@@ -1,0 +1,54 @@
+{
+  "frozen_utc": "2026-10-29T16:26:42.990521+00:00",
+  "status": "author candidate, pending independent review",
+  "scope": "FC1-FC20: actual neutral quartic and finite domains, volume-first periodic Taylor/a.e.-Bloch comparison, full-colour residual coefficient, and explicit conditional neutral producer; no physical mass-gap claim",
+  "head_at_freeze": "63e393bb56f1c51733aabedfca20b65786ee87f3",
+  "files": {
+    "RESIDUAL_FULL_COLOUR_ASTRA.md": {
+      "sha256": "e18ce796044a7f1a1f0a086043e5c072ed7e8b7da9af5097ff34e64526de7944",
+      "bytes": 36936
+    },
+    "checks/residual_full_colour_inputs.json": {
+      "sha256": "8b580dc580aa95f36212c62639e5f269235406da0ea0f2bbd2152a26dff1b0e0",
+      "bytes": 1376
+    },
+    "checks/residual_full_colour_01_criteria.md": {
+      "sha256": "19060a0066c2e5d40cbcadd2dcc790f6f0bb9bcd3f108a2312ba92e6355fd9b0",
+      "bytes": 2237
+    },
+    "checks/residual_full_colour_01.py": {
+      "sha256": "f641b8b84d30ee4df34145160a60abd31238c15fb1a252fecdff24bcf7ced29f",
+      "bytes": 5489
+    },
+    "checks/residual_full_colour_01_out.json": {
+      "sha256": "767732c60410d75dc66efc25f6945841f851be8267f2ee9a57cea78d3477a359",
+      "bytes": 3860
+    },
+    "checks/residual_full_colour_01_err.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "checks/residual_full_colour_02_criteria.md": {
+      "sha256": "d206c4cd5e6174e14e3ee00862e8e64b087a12162db46754b9a719447e44e76b",
+      "bytes": 2093
+    },
+    "checks/residual_full_colour_02.py": {
+      "sha256": "9e656ac0e2a72ac98cc6b4c52940f662b95b3911df6310bc254c7daab98a4e52",
+      "bytes": 4249
+    },
+    "checks/residual_full_colour_02_out.json": {
+      "sha256": "54907736019b5526f8d5490bca00ca08a214b24eaad3ab191718d5a84f32679a",
+      "bytes": 3059
+    },
+    "checks/residual_full_colour_02_err.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  },
+  "checks": {
+    "01": 34,
+    "02": 25,
+    "total": 59,
+    "stderr": "both empty"
+  }
+}

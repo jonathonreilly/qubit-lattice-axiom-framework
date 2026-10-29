@@ -176,6 +176,20 @@
 > the bounded results after three corrections; its 50 controls reproduce.
 > No physical-gap target row or full-theory obligation closes.
 
+> **Three new author candidates, independent review active:**
+> [Full-colour residual](RESIDUAL_FULL_COLOUR_ASTRA.md) proposes the complete
+> coefficient cancellation with neutral/periodic factors retained, at fixed
+> depth and in the stated volume-first limit. [Actual hard-history return](SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md)
+> proposes the source-compensated raw partition and completion-good gas with
+> a fixed relative-source radius; failures and the sea average remain unpriced.
+> [Local physical transfer](MASS_GAP_LOCAL_BLOCK_ASTRA.md), including its
+> [injectivity supplement](checks/massgap_block_injectivity.md), proposes an
+> all-beta local witness and a small-beta fixed-spacing thermodynamic endpoint.
+> All 264 author predicates reproduce. Three fresh Astra/max reviews are in
+> progress; no full existence, continuum mass gap, nonlinear flow or N1/N2
+> closure is asserted. The requested primary-literature integration pass is
+> also active. Exact scopes and evidence are in [HANDOFF.md](HANDOFF.md).
+
 > **PROVENANCE WARNING (2026-10-28T22:11:08Z, lead now claude-opus-5-5).** Every Claude-authored result in sessions 24 and 25 — lead consolidation and all worker files, commits 811b8ed6de through 666a71b7b9 — was produced on **claude-opus-5**, not the owner-required model (Claude: Opus 5.5 at extra effort or higher; Codex: gpt-6-astra at max). The owner has ruled that work likely unreliable. **Treat every session-24/25 status, fix, flag, refutation and number in this file as PROVISIONAL** until the Opus 5.5 review sweep recorded in SESSION25_RESULTS.md §PROVENANCE has re-established it. The only session-24/25 checks run at an approved setting are the Codex gpt-6-astra/max reviews (`CODEX_REVIEW_*.md`). The tally is reported as 72 / 2 / 7 / 24 + 1 **pending** that sweep.
 
 > **[S26-BANKED] RESULTS CONFIRMED BY BOTH MODEL FAMILIES (2026-10-28T23:39:35Z).** Each item below was established or re-derived by Claude Opus 5.5 and independently checked by Codex gpt-6-astra (max). Exact statements are in the cited files; these lines are pointers, not restatements. They are lane-level results and do not move the 105-item tally.

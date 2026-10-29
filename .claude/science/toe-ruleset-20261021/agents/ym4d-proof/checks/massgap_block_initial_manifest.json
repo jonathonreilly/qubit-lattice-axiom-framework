@@ -1,0 +1,364 @@
+{
+  "MG_rows_closed": [],
+  "analytic_claims": [
+    "All-beta local psi/A and A psi block ratios from actual Wilson Perron equation",
+    "All-beta one-step centered loop covariance eta>0 uniform in spatial volume",
+    "Exact open-slab source and mixed log-ratio covariance identities",
+    "Small-beta actual physical Doob conditional sensitivity and physical-time contraction",
+    "Fixed-spacing thermodynamic OS endpoint, full positive-time local observable state space, unique vacuum and finite positive spectral threshold"
+  ],
+  "artifacts": [
+    {
+      "bytes": 26388,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "sha256": "f7e1405bb263ea82898c96ca0c80edc8afa90aa76d45a6676f7ccab34fef0fe6"
+    },
+    {
+      "bytes": 3683,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_criteria.md",
+      "sha256": "413d1e761b150d41891c3e94af37e8cab99a8fd2996e7127d8a1e29d13e8ce9c"
+    },
+    {
+      "bytes": 17350,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_exact.py",
+      "sha256": "448734574f786ce4b039326de8b8f151bc5f3c611e5ee2f22cdae8cf0b916d12"
+    },
+    {
+      "bytes": 17079,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_results.json",
+      "sha256": "d698e8d1ecd2e262092c84762a2467cfe37b35ecd8ecc96da1e7b99282ac74e8"
+    },
+    {
+      "bytes": 153,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    }
+  ],
+  "author_unit": "Wilson local ground-state ratios, volume-independent one-step witness, actual small-beta physical Doob contraction",
+  "checks": {
+    "all_mutations_killed": true,
+    "mutation_controls": 22,
+    "passed": 108,
+    "total": 108
+  },
+  "created_utc": "2026-10-29T16:10:39.502500+00:00",
+  "exact_source_inputs": [
+    {
+      "bytes": 7507,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_TARGET.md",
+      "read_scope": "Full target read plus reviewed uniform-onset clarification",
+      "revision": "8b38c6f7b802479f763bc995d96ee45fdcc03795",
+      "sha256": "105440c10b9a2fc91b2be366f439053de05fd3d3497596f8f28993b0fe42de7b"
+    },
+    {
+      "bytes": 28890,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_CONSTRUCTION_ASTRA.md",
+      "read_scope": "Current complete finite-transfer argument and exact source identities; corrected frozen version read",
+      "revision": "0cf473e3ef0c96ad31f0ecb1443690486cfbedb8",
+      "sha256": "a5d31da82721607e0ba04fef84675706bd3f2c568644224cce7dc86b0bb968e2"
+    },
+    {
+      "bytes": 16179,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_CONSTRUCTION_ASTRA.md",
+      "read_scope": "Bounded review conclusions and three corrections; no continuum certification",
+      "revision": "94baab819b7eb80087f7616b4eaad799fa1a2541",
+      "sha256": "8ab911c6e8705c086b0fd4e12930a7a66f8ea0ad03be2bb1bff5a55a62f3c9c1"
+    },
+    {
+      "bytes": 25320,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_construction_receipt.json",
+      "read_scope": "Decision, source scope and no-MG-row disposition",
+      "revision": "94baab819b7eb80087f7616b4eaad799fa1a2541",
+      "sha256": "8a9cd34b62ed8c650f5d0a10946cd29b74ed9ced68292665c0765cec47a500bb"
+    },
+    {
+      "bytes": 771067,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "read_scope": "Setting S1-S3 re-read (lines 977ff); current S27 recovery and previously read D4-norm definitions. No whole-proof certification.",
+      "revision": "63e393bb56f1c51733aabedfca20b65786ee87f3",
+      "sha256": "9c214ca37336e089c2fc05ea8f39c6b091a8da327061e24f3a4d6372f5a30b6a"
+    },
+    {
+      "bytes": 33384,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "read_scope": "Current active target, assignments and open construction boundary; not an analytic premise",
+      "revision": "63e393bb56f1c51733aabedfca20b65786ee87f3",
+      "sha256": "cfd39c475984ccd0b8f12a3bf9400708765df92123ee27df392fed2861be0300"
+    },
+    {
+      "bytes": 203830,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HIST.md",
+      "read_scope": "First-unit same-byte sections 0 and 2 normalized chain; RG interface context only",
+      "revision": "63e393bb56f1c51733aabedfca20b65786ee87f3",
+      "sha256": "0bafb04ecda4b88f13f958026f4c817b3d536207a0de2d1f347f425e5f61097c"
+    },
+    {
+      "bytes": 14595,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_manifest.json",
+      "read_scope": "Methodology/source bindings reused, not its superseded artifact hashes or numerical totals",
+      "sha256": "5b1321d6e0fbc11e1445736fbdc61aaf5bf4ca47fee9cef2ce72783c8551dbdb"
+    },
+    {
+      "bytes": 9276,
+      "path": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md",
+      "read_scope": "Installed skill previously fully read; applicability/required-reading section re-read this unit",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4"
+    }
+  ],
+  "governance_main": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "limitations": [
+    "No ultraviolet/continuum existence theorem",
+    "No large-beta extension of half-slab covariance estimate",
+    "No exact RG crossover or source-return inverse theorem",
+    "Fixed-beta mass lower and upper bounds scale as 1/a",
+    "Full continuum finite-energy witness and common physical onset/prefactor remain open",
+    "Z2 finite graph is a labelled analogue; SU2 finite cycle is a diagnostic; neither is numerical proof of the analytic candidate",
+    "No independent audit/landing/no-go packet verdict is issued"
+  ],
+  "local_link_checks": [
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "MASS_GAP_TARGET.md"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "PROOF.md"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "PROOF.md"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "HIST.md"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "MASS_GAP_CONSTRUCTION_ASTRA.md"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "REVIEW_MASS_GAP_CONSTRUCTION_ASTRA.md"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "HANDOFF.md"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "PROOF.md"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "checks/massgap_block_manifest.json"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "../../../../../docs/WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "../../../../../docs/WILSON_STAGGERED_RAW_CONSTRAINED_ACTION_HESSIAN_DECAY_BOUNDED_THEOREM_NOTE_2026-07-12.md"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "../../../../../docs/NATIVE_GAUGE_TRANSFER_STRONG_COUPLING_GAP_NARROW_THEOREM_NOTE_2026-06-12.md"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "../../../../../docs/FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "checks/massgap_block_criteria.md"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "checks/massgap_block_exact.py"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "checks/massgap_block_results.json"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "checks/massgap_block_manifest.json"
+    },
+    {
+      "exists": true,
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "MASS_GAP_CONSTRUCTION_ASTRA.md"
+    }
+  ],
+  "methodology_and_prior_art": [
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "read_scope": "Same-revision first-unit read reused; relevant endpoint sections re-read in this unit where stated.",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "read_scope": "Same-revision first-unit read reused; relevant endpoint sections re-read in this unit where stated.",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "read_scope": "Same-revision first-unit read reused; relevant endpoint sections re-read in this unit where stated.",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "read_scope": "Same-revision first-unit read reused; relevant endpoint sections re-read in this unit where stated.",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "read_scope": "Same-revision first-unit read reused; relevant endpoint sections re-read in this unit where stated.",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "read_scope": "Same-revision first-unit read reused; relevant endpoint sections re-read in this unit where stated.",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CAMPAIGN.md",
+      "read_scope": "Same-revision first-unit read reused; relevant endpoint sections re-read in this unit where stated.",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "172be2f4301d6f32edbf4f0bf55fdfb9e045098253c6a5b475fc4446816c6666"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "read_scope": "Same-revision first-unit read reused; relevant endpoint sections re-read in this unit where stated.",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "read_scope": "Same-revision first-unit read reused; relevant endpoint sections re-read in this unit where stated.",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "read_scope": "Same-revision first-unit read reused; relevant endpoint sections re-read in this unit where stated.",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "read_scope": "Same-revision first-unit read reused; relevant endpoint sections re-read in this unit where stated.",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "read_scope": "Same-revision first-unit read reused; relevant endpoint sections re-read in this unit where stated.",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "read_scope": "Same-revision first-unit read reused; relevant endpoint sections re-read in this unit where stated.",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    {
+      "path": "docs/WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md",
+      "read_scope": "Same-revision first-unit read reused; relevant endpoint sections re-read in this unit where stated.",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "f6b39e5a1b23b62053b1fdb53c2eedbadc34628ff12a7a9a058b2c91c483a711"
+    },
+    {
+      "path": "docs/WILSON_STAGGERED_RAW_CONSTRAINED_ACTION_HESSIAN_DECAY_BOUNDED_THEOREM_NOTE_2026-07-12.md",
+      "read_scope": "Same-revision first-unit read reused; relevant endpoint sections re-read in this unit where stated.",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "0bfb6dd97b50c569233b1b152c543ce091dd2db1c29d64c41de88c9348799636"
+    },
+    {
+      "path": "docs/NATIVE_GAUGE_TRANSFER_STRONG_COUPLING_GAP_NARROW_THEOREM_NOTE_2026-06-12.md",
+      "read_scope": "Same-revision first-unit read reused; relevant endpoint sections re-read in this unit where stated.",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "f81916765febda3dd378650d3298cd2a2afc368824ea14e618607a71a472dc80"
+    },
+    {
+      "path": "docs/FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md",
+      "read_scope": "Same-revision first-unit read reused; relevant endpoint sections re-read in this unit where stated.",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology/primitive boundary or prior-art context; no imported infrared conclusion",
+      "sha256": "d8ba4a2c73d6bb897d3ebea4601f4a89a53e37830b582b0df40f5f3d67494bf1"
+    },
+    {
+      "path": "AGENTS.md",
+      "read_scope": "Same-revision governance read from first unit, retained for this continuation.",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology only",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/route-patterns.md",
+      "read_scope": "Same-revision governance read from first unit, retained for this continuation.",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "role": "methodology only",
+      "sha256": "912f9616bf83a5b8d43674b0b787727f294fdac636d86aff36ee218e0a079e47"
+    }
+  ],
+  "search": {
+    "queries": [
+      "ground-state ratio",
+      "ground state ratio",
+      "half-slab",
+      "one-step covariance lower",
+      "finite-energy witness",
+      "local rank-one"
+    ],
+    "result": "No matching current-main Wilson local ratio/witness construction found in bounded keyword sweep. This is not a global novelty search.",
+    "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808"
+  },
+  "status": "Frozen author candidate; independent review pending; no MG0-MG5 closure",
+  "working_head": "63e393bb56f1c51733aabedfca20b65786ee87f3"
+}

@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-10-29T15:47:38.410971+00:00",
+  "methodology": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "files": {
+    "REVIEW_RESIDUAL_VERTICES_ASTRA.md": "0b5bcc1bd076efa296bf66f83ea5d072b6b9dccab7b42dc2245c96b1cc81dc8c",
+    "checks/residual_det_vertices_working.md": "aa16239e801d371c7242a342b339ed5dfeec8fa75f5dd8a3ac3a128a84989d56",
+    "checks/residual_det_lattice_bridge_working.md": "bb67ad564747c4c9954ae93f88aa3f43a806c88b0aefedd5ef54a945e1512c6b",
+    "UIR55.md": "4c6d80473a80714e2a5aa1e241e8835648bbe3c65a7bca38a5758faf3c5accb4",
+    "UIR2_55.md": "bc10b5cc37c8f10cb339e234a3ca3aa252fd401cfb75476334c8c94aa8f5a6f3",
+    "FLOW.md": "085cd225228a23847b053650fe8bff4c14529d7e630a74565b301d39855e442f",
+    "FLOW55.md": "56d2707f4b571585db26cf2a077dbaee57bc936c76821cdbc50710e4b36e9d25",
+    "RECOVERY_UIR_ASTRA.md": "0cbb4f9a967022ab669cae087617f390b2bfb481034012aac85e7cfc9928bc40"
+  },
+  "reread_dependencies": {
+    "REVIEW_RESIDUAL_LATTICE_BRIDGE_ASTRA.md": "57fb90b190ccc3280f841b5343aa24d4913aafe5d646e512d01c34799fa6c43b",
+    "BFT34_55.md": "f714a647910c4fd19570ecd192b98144b6c54d37c8c4f30c73bd20d426ef717d",
+    "CODEX_REVIEW_UIR.md": "74860ce5d301819ec626940ff1d6cf1a6326cb9c2639c9329a7f1083e087b952",
+    "REVIEW_RECOVERY_UIR_ASTRA.md": "347b7ae680b2c305cc7bb5de8b4496d069bbea309a6df71f18109c54a22c4098"
+  },
+  "initial_source_drift": {}
+}

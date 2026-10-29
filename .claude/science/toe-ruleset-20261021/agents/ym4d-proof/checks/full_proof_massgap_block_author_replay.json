@@ -1,0 +1,27 @@
+{
+  "started_utc": "2026-10-29T16:34:41.437650+00:00",
+  "finished_utc": "2026-10-29T16:34:41.780998+00:00",
+  "script": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_exact.py",
+  "script_sha256": "448734574f786ce4b039326de8b8f151bc5f3c611e5ee2f22cdae8cf0b916d12",
+  "execution": "Byte-identical script copied into an isolated temporary directory to preserve author result files",
+  "command_argv": [
+    "/usr/local/bin/python3",
+    "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym4d-frozen-author-replay-jityhkeh/massgap_block_exact.py"
+  ],
+  "cwd": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "exit_code": 0,
+  "console_stdout": "{\"all_passed\": true, \"passed\": 108, \"total\": 108}\n",
+  "stderr_bytes": 0,
+  "output_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_massgap_block_author_replay_out.json",
+  "output_sha256": "d698e8d1ecd2e262092c84762a2467cfe37b35ecd8ecc96da1e7b99282ac74e8",
+  "expected_output": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_results.json",
+  "expected_sha256": "d698e8d1ecd2e262092c84762a2467cfe37b35ecd8ecc96da1e7b99282ac74e8",
+  "identical_except_elapsed_seconds": true,
+  "ignored_comparison_fields": [
+    "elapsed_seconds"
+  ],
+  "counts": {
+    "passed": 108,
+    "total": 108
+  }
+}

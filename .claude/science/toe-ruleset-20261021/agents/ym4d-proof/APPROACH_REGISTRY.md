@@ -40,3 +40,40 @@ when stating the completed theorem.
 An unsuccessful construction will be preserved with its exact failed step.
 It will not be promoted into a global no-go or route-exhaustion claim. New
 findings are incorporated here only with source and evidence pointers.
+
+## Latest producer candidates and literature comparison
+
+### Three new frozen author candidates — independent review active
+
+The [full-colour residual continuation](RESIDUAL_FULL_COLOUR_ASTRA.md) proposes
+zero complete one-loop residual in the specified infinite-volume/Bloch,
+volume-before-momentum limit. Neutral Wilson finite terms, scalar and harmonic
+Gram factors and periodic projector defects are retained. Depth-uniform tree
+producers and nonlinear finite-volume flow remain open.
+
+The [actual hard-history return](SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md) gives
+an exact raw-Haar source-compensated history partition and a proposed
+completion-good source-local gas, including a fixed positive relative-source
+radius. Its failure weights and the normalized sea expectation remain
+unpriced. Full histories/induction, N1/N2 and coarse holomorphy remain open.
+
+The [local physical transfer construction](MASS_GAP_LOCAL_BLOCK_ASTRA.md)
+proposes a volume-independent plaquette witness at every finite positive
+beta and a physical-time contraction for 0<beta<=1/32. Its thermodynamic
+endpoint and [full-space injectivity supplement](checks/massgap_block_injectivity.md)
+are fixed-spacing claims, under fresh independent review. Neither supplies
+the ultraviolet crossover or a continuum finite-energy witness.
+
+Seven author programs reproduce all 264 predicates with empty stderr:
+74 source/history predicates, 131 physical-transfer predicates and 59
+full-colour predicates. [Coordinator bindings](checks/full_proof_three_candidates_bindings.json)
+verify 55 frozen files and 66 source/methodology bindings. These reproductions
+are not independent mathematical verdicts; three fresh Astra/max reviewers
+are checking the arguments. All earlier failed attempts are retained. Both
+full existence and the physical continuum mass gap remain open.
+
+The owner has additionally requested an arXiv/primary-literature pass for
+every key block. Each reviewer is checking relevant established constructions
+and their exact hypotheses; the coordinator is covering the wider
+reconstruction/symmetry/nontriviality interfaces. No external theorem is
+adopted solely from an abstract or title.

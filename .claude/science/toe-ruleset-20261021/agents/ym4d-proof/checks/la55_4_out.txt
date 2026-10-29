@@ -1,0 +1,4 @@
+E1: PASS  (6s^2+F_up)/s^2 = 8.88208 (exact comparison with 9 done in Fractions)
+E2: PASS  u_up = 0.159685
+CONTROL: FAIL  (6s^2+F_lo)/s^2 at s=1/24 = 9.33544 (designed to FAIL)
+SUMMARY: non-control FAILs = [] | control fired = True

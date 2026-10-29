@@ -2121,3 +2121,14 @@ per-step control with the coupling as spectator gives log²(1/a) growth — (Flo
 path. Proposition HOM: SA-F's Cauchy argument fails for position-dependent couplings.** 6 inherited REFUTED (incl. SRC-poly
 for singletons; the sup-norm coupling ball; "OS0 needs large-field product moments" → (LF-src) at ONE level). **Codex review
 launched (CODEX_REVIEW_SRC2.md). Launched: FLOWPOS55** — (Flow-pos) for plane-dependent couplings (also the sphere's ML4).
+
+**LANEA55 — finished** (claude-opus-5-5, max). **16 of the 17 hidden lane-A premises re-derived in full at Opus 5.5; none
+refuted as a statement**; N2-lin (H1) (unused by banked results) not re-derived. **The 9-vs-144 conflict resolves in favour
+of 9:** a direct proof gives |q_p| ≤ 9s_j² for s_j ≤ 1/27 (degree-2 part ≤ 6s², exact-rational tail; la55_2/4) — the cited BCH
+argument gives only 144 (so the banked override note's "144" is conservative, not wrong). LR-pot stays on the chain (feeds FP
+→ TOP♯ → K^(σ), W0, YH). **LINEAR_PACKAGE Theorem 4.2 sits under Proposition W — the whole banked weighted chain rests on it;
+re-derived, five (η, r_0) pairs verified in exact intervals (la55_3)**; Theorem 4.2′ not needed (replace m_*′ by m_*; add
+L^c ≥ 6 ln 2/(16m_*)). Bookkeeping: BFT_B's ĵ_0, Lemma FT (iii) max→sum, C_C collision, LED-unif typo. **Codex review launched
+(CODEX_REVIEW_LANEA.md) — if confirmed, the "named lane-A inputs" premise under K^(σ)/GV-E/BFT-E/NSL/BFT-1..4 (a) is
+discharged. Launched: INDUCT55** — Codex item 11: the RG induction (R_m) ⇒ (R_{m+1}), the flow/large-field fixed point, and
+every two-sided window with its constants as outputs.

@@ -1,0 +1,9 @@
+C1: PASS  4*3*80*2*(8/7)^5 = 62914560/16807 = 62914560/16807
+C2: PASS  2592*(8/7)^5 = 84934656/16807
+C3: PASS  shell identity and <= 80t^3 for t<=2000; coefficient identity
+C4: PASS  tail bound at n=1: 1.644934 vs 2 (display only); n=200: 1.002504*(1/200)
+C5: PASS  48*(41/20)^5 = 347568603/200000
+C6: PASS  775 + 205*3/2 = 2165/2
+C7: PASS  Lemma Lambda telescoping sum <= 10 n^2
+CONTROL: FAIL  designed to FAIL: 48*(41/20)^5 <= 1737
+SUMMARY: non-control FAILs = [] | control fired (FAILed as designed) = True

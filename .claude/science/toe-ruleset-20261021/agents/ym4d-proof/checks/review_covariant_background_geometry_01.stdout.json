@@ -1,0 +1,138 @@
+{
+  "implementation": "independent centered matrix products, tree recursion and coarse lifts",
+  "checks": [
+    {
+      "name": "T2 all fine plaquettes equal exact face formula",
+      "passed": true,
+      "max_error": 4.475610289204863e-16,
+      "total": 7776
+    },
+    {
+      "name": "T2 each coarse plaquette has L squared copies",
+      "passed": true,
+      "multiplicities": [
+        9
+      ],
+      "coarse_count": 96
+    },
+    {
+      "name": "T2 actual centered paired contours including all wrap directions",
+      "passed": true,
+      "max_error": 0,
+      "contours": 15552
+    },
+    {
+      "name": "T2 lifted brick flat plaquettes",
+      "passed": true,
+      "max_error": 2.788141818697046e-16,
+      "plaquettes": 3888
+    },
+    {
+      "name": "T2 lifted brick gauge trivialization",
+      "passed": true,
+      "max_error": 2.788141818697046e-16,
+      "edges": 3672
+    },
+    {
+      "name": "T2 arbitrary large flat holonomy survives the lift",
+      "passed": true,
+      "curvature": 2.220446049250313e-16,
+      "holonomy_defect": 1.4034522953512514
+    },
+    {
+      "name": "T3 all fine plaquettes equal exact face formula",
+      "passed": true,
+      "max_error": 4.824323361041231e-16,
+      "total": 39366
+    },
+    {
+      "name": "T3 each coarse plaquette has L squared copies",
+      "passed": true,
+      "multiplicities": [
+        9
+      ],
+      "coarse_count": 486
+    },
+    {
+      "name": "T3 actual centered paired contours including all wrap directions",
+      "passed": true,
+      "max_error": 0,
+      "contours": 15552
+    },
+    {
+      "name": "T3 lifted brick flat plaquettes",
+      "passed": true,
+      "max_error": 4.442461802151993e-16,
+      "plaquettes": 3888
+    },
+    {
+      "name": "T3 lifted brick gauge trivialization",
+      "passed": true,
+      "max_error": 4.442461802151993e-16,
+      "edges": 3672
+    },
+    {
+      "name": "T3 arbitrary large flat holonomy survives the lift",
+      "passed": true,
+      "curvature": 2.220446049250313e-16,
+      "holonomy_defect": 1.838936765803454
+    },
+    {
+      "name": "pinned tree recursion reaches tree identity",
+      "passed": true,
+      "max_error": 1.6005512296553543e-15
+    },
+    {
+      "name": "strong-good nonabelian relative-link estimate",
+      "passed": true,
+      "relative": 9.204568186064278e-09,
+      "internal": 9.204568186064278e-09,
+      "bound": 1.2952268510726934e-05
+    },
+    {
+      "name": "strong-good coarse curvature inequality",
+      "passed": true,
+      "coarse": 4.555652732716205e-08,
+      "fine": 4.7955689653108195e-08,
+      "mismatch": 4.232304387722283e-09
+    },
+    {
+      "name": "relative principal chart includes tested large-holonomy sector",
+      "passed": true,
+      "max_log_HS": 1.3017224975209176e-08,
+      "max_trace": 3.4420590236480284e-15
+    }
+  ],
+  "controls": [
+    {
+      "name": "induced torus far seam incorrectly trivialized with brick gauge",
+      "rejected": true,
+      "defect": 1.2863234960606935
+    },
+    {
+      "name": "T2 replacing coarse holonomies by I changes actual contours",
+      "rejected": true
+    },
+    {
+      "name": "T3 replacing coarse holonomies by I changes actual contours",
+      "rejected": true
+    },
+    {
+      "name": "interior-only cut substituted for all-fine-good",
+      "rejected": true,
+      "interior": 0,
+      "all_plaquettes": 1.9636755220895952
+    },
+    {
+      "name": "principal matrix logarithm without traceless radius guard",
+      "rejected": true,
+      "log_norm": 3.6275987284684352,
+      "trace_im": 6.283185307179586
+    }
+  ],
+  "passed": 16,
+  "total": 16,
+  "controls_rejected": 5,
+  "controls_total": 5,
+  "limits": "Finite L=3 T=2,3 diagnostics; theorem quantifiers require the analytic proof. No author code imported."
+}

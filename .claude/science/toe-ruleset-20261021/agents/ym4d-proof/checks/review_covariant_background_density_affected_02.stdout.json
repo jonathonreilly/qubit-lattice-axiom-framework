@@ -1,0 +1,226 @@
+{
+  "checks": [
+    {
+      "name": "actual local matrix-path inventory",
+      "passed": true,
+      "paths": 7776,
+      "plaquettes": 486,
+      "free_links": 244,
+      "max_length": 11
+    },
+    {
+      "name": "Haar radial integral at t=0.7",
+      "passed": true,
+      "c": 0.17153304426571017,
+      "bessel": 0.17153304426570992,
+      "refinement": 1.942890293094024e-16
+    },
+    {
+      "name": "Haar radial integral at t=4.0",
+      "passed": true,
+      "c": 0.6580472673593599,
+      "bessel": 0.6580472673593596,
+      "refinement": 4.440892098500626e-16
+    },
+    {
+      "name": "Haar radial integral at t=20.0",
+      "passed": true,
+      "c": 0.9259877485828849,
+      "bessel": 0.9259877485828848,
+      "refinement": 2.220446049250313e-16
+    },
+    {
+      "name": "general SU(2) Haar Casimir coefficient",
+      "passed": true,
+      "quotients": [
+        -0.16666666941556,
+        -0.16666666709380648
+      ],
+      "expected": -0.16666666666666666
+    },
+    {
+      "name": "general SU(3) Haar Casimir coefficient",
+      "passed": true,
+      "quotients": [
+        -0.2500000031845078,
+        -0.24999999954557883
+      ],
+      "expected": -0.25
+    },
+    {
+      "name": "general SU(4) Haar Casimir coefficient",
+      "passed": true,
+      "quotients": [
+        -0.3333333364427388,
+        -0.33333333470074067
+      ],
+      "expected": -0.3333333333333333
+    },
+    {
+      "name": "general SU(7) Haar Casimir coefficient",
+      "passed": true,
+      "quotients": [
+        -0.5833333372630564,
+        -0.5833333350430507
+      ],
+      "expected": -0.5833333333333334
+    },
+    {
+      "name": "Wilson curvature error block row and column bound",
+      "passed": true,
+      "row": 3.9523222768524993,
+      "bound": 11.742916263359437,
+      "symmetry": 0.0
+    },
+    {
+      "name": "full retained-mode principal tree precision positive in diagnostic sector",
+      "passed": true,
+      "minimum": 0.028269911803970364,
+      "dimensions": 732
+    },
+    {
+      "name": "zero-Q direction with nonzero contour spread retained",
+      "passed": true,
+      "Q_norm": 2.110493590166957e-17,
+      "spread": 0.046369427007821214
+    },
+    {
+      "name": "actual complete coordinate gradient at u=3.0",
+      "passed": true,
+      "max_error": 5.828670879282072e-16
+    },
+    {
+      "name": "finite-u Hessian identity u=3.0 direction=0",
+      "passed": true,
+      "autodiff": 6.123807895979279,
+      "transported": 6.12380789597928,
+      "differences": [
+        6.123807817726146,
+        6.12380766362719
+      ]
+    },
+    {
+      "name": "finite-u Hessian identity u=3.0 direction=1",
+      "passed": true,
+      "autodiff": 6.263414022173073,
+      "transported": 6.263414022173073,
+      "differences": [
+        6.26341390574936,
+        6.263413814266983
+      ]
+    },
+    {
+      "name": "finite-u Hessian identity u=3.0 direction=2",
+      "passed": true,
+      "autodiff": 6.240267368545044,
+      "transported": 6.240267368545044,
+      "differences": [
+        6.24026637696673,
+        6.240267115487086
+      ]
+    },
+    {
+      "name": "colour-coupled Gaussian determinant u=3.0",
+      "passed": true,
+      "logdet": 10.985363973841688,
+      "cholesky": 10.985363973841688
+    },
+    {
+      "name": "actual complete coordinate gradient at u=11.0",
+      "passed": true,
+      "max_error": 8.049116928532385e-16
+    },
+    {
+      "name": "finite-u Hessian identity u=11.0 direction=0",
+      "passed": true,
+      "autodiff": 5.949522507883259,
+      "transported": 5.949522507883259,
+      "differences": [
+        5.949522430270804,
+        5.949522275727759
+      ]
+    },
+    {
+      "name": "finite-u Hessian identity u=11.0 direction=1",
+      "passed": true,
+      "autodiff": 6.0604470069249725,
+      "transported": 6.060447006924971,
+      "differences": [
+        6.060446895439497,
+        6.0604468377079
+      ]
+    },
+    {
+      "name": "finite-u Hessian identity u=11.0 direction=2",
+      "passed": true,
+      "autodiff": 6.067169690787823,
+      "transported": 6.067169690787821,
+      "differences": [
+        6.067168691448188,
+        6.067169438850328
+      ]
+    },
+    {
+      "name": "colour-coupled Gaussian determinant u=11.0",
+      "passed": true,
+      "logdet": 10.817075083787048,
+      "cholesky": 10.81707508378705
+    }
+  ],
+  "controls": [
+    {
+      "name": "colour determinant mistakenly cubed u=3.0",
+      "rejected": true,
+      "log_amplitude_error": 10.985363973841688
+    },
+    {
+      "name": "colour determinant mistakenly cubed u=11.0",
+      "rejected": true,
+      "log_amplitude_error": 10.817075083787048
+    },
+    {
+      "name": "finite-u contour spread omitted",
+      "rejected": true,
+      "max_error": 0.01878841759149985
+    },
+    {
+      "name": "Haar contribution omitted",
+      "rejected": true,
+      "max_error": 0.2222222222222232
+    },
+    {
+      "name": "single normalizer omitted",
+      "rejected": true,
+      "max_error": 0.03132432462530943
+    },
+    {
+      "name": "Wilson curvature error omitted",
+      "rejected": true,
+      "max_error": 0.0536512098913251
+    },
+    {
+      "name": "N over u conversion omitted in canonical Hessian",
+      "rejected": true,
+      "max_error": 4.9640479288264014
+    },
+    {
+      "name": "path adjoint transports discarded",
+      "rejected": true,
+      "difference": 133.69643059555798
+    },
+    {
+      "name": "source vacuum cost discarded: larger u fixture with same sensitivity threshold",
+      "rejected": true,
+      "value": 3.478292029512886e-05,
+      "u": 1024,
+      "rho": 0.05,
+      "source_Wilson_s": 6.793539120142356e-07
+    }
+  ],
+  "passed": 21,
+  "total": 21,
+  "controls_rejected": 9,
+  "controls_total": 9,
+  "affected_repair": "Hessian differences now at steps .002,.001 to avoid O(machine epsilon/h squared) cancellation; original absolute tolerance 2e-5 unchanged. Vacuum omission control uses larger u=1024, its original >1e-6 threshold unchanged. Original full source/output/failure retained. Successful critical-point and source-scaling results are reused, not re-executed.",
+  "limits": "Finite diagnostics and an algebraic source-cost sensitivity; not an all-volume or delta_star certification."
+}

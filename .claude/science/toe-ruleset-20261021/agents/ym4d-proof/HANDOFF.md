@@ -34,7 +34,7 @@ the methodology sources are unchanged from `6c269770273c3fe00de350d5a3c14cacb70c
 
 ### Reviewed producer checkpoint — 29 October 2026
 
-Seven bounded units now have fresh independent reviews, including affected
+Eight bounded units now have fresh independent reviews, including affected
 confirmation of the corrections. They do not complete either continuum target.
 
 - [Uniform soft minimizer](UNIFORM_SOFT_MINIMIZER_ASTRA.md):
@@ -70,9 +70,10 @@ confirmation of the corrections. They do not complete either continuum target.
   the explicit finite-u Gaussian reference, local tree measure, weighted
   inverse/square root and restricted-integral dictionary after the
   traceless principal-log chart repair. This is a reference Gaussian,
-  not the interacting covariance or a physical mass threshold. General
-  coarse backgrounds, the chart complement and interacting source
-  activities remain further work.
+  not the interacting covariance or a physical mass threshold.
+  Curvature-small coarse backgrounds are treated in the separate reviewed
+  unit below; the chart complement and interacting source activities
+  remain further work.
 
 The [charged stationary-jet unit](CHARGED_STATIONARY_JET_ASTRA.md) now has a
 [complete independent review](REVIEW_CHARGED_STATIONARY_JET_ASTRA.md). It confirms
@@ -100,12 +101,17 @@ the full-colour bounded-jet interface; its actual finite-part/coupling
 consumer is the next construction, not an automatic completed theorem.
 
 The [covariant background construction](COVARIANT_SOFT_BACKGROUND_ASTRA.md)
-remains under fresh independent review. It supplies a candidate finite-u
-local critical point and Gaussian reference for curvature-small coarse
-fields with holonomy; author controls report 49/49 plus two 16/16 geometry
-runs. These are finite diagnostics. The smooth critical point need not
-satisfy the hard good-event cuts; fixed-V connected source activities and
-the full transform remain further work.
+now has a [fresh independent review](REVIEW_COVARIANT_SOFT_BACKGROUND_ASTRA.md)
+confirming CB1–CB24 with no material finding or source repair. Its scoped
+LAND covers the actual finite-u local critical point, colour-coupled Gaussian
+reference, first background locality and strong-good chart interface,
+with the named single-normalizer input. Nontrivial holonomies are retained.
+The review preserves its original finite-difference and sensitivity failures,
+then confirms the affected controls with unchanged tolerances; six actual
+author-code mutations are rejected. The smooth critical point need not
+satisfy the hard good-event cuts. Fixed-V connected source activities,
+nonvanishing, all complementary histories and the full transform remain
+further work; a separate activity construction is in progress.
 
 [Review reproduction](checks/full_proof_next_reviews_replay_summary.json)
 and [bridge/covariance reproduction](checks/full_proof_bridge_reviews_replay_summary.json)

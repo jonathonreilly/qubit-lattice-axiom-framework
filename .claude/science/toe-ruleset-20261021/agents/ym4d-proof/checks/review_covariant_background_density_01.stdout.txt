@@ -1,0 +1,423 @@
+{"progress": {"label": "tree", "u": 8.0, "tree": true, "iterations": 104, "evaluations": 144, "residual": 8.157643909312303e-08, "max_displacement": 0.012118668640865762, "objective": 0.0002548295033315107, "seconds": 1.4418070000247099, "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"}}
+{"progress": {"label": "u8", "u": 8.0, "tree": false, "iterations": 60, "evaluations": 126, "residual": 4.555703306258409e-08, "max_displacement": 0.007598202717921385, "objective": 0.0004937581467340084, "seconds": 1.278621417004615, "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"}}
+{"progress": {"label": "u32", "u": 32.0, "tree": false, "iterations": 82, "evaluations": 155, "residual": 2.994465810184487e-08, "max_displacement": 0.01001734486746491, "objective": 0.00034130419899896256, "seconds": 1.6485806250129826, "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"}}
+{"progress": {"label": "u128", "u": 128.0, "tree": false, "iterations": 85, "evaluations": 134, "residual": 3.494164478019699e-08, "max_displacement": 0.011448987738385838, "objective": 0.0002801710091414931, "seconds": 1.3666150830104016, "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"}}
+FINAL_JSON
+{
+  "checks": [
+    {
+      "name": "actual local matrix-path inventory",
+      "passed": true,
+      "paths": 7776,
+      "plaquettes": 486,
+      "free_links": 244,
+      "max_length": 11
+    },
+    {
+      "name": "Haar radial integral at t=0.7",
+      "passed": true,
+      "c": 0.17153304426571017,
+      "bessel": 0.17153304426570992,
+      "refinement": 1.942890293094024e-16
+    },
+    {
+      "name": "Haar radial integral at t=4.0",
+      "passed": true,
+      "c": 0.6580472673593599,
+      "bessel": 0.6580472673593596,
+      "refinement": 4.440892098500626e-16
+    },
+    {
+      "name": "Haar radial integral at t=20.0",
+      "passed": true,
+      "c": 0.9259877485828849,
+      "bessel": 0.9259877485828848,
+      "refinement": 2.220446049250313e-16
+    },
+    {
+      "name": "general SU(2) Haar Casimir coefficient",
+      "passed": true,
+      "quotients": [
+        -0.16666666941556,
+        -0.16666666709380648
+      ],
+      "expected": -0.16666666666666666
+    },
+    {
+      "name": "general SU(3) Haar Casimir coefficient",
+      "passed": true,
+      "quotients": [
+        -0.2500000031845078,
+        -0.24999999954557883
+      ],
+      "expected": -0.25
+    },
+    {
+      "name": "general SU(4) Haar Casimir coefficient",
+      "passed": true,
+      "quotients": [
+        -0.3333333364427388,
+        -0.33333333470074067
+      ],
+      "expected": -0.3333333333333333
+    },
+    {
+      "name": "general SU(7) Haar Casimir coefficient",
+      "passed": true,
+      "quotients": [
+        -0.5833333372630564,
+        -0.5833333350430507
+      ],
+      "expected": -0.5833333333333334
+    },
+    {
+      "name": "Wilson curvature error block row and column bound",
+      "passed": true,
+      "row": 3.9523222768524993,
+      "bound": 11.742916263359437,
+      "symmetry": 0.0
+    },
+    {
+      "name": "full retained-mode principal tree precision positive in diagnostic sector",
+      "passed": true,
+      "minimum": 0.028269911803970364,
+      "dimensions": 732
+    },
+    {
+      "name": "zero-Q direction with nonzero contour spread retained",
+      "passed": true,
+      "Q_norm": 2.110493590166957e-17,
+      "spread": 0.046369427007821214
+    },
+    {
+      "name": "actual complete coordinate gradient at u=3.0",
+      "passed": true,
+      "max_error": 5.828670879282072e-16
+    },
+    {
+      "name": "finite-u Hessian identity u=3.0 direction=0",
+      "passed": false,
+      "autodiff": 6.123807895979279,
+      "transported": 6.12380789597928,
+      "differences": [
+        6.12380115505573,
+        6.123786100431516
+      ]
+    },
+    {
+      "name": "finite-u Hessian identity u=3.0 direction=1",
+      "passed": false,
+      "autodiff": 6.263414022173073,
+      "transported": 6.263414022173073,
+      "differences": [
+        6.2634093911384525,
+        6.263387497540407
+      ]
+    },
+    {
+      "name": "finite-u Hessian identity u=3.0 direction=2",
+      "passed": true,
+      "autodiff": 6.240267368545044,
+      "transported": 6.240267368545044,
+      "differences": [
+        6.24026719187043,
+        6.240266792190141
+      ]
+    },
+    {
+      "name": "colour-coupled Gaussian determinant u=3.0",
+      "passed": true,
+      "logdet": 10.985363973841688,
+      "cholesky": 10.985363973841688
+    },
+    {
+      "name": "actual complete coordinate gradient at u=11.0",
+      "passed": true,
+      "max_error": 8.049116928532385e-16
+    },
+    {
+      "name": "finite-u Hessian identity u=11.0 direction=0",
+      "passed": false,
+      "autodiff": 5.949522507883259,
+      "transported": 5.949522507883259,
+      "differences": [
+        5.949515813341577,
+        5.949500980761968
+      ]
+    },
+    {
+      "name": "finite-u Hessian identity u=11.0 direction=1",
+      "passed": false,
+      "autodiff": 6.0604470069249725,
+      "transported": 6.060447006924971,
+      "differences": [
+        6.060443791255921,
+        6.060422741427374
+      ]
+    },
+    {
+      "name": "finite-u Hessian identity u=11.0 direction=2",
+      "passed": true,
+      "autodiff": 6.067169690787823,
+      "transported": 6.067169690787821,
+      "differences": [
+        6.0671695223391,
+        6.067169344703416
+      ]
+    },
+    {
+      "name": "colour-coupled Gaussian determinant u=11.0",
+      "passed": true,
+      "logdet": 10.817075083787048,
+      "cholesky": 10.81707508378705
+    },
+    {
+      "name": "actual full-periodic-sector critical residual tree",
+      "passed": true,
+      "label": "tree",
+      "u": 8.0,
+      "tree": true,
+      "iterations": 104,
+      "evaluations": 144,
+      "residual": 8.157643909312303e-08,
+      "max_displacement": 0.012118668640865762,
+      "objective": 0.0002548295033315107,
+      "seconds": 1.4418070000247099,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    {
+      "name": "actual full-periodic-sector critical residual u8",
+      "passed": true,
+      "label": "u8",
+      "u": 8.0,
+      "tree": false,
+      "iterations": 60,
+      "evaluations": 126,
+      "residual": 4.555703306258409e-08,
+      "max_displacement": 0.007598202717921385,
+      "objective": 0.0004937581467340084,
+      "seconds": 1.278621417004615,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    {
+      "name": "actual full-periodic-sector critical residual u32",
+      "passed": true,
+      "label": "u32",
+      "u": 32.0,
+      "tree": false,
+      "iterations": 82,
+      "evaluations": 155,
+      "residual": 2.994465810184487e-08,
+      "max_displacement": 0.01001734486746491,
+      "objective": 0.00034130419899896256,
+      "seconds": 1.6485806250129826,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    {
+      "name": "actual full-periodic-sector critical residual u128",
+      "passed": true,
+      "label": "u128",
+      "u": 128.0,
+      "tree": false,
+      "iterations": 85,
+      "evaluations": 134,
+      "residual": 3.494164478019699e-08,
+      "max_displacement": 0.011448987738385838,
+      "objective": 0.0002801710091414931,
+      "seconds": 1.3666150830104016,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    {
+      "name": "finite-u point distinct from tree point",
+      "passed": true,
+      "differences": {
+        "8": 0.0063615678792751295,
+        "32": 0.0029931853749828974,
+        "128": 0.0009639993996341172
+      }
+    },
+    {
+      "name": "finite-u point approaches tree point in diagnostic sequence",
+      "passed": true,
+      "differences": {
+        "8": 0.0063615678792751295,
+        "32": 0.0029931853749828974,
+        "128": 0.0009639993996341172
+      },
+      "u_times_difference": {
+        "8": 0.050892543034201036,
+        "32": 0.09578193199945272,
+        "128": 0.12339192315316701
+      },
+      "coarse_curvature": 0.013433840095301049
+    },
+    {
+      "name": "individual Wilson source is not stationary at total-density critical point",
+      "passed": true,
+      "plaquette": 402,
+      "Wilson_s": 6.793539120142356e-07,
+      "source_gradient_norm": 0.001165635962136111,
+      "total_residual": 2.994465810184487e-08
+    },
+    {
+      "name": "source vacuum linear and quadratic canonical units",
+      "passed": true,
+      "vacuum": [
+        2.717415648056942e-07,
+        1.086966259222777e-06
+      ],
+      "linear": [
+        0.00023312719177326377,
+        0.00046625437910563543
+      ],
+      "quadratic": [
+        0.09999992833798144,
+        0.09999990169264368
+      ]
+    },
+    {
+      "name": "explicit per-plaquette original-source budget",
+      "passed": true,
+      "actual": 0.0006728523422651734,
+      "bound": 0.005576788313548871,
+      "delta_bg": 0.0011656362315005818
+    }
+  ],
+  "controls": [
+    {
+      "name": "colour determinant mistakenly cubed u=3.0",
+      "rejected": true,
+      "log_amplitude_error": 10.985363973841688
+    },
+    {
+      "name": "colour determinant mistakenly cubed u=11.0",
+      "rejected": true,
+      "log_amplitude_error": 10.817075083787048
+    },
+    {
+      "name": "finite-u contour spread omitted",
+      "rejected": true,
+      "max_error": 0.01878841759149985
+    },
+    {
+      "name": "Haar contribution omitted",
+      "rejected": true,
+      "max_error": 0.2222222222222232
+    },
+    {
+      "name": "single normalizer omitted",
+      "rejected": true,
+      "max_error": 0.03132432462530943
+    },
+    {
+      "name": "Wilson curvature error omitted",
+      "rejected": true,
+      "max_error": 0.0536512098913251
+    },
+    {
+      "name": "N over u conversion omitted in canonical Hessian",
+      "rejected": true,
+      "max_error": 4.9640479288264014
+    },
+    {
+      "name": "path adjoint transports discarded",
+      "rejected": true,
+      "difference": 133.69643059555798
+    },
+    {
+      "name": "unshifted lift declared stationary",
+      "rejected": true,
+      "gradient_norm": 0.19207578244602921
+    },
+    {
+      "name": "source vacuum cost discarded",
+      "rejected": false,
+      "minimum": 2.717415648056942e-07
+    },
+    {
+      "name": "source linear term discarded by total stationarity",
+      "rejected": true,
+      "minimum": 0.00023312719177326377
+    },
+    {
+      "name": "normalization omission: probability Haar density",
+      "rejected": true,
+      "amplitude_error": 0.7946725043373558
+    },
+    {
+      "name": "normalization omission: translated Haar j(a*)",
+      "rejected": true,
+      "amplitude_error": 0.00012748360165333768
+    },
+    {
+      "name": "normalization omission: vacuum",
+      "rejected": true,
+      "amplitude_error": 0.005360479117990447
+    },
+    {
+      "name": "normalization omission: scale Jacobian",
+      "rejected": true,
+      "amplitude_error": 0.08040653778665033
+    },
+    {
+      "name": "normalization omission: determinant",
+      "rejected": true,
+      "amplitude_error": 0.01668228288926446
+    }
+  ],
+  "critical_runs": [
+    {
+      "label": "tree",
+      "u": 8.0,
+      "tree": true,
+      "iterations": 104,
+      "evaluations": 144,
+      "residual": 8.157643909312303e-08,
+      "max_displacement": 0.012118668640865762,
+      "objective": 0.0002548295033315107,
+      "seconds": 1.4418070000247099,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    {
+      "label": "u8",
+      "u": 8.0,
+      "tree": false,
+      "iterations": 60,
+      "evaluations": 126,
+      "residual": 4.555703306258409e-08,
+      "max_displacement": 0.007598202717921385,
+      "objective": 0.0004937581467340084,
+      "seconds": 1.278621417004615,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    {
+      "label": "u32",
+      "u": 32.0,
+      "tree": false,
+      "iterations": 82,
+      "evaluations": 155,
+      "residual": 2.994465810184487e-08,
+      "max_displacement": 0.01001734486746491,
+      "objective": 0.00034130419899896256,
+      "seconds": 1.6485806250129826,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    {
+      "label": "u128",
+      "u": 128.0,
+      "tree": false,
+      "iterations": 85,
+      "evaluations": 134,
+      "residual": 3.494164478019699e-08,
+      "max_displacement": 0.011448987738385838,
+      "objective": 0.0002801710091414931,
+      "seconds": 1.3666150830104016,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    }
+  ],
+  "passed": 26,
+  "total": 30,
+  "controls_rejected": 15,
+  "controls_total": 16,
+  "limits": "L=3 SU(2) period-one sector of T>=2; floating checks are not interval proofs, all-volume proof or certification of tiny delta_star. Quadrature N2; general-N Haar coefficient only. Gaussian omission controls are algebraic sensitivity, not complete hard-cut quadrature."
+}

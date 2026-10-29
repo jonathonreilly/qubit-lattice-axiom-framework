@@ -1510,3 +1510,16 @@ the trivial background, m = 0**; open: (R2) background (incl. background EP-rec,
 running). 13 REFUTED of prior claims, incl. "(G♯_0-field) is paper-scale", NBG_ADJ's "(G♯_0-fine) OPEN", and
 "the fourth object is recorded NOWHERE" (it is (W-lin-Π) for S_E, BFT_B §12-§18). **Launched on Opus 5.5: node A's
 residual (NODEA_RES55.md).**
+
+**Clause (b) at m > 0 — `COFM55.md`** (claude-opus-5-5, max). **Theorem COF at m > 0 PROVEN as an implication for
+0 ≤ m ≤ m_Y = ln 2/(16L^c), uniformly in k, T and the weight centre**, and with it CC-FUN (b) weighted and the
+gauge-invariant half of clause (b)'s weighted form at the trivial background. One genuinely new step, **Lemma K**
+(weighted ℓ¹ bound on the level-l plaquette-response curvature); everything else is confirmed weighted inputs or exact
+locality bookkeeping. **Key observation: Theorem GU_m needs neither DX_m nor DB_m** — for divergence-form sources the
+pairing with the plaquette response is a pairing with a (gauge-invariant) curvature, which closes by Lemma LD's
+bootstrap from three CONFIRMED inputs. COF step (d): Lemma LE (no weights) replaced by the local Theorem W0-loc. Corollary
+LIN0_m (weighted (H-inv) for level-wise co-closed classes) as a by-product. **REFUTED: DX_m, DB_m are "mechanical"**
+(REVIEW_BFT_A_S6) — they pair against the global Coulomb representative's gradient, decaying only like (1+d)⁻⁵; OPEN.
+Combes-Thomas template does not apply (M·a(m) ≈ m·n). TOP-cc_m and the datum part hold for all m < m_*′.
+**Clause (b) now OPEN only on: the field half at m > 0, and the background transfer (R2).** Codex review launched
+(CODEX_REVIEW_COFM.md). **Launched on Opus 5.5: BGT55.md — the background transfer.** Field half at m > 0 queued.

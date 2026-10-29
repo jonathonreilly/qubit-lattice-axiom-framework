@@ -1,0 +1,12 @@
+E0 critical family (grad_U f has no terms of degree <= 3): PASS  residuals=[0, 0]
+v=(1, 0): D3W=65971/4000  D3f[zeta^3]=65971/4000  | D4W=-1765162733/2400000  D4f[zeta^4]-3c^TA^-1c=-1765162733/2400000  (exchange=1370489843/7200000)
+v=(0, 1): D3W=1507/500  D3f[zeta^3]=1507/500  | D4W=9226447/150000  D4f[zeta^4]-3c^TA^-1c=9226447/150000  (exchange=10321763/450000)
+v=(1, 1): D3W=80133/4000  D3f[zeta^3]=80133/4000  | D4W=-291536391/800000  D4f[zeta^4]-3c^TA^-1c=-291536391/800000  (exchange=241124561/2400000)
+v=(2, -3): D3W=224639/250  D3f[zeta^3]=224639/250  | D4W=-564521288/9375  D4f[zeta^4]-3c^TA^-1c=-564521288/9375  (exchange=695403848/28125)
+v=(-1, 4): D3W=-1564123/4000  D3f[zeta^3]=-1564123/4000  | D4W=-11829561231/800000  D4f[zeta^4]-3c^TA^-1c=-11829561231/800000  (exchange=41376137201/2400000)
+E3 single pullback: PASS
+E4 quartic with exchange: PASS
+E3-c (zeta -> (0,v)) differs: control fires
+E4-c (exchange dropped) differs: control fires
+=== fl55_2 SUMMARY ===
+OVERALL: PASS

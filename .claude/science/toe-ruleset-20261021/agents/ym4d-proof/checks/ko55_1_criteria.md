@@ -60,3 +60,18 @@ the routing, the nesting of roots or the block bookkeeping is wrong (A1-ctl demo
 if the path multiplicity or the flux count is wrong; A4 (a) can fail if the Hoelder-route bound is wrong, A4 (b) is a
 control. No part of ko55_1 tests a nonlinear Yang-Mills estimate, the linear response theory (TW, C2-COF, TOP#), or the
 local analytic inputs (LA); those rest on the cited lemmas and on the proofs in KFACTOR_OFF55.
+
+## AMENDMENT 1 (appended 2026-10-29 ~00:24Z UTC, BEFORE checks/ko55_1.py exists; nothing above is edited)
+Defect found in A4 as registered above, by re-reading it before writing the script: (1) a current w_mu that depends
+only on a coordinate mu' != mu is divergence-free (d*w = 0), so u = 0 and A4 would be vacuous (both sides 0);
+(2) control (b) compares RAW growth of J_single, which also holds for J_hier because the test current's amplitude grows
+with n, so (b) as written cannot discriminate. A4 is therefore REPLACED by A4' below; the original A4 is not run.
+- **A4' (mechanism; replaces A4).** d = 2, T = 1, k = 1..5, n = L^k. w_mu(z) := tri(z_mu) with tri(t) := min(t mod n,
+  n - (t mod n)) (integer, period n in the link's OWN coordinate, |slope| <= 1 per own step). u := d*_0 w (not zero).
+  s_max := max over all mu, nu, z of |w_mu(z + e_nu) - w_mu(z)| (computed; expected 1). Coarse Lipschitz normaliser
+  Lip_c(k) := n^{d-1} * n * s_max (the coarse current j^c = n^{d-1} w moves by <= n^{d-1} s_max per own step, i.e. per
+  coarse distance 1/n). J_hier(k) and J_single(k) as defined in A4. rho_hier := J_hier/Lip_c, rho_single := J_single/Lip_c.
+  PASS iff (a) rho_hier(k) <= d * M_gamma / (L - 1) for every k = 1..5 (rigorous instance of Lemma HR's Hoelder route at
+  alpha = 1), AND (b) control fires: rho_single(5) >= 10 * rho_single(2) (single-level routing of the same charges grows
+  relative to the same normaliser, the hierarchical routing does not).
+OVERALL now reads: A1, A1-ctl, A2, A3, A4', B, C all PASS.

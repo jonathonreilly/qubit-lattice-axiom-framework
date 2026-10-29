@@ -1987,3 +1987,9 @@ RLARGE rows are dropped. REFUTED in LARGE55: an omitted kernel normaliser, unsup
 overbroad freezing conclusions. Most dangerous: a zero-free domain for normalised returned activities. Codex's
 milestone (one normalised history-compatible step on a chart with a hole) forwarded to STEP55. (Codex disclosed a
 range-read protocol exception in its own review.)
+
+**CX-SEAM** (`CODEX_REVIEW_SEAM.md`). Banked: Lemma 3.5′ (nonvacuity repair), the decay-≠-transparency counterexample,
+the Ward-profile algebra (scalar c_4 = 0) and the traceless term, the N5 multilevel sum (qualitative o(1); rates need
+explicit power hypotheses), CS/pseudoscalar seam exclusions, the joint diagonal on the separated domain. Corrections: N5's
+1/2 exponent → o(1) without power assumptions; LCS-b counterexample c_4 = 1/(u+2). Most dangerous (shared with
+OSLEAF55's job): a positivity-compatible extension from separated products to the full OS algebra.

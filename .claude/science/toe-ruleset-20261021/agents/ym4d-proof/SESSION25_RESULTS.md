@@ -1862,3 +1862,16 @@ slope suffices). Corrections: instanton coefficient (→ 11N/3) and magnetic tre
 identification (the contraction does not preserve products), so a witness built on it does not prove the reconstructed
 theory non-free.** The target theorem needs a non-freeness criterion that holds against EVERY identification of the
 Yang–Mills observables with a free theory's. Queued: NONFREE worker (next free slot).
+
+**ASSEMBLY55 — finished** (claude-opus-5-5, max). The full proof tree with every arrow checked: **18 MISMATCH, 10
+MATCH-conditional, 3 MATCH; 13 missing leaves; 23 ordered open items.** Three towers, not two (composite E^cb,
+per-level E^br, global-minimum 𝓔_k/𝒯_k): SF's (BG-unif) and the N5-unif chain read E^br (repair: Balaban's convention via
+Theorem ID); FLOW/HIST/PLD read the min-tower (repair: (MIN-cb) or a critical-value restatement). Key mismatches: F1 —
+the non-freeness witness is not on the algebra where OS0-OS3 are produced and is not an OS invariant; F2a — H_reg must be
+separated Schwinger distributions (Lemma V); F3 — the sphere's θ_μ RP has only a one-line proof; F4 — OS1 needs all n,
+producers cover two-point orbits; F6 — iterated vs joint limits (DIAG missing); F7 — everything is on 𝒞_glob; F13/F14
+— producers on hypercubic tori with constant coupling, the sphere needs its own lattice with a position-dependent one.
+**New positive arrow F23:** BFT3-glob's (E)-part at B = 0 may already supply UIR's orders-3, 4 tree jets (forwarded to
+UIR2_55). Torus RP is IMPORTED-AND-REVERIFIED, not banked (HANDOFF corrected). **Most dangerous leaf: non-freeness on the
+OS algebra.** Codex review launched (CODEX_REVIEW_ASSEMBLY.md); sphere items forwarded to SEAM55; NONFREE55 launched
+with F1 added to its brief.

@@ -44,7 +44,7 @@ T_OS on R^4 follows, along one diagonal subsequence a_j → 0, R_j → ∞ with 
 - **H_RP** — reflection positivity for one common reflection, errors → 0;
 - **H_Euc** — the Euclidean symmetry defect → 0 on a dense subgroup (only non-lattice rotations are hard);
 - **H_int** — a calibrated local non-freeness witness bounded away from the free class.
-H_RP is exact for the Wilson action on the torus and on the sphere's equator (banked). Everything else rests on the
+H_RP: Wilson reflection positivity on the torus is IMPORTED-AND-REVERIFIED in PROOF.md (L9a), not cross-family banked; the sphere's equatorial RP is banked; the coordinate reflections θ_μ the sphere route uses at the pole are not yet proved (ASSEMBLY55 F3). Everything else rests on the
 UV RG below.
 
 **Route to H_Euc.** *Sphere (leading)*: on S^4_R rotations are exact, the Killing-field Ward identity has no shell term,
@@ -79,3 +79,8 @@ Line numbers in PROOF.md drift — locate by string.
 2. Assign the large-field inputs (BFT off 𝒞_glob, (LOC-GA)) once ALIGN55 and NSL55 report.
 3. When every row above is closed and cross-checked: assemble the proof of T_OS in one document, have it reviewed
    end to end by both families, then package PR 10114 for the owner's publication pass.
+
+## Interface audit (ASSEMBLY55, 2026-10-29; Codex review running)
+18 producer→consumer mismatches and 13 missing leaves were found; ASSEMBLY55 §7-§9 is the current list of open leaves
+and supersedes the table above wherever they differ. Most dangerous: a non-freeness witness on the OS algebra itself
+(NONFREE55), then BFT off 𝒞_glob (OFFGLOB55).

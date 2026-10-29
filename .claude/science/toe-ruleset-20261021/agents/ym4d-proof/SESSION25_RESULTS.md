@@ -1606,3 +1606,22 @@ is now **(LC°)**: convexity on defect-free regions (C² form), convexity of the
 Peierls bound — whether the MULTISCALE small-field constraint restores convexity (argued, not proven). Proposition NU:
 cutoff-uniformity in n_♯ follows from an n-independent constrained Peierls bound. Codex review launched.
 **Launched on Opus 5.5: NSL55.md (the slice-attainment lemma) and LCONV55.md (multiscale convexity).**
+
+**Rotated-lattice universality — `UNIV55.md`** (claude-opus-5-5, max). **Ultraviolet at fixed volume — proven as a
+reduction.** Three precise versions: UNIV-T (fixed torus; one rational rotation, cos θ = 3/5, with the hypercubic group
+generates a dense subgroup of O(4) — proved), UNIV-S (sphere, needs a named seam prescription), UNIV-Ω (bounded
+region conditioned on the coarse field; the UV half of the flat route); observables must be gradient-flowed Wilson
+loops (unflowed loops → 0). **Proposition T (proved):** uniform agreement of conditional expectations and conditional
+partition functions over every coarse field ⇒ the expectations agree, and **the coarse law never appears**, however
+strongly coupled (Codex P4 §3.2 reached the same mechanism). **IR enters only when removing the "number of coarse
+blocks" factor**, which needs summable coarse decay (two-phase example: cannot be removed without it) — **the flat
+route must; the sphere route at fixed R does not.** P4's compactness mechanism REFUTED as an argument (conclusion
+survives); the real UV items: large-field comparison (the soft-kernel coarse density is bounded below, proved — BFT's
+small-field domain does not reach these), the marginal direction (E7 does not cover this lemma), and a constructed
+common coarse space. SU(N)-specific evidence: smooth interpolation of every coarse configuration (fails for U(1), SO(3));
+lattice instantons ∝ (a/ℓ_0)^{11N/3−4} → 0 for N ≥ 2. **Theorem U:** layer-1 + N1-N4 ⇒ UNIV; sphere: + N5 (seam
+transparency) — **or the global-Killing-field Ward identity route (W0-W3 + N5), which has NO boundary-flux term (exactly
+ROTDEF's IR term) and needs no common coarse space.** Seam claim "β_p ≥ 0 makes the seam transparent" REFUTED (β_p ≡ 0 ⇒
+independent hemispheres). Gantumur's regulator does not help this lemma (RP only on a finite cylinder; universality
+conjectural; no gauge continuum analysis). 8 CONFIRMED / 4 NV / 1 REFUTED of P4's claims. Codex review launched
+(CODEX_REVIEW_UNIV.md). **Launched on Opus 5.5: SPHERE55.md — the sphere's Killing-field Ward route and the seam.**

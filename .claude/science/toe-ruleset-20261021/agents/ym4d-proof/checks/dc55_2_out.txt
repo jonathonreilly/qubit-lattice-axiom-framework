@@ -1,0 +1,10 @@
+instances: 26 cocycle instances: 26
+(L) left action (U^g)^{g'} = U^{g'g} on all instances: True
+(R) right action (U^g)^{g'} = U^{gg'} on all instances: True
+K1 wrong law for left fails somewhere (control fires): True
+K2 wrong law for right fails somewhere (control fires): True
+cocycle left order c(h2h1,V)=c(h2,V^h1)c(h1,V) on all: True
+K3a right order applied to left model fails somewhere (control fires): True
+cocycle right order c(h1h2,V)=c(h1,V)c(h2,V^h1) on all: True
+K3b left order applied to right model fails somewhere (control fires): True
+VERDICT: PASS

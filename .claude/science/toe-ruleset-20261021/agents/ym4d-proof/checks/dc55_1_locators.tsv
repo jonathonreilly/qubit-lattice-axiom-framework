@@ -1,0 +1,367 @@
+L0	BFT_A.md	κ_j ∈ [κ_-, κ_+], depth k ≥ 1, coarse torus side T
+L1	FLOW.md	level k = after k RG steps, k = 0 the bare lattice, k = K the unit lattice
+L2	RLARGE.md	Level k = after k RG steps; k = 0 bare, k = K the unit lattice
+L3	SRCCD55.md	L^r a, level-r spacing; ℓ_K = ℓ_ref = 1
+L4	NSL55.md	**j** = depth (1 ≤ j ≤ k); i, l = levels.
+L5	PROOF.md	in physical units with the resolution-0 spacing equal to 1
+L6	PROOF.md	resolution K, with spacing ε_K = L^-K
+L7	CODEX_REVIEW_BALX.md	Dimock k counts coarse-graining; current PROOF :1376–1378 uses resolution j in the opposite direction
+L8	HINT55.md	m := K − k ≥ 0 (levels below
+L9	KFACTOR_OFF55.md	m := k − 1 − j)
+L10	GV55.md	**m** is a weight rate in COFM55 and GSHARP55, but a **depth index m := k − 1 − l** throughout KFACTOR_OFF55
+L11	BFT_A.md	Level-j 1-form: x^c_j := L^{k-j}x_j. Level-j 2-form: H^c := L^{2(k-j)}H.
+L12	BFT_A.md	Level-j plain current: j^c := L^{3(k-j)}j (BNA-F2's convention).
+L13	BFT_A.md	Residual of x at level j: r_j(x) := Qx_j - x_{j+1} (linear), coarse r^c_j := L^{k-1-j}r_j.
+L14	BFT_A.md	ρ_j := L^{-(k-j)} (one level-j step in coarse units)
+L15	BFT4W55.md	h_l := L^{−(k−l)} (one own level-l step in coarse units)
+L16	ALIGN55.md	ρ_l := L^{−(k−l)} (one level-l step in coarse units)
+L17	FLOW.md	Everything at level k is in level-k units.
+L18	HINT55.md	t = continuum flow time (physical units, unit lattice = 1)
+L19	LINEAR_PACKAGE.md	d(z, z') := the ℓ¹ torus distance between coarse positions (an object at level l sits at L^{l-k}·(its base point)).
+L20	COFM55.md	**dist** := ℓ¹ torus distance of coarse positions (never ℓ^∞ unless said)
+L21	REVIEW_S22.md	exponential weights e^{±m d} are in level-k ancestor distance
+L22	BFT34_55.md	**𝔱** := minimal spanning tree length (BFT's "tree"), **𝔱_S** := minimal Steiner tree length, both in level-k ℓ¹ units
+L23	BFT_A.md	**pointwise** [H]^∞_α := sup over base points z ≠ z', |z - z'|_∞ ≤ 1
+L24	BFT4W55.md	An ℓ^∞ radius a is an ℓ¹ radius ≤ 4a
+L25	BFT4W55.md	### 2.1 Positions — Convention C (centred). Load-bearing; see Proposition CORNER (§4.2)
+L26	BFT4W55.md	pos(Z) := L^{−k}(L^jZ + ((L^j − 1)/2)𝟙)
+L27	PROOF.md	and their roots are the block centres c_X (L is
+L28	BFT_B.md	Root convention: block centres (§15.0)
+L29	LINEAR_PACKAGE.md	d(z, z') := the ℓ¹ torus distance between coarse positions (an object at level l sits at L^{l-k}·(its base point)).
+L30	COFM55.md	coarse position of a level-l object = L^{l−k}·(base
+L31	BFT4W55.md	**W-mult^σ is false under Convention K for every σ ∈ (0, 1]:**
+L32	CODEX_REVIEW_BFT4W.md	### W3. Centred cancellation and the lower-corner obstruction survive the errata
+L33	BFT4W55.md	lane B's W-mult (σ = 0) is convention-blind
+L34	LINEAR_PACKAGE.md	- **S4' (order-averaged averaging; l.454-481).** For each of the 4! coordinate orders σ, P^σ is the complete-axial
+L35	LINEAR_PACKAGE.md	the two operations agree at linear order, which is all this package uses, and differ beyond it
+L36	CODEX_REVIEW_KN.md	whether the actual decision-4 normalized kernel uses exactly the paired indexed mean quoted in KN_ADOPT
+L37	NSL55.md	(all S4′ contours run c_X → c_Y; PROOF
+L38	NSL55.md	- **Gauge action** (BFT_A §31.0 convention, K_0 = −Ξ): (x^g)_i(b) := log(g_i(b^−)e^{x_i(b)}g_i(b^+)^{−1}); left action,
+L39	NSL55.md	(x^g)^{g′} = x^{g′g}.
+L40	BFT_A.md	(K_xξ)_j(b) := d/dt|_{t=0}log(e^{tξ_j(b^-)}e^{x_j(b)}e^{-tξ_j(b^+)})
+L41	BFT_A.md	K_0 = -Ξ in this sign convention
+L42	PROOF.md	(gU)_b := g(x)U_bg(x + e_μ)^{-1}
+L43	PROOF.md	It is gauge covariant: under a fine gauge transformation g, M̄_c → g(c_X)M̄_cg(c_Y)^{-1}
+L44	BFT_B.md	with the convention (U^a)^b = U^{ba} used in 19.13 and 22.12
+L45	ALIGN55.md	(d_Zλ)(b) := Ad_{Z(b)}λ(head b) − λ(tail b)
+L46	BFT_B.md	(a) With V^g(x, y) := g(x)^{-1}V(x, y)g(y), the axial frame is g(x) = hol_V(γ_x)^{-1}
+L47	BFT_B.md	ĥ(h_1h_2, V) = ĥ(h_1, V)ĥ(h_2, V^{h_1})
+L48	REVIEW_BFT_B_S4.md	For the right action, Ad_{g_1g_2} = Ad_{g_2}∘Ad_{g_1}.
+L49	PROOF.md	Norms are Hilbert-Schmidt,
+L50	BFT_B.md	Setting LIN of BFT_A §7.1 at the trivial chain (su(N) componentwise in an orthonormal
+L51	FLOW.md	V_b = exp(Σ_a B^a_b t_a), {t_a} a basis of su(N) orthonormal for ⟨X, Y⟩ := -(1/N)tr(XY)
+L52	FLOW.md	(so ||t_a||²_HS = N)
+L53	FLOW.md	t_a = i√(2N)T^a
+L54	HIST.md	𝔇_α(X) := {|B^a_b| ≤ α_E in normalised Lie coordinates of a local gauge on X}
+L55	RLARGE.md	χ_Q := Π_{p⊂int Q}1{||1 - U(p)||_op < ε_1}
+L56	SRCCD55.md	U_K with max_P|log U_{K,P}|_op ≤ ε_0 (BFT's ε_0 at level K)
+L57	HIST.md	s(U) := 1 - N⁻¹Re tr U; inequality (B): s(U) = ||1 - U||²_HS/(2N) ≥ ||1 - U||²_op/(2N).
+L58	FLOW.md	s(U) = 1 - N^{-1}Re tr U. So u = β_Wilson = 2N/g_std², where g_std is the coupling of (1/(4g_std²))∫F^aF^a with
+L59	RLARGE.md	u_kΣ_ps(U_p) with **u_k := 1/g_k² = β_Wilson = 2N/g_std²**
+L60	FLOW.md	*Claim.* u = 2N/g_std² exactly (at the level of the marginal term).
+L61	FLOW.md	(1/g_B²)Σ[1 - Re tr U] with
+L62	UIR55.md	β_0^std := 2N·2b_0 = 11N²/(12π²) in u-units (FLOW §0), b_0 = 11N/(48π²).
+L63	SRCCD55.md	Wilson measure ω on a hypercubic torus Λ = (aZ/RZ)⁴ with R/a even, SU(N), N ≥ 2, u_0 = 1/g_0². Here
+L64	SRCAN55.md	the chain's own coupling sequence (RLARGE (F_R)); g_0 = g_bare, u_K = 1/g_ref²
+L65	PROOF.md	S_K(U) = β_K Σ_p (1 - N^-1 Re tr U_p), with β_K = 2N/g_K^2.
+L66	SPHERE55.md	beta_Q = 2N/G(a Omega(z_Q))^2: the bare coupling is a fixed function G of the LOCAL PHYSICAL SPACING s = a Omega
+L67	HINT55.md	In FLOW's normalisation u = β_Wilson = 2N/g_std², so A_∞g_std² = 3(N² − 1)·2N/(128π²u).
+L68	HINT55.md	u_k := 1/g_k² along the tuned sequence (FLOW Def F-g).
+L69	PROOF.md	k_c := exp(-(κ/g²)[1 - N^{-1}Re tr(V_c^{-1}M̄_c(U))])
+L70	PROOF.md	with S_W(U) := Σ_pRe tr(1 - U_p) and φ̂ := Nφ
+L71	RLARGE.md	W(U_0, …, U_K) := e^{-S_0(U_0)}Π_{i<K}K_i(U_{i+1}, U_i)
+L72	HIST.md	(I_0^E) holds: 𝓔_0 = Σs, E_0 ≡ 0, u_0 = 1/g_0² (the bare action is exactly the main term).
+L73	BFT34_55.md	S_W(V_k) is the level-k Wilson action with coefficient 1 (β factored out
+L74	RLARGE.md	k^{(i)}_c(V; M) = e^{-κu_iφ_M(V)}/∫e^{-κu_iφ_M}
+L75	HIST.md	k^{(i)}_c(V, U) = exp(-(κ/g_i²)[1 - N⁻¹Re tr(V⁻¹M̄_c(U))])/𝒩_i(M̄_c(U)) (D4-norm)
+L76	FLOW.md	-log k_c(V, U) = κu·k̃(V_c, M̄_c(U)) + log 𝒩'(P_c(U))
+L77	BFT_A.md	- **Campanato** [H]_α := sup over lattice boxes B (any corner; side ρ an integer multiple of ρ_j with ρ_j ≤ ρ ≤ 1) of
+L78	BFT_A.md	[H]^∞_α ≤ C_C[H]_α + 2·8^α||H||_∞, C_C := 2^α(8·2^α/(2^α - 1) + 32·4^α).
+L79	NSL55.md	‖·‖^C ≤ ‖·‖ ≤ (1 + C_T)‖·‖^C (BFT_B §16 preamble), and
+L80	LINEAR_PACKAGE.md	Weight w(z) := e^{m d(z, X_0)} (m ≥ 0, any coarse site X_0); ||v||_{∞,m} := sup_z w(z)|v^c(z)|.
+L81	BFT4W55.md	**μ ≥ 0** = the exponential spatial weight rate (BFT34_55's "m"; renamed per Codex BFT34 R2)
+L82	SRCCD55.md	CD decay rate, in units of 1/ℓ_ref (ROTDEF I4)
+L83	CODEX_REVIEW_ASSEMBLY.md	UIR's jet radius m_0 versus BFT's decay weight m versus SRC's m_c
+L84	BFT34_55.md	**m_Y** := ln 2/(16L^c), L^c ≥ max(260, 6952C_j)
+L85	PROOF.md	let M̄_c(U) := (d!L^d)^{-1}Σ_σΣ_{y∈B(X)}T^σ_y(U)
+L86	LINEAR_PACKAGE.md	the averaged link is Q_rootA(X, μ) := avg_{σ,y}∫_{T^σ_y}A
+L87	LINEAR_PACKAGE.md	the exact identity **Q_root = Q_str - d∘h** holds
+L88	LINEAR_PACKAGE.md	(Q_strA)(X, μ) := L^{-4}Σ_{y∈B(X)}Σ_{j<L}A_μ(y + je_μ)
+L89	NORMS.md	Q_str B(c) := L^{−(d−1)}Σ_{paths}Σ_{b∈path}σ_bB_b over
+L90	REVIEW55_NORMS.md	### r55n-F4 "Q_str is two different operators (NORMS §N1 vs LINEAR_PACKAGE l.71)" — CONFIRMED (exactly reproduced)
+L91	BFT_A.md	h_l the slice functional of step l (Q_l = Q_{str,l} - d∘h_l)
+L92	BFT_B.md	(h_l(w)(X) = the average over y ∈ B(X) of the integral of w along the axial path a(c_X → y) in a fixed coordinate order)
+L93	COFUN_CC.md	The "fixed coordinate order" description at BFT_B §27.1 l.3589 / §29.2 is of a
+L94	PROOF.md	φ := N^{-1}[Re tr(W_0^{-1}M) - Re tr(V^{-1}M)] satisfies
+L95	PROOF.md	φ_c := N^{-1}[max_{W∈SU(N)}Re tr(W^{-1}M̄_c) - Re tr(V_{i+1,c}^{-1}M̄_c)]
+L96	HIST.md	Φ_i(U, V) := Σ_cφ_{M̄_c(U)}(V_c) (φ of (3.0); the kernel exponent with
+L97	BFT_A.md	φ̂ = Nφ with φ of NA-alg (b)
+L98	PROOF.md	φ̂ = ½|ρ|² + O(ρ⁴) in the ledger's normalisation
+L99	FLOW.md	k̃(V, M) := N^{-1}Re tr((1 - V^{-1}W)P) ≥ 0
+L100	HIST.md	(i) k̃(V, M) = φ_M(V) + d(M) for every V ∈ SU(N), with d(M) := N⁻¹(tr P - Re tr(W_0⁻¹M)) ≥ 0 independent of V;
+L101	FLOW.md	[RFL-fix §3.1, per HIST Lemma HF
+L102	CODEX_REVIEW_FLOW55.md	### 1.2 Every-background normalization — REFUTED under the literal cited k̃ convention
+L103	BFT_A.md	κ_j ∈ [κ_-, κ_+], depth k ≥ 1, coarse torus side T
+L104	LINEAR_PACKAGE.md	κ_- ≤ κ_i ≤ κ_+. (The normalisation 𝒩 cancels the shrinkage |M̄| < 1, so only the distance from the polar part is
+L105	KFACTOR_OFF55.md	d = 4, L ≥ 3 odd, κ_l ∈ [κ_-, κ_+], κ̂ := κ_+/κ_-
+L106	NORMS.md	κ_j ∈ [κ_-, κ_+], κ̂ := κ_+/κ_-.
+L107	PROOF.md	κ_0 ∈ [κ_-, κ_+], g = 1
+L108	FLOW.md	The kernel coupling in the stripped tower is the same κ at every level.
+L109	UIR55.md	κ = the uniform soft-kernel stiffness of FLOW's stripped tower (Def F-strip),
+L110	PROOF.md	E_NA := S_W(U) + Σ_i(κ_i/g²)Σ_cφ_c
+L111	BFT_A.md	This is B-NA-red's E_NA (PROOF l.2309, at g = 1 and with the factor N
+L112	PROOF.md	With 𝔠_∞^♯ ([SF7-edit 1]; κ_0 = 1; one class, CS-1)
+L113	PROOF.md	**κ_0 := 16a ≈ 151.3**
+L114	PROOF.md	κ_i = κL^{-2i}
+L115	FLOW.md	κ_j := sL^{2j} (s > 0; f6's κ_1 = 9s at L = 3)
+L116	PROOF.md	**κ > 3κ_0 + 3 ≈ 457**
+L117	CODEX_REVIEW_SYMBOLS.md	CONFIRMED: ≥5 roles
+L118	HIST.md	Σ_{X∋x}sup_{𝔇_α(X)}|E_k(X; U) - E_k(X; 1)|·e^{κ_pd(X)} ≤ E_0
+L119	SRCCD55.md	conditional joint cumulant of order n
+L120	LINEAR_PACKAGE.md	κ̂_SC := max_iκ_{k-1}/κ_i (Setting SC
+L121	PROOF.md	**𝔉_k(U_0, …, U_{k-1}; V_k) := S_W(U_0) + Σ_{j=0}^{k-1}κ_jΣ_cφ̂_c(M̄^{(j)}_c(U_j); U_{j+1})**
+L122	BFT_A.md	𝔉_k(U_0, …, U_{k-1}; V_k) := S_W(U_0) + Σ_{j<k}κ_jΣ_cφ̂_c(M̄_c^{(j)}(U_j); U_{j+1}) (TOWER-VAR, PROOF l.6296),
+L123	KFACTOR_OFF55.md	F(x) := 𝔉_k∘exp(x; B) (TOWER-VAR; BFT_A §1.1)
+L124	SRCAN55.md	**𝔉_k^{ε̂} := Σ_p(1 + ε̂_0(p))w(F_p) + Σ_{l<k}κ_lΣ_c(1 + ε̂_l(c))φ̂_c(M̄^{(l)}_c(U_l); U_{l+1}).**
+L125	LINEAR_PACKAGE.md	**E(B_0, …, B_{k-1}; B_k) = ½||dB_0||² + Σ_{i<k}(κ_i/2)||QB_i - B_{i+1}||²**
+L126	BFT_A.md	**E_src(x; B_k) := ½||dx_0||² + Σ_{l<k}(κ_l/2)||r_l(x)||² - Σ_{l<k}[⟨G_l, dx_l⟩ + ⟨j_l, x_l⟩ + ⟨s_l, r_l(x)⟩]**
+L127	HIST.md	E(chain) := Σ_ps(U_0(p)) + κΣ_{i<k}Φ_i(U_i, U_{i+1})
+L128	NSL55.md	- **E^cb_j(w)** := 𝔉_j(exp Z_j(w); e^w); **E^cb_0** := S_W;
+L129	BFT_A.md	with E_j^{cb}(W) := 𝔉_j(Z_j(W); W) (the composite branch value)
+L130	BFT34_55.md	**E_k^br(B) := 𝔉_k(x(B); B)** (Balaban's convention, BA-9;
+L131	BFT4W55.md	- **E_k^br** := 𝔉_k(x(B); B), the **composite critical value** (Balaban's convention; BFT34_55 §1.1; Codex GV item 4).
+L132	SRCCD55.md	- **BFT-4** (E_k^br = S_W + R_k, ‖R_k‖_𝒜 := Σ_{X∋0}sup|R_k(X)|e^{m_0|X|} ≤ C_0) is the source-free **classical** part of
+L133	BFT34_55.md	- **R_k** := E_k^br − S_W(V_k) (REVIEW_S22 l.414)
+L134	PROOF.md	(U_j critical for F_j(·, U_{j+1}) = E_j^br + κ_jφ̂ without
+L135	PROOF.md	(iv) U(GV) = Ĝ·U(V) for every level-1 gauge G (Lemma U0 (iii)), so E_1^br(V) := F(U(V), V) is gauge invariant;
+L136	NSL55.md	BR1's named not-computed inputs C_♭, C_Δ^{BR1}, r_♭ — only finiteness is used). Then **BR1's U(V) is gauge-equivalent under
+L137	NSL55.md	**Proposition E-ind — PROVEN-HERE as a conditional implication.**
+L138	HIST.md	**𝓔_0 := Σ_ps(U_p), 𝓔_{i+1}(V) := min_U[𝓔_i(U) + κΦ_i(U, V)]**
+L139	PROOF.md	E_1^NA := min_UF = E_1^br on 𝔅_1(ε_br) iff (MIN_1) holds
+L140	HIST.md	**𝓔^♭_k(U) := inf_ψE^♭(ψ; U)**
+L141	PLD.md	fixes 𝔟(V) := the minimiser of E_k + the kernel term given V
+L142	CODEX_REVIEW_ASSEMBLY.md	### R6 — What (GERM) can actually establish; what it cannot
+L143	ASSEMBLY55.md	(i) **(MIN-cb)** [OPEN]
+L144	FLOW.md	**Def F-strip (the tree tower; uniform κ).** 𝒯_0(U) := Σ_ps(U_p); 𝒯_{k+1}(V) := min_U[𝒯_k(U) + κΣ_ck̃(V_c, M̄_c(U))]
+L145	HIST.md	Termwise k̃ ≥ φ, so 𝒯_k ≥ 𝓔_k
+L146	ASSEMBLY55.md	## 1.1 There are THREE objects, not two (symbols pinned by file and string; systemic defect 1)
+L147	FLOW55.md	Apply Lemma ENV to FLOW §31's one-step problem F_k(U; V) = 𝒯_k(U) + κΣ_ck̃(V_c, M̄_c(U)) on the slice Σ_lin (TOW (2)): with
+L148	GV55.md	𝔉_k∘exp(·; B) has **exactly one** critical point x* in 𝔅 := {x ∈ Ker Γ : ‖x‖_{(σ)} ≤ C_0s}; it is
+L149	NSL55.md	- **U^cb_j(v)** := (Z_{j+1}(v))_j, the level-j component of the depth-(j+1) point (j ≥ 0);
+L150	PROOF.md	(ii) **U(V) := e^{A*}U^(0)(V) is a critical point of F(·, V)**
+L151	PROOF.md	(b) at the composite lift Z^lift := (U^{(0)}∘⋯∘U^{(k-1)}(V_k), …, U^{(k-1)}(V_k)) every soft fluctuation vanishes, every
+L152	BFT_B.md	- **(CovLift)** [the new input; named, not proven]: a map V ↦ Z^sm(V), given on every torus by one local formula, with
+L153	FLOW.md	Φ_{j←n} denotes the tree background map
+L154	SF.md	depth-uniform, such that at every real critical chain ψ^r of E^♭(·; U), U ∈ R_{3ε_1}(Λ_k), in a per-level covariant slice through
+L155	BFT_A.md	- (C-glob) *global small gauge class* 𝒞_glob(ε): real V_k = e^{B_k} with ||B_k||_D := max_c|B_k(c)| ≤ ε in one global gauge
+L156	KFACTOR_OFF55.md	Ξλ := (dλ, d ev^{(1)}λ, …, d ev^{(k−1)}λ)
+L157	BFT_A.md	Λ_0 := level-0 functions that are constant on the level-k roots
+L158	KFACTOR_OFF55.md	**Λ_* := functions vanishing on the level-k roots**
+L159	BFT_B.md	Λ_0 := level-0 functions that are **constant on the level-k roots** (BFT_A §26.0)
+L160	ALIGN55.md	Λ_0: level-0 su(N)-functions vanishing at the level-k roots.
+L161	GSHARP55.md	𝒢_0 = {Dλ : λ a level-0 function vanishing at the level-k roots}
+L162	GV55.md	- **Λ_0 / Λ_***: KFACTOR_OFF55 and BFT_A §31 use Λ_0 = level-0 functions **constant** on level-k roots and Λ_* = those
+L163	CODEX_REVIEW_NSL.md	## F5 — new refutation: root-trivial gauges are not the entire fixed-datum symmetry group
+L164	BFT_A.md	- **(GI)** (named hypothesis, the defining property of TOWER-VAR, §1.1): 𝔉_k(U^g) = 𝔉_k(U) for every composite gauge g
+L165	BFT_A.md	Composite gauges: g = (g_0, …, g_{k-1}), g_j a
+L166	CODEX_REVIEW_ASSEMBLY.md	### R11 — Classical versus quantum and constant versus local gauge invariance are real distinctions
+L167	BFT_B.md	- Λ(x) := Σ_Xχ^5_Xλ^E_X(x) (each term extended by 0 off N_X); **Π_E x** := the composite gauge transform of x by λ_0 = Λ(x)
+L168	BFT_A.md	- **Γ_E.** Γ_E(x) := Λ(x) = Σ_Xχ^5_Xλ^E_X(x) of BFT_B §15.0
+L169	GV55.md	- **Γ_E** = **Λ** of BFT_B §15.0 = "Λ_E" of GSHARP55
+L170	BFT_A.md	- **Proposition SM (small tori by periodic lift).** For T ≤ 4 let T' := cT
+L171	NSL55.md	- **Λ^{(j)}** = the depth-j slice functional
+L172	KFACTOR_OFF55.md	Below always **ΓΞλ = −λ for λ ∈ Λ_*** (true for Γ_E,
+L173	BFT_A.md	- **Gauge fixing.** A linear Γ on the chain space such that ΓΞ is a bijection from Λ_0/const onto Ran Γ, and
+L174	BFT_A.md	- **Tent-axial slice (level 0).**
+L175	PROOF.md	(i) there is a unique A* = A*(V) in {A ∈ ker h_{U^(0)} : ||A||_∞ ≤ r(ε)}
+L176	PROOF.md	Π_U := 1 - h_U^T(h_Uh_U^T)^{-1}h_U
+L177	PROOF.md	the slice is the per-level covariant slice (h^{(i)}_U = 0 at each
+L178	REVIEW_S22.md	S_k a composite slice at the composite lift Z^lift(V_k).
+L179	ALIGN55.md	Λ_HCx := λ_0.
+L180	GSHARP55.md	||[x]||_𝔐 := inf_{g∈𝒢_0}||x + g||_𝔐.
+L181	GSHARP55.md	||[x]||_𝔐 ≤ ||Π_Ex||_𝔐 ≤ C_Π||[x]||_𝔐.
+L182	GSHARP55.md	**Proposition GF-DEP (PROVEN-HERE; exact linear algebra).**
+L183	ALIGN55.md	**[x]_{1,♯}** := inf_{λ∈Λ_0}|||x + Ξ_1λ|||_{1,♯}.
+L184	BFT_A.md	(b) For every source S, the Feynman response 𝓛_E^{-1}S and the hard-slice
+L185	KFACTOR_OFF55.md	**composite-co-closed (cc)** iff D^⊥(S) = 0 (the total ΣD(S) = 0 is automatic); (CC-0) := D(S) = 0 everywhere is
+L186	BFT_A.md	composite-co-closed** iff Ξ^TS = 0.
+L187	BFT_B.md	composite co-closedness is D(S) ⟂ Λ_0, i.e. D(S) supported on the level-k roots with total 0.
+L188	BFT_A.md	- **𝔐^∇ (displacements):** ||x||_𝔐 := max_{0≤j<k}[ ||x^c_j||_{∞,m} + ||∇^cx^c_j||_{∞,m} + [∇^cx^c_j]_{α,m} + L^{k-1-j}||r^c_j||_{∞,m} ].
+L189	KFACTOR_OFF55.md	- **𝔐^{(σ)}:** ||x||_{(σ)} := max_{0≤j<k}[ ||x^c_j||_∞ + ||∇^cx^c_j||_∞ + [∇^cx^c_j]_α + L^{(1+σ)(k−1−j)}||r^c_j||_∞ ].
+L190	GSHARP55.md	- **"𝔐-pair"** names three different norm pairs:
+L191	GSHARP55.md	(P2) REVIEW_S22's 𝔐, which is described but not defined (REVIEW_S22 l.392-399);
+L192	BFT_A.md	Gauge-invariant configuration norm: **||x||_inv := max_{0≤j<k}[ ||f_j||_∞ + [f_j]_α + L^{k-1-j}||r^c_j||_∞ ]**
+L193	BFT_B.md	- **Residual-gradient size.** N_res(x) := Σ_{0≤i≤k-2}||r_i(x)||_{C^{1,α}}
+L194	NSL55.md	- **‖ξ‖_♮** := ‖ξ‖_∞ + ‖∇^cξ‖_∞ + ‖∇^c∇^cξ‖_∞ + [∇^c∇^cξ]^∞_α
+L195	COFUN_CC.md	**N(S)** := ‖G^c_0‖_∞ + [G^c_0]_α + ‖j^c_0‖_∞ + ‖j‖_Pc + ‖G‖_Y + ‖s‖_R (= (CO-fun)'s right side
+L196	GV55.md	- **N_Σ(S)** := ‖G^c_0‖_∞ + [G^c_0]_α + **|j|_Σ** + ‖G‖_Y + ‖s‖_R
+L197	CODEX_REVIEW_C2.md	N := ||G_0^c||_∞+[G_0^c]_α+||G||_Y+||s||_R+J
+L198	KFACTOR_OFF55.md	**N^{(σ)}(S) := ||G^c_0||_∞ + [G^c_0]_α + ||s||_{R(σ)} + J(j),
+L199	COFM55.md	**N_m(S) := ||G_0||^L_m + ||j^c_0||_{∞,m} + ||j||_{Pc,m} + ||G||^{sup}_{Y,m} + ||s||_{R,m}**
+L200	BFT_A.md	- **(R)** ||s||_R := max_{0≤l<k}ω^R_lL^{k-1-l}||s^c_l||_∞ with **ω^R_l := L^{θ(k-l)} for every 0 ≤ l < k**
+L201	BFT_A.md	- **(G)** ||G||_Y := max_lω_l(||G^c_l||_∞ + [G^c_l]_α), ω_0 := 1, ω_l := L^{θ(k-l)};
+L202	KFACTOR_OFF55.md	Lip ≤ ½; its fixed point is the unique critical point of 𝔉_k∘exp in 𝔅; BFT-1 holds with (θ_w^c, θ_w^r, θ_A) = (2, 2 + σ, 1)
+L203	REVIEW_S22.md	- level-j curvature and soft-fluctuation components are weighted by L^{θ_w(k-j)};
+L204	GV55.md	- **θ** = the class exponent (ω_l = L^{θ(k−l)}) of N(S), ‖s‖_R, LIN0, CC-INV, RHT-cc; never θ_w.
+L205	CODEX_REVIEW_KOFF.md	use any `θ₀` with `α<θ₀<1`, for example `(α+1)/2`, in those imported
+L206	BFT_A.md	Setting LIN of §7.1, d = 4, L ≥ 3 odd, **α := ¼, θ := ½** (inside 0 < α ≤ θ ≤ 1 - α).
+L207	BFT34_55.md	𝒫_ε := {B ∈ (su(N)⊗ℂ)^{links} : max_c|B_c| ≤ ε} is a genuine polydisc in link coordinates (used for Cauchy below).
+L208	REVIEW_S22.md	level-k field V_k = e^zV_k^r with V_k^r real, max_P|log V^r_{k,P}| ≤ ε ≤ ε_0 and
+L209	BFT34_55.md	components. It is **not** BFT-3 on BFT's full class (curvature-small V on every torus, non-wrapping boxes): 𝒞_glob is a strict
+L210	CODEX_REVIEW_SRCAN.md	in the sup-plus-Wilson-Hölder coefficient class on 𝒞_glob
+L211	SRCAN55.md	| ‖ε̂‖_cf | max_l‖ε̂_l‖_∞ + [ε̂_0]^∞_α (pointwise Hölder seminorm in level-k coarse units, separations from one fine step to one coarse unit, Codex KOFF §4.3's convention) | ‖·‖_♮ (FLOW55, GV55) | new name "cf" |
+L212	CODEX_REVIEW_SRCAN.md	| ε_W vs ε_{S,l} | SRCAN55:113, 150–153 | Wilson plaquettes vs soft level-(l+1) links; the target uses ε̂₀ for both when l=0 |
+L213	SRCCD55.md	RLF and (F_R) must therefore hold uniformly over a sup-norm ball of coefficient fields. This is the same "slowly varying
+L214	SRCAN55.md	A sup-norm ball is too large for BFT-1's Hölder clause (Lemma SA-J: exact flux identity; size comparison ARGUED).
+L215	KFACTOR_OFF55.md	*Conclusion.* There are ε_0 > 0 and C_0 < ∞ depending only on (N, L, κ_±, α, θ, σ) and the named constants — **not on k
+L216	NSL55.md	Put **r_u := min(η_*, 1/(8GK), 1/(2C_cc))** and **ε_u := min(ε_0, 1/(4GK), r_u/C_0, r_ℂε_0/2)**.
+L217	CODEX_REVIEW_BALX.md	### F2 — Fixed geometric domains and coupling-dependent integration cuts have been conflated
+L218	SRCCD55.md	O_a(f) = Σ_x a⁴f(x)e_a(x) as in ROTDEF §2.2
+L219	HINT55.md	- E(t,x) = −½tr(G_μνG_μν)(t,x) = ¼G^a_μνG^a_μν (tr T^aT^b = −½δ^{ab}); 𝓔(t,x) := t²E(t,x); f_ω(t) := ω(𝓔(t,0)).
+L220	HINT55.md	¼G^aG^a on smooth fields [m: Lüscher's construction]. 𝓔(t,x) := t²E_lat(t,x). Properties used: gauge invariant,
+L221	CODEX_REVIEW_SRCAN.md	Thus the target's “every collision checked” table misses an R collision.
+L222	CODEX_REVIEW_KOFF.md	K^(σ) of §5.3: relative to the named lane-A linear inputs, one Γ
+L223	CODEX_REVIEW_NSL.md	2. **CONDITIONAL:** NSL's real existence, small-gauge uniqueness, bound C_N=4+3C_Lambda, and Faddeev–Popov inverse, uniformly in k,T,j (and sigma), from the expressly retained uniform elliptic/linear inputs.
+L224	GV55.md	| 5 | Lane-A linear package (C2-COF), LIN0, W0, GU, FP, BL-4, Prop W, LES-div, LR-pot, Lemma Λ, Q-hold; BA-3, BA-6/F6, CR-1, Corollary WR (a) (named hypothesis) | BFT_A, BFT_B | banked/CONFIRMED at lane level and in the cited Codex reviews, **conditional on their own named inputs** (not re-audited here) |
+L225	CODEX_REVIEW_C2.md	1. **CONFIRMED — conditional whole-class CO-fun.**
+L226	BFT_A.md	- **Lemma CD (exact composite-divergence identity), given (GI).**
+L227	CODEX_REVIEW_TOPCC.md	3. **CONFIRMED — source-only linear estimates, as implications.**
+L228	BFT_B.md	- **Theorem EP-rec (elliptic reconstruction).** For every configuration x (data x_k arbitrary; x_k := 0 for displacements):
+L229	CODEX_REVIEW_GSHARP.md	1. **CONFIRMED — flat unweighted reconstruction and slice identification.**
+L230	CODEX_REVIEW_GSHARP.md	3. **CONFIRMED — GF-E′ on S_E.**
+L231	BFT_A.md	- **Proposition SM (small tori by periodic lift).** For T ≤ 4 let T' := cT
+L232	BFT_B.md	- **Theorem RHT-cc ((Res-Hölder) for composite-co-closed sources, m = 0).**
+L233	REVIEW_BFT_B_S9_S10.md	## S9-7 Theorem RHT-cc and K_f: **CONFIRMED**
+L234	BFT_B.md	- **Lemma RT-cc (residual transport for composite-co-closed sources).**
+L235	CODEX_REVIEW_TR.md	## 2. RT-cc, TC and FT really give the extra power
+L236	BFT_B.md	- **Lemma TC (transported sizes; m := k - 1 - i ≥ 1).**
+L237	BFT_B.md	- **Lemma FT (funnel transpose: size, support, weight).**
+L238	REVIEW_BFT_B_S9_S10.md	## S9-6 Lemma FT (ii)-(iv): **CONFIRMED**
+L239	BFT_A.md	- **Lemma TS (top source).** If s = s_{k-1} only (residual type at step k - 1), the set of minimisers of E_src(·; B_k) equals
+L240	REVIEW_BFT_A_S3.md	- **Step 3 (TS, W, Λ, LR-pot, FP): CONFIRMED**
+L241	BFT_A.md	- **Corollary FP (potential half of (G♯_0-field^∇)_m).** For data and residual-type sources, the minimiser in S_tent obeys
+L242	BFT_A.md	- **Proposition W (weighted data map, gauge-invariant half).**
+L243	BFT_A.md	- **Lemma Λ (root-to-root holonomy).**
+L244	BFT_A.md	- **Lemma LR-pot (potential reconstruction in the tent-axial slice).**
+L245	BFT_A.md	- **Corollary LIN0 (gauge-invariant (H-lin^∇) on the pair of BL-7, m = 0, trivial background).** For 0 < α < θ < 1 and
+L246	REVIEW_BFT_A_S6.md	scope** (BL-7's pair, level-wise co-closed sources, m = 0, trivial background, 0 < α < θ < 1).
+L247	BFT_A.md	- **Theorem CO-upR ((CO-up) for rough currents).** For 1 ≤ j < k:
+L248	REVIEW_BFT_A_S5.md	- **CO-0R, RH, CO-upR, CO-B: CONFIRMED** (CO-upR with a Campanato-vs-pointwise remark, fix U5).
+L249	BFT_A.md	**Proposition BL-4 (data: the gauge-invariant components).**
+L250	REVIEW_BFT_A_S2.md	(N2-lin, J-str, LES), with one constant to fix (the LES box convention). **BL-5 (a): CONFIRMED** for gauge-invariant
+L251	BFT_A.md	**Lemma BL-2 (coarse-unit sizes of the chain maps).**
+L252	BFT_A.md	**Lemma BL-C (lattice Campanato ⇒ pointwise Hölder).**
+L253	BFT_A.md	**Theorem BL-5 (the linear estimate at the trivial background for data and residual-type sources).**
+L254	BFT_A.md	- **Lemma FG (gauge-fixed responses).**
+L255	BFT_A.md	- **Corollary WR (the level-0 Wilson rows).**
+L256	REVIEW_BFT_A_S6.md	- **Theorem YH: CONFIRMED.** **Theorem W0: CONFIRMED.** **Corollary WR (a): CONFIRMED-WITH-FIX** (a hypothesis must be
+L257	BFT_A.md	- **Lemma BA-3 ((CL-3) in 𝔐^∇).**
+L258	REVIEW_BFT_A_S1.md	- CONFIRMED: BA-1, BA-3, BA-4 (body), BA-5, BA-7, BA-8 (given G1/G2), BA-9 (implication; one ARGUED step), BA-10, BA-11,
+L259	BFT_A.md	- **Corollary BA-6 (soft-level remainders are irrelevant in 𝔐^∇, marginal in X_c).**
+L260	BFT_A.md	- **Lemma BA-10 (holomorphy).**
+L261	BFT_B.md	- **Theorem COF ((CO-fun) under (CC-0)).**
+L262	REVIEW_BFT_B_S9_S10.md	## S10-6 **Corollary COF-crit (§35.6) is WRONG as stated.** Theorem COF is CONFIRMED; its application to the rows is not.
+L263	BFT_B.md	- **Lemma DF-cc (funnel-modified dual push-down).**
+L264	REVIEW_BFT_B_S9_S10.md	## S10-3 Lemma DF-cc (i)-(iii): **CONFIRMED**
+L265	BFT_B.md	- **Proposition COF-size.** Under (CC-0) and in the (P0) + (Pl-c) classes
+L266	REVIEW_BFT_B_S9_S10.md	## S10-5 Proposition COF-size: **CONFIRMED as an inequality in the (Pl-c) class**
+L267	BFT_B.md	Theorem PW-cc's residual estimates
+L268	REVIEW55_BFTB.md	Lemma LE/BL-C, GU, LIN0, PW-cc's residual ℓ¹ bounds — not re-derived here)
+L269	BFT_A.md	- **Theorem YH (level-0 dual bounds).**
+L270	BFT_A.md	- **Theorem W0 ((G♯_0-lev0) at m = 0, trivial background, Setting LIN).**
+L271	BFT_A.md	- **Theorem GU ((G♯-up) at m = 0, trivial background).**
+L272	BFT_A.md	- **Lemma TOPD (top-residual duality).**
+L273	BFT_A.md	- **Lemma LE (local energy from the sup).**
+L274	REVIEW_BFT_A_S6.md	- **Lemma CS, TOPD, LE: CONFIRMED.**
+L275	BFT_B.md	- **Lemma Q-hold.** For 0 ≤ a < b ≤ k and every level-a 1-form v
+L276	LINEAR_PACKAGE.md	**Lemma 3.2'' (LES-div; l.3271-3284):** for -Δu = Σ_a∂_a^-g_a + h on Q_R, R ≥ 16, the Campanato seminorm of ∇u at scales
+L277	LINEAR_PACKAGE.md	**Theorem 3.8 (N2-lin, sup forms; l.2502-2516).** For every B_k, uniformly in k ≥ 1 and T:
+L278	PROOF.md	- **Lemma NA-alg (explicit su(N) algebra for the normalised soft kernel): PROVEN-HERE.** Norms are Hilbert-Schmidt,
+L279	CODEX_REVIEW_KOFF.md	### 4.3 Independent local analytic completion, with unspecified finite constants
+L280	CODEX_REVIEW_HIGHER.md	1. **CONFIRMED — local all-orders inputs.**
+L281	LINEAR_PACKAGE.md	**Theorem 4.2 (N2-exp; l.2735-2772).** Let m_* be the minimum over κ ∈ [κ_-, κ_+] of the largest η ≤ 0.1 for which the
+L282	NSL55.md	- (c) **‖Λ^{(j)}(v)‖_♮ ≤ C_Λ n_0(v)**, C_Λ = C_Λ(α, d, L). (EP-bd's proof: ‖Λ‖_{C^{2,α}} ≤ 16·4C_χ·6C_E·sup_X n_{Ñ_X}(v), and
+L283	CODEX_REVIEW_NSL.md	Explicit inherited uniform input; algebraic pin/sampling identities rebuilt
+L284	CODEX_REVIEW_KOFF.md	All these implications retain the analytic hypotheses of their named
+L285	PROOF.md	(T-UNIF), repaired — CONFIRMED
+L286	PROOF.md	(CO-fun) on the composite-co-closed class — BOTH HALVES CONFIRMED in the (C2-COF) form
+L287	PROOF.md	GZ-SLOT / GZ-FALSE — REFUTED
+L288	PROOF.md	(CC-0) at every critical point — REFUTED
+L289	PROOF.md	NLOC Theorem NL-3′'s proof step — REFUTED
+L290	PROOF.md	Gauge-invariant half of BFT-5 clause (b) at the trivial background — CONFIRMED as source-only linear estimates
+L291	PROOF.md	Lemma TR (level-count factor) — CONFIRMED at the quadratic level
+L292	PROOF.md	Sphere route — equatorial reflection positivity CONFIRMED
+L293	PROOF.md	Smallness hierarchy — strict acyclicity of the encoded graph CONFIRMED
+L294	PROOF.md	Theorem K^(σ) (corrected) — CONFIRMED conditionally
+L295	PROOF.md	GF-E and GF-E′ on S_E at m = 0 — CONFIRMED
+L296	PROOF.md	Clause (b) with decay — CONFIRMED
+L297	PROOF.md	Rotation reduction — CONFIRMED in part
+L298	PROOF.md	Non-freeness comparator — CONFIRMED for a narrower class
+L299	PROOF.md	RLARGE — W-cb♯ and FI-1 CONFIRMED conditionally
+L300	PROOF.md	Node A — key reductions CONFIRMED
+L301	PROOF.md	Full nonlinear COF-crit / NCE (i) / CC-CRIT at critical points (Theorem TR∞, Corollary CC-CRIT∞) — CONFIRMED conditionally
+L302	PROOF.md	Proposition GV-E, the corrected slice contraction, the weighted field estimates and slice identities — CONFIRMED as scoped implications
+L303	PROOF.md	Coupling flow — the corrected conditional reduction to (UIR^♮), the fixed-n tadpole/ghost results, the trivial-point Ward identities and the arithmetic — CONFIRMED
+L304	PROOF.md	Node A residual — both counterexamples to the Anderson-type mechanism
+L305	CODEX_REVIEW_NRES.md	These are the source's conventions.
+L306	PROOF.md	Proposition T (rotated-lattice universality is controlled by uniform conditional comparisons; the coarse law never enters) — CONFIRMED
+L307	PROOF.md	a_RS has no consumer on the live RLF-step v3 route — CONFIRMED
+L308	PROOF.md	Theorem GA (perturbative background transfer by alignment) — CONFIRMED with its exact hypotheses
+L309	PROOF.md	Rotation, flat route (TQ) — reductions CONFIRMED, TQ itself NOT-VERIFIED
+L310	PROOF.md	Source-inserted RG (SRC) — Proposition B and Lemma V CONFIRMED; downstream NOT-VERIFIED
+L311	PROOF.md	BFT-3 on the global potential-small domain — CONFIRMED conditionally; BFT-4 OPEN
+L312	PROOF.md	Balaban-method reading (BALABAN_EXTRACT) — checked against the open arXiv expositions
+L313	PROOF.md	(NSL) and BFT-0's per-level identification — CONFIRMED conditionally
+L314	PROOF.md	Coupling flow: (UIR^♮) reduced further — CONFIRMED as a conditional implication
+L315	PROOF.md	BFT-4 (a) on 𝒞_glob — CONFIRMED conditionally, with one named premise (R)
+L316	PROOF.md	SRC via analyticity — scoped pieces CONFIRMED
+L317	PROOF.md	Non-freeness witness — comparator mathematics CONFIRMED, the identification bridge NOT
+L318	PROOF.md	Sphere route — construction, reflection positivity and Ward algebra CONFIRMED
+L319	PROOF.md	Background transfer (R2) — alignment reduction CONFIRMED conditionally; S_E obstruction CONFIRMED
+L320	PROOF.md	Assembly audit — scoped implications CONFIRMED
+L321	PROOF.md	Node A convexity — counterexamples CONFIRMED, the full chain no-go NOT
+L322	FLOW55.md	| cubic tree jet D³𝒯_k(1) k-uniform | Theorem N1-15 (+ NQ-1, + T-UNIF TU-5/TU-6): "N3(D³E_k^br(1)) ≤ 𝔚·L^{(d−4)k} + …", uniform in k and T |
+L323	FLOW55.md	**one-step soft-constrained fluctuation operator** Õ_k(U, V) := slice compression of Hess_U(𝒯_k + κΣ_ck̃(V_c, M̄_c(·)))(U*)
+L324	ASSEMBLY55.md	the normalisation map between 𝔉_k's κ_jφ̂ and the "stripped φ-tower"
+L325	CODEX_REVIEW_TOPCC.md	The bound also holds with N_Σ, and with the explicitly defined weaker
+L326	BFT4B55.md	- **𝒢** := SU(N)^{sites} (real level-k gauge group) acting by (V^g)_b := g_x V_b g_y^{-1}, b = (x, y).
+L327	NSL55.md	C_Λ := the draft's Lemma A (c) constant (**not** Lemma Λ's C_Λ = 10, BFT_A "13.11 Lemma Λ"). C_Δ, η_1, η_2 := the draft's
+L328	RLARGE_U55.md	**θ := min{θ_cap, a_A°/a_bad}** (θ_cap the CAP-1 choice), then a_A := min{a_A°, 6θa_bad} ≥ θa_bad, then a = θa_bad.
+L329	LCONV55.md	Chart: U_ℓ = exp(i(A_ℓ + v_ℓ)·σ), stripe A_2 = a(x_1 mod 3)σ_3 with **rational** β ∈ {1/5, 1/20}; the second-order expansion of
+L330	PROOF.md	BFT-4 (b) — the averaging reduction CONFIRMED; "no consumer" NOT
+L331	PROOF.md	Off 𝒞_glob — local components CONFIRMED, Theorem OFF NOT (GAP)
+L332	PROOF.md	Large fields — lemmas CONFIRMED, route replacement NOT endorsed
+L333	LARGE55.md	(iv) if the bare coupling obeys u_0 ≤ u_* + β_*K log L
+L334	PROOF.md	Sphere route — W0 and N5 as conditional implications CONFIRMED
+L335	SEAM55.md	level i (n levels, ℓ_n = ℓ_0); V = U_n the level-n (reference) field; u = local inverse coupling in "u-units"
+L336	PROOF.md	The local premise (R) — PROVEN as an implication
+L337	CODEX_REVIEW_RLOC.md	### R4. HC's κ-independent sup is false, but local holomorphy has a direct repair
+L338	OFFGLOB55.md	𝔅_k(ε) := {V : level-k links → SU(N) : d(V_P, 1) ≤ ε for every
+L339	OFFGLOB55.md	saturation **𝒞*_glob(s) := ∪_g g·𝒞_glob(s) = {V : ∃ g with d((gV)_c, 1) ≤ s for every level-k link c}**
+L340	OFFGLOB55.md	factor 12(R′ − 1): "curvature-small" = "small in a local frame on every box of bounded size".**
+L341	OFFGLOB55.md	### 1.5 Proposition C4 (𝒞*_glob is a strict subclass; the size gap is √ε) — PROVEN-HERE
+L342	CODEX_REVIEW_BFT4B.md	This norm is centered at the trivial field, which is **not fixed** by independent endpoint gauges.
+L343	SEAM55.md	**N5 (seam transparency, separated form).**
+L344	SEAM55.md	### 1.5 Theorem W0 (the Ward profile). CONDITIONAL on LCS-a; implication PROVEN-HERE
+L345	BFT_A.md	- **Theorem W0 ((G♯_0-lev0) at m = 0, trivial background, Setting LIN).**
+L346	PROOF.md	Theorem N5-sf0 (N5 at small-field backgrounds for the level-0 fluctuation operator)
+L347	CODEX_REVIEW_TOPCC.md	For a top link β, let Y^β be the zero-datum response to the top residual source δ_β. Lemma TS identifies its unknown components with those of the source-free minimizer y^β having datum δ_β/κ_(k−1). They differ in their last residual:
+L348	CODEX_REVIEW_COFM.md	**Verdict: CONFIRMED that Proposition W supplies weighted BL-4, including the local Hölder step.**
+L349	CODEX_REVIEW_TR.md	writes the plaquette correction as an analytic map `Φ` with `DΦ(0)=0`. Translating the four links and using the ball's gradient bound gives
+L350	CODEX_REVIEW_HIGHER.md	**CONFIRMED — exact quadratic commutator cancellation.**
+L351	CODEX_REVIEW_KOFF.md	fixed local analytic extensions and the complexified fixed linear inverse
+L352	CODEX_REVIEW_C2.md	It suffices to use COF's proof on a **strict plain-only** source. There the corrected DF identities are valid without the SPLIT mistake.
+L353	BFT_A.md	- **Theorem PW-cc (co-closed half of the dual (PW-i)).**
+L354	REVIEW_BFT_A_S8.md	**S8-4 Theorem PW-cc (38.2, l.3481-3501): CONFIRMED, and uniform in k and T.**
+L355	CODEX_REVIEW_TOPCC.md	TOPD is symmetry of the Hessian tested on two actual critical points.
+L356	CODEX_REVIEW_GSHARP.md	### 2.4 Q-hold and the residual sum
+L357	CODEX_REVIEW_GSHARP.md	Caccioppoli and LES-div thus control λ in `C^(2,α)` on the tent support by the local `C^(1,α)` norm of x_0.
+L358	CODEX_REVIEW_GSHARP.md	This removes LR-pot, its constants `155,8,40`, and all data/residual estimates from this particular step.
+L359	CODEX_REVIEW_COFM.md	1. **CONFIRMED:** Lemma K,
+L360	CODEX_REVIEW_COFM.md	2. **CONFIRMED:** COF_m under (CC-0), and, after DEC, CC-FUN_m (a), (b) and (c) for every stated composite-co-closed source S with B_k = 0:
+L361	CODEX_REVIEW_COFM.md	4. **CONFIRMED inputs and bookkeeping:** Lipschitz-weighted QH_m; Proposition W as weighted BL-4;
+L362	CODEX_REVIEW_GSHARP.md	Let `H_i(Y,ν)` be the integral of x_0 along the straight fine path between adjacent level-i roots.
+L363	CODEX_REVIEW_RLOC.md	Rebuild LBC: two successive dyadic means differ by at most `4 Osc_2` on the larger box in four dimensions.
+L364	KFACTOR_OFF55.md	(1a) own plaquette logs of e^{x_j} ≤ L^{−2(k−j)}(2η + 9η²) (BA-3; θ_w^c = 2, the maximum, NORMS "There is NO slack in the
+L365	CODEX_REVIEW_RLOC.md	### R11. The Wilson citation changes the meaning of s and loses a factor sixteen
+L366	CODEX_REVIEW_RLOC.md	|q_p|≤9(Σ_{i=1}^4|x_i|)²≤9(4s_j)²=144s_j²

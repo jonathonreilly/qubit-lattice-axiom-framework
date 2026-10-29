@@ -2043,3 +2043,14 @@ Launched: TSE55** — (TS-e-up)/(TS-e-low).
 **UIR2_55 — died at the 128k output-token limit** (one oversized response; only its PRE-STATED block reached disk). Relaunched
 on Opus 5.5 max with a resume brief carrying the Codex UIR corrections, the F23 / Codex R3-R6 tree-jet route and the (R)
 result, and an explicit small-appends rule (now also in the shared worker brief).
+
+**DICT55 — finished** (claude-opus-5-5, max). **The proof's dictionary (Codex item 3).** Four towers, not three (FLOW's
+k̃-tower 𝒯_k is separate for N ≥ 3, same jets to order 5); "E_k^br" in BFT34_55/BFT4W55/SRCCD55 means E^cb; the φ ↔ k̃ map is
+exact (𝔉_k = N × HIST's chain energy; y = √N·B; n-th jets differ by N^{1−n/2}) — closes ASSEMBLY55 F23's normalisation gap;
+conventions pinned (left action — BFT_B §13.3 and (CovLift) use the right one; centred contours binding at σ > 0; u =
+1/g² = 2N/g_std²; HS norms; coefficient norm). **Hidden premise set: 17 lane-A linear inputs (R1) under K^(σ)/GV-E/BFT-E/
+NSL/TOP-cc/C2-COF have no two-family re-derivation on disk** (each confirmed only in a pre-S24 review of unrecorded model;
+none refuted). REFUTED: ASSEMBLY55 N24's blanket label; BA-3's 9s_j² as justified gives 144s_j² (contradicts the banked
+"2η + 9η²" display — constants only). Most dangerous: FL7 — every banked BFT result is on 𝒞_glob, consumers read the
+larger curvature-small class. 29 flags with restatements. **Codex review launched (CODEX_REVIEW_DICT.md); the [S26-BANKED]
+wording fixes wait for it. Launched: LANEA55** — re-derive the 16 on-chain hidden premises.

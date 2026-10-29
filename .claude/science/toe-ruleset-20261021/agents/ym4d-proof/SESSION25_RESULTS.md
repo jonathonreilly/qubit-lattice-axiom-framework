@@ -1955,3 +1955,9 @@ scrutinise), Lemmas ZL and RT. REFUTED: BFT4W55 §3.4's printed 𝒦_D (correcte
 only; link counts 459 / 4125 match Codex HIGHER). If Codex confirms, BFT-4 (a), H3, F^σ and both BFT-3 routes lose the (R)
 premise. **Codex review launched (CODEX_REVIEW_RLOC.md). Launched: DICT55** — Codex work-list item 3, the proof's single
 dictionary and the exact lane-A linear inputs under [S26-BANKED].
+
+**CX-BFT4B** (`CODEX_REVIEW_BFT4B.md`). Lemma AVG banked (with a factor ≤ 2 in the centred norm — SU(2) counterexample to
+factor 1); interior-chart estimates conditional. **Theorem T0's "no consumer" is NOT banked (GAP):** (I_k^E)″ needs the
+global critical-value polymers identified with its localised-minimiser, invariant, centred-norm class. So the four
+CovLift-family inputs are not yet off the critical path; the honest target is (c₀) on the invariant consumer domain +
+that identification (forwarded to OFFGLOB2_55).

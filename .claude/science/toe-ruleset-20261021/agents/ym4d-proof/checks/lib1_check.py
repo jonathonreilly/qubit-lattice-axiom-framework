@@ -148,6 +148,11 @@ def norm(coeff, labels, roots, active, weight_power):
     return best
 
 
+def full_output_norm(grouped, out_labels, allv, lam):
+    """One computation shared by the inequality and exact mutation witnesses."""
+    return norm(grouped, out_labels, allv, allv, 1)
+
+
 def exercise(name, adj):
     guard(name+": start")
     n, allv = len(adj), (1 << len(adj))-1
@@ -199,7 +204,7 @@ def exercise(name, adj):
             if holes:
                 m = max(h.bit_count() for h in holes)
                 input_strong = norm(coeff, labels, allv, allv, 1+8*m)
-                output_full = norm(grouped, out_labels, allv, allv, 1)
+                output_full = full_output_norm(grouped, out_labels, allv, lam)
                 require(output_full <= 9*m*input_strong, "bounded_hole_full_norm")
             else:
                 require(grouped == coeff, "no_hole_identity")
@@ -252,18 +257,49 @@ def mutations():
     for h in holes:
         if x & h:
             bad_fill |= h
+    # These witnesses call the exact same full-output function as exercise().
+    input_full = norm({x: Fraction(1)}, {x: x}, allv, allv, 1)
+    computed_full = full_output_norm({y: Fraction(1)}, {y: y}, allv, lam)
+    computed_active = norm({y: Fraction(1)}, {y: y}, lam, lam, 1)
+    require(input_full == 2, "exact_cycle_input_full_norm")
+    require(computed_full == 16, "exact_cycle_output_full_norm")
+    require(computed_active == 2, "exact_cycle_output_active_norm")
+
+    # Two saturated supports overlap only at an inactive vertex. Its rooted
+    # full sum is 4+4=8; either retained root sees just one summand, namely 4.
+    path_adj = graph(3, [(0, 1), (1, 2)])
+    path_all, path_lam = 7, 5
+    path_holes = components(path_all ^ path_lam, path_adj)
+    left, right = fill(1, path_holes, path_adj), fill(4, path_holes, path_adj)
+    require((left, right) == (3, 6), "exact_overlap_supports")
+    overlap = {left: Fraction(1), right: Fraction(1)}
+    overlap_labels = {label: label for label in overlap}
+    overlap_full = full_output_norm(overlap, overlap_labels, path_all, path_lam)
+    overlap_active = norm(overlap, overlap_labels, path_lam, path_lam, 1)
+    overlap_active_roots = norm(overlap, overlap_labels, path_lam, path_all, 1)
+    require(overlap_full == 8, "exact_inactive_root_output_full_norm")
+    require(overlap_active == 2, "exact_overlap_output_active_norm")
+    require(overlap_active_roots == 4, "exact_overlap_active_roots_full_weight")
+    REPORT["inactive_root_witness"] = {
+        "graph": "path3", "retained_vertices": [0, 2],
+        "output_supports": [[0, 1], [1, 2]], "coefficients": [1, 1],
+        "computed_full_norm": int(overlap_full),
+        "computed_active_norm": int(overlap_active),
+        "computed_active_roots_full_weight": int(overlap_active_roots),
+        "independent_expected_full_norm": 8,
+    }
     checks = {
         "drop_inactive_remainder": ({1: Fraction(1), 2: Fraction(1, 3)} != {1: Fraction(1)}),
         "erase_inactive_source": ({3: Fraction(1, 7)} != {3 & lam: Fraction(1, 7)}),
         "fill_intersected_only": bad_fill != y,
-        "identify_active_and_full_norms": 2**y.bit_count() != 2**(y & lam).bit_count(),
+        "identify_active_and_full_norms": computed_full != computed_active,
     }
     for key, rejected in checks.items():
         require(rejected, "mutation_rejected_"+key)
     REPORT["mutations"] = {key: "rejected by exact witness" for key in checks}
     REPORT["norm_witness"] = {"graph": "four-cycle", "input_support": [0],
-                              "inactive_component": [1, 2, 3], "input_full_norm": 2,
-                              "output_full_norm": 16, "output_active_norm": 2,
+                              "inactive_component": [1, 2, 3], "input_full_norm": int(input_full),
+                              "output_full_norm": int(computed_full), "output_active_norm": int(computed_active),
                               "mu": "log(2)", "activity_supremum": 1}
 
 
@@ -294,6 +330,6 @@ if __name__ == "__main__":
     REPORT["script_sha256"] = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
     REPORT["criteria_sha256"] = hashlib.sha256((HERE/"lib1_criteria.md").read_bytes()).hexdigest()
     data = json.dumps(REPORT, indent=2)+"\n"
-    (HERE/"lib1_check_result.json").write_text(data)
+    (HERE/"lib1_norm_control_baseline_result.json").write_text(data)
     print(data, end="")
     sys.exit(code)

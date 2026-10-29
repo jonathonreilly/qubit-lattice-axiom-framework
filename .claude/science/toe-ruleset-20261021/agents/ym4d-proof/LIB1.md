@@ -644,9 +644,14 @@ The recorded run completed with:
   bounded-hole full-norm inequalities;
 - 6,288 support instances on the 2×2×2×2 block torus, across 137 active
   sets; periodic duplicate neighbours correctly reduce its degree to 4;
-- four explicit wrong outputs distinguished: dropping the inactive term,
-  deleting an inactive source, ignoring adjacent inactive components,
-  and identifying the active and full norms.
+- four toy wrong outputs compared: dropping the inactive term, deleting
+  an inactive source, ignoring adjacent inactive components, and identifying
+  the active and full norms. The original active/full comparison did not
+  test the implementation substitution: [review B1](REVIEW_LIB1.md) showed
+  that this mutation survives. The [subsequent repair](LIB1_NORM_CONTROL_FIX.md)
+  connects exact witnesses to the actual full-output computation and records
+  separate corrected-baseline and mutant executions; affected confirmation
+  is pending.
 
 Maximum recorded RSS was 22,167,552 bytes. Across 15 resource samples,
 system-wide free memory was at least 60% and the largest load average was

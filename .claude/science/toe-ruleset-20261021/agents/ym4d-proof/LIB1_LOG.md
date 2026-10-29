@@ -170,3 +170,16 @@ write-scope check are recorded below after execution.
 Final documentation validation at 2026-10-29T19:47:26.132693+00:00: completed, exit 0. The original 8489-byte PRE-STATED prefix is unchanged; all 25 recorded source hashes (including the six read-only arXiv PDFs) match; all 10 literal quotations match with whitespace normalization only. Script/criteria hashes, stdout/JSON agreement and every resource receipt match. Candidate HEAD is unchanged and the tracked diff is empty.
 
 Only `LIB1.md`, `LIB1_LOG.md` and the task-named `checks/lib1_*` artifacts were created or edited by this author. Existing untracked SOFTHARD/REC-LIB files were preserved. No commit, push, PR, audit, ledger or axiom operation was performed. The deliverable is PROVEN at its explicit implication scope; the normalized sea/failure and unrestricted-history application remains OPEN.
+
+## Subsequent coordinator repair of B1 — 29 October 2026
+
+The historical author execution above is preserved. Its active/full toy
+comparison did not reject an actual implementation substitution, as
+[the original independent review](REVIEW_LIB1.md) demonstrated.
+[The separate repair record](LIB1_NORM_CONTROL_FIX.md) documents the corrected
+shared computation, an inactive-root overlap witness, the reproduced original
+survivor and three actual rejected mutants. New criteria preceded that
+implementation and execution; old criteria, result and output files were
+not overwritten. The first 8,489 source bytes and the mathematical theorem
+are unchanged. Independent affected confirmation is pending; both physical
+continuum targets and the missing source/sea estimates remain open.

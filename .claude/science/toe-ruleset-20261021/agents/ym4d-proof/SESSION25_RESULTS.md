@@ -2153,3 +2153,12 @@ the whole class. Claims no use of premise (R). NOT delivered: BFT-4 off 𝒞_glo
 (§7.3); reduced to (GL) (a locally determined reference configuration) + (LUD); boxes; RLARGE's localised background. No
 numeric check run. **Codex review launched (CODEX_REVIEW_OFFGLOB2.md). Launched: BOX55** — the linear package on boxes
 (ASSEMBLY ML11).
+
+**B2_55 — finished** (claude-opus-5-5, max). **Theorem B2 proved as an implication of BFT-3 route C's banked inputs (H1),
+(H2)_μ** (Schur test: BFT-2 Cauchy rows, Lemma WD kernel columns; sharp — the weight L^{k−j} cannot be improved). More
+important: **Proposition HL gives STEP55's (HC_k) on 𝒞_glob WITHOUT (B2)** (BFT-3 route C at third order + Theorem LC), so
+(B2) leaves the 𝒞_glob critical path (kept as the template for off-class work). REFUTED STEP55 §5.3's "CX at levels ≥ 1
+reduces to (HC_k) + (B2)": the per-step cluster expansion also needs exponential locality of the level-k operator and a
+REPAIRED Theorem CX (Codex STEP R9 refutes CX as stated). NOT-VERIFIED: STEP55's I1 row omits the per-block PG transfer and
+the main-term identification. **Codex review launched (CODEX_REVIEW_B2.md). Launched: GL55** — (GL) + (LUD) for BFT-4's
+(c₀) on the full small-curvature class. Theorem CX's repair waits for CODEX_REVIEW_STEP.

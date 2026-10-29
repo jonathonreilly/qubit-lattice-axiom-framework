@@ -60,6 +60,38 @@ sharing Codex's model family does not create a cross-family validation receipt.
 The coordinator owns all commits and PR metadata. No unattended campaign is
 being launched by this checkpoint.
 
+## Results of the Astra continuations
+
+These are new **author proposals**, with exact finite checks and coordinator
+read-through, not independent cross-family certifications. Their scoped
+conclusions and unresolved consumers are recorded together:
+
+| Continuation | New support or repair | Next unproved input |
+|---|---|---|
+| [Alignment](RECOVERY_ALIGNMENT_ASTRA.md) | Reconstructs the periodic image construction and the sufficient P2 window alpha+theta<=1; supplies a direct AC(log) proof including the summed N_res and an explicit restricted source-cost/chart interface | Generic-field covariant conversion NC(log), matched background-transfer inputs and final smallness constants; AC(log) alone is not full background transfer |
+| [Coupling flow / jets](RECOVERY_UIR_ASTRA.md) | Gives the exact normalization dictionary and fixed-depth tree-jet periodization; supplies a corrected two-centre infrared lemma and exhibits the error in the printed matching matrix | Actual grouped residual principal-block matching and an all-increments positive-slope bound; uniform jet bounds still use the named BFT producer hypotheses |
+| [Cluster / denominator](RECOVERY_CLUSTER_ASTRA.md) | Constructs a sufficient connected-support theorem from local original-coordinate operator atoms and vertices, with explicit smallness bounds and the full determinant/main-term normalization | The actual Yang–Mills operator/source expansion and exact return identity, uniformly in history, holes, scale and volume; no N1 or RG-step closure follows yet |
+
+The UIR note also corrects two opposite overclaims: a total homogeneity degree
+does not guarantee integrability at each pole, while one nonzero scalar core
+does not refute cancellation in the full grouped coefficient. The new
+fixed-depth thermodynamic consistency argument concerns tree jets, not a
+one-loop determinant limit or a uniform minimum-action identification radius.
+
+Four new exact scripts have pre-stated criteria and recorded results. The
+coordinator replayed all four successfully: alignment and cluster stdout
+match exactly; the two UIR outputs match after excluding their UTC timestamp
+line. Empty stderr and the deliberately failed old determinant identities
+are retained. The finite controls test algebra and detect omitted terms;
+they do not establish the analytic hypotheses or the full theorem.
+
+The next focused review should challenge AC(log)'s summed residual estimate,
+the jet construction's exact action/gauge/periodization dictionary, and the
+cluster theorem's connected-support majorants. The next author calculations
+are **NC(log)**, the **actual grouped residual principal symbol**, and the
+**actual source-local fluctuation/return representation**, respectively.
+Review these proposals before building a large dependent proof on them.
+
 ## What the late reviews actually support
 
 These are summaries of completed reviews, not a fresh verification of their
@@ -120,11 +152,11 @@ baseline, updated by the eight reviews above.
    limits and observable maps. Preserve the existing independent/cross-family
    review requirement; neither note count nor repeated PASS output closes it.
 
-This is substantive constructive analysis, not a final editorial pass.
-The immediate useful work is the three bounded continuations above. The six
+Substantive constructive analysis remains. The three bounded continuations
+above supply narrower intermediate results and exact next targets. The six
 interrupted plans remain a ready queue after their prerequisite defects are
-corrected; starting all six from their original briefs would propagate stale
-assumptions.
+corrected; their original briefs contain assumptions withdrawn by the late
+reviews.
 
 ## Validation and delivery boundary
 
@@ -132,6 +164,8 @@ The recovery manifest checks source preservation. Fresh replay receipts under
 `recovery_20261029/reruns/` identify their exact scripts, runtimes and whether
 stdout matches; they certify reproduction only. New continuation checks use
 separate `checks/recovery_*` names. Original criteria/results are not overwritten.
+The continuation manifest and replay receipts are stored separately under
+`recovery_20261029/continuations.json` and `continuation_reruns/`.
 
 No audit authority surface, axiom registry, unrelated checkout, main branch,
 third-party paper or private conversation is part of this change. PR #10114

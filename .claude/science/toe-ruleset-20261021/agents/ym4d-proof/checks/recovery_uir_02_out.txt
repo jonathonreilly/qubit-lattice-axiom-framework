@@ -1,0 +1,19 @@
+UTC: 2026-10-29T11:06:22.681601+00:00
+P1 exact inverse=periodization T=3: PASS
+P1 omitted-image control T=3: PASS
+P2 cubic value-jet T=3: PASS
+P2 quartic value-jet T=3: PASS
+P2 dropped-exchange control T=3: PASS | nonzero exchange=152512/36015
+P1 exact inverse=periodization T=4: PASS
+P1 omitted-image control T=4: PASS
+P2 cubic value-jet T=4: PASS
+P2 quartic value-jet T=4: PASS
+P2 dropped-exchange control T=4: PASS | nonzero exchange=2149080709/2460375000
+P1 exact inverse=periodization T=7: PASS
+P1 omitted-image control T=7: PASS
+P2 cubic value-jet T=7: PASS
+P2 quartic value-jet T=7: PASS
+P2 dropped-exchange control T=7: PASS | nonzero exchange=46948776630263/124921456608200
+EXACT PREDICATES: 15/15
+Scope: finite scalar matrix algebra and stationary polynomial jets only.
+No all-momentum, group-action, n-uniform, or Yang–Mills result is inferred from this runner.

@@ -61,6 +61,25 @@
 > **Interrupted output:** UIR2_55.md and ALIGN3_55.md are substantial but
 > unfinished, unreviewed partial derivations. BOX55, FLOWPOS55, GL55, INDUCT55,
 > LOCE55 and WARD55 contain plans only. Their presence is not completion.
+>
+> **Astra continuation proposals, 29 October:**
+> [RECOVERY_ALIGNMENT_ASTRA.md](RECOVERY_ALIGNMENT_ASTRA.md) supplies a direct
+> AC(log) argument with the summed N_res, repairs the sufficient P2 window and
+> specifies the restricted source-cost interface. Generic-field NC(log) and
+> full background transfer remain open.
+> [RECOVERY_UIR_ASTRA.md](RECOVERY_UIR_ASTRA.md) supplies normalization and
+> fixed-depth tree-jet periodization, with uniform bounds conditional on the
+> stated BFT inputs. It exposes a defect in UIR2's printed determinant matching
+> and repairs the infrared sufficient conditions; actual residual matching,
+> UIR and the weaker all-increments positive-slope bracket remain open.
+> [RECOVERY_CLUSTER_ASTRA.md](RECOVERY_CLUSTER_ASTRA.md) supplies a generic
+> constructive replacement for CX, including original-source locality and the
+> full denominator factors. Its actual Yang–Mills hypotheses and exact return
+> identity remain unconstructed. These new proofs are **author support pending
+> independent review**, not additions to [S26-BANKED]. Four new finite check
+> scripts and their controls reproduced; they do not certify these analytic
+> claims or their remaining hypotheses.
+>
 > Current continuation and exact remaining obligations are in [HANDOFF.md](HANDOFF.md).
 > **T_OS remains OPEN; no mass gap is claimed.**
 

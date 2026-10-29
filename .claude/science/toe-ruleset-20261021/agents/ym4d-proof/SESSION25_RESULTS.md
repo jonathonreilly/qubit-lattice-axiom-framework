@@ -2230,3 +2230,53 @@ periodic-alignment partial proof, and a constructive CX repair. New Codex
 mathematics remains author work until independently checked; no cross-family
 receipt is fabricated. T_OS and H_reg/H_Euc/H_int remain open, and no mass gap
 is claimed. The workflow builds on Tadeusz Balaban and J. Dimock throughout.
+
+### Recovery continuation results — Astra max author proposals
+
+The original recovery was committed and pushed as `aeb7c2a6f00b`.
+Three fresh-context Astra/max workers continued from its saved sources;
+Claude's files and historical evidence remain byte-identical. Their new
+results are provisional author support, with no new audit or cross-family
+acceptance receipt.
+
+**Alignment:** RECOVERY_ALIGNMENT_ASTRA independently reconstructs the periodic
+image/cochain construction and the sufficient P2 window alpha+theta<=1. It
+corrects a missing geometric factor and the extra mesh power asserted for a
+G-slot remainder. A new direct AC(log) proof uses centered contour midpoint
+moments and alpha<theta to sum N_res. An attained restricted source cost and
+local source-chart conversion are explicit. Generic-field NC(log), matched
+background-transfer inputs and final smallness constants remain open.
+
+**Coupling flow / jets:** RECOVERY_UIR_ASTRA gives the normalization
+E_FLOW,phi(b)=E_BFT(sqrt(N)b)/N and the fixed-depth infinite-volume value-jet
+construction by a local gauge slice, Bloch inverse and exact tree
+periodization. Uniform weighted jets remain conditional on H1/H2/H3 and the
+valid smaller decay rate. The printed J_LS determinant matching fails an
+exact quadratic block test. Separate pole bounds and scaled negligibility
+repair the infrared implication, but actual grouped principal-block matching
+and even the weaker all-increments positive-slope bracket remain open.
+A nonzero scalar core alone does not prove failure of the full cancellation.
+
+**Cluster / returned denominator:** RECOVERY_CLUSTER_ASTRA constructs a generic
+sufficient theorem from connected original-source-local operator atoms and
+bare vertices. It explicitly accounts for determinant, main term, cutoff
+normalization and prefactors; small nonlinear interaction cannot erase those
+terms. A nonempty weak-neighbor example and exact finite controls support the
+algebra. The actual Yang–Mills source expansion and exact history-uniform
+return identity remain to be supplied; neither CX for that model nor N1 is
+declared closed.
+
+Four new exact scripts were replayed by the coordinator, all exit zero with
+empty stderr. Alignment and cluster stdout match the authored outputs exactly;
+UIR01/02 match after excluding their UTC timestamp line. The UIR run retains
+three expected failures of the old printed identity, alongside 19 correction
+and control predicates; its second script has 15 predicates. Cluster has
+15 checks including a nonzero determinant variation at zero interaction.
+These are finite algebra/control checks, not proofs of the analytic hypotheses.
+Hashes, runtime dispatch provenance and replay receipts are in
+`recovery_20261029/continuations.json` and `continuation_reruns/`.
+
+Next exact targets: NC(log)'s all-order generic-field conversion, the grouped
+residual principal symbol, and the actual source-local fluctuation/return
+representation. Review the new proposals before dependent theorem assembly.
+The full T_OS target and its substantive outstanding inputs remain open.

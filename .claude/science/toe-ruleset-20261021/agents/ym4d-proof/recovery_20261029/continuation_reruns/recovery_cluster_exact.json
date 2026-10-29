@@ -1,0 +1,11 @@
+{
+  "script": "checks/recovery_cluster_exact.py",
+  "script_sha256": "5f51587d7f1630f6db15fef1dd697340a096839808ea00941b751a12bd70f0e6",
+  "started_at_utc": "2026-10-29T11:11:25.675946+00:00",
+  "duration_seconds": 0.05,
+  "python": "3.12.8",
+  "exit_code": 0,
+  "stdout_exact_match": true,
+  "stderr_bytes": 0,
+  "scope": "Coordinator same-script replay, not independent mathematical verification"
+}

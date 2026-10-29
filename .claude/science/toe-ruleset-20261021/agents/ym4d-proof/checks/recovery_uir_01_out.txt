@@ -1,0 +1,27 @@
+UTC: 2026-10-29T10:58:36.683254+00:00
+A printed J_LS identity: FAIL | a=1, c=1, b=1, determinant difference=[Fraction(0, 1), Fraction(0, 1), Fraction(-1, 1)]
+B corrected projected identity: PASS
+B control: dropping matching coupling is rejected: PASS
+B half-log coefficients: PASS | printed=-1/2, corrected=0
+A printed J_LS identity: FAIL | a=3, c=5, b=1/7, determinant difference=[Fraction(0, 1), Fraction(0, 1), Fraction(-5, 49)]
+B corrected projected identity: PASS
+B control: dropping matching coupling is rejected: PASS
+B half-log coefficients: PASS | printed=-1/1470, corrected=0
+A printed J_LS identity: FAIL | a=2/3, c=7/4, b=5/6, determinant difference=[Fraction(0, 1), Fraction(0, 1), Fraction(-175, 144)]
+B corrected projected identity: PASS
+B control: dropping matching coupling is rejected: PASS
+B half-log coefficients: PASS | printed=-25/84, corrected=0
+C separate-pole test (4, 2): PASS | admissible=False, radial exponent at K=0=-1, total=6
+C separate-pole test (3, 3): PASS | admissible=True, radial exponent at K=0=0, total=6
+C separate-pole test (3, 2): PASS | admissible=True, radial exponent at K=0=0, total=5
+C separate-pole test (2, 2): PASS | admissible=True, radial exponent at K=0=1, total=4
+C degree-five remainder: divergent raw scale, vanishing scaled contribution: PASS
+D transverse core / (pi^2 / |P|^2): PASS | 1/2
+D wrong core factor 1/4 rejected: PASS
+EXPECTED FAILED PRINTED IDENTITIES: 3; these failures are preserved above.
+CORRECTION/CONTROL CHECKS: 19 / 19 PASS
+per_element: exact rational block determinants and logarithmic Taylor coefficients checked.
+per_site: checked and not executed — no field-theory site kernel is implemented here.
+per_mode: only an abstract transverse/gauge sector and analytic degree conditions are checked.
+per_block: the printed and corrected finite Schur blocks are compared independently.
+lattice_wide: checked and not executed — no Yang–Mills infrared limit is certified by this runner.

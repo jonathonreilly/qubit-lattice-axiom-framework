@@ -47,3 +47,24 @@ blank final lines and trailing spaces in preserved original evidence/logs;
 those bytes are deliberately untouched. The newly authored status surfaces
 pass their focused whitespace check. The original a3 stderr contains timing
 and resource metadata with exit 0, rather than a failed calculation.
+
+## Completed bounded continuations
+
+`continuations.json` records the three new Astra/max author proposals and
+their artifacts. They reuse the recovered sources in fresh worker contexts;
+they do not resume Claude's expired execution process. All three workers
+completed their bounded assignments. The six plan-only assignments remain
+queued behind their corrected prerequisites.
+
+`continuation_reruns/` holds the coordinator's four fresh replay receipts,
+stdout and stderr. Alignment and cluster stdout match exactly. The UIR
+scripts print a UTC timestamp, so their raw stdout differs on that line;
+the second comparison excludes only lines starting `UTC:`. The expected
+failures of the printed old determinant identity remain in both sets of
+outputs. No result is silently converted to a full-theorem PASS.
+
+Worker source receipts identify the bytes read at that time. The shared
+PROOF/HANDOFF/session status surfaces are subsequently updated by the
+coordinator; a historical source hash is not a claim that those summaries
+are immutable. The original 28 recovered files and nine archived briefs
+remain byte-identical to `manifest.json`.

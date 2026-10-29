@@ -1538,3 +1538,16 @@ inherit the residual's level decay at every order (local constants (LA) remain) 
 script). Codex review launched (CODEX_REVIEW_KOFF.md). HIGHER55 told to check Lemma SG rather than re-derive it.
 **Launched on Opus 5.5: GV55.md — does GSHARP55's Theorem GF-E deliver (GV^{(σ)})_Γ (closing Theorem K^{(σ)} and
 with it BFT-0/1/2), and the field half at m > 0** (merged with the queued field-half item).
+
+**RLARGE U1/U3/FI-1 — `RLARGE_U55.md`** (claude-opus-5-5, max). **U3 CLOSED:** (TC) fails with RLARGE's own ε_loc
+(CONFIRMED, exact squares) and no ε_loc can fix it within CL's proof; **new Lemma W-cb♯ (proven) removes (TC) as a
+hypothesis** (cost a_cb♯ = old/R², ~10⁻¹⁰ of a_bad); no cycle, no K/T growth, **and the one ε_1-free feasibility window
+disappears.** **FI-1: Theorem FI-1 (proven, conditional on (A-unif), (A-cont)) — the per-level coupling fixed point
+exists** (IVT); uniqueness needs (A-Lip), which a counterexample shows cannot be dropped. **U1 reduced, not closed:**
+a_ret = PLD §16.8's supremum (conditional on (SC)_k, (SG^fl)_k, a restricted (BG)_k, σ_fl level-uniform); RLARGE l.618
+for (RLF-δ) ⇔ one explicit inequality (L618-δ) on (SC)_k's unstated constants (holds unless ~10⁵⁸); a_A ≥ θa_bad
+NOT-VERIFIED (route-dependent; the θ ↔ a_A 2-cycle is removed by fixing θ first). **Live margins +61.03 / +58.24 /
++56.32 by route, ≈ +57.5 for (RLF-δ) — all positive; "+63.619" was not the live margin** (it dropped e^{38417B_0}).
+22 CONFIRMED / 2 NV / 6 REFUTED. Disclosed: one defective control (ru55_3 K4), replaced by ru55_3b. Codex review
+launched (CODEX_REVIEW_RLU.md). **Launched on Opus 5.5: SRCCD55.md — the source-inserted RG (SRC) and conditional
+decay (CD), the two UV inputs that OS0 and OS1 both need and nobody was working on.**

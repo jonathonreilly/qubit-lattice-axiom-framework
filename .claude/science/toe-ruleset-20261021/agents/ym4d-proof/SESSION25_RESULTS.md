@@ -1496,3 +1496,17 @@ UV inputs (CD + SRC, shared with OS0; SRC's bulk part plausibly UNIV55's interio
 infrared input TQ.** 16 PROVEN, 4 CHECKED, 3 CONDITIONAL, 6 ARGUED, 1 OPEN. Codex review launched
 (CODEX_REVIEW_ROTDEF.md). **Launched on Opus 5.5: TQ55.md — attack TQ directly, via reflection-positivity
 infrared bounds.**
+
+**(G♯_0-field) — `GSHARP55.md`** (claude-opus-5-5, max). **Not a separate open item at Z = 1, m = 0.** On the slice S_E
+(D1), lane B's already-reviewed **Theorems EP-rec / EP-opt (BFT_B §16)** bound the field components of any
+trivial-chain response by gauge-invariant quantities alone. Hence **Theorem GF-E** (clause (b) FIELD half, Z = 1,
+m = 0, composite-co-closed sources: ‖x_E‖_{𝔐^∇} ≤ C·N(S), from banked CC-INV + RHT-cc + EP-rec/EP-opt) and
+**Theorem GF-E′** (RTARGET §33's (G♯_0-field) on S_E — following from reviewed items **since lane B session 6**; the
+ledger's "not attempted" is stale). **The K ≠ 0 alias obstruction is not real** (analytic in a strip of width 1.4,
+uniform in n). **Proposition GF-DEP:** "bounds independent of the gauge fixing" (BFT_B §32.1 (b)) is FALSE for field
+components — restate clause (b) in the orbit norm. At m > 0 the field half adds nothing beyond (R3). **If Codex
+confirms (CODEX_REVIEW_GSHARP.md, launched): BFT-5 clause (b) holds in full — gauge-invariant AND field halves — at
+the trivial background, m = 0**; open: (R2) background (incl. background EP-rec, (CC-dec_Z)), (R3) m > 0 (COFM55
+running). 13 REFUTED of prior claims, incl. "(G♯_0-field) is paper-scale", NBG_ADJ's "(G♯_0-fine) OPEN", and
+"the fourth object is recorded NOWHERE" (it is (W-lin-Π) for S_E, BFT_B §12-§18). **Launched on Opus 5.5: node A's
+residual (NODEA_RES55.md).**

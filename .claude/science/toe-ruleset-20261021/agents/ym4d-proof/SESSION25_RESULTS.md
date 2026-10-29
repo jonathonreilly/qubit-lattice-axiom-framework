@@ -2066,3 +2066,9 @@ HD_log/FW_log at all orders, Λ_LP algebra, spline nesting + HB, β = 23/50, CW'
 REFUTED: periodic spline constant cancellation (|M(1)| ≥ 1/153), the unrestricted source-infimum inference, a reversed chart
 conversion, CW's telescoping, the a2_55_lp B2 prediction. Most dangerous: full periodic (P2-tw)_log. Queued ALIGN3 (periodic
 repair, (P2-tw)_log, (AC)_log, source restriction, output conversions) for the next free slot.
+
+**CX-NONFREE** (`CODEX_REVIEW_NONFREE.md`). Free side banked (corrected: masses can be leading; connected-mixture variance);
+H-RED^e conditional; NG1/NG2 only on the no-zero-mode subclass (universal form REFUTED, W = 3/4 counterexample); the
+witness does not give NF-GFF or non-Gaussianity. Most dangerous: (TS-e-low) at every short scale for the same normalised e
+(forwarded to TSE55). The definitional question (T_NF) is with the owner.
+**CX-ALIGN2 → ALIGN3 queued; slots full.**

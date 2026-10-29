@@ -431,3 +431,357 @@ At reflected separation \(t=2h\), the coefficient is
 \(3/(256\pi^4)>0\). Thus this free example has no RA-1 margin. A gap
 implies the stated uniform conditions only when its channel decay and
 prefactors are uniform along the normalized sequence.
+## 5. Reflection-odd order: the lemma is valid; its interpretation is narrower
+
+**CONFIRMED on the RP observable algebra, with “almost every component.”**
+Source: `L/TQ55.md`, `Lemma 2.3`, `Von Neumann's mean ergodic theorem`, and
+`stress expectation is diagonal in the lattice frame`.
+
+Let B be real, local, in \(L^2(\omega)\), odd under the specified site
+reflection, and admissible for RP after translation into a half-space.
+For the Wilson input used here this includes bounded gauge-invariant local
+observables. Translation invariance and RP give, for all sufficiently large n,
+
+\[
+ 0\le\omega(\theta B_n B_n)
+   =-\langle B,U^nB\rangle,\qquad U=\tau_{2e_\alpha}.
+\]
+
+The Cesàro averages of \(U^n\) converge strongly to the orthogonal
+projection \(P_{2\alpha}\) onto its invariant subspace. Consequently
+
+\[
+ 0\ge\lim_N\frac1N\sum_{n=1}^N\langle B,U^nB\rangle
+   =\|P_{2\alpha}B\|_2^2\ge0.
+\]
+
+Thus \(P_{2\alpha}B=0\), and projection onto the smaller fully
+translation-invariant sigma-algebra gives \(E[B\mid\mathcal I]=0\).
+There is no clustering assumption hidden in this proof. The finitely many
+small n do not affect the average. The ergodic decomposition conclusion is
+an almost-sure one; it says nothing about arbitrarily inserted zero-weight
+components. The statement should explicitly retain membership in the RP
+algebra, rather than infer RP for every possible gauge-variant observable
+from L9a as written.
+
+For a site-centered covariant stress tensor, the off-diagonal component is
+odd under either of its indexed coordinate reflections. Hence its mean
+vanishes in almost every component. More generally, applying the lemma to
+\(B=G-\rho_\alpha G\) and using a countable determining local algebra proves
+that almost every component is invariant under all the coordinate
+reflections. This justifies “axis-aligned” **in the source's stated sense of
+coordinate-reflection invariance**, and excludes a polar vector or a single
+off-axis rank-two director. It does not classify all higher-rank order or
+prove absence of rotation breaking.
+
+For example, a reflection-even multiplet can favor body-diagonal directions.
+Let D consist of \(d=(\pm1,\pm1,\pm1,\pm1)/2\), and define a constant
+rank-four tensor by its quartic form
+
+\[
+ A(n)=\frac1{16}\sum_{d\in D}(d\cdot n)^4
+      =\frac1{16}\left(3|n|^4-2\sum_i n_i^4\right).
+\]
+
+It is invariant under every signed permutation but not every rotation:
+\(A(e_1)=1/16\), whereas \(A((1,1,1,1)/2)=5/32\).
+A deterministic, spatially constant field with this tensor value is
+translation invariant and coordinate-RP, since reflection fixes its only
+configuration. This exact example limits any stronger reading of `order
+along non-coordinate axes are excluded` in §2.5. It is not a Yang–Mills
+state, and is not a counterexample to the reflection-odd lemma.
+
+**CONFIRMED:** the displayed Maxwell sign in §2.5 follows from
+\(- (\partial_0^2+\partial_i^2)(4\pi^2|x|^2)^{-1}
+=-1/(\pi^2s^4)\) on the time axis.
+**NOT-VERIFIED:** that this establishes consistency of the particular
+rotational Goldstone scenario in §3.1. A reflection-odd field-strength
+correlation of degree \(-4\) is not a reflection-positive construction of
+the proposed dimension-1 angular fluctuation, its stress coupling, and their
+joint correlations. The source's explicit OPEN qualification is necessary.
+
+## 6. Dimension counting, phase mixtures, and Elitzur
+
+**CONFIRMED in the named Gaussian comparator.** Source: `L/TQ55.md`,
+`Free massless abelian comparator`, §3.1. Differentiating the massless
+propagator twice gives a field-strength crossing of degree \(-4\).
+In a connected Gaussian contraction with a quadratic stress insertion,
+both of its field-strength legs must cross to the distant local cluster;
+the product has degree \(-8\). Internal contractions in that cluster do
+not change the distant power. This is a comparator calculation, not an
+infrared theorem about interacting Yang–Mills.
+
+**NOT-VERIFIED:** `only broken rotations give the |x|⁻⁴ rotlet tail`,
+`TQ fails iff the selected limit has an ergodic component that is not
+rotation invariant`, and `The exact obstruction`
+(`L/TQ55.md`, §§3.1–3.2, §4.1, summary row 18).
+The established obstruction is exactly the nonzero normalized charge in
+(3), not an established pointwise asymptotic expansion or particle spectrum.
+In particular:
+
+- SRC-O/W and E6 do not even assert existence of a pointwise limiting
+  mixed stress correlation. Nonzero shell integrals cannot supply such an
+  assertion, an exact homogeneous tail, or a Goldstone pole.
+- A conserved tensor with nonzero angular charge can be decomposed into
+  the matching rotlet (6) and a tensor with zero angular charge. Calling
+  this quotient a “rotlet component” is legitimate if explicitly defined;
+  it proves neither pointwise dominance of that component nor a physical
+  mode responsible for it.
+- The assignments \(\Delta_{IR}(\pi)=1\), a nonzero linear stress coupling
+  of effective dimension 3, and a nonzero overlap of the chosen
+  \(\widetilde F\) with that mode are assumptions in the proposed scenario.
+  A Goldstone argument for broken spacetime symmetries requires its own
+  hypotheses; canonical counting does not establish them.
+- The conformal spin bound quoted `[m]` assumes a unitary conformal,
+  rotation-covariant infrared theory. It does not classify all gapless
+  nonconformal infrared behavior. It cannot be used to derive precisely
+  the symmetry whose possible failure is being examined.
+- Proposition 1.1 concerns a specified test-pair orbit. Failure of full
+  state invariance, or of invariance in another observable sector, need
+  not be detected by that orbit. Radial f and g, for example, have a
+  constant orbit in every state. A statement about all ergodic components
+  requires all relevant observables and an additional decomposition
+  argument, not just the one-orbit identity.
+
+The word “only” is therefore not bankable. The low-dimensional linear
+Goldstone ansatz gives the advertised \(|x|^{-4}\) mixed correlation **if**
+its propagator and couplings are supplied; it is a possible explanatory
+ansatz, not an exhaustive theorem. No Wilson counterexample to TQ is
+constructed in this review either.
+
+**CONFIRMED:** Proposition 3.1 for a mixture of rotation-invariant states,
+with the stipulated integrability (`L/TQ55.md`, `Proposition 3.1`).
+Integrate the invariance of each state's observables, then form connected
+correlations in the resulting state; apply (3) to the original Wilson
+sequence if E6 holds. No affine decomposition of the state-centered pair
+is needed. For a fixed G and translation-invariant components,
+\(\omega_i(\mathfrak T_r)=0\) by telescoping, so total covariance does
+give \(\operatorname{Cov}_\omega(G,\mathfrak T_r)
+=\int\operatorname{Cov}_{\omega_i}(G,\mathfrak T_r)d\kappa(i)\).
+Neither statement justifies the source's stronger “iff” classification.
+
+**CONFIRMED in scope:** the local gauge-averaging argument does not exclude
+the gauge-invariant rotational order being discussed. Source:
+`L/TQ55.md`, `Elitzur-type argument: no, and the reason is exact`, §3.3.
+For an exactly invariant local gauge transformation, the change of action
+and Haar Jacobian vanish, and averaging constrains observables that
+transform nontrivially. A gauge-invariant tensor is unchanged by that
+averaging. A spatially varying rotation is not such a local symmetry;
+its change of variables produces
+\(\mathfrak W=-\mathfrak T_r+\mathfrak B(v_r)\) and the observable source
+term. Only **after** the stated normalized UV remainders vanish is its
+remaining obstruction precisely TQ. This is why the local-gauge argument
+does not close the rotation problem; it is not a general theorem that no
+other positivity argument could do so. Broad historical assertions about
+all d=4 exclusion theorems, Vafa–Witten, or QCD remain the source's
+recollections `[m]`, not certified inputs here.
+
+## 7. Stress versus angular-current powers, and a lattice trace qualification
+
+**CONFIRMED: the ROTDEF exponent correction.** Source: `L/TQ55.md`,
+`Correction to ROTDEF §8.2`; `L/ROTDEF.md`,
+`A Goldstone-type |x|⁻³ (ε ∝ ρ)`.
+In d=4 the surface measure contributes \(r^3\), and the rotation generator
+\(Jx\) contributes r. A nonzero, scale-independent flux therefore has a
+charge-carrying stress projection of degree \(-4\). Its angular-current
+projection has degree \(-3\). An uncancelled stress projection of degree
+\(-3\) would instead produce a flux proportional to r, contradicting
+(2) after the continuum limit. A slower **zero-flux** contribution can
+still exist; the correction must not prohibit it. No universal Goldstone
+mechanism follows from this geometric power count.
+
+**CONFIRMED:** constants and exactly divergence-free improvements contribute
+zero to the discrete functional by summation by parts
+(`L/TQ55.md`, `Constants carry no flux`, `Identically conserved
+improvements carry no flux`). This is an operator identity before averaging.
+
+**REFUTED under the unrestricted reading of “trace part.”** The additional
+sentence `The trace part ... drop out exactly` in §1.2(a) is true for a
+constant trace, but not a general spatially varying lattice trace. Its own
+§1.2(c) and `ROTDEF.md` §4.3 correctly allow a discretization remainder.
+For an exact local check take \(a=1\), \(J=E_{12}-E_{21}\),
+\(x=(2,4,0,0)\), and radial \(\psi(x)=|x|^4\). Then
+
+\[
+ \sum_\mu\nabla_\mu[\psi(x)(Jx)^\mu]
+ =4(25^2-20^2)-2(29^2-20^2)=18\ne0.
+\]
+
+A radial smooth cutoff can agree with a rescaled affine function of this
+radial polynomial near these sample radii inside its transition annulus,
+so compact support does not restore a pointwise identity. Multiplying by
+a nonconstant trace density prevents telescopic cancellation. Only its
+continuum radial contraction vanishes exactly; using the \(O(a/r)\)
+remainder in a limiting covariance still needs the appropriate bounds.
+This does not affect (1)–(4), which keep the full discrete tensor.
+
+## 8. Sphere route: valid conditional symmetry argument, unproved construction
+
+**CONFIRMED as geometry and as a conditional limit argument.** Source:
+`L/TQ55.md`, `On S⁴_R the generators are global Killing fields` and
+`SO(5)-invariant sphere states would instead converge`;
+`L/PANEL_P4.md`, `S2. SO(5) invariance` and `S5. R → ∞`;
+`L/UNIV55.md`, `A second architecture, available for UNIV-S only`, §3.4.
+
+On the round sphere a global Killing field has
+\(\nabla_{(\mu}v_{\nu)}=0\). Contracting with a symmetric stress tensor
+vanishes; integration by parts on the closed sphere has no physical
+boundary and requires no cutoff shell. Local coordinate-chart boundaries
+cancel in a correctly constructed global continuum theory. This removes
+the particular flat-route shell term, not the need to control a
+noninvariant lattice regulator.
+
+Suppose invariant continuum sphere states \(\mu_R\) have actually been
+constructed, with a compatible observable map and sufficient local
+compactness/moment control as \(R\to\infty\). At a fixed pole N,
+
+\[
+ \exp_N(Qx)=\operatorname{diag}(Q,1)\exp_N(x),\qquad Q\in SO(4).
+\]
+
+The pulled-back correlations are thus SO(4)-invariant for **each R**;
+every convergent local limit retains that identity. No clustering or TQ
+assumption enters this passage. SO(5) alone has pole stabilizer SO(4),
+not O(4). The O(4) version additionally uses reflection invariance, which
+the proposed reflection-symmetric Wilson sphere construction is meant to
+supply; an SO(5)-invariant, reflection-invariant state is O(5)-invariant.
+
+**NOT-VERIFIED as an achieved Yang–Mills result:** the invariant sphere
+states and the necessary uniform limiting bounds. `PANEL_P4.md` explicitly
+labels S2 and the geometric extensions open. `UNIV55.md` §3.4 names W0–W3,
+including marginal coupling-profile matching, source/contact estimates,
+seam transparency, and covariance of the observable map. Its normalization
+correction also includes a dimension-4 coefficient of order
+\(g_0(a)^2\). None is supplied merely by the absence of a shell.
+Continuous rotations are exact symmetries of the **round geometry**;
+they are not exact symmetries of an arbitrary finite cellulation.
+The estimate \(O(a^2\mathfrak L R^5)+O(g_{\rm bare}^2)\) in TQ55 is
+therefore a conditional target, not a proved cutoff estimate on S⁴.
+
+**CONFIRMED with distinct selections:** if the flat-torus selection fails
+TQ, a separately constructed invariant sphere selection can still have an
+invariant flat limit. This does not prove that the two sequences select
+the same state. If the same state obeys the hypotheses of (3) for the same
+observables, it cannot both be invariant and fail that Wilson TQ criterion.
+Nor does the conditional sphere mechanism prove that it is the sole
+surviving construction route. Source: `L/TQ55.md`, `the sphere route is
+the one that survives`.
+
+## Exact checks actually executed
+
+All computations were executed in memory with `python3 -B`. No numerical
+quadrature, floating-point approximation, generated script, or extra output
+file was used. The original runner was read before execution to check its
+write behavior.
+
+1. Executed `checks/tq55_a.py` through an in-memory `compile`/`exec` capture.
+   Its complete stdout matched `tq55_a_out.txt` exactly; stderr was empty;
+   `allpass` was true. All five individual adverse cases fired (the two
+   exponents in C1, then C2, C3, and C4).
+2. Independently used symbolic differentiation of the rational tensor with
+   **six arbitrary antisymmetric matrix entries**. All four divergences and
+   all sixteen exterior Laplacians were exactly zero. The Hessian identity
+   (7) held entry by entry. For \(J=E_{12}-E_{21}\), the normalized flux was
+   \(M_{12}/2\), giving \(1/2\) at M=J; the first-term-only flux density
+   vanished identically. The general proof is (5)–(7), not numerical
+   agreement with runner constants.
+3. Mutated only in-memory copies: replacing the divergence denominator power
+   6 by 5, and separately replacing P3's expected flux \(1/2\) by \(1/3\).
+   Both produced `allpass=False` and `OVERALL: FAIL`. The original runner
+   reports failure in text/flags rather than raising a failing exit status;
+   those flags and stdout were inspected directly.
+4. Exact supporting arithmetic: the radial discrete trace example gave 18;
+   the three leading minors of the \(\alpha=1\) Hankel matrix
+   \([1/(1+i+j)]_{i,j=1}^3\) were \(1/3,1/240,1/378000\);
+   the Maxwell Wick coefficient was \(6(1/2)^2\,2=3\).
+   The Hankel sample is only a control; the all-exponent RP proof is (11)–(12).
+
+No Wilson decay estimate, numerical Yang–Mills simulation, sphere
+construction, or NODEA_RES55 computation was run. Literature recollections
+`[m]` were not promoted by these checks.
+
+## Negative-claim scope check
+
+This applies the repository's no-go discipline to the claim under review;
+it is not a new impossibility certificate or a landing packet.
+
+- **N1:** Distinct mechanisms examined were the conserved-flux identity,
+  absolute Fourier bounds, positive spectral measures, RP
+  Cauchy–Schwarz/odd-order projections, local gauge averaging, and the
+  compact-sphere symmetry passage. FSS gauge-variable constructions beyond
+  the displayed chain and model-specific combinations remain unexhausted.
+  Counting mechanisms does not prove completeness.
+- **N2:** No independence of SRC-O/W/E6, a gap, RA, RA-1, uniqueness, and TQ
+  is claimed. RA and RA-1 are alternative sufficient inputs, not independent
+  necessary conditions; (3) is an equivalent restatement for the given orbit.
+- **N3:** Uniformity, centering, local support, normalization, convergence of
+  derivative tests, RP-algebra membership, sphere source/seam estimates,
+  and state selection are explicit above. None is silently proved by
+  dimension counting.
+- **N4:** The rotlet addresses exterior tensors and an absolute Fourier
+  bound; the Gaussian examples address RP rates. Neither matches the full
+  Wilson-plus-SRC premise set. NODEA_RES55's Hessian claim is not used as
+  evidence against an FSS theorem.
+- **N5:** Exact tensor calculations, generic spectral constraints, and a
+  finite-torus inequality do not decide the continuum Wilson infrared
+  dynamics. The negative conclusions are restricted to those checked
+  objects and hypotheses.
+- **N6:** No new physical axiom or premise grant is proposed. A better
+  model-specific inequality could discharge TQ; renaming it does not.
+- **N7, strongest counter-route:** RP's reflection-odd constraints might
+  combine with the Wilson Ward identities and a justified stress/operator
+  representation to exclude the charge without proving the generic
+  pointwise decay rate used in M1/M2. The present witnesses do not satisfy
+  that joint premise set, so this route is not ruled out.
+- **N8:** The scoped neighboring sources were ROTDEF's decay reduction and
+  P4/UNIV55's invariant-sphere alternative. The sampling correction improves
+  the former and the latter changes the selection mechanism. Neither is a
+  prior proof that all RP-based routes fail. No broad campaign-history or
+  current-main authority search was performed under this no-git review.
+
+## Exactly what may be banked
+
+1. **CONFIRMED, conditional:** for the centered Wilson two-point orbit,
+   SRC-O/W, the stated normalization/limits, vanishing bare coupling, and
+   E6 give \(\Lambda=\|S'\|_\infty\), independent of every fixed admissible
+   shell radius. \(\Lambda=0\) is equivalent to invariance of that orbit.
+   CD and the coarse law are unnecessary. Source: `TQ55.md`, Prop. 1.1,
+   T-E1/T-E2; qualifications in review §1.
+2. **CONFIRMED, conditional:** DEC-A, the sampled E-ann condition on even a
+   sparse sequence of radii, E-unif, or the stated discrete E-Ces condition
+   suffices. The constant and order of limits in (4) are valid. Source:
+   `TQ55.md`, Prop. 1.2, E-ann, T-E4.
+3. **CONFIRMED:** the exact exterior rotlet, its nonzero flux, and the
+   cutoff Fourier bound. Conservation, symmetry, and that absolute bound
+   alone do not force zero charge. This is not a Wilson/RP-state
+   counterexample. Sources: `TQ55.md` §§1.2(d), 2.2(d), and `tq55_a.py`.
+4. **CONFIRMED:** generic coordinate RP permits arbitrarily slow power-law
+   reflected correlations and long-range order. It supplies no universal
+   rate. **NOT-VERIFIED:** impossibility of deriving TQ from RP combined
+   with the Wilson-specific inputs, or exhaustion of FSS constructions.
+   Source: `TQ55.md` §§2.2–2.4, with review §3's exact realizations.
+5. **CONFIRMED, conditional:** torus RP Cauchy–Schwarz has constant 1;
+   T-E3's repaired RA and SRC-E-supported RA-1 imply the sufficient decay.
+   Their hypotheses remain open. Canonical free stress decay does not
+   satisfy RA-1. Source: `TQ55.md`, Thm. 2.1, Cor. 2.2, T-E3.
+6. **CONFIRMED:** reflection-odd RP-admissible local observables have zero
+   fully invariant conditional mean; almost every ergodic component is
+   coordinate-reflection invariant and has diagonal covariant stress
+   expectation. This is not a classification of all orientational order.
+   Source: `TQ55.md`, Lemma 2.3.
+7. **CONFIRMED:** the free two-crossing \(|x|^{-8}\) comparator, vanishing
+   torque of constants/exact improvements, the stress/current distinction
+   \(|x|^{-4}\)/\(|x|^{-3}\), invariant-state mixture implication, and the
+   inapplicability of local gauge averaging to gauge-invariant rotational
+   order. **NOT-VERIFIED:** the exclusive Goldstone mechanism or its claimed
+   ergodic-component “iff.” Source: `TQ55.md` §§1.2, 1.4, 3.1–3.3.
+8. **CONFIRMED, conditional:** invariant continuum sphere states need no
+   cutoff-shell TQ argument, and compatible convergent flat limits preserve
+   their rotations (and reflections when supplied). Their construction,
+   UV estimates, uniform bounds, and identification with a particular flat
+   Wilson selection remain unproved. Source: `TQ55.md` §4.2;
+   `PANEL_P4.md` S2/S5; `UNIV55.md` §3.4.
+
+**TQ for four-dimensional Wilson Yang–Mills remains NOT-VERIFIED. No proof
+of its failure, no complete RP no-go theorem, and no completed sphere
+construction may be banked from this packet.**

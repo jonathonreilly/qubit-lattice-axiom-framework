@@ -1675,3 +1675,36 @@ witness); the flow's conditional reduction to (UIR^♮) CONFIRMED, (UIR^♮) ope
 (repaired) CONFIRMED; Proposition T CONFIRMED, purely-UV OS1 not yet verified. Each review also refuted one
 overclaim (k̃ normalization; blanket level-0 decay; the rank proof; same-rate moment/mean equivalence; topology and
 decay-necessity wording).
+
+**BFT-3/4 — `BFT34_55.md`** (claude-opus-5-5, max). **BFT-3 on 𝒞_glob follows as an implication** (Theorem BFT3-glob, all
+orders, U- and E-parts, uniform in k, T), via Lemma WD (the critical point's derivative is a Neumann series feeding
+the inverse only cc sources); inputs (H1) = BFT-E (GV-E Codex-confirmed since), (H2)_m (GV-E_m pending Codex), (H3)_m
+ARGUED. **BFT-4 NOT derived; Proposition CX (counterexample) shows analyticity + BFT-3 cannot give it** — it needs
+per-cube smallness from a decoupling family (lane B's). Found a gap in lane B's walk expansion (cut-off sources not cc)
+and repaired it (Proposition RW-cc, HR routing, factor 216). Open: (W-comm)^σ_J, the cutoff bounds, (CovLift). 4 REFUTED
+incl. the lead's "nobody had touched BFT-3/4" (lane B exists). Own disclosed FAIL b34_1 (script defect), fixed as b34_1b.
+
+---
+---
+
+# §STOP — session ended at the usage limit (2026-10-29)
+
+**Owner instruction in force:** "keep working till we have the final proof, then package it up into the PR".
+**The proof is NOT finished.** The session stopped at the usage limit. Everything below is committed.
+
+**Stopped mid-run (Opus 5.5; partial drafts on disk, NOT results — relaunch from the same briefs):**
+UIR55 (coupling flow's last estimate (UIR^♮)), NSL55 (BFT-0 slice lemma), LCONV55 (node A multiscale convexity),
+SPHERE55 (sphere route construction + seam), ALIGN55 ((ALIGN-ℓ), background alignment), HINT2_55 (non-freeness,
+YM side), SRCAN55 (source-inserted RG via analyticity). Their briefs are in the scratchpad queue and in this ledger.
+**Codex reviews still running at stop:** BGT, TQ, SRCCD (their files will appear as CODEX_REVIEW_{BGT,TQ,SRCCD}.md).
+
+**New resource:** ten open arXiv expositions of Balaban's methods were downloaded to the session scratchpad and
+text-extracted (Dimock, *RG According to Balaban* I-III 1108.1335 / 1212.5562 / 1304.0705; Dimock *Covariant Axial
+Gauge* 1410.2798 — directly relevant to (ALIGN-ℓ); Dimock QED-in-d=3 series 1502.02946, 1512.04373, 1712.10029,
+2009.01156, 2204.07201; Goswami 2204.08252 — the CMP 102 analogue, relevant to (NSL)). They are NOT in the repository
+(the scratchpad is session-local); re-download from arXiv next session (≥3 s between requests) and point the
+ALIGN / NSL / LCONV / SRCAN workers at them.
+
+**Resume order next session:** (1) bank CODEX_REVIEW_{BGT,TQ,SRCCD}; (2) Codex-review BFT34_55; (3) relaunch the seven
+stopped workers on Opus 5.5 max, with the arXiv corpus; (4) rewrite HANDOFF.md from PLAN_S26 §4-§13 and this ledger;
+(5) only when every input of the full theorem is closed and cross-checked, package the PR for publication.

@@ -1999,3 +1999,15 @@ both BFT-3 routes, the decoupling family and BFT-4 (a) on 𝒞_glob lose the (R)
 pair-patch polydisc containment, a κ-independent slot supremum, literal cell-only locality, some source/citation
 conversions; Wilson routing needs 6 pairs; BCH gives 144 not 9. The printed K_1 is not certified (finite replacement
 proved) — no downstream smallness minimum may use the printed value.
+
+**ALIGN2_55 — finished** (claude-opus-5-5, max). **Proposition CW: (NC) is FALSE — the alignment route as ALIGN55 posed it
+fails in its own norm pair, Λ_HC included** (flat data B = ηŷ: covariant ♯ norm ≥ ((L−1)/(2L))L^{θ(k−1)}η|[ŷ,ĉ]| while Λ_HC/Λ_LP
+send the chain to 0; R2-glob♯ can never be instantiated; cause: the left-trivialised chart omits dexp). Repair: **Lemma
+RED″ — GA in the log chart**; **(HD) at all orders in the log chart follows from KOFF §4.3's banked per-level estimates**;
+**Λ_LP** (finite-range local-path detail with exact left inverse — "exponentially local detail is OPEN" refuted);
+periodic cubic-spline subdivision for every odd L with explicit (HB) constants; the 5-adic scheme C^{1,β}, β ≥ 23/50.
+On 𝒞_glob, L2 + **N1-L** (drops the Faddeev–Popov premise) + **CONV-P** give the σ-pair (R2) for level-0 divergence /
+residual / plain-current slots. Still ARGUED: (AC)_log, (P2-tw)_log, output conversion, spline wrap-around. Check
+a2_55_lp registered OVERALL FAIL (gate B2 predicted a nonzero quadratic detail; measured 0 — disclosed, not re-registered).
+**Codex review launched (CODEX_REVIEW_ALIGN2.md). Launched: SPHERE2_55** (LCS-a and N5-T*, the sphere route's unassigned
+inputs).

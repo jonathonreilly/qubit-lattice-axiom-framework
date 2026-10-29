@@ -1,0 +1,3 @@
+B1 (beta = 23/50 certified for L = 5 at n = 5): PASS
+CB (beta = 47/100 NOT certified): FIRES
+OVERALL: PASS

@@ -1,0 +1,44 @@
+diff --git a/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md b/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md
+index 65e96d0e23..ebd3f6a3c1 100644
+--- a/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md
++++ b/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md
+@@ -8,12 +8,12 @@ review of this continuation is pending. Intended claim type: bounded theorem.
+ Trace: upstream support for the actual STEP return, then the full existence and
+ physical mass-gap objective. No audit status or full-theory completion is claimed.
+ 
+-Frozen input `SOURCE_LOCAL_RETURN_ASTRA.md` has SHA-256
++Frozen input [SOURCE_LOCAL_RETURN_ASTRA.md](SOURCE_LOCAL_RETURN_ASTRA.md) has SHA-256
+ `2eee991e4e4546aa3ed10ad0ffe40d840c5347a002d623aac47b2fc515fd7769`;
+-its independent `REVIEW_SOURCE_LOCAL_RETURN_ASTRA.md` has SHA-256
++its independent [review](REVIEW_SOURCE_LOCAL_RETURN_ASTRA.md) has SHA-256
+ `3b078960b4e5556aad8035ebb2059e7f325893c7b8f9a351900786a7f8d606db`.
+ Both hashes were verified and neither file will be edited. The repair provenance
+-`checks/full_proof_source_return_fix.json` records the physical-compression domain,
++[repair record](checks/full_proof_source_return_fix.json) records the physical-compression domain,
+ same-B contour reference, normalizer vacuum subtraction, explicit cluster rate
+ and threshold, and scalar form-dimension corrections. Those repairs are inherited.
+ Methodology is current-main revision
+@@ -37,8 +37,9 @@ is declared holomorphic.
+ 
+ **Accepted premises.** The reviewed level-zero tree-coordinate critical branch,
+ its original-source inverse/square-root atom families and local analytic bounds;
+-the exact normalized STEP55 Wilson/soft-kernel density; and independently
+-reviewed CX-R on its actual product-measure, beta>=0, small-interaction domain.
++the exact normalized [STEP55 Wilson/soft-kernel density](STEP55.md); and
++[CX-R](RECOVERY_CLUSTER_ASTRA.md), [independently reviewed](REVIEW_RECOVERY_CLUSTER_ASTRA.md)
++on its actual product-measure, beta>=0, small-interaction domain.
+ The new argument must instantiate these inputs rather than restate them.
+ N,L,kappa and the chart/sector are explicit model data. No physical axiom,
+ new primitive, observed scale or fitted parameter is introduced. A positive
+@@ -795,8 +796,9 @@ sections 1-5, including both cluster stages, and its full independent
+ review were read; initially truncated output was recovered in bounded
+ chunks. STEP55's exact action/normalizer (241-390), one-step/return argument
+ (419-545) and S8/S9-containing errata (656-697) were read, together with
+-CODEX_REVIEW_STEP's full-return normalization finding. The unchanged
+-previously read N5/RW/NA-FP, SRC2 MB/E11 and B2 consumer arguments remain
++[CODEX_REVIEW_STEP's full-return normalization finding](CODEX_REVIEW_STEP.md). The unchanged
++previously read [N5/RW/NA-FP](PROOF.md), [SRC2 MB/E11](SRC2_55.md) and
++[B2 consumer arguments](B2_55.md) remain
+ dependencies under their recorded limited coverage. A read-only comparison
+ of current PROOF with the science baseline found only the coordinator's
+ front-matter updates; its necessary mathematical arguments were unchanged.

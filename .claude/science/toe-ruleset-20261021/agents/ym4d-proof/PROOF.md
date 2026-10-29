@@ -151,8 +151,10 @@
 > [fixed-reference proposal](SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md)
 > derives a nontrivial-B small-chart source bound and normalized cube/ball
 > affine-return logarithms with full prefactors and marked supports. The
-> 49 author predicates reproduce; fresh review is underway. Its initial
-> complex-B/hard-history scope correction is confirmed. General histories,
+> 49 author predicates reproduce. [Fresh independent review](REVIEW_SOURCE_RETURN_CONTINUATION_ASTRA.md)
+> confirms the selected-sector argument after the complex-B/hard-history and
+> dependency-link corrections; its 33 checks and 20 controls also reproduce.
+> General histories,
 > collars, all coarse fields and higher-level action matching remain open.
 >
 > **Physical gap criterion review completed:**

@@ -1,0 +1,92 @@
+diff --git a/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md b/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md
+index 9c01460d3f..f18f10313c 100644
+--- a/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md
++++ b/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md
+@@ -75,8 +75,11 @@
+ > [RECOVERY_CLUSTER_ASTRA.md](RECOVERY_CLUSTER_ASTRA.md) supplies a generic
+ > constructive replacement for CX, including original-source locality and the
+ > full denominator factors. Its actual Yang–Mills hypotheses and exact return
+-> identity remain unconstructed. Alignment and cluster remain **author support
+-> pending independent review**, not additions to [S26-BANKED]. Four new finite check
++> identity remain unconstructed at the full history-uniform scope. Alignment
++> is now [independently checked at its conditional scope](REVIEW_RECOVERY_ALIGNMENT_ASTRA.md),
++> including the narrow BA-5 repair; generic-field NC(log) and weighted/global
++> interfaces remain open. This is not an addition to the older cross-family
++> [S26-BANKED]. Four original finite check
+ > scripts and their controls reproduced; they do not certify these analytic
+ > claims or their remaining hypotheses.
+ >
+@@ -95,14 +98,68 @@
+ > [SOURCE_LOCAL_RETURN_ASTRA.md](SOURCE_LOCAL_RETURN_ASTRA.md) constructs
+ > level-zero operator atoms and a global-chart original-source critical map,
+ > and retains all factors and contour sides in the exact return identity.
+-> Its 21 finite controls reproduce, but independent review is pending.
++> [Its independent review](REVIEW_SOURCE_LOCAL_RETURN_ASTRA.md) confirms the
++> repaired bounded construction; its 21 author finite controls reproduce.
+ > Actual history-uniform face bounds, all-coarse-field coverage and the
+-> higher-level action/induction interfaces remain open. The separate generic
+-> cluster lemma has received an explicit β≥0 domain repair during review;
+-> its full review is still in progress.
++> higher-level action/induction interfaces remain open. Its physical-covariance
++> and contour-reference claims have received scoped review corrections;
++> its vacuum subtraction, cluster threshold and form dimension are now
++> explicit and confirmed. The review does not establish a full return bound.
++>
++> **Generic cluster review completed:**
++> [REVIEW_RECOVERY_CLUSTER_ASTRA.md](REVIEW_RECOVERY_CLUSTER_ASTRA.md)
++> confirms the conditional construction after the explicit β≥0 repair,
++> including both tree expansions, zero-freeness and the stated sufficient
++> regimes. The full-factor result still consumes an exact actual return
++> identity. Its 17 independent checks and 11 controls pass; six intentionally
++> corrupted author scripts fail as intended. This same-family confirmation
++> does not certify the new Yang–Mills producer or close N1.
++>
++> **Residual construction checkpoint, pending review:**
++> [RESIDUAL_DETERMINANT_ASTRA.md](RESIDUAL_DETERMINANT_ASTRA.md) supplies
++> actual finite determinant completion and a separately specified model
++> gauge-shear/vertex calculation. Its two finite scripts reproduce 21+17
++> predicates. The actual lattice/alias identification and every actual
++> residual bound remain open; the model corollary retains its covariant
++> ultraviolet-completion hypothesis.
+ >
+ > Current continuation and exact remaining obligations are in [HANDOFF.md](HANDOFF.md).
+-> **T_OS remains OPEN; no mass gap is claimed.**
++> **Expanded owner target, 29 October:** the owner explicitly requests
++> **existence and the physical mass gap**. T_OS remains an open milestone;
++> the mass gap is also open. [MASS_GAP_TARGET.md](MASS_GAP_TARGET.md) records
++> the spectral target and missing uniform infrared estimate. The historical
++> exclusion of a mass gap below describes the earlier scope, not the current
++> stopping condition. Auxiliary Hessian gaps are not a physical gap.
++>
++> **Residual model review completed:**
++> [REVIEW_RESIDUAL_DETERMINANT_ASTRA.md](REVIEW_RESIDUAL_DETERMINANT_ASTRA.md)
++> independently confirms the finite completion and stated model calculation;
++> the model zero-residue conclusion still requires a common covariant
++> regulator. The actual lattice residual and its all-increments estimate
++> remain open. The separate harmonic-lift/free-symbol checkpoint is now
++> [independently confirmed at its finite charged-sector scope](REVIEW_RESIDUAL_LATTICE_BRIDGE_ASTRA.md).
++>
++> **Actual residual vertex proposal, 29 October:** the separate
++> [vertex continuation](checks/residual_det_vertices_working.md) supplies
++> an auxiliary off-shell gauge-change identity, a tuned gauge path and
++> grouped Ward/pole argument for zero residual per paired charged root at
++> fixed depth. Its 13 exact algebra controls reproduce. The analytic
++> argument awaits independent review; the neutral/full-periodic comparison
++> remains open. This does not promote UIR, existence or the physical gap.
++>
++> **Normalized return continuation, 29 October:** the separate
++> [fixed-reference proposal](SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md)
++> derives a nontrivial-B small-chart source bound and normalized cube/ball
++> affine-return logarithms with full prefactors and marked supports. The
++> 49 author predicates reproduce; fresh review is underway. Its initial
++> complex-B/hard-history scope correction is confirmed. General histories,
++> collars, all coarse fields and higher-level action matching remain open.
++>
++> **Physical gap criterion review completed:**
++> [the separate review](REVIEW_MASS_GAP_TARGET_ASTRA.md) confirms the spectral
++> reduction after explicitly fixing the decay onset time uniformly in cutoff
++> and volume. This is a sufficient criterion, with no actual infrared bound
++> or MG0–MG5 closure. The full existence-and-mass-gap goal remains active.
+ 
+ > **PROVENANCE WARNING (2026-10-28T22:11:08Z, lead now claude-opus-5-5).** Every Claude-authored result in sessions 24 and 25 — lead consolidation and all worker files, commits 811b8ed6de through 666a71b7b9 — was produced on **claude-opus-5**, not the owner-required model (Claude: Opus 5.5 at extra effort or higher; Codex: gpt-6-astra at max). The owner has ruled that work likely unreliable. **Treat every session-24/25 status, fix, flag, refutation and number in this file as PROVISIONAL** until the Opus 5.5 review sweep recorded in SESSION25_RESULTS.md §PROVENANCE has re-established it. The only session-24/25 checks run at an approved setting are the Codex gpt-6-astra/max reviews (`CODEX_REVIEW_*.md`). The tally is reported as 72 / 2 / 7 / 24 + 1 **pending** that sweep.
+ 

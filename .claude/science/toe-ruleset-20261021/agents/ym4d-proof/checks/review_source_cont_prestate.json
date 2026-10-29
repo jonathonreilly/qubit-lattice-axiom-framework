@@ -1,0 +1,25 @@
+{
+  "recorded_utc": "2026-10-29T14:29:02.285394+00:00",
+  "reviewer_context": "Fresh independent reviewer context; requested Astra/max; no independent runtime attestation supplied by tool.",
+  "methodology_commit": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "target_sha256": "9542b717307e743b4e8daf25a8549c44562666563375cf66f6147eda3cb85e3f",
+  "prior_exposure": "Read source including its section 5 author-check summary during complete-source read; no author checker source, receipt content or numerical output has been read or executed. This prestate is before checker inspection, not fully blind to advertised diagnostics.",
+  "analytic_falsifiers": [
+    "C20 must arise from the SAME absolute cluster coefficients for every probability product measure, not merely a supremum of separate F_Y bounds; pinning in any coordinates must preserve support-local canonical coefficients.",
+    "For complex weights, show convergent exponential logarithm and exact branch equality; no probability-sign inequality for the interacting measure may replace zero-freeness.",
+    "In marked insertion unions, separately charge root membership, remote attached Y, remote W endpoint, source-label supports, and connectors. The claimed final norm must sum every output coordinate and pay each |S| or |Y| factor within beta/nu margins.",
+    "Check all analytic atom compositions against predecessor definitions, in particular vector contraction into scalar force*C*W and subtraction identities. Norms are sup of atom norms, not only pointwise sums.",
+    "Derive divergence from the full pulled-back top form. det C_s, vacuum action, Haar constant and outward orientations must remain until normalized cancellation.",
+    "For link balls, distinguish scalar top dimension, radial surface dimension, and block/link product independence. Fixing a link on its sphere changes a block measure rather than individual independent scalars.",
+    "Neither arbitrary correlated histories nor actual STEP Den_Y matching may follow from only fixed product-history bounds."
+  ],
+  "independent_examples_planned": [
+    "Exact rational-complex two-coordinate affine homotopy of a nonconstant polynomial density, non-diagonal noncommuting C0,E: compute differentiated volume integral directly and compare separately integrated outward flux. Omit trace(det derivative), a single outward sign, or full Jacobian to force nonzero residuals.",
+    "One-coordinate complex quadratic action with baseline center B!=0: direct fixed-domain quadrature versus completed square and source-reference factorization. Delete source linear term and vacuum action prefactor separately; both must disagree.",
+    "A different finite Ising graph with a pinned root, remote insertion endpoint and disconnected component: enumerate all states exactly. Ratios must cancel the disconnected factor but retain the source-bearing connector and remote endpoint.",
+    "D=8 centered affine radial Gaussian ball: compare radial mass derivative to normalized sphere flux and intentionally corrupt p^(D-1), det dimension and radial normal factor.",
+    "Independent actual SU(2) plaquette with unequal noncommuting background links: derive its varied-link first source derivative by matrices/quaternion identity; deletion of the background-dependent linear term must change the result."
+  ],
+  "success_criterion": "Accept only the specified finite-torus, level-zero, empty-history/global-chart conditional theorem if every analytic estimate is supported. Finite examples test factors and omissions, not infinite-volume/all-order proof. Findings require exact affected clauses and narrow repair.",
+  "failed_controls_policy": "Retain every execution failure and negative-control output; do not restamp old outputs after source changes."
+}

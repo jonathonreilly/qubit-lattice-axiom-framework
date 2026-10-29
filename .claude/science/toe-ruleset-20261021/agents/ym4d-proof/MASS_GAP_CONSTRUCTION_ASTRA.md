@@ -296,7 +296,13 @@ series remainders are uniform for r in [0,1] and lambda in a fixed small
 complex disk: for |z|<=1,
 `|Z(z)-1|<=exp(1/4)-1<1`, so Z is nonzero there and Cauchy bounds apply.
 Equations (12)-(13) hold for every real lambda>=0, beyond that series disk.
-For negative link orientation use the adjoint of (13).
+For a negatively oriented link and real lambda,
+`E[V_c^(-1)|U]=f_lambda(r_c) M_c^dagger`. In (15)-(18) the orientation
+notation means `M_c^(+)=M_c` and `M_c^(-)=M_c^dagger`, never the inverse
+of the generally nonunitary mean. This includes M_c=0. In the small
+complex-lambda disk the analytic continuation uses the same holomorphic
+coefficient f_lambda(r_c) multiplying M_c^dagger; it does not conjugate
+f_lambda or lambda. The adjoint acts only on the fixed real-field matrix M_c.
 
 ### 2.2 Exact disjoint-loop correlations expose the unclosed infrared input
 

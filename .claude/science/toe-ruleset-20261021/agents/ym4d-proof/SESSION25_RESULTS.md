@@ -2453,3 +2453,19 @@ predicates, including 11 omission controls, reproduce exactly. Fresh review
 is active and has requested an explicit orientation/complex-λ clarification;
 the original frozen source is preserved first. Full existence and every
 MG0–MG5 interface remain open.
+
+### Selected-sector source return independently checked, 29 October
+
+[The completed fresh review](REVIEW_SOURCE_RETURN_CONTINUATION_ASTRA.md)
+confirms the corrected global-chart, level-zero continuation. Its independent
+33 checks and 20 controls reproduce; all eight saved-copy author mutants
+were rejected. Hard-history B analyticity and dependency links received
+scoped repairs. The interrupted symbolic attempt and two editing/parser
+failures remain recorded. General hard histories/collars, all coarse fields
+and higher-level interfaces are open; a separate author unit now targets
+the actual history/return construction.
+
+The mass-gap construction's orientation clarification is confirmed, while
+review of its author checker found two surviving cycle-transfer mutations.
+A new independent coordinate-kernel comparison is being added. Original
+source/checker bytes and all failures remain preserved at their checkpoints.

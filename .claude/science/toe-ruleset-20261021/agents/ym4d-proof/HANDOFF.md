@@ -38,13 +38,13 @@ Current assignments use fresh `gpt-6-astra / max` contexts:
   harmonic-lattice and actual vertex units are frozen separately. The last
   unit proposes zero residual in the stated paired-root regulator sector;
   its analytic proof awaits independent review.
-- **Source-local return author — continuation delivered:** actual
+- **Source-local return author — hard-history construction active:** actual
   level-zero operator localization, all-order global-chart source
   substitution and exact return identities are independently checked at
   their stated scope. The separate fixed-reference and normalized-face
-  construction is frozen for fresh independent review. General hard
-  histories, actual collar/return matching and higher-level interfaces
-  remain open.
+  construction is now independently checked at its selected-sector scope.
+  The next unit targets actual hard histories and collar/return matching;
+  these and higher-level interfaces remain open.
 - **Independent UIR reviewer — completed:** the frozen recovery argument
   has been checked through distinct derivations and an independent program;
   its bounded claims are confirmed with explicit conditional/open limits.
@@ -55,9 +55,10 @@ Current assignments use fresh `gpt-6-astra / max` contexts:
   the explicitly conditional model corollary are confirmed.
 - **Independent source-return reviewer — completed:** all five scoped
   repairs and the bounded construction are confirmed with frozen evidence.
-- **Fresh source-return continuation reviewer — active:** common pinning
+- **Fresh source-return continuation reviewer — completed:** common pinning
   majorants, remote marked supports, homotopy force and full-factor flux,
-  including the distinct scalar-cube and link-ball domains.
+  including the distinct scalar-cube and link-ball domains, confirmed after
+  the hard-history analytic-scope and dependency-link corrections.
 - **Independent alignment reviewer — completed:** the frozen conditional
   continuation and the narrow BA-5 repair are confirmed.
 - **Independent harmonic-bridge reviewer — completed:** finite charged
@@ -416,3 +417,25 @@ No audit authority surface, axiom registry, unrelated checkout, main branch,
 third-party paper or private conversation is part of this change. PR #10114
 stays a draft research checkpoint. The user's request authorizes its progress
 update; it is not a publication of a completed existence theorem.
+
+### Selected-sector return continuation independently checked
+
+[The fresh review](REVIEW_SOURCE_RETURN_CONTINUATION_ASTRA.md) confirms the
+corrected fixed-reference source composition, common pinning majorants,
+remote marked support sums and full-factor cube/ball affine flux. Its
+33 independent checks and 20 omission controls reproduce exactly except
+timestamps; all eight saved-copy author mutations fail at their intended
+assertions. Both the hard-history complex-B scope correction and explicit
+dependency links are confirmed. The interrupted first symbolic attempt and
+two editing/parser failures remain preserved. [Coordinator verification](checks/full_proof_source_cont_review_replay.json)
+binds 63 artifact/source entries, 16 methodology entries and 12 unchanged
+prior-review ranges. The source author has resumed construction of the actual
+hard-history/collar interfaces in a separate unit; no full-return claim follows.
+
+The first finite-volume mass-gap unit is preserved at `cdc877b0452b`. Its
+negative-orientation/complex-lambda clarification is now applied and confirmed
+in the same reviewer context. Review also found two implementation mutations
+that the original author checker failed to reject; a coordinate-space
+transfer comparison and targeted mutation replay are being added. The
+written finite-volume result has no reported substantive defect so far;
+final review and the physical uniform infrared estimate remain outstanding.

@@ -1,0 +1,15 @@
+[C1 sample 0] SG identity comparisons: 8 / 8 exact
+[C5 control] comparisons that FAIL with W_0 := e^{Ybar}: 0 / 3
+[C1 sample 1] SG identity comparisons: 8 / 8 exact
+[C3 sample 0] w-chart phi coefficients eps^0..eps^4: ['0', '0', '15', '0', '-1206689/3888']  target eps^2: 15
+[C4 control 0] r-chart phi coefficients eps^0..eps^4: ['0', '0', '15', '-557/18', '128069/34992']
+[C3 sample 1] w-chart phi coefficients eps^0..eps^4: ['0', '0', '21', '0', '-941113/1944']  target eps^2: 21
+[C4 control 1] r-chart phi coefficients eps^0..eps^4: ['0', '0', '21', '-808/9', '-19015525/34992']
+[C3 sample 2] w-chart phi coefficients eps^0..eps^4: ['0', '0', '20', '0', '-4723/12']  target eps^2: 20
+[C4 control 2] r-chart phi coefficients eps^0..eps^4: ['0', '0', '20', '61/3', '-13075025/34992']
+C1 (Lemma SG identity, N = 3, 16 comparisons): PASS
+C2 (maximiser sanity: stationarity, G eps^1 = 0, anti-Hermitian part of G scalar): PASS
+C3 (Lemma NC3: w-chart quadratic part (1/2)|w|^2, no cubic term, N = 3): PASS
+C4 (control: r-chart has a cubic term): FIRES
+C5 (control: SG identity fails for the non-maximiser e^{Ybar}): DOES NOT FIRE
+OVERALL hg55_3: FAIL

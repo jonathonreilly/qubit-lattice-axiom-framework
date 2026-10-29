@@ -1551,3 +1551,20 @@ NOT-VERIFIED (route-dependent; the θ ↔ a_A 2-cycle is removed by fixing θ fi
 22 CONFIRMED / 2 NV / 6 REFUTED. Disclosed: one defective control (ru55_3 K4), replaced by ru55_3b. Codex review
 launched (CODEX_REVIEW_RLU.md). **Launched on Opus 5.5: SRCCD55.md — the source-inserted RG (SRC) and conditional
 decay (CD), the two UV inputs that OS0 and OS1 both need and nobody was working on.**
+
+**Coupling flow — `FLOW55.md`** (claude-opus-5-5, max). **The Ward-identity route removes every
+background-dependent part of FLOW's wall; one trivial-background estimate remains.** Diagnosis (Lemma W-loc): FLOW's
+(F-2)-(F-4) invert no operator; the nontrivial background entered only through FLOW's own proof choices for the
+one-loop sum — (C1) regrouping lemmas needing H_Wilson·D = 0 (fails off-shell, hence the Cartan flux U_f) and (C2) the
+Woodbury/T-split that isolates H_⊥^{-1}. **Theorem K̄: averaging the n-step composite kernel over the level-n gauge
+group is exact**, so the fine exponent is fully gauge invariant and its Hessian exactly transverse at EVERY
+background — FLOW's regrouping then holds at every V near 1 (Prop K̄-1L); the coarse-gauge block (∝ n/κ) cancels by
+linear algebra; the h-tadpole's coefficient is ZERO with the correctly transported covariance (Lemma K̄-tad; imports a
+standard lattice Green-function decay bound). Net: **(UNIV-1L) ⇔ (UIR^♮): sup_n |β[G^♮_⊥,n] + (21/22)β_0^std·n log L| < ∞
+— an n-uniform IR bound for the gapped transverse group AT U = 1.** (T-c), the Nielsen-Olesen mode, COV-GI-∞, (L-loc2)
+and the off-shell defect all drop out. Ward identities for the trivial-point Taylor coefficients (orders 2-4) proved;
+fl55_4: no nonzero transverse Bose-symmetric hypercubic degree-1 cubic structure, so dimension-4 cubic/quartic parts
+are β × Wilson. b_0's leading coefficient comes only from the multiscale statement; κ enters only the O(1) constant.
+Remainder |ρ_k| ≤ C_ΠE_2g_k² + g_k⁶ conditional on (SF-g), (RLF-δ). 4/4 exact checks pass, all controls fire; 0
+refuted. Codex review launched (CODEX_REVIEW_FLOW55.md). **Launched on Opus 5.5: UIR55.md — (UIR^♮) by exact Fourier
+analysis at the trivial background.**

@@ -1,0 +1,571 @@
+{
+  "mode": "bloch",
+  "scope": "Finite checks and explicit sufficient inequalities; no numerical proof of depth uniformity",
+  "checks": [
+    {
+      "name": "path_dictionary_mu0",
+      "passed": true
+    },
+    {
+      "name": "root_gradient_mu0",
+      "passed": true
+    },
+    {
+      "name": "constant_reproduction_mu0",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu0_0",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu0_1",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu0_2",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu0_3",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu0_4",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu0_5",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu0_6",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu0_7",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu0_8",
+      "passed": true
+    },
+    {
+      "name": "mutation_missing_endpoint_rejected_mu0",
+      "passed": true
+    },
+    {
+      "name": "mutation_d3_length_factor_rejected_mu0",
+      "passed": true
+    },
+    {
+      "name": "path_dictionary_mu1",
+      "passed": true
+    },
+    {
+      "name": "root_gradient_mu1",
+      "passed": true
+    },
+    {
+      "name": "constant_reproduction_mu1",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu1_9",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu1_10",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu1_11",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu1_12",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu1_13",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu1_14",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu1_15",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu1_16",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu1_17",
+      "passed": true
+    },
+    {
+      "name": "mutation_missing_endpoint_rejected_mu1",
+      "passed": true
+    },
+    {
+      "name": "mutation_d3_length_factor_rejected_mu1",
+      "passed": true
+    },
+    {
+      "name": "path_dictionary_mu2",
+      "passed": true
+    },
+    {
+      "name": "root_gradient_mu2",
+      "passed": true
+    },
+    {
+      "name": "constant_reproduction_mu2",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu2_18",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu2_19",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu2_20",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu2_21",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu2_22",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu2_23",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu2_24",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu2_25",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu2_26",
+      "passed": true
+    },
+    {
+      "name": "mutation_missing_endpoint_rejected_mu2",
+      "passed": true
+    },
+    {
+      "name": "mutation_d3_length_factor_rejected_mu2",
+      "passed": true
+    },
+    {
+      "name": "path_dictionary_mu3",
+      "passed": true
+    },
+    {
+      "name": "root_gradient_mu3",
+      "passed": true
+    },
+    {
+      "name": "constant_reproduction_mu3",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu3_27",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu3_28",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu3_29",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu3_30",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu3_31",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu3_32",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu3_33",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu3_34",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu3_35",
+      "passed": true
+    },
+    {
+      "name": "mutation_missing_endpoint_rejected_mu3",
+      "passed": true
+    },
+    {
+      "name": "mutation_d3_length_factor_rejected_mu3",
+      "passed": true
+    },
+    {
+      "name": "case0_stationarity",
+      "passed": true,
+      "root": 3.038929133440462e-12,
+      "straight": 2.8433906996692716e-12
+    },
+    {
+      "name": "case0_dual_top",
+      "passed": true,
+      "error": 2.2517365691786835e-13
+    },
+    {
+      "name": "case0_gauge_equivalence_level0",
+      "passed": true,
+      "residual": 1.1131428571605549e-13,
+      "curvature": 1.2857089248571376e-12
+    },
+    {
+      "name": "case0_transport_level0",
+      "passed": true,
+      "error": 2.2517365691786835e-13
+    },
+    {
+      "name": "case1_stationarity",
+      "passed": true,
+      "root": 2.879558199792771e-12,
+      "straight": 3.670212664989337e-12
+    },
+    {
+      "name": "case1_dual_top",
+      "passed": true,
+      "error": 6.470370971145344e-13
+    },
+    {
+      "name": "case1_gauge_equivalence_level0",
+      "passed": true,
+      "residual": 5.3331819758292405e-12,
+      "curvature": 7.314182449767948e-13
+    },
+    {
+      "name": "case1_transport_level0",
+      "passed": true,
+      "error": 2.8199766091270458e-12
+    },
+    {
+      "name": "case1_wrong_adjoint_scale_rejected",
+      "passed": true,
+      "error": 0.14236821042930362
+    },
+    {
+      "name": "case1_gauge_equivalence_level1",
+      "passed": true,
+      "residual": 6.862132114320575e-13,
+      "curvature": 1.0330077866224234e-11
+    },
+    {
+      "name": "case1_transport_level1",
+      "passed": true,
+      "error": 6.470370971145344e-13
+    },
+    {
+      "name": "case2_stationarity",
+      "passed": true,
+      "root": 6.2729219017555145e-12,
+      "straight": 4.809933841569265e-12
+    },
+    {
+      "name": "case2_dual_top",
+      "passed": true,
+      "error": 1.1097692141552116e-12
+    },
+    {
+      "name": "case2_gauge_equivalence_level0",
+      "passed": true,
+      "residual": 1.4152689653383139e-11,
+      "curvature": 8.31742858520744e-13
+    },
+    {
+      "name": "case2_transport_level0",
+      "passed": true,
+      "error": 1.1919458759423108e-11
+    },
+    {
+      "name": "case2_wrong_adjoint_scale_rejected",
+      "passed": true,
+      "error": 0.3069869524053575
+    },
+    {
+      "name": "case2_gauge_equivalence_level1",
+      "passed": true,
+      "residual": 1.904075704394514e-12,
+      "curvature": 2.1148619489777043e-11
+    },
+    {
+      "name": "case2_transport_level1",
+      "passed": true,
+      "error": 1.1097692141552116e-12
+    },
+    {
+      "name": "counting_Q_r3",
+      "passed": true,
+      "row": [
+        3.0,
+        3.0,
+        3.0,
+        3.0
+      ],
+      "column_min": 0.037037037037037035,
+      "column_max": 0.037037037037037035
+    },
+    {
+      "name": "density_mutation_r3",
+      "passed": true
+    },
+    {
+      "name": "harmonic_lift_n1_j0",
+      "passed": true,
+      "residual": 8.881784197001252e-15,
+      "curvature": 2.220446049250313e-16
+    },
+    {
+      "name": "counting_Q_r9",
+      "passed": true,
+      "row": [
+        8.999999999999998,
+        8.999999999999998,
+        8.999999999999998,
+        8.999999999999998
+      ],
+      "column_min": 0.001371742112482853,
+      "column_max": 0.0013717421124828531
+    },
+    {
+      "name": "density_mutation_r9",
+      "passed": true
+    },
+    {
+      "name": "harmonic_lift_n2_j0",
+      "passed": true,
+      "residual": 1.5543122344752192e-15,
+      "curvature": 5.551115123125783e-17
+    },
+    {
+      "name": "harmonic_lift_n2_j1",
+      "passed": true,
+      "residual": 8.881784197001252e-15,
+      "curvature": 2.220446049250313e-16
+    }
+  ],
+  "passed": 81,
+  "total": 81,
+  "details": {
+    "bloch_0": {
+      "n": 1,
+      "p": [
+        0.7,
+        -0.4,
+        0.9,
+        0.2
+      ],
+      "kappas": [
+        1.0
+      ],
+      "root_stats": [
+        {
+          "stop": 2,
+          "iterations": 37,
+          "normal": 1.2243352959922207e-11
+        },
+        {
+          "stop": 2,
+          "iterations": 37,
+          "normal": 7.631505483499969e-12
+        },
+        {
+          "stop": 2,
+          "iterations": 37,
+          "normal": 7.445500275107e-12
+        },
+        {
+          "stop": 2,
+          "iterations": 36,
+          "normal": 2.3995352731522044e-11
+        }
+      ],
+      "straight_stats": [
+        {
+          "stop": 2,
+          "iterations": 37,
+          "normal": 5.128076303642126e-12
+        },
+        {
+          "stop": 2,
+          "iterations": 36,
+          "normal": 1.5731013797129477e-11
+        },
+        {
+          "stop": 2,
+          "iterations": 36,
+          "normal": 8.693017554345676e-12
+        },
+        {
+          "stop": 2,
+          "iterations": 35,
+          "normal": 2.3024635015662615e-11
+        }
+      ],
+      "P_eigenvalues": [
+        1.566103018566643,
+        1.5807025029367727,
+        1.5960128754610925,
+        1.6016449773908872
+      ]
+    },
+    "bloch_1": {
+      "n": 2,
+      "p": [
+        0.7,
+        -0.4,
+        0.9,
+        0.2
+      ],
+      "kappas": [
+        1.0,
+        1.0
+      ],
+      "root_stats": [
+        {
+          "stop": 2,
+          "iterations": 120,
+          "normal": 3.001661467504464e-11
+        },
+        {
+          "stop": 2,
+          "iterations": 118,
+          "normal": 3.653308644767065e-11
+        },
+        {
+          "stop": 2,
+          "iterations": 118,
+          "normal": 3.0791991957870926e-11
+        },
+        {
+          "stop": 2,
+          "iterations": 117,
+          "normal": 3.889759083602817e-11
+        }
+      ],
+      "straight_stats": [
+        {
+          "stop": 2,
+          "iterations": 120,
+          "normal": 2.675089032726425e-11
+        },
+        {
+          "stop": 2,
+          "iterations": 120,
+          "normal": 3.793860789804527e-11
+        },
+        {
+          "stop": 2,
+          "iterations": 120,
+          "normal": 2.583745715821996e-11
+        },
+        {
+          "stop": 2,
+          "iterations": 120,
+          "normal": 3.9405579609818256e-11
+        }
+      ],
+      "P_eigenvalues": [
+        1.6506014484125715,
+        1.6707428256496046,
+        1.6921026689628014,
+        1.7000210630839687
+      ]
+    },
+    "bloch_2": {
+      "n": 2,
+      "p": [
+        1.1,
+        0.2,
+        -0.3,
+        0.6
+      ],
+      "kappas": [
+        0.5,
+        2.0
+      ],
+      "root_stats": [
+        {
+          "stop": 2,
+          "iterations": 122,
+          "normal": 2.4756476996635872e-11
+        },
+        {
+          "stop": 2,
+          "iterations": 120,
+          "normal": 5.351197032244137e-11
+        },
+        {
+          "stop": 2,
+          "iterations": 121,
+          "normal": 4.309807732138347e-11
+        },
+        {
+          "stop": 2,
+          "iterations": 122,
+          "normal": 3.813136321985354e-11
+        }
+      ],
+      "straight_stats": [
+        {
+          "stop": 2,
+          "iterations": 123,
+          "normal": 2.4472969409838766e-11
+        },
+        {
+          "stop": 2,
+          "iterations": 124,
+          "normal": 3.8487628478953416e-11
+        },
+        {
+          "stop": 2,
+          "iterations": 123,
+          "normal": 5.084732783255442e-11
+        },
+        {
+          "stop": 2,
+          "iterations": 123,
+          "normal": 4.8076398138576727e-11
+        }
+      ],
+      "P_eigenvalues": [
+        2.298663182005042,
+        2.418589313357338,
+        2.4590015705618207,
+        2.46661207438901
+      ]
+    }
+  },
+  "elapsed_seconds": 2.9976327419281006
+}

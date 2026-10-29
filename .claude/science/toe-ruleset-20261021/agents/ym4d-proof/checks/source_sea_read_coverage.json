@@ -1,0 +1,145 @@
+{
+  "current_main_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "local_main_used_as_authority": false,
+  "scientific_inputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "sha256": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+      "read_scope": "complete frozen source"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "sha256": "a0205f0074b1e2a835eba453dae80ef7fb64b09aa792bd46e3d87aa3daf9b2d0",
+      "read_scope": "complete frozen independent review"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_receipt.json",
+      "sha256": "6b1e1ff3e62051063182e7d92e0c1b9c6e1dc3fe598ab15f7703a6fec55868f9",
+      "read_scope": "identity verified; review evidence receipt"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_history_literature.md",
+      "sha256": "a7c9581d797d3c36978c9677782c6c0d67c9b0e9251252f9f634404acccc3ece",
+      "read_scope": "complete literature ledger"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "sha256": "b14a7c0a3738117de28778827e9b5b08be338f7093941a48b6db4aac066cf0e8",
+      "read_scope": "lines2045-2088 and4066-4143"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RLARGE.md",
+      "sha256": "4f3d2777bcd736ad6936946f6c072ebebd8fe2638839538ea0db28825f2438d2",
+      "read_scope": "lines33-68,275-365,965-1027"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HW.md",
+      "sha256": "d4b51b6b7c19e41baa0c2dac7ee03d34efc991c7e55a9ef8a766132af17a6028",
+      "read_scope": "lines90-130"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RLARGE_V2.md",
+      "sha256": "b0e1b7e20a84e3bb1529c509b1cdacd2c68b1bb8e5354f29bba90952f4983dd8",
+      "read_scope": "lines105-220"
+    }
+  ],
+  "methodology": [
+    {
+      "path": "AGENTS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "coverage": "read in initial instruction/methodology pass; truncated combined output not treated as sole coverage"
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "coverage": "read in initial instruction/methodology pass; truncated combined output not treated as sole coverage"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "coverage": "read in initial instruction/methodology pass; truncated combined output not treated as sole coverage"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "coverage": "read in initial instruction/methodology pass; truncated combined output not treated as sole coverage"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "coverage": "read in initial instruction/methodology pass; truncated combined output not treated as sole coverage"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "coverage": "read in initial instruction/methodology pass; truncated combined output not treated as sole coverage"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "coverage": "read in initial instruction/methodology pass; truncated combined output not treated as sole coverage"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/literature-bridge-protocol.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "29edda5688fa04cb742ee524522b35dcf41d790d5c49fc46c5b4b1517f0ff5dd",
+      "coverage": "read in initial instruction/methodology pass; truncated combined output not treated as sole coverage"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "coverage": "read in initial instruction/methodology pass; truncated combined output not treated as sole coverage"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "coverage": "read in initial instruction/methodology pass; truncated combined output not treated as sole coverage"
+    }
+  ],
+  "installed_skills": [
+    {
+      "path": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "coverage": "complete installed skill read"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/review-loop/SKILL.md",
+      "sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "coverage": "complete installed skill read"
+    }
+  ],
+  "coordinated_input": {
+    "path": "UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+    "sha256": "c7b7890187b9a350aea19e606957c606922fe741c6615382c3a4da0cd60d92c4",
+    "scope": "worker message and output identity only; no conditional fluctuation inverse claimed"
+  },
+  "prior_art_searches": {
+    "scope": [
+      "PROOF.md",
+      "HW.md",
+      "RLARGE.md",
+      "PLD.md",
+      "SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "current-main selected statement search"
+    ],
+    "patterns": [
+      "penalty.*reflection.posit",
+      "reflection.posit.*penalty",
+      "tilted.*chessboard",
+      "chessboard.*tilt",
+      "exact.bad.*reference",
+      "all.good.*Wilson.*ratio"
+    ],
+    "limit": "narrow statement searches; no exhaustive repository/literature novelty claim"
+  },
+  "truncations": "Broad tree/path search outputs were truncated and are not evidence of complete read coverage."
+}

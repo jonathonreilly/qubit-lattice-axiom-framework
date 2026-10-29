@@ -1,0 +1,304 @@
+{
+  "scope": "Exact d=4 L=3 path fillings and disclosed post-run density mutation; finite support for the general proof",
+  "checks": [
+    {
+      "name": "deleted_plaquette_rejected_mu0",
+      "passed": true
+    },
+    {
+      "name": "all_boundaries_mu0",
+      "passed": true,
+      "individual_count": 1944,
+      "spread_count": 1944
+    },
+    {
+      "name": "area_bounds_mu0",
+      "passed": true,
+      "individual_max": 19,
+      "spread_max": 24.049382716049383
+    },
+    {
+      "name": "deleted_plaquette_rejected_mu1",
+      "passed": true
+    },
+    {
+      "name": "all_boundaries_mu1",
+      "passed": true,
+      "individual_count": 1944,
+      "spread_count": 1944
+    },
+    {
+      "name": "area_bounds_mu1",
+      "passed": true,
+      "individual_max": 19,
+      "spread_max": 24.049382716049383
+    },
+    {
+      "name": "deleted_plaquette_rejected_mu2",
+      "passed": true
+    },
+    {
+      "name": "all_boundaries_mu2",
+      "passed": true,
+      "individual_count": 1944,
+      "spread_count": 1944
+    },
+    {
+      "name": "area_bounds_mu2",
+      "passed": true,
+      "individual_max": 15,
+      "spread_max": 20.54320987654321
+    },
+    {
+      "name": "deleted_plaquette_rejected_mu3",
+      "passed": true
+    },
+    {
+      "name": "all_boundaries_mu3",
+      "passed": true,
+      "individual_count": 1944,
+      "spread_count": 1944
+    },
+    {
+      "name": "area_bounds_mu3",
+      "passed": true,
+      "individual_max": 9,
+      "spread_max": 14.185185185185185
+    },
+    {
+      "name": "actual_missing_density_bound_rejected",
+      "passed": true,
+      "actual_column": 113.85900495290973,
+      "mutated_bound": 67.6162395099033
+    },
+    {
+      "name": "coth_density_a0.001_r1",
+      "passed": true,
+      "ratio": 1.0
+    },
+    {
+      "name": "coth_density_a0.001_r3",
+      "passed": true,
+      "ratio": 0.9999999259259336
+    },
+    {
+      "name": "coth_density_a0.001_r9",
+      "passed": true,
+      "ratio": 0.9999999176954812
+    },
+    {
+      "name": "coth_density_a0.001_r81",
+      "passed": true,
+      "ratio": 0.9999999166793764
+    },
+    {
+      "name": "coth_density_a0.001_r59049",
+      "passed": true,
+      "ratio": 0.9999999166666749
+    },
+    {
+      "name": "shifted_row_a0.001_t0.0",
+      "passed": true,
+      "ratio": 0.9999999999999999
+    },
+    {
+      "name": "shifted_row_a0.001_t0.1",
+      "passed": true,
+      "ratio": 0.9999999550000039
+    },
+    {
+      "name": "shifted_row_a0.001_t0.3",
+      "passed": true,
+      "ratio": 0.9999998950000104
+    },
+    {
+      "name": "shifted_row_a0.001_t0.5",
+      "passed": true,
+      "ratio": 0.9999998750000129
+    },
+    {
+      "name": "shifted_row_a0.001_t0.9",
+      "passed": true,
+      "ratio": 0.9999999550000039
+    },
+    {
+      "name": "coth_density_a0.03_r1",
+      "passed": true,
+      "ratio": 1.0
+    },
+    {
+      "name": "coth_density_a0.03_r3",
+      "passed": true,
+      "ratio": 0.9999333394438872
+    },
+    {
+      "name": "coth_density_a0.03_r9",
+      "passed": true,
+      "ratio": 0.9999259326057016
+    },
+    {
+      "name": "coth_density_a0.03_r81",
+      "passed": true,
+      "ratio": 0.9999250181797126
+    },
+    {
+      "name": "coth_density_a0.03_r59049",
+      "passed": true,
+      "ratio": 0.9999250067494069
+    },
+    {
+      "name": "shifted_row_a0.03_t0.0",
+      "passed": true,
+      "ratio": 1.0000000000000002
+    },
+    {
+      "name": "shifted_row_a0.03_t0.1",
+      "passed": true,
+      "ratio": 0.9999595033105764
+    },
+    {
+      "name": "shifted_row_a0.03_t0.3",
+      "passed": true,
+      "ratio": 0.999905508575094
+    },
+    {
+      "name": "shifted_row_a0.03_t0.5",
+      "passed": true,
+      "ratio": 0.9998875105459102
+    },
+    {
+      "name": "shifted_row_a0.03_t0.9",
+      "passed": true,
+      "ratio": 0.9999595033105764
+    },
+    {
+      "name": "coth_density_a0.4_r1",
+      "passed": true,
+      "ratio": 1.0
+    },
+    {
+      "name": "coth_density_a0.4_r3",
+      "passed": true,
+      "ratio": 0.9883382075200138
+    },
+    {
+      "name": "coth_density_a0.4_r9",
+      "passed": true,
+      "ratio": 0.9870390445998923
+    },
+    {
+      "name": "coth_density_a0.4_r81",
+      "passed": true,
+      "ratio": 0.9868786066647325
+    },
+    {
+      "name": "coth_density_a0.4_r59049",
+      "passed": true,
+      "ratio": 0.9868766011282937
+    },
+    {
+      "name": "shifted_row_a0.4_t0.0",
+      "passed": true,
+      "ratio": 1.0
+    },
+    {
+      "name": "shifted_row_a0.4_t0.1",
+      "passed": true,
+      "ratio": 0.9929029883581769
+    },
+    {
+      "name": "shifted_row_a0.4_t0.3",
+      "passed": true,
+      "ratio": 0.9834667206872716
+    },
+    {
+      "name": "shifted_row_a0.4_t0.5",
+      "passed": true,
+      "ratio": 0.9803279976447251
+    },
+    {
+      "name": "shifted_row_a0.4_t0.9",
+      "passed": true,
+      "ratio": 0.9929029883581769
+    },
+    {
+      "name": "coth_density_a2.0_r1",
+      "passed": true,
+      "ratio": 1.0
+    },
+    {
+      "name": "coth_density_a2.0_r3",
+      "passed": true,
+      "ratio": 0.7895945914955961
+    },
+    {
+      "name": "coth_density_a2.0_r9",
+      "passed": true,
+      "ratio": 0.7647257117812404
+    },
+    {
+      "name": "coth_density_a2.0_r81",
+      "passed": true,
+      "ratio": 0.7616328485543256
+    },
+    {
+      "name": "coth_density_a2.0_r59049",
+      "passed": true,
+      "ratio": 0.7615941560285725
+    },
+    {
+      "name": "shifted_row_a2.0_t0.0",
+      "passed": true,
+      "ratio": 1.0
+    },
+    {
+      "name": "shifted_row_a2.0_t0.1",
+      "passed": true,
+      "ratio": 0.8667304327002835
+    },
+    {
+      "name": "shifted_row_a2.0_t0.3",
+      "passed": true,
+      "ratio": 0.7005935707098636
+    },
+    {
+      "name": "shifted_row_a2.0_t0.5",
+      "passed": true,
+      "ratio": 0.6480542736638853
+    },
+    {
+      "name": "shifted_row_a2.0_t0.9",
+      "passed": true,
+      "ratio": 0.8667304327002837
+    }
+  ],
+  "passed": 53,
+  "total": 53,
+  "details": {
+    "orientation_0": {
+      "contours": 1944,
+      "max_surface_l1": 19,
+      "max_spread_l1": 24.049382716049383,
+      "max_coordinate_radius": 4
+    },
+    "orientation_1": {
+      "contours": 1944,
+      "max_surface_l1": 19,
+      "max_spread_l1": 24.049382716049383,
+      "max_coordinate_radius": 4
+    },
+    "orientation_2": {
+      "contours": 1944,
+      "max_surface_l1": 15,
+      "max_spread_l1": 20.54320987654321,
+      "max_coordinate_radius": 4
+    },
+    "orientation_3": {
+      "contours": 1944,
+      "max_surface_l1": 9,
+      "max_spread_l1": 14.185185185185185,
+      "max_coordinate_radius": 3
+    }
+  },
+  "elapsed_seconds": 3.83174991607666
+}

@@ -1,0 +1,316 @@
+{
+  "mode": "periodic",
+  "scope": "Finite checks and explicit sufficient inequalities; no numerical proof of depth uniformity",
+  "checks": [
+    {
+      "name": "path_dictionary_mu0",
+      "passed": true
+    },
+    {
+      "name": "root_gradient_mu0",
+      "passed": true
+    },
+    {
+      "name": "constant_reproduction_mu0",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu0_0",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu0_1",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu0_2",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu0_3",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu0_4",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu0_5",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu0_6",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu0_7",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu0_8",
+      "passed": true
+    },
+    {
+      "name": "mutation_missing_endpoint_rejected_mu0",
+      "passed": true
+    },
+    {
+      "name": "mutation_d3_length_factor_rejected_mu0",
+      "passed": true
+    },
+    {
+      "name": "path_dictionary_mu1",
+      "passed": true
+    },
+    {
+      "name": "root_gradient_mu1",
+      "passed": true
+    },
+    {
+      "name": "constant_reproduction_mu1",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu1_9",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu1_10",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu1_11",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu1_12",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu1_13",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu1_14",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu1_15",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu1_16",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu1_17",
+      "passed": true
+    },
+    {
+      "name": "mutation_missing_endpoint_rejected_mu1",
+      "passed": true
+    },
+    {
+      "name": "mutation_d3_length_factor_rejected_mu1",
+      "passed": true
+    },
+    {
+      "name": "path_dictionary_mu2",
+      "passed": true
+    },
+    {
+      "name": "root_gradient_mu2",
+      "passed": true
+    },
+    {
+      "name": "constant_reproduction_mu2",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu2_18",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu2_19",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu2_20",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu2_21",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu2_22",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu2_23",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu2_24",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu2_25",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu2_26",
+      "passed": true
+    },
+    {
+      "name": "mutation_missing_endpoint_rejected_mu2",
+      "passed": true
+    },
+    {
+      "name": "mutation_d3_length_factor_rejected_mu2",
+      "passed": true
+    },
+    {
+      "name": "path_dictionary_mu3",
+      "passed": true
+    },
+    {
+      "name": "root_gradient_mu3",
+      "passed": true
+    },
+    {
+      "name": "constant_reproduction_mu3",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu3_27",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu3_28",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu3_29",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu3_30",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu3_31",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu3_32",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu3_33",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu3_34",
+      "passed": true
+    },
+    {
+      "name": "spread_closed_mu3_35",
+      "passed": true
+    },
+    {
+      "name": "mutation_missing_endpoint_rejected_mu3",
+      "passed": true
+    },
+    {
+      "name": "mutation_d3_length_factor_rejected_mu3",
+      "passed": true
+    },
+    {
+      "name": "periodic_stationarity",
+      "passed": true,
+      "error": 1.1623237763110605e-12
+    },
+    {
+      "name": "residual_column_cell_count",
+      "passed": true,
+      "column_max": 3.747441538554005,
+      "count_bound": 227.09043118176066
+    },
+    {
+      "name": "curvature_column_cell_count",
+      "passed": true,
+      "column_max": 113.85900495290973,
+      "count_bound": 5476.915400302167
+    },
+    {
+      "name": "exact_row_column_density_r3",
+      "passed": true
+    },
+    {
+      "name": "exact_row_column_density_r9",
+      "passed": true
+    },
+    {
+      "name": "exact_row_column_density_r27",
+      "passed": true
+    }
+  ],
+  "passed": 62,
+  "total": 62,
+  "details": {
+    "periodic_solver": [
+      {
+        "stop": 2,
+        "iterations": 52,
+        "normal": 1.82457056211689e-11
+      },
+      {
+        "stop": 2,
+        "iterations": 52,
+        "normal": 1.8246281435739043e-11
+      },
+      {
+        "stop": 2,
+        "iterations": 52,
+        "normal": 1.825864754318509e-11
+      },
+      {
+        "stop": 2,
+        "iterations": 52,
+        "normal": 1.8245420275371677e-11
+      }
+    ],
+    "periodic_residual": {
+      "top_T": 3,
+      "own_spacing": 1.0,
+      "coarse_scaled": true,
+      "m": 0.003,
+      "weighted_row_max": 3.7474415385539985,
+      "weighted_columns": [
+        3.747441538554005,
+        3.747441538554003,
+        3.747441538553999,
+        3.747441538554
+      ],
+      "output_count": 324,
+      "per_top_cell_count": 4
+    },
+    "periodic_curvature": {
+      "top_T": 3,
+      "own_spacing": 0.3333333333333333,
+      "coarse_scaled": true,
+      "m": 0.003,
+      "weighted_row_max": 1.1317796419144097,
+      "weighted_columns": [
+        113.85900495290943,
+        113.85900495290784,
+        113.85900495290973,
+        113.85900495290934
+      ],
+      "output_count": 39366,
+      "per_top_cell_count": 486
+    }
+  },
+  "elapsed_seconds": 0.63742995262146
+}

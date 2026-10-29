@@ -199,6 +199,52 @@
 > Both full existence and the physical continuum mass gap remain OPEN.
 > Current actual-producer work and exact scopes are in [HANDOFF.md](HANDOFF.md).
 
+> ### Next producer checkpoint — 29 October 2026
+>
+> Three additional author units are frozen and preserved, with their independent
+> review status kept separate from their diagnostic results.
+>
+> - [Uniform soft minimizer](UNIFORM_SOFT_MINIMIZER_ASTRA.md): the candidate
+>   proves FC19 with `theta=L^-2` using the actual stationary chain, uniform
+>   complex strip, local Stokes fillings and separate weighted row/column
+>   counting. Its consequence is the neutral FC20 quartic bound. Charged
+>   exchange, the finite-part increment and nonlinear flow remain open.
+>   A fresh Astra/max review is completing its report.
+> - [Source sea construction](SOURCE_SEA_CONSTRUCTION_ASTRA.md): the candidate
+>   uses a reflection-positive cell-penalty family and its infinite-penalty
+>   limit to price exact rough histories relative to the integrated all-cut
+>   reference at every admissible even volume. Clean coarse mismatches use the
+>   actual normalized kernel; correlated refinements and localized original
+>   sources are retained. This is not the fixed-V connected source logarithm
+>   or a multilevel induction. Fresh review found an unimplemented negative
+>   control in the original diagnostics; the [additive repair](checks/source_sea_control_fix_receipt.json)
+>   constructs its probability law explicitly and has received affected
+>   independent confirmation. Original code, outputs and manifest are preserved.
+> - [Crossover literature bridge](CROSSOVER_LITERATURE_BRIDGE_ASTRA.md): the
+>   author identifies a missing mode count in a printed Gaussian determinant
+>   inference and an unsupported diameter-to-incidence inference in Kirk v4.
+>   These are scoped proof-inference findings awaiting separate review, not
+>   counterexamples to its actual Wilson construction or a whole-paper verdict.
+>   The dimension-aware replacement and fixed-cell forest organization are
+>   constructive leads; physical continuum clustering is still unproved.
+>
+> [Coordinator reproduction](checks/full_proof_next_authors_replay_summary.json)
+> reproduced all six original author invocations. All scientific output fields
+> agree; only four declared runtime fields are excluded from comparison.
+> [Byte binding](checks/full_proof_next_authors_bindings.json) verifies 46 frozen
+> artifacts and 118 artifact/input records. The minimizer's first 56 predicates
+> repeat in three invocations, and the source program reports six test groups;
+> these are not a count of independent proofs. The corrected source runner
+> passes all six groups with the other recorded results unchanged.
+>
+> The primary-literature register now also names the exact chessboard imports,
+> the two-level forest construction, and a pinned public rotation-invariance
+> proposal. A fresh Astra/max worker is checking the latter's actual probability,
+> source-growth, reflection and regulator hypotheses against this lane.
+> Both **full continuum existence and the physical continuum mass gap remain
+> OPEN**. No audit grade or whole-PR verdict is added at this checkpoint.
+>
+
 > **PROVENANCE WARNING (2026-10-28T22:11:08Z, lead now claude-opus-5-5).** Every Claude-authored result in sessions 24 and 25 — lead consolidation and all worker files, commits 811b8ed6de through 666a71b7b9 — was produced on **claude-opus-5**, not the owner-required model (Claude: Opus 5.5 at extra effort or higher; Codex: gpt-6-astra at max). The owner has ruled that work likely unreliable. **Treat every session-24/25 status, fix, flag, refutation and number in this file as PROVISIONAL** until the Opus 5.5 review sweep recorded in SESSION25_RESULTS.md §PROVENANCE has re-established it. The only session-24/25 checks run at an approved setting are the Codex gpt-6-astra/max reviews (`CODEX_REVIEW_*.md`). The tally is reported as 72 / 2 / 7 / 24 + 1 **pending** that sweep.
 
 > **[S26-BANKED] RESULTS CONFIRMED BY BOTH MODEL FAMILIES (2026-10-28T23:39:35Z).** Each item below was established or re-derived by Claude Opus 5.5 and independently checked by Codex gpt-6-astra (max). Exact statements are in the cited files; these lines are pointers, not restatements. They are lane-level results and do not move the 105-item tally.

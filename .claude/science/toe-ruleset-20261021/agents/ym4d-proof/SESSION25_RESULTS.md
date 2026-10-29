@@ -2555,3 +2555,48 @@ from the publication packet; URLs, version/hash evidence and our analysis remain
 Fresh Astra/max workers now pursue the actual sea/failure producer, uniform
 soft minimizer/FC19, and a deeper continuum-bridge literature check. Their
 new drafts are not incorporated as established conclusions at this checkpoint.
+
+### Next producer checkpoint — 29 October 2026
+
+Three additional author units are frozen and preserved, with their independent
+review status kept separate from their diagnostic results.
+
+- [Uniform soft minimizer](UNIFORM_SOFT_MINIMIZER_ASTRA.md): the candidate
+  proves FC19 with `theta=L^-2` using the actual stationary chain, uniform
+  complex strip, local Stokes fillings and separate weighted row/column
+  counting. Its consequence is the neutral FC20 quartic bound. Charged
+  exchange, the finite-part increment and nonlinear flow remain open.
+  A fresh Astra/max review is completing its report.
+- [Source sea construction](SOURCE_SEA_CONSTRUCTION_ASTRA.md): the candidate
+  uses a reflection-positive cell-penalty family and its infinite-penalty
+  limit to price exact rough histories relative to the integrated all-cut
+  reference at every admissible even volume. Clean coarse mismatches use the
+  actual normalized kernel; correlated refinements and localized original
+  sources are retained. This is not the fixed-V connected source logarithm
+  or a multilevel induction. Fresh review found an unimplemented negative
+  control in the original diagnostics; the [additive repair](checks/source_sea_control_fix_receipt.json)
+  constructs its probability law explicitly and has received affected
+  independent confirmation. Original code, outputs and manifest are preserved.
+- [Crossover literature bridge](CROSSOVER_LITERATURE_BRIDGE_ASTRA.md): the
+  author identifies a missing mode count in a printed Gaussian determinant
+  inference and an unsupported diameter-to-incidence inference in Kirk v4.
+  These are scoped proof-inference findings awaiting separate review, not
+  counterexamples to its actual Wilson construction or a whole-paper verdict.
+  The dimension-aware replacement and fixed-cell forest organization are
+  constructive leads; physical continuum clustering is still unproved.
+
+[Coordinator reproduction](checks/full_proof_next_authors_replay_summary.json)
+reproduced all six original author invocations. All scientific output fields
+agree; only four declared runtime fields are excluded from comparison.
+[Byte binding](checks/full_proof_next_authors_bindings.json) verifies 46 frozen
+artifacts and 118 artifact/input records. The minimizer's first 56 predicates
+repeat in three invocations, and the source program reports six test groups;
+these are not a count of independent proofs. The corrected source runner
+passes all six groups with the other recorded results unchanged.
+
+The primary-literature register now also names the exact chessboard imports,
+the two-level forest construction, and a pinned public rotation-invariance
+proposal. A fresh Astra/max worker is checking the latter's actual probability,
+source-growth, reflection and regulator hypotheses against this lane.
+Both **full continuum existence and the physical continuum mass gap remain
+OPEN**. No audit grade or whole-PR verdict is added at this checkpoint.

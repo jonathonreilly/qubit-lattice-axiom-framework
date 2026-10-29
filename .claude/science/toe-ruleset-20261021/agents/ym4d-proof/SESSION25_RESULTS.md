@@ -1745,3 +1745,13 @@ at d=4, L=3); a missing factor L in the commutator exponent count (R6); RW-cc-wa
 proved from its premises (R7); the small-torus citation 16 → 256 cells, e^{4μ} → e^{8μ}; X⁺ attachment −n → −3n/2.
 Proposition CX is a scalar obstruction, not a Yang–Mills-class counterexample. **BFT-4 remains OPEN**; the most
 dangerous unverified step is (H2)^Lip from the cc walk — forwarded to BFT4W55 (running).
+
+**NSL55 — finished** (claude-opus-5-5, max; resumed run 02:58–03:16Z). **(NSL) proved at every depth and BFT-0's
+per-level identification proved from it** (Theorem ID (I1)-(I4): composite point = per-level tower, E_k = 𝔉_k(Z; V_k)),
+at the trivial background, 𝒞_glob, m = 0, T ≥ 3, in Balaban's convention; Corollary K-U (uniqueness in a slice ball of
+FIXED radius at every depth) is its answer to CODEX_REVIEW_GV's ball objection. E^cb = E^br not needed on the BFT route
+(Proposition E1 at level 1 only). 17 CONFIRMED / 0 NV / 3 REFUTED (GV55's rank inequality; the draft's "names unused
+elsewhere"; K_G ≤ 1.5·10³ → ≤ 1403.1, check ns55_3, finiteness only used). **It also caught a lead overstatement:**
+[S26-BANKED] said "(NSL) is genuinely needed" — Codex GV said only that direct restriction fails and NSL is one sufficient
+repair. Corrected in PROOF.md; the summary line above ("(NSL) genuinely needed") is superseded. **Not banked until
+CODEX_REVIEW_NSL (launched).** Open: boxes; off 𝒞_glob / Z ≠ 1 (needs (N1)) — **launched OFFGLOB55 (Opus 5.5 max).**

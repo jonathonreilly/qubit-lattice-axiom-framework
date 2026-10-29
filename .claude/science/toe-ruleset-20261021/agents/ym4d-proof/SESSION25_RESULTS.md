@@ -1855,3 +1855,10 @@ inside it: a positive flow lower bound without an extra smallness hypothesis; un
 **Useful clarification: the OS0 "scale window" is a finite-a issue** — fixed separated test functions eventually fit a
 fixed-radius domain; the full test space needs a uniform extension estimate. Most dangerous: the cutoff-uniform complex
 derivative envelope for the tilted chain, including LARGE coarse fields (→ LARGE55's design).
+
+**CX-HINT2** (`CODEX_REVIEW_HINT2.md`). Comparator mathematics banked; conditional H-RED reduction banked (positive
+slope suffices). Corrections: instanton coefficient (→ 11N/3) and magnetic tree coefficient. **The bridge is the problem:
+(ID♮) — "the free counterpart of a YM observable is its order-c² term" — is a calibration rule, not an OS/algebra
+identification (the contraction does not preserve products), so a witness built on it does not prove the reconstructed
+theory non-free.** The target theorem needs a non-freeness criterion that holds against EVERY identification of the
+Yang–Mills observables with a free theory's. Queued: NONFREE worker (next free slot).

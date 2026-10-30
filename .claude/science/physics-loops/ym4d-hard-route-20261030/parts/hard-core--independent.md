@@ -3,64 +3,62 @@ lease_until: <driver sets this>
 
 ## State of attack
 
-**Formulation.** Hard-constraint block RG for SU(2) Wilson on a periodic 4-torus, with the quaternion-mean average with waypoints and a field-chosen base point (Text 1, 5.1, 5.4). This map is defined on the whole compact field space, it pushes Haar exactly to Haar, it gives a Markov kernel mu_W on the fields, and its linearisation is exactly the paired-contour Q of (R4). The induction is I(k) of Text 3.3: a sum over families of frozen islands, plus a small-field form on the complement. An island is recycled into the small-field polymers as soon as it is smaller than a block, the surrounding coarse field is eps_0-regular and no large fluctuation is next to it.
-The vacuum is subtracted exactly by rho_k(trivial coarse field), which is also the named subtraction for UV-EXT.
+**Formulation.** Hard-constraint block RG for SU(2) Wilson on a periodic 4-torus, with the quaternion-mean average with waypoints and a field-chosen base point (Text 1, 5.1, 5.4). This map is defined on the whole compact field space, it pushes Haar exactly to Haar, it gives a Markov kernel mu_W on the fields, and its linearisation is exactly the paired-contour Q of (R4). The induction is I(k) of Text 3.3, **level-only**: r_k is one function of the current field, equal to a small-field form on the regular region Om(V) times a large-field factor G_k(V) <= exp(-c_F eps_0 Y_k(V) / g_k^2), with Y_k the l^1 norm of the rough plaquettes. There are no frozen fine variables and no histories. Rough cubes where the next field is regular go into a hard-core gas in the fluctuation integral, and so into the polymers. The vacuum is subtracted exactly by rho_k(trivial coarse field); with a source this is the counterterm E of UV-CT (Text 6).
 
-**Order of constants.** Text 3.1: L; kappa, M; eps_0; eps_1 <= eps_0 / (4 L^2); m_R, eps_rule; E_0, B_0, alpha_0, alpha_1; r(g); gamma. FLOW is a hypothesis, not an input.
+**Order of constants.** Text 3.1: kappa, M absolute; then L >> M; then eps_0 = c_1 L^{-2}; alpha = c_2 eps_0; eps_1 = eps_0 / (4 L^2); p(g); then gamma. FLOW is a hypothesis of Theorem I, supplied by Text 8 for L large.
 
 **What is derived and what is believed.**
-- Derived: Lemma 1.1, Corollary 1.2, identity (1.2), Lemma 2.1, the linearisation in 5.1, identities (5.1)-(5.2), the removal of the star in 5.3 under its hypotheses, the real-s bound in Text 6 given Theorem I, Lemmas 7.1, 7.2, Theorem 7.3, the star removal for q_k, the symbol bound QQ^* >= 1/3, the Fubini identity and the n-dependence in 7.6, the sign of the paramagnetic term in 7.7, (8.1), (8.2), b, Lemma 9.3 off the star, the linear lift bounds in 9.4, the tree gauge.
-- Derived at sketch level: (5.4), (5.5), (EX) up to nonlinear remainders, the tree count in 4.5, 7.2, 7.3, non-abelian 7.4, 9.5, 11.2.
+- Derived: Lemma 1.1, Corollary 1.2, identity (1.2), Lemma 2.1, the linearisation in 5.1, identities (5.1)-(5.2), the removal of the star in 5.3 under its hypotheses, the real-s bound in Text 6 given Theorem I, Lemmas 7.1, 7.2, Theorem 7.3, the star removal for q_k, the symbol bound QQ^* >= 1/3, the Fubini identity and the n-dependence in 7.6, the sign of the paramagnetic term in 7.7, (8.1), (8.2), b, Lemma 9.3 off the star, the linear lift bounds in 9.4, the tree gauge, Lemma 10.1, and Theorem 4.2 from (5.5).
+- Derived at sketch level: (5.4), (5.5), the excess bound and recycling in 4.4, Theorem P in 4.5, 7.2, 7.3, 9.5, 11.2.
 - Derived given stated inputs: Proposition 11.1, given (REG) and per-polymer invariance.
-- Believed, not proved: (SF3), the non-abelian part of (SF1), (CL) near frozen data, |c_j| <= C_0 and hence FLOW. **Theorem I is a target. It is not proved.**
-- Sketch only: Text 10.2, one-shot Newton.
-- Numerics. (i) `checks/hard-core--independent_defect_gain.py`, earlier line-averaged map, flat background: PASS-SHEET with max S = 1.000 at L = 3, 5, 7; single links at L = 3, 5 only, since L = 7 was stopped, so PASS-GENERIC is not evaluated at L = 7. **Those runs did not hold the numeric lock:** another push held it, my acquire failed, and I had piped its output through tail, which hid the failure. (ii) `checks/hard-core--independent_lift_form.py`, under a confirmed lock: see Lemma 10.1. (iii) `checks/hard-core--independent_field_ineq.py`, final map D3, under a confirmed lock, at L = 3, 5: PASS-55, max Ratio 1.000 and 0.999 against bounds 12.6 and 15.2, in the SHEET family; CHARGE exact to 2e-16; RULE-EFFECT below. These families can falsify (5.5). They do not confirm it on all fields, and no adversarial search was run.
+- Believed, not proved: the exterior integral, Theorem P, |c_j| <= C_0 and hence FLOW. **Theorem I is a target. It is not proved.**
+- Numerics. (i) `checks/hard-core--independent_defect_gain.py`, earliest line-averaged map, flat background: PASS-SHEET with max S = 1.000 at L = 3, 5, 7; single links at L = 3, 5 only, since L = 7 was stopped, so PASS-GENERIC is not evaluated at L = 7. **Those runs did not hold the numeric lock:** another push held it, my acquire failed, and I had piped its output through tail, which hid the failure. (ii) `checks/hard-core--independent_lift_form.py`, under a confirmed lock: see Lemma 10.1. (iii) `checks/hard-core--independent_field_ineq.py`, map D3 with the older rule threshold 0.5, under a confirmed lock, at L = 3, 5: PASS-55, max Ratio 1.000 and 0.999 against bounds 12.6 and 15.2, in the SHEET family; CHARGE exact to 2e-16; RULE-EFFECT below. These families can falsify (5.5). They do not confirm it on all fields, and no adversarial search was run.
 - RULE-EFFECT, TUNED2 on noise: with base fixed at y, min |m| falls to 0.005 to 0.012 at L = 3 and to 0.001 to 0.009 at L = 5; with the rule it stays near 0.56 and 0.73. |W - 1| is larger with fixed base by a factor of 8 to 9 at L = 3. At L = 5 the three seeds give factors 0.6, 21 and 1.7, so the first seed goes the other way. The rule does not lower |W - 1| on every sample; what it reliably does is keep |m| away from zero, which is the hypothesis of 5.3. All ratios are far below the bound here, since the noise inflates the right side. Three seeds per L are a small sample.
 
-**The large-field answer so far.** Large-field regions regenerate the hypotheses, conditionally on the frozen statements, and without any condition on c_F beta. The unrenormalised per-level count diverges (Proposition LF-count), but nothing in this scheme sums that quantity. An isolated fine core does not survive to a coarse level (DEC), so the sum over unrecycled shapes is a tree sum with bounded entropy per node. The divergent part is the vacuum part of the recycled gas, and it is cancelled by the named subtraction. I do not claim this is Balaban's R operation: his bodies could not be read (Project Euclid and Deep Blue both served bot checks, and I stopped there).
+**The large-field answer so far.** Theorem 4.2 and Theorem 4.3: a large-field region regenerates the large-field hypothesis at the next step with the same constant, in one line from the field inequality (5.5), because the l^1 norm of rough curvature contracts by L^{-2} under averaging. Every rough coarse plaquette is paid either by fresh regular energy at the finer level, or by rough plaquettes at the finer level with a margin L^2 / C_OS. That margin pays the entropy. Rough cubes under a regular field are a dilute gas in the fluctuation integral. The divergent count LF-count is the vacuum part of that gas, cancelled by the named subtraction, and the rest is irrelevant after extraction. I do not claim this is Balaban's R operation: his bodies could not be read (Project Euclid and Deep Blue both served bot checks, and I stopped there).
 
-**Hardest remaining inequality.** (LOC-NA) together with the per-polymer gauge invariance on which Proposition 11.1 stands. Precisely: with V eps_0-regular at level k, sup_p |F_p(U_k(V))| <= C eta^2 sup |d_k V| and the Holder modulus of F at scale eta^{-1}, uniformly in k, near frozen data, for complex V in a fixed disc. It is consumed by (SF1), (CL), (EX), 11.1 and 11.2, while Text 10.2 has it only as a sketch. Every other small-field item now has a route that reduces to it.
+**Hardest remaining inequality.** The third-order bound in Theorem P: on the regular slice, F_{k,Om} = qcov_n + N_k with |N_k density| <= C_N (local |F|)^3, uniformly in k, and C_s free of L. It is consumed by every small-field item, by (FLOW) through |c_j| <= C_0, and by the sources in Text 6. It has a sketch (4.5), and two parts of that sketch are not derivations: C_src finite, which is the claim that covariantising the exact quadratic form leaves only third order; and Newton on the slice. The large-field sector no longer contains the hardest inequality: Theorem 5.5 and Theorem 4.2 are derived.
 
-**Routes tried and why they failed** (Text 1.5, 2, 5.4, 7.5, 9.7, 10.3): one-link solve (variance grows linearly with level); entire reference-path average (rough path keeps full weight; fine action no longer dominates at large curvature); line-averaged prefix (star cancels only approximately at large field); iterating the fiber flow for complex bounds (L^2 per level); one-function pointwise induction on all V (entropy compounds unless an excess lemma is proved for arbitrary fields, replaced by frozen islands); pricing a tower at tuned block centres (needed a density bound I could not prove, replaced by the field-chosen base point of 5.4); two thresholds in recycling (non-analytic indicator, removed); stepwise regularity of the lift (shape factor compounds, replaced by the one-shot bound of 9.4); energy-only regular class (needs a lattice Uhlenbeck gauge I did not prove; set aside away from the trivial background); direct sign analysis of beta per level (dia and constraint terms have no sign; superseded by the telescoping (8.2)); L-free composite bound on rough inputs through the star (L^{1/2} loss, recorded); level-by-level Whitney starting guess (F jumps across faces, logarithm at the first Newton step, replaced by glued linear lifts); bootstrap from the stepwise bound (holonomy eta^{-c'} eps, no patch gauge at block scale).
+**Routes tried and why they failed** (Text 1.5, 2, 5.4, 7.5, 9.7, 10.3): one-link solve (variance grows linearly with level); entire reference-path average (rough path keeps full weight; fine action no longer dominates at large curvature); line-averaged prefix (star cancels only approximately at large field); iterating the fiber flow for complex bounds (L^2 per level); one-function pointwise induction on all V (entropy compounds unless an excess lemma is proved for arbitrary fields, replaced by frozen islands); pricing a tower at tuned block centres (needed a density bound I could not prove, replaced by the field-chosen base point of 5.4); two thresholds in recycling (non-analytic indicator, removed); stepwise regularity of the lift (shape factor compounds, replaced by the one-shot bound of 9.4); energy-only regular class (needs a lattice Uhlenbeck gauge I did not prove; set aside away from the trivial background); direct sign analysis of beta per level (dia and constraint terms have no sign; superseded by the telescoping (8.2)); L-free composite bound on rough inputs through the star (L^{1/2} loss, recorded); fine-lattice regularity at all depths (three routes, Text 10.2; made unnecessary by the level-only scheme); frozen islands with histories and a tree count (worked in outline but carried multi-scale boundaries, replaced by Theorem 4.3); a large-field cost of order f^2 per rough plaquette (no margin, the coefficient decays along the flow with the sum of g_k^2 log(1/g_k), Text 4.2).
 
-**Next action.** Write the linear statement near frozen data (a version of 9.4 with Dirichlet part), then the one-shot Newton of 10.2 with its norm. Settle 11.4 (b), gauge invariance of individual polymers, since 11.1 rests on it.
+**Next action.** Write qcov_n explicitly: kappa_n, its exponential decay, the covariantisation, and compute C_src by expanding qcov_n(V^*(W)) - qcov_{Ln}(W) to third order in a frame at a site. When a lock is confirmed: rerun the field-inequality check with the threshold eps_0 in the rule, and an adversarial search on (5.5).
 
 ## Obligations
-- gap: (LOC-NA) non-abelian background and Hessian near a regular field, with frozen boundary: the glued starting guess and one-shot Newton of Text 10.2, not written line by line; items of 10.4 -> (SF1), (SF3), (SF4), (EX), (CL)
-- unchecked: |c_j| <= C_0 with C_0 depending on d only: low-momentum expansion of T_3, T_4 and per-site traces, given (R4), Ward identities and 9.4 (Text 9.5) -> (8.2)
-- implication: (FLOW) for L >= L_0, beta in [(b/2) log L, 2 b log L], given |c_j| <= C_0 and (SF3) for the O(g^2) -> Theorem I hypothesis, trajectory in UV-EXT
-- gap: exact form of I(k), Mayer polymer with multi-body boundary terms (Text 3.3, 4.4, 5.6 item 5) -> Theorem I
-- gap: (EX) with nonlinear remainders on the real fiber (Text 5.5) -> I(k+1)(d)
-- gap: (SF3) fluctuation integral with white-noise cut p(g), mid-field gas up to eps_1, frozen boundary, bulk polymers independent of boundary (Text 9.6, 11.2, 11.3) -> I(k+1)(b)
-- gap: per-polymer gauge invariance after localisation (Text 11.4 b) -> Proposition 11.1
-- implication: (SF4), Proposition 11.1, irrelevance by Fock-Schwinger gauge polymer by polymer, given (REG) with Holder modulus and per-polymer invariance -> I(k+1)(b), uniform bound (3.3)(b)
-- gap: rerun the field-inequality check on the final map D3; so far the script tests the earlier line-averaged map, and the lock was not held -> confidence in (5.5)
+- discharged: Theorem 5.5, field inequality at every real field, with (5.4); the rectangle filling is standard and not enumerated -> Theorem 4.2
+- discharged: Theorem 4.2, Lyapunov inequality, from Theorem 5.5 -> Theorem 4.3
+- gap: rerun the field-inequality check with threshold eps_0 in the rule, and an adversarial search; the script tests threshold 0.5 -> confidence in Theorem 5.5
+- implication: large-field regeneration, Theorem 4.3, given (4.1), I(k)(a), (c) and exterior polymer bounds -> I(k+1)(c)
+- gap: Theorem P third-order bound: C_src finite and C_s free of L; Newton on the slice; free boundary (Text 4.5) -> I(k+1)(a), (FLOW), 4.6
+- gap: recycling: walk representation with killing, multi-hole decay of the exterior integral (Text 4.4) -> I(k+1)(b)
+- gap: nonlinear corrections to the shift of the constraint in the excess bound (Text 4.4) -> I(k+1)(b)
+- gap: blocked tubes as a local factor in I(k), checked through one step (Text 4.4) -> I(k+1)
+- gap: exterior fluctuation integral with white-noise cut p(g) and mid-field cubes (Text 9.6, 11.2, 11.3) -> I(k+1)(b)
+- implication: irrelevance, Proposition 11.1, given Holder control of the lift (Text 4.5) -> I(k+1)(b)
+- unchecked: |c_j| <= C_0 with C_0 depending on d only: low-momentum expansion of T_3, T_4 and per-site traces (Text 9.5) -> (8.2)
+- implication: (FLOW) for L >= L_0, beta in [(b/2) log L, 2 b log L], given |c_j| <= C_0 and the exterior integral for the O(g^2) -> Theorem I hypothesis, trajectory in UV-EXT
+- unchecked: covariant Combes-Thomas decay (Text 7.3), given coercivity and saddle stability -> Theorem P, 4.6
 - unchecked: lattice Sobolev on a torus and zero-mean handling per tube, given Gagliardo-Nirenberg on Z^4 -> Lemma 9.3, 9.5
-- unchecked: non-abelian coercivity (Text 7.2) given N(U) <= eps(L) -> (SF3), (EX), uniqueness in (SF1)
-- unchecked: Combes-Thomas decay (Text 7.3) given coercivity and saddle stability -> (SF3), polymer decay
-- unchecked: (CL) from Text 7.2 next to frozen data, given N(U) <= eps -> 4.3 type F
-- unchecked: weights (5.4), rectangle count, given axial surfaces with uniform vertices -> (5.5)
-- unchecked: tree count in 4.5 given the fresh-core rule and the Load Lemma -> I(k+1)(c), Mayer convergence
-- implication: (5.5), the unconditional form of (4.1), given (5.4) -> 4.3
-- implication: real-s two-sided bound and UV-EXT in real form, given Theorem I and FLOW -> upper-chain
-- discharged: Lemma 1.1 exact Haar pushforward -> Corollary 1.2, recursion (1.2), mixed bonds in 4.4
-- discharged: Lemma 2.1 fiber flow -> Lipschitz estimate, checks
+- gap: I^w(k), local complex source through one step: flow of w_k, polymer analyticity on a polydisc in w, frozen-cube comparison at complex b_k (Text 6.1) -> UV-CT
+- implication: UV-CT, CT1 to CT4, given I^w(K) and FLOW -> upper-chain
+- discharged: Lemma 1.1 exact Haar pushforward -> Corollary 1.2, recursion (1.2), mixed bonds
+- discharged: Lemma 2.1 fiber flow -> checks
 - discharged: exact identity (5.1), inequality (5.2) -> (5.5)
 - discharged: linearisation of the final map equals (R4) -> propagator setting, (R5), (R7)
-- discharged: Lemmas 7.1, 7.2 and Theorem 7.3, abelian coercivity uniform in k -> Text 7.2
+- discharged: Lemmas 7.1, 7.2 and Theorem 7.3, abelian coercivity uniform in k -> Theorem P
 - discharged: QQ^* symbol bound for Q_str -> Text 7.3
 - discharged: one-loop telescoping identity (8.1) on covariantly constant backgrounds -> (8.2)
 - discharged: coefficient b = 11/(3 pi^2), continuum heat kernel -> (8.2)
 - discharged: Lemma 9.3 off the star, non-compounding second derivative of the composite map -> 9.5
-- discharged: linear lift bounds free of L, given the upper bound on q_n -> (REG), 9.5
-- discharged: maximal tree gauge, trivial Jacobian at every field -> (SF3)
-- discharged: ultralocal cluster expansion, proved in library/ultralocal_cluster_expansion.md with credit to Dimock and Balaban -> 11.2
-- discharged: Lemma 10.1, two-sided bound on the abelian perfect form, every n -> 9.4, 9.5, normalisation in Text 6
+- discharged: linear lift bounds free of L, given the upper bound on q_n -> 4.5, 9.5
+- discharged: Lemma 10.1, two-sided bound on the abelian perfect form, every n -> 9.4, 9.5, Theorem P, Text 6
+- discharged: maximal tree gauge, trivial Jacobian at every field -> exterior integral
+- discharged: ultralocal cluster expansion, proved in library/ultralocal_cluster_expansion.md with credit to Dimock and Balaban -> 11.2, 4.4
+- discharged: per-polymer gauge invariance by localising in the white noise only -> Proposition 11.1
 
 ## Requests
-- FROM TARGET LEAD, gate on UV-CT (`git show origin/claude/ym4d-hard-route:.claude/science/physics-loops/ym4d-hard-route-20261030/gates/uv-ct-upper-chain-41489e4876.md`; same-model): CT3 carries all the separated content, since in the Gaussian family only CT3 fails. E is not free: Jensen forces E close to log G in L^1. CT4 is equivalent to p_P - p_infinity <= c_F (a/a_*)^4 and, by a mode count not yet checked, fails at Gaussian order by log log(1/a) unless two-loop running of the zero-mode factor rescues it. So treat CT4 as non-Gaussian. CT1 at complex sources is the least tested clause.
-- FROM TARGET LEAD, 2026-10-30: the interface changed from UV-EXT to UV-CT; see `git show origin/claude/ym4d-hard-route:.claude/science/physics-loops/ym4d-hard-route-20261030/GOAL.md` and `git show origin/claude/ym4d-hard-route:.claude/science/physics-loops/ym4d-hard-route-20261030/parts/upper-chain.md`, Requests and Text section 7. Answer to your real-s request: a constant real shift cannot feed the chain, whatever the subtraction (upper-chain Theorem 4). A real form exists at position-dependent real bump sources with a two-sided bound (Theorem 7.8), and it gives normalized exponentials rather than the linear field. Your named subtraction at constant coupling now feeds only CT4. The UV-CT wording traces partly to the Sussman-Alpoge account through the mapped attempt; use the interface, and keep your charter's limits on what you read.
-- UV-EXT (lead, upper-chain): see Text 6. Real s is what this route gives uniformly in a and in volume. Zero-freeness at complex s is only available in a disc of radius of order 1/(physical volume in last-scale units), uniform in a. Please confirm the consumer can work from real s: the exponential moments in a chessboard bound have positive integrand. Also the named subtraction is log rho_K(1; beta).
+- Target lead: Text 6 maps this induction onto UV-CT. CT1 for all w in the class, CT2, CT3 and CT4 follow from I^w(K), with E the named subtraction rho_K^w(1) averaged over lattice symmetries. Please confirm two things. (1) The trajectory can run along a = L^{-K} a_K with L odd and large: Tor has an even number of last cells, so its reflection planes are lattice planes. The upper chain's dyadic a is then replaced by L-adic. (2) Gate item D2 counts modes at the bare coupling. In my scheme the zero-mode factor of Tor is at the fixed coupling g_K, on a bounded number of cells. If the checker sees a log log(1/a) in Text 6.3 CT4, I want the line.
+- FROM TARGET LEAD, gate on UV-CT (`git show origin/claude/ym4d-hard-route:.claude/science/physics-loops/ym4d-hard-route-20261030/gates/uv-ct-upper-chain-41489e4876.md`): noted. CT3 is addressed in Text 6.3 by Mobius in the source support, CT1 at complex sources in Text 6.1.
+- FROM TARGET LEAD, 2026-10-30: interface changed from UV-EXT to UV-CT. Consumed: Text 6 has been rewritten. The earlier real-s request is withdrawn. I read `parts/upper-chain.md` for the interface statement and its requests only, and I have not read the mapped attempt.
 
 ## Text
 
@@ -129,8 +127,7 @@ positive and gauge invariant, and int dW rho_k(W) = Z for every k. With 1 the tr
 
     r_{k+1}(W) = [ int mu_W(dV) r_k(V) ] / [ int mu_1(dV) r_k(V) ],      Z(beta) = rho_K(1; beta) int dW r_K(W; beta).        (1.2)
 
-**So the explicit subtraction for UV-EXT is log rho_K(1; beta), the constrained partition function with the coarse field
-trivial.** It is exact at every beta, and it carries every vacuum term, including the vacuum part of every large-field gas.
+**So the explicit subtraction is log rho_K(1; beta), the constrained partition function with the coarse field trivial.** It is exact at every beta, and it carries every vacuum term, including the vacuum part of every large-field gas. With a source it becomes the counterterm of UV-CT (Text 6.2).
 
 **1.5 Routes that failed.**
 - *One-link solve.* M = X_1(others) V(b_0) X_2(others) gives a global graph and exact Haar. It gives b_0 weight 1, so the composite
@@ -174,127 +171,89 @@ cost is of order L^2 |g-1|^2, against |g-1|^2 for the smooth lift. Consequently:
 - Formula (2.1) remains a useful exact identity for bounds at real W, for the Lipschitz estimate
   |log r_{k+1}(W g) - log r_{k+1}(W)| <= sup_V |log r_k(phi_g V) - log r_k(V)|, and for checks.
 
-### 3. Order of constants and the induction statement
+### 3. Order of constants and the induction statement (level-only scheme)
 
-**3.1 Order.** Fix, in this order:
+Everything is stated on the current level's lattice. r_k is one function of the level-k field V; nothing finer is ever carried, and there is no sum over histories. Credit: the split of an effective density into a small-field form and a large-field factor, and the extraction of a cost from the action, are the organisation of Balaban (titles and reviews only; bodies unread) as exposed for d = 3 scalar by Dimock II, III, which I read. Iterating polymers with a contraction per step, rather than re-evaluating them at a composite background, is Dimock's Lemma 11 in part I. CMP 109 (LANE-READ) re-evaluates instead. The Lyapunov inequality below is derived here, and **I make no claim about how this relates to Balaban's R operation.**
 
-1. L odd, large (a function of d = 4 only; used for L^{-2} decay of defects against the constants of 4.2).
-2. kappa, the polymer decay rate, large enough for the Mayer and Fubini steps; then M = L^{m_0} >= M(L, kappa), random-walk and polymer cube.
-3. eps_0, the regularity threshold for the current field, small depending on L, M; c_A, the action constant of (CL).
-4. eps_1 <= eps_0 / (4 L^2), the fixed fluctuation cut. Then a field within eps_1 of the level-k background of an eps_0-regular level-(k+1) field is automatically eps_0-regular: its curvature is at most eps_0 / L^2 + 4 eps_1. m_R, the grace depth of (DEC), from eps_0 and L. eps_rule >> eps_0 absolute (5.4).
-5. E_0, B_0: polymer and boundary-polymer bounds. alpha_0, alpha_1: analyticity radii. These are allowed to depend on everything above.
-6. r(g) = (log 1/g)^{r_0}: collar width, if (SF3) needs one (5.6 item 2).
-7. gamma, the bound on all the g_k, last and small depending on everything above.
+**3.1 Order.**
+1. kappa, M: polymer rate and cube, absolute. The classical kernels have range of order 1 in level units, and fluctuations at level k have range of order 1 in level-(k+1) units (3.3), so nothing forces M above L.
+2. L odd, large against M and all absolute constants: L >= L_0(M). (FLOW) needs it (8.2), and contraction by (M/L)^alpha needs it.
+3. C_OS <= C log L (5.5). c_F := c_A / (8 C_OS^2 O), O the overlap number of hulls.
+4. eps_0 := c_1 L^{-2}, c_1 small absolute: fiber stability needs coarse curvature below an absolute constant (7.2), and that means level-k curvature below c_1 / L^2.
+5. alpha := c_2 eps_0, complex radius, with c_2^2 <= c_F / (C M^3). eps_1 := eps_0 / (4 L^2), the cut on the fluctuation.
+6. p(g) = (log 1/g)^{p_0}, 2 p_0 > 1: white-noise cut.
+7. gamma, last and small against everything above.
 
-Two constants are not in this list and no statement may assume them: a bare-coupling relation (the flow is a hypothesis of
-Theorem I and an obligation, not an input to any large-field step), and any power of g in the large-field thresholds.
+Compare 5.6 of an earlier version of this file, where M > L forced a grace period: with L >> M a cell is already small against a block, and that whole mechanism is gone.
 
-**3.2 Islands.** A *cell* is a level-k M-cube. An *island at level k* is Y = (D, C, n, zeta), where D is a connected union of cells (its
-domain), C subset D is its core, n records for each part of D the finer level at which it was frozen, and zeta are the
-frozen variables at those levels, and D contains the r(g_k)-neighbourhood of C. Islands in a family are disjoint and non-touching.
+**3.2 Regions and functionals.** For V on T_k: f_p = |V_p - 1|. Rough plaquettes: f_p > eps_0. Y_k(V) := sum over rough p of f_p. Lambda(V) := the cells containing rough plaquettes; Om(V) := its complement. Near: plaquettes in Lambda(V), or within distance 2 of it. E_k(V) := sum over plaquettes neither rough nor near of f_p^2. There are at most C_M := C M^4 near plaquettes per rough cell, each with f <= eps_0, and at most Y_k / eps_0 rough cells, so the sum of f over near plaquettes is at most C_M Y_k.
 
-**3.3 Statement I(k) (draft; the words "frozen", "recyclable" are fixed in Section 4).** For all real V on T_k,
+For a union of cells Om and V regular on Om, F_{k,Om}(V) is the **classical functional with free boundary**, defined tropically: F_{0,Om} = A on Om, and F_{k+1,Om'}(W) := min of F_{k,Om}(V) over the regular slice of the fiber, with constraints only on bonds with both blocks in Om'. Directly from the definition:
 
-    r_k(V) = sum_{families Y} [ prod_{Y in Y} F_k(Y; V|_{D(Y)^+}) ] exp( -g_k^{-2} A_{Om}(U_Om(V)) + sum_{X subset Om} E_k(X; U_Om(V)) ) chi_k(Om; V),    (3.1)
+    Adding a constraint or frozen boundary data can only raise the minimum: F_{k+1,Om'}(W; frozen) >= F_{k+1,Om'}(W).                          (3.1)
 
-with Om = Om(Y) the complement of the domains, and U_Om(V) the background on Om, such that:
+**3.3 Statement I(k).** For every real V on T_k,
 
-(a) *Small-field form.* chi_k(Om; V) forces V to be eps_0-regular on Om. U_Om exists and is analytic on the regular set (SF1).
-(b) *Polymers.* E_k(X; .) is gauge invariant, depends on U on X only, is analytic on the complex class of radius alpha_1 and obeys
-    |E_k(X)| <= E_0 exp(-kappa d_k(X)), E_k(X; 1) = 0 and, summed against the level-to-level renormalisation (SF4), the uniform bound
-    sum_{X subset Om} |E_k(X; U)| <= C_E |Om| on regular U. E_k contains the recycled gas.
-(c) *Island bound.* F_k >= 0 on real data. For each island, with type-T core cells counted per the level at which they became core,
+    r_k(V) = exp( -g_k^{-2} F_{k,Om}(V) + EE_{k,Om}(V) ) G_k(V),     Om = Om(V),                                                                (3.2)
 
-        F_k(Y; V) <= prod_{j <= k} prod_{cells c in C_j(Y)} exp(-c_F / g_j^2),                                               (3.2)
+which *defines* G_k > 0, such that:
 
-    uniformly in the data, c_F > 0 fixed (4.3), where C_j(Y) is the set of type-T cells core at level j. This bound carries no
-    constant per domain cell: all collar and normalisation losses have been absorbed by the core cells of the same level.
-    Type Z cores have no absolute action cost, because F(U) can nearly cancel delta F on a cell. They are charged relative to the background, in (d), or to a type-T core within their margin, which pays their polylog count.
-(d) *Recyclability.* If the level-(k+1) field is eps_0-regular on the margin of D(Y), no Z core lies in it and D(Y) is smaller than an L-block at level k+1, the **activity**
-    a_k(Y; V) := F_k(Y; V) exp( -g_k^{-2} [A_{Om}(U_Om) - A(U)] ) / (vacuum Gaussian on D(Y)), the island compared with its regular replacement,
-    is the restriction of a function analytic on the complex class of radius alpha_1 of the exterior data on D(Y)^+, and it obeys the
-    bound (3.2) up to a factor 2. The comparison is global: (3.2) for F_k alone does not imply it. See (EX) in Section 5.
-(e) *Gauge and lattice symmetry.* All objects are gauge invariant and covariant under the lattice symmetries of T_k.
+(a) *Classical.* On regular V, F_{k,Om} = qcov_n + N_k, with n = L^k, qcov_n the gauge-covariant form of the exact quadratic perfect action of Text 7.1, 10.1, and N_k gauge invariant of third order in the curvature, with density bound |N_k density| <= C_N (local |F|)^3 uniformly in k (Theorem P, 4.5). In particular F_{k,Om}(V) >= c_A E_k(V on Om) with c_A >= 1/4.
 
-**Theorem I (target).** Suppose g_k <= gamma for all k <= K. Then I(k) holds for all k <= K, with constants not depending on k, K or the volume.
-The flow 1/g_k^2 = 1/g_{k+1}^2 + beta_{k+1}(g_k) is defined by the extraction in (SF4), with beta including the recycled gas.
+(b) *Quantum.* EE_{k,Om} is gauge invariant and analytic on the complex class C(Om; eps_0, alpha), EE_{k,Om}(1) = 0, and it is a sum over xi-supports Y of functions e_k(Y; V), each gauge invariant, with sensitivity to V decaying exponentially away from Y at rate kappa / M, |e_k(Y)| <= E_0 exp(-kappa d(Y)), and sum_Y |e_k(Y)| <= C_E |Om| on the class.
 
-### 4. One step k -> k+1: what regenerates, and why (the crux)
+(c) *Large field.* G_k(V) <= exp( -c_F eps_0 Y_k(V) / g_k^2 + B_0 |d Lambda(V)| ), and more precisely the same bound with V complex on Om in the class and real on Lambda, with G_k analytic in the data on Om near Lambda and independent of V on Om far from Lambda up to the terms in (b).
 
-Credit: the sum over large-field regions, frozen variables, the bound by the level's own action and the collars are the
-organisation of Balaban (CMP 119, 122; titles and reviews only, bodies unread) as exposed by Dimock II and III, which I read
-for d = 3 scalar (Theorem 3.1 of II, Lemmas 11 to 13 of III). Dimock II Remark 3 says only that the R operation converts some
-large-field contributions back to small-field ones. **The recycling below is my reconstruction of that sentence. I do not claim it is
-Balaban's operation.**
+(d) *Symmetry.* All objects are gauge invariant and covariant under the lattice symmetries of T_k.
 
-**4.1 Frozen statements consumed here (leaves, come back later).**
+**Theorem I (target).** If g_k <= gamma for all k <= K, then I(k) holds for all k <= K, with constants independent of k, K and the volume. The flow is defined by extracting the marginal part from EE_{k+1} (11.1) and (FLOW) gives the trajectory.
 
-- (SF1) *Background with frozen boundary.* Given coarse field W eps_0-regular on a union of level-(k+1) cells Om', and frozen
-  regular level-j data (j <= k) on the boundary, the multi-scale constrained minimiser U_Om' exists and is unique among regular
-  orbits, analytic in W on the complex class of radius alpha_1, with exponential decay of its dependence on boundary data.
-- (SF2) *Fluctuation covariance on Om'*, with hard constraint and frozen boundary: uniform bound and decay.
-- (SF3) *Fluctuation integral with frozen boundary and cut |B| < eps_1 at fixed eps_1.* log of the integral over the exterior, relative
-  to the vacuum normalisation, is sum over X subset Om' of E^{nofr}(X; U) plus sum over X touching the boundary of B(X; W, frozen),
-  with bulk polymers identical to the boundary-free ones and |B(X)| <= B_0 exp(-kappa d(X mod boundary)).
-- (SF4) *Renormalisation.* Any polymer family that is gauge invariant, symmetric, analytic on the complex class of radius alpha_1 and
-  bounded by E_0 exp(-kappa d) splits, with constant and marginal parts extracted at the trivial background, so that the remainder gains
-  (L^j eta)^{4+alpha}. This is the machine of CMP 109 Section 4 and 5 (LANE-READ). Applied to E^{nofr} plus the recycled gas.
-- (FLOW) beta_{k+1}(g) >= beta_min > 0 for g <= gamma, in the scheme above. Not supplied by any readable paper.
+### 4. One step k -> k+1: what regenerates (the crux)
 
-**4.2 One-step field inequality (OS)** [statement frozen, to be proved in Section 5]. Let V be real on the hull of a coarse plaquette
-P, with W = M(V). Split the level-k plaquettes of the hull into irr = {|V_p - 1| > eps_0} and reg = the rest, and let f_p = |V_p - 1|.
-Suppose every tube has |m| >= 1/2. Then
+**4.1 Field input.** (5.5): for any real V and any split of the hull plaquettes of a coarse plaquette P into irr and reg, |W(dP) - 1| <= C_OS ( L^{-2} ||f||_{l^1(irr)} + ||f||_{l^2(reg)} ).
 
-    |W(dP) - 1| <= C_OS ( L^{-2} ||f||_{l^1(irr)} + ||f||_{l^2(reg)} ),                                                      (4.1)
+**Theorem 4.2 (Lyapunov inequality) [DERIVED from (5.5)].** For every real V, with W = M(V) and L^2 >= 8 C_OS O (1 + C_M),
 
-with C_OS depending weakly on L (see (5.5)). If some tube has |m| < 1/2, at least a fixed fraction of the
-crossing paths in that tube are mutually misaligned, and then the hull contains at least c L^2 plaquettes with f_p >= c/L^2 (Lemma 5.x).
+    c_F eps_0 Y_{k+1}(W) <= (1/2) [ c_F eps_0 Y_k(V) + c_A E_k(V) ].                                                                                 (4.1)
 
-**4.3 Consequence: fresh cores (DEC) and the load of a core.** Split in (5.5) at eps_0: irr = {f > eps_0}, reg = the rest, and put Lam = L^2 / (2 C_OS). Let W have curvature phi >= eps_0 at a coarse plaquette. Then at least one holds: (F) ||f||_{l^2(reg)} >= phi / (2 C_OS), a fresh energy at level k, with cost at least c_A phi^2 / (4 C_OS^2 g_k^2) through (CL), since these plaquettes are in the small-field region; or (D) ||f||_{l^1(irr)} >= phi Lam, so eps_0-irregular children carry total curvature at least phi Lam. Iterating (D): if no node of type F occurs down to depth t, the irregular descendants at depth t carry total curvature at least eps_0 Lam^t. Since f <= 2, their number is at least N_t := (eps_0 / 2) Lam^t, which is above 1 only for t > m_R := log(2 / eps_0) / log Lam. Level 0 counts as type F, since there the plaquette is the bare action. So:
+*Proof.* Take a coarse plaquette with phi := |W(dP) - 1| > eps_0. Put irr = rough and near plaquettes of the hull, so ||f||_{l^1(irr)} <= (1 + C_M) Y_k(enlarged hull P). Then (5.5) gives phi <= 2 C_OS L^{-2} (1 + C_M) Y_k(hull P), or phi <= 2 C_OS E_k(hull P)^{1/2}. In the second case, phi <= phi^2 / eps_0 <= 4 C_OS^2 E_k(hull P) / eps_0. In either case
 
-*Load Lemma.* Charge each type-D cell equally to the type-F cores below it. A type-F core then carries total load at most sum_{t <= m_R} 1 + sum_{t > m_R} Lam^{-(t - m_R)} <= m_R + 2 per column of ancestors. [Follows from (5.5).]
+    phi <= 2 C_OS (1 + C_M) L^{-2} Y_k(hull P) + 4 C_OS^2 E_k(hull P) / eps_0.
 
-A chain of single irregular children has depth at most m_R, since curvature must grow by Lam at each level going down and it is capped at 2. c_F := min(c_A eps_0^2 / (4 C_OS^2), c_Z eps_1^2) with c_Z from (EX). eps_R plays no part in this.
+Sum over such P, with each level-k plaquette in at most O hulls, and multiply by c_F eps_0.  []
 
-**4.4 The step.** Fix W. Take a term of (3.1) with family Y at level k, and integrate over V under mu_W.
+This is why near plaquettes are put on the l^1 side: their energy is not controlled by F_{k,Om} (they are in Lambda, or too close to the boundary for the local form of (R5)), but their l^1 weight is at most C_M Y_k, and L >> M makes L^{-2} C_M small.
 
-(i) Bad set. Only two kinds of new core exist. On the set where W is eps_0-regular, write V = exp(iB) V^*(W), with V^* the level-k background. *Type Z:* a level-k cell with |B| >= eps_1. *Type T:* a level-(k+1) cell where W is eps_0-irregular; freeze V on its hull. If W is eps_0-regular and no Z cell is present, V is eps_0-regular by 3.1 item 4. So V being irregular is not a third case, the indicator chi_k equals 1 on the exterior, and it never enters an analytic function: the cut is on B, the integration variable, which does not depend on W. S is the union of these cores, of the old domains, and of collars if any. Partition of unity on these events.
+*Why a cost linear in f.* A cost of order f^2 per rough plaquette looks natural, and I tried it first. It has no margin: a smooth W with curvature phi has children of curvature phi / L^2 with total f^2 equal to phi^2 by (R5), which is sharp. The entropy paid at each level then has to come out of the coefficient, c_F^{(k+1)} = c_F^{(k)} (1 - C g_k^2 log(1/g_k) + beta g_k^2), and along the flow the sum of g_k^2 log(1/g_k) over levels is about (log K)^2 / (2 beta log L), so c_F decays with K. **That fails.** With a cost linear in f, the l^1 term contracts by L^{-2}, because of (R7) and not of the action; the margin is there at every level, and no history is needed. Any cost f^a with 1 <= a < 2 has margin of order L^{4 - 2a}.
 
-(ii) Exterior. Off the r(g_k)-collar of S, apply (SF3). The frozen part is the integral over V on S and collar under the conditional
-measure with M(V) = W. On a tube partly outside the frozen part, exterior links solve the constraint.
+**Theorem 4.3 (large-field regeneration) [DERIVED from (4.1) and I(k)(a), (c); factorisation sketched].** For W with rough set Lambda', and frozen variables on the hull H of Lambda', use mu_W as a probability measure on V|_H. For the classical part use superadditivity, F_{k, Om_1 u Om_2} >= F_{k, Om_1} + F_{k, Om_2} for disjoint regions, which holds at level 0 since A is a sum, and passes through the minimum. This decouples H from the exterior in the direction of an upper bound, and the exterior minimum is then exactly F_{k+1, Om'}(W). Off H the quantum part is compared with the vacuum using polymer bounds. Then
 
-(iii) Normalisation. Dividing by the exact vacuum: frozen cells lack the vacuum factors of level k, and that gives at most (C/g_k)^{n} per
-frozen level-k cell, plus e^{C_E} from renormalised polymers and e^{B_0} per boundary cube. All level-j vacuum terms with j < k were cancelled at
-level j, because the fields at level j there were regular. **That is the point where the unrenormalised per-level count disappears: fine levels
-inside a coarse large cell were recycled early and did not wait for the coarse cell.**
+    G_{k+1}(W) <= sup_V exp( -[c_F eps_0 Y_k(V) + c_A E_k(V; H)] / g_k^2 ) * (C / g_k)^{n_f |H|} * exp(B_0 |d H|),
 
-(iv) New island weights. Group components. Each component has domain D', core C' and the old cores. Losses per new frozen cell are
-n log(C/g_k) + C_E + B_0, and frozen cells number at most C r(g_k)^4 |C'| + (rim of old domains). With g <= gamma, the losses are at most (c_F / 2 g_k^2) per new
-core, and the rim is paid by the grace budget of 4.5.
+where (C / g_k)^{n_f |H|} is the comparison of Haar with the vacuum Gaussian, and n_f the number of level-k variables per level-k cell. By (4.1) the exponent is at most -2 c_F eps_0 Y_{k+1}(W) / g_k^2, and |H| <= C L^4 Y_{k+1}(W) / eps_0 since each rough coarse plaquette has phi > eps_0. So the entropy is at most C L^4 n_f eps_0^{-1} log(C / g_k) Y_{k+1}(W), which is below c_F eps_0 Y_{k+1}(W) / g_k^2 when g_k^2 log(1/g_k) << c_F eps_0^2 L^{-4}, true for g <= gamma. Since 1/g_k^2 >= 1/g_{k+1}^2 when beta >= 0,
 
-(v) Recycling. If a component has domain smaller than an L-block at level k+1, and W is eps_0-regular on its margin, and no Z core lies in the margin, then all its level-k variables are integrated over Haar without any hard constraint on the exterior: by Lemma 1.1 the mixed bonds impose nothing on interior links, and the exterior carries the constraints of the fully exterior bonds. So its activity a(Y'; W) depends on W only through regular exterior data. It is analytic there, because U_Om' is (SF1), Re A at complex boundary links grows only at second order in Im, and the frozen data are real. Sum over the hard-core gas of all recyclable components in Om': the Mayer series gives sum over X of E^R(X; W), normalised at W = 1. Add E^R to E^{nofr} in E_{k+1}, and let (SF4) run on it. **E^R(X; W) is defined and analytic on every eps_0-regular W on X, with no indicator: this was wrong in my first version, which recycled only where W was eps_R-regular and so left a non-analytic indicator in E_{k+1}.**
+    G_{k+1}(W) <= exp( -c_F eps_0 Y_{k+1}(W) / g_{k+1}^2 + B_0 |d Lambda'| ).
 
-(vi) Everything that does not get recycled stays as an island, with bound (3.2) at level k+1.
+**No constant has degraded.** This is the answer to the charter's question, for the bound: a large-field region regenerates hypothesis (c) at the next step, with the same c_F, in one line from (5.5), and with no history, no frozen fine variable, no excess lemma, and no tree count. Hypotheses (a), (b) are in 4.5, 4.6.
 
-**4.5 The count (the crux of the 4D price).** Why the sum over island shapes converges with no condition on c_F beta.
+**4.4 Recycling: rough cubes where W is regular [SKETCH].** Let W be regular on Om', and let V in the fiber have rough cubes inside. There are three types of cube at level k: small (white noise within the cut p(g)); mid (white noise above the cut, |B| < eps_1), weight at most exp(-p^2 / 2) with no entropy, since the Gaussian is normalised; large (|B| >= eps_1, or V rough), frozen, integrated by Haar. A large cube has activity relative to the regular replacement at most exp(-c_F' / g_k^2) (C / g_k)^{n_f M^4}, by the excess bound below.
 
-The old obstacle: per level-(k+1) cell there are L^{4(k+1-j)} level-j cells, each with weight exp(-c_F/g_j^2), and along a flow with
-1/g_j^2 = 1/g_{k+1}^2 + beta (k+1-j) log L the product exp(-c_F/g_{k+1}^2) L^{(4 - c_F beta)(k+1-j)} diverges when c_F beta < 4. Since c_F is of order eps_1^2, it is in that range for small thresholds.
-This is Proposition LF-count of the program [arithmetic re-derived here; depends on the flow].
+*Excess.* Let V be in Fib(W), with rough set S and W regular nearby. Then (3.1) with S removed gives F_{k, Om minus S}(V) >= F_{k+1, Om' minus hole}(W). Restoring the hole raises the minimum by at most C eps_0^2 L^{-4} M^4 per cube (lift energy per level-k cube) plus |J| x (shift of the constraint), at most C eps_0 M^3 L^{-3} f per cube, the fraction of crossing paths through the cube. With eps_0 = c_1 L^{-2}, these compare with c_F eps_0 f <= c_F eps_0 Y as ratios M^4 L^{-4} c_1 / c_F and M^3 / (L c_F c_1). Both are small for L >> M^3 / c_F. So the net cost is at least (c_F / 2) eps_0 Y_k / g_k^2. For type Z, convexity on the slice (7.2) gives c eps_1^2 / g_k^2. **This replaces (EX) of 5.5, using the tropical inequality in place of a pointwise comparison.** Nonlinear corrections to the shift of the constraint are not done.
 
-Now use the rule that governs what can still be frozen at level k+1. By 4.4(v) and 4.3, a level-j core survives to level k+1 only if, at each level i in
-j + m_R + log_L(M r) <= i <= k+1, there is a new core inside its margin: a Z cell at level i-1, or a T cell at level i. A T cell has a fresh core within depth m_R. So an island's
-cores form a connected graph in space and scale, where a core at level j has a neighbour at a level in (j, j + m_R] within its margin, or the island is
-still within grace of j. Hence the number of placements is governed by the tree-graph count, with a bounded number of positions per node:
-(C L^{4 m_R} r^4) per node, and not L^{4(k+1-j)}. Each node costs at least exp(-c_F/g_{k+1}^2). **So the sum over shapes rooted at a level-(k+1) cell is bounded by a convergent tree
-sum with node weight C L^{4 m_R} r(g)^4 exp(-c_F/g^2), for every value of c_F beta, provided only g <= gamma.** The factor L^{4(k+1-j)} never arises, because no isolated fine core is ever still frozen
-at a far-coarser level.
+*Summation.* For fixed S the exterior is a Gaussian on the complement of S with spectator W. The dependence of its logarithm on S has to decay in the distances between holes, and that is the only multi-body input. Holes are modelled by a killing parameter t_c per cube, with t_c = 1 the Dirichlet hole. The logarithm of the determinant, and the white-noise expansion, are sums over walks and trees whose weight is a product over visits, so Mobius differences in S pick out walks visiting all of S, and decay in the tree length of S at the rate of 7.3. The hard-core gas of large and mid cubes then has activities bounded by a tiny number per cube, and step 3 to 5 of the library proof, which use only a bound on z(Y), exponentiate it. The result is EE^R(Y; W) in EE_{k+1}. **Gap:** the walk representation with killing has not been written out.
 
-What happens to the divergent quantity? It is the vacuum part of the recycled gas: at level j + m_R, each cell gets an activity of order
-L^{4 m_R} exp(-c_F/g_j^2), small, and at W = 1 this goes into log rho_K(1; beta) as a term of order L^{4(K - j)} exp(-c_F/g_j^2) per unit volume, which may diverge as K grows. It is
-**cancelled exactly by the named subtraction**, not bounded. The W-dependent part of the same activity goes through (SF4): marginal shift of order
-exp(-c_F/g_j^2), which is summable in j, and the remainder gains (L^j eta)^{4+alpha} [conditional on (SF4)].
+*The divergent count.* Per level-(k+1) cell the recycled gas has activity about L^4 M^{-4} exp(-c / g_k^2), tiny, at every level. Summed over all cells of T_{k+1} and over levels it is of order |T_phys| L^{4(K-k)} exp(-c / g_k^2), which diverges if c beta < 4. This is Proposition LF-count of the program [arithmetic re-derived]. In (1.2) its value at W = 1 goes into the named subtraction and cancels exactly. Its W-dependence is irrelevant after extraction (11.1), with marginal shift of order exp(-c / g_k^2), summable in k. **That is where the 4D price goes.** Nothing in this scheme bounds the count, and no condition on c beta arises.
 
+*Blocked tubes.* If at least a quarter of the crossing paths of a tube pass through large cubes, the exterior cannot carry the constraint with the implicit function theorem, and that term is not analytic in W, even with W regular. Such a V has at least (L / M)^3 / 4 large cubes, so its weight is at most exp(-c (L / M)^3 eps_0^2 / g_k^2), far below everything else. It is kept out of EE_{k+1} and carried in (3.2) as a factor 1 + b_{k+1}(c; W) over blocks, with 0 <= b_{k+1} tiny, real, local. At the next level its cube counts as large, with W frozen and real. So I(k) needs this extra factor, and (c) must be read with it. [Scheme. Not checked in detail.]
+
+**4.5 Theorem P (classical functional) [SKETCH].** F_{k,Om} = qcov_n + N_k with the bound in (a). Induction on k by one step, with no fine lattice.
+- *Quadratic part.* qcov_n is the gauge-covariant form of Delta_n: by the star removal, q_n(B) = q_n(d_j B), so q_n = <F, kappa_n F> on closed forms, with kappa_n of exponential decay and 1 <= kappa_n <= (pi^2 / 4)^6 by Lemma 10.1; it is covariantised by parallel transport between F(x) and F(y). This is exact at second order and one-shot, so nothing compounds in it.
+- *Hessian.* On the slice over W regular, fields have curvature at most (C_s c_1 + 4 eps_1 L^2) / L^2. In a frame at x, Hess qcov_n = D^* kappa D up to the Bianchi defect [F, B] and transport errors. On ker Q, ||B||^2 <= C L^2 ||D_V B||^2 (Poincare at block scale). (In a maximal tree gauge the constant is L^4, and the correction phi ||B|| is then at most phi L^2 ||D_V B||: the same bound.) So relative to ||D_V B||^2 the corrections are at most C phi L^2 <= C c_1, and coercivity holds for c_1 small, with **no dependence on L**. This also gives the absence of the Nielsen-Olesen mode on the fiber.
+- *Lift.* V^*(W) by Newton on the slice, using Combes-Thomas at rate c / L in level-k units. By 9.4 the linear lift has curvature at most C_s L^{-2} sup |F'|, with C_s depending on d only, and Holder modulus (|x - x'| / L)^a.
+- *Third order.* N_{k+1}(W) = N_k(V^*(W)) + [qcov_n(V^*) - qcov_{Ln}(W)]. The first term, by Taylor in Fock-Schwinger gauge at x: (local curvature)^3 = (C_s L^{-2} phi)^3 per level-k cell, and L^4 cells per block, so it is at most C_s^3 L^{-2} C_N phi^3: **contraction by L^{-2}**. The bracket vanishes at second order by exactness and has third order at most C_src phi^3, with C_src independent of k. So C_N <= C_src / (1 - C_s^3 L^{-2}), uniform in k.
+Stated for free boundary on Om in the same way. [Each bullet is a sketch; C_src has not been computed.]
+
+**4.6 Quantum polymers [SKETCH].** As 11.2, but one-step: e_{k+1} is built from the one-loop term (8.1), the expansion of the remainder of F_k in the white noise, and the variation of e_k. The values of e_k at B = 0 go through 11.1 with xi = 1 / L, contraction (M / L)^a. So E_0, C_E do not grow with k.
 ### 5. The field inequality (OS) [DERIVED except where marked]
 
 **5.1 A change in the average: waypoints.** The prefix of 1.2 averages x over line(u), which depends on the direction mu. Termwise that leaves a star through y
@@ -318,73 +277,65 @@ because quaternion multiplication is multilinear and (avg T)^* = avg T^*. Each t
 
 (If Re W >= 0 then |W - 1| <= sqrt 2 |Im W|, and Im W is the average of Im Gamma over the product of the |m_i|. If Re W < 0 then avg Re Gamma < 0, so avg |Gamma - 1| >= 1.) This holds at every field with all m_i != 0.
 
-**5.3 Removing the star.** Termwise Gamma still passes through each y_i. Fix a block y, and a waypoint x_0 in B(y), used only in the analysis. Put Xi_x = path(y -> x) R(x, x_0) and rho_x(z) = R(x, x_0)^{-1} R(x, z), a path from x_0 to z through x which does not visit y.
-Then path(y -> x) R(x, z) = Xi_x rho_x(z), with **Xi_x independent of z and of the direction mu**. Let rho(z) be any element and d(z) = avg_x |rho_x(z) - rho(z)|. Then
+**5.3 Two elementary facts.** (i) For a flat mean with reference h a unit quaternion: |m - h| <= D := avg |g_i - h|, so 1 - |m| <= D and |Mean - h| <= 2 D, **with no lower bound on |m|**, whenever m != 0. (ii) For nonzero a, b in R^4: |a/|a| - b/|b|| <= 2 |a - b| / |b|.
 
-    m_z = avg_x Xi_x rho_x(z) = Xi_bar rho(z) + (error of size <= d(z)),   Xi_bar = avg_x Xi_x.
+**5.4 The map, final form (D3).** Call a plaquette of a block *rough* if f_p > eps_0. For a site x_0 in B(y) put s(x_0) := sum over rough p in B(y) of min(1, dist(p, x_0)^{-2}). Put
 
-If |Xi_bar| >= 1/4 and d(z) is below 1/16, then Psi(z) = (Xi_bar / |Xi_bar|) rho(z) up to an error C d(z) with C an absolute constant. **The factor Xi_bar / |Xi_bar| is common to all z and all directions at y, so it cancels from W(dP) exactly.** What remains are the paths rho(z),
-which are star free. Then (5.2) applied to the star-free families, and non-abelian Stokes, |holonomy of a closed loop - 1| <= sum_{p in surface} f_p for any spanning surface, give
+    Psi_y^mu(z) = path(y -> x_0) * Mean over x in B(y), and over axial orders, of [ R(x_0, x) R_mu(x, z) ],
 
-    |W(dP) - 1| <= C sum_p w_p(x_0) f_p,   where w_p(x_0) = probability, over the uniform endpoints, that p lies in the chosen spanning surface.                                 (5.3)
+with x_0 = y if s(y) <= s_rule, an absolute constant, and otherwise x_0 a minimiser of s; ties and the axial order of path(y -> x_0) are decided by uniform choice in the kernel, a finite mixture of hard constraints, so the kernel is exactly covariant under the lattice symmetries. All of this depends on interior links only, so the crossing links stay private and Lemma 1.1, Corollary 1.2, Lemma 2.1 hold for each element of the mixture. On fields with no rough plaquette this is the map of 5.1, with linearisation (R4). A field in the small-field region has f_p <= eps_0 / 2 (3.1 item 4), so the rule depends only on frozen rough data, not on exterior data, and analyticity through the exterior is unaffected.
 
-Here x_0 is free in each block, so average (5.3) over x_0 uniform in B(y). Then every vertex of the polygon is uniform on a block, or on a face with the mu-coordinate re-randomised by the transverse-first rule, and the surfaces can be taken as a bounded number of axial rectangles, each with two
-perpendicular coordinates equal to independent uniform coordinates of the vertices. A fixed plaquette thus has probability at most C L^{-2}, and the area is at most C L^2:
+*Why the rule.* A defect of fixed size next to y can make the mean over stars small. Rotating the first links out of y in directions +-e_0, +-e_1 by -1 changes the sign of half of all paths from y. Numerics, TUNED2 in `checks/hard-core--independent_field_ineq.py`: with x_0 = y fixed, min |m| is 0.001 to 0.012, and with the rule it stays near 0.56 to 0.73. *First version of the rule was wrong:* it used a separate absolute threshold eps_rule >> eps_0. Then about 1 / eps_rule plaquettes just below eps_rule, next to x_0, make the star disperse with l^1 weight of order one, which L^{-2} ||f||_1 does not see. So the threshold must be eps_0. The check script tests the older threshold 0.5, so it has not tested this form.
 
-    w_p <= C_w L^{-2},    sum_p w_p <= C_w L^2,     with C_w depending on d only.                                                                                    (5.4)
+**Theorem 5.5 (field inequality) [DERIVED; constants not computed].** For every real V, every coarse plaquette P, and every split of the hull plaquettes into irr, reg such that irr contains the rough ones,
 
-Splitting at eps_0 and Cauchy-Schwarz on the regular part give (4.1), with C_OS = C C_w independent of L, **under the hypotheses |Xi_bar| >= 1/4, d(z) <= 1/16 and |m_i| >= 1/2 at every block of the plaquette.** [Derived; the rectangle count in (5.4) is a sketch, not checked line by line.] If d(z) > 1/16 then (5.3) has a right side of order one
-at some scale, and that case is on the (D) side of 4.3 with a large weighted sum, so it is harmless there. The hypothesis that can fail with a small weighted sum is the next one.
+    |W(dP) - 1| <= C_OS ( L^{-2} ||f||_{l^1(irr)} + ||f||_{l^2(reg)} ),    C_OS <= C log L.                                                       (5.5)
 
-**5.4 The exception and the repair: a field-chosen base point.** |Xi_bar| small is not excluded by the weighted sum (5.3). Rotating the first links out of y in directions e_1, e_2 by -1 makes half of all paths from y change sign, with about 16 rough plaquettes next to y, whatever L is. If then |Xi_bar| <~ d, the factor cannot be removed, W near y is erratic, and a coarse link at y can be rough from a defect of fixed size. Since y can be a block centre at the next level too, a tower can form at nested centres. I first tried to price this tower: one position per level, tuned set of Haar volume (g_i/eps_R)^4, and zero net dimension count because the 24 frozen links at y are matched by 24 constraints. That needed a density bound I could not prove. So I changed the map instead.
+*Proof.* Step 1 (common factor). Fix a block y, the x_0 of the rule, and a second site x' used only in the analysis. Put Xi_x = R(x_0, x) R(x, x'), rho_x(z) = R(x, x')^{-1} R_mu(x, z), where R(x, x') has orders averaged over, as a flat mean. Then R(x_0, x) R_mu(x, z) = Xi_x rho_x(z), with **Xi_x independent of z and of mu**. With rho(z) := rho_{x_1}(z) for a reference x_1, and d(z) := avg_x |rho_x(z) - rho(z)|, we have m_z = Xi_bar rho(z) + e, |e| <= d(z), so by (ii), |Psi(z) - star Xi_hat rho(z)| <= 2 d(z) / |Xi_bar|, where star = path(y -> x_0) and Xi_hat = Xi_bar / |Xi_bar|. So if |Xi_bar| >= 1/4 the error is at most 8 d(z).
 
-**Final map (D3).** Fix eps_rule with eps_0 << eps_rule. Call a plaquette *rule-rough* if f_p > eps_rule. For z in B(y) and a site x_0 in B(y), put
+Step 2 (coarse link). T_u = Psi_y(u^-) u Psi_{y'}(u^+)^{-1} = (star Xi_hat)_y tau_u (star Xi_hat)_{y'}^{-1} up to at most 8 (d_y(u^-) + d_{y'}(u^+)), where tau_u = rho_y(u^-) u rho_{y'}(u^+)^{-1}. By covariance of the mean and (i), with M_tilde = conjugate of M by the common factors: |M_tilde - tau_{u_1}| <= 16 avg_u (d_y + d_{y'}) + 2 avg_u |tau_u - tau_{u_1}|, for every u_1. **The common factors cancel exactly from W(dP).**
 
-    Psi_y^mu(z; x_0) = path(y -> x_0) * Mean over x in B(y), and over axial orders, of [ R(x_0, x) R_mu(x, z) ],
+Step 3 (loops). |W(dP) - 1| <= |tau_{u_1} tau_{u_2} tau_{u_3}^{-1} tau_{u_4}^{-1} - 1| + sum_i |M_tilde_i - tau_{u_i}|. Each term on the right is the distance from 1 of a holonomy of a closed polygon, directly or after averaging, and non-abelian Stokes gives |holonomy - 1| <= sum_{p in surface} f_p for any spanning surface. So |W(dP) - 1| <= C sum_p w_p f_p, where w_p is the probability, over the random vertices, that p is in the surface.
 
-and let s(x_0) = sum over rule-rough p in B(y) of min(1, dist(p, x_0)^{-2}). Choose x_0 = y if s(y) <= s_rule, an absolute constant. Otherwise x_0 is a minimiser of s, and ties and the axial order of path(y -> x_0) are decided by uniform choice in the kernel, which makes the kernel a finite mixture of hard constraints. All of this depends on interior links only, so the crossing links stay private and Lemma 1.1, Corollary 1.2 and Lemma 2.1 hold for each element of the mixture; mu_W is still a probability measure, and the kernel is exactly covariant under the lattice symmetries because the choice is uniform over the orbit.
+Step 4 (weights, (5.4)). Vertices of the polygons: x, x_1, x' (uniform on blocks), and z = u^-, whose transverse coordinates are uniform. z is reached and left along mu, on one line, so those two segments merge and z_mu is not a vertex coordinate. So every vertex coordinate that remains is a uniform variable, indexed by (vertex, axis), and independent for different indices. Fill an axial polygon with a bounded number C_d of axis-parallel rectangles, each of side at most 2 L, with each of the two perpendicular coordinates equal to one such variable. They have different axes, hence are independent. So a fixed plaquette is in a given rectangle with probability at most L^{-2}. Averaging over x' uniform gives
 
-- On fields with no rule-rough plaquette, x_0 = y, so this is the map of 5.1, with the same linearisation (R4).
-- Exterior regular fields have f <= eps_0 << eps_rule, so the rule depends only on frozen rough data, not on exterior data. Analyticity in W through the exterior is unaffected.
-- path(y -> x_0) is a **common left factor** for every z and every direction at y. It cancels exactly in W(dP), however rough it is. There is no mean over stars through y, hence nothing to tune.
+    w_p <= C_w L^{-2},   sum_p w_p <= C_w L^2,  C_w depending on d only,                                                                       (5.4)
 
-**(4.1) for D3, unconditional.** Averaging s over x_0 shows min s <= C (number of rule-rough plaquettes in the block) L^{-2}. Let the star weights around x_0 be w*_p = min(1, dist(p, x_0)^{-2}), with sum of squares at most C log L. The dispersion over x of the paths from x_0 is at most C sum w*_p f_p. Case A: this is at most 1/8 at every relevant block. Then all |m| >= 1/2 and 5.3 applies with no star, giving (4.1). Case B: it exceeds 1/8 at some block. Then either the rule-rough part has C L^{-2} ||f||_{l^1(rule-rough)} >= 1/16, or the part with f <= eps_rule has sqrt(C log L) ||f||_{l^2} >= 1/16. In both, the right side of (4.1) exceeds the trivial bound |W - 1| <= 2, up to the constant. So
+and Cauchy-Schwarz on reg gives sum_p w_p f_p <= C_w L^{-2} ||f||_{l^1(irr)} + C_w ||f||_{l^2(reg)}. The average over x' may be restricted to the x' with |Xi_bar| >= 1/4; if those are at least half of the block, w_p at most doubles.
 
-    |W(dP) - 1| <= C_OS ( L^{-2} ||f||_{l^1(irr)} + ||f||_{l^2(reg)} ),   C_OS <= C sqrt(log L),   at every real field.                                   (5.5)
+Step 5 (when |Xi_bar| is small). For a block, |Xi_bar| >= 1 - avg_{x, x_2} |Xi_x - Xi_{x_2}| >= 1 - sum_p w^*_p f_p, with w^*_p the weight of the polygon x_0, x, x', x_2. Its surfaces have stars at x_0 and x'. So w^*_p <= C (min(1, dist(p, x_0)^{-2}) + min(1, dist(p, x')^{-2}) + L^{-2}). Averaged over x' the second term is at most C L^{-2}. So if the x' with |Xi_bar| < 1/4 are more than half of the block, then
 
-C_OS depends weakly on L, Lam = L^2 / (2 C_OS) is still large, and 4.3 is unchanged. [Derived, given (5.4) and the rectangle count, with the split threshold anywhere up to eps_rule. Case A's constant has not been computed.] **So the tower at nested centres does not occur for this map, and the Load Lemma of 4.3 stands with no special case.**
+    (3/4)(1/2) <= C s(x_0) + C sum over p with f_p <= eps_0 of min(1, dist(p, x_0)^{-2}) f_p + C L^{-2} sum_p f_p.
 
-**5.5 Global excess (EX) (statement; consumer: (3.3)(d)).** Let W be eps_0-regular on the hull of an island smaller than an L-block, let U be its regular background, and let V in Fib(W) be regular off the core C. Then
+By the rule, either s(x_0) <= s_rule, which is small against the left side for s_rule small, or s(x_0) = min s, at most the average C L^{-2} sum over rough f_p (since sum over x_0 of min(1, dist^{-2}) <= C L^2). The middle term is at most (C log L)^{1/2} ||f||_{l^2(f <= eps_0)}, as sum_p min(1, dist^{-2})^2 <= C log L. So one of: L^{-2} ||f||_{l^1} >= c, or ||f||_{l^2(f <= eps_0)} >= c (log L)^{-1/2}. Plaquettes with f <= eps_0 that the split puts in irr obey ||f||^2_{l^2} <= eps_0 ||f||_{l^1}, and eps_0 L^2 = c_1, so they fall under the first case at the price of a factor log L. In every case the right side of (5.5) with C_OS = C log L is at least the trivial bound |W(dP) - 1| <= 2.  []
 
-    A(V) - A(U) >= c_E sum_{cells c in C} min_p-in-c f_p(V)^2 - (corrections of smaller order).
+*Status.* All five steps are derived here. The rectangle filling in Step 4 is the standard axial homotopy and was not enumerated by hand. No explicit value of C_OS is available. Theorem 5.5 needs L^2 >> C_OS O (1 + C_M) to feed Theorem 4.2, which only asks for L large.
 
-*Argument so far.* Write V = exp(i delta) U. Then A(V) - A(U) = <F(U), delta F> + (1/2)|delta F|^2 + higher. At the core, delta F is at least eps_0 / 2 and F(U) is at most eps_0 L^{-2}, so the sum of the first two terms is at least (1/4)|delta F|^2 there, with no sign problem. Off the core, the first-order term is <D^* F(U), delta>, and U being the constrained minimiser means D^* F(U) lies in the range of Q^*; so that term is <J, Q delta>.
-On a real fiber, Q delta vanishes only to linear order. The frozen rough paths contribute to it with weight f, the fraction of paths through the core, so the term is at most |J| f, at most eps_0 f at coarse-bond scale. That needs f << eps_0, which holds for islands that are small against a block: this fixes the extra grace levels. A comparison over the domain alone would have a boundary cross term of order
-(eps_0 eps_1 L^{-2}) |dD| and would lose: the comparison has to be global. [Derived at this level of detail. Nonlinear remainders are not done.]
+*Numerics.* On the earlier rule, under a confirmed lock, L = 3, 5: PASS-55, with max Ratio 1.000, 0.999, in the SHEET family. CHARGE is exact to 2e-16. No adversarial search has been run.
 
-**5.6 Attack log on Sections 3 to 5** (hostile, in the order found).
-1. *Collars with g-dependent r.* In a comparison over the domain, the cross term above beats the core cost once r is large. Fixed by the global comparison in 5.5. The same issue for losses per frozen cell, n log(C/g) r^4, is absorbed by c_F / g^2 for polylog r.
-2. *Are collars needed at all?* Exterior integration against a regular boundary gives B_0 per boundary cube with no log(1/g). Freezing a whole collar is therefore wasteful, and it may be replaced by boundary polymers. Decision: keep r only if (SF3) needs it for a tiny remainder.
-3. *Thresholds.* A two-threshold version recycled only where W met a stricter threshold, leaving a non-analytic indicator in E_{k+1}. Removed: see 3.1 item 4 and 4.4 (i), (v). There is one regularity threshold eps_0 and one cut eps_1.
-4. *M-cubes against L-blocks.* A cell is an M-cube and M > L, so a fresh island is never smaller than an L-block at the next level. Recycling can only start about log_L(M r) levels later. This is part of the grace, and it is paid from the core budget.
-5. *Multi-body boundary polymers.* Polymers that touch two islands prevent activities from factorising. Handled by treating connected sets of islands and polymers as one Mayer polymer: the standard localisation, but not written out.
-6. *Fresh energy near an island.* (CL) must hold for the multi-scale background next to frozen data. Listed in (SF1).
+### 6. What this gives the interface UV-CT
 
-### 6. What this gives UV-EXT [DERIVED given Theorem I and FLOW]
+The lead replaced UV-EXT by UV-CT (`parts/upper-chain.md`, Text 7, read for its statement only, as the request directs). The reason: a constant real shift cannot feed the chain. I take the statement as given and do not read anything behind its wording.
 
-Fix the trajectory: K levels, a = L^{-K} in units of the last cell, and g_K <= gamma. |T_K| is the physical volume in last-cell units. By (1.2), Z(beta + s) = rho_K(1; beta + s) int dW r_K(W; beta + s).
+**6.1 Induction with a local source.** Let the bare coupling be beta - w(p), with w complex, |w| <= rho, Lipschitz at the physical scale a_*. On Tor all levels have a_k <= a_K, where a_K is a fixed fraction of a_*, so w is nearly constant on a cell at every level k <= K. Claim to prove, I^w(k): as I(k), with g_k^{-2} replaced in (3.2) by the local coupling b_k(x) = g_k^{-2} - w_k(x), and all objects analytic in w on the polydisc, where:
+- *Background.* Keep the lift of w = 0. The mismatch of the lift with the source is a linear term (grad w) F B in the exponent, of size g Lam a_k |F| |b|, small, and it goes into the white-noise expansion. So F_{k,Om} does not change with w.
+- *Gaussian.* w q(B) = w g^2 q(b) is a polymer of size rho g^2 p^2, treated as a perturbation. So the covariance does not change either.
+- *Flow.* One-loop beta does not depend on the coupling, so d beta / d b is of order g^4, and w_{k+1}(x) - w_k(x) is at most C g_k^4 |w_k|, plus irrelevant gradient terms with gain a_k. Sum_k g_k^4 < infinity along the flow, so |w_k| <= 2 rho for all k. [Sketch.]
+- *Large field.* The cost in I(k)(c) has stiffness Re b_k >= 1/(2 g_k^2), and Theorem 4.2 is about real V only, so 4.3 goes through with g_k^2 replaced by 2 g_k^2.
 
-**Real s.** Let s be real with |s| <= s_0 := 1/(2 gamma^2), in the normalisation of (0.2) of CMP 109: an additive shift of beta shifts every 1/g_k^2 by about s, so all g_k stay below gamma' = sqrt 2 gamma. This agrees with the guide in GOAL.md that s is of order one in beta, and it is not a fractional shift. Apply Theorem I at beta + s.
-- Upper bound: r_K(W) <= exp(C |T_K|) for every W, because polymers sum to at most C_E |Om|, the action is positive, each island has activity at most 1 by (3.2), and the sum over families is at most exp(tiny |T_K|).
-- Lower bound: on the ball |log W| <= g_K, r_K >= exp(-C), and the ball has Haar mass at least (c g_K)^{n |T_K|}.
-Therefore
+*Complex w and phases.* The modulus must never be taken through more than one level: |rho^w(1)| is smaller than rho^{Re w}(1) by a factor exp(c a^{-4} (Im w)^2), so a modulus bound taken at the bare level would lose an amount of order a^{-4}. In the step k -> k+1 the modulus is taken only over level-k variables of frozen cubes, and comparing Haar with the Gaussian at complex b_k costs a factor |1 - w g_k^2|^{-n/2} per cube, which is 1 + O(g^2). Finer levels in that cube are already integrated, analytically, in r_k^w. So there is **no loss of order a^{-4}**: this is the phase cancellation the gate asks about. It is a consequence of the level-by-level structure. [Argued; depends on I^w(k)(b).]
 
-    exp(-C |T_K|) <= Z(beta + s) / rho_K(1; beta + s) <= exp(C |T_K|),     C = C(gamma) not depending on K or the volume.
+**6.2 The counterterm.** E(w) := log rho_K^w(1) - log rho_K^0(1), the source-dependent constrained partition function with the coarse field trivial, which is the named subtraction of (1.2). It is a convergent sum over levels of polymers at W = 1, so it is analytic and non-zero on the polydisc. Averaging over the lattice symmetries of Tor, E_sym(w) := avg_g E(w o g).
 
-So log Z(beta + s) - log Z(beta) - [log rho_K(1; beta + s) - log rho_K(1; beta)] is at most 2 C |T_K| in absolute value, for real s. **This is UV-EXT in real form, with the subtraction named.**
+**6.3 CT1-CT4 from I^w(K) [DERIVED given I^w(k)].**
+- *CT1.* <exp(w . s)>_Tor = exp(E(w)) [int r_K^w dW] / [int r_K^0 dW]. |int r_K^w dW| <= sup |r_K^w| <= exp(C |T_K|), from I^w(K). And int r_K^0 dW >= exp(-C |T_K|), from the ball |log W| <= g_K. So |<exp(w . s)>| <= exp(Re E(w) + c), with c = 2 C |T_K| depending on a_K, which is fixed, for **all** w in the class and not only the pattern. Since the left side does not change under g, CT1 holds for E_sym, by the geometric mean.
+- *CT2.* E_sym(w o g) = E_sym(w) by construction, and E(conj w) = conj E(w), since rho^w is real for real w and analytic.
+- *CT3.* By Mobius in the support of w, which is a scalar source with natural base point 0, E(w) = sum_k sum_X e_k(X; w|_X), with e_k(X; 0) = 0, |e_k(X; w)| <= C rho g_k^2 exp(-kappa |X|_k). In E(sum w_i) - sum E(w_i) only polymers meeting two supports survive. Such a polymer has at least eta / a_k cells, so its level contributes at most C rho g_k^2 (v / a_k^4) exp(-kappa' eta / a_k). The sum over k converges with no dependence on a. So tau(v, eta) <= C rho v eta^{-4}. The bound e_k uses I^w(k)(b) at W = 1, where the white-noise expansion is the only input.
+- *CT4.* On a torus of side L_T = 2^m P, Z = rho_K(1) int r_K dW. log rho_K(1) is a sum over levels of vacuum polymers at W = 1 that are the same functions on both tori, except those wrapping around Tor, at most C exp(-kappa P / a_k) per cell at level k, all of order one in the last levels. So log rho_K^{(L_T)}(1) = (L_T / P)^4 log rho_K^{(P)}(1) + O((L_T / a_*)^4). Also int r_K^{(L_T)} dW >= exp(-C (L_T / a_K)^4) and int r_K^{(P)} dW <= exp(C (P / a_K)^4). Together these give CT4, with c_F = C (a_* / a_K)^4. **Here the normalisation factors g_k^{n} are extensive at each level, and the last integral is at the fixed coupling g_K. So no log log(1/a) from the zero modes of Tor arises:** the torus at scale a_K has a bounded number of cells and a fixed coupling, so its zero-mode factor is a bounded constant. This answers the worry in gate item D2, whose mode count is at the bare coupling on a lattice of T cells. I have not compared the two counts line by line.
 
-**Complex s.** |Z(beta + s)| <= Z(beta + Re s) is trivial. Non-vanishing is not. rho_K(1; beta + s) != 0 should hold with the polymer expansion at the trivial field, uniformly in a and volume. [Believed.] But int dW r_K(W; beta + s) is a weak-coupling lattice integral on |T_K| cells at coupling g_K <= gamma, and no statement in this file controls it beyond |log r_K(W; beta + s) - log r_K(W; beta + Re s)| <= C |Im s| |T_K|. That gives zero-freeness in |Im s| <= c / |T_K|: uniform in a, and **not** uniform in volume. A disc uniform in volume would say that Lee-Yang zeros stay away from the real axis in infinite volume, an infrared statement, at a coupling where the expansion has stopped. So UV-EXT as drafted is more than this route gives. **Proposed wording:** real s in a fixed interval uniform in a and volume; complex s in a disc of radius c / |T_K|, uniform in a; the constant times physical volume in both. This is a request, not an edit: the target lead owns the wording.
+**6.4 Requirements on the consumer.** (a) My blocking factor L is odd and large, so the lattice is a = L^{-K} a_K, not dyadic. Tor has an even number T_K of last cells, so planes at multiples of P/2 are lattice planes. Lemma 7.2 of the upper chain needs even side and doubling at larger tori, not dyadic a. Its subsequence in a must be along L-adic values. **Request to the lead.** (b) CT1 is delivered for all w in the class, so the conjugate pattern is not needed on my side.
 
+**6.5 Hostile pass on Section 6.** (a) The whole section is conditional on I^w(k), whose small-field part is sketched. (b) In CT3, e_k(X; w) needs Mobius in w-support to converge. That is the same analytic trick as Step 5 of the library proof, in the variable s_c multiplying w on cube c, and holds if I^w(k)(b) is analytic in w on a polydisc larger than the class, with bound at most C rho g_k^2 per cube. (c) A term of order rho, not rho g^2, might appear in e_k at W = 1. The bare source w s_p at level 0 has <s_p> of order g_0^2, consistent with g^2. Level by level this needs the one-loop value. A term of order rho without g^2 would change only the constant in tau. (d) E must absorb the quadratic contact term, of order a^{-4}, and it does: it is in the Mobius sum at level 0, where it has range a. (e) In CT1 the constant c depends on (a_* / a_K)^4 and on gamma, through g_K, and these are fixed. So c is large but cutoff-free.
 
 ### 7. Fluctuation form: a route without random walks [labels on each step]
 
@@ -530,20 +481,7 @@ All constants are free of L and of j, on smooth lifts. Per-site traces come from
 
 *Numerics, under the lock, script* `checks/hard-core--independent_lift_form.py`*, criteria stated first:* PASS-LOWER, with min R = 1 up to rounding at n = 1, 3, 9, infinity. PASS-UPPER, with max R = 6.45, 11.03, 12.2 at n = 3, 9, infinity, attained at P = (pi, pi, pi, pi); cutoffs 8 and 12 agree within 0.04 percent and grid against random within 2.5 percent. R -> 1 as P -> 0, as (R4) requires. These are float searches, and they only serve as a check of the lemma, whose constant 226 is crude against 12.2. The lemma holds with no dependence on L.
 
-**10.2 (LOC-NA) [SKETCH, every step named; nothing here is line by line].** Target: for V eps_0-regular at level k, there is a unique fine U = U_k(V) in the class N(U) <= B eps with M^k(U) = V and the Euler-Lagrange equation, analytic in V, and with Hessian and kernel bounds, all with constants uniform in k. Three pieces.
-
-(a) *Starting guess, one-shot.* On a patch of M' level-k cells, V is near flat: in a patch gauge V = exp(iv) with |v| <= C eps M'. Take the exact linear lift H_n v of 9.4 in that patch, so F and J are bounded with the right scales and the Euler-Lagrange equation holds exactly at the linear level. Adjacent patches: Q_str(d Lambda) = d_c(avg Lambda), so two patch lifts agree up to a fine gauge transformation with avg Lambda = lambda, the coarse transition, up to nonlinear terms O(eps^2 M'^2) and tails exp(-delta M'). Glue with a partition of unity at scale M' n. The errors are of relative size eps M'^2 + exp(-delta M'), including in J. [Sketch. Linear part from 9.4.] So N(U_0) <= C eps, with a residual relatively small against eps.
-
-(b) *One-shot Newton.* Norm: rho(U) = sup |F| / eta^2 + sup |J - Q^* mu| / eta^3 + (residual of the constraint), for the current multiplier mu. Step: U' = exp(ia) U, where a solves the linear saddle problem at U with the current residual as source. On the class N(U) <= 2 B eps, each block hull is near flat, with holonomy of order eps L^c, so local bounds hold in a patch gauge by perturbation of 9.4. The sum over patches comes from the covariant Combes-Thomas of 7.3, which chooses no gauge. So |a| <= C eta rho, |grad a| <= C eta^2 rho. Remainders: the classical one is of order |a| |grad a| = eta^3 rho^2, against J at scale eta^3. The constraint one is d^2 M^k(a, a), at most C rho^2 by the smooth-input estimate of 9.1 and 9.3, with no compounding. So the residual part of rho obeys rho' <= C rho^2, the iteration converges from the small residual of (a), and the total move is at most C eps. The linear operator is inverted once per step, at the composite level: **no level iteration occurs anywhere in (b).**
-
-(c) *Where near-flatness is used, and where it is not.* A patch gauge is only used over one block hull, and only to pass from the l^2 bounds of 7.2, 7.3 to pointwise bounds by interior elliptic estimates. Long-distance holonomy never enters, since the weighted bound is gauge free. This combines the two tools named in the hardest-inequality statement. On the class N, sup bounds are given, so no Uhlenbeck gauge is needed.
-
-**10.3 What failed.**
-- *Level-by-level Whitney interpolation as the starting guess.* Whitney has shape factor exactly 1, which removes compounding in sup |F|. But Whitney F jumps across cell faces, so J = D^* F contains surface measures at fine scale, and order-one smoothing of a surface source leaves a logarithm of 1/eta near the faces at the first Newton step. Found by the hostile pass, and it would have put a level-dependent factor in the class N. Replaced by the glued linear lifts in (a), whose source Q^* mu is bounded.
-- *Bootstrapping from the stepwise bound.* If only (C_s / L^2)^{k-j} is available, then fine curvature is at most eta^{2 - c'} eps with c' = log C_s / log L, and the holonomy of a level-k loop is at most eta^{-c'} eps, not small at large k. So a patch gauge at block scale is unavailable from the stepwise bound. A Campanato iteration from smaller patches might repair it, but I did not write the lattice harmonic comparison. (a) makes it unnecessary.
-- *Uniqueness among all critical orbits.* Convexity from 7.2 gives uniqueness only on the slice |B| < eps_1 and in the regular class. Global uniqueness is neither claimed nor needed: rough lifts are islands.
-
-**10.4 Hostile pass on 10.2.** (a) In the gluing, the patch lifts agree only up to gauge. The fine gauge transformation with prescribed block averages is not unique, and its choice must not introduce fine-scale roughness: take Lambda as the linear lift of lambda, smooth at scale n. Not written out. (b) The class N controls curvature, and the iteration keeps J in the form Q^* mu, with a bound from the coarse multiplier; the nested Q^U has weights differing from Q by 1 + O(Y), so Q^{U*} mu is bounded but its bound must be rechecked at the top levels, where Y is largest. (c) Complex V: the analyticity radius of the whole construction has not been traced. (d) The class N is stated for fine fields. Fluctuation fields at level k are not in it. Only backgrounds are. (e) Frozen boundary: the patch construction near a frozen island has not been done; Lemma 1.1 removes the constraint from mixed bonds, but the linear lift with a Dirichlet part needs its own version of 9.4.
+**10.2 (LOC-NA) on the fine lattice: superseded.** Text 4.5 replaces it. Before that I tried three ways to get sup |F_fine| <= C eta^2 sup |d_k V| at all depths: level-by-level Whitney interpolation (F jumps across faces, so J has surface measures and the first Newton step carries a logarithm of 1/eta at the faces); a bootstrap from the stepwise bound (fine curvature only eta^{2 - c'} eps, so the holonomy of a level-k loop is eta^{-c'} eps and no patch gauge exists at block scale); and one-shot Newton from glued linear lifts, which looked viable but needs the composite nested map at all depths with local gauges. In the level-only scheme no fine-lattice field at depth occurs beyond the trivial background (9.4), so **the sup bound at depth is no longer an obligation.** I do not know that it is false. It is simply not used.
 
 ### 11. Irrelevance by Fock-Schwinger gauge, polymer by polymer (a route without the Ward hierarchy)
 
@@ -563,7 +501,7 @@ where C depends on E_0, kappa, alpha_1, and eps and not on k or j.
 5. *Symmetry.* Sum over X with given base site. By translation covariance the form is independent of the site. Colour invariance makes it delta_{ab} on colour. A reflection of one axis flips F_{mu nu} when mu or nu is that axis, which kills F_12 F_34 and F_12 F_13. Permutations equate the rest. So it equals beta' sum_{mu < nu} |F_{mu nu}|^2, the only invariant, at the base site. **No rotation invariance and no second marginal coupling are involved.**
 6. *Identification.* By the row sum and Holder, F_j(x) = n_j^2 F(x) (1 + O(xi^alpha)), so sum over level-j sites of |F_j|^2 equals sum over fine plaquettes of |F|^2 up to the same factor, which is 2 A(U) (1 + O(eps^2 eta^4)). Localise A(U) to level-j cells.  []
 
-Steps 1 to 5 are complete at this level. Step 6 and the Holder modulus need (REG). So the gain is alpha < 1 and not Balaban's, and the expansion needs third order only. **I have not read his proof, and I do not know why he goes to fifth order; the likely reason is the regularity class he works in. Do not read this as an improvement on him until the Holder input is proved.**
+Steps 1 to 5 are complete at this level. Step 6 and the Holder modulus are one-step inputs in the level-only scheme, with xi = 1/L, from 4.5. So the gain is alpha < 1 and not Balaban's, and the expansion needs third order only. **I have not read his proof, and I do not know why he goes to fifth order; the likely reason is the regularity class he works in. Do not read this as an improvement on him until the Holder input is proved.**
 
 **11.2 Closure of the polymer bound [SKETCH].** As in CMP 109 (1.3), polymers at level j are fixed functions: nothing is iterated. At step k, with W regular, V = exp(iB) V^*(W), U_{k+1}(W) = U_k(V^*(W)) exactly, so the values of old polymers at B = 0 are the old polymers at the new background. The new polymer is
 
@@ -579,4 +517,4 @@ So there is no recursion for E_0 and no recursion for C_E: C_E = C(E_0, ...) (1 
 
 **11.3 What this does not cover.** The cut functions on the white noise are not analytic in the noise, and that is fine, since W enters only through C(W), V^*(W). Near frozen data, 11.1 applies only to polymers inside Om, and the rest are boundary terms. The mid-field cells of 9.6 are not in the expansion above. They enter as islands. None of the sizes above has been checked against the Gaussian weight at the edge of the cut, where g p^3 is largest.
 
-**11.4 Hostile pass.** (a) Step 2 uses only sup curvature on the hull of X. For rough backgrounds it fails, but polymers are only evaluated on M^j(U) with U regular. (b) Step 3's linear term vanishes polymer by polymer only if each E(X) is invariant under constant rotation. After symmetrising the tree-gauge output, invariance under gauge transformations holds for the sum and I must arrange it per polymer, by defining polymers after integrating with a gauge-invariant Mobius localisation. Not written. If per-polymer invariance fails, Step 2 also fails, so **this is the load-bearing assumption of 11.1, and it must be checked against the construction of the polymers.** Mobius differences defined by resetting links to 1 outside a set do not preserve gauge invariance. Candidate fix: reset the field in a gauge-covariant way by using a local-frame reference, or localise only in the white noise, which is gauge neutral once the background is fixed: the output is then a function of W in a fixed form, gauge invariant if W-dependence comes through gauge-invariant data of the background on X. Open as written. **Route for it:** weaken hopping between M-cubes by scalars s_c, which commute with Ad and hence preserve gauge covariance; s_c = 0 decouples the cube. Then F(s) is manifestly a function of the included field, covariantly. The parametrix sum over M-cube local inverses, whose bounds come from Text 7, gives analyticity in s to radius exp(delta M / 2). The Mobius difference M(X) = sum_{Y subset X} (-1)^{|X \\ Y|} F(1_Y) is then a finite difference of order |X| of an analytic function, so it is at most (C exp(-delta M / 2))^{|X|} sup |F|, as in Step 5 of the library proof. Each polymer so defined is gauge invariant on X. This reintroduces random walks, but only as a bookkeeping device on the level-k lattice, with covariant local inverses controlled by forms, and no local gauge choice. [Route; not carried out.] (c) Step 5 requires covariance of the family under the full hypercubic group, which D3 has only as a mixture. It holds for the sum. (d) In 11.2 the size of P assumes a level-k variation is smooth at level j: this holds for lifts by 9.4, including for B rough at level k, since lifts are smooth below the level-k scale.
+**11.4 Hostile pass.** (a) Step 2 uses only sup curvature on the hull of X. For rough backgrounds it fails, but polymers are only evaluated on M^j(U) with U regular. (b) Step 3's linear term and Step 2 need each function to be gauge invariant. Resetting links to 1 outside a set would break this. **Resolved:** localise only in the white noise, not in V. Reset xi to 0 outside a set: 0 is invariant under the Ad rotation that accompanies a gauge transformation of the background. So the polymers e(Y; V) are indexed by xi-supports Y, are jointly invariant, and have V as a spectator with exponentially decaying sensitivity. 11.1 applies with radial gauge from Y: amplitude grows polynomially with distance, against the exponential decay of sensitivity. This is why I(k)(b) is stated with sensitivity and not with strict support. [Derived at this level.] (c) Step 5 requires covariance of the family under the full hypercubic group, which D3 has only as a mixture. It holds for the sum. (d) In 11.2 the size of P assumes a level-k variation is smooth at level j: this holds for lifts by 9.4, including for B rough at level k, since lifts are smooth below the level-k scale.

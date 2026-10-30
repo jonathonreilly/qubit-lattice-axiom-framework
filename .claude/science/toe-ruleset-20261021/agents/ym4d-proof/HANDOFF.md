@@ -377,11 +377,18 @@ Gaussian factorization. Its rate is only `beta=(16R)^(-4)`; the existing
 RD two-unit weight loss is not matched. The regulator must use the new
 precision `a_C/U^2`, with auxiliary and source radii checked again.
 
-New author work addresses repeated chart-boundary estimates and the joint
-source/coarse-domain match of the existing actual critical fields, followed
-by their covariance. Those unfinished arguments are not adopted as premises.
-SA13 and IC12 already construct critical fields on their respective domains;
-the older uniform-soft-minimizer unit concerns the u-stripped tree phase.
+The [chart-boundary proposal](CHART_BOUNDARY_FOREST_ASTRA.md) is frozen
+under fresh independent review. It claims repeated ball/corner trace
+estimates and Gaussian cutoff results; its actual nonlinear connected
+target BF25 remains OPEN. The author corrected a missing `sqrt(D)` before
+review and preserved both source identities and the reversible correction.
+The pending proposal is not adopted as a premise.
+
+New author work matches the joint source/coarse domain of the existing
+actual critical fields and extends their covariance. SA13 and IC12 already
+construct those fields on their respective domains; the older uniform-soft-
+minimizer unit concerns the u-stripped tree phase. No unfinished extension
+is adopted as a premise.
 
 Concurrent progress through `cc1de55f5b` is recovered. [RD pass 2](RD.md)
 has an independent [HOLD review](REVIEW_RD_R2.md): its explicit finite H12
@@ -442,8 +449,8 @@ Current assignments use the requested `gpt-6-astra / max` configuration:
 - **Positive covariance with complete readers — scoped review completed:**
   actual lift covariance, positivity/locality and Gaussian factorization LAND;
   small support rate and changed precision remain explicit consumer restrictions.
-- **Chart-boundary estimates — active author:** repeated traces and Gaussian
-  cutoff components, retaining the nonlinear-interaction obligations.
+- **Chart-boundary estimates — fresh review active:** frozen repeated-trace
+  and Gaussian cutoff proposal; nonlinear-interaction obligations remain open.
 - **Joint critical-field domain and covariance — active author:** match the
   existing SA/IC fields and preserve their original source/coarse readers.
 - **Reconstruction consumers — scoped affected review completed:** the growth,

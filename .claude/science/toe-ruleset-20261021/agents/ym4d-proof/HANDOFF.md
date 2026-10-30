@@ -435,15 +435,30 @@ with an `O(1/u)` plus rare-cut bound. The series proves complex nonvanishing
 of that chart and its exactly prefactored centered-contour integral.
 The fixed original-a chart and full original-cut return remain separate.
 
-New author work joins the shifted-chart identity and complete-reader
-nonlinear construction for a fixed original-a chart. The [external
-return comparison](EXTERNAL_RETURN_BRIDGE_ASTRA.md) now has a [fresh
-independent review](REVIEW_EXTERNAL_RETURN_BRIDGE_ASTRA.md) accepting its
-bounded primary-source interpretation. It distinguishes a real whole-volume
-comparison from the required fixed-history local return and imports no
-Yang–Mills theorem. The full interacting original-cut return, arbitrary
-histories, multiscale iteration, continuum existence and physical continuum
-mass gap remain OPEN.
+The [fixed original-a nonlinear return](SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md)
+now has a frozen author construction joining the shifted-chart identity
+and complete-reader nonlinear series on one common R/domain/atom family.
+It pays every side and corner, mixed Gaussian jets and marked translations,
+and gives a proposed connected logarithm at `beta/2` with `O(1/u)` plus
+a polynomial-times-exponential side/cut error. Fresh independent review
+is pending; the entire critical action, determinant, Haar and compact
+normalizer remain separate.
+
+The [full critical-determinant interface](CRITICAL_DETERMINANT_READER_ASTRA.md)
+also has a frozen author construction pending fresh independent review.
+It reuses SA/IC's existing finite homotopy and matches FU's joint domain
+and original-block reader norm. The full lift budget is generally
+`O(1)` per block, plus the explicitly paid critical-Hessian correction.
+This is not a new determinant mechanism or an `O(1/u)` full-prefactor claim.
+
+The [external return comparison](EXTERNAL_RETURN_BRIDGE_ASTRA.md) has a
+[fresh independent review](REVIEW_EXTERNAL_RETURN_BRIDGE_ASTRA.md) accepting
+its bounded primary-source interpretation. It distinguishes a real
+whole-volume comparison from the required fixed-history local return and
+imports no Yang–Mills theorem. [Coordinator preservation and checks](checks/full_proof_shifted_determinant_author_integration.json)
+bind the two new author packets without granting an independent verdict.
+The full interacting original-cut return, arbitrary histories, multiscale
+iteration, continuum existence and physical continuum mass gap remain OPEN.
 
 Concurrent progress through `cc1de55f5b` is recovered. [RD pass 2](RD.md)
 has an independent [HOLD review](REVIEW_RD_R2.md): its explicit finite H12

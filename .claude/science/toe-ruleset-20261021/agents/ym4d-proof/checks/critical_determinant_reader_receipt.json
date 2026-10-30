@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "role": "author; fresh independent review pending",
+  "coordinator_reported_head": "2dbc89baa2c1355c31f244c30fa77efbef1161d2",
+  "source_sha256": "bd33e000b839fe79e9a9bceda43d9b28b370e69717f0cedb8d1c14336642b755",
+  "source_lines": 397,
+  "mathematical_text_frozen_before_packaging": true,
+  "records": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_DETERMINANT_READER_ASTRA.md",
+      "sha256": "bd33e000b839fe79e9a9bceda43d9b28b370e69717f0cedb8d1c14336642b755",
+      "bytes": 21272
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/critical_determinant_reader_author_checks.md",
+      "sha256": "f3e4525d7cf3bf63c3e7b32b0bdc08fb7f2c36be339fa0a03c48515d06090275",
+      "bytes": 4335
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/critical_determinant_reader_read_manifest.json",
+      "sha256": "2d684fdcb3d1b5c8e8abcfd5ce45ff5e0dd54a4decd38250aae579ae22d5b19a",
+      "bytes": 30990
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/critical_determinant_reader_identity_check.json",
+      "sha256": "d5485069b5ebe37f2a8314751e4d90a6d6093ba024ddd9e1a922ca9dba66cf68",
+      "bytes": 892
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/critical_determinant_reader_freeze.py",
+      "sha256": "464afc0a5a6523f30ad5a49a4d6cb7974037192cdbadecc4ebe81f10814e3826",
+      "bytes": 1512
+    }
+  ],
+  "existing_result_reused": "SA9/SA14 and IC section 3 full actual finite-u determinant homotopy and critical ratio",
+  "new_bounded_match": "FU joint original-coarse/source domain and original-block complete-reader rate beta=(16R)^(-4)",
+  "bound": "C_lift+(m_G+b_G)d_H/(1-m_G d_H); determinant inverse-square-root budget is half this",
+  "not_proved": [
+    "Full determinant O(1/u)",
+    "Source-vacuum or one-loop cancellation",
+    "History-dependent or effective-level determinant theorem",
+    "Original-cut return or shifted-boundary summation",
+    "Multiscale induction",
+    "Continuum existence",
+    "Physical continuum mass gap"
+  ],
+  "protected_predecessor_files": 63,
+  "numerical_experiments": [],
+  "git_operations_by_this_author": 0,
+  "audit_ledger_lock_or_other_agent_edits": 0,
+  "independent_review_status": "pending"
+}

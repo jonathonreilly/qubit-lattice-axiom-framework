@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "role": "Coordinator source-packaging amendment; not a new mathematical review or historical-read attestation",
+  "created_at_utc": "2026-10-30T14:01:54.277727+00:00",
+  "original_author_checkpoint": "43d594a86c35447c17c7b2f0d7884a2289660253",
+  "original_source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STRONG_LOCAL_GAUSSIAN_CORE_ASTRA.md",
+    "git_commit": "43d594a86c35447c17c7b2f0d7884a2289660253",
+    "sha256": "9f99a9ed53057911015041018c0f6b3112d53976e5e64bae1a2b8c6ac5fa211b",
+    "lines": 490
+  },
+  "current_source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STRONG_LOCAL_GAUSSIAN_CORE_ASTRA.md",
+    "sha256": "62e7c351679be0834cb117cb82df1b04cf2cf0d21b8e3f0f84af5662b2c2f63c",
+    "lines": 490
+  },
+  "historical_author_manifest": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/strong_local_gaussian_core_read_manifest.json",
+    "git_commit": "43d594a86c35447c17c7b2f0d7884a2289660253",
+    "sha256": "dbd0e2c841994adee7525a858a264ccc7f848d1fde90d14879370af7317a4c37",
+    "lines": 122
+  },
+  "historical_author_receipt": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/strong_local_gaussian_core_receipt.json",
+    "git_commit": "43d594a86c35447c17c7b2f0d7884a2289660253",
+    "sha256": "94ea798d05b4f50e29ae05ddeea2d206404dc5deb5369a8647f38287d2737af1",
+    "lines": 53
+  },
+  "immutable_source_findings": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_strong_local_gaussian_core_source_findings.md",
+    "sha256": "18526a589b5772f5fa68e261c2c4dcc5641cfc3951a9dfe2d23b7b3cad112cdd",
+    "lines": 185
+  },
+  "immutable_source_read_manifest": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_strong_local_gaussian_core_read_manifest.json",
+    "sha256": "06944c1046950d262aeba290cbab0d6da202918e408b8b523584da31596ec6e6",
+    "lines": 525
+  },
+  "repair": "Added six relative dependency-link wrappers after immutable source-only mathematical findings; no formula, visible prose, line count or scope change",
+  "added_links": [
+    {
+      "label": "RJ25",
+      "target": "REAL_GAUSSIAN_JET_FOREST_ASTRA.md"
+    },
+    {
+      "label": "WS5--WS6",
+      "target": "WHITE_SECTOR_MATCHING_ASTRA.md"
+    },
+    {
+      "label": "CW9--CW11",
+      "target": "COMPLEX_WHITE_SECTOR_ASTRA.md"
+    },
+    {
+      "label": "RF1--RF5",
+      "target": "REGIONAL_CRITICAL_FIELD_ASTRA.md"
+    },
+    {
+      "label": "FU",
+      "target": "FINITE_U_CRITICAL_FIELD_ASTRA.md"
+    },
+    {
+      "label": "WR1",
+      "target": "WEIGHTED_RETURN_JETS_ASTRA.md"
+    }
+  ],
+  "checks": {
+    "removing_only_added_link_wrappers_reproduces_original_commit_bytes": true,
+    "all_six_dependencies_resolve": true,
+    "original_author_packet_unchanged": true,
+    "source_only_freeze_unchanged": true
+  },
+  "review_status": "Current-source packet assessment and post-receipt identities remain pending; source-only findings bind the original published source version",
+  "provenance_limit": "No historical author read claim is expanded by this coordinator amendment; separate author clarification requested"
+}

@@ -436,6 +436,65 @@
 > proofs without new numerical experiments; the original packaging failure
 > and prior CC failures remain preserved.
 >
+> The [original-cut marginal remainder](BARE_COUPLING_REMAINDER_ASTRA.md) now
+> has a [different fresh scoped LAND review](REVIEW_BARE_COUPLING_REMAINDER_ASTRA.md),
+> without mathematical repair. Its centered product-HS-ball estimate uses a
+> fixed coarse domain; only the exact comparison with the original chart
+> uses a shrinking domain. A fugacity on every actual side/corner flux
+> makes the connected comparison logarithm rare. The unscaled Hessian pays
+> its inverse-radius cost on that rare term. Actual real compact-return
+> jets and complete original readers then give a volume-uniform exponential
+> second spatial moment and
+> `beta_av[log(Z_cut/P_u)]=O(1/u)+O(exp(-c p_cut^2))`.
+> The thermodynamic limit precedes the transverse momentum limit, with
+> every finite-torus colour, root and harmonic mode retained.
+>
+> Combining this result with the reviewed BM prefactor projection gives the
+> SOURCE-ZERO BARE ORIGINAL-CUT consequence
+> `beta_av[-log Z_cut]=u+b1+O(1/u)`.
+> The two formulas use the same normalized SU(N) phase, literal critical
+> prefactor, uniqueness branch, coarse-link units and volume-first averaged
+> transverse projection; a common smaller domain and larger threshold suffice.
+> This is a statement about the fully integrated one-step bare cut integral.
+> The determinant part of `b1` is still unevaluated; its sign, a universal
+> running coefficient, the whole finite-momentum action and a repeatable
+> effective-law trajectory do not follow from this scalar projection.
+>
+> The [strong local Gaussian core](STRONG_LOCAL_GAUSSIAN_CORE_ASTRA.md) has a
+> [different fresh scoped LAND review](REVIEW_STRONG_LOCAL_GAUSSIAN_CORE_ASTRA.md).
+> For the actual local-lift precision on deterministic whole-link regions,
+> its column-patch inverse defines a finite-range symmetric whole core
+> `P_R=(Q+Q^T)/2`. The complete original-cell remainder has endpoint bound
+> `O(exp(-mR/2))` and marked bound `O(R^4 exp(-mR/2))`.
+> All patch, hole, boundary and absent-cell readers remain. The whole core
+> is positive at admitted real data and accretive in the stated complex
+> tube; active inverses are inverses of covariance marginals. Arbitrary
+> holes do not mean arbitrary rough touching boundary data.
+>
+> The new lift remainder is combined with the DISTINCT old RF critical-tail
+> family, without double counting. Fixing one R before the final fine,
+> source, coarse and boundary radii gives the exact critical covariance and
+> `k[-log(1-4 B_cov e)]/2<=beta/12`, with `beta=(16R)^-4`.
+> This pays the particular absolute covariance-reader cost identified by RJ.
+> Its original ordered (6,4) jets and absolute-label losses remain explicit.
+> Only whole-core grouping and independent SMALL-tail masks are supplied;
+> the large symmetrized column atoms need not be positive individually.
+> The zero-order nonlocal mean, actual inherited interaction sizes, complete
+> interacting forest and history sums remain separate open obligations.
+>
+> The [remainder/core integration record](checks/full_proof_bare_remainder_strong_core_integration.json)
+> binds the two separate source-first mathematical freezes, packet stages,
+> reports and post-receipt checks. SG's only source correction adds six
+> dependency-link wrappers: removing them recovers the original published
+> source exactly. Its original author packet remains historical; separate
+> amendments bind the corrected source and clarify the requested PC window
+> versus its actual end, and actual installed versus pinned repository skills.
+> No historical reading is backfilled. Current unreviewed follow-ons concern
+> mean-reader substitution, the determinant coefficient and a primary-source
+> claimed mass-gap/crossover construction. They are not accepted premises.
+> Full non-free continuum existence and a positive physical continuum mass
+> gap remain OPEN.
+>
 > The [bare coupling and critical-prefactor calculation](BARE_COUPLING_MATCH_ASTRA.md)
 > has a [fresh independent scoped LAND review](REVIEW_BARE_COUPLING_MATCH_ASTRA.md),
 > with no source repair. It derives the complete classical Schur form from the
@@ -450,8 +509,9 @@
 > coefficient is imported. Haar and the coordinate determinant are combined
 > before the leading intrinsic symmetry assertion. The exact finite-u
 > coordinate prefactor is not assumed spatially symmetric under nonlinear
-> changes of tree. This is a source-free bare-prefactor theorem, not yet the
-> coefficient of the whole original-cut integral or a repeatable trajectory.
+> changes of tree. BM alone treats the source-zero bare prefactor. The matching BR result
+> above supplies the one-step original-cut projection; a repeatable
+> trajectory remains open.
 >
 > The [real Gaussian finite-jet construction](REAL_GAUSSIAN_JET_FOREST_ASTRA.md)
 > has a [fresh independent scoped LAND review](REVIEW_REAL_GAUSSIAN_JET_FOREST_ASTRA.md).
@@ -474,7 +534,8 @@
 > or the zero-order nonlocal `b/sigma`. Its exact absolute covariance
 > reader expansion still costs `(1-4B e_beta)^(-|I|/2)`; paying that cost
 > from a support margin requires an additional inequality not supplied by
-> the old RF bounds. A diagonal example limits that particular absolute
+> the old RF bounds. SG above supplies it with a different actual lift-core
+> representation and an explicit new common domain. A diagonal example limits that particular absolute
 > expansion, not other possible constructions. No generic inherited
 > interaction, matched `R_h/Z_A` reference or history regeneration follows.
 > The positive Gaussian precision is an auxiliary bound, not a physical
@@ -484,20 +545,22 @@
 > binds both unchanged sources and the separate source-first findings,
 > packet stages, final reports and post-receipt identity checks. Root read
 > both complete sources, reports, findings and receipts; primary-paper reads
-> remain bounded as recorded by each worker. The follow-on author work is
-> checking the original-cut marginal remainder and a stronger local
-> covariance core. Those proposals do not change the accepted scopes above.
+> remain bounded as recorded by each worker. The later BR and SG results above now extend the original-cut marginal
+> and covariance-budget interfaces at their stated scopes.
 > Full non-free continuum existence and the physical continuum mass gap
 > remain OPEN.
 >
 >
 > Concurrent additions also preserve the unchecked COEFF, NGYM and SRCREAL
-> drafts with their author briefs, and the Push A charter/manuscript with two
+> drafts with their author briefs, and the Push A charter/manuscript with three
 > diagnostic script/log pairs. The manuscript explicitly leaves the full
 > normalized all-history return and regeneration open. Its author use of
 > PROVEN is not a new independent review in this integration. Root read
 > COEFF/NGYM lines 1-90, SRCREAL lines 1-100, the complete 42-line charter,
-> and MANUSCRIPT_RG lines 1-100 only; neither diagnostic script was run.
+> and the updated MANUSCRIPT_RG lines 1-120 only; no diagnostic script was run.
+> The second Push A checkpoint adds unreviewed first-step SU(2) rough-core
+> comparisons and convex-cap response claims. It explicitly leaves all four
+> full-return obligations open and has no general all-history (6,4) result.
 > These additions do not replace the full physical target or any frozen
 > supplier used by the reviewed arguments.
 >

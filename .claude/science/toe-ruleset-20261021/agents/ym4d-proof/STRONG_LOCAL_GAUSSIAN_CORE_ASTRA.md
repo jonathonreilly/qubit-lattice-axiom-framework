@@ -5,9 +5,9 @@ precision, uniformly on all deterministic regions of retained whole links.
 It gives an exponentially small complete-original-reader remainder, in both
 endpoint and marked norms. The critical/source correction is then added
 with its actual RF atoms on a newly specified common domain. The resulting
-covariance meets the support-cost inequality proposed in RJ25.
+covariance meets the support-cost inequality proposed in [RJ25](REAL_GAUSSIAN_JET_FOREST_ASTRA.md).
 
-The construction reuses the column-patch method of WS5--WS6/CW9--CW11,
+The construction reuses the column-patch method of [WS5--WS6](WHITE_SECTOR_MATCHING_ASTRA.md)/[CW9--CW11](COMPLEX_WHITE_SECTOR_ASTRA.md),
 rebuilt below for K_lift, arbitrary holes and ORIGINAL microscopic reader
 weights. Its symmetric part becomes positive by closeness to the inverse.
 No stronger estimate for the old RF partition-of-unity core is asserted.
@@ -36,7 +36,7 @@ original block owns k scalar HS coordinates of the free whole links.
 All root, harmonic, crossing and colour modes remain. The ambient torus
 and a deterministic whole-link region Lambda may have arbitrary holes.
 
-Use RF1--RF5's actual Haar-inclusive source-free lift Hessian
+Use [RF1--RF5](REGIONAL_CRITICAL_FIELD_ASTRA.md)'s actual Haar-inclusive source-free lift Hessian
 
     K(V)=F_0''(0;V), K_Lambda=K(V)[Lambda],
     gamma Id<=K(Vbar)<=B Id,
@@ -49,7 +49,7 @@ d_1. Each entry reads N_3(X_i) union N_3(X_j). Every inverse on Lambda or
 a smaller patch is taken on its retained scalar coordinates, then extended
 by zero; no singular zero extension is inverted.
 
-Choose a fixed preliminary coarse tube with the FU/RF analytic normalizer
+Choose a fixed preliminary coarse tube with the [FU](FINITE_U_CRITICAL_FIELD_ASTRA.md)/RF analytic normalizer
 and lift domains, small enough that
 
     ||K(V)-K(Vbar)||op <= J_K eta_K <= gamma/4,
@@ -384,7 +384,7 @@ a function of its endpoints alone.
 The atoms are holomorphic on the stated small-chart domain, including the
 actual critical field and physical boundary substitution from RF27. This
 holomorphy is not asserted for a rough input vertex. For actual original
-real coarse/source jets use WR1/RJ11's genuine ordered paths
+real coarse/source jets use [WR1](WEIGHTED_RETURN_JETS_ASTRA.md)/RJ11's genuine ordered paths
 
     V_c(t)=exp(t_m B_mc)...exp(t_1 B_1c)V_c,
     epsilon(s)=epsilon+sum_(j=1)^n s_j xi_j/u,

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-10-30T14:10:30.560928+00:00",
+  "invocation": "Direct lint_one_file(path, load_yaml(), apply_fix=False) on each explicit path. CLI not called.",
+  "science_runner": false,
+  "reports": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_REMAINDER_ASTRA.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0,
+      "sha256": "b75f9cae074c72344bd252d093c0a1d30c502c53819cde5b62e5b4c8b9b26b61",
+      "lines": 583,
+      "unchanged_after": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_coupling_remainder_source_findings.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0,
+      "sha256": "d9cc0fcd2cc7969535fcf95cb8dccc68429a99cd77fefaa2feaa958eae1ae435",
+      "lines": 55,
+      "unchanged_after": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_BARE_COUPLING_REMAINDER_ASTRA.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0,
+      "sha256": "69fa3ac930de70dd7e83d8256e7a8dc7edafadd45a720a2333fd7245f7070e00",
+      "lines": 98,
+      "unchanged_after": true
+    }
+  ],
+  "runtime_inputs": [
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/scripts/vocab_lint.py",
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "lines": 392
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/repo/controlled_vocabulary.yaml",
+      "sha256": "e5c9ff6759418ca0605bf7f5fb5321f4b0ead19d52f61447e695b99959090d15",
+      "lines": 939
+    }
+  ],
+  "total_violations": 0
+}

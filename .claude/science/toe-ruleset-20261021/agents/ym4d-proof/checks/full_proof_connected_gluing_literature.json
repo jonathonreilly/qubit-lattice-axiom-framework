@@ -1,0 +1,87 @@
+{
+  "role": "Bounded primary-source research for the next connected chart expectation step; no theorem import or independent proof verdict",
+  "date": "2026-10-30",
+  "published_science_head": "ca68c42829bba0fec2f5a5e0fdf4c9a6d3932852",
+  "local_inputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "lines": 597,
+      "root_coverage": "Complete source and separately completed independent review at the preceding integration."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MATCHED_REGIONAL_RATIO_ASTRA.md",
+      "sha256": "5f27e55375d59dde30eacb91efce42a16ba266d563833db2ffd5babdd14c4af6",
+      "lines": 460,
+      "root_coverage": "Complete source and separately completed independent review at the preceding integration."
+    }
+  ],
+  "current_missing_object": "A complete-reader connected logarithm for an actual normalized nonlinear-chart expectation of bounded, real-buffer compact-return insertions. Joint absolute moment bounds alone do not supply the necessary spatial connected bounds.",
+  "primary_reads": [
+    {
+      "url": "https://arxiv.org/html/1411.1107v1",
+      "title": "Martin Lohmann, Single Scale Cluster Expansions with Applications to Many Boson and Unbounded Spin Systems",
+      "version": "v1, 4 November 2014",
+      "coverage": "Returned introduction/abstract lines49-75; full returned passage324-381 around Sections2.1.3-2.2; returned Section3 passage497-531. Additional find output supplied scattered later application passages, not a complete theorem/proof read.",
+      "use": "The Gaussian derivative identity admits weak derivatives for piecewise smooth compact functions. The interaction/activity estimates explicitly use field-analytic norms. This suggests derivative and boundary organization but does not establish the present bounded-buffer insertion norm.",
+      "not_imported": "No application to the actual compact-core ratios, no source-local normalized gas, no continuum theorem."
+    },
+    {
+      "url": "https://arxiv.org/html/hep-th/9409094v1",
+      "title": "A. Abdesselam and V. Rivasseau, Trees, forests and jungles: a botanical garden for cluster expansions",
+      "version": "v1, 16 September 1994",
+      "coverage": "arXiv abstract/submission metadata; returned HTML16-79, Gaussian find snippets, and full returned330-372 around positivity preservation and SectionV.A. No complete paper read.",
+      "use": "The Gaussian example obtains polymer factorization from positive covariance interpolation and local interactions, with field derivatives in its forest formula. The combinatorial identity is not itself a uniform bound for our nonanalytic buffer insertions.",
+      "not_imported": "No new BKAR theorem, Gaussian insertion estimate or Yang-Mills result adopted from this bounded read."
+    },
+    {
+      "url": "https://arxiv.org/html/hep-th/9605094v1",
+      "title": "A. Abdesselam and V. Rivasseau, An Explicit Large Versus Small Field Multiscale Cluster Expansion",
+      "version": "v1, 14 May 1996",
+      "coverage": "Search abstract; returned HTML42-67, full returned162-214, and scattered smooth-selector find snippets. Section3 polymer proof was not read in full.",
+      "use": "The worked model is infrared scalar phi4 in four dimensions. Its large/small decomposition starts with smooth selectors and its displayed interpolation differentiates fields. This is a localization reference, not a ready proof for sharp SU(N) histories or bounded compact-return coefficients.",
+      "not_imported": "No scalar polymer bound transferred to the nonabelian normalized-kernel law."
+    },
+    {
+      "url": "https://arxiv.org/abs/math-ph/0304003v3",
+      "title": "Daniel Ueltschi, Cluster expansions and correlation functions",
+      "version": "v3, 18 February 2005",
+      "coverage": "Abstract and submission/version metadata only.",
+      "use": "A general cluster expansion with correlation estimates and a Kotecky-Preiss type convergence assumption is a possible downstream reference. The present work must first construct the required activities and prove their norms.",
+      "not_imported": "No theorem hypotheses or proof were checked from the abstract."
+    },
+    {
+      "url": "https://arxiv.org/html/0901.4756v1",
+      "title": "A. Abdesselam, A. Procacci and B. Scoppola, Clustering bounds on n-point correlations for unbounded spin systems",
+      "version": "v1, 29 January 2009; sole version listed by the checked arXiv metadata",
+      "coverage": "Abstract/version metadata and returned HTML lines 35\u2013221: full introduction, model and main statements, basic Gaussian setup and start of tree analysis. The 50-page proof was not read. An attempted v2 URL returned 404 and supplied no evidence.",
+      "use": "The stated model has a positive quartic self-interaction and a Hermitian finite-range pair kernel with J(0)>sum_{x!=0}|J(x)|. Its conclusions concern field cumulants. These are relevant methodological comparisons; neither that diagonal-dominance hypothesis nor the bounded-buffer insertion theorem is supplied for the present source.",
+      "not_imported": "No near-Gaussian clustering theorem applied to the actual SU(N) chart or its compact-return insertions."
+    }
+  ],
+  "search_coverage": {
+    "queries": [
+      "Gaussian random field bounded local functions cumulant tree bound cluster expansion",
+      "strictly convex lattice field bounded perturbation cluster expansion analyticity correlation functions",
+      "Gaussian measures cumulants bounded measurable functions forest formula density derivatives",
+      "\"Gaussian\" \"cumulants\" \"tree\" \"bounded\" \"cluster expansion\"",
+      "\"constructive\" \"bounded measurable\" \"cluster expansion\"",
+      "\"Trees, forests and jungles\" Abdesselam Rivasseau",
+      "\"An explicit large versus small field multiscale cluster expansion\"",
+      "\"Gaussian\" \"weighted dependency graphs\"",
+      "\"Lohmann\" \"Single scale cluster expansions\"",
+      "\"Clustering bounds on n-point correlations\" Abdesselam Procacci Scoppola",
+      "\"Gaussian\" \"cumulants\" \"bounded functions\" \"tree\"",
+      "\"completely analytical\" \"convex\" \"spin\""
+    ],
+    "qualification": "Targeted searches, mostly arXiv-filtered; not an exhaustive literature review. Search snippets, irrelevant hits and a BKAR formalization repository hit are not proof inputs.",
+    "unread_output": "The final three-query batch exceeded the available output context and was not read or used as evidence. The Abdesselam\u2013Procacci\u2013Scoppola entry is based on separate successful opens of the abstract and v1 HTML."
+  },
+  "new_research_direction": "A possible next construction would keep bounded insertions on real buffers, differentiate normalized Gaussian densities rather than the insertions, and combine the finite positive covariance core with the existing full-reader tail expansion. Complex marginal normalization, factorial counts, contours and nonlinear interactions must all be proved. This is a proposed route only.",
+  "numerical_physics_runs": 0,
+  "new_external_theorem_imports": 0,
+  "global_normalized_return": "OPEN",
+  "effective_iteration": "OPEN",
+  "continuum_existence_and_nonfreeness": "OPEN",
+  "physical_continuum_mass_gap": "OPEN"
+}

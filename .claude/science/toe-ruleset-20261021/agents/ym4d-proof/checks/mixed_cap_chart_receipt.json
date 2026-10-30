@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "unit": "mixed_cap_chart",
+  "author_support_status": "bounded-support",
+  "author_review_status": "pending_fresh_independent_review",
+  "source_freeze": {
+    "path": "MIXED_CAP_CHART_ASTRA.md",
+    "lines": 707,
+    "sha256": "1e885e4fbce03b00f4414b15caaa71e7140d9bc8494d0c75d1519bdbcde8ff2e"
+  },
+  "claim": "MC29–MC33: fully integrated mixed cap/original-a chart masks at fixed real Vbar, complex original epsilon, one exact common full prefactor, complete-reader small logarithms and changed-owner cancellation.",
+  "new_math": [
+    "Principal injective compact-cap identity and k-dimensional convex geometry MC5–MC11.",
+    "Exact block-body Stokes including piecewise smooth product faces MC17–MC19.",
+    "Full-block active marginal, dimension and side-root costs MC20–MC28.",
+    "Common canonical mask coefficient library, anchoring and explicit shrinking regime MC29–MC33."
+  ],
+  "author_checks": {
+    "source_equation_labels": "MC1–MC33 present exactly once and consecutive.",
+    "markdown_fences": "One balanced YAML fence.",
+    "patch_tokens": "No stray patch markers.",
+    "predecessor_identity": "SC597, RF592, RC510, SN711, NR713, NC624, SH247 and MR460 identities recorded without mutation.",
+    "scope": "Only new source and checks/mixed_cap_chart_* outputs authored.",
+    "numerics": "None; written proof plus mechanical metadata/hash/link checks only."
+  },
+  "open_interfaces": [
+    "Fresh independent mathematical review of this frozen source.",
+    "Normalized marked compact insertion expectations and exact simultaneous gluing with the remaining sea predicates.",
+    "Regional cap denominators with pinned fine boundaries.",
+    "Fixed-physical-cap versus transported-chart identity for complex coarse V.",
+    "Effective iteration, full non-free continuum existence and positive physical continuum mass gap."
+  ],
+  "permissions_or_escalation_requested": false,
+  "git_pr_shared_front_audit_mutations": false,
+  "additional_workers_spawned": false,
+  "independent_verdict": null,
+  "audit_ratified_status_assigned": false
+}

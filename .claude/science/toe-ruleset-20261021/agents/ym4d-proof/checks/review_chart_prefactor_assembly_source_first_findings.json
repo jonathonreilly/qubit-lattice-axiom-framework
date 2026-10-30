@@ -1,0 +1,58 @@
+{
+  "kind": "independent_source_first_mathematical_findings",
+  "frozen_at_utc": "2026-10-30T05:56:24.153796+00:00",
+  "parent_reported_published_head": "a8c9365e5418845c2e2812ec321f4b52263717a6",
+  "head_attestation": "Provided by coordinator; reviewer performed no Git operation and binds actual source bytes below.",
+  "context": "Fresh source-first review; same-family independence disclosure; Astra/max requested, backend not independently attested by reviewer.",
+  "prior_review_files_opened": false,
+  "author_receipts_or_checkers_opened": false,
+  "root_integration_evidence_opened": false,
+  "embedded_source_status_claims": "Ignored as evidence; required mathematical sources contain historical status references.",
+  "blocking_mathematical_findings": [],
+  "pre_mechanical_verdict": "LAND for the specified assembled auxiliary finite-chart theorem only.",
+  "assembly_established": true,
+  "physical_targets": {
+    "full_SU_N_d4_continuum_existence": "OPEN",
+    "positive_physical_continuum_mass_gap": "OPEN"
+  },
+  "source_hashes": {
+    "SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+    "CRITICAL_DETERMINANT_READER_ASTRA.md": "bd33e000b839fe79e9a9bceda43d9b28b370e69717f0cedb8d1c14336642b755",
+    "SHRINKING_CHART_RETURN_ASTRA.md": "9ae446ca746639ff77295f9da712f47e4be9d315d7c26e975535f1602321abfc",
+    "CRITICAL_ACTION_READER_ASTRA.md": "a466d55444d17c0d54fe9efecabc956ac5e3fcf9c61fdc0780d9248dabaf62fd"
+  },
+  "findings": [
+    {
+      "id": "assembly-common-object",
+      "conclusion": "The four results use the same unsubtracted finite-u phase, original left coordinates, FU critical point, source-fixed real t, full scalar mode set, and actual K_* inverse. CD may use an auxiliary homotopy atom family for the lift determinant; it does not substitute that family for the SN covariance."
+    },
+    {
+      "id": "assembly-noncircular-parameters",
+      "conclusion": "Choose R by SN3, recompute FU marked constants, choose positive bar_tau and bar_rho satisfying FU18 and the stronger critical-tail cap, fix local Cauchy ceilings, choose r_a or r_max, then actual tau/rho and coarse radii. CD/CA require no further R enlargement. For SH keep source rho fixed at ceiling bar_tau, choose c and kappa_c by SH1, and use tau=c sigma p and delta_*=eta=kappa_c tau. Force and Hessian inequalities are monotone under these restrictions. All inequalities hold eventually for any p>=1 with p->infinity and sigma p->0."
+    },
+    {
+      "id": "assembly-complex-normalization",
+      "conclusion": "CB9 consumes STEP55 PR/NZ, whose complex recentring plus relative expectation estimate yields |Z-1|<=K_N epsilon_E<1; real positivity alone is not used. Haar logarithms are zero-free in the fine chart. FU proves complex accretivity by perturbation, CD fixes TrLog through an accretive homotopy, and SN proves the integrated complex nonvanishing by its convergent complete-reader gas."
+    },
+    {
+      "id": "assembly-exact-prefactor",
+      "conclusion": "Z_a=h_N^n(2 pi sigma^2)^(d/2) z_t^(-4 T^4) exp[-sigma^-2 sum_(P,p in D(P))(1+epsilon_p)W(V_P)-sum_S a_S-(1/2)sum_S ell_S+sum_Y H_Y]. Here a_S is CA9, ell_S is CD19, and H_Y is SN29/SH6. No source-free normalization, Haar factor, Gaussian determinant, or compact-kernel vacuum is silently canceled."
+    },
+    {
+      "id": "assembly-readers-and-boundaries",
+      "conclusion": "SN includes every full-colour side/corner with sign (-1)^|H| and flux b/sigma, retaining nonlinear field-slot cuts before exterior expansion. Pattern/side compatibility is internal to primitive components. Both E_lift and T_crit readers enter loops, chains and forest edges; Gaussian translations have their additional b readers. The distinguished actual side pays h_tr. Per-coordinate factorials permit the attachment recursion; four beta/8 support margins leave mu=beta/2."
+    },
+    {
+      "id": "assembly-scale-accounting",
+      "conclusion": "At shrinking tau=c sigma p, CA9 <=C_H c^2 p^2/8 and the lift field action is <=C_W(1+rho)(9 kappa_c c)^2 p^2. The exact vacuum budget is 4 exp(beta)|log z_t|. CD19 is uniformly O(1) per block, not O(1/u). Only H has norm <=C1 sigma^2+C3 exp(-a p^2/128)."
+    },
+    {
+      "id": "assembly-derivatives",
+      "conclusion": "Source Cauchy radius rho stays fixed. On the half tube H jets cost alpha! zeta! (2D/eta(u))^|alpha| (2/rho)^|zeta| epsilon. Unscaled coarse derivatives need not be uniform. Rescaling v=(sigma p) v_hat cancels the coarse-radius powers, with fixed v_hat radius kappa_c c. No u differentiation of arbitrary p is justified."
+    },
+    {
+      "id": "assembly-scope",
+      "conclusion": "The theorem is uniform over finite T>=2, for fixed N,L,kappa interval and large enough real u, on the auxiliary product of original-coordinate HS balls and matching joint domain. It supplies no equality with old hard cuts, original G/Omega/history references, complementary returns, effective RG iteration, non-freeness, continuum construction, or physical mass gap. It is not an impossibility theorem about those open targets."
+    }
+  ]
+}

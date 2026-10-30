@@ -1,0 +1,18 @@
+{
+  "kind": "pre_execution_exact_identity_criteria",
+  "created_at_utc": "2026-10-30T05:56:24.153796+00:00",
+  "scope": "Exact symbolic algebra and source/provenance bookkeeping only; no scientific numerical experiment or author physics runner.",
+  "criteria": [
+    "Four primary source hashes must match the frozen identities and all declared line ranges must exist.",
+    "Generic noncommuting two-by-two inverse identities must simplify exactly to zero.",
+    "Generic two-dimensional normalized Gaussian covariance-pair derivative must equal the mixed spatial derivative with its exact edge factor.",
+    "Critical action coefficient identity under stationarity must simplify for a symbolic degree parameter.",
+    "Critical determinant derivative and its ordered inverse formula must agree exactly.",
+    "Side/corner top-form powers of sigma must cancel for symbolic dimensions and number of sides.",
+    "SH side and marked-translation budgets must reduce exactly to SH3 after tau=c sigma p; their sigma exponents must be zero.",
+    "The largest side polynomial degree must be 91D+2; four beta/8 expenditures must leave beta/2.",
+    "Full compact-vacuum, Haar, Gaussian-scale, determinant, action-correction and nonlinear exponents must reproduce the combined identity without deleting a scalar or source term.",
+    "Scaled coarse Cauchy powers must cancel only after v=(sigma p) v_hat.",
+    "Adversarial sign/factor/power mutations must be rejected by the corresponding exact identity checks."
+  ]
+}

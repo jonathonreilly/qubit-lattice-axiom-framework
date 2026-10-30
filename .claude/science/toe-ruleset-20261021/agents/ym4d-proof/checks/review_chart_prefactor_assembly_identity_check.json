@@ -1,0 +1,146 @@
+{
+  "kind": "independent_exact_symbolic_identity_check",
+  "created_at_utc": "2026-10-30T05:58:23.006407+00:00",
+  "sympy_version": "1.14.0",
+  "python_version": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "source_first_findings_sha256": "5504527f6e2c3d99cf1c06bc240a51adbbaee8737d27cd41df1b3c8be9819f96",
+  "criteria_sha256": "731e23ed83aecfff12e8cdd51b98d474aea8408ac85fb987eccb2d5c1a3c331b",
+  "read_manifest_sha256": "d4444d13768c871d5bcb79105baa56d588de96912426ce876aba6f3492035c60",
+  "checker_sha256": "79e5f6188577c181af7bafe8b3e0c8be481bf475137a5bd14913461d9e8ab5c8",
+  "bound_source_files_unchanged": 13,
+  "positive_checks": [
+    {
+      "name": "actual critical inverse, correct multiplication order",
+      "passed": true
+    },
+    {
+      "name": "lift residual identity and right Neumann order",
+      "passed": true
+    },
+    {
+      "name": "Jacobi determinant derivative",
+      "passed": true
+    },
+    {
+      "name": "critical ratio derivative uses same ordered inverse",
+      "passed": true
+    },
+    {
+      "name": "off-block heat identity, both symmetric entries",
+      "passed": true
+    },
+    {
+      "name": "critical action minus sign and s weight",
+      "passed": true
+    },
+    {
+      "name": "exact shrinking side budget",
+      "passed": true
+    },
+    {
+      "name": "exact shrinking marked-translation budget",
+      "passed": true
+    },
+    {
+      "name": "no inverse sigma in side budget",
+      "passed": true
+    },
+    {
+      "name": "no inverse sigma in marked translation budget",
+      "passed": true
+    },
+    {
+      "name": "all side/corner top-form sigma powers",
+      "passed": true
+    },
+    {
+      "name": "largest side polynomial degree",
+      "passed": true
+    },
+    {
+      "name": "four separate support expenditures",
+      "passed": true
+    },
+    {
+      "name": "critical tail precision smallness, worst bound",
+      "passed": true
+    },
+    {
+      "name": "pair-polydisc accretivity margin",
+      "passed": true
+    },
+    {
+      "name": "pair-polydisc inverse precision fraction",
+      "passed": true
+    },
+    {
+      "name": "assembled phase, Haar, scale, determinant and kernel vacuum",
+      "passed": true
+    },
+    {
+      "name": "shrinking critical-action budget",
+      "passed": true
+    },
+    {
+      "name": "scaled coarse Cauchy radius",
+      "passed": true
+    }
+  ],
+  "mutation_controls": [
+    {
+      "name": "reversed noncommuting critical inverse order",
+      "rejected": true
+    },
+    {
+      "name": "wrong sign of lift commutator residual",
+      "rejected": true
+    },
+    {
+      "name": "spurious one-half in the off-block heat identity",
+      "rejected": true
+    },
+    {
+      "name": "omitted normalized determinant derivative",
+      "rejected": true
+    },
+    {
+      "name": "opposite critical action sign",
+      "rejected": true
+    },
+    {
+      "name": "missing s in the critical action integral",
+      "rejected": true
+    },
+    {
+      "name": "missing flux sigma inverse",
+      "rejected": true
+    },
+    {
+      "name": "lost second critical-field budget in translation mark",
+      "rejected": true
+    },
+    {
+      "name": "wrong sign on compact normalizer vacuum",
+      "rejected": true
+    },
+    {
+      "name": "invisible original Wilson-source vacuum cancellation",
+      "rejected": true
+    },
+    {
+      "name": "omitted Haar constant",
+      "rejected": true
+    },
+    {
+      "name": "wrong full determinant square-root factor",
+      "rejected": true
+    },
+    {
+      "name": "unscaled coarse radius treated as fixed",
+      "rejected": true
+    }
+  ],
+  "scientific_numerical_experiments": 0,
+  "author_scripts_executed": 0,
+  "scope_limit": "Exact algebraic identities and byte/line provenance only. Analytic convergence, complex nonvanishing and the infinite reader sums are justified by the separate source-first mathematical review, not this finite symbolic check."
+}

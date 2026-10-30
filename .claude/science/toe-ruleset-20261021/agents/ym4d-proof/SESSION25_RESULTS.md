@@ -2593,6 +2593,18 @@ complement remain separate obligations. Author and reviewer used analytic
 proofs without new numerical experiments; the original packaging failure
 and prior CC failures remain preserved.
 
+A [fresh review of the assembled finite-chart theorem](REVIEW_CHART_PREFACTOR_ASSEMBLY_ASTRA.md)
+confirms that SN, CD, SH and CA use one actual phase, critical field, covariance
+construction and compatible joint domain. It retains the full Haar/Gaussian
+prefactor, compact vacuum, critical action and determinant. The nonlinear
+logarithm is small; the action and determinant keep their separate budgets.
+The reviewer found no blocking mismatch or source repair and froze the
+mathematical findings before author-packet inspection. The
+[coordinator integration](checks/full_proof_chart_prefactor_assembly_integration.json)
+records its bounded coverage and preservation checks. This is an assembled
+auxiliary-chart result; original-cut/history returns, effective iteration,
+continuum existence, non-freeness and the physical mass gap remain OPEN.
+
 The [interacting selected-core construction](INTERACTING_SELECTED_CORE_ASTRA.md)
 now has a [fresh independent scoped LAND review](REVIEW_INTERACTING_SELECTED_CORE_ASTRA.md)
 for IC1–IC32. Its one-step, source-free `O(1/u)` connected remainder uses

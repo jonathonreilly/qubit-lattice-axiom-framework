@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "role": "author read provenance, not independent review or audit",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MATCHED_REGIONAL_RATIO_ASTRA.md",
+    "sha256": "5f27e55375d59dde30eacb91efce42a16ba266d563833db2ffd5babdd14c4af6",
+    "lines": 460
+  },
+  "inputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "lines": 592,
+      "direct_read_ranges_this_unit": [
+        [
+          70,
+          170
+        ],
+        [
+          222,
+          592
+        ]
+      ],
+      "earlier_same_session_read_ranges": [
+        [
+          1,
+          592
+        ]
+      ],
+      "use": "Exact physical/coordinate factors, full-force and scalar Hessian majorants, N9 boundary masks, actual regional field/covariance, canonical agreement and full regional determinant. No global covariance compression is substituted."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "lines": 510,
+      "direct_read_ranges_this_unit": [],
+      "earlier_same_session_read_ranges": [
+        [
+          1,
+          510
+        ]
+      ],
+      "use": "Unchanged complete same-session author source: RC2, RC9, RC14-18 supply the exact physical chart factorization, small log and canonical agreement, matched physical tube and shrinking inequalities. Their hypotheses are checked in MR1-3 and MR19-20."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_ACTION_READER_ASTRA.md",
+      "sha256": "a466d55444d17c0d54fe9efecabc956ac5e3fcf9c61fdc0780d9248dabaf62fd",
+      "lines": 238,
+      "direct_read_ranges_this_unit": [
+        [
+          1,
+          238
+        ]
+      ],
+      "use": "Full bounded source read: existing scalar three-mark rule and exact finite-u/Haar accounting. Its stationary identity is not applied to the hybrid field; MR9 retains the full nonzero force."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_DETERMINANT_READER_ASTRA.md",
+      "sha256": "bd33e000b839fe79e9a9bceda43d9b28b370e69717f0cedb8d1c14336642b755",
+      "lines": 397,
+      "direct_read_ranges_this_unit": [
+        [
+          1,
+          105
+        ],
+        [
+          210,
+          270
+        ],
+        [
+          310,
+          361
+        ]
+      ],
+      "use": "Existing finite Jacobi homotopy and complete critical trace algebra; actual regional inverse/domain budgets are consumed from RF25, not inferred from this global source."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "lines": 722,
+      "direct_read_ranges_this_unit": [
+        [
+          470,
+          512
+        ]
+      ],
+      "use": "Existing pinned normalized/contour ratio comparison only. No regional physical fibre theorem is attributed to these lines."
+    }
+  ],
+  "reuse": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/regional_chart_return_read_manifest.json",
+      "sha256": "b8e4721771409ea4b7d959b9204ab2cb7bf60a7e38fa6b400a872a1b6d263744",
+      "lines": 175,
+      "use": "Exact preceding regional source and reading identities; provenance only."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_read_manifest.json",
+      "sha256": "35be410ae0b57a82e902d5030066fd902a3b8ea69830c8507cc5d8392a9758f0",
+      "lines": 246,
+      "use": "Same-session AGENTS, PROCESS_LIGHT, physics-loop and relevant review-loop reading; source-specific methodology at selected main 01589af3faf806b736c42dc2f3bd625e9edead9f. No receipt is a proof premise."
+    }
+  ],
+  "navigation_only": "Named-file inventory for RATIO/REGIONAL/ACTION/DETERMINANT/NORMALIZATION and a direct-lane Markdown pattern search for matched regional, regional ratio, canonical agreement and log ratio. Incidental fronts, audit records, old reviews and unrelated examples were not consumed as proof; no complete read of those hits is claimed.",
+  "predecessor_status": "Coordinator reports final independent acceptance of unchanged RF and RC sources. This unit consumes their mathematics, not reviewer verdicts.",
+  "changed_steps": "Actual common deep-factor cancellation, signed inactive-Haar correction, common virtual small-field extension, full-force nonstationary Taylor price, explicit local Haar determinant bound, complete-reader difference cancellation and separated shrinking price.",
+  "external_math": "No new primary-paper or external-theorem premise. The exponential differential/Haar density, trace normalization and scalar product estimates are rebuilt directly.",
+  "scope": "Matched deterministic physical chart fibres with one actual real template small on Delta union both boundaries. No rough changed-link estimate, original cut/history normalization, inherited effective action, continuum existence or physical gap.",
+  "execution": "No scientific numerics, extra workers, Git/front/PR/lock/audit operations or predecessor edits.",
+  "freeze": "Mathematical source identity announced before lint/manifest/receipt. Fresh independent review requested on the exact frozen source."
+}

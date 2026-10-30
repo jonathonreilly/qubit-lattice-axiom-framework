@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/margolus_spin_three_halves_edge_hop_gives_a_cube_covariant_dirac_tick_2026_10_21.py
+runner_sha256: b8f13e614fe0fb03129eb2b578a364a1550365dd6fb14c7f448bab01604c89f1
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 1.96
+status: ok
+----- stdout -----
+== 1. the four monomial rotation actions on the 8 corners
+   j=0: commutant dim 4, isotypic dims [1, 1, 3, 3], 2pi rotation = 1.0
+[PASS] j=0 action is monomial unitary; 2pi rotation acts as (-1)^(2j)
+   j=0.5: commutant dim 3, isotypic dims [2, 2, 4], 2pi rotation = -1.0
+[PASS] j=0.5 action is monomial unitary; 2pi rotation acts as (-1)^(2j)
+   j=1: commutant dim 3, isotypic dims [2, 3, 3], 2pi rotation = 1.0
+[PASS] j=1 action is monomial unitary; 2pi rotation acts as (-1)^(2j)
+   j=1.5: commutant dim 4, isotypic dims [4, 4], 2pi rotation = -1.0
+[PASS] j=1.5 action is monomial unitary; 2pi rotation acts as (-1)^(2j)
+[PASS] j=1/2 corner space = E1/2 + E5/2 + G3/2, multiplicity free
+[PASS] the corner inversion (pure mover) is NOT j=1/2 covariant
+== 2. canonical j=1/2 tick: W = P_E1/2 - exp(-i mu) P_G3/2 + exp(-i theta) P_E5/2 on both partitions
+[PASS] lattice tick (6^3 sites) commutes with all 24 spinor rotations about even and odd block centres  max 1.4e-15
+[PASS] Bloch form U(K) = D(K)^dag W D(K) W reproduces the lattice spectrum  5.0e-15
+== 3. first-order selection rule at K = 0 (any X, W in the commutant)
+[PASS] multiplicity-free actions (j=0,1/2,1): linear K-term vanishes inside every eigenspace of U(0)  max 4.6e-15
+[PASS] E1/2-E5/2 position coupling vanishes; E1/2-G3/2 and E5/2-G3/2 are rank 2, isotropic, 1/sqrt6  0.408248
+[PASS] E1/2 and E5/2 both coupled to G3/2 is anisotropic (no double Dirac cone)  singular-value range 0.008..0.577
+== 4. massless cone (mu = 0)
+   six K=0 states, velocities (min/max over 200 directions): [-0.8165 -0.8165  0.      0.      0.8165  0.8165] [-8.164e-01 -8.164e-01  2.000e-04  2.000e-04  8.166e-01  8.166e-01]
+[PASS] cone: +-c twofold each, c = sqrt(2/3) block per tick, isotropic to 1e-3; two zero-velocity states
+== 5. massive version (mu = m = 0.1, theta = -pi/2)
+[PASS] global quasi-energy gap around the centre equals m (20^3 zone grid + K=0)  0.100000
+[PASS] |k|=0.1: light bands follow sqrt(m^2 + (2/3)k^2) within 1%, direction spread < 1.5%  dev 0.0059, spread 0.0101
+[PASS] |k|=0.2: light bands follow sqrt(m^2 + (2/3)k^2) within 2%, direction spread < 3.0%  dev 0.0134, spread 0.0232
+[PASS] |k|=0.4: light bands follow sqrt(m^2 + (2/3)k^2) within 3%, direction spread < 5.0%  dev 0.0243, spread 0.0431
+[PASS] every band is twofold degenerate at every sampled K
+== 6. pinned spin-3/2 branch on the four body-diagonal lines
+[PASS] a twofold level sits exactly at the G3/2 energy along every body-diagonal line (random X, W)  max dev 5.6e-16
+[PASS] it is not pinned along (1,0,0)  0.016
+== 7. corner = step direction (mover)
+[PASS] pure mover (corner inversion, permutation-covariant) sends corner s to 1-s: step d = 1-2s per half-tick
+[PASS] mover tick has bands exp(-i K.d), d in {+-1}^3 (one block-lattice diagonal step per tick)
+== 8. j=3/2: edge hop with spin-3/2 overlap phases (the Dirac tick)
+   face holonomy phase / pi: {0.5: np.float64(-0.3333), 1: np.float64(-0.6667), 1.5: np.float64(1.0)}
+[PASS] spin-3/2 transport around every cube face is -1 (pi flux); not so for j=1/2, 1
+[PASS] W = Wx+Wy+Wz with {Wa,Wb} = (2/3) delta_ab: W Hermitian and W^2 = 1  2.3e-15
+[PASS] W commutes with the 24 spin-3/2 corner actions
+[PASS] lattice tick (6^3 sites) commutes with all 24 spin-3/2 rotations about both block centres  2.1e-15
+[PASS] all 8 bands obey cos w = cos^2(mu/2) S(K) - sin^2(mu/2), S = (cos Kx+cos Ky+cos Kz)/3 (2000 K, three mu)  1.2e-15
+[PASS] so the bands are +-w(K), each exactly fourfold
+[PASS] mu=0.0, |k|=0.1: |w| = sqrt(mu^2 + k^2/3) within 0.25%, direction spread < 0.5%  dev 1.2e-04, spread 2.7e-04
+[PASS] mu=0.0, |k|=0.4: |w| = sqrt(mu^2 + k^2/3) within 0.25%, direction spread < 0.5%  dev 1.9e-03, spread 4.4e-03
+[PASS] mu=0.1, |k|=0.1: |w| = sqrt(mu^2 + k^2/3) within 0.25%, direction spread < 0.5%  dev 1.3e-04, spread 6.9e-05
+[PASS] mu=0.1, |k|=0.4: |w| = sqrt(mu^2 + k^2/3) within 0.25%, direction spread < 0.5%  dev 1.9e-03, spread 3.7e-03
+[PASS] mu=0.1: global gap = mu, reached at K=0 (zone grid min)  grid min 0.1000
+[PASS] time-doubler: w = pi at K = pi(1,1,1) for every mu (not gapped by mu)
+[PASS] massless node at K=0 has zero net Berry flux (Dirac pair, not net-chiral)  -6.69e-16
+TOTAL: PASS=34 FAIL=0
+
+----- stderr -----
+

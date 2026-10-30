@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/zoom_fixed_point_tick_is_exactly_perfect_only_at_history_level_finite_band_ticks_keep_liv_2026_10_26.py
+runner_sha256: 3151e31e49024a2e7f441309d5b6abdfe690babdb8263cb92e812f4fb2e19dc6
+input_fingerprint_sha256: 0a8092f8e38bc092f825c8d1e0580e3a84301e7fd2da7e665aa504f22ab4b2d4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.78
+status: ok
+----- stdout -----
+PASS P1a perfect scalar+fermion lowest band exactly relativistic (|p|<=pi/2, m=0,0.3): max |E_eff - sqrt(p^2+m^2)| = 9.0e-11
+PASS P1b constant metric gamma^ii=(1.7,0.6,1): lowest pole on the metric null cone: dev 4.0e-15
+PASS P2a iterated factor-2 map = closed-form B=4 blocking: 2.2e-16
+PASS P2b zoom flow converges to the perfect action, deviation ~ 1/B^2 (irrelevant p^4): |G_B-G*| B=2..16: 2.84e-02 7.21e-03 1.81e-03 4.53e-04; ratios 3.94 3.98 4.00
+PASS P2c T2: blocking keeps the physical pole; lattice-unit c_B = c0/B^2 (c0 = -(S+1)/24, axis -1/12): c_B*B^2 = -0.08333 -0.08333 -0.08333 -0.08333
+PASS P3 perfect GW fermion couplings exponentially local: alpha=0.5: kappa_axis 2.74 (fit res 0.48), kappa_diag/step 2.49; alpha=1.0: kappa_axis 1.76 (fit res 0.33), kappa_diag/step 1.62
+PASS P4a GW relation g5 D + D g5 = 2 alpha D g5 D; g5-hermiticity: 4.4e-16, 0.0e+00
+PASS P4b overlap of the perfect kernel (m0 = 1/2alpha) returns the kernel: overlap step redundant: 3.3e-16
+PASS P4c no doublers: 15 corners at D = 1/alpha (rho = 0), one light cone at p = 0: max|rho| corners 1.4e-10; max|rho| for |p|_inf >= pi/2: 0.40 (light needs |rho| -> inf)
+PASS P5a Wilson-kernel overlap has c = -(S+1)/6 (GW alone does not remove LIV): axis -0.3333 body -0.2222
+PASS P5b range-R truncations of the alpha=1/2 perfect kernel as overlap kernels: c falls ~exponentially with R, nonzero at finite R (T1): R=1: 2.0e-02/1.3e-02; R=2: 7.8e-03/5.2e-03; R=3: -9.4e-05/-6.2e-05; R=4: -2.4e-06/-1.6e-06; R=5: 3.1e-07/2.1e-07; (axis/body)
+PASS P5c T1 lemma: 343 image roots distinct at random p (a fixed-point band needs >343 bands): min separation 1.6e-05
+PASS P6 2D U(1): overlap on gauged hypercube perfect kernel has |index| = |Q|, GW exact: Q=0:index 0.000000; Q=1:index -1.000000; Q=2:index -2.000000; GW 1.6e-15
+PASS P7 improved link band 4s^2+(4/3)s^4 and fermion sin+sin^3/6: p^4 coefficient 0: boson k6=-1/90 c8 axis -0.0056 face -0.0014 body -0.0006; fermion k6=-3/20 c8 axis -0.0750 face -0.0187 body -0.0083
+  residual dim-6 walls (EeV, axis-body): kappa=1e-02 x3.16: d 8-14 4He 13-22 14N 27-47 56Fe 57-98 | kappa=1e-03 x5.62: d 14-24 4He 23-39 14N 48-84 56Fe 101-174 | kappa=1e-04 x10.00: d 25-43 4He 41-70 14N 86-149 56Fe 179-310
+  one-loop kappa estimates [E]: alpha_em/4pi 5.8e-04, alpha_s(E*~0.02)/4pi 1.6e-03, (E*/M_P)^2/16pi^2 6.3e-05
+  14N to 100 EeV on every ray needs kappa < 4.9e-04 (body) / 5.5e-05 (axis)
+PASS P8 dim-8 residual: nuclear instability >= 1e21 eV, photon-decay threshold ~1e20 eV, TOF unmeasurable: P_inst(|c8|=0.075) d 2.1e+21 He 4.2e+21 N 1.5e+22 Fe 5.8e+22 eV; k_th(|dc8|=0.03) 1.8e+20 eV; GRB 10 GeV dt 2e-51 s
+runtime 3.7 s
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

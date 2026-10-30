@@ -50,6 +50,9 @@ The immediate reuse is concrete. B01 covers the successful pointwise gas after i
 | <a id="b40"></a>B40: [Pemantle–Wilson](https://arxiv.org/abs/0903.3585v1) | Theorems 2.3 and 4.1; local Morse/Stokes argument through Lemma 4.3 | Analytic complex-saddle contour method, compared at the read scope. | background context | Finite-u scalar normalizer | [FK](FINITE_COUPLING_KERNEL_ASTRA.md) rebuilds the uniform inequality, full Haar determinant and Gaussian normalization; its [review](REVIEW_FINITE_COUPLING_KERNEL_ASTRA.md) confirms that local construction. No interacting or multilevel theorem is imported. |
 | <a id="b41"></a>B41: [Lohmann](https://arxiv.org/abs/1411.1107v1) | Theorem 1; Remarks 2/10; §2.1.4; Propositions 3–5 (bounded coverage below) | BKAR expansion with weak cutoff derivatives and explicit boundary terms. | background context | Chart-local connected return | Requires analytic/stability bounds and ultralocal one-site ball cutoffs. The original multilink/history cuts and complete reader norm need a new adaptation. Real hard-event probabilities alone do not satisfy the theorem; no return or continuum result is imported. |
 
+| <a id="b42"></a>B42: [Bauerschmidt](https://arxiv.org/abs/1206.2212v2) | Author: rendered HTML lines33–110; coordinator: versioned abstract/metadata only | Positive finite-range decompositions for symmetric Dirichlet Green forms. | background context | Complete-reader covariance | [PC](POSITIVE_READER_COVARIANCE_ASTRA.md) rebuilds its own patch inverses, positivity and reader bounds. No Dirichlet-form hypothesis or spectral theorem is imported for the actual Hessian. v2 is the recorded read; v3 was not reviewed here. |
+| <a id="b43"></a>B43: [Runa](https://arxiv.org/abs/1510.07604v1) | Author and coordinator: versioned abstract/metadata only | Covariance decomposition for spatially varying gradient Gaussian systems. | background context | Variable-background covariance | A research lead for the actual colour-coupled Hessian; no elliptic-system or coefficient-regularity theorem is consumed. |
+
 The new primary reading and exact coverage are recorded in
 [the coordinator follow-up](checks/full_proof_new_primary_20261029.json).
 
@@ -71,3 +74,8 @@ interface passed to the graded-complement author. It adds no imported theorem.
 The [probability-sensitive expansion coverage](checks/full_proof_probability_expansion_primary.json)
 records B41 and an abstract-only additional lead. Both remain construction
 candidates; neither supplies the unresolved actual return interface.
+
+The [covariance primary-source record](checks/full_proof_covariance_primary.json)
+separates B42/B43 author coverage from the coordinator abstract checks.
+The [independent PC review](REVIEW_POSITIVE_READER_COVARIANCE_ASTRA.md)
+checks the locally rebuilt theorem and imports neither paper.

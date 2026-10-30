@@ -1,0 +1,316 @@
+{
+  "schema_version": 1,
+  "role": "author; independent review pending",
+  "configuration_requested": "Astra/max; request is not backend attestation",
+  "entry_head": "ddc0515e563507c74050d9c55201abb6981d4d69",
+  "observed_head_at_manifest": "97e5a0329f86c8f7581da7878243e3309e657d0f",
+  "methodology_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "revision_context": "97e5a0329f86c8f7581da7878243e3309e657d0f",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "line_count": 568,
+      "read_ranges": [
+        [
+          1,
+          350
+        ]
+      ],
+      "coverage": "Actual model, flat-brick gap, finite-u Hessian, local analytic/coarse derivative proof. Initial combined output was truncated; bounded 80-240 and 240-350 reads supplied the proof-bearing remainder."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "revision_context": "97e5a0329f86c8f7581da7878243e3309e657d0f",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "line_count": 722,
+      "read_ranges": [
+        [
+          27,
+          319
+        ]
+      ],
+      "coverage": "Bounded model/full-reader input and older parametrix context; 27-104 reread separately. No entire-source or later interacting-cluster theorem coverage."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/INTERACTING_SELECTED_CORE_ASTRA.md",
+      "revision_context": "97e5a0329f86c8f7581da7878243e3309e657d0f",
+      "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "line_count": 790,
+      "read_ranges": [
+        [
+          24,
+          260
+        ]
+      ],
+      "coverage": "Actual phase, common complex coarse tube and local derivative/principal inverse mechanism; no later remainder theorem imported."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROBABILITY_SENSITIVE_RETURN_ASTRA.md",
+      "revision_context": "97e5a0329f86c8f7581da7878243e3309e657d0f",
+      "sha256": "6ef027d54bd0ca1948444c9b82c673ed0cae2e23cd59b25f0c53498194e9b18b",
+      "line_count": 544,
+      "read_ranges": [
+        [
+          25,
+          200
+        ],
+        [
+          240,
+          358
+        ],
+        [
+          360,
+          460
+        ]
+      ],
+      "coverage": "Fresh bounded scope/normalization/regulator-forest/consumer reads; complete author knowledge is separately frozen in its original package."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "revision_context": "97e5a0329f86c8f7581da7878243e3309e657d0f",
+      "sha256": "3c39ed64cffd800bb930eda9ee8d7dbde20612e307cd90e512896f1aee34d549",
+      "line_count": 282,
+      "read_ranges": [
+        [
+          1,
+          210
+        ]
+      ],
+      "coverage": "Scoped predecessor review and its limits; no independent reproduction of its numeric evidence."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_INTERACTING_SELECTED_CORE_ASTRA.md",
+      "revision_context": "97e5a0329f86c8f7581da7878243e3309e657d0f",
+      "sha256": "a0bd0a6f68b0f8c64868bacf5371809233e0e864fc7cd37acfcfab14d0691d16",
+      "line_count": 209,
+      "read_ranges": [
+        [
+          1,
+          84
+        ]
+      ],
+      "coverage": "Bounded scoped review; 46-84 reread after a combined output truncation. Other initially displayed review ranges are incidental, not proof authority."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_PROBABILITY_SENSITIVE_RETURN_ASTRA.md",
+      "revision_context": "97e5a0329f86c8f7581da7878243e3309e657d0f",
+      "sha256": "14ca914da1a0c97563d3477fd73b5f3f65be4d14e30ee48231abf6ec90db322d",
+      "line_count": 168,
+      "read_ranges": [
+        [
+          1,
+          100
+        ]
+      ],
+      "coverage": "Scoped predecessor LAND and covariance-pair chain-rule qualification."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD.md",
+      "revision_context": "97e5a0329f86c8f7581da7878243e3309e657d0f",
+      "sha256": "a60232a648e9832d0223cc0fa06ef84d8dbfe54fa91f875a8c96c3f89140aba5",
+      "line_count": 1037,
+      "read_ranges": [
+        [
+          822,
+          891
+        ]
+      ],
+      "coverage": "Actual R15-R17 consumer; direct read of mu_0+2 support margin and product-reference requirement."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "revision_context": "97e5a0329f86c8f7581da7878243e3309e657d0f",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "line_count": 11,
+      "read_ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "coverage": "Complete current owner process reread."
+    }
+  ],
+  "methodology": [
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "line_count": 193,
+      "coverage": "Reused complete prior same-session methodology read, with exact bytes independently rechecked this unit. Prior bounded-output repair record remains in the PS manifest."
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "line_count": 35,
+      "coverage": "Reused complete prior same-session methodology read, with exact bytes independently rechecked this unit. Prior bounded-output repair record remains in the PS manifest."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "line_count": 93,
+      "coverage": "Reused complete prior same-session methodology read, with exact bytes independently rechecked this unit. Prior bounded-output repair record remains in the PS manifest."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "line_count": 434,
+      "coverage": "Reused complete prior same-session methodology read, with exact bytes independently rechecked this unit. Prior bounded-output repair record remains in the PS manifest."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "line_count": 336,
+      "coverage": "Reused complete prior same-session methodology read, with exact bytes independently rechecked this unit. Prior bounded-output repair record remains in the PS manifest."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "line_count": 309,
+      "coverage": "Reused complete prior same-session methodology read, with exact bytes independently rechecked this unit. Prior bounded-output repair record remains in the PS manifest."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "line_count": 126,
+      "coverage": "Reused complete prior same-session methodology read, with exact bytes independently rechecked this unit. Prior bounded-output repair record remains in the PS manifest."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "line_count": 370,
+      "coverage": "Reused complete prior same-session methodology read, with exact bytes independently rechecked this unit. Prior bounded-output repair record remains in the PS manifest."
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "line_count": 354,
+      "coverage": "Reused complete prior same-session methodology read, with exact bytes independently rechecked this unit. Prior bounded-output repair record remains in the PS manifest."
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "line_count": 130,
+      "coverage": "Reused complete prior same-session methodology read, with exact bytes independently rechecked this unit. Prior bounded-output repair record remains in the PS manifest."
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "line_count": 52,
+      "coverage": "Reused complete prior same-session methodology read, with exact bytes independently rechecked this unit. Prior bounded-output repair record remains in the PS manifest."
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "line_count": 233,
+      "coverage": "Reused complete prior same-session methodology read, with exact bytes independently rechecked this unit. Prior bounded-output repair record remains in the PS manifest."
+    }
+  ],
+  "local_instruction_reads": [
+    {
+      "path": "AGENTS.md",
+      "coverage": "Complete current worktree read; no fetch because coordinator owns Git/network integration.",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "line_count": 26
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md",
+      "coverage": "Complete installed router read; immutable observed-main procedure controls.",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "line_count": 140
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/review-loop/SKILL.md",
+      "coverage": "Complete installed router read; immutable observed-main procedure controls.",
+      "sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "line_count": 313
+    }
+  ],
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/html/1206.2212v2",
+      "version": "v2",
+      "read_coverage": "Rendered lines33-110: abstract and opening finite-range/positivity discussion; no theorem import. Abstract metadata also read at /abs/1206.2212v2.",
+      "role": "Background attribution only; every used patch/local-inverse estimate is rebuilt in the author source."
+    },
+    {
+      "url": "https://arxiv.org/abs/1510.07604v1",
+      "version": "v1",
+      "read_coverage": "Versioned abstract/metadata, especially lines8-25; no full-paper read or theorem import.",
+      "role": "Background on variable-coefficient covariance decomposition only."
+    }
+  ],
+  "routing_searches": [
+    {
+      "scope": "Bounded lane filenames and source-keyword searches for coarse tubes, weighted inverse norms and RD support margins",
+      "coverage": "Routing only; proof-bearing spans read directly."
+    },
+    {
+      "scope": "Web search for positive finite-range decomposition with variable coefficients",
+      "coverage": "Only the versioned arXiv sources above used; other results not used."
+    }
+  ],
+  "operational_failures": [
+    {
+      "operation": "Read docs/ai_methodology/SCIENCE_WORKFLOW.md at local main 9ce38a06db4ab4b8457e724fff0d70d88bf1ed81",
+      "result": "Path absent; stale local main was not a valid current methodology source. No mutation or permission path was used.",
+      "recovery": "Read origin/main01589af3faf806b736c42dc2f3bd625e9edead9f and checked every reused methodology hash against the earlier PS manifest."
+    }
+  ],
+  "protected_ps_packet": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROBABILITY_SENSITIVE_RETURN_ASTRA.md",
+      "sha256": "6ef027d54bd0ca1948444c9b82c673ed0cae2e23cd59b25f0c53498194e9b18b",
+      "bytes": 29552,
+      "current_sha256": "6ef027d54bd0ca1948444c9b82c673ed0cae2e23cd59b25f0c53498194e9b18b",
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/probability_sensitive_return_read_manifest.json",
+      "sha256": "7cfda3d8bd2dd1faf0962979de95d253432ae83d3f1cbfd277964e42d3f73c94",
+      "bytes": 12781,
+      "current_sha256": "7cfda3d8bd2dd1faf0962979de95d253432ae83d3f1cbfd277964e42d3f73c94",
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/probability_sensitive_return_identity_check.json",
+      "sha256": "f07e55fafc7b4c4805e85375c802bc06087378cb1b10a2ae3646f4ccbb83b6ea",
+      "bytes": 3328,
+      "current_sha256": "f07e55fafc7b4c4805e85375c802bc06087378cb1b10a2ae3646f4ccbb83b6ea",
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/probability_sensitive_return_author_checks.md",
+      "sha256": "8bec9657c3b9d7f56ce7d25441eedc08bf7c94f8a82ec99a9966236b2e1632fe",
+      "bytes": 3917,
+      "current_sha256": "8bec9657c3b9d7f56ce7d25441eedc08bf7c94f8a82ec99a9966236b2e1632fe",
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/probability_sensitive_return_receipt.json",
+      "sha256": "818e4790a5ba9f2e1d49e4ddcd3f232f811e7c6ad6c6301496e9b12ccdee495c",
+      "unchanged": true,
+      "expected_sha256_from_prior_freeze": "818e4790a5ba9f2e1d49e4ddcd3f232f811e7c6ad6c6301496e9b12ccdee495c"
+    }
+  ],
+  "not_consumed": [
+    "OUTSIDE_CHART_RETURN_ASTRA.md or its reviews",
+    "Any actual interacting probability as a product-reference bound",
+    "An inherited-history/effective-level theorem",
+    "An external covariance decomposition theorem"
+  ],
+  "numerical_experiments": [],
+  "scope": "New positive Gaussian reference construction only. No no-go, continuum, physical-gap, integrated return or independent-LAND claim."
+}

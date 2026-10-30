@@ -368,9 +368,20 @@ are OPEN. PS14 is a covariance-pair derivative; a forest-parameter derivative
 must pay the full chain rule. The [B41 candidate](LITERATURE_BRIDGES.md#b41)
 remains background only.
 
-New author work targets positive covariance decompositions with complete
-original-data readers. Its purpose is to repair the unresolved positivity/
-locality interface; no new result from that active work is adopted yet.
+The [complete-reader covariance construction](POSITIVE_READER_COVARIANCE_ASTRA.md)
+now has a [fresh independent scoped LAND review](REVIEW_POSITIVE_READER_COVARIANCE_ASTRA.md).
+Its actual finite-u lift covariance has a positive local core, a small
+absolute signed remainder and a uniform complex interpolation domain.
+Whole-reader weakening preserves coefficient locality and normalized
+Gaussian factorization. Its rate is only `beta=(16R)^(-4)`; the existing
+RD two-unit weight loss is not matched. The regulator must use the new
+precision `a_C/U^2`, with auxiliary and source radii checked again.
+
+New author work addresses repeated chart-boundary estimates and the joint
+source/coarse-domain match of the existing actual critical fields, followed
+by their covariance. Those unfinished arguments are not adopted as premises.
+SA13 and IC12 already construct critical fields on their respective domains;
+the older uniform-soft-minimizer unit concerns the u-stripped tree phase.
 
 Concurrent progress through `cc1de55f5b` is recovered. [RD pass 2](RD.md)
 has an independent [HOLD review](REVIEW_RD_R2.md): its explicit finite H12
@@ -428,8 +439,13 @@ Current assignments use the requested `gpt-6-astra / max` configuration:
 - **Probability-sensitive chart regulator — scoped review completed:** exact
   identities and the regulator have fresh independent LAND. The matching
   reference, all-order summation and connected activity theorem remain open.
-- **Positive covariance with complete readers — active author:** construct an
-  exact decomposition that preserves positivity during reader-local weakening.
+- **Positive covariance with complete readers — scoped review completed:**
+  actual lift covariance, positivity/locality and Gaussian factorization LAND;
+  small support rate and changed precision remain explicit consumer restrictions.
+- **Chart-boundary estimates — active author:** repeated traces and Gaussian
+  cutoff components, retaining the nonlinear-interaction obligations.
+- **Joint critical-field domain and covariance — active author:** match the
+  existing SA/IC fields and preserve their original source/coarse readers.
 - **Reconstruction consumers — scoped affected review completed:** the growth,
   translation and tensor contracts are aligned; the independent singleton
   finding and its explicit sufficient-assumption repair remain recorded.

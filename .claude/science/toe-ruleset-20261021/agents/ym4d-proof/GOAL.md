@@ -66,11 +66,15 @@ for independent acceptance, and all six critical obligations remain open.
 The next substantial construction must address the actual inherited-law return
 and reserve regeneration, or discharge a named consumer obligation at that scope.
 More bounded bare lemmas are not, by themselves, progress on that induction.
-The coordinator's unchecked continuation in GLOBAL_RETURN_HISTORY_ASTRA section 13
-now places the actual first RD completion/failure markers inside the original
-integral and writes their exact second-step density, including Z_cut,0/b_1.
-Its proposed source-only coefficient bound is not independently checked; it
-does not supply the second-step estimate, its full field jets or its complement.
+GLOBAL_RETURN_HISTORY_ASTRA section 13 places the actual first RD completion/failure
+markers inside the original integral and writes their exact second-step density,
+including Z_cut,0/b_1. A scoped independent review checked those finite identities,
+readers and marker bookkeeping. It found a coefficientwise-supremum omission;
+the corrected completion-outcome count fits the existing colour allowance and
+was confirmed in the same reviewer session. See the
+[affected confirmation](checks/gate_inherited_markers_fbe0652b18_affected_confirmation.md).
+The proposed GH49 bound and its prior forest chain remain unverified. This does
+not supply the second-step estimate, its full field jets or its complement.
 A conditional lemma is a checkpoint, not a completed global return. Do not turn
 an outside-law estimate or an individual-sign inequality into a new assumption.
 

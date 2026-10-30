@@ -1,0 +1,26 @@
+# Inherited failure markers: source-first scoped review
+
+Initial findings frozen before author routing context or source correction, at UTC 2026-10-30T18:25:00.694621+00:00. This report concerns only GLOBAL_RETURN_HISTORY_ASTRA.md section 13, lines 862–1015, at `fbe0652b18191192c849673507ddc9d41361aaec`. The accompanying receipt records exact dependency windows. Earlier forest estimates are not certified.
+
+**Material finding — coefficientwise supremum requires a counted envelope (lines 925–931, 948–967).** At fixed real U_1, disjoint failure outcomes give the stated pointwise coefficient sum. GH49 instead sums the supremum of each coefficient over the output domain. Completion outcomes can change with U_1; in general `sup_x sum_i f_i(x) <= C` does not imply `sum_i sup_x f_i(x) <= C`, even for disjoint nonnegative indicators. Source-only differentiability removes a derivative of that selector, but does not remove this supremum issue. This is a missing inference, not a counterexample to GH49 itself.
+
+A narrow repair is available at the primitive counting level. After the real Haar pullback, the original bad set B_A uses only block-interior integrated variables and is independent of U_1. For each such B_A, let its disjoint G_2 components be Y_1,...,Y_k. Bounding the possible failure subsets before taking output/buffer suprema gives the positive weighted envelope
+
+    r_cut^(|B_A|/2) product_(i=1)^k [1+r_cut^(|Y_i|/2)]
+      <= 2^k r_cut^|B_A| <= 2^|A| r_cut^|B_A|.
+
+Use GH43 once to absorb the last r_cut power, in the same pointwise normalized-density envelope used for GH44. The remaining combinatorial factor costs at most 2^|A| per marked core. Adding its unmarked D colour gives `1+2^|A| <= 3^|A|`; multiplying over disjoint cores gives 3^n_g. This fits the EXISTING GH23 `log 3` allowance, using the direct D-plus-mark counting of lines 646–658, with b_in=0 and without an additional independent radius-two lambda multiplier. Do not charge both this count and an extra copy of that colour allowance. The source should state this envelope before claiming the coefficientwise-sup norm is inherited. This repairs the changed-species counting only; it does not verify the preceding density/reader forests.
+
+**Independently checked finite statements.**
+
+- GH47 (lines 875–891): at every configuration the RD R3 sum has one original bad set and one complete failure list, including absences. Multiaffine coefficient extraction therefore gives rho_(1,F), with incompatible and zero-mass lists retained as zero. Setting all t to zero gives the same all-cut integral; setting t=z=1 gives the full effective density.
+- Reader assignment and GH48 (lines 893–918): G_2 components cannot cross distinct q-bad cores separated by more than r>=4. H11 reads the radius-one completion collar and C(Y); maximality additionally reads the radius-two bad-set boundary. These lie in Gamma_A; the N_r(A) goodness factors must remain. On ell_a, the R-minus-A cuts hold, so P_A-chi_R is zero for empty B_A and is the single monomial otherwise. The local compact integral must include completion selectors before any readers are integrated. This verifies the changed-species finite factorization relative to the stated GH10–GH13 partition, not a new proof of the original chart/forest construction.
+- The fixed-output joint price (lines 920–931) is correct: disjoint failed components give `( |B_A| + sum_(Y in F_A)|Y| )/2 <= |B_A|`. No second original-action reserve is available.
+- Source convention and hard predicates (lines 933–946): J_p=u_0 epsilon_p, with kernels fixed, matches the original action source. At fixed real U_1 the actual selectors are source independent after the source-independent Haar pullback. Dominated differentiation of finite compact integrals acts on density and normalizers. It supplies source jets, not U_1 derivatives or holomorphic completion tests. RGA3 source weights are retained.
+- GH50–GH51 (lines 969–1009): the partition formula follows by differentiating exp(Theta) in distinct failure variables and retains exp(Theta(0)), including F empty. The exact ratio on arbitrary real U_1 uses the positive Z_cut denominator. Multiplying its three displayed factors gives rho_(1,F)/b_1, and Fubini gives JMBRA's complete second-step numerator with all current outcomes summed. Neither the source compensator nor Z_cut,0/b_1 can be omitted or treated as rare. Outside D_0 only the original integral, not GH49, is available.
+
+**Boundary.** GH49 is expressly a proposal. This review does not establish its uniform connected estimate, the earlier GH11–GH46/WR forest chain, field jets after the next integration, reserve regeneration, repeated RG, non-free continuum existence or a positive physical continuum mass gap. No external primary paper was read or imported. No author route, GOAL, PR body or prior review results were read. Requested configuration is Astra/max; backend attestation is unavailable. Preflight returned go; no scientific job, source or Git mutation, or subworker occurred.
+
+The initial scoped source is held for the explicit coefficientwise-sup clarification above. An affected confirmation may permit landing it as finite identities plus an openly unproved quantitative proposal; that will not accept GH49 as a theorem.
+
+VERDICT: HOLD

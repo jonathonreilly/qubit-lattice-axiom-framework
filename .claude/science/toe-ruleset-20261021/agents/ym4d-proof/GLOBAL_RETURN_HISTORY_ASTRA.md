@@ -930,6 +930,30 @@ GH44. There is no new action reserve, no sum over all candidate labels at
 a fixed configuration, and no r_cut^|A| factor. Any other regulator must
 share the single allocation as specified after GH44.
 
+That pointwise coefficient sum alone does not justify the coefficientwise
+output supremum in GH49. For the latter first fix the pulled-back original
+bad set B_A and its G_2-components Y_1,...,Y_k. These original cut predicates
+depend on the integrated interior Z variables and not on U_1 or J. As
+output and buffer data vary, the completion outcomes lie among the subsets
+of these k components. Take a common uniform positive normalized-density
+and ordered-source-score envelope, as in GH16--GH18, BEFORE taking the
+coefficientwise suprema. The sum of possible marker weights is then bounded by
+
+    r_cut^(|B_A|/2) product_(i=1)^k [1+r_cut^(|Y_i|/2)]
+       <=2^k r_cut^|B_A| <=2^|A| r_cut^|B_A|.
+
+The fixed original-bad-set indicators can still be summed inside that
+common integral. Pay r_cut^|B_A| from GH43--GH44 once. The additional
+completion-outcome count costs at most 2^|A|, which must remain in the
+marked primitive envelope. Including the unmarked D colour gives
+1+2^|A|<=3^|A|. Thus use the direct D-plus-mark count of GH36--GH37,
+with b_in=0 and the existing log 3 term in GH23. Do not also insert an
+independent radius-two lambda multiplier or a second colour allowance.
+Every subsequent positive forest majorant uses this coefficientwise
+envelope; the preceding pointwise disjointness estimate is insufficient
+for that purpose. This repairs the changed-selector count, while the
+unreviewed forest bounds themselves remain the proposed input to GH49.
+
 The completion selector is source independent but can be discontinuous
 in the OUTPUT U_1. For this extension use only
 

@@ -113,6 +113,36 @@ class FullBuildLedgerTransitionTest(unittest.TestCase):
             ok, detail = operation()
             self.assertTrue(ok, detail)
 
+    def _sparse_listing(self, blob_id):
+        def fake_run_git(args):
+            if args[:2] == ["ls-files", "-s"]:
+                return subprocess.CompletedProcess(
+                    [], 0, f"H 100644 {'c' * 40} 0\tsource.txt\nS 100644 {blob_id} 0\tgone.txt\n", ""
+                )
+            return subprocess.CompletedProcess([], 0, "source.txt\ngone.txt\n", "")
+        return mock.patch.object(checkpoint, "run_git", side_effect=fake_run_git)
+
+    def test_sparse_excluded_input_binds_its_index_blob(self):
+        with self._sparse_listing("a" * 40):
+            first = self.fingerprint(True)
+            self.assertEqual(first, self.fingerprint(True))
+        with self._sparse_listing("b" * 40):
+            self.assertNotEqual(first, self.fingerprint(True))
+
+    def test_sparse_flagged_file_present_on_disk_is_read(self):
+        (self.repo / "gone.txt").write_text("v1")
+        with self._sparse_listing("a" * 40):
+            first = self.fingerprint(True)
+            (self.repo / "gone.txt").write_text("v2")
+            self.assertNotEqual(first, self.fingerprint(True))
+
+    def test_missing_input_without_sparse_flag_still_fails_closed(self):
+        listed = subprocess.CompletedProcess([], 0, "source.txt\ngone.txt\n", "")
+        with mock.patch.object(checkpoint, "run_git", return_value=listed):
+            digest, detail = checkpoint.static_input_fingerprint(include_ledger_static=True)
+        self.assertIsNone(digest)
+        self.assertIn("cannot read static input gone.txt", detail)
+
     def test_source_mutation_still_rejects_prepare(self):
         self.assertTrue(checkpoint.begin_checkpoint()[0])
         (self.data / "citation_graph.json").write_text('{}')

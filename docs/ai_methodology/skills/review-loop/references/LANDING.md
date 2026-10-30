@@ -95,12 +95,24 @@ review-only flags contradict the drain's land-end-to-end contract).
    git -C "$REPO_ROOT" worktree add -q "$WT" <branch-or-ref>
    ```
 
-   Apples-to-apples measurement from the same object store on 2026-08-14 was
-   343.6 MiB for a fresh full worktree and 326.3 MiB for the proposed sparse
-   baseline, only about 5% less. Review and pipeline inputs span every root,
-   so a sparse default adds omission risk without a material disk benefit.
-   Use a normal full worktree; the operational gain comes from prompt cleanup,
-   not from counting the shared Git object store as part of every checkout.
+   Measured on 2026-10-30, a full worktree is 1.9 GB and 92,556 files. For a
+   combined validation worktree, which only runs the pipeline and its gates,
+   use the tested sparse set instead (542 MB, 33,891 files):
+
+   ```bash
+   git -C "$REPO_ROOT" worktree add -q --no-checkout "$WT" <branch-or-ref>
+   git -C "$WT" sparse-checkout set --no-cone --stdin \
+     < "$REPO_ROOT/docs/audit/pipeline_sparse_patterns.txt"
+   git -C "$WT" read-tree -mu HEAD
+   ```
+
+   Keep a full worktree for a unit whose runners you re-execute: their inputs
+   may be evidence archives this set omits. A file missing for that reason is a
+   checkout problem, not a science failure; add it with
+   `git -C "$WT" sparse-checkout add <path>`. The generated queue also
+   under-counts evidence-ready rows here, because readiness looks for those
+   files on disk. Validation discards that output, but never use this set for
+   the nightly refresh or an audit run.
 
    For disposable worktrees the `trap` is not optional: it removes a verified-clean worktree on normal
    exit and catchable INT/TERM termination. The shared cleanup helper preserves

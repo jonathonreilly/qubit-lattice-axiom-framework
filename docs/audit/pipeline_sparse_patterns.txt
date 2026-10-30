@@ -1,0 +1,13 @@
+/*
+!/.claude/science/
+!/archive/
+!/archive_unlanded/
+!*.gz
+!*.b64
+!*.blob
+!*.npz
+!*.npy
+!*.stdout
+!*.tar
+!/docs/work_history/**
+/docs/work_history/**/*.md

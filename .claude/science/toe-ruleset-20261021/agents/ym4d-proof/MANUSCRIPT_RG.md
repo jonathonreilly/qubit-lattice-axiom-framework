@@ -22,16 +22,17 @@ They are four specified obligations of the same return problem, not four
 independent obstructions. In particular, the general-N problem remains open
 already at N=2.
 
-**Current attempt; counted progress: 0.** The latest instruction requires
-closure of an entire U1--U4 obligation or an actual-model counterexample
-to one of them. This run tests (A) and regeneration directly under the full
-posterior at arbitrary finite depth. Section 4.27 tries a global positive
-kernel contraction and then a posterior variance estimate. The first loses
-uniformity in coupling and volume. The second requires a successor curvature
-bound that has not been derived from H(j). Neither closes an obligation or
-shows one false. No change to H(j) is justified by these failures. The
-first-step constructions in sections 4.9--4.26 are not counted as progress
-on this run and are not extended here.
+**Current attempt; counted progress: 0.** Section 4.28 tests conditional
+covariance under the full posterior at arbitrary finite depth. Its causal
+comparison bounds a specified original conditional-excitation insertion
+with the actual denominator retained. Promotion to the return fails:
+small conditional excitation does not exclude strongly rough minima;
+its excitation regulator is weaker than the original-action regulator;
+and neither connected posterior supports nor the inherited charge costs
+are controlled. The literal regulator's extra minimum-energy cost is kept
+in PC8r. No U1--U4 obligation closes or is shown false. H(j) is unchanged.
+The first-step constructions in sections 4.9--4.26 are not counted as
+progress on this run and are not extended here.
 
 **Hardest remaining inequality.** For the actual backward measure
 
@@ -58,11 +59,12 @@ common full posterior. Its same-exterior composition test is in section 4.17.
 CC13 proves a restricted first response with a common-cap fluctuation price.
 It has no all-history or (6;[4]) extension, and CC14 records the failed
 attempt to turn its distance decay into the required support-size norm.
-The object to control in this run is pi_j^V itself, with all histories
-summed, followed by H0--H4 at j+1. PP1--PP5 in section 4.27 retain this
-measure exactly. Their identities do not give a summable connected
-majorant or a contraction after extraction. In particular the curvature
-of log rho_(j+1) in PP5 is an unknown output, not an available input.
+The object to control is pi_j^V itself, with all histories summed,
+followed by H0--H4 at j+1. The new decomposition PC1 retains both the
+conditional covariance and the covariance of conditional means. PC8/PC9
+bound the latter's specified excitation contribution, but not the rough
+minima in PC11 or the inherited good-component term. A forward causal
+cone is not the complete support of a backward conditional expectation.
 An index path, a stationary branch, or a Gaussian determinant is not (A).
 
 **Order of constants.** Fix N, odd L>=3, kappa>0, the exact contour convention,
@@ -105,6 +107,12 @@ enough that 2496(exp(lambda_u)-1)exp(81sigma_0+a)<1. This proves
 only the displayed component sum before Gaussian integration.
 TR1 is fixed before local extraction; the leading tree/Wilson difference
 is no longer offered as a bounded residual on the epsilon domains.
+For PC1--PC10 fix the original sets D_i, their actual reader cones,
+0<Delta_i<=1 and 0<=b_i<1 before taking any large-coupling limit.
+Then delta_i=(1-b_i)Delta_i/(12|D_i|) and c_H=8/(3pi^3) are explicit.
+The terminal likelihood cost, original minimum-energy cost and previously
+spent fractions stay in the displayed bounds. Their negativity tests do
+not select jointly feasible H5 constants or regenerate H4.
 
 **Routes tested and present decisions.**
 
@@ -253,33 +261,56 @@ is no longer offered as a bounded residual on the epsilon domains.
   has been obtained from H(j); even a scalar variance bound would leave
   complete supports, original source cumulants and the reserve recursion
   unpaid. PP6 records this failure without adding a fifth obligation.
+* **New causal comparison; failed promotion to (A):** condition on the
+  full outside path and use its autonomous forward factorization. PC8
+  bounds original conditional-excitation events under the actual pinned
+  posterior, with a terminal cost exp(2t_j |D_(j+1)|) and no outside-volume
+  or intermediate-time factor. It does not make the backward expectation
+  depend only on that cone: the outside path's posterior law changes with V.
+  Neither complete connected supports nor their mixed jets are controlled.
+* **Failed good-sector classification:** the actual zero-staple exterior
+  has H_D=min H_D=6 for every core link, while at least one incident
+  plaquette has f_p>=1. PC11 extends this failure to an open exterior set.
+  Thus conditional excitation can be zero throughout a strongly rough
+  component. Its minimum energy remains in the outside posterior and
+  cannot be removed as a harmless scalar. This rejects the candidate
+  classification, not U1--U4, which never assumed that classification.
+* **Failed reserve promotion, with the missing cost restored:** PC7
+  bounds exp(bu_0(H_D-min H_D)); that is weaker than exp(bu_0 H_D).
+  PC8r keeps the missing factor and its bound exp(12|D|bu_0). Previous
+  fractions a replace 1-b by 1-a-b and also enter that minimum-energy
+  cost. Repeating the terminal likelihood comparison on the fixed
+  eight-link reader star spends 16kappa sum_l u_l, exceeding a finite
+  localized original reserve on long constant-coupling prefixes. The
+  uniform single-terminal estimate does not multiply those costs; what
+  failed is the attempted recursive accounting of inherited majorants.
 
-**Hostile check of the newest step.** The likelihood extrema in PP1/PP2
-can have negligible posterior mass. A large projective distance does not
-prove a large covariance for an admitted local F_X. PP3's maximizing pair
-is gauge equivalent; PP4 supplies distinct holonomy traces but changes an
-extensive set of links. Neither tests the extracted local operator norm.
-PP5 has the positive variance sign: differentiating log rho twice adds
-Var(score), so it cannot be used as an upper variance bound without an
-upper bound on the output curvature. The input H(j) is not that bound.
-Source differentiation produces further connected cumulants. No such
-cumulants, spatial decay, coherent-failure prices or successor domains
-have been bounded in this run. These checks reject a claimed closure or
-counterexample. U1--U4 remain GAP; no independent reviewer or retained-grade
-status has been added.
+**Hostile check of the newest step.** PC4 conditions on all outside past
+fields, not just the final exterior. Only at that level do earlier inside
+kernels integrate to one. Its denominator is the same conditional terminal
+integral as its numerator. The final average uses the actual posterior
+law of the outside path, which is not independently local. The excitation
+and original-action regulators have different bounds; PC8r preserves that
+difference. The positive-mass frustrated-minimum example refutes only the
+new candidate good/bad rule. Its full posterior mass might still be small
+because of original exterior action. The fixed reader star likewise says
+nothing about persistence of a rough field. A single-terminal comparison
+may be reused for an unweighted event, but dropping previously inserted
+history majorants would change the question. These checks leave U1--U4
+GAP, with no induction edit, independent reviewer or retained-grade status.
 
-**Next decision.** Keep the full posterior and test the exact conditional
-covariance decomposition over retained rough-field readers. Its first term
-is the average conditional covariance on good components; its second is
-the covariance of their conditional means. A useful estimate must bound
-both from H(j), including the second term's unused original-action charges,
-and regenerate those charges at j+1. The bare convex-cap estimate does not
-bound either term for an arbitrary inherited action. Do not return to
-first-step prefactors as counted progress, assume H(j+1) to estimate PP5,
-or infer falsity of U1--U4 from failure of a stronger global metric.
+**Next decision.** Attack the contribution of frustrated minima in the
+actual outside-path posterior from PC4. Enlarge a repair set only when
+its boundary readers and original plaquette charges are retained; test
+whether the enlarged comparison pays the absolute minimum energy as well
+as the excitation. The resulting covariance of conditional means still
+needs a connected bound in H3 and a recursion with the actual previously
+spent fractions. Do not identify a forward cone with posterior locality,
+restart the raw comparison after deleting history costs, or count another
+specified insertion estimate as closure of U1--U4.
 
 Working source: branch claude/push-A. This continuation starts from the
-driver checkpoint `721f2305fc3470eb61661ae808799125fe6b885b`; the initial
+driver checkpoint `dcfa672824139701dbaa44af36027e12ce4e6407`; the initial
 manuscript started at `a98f6eb20c89c5792b9db362b860fd1f43670665`.
 The locally recorded main ref is
 `bcab5d2ee4a908fbb4e6025635fb878e6c157ebe`; remote freshness is not certified.
@@ -3258,7 +3289,231 @@ be circular. None of these calculations establishes the required local
 bound (A), pays the bad-sector covariance, or justifies dropping tensor
 extraction. The failure is confined to these two proposed estimates.
 
-### 4.28 Verification, attribution, and claim boundary
+### 4.28 Conditioning on rough fields: a causal comparison and its failed return
+
+The new route disintegrates the actual full posterior. Everything below
+is at N=2 and zero sources.
+It supplies a comparison for specified original conditional excitations at
+every finite depth. It does not close U1--U4; counted progress is zero.
+
+**PC1 — PROVEN (both covariance terms retained).** For any fixed sigma
+field R of past readers, with pi=pi_j^V and s_c=D_c log k_j,
+
+    Cov_pi(F,s_c)=E_pi[Cov_pi(F,s_c | R)]
+                    +Cov_pi(E_pi[F | R],E_pi[s_c | R]).     (PC1)
+
+In particular, for a past event E independent of the terminal variable,
+put p=pi(E), G=E^c, f_E=E_pi[F|E], s_E=E_pi[s_c|E], and similarly on G.
+Zero-mass terms are omitted. Expanding the same normalized expectations gives
+
+    Cov_pi(F,s_c)=(1-p)Cov_G(F,s_c)+p Cov_E(F,s_c)
+                     +p(1-p)(f_E-f_G)(s_E-s_G),
+    D_c p=p(1-p)(s_E-s_G).                                (PC2)
+
+Thus a convexity estimate within each sector would leave the last term.
+The p here is a probability under the common full posterior; substituting
+an original or forward probability for it is not an identity.
+
+**PC2 — PROVEN (causal disintegration of the full path).** Fix a set D_0
+of d>=1 original links. Recursively let D_(l+1) contain every output link
+whose actual paired contours read a link in D_l. These sets depend on
+the geometry, not on field values. Write z=U_0 restricted to D_0 and
+w=U_0 outside D_0. Every kernel for a link outside D_(l+1) reads only
+variables outside D_l. Consequently the entire outside path eta is an
+autonomous Markov chain given w; its density is independent of z. Given
+eta, all the inside kernels remain normalized transition densities.
+This is a factorization of the original positive path density, with all
+history selectors summed. It is not independence under the pinned law.
+
+Let q_(eta,j)(z;V_D) be the density of the terminal variables in D_(j+1),
+conditional on eta and z, after integrating the earlier inside variables.
+For a quaternion mean of norm r<=1, write Z(s)=Z_s(I). Monotonicity of
+e^s/Z(s) and e^(-s)/Z(s) follows by differentiating their logarithms:
+the derivatives are 1-E_s cos(theta)>=0 and -1-E_s cos(theta)<=0.
+Therefore every actual last kernel satisfies
+
+    a_t=e^(-t)/Z(t) <= k_t(V;M) <= e^t/Z(t)=b_t,
+    a_t^m <= q_(eta,j)(z;V_D) <= b_t^m,
+    b_t^m/a_t^m=exp(2t m),  m=|D_(j+1)|, t=t_j.          (PC3)
+
+The middle inequality integrates normalized earlier inside kernels.
+No factor from an earlier level, or from the outside volume, is discarded.
+If mu_0^w is the original Wilson conditional law of z, the conditional
+law inside the actual pinned posterior is exactly
+
+    pi_j^V(dz | eta)
+      =mu_0^w(dz) q_(eta,j)(z;V_D)
+        / int mu_0^w(dz') q_(eta,j)(z';V_D).              (PC4)
+
+For any nonnegative original insertion A(z,w), PC3/PC4 imply
+
+    E_(pi_j^V)[A | eta] <= exp(2t_j m) E_(mu_0^w) A.      (PC5)
+
+The denominator is the actual conditional terminal integral. Averaging
+PC5 over the actual posterior distribution of eta preserves this bound
+whenever its right side is uniform in w.
+
+The cone has a depth-independent cardinality bound for a local D_0.
+Let q_0 be the number of original blocks meeting its endpoints. Every
+paired contour stays within its two endpoint blocks, including their
+connecting edges. Output endpoints therefore lie in N_1 of the block
+projection of the input endpoints. The elementary inclusion
+pi(N_2 S) subset N_1(pi S), valid for odd L>=3, gives by induction at
+most q_0 translates of an N_2 ball at every subsequent scale. Hence
+
+    |D_(l+1)| <= m_*=4(5^4)q_0=2500q_0.                 (PC6)
+
+Periodic identification only decreases cardinality. This is a forward
+reader cone, not the complete support of a posterior expectation.
+
+**PC3 — PROVEN (an original excitation price with an excitation weight).**
+Let P(D_0) be the original plaquettes reading D_0 and define, at fixed w,
+
+    H_D(z;w)=sum_(p in P(D_0)) f_p(z,w),
+    m_D(w)=min_z H_D(z;w),  e_D(z;w)=H_D(z;w)-m_D(w),
+    E_D={e_D>=Delta},  0<Delta<=1.
+
+The compact minimum exists. Fix 0<=b<1, gamma=1-b and
+delta=gamma Delta/(12d). Changing each of the d links by operator distance
+at most delta changes H_D by at most 6d delta: each link belongs to six
+plaquettes and the unitary product telescoping bound gives one delta per
+incidence. A product ball about a minimizer therefore has e_D<=gamma Delta/2.
+The probability Haar mass of an SU(2) operator ball of radius delta<=1
+is at least c_H delta^3, c_H=8/(3 pi^3). Indeed it contains the angle
+ball 0<=theta<=delta, whose radial density is (2/pi)sin^2(theta), and
+sin(theta)>=2theta/pi on this interval. It follows directly that
+
+    E_(mu_0^w)[1_(E_D) exp(b u_0 e_D)]
+      <=(c_H delta^3)^(-d) exp(-gamma u_0 Delta/2).        (PC7)
+
+For completeness, the numerator before normalization is at most
+exp(-u_0 m_D-gamma u_0 Delta), while the denominator is at least
+(c_H delta^3)^d exp(-u_0 m_D-gamma u_0 Delta/2). Their common minimum
+energy cancels. No claim that m_D(w)=0 or that a minimizer is smooth is made.
+This estimates the excitation regulator exp(b u_0 e_D). Although e_D<=H_D,
+a bound on this smaller regulator does not bound exp(b u_0 H_D).
+
+**PC4 — PROVEN (bound under the actual full posterior).** Combining
+PC5 and PC7, for every terminal V, finite depth and positive coupling prefix,
+
+    E_(pi_j^V)[1_(E_D) exp(b u_0 e_D)] <= A_(D,j),
+    A_(D,j)=(c_H delta^3)^(-d)
+              exp(2 kappa u_j |D_(j+1)|-gamma u_0 Delta/2). (PC8)
+
+To retain a literal fraction of the incident original action, keep
+exp(b u_0 m_D(w)) as well. Since 0<=m_D<=H_D<=12d, the actual bound is
+
+    E_(pi_j^V)[1_(E_D) exp(b u_0 H_D)]
+       <=A_(D,j)^full:=exp(12d b u_0) A_(D,j).            (PC8r)
+
+The extra cost cannot be deleted. Smallness of this full-regulator bound
+requires 12d b+2 kappa (u_j/u_0)|D_(j+1)|<gamma Delta/2, with further
+room for the prefactor. This is not a regenerated H2 certificate.
+
+In particular p<=min(1,A_(D,j)) when b=0. As |s_c|<=t_j h_c,
+for a bounded past F with no explicit terminal dependence,
+
+    |D_c E_(pi_j^V)[F 1_(E_D) exp(b u_0 e_D)]|
+       <=2t_j h_c ||F||_infinity A_(D,j).                (PC9)
+
+The full-regulator insertion obeys the same bound with A_(D,j)^full.
+This is an actual normalized response estimate for this insertion,
+not for the unweighted full F in (A). The mixture term in PC2 is likewise
+at most 2t_j h_c osc(F) A_(D,j) with b=0. Its good-sector covariance
+remains to be bounded. These bounds are useful only when their displayed
+exponent is sufficiently negative. For example, if u_j<=u_0 and
+2 kappa m_*<=gamma Delta/4, PC8 has exponent at most -gamma u_0 Delta/4.
+This implication is not a feasible choice of all the H5 constants.
+
+There is also a joint version without separate posterior normalizations.
+For original sets D_i whose incident plaquette sets are disjoint, their
+original conditional laws factor after fixing the common exterior.
+Repeat PC3 for each i and use the union of their causal cones in PC2.
+Then
+
+    E_pi product_i [1_(E_(D_i)) exp(b_i u_0 e_(D_i))]
+      <= product_i (c_H delta_i^3)^(-d_i)
+         exp(2t_j |union_i D_(i,j+1)|
+                    -u_0 sum_i (1-b_i)Delta_i/2).        (PC10)
+
+Overlapping terminal cones are integrated jointly; they do not produce
+independent conditional probabilities. To replace every e_(D_i) by H_(D_i),
+multiply the bound by exp(12u_0 sum_i d_i b_i), as in PC8r. Disjoint original
+plaquette sets prevent repeated allocation to a plaquette in this one
+comparison. PC10 is not asserted for overlapping incident sets without
+an additional allocation argument, or for previously spent fractions.
+
+**PC5 — PROVEN failure of the proposed good-sector classification.**
+The excitation complement e_D<Delta need not have small plaquettes or
+good-region convexity. Use the actual zero-staple core of RC2 at y=0:
+D_0 is U_1(0)=q, the three positive parallel neighbors are I, the three
+negative parallel neighbors are -I, and the transverse links are I.
+Its six plaquette costs are three copies each of 1-q_0 and 1+q_0. Thus
+
+    H_D(q;w)=m_D(w)=6,  e_D(q;w)=0 for every q,
+    max_(p in P(D_0)) f_p(q,w)>=1 for every q.            (PC11)
+
+This is not just an isolated exterior. If every incident exterior link
+lies within operator distance epsilon of those values, each three-link
+staple changes by at most 3epsilon. Their sum has quaternion norm at
+most 18epsilon, so max_q e_D<=36epsilon. At least one plaquette cost
+is >=1-3epsilon for every q. Taking epsilon=Delta/100 gives e_D<Delta
+everywhere in this core, while a plaquette cost remains >=1/2. This
+finite exterior cylinder has positive mass under every finite full
+posterior, by strict positivity. No uniform lower bound on that mass
+is claimed. The price in PC7 deliberately cancels m_D; it therefore
+does not pay for these frustrated minima. The surrounding original
+action may pay for them, but that joint comparison is still required.
+The candidate rule "small conditional excitation implies good field"
+is rejected. It was not a clause of H(j), so PC11 refutes none of U1--U4.
+
+**PC6 — GAP (regeneration and complete supports).** PC8 is a bound for
+one terminal level, already uniform in depth when its scalar exponent
+condition holds. It can be reapplied to the same unweighted original
+event without multiplying costs. This does not justify deleting the
+majorants and allocated charges of an inherited history. If a previous
+majorant is bounded by exp(a u_0 H_D), the full-regulator calculation uses
+gamma=1-a-b and the cost 12d(a+b)u_0, not gamma=1-b and 12d b u_0.
+Previously spent fractions do not reset.
+
+Multiplying the comparison at each level is another possible attempt,
+and fails a direct budget check. At L=3, the actual contour reader cone
+of the root link is the eight links incident to the root after one step;
+that star maps to itself. Repeated PC5 estimates therefore spend
+16 kappa sum_(l<R) u_l, before the Haar prefactors. A fixed fraction
+of this core's original action is at most 12d u_0. For a prescribed
+constant positive coupling prefix the first quantity is unbounded in R
+and the second is fixed. This rejects repeated payment by that finite
+reserve. It does not reject the single-terminal estimate or prove that
+the actual connected operator requires such repeated payments.
+
+Finally, the forward cone is not a posterior support theorem: changing
+outside terminal fields changes the posterior law of eta in PC4/PC5.
+That law includes the original exterior and its correlations. No bound
+on this dependence in the complete connected norm has been proved.
+Neither the conditional covariance on inherited good components nor
+the covariance of conditional means on the excitation complement, which
+contains PC11's fields, is controlled by PC8. The mixed source/field
+hierarchy and successor domain/reserve
+clauses are also unproved. U1--U4 remain GAP; none has been shown false,
+and no edit of the current induction is justified by this attempt.
+
+**Hostile check — PROVEN comparison, GAP promotion.** PC4 conditions
+on the entire outside path before using kernel normalization; conditioning
+only on a terminal exterior would not make the intermediate inside law
+an unweighted forward product. Its final denominator remains in PC4.
+The bounds average a nonnegative insertion under one posterior and do
+not split PC10 across overlapping cones. The minimum in PC7 is allowed
+to depend on the exterior and be nonsmooth; no derivative of it with
+respect to V is taken. The excitation regulator is weaker than the original
+action regulator; PC8r keeps the missing minimum-energy cost explicitly.
+PC11 defeats identifying the excitation complement with the good sector,
+but not pricing its exterior by unused original action.
+The repeated-debit failure is a failure of that accounting method, not
+evidence of persistence of a rough field on the fixed reader star.
+No local support, extracted contraction or regenerated H(j+1) follows.
+
+### 4.29 Verification, attribution, and claim boundary
 
 The check script [checks/push_a_kernel_moments.py](checks/push_a_kernel_moments.py)
 performs separate direct Haar quadratures and scaled Bessel evaluations,
@@ -3411,6 +3666,28 @@ not sample the posterior, estimate its mass near the tested fields,
 test PP7, or bound a connected local response. Peak RSS was 90,734,592
 bytes with BLAS threads one and the checked 1 GB ceiling. These finite
 configuration checks do not change the count of unproved obligations.
+
+The [posterior-cone script](checks/push_a_posterior_cone.py), with its
+[complete log](checks/push_a_posterior_cone.log), uses the actual paired
+contours from the geometry script to form an exact integer reader stencil.
+It verifies that a root link maps to the eight-link star and that the
+star maps to itself. Equality of these finite sets proves the stated
+stencil closure by induction; it does not prove persistence of roughness.
+Sixty-four kernel evaluations check PC3's endpoint range. Fifty-four
+one-link original conditional quadratures use actual six-positive-staple
+and four-positive/two-negative-staple exteriors, with conditional minimum
+energies zero and four. They check both excitation and original-action
+regulators; the largest log(actual/excitation-bound) is -13.5242568152.
+These are original conditional integrals, not pinned posterior integrals.
+Forty independently multiplied six-plaquette configurations check PC11,
+with largest error 8.88e-16 in their constant total energy. Its open-set
+extension is proved analytically above. Exact rational arithmetic checks
+the repeated-comparison example: at u=100, kappa=1/1000 and a half-reserve
+upper bound 600, debit 8/5 per comparison exceeds it at comparison 376.
+This prescribed-prefix test does not certify a running-coupling trajectory
+or a necessary cost of the true RG operator. Peak RSS was 91,635,712 bytes,
+with one BLAS thread and the checked 1 GB ceiling. No posterior simulation,
+connected-decay verification or reduction of U1--U4 has been added.
 
 The small/large-field organization is credited to Tadeusz Balaban and
 Jonathan Dimock. The relevant repository comparisons are REFMATCH RM1/RM2/

@@ -858,3 +858,158 @@ when that selector still depends on retained fine/coarse fields. Summing
 those history selectors before the first transfer gives the same Z_all
 exactly, but controlling the next step outside the present small-curvature
 window and controlling the resulting full prefactor are additional tasks.
+
+## 13. Keep the actual first-level failure selectors inside the integral
+
+This is an unchecked continuation proposal, not acceptance of GH11--GH46.
+It addresses the first complete RD failure record, including completion
+failures and absences, rather than only its original bad-block refinement.
+The finite identities below are direct algebra. The proposed quantitative
+extension still depends on the unreviewed density-forest estimates above.
+
+Use exactly RD R2--R3 at level zero, with H_0 empty, its G_2 components,
+size threshold n_0 and completion test from H11 of
+[SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md](SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md).
+Match its original cut to GH33. The source conventions agree after
+J_p=u_0 epsilon_p; kernel parameters remain fixed in either convention.
+At fixed U_0,U_1 let B be the original bad-block set and
+
+    F(U_0,U_1)={Y in C_2(B): a_0(Y;U_0,U_1)=0}.
+
+Introduce t_B for original blocks and z_Y for nonempty G_2-connected
+candidate components. The exact finite generating integral is
+
+    Z_RD(t,z;U_1,J)=int w_J(U_0,U_1)
+                product_(B originally bad)t_B
+                product_(Y in F(U_0,U_1))z_Y dH(U_0).    (GH47)
+
+Thus Z_RD(0,z)=Z_cut, Z_RD(1,1)=b_eff,1, and
+[z^F]Z_RD(1,z)=rho_(1,F). The last coefficient specifies the COMPLETE
+failure list: successful bad components are summed, and every other
+failure marker has power zero. Incompatible lists have zero coefficient.
+This is RD R3, including its absence conditions, not an independent
+probability assignment. No history mass is divided out.
+
+On a current auxiliary q-history GH10, GH33 puts every original bad block
+in a q-bad core A. Different such cores have distance greater than
+r=4K+4>=4. Consequently each G_2-component of the ORIGINAL bad set lies
+in a unique A. Its completion test reads N_1(Y), the original outside
+links relative to I(Y), and the output U_1 links C(Y). All these readers
+lie in Gamma_A. Maximality of Y also reads its G_2 boundary; the actual
+goodness factors on N_r(A) retain that absence information. The size test
+reads Y itself. No additional failure predicate is substituted for RD's.
+
+Let B_A be the original bad blocks in A and F_A their completion/size
+failures, evaluated before integrating any of their readers. Define
+
+    P_A(t,z)=product_(B in B_A)t_B product_(Y in F_A)z_Y,
+    L_a^RD(t,z)=I_R^-1 int ell_a w_R,J
+                                  [P_A(t,z)-chi_R]dH_R. (GH48)
+
+On the actual auxiliary history, product_A P_A is exactly GH47's marker.
+At a local fibre whose exterior does not meet the required good annulus,
+use the same zero extension as GH12. The global absence factors in GH13
+remain necessary; a local factor alone does not impose them. On ell_a,
+all blocks of R minus A are originally good. The bracket in GH48 is
+therefore zero when B_A is empty, and otherwise is the single monomial
+P_A. In particular it is not a signed difference of two large weights.
+The local decomposition is exactly A_a+D_a+L_a^RD. Summing unselected
+histories and retaining all Gamma_A readers gives the same finite
+common-chart identity as GH13. There is still only one global normalizer.
+
+There is a useful joint coefficient price. Let r_cut be GH43--GH44's
+exp[u(1-rho_0)epsilon_cut^2/(64N)] and assign radii
+
+    |t_B|<=sqrt(r_cut),       |z_Y|<=r_cut^(|Y|/2).
+
+The failed components in F_A are disjoint subsets of B_A, so
+sum_(Y in F_A)|Y|<=|B_A|. At each integration configuration, the absolute
+coefficient sum of GH48's nonzero bracket at these radii is at most
+r_cut^|B_A|. GH43 pays this from the SAME u E_R^e/32 already allocated in
+GH44. There is no new action reserve, no sum over all candidate labels at
+a fixed configuration, and no r_cut^|A| factor. Any other regulator must
+share the single allocation as specified after GH44.
+
+The completion selector is source independent but can be discontinuous
+in the OUTPUT U_1. For this extension use only
+
+    T_J^4(F)=sum_(c<=4) sup |D_J^c F|/c!
+
+with RGA3's original source weights. Hold U_1 real and fixed. After the
+same real Haar pullback, neither the original cuts, auxiliary history
+tests nor completion tests move with J. Ordered source derivatives hit
+the actual density and its full normalizers; they do not hit P_A. The
+positive local jet bounds therefore use the source-only subcalculus of
+GH17--GH18. In the forest step deform J only, keeping U_1 fixed. Density
+differentiation in the integrated buffer still permits bounded measurable
+insertions. A completion marker is never differentiated in a fine
+coordinate or evaluated at a complex coarse field in this construction.
+
+The proposed consequence of repeating the positive coefficient majorants
+in GH22--GH29 and GH45 is a connected expansion on the SAME small-output
+domain D_0 supplied by GH9:
+
+    Z_RD(t,z;U_1,J)/Z_cut(U_1,J)=exp[sum_X Phi_X^RD(t,z)],
+    Phi_X^RD(0,z)=0,
+    sup_x sum_(X contains x) exp[(beta/2)|X|]
+      sum_(n,m) r_cut^((|n|+sum_Y |Y|m_Y)/2)
+        sup_(D_0) T_J^4(phi_(X,n,m)) <=epsilon_RD,       (GH49)
+
+where Phi_X^RD=sum phi_(X,n,m)t^n z^m and every term has |n|>0.
+Use epsilon_RD=2 exp(3) R_h^-6 R_J^-4 epsilon_F, with the same positive
+majorants and parameter restrictions as GH28--GH29; the proposed bound is
+then at most exp[-kappa_f p_cut^2] above that large-u threshold. Keeping
+the larger finite-field-jet price is an overestimate, not additional
+field regularity. Source and
+completion readers, repeated auxiliary labels in the logarithm, and
+the original graph units are retained. This estimate is a PROPOSAL
+awaiting independent verification of the existing forest argument and
+this changed-species application. It is not a proved six-field-jet bound.
+
+At fixed finite volume and admitted real original sources J, the exact
+coefficient C_F^exact is defined on ALL real U_1 by the positive-denominator
+polynomial ratio
+
+    C_F^exact(U_1,J)=[z^F] Z_RD(1,z;U_1,J)/Z_cut(U_1,J).
+
+Only on D_0 may the proposed GH49 be used to write it as
+[z^F]exp[sum_X Phi_X^RD(1,z)]. For that representation put
+Theta(z)=sum_X Phi_X^RD(1,z). Then
+
+    C_F^exact=exp[Theta(0)]
+                 sum_(pi partition F) product_(C in pi)partial_(z_C)Theta(0).
+                                                               (GH50)
+
+The extensive empty-failure factor exp[Theta(0)] is retained, including
+for F empty. At real sources the probability generating function under
+the full first step is exp[Theta(z)-Theta(1)]. Neither expression is a
+product law.
+
+The exact consumer at the second step is consequently
+
+    R_F(V,J)=int K_1(V,U_1) Z_cut,0(U_1,J)
+                                      C_F^exact(U_1,J)dH(U_1),
+    J_(1,F)=[Z_cut,0(U_1,0)/b_1(U_1)]
+             [Z_cut,0(U_1,J)/Z_cut,0(U_1,0)] C_F^exact(U_1,J). (GH51)
+
+This matches JMBRA A2--A5 and RD R5 literally. All current second-step
+outcomes are summed in R_F. The source-free reference, its source
+compensator, and the complete effective-density factor remain explicit.
+On U_1 outside D_0 keep the original compact integral for C_F^exact;
+GH49 does not estimate that complement. Although the U_1 completion
+selectors are integrated at this next full transfer, this fact alone
+does not yield a volume-uniform connected estimate for GH51.
+
+The next unresolved mathematical task is thus quantitative, not an
+identification of current q-bad events with earlier failures: control
+the full Z_cut,0/b_1 factor together with this inherited
+marked family, its complement, and the next integration. Original action
+already paid in GH44 cannot be charged again. Stable reader margins,
+field jets after the next integration, reserve regeneration and all
+later scales remain open. No existence or physical-gap conclusion follows.
+
+Continuation provenance: coordinator OpenAI/Codex/host-runtime
+01a1873f-103a-7f01-b924-4455238d8a86, 2026-10-30; procedure revision
+53f2c0af7eb59438389b4c2fe75952932d4e95fe. The preceding 860-line author
+snapshot is preserved at b1979a0173. This continuation used the actual
+RD R2--R5 and H11 selector definitions, not a new literature import.

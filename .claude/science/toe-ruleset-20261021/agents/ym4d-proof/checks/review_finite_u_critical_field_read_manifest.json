@@ -1,0 +1,191 @@
+{
+  "role": "independent reviewer read and scope record",
+  "utc": "2026-10-30T02:29:46.899841+00:00",
+  "requested_configuration": "Astra/max; request is not independent backend attestation",
+  "independence": "fresh restricted Codex reviewer context; no authorship; same-family review",
+  "procedure_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "procedure_entrypoint_resolution": "Installed review-loop and physics-loop entry points read, then the complete diff to the pinned main entry points inspected; references read from that pinned Git revision. Installed copies differ and were not treated as current authority.",
+  "governance": "AGENTS.md and PROCESS_LIGHT read; coordinator retains all Git/publication/integration/audit responsibilities",
+  "scientific_sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "line_count": 556,
+      "read_ranges": [
+        [
+          1,
+          556
+        ]
+      ],
+      "role": "target, full mathematical source, before author evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "line_count": 568,
+      "read_ranges": [
+        [
+          31,
+          439
+        ]
+      ],
+      "role": "actual model/gap/finite-u vertices and pointwise uniqueness; before author evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "line_count": 722,
+      "read_ranges": [
+        [
+          27,
+          292
+        ],
+        [
+          375,
+          466
+        ]
+      ],
+      "role": "real coarse original-source field and exact reader/source/normalizer interfaces; before author evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/INTERACTING_SELECTED_CORE_ASTRA.md",
+      "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "line_count": 790,
+      "read_ranges": [
+        [
+          22,
+          314
+        ]
+      ],
+      "role": "source-free complex-coarse field and common local domain; before author evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8",
+      "line_count": 543,
+      "read_ranges": [
+        [
+          1,
+          543
+        ]
+      ],
+      "role": "complete lift covariance proof reconstructed; before author evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FIXED_SOURCE_RADIUS_ASTRA.md",
+      "sha256": "6304245bdf27afa6c7f364da9bc41d8971cc0f2058c1e3484edef84df44cff86",
+      "line_count": 627,
+      "read_ranges": [
+        [
+          25,
+          74
+        ],
+        [
+          412,
+          549
+        ]
+      ],
+      "role": "actual critical branch and selected-sector scope/normalization; before author evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FIXED_SOURCE_RADIUS_ASTRA.md",
+      "sha256": "6304245bdf27afa6c7f364da9bc41d8971cc0f2058c1e3484edef84df44cff86",
+      "line_count": 627,
+      "read_ranges": [
+        [
+          75,
+          176
+        ]
+      ],
+      "role": "polynomial-only FR9 and exact contour boundary checked after findings freeze; documentary scope confirmation"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROBABILITY_SENSITIVE_RETURN_ASTRA.md",
+      "sha256": "6ef027d54bd0ca1948444c9b82c673ed0cae2e23cd59b25f0c53498194e9b18b",
+      "line_count": 544,
+      "read_ranges": [
+        [
+          1,
+          324
+        ]
+      ],
+      "role": "auxiliary chart, exact cut, prefactor and precision distinction; before author evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD.md",
+      "sha256": "a60232a648e9832d0223cc0fa06ef84d8dbfe54fa91f875a8c96c3f89140aba5",
+      "line_count": 1037,
+      "read_ranges": [
+        [
+          822,
+          891
+        ]
+      ],
+      "role": "consumer rate/reference mismatch; before author evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "line_count": 812,
+      "read_ranges": [
+        [
+          312,
+          377
+        ],
+        [
+          667,
+          679
+        ]
+      ],
+      "role": "single normalizer proof with corrected analytic statement/constants; before author evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "sha256": "203d4edbf97078d88fcb488f164e525d2671fe5a2a910c5f6e49f615e8f41bfe",
+      "line_count": 266,
+      "read_ranges": [
+        [
+          1,
+          40
+        ]
+      ],
+      "role": "excluded u-stripped tree phase; before author evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "line_count": 11,
+      "read_ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "role": "owner procedure; before author evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "sha256": "306195ea1bb4694d5fe00cab544490684a67f3ee7f3bffae0caca8fd14e5d37e",
+      "line_count": 143,
+      "read_ranges": [
+        [
+          1,
+          143
+        ]
+      ],
+      "role": "post-freeze provenance confirmation only; not a mathematical premise"
+    }
+  ],
+  "author_evidence_order": "Independent mathematical findings and freeze JSON written first; only then target receipt, checks, manifest, identity output and packaging script were read. Existing PC review was read subsequently for provenance.",
+  "author_package_read": "All six files bound by author receipt; source already read before evidence",
+  "protected_packets": "Eleven declared PS/PC records hash-verified only, except scientific source reads listed above; no mutation",
+  "earlier_review_exposure": "A locating-string search in CODEX_REVIEW_STEP.md exposed portions of its historical commentary; no verdict was used as proof. Source headers also expose prior-review prose.",
+  "external_theorem_imports": [],
+  "numerical_experiments": 0,
+  "not_read_or_consumed": [
+    "unfinished CHART_BOUNDARY_FOREST author source",
+    "full theory or inherited/effective-history claims",
+    "independent audit verdicts"
+  ],
+  "scope": "one bounded joint original-source/coarse critical-field construction and unchanged-core critical covariance extension; no full return or physical continuum conclusion"
+}

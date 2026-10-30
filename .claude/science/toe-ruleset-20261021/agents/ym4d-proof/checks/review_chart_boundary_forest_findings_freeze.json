@@ -1,0 +1,32 @@
+{
+  "kind": "independent mathematical findings freeze before author evidence read",
+  "created_utc": "2026-10-30T02:09:25.171173+00:00",
+  "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+  "sha256": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8",
+  "lines": 564,
+  "reviewer_configuration": "Requested Astra/max; this runtime identifies generic GPT-6, not an independently attested backend configuration.",
+  "independence": "Fresh restricted reviewer context, same-family Codex; no authorship of source; author checks/receipts not read before this freeze.",
+  "blocking_findings": [],
+  "author_colour_correction": "The supplied review target already includes sqrt(D) at line 326; this was disclosed as an author self-correction and is not a reviewer discovery.",
+  "independently_checked": [
+    "BF4 inverse accretivity and determinant bound",
+    "BF6 optimized Cauchy square-root factorial",
+    "BF7 and BF9 scalar weak derivatives, all sphere intersections, active mean price",
+    "BF10 and BF11 exact force completion and normalized principal Gaussian marginal",
+    "BF12 and BF13 labelled partition chain rule, mean terms, mixed reader atoms",
+    "BF14 through BF17 finite forest identity, colour contractions, Pr\u00fcfer count, rooted summation",
+    "BF18 and BF19 finite-range overlap components, full readers, arbitrary positive support slack",
+    "BF20 through BF23 actual PS coefficient regulator, complex field Cauchy, 4^r patterns, full determinant and force price",
+    "BF24 vector-ball complex translation sign, orientation, all tensor side/corner chains"
+  ],
+  "required_scope_limits": [
+    "BF4 is a hypothesis for the actual full-reader deformation; no PC construction is consumed.",
+    "BF17 is only a field-set theorem; covariance and mean can read remote original data.",
+    "BF19 requires bounded finite-range original-reader sets and is not a theorem for the full inverse.",
+    "BF22 is not a normalized interacting marginal; E_X retains exp(16||ell_X||^2/a).",
+    "BF25 and all-history, outside-chart, effective-level, continuum and physical-gap obligations remain open.",
+    "No joint complex-V/complex-source critical theorem is silently composed from SA13 and IC12."
+  ],
+  "numerical_experiments": "None; all mathematical checks were analytic.",
+  "final_source_verdict": "Pending author evidence/provenance check; mathematical disposition supports LAND only at the stated bounded-support scope."
+}

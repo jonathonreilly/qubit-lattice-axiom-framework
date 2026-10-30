@@ -497,18 +497,31 @@
 > RD two-unit weight loss is not matched. The regulator must use the new
 > precision `a_C/U^2`, with auxiliary and source radii checked again.
 >
-> The [chart-boundary proposal](CHART_BOUNDARY_FOREST_ASTRA.md) is frozen
-> under fresh independent review. It claims repeated ball/corner trace
-> estimates and Gaussian cutoff results; its actual nonlinear connected
-> target BF25 remains OPEN. The author corrected a missing `sqrt(D)` before
-> review and preserved both source identities and the reversible correction.
-> The pending proposal is not adopted as a premise.
+> The [chart-boundary construction](CHART_BOUNDARY_FOREST_ASTRA.md) now has a
+> [fresh independent scoped LAND review](REVIEW_CHART_BOUNDARY_FOREST_ASTRA.md)
+> for BF4–BF24. Repeated ball derivatives retain every corner, and the Gaussian
+> cutoff estimates pay their normalizers. The full-reader Gaussian conclusion
+> still requires finite-range readers; it does not cover the actual inverse's
+> infinite reader tail. The nonlinear bounds retain their force, determinant
+> and no-surface costs. Their connected target BF25 remains OPEN. The author's
+> pre-review `sqrt(D)` correction and both source identities are preserved.
 >
-> New author work matches the joint source/coarse domain of the existing
-> actual critical fields and extends their covariance. SA13 and IC12 already
-> construct those fields on their respective domains; the older uniform-soft-
-> minimizer unit concerns the u-stripped tree phase. No unfinished extension
-> is adopted as a premise.
+> The [joint finite-u critical-field extension](FINITE_U_CRITICAL_FIELD_ASTRA.md)
+> now has a [fresh independent scoped LAND review](REVIEW_FINITE_U_CRITICAL_FIELD_ASTRA.md).
+> It matches the existing SA/IC branches on their shared domains, keeps the
+> linear source Hessian, and adds a small complete-reader critical-covariance
+> tail to the unchanged positive lift core. Its joint complex-coarse bound
+> uses `delta_hat`; replacing this by `delta_V` is valid only on a fixed real-V
+> slice. The precision is `alpha_*/U_*^2` and the support rate remains
+> `beta=(16R)^(-4)`. The actual translated chart, critical action, full
+> determinant and source/contour boundaries remain explicit. Neither the
+> original-cut return nor an effective-level induction follows from this unit.
+>
+> New author work addresses the centered Gaussian return with infinite
+> complete-reader tails, and distinct-vertex nonlinear Mayer estimates at the
+> actual critical field. These unfinished arguments are not premises.
+> The full interacting return, arbitrary histories, multiscale iteration,
+> continuum existence and physical continuum mass gap remain OPEN.
 >
 > Concurrent progress through `cc1de55f5b` is recovered. [RD pass 2](RD.md)
 > has an independent [HOLD review](REVIEW_RD_R2.md): its explicit finite H12

@@ -1,0 +1,15 @@
+{
+  "phase": "independent_findings_frozen_before_author_evidence",
+  "utc": "2026-10-30T02:25:06.561164+00:00",
+  "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+  "source_sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+  "source_lines": 556,
+  "findings": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_u_critical_field_findings_pre_evidence.md",
+  "findings_sha256": "51fa5253ee5089659b782651f30a9f6339a18d645687640c2dedc865d69c6156",
+  "author_package_opened": false,
+  "mathematical_blocking_findings": 0,
+  "evidence_checks_pending": true,
+  "observed_HEAD": "640788a8a0816ed63f3d8e1abf57137fb0687e89",
+  "procedure_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "method": "written analytic reconstruction; no numerical sampling"
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "holomorphic_compact_return_author_receipt_v1",
+  "status": "author_proposition_frozen_pending_different_fresh_source_first_review",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HOLOMORPHIC_COMPACT_RETURN_ASTRA.md",
+    "sha256": "890a56113ad3ceac890ec72efe59b40f73bbda283c8dfb69c331bc4ea5376c49",
+    "lines": 734
+  },
+  "read_manifest": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/holomorphic_compact_return_read_manifest.json",
+    "sha256": "9c233b3cae6757bc696358ed6ab9d704569e304addf4048283a55fcd736395d6",
+    "lines": 67
+  },
+  "source_frozen_before_packet": true,
+  "configured_worker_provenance": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "max",
+    "basis": "Explicit parent assignment in the human-authorized worker context; no independent backend-attestation claim.",
+    "author_identity": "/root/source_local_compact_return",
+    "review_family": "A different Codex reviewer is independent in authorship but same-family."
+  },
+  "author_results": [
+    "HC3–HC9: actual frozen numerator-only perturbation, global b_fr=O(delta+eta), full covariance readers/prefactor, and exact regional fr/tr chart correction.",
+    "HC12–HC17: actual frozen physical compact complement, QC quadratic real-numerator/transported-denominator estimate, and explicit full regional FT correction cost.",
+    "HC18–HC21: exact simultaneous frozen-domain selected-D resummation with one-use physical factors, original absences/failures and actual real-buffer groups.",
+    "HC22–HC31: recomputed frozen-phase marked density forest on the joint coarse/source domain, full activation/readers, rare-root transport and two charged logarithm rescalings.",
+    "HC32–HC38: ledger1/2−1/16−1/16=3/8, explicit positive delta,eta proportional to sigma p/K^2, fixed rho, volume-independent finite u0 and compact-return norm exp[-c N c_q p^2/32].",
+    "HC39–HC40: optional transported reference with correct log sign and distinct transport-bearing rate; explicit inverse-eta/source Cauchy costs."
+  ],
+  "open_interfaces": [
+    "Original white Omega matching and separate original complement bounds.",
+    "Inherited/future-conditioned histories and effective-class iteration.",
+    "A wider fixed coarse domain or the requested full RG derivative class.",
+    "Full non-free continuum existence.",
+    "Positive physical continuum mass gap."
+  ],
+  "administrative_checks": {
+    "equation_definitions": "Exactly HC1–HC41 once each, in order.",
+    "local_markdown_links_exist": true,
+    "frozen_source_and_supplier_hashes_verified": true,
+    "full_author_source_self_read": true,
+    "no_automated_mathematical_proof_claim": true
+  },
+  "mutations": {
+    "authorized_files_only": [
+      "HOLOMORPHIC_COMPACT_RETURN_ASTRA.md",
+      "checks/holomorphic_compact_return_read_manifest.json",
+      "checks/holomorphic_compact_return_receipt.json"
+    ],
+    "predecessor_front_git_pr_audit_ledger_edits": false,
+    "extra_workers_spawned": false,
+    "science_numerical_runs": 0
+  },
+  "review_request": "Root to assign a DIFFERENT fresh hostile source-first reviewer. Read HC mathematics and exact FT/QC/MK interfaces before author packet comparison; freeze independent findings first. Targets: actual frozen numerator identity, QC localized-selector extension, real-buffer Gaussian domain, one-use ledger, single common tube and distinct transported-reference rate."
+}

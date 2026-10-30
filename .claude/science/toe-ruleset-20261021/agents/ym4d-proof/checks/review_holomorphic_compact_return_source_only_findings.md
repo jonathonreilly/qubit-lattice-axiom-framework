@@ -1,0 +1,64 @@
+# Independent source-only findings: holomorphic compact return
+
+Stage: immutable source-only freeze, before the HC author manifest/receipt, prior reviews or root receipts were opened.
+Reviewer: fresh author-independent, same-family Codex context. Astra/max was requested; backend identity/effort is not independently attested.
+Target: `HOLOMORPHIC_COMPACT_RETURN_ASTRA.md`, 734 lines, SHA256 `890a56113ad3ceac890ec72efe59b40f73bbda283c8dfb69c331bc4ea5376c49`.
+Methodology: `01589af3faf806b736c42dc2f3bd625e9edead9f`, with the actual eleven-line `PROCESS_LIGHT.md` and the restricted review brief controlling the write/execution scope.
+
+## Source-only disposition
+
+No material mathematical blocker was found for the exact HC1–HC40 theorem. The source supports a one-bare-step connected logarithm for the actual original interior-cut integral relative to the frozen physical product chart, on the explicitly constructed complex-coarse tube at a fixed real center and a fixed positive original-source polydisc. Its optional transported-chart comparison has a separate transport contribution. This is a source-level LAND recommendation, pending the deliberately separate packet and final-binding stages; it is not an audit verdict or an integration gate.
+
+The proof-obligation graph for this bounded target closes as follows: actual compact word coercivity and the reset shell -> QC's physical numerator and full critical-action Schur estimate -> FT's nonzero frozen regional denominator -> exact fixed-domain selected-difference resummation -> actual frozen global critical data and marked density forest -> two positive charged counts -> the common parameter family. None of these arrows is supplied by a prior review verdict, CG's hybrid moment bound, or an assumed compact-return theorem.
+
+## 1. Actual object, compact complement and the local denominator
+
+HC12 subtracts integrals of the same density over nested REAL fine domains. Therefore `Nout = integral_(compact minus frozen chart) chi_R ell w_R` exactly, also at complex output/source values. It is one complement integral, so its pointwise majorant does not require the triangle-inequality factor two. The original compact mean and its positive normalizer are unchanged at each real fine point; output dependence enters only the paired numerator. HC3 is the corresponding exact frozen-phase perturbation, with Wilson and Haar factors fixed in frozen coordinates. Complex positivity is nowhere needed.
+
+I independently traced the selector qualification back through QC4, CS11–CS12 and OC3–OC13. For `I_j=N_(2j)A` and `R_j=N_(2j+1)A`, `N_1(I_j)` is inside `R_j`; the complete block/brick fillings and kernel factors needed to charge Q(I_j) are therefore in P_R/C_R. Connectivity of A and the longer SC absence predicate are not used by this local energy argument. The first-success test gives `Q_s<=alpha Q_I`; a separately imposed q-good exterior supplies the actual denominator boundary. This remains valid for the thicker range-(4K+4) cores, holes and wrapped neighborhoods. The cardinality `|R|<=V_K|A|` is unchanged. QC6–QC7 pay external brick plaquettes on S_j, so the mean-spread deficit has not been silently replaced by the centered mismatch.
+
+For the output perturbation, pairing a real word and its inverse gives the linear term `tr[v(Q^-1-Q)]/(2N)`. Its norm is at most `sqrt(2/N)||v|| sqrt(1-h)`; the exponential remainder is quadratic. Applying Young to the energy and shell pieces gives exactly HC14's debits. The original Z_t cancels pointwise. In the transported denominator, differentiation holds physical z fixed, includes active Haar and every original normalizer, and uses `A_vv=Phi_vv-Phi_va K_*^-1 Phi_av`. The inverse here is the actual full-colour regional critical inverse, not the lift inverse. The source path has `Re A'(0)=0`, and `A''=grad H_s^T K_*^-1 grad H_s`; the signed reset inequality keeps the normalizer logarithm before using its sign.
+
+The energy arithmetic is independently reproducible: numerator leaves 31/32 of E; reset, imaginary source, numerator shell and denominator Young terms cost respectively 8/32, 4/32, 1/32 and 1/32 of cQ_I; the quadratic coarse term costs c q|A|/32. This leaves at least c q|A|/2. The cap factor, k|R| determinant modes, h_N and Gaussian scale give QC24's whole p(u)|R| cost. HC17 then multiplies by the actual `I_R^tr/I_R^fr`, retaining the full `theta_tr |R|` cost. No determinant, physical exterior factor, inactive Haar term or mode is absorbed into an unexplained constant.
+
+FT's map and current identify that transported fibre with the named RC fibre. Haar right-invariance gives `j(Phi) det DPhi=j(a)` on the continued log branch; its cofactor current has the plus sign for transported minus frozen chain. The Jacobian term prevents identifying the two coordinate-density critical points, and HC does not make that identification. Every q-good physical boundary has frozen log <=zeta/16 and, with eta<=zeta/16, transported log <=zeta/2. Both regional denominators are nonzero on the same final family.
+
+## 2. Frozen-domain history resummation
+
+Distinct range-r cores have active regions separated by at least seven blocks; no touching original factor meets two regions. Conditional integration in the actual frozen chart therefore produces the required product of I_R^fr exactly. The all-good empty-history contribution is the same cap ratio in both HC19 identities and is not set to one.
+
+For a fixed selected set, integrating all selected dummy regions first leaves physical real variables on their complement. The remaining bad components have distance >r from the selected cores, so their first successful shells are unchanged. An unselected R can intersect a selected absence annulus only away from its bad core; its local ell already enforces the needed goodness there. A SELECTED R must instead be removed from every absence annulus, since its dummy chart integral must be uncapped. This yields precisely H_s with the union of ALL selected regions removed. Thus HC20 is a finite fixed-domain bijection at complex parameters, not analytic continuation of an indicator.
+
+Grouping overlapping original Gamma readers retains all range-r conflicts and annular intersections. Reader-disjoint groups reconstruct the selected collection. A compact coefficient's native locality follows from its actual finite local integrals; the proof does not shrink the labels of individual solved regional atoms. HC21 retains all failures/absences and original coarse/source labels. Empty H_g gives a field-free group with a nonempty reader, which remains in the gas. No CG17/CG32 hybrid transported-complement functional is substituted for this frozen marginal.
+
+## 3. Global frozen data and density-only marked construction
+
+The global force is `t_fr=2 A_G[g_*(1+rho)delta+J1 eta]`. The eta term is essential at complex output and is present. Regional boundary-force tau is used only for regional FT/RC control. The global covariance uses one real finite core and BOTH lift and critical tails. The Neumann order, full marked tail sums, marginal inverse row bound and all Vbar/v/source readers survive the explicit Xi perturbation. The full global prefactor includes all vacua, Haar, modes, determinant and critical action once.
+
+HC23 keeps every marked buffer variable real. Only complementary chart variables are translated; marked buffer coordinates consequently enter the Gaussian at `x-b_fr/sigma`, and their translation is paid. Full-block activation gives the principal covariance C_fr[I], not the inverse of a principal precision. All original vertex incidences and ternary presence/absence flags are internal before component factorization. The finite-core collars preserve original Gamma incompatibility. No arbitrary compact insertion is inferred from FT's pure-chart ratio.
+
+The exact determinant-loop/inverse-chain series supplies normalized density jets at every scalar order. Optimized scalar Cauchy radii retain `product_i sqrt(nu_i!)`; translation uses the binomial factorial bound and the entire series `sum z^j/sqrt(j!)`. Forest derivatives act on this density alone, with Theta, hard cuts, normals, source/coarse data and flags fixed. Independent pair derivatives precede the path-minimum forest evaluation. The real finite core and small signed tails supply the analytic pair polydisc and domination. Original distinct-vertex incidence 15 bounds polynomial degree by 90, independently of forest order; all full-block normalization, side area and sigma^-1 flux costs are retained.
+
+The marked translation estimate is checked in its necessary order: retain `a_g` and sum groups with field owner X in H_g first, bounded by h_g; only then sum the actual marked b mass over X, bounded by t_fr. It yields `K_tr t_fr h_g`, not a volume factor or a detached force norm. Ordinary and distinguished-root tree recursions remain linear in that root weight. Two separate positive rescalings retain a compact witness: compact primitive amplitudes first, compact-bearing raw amplitudes before reader regrouping/logarithm second. At zero compact groups the frozen chart coefficient list is identical term by term, including flags and density/translation decorations. HC31 therefore removes the common list rather than subtracting unrelated bulk logarithm estimates.
+
+## 4. One charge ledger and one nonempty domain
+
+Starting from retained c u q/2, HC32 spends c u q/16 for theta_tr V_K and c u q/16 for the marked-buffer translation, leaving 3c u q/8. These are distinct later costs; the original local action debit is not reused. With `delta=d_delta sqrt(q)/(4K+1)^2` and the analogous eta, the translation inequality is
+
+`(C_bar k^2/N)(B_delta d_delta+B_eta d_eta)^2 q H_K/V_K <= c q/16`,
+
+using the stated coefficient bound and `H_K/V_K<=256`. The same choices satisfy the reset and quadratic-output inequalities exactly. Normalization and polynomial costs still carry their full V_K and H_K powers; entropy counts the unique r-components of each range-(8K+12) core union and at most K choices per core site.
+
+Fixing the common preliminary constants and rho first, the actual radii obey delta/tau, eta/tau and t_fr/r_a = O(K^-2). Strict linear boundary reserves and fixed source Hessian/contraction reserves then absorb the vanishing nonlinear and output terms. All actual contour, principal-log, source and boundary ceilings in QC/FT/SC/RF/RC are eventual restrictions of this one atom library. In particular no unknown shrinking eta_RC is left as an assumed lower bound. The pure-chart correction has polynomial prefactor times exp(-a p^2/64); its V_K cost is eventually within its 1/16 reserve. The remaining positive group exponent is O((log u)^5), whereas u q=N c_q p^2 and 2 alpha_cut>5. One finite volume-independent u0 therefore enforces the complete finite list and the HC38 rate. No numerical threshold was claimed or tested.
+
+## 5. Reference, jets and physical scope
+
+The optional change of reference has the sign `log(Zcut/Za,tr)=log(Zcut/Za,fr)+log(Za,fr/Za,tr)`. A transport-current coefficient has no compact witness, so HC39 correctly retains its separate rate. Fixed-center Cauchy derivatives have the explicit inverse eta and rho costs and vanish outside each full original reader. The center Vbar, its selectors and moving-center charts are not differentiated. This yields neither moving-center effective-potential jets nor a single global RG potential.
+
+The original G and white Omega remain distinct from both charts; HC41 is not used to infer separate complement bounds. All-history return, effective-class iteration, continuum tightness/reconstruction, non-freeness and the physical mass gap remain open. The one-step auxiliary precision gap supplies none of those identifications. The supplied model and boundary/normalization conventions are disclosed mathematical data; no framework dynamics or new physical primitive is derived or adopted.
+
+## Edge and verification record
+
+Checked: flat real center with nonzero complex output; nonzero boundary force at flat center; q=q_bad boundary assignment; whole-torus regions and empty shells; arbitrary holes; T=2 distinct seam labels; singular real rough means; empty selected family; empty marked buffers; zero current or zero compact budget; source-free and output-zero specializations; all colour/root/harmonic/crossing modes. No contrary example or unresolved target-equivalent lemma emerged.
+
+No source changes, physics numerics, author runners, extra workers, Git/PR mutations or audit actions were used. Exact source hashes and conservative read ranges are in `review_holomorphic_compact_return_source_read_coverage.json`. Only completed, untruncated source coverage is credited there. No author packet claim or prior LAND is a premise. Packet consistency and final source/report/receipt bindings are intentionally not yet asserted in this immutable record.

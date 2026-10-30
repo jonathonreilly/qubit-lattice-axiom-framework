@@ -337,9 +337,10 @@ mathematical findings before author-packet inspection. The
 [coordinator integration](checks/full_proof_chart_prefactor_assembly_integration.json)
 records its bounded coverage and preservation checks. This is an assembled
 auxiliary-chart result. The later compact and transport extensions below
-close only their stated bare-step interfaces. Complex-coarse original-cut
-assembly, inherited histories, effective iteration, continuum existence,
-non-freeness and the physical mass gap remain OPEN.
+close their stated bare-step interfaces, including HC's fixed-center complex
+original-cut logarithm. Original white-sector matching, inherited histories,
+effective iteration, continuum existence, non-freeness and the physical
+mass gap remain OPEN.
 
 The [regional critical-field extension](REGIONAL_CRITICAL_FIELD_ASTRA.md)
 now has a [fresh independent scoped review](REVIEW_REGIONAL_CRITICAL_FIELD_ASTRA.md)
@@ -362,9 +363,9 @@ Canonical coefficient agreement and the explicit shrinking domains were
 checked on the same construction. The
 [review integration](checks/full_proof_regional_chart_review_integration.json)
 preserves the source-first snapshot and separate final provenance check.
-Pointwise chart ratios with rough changed template links and whole-cut/history
-normalization remain OPEN. The following two new units address distinct local
-comparisons on their stated domains.
+Pointwise chart ratios with rough changed template links and inherited-history
+normalization remain OPEN. The later units address distinct local and global
+bare-step comparisons on their stated domains.
 
 The [matched physical regional ratio](MATCHED_REGIONAL_RATIO_ASTRA.md) now has a
 [fresh independent scoped LAND review](REVIEW_MATCHED_REGIONAL_RATIO_ASTRA.md),
@@ -456,12 +457,31 @@ Delta_chart itself still has its volume-dependent exponential bound.
 The [marked/transport integration](checks/full_proof_marked_transport_integration.json)
 binds both unchanged sources, both distinct source-first reviews and their
 separate packet stages. It preserves the earlier three-review checkpoint and
-all concurrent MIXSMALL files. Current work addresses the complex-coarse
-original-cut assembly, the unchanged source-free white Omega, and the exact
-finite real-jet/reader interface. These pending author/review continuations
-are not accepted results of this checkpoint. Fixed-center holomorphic jets
-do not automatically supply moving-center or all-history derivatives.
-Original white-Omega matching, effective iteration, continuum non-free
+all concurrent MIXSMALL files.
+
+The [holomorphic compact return](HOLOMORPHIC_COMPACT_RETURN_ASTRA.md) now has a
+[different fresh independent scoped LAND review](REVIEW_HOLOMORPHIC_COMPACT_RETURN_ASTRA.md),
+with no mathematical repair. HC1--HC40 construct the actual original-cut
+connected logarithm on an explicit complex coarse tube about a FIXED REAL
+center, with a fixed original-source radius. The local physical complement,
+selected-history bijection, frozen global critical data and marked density
+forest are checked together. Every rough numerator and hard selector remains
+real or frozen. The retained energy pays the regional chart correction and
+marked-buffer translation separately: 1/2-1/16-1/16=3/8 before entropy.
+One common family has delta,eta of order sigma p/K^2 and a volume-independent
+finite u0. The compact logarithm has norm exp[-c N c_q p^2/32]; changing to
+the transported chart adds its distinct transport-current logarithm.
+The entire critical prefactor stays explicit. Fixed-center Cauchy jets retain
+inverse-eta/source costs and do not supply moving-center or all-history jets.
+
+The [holomorphic-return integration](checks/full_proof_holomorphic_return_integration.json)
+binds the unchanged 734-line source, immutable independent source-only
+findings, separate packet checks and final report. It preserves the prior
+MK/FT checkpoint and concurrent LOCOP/SPURION/REFMATCH queue files.
+Current author work addresses the literal source-free white Omega at real
+coarse data, its complex-coarse extension, and the exact finite real-jet/reader
+interface. Those continuations remain unaccepted here. Original white-Omega
+matching, inherited histories, effective iteration, continuum non-free
 existence and the positive physical continuum mass gap remain OPEN.
 
 The concurrent [REALONLY assessment](REALONLY.md),
@@ -476,7 +496,16 @@ identify the inherited interacting law. They do not supply the actual
 history-uniform induction, derivative acquisition, complete hole payment
 or gauge-compatible extraction. The coordinator's exact bounded reads and
 preservation checks are recorded; no complete rereview of these queue
-packets is claimed. The [regional literature record](checks/full_proof_regional_ratio_literature.json)
+packets is claimed. The concurrent [local extraction](LOCOP.md),
+[gauge-covariance analysis](SPURION.md), and [matched-reference analysis](REFMATCH.md)
+retain their scoped [LOCOP](REVIEW_LOCOP.md), [SPURION](REVIEW_SPURION.md) and
+[REFMATCH](REVIEW_REFMATCH.md) reviews. Finite local algebra and conditional
+comparisons do not construct the actual inherited reference law, its uniform
+derivatives or the full coupling trajectory. Gauge covariance alone does not
+supply locality. The [queue pointer](QUEUE_STATUS.md) is coordination data,
+not mathematical authority. Root read source1--80/review1--70 for these three
+units and the complete queue pointer; no full new review or author runner is
+claimed. The [regional literature record](checks/full_proof_regional_ratio_literature.json)
 distinguishes strong-coupling and mass-gap-premised results from the missing
 physical producer. The [connected-gluing literature record](checks/full_proof_connected_gluing_literature.json)
 checks primary Gaussian and cluster references and records their model and
@@ -660,10 +689,11 @@ imports no Yang–Mills theorem. [Coordinator review integration](checks/full_pr
 binds these two corollary reviews, preserves their exact SN/FU/CD premises,
 and retains the concurrent JMBRA/JMBRB research at its conditional/partial
 scope. These are bare-step local results, not an all-history construction.
-The complex-coarse original-cut assembly, arbitrary inherited interacting
-histories, multiscale iteration, continuum existence and physical continuum
-mass gap remain OPEN. MK's fixed-real-coarse result and FT's pure-chart
-transport have precisely the accepted scopes recorded above.
+Original white-sector matching, arbitrary inherited interacting histories,
+multiscale iteration, continuum existence and the physical continuum mass
+gap remain OPEN. MK's real-coarse logarithm, FT's chart transport and HC's
+fixed-center complex original-cut return have precisely the accepted scopes
+recorded above.
 
 Concurrent progress through `cc1de55f5b` is recovered. [RD pass 2](RD.md)
 has an independent [HOLD review](REVIEW_RD_R2.md): its explicit finite H12

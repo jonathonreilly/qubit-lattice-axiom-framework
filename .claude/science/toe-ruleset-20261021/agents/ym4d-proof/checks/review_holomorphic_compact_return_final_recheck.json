@@ -1,0 +1,334 @@
+{
+  "schema": "review_holomorphic_compact_return_final_recheck_v1",
+  "stage": "post-packet final source and report-receipt recheck",
+  "checked_at_utc": "2026-10-30T11:10:21.419411+00:00",
+  "passed": true,
+  "verdict": "LAND for exact bounded mathematical scope",
+  "full_non_free_continuum_existence": "OPEN",
+  "positive_physical_continuum_mass_gap": "OPEN",
+  "report": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_HOLOMORPHIC_COMPACT_RETURN_ASTRA.md",
+    "sha256": "63f39da653ebe955f5f0b37facaef5eb7d7898d148dbff8245d35f7a3495b78a",
+    "lines": 47
+  },
+  "receipt": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_holomorphic_compact_return_receipt.json",
+    "sha256": "3e442d824438a9101fbeb55a8a12f9217a6248b55ffefd9206e40a9b6a90a9ac",
+    "lines": 341
+  },
+  "source_pin_count": 18,
+  "source_checks": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HOLOMORPHIC_COMPACT_RETURN_ASTRA.md",
+      "expected_sha256": "890a56113ad3ceac890ec72efe59b40f73bbda283c8dfb69c331bc4ea5376c49",
+      "actual_sha256": "890a56113ad3ceac890ec72efe59b40f73bbda283c8dfb69c331bc4ea5376c49",
+      "expected_lines": 734,
+      "actual_lines": 734,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/QUADRATIC_COARSE_RETURN_ASTRA.md",
+      "expected_sha256": "515260d02f0a21e3dea55db2b98cb6ab00ece16684d40179df609922204798c7",
+      "actual_sha256": "515260d02f0a21e3dea55db2b98cb6ab00ece16684d40179df609922204798c7",
+      "expected_lines": 591,
+      "actual_lines": 591,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FROZEN_TRANSPORTED_CHART_ASTRA.md",
+      "expected_sha256": "c7cea2f9bb096af300a9a978c945d9c5d68ae5e63581654a3034902d000d70b8",
+      "actual_sha256": "c7cea2f9bb096af300a9a978c945d9c5d68ae5e63581654a3034902d000d70b8",
+      "expected_lines": 787,
+      "actual_lines": 787,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MARKED_COMPACT_CHART_ASTRA.md",
+      "expected_sha256": "04f79ed4d0c58e97f3cade072631966b577f02754f9a96d6dcd18ee2f3045800",
+      "actual_sha256": "04f79ed4d0c58e97f3cade072631966b577f02754f9a96d6dcd18ee2f3045800",
+      "expected_lines": 753,
+      "actual_lines": 753,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COMPACT_RETURN_GLUING_ASTRA.md",
+      "expected_sha256": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "actual_sha256": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "expected_lines": 644,
+      "actual_lines": 644,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "expected_sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "actual_sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "expected_lines": 597,
+      "actual_lines": 597,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "expected_sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "actual_sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "expected_lines": 592,
+      "actual_lines": 592,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "expected_sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "actual_sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "expected_lines": 510,
+      "actual_lines": 510,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "expected_sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+      "actual_sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+      "expected_lines": 711,
+      "actual_lines": 711,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "expected_sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "actual_sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "expected_lines": 556,
+      "actual_lines": 556,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "expected_sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "actual_sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "expected_lines": 11,
+      "actual_lines": 11,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "expected_sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "actual_sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "expected_lines": 713,
+      "actual_lines": 713,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+      "expected_sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+      "actual_sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+      "expected_lines": 624,
+      "actual_lines": 624,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "expected_sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "actual_sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "expected_lines": 568,
+      "actual_lines": 568,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "expected_sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "actual_sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "expected_lines": 617,
+      "actual_lines": 617,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OUTSIDE_CHART_RETURN_ASTRA.md",
+      "expected_sha256": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4",
+      "actual_sha256": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4",
+      "expected_lines": 641,
+      "actual_lines": 641,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MIXED_CAP_CHART_ASTRA.md",
+      "expected_sha256": "1e885e4fbce03b00f4414b15caaa71e7140d9bc8494d0c75d1519bdbcde8ff2e",
+      "actual_sha256": "1e885e4fbce03b00f4414b15caaa71e7140d9bc8494d0c75d1519bdbcde8ff2e",
+      "expected_lines": 707,
+      "actual_lines": 707,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "expected_sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "actual_sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "expected_lines": 812,
+      "actual_lines": 812,
+      "match": true
+    }
+  ],
+  "methodology_checks": [
+    {
+      "path": "AGENTS.md",
+      "source": "working-tree",
+      "expected_sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "actual_sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "lines": 26,
+      "match": true
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "source": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "expected_sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "actual_sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "lines": 193,
+      "match": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "source": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "expected_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "actual_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "lines": 35,
+      "match": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "source": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "expected_sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "actual_sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "lines": 370,
+      "match": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "source": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "expected_sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "actual_sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "lines": 248,
+      "match": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "source": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "expected_sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "actual_sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "lines": 183,
+      "match": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "source": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "expected_sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "actual_sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "lines": 140,
+      "match": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "source": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "expected_sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "actual_sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "lines": 394,
+      "match": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "source": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "expected_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "actual_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "lines": 126,
+      "match": true
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "source": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "expected_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "actual_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "lines": 233,
+      "match": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "source": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "expected_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "actual_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "lines": 130,
+      "match": true
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "source": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "expected_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "actual_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "lines": 52,
+      "match": true
+    }
+  ],
+  "artifact_bindings": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_HOLOMORPHIC_COMPACT_RETURN_ASTRA.md",
+      "expected_sha256": "63f39da653ebe955f5f0b37facaef5eb7d7898d148dbff8245d35f7a3495b78a",
+      "actual_sha256": "63f39da653ebe955f5f0b37facaef5eb7d7898d148dbff8245d35f7a3495b78a",
+      "lines": 47,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_holomorphic_compact_return_source_read_coverage.json",
+      "expected_sha256": "179d8e2f195e3e0d6098e4d3e7764e3ed4b90426dde152efd71dc6942e2258f2",
+      "actual_sha256": "179d8e2f195e3e0d6098e4d3e7764e3ed4b90426dde152efd71dc6942e2258f2",
+      "lines": 331,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_holomorphic_compact_return_source_only_findings.md",
+      "expected_sha256": "59382f4e637e769b3598219d3baec9274a3f8eefe4b0dd356ac2ae47bc60738a",
+      "actual_sha256": "59382f4e637e769b3598219d3baec9274a3f8eefe4b0dd356ac2ae47bc60738a",
+      "lines": 64,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_holomorphic_compact_return_source_freeze.json",
+      "expected_sha256": "6f93df5000835c7f326828fdd617ca0084613d23137a2ef9a24f796cc6d84365",
+      "actual_sha256": "6f93df5000835c7f326828fdd617ca0084613d23137a2ef9a24f796cc6d84365",
+      "lines": 10,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_holomorphic_compact_return_packet_consistency.json",
+      "expected_sha256": "dd66e7ef9743c1ca0f3afb9c8a90630e618695296763560a659d96a979c0efc2",
+      "actual_sha256": "dd66e7ef9743c1ca0f3afb9c8a90630e618695296763560a659d96a979c0efc2",
+      "lines": 204,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/holomorphic_compact_return_read_manifest.json",
+      "expected_sha256": "9c233b3cae6757bc696358ed6ab9d704569e304addf4048283a55fcd736395d6",
+      "actual_sha256": "9c233b3cae6757bc696358ed6ab9d704569e304addf4048283a55fcd736395d6",
+      "lines": 67,
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/holomorphic_compact_return_receipt.json",
+      "expected_sha256": "39c34266cf66e58cb586f12271a09da692a0d0c794efc8a0307cc218e302affc",
+      "actual_sha256": "39c34266cf66e58cb586f12271a09da692a0d0c794efc8a0307cc218e302affc",
+      "lines": 55,
+      "match": true
+    }
+  ],
+  "immutable_source_freeze_bindings": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_holomorphic_compact_return_source_read_coverage.json",
+      "expected_sha256": "179d8e2f195e3e0d6098e4d3e7764e3ed4b90426dde152efd71dc6942e2258f2",
+      "actual_sha256": "179d8e2f195e3e0d6098e4d3e7764e3ed4b90426dde152efd71dc6942e2258f2",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_holomorphic_compact_return_source_only_findings.md",
+      "expected_sha256": "59382f4e637e769b3598219d3baec9274a3f8eefe4b0dd356ac2ae47bc60738a",
+      "actual_sha256": "59382f4e637e769b3598219d3baec9274a3f8eefe4b0dd356ac2ae47bc60738a",
+      "match": true
+    }
+  ],
+  "source_only_freeze_preceded_first_author_packet_read": true,
+  "final_packet_stage_complete": true,
+  "source_changes_after_freeze": false,
+  "report_and_receipt_are_final_at_this_recheck": true,
+  "new_mathematical_evidence_from_packet_or_hashes": false
+}

@@ -47,7 +47,6 @@ REVIEW_ONLY_VALIDATION_RULES = (
     r"staged, unstaged and untracked reviewed content and all declared inputs",
     r"Verify\s+the copied source/input identities against the reviewed candidate, preserve\s+the caller's source and index",
     r"In that copy, use `--include-worktree`",
-    r"`--stage-citation-manifest` may stage the generated manifest only there",
     r"Do not execute the landing commit, replay or push instructions for this mode",
     r"do not create an iteration commit under `--no-commit`",
     r"a matching `HEAD` alone is insufficient",
@@ -76,7 +75,7 @@ python3 docs/audit/scripts/check_review_loop_skill_contract.py
 
 if [[ "${PIPELINE_MODE}" == "full" ]]; then"""
 TRAIN_VALIDATION_CONTEXT = """   TRAIN_COMBINED_VALIDATION_SCOPE=integrated-candidate
-   if ! { bash docs/audit/scripts/run_pipeline.sh --stage-citation-manifest \\
+   if ! { bash docs/audit/scripts/run_pipeline.sh \\
           && python3 docs/audit/scripts/audit_lint.py --strict \\
           && python3 docs/audit/scripts/check_changed_audit_evidence.py --base origin/main; }; then
      echo "FAILED: combined validation; preserve log and do not land" >&2
@@ -289,7 +288,7 @@ SKILL_RULES: dict[str, tuple[str, ...]] = {
         r"check_changed_audit_evidence\.py",
     ),
     "manifest_landing": (
-        r"PROACTIVE rule",
+        r"acknowledged by the nightly\s+refresh",
         r"before EVERY push attempt",
         r"run_citation_graph_build\.py",
         r"write_citation_graph_manifest\.py",
@@ -435,7 +434,7 @@ COMMAND_RULES: dict[str, tuple[str, ...]] = {
     ),
     "command_unit_validation": (
         r"complete constituent\s+claim/content disposition map",
-        r"perform one full `docs/audit/scripts/run_pipeline\.sh --stage-citation-manifest`",
+        r"perform one full `docs/audit/scripts/run_pipeline\.sh`",
         r"do not require duplicate per-PR or per-unit full runs",
         r"no fixed\s+collection wait",
         r"Mark-ready is not PASS and still-draft PRs cannot\s+land",

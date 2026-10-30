@@ -212,7 +212,7 @@ review-only flags contradict the drain's land-end-to-end contract).
    [combined candidate validation](COMBINED_VALIDATION.md) excerpt under the
    [validation placement and receipt rules](REVIEW_UNITS.md). It includes the
    combined pipeline/strict-lint/evidence pass, generated-output cleanup,
-   manifest acknowledgment, clean-state checks, and exact-tree receipts.
+   clean-state checks, and exact-tree receipts.
    No component is landed until those gates pass.
 
    After the combined gate passes, push the exact candidate once to `main`.
@@ -226,18 +226,10 @@ review-only flags contradict the drain's land-end-to-end contract).
    never by hand-merge; a manifest regeneration touches only that generated
    acknowledgment surface, so it needs no new reviewer round — any OTHER
    conflict fails the landing closed and returns the PR to its worker for
-   re-review on a rebased head. PROACTIVE rule, not just on conflict: when
-   the commits being landed change citation-graph TOPOLOGY — adding or
-   removing any graph node, or rewiring any dependency edge — the landing
-   set must INCLUDE a
-   refreshed `docs/audit/data/citation_graph_manifest.json`
-   (`build_citation_graph.py` then `write_citation_graph_manifest.py`,
-   staged into the landing) — otherwise the enforced stage-18 guard blocks
-   every subsequent pipeline run on main until someone lands the
-   acknowledgment for you. `build_citation_graph.py` registers every
-   non-skipped `docs/**/*.md` file as a node before extracting any edge, so
-   a newly added note with zero markdown links is a node addition and
-   triggers this rule exactly like an edge rewire.
+   re-review on a rebased head. A landing does not need to carry the manifest
+   when it changes citation-graph topology: stage 18 prints the delta as a
+   warning, read it during validation, and it is acknowledged by the nightly
+   refresh commit. Older PRs may still carry the file.
    After cherry-picking a frozen commit set that carries the manifest, rerun
    those generators on the integrated tree before EVERY push attempt, even
    when Git reports no conflict. Git can merge two independent topology

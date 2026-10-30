@@ -338,30 +338,14 @@ Stating the honest boundary requires no new science.
   absolute paths, and paths outside the repository are all violations
   (`docs/ai_methodology/skills/review-loop/PREFLIGHT.md:56-64`).
 - In the shared combined pass in section 12, run the pipeline and read the
-  citation-graph delta gate (stage 18 against the
+  citation-graph delta warning (stage 18 against the
   tracked manifest at stage 1b). For every node your change adds, removes, or
   rewires, confirm the edge identity is intended — read your source diff against
-  the manifest diff — BEFORE acknowledging it. Acknowledgment is staging the
-  refreshed manifest, so an unintended edge acknowledged is an unintended
-  dependency landed (`docs/ai_methodology/skills/review-loop/PREFLIGHT.md:65-74`).
-- Manifest co-landing is proactive and commit-time, and the trigger is graph
-  TOPOLOGY, not markdown links alone. When the landing adds or removes ANY
-  graph node, or rewires any dependency edge, the landing set MUST INCLUDE a
-  refreshed `docs/audit/data/citation_graph_manifest.json`, generated on the
-  proposed landing tree with the serialized
-  `docs/audit/scripts/run_citation_graph_build.py` launcher then
-  `docs/audit/scripts/write_citation_graph_manifest.py` and staged before
-  commit and push. A new note is a new node whether or not it carries a single
-  markdown link: `build_citation_graph.py` registers every non-skipped
-  `docs/**/*.md` file as a node before extracting any edge, and
-  `write_citation_graph_manifest.py` requires acknowledgment for every added,
-  removed, or rewired node. A zero-edge note addition therefore changes
-  `node_count` and needs the manifest exactly like an edge rewire. Omitting it
-  blocks the enforced stage-18 guard on every subsequent pipeline run on `main`
-  (`docs/ai_methodology/skills/review-loop/references/LANDING.md` proactive manifest rule in
-  the landing loop; `docs/ai_methodology/skills/physics-loop/references/DELIVERY.md`
-  citation-graph carve-out).
-- Regeneration DURING landing is a narrow generated-artifact exception. After
+  the manifest diff. An unintended edge is a defect to fix in the source.
+- Do not ship `docs/audit/data/citation_graph_manifest.json`. The nightly refresh
+  commits it, so each topology delta stays visible in that commit's diff.
+- Regeneration DURING landing applies only to older PRs that still carry the
+  manifest. After
   cherry-picking any frozen commit set that carries
   `citation_graph_manifest.json`, regenerate it from the integrated tree before
   every push attempt, even when Git reports no conflict, and amend the newest
@@ -451,9 +435,7 @@ Audit-verdict application boundary).
   stage explicit paths only; shipping them is a defect, and a source repair's
   hash drift on a previously audited row is resolved by re-audit, never by
   committing ledger churn.
-- The one allowed generated artifact in a landing set is
-  `docs/audit/data/citation_graph_manifest.json`, and only when the landing
-  changes citation-graph topology (section 8).
+- A landing set carries no generated artifact.
 - If the branch introduces retained-grade `claim_type` rows, say so plainly in
   the PR body as work for the independent audit worker — that is a referral, not
   a verdict.

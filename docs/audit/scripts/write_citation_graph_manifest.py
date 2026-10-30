@@ -4,12 +4,12 @@
 The manifest (docs/audit/data/citation_graph_manifest.json) is the
 acknowledgment surface for graph topology: one entry per node with its
 out-degree and a hash of its sorted dependency list. Criticality is graph
-topology only (FRESH_LOOK_REQUIREMENTS section 4), so any change that adds,
-removes, or rewires nodes must ship the refreshed manifest — making the
-topology delta reviewable in the diff instead of silently reshaping
-audit-lane prioritization. repo_invariants_check compares a recomputation
-against the INDEX version and fails (under --enforce-links) on any
-unacknowledged delta.
+topology only (FRESH_LOOK_REQUIREMENTS section 4), so the nightly refresh
+commits this file — making each topology delta reviewable in that commit's
+diff instead of silently reshaping audit-lane prioritization. Science and
+landing commits do not carry it. repo_invariants_check compares a recomputation
+against the INDEX version and warns on any unacknowledged delta; forensic runs
+pass --enforce-topology-ack to fail on it instead.
 
 Deterministic: same citation_graph.json -> byte-identical manifest.
 """

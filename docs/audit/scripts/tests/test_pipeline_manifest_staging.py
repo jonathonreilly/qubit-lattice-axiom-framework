@@ -82,6 +82,15 @@ elif name == 'static_pipeline_checkpoint.py' and args[-1] == 'identity':
         self.assertEqual(self.git('show', ':' + MANIFEST), 'old\n')
         self.assertEqual((self.root / MANIFEST).read_text(), 'new\n')
 
+    def test_topology_ack_is_enforced_only_in_forensic_mode(self):
+        result = self.run_pipeline(EXPECT_OLD='1')
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertNotIn('--enforce-topology-ack', self.calls())
+        (self.root / 'calls.log').unlink()
+        result = self.run_pipeline(EXPECT_OLD='1', AUDIT_FORENSIC_MODE='1')
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn('--enforce-topology-ack', self.calls())
+
     def test_verdict_only_preserves_index_and_skips_graph_generation(self):
         result = self.run_pipeline('--verdict-only', EXPECT_OLD='1')
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)

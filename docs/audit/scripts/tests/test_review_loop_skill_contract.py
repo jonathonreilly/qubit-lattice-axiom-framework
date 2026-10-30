@@ -306,8 +306,8 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
         self.assertNotEqual(mutated, self.skill)
         self.assertIn("mandatory_authority_reads", self.missing(skill=mutated))
 
-    def test_combined_validation_requires_manifest_staging_option(self):
-        mutated = self.skill.replace("run_pipeline.sh --stage-citation-manifest", "run_pipeline.sh", 1)
+    def test_combined_validation_requires_full_pipeline(self):
+        mutated = self.skill.replace("run_pipeline.sh \\", "run_pipeline.sh --verdict-only \\", 1)
         self.assertNotEqual(mutated, self.skill)
         self.assertIn("landing_train_combined_gate", self.missing(skill=mutated))
 

@@ -94,15 +94,11 @@ seed edges you must intend.
 
 ## 6. Graph topology
 
-Before the shared full validation pass, inspect the intended topology changes
-against the reviewed source. Use the skill's `--stage-citation-manifest` full-run
-option so stage 1b's generated acknowledgment reaches the index before stage 18;
-no separate pre-pipeline graph build or per-unit full run is needed.
-During that shared pass, if the citation-graph delta gate
+During the shared full validation pass, if the citation-graph delta warning
 (stage 18 vs the tracked manifest, stage 1b) names nodes your change adds, removes, or rewires
 (rewiring surfaces as a changed node; read your source diff and the manifest
-diff for the edge identities): confirm each is intended, then acknowledge by
-staging the refreshed `docs/audit/data/citation_graph_manifest.json`. Generated status surfaces and
+diff for the edge identities): confirm each is intended. Do not stage
+`docs/audit/data/citation_graph_manifest.json`; the nightly refresh commits it. Generated status surfaces and
 class-F orientation memos under `docs/repo/` must contribute no edges at all
 (they are excluded in `build_citation_graph.py`; extend the exclusion when
 you add such a surface).

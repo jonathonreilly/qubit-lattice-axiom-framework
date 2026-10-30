@@ -14,10 +14,11 @@ Modes
   --diff A B [--allow k1,k2]
                            compare two snapshots; exit 1 on differences in
                            fields not named in --allow (dot-segment-bounded)
-  --check [--enforce-links]
+  --check [--enforce-links] [--enforce-topology-ack]
                            run absolute integrity checks; authority-link
                            violations are WARN by default, errors with
-                           --enforce-links
+                           --enforce-links; an unacknowledged citation-graph
+                           delta is WARN unless --enforce-topology-ack
 
 Invariants measured (tracked state only)
   ledger.shard_count           tracked ledger shard JSON files
@@ -821,7 +822,11 @@ def _format_graph_delta(delta: dict) -> str:
     return "; ".join(parts) or "content drift"
 
 
-def run_check(enforce_links: bool, pipeline_proposed_ledger: bool = False) -> int:
+def run_check(
+    enforce_links: bool,
+    pipeline_proposed_ledger: bool = False,
+    enforce_topology_ack: bool = False,
+) -> int:
     allowed_missing_shards = None
     if pipeline_proposed_ledger:
         tracked = _git_tracked_files()
@@ -894,9 +899,10 @@ def run_check(enforce_links: bool, pipeline_proposed_ledger: bool = False) -> in
             message = (
                 "citation-graph delta not acknowledged in the index: "
                 + _format_graph_delta(graph_check["delta"])
-                + f"; {remedy}"
+                + (f"; {remedy}" if enforce_topology_ack
+                   else " (read it; the nightly refresh acknowledges it)")
             )
-            (failures if enforce_links else warnings).append(message)
+            (failures if enforce_topology_ack else warnings).append(message)
             graph_delta_note = "delta-unacknowledged"
         else:
             graph_delta_note = "acknowledged"
@@ -924,6 +930,11 @@ def main() -> int:
     mode.add_argument("--check", action="store_true")
     parser.add_argument("--allow", default="", help="comma-separated invariant keys allowed to differ in --diff")
     parser.add_argument("--enforce-links", action="store_true")
+    parser.add_argument(
+        "--enforce-topology-ack",
+        action="store_true",
+        help="fail on an unacknowledged citation-graph delta (forensic runs)",
+    )
     parser.add_argument(
         "--pipeline-proposed-ledger",
         action="store_true",
@@ -982,7 +993,9 @@ def main() -> int:
     if args.diff:
         allow = {item.strip() for item in args.allow.split(",") if item.strip()}
         return run_diff(args.diff[0], args.diff[1], allow)
-    return run_check(args.enforce_links, args.pipeline_proposed_ledger)
+    return run_check(
+        args.enforce_links, args.pipeline_proposed_ledger, args.enforce_topology_ack
+    )
 
 
 if __name__ == "__main__":

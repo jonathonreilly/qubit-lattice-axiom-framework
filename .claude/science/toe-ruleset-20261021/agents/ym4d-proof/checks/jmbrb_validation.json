@@ -1,0 +1,67 @@
+{
+  "created_utc": "2026-10-30T04:41:01.451667+00:00",
+  "kind": "Mechanical bookkeeping only; no numerical experiment or proof certification.",
+  "checks": {
+    "all_15_inputs_unchanged": true,
+    "no_broken_local_links": true,
+    "review_matches_author_sha256": true,
+    "review_sha256_matches_read_version": true,
+    "review_final_line_land": true,
+    "no_recent_files_outside_allowlist": true
+  },
+  "input_stability": {
+    "PROCESS_LIGHT.md": true,
+    "HANDOFF.md": true,
+    "briefs_q/JMBRB/AUTHOR.md": true,
+    "briefs_q/JMBRB/REVIEW.md": true,
+    "LFPRICE.md": true,
+    "REVIEW_LFPRICE.md": true,
+    "LARGE55.md": true,
+    "CODEX_REVIEW_LARGE.md": true,
+    "RLARGE.md": true,
+    "REVIEW_RLARGE_V3.md": true,
+    "RD3.md": true,
+    "RD4.md": true,
+    "F17.md": true,
+    "SOFTHARD.md": true,
+    "PROOF.md": true
+  },
+  "artifacts": {
+    "JMBRB.md": {
+      "sha256": "6320af2da97d532fbf802f2405541de8e20f6d350b575b46462fefb4c849bb0a",
+      "bytes": 41724
+    },
+    "JMBRB_LOG.md": {
+      "sha256": "4e3254c33efb3617deec4588529c5f49111a86eb541efa0f526fc975bf2d46b7",
+      "bytes": 10292
+    },
+    "checks/jmbrb_criteria.md": {
+      "sha256": "1175ce0f5136da63ec7eec2d22d1e0c8e1ada8e90b036b36aee5d1617c8fd06f",
+      "bytes": 685
+    },
+    "checks/jmbrb_sources.json": {
+      "sha256": "e66479447fae723624233d85501136254778971740608119584ddc635aeb5426",
+      "bytes": 2480
+    },
+    "checks/jmbrb_review.md": {
+      "sha256": "3930859ad6be867a0e700c3ef7b57b9ce30b9d88960ccb62ec873abd1361ee10",
+      "bytes": 20435
+    }
+  },
+  "broken_local_links": [],
+  "recent_files_outside_allowlist": [],
+  "review_scope": "LAND for scoped OPEN research note; all five actual LF-JMBR clauses OPEN.",
+  "same_family_fresh_context_review": true,
+  "numerical_experiments": 0,
+  "commits": 0,
+  "created_files": [
+    "JMBRB.md",
+    "JMBRB_LOG.md",
+    "checks/jmbrb_criteria.md",
+    "checks/jmbrb_review.md",
+    "checks/jmbrb_sources.json",
+    "checks/jmbrb_validation.json"
+  ],
+  "bookkeeping_nice": 20,
+  "bookkeeping_peak_rss_bytes_macos": 20185088
+}

@@ -14,11 +14,11 @@
   "chain_closure_explanation": null,
   "claim_id": "axiom_first_sm_anomaly_cancellation_complete_theorem_note_2026-05-03",
   "claim_scope": null,
-  "claim_type": "positive_theorem",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": "synthesis-aggregator anomaly-cancellation theorem (assembles four exact gauge-anomaly trace identities plus the nonperturbative SU(2) Witten Z_2 parity into a single closure statement on the retained Cl(3)/Z\u00b3 left-handed-frame matter content)",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem \u2014 synthesis-aggregator anomaly-cancellation theorem (assembles five exact perturbative anomaly trace identities plus the nonperturbative SU(2) Witten Z_2 parity into a single closure statement on the supplied Cl(3)/Z\u00b3 left-handed-frame matter content)",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "author_hint",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -49,7 +49,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "11504416849719a21c3a281bea8b5b4d1a61cb15450b61f7bbad89ac8a71922f",
+  "note_hash": "8025b48ec09439ef28e8c3769cbb58fc35323ecc505ea72ba21ede0aaf9e3c9e",
   "note_path": "docs/AXIOM_FIRST_SM_ANOMALY_CANCELLATION_COMPLETE_THEOREM_NOTE_2026-05-03.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -64,7 +64,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/axiom_first_sm_anomaly_cancellation_complete_check.py",
-  "title": "Axiom-First SM Anomaly Cancellation Complete on Cl(3)/Z\u00b3 Left-Handed Surface",
+  "title": "SM anomaly consistency on a supplied matter-content surface",
   "transitive_descendants": 596,
   "verdict_rationale": null
 }

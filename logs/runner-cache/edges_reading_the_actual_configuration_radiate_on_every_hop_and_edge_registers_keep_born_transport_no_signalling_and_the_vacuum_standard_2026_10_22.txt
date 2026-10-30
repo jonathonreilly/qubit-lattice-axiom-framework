@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/edges_reading_the_actual_configuration_radiate_on_every_hop_and_edge_registers_keep_born_transport_no_signalling_and_the_vacuum_standard_2026_10_22.py
+runner_sha256: 39c44ed5fce9edd248a43c356673ddf21c6e7aca7cb11220597ecfcd5fdc16aa
+input_fingerprint_sha256: a7fc07f4f5c40083f7ca88ee29b8b73dac494b8a1aa8317cdd8ee7ac2a4c1d62
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.77
+status: ok
+----- stdout -----
+== A. smooth source: conditional odds
+[PASS] [T] A1 conditional odds of a site given the actual occupations of all other sites sit on ONE configuration (number or parity fixes the site): the site-split conditional source IS the local reading; smoothing needs a split coarser than a cell, which no clause of CL-1..CL-3 supplies | max support: number-conserving 1, parity-even 1 (L=8)
+[PASS] [T] A2 a sudden one-cell hop of a point source releases exactly (1/6)(1-1/N^3) q^2/a: cubic symmetry splits sum_i 4 sin^2(k_i/2)/w^2 = 1 equally (the self-gravity 0.17 is this 1/6) | max dev 2.8e-17
+[PASS] [T] A3 if the smooth source still jumps by one cell (it does whenever the conditioning set hops), each jump releases a^2 q^2/(48 pi^1.5 s^3): suppression (a/s)^3 x 0.022, a POWER law | E(s)/cont: s=2 4.67e-04/4.68e-04, s=3 1.38e-04/1.39e-04, s=4 5.78e-05/5.85e-05
+[PASS] [D] A4 a profile translated smoothly at v < c radiates only through lattice aliasing: no m=0 resonance, power ~ exp(-kappa*^2 s^2), EXPONENTIAL in (s/a)^2 | c=0.9, v=0.5: m=0 roots 0, kappa* 3.927 (> pi), fitted slope 15.42 vs kappa*^2 15.42; W(2.5)/W(1) 7e-36
+[PASS] [E] A5 thermal (300 K) nucleon: local reading P_local; smooth fm-wide conditional source jumping a cell per partner hop: (a/s)^3 suppression; block split of size l_s: crossings give (a/l_s)^2 | P_local 5e+07 W, P_jump 6e-52 W, budget 3e-31 W; block split needs l_s > 1e-15 m; Page-Geilker needs l_s < ~1e-2 m
+[PASS] [T] A6 under (A) the variance of B's sourced field depends on A's remote setting at fixed Born mean: a local readable distribution changes, i.e. signalling in principle; the local reading and (B) keep B's marginals setting-independent | var(dipole) Z 0.25 vs X 0e+00 d^2; BMV-scale (1e-14 kg, 250 um, at 1 mm) field split 2e-19 m/s^2 per run
+[PASS] [E] A7 a lone elementary particle sources from its full odds (Schrodinger-Newton self-term); every interferometer so far is far inside the null region | Fein-2019 molecule phase 4e-17 rad; Rb 54 cm arm attraction phase 1e-25 rad; SN self-collapse at 1 um needs 3e+09 amu
+== B. quantised edges: edge registers
+[PASS] [T] B1 an edge register is buildable from fermion-mode sites like CL-1's rishons: 2S modes per end, S+ = sum c_L^dag c_R closes su(2); length l = l_rung(1 + n_L/2S) spans exactly CL-1's split window [l_rung, 2 l_rung], and a hop moves one length quantum | 2S=4: CAR dev 0e+00, [S+,S-]-2Sz 0e+00, spin-2 multiplet dim 5, lengths 1.00..2.00
+[PASS] [T] B2 three same-type edges in [L, 2L) always form a nondegenerate triangle (a+b >= 2L > c); mixed axis/face-diagonal triangles can fail, so the register needs the triangle constraint (open, as for quantum Regge measures) | axis-axis-diagonal violating fraction 0.069
+[PASS] [D] B3 per-configuration vacuum standard with a quantum edge: the matter zero-point force w0/2 cancels exactly; the residual is the edge-motion (Born-Oppenheimer) term 1/(8M), i.e. a ratio R = 1/(4 M w0) = sigma_q^2 Omega_e/(2 w0) | force raw 0.9918, standard 2.35e-03 (R=2.37e-03, BO 2.49e-03); M x4: R/4 -> 5.56e-04
+[PASS] [D] B3b the collective (expansion) mode: N matter modes on a scale mode of mass N M leave the same total residual, so the residual vacuum density falls as 1/N_cells; for a Hubble volume ~1e-183 Planck against the measured ~1e-123: the vacuum standard survives quantisation for the expansion | N=2, M_glob=100: R 1.16e-03 vs R(N=1,M=50)/2 1.19e-03
+[PASS] [D] B3c one matter quantum above the vacuum pushes the quantum edge with force w0 (sources hbar w), the departure the vacuum standard keeps | (F1-F0)/w0 0.9552, <n> 1.005
+[PASS] [T] B4 quantum edges: the joint update never reads the actual configuration, so CL-2 has one target (Born exact, no signalling, no hop ever reaches the edges); the actual pointer, edge and test-mass values agree (Page-Geilker passes); two masses entangle through the edges | P(deflection disagrees with pointer) 0e+00; BMV (1e-14 kg, d 200 um, dx 250 um, 2.5 s) phase 0.79 rad, concurrence 0.156 (A, definite: 0)
+[PASS] [D] B5 the edge registers' vacuum, averaged over L cells, fluctuates as Var ~ 1/L^2 (delta l/l ~ l_P/L): LIGO arm 4 km ~4e-39 against 1e-23 strain; matter-wave and clock tests likewise far below | Var*L^2 at L=2,4,8: 0.178, 0.154, 0.141
+[PASS] [E] B6 stationarity becomes the large-occupation limit: corrections (l_P/L)^2 to GP-B, bending, binary timing and the Friedmann law; crush/split-epoch results (Planck curvature) are not controlled | GP-B (7e6 m) 5e-84, light bending (7e8 m) 5e-88, Hulse-Taylor (1e9 m) 3e-88, Friedmann (H0 tP)^2 1e-122
+   graviton at the cell: hbar/tau = 4e+08 J vs E_hop 5e-31 J
+theorems: A1-A3, A6, B1-B2, B4; diagnostics: A4, B3, B5; estimates: A5, A7, B6
+elapsed_seconds 0.2
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

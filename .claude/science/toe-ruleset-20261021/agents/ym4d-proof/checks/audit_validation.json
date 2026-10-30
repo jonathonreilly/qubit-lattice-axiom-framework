@@ -1,0 +1,248 @@
+{
+  "verified_utc": "2026-10-30T00:57:00.093867+00:00",
+  "scope": "Document/provenance/route bookkeeping only; no theorem, independent proof or retained status certification.",
+  "passed": true,
+  "checks": [
+    {
+      "name": "preexisting_lane_source_bytes_unchanged",
+      "passed": true,
+      "detail": {
+        "files": 3313,
+        "missing": [],
+        "changed": []
+      }
+    },
+    {
+      "name": "new_files_within_authorized_scope",
+      "passed": true,
+      "detail": {
+        "new": [
+          "AUDIT.md",
+          "AUDIT_LOG.md",
+          "checks/audit_build.py",
+          "checks/audit_criteria.md",
+          "checks/audit_graph.json",
+          "checks/audit_review.md",
+          "checks/audit_source_manifest.json",
+          "checks/audit_validate.py",
+          "checks/audit_validation.json"
+        ],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "head_unchanged_no_commit",
+      "passed": true,
+      "detail": {
+        "head": "814364fcc7dbcf0ff4146f6766e98890124ac905"
+      }
+    },
+    {
+      "name": "tracked_worktree_and_index_unchanged",
+      "passed": true,
+      "detail": {
+        "returncode": 0,
+        "stderr": ""
+      }
+    },
+    {
+      "name": "untracked_files_scope",
+      "passed": true,
+      "detail": {
+        "status": [
+          "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/AUDIT.md",
+          "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/AUDIT_LOG.md",
+          "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_q/AUDIT/AUTHOR.md",
+          "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_q/AUDIT/REVIEW.md",
+          "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/audit_build.py",
+          "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/audit_criteria.md",
+          "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/audit_graph.json",
+          "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/audit_review.md",
+          "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/audit_source_manifest.json",
+          "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/audit_validate.py",
+          "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/audit_validation.json"
+        ]
+      }
+    },
+    {
+      "name": "all_quote_locators_and_source_hashes_match",
+      "passed": true,
+      "detail": {
+        "quotations": 155,
+        "distinct_sources": 90,
+        "errors": []
+      }
+    },
+    {
+      "name": "one_valid_status_and_quoted_evidence_per_row",
+      "passed": true,
+      "detail": {
+        "rows": 142,
+        "statuses": {
+          "OPEN": 23,
+          "CONDITIONAL": 87,
+          "AT-RISK": 21,
+          "LANDED": 11
+        }
+      }
+    },
+    {
+      "name": "original_26_nodes_present",
+      "passed": true,
+      "detail": {
+        "original_nodes": [
+          "N0",
+          "N10",
+          "N11",
+          "N12",
+          "N13",
+          "N14",
+          "N15",
+          "N16",
+          "N17",
+          "N18",
+          "N19",
+          "N1F",
+          "N1S",
+          "N2",
+          "N20",
+          "N21",
+          "N22",
+          "N23",
+          "N24",
+          "N3",
+          "N4",
+          "N5",
+          "N6",
+          "N7",
+          "N8",
+          "N9"
+        ]
+      }
+    },
+    {
+      "name": "claimed_result_inventory_complete",
+      "passed": true,
+      "detail": {
+        "legacy": 44,
+        "later_support": 8,
+        "queue": 8,
+        "coordinator_reviewed": 27,
+        "coordinator_pending": 1
+      }
+    },
+    {
+      "name": "all_ten_candidate_route_sets_consistent",
+      "passed": true,
+      "detail": {
+        "errors": [],
+        "at_risk_by_route": {
+          "flat-1": [
+            "D",
+            "S",
+            "FT",
+            "E4I",
+            "E4M"
+          ],
+          "flat-2": [
+            "D",
+            "S",
+            "FT",
+            "BI",
+            "BM"
+          ],
+          "flat-3": [
+            "D",
+            "S",
+            "FT",
+            "EI",
+            "EM"
+          ],
+          "flat-4": [
+            "D",
+            "S",
+            "FT",
+            "HI",
+            "HM"
+          ],
+          "flat-5": [
+            "D",
+            "S",
+            "FT",
+            "PI",
+            "PM"
+          ],
+          "sphere-1": [
+            "D",
+            "S",
+            "SP",
+            "SS",
+            "E4I",
+            "E4M"
+          ],
+          "sphere-2": [
+            "D",
+            "S",
+            "SP",
+            "SS",
+            "BI",
+            "BM"
+          ],
+          "sphere-3": [
+            "D",
+            "S",
+            "SP",
+            "SS",
+            "EI",
+            "EM"
+          ],
+          "sphere-4": [
+            "D",
+            "S",
+            "SP",
+            "SS",
+            "HI",
+            "HM"
+          ],
+          "sphere-5": [
+            "D",
+            "S",
+            "SP",
+            "SS",
+            "PI",
+            "PM"
+          ]
+        },
+        "warning": "Contract-relative sets, not logical necessity or independent-wall certification; SS has W OR V suppliers, SW is conditional on strict target."
+      }
+    },
+    {
+      "name": "rd_source_still_matches_reviewed_snapshot",
+      "passed": true,
+      "detail": {
+        "sha256": "06ad2b5b52bfa66f7784a1fb97936337c59f5164318f89af9a2a065226671e5f",
+        "lines": 583
+      }
+    },
+    {
+      "name": "independent_mapping_review_binds_current_report",
+      "passed": true,
+      "detail": {
+        "review_sha256": "2de0c0216e6b1619c5e58123e8002640d7fe38d91379ea14281d8b95ff1b80eb",
+        "scope": "Same-family mapping readiness only; substantive review read separately by supervising agent."
+      }
+    }
+  ],
+  "artifacts": {
+    "AUDIT.md": "765abb796087032d950e0db436952c61bd08b100648fa55f2cedbe31a66c619e",
+    "AUDIT_LOG.md": "3f1a61b03bf716a7b0122b1ccffcdcc9ab652d446d217add3c69a86e4705d660",
+    "checks/audit_build.py": "6c4bc66a3c5d41ae1397fbb76c2f15a6c1f829da1813f460efdadfae3c224ceb",
+    "checks/audit_criteria.md": "fc949da1dc1f4cbde34037f9d94c7b91c93c535c6d32d0b370a06f5725bfbd42",
+    "checks/audit_graph.json": "4b6f7f0da6d59105024d5ce896aa47f56984160d130c8799636fe432de4c88d6",
+    "checks/audit_review.md": "2de0c0216e6b1619c5e58123e8002640d7fe38d91379ea14281d8b95ff1b80eb",
+    "checks/audit_source_manifest.json": "69b82eccf31a9dde15db0687f2968a3e5b123938ab6d572a0779a616af1cf404",
+    "checks/audit_validate.py": "27b0865dc3bf214c583a307009da1b88356d6d2e89ce72e8fc016089d7a31262"
+  },
+  "remote_freshness": "Not verified; fetch denied by shared FETCH_HEAD permissions.",
+  "scientific_numerics": "None; mandatory nice priority unavailable, resource diagnostics failed; no weakened numerical run."
+}

@@ -1,0 +1,31 @@
+priority= 20
+load1=1.94677734375; memory_free_percent=50
+inherited_rss_limit=(9223372036854775807, 9223372036854775807); monitored_rss_limit=1000000000
+C1-positive-normalized-chain PASS 
+C1-tower-0 PASS 
+C1-tower-1 PASS 
+C1-tower-2 PASS 
+C1-cut-1 PASS total=-2; terminal=-5555/10336
+C1-bound-1 PASS 
+C1-cut-2 PASS total=-2; terminal=-670179/14096992
+C1-bound-2 PASS 
+C1-cut-3 PASS total=-2; terminal=-7611915/1413536768
+C1-bound-3 PASS 
+C1-nonzero-terminal PASS 
+X1-omitted-terminal-detected PASS 
+X2-non-Markov-tower-detected PASS direct={-1: Fraction(-1, 1), 1: Fraction(1, 1)}; through_U1={-1: Fraction(0, 1), 1: Fraction(0, 1)}
+C2-zero-conditional PASS 
+C2-unit-total PASS covariance=1
+X3-field-dependent-center-detected PASS 
+C3-amplitude-2 PASS P_bad=1/4; cov_bad=3/4; cov_good=3/8
+C3-tail-bound-2 PASS 
+C3-amplitude-4 PASS P_bad=1/16; cov_bad=15/16; cov_good=15/64
+C3-tail-bound-4 PASS 
+C3-amplitude-8 PASS P_bad=1/64; cov_bad=63/64; cov_good=63/512
+C3-tail-bound-8 PASS 
+C3-amplitude-16 PASS P_bad=1/256; cov_bad=255/256; cov_good=255/4096
+C3-tail-bound-16 PASS 
+C3-amplitude-32 PASS P_bad=1/1024; cov_bad=1023/1024; cov_good=1023/32768
+C3-tail-bound-32 PASS 
+peak_rss_bytes=19595264; elapsed_seconds=0.007454
+VERDICT: PASS

@@ -303,7 +303,7 @@ regression, not a new death" (l.348). Update the bullet with the verdict.
 - The lead's SESSION25 CX-1 summary (l.827-879) reports F1-F7 but **omits the count ruling, F8 (NBG_A's
   background log-derivative identity omits the ad_X/(e^{ad_X}−1) factor), F9 (NBG_A's relaxed threshold
   θ_w^r > 1 is false for 7/4 < θ_w^c < 2), F10 and F12**, so PROOF's header was never corrected for them
-  (the lead's §SWEEP55 admits some Codex files were read while still being written).
+  (the lead's earlier §PROVENANCE section (in git history) admits some Codex files were read while still being written).
 - [S25-fix 5]'s "Highest leverage: (HESS-rel)" is superseded: HESSREL (T55-L) refutes (HESS-rel), and Codex
   GAPZ F7 refutes the literal form (gauge covariance is conjugacy; δ := ‖H_0⁻¹(H_Z − H_0)‖ < 1 is the needed
   condition, witness H_0 = diag(1, n), E = diag(−1, 0)), leaving only a CONDITIONAL framed version.
@@ -536,14 +536,14 @@ approved-setting Codex review, the row says so and the verdict is REFUTED (with 
 | S25-17 | CX-3 l.923 "A pure pole A/ε over **four decades** grows by exactly 1000" | CODEX_REVIEW_TUNIF F2: "Four sample values ... span **three** decades" | **REFUTED (lead-introduced slip)** |
 | S25-18 | l.546 T55-F "exactly constant over six decades" | TUNIF l.549 (faithful); Codex: six points span five decades | REFUTED (source; trivial arithmetic, agree) |
 | S25-19 | CX-4 "the doubled-currency break-even ... 80.940, not 81.7" | CODEX_REVIEW_FACEB R5; (160.380 + 1.5)/2 = 80.94 (hand) | CONFIRMED |
-| S25-20 | §SWEEP55 "TUNIF at 10.8 KB of what became 33 KB, KN at 6.9 KB of 36 KB" | `stat` sizes 33170 B, 36466 B | CONFIRMED |
+| S25-20 | the earlier §PROVENANCE section (in git history) "TUNIF at 10.8 KB of what became 33 KB, KN at 6.9 KB of 36 KB" | `stat` sizes 33170 B, 36466 B | CONFIRMED |
 | S25-21 | Lead errors #5 "A wrong line cite in the T55-A brief (l.996 for l.992)" | RLARGE l.992 | CONFIRMED (but the same wrong cite in RTARGET §54 is not recorded) |
 | S25-22 | Lead errors #1 "D5's premise ... REFUTED (T55-E). Corrected at both PROOF.md sites as [S25-fix 2]" | CODEX_REVIEW_GAPZ F2/F3/count ruling | **REFUTED (lead): the premise is unestablished, not refuted** |
 | S25-23 | Lead errors #3 "1551× ... 201.029×" | as S25-4 | CONFIRMED |
 | S25-24 | CX-2 "F2 ... the branch boundary is κ = 128/13689, independent of ε_1 and N" | CODEX_REVIEW_KN F2 | CONFIRMED |
 | S25-25 | T55-H "§3 ... a_RS may not be consumed at all — and the question ARS_FIX said 'has to be SAID' is already said" | REVIEW_ARS_EPS_S1 RA-F1 l.122-130 | CONFIRMED |
 | S25-26 | T55-I "(CO-fun) ... THREE classes ... (cc) composite-co-closed FALSE AS STATED. Decision D1's class is (cc)" | COFUN (faithful; not re-derived) | CONFIRMED (faithful; unreviewed except CODEX_REVIEW_COFUN, not used here) |
-| S25-27 | §SWEEP55 "Every Codex worker (8 runs) is gpt-6-astra, reasoning effort max" | 8 CODEX_REVIEW files existed then (GAPZ, KN, TUNIF, FACEB, COFUN, DECADES, QFIX, THETAW); banners not inspected | NOT counted (model provenance is outside what files show me) — **dropped from the tally of this table** |
+| S25-27 | the earlier §PROVENANCE section (in git history) "Every Codex worker (8 runs) is gpt-6-astra, reasoning effort max" | 8 CODEX_REVIEW files existed then (GAPZ, KN, TUNIF, FACEB, COFUN, DECADES, QFIX, THETAW); banners not inspected | NOT counted (model provenance is outside what files show me) — **dropped from the tally of this table** |
 
 Count over the 44 rows I could decide (S25-27 dropped): faithful to source 36, lead misstatement 8
 (S24-8, S24-9, S24-10, S24-19, S25-15, S25-16, S25-17, S25-22), NOT-VERIFIED 1 (S24-21). Hmm — that is 45
@@ -572,7 +572,7 @@ representative / unreviewed), and the Codex-wave summaries written from partial 
 | [S25-fix 4] a_RS binds → binds nothing | RIGHT structurally (my greps); its +63.619 clearance overclaims (Codex DECADES F2) |
 | [S25-fix 2] ONE → THREE obstructions | WRONG as a refutation (invalid status argument, Codex GAPZ F3; M-identification, F2) |
 | [S25-fix 5] THREE → TWO | WRONG as an established count (Codex GAPZ count ruling) |
-| §SWEEP55: Codex-wave summaries "superseded by the final files" | RIGHT as a warning, but not acted on: no CX section was redone and PROOF's header still carries the [S25-fix 2]/[S25-fix 5] counts |
+| the earlier §PROVENANCE section (in git history): Codex-wave summaries "superseded by the final files" | RIGHT as a warning, but not acted on: no CX section was redone and PROOF's header still carries the [S25-fix 2]/[S25-fix 5] counts |
 
 Score: 9 right, 2 partly right, 3 wrong or superseded.
 

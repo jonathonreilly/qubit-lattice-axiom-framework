@@ -158,11 +158,14 @@ def main() -> int:
 
     LANE_JSON.write_text(json.dumps(lane_shadow, indent=1, sort_keys=True) + "\n")
     # DAY-KEYED update: the tracked state advances at most once per UTC day
-    # (whichever pass runs first). Per-verdict pipeline runs later the same
-    # day leave it untouched, so audit-batch commits that stage all of
-    # docs/audit/data cannot consume churn between nightly reports.
+    # (whichever pass first sees a membership change). Per-verdict pipeline
+    # runs later the same day leave it untouched, so audit-batch commits that
+    # stage all of docs/audit/data cannot consume churn between nightly
+    # reports. An unchanged membership writes nothing: a date bump alone used
+    # to produce a one-line nightly commit that moved main for no content.
     today = datetime.now(timezone.utc).date().isoformat()
-    if prior.get("as_of_date") != today:
+    membership_changed = prior.get("lane_ids") != lane_ids
+    if not prior or (membership_changed and prior.get("as_of_date") != today):
         SHADOW_STATE_PATH.write_text(json.dumps(
             {"schema_version": 2, "lane_ids": lane_ids, "as_of_date": today},
             indent=1, sort_keys=True) + "\n")

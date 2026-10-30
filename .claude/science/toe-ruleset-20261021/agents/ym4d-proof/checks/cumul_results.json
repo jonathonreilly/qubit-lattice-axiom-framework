@@ -1,0 +1,163 @@
+{
+  "kind": "finite exact algebra and rational interval certificate; no YM estimate",
+  "criteria_sha256": "138284b36cbc65a8c3acaa1d7b2e929d5c2ad721898b7fc2eaa6f66d7f90e067",
+  "script_sha256": "873ebbb870181043a035e09ffab091403e577805fe7ab6ca63e423c69032b10b",
+  "arithmetic": "fractions.Fraction; interval endpoints exact rationals",
+  "tests": [
+    {
+      "name": "formal affine Gaussian cumulant 3",
+      "passed": true,
+      "terms": 0
+    },
+    {
+      "name": "formal affine Gaussian cumulant 4",
+      "passed": true,
+      "terms": 0
+    },
+    {
+      "name": "control omitted Gaussian subtraction detected",
+      "passed": true
+    },
+    {
+      "name": "curvature identities (1, 0, 0, 0)",
+      "passed": true,
+      "norm": "6"
+    },
+    {
+      "name": "curvature identities (1, 2, 3, 4)",
+      "passed": true,
+      "norm": "1/135000"
+    },
+    {
+      "name": "curvature identities (2, -1, 0, 3)",
+      "passed": true,
+      "norm": "3/19208"
+    },
+    {
+      "name": "connected pairing counts",
+      "passed": true,
+      "counts": [
+        2,
+        8,
+        48
+      ],
+      "cycle_multiplicities": [
+        16,
+        16,
+        16
+      ]
+    },
+    {
+      "name": "two-point independent check",
+      "passed": true,
+      "value": "12"
+    },
+    {
+      "name": "three-point collinear cancellation",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "name": "three-point noncollinear cancellation",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "name": "four-point exact independent contraction",
+      "passed": true,
+      "value": "169/108",
+      "cycle_traces": [
+        "2/27",
+        "3/128",
+        "1/3456"
+      ]
+    },
+    {
+      "name": "point quotient",
+      "passed": true,
+      "value_per_inverse_colour": "169/15552"
+    },
+    {
+      "name": "control wrong cycle factor detected",
+      "passed": true
+    },
+    {
+      "name": "control omitted cycle detected",
+      "passed": true
+    },
+    {
+      "name": "smooth four-point positive interval",
+      "passed": true,
+      "interval": [
+        "19505122425639173225233926189030105562404185044535162262341115091042316273237521850451514856878589135778416846903441650710563713580668610139105037681417541797565184697398731266351499026692223954773700709620025008916854858398437500000000000000000000000000000000/12562407545232206853745225935408276480296508080159502556830111855130368405238981915328957710026101633917512404814654339305474005601381712011016142743052107472096033960133163245802643693334341497646516029933896345707663158982582842059098434382153241660167086207",
+        "79113039306055318167569670448993528625168085893299197032006399118875526913030038854340227213886890238923325748660393287276149526501863268737247696319375206985674612224102020263671875000000000000000000000000000000000000/50164137531057343607160472105549514624500013514217161015323053887889214056123917296112955840819119705582510747137774017793062145551839783511903955504583365600131784564572562766415114095723576942121733487778651825618107"
+      ],
+      "certified_outer": [
+        "3/2",
+        "5/3"
+      ]
+    },
+    {
+      "name": "smooth two-point positive interval",
+      "passed": true,
+      "interval": [
+        "905137126100720021507964686304340805829610905410858360147857666015625000000000000000/75791188724301675889873873673230244568196989664705113021707995624306748073210431667",
+        "23376397948071716810974667398595913707367630004882812500000000000000000/1938702538485912144116466822874522528273805847915540503530562720846667"
+      ],
+      "certified_outer": [
+        "11",
+        "13"
+      ]
+    },
+    {
+      "name": "smooth ratio interval",
+      "passed": true,
+      "interval": [
+        "12278326094621330288760772491273174500210902555953592944804776497795096315658828027622498535913640761704254626382631667713963564821084794533818462996226549256684840435036884082920890997287997309541352578517505799368763945659/1149730856780793353377119886451964278787591561175043576816300346798002977745406517191725873538472461783496676198958894403422873462728351834554258124307685761823341684423070656983249054994463663514379336994080778276448381467500",
+        "440816049778498224260950465264465799545021809958233191507600014988618106646238011697500265750090799348671467147645068019614698185354685830211937106545061885017761638260185767899613870290810980764659975244623464845561162560/39865204771781041709062389311192775699797190446775124235464417559607981973450945206722248263641229805309962395139059936157302867749051332891213501955142694749399855062577507482803649477445010912842786013396153718714173595669"
+      ],
+      "certified_outer_per_inverse_colour": [
+        "3/338",
+        "5/363"
+      ]
+    },
+    {
+      "name": "affine cumulant scaling n=2 a=-3/2",
+      "passed": true
+    },
+    {
+      "name": "affine cumulant scaling n=3 a=-3/2",
+      "passed": true
+    },
+    {
+      "name": "affine cumulant scaling n=4 a=-3/2",
+      "passed": true
+    },
+    {
+      "name": "ratio rescaling a=-3/2",
+      "passed": true
+    },
+    {
+      "name": "affine cumulant scaling n=2 a=2/3",
+      "passed": true
+    },
+    {
+      "name": "affine cumulant scaling n=3 a=2/3",
+      "passed": true
+    },
+    {
+      "name": "affine cumulant scaling n=4 a=2/3",
+      "passed": true
+    },
+    {
+      "name": "ratio rescaling a=2/3",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "rejected_candidate": {
+    "nonzero free scalar F2 third cumulant": "FAILED: exact coefficient is zero"
+  },
+  "nice": 20,
+  "peak_rss_bytes": 21037056
+}

@@ -15,8 +15,9 @@ not a change in the blocking factor L, and the logarithm is not substituted
 for a universal running coefficient. The full finite-momentum action is
 not a nearest-neighbor Wilson action.
 
-The mathematical source is an UNFROZEN author proposal until the source
-freeze recorded in its receipt. A different fresh check remains required.
+The mathematical source is frozen for a different fresh source-first check.
+Its receipt records the freeze identity. This is an author proof proposal;
+no independent acceptance is asserted here.
 
 ```yaml
 actual_current_surface_status: bounded-support
@@ -24,6 +25,9 @@ author_proposal_status: pending_fresh_independent_review
 target_claim_type: bounded_theorem
 trace_class: upstream_support
 reachability_to_target: partially_closes
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 full_existence_established: false
@@ -62,9 +66,12 @@ to kappa=0. The original large-u threshold may depend on N,L,kappa.
 
 ## 2. The on-shell constant-curvature jet
 
-Fix a plane mu<nu and use a formal real Cartan curvature F H. BM16 and
-DS17 identify its fine field: curvature F H/L^2, in the actual tree
-section. The exact Abelian paired path integrals are
+Fix a plane mu<nu and use a formal real Cartan curvature F H, with the
+concrete H of BD9 when a colour basis is needed. Before tree fixing one
+may take U_(z,mu)=exp(-F z_nu H/L^2) and all other links equal to I;
+then use the original root-pinned tree gauge in each block. Coarse
+V_(X,mu)=exp(-F X_nu H), with the other coarse links I. BM16 and DS17
+identify this actual fine curvature profile. Its paired path integrals are
 
     T_(rho,y,pi)=exp(B_rho+F s_(rho,y) H),
     s_(mu,y)=-y_nu/L, s_(nu,y)=y_mu/L,
@@ -95,10 +102,16 @@ kernel Pi(r) therefore has curvature density
 
 This is an identity of jets, obtained from the volume-first kernel.
 It includes the actual critical motion: CH3 solves the linear critical
-equation, and BD10 removes the second Cartan critical variation. Terms
-from a second momentum derivative of the critical map multiply the
-zero-momentum joint pure-gauge direction and vanish by that joint Ward
-identity. Thus an affine evaluation does not omit those terms silently.
+equation, and BD10 removes the second Cartan critical variation. For the critical-motion detail, form the joint Hessian Pi_joint(q) of
+log A(U)+(1/2)TrLog K_intr(U,V) before substituting U_T. Its first
+derivative at identity is zero by colour invariance. Root-gauge covariance
+gives Pi_joint(q) g(q)=0, where g(0)=0 and
+partial_mu g(0)=i(E_mu,e_mu). Thus Pi_joint(0)(E_mu,e_mu)=0. If
+J(q)=(Phi(q),I) is the linear critical pullback, J(0)e_mu=(E_mu,e_mu),
+and the coarse Hessian is J(q)^*Pi_joint(q)J(q). Terms containing
+J double-prime therefore vanish at q=0; the first-derivative terms
+are exactly the affine profile CH3. This proves the claimed critical-motion
+cancellation without deleting the remaining momentum derivatives.
 All later constant-F formulas mean this finite-jet evaluation, not an
 analytic continuation of an unbounded affine field through a cutoff.
 
@@ -125,9 +138,11 @@ where W_F is the intrinsic Wilson Hessian. The leading spread cancellation
 is included in this identity; an unnormalized penalty would not give it.
 
 Use the crossing injection E of BD8, with E^*E=L^3 I and Q_0 E=I.
-Choose a cellwise orthonormal matrix R_0 whose range is ker E^*. It may
-be chosen separately on each crossing orientation and on internal free
-links, so it respects the root gauge base of every tangent. Define
+Choose a cellwise orthonormal matrix R_0 whose range is ker E^*. Fix it
+by keeping internal standard vectors and applying ordered Gram--Schmidt
+to e_j-e_last in each lexicographically ordered crossing family. It is
+chosen separately on each orientation, so it respects the root gauge
+base of every tangent. Define
 
     J_F=(Q_F E)^-1,
     T_F(y,z)=E J_F y+(I-E J_F Q_F)R_0 z.                (CH7)
@@ -205,8 +220,10 @@ the corresponding vacuum factor exactly. No primed determinant appears.
 These scalar factors arise from algebra of the original determinant;
 calling them an additional Faddeev--Popov factor would double count.
 
-For use with the affine jet, an equivalent resolvent proof avoids a
-finite-torus constant-flux interpolation. Write R_A=(A_F+s)^-1 etc.
+CH13 is a finite-dimensional identity wherever the stationary background
+is defined, and an identity of the local curvature jets. For the affine
+projection the following resolvent proof is the one actually used; it
+avoids a finite-torus constant-flux interpolation. Write R_A=(A_F+s)^-1 etc.
 Woodbury and (M_F+s)^-1 D_F=D_F/s give
 
     tau R_M=tau R_A-tau R_B+n_s_per_cell/s.              (CH14)

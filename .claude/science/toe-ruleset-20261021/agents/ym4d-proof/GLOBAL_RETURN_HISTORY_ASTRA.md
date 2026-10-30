@@ -600,3 +600,261 @@ repeated effective steps, non-free continuum existence and the physical mass
 gap remain open. The next sustained route is to test the uncharged mean-smoothed
 class and to identify whether an actual inherited decomposition can retain
 these current charged roots without spending their reserve twice.
+
+## 10. A third colour keeps the ORIGINAL cut complement
+
+There is a further one-step extension of the same construction. Impose
+4 sqrt(Nq)<epsilon_cut, with epsilon_cut the original interior-plaquette
+operator-norm threshold (or its minimum if the admitted thresholds vary).
+An interior plaquette at Q_X<q has each free chord within sqrt(Nq) of I;
+its tree links equal I. Unitary telescoping therefore gives
+||I-U_p||op<4 sqrt(Nq)<epsilon_cut. Consequently
+
+    Q_X<q implies chi_X=1.                              (GH33)
+
+Every failure of the ORIGINAL cut lies in the actual q-bad set. On a fixed
+GH10 history, all such failures lie in its cores A, because R_j minus A and
+O_h are q-good. No cut is deleted: this implication determines exactly where
+its complement can occur. The additional inequality is compatible with the
+fixed positive original cutoff and shrinking q; if a supplied cutoff shrinks,
+it is a displayed extra condition, not automatic.
+
+Introduce one auxiliary variable t_B per original owner block and define
+
+    Z_orig(t;V,J)=int w_J product_B[chi_B+t_B(1-chi_B)]dH,
+    Z_orig(0)=Z_cut, Z_orig(1)=Z_all:=int w_J dH.          (GH34)
+
+All kernel normalizers and gauge-fixed modes are the original ones. This
+polynomial is an exact sum of disjoint ORIGINAL hard-cut sectors. It is not
+obtained by declaring chi_cut=1 in an estimate.
+
+For a selected current core A with chosen shell j let
+
+    L_a(t)=I_R^-1 int ell_a w_R,J
+          {product_(B in A)[chi_B+t_B(1-chi_B)]-chi_R}dH_R. (GH35)
+
+On ell_a every B in R minus A is q-good, so chi_R=product_(B in A)chi_B.
+At each real configuration the expression in braces is zero if all original
+cuts hold, and is product_(B failed in A)t_B otherwise. For |t_B|<=2 its
+absolute value is <=2^|A| 1_(chi_R=0). Thus it is a bounded measurable marked
+insertion in the FULL compact fibre. Its derivatives do not hit an original
+cut: under WR15 those cuts are fixed. Denominator and zero-off-annulus
+conventions are the same as GH12. The exact local decomposition is now
+
+    C_a^orig(t)=A_a+D_a+L_a(t).                         (GH36)
+
+The real upper proof of GH16 applies to L_a without the factor chi_R. All
+coercivity and mean-spread inequalities used there are pointwise on compact
+fine fields on ell_a; they do not assume chi_R. The normalizer cap and upper
+Haar volume use only a subset of the compact fibre. Hence GH18 holds with
+no regulator, a_a=2^|A|, for L_a. There is no derivative of the nonsmooth
+maximum m(M); original smooth densities are differentiated as in GH17.
+Equivalently absorb 2^|A| in the colour count: D_a+L_a has positive majorant
+at most (1+2^|A|) times the common coefficient, and 1+2^n<=3^n.
+
+Repeat the finite GH12--GH13 bijection with L_a(t) as marked colour. The
+phase, original-a chart, physical critical prefactor, readers, Gaussian
+forests and real moving-center jets are identical to the previous construction.
+Use GH23 with b_in=0 and the same log3 colour allowance. No new covariance
+or stationary point is introduced. Every surviving log species contains
+an L_a reader and vanishes at t=0. It follows that
+
+    Z_orig(t;V,J)/Z_cut(V,J)=exp[sum_Y Phi_Y(t;V,J)],
+    Phi(0)=0,
+    ||Phi||_(beta/2;T^(6,4); |t_B|<=2)
+                         <=exp[-kappa_f p_cut^2].       (GH37)
+
+Here retained-input fine derivatives are zero unless actual smooth insertions
+of section6 are included; current fine fields have all been integrated out.
+The absolute smallness and actual coarse/source jets are those proved in
+GH20--GH29, not a derivative of a newly chosen independent center. Uniform
+convergence holds on compact subsets of |t|<2; the displayed bound is the
+majorant on the closed radius-two polydisc. Formula GH37 establishes a
+one-step FULL compact/bare-cut comparison at the stated narrow real coarse
+class. It still does not give a rough coarse boundary estimate.
+
+Under the full one-step real normalized compact law, the probability generating
+functional of the ORIGINAL bad-block set is therefore exactly
+
+    E_(nu_all,J) product_(B originally bad)t_B
+                         =exp[sum_Y(Phi_Y(t)-Phi_Y(1))]. (GH38)
+
+Its all-cut probability is exp[-sum Phi_Y(1)], with the entire extensive
+absence factor retained. Each original bad-set probability is the coefficient
+of its multiaffine monomial; zero-mass sets remain zero. Every original hard
+cut, source, compact normalizer and mode belongs to this identity.
+The hard RD completion test is not determined by this bad set: GH38 does
+not claim its retained-field jets or an arbitrary complete-history theorem.
+
+There is nevertheless a direct earlier-level application of the IDENTITY.
+At the first step let b_eff,1(U_1;J)=int exp(-S_0^J)K_0 dU_0. For the
+refinement recording ONLY the original bad set B at that step,
+
+    rho_B(U_1;J)=b_eff,1(U_1;J)
+                     [t^B]exp[sum(Phi_0(t)-Phi_0(1))],
+    rho_B/b_1=(b_eff,1/b_1)
+                     [t^B]exp[sum(Phi_0(t)-Phi_0(1))].   (GH39)
+
+This applies where U_1 is in GH9's actual small-curvature domain. Its complete
+bad-set law is now constructed globally at one bare step. The genuine
+b_eff,1 equals the full P_*, chart/cut remainders and exp(sum Phi_0(1)); it
+is NOT the prescribed Wilson b_1. The ratio b_eff,1/b_1, any completion
+selector depending on U_1, and the next integration remain explicit.
+No reference factor is assigned a rare bound merely by writing GH39.
+
+## 11. An actual earlier-history obstruction to current-root-only coverage
+
+The preceding restriction is necessary for a particular proposed extension,
+not a global impossibility claim. Use RD R2--R3 with a finite old size
+threshold n0, an old original cutoff 0<epsilon_cut,0<2, and a compatible
+finite torus containing a connected block set Y with |Y|>n0. Choose the
+old fine variables as follows. In each block of Y put one free interior
+chord at a diagonal SU(N) element with eigenvalues exp(i theta),exp(-i theta),
+1,...,1 and 2|sin(theta/2)|>epsilon_cut,0. Set all other free links to I.
+A plaquette containing that chord, and otherwise identity links, fails the
+interior cut. Such a chord exists for odd L>=3 in the fixed tree quotient;
+an elementary interior plaquette cannot have all four edges in a tree.
+Blocks outside Y have every interior plaquette equal I. A sufficiently small
+product neighborhood has exactly bad set Y and positive Haar measure.
+
+On this neighborhood a_0(Y)=0 by SIZE for every U_1; there is no other bad
+component to generate another failure. Thus the actual complete failure
+history h=(F_0={Y}) has Xi_h=1 there, regardless of U_1. Every original K_0
+is continuous and strictly positive on all compact real fields, including
+arbitrary means. At real original sources in |J_p|<=rho_0 u_0,
+
+    rho_h(U_1)=int Xi_h exp(-S_0^J)K_0 dU_0>0
+                                      for every real U_1.          (GH40)
+
+This is an actual positive contribution to a legal earlier history, not an
+invented independent selector. Choose the next V=I and U_1=I. Then all current
+Q_X vanish, all current interior cuts hold, and
+
+    b_1(I)=exp[-u_1 sum_p s(I)]=1, J_h(I)=rho_h(I)>0.    (GH41)
+
+A sum supported only on nonempty CURRENT q-bad cores vanishes there. It cannot
+be this nonempty earlier J_h. For a proposed literal 1+current-corrections
+representation one can also prove J_h(I) differs from1 in a nonempty window.
+
+Here is the full normalizer estimate needed for that assertion. For t0>=2,
+a translate of the operator ball of radius1/t0 has Haar mass at least
+(1+4 sqrt(2)N t0)^(-2N^2), by RD's entry-grid covering argument. On that ball
+h(W;M)>=h(U_1;M)-1/t0 for every ||M||op<=1. Thus the EXACT normalized kernel
+obeys, uniformly in M and its output,
+
+    k_t0<=Kcap(t0):=exp(1)(1+4 sqrt(2)N t0)^(2N^2).
+
+On Xi_h=1 all blocks of Y fail their original interior cuts. Distinct blocks
+supply distinct plaquettes with s_p>=epsilon_cut,0^2/(2N). If n_c is the
+TOTAL number of original K_0 factors on this finite torus, positivity and
+probability Haar give
+
+    rho_h(I)<=Kcap(t0)^n_c
+        exp[-u_0(1-rho_0)|Y|epsilon_cut,0^2/(2N)]<1      (GH42)
+
+whenever the displayed negative exponent exceeds n_c log Kcap(t0).
+For fixed finite torus, size threshold, positive cutoff, kappa and rho_0<1,
+this is a nonempty large-u_0 window. If those data vary with u_0, retain that
+inequality; do not silently assert its asymptotics. The source-free case is
+included. Combining GH41--GH42 yields 0<J_h(I)<1, disproving that literal
+1+current-bad-only identification on these actual data.
+
+The partition sum over old histories equals b_eff,1, NOT b_1. It cannot be
+used to infer rho_h<b_1 without a reference calculation. GH41 uses only the
+exact value b_1(I)=1, and GH42 retains ALL old compact normalizers. The result
+does not exclude an analytic/earlier-root contribution or a suitably charged
+mixed class. It shows why that additional contribution cannot be omitted.
+It also does not claim this history lies in an as-yet-unconstructed stable
+admissible subclass; its complement would still require an exact estimate.
+
+## 12. Original-cut witnesses give a stronger charged coefficient norm
+
+The literal cut convention is CS1: ||I-U_p||op<epsilon_cut on every
+block-interior plaquette. A failed block B has an internal witness p_B with
+s(U_pB)>=epsilon_cut^2/(2N). Distinct blocks supply distinct plaquettes,
+and every witness in A belongs to P_R. All other centered-energy terms are
+nonnegative. For F the failed ORIGINAL blocks in a selected core,
+
+    E_R^e >= e_cut |F|,
+    e_cut=(1-rho_0)epsilon_cut^2/(2N).                  (GH43)
+
+This bound and E_R^e>=c Q(I_j) concern the SAME energy. They are not added
+as though two independent reserves existed. In section10 no input regulator
+was inserted. Allocate exactly theta_cut=1/32 of that energy and set
+
+    r_cut=exp[u e_cut/32].
+
+For |t_B|<=r_cut the exact cut-sector polynomial in GH35 has absolute
+coefficient sum r_cut^|F| at each configuration with F nonempty. Thus
+log(r_cut)|F|<=u E_R^e/32. The remaining density and reset satisfy
+
+    E_R^e-A_ref^e-u^-1 log(r_cut)|F|
+             >=(31/32)E_R^e-A_ref^e
+             >=(23/32)E_R^e >=(c/2)Q(I_j).             (GH44)
+
+The compact normalizer, determinant and Haar price is still p(u)|R|.
+This leaves the SAME c u q/2 local reserve used by GH23. The subsequent
+c u q/16 real-buffer translation, finite jets, shape and reader costs are
+paid only from that retained reserve. For simultaneous input regulators
+one must replace the condition by a_reg M C_reg+theta_cut<=1/32; the two
+previous allocations cannot both be spent at their maximal values.
+
+There is no factor r_cut^|A| left in the local estimate: the actual number
+of failed blocks was paid pointwise by GH43. Its positive value bound is
+the old bound with a_a=1. All cut-sector coefficients are disjoint before
+integration. The ordered density-jet bound in GH17 is common to them, so
+the sum of the absolute physical Taylor coefficients with t weight
+r_cut^|F| obeys the SAME GH18. The two selected colours cost at most2 per
+core; retaining the previous log3 allowance is conservative.
+
+Carry these nonnegative cut-monomial weights through the two density and
+two reader trees BEFORE taking coefficient absolute values. A product of
+marked primitives multiplies t monomials and multiplies their weights.
+Repeated labels in a logarithmic term are kept with their multiplicities;
+no original action is respent in a single physical integral. The standard
+repeated-activity products in the logarithm use already bounded integrals.
+Since every log term has at least one marked primitive, write canonically
+
+    Phi_Y(t)=sum_(n nonzero) phi_(Y,n) t^n,
+    n=(n_B) finitely supported, n_B nonnegative integers,
+    supp n subset Y,
+    sup_x sum_(Y contains x) exp[(beta/2)|Y|]
+          sum_(n nonzero) r_cut^|n| sup T^(6,4) phi_(Y,n)
+                         <=exp[-kappa_f p_cut^2].       (GH45)
+
+Here and only here T includes the actual current coarse and original-source
+jets (or an explicitly admitted smooth retained input as in section6).
+It is not a claim that an unintegrated hard retained predicate has such jets.
+The r_cut power-series estimate follows directly from the positive majorants,
+not from summing Cauchy estimates over exponentially many unspecified labels.
+For u sufficiently large r_cut>=2, so it also contains GH37's polydisc.
+If a shrinking original cutoff is supplied, r_cut retains its displayed
+u epsilon_cut^2 value and GH33 must still hold.
+
+For a nonempty finite set C of distinct original cut labels put
+
+    v_C=sum_Y phi_(Y,1_C)=partial_(t_C)sum_Y Phi_Y(0).
+
+Keep the finer Y-decorated coefficients whenever full readers are needed.
+They have at least one ORIGINAL failed-block label, each paid by r_cut^-1.
+For an exact bad set B the ratio to the SAME all-cut reference is
+
+    rho_B/Z_cut=sum_(pi partition B) product_(C in pi)v_C,
+    rho_empty/Z_cut=1.                                (GH46)
+
+This is coefficient extraction of exp(Phi), not a product-probability
+assumption. Multiindices with repeats do not enter this distinct-label
+coefficient; they remain in the full log and its norm. Formula GH46 is a
+constructive complete-reader charged library for ALL original bad-set
+sectors at ONE bare step. Its void factor under nu_all is exp[-sum Phi(1)],
+as in GH38. The physical Wilson-source normalization at J=0 is still GH30.
+All original kernel vacua, Haar/mode powers and the extensive critical
+prefactor remain in Z_cut and b_eff,1. Nothing in GH45 bounds b_eff,1/b_1.
+
+This supplies actual earlier ORIGINAL-cut charges after their fine fields
+have been integrated, instead of trying to attach them to a later current
+q-bad event. It does not supply the RD completion/size-history selector
+when that selector still depends on retained fine/coarse fields. Summing
+those history selectors before the first transfer gives the same Z_all
+exactly, but controlling the next step outside the present small-curvature
+window and controlling the resulting full prefactor are additional tasks.

@@ -1333,3 +1333,205 @@ stable domains, reserve/rate regeneration and the physical coupling law
 at every later step. Reusing GH56 as though the input were bare Wilson
 would not prove these statements. There is no all-depth, native mu+2,
 continuum-existence or physical mass-gap conclusion in this section.
+
+## 16. Convexity of the actual inherited density on the second chart
+
+This coordinator-authored continuation awaits independent review. It concerns
+the full zero-original-source density, conditioned on the ordinary second
+chart, at terminal V_2=I. It does not condition on a first-step return history.
+The original chart complement is still present in the full compact integral.
+The new input is SAP15's already proved coarse-energy allocation, not a new
+energy estimate. The action and determinant producers CA and CD are also reused.
+
+Use two actual normalized steps on a finite torus with terminal side T>=2,
+the same odd L>=3, N>=2, and kappa in its admitted positive compact interval.
+Put D=N^2-1, sigma^2=N/u and lambda=u_1/u in [c_-,c_+]. Impose GH56--GH57
+and all common RF/WR domain restrictions. At the second level retain the exact
+rooted tree quotient, all free links and every colour. Its chart is
+
+    Omega_1={a: max_free e ||a_e||HS<r_1},
+    r_1=sqrt(N/u_1) [log(2+u_1)]^alpha, alpha>5/2,
+    U_1,e=exp(a_e), with tree links I.                  (GH64)
+
+For sufficiently large u, GH62 puts its closure strictly inside GH60's real
+domain. All constants below are independent of T,u,u_1 in the stated ratio
+interval; they may depend on the fixed producer domains, L,N and kappa bounds.
+The first bare critical phase and precision on this domain are
+`A_1(U_1)=F_0(b(U_1);U_1)` and `K_*(U_1)=F_0''(b(U_1);U_1)`.
+Let `R_1(U_1)=sum_Y R_Y^all(U_1,0)`. Keep the exact GH60 identity
+
+    rho_1(U_1,0)=C_0 exp[-A_1(U_1)/sigma^2]
+                      det K_*(U_1)^(-1/2) exp[R_1(U_1)],
+    C_0=h_N^(n_f) (2pi sigma^2)^(d_f/2).
+
+Here n_f is the number of first-step free links and d_f=D n_f. With n_1 second-step
+free links, define the exact coordinate phase
+
+    Phi_2(a)=-sigma^2 log[rho_1(exp a,0) K_1(I,exp a)
+                              h_N^(n_1) prod_e j_N(a_e)]
+       =A_1(exp a)-sigma^2 log K_1(I,exp a)
+          -sigma^2 sum_e log j_N(a_e)
+          +(sigma^2/2) LogDet K_*(exp a)-sigma^2 R_1(exp a)
+          -sigma^2 log[C_0 h_N^(n_1)].                 (GH65)
+
+This includes the full first critical action, full determinant, both kernel
+normalizers and both Haar conventions. Constants remain in the identity even
+though their field derivatives vanish. The induced simultaneous change of
+first-step variables when fixing the second tree is the exact quotient
+change from section 14, with gauge volume one.
+
+### 16.1. The cold Hessian and the moving lift
+
+At cold data the first critical field is zero: every local first derivative
+vanishes, and FU's critical branch is unique. Let v be a coarse-link variation
+and a a free first-step fluctuation variation. Write `x=a+E v` for the actual
+physical fine-link variation. E is the derivative of the canonical lift:
+it copies v onto the relevant crossing links and is zero on internal links.
+It preserves the tree slice. The exact joint second derivative is
+
+    D^2 F_0(0;I)[(a,v),(a,v)]
+       =||d_0 x||^2+kappa||Q_0 x-v||^2
+          +kappa[1-c_N(kappa u)]||Z_0 x||^2
+          +N^2/(6u)||a||^2.                            (GH66)
+
+Here d_0 denotes the first-level lattice curl. Q_0 is the actual averaged
+contour linearization, and
+`||Z_0 x||^2=sum_c average_tau||theta_(c,tau)(x)-Q_0 x(c)||^2`.
+To verify GH66, differentiate the actual normalized kernel as in
+[F5--F8](SOFT_FLUCTUATION_COVARIANCE_ASTRA.md): allowing its output to vary
+replaces the numerator's average `||theta||^2` by `||theta-v||^2`; the
+normalizer is independent of that output. Haar invariance gives its same
+`c_N` variance cancellation, with 0<c_N<1. The first Haar term is in a,
+not x. Thus a moving-lift change of coordinates does not justify simply
+adding a Haar diagonal in absolute fine coordinates. GH66 retains it exactly.
+
+Let `C_F=10L^2+1920[3L(L-1)/2]^2` and
+`c_S=min{1/C_F,kappa_-/120}`. Differentiating the all-compact zero-source
+[SAP15](SQUARED_ALIGNMENT_PRICE_ASTRA.md) at the identity gives, for every
+fine x and coarse v,
+
+    ||d_0 x||^2+kappa||Q_0 x-v||^2 >=2c_S||d_1 v||^2.
+
+The factor 2 follows from `E_0>=c_S sum_P ||I-V_P||HS^2/N` and
+`N E_0=(||d_0 x||^2+kappa||Q_0 x-v||^2)/2+O(3)`.
+Near I the maximizing mean is smooth; its quadratic alignment cost is
+`||Q_0 x-v||^2/(2N)`. This also follows by minimizing the quadratic
+average `||theta-v||^2` over its traceless Lie-algebra tangent variable.
+The Schur formula for the stationary value and the last two nonnegative
+terms of GH66 therefore prove `D^2 A_1(I)[v,v]>=2c_S||d_1 v||^2`.
+Taking the infimum over a is legitimate because FU's fine Hessian is positive;
+for fixed v, a ->x=a+E v is a bijection of the fine tree slice.
+
+For the next kernel the same finite-u calculation gives at a=0
+`lambda kappa(||Q_1 a||^2+[1-c_N(kappa u_1)]||Z_1 a||^2)`.
+The next Haar Hessian is `N^2/(6u) I`, also positive. Put
+
+    B_2=A_1-sigma^2 log K_1-sigma^2 sum_e log j_N,
+    a_gap=1/max{4L^3(L+4)(60L^2)^2,2L^3/kappa_-},
+    gamma_2=a_gap min{2c_S,c_-}>0.
+    D^2 B_2(0)>=gamma_2 I.                             (GH67)
+
+The last inequality uses F9--F12's gap for the actual tree-quotient form
+`d_1^*d_1+kappa Q_1^*Q_1`. No root, winding or colour direction is removed.
+
+### 16.2. Paying the determinant and the nonlinear remainder
+
+Fix one common preliminary CA/CD/FU product domain about coarse center I,
+with the same already chosen R and beta as GH56. Its positive analytic
+radii are fixed before u. This is an analytic domain for the critical phase
+and precision; it is not an assertion of GH60's integral identity outside
+its narrower domain. FU uniqueness identifies the two branches on their
+overlap. Choose a fixed scalar coordinate polydisc radius b>0 inside those
+coarse radii and the next step's fine local-vertex radius. On the half disc,
+CA13 multiplied by sigma^2 gives a uniform rooted bound C_A for A_1's
+complete scalar atoms. Its exact vacuum obeys
+`sigma^2 |log z_(kappa u)|<=2N kappa`, so this budget is uniform in u.
+CD19 gives a uniform rooted bound C_D for all atoms of LogDet K_*.
+
+Here is explicit volume-independent differentiation. Let n_c=4D and
+`B_j(beta)=sup_(m>=1) m^j exp(-beta m)<infinity`. Each original reader
+S contains at most n_c|S| coarse scalar coordinates. Cauchy estimates on
+the half disc, with each coefficient supremum taken before summation, give
+
+    max(row,col)sum_j |partial_i partial_j LogDet K_*|
+         <=8 b^(-2) n_c B_1(beta) C_D=:M_D,
+    max(row,col)sum_j |partial_i partial_j A_1(a)
+                                      -partial_i partial_j A_1(0)|
+         <=48 b^(-3) n_c^2 B_2(beta) C_A max_e||a_e||HS.
+
+For the second line integrate the third derivative along t a, 0<=t<=1.
+The two summed slots cost `(n_c|S|)^2`; the fixed i marks its owner in S.
+These are absolute row and column bounds, hence operator bounds for the
+real symmetric Hessians. No bound on an extensive scalar is substituted.
+For the next kernel and Haar vertices the same argument uses FU's uniform
+local analytic bound H, finite arity q=(8L^4+8)D and incidence
+`nu<=(9L^4+5)9^4`. The scaling factor is lambda<=c_+, so their combined
+third-derivative row budget is at most `48 b^(-3) nu q^2 c_+ H`, after
+enlarging H to cover their exact scalar vacua. Consequently a fixed C_B gives
+`||D^2 B_2(a)-D^2 B_2(0)||op<=C_B r_1` on GH64 for sufficiently large u.
+
+For the actual all-cut R_1 use GH60's absolute field tensor norm at h=sigma,
+zero source positions, and original source zero. Its budget
+`E_u=C_beta sigma^2+exp(-kappa_w u^(2theta))` is at most
+`(C_beta+1)sigma^2` for large u. Passing from left Lie derivatives to the
+coordinates exp(a_e) uses the bounded exponential differential and its
+first derivative, each acting on just one link. The second derivative
+contains a two-field tensor and a same-link one-field correction. Thus,
+with a fixed finite C_exp(N) absorbing the component sums,
+
+    ||D^2 R_1(exp a)||op
+        <=C_exp[2 E_u/sigma^2+E_u/sigma]<=M_R.
+    D^2 Phi_2(a)
+        >=[gamma_2-C_B r_1-sigma^2(M_D/2+M_R)]I
+        >=(gamma_2/2)I                                  (GH68)
+
+for all sufficiently large u, uniformly in volume. Whole-link coordinate
+conversion preserves the original readers. In particular the determinant
+has been estimated after its correct sigma^2 prefactor, not called small
+as an unscaled logarithm. Both r_1 and sigma^2 tend to zero.
+
+### 16.3. Actual chart-conditioned variance and simultaneous tails
+
+Let nu_ch be the actual second posterior conditioned on Omega_1. In these
+coordinates its probability density is proportional to
+`1_(Omega_1) exp[-Phi_2/sigma^2]`. The normalization is the actual chart
+integral of GH65. It includes rho_1; no bare replacement is made. The
+Euclidean, infinite-dimension-parameter case of
+[Kolesnikov--Milman, Theorem 1.2(1)](https://arxiv.org/pdf/1310.2526v7)
+applies to its convex potential. For the product-ball corners, first use
+the smooth convex domains
+`Omega_p={sum_e (||a_e||HS/r_1)^(2p)<1}`, integer p>=1. These increase to
+Omega_1 and have smooth boundary with nonnegative second fundamental form.
+The phase is smooth on a neighborhood of their closures. Normalized
+dominated convergence gives, for C^1 functions on the closed chart,
+
+    Var_(nu_ch)(f)<=sigma^2 E_(nu_ch)
+                      <(D^2 Phi_2)^(-1) grad f,grad f>
+                 <=(2sigma^2/gamma_2) E_(nu_ch)||grad f||^2.
+                                                               (GH69)
+
+No boundary restriction on f is imposed. The cited primary theorem was read
+in its smooth convex-boundary form; the exhaustion above supplies this
+chart's specific boundary match. This is a finite-dimensional probability
+inequality, not the physical Hamiltonian mass gap.
+
+Global SU(N) conjugation preserves the actual model, terminal I, exact tree
+slice and whole-link balls. Hence each traceless Lie-algebra coordinate has
+mean zero under nu_ch. Real linear tilts preserve GH68 and the convex domain.
+Applying GH69 to a linear functional under each tilt and integrating its
+log moment generating function twice gives
+`E exp(t<v,a>)<=exp[sigma^2 t^2||v||^2/gamma_2]`.
+In particular `E||a_e||HS^2<=2D sigma^2/gamma_2`. For m distinct free
+links A and any s>0, choose for each large link one of D coordinates and
+its sign. The associated sum has coefficient norm sqrt(m), and is at
+least ms/sqrt(D). Chernoff's inequality and the (2D)^m choices yield
+
+    nu_ch{||a_e||HS>=s for every e in A}
+        <=min{1,(2D)^m exp[-gamma_2 m s^2/(4D sigma^2)]}.  (GH70)
+
+This supplies actual inherited chart control at two steps and terminal I.
+It does not bound the full compact posterior's probability of Omega_1^c,
+integrate discontinuous first-history marks with their full connected
+reader norms, extend the terminal background domain, identify a physical
+running coupling, or iterate the estimates uniformly in depth. Those
+obligations, continuum existence and the physical mass gap remain OPEN.

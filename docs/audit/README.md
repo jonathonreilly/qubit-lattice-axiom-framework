@@ -597,6 +597,22 @@ When a claim is marked `audited_decoration`, the pruning policy
 External readers should read `effective_status`. The audit ledger is the
 canonical surface for claim strength.
 
+## When the audit runs (owner scope, 2026-10-30)
+
+The audit matters when there is a TOE candidate or a standalone proof the owner
+wants to publish. It then runs over that result's dependency closure at a pinned
+commit, using the forensic tier below. It is not a routine cost on research.
+
+Until then these stay cheap and always on, because the audit needs them later:
+
+- source notes and runners with their claim type and stated premises;
+- runner caches bound to the runner's content hash;
+- the citation graph and the premise registry;
+- the nightly pipeline's hard gates and its record of topology changes.
+
+Everything downstream of a verdict (queues, re-audit candidates, invalidation
+counts) has nothing to act on while no row holds a live verdict.
+
 ## What this lane is not
 
 - Not a physics result.

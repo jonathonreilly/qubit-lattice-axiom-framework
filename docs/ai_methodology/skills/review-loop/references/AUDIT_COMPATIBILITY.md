@@ -10,6 +10,12 @@ claim tables, lane stubs, or publication/control-plane files.
 The review loop must enforce the audit lane's propose/ratify split without
 performing the independent audit:
 
+**When these two guards apply.** The churn and impact guards below protect live
+verdicts. If no affected row holds one, record that and move on: the pipeline's
+`invalidate_stale_audits.py` count (`invalidated (hard reset): 0`) and
+`docs/audit/data/effective_status_summary.json` show it. Rows regain live
+verdicts when an audit runs, and the guards then apply again.
+
 **Audit-hash churn guard.** Non-semantic hygiene sweeps on audited source notes
 can be scientifically harmless while still invalidating large parts of the
 audit ledger, because note hashes are source-content hashes. Before landing any

@@ -173,8 +173,8 @@ mark-ready is not PASS, and a still-draft PR cannot land. Exclude owner-reserved
 PRs from units and their inherited content unless that reservation is explicitly
 lifted. Read `docs/repo/DEFERRED_DECISIONS.md` and the current owner exclusions
 before grouping; a descendant does not authorize landing a reserved ancestor's science.
-For the active campaign, formal audit is deferred until a solid TOE candidate
-is ready. Mechanical validation may prepare audit data, but review-loop must
+Formal audit is deferred until a TOE candidate or a standalone proof the owner
+wants to publish is ready. Mechanical validation may prepare audit data, but review-loop must
 not invoke an auditor or apply a scientific verdict/status.
 
 The [collection policy](LANDING.md) is orchestrator procedure. The backlog inventory

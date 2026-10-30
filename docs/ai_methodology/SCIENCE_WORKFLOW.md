@@ -77,7 +77,7 @@ new repository bridges.
 |---|---|---|
 | Cadence | Continuous discovery on a dedicated candidate branch, selective independent checks, PRs at coherent milestones | 2026-09-07 |
 | PR type | Regular PRs; draft only when the user asks | 2026-09-07 |
-| Formal audit | Deferred until a solid TOE candidate is ready; mechanical validation never invokes an auditor or grants status | 2026-09-07 |
+| Formal audit | Runs only for a TOE candidate or a standalone proof the owner wants to publish, over that result's dependency closure. Routine research neither waits for it nor spends effort preserving audit state. Mechanical validation never invokes an auditor or grants status | 2026-10-30 |
 | Landing review | One independent fast reviewer per coherent unit (owner's Codex choice: Astra low), escalating unresolved mathematical or premise questions to the strongest reviewer (Astra xhigh). The executable model contract lives in `skills/review-loop/SKILL.md` | 2026-09-08 |
 | Original mathematics | Explicitly authorized within the user's task | 2026-10-08 |
 

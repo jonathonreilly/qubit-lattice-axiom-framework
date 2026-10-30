@@ -1,0 +1,59 @@
+{
+  "utc": "2026-10-30T05:30:42.510593+00:00",
+  "passed": true,
+  "cap_bytes": 838860800,
+  "guards": [
+    {
+      "free_percent": 52,
+      "loads": [
+        1.7783203125,
+        1.77490234375,
+        1.90380859375
+      ],
+      "passed": true
+    },
+    {
+      "free_percent": 52,
+      "loads": [
+        1.7783203125,
+        1.77490234375,
+        1.90380859375
+      ],
+      "passed": true
+    },
+    {
+      "free_percent": 52,
+      "loads": [
+        1.7783203125,
+        1.77490234375,
+        1.90380859375
+      ],
+      "passed": true
+    }
+  ],
+  "locks": [
+    "k4corr2_numeric.lock",
+    "k4corr_numeric.lock",
+    "k4match_numeric.lock",
+    "cumul_numeric.lock",
+    "combo_numeric.lock"
+  ],
+  "pools": false,
+  "nice": 20,
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "source_sha256": {
+    "k4corr2_criteria.md": "ad5b4750b794f7786ff3e71f60d47527ca8f2a642a313e6c9bb8cde76bbcae3e",
+    "k4corr2_exact.py": "e7ea27dd531baf36d6d08e1be125bd24be6625781ea7daa86a9642ce79f609c1",
+    "k4corr2_run.py": "78b817ef857a34893fb3b64abee3b5c76cc7dcbbbc2f225ffd3ab3bf2ba24d6d"
+  },
+  "exit_code": 0,
+  "assertion_count": 97,
+  "peak_combined_rss_bytes": 37584896,
+  "elapsed_seconds": 0.26774758304236457
+}

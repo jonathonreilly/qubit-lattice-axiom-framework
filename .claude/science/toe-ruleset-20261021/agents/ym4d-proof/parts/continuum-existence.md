@@ -1,7 +1,7 @@
 # Full non-free continuum hierarchy
 
 lead: OpenAI/Codex/host-runtime 01a1873f-103a-7f01-b924-4455238d8a86
-lease_until: 2026-10-30T18:15:00Z
+lease_until: 2026-10-30T19:03:53Z
 
 ## State of attack
 
@@ -24,5 +24,6 @@ reduce this obligation. A research-gate label is not an audit or retained status
 ## Evidence
 
 See [the target contract](../GOAL.md) and the source/review links in
-[HANDOFF.md](../HANDOFF.md). RT and DS are new frozen author checkpoints awaiting
-different fresh review. This file makes no new mathematical acceptance claim.
+[HANDOFF.md](../HANDOFF.md). The different fresh RT and DS gates at cc799d903f
+check the bounded interfaces stated there. The critical obligation in this file
+remains open; those research signals are not audit or retained statuses.

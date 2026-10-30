@@ -1,0 +1,110 @@
+{
+  "record_kind": "delegated bounded source review receipt; not canonical unit enrollment, audit verdict or backend attestation",
+  "created_at_utc": "2026-10-30T15:46:59.810659+00:00",
+  "reviewer_task": "/root/review_push_a_cycle3",
+  "requested_configuration": "Astra/max; same-family separate context; not independently attested by this receipt",
+  "target": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MANUSCRIPT_RG.md",
+    "revision": "c7ff8a85d25c1777ac818500356d4c2219387152",
+    "git_blob": "5c54dae1365726fb63a844955232c572ed62f5be",
+    "sha256": "b08b227815452220023e5508ea02403e49069555ab67bb33486da1cdcc3f5887",
+    "line_count": 2316,
+    "coverage": "1-2316; immutable Git object reads",
+    "current_working_manuscript_read_or_compared_at_close": false
+  },
+  "selected_procedure_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "governance_source": "exact separately hashed authorities and installed entries in source_read_manifest; branch observations are not frozen authority",
+  "report": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_PUSH_A_CYCLE3_ASTRA.md",
+    "sha256": "e14b3dd824d01e6d4f3d7ab3747406366a931bfcde43af59b30fcc92f5ef45ba",
+    "bytes": 23164,
+    "lines": 101,
+    "mtime_utc": "2026-10-30T15:45:03.198535+00:00"
+  },
+  "evidence": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_push_a_cycle3_source_read_manifest.json",
+      "sha256": "9681c4a7f4ed628a0fe1b28050eab41aeacc793b4f04e0247d4ae8fcc9d83bc9",
+      "bytes": 16723,
+      "lines": 494,
+      "mtime_utc": "2026-10-30T15:33:54.567611+00:00"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_push_a_cycle3_source_findings.json",
+      "sha256": "44fdc817526034c60be5ac13410a8551b3767f50abdad7040b43d518c8c9398a",
+      "bytes": 7948,
+      "lines": 126,
+      "mtime_utc": "2026-10-30T15:33:54.568085+00:00"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_push_a_cycle3_author_context.json",
+      "sha256": "8dc476dc5d255eaf80b5c5312229e084b291382839c9e069f0dd1c160952b0db",
+      "bytes": 7707,
+      "lines": 171,
+      "mtime_utc": "2026-10-30T15:41:41.492640+00:00"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_push_a_cycle3_post_context_math_addendum.json",
+      "sha256": "cc4689e75369a7587b4cc8e08b62918a74ad67d1ebb86f7945e909cea0ef0f4c",
+      "bytes": 3558,
+      "lines": 52,
+      "mtime_utc": "2026-10-30T15:41:41.493205+00:00"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_push_a_cycle3_vocab_lint.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153,
+      "lines": 9,
+      "mtime_utc": "2026-10-30T15:45:36.465045+00:00"
+    }
+  ],
+  "ordered_process": [
+    "immutable source and bounded supplier mathematics",
+    "source-only manifest and findings frozen 2026-10-30T15:33:54.522440+00:00",
+    "charter and four diagnostic script/log pairs read",
+    "additional primary-paper checks after author-context exposure, with no changed finding",
+    "report written",
+    "explicit-path vocabulary lint, exit 0, no violations",
+    "this receipt",
+    "separate post-receipt identities to follow"
+  ],
+  "verdict": {
+    "bounded_mathematics": "LAND at c7ff8a85 only; no material error found in declared scope",
+    "full_all_history_return": "HOLD",
+    "non_free_4D_SU_N_continuum_existence": "HOLD",
+    "positive_physical_continuum_mass_gap": "HOLD",
+    "numerical_provenance": "Exploratory; no verified matching preregistration in bounded packet search; no proof authority"
+  },
+  "verification": {
+    "scientific_runs": 0,
+    "numerical_diagnostic_reruns": 0,
+    "source_front_audit_edits": 0,
+    "git_mutations": 0,
+    "lock_mutations": 0,
+    "subworkers_spawned": 0,
+    "vocabulary_lint": {
+      "command": "python3 scripts/vocab_lint.py --report-only --report-path .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_push_a_cycle3_vocab_lint.json .claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_PUSH_A_CYCLE3_ASTRA.md",
+      "exit_code": 0,
+      "tool_script_sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "vocabulary_sha256": "e5c9ff6759418ca0605bf7f5fb5321f4b0ead19d52f61447e695b99959090d15"
+    }
+  },
+  "later_checkpoint_notice": {
+    "reported_revision": "951d851ed0ec531f92d74dc9843b72d4f5159d45",
+    "role": "Parent notice only; not reviewed, not compared, not covered by verdict"
+  },
+  "publication_allowlist": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_PUSH_A_CYCLE3_ASTRA.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_push_a_cycle3_source_read_manifest.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_push_a_cycle3_source_findings.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_push_a_cycle3_author_context.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_push_a_cycle3_post_context_math_addendum.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_push_a_cycle3_vocab_lint.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_push_a_cycle3_receipt.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_push_a_cycle3_post_receipt_identities.json"
+  ],
+  "publication_exclude": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_push_a_cycle3_literature_cache/**"
+  ],
+  "caveat": "This receipt follows the written report. It does not certify later manuscript bytes, unread supplier sections, full papers, publication readiness or completion of either continuum target."
+}

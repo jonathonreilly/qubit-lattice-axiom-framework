@@ -1,0 +1,64 @@
+{
+  "schema": "ym4d.research_gate.source_findings.v1",
+  "created_utc": "2026-10-30T16:31:00.151889+00:00",
+  "phase": "immutable source-only findings before author packets",
+  "target": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/DETERMINANT_SIGN_ASTRA.md",
+    "commit": "cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047",
+    "git_blob": "f937e872cb9053d9e2c0f8c04a63b78f311284e6",
+    "sha256": "138610a5a7d6e63d2a2d7ce3616964b9b909acf8295df65777b3eb4a40c55d36",
+    "lines": 610,
+    "read_lines": [
+      [
+        1,
+        610
+      ]
+    ]
+  },
+  "material_defects": [],
+  "findings": [
+    {
+      "lines": "90-148",
+      "finding": "SU(N) value equals the polar trace through degree five: determinant phase starts at degree at least three and the central phase repair costs order six; real analytic identity complexifies. The cubic phase is (1/6)avg tr(X_r,1-avg X_1)^3. Degree-four intrinsic vertices therefore retain the actual SU model."
+    },
+    {
+      "lines": "150-255",
+      "finding": "Full colour contraction gives N^2(W10+W01)-W0 and exchange 2N^2. Neutral modes contribute (N-1)W0. Scalar and 2x2 substitutions evaluate an N-independent single-trace polynomial; no physical SU(1) or nontraceless SU(2) field is claimed."
+    },
+    {
+      "lines": "54-83,244-306",
+      "finding": "Haar/coordinate determinant cancellation and the phase-averaged beta factors agree with BD3, BD24-29, BM23-26 and IC30. Original-reader moment bounds supply the affine finite-jet extraction after the volume limit."
+    },
+    {
+      "lines": "308-350",
+      "finding": "Independent scalar differentiation gives R=avg cos(Fs), Hessian kappa(R^-1 c*c), c=avg cos(Fs)l; its F^2 term and Wilson cosine yield DS21 including the indefinite cross term."
+    },
+    {
+      "lines": "361-456",
+      "finding": "Paired ribbons have at most 3Lh oriented plaquettes; U=RD and tr UGU*<=4r_L^2. Full Schur elimination retains det root factor kappa/L^3, QGQ*=P/kappa+Q_T S^-1 Q_T*, and cancels only the longitudinal component of the cross contraction."
+    },
+    {
+      "lines": "458-526",
+      "finding": "Scalar B=-g_L-d_L y-kappa x, 0<=y<=3 and kappa|x|<=2r_L sqrt(kappa y). Constants, kappa_star, L=3 rational values and fixed-L O(kappa) bound check algebraically. q=0 harmonics are retained until fixed-kappa volume averaging; q^-2 is integrable only in the stated d=4 comparison."
+    },
+    {
+      "lines": "528-566",
+      "finding": "The N ordering follows exactly from B<0. It is new structural/scalar information for the coefficient consumer; the remaining individual-sign inequality C_L<B_L/N^2 is still equivalent to b_N<0 and is not solved. No trajectory, continuum existence or physical-gap implication is established."
+    },
+    {
+      "lines": "568-601",
+      "finding": "The bounded primary passages support the literature distinctions. None supplies a charged asymptotic or universal coefficient for this constrained conditional tree matrix."
+    }
+  ],
+  "independent_controls": [
+    "Expanded log determinants to cubic order, including the centered third trace moment; SU(2) quaternion mean gives vanishing determinant phase on the real slice.",
+    "Recomputed neutral/root sums from sum h_i=0 and sum h_i^2=N; N=2 gives 4C-B, N=3 gives 9C-B, with inverse combinations DS16.",
+    "Derived scalar Hessian and difference-kernel affine projection; completed the block square to recover the longitudinal covariance.",
+    "Recomputed g_L,d_L,kappa_star and the four-ball q^-2 integral analytically; no numerical calculations."
+  ],
+  "open_consumer_obligations": [
+    "Charged integral C_L and individual b_N sign.",
+    "Uniform inherited-class closure and repeated running trajectory.",
+    "Non-freeness, full continuum existence, positive physical continuum mass gap."
+  ]
+}

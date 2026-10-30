@@ -436,6 +436,54 @@
 > proofs without new numerical experiments; the original packaging failure
 > and prior CC failures remain preserved.
 >
+> The [retained-field conditional construction](RETAINED_RETURN_CONSTRUCTION_ASTRA.md)
+> and [determinant colour/scalar reduction](DETERMINANT_SIGN_ASTRA.md) now have
+> [different fresh RT](gates/retained-conditional-cc799d903f.md) and
+> [DS](gates/determinant-colour-cc799d903f.md) research gates at immutable
+> `cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047`. Neither checker found a material
+> mathematical error at the stated scope. Their research signal is advance for
+> these bounded interfaces; it is not an audit, retained status or full-target
+> completion. No mathematical source was repaired.
+>
+> RT constructs actual six-field/four-source derivatives on a charged whole-block
+> bare fibre. Its smooth payable shell permits arbitrary real fine exterior
+> values on the stated coarse-curvature domain. It keeps all normalized kernels,
+> original source units, complete readers and the input bill. Bounded finite-jet
+> insertions need no fine analyticity in this conditional integration. RT26 gives
+> the native mu+2 bound under its explicit budgets. The fixed-separated-family
+> log keeps the entire product of D_R^J/D_R^0 factors. RT27 still requires the
+> correlated outside average, retained hard-absence handling, compatible global
+> factorization and an inherited regulated history class. Those requirements
+> have not been discharged by the conditional estimate.
+>
+> DS reduces the actual bare coefficient to
+>
+>     b_N = N^2 C_L(kappa) - B_L(kappa).
+>
+> The full constrained determinant, Haar cancellation, neutral/root colours and
+> longitudinal modes are retained, with fixed positive kappa before the volume
+> and momentum limits. DS31 proves B_L <= -(3L^2+1)/(32L^2) for
+> 0<kappa<=kappa_star; DS34 gives the fixed-L limit
+> B_L -> -(3L^2+1)/(16L^2). All N share the same charged function C_L. Its required
+> bound, every individual b_N sign, compatible induction parameters and the
+> repeated running trajectory remain OPEN. The ordering between b_N/N^2 for
+> different N supplies no base sign by itself.
+>
+> The [integration record](checks/full_proof_retained_colour_cycle3_integration.json)
+> binds both gates and the earlier cycle-3 review below. Root read the complete
+> 654-line RT and 610-line DS sources and the final mathematical reports/findings;
+> packet identities were checked separately. Reviewer primary-paper coverage
+> stays bounded as recorded, and matching hashes do not authenticate historical
+> reading. New gates use procedure c93fcb3; the older cycle-3 unit keeps its
+> historical procedure pin. Its empty CLI vocabulary scan is corrected by a
+> [separate direct-file coverage record](checks/push_a_cycle3_vocab_coverage_correction.json),
+> without rewriting the frozen report or receipt.
+>
+> [GOAL.md](GOAL.md) and its six part files retain six open critical obligations.
+> The active sustained routes address the global normalized history return and
+> the remaining charged coefficient. Full non-free continuum existence and a
+> positive physical continuum mass gap remain OPEN.
+>
 > The [bare determinant coefficient](BARE_DETERMINANT_COUPLING_ASTRA.md) has a
 > [different fresh scoped LAND review](REVIEW_BARE_DETERMINANT_COUPLING_ASTRA.md),
 > with no mathematical repair. For the actual normalized paired-contour
@@ -625,22 +673,29 @@
 > remain OPEN.
 >
 >
-> Concurrent additions also preserve the unchecked COEFF, NGYM and SRCREAL
-> drafts with their author briefs, and the Push A charter/manuscript with four
-> diagnostic script/log pairs. The manuscript explicitly leaves the full
-> normalized all-history return and regeneration open. Its author use of
-> PROVEN is not a new independent review in this integration. Root read
-> COEFF/NGYM lines 1-90, SRCREAL lines 1-100, the complete 42-line charter,
-> and the updated MANUSCRIPT_RG lines 1-120 only; no diagnostic script was run.
-> The second Push A checkpoint adds unreviewed first-step SU(2) rough-core
-> comparisons and convex-cap response claims. Its third checkpoint adds
-> resolvent/path diagnostics, a tree-action calculation and a complete-support
-> stationary-branch series using the full signed inverse. The immutable
-> 2316-line cycle-3 manuscript is now under a different fresh review. It leaves
-> all four full-return obligations open; the actual posterior fluctuation and
-> normalized history estimates remain separate. Root has not run its diagnostics.
-> These additions do not replace the full physical target or any frozen
-> supplier used by the reviewed arguments.
+> Concurrent additions preserve unchecked COEFF, NGYM and SRCREAL author drafts.
+> The [different fresh cycle-3 review](REVIEW_PUSH_A_CYCLE3_ASTRA.md) is bound only
+> to MANUSCRIPT_RG at c7ff8a85 (2316 lines), with scoped LAND advice and no
+> mathematical repair. It accepts the stated SU(2) forward-gap, flat/cap,
+> rough-core and signed-inverse constructions at their own domains. The new
+> cycle-3 checks include a failing absolute-entry comparison walk, the exact
+> non-Wilson Gaussian tree response and a complete-reader analytic stationary
+> branch at a small support rate. None supplies the actual normalized posterior
+> fluctuation, native mu+2 return or reserve regeneration.
+>
+> The checker read that whole immutable manuscript. Root's cycle-3 source read
+> is limited to lines 1-120 and 1833-2204; root additionally read the entire final
+> report, frozen findings, post-context mathematical addendum and receipt.
+> Primary reading and the four diagnostic script/log comparisons occurred after
+> the reviewer's initial source freeze and are disclosed separately. No matching
+> preregistration was verified in its bounded search; those diagnostics remain
+> exploratory support, not proof. Root ran none of them.
+>
+> Later Push A cycles 4-6 remain unreviewed here. Cycle 6 is preserved at dcfa672824;
+> root read only its opening lines 1-100. Its header leaves all four return
+> obligations open and reports no closure from the new posterior contraction and
+> variance attempts. Its source labels do not extend the cycle-3 review. These
+> additions preserve the full physical target and all frozen supplier identities.
 >
 > A [fresh review of the assembled finite-chart theorem](REVIEW_CHART_PREFACTOR_ASSEMBLY_ASTRA.md)
 > confirms that SN, CD, SH and CA use one actual phase, critical field, covariance

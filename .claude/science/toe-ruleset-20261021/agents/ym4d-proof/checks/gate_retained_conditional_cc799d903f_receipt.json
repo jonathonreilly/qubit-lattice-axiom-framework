@@ -1,0 +1,80 @@
+{
+  "schema": "ym4d_research_gate_receipt_v1",
+  "created_at_utc": "2026-10-30T16:37:02.134317+00:00",
+  "role": "Independent research checker receipt, not audit or landing authorization",
+  "requested_provider_model_effort": "OpenAI/gpt-6-astra/max",
+  "actual_runtime_attestation": null,
+  "independence": "Distinct restricted-input context; no cross-family claim; independent hand derivation, not repeated numerical diagnostics",
+  "execution_worktree": "/Users/jonBridger/Toy Physics/.claude/worktrees/ym4d-rt-review-20261030",
+  "science_commit": "cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047",
+  "methodology_commit": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff",
+  "research_gate_report": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/gates/retained-conditional-cc799d903f.md",
+  "artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/gates/retained-conditional-cc799d903f.md",
+      "sha256": "dc899cfbeeb050985b8d54b30a20466167921f9f5a7fdf62f85f6cc985b69afe",
+      "bytes": 9591,
+      "lines": 121
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_retained_conditional_cc799d903f_source_findings.md",
+      "sha256": "b86c0e8c62548f537968ebaba7a065eda2a9971ddbc15f3ce425d631e28f079e",
+      "bytes": 9676,
+      "lines": 120
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_retained_conditional_cc799d903f_read_manifest.json",
+      "sha256": "19fbab8508d4824dc7c20b3ded5d9ca3308ecb0cf3fd1dc538575b2f10097f4c",
+      "bytes": 16360,
+      "lines": 490
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_retained_conditional_cc799d903f_provenance_comparison.json",
+      "sha256": "d63d8c641312d4215966f805d0be97e7d0c9058de287c1ea9a04a49e9b5e6d08",
+      "bytes": 7496,
+      "lines": 178
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_retained_conditional_cc799d903f_vocab_lint.json",
+      "sha256": "f7e7e8c5a1ffe13a170e44db313a485ef7d18398d0e36c811925d9b1090b13f0",
+      "bytes": 1969,
+      "lines": 46
+    }
+  ],
+  "frozen_source_findings_before_author_sidecars": {
+    "at_utc": "2026-10-30T16:32:00.674659+00:00",
+    "sha256": "b86c0e8c62548f537968ebaba7a065eda2a9971ddbc15f3ce425d631e28f079e",
+    "read_manifest_sha256": "19fbab8508d4824dc7c20b3ded5d9ca3308ecb0cf3fd1dc538575b2f10097f4c",
+    "preserved_unchanged": true
+  },
+  "preflight": {
+    "first_command": "python3 /tmp/ym4d_lab_ops_c93/lab_ops.py preflight --target .claude/science/toe-ruleset-20261021/agents/ym4d-proof --role checker --model gpt-6-astra --effort max",
+    "exit_code": 0,
+    "result": "go",
+    "script_sha256_observed_after_run": "462b66455683bf6bb11bf1dd451e789ed4a298b6cf06c9109d693cc6ea1e1fd9",
+    "matches_c93_script": true,
+    "automation_lock_helper_matches_c93": true,
+    "memory_cap": "ulimit unavailable; bounded reads used",
+    "actual_backend_identity": "not exposed; requested identity is not attestation"
+  },
+  "mathematical_check": "All 654 target lines; necessary actual CS/OC quotient, word, charge and cap mathematics; REALRGA/MIXSMALL ordered-jet algebra; bounded comparisons and primary passages listed in frozen manifest. No mathematical source was changed.",
+  "findings": {
+    "material_mathematical_defects": 0,
+    "exact_hypotheses_and_remaining_obligations": "In research-gate report and immutable source-only findings",
+    "packaging_discrepancies_in_verified_current_bytes": 0,
+    "historical_read_authentication": false
+  },
+  "checks": {
+    "explicit_path_vocabulary_lint": "4 owned files, apply_fix=False, zero violations, no file-byte changes",
+    "author_metadata": "12 target/input SHA256 and line counts match; receipt-to-manifest match; equation tags, links and whitespace verified",
+    "scientific_numerics": "not run, not required for this analytic check",
+    "git_mutations": false,
+    "source_edits": false,
+    "front_goal_part_lock_mutations": false,
+    "audit_actions": false,
+    "subworkers": false,
+    "landing_or_combined_pipeline": "not run: research gate only"
+  },
+  "remaining": "Correlated outside-law derivatives/history mass/common reference, global factorization, regulated all-history class, invariant RG trajectory, continuum existence/non-freeness and physical mass gap.",
+  "post_receipt_identity": "Must be written in a later command; it binds this receipt, report and immutable source objects without requiring moving branch refs to stay fixed."
+}

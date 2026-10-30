@@ -1,7 +1,7 @@
 # Full Yang–Mills existence and physical mass gap
 
 lead: OpenAI/Codex/host-runtime 01a1873f-103a-7f01-b924-4455238d8a86
-lease_until: 2026-10-30T18:15:00Z
+lease_until: 2026-10-30T19:03:53Z
 
 The user appointed this session to recover the shared Yang–Mills work, continue
 Astra/max authors and different fresh reviewers, and preserve all progress in
@@ -24,25 +24,30 @@ A different fresh same-family context is not external peer review.
 ## State of attack
 
 The actual original-cut bare marginal has a checked one-step transverse
-projection u+b1+O(1/u), with the volume limit first. BD specifies the entire
-finite-matrix determinant integral; its signed value remains open. MEAN and SG
+projection u+b1+O(1/u), with the volume limit first. BD specifies its complete
+finite-matrix integral. The different fresh DS gate at cc799d903f now checks
+b_N=N^2 C_L-B_L and a negative scalar B_L on its stated small-kappa interval;
+the charged function and every individual b_N sign remain open. MEAN and SG
 supply bounded mean and covariance ingredients with explicit domains and
 reader costs. They are not a complete inherited interaction theorem.
 
-The hardest existence obligation is the actual normalized posterior/history
-return: integrate the retained outside law, with all original source and
-field derivatives, without losing the common normalizer, reader locality or
-the unused original energy reserves. The recently frozen RT and DS sources
-are unreviewed author checkpoints. RT's fixed-family conditional result does
-not close its global outside-law tower; DS's scalar subtraction does not
-determine an individual b1 sign. Push A provides a separate construction
-attempt; its cycle-3 review is bound to c7ff8a85. Cycles 4 and 5 are not covered;
-the latter is preserved at 721f2305 as unreviewed work.
+The hardest existence obligation remains the actual normalized posterior/history
+return. The different fresh RT gate at cc799d903f checks retained six-field/four-source
+jets and the native mu+2 estimate for its bounded bare conditional class. Its
+fixed-family log keeps D_R^J/D_R^0. RT27's correlated outside law, hard retained
+selectors, global factorization and inherited regulated histories remain open.
+The two research signals are bounded advances, not audit or retained statuses.
 
-Next: different fresh source-first checks of the RT conditional map and DS
-colour/scalar reduction; continue a sustained attempt at the global normalized
-return while those checks run. Do not turn the remaining tower into a new
-unproved assumption and declare the return complete.
+Push A's separate cycle-3 review is bound to c7ff8a85. Cycles 4-6 are not covered;
+cycle 6 is preserved at dcfa672824 and its full-return obligations remain open.
+The frozen cycle-3 record's empty CLI vocabulary scan has a separate direct-file
+coverage correction; no old report, receipt or mathematical source was rewritten.
+
+Next: continue the sustained global-return and charged-coefficient attempts,
+with independent review of new consumer-facing arguments. Their first substantive
+checkpoints and budget checkpoints are recorded in checks/ym_lab_launches_20261030.json.
+A conditional lemma is a checkpoint, not a completed global return. Do not turn
+an outside-law estimate or an individual-sign inequality into a new assumption.
 
 ## Critical path and interfaces
 

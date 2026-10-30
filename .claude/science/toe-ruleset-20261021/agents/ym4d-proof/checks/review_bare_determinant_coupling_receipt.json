@@ -1,0 +1,102 @@
+{
+  "record_type": "independent_scoped_source_review_receipt",
+  "created_utc": "2026-10-30T15:15:26.568919+00:00",
+  "reviewer": "/root/review_bare_determinant_coupling",
+  "author": "/root/mixed_cap_chart",
+  "same_family_fresh_context": true,
+  "external_peer_review": false,
+  "independent_backend_attestation": false,
+  "source_verdict": "LAND",
+  "target": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_DETERMINANT_COUPLING_ASTRA.md",
+    "sha256": "426f774581ae8385b1c546e676fb313bfed48ab14913454bdc38f67f2cebb230",
+    "bytes": 29763,
+    "lines": 581
+  },
+  "bound_artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "sha256": "1538d3e9575b8b261bcf9b3394bfe4c56d9107c799364495e70315619f559f6e",
+      "bytes": 12799,
+      "lines": 212
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_source_findings.json",
+      "sha256": "625757fe127619565c282109d2c9cff4021b8245429871793e4afbfd227392b2",
+      "bytes": 5790,
+      "lines": 87
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_source_read_manifest.json",
+      "sha256": "7500f75a3470c94741478906019f0dc240e0510058d3253bbd10691837580bb3",
+      "bytes": 16626,
+      "lines": 508
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_author_packet_assessment.json",
+      "sha256": "f5c0f36ed25aef32d02a6f11dc7d609ea18a5bc1c03ca7f8496c64db1c91549c",
+      "bytes": 13173,
+      "lines": 295
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_additional_process_manifest.json",
+      "sha256": "340849405458c105c62b77e40fe9bb0908564af94e159c1706d5022a94617055",
+      "bytes": 3922,
+      "lines": 88
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_vocab_lint.json",
+      "sha256": "e69e07e7096662b46a0795f11cea7f32a2e62089ed104832a55b5abead4db1ea",
+      "bytes": 6270,
+      "lines": 144
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_determinant_coupling_read_manifest.json",
+      "sha256": "c3ce8fb1dc821a469a26266c8ddafe77405adb37231f5bf5d9bdff65c539f0f0",
+      "bytes": 6280,
+      "lines": 108
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_determinant_coupling_receipt.json",
+      "sha256": "bd55ab89087bd4f752e2b9ce35e2478a8429e9874c7cbad5eede97b3bdf7f317",
+      "bytes": 2776,
+      "lines": 37
+    }
+  ],
+  "immutable_source_findings_precede_author_packet": true,
+  "source_freezes_unchanged": true,
+  "source_only_mathematical_findings": 0,
+  "substantive_repairs": 0,
+  "author_packet_declared_binding_comparisons": 11,
+  "author_packet_all_declared_bindings_match": true,
+  "mechanical_checks": {
+    "explicit_path_vocab_lint_violations": 0,
+    "scoped_tracked_diff_check_returncodes": [
+      0,
+      0,
+      0
+    ],
+    "untracked_text_and_json_checks": "recorded in vocabulary/mechanical record",
+    "scientific_numerical_runs": 0,
+    "science_workers": 0,
+    "full_pipeline_runs": 0
+  },
+  "procedure": {
+    "selected_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+    "observed_origin_main": "bcab5d2ee4a908fbb4e6025635fb878e6c157ebe",
+    "worktree_HEAD_at_source_review": "7e4473dd789505441da42011c7b0b1f1930ed1ea",
+    "current_origin_main": "bcab5d2ee4a908fbb4e6025635fb878e6c157ebe",
+    "current_HEAD": "7e4473dd789505441da42011c7b0b1f1930ed1ea"
+  },
+  "claim_strength": "Bounded analytic formula for the actual bare coefficient on fixed N>=2, odd L>=3 and compact positive kappa interval; gapped conditional tree Hessian, all free modes and colours, actual normalized paired-contour SU(N) saddle.",
+  "open_obligations": [
+    "Numerical value or analytic evaluation of the integral.",
+    "Any sign theorem on a specified N,L,kappa domain.",
+    "Universal beta-function identification.",
+    "Full Wilson or inherited-action closure and a repeated effective trajectory.",
+    "Non-free four-dimensional continuum existence.",
+    "Positive physical continuum mass gap."
+  ],
+  "integration_authority": "Coordinator only. This receipt is not an audit, retained-status decision, merged-main validation, or canonical integration receipt. No Git commit/push, source/front edit or audit operation performed.",
+  "next_required_record": "checks/review_bare_determinant_coupling_final_identity_recheck.json must be written after this receipt and bind current source, source freezes, packet, report, this receipt, consumed suppliers/governance and local primary cache identities."
+}

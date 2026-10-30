@@ -1,0 +1,391 @@
+{
+  "schema": "separate_author_provenance_review_v1",
+  "reviewed_utc": "2026-10-30T14:55:24.831776+00:00",
+  "source_freezes_preceded_author_packet_open": [
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_2606_primary_source_read_manifest.json",
+      "sha256": "40d9c08234efd2f282f7dbbbe7bde03cd33c760996ef64edd747efdd27ac802a",
+      "bytes": 21755,
+      "lines": 527
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_2606_primary_source_findings.json",
+      "sha256": "705bbeb957c0ad2966cdd4620c1ac9a4fc9303359a7edcfeb4ece12a1ddf7939",
+      "bytes": 9633,
+      "lines": 212
+    }
+  ],
+  "author_packet": {
+    "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_2606_primary_provenance.json",
+    "sha256": "78561cff66d68cb0b55531d7b865cbd2fbfc109f632c51ef3ac19d76d6aeca8a",
+    "bytes": 22266,
+    "lines": 512,
+    "coverage": "full 512-line read, opened only after source-only freezes"
+  },
+  "byte_identity_checks": [
+    {
+      "label": "physics-loop/SKILL.md",
+      "expected": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "actual": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "match": true
+    },
+    {
+      "label": "physics-loop/agents/openai.yaml",
+      "expected": "31fa7a83bee4b24ed368963590cc4192e4deac07ded9473ff99e07013ffe20a3",
+      "actual": "31fa7a83bee4b24ed368963590cc4192e4deac07ded9473ff99e07013ffe20a3",
+      "match": true
+    },
+    {
+      "label": "physics-loop/references/CAMPAIGN.md",
+      "expected": "172be2f4301d6f32edbf4f0bf55fdfb9e045098253c6a5b475fc4446816c6666",
+      "actual": "172be2f4301d6f32edbf4f0bf55fdfb9e045098253c6a5b475fc4446816c6666",
+      "match": true
+    },
+    {
+      "label": "physics-loop/references/CLAIM_STATUS.md",
+      "expected": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "actual": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "match": true
+    },
+    {
+      "label": "physics-loop/references/DELIVERY.md",
+      "expected": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "actual": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "match": true
+    },
+    {
+      "label": "physics-loop/references/DISCOVERY.md",
+      "expected": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "actual": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "match": true
+    },
+    {
+      "label": "physics-loop/references/abstract-algebraic-core-extraction.md",
+      "expected": "9d0acc81d7637e0e13d05100f00ff3c088d6c1304ea263eb9c7069e44e7cdb68",
+      "actual": "9d0acc81d7637e0e13d05100f00ff3c088d6c1304ea263eb9c7069e44e7cdb68",
+      "match": true
+    },
+    {
+      "label": "physics-loop/references/assumption-import-audit.md",
+      "expected": "7c08c7a6ef4fe7d88dced9397f87625fbc74394f85e96968d4d4e23c39830283",
+      "actual": "7c08c7a6ef4fe7d88dced9397f87625fbc74394f85e96968d4d4e23c39830283",
+      "match": true
+    },
+    {
+      "label": "physics-loop/references/literature-bridge-protocol.md",
+      "expected": "29edda5688fa04cb742ee524522b35dcf41d790d5c49fc46c5b4b1517f0ff5dd",
+      "actual": "29edda5688fa04cb742ee524522b35dcf41d790d5c49fc46c5b4b1517f0ff5dd",
+      "match": true
+    },
+    {
+      "label": "physics-loop/references/long-running-execution.md",
+      "expected": "730a6304650d43a27099c3047a4b796d4a7bf1907d8803c38f4368919fad7f47",
+      "actual": "730a6304650d43a27099c3047a4b796d4a7bf1907d8803c38f4368919fad7f47",
+      "match": true
+    },
+    {
+      "label": "physics-loop/references/proof-search-governance.md",
+      "expected": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "actual": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "match": true
+    },
+    {
+      "label": "physics-loop/references/route-patterns.md",
+      "expected": "912f9616bf83a5b8d43674b0b787727f294fdac636d86aff36ee218e0a079e47",
+      "actual": "912f9616bf83a5b8d43674b0b787727f294fdac636d86aff36ee218e0a079e47",
+      "match": true
+    },
+    {
+      "label": "physics-loop distribution digest",
+      "expected": "c39742fe1ab38578cfc31cc7ada694f85e62110993511028e53d644af219d9e5",
+      "actual": "c39742fe1ab38578cfc31cc7ada694f85e62110993511028e53d644af219d9e5",
+      "match": true
+    },
+    {
+      "label": "review-loop/PREFLIGHT.md",
+      "expected": "e95fece40c3699823fb8e4b5c5f9cb32bc71e024bd1aa42436d5c59a26b0e6e1",
+      "actual": "e95fece40c3699823fb8e4b5c5f9cb32bc71e024bd1aa42436d5c59a26b0e6e1",
+      "match": true
+    },
+    {
+      "label": "review-loop/SKILL.md",
+      "expected": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "actual": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "match": true
+    },
+    {
+      "label": "review-loop/agents/openai.yaml",
+      "expected": "0a1806c7afd1d71fbe50c098a664f66162b33d1bc845721a5dc7c320a32d4d50",
+      "actual": "0a1806c7afd1d71fbe50c098a664f66162b33d1bc845721a5dc7c320a32d4d50",
+      "match": true
+    },
+    {
+      "label": "review-loop/references/AUDIT_COMPATIBILITY.md",
+      "expected": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "actual": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "match": true
+    },
+    {
+      "label": "review-loop/references/COMBINED_VALIDATION.md",
+      "expected": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4",
+      "actual": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4",
+      "match": true
+    },
+    {
+      "label": "review-loop/references/FIXES_AND_REPORTING.md",
+      "expected": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "actual": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "match": true
+    },
+    {
+      "label": "review-loop/references/LANDING.md",
+      "expected": "fb9c615e7542008c780c4ab7bbb0bd4d5bc53e257be7aeb54883081dbc1f9fd6",
+      "actual": "fb9c615e7542008c780c4ab7bbb0bd4d5bc53e257be7aeb54883081dbc1f9fd6",
+      "match": true
+    },
+    {
+      "label": "review-loop/references/OPERATIONS.md",
+      "expected": "749a19389fbab3042479b32e2499ae95ff04e1590e3edb0cee60ad267f57c0af",
+      "actual": "749a19389fbab3042479b32e2499ae95ff04e1590e3edb0cee60ad267f57c0af",
+      "match": true
+    },
+    {
+      "label": "review-loop/references/REVIEW_SETUP.md",
+      "expected": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "actual": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "match": true
+    },
+    {
+      "label": "review-loop/references/REVIEW_UNITS.md",
+      "expected": "03a9bf84e4efaf7d0d3b9efd8b2b9027c9005fd91be7862f3de1f58fd0b6a18f",
+      "actual": "03a9bf84e4efaf7d0d3b9efd8b2b9027c9005fd91be7862f3de1f58fd0b6a18f",
+      "match": true
+    },
+    {
+      "label": "review-loop/references/SALVAGE.md",
+      "expected": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee",
+      "actual": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee",
+      "match": true
+    },
+    {
+      "label": "review-loop/references/SCIENCE_LENSES.md",
+      "expected": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "actual": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "match": true
+    },
+    {
+      "label": "review-loop/references/UNIT_RECEIPT.md",
+      "expected": "cab78dd0ad2113e32d3ee26b337ac95e16366424eef106999872001c83079644",
+      "actual": "cab78dd0ad2113e32d3ee26b337ac95e16366424eef106999872001c83079644",
+      "match": true
+    },
+    {
+      "label": "review-loop/scripts/review_receipt.py",
+      "expected": "e88e1f3dfaaf344ff6ea4a3feba45aba972859706eab52be026aae639df4f455",
+      "actual": "e88e1f3dfaaf344ff6ea4a3feba45aba972859706eab52be026aae639df4f455",
+      "match": true
+    },
+    {
+      "label": "review-loop/scripts/review_workspace.py",
+      "expected": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494",
+      "actual": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494",
+      "match": true
+    },
+    {
+      "label": "review-loop distribution digest",
+      "expected": "2c27170e598c292ffcdb0a2f4a8ef20086c3380674acb285e181ba3549ccb4bb",
+      "actual": "2c27170e598c292ffcdb0a2f4a8ef20086c3380674acb285e181ba3549ccb4bb",
+      "match": true
+    },
+    {
+      "label": "pin docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "expected": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "actual": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "match": true
+    },
+    {
+      "label": "pin docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "expected": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "actual": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "match": true
+    },
+    {
+      "label": "pin docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "expected": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "actual": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "match": true
+    },
+    {
+      "label": "pin docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "expected": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "actual": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "match": true
+    },
+    {
+      "label": "pin docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "expected": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "actual": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "match": true
+    },
+    {
+      "label": "pin docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "expected": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "actual": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "match": true
+    },
+    {
+      "label": "pin docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "expected": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "actual": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "match": true
+    },
+    {
+      "label": "pin docs/ai_methodology/skills/physics-loop/references/literature-bridge-protocol.md",
+      "expected": "29edda5688fa04cb742ee524522b35dcf41d790d5c49fc46c5b4b1517f0ff5dd",
+      "actual": "29edda5688fa04cb742ee524522b35dcf41d790d5c49fc46c5b4b1517f0ff5dd",
+      "match": true
+    },
+    {
+      "label": "pin docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "expected": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "actual": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "match": true
+    },
+    {
+      "label": "pin docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "expected": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "actual": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "match": true
+    },
+    {
+      "label": "foundation docs/audit/data/axiom_premise_nodes.json",
+      "expected": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "actual": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "match": true
+    },
+    {
+      "label": "foundation docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "expected": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "actual": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "match": true
+    },
+    {
+      "label": "foundation docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "expected": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "actual": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "match": true
+    },
+    {
+      "label": "foundation docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "expected": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "actual": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "match": true
+    },
+    {
+      "label": "foundation docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "expected": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "actual": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "match": true
+    },
+    {
+      "label": "local bytes /Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASSGAP_2606_PRIMARY_ASTRA.md",
+      "expected": "43277655d33e5a7f90cec29d19ebf4a9d6e0c307526afbeb6263730310c280ce",
+      "actual": "43277655d33e5a7f90cec29d19ebf4a9d6e0c307526afbeb6263730310c280ce",
+      "match": true
+    },
+    {
+      "label": "local bytes /private/tmp/massgap_2606_primary_cache/2606.19362v1.pdf",
+      "expected": "0648f30f67719a6c83976f1da53131fc6f9a9ddc9ba1c406345f5ed959b32939",
+      "actual": "0648f30f67719a6c83976f1da53131fc6f9a9ddc9ba1c406345f5ed959b32939",
+      "match": true
+    },
+    {
+      "label": "local bytes /private/tmp/massgap_2606_primary_cache/math-ph_0303013v3.pdf",
+      "expected": "d8fcf7ec954df18660b0ed456ac846f8b33f0f3eda9a02c9857d62139d3a63b5",
+      "actual": "d8fcf7ec954df18660b0ed456ac846f8b33f0f3eda9a02c9857d62139d3a63b5",
+      "match": true
+    },
+    {
+      "label": "local bytes /Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/AGENTS.md",
+      "expected": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "actual": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "match": true
+    },
+    {
+      "label": "local bytes /Users/jonBridger/AGENTS.md",
+      "expected": "d0614ed18df67520e63a8c72c4efe6b6e87e593b668f1840217901e70853c80d",
+      "actual": "d0614ed18df67520e63a8c72c4efe6b6e87e593b668f1840217901e70853c80d",
+      "match": true
+    },
+    {
+      "label": "local bytes /Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "expected": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "actual": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "match": true
+    },
+    {
+      "label": "local bytes /Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "expected": "4cfe889ea1ca565d3998236fa4e02e503619b9a329408ddd4a09f805f13fca80",
+      "actual": "4cfe889ea1ca565d3998236fa4e02e503619b9a329408ddd4a09f805f13fca80",
+      "match": true
+    },
+    {
+      "label": "local bytes /Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_COUPLING_KERNEL_ASTRA.md",
+      "expected": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b",
+      "actual": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b",
+      "match": true
+    }
+  ],
+  "byte_identity_comparison_count": 52,
+  "byte_identity_matches": 52,
+  "byte_identity_failures": [],
+  "historical_citation_check": {
+    "role": "provenance-only follow-up; does not alter immutable source findings",
+    "revision": "ac67a941deafacb6cccbb9b90e3be393108efea3",
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+    "historical_sha256": "16ef62c3d8c4092756dc3f624ac26f018a3a228538d5adb38573fe6b790d214d",
+    "historical_bytes": 825872,
+    "historical_lines": 7989,
+    "historical_complete_read_window": [
+      2838,
+      2874
+    ],
+    "current_file": {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "sha256": "4cfe889ea1ca565d3998236fa4e02e503619b9a329408ddd4a09f805f13fca80",
+      "bytes": 830043,
+      "lines": 8052
+    },
+    "current_corresponding_window": [
+      2901,
+      2937
+    ],
+    "compared_line_count": 37,
+    "windows_byte_text_equal": true,
+    "conclusion": "The normalized-law mathematics is unchanged. The author packet records the later whole-file hash beside an earlier line window. Its byte identity is real, but the read-window/version binding needs correction."
+  },
+  "additional_process_read": {
+    "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+    "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+    "bytes": 1497,
+    "lines": 11,
+    "coverage": "complete 11-line read; source-first phase used parent explicit PROCESS_LIGHT11 restrictions"
+  },
+  "author_coverage_claims": {
+    "primary_pages_claimed": 156,
+    "primary_total": 593,
+    "bgm_pages_claimed": 12,
+    "bgm_total": 27,
+    "independently_attested_read_history": false,
+    "assessment": "Coverage is honestly partial in the packet. Identity checks do not establish the author actually read every claimed page or attest model/backend identity. The reviewer conducted the separate bounded source read recorded in its own manifest."
+  },
+  "methodology_assessment": "Actual installed entry and distribution hashes match the author packet. Pinned procedure and foundation hashes match. No repository copy is relabeled as installed. Pin/main/worktree equivalence for the reviewer consumed 19 paths is separately frozen. The author N1-N8 descriptive fields do not establish completion of the formal multi-route no-go gate. No such landing/audit certification is accepted here.",
+  "finding": {
+    "id": "finding_1",
+    "class": "citation_and_version_binding",
+    "severity": "publication packaging hold; no new substantive mathematics blocker",
+    "action": "Preserve the original frozen note and packet. Add a correction binding the historical PROOF revision/hash/window and its verified unchanged current definition; update the source citation/version and a relative FK1 link in the publication candidate. Obtain this reviewer’s affected-source confirmation without repeating unchanged primary science."
+  },
+  "independence_limitations": "Same-family distinct author/reviewer contexts, requested Astra/max only. Incidental older front-summary search snippets before source freeze are disclosed in the immutable manifest; author provenance itself was not opened early. No external peer review, backend attestation, full-paper read, novelty search, or universal impossibility result is claimed.",
+  "formal_disposition": "HOLD original frozen packet for the one provenance/citation repair; source mathematics supported with explicit conditional boundaries; full Yang-Mills target remains OPEN."
+}

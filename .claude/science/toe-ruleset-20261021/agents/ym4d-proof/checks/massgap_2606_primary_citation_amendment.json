@@ -1,0 +1,149 @@
+{
+  "schema": "coordinator_citation_amendment_v1",
+  "written_at_utc": "2026-10-30T15:07:21.742660+00:00",
+  "coordinator": "/root",
+  "purpose": "Resolve the one citation/version-binding HOLD after the original independent report, receipt and final identity check; no mathematical repair.",
+  "original_note": {
+    "revision": "7e4473dd789505441da42011c7b0b1f1930ed1ea",
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASSGAP_2606_PRIMARY_ASTRA.md",
+    "sha256": "43277655d33e5a7f90cec29d19ebf4a9d6e0c307526afbeb6263730310c280ce",
+    "bytes": 29077,
+    "lines": 545
+  },
+  "original_author_packet": {
+    "revision": "7e4473dd789505441da42011c7b0b1f1930ed1ea",
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_2606_primary_provenance.json",
+    "sha256": "78561cff66d68cb0b55531d7b865cbd2fbfc109f632c51ef3ac19d76d6aeca8a",
+    "bytes": 22266,
+    "lines": 512
+  },
+  "amended_note": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASSGAP_2606_PRIMARY_ASTRA.md",
+    "sha256": "a1959940c3dccce77feda040f0fe8d9e50230e33d84f725e0e8c2c7059b30a22",
+    "bytes": 29331,
+    "lines": 545
+  },
+  "exact_edit": {
+    "lines": [
+      490,
+      491
+    ],
+    "old_fragment": "was read in PROOF.md, lines 2838–2874, and the FK1 definition in\nFINITE_COUPLING_KERNEL_ASTRA.md. With probability Haar and u=g⁻²,",
+    "new_fragment": "was read in [PROOF.md](PROOF.md), Decision 4 ([historical lines 2838–2874](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/ac67a941deafacb6cccbb9b90e3be393108efea3/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md#L2838)), and the FK1 definition in\n[FINITE_COUPLING_KERNEL_ASTRA.md](FINITE_COUPLING_KERNEL_ASTRA.md). With probability Haar and u=g⁻²,",
+    "inverse_replacement_reproduces_original_bytes": true,
+    "all_other_lines_unchanged": true,
+    "line_count_unchanged": 545
+  },
+  "historical_definition": {
+    "revision": "ac67a941deafacb6cccbb9b90e3be393108efea3",
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+    "sha256": "16ef62c3d8c4092756dc3f624ac26f018a3a228538d5adb38573fe6b790d214d",
+    "bytes": 825872,
+    "lines": 7989,
+    "consumed_window": [
+      2838,
+      2874
+    ],
+    "window_identity": {
+      "sha256": "582873acc3ed010a40b896974bb6cd8ca54a52560b967801591fbd588ea19d10",
+      "bytes": 3837,
+      "lines": 37
+    }
+  },
+  "later_definition_snapshot": {
+    "revision": "1ca794aeb72236a0460545e4b9e3373ad589dc4c",
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+    "sha256": "4cfe889ea1ca565d3998236fa4e02e503619b9a329408ddd4a09f805f13fca80",
+    "bytes": 830043,
+    "lines": 8052,
+    "consumed_window": [
+      2901,
+      2937
+    ],
+    "window_identity": {
+      "sha256": "582873acc3ed010a40b896974bb6cd8ca54a52560b967801591fbd588ea19d10",
+      "bytes": 3837,
+      "lines": 37
+    }
+  },
+  "definition_windows_byte_equal": true,
+  "fk1": {
+    "revision": "1ca794aeb72236a0460545e4b9e3373ad589dc4c",
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_COUPLING_KERNEL_ASTRA.md",
+    "sha256": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b",
+    "bytes": 30169,
+    "lines": 590,
+    "root_fresh_read_window": [
+      1,
+      160
+    ],
+    "definition_window": [
+      18,
+      28
+    ]
+  },
+  "provenance_correction": "The original author packet combines the later whole-file PROOF hash with earlier line coordinates. The original note and packet remain immutable in the author checkpoint. This addendum binds the historical and later windows separately and verifies identical normalized-law text. It does not retrospectively attest which bytes the author actually read or alter the author record.",
+  "root_science_read_boundary": "Root previously read all 545 note lines and the complete author provenance; freshly read the 93-line reviewer report and all 212 lines of immutable source findings, the current 37-line law window and FK1 lines 1–160. Root inspected the linked primary main 5.3 Gram argument through bounded web text; no whole-paper read or independent 111-page read is claimed. Reviewer metadata is separately decoded and identity checked, not relabeled a mathematical source read.",
+  "preserved_review_and_author_files": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_2606_primary_provenance.json",
+      "sha256": "78561cff66d68cb0b55531d7b865cbd2fbfc109f632c51ef3ac19d76d6aeca8a",
+      "bytes": 22266,
+      "lines": 512
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASSGAP_2606_PRIMARY_ASTRA.md",
+      "sha256": "b604c69483dc1f6554d77c5e9f423ea050faa2789b5b12d0dc7caa717740dc55",
+      "bytes": 15928,
+      "lines": 93
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_2606_primary_source_findings.json",
+      "sha256": "705bbeb957c0ad2966cdd4620c1ac9a4fc9303359a7edcfeb4ece12a1ddf7939",
+      "bytes": 9633,
+      "lines": 212
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_2606_primary_source_read_manifest.json",
+      "sha256": "40d9c08234efd2f282f7dbbbe7bde03cd33c760996ef64edd747efdd27ac802a",
+      "bytes": 21755,
+      "lines": 527
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_2606_primary_provenance_review.json",
+      "sha256": "fe18257538272f236464a04293064852fc2c8eb61437204efb0a35c1972b165e",
+      "bytes": 19445,
+      "lines": 391
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_2606_primary_vocab.json",
+      "sha256": "ce629089bd0fb7d1ffc5e26580bad31b6b6fd8a683436f1d905a55a6cf829e0f",
+      "bytes": 2227,
+      "lines": 54
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_2606_primary_receipt.json",
+      "sha256": "9ae4cc4e36f4ecb3350fb6aa474046bf1a6e6a5694d3fd8cc01d5a403a5bf316",
+      "bytes": 25214,
+      "lines": 554
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_2606_primary_final_identity.json",
+      "sha256": "7b926ac51367997b1a9425e6b846f810eb4dde3a6c25f776bfd01410e6cc5899",
+      "bytes": 36042,
+      "lines": 714
+    }
+  ],
+  "source_scope_unchanged": "Bounded primary critique and conditional L1–L3 only. C10 remains restricted to the stated sector estimates; the heat-mixture objection is applied on the actual spectrum. Full existence, non-freeness, original-law RG crossover and physical continuum mass gap remain OPEN. No canonical no-go, retained grade, audit result or external peer-review claim.",
+  "explicit_local_links": [
+    "PROOF.md",
+    "FINITE_COUPLING_KERNEL_ASTRA.md"
+  ],
+  "direct_vocabulary_check": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASSGAP_2606_PRIMARY_ASTRA.md",
+    "violations": [],
+    "auto_corrected": 0,
+    "needs_human_vocab_decision": 0
+  },
+  "affected_source_confirmation": "Pending the original reviewer; original HOLD report and freezes will remain unchanged."
+}

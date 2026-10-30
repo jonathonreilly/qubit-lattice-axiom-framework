@@ -487,8 +487,8 @@ hierarchy statement even after this witness and the gap are established.
 ## 9. Match to the actual finite-u Wilson/S4′ lane
 
 Only after the primary chain was checked, the lane's actual law definition
-was read in PROOF.md, lines 2838–2874, and the FK1 definition in
-FINITE_COUPLING_KERNEL_ASTRA.md. With probability Haar and u=g⁻²,
+was read in [PROOF.md](PROOF.md), Decision 4 ([historical lines 2838–2874](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/ac67a941deafacb6cccbb9b90e3be393108efea3/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md#L2838)), and the FK1 definition in
+[FINITE_COUPLING_KERNEL_ASTRA.md](FINITE_COUPLING_KERNEL_ASTRA.md). With probability Haar and u=g⁻²,
 
     k_c(V_c|U)=exp[−κu(1−Re tr(V_c⁻¹ M̄_c(U))/N)]/N_c(U),
     N_c(U)=∫exp[−κu(1−Re tr(V⁻¹ M̄_c(U))/N)]dV,

@@ -327,6 +327,78 @@ complement remain separate obligations. Author and reviewer used analytic
 proofs without new numerical experiments; the original packaging failure
 and prior CC failures remain preserved.
 
+The [bare determinant coefficient](BARE_DETERMINANT_COUPLING_ASTRA.md) has a
+[different fresh scoped LAND review](REVIEW_BARE_DETERMINANT_COUPLING_ASTRA.md),
+with no mathematical repair. For the actual normalized paired-contour
+SU(N) kernel, the critical Cartan branch is commuting and odd. Its second
+critical variation vanishes; its first is the full gapped inverse response.
+Degree-four ordered words and four traceless saddle-recursion steps now
+specify every matrix entry in a convergent coarse Brillouin-zone integral.
+The intrinsic Haar cancellation, neutral and root colours, every free
+mode, the volume-first limit and all transverse projection factors remain.
+With D=N^2-1, BD29 gives
+
+    b1 = D(L^2-1)/(12L^2) + (1/24) sum_(mu!=nu) integral J_(mu nu),2(q) dq/(2pi)^4.
+
+The finite recipe specifies J_2; it does not evaluate its signed integral.
+The coefficient's value/sign, a universal running coefficient, an inherited
+action class and a repeatable trajectory remain separate obligations.
+This extends the BM/BR one-step original-cut marginal below.
+
+The [mean attachment construction](MEAN_READER_RETURN_ASTRA.md) also has a
+[different fresh scoped LAND review](REVIEW_MEAN_READER_RETURN_ASTRA.md),
+with no source repair. For an input with the stipulated fine-analytic norm,
+it sums every critical-mean reader using the unscaled fine radius r_a.
+The ratio theta=V(T_abs b)/r_a and k[-log(1-theta)]<=d pay growth in
+arbitrary input-reader size. Three separate beta/16 losses leave 13beta/16.
+The actual bare vertices satisfy the hypothesis at r_a=sigma p_cut,
+h=O(sigma) and the stated original-source weights on a shrinking coarse
+domain. Actual retained SMALL boundary-field jets are also acquired from
+the regional solution, with its boundary force, hole readers, outside
+physical weight and complete critical prefactor retained.
+
+The normalized real Gaussian translation bound charges only the shifted
+coordinates. Its joint covariance jets retain a degree-ten active-size
+polynomial that needs a further explicit support margin. The existing WR
+rough-return reserve and mean pin remain attached to their own charged
+root; that part is antecedent work. Generic inherited finite-real jets
+still do not supply fine analyticity or a fresh rough reserve. Hard retained
+selectors, rough outside-only weights, the full jointly differentiated
+R_h/Z_A, native mu+2 matching and history regeneration remain OPEN.
+SG's covariance construction and this mean supplier have not thereby been
+assembled into a full inherited interaction theorem.
+
+The [primary-source mass-gap reconstruction](MASSGAP_2606_PRIMARY_ASTRA.md)
+has a [different bounded scientific review](REVIEW_MASSGAP_2606_PRIMARY_ASTRA.md)
+and a [separate citation-fix LAND confirmation](REVIEW_MASSGAP_2606_PRIMARY_CITATION_FIX_ASTRA.md).
+The review checks the specified argument of arXiv:2606.19362v1 against
+actual primary passages, including proposed later repairs. It supports
+the note's bounded criticisms and rebuilt conditional lemmas, not the
+paper's full conclusion. Coverage is 111/593 primary pages and BGM 1-12/27,
+with the disclosed incidental front-summary search exposure. No whole-paper,
+exhaustive no-go, novelty or external peer-review certification is claimed.
+C10 is restricted to its stated sector estimates; the positive-heat-mixture
+objection is applied on the actual spectrum.
+
+The surviving library gives an exact normalized Markov-kernel source
+identity, a spectral comparison at ONE fixed physical time with compatible
+vacua and a strict total error budget, and a dense-algebra decay criterion.
+Only the normalized-law identity is matched to the actual finite-u kernel.
+The required spectral order, embeddings, physical-time budget, original-law
+crossover and dense continuum source bounds remain unproved. A nonzero
+finite-energy excited sector and non-freeness remain separate requirements.
+This literature work supplies no missing Yang-Mills existence or gap theorem.
+
+The [mean/determinant/primary integration record](checks/full_proof_mean_determinant_primary_integration.json)
+preserves source-only findings before author-packet checks, final reports,
+receipts and subsequent identities. The primary note's only correction is
+its two-line citation binding; the original note, author packet, HOLD
+report and findings remain preserved. A separate amendment binds identical
+historical/current normalized-law windows without backfilling reading history.
+The mean review's corrected moving-ref metadata check is likewise recorded.
+Both full non-free four-dimensional continuum existence and a positive
+physical continuum Hamiltonian gap remain OPEN.
+
 The [original-cut marginal remainder](BARE_COUPLING_REMAINDER_ASTRA.md) now
 has a [different fresh scoped LAND review](REVIEW_BARE_COUPLING_REMAINDER_ASTRA.md),
 without mathematical repair. Its centered product-HS-ball estimate uses a
@@ -347,9 +419,9 @@ The two formulas use the same normalized SU(N) phase, literal critical
 prefactor, uniqueness branch, coarse-link units and volume-first averaged
 transverse projection; a common smaller domain and larger threshold suffice.
 This is a statement about the fully integrated one-step bare cut integral.
-The determinant part of `b1` is still unevaluated; its sign, a universal
-running coefficient, the whole finite-momentum action and a repeatable
-effective-law trajectory do not follow from this scalar projection.
+BD above specifies the remaining determinant integral; its value/sign, a
+universal running coefficient, the whole finite-momentum action and a
+repeatable effective-law trajectory do not follow from this scalar projection.
 
 The [strong local Gaussian core](STRONG_LOCAL_GAUSSIAN_CORE_ASTRA.md) has a
 [different fresh scoped LAND review](REVIEW_STRONG_LOCAL_GAUSSIAN_CORE_ASTRA.md).
@@ -370,8 +442,9 @@ This pays the particular absolute covariance-reader cost identified by RJ.
 Its original ordered (6,4) jets and absolute-label losses remain explicit.
 Only whole-core grouping and independent SMALL-tail masks are supplied;
 the large symmetrized column atoms need not be positive individually.
-The zero-order nonlocal mean, actual inherited interaction sizes, complete
-interacting forest and history sums remain separate open obligations.
+MEAN above supplies analytic mean substitution on its stated class. General
+inherited interaction sizes, a complete interacting forest and history sums
+remain separate open obligations.
 
 The [remainder/core integration record](checks/full_proof_bare_remainder_strong_core_integration.json)
 binds the two separate source-first mathematical freezes, packet stages,
@@ -380,9 +453,10 @@ dependency-link wrappers: removing them recovers the original published
 source exactly. Its original author packet remains historical; separate
 amendments bind the corrected source and clarify the requested PC window
 versus its actual end, and actual installed versus pinned repository skills.
-No historical reading is backfilled. Current unreviewed follow-ons concern
-mean-reader substitution, the determinant coefficient and a primary-source
-claimed mass-gap/crossover construction. They are not accepted premises.
+No historical reading is backfilled. The later MEAN, BD and primary-source
+reviews above extend their stated interfaces. Further author work seeks a
+signed determinant coefficient and the full normalized retained return;
+that continuing work is not an accepted premise.
 Full non-free continuum existence and a positive physical continuum mass
 gap remain OPEN.
 
@@ -396,8 +470,8 @@ finite-u action correction retains the relative-coordinate Haar term.
 On IC's fixed coarse domain, complete original-reader bounds give a second
 spatial moment and the volume-first projection
 `beta_av[-log P_u]=u+b1+O(1/u)`. The full determinant contribution to `b1`
-is an explicit unevaluated trace; neither its sign nor a universal beta
-coefficient is imported. Haar and the coordinate determinant are combined
+has been reduced by BD above to an explicit convergent integral, still
+unevaluated; neither its sign nor a universal beta coefficient is imported. Haar and the coordinate determinant are combined
 before the leading intrinsic symmetry assertion. The exact finite-u
 coordinate prefactor is not assumed spatially symmetric under nonlinear
 changes of tree. BM alone treats the source-zero bare prefactor. The matching BR result
@@ -443,15 +517,19 @@ remain OPEN.
 
 
 Concurrent additions also preserve the unchecked COEFF, NGYM and SRCREAL
-drafts with their author briefs, and the Push A charter/manuscript with three
+drafts with their author briefs, and the Push A charter/manuscript with four
 diagnostic script/log pairs. The manuscript explicitly leaves the full
 normalized all-history return and regeneration open. Its author use of
 PROVEN is not a new independent review in this integration. Root read
 COEFF/NGYM lines 1-90, SRCREAL lines 1-100, the complete 42-line charter,
 and the updated MANUSCRIPT_RG lines 1-120 only; no diagnostic script was run.
 The second Push A checkpoint adds unreviewed first-step SU(2) rough-core
-comparisons and convex-cap response claims. It explicitly leaves all four
-full-return obligations open and has no general all-history (6,4) result.
+comparisons and convex-cap response claims. Its third checkpoint adds
+resolvent/path diagnostics, a tree-action calculation and a complete-support
+stationary-branch series using the full signed inverse. The immutable
+2316-line cycle-3 manuscript is now under a different fresh review. It leaves
+all four full-return obligations open; the actual posterior fluctuation and
+normalized history estimates remain separate. Root has not run its diagnostics.
 These additions do not replace the full physical target or any frozen
 supplier used by the reviewed arguments.
 

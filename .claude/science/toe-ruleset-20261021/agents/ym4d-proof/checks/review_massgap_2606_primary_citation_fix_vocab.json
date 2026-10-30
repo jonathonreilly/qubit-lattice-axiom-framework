@@ -1,0 +1,45 @@
+{
+  "schema": "affected_citation_direct_vocabulary_check_v1",
+  "checked_utc": "2026-10-30T15:12:15.793627+00:00",
+  "method": "Direct lint_one_file(..., apply_fix=False) on explicit paths; no excluded-path CLI collector",
+  "apply_fix": false,
+  "path_count": 4,
+  "violation_count": 0,
+  "all_inputs_unchanged": true,
+  "reports": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASSGAP_2606_PRIMARY_ASTRA.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0,
+      "sha256": "a1959940c3dccce77feda040f0fe8d9e50230e33d84f725e0e8c2c7059b30a22",
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_2606_primary_citation_amendment.json",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0,
+      "sha256": "43c591d196cd55c5559566b51b821d152709a64aab7178ba87616e4967219a77",
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_2606_primary_citation_fix_checks.json",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0,
+      "sha256": "67450044cc2d179fdf717bcb169e79fc684c2dc93600420c786c483b1d235686",
+      "unchanged": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASSGAP_2606_PRIMARY_CITATION_FIX_ASTRA.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0,
+      "sha256": "245703c1e43fb04f167bbee8e50a1246f65689e64ab9c335ba57d88e911ab6cf",
+      "unchanged": true
+    }
+  ],
+  "script_sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+  "vocabulary_sha256": "e5c9ff6759418ca0605bf7f5fb5321f4b0ead19d52f61447e695b99959090d15"
+}

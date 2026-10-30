@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/product_seed_emitter_2026_10_17.py
 runner_sha256: 98efb295b02fb60d0fa2cad4e314c62badbf2f667545682f129101f965d57efd
-input_fingerprint_sha256: 72af56fae0ffffb9b55ed73bc75e586b2b5fd12aa1a97def6b492e25609ea388
+input_fingerprint_sha256: e069a9535db8e741b1e4237840aad49b81f3ba84153258b46143ba2ededdc137
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 11.79
+elapsed_sec: 13.41
 status: ok
 ----- stdout -----
 {

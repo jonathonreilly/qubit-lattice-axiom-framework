@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/structural_coefficient_box_2026_10_17.py
 runner_sha256: b46c50a9c27d98ea1e541e8f2795ba851be8752fc43d646cf67302f0f516976c
-input_fingerprint_sha256: acb775bb9081e4fdeba966478f53c6dac82764948adb76592724341c2c9ed699
+input_fingerprint_sha256: 9e3395f4908842c0db4292a4d66f13daa82a456b1a5bd028e407f3fc842a519e
 timeout_sec: 60
 exit_code: 0
-elapsed_sec: 0.32
+elapsed_sec: 0.30
 status: ok
 ----- stdout -----
 {

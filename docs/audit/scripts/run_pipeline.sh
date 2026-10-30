@@ -237,6 +237,9 @@ echo "==> 18a/18 generate_skill_axiom_baselines.py --check (skill axiom-baseline
 # --check and commits the regenerated blocks alongside the source change.
 python3 docs/audit/scripts/generate_skill_axiom_baselines.py --check
 
+echo "==> 18a2/18 check_runner_process_inputs.py (science replay stays independent of process documents)"
+python3 docs/audit/scripts/check_runner_process_inputs.py
+
 echo "==> 18b/18 check_review_loop_skill_contract.py (review quality/safety guard)"
 python3 docs/audit/scripts/check_review_loop_skill_contract.py
 

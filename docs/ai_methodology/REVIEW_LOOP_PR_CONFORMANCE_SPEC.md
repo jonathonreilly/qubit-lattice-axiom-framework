@@ -41,6 +41,11 @@ citation-edge rule in section 8.
   the same branch; that is the sanctioned repair route
   (`docs/ai_methodology/skills/review-loop/references/SALVAGE.md` (self-contained derivation rule)). Copying in an
   unreviewed sibling's conclusion is not.
+- No hard requirement on mutable process documents (`docs/ai_methodology/`,
+  `.claude/commands/`, `AGENTS.md`, `CLAUDE.md`). Do not declare them as runner
+  inputs or hash-pin them in a runner package; a process edit would then stale
+  or block science replay. Preserve the exact bytes in the input package instead
+  (`docs/audit/scripts/check_runner_process_inputs.py` enforces this).
 - No hard requirement on gitignored artifacts (e.g. the symlinked
   `docs/audit/data/audit_ledger.json`). Runners must be fresh-worktree
   reproducible: clone at `origin/main`, apply the delta, run.

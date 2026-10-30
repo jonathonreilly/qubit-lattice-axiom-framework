@@ -327,6 +327,71 @@ complement remain separate obligations. Author and reviewer used analytic
 proofs without new numerical experiments; the original packaging failure
 and prior CC failures remain preserved.
 
+The [bare coupling and critical-prefactor calculation](BARE_COUPLING_MATCH_ASTRA.md)
+has a [fresh independent scoped LAND review](REVIEW_BARE_COUPLING_MATCH_ASTRA.md),
+with no source repair. It derives the complete classical Schur form from the
+actual normalized arithmetic-contour kernel, keeping all colour, root,
+crossing and harmonic modes. Its infrared coefficient is `u`, while the
+finite-momentum quadratic symbol generally differs from Wilson. The exact
+finite-u action correction retains the relative-coordinate Haar term.
+On IC's fixed coarse domain, complete original-reader bounds give a second
+spatial moment and the volume-first projection
+`beta_av[-log P_u]=u+b1+O(1/u)`. The full determinant contribution to `b1`
+is an explicit unevaluated trace; neither its sign nor a universal beta
+coefficient is imported. Haar and the coordinate determinant are combined
+before the leading intrinsic symmetry assertion. The exact finite-u
+coordinate prefactor is not assumed spatially symmetric under nonlinear
+changes of tree. This is a source-free bare-prefactor theorem, not yet the
+coefficient of the whole original-cut integral or a repeatable trajectory.
+
+The [real Gaussian finite-jet construction](REAL_GAUSSIAN_JET_FOREST_ASTRA.md)
+has a [fresh independent scoped LAND review](REVIEW_REAL_GAUSSIAN_JET_FOREST_ASTRA.md).
+For a real normalized Gaussian with inverse covariance bounded by `B`,
+its scalar density derivatives have `L1` and normalized `L2` bound
+`B^(|nu|/2) sqrt(product nu_i!)`, with exact value one at zero order and
+no factor per unmarked coordinate. The proof keeps principal covariance
+marginals, real means, normalized mean/covariance jets, the actual ordered
+six-field/four-original-source units and all new insertion readers.
+Simultaneous tail marks pay their overlap multiplicity. For the actual
+finite-range local-lift core `P(V)`, bounded measurable fine vertices
+with the stated finite external jets and enlarged complete patch readers
+have a connected logarithm under `C_delta Q_beta<=beta/24`.
+The three `beta/6` margins leave `beta/2`; a preceding `beta/8`
+conversion to absolute label jets leaves `3beta/8`.
+The constants, enlarged input norm, mean/derivative costs and retained-field
+requirements are not discarded.
+
+This real Gaussian result does not localize the full critical `C=P+E`
+or the zero-order nonlocal `b/sigma`. Its exact absolute covariance
+reader expansion still costs `(1-4B e_beta)^(-|I|/2)`; paying that cost
+from a support margin requires an additional inequality not supplied by
+the old RF bounds. A diagonal example limits that particular absolute
+expansion, not other possible constructions. No generic inherited
+interaction, matched `R_h/Z_A` reference or history regeneration follows.
+The positive Gaussian precision is an auxiliary bound, not a physical
+continuum mass gap.
+
+The [coupling/real-Gaussian integration record](checks/full_proof_bare_coupling_real_gaussian_integration.json)
+binds both unchanged sources and the separate source-first findings,
+packet stages, final reports and post-receipt identity checks. Root read
+both complete sources, reports, findings and receipts; primary-paper reads
+remain bounded as recorded by each worker. The follow-on author work is
+checking the original-cut marginal remainder and a stronger local
+covariance core. Those proposals do not change the accepted scopes above.
+Full non-free continuum existence and the physical continuum mass gap
+remain OPEN.
+
+
+Concurrent additions also preserve the unchecked COEFF, NGYM and SRCREAL
+drafts with their author briefs, and the Push A charter/manuscript with two
+diagnostic script/log pairs. The manuscript explicitly leaves the full
+normalized all-history return and regeneration open. Its author use of
+PROVEN is not a new independent review in this integration. Root read
+COEFF/NGYM lines 1-90, SRCREAL lines 1-100, the complete 42-line charter,
+and MANUSCRIPT_RG lines 1-100 only; neither diagnostic script was run.
+These additions do not replace the full physical target or any frozen
+supplier used by the reviewed arguments.
+
 A [fresh review of the assembled finite-chart theorem](REVIEW_CHART_PREFACTOR_ASSEMBLY_ASTRA.md)
 confirms that SN, CD, SH and CA use one actual phase, critical field, covariance
 construction and compatible joint domain. It retains the full Haar/Gaussian
@@ -759,8 +824,9 @@ scope. These are bare-step local results, not an all-history construction.
 Arbitrary inherited interacting histories, multiscale iteration, continuum
 existence and the physical continuum mass gap remain OPEN. MK's real-coarse
 logarithm, FT's chart transport, HC's complex return, WS/CW white/chart
-matching, WR's real moving-center jets and BW's cut/white assembly have
-precisely the accepted bare-step scopes recorded above.
+matching, WR's real moving-center jets, BW's cut/white assembly, BM's
+prefactor projection and RJ's finite-core supplier have precisely the
+accepted bounded scopes recorded above.
 
 Concurrent progress through `cc1de55f5b` is recovered. [RD pass 2](RD.md)
 has an independent [HOLD review](REVIEW_RD_R2.md): its explicit finite H12

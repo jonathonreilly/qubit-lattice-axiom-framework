@@ -1,0 +1,247 @@
+{
+  "schema": "bounded-review-packet-checks/v1",
+  "checked_at_utc": "2026-10-30T13:25:47.743173+00:00",
+  "author_packet_read_after_source_freeze": true,
+  "opaque_identity_checks": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REAL_GAUSSIAN_JET_FOREST_ASTRA.md",
+      "expected_sha256": "0974561e7463838e4cc23f5e708c3bd091e4281c8a95bc5c652b3378f549a627",
+      "actual_sha256": "0974561e7463838e4cc23f5e708c3bd091e4281c8a95bc5c652b3378f549a627",
+      "expected_lines": 597,
+      "actual_lines": 597,
+      "identity_match": true,
+      "inspection_kind": "hash/count only here; this does not attest reading history or scientific content"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MARKED_COMPACT_CHART_ASTRA.md",
+      "expected_sha256": "04f79ed4d0c58e97f3cade072631966b577f02754f9a96d6dcd18ee2f3045800",
+      "actual_sha256": "04f79ed4d0c58e97f3cade072631966b577f02754f9a96d6dcd18ee2f3045800",
+      "expected_lines": 753,
+      "actual_lines": 753,
+      "identity_match": true,
+      "inspection_kind": "hash/count only here; this does not attest reading history or scientific content"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WEIGHTED_RETURN_JETS_ASTRA.md",
+      "expected_sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "actual_sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "expected_lines": 937,
+      "actual_lines": 937,
+      "identity_match": true,
+      "inspection_kind": "hash/count only here; this does not attest reading history or scientific content"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COMPACT_RETURN_GLUING_ASTRA.md",
+      "expected_sha256": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "actual_sha256": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "expected_lines": 644,
+      "actual_lines": 644,
+      "identity_match": true,
+      "inspection_kind": "hash/count only here; this does not attest reading history or scientific content"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "expected_sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "actual_sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "expected_lines": 592,
+      "actual_lines": 592,
+      "identity_match": true,
+      "inspection_kind": "hash/count only here; this does not attest reading history or scientific content"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HOLOMORPHIC_COMPACT_RETURN_ASTRA.md",
+      "expected_sha256": "890a56113ad3ceac890ec72efe59b40f73bbda283c8dfb69c331bc4ea5376c49",
+      "actual_sha256": "890a56113ad3ceac890ec72efe59b40f73bbda283c8dfb69c331bc4ea5376c49",
+      "expected_lines": 734,
+      "actual_lines": 734,
+      "identity_match": true,
+      "inspection_kind": "hash/count only here; this does not attest reading history or scientific content"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REALRGA.md",
+      "expected_sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+      "actual_sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+      "expected_lines": 649,
+      "actual_lines": 649,
+      "identity_match": true,
+      "inspection_kind": "hash/count only here; this does not attest reading history or scientific content"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+      "expected_sha256": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8",
+      "actual_sha256": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8",
+      "expected_lines": 564,
+      "actual_lines": 564,
+      "identity_match": true,
+      "inspection_kind": "hash/count only here; this does not attest reading history or scientific content"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md",
+      "expected_sha256": "4f94b5e2102391441233621d99be3e4b14dc46b9be89ea35915b354a4d0a06d6",
+      "actual_sha256": "4f94b5e2102391441233621d99be3e4b14dc46b9be89ea35915b354a4d0a06d6",
+      "expected_lines": 608,
+      "actual_lines": 608,
+      "identity_match": true,
+      "inspection_kind": "hash/count only here; this does not attest reading history or scientific content"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "expected_sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "actual_sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "expected_lines": 11,
+      "actual_lines": 11,
+      "identity_match": true,
+      "inspection_kind": "hash/count only here; this does not attest reading history or scientific content"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_cut_white_assembly_read_manifest.json",
+      "expected_sha256": "ea2d90de5b6c6070139d868e8c145991ff53e8a5af6ebfbd52403974b26c030c",
+      "actual_sha256": "ea2d90de5b6c6070139d868e8c145991ff53e8a5af6ebfbd52403974b26c030c",
+      "expected_lines": 108,
+      "actual_lines": 108,
+      "identity_match": true,
+      "inspection_kind": "hash/count only here; this does not attest reading history or scientific content"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/white_sector_matching_read_manifest.json",
+      "expected_sha256": "5b302d417a0b815d23b8368f23b5ff75a5ad5553cccb67818acfbdce36b6423b",
+      "actual_sha256": "5b302d417a0b815d23b8368f23b5ff75a5ad5553cccb67818acfbdce36b6423b",
+      "expected_lines": 129,
+      "actual_lines": 129,
+      "identity_match": true,
+      "inspection_kind": "hash/count only here; this does not attest reading history or scientific content"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_read_manifest.json",
+      "expected_sha256": "35be410ae0b57a82e902d5030066fd902a3b8ea69830c8507cc5d8392a9758f0",
+      "actual_sha256": "35be410ae0b57a82e902d5030066fd902a3b8ea69830c8507cc5d8392a9758f0",
+      "expected_lines": 246,
+      "actual_lines": 246,
+      "identity_match": true,
+      "inspection_kind": "hash/count only here; this does not attest reading history or scientific content"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/quadratic_coarse_return_receipt.json",
+      "expected_sha256": "0624ea553f2d33e62467047ba7eb5f739180f1cb58f97012cb35b70319ff78d3",
+      "actual_sha256": "0624ea553f2d33e62467047ba7eb5f739180f1cb58f97012cb35b70319ff78d3",
+      "expected_lines": 76,
+      "actual_lines": 76,
+      "identity_match": true,
+      "inspection_kind": "hash/count only here; this does not attest reading history or scientific content"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MARKED_COMPACT_CHART_ASTRA.md",
+      "expected_sha256": "04f79ed4d0c58e97f3cade072631966b577f02754f9a96d6dcd18ee2f3045800",
+      "actual_sha256": "04f79ed4d0c58e97f3cade072631966b577f02754f9a96d6dcd18ee2f3045800",
+      "identity_match": true,
+      "inspection_kind": "hash only here"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WEIGHTED_RETURN_JETS_ASTRA.md",
+      "expected_sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "actual_sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "identity_match": true,
+      "inspection_kind": "hash only here"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COMPACT_RETURN_GLUING_ASTRA.md",
+      "expected_sha256": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "actual_sha256": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "identity_match": true,
+      "inspection_kind": "hash only here"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HOLOMORPHIC_COMPACT_RETURN_ASTRA.md",
+      "expected_sha256": "890a56113ad3ceac890ec72efe59b40f73bbda283c8dfb69c331bc4ea5376c49",
+      "actual_sha256": "890a56113ad3ceac890ec72efe59b40f73bbda283c8dfb69c331bc4ea5376c49",
+      "identity_match": true,
+      "inspection_kind": "hash only here"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "expected_sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "actual_sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "identity_match": true,
+      "inspection_kind": "hash only here"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_CUT_WHITE_ASSEMBLY_ASTRA.md",
+      "expected_sha256": "e058637300e8d0af58a35be23299ca08c4024eed335ab8529f7e1c8b6ae2a3f4",
+      "actual_sha256": "e058637300e8d0af58a35be23299ca08c4024eed335ab8529f7e1c8b6ae2a3f4",
+      "identity_match": true,
+      "inspection_kind": "hash only here"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REALRGA.md",
+      "expected_sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+      "actual_sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+      "identity_match": true,
+      "inspection_kind": "hash only here"
+    }
+  ],
+  "target_utf8": true,
+  "target_trailing_whitespace_lines": [],
+  "target_markdown_links": [
+    {
+      "target": "https://arxiv.org/pdf/1704.07912v1",
+      "line": 576
+    },
+    {
+      "target": "https://arxiv.org/pdf/1403.7244v2",
+      "line": 581
+    },
+    {
+      "target": "https://arxiv.org/html/1411.1107v1",
+      "line": 586
+    }
+  ],
+  "target_label_definition_scan": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "vocabulary": {
+    "method": "direct lint_one_file(target, load_yaml(), apply_fix=False); CLI not used",
+    "script_sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+    "vocabulary_sha256": "e5c9ff6759418ca0605bf7f5fb5321f4b0ead19d52f61447e695b99959090d15",
+    "target_unchanged": true,
+    "report": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REAL_GAUSSIAN_JET_FOREST_ASTRA.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    }
+  },
+  "limits": [
+    "Hash agreement cannot attest actual author reads or same-session continuity.",
+    "Prior protected_count=20 was not recursively re-enumerated from the predecessor receipt.",
+    "The two legacy comparison sources and carried manifests were hashed only, not read for their mathematics.",
+    "A missing-link-target scan does not establish complete scientific dependency links.",
+    "No combined pipeline, strict audit lint, scientific runner or numerical experiment was run."
+  ],
+  "target_label_definition_pattern": "parenthesized RJ number at end of a display line",
+  "target_label_definitions_exactly_once_RJ1_through_RJ26": true
+}

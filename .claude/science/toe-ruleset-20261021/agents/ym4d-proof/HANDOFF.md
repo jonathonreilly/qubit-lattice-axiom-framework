@@ -423,9 +423,10 @@ The [shifted-chart construction](SHIFTED_CHART_RETURN_ASTRA.md) now has a
 [fresh independent scoped LAND review](REVIEW_SHIFTED_CHART_RETURN_ASTRA.md).
 Its exact contour identity retains every side/corner and full finite-u
 prefactor. Mixed moment prices and critical-field decorations are proved
-with the principal covariance kept as an explicit argument. Their complete
-covariance-reader connected assembly is still OPEN; the finite-volume
+with the principal covariance kept as an explicit argument. That unit's finite-volume
 absolute sum is not a uniform relative-error or nonvanishing estimate.
+The separately reviewed fixed original-a construction below supplies the
+complete-reader connected assembly on its rebuilt common domain.
 
 The [nonlinear complete-reader construction](NONLINEAR_READER_RETURN_ASTRA.md)
 now has a [fresh independent scoped LAND review](REVIEW_NONLINEAR_READER_RETURN_ASTRA.md).
@@ -436,27 +437,31 @@ of that chart and its exactly prefactored centered-contour integral.
 The fixed original-a chart and full original-cut return remain separate.
 
 The [fixed original-a nonlinear return](SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md)
-now has a frozen author construction joining the shifted-chart identity
-and complete-reader nonlinear series on one common R/domain/atom family.
-It pays every side and corner, mixed Gaussian jets and marked translations,
-and gives a proposed connected logarithm at `beta/2` with `O(1/u)` plus
-a polynomial-times-exponential side/cut error. Fresh independent review
-is pending; the entire critical action, determinant, Haar and compact
-normalizer remain separate.
+now has a [fresh independent scoped LAND review](REVIEW_SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md).
+It joins the exact shifted-chart identity and complete-reader nonlinear
+series on one common R/domain/atom family, retaining every side and corner.
+Mixed Gaussian jets and marked translations are paid; the connected log
+has rate `beta/2` and an `O(1/u)` plus polynomial-times-exponential bound.
+The entire critical action, determinant, Haar and compact normalizer remain
+separate. The source was accepted unchanged.
 
 The [full critical-determinant interface](CRITICAL_DETERMINANT_READER_ASTRA.md)
-also has a frozen author construction pending fresh independent review.
+also has a [fresh independent scoped LAND review](REVIEW_CRITICAL_DETERMINANT_READER_ASTRA.md).
 It reuses SA/IC's existing finite homotopy and matches FU's joint domain
 and original-block reader norm. The full lift budget is generally
 `O(1)` per block, plus the explicitly paid critical-Hessian correction.
-This is not a new determinant mechanism or an `O(1/u)` full-prefactor claim.
+It applies to the specified bare-step precision; NRR still requires its
+own large-u regime. No `O(1/u)` full-prefactor claim or inherited-history
+precision theorem follows. No source repair was required.
 
 The [external return comparison](EXTERNAL_RETURN_BRIDGE_ASTRA.md) has a
 [fresh independent review](REVIEW_EXTERNAL_RETURN_BRIDGE_ASTRA.md) accepting
 its bounded primary-source interpretation. It distinguishes a real
 whole-volume comparison from the required fixed-history local return and
-imports no Yang–Mills theorem. [Coordinator preservation and checks](checks/full_proof_shifted_determinant_author_integration.json)
-bind the two new author packets without granting an independent verdict.
+imports no Yang–Mills theorem. [Coordinator review integration](checks/full_proof_shifted_determinant_review_integration.json)
+binds both new reviews and preserves the concurrent JMBRA/JMBRB research
+packets at their conditional/partial scope. Follow-up work checks shrinking
+chart budgets and the separately retained critical-action reader correction.
 The full interacting original-cut return, arbitrary histories, multiscale
 iteration, continuum existence and physical continuum mass gap remain OPEN.
 

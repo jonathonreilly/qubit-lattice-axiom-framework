@@ -1,0 +1,480 @@
+{
+  "schema_version": 1,
+  "role": "independent reviewer mechanical identity and package check; not mathematical proof or audit",
+  "created_utc": "2026-10-30T04:59:45.469935+00:00",
+  "source_first_freeze": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_shifted_nonlinear_reader_return_source_findings.md",
+    "sha256": "a9f6de75226ec2767fd824423105141cd351fbc63367390e5d455218d9034f2c",
+    "bytes": 14469,
+    "lines": 256
+  },
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+    "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+    "bytes": 36894,
+    "lines": 711
+  },
+  "methodology_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "observed_head_at_packet_check": "da8cb2f1cbee73b3df14c46cd130ceb93111731d",
+  "source_stage_observed_head": "2dbc89baa2c1355c31f244c30fa77efbef1161d2",
+  "head_movement_boundary": "Other actors advanced the shared worktree. This check binds only the named source/dependency bytes; it is not a whole-PR or current-main preservation/interaction certificate. Integration belongs to the coordinator.",
+  "author_packet": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/shifted_nonlinear_reader_return_read_manifest.json",
+      "sha256": "fd5fc1e43ae0df0677af82f801ea14908bba223fbe79b9bca93a01e7a91d8291",
+      "bytes": 5755,
+      "lines": 108
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/shifted_nonlinear_reader_return_receipt.json",
+      "sha256": "b2624cb8820146befffe34960d12ab3174b9e241bcfe4b4ee3023fc51139a601",
+      "bytes": 6482,
+      "lines": 106
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/shifted_nonlinear_reader_return_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153,
+      "lines": 9
+    }
+  ],
+  "reviewer_mathematical_read_ranges": {
+    "SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md": [
+      [
+        1,
+        711
+      ]
+    ],
+    "FINITE_U_CRITICAL_FIELD_ASTRA.md": [
+      [
+        1,
+        556
+      ]
+    ],
+    "NONLINEAR_READER_RETURN_ASTRA.md": [
+      [
+        1,
+        713
+      ]
+    ],
+    "NONLINEAR_CHART_ACTIVITY_ASTRA.md": [
+      [
+        1,
+        335
+      ]
+    ],
+    "SHIFTED_CHART_RETURN_ASTRA.md": [
+      [
+        1,
+        508
+      ]
+    ],
+    "COVARIANT_SOFT_BACKGROUND_ASTRA.md": [
+      [
+        75,
+        335
+      ]
+    ],
+    "STEP55.md": [
+      [
+        312,
+        376
+      ],
+      [
+        673,
+        678
+      ]
+    ]
+  },
+  "read_limitations": "STEP55 locating output also exposed portions of 1-230 and source-internal historical summaries; only the listed targeted PR/NZ ranges are claimed as consumed proof coverage. No standalone prior review or older check packet was semantically read. Author-reported historical reads are provenance claims, not independently certified by this script.",
+  "checks": [
+    {
+      "name": "source_first_findings_immutable",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_shifted_nonlinear_reader_return_source_findings.md",
+        "sha256": "a9f6de75226ec2767fd824423105141cd351fbc63367390e5d455218d9034f2c",
+        "bytes": 14469,
+        "lines": 256
+      }
+    },
+    {
+      "name": "candidate_unchanged",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+        "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+        "bytes": 36894,
+        "lines": 711
+      }
+    },
+    {
+      "name": "author source: .claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+        "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+        "bytes": 36894,
+        "lines": 711
+      }
+    },
+    {
+      "name": "author package: .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/shifted_nonlinear_reader_return_read_manifest.json",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/shifted_nonlinear_reader_return_read_manifest.json",
+        "sha256": "fd5fc1e43ae0df0677af82f801ea14908bba223fbe79b9bca93a01e7a91d8291",
+        "bytes": 5755,
+        "lines": 108
+      }
+    },
+    {
+      "name": "author package: .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/shifted_nonlinear_reader_return_vocab.json",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/shifted_nonlinear_reader_return_vocab.json",
+        "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+        "bytes": 153,
+        "lines": 9
+      }
+    },
+    {
+      "name": "protected source identities: .claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+        "sha256": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8",
+        "bytes": 30251,
+        "lines": 564
+      }
+    },
+    {
+      "name": "protected source identities: .claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+        "sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8",
+        "bytes": 27584,
+        "lines": 543
+      }
+    },
+    {
+      "name": "protected source identities: .claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+        "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+        "bytes": 29068,
+        "lines": 556
+      }
+    },
+    {
+      "name": "protected source identities: .claude/science/toe-ruleset-20261021/agents/ym4d-proof/READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md",
+        "sha256": "4f94b5e2102391441233621d99be3e4b14dc46b9be89ea35915b354a4d0a06d6",
+        "bytes": 30517,
+        "lines": 608
+      }
+    },
+    {
+      "name": "protected source identities: .claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_CHART_RETURN_ASTRA.md",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_CHART_RETURN_ASTRA.md",
+        "sha256": "88b5b59feaf278d9b9995adc320a446363fa68887d277ca4315c6469fb3aa525",
+        "bytes": 25946,
+        "lines": 508
+      }
+    },
+    {
+      "name": "protected source identities: .claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+        "sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+        "bytes": 32110,
+        "lines": 624
+      }
+    },
+    {
+      "name": "protected source identities: .claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+        "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+        "bytes": 36322,
+        "lines": 713
+      }
+    },
+    {
+      "name": "protected source identities: .claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+        "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+        "bytes": 39217,
+        "lines": 722
+      }
+    },
+    {
+      "name": "manifest source: .claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+        "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+        "bytes": 36894,
+        "lines": 711
+      }
+    },
+    {
+      "name": "new direct producer reads: .claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+        "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+        "bytes": 36322,
+        "lines": 713
+      }
+    },
+    {
+      "name": "new direct producer reads: .claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+        "sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+        "bytes": 32110,
+        "lines": 624
+      }
+    },
+    {
+      "name": "new direct producer reads: .claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+        "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+        "bytes": 29068,
+        "lines": 556
+      }
+    },
+    {
+      "name": "same session producer reuse: .claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+        "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+        "bytes": 29068,
+        "lines": 556
+      }
+    },
+    {
+      "name": "same session producer reuse: .claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_CHART_RETURN_ASTRA.md",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_CHART_RETURN_ASTRA.md",
+        "sha256": "88b5b59feaf278d9b9995adc320a446363fa68887d277ca4315c6469fb3aa525",
+        "bytes": 25946,
+        "lines": 508
+      }
+    },
+    {
+      "name": "same session producer reuse: .claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+        "sha256": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8",
+        "bytes": 30251,
+        "lines": 564
+      }
+    },
+    {
+      "name": "methodology reuse: .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_read_manifest.json",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_read_manifest.json",
+        "sha256": "35be410ae0b57a82e902d5030066fd902a3b8ea69830c8507cc5d8392a9758f0",
+        "bytes": 11048,
+        "lines": 246
+      }
+    },
+    {
+      "name": "methodology reuse: .claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+        "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+        "bytes": 1497,
+        "lines": 11
+      }
+    },
+    {
+      "name": "reviewed closure unchanged: FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+        "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+        "bytes": 29068,
+        "lines": 556
+      }
+    },
+    {
+      "name": "reviewed closure unchanged: NONLINEAR_READER_RETURN_ASTRA.md",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+        "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+        "bytes": 36322,
+        "lines": 713
+      }
+    },
+    {
+      "name": "reviewed closure unchanged: NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+        "sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+        "bytes": 32110,
+        "lines": 624
+      }
+    },
+    {
+      "name": "reviewed closure unchanged: SHIFTED_CHART_RETURN_ASTRA.md",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_CHART_RETURN_ASTRA.md",
+        "sha256": "88b5b59feaf278d9b9995adc320a446363fa68887d277ca4315c6469fb3aa525",
+        "bytes": 25946,
+        "lines": 508
+      }
+    },
+    {
+      "name": "reviewed closure unchanged: COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+        "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+        "bytes": 28993,
+        "lines": 568
+      }
+    },
+    {
+      "name": "reviewed closure unchanged: STEP55.md",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+        "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+        "bytes": 94345,
+        "lines": 812
+      }
+    },
+    {
+      "name": "reviewed closure unchanged: PROCESS_LIGHT.md",
+      "passed": true,
+      "details": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+        "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+        "bytes": 1497,
+        "lines": 11
+      }
+    },
+    {
+      "name": "displayed labels SN1 through SN30 exactly once",
+      "passed": true,
+      "details": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30"
+      ]
+    },
+    {
+      "name": "balanced fenced blocks",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "no trailing whitespace",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "source local links resolve within repository",
+      "passed": true,
+      "details": [
+        {
+          "target": "FINITE_U_CRITICAL_FIELD_ASTRA.md",
+          "exists": true,
+          "inside_repository": true
+        },
+        {
+          "target": "NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+          "exists": true,
+          "inside_repository": true
+        },
+        {
+          "target": "SHIFTED_CHART_RETURN_ASTRA.md",
+          "exists": true,
+          "inside_repository": true
+        },
+        {
+          "target": "NONLINEAR_READER_RETURN_ASTRA.md",
+          "exists": true,
+          "inside_repository": true
+        },
+        {
+          "target": "checks/shifted_nonlinear_reader_return_read_manifest.json",
+          "exists": true,
+          "inside_repository": true
+        },
+        {
+          "target": "checks/shifted_nonlinear_reader_return_receipt.json",
+          "exists": true,
+          "inside_repository": true
+        }
+      ]
+    },
+    {
+      "name": "author vocabulary output says zero violations",
+      "passed": true,
+      "details": {
+        "files_with_violations": 0,
+        "total_auto_correctable": 0,
+        "total_needs_human": 0
+      }
+    }
+  ],
+  "checks_passed": 34,
+  "checks_total": 34,
+  "all_checks_passed": true,
+  "numerical_physics": "none",
+  "scientific_runner": "none; independent written mathematical derivations are frozen separately",
+  "audits_or_status_mutations": "none",
+  "reviewer_operations": "Only owned review/check artifacts; no source/author edits, commits, pushes, PR edits or worker launches"
+}

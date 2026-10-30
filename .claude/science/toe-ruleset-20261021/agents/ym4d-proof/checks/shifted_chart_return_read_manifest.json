@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "role": "author-only, not independent review or audit",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_CHART_RETURN_ASTRA.md",
+    "sha256": "88b5b59feaf278d9b9995adc320a446363fa68887d277ca4315c6469fb3aa525",
+    "lines": 508
+  },
+  "new_direct_producer_reads": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "lines": 556,
+      "read_ranges": [
+        [
+          1,
+          556
+        ]
+      ],
+      "use": "Complete direct read. Actual phase and normalizer/Haar, joint source/coarse critical-field atoms, covariance precision domain, local Taylor majorants and incidence, exact translated-chart identity. Review text is not used as proof."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+      "sha256": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8",
+      "lines": 564,
+      "read_ranges": [
+        [
+          468,
+          548
+        ]
+      ],
+      "use": "Direct reread of complete BF24 product-ball translation and its scope. Gaussian jet/marginal portions130–430 were read in the same preceding author session at this identical hash and are rebuilt at SC4/SC15."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "lines": 722,
+      "read_ranges": [
+        [
+          1,
+          90
+        ]
+      ],
+      "use": "Normalization and original-coordinate/domain cross-check only; no later unobserved theorem consumed."
+    }
+  ],
+  "procedure": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+    "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+    "lines": 11,
+    "read_ranges": [
+      [
+        1,
+        11
+      ]
+    ],
+    "use": "Complete reread; written proofs require no numerical preregistration; fresh hostile review is required."
+  },
+  "same_session_methodology_reuse": {
+    "immutable_main_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+    "identity_and_complete_read_record": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_read_manifest.json",
+      "sha256": "35be410ae0b57a82e902d5030066fd902a3b8ea69830c8507cc5d8392a9758f0",
+      "lines": 246
+    },
+    "scope": "Unchanged SCIENCE_WORKFLOW, physics-loop entry and DISCOVERY/CLAIM_STATUS/DELIVERY references, primitive registry procedure and authority files; existing AGENTS instructions. No review/landing/audit operation is performed from those records.",
+    "read_rule": "Same-session unchanged reads are reused; the receipt is provenance, not a mathematical proof premise."
+  },
+  "protected_not_consumed_as_new_proof": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md",
+      "sha256": "4f94b5e2102391441233621d99be3e4b14dc46b9be89ea35915b354a4d0a06d6",
+      "lines": 608
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8",
+      "lines": 543
+    }
+  ],
+  "other_exclusions": [
+    "Other author unfinished nonlinear connected-log unit",
+    "Independent review text as proof",
+    "Original hard-history/cut/G/Omega deformation",
+    "Outside-chart integral closure",
+    "Effective-level or continuum/mass-gap assertions"
+  ],
+  "literature_boundary": "BF24 and Gaussian jets are reconstructed with the FU parameters. The new local Taylor, incidence and moment estimates are derived explicitly; no external theorem import or new primary-paper premise is needed. Balaban and Dimock are credited as constructive antecedents.",
+  "execution": "Written analysis only. No numerical experiment, scientific runner, extra agent, Git mutation, shared-front edit, lock, publication or audit.",
+  "fresh_review": "Coordinator requested after mathematical source freeze; no author-issued verdict."
+}

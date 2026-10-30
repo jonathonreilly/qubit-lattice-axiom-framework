@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "role": "author; fresh independent review pending",
+  "source_revision_context": "3803d1517007fca5e1939bf396dd615623909a80",
+  "source_sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+  "source_lines": 624,
+  "mathematical_text_frozen_before_packaging": true,
+  "records": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+      "sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+      "bytes": 32110
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/nonlinear_chart_activity_author_checks.md",
+      "sha256": "e9ad8c3c6e8668c5b7fab60384c9b3ecdabc97877417f858f615ead3d26af22b",
+      "bytes": 5028
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/nonlinear_chart_activity_read_manifest.json",
+      "sha256": "f378c0c3108b581e3688b232bbfb608b32c2c1960e4a6b66209bed092db0f43d",
+      "bytes": 23109
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/nonlinear_chart_activity_identity_check.json",
+      "sha256": "a477af74bd542d6ffb071aaa406f6ad5b607c55ef259f7fe55395351e49f63fb",
+      "bytes": 2508
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/nonlinear_chart_activity_freeze.py",
+      "sha256": "3c39b61bda4aaef177468722702417bc139b700e0f47bc81a769b8a67e9172b0",
+      "bytes": 1811
+    }
+  ],
+  "existing_results_reused": [
+    "Actual finite-u critical field and joint source/coarse complete-reader covariance (FU)",
+    "Fixed-u coefficient parity (IC)",
+    "Actual local Cauchy vertices and original-reader marking (CB/SA/FU)"
+  ],
+  "new_proposed_scope": [
+    "Actual critical-Gaussian distinct-vertex and local-cut absolute moment bounds",
+    "Individual complete-reader Mayer envelopes and signed parity improvement",
+    "Separate finite-range covariance-core connected log at output rate beta/2 with O(sigma^2)+O(exp(-c/sigma^2)) rooted bound"
+  ],
+  "rate": "beta=(16R)^(-4) in original blocks; core log beta/2; fixed-order data derivatives require a further positive loss",
+  "not_proved": [
+    "Restoration of actual Gaussian covariance tails to the core log",
+    "Bounds/summation of translated physical-chart side/corner chains",
+    "Full original-cut analytic connected return/reference cancellation",
+    "Arbitrary histories or effective-level identification",
+    "Multiscale iteration, continuum existence, physical continuum mass gap"
+  ],
+  "protected_ps_pc_fu_files": 33,
+  "numerical_experiments": [],
+  "git_mutations_by_this_author": false,
+  "audit_ledger_lock_other_agent_operations": false,
+  "independent_review_status": "pending; no author LAND"
+}

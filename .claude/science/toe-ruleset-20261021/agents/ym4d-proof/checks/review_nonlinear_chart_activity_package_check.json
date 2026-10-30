@@ -1,0 +1,103 @@
+{
+  "schema": "scoped_review_identity_check_v1",
+  "created_utc": "2026-10-30T03:27:35.248079+00:00",
+  "scope": "Independent byte/line/link verification after the independent mathematical finding freeze; not a numerical experiment or theorem test",
+  "author_receipt": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/nonlinear_chart_activity_receipt.json",
+    "sha256": "e6ebfd073b98c8edbf172050ec6c1d84bd7fd7613022656e6cbc0668a5367423",
+    "bytes": 2799,
+    "lines": 58
+  },
+  "initial_math_receipt": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_nonlinear_chart_activity_initial_math_receipt.json",
+    "sha256": "a165d0a17d1b99d8d453b63676e596e969c59b6f284866bdc6cf57f1a6987b09",
+    "bytes": 5555,
+    "lines": 158
+  },
+  "target": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+    "sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+    "bytes": 32110,
+    "lines": 624
+  },
+  "checks": [
+    {
+      "category": "author_records",
+      "matched": 5
+    },
+    {
+      "category": "declared_sources",
+      "matched": 10
+    },
+    {
+      "category": "protected_files",
+      "matched": 33
+    },
+    {
+      "category": "declared_pinned_methodology",
+      "matched": 12
+    },
+    {
+      "category": "independent_initial_source_and_math_freeze",
+      "matched": 10
+    }
+  ],
+  "nested_prior_receipts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/probability_sensitive_return_receipt.json",
+      "sha256": "818e4790a5ba9f2e1d49e4ddcd3f232f811e7c6ad6c6301496e9b12ccdee495c",
+      "records_independently_verified": 4,
+      "content_role": "identity only; prior mathematical verdicts not read or used"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/positive_reader_covariance_receipt.json",
+      "sha256": "e832c7adc23448a45f714cd338216326da9e827fcb5210763b3ef6e8ff8340bf",
+      "records_independently_verified": 5,
+      "content_role": "identity only; prior mathematical verdicts not read or used"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/finite_u_critical_field_receipt.json",
+      "sha256": "19615ba207be2205cc29aa804e057000f301a5bd246be76cf3270ef4f467ca52",
+      "records_independently_verified": 5,
+      "content_role": "identity only; prior mathematical verdicts not read or used"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_positive_reader_covariance_receipt.json",
+      "sha256": "785e69f2a3789b6e5cea83887b4d8a7dd68e412b6b42f5e4fffe947e5df9603e",
+      "records_independently_verified": 0,
+      "content_role": "identity only; prior mathematical verdicts not read or used"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_u_critical_field_receipt.json",
+      "sha256": "79c8dcca2c6e377c0b3639ab47c9b46e22be8f2bfd0f9915c96cff6654c5784b",
+      "records_independently_verified": 0,
+      "content_role": "identity only; prior mathematical verdicts not read or used"
+    }
+  ],
+  "local_source_links_resolved": [
+    "COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+    "COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+    "INTERACTING_SELECTED_CORE_ASTRA.md",
+    "FINITE_U_CRITICAL_FIELD_ASTRA.md",
+    "REVIEW_FINITE_U_CRITICAL_FIELD_ASTRA.md"
+  ],
+  "author_freezer_read_in_full": true,
+  "author_freezer_syntax_valid": true,
+  "author_freezer_root_index_resolves_actual_worktree": true,
+  "author_freezer_executed": false,
+  "author_records_count_including_externally_pinned_receipt": 6,
+  "author_mechanical_failure_disclosed": [
+    {
+      "stage": "first read-only packet verifier execution",
+      "result": "failed before validation with FileNotFoundError",
+      "cause": "repository root used parents[5], resolving .claude/.claude in input paths",
+      "repair": "use parents[6]; mathematical source and protected files unchanged",
+      "classification": "mechanical packaging failure, not a numerical scientific experiment"
+    }
+  ],
+  "all_checks_matched": true,
+  "scientific_experiments": 0,
+  "source_or_producer_files_written": 0,
+  "prior_verdict_text_read": false,
+  "observed_head": "3803d1517007fca5e1939bf396dd615623909a80"
+}

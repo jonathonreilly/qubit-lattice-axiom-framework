@@ -2674,18 +2674,33 @@ slice. The precision is `alpha_*/U_*^2` and the support rate remains
 determinant and source/contour boundaries remain explicit. Neither the
 original-cut return nor an effective-level induction follows from this unit.
 
-The [centered Gaussian return proposal](READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md)
-is frozen under fresh independent review. It retains the actual lift
-covariance's infinite reader tail and claims a connected logarithm at
-`mu=1/[3(16R)^4]` under explicit residual and cutoff thresholds.
-It concerns the exactly normalized centered Gaussian reference. Its claimed
-summation is not yet adopted, and it supplies no nonlinear or original-cut return.
+The [centered Gaussian return construction](READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md)
+now has a [fresh independent scoped LAND review](REVIEW_READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md).
+It retains the actual lift covariance's infinite complete-reader tail,
+full normalized marginal determinant and every corner. Two explicit
+`beta/3` margins give its connected logarithm at `mu=1/[3(16R)^4]`,
+under the stated residual and large-u thresholds. This is a centered
+Gaussian reference result, with no nonlinear or original-cut replacement.
 
-New author work addresses distinct-vertex nonlinear Mayer estimates at the
-actual critical field and exact shifted-chart side/corner contributions.
-These unfinished arguments are not premises. The full interacting return,
-arbitrary histories, multiscale iteration, continuum existence and physical
-continuum mass gap remain OPEN.
+The [nonlinear chart activities](NONLINEAR_CHART_ACTIVITY_ASTRA.md) now have
+a [fresh independent scoped LAND review](REVIEW_NONLINEAR_CHART_ACTIVITY_ASTRA.md).
+They give distinct-original-vertex moments for the actual critical Gaussian,
+complete-reader Mayer envelopes and fixed-u parity. A separate finite-range
+covariance-core integral has a connected logarithm at `beta/2`, with an
+`O(1/u)` bound plus its exponentially small chart-cut term. Restoring both
+covariance tails to that logarithm remains an additional obligation.
+
+The [critical Gaussian extension](CRITICAL_GAUSSIAN_RETURN.md) and
+[shifted-chart construction](SHIFTED_CHART_RETURN_ASTRA.md) are frozen under
+fresh independent reviews. The first retunes the lift and critical tail
+budgets on a smaller fixed joint domain. The second retains every actual
+side/corner and finite-u prefactor, with mixed moment prices and an explicit
+unresolved covariance-reader assembly. Neither pending result is adopted.
+
+Active author work restores the full critical covariance tails in the
+centered nonlinear connected logarithm. The full interacting original-cut
+return, arbitrary histories, multiscale iteration, continuum existence
+and physical continuum mass gap remain OPEN.
 
 Concurrent progress through `cc1de55f5b` is recovered. [RD pass 2](RD.md)
 has an independent [HOLD review](REVIEW_RD_R2.md): its explicit finite H12

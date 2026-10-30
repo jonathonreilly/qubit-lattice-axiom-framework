@@ -1,0 +1,88 @@
+{
+  "schema": "bounded_independent_source_review_v1",
+  "completed_utc": "2026-10-30T03:12:16.799778+00:00",
+  "observed_head": "3803d1517007fca5e1939bf396dd615623909a80",
+  "methodology_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "reviewer_context": "Fresh restricted-input same-family reviewer separate from target author. Astra/max requested; requested configuration is not independent backend attestation.",
+  "verdict": "LAND",
+  "verdict_scope": "Exact centered normalized Gaussian complete-original-reader logarithm and complex nonvanishing in RG29 under RG8/RG26 and explicit PC producer hypotheses. This is not whole-PR landing or audit certification.",
+  "target": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md",
+    "sha256": "4f94b5e2102391441233621d99be3e4b14dc46b9be89ea35915b354a4d0a06d6",
+    "bytes": 30517,
+    "lines": 608
+  },
+  "producers": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8",
+      "bytes": 27584,
+      "lines": 543
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+      "sha256": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8",
+      "bytes": 30251,
+      "lines": 564
+    }
+  ],
+  "review": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md",
+    "sha256": "74332f30c4b51a8886c61883b9c6a4077d0f59716d2aab067d2ccd4d261fa6b1",
+    "bytes": 10337,
+    "lines": 173
+  },
+  "source_first_findings": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_reader_local_gaussian_return_initial_math.md",
+    "sha256": "c94bd1e830d59a80b6dd8f4e4240d087d3c91637ec748c5608a8cfe7bf5ef40e",
+    "bytes": 13539,
+    "lines": 216
+  },
+  "source_first_receipt": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_reader_local_gaussian_return_initial_math_receipt.json",
+    "sha256": "b84bb5226679a6f496da008289cf972d450001170b8b6a65eb64de2ca7cef200",
+    "bytes": 8639,
+    "lines": 191
+  },
+  "author_packet_inspected_after_source_first_freeze": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/reader_local_gaussian_return_receipt.json",
+      "sha256": "4c10b17f1ef73fb2a7108220d2d73aab08f530f9b559207395976dbc700635d7",
+      "bytes": 5288,
+      "lines": 91
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/reader_local_gaussian_return_read_manifest.json",
+      "sha256": "09891c4538c4c35426704541da0bcf0496c0a43888c8856aee1e9f7e6061310d",
+      "bytes": 8287,
+      "lines": 178
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/reader_local_gaussian_return_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153,
+      "lines": 9
+    }
+  ],
+  "package_check": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_reader_local_gaussian_return_package_check.json",
+    "sha256": "f908d1223d2b387f381fb028e40c5142490d568920d33c7cb61c44d5c37fab45",
+    "bytes": 4872,
+    "lines": 176
+  },
+  "identity_recheck": "All original target, PC, BF, author receipt, author manifest and source-first freeze hashes match.",
+  "findings": [],
+  "source_repairs": [],
+  "scientific_numerical_runs": [],
+  "prior_review_verdicts_opened": false,
+  "author_freezer_executed": false,
+  "proof_obligations": "CLOSED for exact Gaussian proposition with explicit PC producer inputs",
+  "scope_limits": [
+    "No recursive review of CB/PS/IC upstream derivations beyond actual PC/BF producer source.",
+    "No joint critical-field or nonlinear extension consumed.",
+    "No interacting return, original-cut result, arbitrary history result, source-bearing interacting estimate or effective-level iteration.",
+    "No continuum existence or positive physical continuum mass-gap conclusion.",
+    "Whole-PR preservation and combined integration validation remain root-owned."
+  ],
+  "mutations": "Only REVIEW_READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md and checks/review_reader_local_gaussian_return_*; no Git, PR, lock, shared-front, audit or ledger operations."
+}

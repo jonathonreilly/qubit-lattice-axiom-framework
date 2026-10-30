@@ -1,0 +1,108 @@
+{
+  "schema": "shifted_chart_return_package_verification_v1",
+  "verified_at_utc": "2026-10-30T03:45:57.041212+00:00",
+  "author_receipt_sha256": "68ad6690f39311dfbeddb18f57afd60f37e2afefe570223793b5a5fbe313c506",
+  "author_manifest_sha256": "bd0c2cc9ef9f1ff5f65c5b0f5cf93a0e9b132d453b75d49ef737e458c0abbd20",
+  "checks": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_CHART_RETURN_ASTRA.md",
+      "match": true,
+      "actual": {
+        "sha256": "88b5b59feaf278d9b9995adc320a446363fa68887d277ca4315c6469fb3aa525",
+        "bytes": 25946,
+        "lines": 508
+      },
+      "read_kind": "content read"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "match": true,
+      "actual": {
+        "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+        "bytes": 29068,
+        "lines": 556
+      },
+      "read_kind": "content read"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+      "match": true,
+      "actual": {
+        "sha256": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8",
+        "bytes": 30251,
+        "lines": 564
+      },
+      "read_kind": "content read"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "match": true,
+      "actual": {
+        "sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8",
+        "bytes": 27584,
+        "lines": 543
+      },
+      "read_kind": "hash-only; not a proof premise"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md",
+      "match": true,
+      "actual": {
+        "sha256": "4f94b5e2102391441233621d99be3e4b14dc46b9be89ea35915b354a4d0a06d6",
+        "bytes": 30517,
+        "lines": 608
+      },
+      "read_kind": "hash-only; not a proof premise"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/shifted_chart_return_read_manifest.json",
+      "match": true,
+      "actual": {
+        "sha256": "bd0c2cc9ef9f1ff5f65c5b0f5cf93a0e9b132d453b75d49ef737e458c0abbd20",
+        "bytes": 4324,
+        "lines": 91
+      },
+      "read_kind": "content read"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/shifted_chart_return_vocab.json",
+      "match": true,
+      "actual": {
+        "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+        "bytes": 153,
+        "lines": 9
+      },
+      "read_kind": "content read"
+    }
+  ],
+  "mechanical": {
+    "equation_labels_exactly_SC1_to_SC22_once": true,
+    "balanced_code_fences": true,
+    "trailing_whitespace_lines": [],
+    "local_links": [
+      {
+        "target": "FINITE_U_CRITICAL_FIELD_ASTRA.md",
+        "exists": true,
+        "portable": true
+      },
+      {
+        "target": "CHART_BOUNDARY_FOREST_ASTRA.md",
+        "exists": true,
+        "portable": true
+      },
+      {
+        "target": "checks/shifted_chart_return_read_manifest.json",
+        "exists": true,
+        "portable": true
+      },
+      {
+        "target": "checks/shifted_chart_return_receipt.json",
+        "exists": true,
+        "portable": true
+      }
+    ]
+  },
+  "author_freezer_scripts_executed": false,
+  "numerical_experiments_run": false,
+  "purpose": "Identity and simple syntax/link checks only; independent mathematics is frozen separately."
+}

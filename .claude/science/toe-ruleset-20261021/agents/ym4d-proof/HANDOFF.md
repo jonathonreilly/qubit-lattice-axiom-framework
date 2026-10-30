@@ -413,12 +413,19 @@ covariance-core integral has a connected logarithm at `beta/2`, with an
 `O(1/u)` bound plus its exponentially small chart-cut term. Restoring both
 covariance tails to that logarithm remains an additional obligation.
 
-The [critical Gaussian extension](CRITICAL_GAUSSIAN_RETURN.md) and
-[shifted-chart construction](SHIFTED_CHART_RETURN_ASTRA.md) are frozen under
-fresh independent reviews. The first retunes the lift and critical tail
-budgets on a smaller fixed joint domain. The second retains every actual
-side/corner and finite-u prefactor, with mixed moment prices and an explicit
-unresolved covariance-reader assembly. Neither pending result is adopted.
+The [critical Gaussian extension](CRITICAL_GAUSSIAN_RETURN.md) now has a
+[fresh independent scoped LAND review](REVIEW_CRITICAL_GAUSSIAN_RETURN_ASTRA.md).
+Explicit simultaneous domain and tail retuning supplies the actual critical
+covariance's centered Gaussian cutoff logarithm at `mu=beta/3`, with
+complete original readers and a positive fixed joint source/coarse domain.
+
+The [shifted-chart construction](SHIFTED_CHART_RETURN_ASTRA.md) now has a
+[fresh independent scoped LAND review](REVIEW_SHIFTED_CHART_RETURN_ASTRA.md).
+Its exact contour identity retains every side/corner and full finite-u
+prefactor. Mixed moment prices and critical-field decorations are proved
+with the principal covariance kept as an explicit argument. Their complete
+covariance-reader connected assembly is still OPEN; the finite-volume
+absolute sum is not a uniform relative-error or nonvanishing estimate.
 
 Active author work restores the full critical covariance tails in the
 centered nonlinear connected logarithm. The full interacting original-cut
@@ -494,10 +501,10 @@ Current assignments use the requested `gpt-6-astra / max` configuration:
   centered lift-covariance logarithm has independent LAND at its explicit rate.
 - **Nonlinear chart activities — scoped review completed:** actual Gaussian
   moments and the separate finite-range core logarithm have independent LAND.
-- **Critical Gaussian extension — fresh review active:** verify simultaneous
-  domain/tail retuning and all complete-reader Gaussian hypotheses.
-- **Shifted chart boundaries — fresh review active:** frozen exact side/corner
-  decomposition, mixed prices and the partial reader bound.
+- **Critical Gaussian extension — scoped review completed:** actual critical
+  covariance satisfies the complete-reader Gaussian interface after retuning.
+- **Shifted chart boundaries — scoped review completed:** exact side/corner
+  identity and partial reader/moment bounds have independent LAND.
 - **Full covariance in the nonlinear return — active author:** restore both
   signed covariance tails, preserving primitive compatibility and all readers.
 - **Reconstruction consumers — scoped affected review completed:** the growth,

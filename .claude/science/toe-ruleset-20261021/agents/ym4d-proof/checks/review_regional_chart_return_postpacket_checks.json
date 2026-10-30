@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-30T07:16:23.968966+00:00",
+  "stage": "post-packet provenance and mechanical verification after immutable independent findings",
+  "reviewed_published_head": "e1b9f00f06d8f07a6d2e209a54e62850a915d9e3",
+  "author_packets_read": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/regional_chart_return_read_manifest.json",
+      "sha256": "b8e4721771409ea4b7d959b9204ab2cb7bf60a7e38fa6b400a872a1b6d263744",
+      "lines": 175,
+      "bytes": 7309,
+      "read_ranges": [
+        [
+          1,
+          175
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/regional_chart_return_receipt.json",
+      "sha256": "29df2267e4765835c3657265926f19af667b0e784adf94f504732e87b0036821",
+      "lines": 71,
+      "bytes": 6069,
+      "read_ranges": [
+        [
+          1,
+          71
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/regional_chart_return_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "lines": 9,
+      "bytes": 153,
+      "read_ranges": [
+        [
+          1,
+          9
+        ]
+      ]
+    }
+  ],
+  "checks": {
+    "source_records_match": 2,
+    "manifest_input_records_match": 9,
+    "methodology_reuse_record_matches": true,
+    "receipt_package_records_match": 2,
+    "protected_source_records_match": 13,
+    "independent_review_input_records_unchanged": 8,
+    "declared_line_ranges_valid": true,
+    "packets_equal_published_blobs": true,
+    "displayed_labels": [
+      "1",
+      "2",
+      "2a",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18"
+    ],
+    "displayed_labels_each_once": true,
+    "balanced_fences": true,
+    "trailing_whitespace_present": false,
+    "declared_local_links_exact_and_resolve": 10
+  },
+  "binding_only_files_not_content_reviews": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_read_manifest.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_CHART_RETURN_ASTRA.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GRADED_COMPLEMENT_ASTRA.md"
+  ],
+  "independent_vocab_check": {
+    "command": [
+      "python3",
+      "scripts/vocab_lint.py",
+      "--report-only",
+      "--report-path",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_regional_chart_return_postpacket_vocab.json",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md"
+    ],
+    "returncode": 0,
+    "stdout": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)\nvocab_lint: wrote report to .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_regional_chart_return_postpacket_vocab.json\n",
+    "stderr": "",
+    "script": {
+      "path": "scripts/vocab_lint.py",
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "lines": 392,
+      "bytes": 14183
+    },
+    "vocabulary_input": {
+      "path": "docs/repo/controlled_vocabulary.yaml",
+      "sha256": "e5c9ff6759418ca0605bf7f5fb5321f4b0ead19d52f61447e695b99959090d15",
+      "lines": 939,
+      "bytes": 53269
+    },
+    "report": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_regional_chart_return_postpacket_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "lines": 9,
+      "bytes": 153
+    },
+    "parsed_report_equals_author_report": true,
+    "source_unchanged": true
+  },
+  "analytic_self_check_comparison": "The seven author summaries agree with the independent mathematical reconstruction already frozen; no new theorem premise or correction identified.",
+  "historical_execution_limit": "The author packet does not authenticate a historical lint invocation or prior-session reading. This check verifies present bindings, declared range validity and an independently executed report-only lint on the unchanged source; it does not retroactively attest author execution history.",
+  "scientific_numerics_run": false,
+  "author_science_rerun": false,
+  "old_review_reports_consumed": false,
+  "new_matched_regional_ratio_work_consumed": false,
+  "mathematical_findings_changed": false,
+  "blocking_findings": 0,
+  "verdict": "LAND",
+  "verdict_scope": "Exact bounded regional chart theorem only; continuum existence and physical mass gap remain OPEN."
+}

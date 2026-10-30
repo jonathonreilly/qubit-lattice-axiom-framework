@@ -655,10 +655,11 @@ catches up; a marker rolling back after an axiom or source change is the
 honest coordination signal for collaborators, not an error. If a publication
 or replication request ever needs a citable artifact, snapshot the lane's
 currently-certified commit and run the forensic tier over its closure there.
-Before that run, use `docs/audit/scripts/report_closure_unlinked_mentions.py
+Before that run, use `python3 docs/audit/scripts/report_closure_unlinked_mentions.py
 --root <claim_id>` in a full checkout. The closure follows markdown links only,
-so this lists the notes the closure names without linking, each of which needs a
-decision: dependency or context.
+so this lists candidate ledger notes named by explicit `.md` filenames outside
+the closure. Bare filenames can name multiple candidates; each needs a decision:
+dependency or context. This is a reading aid, not a completeness or status gate.
 Some configured roots intentionally name unresolved scientific `open_gate`
 obligations. Those lanes remain uncertified until source-level science retires
 or replaces the open root; audit throughput alone cannot certify an open gate,

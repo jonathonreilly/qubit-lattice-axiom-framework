@@ -1,0 +1,41 @@
+{
+  "analytic_refinements_before_freeze": [
+    "Use support-size grades of complete SA atom labels, not just shortest paths or decay distance.",
+    "Constrained conditional minimizer may lie on chart boundary; retain KKT normal term and use a sigma^2 cap paying linear cost.",
+    "The main cover is on C_ch=C_(r/2). The older G is unchanged; G subset C_ch needs an explicit additional fixed-threshold margin. Missing G outside this chart is not silently reclassified as proved.",
+    "Pay O(log(u)^5) cap entropy with log-power alpha>5/2; retain support multiplicities and separated-witness packing loss.",
+    "Hard integrated probabilities are not RD18 small supremum defects or local analytic activities; integrated probabilities retain global dependence."
+  ],
+  "author_self_review": "Entire new source read in bounded chunks; exact original action/Haar, source, gauge, normalizer, KKT, cap, full-reader multiplicities and remaining interfaces checked analytically. This is not hostile independent review.",
+  "created_utc": "2026-10-30T00:16:03.071916+00:00",
+  "git_commands_in_this_unit": 0,
+  "new_numerical_experiments": 0,
+  "next_gate": "Fresh separate-context hostile independent review, LAND or HOLD at exact bounded scope. Parent owns publication and shared statuses.",
+  "operational_failures_preserved": [
+    {
+      "attempt": "graded_complement_freeze_attempt01.py",
+      "kind": "packaging identity",
+      "outcome": "Failed before writing outputs because shared ASSUMPTIONS_AND_IMPORTS.md differed from historical CS pin. Original script and reconstructed verbatim stderr saved. Current50-line register read completely and now pinned as context; no source/evidence criterion changed."
+    },
+    {
+      "attempt": "INTERACTING_CORE_ASTRA.md",
+      "kind": "locator",
+      "outcome": "No such file; corrected via scoped inventory to INTERACTING_SELECTED_CORE_ASTRA.md. No scientific result."
+    },
+    {
+      "attempt": "SOURCE_ACTIVITY_ASTRA.md",
+      "kind": "locator",
+      "outcome": "rg reported no such file; corrected via scoped inventory to COVARIANT_SOURCE_ACTIVITY_ASTRA.md. No scientific result."
+    },
+    {
+      "attempt": "Combined SA/RD reads exceeded available output/context",
+      "kind": "output",
+      "outcome": "Missing passages were not counted as read; needed scoped ranges reread and coverage limited in manifest."
+    }
+  ],
+  "preregistration": "Not required for written proofs by PROCESS_LIGHT; no new numerical criteria or tests invented.",
+  "prior_failures": "All CC author23/24, six controls, failed broad shell ratio at u40, separate narrower post-hoc probe, resource-only RLIMIT_RSS/parser failures; CS original parser-attempt artifacts; and FR corrected polynomial-domain failure/correction remain immutable. None is relabelled a check of this new unit.",
+  "prohibited_edits_performed": [],
+  "resource_gate": "No scientific numeric worker was launched. Only bounded text/hash/JSON packaging operations. Coordinator lock read-only, owner ym4d-full-proof, holder01a1873f-103a-7f01-b924-4455238d8a86; last supplied expiry2026-10-30T00:33:21.302218Z.",
+  "task": "Analytic graded original-law witness and conditional-reference author unit"
+}

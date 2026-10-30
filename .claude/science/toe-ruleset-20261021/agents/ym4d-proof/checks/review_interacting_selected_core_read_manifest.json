@@ -1,0 +1,422 @@
+{
+  "created_utc": "2026-10-30T00:11:36.609181+00:00",
+  "classification": "Reviewer read coverage and provenance, not an audit or scientific computation.",
+  "reviewer": "/root/review_interacting_selected_core",
+  "requested_configuration": "gpt-6-astra / max; coordinator request visible; runtime identity not independently attested.",
+  "independence": "Same-family Codex fresh context, no target authorship; no blind-source or cross-family claim.",
+  "initial_findings": {
+    "path": "checks/review_interacting_selected_core_initial_findings.md",
+    "sha256": "ccb8c778c8a7cac72ea11259288184360252db71deb2225ea022bef886a3aeed",
+    "bytes": 14922,
+    "lines": 245
+  },
+  "initial_findings_immutable": true,
+  "source_reads": [
+    {
+      "path": "INTERACTING_SELECTED_CORE_ASTRA.md",
+      "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "bytes": 41908,
+      "lines": 790,
+      "read_ranges": [
+        [
+          1,
+          790
+        ]
+      ],
+      "role": "Complete scientific target IC1-IC32 and all boundary/evidence prose; initial combined-output truncation of late section 7 was recovered at lines 620-790.",
+      "exposure_order": "Before initial findings freeze and before author packaging."
+    },
+    {
+      "path": "COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "bytes": 28993,
+      "lines": 568,
+      "read_ranges": [
+        [
+          1,
+          510
+        ]
+      ],
+      "role": "All consumed CB1-CB15 actual geometry, gap, local analytic charts and critical-point construction; also CB16-CB24 to check normalization and real-sector interface. Remainder not read.",
+      "exposure_order": "Before initial findings freeze."
+    },
+    {
+      "path": "COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "bytes": 39217,
+      "lines": 722,
+      "read_ranges": [
+        [
+          1,
+          425
+        ]
+      ],
+      "role": "All consumed SA5-SA17 original-reader parametrix and marked composition, with adjacent model, determinant, source-sector and rate conventions. Remaining source-return proof not consumed.",
+      "exposure_order": "Before initial findings freeze."
+    },
+    {
+      "path": "FINITE_COUPLING_KERNEL_ASTRA.md",
+      "sha256": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b",
+      "bytes": 30169,
+      "lines": 590,
+      "read_ranges": [
+        [
+          1,
+          472
+        ]
+      ],
+      "role": "FK1-FK24 actual SU saddle, independent-plus/minus means, compact-cycle proof, uniform remainder and field-counting/action dictionary. Lines 1-430 before initial freeze; 425-472 afterward. Later numerical code/results not read or rerun.",
+      "exposure_order": "Initial 1-430 before freeze; FK24-specific 425-472 after packaging/predecessor-review exposure."
+    },
+    {
+      "path": "RECOVERY_CLUSTER_ASTRA.md",
+      "sha256": "9c9264bd4d92b60798e48ccd2eb0ff230e221c3ffd2107c0f6443ec86de563cf",
+      "bytes": 34340,
+      "lines": 582,
+      "read_ranges": [
+        [
+          1,
+          315
+        ]
+      ],
+      "role": "Complete consumed sections 1-4, including two rooted-tree expansion stages, all original reader labels and nonvanishing. Remaining source not read.",
+      "exposure_order": "Before initial findings freeze."
+    },
+    {
+      "path": "UNIFORM_ONE_LOOP_COUPLING_ASTRA.md",
+      "sha256": "b7baa6a711969c8fc96538009bb8f9f9acdde3f14f6d2f570a6ca5b9391516ce",
+      "bytes": 38024,
+      "lines": 723,
+      "read_ranges": [
+        [
+          1,
+          415
+        ]
+      ],
+      "role": "Model and normalization context, consumed UL9-UL12 dictionary, corrected transported-vs-fixed-complement passage; adjacent IR derivation displayed for scope only. No all-depth or marginal theorem imported.",
+      "exposure_order": "Before initial findings freeze."
+    },
+    {
+      "path": "PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497,
+      "lines": 11,
+      "read_ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "role": "Current lane process, numerical-only preregistration and required hostile review.",
+      "exposure_order": "Before producer read."
+    },
+    {
+      "path": "REVIEW_COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "3c39ed64cffd800bb930eda9ee8d7dbde20612e307cd90e512896f1aee34d549",
+      "bytes": 17323,
+      "lines": 282,
+      "read_ranges": [
+        [
+          1,
+          282
+        ]
+      ],
+      "role": "Scoped prerequisite review and evidence limitations; read after independent reconstruction, not used as substitute for CB proof.",
+      "exposure_order": "After initial findings freeze and author packaging."
+    },
+    {
+      "path": "REVIEW_COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "f18775b209aba8711f8ad42ff82432f127171b4b241987b295e6f76124964f35",
+      "bytes": 13623,
+      "lines": 63,
+      "read_ranges": [
+        [
+          1,
+          63
+        ]
+      ],
+      "role": "Complete long-line review: source scope, actual read collar and source/history limitations.",
+      "exposure_order": "After initial findings freeze and author packaging."
+    },
+    {
+      "path": "REVIEW_FINITE_COUPLING_KERNEL_ASTRA.md",
+      "sha256": "87d532f6505f7f80edb85c2a397d5fd6a33f27d99c19de5919cf397ffbfebc96",
+      "bytes": 15397,
+      "lines": 248,
+      "read_ranges": [
+        [
+          1,
+          248
+        ]
+      ],
+      "role": "Complete review, exact finite-u normalization, recorded surviving lambda mutation and separate coverage; no old evidence relabelled as IC run.",
+      "exposure_order": "After initial findings freeze and author packaging."
+    },
+    {
+      "path": "REVIEW_UNIFORM_ONE_LOOP_COUPLING_ASTRA.md",
+      "sha256": "ca80f189e924ac7d15462258d4a1e95734cfa55e45d382e7791dabdf0de2cc27",
+      "bytes": 21924,
+      "lines": 378,
+      "read_ranges": [
+        [
+          1,
+          95
+        ]
+      ],
+      "role": "Corrected source identity and explicit Gaussian-only/volume-first scope. Corrected source passage itself was already read.",
+      "exposure_order": "After initial findings freeze and author packaging."
+    },
+    {
+      "path": "checks/interacting_selected_core_receipt.json",
+      "sha256": "e6920761977e1b65b824cce98cbccc02592f524bb0ac32cbefd2b3e94d374fb0",
+      "bytes": 3249,
+      "lines": 53,
+      "read_ranges": [
+        [
+          1,
+          53
+        ]
+      ],
+      "role": "Author four-file freeze binding and boundaries; actual line count below is controlling if supplied range exceeds file end.",
+      "exposure_order": "Only after initial findings freeze."
+    },
+    {
+      "path": "checks/interacting_selected_core_metadata_validation.json",
+      "sha256": "96e153ffe54642d34ded2e6084ef7e5149bf5fb94877782edb1289905dbcf0b8",
+      "bytes": 1838,
+      "lines": 70,
+      "read_ranges": [
+        [
+          1,
+          70
+        ]
+      ],
+      "role": "Saved mechanical result inspected; not rerun or restamped.",
+      "exposure_order": "Only after initial findings freeze."
+    },
+    {
+      "path": "checks/interacting_selected_core_read_manifest.json",
+      "sha256": "393cc71c79cd0fa90788462b1735dbcd0be3944d37e2b9309ef80745ed7b1e1e",
+      "bytes": 20296,
+      "lines": 304,
+      "read_ranges": [
+        [
+          1,
+          304
+        ]
+      ],
+      "role": "Complete author coverage/input binding and failure history, including original regex assertion failure.",
+      "exposure_order": "Only after initial findings freeze."
+    }
+  ],
+  "repository_entry": {
+    "path": "AGENTS.md",
+    "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+    "bytes": 1118,
+    "lines": 26
+  },
+  "methodology": [
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "git_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "lines": 193,
+      "coverage": "Complete source read from the selected git object."
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "git_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "lines": 35,
+      "coverage": "Complete worktree source read; byte-equal to selected git object."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "git_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "lines": 93,
+      "coverage": "Complete installed router plus full difference against selected git object; installed copies differ. No mixed installed-reference closure used."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "git_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "lines": 370,
+      "coverage": "Complete installed router plus full difference against selected git object; installed copies differ. No mixed installed-reference closure used."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "git_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "lines": 96,
+      "coverage": "Complete source read from the selected git object."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "git_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "lines": 183,
+      "coverage": "Complete source read from the selected git object."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "git_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "lines": 248,
+      "coverage": "Complete source read from the selected git object."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "git_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "lines": 140,
+      "coverage": "Complete source read from the selected git object."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "git_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "lines": 394,
+      "coverage": "Complete read with truncated beginning recovered via lines 1-105. Source-only scope; combined integration remains coordinator-owned."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "git_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "lines": 336,
+      "coverage": "Complete source read from the selected git object."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "git_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "lines": 309,
+      "coverage": "Complete source read from the selected git object."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "git_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "lines": 434,
+      "coverage": "Complete read with truncated tail recovered via lines 260-302 and 290-500."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "git_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "lines": 126,
+      "coverage": "Complete source read from the selected git object."
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "git_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "lines": 233,
+      "coverage": "Complete source read from the selected git object."
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "git_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "lines": 130,
+      "coverage": "Complete source read from the selected git object."
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "git_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "lines": 52,
+      "coverage": "Complete source read from the selected git object."
+    }
+  ],
+  "methodology_scope": "A delegated frozen source review under PROCESS_LIGHT. No campaign launch, Git/PR/landing, shared queue/front, audit, resource-lock mutation or full-library verdict. Broad integration/source-disposition and combined validation are coordinator-owned. No no-go or route exhaustion claim; no no-go gate invoked. Registered primitive sources are not mathematical premises of this explicit-model result.",
+  "primary_literature": [
+    {
+      "url": "https://arxiv.org/html/1212.5562v2",
+      "version": "v2, 2013-04-02",
+      "actual_read_ranges": "Version/model introduction HTML 58-112; section 3.14 HTML 2374-2433 (partial, through equation 514 and following introduction); complete Appendix F 3090-3155. Adjacent returned lines displayed but not separately consumed.",
+      "role": "Product-measure connected-expansion comparison only; actual two-stage argument rebuilt locally."
+    },
+    {
+      "url": "https://arxiv.org/html/1609.01748v1",
+      "version": "v1, 2016-09-04",
+      "actual_read_ranges": "Title/abstract and introductory model HTML 24-61; Appendix A HTML 1108-1158, including output/input norms and Proposition A.1. No whole-paper read.",
+      "role": "Finite-degree contraction comparison; actual infinite analytic force majorant checked locally."
+    },
+    {
+      "url": "https://arxiv.org/html/1609.01747v1",
+      "version": "v1, 2016-09-04",
+      "actual_read_ranges": "Title/abstract/introduction HTML 16-63; selected contour/square-root discussion 268-302. No whole-paper or complete contour-proof read.",
+      "role": "Boundary and contour comparison; no complement theorem imported."
+    },
+    {
+      "url": "https://arxiv.org/abs/1609.01748v1",
+      "version": "v1",
+      "actual_read_ranges": "Official metadata lines 8-27, especially author line 11.",
+      "role": "Reconciles the preliminary HTML author-block concern; confirms four-author source attribution."
+    },
+    {
+      "url": "https://arxiv.org/abs/1609.01747v1",
+      "version": "v1",
+      "actual_read_ranges": "Official metadata lines 8-26, especially author line 11.",
+      "role": "Reconciles the same HTML rendering omission; confirms four-author source attribution."
+    }
+  ],
+  "findings_history": [
+    {
+      "id": "initial-bibliography-nit",
+      "initial": "Experimental HTML displayed only Feldman/Knörrer/Trubowitz, leading to a provisional proposed attribution correction.",
+      "initial_evidence": "Frozen initial-findings file; source unchanged.",
+      "counterevidence_origin": "Coordinator pointed to official abstract metadata; reviewer then independently opened both exact-v1 pages.",
+      "resolution": "Withdrawn: official metadata lists Tadeusz Balaban and the other three; producer attribution correct. No source repair.",
+      "status": "withdrawn"
+    },
+    {
+      "id": "reviewer-coverage-wording",
+      "initial": "Initial findings accurately named first FK range 1-430 but imprecisely described FK24 source-corollary content in that range.",
+      "resolution": "Actual FK24 display is lines 457-458, derivation 444-464. Range 425-472 was read later after packaging exposure. Initial artifact preserved, final coverage corrected.",
+      "status": "clarified"
+    },
+    {
+      "id": "author-equation-parser-failure",
+      "initial_error": "AssertionError: [1, 2, 3, 4, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]",
+      "cause": "Unanchored label regex also counted inline sup_(IC3).",
+      "author_repair": "Recognize labels only at line ends: \\(IC(\\d+)\\)\\s*$ in multiline mode.",
+      "reviewer_action": "Read saved original error and saved correction; did not rerun or restamp author metadata.",
+      "status": "historical-mechanical-failure-preserved"
+    }
+  ],
+  "read_output_failures": [
+    "First combined producer/methodology output was truncated; late IC source was recovered at 620-790 and SCIENCE_WORKFLOW read separately.",
+    "Combined methodology output truncated portions of CLAIM_STATUS/FIXES; both were read separately completely.",
+    "Combined DISCOVERY/AUDIT_COMPATIBILITY output truncated; missing ranges recovered as recorded in methodology coverage."
+  ],
+  "author_other_inputs": "All 21 declared input file hashes and 12 protected-source hashes verified. Files not in source_reads were only hash checked, not claimed read. No author scientific checker or raw numerical run was opened/replayed in this IC review.",
+  "scientific_numerical_runs": 0,
+  "numerical_preregistration": "Not applicable: written-proof review and text/hash bookkeeping only. No resource-consuming scientific worker, lock refresh, gate reduction or numerical replay.",
+  "third_party_pdfs_saved": 0,
+  "scope_exclusions": [
+    "full hard-cut complementary integrals",
+    "fixed-source/history integration",
+    "RG admissible input-class closure",
+    "spatial symmetry of chosen axial selection",
+    "volume-first polarization and P-to-zero marginal extraction",
+    "nonlinear multilevel and every-increment finite-u flow",
+    "continuum existence and nonfree reconstruction",
+    "positive physical continuum mass gap"
+  ],
+  "checkout_entry": "295b508bea2c65bf548172f3190e32f7f7eaf6cf",
+  "checkout_observed_before_receipt": "814364fcc7dbcf0ff4146f6766e98890124ac905",
+  "coordinator_git_changes": [
+    {
+      "from": "295b508bea2c65bf548172f3190e32f7f7eaf6cf",
+      "to": "a0a3499e84e23e783a4933cce4459b249bfdaf07",
+      "observed_delta": "Only REVIEW_XFAM_REC_CONT_SPOT.md added; no IC input changed."
+    },
+    {
+      "from": "a0a3499e84e23e783a4933cce4459b249bfdaf07",
+      "to": "814364fcc7dbcf0ff4146f6766e98890124ac905",
+      "observed_delta": "Coordinator committed frozen IC author packet, separate HRP/OSLEAF correction/review and shared research fronts. Entire name-status inventory inspected. Frozen IC input identities unchanged; shared fronts and HRP are not scientific inputs to this review and are not independently certified here."
+    }
+  ]
+}

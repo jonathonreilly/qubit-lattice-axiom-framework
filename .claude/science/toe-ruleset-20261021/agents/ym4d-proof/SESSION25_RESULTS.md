@@ -2594,15 +2594,27 @@ proofs without new numerical experiments; the original packaging failure
 and prior CC failures remain preserved.
 
 The [interacting selected-core construction](INTERACTING_SELECTED_CORE_ASTRA.md)
-is frozen as an author packet and is undergoing a fresh independent Astra/max
-review. Its claimed one-step, source-free `O(1/u)` connected remainder uses a
-proved complex original-coarse-field tube and separately treats a gauge-covariant
-ball sector. Its exact action dictionary retains Haar, kernel vacua, cutoff
-probabilities and the transported root-tree Gram. These claims are pending
-review; neither complementary integral, inherited source histories, spatial
-symmetries nor an iterated finite-u coupling map is supplied by this packet.
-The [graded-complement author](briefs_return/AUTHOR_BRIEF_GRADED_COMPLEMENT.md)
-continues work on local hard witnesses and actual exterior/reference costs.
+now has a [fresh independent scoped LAND review](REVIEW_INTERACTING_SELECTED_CORE_ASTRA.md)
+for IC1–IC32. Its one-step, source-free `O(1/u)` connected remainder uses
+coefficientwise parity plus cutoff-uniform moments, a proved complex original-
+coarse-field tube, and a separate ball-sector Ward identity. The exact action
+dictionary retains Haar, kernel vacua, cutoff probabilities and the transported
+root-tree Gram. No source repair was required. Both complementary integrals,
+inherited sources/histories, spatial-symmetry and marginal identifications,
+and an iterated finite-u coupling map remain separate obligations.
+
+The [graded-complement construction](GRADED_COMPLEMENT_ASTRA.md) is frozen as an
+author packet and is undergoing a different fresh independent Astra/max review.
+It claims full-reader hard witnesses, actual original-cut conditional chart
+probabilities with KKT/boundary-cap costs paid, and a marked-support expectation
+bound with explicit `O(log^5 u)` entropy and cutoff exponent `alpha>5/2`.
+The original G stays unchanged; placing all of it inside the new chart needs
+an additional fixed-threshold margin. This is not a connected analytic
+activity expansion or selected-sector normalization. Its outside-chart part,
+complex nonvanishing and full history/hole interfaces remain OPEN.
+New author work targets those outside-chart regions. A separate author is
+aligning the reconstruction consumers with the reviewed library's exact
+growth, tensor-domain and translation-count requirements.
 
 Concurrent progress through `a0a3499e84` is recovered. The actual returned-
 denominator construction [RD](RD.md) has a fresh [HOLD review](REVIEW_RD.md):

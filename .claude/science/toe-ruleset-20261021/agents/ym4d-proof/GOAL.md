@@ -58,7 +58,9 @@ leading coefficient, determinant multiplicities and conditional sign algebra.
 It leaves the full transitive lattice gap/locality chain and every explicit error
 majorant unverified. It issues no whole-unit acceptance or research-gate advance.
 See [the bounded report](gates/charged-sign-b1979a0173.md) for exact coverage.
-No worker from this checkpoint remains active. This check uses procedure
+The same reviewer was subsequently reused for the bounded GH49 applicability
+check below; no parallel author or additional worker context was launched.
+No worker from this checkpoint remains active. These checks use procedure
 53f2c0af7eb59438389b4c2fe75952932d4e95fe; the authors' c93 procedure and prior
 receipts remain historical and unchanged. The full sign theorem is still open
 for independent acceptance, and all six critical obligations remain open.
@@ -73,8 +75,15 @@ readers and marker bookkeeping. It found a coefficientwise-supremum omission;
 the corrected completion-outcome count fits the existing colour allowance and
 was confirmed in the same reviewer session. See the
 [affected confirmation](checks/gate_inherited_markers_fbe0652b18_affected_confirmation.md).
-The proposed GH49 bound and its prior forest chain remain unverified. This does
-not supply the second-step estimate, its full field jets or its complement.
+The continued independent [GH49 applicability check](gates/inherited-source-norm-30c0d08472.md)
+now accepts its first-bare-step connected failure-history norm with four
+original-source jets at fixed real output on the stated small-output domain.
+It reuses the unchanged, already reviewed WR density forest and checks the
+new compact charge, coefficient envelope and both marked rescalings, including
+the unmarked D translation pin within GH26's budget. This does not certify
+the general inherited-input/regulator proposal or every upstream source.
+The second-step estimate, its full effective-density factor, field jets and
+complement remain open, as do reserve and rate regeneration.
 A conditional lemma is a checkpoint, not a completed global return. Do not turn
 an outside-law estimate or an individual-sign inequality into a new assumption.
 

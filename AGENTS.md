@@ -1,8 +1,9 @@
 # Agent entry point
 
 1. **Rules:** read `docs/ai_methodology/SCIENCE_WORKFLOW.md`. It is the single
-   operating map: evidence rules, current owner settings, stages and where
-   material belongs.
+   operating map: evidence rules, current owner settings, stages, where
+   material belongs and, in section 10, how sessions on any provider work as a
+   lab.
 2. **Procedure:** pick the skill for the job from section 6 of that file
    (`docs/ai_methodology/skills/<name>/SKILL.md`). `.claude/commands/` are thin
    adapters to the same skills.

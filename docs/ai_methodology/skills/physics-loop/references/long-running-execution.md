@@ -1,6 +1,7 @@
 # Long-Running Execution
 
-Use this reference when `physics-loop` is asked to run unattended.
+Use this reference when `physics-loop` is asked to run unattended, or when a
+target is shared by more than one session (see Lab Operation).
 
 ## Runtime Prompt
 
@@ -44,6 +45,8 @@ Before modifying files or running long tasks:
    worktree is possible.
 8. Record start time, runtime, target stop time, branch, delivery mode, next
    milestone, and checkpoint interval in `STATE.yaml`.
+9. Follow `docs/ai_methodology/SCIENCE_WORKFLOW.md` section 10 for the worktree
+   and for the preflight before launching any long worker or numeric job.
 
 ## Checkpoints
 
@@ -74,6 +77,8 @@ Each checkpoint updates `STATE.yaml`, `TRACE_GATE.md`, and `HANDOFF.md` with:
 - PR status for the block;
 - next exact action;
 - reason for continuing or stopping.
+
+On a shared target, a checkpoint updates the part file instead (Lab Operation).
 
 Refresh the lock before it expires. If the repo lock cannot be refreshed,
 continue under a branch-local supervisor lock when safe and record the degraded
@@ -192,3 +197,191 @@ At stop:
 Do not run this stop sequence just because a lane hit a no-go, review demotion,
 human-judgment blocker, dirty PR, or missing PR auth. Those are checkpoint and
 pivot events during a 12-hour campaign.
+
+## Lab Operation
+
+Use this when more than one session, provider or machine works on one target, or
+when a hard target needs attempts that outlive a session. A bounded task in one
+session does not need it. All of it is research-stage working practice under
+`docs/ai_methodology/SCIENCE_WORKFLOW.md` section 10 and grants no status.
+Anything specific to one target, such as its conventions, budgets, provider
+roster and lessons, stays in that target's folder.
+
+### Roles
+
+| Role | How many | Decides | Does not |
+|---|---|---|---|
+| Owner | 1 | Goals, axiom edits, public posts, spending, pace | Choose between scientific forks |
+| Target lead | 1 per target | Parts, interface statements, budgets, which route gets the next budget | Settle by rank whether a step is right |
+| Part lead | 1 per part | What its part file says | Change an interface statement alone |
+| Worker | Many | Nothing beyond its dispatch (`workhorse` skill) | Edit a file it does not hold; it returns evidence to its lead |
+| Checker | Many | The research-gate signal | Check its own lineage |
+
+Any provider, or a person, can hold any role if it meets the target's model
+floor. A lead is a durable role held by whichever session has the lease. One
+session may hold several roles, except checker on its own work. The owner or the
+orchestrator names the first target lead.
+
+### Shared state
+
+A target is a branch plus its loop pack, listed by one line (slug, branch,
+folder) in `CAMPAIGN_STATUS.md` on `ai/execution`. Each file has one writer, so
+there is no shared board to conflict on:
+
+| File | Writer | Holds |
+|---|---|---|
+| `GOAL.md` | Target lead | Target contract, critical path, interface statements with their producers and consumers, model floors, its own lead and lease |
+| `parts/<part>.md` | Part lead | Lead and lease, state of attack, obligations, requests, the living text |
+| `parts/<part>--<route>.md` | That attempt's session | One attempt beside the part: lead, lease, state of attack, text |
+| `library/<lemma>.md` | Its author | A rebuilt literature lemma, with credit |
+| `gates/<statement>-<commit>.md` | Its checker | One research-gate report |
+
+A part file opens as below. The state of attack gives the current formulation,
+the hardest remaining obligation, routes tried and why they failed, and the next
+action. Edit in place; git keeps the history.
+
+```text
+lead: <provider>/<model>/<effort> <session id>
+lease_until: 2026-10-30T18:00Z
+
+## State of attack
+
+## Obligations
+- gap: <descriptive name> -> <consumer>
+- unchecked: <descriptive name> given <hypotheses> -> <consumer>
+- implication: <descriptive name> given <hypotheses> -> <consumer>
+- discharged: <descriptive name> -> <consumer>
+
+## Requests
+- <part or interface>: <what is asked and why>
+```
+
+| Label | Meaning | Written |
+|---|---|---|
+| `gap` | No argument or result yet | Any time |
+| `unchecked` | Argument or computation written, no research gate yet | Any time |
+| `implication` | A research gate confirmed it, given named hypotheses | After a gate |
+| `discharged` | A research gate confirmed it, with no open hypothesis | After a gate |
+
+An obligation may be a theorem, a computation with stated uncertainty, an
+observable map or a discriminating test. List only obligations on the critical
+path. Use descriptive names, never bare codes. Labels stay in the target folder;
+a milestone PR uses the existing claim types and status words.
+
+`python3 scripts/lab_ops.py status <target folder>` prints leads, leases, requests
+and the open count from these files. Nobody writes that summary by hand.
+
+Model floors are lines in `GOAL.md`, one per role:
+`model_floor <role>: <model>@<effort>, <model>`. Preflight, given `--target`,
+`--role`, `--model` and `--effort`, refuses anything not listed. With no floor
+declared, use the configured model.
+
+### Working on the branch
+
+- Each session has its own worktree and local branch, since git allows a branch
+  in only one worktree:
+  `python3 scripts/lab_ops.py worktree-add <name> --target <target-branch> --path <target folder>`.
+  Share with
+  `git pull --rebase origin <target-branch> && git push origin HEAD:<target-branch>`.
+  Never force-push a target branch.
+- Push at every stop. Work that is not pushed does not exist for the lab. Commits
+  carry a trailer, `Provenance: <provider>/<model>/<effort> <session id>`, which
+  records who did the work and claims neither quality nor independence.
+- Between milestones a stop updates only the part file. The other pack files,
+  source hashes and conformance work are brought current when a milestone PR is
+  prepared. This overrides the per-checkpoint file lists in this reference and in
+  `CAMPAIGN.md`.
+- Cut each milestone PR on its own branch, so later pushes do not move the head
+  under review.
+- To ask for a change in another part or in an interface, add a line under
+  `## Requests` in your own file. Leads read requests at each stop. The target
+  lead decides interface changes and marks affected consumers when one changes.
+
+### Leases
+
+Only leads hold leases, one per file. To take or renew one, commit `lead` and
+`lease_until` (UTC, past your next checkpoint) and push. Git decides who was
+first: a rejected push means fetch, re-read and decide again, and a rebase conflict
+on a lease line means you lost, so abort it. An expired lease can be taken the same
+way; a returning holder then works through the new lead, offering its unpushed
+work as a request or an attempt file. A session whose
+sandbox cannot push cannot hold a lease, so whoever launched it holds it and
+pushes for it. Bounded tasks and probes need no lease: duplicated work is wasteful
+but safe.
+
+### Handover
+
+A handover is complete when a fresh session on any provider can state the hardest
+remaining obligation and the next action from the pushed branch alone. The new
+lead writes both in its first commit; anything it cannot recover becomes a `gap`.
+Session logs and provider resume commands are conveniences, never the record.
+
+### Disagreement
+
+- About a route or an interface: the target lead states the fork and its decisive
+  test, runs a probe on each side, decides on the result and records the dissent
+  in `GOAL.md`. The owner is not asked.
+- If the test does not decide: both routes stay open with reopen conditions, and
+  the target lead sets their budgets.
+- About whether a step is right: rank and majority decide nothing
+  (`SCIENCE_WORKFLOW.md` section 2, rule 8). The statement stays `unchecked` until
+  a checker on a different path settles it.
+- Two sessions claiming one lead role: the first pushed lease holds. The other
+  takes a part or a probe.
+
+### Units of work
+
+Split only what can be frozen. A statement whose form is still changing is not a
+leaf: keep it in one sustained attempt, or race it.
+
+- **Sustained attempt.** One long resumed session on one part or obligation, with
+  a budget set before launch. Whoever launched it ends it, never the session doing
+  it, at one of three exits: the obligation follows from statements already in the
+  target; a counterexample in the actual setting, with a proposed edit; or a budget
+  stop with a dated log of distinct routes tried. A conditional result with a new
+  named lemma is a checkpoint, never an exit. An honest gap is never a failure.
+  Extend the budget only while hypotheses are being discharged or new routes
+  tried. The `workhorse` skill gives the resume loop.
+- **Race.** Two or more independent sustained attempts on one hard obligation,
+  across providers where possible, with the neutral briefs of Independent Search
+  Rounds in `proof-search-governance.md`. The part lead ends it and keeps the failed
+  routes in the state of attack.
+- **Bounded task.** A `workhorse` dispatch with a frozen statement and a named
+  consumer. It closes only when the statement is proved as written. A
+  counterexample or an exact missing obligation goes back to the lead.
+- **Probe.** A cheap test of a fork or a risk, with its decisive outcome stated
+  first.
+
+### Research gates
+
+Hold one when a part offers a statement for another part to build on, and when the
+whole target is assembled. Do not review note by note during research. Inside an
+attempt, run a skeptic pass at checkpoints; that is a self-check, not a gate.
+
+The checker gets the raw artifacts and a neutral brief, comes from a different
+provider where one is available, reads line by line and names its provider, model
+and effort in its report. `SCIENCE_WORKFLOW.md` section 2, rule 8 decides what
+counts as independent. It answers three questions:
+
+1. Is it right, including every cited number, log and source?
+2. Are the open obligations fewer or strictly weaker? Use the Theorem-Strength Gap
+   Test in `proof-search-governance.md`; relocating the target to an equivalent
+   lemma does not count.
+3. Which consumer's exact input does it deliver?
+
+| Signal | Means | Next step |
+|---|---|---|
+| `advance` | Right, and yes to the other two | Label it `implication` or `discharged`; consumers may build on it |
+| `correct-no-advance` | Right, but no smaller or delivers nothing | Keep it; it may be labelled `implication`, the count is unchanged and the attempt continues |
+| `wrong` | Not right | Fix or withdraw it and mark its dependents affected |
+
+At assembly of a theorem target the checker also runs the Candidate-Proof Audit in
+`proof-search-governance.md`.
+
+### Progress
+
+Report the number of obligations on the critical path that are not yet
+`discharged`, by name. `lab_ops.py status` computes it. A new named obligation
+raises it; a rename does not lower it. Notes, lanes and PRs written are not
+progress. A frontier target with no critical path reports the concrete changes of
+`SCIENCE_WORKFLOW.md` section 7.

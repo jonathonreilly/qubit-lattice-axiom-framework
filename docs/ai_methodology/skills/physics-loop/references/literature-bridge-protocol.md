@@ -22,6 +22,14 @@ Use targeted literature review when:
 - For physics/math claims, cite the exact theorem, equation, dataset, or
   experimental quantity being used.
 - Do not quote long passages. Summarize the role and cite the source.
+- Rebuild a literature lemma that a step needs as a credited library entry; the
+  citation is attribution and carries no weight
+  (`docs/ai_methodology/SCIENCE_WORKFLOW.md` section 10). Until then the step
+  stays an open obligation and the item keeps its import class below. An entry
+  lands with the milestone that uses it, not on its own.
+- Link open papers rather than committing their PDFs.
+- Record each source's access status and what was actually read. An unread
+  source is not known.
 
 ## Import Classification
 

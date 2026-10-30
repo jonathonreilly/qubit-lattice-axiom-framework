@@ -56,6 +56,7 @@ readings when science is undertaken; campaign requirements are additional.
 | Select, plan, develop or reassess a route | [Discovery and deep work](references/DISCOVERY.md), [Claim status and premises](references/CLAIM_STATUS.md), then the relevant current source and premises |
 | Start/resume execution, create artifacts, commit, prepare a milestone | [Delivery and loop pack](references/DELIVERY.md) |
 | Launch/resume unattended work, pivot, declare exhaustion, stop | [Campaign continuation and stopping](references/CAMPAIGN.md) and its `long-running-execution.md` |
+| Run or join a target shared by several sessions, providers or machines | Lab Operation in `references/long-running-execution.md` |
 | Import, wall, dependency, premise or status judgment | `references/CLAIM_STATUS.md` plus the primitive-registry checks it requires |
 | Negative or bounded-with-walls claim | The negative-claim gate in `references/DISCOVERY.md` and the [No-Go Discipline skill](../no-go-discipline/SKILL.md) |
 | Third or later PR in one parent-row family | The cluster-cap evaluator in `references/CAMPAIGN.md` (governs PR opening, not truth) |
@@ -86,7 +87,8 @@ Paths under `references/` are relative to this skill; backticked `docs/`,
   implementation, and disclose limits on that independence.
 - The loop pack is the checkpoint; do not write a second summary packet. Keep
   source/input identities, premises, open obligations, failed routes,
-  independent-check state and the next decision in it.
+  independent-check state and the next decision in it. On a shared target the
+  part files are the checkpoint between milestones (Lab Operation).
 - Reuse an earlier read only while its source, premises and scope are unchanged.
   A checkpoint, hash or short tool result cannot stand in for a missing proof.
 - Keep full logs in artifacts and return concise findings and paths. Do not fill

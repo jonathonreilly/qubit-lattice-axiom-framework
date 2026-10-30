@@ -2704,18 +2704,23 @@ with the principal covariance kept as an explicit argument. Their complete
 covariance-reader connected assembly is still OPEN; the finite-volume
 absolute sum is not a uniform relative-error or nonvanishing estimate.
 
-The [nonlinear complete-reader proposal](NONLINEAR_READER_RETURN_ASTRA.md)
-is frozen under fresh independent review. It proposes a centered actual
-critical-covariance logarithm at `beta/2`, retaining both signed tails,
-with an `O(1/u)` plus rare-cut bound. This pending result is not adopted.
+The [nonlinear complete-reader construction](NONLINEAR_READER_RETURN_ASTRA.md)
+now has a [fresh independent scoped LAND review](REVIEW_NONLINEAR_READER_RETURN_ASTRA.md).
+It gives the actual centered nonlinear chart a connected logarithm at
+`beta/2`, retaining both critical-covariance tails and all original readers,
+with an `O(1/u)` plus rare-cut bound. The series proves complex nonvanishing
+of that chart and its exactly prefactored centered-contour integral.
+The fixed original-a chart and full original-cut return remain separate.
 
 New author work joins the shifted-chart identity and complete-reader
 nonlinear construction for a fixed original-a chart. The [external
-return comparison](EXTERNAL_RETURN_BRIDGE_ASTRA.md) is also under fresh
-review; it is a primary-source hypothesis map and imports no Yang–Mills
-theorem. The full interacting original-cut return, arbitrary histories,
-multiscale iteration, continuum existence and physical continuum mass
-gap remain OPEN.
+return comparison](EXTERNAL_RETURN_BRIDGE_ASTRA.md) now has a [fresh
+independent review](REVIEW_EXTERNAL_RETURN_BRIDGE_ASTRA.md) accepting its
+bounded primary-source interpretation. It distinguishes a real whole-volume
+comparison from the required fixed-history local return and imports no
+Yang–Mills theorem. The full interacting original-cut return, arbitrary
+histories, multiscale iteration, continuum existence and physical continuum
+mass gap remain OPEN.
 
 Concurrent progress through `cc1de55f5b` is recovered. [RD pass 2](RD.md)
 has an independent [HOLD review](REVIEW_RD_R2.md): its explicit finite H12

@@ -1,0 +1,316 @@
+{
+  "schema": "review_external_return_bridge_v1",
+  "created_utc": "2026-10-30T04:22:26.626867+00:00",
+  "verdict": "LAND",
+  "verdict_scope": "bounded literature interpretation and conditional accounting only; no integration or whole-proof certification",
+  "reviewer": "fresh same-family reviewer context /root/review_external_return_bridge",
+  "requested_configuration": "Astra/max requested; backend model and effort not independently attested",
+  "target": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/EXTERNAL_RETURN_BRIDGE_ASTRA.md",
+    "sha256": "66df23c70e3ef7f08e3960b314d3ae7356d01a235ce2038258109e35af384291",
+    "bytes": 18258,
+    "read_windows_1_based": [
+      [
+        1,
+        299
+      ]
+    ],
+    "scope": "target complete; contextual mathematical interfaces only"
+  },
+  "report": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_EXTERNAL_RETURN_BRIDGE_ASTRA.md",
+    "sha256": "6956d053753ab259b5b6f2f229d4a81ffea984684022ddc598214fbaeb6da290"
+  },
+  "pre_author_findings": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_external_return_bridge_source_findings.json",
+    "sha256": "aaa1b9db1d1ff23b2e4276b1459b9c7710748ca79f40cbd9a1c0f97b2fa4bb2e",
+    "created_utc": "2026-10-30T04:18:40.885950+00:00"
+  },
+  "author_receipt": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/external_return_bridge_receipt.json",
+    "sha256": "a7369bab35ad8ef7b3d59fb4c6f8d9f0ca0d017d7fcdafac1c5361af5430ba61",
+    "opened_only_after_pre_author_findings": true,
+    "external_identity_comparison": "all five matched",
+    "overlapping_local_identity_comparison": "RD4, OC, SC and PROCESS_LIGHT matched",
+    "target_identity_comparison": "matched",
+    "interpretation_changed_independent_findings": false
+  },
+  "source_read_order": [
+    "applicable AGENTS, PROCESS_LIGHT and pinned methodology",
+    "complete bridge target",
+    "pinned external mathematical passages and bounded local interfaces",
+    "independent upstream commit/tree/blob and full-byte hash checks",
+    "immutable pre-author findings freeze",
+    "author receipt read and identity comparison",
+    "historical HANDOFF hash-only check",
+    "final source/receipt confirmation and report"
+  ],
+  "prior_review_reports_opened": false,
+  "external_section_19_role": "mathematical correction in primary source; linked review not opened",
+  "external_commit": "70d9a772fc9c7b47e36fd5e384fe42e07e7ccded",
+  "external_commit_date": "2026-10-29T11:56:26Z",
+  "external_tree": "ecf05363643c315bd6416062c3297204b666f625",
+  "external_sources": [
+    {
+      "path": "drafts/WILSON_IT1_CAUCHY_ESTIMATE_2026_10_27.md",
+      "blob_sha1": "82f7bd9b9b147096d2a2a78f207750257f18de5c",
+      "sha256": "8b42e1e7397aedd3145e20e5388f3d8518f060765f15c76f7165d6f05aaad2d7",
+      "bytes": 323615,
+      "read_windows_1_based": [
+        [
+          1,
+          19
+        ],
+        [
+          36,
+          48
+        ],
+        [
+          891,
+          952
+        ]
+      ],
+      "scope": "complete section 11 and opening/setting/constants/source inventory; no certification of external suppliers",
+      "url": "https://github.com/MathePhysics/4D_Wilson_Loop_RG/blob/70d9a772fc9c7b47e36fd5e384fe42e07e7ccded/drafts/WILSON_IT1_CAUCHY_ESTIMATE_2026_10_27.md"
+    },
+    {
+      "path": "drafts/WILSON_IT1_CONTINUUM_LIMIT_CLOSURE_2026_10_26.md",
+      "blob_sha1": "e66d0b34f9bb5c7fa5f51ffe6d6cd9b60837b9f4",
+      "sha256": "302d20f45aaf24434211181577f9827168d07247003478ccee36dd040af519f2",
+      "bytes": 88617,
+      "read_windows_1_based": [
+        [
+          90,
+          114
+        ]
+      ],
+      "scope": "complete section 7",
+      "url": "https://github.com/MathePhysics/4D_Wilson_Loop_RG/blob/70d9a772fc9c7b47e36fd5e384fe42e07e7ccded/drafts/WILSON_IT1_CONTINUUM_LIMIT_CLOSURE_2026_10_26.md"
+    },
+    {
+      "path": "drafts/WILSON_IT1_LF_GAMMA_REPAIR_ATTEMPTS_2026_10_28.md",
+      "blob_sha1": "5c129d4e65723be6ac6750177bc32a0ee4ed06aa",
+      "sha256": "b02fe17a8894df7ba3a9272df98c8100902966a699345a708f67d8600f37587a",
+      "bytes": 142512,
+      "read_windows_1_based": [
+        [
+          1,
+          29
+        ],
+        [
+          680,
+          726
+        ],
+        [
+          1154,
+          1278
+        ],
+        [
+          1385,
+          1674
+        ],
+        [
+          1980,
+          2083
+        ]
+      ],
+      "scope": "sections 12.1,16,18-21,22.8,23 and opening; no review of Gaussian sections 22.1-22.7 or linked reviewer reports",
+      "url": "https://github.com/MathePhysics/4D_Wilson_Loop_RG/blob/70d9a772fc9c7b47e36fd5e384fe42e07e7ccded/drafts/WILSON_IT1_LF_GAMMA_REPAIR_ATTEMPTS_2026_10_28.md"
+    },
+    {
+      "path": "drafts/BALABAN_PAPER_LABELS.md",
+      "blob_sha1": "11c3a5fa36783ec6eb70c8d96e55364f490149c0",
+      "sha256": "24a34f691d6189555ebb74349657d71000a88942c29f357bb37ef0a0b34a45ee",
+      "bytes": 9197,
+      "read_windows_1_based": [
+        [
+          1,
+          44
+        ]
+      ],
+      "scope": "bibliography only; no original Balaban proofs read",
+      "url": "https://github.com/MathePhysics/4D_Wilson_Loop_RG/blob/70d9a772fc9c7b47e36fd5e384fe42e07e7ccded/drafts/BALABAN_PAPER_LABELS.md"
+    },
+    {
+      "path": "README.md",
+      "blob_sha1": "2adfd57420e1b2618d3a4bb2f1e1c8bb59b8f028",
+      "sha256": "ffb428984b61984648a9de1a17e0d0b9e1227d5b68679cddad89dcd0975f0390",
+      "bytes": 19565,
+      "read_windows_1_based": [
+        [
+          1,
+          79
+        ]
+      ],
+      "scope": "authorship and explicit finite-volume programme context; status labels not proof",
+      "url": "https://github.com/MathePhysics/4D_Wilson_Loop_RG/blob/70d9a772fc9c7b47e36fd5e384fe42e07e7ccded/README.md"
+    }
+  ],
+  "local_sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/EXTERNAL_RETURN_BRIDGE_ASTRA.md",
+      "sha256": "66df23c70e3ef7f08e3960b314d3ae7356d01a235ce2038258109e35af384291",
+      "bytes": 18258,
+      "read_windows_1_based": [
+        [
+          1,
+          299
+        ]
+      ],
+      "scope": "target complete; contextual mathematical interfaces only"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD4.md",
+      "sha256": "60d27c7ec5e5fda254e8394c34639cccdfe42cd9f85898bb22952bc6fa6067c6",
+      "bytes": 42966,
+      "read_windows_1_based": [
+        [
+          1,
+          76
+        ],
+        [
+          334,
+          669
+        ]
+      ],
+      "scope": "target complete; contextual mathematical interfaces only"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OUTSIDE_CHART_RETURN_ASTRA.md",
+      "sha256": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4",
+      "bytes": 32868,
+      "read_windows_1_based": [
+        [
+          1,
+          37
+        ],
+        [
+          401,
+          590
+        ]
+      ],
+      "scope": "target complete; contextual mathematical interfaces only"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_CHART_RETURN_ASTRA.md",
+      "sha256": "88b5b59feaf278d9b9995adc320a446363fa68887d277ca4315c6469fb3aa525",
+      "bytes": 25946,
+      "read_windows_1_based": [
+        [
+          1,
+          35
+        ],
+        [
+          327,
+          508
+        ]
+      ],
+      "scope": "target complete; contextual mathematical interfaces only"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497,
+      "read_windows_1_based": "complete",
+      "scope": "lane process"
+    }
+  ],
+  "methodology_sources": [
+    {
+      "path": "AGENTS.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0"
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/literature-bridge-protocol.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "29edda5688fa04cb742ee524522b35dcf41d790d5c49fc46c5b4b1517f0ff5dd"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    }
+  ],
+  "historical_handoff": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+    "revision": "bc4579326baf713ab978774b72c95a249bcd7345",
+    "sha256": "1565cca85302bd182435e224aab7a8e716da65fc96847c9a5cc6641fe19c256d",
+    "method": "git show immutable revision; identity check only; no mathematical read claimed",
+    "matches_author_receipt": true
+  },
+  "physical_line_count_clarification": "Pre-author display windows included the trailing split-on-newline empty entry for Cauchy (953) and gamma (2084); canonical physical last lines are 952 and 2083. Frozen pre-author bytes preserved.",
+  "math_checks": [
+    "independent exponent-budget subtraction",
+    "independent exp(2F) ratio and positive-weight lower bound",
+    "ordered telescoping with common envelopes and actual costs",
+    "calculus maximum of P exp(-c P), P>=0 and c>0",
+    "interface and support-domain comparison"
+  ],
+  "findings_requiring_correction": 0,
+  "source_fixes": 0,
+  "all_consumed_local_bytes_unchanged": true,
+  "all_prior_written_bytes_preserved": true,
+  "full_third_party_sources_retained": false,
+  "checks_not_run": [
+    "no new Yang-Mills proof",
+    "no complete external-paper review",
+    "no recursive local-producer re-review",
+    "no original Balaban/Dimock theorem verification",
+    "no numerical experiment",
+    "no author freezer",
+    "no git mutation/fetch/commit/push",
+    "no audit/ledger/front/index operation",
+    "no additional worker"
+  ],
+  "recoverable_tool_failures": [
+    "Oversize node hashing request rejected at 64000-byte auto-review limit; recovered by independent raw-byte hashing with curl/Python, without a permission request.",
+    "Python urllib certificate verification failed before reading source bytes; recovered using curl with its normal TLS verification."
+  ],
+  "physical_targets": {
+    "normalized_unchanged_history_return": "OPEN",
+    "full_4d_continuum_existence": "OPEN",
+    "physical_continuum_mass_gap": "OPEN"
+  },
+  "publication_integration_owner": "root coordinator"
+}

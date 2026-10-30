@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "role": "fresh same-family independent reviewer",
+  "configuration_request": "Astra/max; not backend attestation or external peer review",
+  "frozen_at_utc": "2026-10-30T04:16:27.528827+00:00",
+  "verdict": "LAND",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+    "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+    "bytes": 36322,
+    "lines": 713
+  },
+  "accepted_scope": "NR36 actual centered finite-u nonlinear fixed-ball chart under full critical covariance, both complete-reader tails and original source/coarse readers, mu=beta/2, signed O(sigma^2)+rare-cut bound and complex nonvanishing; NR37 retains full prefactors",
+  "independent_findings_freeze_observed_utc": "2026-10-30 04:12:01 UTC",
+  "source_before_packet_order": true,
+  "records": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "f34bcc1bacf6c66af510d6436274f7e5acd6e38a01ee7c2c2d838a6894e4cc47",
+      "bytes": 8595,
+      "lines": 150
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_nonlinear_reader_return_independent_findings.md",
+      "sha256": "9416c0aca7cb411f61a290458bc8ee51c7f5ee5dd640fe1128757ac67a5e2e04",
+      "bytes": 10881,
+      "lines": 168
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_nonlinear_reader_return_packet_check.json",
+      "sha256": "1d0e55cad4a207b9f757b0b1d13104fba955ec0b91e04836bef8fa83afab287c",
+      "bytes": 24215,
+      "lines": 514
+    }
+  ],
+  "author_packet_receipt": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/nonlinear_reader_return_receipt.json",
+    "sha256": "8342f69177e1feae1e0effd145c290ee757c59d7cb1ae0292dac185cea264cf1",
+    "bytes": 2791,
+    "lines": 58
+  },
+  "methodology_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "review_iterations": 1,
+  "material_findings": 0,
+  "source_repairs": 0,
+  "previous_review_reports_semantically_read": false,
+  "separate_critical_gaussian_or_shifted_units_consumed": false,
+  "numerical_experiments": [],
+  "author_freezer_executed": false,
+  "source_or_producer_edits": false,
+  "git_mutations": false,
+  "audit_or_ledger_operations": false,
+  "full_existence_established": false,
+  "physical_continuum_mass_gap_established": false,
+  "integration_validation": "Coordinator responsibility; no whole-PR landing or audit status supplied"
+}

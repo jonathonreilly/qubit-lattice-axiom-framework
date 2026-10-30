@@ -37,6 +37,18 @@ fixed identity cap in an exact block-tree gauge, and an exponential
 covariance bound for its normalized rectangular subsector (sections
 4.9--4.11).
 This cap is a proper sector; its complement and inherited actions remain.
+The new route integrates a rough core without discarding its mass. Sections
+4.13--4.16 prove a first-step, SU(2), fixed-strong-roughness comparison at
+identical exterior fields and pinned outputs, including a complete-reader
+rooted bound and jets through (6;[4]) for four original plaquette sources.
+These local ratios have not been identified with the actual connected RG
+activities. Their original-action price is not regenerated at later scales.
+Section 4.18 then uses a different reference calculation: concentration
+about the actual common convex-cap mean. It proves a joint shrinking-scale
+event price at a specified larger threshold coefficient, and a spatially
+decaying first output response for declared smooth auxiliary insertions.
+These are still first-step cap results; neither the original hard histories
+nor the exponential-in-support-size connected representation is supplied.
 
 **Hardest remaining inequality.** For the actual backward measure
 
@@ -53,6 +65,11 @@ same integral's unused reserves. The actual normalizer is in this covariance.
 Bounding each score's unconditional moments does not provide the required
 spatial decay. Section 4.7 gives the general integrated bound; sections
 4.9--4.11 give a local result on the specified nonlinear first-step sector.
+The new rough-core bound does not estimate the covariance in (A) under the
+common full posterior. Its same-exterior composition test is in section 4.17.
+CC13 proves a restricted first response with a common-cap fluctuation price.
+It has no all-history or (6;[4]) extension, and CC14 records the failed
+attempt to turn its distance decay into the required support-size norm.
 
 **Order of constants.** Fix N, odd L>=3, kappa>0, the exact contour convention,
 the full-reader graph, and the original source directions first. Then fix the
@@ -66,6 +83,14 @@ unproved operator estimates must then determine lambda,B,C,s_*,eta_* and the
 coefficient bounds. Only afterwards may M and u_* be chosen to satisfy (H5).
 No feasibility of those last choices is asserted. In particular the ideal
 LOCOP factor 4/L+8/L^2 does not include the actual transport cost.
+For the new core comparison, fix a strong plaquette threshold s_0>0,
+a remaining action fraction theta>0, the exponent 0<delta_exp<1/2,
+the source weights and a support rate sigma first. Section 4.16 gives an
+explicit sufficient u_core for that comparison. It is not u_* for H5.
+For CC1--CC13, fix the proven cap constants and original source budget,
+then g_s,J_s,eta_s,K_B, then d_0>=1 and the threshold coefficient c_w.
+Only then take u large enough for CC1, epsilon(u)<=b_cap and a negative
+exponent in CC9. No closure of the induction's domain constants is inferred.
 
 **Routes tested and present decisions.**
 
@@ -100,46 +125,73 @@ LOCOP factor 4/L+8/L^2 does not include the actual transport cost.
   **full normalized** conditional action at RENEW's actual flux field.
   This strengthens the bare-action diagnostic at precisely this scope;
   it does not refute a paid nonconvex-sector return.
+* **Failed new route: absorb an integrated rough core into a convex
+  exterior action.** The exact Schur Hessian subtracts a score covariance.
+  The available compactness estimate costs O(u^2), while the good-region
+  curvature is O(u). An actual six-plaquette zero-staple core realizes
+  the -u^2/4 term when the soft outputs are integrated. This is a test of
+  the proposed estimate, not a pinned-output counterexample (section 4.13).
+* **Successful restricted replacement:** keep the core integral as an
+  insertion and divide only by its good-core integral at the *same*
+  exterior and output. A uniform polynomial SU(2) kernel-height bound
+  lets fixed original-action roughness pay the Haar and normalizer costs.
+  Section 4.16 proves the specified local ratio family's rooted jet bound;
+  it does not invoke a matched conditional law without bounding its price.
+* **Failed promotion of that replacement:** these witness events overlap,
+  and differently removed cores have different denominators. They cannot
+  simply be declared a complete polymer representation. Section 4.17
+  retains the common exterior integration for separated cores. Moreover,
+  at a threshold s_0=c u^(-1+2 delta_exp), c<=8, the present comparison's
+  good-core debit has a larger leading coefficient than its rough price.
+  The resulting upper bound does not even show smallness there. This is
+  failure of this estimate, not a lower bound on the true activity.
+* **New restricted concentration route:** linear tilts preserve the proven
+  cap Hessian. They give joint centered quadratic-exponential moments under
+  one actual cap measure. Bounding its mean by the spatial covariance
+  estimate yields CC9 at c_w epsilon^2 and CC13 for smooth insertions.
+  This preserves the cap's unnormalized mass in CC10. It does not establish
+  the previous smaller threshold or a theorem for rough exteriors.
+* **Failed promotion of the newest response estimate:** telescoping over
+  expanding output balls controls a shell by exp(-eta_s r) times a
+  polynomial, but pays exp(mu c r^4) for its full ball support. That
+  majorant is not summable. CC13 therefore cannot be advertised as H3.
 
-**Hostile check of the newest step.** The nonlinear cap's gauge fixing is
-an exact Haar change of variables with gauge transformations equal to I at
-every block root; the retained V is therefore unchanged. An arbitrary
-full-lattice gauge penalty would change this conditional measure and is
-not used in the proof. The Haar Jacobian is retained and is convex on the
-chosen cap. The Hessian lower bound is proved on the fixed cap only, before
-any parameter-dependent selectors. Its original mass and its entire
-complement remain separate. The proof does not use the spectral sampling
-grid as a certificate of a uniform minimum. The covariance proof uses a
-rectangular subsector with fixed boundaries: normal gradient components
-have Dirichlet conditions, tangential components have Neumann conditions,
-and the spatial weights preserve both. This repairs the tempting but
-incomplete application of a whole-space covariance formula to a hard cap.
-Its result is for one normalized sector and smooth insertions; it neither
-prices that sector's mass nor differentiates arbitrary history indicators.
-The attempted extension to rough fields was then tested against the
-actual flux orbit, including both changed kernel means and their
-normalizers. Its Hessian is negative in the stated parameter range.
-The induction must keep such regions outside the convex reference and
-carry their unnormalized masses as charged insertions. That reference
-construction and its charge regeneration are still U1/U2, not results
-of the counterexample.
+**Hostile check of the newest step.** CC9 uses the proved Hessian only
+inside its fixed rectangle; linear tilts change no Hessian. The centered
+mean in that proof can read the whole reference and is not used as a local
+selector. The actual cutoffs in CC11 use a fixed deterministic threshold,
+so their first output derivative is exactly a covariance and their
+gradient remains supported on the witness neighborhood. CC12 retains
+the cutoff derivative cost. This justifies CC13 at its stated scope.
+It does not justify replacing hard histories by those smooth functions,
+discarding absence factors, assigning their expectations only geometric
+readers, or differentiating the cap's unnormalized mass as if Z_cap were
+constant. The larger threshold c_w must still be admitted by a stable
+domain recursion. The explicit ball-support test CC14 fails even before
+the higher mixed jets are attempted. The earlier core comparison also
+still fails at its original shrinking threshold, RC20. All source claims
+in these new steps are for four original plaquette insertions; arbitrary
+original observables require their own bounds. U1--U4 remain open.
 
-**Next decision.** Test which terms in the actual inherited action preserve
-the fixed-sector covariance estimate of section 4.11 and which require a
-paid rough collar. In particular, control the inherited Hessian relative
-to the local row bound; integrated small residuals alone do not do that.
-Extending the bare calculation by replacing rho_j with exp(-u_j W) is
-forbidden. The fixed cap need not capture most of the gauge-fixed law;
-its missing mass is not estimated here. Do not reopen the forward Gamma
-calculation unless its scope or inputs change.
+**Next decision.** Seek a connected-path or connected-tree decomposition
+of the actual cap response that pays for support size rather than filling
+an entire distance ball. It must retain the same normalizer and be checked
+through the mixed (6;[4]) words before it can enter H3. The new cap result
+also needs an exact interface with the mass-retaining rough cores and
+hard-history boundaries. A matched local extension remains a candidate
+for repairing RC20; it is not supplied by CC9. At later scales the
+inherited Hessian needs an actual relative bound. Replacing rho_j by
+exp(-u_j W), or spending original plaquette prices twice, is forbidden.
 
-Working source: branch claude/push-A, starting HEAD
-`a98f6eb20c89c5792b9db362b860fd1f43670665`. The locally recorded main ref is
+Working source: branch claude/push-A. This continuation starts from the
+driver checkpoint `0b0e0d0549b558a0ce3f8865eddc2baa1dc1a73c`; the initial
+manuscript started at `a98f6eb20c89c5792b9db362b860fd1f43670665`.
+The locally recorded main ref is
 `bcab5d2ee4a908fbb4e6025635fb878e6c157ebe`; remote freshness is not certified.
 No mainline or audit status is claimed. The scientific premises are the
 supplied finite Wilson model and Decision-4 kernels. No physical axiom is
-added. Only this manuscript and checks/push_a_* are outputs; no pre-existing
-science note or prompt is edited and no commit is made.
+added. Only this manuscript and checks/push_a_* are outputs; no other
+science note or prompt is edited and this agent makes no commit.
 
 ## 2. Definitions
 
@@ -1108,7 +1160,612 @@ present. Do not impose convexity on every inherited field or normalize
 away a rough component's mass. U1/U2 must construct and regenerate this
 mixed reference. R6 does not price it and does not make the target false.
 
-### 4.13 Verification, attribution, and claim boundary
+### 4.13 A different route: integrate the rough core before estimating curvature
+
+**PROVEN identity.** Let x be core variables integrated over a fixed compact
+domain with its fixed measure, y exterior coordinates, and
+
+    F(y)=-log int exp[-S(x,y)] dx.
+
+Differentiation of this actual finite positive integral gives
+
+    D_y^2 F = E_core[D_y^2 S]
+                           - Cov_core(D_y S,D_y S).       (RC1)
+
+The normalizer in both terms is the same core integral. The negative
+term is not bounded by the average Hessian. If the only available
+score bound is |D_y S|<=C u n for n incident factors, its covariance
+bound costs C^2 u^2 n^2. It cannot establish the O(u) coercivity needed
+to absorb this core into the good reference. This is a failure of that
+sufficient estimate, not proof that every pinned core has that cost.
+
+**PROVEN actual-model diagnostic.** Work at zero source on the original
+fine Wilson lattice with side at least six. Leave U_1(0)=q free, set all
+transverse links to I, and set the parallel links at +e_nu to I and at
+-e_nu to -I, nu=2,3,4. Vary only U_1(e_2)=exp(i y sigma_3). The six
+plaquettes containing q have total action exactly
+
+    S_core(q;y)=u[6-q_0(cos y-1)-q_3 sin y].              (RC2)
+
+For example the positive (1,2) plaquette has scalar part
+q_0 cos y+q_3 sin y; the other two positive staples give q_0 each,
+and the three negative staples give -q_0 each. Thus this formula
+uses actual plaquette loops, not an imposed one-link source. Integrating
+q against probability Haar gives
+
+    int exp(-S_core)dq
+       =exp(-6u) Z_(2u |sin(y/2)|)(I),
+    [-log int exp(-S_core)dq]''_(y=0)=-u^2/4.            (RC3)
+
+Indeed E_Haar q_3^2=1/4, or equivalently
+log Z_s(I)=s^2/8+O(s^4). Exterior-only Wilson terms have curvature
+O(u) and do not cancel this leading term as u grows. The full soft
+chain gives exactly this marginal when all auxiliary outputs are
+integrated, because every kernel has integral one. RC3 is therefore
+an actual Wilson-core test of a proposed compactness argument. It is
+**not** a statement with the coarse output pinned: those kernels can
+change this core law. No pinned-output counterexample follows from RC3.
+
+**DRAFTED (confidence 0.6), route choice.** Keep a rough core as a
+mass-bearing insertion instead of putting its effective action into
+the convex Hessian. The following comparison supplies one necessary
+first-step estimate for that route. Its adequacy for the RG return
+is not assumed.
+
+### 4.14 A mean-uniform kernel height bound — PROVEN
+
+For SU(2) put s=t|m|, including s=0, and
+
+    A(s)=exp(-s) Z_s(I)
+        =(2/pi) int_0^pi exp[-s(1-cos theta)] sin^2 theta dtheta.
+
+Restrict the integral to 0<=theta<=(1+s)^(-1/2)<=1. On this interval
+sin theta>=5 theta/6 and 1-cos theta<=theta^2/2. Therefore
+
+    A(s)>=c_0 (1+s)^(-3/2),
+    c_0=25 exp(-1/2)/(54 pi),
+    exp(-X)<=k_t(V;M)<=c_0^-1(1+t)^(3/2)=H(t).          (RC4)
+
+The lower bound for k uses A(s)<=1 and k=exp(-X)/A(s).
+These inequalities hold at every actual mean, including m=0, and
+every output. They retain the normalizer and have no exp(Cu) upper
+debit. The lower bound alone is useful only when the gap is controlled.
+No derivative assertion is being inferred from this scalar estimate.
+
+### 4.15 Matched exterior comparison for a strong rough core — PROVEN
+
+This section concerns only the bare first step, N=2, in the exact
+root-fixed block-tree gauge of section 4.9. Fix odd L, kappa>0,
+0<delta_exp<1/2, a threshold 0<s_0<2, and 0<theta<=1. Write
+
+    epsilon(u)=u^(-1/2+delta_exp),  q=theta s_0.
+
+Here theta denotes the remaining action fraction, independently of
+the contraction coefficient called theta in H5.
+
+For this theorem take four original source directions O_i=f_(p_i),
+with |J_i|<=r_i, weighted source derivative r_i partial_(J_i), and
+R_J=sum_i r_i. A source plaquette is allowed to repeat. These sources
+do not change kappa, u, any kernel, or any integration domain. This is
+a declared subclass of the source directions in section 2, not a bound
+for unspecified original observables.
+
+Let S be a nonempty nearest-neighbor connected set of m coarse blocks.
+A fine plaquette is owned by the block containing its positive base
+point. Let E_S be the event that every X in S owns at least one
+plaquette with f_p>=s_0. Enlarge to the core A=N_1(S), the closed
+nearest-neighbor neighborhood, so |A|<=9m. Integrate all free fine
+links whose positive bases are in A; call these variables x. The
+remaining links are y. Every plaquette owned by S reads only x and
+fixed tree links, since its link bases are its base and its two
+positive nearest neighbors. Thus E_S is independent of y and V.
+Its witnesses in different blocks are distinct original plaquettes.
+
+Let P_A be all Wilson plaquettes reading a free core link and C_A all
+coarse kernels reading one. All other factors cancel in the ratio
+below. If a witness had no free link it would contain only fixed tree
+links and have f_p=0; thus every actual witness belongs to P_A. With
+n_A the number of integrated free links, conservative counts are
+
+    n_A<=4 L^4 |A|,   |P_A|<=24 L^4 |A|,
+    |C_A|<=8 |A|.                                    (RC5)
+
+The last count uses the actual paired contours: a kernel reads only
+its two endpoint blocks. Tree gauge is an exact change of variables;
+it does not replace those contours by longer nonlocal ones.
+
+Every retained fine link read by these factors is in the fixed box
+|A_(b,a)|<epsilon(u)/sqrt(3); every read output has |B_c|<epsilon(u)
+in exponential coordinates. Tree links remain I. Define the exact
+incident-factor density
+
+    w_A(x;y,V,J)=exp[-u sum_(p in P_A) f_p
+                    +sum_(i:p_i in P_A) J_i f_(p_i)]
+                              product_(c in C_A) k_(kappa u)(V_c;M_c),
+    D_A(y,V,J)=int_(x in the same epsilon box) w_A dx,
+    N_S(y,V,J;xi)=int 1_(E_S)(x)
+                        exp[u sum_(p in P_A) xi_p f_p] w_A dx,
+    z_S=N_S/D_A.                                     (RC6)
+
+Both integrals use the actual probability Haar measures. A source
+factor not reading the core cancels in this ratio, but still belongs
+to the exterior density in any full integral. Fix nonnegative total
+allocations xi_p<=1-theta. If several regulators use a plaquette, xi_p
+is their sum before the estimate. The resulting remaining Wilson
+coefficient is at least theta u. The domain and E_S are fixed under
+all the retained-field and original-source derivatives considered
+below. N_S may vanish; D_A is strictly positive. z_S is a local
+rough/good fiber ratio, not a conditional probability.
+
+On E_S at least m distinct plaquettes have f_p>=s_0. RC4 and total
+Haar mass at most one therefore give
+
+    N_S<=exp(-q u m+2 R_J) H(kappa u)^(|C_A|).         (RC7)
+
+For a lower bound on D_A restrict each integrated free link to the
+Lie algebra ball of radius u^(-1/2). It lies in the epsilon box if
+u>=3^(1/(2 delta_exp)). For u>=4 its Haar mass is at least
+gamma_2 u^(-3/2), gamma_2=8/(3 pi^3). This follows directly from
+(2/pi) int_0^(u^-1/2) sin^2 r dr and sin r>=2r/pi. Every fine link
+in this restricted integral, including the exterior readers, has
+operator distance from I at most epsilon. Telescoping products gives
+
+    f_p<=8 epsilon^2,
+    psi_(M_c)(V_c)<=1-h_(M_c)(V_c)
+                        <=(ell+1)^2 epsilon^2/2.
+
+The second estimate averages the squared SU(2) distances from each
+contour product to V_c. The first has four fine links. Using the
+lower kernel bound in RC4, with all source signs retained, proves
+
+    D_A>=(gamma_2 u^(-3/2))^(n_A)
+       exp[-8u epsilon^2 |P_A|
+             -(kappa u/2)(ell+1)^2 epsilon^2 |C_A|-2R_J].
+
+Combining this with RC5--RC7 and 1+kappa u<=(1+kappa)u gives
+
+    z_S<=exp[-q u m+|A| D(u)],                       (RC8)
+    D(u)=D_1 u^(2 delta_exp)+D_2 log u+D_3,
+    D_1=192 L^4+4 kappa(ell+1)^2,
+    D_2=6 L^4+12,
+    D_3=-4 L^4 log gamma_2+8 log(c_0^-1)
+                             +12 log(1+kappa)+4R_J.
+
+All constants are positive and independent of the surrounding volume.
+This comparison uses a local denominator, not a lower bound on the
+whole lattice partition function. A sufficient scalar threshold is
+
+    u_scalar=max{4, 3^(1/(2 delta_exp)),
+       (8/s_0)^(1/(1-2 delta_exp)),
+       (54 D_1/q)^(1/(1-2 delta_exp)),
+       (108 D_2/(exp(1) q))^2, 54 D_3/q}.             (RC9)
+
+For u>=u_scalar, the three terms in 9D(u) are each at most qu/6;
+use log u<=2 sqrt(u)/exp(1) for the middle term. Consequently
+
+    z_S<=exp(-q u m/2).                              (RC10)
+
+The (8/s_0) term also makes the good box and E_S disjoint: on the
+open box every witness has f_p<8 epsilon^2<=s_0. The scalar proof
+itself only needs the distinct witness energies and the denominator
+lower bound, not an unproved reference factorization.
+
+### 4.16 Six field derivatives, four source labels, and the rooted sum — PROVEN
+
+Keep all of section 4.15's restrictions and its fixed allocations.
+Field weights are sqrt(2/u) on exterior fine links and at most
+R sqrt(2/u) on outputs, R>=1. For an ordered word I write r(I) for
+its number of field derivatives, and s(I) for its number of distinct
+source labels. Consider r<=6, s<=4. Define the Stirling numbers
+S(n,k) and the explicit positive constants
+
+    c_k=sum_(l=1)^k S(k,l)(l-1)!,
+    Lambda=sqrt(2)(ell+R),
+    K_r=Lambda^r [kappa+sum_(k=1)^r S(r,k)c_k kappa^k],
+    B=1+2R_J+sum_(r=1)^6
+                  [(24L^4+R_J)(4sqrt(2))^r+8K_r].     (RC11)
+
+For any nonempty word within these limits, the logarithm of the
+positive integrand, before the fixed indicator, obeys
+
+    |D_I log w| <= B |A| u^(r(I)/2).                 (RC12)
+
+This holds for both w_A and exp(u sum xi_p f_p) w_A. To prove it,
+the weighted r-th derivative of a Wilson trace has bound
+(4sqrt(2))^r u^(-r/2). Multiplication by its remaining action
+coefficient, at most u, is bounded by the corresponding term in
+RC12 for r>=1. Source terms in log w are linear in J: at most one
+source derivative survives, with bound 2r_i for r=0, or
+r_i(4sqrt(2))^r u^(-r/2) for r>=1. With no source derivative,
+|J_i|<=r_i gives the same bound.
+
+For a kernel, an r-th weighted derivative of h is at most
+Lambda^r u^(-r/2). Derivatives of log Z are sums over partitions
+of the ordered derivative labels. A partition into k blocks produces
+the k-th joint cumulant of derivatives of t h. If |Y_i|<=a_i,
+the defining cumulant formula bounds its absolute value by
+c_k product_i a_i. There are S(r,k) such partitions. Thus the
+kernel's r-th log derivative is bounded by K_r u^(r/2), since
+u^(k-r/2)<=u^(r/2) for 1<=k<=r. Output derivatives of log Z
+are zero. This argument differentiates the integral of exp(t h)
+directly and never differentiates |m| at zero. It therefore includes
+all zero-mean core fields. Counting factors with RC5 proves RC12.
+All differentiated integration measures and domains are fixed; no
+derivative of an indicator has been estimated by a smooth score.
+
+For completeness the quotient constants are specified, not hidden in
+a word-counting symbol. Set M_0=I_0=Q_0=1, and for 1<=n<=10 put
+
+    M_n(B)=sum_(k=1)^n S(n,k) B^k,
+    I_n(B)=sum_(l=1)^n binom(n,l) M_l(B) I_(n-l)(B),
+    Q_n(B)=sum_(l=0)^n binom(n,l) M_l(B) I_(n-l)(B).
+
+The partition formula for derivatives of exp(log w), followed by
+integration of the absolute bound, gives
+
+    |D_I N_S|<=N_S u^(r/2) M_(r+s)(B|A|),
+    |D_I D_A|<=D_A u^(r/2) M_(r+s)(B|A|).
+
+When N_S=0 its fixed event has Haar measure zero and all these
+derivatives are zero; no log N_S is taken. Differentiating
+D_A D_A^-1=1 gives the recurrence for I_n, and the ordered Leibniz
+rule gives Q_n for N_S/D_A. These polynomials have nonnegative
+coefficients and degree at most n. As |A|>=1, replacing B by
+B|A| costs at most |A|^n. Therefore, with the field factorials and
+all sixteen source subsets included,
+
+    T_(6;[4]) z_S <= C_jet u^3 |A|^10 z_S,
+    C_jet=sum_(r=0)^6 (2^r/r!)
+                         sum_(s=0)^4 binom(4,s) Q_(r+s)(B).     (RC13)
+
+Here sum_(a+b=r) 1/(a!b!)=2^r/r! accounts for fine/output words.
+The inequality holds for every allowed order of the differentiated
+directions; it does not assume that Lie derivatives commute.
+
+Let J_0=log C_jet+10 log 18. Since m<=2^(m-1) for integer m>=1,
+RC10 and RC13 imply
+
+    T_(6;[4]) z_S<=exp(-q u m/4)                      (RC14)
+
+provided, in addition to RC9,
+
+    u>=max{(48/(exp(1) q))^2, 8J_0/q}.              (RC15)
+
+Indeed 3 log u+J_0<=qu/4, and the entire factor
+C_jet u^3(9m)^10 is then at most exp(qum/4).
+
+Retain the complete geometric support
+
+    H(S)=N_(infinity,1)(A),
+    |H(S)|<=81|A|<=729m,
+    H(S) subset N_(infinity,2)(S).                    (RC16)
+
+It includes every incident plaquette reader, kernel endpoint, mean,
+normalizer, original source address and the fixed core selector. It
+is connected. Original fine addresses remain attached to these blocks.
+If v is in H(S), some point of S is within maximum-norm distance two
+of v, giving at most 5^4=625 root choices. On the degree-eight block
+graph, a connected m-set through a specified root has a canonical
+spanning-tree depth-first traversal of length 2(m-1). Encoding its
+successive neighbor directions bounds their number by 8^(2(m-1)).
+The bound is valid also on the finite periodic graph; identifications
+only decrease the available encodings. For any fixed sigma>=0,
+provided 64 exp(729sigma-qu/4)<1,
+
+    sup_v sum_(S connected:v in H(S)) exp(sigma |H(S)|)
+                      sup_good T_(6;[4]) z_S
+       <=625 exp(729sigma-qu/4)
+                     /[1-64 exp(729sigma-qu/4)].       (RC17)
+
+This is at most 1/4 if, in addition to RC9 and RC15,
+
+    u >= (4/q)[729sigma+log 2564].                    (RC18)
+
+Thus RC9, RC15 and RC18 define a finite explicit u_core after all
+other parameters have been fixed. This is a volume-uniform rooted
+jet estimate for the explicitly defined ratio family. It is not
+yet H3 for the actual RG activities. To place the good boxes within
+the covariance cap of section 4.11 also requires epsilon(u)<=a_cap
+and epsilon(u)<=b_cap. That further condition is feasible for fixed
+positive caps but does not follow from the numerical threshold
+reported for RC18 and does not price the complement of these boxes.
+
+### 4.17 Hostile composition and threshold tests of the newest bound
+
+**PROVEN limited composition identity.** Take a finite collection of
+cores with disjoint integrated link sets such that no original
+Wilson, source or kernel factor reads two cores. Use their fixed
+witness events and identical exterior good domains. For xi=0,
+the full integral of this particular sector divided by the full
+good-box integral is exactly
+
+    [int_(y good) w_ext(y) product_i N_(S_i)(y) dy]
+       /[int_(y good) w_ext(y) product_i D_(A_i)(y) dy]
+       = E_(nu_good,y) product_i z_(S_i)(y).          (RC19)
+
+The same identity holds with the specified numerator regulator
+insertions present, provided their allocations are added first.
+Here nu_good,y is the marginal of the *single full good-box measure*
+with density proportional to w_ext product_i D_(A_i). Fubini
+proves RC19; no independence of exterior fields is used. The scalar
+upper bound by product_i sup z_(S_i) is valid. Replacing the right
+side by product_i E z_(S_i), or by expectations under different
+exterior normalizations, is not justified. Differentiating RC19
+also differentiates its common exterior measure. RC13 does not
+bound the resulting connected covariances or higher cumulants.
+
+**PROVEN failure of the proposed partition identification.** Write
+B_X for the original owned-plaquette bad event. Then
+1_(E_S)=product_(X in S)1_(B_X), with no absence factors.
+Whenever two such events occur, their intersection also occurs:
+E_(S union T)=E_S intersect E_T. The positive witnesses are not a
+disjoint complete history family. For example, the full flux field
+of section 4.12 has every B_X true, and this remains true on an open
+neighborhood for s_0<2. The missing absence factors in a complete
+partition are product_(X not in S)(1-1_(B_X)). Declaring z_S to be
+the RG activities double-counts these sectors and supplies no
+logarithmic connected expansion. Overlapping cores must be merged
+or represented by a proved compatible construction; their full
+normalizers and shared action allocations cannot be multiplied.
+
+**PROVEN failure of the current bound at a shrinking threshold.**
+Test RC8 with s_0(u)=c epsilon(u)^2, with fixed 0<c<=8, while keeping
+the same good-core comparison. Its worst-case |A|<=9m estimate is
+
+    log z_S <= m[(9D_1-theta c)u^(2 delta_exp)
+                                      +9D_2 log u+9D_3].     (RC20)
+
+Since D_1>=192L^4 and theta c<=8, this upper bound is positive and
+grows. RC20 cannot prove a small activity. This is not a claim that
+the actual log z_S is positive. It identifies the precise wasted
+term: the identity-centered lower bound on D_A pays all incident
+good plaquettes and kernels at their worst epsilon-field energy,
+while the one required shrinking witness has comparable scaling and
+a much smaller coefficient. The fixed-s_0 theorem survives; its
+proof does not extend to the full small/large-field boundary.
+
+**GAP, unchanged U1/U2/U4.** No complete partition has been constructed
+from these ratios, and no estimate here controls the connected
+mixed derivatives of RC19 in the actual full posterior. Coordinate
+failures with no strong plaquette witness, rough retained outputs,
+absence-selector derivatives and inherited interactions remain.
+At j>0 the input density is rho_j, not exp(-u_j W): RC7 cannot be
+reused without locating genuinely unspent original plaquette action
+in that same integral. RC17 therefore supplies a restricted bare
+comparison, not normalized induction return or reserve regeneration.
+The hardest inequality remains (A) with its full mixed, supported,
+history-summed extension. No counterexample to that target is claimed.
+
+### 4.18 New route: concentration about the actual convex-cap mean
+
+**PROVEN at the specified bare-cap scope.** This step uses the normalized
+measure on the *single full fixed rectangle* Omega_box of section 4.11.
+It does not use a separate normalization for each rough core. Keep its
+actual soft kernels, Haar Jacobians and four original plaquette sources
+from section 4.15. Denote the resulting measure by nu_(B,J). All fine
+free links are integrated in this rectangle; there is no additional
+fixed fine exterior in this result. The output fields obey
+max_c |B_c|<=epsilon(u)<=b_cap. Take u at least as large as required
+by F11 and
+
+    u>=64R_J/g,   g_s=g/2,
+    J_s=J_T+192R_J,
+    eta_s=(1/2)log[1+g_s/(4J_s)].                     (CC1)
+
+These are finite volume-independent constants fixed before u grows.
+The source potential -sum J_i f_(p_i) has Hessian operator norm at
+most 16R_J: a second directional derivative of a four-link trace is
+at most 16 times the squared maximum link norm, hence also at most
+16 times the squared Euclidean norm. Each source plaquette reads
+at most twelve real coordinates. Its absolute Hessian row sum is
+therefore at most 192r_i, and its block range is at most two.
+Consequently the full potential has Hessian at least u g_s/2 and
+row bound u J_s. The proof of L2 applies with g_s,J_s,eta_s, including
+its rectangular boundary conditions. Adding any real linear tilt
+in the fine coordinates changes none of these Hessian bounds.
+
+**PROVEN mean estimate.** Write bar A_b=E_(nu_(B,J)) A_b for a free
+fine link. At B=0 this vector is zero. Indeed simultaneous conjugation
+by a pi rotation about a colour axis flips the other two components
+of every A_b, preserves the coordinate rectangle, all tree links,
+Haar density, Wilson terms, plaquette sources and kernels at V=I.
+Each component changes sign under one such symmetry.
+
+An unweighted output derivative of log k at c has fine gradient
+norm at most kappa u ell sqrt(24L^4), supported on its endpoint
+blocks Y_c. This follows by differentiating its numerator: its
+normalizer is output-independent. L2 applied to A_(b,a) and this
+score, along B(s)=sB, gives
+
+    |partial_(B_c) E A_(b,a)|
+       <=C_B exp[-eta_s d(b,Y_c)],
+    C_B=4 kappa ell sqrt(24L^4)/g_s.                 (CC2)
+
+The derivative bound is for a unit real direction at c. Summing
+over coarse links costs at most 8S_eta, where
+
+    S_eta=[(1+exp(-eta_s))/(1-exp(-eta_s))]^4,
+    K_B=8 sqrt(3) C_B S_eta,
+    max_b |bar A_b|<=K_B epsilon(u).                  (CC3)
+
+For the counting, exp[-eta_s d(b,Y_c)] is at most the sum of the
+two endpoint exponentials. Each block is an endpoint of eight coarse
+links. The periodic distance sum is at most the corresponding sum
+on Z^4, which is S_eta. Integrate CC2 from the zero mean at B=0;
+the factor sqrt(3) converts the three component bounds to a vector
+bound. This uses a common cap measure throughout, at the same fixed J.
+
+**PROVEN joint fluctuation estimate.** For any finite vector lambda
+on the free real coordinates, apply L2 with distance zero to the
+linear observable lambda dot A under each of its real linear tilts.
+The second derivative of its log moment generating function is
+its variance, bounded by 4|lambda|^2/(u g_s). Integrating that second
+derivative from zero proves
+
+    E exp[lambda dot (A-bar A)]
+                       <=exp[2|lambda|^2/(u g_s)].    (CC4)
+
+For any subset I of free links with d_I=3|I| real coordinates,
+Gaussian integration of this linear bound gives, for 0<=b<g_s/8,
+
+    E exp[b u sum_(b' in I)|A_(b')-bar A_(b')|^2]
+                         <=(1-8b/g_s)^(-d_I/2).       (CC5)
+
+Explicitly, introduce only for this calculation a standard real
+Gaussian G in d_I dimensions and use
+exp[b u |Z|^2]=E_G exp[sqrt(2bu) G dot Z]. Positivity permits Fubini;
+CC4 then leaves E_G exp[(4b/g_s)|G|^2]. Thus CC5 uses no independence
+of the original fine links. At b=g_s/16 its right side is 2^(d_I/2).
+
+**PROVEN shrinking-scale event price within this cap.** Fix d_0>=1 and
+set
+
+    c_w=8(K_B+d_0)^2,   a_w=g_s d_0^2/24,
+    b_w=54 L^4 log 2.                                (CC6)
+
+For a set S of m blocks let E_S(u) require one owned original
+plaquette in each block with f_p>=c_w epsilon(u)^2. This threshold
+has a fixed, possibly very large coefficient. It is not the former
+c<=8 threshold in RC20. Write Z_b=A_b-bar A_b, with Z_b=0 on tree
+links. For each selected witness, telescoping its four link matrices
+gives
+
+    sqrt(f_p)<=2^(-1/2) sum_(b in p)|A_b|,
+    sum_(b in p)|Z_b|>=4d_0 epsilon,
+    sum_(b in p)|Z_b|^2>=4d_0^2 epsilon^2.            (CC7)
+
+The middle inequality uses CC3 and the definition of c_w, and the
+last is Cauchy--Schwarz. Witnesses in different blocks are distinct.
+A fine link belongs to at most six plaquettes, so on E_S(u)
+
+    sum_(b in I(S))|Z_b|^2
+                           >=(2d_0^2/3)m epsilon^2,  (CC8)
+
+where I(S) includes all free links of all plaquettes owned by S.
+They lie in N_1(S), so d_(I(S))<=108L^4 m. This deterministic
+implication holds even though the witness in each block is selected
+by the configuration; no independence or union bound over witness
+choices is inserted. Markov's inequality and CC5 with b=g_s/16 yield
+
+    nu_(B,J)(E_S(u))
+                     <=exp[-(a_w u^(2delta_exp)-b_w)m].       (CC9)
+
+If Z_cap(B,J) is the actual unnormalized integral over Omega_box,
+the corresponding original sector mass satisfies exactly
+
+    int_(Omega_box) 1_(E_S(u)) exp(-S_J) dA
+       <=Z_cap(B,J) exp[-(a_w u^(2delta_exp)-b_w)m].    (CC10)
+
+Here S_J includes the Haar Jacobian in coordinates and every original
+incident factor; Z_cap has not been discarded or priced as a rare
+event. Within this common cap measure, CC9 controls arbitrary joint
+witness sets with constants independent of volume. For fixed parameters
+its exponent becomes negative as u grows. No numerical lower estimate
+of g or numerical value of the resulting threshold is asserted.
+
+**PROVEN first spatial response for smooth auxiliary insertions.**
+Fix a smooth scalar cutoff chi with 0<=chi<=1, chi(s)=0 for s<=1,
+chi(s)=1 for s>=2, and |chi'|<=2. Use only fixed parameters in
+its scale, and define
+
+    chi_X(A)=1-product_(p owned by X)
+                         [1-chi(f_p/(c_w epsilon^2))],
+    F_S=product_(X in S) chi_X.                       (CC11)
+
+These are auxiliary smooth functions, not the original hard history
+indicators. They are independent of B and J; c_w and epsilon are
+fixed under their derivatives. A directional derivative of an SU(2)
+plaquette trace in one fine link has magnitude at most sqrt(2f_p)
+times the generator norm. This follows by writing its holonomy as
+cos theta I+i sin theta n dot sigma and using |sin theta|<=sqrt(2f_p).
+The differential of the exponential-coordinate link is an average
+of unitary conjugates of the coordinate generator, with no larger
+norm. Hence ||grad f_p||<=sqrt(8f_p), since there are four links.
+On the cutoff transition f_p<=2c_w epsilon^2, so each plaquette
+cutoff has gradient at most 8/(sqrt(c_w) epsilon). There are
+6L^4 owned plaquettes per block. Product differentiation gives
+
+    ||grad F_S|| <= [48L^4 m/(sqrt(c_w) epsilon)] 1_(E_S(u)),
+    ||grad F_S||_(L^2(nu))
+       <=[48L^4 m/(sqrt(c_w) epsilon)]
+                      exp[-(a_w u^(2delta_exp)-b_w)m/2].     (CC12)
+
+Every nonzero derivative term still requires a positive cutoff in
+all other blocks and a transition witness in the differentiated
+block, so the displayed indicator is valid for the whole product.
+The gradient support is contained in A_S=N_1(S).
+
+For an output derivative with weight h_c<=R sqrt(2/u), the same
+local score-gradient estimate as L5 is
+||grad D_c log k||<=R kappa ell sqrt(48L^4 u). Use it and CC12
+in L2 for the actual common cap measure. With
+
+    C_resp=192R kappa ell L^4 sqrt(48L^4)/(g_s sqrt(c_w)),
+
+one obtains the exact scoped response inequality
+
+    |D_c E_(nu_(B,J)) F_S|
+       <=C_resp m u^(-delta_exp)
+          exp[-eta_s d(A_S,Y_c)
+                       -(a_w u^(2delta_exp)-b_w)m/2].        (CC13)
+
+Here the factor u^(-delta_exp) is 1/(sqrt(u) epsilon), not an
+unpaid cutoff derivative. The derivative identity is the actual
+covariance with the cap's own posterior score. No separately
+normalized rough core occurs. This gives a spatially summable first
+output response for these auxiliary insertions, uniformly in volume,
+with their common-cap roughness price. It is a restricted instance
+of the desired response mechanism, not its (6;[4]) history theorem.
+
+**Hostile check — what this new route still fails to prove.** CC9 is
+a probability bound inside one proved convex bare sector. It is not
+a theorem for the whole pinned posterior. The cap complement remains
+unpriced by CC10, and the identity of Z_cap is not an estimate of it.
+The coefficient c_w in the new threshold depends on the covariance
+decay constants; it can be enormous. Replacing a prescribed induction
+threshold by c_w without checking the domain recursion would change
+the problem. Thus CC9 does not repair RC20 at its original threshold.
+
+There is also a different locality defect: as a function of B and J,
+nu_(B,J)(E_S(u)) generally reads the entire cap normalization. Its
+geometric witness support is not its complete functional reader set.
+The centering bar A was used only inside the proof; it has not been
+declared a local selector. The smoothing in CC11 proves CC13 for
+those declared functions. It does not prove that the original hard
+history indicators have these derivatives or that their boundaries
+can be omitted. Nor does the family F_S include the absence factors
+needed for a complete split; chi_X+(1-chi_X)=1 permits an auxiliary
+split but has not supplied its connected activity representation.
+
+**Failed localization attempt, with its precise cost.** Even CC13
+does not by itself give H3. Try truncating the variable outputs to
+successive balls of radius r about S and telescoping their effects.
+The first-response estimate controls a shell by a polynomial in r
+times exp(-eta_s r), with the common roughness factor. Even granting
+this construction a complete support no larger than that ball, its
+support volume grows as r^4 in four dimensions. The attempted H3
+majorant then contains terms of order
+
+    polynomial(r) exp[mu c r^4-eta_s r],  c>0, mu>0,          (CC14)
+
+which are not summable uniformly in volume. This is a failure of
+that majorant, not proof that the true function lacks a better
+connected decomposition. Spatial response decay alone cannot be
+reported as an exponential-in-support-size polymer estimate.
+
+**GAP.** A representation with connected supports and mixed jets,
+hard-history boundary control, cap-complement control, inherited-action
+stability and regeneration remain. Differentiating the full sector
+mass in CC10 also differentiates Z_cap; CC13 bounds only the
+normalized cap insertion. L4's finite-range vector-component indices
+also do not give functional locality of its scalar resolvent B^-1:
+that diffusion still acts on the entire fine configuration. Index
+paths cannot be relabeled as local activities without further proof.
+The new result replaces the failed
+identity-centered price for a restricted class of cap fluctuations
+and proves its first spatial response. It closes none of U1--U4.
+
+### 4.19 Verification, attribution, and claim boundary
 
 The check script [checks/push_a_kernel_moments.py](checks/push_a_kernel_moments.py)
 performs separate direct Haar quadratures and scaled Bessel evaluations,
@@ -1144,13 +1801,48 @@ of replacing the contour average by R2--R3 in the evaluated action;
 the script generates every paired path. The algebraic proof, not three
 sampled couplings, establishes the displayed parameter range.
 
+The new [core-comparison script](checks/push_a_core_return.py) and its
+[complete log](checks/push_a_core_return.log) check RC2 using 100 direct
+six-plaquette evaluations (maximum absolute error 8.89e-16), then RC3
+at u=1,10,100,1000. Its separate Haar quadratures check RC4 against
+the scaled-Bessel integral at nine values from s=0 through 100000.
+It enumerates actual paired-contour readers and gauge-tree free links
+for three connected core shapes at L=3, checking the owned-witness
+containment, incident-factor counts and full support hulls in RC5/RC16.
+Those are finite checks of the formulas; the geometric arguments above
+establish the stated volume-independent bounds.
+The same support checks verify the sixfold plaquette incidence used
+in CC8. For CC12 the script separately evaluates 100 actual plaquette
+gradients with 2-by-2 matrix exponentials and their Frechet derivatives.
+The maximum squared-gradient ratio to 8f was 0.999999445; the maximum
+directional finite-difference discrepancy was 4.91e-11. This checks the
+local cutoff derivative calculation, not a nonlinear cap integral,
+the value of g, CC9's probability theorem, or the connected mixed jets.
+
+For L=3, kappa=R=1, delta_exp=1/8, theta=1/2, s_0=1/4, four source
+weights 1/16 and sigma=3, the script evaluates the sufficient
+RC9/RC15/RC18 threshold as approximately 2.5055162e10 and checks its
+three arithmetic inequalities at that value and at two larger values.
+This large number is only a core-comparison threshold: the covariance
+cap sizes, inherited density, complete history representation and H5
+are not certified by it. The hostile c=8 shrinking-threshold test has
+9D_1-theta c=145148>0, recording the lost sign rather than reporting
+smallness. This sequential run used one BLAS thread and peak RSS
+84,934,656 bytes under the checked 1 GB ceiling. No new independent
+reviewer, RG simulation, or proof of the missing history sum is claimed.
+
 The small/large-field organization is credited to Tadeusz Balaban and
 Jonathan Dimock. The relevant repository comparisons are REFMATCH RM1/RM2/
 RM25, ROUGH Q12--Q25, RENEW's forward flux example, CHARGE's original-weight
 accounting, HOLEPAY HP12--HP14h, LOCOP's full tensor extraction, and INDUCT's
 regeneration clauses. Original-scale chessboard estimates were already
 present in PROOF E8.1; the argument above is a scoped reuse and extension
-to the needed energy event. The primary source
+to the needed energy event. MATCHB MB4--MB10 already contains the local
+conditional cancellation and differentiated quotient algebra. Sections
+4.14--4.16 evaluate a specific same-exterior price and its derivative
+constants rather than claim that algebra as new. CHARGE's distinction
+between original mass and a normalized rough law is preserved in RC6
+and RC19. The primary source
 [Biskup, Reflection positivity and phase transitions, Theorem 5.8](https://arxiv.org/pdf/math-ph/0610025)
 was consulted to check the arbitrary-even-torus chessboard mechanism.
 The covariance argument is a finite-dimensional weighted

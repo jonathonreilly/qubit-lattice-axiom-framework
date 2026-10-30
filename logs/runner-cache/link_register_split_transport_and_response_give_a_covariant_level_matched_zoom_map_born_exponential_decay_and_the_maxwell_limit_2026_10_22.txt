@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/link_register_split_transport_and_response_give_a_covariant_level_matched_zoom_map_born_exponential_decay_and_the_maxwell_limit_2026_10_22.py
+runner_sha256: 06d4e6a7450bedfb7ec7b8b5afdbb37433d6b219cbb23a094b0f6e5f96508cc2
+input_fingerprint_sha256: 0fdb07dd14394959fc7c56451910177b465376633e8f0348755a6e268c9116ea
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.90
+status: ok
+----- stdout -----
+== A. split: children's link registers
+[PASS] [T] A1 a block's eight child Gauss laws sum to the parent's exactly when each parent bond's electric value is the total of the 4 child bonds crossing its face and the block charge is the children's total (R D_c = D_p S, integer identity; 12 internal bonds per block are unconstrained by it) | 3^3 -> 6^3 torus, max |R D_c - D_p S| = 0.0, child bonds per face [np.int32(4)]
+[PASS] [T] A2 Z_3 registers: plaquette loops + 2 windings parametrise every Gauss-law configuration once; the Kogut-Susskind plaquette/electric Hamiltonian is Hermitian on it | parent 2x1 dim 27, children 4x2 dim 19683
+[PASS] [T] A3 the passing 'face totals = parent values, everything else as in the children's vacuum of the same flux sector' is an isometry into the children's Gauss-law space (disjoint face totals; face totals carry the winding; the global vacuum alone has no weight off the zero-flux sector) | min weight 3.279e-01, ||P^T P - 1|| 5.0e-15
+[PASS] [T] A4 the nearest isometry carrying the vacuum onto the children's vacuum is V* = |Om_c><Om_p| + polar(Q_c P Q_p); it heats the vacuum by 0, the bare passing does not | vacuum heat: passing 0.9971, V* -8.3e-14; 20/20 perturbed constrained isometries farther: 20
+[PASS] [T] A5 V* is gauge covariant by construction (all states Gauss-law), conserves the electric winding sectors and commutes with translations (parent shift 1 <-> children shift 2): the polar part of a covariant map is covariant | cross-sector weight 1.2e-16, ||T_c V* - V* T_p|| 1.4e-16
+[PASS] [D] A6 vacuum-only carrying is not enough: V* sends the parent's excited levels mostly outside the children's 6 lowest levels per (flux, momentum) sector, i.e. it heats; the level-matched polar map (vacuum to vacuum, each sector's levels onto the children's lowest levels of that sector) exists, is covariant and leaves nothing above the matched window | weight outside low window: V* 0.48, matched -6e-15; mean |excess| passing 3.32, V* 3.36; matched-map translation residual 0.0e+00
+   parent gap 0.227, children gap 0.002 (physical units, g_p^2=1.5)
+== B. CL-2 cost: emitter + link-register chain
+[PASS] [T] B1 block half-ticks: in every two-configuration block a cost that charges any change makes the plan unique (move exactly the shortfall); with P_e falling at every half-tick the actual configuration's survival in the excited level equals the Born P_e(t) exactly | max |S - P_e| 1.0e-14 over 3111 ticks, t_max = 7.0/Gamma
+[PASS] [E] B2 the actual configuration's waiting times are exponential at the Wigner-Weisskopf rate Gamma = 2 g^2/J (end-coupled link chain at band centre); sampled trajectories keep Born odds | fitted rate/Gamma_WW 1.0112; 20000 sampled leave times: max |S_emp - e^-Gt| 0.004; end-time TV(actual, |psi|^2) on 20-link bins 0.005. Measured: hydrogen 2p exponential, tau 1.60 ns
+   photon jumps per tick on the chain: fewest changes incl. electric values 0.0851, occupation-only cost + greatest entropy 0.850
+[PASS] [D] B3 with occupation-only cost every move of a link quantum along the chain is free, so greatest entropy flips the actual electric values at O(1) per tick even in a stationary register state; counting electric-value changes restores the forced (current-sized) motion | Floquet eigenstate of a 24-link chain: actual jumps/tick minimal 0.000, entropic 0.850
+== C. continuum: Maxwell limit for registers
+[PASS] [T] C1 on the centre-bond lattice the plaquette phase's quadratic part curl^T curl has, at each k, eigenvalue 0 on the gauge (gradient) mode and lambda_k = sum 4 sin^2(k_i/2) on exactly two modes: two photon polarisations, curl grad = 0 | 4^3 torus, 192 links, max eigenvalue deviation 1.8e-14
+[PASS] [T] C2 the half-tick pair (electric plaquettes along the normal, then magnetic plaquettes) is a symplectic map; each register photon has cos(Omega) = 1 - eps^2 c_E c_B lambda_k/2, so Omega/eps -> sqrt(c_E c_B)|k|: the free photon, speed sqrt(c_E c_B), lattice corrections O(eps^2 k^2, k^2) | max quasi-energy deviation 1.5e-08 (Heisenberg map of the quadratic register is exact)
+[PASS] [T/D] C3 Gauss's law with static charges +-1 fixes the longitudinal electric values (E = -grad phi, lap phi = -q): the register energy shifts by exactly -c_E G(R), and 4 pi R G(R) -> 1 isotropically: Coulomb with alpha = c_E/(4 pi) at the dressed-coupling unit | 4 pi dG/d(1/R) over R..2R: axis R=6,8,10 1.013, 1.004, 0.996; diagonal R=3,4 sqrt3 0.989, 0.995 (64^3 torus)
+[PASS] [T] C4 vacuum standard for registers: an eigenstate's local energy is the same at every electric configuration, so the vacuum's zero-point (w/2 per mode, any edges) subtracts to 0 at every actual configuration, and a one-photon register sources exactly hbar w; omega_k(edges) is homogeneous of degree -1, so the edge response is traceless with T^ij = w n^i n^j (null dust) | one photon departure/w - 1 2.0e-12; sum_i dw/dln a_i + w -2.7e-12; max |T^ii/w - n_i^2| 6.1e-05
+[PASS] [E] C5 without the vacuum standard the register zero-point would source ~ (1/2)<w_k>/cell ~ 1 Planck density per cell against the measured rho_Lambda ~ 1e-123 Planck: the subtraction is required, and it removes the zero-point's edge derivative too (CL-3 must count the plaquette phase from the links' vacuum on the same edges) | <w_k>/2 on 4^3 = 1.21 per link-cell in lattice units
+elapsed_seconds 1.6
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

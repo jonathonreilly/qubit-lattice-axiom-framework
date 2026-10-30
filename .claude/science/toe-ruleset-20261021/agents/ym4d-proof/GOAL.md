@@ -38,14 +38,34 @@ fixed-family log keeps D_R^J/D_R^0. RT27's correlated outside law, hard retained
 selectors, global factorization and inherited regulated histories remain open.
 The two research signals are bounded advances, not audit or retained statuses.
 
-Push A's separate cycle-3 review is bound to c7ff8a85. Cycles 4-6 are not covered;
-cycle 6 is preserved at dcfa672824 and its full-return obligations remain open.
+Push A's separate cycle-3 review is bound to c7ff8a85. Cycles 4-8 are not covered;
+cycle 8 is preserved at cf69f71f5d and its full-return obligations remain open.
 The frozen cycle-3 record's empty CLI vocabulary scan has a separate direct-file
 coverage correction; no old report, receipt or mathematical source was rewritten.
 
-Next: continue the sustained global-return and charged-coefficient attempts,
-with independent review of new consumer-facing arguments. Their first substantive
-checkpoints and budget checkpoints are recorded in checks/ym_lab_launches_20261030.json.
+Recovery checkpoint b1979a0173 preserves the frozen 625-line charged-sign proposal,
+its author packet, and the unfinished 860-line global-return construction. Neither has full independent acceptance. The charged proposal claims an individual bare sign on an
+explicit small-penalty interval; the global construction reaches current-history
+and original-cut sectors but does not close inherited histories or the full
+multiscale return. Its older route file is an asynchronous snapshot. On resumption,
+the old author handles were absent from the live agent inventory; their files
+were recovered, not reported as still-running workers.
+
+Resource decision after the user's usage warning: launch no additional workers.
+The already-started different fresh Astra/max charged-sign check is now complete
+at bounded coverage: its independent Landau-spectrum derivation reproduces the
+leading coefficient, determinant multiplicities and conditional sign algebra.
+It leaves the full transitive lattice gap/locality chain and every explicit error
+majorant unverified. It issues no whole-unit acceptance or research-gate advance.
+See [the bounded report](gates/charged-sign-b1979a0173.md) for exact coverage.
+No worker from this checkpoint remains active. This check uses procedure
+53f2c0af7eb59438389b4c2fe75952932d4e95fe; the authors' c93 procedure and prior
+receipts remain historical and unchanged. The full sign theorem is still open
+for independent acceptance, and all six critical obligations remain open.
+
+The next substantial construction must address the actual inherited-law return
+and reserve regeneration, or discharge a named consumer obligation at that scope.
+More bounded bare lemmas are not, by themselves, progress on that induction.
 A conditional lemma is a checkpoint, not a completed global return. Do not turn
 an outside-law estimate or an individual-sign inequality into a new assumption.
 

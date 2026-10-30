@@ -1,0 +1,64 @@
+{
+  "created_utc": "2026-10-30T17:59:44.812557+00:00",
+  "scope": "bounded independent checkpoint, not whole-unit acceptance",
+  "head": "b1979a0173c400628b4328d1274fa3fb78ced8c9",
+  "source_unchanged": true,
+  "requested_model": "gpt-6-astra",
+  "requested_effort": "max",
+  "backend_attestation": null,
+  "author_procedure_pin": "c93fcb388b60ad7974433b2aa1cb1d366aec52ff",
+  "review_procedure_pin": "53f2c0af7eb59438389b4c2fe75952932d4e95fe",
+  "author_identity_checks": {
+    "source": {
+      "expected": "2ab72d652afbae58cbcd071de2a372d98d5a2826281d43c06ec563e701181170",
+      "actual": "2ab72d652afbae58cbcd071de2a372d98d5a2826281d43c06ec563e701181170",
+      "matches": true
+    },
+    "route": {
+      "expected": "0b539601fa2e91c0c1d59dd781edeea2556a549358501a208186b6f43094efc5",
+      "actual": "0b539601fa2e91c0c1d59dd781edeea2556a549358501a208186b6f43094efc5",
+      "matches": true
+    },
+    "read_manifest": {
+      "expected": "6b51288892d90c0f40bf33d5c1292e85e5612e85eb9618c9c9686e598717652c",
+      "actual": "6b51288892d90c0f40bf33d5c1292e85e5612e85eb9618c9c9686e598717652c",
+      "matches": true
+    }
+  },
+  "post_freeze_reads": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_determinant_sign_receipt.json",
+      "sha256": "3d837292b644b5488b6b95271f11bf095e55b44a4709a07f6c2970eab8f722ac",
+      "read": "whole file, only after source-only freeze"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_determinant_sign_read_manifest.json",
+      "sha256": "6b51288892d90c0f40bf33d5c1292e85e5612e85eb9618c9c9686e598717652c",
+      "read": "whole file, only after source-only freeze"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/effective-flow--charged-coefficient.md",
+      "sha256": "0b539601fa2e91c0c1d59dd781edeea2556a549358501a208186b6f43094efc5",
+      "read": "whole file, only after source-only freeze"
+    }
+  ],
+  "evidence": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/gates/charged-sign-b1979a0173.md",
+      "sha256": "0162c67c6a4cf6c3419270c2c2b622e06f00d0ed5f19505cc051ea28fd8562f8"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_charged_sign_b1979a0173_source_only.md",
+      "sha256": "496f1d4b995e860c4402790e8fb9b3f5aec96e3119ef836d86b1e67d42ded4e9"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_charged_sign_b1979a0173_read_manifest.json",
+      "sha256": "5ad9b2e8081b78a58531381c009728f26b4b6da1a7f73300bfd4636f0c89f0a2"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_charged_sign_b1979a0173_vocab_lint.json",
+      "sha256": "eb8836cd24cb503b211e30f855805a540eb34f9f0b8006443a25d49eb1c1f53b"
+    }
+  ],
+  "lint_violation_count": 0
+}

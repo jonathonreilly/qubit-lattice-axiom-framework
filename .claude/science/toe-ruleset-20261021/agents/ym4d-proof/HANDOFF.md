@@ -326,26 +326,68 @@ root-tree Gram. No source repair was required. Both complementary integrals,
 inherited sources/histories, spatial-symmetry and marginal identifications,
 and an iterated finite-u coupling map remain separate obligations.
 
-The [graded-complement construction](GRADED_COMPLEMENT_ASTRA.md) is frozen as an
-author packet and is undergoing a different fresh independent Astra/max review.
-It claims full-reader hard witnesses, actual original-cut conditional chart
-probabilities with KKT/boundary-cap costs paid, and a marked-support expectation
-bound with explicit `O(log^5 u)` entropy and cutoff exponent `alpha>5/2`.
-The original G stays unchanged; placing all of it inside the new chart needs
-an additional fixed-threshold margin. This is not a connected analytic
-activity expansion or selected-sector normalization. Its outside-chart part,
-complex nonvanishing and full history/hole interfaces remain OPEN.
-New author work targets those outside-chart regions. A separate author is
-aligning the reconstruction consumers with the reviewed library's exact
-growth, tensor-domain and translation-count requirements.
+The [graded-complement construction](GRADED_COMPLEMENT_ASTRA.md) now has a
+[fresh independent scoped LAND review](REVIEW_GRADED_COMPLEMENT_ASTRA.md).
+It proves full-reader hard witnesses and actual original-cut conditional
+chart probabilities, with KKT, boundary-cap and buffer costs paid. The
+marked-support expectation bound pays `O(log^5 u)` entropy for
+`p=log(2+u)^alpha`, `alpha>5/2`. A separate affected confirmation resolves
+the packing distance as periodic coarse sup-distance. Original G remains
+unchanged; placing all of it inside the chart requires the stated additional
+fixed-threshold margin. The separate real-domain comparisons below address
+part of its outside-chart/reference interface. Analytic activities, complex
+nonvanishing and complete histories remain OPEN.
 
-Concurrent progress through `a0a3499e84` is recovered. The actual returned-
-denominator construction [RD](RD.md) has a fresh [HOLD review](REVIEW_RD.md):
-the effective-history identity, common complex normalization/source domain,
-interacting exterior integration and full-reader hole costs remain missing.
-A hard indicator has `||Theta-1||_infinity=1`; a small integrated tail does not
-supply the small sup-norm defect required by RD's present mixed lemma.
-The older author-side partial-note disposition does not close this hold.
+The reconstruction consumers [OSLEAF55](OSLEAF55.md) and
+[ASSEMBLY55](ASSEMBLY55.md) have a
+[fresh scoped review](REVIEW_REC_CONSUMER_ALIGNMENT_ASTRA.md) of their E0-prime,
+translation-count, finite Cartesian tensor and growth contracts. The reviewer
+found an inherited false implication from higher conditional cumulants to
+moments. Its [HOLD and counterexample](checks/review_rec_consumer_alignment_findings_v1.md)
+are preserved. The [separate correction](checks/rec_consumer_alignment_singleton_correction.json)
+requires uniform singleton-inclusive conditional bounds and proves the
+partition/averaging implication; the affected review confirms that repair.
+This supplies no actual Yang–Mills hierarchy, uniform growth or physical gap.
+The geometric RP mathematics and historical evidence remain unchanged.
+
+The [outside-chart construction](OUTSIDE_CHART_RETURN_ASTRA.md) now has a
+[fresh independent scoped LAND review](REVIEW_OUTSIDE_CHART_RETURN_ASTRA.md).
+It proves arbitrary-set prices under the actual original law with full
+readers, and real chart/pattern reference comparisons. On an explicitly
+tighter shrinking-curvature window it bounds the actual real selected-sector
+ratio by `0<=log(Z_cut/Z_sec)<=4b T^4`, retaining volume dependence.
+These integrated ratios are globally dependent; complex normalization,
+local analytic activities and integration over excluded coarse fields remain OPEN.
+
+The [probability-sensitive chart regulator](PROBABILITY_SENSITIVE_RETURN_ASTRA.md)
+has a [fresh independent scoped LAND review](REVIEW_PROBABILITY_SENSITIVE_RETURN_ASTRA.md)
+for its exact chart identity, quadratic regulator, forest covariance and first
+boundary identities. The full determinant, force cost and unsummed surface
+terms remain explicit. Its requested connected return estimates PS19/PS20
+are OPEN. PS14 is a covariance-pair derivative; a forest-parameter derivative
+must pay the full chain rule. The [B41 candidate](LITERATURE_BRIDGES.md#b41)
+remains background only.
+
+New author work targets positive covariance decompositions with complete
+original-data readers. Its purpose is to repair the unresolved positivity/
+locality interface; no new result from that active work is adopted yet.
+
+Concurrent progress through `cc1de55f5b` is recovered. [RD pass 2](RD.md)
+has an independent [HOLD review](REVIEW_RD_R2.md): its explicit finite H12
+history partition and exact connected identity resolve B1 at that scope.
+The new hard-cut L1 lemma repairs the abstract defect interface under a
+matching product reference. Actual uniform joint-event/reference bounds,
+the common complex domain, integrated comparison, full-reader hole costs,
+legacy-history matching and effective-level induction remain OPEN.
+The identity is not yet the Gaussian consumer's full representation.
+
+The concurrent [F17 construction](F17.md) and [scoped review](REVIEW_F17.md)
+give conditional two-scale sufficient bounds, critical-tail summation and
+an obstruction to a specified fixed counting estimate. The actual observable
+bounds remain UNDECIDED; H_int and the physical gap stay OPEN. The word
+“minimal” is only relative to its chosen regular-sector envelope, not a
+necessity theorem for the actual model. Neither concurrent reviewer has an
+independently established Astra/max configuration here.
 
 The second reviews of [HRP](REVIEW2_HRP.md), [LGF](REVIEW2_LGF.md),
 [LIB1](REVIEW2_LIB1.md), [REC](REVIEW2_REC.md),
@@ -363,10 +405,9 @@ and [HRP](HRP.md) now specify one geometric half-arc. A fresh
 rebuilding the counterexample, paired Haar square, both fixed slices and
 actual clover support. All 61 historical HRP/ol55 evidence and review files
 remain unchanged. No continuum convergence hypothesis was supplied by this
-correction. The reconstruction consumers' E0-prime, tensor-domain and
-translation-count qualifications identified in REVIEW2_REC still need their
-separate source followthrough. Full existence and the physical continuum mass
-gap remain OPEN.
+correction. The reconstruction consumer followthrough is now separately
+reviewed above, including the preserved singleton counterexample and its
+affected repair. Full existence and the physical continuum mass gap remain OPEN.
 
 Current assignments use the requested `gpt-6-astra / max` configuration:
 
@@ -378,13 +419,20 @@ Current assignments use the requested `gpt-6-astra / max` configuration:
   price retains the full exterior/reference cost and restricted SA interfaces.
 - **Interacting selected-core remainder — scoped review completed:** IC1–IC32
   has independent LAND at the one-step source-free selected-sector scope.
-- **Graded complement — fresh review active:** the frozen author packet claims
-  complete reader witnesses and original-cut conditional chart probabilities,
-  with boundary, buffer, cap and entropy costs paid.
-- **Outside-chart contribution — active author:** construct an actual connected
-  price retaining the full compact field, exterior and reference costs.
-- **Reconstruction consumers — active author:** align their growth, translation
-  and tensor contracts with the reviewed abstract producer; new review follows.
+- **Graded complement — scoped review completed:** the complete reader witnesses
+  and original-cut conditional chart probabilities have independent LAND,
+  including the affected sup-distance clarification.
+- **Outside-chart contribution — scoped review completed:** arbitrary-set
+  actual-law prices and real reference ratios have fresh independent LAND;
+  the complex, complete-history and excluded-coarse-field interfaces remain open.
+- **Probability-sensitive chart regulator — scoped review completed:** exact
+  identities and the regulator have fresh independent LAND. The matching
+  reference, all-order summation and connected activity theorem remain open.
+- **Positive covariance with complete readers — active author:** construct an
+  exact decomposition that preserves positivity during reader-local weakening.
+- **Reconstruction consumers — scoped affected review completed:** the growth,
+  translation and tensor contracts are aligned; the independent singleton
+  finding and its explicit sufficient-assumption repair remain recorded.
 - **Geometric half-arc — scoped affected review completed:** preserve the
   exact source correction and historical evidence; continuum inputs stay open.
 - **Selected source sector, uniform one-loop increment, original-law boundary

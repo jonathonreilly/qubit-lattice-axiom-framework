@@ -48,6 +48,7 @@ The immediate reuse is concrete. B01 covers the successful pointwise gas after i
 | <a id="b38"></a>B38: [Balaban–Feldman–Knörrer–Trubowitz, Part3](https://arxiv.org/abs/1609.01747v1) | Complete PDF pp1–3 and12–15 | Complex stationary contours, covariance square roots and Stokes boundary terms in a bosonic parabolic model. The authors explicitly leave their full nonperturbative-error proof incomplete. | background context | Contour return and complement boundaries | No Yang–Mills hard-cut or normalized-complement estimate is imported. |
 | <a id="b39"></a>B39: [Kim–Adams–Lee](https://arxiv.org/pdf/0710.1930v1) | Complete main text §§1–5, PDF pp1–6, including footnote5 | The finite-part argument uses a quantitative convergence rate; massless infrared finiteness and absence of doublers remain hypotheses. | background context | One-loop logarithm and finite part | Comparison for [UL](UNIFORM_ONE_LOOP_COUPLING_ASTRA.md), which rebuilds its steps and now has a [scoped independent review](REVIEW_UNIFORM_ONE_LOOP_COUPLING_ASTRA.md); no depth-uniform or nonlinear estimate is imported from the paper. |
 | <a id="b40"></a>B40: [Pemantle–Wilson](https://arxiv.org/abs/0903.3585v1) | Theorems 2.3 and 4.1; local Morse/Stokes argument through Lemma 4.3 | Analytic complex-saddle contour method, compared at the read scope. | background context | Finite-u scalar normalizer | [FK](FINITE_COUPLING_KERNEL_ASTRA.md) rebuilds the uniform inequality, full Haar determinant and Gaussian normalization; its [review](REVIEW_FINITE_COUPLING_KERNEL_ASTRA.md) confirms that local construction. No interacting or multilevel theorem is imported. |
+| <a id="b41"></a>B41: [Lohmann](https://arxiv.org/abs/1411.1107v1) | Theorem 1; Remarks 2/10; §2.1.4; Propositions 3–5 (bounded coverage below) | BKAR expansion with weak cutoff derivatives and explicit boundary terms. | background context | Chart-local connected return | Requires analytic/stability bounds and ultralocal one-site ball cutoffs. The original multilink/history cuts and complete reader norm need a new adaptation. Real hard-event probabilities alone do not satisfy the theorem; no return or continuum result is imported. |
 
 The new primary reading and exact coverage are recorded in
 [the coordinator follow-up](checks/full_proof_new_primary_20261029.json).
@@ -66,3 +67,7 @@ neither the actual Yang-Mills hierarchy nor the physical mass gap.
 The coordinator's [return follow-up coverage](checks/full_proof_return_primary_followup.json)
 records the additional bounded Dimock read and the localization/denominator
 interface passed to the graded-complement author. It adds no imported theorem.
+
+The [probability-sensitive expansion coverage](checks/full_proof_probability_expansion_primary.json)
+records B41 and an abstract-only additional lead. Both remain construction
+candidates; neither supplies the unresolved actual return interface.

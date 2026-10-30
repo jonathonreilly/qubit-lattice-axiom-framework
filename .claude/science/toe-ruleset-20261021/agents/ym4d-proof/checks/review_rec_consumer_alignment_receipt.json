@@ -1,0 +1,210 @@
+{
+  "schema": "fresh_independent_reconstruction_consumer_review_freeze_v1",
+  "frozen_utc": "2026-10-30T00:54:26.112120+00:00",
+  "reviewer": "/root/review_reconstruction_consumers",
+  "requested_model": "gpt-6-astra",
+  "requested_reasoning_effort": "max",
+  "runtime_model_effort_attestation": "Unavailable to this context; request is not independently observable delivery evidence.",
+  "independence": "Fresh reviewer context, same-family; distinct from initial author and minimal-correction author. Assignment disclosed named issue families. Actual producer reconstruction and affected findings were frozen before author packaging.",
+  "original_pushed_head": "3bba91875672becadc0ab120204905d9f1f405a8",
+  "author_baseline": "814364fcc7dbcf0ff4146f6766e98890124ac905",
+  "observed_methodology_main": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "preserved_v1_source_packet_and_hold_commit": "ceeaebff2a64fcce52db1dd98ebbc162b04110f2",
+  "observed_shared_head_at_freeze": "ddc0515e563507c74050d9c55201abb6981d4d69",
+  "source_binding": "Exact current content hashes, independently frozen snapshots and diffs. A shared HEAD identity does not imply that commit contains the terminal working-tree sources.",
+  "original_source_hashes": {
+    "OSLEAF55.md": "7f73bedc795e9356f65651a0d39b1fd3e8300fb460846cf84a45f0c5307f0c1c",
+    "ASSEMBLY55.md": "253ea55619c7fd09d278add27b840c989a2a35160eb22a0385ea700f01fac9c7"
+  },
+  "current_sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OSLEAF55.md",
+      "sha256": "c261a0c5eb300052445a05b3041b5ddf6e518445d3eacac36fc4421e60f66b78",
+      "bytes": 109340
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSEMBLY55.md",
+      "sha256": "c15524d7a1c3c04ce9c32567f6f61ec5113ebe24be9eba8de87f97e3109d326d",
+      "bytes": 88645
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REC_LIB.md",
+      "sha256": "47dd75c7ca3c4f9f1af43139292d1fcfa6774b10f8e6ea2babc05ad67a48e29a",
+      "bytes": 75139
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REC_CONT.md",
+      "sha256": "ac7ac0854fb320f183779f67be136063dfb750ee3f13b869acad10a7ac12a278",
+      "bytes": 52198
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HRP.md",
+      "sha256": "d3a53ef3b29d09c774b1a836603ca731eeadb580127d3928dbbcd5dbe343699e",
+      "bytes": 51835
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_TARGET.md",
+      "sha256": "105440c10b9a2fc91b2be366f439053de05fd3d3497596f8f28993b0fe42de7b",
+      "bytes": 7507
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SRCCD55.md",
+      "sha256": "80a347f5d2bc801fc0395b6d61aa5c0661dd098ae4430bcf760b874729761d03",
+      "bytes": 91420
+    }
+  ],
+  "verdict_history": [
+    {
+      "revision": "v1",
+      "osleaf_sha256": "4e778a30fdc9dd7734499c52a141bef753e10c9c77b298eea76a6858a54a96e8",
+      "verdict": "HOLD",
+      "finding": "F-SP-SINGLETON: omitted conditional singleton means and false equivalence",
+      "finding_artifact": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_rec_consumer_alignment_findings_v1.md",
+        "sha256": "d3f8811e2f96d28a022aa41f6bbe2fa0bf3fe11ad090780fe73c519a0dc06a01",
+        "bytes": 6029
+      }
+    },
+    {
+      "revision": "v2",
+      "osleaf_sha256": "c261a0c5eb300052445a05b3041b5ddf6e518445d3eacac36fc4421e60f66b78",
+      "assembly_sha256": "c15524d7a1c3c04ce9c32567f6f61ec5113ebe24be9eba8de87f97e3109d326d",
+      "verdict": "LAND",
+      "scope": "Exact reconstruction-consumer corrections and directly affected SP_lambda alternative only",
+      "finding_disposition": "F-SP-SINGLETON addressed by a sufficient uniform singleton-inclusive premise, printed conditional partition proof and one-way averaging; original finding preserved",
+      "finding_artifact": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_rec_consumer_alignment_findings_v2.md",
+        "sha256": "9b88255b97b61cdd759c3cc51ba60559ebb81371bdd5aa97c0bbf95c4a23506f",
+        "bytes": 3876
+      }
+    }
+  ],
+  "mathematical_methods": [
+    "Full REC_LIB/REC_CONT producer source review before packaging",
+    "Independent continuation, translation, tensor and GROW contract derivation",
+    "Full corrected OSLEAF/ASSEMBLY content and own exact diff review",
+    "Exact analytic conditional-singleton counterexample",
+    "Independent affected v2 conditional-moment partition derivation",
+    "Static old toy evidence inspection without rerun"
+  ],
+  "preservation": {
+    "original_head_existing_evidence_reviews_producers_checked": 3084,
+    "all_unchanged": true,
+    "rp_math_bytes": 2591,
+    "rp_math_sha256": "086bef4ca78481cf27a81c4f70b47254d65e47eb3a8ea8d41e563ea71eea545c",
+    "rp_math_byte_identical": true,
+    "author_v1_packet_restamped": false,
+    "old_findings_or_failed_evidence_removed": false
+  },
+  "validation": {
+    "terminal_verification": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_rec_consumer_alignment_terminal_verification.json",
+      "sha256": "7fac9fb6d0340d97237606cc218b5c40eb231484b0fab087835bd540932de0dd",
+      "bytes": 5549
+    },
+    "source_diff_whitespace_check_exit": 0,
+    "scientific_numerical_runs": 0,
+    "broad_tests_run": false,
+    "reviewer_git_mutations": false,
+    "reviewer_fetches": false,
+    "reviewer_audit_ledger_lock_or_shared_source_edits": false,
+    "metadata_hashes_are_not_mathematical_proofs": true
+  },
+  "limitations": [
+    "No full-PR, whole-theory or audit/retained-grade certification",
+    "Actual uniform Yang–Mills hierarchy, growth, singleton and outer-product estimates remain OPEN",
+    "Full-field physical identification, unique vacuum, nonzero excited sector and positive physical mass threshold remain OPEN",
+    "No independent certification of full EXT/TP, sphere or unrelated UV arguments",
+    "No no-E0-prime or unspecified O(4) representation continuation theorem supplied",
+    "No cross-family model corroboration; delivered backend/effort not independently attested",
+    "Truncation repairs, one failed reference-path read, draft provenance correction and coordinator metadata failures preserved in report/manifest/verification"
+  ],
+  "full_targets": {
+    "four_dimensional_yang_mills_existence": "OPEN",
+    "physical_continuum_mass_gap": "OPEN",
+    "original_user_target_preserved": true
+  },
+  "artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_REC_CONSUMER_ALIGNMENT_ASTRA.md",
+      "sha256": "c95f494986341ffb802621d0639827b10673b382650ee45e3e51697b26a1afbf",
+      "bytes": 16664
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_rec_consumer_alignment_affected_v2.json",
+      "sha256": "66824590868774cc3f71741ac10f31e8601ecac065e8295fbf05eaea69c5afd2",
+      "bytes": 940
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_rec_consumer_alignment_author_packet_check.json",
+      "sha256": "63a0745795db6542d9d75da1634d583699c8c6985666f6d7411cdea5e8625c93",
+      "bytes": 632
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_rec_consumer_alignment_findings_v1.md",
+      "sha256": "d3f8811e2f96d28a022aa41f6bbe2fa0bf3fe11ad090780fe73c519a0dc06a01",
+      "bytes": 6029
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_rec_consumer_alignment_findings_v2.md",
+      "sha256": "9b88255b97b61cdd759c3cc51ba60559ebb81371bdd5aa97c0bbf95c4a23506f",
+      "bytes": 3876
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_rec_consumer_alignment_frozen_v1_ASSEMBLY55.md",
+      "sha256": "c15524d7a1c3c04ce9c32567f6f61ec5113ebe24be9eba8de87f97e3109d326d",
+      "bytes": 88645
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_rec_consumer_alignment_frozen_v1_OSLEAF55.md",
+      "sha256": "4e778a30fdc9dd7734499c52a141bef753e10c9c77b298eea76a6858a54a96e8",
+      "bytes": 108146
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_rec_consumer_alignment_frozen_v2_OSLEAF55.md",
+      "sha256": "c261a0c5eb300052445a05b3041b5ddf6e518445d3eacac36fc4421e60f66b78",
+      "bytes": 109340
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_rec_consumer_alignment_history_v1.json",
+      "sha256": "36ea4d82ca21954f298464122686cddc2b0aa6428f0fee009503bf3c0bebe683",
+      "bytes": 1023419
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_rec_consumer_alignment_independent.diff",
+      "sha256": "911c14e8bfd193d7b183921db91bdb1dea60fdfd3b72d5b2a926d83e1e63ef94",
+      "bytes": 61676
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_rec_consumer_alignment_independent_v1_to_v2.diff",
+      "sha256": "fa6a573b832739cf72421e6d321ce67c71d7faa76ab299dbdaeb862a2bf6cdfb",
+      "bytes": 3220
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_rec_consumer_alignment_initial_findings.md",
+      "sha256": "f0580b516529bab98bc159313c9d2bb02e559ec033bcf269e8dbeedb0ba0c249",
+      "bytes": 6948
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_rec_consumer_alignment_initial_read_manifest.json",
+      "sha256": "322ab56e93a4c255c69c2755c4fc177726b544bc313263579884e3689cef07f9",
+      "bytes": 3913
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_rec_consumer_alignment_read_manifest.json",
+      "sha256": "4b684becd812e063fa22f0a3b70f1ccf44e2321d849048e758669f6a398aaeb0",
+      "bytes": 24704
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_rec_consumer_alignment_terminal_verification.json",
+      "sha256": "7fac9fb6d0340d97237606cc218b5c40eb231484b0fab087835bd540932de0dd",
+      "bytes": 5549
+    }
+  ],
+  "receipt_self_hash": "External: emitted at freeze, deliberately not self-referential."
+}

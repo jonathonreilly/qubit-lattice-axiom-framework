@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "role": "author freeze, not independent scientific review",
+  "source_revision_context": "ddc0515e563507c74050d9c55201abb6981d4d69",
+  "source_sha256": "6ef027d54bd0ca1948444c9b82c673ed0cae2e23cd59b25f0c53498194e9b18b",
+  "source_lines": 544,
+  "records": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROBABILITY_SENSITIVE_RETURN_ASTRA.md",
+      "sha256": "6ef027d54bd0ca1948444c9b82c673ed0cae2e23cd59b25f0c53498194e9b18b",
+      "bytes": 29552
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/probability_sensitive_return_read_manifest.json",
+      "sha256": "7cfda3d8bd2dd1faf0962979de95d253432ae83d3f1cbfd277964e42d3f73c94",
+      "bytes": 12781
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/probability_sensitive_return_identity_check.json",
+      "sha256": "f07e55fafc7b4c4805e85375c802bc06087378cb1b10a2ae3646f4ccbb83b6ea",
+      "bytes": 3328
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/probability_sensitive_return_author_checks.md",
+      "sha256": "8bec9657c3b9d7f56ce7d25441eedc08bf7c94f8a82ec99a9966236b2e1632fe",
+      "bytes": 3917
+    }
+  ],
+  "proved_proposal": [
+    "Exact auxiliary-chart identity retaining force, Haar, compact normalizer and full determinant",
+    "Full-reader Taylor coefficient quadratic regulator",
+    "Positive endpoint Gaussian forest covariance bound",
+    "Unnormalized density and first chart-surface envelope; exact first covariance/boundary identity"
+  ],
+  "not_proved": [
+    "Connected return expansion and local normalized complex activities",
+    "All-order boundary derivative tree estimates",
+    "Full-reader covariance weakening accretivity",
+    "Full original-cut complex coarse-field continuation",
+    "Outside-chart / arbitrary-history / effective-level / hole interfaces",
+    "Full continuum existence and physical continuum mass gap"
+  ],
+  "numerical_experiments": 0,
+  "independent_review_status": "requested from coordinator; pending",
+  "git_mutations_by_this_author": 0,
+  "audit_operations": 0
+}

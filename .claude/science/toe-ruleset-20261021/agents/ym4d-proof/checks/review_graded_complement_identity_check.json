@@ -1,0 +1,1189 @@
+{
+  "created_utc": "2026-10-30T00:26:00.256798+00:00",
+  "result": "PASS: mechanical identities only",
+  "head_observed": "3bba91875672becadc0ab120204905d9f1f405a8",
+  "origin_main_observed": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "original_source_commit": "3bba91875672becadc0ab120204905d9f1f405a8",
+  "original_source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GRADED_COMPLEMENT_ASTRA.md",
+    "bytes": 31357,
+    "sha256": "6201ec6ec1846e205dd1a3d7dd1df1a3bebb9c6bead14874aff40482d2bb0335"
+  },
+  "current_source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GRADED_COMPLEMENT_ASTRA.md",
+    "bytes": 31368,
+    "sha256": "22e30738d5d59adc65c146c7e9fa3bd671462d694a7ae1fe14e73804774e5341"
+  },
+  "correction": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_distance_correction.json",
+    "bytes": 1617,
+    "sha256": "282e0e1bd399ace20932fcccc0bef91f290a1ee809b290d7749fef603ae7722b"
+  },
+  "exact_single_phrase_replacement": true,
+  "initial_independent_findings_unchanged": true,
+  "counts": {
+    "initial independent source unchanged": 11,
+    "original author owned": 7,
+    "author input": 21,
+    "predecessor receipt": 4,
+    "four preserved predecessor packets": 64,
+    "covariant_soft_background_receipt.json": 26,
+    "covariant_source_activity_receipt.json": 12,
+    "FR original non-source artifacts": 11,
+    "FR affected confirmation": 6,
+    "author reused methodology identity": 27
+  },
+  "checks": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GRADED_COMPLEMENT_ASTRA.md",
+      "bytes": 31357,
+      "sha256": "6201ec6ec1846e205dd1a3d7dd1df1a3bebb9c6bead14874aff40482d2bb0335",
+      "category": "initial independent source unchanged"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "bytes": 28993,
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "category": "initial independent source unchanged"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "bytes": 39217,
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "category": "initial independent source unchanged"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "bytes": 32365,
+      "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "category": "initial independent source unchanged"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "bytes": 1497,
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "category": "initial independent source unchanged"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_return/AUTHOR_BRIEF_GRADED_COMPLEMENT.md",
+      "bytes": 4222,
+      "sha256": "fb2fa7e0033b1b51c930336b814f6e60622f0bc5f2827a535e47c0f5db0fcf73",
+      "category": "initial independent source unchanged"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "bytes": 94345,
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "category": "initial independent source unchanged"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "bytes": 48847,
+      "sha256": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+      "category": "initial independent source unchanged"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FIXED_SOURCE_RADIUS_ASTRA.md",
+      "bytes": 35303,
+      "sha256": "6304245bdf27afa6c7f364da9bc41d8971cc0f2058c1e3484edef84df44cff86",
+      "category": "initial independent source unchanged"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD.md",
+      "bytes": 34089,
+      "sha256": "06ad2b5b52bfa66f7784a1fb97936337c59f5164318f89af9a2a065226671e5f",
+      "category": "initial independent source unchanged"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RESIDUAL_DETERMINANT_ASTRA.md",
+      "bytes": 27582,
+      "sha256": "2b5059568c92659717c0c021dd4460899408f7647ca8a3ea4a60b76809400ec8",
+      "category": "initial independent source unchanged"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GRADED_COMPLEMENT_ASTRA.md",
+      "bytes": 31357,
+      "sha256": "6201ec6ec1846e205dd1a3d7dd1df1a3bebb9c6bead14874aff40482d2bb0335",
+      "category": "original author owned"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_freeze.py",
+      "bytes": 17472,
+      "sha256": "80ab52887a13e376ad4c4014efc029dd2dfe163a8df9fa2b068dc2febab7ed6b",
+      "category": "original author owned"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_freeze_attempt01.py",
+      "bytes": 16638,
+      "sha256": "4b4f2604cfe0e5ed0a6133667a3098803eebf14961c17d0a7f71c5d60fb07d4c",
+      "category": "original author owned"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_freeze_attempt01.stderr.txt",
+      "bytes": 783,
+      "sha256": "8e75fcfe04032ec9a1712f1982fafe4ee2c2833820e346dbc1cc1c0aa59c55d6",
+      "category": "original author owned"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_read_manifest.json",
+      "bytes": 44013,
+      "sha256": "ef884312c26834f6c4a43ee90f47b75b2fceaa8e32c6c02a20463a10b3bbb01d",
+      "category": "original author owned"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_process.json",
+      "bytes": 3212,
+      "sha256": "655f9d430dc57c4b6337663c93114280e880301f9991904ca87fcd33da3a49f2",
+      "category": "original author owned"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_verification.json",
+      "bytes": 2287,
+      "sha256": "224cfd3c2749396801945ef13d8751124edbb6d13aba4e7dcdc8c194629c7ab1",
+      "category": "original author owned"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "bytes": 1497,
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "category": "author input"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_return/AUTHOR_BRIEF_GRADED_COMPLEMENT.md",
+      "bytes": 4222,
+      "sha256": "fb2fa7e0033b1b51c930336b814f6e60622f0bc5f2827a535e47c0f5db0fcf73",
+      "category": "author input"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 10795,
+      "sha256": "83917902d0cd82e1d73dbda9f29f79c7b8c224d5345827a0dc7c890bc94bb03d",
+      "category": "author input"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "bytes": 32365,
+      "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "category": "author input"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "bytes": 12275,
+      "sha256": "e5bcf577dab1144c6ce4ac06f1b4558cc44951a7fb3e305199bb91f91736b76a",
+      "category": "author input"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "bytes": 28993,
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "category": "author input"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "bytes": 17323,
+      "sha256": "3c39ed64cffd800bb930eda9ee8d7dbde20612e307cd90e512896f1aee34d549",
+      "category": "author input"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "bytes": 39217,
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "category": "author input"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "bytes": 13623,
+      "sha256": "f18775b209aba8711f8ad42ff82432f127171b4b241987b295e6f76124964f35",
+      "category": "author input"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_COMPLEMENT_ASTRA.md",
+      "bytes": 28162,
+      "sha256": "af4c8206ccc2ce86274e5f92643e28154abb010b7f413d5cf578035efb1eaa7b",
+      "category": "author input"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_COVARIANT_COMPLEMENT_ASTRA.md",
+      "bytes": 18450,
+      "sha256": "721d32877285a05ae35aaabc635fa98d3098b7473c3f364d686d5ed29bcbc071",
+      "category": "author input"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "bytes": 48847,
+      "sha256": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+      "category": "author input"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SOURCE_HISTORY_RETURN_ASTRA.md",
+      "bytes": 21817,
+      "sha256": "a0205f0074b1e2a835eba453dae80ef7fb64b09aa792bd46e3d87aa3daf9b2d0",
+      "category": "author input"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md",
+      "bytes": 23793,
+      "sha256": "7154244cbfb476ee8ff5a97cb524d076beeba7493420da9b6a2fce8512550438",
+      "category": "author input"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FIXED_SOURCE_RADIUS_ASTRA.md",
+      "bytes": 35303,
+      "sha256": "6304245bdf27afa6c7f364da9bc41d8971cc0f2058c1e3484edef84df44cff86",
+      "category": "author input"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_FIXED_SOURCE_RADIUS_ASTRA.md",
+      "bytes": 14369,
+      "sha256": "d2a188c6126a1321c8bed82ef96db2680dda70e631e928e3a0c37554908c8579",
+      "category": "author input"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_domain_correction.json",
+      "bytes": 6258,
+      "sha256": "90442d8a513d1770021ea25f644eea1e55598ebc63c91fec3d6c46074215c87d",
+      "category": "author input"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_domain_confirmation.json",
+      "bytes": 3187,
+      "sha256": "518693688eeb6a4e1ee5023b076ebd5e05af4744a25eb6c766356a432515e317",
+      "category": "author input"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD.md",
+      "bytes": 34089,
+      "sha256": "06ad2b5b52bfa66f7784a1fb97936337c59f5164318f89af9a2a065226671e5f",
+      "category": "author input"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RD.md",
+      "bytes": 21327,
+      "sha256": "59154a352ac9f1b2e201606ab6e2d4c4e5b5624f446fed1f28ce08ab2787101e",
+      "category": "author input"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/INTERACTING_SELECTED_CORE_ASTRA.md",
+      "bytes": 41908,
+      "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "category": "author input"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_receipt.json",
+      "bytes": 7584,
+      "sha256": "a9536686abb45d8f5fae790fd0c7685ce159a1a0f961cd8cdcd5145fb31d22d4",
+      "category": "predecessor receipt"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_receipt.json",
+      "bytes": 26249,
+      "sha256": "75a01dfe36e64f83db7886528169cddac63bfd2e12258d40313b4504dc05e6bd",
+      "category": "predecessor receipt"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/cut_sector_coercivity_receipt.json",
+      "bytes": 10863,
+      "sha256": "c1b64e10e94c7dedd0e73195f46e8235f83bbda6665d9a739626ae44eef6fcac",
+      "category": "predecessor receipt"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cut_sector_coercivity_receipt.json",
+      "bytes": 3068,
+      "sha256": "691ab7b12af897736d1b9a3312792e98c6959aecf7df98db24752d90e6944bf6",
+      "category": "predecessor receipt"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_COMPLEMENT_ASTRA.md",
+      "bytes": 28162,
+      "sha256": "af4c8206ccc2ce86274e5f92643e28154abb010b7f413d5cf578035efb1eaa7b",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_01.py",
+      "bytes": 11960,
+      "sha256": "39b0d8d6b50aecf31a86772b9da5eccaf7eac86d5c6ee09c14c1e72f0c693a3c",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_01_output.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_01_results.json",
+      "bytes": 7643,
+      "sha256": "a35659e7623ec15ce03f5328dd9db266d49695c379552c438d108f5081fee2d5",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_01_stderr.txt",
+      "bytes": 122,
+      "sha256": "a4f5e2845bb249634292385b9b2a99a0b9dee1bd5df178c7438fa87cc21ff185",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_02_output.txt",
+      "bytes": 5370,
+      "sha256": "6e5bdb1988e35b9f96473afe668ebf57316fe070c63a089adcff26701187a9c8",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_02_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_criteria.md",
+      "bytes": 3216,
+      "sha256": "7eec32ce4b5db6d3ea11f62a3d4c29fdc596a05f20b9e7b3b1ea30dba902b667",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_gate01.json",
+      "bytes": 713,
+      "sha256": "8b666a73bd88470ff17d67499b96c19523e929202659300a4a76142da16541df",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_gate02.json",
+      "bytes": 877,
+      "sha256": "0b2e21a5ce1591990a5e7edd14de73a28016454d36c3b631e0c83b1a853b4fd2",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_packaging_failure01.json",
+      "bytes": 648,
+      "sha256": "d4cc62be7ab0cbe918fa5d3e6f5835327438f6b69405e4fee3a7eb0df610451a",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_posthoc.py",
+      "bytes": 1712,
+      "sha256": "4ac0a1439508a34ebeb2e86b4ad287f5a9aa12d7cb71fd5fbe63a8304ba53c7a",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_posthoc03_gate.json",
+      "bytes": 879,
+      "sha256": "756e1f38d199cc3b679918497bdcae44c6180c3e3362212803c2f25199cf47c8",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_posthoc03_output.txt",
+      "bytes": 756,
+      "sha256": "9327e7872e9bde7ef30b05b2317d6380e59eaf46d5824a8f8ad24c3f6e4f465c",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_posthoc03_run.json",
+      "bytes": 387,
+      "sha256": "a2702ef4ff43afca19b4428436dd0e2f2c5377e1c0d452ad60a58eb2494defde",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_posthoc03_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_posthoc_criteria.md",
+      "bytes": 970,
+      "sha256": "3e96c965e88fd6c146cde9836b4594d1835476f20bdb13e137ab7f01202ff0f2",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_posthoc_results.json",
+      "bytes": 756,
+      "sha256": "9327e7872e9bde7ef30b05b2317d6380e59eaf46d5824a8f8ad24c3f6e4f465c",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_read_manifest.json",
+      "bytes": 11144,
+      "sha256": "57b7e15eb8d0bb48f9966265e09852a61a334e811e6432554175a3f7ade89f44",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_run02.json",
+      "bytes": 377,
+      "sha256": "37915e7f6f0e2afa2e218cedf434c53631bae4a13fa5e579ab04f9d7334590be",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_runner.py",
+      "bytes": 2905,
+      "sha256": "489d96acb40e06abcb599eb4148bfa29ad58ee09fb03218bf82d8e4a8d081b0b",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_COVARIANT_COMPLEMENT_ASTRA.md",
+      "bytes": 18450,
+      "sha256": "721d32877285a05ae35aaabc635fa98d3098b7473c3f364d686d5ed29bcbc071",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_after_exposure.json",
+      "bytes": 831,
+      "sha256": "bc38d87392d4ab81b5a35babf900b6f3c7bafd0ac80e932dffdf71ec2d1e89ae",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_author_01.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_author_01.stdout.json",
+      "bytes": 5370,
+      "sha256": "6fb4898f63ea6178fcbb7e5ee2522f5872e6aa43f241cb736f5b2cd528597e0e",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_author_01_gate.json",
+      "bytes": 1103,
+      "sha256": "b4257c5112a3aff275e9a30bcf54d6a2dcbf8134eaf7eb6e964d218e680eb6d5",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_author_01_run.json",
+      "bytes": 580,
+      "sha256": "784cfca64d1e2dd9e5c3cb6428940dbe0c53a3e6b9e660cc6652b07917a5b8ae",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_author_replay.py",
+      "bytes": 499,
+      "sha256": "3e45372b3c72803270f3c988ba9c644fc126bee84019607242da27057fd37e66",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_author_results.json",
+      "bytes": 7643,
+      "sha256": "5180d2559507e3fcc5b5d8c7e4a622e324d0fe9cb1e2e90140941944c38e9ca3",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_criteria.md",
+      "bytes": 3406,
+      "sha256": "008f6a645daca1ba6d1e68675aa6061e935c28ee1f16cb37ab398443a7d3b37a",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_entry.json",
+      "bytes": 13814,
+      "sha256": "f4fa0dd059fd7236eb6086b04180e4e9ac85325832a54c6801ccc98de4083b7c",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_environment_probe_failure.json",
+      "bytes": 320,
+      "sha256": "f61cd187fe673974b9ad6fe14b7453edc94f3af0a90d8daa2438b5322d80c1a8",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_finalize.py",
+      "bytes": 16158,
+      "sha256": "c9fa5e68497e5cd3959e1104cd16b296884daab6980175f6858e0eebb4743a60",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_independent.py",
+      "bytes": 11050,
+      "sha256": "b9b42c0eb99d0dd19a67b622d546a35c15e48f469c5209a4e38997d2ab743902",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_independent_01.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_independent_01.stdout.json",
+      "bytes": 6812,
+      "sha256": "3644614df97505b18d5332011d492e6c6490a37427ad8c0c91bacdada0bbe3a7",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_independent_01_gate.json",
+      "bytes": 1101,
+      "sha256": "32a2bf481d0d70b6ee0f20a62a9e5d14749162193d128aef740c893b694b9823",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_independent_01_run.json",
+      "bytes": 595,
+      "sha256": "7fb4be3b59643c59eb350cc3508b86a889ea9a30f9285807c32da12b31c9dd9a",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_literature_current.txt",
+      "bytes": 24710,
+      "sha256": "ae281c9e310a4b4b21f6a5347813ead4d279967e03ef4b1fee82f64a4a26fcb1",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_literature_worktree_diff.txt",
+      "bytes": 6056,
+      "sha256": "c0a89e1cb3583b3076441914f656dbeaa1bff1ab67cb2fede4289409545c3302",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_packaging_failure01.json",
+      "bytes": 901,
+      "sha256": "18a1a6790e16a2407d5b63647305f7cfd5cdb66f1e7073592157e18320982c03",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_posthoc_01.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_posthoc_01.stdout.json",
+      "bytes": 756,
+      "sha256": "9327e7872e9bde7ef30b05b2317d6380e59eaf46d5824a8f8ad24c3f6e4f465c",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_posthoc_01_gate.json",
+      "bytes": 1102,
+      "sha256": "c1c80c552b921a897703238731565cb1587c0fa294fde156f4dcf778fc62245d",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_posthoc_01_run.json",
+      "bytes": 585,
+      "sha256": "2a9e5f6788f5e46e660f5674ebc8bfd176c9b0369bef2278327c7399b63fc8b9",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_posthoc_replay.py",
+      "bytes": 515,
+      "sha256": "8a1a72295b8a65576637f81effa22cfb632b722e9887313c5255a1ce89ca8d15",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_posthoc_results.json",
+      "bytes": 756,
+      "sha256": "9327e7872e9bde7ef30b05b2317d6380e59eaf46d5824a8f8ad24c3f6e4f465c",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_read_manifest.json",
+      "bytes": 19257,
+      "sha256": "506699432302e54a2b322726dc5d984066e7ecdf0d8ff2c59325e75ea0e3be73",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_run.py",
+      "bytes": 2890,
+      "sha256": "d0ea43f71b7225cef99b6b5d90a5a29ef61376f7d95b90354356c4100948d3c5",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_verification.json",
+      "bytes": 20959,
+      "sha256": "5e37c9be2c7276d475a13511f12fb64683ef2c09af0e8b7e376fb93ec58150d1",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "bytes": 32365,
+      "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/cut_sector_coercivity_freeze.py",
+      "bytes": 17969,
+      "sha256": "e64ca5394d1ca3307c612a3cf3124959ecfba1315469056bd8351d72d81c093a",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/cut_sector_coercivity_read_manifest.json",
+      "bytes": 24051,
+      "sha256": "6f7dbb5d91a76789df58ce44fecc651acd22af7040b780962c04bdd64d8e343f",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/cut_sector_coercivity_process.json",
+      "bytes": 5202,
+      "sha256": "be509c96a217165c98bcc875a0c43998cf6c984291b67054c165625769a14bb2",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/cut_sector_coercivity_verification.json",
+      "bytes": 3223,
+      "sha256": "f0b80583b2aeb003ada3c574b2902b056a7062b6e589e7f0280cb11d8974f021",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/cut_sector_coercivity_freeze_attempt01.py",
+      "bytes": 17543,
+      "sha256": "465bccda8b04aac849223e6a959647d02f87fad6d9b155c40f215e66581af561",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/cut_sector_coercivity_read_manifest_attempt01.json",
+      "bytes": 24051,
+      "sha256": "be9a049b2deea72f7b254e477ecc2efa15f3c349ef4a82cc2352a101320e3b7b",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/cut_sector_coercivity_process_attempt01.json",
+      "bytes": 5014,
+      "sha256": "3788d4717d0c8256a89f8fed9841c760758a77afaed7798386508144d355d617",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/cut_sector_coercivity_pack_failure01.json",
+      "bytes": 998,
+      "sha256": "26766c32edf29c72f6e74a3b1f942897ab6dc713018235594a2c8e37a62c46a8",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "bytes": 12275,
+      "sha256": "e5bcf577dab1144c6ce4ac06f1b4558cc44951a7fb3e305199bb91f91736b76a",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cut_sector_coercivity_reasoning.md",
+      "bytes": 15196,
+      "sha256": "3782be34577149a8d0f32d937e864dacbb1405455976a2e3c80d28de36638611",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cut_sector_coercivity_identity_check.json",
+      "bytes": 29303,
+      "sha256": "6f2bb041b78264fd57d72f104aaf615fc8dc8b9a460d901965065eefe1021bc9",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cut_sector_coercivity_read_manifest.json",
+      "bytes": 33291,
+      "sha256": "844e1b25b3cbc7e648feb76aa59e69104cb2c6b708e3d782616ac9409b60f398",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cut_sector_coercivity_verification.json",
+      "bytes": 3841,
+      "sha256": "4b198f6a9a70f2e955b6150c5894e253ec1ae5e7a5dbea4da34a79c10273a24d",
+      "category": "four preserved predecessor packets"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "bytes": 28993,
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "category": "covariant_soft_background_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_all_02.json",
+      "bytes": 12748,
+      "sha256": "ec6604fba6498a50e7b4023e6a5d8df8ea08168f8886296d98cee76616a8bb6a",
+      "category": "covariant_soft_background_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_all_02.stderr",
+      "bytes": 674,
+      "sha256": "e822d5fb0f9eb7aca6933a8b9e3ec27f9827e544f4ca0dbeb12af3229a00ea2b",
+      "category": "covariant_soft_background_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_all_03.json",
+      "bytes": 13059,
+      "sha256": "67e6b25cc7d4e8ceec7d8178a875c021e040b4a190a256732ae46297f785c941",
+      "category": "covariant_soft_background_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_all_03.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "covariant_soft_background_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_all_04.json",
+      "bytes": 13169,
+      "sha256": "7b6d6b1e318b1a872d43b9b7f64e753555681509d647e2139fbf5cbf57719878",
+      "category": "covariant_soft_background_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_all_04.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "covariant_soft_background_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_check.py",
+      "bytes": 15389,
+      "sha256": "f0b6a023ec4c8c2e70ae7d2b1176fc1fdf050dc2da7c6580895fa27b7c5693e6",
+      "category": "covariant_soft_background_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_check_attempt01.py",
+      "bytes": 13835,
+      "sha256": "8df74dea4cdea8e80a82a0c921e64364f2ca3f786042fb48e3943262720fd23d",
+      "category": "covariant_soft_background_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_check_attempt02.py",
+      "bytes": 14786,
+      "sha256": "8bd147aa7dc4683c8d7bfb66ef3b3c77b68702fcbaae86c930deceaa2a0578be",
+      "category": "covariant_soft_background_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_check_attempt03.py",
+      "bytes": 15311,
+      "sha256": "30ab873565eb6ea37df471046e78a62c75596824d6078f2c28abe176115b33db",
+      "category": "covariant_soft_background_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_criteria.md",
+      "bytes": 4582,
+      "sha256": "e48a12a79948ffe4505cf2d87502a8bbd4d31915ee520689a8a7e5d2e32035d4",
+      "category": "covariant_soft_background_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_criteria_initial.md",
+      "bytes": 3765,
+      "sha256": "c9387686d2121fbecde53114f6d5a3568528461fbc48130bccfa84035714b75c",
+      "category": "covariant_soft_background_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_derivatives_01.json",
+      "bytes": 3346,
+      "sha256": "1c73f89e48a80072b7f6ca42df5a2d4f3aaba6773228a3acdfd8e758c0396dbd",
+      "category": "covariant_soft_background_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_derivatives_01.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "covariant_soft_background_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry.py",
+      "bytes": 8719,
+      "sha256": "86206301935db35ca6c8d912479594a323fce04f412dd22d499ea4a5dcc172af",
+      "category": "covariant_soft_background_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry_01.json",
+      "bytes": 2828,
+      "sha256": "eac510cb3679e43d669404d625f499cd3cb3381c508b94ea8ddc0177928a7724",
+      "category": "covariant_soft_background_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry_01.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "covariant_soft_background_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry_02.json",
+      "bytes": 2825,
+      "sha256": "24cca5e22dd3d233e04cf7520668e50a81ed1ffa9f9eafd07a7bd416c5ebbd1e",
+      "category": "covariant_soft_background_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry_02.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "covariant_soft_background_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry_T3_02.json",
+      "bytes": 2827,
+      "sha256": "17f7bbb7016f94afd6c5d1153d7876a16d70484aecc42016e4b8024f990ac626",
+      "category": "covariant_soft_background_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry_T3_02.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "covariant_soft_background_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_geometry_attempt01.py",
+      "bytes": 8253,
+      "sha256": "6349cf6cd38e48b52ab7eedd8706c3b8505ca950e5778917a8aac8070fb42d9e",
+      "category": "covariant_soft_background_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_inputs.json",
+      "bytes": 9881,
+      "sha256": "9fefc54866ffcc84380ccb50d0fbc5183a6c38258cda401588fd509c4621821c",
+      "category": "covariant_soft_background_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_primary_sources.json",
+      "bytes": 2257,
+      "sha256": "9916336671fc82d55723c5b464c74b2660abbd89c150b723ca31646042bf00fa",
+      "category": "covariant_soft_background_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_vocab_lint.txt",
+      "bytes": 81,
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "category": "covariant_soft_background_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "bytes": 39217,
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "category": "covariant_source_activity_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_actual.py",
+      "bytes": 8475,
+      "sha256": "964917975efedcf2898bc1dd532bcf2849f74794b011156c4664425784dacb85",
+      "category": "covariant_source_activity_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_actual_attempt01.json",
+      "bytes": 3203,
+      "sha256": "cd9e485f909045f9c0f2521741effa34e6892ea29bf041639003cfd8ea82357b",
+      "category": "covariant_source_activity_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_actual_attempt01.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "covariant_source_activity_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_atoms.py",
+      "bytes": 4718,
+      "sha256": "943b97af7d8b08392631daf4d96ba322832e2aa43c5ea0eebb745efbd8b734ac",
+      "category": "covariant_source_activity_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_atoms_attempt01.json",
+      "bytes": 1864,
+      "sha256": "3fe701773940cec9b29f73347a8ae24646d8c42d6f82f6b563933d92a48b1bfc",
+      "category": "covariant_source_activity_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_atoms_attempt01.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "covariant_source_activity_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_criteria.json",
+      "bytes": 3690,
+      "sha256": "201a964cfa9ae548a8325c26fa3c96d89c5f00660491e0985546b9f989ccc7f7",
+      "category": "covariant_source_activity_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_inputs.json",
+      "bytes": 11670,
+      "sha256": "c2c9ff5f32d548fa7fb6073f786b10ac5ca1fb0ded57500d58cfe46455421f29",
+      "category": "covariant_source_activity_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_numeric_plan.json",
+      "bytes": 2976,
+      "sha256": "3304d42be325ffd7c1c91592d20acdd4b40946fdcd26cf59f0dbf0a9d54c61f5",
+      "category": "covariant_source_activity_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_primary.json",
+      "bytes": 3429,
+      "sha256": "c8a21721c425c62189a5fd7f7a7e682e5419d50a1a6307f37e542bb8e1161030",
+      "category": "covariant_source_activity_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_verification.json",
+      "bytes": 997,
+      "sha256": "2af59a07245b9620aeb0cb8cc750cb92e910b7caaf17a612f520930d818faa70",
+      "category": "covariant_source_activity_receipt.json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_01.py",
+      "bytes": 8382,
+      "sha256": "1092ace3f41d7437816858bf77272e5dc743c4d8307a799f9c282b727635a7d1",
+      "category": "FR original non-source artifacts"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_01.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "FR original non-source artifacts"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_01.stdout.json",
+      "bytes": 18415,
+      "sha256": "f7a0d059f94f1b3631252e11827122d6f0c34d1f1eafb20dd35042c6dd4378be",
+      "category": "FR original non-source artifacts"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_attempts.json",
+      "bytes": 2224,
+      "sha256": "7aa571a12a157b7e1b01b4ee7544868102a668f8fe21b043467a7aa55c701b74",
+      "category": "FR original non-source artifacts"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_mixed_01.py",
+      "bytes": 3844,
+      "sha256": "2e191a0f9a514e7bd9398550f0ac0f7e77efd91deda6dec329578f4235ab11dc",
+      "category": "FR original non-source artifacts"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_mixed_01.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "category": "FR original non-source artifacts"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_mixed_01.stdout.json",
+      "bytes": 2122,
+      "sha256": "416a67be29c40d16a66db335537f5a7cef54b535ec2b95d2e266801b3cfd1ac6",
+      "category": "FR original non-source artifacts"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_mixed_plan.md",
+      "bytes": 1579,
+      "sha256": "b3559783aa437119d8eb43ab12f03aeb286dd3f758596f2419adaf1a33a0eafe",
+      "category": "FR original non-source artifacts"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_numeric_plan.md",
+      "bytes": 3566,
+      "sha256": "0be5f51afcfac96ae6265a3af560af7e5a156d8edd3de355adbe8bcc453bf7e0",
+      "category": "FR original non-source artifacts"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_read_manifest.json",
+      "bytes": 8022,
+      "sha256": "02a9df12fc51fb9aa29fba2909b55f1646d1360752cd0ab95b44ebdba3c68985",
+      "category": "FR original non-source artifacts"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_validation.json",
+      "bytes": 1706,
+      "sha256": "43f30011bdfd151525d9ed337d872557f04e7985792f8f7b75ff988307e5b4a2",
+      "category": "FR original non-source artifacts"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_source_v1.md",
+      "bytes": 33082,
+      "sha256": "9c628d8499abe6e8d23113f008f6c78c182b9ca52fdb6f87a73394cc13c6e882",
+      "category": "FR affected confirmation"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_source_v2.md",
+      "bytes": 35303,
+      "sha256": "6304245bdf27afa6c7f364da9bc41d8971cc0f2058c1e3484edef84df44cff86",
+      "category": "FR affected confirmation"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FIXED_SOURCE_RADIUS_ASTRA.md",
+      "bytes": 35303,
+      "sha256": "6304245bdf27afa6c7f364da9bc41d8971cc0f2058c1e3484edef84df44cff86",
+      "category": "FR affected confirmation"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_domain_correction.json",
+      "bytes": 6258,
+      "sha256": "90442d8a513d1770021ea25f644eea1e55598ebc63c91fec3d6c46074215c87d",
+      "category": "FR affected confirmation"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_domain_correction.md",
+      "bytes": 4207,
+      "sha256": "65551b97ab4f8ffae2e945c02b471013a4d395744e42c297f7b4fc9d224575d4",
+      "category": "FR affected confirmation"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_domain_diff.txt",
+      "bytes": 5644,
+      "sha256": "71ddfc97663a5ef4874b7a59453c3833fc372d6d3617c6c6964b75fb086d38e4",
+      "category": "FR affected confirmation"
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 11788,
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "category": "author reused methodology identity"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "category": "author reused methodology identity"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "bytes": 24561,
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "category": "author reused methodology identity"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "bytes": 5188,
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "category": "author reused methodology identity"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "bytes": 12608,
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "category": "author reused methodology identity"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "bytes": 12940,
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "category": "author reused methodology identity"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "bytes": 7554,
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "category": "author reused methodology identity"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "bytes": 23216,
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "category": "author reused methodology identity"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "bytes": 21536,
+      "sha256": "42a24d3df296f01e4189eadd1ef8b92f316bd8d14229f14643641e39939d159e",
+      "category": "author reused methodology identity"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 1118,
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "category": "author reused methodology identity"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "bytes": 11333,
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "category": "author reused methodology identity"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "bytes": 6427,
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "category": "author reused methodology identity"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "bytes": 6416,
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "category": "author reused methodology identity"
+    },
+    {
+      "path": "docs/audit/data/premise_decision_history.json",
+      "bytes": 11572,
+      "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113",
+      "category": "author reused methodology identity"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "category": "author reused methodology identity"
+    },
+    {
+      "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+      "bytes": 3694,
+      "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+      "category": "author reused methodology identity"
+    },
+    {
+      "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+      "bytes": 22309,
+      "sha256": "4df23ed611d808e3dd28d2a14b5407a16c9eb4d2c632017666b9a240a78199ce",
+      "category": "author reused methodology identity"
+    },
+    {
+      "path": "docs/repo/DEFERRED_DECISIONS.md",
+      "bytes": 10595,
+      "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+      "category": "author reused methodology identity"
+    },
+    {
+      "path": "docs/repo/CONTROLLED_VOCABULARY.md",
+      "bytes": 39977,
+      "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+      "category": "author reused methodology identity"
+    },
+    {
+      "path": "docs/CANONICAL_HARNESS_INDEX.md",
+      "bytes": 109438,
+      "sha256": "f2665b763f69e4baef4648d15b517b2701d975a8131f4665703c40c07283782c",
+      "category": "author reused methodology identity"
+    },
+    {
+      "path": "docs/audit/README.md",
+      "bytes": 35690,
+      "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f",
+      "category": "author reused methodology identity"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/review-loop/SKILL.md",
+      "bytes": 20680,
+      "sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "category": "author reused methodology identity"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md",
+      "bytes": 9276,
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "category": "author reused methodology identity"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "bytes": 30709,
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "category": "author reused methodology identity"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "bytes": 16755,
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "category": "author reused methodology identity"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "bytes": 16454,
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "category": "author reused methodology identity"
+    },
+    {
+      "path": "docs/repo/REPO_ORGANIZATION.md",
+      "bytes": 5109,
+      "sha256": "8aac84c1de58048484fb95bd6ce00b2afa11e6d607c0978d807865398aee2b2c",
+      "category": "author reused methodology identity"
+    }
+  ],
+  "selected_main_methodology_identity_count": 25,
+  "author_programs_syntax_checked_not_executed": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_freeze.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_freeze_attempt01.py"
+  ],
+  "local_links_checked": [
+    "CUT_SECTOR_COERCIVITY_ASTRA.md",
+    "REVIEW_CUT_SECTOR_COERCIVITY_ASTRA.md",
+    "INTERACTING_SELECTED_CORE_ASTRA.md",
+    "REVIEW_RD.md",
+    "PROCESS_LIGHT.md",
+    "checks/graded_complement_read_manifest.json",
+    "checks/graded_complement_receipt.json"
+  ],
+  "new_numerical_experiments": 0,
+  "author_files_mutated": 0,
+  "scope": "source/receipt identities, preserved old evidence, source correction, syntax and local link existence; not mathematical proof or backend/model attestation"
+}

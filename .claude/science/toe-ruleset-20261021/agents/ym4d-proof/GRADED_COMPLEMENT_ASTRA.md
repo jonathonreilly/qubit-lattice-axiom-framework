@@ -445,7 +445,7 @@ only its remaining indicator, which is <=1. This proves
 
 No independence assumption is used. The minimum with one is valid by using
 the trivial conditional bound when needed. For distinct underlying free
-links, distance greater than 2ell+6 between owners suffices. A conflict
+links, coarse sup-distance greater than 2ell+6 between owners suffices. A conflict
 neighborhood has at most `m0(4ell+13)^4` such links, so greedy selection
 keeps at least that reciprocal fraction of any set. Coincident colour tags
 or levels on the same link must first be coalesced (retain the largest

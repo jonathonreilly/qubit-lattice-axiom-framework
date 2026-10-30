@@ -1,0 +1,392 @@
+lead: anthropic/claude-opus-5-5/max 6e18bbf9-8419-4af6-aa21-7449c6e1935e
+lease_until: 2026-10-31T21:00Z
+
+## State of attack
+
+**Outcome of the decisive question (settled; third branch, with a replacement).** The chessboard reduction to Z(beta+s) is correct for real s, and it is useless for separated products of the dimension-four field. The contact term is real and is a theorem here: Var(W_B) >= c |B|/beta^2 (Theorem 3). No subtraction rescues it, because the obstruction is not a subtraction problem: there is an explicit reflection-positive family with one and the same constant-coupling partition function, for every s and every torus, whose separated correlators differ by a factor a^-4 (Theorem 4). So no argument that uses only reflection positivity and Z(beta+s) can reach uniform separated bounds. UV-EXT must change. Separately, the volume-uniform complex disc in the draft is an infrared statement, since it implies analyticity of the infinite-volume pressure along the whole trajectory (Proposition 5); it should be dropped.
+
+**The replacement.** Sources of bounded support, smooth at a physical scale, periodised by the chessboard, with a local counterterm. This is UV-CT (Text section 7), and the implication UV-CT => separated bounds is Theorem 7.4. The chessboard still does the essential work: it turns a torus bound at periodised sources into a volume-free bound per bump, and the reflection-positive trace inequality (Lemma 7.2) reduces every torus to one fixed small torus. What changes from the draft is the source. A constant shift has zero momentum and cannot see separated correlators, while a periodised bump can. The constant-coupling statement keeps one role, at s = 0: the volume bound CT4. Three forms close the chain, each proved here to give the moment bound (SM):
+- **UV-CT** (primary). Two parts. First, on one fixed physical torus Tor of side 2 a_*: a one-sided bound with an analytic local counterterm E(w) at reflection-periodic complex sources, <exp(w^pat . s)>_Tor <= exp(Re E(w^pat) + c), with E covariant and additive up to tau on separated supports. Second, a real, source-free, volume statement: log Z_L(beta) >= (L/P)^4 log Z_Tor(beta) - c_F (L/a_*)^4 (the reverse inequality is free, Lemma 7.2). No non-vanishing, infrared safe. The form with a counterterm and sources is what the mapped hard-core attempt reports from the Sussman-Alpoge account and asked me to test (hard-core--mapped, Text 4.4): it passes the decisive question, and it can be reduced to one torus.
+- **UV-LOC-C** (Theorem 7). Mixed difference of log G on a polydisc. No counterterm is named, since the mixed difference cancels every local term, but non-vanishing on the polydisc is assumed.
+- **IE_p** (Theorem 6). A real-variable form using the exact Markov property of the Wilson action. If the conditional mean of the centred energy at the centre of a cube, given the links on the boundary of the cube, has L^p norm at most A_p (a/D)^4, then all separated moments follow at once, with no cumulants, no complex sources and no decoupling estimate. This reduces the whole of the moment bound (M) of the existing program to one estimate on one ball.
+
+**What is closed here.** From any of these forms: joint subsequence on R^4, full translation invariance, hypercubic invariance, reflection positivity in all four axes, OS Hilbert space, H >= 0, spatial unitaries, insertion operators, and the reconstruction formula on time-ordered separated tests (Theorems 8 and 9). A floor theorem records what needs no input at all: for uniformly bounded local observables, existence, RP and dyadic invariance are free (Theorem 10), so all content of T1 sits in the local-field statement and in non-triviality.
+
+**Order of constants.** Fix the trajectory beta(a) and the unit of length, chosen so that the unit is inside the region the hard core controls. Then n, then the supports and their separation delta, then the source radius rho, then a <= a_0(delta), L >= L_0(supports). The constants depend on n, the sizes of the supports and delta only.
+
+**Hardest remaining inequality.** UV-CT itself (CT1 at reflection-periodic complex sources on one torus, and CT4), which belongs to hard-core. On my side, the alternative form IE_p, whose content is a contraction by 2^-4 per doubling of D: || E[e_a(x) - mean | links on the boundary of the cube of side D at x] ||_p <= A_p (a/D)^4 for c a <= D <= 1. It has no reference to a trajectory, it is a lattice statement capped at the physical unit, and the trivial bound gives it for D ~ a by compactness. In two dimensions the analogue is an exact computation that passes (Text section 13).
+
+**Routes tried and why they failed.**
+- Chessboard for the centred block energy: exact local moment has exponent |B|(h(t) - t h'(0)) with h'' >= c/beta^2; true, not a loss (Theorem 3).
+- Schur complement of the chessboard at second order: |Cov(W_1,W_2)|^2 <= D_1 D_2, with D the block-to-complement covariance. It trades a^-4 for a surface term, a^-3 at leading order (Gaussian value computed in Remark 3.3), and D is not a constant-coupling quantity.
+- RP monotonicity plus the sum rule: the slice correlator obeys c_T(t) <= h''/(2t), far from the true t^-5. Cauchy-Schwarz with the second-order chessboard gives |Cov(W_B, W_B')| <= |B| h'' (Corollary 1.3), which is off by a^-4 in the field normalization, and the family of Theorem 4 saturates it.
+- Normalized exponentials exp(sW_B)/<exp(sW_B)> in the chessboard bound: the numerator bound compares to a no-interface pattern, so the ratio has a surface defect a^-3.
+- Conditional chessboard on a coarse field: not tight at s = 0 unless the coarse field is mirror symmetric, so it gives only the white-noise scale a^-2 for the conditional mean.
+- Variational or Chernoff bound on a Hamiltonian form of the coupling derivative: limited by the same contact term, through the rotation of the vacuum with beta.
+- Smooth bumps from constant coupling alone, using s_p >= 0 and fine chessboard blocks to replace w by a piecewise constant: gives log<exp(w.s)> <= sum_x h(w(x)) for real w, with h the constant-coupling pressure, so the upper bound itself is a constant-coupling statement. It fails at the next step. The defect has a gradient term of order a^-2 |grad w|^2, its coefficient is a second moment of the correlator, not visible in Z(beta+s), and for complex t the analytic counterterm must contain it, because Re(t^2) changes sign.
+
+**Next action.** (1) Record the 4D Monte Carlo test of the sup form of IE and the Gaussian bump check when they finish (criteria fixed in `checks/upper-chain_criteria.md`; interim: r^4 Delta = 4.98(5) at r = 3, 1.60(16) at r = 4, at beta = 4). (2) Attack IE_p from the actual model: look for an inductive proof of the 2^-4 contraction that uses constant-coupling output only. (3) Look for a proof of CT4 at s = 0 by a route that avoids the surface loss of Dirichlet gluing, since it is the only piece of the interface with no source. (4) Further hostile passes on Lemma 7.2, Theorems 7.4 and 7.8.
+
+## Obligations
+
+- gap: UV-CT, or one of its alternatives UV-LOC-C, IE_p (the exact form of UV-EXT this part consumes) -> Theorems 7.4, 7, 6, then 8 and 9; producer hard-core
+- gap: positive lower bound on separated correlators (non-triviality) -> witness; recorded in Text 11, not this part's job
+- implication: (M) with b_0=0 gives E0' with s=11, beta=1 given REALONLY section 4 -> later O(4) and Wightman consumers, not T1
+- discharged: site-plane RP and closed-block chessboard with constant real shift -> decisive question (Theorem 1)
+- discharged: pressure sandwich and local action bound, elementary -> Theorem 3, and offered to hard-core as the bare large-field price (Theorem 2)
+- discharged: contact lower bound on Var(W_B) and Var(W) -> refutes unsubtracted UV-EXT (Theorem 3, Corollary 3.2)
+- discharged: no constant-coupling implication, via an explicit RP Gaussian family -> decisive question (Theorem 4)
+- discharged: volume-uniform complex disc implies analytic infinite-volume pressure -> edit of UV-EXT (Proposition 5)
+- discharged: Markov reduction from IE_p to all separated moments -> Theorem 8 (Theorem 6)
+- discharged: mixed-difference polydisc to all cumulants and moments, with n-fold from 2-fold -> Theorem 8 (Theorem 7)
+- discharged: reflection-positive torus reduction, Z_L <= Z_P^((L/P)^4) at reflection-periodic sources -> Theorem 7.4 (Lemma 7.2)
+- discharged: counterterm bound on one torus plus chessboard, torus reduction and CT4 to volume-free cumulants, without non-vanishing -> Theorem 8 (Theorem 7.4)
+- discharged: real form with two-sided real bump bounds to separated exponentials, no complex RG -> real endpoint (Theorem 7.8)
+- discharged: common subsequence, translation, hypercubic, RP -> Theorem 9 (Theorem 8)
+- discharged: OS Hilbert space, contraction semigroup, spatial unitaries, insertion operators, reconstruction formula -> endpoint (Theorem 9)
+- discharged: floor theorem for bounded observables, no input -> records what T1's content is (Theorem 10)
+
+## Requests
+
+- target lead, GOAL.md interface: replace UV-EXT by UV-CT, exact statement in Text section 7. Reasons: Theorem 3 (no subtraction-free form), Theorem 4 (a constant shift cannot imply separated bounds), Proposition 5 (a volume-uniform non-vanishing disc is infrared). The scale of s is settled: order one in beta, exactly the normalization of a bounded test function. The subtraction is the analytic local counterterm E(w). It must be position-dependent, since it contains a gradient term of order a^-2. The chain does not use non-vanishing.
+- hard-core, both attempts: there are two deliverables, CT1-3 and CT4 (Text section 7). (a) For sources: on one fixed physical torus Tor of side 2 a_*, state the induction for a position-dependent bare coupling beta(p) - w(p), with w complex, |w| <= rho, Lipschitz at a fixed physical scale, in a norm that does not use translation invariance. Only reflection-periodic w need be treated: w on even blocks and conj(w) on odd blocks. So above the block scale the source is a real constant shift. At levels finer than the Lipschitz scale the source is locally constant, so this is a local-coupling version of the constant-coupling induction. Polymer activities that depend only on w on the polymer give CT3 (Remark 7.6). (b) For the volume: CT4, real and source-free, at any larger L. A constant-coupling statement alone cannot feed the chain, but CT4 is exactly what is left of one. (c) If the complex run of the RG is out of reach: the real form of Theorem 7.8 needs only real sources, with a two-sided bump bound. It gives separated products of normalized exponentials rather than the linear field.
+- hard-core--mapped, answer to Text 4.4 there: your UV-EXT' passes the decisive question. Theorem 7.4 proves it gives volume-free, cutoff-free separated cumulants, by chessboard on periodised bumps plus Cauchy on the subtracted function, with no non-vanishing. The chessboard needs the conjugate pattern w, conj(w): the modulus bound at Re w alone loses a^-4 (your 4.2). Lemma 7.2 reduces the source bound to one fixed torus, and leaves a source-free volume bound (CT4). Your clause (i-b) looks like the right source for CT4, but I have not checked it.
+- hard-core--independent: the charter's UV-EXT needs this edit too. See the first request.
+- hard-core, both attempts: a free lemma is available. Theorem 2 prices bare large fields by chessboard: the probability that all plaquettes of a set A have beta s_p >= K is at most exp(-|A|(K/C - C')/24), with no RG. Credit Froehlich, Israel, Lieb and Simon for the method.
+- witness, when opened: the endpoint is in Text section 11. A separated lower bound is the whole of what is left; RP gives S_2(f, theta f) >= 0 and nothing more.
+
+## Text
+
+### 0. Model and notation
+
+Dyadic lattices. a = 2^-n, L = 2^M, Lambda = (aZ/LZ)^4, |Lambda| = (L/a)^4. Links carry U_b in SU(2), Haar probability measure. For a plaquette p, s_p = 1 - (1/2) Tr U_p, which lies in [0,2] and is unchanged by orientation or base point. W = sum over the 6|Lambda| plaquettes of s_p. The law is d mu_beta = Z(beta)^-1 exp(-beta W) prod dU_b.
+
+Field. e_a(x) = (1/4) sum of s_p over the 24 plaquettes with corner x, so sum_x e_a(x) = W. It is invariant under the hypercubic group fixing x. Field normalization: O_a(x) = a^-4 (e_a(x) - <e_a>). Smeared: O_a(f) = a^4 sum_x f(x) O_a(x) = sum_x f(x)(e_a(x) - <e_a>), for f continuous with compact support.
+
+Sources. For a complex plaquette function sigma, G(sigma) = < exp(sum_p sigma(p) s_p) >. A test function f gives the source sigma_f(p) = (1/4) sum over the corners x of p of f(x), so |sigma_f| <= ||f||_inf, and G(sigma_f) = <exp(sum_x f(x) e_a(x))>. G is entire on any finite lattice.
+
+Block weights. For a closed cube B of side ell = 2^j a with corners in ell Z^4, and a plaquette p in B, w_B(p) = 2^-c(p), where c(p) counts the coordinates mu in which p lies in a hyperplane x_mu in ell Z. W_B = sum over p in B of w_B(p) s_p. Each p lies in exactly 2^c(p) closed blocks, so sum_B W_B = W. For a dyadic box the same holds with side lengths ell_mu.
+
+Status words. Derived means written out and checked in this file. Believed means not proved. Nothing below is taken from a paper without proof here.
+
+### 1. Reflections and the chessboard estimate
+
+**Lemma 1.1 (site-plane RP; Osterwalder and Seiler for the Wilson action, proof written here).** Let c in aZ. The map r: x_mu -> 2c - x_mu fixes the two planes x_mu = c and x_mu = c + L/2. Let H_+ be the closed arc between them, and A_+ the bounded functions of the links in H_+. Put Theta F(U) = conj F(rU), with (rU)_b = U_{r(b)}. For any real plaquette couplings with beta(r p) = beta(p), the law proportional to exp(-sum beta(p) s_p) has mu(Theta F . F) >= 0 for F in A_+.
+
+Proof. Every plaquette lies in one closed half, because a link never crosses a site plane. Let Y be the links on the two planes, X_+ and X_- the remaining links of the two halves. The weight is g(Y) h(X_+,Y) h(r X_-,Y), with g and h real and positive. Reflection fixes Y and carries X_- to X_+ preserving Haar. So Z mu(Theta F . F) = int g(Y) | int F(X_+,Y) h(X_+,Y) dX_+ |^2 dY >= 0. No sign of beta(p) is used. []
+
+**Lemma 1.2 (chessboard; method of Froehlich, Israel, Lieb and Simon, proof written here).** Let ell = 2^j a and L = 2^m ell in each direction, and let B_k, k in (Z/2^m)^4, be the closed blocks. For k, k' let r_{k',k}: B_{k'} -> B_k be the composition of block-face reflections, translation in coordinates where k'-k is even and reflection where it is odd. For F_k bounded and supported on links of B_k put F_k^[k'] = F_k o r_{k',k}, conjugated when the number of reflections is odd. Then for any reflection-symmetric real couplings
+
+|< prod_k F_k >| <= prod_k < prod_{k'} F_k^[k'] >^(2^-4m).
+
+Proof. One direction. Write the product as G_+ G_- over the two arcs cut by the planes 0 and L/2. Cauchy-Schwarz for the form of Lemma 1.1 gives |<G_+ G_->|^2 <= <G_+ Theta G_+> <Theta G_- G_->, and both right factors are nonnegative. Each has a pattern symmetric about plane 0. Cut it by the planes L/4, 3L/4. The half [L/4, 3L/4] contains the slabs of the outer quarter of G_+ and their mirror images, the other half the inner quarter and mirror images. Cauchy-Schwarz again gives two patterns, each built from a single quarter and its reflections. After m steps each pattern is one slab function and all its mirror images, with total exponent 2^-m on each of the 2^m patterns. For the four directions apply this in turn: in direction 1 take the slab function to be the product over the other three block indices. Each resulting pattern is again a product over block indices in direction 2. []
+
+**Theorem 1 (constant shift, exactly which shapes).** For real t_k,
+
+< prod_k exp(t_k W_{B_k}) >_beta <= prod_k ( Z(beta - t_k)/Z(beta) )^(1/N),  N = 2^4m,
+
+for all real t_k without restriction. The same holds for dyadic boxes.
+
+Proof. s_p is reflection invariant and the weights are carried to each other, so W_{B_k} o r_{k',k} = W_{B_k'}. The pattern of block k is exp(t_k sum_{k'} W_{B_k'}) = exp(t_k W). Apply Lemma 1.2. []
+
+What is and is not permitted.
+- Among reflections in coordinate planes, site planes with closed blocks and boundary weights 2^-c are the only arrangement giving an exact constant shift. A link-bisecting plane leaves the crossing plaquettes outside every block, and a source must lie in a half-space, so its pattern is beta + t on the blocks and beta on the crossing plaquettes. That is not a constant shift. Crossing couplings must in addition be nonnegative for link planes.
+- Complex s. Theta exp(s W_B) = exp(conj(s) r W_B), so the pattern has s on blocks of even parity and conj(s) on blocks of odd parity. It is a position-dependent pattern, and it is positive, so Z[beta - s, beta - conj s] > 0 automatically. Z(beta + s) with non-real constant s never appears on the right of a chessboard bound. Since |exp(s W_B)| = exp(Re s W_B), the only constant-shift bound is the one at Re s. **A constant-shift chessboard consumes real s only.** A complex disc in UV-EXT is not used by this step.
+
+**Corollary 1.3 (second order).** Let W_1, W_2 be the block energies of two blocks of one grid, and h'' = Var(W)/|Lambda|. Then Var(W_B) <= |B| h'', so |Cov(W_1, W_2)| <= |B| h'', and with D_i = |B| h'' - Var(W_i) >= 0, also |Cov(W_1,W_2)|^2 <= D_1 D_2.
+
+Proof. Theorem 1 at t_1, t_2 reads Phi(t_1,t_2) := log<exp(t_1 W_1 + t_2 W_2)> <= sum_i (1/N) log(Z(beta - t_i)/Z(beta)). Both sides vanish at the origin, and have the same gradient, since <W_B> = <W>/N by the reflection symmetry of the blocks. So the Hessian of the difference at the origin is positive semi-definite. It is [[D_1, -Cov],[-Cov, D_2]]. []
+
+Note D_i = Cov(W_i, W - W_i): the defect is the covariance of the block with its complement, which is not a constant-coupling quantity.
+
+### 2. Elementary pressure sandwich and local action bound
+
+Let z(beta) = int exp(-beta s(U)) dU = exp(-beta) 2 I_1(beta)/beta, and p(beta) = log Z(beta)/|Lambda|. Since I_1(x) <= I_{1/2}(x) <= e^x / sqrt(2 pi x), z(beta) <= sqrt(2/pi) beta^(-3/2) for beta > 0.
+
+**Lemma 2.1 (upper).** Z(beta) <= z(beta)^(3|Lambda|(1 - a/L)) for beta >= 0.
+
+Proof. Discard every plaquette factor except those in the planes (mu,4), mu=1,2,3, with base time t = 0, ..., T-2, T = L/a. Each factor is at most 1. Integrate the spatial links at time T-1: each occurs in exactly one kept plaquette, and by Haar invariance gives z(beta). Then time T-2, and so on down to time 1. Temporal links are spectators throughout. All remaining integrals are 1. The number of integrated links is 3(L/a)^3 (T-1). []
+
+**Lemma 2.2 (lower).** For beta >= 1, log Z(beta) >= -(9/2)|Lambda| log beta - C_1 |Lambda| - (3/2) log beta - 2, with C_1 = 48 + 3 log(15 pi/8).
+
+Proof. By gauge invariance fix a maximal tree to 1; there remain 3|Lambda|+1 links. Restrict each to angle theta <= eps = beta^(-1/2). A plaquette is a product of at most 4 such elements, so its angle is at most 4 eps, and s <= 8 eps^2; thus beta W <= 48 |Lambda|. Haar measure of {theta <= eps} is (2/pi) int_0^eps sin^2 >= (8/(15 pi)) eps^3 for eps <= 1. []
+
+**Theorem 2 (local action bound; bare large-field price).** Let beta >= 2. There is C_4 such that for any collection of distinct blocks B_k of one grid,
+
+< exp((beta/2) sum_k W_{B_k}) > <= exp(C_4 sum_k |B_k|), provided log beta <= L/a.
+
+Here |B| means (ell/a)^4 sites. Hence P(W_B >= K|B|/beta for all the blocks) <= exp(-(K/2 - C_4) sum|B_k|). Taking ell = a and using s_p <= 4 W_cell for a cell containing p, the probability that all plaquettes of a set A have beta s_p >= K is at most exp(-(K/8 - C_4)|A|/24). Also <s_p> <= C_5/beta.
+
+Proof. Put t = beta/2 on the listed blocks and 0 on the others in Theorem 1. By Lemmas 2.1, 2.2, p(beta/2) - p(beta) <= (9/2) log 2 + C_1 + (9/2)(a/L) log beta + o(1), which is at most C_4. Then Chebyshev. For <s_p>: by hypercubic and translation invariance <W> = 6|Lambda|<s_p>, and log Z is convex in beta with derivative -<W>, so <W>_beta <= (log Z(beta/2) - log Z(beta))/(beta/2). A set A of plaquettes meets at least |A|/24 distinct cells. []
+
+Remark. This uses nothing but compactness and RP, is uniform in volume and spacing, and is a price per plaquette exp(-K/8 + C), good once K is large. It is a statement at the bare scale only.
+
+### 3. The contact term is a theorem
+
+Let A(kappa) = I_2(kappa)/I_1(kappa), v(kappa) = A'(kappa) = 1 - 3A/kappa - A^2, which is the variance of cos(theta) under the density proportional to exp(kappa cos theta) sin^2 theta, and u(kappa) = kappa^2 v(kappa). Then u > 0 is continuous on (0,infinity) with u(infinity) = 3/2, so u_1 = inf over kappa >= 1 of u is positive. (Numerically u_1 = u(1) = 0.22.)
+
+**Theorem 3.** There is beta_0 such that for beta >= beta_0, log beta <= L/a, and every closed block B of side ell >= 4a,
+
+Var(W_B) >= (u_1/64) |B| / beta^2,  and Var(W) >= (u_1/4) |Lambda| / beta^2.
+
+Proof. Let I be the links (x,1) with x_2+x_3+x_4 even, restricted for W_B to links all of whose six plaquettes are interior to B, with weight 1. Two such links share no plaquette. So |I| >= |B|/32 for ell >= 4a, and |I| = |Lambda|/2 for the torus. Let G be the sigma-field of all other links. Given G the links in I are independent, and the part of W_B depending on b in I is w_b = 6 - (1/2) Tr(U_b A_b), with A_b the sum of six staples. A sum of six SU(2) elements is r_b R_b with R_b in SU(2) and r_b in [0,6]. The conditional law of V = U_b R_b is proportional to exp(beta r_b (1/2) Tr V) dV. So Var(w_b | G) = r_b^2 v(beta r_b) = u(beta r_b)/beta^2. Further r_b >= (1/2) Tr(U_b A_b) = 6 - w_b, so beta r_b >= 1 once w_b <= 5, and P(w_b > 5) <= 6<s_p>/5 <= 1/2 for beta >= beta_0 := 12 C_5/5 by Theorem 2. Var(W_B) >= E Var(W_B | G) = sum_b E u(beta r_b)/beta^2 >= |I| (u_1/2)/beta^2. []
+
+**Corollary 3.1 (field form).** With physical block volume V_B, Var(O_a(1_B)) >= c V_B a^-4 / beta(a)^2. On any trajectory with beta(a) = o(a^-2) this diverges. Hence no exponential moment of a centred block energy, whatever the centring, is uniform in a: an exponential moment bound would bound the variance.
+
+**Corollary 3.2 (UV-EXT without subtraction is false).** Suppose |log Z(beta+s) - log Z(beta)| <= C V for real |s| <= rho. Then log Z(beta+s) + log Z(beta-s) - 2 log Z(beta) <= 2CV. The left side is the double integral of Var(W) at couplings near beta, so it is at least s^2 (u_1/4) |Lambda| / (beta+|s|)^2. Thus (u_1/4) rho^2 a^-4 / (beta+rho)^2 <= 2C, which fails as a -> 0. Any subtraction must have even part in s of size at least (u_1/8) s^2/(beta+|s|)^2 per site, so a term linear in s is not enough.
+
+**Remark 3.3 (leading-order values; computed, not used in any proof).** In the Gaussian approximation, s_p = (1/8) sum_a (F_p^a)^2, the plaquette field has covariance (4/beta) P with P the orthogonal projector onto exact two-forms, and Cov(s_p, s_q) = (3/(2 beta^2)) P_pq^2. Thus h''(0) = (3/(2 beta^2)) Tr P / |Lambda| = (9/2)/beta^2 per site, matching -(9/2) log beta. Across one site plane, by the Markov property, Cov(W_+, W_-) = Var(E[W_+ | plane field]) = n/(8 beta^2), with n = 6 gauge-invariant modes per plane site, so (3/4)/beta^2 per plane site. Hence the block defect D_B = |B| h'' - Var(W_B) has a nonzero surface term, of order a^-3 in physical units. Numerical check in `checks/upper-chain_gaussian.py`.
+
+### 4. No constant-coupling implication
+
+**Theorem 4.** On (Z/T)^4, T even, let phi be the massive lattice Gaussian free field with covariance G_m = (-Delta + m^2)^-1, and xi independent standard white noise. For c > 0 and 0 <= b^2 <= c m^2 put
+
+eps(x) = sqrt(c - b^2/m^2) xi(x) + b phi(x).
+
+Then:
+(a) Every member is reflection positive for site planes on functions of (xi, phi) on a closed half, so Lemma 1.2 applies to it.
+(b) E exp(t sum_x eps(x)) = exp(c t^2 |Lambda|/2) for every complex t, every T, and every b. So every member has literally the same constant-coupling partition function, with zero remainder after the subtraction c t^2 |Lambda|/2.
+(c) For x != y, Cov(eps(x), eps(y)) = b^2 G_m(x-y).
+
+Take m = m_* a. At b = 0 separated correlators vanish. At b^2 = c m^2, using a^-2 G_{m_* a}(x/a) -> (m_*/(4 pi^2 |x|)) K_1(m_* |x|), the field a^-4 eps has separated two-point function asymptotic to c a^-4 m_*^3 K_1(m_*|x|)/(4 pi^2 |x|).
+
+Proof. (a) Both Gaussian fields have the Markov property on a site plane and mirror symmetry, so the formula of Lemma 1.1 holds with conditional expectations. (b) Var(sum eps) = |Lambda|(c - b^2/m^2) + b^2 |Lambda|/m^2 = c|Lambda|, since sum_y G_m(x-y) = 1/m^2. (c) is immediate. The asymptotic is the standard convergence of the lattice massive Green function. []
+
+**Reading.** Any inequality that consumes only reflection positivity and t -> Z(t) on all tori must hold for the whole family, so it cannot bound separated correlators of the normalized field better than c a^-4. This is sharp against the elementary bound of Corollary 1.3, |Cov(W_1,W_2)| <= |B| h'', which is the same a^-4. The family is a statement about the method. It says nothing about the true correlator of Yang-Mills, which is believed finite. What is missing from the constant-coupling data is everything at non-zero momentum.
+
+### 5. The volume-uniform complex disc is infrared
+
+**Proposition 5.** Fix a and beta. Suppose that for all L in a sequence tending to infinity, Z_L(beta+s) != 0 on |s| < rho and |log Z_L(beta+s) - log Z_L(beta) - |Lambda| h(s)| <= C L^4 there, with h locally bounded and independent of L. Then the infinite-volume pressure p_infinity is real-analytic on (beta - rho, beta + rho).
+
+Proof. f_L(s) = (log Z_L(beta+s) - log Z_L(beta))/|Lambda| is analytic on the disc, and |f_L - h| <= C a^4, so {f_L} is a normal family. Any limit is analytic. On the real segment f_L converges to p_infinity(beta+s) - p_infinity(beta): periodic pressures converge along L = 2^M because |log Z_{2L} - 2^4 log Z_L| is bounded by a constant times beta times the number of plaquettes on the cut surfaces. []
+
+**Consequence.** UV-EXT as drafted, with disc and constant independent of the volume, implies no bulk transition on an interval around every beta(a), hence on a half-line, since the trajectory has steps of order one per doubling. That is an open infrared statement, and a UV analysis that stops at a fixed scale a_K does not deliver it, because the remaining integral over (L/a_K)^4 coarse cells is uncontrolled at complex coupling. With L fixed, or with a source of bounded support, this difficulty is absent; see section 7. For real s the volume-uniform form has no such implication and remains plausible, but nothing downstream consumes it once section 7 replaces it.
+
+### 6. Real form: the interior estimate and the Markov reduction
+
+For a site x and integer r >= 2 let B(x,r) be the closed cube of half-side r a at x, and dB(x,r) the links in its boundary. Let psi_{x,r} = E[ e_a(x) - <e_a> | U on dB(x,r) ].
+
+**Definition (IE_p).** There are c_*, and A_p for p >= 2, such that for all a <= a_0, L, x, and r with c_* <= r and r a <= 1,
+
+|| psi_{x,r} ||_{L^p(mu)} <= A_p (r^-1)^4.
+
+For r a > 1 the case r a = 1 serves, by the tower property. L^infinity with A_p = A is the sup form, with the supremum over all boundary configurations. Below c_*, compactness gives the bound with A = 12 c_*^4, since 0 <= e_a <= 12. The statement refers to a only through the cap ra <= 1.
+
+**Theorem 6 (Markov reduction).** Let x_1, ..., x_n be distinct, with no wrap, and delta_i = min_{j != i} |x_i - x_j|. Then IE_n implies
+
+| E prod_i O_a(x_i) | <= prod_i ( A_n C_0 min(delta_i, 1)^-4 ),  C_0 = 12 (15 + 5 c_*)^4, taking A_n >= 1,
+
+uniformly in a, L and placement. Equivalently, the moment bound (M) of the existing program holds with q_log = 0 as soon as A_n <= A_0 n^b0. With the sup form, b_0 = 0.
+
+The same proof gives the smeared form. If f_i are supported in the interior of closed cubes B_i that are pairwise disjoint and do not touch, then E prod_i O_a(f_i) = E prod_i E[O_a(f_i) | U on dB_i], which is at most prod_i || E[O_a(f_i) | U on dB_i] ||_n.
+
+Proof. Let r_i = floor(delta_i/(5a)), capped so that r_i a <= 1, and S = {i : r_i >= max(2, c_*)}. Sup-norm distance is at least half of Euclidean distance in R^4, so for i, j in S, r_i a + r_j a <= (delta_i + delta_j)/5 <= (4/5)|x_i - x_j|_inf, and the cubes B_i = B(x_i, r_i), i in S, are pairwise disjoint and do not touch, because (1/5)|x_i-x_j|_inf >= a when delta >= 10a. Every other point x_j is at distance at least delta_i >= 5 r_i a from x_i, so its clover lies outside B_i.
+
+Let Y be the set of links on the union of the dB_i. The Wilson weight is a product over plaquettes. A link in closed B_i not lying in dB_i has all coordinates transverse to it strictly inside the cube, so every plaquette containing it lies in closed B_i. Thus, given U on Y, the interiors of the B_i, and the exterior, are conditionally independent, and the conditional law of the interior of B_i depends only on U on dB_i. For r_i >= 2 the clover of x_i lies in the interior. Hence
+
+E[ prod_i (e_a(x_i) - m) | U on Y ] = prod_{i in S} psi_{x_i, r_i} . E[ prod_{j not in S} (e_a(x_j) - m) | U on Y ].
+
+The last factor is at most 12^|S^c| in modulus, since 0 <= e_a <= 12. Take expectations and use Hoelder with |S| equal exponents, then ||.||_|S| <= ||.||_n on a probability space. Finally a^-4 A_n r_i^-4 = A_n (r_i a)^-4 <= A_n 10^4 min(delta_i,1)^-4 for i in S, since r_i a >= delta_i/10 when uncapped. For j not in S, delta_j < 5 a (max(2,c_*) + 1) <= (15 + 5 c_*) a, and a^-4 . 12 <= C_0 delta_j^-4. []
+
+**What this replaces.** In the existing program (M) needed all-order compatible marked transport, or outer joint cumulants. Here it needs one number per scale for one observable and p = n. No analyticity, no conditional clustering, no cumulants. RP is not used. For n = 2 and a reflection pair, by Lemma 1.1, ||psi||_2^2 is exactly the reflected two-point function, so IE_2 is equivalent to (M) at n = 2 on reflected pairs, when the cube is replaced by the slab between two site planes. So IE_p is not a stronger requirement than (M) at p = 2.
+
+**The same statement for other local fields.** Replace e_a(x) by any bounded gauge-invariant function F of the links of a fixed finite neighbourhood of x, with mean subtracted. Theorem 6 goes through unchanged. The bound (a/D)^4 is expected for all such F, since there is no gauge-invariant local operator of dimension below four other than the identity (believed, not proved). So the local observable class of T1 can be taken to be all such F.
+
+**Sanity check of the statement.** In two dimensions plaquettes are exchangeable given the boundary holonomy h of a disc of n plaquettes, with Z_n(h) = sum_j (2j+1) b_j(beta)^n chi_j(h), b_j = exp(-beta)(2/beta) I_{2j+1}(beta). Then E[s_p | h] = -(1/n) d/dbeta log Z_n(h). At fixed tau = n/beta and n large this is a constant plus (tau^2/n^2) d/dtau log K_tau(h), with K the heat kernel. Hence the oscillation in h is O(n^-2) = O((a/D)^4) with a constant uniform as tau -> 0, because the angle of h is at most pi. The boundedness of the angle, compactness, is what makes the sup form hold. Numbers in `checks/upper-chain_ie2d.py`.
+
+### 7. The proposed interface
+
+Let Y, Y' be compact subsets of R^4 with dist(Y,Y') >= delta. Let |Y| be the Lebesgue measure of the a-neighbourhood of Y.
+
+**Definition (UV-LOC-C).** There are functions rho(v) > 0, nonincreasing, and K(v, v', delta), nondecreasing in v, v' and nonincreasing in delta, and a_0(delta), such that for all a <= a_0, all L with the supports inside a cube of side L/2 (no wrap), and all complex sources sigma, tau supported in Y, Y' with |sigma| <= rho(|Y|), |tau| <= rho(|Y'|):
+
+G(sigma), G(tau), G(sigma+tau) are non-zero on this polydisc, and with the branch of log that vanishes at the origin
+
+| log G(sigma+tau) - log G(sigma) - log G(tau) | <= K(|Y|, |Y'|, delta).
+
+The bound does not depend on the positions of Y and Y', only on the two measures and on the lower bound delta for their distance. No subtraction appears. Any local counterterm of range below delta is additive in sigma and tau and cancels.
+
+**Definition (real form with bilinear factor, fallback).** For real sources, and for all n, the n-fold mixed difference Delta_n obeys |Delta_n(sigma_1,...,sigma_n)| <= K_n prod_i ||sigma_i||_inf. Without analyticity the factor prod ||sigma_i|| is needed, because a real bound on a function does not bound its mixed derivative. A counterexample is at REALONLY section 3.
+
+**Theorem 7 (UV-LOC-C implies all separated moments).** Let f_1,...,f_n be supported in pairwise disjoint compact sets with mutual distance at least delta, and ||f_i||_inf <= 1. Put v = |union Y_i| and rho_n = rho(v). For n >= 2,
+
+| kappa_n(e(f_1),...,e(f_n)) | <= 2^(n-1) K(v, v, delta) rho_n^-n,
+
+and hence
+
+| E prod_i O_a(f_i) | <= M_n(v,delta) prod_i ||f_i||_inf,  M_n = sum over partitions pi of [n] without singletons of prod_{B in pi} 2^(|B|-1) K(v,v,delta) rho_n^(-|B|).
+
+Proof. Let Lam(tau) = log G(tau). For t in C^n set Delta_n(t) = sum_{I subset [n]} (-1)^(n-|I|) Lam(sum_{i in I} t_i sigma_i), with sigma_i = sigma_{f_i}. Only the term I = [n] depends on all the t_i, so d/dt_1...d/dt_n Delta_n(0) = kappa_n, the joint cumulant. Put D(sigma,tau) = Lam(sigma+tau) - Lam(sigma) - Lam(tau). For I subset {2,...,n} with tau_I = sum_{i in I} t_i sigma_i, Lam(t_1 sigma_1 + tau_I) - Lam(tau_I) = D(t_1 sigma_1, tau_I) + Lam(t_1 sigma_1). Summing with signs and using sum_I (-1)^(n-1-|I|) = 0, Delta_n = sum_{I subset {2..n}} (-1)^(n-1-|I|) D(t_1 sigma_1, tau_I). Hence |Delta_n| <= 2^(n-1) K on |t_i| <= rho_n, applying UV-LOC-C with Y = Y_1 and Y' = union_{i>=2} Y_i. Cauchy's formula on the polydisc gives the cumulant bound. Centred moments are sums over partitions without singletons of products of cumulants, and each block involves separated supports. []
+
+**Proposition 7.3 (polymer form implies UV-LOC-C).** Suppose log G(sigma) = c(sigma) + sum_{k <= K} sum_X A_k(X; sigma|_X) + B(sigma), where c is a sum of terms each depending on sigma restricted to a set of diameter below delta/2, X runs over connected unions of cells of side a_k = 2^k a, A_k(X; 0) = 0, |A_k(X;sigma)| <= eps exp(-kappa |X|_k) on |sigma| <= rho, |X|_k is the number of cells, a_K is fixed and physical, and B(sigma) is analytic with |B(sigma+tau) - B(sigma) - B(tau)| <= C(|Y|+|Y'|) a_K^-4 for the final coarse integral. If kappa exceeds the lattice-animal constant then
+
+K(|Y|,|Y'|,delta) <= C' eps min(|Y|,|Y'|) delta^-4 + C (|Y|+|Y'|) a_K^-4.
+
+Proof. In D(sigma,tau), c and every polymer that misses Y or Y' cancel, since such a term depends on only one of the sources. A polymer meeting both has at least delta/a_k cells. The number of connected X of m cells containing a given cell is at most c^m. So the scale-k sum is at most 2 eps (|Y|/a_k^4) sum_{m >= delta/a_k} c^m exp(-kappa m) <= C eps (|Y|/a_k^4) exp(-kappa' delta/a_k), and sum_k (delta/a_k)^4 exp(-kappa' delta/a_k) converges. The terms with a_k > delta have at least one cell and are bounded by C eps |Y|/a_k^4, also summable to C eps |Y| delta^-4. []
+
+The last term is the infrared trivial bound. In a final coarse integral the source acts by a bounded function of the coarse field, and a ratio of averages of a bounded exponential is bounded with no estimate on the coarse measure. **So the local form needs no infrared control**, in contrast to Proposition 5. The complex radius is limited at the coarse scale by requiring the source term below 1 in sup norm, which is why rho depends on |Y| and need not be uniform as |Y| grows.
+
+**Lemma 7.2 (torus reduction).** Let P be even in lattice units, L = 2^m P. Let w be a complex plaquette source on the torus of side L, invariant under translations by P, and with w(r p) = conj w(p) for each reflection r in a coordinate hyperplane at a multiple of P/2, and real on plaquettes lying in those hyperplanes. Then, with Z_L[w] = int exp(-beta W + w.s),
+
+0 <= Z_L[w] <= Z_P[w]^((L/P)^4),
+
+with the same pattern on the torus of side P. In particular Z_L(beta) <= Z_P(beta)^((L/P)^4), so the periodic pressure p_L is nonincreasing along L = 2^m P.
+
+Proof. One direction at a time, with arbitrary sizes in the others. Let L' be a multiple of P, and let A(eta, eta') be the slab partition function between link data eta on x_1 = 0 and eta' on x_1 = L', with in-plane plaquettes of the two end planes split evenly. The midplane x_1 = L'/2 is a reflection plane of the pattern. Conditioning on its links zeta, the weight of the upper half is the conjugate of the reflected weight of the lower half, and the midplane weight is positive because w is real there. So A(eta, eta') = int dzeta g(zeta) B(eta, zeta) conj B(eta', zeta), and A is a positive semi-definite operator on L^2(d eta), with continuous kernel on a compact space, hence trace class with Tr A = int A(eta,eta). Now Z on side L' is Tr A and Z on side 2L' is Tr A^2, because translation by L' preserves the pattern. For a positive semi-definite trace-class A, Tr A^2 <= (Tr A)^2. Iterate from L down to P, then in the other three directions. []
+
+Check: 2D Z_2 gauge theory has Z_T proportional to (cosh b)^(T^2) + (sinh b)^(T^2), with the proportionality constant 2^(T^2+1) removed by normalizing the link measure, and indeed (c^4+s^4)^4 >= c^16 + s^16.
+
+**Definition (UV-CT, the proposed replacement of UV-EXT).** Fix a dyadic physical scale a_*, and let Tor be the torus of side P = 2 a_*, cut into its 16 closed blocks of side a_*. Fix rho, Lam > 0 and c, c_F >= 0. Let W be the set of complex plaquette sources on Tor with |w| <= rho and Lipschitz constant at most Lam in physical units, allowed to depend on the orientation of p. For a dyadic on the trajectory there is a function E = E_a on W, E(0) = 0, analytic in w on finite-dimensional polydiscs, such that:
+
+- (CT1) For w supported in one block at positive distance from its faces, with w^pat its reflected pattern (w on even images, conj w on odd images): <exp(w^pat . s)>_Tor <= exp( Re E(w^pat) + c ). The left side is nonnegative by RP.
+- (CT2) E(w o g) = E(w) for lattice symmetries g of Tor, and E(conj w) = conj E(w).
+- (CT3) For sources w_1, ..., w_m in W whose supports have measure at most v and mutual distances at least eta, with the sum in W: | E(sum_k w_k) - sum_k E(w_k) | <= m tau(v, eta), with tau independent of a.
+- (CT4) Real, constant coupling, s = 0. For all L = 2^m P: log Z_L(beta) >= (L/P)^4 log Z_Tor(beta) - c_F (L/a_*)^4. (The reverse inequality is free, by Lemma 7.2.)
+
+All constants are independent of a and L. Credit and scope: the form with a counterterm and position-dependent sources is the one the mapped hard-core attempt reports from the Sussman-Alpoge account (Text 4.4 there, with bounds on the whole torus); I have not read that account. The conjugate pattern, the reduction to one torus by Lemma 7.2, and the separation of the volume dependence into the source-free CT4 are stated and proved here.
+
+Reading. Only one fixed physical torus carries sources. E is the local counterterm. Its quadratic part in w contains the contact term sum_x w(x)^2 h''/2, and a gradient term of order a^-2 (see section 3 and Remark 3.3). The bound is one-sided on a nonnegative number, so zeros of Z at non-symmetric sources are irrelevant. All volume dependence sits in CT4, which is a real, source-free statement: on the side of the free inequality, the pressure cannot drop by more than c_F (a/a_*)^4 per site between Tor and any larger torus. This is the role left for the constant-coupling statement of the original UV-EXT. It is natural for a hard core with a local vacuum counterterm: both sides have the same vacuum density at scales below a_*, and the remaining coarse integral is bounded below by restricting to small coarse fields. A constant shift at real s alone is CT1 for constant w, and by Theorem 4 that cannot suffice.
+
+CT4 cannot be proved by trivial Dirichlet gluing, which loses a surface term of order a^-3 per block. At fixed physical volume with L = P, CT4 is empty, and the theorem below gives a limit on the torus without it.
+
+Physical reading of CT4 (believed, not used). Z_{2L}/Z_L^2 = Tr A^2/(Tr A)^2 is the inverse of the effective number of states of the transfer operator A over time L, on a spatial torus of side L. So CT4 says that this effective number is bounded per cell of size a_*, uniformly in a. It is a nuclearity bound on the reconstructed theory at finite temperature and volume, which is expected for a theory with finitely many light fields per unit of phase space.
+
+**Theorem 7.4 (UV-CT gives volume-free, cutoff-free cumulants).** Assume UV-CT. Let n >= 1 and let f_1, ..., f_n be smooth with supports in balls of radius eps <= a_*/(32 n) and mutual distance at least delta. Put |||f||| = max(||f||_inf / rho, Lip(f)/Lam), and A = exp( n (c/16 + c_F + tau(v, min(delta, a_*/(32 n)))) ), with v the measure of a ball of radius eps + 2a. Then, for all small a, all L = 2^m P beyond no-wrap, and all positions,
+
+| kappa_I(e(f_i), i in I) | <= 2^|I| |I|! A^|I| prod_{i in I} |||f_i|||  for I subset [n], |I| >= 2,
+
+and the centred moment E prod_i O_a(f_i) is the sum over partitions without singletons of products of these. The bound does not depend on a, L, or positions, and is nonincreasing in delta.
+
+Proof. Translate by a lattice vector y so that every support is at distance at least eta_0 = a_*/(64 n) from the planes of the grid of side a_*. For one support and one direction the bad values of y_mu mod a_* have fraction at most 2(eps + eta_0)/a_* <= 3/(32 n), so over n supports the bad fraction in each direction is at most 3/32 < 1, and y can be chosen direction by direction. The law and the source class are invariant under translation. Each support lies in one open block. Let I_k be the indices with support in block k. Rescale so that |||f_i||| = 1, let w_i(t_i) = t_i sigma_{f_i}, |t_i| <= 1, and w_k = sum_{i in I_k} w_i. For a source in block k let E(.) mean E of its translate to block 0 of Tor.
+
+Apply Lemma 1.2 with F_k = exp(w_k . s), and 1 on empty blocks. With N = (L/a_*)^4,
+
+| < prod_i exp(w_i . s) >_L | <= prod_k ( Z_L[w_k^per] / Z_L(beta) )^(1/N),
+
+each ratio nonnegative. The pattern w_k^per satisfies the hypothesis of Lemma 7.2 with period P, so Z_L[w_k^per] <= Z_Tor[w_k^pat]^((L/P)^4), and (L/P)^4 / N = 1/16. By CT4, Z_L(beta)^(1/N) >= Z_Tor(beta)^(1/16) exp(-c_F). So each factor is at most <exp(w_k^pat . s)>_Tor^(1/16) exp(c_F), and by CT1 at most exp( (1/16) Re E(w_k^pat) + c/16 + c_F ).
+
+The source w_k^pat is a sum of 16 |I_k| bumps at mutual distance at least min(delta, 2 eta_0). By CT3 and CT2, (1/16) Re E(w_k^pat) <= sum_{i in I_k} Re E(w_i) + |I_k| tau. Each image has E equal to E(w_i) or its conjugate. Therefore
+
+| < prod_i exp(w_i . s) >_L | <= exp( sum_i Re E(w_i) ) A.
+
+Define Ztilde(t) = exp( - sum_i E(t_i sigma_{f_i}) ) < exp( sum_i t_i f_i . e ) >_L. It is analytic on the polydisc |t_i| < 1, Ztilde(0) = 1, and |Ztilde| <= A there. For a subset B of [n], Cauchy gives |d_B Ztilde(0)| <= A. Since sum_i E(t_i sigma_i) has no mixed derivative, for |I| >= 2 the joint cumulant is d_I log Ztilde (0). In the ring with t_i^2 = 0 this equals sum over partitions pi of I of (-1)^(|pi|-1) (|pi|-1)! prod_{B in pi} d_B Ztilde(0). So no logarithm of a function with possible zeros is used, only this finite polynomial identity at t = 0, where Ztilde(0) = 1. Hence |kappa_I| <= A^|I| sum_pi (|pi|-1)! <= A^|I| 2^|I| |I|!, using A >= 1 and the bound of the sum by the ordered Bell number. Undoing the rescaling gives the stated product. Centred moments are sums over partitions without singletons of cumulants. []
+
+**Corollary 7.5 ((SM) from UV-CT).** Assume UV-CT, and write ||f||_T = ||f||_inf/rho + Lip(f)/Lam. Let f_i be in C_c^infinity with supports of mutual distance at least delta and measure at most v after thickening by eps = a_*/(32 n). Then | E prod_i O_a(f_i) | <= M_n(v, delta) prod_i ||f_i||_T.
+
+Proof. Take a smooth partition of unity at scale eps. Each f_i becomes at most C v eps^-4 pieces with ||.||_T at most C(1 + (Lam eps)^-1) ||f_i||_T. Expand multilinearly and apply Theorem 7.4 to each term. M_n(v, delta) depends on delta only through tau(., min(delta, a_*/(32 n))), and is nonincreasing in delta. []
+
+**Theorem 7.8 (real form: no complex run of the RG).** Replace CT1 by the following real statements, with E real on real sources and CT2, CT3, CT4 as before.
+- (RCT1) For real w supported in one block at positive distance from its faces: <exp(w^pat . s)>_Tor <= exp( E(w^pat) + c ).
+- (RCT5) For real w supported in one block of the torus of side L, for all L = 2^m P: <exp(w . s)>_L >= exp( E(w) - c' ), with E(w) evaluated at the translate of w to Tor.
+
+Let f_1, ..., f_n be real with |||f_i||| <= 1, in balls of radius at most a_*/(32 n), at mutual distance at least delta. Put F_f = exp(e(f)) / <exp(e(f))>_L, positive with mean one. Then
+
+0 < < prod_i F_{f_i} >_L <= A exp(n c'), with A as in Theorem 7.4,
+
+uniformly in a, L and positions.
+
+Proof. The first part of the proof of Theorem 7.4 goes through with t_i = 1 and no conjugation: < prod_i exp(w_i . s) >_L <= exp( sum_i E(w_i) ) A. The denominator is at least exp( sum_i E(w_i) - n c' ), by RCT5. []
+
+Consequence, with every step as in Theorems 8 and 9 except as stated: take a countable family of real test functions as above, closed under dyadic translations and the hypercubic group. A diagonal subsequence gives S_n(f_1, ..., f_n) = lim < prod_i F_{f_i} >, bounded, invariant under dyadic translations and the hypercubic group, reflection positive. The OS space, T_t for dyadic t with a positive generator on the complement of the common kernel (as in Theorem 10), and unitaries for dyadic spatial shifts follow. What is lost compared to the complex form: (i) the observables are the multiplicatively normalized exponentials, not the linear field O(f); (ii) continuity in f and in real shifts, since a real bound does not bound a derivative. If the bilinear factor of the real fallback in this section is added, the linear field is recovered. What is gained: all of RCT1, RCT5, CT3 and CT4 are statements about real, positive partition functions.
+
+Note that these exponentials are not bounded uniformly in a, and <F_f^2> is of order exp(c a^-4), which is why only separated products appear.
+
+**Remark 7.6 (polymer form gives CT3).** If E(w) = sum_{j, X} e_j(X; w), with e_j(X;w) depending only on w on the neighbourhood X^+, e_j(X;0) = 0, |e_j(X;w)| <= eps_0 exp(-kappa d_j(X)) with kappa above the lattice-animal constant, then in E(sum w_k) - sum E(w_k) only polymers whose neighbourhoods meet two supports survive. Their total per support is at most C eps_0 v eta^-4, by the count in Proposition 7.3. So tau(v, eta) <= C eps_0 v eta^-4.
+
+**Remark 7.7 (scale-covariant form, for later consumers; not used for T1).** Theorem 7.4 at fixed Lam loses powers of (Lam eps)^-1 for narrow bumps. If UV-CT holds in the family a_* = 1/Lam = r for each dyadic r in [c a, 1], with uniform constants, then for each fixed n, |E prod_i O_a(f_i)| <= C_n for sup-normalised bumps of width and separation r. For each fixed n this is the bound (SP_lambda) of OSLEAF55, which feeds E0' with one all-n triple only if C_n has factorial growth in n. Theorem 7.4 as written does not give that growth, because the common translation forces eps <~ a_*/n, so the number of pieces gives (n^4)^n and more. An improvement is available if CT3 is stated for reflection arrays whose images touch at the faces, for bumps vanishing to second order there: split each f by a partition of unity subordinate to the fixed grid, with no translation, and the number of pieces per bump is at most 16. Then eps ~ a_*, A <= exp(n(c + c_F + tau)), and C_n <= C^n n!. Believed, not proved, that the hard core can deliver CT3 in that form. Its second-order Gaussian content is tested by criterion B4. T1 needs each n separately, so nothing here is on the critical path.
+
+### 8. Joint subsequence
+
+Below, (SM) means: there is a norm ||.||_T on C_c^infinity(R^4), invariant under translations and the hypercubic group, for which translations are continuous, such that for each n and all f_i with supports of measure at most v and mutual distance at least delta, for all a <= a_0(delta) and all L beyond no-wrap,
+
+| E prod_i O_a(f_i) | <= M_n(v, delta) prod_i ||f_i||_T,  with M_n nonincreasing in delta.
+
+The bound does not depend on positions. (SM) follows from each producer:
+- UV-CT, by Corollary 7.5, with ||f||_T = ||f||_inf/rho + Lip(f)/Lam;
+- IE_n, by Theorem 6, with ||f||_T = ||f||_inf and M_n = (A_n C_0 v min(delta,1)^-4)^n;
+- UV-LOC-C, by Theorem 7, with ||f||_T = ||f||_inf.
+
+**Theorem 8.** Assume (SM) along a_i = 2^-i, L_i = 2^(M_i) -> infinity. There is a subsequence and multilinear functionals S_n(f_1,...,f_n), defined for f_i in C_c^infinity(R^4) with pairwise disjoint supports, with S_0 = 1, S_1 = 0, such that for all such tuples S_n(f_1..f_n) = lim E prod O_a(f_i), with:
+(i) |S_n| <= M_n prod ||f_i||_T;
+(ii) symmetry under permutations, and reality for real f;
+(iii) invariance under all translations of R^4;
+(iv) invariance under the hypercubic group;
+(v) reflection positivity: for each axis, for finitely many monomials F_j = prod_l O(f_jl) with supports in {t > 0} and pairwise disjoint within each monomial, the matrix S(Theta F_j . F_k) is positive semi-definite, with Theta f(t,x) = conj f(-t,x).
+
+Proof. Let D be the rational finite linear combinations of tensor products of cubic B-splines on dyadic grids. It is countable, closed under dyadic translations and under the hypercubic group, and for each f in C_c^infinity and open U containing supp f, spline quasi-interpolation gives elements of D supported in U converging to f in C^1, hence in ||.||_T. There are countably many tuples from D with pairwise disjoint supports, and each has a bounded sequence by (SM). Diagonal extraction gives one subsequence with convergence on all of them. For general (f_i) enclose the supports in disjoint open sets with mutual distance delta/2 and approximate; (SM) makes the sequence Cauchy, and the limit is independent of the approximation. Lattice sampling causes no difficulty: for each fixed tuple and small a, the source lies within 2a of the support.
+(ii) holds on each lattice.
+(iii) For y dyadic and a_i small, translation by y is a lattice symmetry, the law is invariant, and sampling commutes, so S_n is invariant under dyadic y. For real y let y_l -> y dyadic. Then tau_{y_l} f_i -> tau_y f_i in ||.||_T, with supports in a fixed small neighbourhood, and (i) with its independence of position gives the limit.
+(iv) The hypercubic group acts on the torus, the law is invariant, and e_a is covariant.
+(v) For small a all clovers of all F_j lie in the closed half t >= 0, and supports avoid the wrap plane t = L/2 for large L. So F = sum c_j F_j,a is in A_+ and Lemma 1.1 gives <Theta F . F> >= 0. Theta F has supports in t < 0, so all the moments occurring are separated and converge. []
+
+Limit uniqueness, or convergence of the full sequence, is not claimed.
+
+### 9. Reconstruction on separated tests
+
+Let A_+ be the free vector space on monomials (f_1,...,f_m), m >= 0, with supports compact in {t > 0}, pairwise disjoint. B(F,G) = S(Theta F . G) is well defined on A_+ by the disjointness, and positive semi-definite by Theorem 8(v). Let N be its null space and H the completion of A_+/N. Omega = [1], ||Omega|| = 1.
+
+**Theorem 9.** Assume (SM). Then:
+(a) T_t, shift by t e_0, descends to a strongly continuous self-adjoint contraction semigroup on H, T_t = exp(-tH) with H >= 0 and H Omega = 0.
+(b) Spatial translations act by a strongly continuous unitary representation U(y) of R^3 that commutes with T_t and fixes Omega. The hypercubic group of the three spatial axes acts unitarily and covariantly.
+(c) The same holds with any of the four axes as time, by Theorem 8(iv).
+(d) For h with compact support in 0 < t < tau/2, A_tau(h)[F] = [h, T_tau F] is well defined on A_+/N, closable, with densely defined adjoint.
+(e) For supports time-ordered with gaps, S_n(f_1,...,f_n) = <Omega, A_1 T_1 A_2 T_2 ... A_n Omega>, with the indicated shifts.
+
+Proof. (a) Translation invariance gives B(F, T_t G) = B(T_{t/2} F, T_{t/2} G) = B(T_t F, G). With a(t) = B(T_t F, T_t F)^(1/2), Cauchy-Schwarz gives a(t)^2 = B(F, T_{2t} F) <= a(0) a(2t). So a(t) <= a(0)^(1 - 2^-j) a(2^j t)^(2^-j). The moments in a(s)^2 are bounded by constants independent of s, because (SM) depends only on measures and on the lower bound for the separation, so a is bounded in s. Letting j -> infinity, a(t) <= a(0) for a(0) > 0, and a(0) = 0 forces a(t) = 0. So T_t is a contraction, and it preserves N. ||(T_t - 1)[F]||^2 = a(0)^2 - 2 Re B(F,T_t F) + a(t)^2 -> 0 as t -> 0: the moments are continuous under translation, by continuity of translations in ||.||_T and Theorem 8(i). The spectral theorem then gives H. T_t Omega = Omega is clear.
+(b) U(y) preserves B and the half-space, so it is isometric, with inverse U(-y). ||(U(y)-1)[F]||^2 = 2 B(F,F) - 2 Re B(F,U(y)F) -> 0 as y -> 0, because Theta F is at negative time and U(y) F at positive time, for all y, so all moments are separated and continuous in y. Commutation with T_t and covariance hold on A_+.
+(d) Put h^#(t,x) = conj h(tau/2 - t, x), and K_G = [h^#, T_{tau/2} G]. By translating by -tau/2, B(G, (h, T_tau F)) = B(K_G, T_{tau/2} F) = <T_{tau/2} K_G, [F]>. So if [F] = 0 the left side vanishes for all G, and thus [(h, T_tau F)] = 0. The same identity shows every [G] is in the adjoint's domain, so the adjoint is densely defined and the operator closable.
+(e) <Omega, [f_1,...,f_n]> = B(1, (f_1..f_n)) = S_n, and the time-ordered monomial is the iterated application of A and shifts. []
+
+This argument follows the construction of Osterwalder and Schrader. `REC_LIB.md` sections 3 and 4 give the same steps; they are re-derived here because the test class differs (C_c^infinity in ||.||_T, with supports separated, in place of Schwartz with collision flatness). Their E0' is not needed for this part.
+
+Not delivered here, and not claimed: Lorentz covariance and Wightman functions (need O(4), and REC_CONT's hypotheses), uniqueness of the vacuum, a mass gap, sharp-time fields, or any statement about coincident points.
+
+For configurations where no coordinate strictly orders all the supports, S_n is defined and bounded (Theorem 8), but (e) does not express it. With hypercubic symmetry only, that is what exists. O(4) would remove this.
+
+### 10. Floor theorem: what is free
+
+**Theorem 10.** No input. Let B be a countable family of sequences F = (F_i), F_i a bounded measurable function of the links of Lambda_i in a bounded open set O_F, sup_i ||F_i||_inf < infinity, closed under products, conjugation, dyadic translations and the hypercubic group. Along a subsequence omega(F) = lim <F_i> exists on all of B. It is a state, invariant under dyadic translations and the hypercubic group, and reflection positive for F with O_F at positive distance from the plane. The OS construction gives T_t for dyadic t >= 0 as positive self-adjoint contractions. On the orthocomplement of the common kernel T_t = exp(-tH), so t-dependence of matrix elements is real-analytic for t > 0. Thus separated correlators are real-analytic in any coordinate along which the supports are strictly ordered.
+
+Proof. Compactness and diagonal extraction. RP as in Theorem 8(v). For T_t: boundedness replaces (SM) in the contraction argument. T_{2t} = T_t^2 with T_t >= 0 on the dyadic rationals, a family of positive self-adjoint contractions, so spectral calculus gives T_t = int lambda^t dE(lambda) on the orthocomplement of ker T_1, which equals ker T_t for all dyadic t. []
+
+**Reading.** Existence, RP and hypercubic invariance for bounded local observables cost nothing. Any claim in T1 that goes beyond this floor is either non-triviality of the limit or the existence of a local field. Bare Wilson loops of fixed size are bounded, and their limit is believed to vanish, by perimeter decay. So the floor alone can be empty, and it is not offered as a proof of T1. Without further input translations here are dyadic only: strong continuity of U(y) is not implied, because a positive definite function on a dense subgroup can be discontinuous at 0, and on these algebras contact behaviour can produce exactly that.
+
+### 11. What the endpoint gives the witness
+
+Theorem 8 and Theorem 9 deliver S_n on separated tests with RP. S_2(f, Theta f) = ||[O(f)]||^2 >= 0. If S_2 vanishes on all separated pairs, then every [O(f)] is null and the sector is trivial. A positive lower bound on one separated S_2, and a connected four-point coordinate to exclude a generalized free field, is what remains. Upper bounds do not imply either of them. Neither UV-CT nor its alternatives provide them. Exact facts available to the witness: by RP, for f symmetric under reflection in the time coordinate, t -> S_2(f, tau_(t,0) f) is log-convex and decreasing, and |S_2(f, tau_(t,y) f)| <= S_2(f, tau_(t,0) f). On any finite lattice the reflected two-point function of a non-constant local function is strictly positive (Lemma 1.1 with an analytic, non-constant conditional mean), but this is not uniform in a.
+
+### 12. Hostile pass on the newest steps
+
+Derived means written out here, with the checks below. Believed items are marked.
+
+- Theorem 1 at the weights: checked c(p) <= 2 and that the images of w_B add to 1 on every plaquette, including plaquettes in a two-face. Correct.
+- Theorem 3: conditional independence requires no plaquette to contain two links of I. Parallel links at x and x+e_1 share no plaquette, and links at x and x+e_nu, nu != 1, share one, which the parity condition excludes. Links at x and x+e_nu+e_rho have even parity difference and share none. Correct. The lower bound on r_b needs Re Tr(U_b A_b) <= 2 r_b, true for quaternions. Hypercubic symmetry of <s_p> needs equal sides; the torus is cubic. Correct.
+- Theorem 4: the family is unbounded, and Wilson energies are bounded. A proof could in principle use boundedness. Boundedness alone gives a^-4 for the field and nothing better, so the same gap remains, but I have not built a bounded exact example. Limit of the claim: Theorem 4 excludes proofs from RP plus Z(t), not proofs from RP plus Z(t) plus boundedness. Believed, not proved, that boundedness does not help.
+- Theorem 6: found and fixed a gap in the first draft. Points with small delta_i were bounded trivially but still used in the Hoelder step. The written proof now conditions only on cubes in S and keeps the others as a bounded factor. The claim that IE_2 on a slab is equivalent to reflected two-point bounds uses a slab, not a cube; the cube form with p = n is what the proof uses. A skeptic's objection is that IE_p looks like (M) in disguise. It is not equivalent at p > 2 in any way I can prove, and it is stronger than (M) for n = 2 on non-reflected pairs. Its merit is that one estimate gives all n.
+- Theorem 7.4: earlier drafts had errors, all fixed in the text. (a) sum_pi (|pi|-1)! is not at most |I|! (it is 26 against 24 at |I| = 4); replaced by the ordered Bell bound 2^|I| |I|!. (b) A block side tied to delta made M_n grow with delta, which would break the contraction proof in Theorem 9(a), where separations grow; now the block side is a_* and bumps may share a block, with CT3 separating them. (c) the union bound for the translation is per direction. The conjugate pattern is essential: at w^pat the phases of Im t survive, and the modulus bound at Re w would lose exp((Im t)^2 h'' |B|/2), which is a^-4. Hence CT1 must be supplied at complex w^pat, and not just at real shifts.
+- Lemma 7.2: positivity of A needs the midplane weight positive, hence w real on the reflection planes; our bumps vanish there. Tr A = int A(eta,eta) needs a continuous kernel on a compact space, which holds. The zero-mode worry about CT4: on small tori a naive count of Gaussian modes suggests a term in log(T) that would break uniformity. It cancels. In the abelian Gaussian theory, per colour: nonzero modes give -2 log T, the four constant modes have range 2 pi T in orthonormal coordinates because large gauge transformations reduce the holonomy range to 2 pi/T, giving +4 log T, and the gauge volume gives -2 log T. Total zero, as conformal invariance requires. I checked the same count against the exact rotor (d = 1: -(1/2) log T) and exact 2D U(1) (-log T). So CT4 is not contradicted at this order.
+- Could E be taken as log G itself, making CT1 empty? Only where G has no zeros, and then CT3 becomes the entire content. That is close to UV-LOC-C. So the form with E is no weaker in the free theory, where it is exact, but allows zeros in general.
+- Theorem 9(a): the iteration needs a(s) bounded as s grows. It is bounded because M_n does not depend on the separation beyond delta. This forced the requirement of position independence in (SM). A bound growing like exp(c s^4), as a single block containing both clusters would give, would not suffice, which is why Theorem 7.4 uses a fixed block side a_* and one factor per occupied block.
+- Proposition 7.3: the hypothesis on B(sigma) is not automatic for complex sources: boundedness of a coarse source in the exponent needs the coarse source to be bounded uniformly in the coarse field, including large fields. In UV-CT this is absorbed by asking only for an upper bound at reflection-periodic sources.
+- CT1 near large fields, a worry about a false statement. Re E contains -(Im t)^2 h''|X|/2 over a region X, so e^{-Re E} amplifies by exp(+rho^2 g^4 per fine site). If a level-j large-field block X had lost the phase cancellation for all modes finer than level j, the amplification per block would be exp(rho^2 g^4 2^{4j}), beating the suppression. I believe it does not happen: modes finer than j were integrated while the region was small at those levels, keeping the analytic source, and coarser modes number at most |X|. This is a belief about hard-core, and I flag it to them.
+- Consistency at second order. The normalization Z(a) = 1 is right: F_geom^2 relates to the trace anomaly by a coefficient finite as g_0 -> 0, so O_a has a finite limit at separated points, with S_2(D) ~ g(1/D)^4/D^8 expected, at the running coupling (believed, standard).
+- UV-CT is exact in two dimensions on the plane, since plaquettes are independent: E(w) = sum_p log(z(beta-w_p)/z(beta)), tau = 0.
+
+### 13. Numerical checks
+
+Criteria fixed first in `checks/upper-chain_criteria.md`. None is load-bearing.
+
+**`checks/upper-chain_gaussian.py`, `checks/upper-chain_gaussian_axis.py`.** All in units of 1/beta^2.
+- G1 pass: (3/2) sum P^2 per site is 4.49999571 at T = 32, exact value 4.5 (1 - T^-4).
+- G2 pass: interface covariance per plane site 0.74999 at T = 32, against the predicted 3/4. So the Markov computation in Remark 3.3 is right, including the count of modes.
+- G3 missed narrowly: on-axis local slope -9.005 between x = 4 and 8, outside the stated [-9, -7]. Reason: lattice corrections in that window, shown by G3b. Criterion left as written.
+- G3b pass at T = 128 (criterion asks T >= 256; not run larger): x^8 r(x) = 0.0968, 0.0952, 0.0946, 0.0950 at x = 16, 20, 24, 32, against 9/pi^4 = 0.0924, within 5%. This is the continuum value computed by hand, with the correlator of Maxwell field strengths. The rise near x = 40, 48 is the periodic image.
+- G4 pass: D_B = 38.05, 342.3, 2901 at ell = 2, 4, 8, all positive.
+- G5 pass: D_B/ell^3 = 4.76, 5.35, 5.67, ratio 1.06 for the last step. Limit expected 8 . (3/4) = 6, for 8 faces. So the surface term in the exact Gaussian calculation is 6 ell^3/beta^2 with corrections of order 1/ell, and D_B is order a^-3 in physical units, as claimed.
+
+**`checks/upper-chain_ie2d.py`.** Exact two-dimensional analogue, 700-digit arithmetic, angle grid of 40 points.
+- I1 pass: max of n^2 osc over the grid is 4.915 <= 6.
+- I2 pass: at tau = 0.02, n^2 osc = 4.9148 against pi^2/2 = 4.9348, within 0.4%. A first run printed -2.34 at tau = 0.02, a truncation of the character sum below the size of Z_n(pi); fixed by taking l up to pi/tau, and the row is now as above.
+- I3 pass: no change above 0.2% from n = 10^4 to 10^5 for any tau.
+
+**`checks/upper-chain_ie4d.py`.** 4D Monte Carlo of the sup form. Running at the time of writing.

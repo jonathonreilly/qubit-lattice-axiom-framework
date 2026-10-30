@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/rung_one_cell_register_carries_the_one_generation_multiplet_pattern_2026_10_21.py
+runner_sha256: bcf645a644c40d4375daa5f3ea1a137fd347ab7b069f9a26cade890eced5104e
+input_fingerprint_sha256: 3430d33fada355616c3026cb7059fd34d4041bbbbfcf679469909509efa356f5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.32
+status: ok
+----- stdout -----
+== Z. rung 1: a 2^3 cell of one-mode sites as the internal register of a super-site
+   plain content: octahedron (6, site-centred): A1+E+T1; 2^3 (8): A1+A2+T1+T2; 4^3 (64): 4A1+4A2+4E+8T1+8T2; 2^3 with j=1 phases: E+T1+T2
+[PASS] Z1 the plain 2^3 cell = A1+A2+T1+T2, so T+(A1+A2) is a rotation-invariant C^3+C^2 (a 5-mode register) inside one cell; the spin-3/2-twisted cell (mean|chi|^2 = 4 forces 2 x G3/2) has invariant subspaces of dim 0, 4, 8 only  octahedron gives T1+E (3+2) but is not a Margolus cell; 4^3 multiplicities [4, 4, 4, 8, 8]
+[PASS] Z2 spin-statistics fixes the internal action: with the spin-3/2 coarse twist, a 2pi turn is -1 only if the cell index carries a non-spinorial action (plain j=0: A1+A2+T1+T2, or j=1: E+T1+T2)
+[PASS] Z3 rung-1 tick (W x 1_8 on 8^3 sites, three mass settings): unitary, commutes with all 24 rotations about both coarse block centres, and the massless band is cos w = (cos Kx + cos Ky + cos Kz)/3 with each level 8x the CL-3 one  unitarity 3e-15, covariance 2e-15
+[PASS] Z4 exact internal symmetry: operators 1 (x) X commute with the tick for all X (commutant dim 64 = U(8)); rotation-covariant masses m(A1),m(A2),m(T1),m(T2) leave dim 20 = U(1)xU(1)xU(3)xU(3), lowest levels 1:1:3:3  K=0 level multiplicities [8, 8, 24, 24], commutant gap 32.31
+[PASS] Z5 the cell factorises canonically as C^2 (tetrahedron parity) x C^4 (body diagonal): R acts as X^[R odd] x P_diag(R). In internal momentum k in {0,pi}^3: A1 = 0, A2 = pi(1,1,1), T1 = axes, T2 = face diagonals  000:A1, 001:T1, 010:T1, 011:T2, 100:T1, 101:T2, 110:T2, 111:A2
+[PASS] Z6 the traceless rotation-invariant generators acting on one factor are unique up to scale: T3 = X/2 on C^2 (+-1/2) and B-L = (1 - 4P_A1)/3 on C^4 (1/3 x3, -1)
+[PASS] Z7 massless: independent internal unitaries on even and odd cells commute with the tick (exact U(8)_e x U(8)_o); mu and b each break it to the diagonal U(8); the 12 odd rotations exchange even and odd cells  massless 3e-17, mu 0.3: 0.26, b 0.2: 0.14
+[PASS] Z8 the rung-1 tick is real in a cell-phase gauge, so staggered pairings sum_c lam_c a_cr a_cr' are conserved too: internal symmetry SO(16) (equal masses; 28 pairings), SO(2)^2 x SO(6)^2 (covariant masses; 6), and with equal masses on T1+A1+A2 an exact SO(10) on that 5-mode register times SO(6) (13)  pairings [28, 6, 13]
+== C. charges from the forced generators (exact fractions)
+[PASS] C1 vector-like Q = a T3 + b (B-L)/2 + c F: q_e + q_p = 4c and q_n + q_nu = 4c identically; c = 0 (no fermion-number admixture) and b = a give (u, d, e, nu) = (2/3, -1/3, -1, 0)  measured |q_e + q_p|, |q_n| < ~1e-21 e
+[PASS] C2 chiral assignment (L on even cells with SU(2)_L on C^2, R on odd cells): Y = (B-L)/2 on L and T3 + (B-L)/2 on R gives the left-handed 16 with Y ratios 1:-4:2:-3:6, every anomaly zero, and Q = T3_L + Y equal on L and R  q(u,d,e,nu,p,n) = ['2/3', '-1/3', '-1', '0', '1', '0']
+== R. five modes per site (Qubit axiom changed)
+[PASS] R1 Spin(10) on one register Lambda(C^5): 16 (even) and 16bar (odd) irreducible and inequivalent, so its commutant is span{1, (-1)^N}: an invariant site term can only shift 16 against 16bar, and no register state is a singlet
+[PASS] R2 Y = N2/2 - N3/3: the even sector is one generation; so is the odd sector conjugated, in which only L and d^c are single modes (Q, u^c, e^c three-mode, nu^c five-mode)
+[PASS] R3 exchange: register operators at two sites commute up to (-1)^(|S||S'|). The only Y-neutral register states are empty and full: over the empty one the 16 are bosons; over the full one they are fermions but only the 5bar (L, d^c) is a single mode (Q, u^c, e^c are three-hole states). Either way no whole generation is elementary  measured: quarks and leptons are elementary fermions at all tested scales
+[PASS] R4 W x 1_5 (mu 0.3, b 0.2): unitarity, covariance and the band (x5) hold by the Kronecker structure; U(5) is exact, and because the CL-3 tick is real in a site gauge for every mu, b (plaquettes -1, nearest-neighbour terms imaginary), the staggered pairings are conserved too: the full Spin(10) of the register is exact  real-gauge residual 3e-14, conserved pairings 10/10
+== S. one Weyl 16 at a site: what a Spin(10)-invariant mirror-gapping term needs
+[PASS] S1 no Spin(10)-invariant bilinear pairs 16 with 16 (a mirror 16bar needs interactions; a 16-16bar Dirac mass would gap both); a spinless 16 (16 modes) has no singlet in Lambda^N for N = 1..8, so no invariant quartic at all  Lambda^1..8(16) singlets [0, 0, 0, 0, 0, 0, 0, 0]
+[PASS] S2 with the two spin components (32 modes per site): no invariant mass (Lambda^2 singlets 0), the invariant quartic is unique (Lambda^4 singlets 1, and (Phi^dag.Phi^dag)|0> is nonzero, so it is the 10-channel pair square), and the pairs Phi^p and their adjoints generate a 66-dim algebra (so(12) = so(10)+so(2)+10+10)  Lambda^2, Lambda^4 singlets [0, 1], |(Phi.Phi)^dag|0>| = 350.5, algebra dim 66
+   not run: the 2^32-state site (beyond the size cap), so no SMG gap, uniqueness or phase is claimed here
+== measured reality used
+   N_nu = 2.984 +- 0.008 (LEP Z width): the two Margolus tastes per internal state cannot both stay light
+   |q_n| < 1.5e-21 e, |q_e + q_p| ~< 1e-21 e (neutrality); LEP C_A = 2.89 +- 0.21, C_F = 1.30 +- 0.09 (SU(3) triplets)
+   parity violation (sin^2 theta_eff = 0.2315 at LEP): weak couplings are chiral
+supplied: the rung-1 rule (CL-3 at rung 1, cell modes carried in parallel), the plain internal action, the mass matrix, the chiral assignment, the 5-mode register; cited: none of the anomaly-free SMG literature is rederived.
+elapsed_seconds 3.5
+
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

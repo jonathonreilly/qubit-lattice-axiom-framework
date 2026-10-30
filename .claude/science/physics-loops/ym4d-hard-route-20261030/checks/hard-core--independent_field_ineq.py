@@ -21,6 +21,9 @@ PRE-STATED CRITERIA (written before the first run on this map; L=3 and L=5).
   without the rule and does not test it. TUNED2: rotate by theta = pi the links out of y in directions +-e_0, +-e_1, so that half of all first steps change sign and
   Xi_bar is small, on top of independent noise of size a = 0.02 on every link. RULE-EFFECT: compare |W-1| and Ratio for base=fixed and base=rule, at equal noise.
   The redesign of 5.4 is justified if Ratio(fixed) is much larger than Ratio(rule), or if min|m| is near zero for fixed only. If they agree, the rule buys nothing here, and that gets recorded.
+  ADDED BEFORE THE SEARCH RUN. The rule now uses threshold eps_0 = 0.05 and not 0.5 (Text 5.4). SEARCH: hill climbing on Ratio over link fields at L = 3, restarts from flat, a sheet, a Haar patch, TUNED2.
+  Each move changes one link in the hull, to a Haar element or a small rotation, and is kept if Ratio grows. Ratio is computed only when the denominator exceeds 1e-6.
+  PASS-SEARCH: best Ratio <= 12 sqrt(log L) = 12.6 at L = 3. FAIL-SEARCH: above it, which would need a larger C_OS, or a counterexample to (5.5). The value of the best Ratio is the output.
   Flat-background and small-sample limits: this can falsify (5.5) on these families. It cannot confirm it on all fields.
 """
 import os
@@ -29,7 +32,7 @@ import itertools, math, random, resource, sys
 
 DIM = 4
 ONE = (1.0, 0.0, 0.0, 0.0)
-EPS_RULE = 0.5
+EPS_RULE = 0.05
 S_RULE = 0.25
 
 
@@ -337,6 +340,63 @@ def run(L, quick):
     print(f"L={L}: CHARGE max |W-1| = {max(charges):.2e} ({'PASS' if max(charges) < 1e-9 else 'FAIL'} exact check)", flush=True)
 
 
+def overlay(base, d):
+    return Field(lambda s, mu: d.get((s, mu)) if (s, mu) in d else base(s, mu))
+
+
+def ratio_of(field, L, base="rule"):
+    curv, m = plaquette_W(field, L, base)
+    r, l1, l2 = rhs(field, L)
+    if r < 1e-6:
+        return 0.0, curv, m
+    return curv / r, curv, m
+
+
+def search(L, moves, seed):
+    rng = random.Random(seed)
+    o = (L - 1) // 2
+    starts = {
+        "flat": lambda s, mu: ONE,
+        "sheet": (lambda q: (lambda s, mu: q if (mu == 0 and s[0] == 1 and s[1] >= 2) else ONE))(rot(1.0)),
+        "tuned": (lambda q: (lambda s, mu: q if (mu in (0, 1) and (s == (0, 0, 0, 0) or s == shift((0, 0, 0, 0), mu, -1))) else ONE))(rot(math.pi)),
+    }
+    best_all = (0.0, None)
+    for name, base in starts.items():
+        d = {}
+        cur, _, _ = ratio_of(overlay(base, d), L)
+        print(f"  start {name}: Ratio {cur:.4f}", flush=True)
+        for it in range(moves):
+            s = tuple(rng.randint(-o, L + o) if i < 2 else rng.randint(-o, o) for i in range(DIM))
+            mu = rng.randrange(DIM)
+            old = d.get((s, mu))
+            if rng.random() < 0.5:
+                d[(s, mu)] = haar(rng)
+            else:
+                g = [rng.gauss(0, 0.3) for _ in range(3)]
+                t = math.sqrt(sum(x * x for x in g))
+                dq = (math.cos(t), *(x * math.sin(t) / t for x in g))
+                c = old if old is not None else base(s, mu)
+                d[(s, mu)] = qmul(dq, c)
+            new, curv, m = ratio_of(overlay(base, d), L)
+            if new > cur:
+                cur = new
+            else:
+                if old is None:
+                    del d[(s, mu)]
+                else:
+                    d[(s, mu)] = old
+            if it % 50 == 0:
+                print(f"    {name} it={it} best={cur:.4f} links={len(d)}", flush=True)
+            check_rss()
+        print(f"  end {name}: best Ratio {cur:.4f}, changed links {len(d)}", flush=True)
+        best_all = max(best_all, (cur, name), key=lambda r: r[0])
+    bound = 12 * math.sqrt(math.log(L))
+    print(f"L={L}: SEARCH best Ratio = {best_all[0]:.4f} from {best_all[1]}, bound {bound:.2f}: {'PASS-SEARCH' if best_all[0] <= bound else 'FAIL-SEARCH'}", flush=True)
+
+
 if __name__ == "__main__":
-    for arg in sys.argv[1:]:
-        run(int(arg), quick=int(arg) >= 5)
+    if sys.argv[1] == "search":
+        search(int(sys.argv[2]), int(sys.argv[3]), 20261030)
+    else:
+        for arg in sys.argv[1:]:
+            run(int(arg), quick=int(arg) >= 5)

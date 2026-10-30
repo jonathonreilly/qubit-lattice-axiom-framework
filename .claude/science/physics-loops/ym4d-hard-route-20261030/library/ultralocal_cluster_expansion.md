@@ -67,6 +67,10 @@ If Y = Y_1 u Y_2 with no polymer meeting both, then log Xi_t(Z) = log Xi_t(Z n Y
 
 Since b - log 2 - 1 = r, this is (2). []
 
+## Variant for local functions without a sup bound
+
+Steps 3 to 5 use only the gas form of Step 2 and the bound on z(Y). So if Xi(Z) = sum over families of disjoint connected Y_j subset Z of prod_j z(Y_j), with |z(Y)| <= 2 H_0 exp(-(kappa / 2 - 2) |Y|) for any reason, the conclusions (2) hold. This is what `parts/hard-core--independent.md`, Text 4.6, uses for cubes where H is not small and for hard cuts.
+
 ## Remarks and limits
 
 - The rate in (2) is a fixed fraction of kappa in |Y|, and so a smaller fraction of it in d(Y), namely by c_d. Dimock's tree-graph version keeps kappa - O(1) in d. If a consumer needs the sharper rate, it must rebuild that. In this project each level uses the expansion once, on freshly generated decay, so a loss of a fixed factor is paid by taking M large.

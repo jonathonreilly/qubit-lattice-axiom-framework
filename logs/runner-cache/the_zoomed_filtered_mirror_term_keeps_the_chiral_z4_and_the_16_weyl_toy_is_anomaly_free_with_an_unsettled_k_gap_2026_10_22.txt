@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/the_zoomed_filtered_mirror_term_keeps_the_chiral_z4_and_the_16_weyl_toy_is_anomaly_free_with_an_unsettled_k_gap_2026_10_22.py
+runner_sha256: 111c3d11176db0d31c6378d264ebabe29b19a54df58545d3247bcc2ac7fd24f1
+input_fingerprint_sha256: 3fa35f74ed9b1d8bed72c56da4061cb1d58242c1e1b5eb21fd97a8a05828340a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 52.68
+status: ok
+----- stdout -----
+== A. 16-Weyl toy: band, rows, symmetry search, Z16 index (exact)
+[PASS] A1 THEOREM two tastes of the realified K/R Weyl band (mirror -h, light +h, pairing w prod sin^2(k/2)): nodes only at K, R with opposite chirality; real-space real (H(-k) = H(k)*); [J, H] = 0; at L = 4 the only zeros are the 16 K modes (8 mirror + 8 light per flavour); every R mode at exactly w | off-node min|d| 0.34; chir K +1 R -1; zeros 16; R levels [0.25 0.25]
+[PASS] A2 THEOREM taste-mixing spin-twisted rows r_(alpha,+-) = (e_(alpha,1) +- e_(sigma alpha,2))/sqrt2 are orthonormal; the diagonal J maps rows to +-rows (H_int keeps Z4_J); J on one taste alone does not (broken); the cube filter vanishes at R and the rows sit on the mirror only, so light K and the whole R sector never enter H_int (light K gap 0, R gap w at every g) | |R R^T - 1| 2e-16; J8 row-overlap min 1.000; one-taste J min overlap 0.500; filter at R 2e-48
+[PASS] A3 THEOREM exhaustive search inside the band commutant (dim 8): every unitary symmetry of the taste-mixing H_int with U^2 = (-1)^F has Z16 index 0 mod 16 on the K mirror. The two J sectors are time-reversal partners (same chirality, J-charges +-1), so Z4_J is vector-like (index 0); the chiral one is Z4_N (mode number), index 16 = 0 with two tastes (8 with one: the obstruction of the one-taste toy is Z4_N, not Z4_J). With taste-diagonal rows an index-8 symmetry survives (mode phase on one taste only): the taste mixing removes it | mixing: |G| = 32, 16 Z4-type, indices mod 16 [0]; taste-diagonal rows: |G| = 128, indices [0, 8]; nu(Z4_J) = 0, nu(Z4_N) = -16
+[PASS] A4 THEOREM sign: the filtered-row propagator tables are real (rows real, band real), the 4 flavours see the same real matrix M, so every CT-INT weight is g^2n det(M)^4 >= 0 | max |Im| of the row tables 0e+00
+[PASS] A5 FINITE DIAGNOSTIC (exact ED) zero-mode atom baseline: the K-projected quartic alone (strength 64 g/L^3 on the 32 K mirror modes, 4 blocks of 8, exact ED) gives a K midpoint gap that falls with L; a bulk symmetric gap must exceed this and stay L-independent | atom K midpoint gap (beta = 4): L = 4 0.465, L = 6 0.025 g; atom level gaps 1.000, 0.296 g
+== B. live seeded CT-INT (L = 4, g/t = 2, beta = 4, w = t/2)
+[PASS] B1 THEOREM+CHECK engine: M real (sign-free), sum rule G_K(0+) + G_K(beta-) = 1, no inverse drift | <2n> 656; sum-rule err 0e+00; drift 4e-12; live K midpoint gap 2.09 (1035 meas; atom baseline 0.47)
+== C. the CL-1 tick (step-pi/2 generator H' = (i/2)[R_o, R_e], 8-site cells, cell momentum K)
+[PASS] C1 THEOREM the fine cube-filtered row (every fine cube, every alignment) holds 4 sites of each sublattice sign, so e^(i theta eps) maps it to a row of the same support with relative phases e^(+-i theta): it is a row (and the quartic is invariant) only for theta = 0, pi. The fine cube filter keeps NO Z4 inside U(1)_eps (only fermion parity); at theta = pi/2 the row goes to the eps-twisted row, orthogonal to it | kept theta/pi [0. 1.]; |<r, U_(pi/2) r>| = 6e-17
+[PASS] C2 THEOREM zoomed (cell-rung) filter: rows 8^-1/2 sum over the 8 cells of a cell cube of one eps-pure mirror cell orbital (s = -1, eps fixed: 2 per sign per cell). Each row is Z4_eps-covariant (phase i^eps), so a charge-4 product of such rows keeps Z4_eps (U(1)_eps -> Z4); its cell form factor prod(1 + e^(iK_j)) vanishes at R, and at K it lies in s = -1, orthogonal to the light copy (H'(K=0) = 0, s exact there) | dim(s=-1, eps=+-) 2,2; [eps, s] 0e+00; |P_+ rows| 2e-16; filter at R 2e-48; Z4 covariance 3e-16
+[PASS] C3 THEOREM (free band) corner pairing on the tick: w (1 - B)/2 Y (symmetrised; B = (R_oR_e + R_eR_o)/2, Y cell-local, eps-even, light-mirror, a mass at R) keeps eps exactly, leaves the 8 K zero modes untouched (form factor 0 at K) and gaps R with no new zero elsewhere | w = 0.3: R gap 0.283; K zeros 8; min |E| off K (12^3 grid) 0.283; [eps, H] 2e-16; light-light/mirror-mirror part 8e-16
+[PASS] C4 THEOREM Z16 count on the tick: per mode member the K mirror is one Weyl per eps sector, both of one Z4_eps charge, index 2 per member; the K mirror can gap symmetrically under this term only if the member count n has 2n = 0 mod 16, i.e. n = 0 mod 8 (16 passes, 15 fails) | chirality (s = -1) eps+ +1, eps- -1; index per member +2
+== D. recorded production values (prod3.py, 82 s segments, seeded; recorded, not recomputed; no PASS depends on them)
+  recorded: beta = 4, w = t/2, g = 1; mirror K midpoint gap (jackknife), pair S_pair/N (free), xi/L, J-odd mass S/N (free); 82 s, seeds 1 (2)
+  recorded: L = 4: g/t 2: gap 2.26(22), S_pair/N 1.98 (0.169), xi/L 0.71, S_Jodd/N 409 (532); g/t 4: gap 3.4 (unresolved, G(beta/2) 0.0006(33)), 2.02 (0.146), 0.74, 411 (532); g/t 8: 2.20(51), 1.12 (0.122), 0.54, 446 (536)
+  recorded: L = 6 seed 1: g/t 2: 2.14(35), 1.69 (0.054), 0.89, 404 (547); g/t 4: 1.05(8), 0.46 (0.044), 0.47, 463 (538); g/t 8: 1.05(3), 0.141 (0.036), 0.24, 475 (538)
+  recorded: L = 6 seed 2: g/t 2: 1.34(19), 1.33, 0.82, 425; g/t 4: 1.24(17), 0.90, 0.61, 445; g/t 8: 0.93(5), 0.106, 0.18, 476
+  recorded: L = 6 runs are short (77-101 sweeps, 38-50 measurements, <2n> ~ 1850-2020); seed spread at g/t = 4 exceeds the jackknife error
+  recorded: S_pair/N ratio L4/L6 (volume ratio 3.375): g/t 2: 1.2-1.5 (no volume suppression); g/t 4: 2.2-4.4 (undecided); g/t 8: 7.9-10.6 (falls faster than volume)
+  recorded: exact at every g: light K gap 0; R gap = (2/beta) ln cosh(beta w/2) = 0.060, 0.016, 0.004 at g/t 2, 4, 8
+supplied: SU(4) model (not a rule), K/R Weyl band, taste-mixing rows, w = t/2, sizes, betas, seeds; cited: momentum-selective-mirror, light-partner-gap, block-quartic-smg
+elapsed 52.4 s
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/the_family_class_ticks_forced_pi_sector_is_a_light_charged_inverted_copy_whose_doubler_map_cancels_all_vacuum_polarization_so_it_needs_repair_while_its_anomalies_stay_safe_2026_10_24.py
+runner_sha256: 94033e0e76e030228f1829ef0defc790628f1f7b24766660b7afeb97a93621aa
+input_fingerprint_sha256: 8599295188f706ddc86e08c98f78e3392dd43ebf3a8b1cbe41ac7a97b639dd98
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.17
+status: ok
+----- stdout -----
+== A. the doubler S maps the vacuum to its complement: zero response
+PASS: A1 [T]/[F] S U(K) S^-1 = -U(K+R) sends the no-Fermi-surface half filling (light eigenphases in (-pi,0) + one frozen eigenspace) to its COMPLEMENT: S rho(K) S^+ = 1 - rho(K+R)  [S residual 1e-14; complement residual 6e-15; filled/light-filled per K [(4, 2)]]
+PASS: A2 [T]/[F] real space (4^3 cells, 512 modes): S is a staggered cell sign x on-cell map and commutes with any cell-charge potential; under kicks e^{-i lam V} (lam 0.5, random V, 24 ticks) the induced cell charge of BOTH no-Fermi-surface vacua is identically 0 (infinite-temperature value): ZERO vacuum polarization  [S residual 1e-13; max |dN| fill(-pi,0) 6e-14, fill(0,pi) 5e-14]
+PASS: A3 [F] controls the zero is the complement property, not a dead probe: CL-1's vacuum (gap at pi) screens; FREEZE with an S-odd on-cell layer responds; FREEZE's both-nodes-normal filling (S-INVARIANT, paid for by an inverted Fermi surface at theta = pi/2) screens  [max |dN|: CL-1 3.33e+00; S-broken FREEZE 3.19e-01; both-normal 1.20e+00 (S-invariance residual 7e-14)]
+   A4 [S] the cancellation is sector by sector: S maps the 0-sector response of fill(-pi,0) onto the pi-sector response of
+      fill(0,pi); the inverted pi copy anti-screens exactly as much as the normal 0 copy screens (Lindhard n -> 1-n).
+== B. vacuum -> (0-sector pair) + (pi-sector pair) at every scale
+PASS: B1 [T]/[F] pi-sector dispersion is the 0-sector's (pi - theta(R+k) = theta(k)); exact zero-quasi-energy, zero-momentum 4-excitation states (0 pair at +E, pi pair at -E) exist at momentum scales 1e-1, 1e-2, 1e-3: the decay channel is open in the IR  [dispersion residual 2e-15; scale 1e-01: |E_tot| 1e-15, max|k|/scale 1.5; scale 1e-02: |E_tot| 8e-15, max|k|/scale 2.0; scale 1e-03: |E_tot| 1e-13, max|k|/scale 1.3]
+PASS: B2 [T]/[F] control CL-1's plain tick: every particle-hole excitation of the filled-(-pi,0) vacuum has quasi-energy in (0, 2 w_max]; a zero-quasi-energy (mod 2 pi) vacuum transition needs >= n_min pairs, all at cell scale (prethermal); FREEZE needs 2, at any scale  [w_max 0.6000 (2 eps = 0.6); n_min 6]
+== C. filling: what fixes it, and what cannot be avoided
+PASS: C1 [T]/[F] F_pi = W per turn sector: FREEZE's axis flow through pi equals its winding (-2, 1, 1) and stays so under random turn-symmetric deformations, so no free term opens a gap at pi for any family-class tick  [W [-2, 1, 1]; flow at pi [-2, 1, 1]; deformed (W, F_pi) [([-2, 1, 1], [-2, 1, 1]), ([-2, 1, 1], [-2, 1, 1]), ([-2, 1, 1], [-2, 1, 1])]]
+PASS: C2 [T] one-cube start: a single FREEZE cell, periodic (K = 0) or antiperiodic (K = R), puts the 4 light modes at quasi-energy exactly 0 or exactly pi (4-fold) and the frozen 4 at +-pi/2: half filling is degenerate, so no quasi-energy ordering, and no CL-2 clause, picks which sector the carried sea makes normal  [light at 0 (periodic) 4; light at pi (antiperiodic) 4; frozen at +-pi/2 4]
+PASS: C3 [T] alternation: along the axis loop (quasi-energy increasing, +theta out and -theta back), any filling with one of each +-theta pair filled has rises = drops >= 1: at least one INVERTED boundary, minimum exactly one (the -theta vacuum: inverted at pi)  [4096 fillings checked; min inverted boundaries 1]
+   C4 [S] CL-2 has no ground-state clause: the actual configuration follows the odds, and a free Slater state of Floquet
+      eigenvectors is stationary, so the transport stays. The filling is the start-and-split-carried one; by C2 the start
+      cannot choose and by C3 no no-Fermi-surface choice is normal in both sectors. CL-2 cannot repair it.
+== D. anomalies: the pi copy doubles every coefficient
+PASS: D1 [T] gauge anomalies stay zero with the pi copy (2 x 16 per family: Y^3, Y-grav, SU2^2 Y, SU3^2 Y, SU3^3 = 0; doublets even; Weyls 0 mod 16), and doubling any turn coefficient by 2 (a unit mod 3 and mod 9) leaves the allowed N_f set unchanged: anomaly SAFE  [1 x 16 (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), 0, 0, 0); 2 x 16 (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), 0, 0, 0)]
+   D2 [S] the far-wall gapping must gap the pi copy of the mirror too (it is light, charged, and S-related); an S-even far-wall
+      term does it at the same coupling (S maps the interacting tick to (-1)^N times itself); not computed.
+== E. against measurement (supplied numbers)
+PASS: E1 [E] with S intact the electron loop's vacuum polarization cancels exactly against its inverted pi copy: the hydrogen 2S Uehling shift would vanish; it is ~27 MHz and theory matches the measured Lamb shift to ~0.01 MHz -> EXCLUDED  [Uehling 2S = -27.13 MHz; agreement scale ~0.01 MHz (supplied); ratio 2713]
+PASS: E2 [E] Z invisible width: inverted pi neutrinos cancel the light ones in the Z self-energy (N_nu -> 0); normal-filled copies would double it (N_nu -> 6); measured 2.984 +- 0.008 excludes both  [373 sigma and 377 sigma]
+   E3 [S] a light charged inverted sector with the light photon also opens exothermic pair production in every process (B1),
+      with phase space up to the cell scale: the free sector is excluded long before any rate is computed.
+VERDICT: NEEDS REPAIR. Anomaly SAFE; free pi sector EXCLUDED (light, charged, inverted, forced by F_pi = W).  [1.6 s, 138 MB]
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,209 @@
+{
+  "schema": "review-marked-compact-chart-source-reads-v1",
+  "stage": "source_only_frozen_before_author_packet",
+  "created_utc": "2026-10-30T10:22:51.253587+00:00",
+  "methodology_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "reviewer_disclosure": "Fresh restricted-input same-family Codex review. Astra/max requested; backend model/effort not independently attested. No authorship or prior verdict context used.",
+  "source_reads": [
+    {
+      "path": "MARKED_COMPACT_CHART_ASTRA.md",
+      "sha256": "04f79ed4d0c58e97f3cade072631966b577f02754f9a96d6dcd18ee2f3045800",
+      "line_count": 753,
+      "read_ranges": [
+        [
+          1,
+          753
+        ]
+      ],
+      "purpose": "complete frozen target"
+    },
+    {
+      "path": "COMPACT_RETURN_GLUING_ASTRA.md",
+      "sha256": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "line_count": 644,
+      "read_ranges": [
+        [
+          1,
+          644
+        ]
+      ],
+      "purpose": "exact selected-history resummation and compact reserve; its marginal theorem is not used as a connected theorem"
+    },
+    {
+      "path": "MIXED_CAP_CHART_ASTRA.md",
+      "sha256": "1e885e4fbce03b00f4414b15caaa71e7140d9bc8494d0c75d1519bdbcde8ff2e",
+      "line_count": 707,
+      "read_ranges": [
+        [
+          1,
+          707
+        ]
+      ],
+      "purpose": "cap branch, full-block activation, body Stokes and normalization"
+    },
+    {
+      "path": "SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+      "line_count": 711,
+      "read_ranges": [
+        [
+          1,
+          711
+        ]
+      ],
+      "purpose": "shifted coefficient, all-order density, marked-root and forest arguments"
+    },
+    {
+      "path": "NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "line_count": 713,
+      "read_ranges": [
+        [
+          1,
+          713
+        ]
+      ],
+      "purpose": "normalized list jets and scalar-coordinate forest counts"
+    },
+    {
+      "path": "REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "line_count": 592,
+      "read_ranges": [
+        [
+          1,
+          592
+        ]
+      ],
+      "purpose": "common original-data producer, boundary domain, global force and both covariance tails"
+    },
+    {
+      "path": "REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "line_count": 510,
+      "read_ranges": [
+        [
+          1,
+          510
+        ]
+      ],
+      "purpose": "actual regional denominator and common shrinking source/field domain"
+    },
+    {
+      "path": "SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "line_count": 597,
+      "read_ranges": [
+        [
+          1,
+          597
+        ]
+      ],
+      "purpose": "actual compact/chart ratio, signed action, fixed-source debit and full finite-u price"
+    },
+    {
+      "path": "NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+      "sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+      "line_count": 624,
+      "read_ranges": [
+        [
+          1,
+          330
+        ]
+      ],
+      "purpose": "actual vertex, coefficient, incidence, Mayer, parity and normalized marginal arguments through the consumed interface"
+    },
+    {
+      "path": "FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "line_count": 556,
+      "read_ranges": [
+        [
+          54,
+          319
+        ]
+      ],
+      "purpose": "original phase, Hessian, patch geometry and complete-reader force/majorants; subsequent construction rebuilt in full RF read"
+    },
+    {
+      "path": "COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "line_count": 568,
+      "read_ranges": [
+        [
+          31,
+          343
+        ]
+      ],
+      "purpose": "actual lift, quotient, full-colour coercivity/Hessian, analytic vertex and critical-shift library"
+    },
+    {
+      "path": "CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "line_count": 617,
+      "read_ranges": [
+        [
+          47,
+          289
+        ]
+      ],
+      "purpose": "original compact law/quotient, complete local word coercivity and maximizer-cap normalizer bound"
+    },
+    {
+      "path": "OUTSIDE_CHART_RETURN_ASTRA.md",
+      "sha256": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4",
+      "line_count": 641,
+      "read_ranges": [
+        [
+          39,
+          150
+        ]
+      ],
+      "purpose": "physical readers, localized compact charge and reset shell cost"
+    },
+    {
+      "path": "SHRINKING_CHART_RETURN_ASTRA.md",
+      "sha256": "9ae446ca746639ff77295f9da712f47e4be9d315d7c26e975535f1602321abfc",
+      "line_count": 247,
+      "read_ranges": [
+        [
+          33,
+          149
+        ]
+      ],
+      "purpose": "fixed-source restriction and explicit cancellation of side sigma powers"
+    },
+    {
+      "path": "STEP55.md",
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "line_count": 812,
+      "read_ranges": [
+        [
+          312,
+          376
+        ],
+        [
+          656,
+          681
+        ]
+      ],
+      "purpose": "local complex Haar invariance, polar recentering, zero-free normalizer and applicable corrections S5-S7"
+    }
+  ],
+  "instruction_reads": [
+    "/Users/jonBridger/AGENTS.md",
+    "AGENTS.md",
+    "PROCESS_LIGHT.md (1-11)",
+    "pinned SCIENCE_WORKFLOW.md",
+    "pinned SKILL_FRESHNESS_CHECK.md",
+    "pinned review-loop/SKILL.md",
+    "pinned review-loop references SCIENCE_LENSES.md, FIXES_AND_REPORTING.md, REVIEW_SETUP.md, REVIEW_UNITS.md",
+    "pinned physics-loop references/proof-search-governance.md"
+  ],
+  "installed_skill_drift": "Installed review-loop was initially inspected, then the pinned SKILL.md and references were read and made controlling.",
+  "author_packet_opened": false,
+  "previous_reviews_opened": false,
+  "root_receipts_opened": false,
+  "scientific_runs": 0,
+  "read_coverage_is_self_reported_not_proof": true
+}

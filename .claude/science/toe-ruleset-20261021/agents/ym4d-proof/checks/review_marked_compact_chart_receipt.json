@@ -1,0 +1,118 @@
+{
+  "schema": "review-marked-compact-chart-reviewer-receipt-v1",
+  "created_utc": "2026-10-30T10:29:24.371019+00:00",
+  "reviewer": "/root/review_marked_compact_chart",
+  "verdict": "LAND",
+  "source_only_verdict": "LAND precise MK35-MK39 bare-step theorem",
+  "packet_verdict": "CONSISTENT; no material discrepancy",
+  "scope": "Actual original-cut and actual original-a chart nonvanishing; common-prefactor complete-original-reader connected logarithmic ratio and rare norm at fixed real Vbar, complex original sources, and the stated shrinking regime.",
+  "source": {
+    "path": "MARKED_COMPACT_CHART_ASTRA.md",
+    "sha256": "04f79ed4d0c58e97f3cade072631966b577f02754f9a96d6dcd18ee2f3045800",
+    "lines": 753
+  },
+  "methodology_pin": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "reviewer_provenance": {
+    "requested_model": "gpt-6-astra",
+    "requested_reasoning_effort": "max",
+    "backend_attested": false,
+    "disclosure": "Fresh restricted-input same-family Codex reviewer; requested configuration is not backend attestation. No authorship or previous verdict context used."
+  },
+  "stage_order": [
+    "Actual instructions and pinned methodology read.",
+    "Complete target and necessary actual producer arguments read.",
+    "Independent source-only findings and exact read coverage frozen as distinct immutable files.",
+    "Entire author manifest and receipt read; packet consistency separately frozen.",
+    "Final report written; all 15 source pins, author packet pins and source-stage immutable files rechecked.",
+    "This final receipt binds both stages and the final report."
+  ],
+  "artifacts": [
+    {
+      "path": "checks/review_marked_compact_chart_source_read_coverage.json",
+      "sha256": "c5042c2d094ef1510759d6ff4e01d5ef10daa386246e5e9fcde2ff787e257fe1",
+      "lines": 209
+    },
+    {
+      "path": "checks/review_marked_compact_chart_source_only_findings.md",
+      "sha256": "c1acb9aedd48ed2f9b1eb9535ae9f9e5e0673432fdd99a4a94b31aa27bdbbe21",
+      "lines": 84
+    },
+    {
+      "path": "checks/review_marked_compact_chart_packet_consistency.json",
+      "sha256": "3b0cfdaaf85a36f8a37474c10bc1a086df4e5f728f1f18a0d531962c4510ac1a",
+      "lines": 166
+    },
+    {
+      "path": "checks/review_marked_compact_chart_final_source_recheck.json",
+      "sha256": "b97e9f763bb9e11c43ac77b3a0cbf8ec3f4d722fbe556ac0c3043bc618ad86e0",
+      "lines": 158
+    },
+    {
+      "path": "REVIEW_MARKED_COMPACT_CHART_ASTRA.md",
+      "sha256": "9ce304ca9d8d9741fb808b5ace536bfddf54d0d1ce11abc0eeacb4554b21bd98",
+      "lines": 67
+    }
+  ],
+  "read_coverage": {
+    "complete_target_read": true,
+    "source_files": 15,
+    "exact_pre_packet_ranges_in": "checks/review_marked_compact_chart_source_read_coverage.json",
+    "author_manifest_lines_read": [
+      1,
+      92
+    ],
+    "author_receipt_lines_read": [
+      1,
+      64
+    ],
+    "previous_reviews_opened": false,
+    "root_receipts_opened": false,
+    "external_primary_read_claims_reproduced": false
+  },
+  "source_findings": {
+    "material_blockers": 0,
+    "repair_obligations": [],
+    "requested_source_changes": 0
+  },
+  "packet_findings": {
+    "material_contradictions": 0,
+    "limitations": [
+      "Author reading and no-run/mutation assertions are historical self-reports, not independently authenticated by these hashes.",
+      "Parent checkpoint and parent literature packet were not independently inspected or used as scientific premises.",
+      "External primary reading coverage was compared as a bounded attribution claim, not independently reproduced.",
+      "Administrative consistency is not a mathematical theorem test."
+    ]
+  },
+  "verification": {
+    "all_source_pins_match": true,
+    "source_stage_hashes_unchanged": true,
+    "author_packet_hashes_unchanged": true,
+    "science_numerical_runs": 0,
+    "author_science_scripts_run": false,
+    "automated_mathematical_proof_check_claim": false
+  },
+  "physical_targets": {
+    "full_non_free_continuum_existence": "OPEN",
+    "positive_physical_continuum_mass_gap": "OPEN"
+  },
+  "open_interfaces": [
+    "Original white Omega and separate original G-minus-Omega/G-complement estimates.",
+    "Complex coarse transport and corresponding coarse derivatives.",
+    "Inherited/future-conditioned histories and effective iteration.",
+    "Reflection positivity and the full physical continuum targets."
+  ],
+  "mutations": {
+    "authorized_review_outputs_only": true,
+    "source_predecessor_shared_front_edits": false,
+    "git_pr_audit_ledger_edits": false,
+    "additional_workers_spawned": false,
+    "owned_output_paths": [
+      "checks/review_marked_compact_chart_source_read_coverage.json",
+      "checks/review_marked_compact_chart_source_only_findings.md",
+      "checks/review_marked_compact_chart_packet_consistency.json",
+      "REVIEW_MARKED_COMPACT_CHART_ASTRA.md",
+      "checks/review_marked_compact_chart_final_source_recheck.json",
+      "checks/review_marked_compact_chart_receipt.json"
+    ]
+  }
+}

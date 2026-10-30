@@ -1,0 +1,303 @@
+{
+  "schema_version": 1,
+  "stage": "source_only_frozen_before_author_packet",
+  "frozen_at_utc": "2026-10-30T10:39:18.181473+00:00",
+  "review_identity": "/root/review_frozen_transported_chart",
+  "requested_configuration": "Astra/max; no independent backend attestation",
+  "independence": "fresh author-independent context; same-family Codex",
+  "methodology_pin": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "author_packet_opened": false,
+  "prior_reviews_opened": false,
+  "root_receipts_opened": false,
+  "source_only_recommendation": "LAND for FT37-FT42 on the stated bounded domain",
+  "blocking_source_findings": 0,
+  "source_fixes": 0,
+  "science_runs": 0,
+  "author_runners": 0,
+  "source_findings": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_frozen_transported_chart_source_findings.md",
+    "sha256": "1d9278e38a35e3f6a1026c3d411c02248a29277c585082ff084da8d4d2a8378f",
+    "line_count": 242
+  },
+  "source_reads": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FROZEN_TRANSPORTED_CHART_ASTRA.md",
+      "sha256": "c7cea2f9bb096af300a9a978c945d9c5d68ae5e63581654a3034902d000d70b8",
+      "line_count": 787,
+      "read_ranges_inclusive": [
+        [
+          1,
+          787
+        ]
+      ],
+      "full_read": true,
+      "purpose": "Complete target and every new mathematical step"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "line_count": 592,
+      "read_ranges_inclusive": [
+        [
+          1,
+          592
+        ]
+      ],
+      "full_read": true,
+      "purpose": "Actual regional force, contraction, covariance, readers and physical exterior"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "line_count": 510,
+      "read_ranges_inclusive": [
+        [
+          1,
+          510
+        ]
+      ],
+      "full_read": true,
+      "purpose": "Actual regional integral, analytic domain and all normalization"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+      "line_count": 711,
+      "read_ranges_inclusive": [
+        [
+          1,
+          711
+        ]
+      ],
+      "full_read": true,
+      "purpose": "Full shifted nonlinear density and side/forest mechanism"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+      "sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+      "line_count": 624,
+      "read_ranges_inclusive": [
+        [
+          1,
+          624
+        ]
+      ],
+      "full_read": true,
+      "purpose": "Actual local coefficient, parity, marginal and core proofs"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "line_count": 713,
+      "read_ranges_inclusive": [
+        [
+          1,
+          713
+        ]
+      ],
+      "full_read": true,
+      "purpose": "Full density lists, scalar jets, tree counting and reader logarithm"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "line_count": 556,
+      "read_ranges_inclusive": [
+        [
+          1,
+          556
+        ]
+      ],
+      "full_read": true,
+      "purpose": "Full actual finite-u phase, lift, analytic library, critical field and covariance"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "line_count": 568,
+      "read_ranges_inclusive": [
+        [
+          1,
+          350
+        ]
+      ],
+      "full_read": false,
+      "purpose": "Consumed actual model, flat brick, Hessian and u-uniform local analytic/normalizer statements"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHRINKING_CHART_RETURN_ASTRA.md",
+      "sha256": "9ae446ca746639ff77295f9da712f47e4be9d315d7c26e975535f1602321abfc",
+      "line_count": 247,
+      "read_ranges_inclusive": [
+        [
+          1,
+          247
+        ]
+      ],
+      "full_read": true,
+      "purpose": "Entire shrinking-domain corollary and explicit sigma-power accounting"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "line_count": 812,
+      "read_ranges_inclusive": [
+        [
+          312,
+          390
+        ],
+        [
+          656,
+          691
+        ]
+      ],
+      "full_read": false,
+      "purpose": "Actual INV/PR/NZ compact normalizer proof and relevant S5-S7 corrections; other visible lines in these ranges are not premises"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "line_count": 597,
+      "read_ranges_inclusive": [
+        [
+          1,
+          365
+        ],
+        [
+          490,
+          597
+        ]
+      ],
+      "full_read": false,
+      "purpose": "Bare model, frozen physical variables, SC5-SC6 logs, curvature/coarse-width restrictions and scope; compact ratio proof not consumed"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COMPACT_RETURN_GLUING_ASTRA.md",
+      "sha256": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "line_count": 644,
+      "read_ranges_inclusive": [
+        [
+          1,
+          105
+        ],
+        [
+          279,
+          320
+        ],
+        [
+          566,
+          644
+        ]
+      ],
+      "full_read": false,
+      "purpose": "Actual chart/cut definitions, fixed real buffer distinction and exact CG32-CG33 Delta_chart interface"
+    }
+  ],
+  "unique_scientific_lines_read": 5904,
+  "methodology_reads": [
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "git_commit": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "line_count": 193,
+      "full_read": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "git_commit": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "line_count": 370,
+      "full_read": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "git_commit": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "line_count": 35,
+      "full_read": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "git_commit": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "line_count": 248,
+      "full_read": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "git_commit": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "line_count": 140,
+      "full_read": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "git_commit": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "line_count": 183,
+      "full_read": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "git_commit": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "line_count": 394,
+      "full_read": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "git_commit": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "line_count": 126,
+      "full_read": true
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "git_commit": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "line_count": 233,
+      "full_read": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "git_commit": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "line_count": 130,
+      "full_read": true
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "git_commit": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "line_count": 52,
+      "full_read": true
+    }
+  ],
+  "instruction_reads": [
+    {
+      "path": "/Users/jonBridger/AGENTS.md",
+      "sha256": "d0614ed18df67520e63a8c72c4efe6b6e87e593b668f1840217901e70853c80d",
+      "line_count": 31,
+      "full_read": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/AGENTS.md",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "line_count": 26,
+      "full_read": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "line_count": 11,
+      "full_read": true
+    }
+  ],
+  "coverage_boundary": [
+    "No prior review, author packet or coordinator receipt supplied a proof premise.",
+    "SC compact-ratio and CG compact-buffer-moment theorems outside the listed ranges are not premises of the pure-chart result.",
+    "NR fully rebuilds its consumed Gaussian library; no unread RG endpoint theorem is imported.",
+    "FU/RF directly rebuild the consumed covariance/contraction arguments; predecessor verdicts are not premises.",
+    "No historical full-campaign source audit, external-paper theorem verification, Git integration or combined mechanical gate is claimed."
+  ]
+}

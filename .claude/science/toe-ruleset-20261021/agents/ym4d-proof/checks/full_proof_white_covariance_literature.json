@@ -1,0 +1,57 @@
+{
+  "schema": "full_proof_white_covariance_literature_v1",
+  "date": "2026-10-30",
+  "reader": "root coordinator",
+  "purpose": "Bounded primary-source triage for the unchanged white-sector covariance and square-root reader interface; not a proof import or a review of the pending WHITE_SECTOR_MATCHING source.",
+  "method": "Two targeted arXiv-domain searches followed by three actual abstract/version pages and two bounded primary HTML windows.",
+  "sources": [
+    {
+      "authors": "David C. Brydges, G. Guadagni, P. K. Mitter",
+      "title": "Finite range Decomposition of Gaussian Processes",
+      "url": "https://arxiv.org/abs/math-ph/0303013v3",
+      "version": "v3, 28 August 2003; verified submission history",
+      "actual_read": "Abstract and version metadata only, returned page lines 8–30. No full-paper proof read for this checkpoint.",
+      "stated_scope": "Finite-range positive covariance decomposition for the lattice Laplacian resolvent, with a corollary for fractional Laplacian powers.",
+      "coordinator_inference": "This is relevant method background, but the checked abstract does not identify the actual finite-u gauge Hessian, full original-reader square root, or original white integration domain."
+    },
+    {
+      "authors": "Michele Benzi, Valeria Simoncini",
+      "title": "Decay bounds for functions of matrices with banded or Kronecker structure",
+      "url": "https://arxiv.org/html/1501.07376v1",
+      "metadata_url": "https://arxiv.org/abs/1501.07376",
+      "version": "v1, 29 January 2015; sole version listed",
+      "actual_read": "Abstract/version metadata lines 8–24 and primary HTML lines 52–155: introductory scope, matrix definitions and analytic/integral representations. No complete decay theorem or proof review.",
+      "stated_scope": "Hermitian banded/Kronecker and sparse-matrix function decay. The read preliminary section gives the inverse-square-root Cauchy–Stieltjes resolvent representation explicitly at line 144.",
+      "coordinator_inference": "Resolvent integration is a plausible way to build a square-root supplier from actual resolvent estimates. Entrywise decay alone does not establish the required complete original-reader coefficient norm, parameter locality, or contour-domain matching."
+    },
+    {
+      "authors": "Eris Runa",
+      "title": "Finite range decomposition for a general class of elliptic operators",
+      "url": "https://arxiv.org/html/1510.07604v1",
+      "metadata_url": "https://arxiv.org/abs/1510.07604",
+      "version": "v1, 26 October 2015; sole version listed",
+      "actual_read": "Abstract/version metadata lines 8–25 and primary HTML lines 39–169: introduction, preliminary translation-invariant result, and start of the variable-coefficient hypotheses. The main new theorem and its proof were not checked.",
+      "stated_scope": "Gradient Gaussian fields and a variable-coefficient elliptic operator. The inspected setup uses zero-mean fields, uniform ellipticity, and scaled C3 coefficient control.",
+      "coordinator_inference": "The coefficient regularity method is relevant to background dependence. Those inspected hypotheses have not been matched to the actual finite-u gauge covariance, whose modes, roots, Haar factors and readers must be retained."
+    }
+  ],
+  "local_context": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+    "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+    "lines": 722,
+    "current_root_read": "Lines 260–325, after locating SA15; earlier complete root source reading is retained but is not claimed as a fresh full reread.",
+    "observed_native_definition": "SA14 already states the actual finite-u critical inverse square root via the resolvent integral with original readers. SA15 fixes b0=b(V,0), C0=[F0''(b0)]^-1/2 and the original scalar cube; SA16 retains the exact source-free full prefactor and truncated scalar Gaussian normalization."
+  },
+  "messages_to_author": "The exact bounded windows and model mismatches were sent to the white-sector author. They are background suggestions, not accepted supplier statements.",
+  "next_check": "Use the native SA/FR suppliers if their exact hypotheses survive inspection; do not reinvent a square-root identity already present in SA14. Verify actual critical branches, determinant normalization, full reader norm/metric conversion and original domain before an assembled comparison. The pending author bridge is not accepted by this literature record.",
+  "limitations": [
+    "Targeted, non-exhaustive research.",
+    "Search snippets and unrelated returned hits are not mathematical premises.",
+    "No full external theorem was imported or certified here.",
+    "No new scalar-field or zero-mean projection replaces the supplied gauge model.",
+    "Pending author/reviewer arguments are not promoted by this literature record."
+  ],
+  "scientific_numerical_runs": 0,
+  "full_non_free_continuum_existence": "OPEN",
+  "physical_continuum_mass_gap": "OPEN"
+}

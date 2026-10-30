@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-30T00:33:02.774479+00:00",
+  "sources_checked": 17,
+  "changed_sources": [],
+  "author_sha256": "b2a4f0f8650ff2db736acfaa1b0f30be1d30d449ceb827e32f55186b81e82440",
+  "draft_hash_matches": true,
+  "missing_local_links": [],
+  "load": [
+    1.88330078125,
+    2.06005859375,
+    2.0693359375
+  ],
+  "memory_free_percent": 53,
+  "peak_rss_bytes": 21168128,
+  "nice": 20,
+  "kind": "mechanical provenance and link validation; no numerical physics check",
+  "review": {
+    "path": "checks/f17_review.md",
+    "sha256": "30841777e168d8c800a0e78e17ce9c9e21efb1a00a90f4282312b299cd399ad6",
+    "verdict": "LAND",
+    "scope": "Conditional reductions and specified method obstruction only; actual Yang–Mills route UNDECIDED and H_int OPEN",
+    "independence": "same-family, separate-context Codex reviewer"
+  },
+  "scientific_numerics": "None; no numerical PASS claimed."
+}

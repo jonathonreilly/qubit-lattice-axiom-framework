@@ -919,7 +919,7 @@ The graph-cycle warning is currently expected. Treat any error as a blocker.
   `shadow_publication_lane_size`. Also excluded as evidence: the generated
   files `docs/audit/data/publication_gap.json`,
   `docs/audit/data/audit_publication_lane.json` (top-level `shadow_only`,
-  per-entry `would_park`), and the tracked day-keyed churn state
+  per-entry `would_park`), and the tracked nightly churn state
   `docs/audit/data/dispatch_shadow_state.json`;
   the tracked manifest `docs/audit/data/publication_lane_manifest.json`; and
   the front door's "Dispatch Shadow Report" section. All of it is
@@ -1482,9 +1482,9 @@ The monolithic ledger, queue JSON, runner classification, citation graph,
 rendered `AUDIT_LEDGER.md`, and the generated shadow dispatch files
 (`publication_gap.json`, `audit_publication_lane.json`) are ignored
 materialized caches; never force-add them. `dispatch_shadow_state.json` is
-TRACKED day-keyed churn state that pipeline runs update at most once per UTC
-day, and only when lane membership changed — audit commits that stage
-`docs/audit/data` will carry that update, which is expected and carries no
+TRACKED nightly churn state that only the scheduled nightly pass updates, at
+most once per UTC day and only when lane membership changed. Audit-batch
+pipeline runs report churn against it and leave it unchanged; it carries no
 evidentiary weight.
 `publication_lane_manifest.json` is tracked controlled data owned by the
 review lane — an audit commit must not modify it.

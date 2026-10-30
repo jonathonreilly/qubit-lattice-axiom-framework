@@ -8,6 +8,7 @@ untouched."""
 import copy
 import hashlib
 import json
+import os
 import sys
 import tempfile
 import unittest
@@ -19,6 +20,7 @@ sys.path.insert(0, str(SCRIPT_DIR))
 
 import compute_audit_queue as caq  # noqa: E402
 import compute_dispatch_shadow as cds  # noqa: E402
+import render_front_door_status as rfds  # noqa: E402
 
 
 def _row(status="audited_conditional", snapshot=None, previous=None):
@@ -286,18 +288,31 @@ class PublicationLaneTest(unittest.TestCase):
                          ["ghost_row"])
 
 
-class ShadowStateWriteTest(unittest.TestCase):
-    """The tracked state changes only with membership, at most once a day."""
+def _event_env(event):
+    """Pipeline environment for one pass; None is a local run outside Actions."""
+    env = {k: v for k, v in os.environ.items() if k != "GITHUB_EVENT_NAME"}
+    if event is not None:
+        env["GITHUB_EVENT_NAME"] = event
+    return mock.patch.dict(os.environ, env, clear=True)
 
-    def _run(self, tmp: Path, prior, lane_ids, today="2026-10-30"):
+
+def _clock(today):
+    clock = mock.Mock()
+    clock.now.return_value.date.return_value.isoformat.return_value = today
+    return clock
+
+
+class ShadowStateWriteTest(unittest.TestCase):
+    """Only the scheduled nightly advances the tracked state, and only when
+    membership changed, at most once a day."""
+
+    def _run(self, tmp: Path, prior, lane_ids, today="2026-10-30", event="schedule"):
         state = tmp / "dispatch_shadow_state.json"
         if prior is not None:
             state.write_text(json.dumps(prior))
         lane = {"lane": [{"claim_id": cid} for cid in lane_ids],
                 "lane_size": len(lane_ids), "gap_available": True,
                 "manifest_state": "ok"}
-        clock = mock.Mock()
-        clock.now.return_value.date.return_value.isoformat.return_value = today
         with mock.patch.multiple(
             cds,
             QUEUE_JSON=tmp / "q.json",
@@ -306,8 +321,8 @@ class ShadowStateWriteTest(unittest.TestCase):
             LANE_JSON=tmp / "lane.json",
             SHADOW_STATE_PATH=state,
             build_lane=mock.Mock(return_value=lane),
-            datetime=clock,
-        ):
+            datetime=_clock(today),
+        ), _event_env(event):
             self.assertEqual(cds.main(), 0)
         return json.loads(state.read_text()), json.loads((tmp / "lane.json").read_text())
 
@@ -328,18 +343,107 @@ class ShadowStateWriteTest(unittest.TestCase):
             self.assertEqual(lane["added_since_prior"], ["b"])
             self.assertEqual(lane["removed_since_prior"], ["a"])
 
-    def test_second_change_same_day_keeps_churn_for_the_nightly_report(self):
+    def test_second_nightly_same_day_keeps_churn_for_the_next_report(self):
         with tempfile.TemporaryDirectory() as d:
             prior = {"schema_version": 2, "lane_ids": ["a"], "as_of_date": "2026-10-30"}
             state, lane = self._run(Path(d), prior, ["b"])
             self.assertEqual(state, prior)
             self.assertEqual(lane["added_since_prior"], ["b"])
 
+    def test_passes_that_are_not_the_nightly_report_churn_without_advancing(self):
+        # Includes a batch before the nightly, when the state's date is old:
+        # the date alone cannot tell that pass from the nightly.
+        for event in (None, "workflow_dispatch", "pull_request"):
+            with self.subTest(event=event), tempfile.TemporaryDirectory() as d:
+                prior = {"schema_version": 2, "lane_ids": ["a"], "as_of_date": "2026-10-01"}
+                state, lane = self._run(Path(d), prior, ["b"], event=event)
+                self.assertEqual(state, prior)
+                self.assertEqual(lane["added_since_prior"], ["b"])
+                self.assertEqual(lane["removed_since_prior"], ["a"])
+
     def test_missing_state_is_created(self):
+        for event in (None, "schedule"):
+            with self.subTest(event=event), tempfile.TemporaryDirectory() as d:
+                state, lane = self._run(Path(d), None, ["a"], event=event)
+                self.assertEqual(state["lane_ids"], ["a"])
+                self.assertFalse(lane["prior_state_available"])
+
+
+class NightlyChurnSequenceTest(unittest.TestCase):
+    """A later batch must not consume churn before the next nightly report,
+    and an unchanged nightly must leave nothing to commit. Uses the real
+    producer and renderer; only the tracked state and manifest survive from
+    pass to pass, as in a fresh checkout."""
+
+    QUEUE = {
+        "queue": [
+            {"claim_id": "row_a", "criticality": "critical", "ready": True,
+             "transitive_descendants": 5, "load_bearing_score": 2.0},
+            {"claim_id": "row_b", "criticality": "high", "ready": True,
+             "transitive_descendants": 1, "load_bearing_score": 1.0},
+        ],
+        "cycle_break_targets": [],
+    }
+    GAP = {"entries": [{"claim_id": "row_a"}, {"claim_id": "row_b"}]}
+
+    def _pass(self, tmp: Path, admitted, today, event):
+        """Run one pipeline pass; return (state bytes, rendered churn lines)."""
+        generated = {"lane": tmp / "audit_publication_lane.json",
+                     "queue": tmp / "audit_queue.json",
+                     "gap": tmp / "publication_gap.json"}
+        generated["queue"].write_text(json.dumps(self.QUEUE))
+        generated["gap"].write_text(json.dumps(self.GAP))
+        manifest = tmp / "publication_lane_manifest.json"
+        manifest.write_text(json.dumps({"schema_version": 1, "frozen_commit": "abc",
+                                        "admitted": admitted, "pending": []}))
+        state = tmp / "dispatch_shadow_state.json"
+        with mock.patch.multiple(
+            cds,
+            QUEUE_JSON=generated["queue"],
+            PUBLICATION_GAP_PATH=generated["gap"],
+            LANE_MANIFEST_PATH=manifest,
+            LANE_JSON=generated["lane"],
+            SHADOW_STATE_PATH=state,
+            datetime=_clock(today),
+        ), _event_env(event):
+            self.assertEqual(cds.main(), 0)
+        with mock.patch.object(rfds, "DATA_DIR", tmp):
+            report = rfds.shadow_report_lines()
+        for path in generated.values():
+            path.unlink()
+        return state.read_bytes(), [
+            line for line in report if line.startswith(("- added:", "- removed:"))]
+
+    def test_reviewed_sequence_keeps_the_report_and_writes_only_on_churn(self):
+        churn = ["- added: `row_b`", "- removed: `row_a`"]
         with tempfile.TemporaryDirectory() as d:
-            state, lane = self._run(Path(d), None, ["a"])
-            self.assertEqual(state["lane_ids"], ["a"])
-            self.assertFalse(lane["prior_state_available"])
+            tmp = Path(d)
+            initial = json.dumps({"schema_version": 2, "lane_ids": ["row_a"],
+                                  "as_of_date": "2026-10-29"}).encode()
+            (tmp / "dispatch_shadow_state.json").write_bytes(initial)
+
+            state, report = self._pass(tmp, ["row_a"], "2026-10-30", "schedule")
+            self.assertEqual(state, initial, "unchanged nightly left a commit")
+            self.assertEqual(report, [])
+
+            state, report = self._pass(tmp, ["row_b"], "2026-10-30", None)
+            self.assertEqual(state, initial, "later batch advanced the baseline")
+            self.assertEqual(report, churn)
+
+            state, report = self._pass(tmp, ["row_b"], "2026-10-30", None)
+            self.assertEqual(state, initial)
+            self.assertEqual(report, churn)
+
+            state, report = self._pass(tmp, ["row_b"], "2026-10-31", "schedule")
+            self.assertEqual(report, churn, "nightly report lost the churn")
+            self.assertEqual(json.loads(state),
+                             {"schema_version": 2, "lane_ids": ["row_b"],
+                              "as_of_date": "2026-10-31"})
+            advanced = state
+
+            state, report = self._pass(tmp, ["row_b"], "2026-11-01", "schedule")
+            self.assertEqual(state, advanced, "unchanged nightly left a commit")
+            self.assertEqual(report, [])
 
 
 class GoldenQueueInvarianceTest(unittest.TestCase):

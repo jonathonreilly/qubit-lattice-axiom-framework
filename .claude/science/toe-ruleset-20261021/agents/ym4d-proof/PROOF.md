@@ -460,6 +460,23 @@
 > binds the frozen arguments and review. This does not integrate the rough
 > exterior, select a failure history, or construct a matched reference.
 >
+> The [regional original-coordinate integral](REGIONAL_CHART_RETURN_ASTRA.md)
+> is now frozen and undergoing a fresh independent review. It constructs the
+> nonlinear connected logarithm on the actual small-boundary regional family,
+> retaining every contour side/corner, full prefactor and fixed deep exterior
+> weight. Its canonical agreement and shrinking-domain claims are being checked.
+> The [current integration record](checks/full_proof_regional_chart_alignment_integration.json)
+> publishes this author packet without assigning it a review verdict.
+>
+> The [squared-alignment application](SQUARED_ALIGNMENT_PRICE_ASTRA.md)
+> now has a [fresh scoped LAND review](REVIEW_SQUARED_ALIGNMENT_PRICE_ASTRA.md),
+> with no source repair. It recovers the existing CS10 and REVIEW55_ARS linear
+> threshold, and verifies simultaneous bare coarse-curvature charging with every
+> original normalizer retained. The review supplies the exact common translation
+> of fine fields AND original-source labels between coordinate conventions.
+> This is a one-bare-step energy statement; its remaining matched-reference
+> integral, effective-density bound and renewal estimate are OPEN.
+>
 > The [interacting selected-core construction](INTERACTING_SELECTED_CORE_ASTRA.md)
 > now has a [fresh independent scoped LAND review](REVIEW_INTERACTING_SELECTED_CORE_ASTRA.md)
 > for IC1–IC32. Its one-step, source-free `O(1/u)` connected remainder uses

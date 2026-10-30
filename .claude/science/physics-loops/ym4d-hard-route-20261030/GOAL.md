@@ -21,11 +21,18 @@ Later targets, not on this critical path: O(4) invariance, N >= 3, and the mass 
 
 ## Interface statements
 
-**UV-EXT (draft).** Producer: hard-core. Consumer: upper-chain. The target lead owns the wording, and either part can request a change.
+**UV-CT (draft, replaces UV-EXT; gate check pending).** Producer: hard-core. Consumer: upper-chain. The target lead owns the wording, and either part can request a change.
 
-On a periodic lattice of spacing a and fixed physical side, with beta(a) on the trajectory, the Wilson partition function Z(beta + s) is non-zero for complex s in a disc, and log Z(beta + s) - log Z(beta), with any explicit subtraction the proof names, is bounded by a constant times the physical volume. The disc and the constant do not depend on a or the volume.
+Exact statement: `parts/upper-chain.md`, Text section 7. In short, on one fixed physical torus of side 2 a_*:
 
-The scale of s is not settled. A guide, not a result: an additive shift of order one in beta = 1/g^2 changes the local dynamical scale by a fixed factor, which suggests s of order one and not a fractional shift of beta. The subtraction is not settled either.
+- **CT1-CT3, sources.** A bound with an analytic local counterterm E(w) at reflection-periodic complex plaquette sources, Lipschitz at a physical scale, with E covariant and additive up to a cutoff-free tau on separated supports.
+- **CT4, volume.** log Z_L(beta) >= (L/P)^4 log Z_Tor(beta) - c_F (L/a_*)^4, real and source-free.
+
+All constants are independent of a and L. Non-vanishing of Z is not assumed. Alternatives that also close the chain: UV-LOC-C and IE_p (Theorems 7 and 6 there), and the real form of Theorem 7.8, which gives normalized exponentials rather than the linear field.
+
+Why UV-EXT was dropped (upper-chain Theorems 3 and 4, Proposition 5): the variance of a block energy has a contact term of order a^-4 in physical units; a constant shift has zero momentum, so an explicit reflection-positive Gaussian family with one partition function has separated correlators from zero up to order a^-4; and a volume-uniform complex disc is an open infrared statement.
+
+Credit: the form with a counterterm and position-dependent sources comes through `parts/hard-core--mapped.md` from the Sussman-Alpoge account. So the independent attempt now shares this interface wording with that account, though not its proofs.
 
 ## Model floors
 

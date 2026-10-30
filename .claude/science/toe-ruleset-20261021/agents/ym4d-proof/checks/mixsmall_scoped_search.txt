@@ -1,0 +1,11 @@
+briefs_q/MIXSMALL/AUTHOR.md:1:# Lane MIXSMALL: local smallness of mixed groups and mixed-reader prices, under the real contract
+briefs_q/MIXSMALL/AUTHOR.md:10:- (a) local mixed-group smallness;
+briefs_q/MIXSMALL/AUTHOR.md:12:- (c) local normalizer derivatives;
+briefs_q/MIXSMALL/AUTHOR.md:20:- **Prices.** Use CHARGE's one-use real charging (CARRIES), JMBRB's per-step prices, JMBRA's exact reader integration (clause 1) and RD3's hole transfer (fixed-mask, CARRIES; derivative acquisition NEEDS-REWORK, with constants 730 and 649μ quoted in REALRGA's map). Bound the local normalizer log-derivatives directly from positivity and the kernel gap structure.
+briefs_q/MIXSMALL/AUTHOR.md:23:**Deliverable: MIXSMALL.md**, giving a status for each H-hypothesis and an updated REALRGA carry-over row for each consumed result. Read REALRGA.md, REALRGB.md and their reviews, CHARGE.md, JMBRA.md, JMBRB.md, RENEW.md, RD3.md, RD4.md and LIB1.md.
+briefs_q/MIXSMALL/AUTHOR.md:27:- **Files you may touch.** Create and edit only MIXSMALL.md, MIXSMALL_LOG.md and checks/mixsmall_*. Do not modify any existing file. The runner discards all other edits.
+REALRGB.md:8:It does not provide the local mixed-group smallness, selected-return
+REALRGA.md:7:resolve local normalizer derivatives, mixed-reader prices, or extracted
+REALRGA.md:302:RGA14 for the actual mixed groups in (RGA2) is **OPEN**.
+CHARGE.md:253:On D_* the precise remaining estimate for each mixed group G is, for
+CHARGE.md:555:| 4: overlap types and full-reader sums | **OPEN quantitatively**; exact finite integration retained | Prove (C26), or JMBRA's weighted-reader alternative, on complete mixed groups. Neither a coarse shadow nor a flux label removes an original reader. |

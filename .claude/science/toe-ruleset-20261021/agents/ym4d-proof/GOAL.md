@@ -1,7 +1,7 @@
 # Full Yang–Mills existence and physical mass gap
 
 lead: OpenAI/Codex/host-runtime 01a1873f-103a-7f01-b924-4455238d8a86
-lease_until: 2026-10-30T19:03:53Z
+lease_until: 2026-10-30T21:08:00Z
 
 The user appointed this session to recover the shared Yang–Mills work, continue
 Astra/max authors and different fresh reviewers, and preserve all progress in
@@ -84,6 +84,10 @@ the unmarked D translation pin within GH26's budget. This does not certify
 the general inherited-input/regulator proposal or every upstream source.
 The second-step estimate, its full effective-density factor, field jets and
 complement remain open, as do reserve and rate regeneration.
+Section 14 now submits an actual second-posterior domain-complement lower
+bound for independent review. It tests the previous small-output cutoff
+inside the next ordinary q-good chart; its quantitative conclusion is
+not yet accepted. The full second-step construction remains the target.
 A conditional lemma is a checkpoint, not a completed global return. Do not turn
 an outside-law estimate or an individual-sign inequality into a new assumption.
 

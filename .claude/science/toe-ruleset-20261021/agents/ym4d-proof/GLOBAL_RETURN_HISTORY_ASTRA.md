@@ -1037,3 +1037,125 @@ Continuation provenance: coordinator OpenAI/Codex/host-runtime
 53f2c0af7eb59438389b4c2fe75952932d4e95fe. The preceding 860-line author
 snapshot is preserved at b1979a0173. This continuation used the actual
 RD R2--R5 and H11 selector definitions, not a new literature import.
+
+## 14. The previous small-output complement inside the next ordinary chart
+
+This coordinator continuation submits a finite-volume lower bound for
+independent checking. It concerns the actual second posterior, including
+both normalized kernels. It tests a proposed use of the first-step rare
+price on the previous output-domain complement; it does not assume that
+such a use is part of GH49.
+
+Fix N>=2, odd L>=3 and one compatible three-level finite torus. Fix
+kappa>0, let u_0=u tend to infinity, and assume
+0<c_-<=u_1/u<=c_+<infinity. This is a declared test family of RD R1,
+including u_1=u; it does not establish the physical running-coupling law.
+Use zero original sources, the actual pinned-tree quotient and normalized
+Haar measures. Put p_i=log(2+u_i)^alpha_cut, sigma_i^2=N/u_i,
+q_i=c_q sigma_i^2 p_i^2, and retain GH9's first output domain
+
+    D_0(u)={U_1: max_P ||I-U_(1,P)||op < delta_0(u)},
+    delta_0=d_delta sqrt(q_0)/(4K_0+1)^2.                    (GH52)
+
+SC7 gives K_0 asymptotic to a positive constant times log u. Let Omega_1(I)
+be the next literal product chart with every free whole-link logarithm of
+HS norm <r_a,1=sigma_1 p_1. Let G_1(I) be its next auxiliary q-good sector:
+every Q_X^(1), measured relative to U0(I)=I, is <q_1. Define the ACTUAL
+backward probability at second output I by
+
+    rho_1(U_1)=int exp[-u W_0(U_0)] K_0(U_1,U_0)dH_0,
+    rho_2(I)=int K_1(I,U_1)rho_1(U_1)dH_1,
+    nu_2(dU_1)=rho_2(I)^-1 K_1(I,U_1)rho_1(U_1)dH_1.        (GH53)
+
+This sums the first history masses, rather than normalizing a selected
+history separately. There are constants c_T,C_T>0 and M_T<infinity,
+independent of u in this fixed-volume test, such that for all large u
+
+    nu_2(D_0^c intersect Omega_1(I) intersect G_1(I))
+        >= c_T u^(-M_T) exp[-C_T u delta_0(u)^2].            (GH54)
+
+The proof gives the same lower bound with D_0^c replaced by the failure
+of its curvature bound at one fixed witness plaquette.
+The lower integration region may also be restricted to the first original
+cut sector. Hence first original bad-block failures are not needed for
+this complement to occur. The same lower bound holds if that original
+cut is included in the initial density and its actual posterior is used.
+
+Proof. Choose an interior level-one plaquette in a level-two block and
+one edge e_* of it which is not in the pinned tree; a tree cannot contain
+all four edges. Write H=diag(1,-1,0,...,0), t=4 delta_0, and choose U_1^t
+with exp(i t H) on e_* and identity on every other free link. That
+plaquette has defect 2sin(t/2)>2 delta_0 for all sufficiently large u.
+Its whole-link logarithm has HS norm sqrt(2)t. Since
+
+    delta_0/r_a,1=O(K_0^-2),
+    delta_0^2/q_1=O(K_0^-4),
+    u^(-1)/q_1=O(p_1^-2),
+
+this configuration lies strictly inside Omega_1(I) and G_1(I), while
+lying outside D_0. The implicit constants depend only on the fixed
+coupling-ratio bounds and other fixed data, not u.
+
+Around U_0=I and U_1=U_1^t integrate product Haar balls of radius
+a u^(-1/2) in each free Lie-algebra coordinate, with fixed a>0 small.
+Their joint volume is at least c_T u^(-d_T/2), where d_T is the total
+number of integrated real coordinates. Because
+delta_0 sqrt(u) is of order (log u)^(alpha_cut-2) and tends to infinity,
+the whole U_1 ball remains outside D_0. The preceding ratios put it
+inside both Omega_1(I) and G_1(I). All level-zero plaquettes in the
+U_0 ball have defect O(u^(-1/2)), so it is inside every fixed original
+positive cut, and also every shrinking original cut satisfying GH33.
+
+For any of the actual convex path means M=sum_s w_s P_s, w_s>=0,
+sum_s w_s=1, the literal SU(N) maximizer gives the elementary bound
+
+    0<=psi_M(V)=m(M)-Re Tr(V^*M)/N
+       <=sum_s w_s ||V-P_s||HS^2/(2N).
+
+Here m(M)<=1; no scalar replacement of the SU(N) maximizer is made.
+Finite products of unitary links are Lipschitz with their actual word
+lengths, by telescoping. On the chosen balls this bounds the complete
+nonnegative exponent by
+
+    u W_0(U_0)+kappa u sum_c psi_(M_0,c)(U_1,c)
+            +kappa u_1 sum_c psi_(M_1,c)(I)
+        <= C_T u delta_0^2+C_T.
+
+The bound uses every actual path; at their centers all relevant link
+displacements from I are either zero or O(delta_0). Since
+0<Ntilde_(kappa u_i)(M)<=1, the normalized kernels are bounded below by
+their displayed exponential factors. Thus the joint numerator restricted
+to these balls is at least c_T u^(-d_T/2) exp[-C_T u delta_0^2].
+
+Conversely SC27 applies to every compact M, including singular means.
+Every kernel is at most C(1+u_i)^(D/2), D=N^2-1. There are finitely many
+level-zero and level-one kernels on the chosen torus, W_0>=0, and the
+actual Haar total volume is one. Therefore rho_2(I)<=C_T u^(b_T) for
+a finite b_T. Division gives GH54 with M_T=d_T/2+b_T. No saddle-point,
+Gaussian substitution, partition-function cancellation or discarded
+determinant has been used. Restricting the initial density to its original
+cut preserves the same lower region and the same upper denominator bound.
+
+In particular, u delta_0^2 is of order (log u)^(2alpha_cut-4), while
+log u=o(u delta_0^2) because alpha_cut>5/2. Hence GH54 implies
+
+    lim_(u->infinity) [-log nu_2(D_0^c intersect Omega_1(I)
+                                           intersect G_1(I))]/p_0^2=0. (GH55)
+
+For every fixed eta>0, C>0 and finite m, an upper bound
+C u^m exp[-eta p_0^2] for this event is therefore false already on this
+one torus. Its lower probability can instead be written
+exp[-C_T' (log u)^(2alpha_cut-4)]; this is a lower bound, not a sharp rate.
+
+GH49 remains confined to D_0. Its complement is present even in the next
+ordinary q-good chart and cannot be assigned GH49's same p_0^2 rare
+price. A valid second transfer must estimate that complement at an
+adequate weaker rate, enlarge the real output domain, or supply another
+matched representation. GH54 does not rule out any of those repairs,
+nor a differently proved running-coupling regime. It does not prove a
+connected complement estimate, stable domains, reserve regeneration,
+continuum existence or a physical mass gap. All other obligations persist.
+
+Coordinator continuation, 2026-10-30, same procedure revision as section 13.
+The proof uses RD R1, SC7, SC27 and the literal chart/mean definitions;
+no outside theorem is imported. Independent review is pending.

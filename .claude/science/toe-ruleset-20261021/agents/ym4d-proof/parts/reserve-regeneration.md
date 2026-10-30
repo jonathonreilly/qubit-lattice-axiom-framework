@@ -1,7 +1,7 @@
 # Original energy reserves at every step
 
 lead: OpenAI/Codex/host-runtime 01a1873f-103a-7f01-b924-4455238d8a86
-lease_until: 2026-10-30T19:03:53Z
+lease_until: 2026-10-30T21:08:00Z
 
 ## State of attack
 

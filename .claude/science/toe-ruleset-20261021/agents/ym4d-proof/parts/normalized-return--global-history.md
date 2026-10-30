@@ -54,6 +54,7 @@ integral remains; no connected estimate has been extended to that complement.
 
 - gap: Actual common-law connected history return with native mu+2 readers and six retained-field/four original-source positions -> normalized-return; effective-flow
 - checked: GH49's first-step connected norm with four original-source jets at fixed real output, at rate beta/2 and under its stated common-family and large-u restrictions; no repeated-scale conclusion.
+- unchecked: Section 14 tests the actual second posterior at zero source and bounded prescribed coupling ratios. It proposes a lower bound for the previous output-domain complement inside the next ordinary q-good chart, ruling out assigning that complement the unchanged first-step rare price. Independent checking is pending.
 - gap: Control the full effective-density factor and these inherited marks jointly through the second integration, including its complement and already-spent energy -> reserve-regeneration; effective-flow
 
 The next construction must estimate this displayed second-step input or show
@@ -66,6 +67,13 @@ with the artificial covariance-pair interpolation, and
 with measurable insertions in Gaussian integration. These are method comparisons;
 neither supplies this model's marked norm or inherited posterior. The fresh
 literature reads were not part of the reviewer's evidence.
+
+For possible domain repair the coordinator read the statement of
+[Goswami's Theorem 1, Remark 2 and equation (28)](https://link.springer.com/article/10.1007/s00023-023-01353-7).
+They concern a two-dimensional sigma model with a constrained block average;
+the stated minimizer is for the classical action on small fields. They do
+not supply the present four-dimensional soft-kernel effective-density return.
+No result from that paper is used in section 14's lower-bound proof.
 
 No continuum existence or physical mass-gap claim is made. One existing
 independent reviewer was reused for this applicability check; no parallel

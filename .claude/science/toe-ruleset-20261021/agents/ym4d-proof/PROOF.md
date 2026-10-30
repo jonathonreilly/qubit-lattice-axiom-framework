@@ -469,8 +469,46 @@
 > checked on the same construction. The
 > [review integration](checks/full_proof_regional_chart_review_integration.json)
 > preserves the source-first snapshot and separate final provenance check.
-> Original-cut/history normalization and ratios with rough changed links remain
-> OPEN; a matched regional-ratio construction is the next active author task.
+> Pointwise chart ratios with rough changed template links and whole-cut/history
+> normalization remain OPEN. The following two new units address distinct local
+> comparisons on their stated domains.
+>
+> The [matched physical regional ratio](MATCHED_REGIONAL_RATIO_ASTRA.md) now has a
+> [fresh independent scoped LAND review](REVIEW_MATCHED_REGIONAL_RATIO_ASTRA.md),
+> with no material finding or source repair. Its common real template is small
+> on the changed links and both touching boundaries; arbitrary deep common
+> compact factors cancel literally. The actual ratio logarithm has connected
+> complete readers meeting the changed owner set. Gaussian dimensions, inactive
+> Haar factors, the full determinant and action remain in its explicit budget.
+> Its separated shrinking costs are not an original-complement charge.
+>
+> The [local compact-return construction](SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md)
+> also has a [fresh independent scoped LAND review](REVIEW_SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md),
+> with no material finding or source repair. It bounds actual compact core
+> numerators divided by their actual regional chart integrals, using the same
+> original cut, exterior fields and source labels. The signed critical action
+> and energy-weighted boundary estimate permit a fixed source radius. Complete
+> component, first-shell, endpoint-tree and absence readers are paid, together
+> with every normalizer, Haar, Gaussian and determinant factor. The shrinking
+> ratio family is summable; its proved complex coarse width is only
+> `O(q/K^4)`, and ordinary derivatives retain that inverse-width cost.
+> The all-good cap remains distinct from the active chart and original Omega.
+> These are single-component replacements, not a globally normalized gas.
+> Overlapping fibres, common global normalization, the wider RG domain and
+> inherited histories remain OPEN.
+>
+> The [combined review integration](checks/full_proof_regional_compact_integration.json)
+> binds both exact sources, their distinct source-first findings, separate
+> post-packet checks and final reports. New work is addressing simultaneous
+> gluing and the coarse-domain restriction; neither task has an accepted result
+> at this checkpoint. The concurrent [REALONLY assessment](REALONLY.md) and
+> [its review](REVIEW_REALONLY.md) are preserved at their conditional scope:
+> real estimates can serve several named consumers, but the actual estimates
+> and a replacement real RG induction are not supplied. The
+> [bounded literature record](checks/full_proof_regional_ratio_literature.json)
+> distinguishes strong-coupling lattice results and mass-gap-premised
+> confinement results from the missing continuum mass-gap producer. Neither
+> full non-free continuum existence nor physical mass gap is established.
 >
 > The [squared-alignment application](SQUARED_ALIGNMENT_PRICE_ASTRA.md)
 > now has a [fresh scoped LAND review](REVIEW_SQUARED_ALIGNMENT_PRICE_ASTRA.md),

@@ -1,0 +1,123 @@
+{
+  "schema": "restricted-independent-source-review-receipt-v1",
+  "finalized_utc": "2026-10-30T08:24:04.006372+00:00",
+  "reviewer": "/root/review_matched_regional_ratio",
+  "independence": "Same-family fresh restricted context; no target authorship; no predecessor verdict premise",
+  "requested_configuration": "Astra/max as coordinator-requested; actual launch provenance retained by coordinator; no separate backend attestation",
+  "unit": "Matched physical regional chart ratio, PR 10114 source unit only",
+  "final_source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MATCHED_REGIONAL_RATIO_ASTRA.md",
+    "sha256": "5f27e55375d59dde30eacb91efce42a16ba266d563833db2ffd5babdd14c4af6",
+    "lines": 460
+  },
+  "producer_source_bindings": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "lines": 592
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "lines": 510
+    }
+  ],
+  "historical_source_first_stage": {
+    "origin": "Fresh restricted-context reviewer /root/review_matched_regional_ratio for the matched regional ratio unit of PR 10114. This is a new snapshot of this review, not a predecessor review or a final integration verdict.",
+    "created_utc": "2026-10-30T08:18:48.711536+00:00",
+    "findings": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_matched_regional_ratio_source_first_findings_5f27e55375d5.md",
+      "sha256": "0afc5a5c20bc2cedac684e00ced57b7a9ec67a1945419b772f6225914ccb7435",
+      "lines": 166
+    },
+    "read_manifest": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_matched_regional_ratio_source_first_read_manifest_5f27e55375d5.json",
+      "sha256": "4d779888b010f9134dd309c076022d4b450c85f951b3aaf9430c70e0d00fae83",
+      "lines": 154
+    },
+    "unchanged": true,
+    "qualification": "These earlier snapshots predate the separate packet check and retain their original stage text; they are not overwritten or restamped as final reports."
+  },
+  "final_stage": {
+    "review_report": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MATCHED_REGIONAL_RATIO_ASTRA.md",
+      "sha256": "842584ed665b55a6c820ac5abf2f9d09f3459d0a0ed1d9f18d738151a19a4c6c",
+      "lines": 135
+    },
+    "read_manifest": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_matched_regional_ratio_read_manifest.json",
+      "sha256": "702c9edede586c4413de49e95d504f38baa7e43ab6eda18de3d00e8cf3a42a64",
+      "lines": 287
+    },
+    "author_packet_check": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_matched_regional_ratio_author_packet_check_5f27e55375d5.json",
+      "sha256": "8b954f9f858cfa8fd39c387afa97df9cf94be22bcb7e4428fc143ee9ecc1591f",
+      "lines": 212
+    },
+    "author_records_read": [
+      {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/matched_regional_ratio_read_manifest.json",
+        "sha256": "2481adbd49a15ff10e6dd2c0f83adef27335a20fa0fcb8d7ed84e3d4d79e4f17",
+        "lines": 111
+      },
+      {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/matched_regional_ratio_receipt.json",
+        "sha256": "b1c63a7ae0b2813b3fb68c8488fc9d9f4728be014509cb7e4df6aefc4a64c72f",
+        "lines": 71
+      },
+      {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/matched_regional_ratio_vocab.json",
+        "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+        "lines": 9
+      }
+    ],
+    "all_stages_complete": true
+  },
+  "independent_math_check": "Hand reconstruction of physical factorization and Haar sign, full-phase Taylor identity, membership masks/scalar marks, canonical coefficient equality, determinant continuation, actual holomorphic branch, and separated shrinking substitutions; detailed in immutable source-first findings.",
+  "findings": {
+    "material": 0,
+    "source_repairs": 0,
+    "skipped_material": 0,
+    "iterations": 1
+  },
+  "checks_run": [
+    "Independent source mathematics",
+    "Separate compact author-packet consistency check",
+    "Source SHA256 and line-count freshness",
+    "Read-range endpoint validity",
+    "Protected-source hash comparison",
+    "Target equation labels, fences, whitespace and local links"
+  ],
+  "checks_not_run": [
+    "Author science scripts",
+    "Numerical physics experiments",
+    "Git/PR operations",
+    "Combined pipeline/integration gates",
+    "Independent audit"
+  ],
+  "historical_execution_qualification": "Author lint and previous-session read claims were not independently authenticated; checked hashes and provenance fields only. These claims are not proof premises.",
+  "operations": {
+    "extra_workers": 0,
+    "physics_runs": 0,
+    "source_changes": 0,
+    "git_changes": 0,
+    "pr_changes": 0,
+    "audit_changes": 0,
+    "shared_front_changes": 0
+  },
+  "scope": "Actual finite-u ratio of deterministic whole-link physical chart Haar fibres on one common ambient construction with small template coordinates on Delta union both boundaries, complete-reader anchored logarithm and stated explicit budget.",
+  "open_targets": [
+    "Rough changed links",
+    "Exterior integration",
+    "Original G/Omega cuts and history normalization",
+    "Inherited effective laws",
+    "Complement-charge comparison",
+    "RG iteration",
+    "Non-free continuum existence",
+    "Positive physical continuum mass gap"
+  ],
+  "proof_obligations": "CLOSED within the explicit bounded source contract",
+  "claim_strength": "BOUNDED SUPPORT",
+  "verdict": "LAND",
+  "authority": "Independent source-unit review only; no audit grade or whole-PR/current-main integration certification"
+}

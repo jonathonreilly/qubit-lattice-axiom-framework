@@ -1,0 +1,202 @@
+{
+  "schema": "source_local_compact_return_author_reads_v1",
+  "instruction_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "science_base_head": "8a17d9d9bec2ba6a08359688ba64956df29cf81b",
+  "author_source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+    "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+    "lines": 597
+  },
+  "read_coverage": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "lines": 592,
+      "read_ranges": [
+        [
+          1,
+          592
+        ]
+      ],
+      "coverage": "complete",
+      "role": "Actual regional phase, boundary force, pointwise Hessian majorants, critical branch, accretive precision, exact physical outside factor."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "lines": 510,
+      "read_ranges": [
+        [
+          1,
+          510
+        ]
+      ],
+      "coverage": "complete",
+      "role": "Actual regional chart, full prefactor, active-root logarithm, physical small boundary substitution, shrinking family."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OUTSIDE_CHART_RETURN_ASTRA.md",
+      "sha256": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4",
+      "lines": 641,
+      "read_ranges": [
+        [
+          1,
+          641
+        ]
+      ],
+      "coverage": "complete",
+      "role": "Compact coercivity, actual shell/reset payment, finite shell construction, all original readers, shrinking thresholds and reference limitations; reread omitted shrinking paragraph separately."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GRADED_COMPLEMENT_ASTRA.md",
+      "sha256": "22e30738d5d59adc65c146c7e9fa3bd671462d694a7ae1fe14e73804774e5341",
+      "lines": 580,
+      "read_ranges": [
+        [
+          1,
+          580
+        ]
+      ],
+      "coverage": "complete",
+      "role": "Actual original-cut conditional minimum and chart limitations; its expectation bounds are not used as analytic activities."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "lines": 617,
+      "read_ranges": [
+        [
+          1,
+          335
+        ]
+      ],
+      "coverage": "partial",
+      "role": "Exact density, root-pinned quotient, actual word coercivity and full compact-normalizer cap proof; later CS sections not fully read."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHRINKING_CHART_RETURN_ASTRA.md",
+      "sha256": "9ae446ca746639ff77295f9da712f47e4be9d315d7c26e975535f1602321abfc",
+      "lines": 247,
+      "read_ranges": [
+        [
+          1,
+          247
+        ]
+      ],
+      "coverage": "complete",
+      "role": "Uniform shrinking chart parameters, fixed source radius and literal original-cut/Omega comparisons."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+      "lines": 711,
+      "read_ranges": [
+        [
+          1,
+          155
+        ],
+        [
+          690,
+          711
+        ]
+      ],
+      "coverage": "partial",
+      "role": "Model and common analytic family; scope only. Full connected proof not rereviewed here; RC is the consumed producer."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "lines": 722,
+      "read_ranges": [
+        [
+          300,
+          322
+        ],
+        [
+          506,
+          610
+        ]
+      ],
+      "coverage": "partial",
+      "role": "Exact selected-cube normalization, original G thresholds, Omega containment, exact complement identity and missing source logarithm."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "lines": 812,
+      "read_ranges": [
+        [
+          469,
+          543
+        ]
+      ],
+      "coverage": "partial",
+      "role": "Literal white-ball/product reference and conditional NZ-ret consumer, not used as an actual compact theorem."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LFPRICE.md",
+      "sha256": "4deb5cbf7573145a438abcda4aeedd14c4270cc05c3e63072abeb43561c77a53",
+      "lines": 764,
+      "read_ranges": [
+        [
+          1,
+          220
+        ]
+      ],
+      "coverage": "partial",
+      "role": "Exact kernel convention, original denominator, energy allocation and price units; no inherited-history theorem imported."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD4.md",
+      "sha256": "60d27c7ec5e5fda254e8394c34639cccdfe42cd9f85898bb22952bc6fa6067c6",
+      "lines": 741,
+      "read_ranges": [
+        [
+          1,
+          210
+        ],
+        [
+          330,
+          495
+        ]
+      ],
+      "coverage": "partial",
+      "role": "Actual source/history reference conventions, exact large/small split, matching and global gluing obligations."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "lines": 11,
+      "read_ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "coverage": "complete",
+      "role": "Owner author/review discipline, exact 11-line file."
+    }
+  ],
+  "instructions": {
+    "AGENTS.md": "read in full from worktree",
+    "SCIENCE_WORKFLOW.md": "read in full with git show at instruction_revision",
+    "skill": "physics-loop applied; scope restricted by parent file ownership and PROCESS_LIGHT; no new PR or campaign pack"
+  },
+  "literature": [
+    {
+      "url": "https://arxiv.org/html/1212.5562v2",
+      "coverage": "abstract/introduction; returned passages at lines 1964-1972 and 2374-2381; table of contents and adjacent search passages",
+      "role": "primary architectural comparison only, scalar phi-four d=3; no imported theorem"
+    },
+    {
+      "url": "https://doi.org/10.1007/BF01238433",
+      "coverage": "DOI opened; publisher redirect unavailable",
+      "role": "attribution only, no full-text theorem consumed"
+    }
+  ],
+  "not_read_or_used": [
+    "MATCHED_REGIONAL_RATIO_ASTRA.md (concurrent unfinished source)",
+    "predecessor review verdicts as proof premises"
+  ],
+  "numerical_physics_runs": 0
+}

@@ -1,0 +1,28 @@
+{
+  "utc": "2026-10-30T11:30:38.467600+00:00",
+  "status": "NOT RUN",
+  "checks": [],
+  "criteria_sha256": "9428eae0656c92b22d012438af12cf45b2476ce8ee21568d30c8c9ef5f959a0f",
+  "runner_sha256": "55cbf76790d9c10f94244ff2432ce547fe7285b99e8dcc263458d8108f610503",
+  "preflight": {
+    "nice": 0,
+    "load": [
+      3.7373046875,
+      5.263671875,
+      4.96728515625
+    ],
+    "rss_bytes": 20742144,
+    "threads": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1"
+    },
+    "memory": "not measured before priority/thread/load/RSS acceptance"
+  },
+  "reason": [
+    "actual nice < 10; requested priority was not applied"
+  ]
+}

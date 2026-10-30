@@ -1,0 +1,463 @@
+{
+  "schema_version": 1,
+  "role": "author; independent review pending",
+  "configuration_requested": "Astra/max as assigned by coordinator; not backend-attested",
+  "mathematical_source_frozen_before_packaging": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+    "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+    "bytes": 31328,
+    "line_count": 592
+  },
+  "sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "bytes": 28993,
+      "line_count": 568,
+      "fresh_read_ranges": [],
+      "reused_same_session_read_ranges": [
+        [
+          1,
+          330
+        ]
+      ],
+      "coverage": "Actual normalized compact kernel, lift, curvature/analytic chart and source-free precision; earlier completed bounded source read reused."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "bytes": 39217,
+      "line_count": 722,
+      "fresh_read_ranges": [],
+      "reused_same_session_read_ranges": [
+        [
+          1,
+          334
+        ],
+        [
+          375,
+          418
+        ]
+      ],
+      "coverage": "Earlier completed bounded reads reused, including the CA-unit continuation through 334 and action/readers at 375–418. No full-file coverage claimed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8",
+      "bytes": 27584,
+      "line_count": 543,
+      "fresh_read_ranges": [],
+      "reused_same_session_read_ranges": [
+        [
+          1,
+          543
+        ]
+      ],
+      "coverage": "Unchanged complete earlier author construction reused; principal patch estimates, full readers and positive real core are rebuilt for every regional principal compression."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "bytes": 29068,
+      "line_count": 556,
+      "fresh_read_ranges": [],
+      "reused_same_session_read_ranges": [
+        [
+          1,
+          556
+        ]
+      ],
+      "coverage": "Unchanged complete earlier author construction reused; actual finite-u local vertex majorants, source-linear Hessian, joint domain and full-reader algebra are adapted explicitly."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "bytes": 36322,
+      "line_count": 713,
+      "fresh_read_ranges": [],
+      "reused_same_session_read_ranges": [
+        [
+          1,
+          713
+        ]
+      ],
+      "coverage": "Unchanged complete earlier author construction reused for the stronger common R, active-core constants and its explicit tail cap. No nonlinear regional return is inferred."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_DETERMINANT_READER_ASTRA.md",
+      "sha256": "bd33e000b839fe79e9a9bceda43d9b28b370e69717f0cedb8d1c14336642b755",
+      "bytes": 21272,
+      "line_count": 397,
+      "fresh_read_ranges": [],
+      "reused_same_session_read_ranges": [
+        [
+          1,
+          397
+        ]
+      ],
+      "coverage": "Unchanged complete earlier author construction reused; the regional full determinant homotopy and critical ratio are stated and checked again."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_ACTION_READER_ASTRA.md",
+      "sha256": "a466d55444d17c0d54fe9efecabc956ac5e3fcf9c61fdc0780d9248dabaf62fd",
+      "bytes": 12324,
+      "line_count": 238,
+      "fresh_read_ranges": [],
+      "reused_same_session_read_ranges": [
+        [
+          1,
+          238
+        ]
+      ],
+      "coverage": "Unchanged complete earlier author construction reused. Its stationary-action identity extends, whereas its all-zero scalar normalizer formula does not apply at nonzero boundary y."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CRITICAL_ACTION_READER_ASTRA.md",
+      "sha256": "a0c589129633053f329aa453a600e133924b438e160bc20dc0848e4b794cdfb1",
+      "bytes": 8206,
+      "line_count": 137,
+      "fresh_read_ranges": [
+        [
+          1,
+          137
+        ]
+      ],
+      "reused_same_session_read_ranges": [],
+      "coverage": "Complete current review read for accepted predecessor scope and provenance; not a proof of the regional extension."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GRADED_COMPLEMENT_ASTRA.md",
+      "sha256": "22e30738d5d59adc65c146c7e9fa3bd671462d694a7ae1fe14e73804774e5341",
+      "bytes": 31368,
+      "line_count": 580,
+      "fresh_read_ranges": [
+        [
+          201,
+          236
+        ]
+      ],
+      "reused_same_session_read_ranges": [],
+      "coverage": "Bounded comparison only: existing real conditional minimizer, small local boundary, arbitrary far exterior and normal-cone equation. Not consumed as an analytic branch or full-reader theorem."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_RETURN_ASTRA.md",
+      "sha256": "2eee991e4e4546aa3ed10ad0ffe40d840c5347a002d623aac47b2fc515fd7769",
+      "bytes": 46461,
+      "line_count": 855,
+      "fresh_read_ranges": [
+        [
+          1,
+          31
+        ],
+        [
+          53,
+          105
+        ],
+        [
+          310,
+          333
+        ],
+        [
+          475,
+          508
+        ],
+        [
+          576,
+          696
+        ]
+      ],
+      "reused_same_session_read_ranges": [],
+      "coverage": "Bounded existing regional/global-chart producer and scope comparison. The 576–696 window was completed by overlapping reads; no full-file or arbitrary-holonomy import."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "sha256": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+      "bytes": 48847,
+      "line_count": 854,
+      "fresh_read_ranges": [
+        [
+          42,
+          84
+        ],
+        [
+          622,
+          681
+        ]
+      ],
+      "reused_same_session_read_ranges": [],
+      "coverage": "Bounded history/normalization scope comparison only. No history theorem is imported."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LARGE55.md",
+      "sha256": "79bc36d60687376716aa425ad3c271b681ca9549f5d217693e2736b805cdf0e7",
+      "bytes": 81497,
+      "line_count": 764,
+      "fresh_read_ranges": [
+        [
+          410,
+          443
+        ]
+      ],
+      "reused_same_session_read_ranges": [],
+      "coverage": "Bounded regional obligation context only; no numerical or conditional target is imported as proof."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RLARGE.md",
+      "sha256": "4f3d2777bcd736ad6936946f6c072ebebd8fe2638839538ea0db28825f2438d2",
+      "bytes": 134489,
+      "line_count": 1267,
+      "fresh_read_ranges": [
+        [
+          1224,
+          1238
+        ]
+      ],
+      "reused_same_session_read_ranges": [],
+      "coverage": "Bounded frozen-scope context only, including an adjacent legacy log opening. No numerical result or unbounded file coverage is used."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD4.md",
+      "sha256": "60d27c7ec5e5fda254e8394c34639cccdfe42cd9f85898bb22952bc6fa6067c6",
+      "bytes": 42966,
+      "line_count": 741,
+      "fresh_read_ranges": [
+        [
+          336,
+          399
+        ]
+      ],
+      "reused_same_session_read_ranges": [],
+      "coverage": "Bounded actual L1–L4 outside/inside split and matched-reference obligations; no full history or matched denominator theorem is imported."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497,
+      "line_count": 11,
+      "fresh_read_ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "reused_same_session_read_ranges": [],
+      "coverage": "Complete lane process read; source-first freeze, compact provenance and fresh independent review."
+    }
+  ],
+  "methodology": [
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "coverage": "Completed earlier same-session read reused; current working bytes freshly rehashed equal to the exact selected revision pin without Git operations."
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "coverage": "Completed earlier same-session read reused; current working bytes freshly rehashed equal to the exact selected revision pin without Git operations."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "coverage": "Completed earlier same-session read reused; current working bytes freshly rehashed equal to the exact selected revision pin without Git operations."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "coverage": "Completed earlier same-session read reused; current working bytes freshly rehashed equal to the exact selected revision pin without Git operations."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "coverage": "Completed earlier same-session read reused; current working bytes freshly rehashed equal to the exact selected revision pin without Git operations."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "coverage": "Completed earlier same-session read reused; current working bytes freshly rehashed equal to the exact selected revision pin without Git operations."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "coverage": "Completed earlier same-session read reused; current working bytes freshly rehashed equal to the exact selected revision pin without Git operations."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "coverage": "Completed earlier same-session read reused; current working bytes freshly rehashed equal to the exact selected revision pin without Git operations."
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "coverage": "Completed earlier same-session read reused; current working bytes freshly rehashed equal to the exact selected revision pin without Git operations."
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "coverage": "Completed earlier same-session read reused; current working bytes freshly rehashed equal to the exact selected revision pin without Git operations."
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "coverage": "Completed earlier same-session read reused; current working bytes freshly rehashed equal to the exact selected revision pin without Git operations."
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "coverage": "Completed earlier same-session read reused; current working bytes freshly rehashed equal to the exact selected revision pin without Git operations."
+    }
+  ],
+  "protected_predecessor_base": {
+    "manifest": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/critical_action_reader_read_manifest.json",
+      "sha256": "46331dea4ffd8f9568a3c03ef675145bfd008d374545ebb2dca8b75c67c0837f",
+      "bytes": 15243
+    },
+    "recursive_base_key": "protected_predecessor_base",
+    "additional_records_key": "additional_protected_records",
+    "records_rechecked": 75,
+    "scope": "Resolve the pinned CA manifest base to its pinned CD protected_predecessor_files, then add the CA additional_protected_records. All 75 current files were rehashed; this reference adds no read coverage."
+  },
+  "additional_protected_records": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_ACTION_READER_ASTRA.md",
+      "sha256": "a466d55444d17c0d54fe9efecabc956ac5e3fcf9c61fdc0780d9248dabaf62fd",
+      "bytes": 12324
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/critical_action_reader_author_checks.md",
+      "sha256": "a8a56133f3ad162095e9f9bcb892336b48c1fb45899fd2f50f84d73736a8d4d0",
+      "bytes": 3026
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/critical_action_reader_read_manifest.json",
+      "sha256": "46331dea4ffd8f9568a3c03ef675145bfd008d374545ebb2dca8b75c67c0837f",
+      "bytes": 15243
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/critical_action_reader_receipt.json",
+      "sha256": "0a041ce0ffef86a5818a440cfb2b804d6131e0245b2041021c5553f9b5ab2af8",
+      "bytes": 1431
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CRITICAL_ACTION_READER_ASTRA.md",
+      "sha256": "a0c589129633053f329aa453a600e133924b438e160bc20dc0848e4b794cdfb1",
+      "bytes": 8206
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_critical_action_reader_final_receipt.json",
+      "sha256": "0727e090e31e3d19beb7936c34ebd76eb9ecf6251b7e2eeeaacc07bae47a91ed",
+      "bytes": 14589
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_critical_action_reader_packet_check.json",
+      "sha256": "f5c4213b8f045958e68dbdc9e473b33b96cffae732c7ea5cf58f327a282cad74",
+      "bytes": 2740
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_critical_action_reader_source_findings.md",
+      "sha256": "91aca210a5cb139c83b63d412eb423bbd3c5a9a1c6a82dbb832802d83a1537ec",
+      "bytes": 6930
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_critical_action_reader_source_manifest.json",
+      "sha256": "4bd7a4311848bd5e818b819dad5496a28ba2421883bfda24c9c535732ad76214",
+      "bytes": 4033
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_critical_action_reader_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153
+    }
+  ],
+  "protected_unique_files_verified": 85,
+  "mechanical_identity_result": {
+    "mismatches": [],
+    "inputs_checked": 15,
+    "methodology_checked": 12,
+    "source_local_links": [
+      "SOURCE_LOCAL_RETURN_ASTRA.md",
+      "COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "CRITICAL_DETERMINANT_READER_ASTRA.md",
+      "CRITICAL_ACTION_READER_ASTRA.md",
+      "RD4.md",
+      "GRADED_COMPLEMENT_ASTRA.md"
+    ],
+    "equation_definition_labels": [
+      "RF1",
+      "RF2",
+      "RF3",
+      "RF4",
+      "RF5",
+      "RF6",
+      "RF7",
+      "RF8",
+      "RF9",
+      "RF10",
+      "RF11",
+      "RF12",
+      "RF13",
+      "RF14",
+      "RF15",
+      "RF16",
+      "RF17",
+      "RF18",
+      "RF19",
+      "RF20",
+      "RF21",
+      "RF22",
+      "RF23",
+      "RF24",
+      "RF25",
+      "RF26",
+      "RF27"
+    ],
+    "scientific_evidence": false
+  },
+  "read_limits": "Fresh ranges are exact completed bounded reads in this regional task. Reused ranges identify completed earlier same-session unchanged reads or author constructions, never fresh whole-file reads. Checksums and lookup hits do not enlarge coverage.",
+  "existing_results_reused": [
+    "CB/SA actual local phase and analytic vertices",
+    "PC/FU actual global lift and critical-field reader algebra",
+    "NRR stronger common-R tail budget and active-core inverse constants",
+    "CD determinant and CA stationary-action constructions"
+  ],
+  "new_bounded_match": "Arbitrary deterministic whole-link principal regions with holes; actual small boundary-only complex data, explicit boundary force, actual interior critical field and full critical covariance; canonical full-reader coefficient agreement including membership. Outside-only physical weights remain exact and unbounded.",
+  "new_external_theorem_imports": [],
+  "new_primary_web_reads": [],
+  "numerical_experiments": [],
+  "mechanical_failures_and_repairs": [
+    {
+      "event": "A zsh discovery command contained an unmatched REGIONS*.md glob and that query did not execute.",
+      "repair": "Repeat the needed scope comparison using explicit SOURCE_LOCAL_RETURN_ASTRA.md, SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md, LARGE55.md and RLARGE.md paths.",
+      "scientific_evidence": false
+    },
+    {
+      "event": "An initial bounded rg term search returned no matches.",
+      "interpretation": "A bounded negative lookup only, not a complete absence search or mathematical experiment."
+    }
+  ],
+  "git_operations": [],
+  "not_proved": [
+    "rough boundary control",
+    "outside-only weight normalization or logarithmic budget",
+    "arbitrary hard histories or matched-reference return",
+    "regional nonlinear chart integration",
+    "effective induction",
+    "relevant-term renormalization",
+    "4D continuum existence",
+    "positive physical continuum mass gap"
+  ]
+}

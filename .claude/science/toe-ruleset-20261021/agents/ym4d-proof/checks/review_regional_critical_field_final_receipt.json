@@ -1,0 +1,250 @@
+{
+  "additional_methodology_reads": [
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "read": "entire after source-first freeze; procedure only",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "read": "entire after source-first freeze; procedure only",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7"
+    }
+  ],
+  "author_packet_changed_mathematical_findings": false,
+  "author_physics_runners_executed": false,
+  "blocking_findings": 0,
+  "commits_created": [],
+  "created_utc": "2026-10-30T06:31:47.860877+00:00",
+  "deferred_scientific_findings_in_reviewed_extension": 0,
+  "exact_algebra_output": {
+    "ambient_inverse_compression_mismatch_on_masks": 62,
+    "boundary_commutator_and_ordered_lift_inverse": "PASS",
+    "includes_empty_and_full_masks": true,
+    "ordered_critical_inverse": "PASS",
+    "retained_masks_checked": 64,
+    "scope": "finite exact rational algebra only; not the uniform analytic theorem",
+    "wrong_commutator_sign_detected_on_masks": 24,
+    "wrong_critical_inverse_order_detected_on_masks": 43
+  },
+  "extra_workers_launched": false,
+  "final_input_identity_mismatches": [],
+  "full_existence_established": false,
+  "git_mutations": [],
+  "independence": "fresh same-family Codex reviewer, no source authorship",
+  "integration_and_audit_gates": "coordinator owned; not executed or certified by this source review",
+  "numerical_physics_experiments": [],
+  "physical_continuum_mass_gap_established": false,
+  "record_type": "fresh_independent_bounded_source_review_confirmation",
+  "remaining_scope": [
+    "hard histories and matched-reference return",
+    "regional nonlinear chart integration",
+    "effective iteration and relevant-term extraction",
+    "4D continuum existence",
+    "positive physical continuum mass gap"
+  ],
+  "report_local_links_verified": 7,
+  "review_artifacts": [
+    {
+      "bytes": 11203,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "0b0f6f088e907bd6bc1534e9ad59e0489d9aa4f1b6630e662f987d7dd6f8043f"
+    },
+    {
+      "bytes": 7736,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_regional_critical_field_source_first.json",
+      "sha256": "cb053d314764db33f9b7b3a0d7ab5f0b08fdf0fd4f5dd6003d4b82a9a2663955"
+    },
+    {
+      "bytes": 9774,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_regional_critical_field_source_findings.txt",
+      "sha256": "f25677e6f66022a2557113c26afe8067e757719419d6a2f34cd0ee5325ae88f8"
+    },
+    {
+      "bytes": 4444,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_regional_critical_field_exact_algebra.py",
+      "sha256": "d08bf2f95459e89ef3e7c2016f22ff489d32867b962adf65a08abf2e54ba0df2"
+    },
+    {
+      "bytes": 415,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_regional_critical_field_exact_algebra.json",
+      "sha256": "038ead454e280320c248db3ff79066be6cb6b58cb91201642879bd334a2e2ff7"
+    },
+    {
+      "bytes": 38343,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_regional_critical_field_packet_check.json",
+      "sha256": "f0ae07b3c0a8a99680d1abe77e96b3105245b08f76eda09904cb99fbacfbdd35"
+    }
+  ],
+  "review_iterations": 1,
+  "reviewer_configuration_invocation": {
+    "fork_turns": "none",
+    "model": "gpt-6-astra",
+    "provenance": "coordinator confirmed actual spawn arguments; not an independent backend attestation",
+    "reasoning_effort": "max"
+  },
+  "source": {
+    "line_count": 592,
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+    "read_range_sha256": [
+      "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b"
+    ],
+    "read_ranges": [
+      [
+        1,
+        592
+      ]
+    ],
+    "reason": "complete frozen target source",
+    "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b"
+  },
+  "source_first_read_manifest": [
+    {
+      "line_count": 592,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "read_range_sha256": [
+        "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b"
+      ],
+      "read_ranges": [
+        [
+          1,
+          592
+        ]
+      ],
+      "reason": "complete frozen target source",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b"
+    },
+    {
+      "line_count": 568,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "read_range_sha256": [
+        "a28864e08ef347ecb0f7f0a1286f4fc840d3002bd518fec8f3f0eb3da00591fb"
+      ],
+      "read_ranges": [
+        [
+          32,
+          470
+        ]
+      ],
+      "reason": "actual model, quotient, finite-u Hessian, local analytic domain and stationarity",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74"
+    },
+    {
+      "line_count": 556,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "read_range_sha256": [
+        "f3ef9de2140de96f095abb1fb6ae4de0344085053e6b86b185d644a11358f09b"
+      ],
+      "read_ranges": [
+        [
+          1,
+          520
+        ]
+      ],
+      "reason": "actual phase, core and tails, source-linear equation, local Taylor majorants, joint contraction",
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d"
+    },
+    {
+      "line_count": 543,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "read_range_sha256": [
+        "ec912d0517056c3b9f91ca53c61bc886f55eccc3e14881103a70e74c99e098c8"
+      ],
+      "read_ranges": [
+        [
+          1,
+          436
+        ]
+      ],
+      "reason": "principal inverse, ambient cover, both endpoint and marked sums, accretivity and complete-reader factorization",
+      "sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8"
+    },
+    {
+      "line_count": 397,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_DETERMINANT_READER_ASTRA.md",
+      "read_range_sha256": [
+        "ff973821e624e42f469d05a754f5191be2801c991cca02e839c1506ee3a3f6ea"
+      ],
+      "read_ranges": [
+        [
+          52,
+          372
+        ]
+      ],
+      "reason": "finite Jacobi homotopy, complete lift/critical determinant and branches",
+      "sha256": "bd33e000b839fe79e9a9bceda43d9b28b370e69717f0cedb8d1c14336642b755"
+    },
+    {
+      "line_count": 238,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_ACTION_READER_ASTRA.md",
+      "read_range_sha256": [
+        "9f204b0f117319ea31945810d0ab99275123b48cff8c0aa4f10bee33bff4214a"
+      ],
+      "read_ranges": [
+        [
+          31,
+          205
+        ]
+      ],
+      "reason": "three scalar marks, exact action identity and vacuum normalization distinction",
+      "sha256": "a466d55444d17c0d54fe9efecabc956ac5e3fcf9c61fdc0780d9248dabaf62fd"
+    },
+    {
+      "line_count": 580,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GRADED_COMPLEMENT_ASTRA.md",
+      "read_range_sha256": [
+        "1a3dfd2412f50cdc04a802bf996714c5d12a2e520ec5e450a095c77c27129b67"
+      ],
+      "read_ranges": [
+        [
+          195,
+          252
+        ]
+      ],
+      "reason": "previous real boundary minimizer has a normal-cone term and does not supply the present analytic branch",
+      "sha256": "22e30738d5d59adc65c146c7e9fa3bd671462d694a7ae1fe14e73804774e5341"
+    },
+    {
+      "line_count": 713,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "read_range_sha256": [
+        "e29123f52d67108f891d3ae762418d5055b806632194f514f1c265d4e0e113ed"
+      ],
+      "read_ranges": [
+        [
+          87,
+          163
+        ]
+      ],
+      "reason": "R-independent active inverse constants and stronger tail-domain order",
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0"
+    },
+    {
+      "line_count": 11,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "read_range_sha256": [
+        "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab"
+      ],
+      "read_ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "reason": "actual owner process",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab"
+    }
+  ],
+  "source_first_record_sha256": "cb053d314764db33f9b7b3a0d7ab5f0b08fdf0fd4f5dd6003d4b82a9a2663955",
+  "source_first_report_recovery": {
+    "matches_prefrozen_review_bytes": true,
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_regional_critical_field_source_findings.txt",
+    "relative_link_base": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof",
+    "sha256": "f25677e6f66022a2557113c26afe8067e757719419d6a2f34cd0ee5325ae88f8"
+  },
+  "source_repairs": 0,
+  "verdict": "LAND",
+  "verdict_scope": "the frozen regional source theorem only; not PR integration or retained status"
+}

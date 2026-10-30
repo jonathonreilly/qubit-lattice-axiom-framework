@@ -448,6 +448,18 @@
 > auxiliary-chart result; original-cut/history returns, effective iteration,
 > continuum existence, non-freeness and the physical mass gap remain OPEN.
 >
+> The [regional critical-field extension](REGIONAL_CRITICAL_FIELD_ASTRA.md)
+> now has a [fresh independent scoped review](REVIEW_REGIONAL_CRITICAL_FIELD_ASTRA.md)
+> with no blocking finding or source repair. It supplies the actual finite-u
+> critical field, full covariance readers, determinant and stationary-action
+> identities for deterministic whole-link regions with arbitrary holes.
+> Smallness is required only on the actual touching boundary; deeper fixed real
+> compact fields stay in an explicit outside weight. Ambient membership readers
+> and canonical coefficient agreement across regions are retained. The
+> [regional integration record](checks/full_proof_regional_field_integration.json)
+> binds the frozen arguments and review. This does not integrate the rough
+> exterior, select a failure history, or construct a matched reference.
+>
 > The [interacting selected-core construction](INTERACTING_SELECTED_CORE_ASTRA.md)
 > now has a [fresh independent scoped LAND review](REVIEW_INTERACTING_SELECTED_CORE_ASTRA.md)
 > for IC1–IC32. Its one-step, source-free `O(1/u)` connected remainder uses

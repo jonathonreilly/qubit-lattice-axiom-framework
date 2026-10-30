@@ -1,0 +1,10 @@
+{
+  "ambient_inverse_compression_mismatch_on_masks": 62,
+  "boundary_commutator_and_ordered_lift_inverse": "PASS",
+  "includes_empty_and_full_masks": true,
+  "ordered_critical_inverse": "PASS",
+  "retained_masks_checked": 64,
+  "scope": "finite exact rational algebra only; not the uniform analytic theorem",
+  "wrong_commutator_sign_detected_on_masks": 24,
+  "wrong_critical_inverse_order_detected_on_masks": 43
+}

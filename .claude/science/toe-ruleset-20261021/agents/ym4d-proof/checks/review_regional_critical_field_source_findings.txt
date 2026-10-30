@@ -1,0 +1,154 @@
+# Independent review of the regional critical-field construction
+
+The frozen 592-line [source](REGIONAL_CRITICAL_FIELD_ASTRA.md), SHA256
+`45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b`, supports
+the stated bounded regional theorem. I found no blocking mathematical error.
+This is a fresh same-family Codex review, separate from authorship. The
+coordinator confirms the invocation requested `gpt-6-astra`, reasoning `max`,
+and `fork_turns=none`; this records the invocation, not a backend attestation.
+
+The actual [11-line lane process](PROCESS_LIGHT.md) controls this review.
+Review-loop's mathematical lenses were used within the assigned source-only
+scope. The coordinator owns Git, PR #10114, shared fronts, integration and
+audit compatibility. I changed no scientific source, Git state, front, ledger,
+or author evidence. No extra worker or author physics script was launched.
+
+## Source-first freeze and read boundary
+
+The independent findings and exact read manifest were frozen in
+[the source-first record](checks/review_regional_critical_field_source_first.json)
+before opening any author check, receipt or manifest for this unit. Necessary
+mathematical input ranges were read directly from CB, FU, PC, CD, CA, GC and
+NRR; the record pins their bytes and ranges. FU lines 43–46 incidentally include
+a sentence reporting a prior PC review. I did not open that review and did
+not use its verdict as evidence. No other previous review or integrator
+evidence supplied this decision.
+
+The reviewed target fixes N>=2, odd L>=3, real u>=1, an admitted positive
+compact kappa interval, and arbitrary deterministic subsets of the fixed
+free whole links on each finite d=4 torus. Constants may depend on N, L and
+the kappa interval; they are uniform in u, torus size, the region and its
+holes. Fine boundary coordinates are small only on the actual touching
+stencil boundary B(Lambda). Arbitrary fixed real compact deep exterior
+fields occur in the explicit outside weight. This is an auxiliary one-step
+coordinate-density construction. It establishes neither continuum existence
+nor a positive physical mass gap; both physical objectives remain **OPEN**.
+
+## Independent mathematical findings
+
+1. **Exact phase and fibres (lines 52–116, 518–576).** RF2 is precisely the
+   sum of original touching vertices. An exterior field derivative cannot
+   produce a missing interior vertex: any vertex with an interior derivative
+   already touches Lambda. Each exterior input of such a vertex is in
+   B(Lambda). The remaining vertices, including empty-stencil constants,
+   belong outside. RF3 retains all chart Haar factors. RF4 divides by exactly
+   the inactive Haar Jacobians already in F_out; RF27 instead uses the
+   physical outside weight without those Haar factors. Neither formula
+   cancels a conditional/reference normalizer. With Lambda empty RF27 is
+   the complete original w_epsilon, while the regional integral is one.
+
+2. **Arbitrary holes and both marked sums (lines 120–244).** The retained
+   precision and every patch precision are actual principal compressions.
+   Their accretivity and the weighted row and column perturbation bounds
+   survive deletion of indices. In components, chi_A K_Lambda G_(A,Lambda)
+   chi_A=chi_A^2 because the inverse is taken on exactly A intersect Lambda.
+   Expanding K_Lambda past chi_A gives the stated negative commutator and
+   K_Lambda P_Lambda=I-R_Lambda. The collar makes residual endpoints lie in
+   the ambient patch even at its boundary. Holes add no missing inverse
+   product: fixed exterior couplings enter the force. The row bound sums
+   cutoff differences first; the column bound starts with the final cutoff.
+   A marked patch uses its per-patch row bound and at most n_R rows. This
+   justifies B(P)<=n_R p and B(R)<=n_R r without a volume factor. Marking P
+   or any residual factor gives both terms of b_lift. All full-colour
+   matrices and their ambient S_A readers are retained.
+
+3. **Boundary force and positive domain (lines 246–343).** The N_9 reader
+   pays every membership flag needed to decide whether e is in B(Lambda),
+   rather than paying only m_e. Its marked incidence is bounded by
+   n0*19^4. The force is I_Lambda F_epsilon'(y^B), including K y^B,
+   H_epsilon y^B and the nonlinear terms. It need not vanish at flat V.
+   H_epsilon x is also retained in RF19. R is fixed before the resulting
+   large marked constants; tau and rho then pay N' and D_H, and finally
+   curvature, eta and zeta pay the force and Y. N'(0)=D_H(0,0)=0 and
+   F_bd tends to zero with curvature and Y, so the domain is truly nonempty
+   without a constraint on the total size of the boundary.
+
+4. **Actual solution and cross-region agreement (lines 345–405).** The
+   contraction is the exact regional stationarity equation, with constant
+   at most 1/4 and image inside tau/2. The ordinary component supremum
+   contraction supplies pointwise uniqueness independently of the stronger
+   marked norm. The real Hessian bound gives only the stated local minimum.
+   Local agreement is checked on the same fixed ambient torus and cover.
+   A patch inverse reads all membership in A and all original matrix readers
+   in S_A. Vertex selection reads the full original stencil; the y atom
+   reads its full N_9 membership stencil. Zero coefficients are retained in
+   one mask-independent word list. Each substitution tree therefore reads
+   exactly its complete union label. The positive tree recursion has the
+   same 1/4 derivative bound, so absolute convergence permits grouping by
+   S and preserves coefficient agreement. No region-dependent cover,
+   branch selection, ordering, or suppressed mask is used. This is not a
+   cross-volume local-agreement claim or permission to select Lambda by an
+   uncharged hard event.
+
+5. **Covariance, active inverses and endpoint factorization (lines 407–477).**
+   The critical Hessian is the actual regional Hessian at b+y^B. Its inverse
+   is expanded in the correct order around G_Lambda; critical principal
+   patch inverses are not used as local coefficients. The two marked terms
+   in RF22 respectively mark the initial G and a Delta G factor. Each tail
+   has endpoint norm at most c0/16 and e_*/3; their marked norms are merely
+   finite. Whole real positive core matrices can be independently weakened,
+   and their aggregate complex displacement costs less than c0/8. This
+   proves the stated 3c0/4 accretivity. The undeformed P envelope follows
+   from the cutoff Cauchy–Schwarz sum; conjugating any principal P[I] costs
+   at most theta A1. This proves the active inverse bound with all colours
+   and holes, without confusing a marginal covariance with a principal
+   precision. Complete-reader bond monomials remove crossing diagonal
+   atoms too, so the normalized Gaussian genuinely factors at disconnected
+   endpoints. No differentiated forest sum follows from this argument.
+
+6. **Determinant, action and physical substitution (lines 479–568).** The
+   finite K_theta homotopy preserves the regional gap and collar identity.
+   Its constant is D times the number of retained links times log B, with
+   local membership retained. Marking the critical trace series cancels
+   its 1/j, giving RF25; Jacobi continuation fixes Tr Log rather than a
+   principal scalar log of the determinant. For phi(s)=F_Lambda(s b;y),
+   phi'(1)=0 implies phi(1)-phi(0)=-integral_0^1 s phi''(s) ds. The two
+   vector marks and Hessian mark give exactly RF26's stated budget. The
+   exact F_Lambda(0;y), source values, scalar vacua and outside factors
+   remain. At fixed physical exterior, a crossing boundary link satisfies
+   U_out U0(V)^-1=exp(bar y)exp(-v). The displayed small logarithm estimate
+   maps into the independent y domain and reads only the already paid
+   coarse endpoint. eta<=zeta/8 is compatible with the earlier ordering.
+   Deep exterior links remain fixed. Every outside-only kernel mean and
+   its positive real normalizer are thus fixed, with only its coarse
+   numerator continued. No rough complex mean or fictitious moving exterior
+   is required.
+
+## Independent exact algebra and limitations
+
+[The independent check](checks/review_regional_critical_field_exact_algebra.py)
+uses rational Gaussian elimination on a six-coordinate matrix, a fixed
+two-patch partition of squares, and all 64 retained masks, including empty
+and full. It checks the boundary commutator identity, the ordered lift inverse
+and the ordered critical inverse against direct elimination.
+[Its recorded output](checks/review_regional_critical_field_exact_algebra.json)
+detects a wrong commutator sign on 24 masks, wrong critical inverse order on
+43 masks, and the mistaken ambient-inverse compression on 62 masks. This is
+a finite exact-algebra control, not a numerical physics experiment or proof
+of the uniform analytic estimates. The latter were checked by the arguments
+above and the specified actual input ranges. No author runner was executed.
+
+## Disposition
+
+Source-first findings: zero blocking errors, zero requested source repairs.
+Proof obligations are closed for this stated regional extension using the
+named one-step local analytic library. The supplied Wilson/paired-kernel
+model, fixed gauge quotient, chart and small boundary domain remain explicit
+conditions. This review grants no retained grade and makes no no-go claim.
+It does not independently reprove the entire upstream literature/library or
+validate PR integration, source preservation against current main, or audit
+machinery; those are outside this assigned reviewer scope.
+
+Author-packet comparison remains pending after the immutable source-first
+freeze. The bounded source verdict will be finalized after that comparison
+and a final source hash check.

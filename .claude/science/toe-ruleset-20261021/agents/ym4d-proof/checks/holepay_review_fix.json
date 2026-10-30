@@ -1,0 +1,15 @@
+{
+  "purpose": "Uncommitted corrections after first hostile review; reverse the patch to recover the reviewed draft and attempted runner",
+  "changes": [
+    {
+      "path": "HOLEPAY.md",
+      "before_sha256": "b64fc9c983cc01b349cfcf7b4890ef8dfba0a8d3d1b9514b8cb0e3928ebed9ee",
+      "after_sha256": "b4e8cc82f2344a955d2ced33ded900af8d39a354dcbff21d8423b331121de4d4"
+    },
+    {
+      "path": "checks/holepay_check.py",
+      "before_sha256": "71f8f97089192dbf2f4562bdf4caabf6921c66bd077a7d2307adecdcd5c6eae8",
+      "after_sha256": "25e798d06c2b33b513cfc0ffde9aa32d5c4f764ddc8e014f45baf9e9fe75ee6b"
+    }
+  ]
+}

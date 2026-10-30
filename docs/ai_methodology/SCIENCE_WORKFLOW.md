@@ -80,6 +80,8 @@ new repository bridges.
 | Formal audit | Deferred until a solid TOE candidate is ready; mechanical validation never invokes an auditor or grants status | 2026-09-07 |
 | Landing review | One independent fast reviewer per coherent unit (owner's Codex choice: Astra low), escalating unresolved mathematical or premise questions to the strongest reviewer (Astra xhigh). The executable model contract lives in `skills/review-loop/SKILL.md` | 2026-09-08 |
 | Original mathematics | Explicitly authorized within the user's task | 2026-10-08 |
+| Literature lemmas | Rebuilt with credit; a citation is attribution only (section 10) | 2026-10-29 |
+| Questions for the owner | Axiom edits, public posts, spending and pace only; scientific forks get probes (section 10) | 2026-10-30 |
 
 A later explicit owner choice overrides this table. Deferring audit never
 permits known false claims, unlabelled assumptions or fabricated evidence to
@@ -171,8 +173,9 @@ auditor-prompt updates.
   descriptions.
 - `ai/execution`: planning and dispatcher instructions only. Orphan branch;
   never merges into `main`; its scorecard is an as-of planning aid.
-- Science branches: proposals, evidence and handoffs. Draft PRs stay outside
-  review and landing unless explicitly in scope.
+- Science branches: proposals, evidence, handoffs and the working state of a
+  shared target. Draft PRs stay outside review and landing unless explicitly in
+  scope.
 - `docs/ai_methodology/skills/` and `.claude/commands/`: current procedures and
   command adapters.
 - `docs/work_history/`, `archive/` and dated campaign packs: history and
@@ -191,3 +194,49 @@ mechanically enforced (see `docs/audit/scripts/check_review_loop_skill_contract.
 and `generate_skill_axiom_baselines.py`), change code and prose together and
 run the tests. Platform system instructions are outside this repository's
 control; report conflicts with them rather than claiming to override them.
+
+Each change also states how it will be measured and what result reverts it. At
+the end of a campaign, write one short retrospective in the target folder: for
+each process change in force, what was measured and whether it stays. Revert by
+PR what did not help. A lesson for all physics work goes through a PR here; a
+lesson for one target stays in its folder.
+
+## 10. Working as a lab
+
+Several leads and workers, on several model providers and machines, may work one
+target. State lives on pushed branches, not in sessions, and no rule assumes a
+vendor. A target shared by more than one session follows Lab Operation in
+`skills/physics-loop/references/long-running-execution.md`. These rules apply to
+all work:
+
+- **Forks get probes.** Ask the owner only about axiom edits (section 2, rule 3),
+  public posts, spending and pace. A scientific fork gets parallel probes, each
+  with its decisive outcome stated first; act on the result and report it. A
+  failed probe is a failed search (section 2, rule 7), never a no-go. An action
+  only a person can take, such as obtaining a source, is a request that names
+  what it blocks; other work continues.
+- **Literature lemmas are rebuilt.** A step that needs a literature lemma rebuilds
+  it as a library entry with credit to its authors. A citation is attribution and
+  carries no weight in the argument; until the rebuild exists the step is an open
+  obligation. Section 3 covers provider Lean-verified theorems.
+- **Research gates grant nothing.** A research gate is the independent check of
+  section 5, held at a fixed point in the Develop stage. Its signals (`advance`,
+  `correct-no-advance`, `wrong`) and the obligation labels in a target folder
+  steer research and nothing else. They are not a review PASS, an audit verdict
+  or a status, and they stay out of ledger fields, PR titles, note status lines
+  and audit packets. Landing still goes through review-loop, and audit stays
+  independent of both.
+- **Public claims.** A public claim needs one clean document, a line-by-line
+  independent review of its whole dependency chain, and the owner's approval of
+  the exact text. It states the actual standing of what it claims.
+- **Launching jobs.** Before a long worker or any numeric job, run
+  `python3 scripts/lab_ops.py preflight`, which checks disk, memory, load, model
+  floor and what the sandbox allows. A required check that cannot run is reported
+  at launch, and the job is rerouted or the omission recorded. A job is launched,
+  not running, until its first events have been seen, including the model and
+  effort it reports. Run one numeric job per machine, under
+  `lab_ops.py numeric-lock`. Details are in `skills/workhorse/SKILL.md`.
+- **Sparse worktrees.** Start from `lab_ops.py worktree-add`, which checks out the
+  shared rules plus the paths you name. Use a whole checkout only for work that
+  needs one, such as the audit pipeline or a landing. Remove a worktree as soon as
+  its work is pushed; `lab_ops.py worktree-remove` refuses unpushed work.

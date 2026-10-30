@@ -157,6 +157,35 @@ The worker must not:
 - decide to land, merge, or close PRs;
 - route science work through visual/image-generation tooling.
 
+## Launch Checks
+
+Before launching a long worker or any numeric job, run
+`python3 scripts/lab_ops.py preflight` (`docs/ai_methodology/SCIENCE_WORKFLOW.md`
+section 10). It refuses on low disk or memory, on a model outside the target's
+floor and, for numeric jobs, on high load, a held numeric lock or a sandbox that
+blocks `nice`. It reports what the sandbox allows, including memory limits, network
+and push. A job with its own sandbox runs it again as its first command. Limits for
+a particular machine are flags or environment variables, not rules here.
+
+Report a job as launched until its first events have been seen, including the model
+and effort it reports; only then report it as running. After that, silence alone is
+not a hang (see Monitor + salvage below).
+
+Numeric jobs hold `python3 scripts/lab_ops.py numeric-lock acquire --holder <session>`
+while they run, release it when done, and pin math-library threads to one.
+
+A sustained attempt (Lab Operation in
+`docs/ai_methodology/skills/physics-loop/references/long-running-execution.md`) is
+one session resumed in a loop with the tool's own resume command, for example
+`codex exec resume <session> "<prompt>"`. Whoever launched it ends it, never the
+session doing it. Resume with a neutral prompt, such as:
+
+> Name the hardest remaining obligation. Try a route you have not tried. Log what
+> failed and why. Label every step honestly. An honest gap is a valid state.
+
+The neutral execution contract still holds at every resume: the session may refute
+the target or report what is missing, and it is never told what result to produce.
+
 ## Host Subagent Launch (when using the host subagent profile)
 
 - Spawn one background subagent per independent bounded subtask, each pointed

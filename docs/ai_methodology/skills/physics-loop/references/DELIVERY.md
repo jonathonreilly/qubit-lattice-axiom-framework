@@ -202,6 +202,9 @@ Create or update a durable pack under:
   PR_BACKLOG.md
 ```
 
+A target shared by several sessions also keeps `parts/`, `library/` and `gates/`
+here (Lab Operation in `long-running-execution.md`).
+
 Legacy packs under `.claude/science/frontier-workstreams/<slug>/` may be read
 for resume/migration, but new loop state should use `physics-loops`.
 

@@ -367,7 +367,9 @@ routes are risky.
   Continue while the next step can add evidence; a decisive result or exhausted
   mechanism may justify an earlier checkpoint and pivot. A valid output may be partial structure,
   a sharper obstruction, a falsified premise, or a worked failed derivation
-  with the exact load-bearing wall named.
+  with the exact load-bearing wall named. On a shared target this is a sustained
+  attempt: a partial result is a checkpoint, and whoever launched the attempt
+  ends it (Lab Operation in `long-running-execution.md`).
 - **First-principles reset:** before the stretch attempt, write the minimal
   allowed premise set (`A_min`: Lattice, Qubit, Admissibility, Record), the approved
   primitive set from `docs/audit/data/axiom_premise_nodes.json`, and

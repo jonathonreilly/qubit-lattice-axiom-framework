@@ -171,8 +171,16 @@ Report a job as launched until its first events have been seen, including the mo
 and effort it reports; only then report it as running. After that, silence alone is
 not a hang (see Monitor + salvage below).
 
-Numeric jobs hold `python3 scripts/lab_ops.py numeric-lock acquire --holder <session>`
-while they run, release it when done, and pin math-library threads to one.
+Before starting a numeric job, acquire
+`python3 scripts/lab_ops.py numeric-lock acquire --holder <session/job> --ttl-hours <hours>`
+and pin math-library threads to one. This is a cooperative expiring lease, not a
+process mutex. Use a unique holder per job; the same holder can reacquire its own
+lease. The default lease lasts two hours. The launcher must refresh with
+`python3 scripts/lab_ops.py numeric-lock refresh --holder <session/job> --ttl-hours <hours>`
+before expiry throughout the run. Choose a lease longer than the monitoring
+interval; if renewal cannot be confirmed, pause or stop the job before expiry.
+Release with `python3 scripts/lab_ops.py numeric-lock release --holder <session/job>` only after
+the job has stopped. An expired lease does not stop a running process.
 
 A sustained attempt (Lab Operation in
 `docs/ai_methodology/skills/physics-loop/references/long-running-execution.md`) is

@@ -1175,7 +1175,7 @@ while T55-O's (R4) needs only a **strictly weaker dipole-neutrality** form.
 # §STATUS — how to read the ledger above
 
 Every PROVEN, CONFIRMED, REFUTED, [S24-fix], [S25-fix] and decade figure above and in SESSION24_RESULTS.md holds only as re-established by §SWEEP55 below and the review files it cites.
-The worker files SPD_SIGMA, FLATZ, KFACTOR and ROOTQ are abandoned drafts; nothing in them is a result.
+The worker files SPD_SIGMA, FLATZ, KFACTOR and ROOTQ were abandoned and removed; they produced no results.
 The "CODEX WAVE" section above was written from partial deliverables and is superseded by the final `CODEX_REVIEW_*.md` files.
 
 ---

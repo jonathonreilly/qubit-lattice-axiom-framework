@@ -374,32 +374,75 @@ Haar factors, the full determinant and action remain in its explicit budget.
 Its separated shrinking costs are not an original-complement charge.
 
 The [local compact-return construction](SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md)
-also has a [fresh independent scoped LAND review](REVIEW_SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md),
-with no material finding or source repair. It bounds actual compact core
-numerators divided by their actual regional chart integrals, using the same
-original cut, exterior fields and source labels. The signed critical action
-and energy-weighted boundary estimate permit a fixed source radius. Complete
-component, first-shell, endpoint-tree and absence readers are paid, together
-with every normalizer, Haar, Gaussian and determinant factor. The shrinking
-ratio family is summable; its proved complex coarse width is only
-`O(q/K^4)`, and ordinary derivatives retain that inverse-width cost.
-The all-good cap remains distinct from the active chart and original Omega.
-These are single-component replacements, not a globally normalized gas.
-Overlapping fibres, common global normalization, the wider RG domain and
-inherited histories remain OPEN.
+has a [fresh independent scoped LAND review](REVIEW_SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md).
+It bounds the actual compact numerator divided by its regional chart integral,
+with the original cut, physical exterior, source labels, fixed source radius,
+first-shell and absence readers, and every normalization factor retained.
+SC's original coarse width is O(q/K^4). The separately reviewed quadratic
+extension below improves that local coefficient's domain. Neither statement
+alone is a normalized global gas or an inherited-history theorem.
 
-The [combined review integration](checks/full_proof_regional_compact_integration.json)
-binds both exact sources, their distinct source-first findings, separate
-post-packet checks and final reports. New work is addressing simultaneous
-gluing and the coarse-domain restriction; neither task has an accepted result
-at this checkpoint. The concurrent [REALONLY assessment](REALONLY.md) and
-[its review](REVIEW_REALONLY.md) are preserved at their conditional scope:
-real estimates can serve several named consumers, but the actual estimates
-and a replacement real RG induction are not supplied. The
-[bounded literature record](checks/full_proof_regional_ratio_literature.json)
-distinguishes strong-coupling lattice results and mass-gap-premised
-confinement results from the missing continuum mass-gap producer. Neither
-full non-free continuum existence nor physical mass gap is established.
+The [compact-return gluing theorem](COMPACT_RETURN_GLUING_ASTRA.md) now has a
+[fresh independent scoped LAND review](REVIEW_COMPACT_RETURN_GLUING_ASTRA.md),
+with no blocking finding or source repair. It sums unselected chart histories
+exactly, removes every selected dummy region from the retained absence annuli,
+and groups overlapping readers. The result is an exact correlated expectation
+under ONE original-a chart at a real coarse center and complex original
+sources. Signed Schur marginal bounds retain the actual full phase, inactive
+Haar ratio and every Gaussian mode, and pay their buffer cost from a further
+curvature restriction. Joint moments and a real pressure comparison follow.
+These joint bounds do not prove connected spatial cumulants or uniform
+original-cut nonvanishing. The frozen/transported coarse-chart correction
+remains explicit, and the reference is not the original white Omega.
+
+The [mixed cap/chart theorem](MIXED_CAP_CHART_ASTRA.md) now has a
+[fresh independent scoped LAND review](REVIEW_MIXED_CAP_CHART_ASTRA.md),
+with no blocking finding or source repair. Every fine field is integrated;
+an arbitrary deterministic block mask uses the exact compact chord cap or
+the original-a chart. A single full critical prefactor and common decorated
+coefficient library give a small complete-reader logarithm and a log-ratio
+bound of 2 epsilon_mix times the number of changed owners. The proof pays
+the full block dimension, all Stokes boundaries and scalar factorials.
+Its smaller GLOBAL critical shift is obtained by reducing real curvature;
+it does not shrink the regional boundary tube. The theorem has fixed real
+coarse data and complex original sources. It does not give pinned conditional
+cap nonvanishing, a marked compact-insertion norm, or complex cap transport.
+
+The [quadratic coarse extension](QUADRATIC_COARSE_RETURN_ASTRA.md) now has a
+[fresh independent scoped LAND review](REVIEW_QUADRATIC_COARSE_RETURN_ASTRA.md),
+with no blocking finding or mathematical source repair. Mean-spread and
+physical-boundary Schur estimates replace the local linear coarse price by
+C_quad u eta_c^2 |R|. One explicit energy ledger retains c u q |A|/2 and all
+original normalizers, full-colour modes, determinant and Haar factors. On the
+same regional family, a positive radius eta_c of order sigma p/K^2 is admitted
+with a fixed source radius; inverse-radius coarse derivative costs remain.
+This extends SC's local ratio, not a larger original RG consumer class.
+The author's attribution-only correction and both source identities are
+preserved separately from the independent review.
+
+The [three-review integration](checks/full_proof_gluing_mask_quadratic_integration.json)
+binds the exact sources, immutable source-first findings, separate packet
+checks and final reports. The earlier [author checkpoint](checks/full_proof_gluing_mask_author_integration.json)
+preserves the gluing/mixed-mask propositions and bounded literature checks.
+Current authors are addressing the bounded-insertion connected forest and
+the actual fixed/transported original-chart comparison. Neither continuation
+has an accepted result at this checkpoint. Original white-Omega matching,
+inherited histories, effective iteration, continuum non-free existence and
+the positive physical continuum mass gap remain OPEN.
+
+The concurrent [REALONLY assessment](REALONLY.md),
+[REALRGA real derivative contract](REALRGA.md),
+[REALRGB bare mixed-jet result](REALRGB.md), and
+[EXTCONT extraction/continuation note](EXTCONT.md) are preserved at their
+reported conditional or bounded scope. They do not supply the actual
+history-uniform induction, derivative acquisition, complete hole payment
+or gauge-compatible extraction. The coordinator's exact bounded reads and
+preservation checks are recorded; no complete rereview of these queue
+packets is claimed. The [regional literature record](checks/full_proof_regional_ratio_literature.json)
+distinguishes strong-coupling and mass-gap-premised results from the missing
+physical producer. The [connected-gluing literature record](checks/full_proof_connected_gluing_literature.json)
+checks primary Gaussian and cluster references and records their model and
+derivative/analyticity mismatches. No new external theorem closes these gaps.
 
 The [squared-alignment application](SQUARED_ALIGNMENT_PRICE_ASTRA.md)
 now has a [fresh scoped LAND review](REVIEW_SQUARED_ALIGNMENT_PRICE_ASTRA.md),

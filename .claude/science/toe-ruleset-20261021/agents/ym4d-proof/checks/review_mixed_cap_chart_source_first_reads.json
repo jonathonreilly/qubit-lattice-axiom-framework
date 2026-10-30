@@ -1,0 +1,183 @@
+{
+  "schema": "scoped-source-first-review-v1",
+  "created_utc": "2026-10-30T09:40:12.108920+00:00",
+  "stage": "immutable_pre_author_packet",
+  "requested_configuration": "Astra/max; fresh context; same-family Codex; not backend attestation",
+  "methodology_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "author_packet_read_before_this_freeze": false,
+  "prior_independent_review_files_read": [],
+  "root_receipts_read": [],
+  "source_first_findings": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_mixed_cap_chart_source_first_findings.md",
+    "sha256": "2cea5c6df1e59c256a274ec0c425d07a8b62d06e749a55b4bb822809a8197ecf",
+    "bytes": 16191,
+    "line_count": 271
+  },
+  "scientific_reads": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MIXED_CAP_CHART_ASTRA.md",
+      "sha256": "1e885e4fbce03b00f4414b15caaa71e7140d9bc8494d0c75d1519bdbcde8ff2e",
+      "bytes": 37311,
+      "line_count": 707,
+      "complete_read_ranges": [
+        [
+          1,
+          707
+        ]
+      ],
+      "purpose": "complete target"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+      "bytes": 36894,
+      "line_count": 711,
+      "complete_read_ranges": [
+        [
+          1,
+          711
+        ]
+      ],
+      "purpose": "complete block-adapted shifted forest producer"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "bytes": 31328,
+      "line_count": 592,
+      "complete_read_ranges": [
+        [
+          1,
+          592
+        ]
+      ],
+      "purpose": "complete canonical global-specialization producer"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "bytes": 27875,
+      "line_count": 510,
+      "complete_read_ranges": [
+        [
+          1,
+          510
+        ]
+      ],
+      "purpose": "complete regional majorant and branch interface"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "bytes": 29717,
+      "line_count": 597,
+      "complete_read_ranges": [
+        [
+          1,
+          597
+        ]
+      ],
+      "purpose": "complete original density and shrinking-cap compatibility"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "bytes": 36322,
+      "line_count": 713,
+      "complete_read_ranges": [
+        [
+          1,
+          713
+        ]
+      ],
+      "purpose": "complete normalized-list/forest/marked recursion derivation"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+      "sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+      "bytes": 32110,
+      "line_count": 624,
+      "complete_read_ranges": [
+        [
+          1,
+          624
+        ]
+      ],
+      "purpose": "complete local coefficient/Mayer/parity derivation"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "bytes": 29068,
+      "line_count": 556,
+      "complete_read_ranges": [
+        [
+          1,
+          556
+        ]
+      ],
+      "purpose": "complete actual local-force and covariance predecessor"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "bytes": 28993,
+      "line_count": 568,
+      "complete_read_ranges": [
+        [
+          1,
+          343
+        ]
+      ],
+      "purpose": "actual density, quotient, lift Hessian, local analytic/force domain"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "bytes": 94345,
+      "line_count": 812,
+      "complete_read_ranges": [
+        [
+          312,
+          376
+        ],
+        [
+          656,
+          678
+        ]
+      ],
+      "purpose": "single-normalizer INV/PR/NZ proof and applicable corrections; not its returned-activity claim"
+    }
+  ],
+  "distinct_mathematical_source_lines_read": 5441,
+  "discovery_only_searches": [
+    "rg filenames for local instruction locations",
+    "CB headings/normalizer references",
+    "STEP55 headings and normalizer references; search hits are not asserted complete scientific coverage outside the recorded ranges"
+  ],
+  "methodology_reads": [
+    "AGENTS.md",
+    "PROCESS_LIGHT.md (all 11 lines)",
+    "pinned SCIENCE_WORKFLOW.md",
+    "pinned SKILL_FRESHNESS_CHECK.md",
+    "pinned review-loop/SKILL.md (fully reread after combined-output truncation)",
+    "pinned SCIENCE_LENSES.md",
+    "pinned REVIEW_UNITS.md",
+    "pinned FIXES_AND_REPORTING.md",
+    "pinned AUDIT_COMPATIBILITY.md",
+    "pinned physics-loop proof-search-governance.md",
+    "pinned PRIMITIVE_REGISTRY_CHECK.md",
+    "current MINIMAL_AXIOMS_2026-06-29.md and axiom_premise_nodes.json; no registered primitive used in the target"
+  ],
+  "read_hygiene": [
+    "Installed review-loop skill was initially inspected for routing, then the pinned source was used.",
+    "An initially guessed pinned methodology path did not exist; the actual SCIENCE_WORKFLOW path was read.",
+    "Truncated combined instruction outputs were reread without truncation. Complete mathematical reads use explicit numbered ranges.",
+    "Embedded status/review references in source documents were not proof premises; no linked review file was opened."
+  ],
+  "source_edits": 0,
+  "scientific_runs": 0,
+  "additional_agents": 0,
+  "git_mutations": 0,
+  "pre_packet_mathematical_disposition": "No blocking finding for exact bounded mixed-mask theorem; scoped LAND supported, final packet confirmation pending."
+}

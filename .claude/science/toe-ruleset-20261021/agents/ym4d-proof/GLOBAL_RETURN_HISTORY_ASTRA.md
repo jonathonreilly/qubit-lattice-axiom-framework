@@ -1159,3 +1159,177 @@ continuum existence or a physical mass gap. All other obligations persist.
 Coordinator continuation, 2026-10-30, same procedure revision as section 13.
 The proof uses RD R1, SC7, SC27 and the literal chart/mean definitions;
 no outside theorem is imported. Independent review is pending.
+## 15. A wider auxiliary chart for the actual second-step input
+
+Coordinator construction, procedure 6243acc936982e945732793bf641442c03abbfea.
+Independent checking is pending. This changes auxiliary integration radii;
+it changes neither the physical original cut nor RD's completion decisions.
+Section 14 remains valid for its original logarithmic-radius family.
+
+The antecedent distinction is explicit in Dimock, [1108.1335v2, section 3.2,
+Definitions 1--2 and Lemma 8](https://arxiv.org/pdf/1108.1335): the physical
+small-field set and the larger analytic set have different bounds. Its
+three-dimensional scalar estimates are not imported here. The following
+argument instead rechecks the actual RF/RC/WR bounds for this compact model.
+
+### 15.1 Radius choice and the existing proof's quantitative conditions
+
+Keep the single RF/NR/MK ambient family, its fixed R,beta,rho and every
+preliminary analytic ceiling. Fix 0<theta<1/2. Define
+
+    p_w=u^theta, sigma^2=N/u, r_w=sigma p_w,
+    q_w=c_q r_w^2, K_w=K(q_w) from SC7,
+    delta_w=d_delta sqrt(q_w)/(4K_w+1)^2,
+    xi_w=d_xi sqrt(q_w)/(4K_w+1)^2.                    (GH56)
+
+The constants c_q,d_delta,d_xi satisfy the SAME RC17, SC5--6 and WR34--35
+restrictions; take tau=c_tau r_w and the corresponding RC17 boundary cap.
+Require, for the original physical cutoff and all sufficiently large u,
+
+    8 r_w<epsilon_cut(u), 4 sqrt(N q_w)<epsilon_cut(u). (GH57)
+
+A fixed positive cutoff meets GH57. So does
+epsilon_cut(u)>=c_e u^(-1/2+epsilon), if theta<epsilon and c_e>0 is fixed.
+No such claim is made for an arbitrary cutoff shrinking faster than r_w.
+All source jets keep u, these radii and the kernel parameter kappa u fixed.
+
+Here r_w->0, p_w->infinity, q_w->0 and
+
+    K_w=(2/g)(1-2theta)log u+O(1),
+    delta_w,xi_w=Theta(sigma u^theta/(log u)^2),
+    u q_w=N c_q u^(2theta).                            (GH58)
+
+Thus delta_w/tau and xi_w/tau are O(K_w^-2). Every RF contraction,
+active-chart, exterior-cap and transported-coarse margin eventually holds
+with the same fixed preliminary constants. SC12 and WR35 still hold
+algebraically, with q=q_w and K=K_w; neither debit is discarded.
+
+The parameter substitution is made in the estimates BEFORE their former
+logarithmic-profile corollaries. In RC12--13, tau/sigma=c_tau p_w, the
+bad/side terms and their translation pins are polynomials in u,p_w times
+exp(-a p_w^2/64), while h_v=O(sigma) and h_2=O(sigma^2). All Taylor and
+covariance constants are fixed at the preliminary ceilings. RC18's proof
+therefore gives its same C1 sigma^2 plus Gaussian-tail bound; its stated
+conditions p->infinity and sigma p->0 hold for p_w. In particular, no
+uniform smallness of the phase on the entire enlarged chart is presumed.
+
+SC27--29 retain every kernel normalizer, Gaussian mode and Haar factor.
+Their local entropy is still p(u)=p0+p1 log(1+u), independent of the
+auxiliary cutoff. In WR19--21 the score is polynomial in u for the
+declared polynomial field/source weights, so D_jet=O(log u+log K_w).
+The complete-reader and shell factors in WR36 are consequently
+
+    beta W_K+p(u)V_K+D_bulk H_K+D_J+log K_w=O((log u)^5).
+
+This is o(u q_w), including D_bulk=O(log p_w)=O(log u). The full-buffer
+mean-translation payment remains WR35. WR37's denominator tends to one;
+both marked rescalings still satisfy their strict smallness bounds. The
+remaining K_tr t_d and inverse Cauchy-radius factors are at most polynomial
+in u, hence are absorbed by any fixed unused fraction of u q_w.
+
+For h<=C_h sigma and r_*<=C_J u, xi_w/h tends to infinity. Thus R_h=1
+eventually, R_J is bounded away from zero, and the weighted six-field/four-
+source remainder retains its O(sigma^2) estimate after the same beta/8
+tensor-reader payment. The constants and thresholds depend on theta and
+the declared physical-cut margins, but not on the torus volume.
+
+### 15.2 The full unmarked first density, with its prefactor retained
+
+Let rho_1(V,J)=int w_J(U,V)dH(U), including ALL original cut sectors.
+It is the actual RD first density, not a Wilson reference. For a regional
+core a, let D_a be its compact-minus-chart term WITH the original cut, and
+let L_a(1) be GH35 at all original-cut markers equal to one. Since the
+regional product chart is inside the original cut, their exact sum is
+
+    D_a^all=D_a+L_a(1)
+           =I_R^-1 int ell_a w_R,J (1-1_chart,R)dH_R. (GH59)
+
+This is one positive outside-chart integral at real sources. It does not
+erase a cut from a cut-sector numerator: the omitted original sectors
+are explicitly restored by L_a(1). On the global real Haar pullback the
+q_w selectors, product chart and original interior cuts are fixed. The
+local real bound in GH16, without a regulator, applies pointwise to its
+full compact domain; it never required chi_R=1. Consequently WR20--21's
+ordered Bell-score bounds apply to D_a^all, with the same denominator and
+all normalized-kernel derivatives. No derivative hits a completion test.
+
+Replacing D by this single D^all in the exact selected-core resummation
+gives rho_1 relative to the SAME global chart integral. It changes no
+outside factor, dummy chart variable, annulus cap or covariance reader.
+The WR density-only forest and both rescalings then use precisely the
+same positive primitive bounds, now with GH56. Thus, on the admitted real
+output family with curvature <delta_w,
+
+    rho_1(V,J)=P_*(V,J) exp[sum_Y R_Y^all(V,J)],
+    ||R^all||_(3beta/8;T_abs^(6,4))
+       <= C_beta sigma^2+exp[-kappa_w u^(2theta)]       (GH60)
+
+for some fixed kappa_w>0 and all sufficiently large u, with
+h<=C_h sigma,r_*<=C_J u. R^all is the transported chart remainder plus
+the D^all return. P_* is EXACTLY the actual critical-action/determinant/
+Haar prefactor in WR40, using this auxiliary chart's admitted family;
+it is not counted in the small norm and is not replaced by b_1. The
+critical branch depends on the phase, not on the choice of an integration
+radius containing it; uniqueness identifies that branch on overlapping
+old/new domains. No equality of differently grouped polymer coefficients
+is needed. This claim retains the full compact integral and all modes.
+
+For the actual RD failure markers, keep their original definitions and
+all completion/absence readers. GH57 gives GH33, so their assignment to
+q_w cores and the corrected coefficientwise count in section 13 are
+unchanged. The source-only GH49 proof now has u q_w=N c_q u^(2theta);
+its compact charge and combined D/F translation pin are unchanged.
+Hence its norm is <=exp[-(c N c_q/256)u^(2theta)] on this larger real
+domain, with the same original-cut marker radii and four source jets.
+No field derivatives of individual failure coefficients are inferred.
+
+Writing Theta(z;V,J)=sum_X Phi_X^RD(1,z;V,J), the normalized first-failure
+generating function is exactly
+
+    G_RD(z|V,J)=Z_RD(1,z;V,J)/rho_1(V,J)
+              =exp[Theta(z;V,J)-Theta(1;V,J)].          (GH61)
+
+Its connected source norm costs at most twice the preceding GH49 bound.
+The extensive void factor and all zero histories are kept by coefficient
+extraction from GH61. This is not a product law for the old failures.
+
+### 15.3 Containment of the next ordinary chart and the remaining integral
+
+Return to the next ordinary chart of section 14, with
+r_1=sigma_1 log(2+u_1)^alpha, sigma_1^2=N/u_1, fixed alpha>5/2 and
+0<c_-<=u_1/u<=c_+<infinity. Let U_1=Z U0(V_2), each free-link principal
+log of Z having HS norm <r_1. The tree links stay fixed. Each plaquette
+of the lift U0(V_2) is I or a transported coarse plaquette. Telescoping
+the four unitary factors therefore gives
+
+    max_P ||I-U_1,P||op <= delta(V_2)+4r_1,
+    [delta(V_2)+4r_1]/delta_w ->0
+        if delta(V_2)<=C_2 r_1, C_2 fixed.              (GH62)
+
+The limit is uniform over the declared ratio interval, since its upper
+bound is a constant times (log u)^(alpha+2)/u^theta. The same inherited
+real-center admissibility restrictions of RF/WR remain in force. In
+particular the entire ordinary chart at V_2=I lies strictly inside the
+new output domain, with a growing relative margin. Six weighted field
+positions of size O(sigma_1) also fit its xi_w radius. This removes the
+artificial inside-chart complement exhibited in section 14 for the old
+radius choice. It does not prove that a larger physical G set is contained.
+
+On this ordinary chart the actual second-step marked integrand is now
+
+    K_1(V_2,U_1) P_*(U_1,J) exp[sum_Y R_Y^all(U_1,J)]
+                  exp[Theta(z;U_1,J)-Theta(1;U_1,J)]. (GH63)
+
+Its Haar integral over the chart, PLUS the original compact integral over
+the chart complement, is exactly the full two-step marked density. The
+same zero-source full density normalizes the actual posterior; it is
+not removed from the problem. This writes the complete inherited factor
+on a domain containing this consumer's chart, not a bound on its integral.
+
+Still required: localize and estimate K_1 P_* with its actual nonlinear
+critical action and determinant; control the ordinary-chart complement;
+integrate the original-history marks with their full readers; and prove
+stable domains, reserve/rate regeneration and the physical coupling law
+at every later step. Reusing GH56 as though the input were bare Wilson
+would not prove these statements. There is no all-depth, native mu+2,
+continuum-existence or physical mass-gap conclusion in this section.

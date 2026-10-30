@@ -22,17 +22,16 @@ They are four specified obligations of the same return problem, not four
 independent obstructions. In particular, the general-N problem remains open
 already at N=2.
 
-**Current attempt; counted progress: 0.** Section 4.28 tests conditional
-covariance under the full posterior at arbitrary finite depth. Its causal
-comparison bounds a specified original conditional-excitation insertion
-with the actual denominator retained. Promotion to the return fails:
-small conditional excitation does not exclude strongly rough minima;
-its excitation regulator is weaker than the original-action regulator;
-and neither connected posterior supports nor the inherited charge costs
-are controlled. The literal regulator's extra minimum-energy cost is kept
-in PC8r. No U1--U4 obligation closes or is shown false. H(j) is unchanged.
-The first-step constructions in sections 4.9--4.26 are not counted as
-progress on this run and are not extended here.
+**Current attempt; counted progress: 0.** Section 4.29 tests enlarged
+repairs under the full posterior. A fixed identity repair creates a surface
+cost even on a pure gauge. A Haar-preserving center surgery then gives a
+gauge-invariant rough-sheet probability bounded below by an explicit
+surface exponential at arbitrary depth. Consequently the proposed payment
+by a fixed exponential in the filled interior volume is false. This is a
+counterexample to CS7, a newly tested sufficient estimate, not to U1--U4:
+the induction permits an unfilled representation, and no connected or
+extracted-operator lower bound has been proved. H(j) is unchanged; all four
+obligations remain GAP. No first-step result is counted as closure.
 
 **Hardest remaining inequality.** For the actual backward measure
 
@@ -60,11 +59,12 @@ CC13 proves a restricted first response with a common-cap fluctuation price.
 It has no all-history or (6;[4]) extension, and CC14 records the failed
 attempt to turn its distance decay into the required support-size norm.
 The object to control is pi_j^V itself, with all histories summed,
-followed by H0--H4 at j+1. The new decomposition PC1 retains both the
-conditional covariance and the covariance of conditional means. PC8/PC9
-bound the latter's specified excitation contribution, but not the rough
-minima in PC11 or the inherited good-component term. A forward causal
-cone is not the complete support of a backward conditional expectation.
+followed by H0--H4 at j+1. PC1 retains both the conditional covariance
+and the covariance of conditional means. The new surgery comparisons
+retain the actual posterior and price absolute original action, but
+control event masses rather than (A). Their lower bound rejects filling
+the interior and paying for it by a rough-event probability. It does not
+reject a connected estimate retaining the actual surface readers.
 An index path, a stationary branch, or a Gaussian determinant is not (A).
 
 **Order of constants.** Fix N, odd L>=3, kappa>0, the exact contour convention,
@@ -113,6 +113,11 @@ Then delta_i=(1-b_i)Delta_i/(12|D_i|) and c_H=8/(3pi^3) are explicit.
 The terminal likelihood cost, original minimum-energy cost and previously
 spent fractions stay in the displayed bounds. Their negativity tests do
 not select jointly feasible H5 constants or regenerate H4.
+For CS1--CS7 fix N=2, odd L>=3, kappa, 0<epsilon<1, a proposed
+filling rate a>0 and a positive prescribed coupling u before increasing
+j. Then R=L^j and the compatible original torus side is 6L^(j+1).
+Use the displayed uniform terminal-cone bound at that specified depth.
+This order tests CS7; it supplies no new feasible H5 tuple or RG flow.
 
 **Routes tested and present decisions.**
 
@@ -284,33 +289,46 @@ not select jointly feasible H5 constants or regenerate H4.
   localized original reserve on long constant-coupling prefixes. The
   uniform single-terminal estimate does not multiply those costs; what
   failed is the attempted recursive accounting of inherited majorants.
+* **Failed fixed-boundary repair:** CS1 keeps the absolute trial energy
+  in the outside-posterior average. On a pure gauge of zero original
+  action, resetting the internal links of an n-site box to identity
+  creates action 12(n-1)n^2. A gauge-covariant trial is necessary;
+  the fixed reset cannot remove the boundary cost at no price.
+* **Failed filled-interior payment, in the actual full posterior:** a
+  center flip of R^3 links changes only 6R^2 plaquettes. Haar invariance,
+  the absolute Wilson action difference, and the bounded terminal
+  causal cones give CS6's lower bound exp[-C(u,epsilon)R^2-10000kappa u]
+  for a positive-measure, gauge-invariant rough-sheet event. Therefore
+  exp(aR^3) times that probability diverges for every fixed a>0.
+  CS7 is false, including its normalizer. This is not a refutation of
+  H3 or U2: neither requires assigning this event to a filled interior,
+  and its probability has not been identified with a connected activity.
 
-**Hostile check of the newest step.** PC4 conditions on all outside past
-fields, not just the final exterior. Only at that level do earlier inside
-kernels integrate to one. Its denominator is the same conditional terminal
-integral as its numerator. The final average uses the actual posterior
-law of the outside path, which is not independently local. The excitation
-and original-action regulators have different bounds; PC8r preserves that
-difference. The positive-mass frustrated-minimum example refutes only the
-new candidate good/bad rule. Its full posterior mass might still be small
-because of original exterior action. The fixed reader star likewise says
-nothing about persistence of a rough field. A single-terminal comparison
-may be reused for an unweighted event, but dropping previously inserted
-history majorants would change the question. These checks leave U1--U4
-GAP, with no induction edit, independent reviewer or retained-grade status.
+**Hostile check of the newest step.** The lower bound uses two successive
+inequalities for the same full posterior, not independent probabilities
+under separately pinned laws. The center transformation preserves Haar;
+its action difference is supported on the actual plaquette boundary.
+Both conditional terminal denominators stay in the comparison. The
+uniform cone bound is used after j+1 steps for R=L^j; using that bound
+at the first step of an arbitrarily large sheet would be wrong.
+The event is gauge invariant and has positive measure, so CS7's failure
+is not the pure-gauge artifact from CS2. Nevertheless a mass lower bound
+does not bound a covariance, and extraction or a surface representation
+may remove the proposed filling cost. The prescribed constant-coupling
+chains are not certified H(j) trajectories. These checks reject CS7 but
+not U1--U4; no COUNTEREXAMPLE verdict for the target is justified.
 
-**Next decision.** Attack the contribution of frustrated minima in the
-actual outside-path posterior from PC4. Enlarge a repair set only when
-its boundary readers and original plaquette charges are retained; test
-whether the enlarged comparison pays the absolute minimum energy as well
-as the excitation. The resulting covariance of conditional means still
-needs a connected bound in H3 and a recursion with the actual previously
-spent fractions. Do not identify a forward cone with posterior locality,
-restart the raw comparison after deleting history costs, or count another
-specified insertion estimate as closure of U1--U4.
+**Next decision.** Keep the surface and its boundary readers and attack
+(A) directly by exchanging a thin region between two replicas of the
+same full posterior. The exchange must retain its boundary Wilson terms,
+all affected soft normalizers, and the covariance of conditional means.
+Test whether its connected support cost and original fractions regenerate
+from j to j+1. Neither deleting the old readers nor paying a filled volume
+by the surface event's probability is justified. Do not count another
+mass comparison as a closed U1--U4 obligation.
 
 Working source: branch claude/push-A. This continuation starts from the
-driver checkpoint `dcfa672824139701dbaa44af36027e12ce4e6407`; the initial
+driver checkpoint `e24dea7b1124e644dc17fe323027016f95e22bce`; the initial
 manuscript started at `a98f6eb20c89c5792b9db362b860fd1f43670665`.
 The locally recorded main ref is
 `bcab5d2ee4a908fbb4e6025635fb878e6c157ebe`; remote freshness is not certified.
@@ -3513,7 +3531,180 @@ The repeated-debit failure is a failure of that accounting method, not
 evidence of persistence of a rough field on the fixed reader star.
 No local support, extracted contraction or regenerated H(j+1) follows.
 
-### 4.29 Verification, attribution, and claim boundary
+### 4.29 Absolute-energy repair and a full-posterior test of filling the interior
+
+This run tries changing the core together with its boundary. A Haar-preserving
+center flip gives an actual posterior comparison with the absolute Wilson
+action retained. It disproves a filled-volume price used by the proposed
+repair, not U1--U4. The connected-response return remains GAP and counted
+progress is zero.
+
+**CS1 — PROVEN (the absolute boundary cost in a replacement comparison).**
+Let Q contain d_Q original links, H_Q their incident original plaquette
+action, and z_*(w) any trial interior at the same exterior w. Put
+E_Q(w)=H_Q(z_*(w);w). For 0<=b<1, 0<r<=1, and an absolute-energy event
+{H_Q>=A}, the product Haar ball about z_* gives
+
+    E_(pi_j^V)[1_(H_Q>=A) exp(b u_0 H_Q) | eta]
+      <=(c_H r^3)^(-d_Q)
+        exp[2t_j |Q_(j+1)|+u_0 E_Q(w)+6d_Q u_0 r
+                                      -(1-b)u_0 A].       (CS1)
+
+Here eta is the complete outside path for Q's causal cone, as in PC4,
+and c_H=8/(3pi^3). The conditional Wilson denominator is at least
+(c_H r^3)^(d_Q) exp[-u_0(E_Q(w)+6d_Q r)]; the numerator is at most
+exp[-(1-b)u_0 A]. PC3 supplies the displayed terminal kernel cost.
+Averaging CS1 retains the actual outside-posterior expectation of
+exp(u_0 E_Q(w)); that factor is not a free scalar.
+
+The trial that resets all internal links of a box to identity is inadequate
+even on a flat background. On an even torus take U_1=-I everywhere and all
+other links I. This is the pure gauge g(x)=(-1)^(x_1)I and has W=0.
+Reset the links internal to an n-by-n-by-n-by-n site box to I. Exactly
+6(n-1)n^2 plaquettes become -I: the two transverse boundary faces in
+each of the three (1,nu) orientations. Hence
+
+    E_Q(w)=12(n-1)n^2, whereas min_z H_Q(z;w)=0.           (CS2)
+
+The replacement creates a surface bill with no original action to pay it.
+This rejects that fixed trial, not a gauge-covariant repair. The next test
+uses gauge-invariant rough plaquettes and does not rely on this gauge issue.
+
+**CS2 — PROVEN (a center surgery with surface action cost).** In integer
+coordinates away from periodic overlaps, for R>=1 let
+
+    S_R={(x,1): x_1=0, 0<=x_2,x_3,x_4<R},  |S_R|=R^3,
+    (T_R U)_e=-U_e for e in S_R, and U_e otherwise.
+
+T_R is an involution preserving product SU(2) Haar measure. Its changed
+plaquettes B_R are the two boundary faces in each transverse direction,
+at x_nu=-1 or R-1, in orientation (1,nu). Thus
+
+    |B_R|=6R^2=:b_R,
+    (T_R U)_p=-U_p on B_R, and U_p off B_R,
+    f_p(T_R U)=2-f_p(U) on B_R,
+    |W(T_R U)-W(U)|<=2b_R,
+    W(T_R I)=2b_R=12R^2.                                (CS3)
+
+These identities follow because -I is central: a plaquette changes sign
+precisely when it contains an odd number of flipped links. Interior pairs
+cancel, leaving the six faces. This is an actual group configuration;
+the plaquette values are not specified independently of link variables.
+
+**CS3 — PROVEN (surgery under the actual full posterior).** Let m_S be
+the cardinality of S_R's causal cone at level j+1. For any original-field
+event E and every fixed terminal V,
+
+    exp(-2u_0 b_R-2t_j m_S) pi_j^V(E)
+       <= pi_j^V(T_R E)
+       <= exp(2u_0 b_R+2t_j m_S) pi_j^V(E).              (CS4)
+
+To prove this, condition on the complete outside path eta of that cone.
+Use PC4 and change z to T_R z in its numerator. The Wilson density ratio
+is between exp(-2u_0 b_R) and exp(2u_0 b_R) by CS3. PC3 bounds the ratio
+q_(eta,j)(T_R z;V_D)/q_(eta,j)(z;V_D) between exp(-2t_j m_S) and
+exp(2t_j m_S). The conditional denominator is unchanged. Finally average
+the two inequalities over the same actual posterior law of eta.
+No intermediate density is replaced by a Wilson law, and no history
+mass is removed. This comparison holds after summing all histories.
+
+**CS4 — PROVEN (positive-measure rough sheets with a surface lower bound).**
+Fix 0<epsilon<1 and define original gauge-invariant events
+
+    E_good={f_p<=epsilon for all p in B_R},
+    E_rough={f_p>=2-epsilon for all p in B_R}=T_R E_good.
+
+Let D_B consist of every link on a plaquette in B_R, so d_B=|D_B|<=4b_R,
+and let m_B be its terminal causal-cone size. Set r=sqrt(epsilon/8).
+If every link in D_B is within operator distance r of I, each B_R plaquette
+has ||I-U_p||op<=4r and f_p=||I-U_p||op^2/2<=epsilon. The product ball
+has Haar mass at least (c_H r^3)^(d_B). At arbitrary original exterior,
+0<=H_(D_B)<=12d_B and its conditional partition function is at most one.
+Thus its original conditional probability is at least
+(c_H r^3)^(d_B) exp(-12u_0 d_B). The lower version of PC5 then gives
+
+    pi_j^V(E_good)>=(c_H r^3)^(d_B)
+                                exp(-12u_0 d_B-2t_j m_B).
+
+Combining this with CS4 yields the explicit full-posterior bound
+
+    pi_j^V(E_rough)
+      >=exp[-(50u_0+4 log(1/(c_H r^3))) b_R
+                                      -2t_j(m_S+m_B)].   (CS5)
+
+The two comparisons are inequalities for the same full posterior. They
+are not a product of conditional probabilities at different exteriors.
+The bound concerns positive-measure plaquette events, not point densities.
+
+Now fix odd L>=3, take R=L^j with j>=1, and choose the original torus side
+6L^(j+1), giving terminal side six. The endpoints of S_R and D_B lie in
+[0,1] times [-1,R]^3 and project into the single centered terminal block.
+The geometry used in PC6 also gives, directly by induction,
+
+    endpoints(D_l) subset N_2(pi_(0->l) endpoints(D_0)),
+    m_S<=2500,  m_B<=2500.
+
+Indeed one step adds N_1, and pi(N_2 A) subset N_1(pi A) keeps the
+accumulated margin at two. Periodic identification cannot enlarge it.
+With the actual prescribed constant positive couplings u_l=u, CS5 becomes
+
+    pi_j^V(E_rough)
+      >=exp[-C(u,epsilon) R^2-10000 kappa u],
+    C(u,epsilon)=300u+24 log(1/(c_H r^3)).                (CS6)
+
+This holds for every terminal V along these finite chains. It does not
+assert that a constant prescribed prefix is a certified RG running flow.
+
+**CS5 — PROVEN (the tested filled-volume price is false).** The enlarged
+repair under test fills the three-dimensional interior of this sheet,
+retaining at least the R^3 changed original links S_R. A fixed positive
+cost a per filled link would require, for some finite C_0 independent of
+volume and depth at fixed u,
+
+    exp(a R^3) pi_j^V(E_rough)<=C_0.                     (CS7, rejected)
+
+CS6 proves the opposite along R=L^j: the logarithm of the left side is
+at least a R^3-C(u,epsilon)R^2-10000 kappa u, which tends to infinity.
+Therefore CS7 is false in the actual full posterior, even with all output
+normalizers present. A constant per-link bill for the original filled
+repair cannot be paid by this event's mass. At T_R I its entire original
+action is only 12u_0 R^2, so dividing that action into single-use fractions
+does not pay an aR^3 bill either. Repeating a filling at later stages cannot
+repair failure of the first bill. This is not a conclusion that every
+valid history representation must fill these interiors.
+
+**CS6 — GAP (connection to (A) and regeneration).** A proposed bound
+on the covariance of conditional means used the rough-event probability
+to pay for a filled repair support. CS7 rules out that particular payment.
+It gives no lower bound on Cov_pi(F_X,s_c), on the difference of conditional
+means, or on the remainder after Loc^ten. A nonnegative event probability
+has not been identified with an unavoidable connected activity of H3.
+U1--U4 allow supports that follow the surface and other reference choices;
+none requires the newly tested CS7. Thus no U1--U4 statement has been shown
+false and no edit of H(j) is justified. The count remains four.
+
+The attempted route must discard uniform filled-volume payment and retain
+the actual surface, boundary and normalizer readers. Whether those readers
+can be organized into a joint connected expansion with a returning charge
+budget is unproved. CS4 compares masses at arbitrary depth; it does not
+control their output derivatives or supply H0--H4 at j+1.
+
+**Hostile check — PROVEN rejected estimate, GAP target.** The defect is
+gauge invariant at the plaquette level; the failure in CS7 is not caused
+by the pure-gauge mismatch in CS2. Haar invariance removes any change-of-
+variables Jacobian. Both uses of the terminal likelihood ratio retain
+their actual conditional denominators and give uniform bounds before the
+outside-path average. The uniform terminal-cone bound for the two large
+sets is used at the specified depth; using it at the first step of an
+arbitrarily large sheet would be false.
+The lower bound is extremely small and has an explicit surface constant;
+only its growth rate against R^3 is used. Constant-coupling model chains
+are not silently declared admitted inductive states. A mass lower bound
+cannot be promoted to a covariance or extracted-operator lower bound.
+These checks support rejection of CS7 and reject a COUNTEREXAMPLE verdict
+for the requested return theorem. Counted progress remains zero.
+
+### 4.30 Verification, attribution, and claim boundary
 
 The check script [checks/push_a_kernel_moments.py](checks/push_a_kernel_moments.py)
 performs separate direct Haar quadratures and scaled Bessel evaluations,
@@ -3688,6 +3879,24 @@ This prescribed-prefix test does not certify a running-coupling trajectory
 or a necessary cost of the true RG operator. Peak RSS was 91,635,712 bytes,
 with one BLAS thread and the checked 1 GB ceiling. No posterior simulation,
 connected-decay verification or reduction of U1--U4 has been added.
+
+The [center-surgery script](checks/push_a_center_surgery.py), with its
+[complete log](checks/push_a_center_surgery.log), forms the boundary by
+exact parity of incident flipped links. For R=3,9,27 it obtains R^3
+changed links and 6R^2 changed plaquettes. The corresponding boundary
+reader sets have 188,1844,17180 links. Actual paired-contour stencils give
+terminal cone sizes (8,8) in these three cases; the proof uses the analytic
+bound (2500,2500), not an extrapolated equality from these checks.
+For R=3, separate products of random SU(2) matrices on all 108 incident
+plaquettes verify the center sign and action-difference identities. The
+largest matrix discrepancy is zero at the reported precision. The pure-
+gauge reset counts at box sides 2,3,5 give actions 48,216,1200, in agreement
+with CS2. Large-R numbers in the log evaluate only the explicit exponent
+in CS6 at declared parameters; they are not posterior measurements or
+simulations of those large tori. No covariance or extracted-operator bound
+is checked numerically. Final peak RSS was 94,896,128 bytes, with BLAS
+threads one and the checked 1 GB ceiling. No independent reviewer or
+reduction of U1--U4 has been added.
 
 The small/large-field organization is credited to Tadeusz Balaban and
 Jonathan Dimock. The relevant repository comparisons are REFMATCH RM1/RM2/

@@ -7,11 +7,12 @@ induction ball has been proved. This manuscript replaces neither a proof by a
 conditional theorem nor the inherited measure by a new Wilson measure.
 
 The current induction is H(j) in section 3: exact unnormalized history masses,
-the full tensor extraction, original four-source jets, a joint rooted residual
+the specified leading action u_j T_j of TR1, full tensor extraction of its
+non-tree corrections, original four-source jets, a joint rooted residual
 bound, and unused original-action/gap reserves. Its norm is still a supremum
 norm on the real domains. An auxiliary norm integrated against the actual
 composite marginal is used below to test a possible change; it has **not** been
-shown sufficient for H(j). Keeping the exact composite reference removes an
+shown sufficient for H(j). The exact-composite Bayes construction removes an
 algebraic denominator mismatch but does not prove its spatial locality.
 The return inequality H5 is a conclusion to prove from the current state,
 not an input assumption about its successor.
@@ -49,6 +50,12 @@ event price at a specified larger threshold coefficient, and a spatially
 decaying first output response for declared smooth auxiliary insertions.
 These are still first-step cap results; neither the original hard histories
 nor the exponential-in-support-size connected representation is supplied.
+Sections 4.19--4.21 test absolute resolvent walks, evaluate the axial
+Gaussian tree action, verify its leading rate in the actual first-step
+density at fixed volume, and construct a convergent complete-support
+series for the bare nonlinear stationary branch. The last result uses
+the full signed Gaussian inverse as each edge. It does not expand the
+normalized fluctuation integral or provide a uniform-depth reference.
 
 **Hardest remaining inequality.** For the actual backward measure
 
@@ -70,6 +77,10 @@ common full posterior. Its same-exterior composition test is in section 4.17.
 CC13 proves a restricted first response with a common-cap fluctuation price.
 It has no all-history or (6;[4]) extension, and CC14 records the failed
 attempt to turn its distance decay into the required support-size norm.
+TB7 now localizes the deterministic stationary branch with connected
+supports. The outstanding part is the fluctuation contribution under the
+same actual posterior, including its normalizer and the complete history
+family. An index path or a stationary branch is not that covariance bound.
 
 **Order of constants.** Fix N, odd L>=3, kappa>0, the exact contour convention,
 the full-reader graph, and the original source directions first. Then fix the
@@ -91,6 +102,11 @@ For CC1--CC13, fix the proven cap constants and original source budget,
 then g_s,J_s,eta_s,K_B, then d_0>=1 and the threshold coefficient c_w.
 Only then take u large enough for CC1, epsilon(u)<=b_cap and a negative
 exponent in CC9. No closure of the induction's domain constants is inferred.
+For TB1--TB7, choose the flat g,M_G and 0<sigma<eta_G from L,kappa;
+then the explicit analytic constants and b_*; only afterwards restrict the
+output radius. This small support rate is not a certificate of H4's mu+2.
+TR1 is fixed before local extraction; the leading tree/Wilson difference
+is no longer offered as a bounded residual on the epsilon domains.
 
 **Routes tested and present decisions.**
 
@@ -155,36 +171,55 @@ exponent in CC9. No closure of the induction's domain constants is inferred.
   expanding output balls controls a shell by exp(-eta_s r) times a
   polynomial, but pays exp(mu c r^4) for its full ball support. That
   majorant is not summable. CC13 therefore cannot be advertised as H3.
+* **Failed absolute-walk route:** the actual flat matrix has a negative
+  comparison-matrix Rayleigh quotient -401357/44469 at L=3,kappa=1 in
+  its limiting normalized action. The finite-u bound is negative for
+  u>=644. Thus taking entrywise absolute values before summing coordinate
+  walks destroys the contraction, even though the signed inverse exists.
+* **Failed leading-reference conversion:** at L=3,kappa=1, the exact
+  axial Gaussian coefficient s/[1+(kappa^-1-a_L)s] is not a constant
+  times the Wilson symbol s. GS6 proves its rate in the actual density
+  at fixed volume. Putting u(W-T_1) into a supremum-bounded residual
+  produces exp(c u^(2delta_exp)) growth. The adopted edit is TR1:
+  retain the tree action and extract only the non-tree correction.
+  FLOW already uses this tree reference; the diagnostic verifies the
+  price of abandoning it and does not refute LOCOP's projector.
+* **Successful restricted replacement for the walk route:** first sum
+  the signed Gaussian inverse, then use its exponentially decaying
+  entries as connected edges. The analytic force has only local vertices
+  and starts at degree two. TB5--TB6 bound every tree and prove convergence
+  of the bare stationary-background series. The normalized fluctuation
+  contribution is still unexpanded; this success closes none of U1--U4.
 
-**Hostile check of the newest step.** CC9 uses the proved Hessian only
-inside its fixed rectangle; linear tilts change no Hessian. The centered
-mean in that proof can read the whole reference and is not used as a local
-selector. The actual cutoffs in CC11 use a fixed deterministic threshold,
-so their first output derivative is exactly a covariance and their
-gradient remains supported on the witness neighborhood. CC12 retains
-the cutoff derivative cost. This justifies CC13 at its stated scope.
-It does not justify replacing hard histories by those smooth functions,
-discarding absence factors, assigning their expectations only geometric
-readers, or differentiating the cap's unnormalized mass as if Z_cap were
-constant. The larger threshold c_w must still be admitted by a stable
-domain recursion. The explicit ball-support test CC14 fails even before
-the higher mixed jets are attempted. The earlier core comparison also
-still fails at its original shrinking threshold, RC20. All source claims
-in these new steps are for four original plaquette insertions; arbitrary
-original observables require their own bounds. U1--U4 remain open.
+**Hostile check of the newest step.** TB7 takes absolute values only
+after exact Gaussian inversion, so it does not use the failed WP2 walk
+majorant. Each inverse edge carries a connected path including both
+fine-link endpoints; each nonlinear vertex carries all of its local
+readers and all child supports. The Cauchy and contraction constants
+are specified before the field radius. The real branch has a positive
+Hessian on the constructed box. These checks support the stated theorem.
+They do not make that branch the global minimizer uniformly in volume,
+give the full reference its required support reserve, or integrate any
+fluctuation. The scalar resolvent remains global in its field arguments.
+The theorem is at zero source, and six coordinate derivatives are not
+the mixed group/four-source jet of an RG activity. The actual-density
+rate test GS6 is only at fixed finite volume, with no uniform prefactor.
+No source, rough-sector or regeneration result is inferred from it.
+U1--U4 remain open.
 
-**Next decision.** Seek a connected-path or connected-tree decomposition
-of the actual cap response that pays for support size rather than filling
-an entire distance ball. It must retain the same normalizer and be checked
-through the mixed (6;[4]) words before it can enter H3. The new cap result
-also needs an exact interface with the mass-retaining rough cores and
-hard-history boundaries. A matched local extension remains a candidate
-for repairing RC20; it is not supplied by CC9. At later scales the
-inherited Hessian needs an actual relative bound. Replacing rho_j by
-exp(-u_j W), or spending original plaquette prices twice, is forbidden.
+**Next decision.** Expand the normalized fluctuation contribution around
+the constructed branch while retaining the full signed Gaussian covariance.
+Its determinant, soft normalizers, source insertions and hard boundaries
+must share one reference. Test connected support sums and the required
+support reserve before claiming that a Gaussian cumulant expansion closes
+U1. Then test the same estimates on the inherited tree action and paid
+rough interfaces. A matched exterior extension is still needed to repair
+RC20 at its former threshold. Replacing rho_j by exp(-u_j W), identifying
+the stationary branch with the full density, or spending an original
+plaquette price twice remains forbidden.
 
 Working source: branch claude/push-A. This continuation starts from the
-driver checkpoint `0b0e0d0549b558a0ce3f8865eddc2baa1dc1a73c`; the initial
+driver checkpoint `ac67a941deafacb6cccbb9b90e3be393108efea3`; the initial
 manuscript started at `a98f6eb20c89c5792b9db362b860fd1f43670665`.
 The locally recorded main ref is
 `bcab5d2ee4a908fbb4e6025635fb878e6c157ebe`; remote freshness is not certified.
@@ -274,6 +309,31 @@ exterior and old-field readers, including inactive roots. Projection to a
 coarser graph never deletes the attached original addresses. Overlapping
 regulators add their multiplicities before integration.
 
+### 2.3 The chosen leading reference, separate from the actual density
+
+The proposed induction now fixes its leading action rather than leaving
+"main action" unspecified. With the actual SU(N) gap psi of section 2.2,
+define the zero-source variational reference
+
+    T_0=W,
+    T_(j+1)(V)=min_U [T_j(U)+kappa sum_c psi_(M_c(U))(V_c)].   (TR1)
+
+Minimization over the compact group product preserves continuity, so
+each finite-volume minimum exists; T_j>=0 and T_j(I)=0. This is the
+normalized-kernel tree exponent, as in FLOW's
+tree construction (with its SU(N) maximizer correction for N>=3). It is
+not the actual composite density rho_j, a product of fresh Wilson laws,
+or a separately normalized rough history. Sources leave TR1 unchanged.
+
+The retained leading term at scale j is u_j T_j. The kernel normalizers,
+Haar terms, fluctuation corrections, scalar recursion and all original
+source dependence remain in the exact representation; TR1 removes none
+of them. This choice is a definition, not evidence of uniform locality,
+smooth global branch selection, stability in j or a feasible coefficient
+budget. Those properties must be proved in U1--U4. GS6 verifies the
+first-step leading rate at fixed finite volume for N=2; TB7 proves a
+uniformly local bare stationary branch, with the limitations stated there.
+
 ## 3. The induction statement
 
 The proposed H(j) consists of H0--H4 below, uniformly in finite volume,
@@ -287,7 +347,11 @@ are part of U3/U4; they are not claimed to have been constructed globally.
   are taken only after positive compatible sums. Current hard selectors
   are either summed before differentiation or carried with their boundary
   terms on fixed integration domains.
-* **H1 (domains and coefficients):** fixed real chart margins, all required
+* **H1 (reference, domains and coefficients):** the retained leading action
+  is exactly u_j T_j of TR1. This specification assumes no unproved
+  reference-locality estimate. The full tensor extraction below is
+  applied to the non-tree correction, not to a replacement of u_j T_j by
+  a local Wilson or clover action. Fixed real chart margins, all required
   transports, and the full tensor localization Loc^ten of LOCOP L4--L5
   are callable. In each container it extracts the value at identity and
   the six-by-six constant-curvature Hessian tensor, with the colour scalar
@@ -302,7 +366,7 @@ are part of U3/U4; they are not claimed to have been constructed globally.
   total fraction strictly below one on each used link. Joint moment bounds
   concern these sums under the actual reference, not separate integrations
   whose answers are multiplied afterwards.
-* **H3 (locality):** after the retained main action and H1 coefficients,
+* **H3 (locality):** after u_j T_j and the H1 coefficients,
   the exact density has a polymer representation K_(j,h,X) with complete
   supports, factorization of disjoint complete components, and a real log.
   Its joint bound is
@@ -335,8 +399,9 @@ Here are the four counted missing statements; all have status **GAP**.
 
 1. **U1, local normalized backward integration:** construct the exact
    reference/local connected expansion and its full joint differentiated
-   majorants on arbitrary admitted histories. The covariance in (A),
-   with the actual posterior and all readers, is its first derivative test.
+   majorants on arbitrary admitted histories, including the required
+   locality of TR1 and of its actual fluctuation corrections. The covariance
+   in (A), with the actual posterior and all readers, is its first derivative test.
 2. **U2, coherent roughness and reserves:** bound the no-fresh-gap branch
    and arbitrary rough/hole mixtures with single-use original credits or a
    proved extracted contraction. Regenerate those reserves. Forward
@@ -1765,7 +1830,380 @@ The new result replaces the failed
 identity-centered price for a restricted class of cap fluctuations
 and proves its first spatial response. It closes none of U1--U4.
 
-### 4.19 Verification, attribution, and claim boundary
+### 4.19 Failed absolute-walk localization in the actual flat matrix
+
+**PROVEN diagnostic for this majorant, not for the signed inverse.**
+The series after L4 converges as a signed operator series. A proposed
+functional-support expansion would further expand its matrix products
+into individual coordinate walks and take absolute values before summing
+them. Already its flat matrix majorant need not converge.
+
+Use L=3, kappa=1, one colour, the exact tree restriction and zero Bloch
+momentum. There are n=244 free coordinates. Write
+
+    H_infinity=d_T^*d_T+Q_T^*Q_T,
+    Comp(H)_ii=H_ii,   Comp(H)_ij=-|H_ij|, i!=j.       (WP1)
+
+At zero momentum Q has coefficient 1/27 on every free link of its
+own direction and zero on other directions. This follows directly
+from cancellation of the paired axial legs: each middle link is
+read three times in the average over 81 fine sites. The numbers of
+free links in the four directions are 27,63,75,79. In d_T^*d_T every
+diagonal entry is 6. Its nonzero ordered off-diagonal incidences
+number 1392 for equal directions and 2256 for unequal directions;
+each has absolute value one. These counts can be reproduced with
+the integer plaquette row
+
+    e_(x,mu)+e_(x+mu,nu)-e_(x+nu,mu)-e_(x,nu),
+
+with coordinates modulo three and the stated tree columns deleted.
+For example the equal-direction counts are 162,342,426,462. In
+729 H_infinity the trace is 1,067,500 and the absolute off-diagonal
+sum is 2,672,928. Thus the all-ones vector gives exactly
+
+    <1,Comp(H_infinity)1>/244
+                     =-401357/44469 < -9.            (WP2)
+
+This is compatible with H_infinity>0: taking entrywise absolute
+values has removed essential cancellations. For any scalar
+J>=max_i H_ii, entrywise |I-H/J|=I-Comp(H)/J. Its largest eigenvalue
+is therefore greater than one whenever Comp(H) has this negative
+Rayleigh quotient. Increasing J does not repair that condition.
+
+This folded computation also tests actual periodic lattices with
+at least two coarse sites per direction. Lift the positive cell
+vector identically to every block. Triangle inequality for the
+folded off-diagonal entries shows that its comparison Rayleigh
+quotient on the full lattice is no larger than WP2. For entries
+with the same within-cell index but a different block, the difference
+has the sign -(|h|+h)<=0; hence folding their diagonal contributions
+does not reverse the inequality.
+
+The exact finite-u flat conditional Hessian, divided by u and
+including the Haar Hessian, is
+
+    H_u=d_T^*d_T+alpha(u)Q_T^*Q_T
+                     +(1-alpha(u))R_T^*R_T+(2/(3u))I.
+
+The absolute row sum of H_u-H_infinity is at most
+(24ell^2+2/3)/u, by 1-alpha(u)<=3/(2u) and the separate row bounds
+8ell^2 for Q_T^*Q_T and R_T^*R_T. Changing a comparison matrix
+changes this Rayleigh quotient by at most that row bound. It is
+therefore negative for every u>=644. The exact normalized kernel,
+not an omitted normalizer, is used here.
+
+**What failed.** The proposed pointwise coordinate-walk majorant
+using |I-H_u/J| cannot bound the expansion by a convergent geometric
+series. This does not disprove the original signed resolvent, a
+block resummation, or the normalized return. In particular the
+mixed-boundary scalar inverse in L4 has not been replaced by a
+constant matrix operator. The failed step is the attempted absolute
+matrix bound on that operator. The next route keeps the entire
+Gaussian inverse as an edge instead of opening it into these walks.
+
+### 4.20 The exact axial Gaussian step and an actual-density rate test
+
+**PROVEN quadratic calculation.** At the trivial field the leading
+u-stripped first-step action is
+
+    (1/2)||dA||^2+(kappa/2)||QA-B||^2.
+
+Let the coarse momentum be k=(p,0,0,0), 0<|p|<=pi, and the coarse field
+have direction nu!=1 in one colour. Put s(p)=4sin^2(p/2) and
+
+    a_L=(L^2-1)/(6L^2),   tau_1=kappa^-1-a_L.
+
+The transverse coarse Schur complement is exactly
+
+    Gamma_1(p)=s(p)/[1+tau_1 s(p)].                  (GS1)
+
+Here is a derivation from the paired map. The endpoint axial-leg
+term in Q_nu is proportional to 1-exp(i k_nu)=0. The remaining
+straight map is L times the fine block average in direction nu.
+Its transverse averages kill all aliases except
+p_n=(p+2pi n)/L in direction 1. With
+
+    S_L(p_n)=L^-1 sum_(r=0)^(L-1) exp(i p_n r),
+
+the fine transverse Wilson covariance pushed through this map is
+
+    G_push(p)=L^-2 sum_(n=0)^(L-1)
+                       |S_L(p_n)|^2/[4sin^2(p_n/2)]
+              =1/s(p)-a_L.                          (GS2)
+
+The L^-2 factor is L^2 from the two block maps divided by the
+four-dimensional Fourier cell volume L^4. For a direct evaluation,
+|S_L(p_n)|^2=sin^2(p/2)/(L^2 sin^2(p_n/2)). The logarithmic
+derivative of the finite product for sin(Lx) gives
+sum_n csc^2(x+npi/L)=L^2 csc^2(Lx). Differentiating twice, using
+(csc^2 x)''=6csc^4 x-4csc^2 x, gives
+
+    sum_n csc^4(x+npi/L)
+       =L^4 csc^4(Lx)+(2/3)(L^2-L^4)csc^2(Lx),
+
+which proves GS2. The normalized soft Gaussian transition adds
+kappa^-1 to this covariance; inversion proves GS1. Fine gradients
+cannot change this transverse observable, since Qd=d_coarse at the
+roots. Other output directions decouple by transverse reflection
+symmetry. This is the same Schur mechanism already present in FLOW
+F-tree, now evaluated in a closed axial form for the present check.
+
+For L=3,kappa=1 the ratios Gamma_1(p)/s(p) at p=pi/2 and p=pi are
+27/73 and 27/119. Thus no single Wilson coefficient matches this
+quadratic action at both momenta. Tuning kappa=1/a_L makes this
+particular axial correction vanish; the diagnostic is not a claim
+for every possible kappa or for all momentum directions at that tune.
+
+**PROVEN axial Gaussian recursion.** In the linear Gaussian chain,
+an axial transverse covariance 1/s(p)+tau_j transforms to
+
+    tau_(j+1)=kappa^-1-a_L+tau_j/L^2,
+    tau_j=tau_*+(tau_0-tau_*)L^(-2j),
+    tau_*=L^2/[kappa(L^2-1)]-1/6.                   (GS3)
+
+Indeed sum_n |S_L(p_n)|^2=1 by finite Fourier orthogonality, so
+the constant covariance term contributes tau_j/L^2 to GS2. This
+proves stability of this axial sector of the actual linear block
+map, not closure of a scalar ansatz for the full four-dimensional
+matrix covariance. FLOW F-depth already identifies the general
+linear contraction mechanism; GS3 is a checked special case.
+
+**PROVEN actual finite-volume moderate-deviation test.** This
+Gaussian coefficient also occurs in the actual first-step SU(2)
+density, not merely in a replacement Gaussian model. Fix one finite
+compatible torus and use the exact tree gauge. Define
+
+    F_B(U)=W(U)+kappa sum_c psi_(M_c(U))(V_c),
+    V_c=exp(i B_c dot sigma),   f(B)=min_U F_B(U).      (GS4)
+
+At B=0, F_0=0 forces every plaquette to be I. A flat input has
+identical contour transports in each paired mean, hence a unit
+mean. Its zero output gap requires every root-to-root transport
+to be I. Coarse root cycles generate the torus cycles, so all fine
+holonomies are I. The flat field is pure gauge, and the root-fixed
+tree gauge then makes every fine link I. This is the unique minimum
+on the gauge-fixed compact product.
+
+Near I the square root |m| is smooth and the A Hessian is
+d_T^*d_T+kappa Q_T^*Q_T, positive by F4. The finite-dimensional
+implicit function theorem and strict convexity give a unique smooth
+local minimizer for B near zero. Compactness separates the rest of
+this fixed torus from the zero minimum, so this local branch is the
+global minimum for sufficiently small B on that torus. Consequently
+
+    f(B)=(1/2)<B,Gamma_1 B>+O(|B|^3),                (GS5)
+
+with the full Schur matrix in GS5 and its axial value GS1.
+
+RC4 gives, for the actual unnormalized density rho_1,
+
+    int exp(-u F_B)dU <= rho_1(V;0)
+       <=H(kappa u)^(number of coarse links)
+                                      int exp(-u F_B)dU.
+
+The upper Laplace bound is exp(-u f(B)). For the lower bound,
+integrate a coordinate ball of radius u^-1/2 about the interior
+minimum; the Hessian is locally bounded, the Haar density bounded
+below, and the volume is a fixed constant times u^(-d/2). These
+bounds hold uniformly for B sufficiently small on this fixed torus.
+Hence log rho_1(V;0)=-u f(B)+O(log u). For fixed b and
+epsilon=u^(-1/2+delta_exp), 0<delta_exp<1/2,
+
+    lim_(u->infinity) [log rho_1(exp(i epsilon b);0)
+                       -log rho_1(I;0)]/(u epsilon^2)
+                         =-(1/2)<b,Gamma_1 b>.       (GS6)
+
+The errors are O(epsilon)+O(log u/u^(2delta_exp)) after division.
+Constants in this Laplace argument may depend on the fixed torus;
+GS6 supplies no volume-uniform prefactor or history sum.
+
+**PROVEN failure of a particular reference conversion.** At L=3,
+kappa=1, take a real transverse axial mode b with p=pi/2 or pi on
+an even compatible coarse torus whose direction-1 length is divisible
+by four. If one retains u times the bare
+Wilson action and puts its difference from the tree action into
+the residual multiplicative density, then GS6 gives
+
+    lim (u epsilon^2)^-1 log[
+       exp(u W(exp(i epsilon b)))
+                   rho_1(exp(i epsilon b);0)/rho_1(I;0)]
+                =(1/2)<b,(d^*d-Gamma_1)b> > 0.        (GS7)
+
+This residual cannot have a volume-uniform bounded supremum on the
+declared epsilon domains for all u>=u_*: it is unbounded already
+on this one fixed torus. Matching the constant-curvature coefficient
+does not remove the spatial quadratic difference. This tests the
+conversion with its leading coefficient u; it is not a refutation
+of LOCOP's projector or a conversion with a bounded loop coefficient.
+LOCOP L6 explicitly retains a tree functional and leaves its scheme
+conversion estimate open. The manuscript now makes that reference
+choice explicit rather than assigning the leading difference to H3.
+
+### 4.21 Connected supports for the bare nonlinear stationary background
+
+**PROVEN local-branch construction, at zero source and N=2.** Use
+the u-independent action F_B in GS4 near the trivial field. This is
+the exact leading exponent of the normalized soft kernel. Its
+normalizer's subleading terms and its fluctuation integral are not
+part of the following stationary-background theorem.
+
+Let n_A=3(3L^4+1) be the number of real free fine coordinates per
+block. Define
+
+    H=d_T^*d_T+kappa Q_T^*Q_T,
+    M_G=17+8kappa ell^2,
+    rho_G=1-g/M_G,   eta_G=-(1/2)log rho_G > 0,
+
+where g=g_T(L,kappa)>0 is the proved lower constant in F4. Choose
+0<sigma<eta_G before choosing the input field radius. For each pair
+of coordinate blocks choose a shortest coordinate-ordered block
+path and attach both endpoint blocks of the fine links i and j;
+call this decorated connected set P_ij. F6 implies the absolute
+weighted inverse bound
+
+    sup_i sum_j |(H^-1)_ij| exp(sigma |P_ij|) <= K_H,
+    K_H=(n_A exp(5sigma)/g)
+       [(1+exp(-(eta_G-sigma)))/(1-exp(-(eta_G-sigma)))]^4.   (TB1)
+
+This takes absolute values of the *full inverse entries*, after the
+signed Gaussian inversion. It does not require the false walk
+criterion of WP2. The periodic distance sum is bounded by the sum
+on Z^4. The decorated path has at most d(i,j)+5 blocks. Fine-link
+endpoint readers are therefore retained even for a boundary link.
+
+The analyticity and coefficient bounds used below are elementary for
+F_B. Complexify the exponential coordinates only as a calculation,
+using the holomorphic trace formulas that agree with the real SU(2)
+action. In particular inverse matrices, not complex conjugation of
+the continued variables, appear in these formulas. Put
+
+    r=1/(192ell),   E_0=18+32kappa,
+    M_N=2E_0/r,
+    D_loc=81(n_A+12),   C_N=2D_loc/r.                 (TB2)
+
+If every complex coordinate has modulus at most r, then
+||exp(i A dot sigma)|| and its inverse are at most exp(3r).
+A contour therefore obeys ||M-I||<=exp(3ell r)-1<=1/63.
+Its complex quaternion displacement from (1,0,0,0) has Euclidean
+norm at most 2/63, so |m dot m-1|<1/2. The square root in
+psi=sqrt(m dot m)-(1/2)tr(V^-1 M) has a single analytic branch
+there, with |psi|<=4. Each Wilson factor has absolute value at
+most three. An A_i derivative reads at most six Wilson factors
+and eight kernels, whose local sum is bounded by E_0. Cauchy's
+formula on the half-radius polydisc bounds this derivative by M_N.
+
+Write the stationary equation exactly as
+
+    A=kappa H^-1 Q_T^* B-H^-1 N(A,B),
+    N_i=partial_(A_i)F_B-(HA)_i+kappa(Q_T^*B)_i.       (TB3)
+
+N_i has no constant or linear term. Its readers lie in the
+connected container T_i=N_(infinity,1)(block(i)), with at most
+81 blocks and at most D_loc input coordinates. The Cauchy bound
+gives each degree-n Taylor coefficient, n>=2, absolute value at
+most M_N(2/r)^n. There are at most D_loc^n degree-n multiindices.
+Thus the sum of their absolute contributions, when every argument
+has size at most z, is bounded by
+
+    M_N sum_(n>=2)(C_N z)^n
+                         =M_N(C_N z)^2/(1-C_N z).    (TB4)
+
+These constants are deliberately conservative but finite and do
+not depend on the number of blocks.
+
+Here is a supported version of the fixed point, not just an inverse
+function theorem. Represent each component A_i as a sum of analytic
+functions indexed by connected sets containing both endpoint blocks
+of the fine link i, each using only B variables whose endpoints belong
+to that set. The norm is
+the sum of their suprema on |B_c^a|<=b, multiplied by exp(sigma|X|),
+then the supremum over i. Index families may be kept as trees and
+grouped by their union at the end; absolute convergence justifies
+that grouping. Attach P_ij to every H^-1 edge, T_j to every local
+nonlinear vertex, and the output link endpoints to each B leaf.
+The union is connected and contains every functional reader.
+For products, the union's weight is at most the product of these
+weights. Thus the norm of TB3 is bounded by the scalar map
+
+    a -> L_0 b+K_0 [C_N(a+b)]^2/[1-C_N(a+b)],
+    L_0=8kappa ell exp(2sigma)K_H,
+    K_0=K_H exp(81sigma)M_N,
+    L_0bar=max(1,L_0).                               (TB5)
+
+For L_0, the absolute row sum of Q_T^* is at most 8ell and its
+output endpoint set has at most two blocks. For K_0, summation of
+the inverse edge uses TB1, the local vertex costs at most
+exp(81sigma), and TB4 includes all its coordinate and monomial
+choices. No independence of fine fields or artificial factorization
+of a scalar resolvent is used in these bounds.
+
+Choose
+
+    0<b<=b_*:=min{1/(6 C_N L_0bar),
+                         1/(48 K_0 C_N^2 L_0bar)}.    (TB6)
+
+On a<=2L_0bar b one has C_N(a+b)<=1/2. The nonlinear term in
+TB5 is at most 18K_0 C_N^2 L_0bar^2 b^2, and its Lipschitz
+constant with respect to a is at most
+24K_0 C_N^2 L_0bar b<=1/2. The map preserves that ball and is
+a contraction. Iteration from zero in the supported series norm
+therefore converges absolutely to
+
+    A_i(B)=sum_(X connected,block(i) in X) A_(i,X)(B),
+    sup_i sum_X exp(sigma|X|)
+                          sup_(|B|<=b)|A_(i,X)(B)|
+                                  <=2L_0bar b.       (TB7)
+
+Each Picard iterate is the actual analytic expression obtained
+from TB3; composition only unions its declared supports. Its norm
+limit solves that same equation and is its unique solution in the
+ball. On real fields this is a strict local minimum: the absolute
+row norm of partial_A N on this ball is at most
+24M_N C_N^2 L_0bar b<=g/2, since K_0>=M_N/g. Symmetry and
+H>=g then give Hess_A F_B>=g/2. This also verifies the local
+branch selection without assuming a minimum from its name.
+
+TB7 is functional locality with complete connected supports for
+this stationary branch. Unlike ball telescoping, a long inverse
+edge pays only for its attached path, and a nonlinear vertex pays
+for the union of its attached child supports. On any smaller
+output polydisc, Cauchy's formula gives finite coordinate-derivative
+bounds through order six with the same supports. For example on
+|B|<=b/2, r_field directions of coordinate maximum norm at most one
+obey the factor (2 r_field/b)^(r_field) in the unweighted derivative
+bound. This claim concerns coordinate derivatives of the background,
+not the full group/source jet of an integrated activity.
+
+**Hostile check of the newest step.** TB7 retains the entire signed
+Gaussian inverse and only then takes absolute values of its entries;
+WP2 therefore does not invalidate it. The local square root is used
+only where its complex argument stays within distance 1/2 of one.
+Every nonlinear vertex has a finite reader container, and no old
+field has been normalized or discarded. The contraction counts all
+trees and all overlaps before regrouping by their complete unions.
+
+The limitations are decisive. The result constructs the bare local
+stationary branch uniformly in volume, not its fluctuation integral.
+GS4's compactness argument identifies it as the global minimum only
+for a neighborhood that can depend on the fixed torus; uniform global
+branch selection or a paid alternative has not been proved. TB7 uses
+sigma<eta_G and does not certify H4's larger mu+2 support reserve.
+Its component-rooted sum is also not yet a rooted sum of action
+activities over every possible anchor. Four original source labels,
+rough/hole interfaces, the determinant and all higher connected
+fluctuation terms have not been handled. Neither have uniform-depth
+bounds for the inherited nonlinear tree action.
+
+**GAP.** Inserting this deterministic branch into a Gaussian or
+nonlinear integral does not prove the remaining actual-posterior
+covariance bound. The scalar resolvent's coefficients and the common
+fluctuation normalization still read the whole measure. A supported
+expansion of that fluctuation contribution, with its mixed jets and
+history masses, remains U1. The tree-background result is not a
+renaming of that unproved estimate and does not reduce the count of
+U1--U4.
+
+### 4.22 Verification, attribution, and claim boundary
 
 The check script [checks/push_a_kernel_moments.py](checks/push_a_kernel_moments.py)
 performs separate direct Haar quadratures and scaled Bessel evaluations,
@@ -1831,6 +2269,26 @@ smallness. This sequential run used one BLAS thread and peak RSS
 84,934,656 bytes under the checked 1 GB ceiling. No new independent
 reviewer, RG simulation, or proof of the missing history sum is claimed.
 
+The [resolvent and Gaussian script](checks/push_a_resolvent_paths.py), with
+its [complete output](checks/push_a_resolvent_paths.log), constructs the
+actual paired-contour matrices in the exact tree gauge. An independent
+integer curl construction and the zero-momentum cancellation formula give
+WP2 without rounding a floating matrix into the claimed exact result.
+It checks the normalized finite-u Hessian at u=3,1000,10000: the signed
+Neumann norms are below one, while the entrywise absolute radii are above
+one. The analytic row bound, not those three values, proves the stated
+u>=644 range for the failed comparison majorant.
+
+It also compares the actual 244-coordinate Schur complement, the fine
+alias sum and GS1 at nine pairs: p=pi/6,pi/2,pi and kappa=1,6.75,10.
+The largest relative discrepancy between the direct matrix and GS1 is
+2.07e-13. Twelve iterations check GS3's scalar recursion. This is not
+a check of full nonlinear depth stability. The final sequential run
+used one BLAS thread and peak RSS 87,851,008 bytes under the checked
+1 GB ceiling. No numerical proof of GS6, TB7, the global branch choice,
+or the normalized fluctuation expansion is claimed; their stated
+mathematical scopes must be assessed from the arguments themselves.
+
 The small/large-field organization is credited to Tadeusz Balaban and
 Jonathan Dimock. The relevant repository comparisons are REFMATCH RM1/RM2/
 RM25, ROUGH Q12--Q25, RENEW's forward flux example, CHARGE's original-weight
@@ -1842,7 +2300,11 @@ conditional cancellation and differentiated quotient algebra. Sections
 4.14--4.16 evaluate a specific same-exterior price and its derivative
 constants rather than claim that algebra as new. CHARGE's distinction
 between original mass and a normalized rough law is preserved in RC6
-and RC19. The primary source
+and RC19. FLOW F-strip/F-tree/F-depth already supplies the tree-reference
+and Gaussian-recursion organization, and LOCOP L6 explicitly distinguishes
+it from a Wilson or clover conversion. GS1--GS7 evaluate and test that
+choice at their stated scopes; they do not claim that organization as new.
+The primary source
 [Biskup, Reflection positivity and phase transitions, Theorem 5.8](https://arxiv.org/pdf/math-ph/0610025)
 was consulted to check the arbitrary-even-torus chessboard mechanism.
 The covariance argument is a finite-dimensional weighted

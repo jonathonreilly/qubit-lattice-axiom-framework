@@ -19,61 +19,19 @@ not an input assumption about its successor.
 
 **Unproved statements on this proposed chain: 4**, U1--U4 in section 3.
 They are four specified obligations of the same return problem, not four
-independent obstructions. The new results below do not decrease this count.
-In particular, the general-N problem remains open already at N=2.
+independent obstructions. In particular, the general-N problem remains open
+already at N=2.
 
-**Current results.** In the actual SU(2) soft kernel, the dimensionless gap
-energy is stochastically dominated by Gamma(3/2,1), for every input, including
-a zero mean. This gives normalized joint forward moment bounds at every
-finite depth without a coupling-dependent normalization loss. Sections
-4.3--4.5 also give uniform integrated output jets, mixed input/output jets
-away from zero means, and a Wilson-first-step joint jet bound covering the
-zero-mean region. These are **PROVEN** mathematical statements at their
-specified finite-model scope, not independently reviewed results. They do not
-bound a general pinned backward fiber or a connected RG activity. A direct
-attack on that fiber now also gives its exact flat action Hessian, a
-volume-uniform inverse with spatial decay for the resulting Gaussian, and
-strict convexity of the actual nonlinear first-step action on a specified
-fixed identity cap in an exact block-tree gauge, and an exponential
-covariance bound for its normalized rectangular subsector (sections
-4.9--4.11).
-This cap is a proper sector; its complement and inherited actions remain.
-The new route integrates a rough core without discarding its mass. Sections
-4.13--4.16 prove a first-step, SU(2), fixed-strong-roughness comparison at
-identical exterior fields and pinned outputs, including a complete-reader
-rooted bound and jets through (6;[4]) for four original plaquette sources.
-These local ratios have not been identified with the actual connected RG
-activities. Their original-action price is not regenerated at later scales.
-Section 4.18 then uses a different reference calculation: concentration
-about the actual common convex-cap mean. It proves a joint shrinking-scale
-event price at a specified larger threshold coefficient, and a spatially
-decaying first output response for declared smooth auxiliary insertions.
-These are still first-step cap results; neither the original hard histories
-nor the exponential-in-support-size connected representation is supplied.
-Sections 4.19--4.21 test absolute resolvent walks, evaluate the axial
-Gaussian tree action, verify its leading rate in the actual first-step
-density at fixed volume, and construct a convergent complete-support
-series for the bare nonlinear stationary branch. The last result uses
-the full signed Gaussian inverse as each edge. Sections 4.22--4.24
-now give a connected rooted expansion of its Gaussian determinant,
-an explicit zero-free estimate for the actual SU(2) soft normalizers,
-and a rooted bound on the stationary Haar/normalizer amplitude.
-The actual cap integral is FI1, with an unexpanded Xi_Omega carrying
-its fluctuations, sources and moving boundary. FI6 bounds the exact
-local factors on a retained shrinking cutoff. These are first-step
-statements; they provide no normalized connected fluctuation sum,
-complete history representation or uniform-depth reference.
-Section 4.25 now treats the zero-output Gaussian cutoff mass itself:
-hard boundary integration, degree-resolved Hermite bounds and the
-forest sum give its convergent connected logarithm with a uniform
-rooted bound. This retains the extensive cutoff mass detected in FI8.
-It does not integrate the nonlinear FI6 factors. Section 4.26 shows
-why a direct extension to their overlapping readers loses the positive
-covariance lower bound needed by this estimate.
-RCF2 then groups the actual overlapping factors before interpolation,
-keeping one common expectation. RCF3 bounds these components before
-integration; their growing reader sets still prevent a direct reuse
-of the distinct-coordinate tree bound.
+**Current attempt; counted progress: 0.** The latest instruction requires
+closure of an entire U1--U4 obligation or an actual-model counterexample
+to one of them. This run tests (A) and regeneration directly under the full
+posterior at arbitrary finite depth. Section 4.27 tries a global positive
+kernel contraction and then a posterior variance estimate. The first loses
+uniformity in coupling and volume. The second requires a successor curvature
+bound that has not been derived from H(j). Neither closes an obligation or
+shows one false. No change to H(j) is justified by these failures. The
+first-step constructions in sections 4.9--4.26 are not counted as progress
+on this run and are not extended here.
 
 **Hardest remaining inequality.** For the actual backward measure
 
@@ -100,13 +58,11 @@ common full posterior. Its same-exterior composition test is in section 4.17.
 CC13 proves a restricted first response with a common-cap fluctuation price.
 It has no all-history or (6;[4]) extension, and CC14 records the failed
 attempt to turn its distance decay into the required support-size norm.
-TB7 localizes the deterministic stationary branch with connected supports;
-GD4 and GN5 supply the corresponding Gaussian determinant and stationary
-amplitude. CF10 bounds the logarithm of the Gaussian cutoff mass at
-B=0. The outstanding part is the connected response of the weighted
-Xi_Omega in FI1, including its output readers and original source jets,
-followed by the actual history family under the same posterior.
-Small local factors in FI6 are not a bound on its normalized logarithm.
+The object to control in this run is pi_j^V itself, with all histories
+summed, followed by H0--H4 at j+1. PP1--PP5 in section 4.27 retain this
+measure exactly. Their identities do not give a summable connected
+majorant or a contraction after extraction. In particular the curvature
+of log rho_(j+1) in PP5 is an unknown output, not an available input.
 An index path, a stationary branch, or a Gaussian determinant is not (A).
 
 **Order of constants.** Fix N, odd L>=3, kappa>0, the exact contour convention,
@@ -281,45 +237,49 @@ is no longer offered as a bounded residual on the epsilon domains.
   component weights. Copying CF8 still fails: each component has up to
   D_loc times its size in coordinate readers, so the Gaussian tree count
   acquires size moments not present in the one-coordinate proof.
+* **Failed full-posterior route, at arbitrary depth:** PP1 keeps the actual
+  Radon--Nikodym quotient, including its posterior normalizer. Its projective
+  distance for changing one output link is exactly 2t_j|v'-v|. The weighted
+  score oscillation is 2t_j h_c, growing as sqrt(u_j) at comparable couplings.
+  The full step has projective diameter 4t_j n for n coarse links, so the
+  standard positive-kernel contraction estimate approaches one. These are
+  exact failures of a global certificate, not lower bounds on the local
+  covariance in (A). PP4 checks that restricting the diagnostic to flat,
+  gauge-inequivalent configurations still leaves an extensive distance.
+* **Failed variance repair and regeneration:** PP5 replaces the score
+  supremum by its variance under the actual full posterior. Its exact
+  identity contains h_c^2 Delta_c log rho_(j+1). Bounding that term using
+  H1/H3 at j+1 assumes the state that must be produced. No bound for it
+  has been obtained from H(j); even a scalar variance bound would leave
+  complete supports, original source cumulants and the reserve recursion
+  unpaid. PP6 records this failure without adding a fifth obligation.
 
-**Hostile check of the newest step.** RCF2 retains an expectation of
-a product; it gives no license to multiply separately normalized
-component expectations. RCF3 pays the overlap animals before
-integration, but does not pay the growing reader multiplicities of
-high-degree Gaussian tree vertices. Its hard-cut cancellation is exact
-because F_x vanishes outside the very box where f_i is one. It is
-proved at B=0 with the specified original plaquette sources, not on
-the inherited history family.
-CF10 is a scalar Gaussian
-normalization theorem, not the full Xi_Omega bound. It requires distinct
-physical coordinates in CF2, retains hard boundaries in CF3--CF5,
-and keeps product sqrt(degree!) instead of a factorial of total degree.
-Its exact polymer identity uses coordinate intersection; declaring all
-overlapping decorated paths incompatible would change that identity.
-The anchor sum spends Delta explicitly. These checks support its stated
-scope. The attempted nonlinear promotion fails SP2 at actual shared
-readers. Its divergent majorant is not the actual covariance: SP3 has
-an integrable square-root singularity and the finite value p(1-p).
-Neither the zero-output scalar proof nor the finite-torus checks supply
-the B readers inside interpolated expectations, the original mixed jets,
-or the weighted complement of FI7. The latter still cannot be priced
-by a Gaussian tail alone. U1--U4 remain open; no independent reviewer
-or retained-grade status has been added.
+**Hostile check of the newest step.** The likelihood extrema in PP1/PP2
+can have negligible posterior mass. A large projective distance does not
+prove a large covariance for an admitted local F_X. PP3's maximizing pair
+is gauge equivalent; PP4 supplies distinct holonomy traces but changes an
+extensive set of links. Neither tests the extracted local operator norm.
+PP5 has the positive variance sign: differentiating log rho twice adds
+Var(score), so it cannot be used as an upper variance bound without an
+upper bound on the output curvature. The input H(j) is not that bound.
+Source differentiation produces further connected cumulants. No such
+cumulants, spatial decay, coherent-failure prices or successor domains
+have been bounded in this run. These checks reject a claimed closure or
+counterexample. U1--U4 remain GAP; no independent reviewer or retained-grade
+status has been added.
 
-**Next decision.** Apply covariance interpolation to RCF2's genuinely
-reader-disjoint components. Seek a derivative tensor bound that retains
-coordinate/degree information without losing an uncontrolled size factor
-at each edge; combine it with RCF3 before claiming a logarithm bound.
-The scalar per-component replacement of CF8 has not done this. Then
-expand every B-dependent covariance reader in the same connected norm
-and retain the weighted complement in FI7. The inherited reference,
-rough interfaces, H4 rate reserve and H5's feasible constants still need
-proof. Replacing rho_j by exp(-u_j W), identifying the stationary branch
-with the full density, or spending an original plaquette price twice
-remains forbidden.
+**Next decision.** Keep the full posterior and test the exact conditional
+covariance decomposition over retained rough-field readers. Its first term
+is the average conditional covariance on good components; its second is
+the covariance of their conditional means. A useful estimate must bound
+both from H(j), including the second term's unused original-action charges,
+and regenerate those charges at j+1. The bare convex-cap estimate does not
+bound either term for an arbitrary inherited action. Do not return to
+first-step prefactors as counted progress, assume H(j+1) to estimate PP5,
+or infer falsity of U1--U4 from failure of a stronger global metric.
 
 Working source: branch claude/push-A. This continuation starts from the
-driver checkpoint `951d851ed0ec531f92d74dc9843b72d4f5159d45`; the initial
+driver checkpoint `721f2305fc3470eb61661ae808799125fe6b885b`; the initial
 manuscript started at `a98f6eb20c89c5792b9db362b860fd1f43670665`.
 The locally recorded main ref is
 `bcab5d2ee4a908fbb4e6025635fb878e6c157ebe`; remote freshness is not certified.
@@ -3123,7 +3083,182 @@ before interpolation, while the combined Gaussian/component count
 and the other stated return obligations remain unproved. U1--U4
 remain **GAP**.
 
-### 4.27 Verification, attribution, and claim boundary
+### 4.27 Full-posterior projective and variance routes; regeneration remains GAP
+
+This attempt concerns the actual full posterior at every finite depth,
+at zero sources and N=2. Histories are summed before differentiating.
+No cap, stationary approximation, Gaussian law or fresh Wilson comparator
+replaces it. The following identities test a proposed route; none closes
+U1--U4 or counts as a return result.
+
+**PP1 — PROVEN (exact likelihood geometry).** Write omega=(U_0,...,U_j)
+and t=t_j. If V and V' differ only at the terminal link c, positivity gives
+
+    d pi_j^(V')/d pi_j^V(omega)
+      = exp(t [h_M(V'_c)-h_M(V_c)])
+        / E_(pi_j^V) exp(t [h_M(V'_c)-h_M(V_c)]),           (PP1)
+
+where M=M_c(U_j). All earlier densities and the input-dependent kernel
+normalizers cancel in this quotient; the displayed posterior expectation
+does not disappear. Define d_H(p,q)=ess osc log(dp/dq). Then
+
+    d_H(pi_j^(V'),pi_j^V)=2t |v'_c-v_c|.                   (PP2)
+
+For the upper bound use |m|<=1. For equality, every unit quaternion q
+is an attainable mean at c: put the same commuting link q^(1/L) on
+every fine link in c's direction, and identity in the other directions.
+Each paired contour has signed displacement L in that direction, so
+every contour product is q, independently of its anchor and ordering.
+This connection is flat. Taking q=+/-(v'_c-v_c)/|v'_c-v_c| gives both
+extrema. At finite couplings the complete past density is continuous
+and strictly positive on the compact group product. Neighborhoods of
+these configurations have positive posterior mass, so the extrema also
+give the essential oscillation. This uses the sum of all histories;
+it does not assert positivity inside each individual hard sector.
+For V_c=I and V'_c=exp(i alpha sigma_3), PP2 is 4t|sin(alpha/2)|.
+
+**PP2 — PROVEN (failure of a score-oscillation certificate).** For a
+unit left-invariant output direction, let w be its unit tangent quaternion
+at v and D_c=h_c partial_c. Since Z_t(M) is independent of V,
+
+    s_c=D_c log k_t(V_c;M)=t h_c m dot w,
+    D_c log pi_j^V=s_c-E_(pi_j^V)s_c,
+    ess osc(s_c)=ess osc(D_c log pi_j^V)=2t h_c.            (PP3)
+
+The last equality follows from the same attainable unit means. With
+h_c=R_c sqrt(2/u_j), this equals 2 kappa R_c sqrt(2u_j).
+For fixed positive R_c it is unbounded. Even terminal displacements
+of order u_j^(-1/2) have growing projective distance; they fit within
+the declared larger small-field threshold as u_j increases. Thus
+posterior normalization alone does not give a uniform score-oscillation
+constant. The bound |Cov(F,s_c)|<=osc(F)osc(s_c)/4 obtained this way
+loses sqrt(u_j). This is a failed upper bound, not a lower bound on
+the actual covariance. No estimate of the mass near these extrema
+has been made.
+
+**PP3 — PROVEN (diameter of the actual positive kernel).** Let n be
+the number of coarse links. Its four-point diameter is
+
+    Delta(K_j)=sup_(U,U',V,V')
+      log[K_j(V,U)K_j(V',U')/(K_j(V,U')K_j(V',U))]
+      =4t_j n.                                           (PP4)
+
+All input normalizers cancel. For each link the remaining expression
+is t_j(m-m') dot(v-v'), bounded by 4t_j. For equality take U+=I.
+On an even coarse torus put g(X)=(-1)^(sum_a X_a) I at its roots,
+extend g constantly over each fine block, and take the pure-gauge
+fine connection U-_xy=g(x)g(y)^*. Every paired contour telescopes
+between roots, giving M_c(U-)=-I for every c. Take V+=I and V-=-I
+on all links. Both means have norm one, and each link contributes
+4t_j to PP4. Both input Wilson actions vanish.
+
+The positive integral operator on continuous functions of the full
+past has the same projective diameter: multiplication by its strictly
+positive past density cancels in cross ratios, and continuous inputs
+concentrated near the two specified past configurations approach its
+extremal columns. Division by the actual terminal density, to form
+the Bayes operator, is a fixed positive output multiplier and also
+preserves this diameter. Compactness and strict positivity give a
+bounded linear map into the interior of the cone of positive continuous
+functions. The Birkhoff contraction estimate consequently supplies
+tanh(Delta/4)=tanh(t_j n), which approaches one. The theorem and its
+cone hypotheses are stated in
+[Gaubert--Qu, Dobrushin's ergodicity coefficient for Markov operators on cones, Theorem 5.6](https://arxiv.org/pdf/1307.4649).
+This global estimate cannot serve as a fixed lambda<1 in H5.
+It does not estimate the operator after tensor extraction or imply
+that the local operator has no smaller bound.
+
+**PP4 — PROVEN (gauge-inequivalent robustness check, not a local
+counterexample).** PP3's extremizing pair is gauge equivalent. To test
+whether that alone explains the global problem, take terminal fields
+V^0=I and V^alpha with every direction-1 link exp(i alpha sigma_3)
+and all other links identity. If that direction has n_1 sites and
+0<alpha<pi/n_1, their holonomy traces are 2 and 2cos(n_1 alpha),
+so they are not gauge equivalent. Both fields are flat. For any depth j,
+choose the two full pasts omega^0 and omega^alpha with
+
+    U^alpha_(l,1)=exp(i alpha/L^(j+1-l) sigma_3),
+    U^alpha_(l,mu)=I for mu!=1,  0<=l<=j.                  (PP5)
+
+Every paired mean at level l matches the next field. All original
+plaquettes and every matched fresh gap vanish. All means have norm
+one, so the earlier kernel factors, including their normalizers,
+are identical between these two pasts. In the four posterior densities
+the two posterior normalizers rho_(j+1)(V^0) and rho_(j+1)(V^alpha)
+also cancel. With B the terminal number of sites, the exact cross ratio is
+
+    log[pi_j^(V^0)(omega^0) pi_j^(V^alpha)(omega^alpha)
+        /(pi_j^(V^0)(omega^alpha) pi_j^(V^alpha)(omega^0))]
+      =2t_j B(1-cos alpha).                               (PP6)
+
+Here pi(omega) denotes density with respect to the common product Haar
+measure, not the probability of a point. Continuity and positivity
+justify the corresponding essential-distance lower bound as in PP1.
+Increasing transverse volume at fixed n_1, alpha and t_j makes PP6
+unbounded. Alternatively alpha=u_j^(-1/2+delta)/2, with 0<delta<1/2,
+gives growth of order B u_j^(2delta) at fixed finite depth and large
+comparable couplings. The fields can be arbitrarily close to identity. But this
+test changes B links, and holonomy is nonlocal. It supplies no local
+covariance lower bound and does not show U1, U3 or U4 false.
+
+**PP5 — PROVEN (posterior variance identity).** Let partial_(c,a),
+a=1,2,3, be the unweighted left-invariant directions generated by
+i sigma_a, and Delta_c=sum_a partial_(c,a)^2. For every M,
+partial_(c,a)^2 h_M(V_c)=-h_M(V_c), because (i sigma_a)^2=-I.
+Thus partial_(c,a)^2 log k_t=-t h_M. Differentiating the complete
+finite compact integral for rho_(j+1) twice gives
+
+    partial_(c,a)^2 log rho_(j+1)
+      =-t E_pi h_M(V_c)+Var_pi(partial_(c,a) log k_t).
+
+Equivalently, sum the three derivatives of the normalized score in
+PP3; differentiating its posterior expectation supplies that same
+positive variance. With s_(c,a)=h_c partial_(c,a) log k_t,
+
+    sum_a Var_pi(s_(c,a))
+      =h_c^2 Delta_c log rho_(j+1)(V)
+        +3t h_c^2 E_pi h_M(V_c)
+      <=h_c^2 Delta_c log rho_(j+1)(V)+6 kappa R^2.        (PP7)
+
+All expectations are under pi=pi_j^V. For any real square-integrable
+F of the past with no explicit terminal dependence, Cauchy--Schwarz gives
+
+    sum_a |D_(c,a) E_pi F|^2
+      <=Var_pi(F) sum_a Var_pi(s_(c,a)).                  (PP8)
+
+There is no normalization loss hidden in PP7. There is also no upper
+bound here for its unknown output curvature. A bound on that curvature
+would control score variance, but PP8 would still lack spatial decay
+and complete connected supports. Differentiating PP7 in an original
+source J_i produces the cumulants Cum_pi(O_i,s_(c,a),s_(c,a)) and
+Cov_pi(O_i,h_M), together with the corresponding derivative of the
+unknown log rho_(j+1). It does not supply the (6;[4]) hierarchy.
+
+**PP6 — GAP (the attempted regeneration).** No bound for the output
+curvature in PP7 has been derived from H0--H4 at j. Estimating it by
+asserting the successor reference, coefficient and residual bounds
+uses H(j+1) to prove H(j+1). The global kernel route supplies no
+uniform contraction constant, and the variance route supplies no
+closed estimate even before support summation and extraction.
+Neither accounts for the coherent branch's unused original credits
+or proves that they can be reused at j+1. These failures leave U1--U4
+open. They do not establish that any of U1--U4 is false as stated;
+therefore no induction edit or counterexample status is proposed.
+The count stays four and counted progress for this attempt is zero.
+
+**Hostile check — PROVEN scope, GAP promotion.** PP1--PP4 are statements
+about extrema of density ratios, not the actual distribution of their
+mass. Their extremizers cannot be inserted as a two-point posterior
+without changing the model. Gauge equivalence invalidates a physical
+counterexample based on PP3; PP4 removes that equivalence but leaves
+an extensive, nonlocal test. PP7's sign was checked by both quotient
+differentiation and the centered-score calculation. Its missing upper
+curvature bound is exactly where a proposed regeneration argument would
+be circular. None of these calculations establishes the required local
+bound (A), pays the bad-sector covariance, or justifies dropping tensor
+extraction. The failure is confined to these two proposed estimates.
+
+### 4.28 Verification, attribution, and claim boundary
 
 The check script [checks/push_a_kernel_moments.py](checks/push_a_kernel_moments.py)
 performs separate direct Haar quadratures and scaled Bessel evaluations,
@@ -3262,6 +3397,20 @@ finite exact answer. Final peak RSS was 97,796,096 bytes, with
 BLAS threads one and the checked 1 GB ceiling. No weighted nonlinear
 Xi_Omega, output jets, RCF2 Gaussian/component tree sum or history
 return was computed, and no independent reviewer was added.
+
+The [posterior-geometry script](checks/push_a_posterior_geometry.py) and
+its [complete log](checks/push_a_posterior_geometry.log) independently
+enumerate all 1944 paired contours per orientation at L=3 in centered
+blocks. They check the checkerboard pure gauge in PP3 and every level
+of the flat prefixes in PP5 at j=0,1,3,7. The largest individual contour
+error is 2.24e-16. Four terminal kernel values, with the unit-mean
+normalizer evaluated by both direct Haar quadrature and scaled Bessel
+evaluation, reproduce PP6 to 4.41e-13. The posterior normalizers cancel
+analytically; they have not been numerically evaluated. The script does
+not sample the posterior, estimate its mass near the tested fields,
+test PP7, or bound a connected local response. Peak RSS was 90,734,592
+bytes with BLAS threads one and the checked 1 GB ceiling. These finite
+configuration checks do not change the count of unproved obligations.
 
 The small/large-field organization is credited to Tadeusz Balaban and
 Jonathan Dimock. The relevant repository comparisons are REFMATCH RM1/RM2/

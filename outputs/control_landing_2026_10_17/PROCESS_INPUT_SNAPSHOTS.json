@@ -1,0 +1,61 @@
+{
+  "scope": "Historical process-document inputs of the replayed runners. Each path resolves to its preserved original bytes, never to the live workflow file, so later process edits cannot change or block these replays. The pinned identities in the artifact manifests and input maps are unchanged.",
+  "files": {
+    "docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md": {
+      "original": {
+        "bytes": 34639,
+        "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1"
+      },
+      "original_snapshot": "outputs/control_landing_2026_10_17/process_originals/docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md"
+    },
+    "docs/ai_methodology/SCIENCE_WORKFLOW.md": {
+      "original": {
+        "bytes": 11788,
+        "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+      },
+      "original_snapshot": "outputs/control_landing_2026_10_17/process_originals/docs/ai_methodology/SCIENCE_WORKFLOW.md"
+    },
+    "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md": {
+      "original": {
+        "bytes": 2180,
+        "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+      },
+      "original_snapshot": "outputs/control_landing_2026_10_17/process_originals/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md"
+    },
+    "docs/ai_methodology/skills/ai-physics-lane-builder/SKILL.md": {
+      "original": {
+        "bytes": 3253,
+        "sha256": "ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9"
+      },
+      "original_snapshot": "outputs/control_landing_2026_10_17/process_originals/docs/ai_methodology/skills/ai-physics-lane-builder/SKILL.md"
+    },
+    "docs/ai_methodology/skills/physics-loop/SKILL.md": {
+      "original": {
+        "bytes": 5767,
+        "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0"
+      },
+      "original_snapshot": "outputs/control_landing_2026_10_17/process_originals/docs/ai_methodology/skills/physics-loop/SKILL.md"
+    },
+    "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md": {
+      "original": {
+        "bytes": 16755,
+        "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+      },
+      "original_snapshot": "outputs/control_landing_2026_10_17/process_originals/docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md"
+    },
+    "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md": {
+      "original": {
+        "bytes": 16454,
+        "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+      },
+      "original_snapshot": "outputs/control_landing_2026_10_17/process_originals/docs/ai_methodology/skills/physics-loop/references/DELIVERY.md"
+    },
+    "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md": {
+      "original": {
+        "bytes": 30709,
+        "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+      },
+      "original_snapshot": "outputs/control_landing_2026_10_17/process_originals/docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md"
+    }
+  }
+}

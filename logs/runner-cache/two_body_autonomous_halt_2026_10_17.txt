@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/two_body_autonomous_halt_2026_10_17.py
 runner_sha256: c743ed62dcd5422a45a1f0a690c7ed866b877609180dbc55fc2121ffe7af5e9f
-input_fingerprint_sha256: 1bf7a600d353414e22725311d1fbcd1d8b8e384456ab760675049255cc61b3e3
+input_fingerprint_sha256: 182edf7e3f0894e34d4dc8f66c61cc04830cb84cd693f0a2ac49e9fead5c75f3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.48
+elapsed_sec: 1.56
 status: ok
 ----- stdout -----
 {
@@ -134,7 +134,7 @@ status: ok
     }
   },
   "independent_status": "All exact arithmetic checks completed; conditional composition scope only",
-  "elapsed_seconds": 1.2855248339474201
+  "elapsed_seconds": 1.329117791960016
 }
 
 ----- stderr -----

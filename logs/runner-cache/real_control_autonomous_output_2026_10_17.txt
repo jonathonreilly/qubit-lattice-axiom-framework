@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/real_control_autonomous_output_2026_10_17.py
-runner_sha256: b38b779564fc86f0630bd7c551c50bb6dde05044af200e997e4dc14bea0505c0
-input_fingerprint_sha256: 0185d621cbcdf4ab75235103d7065c62154f88e44af61f1945a426110b9656c7
+runner_sha256: b6ad1bee429187fe4f70750a1fc63ec313d8928054535b2f426bd355f070d4b6
+input_fingerprint_sha256: 4ed97770947c86831c55e5ec8d459c0ae8d83fbc3b127273097a011760d3485a
 timeout_sec: 45
 exit_code: 0
-elapsed_sec: 0.42
+elapsed_sec: 0.59
 status: ok
 ----- stdout -----
 {

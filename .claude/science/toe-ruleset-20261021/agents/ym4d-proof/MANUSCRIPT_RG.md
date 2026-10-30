@@ -22,16 +22,66 @@ They are four specified obligations of the same return problem, not four
 independent obstructions. In particular, the general-N problem remains open
 already at N=2.
 
-**Current attempt; counted progress: 0.** Section 4.29 tests enlarged
-repairs under the full posterior. A fixed identity repair creates a surface
-cost even on a pure gauge. A Haar-preserving center surgery then gives a
-gauge-invariant rough-sheet probability bounded below by an explicit
-surface exponential at arbitrary depth. Consequently the proposed payment
-by a fixed exponential in the filled interior volume is false. This is a
-counterexample to CS7, a newly tested sufficient estimate, not to U1--U4:
-the induction permits an unfilled representation, and no connected or
-extracted-operator lower bound has been proved. H(j) is unchanged; all four
-obligations remain GAP. No first-step result is counted as closure.
+**Current attempt; counted progress: 0.** Section 4.30 attacks (A) by
+exchanging coordinates between two replicas of the same full posterior.
+RX1 keeps the exact crossing-factor ratio, including all soft normalizers.
+RX2 converts the response into an exact auxiliary connection formula.
+The tested positive connection majorant fails at every finite depth:
+at identity terminal field and prescribed constant coupling u, its
+connection probability between any two nonempty past supports tends to
+one as u tends to infinity. RX3--RX5 prove this using the actual posterior,
+its gauge symmetry and concentration on its zero-energy orbit. The
+auxiliary graph pays for relative gauge orientations although original
+action and all kernel gaps vanish on that orbit. These are PROVEN
+statements about this representation, not a covariance lower bound or
+a refutation of U1--U4. The omitted signed cancellations can matter.
+H(j) is unchanged; the count is four and no target counterexample or
+regenerated induction has been obtained.
+
+**Exact restart statement (all-scale target, not an established state).**
+The actual finite SU(N) path has original density exp(-u_0 W), product
+Decision-4 kernels k_(kappa u_l)=exp(kappa u_l h_M)/Z_(kappa u_l)(M),
+and four fixed original source insertions. Every history is summed with
+its original mass before a posterior derivative. The retained reference
+is T_0=W and T_(l+1)=min_U[T_l(U)+kappa sum_c psi_(M_c(U))(V_c)],
+with psi=m(M)-h_M>=0. The retained leading term is exactly u_l T_l;
+it is not the exact density or a fresh Wilson law.
+The requested clauses are uniform in compatible finite volume, depth,
+the complete history family and u_j>=u_* in the declared coupling range.
+At j, H0 requires the exact density/history identity and all sixteen
+source coefficients, with hard-selector boundaries retained unless
+selectors are summed first. H1 requires fixed real charts and transports,
+extraction of the identity value and the full six-by-six curvature
+Hessian tensor (with colour scalar fixed by invariant bilinearity) from
+the non-tree correction, and coefficients/chart prefactors in the fixed
+complete-support Taylor ball V_* of radius M_v; extensive scalars have
+their own exact recursion. H2 requires that all spent plus newly assigned
+fractions at each original plaquette total at most one, every used gap
+fraction totals strictly below one, and overlapping charges are integrated
+jointly under the actual reference. H3 requires an exact polymer
+representation with complete original, normalizer, exterior, selector and
+source readers, disjoint-component factorization and a real logarithm,
+
+    x_j=sup_v sum_(h,X containing v) exp(mu |X|)
+                         sup_(D_j) T_(6;[4])(K_(j,h,X)) <= M.
+
+Here T_(6;[4]) contains ordered field words through degree six and every
+subset of the four original source labels, with frozen weights. H4 is a
+certificate at j of support rate mu+2, chart margins, hard-cut/source
+calculus and the actually unused charges. H5 must produce those same
+H0--H4 at j+1, every coefficient/scalar recursion, and
+
+    x_(j+1)<=(lambda+B s_j+eta_j)x_j+C x_j^2+B e_j,
+    theta=lambda+B s_*+eta_*+CM<1,  B e_*<=(1-theta)M.
+
+The no-fresh-gap operator belongs to eta_j. Its payment cannot be a fresh
+gap probability. Domains, V_* and jointly feasible constants are still
+unconstructed. The four GAP obligations are U1: actual normalized local
+backward/reference/fluctuation expansion with all mixed jets; U2:
+coherent rough/hole return and regenerated single-use reserves; U3:
+full tensor transport and actual operator/coefficient/scalar bounds;
+U4: the complete base and stable domains, cuts, sources and support rates.
+The current attempt closes or refutes none of these four obligations.
 
 **Hardest remaining inequality.** For the actual backward measure
 
@@ -60,11 +110,12 @@ It has no all-history or (6;[4]) extension, and CC14 records the failed
 attempt to turn its distance decay into the required support-size norm.
 The object to control is pi_j^V itself, with all histories summed,
 followed by H0--H4 at j+1. PC1 retains both the conditional covariance
-and the covariance of conditional means. The new surgery comparisons
-retain the actual posterior and price absolute original action, but
-control event masses rather than (A). Their lower bound rejects filling
-the interior and paying for it by a rough-event probability. It does not
-reject a connected estimate retaining the actual surface readers.
+and the covariance of conditional means. CS4--CS7 control event masses,
+not (A). RX1/RX2 now act directly on this covariance without conditioning
+away either term. RX5 rejects their proposed uniform positive connection
+majorant; it leaves the signed, gauge-aligned response and its regeneration
+unbounded. No derivative or tensor-extraction cancellation is estimated
+by that connection probability.
 An index path, a stationary branch, or a Gaussian determinant is not (A).
 
 **Order of constants.** Fix N, odd L>=3, kappa>0, the exact contour convention,
@@ -118,6 +169,12 @@ filling rate a>0 and a positive prescribed coupling u before increasing
 j. Then R=L^j and the compatible original torus side is 6L^(j+1).
 Use the displayed uniform terminal-cone bound at that specified depth.
 This order tests CS7; it supplies no new feasible H5 tuple or RG flow.
+For RX1--RX5 fix N=2, L=3, kappa>0, a finite compatible torus and
+any finite depth j>=1 first, and set all prescribed u_l=u and V=I.
+Then let u tend to infinity. Only after proving the finite-system limit
+is it used to test constants claimed uniform in volume and u. This order
+does not assert a volume-uniform rate of convergence or an admitted
+H(j) coupling trajectory. It does not select any missing H5 constant.
 
 **Routes tested and present decisions.**
 
@@ -303,32 +360,52 @@ This order tests CS7; it supplies no new feasible H5 tuple or RG flow.
   CS7 is false, including its normalizer. This is not a refutation of
   H3 or U2: neither requires assigning this event to a filled interior,
   and its probability has not been identified with a connected activity.
+* **Failed new replica-connection route:** RX1 is an exact thin-region
+  exchange formula for (A); RX2 is an exact positive auxiliary expansion
+  of the same two-replica posterior. An unoccupied factor retains its
+  dependence on all readers, so this is not a disjoint-component polymer
+  factorization. The proposed decay bound on its connection event is
+  false: independent gauge orientations make all original plaquette
+  edges and all internal transition edges occupied with probability
+  tending to one as u grows, at every fixed finite depth. All past
+  variables then belong to one component. This excitation of the
+  auxiliary graph costs neither original action nor matched kernel gaps
+  on the limiting orbit. Positive absolute bounds discard the relevant
+  cancellations and therefore do not regenerate H3/H4. Gauge fixing or
+  signed cancellation may change the representation; U1--U4 allow both.
 
-**Hostile check of the newest step.** The lower bound uses two successive
-inequalities for the same full posterior, not independent probabilities
-under separately pinned laws. The center transformation preserves Haar;
-its action difference is supported on the actual plaquette boundary.
-Both conditional terminal denominators stay in the comparison. The
-uniform cone bound is used after j+1 steps for R=L^j; using that bound
-at the first step of an arbitrarily large sheet would be wrong.
-The event is gauge invariant and has positive measure, so CS7's failure
-is not the pure-gauge artifact from CS2. Nevertheless a mass lower bound
-does not bound a covariance, and extraction or a surface representation
-may remove the proposed filling cost. The prescribed constant-coupling
-chains are not certified H(j) trajectories. These checks reject CS7 but
-not U1--U4; no COUNTEREXAMPLE verdict for the target is justified.
+**Hostile check of the newest step.** RX3 uses the actual full posterior
+and its exact gauge symmetry; a point on the zero-action orbit alone
+would not establish a typical occupation event. Polynomial bounds on
+all soft prefactors prove concentration, and invariance determines the
+limiting orbit measure. RX4 treats u-dependent occupation probabilities
+by a positive exchange-energy threshold before taking its threshold to
+zero; weak convergence by itself would not suffice. Internal output-only
+exchanges really do leave their input normalizers unchanged. Last-step
+input exchanges do not; RX6 and the matrix check keep that term. The
+connectivity proof does not need the last-step factor to be occupied,
+but keeps that factor in the posterior throughout. No histogram or
+quadrature of the finite-coupling full posterior was performed. Finally,
+the score is zero exactly on the gauge orbit, while its weighted
+fluctuations require a separate estimate. Connection saturation therefore
+does not imply a lower bound on (A) or on its extracted remainder.
+These checks reject this positive majorant, not U1--U4. Counted progress
+is zero. No independently reviewed or retained claim has been added.
 
-**Next decision.** Keep the surface and its boundary readers and attack
-(A) directly by exchanging a thin region between two replicas of the
-same full posterior. The exchange must retain its boundary Wilson terms,
-all affected soft normalizers, and the covariance of conditional means.
-Test whether its connected support cost and original fractions regenerate
-from j to j+1. Neither deleting the old readers nor paying a filled volume
-by the surface event's probability is justified. Do not count another
-mass comparison as a closed U1--U4 obligation.
+**Single next action.** Construct a gauge-aligned two-replica exchange
+after exact block-tree gauge fixing, retaining interblock boundary links
+as readers, and apply RX1 to the actual posterior before taking absolute
+values. The bare tree convention is in section 4.9; extending its chart
+domains to admitted rough histories is not assumed. The concrete test is
+whether its signed boundary response, with the exact Jacobian, every
+affected normalizer, all old readers and already spent fractions retained, has a supported
+bound that can be applied again after one more actual transition. A
+gauge quotient with unpriced long tree readers or an assumed successor
+covariance is not that bound. Keep U1--U4 at four until an entire stated
+obligation is proved or an admitted-state counterexample forces its edit.
 
 Working source: branch claude/push-A. This continuation starts from the
-driver checkpoint `e24dea7b1124e644dc17fe323027016f95e22bce`; the initial
+driver checkpoint `cf69f71f5d0da79124abd9675262bb68a293e80b`; the initial
 manuscript started at `a98f6eb20c89c5792b9db362b860fd1f43670665`.
 The locally recorded main ref is
 `bcab5d2ee4a908fbb4e6025635fb878e6c157ebe`; remote freshness is not certified.
@@ -336,6 +413,10 @@ No mainline or audit status is claimed. The scientific premises are the
 supplied finite Wilson model and Decision-4 kernels. No physical axiom is
 added. Only this manuscript and checks/push_a_* are outputs; no other
 science note or prompt is edited and this agent makes no commit.
+Latest completed check: checks/push_a_replica_exchange.py, with its full
+log in checks/push_a_replica_exchange.log; the command exited zero and
+the entire log and changed argument were inspected. Its scope and errors
+are recorded in section 4.31. No numerical job or review is pending.
 
 ## 2. Definitions
 
@@ -3704,7 +3785,282 @@ cannot be promoted to a covariance or extracted-operator lower bound.
 These checks support rejection of CS7 and reject a COUNTEREXAMPLE verdict
 for the requested return theorem. Counted progress remains zero.
 
-### 4.30 Verification, attribution, and claim boundary
+### 4.30 Two replicas of the actual posterior: exact response and failed positive return
+
+This route is new to this manuscript. It acts directly on (A), with every
+history summed, at arbitrary finite depth. RX1/RX2 are exact at finite
+coupling. RX3--RX5 disprove a proposed sufficient connection estimate under
+the actual posterior. They do not disprove the connected response itself
+or any U1--U4 obligation. Counted progress is zero.
+
+**RX1 — PROVEN (a thin-region exchange identity for (A)).** At zero
+sources write the actual, unnormalized past density at fixed V as
+
+    p(omega)=exp[-u_0 W(U_0)] product_(l=0,...,j) K_l,
+    pi(d omega)=p(omega)d omega/Z(V).
+
+The past coordinate set I contains every link at levels 0 through j.
+Factor p into its individual plaquette weights and normalized link
+kernels w_a, with their full reader sets A_a subset I. A fixed terminal
+output is a parameter of its last kernel, not an integrated coordinate.
+Let omega,omega' be independent samples of this same pi. For a fixed
+R subset I let tau_R exchange their coordinates in R; it preserves the
+product Haar measure and is an involution. Define
+
+    Delta_R=log[p(omega)p(omega') /
+                         (p(tau_R omega)p(tau_R omega'))].       (RX1)
+
+Only factors whose readers cross R contribute to Delta_R. A kernel's
+normalizer belongs to that factor, including all its input readers.
+Neither p nor its normalization is replaced by a separately pinned law.
+
+For bounded real F supported inside R and s=s_c=D_c log k_j supported
+outside R, put G=(F(omega)-F(omega'))(s(omega)-s(omega')). Then
+
+    Cov_pi(F,s)=1/2 E_(pi tensor pi) G
+               =1/2 E_(pi tensor pi)[G tanh(Delta_R/2)].         (RX2)
+
+To prove the second identity, G changes sign under tau_R and Delta_R
+changes sign, whereas G tanh(Delta_R/2) is invariant. On an exchange
+orbit with pair densities q and q', tanh(Delta_R/2)=(q-q')/(q+q').
+Thus the two sides have equal orbit integrals; integration proves RX2.
+All densities are strictly positive at finite coupling. No conditional
+mean term from PC1 is removed. This identity alone gives neither decay
+nor an estimate of its mixed derivatives.
+
+**RX2 — PROVEN (an exact positive auxiliary connection formula).** This
+construction is defined for the actual finite factorization above, not
+for a new Gibbs law. For each factor let
+
+    g_a(omega,omega')=w_a(omega)w_a(omega'),
+    m_a(omega,omega')=min_(R subset A_a) g_a(tau_R(omega,omega')),
+    r_a=g_a-m_a>=0.
+
+The minimum is over finitely many orientations of the same two values
+at each reader; m_a is strictly positive and invariant under every such
+orientation. Expand the exact product as
+
+    product_a g_a = sum_B product_(a in B) r_a
+                                product_(a not in B) m_a.       (RX3)
+
+Together with product Haar measure and normalization Z(V)^2, this
+defines a probability on (omega,omega',B) with marginal pi tensor pi.
+Given the two replicas, factor occupations are independent with
+
+    P(a in B | omega,omega')=1-m_a/g_a.                         (RX4)
+
+An occupied factor joins all coordinates of A_a into a hyperedge.
+If no occupied component meets both the support of F and the support
+of s, exchange the union of components meeting F. Every occupied g_a
+is either wholly swapped or untouched, and every m_a is orientation
+invariant. The joint density and B therefore stay fixed while G changes
+sign. With C(F,s) the event that some component meets both supports,
+
+    Cov_pi(F,s)=1/2 E[G 1_C],
+    |Cov_pi(F,s)|<=1/2 osc(F) osc(s) P(C).                      (RX5)
+
+These are identities and an inequality under the single augmented
+posterior. An unoccupied m_a still reads the values at all its readers:
+RX3 does not give independent components of the field measure or the
+polymer factorization demanded by H3. It gives only an orientation
+cancellation. Also, the minimum need not be differentiable where its
+minimizing orientation changes; no (6;[4]) bound is inferred from RX3.
+
+**RX3 — PROVEN (the actual finite-depth zero-energy limiting law).**
+Fix N=2, L=3, kappa>0, any finite depth j>=1 and any compatible finite
+torus. Set all prescribed couplings u_l=u and the terminal field V=I.
+These are actual model chains; their H(j) certificates are not assumed.
+For a quaternion mean let r=|M| and H_ker(s)=exp(s)/Z(s). The exact density is
+
+    p_u(omega)=exp[-u E(omega)] product_(l,c) H_ker(kappa u r_(l,c)),
+    E=W(U_0)+kappa sum_(l,c) psi_(M_c(U_l))(U_(l+1,c)).        (RX6)
+
+Section 4.14 and Z(s)<=exp(s) give, uniformly for 0<=r<=1,
+
+    1<=H_ker(kappa u r)<=c_0^(-1)(1+kappa u)^(3/2).
+
+There are finitely many kernels in this fixed system, so the product
+is bounded by a polynomial P(u). E is continuous and nonnegative,
+and E(I)=0. For any epsilon>0 the Haar measure b_epsilon of
+{E<epsilon/2} is positive. The actual normalized posterior consequently
+satisfies
+
+    pi_u(E>=epsilon)<=P(u) b_epsilon^(-1) exp(-u epsilon/2)
+                            -->0.                           (RX7)
+
+All normalizers are included in P. This estimate is used at fixed
+volume and depth, not as a volume-uniform concentration rate.
+
+The set E=0 is precisely one gauge orbit with terminal roots fixed.
+Indeed W=0 makes every original plaquette identity. The paired paths
+are homotopic relative to their endpoints, so their transporters agree
+and each mean is unitary. Zero gap then forces the next field to equal
+that transporter. This propagates flatness through every level. Since
+the terminal field is I, every original periodic holonomy is I as well.
+A flat field with trivial periodic holonomies is pure gauge: transport
+from a fixed root defines its site gauges independently of the chosen
+path. Matching at every level forces these site gauges to have the same
+value at all embedded terminal vertices. Fix that common value to I.
+
+More explicitly, let Q be the original sites embedded from the terminal
+lattice, and let G be the product of SU(2) over original sites outside Q,
+with g(x)=I on Q. The orbit consists of
+
+    U_l(x,mu)=g(L^l x)g(L^l(x+e_mu))^*.                       (RX8)
+
+Conversely RX8 has E=0 and terminal I. Acting by these site gauges on
+all levels together leaves every Wilson term, every soft kernel and
+every Haar factor invariant; the last outputs are unchanged. Thus the
+actual pi_u is G-invariant for every u, not just at E=0.
+
+For completeness the limiting measure follows without selecting a
+gauge chart. Average any continuous test function over G. Its average
+is continuous and has one constant value on E=0, equal to its Haar
+orbit average. Compactness and RX7 then force its pi_u integral to
+converge to that constant. Invariance says the original test function
+has the same integral as its group average. Therefore pi_u converges
+weakly to the Haar pushforward of RX8; the two-replica law converges to
+two independent such orbits. The free site gauges in each orbit are
+independent Haar variables. This is a statement about the actual full
+posterior at every fixed finite depth, not a replacement prior.
+
+**RX4 — PROVEN (occupation saturation at every finite depth).** Consider
+an original plaquette factor and any one of its links e. At a pair of
+fields on RX8 its two plaquette actions are zero. Exchanging e alone
+increases their sum by
+
+    c_p=2[1-Re tr(U'_e U_e^*)/2]>0 almost surely.              (RX9)
+
+To see the formula, cyclically start the plaquette at e; each remaining
+transporter is the inverse of that copy's e. The two changed holonomies
+are U'_e U_e^* and its inverse. Adjacent original sites cannot both lie
+in Q because their separation in Q is at least L^(j+1)>=3. Hence at
+least one endpoint is a free site, and U'_e U_e^* has Haar distribution.
+It equals I with probability zero. The same exchange-energy difference
+defines a continuous c_p away from the orbit as well. RX4 then gives
+
+    P(p not in B | omega,omega')=m_p/g_p<=exp(-u c_p).
+
+For an internal kernel at level l<j, exchange only its output link
+v_1,v_2 between the replicas. Its two input normalizers remain exactly
+unchanged. In quaternion notation the ratio of changed to original
+pair factors is
+
+    exp(-kappa u c_a),
+    c_a=(m_1-m_2) dot (v_1-v_2).                            (RX10)
+
+At RX8 one has m_i=v_i, so c_a=|v_1-v_2|^2>0 almost surely.
+An output link at level l+1<=j again has at least one endpoint outside
+Q when embedded in the original lattice. Its two values are independent
+Haar variables. Since m_a is the minimum over all exchanges,
+m_a/g_a<=exp(-kappa u c_a).
+
+Weak convergence alone is not a justification for these u-dependent
+probabilities. For either type of factor fix delta>0 first. Its empty
+probability is at most
+
+    pi_u tensor pi_u(c_a<=delta)+exp(-b u delta),           (RX11)
+
+where b=1 for a plaquette and b=kappa for an internal kernel. Weak
+convergence bounds the limsup of the first term by its limiting-orbit
+probability on the closed set {c_a<=delta}. Let delta decrease to zero.
+RX9/RX10 make that probability zero. Thus every original plaquette
+and every internal kernel is occupied with probability tending to one.
+There are finitely many such factors; a union bound proves that all of
+them are occupied with probability tending to one. No independence
+after averaging the replicas is assumed.
+
+The hypergraph of all original plaquettes connects all original links:
+plaquettes connect adjacent parallel links and different directions,
+and the periodic lattice is connected. Each internal kernel connects
+its output link to its nonempty input readers. Induction in l therefore
+connects every past coordinate through U_j. It follows that for any
+two nonempty past supports, including the readers of F_X and s_c,
+
+    lim_(u-->infinity) P(C(F_X,s_c))=1.                     (RX12)
+
+The last kernels remain in the actual posterior and in RX3 throughout.
+Their occupation is unnecessary for this connectivity conclusion;
+they are not deleted from the measure.
+
+**RX5 — PROVEN failure of the proposed positive majorant; GAP return.**
+The proposed use of RX5 was a uniform local estimate
+
+    P(C(F_X,s_c))<=C exp[-a dist(X,readers(s_c))],            (RX13, rejected)
+
+with finite C and a>0 independent of u and volume. Choose any fixed
+finite depth j>=1 and a compatible torus with the displayed distance
+large enough that the right side is below one. One may take F_X to be
+a plaquette trace at level j and c a distant terminal link, using the
+projected level-j reader distance. Then take u to infinity.
+RX12 contradicts RX13. Thus this route fails already at its spatial
+connection estimate, before the stronger supported (6;[4]) norm.
+
+The same reasoning holds after appending another actual transition:
+there is one more family of internal kernels, and its zero-energy
+gauge orbit again makes the auxiliary graph connect all past fields.
+On that orbit W=0 and every X_(l,c)=kappa u psi_(l,c)=0. Charging the
+auxiliary occupied connections to unused original-action or gap
+fractions cannot suppress them there; in fact RX12 proves they are
+typical in this limit. No regenerated small connection parameter is
+obtained by repeating this representation at j+1.
+
+This is not a counterexample to U1, U2, U3 or U4. RX13 is a newly tested
+sufficient estimate, absent from H(j). H1 permits gauge fixing, and U1
+permits signed cancellations before an absolute majorant is taken.
+The complete signed G in RX5 has not been bounded below. At an exact
+RX8 field the last mean and V are I, so the score is zero. That fact
+also gives no finite-u weighted-score estimate: t_j h_c can grow as
+sqrt(u), and its fluctuations need their own analysis. The constant
+coupling prefixes were not certified as admitted H(j) trajectories.
+Consequently neither a target COUNTEREXAMPLE verdict nor an edit of
+H(j) is justified. The number of unproved statements remains four.
+
+**RX6 — PROVEN algebraic normalizer check; finite contour realization.**
+An input exchange at the last kernel behaves differently from RX10.
+At L=3, for the direction-one coarse link rooted at zero, the 1944
+specified paths have net multiplicity zero on the fine edge (0,1)
+in 1656 cases and one in 288 cases. The exact enumeration in the check
+script gives alpha=4/27; direct matrix products check its use without
+replacing the contours by a straight-path observable. On RX8, swap this
+edge between copies. Because its starting root is fixed, the changed
+means are
+
+    M_+=(1-alpha)I+alpha Q,  M_-=(1-alpha)I+alpha Q^*,
+    Q=U'_e U_e^*,  a=1-alpha+alpha Re tr(Q)/2,
+    r=|M_+|=|M_-|,  r^2=a^2+alpha^2[1-(Re tr(Q)/2)^2].
+
+The pair kernel log ratio, retaining both changed normalizers, is
+
+    2t(a-1)+2[log Z(t)-log Z(tr)].                         (RX14)
+
+It is not 2t(a-1). Since 0<alpha<1/2, a>0 and r-a>0 except at
+the two central Q values, a Haar null set. The polynomial bound on
+H_ker(s) above implies log Z(tr)/t-->r; RX14 divided by t therefore tends
+to -2(r-a)<0. This optional last-kernel check is not needed for RX12.
+It shows explicitly where dropping a soft normalizer would change the
+exchange calculation. On the exact gauge orbit the empty-factor bound
+from RX9, averaged over Q, is
+
+    int exp[-2u(1-Re tr Q/2)] dQ=exp(-2u) Z(2u).
+
+This is a Haar-orbit integral, not a finite-u posterior expectation.
+
+**Hostile check — PROVEN identities and rejected bound; GAP (A).**
+The exchange measure has the actual common denominator Z(V)^2. All
+histories were summed before constructing it. Its disconnected-component
+cancellation is an orientation symmetry, not factorization of the m_a
+readers. Original and internal-kernel edges suffice for connectivity,
+so no unproved assertion about last-kernel occupation enters RX12.
+The finite-system limit, the closed-set threshold in RX11, and the
+subsequent large-distance choice have their orders explicit. Gauge
+degeneracy is precisely the failure of this majorant, not evidence of
+long-range physical covariance. A quotient exchange could remove it,
+but its Jacobian, chart boundaries, normalizer readers, inherited
+supports, mixed jets and one-step reserve recursion remain unproved.
+No U1--U4 obligation has been removed or shown false.
+
+### 4.31 Verification, attribution, and claim boundary
 
 The check script [checks/push_a_kernel_moments.py](checks/push_a_kernel_moments.py)
 performs separate direct Haar quadratures and scaled Bessel evaluations,
@@ -3897,6 +4253,27 @@ simulations of those large tori. No covariance or extracted-operator bound
 is checked numerically. Final peak RSS was 94,896,128 bytes, with BLAS
 threads one and the checked 1 GB ceiling. No independent reviewer or
 reduction of U1--U4 has been added.
+
+The [replica-exchange script](checks/push_a_replica_exchange.py), with its
+[complete log](checks/push_a_replica_exchange.log), checks actual paired
+contours on two independently generated compatible gauge prefixes at
+depths 1,2,4. Exact integer enumeration gives last-kernel edge multiplicity
+counts (1656,288), hence alpha=4/27. Direct SU(2) matrix multiplication
+checks the Wilson single-edge exchange, all seven sampled internal
+output exchanges, and three last-step input exchanges including their
+changed soft normalizers. The maximum individual-contour discrepancy
+is 1.66903e-15; the Wilson exchange discrepancy is 4.44089e-16; the
+mixed-mean discrepancy is 3.44254e-15; the largest kernel log-ratio
+discrepancy is 3.78009e-12. Five direct Haar quadratures of the gauge-orbit
+empty-edge majorant agree with exp(-2u)Z(2u) evaluated by scaled Bessel
+functions to 2.22045e-16 absolute error. The two-point exchange-orbit
+algebra in RX2 is checked separately with discrepancy 1.11022e-16.
+These are configuration, orbit-integral and algebra checks. They are
+not quadratures of the finite-u full posterior, measurements of its
+covariance, or a numerical verification of the weak-limit proof. Peak
+RSS was 93,306,880 bytes, with BLAS threads one and the checked 1 GB
+ceiling. The complete log was read. No independent reviewer or U1--U4
+closure has been added.
 
 The small/large-field organization is credited to Tadeusz Balaban and
 Jonathan Dimock. The relevant repository comparisons are REFMATCH RM1/RM2/

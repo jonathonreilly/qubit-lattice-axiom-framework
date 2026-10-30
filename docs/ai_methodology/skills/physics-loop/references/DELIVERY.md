@@ -117,8 +117,8 @@ Forbidden science-branch output (the audit lane is sole authority over
 these; a framework PR that ships them overwrites ratified audit state at
 merge):
 
-- `docs/audit/data/` (any file, except the single citation-graph manifest
-  carve-out stated below);
+- `docs/audit/data/` (any file, including the citation-graph manifest, which
+  the nightly refresh commits);
 - `docs/audit/AUDIT_LEDGER.md`, `docs/audit/AUDIT_QUEUE.md`,
   `docs/audit/MISSING_DERIVATION_PROMPTS.md`;
 - `docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md` and
@@ -142,36 +142,6 @@ from science_fix_loop import publication_changed_paths, strip_generated_audit_ou
 root = Path.cwd()
 strip_generated_audit_outputs(root, publication_changed_paths(root))
 PY_CLEAN
-```
-
-The one carve-out is `docs/audit/data/citation_graph_manifest.json`, and it is
-conditional, proactive, and commit-time. The trigger is graph TOPOLOGY, not
-markdown links alone: `docs/audit/scripts/build_citation_graph.py` registers
-every non-skipped `docs/**/*.md` file as a graph node BEFORE it extracts any
-edge, so a new note carrying only backticked provenance references is still a
-new node, and `docs/audit/scripts/write_citation_graph_manifest.py` requires
-acknowledgment for every added, removed, or rewired node. When the block's own
-commits add or remove any graph node — including a note with zero markdown
-links — or rewire any dependency edge, a refreshed manifest MUST co-land with
-the block, or the enforced stage-18 guard blocks every subsequent pipeline run
-on `main` until someone else lands the acknowledgment. Regenerate it
-deterministically on the proposed tree *after* the drop above, read the
-stage-18 delta against the tracked manifest before staging, then stage that
-one path: acknowledgment is assertion that every added, removed, or rewired
-node and edge is intended. Never hand-merge or hand-edit it, and stage it only
-when the block's commits actually change graph topology — when they change
-none, the correct staged set contains no manifest at all
-(`docs/ai_methodology/skills/review-loop/SKILL.md` landing rule; conformance
-spec section 8).
-
-```bash
-# Only when the block's commits add/remove a graph node or rewire an edge:
-python3 docs/audit/scripts/run_citation_graph_build.py
-python3 docs/audit/scripts/write_citation_graph_manifest.py
-git add docs/audit/data/citation_graph_manifest.json
-# Second line of defense: the staged set must be exactly the intended source
-# paths plus, at most, the one manifest path.
-git status --porcelain
 ```
 
 Do not weave science results through `README`, `docs/repo/LANE_REGISTRY.yaml`,

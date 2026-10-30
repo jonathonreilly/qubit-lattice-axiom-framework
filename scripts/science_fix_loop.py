@@ -1427,11 +1427,11 @@ def target_settled_on_main(claim_id: str) -> tuple[bool, str]:
 
 
 # Generated authority outputs are distinct from reviewed source-side dispatch
-# manifests and other controlled data in this directory. The citation graph
-# manifest is also deliberately excluded: review-loop permits its topology delta.
+# manifests and other controlled data in this directory.
 GENERATED_AUDIT_DATA_NAMES = frozenset({
     "audit_ledger.json", "ledger_meta.json", "ledger_cache_manifest.json",
-    "citation_graph.json", "runner_classification.json", "audit_queue.json",
+    "citation_graph.json", "citation_graph_manifest.json",
+    "runner_classification.json", "audit_queue.json",
     "audit_dispatch_queue.json", "effective_status_summary.json",
     "load_bearing_summary.json", "cycle_inventory.json", "reaudit_candidates.json",
     "auditor_reliability.json", "lane_certification.json", "dispatch_shadow_state.json",

@@ -8,27 +8,20 @@ staged, unstaged and untracked reviewed content and all declared inputs; a
 checkout of `HEAD` alone does not reproduce an uncommitted proof edit. Verify
 the copied source/input identities against the reviewed candidate, preserve
 the caller's source and index, and keep validation logs outside disposable
-storage. In that copy, use `--include-worktree` for changed-evidence checking;
-`--stage-citation-manifest` may stage the generated manifest only there.
+storage. In that copy, use `--include-worktree` for changed-evidence checking.
 Do not execute the landing commit, replay or push instructions for this mode,
 and do not create an iteration commit under `--no-commit`. Record the tested
-base, source/input identities and worktree delta, including any generated
-topology acknowledgment, without claiming that an uncommitted candidate has
-landed. A later landing must bind its final candidate to the actual validation
+base, source/input identities and worktree delta, without claiming that an
+uncommitted candidate has landed. A later landing must bind its final candidate to the actual validation
 receipt under the placement rules; a matching `HEAD` alone is insufficient.
 
-   On the frozen integrated candidate, first inspect the intended topology
-   changes against the reviewed source. Use the explicit full-run option below
-   to stage only the freshly generated citation-graph manifest immediately after
-   stage 1b; stage 18 checks the index, not the working-copy manifest. This avoids
-   a separate pre-pipeline graph build. The option cannot be combined with
-   `--verdict-only`; ordinary pipeline callers do not stage anything.
-   Run one combined validation pass (or reuse the identical successful receipt
+   On the frozen integrated candidate, run one combined validation pass (or
+   reuse the identical successful receipt
    under the [placement rule](REVIEW_UNITS.md)):
 
    ```bash
    TRAIN_COMBINED_VALIDATION_SCOPE=integrated-candidate
-   if ! { bash docs/audit/scripts/run_pipeline.sh --stage-citation-manifest \
+   if ! { bash docs/audit/scripts/run_pipeline.sh \
           && python3 docs/audit/scripts/audit_lint.py --strict \
           && python3 docs/audit/scripts/check_changed_audit_evidence.py --base origin/main; }; then
      echo "FAILED: combined validation; preserve log and do not land" >&2
@@ -36,13 +29,12 @@ receipt under the placement rules; a matching `HEAD` alone is insufficient.
    fi
    ```
 
-   Restore only identified generated audit outputs under the [Audit-System
-   Compatibility Gate](AUDIT_COMPATIBILITY.md), regenerate the citation-graph manifest when required,
-   inspect its exact acknowledgment, and retain it in the final committed
-   integration sequence before freezing the landing tree. Do not strip this
-   intended acknowledgment with generated audit residue or leave it only staged:
-   the landing replay must reconstruct the validated tree. Then run the final
-   clean-state checks:
+   Read any citation-graph delta warning from stage 18 against the reviewed
+   source; an unintended edge is a finding. Restore only identified generated
+   audit outputs under the [Audit-System Compatibility
+   Gate](AUDIT_COMPATIBILITY.md) before freezing the landing tree: the landing
+   replay must reconstruct the validated tree. Then run the final clean-state
+   checks:
 
    ```bash
    TRAIN_COMBINED_CLEAN_SCOPE=integrated-candidate

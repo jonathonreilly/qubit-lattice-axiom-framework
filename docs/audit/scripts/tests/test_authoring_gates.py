@@ -2,12 +2,16 @@
 and the directory-target link rule (front-door campaign, 2026-07-17)."""
 from __future__ import annotations
 
+import contextlib
+import io
 import sys
 import unittest
 from pathlib import Path
+from unittest import mock
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
+import repo_invariants_check
 from repo_invariants_check import (
     CLASS_F_REQUIRED_PHRASES,
     class_f_violations_from,
@@ -20,6 +24,43 @@ from write_citation_graph_manifest import compute_manifest
 
 def _graph(nodes):
     return {"nodes": {k: {"deps": v} for k, v in nodes.items()}}
+
+
+class TopologyAcknowledgmentGateTest(unittest.TestCase):
+    """A delta warns on ordinary runs and fails only when enforcement is asked for."""
+
+    def _check(self, graph_check, **kwargs):
+        snapshot = {
+            "ledger": {"shard_parse_errors": [], "duplicate_claim_ids": [],
+                       "shard_count": 1, "retained_grade_total": 0},
+            "premises": {"tracked": True},
+            "obligations": {"tracked": True},
+            "docs": {"duplicate_basenames": []},
+            "authority_links": {"violations": []},
+        }
+        output = io.StringIO()
+        with mock.patch.object(repo_invariants_check, "build_snapshot", return_value=snapshot), \
+                mock.patch.object(repo_invariants_check, "_git_tracked_files", return_value=[]), \
+                mock.patch.object(repo_invariants_check, "collect_class_f_violations", return_value=[]), \
+                mock.patch.object(repo_invariants_check, "collect_graph_manifest_check", return_value=graph_check), \
+                mock.patch.object(repo_invariants_check, "_format_graph_delta", return_value="delta"), \
+                contextlib.redirect_stdout(output):
+            return repo_invariants_check.run_check(True, **kwargs), output.getvalue()
+
+    def test_delta_warns_by_default(self):
+        rc, output = self._check({"missing_from_index": False, "delta": {"added": ["n"]}})
+        self.assertEqual(rc, 0)
+        self.assertIn("WARN: citation-graph delta not acknowledged", output)
+
+    def test_delta_fails_when_enforced(self):
+        rc, output = self._check({"missing_from_index": False, "delta": {"added": ["n"]}},
+                                 enforce_topology_ack=True)
+        self.assertEqual(rc, 1)
+        self.assertIn("FAIL: citation-graph delta not acknowledged", output)
+
+    def test_missing_manifest_still_fails(self):
+        rc, _ = self._check({"missing_from_index": True, "delta": None})
+        self.assertEqual(rc, 1)
 
 
 class ComputeManifestTest(unittest.TestCase):

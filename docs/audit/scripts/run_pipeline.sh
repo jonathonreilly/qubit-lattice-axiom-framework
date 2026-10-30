@@ -228,8 +228,16 @@ echo "==> 17/18 render_front_door_status.py"
 python3 docs/audit/scripts/render_front_door_status.py
 
 echo "==> 18/18 repo_invariants_check.py (authority-link guard)"
-python3 docs/audit/scripts/repo_invariants_check.py \
-  --check --enforce-links --pipeline-proposed-ledger
+# A topology delta is a warning on ordinary runs; the nightly refresh commits
+# the manifest. Forensic runs certify a pinned commit, so there it must already
+# be acknowledged.
+if [[ "${AUDIT_FORENSIC_MODE:-}" == "1" ]]; then
+  python3 docs/audit/scripts/repo_invariants_check.py \
+    --check --enforce-links --pipeline-proposed-ledger --enforce-topology-ack
+else
+  python3 docs/audit/scripts/repo_invariants_check.py \
+    --check --enforce-links --pipeline-proposed-ledger
+fi
 
 echo "==> 18a/18 generate_skill_axiom_baselines.py --check (skill axiom-baseline guard)"
 # Check-only on purpose: the pipeline must never rewrite skill docs. On drift

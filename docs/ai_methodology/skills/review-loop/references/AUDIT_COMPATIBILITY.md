@@ -174,10 +174,7 @@ title/body names the row or quotes its audit repair target):
    a sibling-runner pin sweep was done before every note edit (grep
    `scripts/` for runners pinning the edited sentences); no authored grade
    language anywhere; no `docs/audit/data/` content beyond
-   dispatcher-sidecar targeting metadata and the citation-graph manifest
-   acknowledgment (`docs/audit/data/citation_graph_manifest.json`) when the
-   landed commits change graph dependencies (see the [landing loop's
-   proactive rule](LANDING.md)).
+   dispatcher-sidecar targeting metadata.
 
 7. **Pipeline-output-stripped PASS gate (hard).** After running the pipeline
    for validation, the framework PR must NOT land any pipeline-regenerated
@@ -188,7 +185,7 @@ title/body names the row or quotes its audit repair target):
 
 ```bash
 # Inventory data changes: distinguish forbidden generated authority from
-# reviewed controlled sidecars and the intended topology acknowledgment.
+# reviewed controlled sidecars.
 git status --porcelain docs/audit/AUDIT_DISPATCH_QUEUE.md \
                        docs/audit/AUDIT_QUEUE.md \
                        docs/audit/MISSING_DERIVATION_PROMPTS.md \
@@ -199,12 +196,11 @@ git status --porcelain docs/audit/AUDIT_DISPATCH_QUEUE.md \
 
 Inspect every listed change. Generated verdict/ledger/queue/status changes
 block PASS and must be stripped. Reviewed controlled data and dispatcher
-sidecars are allowed when they assert no verdict; the topology manifest is
-allowed when the source changes graph topology. Do not erase the entire data
+sidecars are allowed when they assert no verdict. Do not erase the entire data
 directory or untracked files indiscriminately. The shared helper below
-restores only identified generated residue to the branch's own `HEAD`, fails
-on errors, and preserves source-side sidecars. Inspect the remaining diff and
-regenerate the manifest from the final intended topology before staging.
+restores only identified generated residue, including the topology manifest,
+to the branch's own `HEAD`, fails on errors, and preserves source-side
+sidecars. Inspect the remaining diff before staging.
 
 ```bash
 python3 - <<'PY_CLEAN'
@@ -215,10 +211,6 @@ from science_fix_loop import publication_changed_paths, strip_generated_audit_ou
 root = Path.cwd()
 strip_generated_audit_outputs(root, publication_changed_paths(root))
 PY_CLEAN
-# Only when the landed commits add/remove a graph node or rewire an edge:
-python3 docs/audit/scripts/run_citation_graph_build.py
-python3 docs/audit/scripts/write_citation_graph_manifest.py
-git add docs/audit/data/citation_graph_manifest.json
 git status --porcelain   # second line of defense: exactly the intended paths
 ```
 

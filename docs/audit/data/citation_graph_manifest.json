@@ -1,5 +1,5 @@
 {
- "edge_count": 16088,
+ "edge_count": 16087,
  "node_count": 7439,
  "nodes": {
   "3d_correction_master_note": {
@@ -1795,8 +1795,8 @@
    "out_degree": 1
   },
   "ai_methodology.skills.review-loop.references.audit_compatibility": {
-   "deps_hash": "15add152a3c6",
-   "out_degree": 3
+   "deps_hash": "6988f17e5e40",
+   "out_degree": 2
   },
   "ai_methodology.skills.review-loop.references.combined_validation": {
    "deps_hash": "e81d698d2221",

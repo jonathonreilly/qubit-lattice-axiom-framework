@@ -2,6 +2,12 @@ Reviewer model: claude-opus-5-5
 
 # ASSEMBLY55 — the full theorem's proof skeleton, every interface checked (session 26, worker file)
 
+**Current reconstruction interface.** N9, ML2/ML9, item 18 and their summary references now distinguish the reviewed
+ABSTRACT REC_LIB + REC_CONT producer from the still-missing Yang–Mills hypotheses. This bounded consumer correction is
+[new authorship pending fresh independent review](checks/rec_consumer_alignment_note.md); other historical assembly
+verdicts are not re-certified here. The owner's expanded target is full four-dimensional Yang–Mills existence AND a
+physical continuum mass gap (MASS_GAP_TARGET.md). Both remain OPEN; the earlier T_OS milestone does not replace that goal.
+
 UTC start: 2026-10-29T03:48:11Z
 Author role: Opus 5.5 worker (brief: scratchpad/queue/assembly.md; shared rules: scratchpad/REVIEW_BRIEF_55.md).
 Writes: this file and checks/as55_* only. No git.
@@ -240,11 +246,29 @@ W0 needs either the exact lattice step-scaling (G-pert: mismatch O(G⁴) "IF the
 perturbative two-loop asymptotics nonperturbatively") or locality of the marginal flow (G-np). CODEX_REVIEW_SRCAN item 3/6:
 propagation of a marginal shift has a proved UPPER bound only; the lower bound needs sup_j q_j < 1.
 
-**N9. (REC) the reconstruction theorem actually invoked — MISSING (literature).** Consumed by N1F/N1S ("H_reg gives OS0"; Codex P4
-§4.2: "The required seminorm order and factorial exponent must remain fixed as n and R vary"). Producer: none; SRCCD55 §2.2 cites OS
-I/II from memory ("[m: Osterwalder–Schrader 1973; P1 §7 checked only OS II's introduction]"); CODEX_REVIEW_SRCCD §7: "NOT-VERIFIED
-[m], OS reconstruction matching … access returned a security/service page". Whether SRC-κ's growth C_0^n(n!)^p meets OS II's growth
-condition is therefore unverified. **OPEN (verification against the primary text; owner may need to place OS II locally).**
+**N9. (REC) — ABSTRACT producer available; actual YM application OPEN.** The former literature-only MISSING label is
+superseded by [REC_LIB](REC_LIB.md) §§6,15,18 and [REC_CONT](REC_CONT.md), reviewed in [REVIEW2_REC](REVIEW2_REC.md).
+The precise consumer is now OSLEAF55 REC (e). It requires ONE hierarchy on the flat test spaces ^0𝒮_n with S_0=1, reality,
+permutation symmetry, full E(4) covariance, ordered-half mixed-word reflection positivity, and
+  |S_n(F)|≤α(n!)^β‖F‖_{sn,1}    for ALL n≥1,
+with one fixed (s,α,β). For a scalar, ‖·‖_{k,1}=|·|_k; for finitely many real Cartesian tensor species it is the sum over
+component words, with the explicit J=D_E(θ), C=⊕diag(i,1,1,1)^{⊗rank} dictionary of OSLEAF55 §4 / REC_LIB §15.
+General unspecified O(4) representations are not covered. This producer yields tempered local Wightman fields, a cyclic
+invariant vacuum and forward-cone spectrum on the SAME OS Hilbert space, with its semigroup generator identified. It does
+not prove that the actual YM hierarchy meets the input contract, identify a scalar sector with the full physical theory,
+or give a unique vacuum, a nonzero excited sector or a physical mass gap.
+
+**Dependency direction and matching.** Actual all-order RG/source estimates → cutoff/volume-uniform H_reg-sep → common
+limit satisfying E0′; add the actual E1/E2/E3/(Re)/S_0 contract → REC. Reconstruction CONSUMES growth; it does not produce
+H_reg from SRC-κ. REC_LIB §16 / OSLEAF55 GROW prove the conditional pointwise match: with Z=1, q_X=4 and uniform
+UNCONDITIONAL (SEP-pt), s=11 and β=b_0+1. To set b_0=p+2 requires the all-order outer joint-cumulant bound (16.4), including
+singleton blocks; the higher conditional SRC-κ bounds alone are insufficient. For q_X≥0 use Q=ceil(q_X) and
+s=max(11,Q+6). The alternative smeared route needs (X1) with its linear-growth and shrinking-separation quantifiers before
+EXT applies. Actual singleton/outer-product moment bounds, these uniform inputs, all-order covariance, the common field
+hierarchy/sequence and its physical identification remain OPEN. Sphere use also retains the radius-uniform flat-limit
+hypotheses; the flat abstract theorem supplies none of them. E0 alone gives the OS semigroup and single-cut analyticity,
+not the full multi-time continuation: the reviewed continuation uses E0′. The older warning about products of unbounded
+continued insertions remains valid.
 
 # §5. Level 2: from the RG to the contract inputs
 
@@ -530,19 +554,19 @@ BBcc as one input among N6 and the large-field cluster expansion. **OPEN (part o
 (banked)" — the torus statement is PROOF L9a (IMPORTED-AND-REVERIFIED, pre-S24), not in [S26-BANKED]; and on the sphere route the
 banked RP is not the consumed one (F3). Wording only.
 
-# §8. Missing leaves (inputs the top needs that NO file on disk produces, even as a draft)
+# §8. Remaining application inputs (the abstract REC producer and conditional EXT route are distinguished below)
 
 | id | Leaf (exact statement needed) | Needed by | Nearest text on disk |
 |---|---|---|---|
 | ML1 | **(ALG)** one local algebra 𝒜 carrying: a determining family for OS0 (^0𝒮 Schwinger distributions of e_a), the E(4) action, a positive-half generating set for RP, and the non-freeness witness (or a theorem transferring non-freeness from 𝔈 to the e-field OS theory) | N1F, N1S, N5 | PANEL_P1 §1 demands it; HINT55 §1.2 defines 𝔈; SRCCD55 §3.2 picks {e_a} |
-| ML2 | **(REC)** the reconstruction theorem actually invoked, checked against the primary text, with its growth condition matched to SRC-κ's C_0^n(n!)^p | N1F/N1S "gives OS0" | SRCCD55 §2.2 [m]; CODEX_REVIEW_SRCCD §7 "NOT-VERIFIED [m]" |
+| ML2 | **(REC application)** the actual common YM hierarchy meeting N9's full E0′/E1/E2/E3/(Re)/S_0 contract, with the scalar or finite Cartesian tensor dictionary; actual growth and full-field identification remain OPEN | N1F/N1S and full reconstruction | ABSTRACT producer: REC_LIB + REC_CONT, reviewed by REVIEW2_REC; conditional growth: REC_LIB §16 / OSLEAF55 GROW; actual source bounds not supplied |
 | ML3 | **(DIAG)** from per-R subsequential continuum limits and ω_R → ω_∞ on one countable family, a single lattice sequence (a_j(R_j), R_j) converging to ω_∞ | N1S + T_OS "arises as such a limit" | CODEX_REVIEW_P4 §4.3 ("safe order"); none |
 | ML4 | **(FLOW-pos)** the coupling flow and its locality for slowly varying bare profiles, with two-sided propagation; W0: sup_x|c_4(a; x)| → 0 | sphere W0; SRC position-dependent sources | SPHERE55 §1.4, §3.4 T4; SRCAN55 SA-F (upper bound only, CODEX_REVIEW_SRCAN item 6) |
 | ML5 | **(GERM)** at each fixed k, T (and formally in infinite volume) E^br_k, E^cb_k and E^min_k (φ-tower) are values of nondegenerate critical families through the trivial chain near 1, hence share all trivial-point jets | flow core (C5a), F23 | TOWER-VAR (d), NORMS Lemma N1-2 (D³ only) |
 | ML6 | **(MIN-cb)** for real small-field data, every global minimiser of the chain energy lies modulo composite gauge in BFT-E's fixed slice ball, uniformly in k, T (and locally on Λ_k(𝔥)) | FLOW (SF-bg)/(SF-g), HIST (I_k^E)″, PLD 𝔟(V) | named in parts: HIST (a5-U), PROOF (MIN_1), both OPEN |
 | ML7 | **n-point H_Euc inputs**: SRC-κ (κ-2) for all n; CD/SRC-O/SRC-W′ (flat) and W1/W3/N5 (sphere) for n-fold centred products | N4 (all routes) | none (every producer is "for the tested pair") |
 | ML8 | **(U-sep)** radius-uniform separated-point ^0𝒮 bounds for the e-field on S^4_R near S, and the CODEX_REVIEW_P4 §4.1 contraction lemma re-proved in ^0𝒮 form | N1S | CODEX_REVIEW_P4 §4.1-4.2 (unit-ball moments only) |
-| ML9 | **(EXT)** a uniform test-function extension estimate exchanging a → 0 with the Whitney decomposition of a fixed flat test (CODEX_REVIEW_SRCAN item 10's abstract counterexample shows fixed-separated control is not enough) | N2 | CODEX_REVIEW_SRCAN item 10 |
+| ML9 | **(EXT application)** actual uniform per-scale (X1), including linear growth in n and power-law separation dependence down to c_*a, or unconditional (SEP-pt) with the stated crude bound; fixed-separated control alone is insufficient | N2, N9 | Conditional extension/pointwise implications: OSLEAF55 EXT/GROW; REC_LIB §16 checks the pointwise growth match. Actual YM inputs remain OPEN; this correction does not re-certify the full EXT proof |
 | ML10 | **(LOC-T)** bulk locality transfer: torus-proved conditional RG estimates hold in the bulk of K_a with constants independent of R | N13, F13 | SPHERE55 §5.4 "Why local (ARGUED)" |
 | ML11 | **(BOX)** BFT-0..5 on non-wrapping boxes / local small-field regions with frozen exterior | REVIEW_S22, HIST, RLARGE, SPHERE55 seam | GV55 §3.3 item 3 "not addressed"; OFFGLOB55 T2 (in flight) |
 | ML12 | **(TRAJ)** one written trajectory: F-tune's g_0(a; g_ref) at ℓ_ref = 1 for every torus input, with u_K − R > 0 (g_ref² < 1/R) stated, the soft-kernel level couplings fixed by FI-1, and the sphere profile rule declared to be (G-np) | N8 | FLOW Theorem F-tune; SRCCD55 §3.1; HINT2_55 R2.1; SPHERE55 §1.4 |
@@ -586,7 +610,11 @@ exist before what consumes it). Status as on disk ≈04:15Z.
 16. **LF product moments** [all]: all-order uniform moments of products of conditional cumulants (CODEX_REVIEW_SRCCD §7's counterexample
     shows the stated Peierls hypothesis is insufficient; SA-MOM's envelope moments, CODEX_REVIEW_SRCAN item 12).
 17. **SRC-M** [all]: the eight matching constants O(g_bare²) and O(a²𝔏) remainders (CODEX_REVIEW_SRCCD item 6: SRC-OW NOT-VERIFIED).
-18. **(EXT)** and **(REC)** [all] (ML9, ML2) → H_reg in ^0𝒮 form (F2a).
+18. **Actual H_reg-sep and the REC application** [all] (ML9, ML2). Prove uniform (X1) and its EXT hypotheses, or
+    unconditional all-order (SEP-pt) and the crude bound, on ONE common field hierarchy/sequence. The pointwise order is
+    s=11 for Z=1, q_X=4, or s=max(11,ceil(q_X)+6) for q_X≥0; β=p+3 additionally needs the singleton-inclusive outer-cumulant
+    bound. These are OPEN Yang–Mills estimates. Once E0′ and the remaining N9 axioms are obtained, the completed ABSTRACT
+    REC_LIB + REC_CONT producer reconstructs that hierarchy. It supplies neither those estimates nor a physical mass gap.
 
 *Tier 4 — Euclidean invariance (H_Euc), by route.*
 19. **[all] n-point inputs** (ML7, F4).
@@ -653,7 +681,7 @@ bridge NOT**". Effects on the map:
 | N6 | (ALG) | MISSING (ML1) |
 | N7 | one sequence / (DIAG) | flat MATCH-cond (Lemma CONV); sphere (DIAG) OPEN |
 | N8 | (TRAJ) | torus MATCH-cond (needs u_K − R > 0 stated); sphere MISMATCH F14 |
-| N9 | (REC) | MISSING; [m] NOT-VERIFIED |
+| N9 | (REC) | ABSTRACT producer reviewed (REC_LIB + REC_CONT); exact consumer contract stated; actual YM hierarchy/growth/application OPEN |
 | N10 | SRC | OPEN; MISMATCH F4 (κ-2), F7, F10, F15, F24 |
 | N11 | ROTDEF I5 inputs | MATCH-cond; derivations NOT-VERIFIED (Codex SRCCD item 5) |
 | N12 | TQ | OPEN (IR, flat); F19 |
@@ -678,11 +706,12 @@ bridge NOT**". Effects on the map:
 | C6 | producers printing E_k^br | MATCH once Balaban's convention is written into BFT-0/4 |
 | C7 | (N-bg)/(H-C) files | off-route |
 | F1-F25 | arrow findings | MISMATCH: F1, F2a, F3, F4, F5, F6, F7, F8, F10, F12, F13, F14, F15, F19, F24 (+C1, C2, C5b); MATCH-cond: F9, F16, F22; MATCH (new): F23; missing producer: F21; wording: F25; OPEN: F17, F18 |
-| ML1-ML13 | missing leaves | all OPEN |
+| ML1-ML13 | remaining application inputs | OPEN; ML2 now means actual YM application of the available abstract REC producer, and ML9 the actual extension/growth inputs |
 
-**Counts.** Nodes: 25 (N0-N24, with N1 split). Arrow verdicts: **18 MISMATCH** (F1, F2a, F3, F4, F5, F6, F7, F8, F10, F12, F13, F14, F15, F19,
+**Historical counts (the original assembly pass; no new global certification).** Nodes: 25 (N0-N24, with N1 split). Arrow verdicts: **18 MISMATCH** (F1, F2a, F3, F4, F5, F6, F7, F8, F10, F12, F13, F14, F15, F19,
 F24, C1, C2, C5b), **11 MATCH-cond** (N7-flat, N8-torus, N11, N18-(M4), N18-(L-loc), F9, F16, F22, C4, C5a, N3-sphere-after-Codex is not
-counted), **3 MATCH** (N3-flat, F23, C6). Missing leaves: 13. Ordered OPEN items: 23 (§9). Inherited claims refuted here: none of a banked
+counted), **3 MATCH** (N3-flat, F23, C6). Original leaf IDs: 13. Ordered items: 23 (§9); N9/ML2 and item 18 now distinguish
+available abstract reconstruction from missing application inputs. Inherited claims refuted here: none of a banked
 item; flagged against unbanked text: SPHERE55's SRC-E/(U-mom) (F5; the degree-1 case follows from banked Lemma V + Codex SRCCD item 3
 transplanted to K_a — my reading, NOT-VERIFIED; the degree-2 case ARGUED), SPHERE55 §1.5 vs §5.2 internal inconsistency (F3), UIR55/FLOW55's
 "order 4: nothing" (superseded by F23), SRCAN55's "same object" (F24, agreeing with CODEX_REVIEW_SRCAN item 11), HANDOFF's torus-RP
@@ -712,7 +741,7 @@ No Codex verdict used here is disputed.
 
 1. **Tally: no change** (every result here is an arrow verdict or a missing-leaf statement, not a theorem).
 2. **HANDOFF's open-inputs table lacks rows** for: (ALG) + an OS-compatible witness (ML1, ML13); n-point H_Euc inputs incl. SRC-κ (κ-2) for
-   all n (ML7); (REC) (ML2); (EXT) (ML9); (DIAG) (ML3); (TRAJ)/(FLOW-pos) (ML12, ML4); (GERM)/(MIN-cb) (ML5, ML6); boxes (ML11); θ_μ RP on
+   all n (ML7); actual REC application inputs (ML2; abstract producer available); actual EXT/growth inputs (ML9); (DIAG) (ML3); (TRAJ)/(FLOW-pos) (ML12, ML4); (GERM)/(MIN-cb) (ML5, ML6); boxes (ML11); θ_μ RP on
    K_a (F3).
 3. **H_int row**: "free comparator banked for a narrower class; Yang–Mills side open" should add "and the witness is not on the OS algebra
    (F1): needs OWN-free or an OS-compatible witness ([𝓑] or [e])".

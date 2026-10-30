@@ -373,6 +373,23 @@ def _runner_inputs(
     return inputs, "classifier runner inputs enumerated"
 
 
+def _sparse_excluded_blobs() -> tuple[dict[str, str] | None, str]:
+    """Map tracked paths excluded by sparse-checkout to their index blob ids."""
+    listed = run_git(["ls-files", "-s", "-t"])
+    if listed.returncode != 0:
+        return None, (
+            "git ls-files sparse inspection failed: "
+            f"{(listed.stderr or listed.stdout).strip()[:240]}"
+        )
+    blobs: dict[str, str] = {}
+    for line in listed.stdout.splitlines():
+        if not line.startswith("S "):
+            continue
+        fields, _, relative = line[2:].partition("\t")
+        blobs[relative] = fields.split()[1]
+    return blobs, "sparse exclusions inspected"
+
+
 def static_input_fingerprint(
     *, include_ledger_static: bool = True
 ) -> tuple[str | None, str]:
@@ -421,10 +438,18 @@ def static_input_fingerprint(
         return None, detail
     inputs.update(runner_inputs)
 
+    sparse_blobs, detail = _sparse_excluded_blobs()
+    if sparse_blobs is None:
+        return None, detail
+
     digest = hashlib.sha256()
     for relative in sorted(inputs):
         path = REPO_ROOT / relative
-        if relative.startswith(VERDICT_GENERATED_PREFIXES) and relative.endswith(
+        if relative in sparse_blobs and not path.exists():
+            # Absent by sparse-checkout: bind the indexed blob, which pins the
+            # same content without reading it.
+            content = b"\0SPARSE BLOB\0" + sparse_blobs[relative].encode("ascii")
+        elif relative.startswith(VERDICT_GENERATED_PREFIXES) and relative.endswith(
             ".json"
         ):
             if not include_ledger_static:

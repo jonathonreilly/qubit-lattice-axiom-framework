@@ -3,10 +3,13 @@
 
 CI runs this so a new failure cannot go unnoticed. Files in KNOWN_BROKEN were
 already failing when this runner was added. They still run and are reported,
-but do not fail the run; remove an entry once its file passes.
+but do not fail the run; remove an entry once its file passes. Files in
+CI_ENVIRONMENT_LIMITED pass locally but cannot run on a CI checkout, so CI skips
+them.
 """
 from __future__ import annotations
 
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -31,6 +34,13 @@ KNOWN_BROKEN = {
     "test_runner_pin_gate.py": "1 case: the note read fails before the runner-pin check",
 }
 
+CI_ENVIRONMENT_LIMITED = {
+    "test_audit_loop_orchestrator.py": (
+        "reads /proc/1/environ, which a runner denies, and took 9 minutes failing"
+    ),
+    "test_d3_bar_window_evidence_manifest.py": "needs git history a shallow checkout lacks",
+}
+
 
 def run_file(path: Path) -> tuple[bool, str]:
     proc = subprocess.run(
@@ -43,7 +53,11 @@ def run_file(path: Path) -> tuple[bool, str]:
 
 def main() -> int:
     unexpected: list[str] = []
+    in_ci = bool(os.environ.get("GITHUB_ACTIONS"))
     for path in sorted(TESTS_DIR.glob("test_*.py")):
+        if in_ci and path.name in CI_ENVIRONMENT_LIMITED:
+            print(f"{path.name}: SKIPPED in CI ({CI_ENVIRONMENT_LIMITED[path.name]})", flush=True)
+            continue
         passed, output = run_file(path)
         if passed:
             label = "PASS, remove from KNOWN_BROKEN" if path.name in KNOWN_BROKEN else "PASS"

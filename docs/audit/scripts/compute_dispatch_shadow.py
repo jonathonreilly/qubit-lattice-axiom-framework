@@ -25,6 +25,7 @@ note's cutover flags remain unset.
 from __future__ import annotations
 
 import json
+import os
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -157,15 +158,20 @@ def main() -> int:
     lane_shadow["prior_state_date"] = prior.get("as_of_date")
 
     LANE_JSON.write_text(json.dumps(lane_shadow, indent=1, sort_keys=True) + "\n")
-    # DAY-KEYED update: the tracked state advances at most once per UTC day
-    # (whichever pass first sees a membership change). Per-verdict pipeline
-    # runs later the same day leave it untouched, so audit-batch commits that
-    # stage all of docs/audit/data cannot consume churn between nightly
-    # reports. An unchanged membership writes nothing: a date bump alone used
-    # to produce a one-line nightly commit that moved main for no content.
+    # NIGHTLY-KEYED update: only the scheduled pass that publishes the report
+    # advances the tracked state, at most once per UTC day. Every other pass
+    # (audit batches, landing gates, manual dispatch) reports churn against
+    # the same baseline and writes nothing, so a commit that stages all of
+    # docs/audit/data cannot consume churn between nightly reports. The date
+    # cannot tell these passes apart, because an unchanged membership also
+    # writes nothing: a date bump alone used to produce a one-line nightly
+    # commit that moved main for no content.
+    nightly = os.environ.get("GITHUB_EVENT_NAME") == "schedule"
     today = datetime.now(timezone.utc).date().isoformat()
     membership_changed = prior.get("lane_ids") != lane_ids
-    if not prior or (membership_changed and prior.get("as_of_date") != today):
+    if not prior or (
+        nightly and membership_changed and prior.get("as_of_date") != today
+    ):
         SHADOW_STATE_PATH.write_text(json.dumps(
             {"schema_version": 2, "lane_ids": lane_ids, "as_of_date": today},
             indent=1, sort_keys=True) + "\n")

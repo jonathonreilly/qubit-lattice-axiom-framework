@@ -427,10 +427,18 @@ with the principal covariance kept as an explicit argument. Their complete
 covariance-reader connected assembly is still OPEN; the finite-volume
 absolute sum is not a uniform relative-error or nonvanishing estimate.
 
-Active author work restores the full critical covariance tails in the
-centered nonlinear connected logarithm. The full interacting original-cut
-return, arbitrary histories, multiscale iteration, continuum existence
-and physical continuum mass gap remain OPEN.
+The [nonlinear complete-reader proposal](NONLINEAR_READER_RETURN_ASTRA.md)
+is frozen under fresh independent review. It proposes a centered actual
+critical-covariance logarithm at `beta/2`, retaining both signed tails,
+with an `O(1/u)` plus rare-cut bound. This pending result is not adopted.
+
+New author work joins the shifted-chart identity and complete-reader
+nonlinear construction for a fixed original-a chart. The [external
+return comparison](EXTERNAL_RETURN_BRIDGE_ASTRA.md) is also under fresh
+review; it is a primary-source hypothesis map and imports no Yang–Mills
+theorem. The full interacting original-cut return, arbitrary histories,
+multiscale iteration, continuum existence and physical continuum mass
+gap remain OPEN.
 
 Concurrent progress through `cc1de55f5b` is recovered. [RD pass 2](RD.md)
 has an independent [HOLD review](REVIEW_RD_R2.md): its explicit finite H12
@@ -505,8 +513,12 @@ Current assignments use the requested `gpt-6-astra / max` configuration:
   covariance satisfies the complete-reader Gaussian interface after retuning.
 - **Shifted chart boundaries — scoped review completed:** exact side/corner
   identity and partial reader/moment bounds have independent LAND.
-- **Full covariance in the nonlinear return — active author:** restore both
-  signed covariance tails, preserving primitive compatibility and all readers.
+- **Full covariance in the nonlinear return — fresh review active:** frozen
+  candidate at rate beta/2, with both tails and exact primitive compatibility.
+- **Fixed original-a chart — active author:** localize the shifted nonlinear
+  contour with complete readers and the same critical normalization.
+- **External return comparison — fresh review active:** verify the precise
+  limits and possible uses of the pinned Peev–Dogra source interfaces.
 - **Reconstruction consumers — scoped affected review completed:** the growth,
   translation and tensor contracts are aligned; the independent singleton
   finding and its explicit sufficient-assumption repair remain recorded.

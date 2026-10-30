@@ -547,10 +547,18 @@
 > covariance-reader connected assembly is still OPEN; the finite-volume
 > absolute sum is not a uniform relative-error or nonvanishing estimate.
 >
-> Active author work restores the full critical covariance tails in the
-> centered nonlinear connected logarithm. The full interacting original-cut
-> return, arbitrary histories, multiscale iteration, continuum existence
-> and physical continuum mass gap remain OPEN.
+> The [nonlinear complete-reader proposal](NONLINEAR_READER_RETURN_ASTRA.md)
+> is frozen under fresh independent review. It proposes a centered actual
+> critical-covariance logarithm at `beta/2`, retaining both signed tails,
+> with an `O(1/u)` plus rare-cut bound. This pending result is not adopted.
+>
+> New author work joins the shifted-chart identity and complete-reader
+> nonlinear construction for a fixed original-a chart. The [external
+> return comparison](EXTERNAL_RETURN_BRIDGE_ASTRA.md) is also under fresh
+> review; it is a primary-source hypothesis map and imports no Yang–Mills
+> theorem. The full interacting original-cut return, arbitrary histories,
+> multiscale iteration, continuum existence and physical continuum mass
+> gap remain OPEN.
 >
 > Concurrent progress through `cc1de55f5b` is recovered. [RD pass 2](RD.md)
 > has an independent [HOLD review](REVIEW_RD_R2.md): its explicit finite H12

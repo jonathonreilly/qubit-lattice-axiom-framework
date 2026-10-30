@@ -45,7 +45,12 @@ citation-edge rule in section 8.
   `.claude/commands/`, `AGENTS.md`, `CLAUDE.md`). Do not declare them as runner
   inputs or hash-pin them in a runner package; a process edit would then stale
   or block science replay. Preserve the exact bytes in the input package instead
-  (`docs/audit/scripts/check_runner_process_inputs.py` enforces this).
+  (`docs/audit/scripts/check_runner_process_inputs.py` checks literal input
+  declarations and standard `outputs/*_inputs/{ARTIFACT_MANIFEST,INPUT_MAP}.json`
+  pins). Its six existing runner/input exceptions are exact pairs. Historical
+  pin routing is accepted only for explicitly reviewed package/resolver source
+  identities; a matching snapshot elsewhere is insufficient. Other runtime
+  reads and package layouts still require source review.
 - No hard requirement on gitignored artifacts (e.g. the symlinked
   `docs/audit/data/audit_ledger.json`). Runners must be fresh-worktree
   reproducible: clone at `origin/main`, apply the delta, run.

@@ -1,0 +1,44 @@
+{
+  "timestamp_utc": "2026-10-30T02:36:49.351260+00:00",
+  "kind": "source/document bookkeeping only; no numerical physics checks",
+  "head": "bb3e11fa4bf6e75e185bf5ba0950dfbef04e8727",
+  "head_unchanged": true,
+  "source_changes": [],
+  "artifacts_excluding_this_receipt": {
+    "WLOOP.md": {
+      "sha256": "3fa6a797bab81e930d4d3f081b112da7ecb38a7073a248474731cd61314efa57",
+      "bytes": 48285
+    },
+    "WLOOP_LOG.md": {
+      "sha256": "1dc0e541ee776a3107a05eaa6bbd27a73b7f05dc71ba71cca5759facd59f8695",
+      "bytes": 7755
+    },
+    "checks/wloop_document_check.json": {
+      "sha256": "f1c86d1a89b7ff37e64c18c108e5ee6060d69dfabdc8b82c04fe2b79eddd67cf",
+      "bytes": 1842
+    },
+    "checks/wloop_review.md": {
+      "sha256": "14146982faf1e9d517feaeff391b9d719b9320c18db028b5c38ab31cce752b3b",
+      "bytes": 18122
+    },
+    "checks/wloop_review_request.json": {
+      "sha256": "d85181b1d4ea2c4213726f4eb4edf3231911bb5b047d794586ec65b6472a8061",
+      "bytes": 454
+    },
+    "checks/wloop_sources.json": {
+      "sha256": "ab026105675ba5ce80a605015aa761b9bb4f8ff5b757612d997c6d0670935e22",
+      "bytes": 3861
+    }
+  },
+  "missing_local_links": [],
+  "trailing_whitespace": [],
+  "tracked_diff_paths": [],
+  "git_status_short": "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/WLOOP.md\n?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/WLOOP_LOG.md\n?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_q/WLOOP/\n?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/wloop_document_check.json\n?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/wloop_review.md\n?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/wloop_review_request.json\n?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/wloop_sources.json\n",
+  "frozen_note_matches_review": true,
+  "review_hash_matches_final_report": true,
+  "review_final_line": "VERDICT: LAND",
+  "scientific_scope": "LAND for bounded packet; full loop/combined physical target UNDECIDED",
+  "numerical_runs": "none; nice rejected; guard not weakened",
+  "existing_untracked_input_at_start": "briefs_q/WLOOP/",
+  "editable_prompt_files_changed": []
+}

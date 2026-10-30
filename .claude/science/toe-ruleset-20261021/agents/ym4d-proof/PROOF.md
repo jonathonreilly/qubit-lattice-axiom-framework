@@ -844,7 +844,7 @@
 > Both **full continuum existence and the physical continuum mass gap remain
 > OPEN**. No audit grade or whole-PR verdict is added at this checkpoint.
 >
-> **PROVENANCE WARNING (2026-10-28T22:11:08Z, lead now claude-opus-5-5).** Every Claude-authored result in sessions 24 and 25 — lead consolidation and all worker files, commits 811b8ed6de through 666a71b7b9 — was produced on **claude-opus-5**, not the owner-required model (Claude: Opus 5.5 at extra effort or higher; Codex: gpt-6-astra at max). The owner has ruled that work likely unreliable. **Treat every session-24/25 status, fix, flag, refutation and number in this file as PROVISIONAL** until the Opus 5.5 review sweep recorded in SESSION25_RESULTS.md §PROVENANCE has re-established it. The only session-24/25 checks run at an approved setting are the Codex gpt-6-astra/max reviews (`CODEX_REVIEW_*.md`). The tally is reported as 72 / 2 / 7 / 24 + 1 **pending** that sweep.
+> **Status of sessions 24 and 25.** Every status, fix, flag, refutation and number from sessions 24 and 25 (commits 811b8ed6de through 666a71b7b9) holds only as re-established by the re-review recorded in SESSION25_RESULTS.md §SWEEP55 and the `REVIEW55_*.md` / `CODEX_REVIEW_*.md` files; where they differ, those reviews override this file.
 
 > **[S26-BANKED] RESULTS CONFIRMED BY BOTH MODEL FAMILIES (2026-10-28T23:39:35Z).** Each item below was established or re-derived by Claude Opus 5.5 and independently checked by Codex gpt-6-astra (max). Exact statements are in the cited files; these lines are pointers, not restatements. They are lane-level results and do not move the 105-item tally.
 >

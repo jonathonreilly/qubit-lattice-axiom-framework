@@ -9,7 +9,7 @@ UTC start: 2026-10-28 23:45 UTC (from `date -u`, 23:45:07)
 Targets.
 - T1 (pin). State (G♯_0-field) exactly as the sources give it (RTARGET.md §33, located by string; NBG_B.md's
   pinned form), with every quantifier (k, T, X_0 uniformity; which norm; which configuration; which sources).
-- T2 (re-derive, do not inherit). The Opus-5 decomposition in NBG_B / NBG_ADJ:
+- T2 (re-derive, do not inherit). The earlier decomposition in NBG_B / NBG_ADJ:
   "(G♯_0-field) = [multi-level per-level-slice gap] + [(G♯_0-fine)], with (G♯_0-fine) OPEN because the
   K ≠ 0 alias symbol is not analytic in a strip". Verdict per piece: CONFIRMED / NOT-VERIFIED / REFUTED.
 - T3 (need). Do the consumers of BFT-5 clause (b) read the FIELD components B_i in the X_c norm, or only
@@ -107,7 +107,7 @@ re-derive in the text. No new number changes a decision, so no `checks/gs55_*` f
 - BFT_A.md l.18-47, 230-275, 437-575, 1101-1166, 1688-1760, 2510-2545, 2600-2627, 2826-2845, 3125-3150.
 - BFT_B.md l.1586-1640, 2016-2090, 2126-2262, 2492-2530, 2612-2626, 3580-3612, 3820-3860.
 - REVIEW_BFT_B_S5 l.150-245; REVIEW55_BFTB l.222-240, 352-370; REVIEW55_LEAD l.115-135; REVIEW_BFT_A_S7 (verdict lines).
-- FLATZ.md (an abandoned Opus-5 draft; nothing in it is a result).
+- FLATZ.md (an abandoned draft; nothing in it is a result).
 - SF.md l.676-730, 880-900; PLAN_S26.md, all.
 
 **Collisions that bear on this target (each checked by file:line):**
@@ -630,7 +630,7 @@ like EP-rec it is a reconstruction, not an inverse estimate.
 
 ## 6. Findings, claim by claim
 
-Scope: the Opus-5 statements about (G♯_0-field) that the lead asked me to re-derive rather than inherit, plus the lane
+Scope: the earlier statements about (G♯_0-field) that the lead asked me to re-derive rather than inherit, plus the lane
 statements that §5 overturns.
 
 - **F1.** NBG_B §3 (l.120-132), "(G♯_0-field) pinned". **CONFIRMED** as a reading of RTARGET §33. The source statement has

@@ -465,14 +465,32 @@ It applies to the specified bare-step precision; NRR still requires its
 own large-u regime. No `O(1/u)` full-prefactor claim or inherited-history
 precision theorem follows. No source repair was required.
 
+The [shrinking-chart corollary](SHRINKING_CHART_RETURN_ASTRA.md) now has a
+[fresh independent scoped review](REVIEW_SHRINKING_CHART_RETURN_ASTRA.md).
+It applies the unchanged reviewed fixed-chart estimates with
+`r_a=sigma p`, a fixed source radius and support rate, and an explicitly
+shrinking coarse tube. The side powers of sigma cancel against their
+actual field budgets. Consumer cuts remain distinct, and OC's additional
+curvature restriction is retained. Its dependence on the exact SN theorem
+remains explicit; no source repair was required.
+
+The [critical-action corollary](CRITICAL_ACTION_READER_ASTRA.md) now has a
+[fresh independent scoped LAND review](REVIEW_CRITICAL_ACTION_READER_ASTRA.md).
+It gives the actual stationary-value correction a complete original-reader
+budget proportional to `t_b^2/sigma^2`, retains the individual lift source
+terms and exact compact-normalizer vacuum, and completes the bare-step
+action accounting on the same domain. A shrinking-window `O(p^2)` cost
+is not a small irrelevant remainder or a renormalization contraction.
+The source was accepted unchanged.
+
 The [external return comparison](EXTERNAL_RETURN_BRIDGE_ASTRA.md) has a
 [fresh independent review](REVIEW_EXTERNAL_RETURN_BRIDGE_ASTRA.md) accepting
 its bounded primary-source interpretation. It distinguishes a real
 whole-volume comparison from the required fixed-history local return and
-imports no Yang–Mills theorem. [Coordinator review integration](checks/full_proof_shifted_determinant_review_integration.json)
-binds both new reviews and preserves the concurrent JMBRA/JMBRB research
-packets at their conditional/partial scope. Follow-up work checks shrinking
-chart budgets and the separately retained critical-action reader correction.
+imports no Yang–Mills theorem. [Coordinator review integration](checks/full_proof_shrinking_action_review_integration.json)
+binds these two corollary reviews, preserves their exact SN/FU/CD premises,
+and retains the concurrent JMBRA/JMBRB research at its conditional/partial
+scope. These are bare-step local results, not an all-history construction.
 The full interacting original-cut return, arbitrary histories, multiscale
 iteration, continuum existence and physical continuum mass gap remain OPEN.
 

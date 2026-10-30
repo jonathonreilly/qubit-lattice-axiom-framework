@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/d4_zoom_direction_finite_rung_matter_weight_is_an_event_kernel_liv_set_by_the_event_rung_count_2026_10_26.py
+runner_sha256: 2aa331660e4cab2298a7bace23ecc94aaf1a3a2331410420436e53fb7b5a6274
+input_fingerprint_sha256: d14dc751c519bf6fb4bab8134b471bc1310f3b60fbbc4a41c22a6d627465adfe
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 28.47
+status: ok
+----- stdout -----
+PASS Z1 [T+F] reading A: n-times-blocked description has E_n(2^n K)/2^n = E_0(K); physical E/K - 1 identical for n = 0..3 | identity rel 8e-12; physical E/K-1 at Ka=0.06: n=0 -3.839996e-07, n=1..3 -3.839997e-07 -3.839999e-07 -3.840071e-07  => physical beta = beta_0 for every n (cell-unit beta_0/16^n is a units change)
+PASS Z2 [T] G_n = R^n(G_NN) is 2pi D4*-periodic (an event kernel; the preimage sum is a formula, not a finer lattice) | max rel change under 2pi e1, pi(1,1,1,1), 2pi e4: 4.6e-15 (n = 0..3)
+  n=1 |D_n(X)| shell max, |X|^2 = 2,4,..,28: 1e-01 3e-02 6e-03 4e-04 6e-04 6e-04 5e-04 4e-04 2e-04 1e-04 5e-05 2e-05 6e-06 5e-06  envelope decay 2.34/unit
+  n=2 |D_n(X)| shell max, |X|^2 = 2,4,..,28: 9e-02 3e-02 8e-03 9e-04 4e-04 7e-04 6e-04 5e-04 3e-04 2e-04 9e-05 4e-05 2e-05 3e-06  envelope decay 2.24/unit
+  n=3 |D_n(X)| shell max, |X|^2 = 2,4,..,28: 9e-02 3e-02 8e-03 1e-03 4e-04 7e-04 6e-04 5e-04 3e-04 2e-04 1e-04 5e-05 2e-05 3e-06  envelope decay 2.22/unit
+PASS Z3 [F] D_0 = NN exactly (zero beyond the roots); D_1..D_3 exponentially local on the events (L = 12 torus), decay > 1/unit | D_0 beyond roots 9e-16; envelope decay n=1,2,3: 2.34 2.24 2.22; |X|^2=28 / |X|^2=2: 5e-05 3e-05 3e-05; L=8 vs 12 (n=1, |X|^2<=12) 6e-03
+  B' event kernel n=0: beta_e (ka)^4 exact -1.185e-01; slice fit -1.179e-01; |c| * 16^n / |c_0| = 1.000
+  B' event kernel n=1: beta_e (ka)^4 exact -7.407e-03; slice fit -7.405e-03; |c| * 16^n / |c_0| = 1.005
+  B' event kernel n=2: beta_e (ka)^4 exact -4.630e-04; slice fit -4.630e-04; |c| * 16^n / |c_0| = 1.006
+  B' event kernel n=3: beta_e (ka)^4 exact -2.894e-05; slice fit -2.894e-05; |c| * 16^n / |c_0| = 1.006
+PASS Z4 [F] B': event-scale beta_n = beta_0/16^n read from the EVENT slice correlator; beta_0 = -0.1185; -> 0 only as n -> inf | beta_0 exact -0.11852; nonzero at every finite n (finitely many branches, zoom-fixed-point-tick T1)
+  E* = 1.2177e+18 GeV; |b_gamma| = 7.407e-03 (both readings). Physical rows (body ray):
+  n | reading | |b_e| | gamma->ee eV | e->e gamma eV | wall A eV (flow) | E_QG,4 e GeV
+  0 | A  | 1.19e-01 | 1.91e+20 |        - | 9.67e+20 | 1.75e+18
+  0 | B' | 1.19e-01 | 1.91e+20 |        - | 9.67e+20 | 1.75e+18
+  1 | A  | 1.19e-01 | 1.91e+20 |        - | 9.67e+20 | 1.75e+18
+  1 | B' | 7.41e-03 |        - |        - | 1.53e+21 | 3.49e+18
+  2 | A  | 1.19e-01 | 1.91e+20 |        - | 9.67e+20 | 1.75e+18
+  2 | B' | 4.63e-04 |        - | 2.88e+20 | 1.53e+21 | 6.98e+18
+  3 | A  | 1.19e-01 | 1.91e+20 |        - | 9.67e+20 | 1.75e+18
+  3 | B' | 2.89e-05 |        - | 2.80e+20 | 1.53e+21 | 1.40e+19
+PASS Z5 [E] reading A: every n gives the n = 0 row (gamma->ee 1.9e20 eV, wall 9.7e20 A eV); reading B' reproduces #10110 rows | all rows pass every measured bound in both readings
+PASS Z6 [T+F] NN pair (k = 0) sits at 2^n E_pair in the rung-n event kernel: the decision's rung-2 ghost cost is a B' statement | E_pair = 2.5997 +1.6669i (D4 units); |G_n| blow-up at 2^n E_pair: n=1 7e+07, n=2 1e+07
+runtime 28.2 s
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

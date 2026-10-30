@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/d4_event_one_mode_per_event_spin_cell_no_go_root_hop_phases_and_cell_spinor_obstruction_2026_10_26.py
+runner_sha256: 94e1928febe332c936a1a1c374f9bc8a8e3594dc6a3679b75438ad272258f3e8
+input_fingerprint_sha256: 29509cb034ba75b4829ad5a5cab832a64aa2580f9f2ffc84bfd779c31935b88b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 63.38
+status: ok
+----- stdout -----
+setup: |W(F4)|, |W(B4)|, |W(D4)| = 1152, 384, 192; 24 roots, 12 positive
+PASS C1 cells: the W(F4)-invariant sublattices L with 4D4 <= L <= D4 have indices [1, 4, 16, 64, 256]; there is none of index 2 or 8, so the small cells are 2D4* (index 4, the sqrt2 cell), 2D4 (16), 4D4* (64) | 5 invariant subgroups of D4/4D4
+PASS C2 no D4 eta phases: (i) if all 24 root hops A_r pairwise anticommuted (KS property, ANY U(1) phases, any period), Delta = (A_u A_v)(A_w A_z)^-1 is diagonal with Delta(x+r) = s_r Delta(x), s = -1 exactly on +-u,+-v,+-w,+-z (u,v,w,z = e1+-e2, e1+-e3); s must be a character of D4 but is not; (ii) F2 system on the 2D4 cell inconsistent; (iii) the naive spinor kernel sum (r.gamma) T_r cannot be spin-diagonalised: a triangle product of r.gamma/sqrt2 is not a multiple of 1 | character violations 96 (e.g. (e2+e4)+(e1-e4) = e1+e2); F2 consistent: False; triangle product = [1. 1. 1. 1.] x unit, |P - tr/4| = 0.71 (P is (gamma3-gamma2)/sqrt2-type)
+PASS C3 chirality: the D4 root graph has triangles (r1+r2+r3 = 0), so no onsite sign eps(x) can anticommute with ANY kernel whose hops include a triangle: no remnant U(1)_eps at nearest neighbour (KS's eps is constant on D4). The sign characters of D4/2D4 fall into W(F4) orbits [1, 3, 12]: a character eps is W(F4)-invariant only if trivial; the best keeps 384 (one triality frame) | ordered 120-degree root pairs 192
+   consistent (cell/group/class chi_long,chi_short : flux patterns): 2D4*/F4/A(-1, 1):2, 2D4*/F4/S(1, 1):2, 2D4/F4/A(-1, 1):2, 2D4/F4/S(1, 1):2, 2D4*/B4/A(-1, 1):2, 2D4*/B4/S(1, 1):2, 2Z4/B4/A(-1, 1):2, 2Z4/B4/S(1, 1):2, 2D4/B4/A(-1, 1):2, 2D4/B4/S(1, 1):2, 2D4*/D4/A(-1, 1):2, 2D4*/D4/S(1, 1):2, 2Z4/D4/A(-1, 1):2, 2Z4/D4/S(1, 1):2
+PASS C4 full W(F4) and the subgroups W(B4), W(D4), realised projectively on the cells 2D4*, 2Z4, 2D4: the covariance systems are consistent ONLY for (antisymmetric, chi = -1 on long reflections) and (symmetric, trivial chi), each with exactly 2 flux patterns (D and -D): the uniform flux is forced. Every pattern has degenerate zeros (no isolated Dirac node) | 14 consistent systems; zero types seen ['deg(z=1,rank1)', 'deg(z=4,rank3)', 'deg(z=8,rank3)']
+PASS C4b the forced (uniform) antisymmetric pattern is a WEAK D4 eta: D^dag D = f(k) 1 exactly (the 60/120-degree cross terms cancel), f = 24 + 6 sum_{24 norm-4 v} cos(v.k) + sum_{r} cos(2r.k), a scalar coarse operator on 2D4*. But f = 0 on whole lines, e.g. k = (0,0,0,pi) + t(1,1,1,1): a line of zero modes, not a Dirac point | |D^dag D - f| 3e-14, fit 4e-14, max singular value on the line 1e-15
+PASS C4c the 64-event cell 4D4*: W(F4)-covariant patterns (both classes) number 32 (non-uniform ones appear); every one has degenerate zeros | 43s so far
+PASS C6 EVERY translation-uniform Z2 flux on the 24 unit root hops (any point symmetry or none; 2^14 per class, all W(F4)(+sign) orbits): each orbit either has degenerate zeros or is GAPPED; none has only isolated Dirac nodes | anti: dim 14, 16384 patterns, 40 orbits, 40 degenerate, 0 gapped []; sym: dim 14, 16384 patterns, 40 orbits, 39 degenerate, 1 gapped (orbit size, min singular value) [(64, 2.52)]
+PASS C6b translations acting with a sign character (D -> -D, staggered flux): seeded sample of 16 patterns, all degenerate (the full sweep of all orbits is a scratch diagnostic)
+PASS C7 rep theory (ANY kernel range, ANY U(1) phases): at a W(F4)-invariant node the cell's mode space is a sum of monomial modules induced from coset stabilisers H; every H lifts to a set spanning all of M_4(C) (S|H irreducible), so by Frobenius the 4-dim spinor S never occurs: the 4-event sqrt2 cell (dim 4) cannot hold one Dirac spinor, and the 16-event cell cannot hold an untasted one. Only spin x taste (S x T, dim 16) is left open there | lift covariance S gamma S^-1 = det(g) g.gamma: 6e-17; (|H|, span dim): {'2D4*': [(384, np.int64(16)), (1152, np.int64(16))], '2D4': [(96, np.int64(16)), (384, np.int64(16)), (1152, np.int64(16))]}
+PASS C8 protection count: quartic invariants W(F4) 1 (only (p^2)^2), W(B4) 2, W(D4) 3, stabiliser of a root class (96) 4: any staggered escape that breaks W(F4) to a frame or root stabiliser re-admits dim-6 LIV | {'F4': np.int64(1), 'B4': np.int64(2), 'D4': np.int64(3)}, 96: 4
+PASS C9 supply: one Dirac spinor per event = 4 complex fermion modes per event = Fock dim 2^4 = 16 = four qubits (M_2(C)^(x)4), not two; the Qubit axiom gives M_2(C) (one mode). The 4-event sqrt2 cell holds exactly 4 modes, which C7 rules out as a spinor; spreading one spinor over 16 events (2D4 cell) needs spin x taste
+runtime 62.5 s
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

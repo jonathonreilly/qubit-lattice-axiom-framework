@@ -7,7 +7,9 @@ lease_until: 2026-10-30T21:08:00Z
 
 Small complex charts, real finite jets and shrinking bare domains have checked local estimates. Generic inherited finite-real jets need not be fine analytic. Positive small distance decay and a component-rooted series do not automatically provide the native mu+2 norm. RT's independently checked native bound applies to its bounded bare conditional input class; it does not close the full-domain return.
 
-Next action: Match each source radius, field weight, retained boundary condition and support reserve to its consumer. Preserve the complement and the actual hard selectors when changing auxiliary partitions.
+The independently checked [GH52--GH55 test](../gates/second-domain-complement-c056f6db54.md) shows that the previous small-output complement occurs inside the next ordinary q-good chart under the actual two-step posterior. On its fixed torus and prescribed bounded coupling-ratio family, that event cannot have the unchanged exp(-eta p_cut^2) upper price. This leaves the earlier first-step theorem intact and does not establish the physical coupling flow.
+
+Next action: Construct a real output domain containing the actual next input chart, or a connected complement estimate with an adequate weaker price and stable later domains. Match every source radius, field weight, retained boundary condition and support reserve to that consumer. Preserve the complement and actual hard selectors when changing auxiliary partitions; the existing reset and mean-translation budgets cannot simply be reused at a larger radius.
 
 ## Obligations
 

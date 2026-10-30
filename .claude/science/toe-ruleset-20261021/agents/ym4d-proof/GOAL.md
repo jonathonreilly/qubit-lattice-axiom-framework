@@ -38,8 +38,11 @@ fixed-family log keeps D_R^J/D_R^0. RT27's correlated outside law, hard retained
 selectors, global factorization and inherited regulated histories remain open.
 The two research signals are bounded advances, not audit or retained statuses.
 
-Push A's separate cycle-3 review is bound to c7ff8a85. Cycles 4-8 are not covered;
-cycle 8 is preserved at cf69f71f5d and its full-return obligations remain open.
+Push A's separate cycle-3 review is bound to c7ff8a85. Its later work through
+the final checkpoint 36327ec442 is not covered. That checkpoint adds an
+unreviewed replica-exchange route and finite checks; its full-return
+obligations remain open. The concurrent update was preserved by merge
+fb1be3c6bc without changing either frozen review target.
 The frozen cycle-3 record's empty CLI vocabulary scan has a separate direct-file
 coverage correction; no old report, receipt or mathematical source was rewritten.
 
@@ -84,10 +87,16 @@ the unmarked D translation pin within GH26's budget. This does not certify
 the general inherited-input/regulator proposal or every upstream source.
 The second-step estimate, its full effective-density factor, field jets and
 complement remain open, as do reserve and rate regeneration.
-Section 14 now submits an actual second-posterior domain-complement lower
-bound for independent review. It tests the previous small-output cutoff
-inside the next ordinary q-good chart; its quantitative conclusion is
-not yet accepted. The full second-step construction remains the target.
+Section 14 now has an independent [GH52--GH55 check](gates/second-domain-complement-c056f6db54.md).
+On one fixed torus, for prescribed bounded successive coupling ratios, the
+actual second posterior gives the previous output-domain complement inside
+the next ordinary q-good chart probability at least
+c_T u^(-M_T) exp[-C_T u delta_0^2]. Thus the unchanged first-step
+exp[-eta p_cut^2] upper price is false for that complement in this family.
+The check preserves both normalizers and the actual quotient measure. It
+does not prove the physical running law or a connected complement upper
+bound. The next construction must enlarge the matched real output domain
+or establish adequate complement estimates with the full effective factor.
 A conditional lemma is a checkpoint, not a completed global return. Do not turn
 an outside-law estimate or an individual-sign inequality into a new assumption.
 

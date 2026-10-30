@@ -54,13 +54,20 @@ integral remains; no connected estimate has been extended to that complement.
 
 - gap: Actual common-law connected history return with native mu+2 readers and six retained-field/four original-source positions -> normalized-return; effective-flow
 - checked: GH49's first-step connected norm with four original-source jets at fixed real output, at rate beta/2 and under its stated common-family and large-u restrictions; no repeated-scale conclusion.
-- unchecked: Section 14 tests the actual second posterior at zero source and bounded prescribed coupling ratios. It proposes a lower bound for the previous output-domain complement inside the next ordinary q-good chart, ruling out assigning that complement the unchanged first-step rare price. Independent checking is pending.
+- checked: [GH52--GH55](../gates/second-domain-complement-c056f6db54.md) give a lower bound for the actual second-posterior domain complement inside the next ordinary q-good chart, at zero source on one fixed torus and with bounded prescribed coupling ratios. They exclude the unchanged first-step exp(-eta p_cut^2) upper price there, without asserting the physical running law or a connected complement bound.
 - gap: Control the full effective-density factor and these inherited marks jointly through the second integration, including its complement and already-spent energy -> reserve-regeneration; effective-flow
 
 The next construction must estimate this displayed second-step input or show
 precisely why a proposed invariant class fails to contain it. Replacing the
 full factor by a Wilson reference, treating old failures as current q-bad
 events, or assigning rare size to an extensive vacuum does not solve that task.
+A wider real-domain construction must also revisit both explicit losses:
+SC11--SC12 pay a_bulk delta^2 |R_j| using |R_j|<=V_K |A|, and WR35 pays
+the full critical-mean translation over its buffer. Their current budgets
+force the sqrt(q)/K^2 output scale. Increasing that radius without new
+estimates would violate the existing allocations. Alternatively, a
+complement construction needs an adequate weaker rate and a proof that
+the same full domains and reserves survive later integrations.
 The coordinator also compared [Abdesselam--Rivasseau, Theorem III.1 and proof](https://arxiv.org/pdf/hep-th/9409094v1)
 with the artificial covariance-pair interpolation, and
 [Brydges--Slade, Lemma 6.4 and proof](https://arxiv.org/html/1403.7244v2)
@@ -76,5 +83,5 @@ not supply the present four-dimensional soft-kernel effective-density return.
 No result from that paper is used in section 14's lower-bound proof.
 
 No continuum existence or physical mass-gap claim is made. One existing
-independent reviewer was reused for this applicability check; no parallel
+independent reviewer was reused for the applicability and complement checks; no parallel
 author, additional worker context or scientific numerical job was launched.

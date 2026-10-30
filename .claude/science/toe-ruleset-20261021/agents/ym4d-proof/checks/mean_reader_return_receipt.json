@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "role": "Author receipt only. Written mathematics and metadata checks are not an independent verdict or an audit.",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MEAN_READER_RETURN_ASTRA.md",
+    "sha256": "30858a4bb6f045ba558dcdb527c46878ee6bb60fef83b3aef4ba39d79a8d527a",
+    "lines": 710
+  },
+  "read_manifest": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mean_reader_return_read_manifest.json",
+    "sha256": "e36cfc1bbaa78a8f597b6378a22fc2ca0ed1bf9ec37a474815e4a36edaf4c513",
+    "lines": 192
+  },
+  "freeze": "Source710 / SHA30858a4bb6f045ba558dcdb527c46878ee6bb60fef83b3aef4ba39d79a8d527a was announced to root before either MEAN packet file was written. Source stayed unchanged during packaging.",
+  "author_analytical_checks": [
+    "ME4-ME8: geometric coefficient sum; separate original-root and attached-mean-root cases; q_Y<=k|Y|; full marked vector sum; theta/(1-theta)(k B1(d)+1); exact connected union without a truncation collar.",
+    "ME9-ME16: actual RF/FU vacuum-subtracted vertices, one directional fine Taylor series, 128(1+rho)H r_a^3/(sigma^2 a^3), whole side/rough flags, actual K(q) growth, natural h=O(sigma), explicit rho/xi/derivative costs and three beta/16 losses.",
+    "ME18a-c: actual RF touching phase and boundary force, N9 membership reader, physical Log(U_out U0(V)^-1), ordered joint fine/coarse/source acquisition, original labels, arbitrary deterministic holes, nonempty c_z choice and unchanged outside physical weight/prefactor.",
+    "ME19-ME24b: real Hermite L2 contraction, normalized principal marginal, absolute entire translation series, marked S-prime series, physical covariance partitions, TWO factorial splits with L2=2sqrt(B), explicit degree10 active-size polynomial and exact empty-coordinate normalization.",
+    "ME25-ME30: original hard selectors fixed only under the actual real Haar pullback; no fine derivative of a retained hard cap; actual normalized compact quotient scores and finite real Taylor lift; c/2-c/16=7c/16 of one existing reserve; charged mean pin remains attached to its own root."
+  ],
+  "checks_are_not_proof_certification": true,
+  "metadata_checks": {
+    "source_utf8": true,
+    "line_count": 710,
+    "unique_equation_tags": 35,
+    "no_trailing_whitespace": true,
+    "all_relative_dependency_links_resolve": true,
+    "relative_links_checked": 11,
+    "all_manifest_input_hashes_rechecked": true,
+    "json_parses": true
+  },
+  "protected_predecessors": {
+    "earlier_baseline": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/quadratic_coarse_return_receipt.json",
+      "sha256": "0624ea553f2d33e62467047ba7eb5f739180f1cb58f97012cb35b70319ff78d3",
+      "lines": 76
+    },
+    "matching_source_hashes": 20,
+    "all_match": true,
+    "additional_exact_identities_unchanged": {
+      "REAL_GAUSSIAN_JET_FOREST_ASTRA.md": "0974561e7463838e4cc23f5e708c3bd091e4281c8a95bc5c652b3378f549a627",
+      "checks/real_gaussian_jet_forest_read_manifest.json": "4d95d2f75f6e66f4987325281a8d69c88fc4c6e43f14ae6a8918a13f01e6192e",
+      "checks/real_gaussian_jet_forest_receipt.json": "a83ca29700a623c7c31d9fb15e684c89addb30a0959ca5664029ea029f4a2fa5",
+      "STRONG_LOCAL_GAUSSIAN_CORE_ASTRA.md": "62e7c351679be0834cb117cb82df1b04cf2cf0d21b8e3f0f84af5662b2c2f63c",
+      "checks/strong_local_gaussian_core_read_manifest.json": "dbd0e2c841994adee7525a858a264ccc7f848d1fde90d14879370af7317a4c37",
+      "checks/strong_local_gaussian_core_receipt.json": "94ea798d05b4f50e29ae05ddeea2d206404dc5deb5369a8647f38287d2737af1",
+      "checks/strong_local_gaussian_core_author_amendment.json": "c7198b84f3705037bbe3ee066011ccb99d8b8af7c9868a230495417ee620a450"
+    },
+    "scope": "These compare listed bytes only. Concurrent coordinator/reviewer files were not edited or claimed to be frozen by this author."
+  },
+  "new_results": "Uniform complete-reader finite-real-jet fine-analytic mean substitution; actual bare and retained-small-boundary verification; normalized real simultaneous shift/covariance-jet bound. Existing MK/WR compact return is antecedent, not new closure.",
+  "remaining_conditions": [
+    "Generic inherited real finite jets do not supply ME4 fine analyticity or an independently allocated rare reserve.",
+    "The unexpanded real density bound does not prove complete-reader covariance locality; SG/RJ improvement is separate and not consumed. No new core-atom PSD weakening is assumed.",
+    "The ME24a polynomial requires a further explicit support margin in any integration theorem; the analytic substitution already spent three beta/16 margins.",
+    "Retained hard-selector jets, rough outside-only normalizer jets, R_h/Z_A and general history/reference integration, native mu+2 matching, all-scale iteration and both physical targets remain OPEN."
+  ],
+  "independent_review": "Different fresh source-first reviewer requested through root; this author supplies no LAND/HOLD verdict.",
+  "execution": "No scientific numerical experiment, scientific runner, child worker, Git/front/PR/audit operation or predecessor edit. Metadata-only Python, bounded reads and primary web research. Root owns publication."
+}

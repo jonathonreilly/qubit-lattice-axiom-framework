@@ -1,0 +1,37 @@
+{
+  "kind": "author freeze receipt; no independent verdict",
+  "source": {
+    "path": "BARE_DETERMINANT_COUPLING_ASTRA.md",
+    "lines": 581,
+    "sha256": "426f774581ae8385b1c546e676fb313bfed48ab14913454bdc38f67f2cebb230"
+  },
+  "read_manifest": {
+    "path": "checks/bare_determinant_coupling_read_manifest.json",
+    "lines": 108,
+    "sha256": "c3ce8fb1dc821a469a26266c8ddafe77405adb37231f5bf5d9bdff65c539f0f0"
+  },
+  "bounded_result": "BD29 reduces the bare one-loop coefficient to the known normalizer-amplitude term plus an explicit absolutely convergent finite coarse-Brillouin-zone matrix integral. BD6-BD23 specify every mode, paired contour, traceless SU(N) saddle coefficient, colour entry and momentum coefficient.",
+  "new_critical_motion_result": "For the actual small classical Cartan branch, centralizer invariance makes the critical links commuting; entrywise conjugation and uniqueness make their logarithms odd. Thus the second critical variation vanishes. The first is kappa G(p) Q(-p)^T e_mu.",
+  "normalization": "Intrinsic determinant and Haar-coordinate cancellation are exact; normalized-kernel saddle and amplitude are retained. No root/harmonic/crossing/colour mode or volume normalization is discarded.",
+  "reader_and_limits": "BM original-reader moments and intrinsic measure identity identify the canonical volume-first symbol. Fixed nonzero compatible momentum precedes the infrared limit; full finite-momentum Wilson closure is not asserted.",
+  "remaining_obstacle": "The signed value of the explicit integral is unevaluated. No sign is established on any N,L,kappa domain. Evaluation or certified sign testing requires separate preregistration and computation, or further analytic inequalities.",
+  "review_targets": [
+    "Actual Cartan centralizer/conjugation uniqueness proof and b_T second variation",
+    "S4-prime word enumeration, owner offsets and degree-four constrained saddle recurrence",
+    "Right intrinsic fluctuation order and exact Haar-coordinate cancellation",
+    "Colour basis/dual root sectors and all-mode gapped matrices",
+    "Fourier routing, half factors, cosine extraction and P-squared coefficients",
+    "Volume-first Ward/moment identification and uniform convergence bound"
+  ],
+  "status": {
+    "author_proposal": "pending DIFFERENT fresh independent review",
+    "retained_or_audit_verdict_assigned": false,
+    "scientific_numerics_run": false,
+    "full_one_loop_value_or_sign": false,
+    "all_scale_trajectory": false,
+    "non_freeness": false,
+    "continuum_existence": false,
+    "physical_continuum_gap": false
+  },
+  "ownership": "Only BARE_DETERMINANT_COUPLING_ASTRA.md and checks/bare_determinant_coupling_* authored. Root owns publication, review dispatch, shared fronts, Git and audits."
+}

@@ -551,8 +551,12 @@ seminorms (Leibniz and (1+|x|²+|y|²)≤(1+|x|²)(1+|y|²)), and its
 range is flat on coincidences. Continuity of S therefore passes RP
 to every finite sequence in the restricted positive space.
 
-These steps re-prove the RP portion of OSLEAF55 Lemma RP-lat,
-CLOSURE-sep(d), and the RP part of CONTRACT-sep. They do not verify
+These steps re-prove the RP portion of OSLEAF55 Lemma RP-lat with
+geometric half-edge support, CLOSURE-sep(d), and the RP part of CONTRACT-sep.
+The original endpoint-only RP-lat wording is false at temporal extent two;
+OSLEAF55 now distinguishes its two geometric arcs, as in §1 here. This
+finite-domain correction does not supply any continuum convergence input.
+These steps do not verify
 that file's reconstruction theorem, quantitative EXT proof, growth
 constants, or owner choice of algebra. In particular e(f)² generally
 is NOT an element of this restricted domain: f⊗f need not be flat at
@@ -612,7 +616,7 @@ The main-source locators are `git show <pinned-origin/main>:docs/<name>`:
 | CODEX_REVIEW_P4 §1.1 | IMPORTED-AND-REVERIFIED | The matching-link change of variables is re-derived in §2.3. Coordinate-prism RP requires the additional §5 classification. |
 | CODEX_REVIEW_P4 §4.1; PANEL_P1 closure | IMPORTED-AND-REVERIFIED | Only their finite-sum RP limit implication, under actual convergence of products, is used and re-proved in §6. Other invariance/regularity inputs remain external. |
 | CODEX_REVIEW_HINT `Lemma BARE`; ROTDEF §5.1 | IMPORTED-AND-REVERIFIED | Pointwise normalization and reverse integration prove exactly the bare marginal, §4.1. |
-| OSLEAF55 D2–D8, RP-lat and RP portions of CLOSURE/CONTRACT | IMPORTED-AND-REVERIFIED | Restricted-domain RP transfer is re-proved in §6.2. Its unqualified “banked” coordinate-RP descriptions are status overstatements relative to ASSEMBLY55 F3; independent review is still pending. |
+| OSLEAF55 D2–D8, RP-lat and RP portions of CLOSURE/CONTRACT | IMPORTED-AND-REVERIFIED | Restricted-domain RP transfer is re-proved in §6.2 using geometric half-edge support. The original endpoint-only wording at temporal extent two was defective and is corrected in OSLEAF55; the source reviews remain historical and the affected confirmation is separate. This supplies no continuum convergence hypothesis. |
 | OSLEAF55 quantitative EXT, reconstruction and trajectory existence | IMPORTED-NOT-YET-REVERIFIED | Consumed only as named open/supplied hypotheses where needed; no analytic estimate is promoted. |
 
 Literature access: [Osterwalder–Seiler (1978)](https://doi.org/10.1016/0003-4916(78)90039-8)

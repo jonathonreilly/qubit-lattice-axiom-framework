@@ -1,0 +1,88 @@
+{
+  "schema": "scoped_review_freeze_receipt_v1",
+  "frozen_utc": "2026-10-30T00:00:13.772596+00:00",
+  "reviewer": "/root/review_hrp_half_arc",
+  "requested_model": "gpt-6-astra",
+  "requested_reasoning_effort": "max",
+  "configuration_limit": "Requested in coordinator brief; backend model/effort not independently attested by this tool context. Fresh Codex context; no cross-family independence claimed.",
+  "worktree_head": "295b508bea2c65bf548172f3190e32f7f7eaf6cf",
+  "observed_main": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "remote_fetch": false,
+  "verdict": "LAND",
+  "verdict_scope": "OSLEAF55 geometric-half site-RP domain and HRP affected RP export only; not global landing/integration/audit approval.",
+  "findings": {
+    "prior_bug": "REVIEW2_HRP finding 1 independently verified and corrected",
+    "remaining_required_fixes": [],
+    "new_blocking_findings": 0
+  },
+  "proof_checks": [
+    "analytic extent-two SU(N) counterexample with explicit nonzero configuration",
+    "edge/plaquette classification for every even temporal extent 2m, m>=1",
+    "Haar conditional expectation square with both shared boundary slices",
+    "actual clover temporal support and reflection convention",
+    "conditional continuum RP passage on actual ordered and literal consumer domains"
+  ],
+  "mechanical_checks": [
+    "baseline/corrected source hashes match exact task pins",
+    "exact two-file diff captured",
+    "all read range and full-source hashes rechecked at freeze",
+    "61 historical evidence/review files byte-identical to baseline",
+    "git diff --check on corrected source passed",
+    "manifest JSON and report terminal verdict checked"
+  ],
+  "numerical_runs": 0,
+  "full_pipeline_runs": 0,
+  "commits_created": 0,
+  "source_edits_by_reviewer": 0,
+  "audit_or_ledger_mutations": 0,
+  "full_goals": {
+    "ym4d_existence": "OPEN",
+    "physical_continuum_mass_gap": "OPEN"
+  },
+  "artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_HRP_HALF_ARC_ASTRA.md",
+      "sha256": "62285ded5d09d3732db64103a574ba4084c0533a2ea11530b64595140191348a",
+      "bytes": 13472
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_hrp_half_arc_read_manifest.json",
+      "sha256": "987813bfabea7007d40cd055fadc61a48f68ab219eaf1b773e0bf387393d5936",
+      "bytes": 14856
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_hrp_half_arc_history.json",
+      "sha256": "723c94bb670b7856e76f045e11b2abe6c40a013032c381b263e465e1e3933d67",
+      "bytes": 19341
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_hrp_half_arc_source.diff",
+      "sha256": "d201dd63434e062639dc8255a8f8ba02e6d7f969385b7d2a9a53dc93f9270a2b",
+      "bytes": 6221
+    }
+  ],
+  "affected_sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HRP.md",
+      "sha256": "d3a53ef3b29d09c774b1a836603ca731eeadb580127d3928dbbcd5dbe343699e"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OSLEAF55.md",
+      "sha256": "7f73bedc795e9356f65651a0d39b1fd3e8300fb460846cf84a45f0c5307f0c1c"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW2_HRP.md",
+      "sha256": "095a038fb111b456d63c0262b968aaa7b3d08bede58ce34ab214320cda972278"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_half_arc_correction.md",
+      "sha256": "bc1711cfd37e78768168c89d6b78c233b913a73ff427f89b4cdd27ca7b0e7757"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_half_arc_correction.json",
+      "sha256": "02dbd3abe145bff911937025816b7b0dcbb858d4ecb88b703eb9aa4bd03c64a4"
+    }
+  ],
+  "immutable_after_freeze": true,
+  "reopen_rule": "Any affected source, premise, support/reflection convention, or consumer convergence contract change needs affected review. Coordinator handles later main freshness and integration gates."
+}

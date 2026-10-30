@@ -290,13 +290,22 @@ file. **Owner decision OWN-alg should be recorded as: T_OS in OS I/II's formulat
 ## §2. The closure re-proved for separated distributions (Codex bank item 5 does not cover this formulation)
 
 **Lemma RP-lat (the L9a mechanism, site reflection — the case used). PROVEN-HERE (standard; Osterwalder–Seiler [m]).** Wilson
-measure on Λ_{a,R}, R/a even; θ : t ↦ −t (mod R) fixes the two site planes t = 0 and t = R/2; Λ_+ := {0 ≤ t ≤ R/2}; 𝔄_+ :=
-functions of the links with both ends in Λ_+; (ΘA)(U) := A(θU). Then ω_{a,R}(Θ(A)^*A) ≥ 0 for every A ∈ 𝔄_+.
+measure on Λ_{a,R}, R/a even; θ : t ↦ −t (mod R) fixes the two site planes t = 0 and t = R/2. Choose the closed temporal
+arc Λ_+ := [0,R/2] and let 𝔄_+ consist of bounded complex measurable functions of links GEOMETRICALLY CONTAINED in that
+half, keeping distinct periodic geometric edges even when their endpoint names coincide. Thus positive temporal edges
+have base 0 ≤ t ≤ R/2−a, while spatial edges at 0 ≤ t ≤ R/2 are included. Inverse orientations denote the same geometric
+edge. Set (ΘA)(U) := A(θU). Then ω_{a,R}(Θ(A)^*A) ≥ 0 for every A ∈ 𝔄_+.
 *Proof.* Both fixed planes are site planes, so no plaquette straddles one: every plaquette lies in Λ_+ or in Λ_− := θΛ_+, and
 plaquettes inside a fixed plane are θ-invariant (s(U^{-1}) = s(U) absorbs orientation). Hence S_W = S_+ + ΘS_+ with S_+ :=
 Σ_{p⊂Λ_+, p⊄fixed planes}βs(U_p) + ½Σ_{p⊂fixed planes}βs(U_p). Write U = (U_0, U_+, U_−), U_0 the links inside the fixed planes
 (θ-fixed), U_± the remaining links of Λ_±. Then Z·ω(Θ(A)^*A) = ∫dU_0 ∫dU_+dU_− conj(A(θU))e^{−ΘS_+(U)}A(U)e^{−S_+(U)} =
 ∫dU_0 |∫dU_+ A(U_0, U_+)e^{−S_+(U_0,U_+)}|² ≥ 0, by the Haar-preserving substitution U_− = θU′_+ and reality of S_+. ∎
+*Extent-two convention.* Endpoint membership alone is insufficient when R/a=2: it includes both temporal arcs. For the
+two distinct positively oriented temporal edges U_0,U_1 at one spatial site, F=Re Tr U_0−Re Tr U_1 then satisfies
+F(θU)=−F(U), so ω(Θ(F)^*F)=−ω(F²)<0 under every finite reflection-symmetric Wilson density. The strict sign follows from
+full support and F not being identically zero. The geometric half above includes only one arc and excludes this F.
+This corrects the original endpoint-only wording; [the second HRP review](REVIEW2_HRP.md) records its discovery. The
+paired-half proof and all eventual compact-support continuum uses retain their stated hypotheses.
 *Use.* The clover e_a(x) involves only links within distance a of x, and θ maps clover_{μν}(x) onto clover_{μν}(θx), so
 Θ(ê_a(x)) = ê_a(θx) (ω(e_a) is θ-invariant). For F ∈ 𝒜_{𝒟+} with supp F_m ⊂ (B_{R/4})^m and a ≤ τ_F := min{t_1 over supp F},
 A_F ∈ 𝔄_+, and the change of variables x ↦ θx in the lattice sum gives exactly

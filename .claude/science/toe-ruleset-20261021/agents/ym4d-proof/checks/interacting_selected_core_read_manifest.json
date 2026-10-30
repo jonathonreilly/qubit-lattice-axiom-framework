@@ -1,0 +1,304 @@
+{
+  "created_utc": "2026-10-29T23:51:38.574971+00:00",
+  "workspace": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "author_unit": "INTERACTING_SELECTED_CORE_ASTRA.md",
+  "requested_assignment": "Astra/max; runtime/provider identity not independently audited; no nested workers.",
+  "inputs": [
+    {
+      "path": "PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497,
+      "lines": 11,
+      "coverage": "Complete, 11 lines, fresh this task.",
+      "role": "New-lane process; no written-proof preregistration requirement."
+    },
+    {
+      "path": "briefs_finite_coupling/AUTHOR_BRIEF_INTERACTING_CORE.md",
+      "sha256": "e575a3e633b25177009c9821bb4078d6e44b425529487ed70107b5fcfd639b82",
+      "bytes": 5336,
+      "lines": 96,
+      "coverage": "Complete, 96 lines, fresh this task.",
+      "role": "Coordinator task and proposed route, not a theorem input."
+    },
+    {
+      "path": "COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "bytes": 28993,
+      "lines": 568,
+      "coverage": "Complete, 568 lines. Initial read output was truncated; 340-520 and 520-568 recovered the omitted portion.",
+      "role": "Actual lift/tree quotient, real precision gap, joint local charts, complex uniqueness ball and real-sector cuts."
+    },
+    {
+      "path": "REVIEW_COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "3c39ed64cffd800bb930eda9ee8d7dbde20612e307cd90e512896f1aee34d549",
+      "bytes": 17323,
+      "lines": 282,
+      "coverage": "Complete, 282 lines; tail 250-282 freshly rechecked.",
+      "role": "Scoped review of the actual CB input, not an all-order interacting estimate."
+    },
+    {
+      "path": "COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "bytes": 39217,
+      "lines": 722,
+      "coverage": "Complete, 722 lines via 1-260, 261-530, 531-722; the truncated section-8 passage was recovered at 630-665.",
+      "role": "Original-reader parametrix, both marked input/output norms and real-V composition. Complex original-V domain is proved anew in IC."
+    },
+    {
+      "path": "REVIEW_COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "f18775b209aba8711f8ad42ff82432f127171b4b241987b295e6f76124964f35",
+      "bytes": 13623,
+      "lines": 63,
+      "coverage": "Complete, 63 long lines, fresh this task.",
+      "role": "Scoped actual-SA confirmation and its remaining complement/domain obligations."
+    },
+    {
+      "path": "FINITE_COUPLING_KERNEL_ASTRA.md",
+      "sha256": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b",
+      "bytes": 30169,
+      "lines": 590,
+      "coverage": "Fresh selected ranges 1-58 and 267-464. Complete author read from the immediately preceding frozen FK task reused at this unchanged source hash; its read/receipt provenance is separately pinned below.",
+      "role": "Uniform analytic normalized SU(N) kernel remainder, full Haar/independent complexification and exact amplitude/action units."
+    },
+    {
+      "path": "REVIEW_FINITE_COUPLING_KERNEL_ASTRA.md",
+      "sha256": "87d532f6505f7f80edb85c2a397d5fd6a33f27d99c19de5919cf397ffbfebc96",
+      "bytes": 15397,
+      "lines": 248,
+      "coverage": "Complete, 248 lines, fresh this task.",
+      "role": "Fresh independent scoped FK review, including the recorded author-mutation coverage limitation."
+    },
+    {
+      "path": "checks/finite_coupling_kernel_read_manifest.json",
+      "sha256": "627122351b7005245f5c88248acb6b06decd1b2721c88eff8ab2935c01c25dce",
+      "bytes": 11179,
+      "lines": 178,
+      "coverage": "Complete metadata, 178 lines; methodology subsection re-extracted during packaging.",
+      "role": "Binds reused prior complete reads and the consistent methodology reference closure; does not create a new whole-paper read."
+    },
+    {
+      "path": "checks/finite_coupling_kernel_receipt.json",
+      "sha256": "1c8fe7055cbda74b167d73346a58e0c118362ccfd4c74988fdb7c55ab8725e0a",
+      "bytes": 5555,
+      "lines": 111,
+      "coverage": "Binding/hash metadata; no new proof read claimed.",
+      "role": "Prior FK immutable author provenance."
+    },
+    {
+      "path": "checks/review_finite_coupling_kernel_receipt.json",
+      "sha256": "ba66a9199e8ac56e2d042c1346d613cb781f46da9d50ee31c0fd4d44952cefed",
+      "bytes": 29604,
+      "lines": 599,
+      "coverage": "Binding/hash metadata; the review report itself was read completely.",
+      "role": "Prior FK independent receipt, not a numerical rerun."
+    },
+    {
+      "path": "RECOVERY_CLUSTER_ASTRA.md",
+      "sha256": "9c9264bd4d92b60798e48ccd2eb0ff230e221c3ffd2107c0f6443ec86de563cf",
+      "bytes": 34340,
+      "lines": 582,
+      "coverage": "Fresh 1-405 of 582 lines. Complete consumed two-stage connected-expansion proof in sections 1-4; later content is not consumed.",
+      "role": "Two-stage product-measure graph/tree argument, rebuilt explicitly in IC16-IC20."
+    },
+    {
+      "path": "SOFT_FLUCTUATION_COVARIANCE_ASTRA.md",
+      "sha256": "327d033b22281f5f727c018ccb9b1d23d8f7d131bd3633602d6655a9b3de2403",
+      "bytes": 29910,
+      "lines": 535,
+      "coverage": "Fresh 1-235 of 535 lines.",
+      "role": "Actual finite-u measure, full SU(N) HS conventions, quotient and normalizer factors; no all-depth inverse imported."
+    },
+    {
+      "path": "UNIFORM_ONE_LOOP_COUPLING_ASTRA.md",
+      "sha256": "b7baa6a711969c8fc96538009bb8f9f9acdde3f14f6d2f570a6ca5b9391516ce",
+      "bytes": 38024,
+      "lines": 723,
+      "coverage": "Fresh 1-280 of 723 lines. Prior author knowledge reused only for the already frozen one-step dictionary; no new full-file read claimed.",
+      "role": "UL1-UL12 action/FLOW/normalizer/gauge conventions; its Gaussian every-increment result is not used as a finite-u remainder estimate."
+    },
+    {
+      "path": "REVIEW_UNIFORM_ONE_LOOP_COUPLING_ASTRA.md",
+      "sha256": "ca80f189e924ac7d15462258d4a1e95734cfa55e45d382e7791dabdf0de2cc27",
+      "bytes": 21924,
+      "lines": 378,
+      "coverage": "Fresh 1-85 of 378 lines; prior exact affected fixed-complement review and author correction are reused, not restamped as a new whole-file read.",
+      "role": "Pins scoped LAND and corrected source; IC31 uses transported slice and measure, never the discarded fixed-complement invariance."
+    },
+    {
+      "path": "SOURCE_LOCAL_RETURN_ASTRA.md",
+      "sha256": "2eee991e4e4546aa3ed10ad0ffe40d840c5347a002d623aac47b2fc515fd7769",
+      "bytes": 46461,
+      "lines": 855,
+      "coverage": "Fresh 520-575 of 855 lines, plus bounded keyword navigation.",
+      "role": "Comparison with existing local supremum bounds; not an imported new O(1/u) connected theorem."
+    },
+    {
+      "path": "SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md",
+      "sha256": "ac985bb9b41a0d9d52ead7c2932df73e59c713c28c5c45f0629003552eee1243",
+      "bytes": 48141,
+      "lines": 863,
+      "coverage": "Fresh 200-275 of 863 lines, plus bounded keyword navigation.",
+      "role": "Comparison with existing analytic source-return statements; no hard complement conclusion imported."
+    },
+    {
+      "path": "ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "83917902d0cd82e1d73dbda9f29f79c7b8c224d5345827a0dc7c890bc94bb03d",
+      "bytes": 10795,
+      "lines": 50,
+      "coverage": "Only B03/B37/B38 rows are consumed. These exact three rows were reread during packaging after the concurrent fast-forward; whole-file hash is snapshot metadata, not a whole-file mathematical read.",
+      "role": "Literature classification and scope comparison only.",
+      "consumed_rows": [
+        {
+          "line": 11,
+          "text": "| [B03](LITERATURE_BRIDGES.md#b03) | [Dimock: large fields](https://arxiv.org/html/1212.5562v2) | background context | Comparison, candidate, or screened lead only; not an added premise of the proof. |"
+        },
+        {
+          "line": 45,
+          "text": "| [B37](LITERATURE_BRIDGES.md#b37) | [Balaban–Feldman–Knörrer–Trubowitz, Part4](https://arxiv.org/abs/1609.01748v1) | background context | Finite-degree field-map comparison; no gauge-force estimate imported. |"
+        },
+        {
+          "line": 46,
+          "text": "| [B38](LITERATURE_BRIDGES.md#b38) | [Balaban–Feldman–Knörrer–Trubowitz, Part3](https://arxiv.org/abs/1609.01747v1) | background context | Contour-method comparison; its incomplete full-error argument supplies no complement theorem. |"
+        }
+      ],
+      "consumed_rows_sha256": "e38afdf226a1971834fd5e4d4edd187a6d2cde2aac15639f888a74ceb3a49b8f"
+    },
+    {
+      "path": "LITERATURE_BRIDGES.md",
+      "sha256": "5c2420890b048b51a6cdb37623076f5e82a43a7552c99a37b6742fe01844981b",
+      "bytes": 25999,
+      "lines": 68,
+      "coverage": "Only B03/B37/B38 rows are consumed. These exact three rows were reread during packaging after the concurrent fast-forward; the earlier attempted table read was truncated and is not claimed complete.",
+      "role": "Primary-source locators and scope comparison only.",
+      "consumed_rows": [
+        {
+          "line": 13,
+          "text": "| <a id=\"b03\"></a>B03: [Dimock: large fields](https://arxiv.org/html/1212.5562v2) | Appendix F, Theorem F.1, (633)–(646); relevant localization passages in reviewer ledger | Requires independent site fluctuations, uniformly small localized interactions and specified exponential decay. The current cut gauge sea has not been represented in that form; failed histories are not automatically fixed holes. | background context | Sea localization and holes | This source is used as a candidate localization construction; it does not provide derivation closure for the current outer sea. |"
+        },
+        {
+          "line": 47,
+          "text": "| <a id=\"b37\"></a>B37: [Balaban–Feldman–Knörrer–Trubowitz, Part4](https://arxiv.org/abs/1609.01748v1) | Appendix A, complete PDF pp41–42, Proposition A.1 | Output and marked-input norms; contraction assumes a finite-degree nonlinear map. The actual infinite analytic SU(N) force and support-size costs require their own proof. | background context | Source-dependent critical field | Attribution and norm comparison for [SA](COVARIANT_SOURCE_ACTIVITY_ASTRA.md), with [scoped independent confirmation](REVIEW_COVARIANT_SOURCE_ACTIVITY_ASTRA.md). |"
+        },
+        {
+          "line": 48,
+          "text": "| <a id=\"b38\"></a>B38: [Balaban–Feldman–Knörrer–Trubowitz, Part3](https://arxiv.org/abs/1609.01747v1) | Complete PDF pp1–3 and12–15 | Complex stationary contours, covariance square roots and Stokes boundary terms in a bosonic parabolic model. The authors explicitly leave their full nonperturbative-error proof incomplete. | background context | Contour return and complement boundaries | No Yang–Mills hard-cut or normalized-complement estimate is imported. |"
+        }
+      ],
+      "consumed_rows_sha256": "c516a5c332c7aad74b8cceb01115ab9905dbb8605c67d7c8f2284be9b7090bc0"
+    },
+    {
+      "path": "BFT_B.md",
+      "sha256": "b6ddf451a4dfe2028a9f23fe7fe696ce11f1c17e497709ac3761da3e7a1172c6",
+      "bytes": 662171,
+      "lines": 4782,
+      "coverage": "Bounded keyword navigation for parity, quartic, cubic connected terms and 1/u; no whole-file or theorem read claimed. Earlier FK-manifest BFT scopes remain historical.",
+      "role": "Duplication screen only; no BFT theorem input."
+    },
+    {
+      "path": "FIXED_SOURCE_RADIUS_ASTRA.md",
+      "sha256": "6304245bdf27afa6c7f364da9bc41d8971cc0f2058c1e3484edef84df44cff86",
+      "bytes": 35303,
+      "lines": 627,
+      "coverage": "Bounded keyword navigation only. No full read or general FR theorem imported.",
+      "role": "Excluded dependency: fixed-source reader qualification was under review when assigned."
+    }
+  ],
+  "skill_entry_reads": [
+    {
+      "path": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "coverage": "Complete installed entry point freshly read in this task as a router. Previously read consistent fetched reference closure reused, not replaced by an unpinned installed-reference mix."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/review-loop/SKILL.md",
+      "sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "coverage": "Complete installed entry point freshly read in this task as a router. Previously read consistent fetched reference closure reused, not replaced by an unpinned installed-reference mix."
+    }
+  ],
+  "protected_frozen_sources": {
+    "COVARIANT_SOFT_BACKGROUND_ASTRA.md": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+    "REVIEW_COVARIANT_SOFT_BACKGROUND_ASTRA.md": "3c39ed64cffd800bb930eda9ee8d7dbde20612e307cd90e512896f1aee34d549",
+    "COVARIANT_SOURCE_ACTIVITY_ASTRA.md": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+    "FINITE_COUPLING_KERNEL_ASTRA.md": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b",
+    "REVIEW_FINITE_COUPLING_KERNEL_ASTRA.md": "87d532f6505f7f80edb85c2a397d5fd6a33f27d99c19de5919cf397ffbfebc96",
+    "checks/finite_coupling_kernel_read_manifest.json": "627122351b7005245f5c88248acb6b06decd1b2721c88eff8ab2935c01c25dce",
+    "checks/finite_coupling_kernel_receipt.json": "1c8fe7055cbda74b167d73346a58e0c118362ccfd4c74988fdb7c55ab8725e0a",
+    "checks/review_finite_coupling_kernel_receipt.json": "ba66a9199e8ac56e2d042c1346d613cb781f46da9d50ee31c0fd4d44952cefed",
+    "SOFT_FLUCTUATION_COVARIANCE_ASTRA.md": "327d033b22281f5f727c018ccb9b1d23d8f7d131bd3633602d6655a9b3de2403",
+    "UNIFORM_ONE_LOOP_COUPLING_ASTRA.md": "b7baa6a711969c8fc96538009bb8f9f9acdde3f14f6d2f570a6ca5b9391516ce",
+    "REVIEW_UNIFORM_ONE_LOOP_COUPLING_ASTRA.md": "ca80f189e924ac7d15462258d4a1e95734cfa55e45d382e7791dabdf0de2cc27",
+    "COVARIANT_COMPLEMENT_ASTRA.md": "af4c8206ccc2ce86274e5f92643e28154abb010b7f413d5cf578035efb1eaa7b"
+  },
+  "methodology": {
+    "process_revision": "43ac056899",
+    "used_fetched_authority": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+    "stale_local_main": "Not used.",
+    "prior_reference_closure": "Reused the consistent complete physics-loop/review-loop references recorded in the pinned FK manifest and earlier author units. No new primitive, premise authority, audit verdict or retained-grade assignment.",
+    "coordinator_update": "Coordinator reported fetched main01589af3faf806b736c42dc2f3bd625e9edead9f changes only unrelated files and leaves methodology unchanged, and fast-forwarded this checkout to295b508bea2c65bf548172f3190e32f7f7eaf6cf. Those reports are not newly read mathematical sources. Shared PROOF/front statuses were not consumed or restamped. Only the three explicitly printed literature rows were freshly rebound.",
+    "ownership": "Only INTERACTING_SELECTED_CORE_ASTRA.md and checks/interacting_selected_core_* written. No Git mutations, frozen-source changes, shared summaries, locks, audits or ledgers. Coordinator owns review dispatch and publication."
+  },
+  "primary_literature": [
+    {
+      "url": "https://arxiv.org/html/1212.5562v2",
+      "version": "1212.5562v2, 2013-04-02",
+      "coverage": "Fresh introduction/model lines58-125, complete section3.14 lines2374-2452, complete AppendixF lines3090-3155 of the returned versioned HTML. No full-paper read claimed.",
+      "role": "Dimock d=3 scalar phi4 independent-variable/local-small-interaction cluster organization; the needed two-stage combinatorial proof is rebuilt in sections4-5 of IC. No Yang-Mills sea or hard-cut hypothesis imported."
+    },
+    {
+      "url": "https://arxiv.org/html/1609.01748v1",
+      "version": "1609.01748v1, 2016-09-04",
+      "coverage": "Fresh abstract/introduction model lines49-55 and complete AppendixA lines1108-1159; selected section5 text1043-1107 was displayed but is not consumed.",
+      "role": "Balaban-Feldman-Knorrer-Trubowitz output/marked-input norms and finite-degree contraction comparison. IC11/IC15 rebuild the actual infinite analytic majorant."
+    },
+    {
+      "url": "https://arxiv.org/html/1609.01747v1",
+      "version": "1609.01747v1, 2016-09-04",
+      "coverage": "Fresh title/abstract, introduction Stokes/limitations discussion approximately40-65, and selected contour construction250-324. No complete-paper read claimed.",
+      "role": "Balaban-Feldman-Knorrer-Trubowitz complex contour, transpose and covariance-square-root comparison; its incomplete full-error construction supplies no complement estimate."
+    }
+  ],
+  "failures_and_repairs": [
+    {
+      "type": "Read inventory failure",
+      "detail": "An initial wc command guessed COVARIANT_BACKGROUND_ASTRA.md, REVIEW_COVARIANT_BACKGROUND_ASTRA.md and FIXED_RADIUS_SOURCE_ASTRA.md; these paths did not exist and the command exited1. Correct names were found by rg --files. No scientific computation or edit failed."
+    },
+    {
+      "type": "Read output truncation",
+      "detail": "CB and SA omitted mathematical ranges were recovered as recorded above. A broad literature-table output was not fully recovered; only its named rows are claimed consumed."
+    },
+    {
+      "type": "Rejected analytic shortcuts",
+      "detail": "Parity-only Cauchy leaves p^6; quartic sup leaves p^4; an extensive variance misses overlap incidence; real positivity gives no uniform complex reader tube; cube parity gives no Ad-invariant sector. These are analytic route corrections, not numerical failures or a no-go result."
+    },
+    {
+      "type": "Author self-check repairs before freeze",
+      "detail": "Retained explicit CB complex HS uniqueness radius and complex curvature cap; stated full pinned-gauge preimage of the real sector; corrected the explicit right-coordinate dexp trivialization and restricted the orthogonal Gram proof to real data, with bilinear analytic transport for complex data; made the common tree/finite-u thresholds explicit; corrected a literal patch marker and equation numbering. These are author edits, not independent-review findings."
+    },
+    {
+      "type": "Inherited FK evidence limitation",
+      "detail": "The FK review records a surviving author mutation deleting lambda from one Weyl routine, separately covered there by an independent SU(3) lambda calculation. No prior numerical result is relabelled as evidence for IC."
+    },
+    {
+      "type": "Mechanical equation-label parser failure",
+      "detail": "First packaging command exited1 after writing only the read manifest. Its unanchored regex also matched the reference sup_(IC3), yielding [1,2,3,4,3,5,...,32] rather than 1 through32. Original assertion failure is preserved here. The corrected metadata parser recognizes labels only at line ends; no source formula or scientific criterion was changed.",
+      "original_error": "AssertionError: [1, 2, 3, 4, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]"
+    }
+  ],
+  "evidence": {
+    "mathematical_result": "Written proof IC1-IC32, pending new hostile review.",
+    "scientific_numerical_experiments": 0,
+    "scientific_numeric_criteria": "None needed: no new scientific numerical run or numerical packaging replay.",
+    "resource_gate": "No numerical/resource-consuming worker was launched; lock/resource thresholds were neither changed nor bypassed.",
+    "metadata_checks": "SHA256 bindings, source labels, internal links and whitespace only; not mathematical validation."
+  },
+  "nonclaims": [
+    "No estimate of the normalized hard-cut complement G minus Omega or G^c.",
+    "No nonzero-source or hard-history integration theorem.",
+    "No spatial/hypercubic symmetry of the chosen axial-tree sector inferred from root-gauge covariance.",
+    "No volume-first polarization/marginal extraction from Ward alone.",
+    "No all-depth nonlinear RG or every-increment finite-u bracket.",
+    "No continuum existence, nonfree reconstruction or positive physical continuum mass gap.",
+    "No whole-PR PASS, audit verdict or negative-route verdict."
+  ],
+  "review_state": "Author construction frozen only after receipt creation; fresh independent review required."
+}

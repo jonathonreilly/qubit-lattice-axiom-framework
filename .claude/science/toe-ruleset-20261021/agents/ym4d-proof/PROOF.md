@@ -436,11 +436,45 @@
 > proofs without new numerical experiments; the original packaging failure
 > and prior CC failures remain preserved.
 >
-> Astra/max authors now pursue the [interacting selected-core remainder](briefs_finite_coupling/AUTHOR_BRIEF_INTERACTING_CORE.md)
-> and the [graded-complement construction](briefs_return/AUTHOR_BRIEF_GRADED_COMPLEMENT.md).
-> The first includes a separately justified gauge-invariant ball-sector variant;
-> the second must localize hard witnesses and pay actual exterior/reference
-> costs. These are active research tasks, not established RG/complement results.
+> The [interacting selected-core construction](INTERACTING_SELECTED_CORE_ASTRA.md)
+> is frozen as an author packet and is undergoing a fresh independent Astra/max
+> review. Its claimed one-step, source-free `O(1/u)` connected remainder uses a
+> proved complex original-coarse-field tube and separately treats a gauge-covariant
+> ball sector. Its exact action dictionary retains Haar, kernel vacua, cutoff
+> probabilities and the transported root-tree Gram. These claims are pending
+> review; neither complementary integral, inherited source histories, spatial
+> symmetries nor an iterated finite-u coupling map is supplied by this packet.
+> The [graded-complement author](briefs_return/AUTHOR_BRIEF_GRADED_COMPLEMENT.md)
+> continues work on local hard witnesses and actual exterior/reference costs.
+>
+> Concurrent progress through `a0a3499e84` is recovered. The actual returned-
+> denominator construction [RD](RD.md) has a fresh [HOLD review](REVIEW_RD.md):
+> the effective-history identity, common complex normalization/source domain,
+> interacting exterior integration and full-reader hole costs remain missing.
+> A hard indicator has `||Theta-1||_infinity=1`; a small integrated tail does not
+> supply the small sup-norm defect required by RD's present mixed lemma.
+> The older author-side partial-note disposition does not close this hold.
+>
+> The second reviews of [HRP](REVIEW2_HRP.md), [LGF](REVIEW2_LGF.md),
+> [LIB1](REVIEW2_LIB1.md), [REC](REVIEW2_REC.md),
+> [SOFTHARD](REVIEW2_SOFTHARD.md) and [WT0](REVIEW2_WT0.md) confirm their
+> specified finite or conditional results. They do not construct the missing
+> Yang–Mills inputs. Their model/effort configuration is not independently
+> established here. A separate [Claude spot review](REVIEW_XFAM_REC_CONT_SPOT.md)
+> finds REC-CONT's exhaustion argument sound conditional on its seed; it does
+> not review that seed or the complete reconstruction.
+>
+> REVIEW2_HRP exposed a real consumer-domain error at temporal extent two:
+> endpoint membership admits both parallel temporal arcs. [OSLEAF55](OSLEAF55.md)
+> and [HRP](HRP.md) now specify one geometric half-arc. A fresh
+> [affected-source review](REVIEW_HRP_HALF_ARC_ASTRA.md) gives scoped LAND after
+> rebuilding the counterexample, paired Haar square, both fixed slices and
+> actual clover support. All 61 historical HRP/ol55 evidence and review files
+> remain unchanged. No continuum convergence hypothesis was supplied by this
+> correction. The reconstruction consumers' E0-prime, tensor-domain and
+> translation-count qualifications identified in REVIEW2_REC still need their
+> separate source followthrough. Full existence and the physical continuum mass
+> gap remain OPEN.
 >
 > Both **full continuum existence and the physical continuum mass gap remain
 > OPEN**. No audit grade or whole-PR verdict is added at this checkpoint.

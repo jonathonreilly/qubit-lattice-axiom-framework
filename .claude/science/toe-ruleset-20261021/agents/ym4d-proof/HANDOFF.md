@@ -29,7 +29,7 @@ removal and apply to a dense family of physical observable states. Internal
 Hessian gaps do not meet this requirement.
 
 Continuation baseline: `962f97c259d8c241df632a07e27f498f4ad33b09`.
-Methodology refreshed at `ca2bc7ddf64790da96cd43d42017d000fbfe4808`;
+Latest fetched `origin/main`: `01589af3faf806b736c42dc2f3bd625e9edead9f`;
 the methodology sources are unchanged from `6c269770273c3fe00de350d5a3c14cacb70c2833`.
 
 ### Reviewed producer checkpoint — 29 October 2026
@@ -316,11 +316,45 @@ complement remain separate obligations. Author and reviewer used analytic
 proofs without new numerical experiments; the original packaging failure
 and prior CC failures remain preserved.
 
-Astra/max authors now pursue the [interacting selected-core remainder](briefs_finite_coupling/AUTHOR_BRIEF_INTERACTING_CORE.md)
-and the [graded-complement construction](briefs_return/AUTHOR_BRIEF_GRADED_COMPLEMENT.md).
-The first includes a separately justified gauge-invariant ball-sector variant;
-the second must localize hard witnesses and pay actual exterior/reference
-costs. These are active research tasks, not established RG/complement results.
+The [interacting selected-core construction](INTERACTING_SELECTED_CORE_ASTRA.md)
+is frozen as an author packet and is undergoing a fresh independent Astra/max
+review. Its claimed one-step, source-free `O(1/u)` connected remainder uses a
+proved complex original-coarse-field tube and separately treats a gauge-covariant
+ball sector. Its exact action dictionary retains Haar, kernel vacua, cutoff
+probabilities and the transported root-tree Gram. These claims are pending
+review; neither complementary integral, inherited source histories, spatial
+symmetries nor an iterated finite-u coupling map is supplied by this packet.
+The [graded-complement author](briefs_return/AUTHOR_BRIEF_GRADED_COMPLEMENT.md)
+continues work on local hard witnesses and actual exterior/reference costs.
+
+Concurrent progress through `a0a3499e84` is recovered. The actual returned-
+denominator construction [RD](RD.md) has a fresh [HOLD review](REVIEW_RD.md):
+the effective-history identity, common complex normalization/source domain,
+interacting exterior integration and full-reader hole costs remain missing.
+A hard indicator has `||Theta-1||_infinity=1`; a small integrated tail does not
+supply the small sup-norm defect required by RD's present mixed lemma.
+The older author-side partial-note disposition does not close this hold.
+
+The second reviews of [HRP](REVIEW2_HRP.md), [LGF](REVIEW2_LGF.md),
+[LIB1](REVIEW2_LIB1.md), [REC](REVIEW2_REC.md),
+[SOFTHARD](REVIEW2_SOFTHARD.md) and [WT0](REVIEW2_WT0.md) confirm their
+specified finite or conditional results. They do not construct the missing
+Yang–Mills inputs. Their model/effort configuration is not independently
+established here. A separate [Claude spot review](REVIEW_XFAM_REC_CONT_SPOT.md)
+finds REC-CONT's exhaustion argument sound conditional on its seed; it does
+not review that seed or the complete reconstruction.
+
+REVIEW2_HRP exposed a real consumer-domain error at temporal extent two:
+endpoint membership admits both parallel temporal arcs. [OSLEAF55](OSLEAF55.md)
+and [HRP](HRP.md) now specify one geometric half-arc. A fresh
+[affected-source review](REVIEW_HRP_HALF_ARC_ASTRA.md) gives scoped LAND after
+rebuilding the counterexample, paired Haar square, both fixed slices and
+actual clover support. All 61 historical HRP/ol55 evidence and review files
+remain unchanged. No continuum convergence hypothesis was supplied by this
+correction. The reconstruction consumers' E0-prime, tensor-domain and
+translation-count qualifications identified in REVIEW2_REC still need their
+separate source followthrough. Full existence and the physical continuum mass
+gap remain OPEN.
 
 Current assignments use the requested `gpt-6-astra / max` configuration:
 
@@ -330,11 +364,13 @@ Current assignments use the requested `gpt-6-astra / max` configuration:
   analytic/local scope and the surviving author-checker mutation.
 - **Original-law coercivity and tails — scoped review completed:** the local
   price retains the full exterior/reference cost and restricted SA interfaces.
-- **Interacting selected-core remainder — active author:** construct the
-  actual connected finite-u correction, complex coarse-field domain and
-  separately justified gauge-invariant ball-sector variant.
+- **Interacting selected-core remainder — fresh review active:** the frozen
+  author packet claims the connected finite-u correction, complex coarse-field
+  domain and separate ball-sector Ward identity at one-step, source-free scope.
 - **Graded complement — active author:** localize hard witnesses, control
   conditional centers and pay the full boundary, buffer and entropy costs.
+- **Geometric half-arc — scoped affected review completed:** preserve the
+  exact source correction and historical evidence; continuum inputs stay open.
 - **Selected source sector, uniform one-loop increment, original-law boundary
   and LGF consumer — independent reviews completed:** scoped results are recorded
   above. Other

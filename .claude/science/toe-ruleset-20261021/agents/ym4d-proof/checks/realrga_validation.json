@@ -1,0 +1,107 @@
+{
+  "kind": "Document/source bookkeeping only; does not execute mathematical diagnostics.",
+  "utc": "2026-10-30T08:32:54.298746+00:00",
+  "source_revision": "cd67e1c9e6bbed8b92fee069de66ef0b25486316",
+  "note_sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+  "source_drift": [],
+  "all_local_links_exist": true,
+  "local_links": [
+    {
+      "source": "REALRGA.md",
+      "target": "REALRGA_LOG.md",
+      "exists": true
+    },
+    {
+      "source": "REALRGA.md",
+      "target": "checks/realrga_criteria.md",
+      "exists": true
+    },
+    {
+      "source": "REALRGA.md",
+      "target": "checks/realrga_check.py",
+      "exists": true
+    },
+    {
+      "source": "REALRGA.md",
+      "target": "checks/realrga_result.json",
+      "exists": true
+    },
+    {
+      "source": "REALRGA.md",
+      "target": "REALRGA_LOG.md",
+      "exists": true
+    },
+    {
+      "source": "REALRGA_LOG.md",
+      "target": "checks/realrga_author_fixes_v3.diff",
+      "exists": true
+    },
+    {
+      "source": "REALRGA_LOG.md",
+      "target": "checks/realrga_sources.json",
+      "exists": true
+    },
+    {
+      "source": "REALRGA_LOG.md",
+      "target": "checks/realrga_criteria.md",
+      "exists": true
+    },
+    {
+      "source": "REALRGA_LOG.md",
+      "target": "checks/realrga_check.py",
+      "exists": true
+    },
+    {
+      "source": "REALRGA_LOG.md",
+      "target": "checks/realrga_result.json",
+      "exists": true
+    },
+    {
+      "source": "REALRGA_LOG.md",
+      "target": "checks/realrga_stdout.json",
+      "exists": true
+    },
+    {
+      "source": "REALRGA_LOG.md",
+      "target": "checks/realrga_stderr.txt",
+      "exists": true
+    },
+    {
+      "source": "REALRGA_LOG.md",
+      "target": "checks/realrga_validation.json",
+      "exists": true
+    },
+    {
+      "source": "REALRGA_LOG.md",
+      "target": "checks/realrga_validation_initial.json",
+      "exists": true
+    },
+    {
+      "source": "REALRGA_LOG.md",
+      "target": "checks/realrga_validate.py",
+      "exists": true
+    },
+    {
+      "source": "REALRGA_LOG.md",
+      "target": "checks/realrga_review.md",
+      "exists": true
+    },
+    {
+      "source": "REALRGA_LOG.md",
+      "target": "checks/realrga_receipt.json",
+      "exists": true
+    }
+  ],
+  "all_tables_three_columns": true,
+  "table_cell_counts": [
+    3
+  ],
+  "tracked_changes": [],
+  "staged_changes": [],
+  "unexpected_untracked": [],
+  "numerical_status": "NOT RUN",
+  "mathematical_checks_executed": 0,
+  "criteria_match_execution": true,
+  "checker_match_execution": true,
+  "stdout_matches_result": true
+}

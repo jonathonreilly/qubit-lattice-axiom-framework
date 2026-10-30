@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/the_family_image_of_the_two_tilings_is_s3_and_inversion_closed_zoom_charges_have_at_most_two_spurion_distances_2026_10_22.py
+runner_sha256: d7c3da25dd58bb689bccfca450bc1f0c1a74bb53d2747288304d21386a926aa8
+input_fingerprint_sha256: be6ace3953664f8af4dd36c201c031b99b22a9f0b225b004351d3f20465d7a23
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 19.11
+status: ok
+----- stdout -----
+== A. symmetry of CL-1's two tilings (cubes {0,1}^3+2n even, +(1,1,1) odd)
+[PASS] [T] about a site the tilings keep only the signed permutations with equal signs, D3d (12), and only C3v (6) keeps even cubes even (the copy mass); about a cube centre all 48 of O_h keep both tilings and even cubes even | site 12/6, cube centre 48/48
+[PASS] [T] the tetrahedral rotations T = A4 (12) meet the site group only in the turn C3 about (1,1,1): A4/S4 is not a site symmetry; it is one only about a cube centre | |T|=12, |T cap site|=3
+[PASS] [T] cube-centred A4 triplets: the four body diagonals give 1 + 3 with the 3 irreducible (<chi,chi> = 1), the signed axes (the hop vector) give an irreducible 3, while the unsigned axes give 1 + 1' + 1'' (<chi,chi> = 3): permuted axes are the Z_3 characters again, since the Klein four-group acts trivially on them | <chi,chi>_T: diagonals-1 1, signed axes 1, unsigned axes 3
+[PASS] [T] with spin 1/2 attached, E1/2 x T1 and E1/2 x (A1 + E) have equal characters on the binary octahedral group (they differ only on half-turns, where chi_1/2 = 0): the lattice spectrum cannot tell a signed-axis triplet from permuted axes; the low-energy Dirac operator decides, and the cubic-cell result (Dirac walk x 1_F) gives F = A1+E | all 24 rotations
+[PASS] [T] on the zoom-3 families (characters (j,j,j)) the site space group acts through T(2e_i) and the cube-centred inversion j -> -j only (C3 and the mirrors fix each family): the image is S3 with 3 = 1 + 2, no A4 or S4 triplet, and families 1, 2 form the degenerate doublet | |image| = 6, nonabelian True, <chi,chi> = 2
+== B. families at zoom b
+[PASS] [T] at zoom b the turn fixes exactly the b diagonal positions (the rest are three-cycles), all with the same turn charge, so b chiral families; CL-1's period 2 conserves only b' = b/gcd(b,2) characters of T(2e_i) on them (for even b, positions j and j+b/2 are one character: CL-1's two copies) | (b, fixed, b') 2:2,1 3:3,3 4:4,2 5:5,5 6:6,3 7:7,7 8:8,4 9:9,9
+[PASS] [T] three distinct cyclic distances first occur in Z_6 ({0,1,3}); in every Z_N (N < 40) a negation-closed triple has at most two, so with the tick's k -> -k (inversion) unbroken no zoom gives a tower | first N = 6, max distances of negation-closed triples = 2
+[PASS] [T] filter (register's conditional count rule: the turn-SU(2) anomaly 4N mod 3 must vanish for the light and for any gapped set, and b' >= 6): zoom 7 has 4*7 = 1 mod 3 and fails; the smallest viable zooms are 9 (Z_9) and 12 (Z_6); both need b - 3 chiral families removed by a family-selective symmetric gapping term no law supplies | viable b <= 30: [9, 12, 15, 18, 21, 24, 27, 30]
+   [M] measured light families: Z width N_nu = 2.984 +- 0.008; a 4th chiral family is excluded by Higgs rates
+== C. textures: M_ij ~ eps^f(qQ_i - qR_j +- h), f = spurion distance, H~ = i s2 H^* carries -h
+[PASS] [T] one triple for doublets and singlets (as positions force) and one Higgs: E_d = E_u^T exactly, so up and down have identical leading mass exponents for every triple, h and spurion law; the diagonal costs f(h) in both, so log_eps(m1/m3) <= 3 max f | max log_eps(m1/m3) at one triple: 7 (Z_6, Z_9, Z_15)
+   [M] targets as in zoom-tower: m_t:m_c:m_u 1:7e-3:1e-5, m_b:m_s:m_d 1:2e-2:1e-3, |V| .225/.042/.0037; up/down hierarchy ratio (m_u m_c/m_t^2)/(m_d m_s/m_b^2) = 3.5e-03
+[PASS] [T] cyclic ceiling: in Z_N every entry costs at most floor(N/2) above the cheapest, so the permutation through the cheapest entry bounds log_eps(m1 m2/m3^2) <= 2 floor(N/2) for ANY doublet and singlet triples and h; the up quarks need 10.9 (eps 0.22) or 15.0 (eps 1/3) at leading order, so Z_9 and Z_6 cannot hold the up tower and the anomaly-filtered zooms that can start at b = 15 (eps 0.22) or b = 21 (eps 1/3) | max log_eps(m1m2/m3^2): Z_9 7, Z_15 13; classes Z_9 6, Z_15 24
+[PASS] [E] rule-shaped grading (one three-distance triple for all fields, one Higgs, Z_6/Z_9/Z_15, unit or rung-graded spurions, eps in {1/3, 0.22}): no cell reaches the supplied-U(1) control; up and down cannot differ | 960 cells x 100; best joint 0.000, best mass-only 0.040; best chi 3.25 (Z_15,S=(0, 1, 6),h=6); FN control joint 0.058 mass 0.136 chi 0.78; anarchy joint 0.000
+[PASS] [E] with independent supplied triples for Q, u^c, d^c (eps 0.22): Z_9 never hits (the ceiling), while Z_15 can (it is then a supplied cyclic FN charge); the hit fraction over cells is the look-elsewhere price | Z_9: 1944 cells, max 0.000; Z_15: 40000 sampled of 207360, max 0.025 (Q(0, 1, 6) u(0, 2, 6) d(0, 1, 11) h=9), cells with any hit 0.0001, >= half control 0.0000
+== D. lepton mixing [M approx: s12^2 0.307(12), s13^2 0.0220(6), s23^2 0.45-0.58 (octant)]
+[PASS] [E] tribimaximal (exact A4 residuals, which need an A4 triplet the site group lacks): s12^2 = 1/3, s23^2 = 1/2, s13 = 0 is excluded by theta13 | pulls: s12^2 +2.2 sigma, s13^2 -37 sigma
+[PASS] [E] the residual groups that do exist (charged leptons keep the family Z_3, neutrinos keep inversion, or the reverse) fix a column or row (0, 1/sqrt2, 1/sqrt2): a zero in the mixing matrix, whose smallest measured entry is |U_e3| = 0.148; pure character-vs-position mixing gives all |U|^2 = 1/3 | |anti| in characters [0.    0.707 0.707]; best placement (zero at U_e3): s13^2 = 0, -37 sigma
+runtime 19.0 s
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/translation_invariant_terms_give_family_diagonal_mixing_and_a_kept_family_three_cycle_is_excluded_2026_10_22.py
+runner_sha256: 4cf60f0a4a346131f24cc50a37e7608ff6179b1a14c6e73e5a2feedcadc45f0f
+input_fingerprint_sha256: 741d73dad91788e7b2fb70a37c3a7b983e36ade3fccfd63372764ce6bd135e1d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.37
+status: ok
+----- stdout -----
+== A. targets [M] (quark running masses at M_Z, GeV; PDG 2024 CKM fit; NuFIT 6.0 NO)
+[PASS] [M] ratios m3/m2, m2/m1: lep 16.8 206.8, up 277 504, down 53.4 19.9; Koide Q lep 0.66666 down 0.748 up 0.889; J = 3.12e-5
+== B. CL-1 tick on a 6^3 torus: translation charge is the family label
+[PASS] [F] B1 the tick is unitary and commutes with T(2e_i) exactly, not with T(e_1) or T(d) (period-2 circuit) | comm [0.     0.     0.     0.0253 0.0289]
+[PASS] [T] B2 T(2e_1) has character w^(2j) on the turn-fixed sector (j,j,j): 1, w^2, w (distinct, since gcd(2,3) = 1); every operator commuting with T(2e_i) is block-diagonal in the 27 sectors, so with a translation-invariant vacuum each sector mass matrix is family-diagonal: CKM = PMNS = permutations, J = 0, at all orders (z3-masses H2 needed T3 alone; this needs only CL-1 translations) | leak 2e-16
+[PASS] [F] B3 without the copy mass every sector obeys cos w = A S - (cos2b - cos mu)/2 with S = mean cos(2 pi a_i/3); the three family sectors give (mu, w1, w1), w1 -> sqrt(3) eps: one light family and a degenerate pair at the cell scale; with the copy mass (eps, mu, MN) = (0.03, 0.002, 0.02) the lowest levels are 0.0020, 0.0363, 0.0363 | dev 2e-14; w1/mu = 26.0
+== C. degenerate pair and its splitting
+[PASS] [F] C1 sector a and -a are isospectral for every a and parameter set (copy mass included): the k -> -k symmetry CL-1 keeps pins family 2 to family 1, so at most two distinct masses per species | 9e-16
+[PASS] [F] C2 a generic 2Z^3-invariant term splits families 1 and 2 (masses can all differ) yet keeps every sector closed: mass splitting and mixing are independent requirements; mixing needs broken translations | split 1.9e-02, leak 2e-16
+== D. family flux (holonomy through the three copies, screw, copy-sign phase, link background)
+[PASS] [T] D1 if each quark sector keeps a family three-cycle C_s = D_s C D_s^+ (any flux/phases D_s), V = F^+ D_u^+ D_d F up to orderings, so |V| is a permuted circulant: every row and column holds the same three moduli | 200 random fluxes, 6e-14
+[PASS] [E] D2 measured rows sorted: [0.0037 0.225  0.9744] vs [0.0086 0.0411 0.9991]: smallest moduli differ by 24 sigma, middle by 184 sigma: every rule that leaves a family three-cycle in both quark sectors is excluded; the AB-type family flux cannot be the source of quark mixing
+== E. a vacuum on the zoom-3 coarse sites (candidate rule, supplied)
+[PASS] [F] E1 a term on the coarse sites 3Z^3 breaks the 2Z^3 charge (sectors leak) and couples the three families democratically: |<j,c|V|j',c>| = 1/27 for all j, j', rank one in family space for each class c | leak 9.3e-03, rank {np.int64(1)}
+[PASS] [T] E2 one vacuum channel per sector gives a rank-one mass: one massive family (the coarse site's own mode) and two massless; a species-blind channel aligns the heavy family across sectors, V_tb = 1, V_cb = V_ub = 0 at this order; Cabibbo and J undetermined | measured m3/m2 >= 16.8 in all charged sectors, |V_tb| 0.99912, but NuFIT |U_mu3| ~ 0.68: neutrinos cannot share the channel
+[PASS] [T] E3 site + cube channels (the open spine x-d, x, x+d: the ends share no cube) give M = [[0,a,0],[a,c,b],[0,b,0]]: det = 0, so m1 = 0 exactly, m2 m3 = a^2 + b^2, m3 - m2 = c
+[PASS] [E] E4 with the measured m2/m3 and free angles and phases, |V_us| = 0.225 forces |V_cb| >= 0.0723 (about sqrt(m_s/m_b) cos - sqrt(m_c/m_t) = 0.137 - 0.060) vs 0.0418 +- 0.0008: the site + cube vacuum is excluded; the first family needs a third channel
+== F. zoom ladder
+[PASS] [T] F1 CL-1 fixes the tick as one fraction of each cube's light crossing, so a rung-n cube has N_n = 2^n N_0 and a family with the same mass angle there has m = mu/N_n: masses go as 2^-n (3^-n at zoom 3); but the zoom-3 register puts all three families on one rung, and PR #9883 finds the coarse gap rung-invariant, so neither reading gives a ladder without a further rule
+[PASS] [E] F2 look-elsewhere: the six adjacent ratios as integer powers of 2 or 3 sit 0.18, 0.28 from integers (p = 0.13, 0.62 vs log-uniform ratios); the best free base 16.83 has p = 0.46: no rung-ratio signal
+elapsed_seconds 1.9
+theorems: B2, D1, E2, E3, F1; finite: B1, B3, C1, C2, E1; estimates: D2, E4, F2.
+supplied: the zoom-3 family reading (fine momenta j(1,1,1) or register copies), the coarse-site vacuum and its channels, species couplings per channel, phases; PDG/NuFIT inputs.
+
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

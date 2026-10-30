@@ -1,0 +1,132 @@
+{
+  "schema": "independent-final-source-recheck-v1",
+  "stage": "source reread after packet check, independent of packet assertions",
+  "completed_at_utc": "2026-10-30T11:57:24.759314+00:00",
+  "result": "PASS: no source change or newly found defect",
+  "target": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WEIGHTED_RETURN_JETS_ASTRA.md",
+    "sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+    "line_count": 937,
+    "fresh_reread_windows_inclusive": [
+      [
+        249,
+        354
+      ],
+      [
+        398,
+        483
+      ],
+      [
+        485,
+        557
+      ],
+      [
+        559,
+        682
+      ],
+      [
+        684,
+        875
+      ]
+    ],
+    "fresh_reconstruction": [
+      "Actual all-link Haar pullback and positive ratio derivatives, with real sources and fixed kernels.",
+      "Finite normalized ratio/log Taylor identity before the forest; actual W-dependent phase/core/critical branch.",
+      "Full normalized determinant/inverse density, scalar factorials and complete rare reader pins.",
+      "Compact primitive/raw rescaling and the actual moving-center derivative library.",
+      "Rare-price ledger, weighted combined small remainder excluding P_* and exact beta/64 smaller-rate consumer threshold."
+    ]
+  },
+  "source_identity_checks": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WEIGHTED_RETURN_JETS_ASTRA.md",
+      "sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "line_count": 937,
+      "matches_source_only_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REALRGA.md",
+      "sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+      "line_count": 649,
+      "matches_source_only_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REALRGB.md",
+      "sha256": "80d4f1216e39c9d5cd661c7eced48f3ac480c0d1443e556208a1b2684890d640",
+      "line_count": 750,
+      "matches_source_only_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MIXSMALL.md",
+      "sha256": "ead4ddd6bb50844d91459c3229d3abcc06b4ba02da772c578bc917a743f67340",
+      "line_count": 692,
+      "matches_source_only_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/EXTCONT.md",
+      "sha256": "b10015bbd6be5fac97fd636fdc79f665800fe9921651575b9d03b0167b534b6e",
+      "line_count": 654,
+      "matches_source_only_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "line_count": 597,
+      "matches_source_only_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "line_count": 592,
+      "matches_source_only_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "line_count": 713,
+      "matches_source_only_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "line_count": 510,
+      "matches_source_only_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COMPACT_RETURN_GLUING_ASTRA.md",
+      "sha256": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "line_count": 644,
+      "matches_source_only_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MARKED_COMPACT_CHART_ASTRA.md",
+      "sha256": "04f79ed4d0c58e97f3cade072631966b577f02754f9a96d6dcd18ee2f3045800",
+      "line_count": 753,
+      "matches_source_only_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FROZEN_TRANSPORTED_CHART_ASTRA.md",
+      "sha256": "c7cea2f9bb096af300a9a978c945d9c5d68ae5e63581654a3034902d000d70b8",
+      "line_count": 787,
+      "matches_source_only_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HOLOMORPHIC_COMPACT_RETURN_ASTRA.md",
+      "sha256": "890a56113ad3ceac890ec72efe59b40f73bbda283c8dfb69c331bc4ea5376c49",
+      "line_count": 734,
+      "matches_source_only_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "line_count": 11,
+      "matches_source_only_freeze": true
+    }
+  ],
+  "immutable_source_only_artifacts_unchanged": true,
+  "packet_used_as_mathematical_evidence": false,
+  "numerical_science_runs": 0,
+  "author_runners_executed": 0,
+  "source_edits": [],
+  "final_source_verdict": "LAND at stated bounded bare-step scope"
+}

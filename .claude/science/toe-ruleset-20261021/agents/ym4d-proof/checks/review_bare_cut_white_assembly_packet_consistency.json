@@ -1,0 +1,288 @@
+{
+  "schema": "review-author-packet-consistency-v1",
+  "checked_utc": "2026-10-30T12:23:23.661036+00:00",
+  "source_findings_frozen_first": true,
+  "source_findings_sha256": "26a341e162726beb47ce2013d126ec53cbee17886bbe090dc55f14ac4a46777b",
+  "author_packets": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_cut_white_assembly_read_manifest.json",
+      "sha256": "ea2d90de5b6c6070139d868e8c145991ff53e8a5af6ebfbd52403974b26c030c",
+      "lines": 108,
+      "coverage": "full after source-only findings were frozen and root notified"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_cut_white_assembly_receipt.json",
+      "sha256": "9b17c1cd5251b210c7a31f6c8788cd213b2f4c1dbda27c70b52c5e16cde2a108",
+      "lines": 53,
+      "coverage": "full after source-only findings were frozen and root notified"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_cut_white_assembly_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "lines": 9,
+      "coverage": "full after source-only findings were frozen and root notified"
+    }
+  ],
+  "declared_pin_checks": [
+    {
+      "packet": "bare_cut_white_assembly_read_manifest.json",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_CUT_WHITE_ASSEMBLY_ASTRA.md",
+      "expected_sha256": "e058637300e8d0af58a35be23299ca08c4024eed335ab8529f7e1c8b6ae2a3f4",
+      "actual_sha256": "e058637300e8d0af58a35be23299ca08c4024eed335ab8529f7e1c8b6ae2a3f4",
+      "hash_match": true,
+      "expected_lines": 443,
+      "actual_lines": 443,
+      "lines_match": true
+    },
+    {
+      "packet": "bare_cut_white_assembly_read_manifest.json",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HOLOMORPHIC_COMPACT_RETURN_ASTRA.md",
+      "expected_sha256": "890a56113ad3ceac890ec72efe59b40f73bbda283c8dfb69c331bc4ea5376c49",
+      "actual_sha256": "890a56113ad3ceac890ec72efe59b40f73bbda283c8dfb69c331bc4ea5376c49",
+      "hash_match": true,
+      "expected_lines": 734,
+      "actual_lines": 734,
+      "lines_match": true
+    },
+    {
+      "packet": "bare_cut_white_assembly_read_manifest.json",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COMPLEX_WHITE_SECTOR_ASTRA.md",
+      "expected_sha256": "fb72d33bddb727e85548ad96f0e45585cf06254190aa182008e80aa3fbbc5a3c",
+      "actual_sha256": "fb72d33bddb727e85548ad96f0e45585cf06254190aa182008e80aa3fbbc5a3c",
+      "hash_match": true,
+      "expected_lines": 747,
+      "actual_lines": 747,
+      "lines_match": true
+    },
+    {
+      "packet": "bare_cut_white_assembly_read_manifest.json",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WEIGHTED_RETURN_JETS_ASTRA.md",
+      "expected_sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "actual_sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "hash_match": true,
+      "expected_lines": 937,
+      "actual_lines": 937,
+      "lines_match": true
+    },
+    {
+      "packet": "bare_cut_white_assembly_read_manifest.json",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FROZEN_TRANSPORTED_CHART_ASTRA.md",
+      "expected_sha256": "c7cea2f9bb096af300a9a978c945d9c5d68ae5e63581654a3034902d000d70b8",
+      "actual_sha256": "c7cea2f9bb096af300a9a978c945d9c5d68ae5e63581654a3034902d000d70b8",
+      "hash_match": true,
+      "expected_lines": 787,
+      "actual_lines": 787,
+      "lines_match": true
+    },
+    {
+      "packet": "bare_cut_white_assembly_read_manifest.json",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WHITE_SECTOR_MATCHING_ASTRA.md",
+      "expected_sha256": "172418988dd07b5f9d8c32d83f2fbc754ab86907660a291c26f1ca3711452556",
+      "actual_sha256": "172418988dd07b5f9d8c32d83f2fbc754ab86907660a291c26f1ca3711452556",
+      "hash_match": true,
+      "expected_lines": 631,
+      "actual_lines": 631,
+      "lines_match": true
+    },
+    {
+      "packet": "bare_cut_white_assembly_read_manifest.json",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "expected_sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "actual_sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "hash_match": true,
+      "expected_lines": 592,
+      "actual_lines": 592,
+      "lines_match": true
+    },
+    {
+      "packet": "bare_cut_white_assembly_read_manifest.json",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "expected_sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "actual_sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "hash_match": true,
+      "expected_lines": 510,
+      "actual_lines": 510,
+      "lines_match": true
+    },
+    {
+      "packet": "bare_cut_white_assembly_read_manifest.json",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "expected_sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "actual_sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "hash_match": true,
+      "expected_lines": 722,
+      "actual_lines": 722,
+      "lines_match": true
+    },
+    {
+      "packet": "bare_cut_white_assembly_read_manifest.json",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "expected_sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "actual_sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "hash_match": true,
+      "expected_lines": 812,
+      "actual_lines": 812,
+      "lines_match": true
+    },
+    {
+      "packet": "bare_cut_white_assembly_read_manifest.json",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REALRGA.md",
+      "expected_sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+      "actual_sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+      "hash_match": true,
+      "expected_lines": 649,
+      "actual_lines": 649,
+      "lines_match": true
+    },
+    {
+      "packet": "bare_cut_white_assembly_read_manifest.json",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "expected_sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "actual_sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "hash_match": true,
+      "expected_lines": 11,
+      "actual_lines": 11,
+      "lines_match": true
+    },
+    {
+      "packet": "bare_cut_white_assembly_read_manifest.json",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/white_sector_matching_read_manifest.json",
+      "expected_sha256": "5b302d417a0b815d23b8368f23b5ff75a5ad5553cccb67818acfbdce36b6423b",
+      "actual_sha256": "5b302d417a0b815d23b8368f23b5ff75a5ad5553cccb67818acfbdce36b6423b",
+      "hash_match": true,
+      "expected_lines": 129,
+      "actual_lines": 129,
+      "lines_match": true
+    },
+    {
+      "packet": "bare_cut_white_assembly_read_manifest.json",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_read_manifest.json",
+      "expected_sha256": "35be410ae0b57a82e902d5030066fd902a3b8ea69830c8507cc5d8392a9758f0",
+      "actual_sha256": "35be410ae0b57a82e902d5030066fd902a3b8ea69830c8507cc5d8392a9758f0",
+      "hash_match": true,
+      "expected_lines": 246,
+      "actual_lines": 246,
+      "lines_match": true
+    },
+    {
+      "packet": "bare_cut_white_assembly_receipt.json",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_CUT_WHITE_ASSEMBLY_ASTRA.md",
+      "expected_sha256": "e058637300e8d0af58a35be23299ca08c4024eed335ab8529f7e1c8b6ae2a3f4",
+      "actual_sha256": "e058637300e8d0af58a35be23299ca08c4024eed335ab8529f7e1c8b6ae2a3f4",
+      "hash_match": true,
+      "expected_lines": 443,
+      "actual_lines": 443,
+      "lines_match": true
+    },
+    {
+      "packet": "bare_cut_white_assembly_receipt.json",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_cut_white_assembly_read_manifest.json",
+      "expected_sha256": "ea2d90de5b6c6070139d868e8c145991ff53e8a5af6ebfbd52403974b26c030c",
+      "actual_sha256": "ea2d90de5b6c6070139d868e8c145991ff53e8a5af6ebfbd52403974b26c030c",
+      "hash_match": true,
+      "expected_lines": 108,
+      "actual_lines": 108,
+      "lines_match": true
+    },
+    {
+      "packet": "bare_cut_white_assembly_receipt.json",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_cut_white_assembly_vocab.json",
+      "expected_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "actual_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "hash_match": true,
+      "expected_lines": 9,
+      "actual_lines": 9,
+      "lines_match": true
+    },
+    {
+      "packet": "bare_cut_white_assembly_receipt.json",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/quadratic_coarse_return_receipt.json",
+      "expected_sha256": "0624ea553f2d33e62467047ba7eb5f739180f1cb58f97012cb35b70319ff78d3",
+      "actual_sha256": "0624ea553f2d33e62467047ba7eb5f739180f1cb58f97012cb35b70319ff78d3",
+      "hash_match": true,
+      "expected_lines": 76,
+      "actual_lines": 76,
+      "lines_match": true
+    }
+  ],
+  "pin_occurrences": 18,
+  "all_pins_match": true,
+  "content_consistency": "The author packet states the same finite bare-step result, distinct prefactors, original-J conventions, weighted hypotheses and exclusions as the mathematical source. No author review/retained verdict is claimed.",
+  "provenance_limits": "Historical author reading/execution claims and the contents of older packets are not independently attested. Older referenced packets were hashed only after the source findings froze, without opening their prose; only the three target author packets were inspected for content. STEP55 was hashed for the author pin check but not newly read.",
+  "mechanical_checks": {
+    "equation_labels": [
+      "BW1",
+      "BW2",
+      "BW3",
+      "BW4",
+      "BW5",
+      "BW6",
+      "BW7",
+      "BW8",
+      "BW9",
+      "BW10",
+      "BW11",
+      "BW12",
+      "BW13",
+      "BW14",
+      "BW15",
+      "BW16",
+      "BW17",
+      "BW18",
+      "BW19",
+      "BW20",
+      "BW21"
+    ],
+    "fence_lines": 2,
+    "trailing_whitespace_lines": [],
+    "relative_links": [
+      {
+        "target": "HOLOMORPHIC_COMPACT_RETURN_ASTRA.md",
+        "exists": true
+      },
+      {
+        "target": "COMPLEX_WHITE_SECTOR_ASTRA.md",
+        "exists": true
+      },
+      {
+        "target": "WEIGHTED_RETURN_JETS_ASTRA.md",
+        "exists": true
+      },
+      {
+        "target": "FROZEN_TRANSPORTED_CHART_ASTRA.md",
+        "exists": true
+      },
+      {
+        "target": "REGIONAL_CRITICAL_FIELD_ASTRA.md",
+        "exists": true
+      },
+      {
+        "target": "REGIONAL_CHART_RETURN_ASTRA.md",
+        "exists": true
+      },
+      {
+        "target": "WHITE_SECTOR_MATCHING_ASTRA.md",
+        "exists": true
+      },
+      {
+        "target": "REALRGA.md",
+        "exists": true
+      }
+    ],
+    "direct_vocabulary_check": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_CUT_WHITE_ASSEMBLY_ASTRA.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    "scanner_correction": "An initial reviewer equation-label scanner expected LaTeX tag syntax and found no labels. The source uses plain (BW1)...(BW21); scanning its actual syntax verifies all 21 once in order. This wrapper failure was not a scientific numerical test."
+  },
+  "nonblocking_packet_limit": {
+    "location": "scripts/vocab_lint.py:320\u2013331 and author bare_cut_white_assembly_vocab.json",
+    "description": "The CLI main loop excludes .claude/ paths. Its zero-violation/empty-files report alone cannot establish the target was actually linted. The separate explicit lint_one_file call with apply_fix=False above reads the exact target and reports zero violations.",
+    "effect": "No mathematical defect and no target repair required. Do not present the original empty report as proof of source coverage.",
+    "notified_root": true
+  },
+  "source_verdict_unchanged": true,
+  "scientific_numerical_runs": []
+}

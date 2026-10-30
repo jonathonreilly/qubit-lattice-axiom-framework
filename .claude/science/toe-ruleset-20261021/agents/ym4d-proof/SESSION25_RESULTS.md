@@ -2571,8 +2571,8 @@ mathematical findings before author-packet inspection. The
 [coordinator integration](checks/full_proof_chart_prefactor_assembly_integration.json)
 records its bounded coverage and preservation checks. This is an assembled
 auxiliary-chart result. The later compact and transport extensions below
-close their stated bare-step interfaces, including HC's fixed-center complex
-original-cut logarithm. Original white-sector matching, inherited histories,
+close their stated bare-step interfaces, including complex compact returns, white-sector/chart matching and actual
+weighted real coarse/source derivatives. Arbitrary inherited histories,
 effective iteration, continuum existence, non-freeness and the physical
 mass gap remain OPEN.
 
@@ -2712,10 +2712,77 @@ The [holomorphic-return integration](checks/full_proof_holomorphic_return_integr
 binds the unchanged 734-line source, immutable independent source-only
 findings, separate packet checks and final report. It preserves the prior
 MK/FT checkpoint and concurrent LOCOP/SPURION/REFMATCH queue files.
-Current author work addresses the literal source-free white Omega at real
-coarse data, its complex-coarse extension, and the exact finite real-jet/reader
-interface. Those continuations remain unaccepted here. Original white-Omega
-matching, inherited histories, effective iteration, continuum non-free
+The later WS/CW and WR results below close their stated white/chart and
+real moving-center derivative interfaces. Their bounds do not supply
+arbitrary inherited histories or an iteration theorem.
+
+The [original white-sector matching](WHITE_SECTOR_MATCHING_ASTRA.md) now has a
+[different fresh scoped LAND review](REVIEW_WHITE_SECTOR_MATCHING_ASTRA.md).
+WS28--WS31 compare the unchanged source-free scalar white cube with the
+actual original-a chart at real coarse data and fixed complex original
+Wilson sources. The actual finite-u critical Hessian, both complete endpoint
+and marked inverse-square-root bounds, full source recentering, all oriented
+ends/corners and normalized precision forest are retained. The exact
+logarithm is d log z_p+T_p+J_p-H_a. Its full critical action, determinant,
+Haar constants and every mode cancel; the scalar cutoff normalization does
+not disappear. The proved nonlinear price is O(sigma p_Omega^3), plus
+O(sigma^2) and rare cutoff terms, rather than a rare bound on the whole ratio.
+
+The [complex white-sector extension](COMPLEX_WHITE_SECTOR_ASTRA.md) also has a
+[different fresh scoped LAND review](REVIEW_COMPLEX_WHITE_SECTOR_ASTRA.md).
+CW32/CW36 rebuild that comparison on a joint complex coarse/original-source
+domain. The original scalar cube is pulled back by the actual-V critical
+field and full Haar-inclusive inverse square root; its complex determinant
+is retained. This is an oriented holomorphic chain, not a continuation of
+a hard indicator. Local normalizer branches, accretive principal resolvents,
+independent precision-pair variables and canonical actual-V reader
+coefficients are checked. One fixed R and source radius work with the
+explicit cutoff conditions. If p_a/K^2 is not controlled by the supplied
+p_Omega, CW35 narrows BOTH real curvature and coarse width; it does not
+replace the original cutoff. Cauchy derivatives pay those actual radii.
+
+The [weighted return jets](WEIGHTED_RETURN_JETS_ASTRA.md) now have a
+[different fresh scoped LAND review](REVIEW_WEIGHTED_RETURN_JETS_ASTRA.md)
+including the actual REAL moving-center theorem. An all-link real Haar
+pullback fixes the relevant selectors. Positive real quotient jets are
+lifted to finite multiaffine rough insertions; the moving critical field,
+core, both covariance tails and complete normalized density remain actual
+functions of V. This supplies six ordered coarse-field and four original
+absolute-source derivatives, with J=u epsilon and all labels retained.
+For h<=C_h sigma and r_*<=C_J u, WR42a bounds the actual nonlinear plus
+compact-return remainder at 3beta/8 by C_beta sigma^2+exp(-kappa_* p_a^2).
+The full extensive P_* remains separate. WR45 gives an integrated tree
+consumer at beta/4 when Q_(3beta/8)<=beta/64; the native mu+2 demand,
+retained-fine derivatives and regeneration across scales are not supplied.
+
+The [bare original-cut/white assembly](BARE_CUT_WHITE_ASSEMBLY_ASTRA.md)
+now has a [different fresh scoped LAND review](REVIEW_BARE_CUT_WHITE_ASSEMBLY_ASTRA.md),
+with no mathematical repair. BW10 is the exact log(Z_cut/Z_Omega)
+=Psi_comp+R_tr-Gamma_white through the IDENTICAL transported chart.
+P_fr and P_epsilon remain distinct; full determinants, Haar constants,
+all modes and the scalar cutoff normalization are retained.
+One common R and fixed source radius work with the original p_Omega and
+explicitly narrowed curvature/coarse radii. The actual real canonical
+WR-minus-CW family supplies ordered (6,4) original-J jets; full reader
+counts cost beta/8, leaving 3beta/8. For h=O(sigma), r_*=O(u),
+p_Omega tending to infinity and sigma p_Omega^3 tending to zero, BW21's
+weighted bound vanishes, with its ordinary cubic price still present.
+The smaller-rate consumer applies to this integrated family only.
+This closes the total bare cut/white comparison in its stated scope,
+not separate G-minus-Omega/G^c history returns or effective iteration.
+
+The [white-sector/jet integration record](checks/full_proof_white_sector_jets_integration.json)
+binds the four unchanged sources, independent source-only freezes,
+separate packet checks and final reports. It preserves the concurrent
+MATCHB, MATCHA, ROUGH and HOLEPAY work. Their reviewed partial results still leave the actual uniform
+history-normalization, differentiated hole payment and regenerated budgets
+OPEN. The separate [SPINE](SPINE.md), [INDUCT](INDUCT.md) and [LIMIT](LIMIT.md)
+sprint drafts remain unchecked; their conditional scalar-observable endpoint
+does not replace the requested full non-free Yang--Mills theory.
+Current author work computes the actual bare coarse coupling from the full
+critical prefactor, retaining the distinction between its infrared marginal
+coefficient and its full momentum-dependent quadratic action. That work is
+not yet reviewed. All-history effective closure, full non-free continuum
 existence and the positive physical continuum mass gap remain OPEN.
 
 The concurrent [REALONLY assessment](REALONLY.md),
@@ -2923,11 +2990,11 @@ imports no Yang–Mills theorem. [Coordinator review integration](checks/full_pr
 binds these two corollary reviews, preserves their exact SN/FU/CD premises,
 and retains the concurrent JMBRA/JMBRB research at its conditional/partial
 scope. These are bare-step local results, not an all-history construction.
-Original white-sector matching, arbitrary inherited interacting histories,
-multiscale iteration, continuum existence and the physical continuum mass
-gap remain OPEN. MK's real-coarse logarithm, FT's chart transport and HC's
-fixed-center complex original-cut return have precisely the accepted scopes
-recorded above.
+Arbitrary inherited interacting histories, multiscale iteration, continuum
+existence and the physical continuum mass gap remain OPEN. MK's real-coarse
+logarithm, FT's chart transport, HC's complex return, WS/CW white/chart
+matching, WR's real moving-center jets and BW's cut/white assembly have
+precisely the accepted bare-step scopes recorded above.
 
 Concurrent progress through `cc1de55f5b` is recovered. [RD pass 2](RD.md)
 has an independent [HOLD review](REVIEW_RD_R2.md): its explicit finite H12

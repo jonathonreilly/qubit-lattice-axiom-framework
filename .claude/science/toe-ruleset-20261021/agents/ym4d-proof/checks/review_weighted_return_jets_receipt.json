@@ -1,0 +1,104 @@
+{
+  "schema": "fresh-hostile-source-review-receipt-v1",
+  "reviewer": "/root/review_weighted_return_jets",
+  "completed_at_utc": "2026-10-30T11:57:24.767651+00:00",
+  "verdict": "LAND",
+  "verdict_scope": "Bounded actual bare-step fixed-center and REAL moving-center ordered (6,4) output/original-source jets; WR42a weighted small remainder excluding full P_*; WR45 integrated smaller-rate consumer under its exact hypotheses.",
+  "target": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WEIGHTED_RETURN_JETS_ASTRA.md",
+    "sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+    "lines": 937,
+    "unchanged": true
+  },
+  "independence": {
+    "distinct_from_author": true,
+    "author_agent": "/root/mixed_cap_chart",
+    "same_family": "Codex",
+    "human_requested": "Astra/max",
+    "backend_model_attestation": false,
+    "external_human_review": false,
+    "prior_review_used_as_premise": false
+  },
+  "methodology_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "stages": {
+    "source_first_full_target_and_consumed_suppliers": "complete",
+    "immutable_source_only_findings_before_packets": "complete",
+    "conservative_exact_read_hash_coverage": "complete",
+    "separate_author_packet_consistency": "PASS",
+    "independent_final_source_reread_and_rehash": "PASS",
+    "material_blockers": [],
+    "source_fixes": [],
+    "final_review_report": "complete"
+  },
+  "artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_weighted_return_jets_source_only_findings.md",
+      "sha256": "801f442703284fecb960d39c49be52e6446f1d86613c3c0b67038af0b8279639",
+      "lines": 52
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_weighted_return_jets_source_read_manifest.json",
+      "sha256": "2ad4eb421038cdf696639f3cf020b5b90da0ffb4b8330517016fcbc48da80e07",
+      "lines": 382
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_weighted_return_jets_packet_check.json",
+      "sha256": "2d0b5a528dadc2226867933ec4a740e268a6cf1561c803bad61c9deceee7d986",
+      "lines": 146
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_weighted_return_jets_final_source_recheck.json",
+      "sha256": "53cf80aa3fec77d045fd55b8399fde98dcd24e971a6725b63311dd36d16f1705",
+      "lines": 132
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_WEIGHTED_RETURN_JETS_ASTRA.md",
+      "sha256": "817c5ec9516d8c97aee7d41ee08e5a71b827bdacb1c1ee8a34a471111fb6dc9b",
+      "lines": 45
+    }
+  ],
+  "author_packet_hashes": {
+    "weighted_return_jets_read_manifest.json": "8f6fc077450e62ac5c53c14a626f22e0f7b172cc97ab2e0d9b28042279e1ed0b",
+    "weighted_return_jets_receipt.json": "1528907500ba62c1705c2c8745baeb7ae84b1aa6a7c063763de27498c094753c"
+  },
+  "actual_checked_small_remainder": {
+    "coarse_weight": "h<=C_h sigma",
+    "original_source_weight": "r_*<=C_J u",
+    "reader_rate": "3beta/8",
+    "bound": "C_beta sigma^2+exp(-kappa_* p_cut^2)",
+    "full_prefactor_included": false
+  },
+  "actual_checked_tree_consumer": {
+    "input_rate": "3beta/8",
+    "losses": [
+      "beta/16",
+      "beta/16"
+    ],
+    "output_rate": "beta/4",
+    "input_threshold": "Q_lambda<=beta/64",
+    "integrated_product_sufficient_condition": "B<=beta/128",
+    "native_mu_plus_2_verified": false
+  },
+  "remaining_obligations": [
+    "Full critical prefactor/action/determinant and vacuum extraction control.",
+    "Inherited interacting/reference-law joint expectation estimates before integration.",
+    "Native stronger reader budget or uniform rate regeneration across scales.",
+    "Retained fine/exterior derivatives, G/Omega transport and matched acquisition/hole/extraction estimates.",
+    "Next-scale u_prime/u lower bound and all-history/effective iteration closure.",
+    "Non-freeness, full non-free 4D SU(N) continuum existence and positive physical continuum mass gap.",
+    "Root-owned combined integration, preservation, validation, publication and any retained-grade audit."
+  ],
+  "full_existence_established": false,
+  "physical_continuum_mass_gap_established": false,
+  "audit_verdict_applied": false,
+  "execution": {
+    "numerical_science_runs": 0,
+    "author_runners": 0,
+    "subagents_spawned": 0,
+    "nested_cli_sessions": 0,
+    "source_edits": [],
+    "git_pr_operations": 0,
+    "shared_front_edits": [],
+    "allowed_write_scope_only": true
+  }
+}

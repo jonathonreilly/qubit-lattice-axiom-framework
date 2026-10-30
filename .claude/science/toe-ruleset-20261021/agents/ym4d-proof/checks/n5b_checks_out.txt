@@ -1,0 +1,2 @@
+priority= 20
+load1=1.9013671875; memory_free_percent=50

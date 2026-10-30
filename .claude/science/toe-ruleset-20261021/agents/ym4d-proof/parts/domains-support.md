@@ -9,7 +9,9 @@ Small complex charts, real finite jets and shrinking bare domains have checked l
 
 The independently checked [GH52--GH55 test](../gates/second-domain-complement-c056f6db54.md) shows that the previous small-output complement occurs inside the next ordinary q-good chart under the actual two-step posterior. On its fixed torus and prescribed bounded coupling-ratio family, that event cannot have the unchanged exp(-eta p_cut^2) upper price. This leaves the earlier first-step theorem intact and does not establish the physical coupling flow.
 
-Next action: Construct a real output domain containing the actual next input chart, or a connected complement estimate with an adequate weaker price and stable later domains. Match every source radius, field weight, retained boundary condition and support reserve to that consumer. Preserve the complement and actual hard selectors when changing auxiliary partitions; the existing reset and mean-translation budgets cannot simply be reused at a larger radius.
+The independently checked [GH56--GH63 continuation](../gates/wider-input-chart-1909ce7730.md) rechecks those same energy payments with a larger auxiliary chart, p_w=u^theta. Under its original physical-cut margins, the resulting first-density domain contains the next ordinary logarithmic chart at the flat center, with a growing margin; other centers retain RF/WR admissibility. The full P_* remains in the second-step integrand. This resolves that specific containment issue, not stable full domains, arbitrary physical cutoffs, the larger physical G or its complement.
+
+Next action: Estimate the actual GH63 second-step integrand, including K_1 P_* and its ordinary-chart complement. Match every source radius, field weight, retained boundary condition and support reserve to that consumer, then prove those full domains and unused budgets persist under later integrations. The auxiliary enlargement does not turn the next input into a bare density.
 
 ## Obligations
 

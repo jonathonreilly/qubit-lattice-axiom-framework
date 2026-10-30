@@ -2,7 +2,7 @@
 
 writer: coordinator OpenAI/Codex/host-runtime 01a1873f-103a-7f01-b924-4455238d8a86
 lead: target lead in ../GOAL.md
-procedure: 53f2c0af7eb59438389b4c2fe75952932d4e95fe for the coordinator continuation
+procedure: 6243acc936982e945732793bf641442c03abbfea for the wider-chart continuation
 
 The previous Astra/max author attempt used c93fcb388b60ad7974433b2aa1cb1d366aec52ff.
 Its 860-line source is preserved at b1979a0173; its old handle was absent on
@@ -55,19 +55,24 @@ integral remains; no connected estimate has been extended to that complement.
 - gap: Actual common-law connected history return with native mu+2 readers and six retained-field/four original-source positions -> normalized-return; effective-flow
 - checked: GH49's first-step connected norm with four original-source jets at fixed real output, at rate beta/2 and under its stated common-family and large-u restrictions; no repeated-scale conclusion.
 - checked: [GH52--GH55](../gates/second-domain-complement-c056f6db54.md) give a lower bound for the actual second-posterior domain complement inside the next ordinary q-good chart, at zero source on one fixed torus and with bounded prescribed coupling ratios. They exclude the unchanged first-step exp(-eta p_cut^2) upper price there, without asserting the physical running law or a connected complement bound.
+- checked: [GH56--GH63](../gates/wider-input-chart-1909ce7730.md) use a wider auxiliary profile under their explicit original-cut and admitted-center restrictions. They supply the actual full first density with its unestimated P_* retained, a small six-field/four-source remainder and the connected first-failure source bound on a domain containing the next ordinary chart at the flat center. Other centers retain RF/WR admissibility; larger physical G sets and all-depth applicability are not established.
 - gap: Control the full effective-density factor and these inherited marks jointly through the second integration, including its complement and already-spent energy -> reserve-regeneration; effective-flow
 
 The next construction must estimate this displayed second-step input or show
 precisely why a proposed invariant class fails to contain it. Replacing the
 full factor by a Wilson reference, treating old failures as current q-bad
 events, or assigning rare size to an extensive vacuum does not solve that task.
-A wider real-domain construction must also revisit both explicit losses:
-SC11--SC12 pay a_bulk delta^2 |R_j| using |R_j|<=V_K |A|, and WR35 pays
-the full critical-mean translation over its buffer. Their current budgets
-force the sqrt(q)/K^2 output scale. Increasing that radius without new
-estimates would violate the existing allocations. Alternatively, a
-complement construction needs an adequate weaker rate and a proof that
-the same full domains and reserves survive later integrations.
+The larger auxiliary q_w and chart in section 15 retain both SC12's
+reset debit and WR35's full-buffer mean-translation debit. Their output
+radius sigma u^theta/(log u)^2 contains the next ordinary logarithmic chart.
+GH63 now displays the exact inherited integrand there. The next construction
+must bound K_1 P_* with that full nonlinear critical phase and determinant,
+and the ordinary-chart complement, without restarting from a bare Wilson
+input. A useful next test is local transport of coarse plaquette energy
+through the actual root-straight contours into original fine Wilson and
+centered-kernel energy, with every contributing reader and spent reserve
+counted. Such an estimate, and constants stable under repetition, are not
+supplied by section 15.
 The coordinator also compared [Abdesselam--Rivasseau, Theorem III.1 and proof](https://arxiv.org/pdf/hep-th/9409094v1)
 with the artificial covariance-pair interpolation, and
 [Brydges--Slade, Lemma 6.4 and proof](https://arxiv.org/html/1403.7244v2)
@@ -82,6 +87,16 @@ the stated minimizer is for the classical action on small fields. They do
 not supply the present four-dimensional soft-kernel effective-density return.
 No result from that paper is used in section 14's lower-bound proof.
 
+For section 15 the coordinator read [Dimock, section 3.2, Definitions 1--2
+and the proof of Lemma 8](https://arxiv.org/pdf/1108.1335), distinguishing its
+physical small-field set from its larger analytic set. This is a scalar d=3
+method antecedent, not a theorem import. The new compact-model argument uses
+the actual RC/WR formulas and does not infer their applicability from that
+paper. A targeted prior-art search at main 6243acc936 found no matching
+power-profile extension; no literature-priority or exhaustive-search claim
+is made. Only the changed methodology references were refreshed; earlier
+frozen review and source records remain unchanged.
+
 No continuum existence or physical mass-gap claim is made. One existing
-independent reviewer was reused for the applicability and complement checks; no parallel
+independent reviewer was reused for the applicability, complement and wider-chart checks; no parallel
 author, additional worker context or scientific numerical job was launched.

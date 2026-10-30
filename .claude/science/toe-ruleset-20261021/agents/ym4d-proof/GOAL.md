@@ -61,10 +61,13 @@ leading coefficient, determinant multiplicities and conditional sign algebra.
 It leaves the full transitive lattice gap/locality chain and every explicit error
 majorant unverified. It issues no whole-unit acceptance or research-gate advance.
 See [the bounded report](gates/charged-sign-b1979a0173.md) for exact coverage.
-The same reviewer was subsequently reused for the bounded GH49 applicability
-check below; no parallel author or additional worker context was launched.
+The same reviewer was subsequently reused for the bounded GH49 applicability,
+GH52--GH55 complement and GH56--GH63 wider-chart checks below; no parallel
+author or additional worker context was launched.
 No worker from this checkpoint remains active. These checks use procedure
-53f2c0af7eb59438389b4c2fe75952932d4e95fe; the authors' c93 procedure and prior
+53f2c0af7eb59438389b4c2fe75952932d4e95fe through the complement check;
+the new wider-chart unit uses current procedure
+6243acc936982e945732793bf641442c03abbfea. The authors' c93 procedure and prior
 receipts remain historical and unchanged. The full sign theorem is still open
 for independent acceptance, and all six critical obligations remain open.
 
@@ -95,8 +98,25 @@ c_T u^(-M_T) exp[-C_T u delta_0^2]. Thus the unchanged first-step
 exp[-eta p_cut^2] upper price is false for that complement in this family.
 The check preserves both normalizers and the actual quotient measure. It
 does not prove the physical running law or a connected complement upper
-bound. The next construction must enlarge the matched real output domain
-or establish adequate complement estimates with the full effective factor.
+bound. This result concerns its original logarithmic auxiliary profile.
+
+Section 15 now has a scoped independent [GH56--GH63 check](gates/wider-input-chart-1909ce7730.md).
+It uses p_w=u^theta, 0<theta<1/2, and rechecks the existing chart/compact
+estimates on that wider auxiliary profile. Under GH57's ORIGINAL physical-cut
+margins, the actual full first density is P_* exp(sum R_all), with a
+six-field/four-source remainder of size O(1/u)+exp(-kappa_w u^(2theta))
+at rate 3beta/8; the native mu+2 interface remains open.
+The full critical action, determinant and both transfer normalizers remain.
+Its output domain contains the next ordinary chart at the flat center;
+other centers retain the stated RF/WR admissibility conditions. The actual
+first-failure law has its corresponding connected four-source bound there.
+This removes the specific inside-chart domain mismatch, not the need to
+estimate the second integration. The wider chart does not cover arbitrary
+rapidly shrinking physical cuts or prove containment of the full physical G.
+Lead decision: use this allowed auxiliary enlargement for the displayed
+second-step input. Normalized-return and effective-flow must now estimate
+K_1 P_* and the actual inherited marks jointly, with the ordinary-chart
+complement and all later domain, energy and reader budgets retained.
 A conditional lemma is a checkpoint, not a completed global return. Do not turn
 an outside-law estimate or an individual-sign inequality into a new assumption.
 

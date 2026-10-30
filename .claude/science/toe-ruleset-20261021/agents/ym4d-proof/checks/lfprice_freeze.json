@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-10-30T03:24:02.646317+00:00",
+  "note_sha256": "4deb5cbf7573145a438abcda4aeedd14c4270cc05c3e63072abeb43561c77a53",
+  "source_changes": [],
+  "review_status": "complete",
+  "previous_note_sha256": "43edf6b162455cda2b80802010a865decadb0b9af5a44f1ae0858c13569381e3",
+  "author_self_correction": "Reviewer-requested LF9 complete coefficient-weighted term bound; explicit unit empty-selection coefficient. LF3 states theta and zero-reader edge case.",
+  "revision_history": [
+    {
+      "sha256": "43edf6b162455cda2b80802010a865decadb0b9af5a44f1ae0858c13569381e3",
+      "reason": "LF9 explicitly excludes uncontrolled empty-support atoms and requires componentwise factorization of selection coefficients. LF1 clarifies dimensionful curvature units."
+    }
+  ],
+  "review_verdict": "LAND for scoped research artifact; actual Route L OPEN",
+  "review_path": "checks/lfprice_review.md",
+  "review_sha256": "cf56effff80f07bce40c7215dcd6b88527a182b365b0226c28a7f50cd3e44c35"
+}

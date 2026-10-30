@@ -126,6 +126,15 @@ def worktree_remove(args: argparse.Namespace) -> int:
         shown = ", ".join(untracked[:5])
         return refuse(f"untracked files would be lost ({shown}); "
                       "keep them or pass --discard-untracked")
+    ignored = git("ls-files", "--others", "--ignored", "--exclude-standard", "-z",
+                  cwd=path)
+    if ignored.returncode:
+        return refuse(f"cannot inventory ignored files: {ignored.stderr.strip()}")
+    ignored_paths = ignored.stdout.rstrip("\0").split("\0") if ignored.stdout else []
+    if ignored_paths:
+        shown = ", ".join(ignored_paths[:5])
+        return refuse(f"ignored files would be lost ({shown}); "
+                      "preserve or remove them explicitly first")
     refs = {"main"}
     branch = git("rev-parse", "--abbrev-ref", "HEAD", cwd=path).stdout.strip()
     if branch and branch != "HEAD":
@@ -386,7 +395,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     lock = commands.add_parser("numeric-lock", help="one numeric job per machine")
     lock.add_argument("action", choices=("acquire", "refresh", "release", "status"))
-    lock.add_argument("--holder", help="session holding the lock")
+    lock.add_argument("--holder", help="unique session/job identity holding the lease")
     lock.add_argument("--purpose", default="numeric job")
     lock.add_argument("--ttl-hours", type=float, default=2.0)
     lock.set_defaults(handler=numeric_lock)

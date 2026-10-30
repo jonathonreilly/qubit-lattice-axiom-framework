@@ -102,6 +102,7 @@ class WorktreeTest(unittest.TestCase):
             subprocess.run(["git", "clone", "-q", str(remote), str(seed)],
                            check=True, capture_output=True)
             (seed / "AGENTS.md").write_text("rules\n", encoding="utf-8")
+            (seed / ".gitignore").write_text("valuable.log\n", encoding="utf-8")
             (seed / "other.txt").write_text("not needed\n", encoding="utf-8")
             git("add", ".", cwd=seed)
             git("commit", "-q", "-m", "seed", cwd=seed)
@@ -123,6 +124,17 @@ class WorktreeTest(unittest.TestCase):
                 git("push", "-q", "origin", "HEAD:refs/heads/work", cwd=tree)
                 self.assertEqual(call("worktree-remove", str(tree))[0], 1)
                 self.assertTrue(tree.exists())
+                ignored = tree / "valuable.log"
+                ignored.write_text("local results\n", encoding="utf-8")
+                self.assertEqual(
+                    call("worktree-remove", str(tree), "--discard-untracked")[0], 1
+                )
+                self.assertEqual(ignored.read_text(), "local results\n")
+                (tree / "scratch.txt").unlink()
+                self.assertEqual(call("worktree-remove", str(tree))[0], 1)
+                self.assertEqual(ignored.read_text(), "local results\n")
+                ignored.unlink()
+                (tree / "scratch.txt").write_text("discard me\n", encoding="utf-8")
                 self.assertEqual(
                     call("worktree-remove", str(tree), "--discard-untracked")[0], 0
                 )

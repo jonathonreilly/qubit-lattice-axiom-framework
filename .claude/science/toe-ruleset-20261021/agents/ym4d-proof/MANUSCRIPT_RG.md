@@ -54,8 +54,15 @@ Sections 4.19--4.21 test absolute resolvent walks, evaluate the axial
 Gaussian tree action, verify its leading rate in the actual first-step
 density at fixed volume, and construct a convergent complete-support
 series for the bare nonlinear stationary branch. The last result uses
-the full signed Gaussian inverse as each edge. It does not expand the
-normalized fluctuation integral or provide a uniform-depth reference.
+the full signed Gaussian inverse as each edge. Sections 4.22--4.24
+now give a connected rooted expansion of its Gaussian determinant,
+an explicit zero-free estimate for the actual SU(2) soft normalizers,
+and a rooted bound on the stationary Haar/normalizer amplitude.
+The actual cap integral is FI1, with an unexpanded Xi_Omega carrying
+its fluctuations, sources and moving boundary. FI6 bounds the exact
+local factors on a retained shrinking cutoff. These are first-step
+statements; they provide no normalized connected fluctuation sum,
+complete history representation or uniform-depth reference.
 
 **Hardest remaining inequality.** For the actual backward measure
 
@@ -69,6 +76,11 @@ and its mixed words through six field derivatives and four original source
 labels. In a good region its tails must be summable in the rooted norm after
 complete tensor extraction; across a bad region they must be paid by the
 same integral's unused reserves. The actual normalizer is in this covariance.
+The inequality it must ultimately support, in H3's notation, is
+
+    x_(j+1) <= (lambda+B s_j+eta_j)x_j+C x_j^2+B e_j,          (H5)
+
+with the contraction, coefficient and reserve clauses of section 3.
 Bounding each score's unconditional moments does not provide the required
 spatial decay. Section 4.7 gives the general integrated bound; sections
 4.9--4.11 give a local result on the specified nonlinear first-step sector.
@@ -77,10 +89,12 @@ common full posterior. Its same-exterior composition test is in section 4.17.
 CC13 proves a restricted first response with a common-cap fluctuation price.
 It has no all-history or (6;[4]) extension, and CC14 records the failed
 attempt to turn its distance decay into the required support-size norm.
-TB7 now localizes the deterministic stationary branch with connected
-supports. The outstanding part is the fluctuation contribution under the
-same actual posterior, including its normalizer and the complete history
-family. An index path or a stationary branch is not that covariance bound.
+TB7 localizes the deterministic stationary branch with connected supports;
+GD4 and GN5 supply the corresponding Gaussian determinant and stationary
+amplitude. The outstanding part is the connected response of Xi_Omega
+in FI1, followed by the actual history family under the same posterior.
+Small local factors in FI6 are not a bound on its normalized logarithm.
+An index path, a stationary branch, or a Gaussian determinant is not (A).
 
 **Order of constants.** Fix N, odd L>=3, kappa>0, the exact contour convention,
 the full-reader graph, and the original source directions first. Then fix the
@@ -102,9 +116,16 @@ For CC1--CC13, fix the proven cap constants and original source budget,
 then g_s,J_s,eta_s,K_B, then d_0>=1 and the threshold coefficient c_w.
 Only then take u large enough for CC1, epsilon(u)<=b_cap and a negative
 exponent in CC9. No closure of the induction's domain constants is inferred.
-For TB1--TB7, choose the flat g,M_G and 0<sigma<eta_G from L,kappa;
-then the explicit analytic constants and b_*; only afterwards restrict the
-output radius. This small support rate is not a certificate of H4's mu+2.
+For TB1--GN6, choose the flat g,M_G from L,kappa, then
+0<sigma_1<sigma_0<eta_G and use sigma_0 in the TB constants. The
+rate loss Delta=sigma_0-sigma_1 pays for all action anchors. Choose
+the explicit analytic constants and b_* next. For FI1 choose
+0<a_box<=min(a_cap/sqrt(3),r/4), then
+b<=min(b_*,a_box/(4L_0bar)). For FI4--FI7 choose 0<delta<1/6 and
+the four original plaquette source weights before increasing u until
+kappa u>=12 and u^(-1/2+delta)<=min(a_box/2,1/(6C_N)). FI6 then
+tends to zero. This ordering proves no bound for log Xi_Omega,
+and sigma_1 is not a certificate of H4's mu+2 support reserve.
 TR1 is fixed before local extraction; the leading tree/Wilson difference
 is no longer offered as a bounded residual on the epsilon domains.
 
@@ -188,38 +209,69 @@ is no longer offered as a bounded residual on the epsilon domains.
   the signed Gaussian inverse, then use its exponentially decaying
   entries as connected edges. The analytic force has only local vertices
   and starts at degree two. TB5--TB6 bound every tree and prove convergence
-  of the bare stationary-background series. The normalized fluctuation
-  contribution is still unexpanded; this success closes none of U1--U4.
+  of the bare stationary-background series. GD1--GD4 now sum its Gaussian
+  loops and explicitly pay the rate loss needed to sum all trace anchors.
+  GN1--GN5 control the actual stationary soft/Haar amplitude, uniformly in
+  u>=12/kappa. None of these results expands log Xi_Omega or closes U1--U4.
+* **Failed uncut fluctuation route:** extending the fourth-order Taylor
+  action to a Gaussian integral on all coordinates is nonintegrable.
+  At the actual L=3 free link in FI2, c_4<0 for every kappa>0;
+  at kappa=1 it is -918869623/3673320192. The quartic is negative
+  on an open cone, so a Gaussian quadratic cannot dominate its
+  exponential. Absolute cubic remainder bounds fail as well. This is
+  a failure of the replacement integral, not of the actual compact law.
+* **Restricted repair with retained mass:** FI1 keeps the shifted cap
+  exactly. FI4--FI6 prove small exact local factors on a shrinking
+  centered cutoff when delta<1/6, including the Haar, soft-normalizer
+  and four original plaquette-source variations. FI7 keeps its complement
+  in the same Gaussian expectation. No bound on the normalized connected
+  sum or its cutoff derivatives has been obtained; a volume-times-vertex
+  estimate cannot replace it.
+* **Failed probability-one shortcut for that repair:** FI8 proves that
+  the all-coordinate shrinking-cutoff mass of the actual Gaussian
+  reference tends to zero as volume grows at fixed u. A covariance
+  lower bound supplies an independent Gaussian noise component; no
+  independence of the original fine coordinates is assumed. This
+  rejects a volume-uniform small relative error from deleting the
+  cutoff, while leaving a connected logarithm and scalar extraction open.
 
-**Hostile check of the newest step.** TB7 takes absolute values only
-after exact Gaussian inversion, so it does not use the failed WP2 walk
-majorant. Each inverse edge carries a connected path including both
-fine-link endpoints; each nonlinear vertex carries all of its local
-readers and all child supports. The Cauchy and contraction constants
-are specified before the field radius. The real branch has a positive
-Hessian on the constructed box. These checks support the stated theorem.
-They do not make that branch the global minimizer uniformly in volume,
-give the full reference its required support reserve, or integrate any
-fluctuation. The scalar resolvent remains global in its field arguments.
-The theorem is at zero source, and six coordinate derivatives are not
-the mixed group/four-source jet of an RG activity. The actual-density
-rate test GS6 is only at fixed finite volume, with no uniform prefactor.
-No source, rough-sector or regeneration result is inferred from it.
-U1--U4 remain open.
+**Hostile check of the newest step.** The bounded-vertex statement
+FI6 is insufficient for (A). Its local anchor x does not remove the
+stationary branch's complete B readers, and its small supremum does
+not establish a connected logarithm after Gaussian integration. The
+complement in FI7 is weighted by W_B,J, so its Gaussian probability
+alone is not a price for the actual integral. Differentiating a shifted
+cap or a covariance interpolation retains boundary terms. These are
+specific missing estimates, not silently imposed hypotheses.
+FI8 attacks the cutoff shortcut quantitatively, but its Gaussian
+probability is not the weighted complement in FI7. Its proof uses
+C_B>=M_B^-1 I to add independent noise, not a false assertion that
+C_B is diagonal. Its fixed-u volume limit does not exclude a local
+logarithm bound, a different joint limit, or H5.
+The determinant argument separately paid for its free anchors with
+Delta, and GN1 proved zero-freeness before using complex derivatives.
+FI3's negative direction was enlarged to an open cone, avoiding the
+measure-zero-line error. The numerical determinant test uses a declared
+diagonal perturbation, not a numerically solved stationary Hessian;
+the finite-angle quartic check reuses its path histograms. Those checks
+do not independently verify a nonlinear posterior theorem. The retained
+results have only their stated first-step scopes. U1--U4 remain open.
 
-**Next decision.** Expand the normalized fluctuation contribution around
-the constructed branch while retaining the full signed Gaussian covariance.
-Its determinant, soft normalizers, source insertions and hard boundaries
-must share one reference. Test connected support sums and the required
-support reserve before claiming that a Gaussian cumulant expansion closes
-U1. Then test the same estimates on the inherited tree action and paid
-rough interfaces. A matched exterior extension is still needed to repair
-RC20 at its former threshold. Replacing rho_j by exp(-u_j W), identifying
-the stationary branch with the full density, or spending an original
-plaquette price twice remains forbidden.
+**Next decision.** Apply covariance interpolation to the exact factors
+in FI7 with the cutoff retained, using the full signed C_B series from
+GD3 and expanding the branch's reader supports. The decisive test is
+whether cutoff derivatives and the weighted complement admit summable
+connected supports under one normalization; prove that estimate before
+claiming a fluctuation expansion. If hard boundaries defeat that attempt,
+test a local smooth partition whose complementary masses remain explicit.
+Then address the inherited tree action and paid rough interfaces. The
+required H4 rate reserve and the feasibility of H5's constants are still
+open. Replacing rho_j by exp(-u_j W), identifying the stationary branch
+with the full density, or spending an original plaquette price twice
+remains forbidden.
 
 Working source: branch claude/push-A. This continuation starts from the
-driver checkpoint `ac67a941deafacb6cccbb9b90e3be393108efea3`; the initial
+driver checkpoint `c7ff8a85d25c1777ac818500356d4c2219387152`; the initial
 manuscript started at `a98f6eb20c89c5792b9db362b860fd1f43670665`.
 The locally recorded main ref is
 `bcab5d2ee4a908fbb4e6025635fb878e6c157ebe`; remote freshness is not certified.
@@ -332,7 +384,10 @@ of them. This choice is a definition, not evidence of uniform locality,
 smooth global branch selection, stability in j or a feasible coefficient
 budget. Those properties must be proved in U1--U4. GS6 verifies the
 first-step leading rate at fixed finite volume for N=2; TB7 proves a
-uniformly local bare stationary branch, with the limitations stated there.
+uniformly local bare stationary branch. GD4/GN5 control its Gaussian
+prefactor at a smaller rooted support rate. FI1 retains the still
+unexpanded nonlinear fluctuation factor; no full-density locality or
+uniform-depth property follows from these first-step results.
 
 ## 3. The induction statement
 
@@ -2188,10 +2243,11 @@ GS4's compactness argument identifies it as the global minimum only
 for a neighborhood that can depend on the fixed torus; uniform global
 branch selection or a paid alternative has not been proved. TB7 uses
 sigma<eta_G and does not certify H4's larger mu+2 support reserve.
-Its component-rooted sum is also not yet a rooted sum of action
-activities over every possible anchor. Four original source labels,
-rough/hole interfaces, the determinant and all higher connected
-fluctuation terms have not been handled. Neither have uniform-depth
+Its component-rooted sum alone is not a rooted sum of action
+activities over every possible anchor. GD4 below supplies an anchor
+conversion with a rate loss and bounds the Gaussian determinant.
+The four-label normalized source response, rough/hole interfaces
+and higher connected fluctuation sum remain open. So do uniform-depth
 bounds for the inherited nonlinear tree action.
 
 **GAP.** Inserting this deterministic branch into a Gaussian or
@@ -2203,7 +2259,412 @@ history masses, remains U1. The tree-background result is not a
 renaming of that unproved estimate and does not reduce the count of
 U1--U4.
 
-### 4.22 Verification, attribution, and claim boundary
+### 4.22 A connected expansion of the Gaussian normalization
+
+**PROVEN, bare stationary branch, zero source, N=2.** This step sums
+Gaussian loops, rather than the coordinate walks rejected in WP2.
+Choose two rates 0<sigma_1<sigma_0<eta_G and use sigma=sigma_0 in
+TB1--TB7. Write A_*(B) for that branch and put
+
+    C=H^-1,  E(B)=partial_A N(A_*(B),B),
+    H_B=H+E(B)=Hess_A F_B(A_*(B)),
+    K_E=24 exp(81sigma_0) M_N C_N^2 L_0bar,
+    q=K_H K_E b=24 K_0 C_N^2 L_0bar b <= 1/2.       (GD1)
+
+All constants here are the explicit TB constants at sigma_0; b<=b_*.
+No bound on a scalar diffusion resolvent is being used.
+
+**PROVEN supported Hessian bound.** Expand each entry of E by
+differentiating the local Taylor series for N_i before substituting
+A_*. Summing over the differentiated coordinate counts the degree of
+each monomial. With z=a+b<=3L_0bar b and C_N z<=1/2,
+
+    M_N sum_(n>=2) n C_N^n z^(n-1)
+                         <=8 M_N C_N^2 z.
+
+Retain T_i at each vertex, including the differentiated coordinate's
+fine-link endpoints. Substitute the supported TB7 series in every
+remaining A argument. Then
+
+    sup_i sum_(j,X) exp(sigma_0 |X|) ||E_(ij,X)||_b
+                                                   <= K_E b.       (GD2)
+
+Every X is connected, contains both fine-link endpoint sets i,j,
+and contains every B reader. Here ||.||_b is the complex supremum
+on |B_c^a|<=b. The factor exp(81sigma_0) pays for T_i. The
+derivative majorant already sums the coordinate and multiplicity
+choices; it is not multiplied by the volume.
+
+**PROVEN determinant and inverse expansions.** The supported row
+norm of CE is at most q. In this matrix algebra the support of a
+product is the union of its factor supports. A C entry carries P_ij;
+the adjoining E entry carries both of its indices, so this union is
+connected. It follows that
+
+    D(B):=(1/2)log[det H_B/det H]
+       =(1/2) sum_(n>=1) (-1)^(n+1) Tr[(CE)^n]/n,
+    C_B:=H_B^-1=sum_(n>=0)(-CE)^n C.                (GD3)
+
+The logarithm is the analytic branch equal to zero at B=0.
+The row norm q<1 proves convergence and nonvanishing of the
+determinant along sE, 0<=s<=1. On real fields H_B>=g/2 by TB7,
+so this branch is the real Gaussian normalization. A fixed trace
+anchor i contributes at most q^n in the sigma_0 supported norm;
+the inverse has supported row norm at most K_H/(1-q). This uses
+absolute values after computing C, not before its signed inversion.
+
+**PROVEN conversion to a rooted action norm.** This addresses the
+anchor issue left open after TB7. Let Delta=sigma_0-sigma_1 and
+
+    S_Delta=[(1+exp(-Delta))/(1-exp(-Delta))]^4.
+
+For a connected X containing both block(i) and a specified block v,
+|X|>=d(block(i),v). Thus lowering the rate from sigma_0 to sigma_1
+costs at most exp[-Delta d(block(i),v)] for that anchor. Summing all
+anchors gives at most n_A S_Delta on every compatible torus.
+Keeping the cycles as indexed terms and then grouping by their
+complete unions gives D(B)=sum_X D_X(B) and
+
+    sup_v sum_(X containing v) exp(sigma_1 |X|)||D_X||_b
+             <=(n_A S_Delta/2)[-log(1-q)].           (GD4)
+
+There is no unrecorded extensive factor: the trace's free anchor was
+summed using Delta. The same argument converts any uniformly bounded
+family with one declared block anchor, with S_Delta in place of
+n_A S_Delta. Translation invariance of that family is unnecessary.
+On |B|<=b/2, r_field ordered coordinate directions of maximum norm
+at most one cost at most (2 r_field/b)^r_field by multivariable
+Cauchy; supports remain the same. These are coordinate derivatives,
+not a claim about the full (6;[4]) RG jet.
+
+**Scope.** GD3 is the exact normalization of a Gaussian with the
+Hessian of the actual bare stationary action. It is not the
+normalization of the nonlinear posterior. Its rooted rate sigma_1
+is strictly below eta_G; no estimate at H4's mu+2 follows. No
+inherited action or rough exterior has entered this proof.
+
+### 4.23 The actual soft normalizers at the stationary field
+
+**PROVEN zero-free local estimate, not a formal Bessel asymptotic.**
+For complex s with Re s>0, the same Haar integral as in G2 gives
+
+    A(s)=(2 sqrt(2)/pi) int_0^2 exp(-s x) x^(1/2)
+                                         sqrt(1-x/2) dx.
+
+The analytic continuation is fixed by this integral. Write
+
+    A(t r)=sqrt(2/pi)(t r)^(-3/2)[1+e_t(r)],
+    |r-1|<=1/4,   t>=12.
+
+For 0<=x<=2, |sqrt(1-x/2)-1|<=x/2. The omitted leading-integral
+tail x>=2 is bounded using x^(1/2)<=x^(3/2)/2. These two errors
+together are at most Gamma(5/2)/(Re s)^(5/2) before the common
+constant 2sqrt(2)/pi. Dividing by the leading term proves
+
+    |e_t(r)| <= (3/2)|t r|^(3/2)/(Re(t r))^(5/2)
+       <= [ (3/2)(5/4)^(3/2)/(3/4)^(5/2) ]/t
+       <6/t <=1/2.                                 (GN1)
+
+In particular A(t r) has no zero on this disk. Its logarithm,
+normalized by its value at r=1, obeys
+
+    -log A(t r)+log A(t)
+      =(3/2)log r-log(1+e_t(r))+log(1+e_t(1)),
+    |-log A(t r)+log A(t)|
+               <=(3/2)log(4/3)+2log 2 <2.           (GN2)
+
+This bound is uniform in t>=12. It is not an interchange of a
+large-t asymptotic series with derivatives.
+
+**PROVEN analytic amplitude bound.** On the full TB2 input polydisc,
+the complex quaternion displacement obeys ||m-(1,0,0,0)||<=2/63.
+Consequently |m dot m-1|<=4/63+4/63^2<1/4. The chosen square root
+r_c=sqrt(m dot m) has positive real part and |r_c-1|<1/4. GN2
+therefore applies to every actual kernel normalizer there, for
+t=kappa u>=12. Its first derivative at A=0 vanishes: m_0 has no
+linear term, and the other quaternion coordinates vanish at zero.
+
+Remove only the constant 1/(2pi^2) from each SU(2) Haar coordinate
+density and write
+
+    j(A_b)=[sin(sqrt(A_b dot A_b))/sqrt(A_b dot A_b)]^2,
+    G_u(A)= product_(free b) j(A_b)
+                                product_c A(t r_c(A))^-1.       (GN3)
+
+These are holomorphic formulas in the indicated neighborhood. If
+z=A_b dot A_b, then |z|<=3r^2 and
+
+    |sin(sqrt z)/sqrt z-1| <= |z| exp(sqrt(|z|))/6 <1/8.
+
+Thus |log j(A_b)|<1 there, with the branch zero at A_b=0.
+It too starts at degree two. This checks the Haar logarithm as
+well as the soft logarithms, rather than assuming their zero-freeness.
+
+Assign each free-link Haar term to its base block and each soft
+normalizer to its coarse-link base. There are 3L^4+1 free links
+and four coarse links per block. The local anchored sum
+
+    g_x(A)=sum_(b based at x) log j(A_b)
+             -sum_(c based at x)[log A(t r_c(A))-log A(t)]
+
+is analytic, has no degree zero or one, and is bounded by
+J_0=3L^4+9 on the TB2 polydisc. Its reader container lies in
+N_(infinity,1)(x), with at most D_loc coordinates. Cauchy followed
+by TB7 therefore bounds its supported composition by
+
+    sum_X exp(sigma_0 |X|)||g_(x,X)(A_*)||_b
+       <=exp(81sigma_0) J_0 (C_N a)^2/(1-C_N a)
+       <=8 exp(81sigma_0) J_0 C_N^2 L_0bar^2 b^2,
+    a=2L_0bar b.                                    (GN4)
+
+The block x is retained in every term, and every branch reader is
+retained in its complete union. Using the block-anchor conversion
+proved in GD4 gives
+
+    log[G_u(A_*(B))/G_u(0)]=sum_X G_(u,X)(B),
+    sup_v sum_(X containing v) exp(sigma_1 |X|)||G_(u,X)||_b
+       <=8 S_Delta exp(81sigma_0) J_0 C_N^2 L_0bar^2 b^2.       (GN5)
+
+This estimate is uniform in volume and u>=12/kappa. Six coordinate
+derivatives on the smaller output polydisc follow by the same
+Cauchy argument as in GD4. In particular the complete leading
+Gaussian prefactor
+
+    log[G_u(A_*(B))/G_u(0)]-D(B)                     (GN6)
+
+has the sum of the GD4 and GN5 rooted bounds. It contains the
+actual Haar and soft normalizers at the stationary field, and the
+Gaussian determinant. It omits their variation under fluctuations,
+which is retained explicitly in the next identity.
+
+### 4.24 The remaining integral and failure of the uncut Taylor route
+
+**PROVEN exact identity for a fixed bare cap.** Choose a positive
+coordinate half-width a_box<=min(a_cap/sqrt(3),r/4) and let
+Omega=(-a_box,a_box)^d in the exact tree gauge. In addition to TB6,
+take b<=a_box/(4L_0bar), so A_*(B) lies inside the half-width
+a_box/2 box. Here d=n_A times the number of coarse blocks. Let
+n_f=d/3 be the number of free fine links. With the original four
+source functions O_i, define the actual unnormalized cap integral
+
+    Z_Omega(B;J)=(2pi^2)^(-n_f) int_Omega
+          exp[-u F_B(A)+sum_i J_i O_i(A)] G_u(A) dA.
+
+No sources enter the kernel, the coupling, or the branch definition.
+Define, only for a with A_*+a in Omega,
+
+    R_B(a)=F_B(A_*+a)-F_B(A_*)-(1/2)<a,H_B a>,
+    D_B=sqrt(u)(Omega-A_*),
+    W_B,J(zeta)=exp[-u R_B(zeta/sqrt(u))]
+       [G_u(A_*+zeta/sqrt(u))/G_u(A_*)]
+       exp[sum_i J_i{O_i(A_*+zeta/sqrt(u))-O_i(A_*)}].
+
+Let gamma_(C_B) be the normalized real Gaussian with covariance
+C_B from GD3. A change of variables gives exactly
+
+    Z_Omega(B;J)=(2pi^2)^(-n_f) (2pi/u)^(d/2)
+       exp[-u F_B(A_*)+sum_i J_i O_i(A_*)]
+       G_u(A_*) (det H_B)^(-1/2) Xi_Omega(B;J),
+    Xi_Omega(B;J)=E_(gamma_(C_B))[1_(D_B) W_B,J].       (FI1)
+
+The integrand is defined to be zero off D_B, so FI1 invokes no
+extension of its local formulas to all real fields. The cap mass
+is retained by FI1, not divided out. Xi_Omega retains the amplitude
+fluctuations, four original source differences and moving boundary.
+The same factor enters the common normalization. Derivatives in the
+shifted variables must differentiate D_B as well. It is not
+legitimate to erase that term because Omega was fixed before
+changing variables. Nor is Z_Omega the full history sum.
+
+**GAP, explicit remaining test.** The work in GD1--GN6 controls
+the Gaussian determinant and the stationary amplitude, not
+log Xi_Omega. For a Gaussian expansion to advance (A), it must
+produce connected complete supports for the derivatives of
+log Xi_Omega and its inserted expectations, with a rooted bound
+and then the actual cap-complement/history return. FI1 is an
+identity displaying that obligation, not a new assumed lemma
+counted as a result.
+
+**PROVEN failure of an uncut fourth-order replacement in the actual
+leading action.** Set L=3, V=I, and vary only the free fine link
+from (0,0,0,0) to (0,1,0,0), with direction indices 0,1,2,3:
+U=exp(i a sigma_3) there and I elsewhere. It is free because the
+specified block tree moves first in direction 0 at that site.
+Every compatible torus with at least two coarse sites per direction
+has the same eight distinct incident coarse kernels for this test.
+
+The six incident plaquettes contribute 6(1-cos a). For each of
+the eight means, every paired path reduces to I or exp(plus or
+minus i a sigma_3), with a single sign in that mean. The nonzero
+fractions are
+
+    p=1/324 six times, p=1/108 once, p=1/36 once.      (FI2)
+
+Here is the path count, separately from its numerical check. A
+root-to-y leg crosses the chosen link negatively only when y is
+the all-zero site and direction 1 is last in the coordinate order;
+there are 3!=6 such paths. For a coarse direction different from
+1 these are the only crossings, in the outgoing and incoming
+kernel, with opposite signs. For the outgoing direction-1 kernel,
+24 straight crossings at y=0 cancel six of those leg crossings,
+leaving 18. For the incoming direction-1 kernel there are 48
+straight crossings, from y_1=1,2 with other coordinates zero,
+and six additional reversed-leg crossings at y=0. The total is
+54. Dividing by 24 L^4=1944 proves FI2, including cancellations
+within an individual path.
+
+For any one of these fractions,
+
+    m_0=1-p+p cos a,  m_3=plus or minus p sin a,
+    psi_p(a)=sqrt(m_0^2+m_3^2)-m_0
+       =(p^2/2)a^2-[p^2{1+3(1-p)^2}/24]a^4+O(a^6).
+
+Consequently, with P the multiset in FI2,
+
+    F_0(a)=[3+(kappa/2)sum_(p in P) p^2]a^2
+                  +c_4 a^4+O(a^6),
+    c_4=-1/4-(kappa/24)sum_(p in P)p^2[1+3(1-p)^2]<0.
+    At kappa=1: c_4=-918869623/3673320192.            (FI3)
+
+The homogeneous fourth Taylor polynomial F_4 of the actual leading
+action is therefore negative on an open cone about this direction.
+After A=zeta/sqrt(u), the unrestricted quartic replacement would
+integrate
+
+    exp[-(1/2)<zeta,H zeta>-u^(-1/2)F_3(zeta)
+                                      -u^(-1)F_4(zeta)] d zeta.
+
+On a smaller open cone, -F_4(zeta)>=c||zeta||^4 for some c>0
+at that fixed finite volume. The quadratic and cubic terms are
+of lower degree. The integral is infinite for every u>0. The
+open cone, not just a measure-zero line, proves this assertion.
+Thus even a signed quartic truncation cannot be extended to an
+uncut Gaussian integral. The more elementary absolute remainder
+bound exp(C u^(-1/2)|zeta|^3) is also nonintegrable under a
+nondegenerate Gaussian for every C>0.
+
+This failure belongs to this proposed Taylor replacement. FI3 is
+in the actual leading normalized-kernel exponent, but the replacement
+does not include the exact compact-domain normalizers or all higher
+terms. It is not a counterexample to the actual density, to (A), or
+to a cutoff/forest expansion with its remainder retained.
+
+**PROVEN local estimate after retaining a shrinking cutoff.** This
+identifies what the failed route can still supply. Assign the six
+L^4 fine plaquettes and four coarse gaps at each block to a local
+action F_x. On the TB2 complex polydisc it is bounded by
+M_F=18L^4+16kappa. The TB6 branch obeys |A_*|_infinity<=r/4.
+Cauchy in a polydisc of radius r/2 about A_* bounds the sum of
+degree-n local Taylor terms in a by M_F(C_N h)^n when
+|a|_infinity<=h. Subtract the local terms through degree two.
+Their sum is exactly R_B, because the total linear term vanishes.
+For C_N h<=1/2 this proves
+
+    |R_(B,x)(a)|<=2 M_F C_N^3 h^3.
+    On |zeta|_infinity<=u^delta, 0<delta<1/6:
+    u |R_(B,x)(zeta/sqrt(u))|
+                  <=2 M_F C_N^3 u^(-1/2+3delta).     (FI4)
+
+**PROVEN bounded local factors on the retained cutoff.** For this
+additional estimate take the four original plaquette sources
+O_i=f_(p_i), as in RC5 and CC1, with |J_i|<=r_i and R_J=sum_i r_i.
+Assign each source to its plaquette's base block. The local logarithm
+g_x(A)+sum_(i assigned to x)J_i f_(p_i)(A) has no degree below two
+and is bounded by J_F=J_0+3R_J on the TB2 polydisc. Summing its
+Taylor differences between A_*+a and A_* gives, if
+C_N(2L_0bar b+h)<=1/2,
+
+    |g_x(A_*+a)-g_x(A_*)
+          +sum_(i assigned to x)J_i[f_(p_i)(A_*+a)-f_(p_i)(A_*)]|
+            <=8 J_F C_N^2(2L_0bar b+h)h.             (FI5)
+
+Indeed the degree-n difference is bounded by h times n times the
+degree-(n-1) majorant at 2L_0bar b+h, and the same geometric
+derivative sum as in GD2 gives the factor eight. This estimate
+retains the original source coefficients; it changes neither u
+nor any kernel. For h=u^(-1/2+delta) require
+h<=min(a_box/2,1/(6C_N)). The centered cutoff
+Gamma_u={|zeta|_infinity<=u^delta} then lies inside D_B and the
+condition in FI5 follows from TB6. On Gamma_u the exact FI1
+integrand is product_x exp(V_x), where V_x is the sum of the
+local terms in -uR_B, GN3's logarithmic amplitude difference,
+and the original source difference. Equations FI4--FI5 give
+
+    |V_x|<=lambda_u,
+    lambda_u=2 M_F C_N^3 u^(-1/2+3delta)
+           +8 J_F C_N^2(2L_0bar b+u^(-1/2+delta))
+                                             u^(-1/2+delta),
+    |exp(V_x)-1|<=exp(lambda_u)-1 ->0
+                                    for 0<delta<1/6.       (FI6)
+
+This proves smallness per local factor of the exact integrand on
+the declared cutoff, including the normalizer and source variations.
+It does not prove a small connected sum after Gaussian integration.
+The label x is a local fine-field anchor; V_x still reads the
+stationary branch A_*(B), whose complete B supports must be expanded
+as well. The exact split is
+
+    Xi_Omega=E_gamma[1_(Gamma_u) product_x exp(V_x)]
+                  +E_gamma[1_(D_B minus Gamma_u) W_B,J].     (FI7)
+
+Both terms are retained. Bounding all V_x at once gives a volume
+factor. A Gaussian tail bound alone does not pay for W_B,J on the
+second term. Nor does it control the derivatives of the cutoff
+under a covariance interpolation. The determinant calculation has
+not supplied a cluster expansion for either difficulty.
+
+**PROVEN skeptical test of dropping the cutoff.** This problem already
+occurs in the actual Gaussian reference, before any V_x is inserted.
+For real B in the declared box, TB7 gives ||E(B)||_op<=g/2 and
+H<=M_G I. Set M_B=M_G+g/2. Then C_B>=M_B^-1 I. Decompose
+zeta=eta+xi, where eta has independent centered Gaussian coordinates
+of variance M_B^-1, and xi is an independent Gaussian with covariance
+C_B-M_B^-1 I. A centered interval maximizes the mass of a one-dimensional
+centered Gaussian among its translates. Conditional on xi, independence
+of eta therefore proves
+
+    P_(gamma_(C_B))(Gamma_u)
+       <=[1-2 Phi(-sqrt(M_B) u^delta)]^d.             (FI8)
+
+Here Phi is the standard normal distribution function; the interval
+maximization follows directly by differentiating its two endpoint
+distribution functions. For every fixed finite u, the bracket is
+strictly below one. Thus the all-coordinate cutoff probability tends
+to zero as volume grows, even though each coordinate tail is small.
+One cannot replace its indicator by one with a volume-uniform small
+relative error. This does not rule out a local connected expansion of
+its logarithm or extraction of its extensive scalar. It rules out that
+shortcut, and says nothing by itself about the weighted second term
+in FI7. In particular, it is not a counterexample to H5.
+
+**Hostile check of the newest step.** A critic can correctly reject
+four tempting promotions. First, GD4 needed a genuine rate loss
+Delta to sum a trace's anchors; a row norm alone did not prove
+the claimed rooted action bound. That loss is included. Second,
+GN2 needed a zero-free complex region; a real Bessel asymptotic
+did not justify Cauchy derivatives. GN1 proves that region with
+an explicit threshold. Third, the uncut quartic approximation is
+actually divergent in this model, not merely hard to bound; FI2--FI3
+give a freely varied link and a positive-measure cone. Fourth,
+FI4--FI6 keep a cutoff and bound individual vertices only. They supply
+neither the normalized connected sum nor a way to discard D_B.
+FI8 makes the last criticism quantitative in the actual Gaussian
+reference. Its independent-noise decomposition uses a covariance
+lower bound, not an assumption that the fine coordinates are independent.
+The limit holds at fixed u as volume grows; it is not uniform in a
+simultaneous u/volume limit and is not claimed to be a weighted-tail price.
+
+The retained claims survive those checks at their stated scopes:
+a local Gaussian determinant, the actual stationary normalizer/Haar
+amplitude, the exact cap identity and bounded cutoff factors, and
+failure of one uncut extension.
+They do not give the six-group/four-original-source jet of Xi_Omega,
+the actual history sum, H4's rate reserve, uniform global minimum
+selection, inherited reference stability, or U2--U4. Even the cap's
+new nonlinear fluctuation expansion is **GAP**. No full-return or
+independent-review status is inferred from these computations.
+
+### 4.25 Verification, attribution, and claim boundary
 
 The check script [checks/push_a_kernel_moments.py](checks/push_a_kernel_moments.py)
 performs separate direct Haar quadratures and scaled Bessel evaluations,
@@ -2289,6 +2750,35 @@ used one BLAS thread and peak RSS 87,851,008 bytes under the checked
 or the normalized fluctuation expansion is claimed; their stated
 mathematical scopes must be assessed from the arguments themselves.
 
+The [fluctuation-prefactor script](checks/push_a_fluctuation_prefactor.py)
+and its [complete output](checks/push_a_fluctuation_prefactor.log) make
+40 comparisons between scaled complex Bessel evaluation and a separately
+scaled direct Haar quadrature on |r-1|=1/4, at t=12,30,100,1000,1000000.
+Their maximum absolute discrepancy for A(tr)/[sqrt(2/pi)(tr)^(-3/2)]
+is 4.54e-13. The proof of GN1, not this finite set, establishes the
+zero-free disk and its uniform bound.
+
+The same script tests GD3's matrix algebra on the zero-momentum,
+one-colour, 244-coordinate Bloch matrix of the actual L=3 flat H,
+with an explicitly declared diagonal perturbation E.
+It does not compute H_B at a nonzero stationary field. With spatial
+support weights omitted and ordinary absolute row norm ||CE||=0.2,
+the twelve-term determinant error is 1.71e-13 against a 9.61e-9
+tail bound, and the inverse row error is 1.53e-9 against 3.01e-7.
+These are finite matrix checks, not a support theorem or nonlinear
+posterior calculation.
+
+Its direct enumeration of all paired paths finds the six counts of
+6, the count of 18 and the count of 54 used in FI2, including signs
+and within-path cancellations. Exact rational arithmetic gives the
+FI3 coefficient. Finite-angle evaluations at a=0.1,0.05,0.025 reuse
+those histograms and check the Taylor algebra; they are not independent
+evidence for the path counts. Peak RSS was 94,355,456 bytes, with
+BLAS threads one and the checked 1 GB ceiling. The open-cone argument,
+not a divergent numerical quadrature, proves the failure of the uncut
+quartic integral. No computation of Xi_Omega, independent reviewer,
+all-history test or RG return has been added.
+
 The small/large-field organization is credited to Tadeusz Balaban and
 Jonathan Dimock. The relevant repository comparisons are REFMATCH RM1/RM2/
 RM25, ROUGH Q12--Q25, RENEW's forward flux example, CHARGE's original-weight
@@ -2313,4 +2803,8 @@ conditions proved above. The boundary term was checked against
 [Kolesnikov--Milman, Brascamp--Lieb-type inequalities with boundary](https://publications.hse.ru/pubs/share/direct/216903475.pdf),
 Theorem 1.1; their smooth-boundary theorem is not silently asserted on
 the rectangle, and no theorem for the entire inherited measure is imported.
+The positivity-preserving forest organization was checked in
+[Abdesselam--Rivasseau, Trees, forests and jungles, introduction and section II](https://arxiv.org/pdf/hep-th/9409094)
+as a possible next route for FI7. No convergence or boundary estimate
+for the present normalized integral is imported from that paper.
 No external Yang--Mills RG theorem is imported. The target remains **GAP**.

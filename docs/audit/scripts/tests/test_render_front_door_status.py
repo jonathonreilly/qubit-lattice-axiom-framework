@@ -7,7 +7,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from render_front_door_status import retained_backbone_lines
+from render_front_door_status import open_gate_rows, retained_backbone_lines
 
 
 def _row(claim_id, status, score=None, note_path="auto", audit_date="2026-07-01",
@@ -26,6 +26,16 @@ def _row(claim_id, status, score=None, note_path="auto", audit_date="2026-07-01"
     if parent is not None:
         row["decoration_parent_claim_id"] = parent
     return row
+
+
+class OpenGateRowsTest(unittest.TestCase):
+    def test_typed_rows_are_not_hidden_by_an_empty_derived_count(self):
+        rows = dict(open_gate_rows({
+            "claim_type_counts": {"open_gate": 334},
+            "effective_status_counts": {"unaudited": 5573},
+        }))
+        self.assertEqual(rows["Rows typed `open_gate`"], 334)
+        self.assertEqual(rows["Rows with effective status `open_gate`"], 0)
 
 
 class RetainedBackboneTest(unittest.TestCase):

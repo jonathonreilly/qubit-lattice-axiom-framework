@@ -396,6 +396,19 @@ def retained_backbone_lines(rows: dict) -> list[str]:
     return lines
 
 
+def open_gate_rows(summary: dict) -> list[tuple[str, int]]:
+    """Separate rows typed open_gate from those with that derived status.
+
+    effective_status only reaches open_gate through an audit, so with no applied
+    verdicts a single "Open gates" count read 0 beside hundreds of typed rows.
+    """
+    return [
+        ("Rows typed `open_gate`", summary.get("claim_type_counts", {}).get("open_gate", 0)),
+        ("Rows with effective status `open_gate`",
+         summary.get("effective_status_counts", {}).get("open_gate", 0)),
+    ]
+
+
 def main() -> None:
     ledger_io.ensure_cache()
     counts, boxed_decorations, retained_grade = status_counts()
@@ -436,7 +449,7 @@ def main() -> None:
                 ("Retained no-go rows", counts.get("retained_no_go", 0)),
                 ("Retained bounded rows", counts.get("retained_bounded", 0)),
                 ("Boxed decorations under retained parents", boxed_decorations),
-                ("Open gates", counts.get("open_gate", 0)),
+                *open_gate_rows(summary),
                 ("Unaudited rows", counts.get("unaudited", 0)),
                 ("Retained-pending-chain rows", summary.get("retained_pending_chain_count", 0)),
                 ("Audited conditional rows", counts.get("audited_conditional", 0)),

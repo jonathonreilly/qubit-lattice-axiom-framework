@@ -63,6 +63,17 @@ its fluctuations, sources and moving boundary. FI6 bounds the exact
 local factors on a retained shrinking cutoff. These are first-step
 statements; they provide no normalized connected fluctuation sum,
 complete history representation or uniform-depth reference.
+Section 4.25 now treats the zero-output Gaussian cutoff mass itself:
+hard boundary integration, degree-resolved Hermite bounds and the
+forest sum give its convergent connected logarithm with a uniform
+rooted bound. This retains the extensive cutoff mass detected in FI8.
+It does not integrate the nonlinear FI6 factors. Section 4.26 shows
+why a direct extension to their overlapping readers loses the positive
+covariance lower bound needed by this estimate.
+RCF2 then groups the actual overlapping factors before interpolation,
+keeping one common expectation. RCF3 bounds these components before
+integration; their growing reader sets still prevent a direct reuse
+of the distinct-coordinate tree bound.
 
 **Hardest remaining inequality.** For the actual backward measure
 
@@ -91,8 +102,10 @@ It has no all-history or (6;[4]) extension, and CC14 records the failed
 attempt to turn its distance decay into the required support-size norm.
 TB7 localizes the deterministic stationary branch with connected supports;
 GD4 and GN5 supply the corresponding Gaussian determinant and stationary
-amplitude. The outstanding part is the connected response of Xi_Omega
-in FI1, followed by the actual history family under the same posterior.
+amplitude. CF10 bounds the logarithm of the Gaussian cutoff mass at
+B=0. The outstanding part is the connected response of the weighted
+Xi_Omega in FI1, including its output readers and original source jets,
+followed by the actual history family under the same posterior.
 Small local factors in FI6 are not a bound on its normalized logarithm.
 An index path, a stationary branch, or a Gaussian determinant is not (A).
 
@@ -126,6 +139,14 @@ the four original plaquette source weights before increasing u until
 kappa u>=12 and u^(-1/2+delta)<=min(a_box/2,1/(6C_N)). FI6 then
 tends to zero. This ordering proves no bound for log Xi_Omega,
 and sigma_1 is not a certificate of H4's mu+2 support reserve.
+For CF1--CF10 use those same rates, then c=1/M_G, Lambda=1/g,
+D=K_H/c and A_0=e sqrt(6). Choose R by CF9 after these constants.
+For its use as the cutoff in FI7, set R=u^delta and satisfy both
+CF9 and the preceding FI conditions by increasing u. No numerical
+momentum minimum replaces g, and this is not a feasible choice of
+the unknown H5 constants. For RCF3 choose a>0 before taking u large
+enough that 2496(exp(lambda_u)-1)exp(81sigma_0+a)<1. This proves
+only the displayed component sum before Gaussian integration.
 TR1 is fixed before local extraction; the leading tree/Wilson difference
 is no longer offered as a bounded residual on the epsilon domains.
 
@@ -234,44 +255,71 @@ is no longer offered as a bounded residual on the epsilon domains.
   independence of the original fine coordinates is assumed. This
   rejects a volume-uniform small relative error from deleting the
   cutoff, while leaving a connected logarithm and scalar extraction open.
+* **Failed smooth-partition shortcut:** a plateau cutoff with compact
+  support cannot satisfy the analytic factorial derivative bound SP1
+  at every order. A forest vertex has unbounded possible degree, so
+  the existing six-jet bounds do not supply the missing estimate.
+  This does not rule out other smooth-partition estimates.
+* **Successful restricted boundary route:** retain the hard cutoffs and
+  transfer their derivatives to independent Gaussian noise. CF2 keeps
+  a positive covariance lower bound for distinct coordinates throughout
+  the forest interpolation. The product of square-root degree factorials
+  is summable by the explicit Pruefer estimate. CF10 then controls the
+  scalar Gaussian cutoff logarithm at B=0 with complete decorated paths,
+  its original coordinate incompatibility, and a paid anchor rate loss.
+* **Failed direct promotion to the nonlinear factors:** actual neighboring
+  FI6 factors share fine coordinates. Replicating a shared coordinate
+  gives eigenvalue v(1-h) in SP2, so the proposed independent-noise edge
+  estimate costs 1/(1-h), which is not integrable. SP3 shows that the
+  exact bounded covariance is finite; this is a lost estimate, not a
+  counterexample to normalized return. Nonzero-B covariance readers
+  inside CF5 also remain unexpanded.
+* **Initial repair, with its remaining failure:** RCF2 groups overlapping
+  bounded factors exactly, and the cutoff factors cancel selected bad
+  coordinates inside their reader sets. The surviving objects are
+  reader-disjoint under one Gaussian expectation. RCF3 sums their local
+  component weights. Copying CF8 still fails: each component has up to
+  D_loc times its size in coordinate readers, so the Gaussian tree count
+  acquires size moments not present in the one-coordinate proof.
 
-**Hostile check of the newest step.** The bounded-vertex statement
-FI6 is insufficient for (A). Its local anchor x does not remove the
-stationary branch's complete B readers, and its small supremum does
-not establish a connected logarithm after Gaussian integration. The
-complement in FI7 is weighted by W_B,J, so its Gaussian probability
-alone is not a price for the actual integral. Differentiating a shifted
-cap or a covariance interpolation retains boundary terms. These are
-specific missing estimates, not silently imposed hypotheses.
-FI8 attacks the cutoff shortcut quantitatively, but its Gaussian
-probability is not the weighted complement in FI7. Its proof uses
-C_B>=M_B^-1 I to add independent noise, not a false assertion that
-C_B is diagonal. Its fixed-u volume limit does not exclude a local
-logarithm bound, a different joint limit, or H5.
-The determinant argument separately paid for its free anchors with
-Delta, and GN1 proved zero-freeness before using complex derivatives.
-FI3's negative direction was enlarged to an open cone, avoiding the
-measure-zero-line error. The numerical determinant test uses a declared
-diagonal perturbation, not a numerically solved stationary Hessian;
-the finite-angle quartic check reuses its path histograms. Those checks
-do not independently verify a nonlinear posterior theorem. The retained
-results have only their stated first-step scopes. U1--U4 remain open.
+**Hostile check of the newest step.** RCF2 retains an expectation of
+a product; it gives no license to multiply separately normalized
+component expectations. RCF3 pays the overlap animals before
+integration, but does not pay the growing reader multiplicities of
+high-degree Gaussian tree vertices. Its hard-cut cancellation is exact
+because F_x vanishes outside the very box where f_i is one. It is
+proved at B=0 with the specified original plaquette sources, not on
+the inherited history family.
+CF10 is a scalar Gaussian
+normalization theorem, not the full Xi_Omega bound. It requires distinct
+physical coordinates in CF2, retains hard boundaries in CF3--CF5,
+and keeps product sqrt(degree!) instead of a factorial of total degree.
+Its exact polymer identity uses coordinate intersection; declaring all
+overlapping decorated paths incompatible would change that identity.
+The anchor sum spends Delta explicitly. These checks support its stated
+scope. The attempted nonlinear promotion fails SP2 at actual shared
+readers. Its divergent majorant is not the actual covariance: SP3 has
+an integrable square-root singularity and the finite value p(1-p).
+Neither the zero-output scalar proof nor the finite-torus checks supply
+the B readers inside interpolated expectations, the original mixed jets,
+or the weighted complement of FI7. The latter still cannot be priced
+by a Gaussian tail alone. U1--U4 remain open; no independent reviewer
+or retained-grade status has been added.
 
-**Next decision.** Apply covariance interpolation to the exact factors
-in FI7 with the cutoff retained, using the full signed C_B series from
-GD3 and expanding the branch's reader supports. The decisive test is
-whether cutoff derivatives and the weighted complement admit summable
-connected supports under one normalization; prove that estimate before
-claiming a fluctuation expansion. If hard boundaries defeat that attempt,
-test a local smooth partition whose complementary masses remain explicit.
-Then address the inherited tree action and paid rough interfaces. The
-required H4 rate reserve and the feasibility of H5's constants are still
-open. Replacing rho_j by exp(-u_j W), identifying the stationary branch
+**Next decision.** Apply covariance interpolation to RCF2's genuinely
+reader-disjoint components. Seek a derivative tensor bound that retains
+coordinate/degree information without losing an uncontrolled size factor
+at each edge; combine it with RCF3 before claiming a logarithm bound.
+The scalar per-component replacement of CF8 has not done this. Then
+expand every B-dependent covariance reader in the same connected norm
+and retain the weighted complement in FI7. The inherited reference,
+rough interfaces, H4 rate reserve and H5's feasible constants still need
+proof. Replacing rho_j by exp(-u_j W), identifying the stationary branch
 with the full density, or spending an original plaquette price twice
 remains forbidden.
 
 Working source: branch claude/push-A. This continuation starts from the
-driver checkpoint `c7ff8a85d25c1777ac818500356d4c2219387152`; the initial
+driver checkpoint `951d851ed0ec531f92d74dc9843b72d4f5159d45`; the initial
 manuscript started at `a98f6eb20c89c5792b9db362b860fd1f43670665`.
 The locally recorded main ref is
 `bcab5d2ee4a908fbb4e6025635fb878e6c157ebe`; remote freshness is not certified.
@@ -2664,7 +2712,418 @@ selection, inherited reference stability, or U2--U4. Even the cap's
 new nonlinear fluctuation expansion is **GAP**. No full-return or
 independent-review status is inferred from these computations.
 
-### 4.25 Verification, attribution, and claim boundary
+### 4.25 Hard Gaussian cutoffs: a connected logarithm with its mass retained
+
+**PROVEN at B=0 for the Gaussian reference in FI1.** This is a
+different route from Taylor expanding the unbounded fluctuation.
+It treats the cutoff boundary by Gaussian integration by parts.
+The result concerns a normalized Gaussian cutoff probability, not
+the weighted Xi_Omega or the actual nonlinear backward measure.
+
+Use C=H^-1 at the zero-source, zero-output bare branch, with its
+three colour components. Choose 0<sigma_1<sigma_0<eta_G and the
+TB1 bound K_H at sigma_0. The real fine-coordinate index set is
+denoted I_all, with n_A indices per coarse block. Put
+
+    c=1/M_G,  Lambda=1/g,  c I<=C<=Lambda I,
+    f_i(zeta_i)=1_(|zeta_i|>R),
+    Z_R=E_(gamma_C) product_(i in I_all)(1-f_i)
+       =P_(gamma_C)(|zeta_i|<=R for every i).          (CF1)
+
+In FI7 the choice is R=u^delta. Every f_i refers to an actual free
+fine coordinate, not a replica of a coordinate used at another
+vertex. That restriction is essential below.
+
+**PROVEN uniform covariance bounds during the forest interpolation.**
+For a finite set I of n distinct coordinates and a labelled tree T
+on I, give each edge e a parameter h_e in [0,1]. Let W_ii=1 and
+W_ij be the minimum h along the T path from i to j. For a forest,
+put W_ij=0 across components. The matrix W is positive semidefinite:
+it is the integral from 0 to 1 of the matrices that are one within
+each component of the edges with h_e>=s and zero between components.
+Each such matrix is a direct sum of all-ones positive matrices.
+For the principal covariance C_I define
+
+    Sigma_(T,h)=C_I entrywise-multiplied by W(T,h).
+
+The Schur product theorem, applied to C_I-cI and Lambda I-C_I,
+gives at every h, including its boundary,
+
+    c I<=Sigma_(T,h)<=Lambda I.                     (CF2)
+
+No positivity of individual off-diagonal entries of C is assumed.
+The Schur product assertion follows, for example, by writing both
+positive matrices as Gram matrices and using tensor products of
+their Gram vectors.
+
+**PROVEN derivative estimate including hard boundaries.** Let
+Sigma be any real covariance obeying CF2. Decompose a Gaussian
+zeta=eta+xi, with eta_i independent of variance c and xi an
+independent Gaussian of covariance Sigma-cI. For smooth bounded
+one-coordinate functions F_i, integration by parts in eta_i gives
+
+    E_Sigma product_i F_i^(d_i)(zeta_i)
+       =c^(-sum_i d_i/2) E_(xi,eta)
+            product_i [He_(d_i)(eta_i/sqrt(c)) F_i(xi_i+eta_i)].
+
+Here He_d is the probabilists' Hermite polynomial, with
+E[He_d(G)^2]=d! for G a standard normal. This identity and norm
+follow by differentiating the Gaussian density, or from the
+generating identity exp(tG-t^2/2). Conditional on xi, apply
+Cauchy--Schwarz separately in each independent eta_i, then apply
+Cauchy--Schwarz once in xi. This proves
+
+    |E_Sigma product_i F_i^(d_i)|
+       <= c^(-sum d_i/2) product_i sqrt(d_i!)
+                            [E_Sigma product_i |F_i|^2]^(1/2).   (CF3)
+
+The product of degree factorials is important. Replacing it by
+sqrt((sum d_i)!) would lose the tree summation proved below.
+For F_i=f_i, all n coordinates must have squared sum greater
+than nR^2. Since Sigma<=Lambda I,
+
+    P_Sigma(all |zeta_i|>R)
+       <=exp[-nR^2/(4Lambda)]
+                         E_Sigma exp(||zeta||^2/(4Lambda))
+       <=2^(n/2) exp[-nR^2/(4Lambda)].
+    epsilon_R=2^(1/4) exp[-R^2/(8Lambda)].             (CF4)
+
+For hard f_i, interpret the derivatives in CF3 distributionally.
+To justify this without dropping boundaries, convolve each f_i
+with a positive compactly supported mollifier of width epsilon.
+The smoothed function remains between zero and one and is supported
+where |zeta_i|>R-epsilon. CF3--CF4 apply with that radius, uniformly
+in the smoothing width. Its Gaussian moments converge to the hard
+ones. The integration-by-parts expression on the right of the
+identity also converges by Gaussian domination of the Hermite
+polynomials. Taking epsilon down to zero proves the claimed hard
+boundary formula and estimate. No analytic cutoff is assumed.
+
+**PROVEN connected moments.** Apply the Brydges--Kennedy Taylor
+forest formula to E_Sigma product_i F_i. Its covariance derivatives
+are C_ij partial_i partial_j, with no factor of 1/2 for an
+off-diagonal pair. The covariance becomes block diagonal across
+forest components, so their expectations factor. Comparing with
+the moment--cumulant partition identity gives, for distinct indices,
+
+    kappa_I(f)=sum_(T tree on I) w_(I,T),
+    w_(I,T)=product_({i,j} in T) C_ij
+        int_[0,1]^(n-1) E_(Sigma_(T,h))
+                            product_i f_i^(deg_T(i)) dh.     (CF5)
+
+For n=1 the tree is empty and w_(i,empty)=E f_i. The exact forest
+identity and its Gaussian application are the standard results in
+[Abdesselam--Rivasseau, Theorem III.1 and section V.A](https://arxiv.org/pdf/hep-th/9409094).
+Its hypotheses here are checked as follows: the dimension is finite,
+CF2 keeps all evaluated covariances uniformly positive, and Gaussian
+moments of the bounded smoothed functions are smooth in covariance
+on that open positive cone. The compact set of forest covariances
+lies inside that cone, so the function can be smoothly extended
+off a neighborhood of that compact set if the formula is stated
+on the full parameter space. Only values and derivatives inside
+the cone occur. The preceding mollifier limit supplies the hard
+functions. No derivative is taken through an unretained boundary.
+
+Equations CF3--CF5 now prove
+
+    |w_(I,T)|<=epsilon_R^n c^(-(n-1))
+          product_({i,j} in T)|C_ij|
+          product_(i in I) sqrt(deg_T(i)!).            (CF6)
+
+This is an all-degree estimate with an explicit common Gaussian
+tail price. There is no multiplication of separate conditional
+rough probabilities and no discarded conditioning mass.
+
+**PROVEN supported tree sum.** Give a singleton its fine-link
+endpoint blocks. For n>=2 attach the decorated TB1 path P_ij to
+each tree edge, retaining all vertex endpoint blocks as well.
+Denote the resulting connected set by X(I,T). It has all declared
+spatial addresses of this fixed Gaussian calculation. Introduce
+
+    D=K_H/c,
+    A_0=e sqrt(6),
+    a_R=exp(1+2sigma_0) epsilon_R,
+    t_R=A_0 D a_R,
+    s_R=a_R[1-A_0 log(1-t_R)]       (t_R<1).          (CF7)
+
+The factor exp(2sigma_0) pays each vertex's endpoint blocks, and
+exp(1) pays exp(|I|) for the polymer criterion below. Both may
+overcount; neither omits an address. For any fixed coordinate i,
+the tree bound gives
+
+    sum_(I containing i,T) exp(sigma_0 |X(I,T)|+|I|)
+                                            |w_(I,T)| <= s_R.     (CF8)
+
+Here is the combinatorial estimate in full. For a specified labelled
+tree with its first coordinate fixed at i, summing the remaining
+coordinate choices by deleting leaves bounds its edge product by
+D^(n-1). Dropping the constraint that these coordinates be distinct
+only increases this nonnegative majorant; the formula CF5 itself
+still uses distinct coordinates. Divide by (n-1)! for unordered I.
+The degree-weighted labelled-tree sum is, by the Pruefer bijection,
+
+    S_n=sum_(T on {1,...,n}) product_i sqrt(deg_T(i)!)
+       =(n-2)! [z^(n-2)]
+                     [sum_(k>=0) sqrt((k+1)!)/k! z^k]^n.
+
+The series at z=1 is bounded using Cauchy--Schwarz:
+
+    sum_(k>=0) sqrt(k+1)/sqrt(k!)
+       <= [sum_k 2^(-k)]^(1/2)
+                      [sum_k (k+1)2^k/k!]^(1/2)=e sqrt(6)=A_0.
+
+Therefore S_n/(n-1)!<=A_0^n/(n-1), n>=2. The size-n term in
+CF8 is at most a_R A_0 t_R^(n-1)/(n-1); its sum is
+-a_R A_0 log(1-t_R). The singleton contribution is at most a_R.
+This proves CF8 without an uncomputed tree-count constant.
+
+An explicit sufficient choice for the smallness used next is
+
+    R^2 >=8Lambda log[exp(1+2sigma_0) 2^(1/4)
+                            max{2A_0 D,4(1+A_0)}].           (CF9)
+
+It gives t_R<=1/2 and s_R<=a_R(1+A_0)<=1/4. For R=u^delta,
+raise the right side of CF9 to the power 1/(2delta) to obtain
+a sufficient u. This is a Gaussian-cutoff threshold, not the
+return threshold u_*; the g used here is the proved uniform
+constant, not the minimum on a numerical momentum grid.
+
+**PROVEN exact polymer identity and convergence of its logarithm.**
+Inclusion--exclusion in CF1, followed by the moment--cumulant identity
+and CF5, represents Z_R exactly as a finite abstract polymer gas.
+Its polymers are P=(I,T), with activity z(P)=(-1)^|I| w_(I,T).
+Two polymers are incompatible precisely when their coordinate
+sets I intersect. Different trees on the same set are different
+polymers and are incompatible. To check the identity, start with
+each selected coordinate set S in inclusion--exclusion, partition
+S into cumulant blocks, and choose one tree in each block. This
+is a bijection with the compatible polymer collections. No
+history probability has been divided out.
+
+Set Q(P)=exp(sigma_0 |X(P)|)|z(P)| and r(P)=Q(P)exp(|I(P)|).
+By CF8--CF9, r(P)<=s_R<=1/4 and
+
+    sum_(Q incompatible with P) r(Q)<=|I(P)| s_R,
+    product_(Q incompatible with P)(1-r(Q))
+       >=exp[-(4/3)|I(P)|s_R]>=exp[-|I(P)|/3].
+
+Thus Q(P)<=r(P) product_(Q incompatible with P)(1-r(Q)).
+Including P itself in the last majorant can only strengthen the
+sufficient estimate. This verifies the Dobrushin polymer criterion.
+The cluster theorem in
+[Kotecky, Cluster expansion, section 2, equations (24) and theorem (i)--(ii)](https://www.cts.cuni.cz/~kotecky/publ/K-CE-EMP06.pdf)
+then gives an absolutely convergent logarithm. Its sum of absolute
+terms containing a specified polymer P, at the weighted radii Q,
+is at most -log(1-r(P))<=(4/3)r(P). All its nonzero clusters are
+connected in the incompatibility graph. The polymer set is finite;
+the infinite sum is over cluster multiplicities, which this bound
+controls. These are exactly the hypotheses and conclusion used.
+
+Consequently the sum of weighted logarithm terms whose coordinate
+union contains a specified i is at most (4/3)s_R. Each such cluster
+has a connected complete spatial support: its individual X(P) are
+connected, and an incompatibility shares an actual coordinate and
+therefore its endpoint blocks. Assign the cluster to the least
+coordinate in its coordinate union. Applying the GD4 anchor argument
+with Delta=sigma_0-sigma_1 yields
+
+    log Z_R=sum_(X connected) L_(R,X),
+    sup_v sum_(X containing v) exp(sigma_1 |X|)|L_(R,X)|
+                       <=(4/3)n_A S_Delta s_R.         (CF10)
+
+Here S_Delta is exactly the constant in GD4. Spatial supports of
+compatible polymers may overlap along their decorated paths; the
+proof has not changed incompatibility to path intersection. The
+logarithm uses the original coordinate-intersection rule, whose
+connected clusters have connected path unions as just proved.
+This distinction preserves the exact identity.
+
+Since activities are real, the nonvanishing theorem along their
+straight scaling from zero fixes the real logarithm of the positive
+probability Z_R. FI8's extensive cutoff mass is therefore retained
+as a small rooted connected logarithm; it has not been set to one.
+
+**Scope and GAP.** CF10 is a scalar statement at B=0 about the
+Gaussian factor. It has no original source or output-field jets.
+At nonzero B the unexposed covariance entries inside the expectation
+in CF5 also depend on B; attaching paths only to the displayed
+tree edges would not capture those functional readers. No such
+extension is claimed. Neither is replacing W_B,J in FI7 by one.
+The nonlinear local factors have overlapping fine-coordinate readers,
+and their direct insertion into this proof fails the next test.
+
+### 4.26 Hostile tests: smooth partitions and duplicate Gaussian readers
+
+**PROVEN failure of the proposed analytic-cutoff estimate.** A local
+smooth partition 1=chi_R+(1-chi_R), with chi_R equal to one inside
+R and zero outside 2R, retains the complementary mass exactly.
+The attempted forest estimate would require derivative bounds at
+unbounded orders, since a tree vertex can have degree n-1. Bounds
+through the six output derivatives are not bounds on that degree.
+Moreover, no nonzero compactly supported smooth chi can satisfy
+
+    ||chi^(m)||_infinity<=A B^m m!    for every m                 (SP1)
+
+with finite A,B. Taylor's remainder on any interval shorter than
+1/B would tend to zero under SP1. The function would be real
+analytic, yet it vanishes on an open interval and equals one on
+another, a contradiction. This rejects that proposed all-order
+majorant, not smooth partitions themselves. Gevrey bounds, finite
+order interpolation with retained remainders, and Gaussian boundary
+integration remain possible; they have not been identified with SP1.
+CF3 uses the Gaussian density's Hermite derivatives instead.
+
+**PROVEN failure of a direct extension of CF2 to overlapping
+interaction replicas.** Two actual FI6 vertices can share a fine
+coordinate. For example the free direction-1 link at the origin
+is read by the (0,1) plaquettes based at the origin and at minus
+e_0. Those plaquettes are assigned to different coarse base blocks.
+Both have nonconstant Taylor remainders along that link. Thus one
+cannot treat the FI6 vertex labels as disjoint physical coordinate
+sets in CF2.
+
+If each vertex is nevertheless given a Gaussian replica of its
+readers, a shared scalar coordinate of variance v=C_ii>0 has the
+interpolated two-replica covariance
+
+    Sigma(h)=v [[1,h],[h,1]],
+    lambda_min(Sigma(h))=v(1-h).                       (SP2)
+
+Its value at h=1 must identify the replicas. There is no fixed
+positive independent-noise variance throughout this interpolation.
+Using the best spectral lower bound in CF3 for this two-vertex
+edge costs at least v/[v(1-h)]=1/(1-h). Its h integral diverges.
+This proves failure of that majorant for this direct extension;
+it does not prove divergence of the bounded covariance or of a
+correctly organized forest expansion.
+
+An exact check shows the distinction. For the bounded insertion
+f(x)=1_(x>R) on this same scalar Gaussian, the retained boundary
+formula is
+
+    Cov(f(zeta),f(zeta))
+       =int_0^1 exp[-R^2/(v(1+h))]/[2pi sqrt(1-h^2)] dh
+       =p(1-p),  p=Phi(-R/sqrt(v)).                   (SP3)
+
+Indeed f'=delta_R, so Gaussian covariance differentiation gives
+v times the joint density at (R,R). At h=0 the fields are
+independent, and at h=1 they coincide. The displayed singularity
+is integrable; the extra loss in 1/(1-h) belongs to the estimate.
+This example is a diagnostic for duplicate readers of the actual
+Gaussian reference, not a new large-field sector of the chain.
+
+**PROVEN initial repair: group the actual overlapping factors first.**
+This statement returns to the weighted first term of FI7, at B=0,
+with the four original plaquette sources and their FI5 polydisc.
+Set R=u^delta and retain all the FI6 conditions.
+Let R_x be the exact set of fine-coordinate readers of V_x, and
+T_x=N_(infinity,1)(x) its complete block container. Then
+|R_x|<=D_loc, |T_x|<=81. Define a bounded global function by
+
+    F_x(zeta)=1_(|zeta_i|<=R for all i in R_x)
+                                              [exp(V_x(zeta))-1].
+
+Only evaluate V_x where the indicator is one; set F_x=0 elsewhere.
+The FI6 conditions make this definition legitimate, and
+||F_x||_infinity<=epsilon_V:=exp(lambda_u)-1. At B=0 the branch
+is zero, so these fine-coordinate reader sets are local without
+unexpanded output dependencies. Zero factors may be omitted; every
+remaining R_x is nonempty since V_x(0)=0. The exact weighted good-sector
+integral is
+
+    Z_good(0;J)=E_gamma[1_(Gamma_u) W_(0,J)]
+       =E_gamma product_i(1-f_i) product_x(1+F_x).     (RCF1)
+
+Expand this finite product. Make a graph of the selected x vertices,
+joining x,y exactly when R_x intersects R_y. For a connected
+component S write
+
+    Phi_S=product_(x in S) F_x,
+    R(S)=union_(x in S) R_x,
+    T(S)=union_(x in S) T_x.
+
+A selected bad factor -f_i vanishes in the product if i belongs to
+any selected R_x: its coordinate is outside the same cutoff that
+F_x requires inside. All nonzero terms therefore consist of
+reader-disjoint objects of just two types: a connected component S
+with function Phi_S, or a singleton coordinate i with function -f_i.
+Consequently
+
+    Z_good(0;J)=sum_(collections of reader-disjoint objects beta)
+                                     E_gamma product_beta Phi_beta.  (RCF2)
+
+This is an exact regrouping, not a factorization of the expectations.
+Each selected x set has a unique partition into overlap components;
+conversely a reader-disjoint collection of connected components has
+exactly that partition. This proves the counting in RCF2. All
+complementary terms of FI7 remain outside Z_good with their mass.
+
+The overlap graph has degree at most 5^4-1=624: intersecting readers
+put x and y within coarse infinity distance two. Rooted connected
+sets of size m in a graph of maximum degree 624 number at most
+2496^(m-1). To see this, choose a rooted spanning tree and its
+depth-first order. There are at most 4^(m-1) plane rooted tree
+shapes, and at most 624 choices for each child edge. Counting
+repeated or inadmissible embeddings only enlarges the bound.
+Also ||Phi_S||_infinity<=epsilon_V^|S| and |T(S)|<=81|S|.
+For any a>0 put beta_V=epsilon_V exp(81sigma_0+a). At most 81
+possible vertex anchors x have i in R_x. Hence, if 2496 beta_V<1,
+
+    sup_i sum_(S connected, i in R(S))
+              exp(sigma_0 |T(S)|+a|S|)||Phi_S||_infinity
+                         <=81 beta_V/(1-2496 beta_V).         (RCF3)
+
+For fixed a and the previously chosen constants, FI6 makes this
+condition hold at sufficiently large u. This is a convergent
+component sum before Gaussian integration, uniform in volume and
+in the specified original source polydisc. The reader sets of
+different objects in each RCF2 collection are now genuinely disjoint,
+so the block version of CF2 again applies to their covariance
+interpolation. No replica lower bound at identified coordinates
+is assumed.
+
+**GAP after the repair.** RCF3 is not a cluster bound on log Z_good.
+An object S has up to D_loc |S| scalar readers. A Gaussian tree edge
+between S and S' sums C_ij over i in R(S), j in R(S'). The immediate
+row bound therefore costs up to |R(S)| K_H/c, not D=K_H/c
+independently of S. Repeating this estimate at high-degree vertices
+requires size moments of the components as well as the Hermite degree
+factors. The distinct-coordinate Pruefer bound CF8 cannot be copied
+unchanged. No summable majorant for this remaining combined count,
+nonzero-B covariance readers, or the weighted FI7 complement is
+claimed here.
+
+**Hostile check of the newest step.** RCF2 is still an expectation
+of a product under the common Gaussian, not a product of component
+expectations. RCF3 establishes only its pre-integration component
+sum; the growing reader sets have not disappeared because their
+mutual overlaps have been grouped. Its local hard cutoffs are safe
+inside Gamma_u and exactly zero outside each reader box, so its
+cancellation with a selected f_i is an identity. Replacing this
+identity by independently normalized component laws would change
+Z_good and is not justified by RCF3.
+
+The positive lower bound in
+CF2 is valid for distinct coordinates because their principal
+covariance inherits C>=cI. It is false for duplicate readers, and
+SP2 prevents promoting CF10 to the full FI7 integral by relabelling
+local vertices. The tree count retains product sqrt(degree!) and
+the logarithm uses the actual coordinate incompatibility, not a
+stronger path-intersection rule. These points are load-bearing.
+The independent-noise construction does not assert independence
+of the physical coordinates. Hard-cut derivatives were retained
+as Gaussian boundary integrals before any bound was taken.
+
+CF10 survives at its stated scalar Gaussian scope. Its paths are
+not a proof of the B readers of an interpolated expectation. The
+weighted complement of FI7 and the original source response are
+still unestimated by it. SP1 and SP2 are failures of particular
+estimates, not counterexamples to H5. RCF2 supplies the grouping
+before interpolation, while the combined Gaussian/component count
+and the other stated return obligations remain unproved. U1--U4
+remain **GAP**.
+
+### 4.27 Verification, attribution, and claim boundary
 
 The check script [checks/push_a_kernel_moments.py](checks/push_a_kernel_moments.py)
 performs separate direct Haar quadratures and scaled Bessel evaluations,
@@ -2779,6 +3238,31 @@ not a divergent numerical quadrature, proves the failure of the uncut
 quartic integral. No computation of Xi_Omega, independent reviewer,
 all-history test or RG return has been added.
 
+The [cutoff-forest script](checks/push_a_cutoff_forest.py), with its
+[complete log](checks/push_a_cutoff_forest.log), reconstructs selected
+fine-coordinate covariances on an actual compatible 2^4 coarse torus
+at L=3,kappa=1 from all sixteen one-colour Bloch fibres. The largest
+linear solve residual is 8.22e-15. The reported finite-torus Hessian
+interval [0.0224450880031,15.7364957763] is not substituted for the
+uniform g in CF9. Three hard two-coordinate cumulants, computed by
+conditional Gaussian tail quadrature, agree with the separately
+integrated boundary-forest formula to at most 1.39e-17.
+
+For three distinct smooth insertions exp(-a_i zeta_i^2), it compares
+the cumulant obtained from Gaussian determinants with all three
+two-edge forest integrals; their absolute discrepancy is 6.51e-17.
+Fifty selected forest matrices obey the covariance spectral bounds.
+Exhaustive Pruefer-word counts through seven vertices agree with
+the generating-function degree sum used in CF8. These checks do
+not replace the all-size Schur-product, Hermite or polymer arguments.
+The duplicate-reader test separately resolves the eigenvalue v(1-h)
+and compares SP3 at v=1,R=2 to p(1-p), with discrepancy 1.05e-17.
+It records the failure of the 1/(1-h) estimate while retaining the
+finite exact answer. Final peak RSS was 97,796,096 bytes, with
+BLAS threads one and the checked 1 GB ceiling. No weighted nonlinear
+Xi_Omega, output jets, RCF2 Gaussian/component tree sum or history
+return was computed, and no independent reviewer was added.
+
 The small/large-field organization is credited to Tadeusz Balaban and
 Jonathan Dimock. The relevant repository comparisons are REFMATCH RM1/RM2/
 RM25, ROUGH Q12--Q25, RENEW's forward flux example, CHARGE's original-weight
@@ -2803,8 +3287,12 @@ conditions proved above. The boundary term was checked against
 [Kolesnikov--Milman, Brascamp--Lieb-type inequalities with boundary](https://publications.hse.ru/pubs/share/direct/216903475.pdf),
 Theorem 1.1; their smooth-boundary theorem is not silently asserted on
 the rectangle, and no theorem for the entire inherited measure is imported.
-The positivity-preserving forest organization was checked in
-[Abdesselam--Rivasseau, Trees, forests and jungles, introduction and section II](https://arxiv.org/pdf/hep-th/9409094)
-as a possible next route for FI7. No convergence or boundary estimate
-for the present normalized integral is imported from that paper.
+The standard forest identity from
+[Abdesselam--Rivasseau, Trees, forests and jungles](https://arxiv.org/pdf/hep-th/9409094)
+is now applied in CF5 with its finite Gaussian hypotheses checked.
+The abstract logarithm theorem from
+[Kotecky, Cluster expansion](https://www.cts.cuni.cz/~kotecky/publ/K-CE-EMP06.pdf)
+is used only after the explicit criterion following CF9 is verified.
+The resulting cutoff estimate is at its stated scalar Gaussian scope;
+no convergence theorem for the weighted nonlinear FI7 integral is imported.
 No external Yang--Mills RG theorem is imported. The target remains **GAP**.

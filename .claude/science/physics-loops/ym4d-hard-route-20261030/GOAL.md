@@ -29,8 +29,10 @@ The scale of s is not settled. A guide, not a result: an additive shift of order
 
 ## Model floors
 
-model_floor worker: claude-fable-5-1@max, claude-opus-5-5@max, gpt-6-astra@max
-model_floor checker: claude-fable-5-1@high, claude-opus-5-5@high, gpt-6-astra@low
+model_floor worker: claude-opus-5-5@max, gpt-6-astra@max
+model_floor checker: claude-opus-5-5@high, gpt-6-astra@low
+
+The owner set Opus 5.5 as the Claude model for this target and left effort to judgment: max on the crux pushes, high at gate checks, and lower for routine work such as leaf lemmas and editing.
 
 ## Metric
 

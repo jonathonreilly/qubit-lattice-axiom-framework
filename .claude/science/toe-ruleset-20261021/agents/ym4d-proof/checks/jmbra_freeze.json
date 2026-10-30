@@ -1,0 +1,10 @@
+{
+  "frozen_utc": "2026-10-30T04:22:53.313606+00:00",
+  "note_sha256": "cc583e9e35ce344400e85d33315c2f6f32ff704027236ee290122638f56da8fb",
+  "note_lines": 729,
+  "source_manifest_sha256": "34eec395ddae3f8c32b3f1e915bd0f0da86462f64ea0de99564d44f34e21c8bf",
+  "source_drift": [],
+  "numeric_experiments": "none; priority guard blocked",
+  "review_target": "checks/jmbra_review.md",
+  "review_context": "fresh same-family, inherited configured model and effort"
+}

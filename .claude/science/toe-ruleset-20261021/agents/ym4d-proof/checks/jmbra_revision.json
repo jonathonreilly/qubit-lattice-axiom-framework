@@ -1,0 +1,12 @@
+{
+  "time_utc": "2026-10-30T04:33:23.815041+00:00",
+  "base_sha256": "cc583e9e35ce344400e85d33315c2f6f32ff704027236ee290122638f56da8fb",
+  "revised_sha256": "6dd077a3383ea69b6ab04b629ee8d13be5b60958e542b1ae778eb48f90fc7c5a",
+  "lines": 767,
+  "changes": [
+    "Sufficient versus necessary depth margin; explicit convergent nongeometric example",
+    "Final n_0>=2 singleton applicability",
+    "Actual source-response diagnostic A23b and scoped N5 entry"
+  ],
+  "diff_path": "checks/jmbra_review_fixes.patch"
+}

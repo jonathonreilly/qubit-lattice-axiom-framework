@@ -1,0 +1,394 @@
+{
+  "utc": "2026-10-30T03:36:42.117951+00:00",
+  "scope": "exact algebra only; actual YM coefficient sign and uniform matching OPEN",
+  "criteria_sha256": "73cfcc0f9ad43f0823ef911b012252121e30f2bd7891f9768acb42040045cdea",
+  "script_sha256": "21b69054adc67e87b4ea8525d2e138bdff4f479d318b277fff6b4d2faa49d49f",
+  "nice": 20,
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "passed": true,
+  "rss_enforcement": "external 800 MiB combined-RSS watchdog plus self checks",
+  "locks": [
+    "/Users/jonBridger/ym4d-lanes/q/M1/repo/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/k4match_numeric.lock",
+    "/Users/jonBridger/ym4d-lanes/q/M1/repo/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/cumul_numeric.lock",
+    "/Users/jonBridger/ym4d-lanes/q/M1/repo/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/combo_numeric.lock"
+  ],
+  "checks": [
+    {
+      "name": "free_normalization",
+      "passed": true,
+      "A_point": "169/108",
+      "R_point_one_colour": "169/15552"
+    },
+    {
+      "name": "smooth_support_margins",
+      "passed": true
+    },
+    {
+      "name": "partition_counts",
+      "passed": true,
+      "counts": {
+        "1+1+1+1": 1,
+        "2+1+1": 6,
+        "3+1": 4,
+        "2+2": 3,
+        "4": 1
+      }
+    },
+    {
+      "name": "total_cumulance_rational_table",
+      "passed": true,
+      "lhs": "-53072/64827",
+      "rhs": "-53072/64827",
+      "families": {
+        "1+1+1+1": "-6512/540225",
+        "2+1+1": "304/3087",
+        "3+1": "-3134/33075",
+        "2+2": "-33266/11025",
+        "4": "3476/1575"
+      }
+    },
+    {
+      "name": "conditional_covariance_mutation_detected",
+      "passed": true,
+      "full": "3",
+      "omit_two_plus_two": 0
+    },
+    {
+      "name": "pair_data_do_not_fix_k4_-1/2",
+      "passed": true
+    },
+    {
+      "name": "pair_data_do_not_fix_k4_0",
+      "passed": true
+    },
+    {
+      "name": "pair_data_do_not_fix_k4_1/2",
+      "passed": true
+    },
+    {
+      "name": "mixed_slice_cycle_telescoping",
+      "passed": true,
+      "increments": [
+        "806884/9",
+        "9839/3",
+        "62672/81"
+      ],
+      "allocated": [
+        "806884/9",
+        "9839/3",
+        "62672/81"
+      ],
+      "full": "7590281/81"
+    },
+    {
+      "name": "same_slice_mutation_detected",
+      "passed": true,
+      "same_slice_only": "1633829/81"
+    },
+    {
+      "name": "perturbative_formula_order_2",
+      "passed": true,
+      "direct": [
+        "12",
+        "0",
+        "-2246373/175175"
+      ],
+      "families": [
+        "2292/143",
+        "6579/1225",
+        "-8658/245",
+        "-6144/143",
+        "2160/49"
+      ],
+      "scope": "formal polynomial control, not YM"
+    },
+    {
+      "name": "double_cubic_mutation_order_2",
+      "passed": true
+    },
+    {
+      "name": "perturbative_formula_order_4",
+      "passed": true,
+      "direct": [
+        "1152",
+        "0",
+        "-166434336/175175"
+      ],
+      "families": [
+        "109440/13",
+        "1011744/175",
+        "-5643072/245",
+        "-1898496/143",
+        "1036800/49"
+      ],
+      "scope": "formal polynomial control, not YM"
+    },
+    {
+      "name": "double_cubic_mutation_order_4",
+      "passed": true
+    },
+    {
+      "name": "running_log_coefficients",
+      "passed": true
+    },
+    {
+      "name": "exact_running_ratio_0",
+      "passed": true
+    },
+    {
+      "name": "exact_running_ratio_1/16",
+      "passed": true
+    },
+    {
+      "name": "exact_running_ratio_1/8",
+      "passed": true
+    },
+    {
+      "name": "exact_running_ratio_1/4",
+      "passed": true
+    },
+    {
+      "name": "common_field_factor_-2/3",
+      "passed": true
+    },
+    {
+      "name": "common_field_factor_0",
+      "passed": true
+    },
+    {
+      "name": "common_field_factor_3/7",
+      "passed": true
+    },
+    {
+      "name": "noncancellation_exact_margins",
+      "passed": true,
+      "lower": "12/25",
+      "upper": "20/9",
+      "lower_times_d": "18/4225"
+    },
+    {
+      "name": "ratio_grid_-1/4_-1/4",
+      "passed": true
+    },
+    {
+      "name": "ratio_grid_-1/4_-1/8",
+      "passed": true
+    },
+    {
+      "name": "ratio_grid_-1/4_0",
+      "passed": true
+    },
+    {
+      "name": "ratio_grid_-1/4_1/8",
+      "passed": true
+    },
+    {
+      "name": "ratio_grid_-1/4_1/4",
+      "passed": true
+    },
+    {
+      "name": "ratio_grid_-1/8_-1/4",
+      "passed": true
+    },
+    {
+      "name": "ratio_grid_-1/8_-1/8",
+      "passed": true
+    },
+    {
+      "name": "ratio_grid_-1/8_0",
+      "passed": true
+    },
+    {
+      "name": "ratio_grid_-1/8_1/8",
+      "passed": true
+    },
+    {
+      "name": "ratio_grid_-1/8_1/4",
+      "passed": true
+    },
+    {
+      "name": "ratio_grid_0_-1/4",
+      "passed": true
+    },
+    {
+      "name": "ratio_grid_0_-1/8",
+      "passed": true
+    },
+    {
+      "name": "ratio_grid_0_0",
+      "passed": true
+    },
+    {
+      "name": "ratio_grid_0_1/8",
+      "passed": true
+    },
+    {
+      "name": "ratio_grid_0_1/4",
+      "passed": true
+    },
+    {
+      "name": "ratio_grid_1/8_-1/4",
+      "passed": true
+    },
+    {
+      "name": "ratio_grid_1/8_-1/8",
+      "passed": true
+    },
+    {
+      "name": "ratio_grid_1/8_0",
+      "passed": true
+    },
+    {
+      "name": "ratio_grid_1/8_1/8",
+      "passed": true
+    },
+    {
+      "name": "ratio_grid_1/8_1/4",
+      "passed": true
+    },
+    {
+      "name": "ratio_grid_1/4_-1/4",
+      "passed": true
+    },
+    {
+      "name": "ratio_grid_1/4_-1/8",
+      "passed": true
+    },
+    {
+      "name": "ratio_grid_1/4_0",
+      "passed": true
+    },
+    {
+      "name": "ratio_grid_1/4_1/8",
+      "passed": true
+    },
+    {
+      "name": "ratio_grid_1/4_1/4",
+      "passed": true
+    },
+    {
+      "name": "four_support_projection_0",
+      "passed": true
+    },
+    {
+      "name": "four_support_projection_1",
+      "passed": true
+    },
+    {
+      "name": "four_support_projection_2",
+      "passed": true
+    },
+    {
+      "name": "four_support_projection_3",
+      "passed": true
+    },
+    {
+      "name": "four_support_projection_4",
+      "passed": true
+    },
+    {
+      "name": "four_support_projection_5",
+      "passed": true
+    },
+    {
+      "name": "four_support_projection_6",
+      "passed": true
+    },
+    {
+      "name": "four_support_projection_7",
+      "passed": true
+    },
+    {
+      "name": "four_support_projection_8",
+      "passed": true
+    },
+    {
+      "name": "four_support_projection_9",
+      "passed": true
+    },
+    {
+      "name": "four_support_projection_10",
+      "passed": true
+    },
+    {
+      "name": "four_support_projection_11",
+      "passed": true
+    },
+    {
+      "name": "four_support_projection_12",
+      "passed": true
+    },
+    {
+      "name": "four_support_projection_13",
+      "passed": true
+    },
+    {
+      "name": "four_support_projection_14",
+      "passed": true
+    },
+    {
+      "name": "four_support_projection_15",
+      "passed": true
+    }
+  ],
+  "guards": [
+    {
+      "loads": [
+        1.6640625,
+        1.89013671875,
+        2.00927734375
+      ],
+      "free_percent": 49,
+      "peak_rss_bytes": 22708224,
+      "elapsed_seconds": 0.0024774160119704902
+    },
+    {
+      "loads": [
+        1.6640625,
+        1.89013671875,
+        2.00927734375
+      ],
+      "free_percent": 49,
+      "peak_rss_bytes": 22708224,
+      "elapsed_seconds": 0.0080977079924196
+    },
+    {
+      "loads": [
+        1.6640625,
+        1.89013671875,
+        2.00927734375
+      ],
+      "free_percent": 49,
+      "peak_rss_bytes": 22724608,
+      "elapsed_seconds": 0.021759625000413507
+    },
+    {
+      "loads": [
+        1.6640625,
+        1.89013671875,
+        2.00927734375
+      ],
+      "free_percent": 49,
+      "peak_rss_bytes": 22872064,
+      "elapsed_seconds": 0.05229283298831433
+    },
+    {
+      "loads": [
+        1.6640625,
+        1.89013671875,
+        2.00927734375
+      ],
+      "free_percent": 49,
+      "peak_rss_bytes": 22953984,
+      "elapsed_seconds": 0.054950415971688926
+    }
+  ],
+  "check_count": 64,
+  "elapsed_seconds": 0.0549879579921253
+}

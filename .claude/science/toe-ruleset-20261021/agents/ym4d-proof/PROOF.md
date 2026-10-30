@@ -517,11 +517,18 @@
 > determinant and source/contour boundaries remain explicit. Neither the
 > original-cut return nor an effective-level induction follows from this unit.
 >
-> New author work addresses the centered Gaussian return with infinite
-> complete-reader tails, and distinct-vertex nonlinear Mayer estimates at the
-> actual critical field. These unfinished arguments are not premises.
-> The full interacting return, arbitrary histories, multiscale iteration,
-> continuum existence and physical continuum mass gap remain OPEN.
+> The [centered Gaussian return proposal](READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md)
+> is frozen under fresh independent review. It retains the actual lift
+> covariance's infinite reader tail and claims a connected logarithm at
+> `mu=1/[3(16R)^4]` under explicit residual and cutoff thresholds.
+> It concerns the exactly normalized centered Gaussian reference. Its claimed
+> summation is not yet adopted, and it supplies no nonlinear or original-cut return.
+>
+> New author work addresses distinct-vertex nonlinear Mayer estimates at the
+> actual critical field and exact shifted-chart side/corner contributions.
+> These unfinished arguments are not premises. The full interacting return,
+> arbitrary histories, multiscale iteration, continuum existence and physical
+> continuum mass gap remain OPEN.
 >
 > Concurrent progress through `cc1de55f5b` is recovered. [RD pass 2](RD.md)
 > has an independent [HOLD review](REVIEW_RD_R2.md): its explicit finite H12

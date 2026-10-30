@@ -21,7 +21,7 @@ Later targets, not on this critical path: O(4) invariance, N >= 3, and the mass 
 
 ## Interface statements
 
-**UV-CT (draft, replaces UV-EXT; gate check pending).** Producer: hard-core. Consumer: upper-chain. The target lead owns the wording, and either part can request a change.
+**UV-CT (draft, replaces UV-EXT).** Producer: hard-core. Consumer: upper-chain. The target lead owns the wording, and either part can request a change.
 
 Exact statement: `parts/upper-chain.md`, Text section 7. In short, on one fixed physical torus of side 2 a_*:
 
@@ -31,6 +31,8 @@ Exact statement: `parts/upper-chain.md`, Text section 7. In short, on one fixed 
 All constants are independent of a and L. Non-vanishing of Z is not assumed. Alternatives that also close the chain: UV-LOC-C and IE_p (Theorems 7 and 6 there), and the real form of Theorem 7.8, which gives normalized exponentials rather than the linear field.
 
 Why UV-EXT was dropped (upper-chain Theorems 3 and 4, Proposition 5): the variance of a block energy has a contact term of order a^-4 in physical units; a constant shift has zero momentum, so an explicit reflection-positive Gaussian family with one partition function has separated correlators from zero up to order a^-4; and a volume-uniform complex disc is an open infrared statement.
+
+Gate at `gates/uv-ct-upper-chain-41489e4876.md`, same-model: the implications hold and UV-CT is open. CT3 carries all the separated content, E is forced close to log G, and CT4 cannot be verified at Gaussian order.
 
 Credit: the form with a counterterm and position-dependent sources comes through `parts/hard-core--mapped.md` from the Sussman-Alpoge account. So the independent attempt now shares this interface wording with that account, though not its proofs.
 

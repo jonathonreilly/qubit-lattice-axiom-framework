@@ -11,10 +11,14 @@ The review loop must enforce the audit lane's propose/ratify split without
 performing the independent audit:
 
 **When these two guards apply.** The churn and impact guards below protect live
-verdicts. If no affected row holds one, record that and move on: the pipeline's
-`invalidate_stale_audits.py` count (`invalidated (hard reset): 0`) and
-`docs/audit/data/effective_status_summary.json` show it. Rows regain live
-verdicts when an audit runs, and the guards then apply again.
+judgments. Inspect the affected ledger rows on pinned current main **before**
+seeding or invalidation, including judgments recorded under `audit_in_progress`.
+If none holds a live judgment, record the base revision and affected scope and
+move on without an invalidation-set analysis. A zero hard-reset count or a
+post-run effective-status summary does not establish this: unchanged verdicts
+can survive, and seeding can already have archived and reset a verdict. When
+affected rows hold live judgments, the guards apply. Ordinary mechanical
+validation, provenance checks, and preservation of audit history remain required.
 
 **Audit-hash churn guard.** Non-semantic hygiene sweeps on audited source notes
 can be scientifically harmless while still invalidating large parts of the

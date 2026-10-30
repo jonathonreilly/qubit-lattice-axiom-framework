@@ -610,8 +610,10 @@ Until then these stay cheap and always on, because the audit needs them later:
 - the citation graph and the premise registry;
 - the nightly pipeline's hard gates and its record of topology changes.
 
-Everything downstream of a verdict (queues, re-audit candidates, invalidation
-counts) has nothing to act on while no row holds a live verdict.
+When no affected row holds a live judgment, there is no live verdict to preserve
+or invalidate. Unaudited claims still populate the audit queue, and archived
+audit history can still identify re-audit targets; retain those records without
+launching an audit.
 
 ## What this lane is not
 

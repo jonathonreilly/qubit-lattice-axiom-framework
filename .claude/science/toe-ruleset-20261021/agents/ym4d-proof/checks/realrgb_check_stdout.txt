@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "checks": 9,
+  "resource_samples": 7,
+  "error": null
+}

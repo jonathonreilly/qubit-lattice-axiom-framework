@@ -1,7 +1,17 @@
 # Full Yang–Mills existence and physical mass gap
 
 lead: OpenAI/Codex/host-runtime 01a1873f-103a-7f01-b924-4455238d8a86
-lease_until: 2026-10-30T21:08:00Z
+lease_until: 2026-10-30T20:35:12Z
+
+Execution is paused at the user's request after completing the focused
+GH64--GH70 check. The mathematical checkpoint and its independent review are
+pushed at 27d8201f6bf6e0201eaa8cf160db2ecae862f45d; see the
+[second-chart review](gates/second-chart-convexity-1016ec5d6a.md).
+No author or reviewer remains running. The lead and part leases are expired
+for this pause. On an explicit resume, the next scientific task is an actual
+compact-complement or connected inherited-history estimate that composes
+with the checked chart result. The full target below remains unchanged and
+both continuum existence and the physical mass gap remain OPEN.
 
 The user appointed this session to recover the shared Yang–Mills work, continue
 Astra/max authors and different fresh reviewers, and preserve all progress in

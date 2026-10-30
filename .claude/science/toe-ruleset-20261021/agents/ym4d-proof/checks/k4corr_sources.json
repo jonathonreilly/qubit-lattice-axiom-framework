@@ -1,0 +1,52 @@
+{
+  "utc": "2026-10-30T05:07:19.166088+00:00",
+  "scope": "Current identities of read sources; no source file edited.",
+  "sources": {
+    "briefs_q/K4CORR/AUTHOR.md": {
+      "sha256": "ca12362a453dd99b64ca4deed61411758e9e3a8571178c9da83e3ccfa6d384b6",
+      "bytes": 2779
+    },
+    "PROCESS_LIGHT.md": {
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497
+    },
+    "K4MATCH.md": {
+      "sha256": "2f795c75609075e6d48096abf5ba8572a80f6271a554889f7212c4be75827604",
+      "bytes": 32228
+    },
+    "REVIEW_K4MATCH.md": {
+      "sha256": "42e100fcef553c3475e9cac787b8c373ed64b57f8718df98721d219f0e742f6c",
+      "bytes": 20329
+    },
+    "CUMUL.md": {
+      "sha256": "50f337bffacc0e49b7e3bc737609190bd106d8b9210c2ab8f1059745cc1bcfd8",
+      "bytes": 33806
+    },
+    "LGF.md": {
+      "sha256": "40ea604c79f17027129628bc8b31f5fd6209da21dded864bf45a422dad24505e",
+      "bytes": 32339
+    },
+    "FLOW.md": {
+      "sha256": "085cd225228a23847b053650fe8bff4c14529d7e630a74565b301d39855e442f",
+      "bytes": 539577
+    },
+    "TSE55.md": {
+      "sha256": "a894d1b2439a7b83311175c9e6e30f6fb52cc015a74c6be7e839be8192a7869a",
+      "bytes": 80443
+    },
+    "HANDOFF.md": {
+      "sha256": "c5d268f8e013743e40da0e9dae0eb8849b9cddaf3c0b3fd524d56a35a5c045b8",
+      "bytes": 65990
+    },
+    "SRC2_55.md": {
+      "sha256": "66206a0bc13e5c4c264136abb0aa8a5620e66958a561fc7c0fcee4ff3989676c",
+      "bytes": 87410
+    }
+  },
+  "registration": {
+    "criteria_mtime_ns": 1793336289605521640,
+    "checker_mtime_ns": 1793336730639348615,
+    "criteria_precedes_checker": true
+  },
+  "primary_method_source": "https://arxiv.org/html/1304.0533v6"
+}

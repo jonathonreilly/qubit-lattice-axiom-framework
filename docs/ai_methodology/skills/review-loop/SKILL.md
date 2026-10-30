@@ -161,7 +161,8 @@ gate and audit-status separation remain required. Assess no-go quantifiers
 and counterexamples carefully; retain honest N1-N8 artifacts where the
 mechanical contract requires them without inventing exhaustive route coverage.
 This section controls review depth and report granularity in the detailed
-referenced checklists. Formal audit remains deferred until a solid TOE is ready.
+referenced checklists. Formal audit remains deferred until a TOE candidate or a
+standalone proof the owner wants to publish is ready.
 
 ## Evidence reuse and coordination efficiency (owner-directed 2026-10-21)
 

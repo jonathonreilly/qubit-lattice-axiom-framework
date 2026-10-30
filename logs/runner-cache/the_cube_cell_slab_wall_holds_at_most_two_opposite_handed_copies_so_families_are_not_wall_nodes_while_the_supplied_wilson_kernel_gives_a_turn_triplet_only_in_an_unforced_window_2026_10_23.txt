@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/the_cube_cell_slab_wall_holds_at_most_two_opposite_handed_copies_so_families_are_not_wall_nodes_while_the_supplied_wilson_kernel_gives_a_turn_triplet_only_in_an_unforced_window_2026_10_23.py
+runner_sha256: 70499a4ea3ef3e80618cd67fe5b55aa519eb8d5feedea123d6d9817da4c1ebb9
+input_fingerprint_sha256: 2b1217636c304870a9571f012eedf80be918fa5202364874703e5876f3473fb5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 17.68
+status: ok
+----- stdout -----
+== W. adopted slab (Wilson-type kernel, 4 components per site); layer mass m scanned over its windows
+PASS: W1 [F] bulk gapped at every scanned m (pre-set: min |E| on the 8^4 grid > 0.2)  [m=0.6: 0.60, m=1.0: 1.00, m=3.0: 1.00, m=5.0: 1.00, m=7.0: 1.00]
+PASS: W2 [T]/[F] near-wall Weyl nodes (2-dim each) sit at the corners with n pi-components exactly when 2n < m < 2n + 2 (zero-mode recursion ratio 1 - m + 2n): windows (0,2), (2,4), (4,6), (6,8) give 1 (G), 3 (X), 3 (M), 1 (R) (pre-set: exactly this)  [m=0.6: G000; m=1.0: G000; m=3.0: X001,X010,X100; m=5.0: M011,M101,M110; m=7.0: R111]
+PASS: W3 [F] within each window all near-wall nodes have the SAME chirality, the sign alternates window to window as (-1)^n, and the far wall carries the opposite total (pre-set: all three)  [m=0.6: near -1 far +1, m=1.0: near -1 far +1, m=3.0: near +3 far -3, m=5.0: near -3 far +3, m=7.0: near +1 far -1]
+PASS: W4 [F] m = 3: no in-gap wall state away from the three X points on a 10^3 grid (pre-set: 0)  [stray 0]
+PASS: W5 [T] the turn (spinor lift, covariance checked) permutes X1 -> X2 -> X3 and M1 -> M2 -> M3; on each 3-node wall space its eigenvalue multiset is EXACTLY the G node's spinor pair x {1, w, w^2} (and not x {1, 1, 1}): a turn triplet, family charges 0, 1, 2 (pre-set: this multiset)  [covariance 6e-16; G phases -0.333, +0.333 pi; X phases -1.000, -0.333, -0.333, +0.333, +0.333, +1.000 pi; M phases -1.000, -0.333, -0.333, +0.333, +0.333, +1.000 pi]
+   W6 [T] the three X nodes are also split by the unit translations (T_x = -1 on X(100), +1 on X(010), X(001)); with only 2Z^3 block translations (CL-1's role layout) they fold to block K = 0 and the turn is their only label
+== C. the slab on CL-1's own cell (2x2x2 cube cell, 8 one-mode sites, both tilings, face phase -1)
+PASS: C1 [T] cell algebra: D, B, eps mutually anticommute, D^2 + B^2 = 4, s^2 = 1, [s, R_e] = 0 at generic K; D vanishes only at K = 0, on all 8 modes = two 4-component Dirac copies, s = +1 and s = -1 (pre-set: all)  [max defect 2e-15; next-smallest |D| on 16^3 0.23; s on ker D: 4 x (+1), 4 x (-1)]
+PASS: C2 [T]/[F] near-wall copies at K = 0 for copy mass Mc <= 1: the s = +1 copy iff 0 < m < 2, the s = -1 copy iff Mc < m < Mc + 2 (layer mass m - Mc); bulk gapped (pre-set: counts as predicted, gap > 0.15). Windows: (0, Mc) 1 copy (s+), (Mc, 2) 2 copies, (2, 2 + Mc) 1 copy (s-)  [(0.5,1.0): gap 0.37, (s+,s-) = (1, 0); (1.5,1.0): gap 0.50, (s+,s-) = (1, 1); (2.5,1.0): gap 0.37, (s+,s-) = (0, 1); (0.4,0.8): gap 0.40, (s+,s-) = (1, 0); (1.4,0.8): gap 0.60, (s+,s-) = (1, 1); (2.4,0.8): gap 0.40, (s+,s-) = (0, 1)]
+PASS: C2b [F] (pre-set 'gapped at Mc = 3' FAILED on the first run; recorded result) at Mc = 3 the bulk is GAPLESS off K = 0 (CL-1's copy operator (1 - s) R_e does not anticommute with D), so a separate s = -1-only window at large copy mass is not a gapped slab phase; the gapped s = -1-only window is (2, 2 + Mc) at small Mc  [(1.0,3.0): gap 1.3e-16; (4.0,3.0): gap 1.4e-17; (6.0,3.0): gap 5.6e-17]
+PASS: C3 [F] no wall state anywhere else in the block zone ((m,Mc) = (1.5,1), 8^3 grid; pre-set: 0): the cell has no X, M, R copies at all, so at most 2 wall copies per field  [stray 0]
+PASS: C4 [F] chirality of a lone wall copy (s+ alone at small m, s- alone at m in (2, 2 + Mc)), near vs far (pre-set: far = -near; recorded which hand each copy has)  [(m,Mc)=(0.4, 0.8): near +1 far -1, (m,Mc)=(2.4, 0.8): near -1 far +1, (m,Mc)=(0.5, 1.0): near +1 far -1, (m,Mc)=(2.5, 1.0): near -1 far +1; s = -1 copy OPPOSITE hand to s = +1]
+PASS: C4b [F] in the two-copy window (Mc, 2) the near wall carries one copy of EACH hand at K = 0: net chirality 0, a vector-like pair, not two families (pre-set from C4: net 0)  [(1.5, 1): s+ +1, s- -1, net +0; inter-copy velocity 1.4e-16 (no first-order mixing; an s-breaking term can pair them)]
+PASS: C5 [T] the turn (site-phase lift; keeps both tilings, s and eps) on the two wall copies at (m,Mc) = (1.5,1): each copy is a spin-1/2 pair (phases differ by 2 pi/3) times a copy phase, and the s = -1 copy's phase is the s = +1 copy's times w^dq, dq != 0 (pre-set: dq != 0): the wall carries turn charges {q, q + dq} at most, never a triplet  [lift defect 0e+00; s+ phases -0.000, +0.667 pi, s- -0.667, -0.000 pi; dq = 2]
+   C6 [T] cited (chiral-tick-form A-T2): for every m a local slab has zero net wall chirality, so in every window the far wall carries the mirror of the near-wall content; a 3-node near wall (W, m in (2,4)) has a 3-node far mirror
+Supplied: both slab kernels, Ls, m, Mc (copy mass in slab units), free fields; nothing in CL-1 fixes the layer-mass window.
+elapsed 17.2s, peak RSS 61 MB
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

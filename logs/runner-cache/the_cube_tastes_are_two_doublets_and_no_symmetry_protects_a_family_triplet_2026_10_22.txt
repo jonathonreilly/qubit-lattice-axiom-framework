@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/the_cube_tastes_are_two_doublets_and_no_symmetry_protects_a_family_triplet_2026_10_22.py
+runner_sha256: b752f15b41177868afda9d099cb7e1852912fb7f9a79b367e18474809b55db7f
+input_fingerprint_sha256: 39f8180a834cf49d28b0b247fb054e6f76542ea29c71619f30313c9e98841916
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 9.59
+status: ok
+----- stdout -----
+== A. CL-1 cell: one mode per site, face phase -1, Margolus cube tick ==
+PASS A1 face phase -1 <=> W_i anticommute; massless tick U(0) = 1 (all 8 cell states at the K=0 node)
+PASS A2 velocity matrices A_i = i dU/dk_i form Cl(3): isotropic cone, spin su(2) S = -(i/4)eps[A,A]  [v = 0.3412 per tick at eps = 0.3]
+PASS A3 all 24 cube-centred rotations are tick symmetries up to a +-1 site gauge (U(Rk) = V U(k) V^T)
+PASS A4 the cell rep is spinorial (double cover): the compensated half-turns anticommute (phase-free test)
+PASS A5 V = rho(spin) x tau(taste); the TASTE factor is projectively LINEAR: its half-turn lifts commute  [taste half-turn commutator = +1]
+PASS A6 chirality chi = iA1A2A3 commutes with every rotation and is traceless (2 tastes per sign)
+PASS A7 taste per chirality (after the i^odd phase) = E of O (chars E,C2,C3,C4,C2' = 2,2,-1,0,0): 4 tastes = E + E, NOT 1 + 3  [group order 24, chars {'E': [np.float64(2.0)], 'C4': [np.float64(-0.0)], 'C3': [np.float64(-1.0)], 'C2': [np.float64(2.0)], "C2'": [np.float64(-0.0)]}]
+PASS A8 theorem: 1+3 is impossible: chi is a rotation-invariant traceless taste operator, so by Schur it would be a scalar on a 1 and on a 3, with trace +-1 +-3 != 0
+PASS A9 the three axis half-turns act trivially on taste: taste rotations factor through S3 (axis permutations); E = (3 axes) - (singlet), i.e. d - 1 = 2 tastes per chirality
+PASS A10 every rotation-invariant cell mass gaps all 4 tastes equally (Schur on E+E with chi)  [invariant mass space dim 2]
+PASS A11 exact internal symmetries: commutant of the tick over all k has dim 8 (dim 1 with rotations); with CL-1's copy mass it is dim 1: no exact taste symmetry is left to protect any multiplet  [dims 8, 1, 1]
+PASS A12 CL-1 copy sign commutes with A and chi; copy mass leaves 4 light states (+-mu) = 2 spin x 1 taste per chirality = ONE light Dirac family, and 4 heavy (+-(mu+M))  [k=0 phases [-0.9, -0.9, -0.2, -0.2, 0.2, 0.2, 0.9, 0.9]]
+== B. merged ruleset: cell x qubit (16 dims, one extra 2-level label per site) ==
+PASS B1 hops W_i x (a + b sigma_i), face phase +-1: R^2 = 1 (CL-1's reflection) only for (pi flux, b = 0: qubit-blind) or (zero flux, a = 0: qubit = spin, no cell Clifford)  [solutions [(0, np.float64(1.5708)), (1, np.float64(0.0))]]
+PASS B2 qubit locked to the axes: flavour tau x u is SPINORIAL (its half-turn lifts anticommute, a phase-free test), so it holds no 1 and no 3; per chirality it is E x E_1/2 = G_3/2 (4-dim irreducible)
+PASS B3 locked: every invariant Dirac mass gaps all 16 states equally (no 12 + 4 split exists)  [dim 2]
+PASS B4 unlocked: invariant masses split 16 only as 8 + 8 (two E-doublets x spin x chirality), never 12 + 4  [dim 8]
+PASS B5 qubit-blind hop keeps SU(2)_qubit exact; then every invariant mass is flavour-universal  [dim 2]
+== C. zero-flux hop W_i x sigma_i (qubit = spin; 2 modes per site): the 1 + 3 corners ==
+PASS C1 8 Weyl corners, chirality (-1)^hw, rotation forces the qubit locked; L = hw0 + hw2 = 1 + 3, R = hw1 + hw3 = 3 + 1 (the triplet is the axis vector: 3 = d)
+PASS C2 exact one-site translations forbid every mass (paired corners carry different characters)
+PASS C3 with face-diagonal (fcc) translations + rotations: 4 real masses, singlet and triplet INDEPENDENT (rank 2): a light triplet needs m_t = 0, a codimension-2 tuning
+PASS C4 no translation class separates them: each of the 8 classes allows both or forbids both  [[((0, 0, 0), 4), ((0, 0, 1), 0), ((0, 1, 0), 0), ((0, 1, 1), 4), ((1, 0, 0), 0), ((1, 0, 1), 4), ((1, 1, 0), 4), ((1, 1, 1), 0)]]
+PASS C5 the shortest mass, on-site staggered (-1)^(x+y+z), gaps singlet and triplet EQUALLY (P0 picks no 3)
+PASS C6 the Z4 (i on every mode) is taste-blind: it leaves every Dirac mass allowed, so it cannot separate
+PASS C7 a swap-type protecting charge exists only as a FREE-hop charge: Q_f = sum_k f(k) n_k with f = sum cos k_i - 3 prod cos k_i (range 3) allows the singlet mass and forbids the triplet's; the only finite-range unitary scalars are translations, which do not (C4)  [f: singlet 0,0; triplet 4 vs -4]
+PASS C8 that charge is broken by any link field: [Q_f, H] = 0 on free links, O(1) with random link phases (covariantised, 4^3 torus): gauge couplings regenerate triplet masses (not protected)  [free 0.0e+00, linked 0.575]
+== D. families as a rotation triplet vs measured masses, mixing and the Z width ==
+PASS D1 a T1 family triplet: O keeps 3 degenerate; D4, D3 keep a degenerate pair (1+2); three distinct masses need the residual group to be D2, C4, C3 or smaller  [{'O': 1, 'D4': 2, 'D3': 2, 'D2': 3, 'C4': 3, 'C3': 3}]
+PASS D2 mixing: a shared residual gives V = permutation (|V_us| = 0 vs 0.2250); C3 vs D2 residuals give |V_ij| = 1/sqrt3 (|V_ud| 0.577 vs 0.97435): both excluded, so masses+mixing need generic breaking (no prediction)
+PASS D3 in C the three triplet pairs carry distinct fcc characters, so every fcc-invariant mass matrix is family-diagonal: no mixing until fcc is broken in the family sector (a further supplied breaking)  [[(np.float64(-1.0), np.float64(-1.0), np.float64(1.0)), (np.float64(-1.0), np.float64(1.0), np.float64(-1.0)), (np.float64(1.0), np.float64(-1.0), np.float64(-1.0))]]
+PASS D4 Z width: N_nu = 2.9840 +- 0.0082 (LEP) excludes 4 degenerate light (B5/A10) and 1 (CL-1 copy mass, A12); 3 is reached only by the tuned m_t = 0 of C3  [124 and 242 sigma]
+TOTAL: PASS=29 FAIL=0
+
+----- stderr -----
+

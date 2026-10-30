@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/the_two_tiling_tick_has_no_cell_local_family_symmetry_and_a_turn_triplet_forces_turn_invariant_mixing_to_be_cp_blind_2026_10_22.py
+runner_sha256: 3c376f4e84943f30cf279e389d570316534cf1d645a85ade4a7cf2469f5a5ac5
+input_fingerprint_sha256: 98c03828d50a7bd0256e4ffca10d6ef002fe4d5d62930db4b42d5bb51f325187
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.05
+status: ok
+----- stdout -----
+== A. CL-1 two-tiling update, Bloch over 2Z^3 (8 modes per cell)
+[PASS] A0 [T] even and odd cube hops W_i (one global face-phase field, -1 on every face) are Clifford at every k
+[PASS] A1 [T] cell-local (k-independent) commutant over all k: structural 1, fixed step mu=0 1, mu!=0 1, with copy mass 1 (saturated at 12 and 20 momenta; 3 momenta give (4, 8, 8, 1), an undersampled upper bound): no cell-local family symmetry at all
+[PASS] A2 [F] fibre degeneracies of U(k), fixed generic step and mass angle (without|with copy): gen [4]|[2]; axis [4]|[2]; 0 [4]|[2]; pi [4]|[2]: 4 = spin x 2 tastes without the copy mass, 2 = spin x 1 family with it
+[PASS] A3 [T] turn lift (site phases) exists on both tilings and keeps the copy sign; >=3-dim fibre spaces at turn-fixed k (k:dim[turn multiplicities], T = holds a turn triplet): without copy ['0:4[2, 1, 1]T', 'axis:4[2, 1, 1]T', 'pi:4[2, 1, 1]T']; with copy none. Every such space is spin x taste; the copy mass leaves none
+== B. Two-rung nesting
+[PASS] B1 [T] one parent cube over 8 fine cubes: fine and parent Cliffords commute; commutant dim 64 = (M2+M2)x(M2+M2): four (w_fine, w_parent) sectors, each (spin 2x2) x FAMILY 4 = (fine 2) x (parent 2); spin-stripped turn on each family space: multiplicities [[2, 1, 1], [2, 1, 1], [2, 1, 1], [2, 1, 1]], triplet [True, True, True, True]
+[PASS] B2 [F] adding CL-1's second tiling (the fine odd cube at the block centre): commutant dim 2 (hop directions separately), 10 (flat ticks + copy signs), abelian, every family multiplicity (1, 1); the turn is no longer a symmetry (word-trace gap 8): the 4-fold family space of B1 does not survive the two-tiling update
+[PASS] B3 [F] nested two-tiling lattice (Bloch 4Z^3, 64 modes per cell; fine and parent even/odd ticks, parent hops identity on child labels; copy at both rungs): fibre degeneracies (without|with copy) gen [4]|[1]; axis [4]|[1]; 0 [4]|[2]; the turn is NOT a symmetry of this nesting (word-trace gap 128; fine tilings alone 0e+00): fine odd cubes and parent cubes give mixed loops whose fluxes the turn does not keep
+== C. Family mixing from turn-invariant (no axis chosen) mass operators
+[PASS] C1 [F] invariant up/down masses on each family space; J = 0 exactly when no turn eigenvalue holds >= 3 families: B1 family space, commutant masses [2, 1, 1]: J 1e-16 |[Mu,Md]| 3.7 ctrl 0.077 | A no-copy k=axis dim 4 [2, 1, 1]: J 1e-16 |[Mu,Md]| 109.7 ctrl 0.082 | A no-copy k=0 dim 4 [2, 1, 1]: J 7e-17 |[Mu,Md]| 61.2 ctrl 0.070 | A no-copy k=pi dim 4 [2, 1, 1]: J 7e-17 |[Mu,Md]| 75.6 ctrl 0.079
+[PASS] C2 [T] Z3 lemma, three families: max |det[Hu,Hd]| (prop. to J) 3e-45 for a turn triplet, 7e-29 for 1+1+w, 1166.3 when the turn is a scalar: [Hu,Hd] is in (+)M_n, each block traceless, so J = 0 unless one turn eigenvalue holds all three families
+[PASS] C3 [T] fitted count: every coefficient of an invariant up/down mass operator is FITTED; B1 needs 6 real numbers per mass per sector (M2+C+C), none fixed by a rule
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

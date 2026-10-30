@@ -286,6 +286,62 @@ class PublicationLaneTest(unittest.TestCase):
                          ["ghost_row"])
 
 
+class ShadowStateWriteTest(unittest.TestCase):
+    """The tracked state changes only with membership, at most once a day."""
+
+    def _run(self, tmp: Path, prior, lane_ids, today="2026-10-30"):
+        state = tmp / "dispatch_shadow_state.json"
+        if prior is not None:
+            state.write_text(json.dumps(prior))
+        lane = {"lane": [{"claim_id": cid} for cid in lane_ids],
+                "lane_size": len(lane_ids), "gap_available": True,
+                "manifest_state": "ok"}
+        clock = mock.Mock()
+        clock.now.return_value.date.return_value.isoformat.return_value = today
+        with mock.patch.multiple(
+            cds,
+            QUEUE_JSON=tmp / "q.json",
+            PUBLICATION_GAP_PATH=tmp / "g.json",
+            LANE_MANIFEST_PATH=tmp / "m.json",
+            LANE_JSON=tmp / "lane.json",
+            SHADOW_STATE_PATH=state,
+            build_lane=mock.Mock(return_value=lane),
+            datetime=clock,
+        ):
+            self.assertEqual(cds.main(), 0)
+        return json.loads(state.read_text()), json.loads((tmp / "lane.json").read_text())
+
+    def test_unchanged_membership_leaves_state_bytes_alone(self):
+        with tempfile.TemporaryDirectory() as d:
+            prior = {"schema_version": 2, "lane_ids": ["a"], "as_of_date": "2026-10-01"}
+            state, lane = self._run(Path(d), prior, ["a"])
+            self.assertEqual(state, prior)
+            self.assertEqual(lane["added_since_prior"], [])
+            self.assertEqual(lane["removed_since_prior"], [])
+
+    def test_changed_membership_advances_state_and_reports_churn(self):
+        with tempfile.TemporaryDirectory() as d:
+            prior = {"schema_version": 2, "lane_ids": ["a"], "as_of_date": "2026-10-01"}
+            state, lane = self._run(Path(d), prior, ["b"])
+            self.assertEqual(state["lane_ids"], ["b"])
+            self.assertEqual(state["as_of_date"], "2026-10-30")
+            self.assertEqual(lane["added_since_prior"], ["b"])
+            self.assertEqual(lane["removed_since_prior"], ["a"])
+
+    def test_second_change_same_day_keeps_churn_for_the_nightly_report(self):
+        with tempfile.TemporaryDirectory() as d:
+            prior = {"schema_version": 2, "lane_ids": ["a"], "as_of_date": "2026-10-30"}
+            state, lane = self._run(Path(d), prior, ["b"])
+            self.assertEqual(state, prior)
+            self.assertEqual(lane["added_since_prior"], ["b"])
+
+    def test_missing_state_is_created(self):
+        with tempfile.TemporaryDirectory() as d:
+            state, lane = self._run(Path(d), None, ["a"])
+            self.assertEqual(state["lane_ids"], ["a"])
+            self.assertFalse(lane["prior_state_available"])
+
+
 class GoldenQueueInvarianceTest(unittest.TestCase):
     """Shadow tagging must not change queue membership or order: run main()
     on a fixture ledger and compare against the documented sort applied to

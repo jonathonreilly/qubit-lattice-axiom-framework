@@ -1,0 +1,70 @@
+{
+  "utc": "2026-10-30T10:40:00Z",
+  "scope": "Read source snapshot; no commit ancestry certification",
+  "sources": {
+    "briefs_q/SPURION/AUTHOR.md": {
+      "sha256": "bf1a360c2c2b0e51070782568fdbfe3d7479e127896431fa1ca8b63579014aa2",
+      "lines": 26
+    },
+    "PROCESS_LIGHT.md": {
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "lines": 11
+    },
+    "HANDOFF.md": {
+      "sha256": "bbd4a23a4deda9b23137bbbc7f1b45cc26f0e20e78a40d5db5795de302ea5589",
+      "lines": 1143
+    },
+    "LOCOP.md": {
+      "sha256": "0295d071a60d0ba3abfa23e4722634c7c2ea54921423cd0451aec7381e2c9253",
+      "lines": 601
+    },
+    "REVIEW_LOCOP.md": {
+      "sha256": "826f585ec42dac8d55990814c9cad4ec53554389b8b81db71d3bd139cf3a7be7",
+      "lines": 398
+    },
+    "EXTCONT.md": {
+      "sha256": "b10015bbd6be5fac97fd636fdc79f665800fe9921651575b9d03b0167b534b6e",
+      "lines": 654
+    },
+    "REALRGA.md": {
+      "sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+      "lines": 649
+    },
+    "BFT_A.md": {
+      "sha256": "553d56f46ea457aa1b6a97c2a53f435739d3fadb6c9af0cf89676f41a7266902",
+      "lines": 3750
+    },
+    "BFT_B.md": {
+      "sha256": "b6ddf451a4dfe2028a9f23fe7fe696ce11f1c17e497709ac3761da3e7a1172c6",
+      "lines": 4782
+    },
+    "REVIEW_BFT_B_S5.md": {
+      "sha256": "33ac3bbbe60e806e902c529af10c35eff36227df610266a46d651aa8dfb20e23",
+      "lines": 520
+    },
+    "REVIEW_BFT_B_S7.md": {
+      "sha256": "7959c4b8c1eca85fbc95a4fda10de32084df921bb2b2ce704b8a5f1eb018382a",
+      "lines": 666
+    },
+    "RD3.md": {
+      "sha256": "55274cfe3d6c90b6eb6e2f5412bdb5633660f6e47054e1db52f8a1ca9ac3d3cc",
+      "lines": 654
+    },
+    "MIXSMALL.md": {
+      "sha256": "ead4ddd6bb50844d91459c3229d3abcc06b4ba02da772c578bc917a743f67340",
+      "lines": 692
+    },
+    "FLOW.md": {
+      "sha256": "085cd225228a23847b053650fe8bff4c14529d7e630a74565b301d39855e442f",
+      "lines": 4851
+    },
+    "RD.md": {
+      "sha256": "a60232a648e9832d0223cc0fa06ef84d8dbfe54fa91f875a8c96c3f89140aba5",
+      "lines": 1037
+    },
+    "SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md": {
+      "sha256": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+      "lines": 854
+    }
+  }
+}

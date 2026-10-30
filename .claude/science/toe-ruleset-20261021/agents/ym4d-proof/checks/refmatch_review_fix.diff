@@ -1,0 +1,24 @@
+--- reviewed-v1/REFMATCH.md
++++ REFMATCH.md
+@@ -392,8 +392,10 @@
+ (1+4Nt)^(-2N^2) and exponent loss at most one. This follows by covering
+ the 2N^2 real matrix coordinates with cubes of side 1/(2Nt), translating
+ group balls by Haar invariance, and using |h_M(V)-h_M(W)|<=||V-W||op.
+-The event numerator is at most exp(-ta), so its actual normalized
+-probability is <=exp(-q_gap). This rebuilds JMBRB B-GAP.
++Factor exp(t max h_M) out of both numerator and denominator, giving the
++exact density exp(-t psi_M)/int exp(-t psi_M). Its event numerator is
++at most exp(-ta), so the normalized probability is <=exp(-q_gap).
++This rebuilds JMBRB B-GAP.
+ 
+ For a differentiated connected group, subtract log(2^k D_k(c)) and the
+ matched cost in RM10. A threshold a=a_0 u^(delta-1), 0<delta<1, gives
+@@ -577,6 +579,8 @@
+        theta=lambda+B s_*+eta_*+C M<1,
+        B e_*<=(1-theta)M.                              (RM25)
+ 
++   Require M>0 and the uniform upper bounds
++   0<=s_j<=s_*, 0<=eta_j<=eta_*, 0<=e_j<=e_* at every admitted input.
+    Here eta_j is a failure-operator bound, unrelated to the background
+    budget eta in RM13. It includes every coherent, chart and completion
+    failure. Fresh-gap creation probabilities cannot replace these

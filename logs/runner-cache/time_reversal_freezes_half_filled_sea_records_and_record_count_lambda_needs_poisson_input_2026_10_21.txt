@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/time_reversal_freezes_half_filled_sea_records_and_record_count_lambda_needs_poisson_input_2026_10_21.py
+runner_sha256: 4d2e262077e12a758c87eeab5ca98b9738bdc5591d842e18a44bb1ee98904569
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.13
+status: ok
+----- stdout -----
+== A. the Sorkin estimate, rederived
+[PASS] unimodular conjugacy: a minimum-uncertainty packet in rho_L has delta rho_L delta V = hbar/2 (hbar = 1)  0.50000000
+[PASS] the two readings agree only for Poisson counting (F = 1); for F != 1 they move in opposite directions (ratio F)  (C)/(U) = [1.e-02 1.e+00 1.e+02]
+[PASS] coarser elements lower the estimate: rho_L/rho_P = 1/sqrt(F kappa V_P), kappa = 729.4 Planck 4-volumes per record (not 1/sqrt(N_cells), which is larger by kappa)
+== B. 1D Margolus walk, half-filled Floquet sea, exact odds, CL-5 trajectories (L = 12, 924 configurations)
+[PASS] the half-tick conserves each pair's occupation, so CL-5 splits into independent groups; both tie-breaks keep the odds  filled modes 6/12
+[PASS] THEOREM (1D): the pair unitaries are symmetric, so U_e U_o = (U_o U_e)^T and the sea has identical odds at both half-ticks  TV(p0, p1) = 1.1e-15
+[PASS] so CL-5 moves nothing: the vacuum configuration, hence every vacuum record, is frozen (stay = 1, any tie-break)  autocorrelation at 256 half-ticks 1.000
+[PASS] control: a ring flux breaks the antiunitary; the odds then change, CL-5 moves the configuration, correlations decay  TV 0.074, stay 0.926, autocorr(256) 0.24
+   Fano Var/mean of records in sites x half-ticks windows. frozen: 2x2: 1.00, 6x2: 0.36, 2x512: 256.75, 6x512: 91.47, 6x6: 1.07
+   moving (flux 1): 2x2: 0.99, 6x2: 0.35, 2x512: 84.53, 6x512: 31.04, 6x6: 1.00
+[PASS] record counts are not Poisson in either case: the Fano factor depends on the window shape (Poisson: 1 for every window)
+[PASS] 1+1D frozen sea, past-cone (diamond) records: Var grows as T^1 while the mean grows as T^2 (Poisson would need T^2)  exponent 1.036; Fano at T=128: 0.0179
+== C. 3D spin-3/2 Margolus tick (CL-3), gapped half-filled sea (mu = 0.4, b = 0.3)
+[PASS] THEOREM (3D): a site-diagonal antiunitary G K reverses both half-ticks (all hop holonomies are real, faces -1)  max entry error 1.9e-14 on the 8^3 torus
+[PASS] 3D sea (4 of 8 bands filled at every K): odds identical at both half-ticks, so the 3D vacuum records are frozen too  |C|^2 diff 1.1e-16, 4x4 minors 8.3e-17
+[PASS] equal-time vacuum records in a cube of side l: Var = 0.50 l^2 (area law), not the volume law l^3/4 of independent sites  l=4: 8.00 vs 16, l=6: 18.07 vs 54, l=8: 32.17 vs 128, l=10: 50.32 vs 250
+[PASS] past-cone vacuum records (frozen): Var ~ R^3 while the mean ~ R^4, so delta N ~ V^(3/8), not the Poisson V^(1/2)  exponent 3.10, Var/R^3 = 1.063, Fano 0.159 -> 0.085
+== D. predicted Lambda with the rules' normalisation (measured: 1.133e-123 rho_P)
+   past light-cone 4-volume today 0.1230 H0^-4 = 6.39e+242 Planck; Hubble 4-volume (4pi/3) t0 / H0^3 = 3.982 H0^-4
+[PASS] (i) IF records were Poisson (F = 1) at the rule density (one per 729 Planck 4-volumes): rho_L within a factor 10 of measured  1.46e-123 rho_P = 1.29 x measured
+[PASS] (ii) the rules' frozen sea: delta N is 30 orders below Poisson; reading (U) overshoots by ~1e31, reading (C) undershoots by ~1e-31  delta N = 1.0e+90 vs sqrt(N) = 9.4e+119; (U) 1.3e-93, (C) 1.6e-153 rho_P
+[PASS] (iii) matter-relay normalisation (records = relays x half-ticks): Poisson in N_relay gives rho_L ~ 1e-47 x measured  N_relay = 3.6e+148 in the past cone; rho_L = 3.0e-169 rho_P
+   (iv) empty vacuum (main has none): zero occupation odds means zero records, so "volume = record count" gives voids no volume
+== E. a Sorkin-type Lambda against measured constraints (reading (i), S/V random walk, nested past cones)
+   sd of Omega_L(z): z=4e+08: 2.54, z=1090: 1.94, z=1: 1.46, z=0.75: 1.37, z=0.5: 1.26, z=0.25: 1.09, z=0: 0.88
+[PASS] rho_L ~ 1/sqrt(V) tracks the critical density: the same O(1) sd of Omega_L at BBN, recombination and today
+   V(z)/V(0): z=4e+08: 2.19e-62, z=1090: 7.18e-19, z=1: 3.57e-02, z=0.75: 7.35e-02, z=0.5: 1.63e-01, z=0.25: 3.86e-01, z=0: 1.00e+00
+   alpha=0.1: P(today) 1.7e-14; given today: P(w) 1.7e-03, P(BBN)P(rec) 1.2e-02; joint 1.9e-19; w_eff(z=0.5) -1.00 [-1.29,-0.79], rho_L(0.5)<=0 0.00
+   alpha=0.3: P(today) 1.6e-03; given today: P(w) 9.5e-06, P(BBN)P(rec) 1.3e-03; joint 0.0e+00; w_eff(z=0.5) -0.89 [-1.65,-0.45], rho_L(0.5)<=0 0.13
+   alpha=1  : P(today) 9.8e-03; given today: P(w) 0.0e+00, P(BBN)P(rec) 1.2e-04; joint 0.0e+00; w_eff(z=0.5) -0.28 [-1.22,+0.28], rho_L(0.5)<=0 0.37
+   alpha=3  : P(today) 4.2e-03; given today: P(w) 0.0e+00, P(BBN)P(rec) 1.3e-05; joint 0.0e+00; w_eff(z=0.5) +0.52 [-0.45,+1.10], rho_L(0.5)<=0 0.45
+[PASS] a Sorkin-type Lambda that matches today scatters w by O(1): the measured w = -1.03 +- 0.03 holds in under 5% of such histories  alpha = 1: P(w | today) = 0.000
+[PASS] together with BBN and recombination, a matching history has probability below 1e-5 at every coefficient tried  alpha = 1: 0.0e+00; best (factorised) 2.0e-11
+supplied: the 1D pair walk and masses, mu and b, the half-filled sea (main has no vacuum), the CL-5 tie-breaks (shown not to matter),
+  the unit map a = sqrt(8 pi) l_P, tau = 2a/(sqrt3 c), the volume-count rule itself, the S/V dynamics, LCDM background, bounds used.
+elapsed_seconds 1.0
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

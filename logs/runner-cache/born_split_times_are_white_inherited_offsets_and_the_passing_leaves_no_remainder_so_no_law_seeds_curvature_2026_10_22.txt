@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/born_split_times_are_white_inherited_offsets_and_the_passing_leaves_no_remainder_so_no_law_seeds_curvature_2026_10_22.py
+runner_sha256: c94f025e89bd6d652618cac5b50e549780e30799a43b9e03901a610008a99cae
+input_fingerprint_sha256: 62b64537ce258b49231a8e3d1e4e243f736343a2505f37bc0e8ac86713cd57f0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.74
+status: ok
+----- stdout -----
+== A. the passing's remainder
+[PASS] A1 [T] a mode carried by its configuration through a split (M w x4) gets |beta|^2 = 9/16; the clause's nearest unitary carries vacuum to vacuum and each excitation to the same, so its remainder is 0 for every mode, edge registers included | |beta|^2 sudden 9/16, clause 0
+[PASS] A2 [D] 1D free-fermion toy of the raw passing (corner mode shared evenly over two children, other modes as in the children's vacuum): fidelity with the children's vacuum falls as e^(-1.27 per parent site), 0.62 excitations per parent site, and the density structure factor tends to 1/16 at Q -> 0 (white) where the children's vacuum has S ~ Q/2pi; the clause is load-bearing, not a small correction | Np=32: -lnF/Np 1.270, exc/Np 0.618, S_raw(Q1) 0.0790 vs S_vac 0.0156; Np=128: -lnF/Np 1.271, exc/Np 0.618, S_raw(Q1) 0.0665 vs S_vac 0.0039
+[PASS] A3 [T+E] so candidate (a) gives either nothing (clause as written: A_s = 0 and no primordial tensors, P_t = 0, at linear order) or white UV heating of O(1) quanta per site per split (no clause): Delta^2 ~ (k l)^3, n_s - 1 = +3, and at the pivot (k l) ~ H l_c e^-N* | (k l)^3 at pivot 1e-99
+== B. Born split times from the registers' own odds
+[PASS] B1 [T] the fewest-change transport on a register line keeps the actual value at a fixed Born quantile u: on a translating packet the offset from the mean is constant, and the passing's 'value minus s' keeps u, so a split-time offset is inherited, never re-drawn (spectral-tilt's Poisson model redraws every step) | offset drift over 37 steps 0.023 steps (binning); shift-by-s keeps every quantile
+[PASS] B2 [T] per-register Born spread in e-folds, sigma_r = ln2 sigma_n / s, for three readings of a register's odds: R0 one-step floor (1/sqrt12 step); R1 pair vacuum (each partner pair in its bonding state, n binomial, sigma_n = sqrt((4+Delta)s)/2); R2 the register's own-hop vacuum on its window (sigma_n -> 0.1808 (4+Delta)s) | R0 s=23: 0.0087; R1 s=23: 0.1616; R2 s=23: 0.6373; R0 s=135: 0.0015; R1 s=135: 0.0667; R2 s=135: 0.6283
+[PASS] B3 [T] of a child cube's 18 trigger edges (12 axis, 6 even-corner face diagonals), those along parent edges, which inherit the parent's offset: 6 on even children, 3 on odd ones, mean 4.5 = 1/4; the rest start fresh | per child [6, 3, 3, 6, 3, 6, 6, 3]
+[PASS] B4 [D] 40 generations of one lineage: the block-mean offset stays at sigma_r/sqrt18 (stationary, no accumulation; parent-child correlation 1/4), while a redraw-per-generation model random-walks | quantile sd gen1 0.237, gen40 0.231; redraw model x6.3
+[PASS] B5 [D] coupled trigger on a 32^3 block lattice with shared edges (own 18-edge mean reaches 4s, and each UNSPLIT +x,+y,+z neighbour's shared-face edges all full; least fixed point of the max-min rule): the coupling DAMPS the split-time spread (a neighbour that has split lifts its condition, so late faces are skipped); a variant that always waits for the face would amplify it; coarse-grained over 2^j blocks the variance falls as 8^-j (white) | sd own 0.236, coupled 0.102 sigma_r (x0.43, mean delay 0.93), always-wait x2.42; 101 sweeps; log2 var ratio at j=3: free -2.89, coupled -3.22
+[PASS] B6 [D+E] dephasing IN-3 needs split phases spread >~0.35 e-folds (inflation-rule D3; ln2-periodic modulation below a few %): with the coupled spread this needs Gaussian register odds of sd >= 4.9 s steps, more than half the (4+Delta)s window, which no odds on the window reach; every reading falls short and leaves the sawtooth | sigma_split R0/23 0.00089, R1/23 0.017, R2/23 0.065, R0/135 0.00015, R1/135 0.0068, R2/135 0.064; need sd/s 4.94 vs window/2 2.5; modulation A1 (R): R2/23 0.94 (2.6), R1/23 0.96 (6.8)
+[PASS] B7 [T+E] the Born offsets are a white field (all trigger registers distinct, offsets kept, B4-B5): as a curvature seed Delta^2 ~ (k l)^3, n_s - 1 = +3, negligible at the pivot (A3); they can dephase, never seed; the Poisson cascade's n_s = 1 assumed redraws the quantile transport does not make | (k l)^3 at pivot 1e-99
+== C. Born picks of new sites' first records
+[PASS] C1 [T+D] records never condition the odds (actuality law), so a response that reads odds sees no record seed; if a source read the recorded occupations, the Born picks carry the vacuum's own density correlator: on a gapped staggered sea (10^3, mass 0.5) S(Q) -> Q^2, so Delta^2 ~ Q^5 and n_s - 1 = +4 (gapless 1D sea: S ~ Q) | S(Q1) 0.0157, S(2Q1) 0.0529, local power 1.75; gap 0.732
+== D. seed rules against the gate
+[PASS] D1 [D] SE-2 (passing vacuum-to-vacuum for modes the children's tick turns by more than th per generation, by configuration otherwise), synchronized splits: the power is O(1) x Bunch-Davies but depends on the chosen th, and the ln2 sawtooth stays (excluded); SE-2 needs dephasing as well, so it adds a clause and solves nothing | th 1.00: R 0.87, A1 0.34; th 3.14: R 0.96, A1 0.59; th 6.28: R 1.84, A1 0.77
+[PASS] D2 [E] even granting a supplied dephasing >= 0.35 (IN-3) with inflation-rule's IN-1 order carriage, the seed is Bunch-Davies x 1.2-1.3 (inflation-rule D3): A_s = R V/(24 pi^2 eps M_P^4) with the rung FITTED, the tilt is the plateau's 1 - 2/N* (a constant dephasing adds none), and edge registers pass vacuum to vacuum, so r = 0 | n_s 0.9573 (-1.8 sig Planck, -5.6 sig ACT+DESI); A_s not predicted
+[PASS] D3 [gate] SE-1 (Born dephasing, a reading of CL-2 and the split: no new text) chooses no number, names nothing, bends no axiom, and predicts an O(1) ln2-periodic modulation, excluded: FAILS. SE-2 adds a chosen threshold and keeps the sawtooth: FAILS. No candidate seeds A_s ~ 2e-9 with n_s 0.965-0.974 | SE-1 modulation 0.94 at sigma 0.065 (formula 1.09)
+elapsed 1.6 s
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

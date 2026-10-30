@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/curvature_squared_inflation_misses_the_act_tilt_and_no_rule_lifts_it_2026_10_21.py
+runner_sha256: 024c34c98fdb0983d2f61c4cdd5f24eb276cdf7dfb4c1182354c33860092b778
+input_fingerprint_sha256: 4ad862af09659baab72c23f689a4450a96fa7f33384e846acdd74911e9dda5a3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 5.20
+status: ok
+----- stdout -----
+== A. data
+   n_s: Planck 0.9649(42); P-ACT-LB DR1 0.9740(30); with DESI DR2 0.9752(30); r < 0.036 (BK18), ~0.032 combined
+   ACT - Planck = 0.0091 = 1.8 sigma (shared Planck data: a lower bound on the tension); both reported below
+== B. Starobinsky R^2 (supplied term, inflaton G)
+[PASS] B1 N* that gives each n_s (2nd-order flow): Planck 55.02, ACT 74.84, DR2 78.55 (leading 2/(1-n_s): 57.0, 76.9, 80.6); r there 0.0035, 0.0020, 0.0018
+[PASS] B2 reheating histories (e-fold matching at k = 0.05/Mpc): colour-anomaly decay (w = 0, T_rh = 1.5e+08 GeV) N* = 50.3, n_s = 0.9617 [Pl-0.8 ACT-4.1 DR2-4.5]; instant N* = 55.7, n_s = 0.9653 [Pl+0.1 ACT-2.9 DR2-3.3]; plain R^2 reheats through its quadratic minimum (w = 0), so instant is its maximum
+[PASS] B3 THEOREM (sympy): a phase of constant w from rho_end to rho_rh adds dN = (3w-1) ln(rho_end/rho_rh)/(12(1+w)) e-folds and boosts the GW background of the modes entering in it by E with ln E = 4 dN for every w; kination (w = 1) to BBN (4 MeV): N* = 69.6, n_s = 0.9721 [Pl+1.7 ACT-0.6 DR2-1.0]: even the stiffest phase to BBN does not reach ACT (needs 74.8)
+[PASS] B4 ESTIMATE: Omega_GW h^2 = 4.9e-18 on the radiation plateau vs the BBN/N_eff limit 1.7e-06 (dN_eff < 0.3) caps any stiff phase at dN <= 6.6: N* <= 62.4, n_s <= 0.9689 [Pl+1.0 ACT-1.7 DR2-2.1]; ACT needs dN = 19.1, a GW boost e^77
+== C. the rules' own forms
+[PASS] C1 hinge plateau (theorem in the limit, check 0.988 0.999): eps_H = 3(1+w)(pi rho*/rho)^2, n_s - 1 = -6(1+w): needs w = -0.99415 (Planck), -0.99567 (ACT), -0.99587 (DR2), a fluid no rule supplies; P_t >= 4/pi^2 = 0.41 at l = a vs r A_s < 7.6e-11: excluded on both datasets by the amplitude
+   C2 running coupling n_s - 1 = gamma/N (running-tilt C1; C = 4.891 cited), gamma = -2:
+      ladder induced L*+C/2      n_s 0.9853 [Pl+4.8 ACT+3.8 DR2+3.4]
+      hypercharge pole at cell   n_s 0.9620 [Pl-0.7 ACT-4.0 DR2-4.4]
+      common-epoch induced       n_s 0.9684 [Pl+0.8 ACT-1.9 DR2-2.3]
+      common-epoch hypercharge   n_s 0.9824 [Pl+4.2 ACT+2.8 DR2+2.4]
+[PASS] C2 N to the pole needed: 57.0 (Planck), 76.9 (ACT), 80.6 (DR2); on the ladder (N >= L* = 133.28) |gamma| = 4.68, 3.47, 3.31: ACT moves the ladder reading from +4.8 to +3.8 sigma, still excluded; gamma is supplied
+[PASS] C3 constant transfer per split (split-schedule E): n_s = 1 - q/(2N_e), r = 8/N_e single-clock: ACT with q = 4 needs N_e = 76.9, r = 0.104 (excluded); r < 0.036 needs N_e > 222 and q = 11.6; its Jordan-frame reading is R^2 (inflaton G2), i.e. B
+[PASS] C4 legacy graph-growth notes on main (PRIMORDIAL_SPECTRUM, TENSOR_SCALAR_RATIO 2026-04-22): n_s = 1 - 2/N_e at N_e = 60 is 0.9667 [Pl+0.4 ACT-2.4 DR2-2.8]; ACT needs N_e = 76.9
+== D. shapes (exact background, 2nd-order flow); max n_s with r < 0.036 at N* = 50.3 / 55.7
+[PASS] D1 THEOREM (leading order in 1/N, sympy): V = 1 - c e^(-kappa phi) gives n_s = 1 - 2/N for every kappa (Starobinsky, alpha-attractors, Higgs); V = 1 - c phi^-k gives n_s = 1 - 2(k+1)/((k+2)N). ACT needs k = 0.88 (N* 50.3) or 1.63 (N* 55.7); Planck needed k = 43 (N* 55.7): ACT asks for a power-law, not exponential, approach to the plateau
+   E-model alpha              0.9641 / 0.9675  [ACT -3.3 / -2.2]
+   T-model alpha              0.9604 / 0.9643  [ACT -4.5 / -3.2]
+   power plateau k=1          0.9734 / 0.9760  [ACT -0.2 / +0.7]
+   power plateau k=2          0.9701 / 0.9730  [ACT -1.3 / -0.3]
+   power plateau k=4          0.9667 / 0.9700  [ACT -2.4 / -1.3]
+   hilltop p=2,4,6            0.9657 / 0.9711  [ACT -2.8 / -1.0]
+   natural (copy-mass class)  0.8900 / 0.8904  [ACT -28.0 / -27.9]
+   R^2 + lam R^3              0.9759 / 0.9814  [ACT +0.6 / +2.5]
+[PASS] D2 at r < 0.036 the exponential plateaus (E/T alpha-attractors, any alpha) and natural inflation stay > 2 sigma below ACT at N* <= 55.7, hilltops reach -1 sigma only near r ~ 0.03 at instant reheating; power plateaus k = 1, 2 and R^2 + lam R^3 reach it. lam for Planck/ACT/DR2: N* 50.3: -5.0e-05 -1.8e-04 -1.9e-04; N* 55.7: 6.1e-06 -1.2e-04 -1.3e-04 (negative: a softened R^2 tail)
+== E. can the rules supply the shift
+[PASS] E1 THEOREM: V = M^2 v(phi) makes eps, eta, n_s and r M-free, so in pure R^2 n_s depends on N* alone; a lattice R^2 piece (Kuhn O(k^4) remainder, O(0.1)) changes c = 5.7e+08 by ~2e-10 and n_s by nothing: no R^2-type term can lift the tilt
+[PASS] E2 ESTIMATE hinge Friedmann law H^2 = rho/3 (1 - rho/rho* + ...): rho/rho* = (Hl)^2/2 <= 7.2e-11 at l = 2a, so |dn_s| <~ 2 rho/rho* = 1e-10 vs the needed +0.012
+[PASS] E3 cubic: a cell-scale c3 R^3 with c3 = O(1) a^4 gives lam = 72 M^4 c3 = 2.3e-18 c3 vs the needed -1.8e-04 (8e+13 x short); a loop of any field heavy enough to be local (m^2 > R* ~ 230 M^2), a3 coefficient <= 1e-2: |lam| <= 4e-15 (ESTIMATE); lam is a second supplied coefficient
+[PASS] E4 copy-mass promotion is the natural-inflation class (inflaton E1): it never reaches 1 - 2/N at r < 0.036 (row above); the SU(2) condensate hilltop needs g^2 = 0.039 (1/alpha = 322) for ACT and stands at 24/g^2 = 615 M_P^4, 5e+11 x the tensor bound
+   E5 SPECULATION: a k = 1 tail is the 3D Coulomb form (1 - mu/phi); the rules hold no canonically normalised separation modulus to carry it
+== F. look-elsewhere
+[PASS] F1 11 campaign readings (all with a supplied piece) within 2 sigma: Planck 6, ACT 1, DR2 0 vs 4.6, 3.3, 3.3 by chance (uniform on 0.955-0.995): a reading landing on either dataset is not evidence
+[PASS] F2 shape grid (76 points, N* = 55.7): 32% fit ACT at 2 sigma with r < 0.036, 55% fit Planck; every fit spends >= 1 supplied shape parameter
+supplied: R^2 and R^3 coefficients, shape families, pivot 0.05/Mpc, g*, colour running + top mass, GW transfer factors, BBN dN_eff,
+  C = 4.891 and SM b_i (running-tilt), measured n_s/r/A_s. Cited: inflaton B4/E1/G, running-tilt C-D, split-schedule E.
+elapsed_seconds 4.0
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

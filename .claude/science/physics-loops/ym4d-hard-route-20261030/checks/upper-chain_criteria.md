@@ -40,3 +40,15 @@ Gaussian model as above, forward energy field, f_T(x) = phi(x/T) with phi a fixe
 - B2. Gradient term: (V - (9/2) ||phi||^2 T^4)/T^2 tends to a negative constant. Pass: values at T = 32, 48 have the same negative sign and agree within 15%. Fail otherwise.
 - B3. Separated: C(T) = Cov(sum f_T e, sum f_T(.-shift) e) is independent of T. Pass: |C(48)/C(32) - 1| < 0.05. Fail otherwise.
 - B4. Array defect: X(T) = Var(array)/N - V(T), for the periodic array of the same bump with period T/4, N = 4^4. Images touch at the block faces and the bump vanishes there to all orders. X is the sum of the separated and touching covariances per bump, the second-order content of CT3. Pass: |X(48)/X(32) - 1| < 0.10. Fail otherwise.
+
+## Added after B1, B3, B4 missed at T <= 48 (before computing the following)
+
+Raw results: B1 missed narrowly (2.5% against 2%, at T = 48). B2 passed. B3 failed (C(48)/C(32) - 1 = -11.7%). B4 failed (X(48)/X(32) - 1 = -18%). Suspect: bump half-width T/8 is only 6 lattice units at T = 48, where x^8 r(x) is still 1.47 times its limit at x = 6 (from G3b).
+
+- B3'. Let C_cont(T) use r_cont(x) = 9/(pi^4 |x|^8), with periodic images, in place of r, for the same bumps. Pass if C_cont(T) changes by less than 3% from T = 48 to T = 64, and C(T)/C_cont(T) moves toward 1 from T = 32 to T = 48. Fail otherwise. A fail would mean the separated covariance of bumps is not cutoff-independent at Gaussian level, contradicting the reading of Theorem 4 and Remark 3.3.
+- B2'. The limit of (V - 4.5 sum f^2)/T^2 is -(M_2/8) ||grad phi||_2^2, by Taylor expansion of the kernel, with M_2 = sum_x |x|^2 r(x). Pass if the value at T = 48 is within 15% of it. Fail otherwise.
+- B4'. X_cont(T), as X but built from the separated part only (r_cont for x outside the bump-to-itself pairs) is not defined cleanly when images touch, so B4 is left as failed at these T. Re-test only if T >= 96 is affordable.
+
+## Zero-momentum dominance in the smallest model (no script)
+
+Question Z1 (is two-block zero-momentum dominance, Cov(y_+, y_-) >= 0, a consequence of RP and the Markov property alone?) was planned as a random search and was settled by hand before running anything: outcome A, by the exact example in `parts/upper-chain.md`, Proposition 14.7.

@@ -1,0 +1,132 @@
+{
+  "time_utc": "2026-10-30T09:27:04Z",
+  "preexisting_files": 3902,
+  "unchanged_files": 3902,
+  "changed": [],
+  "missing": [],
+  "forbidden_additions": [],
+  "allowed_additions": [
+    "EXTCONT.md",
+    "EXTCONT_LOG.md",
+    "checks/extcont_check.py",
+    "checks/extcont_criteria.md",
+    "checks/extcont_inventory_before.json",
+    "checks/extcont_result.json",
+    "checks/extcont_sources.json",
+    "checks/extcont_stderr.txt",
+    "checks/extcont_stdout.json"
+  ],
+  "resources": [
+    {
+      "load": [
+        2.55224609375,
+        2.16650390625,
+        2.04296875
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 23199744,
+      "nice": 20
+    },
+    {
+      "load": [
+        2.55224609375,
+        2.16650390625,
+        2.04296875
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 31752192,
+      "nice": 20
+    },
+    {
+      "load": [
+        2.55224609375,
+        2.16650390625,
+        2.04296875
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 31883264,
+      "nice": 20
+    },
+    {
+      "load": [
+        2.55224609375,
+        2.16650390625,
+        2.04296875
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 31997952,
+      "nice": 20
+    },
+    {
+      "load": [
+        2.55224609375,
+        2.16650390625,
+        2.04296875
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 32112640,
+      "nice": 20
+    },
+    {
+      "load": [
+        2.55224609375,
+        2.16650390625,
+        2.04296875
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 32260096,
+      "nice": 20
+    },
+    {
+      "load": [
+        2.55224609375,
+        2.16650390625,
+        2.04296875
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 32309248,
+      "nice": 20
+    },
+    {
+      "load": [
+        2.55224609375,
+        2.16650390625,
+        2.04296875
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 32358400,
+      "nice": 20
+    },
+    {
+      "load": [
+        2.55224609375,
+        2.16650390625,
+        2.04296875
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 32440320,
+      "nice": 20
+    },
+    {
+      "load": [
+        2.55224609375,
+        2.16650390625,
+        2.04296875
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 33013760,
+      "nice": 20
+    },
+    {
+      "load": [
+        2.55224609375,
+        2.16650390625,
+        2.04296875
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 33030144,
+      "nice": 20
+    }
+  ],
+  "status": "PASS"
+}

@@ -2,7 +2,7 @@
 
 writer: coordinator OpenAI/Codex/host-runtime 01a1873f-103a-7f01-b924-4455238d8a86
 lead: target lead in ../GOAL.md
-procedure: 6243acc936982e945732793bf641442c03abbfea for the wider-chart continuation
+procedure: 6243acc936982e945732793bf641442c03abbfea for the wider-chart and second-chart continuations
 
 The previous Astra/max author attempt used c93fcb388b60ad7974433b2aa1cb1d366aec52ff.
 Its 860-line source is preserved at b1979a0173; its old handle was absent on
@@ -56,6 +56,7 @@ integral remains; no connected estimate has been extended to that complement.
 - checked: GH49's first-step connected norm with four original-source jets at fixed real output, at rate beta/2 and under its stated common-family and large-u restrictions; no repeated-scale conclusion.
 - checked: [GH52--GH55](../gates/second-domain-complement-c056f6db54.md) give a lower bound for the actual second-posterior domain complement inside the next ordinary q-good chart, at zero source on one fixed torus and with bounded prescribed coupling ratios. They exclude the unchanged first-step exp(-eta p_cut^2) upper price there, without asserting the physical running law or a connected complement bound.
 - checked: [GH56--GH63](../gates/wider-input-chart-1909ce7730.md) use a wider auxiliary profile under their explicit original-cut and admitted-center restrictions. They supply the actual full first density with its unestimated P_* retained, a small six-field/four-source remainder and the connected first-failure source bound on a domain containing the next ordinary chart at the flat center. Other centers retain RF/WR admissibility; larger physical G sets and all-depth applicability are not established.
+- checked: [GH64--GH70](../gates/second-chart-convexity-1016ec5d6a.md) give volume-uniform positive scaled Hessian, variance and simultaneous free-link tail bounds for the actual two-step density conditioned on its ordinary chart, at terminal I and zero original source, with prescribed bounded u_1/u. The full critical action, determinant, both compact normalizers and Haar terms remain. This does not control the compact complement or the connected original-history coefficients.
 - gap: Control the full effective-density factor and these inherited marks jointly through the second integration, including its complement and already-spent energy -> reserve-regeneration; effective-flow
 
 The next construction must estimate this displayed second-step input or show
@@ -65,14 +66,17 @@ events, or assigning rare size to an extensive vacuum does not solve that task.
 The larger auxiliary q_w and chart in section 15 retain both SC12's
 reset debit and WR35's full-buffer mean-translation debit. Their output
 radius sigma u^theta/(log u)^2 contains the next ordinary logarithmic chart.
-GH63 now displays the exact inherited integrand there. The next construction
-must bound K_1 P_* with that full nonlinear critical phase and determinant,
-and the ordinary-chart complement, without restarting from a bare Wilson
-input. A useful next test is local transport of coarse plaquette energy
-through the actual root-straight contours into original fine Wilson and
-centered-kernel energy, with every contributing reader and spent reserve
-counted. Such an estimate, and constants stable under repetition, are not
-supplied by section 15.
+GH63 displays the exact inherited integrand there. The next continuation
+reuses the existing SAP15 coarse-energy allocation, rather than reproving it.
+Section 16 obtains a positive Hessian for the full inherited density on the
+second ordinary chart at terminal I. The moving-lift Schur calculation retains
+the actual finite-u normalizer and Haar terms. Complete-reader Cauchy bounds
+pay the full determinant and action derivatives; GH60 pays the actual all-cut
+remainder. The resulting chart-conditioned variance and simultaneous tails
+are uniform in volume. The next construction must control the ordinary-chart
+complement or integrate the actual first-history marks with their complete
+readers, and then prove constants and reserves stable under repetition.
+The chart theorem by itself supplies neither of these interfaces.
 The coordinator also compared [Abdesselam--Rivasseau, Theorem III.1 and proof](https://arxiv.org/pdf/hep-th/9409094v1)
 with the artificial covariance-pair interpolation, and
 [Brydges--Slade, Lemma 6.4 and proof](https://arxiv.org/html/1403.7244v2)
@@ -97,6 +101,15 @@ power-profile extension; no literature-priority or exhaustive-search claim
 is made. Only the changed methodology references were refreshed; earlier
 frozen review and source records remain unchanged.
 
+Section 16 uses [Kolesnikov--Milman, arXiv:1310.2526v7, Theorem 1.2(1)](https://arxiv.org/pdf/1310.2526v7)
+at the Euclidean infinite-dimension-parameter specialization. Smooth convex
+domains exhausting the product of whole-link balls provide the needed
+boundary match; no condition on the test function at the boundary is imposed.
+The independent checker verified the primary theorem and its case-1 proof.
+This is a finite-dimensional probability estimate, not a physical spectral
+gap. Its actual inherited density and Hessian are supplied by GH64--GH68.
+
 No continuum existence or physical mass-gap claim is made. One existing
-independent reviewer was reused for the applicability, complement and wider-chart checks; no parallel
+independent reviewer was reused for the applicability, complement, wider-chart
+and second-chart checks; no parallel
 author, additional worker context or scientific numerical job was launched.

@@ -62,11 +62,12 @@ It leaves the full transitive lattice gap/locality chain and every explicit erro
 majorant unverified. It issues no whole-unit acceptance or research-gate advance.
 See [the bounded report](gates/charged-sign-b1979a0173.md) for exact coverage.
 The same reviewer was subsequently reused for the bounded GH49 applicability,
-GH52--GH55 complement and GH56--GH63 wider-chart checks below; no parallel
+GH52--GH55 complement, GH56--GH63 wider-chart and GH64--GH70 second-chart
+checks below; no parallel
 author or additional worker context was launched.
 No worker from this checkpoint remains active. These checks use procedure
 53f2c0af7eb59438389b4c2fe75952932d4e95fe through the complement check;
-the new wider-chart unit uses current procedure
+the wider-chart and second-chart units use procedure
 6243acc936982e945732793bf641442c03abbfea. The authors' c93 procedure and prior
 receipts remain historical and unchanged. The full sign theorem is still open
 for independent acceptance, and all six critical obligations remain open.
@@ -119,6 +120,23 @@ K_1 P_* and the actual inherited marks jointly, with the ordinary-chart
 complement and all later domain, energy and reader budgets retained.
 A conditional lemma is a checkpoint, not a completed global return. Do not turn
 an outside-law estimate or an individual-sign inequality into a new assumption.
+
+Section 16 now has a scoped independent [GH64--GH70 check](gates/second-chart-convexity-1016ec5d6a.md).
+At terminal identity and zero original source, the actual two-step density
+conditioned on its ordinary chart has a uniformly positive scaled Hessian
+for large u, with constants independent of volume and bounded prescribed
+u_1/u. This retains the full inherited critical action, determinant, both
+kernel normalizers and Haar terms. It reuses SAP15's existing coarse-energy
+allocation and CA/CD's existing analytic reader budgets. The Schur calculation
+keeps the moving lift and finite-u Haar terms. The resulting chart-conditioned
+variance and simultaneous free-link tail bounds are estimates for the actual
+inherited law, not a bare replacement. The convex-boundary theorem used for
+the variance bound is explicitly matched to the product-ball chart.
+The compact complement, connected first-history norms, other terminal centers,
+six-field/four-source second-transfer estimates and uniform repetition remain
+open. This probability inequality is not the physical Hamiltonian mass gap.
+The next focused target is an actual complement or inherited-history estimate
+that composes with this chart result; SAP15 itself need not be reconstructed.
 
 ## Critical path and interfaces
 

@@ -11,7 +11,9 @@ The independently checked [GH52--GH55 test](../gates/second-domain-complement-c0
 
 The independently checked [GH56--GH63 continuation](../gates/wider-input-chart-1909ce7730.md) rechecks those same energy payments with a larger auxiliary chart, p_w=u^theta. Under its original physical-cut margins, the resulting first-density domain contains the next ordinary logarithmic chart at the flat center, with a growing margin; other centers retain RF/WR admissibility. The full P_* remains in the second-step integrand. This resolves that specific containment issue, not stable full domains, arbitrary physical cutoffs, the larger physical G or its complement.
 
-Next action: Estimate the actual GH63 second-step integrand, including K_1 P_* and its ordinary-chart complement. Match every source radius, field weight, retained boundary condition and support reserve to that consumer, then prove those full domains and unused budgets persist under later integrations. The auxiliary enlargement does not turn the next input into a bare density.
+The independently checked [GH64--GH70 continuation](../gates/second-chart-convexity-1016ec5d6a.md) controls the actual inherited two-step density conditioned on that ordinary chart at terminal I and zero original source. Its positive scaled Hessian and variance/tail bounds are uniform in volume for bounded prescribed successive coupling ratios. The full inherited action and determinant are included, with the smooth convex-boundary approximation explicit. This does not estimate the ordinary-chart complement or establish the full marked interface.
+
+Next action: Estimate that actual compact complement or the connected inherited-history coefficients, keeping the GH64--GH70 chart contribution and its scope. Match every source radius, field weight, retained boundary condition and support reserve to the full second-transfer consumer, then prove those full domains and unused budgets persist under later integrations. The auxiliary enlargement does not turn the next input into a bare density.
 
 ## Obligations
 

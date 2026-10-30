@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/a_circuit_slab_puts_its_mirror_in_the_other_copy_only_through_a_nonzero_turn_graded_winding_which_forces_equal_flow_at_quasi_energy_pi_and_is_set_by_termination_2026_10_23.py
+runner_sha256: 8fa8f898d6807d22d0c3d11dddb6ef25d70b864fedaad95638dc50fd950dd019
+input_fingerprint_sha256: b12cad39d47b22cc008872425ed03e6d73cc429f0a7506c97c3cfe099bd703a7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 8.54
+status: ok
+----- stdout -----
+== A. FREEZE on the turn axis K = kappa (1,1,1)
+PASS: A1 [T]/[F] FREEZE rebuilt: unitary; the site-gauged C3 turn T3 (T3^3 = 1) is a symmetry on the axis and keeps Pi+, tau3, chi; at K = 0 the q 1 (tau3 +1) and q 2 (tau3 -1) Weyl pairs sit at quasi-energy 0, at R at pi  [unitarity 5e-15, axis 4e-15, labels 1e-15]
+PASS: A2 [T]/[F] FREEZE's turn-graded winding is NONZERO: W = (-2, 1, 1) over sectors (1, w, w^2), and the axis flow through 0 (K = 0 node) and through pi (R node) both equal W; no other axis crossing (|theta| / distance-to-node bounded below)  [W [-2, 1, 1], F_0 [-2, 1, 1], F_pi [-2, 1, 1]; min slope ratio 0.50]
+== B. the Floquet sum rule F_0 = F_pi = W
+PASS: B1 [T] lemma: a cube-local gate that commutes with the axis turn has constant det on every turn sector (even tiling: C; odd tiling: D(K) C D(K)^+ with D(kappa) commuting with T3 on the axis), so ANY circuit of such gates (and any exp(-i t H) with H turn-symmetric) has W = 0: F_0 = F_pi = 0 SEPARATELY and q_mirror = q_light in each gap (copy-flip-slab D3 holds gap by gap)  [[T3, D] 0e+00; depth-7 random covariant circuit W [0, 0, 0]]
+   B2 [T] corollary: W_F != 0 (A2), so FREEZE is NOT a product of cube-local gates each commuting with the (111) turn, at ANY depth (exact upgrade of twist-local-single A3, which searched depths 5-9 for all 12 rotations)
+PASS: B3 [T] consequences: (i) light q 2 at 0 with the q 1 mirror ONLY at pi is impossible (F_0 = f(2,+) != f(1,-) = F_pi, for any W); (ii) light q 2 and mirror q 1 both at 0 give F_0 = W = (-2,1,1), so the pi gap must carry the SAME flow, which is no single-Weyl flow: >= 2 extra Weyls at pi per family (a forced pi doubling); (iii) W = 0 circuits recover q_mirror = q_light  [f(2,+)+f(1,-) = [-2, 1, 1]]
+== C. coupled-layer slab: layers F, F^+, F, ...; label gates q 1 on bonds (2j,2j+1), q 2 on (2j+1,2j+2)
+PASS: C1 [F] the alternating bulk (period 2, Bloch k_l) is gapped at BOTH 0 and pi for g = 0.5 on a 12^4 grid that contains K = 0 and R; a window of g, not a tuned value  [gap at 0 0.500, at pi 0.500; min gap on 6^4 vs g {0.2: np.float64(0.2), 0.8: np.float64(0.43), 1.2: np.float64(0.03), 1.4: np.float64(0.17)}]
+PASS: C2 [T]/[F] the alternation is forced by the bulk gap: an all-F stack has W = Ls W_F (grows with Ls; walls hold a bounded number of Weyls), and its bulk carries 2 W_F per two layers at every k_l, so it is gapless at 0 and pi on the axis (a nonzero sector winding drives an eigenphase through every eps)  [all-F Ls 6 W [-12, 6, 6]; all-F bulk sector winding per 2 layers at k_l = 0, 1.3: [[-4, 2, 2], [-4, 2, 2]]]
+PASS: C3 [T]/[F] ODD Ls: near wall holds the light q 2 (hand +1) at (K = 0, 0) AND at (R, pi); far wall holds the mirror q 1 (hand -1, the other copy) at both; F_0 = F_pi = W = W_F, near-wall flow f(2,+). The copy-flipped mirror EXISTS on a bulk-gapped circuit slab  [Ls 7: 0: [(0, 2, 1), (6, 1, -1)] pi: [(0, 2, 1), (6, 1, -1)]; W [-2, 1, 1], near F_0 [-1, 1, 0]]
+PASS: C4 [T]/[F] EVEN Ls (same bulk): far wall holds q 2 (q_mirror = q_light), W = F_0 = F_pi = 0: the far copy is a TERMINATION property (net number of F minus F^+ layers), not a bulk one  [Ls 6: [(0, 2, 1), (5, 2, -1)]; W [0, 0, 0]]
+PASS: C5 [F] a second bond pattern (both labels on even bonds) with the same odd Ls puts the whole FREEZE pair on the far wall (same W): the near/far split is a chosen label bond pattern  [[(6, 2, 1), (6, 1, -1)]; W [-2, 1, 1]]
+PASS: C6 [F] open Ls 7 slab: no other state at 0 or pi on a 6^3 wall grid off the nodes (the wall Weyls are the only in-gap content)  [min gap off nodes 0.524]
+== D. family-count bookkeeping (anomaly-family-count index, Omega twist k = -q_mirror)
+PASS: D1 [T] odd-Ls slab (lights {2 at 0, 2 at pi}, mirrors {1, 1}): N_f = 0 mod 3 is the anomaly-free set; the pi doubling keeps the mod 3 because the node count 2 is prime to 3; the reflected slab (light 1, mirror 2) gives the same; even Ls: every N_f. Smallest nonzero 3, but 3 over 6 is still supplied  [odd ([2, 2], [1, 1]) -> [3, 6, 9]; even ([2, 2], [2, 2]) -> [1, 2, 3, 4, 5, 6, 7, 8, 9]; reflected [3, 6, 9]]
+PASS: D2 [T] all light Weyls (both nodes, every stacked family) carry ONE turn charge q 2, so the turn-CP lemma (J = 0 only for turn-invariant masses on a turn-CHARGED triplet) does not force J = 0; J != 0 allowed, not supplied
+   D3 [S] freeze-mirror-smg: on FREEZE's bare label doublet the T-invariant charge-4 mirror term first exists at N_f = 4 (C(N_f,4)); the Omega used here is anomaly-family-count's per-family 16 pairing. At N_f = 3 the mirror gap needs the 16.
+   synthesis (criteria_pre_run): P1 slab exists True, P2 sum rule True, P3 forced False, P4 mod 3 True, P5 one light charge, pi light = FREEZE's own pinned node True -> FAIL at P3 only: Ls parity and the bond pattern choose the far copy
+elapsed 8.0s, peak RSS 65 MB
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

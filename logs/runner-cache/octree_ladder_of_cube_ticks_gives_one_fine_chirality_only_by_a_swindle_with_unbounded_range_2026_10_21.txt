@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/octree_ladder_of_cube_ticks_gives_one_fine_chirality_only_by_a_swindle_with_unbounded_range_2026_10_21.py
+runner_sha256: f58acd25eb562382257dfce0839e0cea224d604655d3f600277dc69aeb5f8ea9
+input_fingerprint_sha256: e505c83373c209a83eebbd74c711dfae94e894f84b7c548203ffc810bb63c983
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 19.96
+status: ok
+----- stdout -----
+== A. CL-2 tick (st = 0.04): light algebra, fifth matrix, Wilson term, copies
+[PASS] A1 THEOREM light algebra a_i, mass -W, g5 = i a1a2a3; G4 = i W g5 anticommutes with a_i and W (fifth matrix); X = (W + iG4)/2 = W(1-g5)/2: X^2 = 0, XX+ = P+, X+X = P- | errors 2e-09, 2e-09, 3e-10; v = sin(st)/sqrt3 = 0.02309
+[PASS] A2 the tick's K^2 term is chirality-odd: (K^2/6) W, an isotropic Wilson mass, plus a copy-mixing quadrupole zero along (1,1,1) | W coefficient 0.1665, spread 8e-08
+[PASS] A3 the copy projector commutes with W, a_i, g5; CL-2's copy mass is the Dirac mass -M P1 W on copy 1
+== B. the ladder: rung-j cells tick at the fine rate; each cell exchanges with the same corner of its 8 children via X
+[PASS] B1 THEOREM real space (576 modes) = momentum tree; H5 = T + T+, T an isometry (j+1,P-) -> (j,P+): H5^3 = H5, ker H5 = 8 per rung-0 cell for every R | spectra 2e-15; ker 512 (R=1), 512 (R=2) = 8 x 64
+[PASS] B2 THEOREM self-similarity: the ladder above rung 1 is the ladder on a lattice twice as coarse | max |H(R)[rungs>=1] - H(R-1)| = 0e+00 (R = 2, 3)
+== C. chirality on the fine lattice vs number of rungs R (kap = 0.5, copy mass M = st)
+[PASS] C1 Berry flux (rung 0, top): (+2,-2) without the copy mass; with it (+1,-1) for R = 1, 2, +1 on rung 0 for R = 3, and (+1,-1) for the discrete-time ladder | M=0 (2.0, -2.0); R=1 (1.0, -1.0); R=2 (1.0, -1.0); R=3 +1.0; Floquet (1.0, -1.0)
+[PASS] C2 bulk gap ~0.4 st for every R; no state below 0.25 st on a middle rung (16 random Q); at fixed momentum the mirror's energy is 2^R times the boundary's, so it leaves the light window | bulk gap 0.416, 0.389; middle-rung weight 1.6e-03; mirror/boundary energy 1.99 (R=1), 3.94 (R=2), above the gap (R=3)
+== D. where the mirror goes, and how fast it decouples
+[PASS] D1 at |q_R| = 0.5 the rung-0 Weyl state's top weight ~ (q_R^2/6kap)^2R 4^-R(R+1); the mirror's weight on the light rung-0 node falls as fast, its off-shell weight more slowly | 3.2e-04, 7.8e-09, 1.3e-14 (pred 4.3e-04, 1.2e-08, 2.0e-14); mirror: 1e-02, 1e-05, 5e-08; all rung 0 1e-02, 2e-05, 6e-06
+[PASS] D2 THEOREM at zero momentum the light chain decouples; with mu = 0 boundary and mirror are exact zero modes for every R; a species mass mu leaves a residual mass falling by mu/(kap st) per rung | |E| (mu=0, R=1,4,16) < 4e-11; mu = 0.2 st: m_res(R=2..8) 2.7e-02 .. 1.1e-04, ratio 0.3995
+[PASS] D3 DIAGNOSTIC at the causal (zoom) rate 2^-j the mirror stays light on the coarse rungs; only the fine rate removes it | |E| < 0.1 weight by rung: zoom [2.0, 0.01, 0.68, 3.31], fine [2.0, 0.0, 0.0, 0.0]
+== E. infinitely many rungs
+[PASS] E1 THEOREM |H5| = 1 and exp(-i tau H5) = 1 - i sin(tau) H5 + (cos tau - 1) H5^2: with block-unitary rung ticks the ladder is unitary for any number of rungs, infinitely many included (a quasi-free automorphism)
+[PASS] E2 THEOREM (swindle) three cell-child swap layers = Shift_j x Shift_j+1^-1; the depth-6 circuit is Shift_0 (+) 1 (no mirror on any finite rung); stopped at rung 2 (bounded range) Shift_2^-1 returns on the cut rung | shifts by rung [4095, 0, 0, 0]..; stopped [4095, 0, 1, 0]
+[PASS] E3 DIAGNOSTIC real space (st = 0.3, R = 3, 32^3 sites): support grows 4 sites per tick against the rung-0 cone's 2; probability lands beyond that cone, much less from a smooth source | one cell 8e-08, 3e-08, 5e-08; bump 0e+00, 1e-10, 4e-13
+== F. against measurement (estimates; a = sqrt(8 pi) l_P, E_a = 2.435e18 GeV)
+[PASS] F1 rung-1 admixture of the Weyl state = (q^2/6kap)^2 (q = 2ka), isotropic; its band is slower than the bare band by q^2/(72 v^2): dv/v = -(ka)^2/2 | adm/q^4 0.1106-0.1108 (1/9); shift/q^2 -0.0416--0.0415 (-0.0417)
+[PASS] F2 ESTIMATE 1.4 PeV: admixture 2e-49, dv/v = -1.7e-25 (no vacuum Cherenkov); E_QG,2 = 3.4e+18 GeV vs GRB 221009A > 7.3e11, PeV-photon decay > ~1e16; a bare-band photon decays to e+e- above 71 PeV (untested)
+[PASS] F3 ESTIMATE the slab mirror moves at 2^R v with density 8^-R: a thermal mirror adds dN_eff < 0.02 for R >= 2; none if unbounded
+== G. large-scale index of natural starts (T3 premise: strict cone, broken here)
+[PASS] G1 ladder sea, 40^3 sites: rung-0 density has a white floor (rung-0 number trades with rung 1): index -> 0; all-rung density (N exact): index 2; a white start stays white (rho ~ 1 invariant): 0 | rung 0: 1.15, floor 2.4e-03; all: 1.92; 0.965 is 230/246 sigma from 0/2
+   counting: a rung-j cell is shared by 8^j sites, so tree-carried correlations give at most |p|^3 (|p|^1 in 1D)
+== H. charges and content
+[PASS] H1 the commutant of the ladder blocks is the identity: N is the one exact charge, and the rung-0 lattice carries one light Weyl field of one handedness, so N has sum q^3 = 1 (anomalous) | commutant dim 1
+[PASS] H2 ESTIMATE a link on N would drain rung-0 charge at 6e+34 m^-3 s^-1 in 1 MV/m parallel to 1 T: excluded by vector-like QED; a link needs a wall orientation tied to an exact charge (none supplied)
+[PASS] H3 generations: the rung-0 count is the bulk invariant, 1 (2 without copy mass), never 3
+supplied: octree sites, split, fine rate, X = W(1-g5)/2 (dimerized), kap = 0.5, M = st > kap st, st; measured inputs; cited GNVW.
+elapsed_seconds 19.4
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

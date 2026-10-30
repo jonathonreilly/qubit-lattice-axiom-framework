@@ -889,11 +889,11 @@ def run_check(
         )
         if graph_check.get("missing_from_index"):
             message = f"citation-graph manifest missing from the index; {remedy}"
-            (failures if enforce_links else warnings).append(message)
+            (failures if enforce_links or enforce_topology_ack else warnings).append(message)
             graph_delta_note = "manifest-missing"
         elif graph_check.get("unparseable"):
             message = f"citation-graph manifest in the index is not valid JSON; {remedy}"
-            (failures if enforce_links else warnings).append(message)
+            (failures if enforce_links or enforce_topology_ack else warnings).append(message)
             graph_delta_note = "manifest-unparseable"
         elif graph_check.get("delta") is not None:
             message = (

@@ -445,7 +445,8 @@ Audit-verdict application boundary).
   stage explicit paths only; shipping them is a defect, and a source repair's
   hash drift on a previously audited row is resolved by re-audit, never by
   committing ledger churn.
-- A landing set carries no generated artifact.
+- New landing sets carry no generated artifact. Older PRs that already carry
+  the citation-graph manifest use the regeneration exception in section 8.
 - If the branch introduces retained-grade `claim_type` rows, say so plainly in
   the PR body as work for the independent audit worker — that is a referral, not
   a verdict.

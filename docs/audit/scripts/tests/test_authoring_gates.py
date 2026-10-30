@@ -29,7 +29,7 @@ def _graph(nodes):
 class TopologyAcknowledgmentGateTest(unittest.TestCase):
     """A delta warns on ordinary runs and fails only when enforcement is asked for."""
 
-    def _check(self, graph_check, **kwargs):
+    def _check(self, graph_check, enforce_links=True, **kwargs):
         snapshot = {
             "ledger": {"shard_parse_errors": [], "duplicate_claim_ids": [],
                        "shard_count": 1, "retained_grade_total": 0},
@@ -45,7 +45,7 @@ class TopologyAcknowledgmentGateTest(unittest.TestCase):
                 mock.patch.object(repo_invariants_check, "collect_graph_manifest_check", return_value=graph_check), \
                 mock.patch.object(repo_invariants_check, "_format_graph_delta", return_value="delta"), \
                 contextlib.redirect_stdout(output):
-            return repo_invariants_check.run_check(True, **kwargs), output.getvalue()
+            return repo_invariants_check.run_check(enforce_links, **kwargs), output.getvalue()
 
     def test_delta_warns_by_default(self):
         rc, output = self._check({"missing_from_index": False, "delta": {"added": ["n"]}})
@@ -61,6 +61,19 @@ class TopologyAcknowledgmentGateTest(unittest.TestCase):
     def test_missing_manifest_still_fails(self):
         rc, _ = self._check({"missing_from_index": True, "delta": None})
         self.assertEqual(rc, 1)
+
+
+    def test_topology_enforcement_rejects_unusable_manifest_without_link_flag(self):
+        for graph_check in (
+            {"missing_from_index": True, "delta": None},
+            {"missing_from_index": False, "unparseable": True, "delta": None},
+        ):
+            with self.subTest(graph_check=graph_check):
+                rc, output = self._check(graph_check, enforce_links=False,
+                                         enforce_topology_ack=True)
+                self.assertEqual(rc, 1)
+                self.assertIn("FAIL: citation-graph manifest", output)
+
 
 
 class ComputeManifestTest(unittest.TestCase):

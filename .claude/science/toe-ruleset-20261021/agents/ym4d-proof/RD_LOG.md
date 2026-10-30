@@ -2,21 +2,196 @@
 
 ## Current checkpoint
 
-Target: identify and control the complete returned denominator for one Decision-4 soft-kernel RG step, with original complex sources, actual references, nested holes and failed returns. Full uniform Theorem RD is the research target, not an assumed premise.
+Task: execute AUTHOR_BRIEF_RD2. Primary target B1 is the exact actual
+effective-history denominator identity; B2/B3 are secondary estimates and
+induction closure if reachable. Finite SU(N) soft-kernel chains, arbitrary
+finite depth, fixed original sources and explicitly recorded histories are
+the domain. No desired theorem is assumed true.
 
-Working revision: `9658cc870d82401001e56b29f351aec5f5f58fa1` on `claude/ym4d-rd`. Local `origin/main`: `ca2bc7ddf64790da96cd43d42017d000fbfe4808`. Initial status: only the supplied `briefs_rd/` was untracked. No existing RD files.
+Working revision: `295b508bea2c65bf548172f3190e32f7f7eaf6cf` on
+`claude/ym4d-rd`; observed local `origin/main`:
+`01589af3faf806b736c42dc2f3bd625e9edead9f`. The initial untracked files
+were the supplied RD2 author/reviewer briefs. Planning fetch again failed
+at the shared FETCH_HEAD (exit 255, Operation not permitted). Existing
+`origin/ai/execution:AGENTS.md` was read; no remote freshness is claimed.
+The 3,300-file initial inventory is `checks/rd2_source_inventory.json`.
+It binds all pre-existing working-folder bytes, including the previous RD
+and log; git HEAD supplies their recovery copies. The earlier log entries
+below are historical records, not current review dispositions.
 
-Planning fetch attempted: `git fetch origin ai/execution --quiet`; exit 255, cannot open common worktree FETCH_HEAD (Operation not permitted). Read existing `origin/ai/execution:AGENTS.md`; remote freshness is unverified. No Git mutation succeeded or is required for this no-commit task.
+The bounded brief/PROCESS_LIGHT override generic campaign, packet, lock,
+branch, PR and commit procedures. Only RD.md, RD_LOG.md and checks/rd2_*
+may change. No numerical experiment is planned or run; no numerical lock
+is needed for written proofs and deterministic hashes. No axiom, audit,
+ledger, consumer or editable prompt changes are authorized or made.
 
-Instructions: bounded author brief and PROCESS_LIGHT take priority over generic campaign/PR/packet instructions. Use this file as the single checkpoint. Only RD.md and RD_LOG.md are intended outputs. No audit, ledger, axiom or editable prompt changes. No numerical check planned; arithmetic proofs and file hashing are not numerical physics runs.
+Current construction: (R1)–(R14) give the exact chain density, explicit H12
+history iteration, joint frozen quotient, positive bare replacement
+reference, complete history/failure Fubini identity, and a finite connected
+product-Haar expansion. (R15)–(R17) prove a hard-event expansion with an
+integrated L1 majorant. The full uniform Theorem RD remains OPEN.
+Fresh hostile review is complete: **B1 RESOLVED for the explicit finite
+H12 construction; B2 PARTIAL; B3 PARTIAL; VERDICT: HOLD for the theorem
+as consumed.** This does not certify the legacy sigma-history match or
+CX-R's Gaussian (ID). The report is `checks/rd2_review.md`; the final RD
+hash is `a60232a648e9832d0223cc0fa06ef84d8dbfe54fa91f875a8c96c3f89140aba5`.
+No material algebraic correction was requested after the action/insertion
+allocation clarification. Prior LAND of the old research note is not
+the current theorem disposition.
 
-Physics-loop and physics-claim-reviewer procedures inspected at the local source revision. The final substantive note requires a fresh hostile reviewer, with same-family provenance disclosed. This is not formal audit or a landing action.
+Open obligations: actual-model adapted-reference interaction/prefactor
+budgets; joint failure masses under that reference; common zero-free
+domain and positive history reference control; integrated reference
+comparison; full source norm through holes; quantitative effective-level
+induction. FR/KR/TC retain their exact requested forms in RD §7. The
+current HANDOFF has scoped reviews of predecessor inputs and active
+selected-core/graded-complement work; their estimates are not silently
+imported. Next decision: select the actual consumer history convention,
+retain this exact integration target, and obtain matched adapted-reference
+interaction/failure budgets. Do not consume the finite identity as a
+Gaussian identity or uniform analytic theorem. No follow-on coordinator
+lane has been launched. All authorized files are left uncommitted.
 
-Source search found already constructed exact level-zero Haar and fixed-reference identities. The claimed novelty is not those identities or CX-R. The current investigation is their complete denominator interface, preserving the final sea/failure integral and reference factors. No claim of exhaustive repository or literature novelty.
+Physics-loop and physics-claim-reviewer procedures are used at the local
+repository snapshot, with matching observed-main bytes. PROCESS_LIGHT
+explicitly requires a fresh hostile reviewer. This author task does not
+authorize a landing or audit. Review output is kept under checks/rd2_*
+rather than the companion review brief's otherwise-forbidden output path.
 
-Current: RD.md is complete as an honestly scoped author research note and has received fresh hostile review with no binding fixes. Reviewer disposition: LAND for the note, not closure of the requested theorem. The full uniform RD target remains OPEN. The complete review is preserved below. All 14 original input hashes and HEAD were rechecked after review and remain unchanged. Next scientific decision: construct and bound the actual interacting sea/local failure representation without changing its reference or source domain. Delivery: RD.md and this log only, left uncommitted.
+## Pass 2 author record — 2026-10-29
 
-## Initial source identities
+The previous REVIEW_RD binding list is B1–B3. The author read RD and the
+existing log/review, the RD2 briefs, PROCESS_LIGHT, LIB1, the literal
+CX-R full-factor consumer, STEP55 §5.1–5.4/S9, CODEX_REVIEW_STEP R11/item 6,
+and HANDOFF's current assignments. Primary producer reads: LARGE55's
+effective-density definition, §6.1–6.3 and COL; RLARGE Appendix A §3;
+SOURCE_LOCAL_HISTORY_RETURN H1–H14. These locate the exact original
+measure and the missing effective-level extension. The working source
+identities are in the complete initial inventory, not the older table below.
+
+New work, edited in place:
+
+- (R1)–(R4): opened the exact density recursion into a joint Haar integral
+  and specified a deterministic multilevel H12 history partition, with
+  holes determined by recorded failures and every field still retained.
+  An alternative sigma/history prescription must supply its own indicator;
+  no equality with an unspecified older prescription is claimed.
+- (R5)–(R10): defined the actual inherited insertion without taking its
+  logarithm; identified the local/joint frozen N/D and its explicit outer
+  factor; proved the complete effective-step replacement by integrating
+  old good interiors and cancelling only the identical bare reference.
+- (R11): gave the actual factor list and finite connected-support formula
+  after reopening the earlier integrations. This is an exact finite gas,
+  not a small-activity or zero-free theorem.
+- (R12)/(R13): proved reference bounds retaining the actual history-fibre
+  mass, source/terminal-coarse holomorphy on fixed real fibres, and a
+  nonuniform zero-free germ. Complex continuation through a hard selector
+  in its own field argument is expressly excluded.
+- (R14): partitioned chart failures by their first failed test, preserving
+  simultaneous failures once and all optional oriented contour sides.
+- (R15)–(R17): rebuilt hard-cut expansion into connected intersection
+  events and proved a mixed L1/sup majorant. Compatibility is enforced
+  before using disjoint-coordinate probability factorization. Actual
+  joint probabilities and interaction norms are not asserted small.
+- (R18) and §9: matched all full/selected factors to the actual quotient
+  and recorded the exact B2/B3 sub-lemmas. Preserved the full-vs-active
+  norm distinction and inactive term from brief-authorized LIB1.
+
+Written author discrimination check (no numerical run): let two independent
+bare good interiors have centered scalar readers x,y. Give their bad
+replacement measures relative masses n_1,n_2 and means m_1,m_2. For the
+joint inherited factor J=1+λxy, direct joint replacement is
+n_1 n_2(1+λm_1m_2). Multiplying the two separate single-return functions
+and averaging over the centered good sea gives n_1 n_2, missing the linear
+λ term. The joint operator (R7) retains that term. This is an algebraic
+check of the general replacement mechanism, not a new SU(N) estimate.
+For (R15), two overlapping events give exactly
+1−1_E−1_F+1_{E∩F}; the intersection is one connected type. Disjoint
+events instead give two compatible types and product measure supplies
+their joint mass. These checks challenge dropping joint histories or
+allowing overlapping failure types to factor independently.
+
+Route record: reopening the chain and finite component grouping closes
+the finite identity construction; an adapted Gaussian/product reference
+with integrated event weights is a sufficient quantitative route still
+open. Merely assuming a local logarithm of the final integral would be
+target-equivalent and was not used. The direct Haar majorant still grows
+with u; this upper-bound failure is not a no-go for an adapted reference.
+No new physical axiom, observed value or imported analytic theorem is used.
+
+Source/novelty limits: the local-main statement search for returned
+denominators and joint-history/lifted-Haar variants found no matching
+docs result. The same-folder predecessor H8 supplies the bare joint
+replacement, explicitly credited. A first folder search used root-relative
+filenames and failed; it was corrected. This is not an exhaustive novelty
+claim or an open-PR survey. The three official arXiv abstracts for Dimock
+I–III were reopened only for attribution and scalar/d=3 scope; no external
+lemma was consumed. Broad read calls that truncated were retrieval aids;
+the load-bearing passages and the entire changed argument were read in
+smaller untruncated ranges. An initial patch joined two prose lines with
+a stray plus sign; the readback detected and removed it before review.
+
+No numerics, physics runner, symbolic-enumeration script, Lean checker,
+pipeline, audit, commit, PR or remote message was run. This pass uses
+written proofs, deterministic source/document checks and the separately
+recorded fresh review. Resource-intensive FR/KR/TC work remains with the
+coordinator lanes. Editable prompt files changed: none.
+
+## Pass 2 independent review and final checks
+
+Reviewer `/root/rd2_hostile_review` was launched with `fork_turns=none`,
+no model/effort override, and a bounded neutral brief. It is same-family
+Codex/OpenAI, fresh-context review, not blind or cross-family review.
+The task permitted only `checks/rd2_review.md`; no reviewer touched an
+author source or consumer. The reviewer read the complete changed
+argument and necessary premises, checked the finite gas by square-free
+coefficients, checked hard events with three overlapping labels, and
+checked conditional nonvanishing by a vertex-deletion recursion separate
+from RD's logarithmic graph proof. Shared mathematical sources remain a
+limit on independence; the review is not an audit or formal verification.
+
+During review the author clarified §4's exact action/insertion allocation
+to prevent possible inherited-factor double counting: using
+S_eff=−log w keeps all J in the insertion; moving an inherited factor
+into S_eff removes it from the insertion. The reviewer checked the full
+affected chart argument and verified that reversing this clarification
+alone restores the first frozen RD hash
+`87643a9fc25f72e1146de70ce40161c26f7e7fae65504454d293ec223865733d`.
+The final reviewed RD hash is the checkpoint's `a60232a6…`.
+
+The complete report, read in full by the author, is
+[checks/rd2_review.md](checks/rd2_review.md), SHA256
+`4c9eaecbee19dcdb07634dde15c43e3b68824bf00b2df4ed9050bab57b693ed2`.
+Its binding scientific work is preserved in RD §9: literal legacy-history
+and Gaussian/full-complement matching; uniform reference/domain/activity
+budgets; reference comparison after integration and history sum; full
+hole norms and quantitative induction. No wording change or prior review
+verdict is used to waive these obligations. B1 is resolved only at the
+brief's finite-construction scope. The full result's verdict is **HOLD**.
+
+Author checks: `git diff --check` produced no diagnostics. All local
+Markdown links, table column counts, fences and equation declarations
+were checked. The equation-tag parser initially counted prose references,
+then missed label-only lines; direct inspection and the corrected parser
+confirmed all 18 declarations exactly once. These were document-parser
+false alarms, not numerical/mathematical test outcomes. A historical
+PROOF line offset had shifted; the actual S4′ path definitions and
+two-block locality proof were relocated and read at the current source.
+A final log patch initially failed to match a wrapped context line;
+inspection showed no partial edit, and the corrected patch succeeded.
+
+`checks/rd2_author_validation.json` records the pre-final-log document and
+scope checks. `checks/rd2_final_validation.json` records the final hashes,
+scope and unchanged-source inventory comparison. The current checkpoint
+and this review receipt were updated **after** the reviewer froze the
+author log at `35c008ee…`; those bookkeeping additions do not change RD's
+reviewed mathematics. Only RD.md and RD_LOG.md changed among the original
+3,300 working-folder files; all additions are checks/rd2_* artifacts.
+No numerical criteria file or runner exists because no numerical check
+was run. No commit, prompt edit, audit/ledger change or public delivery
+was made.
+
+## Pass 1 source identities (historical)
 
 | Path relative to this folder | SHA256 |
 |---|---|

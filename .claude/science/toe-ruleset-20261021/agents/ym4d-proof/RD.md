@@ -1,14 +1,16 @@
 # RD — the actual returned denominator and a complete-factor completion criterion
 
 **Theorem RD at the requested history/scale/volume-uniform scope: OPEN.**
-This note proves the bare denominator identification, explicit positive
-reference bounds, a finite-region complex-source estimate, and a conditional
-cluster theorem that retains local failed-return insertions. It does not
-identify the full history-dependent Haar integral with that theorem's product
-reference representation. In particular, it does not turn the confirmed CX-R
-implication into an actual all-history RG step.
+Pass 2 constructs an exact effective-density return, with an explicit
+history recursion, a joint replacement operator, and a finite connected
+expansion of its actual denominator (§3.1–§3.6). Earlier integrations are
+opened back into their original Haar variables; inherited terms are not
+replaced by a Wilson action. Every failed return and every real chart
+complement remains in the identity. This is an exact finite expansion,
+not a convergent small-activity logarithm. The common zero-free domain,
+uniform norm estimates and quantitative RG induction remain OPEN.
 
-Author source: `9658cc870d82401001e56b29f351aec5f5f58fa1`.
+Pass-2 author source: `295b508bea2c65bf548172f3190e32f7f7eaf6cf`.
 [RD_LOG.md](RD_LOG.md) records source hashes, reads, review and recovery state.
 No commits, audit verdicts, ledger changes or axiom changes belong to this lane.
 PROVEN below means an ordinary mathematical proof at the displayed scope;
@@ -34,9 +36,9 @@ the Decision-4 kernel parameter κu stays real and fixed. Real exterior fine
 links and real coarse V are parameters. An extension to complex V is a
 separate requirement of STEP55 and is not implied by ε-holomorphy.
 
-**OPEN — target statement.** For every admissible one-step return region Y,
-history h, and fixed hole/collar geometry, identify the actual quotient
-denominator D_{k,h,Y}(z) and its reference. On a common product domain in the
+**OPEN — target estimate.** For every admissible one-step return region Y,
+history h, and fixed hole/collar geometry, use the denominator D_{k,h,Y}
+constructed in (R6), with the reference in (R9). On a common product domain in the
 original sources (and the coarse fields where the consumer requires them),
 prove
 
@@ -50,10 +52,11 @@ determinant, cut and reference factors must be displayed and bounded
 separately. Zero-mass history **numerators** must not be used as references.
 
 The requested conclusion includes the actual effective density at level k,
-its inherited interactions and every failed-return contribution. Replacing
-it by the bare Wilson action, an empty history, a single chart or a pointwise
-successful gas changes the theorem. The explicit bare realization and the
-completion criterion below keep these distinctions.
+its inherited interactions and every failed-return contribution. Section 3
+now supplies an exact identity for these objects. Its finite expansion has
+no smallness guarantee. The coarse history convention is fixed explicitly
+there; a different supplied joint history is retained as a joint insertion,
+not identified with this convention without checking its indicator.
 
 For μ≥0 write
 
@@ -243,6 +246,338 @@ particular the **complete** current unresolved expression is
 The sum and expectation remain outside the exponent. Replacing (12) by one
 of its pointwise exponential factors would change the denominator.
 
+### 3.1 The effective density and a specified legal history family
+
+**PROVEN — exact construction at every finite depth.** Let E_j be the
+level-j link set and Γ_j its L-block graph. Fix a finite chain of such
+lattices, the positive numbers u_j, and the Decision-4 kernels K_j with
+t_j=κu_j. No assertion about a running-coupling flow is needed for this
+identity. Only the original level-zero Wilson coefficients have sources:
+
+    ρ_0^ε(U_0)=exp{−u_0 Σ_{p∈P_0}(1+ε_p)s(U_{0,p})},
+    ρ_{j+1}^ε(U_{j+1})=∫ρ_j^ε(U_j)K_j(U_{j+1},U_j)dU_j.     (R1)
+
+Here dU_j is normalized product Haar. Thus (R1) is exactly LARGE55's
+effective-density recursion, with its original sources retained. It is
+unnormalized: no vacuum factor or partition function has been divided out.
+
+To remove an ambiguity left by the earlier effective-level statements,
+fix the following *explicit* iteration of H11–H13. Fix cut thresholds
+ε_cut,j, completion thresholds ε_loc,j and integer size thresholds n_j.
+These are construction parameters; their useful quantitative values are
+not supplied here. Set H_0=∅. A history h through stage j−1 determines
+H_j and the active blocks A_j=Γ_j\H_j. Form the bad set
+B_j={Q∈A_j:χ_{j,Q}(U_j)=0}, with exactly the interior-plaquette cut of
+(2). Form its G₂-components Y. Evaluate the actual completion minimum
+e_flat,j on N₁(Y), using the frozen U_j links outside I_j(Y), the straight
+anchor paths and U_{j+1} on C_j(Y), as in H11. Set
+
+    a_j(Y)=1{|Y|≤n_j}1{e_flat,j≤ε_loc,j},
+    F_j={Y component of B_j:a_j(Y)=0},
+    H_{j+1}=N₁(π_j(H_j ∪ ⋃_{Y∈F_j}Y)).                      (R2)
+
+π_j maps block labels to their containing next-level block; N₁ is the
+periodic sup-distance collar, intersected with the graph for a box. This
+recursion fixes masks from the *recorded* F_j before the next integration.
+No cut is imposed on H_j. The masks label holes; their fields are still
+integrated or explicitly frozen as boundary variables. We do not use COL
+to integrate them to 1 in the presence of readers.
+
+Legal histories are all finite records h=(F_0,…,F_{k−1}) allowed by this
+finite decision tree, including records with zero measure. One completely
+explicit formula for its transition indicator is
+
+    I_{j,F|h}(U_j,U_{j+1})
+      = Σ_{B⊆A_j: F⊆C₂(B)}
+          [Π_{Q∈B}ζ_{j,Q} Π_{Q∈A_j\B}χ_{j,Q}]
+          [Π_{Y∈F}(1−a_j(Y)) Π_{Y∈C₂(B)\F}a_j(Y)],
+    Ξ_h(U_0,…,U_k)=Π_{j<k}I_{j,F_j|h_{<j}}.                 (R3)
+
+The tests use real fields, are measurable, and do not depend on ε. At a
+fixed pair of fields exactly one B term and exactly one F survive. Hence
+Σ_F I_{j,F|h}=1, even on cut boundaries (equality belongs to ζ for χ's
+strict cut, and to success for the completion's weak inequality).
+Compatibility and the “no other failures” condition are both enforced by
+(R3). Failure reasons are size or completion failure; any additional
+selected-chart failure is a further partition in §3.6, never a deletion.
+
+This is a concrete history convention for an exact Decision-4 step, not a
+claim that RLARGE's sample-wise σ^J or every earlier unspecified history
+rule equals H12. For another specified finite hard history, the identities
+below use its actual joint indicator in place of Ξ_h. Its match to (R3)
+must be checked before identifying individual history summands. The sum
+over histories in either partition is the same density (R1).
+
+Define, rather than assume an effective-action ansatz,
+
+    ρ_{k,h}^ε(U_k)=∫[Π_{j<k}dU_j] Ξ_h ρ_0^ε(U_0)
+                                      Π_{j<k}K_j(U_{j+1},U_j). (R4)
+
+Then Σ_hρ_{k,h}^ε=ρ_k^ε, and
+ρ_{k+1,(h,F)}^ε=∫ρ_{k,h}^ε(U_k)K_k(V,U_k)I_{k,F|h}(U_k,V)dU_k.
+Proof: substitute (R4), append the last indicator and kernel, and apply
+Fubini. Summing the partition (R3) recovers (R1). Finite Haar domains,
+bounded selectors and bounded kernels justify Fubini on every compact
+source set. This proves the algebraic induction for every finite k;
+it does not prove LARGE55 (R_m)'s estimates. It also shows exactly where
+past failed returns survive: in Ξ_h and its still-integrated chain fields.
+
+### 3.2 The actual local and joint quotient denominators
+
+**PROVEN — matching with an explicit normalization convention.** Define
+the bare bookkeeping factor b_k^ε and the entire inherited insertion J by
+
+    b_0^ε=ρ_0^ε,                 b_k^ε=exp(−u_kΣ_p s(U_{k,p})) (k>0),
+    J_{k,h}^ε=ρ_{k,h}^ε/b_k^ε.                               (R5)
+
+At k=0 the only h is empty and J=1. At k>0 this equation introduces no
+Wilson approximation: b_k^ε J_{k,h}^ε is the actual density (R4).
+No logarithm of J is taken. Its zeros, inherited interactions, vacuum
+terms, determinants from any earlier exact computation, and joint history
+dependence remain in J. If a previously computed representation for ρ
+is substituted, it replaces (R4); it is never multiplied by (R4) again.
+
+For B⊆A_k let P_k(B), C_k(B), I_k(B) be exactly (2)'s reader sets. Freeze
+η=U_k|_{E_k\I_k(B)} and V=U_{k+1}. Write
+
+    w_{k,B}^ε=b_{k,P_k(B)}^ε Π_{c∈C_k(B)}k_{t_k}(V_c;M_c(U_k)),
+    O_{k,B}^ε=b_{k,P_k\P_k(B)}^ε Π_{c∉C_k(B)}k_{t_k}(V_c;M_c(U_k)),
+    D_{k,h,B}^ε=∫χ_B w_{k,B}^ε J_{k,h}^ε dU_{k,I_k(B)},
+    N_{k,h,B}^ε[Ξ]=∫ζ_B w_{k,B}^ε J_{k,h}^ε Ξ dU_{k,I_k(B)}. (R6)
+
+Here b_{k,P} denotes the plaquette factors of b_k indexed by P. The full
+frozen datum is **all η**, not merely N₁(B): J can read arbitrarily far
+outside the bare collar. The bare w reads only N₁(B), and each completion
+test uses that collar, but no locality of J has been assumed. Holes and
+collars are frozen in these local integrals. All lower-level fields in
+(R4) remain integrated. Additional joint insertions depending on those
+fields go inside (R4) before doing (R6), not at their averaged values.
+
+The full conditional integrand is O_{k,B}^ε w_{k,B}^ε J_{k,h}^ε. O is
+independent of the integrated current links: every Wilson and S4′ reader
+of such a link was included in P_k(B),C_k(B). Thus the quotient of its
+bad and good integrals is exactly N/D wherever D≠0; its full denominator
+is O D. Our convention keeps even the occasional independent kernel in
+C(B) in both integrals, as (2) does. At k=0 (R6) is precisely (2), not
+just a proportional integral. This states every factor by which one
+denominator convention differs from the other.
+
+For several separated bad components B=⋃Y, w_{k,B}^ε=Π_Yw_{k,Y}^ε,
+but J is still a **single joint insertion**. Consequently D_{k,h,B}
+need not equal Π_YD_{k,h,Y}. Neither a product of individual ratios nor a
+success-only gas is an identity for an inherited interacting density.
+The joint version of (R6) is used when more than one interior is replaced.
+
+### 3.3 Exact replacement of the complete effective-density step
+
+**PROVEN — no history probability is inverted.** Let w_k^0=b_k^0K_k
+and use cuts only on the fixed active set A=A_k(h). Define
+
+    C_{k,Y}(η,V)=∫χ_Y w_{k,Y}^0 dU_{I(Y)}>0,
+    Z_{k,A}^{cut,0}(V)=∫χ_A w_k^0dU_k>0,
+    dν_{k,A}^{cut,0}=χ_A w_k^0dU_k/Z_{k,A}^{cut,0},
+    L_{k,h}^ε=ρ_{k,h}^ε/b_k^0,
+    (R_{k,B}L)(U_k,V)
+      =[Π_{Y∈C₂(B)}C_{k,Y}]⁻¹
+         ∫ζ_B(Uhat) [Π_{Y∈C₂(B)}w_{k,Y}^0(Uhat;η,V)]
+                  L(Uhat_{I(B)},U_{outside I(B)},V)dUhat_{I(B)}. (R7)
+
+R_{k,∅}L=L. The same cap proof as (3)/(10) bounds the displayed bare
+references, with u=u_k, |Y| as shown there, and the actual global counts
+for Z. These references contain no inherited indicator. The notation L
+may include a current selector or an additional joint insertion; when it
+does, retain every lower-level argument inside its original joint integral.
+
+For each h and each current failure record F, the complete identity is
+
+    ρ_{k+1,(h,F)}^ε(V)/Z_{k,A}^{cut,0}(V)
+       =E_{ν_{k,A}^{cut,0}} Σ_{B⊆A}
+                 R_{k,B}[L_{k,h}^ε I_{k,F|h}],
+    ρ_{k+1}^ε(V)=Σ_h Z_{k,A_k(h)}^{cut,0}(V)
+                   E_{ν_{k,A_k(h)}^{cut,0}} Σ_{B⊆A_k(h)}R_{k,B}L_{k,h}^ε.
+                                                                  (R8)
+
+Proof: fix B, expand χ/ζ on A, and factor w_k^0 into its B readers and
+its remaining factors. No remaining factor reads I(B). G₂ separation
+makes the C_{k,Y} product the good-interior integral of those readers.
+The expression R_{k,B}L no longer depends on the old sea coordinates in
+I(B). Their integration against χ_Aw_k^0 therefore produces exactly
+Π_YC_{k,Y}, cancelling (R7)'s denominator. The new Uhat integrals give
+the original B-bad term with its **joint** inherited density and current
+selector. Sum B, then F and h, using (R3)/(R4). This is an actual Fubini
+calculation on the effective step, without a clustering assumption. ∎
+
+All zero-mass histories remain zero summands. The real reference in (R7)
+is not being equated to D_{k,h,B}. Where the latter is nonzero,
+
+    N_{k,h,B}^ε/(Π_YC_{k,Y})
+      =[D_{k,h,B}^ε/(Π_YC_{k,Y})] [N_{k,h,B}^ε/D_{k,h,B}^ε].
+
+For k=0, L=e^{−δS}; extracting its unchanged exterior source factor from
+R_B reproduces both compensators in (8)/(9). At higher levels it stays
+joint. Equations (R7)/(R8) cannot license dropping D/(ΠC) when studying
+STEP55's quotient. The sum over all F is performed in (R8); no f_Y or
+sea expectation is replaced by a successful exponential.
+
+For the target reference take
+
+    N^{ref}_{k,h,B}=D_{k,h,B}^0(η,Vbar)                       (R9)
+
+at fixed real η,Vbar **only when it is positive**. The admissible real
+fibres and its precise finite bounds are specified in §3.5. The positive
+C references make (R8) meaningful even on excluded zero-reference fibres;
+they do not prove that (R9) is nonzero there.
+
+### 3.4 A constructed product-Haar connected identity for this denominator
+
+**PROVEN — finite identity, with no input of the form (17).** Open (R4)
+inside (R6). Let μ be normalized product Haar in the variables
+
+    x=(U_0,…,U_{k−1}, U_k|_{I_k(B)}),
+    W_k^ε=ρ_0^ε(U_0) Π_{j=0}^k K_j(U_{j+1},U_j),
+    D_{k,h,B}^ε=(O_{k,B}^ε)⁻¹ E_μ[χ_B Ξ_h W_k^ε].          (R10)
+
+For k=0 the first list is empty except for U_0|_{I(B)}. Frozen η and V
+are parameters. Every earlier normalizer N_{t_j}(M) is still in W.
+In particular this is the original chain, not an assumed interacting
+effective action or a single-background integral.
+
+Here is a finite algorithm producing its connected coefficients. Assign
+each free link coordinate and each original external/source coordinate
+to a fixed containing current block (choose the lexicographically first
+one when necessary). Group free coordinates by owner v, so μ=⊗_vμ_v.
+Include all blocks physically touched by a reader, not merely its chosen
+owner. For every factor choose a deterministic connected hull of these
+blocks in Γ_k; never contract an inactive component. Frozen vertices may
+carry point-mass measures. Disconnected reader sets are connected by the
+first spanning-tree connector in a fixed finite ordering. Such connectors
+are bookkeeping, not decay estimates.
+
+Use the following actual finite factor list:
+
+* e^{−u_0(1+ε_p)s(U_{0,p})}, one per original plaquette;
+* k_{t_j}(U_{j+1,c};M_c(U_j)), one per j≤k and coarse link c;
+* χ_{k,Q}, one per Q∈B;
+* I_{j,F_j|h_{<j}}, one per j<k, with the explicit finite formula (R3).
+
+For an additional joint history, include its actual indicator as an
+additional factor with its full read support. Factors that are constant
+in the free coordinates still retain their external/source supports.
+A purely numerical factor can be assigned any fixed vertex. Empty
+lattices/integrations use the scalar formula directly. Set b_i=F_i−1
+and denote the nonempty connected support of F_i by S_i. For each
+nonempty connected *set of distinct factor labels* C in the overlap graph
+(i∼j iff S_i∩S_j≠∅), define
+
+    w_{k,h,B}(X)=Σ_{C connected: ⋃_{i∈C}S_i=X}
+                         ∫Π_{i∈C} b_i dμ_X,
+    D_{k,h,B}^ε=(O_{k,B}^ε)⁻¹
+          Σ_{G a family of disjoint nonempty X} Π_{X∈G}w_{k,h,B}(X).
+                                                                  (R11)
+
+The empty G contributes 1. Every sum in (R11) is finite. To prove it,
+expand Π_iF_i=Σ_{C⊆labels}Π_{i∈C}b_i. Split each selected set into the
+connected components of its support-overlap graph. Distinct components
+read disjoint free coordinates, so their integrals factor under μ.
+Conversely a disjoint collection of such components uniquely determines
+the selected set. Group by support X. This proves (R11), including all
+signs, multiplicities and overlapping-history correlations. It applies
+to the actual numerator by replacing χ_Q with ζ_Q and retaining its
+additional insertion. It applies to each summand of (R8) as well. ∎
+
+This gives a product-reference identity and explicit connected activities
+for the entire denominator, without assuming an exponential or taking a
+logarithm. All original source labels survive. A history indicator may
+have graph-wide support: (R11) charges that support in full. Its atoms
+and reference may be large, and the finite gas can vanish. Therefore
+(R11) is **not** the smallness hypothesis of CX-R and cannot be used as
+if (19) had already been proved for it. It removes an identity ambiguity;
+it does not remove the needed analytic estimates.
+
+### 3.5 What can actually be bounded on this identity
+
+**PROVEN — finite-depth references and holomorphy.** On real frozen data
+write
+
+    γ_{k,h,B}(η)=E_μ[χ_B Ξ_h],
+    T_k=Σ_{j≤k}t_j|E_{j+1}|,    P_0=number of original plaquettes.
+
+Ξ_h reads U_0,…,U_k, but not the new V=U_{k+1}. Thus γ is independent
+of V. Positivity of the actual elementary factors and (4) give exactly
+
+    γ e^{−2u_0P_0−2T_k}/O_{k,B}^0
+        ≤ D_{k,h,B}^0 ≤ γ e^{2T_k}/O_{k,B}^0.               (R12)
+
+In particular the admissible real fibres for (R9) are precisely γ>0;
+when γ=0 the whole selected integral is identically zero in ε. A legal
+history need not have positive mass on every frozen fibre. Such fibres
+cannot be included in a theorem claiming a nonzero history denominator.
+(R8) still includes them without division. No uniform lower bound on γ
+over the useful history/collar class has been proved here.
+
+For fixed real η and a fixed history label, D is entire in all original
+ε. It is also holomorphic in the *new* coarse V∈SL(N,C)^{E_{k+1}}:
+replace each last kernel numerator by
+
+    exp{−t_k[1−(tr(V_c⁻¹M_c)+tr(M_c*V_c))/(2N)]}.
+
+M_c is a function of real integrated/frozen U_k, so M_c* is fixed when
+V varies. N_{t_k}(M_c)>0 is unchanged; matrix inversion is polynomial
+on SL(N,C). All these factors are bounded uniformly in x on compact
+complex parameter sets, and the hard indicators are independent of these
+parameters. Termwise power-series integration proves holomorphy. O has
+a specified nowhere-zero continuation by the same formula and the
+exponential plaquette factors. This also proves holomorphy of (R11)'s
+coefficients on that domain. It does not continue η or a coarse field
+*through* a hard selector depending on it. In particular the selected
+output ρ_{k+1,(h,F)} need not be holomorphic in V across its own F cuts.
+
+There is an explicit but nonuniform zero-free germ on a positive fibre.
+Set Dhat=O D and V_c=Vbar_c exp Z_c, Z_c∈sl(N,C). Relative to the
+positive probability proportional to χ_B Ξ_h W_k^0 at Vbar,
+
+    Dhat(ε,V)/Dhat(0,Vbar)=E exp H,
+    |H|≤r:=2u_0Σ_p|ε_p|+t_kΣ_c(e^{||Z_c||op}−1).           (R13)
+
+For the last inequality use ||M_c||≤1,
+||e^{±Z_c}−1||≤e^{||Z_c||}−1 and |tr A|≤N||A||. If r<π/2,
+Re E exp H≥e^{−r}cos r>0 and |E exp H|≤e^r. Divide by the explicit
+nonzero O ratio to obtain the bound for D. The half-plane logarithm has
+|Log E exp H|≤2r−log cos r. This proves an actual all-finite-depth germ,
+with every history retained. The source count, top-link count and γ in
+(R12) are visible; none provides the uniform product-domain norm requested
+in B2. Entire integrals may have zeros outside this germ.
+
+### 3.6 Charts and contours: a complete disjoint sector identity
+
+**PROVEN — no selected sector is substituted for the full integral.**
+Fix any ordered finite list Ω_1,…,Ω_m of measurable real chart/white-cut
+tests on the lifted variables of (R10), including tests for earlier
+levels if those coordinates are changed. A test that cannot be evaluated
+outside its prerequisite chart is defined to fail there. Set
+
+    q_0=Π_{i=1}^m1_{Ω_i},
+    q_l=(Π_{i<l}1_{Ω_i})(1−1_{Ω_l})  (1≤l≤m),
+    D_l=O⁻¹ E_μ[q_l χ_B Ξ_h W_k^ε].
+    D=D_0+Σ_{l=1}^m D_l.                                   (R14)
+
+Indeed the first failed test is unique, or all tests pass. This proves
+Σq_l=1 pointwise, including intersections of several failures. Each D_l
+has (R11)'s finite construction with the additional displayed indicator
+factors. Thus all outside-chart and white-cut failures are assigned a
+term, even if their support is the whole graph and no estimate is known.
+For the Haar construction (R10) there is no contour deformation at all.
+
+On a selected real chart the tree/Haar calculation of §4 applies, with
+J from (R5) retained inside the exact pulled-back insertion; any earlier
+field integrations remain inside it. A complex contour change must be
+justified on that sector with its actual insertion and fixed-domain
+continuation. If it is valid and D_0^{new} is its new-contour integral,
+retain the oriented term E_side=D_0−D_0^{new}; then
+D=D_0^{new}+E_side+Σ_lD_l. This is the complete matching identity, not
+a bound or a claim that a nonholomorphic hard history can be deformed.
+The uncharted proof of (R10)/(R11) needs no such deformation hypothesis.
+
 ## 4. All Gaussian, gauge and reference factors, and the exact remainder
 
 **PROVEN at the specified bare real chart — change of variables.** This
@@ -263,9 +598,16 @@ left translation of its differential to the identity sends b to
 ∫₀¹e^{−s ad_a}b ds. Taking its determinant gives the displayed j; Haar
 volume is left invariant and fixes the remaining constant c_N. In the
 chosen small real chart this determinant is positive, with j(0)=1.
-Let S_eff include the actual kernel normalizers and every gauge-invariant
-inherited term if present; a non-invariant insertion remains in the tree
-average. Choose a real symmetric positive definite Q, set
+First fix one exact action/insertion allocation: the actual integrand is
+e^{−S_eff} times its retained insertion and cut. S_eff is smooth and
+invariant under the allowed tree transformations. For (R6) one valid
+choice is S_eff=−log w_{k,B}^ε, with **all** J_{k,h}^ε in the insertion.
+The logarithm of each kernel is its explicit exponent minus log N_t.
+If a smooth inherited factor is instead allocated to S_eff, remove that
+same factor from the insertion. Nothing is counted twice; a zero or
+non-invariant history factor is not logged and remains in the tree
+average. The actual kernel normalizers always occur exactly once.
+Choose a real symmetric positive definite Q, set
 σ²=N/u, C=Q^{−1/2}, and define **without deleting a term**
 
     S_0=S_eff(b),   ell=∂_aS_eff(e^a b)|_0,
@@ -275,7 +617,8 @@ average. Choose a real symmetric positive definite Q, set
 A quadratic mismatch stays in R_Q. ell vanishes only at a critical point
 of the **exact** action. Put a=σCW and take a fixed product Gaussian cut
 χ_p(W) whose entire image lies in the injective chart with j>0. Θ_h retains
-the pulled-back original cut and history insertion. The selected real sector
+the pulled-back original cut and the full remaining insertion, including
+J when using the choice just specified. The selected real sector
 has exactly
 
     D_h^sel = P_h e^{−S_0} det(Q)^{−1/2} N_χ
@@ -467,19 +810,89 @@ the inner vertex boundary of O. Mere nonvanishing does not imply this
 matching, and the boundary activities remain functions of the boundary
 fields inside a subsequent integral.
 
-**ARGUED — application route; OPEN — actual producer.** Equation (17) is
-a useful destination for (12) or (15), with all errors represented by d_a.
-Neither equation is already (17): ν_cut^0 is interacting, and arbitrary
-chart complements/contour sides need not be bounded local functions of the
-chosen product variables. Constructing that representation is this lane's
-undischarged obligation. Inserting Θ_h into d=Θ_h−1 does not prove (18).
-A real tail probability bound alone is not the sup-norm/locality bound in
-(18). A measure-valued defect expansion or another cluster method is a live
-alternative, not certified by this lemma.
+**PROVEN identity; OPEN smallness.** The actual producer (R10)/(R11)
+is now constructed. It is a product-Haar finite connected gas with its
+actual history factors; no assertion that it satisfies (18) is made.
+The pointwise successful gas in (12) is still insufficient, and its
+interacting sea cannot be declared a product measure. For any hard
+indicator Θ attaining zero, ||Θ−1||∞=1. On a nonempty support this
+alone exceeds (18)'s budget. The following different bound uses integrated
+failure masses and proves the expansion to which such a bound applies.
+
+### 5.1 Hard cuts as connected failure types with an integrated majorant
+
+**PROVEN — exact hard-cut expansion.** Let θ_i=1−1_{E_i} be a finite
+list of actual zero/one requirements on a product probability space μ,
+with fixed connected full read supports S_i. The E_i can overlap. Join
+labels when their supports intersect. For each nonempty connected set C
+of distinct labels introduce a failure type with
+
+    S_C=⋃_{i∈C}S_i,       d_C=(−1)^{|C|}1_{⋂_{i∈C}E_i}.
+
+Two such types are compatible exactly when their supports are disjoint.
+Expanding Π_i(1−1_{E_i}) and taking the support-overlap components of
+each chosen label set proves the pointwise identity
+
+    Π_i θ_i=Σ_{F compatible}Π_{C∈F}d_C.                     (R15)
+
+Every subset occurs exactly once, including the empty subset. In
+particular all simultaneous failures are present; overlapping events are
+one type, not falsely independent types. Multiplying by exp(−ΣU_S) and
+integrating proves (17) for this specified cut, without a sup-norm
+smallness assertion. For (R10) one may take the θ list to be its χ_Q
+and the actual I_{j,F_j|h}; (R3) proves these are zero/one functions.
+For a refined history term one may instead use its individual χ, ζ,
+a and 1−a requirements. A “failure event” here means failure of that
+particular required predicate, not necessarily physical large curvature.
+For a required rare-history event its complement can have large mass.
+The Θ in (R15) must not be replaced by a different smoother cutoff.
+
+**PROVEN — an L¹ version of the mixed bound.** In (17) keep disjoint
+defect supports and define
+
+    δ_a=sup_{z∈D} ∫|d_a(W_{S_a},z)|dμ_{S_a},
+    q₁=sup_v[Σ_{S∋v}e^{(μ_0+2)|S|}||e^{−U_S}−1||∞
+                         +Σ_{a:S_a∋v}e^{(μ_0+2)|S_a|}δ_a]. (R16)
+
+Assume d_a is pointwise holomorphic in z, with an integrable envelope on
+each compact subdomain; assume the analogous hypotheses for U. For a
+finite family, q₁≤1/4 implies exactly (19)–(22) with q₁ in place of q.
+For the source-independent hard events in (R15), δ_C is the actual joint
+event probability μ(⋂_{i∈C}E_i), not ||d_C||∞. The event must be fixed
+in the analytic parameters; a moving real coarse-field indicator gives
+no coarse-field holomorphy by this statement.
+
+Proof: for a selected collection of interaction atoms f_i and compatible
+defects, take absolute values, bound each f_i by its supremum, and use
+disjointness of the defect coordinate supports to obtain
+
+    |E_μ[Π_i f_i Π_{a∈F}d_a]|
+           ≤Π_i||f_i||∞ · Π_{a∈F}δ_a.                     (R17)
+
+Interaction atoms can overlap defects; no conditional independence of
+those atoms was asserted. Removing them by a supremum is what permits
+the last factorization. Apply this bound to each connected collection.
+The first tree proof in §5 now uses v_i=e^{(μ_0+1)|S_i|} times either
+||f_i||∞ or δ_i. Compatibility is dropped only **after** (R17) has
+been used on the actual compatible collections. The same supersolution
+gives (20), with q₁. The second tree proof and its t-continuation then
+give (19)/(21). Integrable envelopes justify parameter integration, and
+the absolute rooted bounds justify the logarithmic series. Prefactor and
+reference subtraction give (22) unchanged. ∎
+
+This proves a way for a small integrated failure mass to enter a cluster
+estimate without the false sup-norm inference. It does not prove q₁≤1/4
+for (R10). The unadapted Haar interactions already have the large-u
+problem of (17b), and (R15)'s **joint** failure masses and multiplicities
+need bounds, especially for large history supports. The TC input must
+supply these masses under the very reference used in the expansion;
+an estimate under another interacting conditional law is not (R16).
+Contour-side terms require their actual complex measures/densities and
+total-variation bounds; they are not indicator events in (R15).
 
 ## 6. Nested holes: apply R10 without losing the inactive contribution
 
-**PROVEN conditional use of landed LIB1 R10.** Start with the original
+**PROVEN conditional use of brief-authorized, reviewed LIB1 R10.** Start with the original
 connected F_X (or K_X) on Γ, and fix Λ⊆Ω⊆Γ independently of sources. For
 X meeting Λ enlarge it by the inactive components of Γ\Λ at distance ≤1:
 
@@ -516,15 +929,19 @@ prefactor from (14), (17) or (22) unchanged.
 
 | Input | Exact scope consumed | Status and missing output |
 |---|---|---|
-| Decision-4 soft kernel; RLARGE §3; history return H1–H14 | The original Haar weight, cuts, frozen links, D_Y^ε, and compensated zero-source replacement | Rebuilt in §§2–3 at bare level zero. The source references are candidate-lane evidence; no main/audit status is assigned. |
-| LIB1 R10 and its norm-control correction/reviews | (23)–(25), with original-source supports, inactive term, fixed masks and bounded-hole condition where needed | Consumed as landed under the explicit brief. No returned-denominator bound is attributed to it. |
+| Decision-4 soft kernel; LARGE55 recursion; RLARGE §3; history return H1–H14 | Original chain, cut-good quotient, fixed reference and explicit H12 history extension | Rebuilt through all finite effective levels in (R1)–(R14). The history convention is specified rather than equated to unspecified σ^J. No main/audit status is assigned. |
+| LIB1 R10 and its norm-control correction/reviews | (23)–(25), with original-source supports, inactive term, fixed masks and bounded-hole condition where needed | Brief-authorized, reviewed input; no new origin/main landing claim. No returned-denominator bound is attributed to it. |
 | RECOVERY_CLUSTER_ASTRA and its review | Connected-support product-measure mechanism with all original sources, complete factors, β≥0 | Generic conditional theorem supported by its review. §5 rebuilds the mechanism including local defects. The actual-integral identity remains an input to that theorem. |
 | SOURCE_LOCAL_RETURN and fixed-reference CONTINUATION | Exact tree/Haar factors, fixed-source sector, linear term, determinant and complement interfaces | Used at their stated bare/chart scope in §4. No arbitrary-history or full-domain assertion imported. |
 | SOURCE_LOCAL_HISTORY_RETURN H20–H25 and its review | When its displayed q/d_q smallness holds, successful gas has ∥V^F∥_μ≤d_q on D_(ρ,λ)(u) | Only the successful pointwise gas in (12). Its failure and sea factors remain present. |
 | **Active fixed-source-radius lane — named input FR** | A common original-source disc sup_p abs(ε_p)<ρ_* (and any separately required coarse tube), fixed-domain identities and original-source support atoms for all substituted maps; a localized source-interaction budget h_src at weight β | Requested form, **not received/consumed as proved**. A finite source germ or a bound requiring ρ_*p(u)²→0 does not supply this form. |
 | **Active finite-coupling remainder lane — named input KR** | Exact action allocation S_0, ell, Q, Haar/normalizer terms, inherited weights; local h_rem and prefactor norm p_* on FR's domain, with real u and the actual kernel held fixed | Requested form, **not received/consumed as proved**. A kernel remainder is useful but does not identify the full return indicator or its reference. |
-| **Active original-law coercivity/tails lane — named input TC** | For the actual defects once constructed, a uniform localized majorant δ_f for (18), or a specified replacement bound for a measure-valued cluster argument, including reference ratios and failure-label multiplicity | Requested form, **not received/consumed as proved**. An unnormalized energy estimate or an integrated real tail bound is not silently upgraded to this stronger input. RD still owns construction/matching of the defect representation. |
+| **Original-law tails / active graded-complement lane — named input TC** | Uniform bounds for the actual connected joint-event masses δ_C and multiplicities in (R15)/(R16), under the chosen reference, plus complex side-term total variation and reference ratios | Requested form, **not received/consumed as proved**. (R15)–(R17) construct the hard-event expansion and its sufficient integrated bound; changing the underlying law requires a proved density comparison. |
 
+HANDOFF now records scoped reviews for the fixed-source, single-kernel and
+coercivity constructions, and active selected-core and graded-complement
+authors. Those status reports are not assumed to meet the stronger
+interfaces above; their derivations are not duplicated in this lane.
 FR, KR and TC need not be independent. No independence or near-closure count
 is inferred from three names. Their work is not duplicated here. A physical
 axiom, empirical fit or new primitive supplies none of the missing bounds.
@@ -533,41 +950,78 @@ axiom, empirical fit or new primitive supplies none of the missing bounds.
 
 | Consumer | What is now explicit | Open use condition |
 |---|---|---|
-| CX / corrected CX-R | (17)–(21) give a sufficient cluster criterion including local failed-return insertions; supports include actual original source reads | Derive (17) for the complete returned integral and verify (18), rather than assume its exponential. |
-| STEP55 §5.4 and S9 | Bare D_Y^ε is (2); its positive reference is (3); (14) and (16) retain gauge/Haar, main, linear, determinant and cut factors; (15) retains the rest | All required histories, coarse complex tube, inherited density, region-uniform source domain and normalized numerator estimates. |
-| HANDOFF remaining proof path, step 2 | Exact reference/failure identity (11)–(12), plus R10's inactive and active bookkeeping (23)–(25) | Control the interacting sea/failure expression and match it through the actual next RG level. |
-| CODEX_REVIEW_STEP R11 and item 6 | Full vs reduced logarithms are separated. A finite actual-integral domain (6) is proved; the generic complete-factor implication is rebuilt with defects | The uniform actual-denominator assertion is still OPEN. The refuted O(card(Y) H_V) bound for the full unnormalized prefactor is not reinstated. |
+| CX / corrected CX-R | Actual product-Haar identity (R10)/(R11), exact hard-event expansion (R15), and sufficient integrated criterion (R16) | Prove smallness/local prefactor budgets for this representation, or match an adapted Gaussian representation with every sector included. Its Gaussian (ID) is not inferred from an arbitrary finite gas. |
+| STEP55 §5.4 and S9 | (R6) identifies local and joint N/D; full conditional denominator is O D. (R14) retains every chart sector. (14)/(16) retain every Gaussian factor on a selected chart | Uniform admissible-history positive reference, complex zero-free domain, full norm, and normalized numerator estimates. Fixed real-fibre holomorphy (R13) alone is insufficient. |
+| HANDOFF remaining proof path, step 2 | (R8) performs the complete failure/history sum as an identity; (R4) proves the exact density recursion. LIB1 R10 retains inactive terms | Estimates through the remaining expectation, reference comparison and quantitative induction remain OPEN. |
+| CODEX_REVIEW_STEP R11 and item 6 | Finite actual denominator, source/coarse holomorphy and nonuniform germ are now explicit; all full-vs-reduced factors remain | Uniform zero-freeness is OPEN. No O(card(Y) H_V) estimate is assigned to the full unnormalized prefactor. |
 
 ## 9. Open residue and next decision
 
-**OPEN, primary obligation.** For the exact effective-level conditional
-density and legal history/collar family, construct a product-reference
-identity of the form (17), or a different independently proved linked
-expansion, that includes all of (12)/(15) and supplies original-source
-support bounds. The present data do not give this identity and its norm.
-The fixed-source-reference alternative removes complex division in local
-activities but leaves the interacting source expectation to be controlled.
+**PROVEN, identity deliverable.** Equations (R1)–(R14) construct the actual
+effective density, legal histories, original variables/collars, cuts,
+joint denominator and reference, and give a finite connected expansion
+covering every term. This is an exact algebraic RG rewriting. It is not
+the analytic RG theorem. The choice of histories in (R2)/(R3) is explicit;
+matching a different specified σ^J convention requires replacing its joint
+indicator, not declaring it equal to this one.
 
-**OPEN, quantitative and domain obligations.** Establish the common source
-radius, complex coarse-field continuation when required, nonzero/bounded
-actual reference factors, and uniform failed-return bounds. Close the
-effective-action/history induction rather than reuse a bare theorem at
-higher levels. If saturated full supports are required, also supply (25)'s
-geometry/rate hypothesis or a different proved norm interface.
+The prefactors can now be matched without relying on a logarithm:
 
-**ARGUED, next construction.** Use the exact fixed zero-source reference to
-avoid complex local quotient poles; build a connected expansion for its sea
-and failed-return insertions. Test its *local* failure majorants against
-TC before attempting an extensive logarithm. Keep the fixed-chart CX-R
-route as a separate option, retaining its complements and original support
-atoms. The tested elementary phase-sector route closes only (6).
+| Factor/operation | In the actual Haar construction | In a selected current-field chart |
+|---|---|---|
+| Frozen normalization | Full conditional denominator is O_{k,B}D_{k,h,B}; (R10) divides by the explicit O once | Apply (14) to D as defined in (R6); multiply by O only if the full conditional convention is used |
+| Earlier density and histories | Original lower-level chain and Ξ_h in (R10) | J from (R5) remains inside the pulled-back/tree-averaged insertion; an exact alternative expression replaces J, not multiplies it |
+| Haar/gauge volume | Normalized product Haar, gauge variables unremoved | c_N^n and unit tree-gauge volume under §4's stated boundary-preserving forest |
+| Gaussian scale and Hessian | None introduced | (2πσ²)^{d/2} det Q^{−1/2}, with σ²=N/u_k; actual slice Jacobian required for another slice |
+| Main action and linear term | Original factors in W; b_k is cancelled by (R5) | e^{−S_0}; ell and every quadratic mismatch stay in U unless an exact critical-point argument removes ell |
+| Cut mass | χ_B is an actual factor, not a deleted domain | N_χ and the remaining actual pulled-back cut/history insertion both remain |
+| Outside-sector/contour terms | Already integrated in (R10) | Σ_lD_l and any oriented E_side in (R14) are added |
+| Source-independent reference | D(0,η,Vbar) on γ>0; otherwise no target division | Divide every sector by that same reference if using D/Nref; §4's Z_ref is 1 for unnormalized D |
 
-The stronger condition (17)–(18) is a sufficient construction problem; RD
-does not imply that such bounded defect functions exist. The alternative
-“prove that (12) already has the desired local analytic logarithm” is
-target-equivalent and would merely restate the main obligation. Neither is
-counted as a discharged lemma. No impossibility, exhaustion of all routes,
-mass gap, full RG step or retained scientific status is claimed.
+In particular, writing A for all the selected-chart prefactors and Z_sel
+for its exact reduced expectation, the full quotient is
+
+    r=N/[A Z_sel+E],       E=Σ_lD_l+E_side.                  (R18)
+
+Only when the indicated factors are nonzero and compatible logarithms
+exist may one write log D=log A+log Z_sel+Log(1+E/(A Z_sel)).
+The last term needs its own locality estimate. Setting it to zero, or
+calling all of log A an O(H_V) remainder, would repeat R11's defect.
+Corrected CX-R (ID)/(FULL)/(VAR) can be used for the full D only after
+that reduction and its estimates have actually been established.
+
+**OPEN — precise B2 sub-lemmas.** (i) A useful history/collar class with
+a quantitative lower bound for γ and the full reference (R12), on a
+source/coarse domain independent of volume, depth and hole size.
+(ii) Original-source-local bounds for every prefactor and inherited
+interaction in an adapted reference representation. (iii) Bounds on
+the connected joint failure masses/multiplicities in (R16), on that
+same reference and domain, plus complex side-term total variation.
+The elementary Haar majorant (17b) grows with u; (R13)'s germ shrinks
+with the number of readers. Neither is the missing estimate. The L¹
+theorem (R15)–(R17) fixes the hard-cut sup-norm error but does not certify
+these actual-model budgets. FR/KR/TC are requested with the exact forms
+in §7; no active coordinator result is silently used.
+
+**OPEN — precise B3 sub-lemmas.** (i) Control the reference ratio after
+the remaining integrals and the whole sum (R8), retaining its
+history-dependent Z_{k,A}^{cut,0}. A pointwise fixed-F comparison cannot
+be pulled through that expression without this proof. (ii) Establish
+the full original-source norm for the produced coefficients through the
+hole operation, using (25)'s hypotheses or a proved alternative; the
+active norm (24) is insufficient. (iii) Show that the output of this
+step satisfies the same analytic/reference/activity hypotheses at the
+next effective level. (R4)'s exact algebraic induction proves none of
+these norm statements. Their literal match to the consumer's Gaussian
+representation and normalized numerator remains OPEN.
+
+**ARGUED, next decision.** Use (R10)/(R14) as the immutable integration
+target while choosing an adapted reference. The next useful input is
+a local joint-failure/reference estimate satisfying (R16), paired with
+the selected-core interaction budget on the same domain. A global
+history atom in (R11) cannot simply be relabelled as a small local atom.
+No impossibility, exhausted-route, mass-gap or retained-status claim is
+made. B1's exact construction is separate from B2/B3's remaining estimates.
 
 ```yaml
 actual_current_surface_status: open
@@ -577,7 +1031,7 @@ reachability_to_target: partially_closes
 conditional_surface_status: conditional-support
 hypothetical_axiom_status: null
 admitted_observation_status: null
-claim_type_reason: "Exact bare denominator/reference matching and a proved conditional defect-cluster criterion; complete history/scale-uniform instantiation remains open."
+claim_type_reason: "Exact finite effective-history denominator and complete connected identity, with a proved integrated hard-cut criterion; uniform analytic/history/scale bounds remain open."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```

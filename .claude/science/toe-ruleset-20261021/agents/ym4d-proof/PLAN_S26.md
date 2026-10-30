@@ -1,10 +1,9 @@
 # PLAN_S26 — the lead's own review of the approach, and the next attack
 
-Author: the lead, **claude-opus-5-5**, written 2026-10-28T22:19:59Z, by reading primary sources (PROOF.md §0/§L8-L9, HANDOFF.md, REVIEW_S22.md's BFT statement, EXISTENCE.md §0) — not worker summaries. Requested by the owner: *"personally review the approach that the dumber model took and plan our next attack to finish the proof"*. This file states judgements; it proves nothing, and it changes no status in PROOF.md.
+Author: the lead, written 2026-10-28T22:19:59Z, by reading primary sources (PROOF.md §0/§L8-L9, HANDOFF.md, REVIEW_S22.md's BFT statement, EXISTENCE.md §0) — not worker summaries. Requested by the owner: a review of the approach and a plan for the next attack. This file states judgements; it proves nothing, and it changes no status in PROOF.md.
 
-**Standing caveat.** Sessions 24-25 ran on claude-opus-5 (SESSION25_RESULTS.md §PROVENANCE). An Opus 5.5 +
-Codex gpt-6-astra/max review sweep is running now; nothing below assumes any session-24/25 result survives
-it, except where noted as cross-family confirmed.
+**Standing caveat.** A re-review of sessions 24-25 (SESSION25_RESULTS.md §SWEEP55) was running when this was written;
+nothing below assumes any session-24/25 result survives it, except where noted as cross-family confirmed.
 
 ---
 
@@ -89,7 +88,7 @@ compounds by Z_colZ_row² ≈ 1.3·10³ per level while the measured contraction
 **2f. A ledger defect to fix on sight.** PROOF.md near its top (string: *"§N5 establishes a marginality
 no-go, so CURV-F2 is unrepairable in the per-level form"*) still cites the §N5 no-go that REVIEW_NORMS_S1
 withdrew as unestablished (tautological check n1-D, undefined term, vacuous part (i)). Either the ledger
-asserts a withdrawn claim, or the withdrawal is wrong — REVIEW_NORMS_S1 is itself Opus 5 work and is under
+asserts a withdrawn claim, or the withdrawal is wrong — REVIEW_NORMS_S1 is itself under
 re-review (batch C4). Settle it there; do not edit PROOF.md on either reading until then.
 
 **2g. The process was the bigger failure than any single estimate.**

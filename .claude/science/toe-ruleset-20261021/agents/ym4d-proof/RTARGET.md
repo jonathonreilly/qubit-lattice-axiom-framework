@@ -1121,7 +1121,7 @@ banked item is recorded against whoever banked it, the lead included.
 
 ## §55. Session 26 — owner decision and pre-stated targets (written 2026-10-28T22:25:45Z, BEFORE any Step 1/4/5 work)
 
-**Lead: claude-opus-5-5.** Sessions 24-25 are PROVISIONAL (SESSION25_RESULTS.md §PROVENANCE) pending the
+**Lead: claude-opus-5-5.** Sessions 24-25 are PROVISIONAL (SESSION25_RESULTS.md §SWEEP55) pending the
 Opus 5.5 + Codex gpt-6-astra/max review sweep now running.
 
 **Owner decision (verbatim choice: "Fixed torus").** The target is **T_fin^OS** (PLAN_S26.md §6). T_OS on

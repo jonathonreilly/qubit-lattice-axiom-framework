@@ -84,7 +84,7 @@ analyticity statement in the corpus is in the FIELDS or in decoupling parameters
 the corpus; it is cited only to locate the technique.
 
 **Provenance of what I build on.** Every lane result I use is either [S26-BANKED] with a complete Codex review (KOFF, GV,
-SRCCD, FLOW55) or a session-19/20 PROOF result (Theorem RW, Lemma CT♯, N5-sf0) predating the claude-opus-5 window. BFT34_55
+SRCCD, FLOW55) or a session-19/20 PROOF result (Theorem RW, Lemma CT♯, N5-sf0) predating sessions 24-25. BFT34_55
 (Opus 5.5) has no Codex review on disk; where I use it I say so and re-derive what is load-bearing.
 
 **Codex verdicts used, agree/disagree (explicitly):**

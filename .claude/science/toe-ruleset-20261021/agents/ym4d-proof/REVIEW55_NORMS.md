@@ -4,7 +4,7 @@ Reviewer model: claude-opus-5-5
 
 ## PRE-STATED (written 2026-10-28T22:12:51Z UTC, before reading any batch file or deriving anything; only the shared brief and the lead's scope message have been read)
 
-Batch files: NORMS.md, REVIEW_NORMS_S1.md (Opus 5 review), NQ_CHECK.md, REVIEW_NQ_S1.md (Opus 5 review),
+Batch files: NORMS.md, REVIEW_NORMS_S1.md (earlier review), NQ_CHECK.md, REVIEW_NQ_S1.md (earlier review),
 NQ_DEF.md (session 25). Check ids: r55n_*. Criteria files checks/r55n_<id>_criteria.md written before
 any script; exact rational arithmetic (python fractions / integers) only.
 

@@ -23,7 +23,7 @@ T10 (s11) Proposition GZ-FALSE — (CovLift)'s g_Z clause at θ > 0 is false (a 
 T11 (s11) Theorem TRANSP — "PROVEN given exactly two inputs".
 T12 (s11, §43) the nontrivial background "collapses into BFT-5".
 T13 COFUN.md's claim: BFT_B l.3810 "with D(S^E_0(S)) = 0" is wrong while l.4203 is right — decides whether Theorem COF can stand in for BFT-5 clause (b).
-T14 the Opus 5 review REVIEW_BFT_B_S9_S10.md — review the reviewer (its verdicts on §27-§37).
+T14 the earlier review REVIEW_BFT_B_S9_S10.md — review the reviewer (its verdicts on §27-§37).
 T15 the Codex reviews CODEX_REVIEW_GAPZ.md (F1, F2, F6, F7) and CODEX_REVIEW_COFUN.md — agree/disagree, per finding.
 T16 every number that changed a decision in §27-§43 (constants, exponents, thresholds) — currency and evaluation point.
 T17 session 9-11 entries of BFT_B_LOG.md — whether the log's status lines match the sections.
@@ -410,7 +410,7 @@ lift is foreclosed" (PROOF.md l.158-161) and the S24 follow-on headline's "(CovL
   (B1) entry lists Lemma SPLIT's D(S^G) = 0).
 - **Proposition N1-CONS: spot-checked** (bookkeeping; not re-judged).
 
-### Finding 18 (T14) — the Opus 5 review REVIEW_BFT_B_S9_S10.md, item by item where it bears on my verdicts
+### Finding 18 (T14) — the earlier review REVIEW_BFT_B_S9_S10.md, item by item where it bears on my verdicts
 | its item | its verdict | mine | reason |
 |---|---|---|---|
 | S9-1 RT-cc (a) | CONFIRMED | agree (one imprecision) | "At l = k−1, Ψ_{k−1} = D(S)" misses ev^{(0→k)T}d*s_{k−1}; harmless for support |
@@ -438,7 +438,7 @@ lift is foreclosed" (PROOF.md l.158-161) and the S24 follow-on headline's "(CovL
 | S10-17 D(S^E_0) = I_χ^TD | CONFIRMED | agree | Finding 7 |
 | S10-18 NCR is an identity not a bound | WRONG (of §36.5 (v)) | agree | — |
 | Part P (discriminating power) | — | spot-checked only; I add: bb9b/bb10 have s = G = 0 and cannot see the Lemma SPLIT defect; bb11 A4 tests Q_ax, not the operator BGD (b) names | systemic defect 3 |
-Net: the Opus 5 review was right on the level-count (S10-6) and on most scope items, but **confirmed a wrong refutation
+Net: the earlier review was right on the level-count (S10-6) and on most scope items, but **confirmed a wrong refutation
 (S10-11)** while holding the premise it needed NOT-VERIFIED (S10-10), **confirmed Lemma SPLIT pointwise (S10-2)**, **confirmed
 GT-ell (S10-16)**, and **did not see that Lemma CD is restricted to ξ = 0 at the level-k roots** (it wrote "(CC-0) at
 critical points rests entirely on Lemma CD (i)" without checking the domain). Session 11 it did not review.
@@ -490,7 +490,7 @@ row), "(CO-fun) as stated … FALSE without (CC-0)", "GT-loc … not a question 
 implication"; session 11 "root covariance is EXACT iff … straight-row tower", "both defects … no weight penalty, no factor k",
 "§41.3 … never enters the gauge-fixing remainder", "TRANSP … from (GAP-Z) + (N1-nd) alone", "GZ-FALSE … FALSE at every θ > 0
 for EVERY lift", "(GAP-Z) is NOT a new item … ONE obstruction". Provenance claims (file order, byte counts) not re-audited
-(S9-P1/S10-P2 of the Opus 5 review cover them).
+(S9-P1/S10-P2 of the earlier review cover them).
 
 ### Finding 22 (s10 §35.1, re-read against BFT_A §28.5 l.2465-2494 directly) — Lemma W0-use
 Steps 1, 2, 4, 5 are classified correctly (step 2's "for every λ" is the co-closedness use (A); step 4's plain slot enters only

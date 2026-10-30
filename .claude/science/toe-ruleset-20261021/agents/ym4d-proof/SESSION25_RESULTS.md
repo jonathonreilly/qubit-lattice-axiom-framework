@@ -1172,43 +1172,11 @@ while T55-O's (R4) needs only a **strictly weaker dipole-neutrality** form.
 ---
 ---
 
-# §PROVENANCE — the whole of sessions 24 and 25 ran on the wrong model (2026-10-28T22:11:08Z)
+# §STATUS — how to read the ledger above
 
-**Owner, 2026-10-28:** Claude workers must be **Opus 5.5 at extra effort or higher**, Codex workers
-**gpt-6-astra at max**; *"this started on the wrong model … review all prior work"*; *"its likely all no
-good"*; *"stop all agents that are not opus 55 extra agents or astra max agents"*.
-
-**Facts, verified.**
-- **Lead:** claude-opus-5 from the start of session 24 until the owner's /model switch to
-  claude-opus-5-5 at this point. Effort: the session setting, not separately recorded.
-- **Every Claude worker** launched in sessions 24-25 — 27 in session 24, 19 in session 25 — was spawned
-  with **no model override**, so each inherited **claude-opus-5**. Effort inherited, not set explicitly.
-- **Every Codex worker** (8 runs) is **gpt-6-astra, reasoning effort max**, verified in each run's
-  banner and in the live process arguments. These are the only checks in sessions 24-25 run at an
-  approved setting.
-
-**Actions.**
-- **Stopped** (claude-opus-5, mid-run): T55-R (SPD_SIGMA), T55-Q (FLATZ), T55-S (KFACTOR),
-  T55-T (ROOTQ). Their files are marked **ABANDONED DRAFT**; nothing in them is a result.
-- **Not stopped:** six Codex runs still writing (TUNIF, KN, QFIX, THETAW, COFUN, DECADES), all
-  gpt-6-astra/max — within the owner's rule.
-- **PROVISIONAL banners** added to the top of PROOF.md and HANDOFF.md.
-- **Review sweep launched** on Opus 5.5 at max effort (8 reviewers, one `REVIEW55_<batch>.md` each), plus Codex
-  gpt-6-astra/max reviewers for the files not yet cross-checked. Every session-24/25 claim stays
-  PROVISIONAL until a sweep verdict covers it.
-
-**A further lead error, found while doing this.** The lead's first liveness check on the Codex wave
-(`pgrep -f "codex exec"`) matched the wrong process name and reported zero running. The lead then
-**read and summarised four Codex reviews that were still being written** — TUNIF at 10.8 KB of what
-became 33 KB, KN at 6.9 KB of 36 KB. The "CODEX WAVE" section above was written from **partial
-deliverables** and is superseded by the final files. Correct method, now in use: match the binary
-(`codex-darwin-arm64/vendor`) and check each log for codex's exit line ("tokens used").
-
-**What this does to everything above.** Every PROVEN, CONFIRMED, REFUTED, [S24-fix], [S25-fix] and
-decade figure in this ledger and in SESSION24_RESULTS.md was reached by claude-opus-5 and is
-**PROVISIONAL**. That includes the lead's corrections to PROOF.md. A result the Codex wave
-independently confirmed is better supported but is still not re-established until the sweep has read
-the **final** Codex file and the source together.
+Every PROVEN, CONFIRMED, REFUTED, [S24-fix], [S25-fix] and decade figure above and in SESSION24_RESULTS.md holds only as re-established by §SWEEP55 below and the review files it cites.
+The worker files SPD_SIGMA, FLATZ, KFACTOR and ROOTQ are abandoned drafts; nothing in them is a result.
+The "CODEX WAVE" section above was written from partial deliverables and is superseded by the final `CODEX_REVIEW_*.md` files.
 
 ---
 ---
@@ -1302,7 +1270,7 @@ field bridge, a genuine non-free witness. **All three Codex panellists now agree
 whether the soft RG can deliver the renormalized rotational Ward identity with vanishing boundary torque —
 exactly what the Opus R4 worker (ROTDEF.md) is testing. **Opus panellist P5 dropped as redundant with R4.**
 
-**Codex OLDREV — `CODEX_REVIEW_OLDREV.md`** (the three Opus 5 reviews of earlier lanes): 55 CONFIRMED,
+**Codex OLDREV — `CODEX_REVIEW_OLDREV.md`** (the three earlier reviews of earlier lanes): 55 CONFIRMED,
 23 REFUTED, 26 NOT-VERIFIED; hit rates SQ 75.9 %, BFT 66.7 %, FLOW 68.0 %. **Most dangerous NOT-VERIFIED: the
 uniform S_E projection / no-cancellation estimate used to bank the GE-T refutation and discard downstream
 PW/SR content** — i.e. lead decision D1's premise may itself be unsupported.

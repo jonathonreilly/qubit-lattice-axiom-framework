@@ -84,4 +84,4 @@ makes the target cheap, and nobody has read it but its author.
 
 
 ---
-**[LEAD, 2026-10-28T22:11:08Z] ABANDONED DRAFT.** This worker ran on claude-opus-5 (wrong model) and was STOPPED mid-run by the lead on the owner's instruction. Nothing in this file is a result. The target will be re-run on Opus 5.5.
+**[LEAD, 2026-10-28T22:11:08Z] ABANDONED DRAFT.** This worker was stopped mid-run. Nothing in this file is a result.

@@ -1,6 +1,6 @@
 Reviewer model: claude-opus-5-5
 
-# REVIEW55_HWPLD — Opus 5.5 re-review of the HW lane (session 6, HW.md §34-§41) and the PLD lane (sessions 6-7, PLD.md §18-§19), plus the Opus 5 reviewers REVIEW_HW_S5 / REVIEW_PLD_S5
+# REVIEW55_HWPLD — Opus 5.5 re-review of the HW lane (session 6, HW.md §34-§41) and the PLD lane (sessions 6-7, PLD.md §18-§19), plus the earlier reviewers REVIEW_HW_S5 / REVIEW_PLD_S5
 
 UTC start: 2026-10-28T22:12:18Z
 Batch: C3. Check-id prefix: `r55h_`. Deliverable (the only lane file written): `$L/REVIEW55_HWPLD.md`

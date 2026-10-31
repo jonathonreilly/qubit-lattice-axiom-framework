@@ -1,0 +1,678 @@
+{
+  "schema": "fresh_scoped_consumer_review_actual_reads_v1",
+  "reviewer": "/root/review_reconstruction_consumers",
+  "recorded_utc": "2026-10-30T00:51:38.571210+00:00",
+  "original_head": "3bba91875672becadc0ab120204905d9f1f405a8",
+  "author_baseline": "814364fcc7dbcf0ff4146f6766e98890124ac905",
+  "observed_methodology_main": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "no_fetch": true,
+  "science_reads": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REC_LIB.md",
+      "bound_read_source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REC_LIB.md",
+      "sha256": "47dd75c7ca3c4f9f1af43139292d1fcfa6774b10f8e6ea2babc05ad67a48e29a",
+      "bytes": 75139,
+      "lines": 1316,
+      "ranges_read": [
+        [
+          1,
+          1316
+        ]
+      ],
+      "range_digests": [
+        {
+          "start": 1,
+          "end": 1316,
+          "sha256": "47dd75c7ca3c4f9f1af43139292d1fcfa6774b10f8e6ea2babc05ad67a48e29a"
+        }
+      ],
+      "coverage": "FULL; independently reconstructed before corrected consumers or author packet."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REC_CONT.md",
+      "bound_read_source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REC_CONT.md",
+      "sha256": "ac7ac0854fb320f183779f67be136063dfb750ee3f13b869acad10a7ac12a278",
+      "bytes": 52198,
+      "lines": 1054,
+      "ranges_read": [
+        [
+          1,
+          1054
+        ]
+      ],
+      "range_digests": [
+        {
+          "start": 1,
+          "end": 1054,
+          "sha256": "ac7ac0854fb320f183779f67be136063dfb750ee3f13b869acad10a7ac12a278"
+        }
+      ],
+      "coverage": "FULL; all continuation proof sections read before corrected consumers or author packet."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "bound_read_source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497,
+      "lines": 11,
+      "ranges_read": [
+        [
+          1,
+          11
+        ]
+      ],
+      "range_digests": [
+        {
+          "start": 1,
+          "end": 11,
+          "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab"
+        }
+      ],
+      "coverage": "FULL."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OSLEAF55.md",
+      "bound_read_source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_rec_consumer_alignment_frozen_v1_OSLEAF55.md",
+      "sha256": "4e778a30fdc9dd7734499c52a141bef753e10c9c77b298eea76a6858a54a96e8",
+      "bytes": 108146,
+      "lines": 1031,
+      "ranges_read": [
+        [
+          1,
+          1031
+        ]
+      ],
+      "range_digests": [
+        {
+          "start": 1,
+          "end": 1031,
+          "sha256": "4e778a30fdc9dd7734499c52a141bef753e10c9c77b298eea76a6858a54a96e8"
+        }
+      ],
+      "coverage": "FULL v1 corrected source; all baseline deletions separately read in complete independent diff. Original source not claimed as a standalone full read."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OSLEAF55.md",
+      "bound_read_source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_rec_consumer_alignment_frozen_v2_OSLEAF55.md",
+      "sha256": "c261a0c5eb300052445a05b3041b5ddf6e518445d3eacac36fc4421e60f66b78",
+      "bytes": 109340,
+      "lines": 1046,
+      "ranges_read": [
+        [
+          923,
+          942
+        ]
+      ],
+      "range_digests": [
+        {
+          "start": 923,
+          "end": 942,
+          "sha256": "6cfe434a1d17d8ff7cd097c2889087b62070c1c59b9763aeec9368e46be1b45e"
+        }
+      ],
+      "coverage": "FULL v2 content coverage by prior full v1 read plus exact replacement; outside-hunk byte equality checked. No claim of a redundant standalone reread of all unchanged v2 text."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSEMBLY55.md",
+      "bound_read_source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_rec_consumer_alignment_frozen_v1_ASSEMBLY55.md",
+      "sha256": "c15524d7a1c3c04ce9c32567f6f61ec5113ebe24be9eba8de87f97e3109d326d",
+      "bytes": 88645,
+      "lines": 776,
+      "ranges_read": [
+        [
+          1,
+          776
+        ]
+      ],
+      "range_digests": [
+        {
+          "start": 1,
+          "end": 776,
+          "sha256": "c15524d7a1c3c04ce9c32567f6f61ec5113ebe24be9eba8de87f97e3109d326d"
+        }
+      ],
+      "coverage": "FULL corrected source; unchanged v1 to v2. All baseline deletions separately read in complete independent diff."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HRP.md",
+      "bound_read_source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HRP.md",
+      "sha256": "d3a53ef3b29d09c774b1a836603ca731eeadb580127d3928dbbcd5dbe343699e",
+      "bytes": 51835,
+      "lines": 838,
+      "ranges_read": [
+        [
+          31,
+          79
+        ],
+        [
+          230,
+          259
+        ],
+        [
+          324,
+          357
+        ],
+        [
+          511,
+          582
+        ],
+        [
+          747,
+          802
+        ]
+      ],
+      "range_digests": [
+        {
+          "start": 31,
+          "end": 79,
+          "sha256": "4f679bd380eae9bd78857731c288add5e941654458c8b2ea09a2e0d94097b0bf"
+        },
+        {
+          "start": 230,
+          "end": 259,
+          "sha256": "85e6446762858aee7d0991898a2bba924050c69b34028eb8f20a2c3486a32130"
+        },
+        {
+          "start": 324,
+          "end": 357,
+          "sha256": "de954ae4b27ad03220c07b253d1286f583f9a677381c0b3a4281b38a5ab318bb"
+        },
+        {
+          "start": 511,
+          "end": 582,
+          "sha256": "407b2930123d615f6e2053ab0d3e483a3d110c7e4f8adcd75655b98d8f7c86f4"
+        },
+        {
+          "start": 747,
+          "end": 802,
+          "sha256": "ef3737c6845d3c9e27f750611cc4489235a464a41ca58640df98566ee43487b9"
+        }
+      ],
+      "coverage": "PARTIAL: exact reflection conventions, site proof, bare-link support, restricted OS/sphere consumer boundaries and current export qualifications; no full HRP review."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SRCCD55.md",
+      "bound_read_source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SRCCD55.md",
+      "sha256": "80a347f5d2bc801fc0395b6d61aa5c0661dd098ae4430bcf760b874729761d03",
+      "bytes": 91420,
+      "lines": 1017,
+      "ranges_read": [
+        [
+          187,
+          214
+        ],
+        [
+          315,
+          403
+        ],
+        [
+          549,
+          574
+        ],
+        [
+          921,
+          1017
+        ]
+      ],
+      "range_digests": [
+        {
+          "start": 187,
+          "end": 214,
+          "sha256": "ad6fb71a9cd76d3285c6a8c5c9a942f138daa8a2da38d698a4c1a7aeaca401b6"
+        },
+        {
+          "start": 315,
+          "end": 403,
+          "sha256": "c183df15029d7f7def45694b041d321aff86ba0fee6eb826b53d88e8e7af1668"
+        },
+        {
+          "start": 549,
+          "end": 574,
+          "sha256": "f089bbd98d3f395439b15457eef2f0ee1772fe5ab28b8ee45f6351ba031ba84e"
+        },
+        {
+          "start": 921,
+          "end": 1017,
+          "sha256": "d65f691e9043e8c50e9035a83979a8284013558a55c7de9ab4da5168d2a2e605"
+        }
+      ],
+      "coverage": "PARTIAL: exact SRC conditional/one-point/coarse-field premises, Proposition E and all errata; no full RG proof review."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_TARGET.md",
+      "bound_read_source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_TARGET.md",
+      "sha256": "105440c10b9a2fc91b2be366f439053de05fd3d3497596f8f28993b0fe42de7b",
+      "bytes": 7507,
+      "lines": 133,
+      "ranges_read": [
+        [
+          1,
+          133
+        ]
+      ],
+      "range_digests": [
+        {
+          "start": 1,
+          "end": 133,
+          "sha256": "105440c10b9a2fc91b2be366f439053de05fd3d3497596f8f28993b0fe42de7b"
+        }
+      ],
+      "coverage": "FULL as unchanged target specification and conditional spectral reduction; external announcement/Clay comparisons not independently researched here."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/ol55_1_criteria.md",
+      "bound_read_source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/ol55_1_criteria.md",
+      "sha256": "e6947c857c385f090fbf13a4df05ff7542ceb791422f703b7e44aaab1d47a4df",
+      "bytes": 2591,
+      "lines": 31,
+      "ranges_read": [
+        [
+          1,
+          31
+        ]
+      ],
+      "range_digests": [
+        {
+          "start": 1,
+          "end": 31,
+          "sha256": "e6947c857c385f090fbf13a4df05ff7542ceb791422f703b7e44aaab1d47a4df"
+        }
+      ],
+      "coverage": "FULL static evidence read after independent findings freeze; not executed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/ol55_1_conventions.py",
+      "bound_read_source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/ol55_1_conventions.py",
+      "sha256": "c0ca04a62d0899d988b240335be10e78f4000d2eb2e619e58e4093c61e86378b",
+      "bytes": 6493,
+      "lines": 173,
+      "ranges_read": [
+        [
+          1,
+          173
+        ]
+      ],
+      "range_digests": [
+        {
+          "start": 1,
+          "end": 173,
+          "sha256": "c0ca04a62d0899d988b240335be10e78f4000d2eb2e619e58e4093c61e86378b"
+        }
+      ],
+      "coverage": "FULL static evidence read after independent findings freeze; not executed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/ol55_1_out.txt",
+      "bound_read_source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/ol55_1_out.txt",
+      "sha256": "7c9213e2d38bb929a25641f9f6e0662c1be30d45f433253f747ed8d3602a06cc",
+      "bytes": 639,
+      "lines": 9,
+      "ranges_read": [
+        [
+          1,
+          9
+        ]
+      ],
+      "range_digests": [
+        {
+          "start": 1,
+          "end": 9,
+          "sha256": "7c9213e2d38bb929a25641f9f6e0662c1be30d45f433253f747ed8d3602a06cc"
+        }
+      ],
+      "coverage": "FULL static evidence read after independent findings freeze; not executed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/ol55_1_err.txt",
+      "bound_read_source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/ol55_1_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "lines": 0,
+      "ranges_read": [],
+      "range_digests": [],
+      "coverage": "EMPTY stderr confirmed; no runner executed."
+    }
+  ],
+  "methodology_reads": [
+    {
+      "path": "AGENTS.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "bytes": 1118,
+      "lines": 26,
+      "ranges_read": [
+        [
+          1,
+          26
+        ]
+      ],
+      "coverage": "FULL; methodology/applicability only. No scientific premise supplied."
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "bytes": 11788,
+      "lines": 193,
+      "ranges_read": [
+        [
+          1,
+          193
+        ]
+      ],
+      "coverage": "FULL; methodology/applicability only. No scientific premise supplied."
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "lines": 35,
+      "ranges_read": [
+        [
+          1,
+          35
+        ]
+      ],
+      "coverage": "FULL; methodology/applicability only. No scientific premise supplied."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "bytes": 5767,
+      "lines": 93,
+      "ranges_read": [
+        [
+          1,
+          93
+        ]
+      ],
+      "coverage": "FULL; methodology/applicability only. No scientific premise supplied."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "bytes": 16755,
+      "lines": 336,
+      "ranges_read": [
+        [
+          1,
+          336
+        ]
+      ],
+      "coverage": "FULL; methodology/applicability only. No scientific premise supplied."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "lines": 126,
+      "ranges_read": [
+        [
+          1,
+          126
+        ]
+      ],
+      "coverage": "FULL; methodology/applicability only. No scientific premise supplied."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "bytes": 16454,
+      "lines": 309,
+      "ranges_read": [
+        [
+          1,
+          309
+        ]
+      ],
+      "coverage": "FULL; methodology/applicability only. No scientific premise supplied."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "bytes": 24561,
+      "lines": 370,
+      "ranges_read": [
+        [
+          1,
+          370
+        ]
+      ],
+      "coverage": "FULL; methodology/applicability only. No scientific premise supplied."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "bytes": 5188,
+      "lines": 96,
+      "ranges_read": [
+        [
+          1,
+          96
+        ]
+      ],
+      "coverage": "FULL; methodology/applicability only. No scientific premise supplied."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "bytes": 12608,
+      "lines": 183,
+      "ranges_read": [
+        [
+          1,
+          183
+        ]
+      ],
+      "coverage": "FULL; methodology/applicability only. No scientific premise supplied."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "bytes": 12940,
+      "lines": 248,
+      "ranges_read": [
+        [
+          1,
+          248
+        ]
+      ],
+      "coverage": "FULL; methodology/applicability only. No scientific premise supplied."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "bytes": 7554,
+      "lines": 140,
+      "ranges_read": [
+        [
+          1,
+          140
+        ]
+      ],
+      "coverage": "FULL; methodology/applicability only. No scientific premise supplied."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "bytes": 23216,
+      "lines": 394,
+      "ranges_read": [
+        [
+          1,
+          394
+        ]
+      ],
+      "coverage": "FULL; methodology/applicability only. No scientific premise supplied."
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "bytes": 6427,
+      "lines": 130,
+      "ranges_read": [
+        [
+          1,
+          130
+        ]
+      ],
+      "coverage": "FULL; methodology/applicability only. No scientific premise supplied."
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333,
+      "lines": 233,
+      "ranges_read": [
+        [
+          1,
+          233
+        ]
+      ],
+      "coverage": "FULL; methodology/applicability only. No scientific premise supplied."
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416,
+      "lines": 52,
+      "ranges_read": [
+        [
+          1,
+          52
+        ]
+      ],
+      "coverage": "FULL; methodology/applicability only. No scientific premise supplied."
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "bytes": 16941,
+      "lines": 354,
+      "ranges_read": [
+        [
+          1,
+          354
+        ]
+      ],
+      "coverage": "FULL; methodology/applicability only. No scientific premise supplied."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "bytes": 30709,
+      "lines": 434,
+      "ranges_read": [
+        [
+          1,
+          190
+        ]
+      ],
+      "coverage": "PARTIAL: first 190 lines; not running a discovery campaign."
+    }
+  ],
+  "installed_routing_reads": [
+    {
+      "path": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "coverage": "FULL initial routing only; selected repository same-revision text supersedes installed version for this review."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/review-loop/SKILL.md",
+      "sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "coverage": "FULL initial routing only; selected repository same-revision text supersedes installed version for this review."
+    }
+  ],
+  "author_and_diff_reads": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/rec_consumer_alignment_note.md",
+      "sha256": "a67e5705f6bb6d605b9bdd2bcf1f590e88c48a7c4270a74fb240ef96536c30ba",
+      "bytes": 7410,
+      "coverage": "FULL, after findings_v1 freeze."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/rec_consumer_alignment_source.diff",
+      "sha256": "911c14e8bfd193d7b183921db91bdb1dea60fdfd3b72d5b2a926d83e1e63ef94",
+      "bytes": 61676,
+      "coverage": "FULL by byte equality to the already fully read independently generated diff; equality checked after findings_v1 freeze."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/rec_consumer_alignment_read_manifest.json",
+      "sha256": "2ba409c8645bbf47790a8254e152c38ce8c4605e8fcc58d3e079118f7c149d72",
+      "bytes": 15479,
+      "coverage": "FULL structured read, after findings_v1 freeze; 19 range digests machine-checked."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/rec_consumer_alignment_unchanged_rp.json",
+      "sha256": "b72316b6c0871a216ae6ee1c56aabd5758b062e5bf5d254d02c2ac28eb8452f1",
+      "bytes": 8426,
+      "coverage": "PARTIAL structured metadata read; all three mathematical subtexts separately read in source; hashes verified. No claim that every packaging field was read."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/rec_consumer_alignment_receipt.json",
+      "sha256": "9a8bc2b7b72852472f1467c99a844a245d77e74779e5c380a8e44ed6b03610e5",
+      "bytes": 38210,
+      "coverage": "PARTIAL human read: all non-list metadata and source/artifact/producer records; protected-history list machine-verified in full, not individually read as scientific evidence."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/rec_consumer_alignment_singleton_correction.json",
+      "sha256": "1c1e01a7e1e457a6d5784817a447d16d245b2337b3cb79566d3761eda3e7430d",
+      "bytes": 6805,
+      "coverage": "FULL after independent findings_v2 freeze; exact diff and both metadata failure disclosures read."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_rec_consumer_alignment_independent.diff",
+      "sha256": "911c14e8bfd193d7b183921db91bdb1dea60fdfd3b72d5b2a926d83e1e63ef94",
+      "lines": 578,
+      "coverage": "FULL independent diff read."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_rec_consumer_alignment_independent_v1_to_v2.diff",
+      "sha256": "fa6a573b832739cf72421e6d321ce67c71d7faa76ab299dbdaeb862a2bf6cdfb",
+      "lines": 34,
+      "coverage": "FULL independent diff read."
+    }
+  ],
+  "old_review_reports": "No old review report independently opened. Only source-contained quotations/citations and hash metadata were seen. No earlier LAND was treated as proof.",
+  "prior_exposure": [
+    "Assignment disclosed E0-prime continuation issue",
+    "Assignment disclosed insertion count m in translation bound",
+    "Assignment disclosed Cartesian tensor scope",
+    "Assignment disclosed generic q_X order and singleton all-order issue",
+    "Assignment disclosed implication direction and exact RP block hash"
+  ],
+  "independence_order": [
+    "Complete actual REC_LIB and REC_CONT reading and independent mathematical reconstruction",
+    "Initial findings freeze f0580b516529bab98bc159313c9d2bb02e559ec033bcf269e8dbeedb0ba0c249",
+    "Full frozen corrected consumer source and independent diff reading",
+    "Initial affected HOLD/findings_v1 freeze d3f8811e2f96d28a022aa41f6bbe2fa0bf3fe11ad090780fe73c519a0dc06a01",
+    "Author v1 packaging read and verification",
+    "Frozen minimal correction independently derived and findings_v2 freeze 9b88255b97b61cdd759c3cc51ba60559ebb81371bdd5aa97c0bbf95c4a23506f",
+    "Coordinator correction metadata read"
+  ],
+  "truncations_and_failures": [
+    "Initial REC_LIB 1–420 output truncation repaired with 325–660 reread; remaining full ranges read in bounded calls.",
+    "Initial ASSEMBLY1–225 output truncation repaired by rereading1–120; complete rest read in bounded calls.",
+    "Independent.diff combined output truncations repaired, including explicit140–214 reread; final entire1–578 coverage.",
+    "Large raw author receipt output truncated; all claimed non-history metadata re-read structurally; historical preservation records verified programmatically, not claimed as individual scientific reads.",
+    "Nonexistent physics-loop/references/no-go-discipline.md read failed; correct skills/no-go-discipline/SKILL.md located and fully read at pinned revision.",
+    "No scientific numerical run or experiment failed or was launched."
+  ],
+  "coverage_rule": "Byte equality and hashes establish identity only. No unread file receives a full-read claim. A complete consumer read does not certify every unrelated theorem cited within it."
+}

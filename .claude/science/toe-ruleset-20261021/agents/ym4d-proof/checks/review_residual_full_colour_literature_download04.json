@@ -1,0 +1,26 @@
+[
+  {
+    "name": "luscher_weisz",
+    "url": "https://arxiv.org/pdf/hep-lat/9504006",
+    "exit": 0,
+    "stderr": "",
+    "bytes": 211800,
+    "sha256": "9abc4201c94d34b534b86f90092f2e64aacb2b8a5938549f51cd65b408289f4e"
+  },
+  {
+    "name": "adams_lee",
+    "url": "https://arxiv.org/pdf/0709.0781",
+    "exit": 0,
+    "stderr": "",
+    "bytes": 274675,
+    "sha256": "db2ed3d832a763abea185bbf1d14c95faf48a7e9366393df80b5c2ab1980ae3f"
+  },
+  {
+    "name": "bgm",
+    "url": "https://arxiv.org/pdf/math-ph/0303013",
+    "exit": 0,
+    "stderr": "",
+    "bytes": 303862,
+    "sha256": "d8fcf7ec954df18660b0ed456ac846f8b33f0f3eda9a02c9857d62139d3a63b5"
+  }
+]

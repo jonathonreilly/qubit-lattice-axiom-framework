@@ -1,0 +1,42 @@
+{
+  "utc": "2026-10-30T10:44:57Z",
+  "status": "PASS",
+  "pre_existing_files_checked": 3976,
+  "changed_or_missing_existing_files": [],
+  "new_files_outside_authorized_set": [],
+  "source_identities": "PASS",
+  "runner_syntax": "PASS",
+  "numerical_receipt_hashes": "PASS",
+  "numerical_check_count": 5,
+  "numerical_status": "PASS",
+  "review_status": "VERDICT: LAND",
+  "reviewed_source_sha256": "8474bec9faca8b0d9a1318846088e26cf47a06f89748236c8d440bc0ab046667",
+  "local_links": [
+    {
+      "file": "SPURION.md",
+      "target": "SPURION_LOG.md"
+    },
+    {
+      "file": "SPURION.md",
+      "target": "checks/spurion_results.json"
+    },
+    {
+      "file": "SPURION_LOG.md",
+      "target": "checks/spurion_review.md"
+    }
+  ],
+  "artifacts_sha256": {
+    "SPURION.md": "8474bec9faca8b0d9a1318846088e26cf47a06f89748236c8d440bc0ab046667",
+    "SPURION_LOG.md": "ae94d6ea8b149d3a1c05e0fdbd7a06c36754b66a6a71322933c0bb65e2f6c4ba",
+    "checks/spurion_check.py": "8e4afc5069bac09ae06a121d1b85ee334766acfeb820e74eafbbd69a32d11d7f",
+    "checks/spurion_criteria.md": "a0ace698a9e34be2e04cb6e0cd2d696551d0cdb611100be370de1ee62e068562",
+    "checks/spurion_inventory_before.json": "8d25cb19291937db68516f3af3eabff64b3721558440a11f1479779a43a83241",
+    "checks/spurion_numeric.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "checks/spurion_results.json": "cc2f2188a87459c3c728ab678f1930f1e929ca5e4c63fd3da83703954bdad3fc",
+    "checks/spurion_review.md": "64784917c26226e220a2452697050ebcee2726ad001bba42e7628d01b05236b6",
+    "checks/spurion_sources.json": "d665bea3920316329afc543f198e051bfcc513e044c8afec6186d2281bedd805"
+  },
+  "verification_nice": 20,
+  "verification_rss_bytes": 29851648,
+  "scope": "Integrity and finite checks; all-history LC1 and uniform coefficient/AF estimates remain OPEN; no commits"
+}

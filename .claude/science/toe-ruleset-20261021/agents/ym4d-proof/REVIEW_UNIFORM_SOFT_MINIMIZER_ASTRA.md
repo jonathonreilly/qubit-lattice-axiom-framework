@@ -1,0 +1,85 @@
+# Independent review of the uniform soft-minimizer kernels
+
+**Claim type:** meta. **Review scope:** the frozen [uniform soft-minimizer unit](UNIFORM_SOFT_MINIMIZER_ASTRA.md), US1–US17, and its exact consumption by [FC19–FC20](RESIDUAL_FULL_COLOUR_ASTRA.md). **Proof-obligation disposition: CLOSED within the supplied normalized model.** No author repair is required by this review. This is a scoped mathematical source confirmation, not a whole-PR PASS, audit verdict, or publication-readiness judgment.
+
+The conclusion is FC19 with `theta=L^-2<1/L`, uniformly in depth, level and top-torus side, for the actual linear stationary curvature, residual and S4′ spread kernels. The neutral stationary quartic bound FC20 consequently follows. The full Yang–Mills existence theorem and physical continuum mass-gap theorem both remain **OPEN**.
+
+## Frozen identity and independence
+
+The author note SHA-256 is `c7b7890187b9a350aea19e606957c606922fe741c6615382c3a4da0cd60d92c4`; the input manifest is `e61933a28ea8538a6e596ffa7e188bf6f0b107a49cb68a83f25713b970b0ea8f`; the author receipt is `4e980541b2bddc77586bfa7f9285ebb4428684268aedaf750b232d9c9b45fe6a`. All 17 files listed by that receipt, the receipt itself, and its nine mathematical/documentary sources were checked at entry and freeze. Their bytes were not edited.
+
+The exact consumer is SHA-256 `1ce9460989e5491bd491dcc348add15207e63013a0c537cd6c51caa19f0e3dd7`; its [prior review](REVIEW_RESIDUAL_FULL_COLOUR_ASTRA.md), SHA-256 `0b504129260e0269ae8dffa79f2113a6bb94675edc37c084fe8f9be6464e67bc`, is an unchanged historical record that left FC19 open. This report checks the new producer; it does not rewrite that earlier disposition or inherit its labels as premises.
+
+[Falsification criteria](checks/review_uniform_soft_criteria.md) were saved before independent code. The author note's numerical summaries and receipt were already visible. Author implementations and their detailed outputs were read only after both independent programs had been implemented and successfully executed. No author or predecessor helper was imported. The [source manifest](checks/review_uniform_soft_source_manifest.json) distinguishes full reads, selected mathematical proof ranges, documentary identity checks and external-paper page reads. It binds methodology at current-main `ca2bc7ddf64790da96cd43d42017d000fbfe4808`, not the stale local main.
+
+## Proof reconstruction
+
+### Normalization, stationary equations and domains: US1–US7
+
+The Cartan basis in FC2 has `N^-1 tr(h_A h_B)=delta_AB`. Expanding the normalized polar term cancels the quadratic contour variance and leaves `kappa_j r_j^2/2` per real colour, where `r_j=a_(j+1)-Q_root,j a_j`. Thus the quadratic energy is precisely US1. An unnormalized contour kernel would be a different Hessian. Direct differentiation gives `d_2* d_2 a_0=kappa_0 Q_root,0* r_0` and `kappa_(j-1) r_(j-1)=kappa_j Q_root,j* r_j`. These signs are opposite to the older residual convention exactly where required.
+
+For the actual endpoint paths, `Q_root=Q_str-d_c alpha` and `Q_root d=d_c ev`. Applying the fine divergence to the bottom Euler equation, using injectivity of `ev*`, and then inducting up the Euler equations proves `d* r_j=0`. Consequently the funnel term drops from `Q_root* r_j` exactly. Pairing with constant links gives zero mean successively. The straight averages compose by tiling their block points and longitudinal steps. A block of side `r` has row sum `r` and column sum `r^-3` in four-dimensional counting measure, so its adjoint contracts the sup norm by `r^-3`. Telescoping the kappa ratios gives US4, including variable positive kappas.
+
+At nonzero momentum, the dual minimizer is the constrained inverse of its diagonal positive matrix on the co-closed space. In real space this gives `(B_n+C_n)^-1` on `CoCl_0` only. For each accumulated straight-noise term, the row/column bound gives `||Q^(r)Q^(r)*||_2<=r^-2`; summing all terms yields `C_n<=kappa_-^-1/(1-L^-2)`. Factoring `B_n+C_n` proves US7. This comparison supplies no locality by itself. It cannot be moved to the unprojected root covariance; the independent domain mutation fails.
+
+The scalar/Hodge inverse is zero on constants. A harmonic top datum has the exact zero-energy lift `a_j=L^(j-n)v`. Exact top gradients lift by root covariance. Differences between minimizers lie in the quadratic kernel and leave all residuals, curvatures and closed spreads unchanged. No gauge direction or harmonic mode has been silently inverted or deleted. The two determinant Gram factors are not being recomputed by this data-kernel argument.
+
+### Uniform complex strip and alias sum: US8–US11
+
+I reconstructed the proofs in [the frozen snapshot](PROOF_session16_snapshot.md), including EXP-id/real/strip, N2-exp and N2-exp′, and checked the repairs recorded in [REVIEW_S13_S14](REVIEW_S13_S14.md), [REVIEW_S15_CONVERGENCE](REVIEW_S15_CONVERGENCE.md), and [REVIEW_S16_S17](REVIEW_S16_S17.md). The [linear package](LINEAR_PACKAGE.md) is credited as the existing producer; its headline is not used as a substitute for these arguments.
+
+The analytic factor is `delta_mu=D_ell(z_mu)D_ell(-z_mu)`, not absolute value at complex momentum. The finite-character identity `Delta_mu=phi_mu delta_mu` gives `P_mu=beta_mu/phi` and `a Sigma=phi Psi` exactly. On the real cube, the positive noise and alias bounds give `1<=R_mu<=Rbar`. For `|x|^2<=6`, product bounds yield `a delta_mu>=kappa(1-|x|^2/6)` and `phi>=4|x|^2/pi^2`; outside that ball `beta_mu>=phi`. These establish the depth-independent lower bound `beta_mu>=min(kappa,24/pi^2)`.
+
+For a fixed `0<r0<sqrt(6)`, `Psi` has the stated strictly positive real lower bound near zero. Away from zero the second residual formula uses `Sigma` and its real lower bound instead. Nonzero aliases satisfy `phi_K(x)>=9`; their complex denominators obey the stated factor `1-4 eta^2 cosh(eta)^2/9`. The zero-alias fine-curvature expression cancels algebraically: after substitution, `nu_mu D_mu/delta_mu=nu_mu^(ell)` and antisymmetry make the apparent singular numerator divisible by `phi`. The extra fine-curvature denominator condition in the repaired source is required and is present; checking only the residual strip would be insufficient.
+
+All perturbation bounds are depth independent. At `eta=0` the beta and Psi errors vanish, the away-zero inequality has strict room, and the fine-curvature condition vanishes. Choose one fixed `r0`; positive compact kappa bounds and continuity then give one positive strip width uniformly over all depths and all permitted kappa sequences. This does not depend on the sampled pair `.005,.57` or on a numerically estimated pole.
+
+The curvature alias majorant contains both the extra sigma-coordinate factor and the radial inverse factor. Summing first over the other three coordinates, according to their largest absolute coordinate, bounds them by a constant times `sum_m (1+m)^-2(1+log(1+m))^2`; the remaining sigma factor is summable. The complex fine-offset phase is bounded uniformly since `u/ell` remains in a fixed cell. Thus the complete alias sum has a depth- and offset-independent bound.
+
+The full alias expression is periodic meromorphic: a `2pi` momentum shift permutes residues, with the integer-offset phase consistent modulo `ell`. The local uniform bounds on translated cubes remove the apparent singularities on their overlaps. This supplies the required holomorphic periodic strip, including its faces. Fourier contour displacement gives exponential coefficients; restriction to finite tori gives exact periodization. The datum is the top one-form. No unrestricted Coulomb extension on arbitrary two-forms is asserted.
+
+### Intermediate curvatures and actual contour spreads: US12–US14
+
+Curling the positive-residual chain gives US12 with its plus sign and factor `L^(2(n-i-1))`. The normalized plaquette averages have nonnegative coefficients and row sum one. Residual transport contributes `L^-3(n-i-1)`, while the displayed curvature conversion contributes `L^2(n-i-1)`. The resulting series is bounded by `sum_s L^-s<=3/2`. All averaging supports remain within a fixed distance in top units. This reproduces the full intermediate-curvature lemma KF and yields the own-unit amplitude `L^-2(n-j)`.
+
+An independent geometric construction checks the actual S4′ spreads. Sweep every signed axial path edge through the length-L straight leg. The strip boundaries telescope to `P_y-translate_(L e_mu) P_y+S_mu(y)-S_mu(0)`, exactly the contour minus the direct root path. Parallel edges contribute zero. The individual surface has coefficient norm at most `L sum_(nu!=mu)|y_nu|<=3L(L-1)/2`; subtracting the average gives at most `3L(L-1)`, within the author's enlarged `50L^2`. Supports stay in a fixed box. Lifting the complete contour before projection covers periodic winding; common winding cancels. The exact integer checks cover every ordering and block point for L=3, not a guessed spread form factor.
+
+### Separate absolute row and column norms: US15–US16
+
+For `a=eta-m>0`, the unit-lattice sum is at most `coth(a/2)^4`, even for fractional output positions: each one-dimensional sum is convex between consecutive integers. On an output mesh of spacing `1/r`, the column sum is `coth(a/(2r))^4<=r^4 coth(a/2)^4`; monotonicity of `t coth t` proves the inequality. This explicitly retains the four-dimensional output density.
+
+On the torus, the kernel is an image sum. Multiplying by `exp(m d_T)` and using `d_T<=|x-y+T v|` for each image permits exact unfolding to the infinite lattice sums. No extra factor depending on T is required. Fixed link/plaquette orientations, colours and `24L^4` contour labels only change the common constant. The finer offset conventions cost a fixed exponential factor.
+
+Apply these facts to `f_0` with `s=n`, and to `r_j,z_(j,tau)` with `s=n-j-1`. The residual actually has the stronger amplitude `L^-3s`; weakening it to `L^-2s` is legitimate. Stokes and KF give the spread amplitude `L^-2s`. The two absolute bounds in FC19 follow with one A and positive m independent of n,j,T. This is the analytic proof of `theta=L^-2`; an L2 estimate or a finite torus calculation alone would not suffice.
+
+### Neutral quartic consequence: US17
+
+FC2 follows by expanding the contour characteristic function through degree four; the Wilson term follows from the cosine expansion. The total phase of the polar maximizer is order three, so enforcing its SU(N) determinant-one constraint changes its maximum only at degree six. Thus the constraint does not change the displayed quadratic or quartic coefficients. These give FC18 on the linear stationary chain. The cubic tensor with two Cartan inputs and any internal colour vanishes because it is a commutator tensor. The remaining correction to the chain pairs with the stationary quadratic derivative and drops from degree four. Thus the neutral quartic consists of the displayed `f_0^4`, `r avg(z^3)`, `r^2 avg(z^2)` and `r^4` terms; none is assumed individually zero.
+
+Anchor one external leg in each polarized term. Its column bound supplies `L^4s`, while the four amplitudes supply `L^-8s`; the other three legs use row bounds. The torus diameter is at most the sum of their distances to the interaction site. Hence each level costs `C A^4 L^-4s`, summable by `1/(1-L^-4)`. Variable kappas only enter the fixed upper coefficient bound. This closes the neutral FC20 estimate with its producer now supplied. It neither exchanges the volume/momentum/depth limits nor extracts a neutral one-loop finite part.
+
+## Independent diagnostics and controls
+
+[Program 01](checks/review_uniform_soft_01.py) and its [complete output](checks/review_uniform_soft_01_out.json) record 34/34 predicates. It builds the actual path, gradient and curl matrices; solves explicit root-zero-gauge KKT systems; independently constructs the projected Schur comparison; and solves an actual depth-two chain by a gauge-completed sparse system. [Program 02](checks/review_uniform_soft_02.py) and its [complete output](checks/review_uniform_soft_02_out.json) record 84/84 predicates, using finite characters with analytic negative momentum, complete finite alias sums, sufficient-strip arithmetic and exact periodized geometric sums. These counts include repeated sample tests and one structural obligation-presence check; they are not 118 independent theorems.
+
+| Control | Observed result |
+|---|---|
+| Every L=3 contour and mean-subtracted spread | 7,776 of each have exact integer boundary identities; individual norm at most 9, spread norm at most 14.185186. |
+| Complete top `3^4`, fine `9^4` periodic KKT kernels | Largest weighted coarse-scaled F0 row 1.131779641909; column 113.859004953264. The missing-density mutation fails on this actual kernel. |
+| Actual depth-two chain, kappas `.7,1.4` | 26,568 variables; stationary error `3.21e-13`; residual transport error `1.58e-14`; curvature identity error `1.42e-14`. |
+| Complex aliases at ell=3,9,27 | Both residual formulas, cancellation, real beta bound, pole bound and face periodicity pass at the recorded points. The largest recorded identity error is `8.75e-11`. |
+| Deliberate mutations | Missing mean spread, removed plaquette, wrong integrated-link or curvature scale, wrong residual sign/kappa, wrong gauge domain, missing output density/images, excessive sufficient strip and uncurled quartic amplitude are rejected. |
+
+The two reviewer implementation failures are preserved: an unmatched parenthesis before Program 01 executed, and NumPy-boolean JSON serialization after Program 02 computed its first result. Their exact source snapshots, empty stdout files and error output remain alongside the corrected runs. No scientific predicate failed or threshold was relaxed to obtain these results. Several Program 02 in-code identity thresholds are looser than the predeclared `1e-10`; a separate exhaustive postcheck applies the original stricter criterion to every recorded identity error and passes, without editing or discarding the original execution. Details, including the failed PDF page-splitting attempt, are in the [control notes](checks/review_uniform_soft_control_notes.md) and [failure record](checks/review_uniform_soft_failures.json).
+
+Author code was then inspected in full. Its minimizer uses LSMR, whereas this review uses direct KKT and a separately built gauge-completed depth-two solve. Its plaquette fillings use step swaps; this review uses swept strips. The complex formulas necessarily overlap the mathematical source, and the conservative strip parameters were visible in the prose; those arithmetic comparisons are not an independent derivation of the source inequalities. The all-depth justification is the proof reconstruction above. The author's 81/62/64/53 recorded predicates were inspected, not re-executed by this worker; 56 path predicates repeat in each of the first three invocations. The author's additional density witness was selected after seeing its output, as disclosed in its second criteria.
+
+Finite floating-point cases do not prove uniformity or complex analyticity. The wide-strip diagnostic rejects a sufficient certificate; it does not locate a pole. For its deliberately invalid wide case, downstream rational expressions outside their prerequisites are not treated as bounds. Only integer chain equalities are exact computer checks.
+
+## Literature, premises and remaining work
+
+The [literature comparison](checks/review_uniform_soft_literature.md) records exact primary versions, page coverage and hypothesis differences. Dimock's hard constrained axial-gauge and d=3 multiscale results are comparisons only. Their constrained fluctuation covariance is not this soft data minimizer. In particular the printed d=3 `L^-4` combines a volume average with edge-length conversion, whereas the present d=4 `L^-4` is a volume average on integrated links. No external theorem is imported as the missing uniform producer.
+
+The installed review-loop and physics-loop skills and pinned current-main methodology were applied to this bounded assignment. The current axiom memo, premise registry and all three registered primitive notes were read. They supply no Wilson dynamics, normalized soft action or continuum spectral conclusion. Those are not smuggled into the framework by this result. No empirical value, new axiom, new primitive or no-go theorem is introduced.
+
+Charged cubic-source exchange, conditional Gaussian localization, the full finite-part increment, a uniform nonlinear complex neighborhood, interacting RG/sea bounds, continuum OS existence/reconstruction and a positive physical Hamiltonian mass gap remain outside the proved boundary. The coordinator retains git, PR, shared summaries, audit surfaces and the integrated mechanical gates. This worker made no edits to those surfaces and requests no audit-status assignment. The [review receipt](checks/review_uniform_soft_receipt.json) freezes this report and its evidence; changes to any consumed mathematical bytes require affected re-review.

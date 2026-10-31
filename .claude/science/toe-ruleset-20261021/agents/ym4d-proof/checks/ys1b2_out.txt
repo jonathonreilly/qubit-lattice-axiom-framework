@@ -1,0 +1,9 @@
+========================================================================================================
+ys1b2 -- clause B5 of ys1b_criteria.md, run alone (ys1b_power.py aborted at this clause).
+========================================================================================================
+  i=1: true LI = 3.487654321e-01 (mass 243 = L^{i(D+1)} True) | control LI = 1.604938272e-01 (mass 135) | differ: True
+  i=2: true LI = 9.083684013e-02 (mass 59049 = L^{i(D+1)} True) | control LI = 1.603047160e-02 (mass 12393) | differ: True
+  i=3: true LI = 1.565309864e-02 (mass 14348907 = L^{i(D+1)} True) | control LI = 1.036448192e-03 (mass 1043199) | differ: True
+
+  B5 VERDICT (control must differ from the true pipeline at every i): PASS
+========================================================================================================

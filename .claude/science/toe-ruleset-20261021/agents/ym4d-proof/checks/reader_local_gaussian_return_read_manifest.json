@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "role": "author; neither independent reviewer nor auditor",
+  "frozen_source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md",
+    "sha256": "4f94b5e2102391441233621d99be3e4b14dc46b9be89ea35915b354a4d0a06d6",
+    "lines": 608,
+    "read_ranges": [
+      [
+        1,
+        608
+      ]
+    ],
+    "role": "Entire new argument authored and checked; source hash announced to coordinator before this package."
+  },
+  "mathematical_producers": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8",
+      "lines": 543,
+      "read_ranges": [
+        [
+          1,
+          543
+        ]
+      ],
+      "role": "Complete direct read. Actual lift K, complex tube, partition cover, entry envelopes, exact P+E decomposition and complete-reader M/B budgets; no review verdict used as proof."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+      "sha256": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8",
+      "lines": 564,
+      "read_ranges": [
+        [
+          130,
+          430
+        ]
+      ],
+      "role": "Direct reread of Gaussian jets, weak sphere traces, normalized marginal identity, endpoint forests, finite-range reader theorem and elementary gas proof. Closest prior producer; necessary steps are rebuilt in the new source. Earlier author-session full coverage is not counted as a new independent read."
+    }
+  ],
+  "procedure_sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "lines": 11,
+      "read_ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "role": "Complete owner process, reread; written analysis needs no numerical preregistration."
+    },
+    {
+      "path": "AGENTS.md",
+      "coverage": "Complete direct read at worktree root.",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "lines": 26
+    },
+    {
+      "path": "/Users/jonBridger/AGENTS.md",
+      "coverage": "Complete direct read of ancestor instruction.",
+      "sha256": "d0614ed18df67520e63a8c72c4efe6b6e87e593b668f1840217901e70853c80d",
+      "lines": 31
+    }
+  ],
+  "methodology": [
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "lines": 193,
+      "coverage": "Same-session prior complete read, unchanged identity rechecked; SCIENCE_WORKFLOW and physics-loop entry were also reread for this new unit."
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "lines": 35,
+      "coverage": "Same-session prior complete read, unchanged identity rechecked; SCIENCE_WORKFLOW and physics-loop entry were also reread for this new unit."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "lines": 93,
+      "coverage": "Same-session prior complete read, unchanged identity rechecked; SCIENCE_WORKFLOW and physics-loop entry were also reread for this new unit."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "lines": 434,
+      "coverage": "Same-session prior complete read, unchanged identity rechecked; SCIENCE_WORKFLOW and physics-loop entry were also reread for this new unit."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "lines": 336,
+      "coverage": "Same-session prior complete read, unchanged identity rechecked; SCIENCE_WORKFLOW and physics-loop entry were also reread for this new unit."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "lines": 309,
+      "coverage": "Same-session prior complete read, unchanged identity rechecked; SCIENCE_WORKFLOW and physics-loop entry were also reread for this new unit."
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "lines": 130,
+      "coverage": "Same-session prior complete read, unchanged identity rechecked; SCIENCE_WORKFLOW and physics-loop entry were also reread for this new unit."
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "lines": 233,
+      "coverage": "Same-session prior complete read, unchanged identity rechecked; SCIENCE_WORKFLOW and physics-loop entry were also reread for this new unit."
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "lines": 52,
+      "coverage": "Same-session prior complete read, unchanged identity rechecked; SCIENCE_WORKFLOW and physics-loop entry were also reread for this new unit."
+    }
+  ],
+  "review_loop_boundary": "Read the same-session selected-main review-loop entry for author/reviewer authority only; combined display was truncated in operational portions. No review or landing operation is performed or claimed from that partial display.",
+  "primary_literature": {
+    "url": "https://arxiv.org/html/1411.1107v1",
+    "author": "Martin Lohmann",
+    "version": "v1",
+    "displayed_windows_read": [
+      [
+        0,
+        161
+      ],
+      [
+        314,
+        347
+      ],
+      [
+        778,
+        822
+      ],
+      [
+        854,
+        913
+      ]
+    ],
+    "used_content": "Intersection-component regrouping at line323; independent-pair BKAR and Gaussian derivatives324–344; sphere interpretation854 and single-site limitation Remark10 at873–875. Partial surrounding context only; full Theorem1 not imported.",
+    "credit_only_not_proof": "All used algebra, row estimates, coefficient bounds and cluster criteria are rebuilt locally."
+  },
+  "novelty_search": {
+    "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+    "paths": [
+      "docs/lattice",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof"
+    ],
+    "pattern": "complete-reader.*(Gaussian|logarithm)|normalized Gaussian.*reader|reader-local Gaussian",
+    "result": "No matching main line returned by git grep in the named scopes. Current PC/BF targeted search found the known covariance reader result and finite-range limitation. This is scoped comparison, not exhaustive novelty."
+  },
+  "excluded_inputs": [
+    "FINITE_U_CRITICAL_FIELD_ASTRA.md and its current review/proposal",
+    "PC/BF review text as mathematical evidence",
+    "actual nonlinear PS interaction estimates",
+    "real interacting outside-chart or graded-complement tails",
+    "arbitrary hard histories",
+    "shifted complex contour chains",
+    "effective iteration and physical continuum scale identification"
+  ],
+  "execution_scope": "No numerical experiment, scientific runner, subprocess agent, Git mutation, shared-front edit, audit, lock or publication. Root owns integration and fresh review."
+}

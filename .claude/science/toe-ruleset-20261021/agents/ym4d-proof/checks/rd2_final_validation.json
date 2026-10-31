@@ -1,0 +1,36 @@
+{
+  "kind": "final deterministic source/document validation; not a numerical physics test",
+  "utc": "2026-10-30T00:21:41.305786+00:00",
+  "head": "295b508bea2c65bf548172f3190e32f7f7eaf6cf",
+  "reviewed_RD_sha256": "a60232a648e9832d0223cc0fa06ef84d8dbfe54fa91f875a8c96c3f89140aba5",
+  "final_RD_LOG_sha256": "2099d4512e66add04684efcd8028a99d15979db283ac236f090f21978b9570df",
+  "review_sha256": "4c9eaecbee19dcdb07634dde15c43e3b68824bf00b2df4ed9050bab57b693ed2",
+  "preexisting_file_count": 3300,
+  "preexisting_changed": [
+    "RD.md",
+    "RD_LOG.md"
+  ],
+  "preexisting_unchanged": 3298,
+  "deleted": [],
+  "new_before_this_receipt": [
+    "checks/rd2_author_validation.json",
+    "checks/rd2_review.md",
+    "checks/rd2_source_inventory.json"
+  ],
+  "this_receipt": "checks/rd2_final_validation.json",
+  "out_of_scope_changes": [],
+  "document_issues": [],
+  "git_diff_check": {
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "review_disposition": {
+    "B1": "RESOLVED for explicit finite H12 construction only",
+    "B2": "PARTIAL",
+    "B3": "PARTIAL",
+    "full_theorem": "HOLD"
+  },
+  "numerical_checks_run": false,
+  "editable_prompt_files_changed": []
+}

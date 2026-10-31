@@ -1,0 +1,851 @@
+{
+  "schema_version": 1,
+  "review_task": "/root/review_bare_coupling_remainder",
+  "phase": "source-only",
+  "frozen_at_utc": "2026-10-30T14:02:01.125288+00:00",
+  "workdir": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "methodology_pin": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "observed_origin_main": "bcab5d2ee4a908fbb4e6025635fb878e6c157ebe",
+  "head_at_freeze": "43d594a86c35447c17c7b2f0d7884a2289660253",
+  "procedure_choice": "Pinned repository review-loop/physics-loop procedure; actual installed entry hashes recorded separately and not represented as pinned repo copies. PROCESS_LIGHT11: read and mechanical-only review; no science/numerical runs, workers, commits, publication or audit verdicts.",
+  "identity_limit": "Astra/max is requested configuration; no independent backend attestation. Fresh reviewer distinct from author /root/mixed_cap_chart; same model family.",
+  "author_packet_opened_before_freeze": false,
+  "prior_review_reports_opened": [],
+  "excluded_fronts": [
+    "HANDOFF.md",
+    "PROOF.md",
+    "CONTINUATION_ASTRA.md",
+    "MASS_GAP_TARGET.md",
+    "lane registry/front summaries"
+  ],
+  "sources": [
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_REMAINDER_ASTRA.md",
+      "sha256": "b75f9cae074c72344bd252d093c0a1d30c502c53819cde5b62e5b4c8b9b26b61",
+      "line_count": 583,
+      "bytes": 30430,
+      "kind": "source_full",
+      "consumed_line_windows": [
+        [
+          1,
+          583
+        ]
+      ],
+      "scope": "Entire new target, read before any author packet or prior review.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_REMAINDER_ASTRA.md",
+      "matches_head_bytes": true,
+      "head_blob": "310d6c00892f33ac2ff0ffbcf745b6c2ed0230b5"
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "line_count": 556,
+      "bytes": 29068,
+      "kind": "source_full",
+      "consumed_line_windows": [
+        [
+          1,
+          556
+        ]
+      ],
+      "scope": "Actual finite-u phase, fixed point, lift and critical covariance tails, complete readers.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "matches_head_bytes": true,
+      "head_blob": "b0b5211657606f2aaceddef543aa31935630c5fc"
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "line_count": 713,
+      "bytes": 36322,
+      "kind": "source_full",
+      "consumed_line_windows": [
+        [
+          1,
+          713
+        ]
+      ],
+      "scope": "Full normalized Gaussian density/forest/parity/reader construction.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "matches_head_bytes": true,
+      "head_blob": "41b48e11f5fce142437a26bfc6f98b0f55fdd5e9"
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+      "line_count": 711,
+      "bytes": 36894,
+      "kind": "source_full",
+      "consumed_line_windows": [
+        [
+          1,
+          711
+        ]
+      ],
+      "scope": "Full exact product-ball sides/corners and side-root estimates.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "matches_head_bytes": true,
+      "head_blob": "c2a56c0a455dd489578de913c351259ab0080296"
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHRINKING_CHART_RETURN_ASTRA.md",
+      "sha256": "9ae446ca746639ff77295f9da712f47e4be9d315d7c26e975535f1602321abfc",
+      "line_count": 247,
+      "bytes": 12513,
+      "kind": "source_full",
+      "consumed_line_windows": [
+        [
+          1,
+          247
+        ]
+      ],
+      "scope": "Shrinking-domain radius ordering and sigma cancellations.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHRINKING_CHART_RETURN_ASTRA.md",
+      "matches_head_bytes": true,
+      "head_blob": "fb03e3df909345fdf881ad2bdc48f02692bf94b4"
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/WEIGHTED_RETURN_JETS_ASTRA.md",
+      "sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "line_count": 937,
+      "bytes": 46438,
+      "kind": "source_full",
+      "consumed_line_windows": [
+        [
+          1,
+          937
+        ]
+      ],
+      "scope": "Full actual real moving-center jet construction and WR38-40 identities.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WEIGHTED_RETURN_JETS_ASTRA.md",
+      "matches_head_bytes": true,
+      "head_blob": "f320d286323d711a760a4d6304630e698a84be29"
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_CUT_WHITE_ASSEMBLY_ASTRA.md",
+      "sha256": "e058637300e8d0af58a35be23299ca08c4024eed335ab8529f7e1c8b6ae2a3f4",
+      "line_count": 443,
+      "bytes": 23553,
+      "kind": "source_partial",
+      "consumed_line_windows": [
+        [
+          1,
+          180
+        ]
+      ],
+      "scope": "BW1/BW2 literal transported original-a chart identity; later white-cube results unused.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_CUT_WHITE_ASSEMBLY_ASTRA.md",
+      "matches_head_bytes": true,
+      "head_blob": "2c93eae2246acfef482f73d9e4e4b8b8ccd9d7b8"
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "line_count": 568,
+      "bytes": 28993,
+      "kind": "source_partial",
+      "consumed_line_windows": [
+        [
+          31,
+          343
+        ]
+      ],
+      "scope": "Actual lift/tree quotient, small curvature quadratic form, compact normalizer analytic domain.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "matches_head_bytes": true,
+      "head_blob": "2515668a8d93fde3b709af5c0c0676d8a34cef7d"
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+      "sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+      "line_count": 624,
+      "bytes": 32110,
+      "kind": "source_partial",
+      "consumed_line_windows": [
+        [
+          103,
+          287
+        ]
+      ],
+      "scope": "Local Taylor/Mayer coefficient, marking, parity and scalar-moment envelopes.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+      "matches_head_bytes": true,
+      "head_blob": "4309142daad1db9c8c86e57a1da58fb7dc30b9eb"
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "line_count": 597,
+      "bytes": 29717,
+      "kind": "source_partial",
+      "consumed_line_windows": [
+        [
+          38,
+          299
+        ],
+        [
+          364,
+          447
+        ]
+      ],
+      "scope": "Actual real compact model, small boundary, payable shells, matched regional denominator and rare charge. Complex coarse compact continuation not used.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "matches_head_bytes": true,
+      "head_blob": "e50e8b5de9c1be64bfdde165982069bea53fd517"
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/COMPACT_RETURN_GLUING_ASTRA.md",
+      "sha256": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "line_count": 644,
+      "bytes": 32802,
+      "kind": "source_partial",
+      "consumed_line_windows": [
+        [
+          41,
+          279
+        ]
+      ],
+      "scope": "Exact selected/unselected history partition and original chart ratio; no previous review consumed.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COMPACT_RETURN_GLUING_ASTRA.md",
+      "matches_head_bytes": true,
+      "head_blob": "0466de0ff56aa0256b8af6a748c55f33040e01d4"
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/MARKED_COMPACT_CHART_ASTRA.md",
+      "sha256": "04f79ed4d0c58e97f3cade072631966b577f02754f9a96d6dcd18ee2f3045800",
+      "line_count": 753,
+      "bytes": 37222,
+      "kind": "source_partial",
+      "consumed_line_windows": [
+        [
+          37,
+          703
+        ]
+      ],
+      "scope": "Mathematical construction through marked buffers, density-only forests, rare weights, exact compact/chart cancellation; endpoint heading only at 703.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MARKED_COMPACT_CHART_ASTRA.md",
+      "matches_head_bytes": true,
+      "head_blob": "abc12d270500f9da9692b26dd997f1e02699f1e1"
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "line_count": 510,
+      "bytes": 27875,
+      "kind": "source_partial",
+      "consumed_line_windows": [
+        [
+          36,
+          490
+        ]
+      ],
+      "scope": "Exact touching fibre, producer hypotheses, all side/corner factors, normalized regional logarithm, physical specialization and local agreement.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "matches_head_bytes": true,
+      "head_blob": "d184230404f9f3e712dbd4c841f55ed58d6dc216"
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "line_count": 592,
+      "bytes": 31328,
+      "kind": "source_partial",
+      "consumed_line_windows": [
+        [
+          32,
+          570
+        ]
+      ],
+      "scope": "Actual regional force, principal covariance, arbitrary holes, boundary-mask readers, analytic interior branch, determinant and physical exterior. Endpoint heading/context at 570.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "matches_head_bytes": true,
+      "head_blob": "a6d460dd794f29068a070d2e6286961f33bb6b25"
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "line_count": 812,
+      "bytes": 94345,
+      "kind": "source_partial",
+      "consumed_line_windows": [
+        [
+          312,
+          376
+        ],
+        [
+          666,
+          680
+        ]
+      ],
+      "scope": "Only complex-Haar/polar/centered-normalizer proofs and applicable errata S5-S7 are load-bearing. Collateral historical text in the erratum window is not evidence. Earlier rg routing snippets are metadata only.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "matches_head_bytes": true,
+      "head_blob": "05c5e3168eac736e409c87b52ce6e5bb69d81513"
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "line_count": 617,
+      "bytes": 32365,
+      "kind": "source_partial",
+      "consumed_line_windows": [
+        [
+          1,
+          300
+        ]
+      ],
+      "scope": "Actual compact-word coercivity and actual compact normalizer including degenerate means; later conditional excess-energy theorem not consumed.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "matches_head_bytes": true,
+      "head_blob": "a6b54a0e3c1533d696c4265d6fdc0771f6678d41"
+    }
+  ],
+  "process": [
+    {
+      "path": "/Users/jonBridger/AGENTS.md",
+      "sha256": "d0614ed18df67520e63a8c72c4efe6b6e87e593b668f1840217901e70853c80d",
+      "line_count": 31,
+      "bytes": 5441,
+      "kind": "process_full",
+      "consumed_line_windows": [
+        [
+          1,
+          31
+        ]
+      ],
+      "scope": "Governing procedure or premise-scope boundary; not mathematical evidence for the target.",
+      "worktree_head": null
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/AGENTS.md",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "line_count": 26,
+      "bytes": 1118,
+      "kind": "process_full",
+      "consumed_line_windows": [
+        [
+          1,
+          26
+        ]
+      ],
+      "scope": "Governing procedure or premise-scope boundary; not mathematical evidence for the target.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": "AGENTS.md",
+      "matches_head_bytes": true,
+      "head_blob": "06a5d79cfd2e5e6886f0702e96bd40b3d581a5ae",
+      "matches_methodology_pin_bytes": true,
+      "matches_origin_main_bytes": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "line_count": 140,
+      "bytes": 9276,
+      "kind": "process_full",
+      "consumed_line_windows": [
+        [
+          1,
+          140
+        ]
+      ],
+      "scope": "Governing procedure or premise-scope boundary; not mathematical evidence for the target.",
+      "worktree_head": null
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/review-loop/SKILL.md",
+      "sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "line_count": 313,
+      "bytes": 20680,
+      "kind": "process_full",
+      "consumed_line_windows": [
+        [
+          1,
+          313
+        ]
+      ],
+      "scope": "Governing procedure or premise-scope boundary; not mathematical evidence for the target.",
+      "worktree_head": null
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "line_count": 193,
+      "bytes": 11788,
+      "kind": "process_full",
+      "consumed_line_windows": [
+        [
+          1,
+          193
+        ]
+      ],
+      "scope": "Governing procedure or premise-scope boundary; not mathematical evidence for the target.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "matches_head_bytes": true,
+      "head_blob": "bea573caf2b0ea43a2c6519c9a474d7a10d82965",
+      "matches_methodology_pin_bytes": true,
+      "matches_origin_main_bytes": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "line_count": 35,
+      "bytes": 2180,
+      "kind": "process_full",
+      "consumed_line_windows": [
+        [
+          1,
+          35
+        ]
+      ],
+      "scope": "Governing procedure or premise-scope boundary; not mathematical evidence for the target.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "matches_head_bytes": true,
+      "head_blob": "ba6fc9a69f3e6dfca01f3257d611d1a057def305",
+      "matches_methodology_pin_bytes": true,
+      "matches_origin_main_bytes": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "line_count": 93,
+      "bytes": 5767,
+      "kind": "process_full",
+      "consumed_line_windows": [
+        [
+          1,
+          93
+        ]
+      ],
+      "scope": "Governing procedure or premise-scope boundary; not mathematical evidence for the target.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "matches_head_bytes": true,
+      "head_blob": "e265934158bfa3126153c3dda8ec45d8d4686b46",
+      "matches_methodology_pin_bytes": true,
+      "matches_origin_main_bytes": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/ai_methodology/skills/review-loop/SKILL.md",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "line_count": 370,
+      "bytes": 24561,
+      "kind": "process_full",
+      "consumed_line_windows": [
+        [
+          1,
+          370
+        ]
+      ],
+      "scope": "Governing procedure or premise-scope boundary; not mathematical evidence for the target.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "matches_head_bytes": true,
+      "head_blob": "4796f0492a9d04a8f779c29960240dff32ee0b60",
+      "matches_methodology_pin_bytes": true,
+      "matches_origin_main_bytes": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "line_count": 126,
+      "bytes": 4975,
+      "kind": "process_full",
+      "consumed_line_windows": [
+        [
+          1,
+          126
+        ]
+      ],
+      "scope": "Governing procedure or premise-scope boundary; not mathematical evidence for the target.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "matches_head_bytes": true,
+      "head_blob": "cd4b0f2a9bf9b2bb20e2316993cc49f669430c0e",
+      "matches_methodology_pin_bytes": true,
+      "matches_origin_main_bytes": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "line_count": 336,
+      "bytes": 16755,
+      "kind": "process_full",
+      "consumed_line_windows": [
+        [
+          1,
+          336
+        ]
+      ],
+      "scope": "Governing procedure or premise-scope boundary; not mathematical evidence for the target.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "matches_head_bytes": true,
+      "head_blob": "457507d252fb603e475805f674aaca9ff8ca849e",
+      "matches_methodology_pin_bytes": true,
+      "matches_origin_main_bytes": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "line_count": 96,
+      "bytes": 5188,
+      "kind": "process_full",
+      "consumed_line_windows": [
+        [
+          1,
+          96
+        ]
+      ],
+      "scope": "Governing procedure or premise-scope boundary; not mathematical evidence for the target.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "matches_head_bytes": true,
+      "head_blob": "1ec31f6e817cb259df1bdafa4a358b12e0ac15b8",
+      "matches_methodology_pin_bytes": true,
+      "matches_origin_main_bytes": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "line_count": 183,
+      "bytes": 12608,
+      "kind": "process_full",
+      "consumed_line_windows": [
+        [
+          1,
+          183
+        ]
+      ],
+      "scope": "Governing procedure or premise-scope boundary; not mathematical evidence for the target.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "matches_head_bytes": true,
+      "head_blob": "90d142bceca9de62e2941519ddd17650cb6366e6",
+      "matches_methodology_pin_bytes": true,
+      "matches_origin_main_bytes": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "line_count": 248,
+      "bytes": 12940,
+      "kind": "process_full",
+      "consumed_line_windows": [
+        [
+          1,
+          248
+        ]
+      ],
+      "scope": "Governing procedure or premise-scope boundary; not mathematical evidence for the target.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "matches_head_bytes": true,
+      "head_blob": "7f46ba9028f7b047cf7589521d89b7492e25273c",
+      "matches_methodology_pin_bytes": true,
+      "matches_origin_main_bytes": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "line_count": 140,
+      "bytes": 7554,
+      "kind": "process_full",
+      "consumed_line_windows": [
+        [
+          1,
+          140
+        ]
+      ],
+      "scope": "Governing procedure or premise-scope boundary; not mathematical evidence for the target.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "matches_head_bytes": true,
+      "head_blob": "04ea075224460de0223a1a0b22a68423c6df1a3a",
+      "matches_methodology_pin_bytes": true,
+      "matches_origin_main_bytes": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "line_count": 394,
+      "bytes": 23216,
+      "kind": "process_full",
+      "consumed_line_windows": [
+        [
+          1,
+          394
+        ]
+      ],
+      "scope": "Governing procedure or premise-scope boundary; not mathematical evidence for the target.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "matches_head_bytes": true,
+      "head_blob": "da1bc02c3d9d3ba6b667139762ffa8d66efc73b1",
+      "matches_methodology_pin_bytes": true,
+      "matches_origin_main_bytes": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "line_count": 233,
+      "bytes": 11333,
+      "kind": "process_full",
+      "consumed_line_windows": [
+        [
+          1,
+          233
+        ]
+      ],
+      "scope": "Governing procedure or premise-scope boundary; not mathematical evidence for the target.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "matches_head_bytes": true,
+      "head_blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+      "matches_methodology_pin_bytes": true,
+      "matches_origin_main_bytes": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "line_count": 130,
+      "bytes": 6427,
+      "kind": "process_full",
+      "consumed_line_windows": [
+        [
+          1,
+          130
+        ]
+      ],
+      "scope": "Governing procedure or premise-scope boundary; not mathematical evidence for the target.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "matches_head_bytes": true,
+      "head_blob": "0075998454899efb1b83e71daea5bc60d3499d49",
+      "matches_methodology_pin_bytes": true,
+      "matches_origin_main_bytes": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "line_count": 52,
+      "bytes": 6416,
+      "kind": "process_full",
+      "consumed_line_windows": [
+        [
+          1,
+          52
+        ]
+      ],
+      "scope": "Governing procedure or premise-scope boundary; not mathematical evidence for the target.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": "docs/audit/data/axiom_premise_nodes.json",
+      "matches_head_bytes": true,
+      "head_blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa",
+      "matches_methodology_pin_bytes": true,
+      "matches_origin_main_bytes": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "line_count": 57,
+      "bytes": 2581,
+      "kind": "process_full",
+      "consumed_line_windows": [
+        [
+          1,
+          57
+        ]
+      ],
+      "scope": "Governing procedure or premise-scope boundary; not mathematical evidence for the target.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "matches_head_bytes": true,
+      "head_blob": "a74392f6939b2e51109756c37d6d5d59bb54c5a4",
+      "matches_methodology_pin_bytes": true,
+      "matches_origin_main_bytes": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "line_count": 99,
+      "bytes": 4770,
+      "kind": "process_full",
+      "consumed_line_windows": [
+        [
+          1,
+          99
+        ]
+      ],
+      "scope": "Governing procedure or premise-scope boundary; not mathematical evidence for the target.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "matches_head_bytes": true,
+      "head_blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b",
+      "matches_methodology_pin_bytes": true,
+      "matches_origin_main_bytes": true
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "line_count": 110,
+      "bytes": 5313,
+      "kind": "process_full",
+      "consumed_line_windows": [
+        [
+          1,
+          110
+        ]
+      ],
+      "scope": "Governing procedure or premise-scope boundary; not mathematical evidence for the target.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "matches_head_bytes": true,
+      "head_blob": "5acb4643882438f8dd16baf9694e6fa2d33d1dc6",
+      "matches_methodology_pin_bytes": true,
+      "matches_origin_main_bytes": true
+    }
+  ],
+  "primary_literature": [
+    {
+      "name": "Balaban, Feldman, Knorrer, Trubowitz, Part 3",
+      "url": "https://arxiv.org/html/1609.01747v1",
+      "arxiv_version": "1609.01747v1",
+      "rendered_line_count": 351,
+      "consumed_rendered_windows": [
+        [
+          0,
+          48
+        ],
+        [
+          148,
+          154
+        ],
+        [
+          235,
+          260
+        ],
+        [
+          262,
+          329
+        ]
+      ],
+      "scope": "Introduction and equations (21)-(25) with remaining Stokes pieces. The 148-154 snippet was routing collateral. HTML images not inspected. No full-paper or complete proof claim. Comparison only.",
+      "snapshot_path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_coupling_remainder_literature_fkt_1609_01747v1.html",
+      "sha256": "356275e9f82f4ad9822738770450f2916fe8eeee4bb3efe20378185fa819fe01",
+      "bytes": 447348,
+      "raw_byte_line_count": 1518,
+      "kind": "primary_source_partial",
+      "line_numbering": "web rendered line numbers; raw snapshot line counts are not claimed as consumed text"
+    },
+    {
+      "name": "Dimock, Small Fields",
+      "url": "https://arxiv.org/pdf/1108.1335v2",
+      "arxiv_version": "1108.1335v2",
+      "rendered_line_count": 6907,
+      "page_count": 52,
+      "consumed_rendered_windows": [
+        [
+          0,
+          101
+        ],
+        [
+          3892,
+          4030
+        ],
+        [
+          5232,
+          5585
+        ]
+      ],
+      "scope": "Model/intro, section 4.6 Lemma 21, Appendix B Theorem 27 hypotheses and partial proof including normalized product-measure step. Appendix B proof was NOT fully read; not imported. Current unversioned link resolves to v2. Initial v1 routing showed numbering mismatch and was not used to refute the v2 citation.",
+      "snapshot_path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_coupling_remainder_literature_dimock_1108_1335v2.pdf",
+      "sha256": "2d7aebb50cbbfe5005433ca0b69dc1d631c8f307de24ce2eccc7c36074d88a26",
+      "bytes": 565384,
+      "raw_byte_line_count": 12299,
+      "kind": "primary_source_partial",
+      "line_numbering": "web rendered line numbers; raw snapshot line counts are not claimed as consumed text"
+    },
+    {
+      "name": "Temme, Uniform Asymptotic Methods",
+      "url": "https://arxiv.org/pdf/1308.1547v1",
+      "arxiv_version": "1308.1547v1",
+      "rendered_line_count": 2204,
+      "page_count": 31,
+      "consumed_rendered_windows": [
+        [
+          0,
+          102
+        ],
+        [
+          310,
+          546
+        ]
+      ],
+      "scope": "Introduction, section 2.2 equations (2.9)-(2.12), analytic/convergence conditions; neighboring examples/section 2.3 are collateral. Earlier find snippets beyond these windows were routing only. No full-paper read or uniform-volume theorem imported.",
+      "snapshot_path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_coupling_remainder_literature_temme_1308_1547v1.pdf",
+      "sha256": "93d3557ce4824a823e1fe2b8a3ca1e34a780ad1db46654e9af0f219a81d419a4",
+      "bytes": 385992,
+      "raw_byte_line_count": 7748,
+      "kind": "primary_source_partial",
+      "line_numbering": "web rendered line numbers; raw snapshot line counts are not claimed as consumed text"
+    }
+  ],
+  "metadata_only": [
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_CHART_RETURN_ASTRA.md",
+      "sha256": "88b5b59feaf278d9b9995adc320a446363fa68887d277ca4315c6469fb3aa525",
+      "line_count": 508,
+      "bytes": 25946,
+      "kind": "metadata_only",
+      "consumed_line_windows": [],
+      "scope": "Headings/hash inventory only; no mathematical proof imported.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_CHART_RETURN_ASTRA.md",
+      "matches_head_bytes": true,
+      "head_blob": "4dd7c85ae2d51ac1bcfcc04f8045d06cfa50fa8e"
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/scripts/vocab_lint.py",
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "line_count": 392,
+      "bytes": 14183,
+      "kind": "metadata_only",
+      "consumed_line_windows": [],
+      "scope": "Only declaration-location search before freeze; body/direct invocation deferred to packet stage.",
+      "worktree_head": "43d594a86c35447c17c7b2f0d7884a2289660253",
+      "repository_relative_path": "scripts/vocab_lint.py",
+      "matches_head_bytes": true,
+      "head_blob": "595f4f7650295777b4effd28c0de996c7cc4b162"
+    }
+  ],
+  "collateral_searches": [
+    "File-name inventory and headings routing do not count as source reads.",
+    "Initial Dimock v1 web routing: intro 0-241, section-number snippet 3821-3902, lemma-number snippet 4392-4693. This was an unused version mismatch check; v2 comparison above controls.",
+    "Dimock abs page version history read through 95 of 168 rendered lines, confirming v2 2012-12-21.",
+    "No broad prior-work status conclusions were taken from source-file provenance references."
+  ],
+  "coverage_limits": [
+    "This is a new-target review with explicit mathematical supplier windows, not a full re-audit of every file in the lane.",
+    "Source-partial files were read only within displayed windows; excluded sections and prior reports supply no evidence.",
+    "No broad primary-paper completion claim; all three citations are comparative and unused as theorem imports.",
+    "Receipt and publication integration checks belong to the later packet phase/root."
+  ]
+}

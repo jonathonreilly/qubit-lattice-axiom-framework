@@ -1,0 +1,154 @@
+{
+  "format": "scoped-analytic-read-manifest-v1",
+  "created_utc": "2026-10-30T06:42:30.537697+00:00",
+  "author_source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SQUARED_ALIGNMENT_PRICE_ASTRA.md",
+    "sha256": "cd2df445d61018ade1f4050612b0616800f4c87c83cea9de27d3ab7b8ac00905",
+    "bytes": 20270
+  },
+  "git_context": {
+    "head": "8d48ecde600c4f38da66f8b4e18a6ae16fa9cfae",
+    "locally_cached_origin_main": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+    "refresh": "No fetch or other Git mutation in this worker, as dispatched. These are observed local refs, not a fresh remote inventory.",
+    "input_diff_against_head": []
+  },
+  "source_read": "All398 lines read in two bounded reads, with the exact small pre-freeze wording patch reviewed.",
+  "input_pins": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497,
+      "read_coverage": "Complete. Current lane procedure.",
+      "use": "Instruction only."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "sha256": "ef4402b19bf268ac6bc684e38942daf1476c84d651ef8b492998cb067506cde8",
+      "bytes": 804887,
+      "read_coverage": "1460-1490 and2512-2532.",
+      "use": "Actual paired path family and Decision-4 kernel only. Earlier Wilson normalization is not imported."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/JMBRB.md",
+      "sha256": "6320af2da97d532fbf802f2405541de8e20f6d350b575b46462fefb4c849bb0a",
+      "bytes": 41724,
+      "read_coverage": "30-84 and174-317.",
+      "use": "Current Wilson/kernel convention, B10-B18, exact smooth/rough interface and its scope."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "bytes": 32365,
+      "read_coverage": "48-255, covering CS1-CS14.",
+      "use": "Actual law, complete lifted bricks, compact alignment and curvature allocation."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "bytes": 28993,
+      "read_coverage": "37-162 and435-485.",
+      "use": "Actual reference/paired geometry, T=2 lifted-brick distinction, block fillings and coarse square."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OUTSIDE_CHART_RETURN_ASTRA.md",
+      "sha256": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4",
+      "bytes": 32868,
+      "read_coverage": "1-110, through OC1-OC3 and the explicit alignment comparison.",
+      "use": "Matching prior compact alignment/coercivity; its later probability conclusions are not imported."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LFPRICE.md",
+      "sha256": "4deb5cbf7573145a438abcda4aeedd14c4270cc05c3e63072abeb43561c77a53",
+      "bytes": 40582,
+      "read_coverage": "549-620 and654-710.",
+      "use": "LF11 normalization/product-law limits and the exact remaining LF-JMBR construction."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RENEW.md",
+      "sha256": "42b4d2a16625d4af4f6443a38ff92d63a483485816c4533292b44f867fc978a7",
+      "bytes": 34511,
+      "read_coverage": "147-302 and514-561.",
+      "use": "Actual rough flux orbit, positive-measure persistence, one-time creation charge and RENEW-MATCH scope."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RLARGE.md",
+      "sha256": "4f3d2777bcd736ad6936946f6c072ebebd8fe2638839538ea0db28825f2438d2",
+      "bytes": 134489,
+      "read_coverage": "960-1010.",
+      "use": "Original actual paired ribbon/square construction and historical quadratic-threshold estimate."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_JMBRB.md",
+      "sha256": "76bacfc23f945af5cac257a688be0739433e48d48943623bc80b36a3a4b95f04",
+      "bytes": 23947,
+      "read_coverage": "65-150.",
+      "use": "Existing review of the old weaker comparison; not review of this new consumer note."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "sha256": "e5bcf577dab1144c6ce4ac06f1b4558cc44951a7fb3e305199bb91f91736b76a",
+      "bytes": 12275,
+      "read_coverage": "1-100.",
+      "use": "Existing CS proof coverage and scope; no claim to rereview its full source."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_KN.md",
+      "sha256": "9be21efb0097320aaca79a2e068ca59e4f8bfd1864148432d1a508abb724f7d0",
+      "bytes": 36466,
+      "read_coverage": "60-90.",
+      "use": "F4 matching trace-difference linear-threshold prior work."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW55_ARS.md",
+      "sha256": "79ab307db0f7e918216277cc0f7e884044114705a9f21584df8539aecce2d90e",
+      "bytes": 59178,
+      "read_coverage": "165-300; especially231-243.",
+      "use": "r55a-F10 exactly matches the proposed eta_lin and epsilon^2/(256N) gap."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HIST.md",
+      "sha256": "0bafb04ecda4b88f13f958026f4c817b3d536207a0de2d1f347f425e5f61097c",
+      "bytes": 203830,
+      "read_coverage": "120-205.",
+      "use": "Older capped RS-lin and joint-law context; no multilevel pricing theorem imported."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HW.md",
+      "sha256": "d4b51b6b7c19e41baa0c2dac7ee03d34efc991c7e55a9ef8a766132af17a6028",
+      "bytes": 254211,
+      "read_coverage": "145-192.",
+      "use": "Nonmatching conditional cone/tower-energy comparison; not an input."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SQ.md",
+      "sha256": "84c006c5a43dcf6df47860a115296fe75e7684517ece5da4f0abc1bb64d26289",
+      "bytes": 190900,
+      "read_coverage": "1078-1110.",
+      "use": "Nonmatching minimizer-only multilevel comparison; not an input."
+    }
+  ],
+  "search_scope": {
+    "lane": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof",
+    "queries": [
+      "squared alignment / alignment squared / convex average / eta_lin",
+      "d^2/4+q /4psi_c+4q_c /32 sqrt(N) /32√N /η_F4",
+      "s(V_P) /coarse curvature energy /coarse coercivity /squared coarse"
+    ],
+    "matching_results": [
+      "CS10: exact proposed squared-alignment inequality.",
+      "REVIEW55_ARS r55a-F10: exact proposed linear threshold, same epsilon^2/(256N) gap.",
+      "CODEX_REVIEW_KN F4: prior trace-difference proof at weaker linear threshold.",
+      "JMBRB B13-B18: current consumer still uses separate linear mean errors."
+    ],
+    "aggregation_comparison": "CS13-CS14 gives joint fine-curvature/link-mismatch charges. The new note writes the explicit coarse-plaquette sum using actual root-square/brick incidence. No global novelty claim.",
+    "main_search_limit": "The queried lane path is absent from the locally cached origin/main tree. No whole-repository or current-open-PR completeness claim follows.",
+    "truncation_limit": "Some broad query output and ancillary large metadata reads were truncated; matching proof passages were reread in bounded untruncated ranges listed above.",
+    "external_search": "None. The proof is elementary reconstruction of supplied model words; no literature lemma is imported."
+  },
+  "model_and_independence": {
+    "requested": "Astra/max, per coordinator dispatch",
+    "serving_backend": "Not independently observable in this worker",
+    "author_status": "No independent review performed; a different fresh reviewer is required."
+  },
+  "scientific_numerics": "None. Only text reads, source editing and byte/link metadata checks."
+}

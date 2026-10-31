@@ -1,0 +1,43 @@
+f12 (lane C, session 9) start 2026-10-28 07:54:08 UTC; SMOKE = False
+Part I (implementation)
+  [PASS] I1 brute force (n = 1 torus (6,12,6,3), 24 orders, eps-fit): h direct = -7.828147578477e-05, momentum formula = -7.828148245716e-05, rel diff = 8.5e-08
+    [reported] n = 2 vertex form factors vs real-space block kernel (24 orders, 4 random k): max rel |u| diff = 2.3e-11, |m2| diff = 2.1e-09 (finite-difference eps = 1e-3, Richardson)
+Part P (scalar proxy at U = 1, two-point form; L = 3, s = 4)
+    n = 1, N_K = 16, h_u = 0.3: c(P) = 7.1228296395e-04, 7.1210474377e-04, 7.1180832951e-04, 7.1139465017e-04, 7.1086499484e-04
+    n = 1, N_K = 20, h_u = 0.3: c(P) = 7.1228296560e-04, 7.1210474406e-04, 7.1180832945e-04, 7.1139464997e-04, 7.1086499472e-04
+  [PASS] I3 convergence (n = 1): |c(N_K=16) - c(N_K=20)| = 2.0e-12, |c(h_u) - c(h_u/2)| = 3.6e-13
+  [PASS] I4 p-fit stability (n = 1): |c(all P) - c(without P = 0.5)| = 1.3e-13
+  [PASS] I2 Ward (n = 1): unsubtracted p = 0 value b0 = 1.12e-15 vs 1e-3 |c| p_min^2/2 = 3.96e-10
+    n = 1: c^S_n = 7.1234243515e-04, rho_n = -1.6066720951e-03  (0 s)
+    n = 2, N_K = 16, h_u = 0.3: c(P) = 2.8853398467e-03, 2.8848930680e-03, 2.8841493406e-03, 2.8831100160e-03, 2.8817769730e-03
+    n = 2, N_K = 20, h_u = 0.3: c(P) = 2.8853398478e-03, 2.8848930683e-03, 2.8841493412e-03, 2.8831100163e-03, 2.8817769732e-03
+  [PASS] I3 convergence (n = 2): |c(N_K=16) - c(N_K=20)| = 1.1e-12, |c(h_u) - c(h_u/2)| = 5.9e-13
+  [PASS] I4 p-fit stability (n = 2): |c(all P) - c(without P = 0.5)| = 2.5e-13
+  [PASS] I2 Ward (n = 2): unsubtracted p = 0 value b0 = -1.31e-16 vs 1e-3 |c| p_min^2/2 = 1.78e-10
+    n = 2: c^S_n = 2.8854888648e-03, rho_n = -1.7525401957e-03  (0 s)
+    n = 3, N_K = 16, h_u = 0.3: c(P) = 5.1905207168e-03, 5.1899706859e-03, 5.1890549411e-03, 5.1877749312e-03, 5.1861326745e-03
+    n = 3, N_K = 20, h_u = 0.3: c(P) = 5.1905207144e-03, 5.1899706854e-03, 5.1890549407e-03, 5.1877749311e-03, 5.1861326744e-03
+  [PASS] I3 convergence (n = 3): |c(N_K=16) - c(N_K=20)| = 2.9e-12, |c(h_u) - c(h_u/2)| = 9.9e-13
+  [PASS] I4 p-fit stability (n = 3): |c(all P) - c(without P = 0.5)| = 1.7e-13
+    [reported] Ward (n = 3): b0 = -4.36e-18 (1e-3 |c| p_min^2/2 = 3.56e-11)
+    n = 3: c^S_n = 5.1907041547e-03, rho_n = -1.7663394360e-03  (1 s)
+    n = 4, N_K = 16, h_u = 0.3: c(P) = 7.5080119720e-03, 7.5074420116e-03, 7.5064930590e-03, 7.5051665746e-03, 7.5034645958e-03
+    n = 4, N_K = 20, h_u = 0.3: c(P) = 7.5080119737e-03, 7.5074420120e-03, 7.5064930587e-03, 7.5051665743e-03, 7.5034645957e-03
+  [PASS] I3 convergence (n = 4): |c(N_K=16) - c(N_K=20)| = 2.1e-12, |c(h_u) - c(h_u/2)| = 6.9e-12
+  [PASS] I4 p-fit stability (n = 4): |c(all P) - c(without P = 0.5)| = 8.4e-13
+    [reported] Ward (n = 4): b0 = -3.04e-18 (1e-3 |c| p_min^2/2 = 5.72e-12)
+    n = 4: c^S_n = 7.5082020587e-03, rho_n = -1.7678560623e-03  (2 s)
+  [PASS] P-a n = 1 (f11 7.123425e-4): |diff| = 6.5e-11
+  [PASS] P-a n = 2 (f11 2.885494e-3): |diff| = 5.1e-09
+  [PASS] P-b |rho_3 - rho_2| <= 4.9e-5: rho_3 - rho_2 = -1.3799e-05
+    phi_0 = c^S_1 - c^S_0 = 7.1234243515e-04; phi - 2 c_g log 3 = -1.606672e-03
+    phi_1 = c^S_2 - c^S_1 = 2.1731464296e-03; phi - 2 c_g log 3 = -1.458681e-04
+    phi_2 = c^S_3 - c^S_2 = 2.3052152899e-03; phi - 2 c_g log 3 = -1.379924e-05
+    phi_3 = c^S_4 - c^S_3 = 2.3174979040e-03; phi - 2 c_g log 3 = -1.516626e-06
+    rho_2 - rho_1 = -1.458681e-04
+    rho_3 - rho_2 = -1.379924e-05
+    rho_4 - rho_3 = -1.516626e-06
+    increment ratio 2->3 / 1->2 = 0.0946
+    increment ratio 3->4 / 2->3 = 0.1099
+    vector rho^V_n: not attempted in f12
+Summary: 14/14 verdict lines PASS; total 4 s

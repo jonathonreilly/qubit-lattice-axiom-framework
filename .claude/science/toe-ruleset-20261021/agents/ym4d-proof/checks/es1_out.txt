@@ -1,0 +1,135 @@
+====================================================================================================
+es1_eps.py  --  (EPS-STAR) session 24.  Decimal precision = 40 significant digits
+Criteria: checks/es1_criteria.md (pre-registered).  Formulas: EPSSTAR.md sections 2-4.
+====================================================================================================
+
+BLOCK A -- the beta telescope B(m) = prod_i (p_i-1)^(m/p_i), p_i = 2^(i+1)
+  B(4) = 43.948619     CONST_T section 3.1 says 43.95   rel.dev = 3.14E-5
+  B(8) = 1931.4811   CONST_T section 3.1 says 1931.5   rel.dev = 9.76E-6
+  ES1-1: PASS
+
+BLOCK B -- the Stage-1 constant C_S1(q,m), and exact scale-invariance
+  C_S1(q,m)^2 = [1 - 1/4 - 1/(4m)]^{-1} * [ c_theta*(27*c_s)^a + 4096*c_g ],
+     a = q/(q-4),  theta = 4/q,  c_theta = (1-theta)*(4*theta)^{theta/(1-theta)}
+    q =   10:  (-2 + 8/q)*q/(q-4) = -2   OK
+    q =   11:  (-2 + 8/q)*q/(q-4) = -2   OK
+    q =   12:  (-2 + 8/q)*q/(q-4) = -2   OK
+    q =   16:  (-2 + 8/q)*q/(q-4) = -2   OK
+    q =   24:  (-2 + 8/q)*q/(q-4) = -2   OK
+    q =   32:  (-2 + 8/q)*q/(q-4) = -2   OK
+    q =   50:  (-2 + 8/q)*q/(q-4) = -2   OK
+    q =  100:  (-2 + 8/q)*q/(q-4) = -2   OK
+  at q = 12: c_theta = 0.76980036, a = 3/2, bracket = 2.42486130E+7
+  C_S1(12, m=1)   = 6963.994967      (m = 1 is Stage 1's absorption exactly as written)
+  C_S1(12, m=1     ) = 6963.994967
+  C_S1(12, m=8     ) = 5808.373320
+  C_S1(12, m=100   ) = 5695.578635
+  C_S1(12, m=20000 ) = 5686.125465
+  ES1-2: PASS  (exact scale-invariance True, C_S1(12,1) < 1e5)
+
+BLOCK C -- the uniform bound  A_c*gamma_c <= (1+sqrt6)*C_S1(q,m)/m
+  It contains NO c_K, c_RB, C_B, C_K' or c_N: that is the uniformity claim.
+    m =      1:  A_c*gamma_c <= 2.402223E+4
+    m =      2:  A_c*gamma_c <= 1.074307E+4
+    m =      4:  A_c*gamma_c <= 5.121556E+3
+    m =      6:  A_c*gamma_c <= 3.363785E+3
+    m =      7:  A_c*gamma_c <= 2.871206E+3
+    m =      8:  A_c*gamma_c <= 2.504491E+3
+    m =     10:  A_c*gamma_c <= 1.994938E+3
+    m =    100:  A_c*gamma_c <= 1.964684E+2
+    m =   1000:  A_c*gamma_c <= 1.961734E+1
+    m =  10000:  A_c*gamma_c <= 1.961439E+0
+    m =  20000:  A_c*gamma_c <= 9.807116E-1
+    m =  25000:  A_c*gamma_c <= 7.845680E-1
+  smallest integer m with bound <= 3.35e3 (q=12): m = 7, bound = 2.871206E+3
+  smallest integer m with bound <= 1:             m = 19615, bound = 9.999610E-1
+  ES1-3:  PASS
+  ES1-3b: PASS
+  bound non-increasing in m on m = 1..200: True
+
+BLOCK D -- C_T = sqrt6 * F * B_tel * [ (1/2)(A_s*gamma_s)^a + (1/2)(A_c*gamma_c)^2 + 288*C_1*Q ]
+  A_s*gamma_s = 36*c_s*|N| with |N| = 3 (M-sharp, STAR_CONST Lemma A2) or 486 (M-ct, CONST_T section 2.3)
+  288*C_1*Q   = 288*[ c_g + 18*( |N_S|*c_s*||V_s||_inf + 1/(36m) ) ],  ||V_s||_inf <= R_0^(-2+8/q)
+
+  M-sharp (|N| = 3), P-max (B(8)), at the two margins:
+      q        a      A_c*g_c           Chat     C_T (m=m_targ)      C_T (m=m_one)
+     10   1.6667    3.0795E+3    3.435446E+7       2.857380E+13       2.463003E+13
+     11   1.5714    2.9238E+3    1.602527E+7       1.332877E+13       9.773762E+12
+     12   1.5000    2.8712E+3    1.048014E+7       8.716702E+12       5.288348E+12
+     16   1.3333    2.8285E+3    6.442281E+6       5.358271E+12       2.031249E+12
+     24   1.2000    2.8206E+3    5.814735E+6       4.836318E+12       1.527833E+12
+     32   1.1429    2.8193E+3    5.722660E+6       4.759736E+12       1.454323E+12
+     50   1.0870    2.8185E+3    5.672943E+6       4.718385E+12       1.414743E+12
+    100   1.0417    2.8181E+3    5.649348E+6       4.698760E+12       1.396001E+12
+  ES1-4  (q=12, m=19615):     C_T = 5.288348E+12  vs ceiling 1e13  -> PASS
+  ES1-4b (q=12, m=7):        C_T = 8.716702E+12  vs ceiling 1e13  -> PASS
+
+  sensitivity: the SAME numbers must come out for every C_K' and C_B in their SUPPLIED ranges,
+  because none of them appears in Block C or Block D.  Explicit re-evaluation:
+    C_K' =       3.9, c_N = 1:  c_K = 6.8289E+1   C_T(q=12) = 5.288348E+12  (identical)
+    C_K' =       3.9, c_N = 2:  c_K = 1.3658E+2   C_T(q=12) = 5.288348E+12  (identical)
+    C_K' =   1.92E+4, c_N = 1:  c_K = 3.3619E+5   C_T(q=12) = 5.288348E+12  (identical)
+    C_K' =   1.92E+4, c_N = 2:  c_K = 6.7238E+5   C_T(q=12) = 5.288348E+12  (identical)
+
+  comparison readings (not the verdict):
+    q=12  M-sharp |N|=3    P-max B(8)   C_T = 5.2883E+12
+    q=12  M-sharp |N|=3    P-ct B(4a)   C_T = 7.9771E+11
+    q=12  M-ct |N|=486     P-max B(8)   C_T = 8.0509E+15
+    q=12  M-ct |N|=486     P-ct B(4a)   C_T = 1.2144E+15
+    q=12  M-sharp, P-max, R_0 = 128 instead of 64: C_T = 5.2758E+12
+  C_T(q) non-increasing in q on the grid (P-max, m=m_one): True
+
+BLOCK E -- the value of eps_*, and the audit floors
+  Stage-1 absorption at margin m:  9*|N_3|*c_K*eps + 9*sqrt(|N_3|)*|N_1|*c_RB*eps^2 <= 1/(4m)
+  -> eps_*(m, c_K, c_RB) = the positive root
+  C_T(q=12) = 5.2883E+12 -> C_D = 4.7595E+15 (worst end)  <= 6.7e15 ? True
+  theta_0^SUP = 1/(2*C_err) = 1.3337E-39;  t_pr = theta_0^SUP;  eps_1 = 6.7E-40
+  eps_1 < t_pr ? True  (margin x1.991)
+  NO-CHANGE FLOOR on eps_*: 84*theta_0^SUP = 1.1203E-37
+  REVIEW_SQ_S4 S4-16 floor (t_pr > eps_1 through theta_eps): 5.6E-38
+
+   C_K prime  c_N          c_K    eps_*(m_targ)     eps_*(m_one)   decades over no-change floor
+         3.9    1    6.8289E+1        4.0308E-9       1.4395E-12                          25.11
+         3.9    2    1.3658E+2        2.0165E-9       7.1976E-13                          24.81
+     1.92E+4    1    3.3619E+5       8.1935E-13       2.9240E-16                          21.42
+     1.92E+4    2    6.7238E+5       4.0967E-13       1.4620E-16                          21.12
+  ES1-5:  PASS   (both margins, both ends of C_K' x c_N, above 5.6e-38)
+  ES1-5b: PASS  (same, above the no-change floor 84*theta_0^SUP)
+
+  C_B sensitivity of eps_* only (C_T is unaffected):  c_RB = 17.51*290*(576*c_N^2 + C_B^2*c_N^4)
+    C_B =      3.6, c_N = 2: c_RB = 1.2752E+7  eps_*(m_one) = 1.4620E-16  above floor? True
+    C_B =     1E+2, c_N = 2: c_RB = 8.2416E+8  eps_*(m_one) = 1.4620E-16  above floor? True
+    C_B =     1E+4, c_N = 2: c_RB = 8.1247E+12  eps_*(m_one) = 1.4620E-16  above floor? True
+
+  direct A_c*gamma_c(eps_*) at c_K = 17.51*1.92e4*2, c_RB = 3.0e6, m = m_one:
+    eps_* = 1.4620E-16  ->  A_c*gamma_c = 9.999610E-1
+    eps_* = 1.4620E-17  ->  A_c*gamma_c = 9.999610E-2
+    eps_* = 1.4620E-18  ->  A_c*gamma_c = 9.999610E-3
+    eps_* = 1.4620E-19  ->  A_c*gamma_c = 9.999610E-4
+    eps_* = 1.4620E-20  ->  A_c*gamma_c = 9.999610E-5
+    eps_* = 1.4620E-21  ->  A_c*gamma_c = 9.999610E-6
+  at eps_* = eps_*(m_one) the direct value is 9.999610E-1,
+  and the uniform bound is 9.999610E-1  -> direct <= uniform ? True
+  ES1-6: PASS  (monotone in m: True; in q: True; in eps_*: True)
+
+====================================================================================================
+VERDICT SUMMARY (pre-registered ids)
+  ES1-1    PASS
+  ES1-2    PASS
+  ES1-3    PASS
+  ES1-3b   PASS
+  ES1-4    PASS
+  ES1-4b   PASS
+  ES1-5    PASS
+  ES1-5b   PASS
+  ES1-6    PASS
+  ES1-7   requires diff against the 40-vs-60-digit run; see es1_out*.txt
+====================================================================================================
+
+[POST-HOC, ES1-P1] -- written after reading the Block C/D output.  Not pre-registered.
+  How much of the 1e13 ceiling does each term of Chat use, at q = 12, m = m_one?
+    (1/2)(A_s g_s)^a     =    4.691694E+6    73.79 %  of Chat
+    (1/2)(A_c g_c)^2     =    4.999610E-1     0.00 %  of Chat
+    288 C_1 Q            =    1.666519E+6    26.21 %  of Chat
+    Chat = 6.358213E+6;  C_T = 5.288348E+12
+  So the V_c branch is no longer a contributor at all: the ceiling is set by the SOURCE term.

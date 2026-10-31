@@ -1,0 +1,220 @@
+{
+  "created_utc": "2026-10-29T20:01:22.085513+00:00",
+  "requested_worker_configuration": "Astra/max",
+  "methodology_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "main_freshness": "coordinator reconfirmed this immutable fetched revision during the unit; no author git mutation",
+  "methodology_reads_reused_from_same_session": [
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "read_scope": "applicable governance portions; not a scientific premise"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "read_scope": "applicable governance portions; not a scientific premise"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "read_scope": "applicable governance portions; not a scientific premise"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "read_scope": "applicable governance portions; not a scientific premise"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "read_scope": "applicable governance portions; not a scientific premise"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "read_scope": "applicable governance portions; not a scientific premise"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "read_scope": "applicable governance portions; not a scientific premise"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "read_scope": "applicable governance portions; not a scientific premise"
+    },
+    {
+      "path": "docs/ai_methodology/ABSTRACT_ALGEBRAIC_CORE_EXTRACTION_TECHNIQUE_2026-05-10.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "d57cca5aa41189786a49b3d901cc36615633e1e47c199be508b6e76a7e5a5e80",
+      "read_scope": "applicable governance portions; not a scientific premise"
+    },
+    {
+      "path": "docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1",
+      "read_scope": "applicable governance portions; not a scientific premise"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "read_scope": "applicable governance portions; not a scientific premise"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "read_scope": "applicable governance portions; not a scientific premise"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "read_scope": "applicable governance portions; not a scientific premise"
+    }
+  ],
+  "installed_skills": [
+    {
+      "path": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "read_scope": "complete installed skill before execution"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/review-loop/SKILL.md",
+      "sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "read_scope": "complete installed skill before execution"
+    }
+  ],
+  "scientific_reads": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOFT_FLUCTUATION_COVARIANCE_ASTRA.md",
+      "revision": "6117d49ddf77bbf5c9308770a0ad49494c2e8576",
+      "sha256": "327d033b22281f5f727c018ccb9b1d23d8f7d131bd3633602d6655a9b3de2403",
+      "role": "complete author source plus independently confirmed chart correction",
+      "read_ranges": [
+        {
+          "start": 1,
+          "end": 535,
+          "sha256": "327d033b22281f5f727c018ccb9b1d23d8f7d131bd3633602d6655a9b3de2403"
+        }
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SOFT_FLUCTUATION_COVARIANCE_ASTRA.md",
+      "revision": "6117d49ddf77bbf5c9308770a0ad49494c2e8576",
+      "sha256": "e4eef0f7993006558783a58a4aaf132ba3032cecea25c98556d443a391bbd6b5",
+      "role": "complete independent assessment and exact chart convention",
+      "read_ranges": [
+        {
+          "start": 1,
+          "end": 318,
+          "sha256": "e4eef0f7993006558783a58a4aaf132ba3032cecea25c98556d443a391bbd6b5"
+        }
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "revision": null,
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "role": "actual one-step action, single-normalizer proof and repairs; read again for uniform analytic contraction",
+      "read_ranges": [
+        {
+          "start": 243,
+          "end": 390,
+          "sha256": "facc218b3466a9c3c899fbf74684e4aeb84ebc696470e5ffff5f3bea9f307e53"
+        },
+        {
+          "start": 656,
+          "end": 683,
+          "sha256": "afbb092a58c632ee837c885506df4427b9b5ddbb34947adad934c9ea09f1b470"
+        }
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_STEP.md",
+      "revision": null,
+      "sha256": "32bab8cbc920447280b3da93a1754bf792509a115bbf8cfffc7101350fe64a0d",
+      "role": "R6 single-normalizer correction and R7 fixed-chart scope; prior session full R1-R11 retained",
+      "read_ranges": [
+        {
+          "start": 108,
+          "end": 150,
+          "sha256": "6d83147cd2188a45b2a27945021a1a21fd5beafe99ba7dc4da23f449c812ec92"
+        }
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_SEA_CONSTRUCTION_ASTRA.md",
+      "revision": null,
+      "sha256": "7154244cbfb476ee8ff5a97cb524d076beeba7493420da9b6a2fce8512550438",
+      "role": "complete previous read; new unit reread lines1-110 and180-280; exact strong-good and integrated-price dictionary",
+      "read_ranges": [
+        {
+          "start": 1,
+          "end": 454,
+          "sha256": "7154244cbfb476ee8ff5a97cb524d076beeba7493420da9b6a2fce8512550438"
+        }
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "revision": null,
+      "sha256": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+      "role": "complete H1-H28 previous same-session read; actual fixed-V law, sources, original cut and frustrated-slice boundary",
+      "read_ranges": [
+        {
+          "start": 1,
+          "end": 854,
+          "sha256": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850"
+        }
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CROSSOVER_LITERATURE_BRIDGE_ASTRA.md",
+      "revision": null,
+      "sha256": "c0f118a5228fffd8c2841d0a254328d722c4083629427ffd176a8fc4747b835a",
+      "role": "same-session read; operator norm does not remove determinant mode costs",
+      "read_ranges": [
+        {
+          "start": 123,
+          "end": 182,
+          "sha256": "72dc0500b10eda9c353047c220f02a8138721e9b40e7f6f1e5ad337c467919d4"
+        }
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LINEAR_PACKAGE.md",
+      "revision": null,
+      "sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad",
+      "role": "same-session read; prior-art attribution, not a substituted nonlinear theorem",
+      "read_ranges": [
+        {
+          "start": 1,
+          "end": 160,
+          "sha256": "a66311cdf71424249422ce5bd4732c2f90cab74895593a9d8a4804e995dbb47d"
+        },
+        {
+          "start": 290,
+          "end": 385,
+          "sha256": "42214e64363b7b6cc8205f5bd4e7d3785514cb82f294875bdcefe89b99b826b1"
+        }
+      ]
+    }
+  ],
+  "primary_source_manifest": "checks/covariant_soft_background_primary_sources.json",
+  "formal_predecessor_review_commit": "6117d49ddf77bbf5c9308770a0ad49494c2e8576",
+  "only_substantive_import_for_analytic_step": "STEP55 PR/NZ and corrected fixed-real-t centered single-normalizer logarithm; local coercivity and critical contraction explicitly proved here",
+  "external_scientific_data_read_by_checkers": [],
+  "author_checker_predecessor_code_imports": false,
+  "author_git_or_audit_mutations": false
+}

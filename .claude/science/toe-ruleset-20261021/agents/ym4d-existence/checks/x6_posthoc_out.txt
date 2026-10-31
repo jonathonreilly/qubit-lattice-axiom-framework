@@ -1,0 +1,2 @@
+MC c=2.967292e-04 +- 4.79e-05; closed form 2.841421e-04; z=+0.26; c/SE=6.2
+MC v=0.180621 vs closed form 0.180592; wall 280s

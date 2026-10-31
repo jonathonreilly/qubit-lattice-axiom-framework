@@ -1,0 +1,30 @@
+{
+  "created_utc": "2026-10-29T18:36:30.474293+00:00",
+  "finding": "US1 tree-phase versus exact finite-u normalized logdensity scope",
+  "reviewer": "/root/review_uniform_soft",
+  "repair_author": "/root",
+  "source_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+  "before": {
+    "revision": "4a8afc90247d771b95c9661737dc08509456ab28",
+    "sha256": "c7b7890187b9a350aea19e606957c606922fe741c6615382c3a4da0cd60d92c4"
+  },
+  "after_sha256": "203d4edbf97078d88fcb488f164e525d2671fe5a2a910c5f6e49f615e8f41bfe",
+  "changes": [
+    {
+      "before": "Author proof unit in the supplied SU(N) Wilson / normalized S4\u2032 soft-kernel model. **FC19 follows from the existing linear package with `theta=L^-2`; consequently FC20 gives a depth-uniform neutral quartic jet.**",
+      "after": "Author proof unit for the **u-stripped tree phase** of the supplied SU(N) Wilson / normalized S4\u2032 soft-kernel model. **FC19 follows from the existing linear package with `theta=L^-2`; consequently FC20 gives a depth-uniform neutral quartic jet of the stationary tree value `T_n`.**"
+    },
+    {
+      "before": "At the trivial field, each real colour has the quadratic energy",
+      "after": "The quadratic part at the trivial field of the normalized tree phase, with the overall factor `u=1/g^2` removed, is, for each real colour,"
+    },
+    {
+      "before": "These are integrated link variables in each level's own unit lattice, and all adjoints use ordinary counting inner products. This is the Hessian of the **normalized** soft action; the contour-spread quadratic term has been canceled by its normalization. Replacing it by the unnormalized kernel would change US1 and invalidate the result. The fourth-order polar terms are retained in FC18.",
+      "after": "These are integrated link variables in each level's own unit lattice, and all adjoints use ordinary counting inner products. US1 is the quadratic part of the **u-stripped normalized tree phase** `F_tree=sum_p s(U_p)+sum_(j,c) kappa_j phi_(M_c(U_j))(U_(j+1),c)`, where `phi_M(V)=N^-1[max_W Re tr(W^-1 M)-Re tr(V^-1 M)]` and the maximum is over `SU(N)`. Its stationary value is the `T_n` used in FC18\u2013FC20. The quadratic contour-spread term cancels in this phase. The exact finite-u negative logdensity also contains the field-dependent logarithm of a Haar integral, whose quadratic spread contribution is nonzero at finite u; US1 is not its full Hessian divided by u. FC18's fourth-order polar terms refer to `F_tree` and `T_n`."
+    }
+  ],
+  "mathematical_formulas_changed": false,
+  "control_code_changed": false,
+  "scope": "FC19/neutral FC20 concern the explicitly displayed u-stripped tree energy and stationary T_n. Exact finite-u Hessian identification is withdrawn. Affected independent re-review pending.",
+  "review_supplement": "checks/review_uniform_soft_scope_review.md"
+}

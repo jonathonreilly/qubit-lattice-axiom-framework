@@ -1,0 +1,10 @@
+{
+  "stage": "immutable source-only freeze",
+  "frozen_at_utc": "2026-10-30T11:06:03.525329+00:00",
+  "source_verdict": "LAND for exact bounded mathematical scope; packet/final binding pending",
+  "author_packet_opened": false,
+  "files": {
+    "review_holomorphic_compact_return_source_read_coverage.json": "179d8e2f195e3e0d6098e4d3e7764e3ed4b90426dde152efd71dc6942e2258f2",
+    "review_holomorphic_compact_return_source_only_findings.md": "59382f4e637e769b3598219d3baec9274a3f8eefe4b0dd356ac2ae47bc60738a"
+  }
+}

@@ -1,0 +1,306 @@
+{
+  "schema_version": 1,
+  "phase": "packet-after-source-freeze",
+  "recorded_at_utc": "2026-10-30T14:03:08.360290+00:00",
+  "author_manifest": {
+    "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_coupling_remainder_read_manifest.json",
+    "sha256": "467094ed6b6edc259e1a9a406fdcca2fe46bf2590d39ffe2353283a8591bea86",
+    "lines": 150
+  },
+  "author_receipt": {
+    "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_coupling_remainder_receipt.json",
+    "sha256": "747272afabaa57203a521ff76f1d860aed15ddaa4a4fcb3257151c80630b1ffe",
+    "lines": 40
+  },
+  "binding_checks": [
+    {
+      "role": "manifest_source",
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_REMAINDER_ASTRA.md",
+      "expected_sha256": "b75f9cae074c72344bd252d093c0a1d30c502c53819cde5b62e5b4c8b9b26b61",
+      "actual_sha256": "b75f9cae074c72344bd252d093c0a1d30c502c53819cde5b62e5b4c8b9b26b61",
+      "expected_lines": 583,
+      "actual_lines": 583,
+      "match": true,
+      "content_read_as_mathematical_evidence": true
+    },
+    {
+      "role": "receipt_source",
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_REMAINDER_ASTRA.md",
+      "expected_sha256": "b75f9cae074c72344bd252d093c0a1d30c502c53819cde5b62e5b4c8b9b26b61",
+      "actual_sha256": "b75f9cae074c72344bd252d093c0a1d30c502c53819cde5b62e5b4c8b9b26b61",
+      "expected_lines": 583,
+      "actual_lines": 583,
+      "match": true,
+      "content_read_as_mathematical_evidence": true
+    },
+    {
+      "role": "receipt_manifest",
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_coupling_remainder_read_manifest.json",
+      "expected_sha256": "467094ed6b6edc259e1a9a406fdcca2fe46bf2590d39ffe2353283a8591bea86",
+      "actual_sha256": "467094ed6b6edc259e1a9a406fdcca2fe46bf2590d39ffe2353283a8591bea86",
+      "expected_lines": 150,
+      "actual_lines": 150,
+      "match": true,
+      "content_read_as_mathematical_evidence": false
+    },
+    {
+      "role": "entrypoint",
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/AGENTS.md",
+      "expected_sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "actual_sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "expected_lines": 26,
+      "actual_lines": 26,
+      "match": true,
+      "content_read_as_mathematical_evidence": false
+    },
+    {
+      "role": "process",
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "expected_sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "actual_sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "expected_lines": 11,
+      "actual_lines": 11,
+      "match": true,
+      "content_read_as_mathematical_evidence": false
+    },
+    {
+      "role": "local_source",
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "expected_sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "actual_sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "expected_lines": 556,
+      "actual_lines": 556,
+      "match": true,
+      "content_read_as_mathematical_evidence": true
+    },
+    {
+      "role": "local_source",
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "expected_sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "actual_sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "expected_lines": 713,
+      "actual_lines": 713,
+      "match": true,
+      "content_read_as_mathematical_evidence": true
+    },
+    {
+      "role": "local_source",
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "expected_sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+      "actual_sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+      "expected_lines": 711,
+      "actual_lines": 711,
+      "match": true,
+      "content_read_as_mathematical_evidence": true
+    },
+    {
+      "role": "local_source",
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHRINKING_CHART_RETURN_ASTRA.md",
+      "expected_sha256": "9ae446ca746639ff77295f9da712f47e4be9d315d7c26e975535f1602321abfc",
+      "actual_sha256": "9ae446ca746639ff77295f9da712f47e4be9d315d7c26e975535f1602321abfc",
+      "expected_lines": 247,
+      "actual_lines": 247,
+      "match": true,
+      "content_read_as_mathematical_evidence": true
+    },
+    {
+      "role": "local_source",
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/WEIGHTED_RETURN_JETS_ASTRA.md",
+      "expected_sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "actual_sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "expected_lines": 937,
+      "actual_lines": 937,
+      "match": true,
+      "content_read_as_mathematical_evidence": true
+    },
+    {
+      "role": "local_source",
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_CUT_WHITE_ASSEMBLY_ASTRA.md",
+      "expected_sha256": "e058637300e8d0af58a35be23299ca08c4024eed335ab8529f7e1c8b6ae2a3f4",
+      "actual_sha256": "e058637300e8d0af58a35be23299ca08c4024eed335ab8529f7e1c8b6ae2a3f4",
+      "expected_lines": 443,
+      "actual_lines": 443,
+      "match": true,
+      "content_read_as_mathematical_evidence": true
+    },
+    {
+      "role": "local_source",
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "expected_sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "actual_sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "expected_lines": 597,
+      "actual_lines": 597,
+      "match": true,
+      "content_read_as_mathematical_evidence": true
+    },
+    {
+      "role": "local_source",
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "expected_sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "actual_sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "expected_lines": 510,
+      "actual_lines": 510,
+      "match": true,
+      "content_read_as_mathematical_evidence": true
+    },
+    {
+      "role": "local_source",
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_ONE_LOOP_COUPLING_ASTRA.md",
+      "expected_sha256": "b7baa6a711969c8fc96538009bb8f9f9acdde3f14f6d2f570a6ca5b9391516ce",
+      "actual_sha256": "b7baa6a711969c8fc96538009bb8f9f9acdde3f14f6d2f570a6ca5b9391516ce",
+      "expected_lines": 723,
+      "actual_lines": 723,
+      "match": true,
+      "content_read_as_mathematical_evidence": false
+    },
+    {
+      "role": "local_source",
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/LOCOP.md",
+      "expected_sha256": "0295d071a60d0ba3abfa23e4722634c7c2ea54921423cd0451aec7381e2c9253",
+      "actual_sha256": "0295d071a60d0ba3abfa23e4722634c7c2ea54921423cd0451aec7381e2c9253",
+      "expected_lines": 601,
+      "actual_lines": 601,
+      "match": true,
+      "content_read_as_mathematical_evidence": false
+    },
+    {
+      "role": "local_source",
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SPURION.md",
+      "expected_sha256": "8474bec9faca8b0d9a1318846088e26cf47a06f89748236c8d440bc0ab046667",
+      "actual_sha256": "8474bec9faca8b0d9a1318846088e26cf47a06f89748236c8d440bc0ab046667",
+      "expected_lines": 597,
+      "actual_lines": 597,
+      "match": true,
+      "content_read_as_mathematical_evidence": false
+    },
+    {
+      "role": "local_source",
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/INTERACTING_SELECTED_CORE_ASTRA.md",
+      "expected_sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "actual_sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "expected_lines": 790,
+      "actual_lines": 790,
+      "match": true,
+      "content_read_as_mathematical_evidence": false
+    },
+    {
+      "role": "local_source",
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/WHITE_SECTOR_MATCHING_ASTRA.md",
+      "expected_sha256": "172418988dd07b5f9d8c32d83f2fbc754ab86907660a291c26f1ca3711452556",
+      "actual_sha256": "172418988dd07b5f9d8c32d83f2fbc754ab86907660a291c26f1ca3711452556",
+      "expected_lines": 631,
+      "actual_lines": 631,
+      "match": true,
+      "content_read_as_mathematical_evidence": false
+    },
+    {
+      "role": "local_source",
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/COMPLEX_WHITE_SECTOR_ASTRA.md",
+      "expected_sha256": "fb72d33bddb727e85548ad96f0e45585cf06254190aa182008e80aa3fbbc5a3c",
+      "actual_sha256": "fb72d33bddb727e85548ad96f0e45585cf06254190aa182008e80aa3fbbc5a3c",
+      "expected_lines": 747,
+      "actual_lines": 747,
+      "match": true,
+      "content_read_as_mathematical_evidence": false
+    },
+    {
+      "role": "local_source",
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_MATCH_ASTRA.md",
+      "expected_sha256": "7663b556f147e7a4ff03b1f1089e0793f61f8cb6e7adf3d3ff4ce78c763b07ff",
+      "actual_sha256": "7663b556f147e7a4ff03b1f1089e0793f61f8cb6e7adf3d3ff4ce78c763b07ff",
+      "expected_lines": 670,
+      "actual_lines": 670,
+      "match": true,
+      "content_read_as_mathematical_evidence": false
+    }
+  ],
+  "binding_comparison_count": 20,
+  "all_binding_checks_match": true,
+  "direct_vocab_invocation": "lint_one_file(explicit_path, load_yaml(), apply_fix=False); CLI not used",
+  "vocab_reports": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_REMAINDER_ASTRA.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_coupling_remainder_source_findings.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    }
+  ],
+  "local_link_checks": [
+    {
+      "from": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_REMAINDER_ASTRA.md",
+      "link": "BARE_COUPLING_MATCH_ASTRA.md",
+      "exists": true,
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_MATCH_ASTRA.md"
+    },
+    {
+      "from": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_REMAINDER_ASTRA.md",
+      "link": "FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "exists": true,
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md"
+    },
+    {
+      "from": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_REMAINDER_ASTRA.md",
+      "link": "NONLINEAR_READER_RETURN_ASTRA.md",
+      "exists": true,
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md"
+    },
+    {
+      "from": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_REMAINDER_ASTRA.md",
+      "link": "SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "exists": true,
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md"
+    },
+    {
+      "from": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_REMAINDER_ASTRA.md",
+      "link": "SHRINKING_CHART_RETURN_ASTRA.md",
+      "exists": true,
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHRINKING_CHART_RETURN_ASTRA.md"
+    },
+    {
+      "from": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_REMAINDER_ASTRA.md",
+      "link": "WEIGHTED_RETURN_JETS_ASTRA.md",
+      "exists": true,
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/WEIGHTED_RETURN_JETS_ASTRA.md"
+    },
+    {
+      "from": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_REMAINDER_ASTRA.md",
+      "link": "checks/bare_coupling_remainder_read_manifest.json",
+      "exists": true,
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_coupling_remainder_read_manifest.json"
+    },
+    {
+      "from": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_REMAINDER_ASTRA.md",
+      "link": "checks/bare_coupling_remainder_receipt.json",
+      "exists": true,
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_coupling_remainder_receipt.json"
+    }
+  ],
+  "all_local_links_exist": true,
+  "source_fence_count": 2,
+  "historical_read_record_links": [
+    {
+      "path": "checks/frozen_transported_chart_read_manifest.json",
+      "exists": true,
+      "content_opened": false,
+      "treatment": "Author continuity metadata only; not independent proof or an attested historical read."
+    },
+    {
+      "path": "checks/weighted_return_jets_read_manifest.json",
+      "exists": true,
+      "content_opened": false,
+      "treatment": "Author continuity metadata only; not independent proof or an attested historical read."
+    }
+  ],
+  "limits": [
+    "Author claimed historical read coverage was not independently attested; this reviewer used the separate frozen source manifest.",
+    "No author post-receipt identity check is present in the submitted two-file packet. The review supplies its own final post-receipt recheck.",
+    "Actual installed skill bytes are recorded in the reviewer source manifest; the author packet names rereading but does not bind the installed entry hashes. This review does not infer author historical installed bytes.",
+    "PROCESS_LIGHT.md was directly read during packet stage; its no-science-run restriction was already controlling via root instruction from task start."
+  ]
+}

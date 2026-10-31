@@ -1,0 +1,70 @@
+[
+  {
+    "R_over_a": "11/10",
+    "D_cubes": 1,
+    "boundary_3cells": 8,
+    "K_4cells": 10,
+    "edges": 80,
+    "plaquettes": 80,
+    "reflections": [
+      {
+        "mu": 0,
+        "crossing_plaquettes": 32,
+        "crossing_prism_plaquettes": 8,
+        "crossing_links": 16
+      },
+      {
+        "mu": 1,
+        "crossing_plaquettes": 32,
+        "crossing_prism_plaquettes": 8,
+        "crossing_links": 16
+      },
+      {
+        "mu": 2,
+        "crossing_plaquettes": 32,
+        "crossing_prism_plaquettes": 8,
+        "crossing_links": 16
+      },
+      {
+        "mu": 3,
+        "crossing_plaquettes": 32,
+        "crossing_prism_plaquettes": 8,
+        "crossing_links": 16
+      }
+    ]
+  },
+  {
+    "R_over_a": "23/10",
+    "D_cubes": 33,
+    "boundary_3cells": 152,
+    "K_4cells": 218,
+    "edges": 1136,
+    "plaquettes": 1440,
+    "reflections": [
+      {
+        "mu": 0,
+        "crossing_plaquettes": 296,
+        "crossing_prism_plaquettes": 56,
+        "crossing_links": 112
+      },
+      {
+        "mu": 1,
+        "crossing_plaquettes": 296,
+        "crossing_prism_plaquettes": 56,
+        "crossing_links": 112
+      },
+      {
+        "mu": 2,
+        "crossing_plaquettes": 296,
+        "crossing_prism_plaquettes": 56,
+        "crossing_links": 112
+      },
+      {
+        "mu": 3,
+        "crossing_plaquettes": 296,
+        "crossing_prism_plaquettes": 56,
+        "crossing_links": 112
+      }
+    ]
+  }
+]

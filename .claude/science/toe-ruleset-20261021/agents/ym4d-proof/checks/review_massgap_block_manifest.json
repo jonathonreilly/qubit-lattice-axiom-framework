@@ -1,0 +1,716 @@
+{
+  "schema": "bounded-scientific-review-manifest-v1",
+  "created_utc": "2026-10-29T17:07:35.128005+00:00",
+  "reviewer": "/root/review_massgap_block",
+  "model_context": "Astra/max, same-family separate context; no spawned workers",
+  "scope": "Scientific local-block unit and current injectivity supporting proof only; no whole-proof/PR/landing/audit verdict",
+  "decision": "supported_within_stated_fixed_spacing_scope",
+  "MG_rows_closed": [],
+  "governance_main": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "original_source_commit": "47a916398fb58231d809695485812faf25c70ce9",
+  "repaired_source_commit": "1d221a0063566d5270b60cc543690d7c4d8c68ba",
+  "source_inputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "revision": "47a916398fb58231d809695485812faf25c70ce9",
+      "sha256": "f75e8cfc6f9e4310a9ba78ce7d8d53a6c729f4cac10599b430fb9234403c8d25",
+      "bytes": 27190,
+      "read_scope": "Complete original mathematical source; subsequently complete seven-line portable-link diff re-reviewed.",
+      "role": "reviewed canonical unit"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "revision": "1d221a0063566d5270b60cc543690d7c4d8c68ba",
+      "sha256": "0cdbfd18a97f6240b07f4a6047073fe6dc2abe2949af9ccb6f6bd191498bae3d",
+      "bytes": 27264,
+      "read_scope": "Complete mathematical text unchanged from original; complete changed wording/link read and checked.",
+      "role": "current repaired unit"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_injectivity.md",
+      "revision": "47a916398fb58231d809695485812faf25c70ce9",
+      "sha256": "820bceb7c30ad7a4e42eb0733018923ace7bcd57023163fe7a639b3d74a02acf",
+      "bytes": 8349,
+      "read_scope": "Complete argument, all sections and source dependencies.",
+      "role": "current supporting proof"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_TARGET.md",
+      "revision": "8b38c6f7b802479f763bc995d96ee45fdcc03795",
+      "sha256": "105440c10b9a2fc91b2be366f439053de05fd3d3497596f8f28993b0fe42de7b",
+      "bytes": 7507,
+      "read_scope": "Complete target, including common physical onset/prefactor and complete-source obligations.",
+      "role": "target"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_CONSTRUCTION_ASTRA.md",
+      "revision": "0cf473e3ef0c96ad31f0ecb1443690486cfbedb8",
+      "sha256": "a5d31da82721607e0ba04fef84675706bd3f2c568644224cce7dc86b0bb968e2",
+      "bytes": 28890,
+      "read_scope": "Complete note read; consumed finite-transfer/all-sector/Haar/multiplier proofs independently rederived. Other sections delimit RG/source interface.",
+      "role": "mathematical parent"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_CONSTRUCTION_ASTRA.md",
+      "revision": "94baab819b7eb80087f7616b4eaad799fa1a2541",
+      "sha256": "8ab911c6e8705c086b0fd4e12930a7a66f8ea0ad03be2bb1bff5a55a62f3c9c1",
+      "bytes": 16179,
+      "read_scope": "Complete prior review; not adopted as a mathematical premise or inherited verdict.",
+      "role": "review context"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "revision": "63e393bb56f1c51733aabedfca20b65786ee87f3",
+      "sha256": "9c214ca37336e089c2fc05ea8f39c6b091a8da327061e24f3a4d6372f5a30b6a",
+      "bytes": 771067,
+      "read_scope": "Lines 1-72, 977-1041, 2013-2110; complete Setting S1-S7 and D4-normalization in those intervals. Remainder not reviewed.",
+      "role": "partial model/interface context"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HIST.md",
+      "revision": "63e393bb56f1c51733aabedfca20b65786ee87f3",
+      "sha256": "0bafb04ecda4b88f13f958026f4c817b3d536207a0de2d1f347f425e5f61097c",
+      "bytes": 203830,
+      "read_scope": "Lines 34-60 and 104-125; normalized chain and TD conditional independence consumed. Remainder not reviewed.",
+      "role": "partial interface context"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "revision": "63e393bb56f1c51733aabedfca20b65786ee87f3",
+      "sha256": "cfd39c475984ccd0b8f12a3bf9400708765df92123ee27df392fed2861be0300",
+      "bytes": 33384,
+      "read_scope": "Lines 1-83 and 238-269; active task/scope only, no analytic premise.",
+      "role": "partial status context"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_manifest.json",
+      "revision": "47a916398fb58231d809695485812faf25c70ce9",
+      "sha256": "044391102b2468b76ee9583a5d08dbc2db24c77367076e6de7c97750d698026b",
+      "bytes": 24915,
+      "read_scope": "Complete manifest for pinned source discovery; reviewer coverage independently recorded here.",
+      "role": "author provenance"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_freeze.json",
+      "revision": "47a916398fb58231d809695485812faf25c70ce9",
+      "sha256": "cd3f60bcbb654a44dbb918b9091f4aa9c491be751a08042423a021e21f310665",
+      "bytes": 3793,
+      "read_scope": "Complete author freeze receipt.",
+      "role": "author provenance"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_criteria.md",
+      "revision": "47a916398fb58231d809695485812faf25c70ce9",
+      "sha256": "413d1e761b150d41891c3e94af37e8cab99a8fd2996e7127d8a1e29d13e8ce9c",
+      "bytes": 3683,
+      "read_scope": "Complete; read after independent implementation was written.",
+      "role": "author diagnostic design"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_exact.py",
+      "revision": "47a916398fb58231d809695485812faf25c70ce9",
+      "sha256": "448734574f786ce4b039326de8b8f151bc5f3c611e5ee2f22cdae8cf0b916d12",
+      "bytes": 17350,
+      "read_scope": "Complete runner after independent implementation was written; not replayed by reviewer.",
+      "role": "author implementation scope"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_injectivity_criteria.md",
+      "revision": "47a916398fb58231d809695485812faf25c70ce9",
+      "sha256": "9d9183cb5a126043653e24a82872f82db8ee544ade886766d57e999b991f55b3",
+      "bytes": 1732,
+      "read_scope": "Complete criteria.",
+      "role": "author diagnostic design"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_injectivity_exact.py",
+      "revision": "47a916398fb58231d809695485812faf25c70ce9",
+      "sha256": "2283c29577d906f88db0cf522753063a9a5041ae736f424cf247992180616f1a",
+      "bytes": 3901,
+      "read_scope": "Complete runner; not replayed by reviewer.",
+      "role": "author implementation scope"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_massgap_block_link_fix.json",
+      "revision": "1d221a0063566d5270b60cc543690d7c4d8c68ba",
+      "sha256": "38038fd1706f6050e7e17dee5dc97b1eca4811ce35b0829957dd8a40b0bdca5a",
+      "bytes": 1576,
+      "read_scope": "Complete repair receipt and exact before/after diff.",
+      "role": "changed-source confirmation"
+    },
+    {
+      "path": "AGENTS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "bytes": 1118,
+      "read_scope": "Complete file read at pinned main; truncated aggregate outputs were followed by reads of omitted sections.",
+      "role": "methodology/registered-premise context; not imported dynamics"
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "bytes": 11788,
+      "read_scope": "Complete file read at pinned main; truncated aggregate outputs were followed by reads of omitted sections.",
+      "role": "methodology/registered-premise context; not imported dynamics"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "read_scope": "Complete file read at pinned main; truncated aggregate outputs were followed by reads of omitted sections.",
+      "role": "methodology/registered-premise context; not imported dynamics"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "bytes": 5767,
+      "read_scope": "Complete file read at pinned main; truncated aggregate outputs were followed by reads of omitted sections.",
+      "role": "methodology/registered-premise context; not imported dynamics"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "bytes": 30709,
+      "read_scope": "Complete file read at pinned main; truncated aggregate outputs were followed by reads of omitted sections.",
+      "role": "methodology/registered-premise context; not imported dynamics"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "bytes": 16755,
+      "read_scope": "Complete file read at pinned main; truncated aggregate outputs were followed by reads of omitted sections.",
+      "role": "methodology/registered-premise context; not imported dynamics"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "bytes": 16454,
+      "read_scope": "Complete file read at pinned main; truncated aggregate outputs were followed by reads of omitted sections.",
+      "role": "methodology/registered-premise context; not imported dynamics"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "read_scope": "Complete file read at pinned main; truncated aggregate outputs were followed by reads of omitted sections.",
+      "role": "methodology/registered-premise context; not imported dynamics"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/literature-bridge-protocol.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "29edda5688fa04cb742ee524522b35dcf41d790d5c49fc46c5b4b1517f0ff5dd",
+      "bytes": 1615,
+      "read_scope": "Complete file read at pinned main; truncated aggregate outputs were followed by reads of omitted sections.",
+      "role": "methodology/registered-premise context; not imported dynamics"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "bytes": 24561,
+      "read_scope": "Complete file read at pinned main; truncated aggregate outputs were followed by reads of omitted sections.",
+      "role": "methodology/registered-premise context; not imported dynamics"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "bytes": 12608,
+      "read_scope": "Complete file read at pinned main; truncated aggregate outputs were followed by reads of omitted sections.",
+      "role": "methodology/registered-premise context; not imported dynamics"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "bytes": 12940,
+      "read_scope": "Complete file read at pinned main; truncated aggregate outputs were followed by reads of omitted sections.",
+      "role": "methodology/registered-premise context; not imported dynamics"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "bytes": 7554,
+      "read_scope": "Complete file read at pinned main; truncated aggregate outputs were followed by reads of omitted sections.",
+      "role": "methodology/registered-premise context; not imported dynamics"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "bytes": 23216,
+      "read_scope": "Complete file read at pinned main; truncated aggregate outputs were followed by reads of omitted sections.",
+      "role": "methodology/registered-premise context; not imported dynamics"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "bytes": 5188,
+      "read_scope": "Complete file read at pinned main; truncated aggregate outputs were followed by reads of omitted sections.",
+      "role": "methodology/registered-premise context; not imported dynamics"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "42a24d3df296f01e4189eadd1ef8b92f316bd8d14229f14643641e39939d159e",
+      "bytes": 21536,
+      "read_scope": "Complete file read at pinned main; truncated aggregate outputs were followed by reads of omitted sections.",
+      "role": "methodology/registered-premise context; not imported dynamics"
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "bytes": 16941,
+      "read_scope": "Complete file read at pinned main; truncated aggregate outputs were followed by reads of omitted sections.",
+      "role": "methodology/registered-premise context; not imported dynamics"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333,
+      "read_scope": "Complete file read at pinned main; truncated aggregate outputs were followed by reads of omitted sections.",
+      "role": "methodology/registered-premise context; not imported dynamics"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "bytes": 6427,
+      "read_scope": "Complete file read at pinned main; truncated aggregate outputs were followed by reads of omitted sections.",
+      "role": "methodology/registered-premise context; not imported dynamics"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416,
+      "read_scope": "Complete file read at pinned main; truncated aggregate outputs were followed by reads of omitted sections.",
+      "role": "methodology/registered-premise context; not imported dynamics"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "bytes": 2581,
+      "read_scope": "Complete file read at pinned main; truncated aggregate outputs were followed by reads of omitted sections.",
+      "role": "methodology/registered-premise context; not imported dynamics"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "bytes": 4770,
+      "read_scope": "Complete file read at pinned main; truncated aggregate outputs were followed by reads of omitted sections.",
+      "role": "methodology/registered-premise context; not imported dynamics"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "bytes": 5313,
+      "read_scope": "Complete file read at pinned main; truncated aggregate outputs were followed by reads of omitted sections.",
+      "role": "methodology/registered-premise context; not imported dynamics"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md",
+      "revision": null,
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "bytes": 9276,
+      "read_scope": "Complete installed skill read.",
+      "role": "installed instructions"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/review-loop/SKILL.md",
+      "revision": null,
+      "sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "bytes": 20680,
+      "read_scope": "Complete installed skill read.",
+      "role": "installed instructions"
+    },
+    {
+      "path": "docs/WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f6b39e5a1b23b62053b1fdb53c2eedbadc34628ff12a7a9a058b2c91c483a711",
+      "bytes": 17501,
+      "read_scope": "Complete note read for scope/overlap; no transitive proof adoption.",
+      "role": "bounded prior-art context"
+    },
+    {
+      "path": "docs/WILSON_STAGGERED_RAW_CONSTRAINED_ACTION_HESSIAN_DECAY_BOUNDED_THEOREM_NOTE_2026-07-12.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "0bfb6dd97b50c569233b1b152c543ce091dd2db1c29d64c41de88c9348799636",
+      "bytes": 13379,
+      "read_scope": "Complete note read for scope/overlap; no transitive proof adoption.",
+      "role": "bounded prior-art context"
+    },
+    {
+      "path": "docs/NATIVE_GAUGE_TRANSFER_STRONG_COUPLING_GAP_NARROW_THEOREM_NOTE_2026-06-12.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f81916765febda3dd378650d3298cd2a2afc368824ea14e618607a71a472dc80",
+      "bytes": 7548,
+      "read_scope": "Complete note read for scope/overlap; no transitive proof adoption.",
+      "role": "bounded prior-art context"
+    },
+    {
+      "path": "docs/FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "d8ba4a2c73d6bb897d3ebea4601f4a89a53e37830b582b0df40f5f3d67494bf1",
+      "bytes": 4898,
+      "read_scope": "Complete note read for scope/overlap; no transitive proof adoption.",
+      "role": "bounded prior-art context"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_attempt01.py",
+      "sha256": "3f9a69585887b9741ee48d77497aa48fff5648b05ee4abe2780cf39c6dc70fdd",
+      "bytes": 14784,
+      "role": "immutable reviewer evidence at final delivery"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_attempt01.receipt.json",
+      "sha256": "9ce76e6c5a15c599da46b6f357cd651234f5e75eaeac307063ed29919d5cd894",
+      "bytes": 554,
+      "role": "immutable reviewer evidence at final delivery"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_attempt01.stderr.txt",
+      "sha256": "ba7675d31434d044cc0c6e4c02b6f5f9ceeef635d1e839fbab69fe97d22e2d76",
+      "bytes": 360,
+      "role": "immutable reviewer evidence at final delivery"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_attempt01.stdout.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "immutable reviewer evidence at final delivery"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_attempt02.py",
+      "sha256": "db1b8aa8d107acd9496a7c22aa62ce9b6c182a5981f017b5d53a2620c2b81f3c",
+      "bytes": 14783,
+      "role": "immutable reviewer evidence at final delivery"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_attempt02.receipt.json",
+      "sha256": "9dcf5d779b38d0d49a2f2545158649c48f362ee073b522e7908a1f97d6f7a52f",
+      "bytes": 191,
+      "role": "immutable reviewer evidence at final delivery"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_attempt02.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "immutable reviewer evidence at final delivery"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_attempt02.stdout.json",
+      "sha256": "7e4bf72f6b9828590f9241cc57ff01a1ec496b92b0b6d730e49e4fa60d83c679",
+      "bytes": 17224,
+      "role": "immutable reviewer evidence at final delivery"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_attempt03.py",
+      "sha256": "ab1fe7b3ccc6699dfa073c19694fb5625a8381db0646301872f78da91a8961ff",
+      "bytes": 15068,
+      "role": "immutable reviewer evidence at final delivery"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_attempt03.receipt.json",
+      "sha256": "c11a6cf746abd26bbc1fd96121bf467526495541f65f600d5d392c5e85b66104",
+      "bytes": 191,
+      "role": "immutable reviewer evidence at final delivery"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_attempt03.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "immutable reviewer evidence at final delivery"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_attempt03.stdout.json",
+      "sha256": "40d056250980427bb025e8be25ca967288d034ffa29d2b8586d7cbde5d3e9d9c",
+      "bytes": 17219,
+      "role": "immutable reviewer evidence at final delivery"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_criteria.md",
+      "sha256": "60d26bb4fdcc1ba87ae01d723c551685d73907237faccd5ab68b52e9355bb226",
+      "bytes": 3364,
+      "role": "immutable reviewer evidence at final delivery"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_independent.py",
+      "sha256": "ab1fe7b3ccc6699dfa073c19694fb5625a8381db0646301872f78da91a8961ff",
+      "bytes": 15068,
+      "role": "immutable reviewer evidence at final delivery"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_literature.md",
+      "sha256": "269fa79fc37f0eab85bb85b154cd1087413c1594cd197cccb6948826414aa967",
+      "bytes": 14915,
+      "role": "immutable reviewer evidence at final delivery"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_literature_criteria.md",
+      "sha256": "664082f957aa01de54b05feb50043a893e4f2e4c1a005fa9d800109b9a689d35",
+      "bytes": 1455,
+      "role": "immutable reviewer evidence at final delivery"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_literature_exact.py",
+      "sha256": "1af29bb07a336e06949e4193bf282e81adc4048ffdb00dfb78f00b3535fecb31",
+      "bytes": 1905,
+      "role": "immutable reviewer evidence at final delivery"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_literature_results.json",
+      "sha256": "fd90a6e51806b6bcf648c51a9d8e8f3d49b47d7d0ce8af26967a4b63befc8d84",
+      "bytes": 1534,
+      "role": "immutable reviewer evidence at final delivery"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_literature_run.json",
+      "sha256": "fa28e8280a513660823af3c8f6b92d2788d2868adfab1ea1579f6a485dc32a98",
+      "bytes": 371,
+      "role": "immutable reviewer evidence at final delivery"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_literature_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "immutable reviewer evidence at final delivery"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_downloads.json",
+      "sha256": "e127ed4a5c2358e184ac6d693c7a643ce27f583399322b8fc87a58c6b2a1b787",
+      "bytes": 2555,
+      "role": "immutable reviewer evidence at final delivery"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_validation.json",
+      "sha256": "466f4da0b639a4400dc596b0b3f4f8fd5cdd98973b090e243c14b7246dd5ed86",
+      "bytes": 4696,
+      "role": "immutable reviewer evidence at final delivery"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_research_relocation.json",
+      "sha256": "8daf86993047959ae429d0853a8b123034bc45524d32fff4778d0f326175d4b1",
+      "bytes": 3717,
+      "role": "immutable reviewer evidence at final delivery"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153,
+      "role": "immutable reviewer evidence at final delivery"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "sha256": "2f41121ba740c77040f24be09a15f6671af3691dc28721400f5786722e49ba58",
+      "bytes": 21923,
+      "role": "scientific review report"
+    }
+  ],
+  "research_caches_not_publication_attachments": [
+    {
+      "original_capture_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_chatterjee_v5.pdf",
+      "local_only_path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_chatterjee_v5.pdf",
+      "sha256": "34c1e44bf9ca8374103e87a7870557fcc16b7a40e112b90cc9a1e08073d60e4b",
+      "bytes": 335742,
+      "publication_status": "local-only research input; do not stage or republish"
+    },
+    {
+      "original_capture_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_comparison_v1.pdf",
+      "local_only_path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_comparison_v1.pdf",
+      "sha256": "5df16281b38a776ed2026c925f0a3c97c3b90a60407390e06e4280beb18cc9da",
+      "bytes": 492828,
+      "publication_status": "local-only research input; do not stage or republish"
+    },
+    {
+      "original_capture_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_faizal_v1.pdf",
+      "local_only_path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_faizal_v1.pdf",
+      "sha256": "0648f30f67719a6c83976f1da53131fc6f9a9ddc9ba1c406345f5ed959b32939",
+      "bytes": 4636244,
+      "publication_status": "local-only research input; do not stage or republish"
+    },
+    {
+      "original_capture_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_ito_seiler_v1.pdf",
+      "local_only_path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_ito_seiler_v1.pdf",
+      "sha256": "a80fbf446b0d251dc18d919c7336375365d7d711187fd1bb676741fcad91b431",
+      "bytes": 86541,
+      "publication_status": "local-only research input; do not stage or republish"
+    },
+    {
+      "original_capture_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_luscher.pdf",
+      "local_only_path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_luscher.pdf",
+      "sha256": "4681fa6e4303ecc351521fa1c7c836c9f3d6774b11725d39885ec3bf8ff16561",
+      "bytes": 248,
+      "publication_status": "local-only research input; do not stage or republish"
+    },
+    {
+      "original_capture_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_szz_v1.pdf",
+      "local_only_path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_szz_v1.pdf",
+      "sha256": "21d0cf19e74e13f8468d1f980ba05849a781f28018301ea2b11d7551822597d1",
+      "bytes": 525950,
+      "publication_status": "local-only research input; do not stage or republish"
+    },
+    {
+      "original_capture_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_kirk_v4.pdf",
+      "local_only_path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_kirk_v4.pdf",
+      "sha256": "b91c6c2b9ba7cd4d5476aa6a2e823569507682c24cf103933ff9f97c73260bed",
+      "bytes": 1372548,
+      "publication_status": "local-only research input; do not stage or republish"
+    },
+    {
+      "original_capture_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_kirk_v4.txt",
+      "local_only_path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_kirk_v4.txt",
+      "sha256": "62e6276fcc0d9cbc361e57134a3073e5bfe8bdc12b2300c1de008fa9d60b7032",
+      "bytes": 407397,
+      "publication_status": "local-only research input; do not stage or republish"
+    }
+  ],
+  "external_primary_reads": [
+    {
+      "url": "https://bib-pubdb1.desy.de/record/396349/files/7611148.pdf",
+      "returncode": 0,
+      "stderr": "",
+      "role": "local research cache; not proposed publication attachment",
+      "bytes": 248,
+      "sha256": "4681fa6e4303ecc351521fa1c7c836c9f3d6774b11725d39885ec3bf8ff16561",
+      "valid_pdf_header": false,
+      "read_scope": "Web-tool primary scan: temporal-gauge setup, time-zero space, Proposition1 and complete positivity proof, Proposition2 statement, PDF pp3-8. Direct curl cache is HTML, NOT the read PDF.",
+      "capture_status": "HTML challenge; not a PDF hash; actual reading occurred through web tool",
+      "sha256_role": "retrieval-response bytes only",
+      "original_capture_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_luscher.pdf",
+      "local_only_path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_luscher.pdf"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2204.12737v1",
+      "returncode": 0,
+      "stderr": "",
+      "role": "local research cache; not proposed publication attachment",
+      "bytes": 525950,
+      "sha256": "21d0cf19e74e13f8468d1f980ba05849a781f28018301ea2b11d7551822597d1",
+      "valid_pdf_header": true,
+      "read_scope": "Equations 1.1-1.6, Assumption 1.1, Theorems 1.2/1.4, Corollary 1.6, surrounding setup/remarks; PDF pp3-8. Not entire proof.",
+      "original_capture_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_szz_v1.pdf",
+      "local_only_path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_szz_v1.pdf"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1308.4117v1",
+      "returncode": 0,
+      "stderr": "",
+      "role": "local research cache; not proposed publication attachment",
+      "bytes": 492828,
+      "sha256": "5df16281b38a776ed2026c925f0a3c97c3b90a60407390e06e4280beb18cc9da",
+      "valid_pdf_header": true,
+      "read_scope": "Sections 2.1-2.4: setup, definitions, Theorem 2.4, Corollaries 2.6/2.8, including TV conventions. Not full proofs in section3.",
+      "original_capture_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_comparison_v1.pdf",
+      "local_only_path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_comparison_v1.pdf"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2006.16229v5",
+      "returncode": 0,
+      "stderr": "",
+      "role": "local research cache; not proposed publication attachment",
+      "bytes": 335742,
+      "sha256": "34c1e44bf9ca8374103e87a7870557fcc16b7a40e112b90cc9a1e08073d60e4b",
+      "valid_pdf_header": true,
+      "read_scope": "Section2.1, Definitions2.1/2.3, Theorems2.2/2.4 and opening of section12; not full proof.",
+      "original_capture_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_chatterjee_v5.pdf",
+      "local_only_path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_chatterjee_v5.pdf"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2606.19362v1",
+      "returncode": 0,
+      "stderr": "",
+      "role": "local research cache; not proposed publication attachment",
+      "bytes": 4636244,
+      "sha256": "0648f30f67719a6c83976f1da53131fc6f9a9ddc9ba1c406345f5ed959b32939",
+      "valid_pdf_header": true,
+      "read_scope": "Selected main Hypothesis1, Theorem10.4 statement and displayed proof passages, Theorem10.8 statement/proof passages, complete gap-transfer inference of Theorem11.1 through eq11.8, Part4 H1-H5 and section3 assumptions. Not 593-page aggregate.",
+      "original_capture_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_faizal_v1.pdf",
+      "local_only_path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_faizal_v1.pdf"
+    },
+    {
+      "url": "https://arxiv.org/pdf/0901.4246v1",
+      "returncode": 0,
+      "stderr": "",
+      "role": "local research cache; not proposed publication attachment",
+      "bytes": 86541,
+      "sha256": "a80fbf446b0d251dc18d919c7336375365d7d711187fd1bb676741fcad91b431",
+      "valid_pdf_header": true,
+      "read_scope": "Complete five-page text; numerical figure was not reproduced.",
+      "original_capture_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_ito_seiler_v1.pdf",
+      "local_only_path": "/tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_ito_seiler_v1.pdf"
+    },
+    {
+      "url": "https://zenodo.org/records/21765806",
+      "version": "4.0",
+      "pdf_sha256": "b91c6c2b9ba7cd4d5476aa6a2e823569507682c24cf103933ff9f97c73260bed",
+      "read_scope": "Theorem1.1; selected Theorems/Lemmas6.4-6.6,6.10-6.13,6.20-6.23,6.39-6.44 with displayed proofs; not upstream dependency closure. Extracted text lines72-120,3820-3945,4075-4218,4320-4488,5060-5250 (last interval also reads opening section7 only)."
+    },
+    {
+      "url": "https://arxiv.org/html/2509.03513v1",
+      "read_scope": "Abstract, introductory scope and action/Hilbert-space setup through section2; no theorem imported. No local raw-content hash captured."
+    },
+    {
+      "url": "https://doi.org/10.1016/0003-4916(78)90039-8",
+      "read_scope": "Publisher abstract/bibliography only; no theorem imported."
+    },
+    {
+      "url": "https://doi.org/10.1007/3-540-11559-5",
+      "read_scope": "Bibliographic identification only; not read and not imported."
+    }
+  ],
+  "independent_diagnostics": {
+    "passed": 112,
+    "total": 112,
+    "mutation_predicates": 13,
+    "mutation_families": 11,
+    "source_sha256": "ab1fe7b3ccc6699dfa073c19694fb5625a8381db0646301872f78da91a8961ff",
+    "source": "checks/review_massgap_block_independent.py",
+    "attempts": "01 parser error; 02 111/112 due gauge-equivalent mutation fixture; 03 corrected fixture 112/112; all preserved",
+    "author_code_read_order": "Independent implementation first; author runners read before final negative-control fixture correction."
+  },
+  "external_implication_checks": {
+    "passed": 8,
+    "total": 8,
+    "scope": "Exact rational counterexample and controls for displayed external inference; not Wilson simulations"
+  },
+  "runtime": {
+    "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "executable": "/usr/local/bin/python3",
+    "numpy": "2.4.1",
+    "scipy": "1.17.0"
+  },
+  "limits": [
+    "No continuum existence or mass gap",
+    "No exact RG/crossover transport",
+    "No global novelty or route-exhaustion/no-go packet",
+    "Finite analogues do not certify infinite/group limits",
+    "Not a staged unit-receipt-schema1/2/3 or retained-grade/audit certificate"
+  ],
+  "excluded_read_claims": [
+    "No whole PROOF.md/HIST.md/HANDOFF.md review",
+    "No independent replay of author diagnostics",
+    "No full reading of author result JSONs used as proof",
+    "No adoption of predecessor review receipt or prior-art transitive proofs",
+    "No complete audit of external long manuscripts"
+  ],
+  "evidence_mutability": "Frozen after final delivery; changed identities require a new record.",
+  "frozen_utc": "2026-10-29T17:07:35.128005+00:00",
+  "publication_packet": "The artifacts list is intended for repository packaging. Full third-party PDF/text copies are local-only outside the worktree and appear only in research_caches_not_publication_attachments."
+}

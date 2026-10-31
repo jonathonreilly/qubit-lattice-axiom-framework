@@ -1,0 +1,5 @@
+s5 run (single run): lock acquired 06:21:27 UTC via the mandated 'until mkdir .../locks/numeric' loop (at once); released by one rmdir 06:21:43 UTC.
+load at acquisition 3.74 (1-min); nice 10; OMP/OPENBLAS/MKL/VECLIB threads 1; python3 without -I; no timeout; no trap.
+       15.43 real        15.24 user         0.10 sys
+           113950720  maximum resident set size
+exit 0; no process left running (pgrep empty).

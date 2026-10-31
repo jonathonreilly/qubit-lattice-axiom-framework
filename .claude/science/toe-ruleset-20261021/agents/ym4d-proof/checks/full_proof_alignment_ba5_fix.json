@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-29T13:36:56.443449+00:00",
+  "original_commit": "bfbd87e0bdf877b3e2fa4aedd8f489d734f1df34",
+  "original_sha256": "8074d6c5efe3648bfb28e3463a6076cf6df74c9c358a8613390044148ac6fbe0",
+  "repaired_sha256": "553d56f46ea457aa1b6a97c2a53f435739d3fadb6c9af0cf89676f41a7266902",
+  "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT_A.md",
+  "scope": "BA-5 section 3.5 only: replace the false exact scalar-phase projection formula by the actual SU(N) stationarity contraction. The prior RBA1-fix already noted that formula was not generally exact; this repair makes the proof body consistent. Quadratic conclusion unchanged. The historical RBA1 note also now distinguishes a nonscalar positive polar part with nonzero correction phase from the valid zero-phase case.",
+  "counterexample": "N=3, M=(2/3)I+(1/3)diag(exp(ia),exp(2ia),exp(-3ia)); unequal polar singular values and nonzero determinant phase make the scalar-corrected factor nonstationary.",
+  "review_confirmation": "Complete two-hunk repair confirmed in the same /root/review_alignment context at SHA256 553d56f46ea457aa1b6a97c2a53f435739d3fadb6c9af0cf89676f41a7266902. HS norm, local NA-alg branch, smallness and depth/volume-independent constants checked.",
+  "affected_prior_reviews": "UIR and residual BFT_A coverage is explicitly limited to unchanged action/convention ranges, verified byte-for-byte below. BA5 was not in those read ranges. Their frozen receipts remain unchanged and confer no whole-file coverage. The repaired BA5 itself is independently confirmed by the alignment reviewer.",
+  "recovery_preservation": "BFT_A.md is not one of the 28 recovered immutable files.",
+  "first_confirmed_sha256": "d8429af529a4c36b23887a35a1db0600eadad07076c0567dd587e11cd279072b",
+  "prior_review_range_verification": [
+    {
+      "review": "UIR",
+      "revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+      "range": [
+        18,
+        47
+      ],
+      "range_sha256": "610ec6e111038a859f1480e0e202fa854c40e14dc7e4dc9d82b7a965c0fa9e57",
+      "bytes_unchanged": true
+    },
+    {
+      "review": "residual",
+      "revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "range": [
+        20,
+        38
+      ],
+      "range_sha256": "900774424216601985d4fe853607e9f5fc0706bd0140cc6be8600ab037d8f5b9",
+      "bytes_unchanged": true
+    }
+  ]
+}

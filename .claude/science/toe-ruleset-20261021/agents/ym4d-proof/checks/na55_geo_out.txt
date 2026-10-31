@@ -1,0 +1,18 @@
+G1: 11979 (u,v,t) triples, violations of |floor(u/3)-floor(v/3)| <= floor((t+2)/3): 0 -> PASS
+G1n (control, floor((t+1)/3)): fired = True
+G2: 320 samples (23 by direct materialisation); violations (a) pi(N_8 X) <= N_3(pi X): 0, (b) pi(N_3 X) <= N_1(pi X): 0 -> PASS
+G2n (control, pi(N_8 X) <= N_2(pi X)): failed on 320 samples (control fires iff > 0)
+G3: 240 samples; violations (a) |C| <= 2401n + sum|Sigma^s D|: 0, (b) [D] <= C: 0, (c) |C| <= 12401n + 10000M: 0 -> PASS
+    largest observed |C| / bound_a = 2482/2482 = 1.000000
+G3n (control, 81 in place of 2401): failed on 240 samples (fires iff > 0)
+G4: 240 + 120 samples; pi(N_1(col X)) != N_1(X) on 0 -> PASS
+G5: 240 random samples, violations of ||x(S)|| <= 16||S|| + 66|S|: 0; single-cube family D=2..60 violations: 0 -> PASS
+    largest random excess per cube (||x(S)||-||S||)/|S| = 1096.500
+    D=2: ||S||=163 ||x(S)||=594 excess(A)=431 excess(B)=256  (81+175D=431)
+    D=3: ||S||=244 ||x(S)||=850 excess(A)=606 excess(B)=431  (81+175D=606)
+    D=10: ||S||=811 ||x(S)||=2642 excess(A)=1831 excess(B)=1656  (81+175D=1831)
+    D=30: ||S||=2431 ||x(S)||=7762 excess(A)=5331 excess(B)=5156  (81+175D=5331)
+    D=60: ||S||=4861 ||x(S)||=15442 excess(A)=10581 excess(B)=10406  (81+175D=10581)
+G5c (CONFIRMATORY, excess = 81 + 175 D for all D = 2..60): convention A REPRODUCES, convention B does not
+G5n (control): D=20000 single cube: excess ||x(S)|| - ||S|| = 3500081 ; fires (excess > 3073362) = True ; 16||S||+66 - ||x(S)|| = 20800000 (>= 0 required by G5)
+SUMMARY: G1=PASS G2=PASS G3=PASS G4=PASS G5=PASS  elapsed 8.4s

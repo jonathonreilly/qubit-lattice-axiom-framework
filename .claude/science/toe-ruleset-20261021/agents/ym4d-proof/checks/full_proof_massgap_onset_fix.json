@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-29T14:27:31.423742+00:00",
+  "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_TARGET.md",
+  "before_sha256": "d721bd77d36e6f96a1ce408c57d333776e17058a453b8c887ec0daf9f067cedf",
+  "after_sha256": "105440c10b9a2fc91b2be366f439053de05fd3d3497596f8f28993b0fe42de7b",
+  "finding": "Independent reviewer requires the physical onset time t_F, as well as A_F and m_*, uniform in cutoff and volume; otherwise the finite-volume admissible time interval may be empty or disappear at fixed t.",
+  "repair": "Explicitly choose A_F,t_F independent of cutoff/volume; require t_F<=t<=T_safe with T_safe tending to infinity along the same hierarchy. Update MG3 accordingly.",
+  "scope": "Clarifies the sufficient lattice criterion, not an actual Yang-Mills infrared estimate. Same-context confirmation pending."
+}

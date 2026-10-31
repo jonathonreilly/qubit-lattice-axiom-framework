@@ -1,0 +1,13 @@
+# Uniform soft minimizer: criteria before implementation
+
+Recorded 2026-10-29T17:21:06.300147+00:00 after reading the frozen linear package, its complete LED-dual/LED-symb/EXP-id/EXP-strip/N2-exp proof ranges, Lemma KF, and the matching review fixes. The analytic proof of depth uniformity is prior work; this check tests the actual-model dictionary and the new weighted row/column consumer.
+
+1. Independently enumerate all 24 coordinate orders and all 3^4 block points of the actual paired S4-prime contours. Build its derivative from directed edge counts, without defining it as straight average minus a gradient. Verify the latter identity, root gauge covariance, constant reproduction, and that spread rows kill gradients and constant one-forms. Reject deletion of an endpoint path and the d=3 length-normalization mutation.
+2. Build d=4 Bloch curl matrices and the actual soft-chain least-squares problem from those path derivatives. For depth 1 and 2, generic nonzero external momenta and fixed positive soft constants (including one nonconstant sequence), compare gauge-invariant residuals and curvatures against a separately constructed straight-chain solve and the exact dual Schur formula. Accept relative/absolute errors <= 2e-8 with stationarity residual <= 2e-8; record iteration limits and every failure. Do not invert a gauge or harmonic zero mode.
+3. Check actual adjoint row/column normalization at block factors 3 and 9: row(Q)=r, column(Q)=r^-3. Reject a missing counting-inner-product factor. Test the exact stationary residual-transport formula at every internal level.
+4. At zero Bloch momentum, explicitly construct the harmonic lift a_j=L^(j-n)v; verify zero curvatures/residuals. This tests persistence, not deletion, of the constant kernel.
+5. On at least one complete finite periodic d=4 top torus, form data impulse kernels. Compute weighted rows and columns separately, including fine offset multiplicity, and verify the general cell-counting bound. An omitted r^4 density factor must fail an exact counting control. Finite depths are supporting evidence only, never a proof of uniformity.
+6. Reimplement the older EXP-strip sufficient inequalities from their displayed formulas. Exhibit a conservative positive rate at L=3,kappa=1 and reject an over-wide strip. The paper proof, not finite numerical sampling, supplies arbitrary-depth uniformity.
+7. Confirm the anchored quartic summation uses the contraction L^-2 and ratio L^-4. Reject the uncurled L^-1 mutation, whose partial sums grow linearly.
+
+All failures and post-criteria changes stay recorded. No nonlinear RG, continuum existence, physical mass gap, unrestricted source inverse, or charged cubic-exchange closure is claimed.

@@ -1,0 +1,38 @@
+{
+  "utc": "2026-10-30T02:56:53.074097+00:00",
+  "nice": 20,
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "rss_limit_bytes": 838860800,
+  "time_limit_seconds": 60,
+  "guards": [
+    {
+      "load1": 2.12109375,
+      "free_percent": 51,
+      "passed": true
+    },
+    {
+      "load1": 2.12109375,
+      "free_percent": 51,
+      "passed": true
+    },
+    {
+      "load1": 2.12109375,
+      "free_percent": 51,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "exclusive_lock": "/Users/jonBridger/ym4d-lanes/q/M1/repo/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/combo_numeric.lock",
+  "exit_code": 0,
+  "elapsed_seconds": 0.06607416697079316,
+  "peak_combined_rss_bytes": 41500672,
+  "checks_passed": 18,
+  "checks_total": 18,
+  "result_sha256": "4bedd4b907a70119627325f2e19e8be14e1664ccddc1a7236cf90727d92c8a2b"
+}

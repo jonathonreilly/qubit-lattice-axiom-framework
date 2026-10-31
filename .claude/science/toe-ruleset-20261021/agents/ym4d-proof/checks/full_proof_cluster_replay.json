@@ -1,0 +1,27 @@
+{
+  "started_utc": "2026-10-29T12:44:37.428284+00:00",
+  "duration_seconds": 1.048,
+  "scope": "Coordinator reproduction of independent review check; not a second independent derivation",
+  "command": [
+    "/usr/local/bin/python3",
+    "-B",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_cluster_01.py"
+  ],
+  "script_sha256": "de1f6d8a569a431c2ab7f8f2901b25bad52c9526e2b06d2350e76c3408108334",
+  "exit_code": 0,
+  "stderr_bytes": 0,
+  "stdout_exact_match": true,
+  "verified_review_artifacts": 32,
+  "corrected_note_sha256": "9c9264bd4d92b60798e48ccd2eb0ff230e221c3ffd2107c0f6443ec86de563cf",
+  "report_sha256": "f3b3c8baed4e53cf4f3213342b97e51587576b59be4fb8d61fc3cbb3565dc2a0",
+  "outputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_cluster_replay_out.json",
+      "sha256": "2ccd3532db12528e29783ea4a634b49229d6fa33320871ea616c3d33a67a185c"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_cluster_replay_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

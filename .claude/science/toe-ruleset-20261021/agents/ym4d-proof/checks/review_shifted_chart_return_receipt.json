@@ -1,0 +1,84 @@
+{
+  "schema": "shifted_chart_return_bounded_subreview_v1",
+  "finalized_at_utc": "2026-10-30T03:50:32.145360+00:00",
+  "source_verdict": "LAND",
+  "recommendation": "PASS WITH BOUNDED CLAIMS",
+  "reviewer_configuration": "Astra/max requested; fresh same-family Codex review; request is not independent backend attestation",
+  "findings": {"blocking": 0, "fixed": 0, "skipped_known_source_defects": 0, "iterations": 1},
+  "source_inputs": [
+    {"path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_CHART_RETURN_ASTRA.md", "sha256": "88b5b59feaf278d9b9995adc320a446363fa68887d277ca4315c6469fb3aa525", "lines": 508, "read_ranges": [[1, 508]], "coverage": "source-first complete semantic read"},
+    {"path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md", "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d", "lines": 556, "read_ranges": [[1, 556]], "coverage": "source-first complete semantic read"},
+    {"path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md", "sha256": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8", "lines": 564, "read_ranges": [[1, 564]], "coverage": "source-first complete semantic read"}
+  ],
+  "source_first_freeze": {"at_utc": "2026-10-30T03:43:01.885431+00:00", "findings_sha256": "e3aecd903bb78d42b12dd88d888c9df79282f0c03ce6ee41eac1c56aac30c92c", "author_checks_and_prior_reviews_opened_before_freeze": false},
+  "read_order": [
+    "Machine/repository AGENTS and installed skill routing; target source complete.",
+    "PROCESS_LIGHT and full actual FU/BF producers; pinned methodology interleaved. No author package or prior review report opened.",
+    "Independent mathematical findings frozen.",
+    "Author receipt and manifest first opened and supplied hashes verified; vocabulary output inspected; all seven package tuples independently matched.",
+    "Remaining administrative methodology coverage completed. Target/FU/BF/PROCESS_LIGHT and source-first findings rehashed unchanged."
+  ],
+  "author_package": [
+    {"path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/shifted_chart_return_receipt.json", "sha256": "68ad6690f39311dfbeddb18f57afd60f37e2afefe570223793b5a5fbe313c506", "lines": 94, "coverage": "post-findings complete read"},
+    {"path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/shifted_chart_return_read_manifest.json", "sha256": "bd0c2cc9ef9f1ff5f65c5b0f5cf93a0e9b132d453b75d49ef737e458c0abbd20", "lines": 91, "coverage": "post-findings complete read"},
+    {"path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/shifted_chart_return_vocab.json", "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6", "lines": 9, "coverage": "post-findings complete read"}
+  ],
+  "methodology_main": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "methodology_access": "immutable git show only; full files read; no fetch or checkout",
+  "methodology_reads": [
+    {"path": "AGENTS.md", "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0", "lines": 26, "read_ranges": [[1, 26]]},
+    {"path": "docs/ai_methodology/SCIENCE_WORKFLOW.md", "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3", "lines": 193, "read_ranges": [[1, 193]]},
+    {"path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md", "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0", "lines": 35, "read_ranges": [[1, 35]]},
+    {"path": "docs/ai_methodology/skills/physics-loop/SKILL.md", "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0", "lines": 93, "read_ranges": [[1, 93]]},
+    {"path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md", "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7", "lines": 434, "read_ranges": [[1, 434]]},
+    {"path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md", "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be", "lines": 336, "read_ranges": [[1, 336]]},
+    {"path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md", "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc", "lines": 309, "read_ranges": [[1, 309]]},
+    {"path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md", "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258", "lines": 126, "read_ranges": [[1, 126]]},
+    {"path": "docs/ai_methodology/skills/review-loop/SKILL.md", "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23", "lines": 370, "read_ranges": [[1, 370]]},
+    {"path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md", "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482", "lines": 96, "read_ranges": [[1, 96]]},
+    {"path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md", "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14", "lines": 183, "read_ranges": [[1, 183]]},
+    {"path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md", "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85", "lines": 248, "read_ranges": [[1, 248]]},
+    {"path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md", "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e", "lines": 140, "read_ranges": [[1, 140]]},
+    {"path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md", "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7", "lines": 394, "read_ranges": [[1, 394]]},
+    {"path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md", "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69", "lines": 130, "read_ranges": [[1, 130]]},
+    {"path": "docs/audit/data/axiom_premise_nodes.json", "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37", "lines": 52, "read_ranges": [[1, 52]]},
+    {"path": "docs/MINIMAL_AXIOMS_2026-06-29.md", "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753", "lines": 233, "read_ranges": [[1, 233]]}
+  ],
+  "local_instruction_reads": [
+    {"path": "/Users/jonBridger/.codex/AGENTS.md", "sha256": "dc4fd3a79c27994afd8636f748b418a81a5f00b527849331ca1cd21902689aa2", "lines": 30, "coverage": "full"},
+    {"path": "/Users/jonBridger/AGENTS.md", "sha256": "d0614ed18df67520e63a8c72c4efe6b6e87e593b668f1840217901e70853c80d", "lines": 31, "coverage": "full"},
+    {"path": "AGENTS.md", "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0", "lines": 26, "coverage": "full"},
+    {"path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md", "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab", "lines": 11, "coverage": "full"}
+  ],
+  "coverage_limits": [
+    "No current-main PR integration/source-preservation inventory or global queue/ledger review; those are owned by root.",
+    "No recursive semantic re-review of older FU/BF predecessor source graph.",
+    "No formal canonical unit/landing receipt is created by this bounded subreview.",
+    "No author prior review report used as mathematical evidence.",
+    "Individual approved-primitive source notes were not needed: the bounded supplied-model theorem invokes none of those primitives.",
+    "Initial combined output truncations were recovered using bounded source/methodology reads before claiming complete coverage."
+  ],
+  "independent_checks": [
+    "Original-coordinate Jacobian and critical prefactor reconstruction.",
+    "Stokes/homotopy orientation check and tensor product corner accounting.",
+    "Principal covariance confirmed by characteristic-function restriction, with explicit correlated two-coordinate precision counterexample.",
+    "Cubic divided remainder and distinct-vertex incidence 45/16<3.",
+    "Independent Gaussian entire-Cauchy, square-root-factorial shift series, moment optimization, and complete exponent budget.",
+    "Flux/translation marked-series differentiation and zero-field edge case.",
+    "Reader-support and original hard-cut boundary challenge; no hidden connected-normalization claim found."
+  ],
+  "remaining_open": [
+    "Full original covariance-reader connected activity criterion and normalization.",
+    "Original cut/G/Omega and arbitrary histories, complementary chart integral and effective iteration.",
+    "Full normalized connected return.",
+    "Four-dimensional continuum existence.",
+    "Positive physical continuum mass gap."
+  ],
+  "operations": {"numerical_experiments": 0, "scientific_runners": 0, "author_freezer_scripts": 0, "spawned_agents": 0, "git_mutations": 0, "commits": 0, "pushes": 0, "pr_actions": 0, "shared_front_edits": 0, "locks": 0, "audit_runs": 0, "ledger_writes": 0, "full_pipeline_runs": 0, "whole_pr_gates": "root coordinator only", "reviewer_time": "not separately metered", "bookkeeping_failure": "Initial prose writer failed parsing triple-single-quote notation before any write; corrected. No scientific check failed."},
+  "outputs": [
+    {"path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SHIFTED_CHART_RETURN_ASTRA.md", "sha256": "d5ccd948c465327af436fdb436476b6b9e868e25d280a93dbb2fdd5bcaf75f65", "lines": 177},
+    {"path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_shifted_chart_return_source_first.md", "sha256": "e3aecd903bb78d42b12dd88d888c9df79282f0c03ce6ee41eac1c56aac30c92c", "lines": 35},
+    {"path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_shifted_chart_return_source_first.json", "sha256": "5d2063923ed95e3fb238ff5390ba58f07a84109c0e4230485cd16184b614ddf2", "lines": 36},
+    {"path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_shifted_chart_return_package_verification.json", "sha256": "a8fce57dae307a37776a9769416953c979cfaf6edc7f34370fc77ef0f06c2827", "lines": 108}
+  ]
+}

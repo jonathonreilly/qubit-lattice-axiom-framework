@@ -1,0 +1,363 @@
+{
+  "schema_version": 1,
+  "purpose": "Recovery/source preservation; no scientific certification",
+  "recovered_at_utc": "2026-10-29T10:48:52.998586+00:00",
+  "branch_head_before_recovery": "46dc04b05c5842a03ae3af64caa77628f099128f",
+  "remote_head_before_recovery": "46dc04b05c5842a03ae3af64caa77628f099128f",
+  "methodology_revision": "6c269770273c3fe00de350d5a3c14cacb70c2833",
+  "original_recovered_files": [
+    {
+      "path": "ALIGN3_55.md",
+      "bytes": 29680,
+      "sha256": "85079c75503b7e2ca1ba43f2d49de222d634782ebf83e4b634cb447cc384b89c",
+      "previously_tracked": false
+    },
+    {
+      "path": "BOX55.md",
+      "bytes": 2355,
+      "sha256": "c9b9b414aa363087d4ca9adbe5dcb5fda686973cbd7bf2a412fbd83bcf58770d",
+      "previously_tracked": false
+    },
+    {
+      "path": "CODEX_REVIEW_B2.md",
+      "bytes": 32427,
+      "sha256": "d7baa377f386e6a6800e6056b87fdaf89b3811dd3845b958050a2176420108ed",
+      "previously_tracked": false
+    },
+    {
+      "path": "CODEX_REVIEW_LANEA.md",
+      "bytes": 52673,
+      "sha256": "7b2c99e5787741af7a9e51312dea156891cea93b4738037246a8b342382f742b",
+      "previously_tracked": false
+    },
+    {
+      "path": "CODEX_REVIEW_MINCB.md",
+      "bytes": 45376,
+      "sha256": "16165092a8bb20bf9829a617ff9f3015abb0185dfe084c5a07a7d67e6c23e445",
+      "previously_tracked": false
+    },
+    {
+      "path": "CODEX_REVIEW_OFFGLOB2.md",
+      "bytes": 43998,
+      "sha256": "1f6e7b69aa54a506208aaab4f253c4a48a26f02ca8cc593215b51f8dc0a17594",
+      "previously_tracked": false
+    },
+    {
+      "path": "CODEX_REVIEW_SPHERE2.md",
+      "bytes": 40243,
+      "sha256": "1576d59b4cb15a44519fa8a3d34b2ecbf922377d4379dcff4caf31432a8b684b",
+      "previously_tracked": false
+    },
+    {
+      "path": "CODEX_REVIEW_SRC2.md",
+      "bytes": 40778,
+      "sha256": "b817b7a8639c0585628cdadb169c80bb3fc3ff4afb22cbd76539c15fc695938e",
+      "previously_tracked": false
+    },
+    {
+      "path": "CODEX_REVIEW_STEP.md",
+      "bytes": 46090,
+      "sha256": "32bab8cbc920447280b3da93a1754bf792509a115bbf8cfffc7101350fe64a0d",
+      "previously_tracked": false
+    },
+    {
+      "path": "CODEX_REVIEW_TSE.md",
+      "bytes": 37525,
+      "sha256": "b70b1236e525fe5e3c83cd99b9f7142801a0a215f7e4a34879cdca50917d3edf",
+      "previously_tracked": false
+    },
+    {
+      "path": "FLOWPOS55.md",
+      "bytes": 2859,
+      "sha256": "d1ee18a2571b29f43f393fa64163c3032dbe6a9311bb6053b0646d4755c29d55",
+      "previously_tracked": false
+    },
+    {
+      "path": "GL55.md",
+      "bytes": 2356,
+      "sha256": "85f09f9e9191156101f779c21a0e67f29319028604d623cdb4ac55ece4f70e29",
+      "previously_tracked": false
+    },
+    {
+      "path": "INDUCT55.md",
+      "bytes": 2781,
+      "sha256": "2fbb4575b95d5c8f2d4ba25f93f1665274ba36b0e266c4ecb2bab9ad3f515000",
+      "previously_tracked": false
+    },
+    {
+      "path": "LOCE55.md",
+      "bytes": 2557,
+      "sha256": "fee11d022c42b780080f36f42c03a4d1f5863a87e482657b903109500bf8f3f5",
+      "previously_tracked": false
+    },
+    {
+      "path": "UIR2_55.md",
+      "bytes": 35453,
+      "sha256": "bc10b5cc37c8f10cb339e234a3ca3aa252fd401cfb75476334c8c94aa8f5a6f3",
+      "previously_tracked": true
+    },
+    {
+      "path": "WARD55.md",
+      "bytes": 3513,
+      "sha256": "d4302e2137c1e87f0b0d63f023d3069b20cafb3e8e12c945a4ba16e1265f293f",
+      "previously_tracked": false
+    },
+    {
+      "path": "checks/a3_55_per.py",
+      "bytes": 19582,
+      "sha256": "99215af3b88dafbf8e449b403cb47e44ed4a6fd868a002c54cf3503236667c22",
+      "previously_tracked": false
+    },
+    {
+      "path": "checks/a3_55_per_criteria.md",
+      "bytes": 5765,
+      "sha256": "0411414df5da446f6af7a4d357f0fe0ad6ea7210a0fd4bb48256974096c24280",
+      "previously_tracked": false
+    },
+    {
+      "path": "checks/a3_55_per_err.txt",
+      "bytes": 844,
+      "sha256": "4d1b74f613e0decddac9842522fa6ae91fcd77f0a458efafdbf38361e68c5086",
+      "previously_tracked": false
+    },
+    {
+      "path": "checks/a3_55_per_out.txt",
+      "bytes": 1168,
+      "sha256": "5cbd4bbce753a50fd5f573b432752e1f71f6f11b69457074d989bac4143db9fe",
+      "previously_tracked": false
+    },
+    {
+      "path": "checks/ui2_1.py",
+      "bytes": 3566,
+      "sha256": "9aee9632f7aef30f3a5db837843aadb1a6522fac68746f87adbac41e5464afa1",
+      "previously_tracked": false
+    },
+    {
+      "path": "checks/ui2_1_criteria.md",
+      "bytes": 2540,
+      "sha256": "29e402b2364486fa33e7781d55c6a44182c9549a6c1eb145e70bbb3f7ed17a97",
+      "previously_tracked": false
+    },
+    {
+      "path": "checks/ui2_1_err.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previously_tracked": false
+    },
+    {
+      "path": "checks/ui2_1_out.txt",
+      "bytes": 162,
+      "sha256": "d03637cae579bab3b807b428272215f86305ccd3134ff70c145094662c8c463d",
+      "previously_tracked": false
+    },
+    {
+      "path": "checks/ui2_2.py",
+      "bytes": 4583,
+      "sha256": "b12e5bb23c7610e47892ca3386eae8ec66a5d328436cf10582e3f8434816fdab",
+      "previously_tracked": false
+    },
+    {
+      "path": "checks/ui2_2_criteria.md",
+      "bytes": 2216,
+      "sha256": "a2d031aa1a3c3e9463f173027604336de959cedde0c9a2904214b155c8fa682b",
+      "previously_tracked": false
+    },
+    {
+      "path": "checks/ui2_2_err.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previously_tracked": false
+    },
+    {
+      "path": "checks/ui2_2_out.txt",
+      "bytes": 116,
+      "sha256": "7ecb8e60d7b7d82b1d7bf063affd25eff59f988a5f0175a9bb22f5d3050be19f",
+      "previously_tracked": false
+    }
+  ],
+  "historical_task_briefs": [
+    {
+      "path": "recovery_20261029/briefs/uir2.md",
+      "bytes": 2986,
+      "sha256": "5e1d79a24da1e80fb523b4300634114abf339b331f1feb1eae7bade335b6ef57"
+    },
+    {
+      "path": "recovery_20261029/briefs/align3.md",
+      "bytes": 2462,
+      "sha256": "608295e1ed99084bd03834f96f1cd610538355e5d2d1d30621c84852a050e636"
+    },
+    {
+      "path": "recovery_20261029/briefs/loce.md",
+      "bytes": 3116,
+      "sha256": "ef8a6ff663f74fb48b272c6e83832fbd4d884270c4a925db70ea16c54058e8ae"
+    },
+    {
+      "path": "recovery_20261029/briefs/flowpos.md",
+      "bytes": 3159,
+      "sha256": "54eb667baf29e180444302752e1f19a8f5b022888cf9b2ee122bdb873a64255e"
+    },
+    {
+      "path": "recovery_20261029/briefs/induct.md",
+      "bytes": 4322,
+      "sha256": "45c94d346f385ba7a09cd7435acf949e3f91b9c65274d74e86bf53d99f86d934"
+    },
+    {
+      "path": "recovery_20261029/briefs/ward.md",
+      "bytes": 2816,
+      "sha256": "58fab06a1abeff50ad0162237e03fc11c4ec62358f3c7c629f6a26ea51ef12a4"
+    },
+    {
+      "path": "recovery_20261029/briefs/box.md",
+      "bytes": 2699,
+      "sha256": "5755f5799ed9f7cc79553fd3b7dc25ccd95f141c15f43482f99d43886d9f16e4"
+    },
+    {
+      "path": "recovery_20261029/briefs/gl.md",
+      "bytes": 2679,
+      "sha256": "026a488f7e70b5a3b688f86a15f621e7182f1536bf80578f89251b037674247e"
+    },
+    {
+      "path": "recovery_20261029/briefs/REVIEW_BRIEF_55.md",
+      "bytes": 5882,
+      "sha256": "d6b1b09a87f31e08f35b6c2779e8912791b6986ad2f6707c796c6473add06452"
+    }
+  ],
+  "completed_review_runtime_metadata": [
+    {
+      "review": "CODEX_REVIEW_STEP.md",
+      "runtime_log_filename": "step_full.log",
+      "runtime_log_sha256": "f8eedcbef163c2721339d08d7176203278983c6b2c2add6638329a8b9809e583",
+      "runtime": {
+        "model": "gpt-6-astra",
+        "reasoning effort": "max",
+        "session id": "01a18649-3bf7-7891-9ba0-fc82c61713e3"
+      }
+    },
+    {
+      "review": "CODEX_REVIEW_MINCB.md",
+      "runtime_log_filename": "mincb_full.log",
+      "runtime_log_sha256": "0e91c8afe9700084346b16f44134132c66d4c69301276ccd8419618fb077edbc",
+      "runtime": {
+        "model": "gpt-6-astra",
+        "reasoning effort": "max",
+        "session id": "01a1864c-f3a4-7452-8e2c-b4354253f32c"
+      }
+    },
+    {
+      "review": "CODEX_REVIEW_TSE.md",
+      "runtime_log_filename": "tse_full.log",
+      "runtime_log_sha256": "b9a148ba8df5fd9f688f70185273051c73235a4e3942311a29e926d3888da2e7",
+      "runtime": {
+        "model": "gpt-6-astra",
+        "reasoning effort": "max",
+        "session id": "01a18656-173d-75d0-9d8a-36fe162a1438"
+      }
+    },
+    {
+      "review": "CODEX_REVIEW_SRC2.md",
+      "runtime_log_filename": "src2_full.log",
+      "runtime_log_sha256": "a1b0a2361c4ec99c153e1792af595e5c2277b43c60b4bdcac4c4f60a5cfbe79a",
+      "runtime": {
+        "model": "gpt-6-astra",
+        "reasoning effort": "max",
+        "session id": "01a18658-90ef-75c0-92fb-077035213c50"
+      }
+    },
+    {
+      "review": "CODEX_REVIEW_LANEA.md",
+      "runtime_log_filename": "lanea_full.log",
+      "runtime_log_sha256": "d4fe2a2052da818cf4e10d68cd9fd1bcefb5807d48c0a2cd2c0a18ab71fcc24a",
+      "runtime": {
+        "model": "gpt-6-astra",
+        "reasoning effort": "max",
+        "session id": "01a1865b-9235-7002-8dea-90b521503af3"
+      }
+    },
+    {
+      "review": "CODEX_REVIEW_SPHERE2.md",
+      "runtime_log_filename": "sphere2_full.log",
+      "runtime_log_sha256": "f7d9707bec0a418e864515ba2e54ad70ca36949a69c4e2699585b845ebd74d3b",
+      "runtime": {
+        "model": "gpt-6-astra",
+        "reasoning effort": "max",
+        "session id": "01a1865d-0f9f-7eb2-addb-9d61f9d231c2"
+      }
+    },
+    {
+      "review": "CODEX_REVIEW_OFFGLOB2.md",
+      "runtime_log_filename": "offglob2_full.log",
+      "runtime_log_sha256": "93ea3973ed7b4ea2a66105cf752717e6c8ac3bdad1518ca27945d29200d1c1a4",
+      "runtime": {
+        "model": "gpt-6-astra",
+        "reasoning effort": "max",
+        "session id": "01a18664-148d-7220-becf-5fa5a7088ad4"
+      }
+    },
+    {
+      "review": "CODEX_REVIEW_B2.md",
+      "runtime_log_filename": "b2_full.log",
+      "runtime_log_sha256": "32e5c0f824bdab5b0dd486fb4355afc4d72374e3d19b92af40e9c9f887f4f0c8",
+      "runtime": {
+        "model": "gpt-6-astra",
+        "reasoning effort": "max",
+        "session id": "01a18669-6974-7950-adce-f30c0ebc6de3"
+      }
+    }
+  ],
+  "interrupted_workers": [
+    {
+      "task_id": "ae40ff3c1d0ea064e",
+      "time_utc": "2026-10-29T06:50:41.047Z",
+      "description": "Agent \"Flow with position-dependent couplings\"",
+      "cause": "Claude weekly usage limit (HTTP 429)"
+    },
+    {
+      "task_id": "a3b3ad1d5204dc6c5",
+      "time_utc": "2026-10-29T06:50:43.082Z",
+      "description": "Agent \"Close the RG induction and fixed point\"",
+      "cause": "Claude weekly usage limit (HTTP 429)"
+    },
+    {
+      "task_id": "ac9f241ff929058c8",
+      "time_utc": "2026-10-29T06:51:04.163Z",
+      "description": "Agent \"BFT on boxes: linear package with boundary\"",
+      "cause": "Claude weekly usage limit (HTTP 429)"
+    },
+    {
+      "task_id": "aa6ba5a55cdbe2859",
+      "time_utc": "2026-10-29T06:51:18.593Z",
+      "description": "Agent \"Close (UIR♮), resumed: jets and ρ-null\"",
+      "cause": "Claude weekly usage limit (HTTP 429)"
+    },
+    {
+      "task_id": "a8b8bb5ff237b36ff",
+      "time_utc": "2026-10-29T06:52:00.032Z",
+      "description": "Agent \"BFT-4 off the global class: (GL), (LUD)\"",
+      "cause": "Claude weekly usage limit (HTTP 429)"
+    },
+    {
+      "task_id": "ac68cc2444538e106",
+      "time_utc": "2026-10-29T06:52:44.961Z",
+      "description": "Agent \"Finish the log-chart background transfer\"",
+      "cause": "Claude weekly usage limit (HTTP 429)"
+    },
+    {
+      "task_id": "a342bc61c297c5b82",
+      "time_utc": "2026-10-29T06:55:30.996Z",
+      "description": "Agent \"Sphere Ward-insertion bounds W1/W3\"",
+      "cause": "Claude weekly usage limit (HTTP 429)"
+    },
+    {
+      "task_id": "aec46b22ccf964393",
+      "time_utc": "2026-10-29T07:07:30.506Z",
+      "description": "Agent \"Canonical e-image scaling and lattice Green's function\"",
+      "cause": "Claude weekly usage limit (HTTP 429)"
+    }
+  ],
+  "limits": [
+    "Hashes preserve bytes, not theorem truth.",
+    "Runtime banners identify requested model/effort, not independent mathematical validity.",
+    "Two partial derivations and six plans are incomplete; no Claude worker is represented as completed.",
+    "Full chat/tool transcripts and downloaded third-party PDFs are not part of this recovery payload."
+  ]
+}

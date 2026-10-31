@@ -1,0 +1,42 @@
+maps built: |Qroot_mu| = [459, 459, 459, 459]  |h| = 216  t=0.0s
+
+== Part A: exact identities
+seed 1 : A1 True  A2 True  A3 True  A4 True  A5(k=1) True  (lhs = -186)
+seed 2 : A1 True  A2 True  A3 True  A4 True  A5(k=1) True  (lhs = -19)
+A5 k=2: building side-18 lattice ... t=0.3s
+seed 3 : A5(k=2) True  lhs = 128  t=3.5s
+seed 4 : A5(k=2) True  lhs = 272  t=6.7s
+A-ctl ((L-1)-squares) identity fails as designed: True
+
+== Part B: norm lemmas
+B1 random: |Q2F|^2/|F|^2 = 3065489/497081043
+B1 random: |Q2F|^2/|F|^2 = 1321897/252578817
+B1 random: |Q2F|^2/|F|^2 = 600253/127224351
+B1 random: |Q2F|^2/|F|^2 = 1703962/256620393
+B1 constant (01)-form: equality True
+B2 co-closed: Qroot^T s == Qstr^T s: True  d*(Q^T s)=0: True  ratio = 732610/9425241 <= 1/9: True  t=8.8s
+B2 co-closed: Qroot^T s == Qstr^T s: True  d*(Q^T s)=0: True  ratio = 3011219/38604195 <= 1/9: True  t=10.8s
+B2 co-closed: Qroot^T s == Qstr^T s: True  d*(Q^T s)=0: True  ratio = 1001071/12831615 <= 1/9: True  t=12.8s
+B2 co-closed: Qroot^T s == Qstr^T s: True  d*(Q^T s)=0: True  ratio = 1490603/19171485 <= 1/9: True  t=14.8s
+B2 constant co-closed form: equality |Q^T s|^2 = |s|^2/9: True
+B2-ctl: |Qroot^T delta_c|^2 = 277/729 = 0.379973  > 1/9: True
+B3 random <= 16: True ; staggered transverse mode equality: True
+
+== Part C: complete k=1 check on the side-2 coarse torus (fine side 6), kappa_0 = 1
+C0 (flat sector): B0 = bhat/L reproduces bhat exactly and A_F = 0: True
+C1 chi = (-1, 1, 1, 1) : A_E - A_F/34 PSD: True  (asym = 0 ) t_sector=7.3s
+C1 chi = (-1, -1, 1, 1) : A_E - A_F/34 PSD: True  (asym = 0 ) t_sector=7.8s
+C1 chi = (-1, -1, -1, 1) : A_E - A_F/34 PSD: True  (asym = 0 ) t_sector=8.4s
+C1 chi = (-1, -1, -1, -1) : A_E - A_F/34 PSD: True  (asym = 0 ) t_sector=9.7s
+C2 (designed FAIL): A_E - A_F/30 PSD at chi = -1: False  -> control fired: True
+report: exact Rayleigh quotient at chi = -1, bhat = (1,-1,0,0): R = 199017/6430226 = 0.0309502 ; 1/34 = 0.0294118 ; c31 E float record 0.0310
+C3 covariance (0<->1): True
+
+== Part D: constants
+c_co(1) = 1/34  c_co(2) = 9/338  c_co(3) = 81/3074  c_co(inf) = 1/38
+Rbar = 89/72 ; c_E in [0.004069, 0.004070]; c_co/c_E in [6.4665, 6.4672]
+gamma^sharp_i (i>=1): old >= 2.5836e-10 (c_E lower end), new = 1.6708e-09
+cross-check vs measured float record c31 E (k=1,2,3): 0.0310, 0.0297, 0.0296 > c_co(k): True
+
+RESULTS: {'A': True, 'A-ctl fired': True, 'B1': True, 'B2': True, 'B2-ctl fired': True, 'B3': True, 'C0': True, 'C1': True, 'C2-ctl fired': True, 'R(pi^4)': '199017/6430226', 'C3': True}
+OVERALL: PASS  total time 55.8s

@@ -1,0 +1,30 @@
+T1 m=1: compose==T_(L^m): True; in-plane colsum(A^(m))=1..1 (target 1), max entry=1 (target 1); transverse colsum=1/3..1/3 (target L^-m), max entry=1/3
+T1 m=2: compose==T_(L^m): True; in-plane colsum(A^(m))=1..1 (target 1), max entry=1 (target 1); transverse colsum=1/9..1/9 (target L^-m), max entry=1/9
+T1 m=3: compose==T_(L^m): True; in-plane colsum(A^(m))=1..1 (target 1), max entry=1 (target 1); transverse colsum=1/27..1/27 (target L^-m), max entry=1/27
+T2: max |dQ_str a - Q_2 da| = 8.018e-01 (threshold 1e-12)
+W1: max|K| at U=1: 0.000e+00 (threshold 1e-12)
+W2: max|K| on pure gauge: 3.553e-15 (threshold 1e-11)
+  eta=0.04: eta_P=1.1166e-01 ||K||_op=3.9413e-01 R_K=3.530 R_B=3.566
+  eta=0.02: eta_P=5.7703e-02 ||K||_op=2.0057e-01 R_K=3.476 R_B=3.422
+  eta=0.01: eta_P=2.9620e-02 ||K||_op=1.1494e-01 R_K=3.880 R_B=3.060
+W3: R_K max=3.880 (<=200), max/min=1.116 (<=2), gauge change=1.07e-14 (<=1e-9)
+B1: R_B max=3.566 (<=50), max/min=1.166 (<=3), gauge change=1.92e-13 (<=1e-9)
+R1: (a) crossing plaquettes max||1-U||=2.22e-16; (b) box-link gradient diff=2.78e-17; (c) |norm diff| all links=5.55e-17; (d) energy ratio rel err=0.00e+00 (sum_box|u|^2=1.2781e+00)
+G1 iid: beta=0.5652 lam*beta=0.25: E[e^(lam A)]=1.279993 bound=1.333333
+G1 iid: beta=0.5652 lam*beta=0.5: E[e^(lam A)]=1.641590 bound=2.000000
+G1 iid: beta=0.5652 lam*beta=0.9: E[e^(lam A)]=2.454382 bound=10.000000
+G1 tower: beta=1.5000 lam*beta=0.25: E[e^(lam A)]=1.299161 bound=1.333333
+G1 tower: beta=1.5000 lam*beta=0.5: E[e^(lam A)]=1.739587 bound=2.000000
+G1 tower: beta=1.5000 lam*beta=0.9: E[e^(lam A)]=3.085230 bound=10.000000
+G1 sparse: beta=1.6667 lam*beta=0.25: E[e^(lam A)]=1.020783 bound=1.333333
+G1 sparse: beta=1.6667 lam*beta=0.5: E[e^(lam A)]=1.045444 bound=2.000000
+G1 sparse: beta=1.6667 lam*beta=0.9: E[e^(lam A)]=1.095065 bound=10.000000
+T1: PASS
+T2: FAIL
+W1: PASS
+W2: PASS
+W3: PASS
+B1: PASS
+R1: PASS
+G1: PASS
+OVERALL: FAIL

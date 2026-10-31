@@ -1,0 +1,1 @@
+ba1 run: lock acquired 2026-10-28T04:48:43Z (load { 2.81 2.79 3.24 }; System-wide memory free percentage: 42%); script exit 0; lock released 2026-10-28T04:48:44Z. nice 10, thread env vars = 1, python3 without -I, no timeout.

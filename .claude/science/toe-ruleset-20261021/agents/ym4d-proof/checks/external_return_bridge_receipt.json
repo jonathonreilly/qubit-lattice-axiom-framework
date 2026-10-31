@@ -1,0 +1,273 @@
+{
+  "schema": "external_return_bridge_receipt_v1",
+  "created_utc": "2026-10-30T04:06:27.779534+00:00",
+  "scope": "Pinned primary-source hypothesis map for normalized unchanged-history original-law return; no external theorem adopted",
+  "parent_supplied_local_head": "968a43e3b1025ab5f1a2a0bb80269854eeb0614c",
+  "local_head_at_freeze": "bc4579326baf713ab978774b72c95a249bcd7345",
+  "external_repository": "MathePhysics/4D_Wilson_Loop_RG",
+  "external_commit": "70d9a772fc9c7b47e36fd5e384fe42e07e7ccded",
+  "external_commit_date": "2026-10-29T11:56:26Z",
+  "acquisition": "Read-only GitHub connector fetch of repository, commit, tree and pinned UTF-8 raw files; no clone/fetch or Git mutation",
+  "external_sources": [
+    {
+      "key": "cauchy",
+      "path": "drafts/WILSON_IT1_CAUCHY_ESTIMATE_2026_10_27.md",
+      "blob": "82f7bd9b9b147096d2a2a78f207750257f18de5c",
+      "size": 323615,
+      "url": "https://github.com/MathePhysics/4D_Wilson_Loop_RG/blob/70d9a772fc9c7b47e36fd5e384fe42e07e7ccded/drafts/WILSON_IT1_CAUCHY_ESTIMATE_2026_10_27.md",
+      "raw_url": "https://raw.githubusercontent.com/MathePhysics/4D_Wilson_Loop_RG/70d9a772fc9c7b47e36fd5e384fe42e07e7ccded/drafts/WILSON_IT1_CAUCHY_ESTIMATE_2026_10_27.md",
+      "sha256": "8b42e1e7397aedd3145e20e5388f3d8518f060765f15c76f7165d6f05aaad2d7",
+      "line_count": 952,
+      "blob_verified": true,
+      "read_windows": [
+        [
+          1,
+          50
+        ],
+        [
+          891,
+          952
+        ]
+      ],
+      "read_role": "bounded argument and hypothesis comparison; not full paper certification"
+    },
+    {
+      "key": "continuum",
+      "path": "drafts/WILSON_IT1_CONTINUUM_LIMIT_CLOSURE_2026_10_26.md",
+      "blob": "e66d0b34f9bb5c7fa5f51ffe6d6cd9b60837b9f4",
+      "size": 88617,
+      "url": "https://github.com/MathePhysics/4D_Wilson_Loop_RG/blob/70d9a772fc9c7b47e36fd5e384fe42e07e7ccded/drafts/WILSON_IT1_CONTINUUM_LIMIT_CLOSURE_2026_10_26.md",
+      "raw_url": "https://raw.githubusercontent.com/MathePhysics/4D_Wilson_Loop_RG/70d9a772fc9c7b47e36fd5e384fe42e07e7ccded/drafts/WILSON_IT1_CONTINUUM_LIMIT_CLOSURE_2026_10_26.md",
+      "sha256": "302d20f45aaf24434211181577f9827168d07247003478ccee36dd040af519f2",
+      "line_count": 156,
+      "blob_verified": true,
+      "read_windows": [
+        [
+          90,
+          114
+        ]
+      ],
+      "read_role": "bounded argument and hypothesis comparison; not full paper certification"
+    },
+    {
+      "key": "marginal",
+      "path": "drafts/WILSON_IT1_LF_GAMMA_REPAIR_ATTEMPTS_2026_10_28.md",
+      "blob": "5c129d4e65723be6ac6750177bc32a0ee4ed06aa",
+      "size": 142512,
+      "url": "https://github.com/MathePhysics/4D_Wilson_Loop_RG/blob/70d9a772fc9c7b47e36fd5e384fe42e07e7ccded/drafts/WILSON_IT1_LF_GAMMA_REPAIR_ATTEMPTS_2026_10_28.md",
+      "raw_url": "https://raw.githubusercontent.com/MathePhysics/4D_Wilson_Loop_RG/70d9a772fc9c7b47e36fd5e384fe42e07e7ccded/drafts/WILSON_IT1_LF_GAMMA_REPAIR_ATTEMPTS_2026_10_28.md",
+      "sha256": "b02fe17a8894df7ba3a9272df98c8100902966a699345a708f67d8600f37587a",
+      "line_count": 2083,
+      "blob_verified": true,
+      "read_windows": [
+        [
+          1,
+          16
+        ],
+        [
+          680,
+          726
+        ],
+        [
+          1154,
+          1278
+        ],
+        [
+          1385,
+          1674
+        ],
+        [
+          1980,
+          2083
+        ]
+      ],
+      "read_role": "bounded argument and hypothesis comparison; not full paper certification"
+    },
+    {
+      "key": "labels",
+      "path": "drafts/BALABAN_PAPER_LABELS.md",
+      "blob": "11c3a5fa36783ec6eb70c8d96e55364f490149c0",
+      "size": 9197,
+      "url": "https://github.com/MathePhysics/4D_Wilson_Loop_RG/blob/70d9a772fc9c7b47e36fd5e384fe42e07e7ccded/drafts/BALABAN_PAPER_LABELS.md",
+      "raw_url": "https://raw.githubusercontent.com/MathePhysics/4D_Wilson_Loop_RG/70d9a772fc9c7b47e36fd5e384fe42e07e7ccded/drafts/BALABAN_PAPER_LABELS.md",
+      "sha256": "24a34f691d6189555ebb74349657d71000a88942c29f357bb37ef0a0b34a45ee",
+      "line_count": 98,
+      "blob_verified": true,
+      "read_windows": [
+        [
+          1,
+          98
+        ]
+      ],
+      "read_role": "bibliographic mapping only"
+    },
+    {
+      "key": "readme",
+      "path": "README.md",
+      "blob": "2adfd57420e1b2618d3a4bb2f1e1c8bb59b8f028",
+      "size": 19565,
+      "url": "https://github.com/MathePhysics/4D_Wilson_Loop_RG/blob/70d9a772fc9c7b47e36fd5e384fe42e07e7ccded/README.md",
+      "raw_url": "https://raw.githubusercontent.com/MathePhysics/4D_Wilson_Loop_RG/70d9a772fc9c7b47e36fd5e384fe42e07e7ccded/README.md",
+      "sha256": "ffb428984b61984648a9de1a17e0d0b9e1227d5b68679cddad89dcd0975f0390",
+      "line_count": 160,
+      "blob_verified": true,
+      "read_windows": [
+        [
+          1,
+          160
+        ]
+      ],
+      "read_role": "author programme/status context; no theorem evidence"
+    }
+  ],
+  "local_sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "sha256": "1565cca85302bd182435e224aab7a8e716da65fc96847c9a5cc6641fe19c256d",
+      "read_windows": [
+        [
+          1,
+          330
+        ]
+      ],
+      "role": "consumer scope and interface, not independent proof review"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD4.md",
+      "sha256": "60d27c7ec5e5fda254e8394c34639cccdfe42cd9f85898bb22952bc6fa6067c6",
+      "read_windows": [
+        [
+          1,
+          80
+        ],
+        [
+          240,
+          741
+        ]
+      ],
+      "role": "consumer scope and interface, not independent proof review"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OUTSIDE_CHART_RETURN_ASTRA.md",
+      "sha256": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4",
+      "read_windows": [
+        [
+          1,
+          150
+        ],
+        [
+          157,
+          220
+        ],
+        [
+          366,
+          641
+        ]
+      ],
+      "role": "consumer scope and interface, not independent proof review"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_CHART_RETURN_ASTRA.md",
+      "sha256": "88b5b59feaf278d9b9995adc320a446363fa68887d277ca4315c6469fb3aa525",
+      "read_windows": [
+        [
+          1,
+          135
+        ],
+        [
+          360,
+          508
+        ]
+      ],
+      "role": "consumer scope and interface, not independent proof review"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "read_windows": "all",
+      "role": "consumer scope and interface, not independent proof review"
+    }
+  ],
+  "methodology_sources": [
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/literature-bridge-protocol.md",
+      "sha256": "29edda5688fa04cb742ee524522b35dcf41d790d5c49fc46c5b4b1517f0ff5dd",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    }
+  ],
+  "methodology_note": "Selected origin/main snapshot read without refreshing refs under explicit no-Git-mutation dispatch. Installed physics-loop entry differed and current-main entry was read; DISCOVERY/CLAIM_STATUS/DELIVERY matched exactly. PROCESS_LIGHT and assigned-path scope govern output. No new full campaign or independent review was launched.",
+  "cross_note_starting_pin": {
+    "gamma_note_declared_cauchy_sha256": "8f7a3e6cc5c78419326fd1a650b1c18c485e8d61cdf94f353b664ec5c9ef5c34",
+    "pinned_current_cauchy_sha256": "8b42e1e7397aedd3145e20e5388f3d8518f060765f15c76f7165d6f05aaad2d7",
+    "interpretation": "Starting revision differs; no claim of a jointly reviewed cross-note dependency and no inference of a mathematical error."
+  },
+  "read_limits": [
+    "The fetched full byte streams were hashed; only the stated line windows were read for argument coverage.",
+    "Original Balaban papers and corrected page transcriptions were not read in this pass. Their titles/labels and dependency references are bibliographic leads only.",
+    "External D2.6/D2.7, other source drafts, original one-loop running-coupling proof and complete Gaussian derivation in gamma sections 22.1-22.7 were not reviewed.",
+    "No new Dimock paper read or arXiv theorem certification; links are attribution already present in RD4.",
+    "No whole-repository review, no full Yang-Mills proof or mass-gap claim, and no alternative-route impossibility claim.",
+    "Local producer notes were read only in recorded consumer windows; their proofs were not independently re-reviewed."
+  ],
+  "substantive_findings": [
+    "Cauchy section 11 proves conditional whole-real-integral bookkeeping at fixed stopping volume, with exp(2F) cost proportional to N_s^4; the model-specific premises remain unverified here.",
+    "That comparison bypasses rather than proves continuum section 7 fixed-exterior Q.",
+    "Gamma sections 19-23 retain the mixed-domain localized interacting-marginal and stopped-history reserve requirements; Gaussian root dimension does not supply the full potential majorant.",
+    "No theorem imported and no new bounded Yang-Mills lemma claimed; exact producer/consumer mismatch map delivered for the existing RD4 and shifted-chart return obligations."
+  ],
+  "artifact": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/EXTERNAL_RETURN_BRIDGE_ASTRA.md",
+    "sha256": "66df23c70e3ef7f08e3960b314d3ae7356d01a235ce2038258109e35af384291",
+    "bytes": 18258,
+    "line_count": 299,
+    "author_read_complete": true,
+    "independent_review": "pending"
+  },
+  "mechanical_checks": {
+    "external_git_blobs": 5,
+    "all_match": true,
+    "local_links": [
+      {
+        "target": "checks/external_return_bridge_receipt.json",
+        "exists_or_planned_receipt": true
+      },
+      {
+        "target": "RD4.md",
+        "exists_or_planned_receipt": true
+      },
+      {
+        "target": "OUTSIDE_CHART_RETURN_ASTRA.md",
+        "exists_or_planned_receipt": true
+      },
+      {
+        "target": "SHIFTED_CHART_RETURN_ASTRA.md",
+        "exists_or_planned_receipt": true
+      }
+    ],
+    "numerical_experiments": 0,
+    "git_mutations": 0,
+    "front_register_or_audit_edits": 0,
+    "external_messages": 0
+  },
+  "retention": "Full fetched third-party text was removed after exact-hash/read-window recording; original pinned URLs allow recovery. Only the authored bridge and this receipt are retained."
+}

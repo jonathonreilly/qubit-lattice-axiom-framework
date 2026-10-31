@@ -1,0 +1,7 @@
+Part F: analytic F-representative of the f_0 map
+ T=8 k=1 u=(0, 0, 0, 0): max|B| 4.762e-01; F0 gauge err 1.5e-16; F1 factorisation err 2.7e-16; F2 max|h|/max|B| 0.91; tested points 2401  rss 65 MB  t 0.1s
+ T=8 k=1 u=(1, 0, 0, 0): max|B| 4.762e-01; F0 gauge err 1.8e-16; F1 factorisation err 2.4e-16; F2 max|h|/max|B| 0.91; tested points 2401  rss 65 MB  t 0.1s
+ T=8 k=2 u=(0, 0, 0, 0): max|B| 4.779e-01; F0 gauge err 2.5e-16; F1 factorisation err 3.6e-16; F2 max|h|/max|B| 0.94; tested points 2401  rss 68 MB  t 0.2s
+ T=8 k=2 u=(2, 1, 0, 0): max|B| 4.779e-01; F0 gauge err 3.7e-16; F1 factorisation err 5.0e-16; F2 max|h|/max|B| 0.94; tested points 2401  rss 68 MB  t 0.2s
+ F0:PASS F1:PASS
+Part F: PASS  t 0.2s  rss 68 MB

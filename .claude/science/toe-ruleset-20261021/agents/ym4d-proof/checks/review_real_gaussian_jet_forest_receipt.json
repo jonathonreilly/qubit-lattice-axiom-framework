@@ -1,0 +1,128 @@
+{
+  "schema": "bounded-hostile-source-review/v1",
+  "written_at_utc": "2026-10-30T13:30:19.256953+00:00",
+  "reviewer_context": "/root/review_real_gaussian_jet_forest",
+  "author_context": "/root/chart_boundary_forest",
+  "configuration_disclosure": "Different fresh Astra/max requested by coordinator; service/backend configuration not independently attested. Same-family fresh-context review, not external peer review.",
+  "verdict": "LAND",
+  "verdict_scope": "Frozen lane source only: real normalized correlated Gaussian Hermite estimate and finite jets, simultaneous tails, conditional finite-core bounded-measurable-vertex connected logarithm, and the specified absolute residual expansion/diagonal limitation. Not canonical integration or physical target closure.",
+  "target": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REAL_GAUSSIAN_JET_FOREST_ASTRA.md",
+    "sha256": "0974561e7463838e4cc23f5e708c3bd091e4281c8a95bc5c652b3378f549a627",
+    "lines": 597
+  },
+  "source_first": {
+    "findings_frozen_before_author_packet": true,
+    "source_findings_sha256": "3c80d76ef247540182c248c1f5400357b583bce57350b6802d39b1888c3fd77e",
+    "source_read_manifest_sha256": "db3a47db8cecbc067c4678a75484123d7e04194b16b77cc8f8918995db770a19",
+    "source_stage_immutable": true,
+    "prior_review_or_root_fronts_read": false,
+    "incidental_unrelated_exposure": "RESIDUAL_FULL_COLOUR_ASTRA.md was mistakenly read as RF; its own historical/status prose was seen and excluded from evidence. The complete actual-read record is in the immutable manifest."
+  },
+  "author_packet": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/real_gaussian_jet_forest_read_manifest.json",
+      "sha256": "4d95d2f75f6e66f4987325281a8d69c88fc4c6e43f14ae6a8918a13f01e6192e",
+      "lines": 127,
+      "fully_read_after_source_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/real_gaussian_jet_forest_receipt.json",
+      "sha256": "a83ca29700a623c7c31d9fb15e684c89addb30a0959ca5664029ea029f4a2fa5",
+      "lines": 51,
+      "fully_read_after_source_freeze": true
+    }
+  ],
+  "methodology": {
+    "selected_repository_pin": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+    "specified_observed_main": "bcab5d2ee4a908fbb4e6025635fb878e6c157ebe",
+    "consumed_repository_governing_paths_byte_identical": true,
+    "installed_entries_actually_read": true,
+    "installed_entries_differ_from_repository": true,
+    "details": "All exact hashes, scopes and direct read intervals are in the source manifest; installed copies route to the consistent selected repository procedures."
+  },
+  "material_mathematical_blockers": [],
+  "packet_contradictions": [],
+  "independent_analytic_checks": [
+    "Symmetric-tensor Wick second moment reproduces B^n nu! independently of conditional augmentation.",
+    "Degree-zero normalization and vanishing signed derivative integrals; arbitrary mean translation and principal-marginal precision control.",
+    "Characteristic-function first/second parameter derivatives check all partitions, signs and heat half-factors.",
+    "Gaussian quadratic exponential plus repeated identical events checks simultaneous-tail overlap multiplicity.",
+    "Range-zero but remotely data-dependent diagonal covariance falsifies spatial-range-only reader inference.",
+    "Inverse derivative ordered words and two rooted-tree recursions verify the finite-core coefficient and support-rate budgets.",
+    "Absolute Gaussian moment recurrence and tilted quadratic-form moments reproduce residual active-dimension and multiple-pin constants.",
+    "Diagonal list expansion factorization F(e)^d with F(e)>=1+2e phi(1); signed mass remains one."
+  ],
+  "mechanical_checks": {
+    "packet_identity_comparisons": 21,
+    "distinct_packet_identity_paths": 15,
+    "all_match": true,
+    "direct_vocabulary_check": "PASS, apply_fix=False, zero reported violations",
+    "utf8_trailing_whitespace_and_RJ_label_check": "PASS",
+    "scientific_or_numerical_runs": []
+  },
+  "open_obligations": [
+    "Complete-reader connected localization for full actual C=P+E and nonlocal critical mean b/sigma.",
+    "Actual inherited-interaction size, derivative/envelope and output-rate supplier matching.",
+    "Side-chain/history composition and physical reconstruction.",
+    "Full non-free continuum existence.",
+    "Strictly positive continuum mass gap."
+  ],
+  "not_certified": [
+    "Recursive audit of unread suppliers/ancestors.",
+    "Historical author reads or earlier protected-count enumeration.",
+    "General N1-N8 no-go packet PASS or exhaustive novelty.",
+    "Canonical local dependency graph, combined pipeline/strict audit lint or current-main integration.",
+    "Formal audit/retained status, external peer review, backend/model attestation."
+  ],
+  "operations": {
+    "source_or_predecessor_edits": false,
+    "git_writes_or_fetches": false,
+    "subworkers": false,
+    "root_front_or_PR_updates": false,
+    "audit_or_retained_updates": false,
+    "publication_owner": "root"
+  },
+  "review_artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_REAL_GAUSSIAN_JET_FOREST_ASTRA.md",
+      "sha256": "8f11b481361fc3489e6b9d747be52d82e7a9e5bdca2845a9bbcb201f24ed3f74",
+      "lines": 64
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_real_gaussian_jet_forest_source_findings.md",
+      "sha256": "3c80d76ef247540182c248c1f5400357b583bce57350b6802d39b1888c3fd77e",
+      "lines": 115
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_real_gaussian_jet_forest_source_read_manifest.json",
+      "sha256": "db3a47db8cecbc067c4678a75484123d7e04194b16b77cc8f8918995db770a19",
+      "lines": 482
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_real_gaussian_jet_forest_source_freeze.json",
+      "sha256": "95a57d0dc3d3a609ed5873c37de737aa978e057f33ebe9885ec54f7356f028bc",
+      "lines": 9
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_real_gaussian_jet_forest_packet_assessment.md",
+      "sha256": "224dca3e88c64ac84d67c9aa6478ca67abd99254d8273e89bee9fe90b256f812",
+      "lines": 38
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_real_gaussian_jet_forest_packet_checks.json",
+      "sha256": "4cb3c5b541c0f6b996e43fd8d51d4d0e70869758de835123630057b4ffbcbfb6",
+      "lines": 247
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_real_gaussian_jet_forest_vocabulary_report.json",
+      "sha256": "6a6075383c07abd1f4763797f4ea3e17f3909593886a36c6eb9a654c8c41627f",
+      "lines": 54
+    }
+  ],
+  "post_receipt_identity_check": {
+    "required": true,
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_real_gaussian_jet_forest_final_identity_check.json",
+    "rule": "Must be executed after this receipt exists, bind this receipt hash, and confirm the target, consumed inputs/governance, author packet and immutable review evidence. Any mismatch invalidates the affected scope."
+  }
+}

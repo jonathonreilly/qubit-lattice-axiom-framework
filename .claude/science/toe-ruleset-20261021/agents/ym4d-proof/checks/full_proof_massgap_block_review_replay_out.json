@@ -1,0 +1,647 @@
+{
+  "schema": "independent-review-finite-diagnostics-v1",
+  "source_sha256": "ab1fe7b3ccc6699dfa073c19694fb5625a8381db0646301872f78da91a8961ff",
+  "runtime_seconds": 0.8028099536895752,
+  "numpy": "2.4.1",
+  "passed": 112,
+  "total": 112,
+  "mutation_total": 13,
+  "diagnostics": {
+    "finite_model": "Q8, two vertices, three parallel oriented edges, three magnetic two-edge loops; labelled analogue only",
+    "beta=0.03125: nonvacuum unprojected eigenvalue": 0.007935852176159369,
+    "beta=0.7: nonvacuum unprojected eigenvalue": 0.2581113641820763,
+    "beta=2: nonvacuum unprojected eigenvalue": 0.9825885319953345
+  },
+  "checks": [
+    {
+      "name": "actual 3D plaquettes per link",
+      "passed": true,
+      "value": 4
+    },
+    {
+      "name": "actual 3D influence incidence row",
+      "passed": true,
+      "value": 12
+    },
+    {
+      "name": "actual cubic plaquette has four links and thirteen touched plaquettes",
+      "passed": true,
+      "b": 4,
+      "p_B": 13
+    },
+    {
+      "name": "witness exponent from independently counted geometry",
+      "passed": true,
+      "value": 68
+    },
+    {
+      "name": "actual 4D plaquettes per link",
+      "passed": true,
+      "value": 6
+    },
+    {
+      "name": "actual 4D influence incidence row",
+      "passed": true,
+      "value": 18
+    },
+    {
+      "name": "rational half-slab endpoint",
+      "passed": true,
+      "value": "7/16"
+    },
+    {
+      "name": "rational output endpoint",
+      "passed": true,
+      "value": "217/576"
+    },
+    {
+      "name": "rational physical contraction endpoint",
+      "passed": true,
+      "value": "18/359"
+    },
+    {
+      "name": "SU2 real-character normalization",
+      "passed": true
+    },
+    {
+      "name": "SU3 conjugate pair normalization",
+      "passed": true
+    },
+    {
+      "name": "SU4 conjugate pair normalization",
+      "passed": true
+    },
+    {
+      "name": "SU7 conjugate pair normalization",
+      "passed": true
+    },
+    {
+      "name": "Q8 noncommutative group control",
+      "passed": true
+    },
+    {
+      "name": "Q8 exact inverses",
+      "passed": true
+    },
+    {
+      "name": "explicit full finite gauge projector is symmetric",
+      "passed": true,
+      "residual": 0.0,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "explicit full finite gauge projector is idempotent",
+      "passed": true,
+      "residual": 0.0,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "loop is invariant under entire gauge group",
+      "passed": true,
+      "residual": 0.0,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "single link trace is gauge variant",
+      "passed": true,
+      "residual": 0.0,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=0.03125: Perron equation",
+      "passed": true,
+      "residual": 2.3203661214665772e-14,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=0.03125: Perron vector invariant",
+      "passed": true,
+      "residual": 2.1538326677728037e-14,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=0.03125: Q stationary under psi squared",
+      "passed": true,
+      "residual": 4.597017211338539e-17,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=0.03125: Q detailed balance",
+      "passed": true,
+      "residual": 1.1265538198482195e-19,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=0.03125: P and Q agree on invariant loop",
+      "passed": true,
+      "residual": 1.734723475976807e-17,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=0.03125: projected P kills gauge variant",
+      "passed": true,
+      "residual": 4.5536491244391186e-17,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=0.03125: Q retains gauge variant direction",
+      "passed": true
+    },
+    {
+      "name": "beta=0.03125: positive unprojected finite transfer spectrum",
+      "passed": true
+    },
+    {
+      "name": "beta=0.03125: block Perron ratio for two links",
+      "passed": true,
+      "observed": 7.69043941187264e-06,
+      "bound": 0.125
+    },
+    {
+      "name": "beta=0.03125: actual A psi block range",
+      "passed": true,
+      "observed": 0.12500769043941184,
+      "bound": 0.3125
+    },
+    {
+      "name": "beta=0.03125: conditional finite energy bounds",
+      "passed": true,
+      "density_min": 0.9688726866846815,
+      "density_max": 1.0978934725720464
+    },
+    {
+      "name": "beta=0.03125: one-link fundamental multiplier",
+      "passed": true,
+      "residual": 1.5612511283791264e-17,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=0.03125: loop tensor multiplier",
+      "passed": true,
+      "residual": 1.81603863891322e-18,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=0.03125: local Haar loop variance",
+      "passed": true,
+      "residual": 0.0,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=0.03125: rank-one inverse norm",
+      "passed": true,
+      "residual": 1.127773430198431e-10,
+      "tolerance": 1e-06
+    },
+    {
+      "name": "beta=0.03125: rank-one OPERATOR residual",
+      "passed": true,
+      "min_eigenvalue": 1.4899024490589894e-08
+    },
+    {
+      "name": "beta=0.03125: tensor rank-one quadratic lower bound",
+      "passed": true
+    },
+    {
+      "name": "beta=0.03125: pointwise-positive exterior comparison",
+      "passed": true
+    },
+    {
+      "name": "beta=0.03125: magnetic denominator comparison",
+      "passed": true
+    },
+    {
+      "name": "beta=0.03125: actual one-step covariance quotient",
+      "passed": true,
+      "residual": 3.049318610115481e-19,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=0.03125: positive finite magnetic witness",
+      "passed": true,
+      "correlation": 1.5265681649917193e-05,
+      "lower_bound": 8.166111957166293e-06
+    },
+    {
+      "name": "beta=0.7: Perron equation",
+      "passed": true,
+      "residual": 4.0245584642661925e-15,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=0.7: Perron vector invariant",
+      "passed": true,
+      "residual": 1.7763568394002505e-14,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=0.7: Q stationary under psi squared",
+      "passed": true,
+      "residual": 2.6020852139652106e-17,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=0.7: Q detailed balance",
+      "passed": true,
+      "residual": 6.06475590234079e-19,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=0.7: P and Q agree on invariant loop",
+      "passed": true,
+      "residual": 1.6653345369377348e-16,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=0.7: projected P kills gauge variant",
+      "passed": true,
+      "residual": 2.8059152223924855e-16,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=0.7: Q retains gauge variant direction",
+      "passed": true
+    },
+    {
+      "name": "beta=0.7: positive unprojected finite transfer spectrum",
+      "passed": true
+    },
+    {
+      "name": "beta=0.7: block Perron ratio for two links",
+      "passed": true,
+      "observed": 0.11683544902834753,
+      "bound": 2.8
+    },
+    {
+      "name": "beta=0.7: actual A psi block range",
+      "passed": true,
+      "observed": 2.9168354490283477,
+      "bound": 7.0
+    },
+    {
+      "name": "beta=0.7: conditional finite energy bounds",
+      "passed": true,
+      "density_min": 0.36693818558958946,
+      "density_max": 7.622535226906131
+    },
+    {
+      "name": "beta=0.7: one-link fundamental multiplier",
+      "passed": true,
+      "residual": 2.7755575615628914e-17,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=0.7: loop tensor multiplier",
+      "passed": true,
+      "residual": 1.3877787807814457e-17,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=0.7: local Haar loop variance",
+      "passed": true,
+      "residual": 0.0,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=0.7: rank-one inverse norm",
+      "passed": true,
+      "residual": 3.552713678800501e-15,
+      "tolerance": 1e-06
+    },
+    {
+      "name": "beta=0.7: rank-one OPERATOR residual",
+      "passed": true,
+      "min_eigenvalue": 0.0034072778371713047
+    },
+    {
+      "name": "beta=0.7: tensor rank-one quadratic lower bound",
+      "passed": true
+    },
+    {
+      "name": "beta=0.7: pointwise-positive exterior comparison",
+      "passed": true
+    },
+    {
+      "name": "beta=0.7: magnetic denominator comparison",
+      "passed": true
+    },
+    {
+      "name": "beta=0.7: actual one-step covariance quotient",
+      "passed": true,
+      "residual": 2.2551405187698492e-17,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=0.7: positive finite magnetic witness",
+      "passed": true,
+      "correlation": 0.010617490345557833,
+      "lower_bound": 5.861628560544249e-09
+    },
+    {
+      "name": "beta=2: Perron equation",
+      "passed": true,
+      "residual": 1.1324274851176597e-14,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=2: Perron vector invariant",
+      "passed": true,
+      "residual": 4.645173135031655e-13,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=2: Q stationary under psi squared",
+      "passed": true,
+      "residual": 6.38378239159465e-16,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=2: Q detailed balance",
+      "passed": true,
+      "residual": 3.943785402416022e-18,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=2: P and Q agree on invariant loop",
+      "passed": true,
+      "residual": 1.2212453270876722e-15,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=2: projected P kills gauge variant",
+      "passed": true,
+      "residual": 1.2089396324299617e-14,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=2: Q retains gauge variant direction",
+      "passed": true
+    },
+    {
+      "name": "beta=2: positive unprojected finite transfer spectrum",
+      "passed": true
+    },
+    {
+      "name": "beta=2: block Perron ratio for two links",
+      "passed": true,
+      "observed": 3.3146201531584407,
+      "bound": 8.0
+    },
+    {
+      "name": "beta=2: actual A psi block range",
+      "passed": true,
+      "observed": 11.314620153158442,
+      "bound": 20.0
+    },
+    {
+      "name": "beta=2: conditional finite energy bounds",
+      "passed": true,
+      "density_min": 2.8095671516433667e-05,
+      "density_max": 63.392482018748154
+    },
+    {
+      "name": "beta=2: one-link fundamental multiplier",
+      "passed": true,
+      "residual": 0.0,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=2: loop tensor multiplier",
+      "passed": true,
+      "residual": 0.0,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=2: local Haar loop variance",
+      "passed": true,
+      "residual": 0.0,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=2: rank-one inverse norm",
+      "passed": true,
+      "residual": 4.440892098500626e-16,
+      "tolerance": 1e-06
+    },
+    {
+      "name": "beta=2: rank-one OPERATOR residual",
+      "passed": true,
+      "min_eigenvalue": 0.0031623219120161627
+    },
+    {
+      "name": "beta=2: tensor rank-one quadratic lower bound",
+      "passed": true
+    },
+    {
+      "name": "beta=2: pointwise-positive exterior comparison",
+      "passed": true
+    },
+    {
+      "name": "beta=2: magnetic denominator comparison",
+      "passed": true
+    },
+    {
+      "name": "beta=2: actual one-step covariance quotient",
+      "passed": true,
+      "residual": 1.0842021724855044e-19,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "beta=2: positive finite magnetic witness",
+      "passed": true,
+      "correlation": 0.00022231129957938316,
+      "lower_bound": 1.420612466861442e-19
+    },
+    {
+      "name": "operator positivity does not imply entrywise rank-one residual",
+      "passed": true,
+      "minimum_entry": -0.03312477329114827
+    },
+    {
+      "name": "open slab cap agrees with twice-applied actual transfer",
+      "passed": true,
+      "residual": 2.914335439641036e-16,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "mutation: drop magnetic action in implemented slab",
+      "passed": true,
+      "mutation_killed": true,
+      "residual": 1.3704549412782376,
+      "detection_threshold": 1e-07
+    },
+    {
+      "name": "mutation: terminal half action replaced by full action",
+      "passed": true,
+      "mutation_killed": true,
+      "residual": 0.05157426662764858,
+      "detection_threshold": 1e-07
+    },
+    {
+      "name": "single boundary source full oscillation",
+      "passed": true,
+      "residual": 8.881784197001252e-16,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "mutation: halve implemented boundary oscillation allowance",
+      "passed": true,
+      "mutation_killed": true,
+      "residual": 1.4000000000000008,
+      "detection_threshold": 1e-07
+    },
+    {
+      "name": "mixed log partition difference equals integrated actual covariance",
+      "passed": true,
+      "residual": 2.7755575615628914e-17,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "all-boundary finite tilt including normalizer",
+      "passed": true,
+      "residual": 3.469446951953614e-18,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "mutation: omit finite tilt normalizer",
+      "passed": true,
+      "mutation_killed": true,
+      "residual": 0.05434667620082445,
+      "detection_threshold": 1e-07
+    },
+    {
+      "name": "mutation: identify projected P with unprojected all-boundary Q",
+      "passed": true,
+      "mutation_killed": true,
+      "residual": 0.03513531123105246,
+      "detection_threshold": 1e-07
+    },
+    {
+      "name": "mutation: omit A in output conditional",
+      "passed": true,
+      "mutation_killed": true,
+      "residual": 0.0486875833797682,
+      "detection_threshold": 1e-07
+    },
+    {
+      "name": "mutation: omit A in output stationary law",
+      "passed": true,
+      "mutation_killed": true,
+      "residual": 0.00863325337737331,
+      "detection_threshold": 1e-07
+    },
+    {
+      "name": "mutation: omit psi in output conditional",
+      "passed": true,
+      "mutation_killed": true,
+      "residual": 0.05147303327221509,
+      "detection_threshold": 1e-07
+    },
+    {
+      "name": "mutation: omit psi in output stationary law",
+      "passed": true,
+      "mutation_killed": true,
+      "residual": 0.009112031263166474,
+      "detection_threshold": 1e-07
+    },
+    {
+      "name": "mutation: center under A psi instead of psi squared",
+      "passed": true,
+      "mutation_killed": true,
+      "residual": 0.011230905850280665,
+      "detection_threshold": 1e-07
+    },
+    {
+      "name": "signed measure recovered through strictly positive Fourier operator",
+      "passed": true,
+      "residual": 1.4432899320127035e-15,
+      "tolerance": 5e-08
+    },
+    {
+      "name": "nonzero signed measure survives full convolution",
+      "passed": true
+    },
+    {
+      "name": "projected kernel has variant null direction",
+      "passed": true,
+      "residual": 3.552713678800501e-15,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "unprojected convolution retains that direction",
+      "passed": true
+    },
+    {
+      "name": "beta zero annihilates zero-total signed measure",
+      "passed": true,
+      "residual": 0.0,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "physical step contraction: loop",
+      "passed": true,
+      "observed": 0.00024800763130808715,
+      "bound": 0.133492252681764
+    },
+    {
+      "name": "physical step contraction: link trace",
+      "passed": true,
+      "observed": 0.015871751210492113,
+      "bound": 0.066746126340882
+    },
+    {
+      "name": "physical step contraction: intersecting loop product",
+      "passed": true,
+      "observed": 6.502349445051741e-05,
+      "bound": 0.16686531585220502
+    },
+    {
+      "name": "physical step contraction: sum of loops",
+      "passed": true,
+      "observed": 0.000744022893924317,
+      "bound": 0.40047675804529204
+    },
+    {
+      "name": "mutation: replace input sensitivity beta by beta squared in contraction",
+      "passed": true,
+      "mutation_killed": true,
+      "residual": 0.01378593476233955,
+      "detection_threshold": 1e-07
+    },
+    {
+      "name": "actual output conditional influence within ground-state majorant",
+      "passed": true,
+      "observed": 0.016366405635650637,
+      "bound": 0.06361607142857142
+    },
+    {
+      "name": "quarter oscillation covariance at product Haar",
+      "passed": true,
+      "residual": 0.0,
+      "tolerance": 5e-11
+    },
+    {
+      "name": "mutation: replace covariance quarter by sixteenth",
+      "passed": true,
+      "mutation_killed": true,
+      "residual": 0.1875,
+      "detection_threshold": 1e-07
+    },
+    {
+      "name": "negative-entry exterior remains positive operator",
+      "passed": true
+    },
+    {
+      "name": "mutation: replace pointwise-positive exterior by only PSD exterior",
+      "passed": true,
+      "mutation_killed": true,
+      "residual": 15.0,
+      "detection_threshold": 1e-07
+    }
+  ],
+  "limitations": [
+    "Q8 theta graph is a labelled finite analogue, not SU(N) proof.",
+    "Cubic incidence enumeration is finite at side four.",
+    "No infinite-volume, Fubini, martingale or continuum proof is supplied by this runner."
+  ]
+}

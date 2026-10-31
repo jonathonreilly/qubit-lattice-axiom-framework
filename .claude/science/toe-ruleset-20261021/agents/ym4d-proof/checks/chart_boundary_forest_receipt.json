@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "role": "author freeze, not independent review",
+  "primary_source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+    "sha256": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8",
+    "line_count": 564
+  },
+  "files": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_read_manifest.json",
+      "sha256": "35be410ae0b57a82e902d5030066fd902a3b8ea69830c8507cc5d8392a9758f0"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_author_correction.json",
+      "sha256": "6f35b06fd5ee6be5a98e9fba31b14583691772dedd41a30cda818d4c4849ebb0"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    }
+  ],
+  "mechanical_checks": {
+    "source_hash_matches_review_dispatch": true,
+    "trailing_whitespace_lines": [],
+    "balanced_fenced_blocks": true,
+    "local_links_resolve_or_are_this_receipt": [
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROBABILITY_SENSITIVE_RETURN_ASTRA.md",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_read_manifest.json",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_receipt.json",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md"
+    ],
+    "formula_labels_BF1_through_BF25_present": true,
+    "vocabulary_report": "0 files with violations; report-only run; primary source unmodified"
+  },
+  "author_mathematical_checks": [
+    "Young/Cauchy constants in BF6 and optimized Gaussian radii were derived analytically, with all D scalar components retained.",
+    "The single derivative of an outside ball has positive normal sign; BF7 reduces higher orders weakly, keeping all corner products.",
+    "The mixed C_a s_e s_f example checks the otherwise missing second-derivative block in BF13.",
+    "Pruefer occurrence counts and the anchored connected-label walk give BF17/BF19 at all orders.",
+    "Scalar-to-link sqrt(D) mean correction was made before review and is exactly recoverable from its two verified full-source hashes.",
+    "BF21\u2013BF23 explicitly retain the force and determinant prices; no normalized nonlinear marginal is asserted."
+  ],
+  "not_performed": [
+    "Numerical experiment",
+    "Independent proof review",
+    "Audit",
+    "Git mutation or publication"
+  ],
+  "independent_review": "pending; coordinator owns dispatch",
+  "scope": "Bounded analytic support. Actual nonlinear/full-reader connected estimate BF25, histories, effective-level closure, existence and physical continuum mass gap remain open."
+}

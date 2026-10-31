@@ -1,0 +1,193 @@
+{
+  "schema": "review-uniform-soft-entry-identity-v1",
+  "captured_utc": "2026-10-29T17:50:19.109941+00:00",
+  "receipt_sha256": "4e980541b2bddc77586bfa7f9285ebb4428684268aedaf750b232d9c9b45fe6a",
+  "author_files": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "expected_sha256": "c7b7890187b9a350aea19e606957c606922fe741c6615382c3a4da0cd60d92c4",
+      "actual_sha256": "c7b7890187b9a350aea19e606957c606922fe741c6615382c3a4da0cd60d92c4",
+      "bytes": 26375,
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01.py",
+      "expected_sha256": "4fa4a16746a0d7cb2d6c73416a8077d984015723278108372a48a4d3c311650d",
+      "actual_sha256": "4fa4a16746a0d7cb2d6c73416a8077d984015723278108372a48a4d3c311650d",
+      "bytes": 13513,
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_bloch_err.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_bloch_out.json",
+      "expected_sha256": "6fd353bfef9de4406ba80163bcf0f3310b5b38caf3cdbe8c1ae948f2f7a5a2b1",
+      "actual_sha256": "6fd353bfef9de4406ba80163bcf0f3310b5b38caf3cdbe8c1ae948f2f7a5a2b1",
+      "bytes": 11721,
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_criteria.md",
+      "expected_sha256": "c3df93a5846c19d7f3af56dcda74fc9fdb350648c7deca161642fe8000ccdf85",
+      "actual_sha256": "c3df93a5846c19d7f3af56dcda74fc9fdb350648c7deca161642fe8000ccdf85",
+      "bytes": 2717,
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_periodic_err.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_periodic_out.json",
+      "expected_sha256": "1531629d3c38b51e94a6082eff1f9fae7c4aef9e4cb18515ee428ce30ca89f07",
+      "actual_sha256": "1531629d3c38b51e94a6082eff1f9fae7c4aef9e4cb18515ee428ce30ca89f07",
+      "bytes": 6281,
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_strip_err.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_01_strip_out.json",
+      "expected_sha256": "14fc01ec85f2bb5d6acd7d50b4b02e14a8402e1b53abf98ce976a16f7949d2a5",
+      "actual_sha256": "14fc01ec85f2bb5d6acd7d50b4b02e14a8402e1b53abf98ce976a16f7949d2a5",
+      "bytes": 5798,
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_02.py",
+      "expected_sha256": "7aa7442b3f29606b3c076a9e6f6bde39b3f344d4905f8ee39217767980806421",
+      "actual_sha256": "7aa7442b3f29606b3c076a9e6f6bde39b3f344d4905f8ee39217767980806421",
+      "bytes": 4350,
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_02_criteria.md",
+      "expected_sha256": "6b476964c0bd01e8a012ff60955a0e5005eeb0d1707eda3498613536b31a1e41",
+      "actual_sha256": "6b476964c0bd01e8a012ff60955a0e5005eeb0d1707eda3498613536b31a1e41",
+      "bytes": 1713,
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_02_err.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_02_out.json",
+      "expected_sha256": "f69616b6011206d82e46081803bfe61f6d2cf289e4db0861dd67988947dc727e",
+      "actual_sha256": "f69616b6011206d82e46081803bfe61f6d2cf289e4db0861dd67988947dc727e",
+      "bytes": 6679,
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_inputs.json",
+      "expected_sha256": "e61933a28ea8538a6e596ffa7e188bf6f0b107a49cb68a83f25713b970b0ea8f",
+      "actual_sha256": "e61933a28ea8538a6e596ffa7e188bf6f0b107a49cb68a83f25713b970b0ea8f",
+      "bytes": 10796,
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_primary_sources.json",
+      "expected_sha256": "241065b085afc90c1833cf76b23b51fd3f71f5dc429c9bc72cda18bb7eb1ee8b",
+      "actual_sha256": "241065b085afc90c1833cf76b23b51fd3f71f5dc429c9bc72cda18bb7eb1ee8b",
+      "bytes": 615,
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_primary_sources02.json",
+      "expected_sha256": "d0c52e176064badd40eab464d9854656a82df94c6bc78b378c0d9aef129231bf",
+      "actual_sha256": "d0c52e176064badd40eab464d9854656a82df94c6bc78b378c0d9aef129231bf",
+      "bytes": 1331,
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_soft_minimizer_vocab.json",
+      "expected_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "actual_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153,
+      "matches": true
+    }
+  ],
+  "source_inputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LINEAR_PACKAGE.md",
+      "expected_sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad",
+      "actual_sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad",
+      "bytes": 48089,
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF_session16_snapshot.md",
+      "expected_sha256": "4f376e3a6dd22701218d61fbd06bad3ab83575a4bfe195914a3217df580b4b9f",
+      "actual_sha256": "4f376e3a6dd22701218d61fbd06bad3ab83575a4bfe195914a3217df580b4b9f",
+      "bytes": 488224,
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FLOW.md",
+      "expected_sha256": "085cd225228a23847b053650fe8bff4c14529d7e630a74565b301d39855e442f",
+      "actual_sha256": "085cd225228a23847b053650fe8bff4c14529d7e630a74565b301d39855e442f",
+      "bytes": 539577,
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_S13_S14.md",
+      "expected_sha256": "875bf6b27bd37e832e7766cc95b96f0d2233eeb960fd16e82aa19d5dee794d62",
+      "actual_sha256": "875bf6b27bd37e832e7766cc95b96f0d2233eeb960fd16e82aa19d5dee794d62",
+      "bytes": 33308,
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_S15_CONVERGENCE.md",
+      "expected_sha256": "329f0980a3570c8e068b6454490ec62aa80fb850e05d89843d1955ba75a4fb24",
+      "actual_sha256": "329f0980a3570c8e068b6454490ec62aa80fb850e05d89843d1955ba75a4fb24",
+      "bytes": 27703,
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_S16_S17.md",
+      "expected_sha256": "8ab27ebdb373f5c771a5d005827c4e32fad1c3736aed173691d134c49db123ec",
+      "actual_sha256": "8ab27ebdb373f5c771a5d005827c4e32fad1c3736aed173691d134c49db123ec",
+      "bytes": 40178,
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RESIDUAL_FULL_COLOUR_ASTRA.md",
+      "expected_sha256": "1ce9460989e5491bd491dcc348add15207e63013a0c537cd6c51caa19f0e3dd7",
+      "actual_sha256": "1ce9460989e5491bd491dcc348add15207e63013a0c537cd6c51caa19f0e3dd7",
+      "bytes": 36980,
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RESIDUAL_FULL_COLOUR_ASTRA.md",
+      "expected_sha256": "0b504129260e0269ae8dffa79f2113a6bb94675edc37c084fe8f9be6464e67bc",
+      "actual_sha256": "0b504129260e0269ae8dffa79f2113a6bb94675edc37c084fe8f9be6464e67bc",
+      "bytes": 29488,
+      "matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_full_colour_receipt.json",
+      "expected_sha256": "e30df91f8682af55d857295b928e04f9bfa75c77f352ad51f88c2b3521e24d1d",
+      "actual_sha256": "e30df91f8682af55d857295b928e04f9bfa75c77f352ad51f88c2b3521e24d1d",
+      "bytes": 15395,
+      "matches": true
+    }
+  ],
+  "all_match": true,
+  "criteria_sha256": "30aa71cc88a519d44307b0ab873ff64630ca876b7fa67fd8903e904f80a27731"
+}

@@ -1,0 +1,19 @@
+PASS H1a d=4 L=3: mean ||Xbar||_HS^2 <= m_2 (L^(d-1)-1)/L^(2(d-1)) | 0.0431 <= 0.1990 (192 links)
+PASS H1b d=4 L=3: straight-transporter plaquette W_p is Haar (|mean tr/2| <= 4 se) | +0.0018, se 0.0289
+PASS H1c d=4 L=3: w_0(1) >= lemma bound | w_0 = 1.0046 >= -0.7844; t=5s
+PASS H1a d=3 L=3: mean ||Xbar||_HS^2 <= m_2 (L^(d-1)-1)/L^(2(d-1)) | 0.1862 <= 0.5511 (720 links)
+PASS H1b d=3 L=3: straight-transporter plaquette W_p is Haar (|mean tr/2| <= 4 se) | -0.0030, se 0.0189
+PASS H1c d=3 L=3: w_0(1) >= lemma bound | w_0 = 0.9972 >= -1.9694; t=8s
+PASS H1a d=3 L=5: mean ||Xbar||_HS^2 <= m_2 (L^(d-1)-1)/L^(2(d-1)) | 0.0440 <= 0.2143 (144 links)
+PASS H1b d=3 L=5: straight-transporter plaquette W_p is Haar (|mean tr/2| <= 4 se) | -0.0003, se 0.0426
+PASS H1c d=3 L=5: w_0(1) >= lemma bound | w_0 = 1.0089 >= -0.8515; t=12s
+PASS H1a d=2 L=3: mean ||Xbar||_HS^2 <= m_2 (L^(d-1)-1)/L^(2(d-1)) | 0.6368 <= 1.2399 (2400 links)
+PASS H1b d=2 L=3: straight-transporter plaquette W_p is Haar (|mean tr/2| <= 4 se) | +0.0062, se 0.0142
+PASS H1c d=2 L=3: w_0(1) >= lemma bound | w_0 = 1.0105 >= -3.4541; t=14s
+INFO d=2 L=3 K=1: w_0 = 0.9936 +- 0.0138; <chi_1> = -0.0204, <chi_2> = +0.0282 (400 samples); t=16s
+INFO d=2 L=3 K=2: w_0 = 1.0285 +- 0.0379; <chi_1> = +0.0374, <chi_2> = +0.0477 (44 samples); t=17s
+INFO d=2 L=3 K=3: w_0 = 1.0482 +- 0.0996; <chi_1> = -0.0678, <chi_2> = -0.1097 (4 samples); t=17s
+INFO d=2 L=3 K=4: w_0 = 0.8809 +- 0.0851; <chi_1> = -0.0863, <chi_2> = +0.1154 (4 samples); t=17s
+INFO d=2 L=3 K=5: w_0 = 1.2171 +- 0.0486; <chi_1> = -0.1914, <chi_2> = +0.0353 (4 samples); t=20s
+runtime 20 s
+TOTAL: PASS=12 FAIL=0

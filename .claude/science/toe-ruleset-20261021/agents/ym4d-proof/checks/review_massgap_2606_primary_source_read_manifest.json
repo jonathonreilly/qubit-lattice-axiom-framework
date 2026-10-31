@@ -1,0 +1,527 @@
+{
+  "schema": "scoped_source_read_manifest_v1",
+  "frozen_utc": "2026-10-30T14:52:03.989296+00:00",
+  "reviewer": "/root/review_massgap_primary_2606",
+  "author": "/root/massgap_primary_2606",
+  "reviewer_configuration": "Requested Astra/max; distinct same-family context; no backend attestation or external peer-review claim",
+  "procedure_choice": {
+    "pin": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+    "observed_origin_main": "bcab5d2ee4a908fbb4e6025635fb878e6c157ebe",
+    "head": "1ca794aeb72236a0460545e4b9e3373ad589dc4c",
+    "local_main": "9ce38a06db4ab4b8457e724fff0d70d88bf1ed81",
+    "choice": "Use the complete pinned repository procedure consistently, as explicitly directed; actual installed entries are read and separately hashed, not relabeled as repository copies.",
+    "consumed_repo_authority_comparisons": 19,
+    "all_consumed_paths_match_pin_main_worktree": true
+  },
+  "scientific_reads": [
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASSGAP_2606_PRIMARY_ASTRA.md",
+      "bytes": 29077,
+      "sha256": "43277655d33e5a7f90cec29d19ebf4a9d6e0c307526afbeb6263730310c280ce",
+      "lines": 545,
+      "role": "target_mathematics",
+      "coverage": "full",
+      "read_line_windows_1_based": [
+        [
+          1,
+          545
+        ]
+      ]
+    },
+    {
+      "path": "/private/tmp/massgap_2606_primary_cache/2606.19362v1.pdf",
+      "bytes": 4636244,
+      "sha256": "0648f30f67719a6c83976f1da53131fc6f9a9ddc9ba1c406345f5ed959b32939",
+      "role": "primary_mathematics",
+      "version": "2606.19362v1",
+      "url": "https://arxiv.org/pdf/2606.19362v1",
+      "total_pages": 593,
+      "full_text_read_page_windows_1_based": [
+        [
+          28,
+          37
+        ],
+        [
+          51,
+          57
+        ],
+        [
+          79,
+          85
+        ],
+        [
+          110,
+          129
+        ],
+        [
+          175,
+          175
+        ],
+        [
+          180,
+          189
+        ],
+        [
+          193,
+          201
+        ],
+        [
+          401,
+          407
+        ],
+        [
+          415,
+          419
+        ],
+        [
+          452,
+          455
+        ],
+        [
+          526,
+          533
+        ],
+        [
+          541,
+          552
+        ],
+        [
+          571,
+          577
+        ],
+        [
+          589,
+          592
+        ]
+      ],
+      "distinct_pages_read": 111,
+      "coverage": "partial: selected whole pages; not the complete 593-page aggregate",
+      "visually_read_pages_1_based": [
+        31,
+        33,
+        55,
+        527,
+        577,
+        592
+      ],
+      "search_only_all_pages": [
+        "energy inner",
+        "Dirichlet form",
+        "harmonic projection",
+        "C.54",
+        "C.63"
+      ],
+      "search_only_warning": "Whole-PDF search does not count as reading every page; page 389 was only a search hit.",
+      "retrieval": "Parent-supplied cached version, local bytes independently hashed; versioned arXiv abstract metadata independently opened; no claim of an independent PDF download."
+    },
+    {
+      "path": "/private/tmp/massgap_2606_primary_cache/math-ph_0303013v3.pdf",
+      "bytes": 303862,
+      "sha256": "d8fcf7ec954df18660b0ed456ac846f8b33f0f3eda9a02c9857d62139d3a63b5",
+      "role": "primary_comparison_mathematics",
+      "version": "math-ph/0303013v3",
+      "url": "https://arxiv.org/pdf/math-ph/0303013v3",
+      "total_pages": 27,
+      "full_text_read_page_windows_1_based": [
+        [
+          1,
+          12
+        ]
+      ],
+      "distinct_pages_read": 12,
+      "coverage": "partial: 12 of 27 pages, including definitions and covariance construction",
+      "retrieval": "Parent-supplied cached version, local bytes independently hashed; versioned arXiv abstract metadata independently opened."
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "bytes": 830043,
+      "sha256": "4cfe889ea1ca565d3998236fa4e02e503619b9a329408ddd4a09f805f13fca80",
+      "lines": 8052,
+      "role": "local_law_definition_only",
+      "coverage": "partial",
+      "read_line_windows_1_based": [
+        [
+          2820,
+          2955
+        ]
+      ],
+      "relevant_definition_window_1_based": [
+        2901,
+        2935
+      ],
+      "search_only": "rg patterns for the block law and normalizers across this file; incidental older front-summary verdict snippets were displayed."
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_COUPLING_KERNEL_ASTRA.md",
+      "bytes": 30169,
+      "sha256": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b",
+      "lines": 590,
+      "role": "local_finite_u_law_definition_only",
+      "coverage": "partial",
+      "read_line_windows_1_based": [
+        [
+          1,
+          160
+        ]
+      ],
+      "not_certified": "No claim to review all finite-coupling estimates or prior review outcomes."
+    }
+  ],
+  "actual_installed_skills": [
+    {
+      "path": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md",
+      "bytes": 9276,
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "lines": 140,
+      "role": "actual_installed_skill",
+      "coverage": "full"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/review-loop/SKILL.md",
+      "bytes": 20680,
+      "sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "lines": 313,
+      "role": "actual_installed_skill",
+      "coverage": "full"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/plugins/cache/openai-primary-runtime/pdf/26.1017.22136/skills/pdf/SKILL.md",
+      "bytes": 7809,
+      "sha256": "a6e20f4ae66364a06d577dd51e0ce66ee2ef955be129cbe195e0a27f403daaf8",
+      "lines": 169,
+      "role": "actual_installed_skill",
+      "coverage": "full"
+    }
+  ],
+  "local_instructions": [
+    {
+      "path": "/Users/jonBridger/AGENTS.md",
+      "bytes": 5441,
+      "sha256": "d0614ed18df67520e63a8c72c4efe6b6e87e593b668f1840217901e70853c80d",
+      "lines": 31,
+      "role": "local_instructions",
+      "coverage": "full"
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/AGENTS.md",
+      "bytes": 1118,
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "lines": 26,
+      "role": "local_instructions",
+      "coverage": "full"
+    }
+  ],
+  "pinned_procedure_and_premise_reads": [
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "role": "procedure_or_premise_authority",
+      "read_version": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "coverage": "full",
+      "bytes": 11788,
+      "lines": 193,
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "matches_observed_origin_main": true,
+      "matches_worktree": true,
+      "worktree_sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "observed_main_sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "role": "procedure_or_premise_authority",
+      "read_version": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "coverage": "full",
+      "bytes": 2180,
+      "lines": 35,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "matches_observed_origin_main": true,
+      "matches_worktree": true,
+      "worktree_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "observed_main_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "role": "procedure_or_premise_authority",
+      "read_version": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "coverage": "full",
+      "bytes": 5767,
+      "lines": 93,
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "matches_observed_origin_main": true,
+      "matches_worktree": true,
+      "worktree_sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "observed_main_sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "role": "procedure_or_premise_authority",
+      "read_version": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "coverage": "full",
+      "bytes": 24561,
+      "lines": 370,
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "matches_observed_origin_main": true,
+      "matches_worktree": true,
+      "worktree_sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "observed_main_sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "role": "procedure_or_premise_authority",
+      "read_version": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "coverage": "full",
+      "bytes": 5188,
+      "lines": 96,
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "matches_observed_origin_main": true,
+      "matches_worktree": true,
+      "worktree_sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "observed_main_sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "role": "procedure_or_premise_authority",
+      "read_version": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "coverage": "full",
+      "bytes": 12608,
+      "lines": 183,
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "matches_observed_origin_main": true,
+      "matches_worktree": true,
+      "worktree_sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "observed_main_sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "role": "procedure_or_premise_authority",
+      "read_version": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "coverage": "full",
+      "bytes": 12940,
+      "lines": 248,
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "matches_observed_origin_main": true,
+      "matches_worktree": true,
+      "worktree_sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "observed_main_sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "role": "procedure_or_premise_authority",
+      "read_version": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "coverage": "full",
+      "bytes": 7554,
+      "lines": 140,
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "matches_observed_origin_main": true,
+      "matches_worktree": true,
+      "worktree_sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "observed_main_sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "role": "procedure_or_premise_authority",
+      "read_version": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "coverage": "full",
+      "bytes": 23216,
+      "lines": 394,
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "matches_observed_origin_main": true,
+      "matches_worktree": true,
+      "worktree_sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "observed_main_sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "role": "procedure_or_premise_authority",
+      "read_version": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "coverage": "full",
+      "bytes": 16755,
+      "lines": 336,
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "matches_observed_origin_main": true,
+      "matches_worktree": true,
+      "worktree_sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "observed_main_sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "role": "procedure_or_premise_authority",
+      "read_version": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "coverage": "full",
+      "bytes": 4975,
+      "lines": 126,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "matches_observed_origin_main": true,
+      "matches_worktree": true,
+      "worktree_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "observed_main_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "role": "procedure_or_premise_authority",
+      "read_version": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "coverage": "full",
+      "bytes": 16941,
+      "lines": 354,
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "matches_observed_origin_main": true,
+      "matches_worktree": true,
+      "worktree_sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "observed_main_sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "role": "procedure_or_premise_authority",
+      "read_version": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "coverage": "full",
+      "bytes": 11333,
+      "lines": 233,
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "matches_observed_origin_main": true,
+      "matches_worktree": true,
+      "worktree_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "observed_main_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "role": "procedure_or_premise_authority",
+      "read_version": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "coverage": "full",
+      "bytes": 6427,
+      "lines": 130,
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "matches_observed_origin_main": true,
+      "matches_worktree": true,
+      "worktree_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "observed_main_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "role": "procedure_or_premise_authority",
+      "read_version": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "coverage": "full",
+      "bytes": 6416,
+      "lines": 52,
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "matches_observed_origin_main": true,
+      "matches_worktree": true,
+      "worktree_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "observed_main_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "role": "procedure_or_premise_authority",
+      "read_version": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "coverage": "full",
+      "bytes": 2581,
+      "lines": 57,
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "matches_observed_origin_main": true,
+      "matches_worktree": true,
+      "worktree_sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "observed_main_sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "role": "procedure_or_premise_authority",
+      "read_version": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "coverage": "full",
+      "bytes": 4770,
+      "lines": 99,
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "matches_observed_origin_main": true,
+      "matches_worktree": true,
+      "worktree_sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "observed_main_sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "role": "procedure_or_premise_authority",
+      "read_version": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "coverage": "full",
+      "bytes": 5313,
+      "lines": 110,
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "matches_observed_origin_main": true,
+      "matches_worktree": true,
+      "worktree_sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "observed_main_sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "role": "procedure_or_premise_authority",
+      "read_version": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "coverage": "partial optional context: initial request was truncated; confirmed lines 105-230, no full-read certification",
+      "bytes": 30709,
+      "lines": 434,
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "matches_observed_origin_main": true,
+      "matches_worktree": true,
+      "worktree_sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "observed_main_sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+    }
+  ],
+  "rendered_source_images": [
+    {
+      "path": "/private/tmp/review_massgap_2606_primary_cache/p31.png",
+      "bytes": 175727,
+      "sha256": "80e953689e01ad1b76a20987fb63a8c81966310e347f41b2a7e65f9469562151"
+    },
+    {
+      "path": "/private/tmp/review_massgap_2606_primary_cache/p33.png",
+      "bytes": 166108,
+      "sha256": "89f2dba5613f86b1f03d3895a0347871e7bf61d65ebda777151797d909cc62dd"
+    },
+    {
+      "path": "/private/tmp/review_massgap_2606_primary_cache/p55.png",
+      "bytes": 166630,
+      "sha256": "14bf23ad60e76637a110106381eca52cbed6fb2c34f0004cc4cf2be27d0d1a03"
+    },
+    {
+      "path": "/private/tmp/review_massgap_2606_primary_cache/p527.png",
+      "bytes": 183716,
+      "sha256": "a0a690e7270771602db63d3bb06c49cc48f0bf3a4bb883bd57ddae2592d914ca"
+    },
+    {
+      "path": "/private/tmp/review_massgap_2606_primary_cache/p577.png",
+      "bytes": 137264,
+      "sha256": "f16f21ba339a8a9ddbb7d10bcae20b480a166838828c680352b14edfb0f7a196"
+    },
+    {
+      "path": "/private/tmp/review_massgap_2606_primary_cache/p592.png",
+      "bytes": 129106,
+      "sha256": "59372a90a30b2b62207298c86752619472ebee4d5754629c931809cf67b7d456"
+    }
+  ],
+  "mechanical_tools": [
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/scripts/vocab_lint.py",
+      "bytes": 14183,
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "lines": 392,
+      "coverage": "partial read lines 1-110 plus function-name search; whole file hashed"
+    },
+    {
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/repo/controlled_vocabulary.yaml",
+      "bytes": 53269,
+      "sha256": "e5c9ff6759418ca0605bf7f5fb5321f4b0ead19d52f61447e695b99959090d15",
+      "lines": 939,
+      "coverage": "metadata only before direct lint"
+    }
+  ],
+  "read_order_and_limitations": {
+    "target_and_primary_mathematics_before_author_provenance": true,
+    "author_provenance_opened_before_freeze": false,
+    "prior_review_files_opened_before_freeze": false,
+    "pristine_front_verdict_blinding": false,
+    "incidental_exposure": "After reading the target and primary mathematics, a search within PROOF.md to locate the shifted normalized-law definition displayed older lane front-summary verdict snippets. No prior review file was opened, and these snippets were not used as mathematical evidence. The source-first independence claim is qualified accordingly.",
+    "not_read": "No author massgap_2606_primary_provenance.json, prior lane review reports, current audit ledger/queue, or full Part I proof were read for this source freeze.",
+    "coverage_policy": "Full means actual complete content read; partial, search-only, process, and metadata reads are separate. Initial truncated outputs were supplemented where full coverage is claimed."
+  },
+  "execution_boundary": {
+    "scientific_or_numerical_runs": 0,
+    "extra_workers": 0,
+    "git_commits_pushes_or_fetches": 0,
+    "source_front_audit_edits": 0,
+    "allowed_mechanical_work": "PDF text/raster inspection, hashes, line/page counts, read-only Git metadata, explicit-path read-only vocabulary lint."
+  }
+}

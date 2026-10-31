@@ -1,0 +1,25 @@
+Actual L=3, kappa=1, coarse 2^4 torus; all 16 Bloch fibres, one colour.
+Selected fine free-column labels: [1, 2, 3]
+Selected 3-by-3 covariance: [[0.49956553003409615, 0.21550542522950472, 0.21550542522950472], [0.21550542522950472, 0.7836114241863762, 0.3354789136035514], [0.2155054252295048, 0.33547891360355137, 1.0431985994477584]]
+This finite torus: Hessian eigenvalue interval [0.0224450880031, 15.7364957763], solve residual 8.21565038223e-15.
+The finite torus interval is not the uniform g_T constant.
+Hard pair (0, 1): direct truncated moment 0.00589835976036, boundary-forest value 0.00589835976036, discrepancy 1.13e-17.
+Hard pair (0, 2): direct truncated moment 0.00283240271701, boundary-forest value 0.00283240271701, discrepancy 4.34e-18.
+Hard pair (1, 2): direct truncated moment 0.00826937136628, boundary-forest value 0.00826937136628, discrepancy 1.39e-17.
+Largest hard-pair discrepancy 1.38777878078e-17; both calculations retain the cutoff boundary.
+Three distinct smooth insertions: determinant cumulant -0.00137540572107, three-tree integral -0.00137540572107, discrepancy 6.51e-17.
+50 forest interpolations preserve the selected covariance spectral interval; the Schur-product proof handles all sizes.
+n=2: degree-weighted labelled trees 1; root sum 1, bound 44.3343365936.
+n=3: degree-weighted labelled trees 4.24264068712; root sum 2.12132034356, bound 147.597950015.
+n=4: degree-weighted labelled trees 33.7979589711; root sum 5.63299316186, bound 655.177800398.
+n=5: degree-weighted labelled trees 402.046621821; root sum 16.7519425759, bound 3271.82859824.
+n=6: degree-weighted labelled trees 6404.37632414; root sum 53.3698027012, bound 17428.1238789.
+n=7: degree-weighted labelled trees 128237.665732; root sum 178.107869072, bound 96702.900234.
+Tree counts check only the Hermite degree factor, not an RG activity norm.
+Duplicate-coordinate interpolation h=0.5: lowest eigenvalue 0.5, inverse-noise edge cost 2.
+Duplicate-coordinate interpolation h=0.9: lowest eigenvalue 0.1, inverse-noise edge cost 10.
+Duplicate-coordinate interpolation h=0.99: lowest eigenvalue 0.01, inverse-noise edge cost 100.
+Duplicate-coordinate interpolation h=0.999: lowest eigenvalue 0.001, inverse-noise edge cost 1000.
+The resulting 1/(1-h) upper majorant is nonintegrable; this is failure of that estimate, not of the bounded covariance.
+Duplicate reader, indicator x>2: retained boundary integral 0.0222325634445, exact variance 0.0222325634445, discrepancy 1.04e-17.
+Peak RSS bytes: 97796096; ceiling 1000000000; BLAS threads 1.

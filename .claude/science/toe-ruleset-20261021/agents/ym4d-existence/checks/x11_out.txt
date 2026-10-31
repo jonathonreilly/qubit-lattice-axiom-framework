@@ -1,0 +1,30 @@
+x11: tree-level Wilson value of the corner witness; kappa := coefficient of g^4 N(N^2-1)
+T=12 xi=0: kappa_PO=+0.008268133 kappa_V=+0.004557408 kappa=+0.012825540  (G00=0.115474)
+T=12 xi=1: kappa_PO=+0.008268133 kappa_V=+0.004557408 kappa=+0.012825540  (G00=0.153965)
+T=12 xi=2: kappa_PO=+0.008268133 kappa_V=+0.004557408 kappa=+0.012825540  (G00=0.192456)
+T=16 xi=0: kappa_PO=+0.008267972 kappa_V=+0.004558628 kappa=+0.012826600  (G00=0.115790)
+T=16 xi=1: kappa_PO=+0.008267972 kappa_V=+0.004558628 kappa=+0.012826600  (G00=0.154387)
+T=16 xi=2: kappa_PO=+0.008267972 kappa_V=+0.004558628 kappa=+0.012826600  (G00=0.192984)
+T=20 xi=0: kappa_PO=+0.008267922 kappa_V=+0.004558965 kappa=+0.012826886  (G00=0.115937)
+T=20 xi=1: kappa_PO=+0.008267922 kappa_V=+0.004558965 kappa=+0.012826886  (G00=0.154583)
+T=20 xi=2: kappa_PO=+0.008267922 kappa_V=+0.004558965 kappa=+0.012826886  (G00=0.193229)
+T=24 xi=0: kappa_PO=+0.008267902 kappa_V=+0.004559086 kappa=+0.012826989  (G00=0.116017)
+T=24 xi=1: kappa_PO=+0.008267902 kappa_V=+0.004559086 kappa=+0.012826989  (G00=0.154690)
+T=24 xi=2: kappa_PO=+0.008267902 kappa_V=+0.004559086 kappa=+0.012826989  (G00=0.193362)
+T=32 xi=0: kappa_PO=+0.008267890 kappa_V=+0.004559164 kappa=+0.012827054  (G00=0.116097)
+T=32 xi=1: kappa_PO=+0.008267890 kappa_V=+0.004559164 kappa=+0.012827054  (G00=0.154796)
+T=32 xi=2: kappa_PO=+0.008267890 kappa_V=+0.004559164 kappa=+0.012827054  (G00=0.193495)
+  T=12: xi-spread of kappa = 8.674e-18 (relative 6.763e-16)
+  T=16: xi-spread of kappa = 8.674e-18 (relative 6.762e-16)
+  T=20: xi-spread of kappa = 3.469e-18 (relative 2.705e-16)
+  T=24: xi-spread of kappa = 3.469e-18 (relative 2.705e-16)
+  T=32: xi-spread of kappa = 3.469e-18 (relative 2.705e-16)
+A1 (gauge independence) PASS; A2 (convergence, non-vanishing) PASS: kappa(1,32)=+0.012827054, drift 24->32 = 6.51e-08
+B (kappa_PO(xi=1) = 0.008268 +- 2e-6, T>=16) PASS
+C N=2: MC +0.09620 +- 0.00408, Wick +0.09246, 0.92 SE ok
+C N=3: MC -0.13082 +- 0.02358, Wick -0.11918, 0.49 SE ok
+C PASS
+D e(1e-2)=5.799e-01 e(1e-3)=1.083e-01 FAIL
+E (8 star corner trees x 2 groups x 50 configs) worst deviation 4.55e-14 PASS
+OVERALL: A1 PASS, A2 PASS, B PASS, C PASS, D FAIL, E PASS
+wall 5.0 s; peak RSS 702 MB

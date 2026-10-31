@@ -1,0 +1,16 @@
+ba5 run record (BFT lane A, session 5; all times UTC)
+- criteria checks/ba5_criteria.md born 08:30:35Z; script checks/ba5_y.py born 08:32:34Z (after the criteria); one scripted
+  fix at 08:33:04Z (cube side in B1 = extent of the support), before any run.
+- Acquisition 1: lock 08:33:12Z (load 2.06, 41% free). P1 ran (< 1 s). P2 stalled at r = inf: d^T G' is pure roundoff
+  there, and CG on a roundoff right-hand side did not converge. I stopped it at ≈08:43Z with pkill. The pattern also
+  matched the parent shell, which died before its rmdir. So the lock was released by one manual rmdir at 08:43:52Z,
+  after checking that no ba5 process was left. P1 output is from this acquisition; the partial P2 output was overwritten.
+- Post-hoc script fix (08:44:00Z, after acquisition 1, before acquisition 2): for r = inf, d^T G' (exactly 0 by Lemma LD)
+  is reported (2.2e-16) and then set to 0. The RSS label was corrected from "GB" to "MB": the value is ru_maxrss/1e6 and
+  macOS reports bytes, so P1's printed "71.66 GB" means 71.66 MB.
+- Acquisition 2: lock 08:44:11Z (load 2.68, 37% free), released by one rmdir at 08:48:52Z. P2 08:44:11-08:45:14Z,
+  P4a 08:45:14-08:45:32Z, B1 08:45:32-08:45:34Z, P4b 08:45:34-08:48:52Z.
+- Peak RSS: P1 0.07 GB, P2 0.10 GB, P4a 0.08 GB, B1 0.70 GB, P4b 0.80 GB.
+- Settings: nice 10, OMP/OPENBLAS/MKL/VECLIB threads 1, PYTHONDONTWRITEBYTECODE=1, python3 without -I, no timeout,
+  no trap.
+- After the runs: no ba5 process left, no __pycache__ in checks/.

@@ -1,0 +1,27 @@
+{
+  "started_utc": "2026-10-29T16:34:41.409062+00:00",
+  "finished_utc": "2026-10-29T16:34:41.437284+00:00",
+  "script": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_radius.py",
+  "script_sha256": "4c62ea9f41b9bb4fe1537df7a8ceedf979baf57271b201126f035eaaeb757f2f",
+  "execution": "Byte-identical script copied into an isolated temporary directory to preserve author result files",
+  "command_argv": [
+    "/usr/local/bin/python3",
+    "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym4d-frozen-author-replay-882ar51z/source_history_return_radius.py"
+  ],
+  "cwd": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "exit_code": 0,
+  "console_stdout": "{\n  \"schema\": \"source-history-author-fixed-radius-v1\",\n  \"scope\": \"Exact source-cost and sufficient-threshold arithmetic only; full raw sea/history return remains open\",\n  \"checks\": {\n    \"fixed_relative_radius_positive_and_u_independent\": true,\n    \"stated_radius_leaves_exactly_half_the_decay\": true,\n    \"mixed_source_exponent_identity\": true,\n    \"rho_zero_recovers_original_external_source_bound\": true,\n    \"revised_u_threshold_pays_polynomial_and_constant\": true,\n    \"revised_entropy_threshold_gives_rooted_bound\": true\n  },\n  \"negative_controls\": {\n    \"reusing_original_decay_at_positive_rho_rejected\": true,\n    \"critical_rho_has_no_positive_decay_budget\": true\n  },\n  \"counts\": {\n    \"checks\": 6,\n    \"negative_controls\": 2\n  },\n  \"geometry_cases\": 16,\n  \"exponent_cases\": 96,\n  \"examples\": [\n    {\n      \"N\": 2,\n      \"L\": 3,\n      \"epsilon_1\": \"1/2\",\n      \"n_P\": 1296,\n      \"a\": \"1/32\",\n      \"rho_0\": \"1/331776\",\n      \"a_eff\": \"1/64\",\n      \"P_0\": \"348\"\n    }\n  ],\n  \"rooted_entropy_bound\": \"9/43336\",\n  \"source_sha256\": \"4c62ea9f41b9bb4fe1537df7a8ceedf979baf57271b201126f035eaaeb757f2f\",\n  \"elapsed_seconds\": 0.0015070409863255918,\n  \"all_pass\": true\n}\n",
+  "stderr_bytes": 0,
+  "output_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_source_history_radius_author_replay_out.json",
+  "output_sha256": "5baf225fca6b939b315a65413706535f42dafbd36305af6127f869af207588ee",
+  "expected_output": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_history_return_radius_attempt01.json",
+  "expected_sha256": "976d191d7b719d10de02739aa4013c005c1fd280842ace2fbd681344c9d822eb",
+  "identical_except_elapsed_seconds": true,
+  "ignored_comparison_fields": [
+    "elapsed_seconds"
+  ],
+  "counts": {
+    "checks": 6,
+    "negative_controls": 2
+  }
+}

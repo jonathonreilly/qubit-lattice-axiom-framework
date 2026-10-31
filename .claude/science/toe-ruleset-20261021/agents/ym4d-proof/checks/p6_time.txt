@@ -1,0 +1,39 @@
+# checks/p6_time.txt -- run record for check p6 (PLD lane E, session 6)
+
+ORDER OF WRITING (UTC, from `date -u` at the moment of writing, and `md5 -q`):
+  12:28:16  PLD.md §18.0 PRE-STATED appended (FIRST edit of the session)
+  12:29:12  PLD_LOG.md session-6 entry with the PRE-STATED byte size (7793 bytes)
+  12:30-12:47  PLD.md §18.1-§18.9 appended (derivations), in five appends
+  12:50:40  checks/p6_criteria.md written      md5 d6e90f4899385fbec5f668d033a2efeb   7254 bytes
+  12:51:17  checks/p6_pld.py written           md5 12db2379d1ea159c6072922b0e611c6e
+  12:51:26  single run, 0.04 s                 output checks/p6_out.txt, stderr checks/p6_err.txt
+ORDER DISCLOSURE: §18.1-§18.9 were written BEFORE the criteria. The criteria therefore had to avoid, and do avoid, every
+constant derived in session 6: each criterion quotes only constants recorded in RLARGE, HW, PROOF, the earlier sessions of
+PLD.md, or the p4/p5 records, and names the source inline. The script was written AFTER the criteria and was NOT edited
+after the run. No criterion was edited at any point.
+
+NUMERIC LOCK: NOT taken, and deliberately. The session-24 brief states "Exact rational/symbolic arithmetic in plain python
+(no BLAS) is cheap and does not need the lock". p6_pld.py imports only `fractions`, `math` and `sys`: no numpy, no BLAS,
+no linear algebra, no sampling, no quadrature. Run anyway with nice 10, one thread
+(OMP_NUM_THREADS=OPENBLAS_NUM_THREADS=MKL_NUM_THREADS=VECLIB_MAXIMUM_THREADS=1), PYTHONDONTWRITEBYTECODE=1 and
+`python3 -I` (isolated mode). Load averages at launch: 2.52 2.30 2.05 (< 8). Wall 0.04 s real, 0.01 s user;
+maximum resident set size 15417344 B = 14.7 MB (< 1 GB). exit 0. One run, no re-run, no trap, no pkill, no process left.
+
+SUMMARY AS RUN: **FAIL: F2** -- all other criteria PASS, including every negative control (A3, B3n, E1n).
+
+DISCLOSED FAILURE (F2), and its diagnosis:
+  F2 asked: "81 + 2401*32*80*sum_{m>=1}3^{-m} == 3073361" exactly, with sum_{m>=1}3^{-m} the INFINITE series of
+  PLD §16.6 (b). The script instead formed the FINITE partial sum sum_{m=1}^{199}3^{-m} = 1/2 - 3^{-199} as an exact
+  Fraction and compared it for exact equality, which can never hold. The printed left-hand side is a rational within
+  3^{-199} of 3073361.
+  Classification: **a SCRIPT defect, not a mathematical failure and not a criterion defect.** It is reported as a FAIL,
+  as the brief requires. Nothing was re-run and no file was edited after the run.
+  POST-HOC hand arithmetic (labelled post-hoc; performed after seeing the output, not part of the check):
+  2401*32 = 76832; 76832*80 = 6146560; 6146560 * (1/2) = 3073280; 3073280 + 81 = 3073361. So the criterion's own quantity,
+  with the infinite sum equal to 1/2, does equal the recorded Delta_sh = 3073361, and 256 <= 3073361. The quantity F2 was
+  meant to confirm is therefore confirmed by hand; it is NOT counted as a passed criterion, and §18.5 (b')'s proof does not
+  depend on the numerical value of Delta_sh (only on its being finite and depth-free, which §16.6 (b) and p4 D2b supply).
+
+SCOPE OF p6 (as its criteria say): arithmetic about recorded constants and about bounds PLD/HW already state. It tests
+nothing about the lattice measure, and in particular nothing about (CLS-min), (LCR), (CEM^COL), (CEM-1), (CEM-2), (E2^F),
+(J-NS^cd), Theorem CRC-2T, or any nonabelian statement.

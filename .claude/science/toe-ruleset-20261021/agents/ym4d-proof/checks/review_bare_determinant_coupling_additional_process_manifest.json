@@ -1,0 +1,88 @@
+{
+  "record_type": "supplemental_read_accounting",
+  "created_utc": "2026-10-30T15:11:52.878795+00:00",
+  "reason": "Records hash-only governance inventory omitted from the frozen bounded read manifest. Does not modify either immutable source freeze or enlarge scientific coverage.",
+  "entries": [
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "42a24d3df296f01e4189eadd1ef8b92f316bd8d14229f14643641e39939d159e",
+      "bytes": 21536,
+      "lines": 366,
+      "coverage": "hash_only inventory; contents not consumed",
+      "role": "process metadata only; no scientific or status evidence"
+    },
+    {
+      "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+      "bytes": 3694,
+      "lines": 72,
+      "coverage": "hash_only inventory; contents not consumed",
+      "role": "process metadata only; no scientific or status evidence"
+    },
+    {
+      "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "4df23ed611d808e3dd28d2a14b5407a16c9eb4d2c632017666b9a240a78199ce",
+      "bytes": 22309,
+      "lines": 381,
+      "coverage": "hash_only inventory; contents not consumed",
+      "role": "process metadata only; no scientific or status evidence"
+    },
+    {
+      "path": "docs/repo/DEFERRED_DECISIONS.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+      "bytes": 10595,
+      "lines": 202,
+      "coverage": "hash_only inventory; contents not consumed",
+      "role": "process metadata only; no scientific or status evidence"
+    },
+    {
+      "path": "docs/repo/CONTROLLED_VOCABULARY.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+      "bytes": 39977,
+      "lines": 773,
+      "coverage": "hash_only inventory; contents not consumed",
+      "role": "process metadata only; no scientific or status evidence"
+    },
+    {
+      "path": "docs/CANONICAL_HARNESS_INDEX.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "f2665b763f69e4baef4648d15b517b2701d975a8131f4665703c40c07283782c",
+      "bytes": 109438,
+      "lines": 224,
+      "coverage": "hash_only inventory; contents not consumed",
+      "role": "process metadata only; no scientific or status evidence"
+    },
+    {
+      "path": "docs/audit/README.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f",
+      "bytes": 35690,
+      "lines": 643,
+      "coverage": "hash_only inventory; contents not consumed",
+      "role": "process metadata only; no scientific or status evidence"
+    },
+    {
+      "path": "docs/audit/data/premise_decision_history.json",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113",
+      "bytes": 11572,
+      "lines": 142,
+      "coverage": "hash_only inventory; contents not consumed",
+      "role": "process metadata only; no scientific or status evidence"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "source_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "bytes": 16755,
+      "lines": 336,
+      "coverage": "hash_only inventory; contents not consumed",
+      "role": "process metadata only; no scientific or status evidence"
+    }
+  ]
+}

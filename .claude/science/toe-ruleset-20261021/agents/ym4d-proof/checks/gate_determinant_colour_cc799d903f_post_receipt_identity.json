@@ -1,0 +1,81 @@
+{
+  "schema": "ym4d.research_gate.post_receipt_identity.v1",
+  "created_utc": "2026-10-30T16:36:34.344511+00:00",
+  "receipt_created_utc": "2026-10-30T16:36:04.528147+00:00",
+  "genuinely_later_invocation": true,
+  "source_commit": "cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047",
+  "moving_ref_equality_required": false,
+  "identity_rule": "Repository paths plus immutable commit/blob identities control. Current moving refs are not used as proof or required equal. Hash equality verifies identity only.",
+  "science": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/DETERMINANT_SIGN_ASTRA.md",
+      "commit": "cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047",
+      "git_blob": "f937e872cb9053d9e2c0f8c04a63b78f311284e6",
+      "sha256": "138610a5a7d6e63d2a2d7ce3616964b9b909acf8295df65777b3eb4a40c55d36",
+      "working_bytes_equal": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "commit": "cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047",
+      "git_blob": "dc92f5e688c26e7bedabdb348a1a62de5d03eb92",
+      "sha256": "426f774581ae8385b1c546e676fb313bfed48ab14913454bdc38f67f2cebb230",
+      "working_bytes_equal": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_MATCH_ASTRA.md",
+      "commit": "cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047",
+      "git_blob": "4af916540e3ba43570c2a6d6f8a7e9b88fbd911e",
+      "sha256": "7663b556f147e7a4ff03b1f1089e0793f61f8cb6e7adf3d3ff4ce78c763b07ff",
+      "working_bytes_equal": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_COUPLING_KERNEL_ASTRA.md",
+      "commit": "cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047",
+      "git_blob": "2b6b4935c11fcb2f941d75c66b0b3fde6a48f8dd",
+      "sha256": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b",
+      "working_bytes_equal": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/INTERACTING_SELECTED_CORE_ASTRA.md",
+      "commit": "cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047",
+      "git_blob": "38940162f8129d052266d82808333146a6f88180",
+      "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "working_bytes_equal": true
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/gates/determinant-colour-cc799d903f.md",
+      "sha256": "0681285274966b654345b150614a6e288beedfd852caf6d9ce2e7fb0a96cae59",
+      "receipt_binding_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_determinant_colour_cc799d903f_source_findings.json",
+      "sha256": "b0e73bf3cab2461d8303dd4718502d9d1a60aa5a97f3142ae85e6ab8d1cec76d",
+      "receipt_binding_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_determinant_colour_cc799d903f_source_read_manifest.json",
+      "sha256": "d7b6d2de0d193012e7076766b74e248b10d77040d9f8219b9f0d0317bd879e82",
+      "receipt_binding_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_determinant_colour_cc799d903f_vocab.json",
+      "sha256": "9fec8ec0c75354ae57e99df5e6ac03f73de2abb6524e7ac2c14361929762c944",
+      "receipt_binding_matches": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_determinant_colour_cc799d903f_receipt.json",
+      "sha256": "1f1bde9635225e942196196d672223e0a21ae562646e3645b9ffb7d86c05c7d6",
+      "created_utc": "2026-10-30T16:36:04.528147+00:00"
+    }
+  ],
+  "worktree_status_before_identity_write": [
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_determinant_colour_cc799d903f_receipt.json",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_determinant_colour_cc799d903f_source_findings.json",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_determinant_colour_cc799d903f_source_read_manifest.json",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/gate_determinant_colour_cc799d903f_vocab.json",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/gates/determinant-colour-cc799d903f.md"
+  ],
+  "scope": "Read-only identity confirmation after receipt. No mathematical claim or historical read certification added."
+}

@@ -1,0 +1,428 @@
+{
+  "kind": "preregistered exact finite regression; no Yang-Mills verification",
+  "started_utc": "2026-10-30T09:21:16Z",
+  "criteria_sha256": "dad72c028c2776a9daddda0515ddac6b29905a859743959f9e71ae72004989f2",
+  "script_sha256": "28ee2368d79bd813cb3ddb96b1294c104e4cd6605531e95436f6edc7350d9975",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "geometry_and_payment",
+      "status": "PASS",
+      "result": {
+        "counts": {
+          "single_support_bounds": 5888,
+          "whole_family_bounds": 192,
+          "saturation_identities": 4757
+        },
+        "maximum_observed_ratio": "1",
+        "acceptance_bound": "11/2",
+        "jet_scope": "arbitrary coefficient magnitudes; constant activities in this finite check"
+      }
+    },
+    {
+      "name": "shared_norm_and_mutations",
+      "status": "PASS",
+      "result": {
+        "baseline": "PASS",
+        "mutations": [
+          {
+            "mutation": "active_weights",
+            "status": "REJECTED",
+            "witness": "cycle4_full_output"
+          },
+          {
+            "mutation": "inactive_roots_omitted",
+            "status": "REJECTED",
+            "witness": "path3_full_output"
+          }
+        ]
+      }
+    },
+    {
+      "name": "taylor_projection_and_dilation",
+      "status": "PASS",
+      "result": {
+        "monomials": 110,
+        "dimension_one_mutation": "REJECTED at degree three, L=3",
+        "scope": "projection and coefficient scaling, not a nonlinear RG operator"
+      }
+    },
+    {
+      "name": "ordered_jet_polynomials",
+      "status": "PASS",
+      "result": {
+        "orders_checked": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "partitions_enumerated": 142418,
+        "C4_coefficients_ascending": [
+          0,
+          2,
+          42,
+          156,
+          150
+        ],
+        "C10_coefficients_ascending": [
+          0,
+          2,
+          3066,
+          242580,
+          5115750,
+          46012050,
+          213797682,
+          556165680,
+          818752500,
+          637853490,
+          204495126
+        ]
+      }
+    },
+    {
+      "name": "value_to_derivative_diagnostic",
+      "status": "PASS",
+      "result": {
+        "scaling_only_not_trigonometric_sampling": [
+          {
+            "n": 2,
+            "value_amplitude": "1/64",
+            "sixth_derivative_amplitude": "1",
+            "sixth_T_term": "1/720",
+            "ratio": 64
+          },
+          {
+            "n": 4,
+            "value_amplitude": "1/4096",
+            "sixth_derivative_amplitude": "1",
+            "sixth_T_term": "1/720",
+            "ratio": 4096
+          },
+          {
+            "n": 8,
+            "value_amplitude": "1/262144",
+            "sixth_derivative_amplitude": "1",
+            "sixth_T_term": "1/720",
+            "ratio": 262144
+          }
+        ]
+      }
+    }
+  ],
+  "resources": [
+    {
+      "label": "initial",
+      "load": [
+        1.896484375,
+        2.00927734375,
+        1.962890625
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 22380544,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "before_geometry_and_payment",
+      "load": [
+        1.896484375,
+        2.00927734375,
+        1.962890625
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 22446080,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "geometry_path6",
+      "load": [
+        1.896484375,
+        2.00927734375,
+        1.962890625
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 22544384,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "geometry_cycle6",
+      "load": [
+        1.896484375,
+        2.00927734375,
+        1.962890625
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 22560768,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "geometry_grid2x3",
+      "load": [
+        1.896484375,
+        2.00927734375,
+        1.962890625
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 22642688,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "after_geometry_and_payment",
+      "load": [
+        1.896484375,
+        2.00927734375,
+        1.962890625
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 22642688,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "before_shared_norm_and_mutations",
+      "load": [
+        1.896484375,
+        2.00927734375,
+        1.962890625
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 22642688,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "after_shared_norm_and_mutations",
+      "load": [
+        1.896484375,
+        2.00927734375,
+        1.962890625
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 22675456,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "before_taylor_projection_and_dilation",
+      "load": [
+        1.896484375,
+        2.00927734375,
+        1.962890625
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 22675456,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "after_taylor_projection_and_dilation",
+      "load": [
+        1.896484375,
+        2.00927734375,
+        1.962890625
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 22675456,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "before_ordered_jet_polynomials",
+      "load": [
+        1.896484375,
+        2.00927734375,
+        1.962890625
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 22675456,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "bell_partitions_5",
+      "load": [
+        1.896484375,
+        2.00927734375,
+        1.962890625
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 22675456,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "bell_partitions_10",
+      "load": [
+        1.896484375,
+        2.00927734375,
+        1.962890625
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 22675456,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "after_ordered_jet_polynomials",
+      "load": [
+        1.896484375,
+        2.00927734375,
+        1.962890625
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 22691840,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "before_value_to_derivative_diagnostic",
+      "load": [
+        1.896484375,
+        2.00927734375,
+        1.962890625
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 22691840,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    },
+    {
+      "label": "after_value_to_derivative_diagnostic",
+      "load": [
+        1.896484375,
+        2.00927734375,
+        1.962890625
+      ],
+      "free_percent": 51.0,
+      "rss_bytes": 22691840,
+      "nice": 20,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      }
+    }
+  ],
+  "elapsed_seconds": 0.1694830830092542,
+  "finished_utc": "2026-10-30T09:21:16Z"
+}

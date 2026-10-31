@@ -1,0 +1,25 @@
+{
+  "refs": {
+    "HEAD": "1079134633504cbb62a9f52aa3cb4fa097300254",
+    "origin/main": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+    "origin/ai/execution": "56c5c0ab64f532c5784e895b2f9aa6894fa334e0"
+  },
+  "files": {
+    "PROCESS_LIGHT.md": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+    "HANDOFF.md": "596c4b34617bb1b1e008a99756b81f54cd03d856a3d3220d131ac63bb8c7a27d",
+    "briefs_q/REFMATCH/AUTHOR.md": "af08def949eee4a8d5deb60d8fef241775eda44e5bfeeb5192cf7dd6216f7b48",
+    "briefs_q/REFMATCH/REVIEW.md": "11429f05ac46e66c9752d0d895abe5e193864830d2880049f533a81433b525b7",
+    "MIXSMALL.md": "ead4ddd6bb50844d91459c3229d3abcc06b4ba02da772c578bc917a743f67340",
+    "REVIEW_MIXSMALL.md": "e18a4a0f1b5df11c5a9d798d478daf06d4e184c4b5905e1117a6dee865d5f0c9",
+    "EXTCONT.md": "b10015bbd6be5fac97fd636fdc79f665800fe9921651575b9d03b0167b534b6e",
+    "REVIEW_EXTCONT.md": "e202cb50bdf0db2853bb7b68a3b59e48caa3c9cdda21c6aaad76097ec96783d1",
+    "REALRGA.md": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+    "REVIEW_REALRGA.md": "37f34b77fd487bc2eff8b3b624854cb636b8dd016c2e5d201a2a02a88fdac2d7",
+    "REALRGB.md": "80d4f1216e39c9d5cd661c7eced48f3ac480c0d1443e556208a1b2684890d640",
+    "REVIEW_REALRGB.md": "dfd8abfde28f8315289b7788ff6e6ba6d74b377b79614b39cfca09690077b07f",
+    "JMBRB.md": "6320af2da97d532fbf802f2405541de8e20f6d350b575b46462fefb4c849bb0a",
+    "CHARGE.md": "8c5a5ecdb95a32089f2005bf6597d4aedefa660b9b9f8c1cc7b7a01374afc1ef",
+    "RENEW.md": "42b4d2a16625d4af4f6443a38ff92d63a483485816c4533292b44f867fc978a7"
+  },
+  "LOCOP_present": false
+}

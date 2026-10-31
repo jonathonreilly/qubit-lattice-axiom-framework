@@ -1,0 +1,230 @@
+{
+  "schema": "critical-determinant-reader-review-v1",
+  "final_confirmation_time_utc": "2026-10-30T05:00:11.808709+00:00",
+  "reviewer_task": "/root/review_critical_determinant_reader",
+  "verdict": "LAND",
+  "verdict_scope": "Frozen source unit unchanged: positive bare one-step bounded support, not full-PR landing or audit ratification.",
+  "iterations": 1,
+  "material_findings": [],
+  "source_fixes": 0,
+  "confirmed_source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_DETERMINANT_READER_ASTRA.md",
+    "sha256": "bd33e000b839fe79e9a9bceda43d9b28b370e69717f0cedb8d1c14336642b755",
+    "bytes": 21272,
+    "lines": 397
+  },
+  "source_first_freeze_time_utc": "2026-10-30T04:56:36.484780+00:00",
+  "author_packet_read_only_after_source_first_freeze": true,
+  "prior_review_reports_opened_for_content": false,
+  "author_packet_coverage": "All five packet files inspected in full after the source-first freeze; identity comparisons do not attest author reading.",
+  "independent_mathematical_check": "Finite homotopy multiplication; weighted-conjugation bounds; complete-reader product and trace marks; R-first radius selection; Jacobi path/critical ratio branch derivation.",
+  "source_coverage": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_DETERMINANT_READER_ASTRA.md",
+      "sha256": "bd33e000b839fe79e9a9bceda43d9b28b370e69717f0cedb8d1c14336642b755",
+      "lines": 397,
+      "source_read_ranges": [
+        [
+          1,
+          397
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "lines": 556,
+      "source_read_ranges": [
+        [
+          1,
+          556
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "lines": 722,
+      "source_read_ranges": [
+        [
+          1,
+          334
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/INTERACTING_SELECTED_CORE_ASTRA.md",
+      "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "lines": 790,
+      "source_read_ranges": [
+        [
+          129,
+          314
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "lines": 568,
+      "source_read_ranges": [
+        [
+          31,
+          342
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "lines": 713,
+      "source_read_ranges": [
+        [
+          33,
+          163
+        ],
+        [
+          520,
+          678
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD3.md",
+      "sha256": "55274cfe3d6c90b6eb6e2f5412bdb5633660f6e47054e1db52f8a1ca9ac3d3cc",
+      "lines": 654,
+      "source_read_ranges": [
+        [
+          475,
+          532
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD4.md",
+      "sha256": "60d27c7ec5e5fda254e8394c34639cccdfe42cd9f85898bb22952bc6fa6067c6",
+      "lines": 741,
+      "source_read_ranges": [
+        [
+          576,
+          638
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RESIDUAL_DETERMINANT_ASTRA.md",
+      "sha256": "2b5059568c92659717c0c021dd4460899408f7647ca8a3ea4a60b76809400ec8",
+      "lines": 334,
+      "source_read_ranges": [
+        [
+          1,
+          117
+        ],
+        [
+          300,
+          321
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RESIDUAL_FULL_COLOUR_ASTRA.md",
+      "sha256": "1ce9460989e5491bd491dcc348add15207e63013a0c537cd6c51caa19f0e3dd7",
+      "lines": 265,
+      "source_read_ranges": [
+        [
+          1,
+          22
+        ],
+        [
+          214,
+          252
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "lines": 11,
+      "source_read_ranges": [
+        [
+          1,
+          11
+        ]
+      ]
+    }
+  ],
+  "author_packet": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/critical_determinant_reader_author_checks.md",
+      "sha256": "f3e4525d7cf3bf63c3e7b32b0bdc08fb7f2c36be339fa0a03c48515d06090275",
+      "bytes": 4335,
+      "lines": 69
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/critical_determinant_reader_identity_check.json",
+      "sha256": "d5485069b5ebe37f2a8314751e4d90a6d6093ba024ddd9e1a922ca9dba66cf68",
+      "bytes": 892,
+      "lines": 27
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/critical_determinant_reader_read_manifest.json",
+      "sha256": "2d684fdcb3d1b5c8e8abcfd5ce45ff5e0dd54a4decd38250aae579ae22d5b19a",
+      "bytes": 30990,
+      "lines": 678
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/critical_determinant_reader_receipt.json",
+      "sha256": "5d045e4b4610652b90c37bbc861ca649d3d3777d7fecc1017a1bd84be21fb27f",
+      "bytes": 2369,
+      "lines": 52
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/critical_determinant_reader_freeze.py",
+      "sha256": "464afc0a5a6523f30ad5a49a4d6cb7974037192cdbadecc4ebe81f10814e3826",
+      "bytes": 1512,
+      "lines": 32
+    }
+  ],
+  "reviewer_artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CRITICAL_DETERMINANT_READER_ASTRA.md",
+      "sha256": "37d7e98e627706e6c028b43145cdefc47ca7226e4b732108e5d0c725d213edb4",
+      "bytes": 7918,
+      "lines": 129
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_critical_determinant_reader_source_first.md",
+      "sha256": "c54022d909436d84bc46a8d1b01b08af3589f2582ab78d5e7e008c8c1ee9247f",
+      "bytes": 8786,
+      "lines": 139
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_critical_determinant_reader_source_first.json",
+      "sha256": "92b8c82ceb02b7c38d139ee18f090b37ea7f03192c2b2c8c1834820ac1f6a10b",
+      "bytes": 4530,
+      "lines": 151
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_critical_determinant_reader_packet_check.json",
+      "sha256": "ece68cc2a6cac9871b1a3379bd9437c8a8ae651eaaaaf75cd3e33f4b9e636382",
+      "bytes": 29405,
+      "lines": 649
+    }
+  ],
+  "methodology_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "worktree_head_at_confirmation": "da8cb2f1cbee73b3df14c46cd130ceb93111731d",
+  "configuration": "Requested Astra/max; visible system GPT-6 generically; same-family fresh-context review, no independent backend attestation.",
+  "scientific_numerics_run": 0,
+  "author_read_only_freezer_executions": 1,
+  "packet_identity_failures": 0,
+  "full_pipeline_count": 0,
+  "integration_gates": "Coordinator-owned and not certified by this restricted source review.",
+  "commits_created": 0,
+  "pushes": 0,
+  "workers_spawned": 0,
+  "existing_files_edited": 0,
+  "full_existence_established": false,
+  "physical_continuum_mass_gap_established": false,
+  "no_audit_verdict_or_retained_status_assigned": true,
+  "consumer_limit": "NRR requires its own sufficiently-large-u/NR34/chart regime; RD matching only for the actual bare-step K_*; no inherited/history precision theorem."
+}

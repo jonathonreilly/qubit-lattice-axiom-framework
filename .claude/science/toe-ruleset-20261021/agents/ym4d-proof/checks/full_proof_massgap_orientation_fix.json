@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-29T15:03:19.520436+00:00",
+  "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_CONSTRUCTION_ASTRA.md",
+  "original_commit": "cdc877b0452bed2218e1cfdec79ef8fc2b4c27f5",
+  "before_sha256": "bc5be24f32bf9285ecab0140993eb9788c6f2736ecd9cbe91254d288cac79f8a",
+  "after_sha256": "197c2662d562fc1b4194e77e4dc0c670f339254d2eca3f8164f01eb2c78e325e",
+  "finding": "Clarify negative orientation for a nonunitary SU(2) path mean and the complex-lambda continuation.",
+  "repair": "M-minus is M-adjoint, including at M=0, not M-inverse. Complex-lambda continuation retains holomorphic f_lambda without conjugating lambda; the adjoint acts on fixed real-field M only.",
+  "scope": "Narrow notation/domain clarification; no change to the intended real-lambda formula, hypotheses or finite-gap claims. Same-context independent confirmation pending.",
+  "same_context_confirmation": {
+    "utc": "2026-10-29T15:10:22.171124+00:00",
+    "reviewer": "/root/review_mass_gap_construction",
+    "result": "Affected paragraph independently confirmed, including noncentral/nonunit/zero means and complex lambda; inverse-of-M and conjugating-lambda omissions rejected. Full unit review continues separately."
+  }
+}

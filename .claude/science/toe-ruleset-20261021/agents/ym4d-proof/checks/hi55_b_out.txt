@@ -1,0 +1,7 @@
+B1 sets 300 violations 0
+B1-F zero-slack sets with m1>=1: 100 failed as required: 100 unexpected passes: 0
+B2 checks 900 violations 0 adversarial corner not minimal 0
+B2-F sets with Delta0-1>=1: 270 unexpected W>0: 0
+B1 PASS | B1-F behaves
+B2 PASS | B2-F behaves
+VERDICT PASS

@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-29T23:00:34.818334+00:00",
+  "free_percent": 55,
+  "load1": 2.2421875,
+  "memory_stdout": "The system has 17179869184 (1048576 pages with a page size of 16384).\nSystem-wide memory free percentage: 55%\n",
+  "memory_stderr": "",
+  "lock": {
+    "expires_at": "2026-10-30T00:33:21.302218+00:00",
+    "holder_id": "01a1873f-103a-7f01-b924-4455238d8a86",
+    "owner": "ym4d-full-proof",
+    "pid": 49524,
+    "purpose": "Continue full PR 10114 proof with independent Astra reviews",
+    "started_at": "2026-10-29T22:33:21.302218+00:00"
+  },
+  "pass": true
+}

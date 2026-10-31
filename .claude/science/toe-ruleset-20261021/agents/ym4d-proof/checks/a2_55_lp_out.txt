@@ -1,0 +1,17 @@
+Part A: A1 PASS
+Part A: A2 PASS
+Part A: A3 PASS
+Part A: A4 PASS
+Part A: A1r PASS
+Part A: A5 radii (coarse) k=2: 20/9  k=3: 65/27  bound: 3 -> PASS
+Part B: B1 (affine fields annihilated exactly, both depths): PASS
+Part B: B2 quadratic detail max k=2: 0  k=3: 0  ratio: None -> FAIL
+Part B: linear-interp ratio (control CB3): 1211/8073
+Part B control CB1 FIRES
+Part B control CB2 FIRES
+Part B control CB3 FIRES
+Part C: C1 (spline nesting S^(L)_{LM} S^(L)_M == S^(L^2)_M): PASS
+Part C: C2 (interpolatory, reproduces constants): PASS
+Part C: C3 (periodic collocation invertible, M = 1..8): PASS
+Part C control CC1 (DD3^2 != DD9): FIRES
+OVERALL: FAIL

@@ -1,0 +1,11 @@
+{
+  "schema": "source-history-return-packaging-failure-v1",
+  "recorded_at_utc": "2026-10-29T16:25:09.717867+00:00",
+  "execution": "Second package-receipt generation, before final freeze was released",
+  "exit_code": 1,
+  "failure": "Naive Markdown-link regex reported V three times from Z_epsilon[Xi](V) and Z_epsilon[1](V) inside inline/indented code",
+  "science_source_problem": false,
+  "resolution": "Ignore fenced, indented and inline code before extracting Markdown links; all 30 actual links resolve",
+  "frozen_source_mutations_from_this_failure": false,
+  "new_unit_frozen_at_failure": false
+}

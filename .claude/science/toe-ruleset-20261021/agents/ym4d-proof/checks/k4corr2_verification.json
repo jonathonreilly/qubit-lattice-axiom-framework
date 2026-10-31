@@ -1,0 +1,42 @@
+{
+  "utc": "2026-10-30T05:45:13.136173+00:00",
+  "passed_integrity_checks": true,
+  "checks": {
+    "preexisting_files_unchanged": true,
+    "new_files_within_whitelist": true,
+    "local_links_resolve": true,
+    "primary_source_hashes_match": true,
+    "run_source_hashes_match": true,
+    "all_97_exact_assertions_passed": true,
+    "recorded_resource_run_passed": true,
+    "review_ends_HOLD": true,
+    "review_binds_final_manuscript": true,
+    "scientific_target_not_promoted": true
+  },
+  "scientific_brief_complete": false,
+  "uniform_renormalized_Cbar": "OPEN",
+  "positive_actual_YM_window": "OPEN",
+  "review_verdict": "HOLD",
+  "source_files_checked": 3729,
+  "original_file_drift": [],
+  "unexpected_new_files": [],
+  "missing_local_links": [],
+  "source_drift": [],
+  "checker_drift": [],
+  "final_manuscript_sha256": "f7af21719921a45f7ada8f82ab8a8f2bd1db5d37f86ba282d6b725a452323b25",
+  "artifacts_sha256": {
+    "K4CORR2.md": "f7af21719921a45f7ada8f82ab8a8f2bd1db5d37f86ba282d6b725a452323b25",
+    "K4CORR2_LOG.md": "f92ff6785812f7fdd21206eea011b33ba3202f5401465de85a563bd3417b5d0e",
+    "checks/k4corr2_attempt01_results.json": "201f8ac5aed41eeb755b7ed703493af6c6afb99b4a91fef79bbe2e7c72fc772c",
+    "checks/k4corr2_attempt01_run.json": "2b2c14bd112b75a0fe219d1b2c1882b79220473b338ed98bfaa1faaa703ebdfd",
+    "checks/k4corr2_attempt01_stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "checks/k4corr2_criteria.md": "ad5b4750b794f7786ff3e71f60d47527ca8f2a642a313e6c9bb8cde76bbcae3e",
+    "checks/k4corr2_exact.py": "e7ea27dd531baf36d6d08e1be125bd24be6625781ea7daa86a9642ce79f609c1",
+    "checks/k4corr2_initial_inventory.json": "37f51fa48d900aa4f1d87bcc3bb8aa8bc3257e80990b23bcfa7422870b5081ff",
+    "checks/k4corr2_numeric.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "checks/k4corr2_review.md": "bf2594d3d57c214fb3457281dc77a3661576f92af428598721e9f30ef408b95b",
+    "checks/k4corr2_run.py": "78b817ef857a34893fb3b64abee3b5c76cc7dcbbbc2f225ffd3ab3bf2ba24d6d",
+    "checks/k4corr2_sources.json": "95c5b262327d8c3ab7ad260a1e2466a2e3f59ca34d62d1b460270fa4ba407b21"
+  },
+  "commits_created": false
+}

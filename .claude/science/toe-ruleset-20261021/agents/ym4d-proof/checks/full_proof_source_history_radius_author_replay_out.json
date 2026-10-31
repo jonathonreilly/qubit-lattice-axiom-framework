@@ -1,0 +1,38 @@
+{
+  "schema": "source-history-author-fixed-radius-v1",
+  "scope": "Exact source-cost and sufficient-threshold arithmetic only; full raw sea/history return remains open",
+  "checks": {
+    "fixed_relative_radius_positive_and_u_independent": true,
+    "stated_radius_leaves_exactly_half_the_decay": true,
+    "mixed_source_exponent_identity": true,
+    "rho_zero_recovers_original_external_source_bound": true,
+    "revised_u_threshold_pays_polynomial_and_constant": true,
+    "revised_entropy_threshold_gives_rooted_bound": true
+  },
+  "negative_controls": {
+    "reusing_original_decay_at_positive_rho_rejected": true,
+    "critical_rho_has_no_positive_decay_budget": true
+  },
+  "counts": {
+    "checks": 6,
+    "negative_controls": 2
+  },
+  "geometry_cases": 16,
+  "exponent_cases": 96,
+  "examples": [
+    {
+      "N": 2,
+      "L": 3,
+      "epsilon_1": "1/2",
+      "n_P": 1296,
+      "a": "1/32",
+      "rho_0": "1/331776",
+      "a_eff": "1/64",
+      "P_0": "348"
+    }
+  ],
+  "rooted_entropy_bound": "9/43336",
+  "source_sha256": "4c62ea9f41b9bb4fe1537df7a8ceedf979baf57271b201126f035eaaeb757f2f",
+  "elapsed_seconds": 0.0015070409863255918,
+  "all_pass": true
+}

@@ -1,0 +1,7 @@
+ba4c lock acquired 07:34:03Z
+ 3:34  up 5 days, 21:23, 2 users, load averages: 2.52 2.51 2.74
+System-wide memory free percentage: 40%
+exit 0 07:34:05Z
+        1.91 real         1.43 user         0.15 sys
+           870694912  maximum resident set size
+lock released 07:34:05Z

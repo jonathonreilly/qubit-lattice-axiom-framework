@@ -1,0 +1,29 @@
+{
+  "utc": "2026-10-29T14:38:40.710284+00:00",
+  "receipt_sha256": "b39fca040aa79534dc2fed270bb3e288bdd67fbba4db56ecf487674f53518ed6",
+  "verified_review_artifacts": 12,
+  "verified_original_and_corrected_source": true,
+  "results": [
+    {
+      "script": "review_massgap_target_01.py",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": 15,
+      "total": 16,
+      "match_except_utc": true,
+      "stderr_bytes": 0,
+      "stdout_sha256": "0b6219efbadc1ebb12b9f95f27d608f8ba2437f73c93caad94a8ff8e3ee9ff5b"
+    },
+    {
+      "script": "review_massgap_target_02.py",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": 4,
+      "total": 4,
+      "match_except_utc": true,
+      "stderr_bytes": 0,
+      "stdout_sha256": "9840abeaa02d33e2f2c5fcef05912db9505e72e7cd8d9c819c0f26044840fc6f"
+    }
+  ],
+  "scope": "Reproduction of the preserved first 15/16 structural-equality failure and separate 4/4 exact polynomial diagnosis. The analytic spectral proof is in the independent report; no actual Yang-Mills infrared estimate is supplied."
+}

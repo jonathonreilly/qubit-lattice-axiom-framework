@@ -1,0 +1,10 @@
+{
+  "failure": "picard_coefficients_solve_stationarity",
+  "exit_code": 1,
+  "cause": "Exact symbolic expressions that cancel to zero were tested with structural equality after series/expand. Independent simplification gives every t^0 through t^5 coefficient zero.",
+  "repair": "Canonical exact rational-function cancellation via sympy.cancel before equality; the equation, coefficient order and expected mathematical answer remain unchanged.",
+  "original_script_sha256": "4cea0ed738a8e67a228b16399793c402620b5708ddbaef5dc5eb25be3348c751",
+  "original_script_preserved": "review_source_return_01.py",
+  "stderr_preserved": "review_source_return_01_err.txt",
+  "retry_script": "review_source_return_02.py"
+}

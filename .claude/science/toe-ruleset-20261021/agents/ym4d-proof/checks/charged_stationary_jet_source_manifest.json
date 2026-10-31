@@ -1,0 +1,286 @@
+{
+  "unit": "charged_stationary_jet",
+  "captured_utc": "2026-10-29T19:20:39.318599+00:00",
+  "methodology_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "hash_capture_policy": "Hashes captured at final source freeze; exact read coverage recorded. Earlier explicitly frozen US hash verified. No full-read assertion for truncated outputs or whole external papers.",
+  "sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RESIDUAL_FULL_COLOUR_ASTRA.md",
+      "sha256": "1ce9460989e5491bd491dcc348add15207e63013a0c537cd6c51caa19f0e3dd7",
+      "bytes": 36980,
+      "lines": 265,
+      "read_coverage": "Full text, assembled from bounded reads 1-145,146-244,245-end; numerical predecessor helpers not read/imported."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RESIDUAL_FULL_COLOUR_ASTRA.md",
+      "sha256": "0b504129260e0269ae8dffa79f2113a6bb94675edc37c084fe8f9be6464e67bc",
+      "bytes": 29488,
+      "lines": 149,
+      "read_coverage": "Full text."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "sha256": "203d4edbf97078d88fcb488f164e525d2671fe5a2a910c5f6e49f615e8f41bfe",
+      "bytes": 26860,
+      "lines": 266,
+      "read_coverage": "Full corrected text US1-US17; expected SHA verified."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "sha256": "78d40a5480aafe94c30ee5c0b827d30b84ec629dfccaa91b44c98cfe08ecf3d9",
+      "bytes": 17036,
+      "lines": 85,
+      "read_coverage": "Full text; original scope read together with the next two corrected-scope records."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_scope_review.md",
+      "sha256": "1fec8e9c3c34c00a08dc775e94edfab25031c0bbe3d719f7d42c5587ce05ff11",
+      "bytes": 8764,
+      "lines": 68,
+      "read_coverage": "Full text."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_scope_confirmation.md",
+      "sha256": "fbc18b292c385876eabd205cb1781667933b88fa7dc8e7abff914e0836da338b",
+      "bytes": 3557,
+      "lines": 13,
+      "read_coverage": "Full text."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_literature.md",
+      "sha256": "28c10ae1e00b92935dea0cbacffd7df9a3def2c70c13d0f21766a5a59fb2124f",
+      "bytes": 2547,
+      "lines": 10,
+      "read_coverage": "Full text; secondary coverage/hypothesis ledger only."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LINEAR_PACKAGE.md",
+      "sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad",
+      "bytes": 48089,
+      "lines": 538,
+      "read_coverage": "Selected mathematical ranges52-174 and475-538. Other cited uniform strip/alias statements reconstructed via PROOF snapshot and full US source/review, not a full read of this file."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF_session16_snapshot.md",
+      "sha256": "4f376e3a6dd22701218d61fbd06bad3ab83575a4bfe195914a3217df580b4b9f",
+      "bytes": 488224,
+      "lines": 4946,
+      "read_coverage": "Selected derivations1490-1535,2380-2505,2649-2798,3113-3168,3230-3239. No full-file read claimed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_TUNIF2.md",
+      "sha256": "ade6e777ffe52b04464b0ff8a5fcd3a7eeebb800e0602ef64a47e4150fd703b8",
+      "bytes": 25897,
+      "lines": 321,
+      "read_coverage": "Lines1-255, including204-236 full-colour cubic producer and admissible-lift repair."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW55_TUNIF.md",
+      "sha256": "29ca9187347301ba46f0b17fce4d2554b6c09382070095efa239be48e24cf891",
+      "bytes": 62347,
+      "lines": 638,
+      "read_coverage": "Selected190-276 U2-U6; initial broader output truncated, not full coverage. Search hits used only for navigation."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/TUNIF.md",
+      "sha256": "40b7dd3c41babc8ecd89789ebd2854206444310eaf47cb2820bc8f118ca0af7b",
+      "bytes": 55943,
+      "lines": 679,
+      "read_coverage": "Selected160-440 (TU0-TU6 and scope), read fully in bounded outputs. Historical primed-rate constants not adopted."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NQ_DEF.md",
+      "sha256": "3e87bfc8478d8d6dcf648cc01ee47b564a174622ee479ef1868e1d56c639a07c",
+      "bytes": 52899,
+      "lines": 671,
+      "read_coverage": "Selected1-140 and203-288, including complete actual Qroot composite proof."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NORMS.md",
+      "sha256": "3b2c9f90cde226286c24a7169ba217eea10a203bc468e5613d8854a748aa2bd7",
+      "bytes": 81173,
+      "lines": 918,
+      "read_coverage": "Selected75-150 and480-577; actual composite cubic exponent counts, normalization and named imports."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FLOW55.md",
+      "sha256": "56d2707f4b571585db26cf2a077dbaee57bc936c76821cdbc50710e4b36e9d25",
+      "bytes": 70208,
+      "lines": 616,
+      "read_coverage": "Selected250-355 and562-576; cubic reuse, exact weighted tensor norm and finite-step jet consumer."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UIR55.md",
+      "sha256": "4c6d80473a80714e2a5aa1e241e8835648bbe3c65a7bca38a5758faf3c5accb4",
+      "bytes": 68640,
+      "lines": 625,
+      "read_coverage": "Selected298-340, exact finite-part jet class and its hypotheses."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT34_55.md",
+      "sha256": "f714a647910c4fd19570ecd192b98144b6c54d37c8c4f30c73bd20d426ef717d",
+      "bytes": 70280,
+      "lines": 670,
+      "read_coverage": "Selected1-146, normalized basis conversion and conditional H1-H3."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RECOVERY_UIR_ASTRA.md",
+      "sha256": "0cbb4f9a967022ab669cae087617f390b2bfb481034012aac85e7cfc9928bc40",
+      "bytes": 35284,
+      "lines": 272,
+      "read_coverage": "Selected155-270 fully; initial1-160 exploratory output partially truncated. Fixed-depth stationary/periodization facts only."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "16fa710fe41d7f93ae4b76b711f6533e6ba5ee31748a203f663ff9d547a4e6a8",
+      "bytes": 8862,
+      "lines": 43,
+      "read_coverage": "Full text."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LITERATURE_BRIDGES.md",
+      "sha256": "caf32818d4aa390829efc93d4564fb0442d4c37e459db664947a0b7eb8d1e98e",
+      "bytes": 20682,
+      "lines": 47,
+      "read_coverage": "Full text, latest bounded reread1-55; bibliography/status contextual only."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BALABAN_EXTRACT.md",
+      "sha256": "ce950ad48b3ecb8128e24e3d50e51c321cf6a3062e74932301a875b83c6410ff",
+      "bytes": 68728,
+      "lines": 724,
+      "read_coverage": "Selected1-180; historical abstract/read-limit ledger, no body theorem imported."
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "bytes": 1118,
+      "lines": 26,
+      "read_coverage": "Full entry read."
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416,
+      "lines": 52,
+      "read_coverage": "Full text."
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333,
+      "lines": 233,
+      "read_coverage": "Lines1-120; axiom and qualification sections read directly."
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "bytes": 2581,
+      "lines": 57,
+      "read_coverage": "Full text."
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "bytes": 4770,
+      "lines": 99,
+      "read_coverage": "Full text."
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "bytes": 5313,
+      "lines": 110,
+      "read_coverage": "Full text."
+    }
+  ],
+  "methodology": [
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "read_coverage": "Full explicit git-show read at this revision."
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "read_coverage": "Full explicit pinned-revision read."
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "read_coverage": "Full explicit pinned-revision read."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "read_coverage": "Full explicit git-show read at the pinned revision, as well as the initial installed entry."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "read_coverage": "Full assembled pinned text: broad first read with truncation, followed by bounded205-340 and365-end to cover truncated passages. Coordinator owns global portfolio/publication surfaces."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "read_coverage": "Full pinned git-show text reread; coordinator retains the delivery/PR/lock responsibilities under the bounded worker scope."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "read_coverage": "Full final explicit pinned-revision git-show read."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "read_coverage": "Pinned methodology reference; installed entry lines1-125 reread, broader first output truncated. Fresh review belongs to coordinator."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "read_coverage": "Full installed entry read before author work."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/review-loop/SKILL.md",
+      "sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "read_coverage": "Lines1-125 reread; initial broader output truncated."
+    }
+  ],
+  "external": [
+    {
+      "url": "https://arxiv.org/html/1410.2798v3",
+      "coverage": "Abstract/introduction and selected sections2.1-2.3;3.6 Proposition6/(85)-(99);3.8 Proposition7/(132)-(140); not full paper.",
+      "role": "Hard constrained abelian covariance analogy; no unmatched estimate imported."
+    },
+    {
+      "url": "https://arxiv.org/html/1712.10029v3",
+      "coverage": "Abstract/introduction;3.6.3/(272)-(276);3.7/(279)-(285),(293)-(301);3.9 Theorem1/(327) and surrounding setup. Selected HTML passages, not full proof of Theorem1.",
+      "role": "d3 hard multiscale source/regularity comparison; no theorem adopted as normalized-soft d4 producer."
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/BF01229381",
+      "coverage": "Publisher metadata and abstract only.",
+      "role": "Fixed-average regular-configuration bibliographic lead."
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/BF01215223",
+      "coverage": "Publisher metadata and abstract only.",
+      "role": "Four-dimensional small-field effective-action bibliographic lead."
+    },
+    {
+      "url": "https://www.researchwithrutgers.org/en/publications/the-variational-problem-and-background-fields-in-renormalization-/",
+      "coverage": "Metadata/abstract search result.",
+      "role": "DOI discovery only."
+    }
+  ],
+  "author_implementation_preexposure": "Historical author/reviewer mathematical notes and reported summaries were read first. No predecessor Python implementation or helper imported.",
+  "root_owned_operations": "No git mutations, shared summaries, audit surfaces, locks or publication performed by this worker."
+}

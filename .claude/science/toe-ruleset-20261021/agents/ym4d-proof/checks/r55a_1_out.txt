@@ -1,0 +1,19 @@
+r55a_1  S4' degeneracy, d=4, L=3, mu=axis 0  (criteria: r55a_1_criteria.md)
+E1 index pairs = 1944  -> PASS
+E2 labels = 633, multiplicity histogram {1: 384, 4: 192, 12: 48, 24: 9}  -> LABELS-633-CONFIRMED
+E3 freely reduced full paths = 475, histogram {1: 288, 4: 96, 6: 48, 12: 12, 20: 24, 48: 6, 72: 1}  -> REDUCED-475-CONFIRMED
+   multiplicity of the straight path S_c = 72  (weight 1/27)
+   max label multiplicity = 24 (weight 1/81)
+E5 closed form sum_k C(3,k)2^k k!(1+2k) = 475  -> AGREES
+E6 label weights [Fraction(1, 1944), Fraction(1, 486), Fraction(1, 162), Fraction(1, 81)]
+   reduced weights [Fraction(1, 1944), Fraction(1, 486), Fraction(1, 324), Fraction(1, 162), Fraction(5, 486), Fraction(2, 81), Fraction(1, 27)]
+   all > 0 and both sum to 1 exactly -> CONVEX-PRESERVED
+C1 control (no free reduction): distinct raw words = 633  -> FIRES
+E7 field seed=1: distinct holonomy values (paired S4') = 475; same value within every reduced class: True
+   C2 control, unpaired far end (reversed order): distinct values = 631
+E7 field seed=2: distinct holonomy values (paired S4') = 475; same value within every reduced class: True
+   C2 control, unpaired far end (reversed order): distinct values = 631
+C3 control, identity field: distinct holonomy values = 1  -> FIRES
+E7 verdict: PASS
+C2 verdict: FIRES
+E4 KN_ADOPT's '633 distinct transporters': REFUTED  (distinct transporters = 475)

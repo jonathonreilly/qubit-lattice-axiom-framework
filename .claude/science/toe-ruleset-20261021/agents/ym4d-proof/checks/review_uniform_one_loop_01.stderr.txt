@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_one_loop_01.py", line 25, in <module>
+    gate('before_imports')
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_one_loop_01.py", line 22, in gate
+    assert free>=50 and max(load)<20 and rss<2_000_000_000 and g['elapsed_seconds']<60,g
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'stage': 'before_imports', 'free_percent': 49, 'load': (1.9755859375, 1.9541015625, 1.923828125), 'max_rss_bytes': 21659648, 'elapsed_seconds': 0.0025124999810941517}

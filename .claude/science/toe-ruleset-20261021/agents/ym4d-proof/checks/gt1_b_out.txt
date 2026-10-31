@@ -1,0 +1,8 @@
+gt1b-A : RE-RUN of clause gt1-A with the TRUE adjoint d^*.  gt1 criteria untouched.
+  d=3 R=3 : (dd*+d*d)F vs componentwise Laplacian: 0/243 discrepancies ; adjointness failures: 0  -> PASS
+  d=3 R=4 : (dd*+d*d)F vs componentwise Laplacian: 0/576 discrepancies ; adjointness failures: 0  -> PASS
+  d=3 R=6 : (dd*+d*d)F vs componentwise Laplacian: 0/1944 discrepancies ; adjointness failures: 0  -> PASS
+  d=4 R=3 : (dd*+d*d)F vs componentwise Laplacian: 0/1458 discrepancies ; adjointness failures: 0  -> PASS
+  d=4 R=4 : (dd*+d*d)F vs componentwise Laplacian: 0/4608 discrepancies ; adjointness failures: 0  -> PASS
+  d=4 R=6 : (dd*+d*d)F vs componentwise Laplacian: 0/23328 discrepancies ; adjointness failures: 0  -> PASS
+gt1b-A overall: PASS

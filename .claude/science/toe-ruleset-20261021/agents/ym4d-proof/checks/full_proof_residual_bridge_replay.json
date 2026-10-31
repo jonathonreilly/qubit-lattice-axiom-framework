@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-29T13:38:05.299305+00:00",
+  "manifest_sha256": "5132270383c98f5560f7680e668b26e4beb11537ec01f90163b3945b4bafff0d",
+  "verified_artifacts": 5,
+  "exit_code": 0,
+  "stdout_exact": true,
+  "stderr_bytes": 0,
+  "stdout_sha256": "a6aeb59df181debdbd67dd53036b27dd1ddae726c7a1b5950c918e6d73358c6a",
+  "limits": "Author replay only, not independent review or a physical mass-gap check."
+}

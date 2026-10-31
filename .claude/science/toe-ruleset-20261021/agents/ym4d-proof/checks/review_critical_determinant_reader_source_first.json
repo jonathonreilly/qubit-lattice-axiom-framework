@@ -1,0 +1,151 @@
+{
+  "schema": "restricted-source-first-review-v1",
+  "freeze_time_utc": "2026-10-30T04:56:36.484780+00:00",
+  "reviewer_task": "/root/review_critical_determinant_reader",
+  "methodology_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "worktree_head_at_freeze": "811790d5333c4d9b706397a8b6dc8f08a37db4e3",
+  "author_packet_read_before_freeze": false,
+  "prior_review_reports_read_before_freeze": false,
+  "source_embedded_historical_review_references_seen": true,
+  "blocking_findings": [],
+  "preliminary_disposition": "No material mathematical defect found at the bare one-step bounded-support scope; final packet and source check pending.",
+  "sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_DETERMINANT_READER_ASTRA.md",
+      "sha256": "bd33e000b839fe79e9a9bceda43d9b28b370e69717f0cedb8d1c14336642b755",
+      "lines": 397,
+      "source_read_ranges": [
+        [
+          1,
+          397
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "lines": 556,
+      "source_read_ranges": [
+        [
+          1,
+          556
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "lines": 722,
+      "source_read_ranges": [
+        [
+          1,
+          334
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/INTERACTING_SELECTED_CORE_ASTRA.md",
+      "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "lines": 790,
+      "source_read_ranges": [
+        [
+          129,
+          314
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "lines": 568,
+      "source_read_ranges": [
+        [
+          31,
+          342
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "lines": 713,
+      "source_read_ranges": [
+        [
+          33,
+          163
+        ],
+        [
+          520,
+          678
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD3.md",
+      "sha256": "55274cfe3d6c90b6eb6e2f5412bdb5633660f6e47054e1db52f8a1ca9ac3d3cc",
+      "lines": 654,
+      "source_read_ranges": [
+        [
+          475,
+          532
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD4.md",
+      "sha256": "60d27c7ec5e5fda254e8394c34639cccdfe42cd9f85898bb22952bc6fa6067c6",
+      "lines": 741,
+      "source_read_ranges": [
+        [
+          576,
+          638
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RESIDUAL_DETERMINANT_ASTRA.md",
+      "sha256": "2b5059568c92659717c0c021dd4460899408f7647ca8a3ea4a60b76809400ec8",
+      "lines": 334,
+      "source_read_ranges": [
+        [
+          1,
+          117
+        ],
+        [
+          300,
+          321
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RESIDUAL_FULL_COLOUR_ASTRA.md",
+      "sha256": "1ce9460989e5491bd491dcc348add15207e63013a0c537cd6c51caa19f0e3dd7",
+      "lines": 265,
+      "source_read_ranges": [
+        [
+          1,
+          22
+        ],
+        [
+          214,
+          252
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "lines": 11,
+      "source_read_ranges": [
+        [
+          1,
+          11
+        ]
+      ]
+    }
+  ],
+  "findings_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_critical_determinant_reader_source_first.md",
+  "findings_sha256": "c54022d909436d84bc46a8d1b01b08af3589f2582ab78d5e7e008c8c1ee9247f",
+  "scientific_numerics_run": false,
+  "backend_attestation": "Requested Astra/max; visible system identifies GPT-6 generically; no independent backend attestation."
+}

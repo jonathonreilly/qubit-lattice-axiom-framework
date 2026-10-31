@@ -1,0 +1,12 @@
+# c34 run record (session 18, 2026-10-27)
+- Order: PROOF.md [S18] N5-triv block written (after RTARGET §40, 22:11 UTC); then c34_criteria.md and c34_n5triv.py,
+  written in ONE shell command with the criteria file first (same minute; disclosed); no edit to either afterwards; then
+  the runs, each part once.
+- Run WITHOUT -I; PYTHONDONTWRITEBYTECODE=1, nice 10, OPENBLAS/OMP/MKL/vecLib threads 1, one job at a time, no `timeout`.
+  18:16 local, load (1-min) 2.28 before each part, 37% free.
+- A: 0.15 s, 28 MB, PASS. ||w|| = 0.3777 (bound 1/12), ||w||² = 0.1427, Σ|w| = 2.667 (≤ 4), max|w| = w(b_0) = 10/81 (≤ 1),
+  support 216 links, all inside the block.
+- B: 0.32 s, 152 MB, PASS. Neumann gap of {0,1,2}⁴ = 1.000000000000; λ_min(P_resΔ_0|Λ_res) = 1.0000000000 on (Z/6)⁴
+  (dim Λ_res = 1264); ||P_resd*dλ||²/||dλ||² ≥ 8.97 on 5 random λ ∈ Λ_res; |h(dλ)| ≤ 6.3e-16.
+- C: 0.17 s, 37 MB, PASS. Lemma CT's three bounds hold on 24/24 random instances (d = 1, 2), with ratios ≤ 0.48 of the bound.
+- Scope: elementary constants and the abstract lemma only; the full per-level operator O_i (with E_i) is not instantiated.

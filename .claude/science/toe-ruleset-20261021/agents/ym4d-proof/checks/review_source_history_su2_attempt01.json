@@ -1,0 +1,86 @@
+{
+  "checks": {
+    "eight_actual_contour_masses_sum_one": true,
+    "haar_series_0": true,
+    "haar_series_0.2": true,
+    "bessel_series_0.2": true,
+    "haar_series_2": true,
+    "bessel_series_2": true,
+    "haar_series_11": true,
+    "bessel_series_11": true,
+    "haar_series_30": true,
+    "bessel_series_30": true,
+    "scaled_bessel_vs_moment_series_0.01": true,
+    "scaled_bessel_vs_moment_series_1": true,
+    "scaled_bessel_vs_moment_series_7": true,
+    "scaled_bessel_vs_moment_series_30": true,
+    "scaled_bessel_vs_moment_series_60": true,
+    "quadrature_refinement_1": true,
+    "conditional_good_suppressed_1": true,
+    "quadrature_refinement_3": true,
+    "conditional_good_suppressed_3": true,
+    "quadrature_refinement_6": true,
+    "conditional_good_suppressed_6": true,
+    "complex_source_integral_positive_baseline_bound": true,
+    "complex_source_nonconstant": true,
+    "su2_haar_cap_lower_0.001": true,
+    "su2_haar_cap_lower_0.01": true,
+    "su2_haar_cap_lower_0.1": true,
+    "su2_haar_cap_lower_0.3": true,
+    "su2_haar_cap_lower_0.8": true,
+    "su2_haar_cap_lower_1": true,
+    "frustration_positive_rate_109_over_20": true,
+    "complex_coarse_bound_(0.1, (0.01+0.02j))": true,
+    "complex_coarse_bound_(0.1, (-0.05+0.03j))": true,
+    "complex_coarse_bound_(0.8, (0.01+0.02j))": true,
+    "complex_coarse_bound_(0.8, (-0.05+0.03j))": true,
+    "complex_coarse_bound_(2.2, (0.01+0.02j))": true,
+    "complex_coarse_bound_(2.2, (-0.05+0.03j))": true
+  },
+  "negative_controls": {
+    "omit_haar_normalizer_detected": true,
+    "normalizer_removal_changes_actual_slice": true,
+    "linearized_cut_changes_actual_slice": true,
+    "replace_actual_incidence_by_equal_eighths_changes_slice": true,
+    "weak_kappa_cannot_use_positive_rate": true,
+    "replace_inverse_by_adjoint_is_nonholomorphic_(0.1, (0.01+0.02j))": true,
+    "replace_inverse_by_adjoint_is_nonholomorphic_(0.1, (-0.05+0.03j))": true,
+    "replace_inverse_by_adjoint_is_nonholomorphic_(0.8, (0.01+0.02j))": true,
+    "replace_inverse_by_adjoint_is_nonholomorphic_(0.8, (-0.05+0.03j))": true,
+    "replace_inverse_by_adjoint_is_nonholomorphic_(2.2, (0.01+0.02j))": true,
+    "replace_inverse_by_adjoint_is_nonholomorphic_(2.2, (-0.05+0.03j))": true
+  },
+  "data": {
+    "normalizer_relative_errors": [
+      "0.0",
+      "0.0",
+      "0.0",
+      "0.0",
+      "2.4332392348509484290400183315752515207691224948651108976091936226e-64"
+    ],
+    "conditional_frustrated_slice": [
+      {
+        "u": 1,
+        "log_P_good": -23.242849735448875,
+        "difference_160_320": 7.105427357601002e-14
+      },
+      {
+        "u": 3,
+        "log_P_good": -74.93431735377249,
+        "difference_160_320": 1.7053025658242404e-13
+      },
+      {
+        "u": 6,
+        "log_P_good": -153.67705695660766,
+        "difference_160_320": 3.410605131648481e-13
+      }
+    ],
+    "complex_source_ratio": [
+      0.9628057416897989,
+      -0.0682715857739686
+    ],
+    "complex_source_bound": 0.0838271636632779,
+    "scope": "Conditional one-link SU(2), real fixed coarse -I; finite quadrature evidence only. No unconditional tail, full-cube integral, or sea bound."
+  },
+  "elapsed_seconds": 0.16322016599588096
+}

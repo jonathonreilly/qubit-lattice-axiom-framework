@@ -1,0 +1,105 @@
+{
+  "schema": "scoped-crossover-import-freeze-v1",
+  "frozen_utc": "2026-10-29T17:46:41.267524+00:00",
+  "author": "/root/crossover_literature_bridge",
+  "worktree": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "observed_head_context_only": "f078e7af6b9437941bcd43534e681d5a54feb249",
+  "methodology_main": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "target_status": "open",
+  "continuum_existence_closed": false,
+  "mass_gap_rows_closed": [],
+  "scientific_result": "Exact missing-mode determinant inference; dimension-aware bounded replacement and local-jungle repair direction. No actual Karcher matrix counterexample or whole-paper verdict.",
+  "diagnostic_result": "79/79, attempt01; hashes checked without unnecessary rerun",
+  "final_validation": "checks/crossover_import_validation.json",
+  "validation_all_passed": true,
+  "artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CROSSOVER_LITERATURE_BRIDGE_ASTRA.md",
+      "bytes": 22991,
+      "sha256": "de024b1d6df4a959fb85b2743be2141e93446e735a8ebe6672ff8f28f233e33f"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_attempt01.py",
+      "bytes": 12190,
+      "sha256": "4959125ca8cf6002e6108f121df6cfddfdccc78ce98c227ef879363640aca25d"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_attempt01.receipt.json",
+      "bytes": 460,
+      "sha256": "eeead5e83ec286472d1db51c43bb004bc49a6e22a66282d2b9bb66588dc1e4ec"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_attempt01.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_attempt01.stdout.json",
+      "bytes": 21451,
+      "sha256": "d70036c7f3cae79dd860fcebf3f4fe9db12554ba182a6952284b1d3e2bf30718"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_criteria.md",
+      "bytes": 4300,
+      "sha256": "e4d053e3aced74765f3846972747657d62b8990e0ab63a8462cfca5c5e3cb5b9"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_downloads.json",
+      "bytes": 1146,
+      "sha256": "59aca5561684919fa4ae731bc60ccb2bc98bd09cdbad29c116c767ecf6724744"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_exact.py",
+      "bytes": 12190,
+      "sha256": "4959125ca8cf6002e6108f121df6cfddfdccc78ce98c227ef879363640aca25d"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_final_prose_status.json",
+      "bytes": 153,
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_final_vocabulary.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_final_vocabulary.stdout.txt",
+      "bytes": 212,
+      "sha256": "5155e0e0f733b91e78b3b01ec4bbdb6917195c23672a733e8b898e32df431885"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_manifest.json",
+      "bytes": 22356,
+      "sha256": "c5c41b4f81d3dd2219b18772422e815204d5b04cb1bf733173f1a289ac48fbbd"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_prose_status.json",
+      "bytes": 153,
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_validation.json",
+      "bytes": 6605,
+      "sha256": "24204ff2f7752d58d712a4f8a61b7f1d83c88699903fe8dca90f84af91d6db32"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_vocabulary.receipt.json",
+      "bytes": 462,
+      "sha256": "69341ca404875e7164fba82189ae3081e9c1b4e228e724efff24b14ad84a95a0"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_vocabulary.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_vocabulary.stdout.txt",
+      "bytes": 206,
+      "sha256": "dc3386db5a91141f9517d5343d5eb64837789e87031f1e860f245ebf7f7a8dbb"
+    }
+  ],
+  "git_status_owned_outputs": "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/CROSSOVER_LITERATURE_BRIDGE_ASTRA.md\n?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_attempt01.py\n?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_attempt01.receipt.json\n?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_attempt01.stderr.txt\n?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_attempt01.stdout.json\n?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_criteria.md\n?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_downloads.json\n?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_exact.py\n?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_final_prose_status.json\n?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_final_vocabulary.stderr.txt\n?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_final_vocabulary.stdout.txt\n?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_manifest.json\n?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_prose_status.json\n?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_validation.json\n?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_vocabulary.receipt.json\n?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_vocabulary.stderr.txt\n?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_vocabulary.stdout.txt\n",
+  "excluded": "Full third-party PDFs/texts stay in /tmp; no git/PR/audit/lock/shared-summary mutations by this worker.",
+  "self_hash_policy": "This freeze file is excluded from its own artifact inventory; its SHA is reported to the coordinator."
+}

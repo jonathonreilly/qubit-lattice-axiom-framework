@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "unit": "mixed_cap_chart",
+  "source_freeze": {
+    "path": "MIXED_CAP_CHART_ASTRA.md",
+    "lines": 707,
+    "sha256": "1e885e4fbce03b00f4414b15caaa71e7140d9bc8494d0c75d1519bdbcde8ff2e"
+  },
+  "methodology_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "methodology_reads": [
+    "AGENTS.md",
+    "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+    "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+    "docs/ai_methodology/skills/physics-loop/SKILL.md",
+    "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+    "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+    "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+    "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+    "docs/ai_methodology/skills/physics-loop/references/literature-bridge-protocol.md",
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+    "docs/audit/data/axiom_premise_nodes.json"
+  ],
+  "local_sources": [
+    {
+      "path": "SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "lines": 597,
+      "read_ranges": [
+        [
+          1,
+          597
+        ]
+      ],
+      "role": "Actual compact density, principal-cap branch, q scales, sea-predicate and gluing limits."
+    },
+    {
+      "path": "REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "lines": 592,
+      "read_ranges": [
+        [
+          1,
+          592
+        ]
+      ],
+      "role": "Actual global specialization, local normalizer/vertex majorants, canonical critical field, full-reader core and both covariance tails."
+    },
+    {
+      "path": "REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "lines": 510,
+      "read_ranges": [
+        [
+          1,
+          510
+        ]
+      ],
+      "role": "Exact original-coordinate phase and prefactor, complete-reader nonlinear budgets and global specialization."
+    },
+    {
+      "path": "SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+      "lines": 711,
+      "read_ranges": [
+        [
+          1,
+          711
+        ]
+      ],
+      "role": "Actual translated-chart identity, density jets, flagged primitives, side-root marks, forest and connected sums."
+    },
+    {
+      "path": "NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "lines": 713,
+      "read_ranges": [
+        [
+          1,
+          713
+        ]
+      ],
+      "role": "Normalized active covariance, exact loop/chain series, individual scalar factorials, tree recursion and reader regrouping."
+    },
+    {
+      "path": "NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+      "sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+      "lines": 624,
+      "read_ranges": [
+        [
+          75,
+          300
+        ]
+      ],
+      "role": "Consumed local counts, Taylor/Mayer families and fixed-u parity estimates NC3–NC16; not the complete source."
+    },
+    {
+      "path": "SHRINKING_CHART_RETURN_ASTRA.md",
+      "sha256": "9ae446ca746639ff77295f9da712f47e4be9d315d7c26e975535f1602321abfc",
+      "lines": 247,
+      "read_ranges": [
+        [
+          1,
+          247
+        ]
+      ],
+      "role": "Shrinking-radius power cancellation and explicit distinction from SC chord caps."
+    },
+    {
+      "path": "CHART_BOUNDARY_FOREST_ASTRA.md",
+      "sha256": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8",
+      "lines": 564,
+      "read_ranges": [
+        [
+          1,
+          100
+        ]
+      ],
+      "role": "Scope comparison only; its repeated weak indicator differentiation is not imported."
+    },
+    {
+      "path": "MATCHED_REGIONAL_RATIO_ASTRA.md",
+      "sha256": "5f27e55375d59dde30eacb91efce42a16ba266d563833db2ffd5babdd14c4af6",
+      "lines": 460,
+      "read_ranges": [
+        [
+          1,
+          90
+        ]
+      ],
+      "role": "Scope comparison only: different active regions and full prefactors, not a mixed-cut result."
+    },
+    {
+      "path": "PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "lines": 11,
+      "read_ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "role": "Actual lane process; source first, compact provenance, then independent review."
+    }
+  ],
+  "primary_literature": [
+    {
+      "url": "https://arxiv.org/html/1212.5562v2",
+      "read_scope": "Introduction and inspected excerpts of sections 3.13 (Lemma 3.15) and 3.14 (Lemma 3.18).",
+      "role": "Architectural comparison only; scalar phi-four in d=3; no imported theorem."
+    },
+    {
+      "url": "https://arxiv.org/html/1411.1107v1",
+      "read_scope": "Introduction, site-product cutoff limitation in Remark 2, section 2.1.4, Proposition 3 proof excerpt, and Remark 10.",
+      "role": "Cutoff/normal-covariance hypothesis comparison only; required density/Stokes estimates are rebuilt in the source."
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/BF01238433",
+      "read_scope": "Publisher abstract and bibliographic page; PDF URL redirected to subscription preview, full paper not recovered.",
+      "role": "Attribution and four-dimensional pure-gauge UV-stability scope only; no uninspected estimate is a premise."
+    }
+  ],
+  "review_labels_are_premises": false,
+  "science_numerical_runs": []
+}

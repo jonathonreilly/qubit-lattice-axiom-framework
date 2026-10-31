@@ -1,0 +1,47 @@
+RENEW scoped search evidence; 2026-10-30T05:20:33.451512+00:00
+
+$ rg -n -i 'renewal|rough.mean|involution|constant reproduction|constant.curvature|contracts the action' .claude/science/toe-ruleset-20261021/agents/ym4d-proof/JMBRA.md .claude/science/toe-ruleset-20261021/agents/ym4d-proof/JMBRB.md .claude/science/toe-ruleset-20261021/agents/ym4d-proof/LINEAR_PACKAGE.md .claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT_A.md .claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT_B.md
+.claude/science/toe-ruleset-20261021/agents/ym4d-proof/JMBRB.md:1:# JMBRB — per-step large-field renormalization and the missing renewal bound
+.claude/science/toe-ruleset-20261021/agents/ym4d-proof/JMBRB.md:9:for the branch with an inherited rough mean. SOFTHARD G2 supplies a finite
+.claude/science/toe-ruleset-20261021/agents/ym4d-proof/JMBRB.md:10:boundary debit, not a negative action or a renewal probability.
+.claude/science/toe-ruleset-20261021/agents/ym4d-proof/JMBRB.md:358:is sufficient but is not necessary for this renewal arithmetic.
+.claude/science/toe-ruleset-20261021/agents/ym4d-proof/JMBRB.md:713:| Sublinear threshold / singleton | Fixed-size sublinear majorant B22 fails. A variable cutoff n(u) of order u^(1-delta) or different response weights remain alternatives. Critical prefactors can repair the separate linear-price equality case. | A new price c u^delta beats fixed per-step entropy. The inherited rough-mean/failed-return branch has not been shown to earn it or contract. |
+.claude/science/toe-ruleset-20261021/agents/ym4d-proof/JMBRB.md:716:| Result reached | LFPRICE supplies raw substeps and conditional summation; full LF-JMBR OPEN. | Adds the exact renewal distinction and conditional per-step induction; full LF-JMBR OPEN. |
+.claude/science/toe-ruleset-20261021/agents/ym4d-proof/LINEAR_PACKAGE.md:124:**Lemma 2.2 (abelian averaging contracts the action, sharp constant L^{4-d}; ledger name A1; l.3849-3881).** For the
+.claude/science/toe-ruleset-20261021/agents/ym4d-proof/LINEAR_PACKAGE.md:132:**Lemma 2.3 (CR, constant reproduction; l.1927-1940).** (i) In coarse units d(QB)/L² is a probability average of fine
+.claude/science/toe-ruleset-20261021/agents/ym4d-proof/LINEAR_PACKAGE.md:135:averaging defect vanishes on constant curvature by centring alone (L odd).
+.claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT_B.md:2372:piecewise-constant curvature, so the curvature hypothesis of CL-Φ FAILS for it (pre-stated guess "F1(5)/F1(3) ≤ 1.5": FAILED,
+.claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT_B.md:2408:  constrained descent never smooths the gauge part (exact identity) and leaves Whitney-like piecewise-constant curvature.
+.claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT_B.md:3089:symmetric S4'-type model gives 0.0 exactly on constant curvature; the asymmetric control gives 1.500.)
+.claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT_B.md:3230:| Lemma Γ0 | PROVEN-HERE given the S4' reflection property L1 (cited) | S4' root map kills constant curvature |
+exit=0
+
+$ git grep -n -i -E 'renewal bound|inherited rough|persistent.*flux|flux.*persistent' origin/main -- 'docs/*.md'
+origin/main:docs/FORMED_FLUX_AS_A_PERSISTENT_WALK_STRAIGHT_CONTINUATION_GIVES_BALLISTIC_THEN_DIFFUSIVE_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-09-22.md:2:claim_id: formed_flux_as_a_persistent_walk_straight_continuation_gives_ballistic_then_diffusive_transport_bounded_theorem_note_2026-09-22
+origin/main:docs/FORMED_FLUX_AS_A_PERSISTENT_WALK_STRAIGHT_CONTINUATION_GIVES_BALLISTIC_THEN_DIFFUSIVE_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-09-22.md:8:runner: scripts/formed_flux_persistent_walk_straight_continuation_ballistic_then_diffusive_2026_09_22.py
+origin/main:docs/FORMED_FLUX_AS_A_PERSISTENT_WALK_STRAIGHT_CONTINUATION_GIVES_BALLISTIC_THEN_DIFFUSIVE_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-09-22.md:11:# Persistent mean-flux transport for a supplied straight-continuation rule
+origin/main:docs/FORMED_FLUX_AS_A_PERSISTENT_WALK_STRAIGHT_CONTINUATION_GIVES_BALLISTIC_THEN_DIFFUSIVE_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-09-22.md:127:python3 scripts/formed_flux_persistent_walk_straight_continuation_ballistic_then_diffusive_2026_09_22.py
+origin/main:docs/FORMED_FLUX_AS_A_PERSISTENT_WALK_STRAIGHT_CONTINUATION_GIVES_BALLISTIC_THEN_DIFFUSIVE_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-09-22.md:131:`logs/runner-cache/formed_flux_persistent_walk_straight_continuation_ballistic_then_diffusive_2026_09_22.txt`.
+origin/main:docs/FORMED_FLUX_TRANSPORT_FOR_EVERY_LINEAR_ICE_SWEEP_RULE_IS_A_MARKOV_WALK_DAMPED_OR_RIGID_BOUNDED_THEOREM_NOTE_2026-09-23.md:7:  - formed_flux_as_a_persistent_walk_straight_continuation_gives_ballistic_then_diffusive_transport_bounded_theorem_note_2026-09-22
+origin/main:docs/FORMED_FLUX_TRANSPORT_FOR_EVERY_LINEAR_ICE_SWEEP_RULE_IS_A_MARKOV_WALK_DAMPED_OR_RIGID_BOUNDED_THEOREM_NOTE_2026-09-23.md:113:- [Companion result from PR #8701](FORMED_FLUX_AS_A_PERSISTENT_WALK_STRAIGHT_CONTINUATION_GIVES_BALLISTIC_THEN_DIFFUSIVE_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-09-22.md)
+origin/main:docs/FULL_PHYSICAL_LIVE_BANK_TRANSFER_RESET_RECURRENT_G_CYCLE800_BOUNDED_THEOREM_NOTE_2026-07-30.md:182:  `1.4142135623730951`, making the no-erasure/no-renewal boundary executable;
+origin/main:docs/ai_methodology/raw/prompts_session_049708ba_jonreilly.md:6350:The new gauge row passes by evaluating persistent current on a separate 1D ring Hamiltonian, even when the card is scoring the 3D staggered architecture. That is good evidence that the staggered operator supports gauge response, but it is not yet a native 3D gauge closure. To remove the qualifier, C12 needs a genuine 3D loop/flux harness on the same 3D transport law.
+origin/main:docs/work_history/POTENTIAL_PUBLICATION_DISCOVERIES_LOG.md:110:| D12 | Native gauge/current on irregular graph cycles via persistent-current / flux response on real graph loops | staggered graph gauge | `retained` | Strong graph-native gauge result, especially because it works on irregular cycle-bearing families rather than only on rings/torii | [`CYCLE_BATTERY_NOTE_2026-04-10.md`](CYCLE_BATTERY_NOTE_2026-04-10.md), [`STAGGERED_GRAPH_GAUGE_CLOSURE_RESULTS_2026-04-10.md`](STAGGERED_GRAPH_GAUGE_CLOSURE_RESULTS_2026-04-10.md) |
+exit=0
+
+$ rg -n -i 'we assume|by construction|naturally|standard QFT|registered|canonical|background|independent|all.route|exhaust' .claude/science/toe-ruleset-20261021/agents/ym4d-proof/RENEW.md
+261:Consequently there is no R<infinity and p>0, both independent of arbitrarily
+300:No claim of a depth-independent size for that backward set is made.
+333:conditionally independent, and sequential conditioning multiplies prices
+508:independent of volume/depth, a stable specified history/chart class and its
+532:it is not a weaker solved reformulation or four independent new walls.
+535:background/main action and test dilution only on a localized residual,
+544:## 7. No-Go Discipline Gate — partial narrowing, no exhaustion certificate
+550:live, uncompleted alternatives. No five-exhausted-family packet PASS is
+552:all-route no-go.
+554:**N2.** No independent-wall count is claimed. Let J be the actual joint
+564:in §5. A small-field background is not assumed for the flux witness. No
+583:**N6.** A background/residual split, a matched reference, an extraction
+602:log; no exhaustive literature or open-PR novelty certification is claimed.
+605:denied, and no guard was weakened. The analytic proofs and fresh independent
+exit=0

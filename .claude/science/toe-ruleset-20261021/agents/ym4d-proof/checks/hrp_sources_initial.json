@@ -1,0 +1,71 @@
+{
+  "utc": "2026-10-29T17:00:22.626317+00:00",
+  "files": {
+    "briefs_hrp/AUTHOR_BRIEF_HRP.md": {
+      "bytes": 7857,
+      "sha256": "465aaa4e5c14f38daf739c188bfa1b2ee97c9adf9b70e97312c774ab0e55ca3c"
+    },
+    "ASSEMBLY55.md": {
+      "bytes": 84890,
+      "sha256": "253ea55619c7fd09d278add27b840c989a2a35160eb22a0385ea700f01fac9c7"
+    },
+    "SPHERE55.md": {
+      "bytes": 79626,
+      "sha256": "5bb5593933028d2b1f1ef2121ae0eb6ea9f2b33c79ecc509de687d1076ad407e"
+    },
+    "CODEX_REVIEW_P4.md": {
+      "bytes": 46014,
+      "sha256": "12d59c044e86af2fe66806332aed9a2e98181409e075151a983c4b4eeb7d1b34"
+    },
+    "CODEX_REVIEW_HINT.md": {
+      "bytes": 34406,
+      "sha256": "8b6aa074911debcb7f0f8530b2bb04ec3e22812bc0295cc87d2ce665f0fd129e"
+    },
+    "PANEL_P1.md": {
+      "bytes": 39059,
+      "sha256": "feba5a1f2c0fc2c6ebc3373a5edfc3aec2ff0bb242550f4112b00e4d5a74a645"
+    },
+    "OSLEAF55.md": {
+      "bytes": 97416,
+      "sha256": "7ba9423f52e7da40f5bf2a44dd4fb49d477405bb70cf5b41de3c0482bf2e0df0"
+    },
+    "PROOF.md": {
+      "bytes": 772086,
+      "sha256": "50534f5ac1c1efe3aca10cedfbca32608f2fd47d9429f32566627b42aebed406"
+    },
+    "HANDOFF.md": {
+      "bytes": 35373,
+      "sha256": "950a86086a93f729c39008bd628f7bdc72715c3bcc1374f280bb22f2b10eaa26"
+    },
+    "ROTDEF.md": {
+      "bytes": 63680,
+      "sha256": "413261674aaafa7c68793e9f10ebc1421fdf92871bd583f7c654981511104bf2"
+    },
+    "RLARGE.md": {
+      "bytes": 134489,
+      "sha256": "4f3d2777bcd736ad6936946f6c072ebebd8fe2638839538ea0db28825f2438d2"
+    },
+    "SRCAN55.md": {
+      "bytes": 83986,
+      "sha256": "7d6770a75318f6f9368428d1a01e36c2de5f56ea008071b531d71318ad78faa4"
+    }
+  },
+  "main_imports": {
+    "AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md": {
+      "bytes": 17562,
+      "sha256": "be090b565706ba9c66472cf25d667b8455ea1bdfc7e5a65f741887b9318ec4a9"
+    },
+    "REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md": {
+      "bytes": 11214,
+      "sha256": "1058c4d62262e28185d53b644475b618915776e51fa86781a6cd5df9c2b159e5"
+    },
+    "GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md": {
+      "bytes": 19316,
+      "sha256": "132a5dba055101dab8bac3c253b83e0dc55a0d65886ccdaf0585e567aeed5694"
+    },
+    "AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md": {
+      "bytes": 39828,
+      "sha256": "0c82e0d3a0c5ea69503c1f545e2c417f43d9138b717030c042ff58a4f6487fea"
+    }
+  }
+}

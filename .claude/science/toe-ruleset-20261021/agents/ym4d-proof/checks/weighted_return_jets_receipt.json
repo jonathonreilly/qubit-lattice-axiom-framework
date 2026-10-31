@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "unit": "weighted_return_jets",
+  "source_freeze": {
+    "path": "WEIGHTED_RETURN_JETS_ASTRA.md",
+    "lines": 937,
+    "sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3"
+  },
+  "source_absence_checked_before_creation": true,
+  "source_frozen_before_metadata": true,
+  "mechanical_checks": {
+    "existing_local_links": 12,
+    "missing_local_links": [],
+    "equation_labels": 47,
+    "unique_equation_labels": 47,
+    "all_WR1_through_WR45_present": true,
+    "trailing_whitespace_lines": []
+  },
+  "author_scope_checks": [
+    "Exact original absolute J=u0 epsilon, u0=u for this bare step; kernels and all couplings frozen under observable derivatives.",
+    "Fixed-center output jets distinguished from real diagonal center jets; finite-volume normalized ratio/log identification precedes the uniform forest.",
+    "Real all-link Haar pullback freezes q, shell and original interior cuts; no hard G/Omega or rough complex mean deformation.",
+    "Actual canonical P(W), b(W), both covariance tails and normalized Gaussian determinant included with all modes and full readers.",
+    "Finite multiaffine auxiliary rough insertions retain all ordered six field and four source positions; scalar density factorials unchanged.",
+    "Rare real-return derivative price remains exponential in minus p_cut squared; ordinary nonlinear chart bound retains h/xi and source weights.",
+    "Microscopic reader rate 3beta/8 and smaller-rate beta/4 tree interface stated; native mu+2 contract not claimed.",
+    "Full prefactor, extraction, all-history closure, non-freeness, continuum existence and physical gap remain open."
+  ],
+  "execution_scope": {
+    "numerical_science_runs": 0,
+    "extra_workers_spawned": 0,
+    "predecessor_or_shared_front_edits": false,
+    "git_pr_or_audit_operations": false,
+    "writes": "WEIGHTED_RETURN_JETS_ASTRA.md and checks/weighted_return_jets_* only"
+  },
+  "review": {
+    "status": "different_fresh_hostile_source_first_review_requested_via_parent",
+    "independent_author_check": false,
+    "same_family_disclosure": "Author is Codex/Astra; a Codex reviewer would be a different agent in the same model family, not an external human review."
+  }
+}

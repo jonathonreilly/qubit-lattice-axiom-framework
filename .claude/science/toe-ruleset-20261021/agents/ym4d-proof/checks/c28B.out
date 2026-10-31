@@ -1,0 +1,12 @@
+Part B: strip inequalities at complex points (exact alias sums)
+ kap=1.0 eta*=0.0111 r0=0.55 n=3: |dZ|/cZ 0.048, 9Z 0.472, |dbeta|/(rho beta) 0.076, beta/b* 1.000, |dPsi|/ePsi 0.033, Psi/PsiU 1.100, ReSig/lb 5.932, ratio/Gam 0.428 PASS
+ kap=1.0 eta*=0.0111 r0=0.55 n=9: |dZ|/cZ 0.044, 9Z 0.391, |dbeta|/(rho beta) 0.083, beta/b* 1.000, |dPsi|/ePsi 0.035, Psi/PsiU 1.070, ReSig/lb 5.838, ratio/Gam 0.449 PASS
+ kap=1.0 eta*=0.0111 r0=0.55 n=27: |dZ|/cZ 0.044, 9Z 0.382, |dbeta|/(rho beta) 0.073, beta/b* 1.000, |dPsi|/ePsi 0.035, Psi/PsiU 1.067, ReSig/lb 5.857, ratio/Gam 0.452 FAIL
+ kap=0.25 eta*=0.0077 r0=0.35 n=3: |dZ|/cZ 0.048, 9Z 0.472, |dbeta|/(rho beta) 0.105, beta/b* 1.000, |dPsi|/ePsi 0.036, Psi/PsiU 1.066, ReSig/lb 5.776, ratio/Gam 0.411 PASS
+ kap=0.25 eta*=0.0077 r0=0.35 n=9: |dZ|/cZ 0.051, 9Z 0.391, |dbeta|/(rho beta) 0.124, beta/b* 1.000, |dPsi|/ePsi 0.053, Psi/PsiU 1.028, ReSig/lb 5.677, ratio/Gam 0.436 PASS
+ kap=0.25 eta*=0.0077 r0=0.35 n=27: |dZ|/cZ 0.044, 9Z 0.382, |dbeta|/(rho beta) 0.125, beta/b* 1.000, |dPsi|/ePsi 0.053, Psi/PsiU 1.024, ReSig/lb 5.666, ratio/Gam 0.438 FAIL
+ kap=4.0 eta*=0.0118 r0=0.65 n=3: |dZ|/cZ 0.048, 9Z 0.472, |dbeta|/(rho beta) 0.041, beta/b* 1.645, |dPsi|/ePsi 0.012, Psi/PsiU 1.128, ReSig/lb 5.935, ratio/Gam 0.485 PASS
+ kap=4.0 eta*=0.0118 r0=0.65 n=9: |dZ|/cZ 0.044, 9Z 0.391, |dbeta|/(rho beta) 0.043, beta/b* 1.645, |dPsi|/ePsi 0.012, Psi/PsiU 1.115, ReSig/lb 5.882, ratio/Gam 0.498 PASS
+ kap=4.0 eta*=0.0118 r0=0.65 n=27: |dZ|/cZ 0.044, 9Z 0.382, |dbeta|/(rho beta) 0.042, beta/b* 1.645, |dPsi|/ePsi 0.018, Psi/PsiU 1.113, ReSig/lb 5.886, ratio/Gam 0.499 PASS
+Part B: FAIL
+time 4.1 s, peak RSS 93 MB

@@ -1,0 +1,42 @@
+{
+  "format": "bounded-analytic-author-packet-v1",
+  "created_utc": "2026-10-30T06:42:30.561677+00:00",
+  "author_review_status": "FROZEN_AUTHOR_PROPOSAL_PENDING_DIFFERENT_FRESH_REVIEW",
+  "author_source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SQUARED_ALIGNMENT_PRICE_ASTRA.md",
+    "sha256": "cd2df445d61018ade1f4050612b0616800f4c87c83cea9de27d3ab7b8ac00905",
+    "bytes": 20270
+  },
+  "source_freeze": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/squared_alignment_price_source_freeze.json",
+    "sha256": "ccf60ff0805b2e9d7ac2556539845e45c5bc158d20d8792b1897ceebbb0a9d87",
+    "bytes": 772
+  },
+  "owned_artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SQUARED_ALIGNMENT_PRICE_ASTRA.md",
+      "sha256": "cd2df445d61018ade1f4050612b0616800f4c87c83cea9de27d3ab7b8ac00905",
+      "bytes": 20270
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/squared_alignment_price_source_freeze.json",
+      "sha256": "ccf60ff0805b2e9d7ac2556539845e45c5bc158d20d8792b1897ceebbb0a9d87",
+      "bytes": 772
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/squared_alignment_price_author_checks.md",
+      "sha256": "051620b66147c32c49f52a35e3791bd6c18cb5a68545c48aec93750f9b5dcadf",
+      "bytes": 4420
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/squared_alignment_price_read_manifest.json",
+      "sha256": "b767575ec374b31d9ac87c1d70328b7e8cbb8c2ca9dfb17694ad982a527621bf",
+      "bytes": 8094
+    }
+  ],
+  "scope": "SAP1-SAP19: recovered existing linear threshold, all-compact actual one-step coarse-curvature allocation, explicit labelled readers/incidences, ordinary forward smooth-input probability and exact raw factor splitting.",
+  "unproved": "Actual matched-reference remainder bound; arbitrary future/history-tilted probability; effective-density coercivity or Wilson representation at later steps; uniform renewal; full nonlinear RG; continuum existence and physical mass gap.",
+  "novelty": "No novelty claimed for CS10 alignment or REVIEW55_ARS r55a-F10 linear threshold. Consumer-facing recovery and explicit aggregation only.",
+  "evidence": "Written proofs and author inspection. No scientific numerical experiment. Hash/link checks are provenance only.",
+  "immutability": "Source frozen first. Four bound files plus this receipt form a five-file author packet. No predecessor, shared-front, Git, PR, audit, ledger or lock edit."
+}

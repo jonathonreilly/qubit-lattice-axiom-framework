@@ -1,0 +1,16 @@
+gs1 -- Lemma PC operator and three elementary claims.  seed=20261028  N=7  d=4  trials=12
+
+A1  d*(Pe) = e exactly and supp inside the cube : PASS
+A2  every component of e sums to zero           : PASS
+A3  sum_z G_munu = sum_z z_mu e_nu, M antisym    : PASS
+A4  signed totals primitive-independent         : PASS
+A5  sign-coherent trials                        : 0 / 12
+    verdict: SIGN-MIXED
+A5(ii) e = d*delta_q : P e exact=True, sign-coherent=True, |supp|=1, values=[1]
+
+A6 DESIGNED-FAIL CONTROL (each clause below MUST fail)
+  A6a non-co-closed input : co-closed=False  d*(Pe)=e : False  component sums [1, 0, 0, 0]  -> FIRED
+  A6b wrong primitive     : signed totals match the first moments : False  -> FIRED
+  A6c antisymmetry of M   : antisymmetric : False  -> FIRED
+
+CONTROL: FIRED on all three clauses

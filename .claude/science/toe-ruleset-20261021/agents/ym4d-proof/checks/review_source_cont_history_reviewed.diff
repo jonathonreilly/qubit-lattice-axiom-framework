@@ -1,0 +1,28 @@
+diff --git a/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md b/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md
+index f80c268741..65e96d0e23 100644
+--- a/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md
++++ b/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md
+@@ -176,12 +176,17 @@ n_d, rather than the number n of free links, in every Gaussian factor.
+ Stationarity cancels only the baseline linear term. The actual source linear
+ term sigma^(-1)sum_p epsilon_p Ds_p(b)[CW] remains in (C7).
+ 
+-For real B, (C8) holds for all complex epsilon in the stated domain by fixed
+-real-domain integration: its finite-volume integrand is entire in epsilon.
+-For complex B, the right side is its specified analytic continuation on a
+-smaller original-B polydisc, using the fixed W cube and the holomorphic b,C.
+-It agrees with (C5) for real B. It is not an assertion about an absolute-value
+-indicator evaluated at complex U, or about a sector fixed at a different B.
++For fixed real B and a bounded retained history independent of epsilon,
++(C8) holds for all complex epsilon in the stated domain by fixed real-domain
++integration: its finite-volume integrand is entire in epsilon. For Theta_h=1,
++the right side defines the specified analytic continuation in complex B on
++a smaller original-B polydisc, using the fixed W cube and holomorphic b,C.
++For a general history this B-analytic assertion additionally requires a
++separately supplied jointly holomorphic fixed-W pullback with uniform
++integrable domination. A hard history on real U does not supply that
++property merely because W is fixed. Where this continuation is justified,
++it agrees with (C5) for real B. No indicator at complex U or sector fixed
++at a different B is being asserted.
+ 
+ To match an actual STEP denominator, divide (C8) by its actual Z_ref,h and
+ include its Theta_h. If the original integration sector is larger than (C4),

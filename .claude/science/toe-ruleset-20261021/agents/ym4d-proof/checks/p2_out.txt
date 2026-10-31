@@ -1,0 +1,14 @@
+A T=2: max rel |dQ_str A - <w,dA>| = 9.93e-16; sum w = 9.000000000000002; sum w^2 = 0.495198902606310 (361/729 = 0.495198902606310) -> PASS
+B T=2: ||Pi w||^2 = 0.143532 (<= ||w||^2 = 0.495199); ratio = 0.2898; 1/||Pi w||^2 = 6.9671; CG its 13, resid 5.9e-16 -> PASS
+A T=3: max rel |dQ_str A - <w,dA>| = 1.28e-15; sum w = 9.000000000000000; sum w^2 = 0.495198902606310 (361/729 = 0.495198902606310) -> PASS
+B T=3: ||Pi w||^2 = 0.181161 (<= ||w||^2 = 0.495199); ratio = 0.3658; 1/||Pi w||^2 = 5.5199; CG its 34, resid 7.9e-14 -> PASS
+C g_k^2=0.05: theta=1.5, b=beta_-: R_k = 1.075, 1.597, 4.062, 12.49, 39.39; R(1e5)/R(1e4) = 3.1532 vs predicted 3.1537 -> ok
+C g_k^2=0.05: theta=0.5, b=beta_-: R_k = 0.9258, 0.6122, 0.2378, 0.07719, 0.02448
+C g_k^2=0.05: theta=1.0, b=beta_-: R_k = 0.9977, 0.9899, 0.9847, 0.9839, 0.9838
+C g_k^2=0.2: theta=1.5, b=beta_-: R_k = 1.23, 2.487, 7.28, 22.83, 72.12; R(1e5)/R(1e4) = 3.1596 vs predicted 3.1601 -> ok
+C g_k^2=0.2: theta=0.5, b=beta_-: R_k = 0.769, 0.3554, 0.1194, 0.03799, 0.01202
+C g_k^2=0.2: theta=1.0, b=beta_-: R_k = 0.9754, 0.9463, 0.9391, 0.9383, 0.9382
+C overall (C1 upper bound, C2 theta<=1 uniform, C3 growth rate, C4 sum g^4): PASS
+D beta_1(2) = 0.371511, beta_1(3) = 0.835900; n_* = 382 (SU(2)), 255 (SU(3)); log(24 L^4)/log L = 6.8928; smallest N with (2/N)*4*beta_1 > that: 10 -> PASS
+E (18 cases): closed form >= numerical E X^2 in all -> PASS
+SUMMARY A=True B=True C=True D=True E=True; wall 0.5s

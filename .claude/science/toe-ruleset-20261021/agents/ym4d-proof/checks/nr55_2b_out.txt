@@ -1,0 +1,18 @@
+--- run tau=1/4,N=8: N=8, tau=1/4, variable links=112, variables=336
+    plaquette |1-w|^2 = 4/17 (= 4tau^2/(1+tau^2)), operator norm ~ 0.485071
+G5a[tau=1/4,N=8] criticality: PASS | nonzero gradient components = 0 of 336
+    float search: lowest Rayleigh quotient ~ -1.072701e+00
+G5b[tau=1/4,N=8] non-convexity Q_C(v) < 0: PASS | Q_C(v) exact = -1.072702e+00 (two code paths agree: True); |v|^2 = 1.000000; RQ = -1.072701e+00
+G5c[tau=1/4,N=8] free Hessian positive on v: PASS | Q_1(v) = 2.227771e+00; RQ_1 = 2.227770e+00
+G5d[tau=1/4,N=8] blocked 3x3 plaquette larger than fine one: PASS | |1-w^9|^2 = 2.596337 vs |1-w|^2 = 0.235294
+G5n2[tau=1/4,N=8] (control: abelian part must NOT be negative): PASS | Q_C(v_abelian) = 0.000000e+00
+G5n (control tau=0: Q_1(v0) < 0 must FAIL): PASS | Q_1(v0) = 5.200000e-11, float RQ ~ 9.355e-31
+--- run tau=1/8,N=12: N=12, tau=1/8, variable links=264, variables=792
+    plaquette |1-w|^2 = 4/65 (= 4tau^2/(1+tau^2)), operator norm ~ 0.248069
+G5a[tau=1/8,N=12] criticality: PASS | nonzero gradient components = 0 of 792
+    float search: lowest Rayleigh quotient ~ -5.247369e-01
+G5b[tau=1/8,N=12] non-convexity Q_C(v) < 0: PASS | Q_C(v) exact = -5.247370e-01 (two code paths agree: True); |v|^2 = 1.000000; RQ = -5.247369e-01
+G5c[tau=1/8,N=12] free Hessian positive on v: PASS | Q_1(v) = 2.081229e+00; RQ_1 = 2.081228e+00
+G5d[tau=1/8,N=12] blocked 3x3 plaquette larger than fine one: PASS | |1-w^9|^2 = 3.238196 vs |1-w|^2 = 0.061538
+G5n2[tau=1/8,N=12] (control: abelian part must NOT be negative): PASS | Q_C(v_abelian) = 0.000000e+00
+SUMMARY: 11 / 11 gates PASS (controls PASS = fired as designed)

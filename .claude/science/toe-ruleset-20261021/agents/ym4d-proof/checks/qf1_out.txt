@@ -1,0 +1,168 @@
+========================================================================================================
+qf1_q.py -- T55-N (QFIX.md).  Decimal precision = 40 significant digits
+Criteria: checks/qf1_criteria.md (pre-registered, 21:48 UTC).  Inputs: that file's section 0.
+========================================================================================================
+
+BLOCK A -- beta telescope  B(m) = prod_{i>=0} (p_i - 1)^(m/p_i),  p_i = 2^(i+1)
+  B(4) = 43.948619   CONST_T section 3.1 says 43.95   rel.dev = 3.14E-5
+  B(8) = 1931.481139   CONST_T section 3.1 says 1931.5  rel.dev = 9.76E-6
+
+BLOCK B -- QF1-1  reproduction of EPSSTAR l.547-553 (P-max, M-sharp)
+        q     mine m=19615      EPSSTAR        rel |         mine m=7      EPSSTAR        rel
+       10       2.4630E+13    2.463E+13      0.00% |       2.8574E+13    2.857E+13      0.01%
+       11       9.7738E+12    9.774E+12      0.00% |       1.3329E+13    1.333E+13      0.01%
+       12       5.2883E+12    5.288E+12      0.01% |       8.7167E+12    8.717E+12      0.00%
+       16       2.0312E+12    2.031E+12      0.01% |       5.3583E+12    5.358E+12      0.01%
+       24       1.5278E+12    1.528E+12      0.01% |       4.8363E+12    4.836E+12      0.01%
+       32       1.4543E+12    1.454E+12      0.02% |       4.7597E+12    4.760E+12      0.01%
+      100       1.3960E+12    1.396E+12      0.00% |       4.6988E+12    4.699E+12      0.01%
+  worst m=19615 relative deviation = 0.022%
+  QF1-1: PASS   (B(4),B(8) within 0.5%: True; q-row within 1%)
+
+BLOCK C -- QF1-2  monotonicity and plateau of C_T(q), P-max, m = 19615
+         q      C_T (P-max)       C_T (P-ct)      B(4a)          a
+         8      8.24514E+14      8.24514E+14   1931.481   2.000000
+         9      9.81979E+13      4.60801E+13    906.361   1.800000
+        10      2.46300E+13      6.97938E+12    547.321   1.666667
+        11      9.77376E+12      1.93171E+12    381.743   1.571429
+        12      5.28835E+12      7.97714E+11    291.352   1.500000
+        13      3.53528E+12      4.32192E+11    236.126   1.444444
+        14      2.71740E+12      2.80793E+11    199.583   1.400000
+        16      2.03125E+12      1.63105E+11    155.094   1.333333
+        20      1.64085E+12      9.61300E+10    113.157   1.250000
+        24      1.52783E+12      7.40832E+10     93.656   1.200000
+        32      1.45432E+12      5.68096E+10     75.449   1.142857
+        50      1.41474E+12      4.47298E+10     61.067   1.086957
+       100      1.39600E+12      3.71875E+10     51.452   1.041667
+       200      1.38984E+12      3.41625E+10     47.476   1.020408
+      1000      1.38595E+12      3.20184E+10     44.621   1.004016
+     10000      1.38517E+12      3.15658E+10     44.015   1.000400
+   1000000      1.38509E+12      3.15166E+10     43.949   1.000004
+  strictly decreasing on the grid: True;  C_T(q=1e6) = 1.38509E+12 (finite, positive)
+  QF1-2: PASS
+
+BLOCK D -- QF1-3 / QF1-3b  the structural clauses, as EXACT Fractions
+       q  sigma=q/2>2    theta=4/q    a=q/(q-4)   (-2+8/q)a=-2  theta<=1/2
+       5         True          4/5            5           True       False
+       6         True          2/3            3           True       False
+       7         True          4/7          7/3           True       False
+       8         True          1/2            2           True        True
+      10         True          2/5          5/3           True        True
+      11         True         4/11         11/7           True        True
+      12         True          1/3          3/2           True        True
+      16         True          1/4          4/3           True        True
+      32         True          1/8          8/7           True        True
+     100         True         1/25        25/24           True        True
+  QF1-3:  PASS   (nothing in the step's own mathematics excludes q < 11)
+  QF1-3b: PASS   (theta <= 1/2 FAILS on (4,8), holds for q >= 8)
+
+BLOCK E -- QF1-4  the C_D prefactor Lambda(q) = 4*2^(2+4/q)*(4.94 + 3.34*32^(1/q))
+  Lambda(8)    = 228.33291     (REVIEW_SQ_S4 l.371: C_T' = 22.63C_T, bracket 10.09 -> 228)
+  Lambda(12)   = 189.45917
+  Lambda(inf)  = 132.48000    (CONST_T section 4.2: 16*8.28 = 132)
+  Lambda(12)/Lambda(8)   = 0.829750   (17.03 % below)
+  Lambda(8)/Lambda(inf)  = 1.723527   (CONST_T section 4.2 says 'a further ~1.7x on C_D')
+  QF1-4: PASS
+  => REVIEW_SQ_S4 S4-16's (0.5-0.9)e3 is Lambda(8)*2.022*c_N with c_N in [1,2]:
+       c_N = 1:  2.022*Lambda(8)*c_N = 461.69
+       c_N = 2:  2.022*Lambda(8)*c_N = 923.38
+     and es1_eps.py l.48 hard-codes C_D_PER_CT = 0.9e3 for EVERY q.
+
+BLOCK F -- QF1-9  the power of eps_1 in a_RS, from ARS_FIX section 2.2's own rows
+  p = 1: worst relative deviation over the five rows = 36385437224756299.4855%
+  p = 2: worst relative deviation over the five rows = 509664999998.9647%
+  p = 3: worst relative deviation over the five rows = 7138976.2937%
+  p = 4: worst relative deviation over the five rows = 0.0002%
+  p = 5: worst relative deviation over the five rows = 99.9986%
+  p = 6: worst relative deviation over the five rows = 259.3005%
+  unique integer p with all rows within 0.2% : 4
+  margins reproduce ARS_FIX's five rows to <= 0.01 decades: True
+    eps_1 = 1.270000E-39: margin(bare) = -14.506 (ARS_FIX -14.506),  margin(c_RS) = -17.302 (ARS_FIX -17.302)
+    eps_1 = 9.520000E-40: margin(bare) = -15.007 (ARS_FIX -15.007),  margin(c_RS) = -17.803 (ARS_FIX -17.803)
+    eps_1 = 8.950000E-40: margin(bare) = -15.114 (ARS_FIX -15.114),  margin(c_RS) = -17.910 (ARS_FIX -17.910)
+    eps_1 = 6.700000E-40: margin(bare) = -15.617 (ARS_FIX -15.617),  margin(c_RS) = -18.413 (ARS_FIX -18.413)
+    eps_1 = 9.384951E-45: margin(bare) = -35.032 (ARS_FIX -35.032),  margin(c_RS) = -37.828 (ARS_FIX -37.828)
+  QF1-9: PASS
+
+  eps_1^cut = t_pr / (2*sqrt(5.05e9*C_3)) ; divisor = 142126.704036  (EPS1_EXEC quotes 142125)
+
+BLOCK F2 -- the objective over q.  P-max, m = 19615, c_N = 2 (the conservative end), C_3 = C_Omega = 1
+  OBJECTIVE = log10(a_RS(eps_1^eff)/1e2) - log10(DX')   [bare convention; c_RS column is -2.796 shifted]
+
+         q          C_T          C_D         t_pr    eps_1^cut  d(cut) vs q=12   OBJECTIVE   vs q=12  CLSmin hd  a_bad hd
+         8   8.2451E+14   7.6134E+17   5.2121E-44   3.6673E-49         -4.5479     -52.664   -18.191     -2.056     5.153
+         9   9.8198E+13   8.5156E+16   4.1663E-42   2.9314E-47         -2.6451     -45.053   -10.581     -1.104     5.153
+        10   2.4630E+13   2.0321E+16   7.3163E-41   5.1477E-46         -1.4006     -40.075    -5.602     -0.482     5.153
+        11   9.7738E+12   7.7439E+15   5.0380E-40   3.5447E-45         -0.5626     -36.723    -2.250     -0.063     5.153
+        12   5.2883E+12   4.0518E+15   1.8403E-39   1.2948E-44          0.0000     -34.473     0.000      0.218     5.153
+        13   3.5353E+12   2.6332E+15   4.3572E-39   3.0657E-44          0.3743     -32.975     1.497      0.406     5.153
+        14   2.7174E+12   1.9758E+15   7.7392E-39   5.4453E-44          0.6238     -31.977     2.495      0.530     5.153
+        16   2.0312E+12   1.4204E+15   1.4974E-38   1.0536E-43          0.9105     -30.831     3.642      0.674     5.153
+        20   1.6408E+12   1.0869E+15   2.5575E-38   1.7995E-43          1.1429     -29.901     4.572      0.790     5.153
+        24   1.5278E+12   9.7635E+14   3.1693E-38   2.2299E-43          1.2361     -29.528     4.944      0.836     5.153
+        32   1.4543E+12   8.8888E+14   3.8237E-38   2.6904E-43          1.3176     -29.202     5.270      0.877     5.153
+        50   1.4147E+12   8.2436E+14   4.4457E-38   3.1280E-43          1.3831     -28.940     5.532      0.910     5.153
+       100   1.3960E+12   7.7987E+14   4.9674E-38   3.4950E-43          1.4312     -28.748     5.725      0.934     5.153
+       200   1.3898E+12   7.6032E+14   5.2261E-38   3.6770E-43          1.4533     -28.659     5.813      0.945     5.153
+      1000   1.3859E+12   7.4562E+14   5.4342E-38   3.8235E-43          1.4703     -28.592     5.881      0.954     5.153
+     10000   1.3852E+12   7.4242E+14   5.4812E-38   3.8566E-43          1.4740     -28.577     5.896      0.955     5.153
+   1000000   1.3851E+12   7.4206E+14   5.4864E-38   3.8602E-43          1.4744     -28.575     5.898      0.956     5.153
+  supremum over grid = -28.575;  recommended q (first within 0.05 dec of sup) = 1000
+  QF1-5: PASS  (monotone non-decreasing, total rise finite and <= 20 dec)
+
+BLOCK G -- QF1-6  designed-FAIL control: C_T and Lambda replaced by q-independent constants
+  control objective spread over the grid = 0E-52 decades  -> NO-LEVER
+  live    objective spread over the grid = 24.0891 decades -> HAS-LEVER
+  QF1-6: PASS
+
+BLOCK H -- the other ceilings, and the one consumer that moves AGAINST q
+         q     eta_flat  DESCeps short(dec)  C_T vs DESC ceil     theta_G  thG headroom(dec)
+         8   5.3795E-97              18.523        1.9768E+27  1.4600E-13             35.600
+         9   3.4372E-93              14.718        2.1049E+27  1.2978E-13             33.646
+        10   1.0600E-90              12.229        2.2124E+27  1.1680E-13             32.356
+        11   5.0260E-89              10.553        2.3038E+27  1.0618E-13             31.476
+        12   6.7060E-88               9.428        2.3824E+27  9.7333E-14             30.876
+        13   3.7595E-87               8.679        2.4506E+27  8.9846E-14             30.467
+        14   1.1860E-86               8.180        2.5104E+27  8.3429E-14             30.185
+        16   4.4403E-86               7.607        2.6103E+27  7.3000E-14             29.841
+        20   1.2952E-85               7.142        2.7557E+27  5.8400E-14             29.511
+        24   1.9890E-85               6.956        2.8563E+27  4.8667E-14             29.339
+        32   2.8953E-85               6.793        2.9864E+27  3.6500E-14             29.132
+        50   3.9137E-85               6.662        3.1325E+27  2.3360E-14             28.873
+       100   4.8861E-85               6.565        3.2674E+27  1.1680E-14             28.524
+       200   5.4082E-85               6.521        3.3366E+27  5.8400E-15             28.201
+      1000   5.8475E-85               6.487        3.3928E+27  1.1680E-15             27.485
+     10000   5.9493E-85               6.480        3.4056E+27  1.1680E-16             26.481
+   1000000   5.9605E-85               6.479        3.4070E+27  1.1680E-18             24.481
+  the DESC-eps C_D ceiling, self-consistently derived: C_D <= 1.82531E+30 / C_3^(1/4)
+
+  P-ct sensitivity (B(4a) instead of B(8)) -- STAR_CONST section 6.4 calls P-max the correct one:
+         q     C_T (P-ct)     C_D (P-ct)   DESC ceil on C_T   clears?
+        12     7.9771E+11     6.1119E+14         2.3824E+27      True
+        32     5.6810E+10     3.4722E+13         2.9864E+27      True
+       100     3.7187E+10     2.0775E+13         3.2674E+27      True
+      1000     3.2018E+10     1.7226E+13         3.3928E+27      True
+   1000000     3.1517E+10     1.6885E+13         3.4070E+27      True
+
+BLOCK I -- QF1-8 [POST-HOC-HAND]  EPSSTAR l.525's internal consistency
+  eta_flat = t_pr^2/5.05e9 >= 4*C_3*eps_1^2 at eps_1 = 6.7e-40, C_3 = 1
+    => t_pr >= 2*eps_1*sqrt(5.05e9*C_3) = 9.522489E-35
+    EPSSTAR l.525 states t_pr >= 3.01e-35 ; ratio mine/theirs = 3.163618
+    their t_pr gives C_D <= 3.16813E+13  (EPSSTAR l.525 states 3.17e13)
+    self-consistent  C_D <= 1.82531E+30  -- ratio 0.000000
+  QF1-8: FAIL  (PASS would mean EPSSTAR l.525 is self-consistent)
+    knock-on: EPSSTAR l.525's 'C_T <~ 3.5e10 - 6.3e10' becomes 2.3824E+27 (c_N=2) - 4.7647E+27 (c_N=1) at q = 12
+
+========================================================================================================
+PRE-REGISTERED VERDICTS
+  QF1-1    PASS
+  QF1-2    PASS
+  QF1-3    PASS
+  QF1-3b   PASS
+  QF1-4    PASS
+  QF1-5    PASS
+  QF1-6    PASS
+  QF1-8    FAIL
+  QF1-9    PASS
+  QF1-7  -- compare qf1_out.txt (prec 40) with qf1_out_prec60.txt (prec 60) outside the script.
+========================================================================================================

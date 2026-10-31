@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-10-29T18:11:08.511366+00:00",
+  "stage": "git diff --cached --check",
+  "exit_code": 1,
+  "diagnostic": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md:2603: new blank line at EOF.",
+  "preimage_sha256": "83a20b825180f2f36f5945e7def56b5e90e69428409f6f6d730fbc4d611761cd",
+  "repair": "Remove only extra trailing blank lines from the appended shared status checkpoint. No mathematical or diagnostic source changed.",
+  "initial_vocabulary_report": {
+    "files": [],
+    "schema_version": 1,
+    "summary": {
+      "files_with_violations": 0,
+      "total_auto_correctable": 0,
+      "total_needs_human": 0
+    }
+  }
+}

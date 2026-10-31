@@ -1,0 +1,165 @@
+====================================================================================================
+tf1 -- tau_flat binding-entry adjudication.  Exact Fraction arithmetic.
+Criteria: checks/tf1_criteria.md (written before this script).  Verdicts are those of its Sec. 2-3.
+====================================================================================================
+
+BLOCK T -- TRANSCRIPTION (no value below is computed here)
+----------------------------------------------------------------------------------------------------
+  C'            = 53                      [SQ.md, Lemma FORCE: C' := L^2 + 4A_d + 8, = 53 at L = 3]
+  c_flat        = 1/640                   [SQ.md, Lemma DESC (a): c_b := min{1/(4C_1),1/(2N),k_-/(4N)}]
+  tau_R         = 2.75e-15                [REVIEW_SQ_S4 S4-14 l.309]
+  C_err         = 1.655e7 * C_D^2         [REVIEW_SQ_S4 S4-16 l.364]
+  theta_0^SUP   = 1/(2 C_err)             [SQ.md Thm SUP-price l.188; = 1/(3.31e7 C_D^2), S4-16 l.364]
+  C_D           = (0.5-0.9)e3 * C_T       [REVIEW_SQ_S4 S4-16 l.374]
+  C_T           = 5.288e12  (q = 12)      [EPSSTAR.md Sec.7.1 l.549/555; CONDITIONAL on its (H2)]
+  eps_1         = 6.7e-40                 [RLARGE.md Sec.0 l.71-72, current ceiling, TB-1]
+  eta_AE        = 1.776e-15 (C_S<=1e2)    [REVIEW_HIST_S4 l.368]; 8.9e-16 at C_S=1e4 [l.370]
+  C_3           = 1  (REFERENCE ONLY)     [HIST.md Thm A5 l.1684; C_3 is not pinned anywhere]
+  [EPSSTAR Sec.6.6 l.525-526, transcribed for comparison in TF1-E:
+     t_pr required >= 3.01e-35*sqrt(C_3);  C_D <= 3.17e13/C_3^(1/4);  C_T <~ 3.5e10 - 6.3e10]
+  C_T floor     = 4.4e12                  [EPSSTAR Sec.7.4 l.608; c_s >= 319.2 forces it]
+
+TF1-A (reading verdict, recorded in TAUFLAT.md Sec.1): the script assumes DISTINCT-AND-BOTH-BIND,
+  i.e. tau_R (which itself contains theta_0^{SQ4}/C') and theta_0^SUP/C' are SEPARATE entries of
+  tau_flat's min (SQ.md l.317-319 vs l.1633; REVIEW_SQ_S4 S4-14 item 4 confirms both constraints apply).
+
+====================================================================================================
+TF1-C -- the window in which S4-14 item 2 and S4-16 are JOINTLY CONSISTENT
+====================================================================================================
+  condition: tau_R <= theta_0^SUP/C'  <=>  C_D^2 <= 1/(3.31e7 * C' * tau_R)
+  C_D^2 <= 40000000000 / 192973 = 207283
+  C_D <= 455.283301   (exact to 20 digits)
+  chain's current C_D (worst end) = 4.75920E+15
+  [TF1-C] current C_D is OUTSIDE the window
+  window exceeded by a factor 1.04533E+13
+
+====================================================================================================
+MAIN RUN -- chain's current C_D = 0.9e3 * C_T (worst/largest end)
+====================================================================================================
+  C_D                       = 4.75920E+15
+  theta_0^SUP = 1/(3.31e7 C_D^2) = 1.33384E-39
+  theta_0^SUP / C'          = 2.51668E-41   <- candidate entry B
+  tau_R                     = 2.75E-15   <- candidate entry A
+  => the min is attained at   theta_0^SUP/C' (B)
+
+  eta_flat at entry A (tau_flat = tau_R)            = 4.20662E-36
+  eta_flat at entry B (tau_flat = theta_0^SUP/C')   = 3.52310E-88
+  exact ratio A/B = 11940126778191374946845063424000000000000000000000000 / 1
+  log10(ratio)    = 52.077 decades
+  [TF1-B] CONFLICT-REAL   (threshold: >= 10 decades)
+
+  DESC-eps (iii) hypothesis: E < eta_flat, with consumers supplying E <= 4 C_3 eps_1^2
+    t_pr      = C' tau_flat          = 1.33384E-39
+    eta_flat  (at binding entry)     = 3.52310E-88
+    4 C_3 eps_1^2                    = 1.7956E-78
+    [TF1-D] CLAUSE-FAILS
+       shortfall = 9.707 decades of ENERGY, 4.854 decades of eps_1
+
+====================================================================================================
+BAND CHECK -- other end of S4-16's band, C_D = 0.5e3 * C_T
+====================================================================================================
+  C_D                       = 2.64400E+15
+  theta_0^SUP = 1/(3.31e7 C_D^2) = 4.32165E-39
+  theta_0^SUP / C'          = 8.15405E-41   <- candidate entry B
+  tau_R                     = 2.75E-15   <- candidate entry A
+  => the min is attained at   theta_0^SUP/C' (B)
+
+  eta_flat at entry A (tau_flat = tau_R)            = 4.20662E-36
+  eta_flat at entry B (tau_flat = theta_0^SUP/C')   = 3.69841E-87
+  exact ratio A/B = 1137414911807591730190240000000000000000000000000000 / 1
+  log10(ratio)    = 51.056 decades
+  [TF1(band)-B] CONFLICT-REAL   (threshold: >= 10 decades)
+
+  DESC-eps (iii) hypothesis: E < eta_flat, with consumers supplying E <= 4 C_3 eps_1^2
+    t_pr      = C' tau_flat          = 4.32165E-39
+    eta_flat  (at binding entry)     = 3.69841E-87
+    4 C_3 eps_1^2                    = 1.7956E-78
+    [TF1(band)-D] CLAUSE-FAILS
+       shortfall = 8.686 decades of ENERGY, 4.343 decades of eps_1
+
+====================================================================================================
+TF1-G COUNTERFACTUAL -- C_D := (TF1-C window boundary)/2, nothing else changed
+====================================================================================================
+  C_D                       = 227.642
+  theta_0^SUP = 1/(3.31e7 C_D^2) = 5.83000E-13
+  theta_0^SUP / C'          = 1.10000E-14   <- candidate entry B
+  tau_R                     = 2.75E-15   <- candidate entry A
+  => the min is attained at   tau_R (A)
+
+  eta_flat at entry A (tau_flat = tau_R)            = 4.20662E-36
+  eta_flat at entry B (tau_flat = theta_0^SUP/C')   = 6.73060E-35
+  exact ratio A/B = 159999999999999999999987267352782694493639062014827376813058835190383521346387491250586606699782783449 / 2560000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  log10(ratio)    = -1.204 decades
+  [TF1(cf)-B] CONFLICT-ABSENT   (threshold: >= 10 decades)
+
+  DESC-eps (iii) hypothesis: E < eta_flat, with consumers supplying E <= 4 C_3 eps_1^2
+    t_pr      = C' tau_flat          = 1.4575E-13
+    eta_flat  (at binding entry)     = 4.20662E-36
+    4 C_3 eps_1^2                    = 1.7956E-78
+    [TF1(cf)-D] CLAUSE-HOLDS
+       margin    = 42.370 decades of ENERGY, 21.185 decades of eps_1
+
+====================================================================================================
+TF1-G -- POWER CHECK
+====================================================================================================
+  main run:        B = CONFLICT-REAL    D = CLAUSE-FAILS
+  counterfactual:  B = CONFLICT-ABSENT  D = CLAUSE-HOLDS
+  [TF1-G] PASS -- the check can return BOTH verdicts; it has the power to fail
+
+====================================================================================================
+TF1-E -- the repair bar, and a check on EPSSTAR Sec.6.6's own arithmetic
+====================================================================================================
+  eta_flat = c_b t_pr^2 / C'^4, with 1/k = 5.04991E+9   (EPSSTAR writes t_pr^2/5.05e9)
+  (a) t_pr required  = 9.5224E-35 * sqrt(C_3)
+      EPSSTAR states = 3.01E-35 * sqrt(C_3)
+      ratio mine/EPSSTAR = 3.16359
+  (b) C_D ceiling    = 1.7812E+13 / C_3^(1/4)
+      EPSSTAR states = 3.17000E+13 / C_3^(1/4)
+      ratio mine/EPSSTAR = 0.561893
+  (c) C_T ceiling    = 1.97911E+10 (at C_D=0.9e3 C_T) to 3.5624E+10 (at 0.5e3 C_T)
+      EPSSTAR states = 3.5e10 to 6.3e10
+      ratio mine/EPSSTAR (worst end) = 0.56546
+  [TF1-E] SOURCE-DISAGREES   (tolerance: factor 1.2)
+     direction: my required t_pr is LARGER and my C_T ceiling LOWER than EPSSTAR's,
+     i.e. the correction makes the reported failure WORSE, not better.
+  route floor C_T >= 4.40000E+12, so the ceiling is below the floor by 2.347 decades
+  strengthening over the linear clause eps_1 < t_pr: factor 142125 = 5.153 decades
+
+====================================================================================================
+TF1-F -- the ALTERNATIVE route's number: AE-red's own clause 4 C_3 eps_1^2 <= eta_AE
+====================================================================================================
+  eta_AE (C_S <= 1e2) = 1.776E-15  vs  4 C_3 eps_1^2 = 1.7956E-78   -> HOLDS by 63.00 decades of energy (31.50 of eps_1)
+  eta_AE (C_S = 1e4 ) = 8.9E-16  vs  4 C_3 eps_1^2 = 1.7956E-78   -> HOLDS by 62.70 decades of energy (31.35 of eps_1)
+  [TF1-F] AE-CLAUSE-HOLDS  at both ends of REVIEW_HIST_S4's C_S range
+  NOTE: this is the alternative route's NUMBER only. Its STATUS is CONDITIONAL <= (MS-Sob) [OPEN],
+        HIST.md l.1323 / l.1784 / REVIEW_HIST_S4 l.50, and no script here bears on that.
+
+====================================================================================================
+[POST-HOC, TF1-P1] -- the eps_1 lever, not pre-registered, labelled post-hoc
+====================================================================================================
+  To satisfy eta_flat >= 4 C_3 eps_1^2 at the CURRENT t_pr, eps_1 must fall to
+    eps_1 <= t_pr/142125 = 9.38496E-45   (vs RLARGE's current ceiling 6.7E-40)
+    i.e. a drop of 4.854 decades in eps_1
+  Price, at a_bad = c_pr eps_1^2 (RLARGE l.88-93): a_bad falls by 9.707 decades;
+  eps_1 < t_pr is PRESERVED (ratio t_pr/eps_1 = 142125).
+
+====================================================================================================
+TF1-H -- precision
+====================================================================================================
+  log10 of the 52-decade ratio at prec 40: 52.077008938
+  log10 of the 52-decade ratio at prec 80: 52.077008938
+  every decade comparison above was made on exact Fractions, not on these displays
+  [TF1-H] PASS
+
+====================================================================================================
+VERDICT SUMMARY (against checks/tf1_criteria.md Sec.2-3)
+====================================================================================================
+  TF1-A  DISTINCT-AND-BOTH-BIND   (reading; TAUFLAT.md Sec.1)
+  TF1-B  CONFLICT-REAL
+  TF1-C  current C_D OUTSIDE the joint-consistency window (boundary 455.283)
+  TF1-D  CLAUSE-FAILS
+  TF1-E  SOURCE-DISAGREES
+  TF1-F  AE-CLAUSE-HOLDS
+  TF1-G  PASS (has power to fail)
+  TF1-H  PASS
+====================================================================================================

@@ -1,0 +1,44 @@
+START 2026-10-29T17:52:25Z criteria_sha256 3e00f5ec5bbc32522636004aa72628c45884fe3762573c047e1105593ea82173 script_sha256 e951fb782c09534aac8a7c178b5963b731274fff83de6c34a5b7afe52415e2b6
+GROUP Z2 order 2 classes [[0], [1]]
+GROUP Z3 order 3 classes [[0], [1], [2]]
+GROUP Q8 order 8 classes [[0], [1], [2, 3], [4, 5], [6, 7]]
+SPLIT WORD Q8 exact assignments 262144
+Z2_4x2_link dimension= 4 Z= 3167764000 PSD= True Hermitian= True
+Z2_4x2x2_sheets_link dimension= 4 Z= 3167764000 PSD= True Hermitian= True
+Z2_zero_link dimension= 4 Z= 4096 PSD= True Hermitian= True
+direct_Z2_4x2_link dimension= 4 Z= 50684224000 PSD= True Hermitian= True
+Z2_4x2_site dimension= 8 Z= 900820000 PSD= True Hermitian= True
+Z2_4x2x2_sheets_site dimension= 8 Z= 900820000 PSD= True Hermitian= True
+Z2_zero_site dimension= 8 Z= 4096 PSD= True Hermitian= True
+direct_Z2_4x2_site dimension= 8 Z= 14413120000 PSD= True Hermitian= True
+Z3_4x2_link dimension= 9 Z= 156584667604338 PSD= True Hermitian= True
+Z3_4x2x2_sheets_link dimension= 9 Z= 156584667604338 PSD= True Hermitian= True
+Z3_zero_link dimension= 9 Z= 531441 PSD= True Hermitian= True
+Z3_4x2_site dimension= 27 Z= 21496839376482 PSD= True Hermitian= True
+Z3_4x2x2_sheets_site dimension= 27 Z= 21496839376482 PSD= True Hermitian= True
+Z3_zero_site dimension= 27 Z= 531441 PSD= True Hermitian= True
+Q8_4x2_link dimension= 25 Z= 2331534113935360 PSD= True Hermitian= True
+Q8_4x2x2_sheets_link dimension= 25 Z= 2331534113935360 PSD= True Hermitian= True
+Q8_zero_link dimension= 25 Z= 68719476736 PSD= True Hermitian= True
+Q8_4x2_site dimension= 125 Z= 966715411615744 PSD= True Hermitian= True
+Q8_4x2x2_sheets_site dimension= 125 Z= 966715411615744 PSD= True Hermitian= True
+Q8_zero_site dimension= 125 Z= 68719476736 PSD= True Hermitian= True
+full_Z2_4x2x2_link dimension= 32 Z= 1741825881515052235730931013793886290974207854604277222009133625000000 PSD= True Hermitian= True
+full_Z2_4x2x2_site dimension= 32 Z= 27260943000817343278533880289656660742603393883931525965625000000 PSD= True Hermitian= True
+SPHERE GEOMETRY {"R_over_a": "11/10", "D_cubes": 1, "boundary_3cells": 8, "K_4cells": 10, "edges": 80, "plaquettes": 80, "reflections": [{"mu": 0, "crossing_plaquettes": 32, "crossing_prism_plaquettes": 8, "crossing_links": 16}, {"mu": 1, "crossing_plaquettes": 32, "crossing_prism_plaquettes": 8, "crossing_links": 16}, {"mu": 2, "crossing_plaquettes": 32, "crossing_prism_plaquettes": 8, "crossing_links": 16}, {"mu": 3, "crossing_plaquettes": 32, "crossing_prism_plaquettes": 8, "crossing_links": 16}]}
+SPHERE GEOMETRY {"R_over_a": "23/10", "D_cubes": 33, "boundary_3cells": 152, "K_4cells": 218, "edges": 1136, "plaquettes": 1440, "reflections": [{"mu": 0, "crossing_plaquettes": 296, "crossing_prism_plaquettes": 56, "crossing_links": 112}, {"mu": 1, "crossing_plaquettes": 296, "crossing_prism_plaquettes": 56, "crossing_links": 112}, {"mu": 2, "crossing_plaquettes": 296, "crossing_prism_plaquettes": 56, "crossing_links": 112}, {"mu": 3, "crossing_plaquettes": 296, "crossing_prism_plaquettes": 56, "crossing_links": 112}]}
+prism_Z2 dimension= 2 Z= 295148855157534490625 PSD= True Hermitian= True
+prism_Z3 dimension= 3 Z= 5070602420688027666079541755926 PSD= True Hermitian= True
+prism_Q8 dimension= 5 Z= 307726804185219586049 PSD= True Hermitian= True
+control_negative_beta dimension= 4 Z= 6145024 PSD= False Hermitian= True
+NEGATIVE CONTROL negative_beta: DETECTED negative eigenvalue
+control_asymmetric_coupling dimension= 4 Z= 21774880 PSD= False Hermitian= False
+control_asymmetric_coupling_hermitian_part dimension= 4 Z= 43549760 PSD= True Hermitian= True
+NEGATIVE CONTROL asymmetric_coupling: raw Hermitian= False Hermitian-part negative= False
+control_asymmetric_cell dimension= 4 Z= 40 PSD= False Hermitian= False
+control_asymmetric_cell_hermitian_part dimension= 4 Z= 80 PSD= False Hermitian= True
+NEGATIVE CONTROL asymmetric_cell: raw negative-eigenvalue criterion FAILED; H eigenvalue -3/10
+POSITIVE MATRICES: 25 NEGATIVE CONTROL CRITERION FAILURES: 2
+REPORTED CONTROL FAILURE: asymmetric_coupling: raw Gram non-Hermitian; requested negative eigenvalue not certified
+REPORTED CONTROL FAILURE: asymmetric_cell: raw eigenvalues 1,0,0,0; Hermitian part has -3/10
+RESOURCE elapsed_seconds= 1.3683314999798313 peak_rss_bytes= 25903104

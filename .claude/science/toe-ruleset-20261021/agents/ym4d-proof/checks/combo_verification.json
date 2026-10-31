@@ -1,0 +1,172 @@
+{
+  "utc": "2026-10-30T03:08:45.794979+00:00",
+  "passed": true,
+  "reviewed_COMBO_sha256": "71d004611cbc4ae9cad182ef1ae9ea2982a0a28d74672899c90c8885afb48aed",
+  "final_COMBO_sha256": "194a32f0547189aa195e2047090026603d5119208b3cac2a0f0c9fb123fdf276",
+  "scientific_prefix_sha256": "9cf5f20586264925f1b95f83ed88fcbab5fb46d74e561b27afda44a2f0265351",
+  "scientific_text_unchanged_after_review": true,
+  "exact_reviewed_full_text_hash_reconstructed_by_provenance_replacement": true,
+  "review_sha256": "6c41d2b9c763cbd64747a73daf76a17981b9204b3e3a211cf6c9bda16c97ca2b",
+  "review_verdict": "LAND",
+  "review_type": "fresh-context same-family Codex; no binding fixes",
+  "preexisting_file_count": 3505,
+  "preexisting_hash_size_mtime_all_unchanged": true,
+  "unauthorized_new_files": [],
+  "authorized_new_files": [
+    "COMBO.md",
+    "COMBO_LOG.md",
+    "checks/combo_criteria.md",
+    "checks/combo_exact.py",
+    "checks/combo_numeric.lock",
+    "checks/combo_results.json",
+    "checks/combo_review.md",
+    "checks/combo_run.json",
+    "checks/combo_run.py",
+    "checks/combo_sources.json",
+    "checks/combo_stderr.txt",
+    "checks/combo_verification.json"
+  ],
+  "local_links_checked": [
+    {
+      "source": "COMBO.md",
+      "link": "PROCESS_LIGHT.md"
+    },
+    {
+      "source": "COMBO.md",
+      "link": "WITNESS.md"
+    },
+    {
+      "source": "COMBO.md",
+      "link": "REVIEW_WITNESS.md"
+    },
+    {
+      "source": "COMBO.md",
+      "link": "CUMUL.md"
+    },
+    {
+      "source": "COMBO.md",
+      "link": "REVIEW_CUMUL.md"
+    },
+    {
+      "source": "COMBO.md",
+      "link": "NONFREE55.md"
+    },
+    {
+      "source": "COMBO.md",
+      "link": "CODEX_REVIEW_NONFREE.md"
+    },
+    {
+      "source": "COMBO.md",
+      "link": "REC_CONT.md"
+    },
+    {
+      "source": "COMBO.md",
+      "link": "REC_LIB.md"
+    },
+    {
+      "source": "COMBO.md",
+      "link": "ASSEMBLY55.md"
+    },
+    {
+      "source": "COMBO.md",
+      "link": "PANEL_P1.md"
+    },
+    {
+      "source": "COMBO.md",
+      "link": "LGF.md"
+    },
+    {
+      "source": "COMBO.md",
+      "link": "checks/combo_criteria.md"
+    },
+    {
+      "source": "COMBO.md",
+      "link": "checks/combo_results.json"
+    },
+    {
+      "source": "COMBO.md",
+      "link": "checks/combo_run.json"
+    },
+    {
+      "source": "COMBO.md",
+      "link": "checks/combo_review.md"
+    },
+    {
+      "source": "COMBO.md",
+      "link": "checks/combo_sources.json"
+    },
+    {
+      "source": "COMBO.md",
+      "link": "checks/combo_verification.json"
+    },
+    {
+      "source": "COMBO.md",
+      "link": "COMBO_LOG.md"
+    }
+  ],
+  "broken_local_links": [],
+  "checks_passed": 18,
+  "checks_total": 18,
+  "detected_mutations": 4,
+  "criteria_precedes_implementation_mtime": true,
+  "criteria_and_script_result_bindings_valid": true,
+  "checks_scope": "Exact finite algebra only. No actual YM estimate, AF asymptotic computation, or audit grade.",
+  "artifacts": {
+    "COMBO.md": {
+      "sha256": "194a32f0547189aa195e2047090026603d5119208b3cac2a0f0c9fb123fdf276",
+      "size": 36790
+    },
+    "COMBO_LOG.md": {
+      "sha256": "ce3cd1719d7b1ac1e57f072a723463802a33c7fee4bf2305deb74ea77361dd8a",
+      "size": 6751
+    },
+    "checks/combo_criteria.md": {
+      "sha256": "f36144079bdf0b84e722898ec744cc936e62d2716166997f5bd306d4220ed88e",
+      "size": 2581
+    },
+    "checks/combo_exact.py": {
+      "sha256": "a25c37855b55a10a7af78a6a17430041ffca91456f22af7f43b22afb51ed5db4",
+      "size": 6965
+    },
+    "checks/combo_numeric.lock": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "checks/combo_results.json": {
+      "sha256": "4bedd4b907a70119627325f2e19e8be14e1664ccddc1a7236cf90727d92c8a2b",
+      "size": 10472
+    },
+    "checks/combo_review.md": {
+      "sha256": "6c41d2b9c763cbd64747a73daf76a17981b9204b3e3a211cf6c9bda16c97ca2b",
+      "size": 20295
+    },
+    "checks/combo_run.json": {
+      "sha256": "1dbb96fa6caae695428bd0c7c795a7657d153ca0baed69619f774bf96036a3b1",
+      "size": 968
+    },
+    "checks/combo_run.py": {
+      "sha256": "71d13747c031aa0fa0aa384bee0f0aff652a4a6f7a89ac6676bcf5b662662025",
+      "size": 4488
+    },
+    "checks/combo_sources.json": {
+      "sha256": "85b01044c95ceef3bbdc1945e7b9360c6d6e5354c54de05653676858e586b99a",
+      "size": 675122
+    },
+    "checks/combo_stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    }
+  },
+  "verification_resources_start": {
+    "nice": 20,
+    "load1": 1.99267578125,
+    "free_percent": 49,
+    "peak_rss_bytes": 20234240
+  },
+  "verification_resources_end": {
+    "nice": 20,
+    "load1": 1.99267578125,
+    "free_percent": 49,
+    "peak_rss_bytes": 37994496
+  }
+}

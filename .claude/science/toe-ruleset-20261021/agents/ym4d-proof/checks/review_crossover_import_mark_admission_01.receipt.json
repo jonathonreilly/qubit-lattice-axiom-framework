@@ -1,0 +1,25 @@
+{
+  "command": [
+    "/usr/local/bin/python3",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mark_admission.py"
+  ],
+  "cwd": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "started_utc": "2026-10-29T18:32:13.471458+00:00",
+  "seconds": 0.18030675000045449,
+  "exit_code": 0,
+  "root_revised_runner_read": false,
+  "files": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mark_admission.py",
+      "sha256": "1fad264243a0c02383296d10bb0929fe7827da05dd3a64580ee96eed1ecfad75"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mark_admission_01.stdout.json",
+      "sha256": "293165f11b61a1188ef1988209256c39cf8681efe5842901268f6d64584157d2"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_crossover_import_mark_admission_01.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

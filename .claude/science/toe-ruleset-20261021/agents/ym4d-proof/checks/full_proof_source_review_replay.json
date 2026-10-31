@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-29T13:38:38.376395+00:00",
+  "receipt_sha256": "4abd446cf39d5454d9dca04daeaf4f60b8d8b83f80610314410e35d36a9a2374",
+  "reviewed_source_sha256": "2eee991e4e4546aa3ed10ad0ffe40d840c5347a002d623aac47b2fc515fd7769",
+  "verified_unique_artifacts_and_dependencies": 43,
+  "runs": [
+    {
+      "script": "review_source_return_02.py",
+      "exit_code": 0,
+      "stdout_exact": true,
+      "stderr_bytes": 0,
+      "stdout_sha256": "27830a8d2dfbe9b78ef6ba3722cdb44e97ae124325d26cb88ec9069711c657fa"
+    },
+    {
+      "script": "review_source_return_03.py",
+      "exit_code": 0,
+      "stdout_exact": true,
+      "stderr_bytes": 0,
+      "stdout_sha256": "61b723fec89fd2899a48a7c9d953c8ea9b90a20b1a50226f057d7ecda7c42b02"
+    }
+  ],
+  "limits": "Coordinator reproduction only. Frozen failed first attempt and three surviving author mutations remain in the reviewer evidence; no full-theory certification."
+}

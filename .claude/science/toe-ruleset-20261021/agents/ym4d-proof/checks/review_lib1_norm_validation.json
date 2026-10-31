@@ -1,0 +1,32 @@
+{
+  "python_compile": true,
+  "whitespace": true,
+  "relative_links": [
+    "PROCESS_LIGHT.md",
+    "checks/lib1_norm_control_fix_receipt.json",
+    "checks/lib1_check.py",
+    "LIB1.md",
+    "REVIEW_LIB1.md",
+    "checks/review_lib1_norm_criteria.md",
+    "checks/review_lib1_norm_check.py",
+    "checks/review_lib1_norm_result.json",
+    "checks/review_lib1_norm_bindings.json"
+  ],
+  "independent_numerical_exit": 0,
+  "independent_stderr_empty": true,
+  "all_18_repair_inputs_unchanged": true,
+  "all_44_prior_CB_review_artifacts_unchanged": true,
+  "all_78_resource_samples_valid": true,
+  "resource_summary": {
+    "max_rss_bytes": 24903680,
+    "min_memory_free_percent": 57,
+    "max_load_average": 2.82373046875,
+    "max_sampled_elapsed_seconds": 0.5164255420095287,
+    "min_nice": 10
+  },
+  "vocabulary_lint": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_lib1_norm_vocab_lint.txt",
+    "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+    "bytes": 81
+  }
+}

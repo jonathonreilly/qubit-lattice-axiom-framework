@@ -1,0 +1,11 @@
+ROUGH numerical execution status: NOT RUN
+Observed preflight command: /usr/bin/nice -n 10 /usr/bin/true
+Observed stderr: nice: setpriority: Operation not permitted
+Observed wrapper exit code: 0
+Interpretation: priority setting failed; exit zero is not a resource PASS.
+No mathematical numerical test or simulation followed this preflight.
+No lock, BLAS-backed numerical process, pool, or RLIMIT_AS call was launched.
+RSS/load/free-memory conditions were not measured because priority already
+failed; they are not reported as passing. Conditions remain as preregistered
+in rough_criteria.md. File reads, searches and SHA256 bookkeeping are not
+numerical evidence for any theorem.

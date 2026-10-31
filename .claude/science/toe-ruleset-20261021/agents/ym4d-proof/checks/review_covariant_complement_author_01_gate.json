@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-29T22:02:22.705826+00:00",
+  "memory_pressure_raw": "The system has 17179869184 (1048576 pages with a page size of 16384).\nSystem-wide memory free percentage: 57%\n",
+  "system_wide_free_percentage": 57.0,
+  "memory_metric": "Darwin memory_pressure -Q native system-wide free percentage, not vm_stat free pages alone",
+  "load1": 2.37158203125,
+  "lock": {
+    "expires_at": "2026-10-29T23:02:23.558884+00:00",
+    "holder_id": "01a1873f-103a-7f01-b924-4455238d8a86",
+    "owner": "ym4d-full-proof",
+    "pid": 32308,
+    "purpose": "Continue full PR 10114 proof with independent Astra reviews",
+    "started_at": "2026-10-29T21:02:23.558884+00:00"
+  },
+  "passes": true,
+  "nice": 15,
+  "threads": 1,
+  "rss_limit_mib": 300,
+  "cpu_limit_seconds": 90,
+  "wall_limit_seconds": 90,
+  "program": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_complement_author_replay.py",
+  "program_sha256": "3e45372b3c72803270f3c988ba9c644fc126bee84019607242da27057fd37e66",
+  "criteria_sha256": "008f6a645daca1ba6d1e68675aa6061e935c28ee1f16cb37ab398443a7d3b37a"
+}

@@ -1,0 +1,53 @@
+{
+  "frozen_utc": "2026-10-29T23:53:14.095194+00:00",
+  "workspace": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "status": "Author packet; pending NEW independent hostile review. No LAND/audit/whole-PR verdict.",
+  "source": {
+    "path": "INTERACTING_SELECTED_CORE_ASTRA.md",
+    "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+    "bytes": 41908,
+    "lines": 790
+  },
+  "artifacts": [
+    {
+      "path": "INTERACTING_SELECTED_CORE_ASTRA.md",
+      "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "bytes": 41908,
+      "lines": 790
+    },
+    {
+      "path": "checks/interacting_selected_core_read_manifest.json",
+      "sha256": "393cc71c79cd0fa90788462b1735dbcd0be3944d37e2b9309ef80745ed7b1e1e",
+      "bytes": 20296,
+      "lines": 304
+    },
+    {
+      "path": "checks/interacting_selected_core_metadata_validation.json",
+      "sha256": "96e153ffe54642d34ded2e6084ef7e5149bf5fb94877782edb1289905dbcf0b8",
+      "bytes": 1838,
+      "lines": 70
+    }
+  ],
+  "receipt_path": "checks/interacting_selected_core_receipt.json",
+  "receipt_self_hash": "Excluded to avoid a self-reference cycle; coordinator receives independently computed SHA256.",
+  "proved_author_claims": [
+    "One-step source-free actual selected Haar integral has a connected O(1/u) unscaled action remainder on a proved fixed complex original-coarse-field tube around arbitrary sufficiently small-curvature real holonomies.",
+    "Auxiliary parity is coefficientwise in original readers; the first coefficient uses p-uniform quartic and cubic-pair moments plus overlap incidence, and the even tail requires sigma p^3<=r_z/2 and sigma^2 p^12<=1.",
+    "Separate product-HS-ball theorem retains exact z_(p,D)^n and radial Wick coefficients, proves actual critical/whitening-map and sector root-gauge covariance and the finite-volume Ward identity.",
+    "Exact tree/one-loop/finite-u dictionary retains Haar Jacobian cancellation, kernel vacua, full colour/harmonic precision, cutoff probabilities and transported root-tree Gram."
+  ],
+  "boundaries": [
+    "No estimate of the normalized hard-cut complement G minus Omega or G^c.",
+    "No nonzero-source or hard-history integration theorem.",
+    "No spatial/hypercubic symmetry of the chosen axial-tree sector inferred from root-gauge covariance.",
+    "No volume-first polarization/marginal extraction from Ward alone.",
+    "No all-depth nonlinear RG or every-increment finite-u bracket.",
+    "No continuum existence, nonfree reconstruction or positive physical continuum mass gap.",
+    "No whole-PR PASS, audit verdict or negative-route verdict."
+  ],
+  "scientific_numerical_runs": 0,
+  "failures": "All read/parser failures and analytic shortcuts are preserved in the source/read manifest; no earlier checker output is promoted to IC evidence.",
+  "read_manifest_sha256": "393cc71c79cd0fa90788462b1735dbcd0be3944d37e2b9309ef80745ed7b1e1e",
+  "metadata_validation_sha256": "96e153ffe54642d34ded2e6084ef7e5149bf5fb94877782edb1289905dbcf0b8",
+  "freeze_policy": "All four packet files immutable after this receipt; any fresh review correction requires an explicit affected correction receipt, coordinated with root."
+}

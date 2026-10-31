@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "role": "Author receipt only; no independent verdict, audit or mathematical certification.",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RETAINED_RETURN_CONSTRUCTION_ASTRA.md",
+    "lines": 654,
+    "sha256": "920865b2ee1f528c1a3134858023b725fd5c69849d84af372d094bf00c22ce12"
+  },
+  "read_manifest": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/retained_return_construction_read_manifest.json",
+    "lines": 127,
+    "sha256": "48cf06baadc4795a42d9aee0d646dd63e4cdffd59feb222d01e74e421d5680e3"
+  },
+  "freeze": "Source654/SHA920865b2ee1f528c1a3134858023b725fd5c69849d84af372d094bf00c22ce12 was sent to root before these two packet files. Its bytes remained unchanged during packaging.",
+  "author_analytical_checks": [
+    "RT2-RT3: exact whole-block physical-factor and original-cut split; positive compact fibre; zero outside fibres use the defined inside extension and are never divided by; ungauged conditional not identified with free-link conditional.",
+    "RT4-RT7/RT15: alpha/2 compact-growth scale recomputed, explicit degree13 C6 cutoff, exact shell telescoping/full partition, derivative support inside the alpha-payable event; all earlier shell factors are internal and fixed after the actual Haar pullback.",
+    "RT8-RT13: original centered kernel identity retains its full normalizer; sourceful energy is compared separately with the source-FREE reset/denominator; full Haar cap dimension and polynomial normalizers paid; no derivative of the possibly nonsmooth compact maximizer.",
+    "RT14-RT22: true retained quotient-fine/coarse total6 and original-source4 positions; ordered positive Bell scores include inverse density normalization; all15 nonempty labelled subsets retained; rough integrated selectors held fixed, retained nonsmooth selectors excluded; inherited radius conversion explicit.",
+    "RT23-RT26: bounded/finite-incidence input allowances, full local membership/readers, empty-support costs explicit, c u q/16 jet bill and c u q/16 input bill spent once; remaining 3c u q/8 carries Haar/value price and native mu+2 shape sum.",
+    "RT27-RT30: full outside history/source factors retained, fixed separated-region conditional factorization exact, source-prefactor product D_R^J/D_R^0 not made rare, same-function ten-position conditional log converges; global correlated tower remains unproved."
+  ],
+  "checks_are_author_analysis_not_independent_evidence": true,
+  "metadata_checks": {
+    "source_utf8": true,
+    "source_lines": 654,
+    "unique_equation_tags": 30,
+    "no_trailing_whitespace": true,
+    "relative_dependency_links_resolve": 10,
+    "all_manifest_input_hashes_rechecked": true,
+    "json_parses": true,
+    "no_scientific_numerics": true
+  },
+  "protected_predecessors": {
+    "baseline": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/quadratic_coarse_return_receipt.json",
+      "lines": 76,
+      "sha256": "0624ea553f2d33e62467047ba7eb5f739180f1cb58f97012cb35b70319ff78d3"
+    },
+    "matching_old_source_hashes": 20,
+    "additional_exact_identities_unchanged": {
+      "MEAN_READER_RETURN_ASTRA.md": "30858a4bb6f045ba558dcdb527c46878ee6bb60fef83b3aef4ba39d79a8d527a",
+      "checks/mean_reader_return_read_manifest.json": "e36cfc1bbaa78a8f597b6378a22fc2ca0ed1bf9ec37a474815e4a36edaf4c513",
+      "checks/mean_reader_return_receipt.json": "960f938e2ec7b56def48906510650d801406fad2e9bfb4153800e8a48517e0d8",
+      "STRONG_LOCAL_GAUSSIAN_CORE_ASTRA.md": "62e7c351679be0834cb117cb82df1b04cf2cf0d21b8e3f0f84af5662b2c2f63c",
+      "checks/strong_local_gaussian_core_read_manifest.json": "dbd0e2c841994adee7525a858a264ccc7f848d1fde90d14879370af7317a4c37",
+      "checks/strong_local_gaussian_core_receipt.json": "94ea798d05b4f50e29ae05ddeea2d206404dc5deb5369a8647f38287d2737af1",
+      "checks/strong_local_gaussian_core_author_amendment.json": "c7198b84f3705037bbe3ee066011ccb99d8b8af7c9868a230495417ee620a450"
+    },
+    "scope": "Listed hashes only; concurrent root/reviewer files were not edited or declared frozen by this author."
+  },
+  "concrete_scope": "An actual compact conditional mixed integration map, with source-free and same-source references distinguished, native-rate charged coefficients, and a fixed-union conditional logarithm including its full source normalization.",
+  "remaining": [
+    "RT27 outside-law derivatives and history masses on one matched global reference; exact global reader/component factorization.",
+    "Retained exterior hard absence/G/Omega/history selectors, arbitrary regulated multiplicities and inherited inputs outside the proved support/size class.",
+    "Repeated effective trajectories, continuum existence/non-freeness and physical continuum mass gap."
+  ],
+  "review": "A different fresh source-first review is requested through root; author assigns no LAND/HOLD verdict.",
+  "execution": "Only RETAINED_RETURN_CONSTRUCTION_ASTRA.md and its two checks/retained_return_construction_* files were written. No predecessor, Git/front/PR/audit edit, scientific runner or subworker."
+}

@@ -1,0 +1,7 @@
+start 2026-10-28T00:33:41Z
+20:33  up 5 days, 14:22, 2 users, load averages: 2.67 3.38 3.65
+System-wide memory free percentage: 35%
+end 2026-10-28T00:38:07Z status 1
+  s = (x.conj() * x).real
+      265.71 real       263.16 user         1.18 sys
+            45662208  maximum resident set size

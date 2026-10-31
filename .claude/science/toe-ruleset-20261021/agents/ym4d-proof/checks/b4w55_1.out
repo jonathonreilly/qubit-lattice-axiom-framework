@@ -1,0 +1,17 @@
+=== d = 2, L = 3, TC = 4 ===
+P1 (CEN1 exact, centred): nonzero entries 0 of 128 -> PASS
+P5 row max 43/9 (<= 7), column max 1 (<= 13/3), max |delta|_1 3 (<= 7/2) -> PASS
+P2 (Taylor bound, 3 seeds): PASS (largest |comm|/bound = 0.0107, informational)
+P4 (corner convention leaves (b.((L-1)/2)1) L xbar_mu, nonzero): PASS
+P3 (exact commutator representation, 3 seeds): PASS
+K1 (no centring) fires: True; K2 (corner positions in P1) fires: True; K3 (drop j_S) fires: True; K4 (one weight +1/997) fires: True
+d = 2: PASS
+=== d = 3, L = 3, TC = 4 ===
+P1 (CEN1 exact, centred): nonzero entries 0 of 1728 -> PASS
+P5 row max 499/81 (<= 9), column max 1 (<= 55/9), max |delta|_1 4 (<= 9/2) -> PASS
+P2 (Taylor bound, 3 seeds): PASS (largest |comm|/bound = 0.0045, informational)
+P4 (corner convention leaves (b.((L-1)/2)1) L xbar_mu, nonzero): PASS
+P3 (exact commutator representation, 3 seeds): PASS
+K1 (no centring) fires: True; K2 (corner positions in P1) fires: True; K3 (drop j_S) fires: True; K4 (one weight +1/997) fires: True
+d = 3: PASS
+OVERALL: PASS

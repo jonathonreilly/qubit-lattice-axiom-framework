@@ -1,0 +1,95 @@
+{
+  "frozen_utc": "2026-10-30T18:25:00.694621+00:00",
+  "head": "fbe0652b18191192c849673507ddc9d41361aaec",
+  "procedure_pin": "53f2c0af7eb59438389b4c2fe75952932d4e95fe",
+  "requested_model": "gpt-6-astra",
+  "requested_effort": "max",
+  "backend_attestation": null,
+  "preflight": "go; 31 GB free, 57% free memory, load 1.9; nice and origin reachable; ulimit unavailable",
+  "reads": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GLOBAL_RETURN_HISTORY_ASTRA.md",
+      "sha256": "6de410b9c1abe0c8bd0e2d132abac289daf4f330d9a5654cf1ab3dc7de426fee",
+      "read_lines_inclusive": [
+        [
+          1,
+          67
+        ],
+        [
+          162,
+          704
+        ],
+        [
+          770,
+          1015
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD.md",
+      "sha256": "a60232a648e9832d0223cc0fa06ef84d8dbfe54fa91f875a8c96c3f89140aba5",
+      "read_lines_inclusive": [
+        [
+          249,
+          370
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "sha256": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+      "read_lines_inclusive": [
+        [
+          104,
+          194
+        ],
+        [
+          264,
+          332
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/JMBRA.md",
+      "sha256": "6dd077a3383ea69b6ab04b629ee8d13be5b60958e542b1ae778eb48f90fc7c5a",
+      "read_lines_inclusive": [
+        [
+          24,
+          148
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REALRGA.md",
+      "sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+      "read_lines_inclusive": [
+        [
+          1,
+          130
+        ]
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WEIGHTED_RETURN_JETS_ASTRA.md",
+      "sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "read_lines_inclusive": [
+        [
+          358,
+          430
+        ],
+        [
+          485,
+          541
+        ]
+      ]
+    }
+  ],
+  "report": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/gates/inherited-markers-fbe0652b18.md",
+    "sha256": "ec996dcdc37522285d3365d4f468d135dc68c0b91ca3aa22a318bcbaa2d77600"
+  },
+  "author_routing_context_read": false,
+  "external_primary_reads": [],
+  "scientific_jobs": [],
+  "scope": "section 13 finite identities, readers, source-only derivative distinction and proposed coefficient counting; not previous forest certification"
+}

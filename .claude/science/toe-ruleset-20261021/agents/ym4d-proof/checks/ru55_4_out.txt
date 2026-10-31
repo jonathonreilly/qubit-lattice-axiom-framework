@@ -1,0 +1,6 @@
+F1 upper end (max(-b-rho) <= R - ell/2 on the grid): PASS
+F2 lower end at gamma^-2 = x_lo + R + (3/2)ell: min Phi == x_lo and left end == x_lo: PASS
+F2-C (gamma^-2 one unit smaller): min Phi < x_lo somewhere: True -> FAILS (as designed)
+F4 steep family (slope 2, eps=3/1000): y_min(a-1e-6) = -1001/1000000, y_min(a+1e-6) = 3001/1000000; jump 2001/500000 (>= eps: True); |rho| <= 3001/1000000 (~eps)
+F4-K contraction family (slope 1/2): moves by 1/500000 <= 2|ds| = 1/250000: True
+VERDICT: all gates PASS, control fires

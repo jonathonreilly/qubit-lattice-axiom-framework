@@ -1,0 +1,161 @@
+{
+  "created_utc": "2026-10-29T19:08:18.618107+00:00",
+  "scope": "Owned source-unit checks only; no combined pipeline/landing review or audit. Preserved failed diagnostic stdout is intentionally empty and excluded from JSON parsing. Original-source copy is immutable evidence, not a relocated active source for link traversal.",
+  "vocabulary": {
+    "argv": [
+      "/usr/local/bin/python3",
+      "scripts/vocab_lint.py",
+      "--fix",
+      "--report-path",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_vocab.json",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_EUCLIDEAN_ROTATION_IMPORT_ASTRA.md",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_additional_controls.py",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_independent.py",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_matrix_mutations.py",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_matrix_mutations_attempt02.py"
+    ],
+    "returncode": 0,
+    "stdout": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)\nvocab_lint: wrote report to .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_vocab.json\n",
+    "stderr": "",
+    "seconds": 0.08810887497384101,
+    "no_bytes_rewritten": true
+  },
+  "python_ast_compile": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_additional_controls.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_independent.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_matrix_mutations.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_matrix_mutations_attempt02.py"
+  ],
+  "parsed_json": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_additional_controls.receipt.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_additional_controls.stdout.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_attempt01.receipt.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_attempt01.stdout.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_author_reproduction.receipt.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_author_reproduction.stdout.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_coverage.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_initial_inventory.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_matrix_mutations.receipt.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_matrix_mutations_attempt02.receipt.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_matrix_mutations_attempt02.stdout.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_euclidean_rotation_vocab.json"
+  ],
+  "report_relative_links_resolve": [
+    "EUCLIDEAN_ROTATION_IMPORT_ASTRA.md",
+    "checks/euclidean_rotation_import_freeze.json",
+    "checks/review_euclidean_rotation_initial_inventory.json",
+    "checks/review_euclidean_rotation_original_source.md",
+    "checks/review_euclidean_rotation_criteria.md",
+    "checks/full_proof_rotation_hypothesis_fix.json",
+    "MASS_GAP_TARGET.md",
+    "ROTDEF.md",
+    "PROOF.md",
+    "HRP.md",
+    "REVIEW_HRP_R2.md",
+    "../../../../../docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "../../../../../docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "OSLEAF55.md",
+    "SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+    "checks/review_euclidean_rotation_independent.py",
+    "checks/review_euclidean_rotation_attempt01.receipt.json",
+    "checks/review_euclidean_rotation_attempt01.stdout.json",
+    "checks/review_euclidean_rotation_matrix_mutations_attempt02.py",
+    "checks/review_euclidean_rotation_matrix_mutations.py",
+    "checks/review_euclidean_rotation_matrix_mutations.stderr.txt",
+    "checks/review_euclidean_rotation_matrix_mutations.receipt.json",
+    "checks/review_euclidean_rotation_author_reproduction.stdout.json",
+    "checks/review_euclidean_rotation_matrix_mutations_attempt02.stdout.json",
+    "checks/review_euclidean_rotation_additional_controls.stdout.json"
+  ],
+  "trailing_whitespace": false,
+  "original_packet_after_fix": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/EUCLIDEAN_ROTATION_IMPORT_ASTRA.md",
+      "sha256": "513e44546c5147caa44479c616937994f46aab09764a9808a87f3edddb05e294",
+      "unchanged_from_original_freeze": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt01.py",
+      "sha256": "e6bc4936aab9b85cb7b1d33e24457d9a626c8dca8a8adc32e3c5ec8a81fe5de9",
+      "unchanged_from_original_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt01.receipt.json",
+      "sha256": "8b0b3f2423fb57f5ca33cd97b8fcfa199b36240839e37ca563781a2030854ed5",
+      "unchanged_from_original_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt01.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged_from_original_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt01.stdout.json",
+      "sha256": "9dba726dcb6234397f95bb267dc88a0c84adf39daeb3b7dfc83caa87509479c2",
+      "unchanged_from_original_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt02.py",
+      "sha256": "f5a9d71954db53d8e68de86c8b5ee8ae39df0bd3af6557b798f9b4ad7d148cb9",
+      "unchanged_from_original_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt02.receipt.json",
+      "sha256": "af81b3a9948b8287c30ffc77684f48d9f4bd036dfbd0ccdb2ed928e26a7d5c4d",
+      "unchanged_from_original_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt02.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged_from_original_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt02.stdout.json",
+      "sha256": "fb8396b5a079dd8bf23b50cb12005654f138103871144de3dcafff3735201dab",
+      "unchanged_from_original_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt03.receipt.json",
+      "sha256": "da7b039e988229216bb5ee84f7559dbd1ee574d5f6a3ffd6ad0f10323c15b9b0",
+      "unchanged_from_original_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt03.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged_from_original_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_attempt03.stdout.json",
+      "sha256": "80d04781f93107f134d2b8625e86cc9567431132240a5a5c344865a6d5bfa6ad",
+      "unchanged_from_original_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_criteria.md",
+      "sha256": "59f486df376c53d9c48e948a304fe5ad215a9390631092b9ad70377e750680b5",
+      "unchanged_from_original_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_exact.py",
+      "sha256": "7af6babaaaa29e89c0562896f30efa8da45e09a1e0c3a53ba1d9f2567b193cb0",
+      "unchanged_from_original_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_sources.json",
+      "sha256": "f3fc54c975b8609c60025b344b30155d8497733676efaa8c4ac4f8fda0ebbb1d",
+      "unchanged_from_original_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_validation.json",
+      "sha256": "88d6ff9e5af45912f66d1305d8bd27fedc8e672b593ad20c0eb6c20bbeb615f1",
+      "unchanged_from_original_freeze": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/euclidean_rotation_import_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "unchanged_from_original_freeze": true
+    }
+  ],
+  "source_repair_only_change_in_17_artifact_packet": true,
+  "author_reproduction_stdout_matches": true,
+  "original_criteria_sha256": "314b21116c26b966545f76f5a287fdb2f480677330f24766bfff2ff65ad1be18"
+}

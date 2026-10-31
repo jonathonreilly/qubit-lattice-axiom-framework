@@ -1,0 +1,10 @@
+PASS A plaquette c0=1 | |Pt(0)|=0.0e+00 transv=1.8e-15 beta_c=1.000000 beta_(1.22)=1.000000 beta_diag=1.000000 expect=1.000000 R(2t)/R(t)=nan |R(t)|=9.3e-16
+PASS A plaquette c0=1 + rectangle c1=-1/12 | |Pt(0)|=6.6e-15 transv=1.5e-14 beta_c=0.333333 beta_(1.22)=0.333333 beta_diag=0.333333 expect=0.333333 R(2t)/R(t)=16.00 |R(t)|=7.2e-09
+PASS A random symmetrised loop #0 (length 10) | |Pt(0)|=6.1e-15 transv=1.7e-14 beta_c=0.666667 beta_(1.22)=0.666667 beta_diag=0.666667 R(2t)/R(t)=16.00 |R(t)|=7.9e-09
+PASS A random symmetrised loop #1 (length 10) | |Pt(0)|=2.1e-14 transv=4.9e-14 beta_c=0.333333 beta_(1.22)=0.333333 beta_diag=0.333333 R(2t)/R(t)=16.00 |R(t)|=1.7e-09
+PASS A random symmetrised loop #2 (length 8) | |Pt(0)|=5.5e-15 transv=1.1e-14 beta_c=0.166667 beta_(1.22)=0.166667 beta_diag=0.166667 R(2t)/R(t)=nan |R(t)|=5.5e-15
+PASS B d=3 diagonal pairing: Balaban (0.4) form == S4' (conjugation identity) | err 3.7e-16
+PASS B d=4 diagonal pairing: Balaban (0.4) form == S4' (conjugation identity) | err 6.4e-16
+PASS B d=3 independent vs diagonal pairing differ at 2nd order (ratio under amp x2 in [3,5]) | diff(amp=.04)=4.92e-04 diff(amp=.08)=1.95e-03 ratio=3.96
+runtime 0.5 s
+TOTAL: PASS=8 FAIL=0

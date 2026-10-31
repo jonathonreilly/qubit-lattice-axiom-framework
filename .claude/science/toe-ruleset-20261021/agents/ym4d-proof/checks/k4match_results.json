@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-30T03:34:52.482748+00:00",
+  "scope": "exact algebra only; actual YM coefficient sign and uniform matching OPEN",
+  "criteria_sha256": "73cfcc0f9ad43f0823ef911b012252121e30f2bd7891f9768acb42040045cdea",
+  "script_sha256": "9ce4af6f38dc1c9a97dca18056accff1729c5e3bc22a1c13fbf956c11cb17d79",
+  "nice": 20,
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "passed": false,
+  "failure": "ValueError('current limit exceeds maximum limit')",
+  "checks": [],
+  "guards": [],
+  "check_count": 0,
+  "elapsed_seconds": 0.00034308299655094743
+}

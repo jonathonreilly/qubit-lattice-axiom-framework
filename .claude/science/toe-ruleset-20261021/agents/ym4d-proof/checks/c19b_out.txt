@@ -1,0 +1,14 @@
+  abelian  Q: c=+0.5905556485  G: c=+9.5905555884  r-diff ratio=4.0468  even|0.2|=1.2e-17  gauge=5.6e-17
+  sd       Q: c=+1.9999999936  G: c=+11.0000001142  r-diff ratio=5.1508  even|0.2|=1.4e-17  gauge=1.4e-17
+  asd      Q: c=-1.9999999762  G: c=+7.0000000493  r-diff ratio=17.3167  even|0.2|=6.9e-18  gauge=2.1e-17
+  generic  Q: c=+0.2886848432  G: c=+9.2886847606  r-diff ratio=3.8754  even|0.2|=1.2e-17  gauge=3.3e-17  refl: Q(A)=1.1737e-02 Q(RA)=-1.1737e-02 |sum|=5.2e-18
+  generic  Q: c=+0.7537317101  G: c=+9.7537317181  r-diff ratio=2.6996  even|0.2|=4.2e-17  gauge=1.4e-17  refl: Q(A)=3.7434e-02 Q(RA)=-3.7434e-02 |sum|=0.0e+00
+Q5 c_sd = +1.9999999936, c_asd = -1.9999999762, |diff|/max = 2.000
+Q6 G = F1 + Q_eps: c values [ 9.590556 11.        7.        9.288685  9.753732], relative spread 0.429
+Q1: PASS
+Q2: PASS
+Q3: FAIL
+Q4: PASS
+Q5: PASS
+Q6: PASS
+c19b overall: FAIL (5/6)

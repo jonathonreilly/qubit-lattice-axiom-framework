@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "role": "author reading provenance, not independent review or audit",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+    "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+    "lines": 711
+  },
+  "new_direct_producer_reads": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "lines": 713,
+      "read_ranges": [
+        [
+          1,
+          713
+        ]
+      ],
+      "use": "Complete source read; actual common core/two covariance tails, exact normalized density library, per-coordinate jets, primitive/base compatibility, scalar attachment recursion, parity and four support margins. SN2-SN4 and SN14-SN30 check/rebuild the consumed interfaces. Its final review is status only, not a proof premise."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+      "sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+      "lines": 624,
+      "read_ranges": [
+        [
+          1,
+          310
+        ]
+      ],
+      "use": "NC1-NC16 coefficientwise original-vertex Taylor/reader/mark/parity and regulator arguments; the start of the normalized marginal discussion through line310 was cross-checked. Lines311-624 were not read in this task and are not imported as proof."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "lines": 556,
+      "read_ranges": [
+        [
+          65,
+          360
+        ]
+      ],
+      "use": "Bounded current reread of actual phase/normalization, principal-inverse envelopes, common patch/reader construction, vector norm, local Taylor majorants and positive-radius order. Complete same-session prior read is separately retained below."
+    }
+  ],
+  "same_session_source_reuse": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "lines": 556,
+      "prior_complete_read": [
+        1,
+        556
+      ],
+      "use": "Actual joint critical field, both complete-reader covariance tails and exact phase. Current unit runs ONE final-domain FU iteration and uses its atoms throughout."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_CHART_RETURN_ASTRA.md",
+      "sha256": "88b5b59feaf278d9b9995adc320a446363fa68887d277ca4315c6469fb3aa525",
+      "lines": 508,
+      "prior_complete_source_work": [
+        1,
+        508
+      ],
+      "use": "Unchanged author source reconstructed in the same session: original-chart contour, all side/corner signs and measures, active marginal, original vertex-slot restrictions. SN12 rederives the translation; SN16-SN27 supply the additional mixed estimates rather than importing SC22 outside its scope."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+      "sha256": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8",
+      "lines": 564,
+      "prior_consumed_ranges": [
+        [
+          130,
+          430
+        ],
+        [
+          468,
+          548
+        ]
+      ],
+      "use": "Gaussian identities and BF24 translation were read/rebuilt in earlier same-session source work; no author or review receipt is substituted for those arguments."
+    }
+  ],
+  "procedure_reuse": {
+    "immutable_main_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+    "complete_read_and_identity_record": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_read_manifest.json",
+      "sha256": "35be410ae0b57a82e902d5030066fd902a3b8ea69830c8507cc5d8392a9758f0",
+      "lines": 246
+    },
+    "lane_process": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "lines": 11
+    },
+    "scope": "Previously read, unchanged AGENTS, physics-loop and applicable review-loop authority, SCIENCE_WORKFLOW and discovery/claim/delivery references. Reuse bounded same-session reads; no broad source search, audit operation or independent verdict."
+  },
+  "common_construction": "One R, one cover, one final-domain FU atom family; independent R-free inverse constants first, preliminary local ceilings next, auxiliary chart and actual field/source/coarse radii next, then u. All marked constants and beta=(16R)^(-4) are recomputed.",
+  "literature_boundary": "No new external theorem is imported. The changed translation jets, marked side-root transport, compatibility and rare side-family bounds are derived in the source. Balaban and Dimock are credited as constructive antecedents; earlier limited primary-paper reads are not promoted to full-paper evidence.",
+  "exclusions": [
+    "Review verdicts or author receipts as mathematical premises",
+    "Original-cut/history/G/Omega or outside-chart closure",
+    "Effective-level iteration, continuum existence or positive physical continuum gap"
+  ],
+  "execution": "Written analysis only; no numerical experiment, scientific runner, additional agent, Git mutation, shared-front edit, lock, publication or audit.",
+  "freeze_order": "Mathematical source hash announced to coordinator before this package; fresh hostile review requested."
+}

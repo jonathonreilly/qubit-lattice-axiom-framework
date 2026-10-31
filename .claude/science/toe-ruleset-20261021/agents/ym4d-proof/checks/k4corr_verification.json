@@ -1,0 +1,86 @@
+{
+  "utc": "2026-10-30T05:12:42.123767+00:00",
+  "completion_verdict": "HOLD",
+  "actual_ym_coefficient": "OPEN",
+  "uniform_original_law_bound": "OPEN",
+  "author_assertions_passed": 56,
+  "independent_review": "same-family Codex; independent hand derivations and evidence inspection, no numerical rerun",
+  "source_hashes_unchanged": {
+    "briefs_q/K4CORR/AUTHOR.md": true,
+    "PROCESS_LIGHT.md": true,
+    "K4MATCH.md": true,
+    "REVIEW_K4MATCH.md": true,
+    "CUMUL.md": true,
+    "LGF.md": true,
+    "FLOW.md": true,
+    "TSE55.md": true,
+    "HANDOFF.md": true,
+    "SRC2_55.md": true
+  },
+  "local_links_valid": true,
+  "final_checker_hash_matches_run": true,
+  "attempt01_checker_preserved": true,
+  "criteria_precedes_final_checker": true,
+  "artifacts_excluding_this_manifest": {
+    "K4CORR.md": {
+      "sha256": "e7d63ea8071f8f9c7eeadfb4f7c02ce0efc2435809096f8c30099c2dc094d689",
+      "bytes": 23635
+    },
+    "K4CORR_LOG.md": {
+      "sha256": "601acd94acfd5d88e48cee5ba8e4b95b3b31940613302d1bc19d0dcdb748f0ea",
+      "bytes": 6538
+    },
+    "checks/k4corr_attempt01_results.json": {
+      "sha256": "0ab47fe8a4192e27951e8d0d2ff79b790347785fdb439c2cda326b6e74b77af1",
+      "bytes": 4793
+    },
+    "checks/k4corr_attempt01_run.json": {
+      "sha256": "1a7f5cbc6e7afa4ffff8c3bf38858df94de5b245e68544a036738591affd5e78",
+      "bytes": 1317
+    },
+    "checks/k4corr_attempt01_stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "checks/k4corr_attempt02_results.json": {
+      "sha256": "726cb4681e4c95337573cd896ad691cbc016a36d1606f7d2f746b9ed79b8f740",
+      "bytes": 4961
+    },
+    "checks/k4corr_attempt02_run.json": {
+      "sha256": "b37f78a875255b62d0da53448033df71bb143da313c3de6d507c226a20bd50ff",
+      "bytes": 1317
+    },
+    "checks/k4corr_attempt02_stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "checks/k4corr_criteria.md": {
+      "sha256": "93d98e599b58de25af139683ea0175e385ef28bdad3d05a80b967b6fd2b58dda",
+      "bytes": 3414
+    },
+    "checks/k4corr_exact.py": {
+      "sha256": "a4b293f880bdef79b8cd0ff6917998ddcc67ef412f453e8b787c912b6d469c64",
+      "bytes": 9539
+    },
+    "checks/k4corr_exact_attempt01.py": {
+      "sha256": "41a1a6b8252c36215ec4573e9ef6410133be9c97442ee22c00aa1c6f145e3684",
+      "bytes": 9134
+    },
+    "checks/k4corr_numeric.lock": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "checks/k4corr_review.md": {
+      "sha256": "5834b21cb4eea7bbb7ddc51ed319eeed7c5bf47e66303afe7b032b3c782ea19e",
+      "bytes": 16438
+    },
+    "checks/k4corr_run.py": {
+      "sha256": "72e1166d247c8e65155512ab03763dd250824b94c77caddd98a4bec0b0913add",
+      "bytes": 4322
+    },
+    "checks/k4corr_sources.json": {
+      "sha256": "1e59cbb25a9117dcac978fc9a9040c9cb20c031001b95cf0d3b7268ddff57304",
+      "bytes": 1695
+    }
+  }
+}

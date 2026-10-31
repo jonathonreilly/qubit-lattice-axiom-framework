@@ -1,0 +1,117 @@
+{
+  "schema": "scoped_consumer_terminal_verification_v1",
+  "recorded_utc": "2026-10-30T00:52:55.176073+00:00",
+  "original_head": "3bba91875672becadc0ab120204905d9f1f405a8",
+  "author_baseline": "814364fcc7dbcf0ff4146f6766e98890124ac905",
+  "observed_shared_head": "ddc0515e563507c74050d9c55201abb6981d4d69",
+  "source_binding": "content hashes; shared HEAD may advance and is not itself assumed to contain terminal source",
+  "source_records": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OSLEAF55.md",
+      "sha256": "c261a0c5eb300052445a05b3041b5ddf6e518445d3eacac36fc4421e60f66b78",
+      "bytes": 109340,
+      "git_blob": "566a576fa758b9183cff97605672e56e39e884d4",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSEMBLY55.md",
+      "sha256": "c15524d7a1c3c04ce9c32567f6f61ec5113ebe24be9eba8de87f97e3109d326d",
+      "bytes": 88645,
+      "git_blob": "58116dc28c28c2f9dfea759cbe7ea3abc55d56d4",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REC_LIB.md",
+      "sha256": "47dd75c7ca3c4f9f1af43139292d1fcfa6774b10f8e6ea2babc05ad67a48e29a",
+      "bytes": 75139,
+      "git_blob": "ff49fed213ad19d2c2c94ef260822151c699ae53",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REC_CONT.md",
+      "sha256": "ac7ac0854fb320f183779f67be136063dfb750ee3f13b869acad10a7ac12a278",
+      "bytes": 52198,
+      "git_blob": "42a64948c2f0fe171020e240ccdf579b22c3d915",
+      "match": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HRP.md",
+      "sha256": "d3a53ef3b29d09c774b1a836603ca731eeadb580127d3928dbbcd5dbe343699e",
+      "bytes": 51835,
+      "git_blob": "28f55c8180fa838c01f9843685dc53a80e2e78b1",
+      "match": true
+    }
+  ],
+  "immutable_original_head_records_checked": 3084,
+  "immutable_original_head_all_unchanged": true,
+  "initial_authorship_and_hold_commit_checks": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OSLEAF55.md",
+      "commit": "ceeaebff2a64fcce52db1dd98ebbc162b04110f2",
+      "sha256": "4e778a30fdc9dd7734499c52a141bef753e10c9c77b298eea76a6858a54a96e8",
+      "equals_preserved_file": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSEMBLY55.md",
+      "commit": "ceeaebff2a64fcce52db1dd98ebbc162b04110f2",
+      "sha256": "c15524d7a1c3c04ce9c32567f6f61ec5113ebe24be9eba8de87f97e3109d326d",
+      "equals_preserved_file": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/rec_consumer_alignment_note.md",
+      "commit": "ceeaebff2a64fcce52db1dd98ebbc162b04110f2",
+      "sha256": "a67e5705f6bb6d605b9bdd2bcf1f590e88c48a7c4270a74fb240ef96536c30ba",
+      "equals_preserved_file": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/rec_consumer_alignment_read_manifest.json",
+      "commit": "ceeaebff2a64fcce52db1dd98ebbc162b04110f2",
+      "sha256": "2ba409c8645bbf47790a8254e152c38ce8c4605e8fcc58d3e079118f7c149d72",
+      "equals_preserved_file": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/rec_consumer_alignment_source.diff",
+      "commit": "ceeaebff2a64fcce52db1dd98ebbc162b04110f2",
+      "sha256": "911c14e8bfd193d7b183921db91bdb1dea60fdfd3b72d5b2a926d83e1e63ef94",
+      "equals_preserved_file": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/rec_consumer_alignment_unchanged_rp.json",
+      "commit": "ceeaebff2a64fcce52db1dd98ebbc162b04110f2",
+      "sha256": "b72316b6c0871a216ae6ee1c56aabd5758b062e5bf5d254d02c2ac28eb8452f1",
+      "equals_preserved_file": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/rec_consumer_alignment_receipt.json",
+      "commit": "ceeaebff2a64fcce52db1dd98ebbc162b04110f2",
+      "sha256": "9a8bc2b7b72852472f1467c99a844a245d77e74779e5c380a8e44ed6b03610e5",
+      "equals_preserved_file": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_rec_consumer_alignment_findings_v1.md",
+      "commit": "ceeaebff2a64fcce52db1dd98ebbc162b04110f2",
+      "sha256": "d3f8811e2f96d28a022aa41f6bbe2fa0bf3fe11ad090780fe73c519a0dc06a01",
+      "equals_preserved_file": true
+    }
+  ],
+  "singleton_correction_record_sha256": "1c1e01a7e1e457a6d5784817a447d16d245b2337b3cb79566d3761eda3e7430d",
+  "rp_exact_block": "086bef4ca78481cf27a81c4f70b47254d65e47eb3a8ea8d41e563ea71eea545c",
+  "source_diff_check": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "missing_report_links": [],
+  "all_checks_pass": true,
+  "failures": [],
+  "non_scientific_read_and_draft_issues_preserved": [
+    "A nonexistent no-go reference path was repaired by reading the actual same-revision skill.",
+    "Truncated source outputs were reread for all claimed full source/diff coverage; the receipt history list remains machine-checked rather than individually scientifically read.",
+    "Draft report initially called observed shared HEAD ddc0515 a correction commit; exact git-show verification found v1 OSLEAF there, and terminal report now explicitly distinguishes the reviewed v2 working-tree bytes."
+  ],
+  "scientific_numerical_runs": 0,
+  "broad_tests_run": false,
+  "git_mutations_by_reviewer": false,
+  "audit_or_ledger_changes_by_reviewer": false,
+  "no_go_packet_pass_claimed": false
+}

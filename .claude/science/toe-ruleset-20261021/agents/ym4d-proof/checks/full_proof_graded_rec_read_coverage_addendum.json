@@ -1,0 +1,22 @@
+{
+  "kind": "Coordinator read-coverage correction; no mathematical-source or reviewer-verdict change",
+  "created_utc": "2026-10-30T01:25:24.733110+00:00",
+  "corrects": "checks/full_proof_graded_rec_integration.json, coordinator_actual_read_coverage item claiming complete finished reports",
+  "earlier_limit": "The earlier whole OC-report tool output was context-truncated. The combined receipt overstated the coordinator report read as complete at that checkpoint. Independent reviewer coverage was separate and is unchanged.",
+  "completed_now": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_OUTSIDE_CHART_RETURN_ASTRA.md",
+    "sha256": "0d039b6cc62fa8fe285342d08b4bc95a88fbd942c719d219dc5795f97f10248f",
+    "bytes": 12463,
+    "line_count": 183,
+    "bounded_read_calls": [
+      "1-125",
+      "126-280 (through end of file)"
+    ],
+    "report_read_complete": true
+  },
+  "effect": "Full bounded reread confirms the stated scoped real-theorem verdict and all open analytic/history/continuum interfaces. No source correction or wider theorem claim.",
+  "prior_record_preserved": true,
+  "scientific_numerical_runs": 0,
+  "full_existence": "OPEN",
+  "physical_continuum_mass_gap": "OPEN"
+}

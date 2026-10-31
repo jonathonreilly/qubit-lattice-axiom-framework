@@ -1,0 +1,97 @@
+{
+  "kind": "compact author actual-read manifest",
+  "created_utc": "2026-10-30T16:04:07.482060+00:00",
+  "source_frozen_before_provenance": {
+    "path": "DETERMINANT_SIGN_ASTRA.md",
+    "lines": 610,
+    "sha256": "138610a5a7d6e63d2a2d7ce3616964b9b909acf8295df65777b3eb4a40c55d36"
+  },
+  "methodology": {
+    "pinned_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+    "fresh_control": {
+      "path": "PROCESS_LIGHT.md",
+      "lines": 11,
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab"
+    },
+    "retained_read_records": [
+      "checks/bare_determinant_coupling_read_manifest.json",
+      "checks/bare_coupling_match_read_manifest.json",
+      "checks/bare_coupling_remainder_read_manifest.json",
+      "checks/weighted_return_jets_read_manifest.json"
+    ],
+    "scope": "Same sustained author task. Previously read ancestor AGENTS, installed physics-loop and pinned methodology remain applicable. Review labels and counts are not mathematical premises."
+  },
+  "local_sources": [
+    {
+      "path": "BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "lines": 581,
+      "sha256": "426f774581ae8385b1c546e676fb313bfed48ab14913454bdc38f67f2cebb230",
+      "actual_read_scope": "Complete prior author source retained; fresh 1-392 in this unit. Literal phase, intrinsic measure, full cell matrices, Cartan critical response, finite tag recipe and colour blocks. The remainder of the frozen 581-line source is retained from its complete authorship/audit; no review verdict is a premise."
+    },
+    {
+      "path": "BARE_COUPLING_MATCH_ASTRA.md",
+      "lines": 670,
+      "sha256": "7663b556f147e7a4ff03b1f1089e0793f61f8cb6e7adf3d3ff4ce78c763b07ff",
+      "actual_read_scope": "Complete prior author source retained; fresh 225-355, including BM11 and BM12-BM18. Actual affine critical response, contour variance and fixed-kappa normalization. BM22-BM29 reader/marginal definitions retained from prior bounded rereads recorded in the BD manifest."
+    },
+    {
+      "path": "FINITE_COUPLING_KERNEL_ASTRA.md",
+      "lines": 590,
+      "sha256": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b",
+      "actual_read_scope": "Retained actual reads 1-365 from BM and targeted 12-104, 151-172, 278-296 from BD. The actual constrained SU saddle and normalizer domain are used; no full-source fresh-read claim."
+    },
+    {
+      "path": "INTERACTING_SELECTED_CORE_ASTRA.md",
+      "lines": 790,
+      "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "actual_read_scope": "Retained actual reads 1-342 and 586-732 from BM; 646-708 freshly read for BD. IC30 intrinsic Haar cancellation and the actual critical/reader interfaces are retained, not a new import of its intervening nonlinear-core proof."
+    },
+    {
+      "path": "BARE_COUPLING_REMAINDER_ASTRA.md",
+      "lines": 583,
+      "sha256": "b75f9cae074c72344bd252d093c0a1d30c502c53819cde5b62e5b4c8b9b26b61",
+      "actual_read_scope": "Complete immediately preceding author source retained. Context only: the separate matching original-cut remainder does not supply any sign or colour reduction here."
+    }
+  ],
+  "primary_literature": [
+    {
+      "authors": "David H. Adams and Weonjong Lee",
+      "url": "https://arxiv.org/pdf/0709.0781v3",
+      "actual_version": "PDF header arXiv:0709.0781v3, 5 December 2007; displayed manuscript date September 24, 2007.",
+      "actual_read_scope": "Abstract/introduction and section II, equations (7)-(15), including positivity, homogeneous continuum limits, doubler-free and infrared-finiteness conditions. No full-paper or appendix-proof read claimed.",
+      "consumed_statement": "The universal logarithm result has explicit scaling and denominator hypotheses; finite terms are scheme dependent.",
+      "hypothesis_mapping": "No proof of these hypotheses for the growing-L or singular-small-kappa charged block family is imported. The source instead proves a direct finite-cell scalar estimate."
+    },
+    {
+      "authors": "Peter Hasenfratz and Ferenc Niedermayer",
+      "url": "https://arxiv.org/pdf/hep-lat/9706002v1",
+      "actual_version": "arXiv v1, 2 June 1997; manuscript May 1997.",
+      "actual_read_scope": "Abstract/introduction and section 4, equations (4.1)-(4.5); nearby section-5 introductory lines viewed but not used as a theorem.",
+      "consumed_statement": "Finite-kappa fixed-point actions and marginal operators must be distinguished in their two-dimensional O(N) sigma-model setting.",
+      "hypothesis_mapping": "Their fixed-point input, scale-two transformation, numerical conclusions and trajectory are not transferred to this four-dimensional incoming Wilson step."
+    },
+    {
+      "authors": "Marcela Carena, Erik J. Gustafson, Henry Lamm, Ying-Ying Li and Wanqiang Liu",
+      "url": "https://arxiv.org/pdf/2208.10417v1",
+      "actual_version": "arXiv:2208.10417v1, 22 August 2022; PDF dated August 23, 2022. The same version was initially read through its Fermilab publication PDF.",
+      "actual_read_scope": "Background-field setup (9)-(15), U(1) interactions (16)-(21), generator convention and SU(N) interactions (25)-(29). No numerical tables or full-paper read used.",
+      "consumed_statement": "Their scalar calculation has a seagull at leading curvature order; non-Abelian background Feynman gauge includes the stated ghost and exchange terms.",
+      "hypothesis_mapping": "Their anisotropic unblocked Wilson action, generator normalization and gauge fixing differ. DS8-DS34 rebuild the colour contractions and scalar correction for the actual paired normalized kernel; no coefficient is copied."
+    }
+  ],
+  "attribution": "Balaban and Dimock are credited for the constructive localization/extraction architecture. The preceding BD packet also records retained Luscher-Weisz and normalized-blocking primary reads.",
+  "run_record": {
+    "scientific_numerical_runs": [],
+    "symbolic_coefficient_evaluation_runs": [],
+    "subworkers": [],
+    "git_shared_front_audit_or_predecessor_edits": false,
+    "metadata_only_checks": [
+      "JSON roundtrip",
+      "source SHA256 and line counts",
+      "balanced fences",
+      "local Markdown links resolve",
+      "source unchanged after provenance"
+    ]
+  },
+  "review": "Author assigns no independent verdict. A DIFFERENT fresh source-first hostile reviewer is required."
+}

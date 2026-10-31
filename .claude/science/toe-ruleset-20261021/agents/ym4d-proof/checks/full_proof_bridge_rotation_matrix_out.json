@@ -1,0 +1,68 @@
+{
+  "explicit_matrix_check": {
+    "loop": "2640120/2683573",
+    "feature": "2640120/2683573",
+    "wrong_adjoint": "-957480/2683573",
+    "positive_quadratic": 3,
+    "negative_quadratic": -3
+  },
+  "mutations": [
+    {
+      "mutation": "diagonal_reflection_sign",
+      "function": "diagonal_geometry",
+      "rejected_by": "AssertionError",
+      "message": "",
+      "mutant_sha256": "573d447d1900b94b1eaed9436785054295d8f59ff0d3bd44236cad6ae1581c79"
+    },
+    {
+      "mutation": "path_adjoint",
+      "function": "path_algebra",
+      "rejected_by": "AssertionError",
+      "message": "",
+      "mutant_sha256": "29f949e9771d3ab7759adeff906cd4336b0145919a59edfeb6d0e6079674ea59"
+    },
+    {
+      "mutation": "wilson_trace_factor",
+      "function": "path_algebra",
+      "rejected_by": "AssertionError",
+      "message": "",
+      "mutant_sha256": "a2fbf8f00c59ac244165954e3c9593c6b23e9ce204cc9c70a76c646de5fd5a06"
+    },
+    {
+      "mutation": "negative_crossing_coefficient",
+      "function": "path_algebra",
+      "rejected_by": "AssertionError",
+      "message": "",
+      "mutant_sha256": "9e931d3b6805f7530617b67d32c6c79cdae5539ee6def11edf1a27959c61835d"
+    },
+    {
+      "mutation": "strict_block_buffer",
+      "function": "support_footprints",
+      "rejected_by": "AssertionError",
+      "message": "",
+      "mutant_sha256": "55997ff0fa82900562285565f853a6267d62ae814eec03092a90bba354c70dd1"
+    },
+    {
+      "mutation": "torus_boundary",
+      "function": "torus_geometry",
+      "rejected_by": "AssertionError",
+      "message": "",
+      "mutant_sha256": "033ba0be080d274f057a9cf646ecf8bc9d2228018c0ed1c1f0607f7eb89ddfd2"
+    },
+    {
+      "mutation": "gaussian_mass_normalization",
+      "function": "gaussian_torus_control",
+      "rejected_by": "AssertionError",
+      "message": "",
+      "mutant_sha256": "283560c9e217cdcc1f994d03462045da749f9d81cde5d5d18fa8b6cbe2cb9eb3"
+    },
+    {
+      "mutation": "rational_rotation_coefficient",
+      "function": "analytic_controls",
+      "rejected_by": "AssertionError",
+      "message": "",
+      "mutant_sha256": "242938bbdec66ea325ca83635af03cb761c0d0771fb8e02ba99543a97a19b7f3"
+    }
+  ],
+  "scope": "Each listed mutation rejected; not an exhaustive every-statement mutation certificate."
+}

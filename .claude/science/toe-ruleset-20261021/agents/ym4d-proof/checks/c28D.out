@@ -1,0 +1,4 @@
+Part D: composite slice functional, d = 4, L = 3, k = 2, coarse T = 2
+ D1 recursion vs unrolled 1.6e-14; D2 h2(d lam) = M lam - lam(c) 2.4e-14; D3 composite identity 4.4e-16; D4 max |h2|^2/((4L^2/(L-1)) sum_B a^2) = 0.0001
+Part D: PASS
+time 2.0 s, peak RSS 95 MB

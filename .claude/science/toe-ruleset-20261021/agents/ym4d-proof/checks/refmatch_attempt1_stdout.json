@@ -1,0 +1,8 @@
+{
+  "status": "NOT RUN",
+  "checks": [],
+  "resources": [],
+  "criteria_sha256": "5fbe724f55153f7800fed79928a81ea94185e74acc522547c104f9208af8de13",
+  "runner_sha256": "b07fcb0f5c56b4974872445bc47123cd7f0eb828b2cc5a77ae6e58bfe62f6627",
+  "reason": "ModuleNotFoundError(\"No module named 'psutil'\")"
+}

@@ -1,0 +1,2 @@
+random seed=1: max |U^h_b-1|^2/(r^2 eps'^2) = 1.0000;  max |T_b - T_contour|/eps' = 2.378  (gate allows 144)
+aligned seed=5: max |U^h_b-1|^2/(r^2 eps'^2) = 1.0000;  max |T_b - T_contour|/eps' = 4.000  (gate allows 144)

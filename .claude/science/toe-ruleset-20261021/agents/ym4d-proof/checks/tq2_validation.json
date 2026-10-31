@@ -1,0 +1,45 @@
+{
+  "utc": "2026-10-30T06:34:47.750614+00:00",
+  "purpose": "Final artifact integrity and resource validation only; no mathematical numerical experiment.",
+  "resources_start": {
+    "load": [
+      2.06689453125,
+      2.17919921875,
+      2.12890625
+    ],
+    "free_memory_percent": 51,
+    "peak_rss_bytes": 20168704,
+    "priority": 20
+  },
+  "original_files_checked": 3772,
+  "changed_original_files": [],
+  "new_files": [
+    "TQ2.md",
+    "TQ2_LOG.md",
+    "checks/tq2_original_manifest.json",
+    "checks/tq2_review.md",
+    "checks/tq2_sources.sha256",
+    "checks/tq2_validation.json"
+  ],
+  "unexpected_new_files": [],
+  "focused_source_mismatches": [],
+  "artifact_sha256": {
+    "TQ2.md": "3d9342a392f01d3e705e5fe381ca88aed20e4dd06c8138751be23e768e96e38a",
+    "TQ2_LOG.md": "3a2c655c81daf5f5fed5b26d8b22053218abfb53aec8b97ebc903c42d723c31b",
+    "checks/tq2_review.md": "4dafacc78bf19a7c42258bf33b6921334b4bf8b6c50b646404deed1f9041f083"
+  },
+  "missing_local_links": [],
+  "review_binds_final_source": true,
+  "review_verdict": "VERDICT: LAND",
+  "resources_end": {
+    "load": [
+      2.06689453125,
+      2.17919921875,
+      2.12890625
+    ],
+    "free_memory_percent": 51,
+    "peak_rss_bytes": 28229632,
+    "priority": 20
+  },
+  "passed": true
+}

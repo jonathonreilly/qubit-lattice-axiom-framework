@@ -1,0 +1,40 @@
+A1 min(pi,a+b) <= a+min(pi,b): violations 0/1000000  PASS
+A2 1{X>=pi} <= exp(th(min(X,pi)-pi)): violations 0/1000000  PASS
+A3 (neg. control) false split violated on 332415 samples  FAILS as required
+B n#=1 fwd Bern(0.02,None): log Z(all)/Z(S0)=-1.2857e-02  -2*sum p=-2.6316e-02  -2*sum max=-6.2338e-03  max p_i=0.003
+B n#=1 fwd Bern(0.05,None): log Z(all)/Z(S0)=-7.2094e-02  -2*sum p=-1.5159e-01  -2*sum max=-3.7597e-02  max p_i=0.016
+B n#=1 fwd Bern(0.1,None): log Z(all)/Z(S0)=-2.4960e-01  -2*sum p=-5.4091e-01  -2*sum max=-1.4282e-01  max p_i=0.055
+B n#=1 fwd Bern(0.2,None): log Z(all)/Z(S0)=-8.1469e-01  -2*sum p=-1.8121e+00  -2*sum max=-5.2547e-01  max p_i=0.174
+B n#=1 fwd Ising(0.5,-3.0): log Z(all)/Z(S0)=-1.2303e-01  -2*sum p=-2.6554e-01  -2*sum max=-6.7937e-02  max p_i=0.027
+B n#=1 fwd Ising(1.0,-4.0): log Z(all)/Z(S0)=-3.4007e-02  -2*sum p=-7.2058e-02  -2*sum max=-1.8618e-02  max p_i=0.007
+B n#=1 fwd Ising(0.3,-2.5): log Z(all)/Z(S0)=-2.2844e-01  -2*sum p=-4.9851e-01  -2*sum max=-1.3009e-01  max p_i=0.050
+B n#=1 rev Bern(0.02,None): log Z(all)/Z(S0)=-1.2857e-02  -2*sum p=-2.5954e-02  -2*sum max=-6.8811e-03  max p_i=0.002
+B n#=1 rev Bern(0.05,None): log Z(all)/Z(S0)=-7.2094e-02  -2*sum p=-1.4710e-01  -2*sum max=-4.0613e-02  max p_i=0.011
+B n#=1 rev Bern(0.1,None): log Z(all)/Z(S0)=-2.4960e-01  -2*sum p=-5.1500e-01  -2*sum max=-1.5054e-01  max p_i=0.041
+B n#=1 rev Bern(0.2,None): log Z(all)/Z(S0)=-8.1469e-01  -2*sum p=-1.6883e+00  -2*sum max=-5.3939e-01  max p_i=0.138
+B n#=1 rev Ising(0.5,-3.0): log Z(all)/Z(S0)=-1.2303e-01  -2*sum p=-2.5429e-01  -2*sum max=-7.1276e-02  max p_i=0.021
+B n#=1 rev Ising(1.0,-4.0): log Z(all)/Z(S0)=-3.4007e-02  -2*sum p=-6.9764e-02  -2*sum max=-1.9469e-02  max p_i=0.006
+B n#=1 rev Ising(0.3,-2.5): log Z(all)/Z(S0)=-2.2844e-01  -2*sum p=-4.7385e-01  -2*sum max=-1.3607e-01  max p_i=0.039
+B n#=2 fwd Bern(0.02,None): log Z(all)/Z(S0)=-8.9296e-04  -2*sum p=-1.8732e-03  -2*sum max=-1.1100e-04  max p_i=0.000
+B n#=2 fwd Bern(0.05,None): log Z(all)/Z(S0)=-1.1816e-02  -2*sum p=-2.6487e-02  -2*sum max=-1.6952e-03  max p_i=0.004
+B n#=2 fwd Bern(0.1,None): log Z(all)/Z(S0)=-7.3043e-02  -2*sum p=-1.8013e-01  -2*sum max=-1.2875e-02  max p_i=0.028
+B n#=2 fwd Bern(0.2,None): log Z(all)/Z(S0)=-3.7966e-01  -2*sum p=-1.0787e+00  -2*sum max=-9.2401e-02  max p_i=0.152
+B n#=2 fwd Ising(0.5,-3.0): log Z(all)/Z(S0)=-3.8169e-02  -2*sum p=-9.2525e-02  -2*sum max=-7.7936e-03  max p_i=0.014
+B n#=2 fwd Ising(1.0,-4.0): log Z(all)/Z(S0)=-9.3278e-03  -2*sum p=-2.1722e-02  -2*sum max=-2.4441e-03  max p_i=0.003
+B n#=2 fwd Ising(0.3,-2.5): log Z(all)/Z(S0)=-7.9570e-02  -2*sum p=-2.0010e-01  -2*sum max=-1.5701e-02  max p_i=0.030
+B n#=2 rev Bern(0.02,None): log Z(all)/Z(S0)=-8.9296e-04  -2*sum p=-1.8101e-03  -2*sum max=-1.3893e-04  max p_i=0.000
+B n#=2 rev Bern(0.05,None): log Z(all)/Z(S0)=-1.1816e-02  -2*sum p=-2.4441e-02  -2*sum max=-2.0449e-03  max p_i=0.002
+B n#=2 rev Bern(0.1,None): log Z(all)/Z(S0)=-7.3043e-02  -2*sum p=-1.5608e-01  -2*sum max=-1.4749e-02  max p_i=0.013
+B n#=2 rev Bern(0.2,None): log Z(all)/Z(S0)=-3.7966e-01  -2*sum p=-8.5807e-01  -2*sum max=-9.7876e-02  max p_i=0.074
+B n#=2 rev Ising(0.5,-3.0): log Z(all)/Z(S0)=-3.8169e-02  -2*sum p=-8.0875e-02  -2*sum max=-8.6033e-03  max p_i=0.007
+B n#=2 rev Ising(1.0,-4.0): log Z(all)/Z(S0)=-9.3278e-03  -2*sum p=-1.9429e-02  -2*sum max=-2.7763e-03  max p_i=0.002
+B n#=2 rev Ising(0.3,-2.5): log Z(all)/Z(S0)=-7.9570e-02  -2*sum p=-1.7105e-01  -2*sum max=-1.6902e-02  max p_i=0.015
+B1 identity PASS; B2 containment PASS; B3 bound PASS on 28 cases, DECL PASS
+B3 tightness log-ratio/(-2 sum p): min 0.352 max 0.495
+B4 (neg. control, animal count removed) FAILS as required; B5 both orders PASS
+C1 depth term absorbed at n_H for all (c,a,beta-): PASS  (e.g. c=1,a=1e-17,b=0.37: n_H=9.452e+21)
+C2 LOOP-const growth G: min 80.999999999999957 max 81.000000000000000; G^100 >= 7.055e+190  PASS
+C3 LOOP-div m_*: rho=4,g2=0.1:1, rho=4,g2=0.01:1, rho=24,g2=0.1:1, rho=24,g2=0.01:1, rho=96,g2=0.1:1, rho=96,g2=0.01:1  PASS
+C4 GAS sums: ab=1e-16,K=10:1.520e+17, ab=1e-16,K=50:3.320e+93, ab=1.0,K=10:7.919e+12, ab=1.0,K=50:1.423e+70, ab=4.5,K=10:2.356e+00, ab=4.5,K=50:2.366e+00  PASS
+D (g3) counts n=1,2,3: 1, 80, 7320 vs 6400^(n-1) = 1, 6400, 40960000  PASS
+OVERALL: PASS  (A3, B4 are controls that must fail)   wall 1.0s

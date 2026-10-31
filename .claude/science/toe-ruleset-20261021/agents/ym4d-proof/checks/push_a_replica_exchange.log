@@ -1,0 +1,39 @@
+Scope: actual-contour matrix checks and gauge-orbit Haar quadrature; BLAS threads=1.
+Exact last-kernel edge multiplicity: {0: 1656, 1: 288}; alpha=4/27.
+depth=1: original plaquette-pair action=3.33e-16; single-edge exchange action increase=1.78991605272.
+  internal kernel level=0: exchange log ratio/t=-0.658655738464; input normalizers retained and cancel for this output-only exchange.
+  last kernel: a=0.95121068604, r=0.957537187322, positive mixed gap=0.00632650128237.
+    t=1: log pair-kernel ratio=-0.0775811132302; normalizer contribution=0.0199975146903.
+    t=10: log pair-kernel ratio=-0.252980065151; normalizer contribution=0.722806214055.
+    t=100: log pair-kernel ratio=-1.39513637862; normalizer contribution=8.36272641343.
+    t=1000: log pair-kernel ratio=-12.7831414336; normalizer contribution=84.795486487.
+depth=2: original plaquette-pair action=0; single-edge exchange action increase=1.16231406828.
+  internal kernel level=0: exchange log ratio/t=-3.40343741207; input normalizers retained and cancel for this output-only exchange.
+  internal kernel level=1: exchange log ratio/t=-1.86355062824; input normalizers retained and cancel for this output-only exchange.
+  last kernel: a=0.861959212723, r=0.874539535672, positive mixed gap=0.0125803229493.
+    t=1: log pair-kernel ratio=-0.219334952796; normalizer contribution=0.0567466217575.
+    t=10: log pair-kernel ratio=-0.641664304633; normalizer contribution=2.11915144091.
+    t=100: log pair-kernel ratio=-2.91715027981; normalizer contribution=24.6910071756.
+    t=1000: log pair-kernel ratio=-25.5627115173; normalizer contribution=250.518863037.
+depth=4: original plaquette-pair action=-4.44e-16; single-edge exchange action increase=1.43006103437.
+  internal kernel level=0: exchange log ratio/t=-0.584788231802; input normalizers retained and cancel for this output-only exchange.
+  internal kernel level=1: exchange log ratio/t=-1.1230496065; input normalizers retained and cancel for this output-only exchange.
+  internal kernel level=2: exchange log ratio/t=-1.18925188054; input normalizers retained and cancel for this output-only exchange.
+  internal kernel level=3: exchange log ratio/t=-1.14461457668; input normalizers retained and cancel for this output-only exchange.
+  last kernel: a=0.91521373506, r=0.924959094446, positive mixed gap=0.00974535938605.
+    t=1: log pair-kernel ratio=-0.134779503938; normalizer contribution=0.0347930259415.
+    t=10: log pair-kernel ratio=-0.422099525872; normalizer contribution=1.27362577292.
+    t=100: log pair-kernel ratio=-2.18247428495; normalizer contribution=14.774778703.
+    t=1000: log pair-kernel ratio=-19.724675156; normalizer contribution=149.847854723.
+Maximum errors: individual contour=1.66903e-15, Wilson exchange=4.44089e-16, mixed mean=3.44254e-15, kernel log ratio=3.78009e-12.
+Haar gauge-orbit empty-edge majorant; not a finite-u posterior expectation:
+  coupling=0.1: integral=0.822831235288; scaled Bessel=0.822831235288.
+  coupling=1: integral=0.215269289249; scaled Bessel=0.215269289249.
+  coupling=10: integral=0.00875062221833; scaled Bessel=0.00875062221833.
+  coupling=100: integral=0.000281565033948; scaled Bessel=0.000281565033948.
+  coupling=1000: integral=8.91894770294e-06; scaled Bessel=8.91894770294e-06.
+Maximum independent Haar/Bessel absolute discrepancy=2.22045e-16.
+Two-point swap-orbit tanh identity maximum discrepancy=1.11022e-16.
+Peak RSS bytes: 93306880 (<1000000000).
+No finite-coupling full-posterior simulation, covariance estimate, or induction closure.
+U1--U4 count remains four; counted progress is zero.

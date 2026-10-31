@@ -1,0 +1,12 @@
+[A] PASS :: momentum vs exact -tr(GVGV): 5.4e-18; finite-difference (h=1e-4, 7 links) vs exact: 1.5e-08
+   (t=3s)
+[B] PASS :: |F(0)| at m=0.2 = 4.1e-19
+   [info] beta(m=0.4): analytic-derivative quadrature 0.00368766, finite-difference 0.00368766
+   (t=3s)
+[D] PASS :: c_Gamma(0.05): n=40 0.00602812, n=56 0.00602812, diff 1.2e-17
+   pair (0.4,0.2): slope x 48pi^2 = 0.90191
+   pair (0.2,0.1): slope x 48pi^2 = 0.96783
+   pair (0.1,0.05): slope x 48pi^2 = 0.99007
+[C] PASS :: |slope*48pi^2 - 1| along pairs: 0.0981, 0.0322, 0.0099
+   c_Gamma(m): m=0.4: 0.001844, m=0.2: 0.003163, m=0.1: 0.004580, m=0.05: 0.006028
+f3 done: ALL PASS; wall 4.5s

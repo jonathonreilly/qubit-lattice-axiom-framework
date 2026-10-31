@@ -1,0 +1,5 @@
+{
+  "utc": "2026-10-29T14:51:04.693688+00:00",
+  "failure": "First report-generation Python heredoc used a triple-single-quoted string containing the mathematical f-triple-prime notation, causing a SyntaxError before any file write.",
+  "impact": "No report or scientific source was changed. Retried with a literal shell heredoc; no mathematical computation was rerun."
+}

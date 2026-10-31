@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/al55_sub.py", line 79, in <module>
+    assert a3 == dd4_mask(3), "mask transcription"
+           ^^^^^^^^^^^^^^^^^
+AssertionError: mask transcription
+        0.01 real         0.01 user         0.00 sys
+            15368192  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                2041  page reclaims
+                   4  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                  13  involuntary context switches
+           209716559  instructions retired
+            73531844  cycles elapsed
+             7307672  peak memory footprint

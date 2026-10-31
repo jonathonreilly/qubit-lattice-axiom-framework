@@ -1,0 +1,220 @@
+{
+  "created_utc": "2026-10-29T20:25:21.675146+00:00",
+  "post_independent_freeze": true,
+  "results": [
+    {
+      "mutation": "omit_spread",
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_mutation_omit_spread_01.py",
+      "source_sha256": "7ea53853e5baa14777b18a1aebc3869c0bdc643a54dceeac0d1a4a7876025ce3",
+      "old": "kappa*(1-c)*B",
+      "new": "0*B",
+      "occurrences": 4,
+      "exit_code": 1,
+      "rejected": true,
+      "failed_checks": [
+        {
+          "name": "finite_u_full_Hessian_2.0",
+          "pass": false,
+          "detail": 0.03591821447685287
+        },
+        {
+          "name": "omit_finite_u_spread_control",
+          "pass": false,
+          "detail": null
+        },
+        {
+          "name": "finite_u_full_Hessian_10.0",
+          "pass": false,
+          "detail": 0.009239119357475394
+        },
+        {
+          "name": "finite_u_full_Hessian_50.0",
+          "pass": false,
+          "detail": 0.0018911622509427608
+        }
+      ],
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_mutation_omit_spread_01.stdout.json",
+      "stdout_sha256": "2d30287aa5d84289505ab400a121aa49c30feac166711ca2b673c65fc5359142",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_mutation_omit_spread_01.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seconds": 1.2733026249916293
+    },
+    {
+      "mutation": "omit_haar_gradient",
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_mutation_omit_haar_gradient_01.py",
+      "source_sha256": "79035e199e305aa5a4d06d218d6e1ad8ff6d2497840350d97eb88d292afb2920",
+      "old": "grad=(gradw+gradk+gradh).ravel()",
+      "new": "grad=(gradw+gradk).ravel()",
+      "occurrences": 1,
+      "exit_code": 1,
+      "rejected": true,
+      "failed_checks": [
+        {
+          "name": "finite_u_full_Hessian_2.0",
+          "pass": false,
+          "detail": 0.33333333334257403
+        },
+        {
+          "name": "finite_u_full_Hessian_10.0",
+          "pass": false,
+          "detail": 0.06666666667540362
+        },
+        {
+          "name": "finite_u_full_Hessian_50.0",
+          "pass": false,
+          "detail": 0.013333333341919437
+        }
+      ],
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_mutation_omit_haar_gradient_01.stdout.json",
+      "stdout_sha256": "8938c7b1de9251893d9e6e1f9b2ec17443171f6d64773aa79828e5dbb2b517dc",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_mutation_omit_haar_gradient_01.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seconds": 1.3279045829549432
+    },
+    {
+      "mutation": "omit_normalizer_gradient",
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_mutation_omit_normalizer_gradient_01.py",
+      "source_sha256": "892c94d976f63ca23abbb2a6ca37f9f73354df6ec153c5e71139d25c8e608cca",
+      "old": "c=special.ive(2,x)/special.i1e(x)",
+      "new": "c=np.ones_like(x)",
+      "occurrences": 1,
+      "exit_code": 1,
+      "rejected": true,
+      "failed_checks": [
+        {
+          "name": "finite_u_full_Hessian_2.0",
+          "pass": false,
+          "detail": 0.035918214498230676
+        },
+        {
+          "name": "finite_u_full_Hessian_10.0",
+          "pass": false,
+          "detail": 0.009239119378910563
+        },
+        {
+          "name": "finite_u_full_Hessian_50.0",
+          "pass": false,
+          "detail": 0.0018911622724010846
+        }
+      ],
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_mutation_omit_normalizer_gradient_01.stdout.json",
+      "stdout_sha256": "452d3a0c560daf7755e4dbe150cfd8ead10139188ceca8939fa6fe2be7d3a98b",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_mutation_omit_normalizer_gradient_01.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seconds": 1.1695324159809388
+    },
+    {
+      "mutation": "omit_Wilson_error",
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_mutation_omit_Wilson_error_01.py",
+      "source_sha256": "31a2be98ce6adf5dab758096233c41e9a2cb4a82c4a68cd4d7f1196b9f6656c0",
+      "old": "return H,B,E,D,Q,Th,P",
+      "new": "return H,B,np.zeros_like(E),D,Q,Th,P",
+      "occurrences": 1,
+      "exit_code": 1,
+      "rejected": true,
+      "failed_checks": [
+        {
+          "name": "finite_u_full_Hessian_2.0",
+          "pass": false,
+          "detail": 0.0015629047115853555
+        },
+        {
+          "name": "finite_u_full_Hessian_10.0",
+          "pass": false,
+          "detail": 0.001562904710945932
+        },
+        {
+          "name": "finite_u_full_Hessian_50.0",
+          "pass": false,
+          "detail": 0.001562904710812519
+        }
+      ],
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_mutation_omit_Wilson_error_01.stdout.json",
+      "stdout_sha256": "3eba236fbb49f5fcaa3b44684a8ab604b1a62d54010907e671b0ec659926c1b8",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_mutation_omit_Wilson_error_01.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seconds": 1.1495820420095697
+    },
+    {
+      "mutation": "wrong_transport",
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_mutation_wrong_transport_01.py",
+      "source_sha256": "05f450f669aabb86e127c82a61ed9e2d6770b244c9cb319b6387f9284624495d",
+      "old": "R=sg[:,j,None,None]*adj(rp)*phase[:,j,None,None]",
+      "new": "R=sg[:,j,None,None]*np.broadcast_to(np.eye(3), (len(ix),3,3))*phase[:,j,None,None]",
+      "occurrences": 1,
+      "exit_code": 1,
+      "rejected": true,
+      "failed_checks": [
+        {
+          "name": "finite_u_full_Hessian_2.0",
+          "pass": false,
+          "detail": 1.5865893105590374
+        },
+        {
+          "name": "finite_u_full_Hessian_10.0",
+          "pass": false,
+          "detail": 1.5865672401165811
+        },
+        {
+          "name": "finite_u_full_Hessian_50.0",
+          "pass": false,
+          "detail": 1.5865831573953626
+        },
+        {
+          "name": "drop_Ad_transport_control",
+          "pass": false,
+          "detail": null
+        }
+      ],
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_mutation_wrong_transport_01.stdout.json",
+      "stdout_sha256": "385388b2696f988246c55cbedba9831148c93a366223e9f6161591cf55dd2e62",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_mutation_wrong_transport_01.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seconds": 1.1813224999932572
+    },
+    {
+      "mutation": "wrong_crossing",
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_mutation_wrong_crossing_01.py",
+      "source_sha256": "3c88fd09ec1b771efe8e337387c52981ef88160d8be88e77a41fe9a0bd0bd74c",
+      "old": "V[bid[b],mu] if r[mu]==h else I",
+      "new": "V[bid[shift(b,mu,mod=T)],mu] if r[mu]==h else I",
+      "occurrences": 1,
+      "exit_code": 1,
+      "rejected": true,
+      "failed_checks": [
+        {
+          "name": "all_fine_plaquettes_exact_lift_classification",
+          "pass": false,
+          "detail": 1.992380847231862
+        },
+        {
+          "name": "all_selected_actual_contours_equal_coarse_V",
+          "pass": false,
+          "detail": {
+            "words": 15552,
+            "error": 1.9105531098467838,
+            "max_length": 11
+          }
+        },
+        {
+          "name": "actual_lifted_two_block_gauge_is_exactly_flat",
+          "pass": false,
+          "detail": 1.910553109846784
+        },
+        {
+          "name": "entire_strong_good_sample_in_relative_chart",
+          "pass": false,
+          "detail": {
+            "max_log_HS": 4.31457080957658,
+            "bound": 1398.787007796862
+          }
+        }
+      ],
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_mutation_wrong_crossing_01.stdout.json",
+      "stdout_sha256": "27d437e0ce7aa75edb8c63b46338a6bcbf7bc9c52a6ee1c6f96d3c51da10fb26",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_mutation_wrong_crossing_01.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seconds": 1.7866165419691242
+    }
+  ]
+}

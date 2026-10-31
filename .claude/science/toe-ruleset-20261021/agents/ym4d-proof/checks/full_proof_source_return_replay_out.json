@@ -1,0 +1,67 @@
+{
+  "all_passed": true,
+  "arithmetic": "exact Fraction only",
+  "data": {
+    "cutoff": {
+      "discarded_history_integral": "2",
+      "moving": "464/45",
+      "reference": "28/3",
+      "retained_history_integral": "3/2",
+      "scope": "Polynomial holomorphic-form identity; no uniform normalized Gaussian-face estimate.",
+      "side": "44/45"
+    },
+    "minus_half_logdet_derivative": "-377285/2720727",
+    "parametrix": {
+      "atoms_through_order_3": 60,
+      "column_q": "462333875000/23112547082063",
+      "cutoff_order": 3,
+      "error": "373963346012444710482190821447854627358316512703899978690138754698818122448517858066228289718047094636087531702585937500000000000000000/5298552364214701685464335768310779344929968917208942446327957359375977317179657764493885434351672096642179586440434640672606859723021108176547",
+      "incidence": "735864681920326376755905229807544931711109345149031571441024166445417343557454316860862678785649034399938578484150671556133242737250429223/152595718233832282391388559082277526134069815386182710448417996459457047722729611591244867123300613774101345515866043906800000000000000000",
+      "incidence_bound": "185453095980642496727877969123335107155359484249524490803416429812223748057797755057488713328927871539450865320944120707234594847708431491250121615254223435543787627709408202973/37546906760540371567352927148690270189078478026399375077574321593948848425603739618095291851694302342799260767521775382323200000000000000000000000000000000000000000000000000000",
+      "remote_source": 6,
+      "row_q": "46774627625000/1872116313647103",
+      "size": 12,
+      "weighted_q": "409253770950060522443075921/14976930509176824000000000000"
+    },
+    "su2": {
+      "anchored_contours": 648,
+      "dimension": 4,
+      "free_links": 244,
+      "links": 324,
+      "plaquettes": 486,
+      "scope": "Exact gauge/contour identities; no nonlinear Hessian or Haar integration computed.",
+      "side": 3,
+      "sites": 81,
+      "tree_edges": 80
+    }
+  },
+  "gates": {
+    "compression_parametrix_identity": true,
+    "connected_walk_supports": true,
+    "determinant_derivative_independent_paths": true,
+    "direct_inverse_identity": true,
+    "discarded_side_control_detected": true,
+    "exact_neumann_remainder": true,
+    "marked_support_incidence": true,
+    "matrix_endpoints_in_support": true,
+    "moving_cut_side_identity": true,
+    "omitted_determinant_control_detected": true,
+    "original_source_inside_compression_detected": true,
+    "original_source_outside_collar_invisible": true,
+    "retained_history_control_detected": true,
+    "row_only_control_detected": true,
+    "su2_all_links_unit": true,
+    "su2_all_plaquette_traces_invariant": true,
+    "su2_anchored_contours_invariant": true,
+    "su2_tree_edges_are_identity": true,
+    "su2_wrong_link_control_detected": true,
+    "unweighted_geometric_bound": true,
+    "weighted_rows_and_columns": true
+  },
+  "limitations": [
+    "Finite calculations do not establish the general proofs.",
+    "No higher-level operator, nontrivial history return, or continuum limit is computed.",
+    "The scalar parametrix example checks algebra, not a Yang-Mills measure.",
+    "The SU(2) example checks exact nonabelian gauge/contour identities, not a gauge Jacobian by quadrature."
+  ]
+}

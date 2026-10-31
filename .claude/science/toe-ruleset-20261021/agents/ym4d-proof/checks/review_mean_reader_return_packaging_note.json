@@ -1,0 +1,32 @@
+{
+  "schema": "review-packaging-correction-v1",
+  "created_utc": "2026-10-30T15:19:00.575231+00:00",
+  "source_findings_and_read_manifest_immutable": true,
+  "source_math_changed": false,
+  "retired_report_sha256": "280c9f0e1d1506f13ec58653922feaf1bc2903309be0596adcb04168a86c332c",
+  "retired_receipt_sha256": "af8226552073e2d2f31ee92bad1bfc248ef156cbd85a1c0456f9075618c8b032",
+  "report_metadata_correction": {
+    "field": "observed HEAD at source review",
+    "incorrect_transcription": "1ca794aeb72236a0460545e4b9e3373ad589dc4c",
+    "correct_immutable_manifest_observation": "7e4473dd789505441da42011c7b0b1f1930ed1ea"
+  },
+  "initial_post_receipt_attempt": {
+    "all_bound_file_hashes_and_counts_matched": true,
+    "all_governing_object_hashes_and_counts_matched": true,
+    "all_three_primary_transport_hashes_and_counts_matched": true,
+    "failure": "The precheck incorrectly required historical live refs to remain frozen, although root owns publication and may advance them. Assertion stopped before a final identity file was written.",
+    "live_ref_changes": [
+      {
+        "ref": "origin/main",
+        "historically_observed": "bcab5d2ee4a908fbb4e6025635fb878e6c157ebe",
+        "seen_at_failed_attempt": "9368251322ebd46e5a5951a60e17a26b07c6fa62"
+      },
+      {
+        "ref": "HEAD",
+        "historically_observed": "7e4473dd789505441da42011c7b0b1f1930ed1ea",
+        "seen_at_failed_attempt": "92b215da6d3baead3b1e35d31d9370b8ac2da159"
+      }
+    ]
+  },
+  "correction": "Record refs as historical/current observations. Bind exact consumed file and selected governance object bytes; refresh report lint and receipt, then execute the final identity check after that new receipt. No frozen source-only record is edited."
+}

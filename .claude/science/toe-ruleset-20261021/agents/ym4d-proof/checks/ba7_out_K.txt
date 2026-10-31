@@ -1,0 +1,12 @@
+E3 (depth signal)
+  k=1 T=1: U_H 2.6829, S1 4.4444, D_N 0.4444, ||Pi_cc Y_0||_1/n 0.4444, LE ratio 0.1222 (box side 2); CG res 4e-17 (4 it) (0 s, RSS 62 MB)
+  done k=1 T=1 (0 s, RSS 62 MB)
+  k=2 T=1: U_H 5.3441, S1 8.9883, D_N 0.4938, ||Pi_cc Y_0||_1/n 0.4938, GU designed ratio 2.5410; CG res 9e-13 (56 it) (2 s, RSS 64 MB)
+  done k=2 T=1 (2 s, RSS 64 MB)
+  k=2 T=3: U_H 9.7395, S1 12.5952, D_N 0.2631, ||Pi_cc Y_0||_1/n 1.3176, GU designed ratio 5.8341; CG res 9e-13 (145 it) (15 s, RSS 304 MB)
+  done k=2 T=3 (15 s, RSS 305 MB)
+  k=3 T=1: U_H 6.9727, S1 12.9594, D_N 0.4993, ||Pi_cc Y_0||_1/n 0.4993; CG res 9e-13 (147 it) (30 s, RSS 305 MB)
+  done k=3 T=1 (30 s, RSS 305 MB)
+H3a PASS
+H3b PASS
+N3 PASS

@@ -1,0 +1,80 @@
+========================================================================================================
+ys1 -- YSUP session 25.  d = 4, L = 3.  exact Fractions/ints, single thread, no BLAS, no lock.
+========================================================================================================
+|HT| = 216 nonzero axial weights;  sum|weights| = 8/3
+Lemma FT (i) closed form L^-D sum_{y in B}|y - c_X|_1 = 8/3   -> MATCH
+
+--- A1  rebuild of REVIEW_BFT_A_S8 S8-7's exact rationals (outside numbers) ---
+  c_X = (4, 4, 4, 4), p = (5, 4, 4, 4) (unnormalised u = d* delta_p)
+  phi_1 = -1/54          target -1/54      ok
+  phi_2 = -17/13122      target -17/13122  ok
+  ratio = 17/243         target 17/243     ok
+  psi_u = -65/26244      target -65/26244  ok
+  A1 VERDICT: PASS
+
+--- A2  kernel K_i = (Q_str^{(0->i)})^T h_i^T delta_X : support / sup / l1  [i = 0,1 brute] ---
+  i = 0: |supp| = 216    (a) both endpoints in level-1 block: True 
+          (b) sup = 10/81          <= L^{i(1-D)} = 1          ok
+          (c) l1  = 8/3            == L^i * 8/3 = 8/3        ok
+  i = 1: |supp| = 23328  (a) both endpoints in level-2 block: True 
+          (b) sup = 10/2187        <= L^{i(1-D)} = 1/27       ok
+          (c) l1  = 56/9           == L^i * 8/3 = 8          MISMATCH
+  A2 VERDICT: FAIL
+
+--- A2' closed-form kernel classes (cross-checked at i = 0,1; extended to i = 2,3,4) ---
+  i = 0: sup = 10/81            (<= 1            True)   l1 = 8/3          (== 8/3        True)  [brute agrees: True]
+  i = 1: sup = 10/2187          (<= 1/27         True)   l1 = 56/9         (== 8          False)  [brute agrees: True]
+  i = 2: sup = 10/59049         (<= 1/729        True)   l1 = 488/27       (== 24         False)
+  i = 3: sup = 10/1594323       (<= 1/19683      True)   l1 = 4376/81      (== 72         False)
+  i = 4: sup = 10/43046721      (<= 1/531441     True)   l1 = 39368/243    (== 216        False)
+  A2' VERDICT: FAIL
+
+--- A3  forward pipeline vs transpose kernel (disjoint code paths) ---
+  <K_0,u> = -1/54           phi_1 = -1/54           ok
+  <K_1,u> = -17/13122       phi_2 = -17/13122       ok
+  A3 VERDICT: PASS
+
+--- A0  the test profile v+ ---
+  (A0a) v+(s) <= (1+s)^-3 <= L^3 v+(s), s = 0..299 : True
+  (A0b) exact L-scale covariance of the staircase  : True
+  A0 VERDICT: PASS
+
+--- A4  the power of n_i: LI_i (axial line-integral block average) vs BA_i (full block average) ---
+  i = 0 (n_i = 1  ): LI_i = 1/27                           = 3.703704e-02    BA_i = 1                              = 1.000000e+00
+  i = 1 (n_i = 3  ): LI_i = 107/729                        = 1.467764e-01    BA_i = 107/2187                       = 4.892547e-02
+  i = 2 (n_i = 9  ): LI_i = 52183/1594323                  = 3.273051e-02    BA_i = 23513/4782969                  = 4.915984e-03
+  i = 3 (n_i = 27 ): LI_i = 17436415/3486784401            = 5.000715e-03    BA_i = 3160691/10460353203            = 3.021591e-04
+  LI ratios:
+     r_0 = 107/27                     = 3.962963   rho = -log_L r = -1.2534
+     r_1 = 52183/234009               = 0.222996   rho = -log_L r = 1.3659
+     r_2 = 17436415/114124221         = 0.152785   rho = -log_L r = 1.7101
+  LI VERDICT: (V-other)
+  BA ratios:
+     r_0 = 107/2187                   = 0.048925   rho = -log_L r = 2.7466
+     r_1 = 23513/234009               = 0.100479   rho = -log_L r = 2.0916
+     r_2 = 3160691/51422931           = 0.061465   rho = -log_L r = 2.5389
+  BA VERDICT: (V-other)
+  A4 VERDICT: LI = (V-other), BA = (V-other)  -> criteria INADEQUATE
+  A8 VERDICT (the band test reads both objects differently): FAIL
+
+--- A5  Phi_k(d delta_{c_X})(X) = L^{-Dk} - 1   (Proposition TGAUGE, TENTQ 2.7; outside formula) ---
+  k = 1: Phi_k = -80/81                   target -80/81                   ok
+  k = 2: Phi_k = -6560/6561               target -6560/6561               ok
+  A5 VERDICT: PASS
+
+--- A6  k-uniform lower bound on |Phi_k(u)| at k = 3  (u = (1/8) d* delta_p, admissible) ---
+  phi_1 = -1/432                   = -2.31481481e-03
+  phi_2 = -17/104976               = -1.61941777e-04
+  phi_3 = 0                        = +0.00000000e+00
+  (a) phi_1,phi_2 at k=3 equal (1/8)x their k=2 values (level/translation covariance): True
+  Phi_3 = -65/26244 = -2.47675659e-03 ;  ||u||_1 = 1/2 ;  tail bound sum_{i>=3} |phi_{i+1}| <= 1/37908 = 2.6380e-05
+  (b) |Phi_3| > 10 * tail : True  (ratio 93.9)
+  A6 VERDICT: PASS
+
+--- A7  DESIGNED-FAIL CONTROL: off(l) := 0 (block corner instead of block centre) ---
+  control phi_1 = 0                    A1 target -1/54
+  A7 VERDICT (control MUST fail A1's target): PASS
+
+========================================================================================================
+SUMMARY   A0 PASS | A1 PASS | A2 FAIL | A2' FAIL | A3 PASS | A4 FAIL | A5 PASS | A6 PASS | A7 PASS | A8 FAIL
+========================================================================================================

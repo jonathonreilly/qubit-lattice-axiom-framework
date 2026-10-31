@@ -1,0 +1,90 @@
+{
+  "schema": "scoped-source-review-receipt-v1",
+  "finished_utc": "2026-10-29T13:10:06.342872+00:00",
+  "source_commit": "731e46a915bccbc8b32beed8abdc96dc76976082",
+  "source_note_sha256": "2b5059568c92659717c0c021dd4460899408f7647ca8a3ea4a60b76809400ec8",
+  "methodology_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "reviewer": "same-family fresh context; Astra/max requested by coordinator; visible identity GPT-6",
+  "source_disposition": "confirmed finite support and conditional model corollary; actual lattice residual and T_OS open",
+  "material_source_repairs": 0,
+  "author_fix_iterations": 0,
+  "git_mutations": 0,
+  "pipeline_runs": 0,
+  "audit_authority_changes": 0,
+  "executions": [
+    {
+      "command": "python3 -B .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_01.py",
+      "exit_code": 1,
+      "passed": 51,
+      "total": 52,
+      "failure": "reviewer fixture Grams commute; preserved and resolved by separate fixture",
+      "started_utc": "2026-10-29T12:51:04.695504+00:00",
+      "finished_utc": "2026-10-29T12:51:41.368976+00:00"
+    },
+    {
+      "command": "python3 -B .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_02.py",
+      "exit_code": 0,
+      "passed": 27,
+      "total": 27,
+      "started_utc": "2026-10-29T12:57:03.938151+00:00",
+      "finished_utc": "2026-10-29T12:57:06.100500+00:00"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RESIDUAL_DETERMINANT_ASTRA.md",
+      "bytes": 28296,
+      "sha256": "3ec369126f85df9cc090cb92f136537c6cc422b7fb5ea107f91465a1f2e52038"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_criteria.md",
+      "bytes": 3485,
+      "sha256": "c6c836a87943d5fe0ad1b023550531e6a289f8ccfa06f3ce60c4e54a1879f2d3"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_01.py",
+      "bytes": 10730,
+      "sha256": "4613d433c1e332611176cbeef9fbe837821194fccb2eb6d18e864364d865b33c"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_01_out.json",
+      "bytes": 2930,
+      "sha256": "6f7f553cdda78996d52eed246a4e59140b424ca2c16c7432c1fb7ef0d90d2136"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_01_err.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_02_criteria.md",
+      "bytes": 1514,
+      "sha256": "16bc4bcb5ac495d53a0b14e3bc3a50024af81766c93b31990318e59b47e7cffa"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_02.py",
+      "bytes": 4697,
+      "sha256": "b520a7d122d7143580ad1ef874f4b670dde1c59861668e517690fc7552455c0b"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_02_out.json",
+      "bytes": 1470,
+      "sha256": "86c3a4a61f3f796f3c6df68ad8cbb5cb64a798dc4fb859787196b8e5456d9a1a"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_02_err.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_source_inventory.json",
+      "bytes": 4150,
+      "sha256": "ee0d09f4498ccd87fbe0865a54611d809be2a8f28fc45f17189ecd399aebc433"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_source_manifest.json",
+      "bytes": 19583,
+      "sha256": "4b7ad1f689a20d2f968f197dfb69e3594fe24c4f32a529ac1392cd25993fb832"
+    }
+  ]
+}

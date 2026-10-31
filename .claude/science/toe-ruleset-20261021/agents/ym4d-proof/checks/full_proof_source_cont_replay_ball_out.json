@@ -1,0 +1,23 @@
+{
+  "all_checks_pass": true,
+  "check_count": 5,
+  "checks": {
+    "D3_ball_probability_derivative_equals_full_surface_density": true,
+    "D3_direct_radial_integral_matches_moving_ball_probability": true,
+    "D3_normalized_flux_matches_direct_log_derivative": true,
+    "control_omitting_sphere_radius_power_fails": true,
+    "control_omitting_three_dimensional_jacobian_fails": true
+  },
+  "complex_affine_scale": "(1.0000004 + 0.0000008j)",
+  "dimension": 3,
+  "direct_log_derivative": "(0.0000006086662345940477995732064524248823483238053852868960202093486777683645 + 0.00000121732064005921052243032892087204535971507163574450034772814177692648j)",
+  "elapsed_seconds": 0.02867879200493917,
+  "flux_error": "1.727233711018888925077270372560079914223200072887256277004740694033718e-77",
+  "normalized_flux": "(0.0000006086662345940477995732064524248823483238053852868960202093486777683645 + 0.00000121732064005921052243032892087204535971507163574450034772814177692648j)",
+  "precision_decimal_digits": 70,
+  "radial_error": "9.05567907885245015545642285988196561270455639398830735717217145393883e-72",
+  "recorded_utc": "2026-10-29T14:31:06.036891+00:00",
+  "scope": "One exact symbolic surface normalization and high-precision complex Gaussian radial diagnostics; not an interval certificate or a Yang--Mills integration.",
+  "symbolic_probability": "-sqrt(2)*r*exp(-r**2/2)/sqrt(pi) + erf(sqrt(2)*r/2)",
+  "symbolic_surface_density": "sqrt(2)*r**2*exp(-r**2/2)/sqrt(pi)"
+}

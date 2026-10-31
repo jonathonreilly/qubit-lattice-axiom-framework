@@ -1,0 +1,176 @@
+{
+  "kind": "bounded_actual_read_manifest",
+  "created_at_utc": "2026-10-30T05:56:24.153796+00:00",
+  "read_claim": "Inclusive bounded coverage only; search hits outside these ranges are not claimed as complete reads. No IC/GC/OC/RD theorem is consumed for the assembled chart identity.",
+  "source_first_findings_sha256": "5504527f6e2c3d99cf1c06bc240a51adbbaee8737d27cd41df1b3c8be9819f96",
+  "files": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+      "line_count": 711,
+      "read_ranges_inclusive": [
+        [
+          1,
+          711
+        ]
+      ],
+      "complete_read": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_DETERMINANT_READER_ASTRA.md",
+      "sha256": "bd33e000b839fe79e9a9bceda43d9b28b370e69717f0cedb8d1c14336642b755",
+      "line_count": 397,
+      "read_ranges_inclusive": [
+        [
+          1,
+          397
+        ]
+      ],
+      "complete_read": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHRINKING_CHART_RETURN_ASTRA.md",
+      "sha256": "9ae446ca746639ff77295f9da712f47e4be9d315d7c26e975535f1602321abfc",
+      "line_count": 247,
+      "read_ranges_inclusive": [
+        [
+          1,
+          247
+        ]
+      ],
+      "complete_read": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_ACTION_READER_ASTRA.md",
+      "sha256": "a466d55444d17c0d54fe9efecabc956ac5e3fcf9c61fdc0780d9248dabaf62fd",
+      "line_count": 238,
+      "read_ranges_inclusive": [
+        [
+          1,
+          238
+        ]
+      ],
+      "complete_read": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "line_count": 556,
+      "read_ranges_inclusive": [
+        [
+          1,
+          520
+        ]
+      ],
+      "complete_read": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "line_count": 568,
+      "read_ranges_inclusive": [
+        [
+          1,
+          430
+        ]
+      ],
+      "complete_read": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "line_count": 812,
+      "read_ranges_inclusive": [
+        [
+          320,
+          377
+        ],
+        [
+          670,
+          680
+        ]
+      ],
+      "complete_read": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "line_count": 713,
+      "read_ranges_inclusive": [
+        [
+          1,
+          585
+        ]
+      ],
+      "complete_read": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+      "sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+      "line_count": 624,
+      "read_ranges_inclusive": [
+        [
+          1,
+          340
+        ]
+      ],
+      "complete_read": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "line_count": 722,
+      "read_ranges_inclusive": [
+        [
+          1,
+          160
+        ],
+        [
+          195,
+          315
+        ]
+      ],
+      "complete_read": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8",
+      "line_count": 543,
+      "read_ranges_inclusive": [
+        [
+          1,
+          450
+        ]
+      ],
+      "complete_read": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_CHART_RETURN_ASTRA.md",
+      "sha256": "88b5b59feaf278d9b9995adc320a446363fa68887d277ca4315c6469fb3aa525",
+      "line_count": 508,
+      "read_ranges_inclusive": [
+        [
+          36,
+          195
+        ],
+        [
+          250,
+          285
+        ]
+      ],
+      "complete_read": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "line_count": 11,
+      "read_ranges_inclusive": [
+        [
+          1,
+          11
+        ]
+      ],
+      "complete_read": true
+    }
+  ]
+}

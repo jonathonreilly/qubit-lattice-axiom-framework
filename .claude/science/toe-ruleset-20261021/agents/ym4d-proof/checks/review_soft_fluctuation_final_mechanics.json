@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-10-29T19:25:24.439404+00:00",
+  "source_sha256": "327d033b22281f5f727c018ccb9b1d23d8f7d131bd3633602d6655a9b3de2403",
+  "report_links_checked": 23,
+  "issues": [],
+  "in_memory_python_compile": [
+    "review_soft_fluctuation_independent_02.py",
+    "review_soft_fluctuation_additional_02.py",
+    "review_soft_fluctuation_chart_02.py",
+    "review_soft_fluctuation_chart_affected_01.py"
+  ],
+  "original_failed_scripts_compiled": false,
+  "reason_originals_not_compiled": "Preserved failures are evidence, not runnable current checks.",
+  "whole_PR_or_pipeline_check": false,
+  "report_sha256": "e4eef0f7993006558783a58a4aaf132ba3032cecea25c98556d443a391bbd6b5"
+}

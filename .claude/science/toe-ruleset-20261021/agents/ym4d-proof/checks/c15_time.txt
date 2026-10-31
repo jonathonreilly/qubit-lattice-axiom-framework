@@ -1,0 +1,20 @@
+/Users/jonreilly/Projects/Physics/.claude/worktrees/peaceful-heisenberg-e2d2a0/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/c15_mk_interface.py:222: RuntimeWarning: invalid value encountered in scalar divide
+  print(f"INFO {nm}: R(int) steps " + ",".join(f"{rr[i + 1][1] / rr[i][1]:.3f}" for i in range(len(rr) - 1))
+        5.03 real         4.92 user         0.07 sys
+           262995968  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               23587  page reclaims
+                 178  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 115  voluntary context switches
+                1186  involuntary context switches
+         86830433975  instructions retired
+         16436404949  cycles elapsed
+           259343032  peak memory footprint

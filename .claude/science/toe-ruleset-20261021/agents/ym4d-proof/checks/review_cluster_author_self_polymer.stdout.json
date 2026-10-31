@@ -1,0 +1,55 @@
+{
+  "all_checks_pass": false,
+  "arithmetic": "Python standard-library Fraction, no floating-point calculations.",
+  "checks": {
+    "all_log_source_dependencies_inside_support": true,
+    "all_log_supports_connected": true,
+    "analytic_example_rational_margins": true,
+    "direct_log_equals_connected_log_to_degree_6": false,
+    "direct_partition_equals_connected_gas": true,
+    "dropped_determinant_detected_at_H_zero": true,
+    "finite_operator_majorants": true,
+    "full_logdet_two_exact_paths": true,
+    "long_jump_connector_label_valid": true,
+    "long_jump_endpoint_only_label_detected": true,
+    "long_jump_source_coefficient": true,
+    "remote_log_coefficient_reproduced": true,
+    "remote_parameter_connector_label_valid": true,
+    "remote_parameter_wrong_label_detected": true,
+    "sign_corruption_detected": true
+  },
+  "normalizer_check": {
+    "incorrect_omitted_factor_prediction": "0",
+    "logdet_derivative_from_gauss_jordan_inverse_trace": "1/1073741822",
+    "logdet_derivative_from_permutation_determinant": "1/1073741822",
+    "nonlinear_interaction_H": 0
+  },
+  "operator_check": {
+    "h_local_proved_upper": "3/64",
+    "induced_path_graphs_checked": 510,
+    "maximum_column": "729/8192",
+    "maximum_row": "729/8192",
+    "maximum_support_incidence": "729/4096",
+    "path_vertex_counts": [
+      1,
+      8
+    ],
+    "universal_scope_from_proof": "maximum degree two; finite scan is not the proof",
+    "weighted_entry_upper": "729/16384"
+  },
+  "scope": "Exact finite algebraic checks; no Yang--Mills or limiting certificate.",
+  "script_sha256": "2a0952edfb550604672a6fb790336370b1e2d3ed92980a45c28e91fb75486815",
+  "spin_check": {
+    "gas_supports": 6,
+    "interaction_factors": 8,
+    "log_nonzero_monomials_through_t6": 19,
+    "long_source_log_coefficient_t3": "1/1134432",
+    "maximum_polymer_count_in_log_check": 2,
+    "nonempty_factor_subsets": 255,
+    "nonzero_connected_subsets_after_parity": 14,
+    "overlap_connected_subsets": 176,
+    "partition_nonzero_monomials": 13,
+    "sign_corruption_coefficient_t3": "-1/1134432",
+    "spin_configurations": 16
+  }
+}

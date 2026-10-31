@@ -1,0 +1,333 @@
+{
+  "schema": "bounded_author_actual_reads_v1",
+  "author": "/root/review_hrp_half_arc",
+  "role": "author, not independent reviewer of these changes",
+  "requested_configuration": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "max",
+    "attestation": "Requested by coordinator/user; runtime model and effort not independently attested here."
+  },
+  "baseline_revision": "814364fcc7dbcf0ff4146f6766e98890124ac905",
+  "pinned_origin_main": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "created_utc": "2026-10-30T00:34:32.034744+00:00",
+  "science_reads": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OSLEAF55.md",
+      "revision": "814364fcc7dbcf0ff4146f6766e98890124ac905",
+      "sha256": "7f73bedc795e9356f65651a0d39b1fd3e8300fb460846cf84a45f0c5307f0c1c",
+      "bytes": 98437,
+      "lines": 934,
+      "read_ranges": [
+        {
+          "start": 1,
+          "end": 581,
+          "sha256": "1d5a4c75df9d2c23b53d2d234a641c577c5b89f8cc59f94e235802e7326bb9e9"
+        },
+        {
+          "start": 620,
+          "end": 934,
+          "sha256": "978f8c8e17baca957fd3edb912be174e4e2ec78548068789adc05832fbb64404"
+        }
+      ],
+      "coverage_and_limits": "Baseline text: prior frozen review coverage reused at identical hash; all newly affected reconstruction, growth, tensor, summary and BRIDGE consumer regions freshly read. The full exact author diff is read separately. No global EXT/sphere/UV certification."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSEMBLY55.md",
+      "revision": "814364fcc7dbcf0ff4146f6766e98890124ac905",
+      "sha256": "253ea55619c7fd09d278add27b840c989a2a35160eb22a0385ea700f01fac9c7",
+      "bytes": 84890,
+      "lines": 747,
+      "read_ranges": [
+        {
+          "start": 1,
+          "end": 60,
+          "sha256": "a0f5935f70aa6ed253150c540108f3e9e5318852e9a3080fbb87eabe1977e691"
+        },
+        {
+          "start": 126,
+          "end": 184,
+          "sha256": "e852bd8178e8e854ac57df8fa1440ea43a7fb43af3b5cf91289412a3e21223cb"
+        },
+        {
+          "start": 210,
+          "end": 253,
+          "sha256": "3dd6d1b52b39ace88c19908c9f0ad1045b7727ba548f60a288a6aea9fc8e4c49"
+        },
+        {
+          "start": 398,
+          "end": 422,
+          "sha256": "5d714736520d36171151d00bb86d3d7294dbd97a7e796e41999991a2c136362b"
+        },
+        {
+          "start": 523,
+          "end": 576,
+          "sha256": "3482f942f3327584c55c3a0899be4630eba6779a35ecf1458727b598604af110"
+        },
+        {
+          "start": 584,
+          "end": 747,
+          "sha256": "99b4b69ceb05c0175988306ba97c6724b239b10fc6ee00558417a40c64ccf388"
+        }
+      ],
+      "coverage_and_limits": "Baseline affected N9/ML2/ML9/item18/summary recommendations read; earlier N1 and arrow coverage reused at identical hash. Not the whole assembly proof."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REC_LIB.md",
+      "revision": "814364fcc7dbcf0ff4146f6766e98890124ac905",
+      "sha256": "47dd75c7ca3c4f9f1af43139292d1fcfa6774b10f8e6ea2babc05ad67a48e29a",
+      "bytes": 75139,
+      "lines": 1316,
+      "read_ranges": [
+        {
+          "start": 1,
+          "end": 385,
+          "sha256": "04d8ceaa52a1f9fc71f58b95776428533ceddc3402c2d197e83f91c91a5fb124"
+        },
+        {
+          "start": 782,
+          "end": 1316,
+          "sha256": "fae0c3d087cb31915199601cd2b205e16ccbff2893eedb44ddd477677924a17a"
+        }
+      ],
+      "coverage_and_limits": "Actual definitions, semigroup and one-cut proof, exact continuation contract, physical-gap scope, finite Cartesian dictionary, complete GROW implication, final assembled theorem and producer/consumer limitations. Lines 386–781 not reread for this authorship; no fresh independent whole-producer certification."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REC_CONT.md",
+      "revision": "814364fcc7dbcf0ff4146f6766e98890124ac905",
+      "sha256": "ac7ac0854fb320f183779f67be136063dfb750ee3f13b869acad10a7ac12a278",
+      "bytes": 52198,
+      "lines": 1054,
+      "read_ranges": [
+        {
+          "start": 1,
+          "end": 125,
+          "sha256": "64135261525cf91ca09646d7afd65b098f5d1e3599df4c71121f3b5645b28da9"
+        },
+        {
+          "start": 955,
+          "end": 1054,
+          "sha256": "62916e600cadf24098b1c73a646079cfdbdfd26c21879c54889211aa97a4ec64"
+        }
+      ],
+      "coverage_and_limits": "Actual target, same-hierarchy E0-prime hypotheses, single-cut scope, final tensor dictionary and completed target. Interior continuation proofs are covered by REVIEW2_REC, not re-certified in this author pass."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW2_REC.md",
+      "revision": "814364fcc7dbcf0ff4146f6766e98890124ac905",
+      "sha256": "22d9d87c16d68a88aebb6ccc82cfceefa8b25a122268a71f14c12af876d4ec89",
+      "bytes": 22393,
+      "lines": 337,
+      "read_ranges": [
+        {
+          "start": 1,
+          "end": 337,
+          "sha256": "22d9d87c16d68a88aebb6ccc82cfceefa8b25a122268a71f14c12af876d4ec89"
+        }
+      ],
+      "coverage_and_limits": "Read in full, including both findings and all consumer limitations; the existing verdict is used only to identify reviewed producer standing."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_TARGET.md",
+      "revision": "814364fcc7dbcf0ff4146f6766e98890124ac905",
+      "sha256": "105440c10b9a2fc91b2be366f439053de05fd3d3497596f8f28993b0fe42de7b",
+      "bytes": 7507,
+      "lines": 133,
+      "read_ranges": [
+        {
+          "start": 1,
+          "end": 70,
+          "sha256": "77223806769f3eb6b285a07dc44aa50c9c57f8b6a8e1d1caf690f20f70deac06"
+        }
+      ],
+      "coverage_and_limits": "Expanded full physical target and conditional dense-family criterion; no mass-gap proof claimed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/ol55_1_conventions.py",
+      "revision": "814364fcc7dbcf0ff4146f6766e98890124ac905",
+      "sha256": "c0ca04a62d0899d988b240335be10e78f4000d2eb2e619e58e4093c61e86378b",
+      "bytes": 6493,
+      "lines": 173,
+      "read_ranges": [
+        {
+          "start": 65,
+          "end": 155,
+          "sha256": "59d009cf2f1bfb4ecdfc37ccff358a3f4803984987feebe38c6ccbd23b2b6443"
+        }
+      ],
+      "coverage_and_limits": "Source only: commuting moments, theta-star, full bra-tuple summation and controls. Not executed. The reversal blind spot follows by reindexing."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "revision": "814364fcc7dbcf0ff4146f6766e98890124ac905",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497,
+      "lines": 11,
+      "read_ranges": [
+        {
+          "start": 1,
+          "end": 11,
+          "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab"
+        }
+      ],
+      "coverage_and_limits": "Complete effective owner process; in-place correction and fresh independent review required."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HRP.md",
+      "revision": "814364fcc7dbcf0ff4146f6766e98890124ac905",
+      "sha256": "d3a53ef3b29d09c774b1a836603ca731eeadb580127d3928dbbcd5dbe343699e",
+      "bytes": 51835,
+      "lines": 838,
+      "read_ranges": [
+        {
+          "start": 1,
+          "end": 838,
+          "sha256": "d3a53ef3b29d09c774b1a836603ca731eeadb580127d3928dbbcd5dbe343699e"
+        }
+      ],
+      "coverage_and_limits": "Prior completed independent review read reused at identical full hash. Current authorship preserves all bytes and rechecks the frozen RP subtexts; no new HRP verdict."
+    }
+  ],
+  "methodology_reads": [
+    {
+      "path": "AGENTS.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "bytes": 1118,
+      "coverage": "Prior context complete read, reused at the same pinned origin/main content; no new scientific premise."
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "bytes": 11788,
+      "coverage": "Prior context complete read, reused at the same pinned origin/main content; no new scientific premise."
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "coverage": "Prior context complete read, reused at the same pinned origin/main content; no new scientific premise."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "bytes": 24561,
+      "coverage": "Prior context complete read, reused at the same pinned origin/main content; no new scientific premise."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "bytes": 5188,
+      "coverage": "Prior context complete read, reused at the same pinned origin/main content; no new scientific premise."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "bytes": 12608,
+      "coverage": "Prior context complete read, reused at the same pinned origin/main content; no new scientific premise."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "bytes": 12940,
+      "coverage": "Prior context complete read, reused at the same pinned origin/main content; no new scientific premise."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "bytes": 7554,
+      "coverage": "Prior context complete read, reused at the same pinned origin/main content; no new scientific premise."
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "bytes": 23216,
+      "coverage": "Prior context complete read, reused at the same pinned origin/main content; no new scientific premise."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "bytes": 5767,
+      "coverage": "Prior context complete read, reused at the same pinned origin/main content; no new scientific premise."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "bytes": 16755,
+      "coverage": "Prior context complete read, reused at the same pinned origin/main content; no new scientific premise."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "coverage": "Prior context complete read, reused at the same pinned origin/main content; no new scientific premise."
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "bytes": 6427,
+      "coverage": "Prior context complete read, reused at the same pinned origin/main content; no new scientific premise."
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333,
+      "coverage": "Prior context complete read, reused at the same pinned origin/main content; no new scientific premise."
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416,
+      "coverage": "Prior context complete read, reused at the same pinned origin/main content; no new scientific premise."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "read_ranges": [
+        {
+          "start": 1,
+          "end": 309,
+          "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+        }
+      ],
+      "coverage": "Current author-pass read; only the listed ranges claim coverage. Coordinator owns campaign/Git/publication duties."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "read_ranges": [
+        {
+          "start": 1,
+          "end": 120,
+          "sha256": "e720305776d68f960179ac07da1facd868a70182dd92d371cdfc95b4debe8639"
+        }
+      ],
+      "coverage": "Current author-pass read; only the listed ranges claim coverage. Coordinator owns campaign/Git/publication duties."
+    }
+  ],
+  "prior_coverage_receipt": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_hrp_half_arc_read_manifest.json",
+    "sha256": "987813bfabea7007d40cd055fadc61a48f68ab219eaf1b773e0bf387393d5936"
+  },
+  "new_diff_read": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/rec_consumer_alignment_source.diff",
+    "sha256": "911c14e8bfd193d7b183921db91bdb1dea60fdfd3b72d5b2a926d83e1e63ef94",
+    "coverage": "Complete two-file diff inspected in bounded sections, including the translation derivation, GROW proof, tensor dictionary, all changed consumers and the final small clarifications."
+  },
+  "coverage_rule": "Hash-only preservation checks confer no mathematical read or certification. Truncated outputs confer only the explicitly recovered coverage."
+}

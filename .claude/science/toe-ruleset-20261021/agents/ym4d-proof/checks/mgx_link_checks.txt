@@ -1,0 +1,3 @@
+Corrected mechanical link inspection; excludes Markdown code, no scientific computation.
+Author-note local links: resolved
+The initial false positive on C^n remains preserved in mgx_author_checks.txt.

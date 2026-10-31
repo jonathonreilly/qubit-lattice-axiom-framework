@@ -1,0 +1,19 @@
+{
+  "kind": "deterministic document/source validation; not a numerical physics test",
+  "head": "295b508bea2c65bf548172f3190e32f7f7eaf6cf",
+  "RD_sha256": "a60232a648e9832d0223cc0fa06ef84d8dbfe54fa91f875a8c96c3f89140aba5",
+  "RD_LOG_sha256": "35c008ee0baf39e73a1d075e4b105ea54c39d0a8d34bd5a0b4314715ce56b506",
+  "preexisting_changed": [
+    "RD.md",
+    "RD_LOG.md"
+  ],
+  "deleted": [],
+  "new": [
+    "checks/rd2_source_inventory.json"
+  ],
+  "out_of_scope_changes": [],
+  "issues": [],
+  "validation_notes": [
+    "Initial tag scanner counted prose references, then a revised scanner missed label-only equation lines; inspecting all declarations and using the correct indented-line parser found all 18 exactly once. These were validation-parser false alarms, not mathematical test failures."
+  ]
+}

@@ -1,0 +1,694 @@
+{
+  "schema": "bounded-review-identity-validation-v1",
+  "utc": "2026-10-29T17:07:35.730107+00:00",
+  "report_sha256": "2f41121ba740c77040f24be09a15f6671af3691dc28721400f5786722e49ba58",
+  "manifest_sha256": "d1d6f5b1d52e56e9a993e4382bc9994ea15c9179951d4fdde1d5da2050b96f5a",
+  "receipt_sha256": "b772b4e9497c9108d592eb6a80b95e7cb64d8ecef8782db385dc62b32b944ce4",
+  "passed": 130,
+  "total": 130,
+  "checks": [
+    {
+      "name": "main frozen repaired hash",
+      "passed": true
+    },
+    {
+      "name": "supplement frozen hash",
+      "passed": true
+    },
+    {
+      "name": "report receipt binding",
+      "passed": true
+    },
+    {
+      "name": "manifest receipt binding",
+      "passed": true
+    },
+    {
+      "name": "artifact hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_attempt01.py",
+      "passed": true
+    },
+    {
+      "name": "artifact hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_attempt01.receipt.json",
+      "passed": true
+    },
+    {
+      "name": "artifact hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_attempt01.stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "artifact hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_attempt01.stdout.json",
+      "passed": true
+    },
+    {
+      "name": "artifact hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_attempt02.py",
+      "passed": true
+    },
+    {
+      "name": "artifact hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_attempt02.receipt.json",
+      "passed": true
+    },
+    {
+      "name": "artifact hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_attempt02.stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "artifact hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_attempt02.stdout.json",
+      "passed": true
+    },
+    {
+      "name": "artifact hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_attempt03.py",
+      "passed": true
+    },
+    {
+      "name": "artifact hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_attempt03.receipt.json",
+      "passed": true
+    },
+    {
+      "name": "artifact hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_attempt03.stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "artifact hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_attempt03.stdout.json",
+      "passed": true
+    },
+    {
+      "name": "artifact hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_criteria.md",
+      "passed": true
+    },
+    {
+      "name": "artifact hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_independent.py",
+      "passed": true
+    },
+    {
+      "name": "artifact hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_literature.md",
+      "passed": true
+    },
+    {
+      "name": "artifact hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_literature_criteria.md",
+      "passed": true
+    },
+    {
+      "name": "artifact hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_literature_exact.py",
+      "passed": true
+    },
+    {
+      "name": "artifact hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_literature_results.json",
+      "passed": true
+    },
+    {
+      "name": "artifact hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_literature_run.json",
+      "passed": true
+    },
+    {
+      "name": "artifact hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_literature_stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "artifact hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_downloads.json",
+      "passed": true
+    },
+    {
+      "name": "artifact hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_primary_validation.json",
+      "passed": true
+    },
+    {
+      "name": "artifact hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_research_relocation.json",
+      "passed": true
+    },
+    {
+      "name": "artifact hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_vocab.json",
+      "passed": true
+    },
+    {
+      "name": "artifact hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "passed": true
+    },
+    {
+      "name": "source hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md @ 47a916398fb58231d809695485812faf25c70ce9",
+      "passed": true
+    },
+    {
+      "name": "source hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_LOCAL_BLOCK_ASTRA.md @ 1d221a0063566d5270b60cc543690d7c4d8c68ba",
+      "passed": true
+    },
+    {
+      "name": "source hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_injectivity.md @ 47a916398fb58231d809695485812faf25c70ce9",
+      "passed": true
+    },
+    {
+      "name": "source hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_TARGET.md @ 8b38c6f7b802479f763bc995d96ee45fdcc03795",
+      "passed": true
+    },
+    {
+      "name": "source hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_CONSTRUCTION_ASTRA.md @ 0cf473e3ef0c96ad31f0ecb1443690486cfbedb8",
+      "passed": true
+    },
+    {
+      "name": "source hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_CONSTRUCTION_ASTRA.md @ 94baab819b7eb80087f7616b4eaad799fa1a2541",
+      "passed": true
+    },
+    {
+      "name": "source hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md @ 63e393bb56f1c51733aabedfca20b65786ee87f3",
+      "passed": true
+    },
+    {
+      "name": "source hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/HIST.md @ 63e393bb56f1c51733aabedfca20b65786ee87f3",
+      "passed": true
+    },
+    {
+      "name": "source hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md @ 63e393bb56f1c51733aabedfca20b65786ee87f3",
+      "passed": true
+    },
+    {
+      "name": "source hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_manifest.json @ 47a916398fb58231d809695485812faf25c70ce9",
+      "passed": true
+    },
+    {
+      "name": "source hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_freeze.json @ 47a916398fb58231d809695485812faf25c70ce9",
+      "passed": true
+    },
+    {
+      "name": "source hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_criteria.md @ 47a916398fb58231d809695485812faf25c70ce9",
+      "passed": true
+    },
+    {
+      "name": "source hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_exact.py @ 47a916398fb58231d809695485812faf25c70ce9",
+      "passed": true
+    },
+    {
+      "name": "source hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_injectivity_criteria.md @ 47a916398fb58231d809695485812faf25c70ce9",
+      "passed": true
+    },
+    {
+      "name": "source hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/massgap_block_injectivity_exact.py @ 47a916398fb58231d809695485812faf25c70ce9",
+      "passed": true
+    },
+    {
+      "name": "source hash .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_massgap_block_link_fix.json @ 1d221a0063566d5270b60cc543690d7c4d8c68ba",
+      "passed": true
+    },
+    {
+      "name": "source hash AGENTS.md @ ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "passed": true
+    },
+    {
+      "name": "source hash docs/ai_methodology/SCIENCE_WORKFLOW.md @ ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "passed": true
+    },
+    {
+      "name": "source hash docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md @ ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "passed": true
+    },
+    {
+      "name": "source hash docs/ai_methodology/skills/physics-loop/SKILL.md @ ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "passed": true
+    },
+    {
+      "name": "source hash docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md @ ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "passed": true
+    },
+    {
+      "name": "source hash docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md @ ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "passed": true
+    },
+    {
+      "name": "source hash docs/ai_methodology/skills/physics-loop/references/DELIVERY.md @ ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "passed": true
+    },
+    {
+      "name": "source hash docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md @ ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "passed": true
+    },
+    {
+      "name": "source hash docs/ai_methodology/skills/physics-loop/references/literature-bridge-protocol.md @ ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "passed": true
+    },
+    {
+      "name": "source hash docs/ai_methodology/skills/review-loop/SKILL.md @ ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "passed": true
+    },
+    {
+      "name": "source hash docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md @ ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "passed": true
+    },
+    {
+      "name": "source hash docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md @ ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "passed": true
+    },
+    {
+      "name": "source hash docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md @ ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "passed": true
+    },
+    {
+      "name": "source hash docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md @ ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "passed": true
+    },
+    {
+      "name": "source hash docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md @ ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "passed": true
+    },
+    {
+      "name": "source hash docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md @ ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "passed": true
+    },
+    {
+      "name": "source hash docs/ai_methodology/skills/no-go-discipline/SKILL.md @ ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "passed": true
+    },
+    {
+      "name": "source hash docs/MINIMAL_AXIOMS_2026-06-29.md @ ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "passed": true
+    },
+    {
+      "name": "source hash docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md @ ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "passed": true
+    },
+    {
+      "name": "source hash docs/audit/data/axiom_premise_nodes.json @ ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "passed": true
+    },
+    {
+      "name": "source hash docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md @ ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "passed": true
+    },
+    {
+      "name": "source hash docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md @ ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "passed": true
+    },
+    {
+      "name": "source hash docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md @ ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "passed": true
+    },
+    {
+      "name": "source hash /Users/jonBridger/.codex/skills/physics-loop/SKILL.md @ None",
+      "passed": true
+    },
+    {
+      "name": "source hash /Users/jonBridger/.codex/skills/review-loop/SKILL.md @ None",
+      "passed": true
+    },
+    {
+      "name": "source hash docs/WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md @ ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "passed": true
+    },
+    {
+      "name": "source hash docs/WILSON_STAGGERED_RAW_CONSTRAINED_ACTION_HESSIAN_DECAY_BOUNDED_THEOREM_NOTE_2026-07-12.md @ ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "passed": true
+    },
+    {
+      "name": "source hash docs/NATIVE_GAUGE_TRANSFER_STRONG_COUPLING_GAP_NARROW_THEOREM_NOTE_2026-06-12.md @ ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "passed": true
+    },
+    {
+      "name": "source hash docs/FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md @ ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "passed": true
+    },
+    {
+      "name": "local-only research /tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_chatterjee_v5.pdf",
+      "passed": true
+    },
+    {
+      "name": "local-only research /tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_comparison_v1.pdf",
+      "passed": true
+    },
+    {
+      "name": "local-only research /tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_faizal_v1.pdf",
+      "passed": true
+    },
+    {
+      "name": "local-only research /tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_ito_seiler_v1.pdf",
+      "passed": true
+    },
+    {
+      "name": "local-only research /tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_luscher.pdf",
+      "passed": true
+    },
+    {
+      "name": "local-only research /tmp/ym-review-massgap-block-research-20261029/review_massgap_block_primary_szz_v1.pdf",
+      "passed": true
+    },
+    {
+      "name": "local-only research /tmp/ym-review-massgap-block-research-20261029/review_massgap_block_kirk_v4.pdf",
+      "passed": true
+    },
+    {
+      "name": "local-only research /tmp/ym-review-massgap-block-research-20261029/review_massgap_block_kirk_v4.txt",
+      "passed": true
+    },
+    {
+      "name": "no control bytes REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "passed": true
+    },
+    {
+      "name": "no trailing whitespace REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link checks/massgap_block_injectivity.md",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link checks/massgap_block_manifest.json",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link checks/massgap_block_freeze.json",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link checks/full_proof_massgap_block_link_fix.json",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link MASS_GAP_TARGET.md",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link MASS_GAP_CONSTRUCTION_ASTRA.md",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link REVIEW_MASS_GAP_CONSTRUCTION_ASTRA.md",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link ../../../../../docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link ../../../../../docs/ai_methodology/skills/review-loop/SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link checks/review_massgap_block_manifest.json",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link checks/review_massgap_block_criteria.md",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link checks/review_massgap_block_independent.py",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link checks/review_massgap_block_attempt03.stdout.json",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link checks/review_massgap_block_attempt01.py",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link checks/review_massgap_block_attempt01.stderr.txt",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link checks/review_massgap_block_attempt02.py",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link checks/review_massgap_block_attempt02.stdout.json",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link checks/review_massgap_block_attempt03.py",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link checks/review_massgap_block_attempt03.receipt.json",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link checks/review_massgap_block_literature.md",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link ../../../../../docs/audit/data/axiom_premise_nodes.json",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link ../../../../../docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link ../../../../../docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link ../../../../../docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link checks/review_massgap_block_manifest.json",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link checks/review_massgap_block_receipt.json",
+      "passed": true
+    },
+    {
+      "name": "no control bytes review_massgap_block_criteria.md",
+      "passed": true
+    },
+    {
+      "name": "no trailing whitespace review_massgap_block_criteria.md",
+      "passed": true
+    },
+    {
+      "name": "no control bytes review_massgap_block_literature.md",
+      "passed": true
+    },
+    {
+      "name": "no trailing whitespace review_massgap_block_literature.md",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link ../REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link review_massgap_block_literature_exact.py",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link review_massgap_block_literature_criteria.md",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link review_massgap_block_literature_results.json",
+      "passed": true
+    },
+    {
+      "name": "local Markdown link ../../../../../../docs/ai_methodology/skills/physics-loop/references/literature-bridge-protocol.md",
+      "passed": true
+    },
+    {
+      "name": "no control bytes review_massgap_block_literature_criteria.md",
+      "passed": true
+    },
+    {
+      "name": "no trailing whitespace review_massgap_block_literature_criteria.md",
+      "passed": true
+    },
+    {
+      "name": "balanced report inline math delimiters",
+      "passed": true
+    },
+    {
+      "name": "balanced report display math delimiters",
+      "passed": true
+    },
+    {
+      "name": "112 independent predicates and 13 mutations",
+      "passed": true
+    },
+    {
+      "name": "independent runner result hash",
+      "passed": true
+    },
+    {
+      "name": "8 exact external-implication predicates",
+      "passed": true
+    },
+    {
+      "name": "syntax review_massgap_block_independent.py",
+      "passed": true
+    },
+    {
+      "name": "syntax review_massgap_block_literature_exact.py",
+      "passed": true
+    },
+    {
+      "name": "no third-party PDFs/text remain in publication prefix",
+      "passed": true
+    }
+  ],
+  "local_markdown_links": [
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "checks/massgap_block_injectivity.md",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "checks/massgap_block_manifest.json",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "checks/massgap_block_freeze.json",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "checks/full_proof_massgap_block_link_fix.json",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "MASS_GAP_TARGET.md",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "MASS_GAP_CONSTRUCTION_ASTRA.md",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "REVIEW_MASS_GAP_CONSTRUCTION_ASTRA.md",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "../../../../../docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "../../../../../docs/ai_methodology/skills/review-loop/SKILL.md",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "checks/review_massgap_block_manifest.json",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "checks/review_massgap_block_criteria.md",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "checks/review_massgap_block_independent.py",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "checks/review_massgap_block_attempt03.stdout.json",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "checks/review_massgap_block_attempt01.py",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "checks/review_massgap_block_attempt01.stderr.txt",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "checks/review_massgap_block_attempt02.py",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "checks/review_massgap_block_attempt02.stdout.json",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "checks/review_massgap_block_attempt03.py",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "checks/review_massgap_block_attempt03.receipt.json",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "checks/review_massgap_block_literature.md",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "../../../../../docs/audit/data/axiom_premise_nodes.json",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "../../../../../docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "../../../../../docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "../../../../../docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "checks/review_massgap_block_manifest.json",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "target": "checks/review_massgap_block_receipt.json",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_literature.md",
+      "target": "../REVIEW_MASS_GAP_LOCAL_BLOCK_ASTRA.md",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_literature.md",
+      "target": "review_massgap_block_literature_exact.py",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_literature.md",
+      "target": "review_massgap_block_literature_criteria.md",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_literature.md",
+      "target": "review_massgap_block_literature_results.json",
+      "exists": true
+    },
+    {
+      "from": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_block_literature.md",
+      "target": "../../../../../../docs/ai_methodology/skills/physics-loop/references/literature-bridge-protocol.md",
+      "exists": true
+    }
+  ],
+  "scope": "Identity/format checks only; no new scientific runner execution and no audit authority."
+}

@@ -1,0 +1,34 @@
+--- frozen_v1_OSLEAF55.md
++++ frozen_v2_OSLEAF55.md
+@@ -920,11 +920,26 @@
+ and c_SP ≥ 1 such that for all a ∈ (0, 1], R ≥ 32, n ≥ 2, λ ∈ [c_SPa, 1] and all f_1, …, f_n ∈ C_c^∞(R^4; C), each supported in
+ a cube of side 2 inside B_{R/4}, pairwise at distance ≥ λ:
+   |S^{a,R}_n(f_1 ⊗ ⋯ ⊗ f_n)| ≤ A^n(n!)^b λ^{−pn} Π_i ‖f_i‖_{λ,r},  ‖f‖_{λ,r} := max_{|γ|≤r} λ^{|γ|}‖∂^γf‖_∞,
+-and the same with λ = 1 for separations ≥ 1. Equivalent and natural RG forms: (a) the same bound for conditional CUMULANTS
+-(moments then follow by the partition sum, b → b + 1, since every sub-block of a separated family is separated); (b) the
+-coarse-image form sup_V|E_{a,R}[Π_iÕ_a(f_i) | V]| ≤ (same right side) for every coarse field V — the shape of SEAM55's
+-(SRC-E′_∞) with the separation and n quantified — which implies (SP_λ) by averaging over V (|ω(F)| = |ν(E[F|V])| ≤
+-sup_V|E[F|V]|). SEAM55's (H2) ("U-sep at the lattice level … for separated supports, with A, b, p independent of R ≥ R_0
++and the same with λ = 1 for separations ≥ 1. These are UNCONDITIONAL moment bounds. The following are sufficient stronger
++inputs, not equivalent formulations of (SP_λ):
++
++(a) Fix the actual coarse marginal ν and its conditional law. For every admissible separated family above and EVERY
++nonempty block B of its labels, INCLUDING |B|=1, assume the uniform conditional-cumulant bound
++  ess sup_V |κ_V(Õ_a(f_i):i∈B)| ≤ A^{|B|}(|B|!)^b λ^{−p|B|} Π_{i∈B}‖f_i‖_{λ,r}.
++The essential supremum is with respect to ν. The same A,b,p,r must work for all blocks, cutoffs, volumes, degrees and
++placements, with the same λ as the full family; singleton separation is vacuous and the displayed singleton bound is an
++explicit extra hypothesis. The conditional moment identity is
++  E[Π_iÕ_a(f_i)|V] = Σ_π Π_{B∈π}κ_V(Õ_a(f_i):i∈B).
++For each partition, Π_B|B|!≤n!, Σ_B|B|=n and b≥0. There are at most n! partitions, so its absolute value is bounded ν-a.s.
++by A^n(n!)^{b+1}λ^{−pn}Π_i‖f_i‖_{λ,r}. Averaging proves (SP_λ) with exponent b+1. Unconditional centering does not bound
++the conditional first cumulant; the n≥2 conditional estimates alone do not justify this implication.
++
++(b) The coarse-image moment form sup_V|E_{a,R}[Π_iÕ_a(f_i)|V]|≤the original right side, for every coarse field V where the
++chosen conditional law is defined, implies (SP_λ) with exponent b by averaging (|ν(E[F|V])|≤sup_V|E[F|V]|). An essential
++supremum suffices as well. This is the shape of SEAM55's (SRC-E′_∞) with the separation and n quantified; it is stronger
++than the unconditional bound. Neither (a)'s singleton-inclusive estimate nor (b) is established for Yang–Mills here.
++
++SEAM55's (H2) ("U-sep at the lattice level … for separated supports, with A, b, p independent of R ≥ R_0
+ and a ≤ a_0(R)") is (SP_λ) only if its seminorm p carries this explicit power of λ uniformly for λ ∈ [c_SPa, 1]; with
+ separation-dependent but unquantified constants it is NOT enough (CODEX_REVIEW_SRCAN item 10's kernel satisfies every
+ fixed-separation bound eventually and still diverges on a fixed flat test).

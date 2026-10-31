@@ -1,0 +1,5 @@
+c27 (criteria checks/c27_criteria.md written 15:53:38 UTC before the script), 2026-10-27, nice 10, BLAS/OMP/MKL/vecLib threads 1, one job at a time.
+Pre-run edit (disclosed): two unused helper methods (dA2, div2; dA2 was wrong) were deleted before the first and only run; no other edit.
+Run: 15:55 UTC, 15.2 s wall, peak RSS 350 MB, load 1.43 before start, 45% free memory. Output checks/c27_out.txt; raw timing c27_time_raw.txt.
+E3 FAILED as pre-registered: the orbit identity holds to <= 7.2e-15 relative in every case, but the sub-check "r - m = h(A_c) to 1e-10" was implemented relative to max|r - m|, which is ~1e-16 for the pure-gauge test vector (r = m there exactly). Post-run diagnostic (scratchpad c27diag/diag.py, not part of c27): the absolute error is 6.3e-16, 1.1e-15, 1.0e-16 (random, smooth, pure gauge; d = 4, T = 2, n = 3), against max|psi| = 0.45, 1.16, 3.80. The criterion is not edited.
+Python was run without -I (numpy is in the user site; the scripts read no downloaded files).

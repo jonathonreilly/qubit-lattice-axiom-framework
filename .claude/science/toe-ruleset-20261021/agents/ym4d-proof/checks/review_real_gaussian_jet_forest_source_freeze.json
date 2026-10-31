@@ -1,0 +1,9 @@
+{
+  "schema": "source-first-freeze/v1",
+  "frozen_at_utc": "2026-10-30T13:24:44.194741+00:00",
+  "target_sha256": "0974561e7463838e4cc23f5e708c3bd091e4281c8a95bc5c652b3378f549a627",
+  "author_packet_opened": false,
+  "source_findings_sha256": "3c80d76ef247540182c248c1f5400357b583bce57350b6802d39b1888c3fd77e",
+  "source_read_manifest_sha256": "db3a47db8cecbc067c4678a75484123d7e04194b16b77cc8f8918995db770a19",
+  "immutability_contract": "These two stage-one files will not be edited after author packet inspection."
+}

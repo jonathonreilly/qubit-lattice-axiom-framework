@@ -1,0 +1,12 @@
+c30 timings and disclosures (session 15, 2026-10-27; UTC)
+- 19:29:03 RTARGET §33-36 appended. 19:30 c30_criteria.md written. 19:30:55 one pre-script correction to the criteria
+  (C4's bound made d-dependent, 2(d-1)L^{(2-d)m}, since Lemma CR (i)'s column sums are L^{2-d}; d = 4 unchanged). The
+  script c30_sources.py was written after that; no criterion was edited after any run.
+- The criteria name `python3 -I`; with -I the interpreter does not see the user site-packages (numpy import fails, first
+  attempt of Part A, no output). All parts were run without -I (as c29 was); the script reads no downloaded files.
+  PYTHONDONTWRITEBYTECODE=1, nice 10, OPENBLAS/OMP/MKL/vecLib threads 1, one job at a time, no `timeout`.
+- A: 0.64 s, 65 MB (load 2.3, 43% free). B: 0.73 s, 97 MB. C: 7.0 s, 513 MB (load 2.4). D: 2.5 s, 515 MB (load 2.4).
+- C4 is vacuous at k = 1 (no level l < k - 1); printed ratio 0.000 there.
+- D uses random-sign sources (independent uniform G^c in [-1, 1]); these cancel across the plaquettes of a coarse cell, so
+  D's ratios are typical values, not the worst case the bound covers.
+- No float tolerance was added to any inequality.

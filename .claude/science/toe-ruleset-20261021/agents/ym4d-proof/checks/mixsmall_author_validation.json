@@ -1,0 +1,19 @@
+{
+  "kind": "static bookkeeping, not numerical verification",
+  "issues": [],
+  "source_head": "0f561ef0b2dba3b024190fc55717c5b0ca7db881",
+  "artifacts": {
+    "MIXSMALL.md": "ead4ddd6bb50844d91459c3229d3abcc06b4ba02da772c578bc917a743f67340",
+    "MIXSMALL_LOG.md": "d2d26ea62d12c67af3060e3f8f85f69de306eded526cd347a5ad2b4849cb4236",
+    "checks/mixsmall_additional_input_sha256.txt": "4eaeeb29f8ece9ee3d6a495f45628793075a6661da59ba055ff5209a3d6b8b17",
+    "checks/mixsmall_check.py": "fa233561548b4ccc0250c5291365b75021ef522e8ce50a4ff216deb5ed4876b7",
+    "checks/mixsmall_criteria.md": "8fe1234e0958c07439e312b236e3d94d5f6552818c73bd6983cf33321d920f4e",
+    "checks/mixsmall_hole_analysis.md": "2309f88a022a4328be77e3068dc6d159c88d24354aca75be9b8beeb1eba84cd5",
+    "checks/mixsmall_input_sha256.txt": "13dd25b68dd0e283e3e4b9bf0f0becffc9a2d0f51f268120c29a59e9233be9eb",
+    "checks/mixsmall_numeric.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "checks/mixsmall_price_analysis.md": "8d0845cd1254984e4ba57b07ad60156506d293c2ba314e68a2f7c6be1f297e35",
+    "checks/mixsmall_result.json": "f855679ac98f0062f210374cc31104dbc7da92aeba89d8f3eb78b8ee90380ad3",
+    "checks/mixsmall_stderr.txt": "1ae2ce53f6c4a3265acd385e7e4a21d827a2b5594337d0d9ae68b92a856b30dc",
+    "checks/mixsmall_stdout.txt": "f855679ac98f0062f210374cc31104dbc7da92aeba89d8f3eb78b8ee90380ad3"
+  }
+}

@@ -1,0 +1,6 @@
+lock acquired 09:32:18Z; load { 7.78 4.18 3.53 }; System-wide memory free percentage: 31%
+part A start 09:32:18Z
+part A end 09:32:40Z exit 0; peak RSS             78872576  maximum resident set size
+part K start 09:32:40Z
+part K end 09:33:50Z exit 0; peak RSS            755073024  maximum resident set size
+lock released 09:33:50Z

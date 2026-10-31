@@ -1,0 +1,8 @@
+J4 (informational) dim{(H),(S-)} = 1;  dim{(H),(S+)} = 1
+J1 f-type uniqueness dim{(H),(S-),(W0)} = 0: PASS
+J2 d-type vanishing dim{(H),(S+),(W0)} = 0: PASS
+J3 V^YM satisfies (H) [res 0], (S-) [res 0], inhomogeneous Ward identity [True]: PASS
+J-c1 without (W0) dim{(H),(S-)} = 1 >= 1: control fires
+J-c2 V^YM violates (W0) [max residual 2]: control fires
+=== fl55_4 SUMMARY ===
+OVERALL: PASS

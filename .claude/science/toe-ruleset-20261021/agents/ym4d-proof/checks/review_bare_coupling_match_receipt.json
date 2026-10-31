@@ -1,0 +1,238 @@
+{
+  "schema_version": 1,
+  "record_type": "scoped_independent_source_review_receipt_not_canonical_landing_receipt",
+  "unit": "bare_coupling_match",
+  "reviewer_task": "/root/review_bare_coupling_match",
+  "created_utc": "2026-10-30T13:11:11.835160+00:00",
+  "verdict": "LAND",
+  "scope": "BM5-BM11 classical Schur/symbol; BM13-BM18 finite-u action and explicit alpha_act; BM21-BM29 fixed-domain critical-prefactor marginal and unevaluated full determinant trace. Bare source-free one step only.",
+  "source_freeze": {
+    "path": "BARE_COUPLING_MATCH_ASTRA.md",
+    "lines": 670,
+    "sha256": "7663b556f147e7a4ff03b1f1089e0793f61f8cb6e7adf3d3ff4ce78c763b07ff"
+  },
+  "methodology_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "observed_origin_main": "bcab5d2ee4a908fbb4e6025635fb878e6c157ebe",
+  "observed_head": "f3961e7b7e614468e7794f6dd6ff971495f46d64",
+  "artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_BARE_COUPLING_MATCH_ASTRA.md",
+      "sha256": "961a2263d9575aaa5936fd65b6e7edaef4235e8736c68f0f5e53c45388686a2d",
+      "lines": 121
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_coupling_match_source_only_findings.md",
+      "sha256": "d1aab62d93ce38ef17d4d4c2ce90f936ce3ba55fc419c6e6f636ab216eed2ac8",
+      "lines": 173
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_coupling_match_source_only_reads.json",
+      "sha256": "c75cacec2bdd59ee97386f4477fbf52c845c378f3b83669d3b0e7af1175973d7",
+      "lines": 485
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_coupling_match_read_manifest.json",
+      "sha256": "476e98947f28e4142a099f79d80d68bc6b0a7014318e1680a6ec75c7c73c40fc",
+      "lines": 121
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_coupling_match_receipt.json",
+      "sha256": "117893e208df3d00af298cad07a9d3397c9d4b8a01fe8271c11475b950212864",
+      "lines": 44
+    }
+  ],
+  "phase_order": [
+    "complete target and necessary actual supplier proofs read",
+    "source-only mathematical reconstruction and read coverage frozen; announcement sent to coordinator",
+    "only then author read manifest and receipt opened and checked",
+    "final scoped report written",
+    "this receipt written",
+    "separate identity recheck must be created after this receipt"
+  ],
+  "packet_checks": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_MATCH_ASTRA.md",
+      "sha256": "7663b556f147e7a4ff03b1f1089e0793f61f8cb6e7adf3d3ff4ce78c763b07ff",
+      "lines": 670,
+      "identity_match": true,
+      "mathematical_read_coverage": "only the separate source-only read record grants reviewer coverage"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "lines": 11,
+      "identity_match": true,
+      "mathematical_read_coverage": "only the separate source-only read record grants reviewer coverage"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "lines": 568,
+      "identity_match": true,
+      "mathematical_read_coverage": "only the separate source-only read record grants reviewer coverage"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_COUPLING_KERNEL_ASTRA.md",
+      "sha256": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b",
+      "lines": 590,
+      "identity_match": true,
+      "mathematical_read_coverage": "only the separate source-only read record grants reviewer coverage"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "lines": 556,
+      "identity_match": true,
+      "mathematical_read_coverage": "only the separate source-only read record grants reviewer coverage"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_ACTION_READER_ASTRA.md",
+      "sha256": "a466d55444d17c0d54fe9efecabc956ac5e3fcf9c61fdc0780d9248dabaf62fd",
+      "lines": 238,
+      "identity_match": true,
+      "mathematical_read_coverage": "only the separate source-only read record grants reviewer coverage"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_DETERMINANT_READER_ASTRA.md",
+      "sha256": "bd33e000b839fe79e9a9bceda43d9b28b370e69717f0cedb8d1c14336642b755",
+      "lines": 397,
+      "identity_match": true,
+      "mathematical_read_coverage": "only the separate source-only read record grants reviewer coverage"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/INTERACTING_SELECTED_CORE_ASTRA.md",
+      "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "lines": 790,
+      "identity_match": true,
+      "mathematical_read_coverage": "only the separate source-only read record grants reviewer coverage"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LINEAR_PACKAGE.md",
+      "sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad",
+      "lines": 538,
+      "identity_match": true,
+      "mathematical_read_coverage": "only the separate source-only read record grants reviewer coverage"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_ONE_LOOP_COUPLING_ASTRA.md",
+      "sha256": "b7baa6a711969c8fc96538009bb8f9f9acdde3f14f6d2f570a6ca5b9391516ce",
+      "lines": 723,
+      "identity_match": true,
+      "mathematical_read_coverage": "only the separate source-only read record grants reviewer coverage"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LOCOP.md",
+      "sha256": "0295d071a60d0ba3abfa23e4722634c7c2ea54921423cd0451aec7381e2c9253",
+      "lines": 601,
+      "identity_match": true,
+      "mathematical_read_coverage": "only the separate source-only read record grants reviewer coverage"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SPURION.md",
+      "sha256": "8474bec9faca8b0d9a1318846088e26cf47a06f89748236c8d440bc0ab046667",
+      "lines": 597,
+      "identity_match": true,
+      "mathematical_read_coverage": "only the separate source-only read record grants reviewer coverage"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "lines": 592,
+      "identity_match": true,
+      "mathematical_read_coverage": "only the separate source-only read record grants reviewer coverage"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WEIGHTED_RETURN_JETS_ASTRA.md",
+      "sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "lines": 937,
+      "identity_match": true,
+      "mathematical_read_coverage": "only the separate source-only read record grants reviewer coverage"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_coupling_match_read_manifest.json",
+      "sha256": "476e98947f28e4142a099f79d80d68bc6b0a7014318e1680a6ec75c7c73c40fc",
+      "lines": 121,
+      "identity_match": true,
+      "mathematical_read_coverage": "only the separate source-only read record grants reviewer coverage"
+    }
+  ],
+  "checks": {
+    "packet_json_parse": true,
+    "packet_declared_hashes_and_lines": true,
+    "source_and_all_credited_windows_unchanged": true,
+    "local_target_links_resolve": 10,
+    "equation_labels_1_to_29": true,
+    "direct_vocabulary_lint": {
+      "call": "lint_one_file(path, yaml_data, apply_fix=False)",
+      "tool_sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "vocabulary_sha256": "e5c9ff6759418ca0605bf7f5fb5321f4b0ead19d52f61447e695b99959090d15",
+      "results": [
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_MATCH_ASTRA.md",
+          "violations": [],
+          "auto_corrected": 0,
+          "needs_human_vocab_decision": 0
+        },
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_coupling_match_read_manifest.json",
+          "violations": [],
+          "auto_corrected": 0,
+          "needs_human_vocab_decision": 0
+        },
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_coupling_match_receipt.json",
+          "violations": [],
+          "auto_corrected": 0,
+          "needs_human_vocab_decision": 0
+        },
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_coupling_match_source_only_reads.json",
+          "violations": [],
+          "auto_corrected": 0,
+          "needs_human_vocab_decision": 0
+        },
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_coupling_match_source_only_findings.md",
+          "violations": [],
+          "auto_corrected": 0,
+          "needs_human_vocab_decision": 0
+        },
+        {
+          "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_BARE_COUPLING_MATCH_ASTRA.md",
+          "violations": [],
+          "auto_corrected": 0,
+          "needs_human_vocab_decision": 0
+        }
+      ]
+    },
+    "full_file_trailing_whitespace_clean": true,
+    "working_staged_branch_scoped_diff_checks": {
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "limitation": "Git diff alone does not cover untracked content; full-file checks also performed."
+    }
+  },
+  "findings": {
+    "blocking_math": 0,
+    "blocking_packet": 0,
+    "source_fixes": 0,
+    "iteration_count": 1
+  },
+  "independence": "Same-family fresh restricted-input reviewer; Astra/max requested, no independent backend-model attestation. Earlier author read claims are not authenticated by this receipt.",
+  "read_scope_boundary": "The immutable read record states partial supplier coverage; no complete upstream-DAG, old-review, or paper-full-text read is claimed.",
+  "skipped": [
+    "numerical/scientific runners (written proof; prohibited by assigned scope)",
+    "formal audit and retained promotion",
+    "integrated current-main preservation and full publication gate (coordinator-owned)",
+    "Git writes/fetches/commits/PR operations",
+    "additional agents"
+  ],
+  "physical_targets": {
+    "non_free_continuum_existence": "OPEN",
+    "physical_continuum_mass_gap": "OPEN"
+  },
+  "post_receipt_recheck_path": "checks/review_bare_coupling_match_identity_recheck.json"
+}

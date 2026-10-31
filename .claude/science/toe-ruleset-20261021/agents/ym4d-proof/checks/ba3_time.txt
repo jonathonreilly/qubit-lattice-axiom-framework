@@ -1,0 +1,20 @@
+lock acquired 06:36:20Z; load { 2.38 2.92 3.00 }; System-wide memory free percentage: 35%
+       14.82 real        14.14 user         0.26 sys
+           725336064  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               82360  page reclaims
+                1331  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 921  voluntary context switches
+                3404  involuntary context switches
+        261375656049  instructions retired
+         57565360431  cycles elapsed
+           727647264  peak memory footprint
+done 06:36:35Z

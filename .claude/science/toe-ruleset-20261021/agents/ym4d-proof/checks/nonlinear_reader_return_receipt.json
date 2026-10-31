@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "role": "author; fresh independent review pending",
+  "source_revision_context": "bc4579326baf713ab978774b72c95a249bcd7345",
+  "source_sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+  "source_lines": 713,
+  "mathematical_text_frozen_before_packaging": true,
+  "records": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "bytes": 36322
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/nonlinear_reader_return_author_checks.md",
+      "sha256": "726a035fe49db8dddca37ff986d09e25ff24c015325a913580a829b67c7a8178",
+      "bytes": 5846
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/nonlinear_reader_return_read_manifest.json",
+      "sha256": "84c315b25f9799a619406ebf94c77b9a33fc2c8e98d55236bb1611210ece1750",
+      "bytes": 29372
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/nonlinear_reader_return_identity_check.json",
+      "sha256": "c65c418e648f793efa90edcbc67d009cbb33567446bdc369a7b44487d508d5bd",
+      "bytes": 2265
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/nonlinear_reader_return_freeze.py",
+      "sha256": "cfc2bd27c8ae6312507b3838aa5cb15fe58ab2de91b95fc38e69009ab993f87e",
+      "bytes": 1746
+    }
+  ],
+  "reviewed_inputs": [
+    "FU actual joint critical field/covariance",
+    "NC exact primitive Mayer/parity envelopes",
+    "RG principal-core inverse and normalized active-density loop/chain library"
+  ],
+  "independently_rebuilt_interface": "Retuning the sum E_lift+T_crit to the explicit small row budget; CG not consumed as a theorem.",
+  "new_proposed_scope": [
+    "Exact connected logarithm for the actual centered nonlinear fixed-ball chart under C*=K_*^-1, with all complete-reader tails",
+    "Complex nonvanishing on the fixed joint original coarse/source domain at sufficiently large u",
+    "O(sigma^2)+O(exp(-c/sigma^2)) rooted bound with four beta/8 losses"
+  ],
+  "rate": "mu=beta/2=1/[2(16R)^4] in original blocks; no arbitrary preassigned consumer rate",
+  "not_proved": [
+    "Physical translated-chart side/corner return",
+    "Full original-cut complement or denominator/reference cancellation",
+    "Arbitrary histories or effective-level identification",
+    "Multiscale iteration, continuum existence, physical continuum mass gap"
+  ],
+  "protected_predecessor_files": 53,
+  "numerical_experiments": [],
+  "git_mutations_by_this_author": false,
+  "audit_ledger_lock_or_other_agent_source_edits": false,
+  "independent_review_status": "pending; no author LAND"
+}

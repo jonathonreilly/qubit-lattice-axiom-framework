@@ -1,0 +1,382 @@
+{
+  "schema": "independent-source-read-coverage-v1",
+  "stage": "source-only frozen before author packet access",
+  "created_at_utc": "2026-10-30T11:53:08.245171+00:00",
+  "reviewer": "/root/review_weighted_return_jets",
+  "independence": "Distinct nonauthor fresh Codex context; same-family review. Astra/max requested by human; no backend/model attestation claimed.",
+  "workspace": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "methodology_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WEIGHTED_RETURN_JETS_ASTRA.md",
+      "sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "line_count": 937,
+      "read_windows_inclusive": [
+        [
+          1,
+          937
+        ]
+      ],
+      "scope": "Complete target: both fixed-center and real moving-center constructions, small remainder and smaller-rate consumer.",
+      "complete_file_read": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REALRGA.md",
+      "sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+      "line_count": 649,
+      "read_windows_inclusive": [
+        [
+          30,
+          414
+        ]
+      ],
+      "scope": "Original absolute-source dictionary; ordered (6,4) units; multiplicity regulators; actual integrated-jet and tree hypotheses; retained-field/extraction limitations.",
+      "complete_file_read": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REALRGB.md",
+      "sha256": "80d4f1216e39c9d5cd661c7eced48f3ac480c0d1443e556208a1b2684890d640",
+      "line_count": 750,
+      "read_windows_inclusive": [
+        [
+          25,
+          267
+        ],
+        [
+          568,
+          679
+        ]
+      ],
+      "scope": "Native l1/order-four norm; positive integral/reciprocal bounds; conditional tree consumer and continuation limits.",
+      "complete_file_read": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MIXSMALL.md",
+      "sha256": "ead4ddd6bb50844d91459c3229d3abcc06b4ba02da772c578bc917a743f67340",
+      "line_count": 692,
+      "read_windows_inclusive": [
+        [
+          1,
+          244
+        ]
+      ],
+      "scope": "MS3 actual target, MS4--MS9 finite real calculus and polynomial rough-normalizer cost, actual paired contours and frozen kernels.",
+      "complete_file_read": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/EXTCONT.md",
+      "sha256": "b10015bbd6be5fac97fd636fdc79f665800fe9921651575b9d03b0167b534b6e",
+      "line_count": 654,
+      "read_windows_inclusive": [
+        [
+          30,
+          178
+        ],
+        [
+          278,
+          501
+        ]
+      ],
+      "scope": "E2--E4 extraction premises; E10--E17 transported-sector regularity, hole price and original-source/retained-field distinctions.",
+      "complete_file_read": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "line_count": 597,
+      "read_windows_inclusive": [
+        [
+          1,
+          439
+        ],
+        [
+          447,
+          544
+        ]
+      ],
+      "scope": "Actual cut/charge/shell, positive matched ratio, full normalization price and shrinking source/curvature domain.",
+      "complete_file_read": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "line_count": 592,
+      "read_windows_inclusive": [
+        [
+          1,
+          494
+        ]
+      ],
+      "scope": "Actual transported phase, K/P, both tails, fixed-point force and canonical overlap agreement, active inverses and full readers; 1--300 reread separately after an aggregate tool output warning.",
+      "complete_file_read": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "line_count": 713,
+      "read_windows_inclusive": [
+        [
+          1,
+          350
+        ]
+      ],
+      "scope": "NR1--NR20 actual complex moving core, coefficientwise inverse/tail bounds, primitive envelopes, normalized determinant/chain lists and scalar Gaussian Cauchy proof.",
+      "complete_file_read": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "line_count": 510,
+      "read_windows_inclusive": [
+        [
+          1,
+          510
+        ]
+      ],
+      "scope": "Complete regional chart supplier, exact full prefactor, canonical coefficient agreement, RC14/RC18 and shrinking domain.",
+      "complete_file_read": true
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COMPACT_RETURN_GLUING_ASTRA.md",
+      "sha256": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "line_count": 644,
+      "read_windows_inclusive": [
+        [
+          1,
+          292
+        ]
+      ],
+      "scope": "CG1--CG17 actual selected-difference ratio, original factor assignment, finite unselected-history bijection and complete group readers.",
+      "complete_file_read": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MARKED_COMPACT_CHART_ASTRA.md",
+      "sha256": "04f79ed4d0c58e97f3cade072631966b577f02754f9a96d6dcd18ee2f3045800",
+      "line_count": 753,
+      "read_windows_inclusive": [
+        [
+          1,
+          713
+        ]
+      ],
+      "scope": "MK1--MK39 actual fixed-real-center representation and full normalized density/primitive/forest/rescaling proof; excludes last documentary tail.",
+      "complete_file_read": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FROZEN_TRANSPORTED_CHART_ASTRA.md",
+      "sha256": "c7cea2f9bb096af300a9a978c945d9c5d68ae5e63581654a3034902d000d70b8",
+      "line_count": 787,
+      "read_windows_inclusive": [
+        [
+          38,
+          787
+        ]
+      ],
+      "scope": "Complete mathematical fixed-center construction, transport current, normalization, scalar forest, charged rescaling and FT37--FT42 bounds; first 37 summary lines not credited.",
+      "complete_file_read": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HOLOMORPHIC_COMPACT_RETURN_ASTRA.md",
+      "sha256": "890a56113ad3ceac890ec72efe59b40f73bbda283c8dfb69c331bc4ea5376c49",
+      "line_count": 734,
+      "read_windows_inclusive": [
+        [
+          38,
+          734
+        ]
+      ],
+      "scope": "Complete mathematical fixed-center compact producer HC1--HC41; first 37 summary lines not credited.",
+      "complete_file_read": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "line_count": 11,
+      "read_windows_inclusive": [
+        [
+          1,
+          11
+        ]
+      ],
+      "scope": "Actual owner lane process, including source review and no numerical preregistration requirement for written proofs.",
+      "complete_file_read": true
+    }
+  ],
+  "methodology": [
+    {
+      "path": "AGENTS.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "line_count": 26,
+      "read_windows_inclusive": [
+        [
+          1,
+          26
+        ]
+      ]
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "line_count": 193,
+      "read_windows_inclusive": [
+        [
+          1,
+          193
+        ]
+      ]
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "line_count": 35,
+      "read_windows_inclusive": [
+        [
+          1,
+          35
+        ]
+      ]
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "line_count": 370,
+      "read_windows_inclusive": [
+        [
+          1,
+          370
+        ]
+      ]
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "line_count": 96,
+      "read_windows_inclusive": [
+        [
+          1,
+          96
+        ]
+      ]
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "line_count": 183,
+      "read_windows_inclusive": [
+        [
+          1,
+          183
+        ]
+      ]
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "line_count": 248,
+      "read_windows_inclusive": [
+        [
+          1,
+          248
+        ]
+      ]
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "line_count": 140,
+      "read_windows_inclusive": [
+        [
+          1,
+          140
+        ]
+      ]
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "line_count": 394,
+      "read_windows_inclusive": [
+        [
+          1,
+          394
+        ]
+      ]
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "line_count": 126,
+      "read_windows_inclusive": [
+        [
+          1,
+          126
+        ]
+      ]
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "line_count": 233,
+      "read_windows_inclusive": [
+        [
+          1,
+          233
+        ]
+      ]
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "line_count": 130,
+      "read_windows_inclusive": [
+        [
+          1,
+          130
+        ]
+      ]
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "line_count": 52,
+      "read_windows_inclusive": [
+        [
+          1,
+          52
+        ]
+      ]
+    }
+  ],
+  "local_instructions_read": [
+    "/Users/jonBridger/AGENTS.md",
+    "AGENTS.md",
+    "/Users/jonBridger/.codex/skills/review-loop/SKILL.md"
+  ],
+  "coverage_policy": "Only displayed untruncated line windows are credited. Search listings are routing only. A truncated multi-file rg listing was not credited; RF 1--300 was read separately. Full-file hashes bind identity, not proof-reading coverage. No recursive certification of unread upstream sources.",
+  "prior_reviews_opened": false,
+  "author_manifest_opened": false,
+  "author_receipt_opened": false,
+  "shared_status_or_root_receipt_opened": false,
+  "numerical_science_runs": 0,
+  "author_runners_executed": 0,
+  "source_edits": [],
+  "scope_notes": [
+    "Supplied bare action and local producer estimates are explicit bounded inputs, not new framework primitives.",
+    "No framework primitive is load-bearing in this dimensionless estimate; no new premise is inferred from the registry.",
+    "External literature comparisons are attribution only; no external theorem was used to fill a proof step.",
+    "Root owns combined integration, publication, preservation and audit-system validation."
+  ]
+}

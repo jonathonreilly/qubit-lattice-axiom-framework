@@ -1,0 +1,14 @@
+# c35 run record (session 19, 2026-10-27)
+- Order: RTARGET §42 (22:30 UTC); c35_criteria.md; c35_n5bg.py (criteria file first, separate writes; one batch of pre-run edits to the
+  SCRIPT only, fixing undefined names, a memory-saving rewrite of B6's exact quadrature, and moving C2's range check onto
+  the T = 5 torus that the criteria name; no criterion edited); a scratch smoke test (scratchpad/smoke35.py: d = 2, T = 2
+  objects: NA-FP (i) 2.9e-16, symmetry, trivial = abelian ⊗ 1) before the runs; then each part once. PROOF [S19] text
+  was drafted while the runs were in progress and its numbers were filled in after them.
+- Each job behind the machine-wide lock (scratchpad/locks/numeric, coordinator rule), nice 10, OPENBLAS/OMP/MKL/vecLib threads 1,
+  PYTHONDONTWRITEBYTECODE=1, no `timeout`, run WITHOUT -I. Load (1-min) before: A 3.05, B 2.24, C ≈ 2.5; free ≥ 32%.
+- A: 81 s, peak footprint 0.46 GB, PASS. B: 239 s, 1.17 GB, PASS. C: 65 s, 1.17 GB, PASS. (B and C are close to the 1.2 GB cap.)
+- Post-run arithmetic (disclosed; not a criterion change): C2 printed N5-triv's product-rule m_cov(i = 0) as 1.0093e-17, an
+  exp(x) - 1 cancellation artefact at x ~ 1e-17; with expm1: 3.9457e-18 (m_4 = 1.9729e-18). m_cov^num = 1.9321e-10 is
+  reproduced by the closed bound 41.0765·m·e^{20m} ≤ γ_0/2. Threshold arithmetic: product rule R_* = 1.42e20, T_0 = 5.69e20,
+  ε_* = 2.11e-32/C_Δ; with N5-w0: R_* = 1.72e12, T_0 = 6.89e12, ε_* = 1.75e-24/C_Δ (when α_* < r_*).
+- Scope: A is a MODEL level-0 operator (κ|Q_UA|² for the soft Hessian); B is d = 2 abelian; C is level 0, trivial background.

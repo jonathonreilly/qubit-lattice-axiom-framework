@@ -1,0 +1,32 @@
+{
+  "schema": "review-uniform-soft-scope-confirmation-inputs-v1",
+  "before": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+    "revision": "4a8afc90247d771b95c9661737dc08509456ab28",
+    "sha256": "c7b7890187b9a350aea19e606957c606922fe741c6615382c3a4da0cd60d92c4"
+  },
+  "after": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+    "sha256": "203d4edbf97078d88fcb488f164e525d2671fe5a2a910c5f6e49f615e8f41bfe"
+  },
+  "repair_receipt": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_uniform_tree_scope_fix.json",
+    "sha256": "fd2778df5869f21c7083ed1b0f2fcfb467535535cd739731a115632b24b2868e"
+  },
+  "exact_three_replacements_reproduce_new_source": true,
+  "each_before_substring_unique": true,
+  "all_fenced_displays_identical": true,
+  "section_two_through_end_identical": true,
+  "all_other_16_original_author_files_unchanged": true,
+  "all_9_consumed_sources_unchanged": true,
+  "original_review_report_sha256": "78d40a5480aafe94c30ee5c0b827d30b84ec629dfccaa91b44c98cfe08ecf3d9",
+  "original_review_receipt_sha256": "33b98352bcdae4c40f9db02cefbbdfd225063395da0c7c589ee47626e0ed10a3",
+  "preserved_scope_receipt_sha256": "54ef326a0accde7811db80c2ef85cb5c7907959083ca5252e4d6862b85e61dcb",
+  "preserved_scope_report_sha256": "1fec8e9c3c34c00a08dc775e94edfab25031c0bbe3d719f7d42c5587ce05ff11",
+  "new_control_output_sha256": "ba766b29a93cd0bd0ec5e6a9121fa3a184666060307ff3608cfcb91e4415a4c4",
+  "new_control_count": {
+    "passed": 29,
+    "total": 29
+  },
+  "no_broad_rerun": "No displayed mathematical formula or control implementation changed."
+}

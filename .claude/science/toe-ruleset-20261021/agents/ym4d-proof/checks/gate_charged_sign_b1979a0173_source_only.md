@@ -1,0 +1,30 @@
+Frozen UTC: 2026-10-30T17:58:38.849713+00:00
+
+# Source-only mathematical checkpoint
+
+Frozen before reading author route records, charged-determinant sidecars, prior gates or review results. No expected verdict was used.
+
+## What this check establishes
+
+The complete 625-line charged-sign source was read. Its Schur/Ward multiplicities and leading singular coefficient agree with independent algebra; the stated remainder exponent has the right integrable power counting. No counterexample or blocking mathematical error was found in this bounded pass. This is not complete independent verification of all inherited suppliers or every explicit majorant, so it does not grant a whole-unit research-gate advance or landing approval.
+
+1. **Gaussian conditioning and mode retention (source lines 140–242).** In the coordinates supplied by CH7, the penalty acts only on y. Block Gaussian elimination therefore gives det K = det(T)^(-2) det(A_h) det(S+kappa H). Factoring H from the last determinant cancels the actual maximizer amplitude, leaving one half of log det(M+kappa). On range D, MD=0 gives M+s=s and A+s=D D*+s; off range D, A=M. Every nonzero singular value of D consequently contributes the same determinant ratio on the site and link sides. A zero singular value contributes an explicit s in det(B+s), cancelled by s^(n_s). Thus CH13 retains zero and longitudinal modes and gives exactly one scalar subtraction, with the same one-half as the vector term. This is independent singular-value/Gaussian algebra, not a gauge-fixing prescription.
+
+2. **Different calculation of the coefficient (lines 341–436).** Conditional on the literal leading symbols identified in CH18–CH19, diagonalize the charged constant-field scalar Laplacian into Landau levels. For b=|alpha F| its plane eigenvalues are (2n+1)b, with degeneracy b/(2 pi); the two free directions contribute 1/(4 pi t). Summing the geometric series yields the heat-trace density (4 pi t)^(-2) x/sinh(x), x=alpha F t. The four-vector spin eigenvalues are 0,0,+2 alpha F,-2 alpha F, giving spin trace 2+2 cosh(2x). Subtracting exactly one scalar as dictated by the preceding determinant identity gives
+
+       (4 pi t)^(-2) [x/sinh(x)] [1+2 cosh(2x)]
+       = (4 pi t)^(-2) [3+(7/2)x^2+O(x^4)].
+
+   Laplace integration at each fixed s>0 gives the curvature coefficient 7 alpha^2/(32 pi^2 s). The derivative is at F=0; this does not assert positivity of the massless vector operator at nonzero F. The full ordered-root sum is 2N sum(h_i^2)-2(sum h_i)^2=2N^2. Hence I_N(s) has leading coefficient 7N^2/(16 pi^2 s), agreeing with CH23 without importing a conventional continuum coefficient. The sign after integration from kappa to 1 is negative.
+
+3. **Literal leading-symbol mechanism (lines 313–375).** The actual paired-path ribbon has weight-two signed area proportional to the centered y coordinates, so its average vanishes. The maximizer's first differential is the arithmetic mean. Constraint correction therefore begins at weight three. The Wilson gradient also begins at weight three, since the order-two opposite-plaquette terms cancel; a gapped internal stationary correction changes the action first at weight six. The surviving weight-four action is the sum of L^4 plaquettes of curvature F/L^2, giving one half of the HS curvature norm squared. Its second variation includes the spin commutator with coefficient two. This checks the mechanism and normalization of CH18–CH19. The conclusion remains dependent on the inherited hard-complement gap and moment/locality suppliers described below.
+
+4. **Independent remainder scaling (lines 438–532).** With t=(|q|^2+s)^(1/2), r0 has order t^-2 and its difference from the continuum inverse has order t^-1. Their first and second q derivatives lose one and two powers, respectively. The first-curvature inverse has order t^-4 and its error has order t^-3. In the second-curvature inverse, the spin/exchange and magnetic-product errors consequently have order at worst t^-5; a bounded explicit second-curvature symbol gives t^-4. In four dimensions the normalized integral of t^-5 is 1/(12 pi^2 sqrt(s)). The spectral gap away from q=0 makes the rest bounded. Thus this mechanism supplies an integrable O(s^-1/2) error and, after s integration, O(sqrt(kappa)). I did not independently enumerate every product-rule constant in CH24–CH27; their exact displayed numerical majorant is not certified by this checkpoint.
+
+5. **Sign interface (lines 514–572).** The DS identity b_N=N^2 C_L-B_L gives I_C=(I_3-I_2)/5. An O(s^-1/2) remainder defines an absolutely convergent scheme constant. If the displayed CH25 bound and DS scalar bound hold, CH33 gives C_L<=-Bmax_L/4-1, and N>=2 gives b_N<=-N^2. No joint u/kappa, volume/kappa or N/domain uniformity follows. This delivers a bare one-step sign only; it does not supply repeated flow, non-freeness, continuum existence or a positive physical continuum mass gap.
+
+## Remaining exact verification boundary
+
+The highest-risk residual for a complete unit decision is the transfer of the fixed-L hard-constraint construction, with its original-reader support, to analytic magnetic symbols with all derivative bounds used in CH24–CH27. I read the actual local inverse construction and finite-word/constrained-saddle definitions in the windows recorded in the companion read manifest, but did not independently verify the full transitive gap/locality and critical-branch chain or every explicit majorant. This is incomplete review coverage, not an asserted failure or a newly introduced physical hypothesis. The source itself correctly leaves full existence and physical mass gap open at lines 584–592.
+
+No scientific numerical or symbolic job ran. The Landau-spectrum derivation and resolvent power counting above were analytic. No external primary paper was opened or checked in this bounded pass; the source's literature-attribution accuracy is consequently outside the verified coverage. Model requested/configured by dispatch: gpt-6-astra, max. Independent backend attestation was not supplied and remains unavailable.

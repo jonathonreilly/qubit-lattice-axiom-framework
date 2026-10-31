@@ -1,0 +1,9 @@
+{
+  "timestamp_utc": "2026-10-30T02:20:05.537260+00:00",
+  "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WLOOP.md",
+  "sha256": "3fa6a797bab81e930d4d3f081b112da7ecb38a7073a248474731cd61314efa57",
+  "lines": 781,
+  "scope": "entire author note; current source manifest checks/wloop_sources.json",
+  "independence": "fresh-context same-family reviewer; no author conversation history",
+  "numerical_runs": "none; nice preflight denied"
+}

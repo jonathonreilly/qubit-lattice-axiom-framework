@@ -1,0 +1,108 @@
+{
+  "kind": "compact author actual-read manifest",
+  "created_utc": "2026-10-30T14:55:42.757283+00:00",
+  "source_frozen_before_provenance": {
+    "path": "BARE_DETERMINANT_COUPLING_ASTRA.md",
+    "lines": 581,
+    "sha256": "426f774581ae8385b1c546e676fb313bfed48ab14913454bdc38f67f2cebb230"
+  },
+  "methodology": {
+    "pinned_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+    "retained_same_task_read_records": [
+      "checks/frozen_transported_chart_read_manifest.json",
+      "checks/weighted_return_jets_read_manifest.json",
+      "checks/bare_coupling_match_read_manifest.json",
+      "checks/bare_coupling_remainder_read_manifest.json"
+    ],
+    "fresh_control": {
+      "path": "PROCESS_LIGHT.md",
+      "lines": 11,
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab"
+    },
+    "scope": "Ancestor AGENTS, installed physics-loop and pinned repository methodology reads are retained from this sustained author task. Source mathematics, not status labels or review verdicts, is consumed."
+  },
+  "local_sources": [
+    {
+      "path": "BARE_COUPLING_MATCH_ASTRA.md",
+      "lines": 670,
+      "sha256": "7663b556f147e7a4ff03b1f1089e0793f61f8cb6e7adf3d3ff4ce78c763b07ff",
+      "actual_read_scope": "Complete earlier author source retained in this same task. Fresh bounded rereads of BM1-BM8, BM16-BM17, BM22-BM29 and targeted normalization passages; no review verdict is a premise."
+    },
+    {
+      "path": "COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "lines": 568,
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "actual_read_scope": "Fresh lines 1-180; earlier BM-author read 25-236 retained. Actual tree quotient, contour/lift definitions and all-mode gap."
+    },
+    {
+      "path": "FINITE_COUPLING_KERNEL_ASTRA.md",
+      "lines": 590,
+      "sha256": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b",
+      "actual_read_scope": "Earlier BM-author read 1-365 retained; fresh 12-104, 151-172 and 278-296. Constrained SU(N) saddle, paired means, scalar trace constraint, normalizer amplitude Hessian. No full-source fresh-read claim."
+    },
+    {
+      "path": "INTERACTING_SELECTED_CORE_ASTRA.md",
+      "lines": 790,
+      "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "actual_read_scope": "Earlier BM-author reads 1-342 and 586-732 retained; fresh 646-708. Critical branch/readers and IC30 intrinsic Haar-coordinate cancellation. Intervening nonlinear-core argument is not newly imported."
+    },
+    {
+      "path": "BARE_COUPLING_REMAINDER_ASTRA.md",
+      "lines": 583,
+      "sha256": "b75f9cae074c72344bd252d093c0a1d30c502c53819cde5b62e5b4c8b9b26b61",
+      "actual_read_scope": "Complete immediately preceding author source retained. Used only to identify the separate original-cut remainder interface, not as a determinant-value or sign theorem."
+    },
+    {
+      "path": "LINEAR_PACKAGE.md",
+      "lines": 538,
+      "sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad",
+      "actual_read_scope": "Fresh 1-22 and 65-82, including literal S4-prime paired words and Decision 4 arithmetic normalized kernel. No numerical result or unrelated linear theorem imported."
+    },
+    {
+      "path": "PROOF_session16_snapshot.md",
+      "lines": 4946,
+      "sha256": "4f376e3a6dd22701218d61fbd06bad3ab83575a4bfe195914a3217df580b4b9f",
+      "actual_read_scope": "Fresh bounded actual definitions: Decision 4 at 1498-1507 and paired-contour definition within 455-480. No full ledger read or old numerical check claimed."
+    }
+  ],
+  "primary_literature": [
+    {
+      "authors": "M. Luscher and P. Weisz",
+      "url": "https://arxiv.org/pdf/hep-lat/9504006",
+      "actual_version": "PDF dated 11 April 1995, 26 pages; attempted v2 URL was unavailable and is not counted as read.",
+      "actual_read_scope": "Abstract and section 5.1, equations (5.1)-(5.7), PDF pages 12-13.",
+      "consumed_statement": "Multiplicative background/quantum link coordinates and the background adjoint transformation law.",
+      "hypothesis_mapping": "Their Wilson background gauge fixing/ghost construction differs from this fixed tree quotient with product probability Haar. No renormalization constant or coefficient is imported."
+    },
+    {
+      "authors": "M. Luscher and P. Weisz",
+      "url": "https://arxiv.org/pdf/hep-lat/9505011",
+      "actual_version": "PDF dated 12 May 1995, 35 pages.",
+      "actual_read_scope": "Abstract; section 4.1 equation (4.1), including measure-vertex discussion; section 5 equations (5.1)-(5.3).",
+      "consumed_statement": "Tagged background/quantum vertex organization and lattice one-loop seagull/two-propagator Brillouin-zone expressions.",
+      "hypothesis_mapping": "The present vertices are rebuilt from paired arithmetic means, constrained SU(N) saddle, full critical response and intrinsic measure. No numerical integral, standard beta coefficient or ghost sector is copied."
+    },
+    {
+      "authors": "T. DeGrand, A. Hasenfratz, P. Hasenfratz and F. Niedermayer",
+      "url": "https://arxiv.org/pdf/hep-lat/9506030",
+      "actual_version": "arXiv v1 header dated 27 June 1995.",
+      "actual_read_scope": "Abstract and sections 2-4, equations (4)-(11) and (15).",
+      "consumed_statement": "A normalized gauge blocking kernel retains an SU(N) saddle maximum in its classical blocked action.",
+      "hypothesis_mapping": "Their scale-two staple/fuzzy kernels and fixed-point input differ from the present odd-L paired arithmetic contour kernel and Wilson input. No perfection or fixed-point conclusion is imported."
+    }
+  ],
+  "attribution": "Balaban/Dimock constructive localization and extraction architecture is credited in the source; the precise bounded local suppliers are named above.",
+  "run_record": {
+    "scientific_numerical_runs": [],
+    "subworkers": [],
+    "git_or_shared_front_or_audit_edits": false,
+    "predecessor_edits": false,
+    "metadata_only_checks": [
+      "JSON roundtrip",
+      "source SHA256/line counts",
+      "balanced code fences",
+      "local Markdown targets resolve"
+    ]
+  },
+  "independent_review": "Not performed by the author; a DIFFERENT fresh source-first hostile reviewer is required."
+}

@@ -1,0 +1,467 @@
+{
+  "schema": "scoped-scientific-read-manifest-v1",
+  "created_utc": "2026-10-29T19:52:47.100324+00:00",
+  "reviewer": "/root/review_charged_jet",
+  "requested_model": "gpt-6-astra",
+  "requested_reasoning": "max",
+  "actual_backend_metadata": "not independently available",
+  "independence": "fresh context, source-exposed, not cross-family",
+  "methodology_ref": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "origin_main_verified": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "local_reads": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHARGED_STATIONARY_JET_ASTRA.md",
+      "sha256": "85b91738993f09f7e40a49f4c957c164a684bf499185629a82775229f6437254",
+      "bytes": 26289,
+      "read_coverage": "complete",
+      "role": "target"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LINEAR_PACKAGE.md",
+      "sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad",
+      "bytes": 48089,
+      "read_coverage": "complete; truncated Lemma4.4 gap reread lines260-295",
+      "role": "load-bearing linear contracts"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF_session16_snapshot.md",
+      "sha256": "4f376e3a6dd22701218d61fbd06bad3ab83575a4bfe195914a3217df580b4b9f",
+      "bytes": 488224,
+      "read_coverage": "lines2380-2505,2649-2798,3230-3245; not the complete historical proof",
+      "role": "load-bearing unprimed strip and linear curvature proof"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_TUNIF2.md",
+      "sha256": "ade6e777ffe52b04464b0ff8a5fcd3a7eeebb800e0602ef64a47e4150fd703b8",
+      "bytes": 25897,
+      "read_coverage": "lines1-255",
+      "role": "load-bearing repaired periodic analytic primitive and norms"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW55_TUNIF.md",
+      "sha256": "29ca9187347301ba46f0b17fce4d2554b6c09382070095efa239be48e24cf891",
+      "bytes": 62347,
+      "read_coverage": "lines190-285",
+      "role": "load-bearing periodic repair and admissibility"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/TUNIF.md",
+      "sha256": "40b7dd3c41babc8ecd89789ebd2854206444310eaf47cb2820bc8f118ca0af7b",
+      "bytes": 55943,
+      "read_coverage": "lines245-360",
+      "role": "load-bearing TU0-TU3; consumed with repairs"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NQ_DEF.md",
+      "sha256": "3e87bfc8478d8d6dcf648cc01ee47b564a174622ee479ef1868e1d56c639a07c",
+      "bytes": 52899,
+      "read_coverage": "lines203-289",
+      "role": "load-bearing consecutive-level Q and endpoint identity"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NORMS.md",
+      "sha256": "3b2c9f90cde226286c24a7169ba217eea10a203bc468e5613d8854a748aa2bd7",
+      "bytes": 81173,
+      "read_coverage": "lines480-580",
+      "role": "load-bearing coefficientwise weighted norm accounting"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FLOW55.md",
+      "sha256": "56d2707f4b571585db26cf2a077dbaee57bc936c76821cdbc50710e4b36e9d25",
+      "bytes": 70208,
+      "read_coverage": "lines250-355",
+      "role": "load-bearing cubic norm reuse; nonlinear closure not certified"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UIR55.md",
+      "sha256": "4c6d80473a80714e2a5aa1e241e8835648bbe3c65a7bca38a5758faf3c5accb4",
+      "bytes": 68640,
+      "read_coverage": "lines298-340",
+      "role": "consumer interface only; not a review of full finite-part theorem"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RESIDUAL_FULL_COLOUR_ASTRA.md",
+      "sha256": "1ce9460989e5491bd491dcc348add15207e63013a0c537cd6c51caa19f0e3dd7",
+      "bytes": 36980,
+      "read_coverage": "complete; truncated middle reread lines145-265",
+      "role": "predecessor contract and restrictions"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RESIDUAL_FULL_COLOUR_ASTRA.md",
+      "sha256": "0b504129260e0269ae8dffa79f2113a6bb94675edc37c084fe8f9be6464e67bc",
+      "bytes": 29488,
+      "read_coverage": "complete; beginning reread lines1-50",
+      "role": "predecessor independent review"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "sha256": "203d4edbf97078d88fcb488f164e525d2671fe5a2a910c5f6e49f615e8f41bfe",
+      "bytes": 26860,
+      "read_coverage": "complete",
+      "role": "load-bearing linear estimates with u-stripped tree-phase boundary"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "sha256": "78d40a5480aafe94c30ee5c0b827d30b84ec629dfccaa91b44c98cfe08ecf3d9",
+      "bytes": 17036,
+      "read_coverage": "complete",
+      "role": "predecessor review, supplemented by later scope correction"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_scope_review.md",
+      "sha256": "1fec8e9c3c34c00a08dc775e94edfab25031c0bbe3d719f7d42c5587ce05ff11",
+      "bytes": 8764,
+      "read_coverage": "complete",
+      "role": "scope repair evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_scope_confirmation.md",
+      "sha256": "fbc18b292c385876eabd205cb1781667933b88fa7dc8e7abff914e0836da338b",
+      "bytes": 3557,
+      "read_coverage": "complete",
+      "role": "final scope confirmation"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_literature.md",
+      "sha256": "28c10ae1e00b92935dea0cbacffd7df9a3def2c70c13d0f21766a5a59fb2124f",
+      "bytes": 2547,
+      "read_coverage": "complete",
+      "role": "primary-literature router and comparison"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "7d24810a1c2eb74fb036a27480997f228118a4a576c1773a63feecb44721fd3e",
+      "bytes": 9296,
+      "read_coverage": "complete current 43-line register",
+      "role": "model and import classification context; changed since author manifest"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LITERATURE_BRIDGES.md",
+      "sha256": "23e14760ca5bcf56cc56112a8a792195ecf436146808a90fd13ccfff38aa05f2",
+      "bytes": 21767,
+      "read_coverage": "selected rows B07,B08,B26 and associated context; whole-file attempt truncated elsewhere",
+      "role": "literature router; changed since author manifest"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BALABAN_EXTRACT.md",
+      "sha256": "ce950ad48b3ecb8128e24e3d50e51c321cf6a3062e74932301a875b83c6410ff",
+      "bytes": 68728,
+      "read_coverage": "lines1-120 only",
+      "role": "historical access limits, not a primary theorem import"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SOFT_FLUCTUATION_COVARIANCE_ASTRA.md",
+      "sha256": "e4eef0f7993006558783a58a4aaf132ba3032cecea25c98556d443a391bbd6b5",
+      "bytes": 19834,
+      "read_coverage": "lines1-48 only",
+      "role": "separate repaired identity-background scope, not its proof review here"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "bytes": 1118,
+      "read_coverage": "complete",
+      "role": "governance and actual premise grants, no new premise adoption"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416,
+      "read_coverage": "complete",
+      "role": "governance and actual premise grants, no new premise adoption"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333,
+      "read_coverage": "complete",
+      "role": "governance and actual premise grants, no new premise adoption"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "bytes": 2581,
+      "read_coverage": "complete",
+      "role": "governance and actual premise grants, no new premise adoption"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "bytes": 4770,
+      "read_coverage": "complete",
+      "role": "governance and actual premise grants, no new premise adoption"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "bytes": 5313,
+      "read_coverage": "complete",
+      "role": "governance and actual premise grants, no new premise adoption"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "bytes": 9276,
+      "read_coverage": "complete installed entry; reconciled with pinned portable source",
+      "role": "installed instruction entry"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/review-loop/SKILL.md",
+      "sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "bytes": 20680,
+      "read_coverage": "complete installed entry; reconciled with pinned portable source",
+      "role": "installed instruction entry"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_receipt.json",
+      "sha256": "83ba5129c3b6ca9c6e0d6a4577938531658ddf8fa2a8f21d728831d3edb66b6a",
+      "bytes": 4209,
+      "read_coverage": "complete",
+      "role": "historical author artifact binding"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_source_manifest.json",
+      "sha256": "c8ad3708cb24b231e64538c79da61420ebc35a8c6042bc86f7f2a5955296467d",
+      "bytes": 13823,
+      "read_coverage": "complete",
+      "role": "historical input identity inventory"
+    }
+  ],
+  "methodology_reads": [
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "git_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "git_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "bytes": 11788,
+      "read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "git_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "bytes": 6427,
+      "read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "git_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "bytes": 5767,
+      "read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "git_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "bytes": 16755,
+      "read_coverage": "complete, assembled bounded reads"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "git_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "bytes": 30709,
+      "read_coverage": "complete, initial output plus bounded gaps246-490"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "git_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "bytes": 16454,
+      "read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "git_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "git_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "bytes": 24561,
+      "read_coverage": "complete installed source plus full inspected pinned delta and repaired output gap220-245"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "git_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "bytes": 5188,
+      "read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "git_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "bytes": 12608,
+      "read_coverage": "complete"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "git_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "bytes": 12940,
+      "read_coverage": "complete installed source; byte equality to pinned verified"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "git_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "bytes": 7554,
+      "read_coverage": "complete installed source; byte equality to pinned verified"
+    }
+  ],
+  "author_artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHARGED_STATIONARY_JET_ASTRA.md",
+      "sha256": "85b91738993f09f7e40a49f4c957c164a684bf499185629a82775229f6437254",
+      "bytes": 26289,
+      "read_coverage": "complete; checker implementations and detailed successful outputs inspected after independent controls",
+      "role": "author artifact; not independent numerical evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_01.py",
+      "sha256": "57d4d911845977aa7576d7e46cc8c51da0cb91d8d866d7f97a927f1ef452ec55",
+      "bytes": 13246,
+      "read_coverage": "complete; checker implementations and detailed successful outputs inspected after independent controls",
+      "role": "author artifact; not independent numerical evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_01_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "read_coverage": "empty or preserved stderr file verified; author attempts not executed here",
+      "role": "author artifact; not independent numerical evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_01_initial.py",
+      "sha256": "4ac5d2f6b58512f6d569d4c87c114525e0a8f8a941231f295b0efe68ecc22227",
+      "bytes": 11438,
+      "read_coverage": "complete via inspected final implementation plus full initial-to-final diff; after independent runs",
+      "role": "author artifact; not independent numerical evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_01_initial_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "read_coverage": "empty or preserved stderr file verified; author attempts not executed here",
+      "role": "author artifact; not independent numerical evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_01_initial_out.json",
+      "sha256": "1ddb0fc796efac74cb68587a3fa48953b4caa1548c18b40399ee76d1285d8ccd",
+      "bytes": 8880,
+      "read_coverage": "predicate inventory/count and failed predicate inspected; remaining successful numbers not used as evidence",
+      "role": "author artifact; not independent numerical evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_01_out.json",
+      "sha256": "fc2ee4d896bc76715bb2d28496257549394e9d5e822faf29700d27e64c672ea1",
+      "bytes": 9755,
+      "read_coverage": "complete; checker implementations and detailed successful outputs inspected after independent controls",
+      "role": "author artifact; not independent numerical evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_02.py",
+      "sha256": "5f38c7302dfbeffd1d5ff461ea460aaa6715ab588cab336b9afc5aca5daafc93",
+      "bytes": 8702,
+      "read_coverage": "complete; checker implementations and detailed successful outputs inspected after independent controls",
+      "role": "author artifact; not independent numerical evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_02_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "read_coverage": "empty or preserved stderr file verified; author attempts not executed here",
+      "role": "author artifact; not independent numerical evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_02_out.json",
+      "sha256": "084a52a7dc7b02edf04cececafbaf58de4d508c24246e2a0111185e19e634874",
+      "bytes": 4710,
+      "read_coverage": "complete; checker implementations and detailed successful outputs inspected after independent controls",
+      "role": "author artifact; not independent numerical evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_criteria.md",
+      "sha256": "827c11477b680d8ed743097add8c149061549761979ab5fe0d716e8760aab3df",
+      "bytes": 5233,
+      "read_coverage": "complete; checker implementations and detailed successful outputs inspected after independent controls",
+      "role": "author artifact; not independent numerical evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_failures.json",
+      "sha256": "5b0981fe7f396a44718b0cf5bab01bebbf7de273ba526eaf99df16307a0da823",
+      "bytes": 2105,
+      "read_coverage": "complete; checker implementations and detailed successful outputs inspected after independent controls",
+      "role": "author artifact; not independent numerical evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_reproduction.json",
+      "sha256": "0cee1385d917314ed87182d262840dafaff975ac42d111655d67dbad1fca79ef",
+      "bytes": 1594,
+      "read_coverage": "complete; checker implementations and detailed successful outputs inspected after independent controls",
+      "role": "author artifact; not independent numerical evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_source_manifest.json",
+      "sha256": "c8ad3708cb24b231e64538c79da61420ebc35a8c6042bc86f7f2a5955296467d",
+      "bytes": 13823,
+      "read_coverage": "complete; checker implementations and detailed successful outputs inspected after independent controls",
+      "role": "author artifact; not independent numerical evidence"
+    }
+  ],
+  "historical_input_deltas": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "author_sha256": "16fa710fe41d7f93ae4b76b711f6533e6ba5ee31748a203f663ff9d547a4e6a8",
+      "current_sha256": "7d24810a1c2eb74fb036a27480997f228118a4a576c1773a63feecb44721fd3e",
+      "disposition": "current relevant context reread; historical manifest preserved; not a load-bearing mathematical source change"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LITERATURE_BRIDGES.md",
+      "author_sha256": "caf32818d4aa390829efc93d4564fb0442d4c37e459db664947a0b7eb8d1e98e",
+      "current_sha256": "23e14760ca5bcf56cc56112a8a792195ecf436146808a90fd13ccfff38aa05f2",
+      "disposition": "current relevant context reread; historical manifest preserved; not a load-bearing mathematical source change"
+    }
+  ],
+  "discovered_not_read": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT34_55.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RECOVERY_UIR_ASTRA.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOFT_FLUCTUATION_COVARIANCE_ASTRA.md"
+  ],
+  "partial_extra_process_reads": [
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "coverage": "opening scoped-receipt context; large output truncated; no canonical integration receipt generated"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "coverage": "selected boundary and combined-gate passages; coordinator owns integration gate"
+    }
+  ],
+  "web_reads": [
+    {
+      "url": "https://arxiv.org/html/1410.2798v3",
+      "version": "v3",
+      "coverage": "abstract/introduction, axial and torus definitions, selected section3.5 and Proposition6 equations81-99; Proposition7 statement140",
+      "role": "comparison only; no theorem imported"
+    },
+    {
+      "url": "https://arxiv.org/html/1712.10029v3",
+      "version": "v3",
+      "coverage": "abstract/introduction, section3.6 equations266-273, section3.9 Theorem1 equations327-329, selected preceding scale normalization",
+      "role": "comparison only; no theorem imported"
+    }
+  ],
+  "coverage_limit": "No full-paper reading, whole-PR review, finite-u all-depth theorem, audit or continuum closure claimed."
+}

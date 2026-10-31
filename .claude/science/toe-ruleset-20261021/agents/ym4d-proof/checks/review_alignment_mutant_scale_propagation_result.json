@@ -1,0 +1,6 @@
+{
+  "exit_code": 1,
+  "execution_status": "nonzero_exit",
+  "reason": "Deliberate S1-to-S0 propagation corruption must fail the scale identity.",
+  "elapsed_seconds": 0.022504916007164866
+}

@@ -1,0 +1,295 @@
+{
+  "record_type": "separate_author_packet_assessment",
+  "created_utc": "2026-10-30T15:11:52.750310+00:00",
+  "source_only_findings": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_source_findings.json",
+    "sha256": "625757fe127619565c282109d2c9cff4021b8245429871793e4afbfd227392b2",
+    "bytes": 5790,
+    "lines": 87
+  },
+  "source_only_read_manifest": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_source_read_manifest.json",
+    "sha256": "7500f75a3470c94741478906019f0dc240e0510058d3253bbd10691837580bb3",
+    "bytes": 16626,
+    "lines": 508
+  },
+  "source_freezes_unchanged": true,
+  "packets": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_determinant_coupling_read_manifest.json",
+      "sha256": "c3ce8fb1dc821a469a26266c8ddafe77405adb37231f5bf5d9bdff65c539f0f0",
+      "bytes": 6280,
+      "lines": 108
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_determinant_coupling_receipt.json",
+      "sha256": "bd55ab89087bd4f752e2b9ce35e2478a8429e9874c7cbad5eede97b3bdf7f317",
+      "bytes": 2776,
+      "lines": 37
+    }
+  ],
+  "binding_comparisons": [
+    {
+      "binding": "author manifest source",
+      "expected": {
+        "path": "BARE_DETERMINANT_COUPLING_ASTRA.md",
+        "lines": 581,
+        "sha256": "426f774581ae8385b1c546e676fb313bfed48ab14913454bdc38f67f2cebb230"
+      },
+      "actual": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_DETERMINANT_COUPLING_ASTRA.md",
+        "sha256": "426f774581ae8385b1c546e676fb313bfed48ab14913454bdc38f67f2cebb230",
+        "bytes": 29763,
+        "lines": 581
+      },
+      "sha256_match": true,
+      "line_count_match": true
+    },
+    {
+      "binding": "author receipt source",
+      "expected": {
+        "path": "BARE_DETERMINANT_COUPLING_ASTRA.md",
+        "lines": 581,
+        "sha256": "426f774581ae8385b1c546e676fb313bfed48ab14913454bdc38f67f2cebb230"
+      },
+      "actual": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_DETERMINANT_COUPLING_ASTRA.md",
+        "sha256": "426f774581ae8385b1c546e676fb313bfed48ab14913454bdc38f67f2cebb230",
+        "bytes": 29763,
+        "lines": 581
+      },
+      "sha256_match": true,
+      "line_count_match": true
+    },
+    {
+      "binding": "author receipt read-manifest",
+      "expected": {
+        "path": "checks/bare_determinant_coupling_read_manifest.json",
+        "lines": 108,
+        "sha256": "c3ce8fb1dc821a469a26266c8ddafe77405adb37231f5bf5d9bdff65c539f0f0"
+      },
+      "actual": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_determinant_coupling_read_manifest.json",
+        "sha256": "c3ce8fb1dc821a469a26266c8ddafe77405adb37231f5bf5d9bdff65c539f0f0",
+        "bytes": 6280,
+        "lines": 108
+      },
+      "sha256_match": true,
+      "line_count_match": true
+    },
+    {
+      "binding": "author process light",
+      "expected": {
+        "path": "PROCESS_LIGHT.md",
+        "lines": 11,
+        "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab"
+      },
+      "actual": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+        "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+        "bytes": 1497,
+        "lines": 11
+      },
+      "sha256_match": true,
+      "line_count_match": true
+    },
+    {
+      "binding": "author local-source BARE_COUPLING_MATCH_ASTRA.md",
+      "expected": {
+        "path": "BARE_COUPLING_MATCH_ASTRA.md",
+        "lines": 670,
+        "sha256": "7663b556f147e7a4ff03b1f1089e0793f61f8cb6e7adf3d3ff4ce78c763b07ff",
+        "actual_read_scope": "Complete earlier author source retained in this same task. Fresh bounded rereads of BM1-BM8, BM16-BM17, BM22-BM29 and targeted normalization passages; no review verdict is a premise."
+      },
+      "actual": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_MATCH_ASTRA.md",
+        "sha256": "7663b556f147e7a4ff03b1f1089e0793f61f8cb6e7adf3d3ff4ce78c763b07ff",
+        "bytes": 35619,
+        "lines": 670
+      },
+      "sha256_match": true,
+      "line_count_match": true
+    },
+    {
+      "binding": "author local-source COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "expected": {
+        "path": "COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+        "lines": 568,
+        "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+        "actual_read_scope": "Fresh lines 1-180; earlier BM-author read 25-236 retained. Actual tree quotient, contour/lift definitions and all-mode gap."
+      },
+      "actual": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+        "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+        "bytes": 28993,
+        "lines": 568
+      },
+      "sha256_match": true,
+      "line_count_match": true
+    },
+    {
+      "binding": "author local-source FINITE_COUPLING_KERNEL_ASTRA.md",
+      "expected": {
+        "path": "FINITE_COUPLING_KERNEL_ASTRA.md",
+        "lines": 590,
+        "sha256": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b",
+        "actual_read_scope": "Earlier BM-author read 1-365 retained; fresh 12-104, 151-172 and 278-296. Constrained SU(N) saddle, paired means, scalar trace constraint, normalizer amplitude Hessian. No full-source fresh-read claim."
+      },
+      "actual": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_COUPLING_KERNEL_ASTRA.md",
+        "sha256": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b",
+        "bytes": 30169,
+        "lines": 590
+      },
+      "sha256_match": true,
+      "line_count_match": true
+    },
+    {
+      "binding": "author local-source INTERACTING_SELECTED_CORE_ASTRA.md",
+      "expected": {
+        "path": "INTERACTING_SELECTED_CORE_ASTRA.md",
+        "lines": 790,
+        "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+        "actual_read_scope": "Earlier BM-author reads 1-342 and 586-732 retained; fresh 646-708. Critical branch/readers and IC30 intrinsic Haar-coordinate cancellation. Intervening nonlinear-core argument is not newly imported."
+      },
+      "actual": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/INTERACTING_SELECTED_CORE_ASTRA.md",
+        "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+        "bytes": 41908,
+        "lines": 790
+      },
+      "sha256_match": true,
+      "line_count_match": true
+    },
+    {
+      "binding": "author local-source BARE_COUPLING_REMAINDER_ASTRA.md",
+      "expected": {
+        "path": "BARE_COUPLING_REMAINDER_ASTRA.md",
+        "lines": 583,
+        "sha256": "b75f9cae074c72344bd252d093c0a1d30c502c53819cde5b62e5b4c8b9b26b61",
+        "actual_read_scope": "Complete immediately preceding author source retained. Used only to identify the separate original-cut remainder interface, not as a determinant-value or sign theorem."
+      },
+      "actual": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_COUPLING_REMAINDER_ASTRA.md",
+        "sha256": "b75f9cae074c72344bd252d093c0a1d30c502c53819cde5b62e5b4c8b9b26b61",
+        "bytes": 30430,
+        "lines": 583
+      },
+      "sha256_match": true,
+      "line_count_match": true
+    },
+    {
+      "binding": "author local-source LINEAR_PACKAGE.md",
+      "expected": {
+        "path": "LINEAR_PACKAGE.md",
+        "lines": 538,
+        "sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad",
+        "actual_read_scope": "Fresh 1-22 and 65-82, including literal S4-prime paired words and Decision 4 arithmetic normalized kernel. No numerical result or unrelated linear theorem imported."
+      },
+      "actual": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LINEAR_PACKAGE.md",
+        "sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad",
+        "bytes": 48089,
+        "lines": 538
+      },
+      "sha256_match": true,
+      "line_count_match": true
+    },
+    {
+      "binding": "author local-source PROOF_session16_snapshot.md",
+      "expected": {
+        "path": "PROOF_session16_snapshot.md",
+        "lines": 4946,
+        "sha256": "4f376e3a6dd22701218d61fbd06bad3ab83575a4bfe195914a3217df580b4b9f",
+        "actual_read_scope": "Fresh bounded actual definitions: Decision 4 at 1498-1507 and paired-contour definition within 455-480. No full ledger read or old numerical check claimed."
+      },
+      "actual": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF_session16_snapshot.md",
+        "sha256": "4f376e3a6dd22701218d61fbd06bad3ab83575a4bfe195914a3217df580b4b9f",
+        "bytes": 488224,
+        "lines": 4946
+      },
+      "sha256_match": true,
+      "line_count_match": true
+    }
+  ],
+  "comparison_count": 11,
+  "all_declared_hashes_and_counts_match": true,
+  "historical_read_pointers": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/frozen_transported_chart_read_manifest.json",
+      "sha256": "b0bc47ee7ffa1257554f53e0a87dc4892df2849a4414eaff14f5d5b559fc3b49",
+      "bytes": 5768,
+      "lines": 152,
+      "coverage": "hash_only; existing pointer verified, contents and historical author reading not authenticated"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/weighted_return_jets_read_manifest.json",
+      "sha256": "8f6fc077450e62ac5c53c14a626f22e0f7b172cc97ab2e0d9b28042279e1ed0b",
+      "bytes": 5684,
+      "lines": 113,
+      "coverage": "hash_only; existing pointer verified, contents and historical author reading not authenticated"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_coupling_match_read_manifest.json",
+      "sha256": "476e98947f28e4142a099f79d80d68bc6b0a7014318e1680a6ec75c7c73c40fc",
+      "bytes": 7013,
+      "lines": 121,
+      "coverage": "hash_only; existing pointer verified, contents and historical author reading not authenticated"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/bare_coupling_remainder_read_manifest.json",
+      "sha256": "467094ed6b6edc259e1a9a406fdcca2fe46bf2590d39ffe2353283a8591bea86",
+      "bytes": 8408,
+      "lines": 150,
+      "coverage": "hash_only; existing pointer verified, contents and historical author reading not authenticated"
+    }
+  ],
+  "post_freeze_source_reads": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LINEAR_PACKAGE.md",
+      "sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad",
+      "bytes": 48089,
+      "lines": 538,
+      "coverage": "partial_post_freeze_packet_crosscheck",
+      "consumed_windows": [
+        [
+          1,
+          22
+        ],
+        [
+          65,
+          82
+        ]
+      ],
+      "role": "literal paired-word and arithmetic-kernel definition crosscheck, not a new theorem supplier"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF_session16_snapshot.md",
+      "sha256": "4f376e3a6dd22701218d61fbd06bad3ab83575a4bfe195914a3217df580b4b9f",
+      "bytes": 488224,
+      "lines": 4946,
+      "coverage": "partial_post_freeze_packet_crosscheck",
+      "consumed_windows": [
+        [
+          455,
+          480
+        ],
+        [
+          1498,
+          1507
+        ]
+      ],
+      "role": "literal paired-word and arithmetic-kernel definition crosscheck, not a new theorem supplier"
+    }
+  ],
+  "assessment": "Consistent provenance packet for the claimed bounded formula. It neither asserts an independent author verdict nor reports numerical evaluation, sign, continuum existence or a mass gap. Its local source hashes/counts and frozen manuscript match current bytes. Its historical author-reading claims remain self-reported; the referenced old read manifests were hash/existence checked only and were not used as mathematical evidence.",
+  "primary_check": "The exact cited equations were inspected before the source freeze. The 11-April-1995 and 12-May-1995 PDF dates and the 27-June-1995 v1 header match. The first paper page reference is understood as printed pages 12-13 (PDF pages 13-14); there is no scope-changing mismatch. No primary-paper numerical coefficient or fixed-point theorem was imported.",
+  "semantic_post_freeze_result": "The two historical definition windows agree with the paired paths and arithmetic normalized kernel in the already frozen source assessment; no new scientific finding or changed verdict.",
+  "limitations": [
+    "No author-session transcript or independent backend attestation inspected.",
+    "No historical review report opened or reused.",
+    "The packet cannot authenticate the claimed earlier author reads by itself."
+  ],
+  "packet_verdict": "CONSISTENT_WITH_SCOPED_SOURCE_VERDICT"
+}

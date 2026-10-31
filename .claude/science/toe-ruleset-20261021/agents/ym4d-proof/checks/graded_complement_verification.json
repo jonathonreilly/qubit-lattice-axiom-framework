@@ -1,0 +1,96 @@
+{
+  "all27_reused_methodology_identities_unchanged": true,
+  "complete_final_new_source_self_read": true,
+  "corrected_fr_source_and_confirmation_match": true,
+  "created_utc": "2026-10-30T00:16:03.071916+00:00",
+  "equation_labels": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "evidence_kind": "Mechanical identities only; not numerical evidence or proof validation",
+  "frozen_predecessor_owned_total": 64,
+  "input_pins_verified": 21,
+  "local_and_external_link_checks": [
+    {
+      "kind": "local exists or this frozen output",
+      "target": "CUT_SECTOR_COERCIVITY_ASTRA.md"
+    },
+    {
+      "kind": "local exists or this frozen output",
+      "target": "REVIEW_CUT_SECTOR_COERCIVITY_ASTRA.md"
+    },
+    {
+      "kind": "local exists or this frozen output",
+      "target": "INTERACTING_SELECTED_CORE_ASTRA.md"
+    },
+    {
+      "kind": "local exists or this frozen output",
+      "target": "REVIEW_RD.md"
+    },
+    {
+      "kind": "external URL syntax; availability/reading recorded separately",
+      "target": "https://arxiv.org/html/1212.5562v2#S3.SS13"
+    },
+    {
+      "kind": "external URL syntax; availability/reading recorded separately",
+      "target": "https://scispace.com/pdf/large-field-renormalization-ii-localization-exponentiation-h8b7ih93xo.pdf"
+    },
+    {
+      "kind": "local exists or this frozen output",
+      "target": "PROCESS_LIGHT.md"
+    },
+    {
+      "kind": "local exists or this frozen output",
+      "target": "checks/graded_complement_read_manifest.json"
+    },
+    {
+      "kind": "local exists or this frozen output",
+      "target": "checks/graded_complement_receipt.json"
+    }
+  ],
+  "newline_and_trailing_space_check": "PASS",
+  "no_numerical_run": true,
+  "no_scientific_verdict_assigned": true,
+  "predecessor_owned_counts": [
+    21,
+    29,
+    9,
+    5
+  ],
+  "predecessor_receipts_checked": 4,
+  "source": {
+    "bytes": 31357,
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GRADED_COMPLEMENT_ASTRA.md",
+    "sha256": "6201ec6ec1846e205dd1a3d7dd1df1a3bebb9c6bead14874aff40482d2bb0335"
+  }
+}

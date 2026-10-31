@@ -1,0 +1,20 @@
+Part E: Lemma E-low
+ E1 T=16 k=1 kap=(1.0,): min e = 0.030950, c_E = 0.004069, ratio 7.61 at p-index (np.int64(8), np.int64(8), np.int64(8), np.int64(8))  rss 124 MB  t 0.2s
+ E1 T=16 k=2 kap=(1.0, 1.0): min e = 0.029735, c_E = 0.004069, ratio 7.31 at p-index (np.int64(8), np.int64(8), np.int64(8), np.int64(8))  rss 124 MB  t 0.3s
+ E1 T=12 k=3 kap=(1.0, 1.0, 1.0): min e = 0.029630, c_E = 0.004069, ratio 7.28 at p-index (np.int64(6), np.int64(6), np.int64(6), np.int64(6))  rss 125 MB  t 0.4s
+ E1 T=16 k=2 kap=(0.5, 2.0): min e = 0.052415, c_E = 0.005791, ratio 9.05 at p-index (np.int64(8), np.int64(8), np.int64(8), np.int64(8))  rss 125 MB  t 0.5s
+ E2 T=3 k=1 kap=(1.0,) rand0: E_k/||dB_k||^2 = 0.05741300 (c_E 0.004069, x14.1), ne 1.8e-14  rss 125 MB  t 0.6s
+ E2 T=3 k=1 kap=(1.0,) rand1: E_k/||dB_k||^2 = 0.05850086 (c_E 0.004069, x14.4), ne 1.8e-14  rss 125 MB  t 0.6s
+ E2 T=3 k=1 kap=(1.0,) rand2: E_k/||dB_k||^2 = 0.05820140 (c_E 0.004069, x14.3), ne 1.8e-14  rss 125 MB  t 0.7s
+ E2 T=3 k=1 kap=(1.0,) mode: E_k/||dB_k||^2 = 0.04079912 (c_E 0.004069, x10.0), ne 1.2e-15; symbol e(p_min) = 0.04079912, rel 5.1e-15, p_index (np.int64(2), np.int64(2), np.int64(2), np.int64(1)), self-conj False  rss 125 MB  t 0.7s
+ E2 T=2 k=2 kap=(1.0, 1.0) rand0: E_k/||dB_k||^2 = 0.05253772 (c_E 0.004069, x12.9), ne 3.1e-14  rss 431 MB  t 1.8s
+ E2 T=2 k=2 kap=(1.0, 1.0) rand1: E_k/||dB_k||^2 = 0.04999009 (c_E 0.004069, x12.3), ne 3.3e-14  rss 431 MB  t 2.6s
+ E2 T=2 k=2 kap=(1.0, 1.0) rand2: E_k/||dB_k||^2 = 0.04894221 (c_E 0.004069, x12.0), ne 5.0e-14  rss 431 MB  t 3.6s
+ E2 T=2 k=2 kap=(1.0, 1.0) mode: E_k/||dB_k||^2 = 0.02973550 (c_E 0.004069, x7.3), ne 6.2e-14; symbol e(p_min) = 0.02973550, rel 3.4e-15, p_index (np.int64(1), np.int64(1), np.int64(1), np.int64(1)), self-conj True  rss 431 MB  t 4.0s
+ E2 T=2 k=2 kap=(0.5, 2.0) rand0: E_k/||dB_k||^2 = 0.08839914 (c_E 0.005791, x15.3), ne 3.0e-14  rss 436 MB  t 5.2s
+ E2 T=2 k=2 kap=(0.5, 2.0) rand1: E_k/||dB_k||^2 = 0.08861170 (c_E 0.005791, x15.3), ne 1.9e-14  rss 436 MB  t 6.2s
+ E2 T=2 k=2 kap=(0.5, 2.0) rand2: E_k/||dB_k||^2 = 0.08019539 (c_E 0.005791, x13.8), ne 2.2e-14  rss 436 MB  t 7.2s
+ E2 T=2 k=2 kap=(0.5, 2.0) mode: E_k/||dB_k||^2 = 0.05241530 (c_E 0.005791, x9.1), ne 5.7e-14; symbol e(p_min) = 0.05241530, rel 6.5e-15, p_index (np.int64(1), np.int64(1), np.int64(1), np.int64(1)), self-conj True  rss 436 MB  t 7.6s
+ E3: c_E(kappa=1, L=3) = 0.0040691; NA-lev eta_bar_max = 1.9038e-07; plaquette angle 1.5865e-08
+ E1:PASS V:PASS E2a:PASS E2b:PASS E3:PASS
+Part E: PASS  t 7.6s  rss 436 MB

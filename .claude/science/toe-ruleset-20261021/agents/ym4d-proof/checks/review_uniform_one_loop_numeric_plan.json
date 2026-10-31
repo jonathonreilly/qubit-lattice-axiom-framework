@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-29T21:01:09.548286+00:00",
+  "stage": "Before final target is delivered/read and before reviewer implementation. Frozen predecessor review exposes the expected continuum coefficients; this is not blind coefficient discovery.",
+  "independence": "Same-family review of a unit authored by another worker. This reviewer authored separate covariance/background/source-sector units; did not author or inspect the upcoming coupling draft or its checker.",
+  "numerical_checks": [
+    {
+      "name": "determinant_phase_coefficient",
+      "method": "Exact rational/symbolic determinant expansion of a noncommuting finite matrix with both ordered Fourier transfers, compared with the separately derived trace-log expansion.",
+      "criterion": "Exact equality through degree two; replacing bubble 1/2 by1/4, omitting either transfer, or changing a determinant weight must be detected by a nonzero exact difference."
+    },
+    {
+      "name": "continuum_charge_and_Flow_dictionary",
+      "method": "Derive sphere moments via rotational polynomial identities, compute scalar/vector orbital and spin coefficients, sum general SU(N) roots algebraically, and convert HS-normalized external direction to the actual Wilson plane-wave density.",
+      "criterion": "Exact symbolic arithmetic; verify conversion without hardcoding final -21/-22 or beta0 into the check being tested. Wrong bubble, spin, charge-twice, trace-colour or HS normalization must change the result."
+    },
+    {
+      "name": "actual_SU2_offshell_coordinate_change",
+      "method": "Wilson trace of one SU(2) plaquette with nontrivial background; compare left-multiplicative and additive-log quantum Hessians, first/second chain rules, and full exponential-coordinate Jacobian.",
+      "criterion": "Exact Taylor equality through background degree four where the full chain rule is used; congruence-only or omitted Jacobian/force corrections must produce a nonzero degree-two or-four term."
+    },
+    {
+      "name": "bounded_finite_part_is_not_increment_convergence",
+      "method": "Exact alternating bounded finite-part sequence and its telescoping increments.",
+      "criterion": "All-increment bracket holds with twice the bound, while adjacent increments need not converge. Reject an inference to b_n convergence from boundedness alone."
+    }
+  ],
+  "later_actual_target_controls": "After final source/checker exposure, register any selected code mutants separately with that disclosure; do not quietly relabel them pre-exposure.",
+  "resources": "No massive replay. Gate all executions on owner lock/resource contract; nice, one BLAS/OMP thread, <2GB memory, >=50% free RAM and load constraints.",
+  "scope": "Numerical statements only. Analytic reconstruction and final target review remain open until the frozen target identities are supplied."
+}

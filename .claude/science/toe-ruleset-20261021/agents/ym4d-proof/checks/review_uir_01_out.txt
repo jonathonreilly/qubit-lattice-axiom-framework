@@ -1,0 +1,61 @@
+UTC 2026-10-29T11:59:05.040769+00:00
+versions 3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)] sympy 1.14.0 numpy 2.4.1
+PASS off-shell Schur cancellation 
+PASS Wilson block genuinely nontransverse 
+PASS ghost/Gram determinant cancellation 
+PASS zero-residual determinant product 
+PASS full inverse in place of transverse inverse rejected 
+PASS multidimensional corrected block 
+PASS duplicated off-shell coupling rejected 135*t**4 - 240*t**2
+PASS half-log duplicated-block coefficient -24/55
+PASS perpendicular radial integral 
+PASS transverse core by perpendicular integration pi**2/(2*tau**2)
+PASS wrong core factor rejected 
+PASS degree-five convolution derivative -pi**2/tau
+PASS separate pole equal to dimension rejected 
+PASS direction-dependent Ward log mutation survives Ward 
+PASS stationarity degree 1 
+PASS stationarity degree 2 
+PASS stationarity degree 3 
+PASS fully polarized quadratic jet 3
+PASS fully polarized cubic jet with mixed source vertices 122/175
+PASS fully polarized quartic jet {'E4': '-16085676/336875', 'exchanges': ['18597/30625', '8982/30625', '-633/30625']}
+PASS omitted quartic pairing 0 rejected 
+PASS omitted quartic pairing 1 rejected 
+PASS omitted quartic pairing 2 rejected 
+PASS wrong quartic exchange sign rejected 
+PASS tree slice dimension {'removed': 80, 'kept': 244}
+PASS S4-prime gradient covariance (0.0, 0.0, 0.0, 0.0) 0.0
+PASS rooted gauge modes (0.0, 0.0, 0.0, 0.0) 
+PASS positive slice sample (0.0, 0.0, 0.0, 0.0) {'min': 0.025435420428463133, 'max': 12.000000000000018}
+PASS omitted top mismatch restores four harmonic modes {'nullity': 4}
+PASS omitted slice restores gauge modes {'nullity': 80}
+PASS S4-prime gradient covariance (0.37, 0.81, -0.43, 0.29) 2.558937633260452e-15
+PASS rooted gauge modes (0.37, 0.81, -0.43, 0.29) 
+PASS positive slice sample (0.37, 0.81, -0.43, 0.29) {'min': 0.03029181348406569, 'max': 12.925078931675838}
+PASS S4-prime gradient covariance (3.141592653589793, 0.0, 0.0, 0.0) 4.163336342344337e-17
+PASS rooted gauge modes (3.141592653589793, 0.0, 0.0, 0.0) 
+PASS positive slice sample (3.141592653589793, 0.0, 0.0, 0.0) {'min': 0.033275418986658256, 'max': 13.000000000000018}
+PASS S4-prime gradient covariance (3.141592653589793, 3.141592653589793, 3.141592653589793, 3.141592653589793) 4.163336342344337e-17
+PASS rooted gauge modes (3.141592653589793, 3.141592653589793, 3.141592653589793, 3.141592653589793) 
+PASS positive slice sample (3.141592653589793, 3.141592653589793, 3.141592653589793, 3.141592653589793) {'min': 0.02244508800306312, 'max': 15.73649577633169}
+PASS S4-prime gradient covariance (1e-07, 0.0, 0.0, 0.0) 2.3129646346414967e-16
+PASS rooted gauge modes (1e-07, 0.0, 0.0, 0.0) 
+PASS positive slice sample (1e-07, 0.0, 0.0, 0.0) {'min': 0.025435420428460195, 'max': 12.000000057735042}
+PASS 2D Fourier-image identity (3, 4, 0, 0) 1.1102230246251565e-16
+PASS 2D Fourier-image identity (3, 4, 1, 0) 1.7591080663555568e-16
+PASS 2D Fourier-image identity (3, 4, 1, 2) 9.159602786276758e-17
+PASS 2D Fourier-image identity (3, 4, 2, 3) 3.469446951953614e-18
+PASS 2D omitted images rejected (3, 4) 
+PASS 2D Fourier-image identity (4, 5, 0, 0) 1.1102230246251565e-16
+PASS 2D Fourier-image identity (4, 5, 1, 0) 2.0816681711721685e-17
+PASS 2D Fourier-image identity (4, 5, 1, 2) 5.419449386414209e-17
+PASS 2D Fourier-image identity (4, 5, 3, 4) 1.4374735605683555e-16
+PASS 2D omitted images rejected (4, 5) 
+PASS 2D Fourier-image identity (5, 3, 0, 0) 1.1102230246251565e-16
+PASS 2D Fourier-image identity (5, 3, 1, 0) 1.1126874516855723e-16
+PASS 2D Fourier-image identity (5, 3, 1, 2) 2.872549364348521e-17
+PASS 2D Fourier-image identity (5, 3, 4, 2) 6.29126380620922e-17
+PASS 2D omitted images rejected (5, 3) 
+RESULT 57 / 57 predicates passed
+Scope: exact finite algebra and stationary jets; numerical sampled d=4 contour controls; no all-momentum or depth-uniform theorem supplied by sampling.

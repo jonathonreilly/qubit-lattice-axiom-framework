@@ -1,0 +1,392 @@
+{
+  "created_utc": "2026-10-30T00:29:36.183557+00:00",
+  "worker": "/root/review_graded_complement",
+  "scope": "GC source-level independent mathematical review, not full PR or audit review",
+  "entry_head": "814364fcc7dbcf0ff4146f6766e98890124ac905",
+  "initial_freeze_head": "3bba91875672becadc0ab120204905d9f1f405a8",
+  "selected_main": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "model_observability": "Requested Astra/max. Tool dispatch/settings are not backend or effective-effort attestation; runtime identifies generic GPT-6 only. Same-family fresh restricted-input review, not an external audit.",
+  "initial_phase_manifest": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_graded_complement_initial_read_manifest.json",
+    "bytes": 3735,
+    "sha256": "681da6a5196481322d5f69ba18fd5c0ddca88d498384c61b7b2cb1c18dc9615f"
+  },
+  "initial_phase_findings": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_graded_complement_initial_findings.md",
+    "bytes": 13925,
+    "sha256": "0eda43b5c95efa260e0369536876658fb8f7c60bfa974e412c6666ce210eddce"
+  },
+  "initial_phase_sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GRADED_COMPLEMENT_ASTRA.md",
+      "sha256": "6201ec6ec1846e205dd1a3d7dd1df1a3bebb9c6bead14874aff40482d2bb0335",
+      "bytes": 31357,
+      "coverage": "complete, 1-580; read only after coordinator freeze"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "bytes": 28993,
+      "coverage": "complete, 1-568"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "bytes": 39217,
+      "coverage": "complete, 1-722"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "bytes": 32365,
+      "coverage": "complete, 1-617"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497,
+      "coverage": "complete"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_return/AUTHOR_BRIEF_GRADED_COMPLEMENT.md",
+      "sha256": "fb2fa7e0033b1b51c930336b814f6e60622f0bc5f2827a535e47c0f5db0fcf73",
+      "bytes": 4222,
+      "coverage": "complete; task routing, not theorem evidence"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "bytes": 94345,
+      "coverage": "partial: 312-377, 510-570, 656-684; fixed-real-t single-normalizer proof and errata; search hits are routing only"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "sha256": "d2e9c49eedceb14b654f5be640e2b55efc16b902fd789acbc3d73c2849b9a850",
+      "bytes": 48847,
+      "coverage": "partial: 90-170, 204-336, 424-464, 530-615, 660-695; exact conditional/history/read-domain input"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FIXED_SOURCE_RADIUS_ASTRA.md",
+      "sha256": "6304245bdf27afa6c7f364da9bc41d8971cc0f2058c1e3484edef84df44cff86",
+      "bytes": 35303,
+      "coverage": "partial: 1-105, 404-548; conclusion/domain and application only, not fresh review of forest proof"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD.md",
+      "sha256": "06ad2b5b52bfa66f7784a1fb97936337c59f5164318f89af9a2a065226671e5f",
+      "bytes": 34089,
+      "coverage": "partial: 1-120, 336-480, 550-588; target and precise sup-norm consumer mismatch"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RESIDUAL_DETERMINANT_ASTRA.md",
+      "sha256": "2b5059568c92659717c0c021dd4460899408f7647ca8a3ea4a60b76809400ec8",
+      "bytes": 27582,
+      "coverage": "incidental partial read: 1-260 after ambiguous RD filename search; not consumed by this review"
+    }
+  ],
+  "post_initial_reads": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GRADED_COMPLEMENT_ASTRA.md",
+      "bytes": 31368,
+      "sha256": "22e30738d5d59adc65c146c7e9fa3bd671462d694a7ae1fe14e73804774e5341",
+      "coverage": "Original complete read plus exact one-phrase diff and current lines1-125,435-464; byte equality checked for every other line"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "bytes": 12275,
+      "sha256": "e5bcf577dab1144c6ce4ac06f1b4558cc44951a7fb3e305199bb91f91736b76a",
+      "coverage": "complete; post-initial verdict only"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "bytes": 17323,
+      "sha256": "3c39ed64cffd800bb930eda9ee8d7dbde20612e307cd90e512896f1aee34d549",
+      "coverage": "complete; post-initial verdict only"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "bytes": 13623,
+      "sha256": "f18775b209aba8711f8ad42ff82432f127171b4b241987b295e6f76124964f35",
+      "coverage": "complete; post-initial verdict only"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_FIXED_SOURCE_RADIUS_ASTRA.md",
+      "bytes": 14369,
+      "sha256": "d2a188c6126a1321c8bed82ef96db2680dda70e631e928e3a0c37554908c8579",
+      "coverage": "complete; post-initial verdict only"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RD.md",
+      "bytes": 21327,
+      "sha256": "59154a352ac9f1b2e201606ab6e2d4c4e5b5624f446fed1f28ce08ab2787101e",
+      "coverage": "partial1-172; post-initial verdict only"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FIXED_SOURCE_RADIUS_ASTRA.md",
+      "bytes": 35303,
+      "sha256": "6304245bdf27afa6c7f364da9bc41d8971cc0f2058c1e3484edef84df44cff86",
+      "coverage": "additional105-180 after initial verdict; combined actual coverage1-180,404-548"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_freeze.py",
+      "bytes": 17472,
+      "sha256": "80ab52887a13e376ad4c4014efc029dd2dfe163a8df9fa2b068dc2febab7ed6b",
+      "coverage": "complete; syntax inspected; not executed"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_freeze_attempt01.py",
+      "bytes": 16638,
+      "sha256": "4b4f2604cfe0e5ed0a6133667a3098803eebf14961c17d0a7f71c5d60fb07d4c",
+      "coverage": "syntax and exact identity only; author-reported failed attempt retained"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_freeze_attempt01.stderr.txt",
+      "bytes": 783,
+      "sha256": "8e75fcfe04032ec9a1712f1982fafe4ee2c2833820e346dbc1cc1c0aa59c55d6",
+      "coverage": "complete; author labels this a reconstructed transcript, not original captured stdout/stderr"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_process.json",
+      "bytes": 3212,
+      "sha256": "655f9d430dc57c4b6337663c93114280e880301f9991904ca87fcd33da3a49f2",
+      "coverage": "complete"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_verification.json",
+      "bytes": 2287,
+      "sha256": "224cfd3c2749396801945ef13d8751124edbb6d13aba4e7dcdc8c194629c7ab1",
+      "coverage": "complete; author assertions not substituted for independent math"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_receipt.json",
+      "bytes": 14564,
+      "sha256": "234be158e85297de2d7511d0bd5026655ef637c3d4c5165db6863e66d7054d54",
+      "coverage": "complete"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_read_manifest.json",
+      "bytes": 44013,
+      "sha256": "ef884312c26834f6c4a43ee90f47b75b2fceaa8e32c6c02a20463a10b3bbb01d",
+      "coverage": "structured fields inspected; nested21inputs,4packets/64records and27methodology identities verified; inherited read claims are not reviewer read claims"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/graded_complement_distance_correction.json",
+      "bytes": 1617,
+      "sha256": "282e0e1bd399ace20932fcccc0bef91f290a1ee809b290d7749fef603ae7722b",
+      "coverage": "complete"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_domain_correction.json",
+      "bytes": 6258,
+      "sha256": "90442d8a513d1770021ea25f644eea1e55598ebc63c91fec3d6c46074215c87d",
+      "coverage": "complete"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_domain_confirmation.json",
+      "bytes": 3187,
+      "sha256": "518693688eeb6a4e1ee5023b076ebd5e05af4744a25eb6c766356a432515e317",
+      "coverage": "complete"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_soft_background_receipt.json",
+      "bytes": 13087,
+      "sha256": "5613420d87a16c573b2848cf43d2385cad7961dac3f0d0379fd5ce975d97e5df",
+      "coverage": "structured identity inspection of26bound records"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_source_activity_receipt.json",
+      "bytes": 4131,
+      "sha256": "0e769d5e94a3bed0617c5b8e50c81a04cdb3f51466514693ae8f30ac38d01c4c",
+      "coverage": "structured identity inspection of12bound records"
+    }
+  ],
+  "methodology_actual_reads": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 1118,
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "coverage": "complete; read in one or more contiguous chunks",
+      "authority_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 11788,
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "coverage": "complete; read in one or more contiguous chunks",
+      "authority_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "coverage": "complete; read in one or more contiguous chunks",
+      "authority_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "bytes": 5767,
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "coverage": "complete; read in one or more contiguous chunks",
+      "authority_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "bytes": 24561,
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "coverage": "complete; read in one or more contiguous chunks",
+      "authority_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "bytes": 5188,
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "coverage": "complete; read in one or more contiguous chunks",
+      "authority_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "bytes": 12608,
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "coverage": "complete; read in one or more contiguous chunks",
+      "authority_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "bytes": 12940,
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "coverage": "complete; read in one or more contiguous chunks",
+      "authority_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "bytes": 7554,
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "coverage": "complete; read in one or more contiguous chunks",
+      "authority_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "bytes": 23216,
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "coverage": "complete; read in one or more contiguous chunks",
+      "authority_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "bytes": 30709,
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "coverage": "complete; read in one or more contiguous chunks",
+      "authority_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "bytes": 16755,
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "coverage": "complete; read in one or more contiguous chunks",
+      "authority_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "bytes": 16454,
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "coverage": "complete; read in one or more contiguous chunks",
+      "authority_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "coverage": "complete; read in one or more contiguous chunks",
+      "authority_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "bytes": 11333,
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "coverage": "complete; read in one or more contiguous chunks",
+      "authority_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "bytes": 6427,
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "coverage": "complete; read in one or more contiguous chunks",
+      "authority_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "bytes": 6416,
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "coverage": "complete; read in one or more contiguous chunks",
+      "authority_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "bytes": 2581,
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "coverage": "complete; read in one or more contiguous chunks",
+      "authority_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "bytes": 4770,
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "coverage": "complete; read in one or more contiguous chunks",
+      "authority_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "bytes": 5313,
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "coverage": "complete; read in one or more contiguous chunks",
+      "authority_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md",
+      "bytes": 9276,
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "coverage": "complete; installed router only, immutable selected-main methodology controls"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/skills/review-loop/SKILL.md",
+      "bytes": 20680,
+      "sha256": "a629d477c0e3663c4f4540a2dc5ae2eebe6451b2f6f0be7d84a15d3c6a176879",
+      "coverage": "complete; installed router only, immutable selected-main methodology controls"
+    }
+  ],
+  "methodology_other_bound_paths": "The identity checker verifies all27author methodology pins. Any not in methodology_actual_reads is hash-checked context only, not claimed as read.",
+  "post_initial_external_reads": [
+    {
+      "url": "https://arxiv.org/html/1212.5562v2",
+      "version": "v2, 2013-04-02",
+      "coverage": "web parsed partial lines0-118,1894-1933,1996-2019; introduction and portions of3.12/3.13",
+      "role": "bounded primary-source scope comparison only; no imported theorem; no full-paper read",
+      "raw_file_sha256": null
+    },
+    {
+      "url": "https://scispace.com/pdf/large-field-renormalization-ii-localization-exponentiation-h8b7ih93xo.pdf",
+      "version": "Balaban, Commun.Math.Phys.122(1989)355-392; primary paper mirror",
+      "coverage": "web parsed text0-183, printed355-358 and opening359; no full-paper read",
+      "role": "bounded primary-source scope comparison only; no imported theorem",
+      "raw_file_sha256": null
+    }
+  ],
+  "external_hash_limit": "Web-returned parsed excerpts were read; no binary was downloaded or stored, so no exact remote-byte SHA is asserted.",
+  "identity_verification": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_graded_complement_identity_check.json",
+    "bytes": 55254,
+    "sha256": "7a1e3889aee0d4ff0439123db0adb5e5d7cb7a1bb58fa591bbbe4fbe9835a7a8"
+  },
+  "exposure_boundaries": [
+    "GC source read only after frozen source hash supplied",
+    "No GC author packaging, predecessor review report, author checker or receipt before immutable initial findings",
+    "Post-initial reviews and receipts checked provenance/domain status, not substituted for independent reconstruction",
+    "IC source/report not read or consumed; cutoff compatibility only; its author-input identity was checked",
+    "H reviewer report not opened",
+    "No full forest proof or full RD consumer re-review claimed"
+  ],
+  "new_scientific_computations": 0,
+  "source_mutations_by_reviewer": 0,
+  "git_mutations_by_reviewer": 0,
+  "audit_or_lock_mutations": 0
+}

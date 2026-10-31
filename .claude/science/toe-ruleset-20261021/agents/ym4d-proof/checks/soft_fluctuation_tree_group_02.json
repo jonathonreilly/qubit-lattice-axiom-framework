@@ -1,0 +1,67 @@
+{
+  "scope": "finite group-coordinate check; Haar factorization is the separate triangular proof",
+  "L": 3,
+  "T": 2,
+  "fine_links": 5184,
+  "tree_links": 1280,
+  "free_links": 3904,
+  "coarse_means_checked": 8,
+  "actual_contour_words_checked": 15552,
+  "passed": 9,
+  "total": 9,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "unique_internal_trees",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "pinned_roots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all_tree_links_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all_links_reconstructed",
+      "pass": true,
+      "detail": 1.2219547806213713e-15
+    },
+    {
+      "name": "all_Wilson_plaquette_traces",
+      "pass": true,
+      "detail": 3.1086244689504383e-15
+    },
+    {
+      "name": "paired_contour_means_including_periodic_wrap",
+      "pass": true,
+      "detail": 5.551115123125783e-16
+    },
+    {
+      "name": "unpinned_root_fixed_V_control",
+      "pass": true,
+      "detail": 0.19569822579803747
+    },
+    {
+      "name": "free_coordinate_count_all_blocks",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "coordinate_chart_preimage_control",
+      "pass": true,
+      "detail": {
+        "image_distance": 3.463824224941973e-16,
+        "coordinate_norm": 8.885765876316732,
+        "chart_radius": 0.1
+      }
+    }
+  ],
+  "elapsed_seconds": 0.5386986249941401,
+  "external_scientific_inputs_read": [],
+  "integrity_reads": []
+}

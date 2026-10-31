@@ -1,0 +1,25 @@
+x9: Gaussian second-difference coefficient (lattice Maxwell, one colour)
+A3 dense pinv vs momentum on 4^4: G_dense=[0.498046875  0.0689174107 0.0203683036 0.0689174107]; max|diff|=9.71e-17
+A0 G_T(d), d=1..8:
+  T=16: 6.886731e-02 1.114589e-02 2.256466e-03 6.012329e-04 2.113629e-04 9.524571e-05 5.552760e-05 4.545382e-05
+  T=24: 6.887326e-02 1.115128e-02 2.260884e-03 6.041668e-04 2.120688e-04 9.249898e-05 4.708723e-05 2.683364e-05
+  T=32: 6.887427e-02 1.115225e-02 2.261788e-03 6.049675e-04 2.127304e-04 9.297768e-05 4.732585e-05 2.675374e-05
+  T=48: 6.887465e-02 1.115262e-02 2.262146e-03 6.053062e-04 2.130436e-04 9.325856e-05 4.756689e-05 2.694604e-05
+A1 A_T(d,h):
+  T=16: A(1,1)=2.249668e-03  A(1,2)=2.366284e-03  A(3,1)=2.206675e-06  A(3,2)=2.502686e-06  A(5,1)=1.480705e-08  A(5,2)=2.079548e-08
+  T=24: A(1,1)=2.249967e-03  A(1,2)=2.366674e-03  A(3,1)=2.213268e-06  A(3,2)=2.511934e-06  A(5,1)=1.503912e-08  A(5,2)=2.041099e-08
+  T=32: A(1,1)=2.250018e-03  A(1,2)=2.366740e-03  A(3,1)=2.214483e-06  A(3,2)=2.513707e-06  A(5,1)=1.510214e-08  A(5,2)=2.052052e-08
+  T=48: A(1,1)=2.250036e-03  A(1,2)=2.366764e-03  A(3,1)=2.214950e-06  A(3,2)=2.514395e-06  A(5,1)=1.512793e-08  A(5,2)=2.056649e-08
+A2 d=1: |A32-A48|/A48 = 8.305e-06
+A2 d=3: |A32-A48|/A48 = 2.108e-04
+A4 (info) log-convexity G(d)G(d+2)-G(d+1)^2, d=1..6 (T=48): 3.142e-05 1.633e-06 1.155e-07 1.106e-08 1.437e-09 2.503e-10 all>=0
+A4 (info) fitted decay exponent of G(d), d=2..8, T=48: -4.407
+Explicit leading coefficients (one colour, Phi=F^2/2): A_48(1,1)=2.250036e-03, A_48(3,1)=2.214950e-06
+  ratios A(1,1)/C(1) = 0.9486, A(3,1)/C(3) = 0.8657
+B (informational): T=64, sharp low-momentum sigma-algebra |k_mu|<pi/l
+  l= 4: V_l=G_l(0)=1.5087e-03; coarse term=9.8312e-07; ratio to C(1)=4.145e-04; identity err=4.3e-19; D: coarse=4.791e-09, ratio to A(1,1)=2.129e-06
+  l= 8: V_l=G_l(0)=7.1526e-05; coarse term=2.4792e-09; ratio to C(1)=1.045e-06; identity err=0.0e+00; D: coarse=-1.119e-10, ratio to A(1,1)=-4.974e-08
+  l=16: V_l=G_l(0)=2.3842e-06; coarse term=2.8267e-12; ratio to C(1)=1.192e-09; identity err=4.3e-19; D: coarse=-2.939e-14, ratio to A(1,1)=-1.306e-11
+B1 fitted exponent of V_l between l=8 and l=16: -4.907 -> not consistent
+RESULT: PASS (A0-A3)
+wall 0.2 s, peak RSS 129 MB (macOS ru_maxrss bytes/1e6)

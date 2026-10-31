@@ -1,0 +1,23 @@
+{
+  "role": "Versioned primary-source routing/attribution; no theorem import",
+  "utc": "2026-10-30T01:59:43.044982+00:00",
+  "sources": [
+    {
+      "entry": "B42",
+      "url": "https://arxiv.org/abs/1206.2212v2",
+      "coordinator_coverage": "Complete rendered abstract/metadata, substantive lines8-31; no paper/theorem read. Page identifies a later v3, not reviewed here.",
+      "author_coverage": "HTML1206.2212v2 lines33-110 and abstract metadata; see frozen positive_reader_covariance_read_manifest.json",
+      "role": "Background only; PC locally rebuilds actual matrix and reader bounds."
+    },
+    {
+      "entry": "B43",
+      "url": "https://arxiv.org/abs/1510.07604v1",
+      "coordinator_coverage": "Complete rendered abstract/metadata, substantive lines8-25; no full-paper or theorem read.",
+      "author_coverage": "Versioned abstract/metadata only; see frozen author manifest.",
+      "role": "Background lead only; actual model hypotheses not imported."
+    }
+  ],
+  "scientific_numerical_runs": 0,
+  "full_existence": "OPEN",
+  "physical_continuum_mass_gap": "OPEN"
+}

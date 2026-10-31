@@ -1,0 +1,52 @@
+========================================================================================================
+ys1b -- re-run of the two FAILED ys1 clauses, exact profile (1+s)^-3, i up to 6.  d=4 L=3
+========================================================================================================
+
+--- B1  ||K_i||_1 <= L^i * L^-D sum_{y in B}|y - c_X|_1   and   sup|K_i| <= L^{i(1-D)} ---
+  i=0: sup=10/81              <= 1            True  | l1=8/3            <= 8/3      True  | l1/L^i = 2.66667
+  i=1: sup=10/2187            <= 1/27         True  | l1=56/9           <= 8        True  | l1/L^i = 2.07407
+  i=2: sup=10/59049           <= 1/729        True  | l1=488/27         <= 24       True  | l1/L^i = 2.00823
+  i=3: sup=10/1594323         <= 1/19683      True  | l1=4376/81        <= 72       True  | l1/L^i = 2.00091
+  i=4: sup=10/43046721        <= 1/531441     True  | l1=39368/243      <= 216      True  | l1/L^i = 2.00010
+  B1 VERDICT: PASS
+
+--- B2/B3  exact profile v(b) = (1+|b-p|_inf)^-3 ; i = 0..6 ; SMAX = 2924 ---
+  common denominator M = lcm(1..2925)^3 has 3827 decimal digits
+  i=0 (n_i=1   ): LI=1.250000000e-01  LImax=1.000000000e+00  BA=1.000000000e+00   | LI*n^2=0.125000  LImax*n^2=1.000000  BA*n^3=1.000000
+  i=1 (n_i=3   ): LI=3.487654321e-01  LImax=3.487654321e-01  BA=1.358024691e-01   | LI*n^2=3.138889  LImax*n^2=3.138889  BA*n^3=3.666667
+  i=2 (n_i=9   ): LI=9.083684013e-02  LImax=9.083684013e-02  BA=1.404940530e-02   | LI*n^2=7.357784  LImax*n^2=7.357784  BA*n^3=10.242016
+  i=3 (n_i=27  ): LI=1.565309864e-02  LImax=1.565309864e-02  BA=9.493671728e-04   | LI*n^2=11.411109  LImax*n^2=11.411109  BA*n^3=18.686394
+  i=4 (n_i=81  ): LI=2.177202580e-03  LImax=2.177202580e-03  BA=4.738641904e-05   | LI*n^2=14.284626  LImax*n^2=14.284626  BA*n^3=25.183086
+  i=5 (n_i=243 ): LI=2.695800716e-04  LImax=2.695800716e-04  BA=2.013116495e-06   | LI*n^2=15.918434  LImax*n^2=15.918434  BA*n^3=28.886021
+  i=6 (n_i=729 ): LI=3.146562111e-05  LImax=3.146562111e-05  BA=7.917919859e-08   | LI*n^2=16.722121  LImax*n^2=16.722121  BA*n^3=30.675644
+
+  pre-registered band test (i = 3,4,5 only; i <= 2 reported but excluded):
+  LI   :  rho_0=-0.9340  rho_1=1.2246  rho_2=1.6006  rho_3=1.7956  rho_4=1.9014  rho_5=1.9552
+     band test on i = 3,4,5 -> (V-2)   [1.7956, 1.9014, 1.9552]
+  LImax:  rho_0=0.9588  rho_1=1.2246  rho_2=1.6006  rho_3=1.7956  rho_4=1.9014  rho_5=1.9552
+     band test on i = 3,4,5 -> (V-2)   [1.7956, 1.9014, 1.9552]
+  BA   :  rho_0=1.8173  rho_1=2.0650  rho_2=2.4527  rho_3=2.7284  rho_4=2.8751  rho_5=2.9453
+     band test on i = 3,4,5 -> (V-3)   [2.7284, 2.8751, 2.9453]
+  B2 VERDICT: LI=(V-2) LImax=(V-2) BA=(V-3) -> usable
+  B2' (the two objects land in DIFFERENT bands): True
+
+--- B3  scaled constants, monotone convergence over i = 3..6, 15%% between i = 5 and 6 ---
+  LI*n^2 : i=0:0.12500  i=1:3.13889  i=2:7.35778  i=3:11.41111  i=4:14.28463  i=5:15.91843  i=6:16.72212
+  LImx*n^2: i=0:1.00000  i=1:3.13889  i=2:7.35778  i=3:11.41111  i=4:14.28463  i=5:15.91843  i=6:16.72212
+  BA*n^3 : i=0:1.00000  i=1:3.66667  i=2:10.24202  i=3:18.68639  i=4:25.18309  i=5:28.88602  i=6:30.67564
+  LI*n^2     monotone on i=3..6: True    |delta(5->6)|/|v5| = 0.0505  (<=0.15: True)
+  LImax*n^2  monotone on i=3..6: True    |delta(5->6)|/|v5| = 0.0505  (<=0.15: True)
+  BA*n^3     monotone on i=3..6: True    |delta(5->6)|/|v5| = 0.0620  (<=0.15: True)
+  B3 VERDICT: PASS
+
+--- B4  the funnel terms of u = (1/8) d* delta_p at k = 5 ---
+  phi_1 = -1/432                     = -2.3148148148e-03
+  phi_2 = -17/104976                 = -1.6194177717e-04
+  phi_3 = 0                          = +0.0000000000e+00
+  phi_4 = 0                          = +0.0000000000e+00
+  phi_5 = 0                          = +0.0000000000e+00
+  Phi_5 = -65/26244 = -2.4767565920e-03
+  (covariance: phi_1 = -1/432 and phi_2 = -17/104976 at k = 5 as at k = 2) : True
+  B4 VERDICT: PASS
+
+--- B5  DESIGNED-FAIL CONTROL: longitudinal multiplicity replaced by 1 ---

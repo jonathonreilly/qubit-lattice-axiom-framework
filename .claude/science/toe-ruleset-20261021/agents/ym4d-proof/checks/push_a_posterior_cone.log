@@ -1,0 +1,12 @@
+Exact integer reader sets: one root link -> 8 links; the eight-link star maps to itself.
+This proves the stencil closure by induction, not persistence of rough fields.
+Kernel endpoint-range finite checks: 64; ratio bound exp(2t).
+Actual one-link original conditional moments checked: 54; maximum log(actual/bound)=-13.5242568152.
+All 54 literal original-action regulator bounds retain the minimum-energy term.
+These quadratures do not integrate a pinned coarse output or certify locality.
+Actual six-plaquette frustrated core, 40 fields: energy-sum error 8.88178e-16; minimum sampled largest f_p=1.00503771625.
+Analytically its conditional excitation is zero for every core field; the open-neighborhood argument is in the manuscript.
+Repeated-comparison test, prescribed constant couplings: budget=600, debit/step=8/5, first excess=376.
+Failure is of repeated debit accounting; the single-horizon bound does not multiply these costs. This is not a U2 counterexample.
+Peak RSS bytes: 91635712 (<1000000000); BLAS threads=1.
+Counted U1--U4 progress: zero.

@@ -1,0 +1,8 @@
+B: fibres built  (1 s, RSS 544 MB)
+B T=6: K_p = 2.244288 (row: local site (np.int64(0), np.int64(0), np.int64(2), np.int64(2)), plane (2, 3); its l1 mass at coarse distance 0: 0.3398); K_rho = 2.736436 (row mu = 0); K_curv = 2.736436; max imag 1.6e-19  (5 s, RSS 560 MB)
+B T=6: decay profile max|K(p,P)| by coarse l^inf distance: 3.15e-01, 1.57e-01, 3.06e-03, 3.49e-04; max|K_rho|: 1.18e-01, 1.18e-01, 1.09e-02, 1.33e-03  (5 s, RSS 560 MB)
+B T=8: K_p = 2.261943 (row: local site (np.int64(2), np.int64(0), np.int64(0), np.int64(2)), plane (0, 3); its l1 mass at coarse distance 0: 0.3398); K_rho = 2.906886 (row mu = 3); K_curv = 2.906886; max imag 5.1e-20  (19 s, RSS 560 MB)
+B T=8: decay profile max|K(p,P)| by coarse l^inf distance: 3.15e-01, 1.57e-01, 3.06e-03, 3.18e-04, 5.81e-05; max|K_rho|: 1.18e-01, 1.18e-01, 1.10e-02, 1.62e-03, 2.37e-04  (19 s, RSS 560 MB)
+B T=10: K_p = 2.267830 (row: local site (np.int64(0), np.int64(2), np.int64(2), np.int64(2)), plane (2, 3); its l1 mass at coarse distance 0: 0.6134); K_rho = 2.968976 (row mu = 2); K_curv = 2.968976; max imag 2.1e-20  (52 s, RSS 560 MB)
+B T=10: decay profile max|K(p,P)| by coarse l^inf distance: 3.15e-01, 1.57e-01, 3.06e-03, 3.17e-04, 5.19e-05, 1.20e-05; max|K_rho|: 1.18e-01, 1.18e-01, 1.10e-02, 1.63e-03, 2.98e-04, 4.94e-05  (52 s, RSS 560 MB)
+B: FAIL K_curv(6, 8, 10) = 2.736436, 2.906886, 2.968976

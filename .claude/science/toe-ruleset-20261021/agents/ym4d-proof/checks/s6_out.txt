@@ -1,0 +1,48 @@
+== A. every-background tier ==
+A1: PASS  exact LDL^T of H - (2663/31250)I (80x80): min pivot 1.122722e-04, float lambda_min(H) = 0.0852175382
+A1n: PASS  negative control c = 0.0853: a pivot <= 0 found at step 80 (value -6.032e-03)
+    trivial: spec [1.0000,7.5000] max CHEB ratio 2.025e-01, 10theta ratio 3.147e+03; ||MR-1|| 0.0e+00, ||R(X,X)||-4.5 0.0e+00, |||PDR||| 27.511
+    Haar1: spec [0.9801,7.2101] max CHEB ratio 2.804e-01, 10theta ratio 1.288e+03; ||MR-1|| 4.4e-16, ||R(X,X)||-4.5 8.9e-16, |||PDR||| 26.786
+    Haar2: spec [0.9481,7.2167] max CHEB ratio 2.773e-01, 10theta ratio 1.002e+03; ||MR-1|| 4.4e-16, ||R(X,X)||-4.5 1.8e-15, |||PDR||| 27.266
+    smooth: spec [1.0043,7.4977] max CHEB ratio 2.057e-01, 10theta ratio 3.116e+03; ||MR-1|| 6.7e-16, ||R(X,X)||-4.5 1.8e-15, |||PDR||| 27.510
+A2b: PASS  spectrum of G_res within [a, 8], a = d=2 Kato gap 0.438447
+A2: PASS  Lemma CHEB ratio <= 1 for all pairs, all backgrounds (theta = 0.4771)
+A2n: PASS  negative control: claimed rate 10 theta is violated
+A3: PASS  RINV identities and |||P_res D^*D R||| <= c_R(2) = 29.125; ratios 0.945, 0.920, 0.936, 0.945
+A4: PASS  sigma 1.01070904, theta = m_FP^A 0.146219/block, Gamma_1 1.951447e+07, c_R 330.6588, G^A 6.472145e+09 (tail 0.0e+00); improvement over 5.8954e23: 9.109e+13
+== B. locally small backgrounds: certificate (d = 4, R_t = 5, torus 11) ==
+B1: PASS  relabelling vs direct torus kernel: max rel. difference 4.33e-16 (imag part max 3.3e-17)
+    w=1: k0 36.826073 k1 3.485138 k3 3.527324 k4 37.577884 e1 3.4303e-03 e2 6.6078e-02 G#(0) 37.057157
+    w=10: k0 36.826073 k1 3.274152 k3 3.309470 k4 37.577884 e1 3.3386e-03 e2 6.6078e-02 G#(0) 37.043148
+    w=100: k0 36.826073 k1 3.272632 k3 3.307906 k4 37.577884 e1 3.3377e-03 e2 6.6078e-02 G#(0) 37.043047
+    w=1000: k0 36.826073 k1 3.272490 k3 3.307759 k4 37.577884 e1 3.3377e-03 e2 6.6078e-02 G#(0) 37.043038
+B2: PASS  certified G^sharp(0) = 37.043038 at w = 1000, e_1 = 3.338e-03 (max residual entry bound 9.26e-07; inner |Z|<=4 max 1.92e-13); 16.9 s
+B3: PASS  float estimate of the U = 1 value (|Z|<=5) G_est = 35.730298; G^sharp(0)/G_est = 1.0367
+== B4. end-to-end test of GF-B at d = 2 ==
+    d=2 w=1: k0 9.07183 k1 2.03654 k3 2.28911 k4 10.40466 e1 2.589e-03 e2 1.711e-02
+    d=2 w=10: k0 9.07183 k1 1.71348 k3 1.90741 k4 10.40466 e1 1.965e-03 e2 1.711e-02
+    d=2 w=100: k0 9.07183 k1 1.70676 k3 1.89960 k4 10.40466 e1 1.957e-03 e2 1.711e-02
+    d=2 w=1000: k0 9.07183 k1 1.70618 k3 1.89893 k4 10.40466 e1 1.957e-03 e2 1.711e-02
+B4: PASS  eps = 4.71e-06, delta = 8.95e-05; G_meas(U) = 8.689587; G^sharp(delta) per w: 1:9.22780, 10:9.37246, 100:11.46568, 1000:n/a; G_meas(1) = 8.689586; 7.2 s
+B4b: PASS  |G_meas(U) - G_meas(1)|/G_meas(1) = 5.19e-08
+B4c: PASS  max entry |K_U - K_1| in the original gauge = 1.999 (a naive perturbation would fail)
+B4n (REPORT): rough Haar background on the 13x13 torus: G_meas = 11.9678 (GF-B hypothesis fails there); d=2 float estimate G_est(U=1, |Z|<=5) = 8.68844
+== C. Corollary CHAIN-6 ==
+  [G^sharp] zeta 5.544865e-11 s_0 7.701201e-13 r_* 8.215946e-09 r_sol 1.643419e-08 tau_c 1.099478e-14; (I1) 0.4950, (I4)/r 0.9998
+  [G^sharp] rho_band 5.7779e-17; eps_bg^(TH-bg) (a_p entry) 6.3627e-18; C_bg 1.3869e+40; (TH-ch') eps_1 <= 4.5878e-58
+  [G^sharp] n_* SU(2) 4.537e+116, SU(3) 3.029e+116; n_sharp joint 5.9e+125-4.8e+129, RS 5.6e+241-4.2e+245; HW a_bad 1.12e-121; final levels 61.1; eta_1 1.523e-119
+  [G^sharp] C3: a_sh N' 4.458e-20; R_sh 5.514e+11; g_DX'^2 C_Omega N'^2 5.059e-145 (RW-l2) / 5.366e-217 (product rule); hole ceiling g_0^2 3.530e-37; FS-1 g_0^2 1.166e-24; band window g_0 max{N_r,2N_mu} 1.293e-22; a_*^B N_r^2 6.955e-35
+  [G^sharp] G = 37.043040 (w = 1000, delta = 3.13e-13); GF-B hypothesis e_1 + c_Delta delta k_3 = 3.3378e-03
+C1: PASS  chain holds at 0.99 zeta_max (rho = 504.5) with G^sharp; GF-B hypothesis at eps = tau_c/2: True
+  [G^A] zeta 1.816385e-27 s_0 2.522757e-29 r_* 4.702363e-17 r_sol 9.404725e-17 tau_c 3.601668e-31; (I1) 0.4950, (I4)/r 0.9996
+  [G^A] rho_band 1.8927e-33; eps_bg^(TH-bg) (a_p entry) 2.0843e-34; C_bg 1.3869e+40; (TH-ch') eps_1 <= 1.5029e-74
+  [G^A] n_* SU(2) 4.228e+149, SU(3) 2.823e+149; n_sharp joint 5.5e+158-4.4e+162, RS 4.9e+307-inf; HW a_bad 1.20e-154; final levels 78.4; eta_1 1.634e-152
+  [G^A] C3: a_sh N' 1.460e-36; R_sh 9.443e+11; g_DX'^2 C_Omega N'^2 7.336e-180 (RW-l2) / 7.781e-252 (product rule); hole ceiling g_0^2 1.981e-70; FS-1 g_0^2 1.251e-57; band window g_0 max{N_r,2N_mu} 4.236e-39; a_*^B N_r^2 7.463e-68
+C2: PASS  chain holds at 0.99 zeta_max (rho = 504.5) with G^A = 6.4721e+09
+C (REPORT) FD-1 with m_FP^A = 0.14622/block, prefactor 7.784e+03: M/L >= 2.0163e+04 blocks, M >= 6.0488e+04 fine spacings (session 5: fails at M <~ 1e8)
+== D. Lemma FH ==
+D1: PASS  frozen hole (3 blocks): trivial: spec [1.0716,7.4653], CHEB ratio 2.024e-01; Haar1: spec [1.0083,7.2046], CHEB ratio 2.757e-01
+D2 (REPORT): U = 1, 6x6 torus: G_meas without hole 8.45508, with the 3-block frozen hole 8.45740
+== F. STEP-1 arithmetic ==
+F1: PASS  2.2800e-61; 1.7593e-64; 1.6098e+12; 1.4926e-237; 1.5831e-309; 1.5929e-126; 1.8156e-113; 5.1021e-67; 1.0830e-123; 1.3869e+40; 1.8104e-102; 2.9138e+205; levels 107.66
+OVERALL PASS 17/17; failed: []; time 32.1 s

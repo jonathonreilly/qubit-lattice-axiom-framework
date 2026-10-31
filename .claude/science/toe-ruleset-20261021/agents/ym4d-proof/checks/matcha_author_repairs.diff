@@ -1,0 +1,95 @@
+--- a/MATCHA.md
++++ b/MATCHA.md
+@@ -66,9 +66,11 @@
+ mass: a nonempty open group cap has positive mass, since finitely many
+ translates cover the compact group and Haar mass of the group is one.
+ 
+-Choose the current block v_*=(2,0,0,0), and output links
+-c=(v_*,direction 1), c'=(v_*,direction 2). Thus c is next to the hole
+-and c' shares its first endpoint block. W=U_(2,c) will be integrated; all
++Choose output links c=(v_0,direction 1), c'=(v_0,direction 2), inside
++the inactive region. Its fields and kernels are still present in the
++full transfer; inactivity removes specified cuts, not these variables.
++The old marked blocks are in this selected contour's ancestry.
++W=U_(2,c) will be integrated; all
+ other outputs V are retained, including V_c'. Choose four distinct original
+ plaquettes p_1,...,p_4 incident to the marked link in q_0. Their sources
+ are the **absolute original coefficients** J_i in
+@@ -86,7 +88,7 @@
+ 
+ 1. X_1 is the union of every current link occurrence in the actual contours
+    of c and c' and the four links of the 12 plaquette at within-block
+-   coordinates (1,1,1,1) of v_*.
++   coordinates (1,1,1,1) of v_0.
+ 2. X_0 is the union of every original link occurrence in the K_0 means whose
+    output links belong to X_1, every interior link of Y_0, and all links
+    of the four source plaquettes.
+@@ -108,6 +110,16 @@
+ are local. In particular M>=81, and all occurrences of M below mean this
+ complete support size, not one active block.
+ 
++For the shared ancestry, take q_0 to be the old block at within-v_0
++coordinates (0,0,0,0), and q_0+e_1 its neighbor. Some c contours read
++the current direction-one link based at q_0. Its K_0 contour family
++includes the straight leg through the marked original link, obtained
++by taking transverse within-old-block coordinates (1,1,1).
++This K_0 factor and those original Wilson/source factors belong to the
++same retained ancestral cell. The rough component has not been placed
++in a distant tensor factor merely to label the result mixed. No claim
++that every mixed cumulant is nonzero is needed for the bounds.
++
+ Integrate x_0 in the fixed caps (MA1), denoted Omega_0. Integrate x_1
+ in fixed identity caps of radius delta, denoted Omega_1; delta is given
+ in MA15. Retained xi stays in the open old caps (MA1), and retained eta
+@@ -213,6 +225,22 @@
+ The same formulas with current outcomes summed preserve their full
+ partition. The normalized density in MA6 is only the displayed fiber;
+ MA8 explains exactly what remains before it is an all-history result.
++
++At the full terminal integration, write V_all=(V,W) and retain the
++global endpoint masses as well:
++
++    A_h(J)=int rho_(1,h)(U_1;J)dU_1,
++    Zbar_A=int chi_A(U_1)b_1(U_1)dU_1,
++    Z_0(J)=int exp(-S_0(J))dU_0,
++    int R_h(V_all;J)dV_all=A_h(J),
++    int Z_A(V_all)dV_all=Zbar_A,
++    int (R_h/Z_A) Z_A dV_all/Zbar_A=A_h(J)/Zbar_A.   (MA8a)
++
++This follows by integrating each now-unread terminal kernel to one.
++If the history is normalized to R_h/A_h, its original mixture weight
++is A_h/Z_0, exactly once; summing all past histories gives sum_h A_h=Z_0.
++Every one of these source-dependent masses keeps its original jets.
++MA8a does not replace an endpoint by a unit mass before that integration.
+ 
+ ## 3. Complete real density jets, including the source labels — PROVEN
+ 
+@@ -381,8 +409,8 @@
+ bounds apply with W integrated, also if the ancestry cell is pinned.
+ If W is pinned, use P times its event indicator in place of gamma;
+ there is no pinned-event suppression. Only the background alpha is the
+-all-pin majorant required for RM5–RM7. Disconnected copies factor only when their complete
+-variable/factor cells are disjoint. No product of separately normalized
++all-pin majorant required for RM5–RM7. Disconnected copies factor only
++when their complete variable/factor cells are disjoint. No product of separately normalized
+ correlated groups is taken.
+ 
+ Here is an explicit sufficient coupling, rather than an unspecified
+@@ -408,9 +436,14 @@
+ inequality. If u<U_*, MA15 still proves RM2, but this sufficient
+ fresh-gap test has not been asserted to pass.
+ 
+-This verifies the inputs of REFMATCH RM9–RM13 at the required support
+-rate on the displayed fixed fiber. In particular their marked-new-atom
+-bound is at most `d/(1-4eta)<=1/12`. The elementary one-core logarithm
++MA17 supplies the mixed bound with the ancestral density price P(u).
++It is not the literal soft-kernel-only D_6(|S|) bill of REFMATCH RM9:
++this ancestral cell has original-source and retained-coarse dependence.
++The general pinned and complete-support decoration mechanisms
++(RM5–RM8, RM11–RM12) apply with this P-priced core bound and the displayed
++support reserve. The joint certificate instantiates RM13; its
++marked-new-atom bound is at most `d/(1-4eta)<=1/12`.
++The elementary one-core logarithm
+ can also be checked directly: its generating integral is
+ `1+z E_nu 1_E`, and the absolutely convergent log series controls all
+ the finite jets by the same joint majorants. The background integral

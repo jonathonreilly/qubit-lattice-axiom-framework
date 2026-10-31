@@ -1,0 +1,11 @@
+{
+  "recorded_utc": "2026-10-30T05:33:32.921458+00:00",
+  "submitted_sha256": "d7829aa7030e1f52b6c9b9851110a7cc8fba9d615d3eb7c19063977a36dd0366",
+  "corrected_sha256": "42b4d2a16625d4af4f6443a38ff92d63a483485816c4533292b44f867fc978a7",
+  "lines": 623,
+  "binding_fixes": [
+    "F1: explicit normalized directed law and complete noncreator-factor treatment",
+    "F2: explicit nonnegative norm rate mu>=0"
+  ],
+  "diff": "checks/renew_review_fixes.patch"
+}

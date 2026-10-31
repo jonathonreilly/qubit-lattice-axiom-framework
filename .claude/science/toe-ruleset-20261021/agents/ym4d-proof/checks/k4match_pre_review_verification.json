@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-30T03:46:55.924928+00:00",
+  "existing_files_unchanged": true,
+  "changed_existing": [],
+  "unauthorized_new_files": [],
+  "missing_links": [],
+  "syntax_ok": true,
+  "checks_passed": true,
+  "check_count": 64,
+  "resource_passed": true,
+  "criteria_hash_matches_registration": true,
+  "script_hash_matches_run": true,
+  "review": "pending"
+}

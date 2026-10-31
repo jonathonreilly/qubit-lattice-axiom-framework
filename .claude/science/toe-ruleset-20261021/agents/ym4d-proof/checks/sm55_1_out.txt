@@ -1,0 +1,18 @@
+C1 PASS
+C2 PASS
+C3 PASS
+C4 PASS
+C5 PASS
+C6 PASS
+C7 PASS
+C8 PASS
+C9 PASS
+X1 FIRED
+X2 FIRED
+X3 FIRED
+X4 FIRED
+X5 FIRED
+C1 detail: div v - 8 c.x = 0 ; v.grad log Omega + div v/4 = 0
+C7 limit: (Binf - 2*b0)/Binf
+X4 limit: 1/11
+VERDICT: PASS

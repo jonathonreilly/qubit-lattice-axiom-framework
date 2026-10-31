@@ -1,0 +1,173 @@
+{
+  "utc": "2026-10-29T18:00:43.302366+00:00",
+  "report_bytes": 83985,
+  "report_words": 11226,
+  "report_sha256": "c85bc8244adf6589c31862a3536edfe4aa7b8343c14a54fc19c01bf06d26f1b2",
+  "pre_stated_prefix_bytes": 2035,
+  "pre_stated_prefix_sha256": "9492d1f7d9d159d39325e9d67f944e0dc34a3a42a9314c8289bb8fc4c1bd0b0d",
+  "pre_stated_unchanged": true,
+  "required_source_count": 21,
+  "arxiv_read_only_count": 6,
+  "inventory_files": 210,
+  "source_hash_mismatches": [],
+  "quote_checks": 34,
+  "quote_failures": [],
+  "coverage": {
+    "costs": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "primary_gains": [
+      "G1",
+      "G2",
+      "G3"
+    ],
+    "gain_register": [
+      "G4",
+      "G5",
+      "G6",
+      "G7",
+      "G8",
+      "G9",
+      "G10",
+      "G11",
+      "G12",
+      "G13",
+      "G14",
+      "G15",
+      "G16",
+      "G17",
+      "G18",
+      "G19",
+      "G20",
+      "G21",
+      "G22",
+      "G23",
+      "G24",
+      "G25",
+      "G26",
+      "G27",
+      "G28"
+    ],
+    "hybrids": [
+      "H1",
+      "H2",
+      "H3",
+      "H4"
+    ],
+    "library": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "R6",
+      "R7",
+      "R8",
+      "R9",
+      "R10"
+    ]
+  },
+  "missing_local_md_paths": [],
+  "tracked_changes": [],
+  "unexpected_status_entries": [],
+  "git_status": [
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOFTHARD.md",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOFTHARD_LOG.md",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_softhard/AUTHOR_BRIEF_SOFTHARD.md",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_softhard/REVIEW_BRIEF_SOFTHARD.md",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/sh_II_p31.png",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/sh_I_p4.png",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/sh_axial_p13.png",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/sh_dimock_I.pdf",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/sh_dimock_II.pdf",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/sh_dimock_III.pdf",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/sh_dimock_QED.pdf",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/sh_kernel_inventory.json",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/sh_literature_manifest.json",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/sh_multi_p43.png",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/sh_quote_check.json",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/sh_source_manifest.json",
+    "?? .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/sh_validation.json"
+  ],
+  "numerical_math_check_run": false,
+  "independent_review_run": false,
+  "note": "Documentation/provenance validation only; not verification of the underlying science.",
+  "log_sha256": "97a5ea25344c6f16f59d7d2870814bf3dccd968a0301f36076040d7cee3bfea4",
+  "final_status_utc": "2026-10-29T18:01:43.137585+00:00",
+  "artifacts": [
+    {
+      "path": "checks/sh_II_p31.png",
+      "bytes": 120835,
+      "sha256": "96e62c319ce6043ed59545c73c599e7ce60582e11ca641010464af9cc772f3c4"
+    },
+    {
+      "path": "checks/sh_I_p4.png",
+      "bytes": 101550,
+      "sha256": "e83442d32a707369b0d1d3d35564d3e6ed73fefd7c06afec2a86cb52f22ab500"
+    },
+    {
+      "path": "checks/sh_axial_p13.png",
+      "bytes": 121171,
+      "sha256": "c26be3e458fe6672b885bda2754d1175a1525ff4f80322429e627b2383489426"
+    },
+    {
+      "path": "checks/sh_dimock_I.pdf",
+      "bytes": 565384,
+      "sha256": "2d7aebb50cbbfe5005433ca0b69dc1d631c8f307de24ce2eccc7c36074d88a26"
+    },
+    {
+      "path": "checks/sh_dimock_II.pdf",
+      "bytes": 953179,
+      "sha256": "9b5216ec475c98c1acaaf82f7ac82e19567b9ab099a17a08f142162adac7589c"
+    },
+    {
+      "path": "checks/sh_dimock_III.pdf",
+      "bytes": 424487,
+      "sha256": "280155600421bc183ce66a10a809eebf2fbbf2fe7a47f928408304dc5444d615"
+    },
+    {
+      "path": "checks/sh_dimock_QED.pdf",
+      "bytes": 855698,
+      "sha256": "d29c463174383a7e3bd015685f5fb6369baecf3da074ce2eb6eabb4b68456cf4"
+    },
+    {
+      "path": "checks/sh_kernel_inventory.json",
+      "bytes": 653841,
+      "sha256": "109ef53356818b9f73c5dcbb29cb9d099c60f3d96da82c680652d51f6e069dac"
+    },
+    {
+      "path": "checks/sh_literature_manifest.json",
+      "bytes": 934,
+      "sha256": "38213fa89e3d757e545d2975aa37c1db79459e08bdf4dae810c19b79a4cf4763"
+    },
+    {
+      "path": "checks/sh_multi_p43.png",
+      "bytes": 136287,
+      "sha256": "dfe31fdcf4b9e3c2d4573914d86abb8276cc98af8f4a507180f81f919671c500"
+    },
+    {
+      "path": "checks/sh_quote_check.json",
+      "bytes": 9414,
+      "sha256": "9abecaa2cb018fa775469eec75db507f8c1f98452ecc25e53a9e193860fd8d2f"
+    },
+    {
+      "path": "checks/sh_source_manifest.json",
+      "bytes": 4702,
+      "sha256": "67bf6d3c7760f2b9fd17a2f9524e381c061544296d7a8919a1a094fb6e487993"
+    }
+  ]
+}

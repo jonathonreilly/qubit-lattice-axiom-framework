@@ -1,0 +1,109 @@
+{
+  "utc": "2026-10-30T00:28:07.044473+00:00",
+  "kind": "source identity only; not a proof certificate",
+  "sources": [
+    {
+      "path": "briefs_q/F17/AUTHOR.md",
+      "sha256": "d024ac39f6703d6349f3a0e672cb79b52c3ef69647f6519a408ae63442f5ea68",
+      "bytes": 2678,
+      "lines": 19
+    },
+    {
+      "path": "PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497,
+      "lines": 11
+    },
+    {
+      "path": "HANDOFF.md",
+      "sha256": "c931a95e8415a6edf1064306e227065a3547eabcc927ebdad636f8926f8bcc00",
+      "bytes": 55278,
+      "lines": 821
+    },
+    {
+      "path": "ASSEMBLY55.md",
+      "sha256": "253ea55619c7fd09d278add27b840c989a2a35160eb22a0385ea700f01fac9c7",
+      "bytes": 84890,
+      "lines": 747
+    },
+    {
+      "path": "CODEX_REVIEW_ASSEMBLY.md",
+      "sha256": "189d7d5fda338860ad446b65047979bb4b36129a83697ad4412a9b41dd1cdd59",
+      "bytes": 43744,
+      "lines": 237
+    },
+    {
+      "path": "HINT2_55.md",
+      "sha256": "e617800fa0426a6099b5b6966cf383d118eeed33f363b5c9ff866108a6537dbf",
+      "bytes": 67652,
+      "lines": 596
+    },
+    {
+      "path": "CODEX_REVIEW_HINT2.md",
+      "sha256": "062186c586903dc179ecbb50e78f102094dec23d41fadf5d63151b58c15586a8",
+      "bytes": 46485,
+      "lines": 268
+    },
+    {
+      "path": "W_T0.md",
+      "sha256": "eaf064445948aed7096e7d4e53c20ed4407d1c87458943feb52f3d7638f2e804",
+      "bytes": 45177,
+      "lines": 784
+    },
+    {
+      "path": "REVIEW_W_T0.md",
+      "sha256": "29b66e03a01ba9d98613fc18ab978a770677a88d2219b0d7fb34db9f2197cd68",
+      "bytes": 15729,
+      "lines": 253
+    },
+    {
+      "path": "RLARGE.md",
+      "sha256": "4f3d2777bcd736ad6936946f6c072ebebd8fe2638839538ea0db28825f2438d2",
+      "bytes": 134489,
+      "lines": 1267
+    },
+    {
+      "path": "REVIEW_RLARGE_V3.md",
+      "sha256": "ac2e6074781f8ba0313b6497ab6ca45c112c8bce3343ecf2ebf005f6a842539d",
+      "bytes": 32643,
+      "lines": 419
+    },
+    {
+      "path": "LARGE55.md",
+      "sha256": "79bc36d60687376716aa425ad3c271b681ca9549f5d217693e2736b805cdf0e7",
+      "bytes": 81497,
+      "lines": 764
+    },
+    {
+      "path": "CODEX_REVIEW_LARGE.md",
+      "sha256": "cc9d86b0aca6d301e7c4111a8e4eaaafccf4c121323aaa0cb9026448ab38f777",
+      "bytes": 47027,
+      "lines": 319
+    },
+    {
+      "path": "LCONV55.md",
+      "sha256": "79a45d830c12282558cbaea63bfca2cf32d0e979b4e07a26a8bdba3e2fbbba16",
+      "bytes": 56764,
+      "lines": 546
+    },
+    {
+      "path": "CODEX_REVIEW_LCONV.md",
+      "sha256": "536a2a690ab12e6f4e94827003d500159f40b2132b5cac05a85a0978242a0dcd",
+      "bytes": 39409,
+      "lines": 267
+    },
+    {
+      "path": "PROOF.md",
+      "sha256": "c2feceb041aa8718bf3d71ce31d61f26c9ce8a01d307a13a00bee5dc87691b58",
+      "bytes": 791991,
+      "lines": 7491
+    },
+    {
+      "path": "FLOW55.md",
+      "sha256": "56d2707f4b571585db26cf2a077dbaee57bc936c76821cdbc50710e4b36e9d25",
+      "bytes": 70208,
+      "lines": 616
+    }
+  ],
+  "author_draft_sha256": "b2a4f0f8650ff2db736acfaa1b0f30be1d30d449ceb827e32f55186b81e82440"
+}

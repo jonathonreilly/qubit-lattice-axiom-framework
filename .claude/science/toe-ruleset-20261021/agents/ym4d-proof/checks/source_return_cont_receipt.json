@@ -1,0 +1,301 @@
+{
+  "actual_current_surface_status": "bounded-support",
+  "executions": [
+    {
+      "all_checks_pass": true,
+      "check_count": 44,
+      "command": "python3 .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_return_cont_exact.py > .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_return_cont_attempt01.json 2> .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_return_cont_attempt01.stderr",
+      "elapsed_seconds_reported_by_script": 1.976119540981017,
+      "exit_code": 0,
+      "explicit_controls": 16,
+      "stderr_bytes": 0
+    },
+    {
+      "all_checks_pass": true,
+      "check_count": 5,
+      "command": "python3 .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_return_cont_ball.py > .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_return_cont_ball_results.json 2> .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_return_cont_ball.stderr",
+      "elapsed_seconds_reported_by_script": 0.03153604100225493,
+      "exit_code": 0,
+      "explicit_controls": 2,
+      "stderr_bytes": 0
+    }
+  ],
+  "freeze_utc": "2026-10-29T14:24:08.626204+00:00",
+  "frozen_input_verification": [
+    {
+      "bytes": 46461,
+      "lines": 855,
+      "path": "SOURCE_LOCAL_RETURN_ASTRA.md",
+      "sha256": "2eee991e4e4546aa3ed10ad0ffe40d840c5347a002d623aac47b2fc515fd7769"
+    },
+    {
+      "bytes": 34266,
+      "lines": 551,
+      "path": "REVIEW_SOURCE_LOCAL_RETURN_ASTRA.md",
+      "sha256": "3b078960b4e5556aad8035ebb2059e7f325893c7b8f9a351900786a7f8d606db"
+    },
+    {
+      "bytes": 34340,
+      "lines": 582,
+      "path": "RECOVERY_CLUSTER_ASTRA.md",
+      "sha256": "9c9264bd4d92b60798e48ccd2eb0ff230e221c3ffd2107c0f6443ec86de563cf"
+    },
+    {
+      "bytes": 25661,
+      "lines": 180,
+      "path": "REVIEW_RECOVERY_CLUSTER_ASTRA.md",
+      "sha256": "f3b3c8baed4e53cf4f3213342b97e51587576b59be4fb8d61fc3cbb3565dc2a0"
+    }
+  ],
+  "limitations": [
+    "No full nonabelian Hessian numerical construction",
+    "SU(2) plaquette background is prescribed, not solved by the runner",
+    "Gaussian quadratures use high precision without interval certification",
+    "Finite checks do not prove all-order or volume/scale-uniform statements",
+    "Auxiliary Hessian coercivity is not identified as a physical mass gap"
+  ],
+  "methodology_freshness": "Current-main revision supplied by coordinator; no fetch/git mutation by this restricted worker. Read exact sources with git show.",
+  "methodology_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "methodology_sources": [
+    {
+      "path": "AGENTS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0"
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    }
+  ],
+  "model_provenance": "Coordinator-requested Astra/max continuing author context; no independent runtime attestation. Same-family author controls, fresh independent review pending.",
+  "mutation_scope": "Only this note and checks/source_return_cont_* written. No git/PR/audit mutation, no worker spawning, frozen units untouched.",
+  "observed_head_read_only": "236882cc8e66bfabf606216f5e49ca4cd0a61911",
+  "open_interfaces": [
+    "Actual arbitrary Xi_h, Z_ref,h and nonlinear chart/collar matching to every STEP return",
+    "General hard histories, arbitrary holes and all-coarse-field/holonomy coverage",
+    "Outside-chart complements and unrestricted cut failures",
+    "Higher-level exact action and inherited source-norm induction, E_cb/E_NA bridge",
+    "Full N1/N2, continuum OS0-OS3, existence and physical mass gap"
+  ],
+  "outputs": [
+    {
+      "bytes": 47633,
+      "lines": 856,
+      "path": "SOURCE_LOCAL_RETURN_CONTINUATION_ASTRA.md",
+      "sha256": "9542b717307e743b4e8daf25a8549c44562666563375cf66f6147eda3cb85e3f"
+    },
+    {
+      "bytes": 17411,
+      "lines": 340,
+      "path": "checks/source_return_cont_exact.py",
+      "sha256": "3a39faaa008b37c1d9df8cb9dfb5ae2a7c356a0e0d52d5366ceffeb0d7d6ff2c"
+    },
+    {
+      "bytes": 6387,
+      "lines": 112,
+      "path": "checks/source_return_cont_attempt01.json",
+      "sha256": "e6ab41e4b103f736c6659a5e0fbbbeb3c098b7896c4ae389d53035398966a111"
+    },
+    {
+      "bytes": 0,
+      "lines": 0,
+      "path": "checks/source_return_cont_attempt01.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2901,
+      "lines": 55,
+      "path": "checks/source_return_cont_ball.py",
+      "sha256": "3e35f7b4919440a0d4cbdc050ebedd4801a0f6b35a5646e4c5df5bf4247b088a"
+    },
+    {
+      "bytes": 1479,
+      "lines": 23,
+      "path": "checks/source_return_cont_ball_results.json",
+      "sha256": "4919af872202d9a81297ea84cfc4a7497e4b0288e2f27a4ab589569699676d5c"
+    },
+    {
+      "bytes": 0,
+      "lines": 0,
+      "path": "checks/source_return_cont_ball.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "positive_scope": [
+    "Exact selected raw Haar sector with fixed coefficient-source chart",
+    "Actual all-order O(sigma p^3+rho p^2) source bound on |B|<=c sigma p",
+    "Normalized fixed-chart pin, local insertion and fixed product-history bounds",
+    "Original-source connected normalized affine return logarithm, with complete Jacobian and cube/ball boundary factors"
+  ],
+  "preserved_failures": [
+    "Positive correlated-history control has exact zero despite small product-measure interaction",
+    "Two nonmutating text patch context mismatches; corrected after reading current text",
+    "No failed scientific execution or mutated output discarded"
+  ],
+  "receipt_self_hash": "Excluded to avoid a circular hash; sent separately to coordinator.",
+  "repair_provenance": {
+    "bytes": 2821,
+    "lines": 42,
+    "path": "checks/full_proof_source_return_fix.json",
+    "sha256": "1dad861e82c3df372d54a1231a57c14f982a725fb228b7c9937fe8febd590ace"
+  },
+  "review_state": "New continuation awaits fresh independent mathematical review; no audit status changes.",
+  "science_baseline": "962f97c259d8c241df632a07e27f498f4ad33b09",
+  "source_identities": [
+    {
+      "bytes": 46090,
+      "lines": 318,
+      "path": "CODEX_REVIEW_STEP.md",
+      "sha256": "32bab8cbc920447280b3da93a1754bf792509a115bbf8cfffc7101350fe64a0d"
+    },
+    {
+      "bytes": 94345,
+      "lines": 812,
+      "path": "STEP55.md",
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce"
+    },
+    {
+      "bytes": 769129,
+      "lines": 7158,
+      "path": "PROOF.md",
+      "sha256": "eea6fe02f56840f80061284765ad3cd41291d6ad00d95c602068fed4dd40b74a"
+    },
+    {
+      "bytes": 87410,
+      "lines": 748,
+      "path": "SRC2_55.md",
+      "sha256": "66206a0bc13e5c4c264136abb0aa8a5620e66958a561fc7c0fcee4ff3989676c"
+    },
+    {
+      "bytes": 40778,
+      "lines": 273,
+      "path": "CODEX_REVIEW_SRC2.md",
+      "sha256": "b817b7a8639c0585628cdadb169c80bb3fc3ff4afb22cbd76539c15fc695938e"
+    },
+    {
+      "bytes": 48911,
+      "lines": 443,
+      "path": "B2_55.md",
+      "sha256": "b178059680f29adc5f4bdac0b07621c2f1697047364cdde0f5963cf25040164d"
+    },
+    {
+      "bytes": 81497,
+      "lines": 764,
+      "path": "LARGE55.md",
+      "sha256": "79bc36d60687376716aa425ad3c271b681ca9549f5d217693e2736b805cdf0e7"
+    },
+    {
+      "bytes": 2524,
+      "lines": 72,
+      "path": "checks/source_return_receipt.json",
+      "sha256": "5d4a4298923654daf2dabef0cc01fc31fe4b53734a655233829d77dc75ccfcf8"
+    }
+  ],
+  "source_reads_this_continuation": [
+    {
+      "coverage": "Complete repaired frozen unit, all 855 lines.",
+      "path": "SOURCE_LOCAL_RETURN_ASTRA.md"
+    },
+    {
+      "coverage": "Complete report in bounded chunks through end.",
+      "path": "REVIEW_SOURCE_LOCAL_RETURN_ASTRA.md"
+    },
+    {
+      "coverage": "Complete provenance.",
+      "path": "checks/full_proof_source_return_fix.json"
+    },
+    {
+      "coverage": "Lines 1-390, including source norms, operator/composition, complete CX-R proof and full-factor identity; complete earlier author read remains historical context, not a new complete reread.",
+      "path": "RECOVERY_CLUSTER_ASTRA.md"
+    },
+    {
+      "coverage": "Complete 180-line report; truncated middle recovered by lines 90-140.",
+      "path": "REVIEW_RECOVERY_CLUSTER_ASTRA.md"
+    },
+    {
+      "coverage": "241-390, 419-545, 656-697. Return argument 475-545 reread to recover truncated table context.",
+      "path": "STEP55.md"
+    },
+    {
+      "coverage": "190-275 refreshed, including R11 actual-return/normalization limitation; complete earlier author read preserved in predecessor receipt.",
+      "path": "CODEX_REVIEW_STEP.md"
+    },
+    {
+      "coverage": "Necessary N5/RW/NA-FP arguments from prior author work and the frozen independent review; current diff against science baseline read completely. Only coordinator front matter differs.",
+      "path": "PROOF.md"
+    },
+    {
+      "coverage": "Prior actual MB/E11 and F1/F2/F7 reading reused; no claim of complete current reread.",
+      "path": "SRC2_55.md and CODEX_REVIEW_SRC2.md"
+    },
+    {
+      "coverage": "Prior consumer-caveat reading reused; no complete reread claimed.",
+      "path": "B2_55.md"
+    }
+  ],
+  "statement_search": {
+    "classification": "Returned statement excerpts were nonmatching record conditionals, mediator units, matrix spectral partitions or old proposal descriptions. Closest actual inputs are the frozen source-return and CX-R units in this active PR. Limited repository search only; no literature novelty claim.",
+    "patterns": [
+      "(fixed.reference.*(source|coefficient)|normaliz(ed|ed).*face.*(cluster|pin)|pinning.*(cluster|partition)|cluster.*pinning)",
+      "(normalized.face|normalised.face|point.pinning|pinned.partition|fixed.reference.sector)"
+    ],
+    "revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+    "scope": [
+      "docs/*.md",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/*.md"
+    ]
+  },
+  "syntax_validation": "Both Python sources compiled with built-in compile; no bytecode emitted.",
+  "target_claim_type": "bounded_theorem",
+  "trace_class": "upstream_support",
+  "unchanged_proof_body": {
+    "anchor": "> **PROVENANCE WARNING (2026-10-28T22:11:08Z",
+    "baseline": "962f97c259d8c241df632a07e27f498f4ad33b09",
+    "baseline_body_sha256": "4efdee19aa03123a89053e466525f0ef5e9d8a4b8eb1ea38a1e87125043e728c",
+    "comparison_true": true,
+    "current_body_sha256": "4efdee19aa03123a89053e466525f0ef5e9d8a4b8eb1ea38a1e87125043e728c"
+  },
+  "workdir": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "worker": "/root/source_local_return"
+}

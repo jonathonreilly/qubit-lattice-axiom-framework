@@ -1,0 +1,9 @@
+K1: n=240 max=5.921e-16 threshold=1e-12 PASS
+K2: n=160 max=3.788e-10 threshold=1e-07 PASS
+K3: n=80 max=2.072e-10 threshold=1e-08 PASS
+K4: n=240 max=2.572e-11 threshold=1e-07 PASS
+K5: n=240 max=2.960e-11 threshold=1e-08 PASS
+K6: n=12 max=1.667e-05 threshold=5e-02 PASS
+P0: max stationarity residual=4.306e-10 threshold=1e-13 FAIL
+report: max ||W_Newton - W_BFGS||_op (SU(3), first 5 instances per cell) = 4.140e-08
+OVERALL: FAIL

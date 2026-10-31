@@ -1,0 +1,168 @@
+--- checks/matchb_review_source_v1.md	2026-10-30 07:28:31
++++ MATCHB.md	2026-10-30 07:28:31
+@@ -91,9 +91,9 @@
+ rule, retaining their level and original reader labels. An ancestry cell
+ may contain many levels. Write z=x_(C^c). Its actual conditional law is
+ 
+-    Z_C(y,z)=int w_h(y,x_C,z) dx_C,
+-    gamma_C(dx_C|y,z)=w_h(y,x_C,z) dx_C/Z_C(y,z),
+-                                      only if Z_C(y,z)>0.    (MB4)
++    Z_C^full(y,z)=int w_h(y,x_C,z) dx_C,
++    gamma_C(dx_C|y,z)=w_h(y,x_C,z) dx_C/Z_C^full(y,z),
++                                 only if Z_C^full(y,z)>0.    (MB4)
+ 
+ This formula is the definition of the adapted interacting cell. It
+ contains the Wilson action, all read soft kernels, all read ancestral
+@@ -108,7 +108,7 @@
+ nonzero factors are positive. On a positive fiber the integral of gamma_C
+ is one, so its total variation is one. It is strictly positive only on its
+ allowed support. This proof works after every admissible pin; it supplies
+-no uniform lower bound on Z_C and does not remove hard zeros.
++no uniform lower bound on Z_C^full and does not remove hard zeros.
+ 
+ For locality, factor the opened weight into its actual factors f_a with
+ reader sets R_a. The complete-history product in JMBRA A6 is one finite
+@@ -118,6 +118,14 @@
+ 
+     B(C) = union_(a:R_a meets C) R_a, including y readers.    (MB5)
+ 
++More explicitly, let q_C be the product of all incident factors and
++F_ext the product of all other factors. Then
++`w_h=F_ext q_C`, `Z_C^loc=int q_C dx_C`,
++`Z_C^full=F_ext Z_C^loc`, and `gamma_C=q_C/Z_C^loc` on a positive fiber.
++The exterior factor cancels only in gamma_C. Its y derivatives remain
++in the full normalizer, and its full original readers and source dependence
++remain in comparisons such as (MB3).
++
+ This is an exact **conditional** locality statement. Every interaction
+ between coordinates inside C remains unexpanded. A bound on the diameter
+ or size of B(C) is an additional geometric/factor hypothesis. Complete
+@@ -141,7 +149,7 @@
+ derivative acquisition from a value bound is used.
+ 
+ **PROVEN — fixed-support relative jets.** Suppose, on the stated open y
+-domain and at fixed exterior/pins, the cell weight can be written
++domain and at fixed exterior/pins, the reduced incident weight q_C can be written
+ `w0(x_C,z) exp H_C(y,x_C,z)`, with fixed nonnegative w0, compact-set
+ dominated derivatives, and weighted ordered score bounds
+ 
+@@ -166,12 +174,12 @@
+     C_r(b)=sum_(s=0)^r binom(r,s) M_s(b) I_(r-s)(b).
+ 
+ Repeated differentiation of exp H assigns each ordered position to a
+-partition block. Integration and division by Z_C bound its derivative by
++partition block. Integration and division by Z_C^loc bound its derivative by
+ M_r. Differentiating log and reciprocal gives the coefficients
+ `(-1)^(k-1)(k-1)!` and `(-1)^k k!`; Leibniz gives C_r. Therefore
+ 
+-    |D_I Z_C|/Z_C <= M_r(b_C),
+-    |D_I log Z_C| <= L_r(b_C),
++    |D_I Z_C^loc|/Z_C^loc <= M_r(b_C),
++    |D_I log Z_C^loc| <= L_r(b_C),
+     |D_I gamma_C(x_C)| <= gamma_C(x_C) C_r(b_C),
+     T^(6,4)(gamma_C) <= P_C gamma_C,
+     P_C=sum_(a+b<=6,c<=4) C_(a+b+c)(b_C)/(a!b!c!).       (MB7)
+@@ -183,6 +191,13 @@
+ array b_C works on every positive pinned fiber covered by (MB6). There
+ is no inverse rare-sector mass in this relative estimate.
+ 
++The first two bounds are for Z_C^loc. For the original full normalizer,
++`log Z_C^full=log F_ext+log Z_C^loc`; its extra exterior derivatives must
++be retained, and Leibniz applies to `Z_C^full=F_ext Z_C^loc`. For example,
++an exterior factor exp(A y) gives gamma_C independent of y but contributes
++A to the full logarithmic derivative. It cannot be estimated by an
++incident-only zero score array.
++
+ This is not a uniform derivative theorem for the complete actual family.
+ If a selector moves with y, w0 is not fixed: its boundary derivatives
+ must be supplied by FR/SEL or the alternatives summed first. If ancestry
+@@ -194,11 +209,11 @@
+ complete cell estimate. They forbid treating such costs as automatically
+ O(1). Paid regulator/charge bounds and their joint moments remain inputs.
+ 
+-**PROVEN — a same-support local ratio.** If two complete cell weights have
+-the same fixed support and satisfy `w_C^+=w_C^- exp Delta_C`, then
++**PROVEN — a same-support local ratio.** If two complete incident weights
++have the same fixed support and satisfy `q_C^+=q_C^- exp Delta_C`, then
+ 
+-    Z_C^+/Z_C^- = E_(gamma_C^-) exp Delta_C,
+-    min Delta_C <= log(Z_C^+/Z_C^-) <= max Delta_C,
++    Z_C^(loc,+)/Z_C^(loc,-) = E_(gamma_C^-) exp Delta_C,
++    min Delta_C <= log(Z_C^(loc,+)/Z_C^(loc,-)) <= max Delta_C,
+     exp(-osc Delta_C) <= gamma_C^+/gamma_C^-
+                                          <= exp(osc Delta_C). (MB8)
+ 
+@@ -208,12 +223,14 @@
+ decomposition, not this ratio. For score arrays b^+,b^- as in (MB6),
+ Leibniz also gives
+ 
+-    |D_I (Z_C^+/Z_C^-)| <= (Z_C^+/Z_C^-)
++    |D_I (Z_C^(loc,+)/Z_C^(loc,-)) <= (Z_C^(loc,+)/Z_C^(loc,-))
+        sum_(s=0)^r binom(r,s) M_s(b^+) I_(r-s)(b^-).     (MB9)
+ 
+ Thus both the scalar local price and its derivative bill are explicit.
+ This bound does not infer small derivative differences from a small
+ zeroth-order Delta_C.
++For full normalizer ratios, multiply by `F_ext^+/F_ext^-` and retain its
++derivatives and readers separately. Unequal exterior factors do not cancel.
+ 
+ For example, changing P complete Wilson factors of coefficients c_p and
+ C complete kernels, with the same couplings and hard support, gives the
+@@ -223,7 +240,8 @@
+                             +4 sum_(changed kernel c)t_level(c). (MB10)
+ 
+ Here 0<=s<=2, and each normalized kernel has log between -2t and 2t.
+-Include all changed incident factors and all their ancestors; the counts
++Include all changed incident factors and all their ancestors; changed
++exterior factors belong to the separate exterior ratio. The counts
+ are not automatically one-step block counts. An unchanged factor cancels
+ before this estimate. The O(u) bound in (MB10) is finite but too costly
+ to certify a net `c u^delta-O(log u)-A u>0` when A>0 and 0<delta<1.
+@@ -312,8 +330,13 @@
+ `|B_S|<=osc Phi`, potentially extensive.
+ 
+ Here is an explicit sufficient replacement, not a claim that it has been
+-produced. Let H contain S and **all** parameter readers of F and the base
+-marginal density n_(S,y). Supply, for every used pin, supported expansions
++produced. Fix sigma>=0. Let H be a nonempty connected complete core containing
++S and **all** original parameter readers of F and the base marginal density
++n_(S,y), together with integrated ancestry readers required by the support
++convention. If the natural union is disconnected, choose a connected hull
++and pay its actual size throughout (MB18)–(MB21), including the input d.
++Empty-support scalars keep their separate budgets. Supply, for every used
++pin, supported expansions
+ 
+     log Z_Phi^S=sum_K L_K^S,  log Z_Phi^empty=sum_K L_K^empty,
+     L_K^S=L_K^empty if K misses H,
+@@ -370,7 +393,8 @@
+ additional input, not a reason to omit it.
+ 
+ For the full-root version take (MB16) at sigma+1, eta<=1/4, and a common
+-core family with
++core family with each H_G satisfying this same connected complete-core
++requirement and
+ `d=sup_v sum_(G:v in H_G) exp((sigma+1)|H_G|) w_G`.
+ Then
+ 
+@@ -413,7 +437,8 @@
+ 
+ Assume an absolutely convergent decomposition `k_B=sum_K c_(B,K)` into
+ functions with complete connected supports K containing union_(i in B)H_i.
+-Let a_(B,K)=sup T c_(B,K), including all reference derivatives. Define
++Let a_(B,K)=sup T c_(B,K), including all reference derivatives. For
++sigma>=0, define
+ 
+     Delta_sigma=sup_v sum_(B,K:v in K)
+                          exp((sigma+1)|K|) a_(B,K) <=1/4.
+@@ -557,7 +582,10 @@
+ 
+ The bracketed budgets must be the actual (MB7), (MB8)/(MB9), and (MB16)
+ quantities, with every charge/regulator allocation specified on the same
+-law. A declared polynomial-in-u envelope with fixed coefficients is
++law. In these local budgets the normalizers are Z_C^loc. Any full fiber
++normalizer or full ratio also retains F_ext and its own full-reader score
++and log budget, as required after (MB7) and (MB9).
++A declared polynomial-in-u envelope with fixed coefficients is
+ permitted if its cost is actually paid; P_* does not silently demand or
+ assert an unregulated coupling-independent kernel estimate. If histories
+ are summed, the needed rooted sums include that complete family before

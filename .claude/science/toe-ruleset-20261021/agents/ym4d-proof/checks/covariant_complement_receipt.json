@@ -1,0 +1,153 @@
+{
+  "frozen_utc": "2026-10-29T21:53:41.118612+00:00",
+  "author_unit": "COVARIANT_COMPLEMENT_ASTRA",
+  "disposition": "Frozen bounded author theorem pending fresh independent review; no audit or whole-PR disposition",
+  "source_sha256": "af4c8206ccc2ce86274e5f92643e28154abb010b7f413d5cf578035efb1eaa7b",
+  "manifest_sha256": "57b7e15eb8d0bb48f9966265e09852a61a334e811e6432554175a3f7ade89f44",
+  "artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_COMPLEMENT_ASTRA.md",
+      "bytes": 28162,
+      "sha256": "af4c8206ccc2ce86274e5f92643e28154abb010b7f413d5cf578035efb1eaa7b"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_01.py",
+      "bytes": 11960,
+      "sha256": "39b0d8d6b50aecf31a86772b9da5eccaf7eac86d5c6ee09c14c1e72f0c693a3c"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_01_output.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_01_results.json",
+      "bytes": 7643,
+      "sha256": "a35659e7623ec15ce03f5328dd9db266d49695c379552c438d108f5081fee2d5"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_01_stderr.txt",
+      "bytes": 122,
+      "sha256": "a4f5e2845bb249634292385b9b2a99a0b9dee1bd5df178c7438fa87cc21ff185"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_02_output.txt",
+      "bytes": 5370,
+      "sha256": "6e5bdb1988e35b9f96473afe668ebf57316fe070c63a089adcff26701187a9c8"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_02_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_criteria.md",
+      "bytes": 3216,
+      "sha256": "7eec32ce4b5db6d3ea11f62a3d4c29fdc596a05f20b9e7b3b1ea30dba902b667"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_gate01.json",
+      "bytes": 713,
+      "sha256": "8b666a73bd88470ff17d67499b96c19523e929202659300a4a76142da16541df"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_gate02.json",
+      "bytes": 877,
+      "sha256": "0b2e21a5ce1591990a5e7edd14de73a28016454d36c3b631e0c83b1a853b4fd2"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_packaging_failure01.json",
+      "bytes": 648,
+      "sha256": "d4cc62be7ab0cbe918fa5d3e6f5835327438f6b69405e4fee3a7eb0df610451a"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_posthoc.py",
+      "bytes": 1712,
+      "sha256": "4ac0a1439508a34ebeb2e86b4ad287f5a9aa12d7cb71fd5fbe63a8304ba53c7a"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_posthoc03_gate.json",
+      "bytes": 879,
+      "sha256": "756e1f38d199cc3b679918497bdcae44c6180c3e3362212803c2f25199cf47c8"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_posthoc03_output.txt",
+      "bytes": 756,
+      "sha256": "9327e7872e9bde7ef30b05b2317d6380e59eaf46d5824a8f8ad24c3f6e4f465c"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_posthoc03_run.json",
+      "bytes": 387,
+      "sha256": "a2702ef4ff43afca19b4428436dd0e2f2c5377e1c0d452ad60a58eb2494defde"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_posthoc03_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_posthoc_criteria.md",
+      "bytes": 970,
+      "sha256": "3e96c965e88fd6c146cde9836b4594d1835476f20bdb13e137ab7f01202ff0f2"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_posthoc_results.json",
+      "bytes": 756,
+      "sha256": "9327e7872e9bde7ef30b05b2317d6380e59eaf46d5824a8f8ad24c3f6e4f465c"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_read_manifest.json",
+      "bytes": 11144,
+      "sha256": "57b7e15eb8d0bb48f9966265e09852a61a334e811e6432554175a3f7ade89f44"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_run02.json",
+      "bytes": 377,
+      "sha256": "37915e7f6f0e2afa2e218cedf434c53631bae4a13fa5e579ab04f9d7334590be"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_runner.py",
+      "bytes": 2905,
+      "sha256": "489d96acb40e06abcb599eb4148bfa29ad58ee09fb03218bf82d8e4a8d081b0b"
+    }
+  ],
+  "evidence": {
+    "main_result": "23/24,6/6 detected mutations; broad-shell auxiliary ratio at u40 failed and remains failed",
+    "posthoc_result": "3/3 narrower-shell diagnostics; not retroactive repair or proof",
+    "resource_failure": "Initial RLIMIT_RSS rejection before mathematical program execution; exact stderr and gate retained",
+    "main_runtime": {
+      "exit_code": 1,
+      "elapsed_seconds": 1.5764817079761997,
+      "peak_rss_kib": 65072,
+      "termination_reason": null,
+      "program": "covariant_complement_01.py",
+      "stdout": "covariant_complement_02_output.txt",
+      "stderr": "covariant_complement_02_stderr.txt",
+      "previous_resource_only_failure": "covariant_complement_01_stderr.txt; RLIMIT_RSS rejected before runpy executed"
+    },
+    "posthoc_runtime": {
+      "exit_code": 0,
+      "elapsed_seconds": 0.5253316659945995,
+      "peak_rss_kib": 53680,
+      "termination_reason": null,
+      "program": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/covariant_complement_posthoc.py",
+      "program_sha256": "4ac0a1439508a34ebeb2e86b4ad287f5a9aa12d7cb71fd5fbe63a8304ba53c7a"
+    }
+  },
+  "scientific_scope": [
+    "Actual fixed-real-V cut Haar block/crossing conditional polynomial density and boundary layers",
+    "Explicit epsilon_1 ceiling for block cap; crossing theorem has no such restriction",
+    "H24 positive returned-gas tilt away from full retained failure readers",
+    "Exact raw complex-source envelope relative to positive Re(epsilon) history mass; CC18 nontrivial E is a sea-side insertion",
+    "No complete complement price, complex normalized logarithm, multilevel RG, continuum existence or physical mass gap"
+  ],
+  "validation": {
+    "input_pins_unchanged": 15,
+    "criteria_precede_implementations": true,
+    "local_links_resolve": 16,
+    "parser": "CommonMark indented code and inline code excluded before matching link targets",
+    "packaging_failure": "checks/covariant_complement_packaging_failure01.json retained; no science edit required"
+  },
+  "previous_packets": "Untouched except parent-assigned narrow UL repair, separately frozen in uniform_one_loop_fixed_complement_correction.json",
+  "git_mutations_or_shared_or_audit_edits": false
+}

@@ -1,0 +1,158 @@
+{
+  "schema": "scoped_review_math_freeze_v1",
+  "created_utc": "2026-10-30T03:25:19.572262+00:00",
+  "reviewer": "/root/review_nonlinear_chart_activity",
+  "requested_configuration": "Astra/max",
+  "independence": "Fresh restricted-context same-family Codex review; requested configuration is not backend attestation",
+  "observed_head": "3803d1517007fca5e1939bf396dd615623909a80",
+  "methodology_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "read_order": {
+    "target_and_actual_producer_formulas_before_author_package": true,
+    "prior_review_files_opened": [],
+    "author_package_files_opened_before_this_freeze": [],
+    "separate_gaussian_return_and_shifted_chart_drafts_used": false,
+    "incidental_exposure": "Inline source summaries of predecessor review status were encountered but not used as mathematical premises; the coordinator supplied the unopened author receipt hash and a mechanical-repair notice."
+  },
+  "initial_math": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_nonlinear_chart_activity_initial_math.md",
+    "sha256": "4e360aaa42d4f844d35bbcb17b5289550c432f90b30526a907b3540719ca556b",
+    "bytes": 9585,
+    "lines": 148
+  },
+  "source_reads": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+      "sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+      "bytes": 32110,
+      "lines": 624,
+      "read_ranges": [
+        [
+          1,
+          624
+        ]
+      ],
+      "purpose": "Complete target argument"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "bytes": 29068,
+      "lines": 556,
+      "read_ranges": [
+        [
+          1,
+          556
+        ]
+      ],
+      "purpose": "Complete joint critical-field/covariance producer"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "bytes": 28993,
+      "lines": 568,
+      "read_ranges": [
+        [
+          1,
+          568
+        ]
+      ],
+      "purpose": "Complete actual local phase, quotient, chart and Hessian producer"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "bytes": 39217,
+      "lines": 722,
+      "read_ranges": [
+        [
+          1,
+          155
+        ],
+        [
+          174,
+          420
+        ]
+      ],
+      "purpose": "Actual phase, reader algebra/composition and source/core normalization interface"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/INTERACTING_SELECTED_CORE_ASTRA.md",
+      "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "bytes": 41908,
+      "lines": 790,
+      "read_ranges": [
+        [
+          1,
+          220
+        ],
+        [
+          285,
+          520
+        ]
+      ],
+      "purpose": "Actual source-free producer/domain; fixed-u auxiliary parity and connected graphs; real sector margins"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8",
+      "bytes": 27584,
+      "lines": 543,
+      "read_ranges": [
+        [
+          1,
+          543
+        ]
+      ],
+      "purpose": "Complete lift core geometry, accretivity and exact Gaussian locality"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROBABILITY_SENSITIVE_RETURN_ASTRA.md",
+      "sha256": "6ef027d54bd0ca1948444c9b82c673ed0cae2e23cd59b25f0c53498194e9b18b",
+      "bytes": 29552,
+      "lines": 544,
+      "read_ranges": [
+        [
+          1,
+          544
+        ]
+      ],
+      "purpose": "Complete chart regulator and boundary/reference limitations"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "bytes": 94345,
+      "lines": 812,
+      "read_ranges": [
+        [
+          241,
+          390
+        ],
+        [
+          656,
+          680
+        ]
+      ],
+      "purpose": "Actual normalized kernel action; complex Haar invariance, polar recentring, centered normalizer; S5-S7 corrections"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497,
+      "lines": 11,
+      "read_ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "purpose": "Complete lane process"
+    }
+  ],
+  "no_numerical_experiments": true,
+  "blocking_findings": [],
+  "provisional_disposition": "Stated mathematics supported; final exact package and identity checks pending",
+  "mechanical_event": "First receipt-generation attempt asserted an incorrect PROCESS_LIGHT line bound 15 against actual 11 and stopped before writing the receipt. Corrected to the 11 lines actually read; no science or producer bytes changed.",
+  "scope_limit": "No whole-PR gate, Git mutation, source edit, audit, ledger, shared-front or lock operation."
+}

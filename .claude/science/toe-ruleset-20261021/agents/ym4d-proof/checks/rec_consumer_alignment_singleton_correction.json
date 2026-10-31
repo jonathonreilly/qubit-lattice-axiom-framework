@@ -1,0 +1,45 @@
+{
+  "schema": "bounded-affected-source-correction-v1",
+  "recorded_utc": "2026-10-30T00:47:39.034840+00:00",
+  "status": "PENDING_FRESH_AFFECTED_CONFIRMATION",
+  "author": "/root",
+  "finding": "F-SP-SINGLETON",
+  "preserved_first_author_revision": "ceeaebff2a64fcce52db1dd98ebbc162b04110f2",
+  "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OSLEAF55.md",
+  "before_sha256": "4e778a30fdc9dd7734499c52a141bef753e10c9c77b298eea76a6858a54a96e8",
+  "after_sha256": "c261a0c5eb300052445a05b3041b5ddf6e518445d3eacac36fc4421e60f66b78",
+  "before_bytes": 108146,
+  "after_bytes": 109340,
+  "initial_review_finding": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_rec_consumer_alignment_findings_v1.md",
+    "sha256": "d3f8811e2f96d28a022aa41f6bbe2fa0bf3fe11ad090780fe73c519a0dc06a01"
+  },
+  "exact_diff": "diff --git a/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/OSLEAF55.md b/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/OSLEAF55.md\nindex 8d0f07fb2c..566a576fa7 100644\n--- a/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/OSLEAF55.md\n+++ b/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/OSLEAF55.md\n@@ -920,11 +920,26 @@ densities with mutually separated supports\").\n and c_SP ≥ 1 such that for all a ∈ (0, 1], R ≥ 32, n ≥ 2, λ ∈ [c_SPa, 1] and all f_1, …, f_n ∈ C_c^∞(R^4; C), each supported in\n a cube of side 2 inside B_{R/4}, pairwise at distance ≥ λ:\n   |S^{a,R}_n(f_1 ⊗ ⋯ ⊗ f_n)| ≤ A^n(n!)^b λ^{−pn} Π_i ‖f_i‖_{λ,r},  ‖f‖_{λ,r} := max_{|γ|≤r} λ^{|γ|}‖∂^γf‖_∞,\n-and the same with λ = 1 for separations ≥ 1. Equivalent and natural RG forms: (a) the same bound for conditional CUMULANTS\n-(moments then follow by the partition sum, b → b + 1, since every sub-block of a separated family is separated); (b) the\n-coarse-image form sup_V|E_{a,R}[Π_iÕ_a(f_i) | V]| ≤ (same right side) for every coarse field V — the shape of SEAM55's\n-(SRC-E′_∞) with the separation and n quantified — which implies (SP_λ) by averaging over V (|ω(F)| = |ν(E[F|V])| ≤\n-sup_V|E[F|V]|). SEAM55's (H2) (\"U-sep at the lattice level … for separated supports, with A, b, p independent of R ≥ R_0\n+and the same with λ = 1 for separations ≥ 1. These are UNCONDITIONAL moment bounds. The following are sufficient stronger\n+inputs, not equivalent formulations of (SP_λ):\n+\n+(a) Fix the actual coarse marginal ν and its conditional law. For every admissible separated family above and EVERY\n+nonempty block B of its labels, INCLUDING |B|=1, assume the uniform conditional-cumulant bound\n+  ess sup_V |κ_V(Õ_a(f_i):i∈B)| ≤ A^{|B|}(|B|!)^b λ^{−p|B|} Π_{i∈B}‖f_i‖_{λ,r}.\n+The essential supremum is with respect to ν. The same A,b,p,r must work for all blocks, cutoffs, volumes, degrees and\n+placements, with the same λ as the full family; singleton separation is vacuous and the displayed singleton bound is an\n+explicit extra hypothesis. The conditional moment identity is\n+  E[Π_iÕ_a(f_i)|V] = Σ_π Π_{B∈π}κ_V(Õ_a(f_i):i∈B).\n+For each partition, Π_B|B|!≤n!, Σ_B|B|=n and b≥0. There are at most n! partitions, so its absolute value is bounded ν-a.s.\n+by A^n(n!)^{b+1}λ^{−pn}Π_i‖f_i‖_{λ,r}. Averaging proves (SP_λ) with exponent b+1. Unconditional centering does not bound\n+the conditional first cumulant; the n≥2 conditional estimates alone do not justify this implication.\n+\n+(b) The coarse-image moment form sup_V|E_{a,R}[Π_iÕ_a(f_i)|V]|≤the original right side, for every coarse field V where the\n+chosen conditional law is defined, implies (SP_λ) with exponent b by averaging (|ν(E[F|V])|≤sup_V|E[F|V]|). An essential\n+supremum suffices as well. This is the shape of SEAM55's (SRC-E′_∞) with the separation and n quantified; it is stronger\n+than the unconditional bound. Neither (a)'s singleton-inclusive estimate nor (b) is established for Yang–Mills here.\n+\n+SEAM55's (H2) (\"U-sep at the lattice level … for separated supports, with A, b, p independent of R ≥ R_0\n and a ≤ a_0(R)\") is (SP_λ) only if its seminorm p carries this explicit power of λ uniformly for λ ∈ [c_SPa, 1]; with\n separation-dependent but unquantified constants it is NOT enough (CODEX_REVIEW_SRCAN item 10's kernel satisfies every\n fixed-separation bound eventually and still diverges on a fixed flat test).\n",
+  "repair": "Replace false equivalence by two sufficient stronger assumptions. Conditional cumulant alternative includes every nonempty block, order1, common separation and cutoff/volume/family uniformity, essential supremum under the actual coarse marginal; printed finite partition proof pays b+1 and averaging. Conditional moments imply the unconditional bound in one direction only.",
+  "unchanged_scope": "SP_lambda as an unconditional moment hypothesis, all tensor/pointwise growth/continuation corrections, the geometric RP proof and the full existence/mass-gap target are unchanged. Actual YM estimates remain OPEN.",
+  "author_receipt_restamped": false,
+  "prior_finding_erased": false,
+  "scientific_numerical_runs": 0,
+  "source_hunks_changed": 1,
+  "precommit_packaging_failure": {
+    "initial_precommit_validator_failure": "Assumed all immutable unified-diff whitespace warnings were blank context lines; line540 is instead an unchanged hunk header. No scientific check failed and no artifact was changed.",
+    "resolved_whitespace": {
+      "literal_context_blank_lines": 28,
+      "literal_hunk_header_lines": [
+        540
+      ],
+      "all_other_staged_files_clean": true
+    },
+    "selected": [
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OSLEAF55.md",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSEMBLY55.md",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/rec_consumer_alignment_note.md",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/rec_consumer_alignment_read_manifest.json",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/rec_consumer_alignment_source.diff",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/rec_consumer_alignment_unchanged_rp.json",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/rec_consumer_alignment_receipt.json",
+      ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_rec_consumer_alignment_findings_v1.md"
+    ]
+  },
+  "correction_freeze_attempt_failure": "First metadata command stopped at line7 with AssertionError: str.count of the token @@ followed by a space counted both delimiters of the one unified-diff hunk. Fixed by anchoring the count to line starts. No output record was written and no source was changed by the failed check."
+}

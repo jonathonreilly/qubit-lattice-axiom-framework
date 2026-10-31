@@ -1,0 +1,93 @@
+====================================================================================================
+kn1-2 / kn1-3 / kn1-5  --  the two decade gains, the two reversals, two precisions
+criteria: checks/kn1_criteria.md (written first).  Exact Fractions; Decimal for log10 only.
+====================================================================================================
+
+inputs:  A_d = 9   c_1 = 1/117   c_RS = 625   c_joint = 81   kappa = 1
+         DX' = 2.456e-152 at C_Omega = 1   [REVIEW_SF_S7.md l.203]
+         eps_1 today  (RLARGE.md l.72)          = 6.700000000000e-40
+         eps_1 proposed (EPS1_SWEEP.md l.455)   = 9.384951126380e-45
+
+## kn1-2  a_RS, the ceilings, the margins and the GAIN  (exact)
+
+eps_1                              N      eta_1 quad      eta_1 lin      a_RS quad       a_RS lin  branch   marg quad    marg lin       GAIN
+today  (RLARGE.md l.72)            2    4.870877e-83   5.726496e-42  5.931360e-166   8.198188e-84   EXP-4     -15.617      66.523    82.1406
+today  (RLARGE.md l.72)            3    3.247251e-83   5.726496e-42  1.757440e-166   5.465459e-84   EXP-4     -16.145      66.347    82.4927
+proposed (EPS1_SWEEP.md l.455)     2    9.557000e-93   8.021326e-47  2.283406e-185   1.608542e-93   EXP-4     -35.032      56.816    91.8478
+proposed (EPS1_SWEEP.md l.455)     3    6.371333e-93   8.021326e-47  6.765647e-186   1.072361e-93   EXP-4     -35.560      56.640    92.2000
+
+  (the GAIN is convention-free: it is log10(a_RS_lin / a_RS_quad), so the /10^2 and the
+   /(c_RS*10^2) conventions and DX' all cancel.  Margins below under both conventions:)
+
+eps_1                              N   marg quad /1e2  marg lin /1e2  marg quad /cRS  marg lin /cRS
+today  (RLARGE.md l.72)            2          -15.617         66.523         -18.413         63.728
+today  (RLARGE.md l.72)            3          -16.145         66.347         -18.941         63.552
+proposed (EPS1_SWEEP.md l.455)     2          -35.032         56.816         -37.828         54.020
+proposed (EPS1_SWEEP.md l.455)     3          -35.560         56.640         -38.356         53.844
+
+  transcribed under test: 82.141 (today) / 91.848 (proposed), ARS_FIX.md l.455
+  computed  N=2        : 82.1406 (today) / 91.8478 (proposed)
+  computed  N=3        : 82.4927 / 92.2000   <-- the gain IS N-dependent
+VERDICT kn1-2: GAIN-REPRODUCES at N = 2 (the transcribed pair is the N = 2 pair)
+
+  DESIGNED-FAIL CONTROL (ARITH-F1): quote the proposed-eps_1 gain AS today's.
+    |gain(proposed) - gain(today)| = 9.7073 decades  (>= 1 required to detect the swap)
+    control verdict: HAS-POWER  -- the check distinguishes the two eps_1, so ARITH-F1 is detectable.
+
+  POWER LEG: counterfactual c_1 = 1/(2L^2) = 1/18 (RLARGE's own linear entry).
+    today  (RLARGE.md l.72)            gain at c_1=1/18 : 83.7664   moves by -1.6258 decades
+    proposed (EPS1_SWEEP.md l.455)     gain at c_1=1/18 : 93.4737   moves by -1.6258 decades
+    predicted move 2*log10(117/18) = 1.6258   -> the gain IS a function of c_1: HAS-POWER
+
+## kn1-3  the two reversals
+
+(a) RLARGE.md l.65   'For eps_1 <= 2, eta_1 <= eta_q'   (endorsed CORRECT, REVIEW_RLARGE_V2 2.3)
+
+eps_1                              N           eta_q   eta_1/eta_q quad           verdict  eta_1/eta_q lin           verdict
+today  (RLARGE.md l.72)            2    1.453993e-43       3.350000e-40   ORDER-PRESERVED          39.3846    ORDER-REVERSED
+today  (RLARGE.md l.72)            3    9.693287e-44       3.350000e-40   ORDER-PRESERVED          59.0769    ORDER-REVERSED
+proposed (EPS1_SWEEP.md l.455)     2    2.036665e-48       4.692476e-45   ORDER-PRESERVED          39.3846    ORDER-REVERSED
+proposed (EPS1_SWEEP.md l.455)     3    1.357776e-48       4.692476e-45   ORDER-PRESERVED          59.0769    ORDER-REVERSED
+illustrative eps_1 = 2 (RLARGE l.65) 2    4.340278e-04       1.000000e+00   ORDER-PRESERVED          39.3846    ORDER-REVERSED
+illustrative eps_1 = 2 (RLARGE l.65) 3    2.893519e-04       1.000000e+00   ORDER-PRESERVED          59.0769    ORDER-REVERSED
+
+  eps_1-freeness of the LINEAR ratio (exact equality across two eps_1 required):
+    N=2: ['512/13', '512/13']  identical? True  = 2*4608/117... exact value 512/13 = 39.3846
+    N=3: ['768/13', '768/13']  identical? True  = 2*6912/117... exact value 768/13 = 59.0769
+  quadratic ratio is eps_1-DEPENDENT (this leg's own designed-FAIL control):
+    N=2: 3.350000e-40 vs 4.692476e-45  identical? False  -> control correctly returns eps_1-DEPENDENT
+
+(b) HIST.md l.186-187   route comparison: TWO named factors, c_RS 81 vs 625 AND eta_q^2 vs eta_1^2
+
+eps_1                              N    form    eta-factor (h1/hq)^2  route = (81/625)*that    verdict
+today  (RLARGE.md l.72)            2    quad            1.122250e-79           1.454436e-80   RS-WORSE
+today  (RLARGE.md l.72)            2     lin            1.551148e+03           2.010288e+02  RS-BETTER
+today  (RLARGE.md l.72)            3    quad            1.122250e-79           1.454436e-80   RS-WORSE
+today  (RLARGE.md l.72)            3     lin            3.490083e+03           4.523147e+02  RS-BETTER
+proposed (EPS1_SWEEP.md l.455)     2    quad            2.201933e-89           2.853705e-90   RS-WORSE
+proposed (EPS1_SWEEP.md l.455)     2     lin            1.551148e+03           2.010288e+02  RS-BETTER
+proposed (EPS1_SWEEP.md l.455)     3    quad            2.201933e-89           2.853705e-90   RS-WORSE
+proposed (EPS1_SWEEP.md l.455)     3     lin            3.490083e+03           4.523147e+02  RS-BETTER
+
+  transcribed under test (ARS_FIX.md l.536-537): '1551x BETTER than the joint route' at N = 2
+  eta-factor alone (eta_1/eta_q)^2 = 1551.1479   <-- this is the 1551
+  ROUTE ratio (both HIST factors) = (81/625)*1551.1479 = 201.0288
+VERDICT kn1-3(b): SOURCE-DISAGREES -- 1551 is the eta-factor, NOT the route comparison; the route figure is 201.029x (ratio 7.7153 = 625/81 = 7.7160)
+  at N = 3: eta-factor 3490.0828, route 452.3147x
+
+(c) HIST.md l.181   'for eps_1 -> 0, eta_q/eta_1 = 2/eps_1'
+    today  (RLARGE.md l.72)            quad: eta_q/eta_1 = 2.985075e+39  2/eps_1 = 2.985075e+39  equal? True
+                                       lin : eta_q/eta_1 = 13/512 = 0.0253906   (eps_1-free constant)
+    proposed (EPS1_SWEEP.md l.455)     quad: eta_q/eta_1 = 2.131071e+44  2/eps_1 = 2.131071e+44  equal? True
+                                       lin : eta_q/eta_1 = 13/512 = 0.0253906   (eps_1-free constant)
+    117/4608 = 0.0253906  -- matches the linear value at N = 2: True
+
+## kn1-5  two precisions
+  worst 50-vs-100-digit disagreement over every decade figure: 4.841E-49
+VERDICT kn1-5: PASS
+
+====================================================================================================
+Disclosure: exact fractions.Fraction throughout; Decimal only for log10 display, at 50 and 100
+digits, agreeing to the figure above.  python3 -I, single thread, no numpy/BLAS/SciPy, nice 10.
+No numeric lock taken and none needed (exact rational arithmetic, brief rule 6).
+====================================================================================================

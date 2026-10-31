@@ -1,0 +1,7 @@
+PASS C1 E cos X = exp(-v/2); dE[B]/dv = exp(-v/2) > 0 exp(-v/2)
+FIRES C1-F wrong char. function exp(-v) disagrees 
+PASS C2 int y^2/(2pi) = pi^2/3; int y^2 cos(ny) = 4 pi (-1)^n / n^2 4*(-1)**n*pi/n**2
+FIRES C2-F claim 4 pi/n^2 (no sign) fails at n = 1 n=1 value -4*pi
+PASS C3 consecutive-term ratio = exp(-(2n+1)v/2) < 1 exp(-n*v - v/2)
+PASS C4 exp(-v/2) - exp(-2v) > 0 at v = 1/10, 1, 10 (exact sign) 
+VERDICT: PASS

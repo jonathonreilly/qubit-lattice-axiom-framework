@@ -1,0 +1,83 @@
+{
+  "created_utc": "2026-10-29T17:35:23.738320+00:00",
+  "original_driver_result": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_three_reviews_replay_summary.json",
+    "sha256": "189b7317cd604170a4086749cfae591ba840e5c25a02c90acd4ca861063cbf75",
+    "exit_code": 1,
+    "all_ok": false
+  },
+  "reason": "The first coordinator comparator omitted the residual02 top-level /seconds timing field. All eight scientific runners exited zero with empty stderr; the only additional differing field is timing. No test, formula, tolerance, source, output or original comparator was changed. No rerun was needed.",
+  "correction": "Exclude exactly /seconds for residual_full_colour_02 as well as the originally declared time fields; compare every remaining field exactly.",
+  "confirmed_runs": [
+    {
+      "label": "massgap_block",
+      "ignored_time_fields": [
+        "/runtime_seconds"
+      ],
+      "all_other_fields_identical": true,
+      "original_replay_receipt": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_massgap_block_review_replay.json"
+    },
+    {
+      "label": "massgap_literature",
+      "ignored_time_fields": [],
+      "all_other_fields_identical": true,
+      "original_replay_receipt": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_massgap_literature_review_replay.json"
+    },
+    {
+      "label": "residual_full_colour_01",
+      "ignored_time_fields": [],
+      "all_other_fields_identical": true,
+      "original_replay_receipt": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_residual_full_colour_01_review_replay.json"
+    },
+    {
+      "label": "residual_full_colour_02",
+      "ignored_time_fields": [
+        "/seconds"
+      ],
+      "all_other_fields_identical": true,
+      "original_replay_receipt": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_residual_full_colour_02_review_replay.json"
+    },
+    {
+      "label": "source_history_geometry",
+      "ignored_time_fields": [
+        "/elapsed_seconds"
+      ],
+      "all_other_fields_identical": true,
+      "original_replay_receipt": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_source_history_geometry_review_replay.json"
+    },
+    {
+      "label": "source_history_identity_cluster",
+      "ignored_time_fields": [
+        "/elapsed_seconds"
+      ],
+      "all_other_fields_identical": true,
+      "original_replay_receipt": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_source_history_identity_cluster_review_replay.json"
+    },
+    {
+      "label": "source_history_literature_laplace",
+      "ignored_time_fields": [
+        "/elapsed_seconds"
+      ],
+      "all_other_fields_identical": true,
+      "original_replay_receipt": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_source_history_literature_laplace_review_replay.json"
+    },
+    {
+      "label": "source_history_su2",
+      "ignored_time_fields": [
+        "/elapsed_seconds"
+      ],
+      "all_other_fields_identical": true,
+      "original_replay_receipt": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_source_history_su2_review_replay.json"
+    }
+  ],
+  "all_scientific_outputs_reproduced": true,
+  "counts": {
+    "source_mathematical_predicates": 177,
+    "source_separate_negative_controls": 32,
+    "physical_unit_predicates_including_mutations": 112,
+    "external_transfer_implication_predicates": 8,
+    "residual_predicates_including_controls": 65,
+    "total_predicates_including_controls": 394
+  },
+  "scope": "Coordinator reproduction of finite independent-review evidence. Not additional independent reviews or proofs of a limit."
+}

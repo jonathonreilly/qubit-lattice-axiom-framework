@@ -1,0 +1,13 @@
+G1: PASS | n_link=23328 r=69984 h=34992 h*ln2 in [24254.606142, 24254.606142]
+G1n (control: PLD count must NOT land in the window): PASS | n_int=216 h'=26244 h'*ln2 in [18190.9546, 18190.9546] (control fires = window rejects it)
+G2: PASS | I0=2 I2=1/3 J0=3/2 J2=5/16 Delta=1/24 ; J2/J0=5/24 vs U*I2/I0=91/486 (U=1+x+x^2, x=1/9)
+G2n-a (control a=1: Delta>0 must fail): PASS | Delta(a=1)=0
+G2n-b (control s^2=4: certificate must fail): PASS | J2/J0=5/24 vs Lb*I2/I0=41/192 (Lb=1+x+x^2/2<=e^(1/4))
+G3: PASS | (eps,sig)=(1,1/4): z=6 rhs_upper=6/125
+G3n (control (1,1): certificate must fail): PASS | LHS<= 1/5, RHS>= 1/2
+G3g: PASS | violations=0
+G3g-n (control must show >=1 violation): PASS | control violations=3120
+CONFIRMATORY (float, no verdict): P(both defective) sigma=0.10 -> 0.2811057480, sigma=0.15 -> 0.2647786872; decreased: True
+G4: PASS | odd part coefficients [t^1,t^2,t^3] = [('0', '0'), ('0', '0'), ('-4', '0')]
+G4n (control abelian: c3 != 0 must fail): PASS | abelian c3 = ('0', '0')
+SUMMARY: 11 / 11 gates report PASS (controls PASS = fired as designed)

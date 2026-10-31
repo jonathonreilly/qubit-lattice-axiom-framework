@@ -1,0 +1,20 @@
+lock acquired 07:24:45Z
+ 3:24  up 5 days, 21:13, 2 users, load averages: 2.61 2.74 2.89
+System-wide memory free percentage: 46%
+== D3 start 07:24:45Z
+exit 0 07:26:52Z
+      127.25 real       125.80 user         0.91 sys
+           441122816  maximum resident set size
+== D1a start 07:26:52Z
+exit 0 07:26:54Z
+        1.30 real         1.09 user         0.08 sys
+           327663616  maximum resident set size
+== D1b start 07:26:54Z
+exit 0 07:26:56Z
+        2.49 real         2.40 user         0.07 sys
+           497025024  maximum resident set size
+== D2 start 07:26:56Z
+exit 0 07:27:00Z
+        3.79 real         3.55 user         0.18 sys
+           658079744  maximum resident set size
+lock released 07:27:00Z

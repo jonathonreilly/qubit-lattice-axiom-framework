@@ -1,0 +1,28 @@
+{
+  "prior_attempts": [
+    "pdftotext not on PATH; chained download not executed",
+    "requests module absent; download not executed"
+  ],
+  "downloads": [
+    {
+      "name": "dimock_axial",
+      "url": "https://arxiv.org/pdf/1410.2798",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "name": "dimock_multiscale",
+      "url": "https://arxiv.org/pdf/1712.10029",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "name": "nielsen",
+      "url": "https://arxiv.org/pdf/hep-th/0107095",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "name": "balaban_rg1",
+      "url": "https://projecteuclid.org/journals/communications-in-mathematical-physics/volume-109/issue-2/Renormalization-group-approach-to-lattice-gauge-field-theories-I/cmp/1104116842.pdf",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    }
+  ]
+}

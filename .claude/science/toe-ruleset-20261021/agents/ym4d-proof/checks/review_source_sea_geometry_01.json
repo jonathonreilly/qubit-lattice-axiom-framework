@@ -1,0 +1,73 @@
+{
+  "checks": {
+    "cell_incidence_reflection_dirty_support": true,
+    "paired_ribbon_boundaries_and_K_witnesses": true
+  },
+  "negative_controls": {
+    "bond_plane_not_claimed_n6": true,
+    "omitted_dirty_source_budget_n6": true,
+    "bond_plane_not_claimed_n10": true,
+    "omitted_dirty_source_budget_n10": true,
+    "bond_plane_not_claimed_n12": true,
+    "omitted_dirty_source_budget_n12": true,
+    "mutation_plaquette_multiplicity_three_rejected": true,
+    "mutation_ribbon_area_divided_by_two_rejected": true
+  },
+  "geometry": [
+    {
+      "L": 3,
+      "T": 2,
+      "n": 6,
+      "cell_faces": 24,
+      "cell_links": 32,
+      "plaquette_cell_multiplicity": 4,
+      "link_plaquette_multiplicity": 6,
+      "max_dirty_links": 64,
+      "max_endpoint_blocks": 16,
+      "site_reflection_cells_checked": 144,
+      "split_failures": 0,
+      "max_two_block_links": 486,
+      "one_cell_enlarged_source_count": 7776,
+      "source_budget": 497856
+    },
+    {
+      "L": 5,
+      "T": 2,
+      "n": 10,
+      "cell_faces": 24,
+      "cell_links": 32,
+      "plaquette_cell_multiplicity": 4,
+      "link_plaquette_multiplicity": 6,
+      "max_dirty_links": 64,
+      "max_endpoint_blocks": 16,
+      "site_reflection_cells_checked": 400,
+      "split_failures": 0,
+      "max_two_block_links": 4250,
+      "one_cell_enlarged_source_count": 60000,
+      "source_budget": 3840192
+    },
+    {
+      "L": 3,
+      "T": 4,
+      "n": 12,
+      "cell_faces": 24,
+      "cell_links": 32,
+      "plaquette_cell_multiplicity": 4,
+      "link_plaquette_multiplicity": 6,
+      "max_dirty_links": 96,
+      "max_endpoint_blocks": 16,
+      "site_reflection_cells_checked": 576,
+      "split_failures": 0,
+      "max_two_block_links": 459,
+      "one_cell_enlarged_source_count": 41688,
+      "source_budget": 497856
+    }
+  ],
+  "ribbon_words": 75552,
+  "max_area": {
+    "3": 9,
+    "5": 30
+  },
+  "scope": "actual four-dimensional geometry; no continuum or probabilistic conclusion from enumeration",
+  "seconds": 6.0745930671691895
+}

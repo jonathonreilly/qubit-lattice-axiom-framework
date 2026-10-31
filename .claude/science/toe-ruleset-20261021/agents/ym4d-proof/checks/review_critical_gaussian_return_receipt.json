@@ -1,0 +1,320 @@
+{
+  "role": "Fresh restricted-input independent scientific source review; not a canonical whole-PR or audit receipt",
+  "utc": "2026-10-30T03:49:54.202750+00:00",
+  "procedure_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "observed_head_after_receipt_read": "968a43e3b1025ab5f1a2a0bb80269854eeb0614c",
+  "configuration": {
+    "requested": "Astra/max",
+    "backend_independently_attested": false,
+    "same_family": true,
+    "fresh_context": true,
+    "authorship_of_target": false
+  },
+  "source_reads": [
+    {
+      "mathematical_read_order": 1,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_GAUSSIAN_RETURN.md",
+      "sha256": "143c3420a5c333350a875eee49843fa1e00f621af82494e7701f3c7bff08dd8b",
+      "lines": 251,
+      "read_ranges": [
+        [
+          1,
+          251
+        ]
+      ]
+    },
+    {
+      "mathematical_read_order": 2,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8",
+      "lines": 543,
+      "read_ranges": [
+        [
+          1,
+          543
+        ]
+      ]
+    },
+    {
+      "mathematical_read_order": 3,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "lines": 556,
+      "read_ranges": [
+        [
+          1,
+          556
+        ]
+      ]
+    },
+    {
+      "mathematical_read_order": 4,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md",
+      "sha256": "4f94b5e2102391441233621d99be3e4b14dc46b9be89ea35915b354a4d0a06d6",
+      "lines": 608,
+      "read_ranges": [
+        [
+          1,
+          608
+        ]
+      ]
+    },
+    {
+      "mathematical_read_order": 5,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "lines": 568,
+      "read_ranges": [
+        [
+          198,
+          333
+        ]
+      ]
+    },
+    {
+      "mathematical_read_order": 6,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "lines": 722,
+      "read_ranges": [
+        [
+          194,
+          286
+        ]
+      ]
+    },
+    {
+      "mathematical_read_order": 7,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/INTERACTING_SELECTED_CORE_ASTRA.md",
+      "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "lines": 790,
+      "read_ranges": [
+        [
+          24,
+          80
+        ],
+        [
+          131,
+          191
+        ],
+        [
+          260,
+          308
+        ]
+      ]
+    }
+  ],
+  "read_order_gate": {
+    "all_mathematical_reads_precede_independent_findings": true,
+    "findings_frozen_before_author_receipt": true,
+    "prior_review_reports_opened": false,
+    "embedded_prior_status_mentions": "Incidentally visible in producer source; not used as evidence",
+    "nonlinear_or_shifted_chart_drafts_opened": false
+  },
+  "independent_findings": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_critical_gaussian_return_independent_findings.md",
+    "sha256": "37853aeae6bdc9658d90bea2dae2c5675a3c4ad385006710db05b7aab9e0b200",
+    "frozen_utc": "2026-10-30T03:44:29.260623+00:00"
+  },
+  "author_receipt": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/critical_gaussian_return_author_receipt.json",
+    "sha256": "e9875e639e07b0a73472b62c24c52bf8b5144acd51ff6c05fae3902e89ad8b7c",
+    "opened_after_independent_findings": true,
+    "comparison": "Exact target and producer hashes, scope and no-independent-verdict role match; no author check used as proof"
+  },
+  "methodology_reads": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+      "read_coverage": "complete",
+      "lines": 26,
+      "access": "immutable git show"
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "read_coverage": "complete",
+      "lines": 193,
+      "access": "immutable git show"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "read_coverage": "complete",
+      "lines": 35,
+      "access": "immutable git show"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "read_coverage": "complete",
+      "lines": 93,
+      "access": "immutable git show"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "read_coverage": "complete",
+      "lines": 434,
+      "access": "immutable git show"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "read_coverage": "complete",
+      "lines": 336,
+      "access": "immutable git show"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "read_coverage": "complete",
+      "lines": 309,
+      "access": "immutable git show"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "read_coverage": "complete",
+      "lines": 126,
+      "access": "immutable git show"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "read_coverage": "complete",
+      "lines": 370,
+      "access": "immutable git show"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "read_coverage": "complete",
+      "lines": 96,
+      "access": "immutable git show"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "read_coverage": "complete",
+      "lines": 183,
+      "access": "immutable git show"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "read_coverage": "complete",
+      "lines": 248,
+      "access": "immutable git show"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "read_coverage": "complete",
+      "lines": 140,
+      "access": "immutable git show"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "read_coverage": "complete",
+      "lines": 394,
+      "access": "immutable git show"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "read_coverage": "complete",
+      "lines": 233,
+      "access": "immutable git show"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "read_coverage": "complete",
+      "lines": 130,
+      "access": "immutable git show"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "read_coverage": "complete",
+      "lines": 52,
+      "access": "immutable git show"
+    }
+  ],
+  "local_process": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+    "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+    "read_ranges": [
+      [
+        1,
+        11
+      ]
+    ]
+  },
+  "initial_installed_skill_reads": {
+    "physics-loop": "/Users/jonBridger/.codex/skills/physics-loop/SKILL.md",
+    "review-loop": "/Users/jonBridger/.codex/skills/review-loop/SKILL.md",
+    "role": "Initial routers only; pinned repository instructions controlled"
+  },
+  "independent_analytic_checks": [
+    "Acyclic positive-radii choice and R-independent masked inverse bound",
+    "Full rebuilt beta-dependent FU atom budgets",
+    "Ordered critical resolvent and marked factor derivative sum",
+    "Endpoint tails each <=e0/3; accretivity and full scalar colours",
+    "CG9 determinant, jets, corners, tree constants and all three mark costs",
+    "Exact reader regrouping and separate beta/3 margins",
+    "Small-volume nonzero source-critical covariance response",
+    "Fixed-coordinate repeated-source Cauchy bound",
+    "Actual branch identification and exact real FU30 normalization"
+  ],
+  "mechanical_checks": {
+    "target_local_links": 4,
+    "missing_links": [],
+    "CG_identifiers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "trailing_whitespace_lines": [],
+    "frozen_hashes_match": true
+  },
+  "scientific_numerical_experiments": 0,
+  "runner_executions": 0,
+  "freezer_executions": 0,
+  "git_mutations": 0,
+  "source_disposition": "Accepted unchanged at stated bounded Gaussian interface",
+  "findings": {
+    "consequential": 0,
+    "fixed": 0,
+    "unresolved": 0,
+    "skipped": 0
+  },
+  "proof_obligation_result": "CLOSED under the displayed producer results at the stated bounded scope",
+  "whole_PR_integration": "Root-owned; not examined or certified here",
+  "open_obligations": [
+    "Full interacting original-cut return",
+    "Arbitrary histories and effective-level identification",
+    "Multiscale iteration",
+    "Continuum existence",
+    "Physical continuum mass gap"
+  ],
+  "report": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CRITICAL_GAUSSIAN_RETURN_ASTRA.md",
+    "sha256": "e3cb92e1da441ea37b12f76ecbbf5c91a737d89a02b9890fab4eee6d40187c10",
+    "lines": 236
+  },
+  "verdict": "LAND"
+}

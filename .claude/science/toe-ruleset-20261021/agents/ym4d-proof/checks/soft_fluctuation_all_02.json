@@ -1,0 +1,691 @@
+{
+  "scope": "finite author diagnostics; all-volume theorem requires the written local proof",
+  "mode": "all",
+  "python": "3.12.8",
+  "numpy": "2.4.1",
+  "scipy": "1.17.0",
+  "elapsed_seconds": 17.19851854199078,
+  "passed": 90,
+  "total": 90,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "tree_edge_and_free_coordinate_counts",
+      "pass": true,
+      "detail": {
+        "tree": 80,
+        "free": 244
+      }
+    },
+    {
+      "name": "all_7776_actual_contours",
+      "pass": true,
+      "detail": 7776
+    },
+    {
+      "name": "exact_contour_endpoints_and_integer_fillings",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "declared_path_length",
+      "pass": true,
+      "detail": 11
+    },
+    {
+      "name": "uniform_30L2_contour_filling_bound",
+      "pass": true,
+      "detail": 19
+    },
+    {
+      "name": "removed_plaquette_control",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact_internal_and_crossing_fillings",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "declared_internal_crossing_filling_bounds",
+      "pass": true,
+      "detail": {
+        "internal_max": 9,
+        "crossing_max": 15
+      }
+    },
+    {
+      "name": "actual_Qd_root_covariance_zero",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "curl_gradient_zero",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tree_gradient_unimodular_minor_zero",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "actual_Qd_root_covariance_generic",
+      "pass": true,
+      "detail": 9.856160834467555e-16
+    },
+    {
+      "name": "curl_gradient_generic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tree_gradient_unimodular_minor_generic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "missing_endpoint_leg_control",
+      "pass": true,
+      "detail": 0.9876543209876545
+    },
+    {
+      "name": "bare_closed_slice_null_modes_zero",
+      "pass": true,
+      "detail": 4
+    },
+    {
+      "name": "spread_semidefinite_zero",
+      "pass": true,
+      "detail": -1.2781004865952736e-16
+    },
+    {
+      "name": "local_coercivity_zero_k0.1",
+      "pass": true,
+      "detail": {
+        "min": 0.003562049331089963,
+        "proof_bound": 4.536184234400969e-09
+      }
+    },
+    {
+      "name": "local_coercivity_zero_k1.0",
+      "pass": true,
+      "detail": {
+        "min": 0.02543542042845925,
+        "proof_bound": 4.536184234400969e-09
+      }
+    },
+    {
+      "name": "local_coercivity_zero_k10.0",
+      "pass": true,
+      "detail": {
+        "min": 0.0551783743706049,
+        "proof_bound": 4.536184234400969e-09
+      }
+    },
+    {
+      "name": "harmonic_full_normalization_0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "harmonic_tree_normalization_0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "harmonic_retained_and_charged_0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "harmonic_full_normalization_1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "harmonic_tree_normalization_1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "harmonic_retained_and_charged_1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "harmonic_full_normalization_2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "harmonic_tree_normalization_2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "harmonic_retained_and_charged_2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "harmonic_full_normalization_3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "harmonic_tree_normalization_3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "harmonic_retained_and_charged_3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bare_closed_slice_null_modes_generic",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "spread_semidefinite_generic",
+      "pass": true,
+      "detail": -1.6606401081885595e-17
+    },
+    {
+      "name": "local_coercivity_generic_k0.1",
+      "pass": true,
+      "detail": {
+        "min": 0.0036478485086956945,
+        "proof_bound": 4.536184234400969e-09
+      }
+    },
+    {
+      "name": "local_coercivity_generic_k1.0",
+      "pass": true,
+      "detail": {
+        "min": 0.028450795457590508,
+        "proof_bound": 4.536184234400969e-09
+      }
+    },
+    {
+      "name": "unfixed_pinned_gauge_nullity",
+      "pass": true,
+      "detail": 80
+    },
+    {
+      "name": "local_coercivity_generic_k10.0",
+      "pass": true,
+      "detail": {
+        "min": 0.052521289147539924,
+        "proof_bound": 4.536184234400969e-09
+      }
+    },
+    {
+      "name": "root_gradient_long_wave_charge_generic",
+      "pass": true,
+      "detail": 0.03703703703703704
+    },
+    {
+      "name": "root_gradient_zero_curl_generic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bare_closed_slice_null_modes_long_1e-3",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "spread_semidefinite_long_1e-3",
+      "pass": true,
+      "detail": -1.2289691023389025e-17
+    },
+    {
+      "name": "local_coercivity_long_1e-3_k0.1",
+      "pass": true,
+      "detail": {
+        "min": 0.0035620493451035936,
+        "proof_bound": 4.536184234400969e-09
+      }
+    },
+    {
+      "name": "local_coercivity_long_1e-3_k1.0",
+      "pass": true,
+      "detail": {
+        "min": 0.02543542120804855,
+        "proof_bound": 4.536184234400969e-09
+      }
+    },
+    {
+      "name": "local_coercivity_long_1e-3_k10.0",
+      "pass": true,
+      "detail": {
+        "min": 0.05517837775618452,
+        "proof_bound": 4.536184234400969e-09
+      }
+    },
+    {
+      "name": "root_gradient_long_wave_charge_long_1e-3",
+      "pass": true,
+      "detail": 0.03703703703703705
+    },
+    {
+      "name": "root_gradient_zero_curl_long_1e-3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "long_wave_bare_near_zero_diagnostic",
+      "pass": true,
+      "detail": {
+        "first_four": [
+          -1.4011042198638026e-15,
+          3.336944190692275e-15,
+          3.899091717575559e-15,
+          9.486146051423129e-15
+        ],
+        "rank_not_resolved": true
+      }
+    },
+    {
+      "name": "spread_semidefinite_long_1e-7",
+      "pass": true,
+      "detail": -9.188592470234128e-17
+    },
+    {
+      "name": "local_coercivity_long_1e-7_k0.1",
+      "pass": true,
+      "detail": {
+        "min": 0.0035620493310870266,
+        "proof_bound": 4.536184234400969e-09
+      }
+    },
+    {
+      "name": "local_coercivity_long_1e-7_k1.0",
+      "pass": true,
+      "detail": {
+        "min": 0.02543542042845705,
+        "proof_bound": 4.536184234400969e-09
+      }
+    },
+    {
+      "name": "local_coercivity_long_1e-7_k10.0",
+      "pass": true,
+      "detail": {
+        "min": 0.055178374370607165,
+        "proof_bound": 4.536184234400969e-09
+      }
+    },
+    {
+      "name": "root_gradient_long_wave_charge_long_1e-7",
+      "pass": true,
+      "detail": 0.03703703703703705
+    },
+    {
+      "name": "root_gradient_zero_curl_long_1e-7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "nonabelian_probe_zero_coarse_linear_data",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "nonabelian_probe_nonzero_spread",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bessel_vs_Haar_mean_u2.0",
+      "pass": true,
+      "detail": {
+        "c": 0.4331274267223117,
+        "haar": 0.4331274267223118
+      }
+    },
+    {
+      "name": "actual_normalized_SU2_Hessian_u2.0",
+      "pass": true,
+      "detail": {
+        "finite": 6.043976242943296,
+        "quadratic": 6.043976398277774
+      }
+    },
+    {
+      "name": "Haar_Lebesgue_Hessian_u2.0",
+      "pass": true,
+      "detail": {
+        "finite": 6.377310136763805,
+        "quadratic": 6.377309731611107
+      }
+    },
+    {
+      "name": "finite_u_spread_omission_control_u2.0",
+      "pass": true,
+      "detail": 0.020050569922047953
+    },
+    {
+      "name": "normalizer_omission_control_u2.0",
+      "pass": true,
+      "detail": 0.015320091708250771
+    },
+    {
+      "name": "Haar_omission_control_u2.0",
+      "pass": true,
+      "detail": 0.3333337384860311
+    },
+    {
+      "name": "bessel_vs_Haar_mean_u10.0",
+      "pass": true,
+      "detail": {
+        "c": 0.8541853083236817,
+        "haar": 0.8541853083236817
+      }
+    },
+    {
+      "name": "actual_normalized_SU2_Hessian_u10.0",
+      "pass": true,
+      "detail": {
+        "finite": 30.14541789525538,
+        "quadratic": 30.145416839128423
+      }
+    },
+    {
+      "name": "Haar_Lebesgue_Hessian_u10.0",
+      "pass": true,
+      "detail": {
+        "finite": 30.478751966711574,
+        "quadratic": 30.478750172461755
+      }
+    },
+    {
+      "name": "finite_u_spread_omission_control_u10.0",
+      "pass": true,
+      "detail": 0.025787697349803657
+    },
+    {
+      "name": "normalizer_omission_control_u10.0",
+      "pass": true,
+      "detail": 0.15106377800235649
+    },
+    {
+      "name": "Haar_omission_control_u10.0",
+      "pass": true,
+      "detail": 0.3333351275831511
+    },
+    {
+      "name": "bessel_vs_Haar_mean_u40.0",
+      "pass": true,
+      "detail": {
+        "c": 0.9627404353619465,
+        "haar": 0.9627404353619466
+      }
+    },
+    {
+      "name": "actual_normalized_SU2_Hessian_u40.0",
+      "pass": true,
+      "detail": {
+        "finite": 120.50488006960022,
+        "quadratic": 120.50487436042671
+      }
+    },
+    {
+      "name": "Haar_Lebesgue_Hessian_u40.0",
+      "pass": true,
+      "detail": {
+        "finite": 120.83821366736126,
+        "quadratic": 120.83820769376004
+      }
+    },
+    {
+      "name": "finite_u_spread_omission_control_u40.0",
+      "pass": true,
+      "detail": 0.026357793312198008
+    },
+    {
+      "name": "normalizer_omission_control_u40.0",
+      "pass": true,
+      "detail": 0.6810466234307313
+    },
+    {
+      "name": "Haar_omission_control_u40.0",
+      "pass": true,
+      "detail": 0.3333393069345476
+    },
+    {
+      "name": "periodic_real_inverse_and_square_root",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "direct_periodic_inverse_vs_Bloch_periodization",
+      "pass": true,
+      "detail": 1.2378986724570495e-14
+    },
+    {
+      "name": "direct_full_operator_vs_Bloch_counting",
+      "pass": true,
+      "detail": 6.394884621840902e-14
+    },
+    {
+      "name": "inverse_square_root_covariance_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "distinct_input_output_densities",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "complete_row_column_mass",
+      "pass": true,
+      "detail": {
+        "output_total": 1963.4366523020508,
+        "input_total": 1963.4366523020512
+      }
+    },
+    {
+      "name": "wrong_output_density_control",
+      "pass": true,
+      "detail": {
+        "wrong": 985.758319262758,
+        "actual": 1963.4366523020512
+      }
+    },
+    {
+      "name": "discarded_zero_momentum_control",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "normalized_square_root_gaussian",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Gaussian_determinant_direct_integral",
+      "pass": true,
+      "detail": {
+        "integral": 4.022397213857444,
+        "prediction": 4.022397213857444
+      }
+    },
+    {
+      "name": "omitted_determinant_control",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source_Gaussian_normalization",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "colour_trace_factor_control",
+      "pass": true,
+      "detail": {
+        "one_colour": 0.9365016460326261,
+        "SU2": 0.821345033003705
+      }
+    },
+    {
+      "name": "positive_declared_weighted_resolvent_rate",
+      "pass": true,
+      "detail": {
+        "a": 4.536184234400969e-09,
+        "b": 5424.666666666667,
+        "m": 2.0905359320388445e-13
+      }
+    },
+    {
+      "name": "periodic_images_unfold",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "omitted_periodic_images_control",
+      "pass": true,
+      "detail": {
+        "actual": 2.9728677272689263,
+        "omitted": 1.4965853037914094
+      }
+    }
+  ],
+  "details": {
+    "geometry": {
+      "path_filling_max": 19,
+      "path_length_max": 11,
+      "free_per_block": 244,
+      "colour_density_SU2": 732,
+      "curvature_density_SU2": 1458
+    },
+    "spectra": [
+      {
+        "momentum": "zero",
+        "kappa": 0.1,
+        "min": 0.003562049331089963,
+        "max": 12.000000000000021
+      },
+      {
+        "momentum": "zero",
+        "kappa": 1.0,
+        "min": 0.02543542042845925,
+        "max": 12.000000000000012
+      },
+      {
+        "momentum": "zero",
+        "kappa": 10.0,
+        "min": 0.0551783743706049,
+        "max": 12.00000000000001
+      },
+      {
+        "momentum": "generic",
+        "kappa": 0.1,
+        "min": 0.0036478485086956945,
+        "max": 12.734184149851673
+      },
+      {
+        "momentum": "generic",
+        "kappa": 1.0,
+        "min": 0.028450795457590508,
+        "max": 12.734184409643875
+      },
+      {
+        "momentum": "generic",
+        "kappa": 10.0,
+        "min": 0.052521289147539924,
+        "max": 12.73418725242243
+      },
+      {
+        "momentum": "long_1e-3",
+        "kappa": 0.1,
+        "min": 0.0035620493451035936,
+        "max": 12.000577294702964
+      },
+      {
+        "momentum": "long_1e-3",
+        "kappa": 1.0,
+        "min": 0.02543542120804855,
+        "max": 12.000577294702955
+      },
+      {
+        "momentum": "long_1e-3",
+        "kappa": 10.0,
+        "min": 0.05517837775618452,
+        "max": 12.000577294702966
+      },
+      {
+        "momentum": "long_1e-7",
+        "kappa": 0.1,
+        "min": 0.0035620493310870266,
+        "max": 12.000000057735043
+      },
+      {
+        "momentum": "long_1e-7",
+        "kappa": 1.0,
+        "min": 0.02543542042845705,
+        "max": 12.000000057735036
+      },
+      {
+        "momentum": "long_1e-7",
+        "kappa": 10.0,
+        "min": 0.055178374370607165,
+        "max": 12.00000005773504
+      }
+    ],
+    "analytic_constants": {
+      "L": 3,
+      "C_F": 220449600,
+      "C_Q": 54,
+      "a_kappa1": 4.536184234400969e-09
+    },
+    "SU2": [
+      {
+        "u": 2.0,
+        "c": 0.4331274267223117,
+        "spread_Hessian": 0.020050569922047953,
+        "finite_error": -1.5533447772497766e-07,
+        "haar_error": 4.0515269777996465e-07
+      },
+      {
+        "u": 10.0,
+        "c": 0.8541853083236817,
+        "spread_Hessian": 0.025787697349803657,
+        "finite_error": 1.0561269583320154e-06,
+        "haar_error": 1.7942498177769828e-06
+      },
+      {
+        "u": 40.0,
+        "c": 0.9627404353619465,
+        "spread_Hessian": 0.026357793312198008,
+        "finite_error": 5.709173507284504e-06,
+        "haar_error": 5.973601214293023e-06
+      }
+    ],
+    "periodic": {
+      "T": 2,
+      "matrix_dimension_one_colour": 3904,
+      "square_root_weighted_row_max": 21.330099495859795,
+      "square_root_weighted_column_max": 21.330099495859773,
+      "curvature_square_root_row_max": 7.607514825369768,
+      "curvature_square_root_column_max": 10.68056411260968,
+      "direct_inverse_error": 1.2378986724570495e-14
+    },
+    "gaussian": {
+      "two_dimensional_integral": 4.022397213857444,
+      "source_ratio": 0.9365016460326261,
+      "a": 4.536184234400969e-09,
+      "b": 5424.666666666667,
+      "weighted_rate": 2.0905359320388445e-13
+    }
+  },
+  "external_scientific_inputs_read": [],
+  "integrity_reads": [],
+  "full_existence_established": false,
+  "physical_continuum_mass_gap_established": false
+}

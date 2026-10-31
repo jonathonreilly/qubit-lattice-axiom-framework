@@ -1,0 +1,90 @@
+{
+  "artifacts": [
+    {
+      "bytes": 23374,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RESIDUAL_LATTICE_BRIDGE_ASTRA.md",
+      "sha256": "57fb90b190ccc3280f841b5343aa24d4913aafe5d646e512d01c34799fa6c43b"
+    },
+    {
+      "bytes": 6120,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_bridge_01.py",
+      "sha256": "b970a90e6d9d9b9fc35af07ec88f38474440bb22080b1b3aac15f022c45cf3f8"
+    },
+    {
+      "bytes": 674,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_bridge_01_err.txt",
+      "sha256": "e822d5fb0f9eb7aca6933a8b9e3ec27f9827e544f4ca0dbeb12af3229a00ea2b"
+    },
+    {
+      "bytes": 5025,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_bridge_01_out.json",
+      "sha256": "ddcd9d4d4bb20e6cfaa69ba446bc309cb426b76d9cf2a2156ccb57cdb5740a5a"
+    },
+    {
+      "bytes": 6344,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_bridge_02.py",
+      "sha256": "91e19a0f2de79bb7576f49b4a7fe825093be98aee41c0e75adab085e38029dfa"
+    },
+    {
+      "bytes": 0,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_bridge_02_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3192,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_bridge_02_out.json",
+      "sha256": "99cc6cc5c707adaded611ddcec88981a7e3c69479b6cf8c617c5fa07d7c683fd"
+    },
+    {
+      "bytes": 1906,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_bridge_03.py",
+      "sha256": "3fec6ae55a6b5bcf7287d4c6733d01b4b93c949f4e1b007bdde8fe2157496774"
+    },
+    {
+      "bytes": 0,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_bridge_03_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 943,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_bridge_03_out.json",
+      "sha256": "cb1b89e9064090f0acc4539b9edad895de9f6b7f8ee0753897a4d27e744d852c"
+    },
+    {
+      "bytes": 3998,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_bridge_criteria.md",
+      "sha256": "7da4f045aa7734072712c91e0497029a01164c2d015f7dd0eea8c5c0808d4eb3"
+    },
+    {
+      "bytes": 19032,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_bridge_source_manifest.json",
+      "sha256": "87c9562b8b807f868d2e10ab490f790030c798f6e3acc66492a8d49310f32ed8"
+    }
+  ],
+  "disposition": "Confirmed finite charged-sector/free fixed-depth bridge only; actual off-shell, periodic/neutral, limit and full-theorem obligations remain open. No source correction required.",
+  "frozen_utc": "2026-10-29T14:24:12.014299+00:00",
+  "independent_controls": [
+    {
+      "passed": 45,
+      "script": "review_residual_bridge_01.py",
+      "stderr": "Preserved NumPy slogdet warnings",
+      "total": 45
+    },
+    {
+      "passed": 48,
+      "script": "review_residual_bridge_02.py",
+      "stderr": "empty",
+      "total": 48
+    },
+    {
+      "passed": 6,
+      "script": "review_residual_bridge_03.py",
+      "stderr": "empty; repeated slogdet warnings captured in JSON; Cholesky independently confirms values",
+      "total": 6
+    }
+  ],
+  "prior_report_unchanged": true,
+  "schema": "independent-review-freeze-receipt-v1",
+  "source_commit": "9761471ab46e659ce856e2b9c7c10fef2b06cf5c",
+  "source_sha256": "bb67ad564747c4c9954ae93f88aa3f43a806c88b0aefedd5ef54a945e1512c6b"
+}

@@ -1,0 +1,12 @@
+Part I: I1 (K == psi_-(ad X)a - psi_+(ad X)c) : PASS
+Part I: I2 (K' == -[X,lbar] - 1/2 Phi(ad X) dlam): PASS
+Part I control CI1 FIRES
+Part I control CI2 FIRES
+Part I control CI3 FIRES
+Part II: max/min coefficient mass per link = 6 6
+Part II: II1 (G-slot decomposition exact): PASS
+Part II: II2 (mass 2(d-1)=6 per link; d(d-1)/2=6 plaquettes per base): PASS
+Part II control CII1 FIRES
+Part II control CII2 FIRES
+Part II control CII3 FIRES
+OVERALL: PASS

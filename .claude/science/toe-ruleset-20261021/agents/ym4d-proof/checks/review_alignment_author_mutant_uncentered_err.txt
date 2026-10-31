@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_author_mutant_uncentered.py", line 149, in <module>
+    ker,bad=moments();ac_checks(ker,bad)
+            ^^^^^^^^^
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_alignment_author_mutant_uncentered.py", line 106, in moments
+    assert m==[[L*L*(i==nu)*(j==nu) for j in range(4)] for i in range(4)]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

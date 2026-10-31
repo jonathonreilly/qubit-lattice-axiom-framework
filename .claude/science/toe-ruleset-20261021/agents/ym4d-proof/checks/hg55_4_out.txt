@@ -1,0 +1,9 @@
+[D1 sample 0] 8 / 8 exact; nonvacuous: 8 / 8 ; e.g. dual phi = ['0', '0', '-32/27', '34021/2187', '-265645/8748']
+[D4 control sample 0] comparisons failing with W_0 := e^{Ybar}: 8 / 8 ; first failing: phi'['0', '0', '-32/27', '34021/2187', '-265645/8748'] vs formula ['0', '0', '-32/27', '12220/2187', '193841/4374']
+[D1 sample 1] 8 / 8 exact; nonvacuous: 8 / 8 ; e.g. dual phi = ['0', '-8/9', '103/27', '109183/2916', '-1932203/13122']
+[D4 control sample 1] comparisons failing with W_0 := e^{Ybar}: 8 / 8 ; first failing: phi'['0', '-8/9', '103/27', '109183/2916', '-1932203/13122'] vs formula ['0', '-8/9', '103/27', '21560/729', '-25294607/157464']
+D1 (Lemma SG identity, N = 3, homogeneous family, 16 comparisons): PASS
+D2 (non-vacuity of every dual part): PASS
+D3 (maximiser sanity): PASS
+D4 (control: non-maximiser e^{Ybar} breaks the identity): FIRES (16 failures)
+OVERALL hg55_4: PASS

@@ -1,0 +1,623 @@
+{
+  "coverage": "Complete 255-line mathematical unit and all author controls; complete sole packaging insertion; explicit contextual ranges and inherited exact-byte ranges only. No whole-source or whole-PR certification.",
+  "inherited_bridge_context": [
+    {
+      "current_revision": "236882cc8e66bfabf606216f5e49ca4cd0a61911",
+      "mapped_inherited_ranges": [
+        {
+          "current_range": [
+            891,
+            1006
+          ],
+          "prior_range": [
+            881,
+            996
+          ],
+          "sha256": "8120d8b2d8e53f2420b55822649cbb110cef9f34631233b2a45b9f6e2f5c8a71"
+        },
+        {
+          "current_range": [
+            3359,
+            3452
+          ],
+          "prior_range": [
+            3349,
+            3442
+          ],
+          "sha256": "0283b353238f1feac9fa76cd7121c70cffa4e715869fdd3061e63c7b501f1a8b"
+        }
+      ],
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "prior_revision": "9761471ab46e659ce856e2b9c7c10fef2b06cf5c"
+    },
+    {
+      "current_revision": "236882cc8e66bfabf606216f5e49ca4cd0a61911",
+      "mapped_inherited_ranges": [
+        {
+          "current_range": [
+            114,
+            201
+          ],
+          "prior_range": [
+            114,
+            201
+          ],
+          "sha256": "8a4b8e5c3e98cd3d477c537a3b59b3ae491d3162559a08ea2fa91bca458d37dc"
+        }
+      ],
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UIR55.md",
+      "prior_revision": "9761471ab46e659ce856e2b9c7c10fef2b06cf5c"
+    },
+    {
+      "current_revision": "236882cc8e66bfabf606216f5e49ca4cd0a61911",
+      "mapped_inherited_ranges": [
+        {
+          "current_range": [
+            103,
+            164
+          ],
+          "prior_range": [
+            103,
+            164
+          ],
+          "sha256": "5c4b3d8cf71caba9c117c91b31d5e84412c36cac0cf00b8953b4831c06832bfe"
+        }
+      ],
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UIR2_55.md",
+      "prior_revision": "9761471ab46e659ce856e2b9c7c10fef2b06cf5c"
+    },
+    {
+      "current_revision": "236882cc8e66bfabf606216f5e49ca4cd0a61911",
+      "mapped_inherited_ranges": [
+        {
+          "current_range": [
+            341,
+            393
+          ],
+          "prior_range": [
+            341,
+            393
+          ],
+          "sha256": "857f6f665482d88903765ac0eabef37b438dc4923d5aaba53e74c14dd79c99ef"
+        }
+      ],
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FLOW55.md",
+      "prior_revision": "9761471ab46e659ce856e2b9c7c10fef2b06cf5c"
+    }
+  ],
+  "inherited_scientific_context": [
+    {
+      "baseline_file_sha256": "2b5059568c92659717c0c021dd4460899408f7647ca8a3ea4a60b76809400ec8",
+      "baseline_revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "current_file_sha256": "2b5059568c92659717c0c021dd4460899408f7647ca8a3ea4a60b76809400ec8",
+      "inherited_ranges": [
+        {
+          "baseline_range": [
+            1,
+            334
+          ],
+          "current_range": [
+            1,
+            334
+          ],
+          "sha256": "2b5059568c92659717c0c021dd4460899408f7647ca8a3ea4a60b76809400ec8",
+          "unique_exact_byte_match": true
+        }
+      ],
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RESIDUAL_DETERMINANT_ASTRA.md"
+    },
+    {
+      "baseline_file_sha256": "0cbb4f9a967022ab669cae087617f390b2bfb481034012aac85e7cfc9928bc40",
+      "baseline_revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "current_file_sha256": "0cbb4f9a967022ab669cae087617f390b2bfb481034012aac85e7cfc9928bc40",
+      "inherited_ranges": [
+        {
+          "baseline_range": [
+            1,
+            272
+          ],
+          "current_range": [
+            1,
+            272
+          ],
+          "sha256": "0cbb4f9a967022ab669cae087617f390b2bfb481034012aac85e7cfc9928bc40",
+          "unique_exact_byte_match": true
+        }
+      ],
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RECOVERY_UIR_ASTRA.md"
+    },
+    {
+      "baseline_file_sha256": "347b7ae680b2c305cc7bb5de8b4496d069bbea309a6df71f18109c54a22c4098",
+      "baseline_revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "current_file_sha256": "347b7ae680b2c305cc7bb5de8b4496d069bbea309a6df71f18109c54a22c4098",
+      "inherited_ranges": [
+        {
+          "baseline_range": [
+            1,
+            192
+          ],
+          "current_range": [
+            1,
+            192
+          ],
+          "sha256": "347b7ae680b2c305cc7bb5de8b4496d069bbea309a6df71f18109c54a22c4098",
+          "unique_exact_byte_match": true
+        }
+      ],
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_RECOVERY_UIR_ASTRA.md"
+    },
+    {
+      "baseline_file_sha256": "bc10b5cc37c8f10cb339e234a3ca3aa252fd401cfb75476334c8c94aa8f5a6f3",
+      "baseline_revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "current_file_sha256": "bc10b5cc37c8f10cb339e234a3ca3aa252fd401cfb75476334c8c94aa8f5a6f3",
+      "inherited_ranges": [
+        {
+          "baseline_range": [
+            103,
+            164
+          ],
+          "current_range": [
+            103,
+            164
+          ],
+          "sha256": "5c4b3d8cf71caba9c117c91b31d5e84412c36cac0cf00b8953b4831c06832bfe",
+          "unique_exact_byte_match": true
+        }
+      ],
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UIR2_55.md"
+    },
+    {
+      "baseline_file_sha256": "4c6d80473a80714e2a5aa1e241e8835648bbe3c65a7bca38a5758faf3c5accb4",
+      "baseline_revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "current_file_sha256": "4c6d80473a80714e2a5aa1e241e8835648bbe3c65a7bca38a5758faf3c5accb4",
+      "inherited_ranges": [
+        {
+          "baseline_range": [
+            114,
+            297
+          ],
+          "current_range": [
+            114,
+            297
+          ],
+          "sha256": "5ade7ff2b3a01995ee9435305dc78bb069f340fca78c651727370a8914c61dd8",
+          "unique_exact_byte_match": true
+        },
+        {
+          "baseline_range": [
+            406,
+            420
+          ],
+          "current_range": [
+            406,
+            420
+          ],
+          "sha256": "42191111a1467ff5139e0de021b7b0419dfc23d626a4feafcbfa984d2d3d9e28",
+          "unique_exact_byte_match": true
+        }
+      ],
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UIR55.md"
+    },
+    {
+      "baseline_file_sha256": "56d2707f4b571585db26cf2a077dbaee57bc936c76821cdbc50710e4b36e9d25",
+      "baseline_revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "current_file_sha256": "56d2707f4b571585db26cf2a077dbaee57bc936c76821cdbc50710e4b36e9d25",
+      "inherited_ranges": [
+        {
+          "baseline_range": [
+            341,
+            393
+          ],
+          "current_range": [
+            341,
+            393
+          ],
+          "sha256": "857f6f665482d88903765ac0eabef37b438dc4923d5aaba53e74c14dd79c99ef",
+          "unique_exact_byte_match": true
+        }
+      ],
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FLOW55.md"
+    },
+    {
+      "baseline_file_sha256": "085cd225228a23847b053650fe8bff4c14529d7e630a74565b301d39855e442f",
+      "baseline_revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "current_file_sha256": "085cd225228a23847b053650fe8bff4c14529d7e630a74565b301d39855e442f",
+      "inherited_ranges": [
+        {
+          "baseline_range": [
+            20,
+            42
+          ],
+          "current_range": [
+            20,
+            42
+          ],
+          "sha256": "ea9ac4719d1407b366eba2743dc13c6625b5eb216acecb2751c5523991ff5d02",
+          "unique_exact_byte_match": true
+        },
+        {
+          "baseline_range": [
+            113,
+            150
+          ],
+          "current_range": [
+            113,
+            150
+          ],
+          "sha256": "f6a7e8e37be180aa1811936eacac6fbff54aadf2491cca76cae3146edd5ace1e",
+          "unique_exact_byte_match": true
+        },
+        {
+          "baseline_range": [
+            600,
+            685
+          ],
+          "current_range": [
+            600,
+            685
+          ],
+          "sha256": "416504cbd1d368a49dcf31b10d5a85aa842915b10d882d500d7b7b0b7454a44f",
+          "unique_exact_byte_match": true
+        },
+        {
+          "baseline_range": [
+            1033,
+            1117
+          ],
+          "current_range": [
+            1033,
+            1117
+          ],
+          "sha256": "a1be9b2e5f401904987d2e8e2b9d766e33bfbbf8516da7d40278d87eee53258e",
+          "unique_exact_byte_match": true
+        },
+        {
+          "baseline_range": [
+            1580,
+            1649
+          ],
+          "current_range": [
+            1580,
+            1649
+          ],
+          "sha256": "82a7ab7c4d8e90886c394670cc912f5a982f8ff0ea1ba0824bf092deba4f7e19",
+          "unique_exact_byte_match": true
+        }
+      ],
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FLOW.md"
+    },
+    {
+      "baseline_file_sha256": "dbcd5314ddddcd26fe39f6e6684437bc76488410c8c314660c04c134b6d08608",
+      "baseline_revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "current_file_sha256": "eea6fe02f56840f80061284765ad3cd41291d6ad00d95c602068fed4dd40b74a",
+      "inherited_ranges": [
+        {
+          "baseline_range": [
+            881,
+            943
+          ],
+          "current_range": [
+            923,
+            985
+          ],
+          "sha256": "a30a09e9873ade3dcca273070f1e802ee93d9c5d01ee4abbd07810f8b0139029",
+          "unique_exact_byte_match": true
+        },
+        {
+          "baseline_range": [
+            3349,
+            3442
+          ],
+          "current_range": [
+            3391,
+            3484
+          ],
+          "sha256": "cf7a65a36207fb1c09cd6b873cc52a9bb830e46b8d8856f4a962e988f8bf5290",
+          "unique_exact_byte_match": true
+        },
+        {
+          "baseline_range": [
+            6769,
+            6815
+          ],
+          "current_range": [
+            6811,
+            6857
+          ],
+          "sha256": "ee75d02d63f0dac12b8d529719136af9137bd8a19ede520597ef695796851428",
+          "unique_exact_byte_match": true
+        }
+      ],
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md"
+    },
+    {
+      "baseline_file_sha256": "8074d6c5efe3648bfb28e3463a6076cf6df74c9c358a8613390044148ac6fbe0",
+      "baseline_revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "current_file_sha256": "553d56f46ea457aa1b6a97c2a53f435739d3fadb6c9af0cf89676f41a7266902",
+      "inherited_ranges": [
+        {
+          "baseline_range": [
+            20,
+            38
+          ],
+          "current_range": [
+            20,
+            38
+          ],
+          "sha256": "900774424216601985d4fe853607e9f5fc0706bd0140cc6be8600ab037d8f5b9",
+          "unique_exact_byte_match": true
+        }
+      ],
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT_A.md"
+    },
+    {
+      "baseline_file_sha256": "f714a647910c4fd19570ecd192b98144b6c54d37c8c4f30c73bd20d426ef717d",
+      "baseline_revision": "731e46a915bccbc8b32beed8abdc96dc76976082",
+      "current_file_sha256": "f714a647910c4fd19570ecd192b98144b6c54d37c8c4f30c73bd20d426ef717d",
+      "inherited_ranges": [
+        {
+          "baseline_range": [
+            76,
+            205
+          ],
+          "current_range": [
+            76,
+            205
+          ],
+          "sha256": "19c2b10d38412a60118f504b5043727cd4f044a4b6d34ee3b50a6a80a3ad512c",
+          "unique_exact_byte_match": true
+        }
+      ],
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT34_55.md"
+    }
+  ],
+  "mathematical_source_commit": "236882cc8e66bfabf606216f5e49ca4cd0a61911",
+  "methodology_read_provenance": "Complete current-main methodology and relevant references read in this same reviewer context and recorded in the first prior manifest. No new authority inferred from PR metadata.",
+  "methodology_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "packaged_source": {
+    "binding": "Coordinator supplied frozen SHA256, asserted before reading; complete diff proves only one dependency paragraph was added.",
+    "bytes": 26224,
+    "complete_scientific_and_metadata_coverage": true,
+    "lines": 257,
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_vertices_working.md",
+    "revision": "e4464249d9729a0bf7725be67611aa95aba5df01",
+    "sha256": "aa16239e801d371c7242a342b339ed5dfeec8fa75f5dd8a3ac3a128a84989d56"
+  },
+  "prior_manifests": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_source_manifest.json",
+      "sha256": "4b7ad1f689a20d2f968f197dfb69e3594fe24c4f32a529ac1392cd25993fb832"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_residual_bridge_source_manifest.json",
+      "sha256": "87c9562b8b807f868d2e10ab490f790030c798f6e3acc66492a8d49310f32ed8"
+    }
+  ],
+  "schema": "scoped-independent-review-read-manifest-v1",
+  "sources": [
+    {
+      "bytes": 25703,
+      "complete_file_read": true,
+      "git_blob": "a401b656afa62c140680e4fa639ccc25bb1b5516",
+      "lines": 255,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_vertices_working.md",
+      "range_sha256": [
+        {
+          "range": [
+            1,
+            255
+          ],
+          "sha256": "8a7c87c9b737ee88372eb985189bcd0e25440986868cc8d92062b84f6cb92cd1"
+        }
+      ],
+      "read_ranges": [
+        [
+          1,
+          255
+        ]
+      ],
+      "revision": "236882cc8e66bfabf606216f5e49ca4cd0a61911",
+      "scope": "Complete immutable target/author-evidence read. Empty stderr verified; author replay is not independent evidence.",
+      "sha256": "8a7c87c9b737ee88372eb985189bcd0e25440986868cc8d92062b84f6cb92cd1"
+    },
+    {
+      "bytes": 1352,
+      "complete_file_read": true,
+      "git_blob": "b0e0e6a592861429ac784686c77586d5629cd900",
+      "lines": 8,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_04.criteria.md",
+      "range_sha256": [
+        {
+          "range": [
+            1,
+            8
+          ],
+          "sha256": "ff720bfd406438b675775473e6485c991e099719ffb94c4791380f2db9951e6e"
+        }
+      ],
+      "read_ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "revision": "236882cc8e66bfabf606216f5e49ca4cd0a61911",
+      "scope": "Complete immutable target/author-evidence read. Empty stderr verified; author replay is not independent evidence.",
+      "sha256": "ff720bfd406438b675775473e6485c991e099719ffb94c4791380f2db9951e6e"
+    },
+    {
+      "bytes": 3277,
+      "complete_file_read": true,
+      "git_blob": "f1109e4a2be20fe499c104014282387641f1577a",
+      "lines": 66,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_04.py",
+      "range_sha256": [
+        {
+          "range": [
+            1,
+            66
+          ],
+          "sha256": "c6177199459d646413c2a83552f28c4e970963284f2275ef0b72c6a304a258df"
+        }
+      ],
+      "read_ranges": [
+        [
+          1,
+          66
+        ]
+      ],
+      "revision": "236882cc8e66bfabf606216f5e49ca4cd0a61911",
+      "scope": "Complete immutable target/author-evidence read. Empty stderr verified; author replay is not independent evidence.",
+      "sha256": "c6177199459d646413c2a83552f28c4e970963284f2275ef0b72c6a304a258df"
+    },
+    {
+      "bytes": 1319,
+      "complete_file_read": true,
+      "git_blob": "897f84d0ebdcd61adf865f6e86353052657a5e91",
+      "lines": 63,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_04.out.json",
+      "range_sha256": [
+        {
+          "range": [
+            1,
+            63
+          ],
+          "sha256": "c52b4d505807a26d55568ddde5385678410efbd851f96f6eb9d15137024a7f21"
+        }
+      ],
+      "read_ranges": [
+        [
+          1,
+          63
+        ]
+      ],
+      "revision": "236882cc8e66bfabf606216f5e49ca4cd0a61911",
+      "scope": "Complete immutable target/author-evidence read. Empty stderr verified; author replay is not independent evidence.",
+      "sha256": "c52b4d505807a26d55568ddde5385678410efbd851f96f6eb9d15137024a7f21"
+    },
+    {
+      "bytes": 0,
+      "complete_file_read": true,
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "lines": 0,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_04.err",
+      "range_sha256": [],
+      "read_ranges": [],
+      "revision": "236882cc8e66bfabf606216f5e49ca4cd0a61911",
+      "scope": "Complete immutable target/author-evidence read. Empty stderr verified; author replay is not independent evidence.",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1975,
+      "complete_file_read": true,
+      "git_blob": "80bf06e6d8c3f4e46f2e694b95f83d37371ac910",
+      "lines": 46,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/residual_det_vertices_manifest.json",
+      "range_sha256": [
+        {
+          "range": [
+            1,
+            46
+          ],
+          "sha256": "a9f95e4380250f8674db0c6637bf6a3e58a00a19b968538bfabedf1bf9d35be0"
+        }
+      ],
+      "read_ranges": [
+        [
+          1,
+          46
+        ]
+      ],
+      "revision": "236882cc8e66bfabf606216f5e49ca4cd0a61911",
+      "scope": "All declared hashes and sizes verified against immutable objects.",
+      "sha256": "a9f95e4380250f8674db0c6637bf6a3e58a00a19b968538bfabedf1bf9d35be0"
+    },
+    {
+      "bytes": 68640,
+      "complete_file_read": false,
+      "git_blob": "cb1163efb60e1c42531137501a1e233c6b97c09d",
+      "lines": 625,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UIR55.md",
+      "range_sha256": [
+        {
+          "range": [
+            250,
+            297
+          ],
+          "sha256": "f4a1d7fdffd7b70b7d5eb60129643a50c94a6f96e464ee8447a7316a7614a268"
+        },
+        {
+          "range": [
+            406,
+            420
+          ],
+          "sha256": "42191111a1467ff5139e0de021b7b0419dfc23d626a4feafcbfa984d2d3d9e28"
+        }
+      ],
+      "read_ranges": [
+        [
+          250,
+          297
+        ],
+        [
+          406,
+          420
+        ]
+      ],
+      "revision": "236882cc8e66bfabf606216f5e49ca4cd0a61911",
+      "scope": "New contextual reads only. A truncated portion of RECOVERY line 167 was recovered separately by reading 165\u2013173. Historical labels are not imported as verified claims.",
+      "sha256": "4c6d80473a80714e2a5aa1e241e8835648bbe3c65a7bca38a5758faf3c5accb4"
+    },
+    {
+      "bytes": 35453,
+      "complete_file_read": false,
+      "git_blob": "3f5934189db747cf771287f79877307ec77e52d1",
+      "lines": 320,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UIR2_55.md",
+      "range_sha256": [
+        {
+          "range": [
+            165,
+            235
+          ],
+          "sha256": "0aba61d79594b03ab886f7d408d9741e394ff18d97ab0dd9618298e17091d5bb"
+        }
+      ],
+      "read_ranges": [
+        [
+          165,
+          235
+        ]
+      ],
+      "revision": "236882cc8e66bfabf606216f5e49ca4cd0a61911",
+      "scope": "New contextual reads only. A truncated portion of RECOVERY line 167 was recovered separately by reading 165\u2013173. Historical labels are not imported as verified claims.",
+      "sha256": "bc10b5cc37c8f10cb339e234a3ca3aa252fd401cfb75476334c8c94aa8f5a6f3"
+    },
+    {
+      "bytes": 35284,
+      "complete_file_read": false,
+      "git_blob": "c0dc4213af551f5cabe4270958ec3c866c5dacb6",
+      "lines": 272,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RECOVERY_UIR_ASTRA.md",
+      "range_sha256": [
+        {
+          "range": [
+            154,
+            272
+          ],
+          "sha256": "3960f5e2446c30d80de5c6371a5b4e1dd4157bbaf94119dea61610b0780782ab"
+        }
+      ],
+      "read_ranges": [
+        [
+          154,
+          272
+        ]
+      ],
+      "revision": "236882cc8e66bfabf606216f5e49ca4cd0a61911",
+      "scope": "New contextual reads only. A truncated portion of RECOVERY line 167 was recovered separately by reading 165\u2013173. Historical labels are not imported as verified claims.",
+      "sha256": "0cbb4f9a967022ab669cae087617f390b2bfb481034012aac85e7cfc9928bc40"
+    }
+  ],
+  "utc": "2026-10-29T15:33:18.982256+00:00"
+}

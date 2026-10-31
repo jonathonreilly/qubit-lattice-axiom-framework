@@ -1,0 +1,17 @@
+A: 240 cases; all inequalities S <= P <= 2/(1-e^{-mu h}) <= 2(1+1/(mu h)) hold: True
+A-ctl (false bound S <= 1 + 1/(mu h)) violated in 64 cases; fired: True
+   A-ctl witness mu=1 h=1 T=5 a=0 : S >= 2.006429 > 2.000000
+   A-ctl witness mu=1 h=1/3 T=3 a=0 : S >= 4.722850 > 4.000000
+   A-ctl witness mu=1 h=1/3 T=3 a=1/9 : S >= 4.640694 > 4.000000
+   A-ctl witness mu=1 h=1/3 T=3 a=1/6 : S >= 4.621158 > 4.000000
+   A-ctl witness mu=1 h=1/3 T=3 a=2/9 : S >= 4.640694 > 4.000000
+   A-ctl witness mu=1 h=1/3 T=4 a=0 : S >= 5.235937 > 4.000000
+D: ln2 in [0.693147180560, 0.693147180560]; m_Y <= mbar = 1.666219e-04; (1+1/mbar)^2 >= 36031343.3 ; >= 3.6e7: True
+D-ctl: with 1.67e-4, (1+1/mu)^2 = 35868407.9 ; '>= 3.6e7' is FALSE (control fires): True
+E case L=3 sigma=1: E1/E2/E3 over k=1..60 ok so far: True; ctl1 ratio at k=60 = 120
+E case L=5 sigma=1: E1/E2/E3 over k=1..60 ok so far: True; ctl1 ratio at k=60 = 240
+E case L=7 sigma=1: E1/E2/E3 over k=1..60 ok so far: True; ctl1 ratio at k=60 = 360
+E case L=9 sigma=1/2: E1/E2/E3 over k=1..60 ok so far: True; ctl1 ratio at k=60 = 120
+E-ctl2: 9^k > 1e6 first at k = 7; fired: True
+RESULTS: {'A': True, 'A-ctl fired': True, 'D': True, 'D-ctl fired': True, 'E': True, 'E-ctl1 fired': True, 'E-ctl2 fired': True}
+OVERALL: PASS

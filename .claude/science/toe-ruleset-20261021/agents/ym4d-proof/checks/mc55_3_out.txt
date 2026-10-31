@@ -1,0 +1,7 @@
+random seed=1: eps'~1.077e-04  L1=True L2=True L3=True L4=True  C1(undersized ladder) FAILS  C2(n_L->1) FAILS
+random seed=2: eps'~1.077e-04  L1=True L2=True L3=True L4=True  C1(undersized ladder) FAILS  C2(n_L->1) FAILS
+random seed=3: eps'~1.131e-04  L1=True L2=True L3=True L4=True  C1(undersized ladder) FAILS  C2(n_L->1) FAILS
+random seed=4: eps'~1.281e-04  L1=True L2=True L3=True L4=True  C1(undersized ladder) FAILS  C2(n_L->1) FAILS
+aligned seed=5: eps'~2.000e-05  L1=True L2=True L3=True L4=True  C1(undersized ladder) FAILS  C2(n_L->1) FAILS
+gates L1-L4 on all instances: hold; controls on the aligned instance: both fired
+VERDICT mc55_3: PASS

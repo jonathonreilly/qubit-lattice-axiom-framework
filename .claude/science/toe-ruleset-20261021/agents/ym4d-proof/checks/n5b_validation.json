@@ -1,0 +1,22 @@
+{
+  "checked_utc": "2026-10-30T00:59:07.121901+00:00",
+  "original_source_files": 3341,
+  "modified_or_missing_originals": [],
+  "unauthorized_new_files": [],
+  "missing_local_markdown_links": [],
+  "numeric_pass_reports": 27,
+  "numeric_final_verdict": "VERDICT: PASS",
+  "numeric_stderr_bytes": 0,
+  "lock_present": false,
+  "owned_files": [
+    "N5B.md",
+    "N5B_LOG.md",
+    "checks/n5b_checks.py",
+    "checks/n5b_checks_err.txt",
+    "checks/n5b_checks_out.txt",
+    "checks/n5b_checks_run2_err.txt",
+    "checks/n5b_checks_run2_out.txt",
+    "checks/n5b_criteria.md",
+    "checks/n5b_source_manifest.json"
+  ]
+}

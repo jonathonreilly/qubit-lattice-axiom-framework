@@ -1,0 +1,11 @@
+Scope: exact-contour configuration checks; no posterior quadrature.
+L=3; paired paths per orientation=1944; BLAS threads=1.
+depth=0; flat cross-ratio log=35.9325506047; diameter=25600; weighted score oscillation=28.2842712475
+depth=1; flat cross-ratio log=35.5732250986; diameter=25344; weighted score oscillation=28.1424945589
+depth=3; flat cross-ratio log=34.8545740865; diameter=24832; weighted score oscillation=27.8567765544
+depth=7; flat cross-ratio log=33.4172720623; diameter=23808; weighted score oscillation=27.276363394
+Maximum individual path error: 2.23773e-16.
+Maximum four-kernel cross-ratio error: 4.40536e-13.
+The analytic variance identity is not numerically checked here.
+No TV/covariance lower bound, U1--U4 closure or counterexample is inferred.
+Peak RSS bytes: 90734592 (<1000000000).

@@ -1,0 +1,63 @@
+{
+  "utc": "2026-10-29T20:50:10.011397+00:00",
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/1609.01747v1",
+      "pdf_url": "https://arxiv.org/pdf/1609.01747v1",
+      "version_page_checked_utc": "2026-10-29T20:50:10.011397+00:00",
+      "pdf_path": "/tmp/covariant_source_activity_primary/1609.01747v1.pdf",
+      "pdf_sha256": "9db3ed5d6ddbadda08ceb9b81a09db4bb50de3378048c1823249d0b8c682edeb",
+      "text_path": "/tmp/covariant_source_activity_primary/1609.01747v1.txt",
+      "text_sha256": "c8b1ee30e3e29e1b500119d727e0d9a466b5a90830dfd7d54d51b71a4fde09c6",
+      "read_PDF_pages_complete": [
+        1,
+        2,
+        3,
+        12,
+        13,
+        14,
+        15
+      ],
+      "scope_and_mismatch": "Bosonic parabolic flow, not nonabelian YM. Authors explicitly do not complete the full nonperturbative error proof; no theorem for hard complement imported."
+    },
+    {
+      "url": "https://arxiv.org/abs/1609.01748v1",
+      "pdf_url": "https://arxiv.org/pdf/1609.01748v1",
+      "version_page_checked_utc": "2026-10-29T20:50:10.011397+00:00",
+      "pdf_path": "/tmp/covariant_source_activity_primary/1609.01748v1.pdf",
+      "pdf_sha256": "711e61a0c220cf2b5ca4af46588ccf1207a2ede8914dfb7ab90fa261b66be2c7",
+      "text_path": "/tmp/covariant_source_activity_primary/1609.01748v1.txt",
+      "text_sha256": "5067edb1c3f1b6eca3c0f5a39d7697a30fe64e475804c70697d723be2ba8dc6a",
+      "read_PDF_pages_complete": [
+        39,
+        40,
+        41,
+        42
+      ],
+      "scope_and_mismatch": "Appendix A has output/marked-input norms and finite-degree maps; the actual infinite analytic S4 force is rebuilt in this unit. Pages39-40 read for context, not an imported theorem."
+    },
+    {
+      "url": "https://arxiv.org/abs/1410.2798v3",
+      "pdf_path": "/tmp/uniform_soft_minimizer_primary/axial.pdf",
+      "pdf_sha256": "4742e86f6c701b15a598e0ff661b7881d8e7e6d3c2a60c45c0a60bed8c7c16b4",
+      "text_path": "/tmp/uniform_soft_minimizer_primary/axial.txt",
+      "text_sha256": "e714721c153d08c1b4c36d56db4b7ae9405ae9367e6a93019d74bc3ff147c4e2",
+      "read_coverage": "Complete \u00a7\u00a73.7-3.10,PDFpp16-21; earlier same context; d3 abelian hard-constraint dictionary only.",
+      "reading_reused": true
+    },
+    {
+      "url": "https://arxiv.org/abs/1212.5562v2",
+      "pdf_path": "/tmp/claude-502/-Users-jonBridger-Toy-Physics--claude-worktrees-yang-mills-proof-df9972/a931aaa3-5369-4512-9e8d-b8590010706c/scratchpad/arxiv_balaban/pdf/1212.5562.pdf",
+      "pdf_sha256": "9b5216ec475c98c1acaaf82f7ac82e19567b9ab099a17a08f142162adac7589c",
+      "text_path": "/tmp/claude-502/-Users-jonBridger-Toy-Physics--claude-worktrees-yang-mills-proof-df9972/a931aaa3-5369-4512-9e8d-b8590010706c/scratchpad/arxiv_balaban/txt/1212.5562.txt",
+      "text_sha256": "397a2651b949b6f6724c4b3599b23c9882f477a6123972abd793946c21bbd437",
+      "read_coverage": "Complete Appendix F,PDFpp91-92; earlier same context; independent product variables/local small interaction required.",
+      "reading_reused": true
+    }
+  ],
+  "retrieval_failures_preserved_in_tool_transcript": [
+    "Python urllib certificate verification failed before download; no TLS bypass used.",
+    "Native curl download succeeded, pdftotext executable unavailable; subsequent native curl plus PyMuPDF extraction succeeded."
+  ],
+  "full_text_policy": "All full PDFs/text remain under /tmp, no full external text committed."
+}

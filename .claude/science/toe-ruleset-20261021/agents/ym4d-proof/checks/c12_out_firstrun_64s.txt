@@ -1,0 +1,7 @@
+INFO K=1 S4'': w_0 = 0.9891 +- 0.0130 (12 samples x 96 plaquettes); first-step fraction of Z outside ||Z-1||<1: 0.776; t=21s
+INFO K=1 S4'' fixed order: w_0 = 0.9933 +- 0.0079 (40 samples x 96 plaquettes); first-step fraction of Z outside ||Z-1||<1: 0.774; t=24s
+INFO K=2 S4'' fixed order: w_0 = 0.9767 +- 0.0145 (10 samples x 96 plaquettes); first-step fraction of Z outside ||Z-1||<1: 0.775; t=29s
+INFO K=2 S4'': w_0 = 0.9841 +- 0.0243 (3 samples x 96 plaquettes); first-step fraction of Z outside ||Z-1||<1: 0.775; t=64s
+PASS w_0(K) > 0.5 in every measured case (sanity floor; not a uniformity statement) | K1 S4'': 0.989, K1 S4'' fixed order: 0.993, K2 S4'' fixed order: 0.977, K2 S4'': 0.984
+runtime 64 s
+TOTAL: PASS=1 FAIL=0

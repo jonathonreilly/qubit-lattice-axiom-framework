@@ -1,0 +1,18 @@
+Numerical guard probe; no physics computation was executed.
+
+Command:
+nice -n 10 env OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 true
+
+Observed stderr:
+nice: setpriority: Operation not permitted
+
+Contemporaneous uptime output:
+ 1:53  2 users, load averages: 3.13 3.00 3.15
+
+Contemporaneous memory_pressure final line:
+System-wide memory free percentage: 41%
+
+Disposition: priority guard FAILED. Numerical experiments NOT RUN.
+No numerical lock or worker was started. No pools, resource-limit changes,
+priority workaround or weakened guard were used. RSS for later deterministic
+source/hash bookkeeping is reported separately in charge_validation.json.

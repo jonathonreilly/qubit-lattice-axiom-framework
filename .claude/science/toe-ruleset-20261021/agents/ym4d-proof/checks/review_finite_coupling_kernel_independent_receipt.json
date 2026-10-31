@@ -1,0 +1,63 @@
+{
+  "created_utc": "2026-10-29T22:56:53.266925+00:00",
+  "stage": "independent evidence frozen before first author checker/raw-output read",
+  "target_sha256": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b",
+  "files": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_coupling_kernel_01.py",
+      "sha256": "ce242b2e1bb6e4c4d2c564cd4dccd21b1618d7e6e1a6c5009ac28453b1f9827f",
+      "bytes": 9011
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_coupling_kernel_01_results.json",
+      "sha256": "a54d43a77e64c68da14cbe56c956de3421de3c885dc204c8f7ed277a07569ee9",
+      "bytes": 4568
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_coupling_kernel_criteria.md",
+      "sha256": "cdbc1b1d461c01b1a7f8e3322cf4f7c1ecf2e4fcb8d69b564ca472397a1587f5",
+      "bytes": 2624
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_coupling_kernel_independent.md",
+      "sha256": "9b484d1470fd713038cd24f8e03ce0b7cda76376ef174ae5e527d30425f15926",
+      "bytes": 7434
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_coupling_kernel_independent_code_freeze.json",
+      "sha256": "e8bad36ac4875d71ec2052a74878fdd6369ef1a10554203a104d537ab446fcd9",
+      "bytes": 1211
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_coupling_kernel_independent_run01_gate.json",
+      "sha256": "ba8d62157f1f03a1156251b92fb2382a0403b72f6f2858ed2922f3275c2bf242",
+      "bytes": 579
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_coupling_kernel_independent_run01_run.json",
+      "sha256": "4698162f3a3573cc7301bf53841fa464d3cf7eb2b69d1c80abdb69fa408c5464",
+      "bytes": 534
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_coupling_kernel_independent_run01_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_coupling_kernel_independent_run01_stdout.txt",
+      "sha256": "7114b3bf7aa2e35dbe7e5b0d2194ea39fa134eb0abbdda8934b62a0bcac0f15f",
+      "bytes": 3514
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_coupling_kernel_preregistration.json",
+      "sha256": "f0072bddd177f00f43f2c10e7a8d8669aae77b536b491475d813893144ffce17",
+      "bytes": 631
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_finite_coupling_kernel_runner.py",
+      "sha256": "a3bbb391453fa998a742eee80201f3b2438ae62f27066858bdc42dfa0d43f8cf",
+      "bytes": 3556
+    }
+  ],
+  "result": "21/21 finite diagnostics; direct analytic FK24 derivation; no target-scope blocker found in analytic pass; full interacting and continuum targets remain open"
+}

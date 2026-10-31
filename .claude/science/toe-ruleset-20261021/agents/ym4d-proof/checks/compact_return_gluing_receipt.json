@@ -1,0 +1,60 @@
+{
+  "schema": "compact_return_gluing_author_receipt_v1",
+  "status": "author_proposition_frozen_pending_fresh_independent_review",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COMPACT_RETURN_GLUING_ASTRA.md",
+    "sha256": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+    "lines": 644
+  },
+  "read_manifest": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/compact_return_gluing_read_manifest.json",
+    "sha256": "f7aac253e120d5199cf9e74e88ff31ef3441343ba39da13ae3d017551ce9e97c"
+  },
+  "source_frozen_before_packet": true,
+  "configured_worker_provenance": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "max",
+    "source": "Explicit parent assignment in the human-authorized Astra/max worker context; no claim of independent backend attestation.",
+    "author_identity": "/root/source_local_compact_return",
+    "same_family_disclosure": "Codex author; independent Codex review, when performed, is same-family."
+  },
+  "mathematical_results": [
+    "CG7–CG11: exact simultaneous component partition, localized selectors and single-use original physical factor allocation.",
+    "CG12–CG16: selected compact-minus-chart resummation, correct exclusion of every selected active region from retained annuli, exact grouped correlated-chart representation at real coarse center and fixed complex original sources.",
+    "CG18–CG24: entire Schur interpolation within RF boundary tube, signed normalized real-buffer/hybrid marginal, exact dimension and inactive-Haar handling.",
+    "CG25–CG28: explicit curvature payment, arbitrary joint insertion moments, summable geometric majorant, nonempty shrinking parameter family.",
+    "CG29: real one-step pressure comparison.",
+    "CG30–CG33: unchanged original complementary predicates and explicit frozen-versus-transported coarse chart correction."
+  ],
+  "open_interfaces": [
+    "Complete-reader connected chart cumulant/density-forest estimate for bounded measurable real-buffer insertions.",
+    "Transport of resummed hard domains on complex coarse data and control of Delta_chart.",
+    "Actual original-white-Omega reference comparison, not replacement by the original-a chart.",
+    "Inherited histories, requested wider RG domain and corresponding derivative class.",
+    "Full non-free continuum existence.",
+    "Positive physical continuum mass gap."
+  ],
+  "administrative_checks": {
+    "CG_equation_labels": "Exactly CG1–CG33, each defined once.",
+    "frozen_source_sha256_verified": true,
+    "protected_sources_unchanged": {
+      "SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "MATCHED_REGIONAL_RATIO_ASTRA.md": "5f27e55375d59dde30eacb91efce42a16ba266d563833db2ffd5babdd14c4af6",
+      "REGIONAL_CRITICAL_FIELD_ASTRA.md": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "REGIONAL_CHART_RETURN_ASTRA.md": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094"
+    },
+    "full_author_source_self_read": true,
+    "no_automated_proof_check_claim": true
+  },
+  "science_numerical_runs": 0,
+  "mutations": {
+    "authorized_files_only": [
+      "COMPACT_RETURN_GLUING_ASTRA.md",
+      "checks/compact_return_gluing_read_manifest.json",
+      "checks/compact_return_gluing_receipt.json"
+    ],
+    "git_pr_shared_front_predecessor_audit_ledger_edits": false,
+    "extra_workers_spawned": false
+  },
+  "review_request": "Root to assign a DIFFERENT fresh source-first hostile reviewer. Review mathematics before this packet; freeze independent findings before packet comparison."
+}

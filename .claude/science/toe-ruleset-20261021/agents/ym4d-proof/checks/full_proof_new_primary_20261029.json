@@ -1,0 +1,95 @@
+{
+  "created_utc": "2026-10-29T21:30:15.352664+00:00",
+  "root_read_scope": "Independent bounded primary-source reading for the two new author packets.",
+  "sources": [
+    {
+      "id": "B37",
+      "url": "https://arxiv.org/abs/1609.01748v1",
+      "title": "The Small Field Parabolic Flow for Bosonic Many-body Models: Part4\u2014Background and Critical Field Estimates",
+      "authors": "Balaban, Feldman, Kn\u00f6rrer, Trubowitz",
+      "root_read": "Abstract/version metadata; complete Appendix A, PDF pages41\u201342. Not the whole paper.",
+      "pdf": "/tmp/covariant_source_activity_primary/1609.01748v1.pdf",
+      "expected_sha256": "711e61a0c220cf2b5ca4af46588ccf1207a2ede8914dfb7ab90fa261b66be2c7",
+      "role": "Attributed marked-input/output norm and fixed-point comparison; finite-degree hypothesis not imported for the actual infinite analytic gauge force."
+    },
+    {
+      "id": "B38",
+      "url": "https://arxiv.org/abs/1609.01747v1",
+      "title": "The Small Field Parabolic Flow for Bosonic Many-body Models: Part3\u2014Nonperturbatively Small Errors",
+      "authors": "Balaban, Feldman, Kn\u00f6rrer, Trubowitz",
+      "root_read": "Abstract/version metadata; complete PDF pages1\u20133 and12\u201315. Other pages not reviewed by root.",
+      "pdf": "/tmp/covariant_source_activity_primary/1609.01747v1.pdf",
+      "expected_sha256": "9db3ed5d6ddbadda08ceb9b81a09db4bb50de3378048c1823249d0b8c682edeb",
+      "role": "Attributed critical-contour/Stokes-cylinder comparison. Authors explicitly do not complete their full nonperturbative-error proof; no YM complement estimate imported."
+    },
+    {
+      "id": "B39",
+      "url": "https://arxiv.org/pdf/0710.1930v1",
+      "title": "General properties of logarithmically divergent one-loop lattice Feynman integrals",
+      "authors": "Kim, Adams, Lee",
+      "root_read": "Primary web PDF complete main text \u00a7\u00a71\u20135, PDF pages1\u20136, including infrared and no-doublers qualifications; reference list also displayed. Version metadata checked independently.",
+      "role": "Attribution/comparison for log coefficient and finite part. Quantitative convergence and infrared/propagator hypotheses are not automatic, nor a depth-uniform or nonlinear YM estimate."
+    }
+  ],
+  "author_coverage_receipts": [
+    "checks/covariant_source_activity_primary.json",
+    "checks/uniform_one_loop_read_manifest.json"
+  ],
+  "scientific_premises_adopted": [],
+  "author_units": "COVARIANT_SOURCE_ACTIVITY_ASTRA.md and UNIFORM_ONE_LOOP_COUPLING_ASTRA.md remain under independent review.",
+  "full_text_policy": "No third-party full text or PDFs committed.",
+  "current_W_T0": {
+    "source_sha256": "eaf064445948aed7096e7d4e53c20ed4407d1c87458943feb52f3d7638f2e804",
+    "review_sha256": "29b66e03a01ba9d98613fc18ab978a770677a88d2219b0d7fb34db9f2197cd68",
+    "root_read_scope": "Complete253-line independent review; current784-line author source hash checked, not a whole-source review.",
+    "scope": "Conditional marked-class two-scale separation; common algebra, sharp-time and YM input obligations remain."
+  },
+  "documentation_updates": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LITERATURE_BRIDGES.md",
+      "before_sha256": "0026b07d09f94f69e5ab0faa5c393f84d2e892440c105286eedaa863894fe2cf",
+      "after_sha256": "cdbbf4aafbdb3a1f2865b48e17053686b1a72f81458f409d983a537b05d8dc8d"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSUMPTIONS_AND_IMPORTS.md",
+      "before_sha256": "7e81ca1e05375708d503871304971430d97ce38f7719680335d50314034da6d4",
+      "after_sha256": "8faeaa3b17a023c587ab411b4f55ade50dbd25ecfb1da878143a4891a6732492"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+      "before_sha256": "f6fed14a11c7263915a4d06736ca7c79d67214da4ed65270b77f5e5604796cf4",
+      "after_sha256": "6c1cfa4518c8df081d6a9892c8c9c2c4c7c0edbad3bf799fa4bc4b5b99559b59"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+      "before_sha256": "23cf2737c58d3e3178081c31aed44c583901678fc135b629bd862d652044774c",
+      "after_sha256": "888de2d30b79da33644cb95d0a3522ccf2554e3b68cb956cfae8b63ae67de998"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+      "before_sha256": "a8ec4031da6930be03e088b62af43b05bbc81d4af41fd6d8dedab56579e79613",
+      "after_sha256": "f440d7741dbad449c6dca06d632a394a0e703e18170158da028e72b1727b2eca"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "before_sha256": "14c97770f2ce6c0255590f6e4934218216da98ea3d3bcdd571809a39a70897b6",
+      "after_sha256": "e6e1d034f8522c682e07eff8423d4d041ba534b516fe9b7b568c58d16eaf5784"
+    }
+  ],
+  "legacy_PROOF_body_unchanged": true,
+  "mechanical_validation": {
+    "files": 9,
+    "local_artifact_links_checked": 392,
+    "vocabulary": {
+      "files": [],
+      "schema_version": 1,
+      "summary": {
+        "files_with_violations": 0,
+        "total_auto_correctable": 0,
+        "total_needs_human": 0
+      }
+    },
+    "whitespace": "pass",
+    "numerical_experiment": false
+  }
+}

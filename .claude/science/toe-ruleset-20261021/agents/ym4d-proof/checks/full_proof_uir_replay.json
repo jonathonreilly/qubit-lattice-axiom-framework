@@ -1,0 +1,38 @@
+{
+  "started_utc": "2026-10-29T12:14:54.681596+00:00",
+  "duration_seconds": 1.612,
+  "scope": "Coordinator reproduction of the independent reviewer check; not an additional independent derivation",
+  "source_revision": "962f97c259d8c241df632a07e27f498f4ad33b09",
+  "methodology_refreshed": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "methodology_change_from_review_pin": "Only docs/audit/data/dispatch_shadow_state.json changed; methodology sources are unchanged",
+  "command": [
+    "/usr/local/bin/python3",
+    "-B",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uir_01.py"
+  ],
+  "script_sha256": "01c8a1af12c08effda875233e3c37f2a39a93554deb44066da9277c9d695d02a",
+  "exit_code": 0,
+  "stderr_bytes": 0,
+  "stdout_exact_match": false,
+  "stdout_match_excluding_only_UTC_prefix_line": true,
+  "preserved_original_files": 28,
+  "preserved_historical_briefs": 9,
+  "preserved_continuation_artifacts": 19,
+  "review_report_sha256": "347b7ae680b2c305cc7bb5de8b4496d069bbea309a6df71f18109c54a22c4098",
+  "outputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_uir_replay_out.txt",
+      "sha256": "97a387d20006cb6880322d34e4a3fa605d825ac075c57885c97baa5aed230f3b"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_uir_replay_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "whole_proof_certified": false,
+  "whitespace_validation": {
+    "initial_full_staged_check": "Only trailing blanks in raw reviewer stdout and coordinator replay stdout",
+    "raw_output_policy": "Preserve captured bytes and their hashes; no output normalization in stored evidence",
+    "all_other_staged_paths": "git diff --cached --check passed"
+  }
+}

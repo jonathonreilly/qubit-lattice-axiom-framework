@@ -1,0 +1,17 @@
+Python 3.13.5; numpy 2.4.4; scipy 1.17.1
+Checks: 115; all numerical inequalities satisfied on the declared grid.
+Max Bessel/direct-Haar relative error: 1.11022e-15
+Max MGF/bound ratio (includes b=0 equality): 1
+Max fractional moment/Gamma bound ratio: 0.999998749988
+Tangent variance: (s, Haar quadrature, Bessel recurrence)
+(0.1, 0.24989589839412663, 0.2498958983941267)
+(1, 0.24019372387008972, 0.2401937238700899)
+(10, 0.08541853083236818, 0.08541853083236817)
+(100, 0.009850378800081556, 0.009850378800081565)
+(1000, 0.0009985003753754866, 0.000998500375375493)
+Pinned-output diagnostic: (t, X, exp(0.1 X), unconditional MGF bound)
+(1, 2, 1.2214027581601699, 1.1712139482105108)
+(10, 20, 7.38905609893065, 1.1712139482105108)
+(100, 200, 485165195.4097903, 1.1712139482105108)
+Peak RSS bytes: 79904768; limit: 1000000000; BLAS threads: 1
+No all-history, retained-output, or regeneration estimate tested.

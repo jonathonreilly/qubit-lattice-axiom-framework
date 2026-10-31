@@ -1,0 +1,126 @@
+{
+  "created_utc": "2026-10-29T19:59:44.576186+00:00",
+  "reviewer": "/root/review_soft_covariance",
+  "configuration_requested": {
+    "model": "gpt-6-astra",
+    "reasoning": "max",
+    "backend_independently_observable": false,
+    "new_fresh_context_for_followup": false
+  },
+  "scope": "Affected-only independent confirmation of Cartesian tensor boost norm correction, no full REC rereview.",
+  "disposition": "CORRECTION CONFIRMED",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REC_LIB.md",
+    "sha256": "90e38f069ee9d52c02bcef6024b579b95d752408267763cd6b446f96679f6533",
+    "bytes": 69248
+  },
+  "original_source": {
+    "revision": "8e9ab9cadbaa62f40beb7a64e68ff4c246d0011b",
+    "sha256": "79e570f5c21c0ceceb4dc076fabb1e7ce696afa1bbd4630da036456d3de53b13",
+    "bytes": 68974
+  },
+  "coordinator_fix": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_rec_tensor_fix.json",
+    "sha256": "7f58b96c737b0c42d6fe24220b2e4c53f4929830710fa0f9c6b3d925f944ecd8",
+    "bytes": 2363
+  },
+  "sole_exact_paragraph_replacement": true,
+  "prefix_5169_unchanged": true,
+  "prefix_5169_sha256": "8c90178454da5d5a19643cf615105d5aef6d4ebf2bde7650b64098602102809c",
+  "original_review": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_REC_LIB.md",
+    "sha256": "bc3e0605118496656b9757a2ab8008b22a24880dda4a495206f7a10c67f6c286",
+    "bytes": 27780,
+    "read_coverage": "Complete; original HOLD remains immutable against original source."
+  },
+  "source_read_ranges": [
+    {
+      "start": 112,
+      "end": 146,
+      "sha256": "aee5e8b007723cd697b8f35ab7c6859973a260a3395f96fe7e9ed28322bcc2e7",
+      "role": "Norm, component and Wick conventions"
+    },
+    {
+      "start": 203,
+      "end": 263,
+      "sha256": "037c5f89ac41d4a61847b763d71ebbed78c9b0f17b747cac10fef91c88a82869",
+      "role": "L-HILB translation and chain-rule dependency"
+    },
+    {
+      "start": 454,
+      "end": 569,
+      "sha256": "128d9119f287b1df1ff1f34ff81468030b03c5963689da9b4af54112fa0c009f",
+      "role": "Complete L-BOOST and L-LOCAL affected domain passages"
+    },
+    {
+      "start": 748,
+      "end": 823,
+      "sha256": "e87f3bf8c062207af3ea29b2a7a91dadf00baee2db0b7bcfdcee5e568cbb9523",
+      "role": "L-ID/SPEC and conditional L-GAP real-boost uses"
+    },
+    {
+      "start": 824,
+      "end": 915,
+      "sha256": "e758097df29ab7fbcf3f7c6d060546b3925e1331c9065b96c87179cb85f9d636",
+      "role": "Complete section15 tensor dictionary and quantitative bounds"
+    },
+    {
+      "start": 1036,
+      "end": 1068,
+      "sha256": "d82c06ec0fc9622df031d0dee9931f7bca7b9fd2d1d9bba188ad3e2962d53ed2",
+      "role": "Assembled conditional theorem and original E0-prime target remains open"
+    },
+    {
+      "start": 1174,
+      "end": 1216,
+      "sha256": "cdb87af2628e58422a8f634cff34c59a9877567b4dd671f1a7f055acfd022b88",
+      "role": "Open residue and consumer restrictions"
+    }
+  ],
+  "source_search": "All boost/Boost/r_max/tensor occurrences located; matching actual dependencies inspected. Search hits do not imply full-file reading.",
+  "original_chronology_reinvestigated": false,
+  "analytic_checks": [
+    "Exact induced1 column norm ||K(v)||1=||v||1",
+    "Complex exponential power-series bound",
+    "Tensor-product multiplicativity and direct-sum maximum",
+    "n-slot and rank-zero factors; coordinate-axis recovery",
+    "Inverse/transpose boost action",
+    "Exact rational log2 counterexample; corrected bound comparison",
+    "Unchanged Wick/reflection phase norms and finite rotation/component factors",
+    "No changes to dependent domain, conditional reconstruction or open-residue clauses"
+  ],
+  "scientific_numerical_execution": false,
+  "finite_test_counts_claimed": false,
+  "whole_library_certified": false,
+  "whole_PR_approval": false,
+  "formal_audit_performed": false,
+  "current_main_methodology": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "earlier_covariance_packet_preserved": true,
+  "new_findings": 0,
+  "earlier_norm_finding_resolved": true,
+  "remaining_open": [
+    "R-CONT",
+    "R-TENSOR beyond explicit Cartesian powers",
+    "R-SRC unconditional moment production",
+    "Actual Yang-Mills reconstruction/existence",
+    "Physical continuum mass gap"
+  ],
+  "mechanical_checks": {
+    "both_source_hashes_match": true,
+    "original_review_unchanged": true,
+    "receipt_links_resolve": true,
+    "prior_covariance_review_artifacts_unchanged": true
+  },
+  "report": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_REC_TENSOR_FIX_ASTRA.md",
+    "sha256": "2f1c4b3b863eba15d270fa56aa86f4dbe7e19c0ac9e165157cecc2f964b6f3ee",
+    "bytes": 5163
+  },
+  "coverage_limits": [
+    "No full REC source rereview",
+    "No independent review of original tool chronology",
+    "No REC_LIB_LOG or original external literature reread",
+    "No actual Yang-Mills producer validation",
+    "No combined pipeline or integration operations"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "finding": "SEA-CONTROL-01",
+  "disposition": "resolved by additive corrected runner",
+  "all_16_subset_moments_independently_reconstructed": true,
+  "zero_empty_mass_and_four_reference_violations_without_division": true,
+  "original_frozen_author_replay_identical": true,
+  "five_other_groups_and_previous_z2_fields_identical": true,
+  "source_hashes": {
+    "source_sea_check.py": "5b7ceb26a0129b77711529c033b6f6b2bfde590142b1dc5d873658dfc27c2731",
+    "source_sea_check_v2.py": "e726f9f6fb717039f61780fca4a57ccbe2cdcbfa2740a4404244d315f47506f7",
+    "source_sea_run_02.json": "52d3b95cdb0749d476e33a36ec79c25d4dfc424e58f23503c211bca6b7c9837b",
+    "source_sea_run_03.json": "47f5c4783a2d939913410777f3b41a07d262ad2b9ac5ba2413f823e115f921b2",
+    "source_sea_control_fix_receipt.json": "1b51ddab8f80e5a61865e7148ee333b5881049c551451c84779b07ade43f0149"
+  },
+  "scope": "generic probability-law counterexample only; the Wilson theorem uses a different tilted RP hypothesis"
+}

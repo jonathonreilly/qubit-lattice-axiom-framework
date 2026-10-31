@@ -1,0 +1,21 @@
+A Lemma TL: samples (total, in principal domain) per N: {2: (2203, 2201), 3: (2203, 729), 4: (2204, 60)}
+A worst: ||e^TL-U||=1.00e-11 |trTL|=7.89e-15 max||1-U||_HS/|TL|_HS=1.000000
+  A1 PASS
+  A2 PASS
+  A3 PASS
+  A4 PASS
+  A5 PASS
+  A6 PASS
+B1 HS-net bound >= exact: PASS (min bound/exact = 103)
+B2 HS (Gaussian-xi) bound >= exact: PASS (min bound/exact = 21.9)
+B3 net: 34 points (<=125), min_v max_u <u,v> = 0.87439 (>= 0.875; tol 1e-3): PASS
+B4 negative control (prefactor-1 bound violated somewhere): PASS (violated, discriminating)
+B5 Gaussian CGF MC 23.11828 vs exact 24.16729 (3se = 2.62484): ok; threshold crossing |lhs-rhs| = 0.0e+00: ok
+  B5 PASS
+C1 smallest N with 11N^2/(6pi^2(N-1)) > 6.8928: N = 37: PASS
+C2 smallest N (alpha, t): {'1/(2N),t=0.5': 594, '1/(2N),t=0.01709': 507955, '1/(2(N-1)),t=0.5': 593, '1/(2(N-1)),t=0.01709': 507954}: PASS
+C3 sup x^{p/2}e^{-(a-a')x} closed form (log, rel err 6.0e-16): PASS
+C4 INH: theta<pi/6 and 2sin(theta/(2L^2)) > c_1 eps_1 on grids (L=3,5); min ratio 1.001000: PASS
+C5 descent depth m_tau (L=3) for C_I=1,1.5,2: {1.0: 3, 1.5: 4, 2.0: 5} (informational)
+C6 log((2n_c+1)^4 a) = 30.40 > log(3 kappa eps) = -1.56: PASS
+SUMMARY: ALL PASS

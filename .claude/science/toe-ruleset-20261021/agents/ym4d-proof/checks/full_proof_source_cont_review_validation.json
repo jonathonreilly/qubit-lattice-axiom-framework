@@ -1,0 +1,148 @@
+{
+  "utc": "2026-10-29T15:11:32.401490+00:00",
+  "scope": "Completed scoped source-return continuation review and confirmed narrow mass-unit orientation correction; full existence and physical gap remain open",
+  "staged_paths_before_record": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/APPROACH_REGISTRY.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_CONSTRUCTION_ASTRA.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_SOURCE_RETURN_CONTINUATION_ASTRA.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SESSION25_RESULTS.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_massgap_orientation_fix.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_source_cont_review_replay.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_source_cont_review_replay_err.txt",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_source_cont_review_replay_out.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_attempt01.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_attempt01.stderr",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_attempt01_failure.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_attempt02.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_attempt02.stderr",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_author_mutations.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_author_mutations.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_author_mutations.stderr",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_coverage.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_history_reviewed.diff",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_independent.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_independent_02.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_links_reviewed.diff",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_mutant_action_prefactor.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_mutant_action_prefactor.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_mutant_action_prefactor.stderr",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_mutant_ball_scalar_dimension.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_mutant_ball_scalar_dimension.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_mutant_ball_scalar_dimension.stderr",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_mutant_jacobian.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_mutant_jacobian.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_mutant_jacobian.stderr",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_mutant_normalization.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_mutant_normalization.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_mutant_normalization.stderr",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_mutant_orientation.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_mutant_orientation.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_mutant_orientation.stderr",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_mutant_remote_endpoint.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_mutant_remote_endpoint.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_mutant_remote_endpoint.stderr",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_mutant_source_force.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_mutant_source_force.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_mutant_source_force.stderr",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_mutant_sphere_radius.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_mutant_sphere_radius.py",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_mutant_sphere_radius.stderr",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_prestate.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_prior_proof_metadata.diff",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_receipt.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_report_write_failure.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_reuse.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_validation.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_validation_attempt01_failure.json"
+  ],
+  "vocabulary_files": 7,
+  "vocabulary_violations": 0,
+  "vocabulary_report_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+  "full_staged_whitespace_exit": 2,
+  "full_staged_whitespace_stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_history_reviewed.diff:8: trailing whitespace.\n+ \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_history_reviewed.diff:26: trailing whitespace.\n+ \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_links_reviewed.diff:8: trailing whitespace.\n+ \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_links_reviewed.diff:22: trailing whitespace.\n+ \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_prior_proof_metadata.diff:90: trailing whitespace.\n+ \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_prior_proof_metadata.diff:92: trailing whitespace.\n+ \n.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_prior_proof_metadata.diff:92: new blank line at EOF.\n",
+  "full_staged_whitespace_stderr": "",
+  "exact_frozen_raw_diff_exceptions": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_history_reviewed.diff",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_links_reviewed.diff",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_cont_prior_proof_metadata.diff"
+  ],
+  "all_other_paths_whitespace_exit": 0,
+  "exception_reason": "Preserve exact hashed reviewer diffs, including literal blank context lines. No formatting mutation of frozen evidence.",
+  "post_status_edit_prior_range_confirmation": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "whole_current_sha256": "0c683d808c3a56b998e707bcc5ffd45d9c3dbec151d1a45bcf670ed6a50110b1",
+      "current_first_line": 1476,
+      "range_sha256": "8d22bbd29841a0f49e2d303ccc0365ea01dc05e60e2a1bef09e3d1380bc30585"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "whole_current_sha256": "0c683d808c3a56b998e707bcc5ffd45d9c3dbec151d1a45bcf670ed6a50110b1",
+      "current_first_line": 2856,
+      "range_sha256": "d2e36a705ab2fca6c8659ee8e63cfaea1278f2334a2e6175b2128ebd14a4e72a"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "whole_current_sha256": "0c683d808c3a56b998e707bcc5ffd45d9c3dbec151d1a45bcf670ed6a50110b1",
+      "current_first_line": 3056,
+      "range_sha256": "f6d9ae025304ccc9e2946db53c02784de9057776eab17892bbce376a727fa118"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "whole_current_sha256": "0c683d808c3a56b998e707bcc5ffd45d9c3dbec151d1a45bcf670ed6a50110b1",
+      "current_first_line": 3336,
+      "range_sha256": "952f534a7b0a472abd875bbd836057381837ea6d0636151b6c601e52a44e35fd"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "whole_current_sha256": "0c683d808c3a56b998e707bcc5ffd45d9c3dbec151d1a45bcf670ed6a50110b1",
+      "current_first_line": 5516,
+      "range_sha256": "512097808f5d6a9d1877e1d0ea4ede875d5c9cece47275926175a56b613dead2"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_SRC2.md",
+      "whole_current_sha256": "b817b7a8639c0585628cdadb169c80bb3fc3ff4afb22cbd76539c15fc695938e",
+      "current_first_line": 22,
+      "range_sha256": "7c83a0769af7945f59865a64784589538e62bc625f61e2b6ae7b30b52f362774"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_SRC2.md",
+      "whole_current_sha256": "b817b7a8639c0585628cdadb169c80bb3fc3ff4afb22cbd76539c15fc695938e",
+      "current_first_line": 108,
+      "range_sha256": "a199ce469438c4c51f7c804a579c71dc332e0e3afe78a1002054ed4e0dbddd87"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_B2.md",
+      "whole_current_sha256": "d7baa377f386e6a6800e6056b87fdaf89b3811dd3845b958050a2176420108ed",
+      "current_first_line": 116,
+      "range_sha256": "ce33d8fef555a0ffa4444c3669d95a865835f4045a1289074eb63fe3c098bbc1"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SRC2_55.md",
+      "whole_current_sha256": "66206a0bc13e5c4c264136abb0aa8a5620e66958a561fc7c0fcee4ff3989676c",
+      "current_first_line": 389,
+      "range_sha256": "30f44cfad0e2b2c58fee8e5054a6421c6d8e81d5ce4549f9030168bbb1747e1e"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SRC2_55.md",
+      "whole_current_sha256": "66206a0bc13e5c4c264136abb0aa8a5620e66958a561fc7c0fcee4ff3989676c",
+      "current_first_line": 650,
+      "range_sha256": "10b0c38d2333f167eb14bc1eb5fd96b4bcbff34578416bb03d75b08da4e26422"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SRC2_55.md",
+      "whole_current_sha256": "66206a0bc13e5c4c264136abb0aa8a5620e66958a561fc7c0fcee4ff3989676c",
+      "current_first_line": 687,
+      "range_sha256": "d41fffb0d24b48a36170435c9ac45df194fc161e612828add28a83744ac6539d"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/B2_55.md",
+      "whole_current_sha256": "b178059680f29adc5f4bdac0b07621c2f1697047364cdde0f5963cf25040164d",
+      "current_first_line": 335,
+      "range_sha256": "20c43358b310ed3ccb4bf5dcea97547e5cecf6d8b0c69512bc0819a708213276"
+    }
+  ],
+  "remaining_mass_unit_work": "Independent checker repair for two surviving cycle-transfer mutations and final review; source derivation unchanged apart from confirmed orientation clarification."
+}

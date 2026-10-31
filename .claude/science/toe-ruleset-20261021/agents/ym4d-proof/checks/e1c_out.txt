@@ -1,0 +1,17 @@
+e1c_largefield_posthoc.py -- POST-HOC. No pre-registered verdict.
+Large-field region size: PROOF l.4307 density ~ L^{4(K-k)} e^{-ε_1²/(4N g_k²)} (rate RLARGE l.943).
+
+(1) at the ε-DRIVEN coupling ceiling g²_CRC(x82):
+   E_t  g_K² = 1.9335E-96     ε_1²/(4Ng²) = 2.90218E+16    levels K-k affordable = 16.46
+   E_p  g_K² = 3.7936E-106    ε_1²/(4Ng²) = 2.90218E+16    levels K-k affordable = 16.46
+   -> the suppression exponent is EXACTLY invariant: True
+
+(2) at the ε-INDEPENDENT binding ceiling g_DX² = 2.456e-152/C_Ω (C_Ω = 1):
+   E_t  ε_1²/(4Ng²) = 2.28471E+72     levels K-k affordable ≈ 1.1971332703436796987616483791672196394432861743978E+72  (log10 72.36)
+   E_p  ε_1²/(4Ng²) = 4.48276E+62     levels K-k affordable ≈ 2.3488588849092453499234202125614609171476169933981E+62  (log10 62.65)
+   -> falls by 9.707 decades; the wrap requirement is ~205 levels, so the margin is
+      60.06 decades of levels at E_p.
+
+(3) per-cube large-field weight e^{-ε_1²/(4Ng²)} at the DX' coupling:
+   E_t  log10 of the weight = -9.92250E+71
+   E_p  log10 of the weight = -1.94686E+62

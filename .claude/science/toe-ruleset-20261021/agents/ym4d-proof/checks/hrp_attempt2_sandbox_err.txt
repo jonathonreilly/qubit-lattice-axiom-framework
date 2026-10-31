@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics/.claude/worktrees/ym4d-hrp/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_exact.py", line 549, in <module>
+    status = main()
+  File "/Users/jonreilly/Projects/Physics/.claude/worktrees/ym4d-hrp/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_exact.py", line 499, in main
+    require(os.getpriority(os.PRIO_PROCESS, 0) >= 10, 'nice level >=10')
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics/.claude/worktrees/ym4d-hrp/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/hrp_exact.py", line 47, in require
+    raise AssertionError(label)
+AssertionError: nice level >=10

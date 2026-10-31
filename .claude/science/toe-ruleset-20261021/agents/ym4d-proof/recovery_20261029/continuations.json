@@ -1,0 +1,286 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-10-29T11:17:15.445430+00:00",
+  "recovery_commit": "aeb7c2a6f00b00042b77ac4f7ba6151f7297f7a6",
+  "status": "Three bounded continuations completed; full T_OS remains open",
+  "scientific_status": "Conditional author support; independent review pending. No authority/audit verdict changed.",
+  "workers": [
+    {
+      "agent": "/root/alignment_continuation",
+      "status": "completed",
+      "role": "bounded continuation author",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "max",
+      "fork_turns": "none",
+      "runtime_evidence": "Coordinator collaboration.spawn_agent dispatch and completion messages; not a cross-family review receipt",
+      "artifacts": [
+        {
+          "path": "RECOVERY_ALIGNMENT_ASTRA.md",
+          "bytes": 28078,
+          "sha256": "c58b51c8d19a87f473e0ecc86d582919ff7962417357db7b7c65eb83f2073fb4"
+        },
+        {
+          "path": "checks/recovery_align_exact.py",
+          "bytes": 6451,
+          "sha256": "72fbf46b0563a0246240f26d7802294911a00131b047ad1b82823eb1f0aebefa"
+        },
+        {
+          "path": "checks/recovery_align_exact_criteria.md",
+          "bytes": 2542,
+          "sha256": "36da67f0eb3a605f4cb92e169c21c76ab90da082b484a8edfa4208a9744f44bc"
+        },
+        {
+          "path": "checks/recovery_align_exact_err.txt",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "checks/recovery_align_exact_out.txt",
+          "bytes": 942,
+          "sha256": "0c586f808eb0af726653c0aedc5fbca2a42f29e1d5900746d223128004989187"
+        },
+        {
+          "path": "checks/recovery_align_source_receipt.json",
+          "bytes": 1838,
+          "sha256": "ee9026abb625ea92e821536a9e47c4e7916acb4bf2322dc8b133c6b08daf3b0d"
+        }
+      ]
+    },
+    {
+      "agent": "/root/uir_continuation",
+      "status": "completed",
+      "role": "bounded continuation author",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "max",
+      "fork_turns": "none",
+      "runtime_evidence": "Coordinator collaboration.spawn_agent dispatch and completion messages; not a cross-family review receipt",
+      "artifacts": [
+        {
+          "path": "RECOVERY_UIR_ASTRA.md",
+          "bytes": 35284,
+          "sha256": "0cbb4f9a967022ab669cae087617f390b2bfb481034012aac85e7cfc9928bc40"
+        },
+        {
+          "path": "checks/recovery_uir_01.py",
+          "bytes": 3724,
+          "sha256": "ae6539a9c160cf693b9f77283e9168b76ea205aef94cefa4ab2c323a08f119c3"
+        },
+        {
+          "path": "checks/recovery_uir_01_criteria.md",
+          "bytes": 1865,
+          "sha256": "a6a9c59121d33eb197de8c38108279660efbcb924d14f89b61b552cdc5137306"
+        },
+        {
+          "path": "checks/recovery_uir_01_err.txt",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "checks/recovery_uir_01_out.txt",
+          "bytes": 1965,
+          "sha256": "b460fee76555f9b1f73d927d05fe6b16cfc413ac1b54e5c542c7347081190e4b"
+        },
+        {
+          "path": "checks/recovery_uir_02.py",
+          "bytes": 2977,
+          "sha256": "b14a9406e00520826d40dfa4b6ed6d34a0a3a7307af053afad4568a444568a29"
+        },
+        {
+          "path": "checks/recovery_uir_02_criteria.md",
+          "bytes": 1195,
+          "sha256": "1b2220fac847a70bc20e3274751bd78dcba49d09bc1ce38f275c5ecaeb555f0a"
+        },
+        {
+          "path": "checks/recovery_uir_02_err.txt",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "checks/recovery_uir_02_out.txt",
+          "bytes": 875,
+          "sha256": "e4a955c54e6143491c536a8080e43250e2173b3bcc1e26c5c6c7f9cad8b80778"
+        }
+      ]
+    },
+    {
+      "agent": "/root/cluster_repair",
+      "status": "completed",
+      "role": "bounded continuation author",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "max",
+      "fork_turns": "none",
+      "runtime_evidence": "Coordinator collaboration.spawn_agent dispatch and completion messages; not a cross-family review receipt",
+      "artifacts": [
+        {
+          "path": "RECOVERY_CLUSTER_ASTRA.md",
+          "bytes": 34277,
+          "sha256": "2c4a9abd12082f756a82ab94999757abd2ebc64950f957ce47ab0a049da2e04f"
+        },
+        {
+          "path": "checks/recovery_cluster_exact.py",
+          "bytes": 11068,
+          "sha256": "5f51587d7f1630f6db15fef1dd697340a096839808ea00941b751a12bd70f0e6"
+        },
+        {
+          "path": "checks/recovery_cluster_receipt.json",
+          "bytes": 6103,
+          "sha256": "d8e2a3fcbb99d85364408fa718f9e4a225bd9a05f96f3b5ec96e9c2a724e7d65"
+        },
+        {
+          "path": "checks/recovery_cluster_results.json",
+          "bytes": 2120,
+          "sha256": "32cd636afae7bf554020db1903051c7efac9357c681f59816e8e2345d1be4239"
+        }
+      ]
+    }
+  ],
+  "source_preservation": {
+    "original_files": 28,
+    "historical_briefs": 9,
+    "all_sha256_match": true
+  },
+  "script_replays": [
+    {
+      "script": "checks/recovery_align_exact.py",
+      "script_sha256": "72fbf46b0563a0246240f26d7802294911a00131b047ad1b82823eb1f0aebefa",
+      "started_at_utc": "2026-10-29T11:09:38.707511+00:00",
+      "duration_seconds": 0.853,
+      "python": "3.12.8",
+      "exit_code": 0,
+      "stdout_exact_match": true,
+      "stdout_match_excluding_UTC_line": true,
+      "comparison_rule": "Ignore only lines starting UTC: for the second comparison; preserve full outputs",
+      "stderr_bytes": 0,
+      "scope": "Coordinator same-script replay, not independent mathematical verification"
+    },
+    {
+      "script": "checks/recovery_cluster_exact.py",
+      "script_sha256": "5f51587d7f1630f6db15fef1dd697340a096839808ea00941b751a12bd70f0e6",
+      "started_at_utc": "2026-10-29T11:11:25.675946+00:00",
+      "duration_seconds": 0.05,
+      "python": "3.12.8",
+      "exit_code": 0,
+      "stdout_exact_match": true,
+      "stderr_bytes": 0,
+      "scope": "Coordinator same-script replay, not independent mathematical verification"
+    },
+    {
+      "script": "checks/recovery_uir_01.py",
+      "script_sha256": "ae6539a9c160cf693b9f77283e9168b76ea205aef94cefa4ab2c323a08f119c3",
+      "started_at_utc": "2026-10-29T11:09:38.707714+00:00",
+      "duration_seconds": 0.023,
+      "python": "3.12.8",
+      "exit_code": 0,
+      "stdout_exact_match": false,
+      "stdout_match_excluding_UTC_line": true,
+      "comparison_rule": "Ignore only lines starting UTC: for the second comparison; preserve full outputs",
+      "stderr_bytes": 0,
+      "scope": "Coordinator same-script replay, not independent mathematical verification"
+    },
+    {
+      "script": "checks/recovery_uir_02.py",
+      "script_sha256": "b14a9406e00520826d40dfa4b6ed6d34a0a3a7307af053afad4568a444568a29",
+      "started_at_utc": "2026-10-29T11:09:38.708341+00:00",
+      "duration_seconds": 0.026,
+      "python": "3.12.8",
+      "exit_code": 0,
+      "stdout_exact_match": false,
+      "stdout_match_excluding_UTC_line": true,
+      "comparison_rule": "Ignore only lines starting UTC: for the second comparison; preserve full outputs",
+      "stderr_bytes": 0,
+      "scope": "Coordinator same-script replay, not independent mathematical verification"
+    }
+  ],
+  "replay_artifacts": [
+    {
+      "path": "recovery_20261029/continuation_reruns/recovery_align_exact.json",
+      "bytes": 548,
+      "sha256": "2dd5b5681aaa1af8ea89d97566d9ff2c44fbaf6334df2eb663467325cd909b9c"
+    },
+    {
+      "path": "recovery_20261029/continuation_reruns/recovery_align_exact.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovery_20261029/continuation_reruns/recovery_align_exact.stdout.txt",
+      "bytes": 942,
+      "sha256": "0c586f808eb0af726653c0aedc5fbca2a42f29e1d5900746d223128004989187"
+    },
+    {
+      "path": "recovery_20261029/continuation_reruns/recovery_cluster_exact.json",
+      "bytes": 401,
+      "sha256": "f1f15c1ae47c6dbab7b247f915304d5f3483e8a286f8cd9d52c8873a153ce257"
+    },
+    {
+      "path": "recovery_20261029/continuation_reruns/recovery_cluster_exact.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovery_20261029/continuation_reruns/recovery_cluster_exact.stdout.txt",
+      "bytes": 2120,
+      "sha256": "32cd636afae7bf554020db1903051c7efac9357c681f59816e8e2345d1be4239"
+    },
+    {
+      "path": "recovery_20261029/continuation_reruns/recovery_uir_01.json",
+      "bytes": 544,
+      "sha256": "8942879c81da64ed2ec8a0528582883753a50d21d72f42a0850a0230fbd26163"
+    },
+    {
+      "path": "recovery_20261029/continuation_reruns/recovery_uir_01.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovery_20261029/continuation_reruns/recovery_uir_01.stdout.txt",
+      "bytes": 1965,
+      "sha256": "dcccab69aa5ba8b94c0477661a9536107ce707794c4791872db704a59762ed3e"
+    },
+    {
+      "path": "recovery_20261029/continuation_reruns/recovery_uir_02.json",
+      "bytes": 544,
+      "sha256": "fcd0639693dd6108f240ad29e8521e04892c8c88135648bee79bd2ddf420a538"
+    },
+    {
+      "path": "recovery_20261029/continuation_reruns/recovery_uir_02.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovery_20261029/continuation_reruns/recovery_uir_02.stdout.txt",
+      "bytes": 875,
+      "sha256": "20027ada47b9401d6096c76c899877bf3cb37d5decf26e06d5faf39d5d7d19db"
+    }
+  ],
+  "shared_summary_outputs": [
+    {
+      "path": "HANDOFF.md",
+      "bytes": 13236,
+      "sha256": "1f502d00bef032face1bbf32285b81cd9556e0144c74caee86c0316d6bb6db79"
+    },
+    {
+      "path": "PROOF.md",
+      "bytes": 765055,
+      "sha256": "c02d86c5363f2ae76b585240b1d96d4f70653bf02505bc641884984f57122e3a"
+    },
+    {
+      "path": "SESSION25_RESULTS.md",
+      "bytes": 196663,
+      "sha256": "5bc9c5031c1e5dd2fa5242572023cdee794c062bb45fb8d47b8853931b937375"
+    },
+    {
+      "path": "recovery_20261029/README.md",
+      "bytes": 4021,
+      "sha256": "7f55dbeefd99329cdccfd6b65719df6d5351b8bfbe74bfd90d22e0e5d62b984c"
+    }
+  ],
+  "coordinator_review_scope": "Read proposed arguments and their limitations, checked exact outputs and scoped claims; this is not an independent end-to-end mathematical certification.",
+  "validation": {
+    "vocabulary_lint": "23 authored/continuation files; zero violations; continuation_vocab.json",
+    "review_type": "Source reconciliation, author continuations and finite exact controls; no full-theorem PASS",
+    "new_artifact_count": 19,
+    "whitespace": "git diff --cached --check passed for the 37-file continuation commit; recovered historical raw evidence is unchanged."
+  },
+  "source_receipt_semantics": "Workers hash source bytes at read time. Shared summary surfaces are subsequently updated by the coordinator; historical source hashes are not final-file assertions."
+}

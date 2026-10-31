@@ -1,0 +1,297 @@
+{
+  "schema_version": 1,
+  "role": "fresh-context same-family independent source review",
+  "created_utc": "2026-10-30T02:17:10.634567+00:00",
+  "source_records": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+      "sha256": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8",
+      "line_count": 564,
+      "read_ranges": [
+        [
+          1,
+          564
+        ]
+      ],
+      "coverage": "Complete independent mathematical and scope review; sole reviewed author unit."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROBABILITY_SENSITIVE_RETURN_ASTRA.md",
+      "sha256": "6ef027d54bd0ca1948444c9b82c673ed0cae2e23cd59b25f0c53498194e9b18b",
+      "line_count": 544,
+      "read_ranges": [
+        [
+          1,
+          544
+        ]
+      ],
+      "coverage": "Complete read; actual original model/chart, local coefficient regulator, normalization, boundary identities and open target."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "line_count": 568,
+      "read_ranges": [
+        [
+          1,
+          511
+        ]
+      ],
+      "coverage": "Actual lift, Haar/tree quotient, flat-brick gap, finite-u spread/Haar Hessian and force, joint local analytic bounds, critical-branch distinction, normalization and G/chart margins. Later evidence/summary not reviewed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "line_count": 722,
+      "read_ranges": [
+        [
+          1,
+          374
+        ],
+        [
+          508,
+          633
+        ]
+      ],
+      "coverage": "Actual finite-u phase, full original-reader inverse atoms and incidence algebra, real-V/complex-source critical branch, fixed sector, coefficient bounds, G/Omega margins and exact complement. Selected-sector forest proof and evidence not reviewed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "line_count": 617,
+      "read_ranges": [
+        [
+          1,
+          340
+        ]
+      ],
+      "coverage": "Original conditional law, compact group and word geometry, CS15/16 normalizer including degenerate means; no interacting tail theorem inserted into Gaussian estimates. Read portion of conditional-tail setup not consumed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FIXED_SOURCE_RADIUS_ASTRA.md",
+      "sha256": "6304245bdf27afa6c7f364da9bc41d8971cc0f2058c1e3484edef84df44cff86",
+      "line_count": 627,
+      "read_ranges": [
+        [
+          75,
+          177
+        ]
+      ],
+      "coverage": "FR5-FR9 finite-contour normalization, side/corner chains and polynomial-only whole-Gaussian comparison; no independent confirmation of its later forest theorem."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD.md",
+      "sha256": "a60232a648e9832d0223cc0fa06ef84d8dbfe54fa91f875a8c96c3f89140aba5",
+      "line_count": 1037,
+      "read_ranges": [
+        [
+          815,
+          925
+        ]
+      ],
+      "coverage": "R15-R17 product-reference consumer and exact limitation; subsequent hole support paragraphs read as context, not consumed. No whole-RD review."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/INTERACTING_SELECTED_CORE_ASTRA.md",
+      "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "line_count": 790,
+      "read_ranges": [
+        [
+          22,
+          114
+        ],
+        [
+          129,
+          314
+        ]
+      ],
+      "coverage": "Domain comparison only: original source-free finite-u phase, IC3 complex-V domain, original-reader parametrix and IC12 critical branch. No joint-source theorem inferred; no later interacting result reviewed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "line_count": 812,
+      "read_ranges": [
+        [
+          312,
+          376
+        ],
+        [
+          637,
+          710
+        ]
+      ],
+      "coverage": "Consumed INV/PR/NZ local single-normalizer proofs and relevant S5-S7 corrections; surrounding historical claims incidentally displayed, not used as evidence. No complete STEP55 review or GMI consumption."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "sha256": "203d4edbf97078d88fcb488f164e525d2671fe5a2a910c5f6e49f615e8f41bfe",
+      "line_count": 266,
+      "read_ranges": [
+        [
+          1,
+          140
+        ]
+      ],
+      "coverage": "Scope comparison: explicit u-stripped tree phase, all-mode convention. Its linear data-kernel theorem and evidence are not consumed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "line_count": 11,
+      "read_ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "coverage": "Complete owner process."
+    }
+  ],
+  "methodology": [
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "line_count": 193
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "line_count": 35
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e9848f8ff826e50a7e2b7ca0bd9de3b8ff3a3bc6b924351017ab7a5804401c23",
+      "line_count": 370
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "line_count": 96
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "61eb470315fc4452d71a00c6921b869b7e4547494458f8a696a260d38c8a9a14",
+      "line_count": 183
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "4122bdc5f33f6fb562a6a8621fec151379e849934428fc4a772e8e3c61a8df85",
+      "line_count": 248
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "line_count": 140
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "line_count": 394
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "line_count": 93
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "line_count": 434
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "line_count": 336
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "line_count": 309
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "line_count": 126
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "line_count": 130
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "line_count": 233
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "line_count": 52
+    }
+  ],
+  "methodology_boundary": "Selected immutable coordinator-supplied main revision controls; installed skills were initial routing and differ from this source revision. Bounded follow-up reads repaired truncated combined output.",
+  "author_evidence_read_after_findings_freeze": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_receipt.json",
+      "sha256": "e00a605790f290f6ecdc95e4cf1cdc2c85630ecefce6b7029d846f1d0d17de69",
+      "line_count": 52,
+      "coverage": "Complete read after the independent mathematical findings freeze."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_read_manifest.json",
+      "sha256": "35be410ae0b57a82e902d5030066fd902a3b8ea69830c8507cc5d8392a9758f0",
+      "line_count": 246,
+      "coverage": "Complete read after the independent mathematical findings freeze."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_author_correction.json",
+      "sha256": "6f35b06fd5ee6be5a98e9fba31b14583691772dedd41a30cda818d4c4849ebb0",
+      "line_count": 11,
+      "coverage": "Complete read after the independent mathematical findings freeze."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "line_count": 9,
+      "coverage": "Complete read after the independent mathematical findings freeze."
+    }
+  ],
+  "primary_literature": [
+    {
+      "url": "https://arxiv.org/html/1411.1107v1",
+      "version": "v1",
+      "read_scope": "Direct web reading: Theorem 1, analytic norm (11), stability condition (12), Remark 2; section 2.1.3 forest formula, section 2.1.4 parameter derivatives; Proposition 3 proof and Remark 10. Rendered proof windows 162-209, 324-381, 795-947. Initial introduction/find snippets were routing only. No whole-paper claim.",
+      "role": "Attribution and actual-step comparison; no theorem imported as proof."
+    }
+  ],
+  "not_consumed": [
+    "Author mathematical check assertions as proof",
+    "Previous independent-review verdicts",
+    "POSITIVE_READER_COVARIANCE_ASTRA.md and its review",
+    "Concurrent joint critical-center candidate",
+    "Predecessor numerical checkers or outputs",
+    "Outside-chart or all-history estimates"
+  ],
+  "numerical_experiments": [],
+  "coverage_limit": "Only CHART_BOUNDARY_FOREST_ASTRA.md receives a full source verdict; dependencies are checked at the consumed ranges and uses. No wholesale re-review of their unrelated conclusions.",
+  "git_snapshot_at_final_check": "640788a8a0816ed63f3d8e1abf57137fb0687e89",
+  "starting_head_reported_by_coordinator": "97e5a0329f86c8f7581da7878243e3309e657d0f",
+  "git_boundary": "Coordinator changed the shared head; this reviewer performed no Git mutations and verifies unchanged reviewed bytes. This is not a whole-PR/head landing verdict."
+}

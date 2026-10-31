@@ -1,0 +1,19 @@
+A: max fixed-point iterations 7
+A1 PASS | max antiherm/trace 1.5e-17, |X0-XR| 7.8e-18, max ascent gap 0.0e+00
+A2 PASS | max stationarity residual 2.4e-16, max |X0-Ybar|/(9.2y^2) 0.000, max |X0|/(3y) 0.316
+A3 FAIL | CR defect X0: max 4.97e-09; phi: max 4.27e-04; control (real map): min 3.884e-06 median 3.407e-04 max 4.017e-03
+A4 PASS | real phi agreement 4.7e-16; local bound ratio max 0.010; global |Delta|/(theta s) max 0.0011
+A5 kappa*u=20: |I1-I2|/|I2| = 3.874e-04 (limit 9.944e-02) ok; |I2/I0-1| = 1.768e-05 (theta = 2.461e-02)
+A5 kappa*u=80: |I1-I2|/|I2| = 1.508e-03 (limit 2.799e-01) ok; |I2/I0-1| = 1.786e-05 (theta = 2.461e-02)
+B1 PASS | max |det V - 1|, |tr H| = 1.3e-15
+B2 PASS | max ||H||/||Y|| = 1.000 (bound 4.19); max ||V - e^X||/||Y|| = 0.005 (bound 9.2)
+B3 (info) max ||H - iY|| / (||X|| ||Y|| + ||Y||^2) = 0.998
+C N=2 C_S=1e+00: C_loc=40.0 C'_AE=160 C_nat=12.65 C_e=1.883e+04 C_2=5.549e+07 eps_M=6.931e-06 C_M=66.06 | eta_AE=1.776e-15 eps~=5.33e-07 closing 12.1367<=12.6491 | C_cone=1.13e+15 | Z-all True, eta<=eps_M^2/C'_AE True
+C N=2 C_S=1e+02: C_loc=40.0 C'_AE=160 C_nat=12.65 C_e=1.883e+04 C_2=5.753e+07 eps_M=6.931e-06 C_M=66.06 | eta_AE=1.776e-15 eps~=5.33e-07 closing 12.2225<=12.6491 | C_cone=1.13e+15 | Z-all True, eta<=eps_M^2/C'_AE True
+C N=2 C_S=1e+04: C_loc=40.0 C'_AE=160 C_nat=12.65 C_e=1.883e+04 C_2=7.791e+07 eps_M=6.931e-06 C_M=66.06 | eta_AE=8.882e-16 eps~=3.77e-07 closing 12.1197<=12.6491 | C_cone=2.25e+15 | Z-all True, eta<=eps_M^2/C'_AE True
+C N=3 C_S=1e+00: C_loc=40.0 C'_AE=240 C_nat=15.49 C_e=3.360e+04 C_2=1.065e+08 eps_M=6.931e-06 C_M=66.06 | eta_AE=8.882e-16 eps~=4.62e-07 closing 15.1736<=15.4919 | C_cone=2.25e+15 | Z-all True, eta<=eps_M^2/C'_AE True
+C N=3 C_S=1e+02: C_loc=40.0 C'_AE=240 C_nat=15.49 C_e=3.360e+04 C_2=1.101e+08 eps_M=6.931e-06 C_M=66.06 | eta_AE=8.882e-16 eps~=4.62e-07 closing 15.2818<=15.4919 | C_cone=2.25e+15 | Z-all True, eta<=eps_M^2/C'_AE True
+C N=3 C_S=1e+04: C_loc=40.0 C'_AE=240 C_nat=15.49 C_e=3.360e+04 C_2=1.465e+08 eps_M=6.931e-06 C_M=66.06 | eta_AE=4.441e-16 eps~=3.26e-07 closing 15.0862<=15.4919 | C_cone=4.50e+15 | Z-all True, eta<=eps_M^2/C'_AE True
+C1 PASS | C2 PASS
+OVERALL: FAIL (hard: A1=PASS, A2=PASS, A3=FAIL, A4=PASS, B1=PASS, B2=PASS, C1=PASS, C2=PASS; soft A5: True)
+runtime 2.2 s

@@ -1,0 +1,8 @@
+start 02:44:37 load: { 3.83 3.70 3.65 }
+System-wide memory free percentage: 37%
+end 02:49:45 load: { 2.41 3.08 3.39 }
+      308.13 real       304.20 user         1.48 sys
+           604160000  maximum resident set size
+lock: waited from 02:28 UTC (held by another process); acquired 02:44:37 UTC (mkdir), released 02:49:45 UTC (rmdir, once,
+no trap); this run only (no smoke run). nice 10; OMP/OPENBLAS/MKL/VECLIB threads 1; python3 without -I; no timeout.
+Load at start 3.83 (< 8); memory free 37%.

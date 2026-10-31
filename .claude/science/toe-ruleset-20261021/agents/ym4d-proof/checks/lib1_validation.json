@@ -1,0 +1,159 @@
+{
+  "kind": "documentation/provenance checks only",
+  "result": "completed",
+  "utc": "2026-10-29T19:47:26.132693+00:00",
+  "prefix_bytes": 8489,
+  "prefix_sha256": "1f7367c972e1ad49e81cfccdab1bec07b2259a44616fc45bab28e89174941c3d",
+  "unchanged_source_count": 25,
+  "quotes": [
+    {
+      "file": "SOFTHARD.md",
+      "lines": [
+        349,
+        349
+      ],
+      "quote": "Enlarging the inactive region regroups boundary activities while preserving their sum and controlling a decay loss.",
+      "matched_with_whitespace_normalization_only": true
+    },
+    {
+      "file": "HANDOFF.md",
+      "lines": [
+        420,
+        421
+      ],
+      "quote": "Include holes, reference comparison and failed-return bookkeeping before claiming the history-uniform large-field step.",
+      "matched_with_whitespace_normalization_only": true
+    },
+    {
+      "file": "HANDOFF.md",
+      "lines": [
+        426,
+        428
+      ],
+      "quote": "Construct N1's complete normalised, strictly source-local density representation, uniformly over all coarse fields, and N2.",
+      "matched_with_whitespace_normalization_only": true
+    },
+    {
+      "file": "CODEX_REVIEW_ASSEMBLY.md",
+      "lines": [
+        229,
+        229
+      ],
+      "quote": "Close the coupled flow/large-field construction.",
+      "matched_with_whitespace_normalization_only": true
+    },
+    {
+      "file": "CODEX_REVIEW_ASSEMBLY.md",
+      "lines": [
+        231,
+        231
+      ],
+      "quote": "Match the coefficient norm and the actual source radii.",
+      "matched_with_whitespace_normalization_only": true
+    },
+    {
+      "file": "STEP55.md",
+      "lines": [
+        583,
+        583
+      ],
+      "quote": "boundary polymers READ cone variables, so COL's exact integration must be redone with those polymers expanded",
+      "matched_with_whitespace_normalization_only": true
+    },
+    {
+      "file": "SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "lines": [
+        576,
+        579
+      ],
+      "quote": "Every original coefficient and every actual sea/coarse field read occurs in X, before and after summing histories at FIXED F.",
+      "matched_with_whitespace_normalization_only": true
+    },
+    {
+      "file": "SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "lines": [
+        455,
+        459
+      ],
+      "quote": "only the bare Wilson coefficient changes, and the prescribed RG kernel K remains fixed.",
+      "matched_with_whitespace_normalization_only": true
+    },
+    {
+      "file": "SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "lines": [
+        592,
+        593
+      ],
+      "quote": "sup_x sum_(X contains x) exp(mu|X|) sup_(real U,V; D_(rho,lambda)(u)) |V_X^F| <= d_q.",
+      "matched_with_whitespace_normalization_only": true
+    },
+    {
+      "file": "SOURCE_LOCAL_HISTORY_RETURN_ASTRA.md",
+      "lines": [
+        437,
+        441
+      ],
+      "quote": "D_(rho,lambda)(u)={epsilon: |epsilon_p|<=rho+lambda/u},",
+      "matched_with_whitespace_normalization_only": true
+    }
+  ],
+  "candidate_head_unchanged": "4f04b662f4d72d7ef269f6d9693ae9ff6424acf9",
+  "tracked_diff_paths": [],
+  "artifacts": [
+    {
+      "path": "LIB1.md",
+      "bytes": 40718,
+      "sha256": "cc1252b360b00e0463452febefba22313a1329cfee17515f012d3f4aa9bc8c76"
+    },
+    {
+      "path": "checks/lib1_check.py",
+      "bytes": 11328,
+      "sha256": "63256a04b6d2fc46dad13ee26ae0b0c592e93ac7d271157076ef32d23650fdbc"
+    },
+    {
+      "path": "checks/lib1_check_result.json",
+      "bytes": 9633,
+      "sha256": "1677bd4a3c93ef4ae8603ad2dc7d9c12e21ecd59648aa3135f99c0cd927ca60a"
+    },
+    {
+      "path": "checks/lib1_check_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "checks/lib1_check_stdout.txt",
+      "bytes": 9633,
+      "sha256": "1677bd4a3c93ef4ae8603ad2dc7d9c12e21ecd59648aa3135f99c0cd927ca60a"
+    },
+    {
+      "path": "checks/lib1_criteria.md",
+      "bytes": 3179,
+      "sha256": "2401a70f2e9b87af8a876eb4a5274b7467bf5769f7f1d30bddbcd4b1356d1f68"
+    },
+    {
+      "path": "checks/lib1_dimock_III_p35.png",
+      "bytes": 122270,
+      "sha256": "be52b3f01d647f65c8ce0d525db66da57ee23534f3d553fe1a641a04de43e990"
+    },
+    {
+      "path": "checks/lib1_dimock_II_p90.png",
+      "bytes": 130688,
+      "sha256": "2c2680050f3dbaf1f553e7243eaf9f51c01f2b9b5fb8c2dbac07b24e6b6a970b"
+    },
+    {
+      "path": "checks/lib1_prior_art.txt",
+      "bytes": 15151,
+      "sha256": "fd7b58b52e9378e03f9403761197458ab2a23b7ad05ff11795b31eb98a05c6e6"
+    },
+    {
+      "path": "checks/lib1_source_manifest.json",
+      "bytes": 6228,
+      "sha256": "608a19e5d4d74895ecbe4daec656fadaef2ddaf2d49a69f2542383c98c827a96"
+    },
+    {
+      "path": "checks/lib1_validate.py",
+      "bytes": 5431,
+      "sha256": "ad30c1243d3f8bd729427e721d9e8f90b4f7f235ffb1dbf348dbee3163fcc70d"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": "charged-determinant-author-receipt-v1",
+  "role": "AUTHOR; no self-review verdict",
+  "requested_model": "gpt-6-astra",
+  "requested_effort": "max",
+  "backend_attestation": null,
+  "startup_utc": "2026-10-30T16:54:44Z",
+  "first_substantive_checkpoint_utc": "2026-10-30T17:07:54Z",
+  "source_freeze_utc": "2026-10-30T17:39:31Z",
+  "packet_created_utc": "2026-10-30T17:43:00+00:00",
+  "sustained_attempt_decision_due_utc": "2026-10-30T18:24:44Z",
+  "launcher_decides_stop_or_extension": true,
+  "first_command": "python3 /tmp/ym4d_lab_ops_c93/lab_ops.py preflight --target .claude/science/toe-ruleset-20261021/agents/ym4d-proof --role worker --model gpt-6-astra --effort max",
+  "preflight_observation": "Returned go at startup; disk, memory/load, model/network and nice checks accepted; ulimit read was unavailable. No fabricated raw receipt.",
+  "preflight_runtime": {"path": "/tmp/ym4d_lab_ops_c93/lab_ops.py", "lines": 415, "sha256": "462b66455683bf6bb11bf1dd451e789ed4a298b6cf06c9109d693cc6ea1e1fd9"},
+  "pinned_preflight_source": {"path": "scripts/lab_ops.py", "lines": 415, "sha256": "462b66455683bf6bb11bf1dd451e789ed4a298b6cf06c9109d693cc6ea1e1fd9", "read_windows": []},
+  "source": {"path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHARGED_DETERMINANT_SIGN_ASTRA.md", "lines": 625, "sha256": "2ab72d652afbae58cbcd071de2a372d98d5a2826281d43c06ec563e701181170"},
+  "route": {"path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/effective-flow--charged-coefficient.md", "lines": 79, "sha256": "0b539601fa2e91c0c1d59dd781edeea2556a549358501a208186b6f43094efc5"},
+  "read_manifest": {"path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_determinant_sign_read_manifest.json", "lines": 69, "sha256": "6b51288892d90c0f40bf33d5c1292e85e5612e85eb9618c9c9686e598717652c"},
+  "strongest_author_result": "Proposed CH1/CH30 controlled fixed-L charged logarithm and CH33-34 nonempty negative individual bare-coefficient domain. Pending a DIFFERENT fresh hostile source-first check.",
+  "load_bearing_new_steps": [
+    "Actual constrained slow-connection symbol CH18-19, including non-Abelian spin.",
+    "On-shell full-mode Schur/normalizer/Ward cancellation CH3-15.",
+    "Discrete magnetic finite-jet resolvent and explicit E_NL/sqrt(s) error CH20-27."
+  ],
+  "scope_remaining": [
+    "No joint u/kappa uniformity or repeated inherited-action running trajectory.",
+    "No full finite-momentum Wilson closure or all-history/reserve construction.",
+    "Non-free continuum existence and positive physical continuum mass gap remain OPEN."
+  ],
+  "permitted_mutations_only": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHARGED_DETERMINANT_SIGN_ASTRA.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/effective-flow--charged-coefficient.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_determinant_sign_read_manifest.json",
+    "checks/charged_determinant_sign_receipt.json"
+  ],
+  "scientific_numerics_run": false,
+  "symbolic_coefficient_evaluation_run": false,
+  "child_workers_spawned": false,
+  "git_mutated": false,
+  "predecessor_or_gate_edited": false,
+  "metadata_check_status": "JSON parse and bound file identities checked by author; no mathematical verdict."
+}

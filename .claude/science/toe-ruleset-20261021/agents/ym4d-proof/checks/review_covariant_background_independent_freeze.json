@@ -1,0 +1,80 @@
+{
+  "created_utc": "2026-10-29T20:23:02.206104+00:00",
+  "source_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+  "source_sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+  "source_complete_lines": 568,
+  "original_author_snapshot_commit": "a63ade893a7f76b9ee1925170545bf7489ad0f18",
+  "author_checkers_read": false,
+  "author_checkers_executed": false,
+  "independent_criteria_frozen_before_implementation": true,
+  "artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_analytic_01.md",
+      "sha256": "c32fbfd0dc4ace456a016a280fb27c3e25a0e77e62060f8dacda2fa0e76825f1",
+      "bytes": 6787
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_criteria.md",
+      "sha256": "7a5cbd1e10cd9d02986dd3b209cf1670faef4305a84712d2d59d3cd16823c725",
+      "bytes": 6363
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_density_01.py",
+      "sha256": "ce5d6cc00a174ef9fb03703329e0fd7fec7879c7d65594ae005f2f93bfd63d17",
+      "bytes": 15731
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_density_01.stderr.txt",
+      "sha256": "efc777cf80ae8c76ca41b90fe1700a80d65c58aa6215509863dff643ebf56408",
+      "bytes": 464
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_density_01.stdout.txt",
+      "sha256": "4c6619091b05085e1e79bf1caa803119e6f232207522f83e89c963bd86e83763",
+      "bytes": 12943
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_density_affected_02.py",
+      "sha256": "9b0a4b7a077b3d330a02592e7aef8576707183e4462203c4faf3e43d96495cd3",
+      "bytes": 12275
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_density_affected_02.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_density_affected_02.stdout.json",
+      "sha256": "9f670dc598fee1421c0f709b5917213e8ef1ff2d77476c82f7fda74566368ce4",
+      "bytes": 6238
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_density_failure_01.json",
+      "sha256": "0ab9d21b701a40e0328a1bb58d0f7c91ab8d955603d51a94524106f7ec95646d",
+      "bytes": 781
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_entry.json",
+      "sha256": "6da0bd5c3c8babca27a0d9455d67c1997af8ffc8d46259aab4606ff8888583c3",
+      "bytes": 8259
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_geometry_01.py",
+      "sha256": "20525c4b080f85d78e8a3893015bb4586ca6fd66fa9cc79a55f449c564c4e50f",
+      "bytes": 10090
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_geometry_01.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_background_geometry_01.stdout.json",
+      "sha256": "b7b96996cc16a5843dd80e7d84b0bfd0541791fa3e32336ed32782f181580bec",
+      "bytes": 3798
+    }
+  ],
+  "evidence": "Geometry16/16 plus5/5 controls. Density original26/30 plus15/16 controls; all six Hessian finite differences confirmed in affected21/21 plus9/9 controls, including larger-u vacuum sensitivity. Overlapping successes are not added. Original failed precision/fixture controls preserved.",
+  "source_findings_at_freeze": [],
+  "tolerances_relaxed": false
+}

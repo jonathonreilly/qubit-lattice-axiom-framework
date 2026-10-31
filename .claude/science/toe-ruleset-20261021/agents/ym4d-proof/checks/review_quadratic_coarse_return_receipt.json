@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "role": "Independent source-and-packet review; no audit or physical-target certification",
+  "verdict": "LAND",
+  "recommendation": "PASS WITH BOUNDED CLAIMS",
+  "completed_at_utc": "2026-10-30T10:00:06.275233+00:00",
+  "requested_configuration": "Astra/max, fresh restricted context; same-family Codex reviewing Codex; no backend attestation",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/QUADRATIC_COARSE_RETURN_ASTRA.md",
+    "sha256": "515260d02f0a21e3dea55db2b98cb6ab00ece16684d40179df609922204798c7",
+    "lines": 591
+  },
+  "methodology_commit": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "sequence": [
+    "Complete target source read first",
+    "Necessary original producer mathematics read",
+    "Independent findings and exact-read manifest frozen",
+    "All compact author packet files inspected separately",
+    "Reversible attribution delta and packet identities verified",
+    "Source and completed-read pins rechecked",
+    "Final report and receipt written"
+  ],
+  "report": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_QUADRATIC_COARSE_RETURN_ASTRA.md",
+    "sha256": "2c8bf3e47ff7b7d903e226c1d14391fc6922000a3291ec4314b725fd79aa853b",
+    "lines": 60
+  },
+  "evidence": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_quadratic_coarse_return_independent_findings.md",
+      "sha256": "1ca48f3dc1021123f6fb0ce75916877a0e0cfe1e32b11ca2da68ac479136f4a3",
+      "lines": 61
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_quadratic_coarse_return_source_read_manifest.json",
+      "sha256": "6f4658300413d88c746d3a8a9dea34f4ef802dcbeeff008220431bdd43355ff2",
+      "lines": 164
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_quadratic_coarse_return_packet_check.json",
+      "sha256": "f041c7d6068a694ee9871cac131d4919bd784f8b052913037e491cdf24219461",
+      "lines": 181
+    }
+  ],
+  "source_pins_unchanged_at_completion": true,
+  "blocking_scientific_findings": 0,
+  "source_edits": 0,
+  "review_iterations": 1,
+  "scientific_numerical_runs": 0,
+  "author_script_runs": 0,
+  "extra_workers": 0,
+  "git_mutations": 0,
+  "commits": 0,
+  "pr_updates": 0,
+  "audit_actions": 0,
+  "combined_pipeline_runs": 0,
+  "claim_scope": "Actual local compact numerator over actual fixed-physical-exterior regional chart denominator; quadratic coarse debit and explicit eta_c=Theta(sigma p/K^2) shrinking family, fixed original-source radius, complete readers and all prefactors.",
+  "remaining_open": [
+    "exact global complement gluing and one common chart reference",
+    "original G/Omega and hard-history transport",
+    "arbitrary inherited effective weights",
+    "larger RG consumer-domain matching and induction",
+    "full non-free continuum existence",
+    "positive physical continuum mass gap"
+  ],
+  "same_family_disclosure": true,
+  "backend_attestation": false,
+  "packet_did_not_generate_independent_findings": true,
+  "numerical_evidence_is_not_proof": true,
+  "review_only_no_landing": true
+}

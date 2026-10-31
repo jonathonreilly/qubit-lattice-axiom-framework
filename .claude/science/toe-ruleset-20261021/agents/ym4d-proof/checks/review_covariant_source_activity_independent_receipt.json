@@ -1,0 +1,101 @@
+{
+  "stage": "Independent mathematics and numerical evidence frozen before author scientific Python/raw-output inspection",
+  "time_utc": "2026-10-29T21:35:55.695947+00:00",
+  "source_sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+  "author_code_read": false,
+  "author_raw_output_read": false,
+  "source_section_8_results_exposed": true,
+  "numerical_criteria_preceded_review_implementation": true,
+  "bound_files": [
+    {
+      "path": "checks/review_covariant_source_activity_atoms.py",
+      "sha256": "80eb04e77e77c7a33bbe2390b222233b5e6411d0e54d6458e4c2102321e2aa57",
+      "bytes": 7092
+    },
+    {
+      "path": "checks/review_covariant_source_activity_atoms_01.json",
+      "sha256": "4f94f24548381e0e397cecaf99585fe82feb554c882e0128d7c21f2ecf81480c",
+      "bytes": 11754
+    },
+    {
+      "path": "checks/review_covariant_source_activity_atoms_01.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "checks/review_covariant_source_activity_criteria.md",
+      "sha256": "f47e6dd533ffffa8bdbc5e140e4dc2735835300a461332d2a96f57a35628d763",
+      "bytes": 3791
+    },
+    {
+      "path": "checks/review_covariant_source_activity_entry.json",
+      "sha256": "7c9eb42f55984cd8eb2a1fb693e19defec8f45baa2a073a3d5d86d77d2d2af40",
+      "bytes": 3341
+    },
+    {
+      "path": "checks/review_covariant_source_activity_fibre.py",
+      "sha256": "78225cbc656be62af715078009fd6979196534a0fc87751b507c664ca09a3db8",
+      "bytes": 7471
+    },
+    {
+      "path": "checks/review_covariant_source_activity_fibre_01.json",
+      "sha256": "ca1abfd3817d19a5958126da15d2b016843fc860cdc4868dfd6b017c57be8fd9",
+      "bytes": 11054
+    },
+    {
+      "path": "checks/review_covariant_source_activity_fibre_01.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "checks/review_covariant_source_activity_flux.py",
+      "sha256": "118c6b452da2362ec8a164d75427e024425f05856b8ff00acd600a6f5cd320ec",
+      "bytes": 3781
+    },
+    {
+      "path": "checks/review_covariant_source_activity_flux_01.json",
+      "sha256": "3f1b03aa17523af56d28a9e22f9dc46c4b2277dcf65da73d6ebd4b19a2fa6edf",
+      "bytes": 4135
+    },
+    {
+      "path": "checks/review_covariant_source_activity_flux_01.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "checks/review_covariant_source_activity_geometry.py",
+      "sha256": "811d0210a61e4bf6528880bf66e35fbb2fe4ad741cc7745fcc88bc97e28fd3c2",
+      "bytes": 7033
+    },
+    {
+      "path": "checks/review_covariant_source_activity_geometry_01.json",
+      "sha256": "831035f0e5328871e106d1fb88320c3799dad81496a8cb31806863f929bafc1c",
+      "bytes": 10440
+    },
+    {
+      "path": "checks/review_covariant_source_activity_geometry_01.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "checks/review_covariant_source_activity_incidence.py",
+      "sha256": "ce89baef1c82c544de257b10f0c15e1286c6c4ca8844c05aac6d3b286abae4d6",
+      "bytes": 2340
+    },
+    {
+      "path": "checks/review_covariant_source_activity_incidence_01.json",
+      "sha256": "881934d5ad2c5b3bf39b59e1a8d43b53ccb074490e9d256ef94c36fff90ee984",
+      "bytes": 1812
+    },
+    {
+      "path": "checks/review_covariant_source_activity_incidence_01.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "checks/review_covariant_source_activity_independent.md",
+      "sha256": "3ad81c3e3e8bef2c80d3e11f79af6bcd9f8dbafb7281a8b8c353b9951b07141a",
+      "bytes": 20704
+    }
+  ]
+}

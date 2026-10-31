@@ -1,0 +1,47 @@
+{
+  "artifacts": [
+    {
+      "bytes": 36126,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_ONE_LOOP_COUPLING_ASTRA.md",
+      "sha256": "977d901f2c886a533c9eb1b487414e1a081df681463003eb231a3ef2b1b26670"
+    },
+    {
+      "bytes": 3164,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_one_loop_criteria.md",
+      "sha256": "b6bddf7631e75219024a5e52cc42956e59f7180ecc9f6a01f54a248c0fef0f62"
+    },
+    {
+      "bytes": 10914,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_one_loop_01.py",
+      "sha256": "6cb6ffaddb6b47d526784098bf9eb96bdd3bb1757c7b5b0dad65a3d8fb5091f7"
+    },
+    {
+      "bytes": 4894,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_one_loop_01_output.txt",
+      "sha256": "a6188091d823ed9b20945aa74fb2aeebab3a46c1b133f12d587abd656baeb6a5"
+    },
+    {
+      "bytes": 5576,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_one_loop_01_results.json",
+      "sha256": "de69b2d04e24adbace7c45ef5357525e40a6934073ade5de8fc5a1b5f6ff2d39"
+    },
+    {
+      "bytes": 14500,
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/uniform_one_loop_read_manifest.json",
+      "sha256": "c98c5530c75f1d6a000587d7915754e9c08ed45659b22bce0c29cbebcdea2194"
+    }
+  ],
+  "author_unit": "UNIFORM_ONE_LOOP_COUPLING_ASTRA",
+  "disposition": "author work pending fresh independent review; no audit assignment",
+  "first_run": {
+    "failures": 0,
+    "intentional_mutations_detected": 8,
+    "ordinary_passed": 16,
+    "total": 24
+  },
+  "frozen_utc": "2026-10-29T21:04:47.669013+00:00",
+  "git_or_shared_or_audit_edits_by_author": false,
+  "immutable_previous_units": true,
+  "input_manifest_sha256": "c98c5530c75f1d6a000587d7915754e9c08ed45659b22bce0c29cbebcdea2194",
+  "scientific_scope": "Uniform volume-first Gaussian one-loop coefficient and every0<=j<=n B-BR in supplied normalized fixed-kappa Wilson/S4 model, under exact internal linear/jet/residual contracts. No finite-u, continuum or physical-gap conclusion."
+}

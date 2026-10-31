@@ -1,0 +1,11 @@
+{
+  "command": [
+    "python3",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/crossover_import_attempt01.py"
+  ],
+  "exit_code": 0,
+  "utc": "2026-10-29T17:28:52.840001+00:00",
+  "source_sha256": "4959125ca8cf6002e6108f121df6cfddfdccc78ce98c227ef879363640aca25d",
+  "stdout_sha256": "d70036c7f3cae79dd860fcebf3f4fe9db12554ba182a6952284b1d3e2bf30718",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,214 @@
+====================================================================================================
+ar1 -- a_RS ceiling and KN-step's linear eta_1.  Criteria: checks/ar1_criteria.md (pre-registered).
+Exact Fraction arithmetic; Decimal for log10/display only, at 50 and 100 digits (ar1-6).
+C_Omega = 1 throughout (uncertified hand constant, REVIEW_SF_S7 l.225); every row is linear in it.
+====================================================================================================
+
+Constants in force: L=3 d=4 A_d=9 L^2=9 kappa=1 c_RS=625 c_1=1/117 (=8.54701e-3) beta_-=93/500
+DX' = 2.45600e-152   (REVIEW_SF_S7 l.203, DX'-1 (iii), at C_Omega = 1)
+
+####################################################################################################
+# ar1-1  branch identification and the eps_1-exponent of a_RS.   EXP-4 / EXP-2 / EXP-OTHER
+####################################################################################################
+  N=2 eps=1.27e-39  (SF.md l.2837; quoted NORMS l.746)         eta_1 branch=QUADRATIC eps^2/(512 N A_d)      a_RS branch=a_eta   -> EXP-4
+  N=2 eps=9.52e-40  (RLARGE l.71, first entry of the min)      eta_1 branch=QUADRATIC eps^2/(512 N A_d)      a_RS branch=a_eta   -> EXP-4
+  N=2 eps=8.95e-40  (RLARGE l.611 / REVIEW_SF_S7 l.200 TB-1)   eta_1 branch=QUADRATIC eps^2/(512 N A_d)      a_RS branch=a_eta   -> EXP-4
+  N=2 eps=6.7e-40   (RLARGE l.72, the headline)                eta_1 branch=QUADRATIC eps^2/(512 N A_d)      a_RS branch=a_eta   -> EXP-4
+  N=2 eps=9.38495112638e-45 (proposed; TAUFLAT sec.4 C / EPS1_SWEEP sec.4.5) eta_1 branch=QUADRATIC eps^2/(512 N A_d)      a_RS branch=a_eta   -> EXP-4
+  N=3 eps=1.27e-39  (SF.md l.2837; quoted NORMS l.746)         eta_1 branch=QUADRATIC eps^2/(512 N A_d)      a_RS branch=a_eta   -> EXP-4
+  N=3 eps=9.52e-40  (RLARGE l.71, first entry of the min)      eta_1 branch=QUADRATIC eps^2/(512 N A_d)      a_RS branch=a_eta   -> EXP-4
+  N=3 eps=8.95e-40  (RLARGE l.611 / REVIEW_SF_S7 l.200 TB-1)   eta_1 branch=QUADRATIC eps^2/(512 N A_d)      a_RS branch=a_eta   -> EXP-4
+  N=3 eps=6.7e-40   (RLARGE l.72, the headline)                eta_1 branch=QUADRATIC eps^2/(512 N A_d)      a_RS branch=a_eta   -> EXP-4
+  N=3 eps=9.38495112638e-45 (proposed; TAUFLAT sec.4 C / EPS1_SWEEP sec.4.5) eta_1 branch=QUADRATIC eps^2/(512 N A_d)      a_RS branch=a_eta   -> EXP-4
+
+  N=2  eta_1 min crossover at eps_1 = 512 (= 512 N A_d/(2L^2))
+        exact: a_eta = kernel at eps_1^2 = 663552, i.e. eps_1 = 8.14587e+2
+
+  N=3  eta_1 min crossover at eps_1 = 768 (= 512 N A_d/(2L^2))
+        exact: a_eta = kernel at eps_1^2 = 1492992, i.e. eps_1 = 1.22188e+3
+  POWER counterfactual: N=2 eps_1=1000     -> EXP-2   (eta_1 branch LINEAR, a_RS branch a_eta)
+  POWER counterfactual: N=2 eps_1=100000   -> EXP-2   (eta_1 branch LINEAR, a_RS branch a_eta)
+  POWER counterfactual: N=3 eps_1=1000     -> EXP-2   (eta_1 branch LINEAR, a_RS branch a_eta)
+  POWER counterfactual: N=3 eps_1=100000   -> EXP-2   (eta_1 branch LINEAR, a_RS branch a_eta)
+
+  ar1-1 VERDICT: EXP-4 at every live and proposed eps_1   (power: both EXP-4 and EXP-2 returned => HAS-POWER)
+  power check: EXP-2 returned at counterfactuals = YES
+
+####################################################################################################
+# ar1-2  does the a_RS ceiling bind?   BINDS (margin<0) / NOT-BINDING (margin>0)
+####################################################################################################
+  margin = log10[ (a_RS/conv) / DX' ].  conv = 10^2 (EPS1_SWEEP's reading of RLARGE l.617)
+                                        or  c_RS*10^2 (the exponent actually priced per cube, l.1023-1024)
+
+  eps_1                                                form conv       ceiling        margin    verdict
+  1.27e-39  (SF.md l.2837; quoted NORMS l.746)         RS   10^2       7.65720e-167     -14.506 BINDS
+  1.27e-39  (SF.md l.2837; quoted NORMS l.746)         RS   c_RS*10^2  1.22515e-169     -17.302 BINDS
+  1.27e-39  (SF.md l.2837; quoted NORMS l.746)         KN   10^2       2.94561e-85      +67.079 NOT-BINDING
+  1.27e-39  (SF.md l.2837; quoted NORMS l.746)         KN   c_RS*10^2  4.71298e-88      +64.283 NOT-BINDING
+  9.52e-40  (RLARGE l.71, first entry of the min)      RS   10^2       2.41770e-167     -15.007 BINDS
+  9.52e-40  (RLARGE l.71, first entry of the min)      RS   c_RS*10^2  3.86832e-170     -17.803 BINDS
+  9.52e-40  (RLARGE l.71, first entry of the min)      KN   10^2       1.65517e-85      +66.829 NOT-BINDING
+  9.52e-40  (RLARGE l.71, first entry of the min)      KN   c_RS*10^2  2.64827e-88      +64.033 NOT-BINDING
+  8.95e-40  (RLARGE l.611 / REVIEW_SF_S7 l.200 TB-1)   RS   10^2       1.88863e-167     -15.114 BINDS
+  8.95e-40  (RLARGE l.611 / REVIEW_SF_S7 l.200 TB-1)   RS   c_RS*10^2  3.02181e-170     -17.910 BINDS
+  8.95e-40  (RLARGE l.611 / REVIEW_SF_S7 l.200 TB-1)   KN   10^2       1.46290e-85      +66.775 NOT-BINDING
+  8.95e-40  (RLARGE l.611 / REVIEW_SF_S7 l.200 TB-1)   KN   c_RS*10^2  2.34064e-88      +63.979 NOT-BINDING
+  6.7e-40   (RLARGE l.72, the headline)                RS   10^2       5.93136e-168     -15.617 BINDS
+  6.7e-40   (RLARGE l.72, the headline)                RS   c_RS*10^2  9.49018e-171     -18.413 BINDS
+  6.7e-40   (RLARGE l.72, the headline)                KN   10^2       8.19819e-86      +66.523 NOT-BINDING
+  6.7e-40   (RLARGE l.72, the headline)                KN   c_RS*10^2  1.31171e-88      +63.728 NOT-BINDING
+  9.38495112638e-45 (proposed; TAUFLAT sec.4 C / EPS1_SWEEP sec.4.5) RS   10^2       2.28341e-187     -35.032 BINDS
+  9.38495112638e-45 (proposed; TAUFLAT sec.4 C / EPS1_SWEEP sec.4.5) RS   c_RS*10^2  3.65345e-190     -37.828 BINDS
+  9.38495112638e-45 (proposed; TAUFLAT sec.4 C / EPS1_SWEEP sec.4.5) KN   10^2       1.60854e-95      +56.816 NOT-BINDING
+  9.38495112638e-45 (proposed; TAUFLAT sec.4 C / EPS1_SWEEP sec.4.5) KN   c_RS*10^2  2.57367e-98      +54.020 NOT-BINDING
+
+  ar1-2 (V2) the quadratic (RLARGE) form, all live + proposed eps_1, both conventions : CONFIRMED
+  ar1-2 (V3, arithmetic half) the linear (KN-step) form, same grid                    : CONFIRMED
+  POWER: per-row verdicts -- RS form returns ['BINDS'] ; KN form returns ['NOT-BINDING']
+  POWER: the two forms return OPPOSITE verdicts from the same constants -> HAS-POWER
+  [ar1b re-run: in ar1_margins.py this line compared the aggregate verdict strings v2 and v3 (both
+   'CONFIRMED') instead of the per-row verdicts, and printed NO POWER although every one of the 20
+   rows above flips. ar1_out.txt is kept unaltered; only this reporting line and two display-format
+   lines are changed here. No arithmetic and no criterion is touched.]
+
+  POWER, second leg: interpolate eta_1^(s) = c_1^(1-s) B^s eps^(1+s), B = 1/(512 N A_d);
+  then a_eta ~ eps^p with p = 2+2s (s=0 linear/KN, s=1 quadratic/RLARGE).  Zero-margin exponent p*:
+    eps_1 = 6.7e-40   (RLARGE l.72, the headline)                p* = 4173284825388450423/1152921504606846976 = 3.61975   margin(p*-0.01)=+0.411  margin(p*+0.01)=-0.411
+    eps_1 = 9.38495112638e-45 (proposed; TAUFLAT sec.4 C / EPS1_SWEEP sec.4.5) p* = 3732215514048908115/1152921504606846976 = 3.23718   margin(p*-0.01)=+0.459  margin(p*+0.01)=-0.459
+    -> the verdict is a function of the exponent and changes sign across p*, as pre-registered.
+
+####################################################################################################
+# ar1-3  are KN-step's arithmetic hypotheses available at t = eps_1?   HYP-AVAILABLE / HYP-FAILS
+####################################################################################################
+  N=2  (a) KN-step l.1775: t <= 1/(106 sqrt(N) A_d^2 c_1^2) = 1.12737e+0
+        t=eps_1=1.27e-39  (SF.md l.2837; quoted NORMS l.746)         HOLDS
+        t=eps_1=9.52e-40  (RLARGE l.71, first entry of the min)      HOLDS
+        t=eps_1=8.95e-40  (RLARGE l.611 / REVIEW_SF_S7 l.200 TB-1)   HOLDS
+        t=eps_1=6.7e-40   (RLARGE l.72, the headline)                HOLDS
+        t=eps_1=9.38495112638e-45 (proposed; TAUFLAT sec.4 C / EPS1_SWEEP sec.4.5) HOLDS
+        POWER counterfactual t=2      FAILS
+        POWER counterfactual t=10     FAILS
+        POWER counterfactual t=1000   FAILS
+  N=2  (b) KN-step l.1775: (pi/3) A_d c_1 t <= 1/4  <=>  t <= 3.10352e+0
+        t=eps_1=1.27e-39  (SF.md l.2837; quoted NORMS l.746)         HOLDS
+        t=eps_1=9.38495112638e-45 (proposed; TAUFLAT sec.4 C / EPS1_SWEEP sec.4.5) HOLDS
+        POWER counterfactual t=2      HOLDS
+        POWER counterfactual t=10     FAILS
+  N=3  (a) KN-step l.1775: t <= 1/(106 sqrt(N) A_d^2 c_1^2) = 9.20492e-1
+        t=eps_1=1.27e-39  (SF.md l.2837; quoted NORMS l.746)         HOLDS
+        t=eps_1=9.52e-40  (RLARGE l.71, first entry of the min)      HOLDS
+        t=eps_1=8.95e-40  (RLARGE l.611 / REVIEW_SF_S7 l.200 TB-1)   HOLDS
+        t=eps_1=6.7e-40   (RLARGE l.72, the headline)                HOLDS
+        t=eps_1=9.38495112638e-45 (proposed; TAUFLAT sec.4 C / EPS1_SWEEP sec.4.5) HOLDS
+        POWER counterfactual t=2      FAILS
+        POWER counterfactual t=10     FAILS
+        POWER counterfactual t=1000   FAILS
+  N=3  (b) KN-step l.1775: (pi/3) A_d c_1 t <= 1/4  <=>  t <= 3.10352e+0
+        t=eps_1=1.27e-39  (SF.md l.2837; quoted NORMS l.746)         HOLDS
+        t=eps_1=9.38495112638e-45 (proposed; TAUFLAT sec.4 C / EPS1_SWEEP sec.4.5) HOLDS
+        POWER counterfactual t=2      HOLDS
+        POWER counterfactual t=10     FAILS
+
+  (c) reconstruction identity: (L^2 + 5.5 A_d) * c_1 must equal exactly 1/2
+      (L^2 + 5.5A_d)*c_1 = 1/2  -> IDENTITY-HOLDS
+
+  (d) reconstruction of KN-step's coefficient 106 from Lemma KN's 12, independently:
+      KN needs t/8 >= 12 sqrt(N) delta^2 with delta <= (pi/3) A_d eta and eta < c_1 t, so
+      t <= 1/( 8*12*(pi/3)^2 sqrt(N) A_d^2 c_1^2 ), i.e. coefficient 8*12*(pi/3)^2:
+      my coefficient  = 1.05276e+2
+      EXISTENCE l.1775 = 1.06000e+2
+      ratio (theirs/mine) = 1.00688e+0  -> REPRODUCES (tolerance 1.2)
+
+  (e) reconstruction of the 5.5 in c_1: need 4(e^delta - 1) <= 5.5 A_d eta given delta <= (pi/3)A_d eta,
+      delta <= 1/4.  Worst case 4*(e^{1/4}-1)/(1/4)*(pi/3) must be <= 5.5:
+      my coefficient = 4.75889e+0   vs EXISTENCE's 5.5  -> RECONSTRUCTS (<= 5.5)
+
+  (f) the kernel branch is UNCHANGED by the adoption: RLARGE (R4) l.979 gives kappa eps^2/(256 N g^2);
+      KN-step l.1776 gives kappa t^2/(256 N g^2) at t = eps_1.  Identical -> SAME-CONSTANT
+
+  ar1-3 VERDICT: HYP-AVAILABLE (arithmetic clauses)
+
+####################################################################################################
+# ar1-4  consumer sweep
+####################################################################################################
+  (a) RLARGE l.65 records eta_1 <= eta_q on the admissible range.  Under each form:
+      N=2 form=RS  eps=6.7e-40   (RLARGE l.72, the headline)                eta_1/eta_q = 3.35000e-40  ORDER-PRESERVED (eta_1<=eta_q)
+      N=2 form=KN  eps=6.7e-40   (RLARGE l.72, the headline)                eta_1/eta_q = 3.93846e+1   ORDER-REVERSED (eta_1>eta_q)
+      N=2 form=RS  eps=9.38495112638e-45 (proposed; TAUFLAT sec.4 C / EPS1_SWEEP sec.4.5) eta_1/eta_q = 4.69248e-45  ORDER-PRESERVED (eta_1<=eta_q)
+      N=2 form=KN  eps=9.38495112638e-45 (proposed; TAUFLAT sec.4 C / EPS1_SWEEP sec.4.5) eta_1/eta_q = 3.93846e+1   ORDER-REVERSED (eta_1>eta_q)
+      N=3 form=RS  eps=6.7e-40   (RLARGE l.72, the headline)                eta_1/eta_q = 3.35000e-40  ORDER-PRESERVED (eta_1<=eta_q)
+      N=3 form=KN  eps=6.7e-40   (RLARGE l.72, the headline)                eta_1/eta_q = 5.90769e+1   ORDER-REVERSED (eta_1>eta_q)
+      N=3 form=RS  eps=9.38495112638e-45 (proposed; TAUFLAT sec.4 C / EPS1_SWEEP sec.4.5) eta_1/eta_q = 4.69248e-45  ORDER-PRESERVED (eta_1<=eta_q)
+      N=3 form=KN  eps=9.38495112638e-45 (proposed; TAUFLAT sec.4 C / EPS1_SWEEP sec.4.5) eta_1/eta_q = 5.90769e+1   ORDER-REVERSED (eta_1>eta_q)
+
+  (b) REVIEW_PLD_S3 l.302/l.305: any RS-compatible threshold obeys eta <= eps_1/(1.001 L^2).
+      form=RS  eta_1 = 4.87088e-83    bound = 7.43701e-41    -> RS-COMPATIBLE
+      form=KN  eta_1 = 5.72650e-42    bound = 7.43701e-41    -> RS-COMPATIBLE
+      POWER counterfactual c_1=1/18       eta_1 = 3.72222e-41    -> RS-COMPATIBLE
+      POWER counterfactual c_1=1/6        eta_1 = 1.11667e-40    -> RS-INCOMPATIBLE
+
+  (c) PLD l.765-776 LD-arith: summability needs alpha t^2 beta_1 > log(n_U)/log(L), n_U = 24 L^4,
+      alpha = 1/(2(N-1)) (PLD l.770), beta_1 = 11 N^2/(12 pi^2) (RLARGE l.42).  Least N:
+      log(n_U)/log(L) = 6.89279   (PLD l.766 states 6.893)
+      t = 2 (PLD l.771)                least N = 37
+      t = 1/2 (PLD l.772)              least N = 593
+      t = 2/117 = c_1*2 (PLD l.772)    least N = 507954
+      at t = eta_1 (form RS ), N=2, eps_1=6.7e-40 : summable? NO
+      at t = eta_1 (form KN ), N=2, eps_1=6.7e-40 : summable? NO
+      at t = eta_1 (form RS ), N=3, eps_1=6.7e-40 : summable? NO
+      at t = eta_1 (form KN ), N=3, eps_1=6.7e-40 : summable? NO
+      -> PLD's conclusion 'route (a) is no for SU(2), SU(3)' : SU23-STANDS (NO at N=2,3 under both forms)
+
+  (d) REVIEW_PLD_S3 (Arch-3) m_tau: least m with (L^2/(2C_I))^m eta_1 >= 2 C_I eps_1/L^2.
+      C_I=1     eps=2,N=2: RS=5    KN=3   eps=0.517: RS=6    KN=3   eps=1e-3: RS=10   KN=3   eps=2e-32: RS=54   KN=3   eps=6.7e-40: RS=66   KN=3   eps=prop: RS=73   KN=3 
+      C_I=3/2   eps=2,N=2: RS=7    KN=4   eps=0.517: RS=8    KN=4   eps=1e-3: RS=14   KN=4   eps=2e-32: RS=74   KN=4   eps=6.7e-40: RS=90   KN=4   eps=prop: RS=100  KN=4 
+      C_I=2     eps=2,N=2: RS=10   KN=5   eps=0.517: RS=12   KN=5   eps=1e-3: RS=19   KN=5   eps=2e-32: RS=101  KN=5   eps=6.7e-40: RS=122  KN=5   eps=prop: RS=136  KN=5 
+      REVIEW_PLD_S3 l.347 states 5/7/10 at eps=2 N=2 and 6/8/12 at 0.517, 10/14/19 at 1e-3,
+      54/74/101 at 2e-32 (RLARGE's eta_1); l.349 states 3/4/5 with c_1 eps_1.  Compare the columns.
+
+####################################################################################################
+# ar1-5  does the claimed gain reproduce?   GAIN-REPRODUCES / SOURCE-DISAGREES
+####################################################################################################
+  eps_1=6.7e-40   (RLARGE l.72, the headline)                conv=10^2       margin RS=  -15.617  KN=  +66.523  GAIN=  +82.141
+  eps_1=6.7e-40   (RLARGE l.72, the headline)                conv=c_RS*10^2  margin RS=  -18.413  KN=  +63.728  GAIN=  +82.141
+  eps_1=9.38495112638e-45 (proposed; TAUFLAT sec.4 C / EPS1_SWEEP sec.4.5) conv=10^2       margin RS=  -35.032  KN=  +56.816  GAIN=  +91.848
+  eps_1=9.38495112638e-45 (proposed; TAUFLAT sec.4 C / EPS1_SWEEP sec.4.5) conv=c_RS*10^2  margin RS=  -37.828  KN=  +54.020  GAIN=  +91.848
+
+  EPS1_SWEEP sec.4.3 / sec.7.1 item 2 quote: 'from -15.62 to +66.52 decades ... a gain of 92 decades
+  at today's eps_1'.  The gain is a difference of an eps^4 and an eps^2 margin, so it is itself
+  eps_1-dependent.  Compare the two GAIN rows above against the quoted 92.
+
+####################################################################################################
+# ar1-5b  the other entries of RLARGE's ceiling/induction table that eta_1 touches  [POST-HOC: not a
+#         pre-registered verdict; reported for completeness]
+####################################################################################################
+  a'' = 0.9 eps^2/(4N) (RLARGE l.1245);  a_# = min{a'', a_flat, a_RS/c_RS} (l.1024);  n_# = 4/(a_# beta_-)
+    eps=6.7e-40   (RLARGE l.72, the headline)                form=RS  a''=5.05012e-80  a_RS/c_RS=9.49018e-169 a_#=9.49018e-169 (a_RS/c_RS) n_#=2.26607e+169 log_L(2n_#)=355.6
+    eps=6.7e-40   (RLARGE l.72, the headline)                form=KN  a''=5.05012e-80  a_RS/c_RS=1.31171e-86  a_#=1.31171e-86  (a_RS/c_RS) n_#=1.63949e+87  log_L(2n_#)=183.4
+    eps=9.38495112638e-45 (proposed; TAUFLAT sec.4 C / EPS1_SWEEP sec.4.5) form=RS  a''=9.90870e-90  a_RS/c_RS=3.65345e-188 a_#=3.65345e-188 (a_RS/c_RS) n_#=5.88632e+188 log_L(2n_#)=396.3
+    eps=9.38495112638e-45 (proposed; TAUFLAT sec.4 C / EPS1_SWEEP sec.4.5) form=KN  a''=9.90870e-90  a_RS/c_RS=2.57367e-96  a_#=2.57367e-96  (a_RS/c_RS) n_#=8.35593e+96  log_L(2n_#)=203.8
+
+  HIST l.1377-1379's chain-energy floor E_C(p) >= eta_1^2/(2 N C_cone) scales as eta_1^2, so it
+  improves by the same factor as a_eta:
+    eps=6.7e-40   (RLARGE l.72, the headline)                (eta_KN/eta_RS)^2 = 1.38218e+82 = 82.141 decades
+
+  sensitivity: with PLD l.1048's effective-level a_eta = 49 eta^2/(256 sigma_*^2), sigma_*^2 = N(1+18/kappa):
+    eps=6.7e-40   (RLARGE l.72, the headline)                form=RS  margin =   -17.313 (vs bare-level a_eta above)
+    eps=6.7e-40   (RLARGE l.72, the headline)                form=KN  margin =   +64.828 (vs bare-level a_eta above)
+    eps=9.38495112638e-45 (proposed; TAUFLAT sec.4 C / EPS1_SWEEP sec.4.5) form=RS  margin =   -36.727 (vs bare-level a_eta above)
+    eps=9.38495112638e-45 (proposed; TAUFLAT sec.4 C / EPS1_SWEEP sec.4.5) form=KN  margin =   +55.120 (vs bare-level a_eta above)
+
+  cross-reference (NOT re-derived here, transcribed): HW l.2007 g^2_CRC(x82)=1.85835e-96 -> margin +55.879;
+                                                      HW l.2010 g^2_ret      =3.67644e-98 -> margin +54.175
+
+####################################################################################################
+# ar1-6  precision.   PASS / FAIL
+####################################################################################################
+  worst |log10 at 50 digits - log10 at 100 digits| over all 20 margin rows = 4.564e-49
+  ar1-6 VERDICT: PASS (tolerance 0.1 decade)
+
+====================================================================================================
+Truncation disclosure: pi and e are 50-digit truncations; sqrt(N) a 60-digit truncation. They enter
+only ar1-3 (c)-(e) and ar1-4 (c), where the slack is many orders of magnitude or the comparison is
+against an integer, so no verdict can turn on the truncation.
+====================================================================================================

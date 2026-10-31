@@ -1,0 +1,14 @@
+c37 run record (session 21; criteria checks/c37_criteria.md mtime 2026-10-28 01:26:13 UTC; script c37_kcurv.py first
+written after it, last modified 01:30:06 UTC, before the first run at 01:34:48 UTC; outputs c37{A..E}.out, per-part
+.out.time).
+Pre-run edits to the script (disclosed; no criterion touched): streamed row sums for the T = 10 kernels (memory), float64
+fibres and kernels in Part A only (A2's 1e-8 tolerance is below float32 precision).
+Runner (scratchpad s21/run37.sh): `until mkdir …/locks/numeric; do sleep 20; done`, wait for load1 < 8 and memory free
+>= 25%, nice 10, OPENBLAS/OMP/MKL/vecLib threads 1, PYTHONDONTWRITEBYTECODE=1, /usr/bin/time -l, rmdir exactly once (no
+trap); no `timeout`; python without -I. One job at a time (A; B; then C, D, E in sequence).
+A  01:34:48-01:34:51  load1 3.19  free 38%   3 s   peak footprint 577 MB   PASS
+B  01:38:01-01:38:53  load1 2.45  free 44%  53 s   peak footprint 576 MB   FAIL (K_curv(10) = 2.969; criterion pre-registered)
+C  01:39:09-01:52:04  load1 2.63  free 38% 775 s   peak footprint 718 MB   informational
+D  01:52:04-01:53:07  load1 3.81  free 38%  62 s   peak footprint 579 MB   informational
+E  01:53:07-01:56:05  load1 3.47  free 32% 178 s   peak footprint 564 MB   informational (E1 holds)
+All peaks < 1 GB.

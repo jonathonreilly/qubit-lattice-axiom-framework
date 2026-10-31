@@ -1,0 +1,22 @@
+{
+  "label": "sea_geometry",
+  "script": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_sea_geometry.py",
+  "script_sha256": "0ffc45711e80337446db0825ff98bd6db754a3cecb4b33a1f25a674ef987195d",
+  "copies": {
+    "review_source_sea_geometry.py": "0ffc45711e80337446db0825ff98bd6db754a3cecb4b33a1f25a674ef987195d"
+  },
+  "temporary_directory": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-next-reviews-root-replay-3yv6qmmm/sea_geometry",
+  "exit_code": 0,
+  "wall_seconds": 6.29141092300415,
+  "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_review_sea_geometry_out.json",
+  "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_review_sea_geometry_err.txt",
+  "stdout_sha256": "606410d7b94c0a1b4a8b84562ad13f72718b36985dc5132ad00dc588dc0f1f5d",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "reference": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_sea_geometry_01.json",
+  "reference_sha256": "443aebc331c5ad7ce251ecbacbee35b017a2665a78d32fb50c55a331c0bd5c78",
+  "excluded_top_level_timing_field": "seconds",
+  "exact_non_time_json_match": true,
+  "differing_top_level_keys": [],
+  "source_unchanged": true,
+  "reference_unchanged": true
+}

@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "role": "Coordinator bounded source/literature coverage and next-step evidence; no new theorem or audit verdict",
+  "date_utc": "2026-10-30",
+  "baseline_head": "8a17d9d9bec2ba6a08359688ba64956df29cf81b",
+  "previous_goal_turn": "Progress: independently reviewed regional critical-field, regional nonlinear-chart and squared-alignment results were committed and pushed; full existence and physical gap remained open.",
+  "local_reads": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MGX.md",
+      "sha256": "c4a4f5f95f3b499e1c4f7a9a69a24bd2e94b1fb19ee53ceca48e9cc78393c8bb",
+      "lines": 388,
+      "ranges": [
+        [
+          1,
+          140
+        ],
+        [
+          141,
+          285
+        ],
+        [
+          286,
+          388
+        ]
+      ],
+      "scope": "Complete current source. Its physical-scale transport and transfer implications retain open actual-law hypotheses. The pure-Wilson endpoint compared there has u<=1/32; the guaranteed tuned weak nodes have u>=1."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OUTSIDE_CHART_RETURN_ASTRA.md",
+      "sha256": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4",
+      "lines": 641,
+      "ranges": [
+        [
+          34,
+          62
+        ],
+        [
+          113,
+          270
+        ],
+        [
+          440,
+          541
+        ]
+      ],
+      "scope": "Fresh bounded reads of the original interior cut, complete boundary-charge reset, cap/reference normalization, finite shell cover, tightened shrinking window and the explicit failure of real probability alone to give a complex normalized return."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LITERATURE_BRIDGES.md",
+      "sha256": "1945e4a1ed56ce73c5383921de2453d658b0849333c1b9696e3dbc9e0b040bf6",
+      "lines": 81,
+      "ranges": [
+        [
+          23,
+          27
+        ]
+      ],
+      "scope": "B13-B17 only in this bounded full-line read. A broader grep output was truncated and is not claimed as complete coverage."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_MGX.md",
+      "sha256": "cb3221b37f1e1b77056c353332af6ffec7b8c54fe5b910246d0d7d4fadd85e39",
+      "lines": 276,
+      "ranges": [],
+      "scope": "Navigation grep of disposition/table only, not a fresh full review."
+    }
+  ],
+  "primary_reads": [
+    {
+      "url": "https://arxiv.org/abs/2204.12737",
+      "version": "v1, submitted27 April2022; current metadata lists no later version",
+      "coverage": "Abstract and version/publication metadata only.",
+      "use": "Existing B14 fixed-lattice strong-coupling comparison; no new imported theorem."
+    },
+    {
+      "url": "https://arxiv.org/html/2204.12737v1",
+      "coverage": "Returned HTML18-69: abstract, introduction and definitions through(1.2). Rendering stops there; later theorem/proof sections were not supplied.",
+      "observation": "The action is N beta times the real trace sum. Relative to u sum(1-Re tr/N), the coefficient is u=N^2 beta. The stated SU(N) range is |beta|<1/[16(d-1)], hence u<N^2/48 in d=4. This is a different N-dependent endpoint from MGX's u<=1/32 comparison. No actual induced-action, transport or continuum hypothesis is discharged.",
+      "date_caution": "The HTML's rendered date is not treated as a new arXiv version."
+    },
+    {
+      "url": "https://arxiv.org/abs/2406.16881",
+      "version": "v2,30 June2024",
+      "coverage": "Abstract and version metadata only.",
+      "observation": "The stated confinement implication assumes a mass gap; it is not a supplier for the missing gap. No full-paper review or import."
+    },
+    {
+      "url": "https://arxiv.org/abs/2006.16229",
+      "version": "v5,26 March2021",
+      "coverage": "Abstract and version metadata only.",
+      "observation": "Exponential decay under arbitrary boundaries is a premise of the stated confinement mechanism, not a supplied weak-coupling estimate. Existing B16; no new import."
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.19362",
+      "version": "v1,9 June2026; current metadata lists no later version",
+      "coverage": "Abstract and publication/version metadata only.",
+      "observation": "Existing B17 screened proposal. No newly listed version was found that would replace the previously recorded scoped mathematical objections. This pass did not rereview the full paper."
+    }
+  ],
+  "search_scope": {
+    "queries": [
+      "site:arxiv.org \"Yang-Mills\" \"mass gap\" \"weak coupling\" 2025 2026",
+      "site:arxiv.org \"2204.12737\"",
+      "site:arxiv.org \"Yang-Mills\" \"spectral gap\" \"all\" coupling"
+    ],
+    "limits": "Bounded discovery, not an exhaustive literature search. Supersymmetric/TQFT search hits were not consumed as actual-model proof inputs."
+  },
+  "next_action_evidence": [
+    "RF/RC give small-boundary regional chart control but no original-history normalization. The active regional-ratio author compares two such charts, retaining every prefactor.",
+    "OC13 pays the actual boundary reset by a successful-shell energy inequality. An absolute critical-action estimate proportional to q times the whole shell volume would not automatically preserve a source radius fixed as K grows.",
+    "The compact-return author is checking an L2 source-force/critical-action estimate tied to delta^2|R| plus the actual shell charge, and an explicitly narrower coarse-complex tube. These remain author work awaiting frozen source and fresh review.",
+    "The RC chart radius must also respect the original interior-plaquette cut, and fixed exterior admissibility and exact outside-factor cancellation must be retained.",
+    "Neither a local Hessian marginal nor an auxiliary Gaussian gap gives the complete coarse action, transported observable remainder, or physical spectral gap."
+  ],
+  "new_external_theorems_imported": 0,
+  "scientific_numerical_runs": 0,
+  "source_edits": 0,
+  "full_continuum_existence": "OPEN",
+  "continuum_nonfreeness": "OPEN",
+  "physical_continuum_mass_gap": "OPEN"
+}

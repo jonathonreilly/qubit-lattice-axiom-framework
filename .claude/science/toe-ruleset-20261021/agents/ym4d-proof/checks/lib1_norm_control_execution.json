@@ -1,0 +1,317 @@
+{
+  "created_utc": "2026-10-29T20:19:28.036494+00:00",
+  "scope": "Replay LIB1's known survivor and check the narrow full-norm repair.\n\nExecutions are sequential, resource-gated, and isolated from old receipts.\nThis is coordinator evidence for B1, not an independent scientific review.\n",
+  "all_expected_outcomes": true,
+  "runs": [
+    {
+      "name": "original_active_for_full",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "/usr/local/bin/python3",
+        "-B",
+        "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-lib1-norm-control-cwrawtbo/original_active_for_full/lib1_check.py"
+      ],
+      "environment_overrides": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expected_assertion": null,
+      "actual_reason": null,
+      "expected_outcome_observed": true,
+      "executed_source_sha256": "518b6958f306bf572e55c8ec1774f30c4d0578c9e96dfca3535acab78903d5b3",
+      "stdout": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_original_active_for_full_stdout.json",
+        "sha256": "9f6f8c7f1ed5bb45f5d58ae4898f4e9774b492ef7b0d9767061dd4843086239b",
+        "bytes": 9644
+      },
+      "stderr": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_original_active_for_full_stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "predicate_counts": {
+        "polynomial_identity_with_inactive_remainder": 2187,
+        "active_norm_contraction": 2187,
+        "bounded_hole_full_norm": 2184,
+        "rooted_entropy_bound": 576,
+        "two_closure_algorithms": 36873,
+        "new_polymer_class": 36873,
+        "containment_and_active_identity": 36873,
+        "ambient_tree_monotonicity": 36873,
+        "all_original_monomial_sources_retained": 36873,
+        "pointwise_decay_bound": 8972,
+        "no_hole_identity": 3,
+        "native_4d_closure": 6288,
+        "native_4d_geometry": 6288,
+        "native_4d_tree": 6288,
+        "mutation_setup_full_hole": 1,
+        "mutation_rejected_drop_inactive_remainder": 1,
+        "mutation_rejected_erase_inactive_source": 1,
+        "mutation_rejected_fill_intersected_only": 1,
+        "mutation_rejected_identify_active_and_full_norms": 1
+      },
+      "resource_samples": 15
+    },
+    {
+      "name": "corrected_baseline",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "/usr/local/bin/python3",
+        "-B",
+        "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-lib1-norm-control-cwrawtbo/corrected_baseline/lib1_check.py"
+      ],
+      "environment_overrides": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expected_assertion": null,
+      "actual_reason": null,
+      "expected_outcome_observed": true,
+      "executed_source_sha256": "0bcd86c97aa91b6897241f6998693de15c6131e54785c77a32ee6beb097300b8",
+      "stdout": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_corrected_baseline_stdout.json",
+        "sha256": "05f533116f31fc1ba137c9b9f90fe4b993b57c18b8c8ed7e781fbc0f91c1ec24",
+        "bytes": 10333
+      },
+      "stderr": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_corrected_baseline_stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "predicate_counts": {
+        "polynomial_identity_with_inactive_remainder": 2187,
+        "active_norm_contraction": 2187,
+        "bounded_hole_full_norm": 2184,
+        "rooted_entropy_bound": 576,
+        "two_closure_algorithms": 36873,
+        "new_polymer_class": 36873,
+        "containment_and_active_identity": 36873,
+        "ambient_tree_monotonicity": 36873,
+        "all_original_monomial_sources_retained": 36873,
+        "pointwise_decay_bound": 8972,
+        "no_hole_identity": 3,
+        "native_4d_closure": 6288,
+        "native_4d_geometry": 6288,
+        "native_4d_tree": 6288,
+        "mutation_setup_full_hole": 1,
+        "exact_cycle_input_full_norm": 1,
+        "exact_cycle_output_full_norm": 1,
+        "exact_cycle_output_active_norm": 1,
+        "exact_overlap_supports": 1,
+        "exact_inactive_root_output_full_norm": 1,
+        "exact_overlap_output_active_norm": 1,
+        "exact_overlap_active_roots_full_weight": 1,
+        "mutation_rejected_drop_inactive_remainder": 1,
+        "mutation_rejected_erase_inactive_source": 1,
+        "mutation_rejected_fill_intersected_only": 1,
+        "mutation_rejected_identify_active_and_full_norms": 1
+      },
+      "resource_samples": 15
+    },
+    {
+      "name": "active_for_full",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "/usr/local/bin/python3",
+        "-B",
+        "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-lib1-norm-control-cwrawtbo/active_for_full/lib1_check.py"
+      ],
+      "environment_overrides": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_assertion": "exact_cycle_output_full_norm",
+      "actual_reason": "AssertionError('exact_cycle_output_full_norm')",
+      "expected_outcome_observed": true,
+      "executed_source_sha256": "21103c0dac0bb43ee4a03d3a68ed0a4252640c3d1af3461c0e99d8315f0dec66",
+      "stdout": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_active_for_full_stdout.json",
+        "sha256": "4d046cebc9e9104c826efa0f7266d981bbc315987841f4944b9cd17eb0843166",
+        "bytes": 8484
+      },
+      "stderr": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_active_for_full_stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "predicate_counts": {
+        "polynomial_identity_with_inactive_remainder": 2187,
+        "active_norm_contraction": 2187,
+        "bounded_hole_full_norm": 2184,
+        "rooted_entropy_bound": 576,
+        "two_closure_algorithms": 36873,
+        "new_polymer_class": 36873,
+        "containment_and_active_identity": 36873,
+        "ambient_tree_monotonicity": 36873,
+        "all_original_monomial_sources_retained": 36873,
+        "pointwise_decay_bound": 8972,
+        "no_hole_identity": 3,
+        "native_4d_closure": 6288,
+        "native_4d_geometry": 6288,
+        "native_4d_tree": 6288,
+        "mutation_setup_full_hole": 1,
+        "exact_cycle_input_full_norm": 1
+      },
+      "resource_samples": 14
+    },
+    {
+      "name": "active_roots_only",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "/usr/local/bin/python3",
+        "-B",
+        "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-lib1-norm-control-cwrawtbo/active_roots_only/lib1_check.py"
+      ],
+      "environment_overrides": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_assertion": "exact_inactive_root_output_full_norm",
+      "actual_reason": "AssertionError('exact_inactive_root_output_full_norm')",
+      "expected_outcome_observed": true,
+      "executed_source_sha256": "d97626ec5e80f0b4cbd314a56f5c17e487f27b4a48b4f5e9bcf01198ab9a7b02",
+      "stdout": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_active_roots_only_stdout.json",
+        "sha256": "5d34a5d9c52ef5c8a2b736e35eea27bee6841100161e72448008678615cac134",
+        "bytes": 8602
+      },
+      "stderr": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_active_roots_only_stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "predicate_counts": {
+        "polynomial_identity_with_inactive_remainder": 2187,
+        "active_norm_contraction": 2187,
+        "bounded_hole_full_norm": 2184,
+        "rooted_entropy_bound": 576,
+        "two_closure_algorithms": 36873,
+        "new_polymer_class": 36873,
+        "containment_and_active_identity": 36873,
+        "ambient_tree_monotonicity": 36873,
+        "all_original_monomial_sources_retained": 36873,
+        "pointwise_decay_bound": 8972,
+        "no_hole_identity": 3,
+        "native_4d_closure": 6288,
+        "native_4d_geometry": 6288,
+        "native_4d_tree": 6288,
+        "mutation_setup_full_hole": 1,
+        "exact_cycle_input_full_norm": 1,
+        "exact_cycle_output_full_norm": 1,
+        "exact_cycle_output_active_norm": 1,
+        "exact_overlap_supports": 1
+      },
+      "resource_samples": 14
+    },
+    {
+      "name": "active_weight_only",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "/usr/local/bin/python3",
+        "-B",
+        "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-lib1-norm-control-cwrawtbo/active_weight_only/lib1_check.py"
+      ],
+      "environment_overrides": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_assertion": "exact_cycle_output_full_norm",
+      "actual_reason": "AssertionError('exact_cycle_output_full_norm')",
+      "expected_outcome_observed": true,
+      "executed_source_sha256": "c1efe80a09bc99f5da21e2570135d85c6b0130c9b0a78c94e5caeec2af85f529",
+      "stdout": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_active_weight_only_stdout.json",
+        "sha256": "842eec964c7f8aa7b41e5e3ca260e5d228633c7742b16bfe746243cf7c5527a5",
+        "bytes": 8484
+      },
+      "stderr": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_active_weight_only_stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "predicate_counts": {
+        "polynomial_identity_with_inactive_remainder": 2187,
+        "active_norm_contraction": 2187,
+        "bounded_hole_full_norm": 2184,
+        "rooted_entropy_bound": 576,
+        "two_closure_algorithms": 36873,
+        "new_polymer_class": 36873,
+        "containment_and_active_identity": 36873,
+        "ambient_tree_monotonicity": 36873,
+        "all_original_monomial_sources_retained": 36873,
+        "pointwise_decay_bound": 8972,
+        "no_hole_identity": 3,
+        "native_4d_closure": 6288,
+        "native_4d_geometry": 6288,
+        "native_4d_tree": 6288,
+        "mutation_setup_full_hole": 1,
+        "exact_cycle_input_full_norm": 1
+      },
+      "resource_samples": 14
+    }
+  ],
+  "original": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_original.py",
+    "sha256": "63256a04b6d2fc46dad13ee26ae0b0c592e93ac7d271157076ef32d23650fdbc",
+    "bytes": 11328
+  },
+  "corrected": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_check.py",
+    "sha256": "0bcd86c97aa91b6897241f6998693de15c6131e54785c77a32ee6beb097300b8",
+    "bytes": 13437
+  },
+  "criteria": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_norm_control_criteria.md",
+    "sha256": "f226f39f170796fdc8b22fed9f6c029fdd7212f890445cab9912da291ac565a1",
+    "bytes": 2640
+  },
+  "original_criteria": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/lib1_criteria.md",
+    "sha256": "2401a70f2e9b87af8a876eb4a5274b7467bf5769f7f1d30bddbcd4b1356d1f68",
+    "bytes": 3179
+  },
+  "independent_affected_review": "PENDING",
+  "whole_library_rereview": false,
+  "full_existence": "OPEN",
+  "physical_continuum_mass_gap": "OPEN"
+}

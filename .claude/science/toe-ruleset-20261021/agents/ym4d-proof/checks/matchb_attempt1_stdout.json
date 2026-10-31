@@ -1,0 +1,30 @@
+{
+  "checks": [],
+  "criteria_sha256": "420b42278b5d36595c6a9f94f3a329f8d5acfa7bc17e1adfec4b292a53101473",
+  "error": "ModuleNotFoundError(\"No module named 'psutil'\")",
+  "proof_sha256": "9f5fb403665e154c54427b2cfca25e2387357a2ea96b4706bb532a36352b7e54",
+  "resources": [
+    {
+      "load": [
+        1.97119140625,
+        1.76171875,
+        2.0078125
+      ],
+      "memory_status": "NOT MEASURED",
+      "nice": 20,
+      "peak_rss_bytes": 21757952,
+      "threads": {
+        "BLIS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1"
+      }
+    }
+  ],
+  "runner_sha256": "960c42aae1946f0c74589d13d90a2c0ca56d0cdc30f638dcfcf4d58a464d07ee",
+  "scope": "Finite rational diagnostics only; not actual gauge-history bounds or regeneration.",
+  "seconds": 0.0015794580103829503,
+  "status": "NOT RUN"
+}

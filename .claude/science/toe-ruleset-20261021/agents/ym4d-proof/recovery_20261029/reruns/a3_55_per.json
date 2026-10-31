@@ -1,0 +1,11 @@
+{
+  "script": "checks/a3_55_per.py",
+  "source_sha256": "99215af3b88dafbf8e449b403cb47e44ed4a6fd868a002c54cf3503236667c22",
+  "started_at_utc": "2026-10-29T10:49:47.557396+00:00",
+  "duration_seconds": 4.326,
+  "exit_code": 0,
+  "python": "3.12.8",
+  "matches_original_stdout": true,
+  "stderr_bytes": 0,
+  "scope": "Same-script reproduction only; not independent proof verification"
+}

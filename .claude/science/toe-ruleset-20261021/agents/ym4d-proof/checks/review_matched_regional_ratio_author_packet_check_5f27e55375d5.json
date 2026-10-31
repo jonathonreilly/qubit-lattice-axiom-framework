@@ -1,0 +1,212 @@
+{
+  "schema": "restricted-review-author-packet-check-v1",
+  "completed_utc": "2026-10-30T08:24:04.004238+00:00",
+  "stage": "Separate compact author-packet check after immutable source-first findings",
+  "source_first_report": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_matched_regional_ratio_source_first_findings_5f27e55375d5.md",
+    "sha256": "0afc5a5c20bc2cedac684e00ced57b7a9ec67a1945419b772f6225914ccb7435",
+    "lines": 166
+  },
+  "source_first_read_manifest": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_matched_regional_ratio_source_first_read_manifest_5f27e55375d5.json",
+    "sha256": "4d779888b010f9134dd309c076022d4b450c85f951b3aaf9430c70e0d00fae83",
+    "lines": 154
+  },
+  "author_records_read": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/matched_regional_ratio_read_manifest.json",
+      "sha256": "2481adbd49a15ff10e6dd2c0f83adef27335a20fa0fcb8d7ed84e3d4d79e4f17",
+      "lines": 111
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/matched_regional_ratio_receipt.json",
+      "sha256": "b1c63a7ae0b2813b3fb68c8488fc9d9f4728be014509cb7e4df6aefc4a64c72f",
+      "lines": 71
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/matched_regional_ratio_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "lines": 9
+    }
+  ],
+  "identity_checks": [
+    {
+      "origin": "author_manifest.source",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MATCHED_REGIONAL_RATIO_ASTRA.md",
+      "sha256": "5f27e55375d59dde30eacb91efce42a16ba266d563833db2ffd5babdd14c4af6",
+      "lines": 460,
+      "result": "exact hash and line count match"
+    },
+    {
+      "origin": "author_receipt.source",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MATCHED_REGIONAL_RATIO_ASTRA.md",
+      "sha256": "5f27e55375d59dde30eacb91efce42a16ba266d563833db2ffd5babdd14c4af6",
+      "lines": 460,
+      "result": "exact hash and line count match"
+    },
+    {
+      "origin": "author_manifest.inputs[0]",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "lines": 592,
+      "result": "exact hash and line count match"
+    },
+    {
+      "origin": "author_manifest.inputs[1]",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "lines": 510,
+      "result": "exact hash and line count match"
+    },
+    {
+      "origin": "author_manifest.inputs[2]",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_ACTION_READER_ASTRA.md",
+      "sha256": "a466d55444d17c0d54fe9efecabc956ac5e3fcf9c61fdc0780d9248dabaf62fd",
+      "lines": 238,
+      "result": "exact hash and line count match"
+    },
+    {
+      "origin": "author_manifest.inputs[3]",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_DETERMINANT_READER_ASTRA.md",
+      "sha256": "bd33e000b839fe79e9a9bceda43d9b28b370e69717f0cedb8d1c14336642b755",
+      "lines": 397,
+      "result": "exact hash and line count match"
+    },
+    {
+      "origin": "author_manifest.inputs[4]",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "lines": 722,
+      "result": "exact hash and line count match"
+    },
+    {
+      "origin": "author_manifest.reuse[0]",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/regional_chart_return_read_manifest.json",
+      "sha256": "b8e4721771409ea4b7d959b9204ab2cb7bf60a7e38fa6b400a872a1b6d263744",
+      "lines": 175,
+      "result": "exact hash and line count match"
+    },
+    {
+      "origin": "author_manifest.reuse[1]",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_read_manifest.json",
+      "sha256": "35be410ae0b57a82e902d5030066fd902a3b8ea69830c8507cc5d8392a9758f0",
+      "lines": 246,
+      "result": "exact hash and line count match"
+    },
+    {
+      "origin": "author_receipt.package[0]",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/matched_regional_ratio_read_manifest.json",
+      "sha256": "2481adbd49a15ff10e6dd2c0f83adef27335a20fa0fcb8d7ed84e3d4d79e4f17",
+      "lines": 111,
+      "result": "exact hash and line count match"
+    },
+    {
+      "origin": "author_receipt.package[1]",
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/matched_regional_ratio_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "lines": 9,
+      "result": "exact hash and line count match"
+    }
+  ],
+  "protected_source_hash_checks": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "inspection": "hash-only unless separately listed in mathematical read manifest"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+      "inspection": "hash-only unless separately listed in mathematical read manifest"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHRINKING_CHART_RETURN_ASTRA.md",
+      "sha256": "9ae446ca746639ff77295f9da712f47e4be9d315d7c26e975535f1602321abfc",
+      "inspection": "hash-only unless separately listed in mathematical read manifest"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "inspection": "hash-only unless separately listed in mathematical read manifest"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+      "sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+      "inspection": "hash-only unless separately listed in mathematical read manifest"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_CHART_RETURN_ASTRA.md",
+      "sha256": "88b5b59feaf278d9b9995adc320a446363fa68887d277ca4315c6469fb3aa525",
+      "inspection": "hash-only unless separately listed in mathematical read manifest"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "inspection": "hash-only unless separately listed in mathematical read manifest"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8",
+      "inspection": "hash-only unless separately listed in mathematical read manifest"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+      "sha256": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8",
+      "inspection": "hash-only unless separately listed in mathematical read manifest"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md",
+      "sha256": "4f94b5e2102391441233621d99be3e4b14dc46b9be89ea35915b354a4d0a06d6",
+      "inspection": "hash-only unless separately listed in mathematical read manifest"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "inspection": "hash-only unless separately listed in mathematical read manifest"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "inspection": "hash-only unless separately listed in mathematical read manifest"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GRADED_COMPLEMENT_ASTRA.md",
+      "sha256": "22e30738d5d59adc65c146c7e9fa3bd671462d694a7ae1fe14e73804774e5341",
+      "inspection": "hash-only unless separately listed in mathematical read manifest"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "inspection": "hash-only unless separately listed in mathematical read manifest"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_ACTION_READER_ASTRA.md",
+      "sha256": "a466d55444d17c0d54fe9efecabc956ac5e3fcf9c61fdc0780d9248dabaf62fd",
+      "inspection": "hash-only unless separately listed in mathematical read manifest"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CRITICAL_DETERMINANT_READER_ASTRA.md",
+      "sha256": "bd33e000b839fe79e9a9bceda43d9b28b370e69717f0cedb8d1c14336642b755",
+      "inspection": "hash-only unless separately listed in mathematical read manifest"
+    }
+  ],
+  "mechanical_checks": {
+    "target": "MR1-MR20 each once; balanced fences; no trailing whitespace; seven local links resolve",
+    "target_local_links": [
+      "REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "REGIONAL_CHART_RETURN_ASTRA.md",
+      "COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "CRITICAL_ACTION_READER_ASTRA.md",
+      "CRITICAL_DETERMINANT_READER_ASTRA.md",
+      "checks/matched_regional_ratio_read_manifest.json",
+      "checks/matched_regional_ratio_receipt.json"
+    ],
+    "all_independently_read_source_hashes_unchanged": true,
+    "vocabulary_record": "Author JSON reports zero violations. Its record bytes were checked; the historical lint command was not independently authenticated or rerun."
+  },
+  "scope": "Metadata consistency, range validity, source freshness and package classification only. Self-reported prior reads and lint records are author provenance, not independent proof or an authenticated execution history.",
+  "historical_bindings": "Author reuse records retain their own source hashes and earlier-session identities. Their hash agreement does not turn them into current reviewer evidence. Their contents and predecessor reviews were not used as premises.",
+  "author_science_scripts_executed": false,
+  "numerical_physics_runs": 0,
+  "result": "PASS for compact author-packet consistency; no source verdict inferred from the packet"
+}

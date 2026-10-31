@@ -1,0 +1,22 @@
+{
+  "label": "sea_su2",
+  "script": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_sea_su2.py",
+  "script_sha256": "08ba1bdfccd0ec4ecc562d487dd4cb201ff55b1bd0cc5bc43fcad1c53f76b278",
+  "copies": {
+    "review_source_sea_su2.py": "08ba1bdfccd0ec4ecc562d487dd4cb201ff55b1bd0cc5bc43fcad1c53f76b278"
+  },
+  "temporary_directory": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/ym-next-reviews-root-replay-3yv6qmmm/sea_su2",
+  "exit_code": 0,
+  "wall_seconds": 0.16382384300231934,
+  "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_review_sea_su2_out.json",
+  "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_next_review_sea_su2_err.txt",
+  "stdout_sha256": "cb1cc9e78d0751c84c1309c0c34993b4acb865b7fb60759c3e48189f8a016014",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "reference": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_sea_su2_01.json",
+  "reference_sha256": "368b63b25d9f232bd9d5576cdd507ae4c2270b7525970bdeca9f54334da28311",
+  "excluded_top_level_timing_field": "seconds",
+  "exact_non_time_json_match": true,
+  "differing_top_level_keys": [],
+  "source_unchanged": true,
+  "reference_unchanged": true
+}

@@ -1,0 +1,15 @@
+C0 root covariance max|Q d lam - d ev lam|/max|lam| = 1.3e-16; max|Q_ax B_j - B_(j+1)|/max|B_k| = 7.7e-15: PASS
+C1 Lemma Gamma0 (constant curvature 1): |(Q_sym - Q_ax)B| = 0.0e+00; control |(Q_asym - Q_ax)B| = 1.500: PASS
+C2 symmetric, theta = 1/2: W(5,0)/W(5,4) = 0.2165 (<= 0.5): PASS
+C3 symmetric, theta = 1: max_j W/W(5,4) = 1.9483 (<= 2): PASS
+C4 control asymmetric, theta = 1/2: W(5,0)/W(5,4) = 11.8546 (>= 2): PASS
+C5 informational profiles W_theta(5, j), j = 0..4 (finest first):
+  sym  theta = 0.0: 0.0173, 0.0503, 0.1408, 0.3588, 0.7199
+  sym  theta = 0.5: 0.2699, 0.4525, 0.7314, 1.0763, 1.2468
+  sym  theta = 1.0: 4.2075, 4.0721, 3.8004, 3.2290, 2.1596
+  asym theta = 0.0: 1.2363, 1.2351, 1.2281, 1.2015, 0.9386
+  asym theta = 0.5: 19.2722, 11.1155, 6.3812, 3.6044, 1.6257
+  asym theta = 1.0: 300.4241, 100.0397, 33.1575, 10.8133, 2.8158
+  symmetric max_j W_1/2(k, j), k = 1..5: 1.2468, 1.2468, 1.2468, 1.2468, 1.2468
+VERDICT: ALL PASS (C0-C4)
+[t = 0.3 s]

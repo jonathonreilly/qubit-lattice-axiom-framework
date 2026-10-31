@@ -1,0 +1,16 @@
+L0 (sign consistency, centre roots): PASS  links in support = 216; corner-root support = 216 (consistent=True)
+   L1 l=0: D_F = 32/9 (prediction 4(1-L^(l-k)) = 32/9)
+   L1 l=1: D_F = 8/3 (prediction 4(1-L^(l-k)) = 8/3)
+L1 (FLUX read radius = 4(1-L^(l-k)) < 4): PASS  D_F = {0: Fraction(32, 9), 1: Fraction(8, 3)}
+C1 (claim D_F(1) <= 4(1-1/L) - 1/L): FIRES  D_F(1) = 8/3
+L2 (DEC Q^T read radius <= 11/3): PASS  D_Q = 10/3 (Q_str^T part 10/3, h^T d* part 10/3)
+C2 (claim D_Q <= 4(L-1)/L): FIRES  D_Q = 10/3
+   L3 (a,b)=(0,1): D_P = 10/9; bound 5 rho_b = 5/3; prediction 5(rho_b - rho_a) = 10/9 -> matches
+   L3 (a,b)=(1,2): D_P = 10/3; bound 5 rho_b = 5; prediction 5(rho_b - rho_a) = 10/3 -> matches
+   L3 (a,b)=(0,2): D_P = 40/9; bound 5 rho_b = 5; prediction 5(rho_b - rho_a) = 40/9 -> matches
+L3 (push-down transpose read radius < 5 rho_b): PASS  D_P = {(0, 1): Fraction(10, 9), (1, 2): Fraction(10, 3), (0, 2): Fraction(40, 9)}
+C3 (claim D_P(0,2) <= 4(rho_2 - rho_0)): FIRES  D_P(0,2) = 40/9
+L4 (FT (iv) funnel read radius <= 2, centre roots): PASS  D_FT(k=2, l=0,1) = 16/9; D_FT(k=3, l=2) = 52/27; prediction 5/3
+C4 (claim D_FT <= 2 with CORNER roots): FIRES  D_FT(corner, k=2) = 8/3
+
+VERDICT cm55_loc: ALL PASS (all controls fired) [5 criteria, 4 controls]

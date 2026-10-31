@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-29T21:35:36.190597+00:00",
+  "scope": "Affected-only Section 4 fixed-complement determinant correction; independent reviewer requested; theorem and volume-first scope unchanged",
+  "old_source": {
+    "commit": "c5841c8145",
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_ONE_LOOP_COUPLING_ASTRA.md",
+    "sha256": "977d901f2c886a533c9eb1b487414e1a081df681463003eb231a3ef2b1b26670",
+    "bytes": 36126
+  },
+  "new_source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_ONE_LOOP_COUPLING_ASTRA.md",
+    "sha256": "b7baa6a711969c8fc96538009bb8f9f9acdde3f14f6d2f570a6ca5b9391516ce",
+    "bytes": 38024
+  },
+  "old_receipt_preserved_at": "88130072aa",
+  "derivation": "For M=exp(e A), A*=-A, U=P0 A Q, F=P0 O1 Q: the e^2 compressed-logdet correction is 2 Re tr(D^-1 F*U)-tr(U*U). Within-Q commutators cancel against their bubble terms. Exact determinant equality transports complement and induced measure. The actual plane wave has only constant-to-±P blocks; normalized correction is T^-4 C_J(P), disappearing at fixed P before P->0.",
+  "tests": "No duplicate numerical replay; analytic block derivation independently checked. Existing source-check outputs remain historical evidence at the old source hash.",
+  "independent_re_review": "Pending exact-byte check by /root/soft_fluctuation_covariance",
+  "git_or_shared_edits": false
+}

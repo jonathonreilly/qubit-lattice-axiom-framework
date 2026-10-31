@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-10-29T18:51:57.507848+00:00",
+  "finding": "Conditional spectral-cone lemma requires explicitly measure-preserving geometric translations and covariance of the local net.",
+  "repair_author": "/root",
+  "reviewer": "/root/review_euclidean_rotation",
+  "source_path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/EUCLIDEAN_ROTATION_IMPORT_ASTRA.md",
+  "before": {
+    "revision": "119cd2c7bd3129448d4e48d42e402f7a4ca53b71",
+    "sha256": "71e3ea5e66bc694cee172ab1348594a9645b06df92b3e33b8633cd39c725208e"
+  },
+  "after_sha256": "513e44546c5147caa44479c616937994f46aab09764a9808a87f3edddb05e294",
+  "before_text": "**Conditional spectral-cone lemma.** Suppose one ordinary probability law\nhas a local observable net on R^d, translations acting strongly continuously\non its L2 space, measure-preserving coordinate and diagonal reflections,\nand RP on the closed positive-half L2 subspaces. Suppose bounded observables",
+  "after_text": "**Conditional spectral-cone lemma.** Suppose one ordinary probability law\nhas a local observable net on R^d. Geometric translations and coordinate\nand diagonal reflections act covariantly on that net, preserve the law,\nand satisfy the usual reflection\u2013translation relations. Assume translations\nact strongly continuously on its L2 space, and RP holds on the closed\npositive-half L2 subspaces. Suppose bounded observables",
+  "displayed_formulas_changed": false,
+  "diagnostic_code_changed": false,
+  "scope": "Narrow explicit-hypothesis repair; affected independent review pending. The candidate full RPM1 theorem is not certified and both continuum targets remain OPEN.",
+  "delegation_requested": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "max",
+    "fork_turns": "none"
+  },
+  "backend_metadata_independently_verified": false
+}

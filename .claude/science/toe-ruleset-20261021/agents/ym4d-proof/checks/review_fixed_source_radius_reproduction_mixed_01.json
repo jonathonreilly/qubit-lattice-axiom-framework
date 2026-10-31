@@ -1,0 +1,39 @@
+{
+  "program": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/fixed_source_radius_mixed_01.py",
+  "source_sha256": "2e191a0f9a514e7bd9398550f0ac0f7e77efd91deda6dec329578f4235ab11dc",
+  "started_utc": "2026-10-29T23:21:31.094309+00:00",
+  "elapsed_seconds": 0.5685378750204109,
+  "exit_code": 0,
+  "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_reproduction_mixed_01.stdout.json",
+  "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_fixed_source_radius_reproduction_mixed_01.stderr.txt",
+  "stderr_bytes": 0,
+  "independent_numerics": false,
+  "passed": 8,
+  "total": 8,
+  "controls": 3,
+  "failed": [],
+  "gates": [
+    {
+      "stage": "before_import",
+      "free_percent": 53,
+      "load": [
+        2.14404296875,
+        2.17333984375,
+        2.1708984375
+      ],
+      "rss_bytes": 17612800,
+      "seconds": 0.002118124975822866
+    },
+    {
+      "stage": "complete",
+      "free_percent": 53,
+      "load": [
+        2.14404296875,
+        2.17333984375,
+        2.1708984375
+      ],
+      "rss_bytes": 64749568,
+      "seconds": 0.4657106670201756
+    }
+  ]
+}

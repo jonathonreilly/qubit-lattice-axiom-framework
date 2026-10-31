@@ -1,0 +1,144 @@
+{
+  "record_type": "explicit_path_mechanical_validation",
+  "created_utc": "2026-10-30T15:14:37.371305+00:00",
+  "method": "scripts.vocab_lint.lint_one_file(path, load_yaml(), apply_fix=False); CLI intentionally not used because it excludes .claude",
+  "tool": {
+    "path": "scripts/vocab_lint.py",
+    "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+    "bytes": 14183,
+    "lines": 392
+  },
+  "rules": {
+    "path": "docs/repo/controlled_vocabulary.yaml",
+    "sha256": "e5c9ff6759418ca0605bf7f5fb5321f4b0ead19d52f61447e695b99959090d15",
+    "bytes": 53269,
+    "lines": 939
+  },
+  "markdown_inputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "sha256": "426f774581ae8385b1c546e676fb313bfed48ab14913454bdc38f67f2cebb230",
+      "bytes": 29763,
+      "lines": 581
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "sha256": "1538d3e9575b8b261bcf9b3394bfe4c56d9107c799364495e70315619f559f6e",
+      "bytes": 12799,
+      "lines": 212
+    }
+  ],
+  "lint_results": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "violations": [],
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0
+    }
+  ],
+  "violation_count": 0,
+  "diff_checks": [
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check",
+        "--",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_DETERMINANT_COUPLING_ASTRA.md",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_BARE_DETERMINANT_COUPLING_ASTRA.md",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_additional_process_manifest.json",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_author_packet_assessment.json",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_source_findings.json",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_source_read_manifest.json"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "scope_note": "Tracked diff only; untracked paths also receive explicit text checks below."
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--check",
+        "--",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_DETERMINANT_COUPLING_ASTRA.md",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_BARE_DETERMINANT_COUPLING_ASTRA.md",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_additional_process_manifest.json",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_author_packet_assessment.json",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_source_findings.json",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_source_read_manifest.json"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "scope_note": "Tracked diff only; untracked paths also receive explicit text checks below."
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "origin/main...HEAD",
+        "--check",
+        "--",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_DETERMINANT_COUPLING_ASTRA.md",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_BARE_DETERMINANT_COUPLING_ASTRA.md",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_additional_process_manifest.json",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_author_packet_assessment.json",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_source_findings.json",
+        ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_source_read_manifest.json"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "scope_note": "Tracked diff only; untracked paths also receive explicit text checks below."
+    }
+  ],
+  "untracked_text_checks": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "trailing_whitespace_lines": [],
+      "ends_with_newline": true,
+      "json_parse": "not_json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_BARE_DETERMINANT_COUPLING_ASTRA.md",
+      "trailing_whitespace_lines": [],
+      "ends_with_newline": true,
+      "json_parse": "not_json"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_source_findings.json",
+      "trailing_whitespace_lines": [],
+      "ends_with_newline": true,
+      "json_parse": "passed"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_additional_process_manifest.json",
+      "trailing_whitespace_lines": [],
+      "ends_with_newline": true,
+      "json_parse": "passed"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_source_read_manifest.json",
+      "trailing_whitespace_lines": [],
+      "ends_with_newline": true,
+      "json_parse": "passed"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_bare_determinant_coupling_author_packet_assessment.json",
+      "trailing_whitespace_lines": [],
+      "ends_with_newline": true,
+      "json_parse": "passed"
+    }
+  ],
+  "scientific_numerical_runs": 0,
+  "science_validation_claim": false
+}

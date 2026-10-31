@@ -1,0 +1,7 @@
+19:18  up 5 days, 13:07, 2 users, load averages: 4.39 3.95 3.30
+System-wide memory free percentage: 38%
+Tue Oct 27 23:18:35 UTC 2026
+run: one process, nice 10, OPENBLAS/OMP/MKL/VECLIB threads 1, numeric lock held; python3 without -I (user-site numpy); no external files read
+        2.59 real         2.46 user         0.04 sys
+           101761024  maximum resident set size
+first and only run; criteria unedited

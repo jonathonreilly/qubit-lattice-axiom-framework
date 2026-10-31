@@ -1,0 +1,42 @@
+--- Part A (k=2, T=3) ---
+A1[k=2,T=3]: PASS  root covariance Q d = d ev and Q = Q_str - d h, orders 01/10/avg
+A2[k=2,T=3]: PASS  d*_k Phi_l j = blocksum(d*_l j); |Phi_l j| <= 3^(k-l)|j|
+A3[k=2,T=3]: PASS  all 4 sources (cc) (root-supported, total 0); some q != 0: True
+A4[k=2,T=3]: PASS  d*b(S) = q exactly and max|b| <= c(S); (max|q|, max|b|, c(S)) = [('11', '10', '75'), ('7', '4', '72'), ('6', '6', '72'), ('7', '4', '81')]
+A5[k=2,T=3]: PASS  L_S(x) = L_S'(x) + <b, r_{k-1}(x)> on 32 (S,x) pairs
+A6[k=2,T=3]: PASS  D(S') = D(S'^G) = D(S'^j) = D(S'^s) = 0 pointwise
+A7[k=2,T=3]: PASS  top residual slot alone: D = ev^(0->k)T d* s_{k-1}, nonzero, root-supported, total 0
+A8[k=2,T=3]: PASS  E_src(x; top residual source b) - E(x; B_k = b/kappa_{k-1}) = -||b||^2/(2 kappa_{k-1}) for all x
+A9[k=2,T=3]: PASS  D(Hx) = kappa_{k-1} ev^(0->k)T d* r_{k-1}(x) for 8 random chains
+C1[k=2,T=3] control: FIRES  b with Phi_0 omitted: d*b != q
+C2[k=2,T=3] control: FIRES  A5 with Q^{01 T} in S' while the chain uses Q^avg: identity fails
+C3[k=2,T=3] control: FIRES  A8 with kappa_{k-2}: differences not constant
+C4[k=2,T=3] control: FIRES  A9 with kappa_0 in place of kappa_{k-1}: fails
+C5[k=2,T=3] control: FIRES  bound without the max|s_{k-1}| term fails on s_{k-1} = delta_b
+    (Part A k=2 T=3 done at 1.4s)
+--- Part A (k=3, T=2) ---
+A1[k=3,T=2]: PASS  root covariance Q d = d ev and Q = Q_str - d h, orders 01/10/avg
+A2[k=3,T=2]: PASS  d*_k Phi_l j = blocksum(d*_l j); |Phi_l j| <= 3^(k-l)|j|
+A3[k=3,T=2]: PASS  all 4 sources (cc) (root-supported, total 0); some q != 0: True
+A4[k=3,T=2]: PASS  d*b(S) = q exactly and max|b| <= c(S); (max|q|, max|b|, c(S)) = [('9', '9', '186'), ('8', '5', '249'), ('8', '6', '258'), ('3', '12', '249')]
+A5[k=3,T=2]: PASS  L_S(x) = L_S'(x) + <b, r_{k-1}(x)> on 32 (S,x) pairs
+A6[k=3,T=2]: PASS  D(S') = D(S'^G) = D(S'^j) = D(S'^s) = 0 pointwise
+A7[k=3,T=2]: PASS  top residual slot alone: D = ev^(0->k)T d* s_{k-1}, nonzero, root-supported, total 0
+A8[k=3,T=2]: PASS  E_src(x; top residual source b) - E(x; B_k = b/kappa_{k-1}) = -||b||^2/(2 kappa_{k-1}) for all x
+A9[k=3,T=2]: PASS  D(Hx) = kappa_{k-1} ev^(0->k)T d* r_{k-1}(x) for 8 random chains
+C1[k=3,T=2] control: FIRES  b with Phi_0 omitted: d*b != q
+C2[k=3,T=2] control: FIRES  A5 with Q^{01 T} in S' while the chain uses Q^avg: identity fails
+C3[k=3,T=2] control: FIRES  A8 with kappa_{k-2}: differences not constant
+C4[k=3,T=2] control: FIRES  A9 with kappa_0 in place of kappa_{k-1}: fails
+C5[k=3,T=2] control: FIRES  bound without the max|s_{k-1}| term fails on s_{k-1} = delta_b
+    (Part A k=3 T=2 done at 7.4s)
+--- Part B (k=1, T=3, exact solve) ---
+    reduced Hessians built (90 unknowns, 72 tree links) at 7.5s
+B1: PASS  solved x satisfies Hx = S on all 162 links (sources S and S')
+B2: PASS  kappa_0 d* r_0(x) = q exactly at the critical point; max|q| per source = ['8', '7', '12']
+B3: PASS  dx_0(S) = dx_0(S') + dy_0 and r_0(S) = r_0(S') + r_0(y) + b/kappa_0 exactly (3 sources)
+B4: PASS  data minimisers with Q^avg, Q^01, Q^10: identical dx_0 and r_0 for 3 data (2 random, b/kappa_0)
+C6 control: FIRES  energies differ as functions: True; gauge-fixed minimisers x_0 differ: True
+B5 (informational contrast): root-charged plain current, chain Q^avg vs Q^01: dx_0 differ = True
+    (Part B done at 9.2s)
+VERDICT cc55: ALL PASS (all controls fired)  [33 items, 9.2s]

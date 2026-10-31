@@ -1,0 +1,171 @@
+{
+  "record_kind": "author/provenance context AFTER immutable source-only findings",
+  "recorded_at_utc": "2026-10-30T15:41:41.276534+00:00",
+  "target_revision": "c7ff8a85d25c1777ac818500356d4c2219387152",
+  "frozen_source_manifest_sha256": "9681c4a7f4ed628a0fe1b28050eab41aeacc793b4f04e0247d4ae8fcc9d83bc9",
+  "frozen_source_findings_sha256": "44fdc817526034c60be5ac13410a8551b3767f50abdad7040b43d518c8c9398a",
+  "read_files": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHARTER_A.md",
+      "revision": "c7ff8a85d25c1777ac818500356d4c2219387152",
+      "git_blob": "0be2dd1eac46ff33c27a5307419e85d87779ab86",
+      "sha256": "e372ee1bf0c36cd4221e7a811844ed69e7302bcc2308e3d44ab35194d763c0ab",
+      "line_count": 42,
+      "read_ranges": [
+        [
+          1,
+          42
+        ]
+      ],
+      "run_by_reviewer": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/push_a_kernel_moments.py",
+      "revision": "c7ff8a85d25c1777ac818500356d4c2219387152",
+      "git_blob": "80c8f6b28d728c74aad8ff50450bb8d8d3203fb4",
+      "sha256": "e1e7f51312c7633972829b25518b3ef8ad1a86b3368e65d18b83affb2e8c59f1",
+      "line_count": 116,
+      "read_ranges": [
+        [
+          1,
+          116
+        ]
+      ],
+      "run_by_reviewer": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/push_a_kernel_moments.log",
+      "revision": "c7ff8a85d25c1777ac818500356d4c2219387152",
+      "git_blob": "7ea201ba0e8359cce363e62428d1495276d45550",
+      "sha256": "6fdeb52f78737540c2c22314b8aef0706be7b8b41c173a5414f3e0d723d8e5b3",
+      "line_count": 17,
+      "read_ranges": [
+        [
+          1,
+          17
+        ]
+      ],
+      "run_by_reviewer": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/push_a_flat_hessian.py",
+      "revision": "c7ff8a85d25c1777ac818500356d4c2219387152",
+      "git_blob": "80593a35496a929dc393a3e7d7c0d0b6e94f55a4",
+      "sha256": "8bc6ae3a8c65dda8819aa26e43f0de0068c1cc2542f63a51e59b5359a3214039",
+      "line_count": 310,
+      "read_ranges": [
+        [
+          1,
+          310
+        ]
+      ],
+      "run_by_reviewer": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/push_a_flat_hessian.log",
+      "revision": "c7ff8a85d25c1777ac818500356d4c2219387152",
+      "git_blob": "cde219f4db01a80f039c8a118a14ddc188a0d844",
+      "sha256": "cce1e86ac93110924ff23364b7b47e6c48c8201ce3aae32309361c68ea63e20c",
+      "line_count": 30,
+      "read_ranges": [
+        [
+          1,
+          30
+        ]
+      ],
+      "run_by_reviewer": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/push_a_core_return.py",
+      "revision": "c7ff8a85d25c1777ac818500356d4c2219387152",
+      "git_blob": "8a7c6c6b8f42f5ca4c4c8582b699bb69b0b4fd0b",
+      "sha256": "91efcdfad65b09f6825ffca0ba2e5cc3be7035e478e8a18df413f9a7c38e2567",
+      "line_count": 326,
+      "read_ranges": [
+        [
+          1,
+          326
+        ]
+      ],
+      "run_by_reviewer": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/push_a_core_return.log",
+      "revision": "c7ff8a85d25c1777ac818500356d4c2219387152",
+      "git_blob": "31a321a16afda2950dd399519347a74d77be2237",
+      "sha256": "cf6d76b67c1293d7562599cfe85a958830275ec7f77296283cb8f7c165d34252",
+      "line_count": 24,
+      "read_ranges": [
+        [
+          1,
+          24
+        ]
+      ],
+      "run_by_reviewer": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/push_a_resolvent_paths.py",
+      "revision": "c7ff8a85d25c1777ac818500356d4c2219387152",
+      "git_blob": "654d303579c3156cc681bc3a68cbdbd5a0aac11d",
+      "sha256": "65627f3503e8335941aedafef53be2e55317b27e9cd93c462439fa78c51dc857",
+      "line_count": 168,
+      "read_ranges": [
+        [
+          1,
+          168
+        ]
+      ],
+      "run_by_reviewer": false
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/push_a_resolvent_paths.log",
+      "revision": "c7ff8a85d25c1777ac818500356d4c2219387152",
+      "git_blob": "694ebf91178251b9c867838854af464751c56ba5",
+      "sha256": "b61e8ad3be9fec8cdfd6a927eb0a2b20d40e0d9dd3a11d36f43c67ab3ca5137b",
+      "line_count": 22,
+      "read_ranges": [
+        [
+          1,
+          22
+        ]
+      ],
+      "run_by_reviewer": false
+    }
+  ],
+  "preregistration": {
+    "status": "No verified matching preregistration in the bounded frozen-packet search; exploratory only.",
+    "searches": [
+      "git ls-tree -r --name-only c7ff8a85d25c1777ac818500356d4c2219387152 -- .claude/science/toe-ruleset-20261021/agents/ym4d-proof; narrow filter CHARTER_A.md or checks/push_a_",
+      "git grep -n -i -E push_a_(kernel_moments|flat_hessian|core_return|resolvent_paths)|Push A c7ff8a85d25c1777ac818500356d4c2219387152 -- lane/*criteria* lane/*CRITERIA*"
+    ],
+    "limits": "No claim that no preregistration exists elsewhere. A declared script grid or embedded threshold is not a separately frozen pre-run criteria file. PROCESS_LIGHT.md asks for criteria before a numerical script; CHARTER_A.md encourages diagnostics but does not explicitly waive this requirement.",
+    "treatment": "No scientific diagnostic rerun; no finite grid, printed success, RSS claim or source label used as a proof premise."
+  },
+  "diagnostic_assessment": [
+    {
+      "stem": "kernel_moments",
+      "method": "Haar radial quadrature compared with Bessel formulas, MGF and moment bounds on a finite s grid.",
+      "limits": "Finite quadrature has a truncated scaled-angle interval at large s without a certified tail-error argument. No arbitrary history or volume theorem. Printed 115 checks and max 1.11e-15 are author observations only."
+    },
+    {
+      "stem": "flat_hessian",
+      "method": "Actual paired-path finite differences and Bloch matrices on seven momenta; checks nonlinear mean/normalizer and rough flux direction.",
+      "limits": "Sampled momenta cannot supply the positive uniform tree quotient gap. Does not verify the rectangular covariance theorem or arbitrary posterior. Shares contour code with later diagnostics."
+    },
+    {
+      "stem": "core_return",
+      "method": "One-link six-plaquette checks, Haar quadrature, explicit core geometry, Frechet derivative comparisons and arithmetic substitutions into displayed majorants.",
+      "limits": "No pinned-output core integral or inherited-action return experiment. Threshold arithmetic uses the proposed bound itself. Does not establish its own hypotheses. Printed u_core approximately 2.5055e10 is not an independently certified optimal threshold."
+    },
+    {
+      "stem": "resolvent_paths",
+      "method": "Explicit true-tree columns, exact integer incidence arithmetic, signed versus entrywise-absolute spectral matrices, axial Schur/alias comparison and recurrence arithmetic.",
+      "limits": "Shared geometry helper is not independent code. Exact counts can corroborate geometry after it is proved; finite spectra and nine Schur cases are not volume-uniform proofs. Reviewer obtained WP2 counts and GS2 identities analytically before this read."
+    }
+  ],
+  "charter_role": "Author task and provenance only; not a mathematical premise or governing instruction to the reviewer. PROVEN labels were not promoted into independent evidence.",
+  "change_to_frozen_mathematical_findings": "none",
+  "publication_exclusion": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_push_a_cycle3_literature_cache/**"
+  ]
+}

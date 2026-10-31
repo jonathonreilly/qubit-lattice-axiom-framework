@@ -1,0 +1,11 @@
+A1 composite Q3.Q3 = Q9: rel err 8.61e-17; d(Q^n A) = block-avg square flux (n=3,9): rel err 1.17e-16 -> PASS
+A2 n=3: max plaq count 9 (bound 9), max link count 3 (bound 6); n=9: max plaq count 81 (bound 81), max link count 9 (bound 18) -> PASS
+A3 max ratio |dB_k(P)|^2/E_C(P) vs C_loc=40: k=1 sc=0.0: 0.011; k=1 sc=0.3: 0.013; k=1 sc=1.0: 0.105; k=1 sc=3.0: 0.873; k=1 sc=10.0: 3.814; k=1 constflux: 0.720; k=1 pattern: 0.005; k=2 sc=0.0: 0.000; k=2 sc=0.3: 0.000; k=2 sc=1.0: 0.001; k=2 sc=3.0: 0.009; k=2 sc=10.0: 0.060; k=2 constflux: 0.561; k=2 pattern: 0.000; k=1 ascent(4x50): 0.406 -> PASS
+A4 (info) max sum_P|dB_k|^2/E(chain) = 1.9879 vs 12*C_loc = 480
+B1 SU(2) max d(M) = 4.44e-16 -> PASS;  B2 min d(M) (both) = -4.44e-16 -> PASS
+   maximiser check: max(F(competitor) - F(W0)) = -5.00e-13 (<= 1e-14 means W0 global); max fixed-point residual 1.0e-15
+B3 SU(3) median slope of log d vs log y = 5.367 (n=20/50; range 2.72..6.28) -> FAIL
+B4 |k~ - phi - d| max = 2.07e-15 -> PASS
+B5 (info) d / ((trP/N) alpha^2/(2N^2)) at y=0.08, SU(3): median 1.0000, range 0.0000..1.0187
+OVERALL: FAIL  (A1 True, A2 True, A3 True, B1 True, B2 True, B3 False, B4 True)
+time 1.7 s; peak RSS 148 MB

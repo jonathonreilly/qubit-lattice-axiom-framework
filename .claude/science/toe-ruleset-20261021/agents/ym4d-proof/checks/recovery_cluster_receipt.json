@@ -1,0 +1,106 @@
+{
+  "artifacts": [
+    {
+      "bytes": 34277,
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/RECOVERY_CLUSTER_ASTRA.md",
+      "sha256": "2c4a9abd12082f756a82ab94999757abd2ebc64950f957ce47ab0a049da2e04f"
+    },
+    {
+      "bytes": 11068,
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/recovery_cluster_exact.py",
+      "sha256": "5f51587d7f1630f6db15fef1dd697340a096839808ea00941b751a12bd70f0e6"
+    },
+    {
+      "bytes": 2120,
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/recovery_cluster_results.json",
+      "sha256": "32cd636afae7bf554020db1903051c7efac9357c681f59816e8e2345d1be4239"
+    }
+  ],
+  "assigned_baseline": "46dc04b05c5842a03ae3af64caa77628f099128f",
+  "author_model_dispatch": {
+    "evidence": "Coordinator reports explicit spawn_agent dispatch with fork_turns none; not a separate runtime attestation.",
+    "model": "gpt-6-astra",
+    "reasoning_effort": "max",
+    "vendor_family": "OpenAI"
+  },
+  "author_status": "Completed conditional author proposal; frozen, no audit status.",
+  "baseline_verification": "Coordinator-supplied; no git was run.",
+  "completed_utc": "2026-10-29 11:13:54 UTC",
+  "coordinator_reproduction": "Reported by coordinator: exit 0, empty stderr, byte-for-byte stdout match; not independent mathematical review.",
+  "execution": {
+    "command": "python3 checks/recovery_cluster_exact.py > checks/recovery_cluster_results.json",
+    "independence": "Two exact finite algebraic calculation paths; author-run, not fresh independent referee.",
+    "observed_exit_code": 0,
+    "passed_predicates": 15,
+    "workdir": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof"
+  },
+  "methodology_sources": [
+    {
+      "bytes": 1118,
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/AGENTS.md",
+      "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0"
+    },
+    {
+      "bytes": 11788,
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3"
+    }
+  ],
+  "scope": "Author-proved generic conditional theorem; Yang--Mills producer and actual return denominator remain uninstantiated.",
+  "sources": [
+    {
+      "bytes": 46090,
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_STEP.md",
+      "read_coverage": "Complete file, all findings R1-R13 and final receipt/bankable claims.",
+      "sha256": "32bab8cbc920447280b3da93a1754bf792509a115bbf8cfffc7101350fe64a0d"
+    },
+    {
+      "bytes": 94345,
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "read_coverage": "Complete corresponding CX argument, sections 5.1-5.4; errata S8/S9 with adjacent errata context.",
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce"
+    },
+    {
+      "bytes": 40778,
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_SRC2.md",
+      "read_coverage": "F1/F2/F7; intervening review passages also read, not independently re-audited.",
+      "sha256": "b817b7a8639c0585628cdadb169c80bb3fc3ff4afb22cbd76539c15fc695938e"
+    },
+    {
+      "bytes": 32427,
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/CODEX_REVIEW_B2.md",
+      "read_coverage": "Consumer/locality caveats R7/R8; relevant R6 and R11 context in initial reads.",
+      "sha256": "d7baa377f386e6a6800e6056b87fdaf89b3811dd3845b958050a2176420108ed"
+    },
+    {
+      "bytes": 70280,
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/BFT34_55.md",
+      "read_coverage": "Sections 1.1-1.2 (actual named inputs), 2.1-2.3 through start of 2.3.",
+      "sha256": "f714a647910c4fd19570ecd192b98144b6c54d37c8c4f30c73bd20d426ef717d"
+    },
+    {
+      "bytes": 48089,
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/LINEAR_PACKAGE.md",
+      "read_coverage": "Section 5 theorem statement and proof qualifications; its proof is not imported as authority for CX-R.",
+      "sha256": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad"
+    },
+    {
+      "bytes": 763842,
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "read_coverage": "Full Theorem RW at present lines 5660-5718 and N5-sf_i at 5811-5823; locating-string searches.",
+      "sha256": "797a4b886e541e36c6ec09a142540b7a410b9e46eccce003ce72624b6842f5b9"
+    },
+    {
+      "bytes": 87410,
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/SRC2_55.md",
+      "read_coverage": "Section 3.5 MB/per-step package and E11 strict-locality qualification.",
+      "sha256": "66206a0bc13e5c4c264136abb0aa8a5620e66958a561fc7c0fcee4ff3989676c"
+    },
+    {
+      "bytes": 48911,
+      "path": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/B2_55.md",
+      "read_coverage": "J6/J7 and locating-string searches for its source/consumer hypotheses.",
+      "sha256": "b178059680f29adc5f4bdac0b07621c2f1697047364cdde0f5963cf25040164d"
+    }
+  ]
+}

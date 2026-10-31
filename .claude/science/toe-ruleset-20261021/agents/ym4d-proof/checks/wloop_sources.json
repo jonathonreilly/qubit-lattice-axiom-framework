@@ -1,0 +1,84 @@
+{
+  "timestamp_utc": "2026-10-30T01:59:53.779741+00:00",
+  "head": "bb3e11fa4bf6e75e185bf5ba0950dfbef04e8727",
+  "cached_origin_main": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "network_freshness": "not refreshed; explicit author path/no-commit scope; cached refs only",
+  "files": {
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_q/WLOOP/AUTHOR.md": {
+      "sha256": "958936c0ac488f92fdb80c1d1962751e65ec44c6b95f34cf9b4209b64559ed85",
+      "bytes": 2929
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_q/WLOOP/REVIEW.md": {
+      "sha256": "5acb7feeb6e4b6933d493a945c43321abf687d716f2a30dd386e3aafd538d6d7",
+      "bytes": 795
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md": {
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "bytes": 1497
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HANDOFF.md": {
+      "sha256": "7061504a18be15edf0366582202b898c6126e38af662e057758c61642193431e",
+      "bytes": 59568
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/ASSEMBLY55.md": {
+      "sha256": "c15524d7a1c3c04ce9c32567f6f61ec5113ebe24be9eba8de87f97e3109d326d",
+      "bytes": 88645
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OSLEAF55.md": {
+      "sha256": "c261a0c5eb300052445a05b3041b5ddf6e518445d3eacac36fc4421e60f66b78",
+      "bytes": 109340
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REC_LIB.md": {
+      "sha256": "47dd75c7ca3c4f9f1af43139292d1fcfa6774b10f8e6ea2babc05ad67a48e29a",
+      "bytes": 75139
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REC_CONT.md": {
+      "sha256": "ac7ac0854fb320f183779f67be136063dfb750ee3f13b869acad10a7ac12a278",
+      "bytes": 52198
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/W_T0.md": {
+      "sha256": "eaf064445948aed7096e7d4e53c20ed4407d1c87458943feb52f3d7638f2e804",
+      "bytes": 45177
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HRP.md": {
+      "sha256": "d3a53ef3b29d09c774b1a836603ca731eeadb580127d3928dbbcd5dbe343699e",
+      "bytes": 51835
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SRC2_55.md": {
+      "sha256": "66206a0bc13e5c4c264136abb0aa8a5620e66958a561fc7c0fcee4ff3989676c",
+      "bytes": 87410
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SRCAN55.md": {
+      "sha256": "7d6770a75318f6f9368428d1a01e36c2de5f56ea008071b531d71318ad78faa4",
+      "bytes": 83986
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SRCCD55.md": {
+      "sha256": "80a347f5d2bc801fc0395b6d61aa5c0661dd098ae4430bcf760b874729761d03",
+      "bytes": 91420
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FLOW.md": {
+      "sha256": "085cd225228a23847b053650fe8bff4c14529d7e630a74565b301d39855e442f",
+      "bytes": 539577
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FLOW55.md": {
+      "sha256": "56d2707f4b571585db26cf2a077dbaee57bc936c76821cdbc50710e4b36e9d25",
+      "bytes": 70208
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FLOWPOS55.md": {
+      "sha256": "d1ee18a2571b29f43f393fa64163c3032dbe6a9311bb6053b0646d4755c29d55",
+      "bytes": 2859
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_TARGET.md": {
+      "sha256": "105440c10b9a2fc91b2be366f439053de05fd3d3497596f8f28993b0fe42de7b",
+      "bytes": 7507
+    },
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-existence/EXISTENCE.md": {
+      "sha256": "14345292370a55e1dabbb0875e70b4a989bfdf096841255bed7eb75771a647f0",
+      "bytes": 495233
+    },
+    "docs/ai_methodology/SCIENCE_WORKFLOW.md": {
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "bytes": 11788
+    }
+  }
+}

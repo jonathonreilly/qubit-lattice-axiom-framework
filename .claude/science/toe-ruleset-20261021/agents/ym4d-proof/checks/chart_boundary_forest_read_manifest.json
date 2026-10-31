@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "role": "author; no independent review or audit authority",
+  "requested_configuration": "Astra/max requested by parent; backend not independently attested",
+  "starting_head_from_coordinator": "97e5a0329f86c8f7581da7878243e3309e657d0f",
+  "sources": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROBABILITY_SENSITIVE_RETURN_ASTRA.md",
+      "sha256": "6ef027d54bd0ca1948444c9b82c673ed0cae2e23cd59b25f0c53498194e9b18b",
+      "line_count": 544,
+      "read_ranges": [
+        [
+          1,
+          544
+        ]
+      ],
+      "coverage": "Complete direct proof read; BF1\u2013BF3 use PS5 and local coefficient majorants; PS19/20 remain open."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOFT_BACKGROUND_ASTRA.md",
+      "sha256": "87119008ccf754022b5da0836bb1bea8e0455a5535e589a4207ee49193682b74",
+      "line_count": 568,
+      "read_ranges": [
+        [
+          1,
+          342
+        ]
+      ],
+      "coverage": "Actual lift, tree/Haar quotient, flat-brick gap, finite-u Hessian/force, analytic local constants and critical-point scope; later sections not consumed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "line_count": 722,
+      "read_ranges": [
+        [
+          1,
+          319
+        ],
+        [
+          508,
+          634
+        ]
+      ],
+      "coverage": "Actual phase, complete-reader atoms, critical point, exact sector normalization and G/Omega/complement boundary; later selected-sector forest proof not consumed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+      "line_count": 617,
+      "read_ranges": [
+        [
+          1,
+          350
+        ]
+      ],
+      "coverage": "Actual original cut and conditional law, word/coercivity mechanism, compact normalizer CS15\u201316; real interacting tails are not used in Gaussian bounds."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FIXED_SOURCE_RADIUS_ASTRA.md",
+      "sha256": "6304245bdf27afa6c7f364da9bc41d8971cc0f2058c1e3484edef84df44cff86",
+      "line_count": 627,
+      "read_ranges": [
+        [
+          1,
+          176
+        ],
+        [
+          412,
+          550
+        ]
+      ],
+      "coverage": "Fixed-source theorem, polynomial-only FR9, actual normalizer/source/action and exact complement scope. Section 3 forest proof was not consumed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "sha256": "203d4edbf97078d88fcb488f164e525d2671fe5a2a910c5f6e49f615e8f41bfe",
+      "line_count": 266,
+      "read_ranges": [
+        [
+          1,
+          266
+        ]
+      ],
+      "coverage": "Complete scope read; tree-phase theorem is not consumed as an actual finite-u minimizer or covariance theorem. Its numerical scripts/outputs were not read or used."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD.md",
+      "sha256": "a60232a648e9832d0223cc0fa06ef84d8dbfe54fa91f875a8c96c3f89140aba5",
+      "line_count": 1037,
+      "read_ranges": [
+        [
+          822,
+          891
+        ]
+      ],
+      "coverage": "Only R15\u2013R17 product-reference hard-cut consumer and its limitation are consumed; no complete RD review is claimed."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "line_count": 11,
+      "read_ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "coverage": "Complete owner procedure."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LITERATURE_BRIDGES.md",
+      "sha256": "1945e4a1ed56ce73c5383921de2453d658b0849333c1b9696e3dbc9e0b040bf6",
+      "line_count": 81,
+      "read_ranges": [
+        [
+          51,
+          51
+        ]
+      ],
+      "coverage": "B41 routing entry only; primary paper was read directly."
+    }
+  ],
+  "methodology": [
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "71cab17ea2d5ec892b5d9dbefd608c0d51e77ea398a62f33679736510d9f63d3",
+      "line_count": 193,
+      "coverage": "Selected immutable methodology read; combined-output truncation was repaired with bounded follow-up reads."
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "line_count": 35,
+      "coverage": "Selected immutable methodology read; combined-output truncation was repaired with bounded follow-up reads."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e6874cdae5d2a69ad60bac6b9d67346025a086e10a0a247137ea14bf6fca34a0",
+      "line_count": 93,
+      "coverage": "Selected immutable methodology read; combined-output truncation was repaired with bounded follow-up reads."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "line_count": 434,
+      "coverage": "Selected immutable methodology read; combined-output truncation was repaired with bounded follow-up reads."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "line_count": 336,
+      "coverage": "Selected immutable methodology read; combined-output truncation was repaired with bounded follow-up reads."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "line_count": 309,
+      "coverage": "Selected immutable methodology read; combined-output truncation was repaired with bounded follow-up reads."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "line_count": 126,
+      "coverage": "Selected immutable methodology read; combined-output truncation was repaired with bounded follow-up reads."
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "line_count": 130,
+      "coverage": "Selected immutable methodology read; combined-output truncation was repaired with bounded follow-up reads."
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "line_count": 233,
+      "coverage": "Selected immutable methodology read; combined-output truncation was repaired with bounded follow-up reads."
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "line_count": 52,
+      "coverage": "Selected immutable methodology read; combined-output truncation was repaired with bounded follow-up reads."
+    }
+  ],
+  "primary_source": [
+    {
+      "url": "https://arxiv.org/html/1411.1107v1",
+      "version": "v1",
+      "coverage": "Bounded direct HTML read: analytic norm (11), Theorem 1 and cutoff/large-field condition (12), Remarks 2/3/10, independent-pair covariance differentiation, full-reader interaction tree weakening, and Proposition 3 weak-derivative/sphere construction. No full-paper read or imported theorem.",
+      "complete_rendered_windows_read": [
+        [
+          138,
+          230
+        ],
+        [
+          324,
+          380
+        ],
+        [
+          788,
+          888
+        ]
+      ],
+      "other_reads": "Initial introduction excerpt and find results were routing/context only.",
+      "role": "Attribution and construction template; all mathematical steps used in BF6\u2013BF24 rebuilt locally."
+    }
+  ],
+  "searches": [
+    {
+      "revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+      "command": "git grep -n -i -E sphere.*derivative|derivative.*sphere|product.*ball.*forest|forest.*product.*ball|marginal.*cutoff <revision> -- docs/*.md <lane>/*.md",
+      "result": "Displayed matches included unrelated spin-sphere derivatives and fixed-dimensional Gaussian cutoff comparisons; no exhaustive priority claim. The load-bearing open target is established by the complete PS read."
+    },
+    {
+      "scope": "Current PS/CB/SA/CS/FR/USM sources; same bounded statement keywords",
+      "result": "No matching all-order product-HS-ball producer was found in this bounded source set. FR provides a distinct product-contour selected-sector theorem; its restriction is preserved."
+    }
+  ],
+  "incidental_or_truncated_reads": [
+    "Initial .claude filename inventory was broader than needed and was used only to route to the named lane; no science conclusion depended on it.",
+    "Initial combined installed skill outputs and some web/grep results were truncated. Proof-bearing source ranges above were read separately.",
+    "The predecessor PS read-manifest was read as provenance/routing, not proof or evidence that this author read its full dependencies.",
+    "Installed review-loop skill was read as role-boundary context; this author did not conduct review-loop or assign a verdict."
+  ],
+  "not_read_or_consumed": [
+    "Concurrent POSITIVE_READER_COVARIANCE_ASTRA.md candidate",
+    "Concurrent critical-field construction",
+    "Parent proposed diagonal-loading/noise factorization",
+    "OUTSIDE_CHART_RETURN_ASTRA.md",
+    "GRADED_COMPLEMENT_ASTRA.md tail theorem",
+    "Predecessor numerical checkers and outputs"
+  ],
+  "numerical_experiments": [],
+  "limits": "All source-independent Gaussian/finite-range assertions have the explicit BF4/domain hypotheses. BF25 remains open for the actual nonlinear full-reader chart; no all-history, effective-level, continuum or physical-gap conclusion."
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "shifted_chart_return_source_first_v1",
+  "frozen_at_utc": "2026-10-30T03:43:01.885431+00:00",
+  "methodology_main": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "sources": {
+    "SHIFTED_CHART_RETURN_ASTRA.md": {
+      "sha256": "88b5b59feaf278d9b9995adc320a446363fa68887d277ca4315c6469fb3aa525",
+      "lines": 508
+    },
+    "FINITE_U_CRITICAL_FIELD_ASTRA.md": {
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d",
+      "lines": 556
+    },
+    "CHART_BOUNDARY_FOREST_ASTRA.md": {
+      "sha256": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8",
+      "lines": 564
+    },
+    "PROCESS_LIGHT.md": {
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "lines": 11
+    }
+  },
+  "source_first_findings": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_shifted_chart_return_source_first.md",
+    "sha256": "e3aecd903bb78d42b12dd88d888c9df79282f0c03ce6ee41eac1c56aac30c92c"
+  },
+  "author_check_or_receipt_opened_before_freeze": false,
+  "prior_reviewer_report_opened_before_freeze": false,
+  "other_gaussian_or_nonlinear_drafts_used": false,
+  "numerical_experiments_run": false,
+  "blocking_source_findings": 0,
+  "review_independence": "fresh restricted-input same-family review; requested Astra/max is not independently attested backend identity",
+  "bookkeeping_errors": [
+    "Initial Python prose writer had a triple-single-quote parse error at f third derivative notation; failed before any write; replaced by apply_patch."
+  ]
+}

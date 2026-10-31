@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "role": "Author bounded read provenance; not independent review or audit.",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/BARE_CUT_WHITE_ASSEMBLY_ASTRA.md",
+    "sha256": "e058637300e8d0af58a35be23299ca08c4024eed335ab8529f7e1c8b6ae2a3f4",
+    "lines": 443
+  },
+  "inputs": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HOLOMORPHIC_COMPACT_RETURN_ASTRA.md",
+      "sha256": "890a56113ad3ceac890ec72efe59b40f73bbda283c8dfb69c331bc4ea5376c49",
+      "lines": 734,
+      "direct_read_ranges_this_unit": "1-734",
+      "use": "Complete direct read: literal physical cut and fr/tr integrals, full frozen prefactor, fixed real selectors, compact difference, single energy ledger, connected log, common shrinking family and sign of HC39."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COMPLEX_WHITE_SECTOR_ASTRA.md",
+      "sha256": "fb72d33bddb727e85548ad96f0e45585cf06254190aa182008e80aa3fbbc5a3c",
+      "lines": 747,
+      "direct_read_ranges_this_unit": "1-747",
+      "use": "Complete direct read: actual-V half-power and critical branches, both endpoint/marked readers, canonical indexing, scalar cube chain, full determinant cancellation, precise transported chart, cutoff-compatible common family and local agreement."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WEIGHTED_RETURN_JETS_ASTRA.md",
+      "sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3",
+      "lines": 937,
+      "direct_read_ranges_this_unit": "1-937",
+      "use": "Complete direct read; the truncated WR density window was recovered at 535-575. Actual all-link real Haar pullback, finite rough Taylor lift, moving core/determinant, derivative identification, complete scalar counts and smaller-rate consumer."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FROZEN_TRANSPORTED_CHART_ASTRA.md",
+      "sha256": "c7cea2f9bb096af300a9a978c945d9c5d68ae5e63581654a3034902d000d70b8",
+      "lines": 787,
+      "direct_read_ranges_this_unit": "1-140;621-757",
+      "use": "Bounded direct reread: literal frozen/transported charts, nonlinear Haar top-form map, canonical mask log sign, all prefactors, explicit shrinking radius/transport costs. The complete FT proof is not newly claimed as read."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WHITE_SECTOR_MATCHING_ASTRA.md",
+      "sha256": "172418988dd07b5f9d8c32d83f2fbc754ab86907660a291c26f1ca3711452556",
+      "lines": 631,
+      "direct_read_ranges_this_unit": "1-145",
+      "use": "Literal real Omega and normalization refreshed; earlier same-session full 1-631 source read is recorded in the white packet."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "lines": 592,
+      "direct_read_ranges_this_unit": "285-435",
+      "use": "Actual RF force/radius order, both covariance tails, contraction and canonical actual-data/membership agreement refreshed; full 1-592 read in preceding WHITE unit."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "lines": 510,
+      "direct_read_ranges_this_unit": "1-125;335-465",
+      "use": "Exact coordinate/physical fibre and empty-stencil factors, RC13 budget, ambient support losses, canonical agreement and shrinking parameter order refreshed; full 1-510 read in preceding WHITE unit."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "lines": 722,
+      "direct_read_ranges_this_unit": "508-547",
+      "use": "Literal original G/Omega and sufficient margins, including a nonempty fixed-threshold example; earlier WHITE full 1-722 read retained."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+      "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+      "lines": 812,
+      "direct_read_ranges_this_unit": "470-551;574-591;674-691",
+      "use": "Bounded consumer only: white HS ball/slice, explicit H1-H4 and inherited interaction, reference limitations and S9 critical prefactors. No complete STEP55 review."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REALRGA.md",
+      "sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+      "lines": 649,
+      "direct_read_ranges_this_unit": "1-125;148-215;275-382",
+      "use": "Actual original-J convention, total field/source orders, fully integrated versus retained fine jets, complete-reader norm, multiplicity regulators, joint reference condition and native two-unit-rate consumer."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "lines": 11,
+      "direct_read_ranges_this_unit": "1-11",
+      "use": "Owner process read in full; analytic proof first, numerical-only preregistration, fresh independent review and root publication boundaries."
+    }
+  ],
+  "carried_same_session_reads": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/white_sector_matching_read_manifest.json",
+      "sha256": "5b302d417a0b815d23b8368f23b5ff75a5ad5553cccb67818acfbdce36b6423b",
+      "lines": 129,
+      "use": "Earlier complete SA/FR/IC/GC/RF/RC and own WS source reads, exact scopes and hashes; no receipt supplies a mathematical estimate."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_read_manifest.json",
+      "sha256": "35be410ae0b57a82e902d5030066fd902a3b8ea69830c8507cc5d8392a9758f0",
+      "lines": 246,
+      "use": "Already-read source-specific methodology at selected main 01589af3faf806b736c42dc2f3bd625e9edead9f; no Git action in this unit."
+    }
+  ],
+  "instructions_refreshed": "/Users/jonBridger/AGENTS.md, worktree AGENTS.md, installed physics-loop SKILL.md 1-220 and review-loop SKILL.md 1-220; retained methodology/procedure requirements carried from the preceding manifest. Root forbids extra agents and owns all publication.",
+  "read_limits": "An oversized combined delivery truncated portions of WR and the optional FT/RGA navigation. Proof-bearing WR535-575, FT1-140/621-757, RGA1-125/148-215/275-382 were read separately to recover the consumed windows. HANDOFF425-515/650-715 and named-file rg were routing only. No review report was consumed as proof.",
+  "primary_reading": "No new external mathematical step or primary source was needed; no new external read is claimed. Bałaban and Dimock are credited for the constructive architecture.",
+  "new_steps": "Literal common-chart and sign/prefactor matching; one common R and explicitly narrowed coarse/curvature/jet radii for the supplied p_Omega; canonical actual-real WR-minus-CW jets, absolute original-label counts, weighted smallness and a concrete smaller-rate integrated consumer.",
+  "provisional_dependency": "CW747 remains under a separate fresh review at source freeze. Its mathematical construction was read directly; independent status is not a premise.",
+  "execution": "Analytic work only. No scientific numerics, extra workers, Git/front/PR/lock/audit operations or predecessor edits."
+}

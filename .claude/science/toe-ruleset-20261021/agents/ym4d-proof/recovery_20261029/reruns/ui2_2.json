@@ -1,0 +1,11 @@
+{
+  "script": "checks/ui2_2.py",
+  "source_sha256": "b12e5bb23c7610e47892ca3386eae8ec66a5d328436cf10582e3f8434816fdab",
+  "started_at_utc": "2026-10-29T10:49:47.557398+00:00",
+  "duration_seconds": 0.29,
+  "exit_code": 0,
+  "python": "3.12.8",
+  "matches_original_stdout": true,
+  "stderr_bytes": 0,
+  "scope": "Same-script reproduction only; not independent proof verification"
+}

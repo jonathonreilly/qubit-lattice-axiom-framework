@@ -1,0 +1,97 @@
+{
+  "schema": "complex_white_sector_read_manifest_v1",
+  "role": "Author source identities and bounded read coverage; not proof or an independent verdict.",
+  "date": "2026-10-30",
+  "author": "/root/source_local_compact_return",
+  "lane": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof",
+  "parent_supplied_methodology_pin": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "source": {
+    "file": "COMPLEX_WHITE_SECTOR_ASTRA.md",
+    "sha256": "fb72d33bddb727e85548ad96f0e45585cf06254190aa182008e80aa3fbbc5a3c",
+    "lines": 747,
+    "actual_read_coverage": "Full723-line first draft read1–245,246–490 and overlapping updated491–760. Every subsequent mathematical/format clarification read in its patch and final windows112–180,262–307,448–491,628–690; final Haar top-form clarification read in its patch. Final747-line source frozen before either packet file."
+  },
+  "source_frozen_at_utc": "2026-10-30 11:46:45 UTC",
+  "suppliers": [
+    {
+      "file": "COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+      "lines": 722,
+      "actual_read_coverage": "Complete722-line source, returned chunks1–245,246–490,491–750; current additional100–170. Actual finite-u phase, real-only scope, inverse/critical/half-power reader construction, literal white cube and real G/cut margins."
+    },
+    {
+      "file": "FIXED_SOURCE_RADIUS_ASTRA.md",
+      "sha256": "6304245bdf27afa6c7f364da9bc41d8971cc0f2058c1e3484edef84df44cff86",
+      "lines": 627,
+      "actual_read_coverage": "Complete627-line corrected source, chunks1–220,221–435,436–655. Exact recentering, scalar end functionals, precision-object forest, individual factorials, bounded holomorphic decorations, polynomial-only Gaussian comparison, determinant and z_p factors."
+    },
+    {
+      "file": "INTERACTING_SELECTED_CORE_ASTRA.md",
+      "sha256": "b6c875ccc83eb455e12e729ccbd29851d782c63b26e978381927de1e058bfb61",
+      "lines": 790,
+      "actual_read_coverage": "Read1–405. Consumed complete IC1–IC13 and following determinant paragraph: actual full phase, fixed joint local analyticity, actual-V accretive resolvents and critical Stieltjes branch. Later parity, tree-only Gram and white-ball Ward results are not premises."
+    },
+    {
+      "file": "FINITE_COUPLING_KERNEL_ASTRA.md",
+      "sha256": "c85ce075fdae1249b520089a462c8cf3107c0b26901d4dcd55a78c48b78ebc8b",
+      "lines": 590,
+      "actual_read_coverage": "Read1–466, chunks1–270 and267–466. Complete FK1–FK24 argument: normalized pair kernel, SL saddle, whole-cycle translation, actual uniform remainder/zero-free branch, local transported joint charts and derivatives. Finite-t terms are retained, not replaced by their asymptotics."
+    },
+    {
+      "file": "WHITE_SECTOR_MATCHING_ASTRA.md",
+      "sha256": "172418988dd07b5f9d8c32d83f2fbc754ab86907660a291c26f1ca3711452556",
+      "lines": 631,
+      "actual_read_coverage": "Complete frozen631-line source, chunks1–230,231–445,446–650. Reconstructed scalar face-distance/read-collar counts, common R, half powers, source recentering and exact full-prefactor matching. Fresh review was pending; no verdict was used."
+    },
+    {
+      "file": "REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "lines": 592,
+      "actual_read_coverage": "Complete592-line source read in the continuous author lane. Current reread100–395 covers exact phase, actual precision, one ambient family, all row/column/marked bounds, source force, radii and pointwise uniqueness; full-region specialization is used."
+    },
+    {
+      "file": "REGIONAL_CHART_RETURN_ASTRA.md",
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "lines": 510,
+      "actual_read_coverage": "Complete510-line source read in the continuous author lane. Current reread320–510 covers full determinant/action/normalization, forest budgets, exact outside factors, complete-reader log and shrinking family. No rough exterior estimate is imported."
+    },
+    {
+      "file": "FROZEN_TRANSPORTED_CHART_ASTRA.md",
+      "sha256": "c7cea2f9bb096af300a9a978c945d9c5d68ae5e63581654a3034902d000d70b8",
+      "lines": 787,
+      "actual_read_coverage": "Complete787-line source read during HC in chunks1–265,266–535,536–810. Reused only its identified transported chart and explicit contour-domain conditions for common consumer radii; no frozen critical field is substituted."
+    },
+    {
+      "file": "HOLOMORPHIC_COMPACT_RETURN_ASTRA.md",
+      "sha256": "890a56113ad3ceac890ec72efe59b40f73bbda283c8dfb69c331bc4ea5376c49",
+      "lines": 734,
+      "actual_read_coverage": "Complete734-line author source and self-read in the continuous lane; current reread380–735. Exact HC35–HC40 common-tube/cutoff construction and transported-reference interface checked. No compact gas is re-proved or composed as this unit’s claim."
+    },
+    {
+      "file": "QUADRATIC_COARSE_RETURN_ASTRA.md",
+      "sha256": "515260d02f0a21e3dea55db2b98cb6ab00ece16684d40179df609922204798c7",
+      "lines": 591,
+      "actual_read_coverage": "Complete591-line source read during HC; current110–280 reread as a comparison of fixed local Cauchy bookkeeping. CW instead reconstructs its needed local bound from FK/IC; QC is not a new mathematical premise here."
+    },
+    {
+      "file": "PROCESS_LIGHT.md",
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+      "lines": 11,
+      "actual_read_coverage": "All actual11 lines reread. No numerical physics check was run."
+    }
+  ],
+  "primary_reads": [
+    {
+      "url": "https://arxiv.org/pdf/hep-th/9409094v1",
+      "coverage": "Web PDF text: printedp3 theoremII.1 (lines45–101); printedpp9–10 ordered-forest proof (lines614–772), with surrounding returned text. No full-paper coverage asserted. Attribution/comparison only; CW uses the rebuilt FR coefficient forest.",
+      "local_pdf_hash": null
+    },
+    {
+      "url": "https://arxiv.org/pdf/1212.5562v2",
+      "coverage": "Web PDF text: abstract/intro scope and complete AppendixF printedpp91–92 (lines14785–14938), with surrounding AppendixE text returned. The product-measure and bounded-interaction hypotheses were checked; no d=3 scalar theorem imported.",
+      "local_pdf_hash": null
+    }
+  ],
+  "review_verdicts_used_as_mathematical_premises": false,
+  "science_numerical_runs": 0
+}

@@ -1,0 +1,527 @@
+{
+  "scope": "finite author diagnostics, not interval or all-volume certificates",
+  "mode": "all",
+  "python": "3.12.8",
+  "numpy": "2.4.1",
+  "scipy": "1.17.0",
+  "passed": 48,
+  "total": 48,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "Wilson_defect_complete_block_row_bound",
+      "pass": true,
+      "detail": {
+        "row_norm": 0.013607950587519648,
+        "bound": 0.0633008863052677,
+        "delta": 0.002637536929386154
+      }
+    },
+    {
+      "name": "spread_positive_semidefinite",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "finite_u_full_Hessian_2.0",
+      "pass": true,
+      "detail": 1.5978240918435757e-10
+    },
+    {
+      "name": "kernel_gradient_at_lift_2.0",
+      "pass": true,
+      "detail": 4.464950429381985e-16
+    },
+    {
+      "name": "Wilson_gradient_bound_2.0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "omit_Haar_control_2.0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "omit_finite_u_spread_control",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "nonstationary_lift_control",
+      "pass": true,
+      "detail": 0.005390912854945756
+    },
+    {
+      "name": "finite_u_full_Hessian_10.0",
+      "pass": true,
+      "detail": 1.6433130772885337e-10
+    },
+    {
+      "name": "kernel_gradient_at_lift_10.0",
+      "pass": true,
+      "detail": 8.210822832148494e-16
+    },
+    {
+      "name": "Wilson_gradient_bound_10.0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "omit_Haar_control_10.0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "finite_u_full_Hessian_50.0",
+      "pass": true,
+      "detail": 1.6560531797615113e-10
+    },
+    {
+      "name": "kernel_gradient_at_lift_50.0",
+      "pass": true,
+      "detail": 9.37603494957588e-16
+    },
+    {
+      "name": "Wilson_gradient_bound_50.0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "omit_Haar_control_50.0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "nonzero_chart_reverse_gradient",
+      "pass": true,
+      "detail": 5.076214008056627e-10
+    },
+    {
+      "name": "quaternion_matrix_product_convention",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "actual_contours_matrix_vs_quaternion",
+      "pass": true,
+      "detail": 2.2887833992611187e-16
+    },
+    {
+      "name": "drop_Ad_transport_control",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source_vacuum_extensive_u_scaling",
+      "pass": true,
+      "detail": [
+        4.0065900645202504e-06,
+        1.6026360258081002e-05
+      ]
+    },
+    {
+      "name": "source_linear_canonical_sqrt_u_scaling",
+      "pass": true,
+      "detail": [
+        0.0005846927203237737,
+        0.0011693854406475473
+      ]
+    },
+    {
+      "name": "coupled_colour_covariance_square_root",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "positive_logdet_eigenvalue_crosscheck",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "wrong_colour_determinant_control",
+      "pass": true,
+      "detail": {
+        "actual_full_logdet": 975.7162625769611,
+        "wrong_three_equal_colours": 968.2853648419069
+      }
+    },
+    {
+      "name": "flat_holonomy_principal_gap_0",
+      "pass": true,
+      "detail": 0.025435420428458616
+    },
+    {
+      "name": "flat_holonomy_principal_gap_1",
+      "pass": true,
+      "detail": 0.025435600046613834
+    },
+    {
+      "name": "flat_holonomy_principal_gap_2",
+      "pass": true,
+      "detail": 0.02706313961945813
+    },
+    {
+      "name": "small_curvature_principal_gap_3",
+      "pass": true,
+      "detail": 0.025435635551881906
+    },
+    {
+      "name": "small_curvature_principal_gap_4",
+      "pass": true,
+      "detail": 0.025435815153563586
+    },
+    {
+      "name": "small_curvature_principal_gap_5",
+      "pass": true,
+      "detail": 0.027063222222051486
+    },
+    {
+      "name": "rough_noncommuting_principal_gap_6",
+      "pass": true,
+      "detail": 0.03707701046432105
+    },
+    {
+      "name": "rough_noncommuting_principal_gap_7",
+      "pass": true,
+      "detail": 0.037076993666319655
+    },
+    {
+      "name": "rough_noncommuting_principal_gap_8",
+      "pass": true,
+      "detail": 0.03678845984599369
+    },
+    {
+      "name": "full_tree_colour_dimension",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tree_critical_shift_residual",
+      "pass": true,
+      "detail": {
+        "iteration": 5,
+        "value": 2.332618658229535e-06,
+        "gradient_max": 1.6536227127626887e-11
+      }
+    },
+    {
+      "name": "actual_shift_residual_2.0",
+      "pass": true,
+      "detail": {
+        "iteration": 4,
+        "value": 1.117147501404957e-05,
+        "gradient_max": 3.8801075931882076e-12
+      }
+    },
+    {
+      "name": "actual_shift_descent_2.0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "actual_shift_residual_10.0",
+      "pass": true,
+      "detail": {
+        "iteration": 4,
+        "value": 4.954146875561891e-06,
+        "gradient_max": 1.524075886381957e-11
+      }
+    },
+    {
+      "name": "actual_shift_descent_10.0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "actual_shift_residual_50.0",
+      "pass": true,
+      "detail": {
+        "iteration": 5,
+        "value": 2.979915735715283e-06,
+        "gradient_max": 3.758178961402522e-12
+      }
+    },
+    {
+      "name": "actual_shift_descent_50.0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "finite_u_shift_is_not_tree_shift",
+      "pass": true,
+      "detail": 0.0009959811683188323
+    },
+    {
+      "name": "tree_difference_decreases_with_u",
+      "pass": true,
+      "detail": [
+        0.0009959811683188323,
+        0.000525493641508681,
+        0.00016140336664661656
+      ]
+    },
+    {
+      "name": "critical_shift_linear_curvature_scaling",
+      "pass": true,
+      "detail": 1.999999377605615
+    },
+    {
+      "name": "flat_large_holonomy_zero_shift",
+      "pass": true,
+      "detail": {
+        "iteration": 0,
+        "value": -6.821210263296953e-14,
+        "gradient_max": 1.5262402669666305e-15
+      }
+    },
+    {
+      "name": "flat_holonomy_retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "real_original_source_critical_branch",
+      "pass": true,
+      "detail": {
+        "residual": 1.4417516803699412e-12,
+        "source_shift": 4.462610481442307e-06
+      }
+    }
+  ],
+  "details": {
+    "derivatives": [
+      {
+        "u": 2.0,
+        "finite_difference_error": 1.5978240918435757e-10,
+        "lift_gradient_max": 0.005390912854945756,
+        "minimum_exact_Hessian": 0.35863753471016774
+      },
+      {
+        "u": 10.0,
+        "finite_difference_error": 1.6433130772885337e-10,
+        "lift_gradient_max": 0.005390912854945757,
+        "minimum_exact_Hessian": 0.0919025686910841
+      },
+      {
+        "u": 50.0,
+        "finite_difference_error": 1.6560531797615113e-10,
+        "lift_gradient_max": 0.005390912854945758,
+        "minimum_exact_Hessian": 0.03854954516170338
+      }
+    ],
+    "spectral": [
+      {
+        "background": "flat_holonomy",
+        "momentum": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "principal_minimum": 0.025435420428458616,
+        "Wilson_max_defect": 0.0
+      },
+      {
+        "background": "flat_holonomy",
+        "momentum": [
+          0.001,
+          -0.002,
+          0.003,
+          0.001
+        ],
+        "principal_minimum": 0.025435600046613834,
+        "Wilson_max_defect": 0.0
+      },
+      {
+        "background": "flat_holonomy",
+        "momentum": [
+          0.3,
+          -0.5,
+          0.7,
+          -0.2
+        ],
+        "principal_minimum": 0.02706313961945813,
+        "Wilson_max_defect": 0.0
+      },
+      {
+        "background": "small_curvature",
+        "momentum": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "principal_minimum": 0.025435635551881906,
+        "Wilson_max_defect": 0.002637536929386154
+      },
+      {
+        "background": "small_curvature",
+        "momentum": [
+          0.001,
+          -0.002,
+          0.003,
+          0.001
+        ],
+        "principal_minimum": 0.025435815153563586,
+        "Wilson_max_defect": 0.002637536929386154
+      },
+      {
+        "background": "small_curvature",
+        "momentum": [
+          0.3,
+          -0.5,
+          0.7,
+          -0.2
+        ],
+        "principal_minimum": 0.027063222222051486,
+        "Wilson_max_defect": 0.002637536929386154
+      },
+      {
+        "background": "rough_noncommuting",
+        "momentum": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "principal_minimum": 0.03707701046432105,
+        "Wilson_max_defect": 1.7008784856719545
+      },
+      {
+        "background": "rough_noncommuting",
+        "momentum": [
+          0.001,
+          -0.002,
+          0.003,
+          0.001
+        ],
+        "principal_minimum": 0.037076993666319655,
+        "Wilson_max_defect": 1.7008784856719545
+      },
+      {
+        "background": "rough_noncommuting",
+        "momentum": [
+          0.3,
+          -0.5,
+          0.7,
+          -0.2
+        ],
+        "principal_minimum": 0.03678845984599369,
+        "Wilson_max_defect": 1.7008784856719545
+      }
+    ],
+    "critical_shifts": [
+      {
+        "u": 2.0,
+        "maximum_shift": 0.000938835107741945,
+        "tree_difference": 0.0009959811683188323,
+        "u_times_difference": 0.0019919623366376647,
+        "iterations": [
+          {
+            "iteration": 0,
+            "value": 8.013180130905795e-05,
+            "gradient_max": 0.005390912854945756
+          },
+          {
+            "iteration": 1,
+            "value": 1.1171502605205771e-05,
+            "gradient_max": 9.079020900376633e-07
+          },
+          {
+            "iteration": 2,
+            "value": 1.1171475022262992e-05,
+            "gradient_max": 7.493795418889952e-09
+          },
+          {
+            "iteration": 3,
+            "value": 1.117147501882353e-05,
+            "gradient_max": 2.0544790048366543e-11
+          },
+          {
+            "iteration": 4,
+            "value": 1.117147501404957e-05,
+            "gradient_max": 3.8801075931882076e-12
+          }
+        ]
+      },
+      {
+        "u": 10.0,
+        "maximum_shift": 0.0012987907194935665,
+        "tree_difference": 0.000525493641508681,
+        "u_times_difference": 0.0052549364150868095,
+        "iterations": [
+          {
+            "iteration": 0,
+            "value": 8.013180129509134e-05,
+            "gradient_max": 0.005390912854945757
+          },
+          {
+            "iteration": 1,
+            "value": 4.9545889956493574e-06,
+            "gradient_max": 1.742870265442287e-06
+          },
+          {
+            "iteration": 2,
+            "value": 4.954146965008794e-06,
+            "gradient_max": 6.240740445487172e-08
+          },
+          {
+            "iteration": 3,
+            "value": 4.9541468800028235e-06,
+            "gradient_max": 5.077831849676176e-10
+          },
+          {
+            "iteration": 4,
+            "value": 4.954146875561891e-06,
+            "gradient_max": 1.524075886381957e-11
+          }
+        ]
+      },
+      {
+        "u": 50.0,
+        "maximum_shift": 0.0015738357493281104,
+        "tree_difference": 0.00016140336664661656,
+        "u_times_difference": 0.008070168332330829,
+        "iterations": [
+          {
+            "iteration": 0,
+            "value": 8.013180129102349e-05,
+            "gradient_max": 0.005390912854945758
+          },
+          {
+            "iteration": 1,
+            "value": 2.9819845338533418e-06,
+            "gradient_max": 2.587972781960934e-06
+          },
+          {
+            "iteration": 2,
+            "value": 2.97991785450131e-06,
+            "gradient_max": 2.1811137686076785e-07
+          },
+          {
+            "iteration": 3,
+            "value": 2.979915724835333e-06,
+            "gradient_max": 3.0512766472811185e-09
+          },
+          {
+            "iteration": 4,
+            "value": 2.979915751653569e-06,
+            "gradient_max": 2.1250981016072523e-10
+          },
+          {
+            "iteration": 5,
+            "value": 2.979915735715283e-06,
+            "gradient_max": 3.758178961402522e-12
+          }
+        ]
+      }
+    ],
+    "translation_invariant_volume_dictionary": "Per-cell action and every gradient coordinate are identical for T=2,3,... because all read words use the same periodic coefficients. A stationary point of this sector is a stationary point of the full finite torus by translation symmetry; positivity elsewhere is analytic, not inferred from these sector tests."
+  },
+  "elapsed_seconds": 3.808361125004012,
+  "external_scientific_inputs_read": [],
+  "integrity_reads": [],
+  "full_existence_established": false,
+  "physical_continuum_mass_gap_established": false
+}

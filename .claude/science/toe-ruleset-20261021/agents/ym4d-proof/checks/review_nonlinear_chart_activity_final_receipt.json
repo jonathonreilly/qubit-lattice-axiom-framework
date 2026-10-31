@@ -1,0 +1,201 @@
+{
+  "schema": "scoped_review_final_receipt_v1",
+  "created_utc": "2026-10-30T03:32:35.735933+00:00",
+  "reviewer": "/root/review_nonlinear_chart_activity",
+  "requested_configuration": "Astra/max",
+  "independence": "Fresh restricted-context same-family Codex review; no independent backend attestation",
+  "observed_head": "3803d1517007fca5e1939bf396dd615623909a80",
+  "target": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+    "sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec",
+    "bytes": 32110,
+    "lines": 624
+  },
+  "author_receipt": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/nonlinear_chart_activity_receipt.json",
+    "sha256": "e6ebfd073b98c8edbf172050ec6c1d84bd7fd7613022656e6cbc0668a5367423",
+    "bytes": 2799,
+    "lines": 58
+  },
+  "mathematical_verdict": "LAND",
+  "proposition": "Distinct-original-vertex weak Mayer bounds for the actual joint critical Gaussian; separate finite-range lift-core chart logarithm at beta/2 on the stated domain",
+  "unit_source_disposition": "Accepted unchanged; no source repairs",
+  "finding_counts": {
+    "blocking": 0,
+    "fixed": 0,
+    "skipped_scientific": 0
+  },
+  "read_order": [
+    "Complete target and actual producer formulas read first; exact bounded coverage is in the immutable initial_math_receipt",
+    "Independent mathematical findings frozen at 2026-10-30T03:25:19.572262+00:00",
+    "Author receipt, author checks, identity record, freezer and read manifest read only after that freeze",
+    "Independent byte/line/link verification completed at 2026-10-30T03:27:35.248079+00:00",
+    "Final report written and target, producers, initial finding freeze, external author receipt pin and local report links rechecked"
+  ],
+  "coverage_receipt": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_nonlinear_chart_activity_initial_math_receipt.json",
+    "sha256": "a165d0a17d1b99d8d453b63676e596e969c59b6f284866bdc6cf57f1a6987b09",
+    "bytes": 5555,
+    "lines": 158
+  },
+  "full_findings": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_nonlinear_chart_activity_initial_math.md",
+    "sha256": "4e360aaa42d4f844d35bbcb17b5289550c432f90b30526a907b3540719ca556b",
+    "bytes": 9585,
+    "lines": 148
+  },
+  "final_report": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+    "sha256": "4e782d52b86bd7bd25ad5cd8ac123ec32d21b516f501df8c3eb92a2b8a57df84",
+    "bytes": 11304,
+    "lines": 141
+  },
+  "package_check": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_nonlinear_chart_activity_package_check.json",
+    "sha256": "a6b0088ca573f6b39dff7f34d9ce03dc1bb6fd3c275873c28a08265407eed01d",
+    "bytes": 4354,
+    "lines": 103
+  },
+  "methodology_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "methodology_reads": [
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "git_blob": "bea573caf2b0ea43a2c6519c9a474d7a10d82965",
+      "coverage": "complete, assembled from the displayed reads where a prior combined output was truncated"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "git_blob": "ba6fc9a69f3e6dfca01f3257d611d1a057def305",
+      "coverage": "complete, assembled from the displayed reads where a prior combined output was truncated"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "git_blob": "e265934158bfa3126153c3dda8ec45d8d4686b46",
+      "coverage": "complete, assembled from the displayed reads where a prior combined output was truncated"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "git_blob": "043ba7e62e09ce5a67a51263f7dc261c9485030f",
+      "coverage": "complete, assembled from the displayed reads where a prior combined output was truncated"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "git_blob": "457507d252fb603e475805f674aaca9ff8ca849e",
+      "coverage": "complete, assembled from the displayed reads where a prior combined output was truncated"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "git_blob": "0f3d79e16a2fd0d558f9510d34442de011896bd1",
+      "coverage": "complete, assembled from the displayed reads where a prior combined output was truncated"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "git_blob": "cd4b0f2a9bf9b2bb20e2316993cc49f669430c0e",
+      "coverage": "complete, assembled from the displayed reads where a prior combined output was truncated"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "git_blob": "4796f0492a9d04a8f779c29960240dff32ee0b60",
+      "coverage": "complete, assembled from the displayed reads where a prior combined output was truncated"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "git_blob": "1ec31f6e817cb259df1bdafa4a358b12e0ac15b8",
+      "coverage": "complete, assembled from the displayed reads where a prior combined output was truncated"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "git_blob": "90d142bceca9de62e2941519ddd17650cb6366e6",
+      "coverage": "complete, assembled from the displayed reads where a prior combined output was truncated"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "git_blob": "7f46ba9028f7b047cf7589521d89b7492e25273c",
+      "coverage": "complete, assembled from the displayed reads where a prior combined output was truncated"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "git_blob": "04ea075224460de0223a1a0b22a68423c6df1a3a",
+      "coverage": "complete, assembled from the displayed reads where a prior combined output was truncated"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "git_blob": "da1bc02c3d9d3ba6b667139762ffa8d66efc73b1",
+      "coverage": "complete, assembled from the displayed reads where a prior combined output was truncated"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "git_blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+      "coverage": "complete, assembled from the displayed reads where a prior combined output was truncated"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "git_blob": "0075998454899efb1b83e71daea5bc60d3499d49",
+      "coverage": "complete, assembled from the displayed reads where a prior combined output was truncated"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "git_blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa",
+      "coverage": "complete, assembled from the displayed reads where a prior combined output was truncated"
+    },
+    {
+      "path": "docs/repo/DEFERRED_DECISIONS.md",
+      "git_blob": "4b8954556f59870f204de0709f6bf2f0a2c67a86",
+      "coverage": "complete, assembled from the displayed reads where a prior combined output was truncated"
+    }
+  ],
+  "worktree_entry_instructions": {
+    "path": "AGENTS.md",
+    "sha256": "febf3a1aaabd4bd13f87b052ab5eacb75f46be535985425bae4d400f509bc7d0",
+    "bytes": 1118,
+    "lines": 26
+  },
+  "lane_instructions": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+    "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+    "bytes": 1497,
+    "lines": 11
+  },
+  "prior_verdict_text_read": false,
+  "prior_receipt_contents": "Only mechanical record identities parsed after the independent findings freeze; prior verdict texts were never read",
+  "read_scope_exclusions": [
+    "Unfinished reader-local Gaussian-return source and review",
+    "Unfinished shifted-chart source and review",
+    "Unlisted portions of SA/IC/STEP55",
+    "Whole-PR/current-main preservation and combined pipeline"
+  ],
+  "checks": {
+    "author_records_including_receipt": 6,
+    "source_declarations": 10,
+    "protected_files": 33,
+    "author_methodology_pins": 12,
+    "nested_prior_record_hashes": 14,
+    "report_local_links_resolved": 5,
+    "author_freezer_syntax_and_root_index": "checked without execution",
+    "source_and_producer_identity_unchanged": true
+  },
+  "numerical_experiments": [],
+  "author_freezer_executed": false,
+  "git_mutations": false,
+  "commits_created": [],
+  "pipeline_runs": 0,
+  "audit_or_ledger_mutations": false,
+  "whole_pr_gate": "Coordinator-owned, not supplied by this scoped source verdict",
+  "open_interfaces": [
+    "Actual covariance-tail restoration",
+    "Translated physical chart sides and corners",
+    "Full interacting original-cut analytic return and reference cancellation",
+    "Arbitrary histories and effective-level identification",
+    "Consumer rate conversion",
+    "Multiscale iteration",
+    "Four-dimensional continuum existence",
+    "Positive physical continuum mass gap"
+  ],
+  "output_files": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_nonlinear_chart_activity_initial_math.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_nonlinear_chart_activity_initial_math_receipt.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_nonlinear_chart_activity_package_check.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_nonlinear_chart_activity_final_receipt.json"
+  ]
+}

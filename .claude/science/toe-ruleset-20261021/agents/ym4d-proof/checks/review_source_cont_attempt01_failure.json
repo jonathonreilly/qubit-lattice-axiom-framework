@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-29T14:42:07.533394+00:00",
+  "attempt01_exit_code": 130,
+  "failure": "Reviewer interrupted symbolic nested series after about 4.5 minutes of CPU; traceback identifies line 165 nested expansion in the final coefficient loop. Earlier checks had not raised. No partial checks are promoted as a completed run.",
+  "original_source_sha256": "4b0ca1f76bd1eeda2727fcadea3d1f360ba87f4e14beb9b9b604ec48280ad8ee",
+  "recovery": "Keep original source, empty stdout, and complete KeyboardInterrupt stderr. New source uses mixed derivatives at zero for the same Taylor coefficient and replaces a documentary literal-True history placeholder with actual domain-overlap and derivative checks. No author formula or source was changed.",
+  "new_source_sha256": "b787434ce9909b7be75fb65686f29784a8c2f293d49f4982fa29ac1a40f45120"
+}

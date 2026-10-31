@@ -1,0 +1,6 @@
+T1 identity (Markov chains): exact equalities 50 / 50 -> PASS
+T2 Markov property E[G|U_i..U_K] = E[G|U_i]: PASS
+C1 control (non-Markov chains, Markov-form RHS must differ somewhere): FIRED
+C1b general tail-sigma-algebra form in non-Markov chains: exact equalities 50 / 50 -> HOLDS
+C2 control (drop i=0 term must break identity somewhere): FIRED
+VERDICT: PASS

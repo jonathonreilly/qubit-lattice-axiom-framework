@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-10-30T03:31:41.317470+00:00",
+  "scope": "Bookkeeping only; mathematical evidence is the written proofs and independent review.",
+  "head": "544182d4fb203024160dedb786d5ce943b9be0b9",
+  "note_sha256": "4deb5cbf7573145a438abcda4aeedd14c4270cc05c3e63072abeb43561c77a53",
+  "note_matches_reviewed_revision": true,
+  "review_ends_land": true,
+  "actual_route_status": "OPEN",
+  "changed_input_sources": [],
+  "tracked_differences": [],
+  "outside_allowed_status_entries": [],
+  "local_missing_links": [],
+  "trailing_whitespace_note_lines": [],
+  "no_numerical_experiment": true,
+  "artifacts": {
+    "LFPRICE.md": "4deb5cbf7573145a438abcda4aeedd14c4270cc05c3e63072abeb43561c77a53",
+    "LFPRICE_LOG.md": "f223e630e03b05df79bd9e01669d4255f6c7b0d9a30a4300febd334cea42ae3d",
+    "checks/lfprice_author_checks.json": "91ae666c016e94f6595ff1a0d295ba3e95edeae043cb7cc9c82af57d4ca1989a",
+    "checks/lfprice_criteria.md": "f92cc8c92af222f8069fbed963359e0b3a430a8e4e60a63ad9efc66a1d4c8e4e",
+    "checks/lfprice_freeze.json": "d2dba2b99edd9ee4d94e9d390bfa93fae1acafe6a18272ddb890ecc1c25dc5bf",
+    "checks/lfprice_review.md": "cf56effff80f07bce40c7215dcd6b88527a182b365b0226c28a7f50cd3e44c35",
+    "checks/lfprice_sources.json": "1056eef67be9fab6ffdc5d93de5255abf989b5ca41824caf1efd24ef1a9a425d"
+  }
+}

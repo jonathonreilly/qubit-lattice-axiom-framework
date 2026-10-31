@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_covariant_source_activity_probe_actual_no_normalizer.py", line 124, in <module>
+    assert review_error<mp.mpf('1e-30'),'actual_density_zero_hessian'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: actual_density_zero_hessian

@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-10-29T18:26:30.279868+00:00",
+  "previous_incoming": "93a9d1a141849dfac1d8f1a585a17e43211ef271",
+  "incoming": "5111f62289ccfd4e534845b3283ecb5ae5d0f95b",
+  "local_parent": "89d2e0092a489a9482df8a78bb002681ea039648",
+  "files_preserved_exactly": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HRP.md",
+      "sha256": "f1f991dea8062bfc7176a68cc639beacd848d4fb9cdd0bd4917198e39dac51b5",
+      "bytes": 51453
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/HRP_LOG.md",
+      "sha256": "510eda346183e23c97baae2b7fa72df919e78b9a81f05a2ca188459f4a854dd8",
+      "bytes": 13056
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_HRP_R2.md",
+      "sha256": "1cb5688e8289606e1524513ecf186a7283239fd53539916665d511e67f944a3b",
+      "bytes": 11671
+    }
+  ],
+  "coordinator_read": "Complete R2 review and full HRP/HRP_LOG diff; no reexecution of scientific runners.",
+  "disposition": "R2 independently resolves prior HRP review items6and7 at their bounded scope. Its LAND label is the scoped packet disposition, not a whole-PR/audit verdict or either continuum theorem.",
+  "supersedes": "The open item6/7 status in full_proof_concurrent_hrp_merge.json is historical; mathematical upstream obligations remain open.",
+  "whitespace_exit": 0,
+  "merge_conflicts": 0
+}

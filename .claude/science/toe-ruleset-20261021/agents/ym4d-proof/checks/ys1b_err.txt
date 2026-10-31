@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/ys1b_power.py", line 294, in <module>
+    ctrl = li_at(1, [avatar(KB, 1)] * D, 0)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/ys1b_power.py", line 191, in li_at
+    assert chk == L ** (i * (D + 1)), (i, Y, m, chk, L ** (i * (D + 1)))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: (1, [364, 364, 364, 364], 0, 135, 243)
+        1.48 real         1.45 user         0.01 sys
+            32161792  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                2541  page reclaims
+                 390  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  25  voluntary context switches
+                 197  involuntary context switches
+         35875276731  instructions retired
+          6285969418  cycles elapsed
+            22184392  peak memory footprint

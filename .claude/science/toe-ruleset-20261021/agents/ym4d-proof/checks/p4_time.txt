@@ -1,0 +1,17 @@
+p4 run record (lane E session 4)
+- criteria checks/p4_criteria.md written 10:30:39 UTC 2026-10-28 (md5 ccef5a1d5f026cec1c7838462aa65789), after PLD.md §16.1-§16.9 and
+  before the script. Not edited after the run.
+- script checks/p4_pld.py written ≈10:31-10:32 UTC; no pre-run edits after first save; one run only.
+- Lock: wait from 10:32:17 UTC (held by another agent); acquired 10:33:57 by the mandated mkdir loop; load 2.95 3.42 3.49; 36%
+  memory free (checked 10:32:07); nice 10; OPENBLAS/OMP/MKL/VECLIB threads 1; PYTHONDONTWRITEBYTECODE=1; python3 without -I; no
+  timeout. Released by one rmdir at 10:34:15. No process left running.
+- Run: exit 0 at 10:34:15; 17.54 s real; peak RSS 68.7 MB.
+- SUMMARY printed: "FAIL: E1". Every other criterion PASS (A1, A1n, A2, A3, B1, B1n, B2, C1, C2, C1n, D1, D2a-d, E2-E5).
+- Disclosure E1 (FAIL as written): the criterion asked c_pr = 1/(640·53²) to equal 5.5625·10⁻⁷ to 1e-10 relative. The exact value is
+  1/1797760 = 5.562477…·10⁻⁷; the quoted 5.5625·10⁻⁷ (REVIEW_RLARGE_V3 Part 4, copied into the criterion) is a 5-figure rounding,
+  relative difference 4.1·10⁻⁶. The criterion's tolerance was wrong for a rounded input; the arithmetic itself is not in doubt.
+  The second half of E1 (κ_min = 1.1867·10⁻⁵ < 1.2·10⁻⁵) holds. Not re-run; no criterion edited. No conclusion of §16 changes
+  (every downstream number uses the exact 1/(640·53²)).
+- Evidential notes: C is a 4-link toy at ε_1 = 0.02, g = 10⁻³ (illustrative, not the admissible ε_1); D2c's pair projects to one
+  coarse cube at level 1 (alignment), so its ratio 1.0 shows coincidence of deep shadows for that pair only; D2's shadow sizes
+  settle at 256 = 4⁴ cubes per level for one cube.

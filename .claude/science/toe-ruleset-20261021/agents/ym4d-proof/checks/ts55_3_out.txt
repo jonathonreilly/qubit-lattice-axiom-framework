@@ -1,0 +1,10 @@
+('params', '1/4', '1', '1/2', 'C_co(2)=4.001981707317073', 'C_co(3)=8.005335365853659', 'C_cmp=1.13203125')
+('params', '1/2', '3/2', '1', 'C_co(2)=4.0044207317073175', 'C_co(3)=8.020274390243902', 'C_cmp=2.314140625')
+('params', '1', '1', '0', 'C_co(2)=4.001219512195122', 'C_co(3)=8.002439024390243', 'C_cmp=0.075625')
+admissible sequences used: 126 ; (sequence, k) pairs checked: 1512
+S1 (coarse sum with canonical weights, s=2,3): True
+S1-F value u_0^2*sum u_n^-2 (no canonical weight), must exceed 10: 595.468515412961
+S2 (AF comparison, coarse side): True
+S2-F value u_0^2*sum|1/u_n-1/u_0| (no weight): 1573.697571350373  threshold 10*C_cmp = 11.3203125
+S3 (fine side, termwise, truncated at n <= 6): True
+VERDICT ts55_3: PASS

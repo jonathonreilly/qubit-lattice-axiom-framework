@@ -1,0 +1,11 @@
+PASS T1 s5(t)+s5(1-t)==1
+PASS T2 C2 gluing at 0 and 1
+PASS T3 s5' == -30 t^2 (1-t)^2
+PASS T4 identity 15/8-|s5'| = 30(t-1/2)^2(1/4+t(1-t)) and |s5'(1/2)|=15/8
+PASS T5 s5''' == -60 (6t^2-6t+1)
+PASS T5 (s5'')^2 mod (6t^2-6t+1) is the constant 100/3 < (289/50)^2 = 83521/2500; s5''(0)=s5''(1)=0
+PASS T6 |s5'''|(0,1/2,1) = (60,30,60), s5'''' root at 1/2 only
+PASS T7 chi(0)=1, chi(n)=0 for 1<=|n|<=5, chi(t)+chi(t-1)=1 on a grid of [0,1]
+PASS T8 max_|beta|<=3 prod sup|w^(beta_nu)| == 60 (got 60); C_blend = 2^4*60*4 = 3840
+CONTROL s3: T1 holds, T2 FAILS (control fired); s3''(1) = 6
+VERDICT mc55_2: PASS

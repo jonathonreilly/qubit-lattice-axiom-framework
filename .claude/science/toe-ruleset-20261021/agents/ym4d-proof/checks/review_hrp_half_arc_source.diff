@@ -1,0 +1,57 @@
+diff --git a/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/HRP.md b/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/HRP.md
+index 62643e3e0e..28f55c8180 100644
+--- a/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/HRP.md
++++ b/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/HRP.md
+@@ -551,8 +551,12 @@ seminorms (Leibniz and (1+|x|²+|y|²)≤(1+|x|²)(1+|y|²)), and its
+ range is flat on coincidences. Continuity of S therefore passes RP
+ to every finite sequence in the restricted positive space.
+ 
+-These steps re-prove the RP portion of OSLEAF55 Lemma RP-lat,
+-CLOSURE-sep(d), and the RP part of CONTRACT-sep. They do not verify
++These steps re-prove the RP portion of OSLEAF55 Lemma RP-lat with
++geometric half-edge support, CLOSURE-sep(d), and the RP part of CONTRACT-sep.
++The original endpoint-only RP-lat wording is false at temporal extent two;
++OSLEAF55 now distinguishes its two geometric arcs, as in §1 here. This
++finite-domain correction does not supply any continuum convergence input.
++These steps do not verify
+ that file's reconstruction theorem, quantitative EXT proof, growth
+ constants, or owner choice of algebra. In particular e(f)² generally
+ is NOT an element of this restricted domain: f⊗f need not be flat at
+@@ -612,7 +616,7 @@ The main-source locators are `git show <pinned-origin/main>:docs/<name>`:
+ | CODEX_REVIEW_P4 §1.1 | IMPORTED-AND-REVERIFIED | The matching-link change of variables is re-derived in §2.3. Coordinate-prism RP requires the additional §5 classification. |
+ | CODEX_REVIEW_P4 §4.1; PANEL_P1 closure | IMPORTED-AND-REVERIFIED | Only their finite-sum RP limit implication, under actual convergence of products, is used and re-proved in §6. Other invariance/regularity inputs remain external. |
+ | CODEX_REVIEW_HINT `Lemma BARE`; ROTDEF §5.1 | IMPORTED-AND-REVERIFIED | Pointwise normalization and reverse integration prove exactly the bare marginal, §4.1. |
+-| OSLEAF55 D2–D8, RP-lat and RP portions of CLOSURE/CONTRACT | IMPORTED-AND-REVERIFIED | Restricted-domain RP transfer is re-proved in §6.2. Its unqualified “banked” coordinate-RP descriptions are status overstatements relative to ASSEMBLY55 F3; independent review is still pending. |
++| OSLEAF55 D2–D8, RP-lat and RP portions of CLOSURE/CONTRACT | IMPORTED-AND-REVERIFIED | Restricted-domain RP transfer is re-proved in §6.2 using geometric half-edge support. The original endpoint-only wording at temporal extent two was defective and is corrected in OSLEAF55; the source reviews remain historical and the affected confirmation is separate. This supplies no continuum convergence hypothesis. |
+ | OSLEAF55 quantitative EXT, reconstruction and trajectory existence | IMPORTED-NOT-YET-REVERIFIED | Consumed only as named open/supplied hypotheses where needed; no analytic estimate is promoted. |
+ 
+ Literature access: [Osterwalder–Seiler (1978)](https://doi.org/10.1016/0003-4916(78)90039-8)
+diff --git a/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/OSLEAF55.md b/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/OSLEAF55.md
+index 2b978a2b41..415c16b7dc 100644
+--- a/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/OSLEAF55.md
++++ b/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/OSLEAF55.md
+@@ -290,13 +290,22 @@ file. **Owner decision OWN-alg should be recorded as: T_OS in OS I/II's formulat
+ ## §2. The closure re-proved for separated distributions (Codex bank item 5 does not cover this formulation)
+ 
+ **Lemma RP-lat (the L9a mechanism, site reflection — the case used). PROVEN-HERE (standard; Osterwalder–Seiler [m]).** Wilson
+-measure on Λ_{a,R}, R/a even; θ : t ↦ −t (mod R) fixes the two site planes t = 0 and t = R/2; Λ_+ := {0 ≤ t ≤ R/2}; 𝔄_+ :=
+-functions of the links with both ends in Λ_+; (ΘA)(U) := A(θU). Then ω_{a,R}(Θ(A)^*A) ≥ 0 for every A ∈ 𝔄_+.
++measure on Λ_{a,R}, R/a even; θ : t ↦ −t (mod R) fixes the two site planes t = 0 and t = R/2. Choose the closed temporal
++arc Λ_+ := [0,R/2] and let 𝔄_+ consist of bounded complex measurable functions of links GEOMETRICALLY CONTAINED in that
++half, keeping distinct periodic geometric edges even when their endpoint names coincide. Thus positive temporal edges
++have base 0 ≤ t ≤ R/2−a, while spatial edges at 0 ≤ t ≤ R/2 are included. Inverse orientations denote the same geometric
++edge. Set (ΘA)(U) := A(θU). Then ω_{a,R}(Θ(A)^*A) ≥ 0 for every A ∈ 𝔄_+.
+ *Proof.* Both fixed planes are site planes, so no plaquette straddles one: every plaquette lies in Λ_+ or in Λ_− := θΛ_+, and
+ plaquettes inside a fixed plane are θ-invariant (s(U^{-1}) = s(U) absorbs orientation). Hence S_W = S_+ + ΘS_+ with S_+ :=
+ Σ_{p⊂Λ_+, p⊄fixed planes}βs(U_p) + ½Σ_{p⊂fixed planes}βs(U_p). Write U = (U_0, U_+, U_−), U_0 the links inside the fixed planes
+ (θ-fixed), U_± the remaining links of Λ_±. Then Z·ω(Θ(A)^*A) = ∫dU_0 ∫dU_+dU_− conj(A(θU))e^{−ΘS_+(U)}A(U)e^{−S_+(U)} =
+ ∫dU_0 |∫dU_+ A(U_0, U_+)e^{−S_+(U_0,U_+)}|² ≥ 0, by the Haar-preserving substitution U_− = θU′_+ and reality of S_+. ∎
++*Extent-two convention.* Endpoint membership alone is insufficient when R/a=2: it includes both temporal arcs. For the
++two distinct positively oriented temporal edges U_0,U_1 at one spatial site, F=Re Tr U_0−Re Tr U_1 then satisfies
++F(θU)=−F(U), so ω(Θ(F)^*F)=−ω(F²)<0 under every finite reflection-symmetric Wilson density. The strict sign follows from
++full support and F not being identically zero. The geometric half above includes only one arc and excludes this F.
++This corrects the original endpoint-only wording; [the second HRP review](REVIEW2_HRP.md) records its discovery. The
++paired-half proof and all eventual compact-support continuum uses retain their stated hypotheses.
+ *Use.* The clover e_a(x) involves only links within distance a of x, and θ maps clover_{μν}(x) onto clover_{μν}(θx), so
+ Θ(ê_a(x)) = ê_a(θx) (ω(e_a) is θ-invariant). For F ∈ 𝒜_{𝒟+} with supp F_m ⊂ (B_{R/4})^m and a ≤ τ_F := min{t_1 over supp F},
+ A_F ∈ 𝔄_+, and the change of variables x ↦ θx in the lattice sum gives exactly

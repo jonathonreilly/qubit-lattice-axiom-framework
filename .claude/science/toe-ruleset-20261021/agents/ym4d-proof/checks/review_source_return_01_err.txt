@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_return_01.py", line 250, in <module>
+    record('picard_coefficients_solve_stationarity',all(s.series(e,t,0,6).removeO().expand()==0 for e in res))
+  File "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972/.claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_return_01.py", line 17, in record
+    assert checks[name], name
+           ~~~~~~^^^^^^
+AssertionError: picard_coefficients_solve_stationarity

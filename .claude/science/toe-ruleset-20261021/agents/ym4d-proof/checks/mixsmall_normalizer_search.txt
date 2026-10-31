@@ -1,0 +1,203 @@
+./MASS_GAP_CONSTRUCTION_ASTRA.md:302:of the generally nonunitary mean. This includes M_c=0. In the small
+./REVIEW_SOURCE_LOCAL_RETURN_ASTRA.md:34:1. Exact level-zero Hessian including normalizer, local real-gauge and complex
+./REVIEW_SOURCE_LOCAL_RETURN_ASTRA.md:312:the scaled normalizer Hessian, with no artificial residual fixing.
+./CODEX_REVIEW_LCONV.md:146:A bankable conditional lift is narrower: **if** a finite following tower and its direction are admissible for the boundary condition, the fine chart has the certified normal second variation, and the normalizer/gauge-density Hessian stays bounded as the couplings grow, **then** sufficiently large `u₀` preserves the negative direction. It is not an unconditional certificate of the actual conditional chain.
+./REVIEW_S11_S12.md:206:  - (ii) zero mean: J_0 ⊥ constants, and Q_str^{(n)}(const) = n·const.
+./LINEAR_PACKAGE.md:94:- With sources (RTARGET §33): E_j(B) := E(B) - Σ_{l<k}⟨j_l, B_l⟩, each j_l a co-closed, zero-mean level-l 1-form, written in
+./LINEAR_PACKAGE.md:187:+ κ_{k-1}Q_str^{(n)}Δ^{-1}Q_str^{(n)T}. Then r is the unique minimiser over co-closed zero-mean forms of ½⟨s, Ps⟩ + ⟨s, B_k⟩,
+./LINEAR_PACKAGE.md:357:**Lemma 6.5 (SRC-id and SRC-all; l.2995-3040, l.3204-3221).** With co-closed zero-mean sources j_l at levels 0 ≤ l ≤ k - 1:
+./NBG_B.md:124:> co-closed zero-mean level-l sources j_l = d^*G_l (0 ≤ l ≤ k−1) and **every** level-k datum B_k,
+./PROOF_session18_snapshot.md:2406:      with zero mean, and Closed is the space of closed coarse 1-forms (exact plus constant), so CoCl_0^⊥ = Closed.
+./PROOF_session18_snapshot.md:2432:      - (ii), zero mean: J_0 ∈ Ran d* is orthogonal to the constants h. Also ⟨Q_str^{(n)T}r, h⟩ = n⟨r, h⟩, because
+./PROOF_session18_snapshot.md:3018:    fine source: critical points of E - ⟨j, B_0⟩, j a co-closed fine 1-form with zero mean (the gauge-orthogonality
+./PROOF_session18_snapshot.md:3035:      LED-dual's problem with B_k replaced by B_k - Q^{(k)}Δ^{-1}j, whose minimiser is unique. The zero-mean condition is
+./PROOF_session18_snapshot.md:3221:    Ω = Σ_lω_l^{-1}; divergence-form sources j_l = d_l^*G_l (d_l^* := d_l^T, so j_l is co-closed with zero mean) with
+./PROOF_session18_snapshot.md:3226:  - **Lemma SRC-all (sources at every level): PROVEN-HERE.** In Setting SC with sources j_l (co-closed, zero mean) at
+./PROOF_session18_snapshot.md:3240:    co-closed inputs Q_root^T = Q_str^T, and Q_root - Q_str is exact, IT-str). So B_k + Pr ≡ g_eff mod Closed. Zero mean of r:
+./PROOF_session18_snapshot.md:4764:   (the effective datum, the zero-mean step); Lemma REC (the bilinear identity with the top components); Lemma KF (the
+./PROOF_session18_snapshot.md:4826:   - Lemma LED-dual: the mod-Closed bookkeeping of Q_root composites, the zero-mean step, the energy identity;
+./PROOF_session18_snapshot.md:5056:  λ ∈ Λ_res (zero mean on each block), ||dλ||² ≥ Σ_X||dλ||²_{inside B(X)} ≥ ν_N||λ||², so T ≥ ν_N and is invertible. Let
+./PROOF_session18_snapshot.md:5070:  over co-closed zero-mean s; stationarity tested at s = r gives ⟨r, Pr⟩ = -⟨r, B⟩, so E_i(B) = -(κ_{i-1}/2)⟨𝓡_iB, B⟩ with
+./LCONV55.md:320:is the exact check]: for an abelian field B(x_1) with zero mean, χ″ = B and A_2 = χ′, the aligned-helicity charged mode
+./PROOF.md:3483:      with zero mean, and Closed is the space of closed coarse 1-forms (exact plus constant), so CoCl_0^⊥ = Closed.
+./PROOF.md:3509:      - (ii), zero mean: J_0 ∈ Ran d* is orthogonal to the constants h. Also ⟨Q_str^{(n)T}r, h⟩ = n⟨r, h⟩, because
+./PROOF.md:4095:    fine source: critical points of E - ⟨j, B_0⟩, j a co-closed fine 1-form with zero mean (the gauge-orthogonality
+./PROOF.md:4112:      LED-dual's problem with B_k replaced by B_k - Q^{(k)}Δ^{-1}j, whose minimiser is unique. The zero-mean condition is
+./PROOF.md:4298:    Ω = Σ_lω_l^{-1}; divergence-form sources j_l = d_l^*G_l (d_l^* := d_l^T, so j_l is co-closed with zero mean) with
+./PROOF.md:4303:  - **Lemma SRC-all (sources at every level): PROVEN-HERE.** In Setting SC with sources j_l (co-closed, zero mean) at
+./PROOF.md:4317:    co-closed inputs Q_root^T = Q_str^T, and Q_root - Q_str is exact, IT-str). So B_k + Pr ≡ g_eff mod Closed. Zero mean of r:
+./PROOF.md:5868:   (the effective datum, the zero-mean step); Lemma REC (the bilinear identity with the top components); Lemma KF (the
+./PROOF.md:5930:   - Lemma LED-dual: the mod-Closed bookkeeping of Q_root composites, the zero-mean step, the energy identity;
+./PROOF.md:6160:  λ ∈ Λ_res (zero mean on each block), ||dλ||² ≥ Σ_X||dλ||²_{inside B(X)} ≥ ν_N||λ||², so T ≥ ν_N and is invertible. Let
+./PROOF.md:6179:  over co-closed zero-mean s; stationarity tested at s = r gives ⟨r, Pr⟩ = -⟨r, B⟩, so E_i(B) = -(κ_{i-1}/2)⟨𝓡_iB, B⟩ with
+./PROOF_session23_snapshot.md:2535:      with zero mean, and Closed is the space of closed coarse 1-forms (exact plus constant), so CoCl_0^⊥ = Closed.
+./PROOF_session23_snapshot.md:2561:      - (ii), zero mean: J_0 ∈ Ran d* is orthogonal to the constants h. Also ⟨Q_str^{(n)T}r, h⟩ = n⟨r, h⟩, because
+./PROOF_session23_snapshot.md:3147:    fine source: critical points of E - ⟨j, B_0⟩, j a co-closed fine 1-form with zero mean (the gauge-orthogonality
+./PROOF_session23_snapshot.md:3164:      LED-dual's problem with B_k replaced by B_k - Q^{(k)}Δ^{-1}j, whose minimiser is unique. The zero-mean condition is
+./PROOF_session23_snapshot.md:3350:    Ω = Σ_lω_l^{-1}; divergence-form sources j_l = d_l^*G_l (d_l^* := d_l^T, so j_l is co-closed with zero mean) with
+./PROOF_session23_snapshot.md:3355:  - **Lemma SRC-all (sources at every level): PROVEN-HERE.** In Setting SC with sources j_l (co-closed, zero mean) at
+./PROOF_session23_snapshot.md:3369:    co-closed inputs Q_root^T = Q_str^T, and Q_root - Q_str is exact, IT-str). So B_k + Pr ≡ g_eff mod Closed. Zero mean of r:
+./PROOF_session23_snapshot.md:4920:   (the effective datum, the zero-mean step); Lemma REC (the bilinear identity with the top components); Lemma KF (the
+./PROOF_session23_snapshot.md:4982:   - Lemma LED-dual: the mod-Closed bookkeeping of Q_root composites, the zero-mean step, the energy identity;
+./PROOF_session23_snapshot.md:5212:  λ ∈ Λ_res (zero mean on each block), ||dλ||² ≥ Σ_X||dλ||²_{inside B(X)} ≥ ν_N||λ||², so T ≥ ν_N and is invertible. Let
+./PROOF_session23_snapshot.md:5231:  over co-closed zero-mean s; stationarity tested at s = r gives ⟨r, Pr⟩ = -⟨r, B⟩, so E_i(B) = -(κ_{i-1}/2)⟨𝓡_iB, B⟩ with
+./READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md:11:The Gaussian reference has zero mean here. The actual finite-u phase has
+./PROOF_session17_snapshot.md:2384:      with zero mean, and Closed is the space of closed coarse 1-forms (exact plus constant), so CoCl_0^⊥ = Closed.
+./PROOF_session17_snapshot.md:2410:      - (ii), zero mean: J_0 ∈ Ran d* is orthogonal to the constants h. Also ⟨Q_str^{(n)T}r, h⟩ = n⟨r, h⟩, because
+./PROOF_session17_snapshot.md:2996:    fine source: critical points of E - ⟨j, B_0⟩, j a co-closed fine 1-form with zero mean (the gauge-orthogonality
+./PROOF_session17_snapshot.md:3013:      LED-dual's problem with B_k replaced by B_k - Q^{(k)}Δ^{-1}j, whose minimiser is unique. The zero-mean condition is
+./PROOF_session17_snapshot.md:3199:    Ω = Σ_lω_l^{-1}; divergence-form sources j_l = d_l^*G_l (d_l^* := d_l^T, so j_l is co-closed with zero mean) with
+./PROOF_session17_snapshot.md:3204:  - **Lemma SRC-all (sources at every level): PROVEN-HERE.** In Setting SC with sources j_l (co-closed, zero mean) at
+./PROOF_session17_snapshot.md:3218:    co-closed inputs Q_root^T = Q_str^T, and Q_root - Q_str is exact, IT-str). So B_k + Pr ≡ g_eff mod Closed. Zero mean of r:
+./PROOF_session17_snapshot.md:4720:   (the effective datum, the zero-mean step); Lemma REC (the bilinear identity with the top components); Lemma KF (the
+./PROOF_session17_snapshot.md:4782:   - Lemma LED-dual: the mod-Closed bookkeeping of Q_root composites, the zero-mean step, the energy identity;
+./PROOF_session16_snapshot.md:2384:      with zero mean, and Closed is the space of closed coarse 1-forms (exact plus constant), so CoCl_0^⊥ = Closed.
+./PROOF_session16_snapshot.md:2410:      - (ii), zero mean: J_0 ∈ Ran d* is orthogonal to the constants h. Also ⟨Q_str^{(n)T}r, h⟩ = n⟨r, h⟩, because
+./PROOF_session16_snapshot.md:2996:    fine source: critical points of E - ⟨j, B_0⟩, j a co-closed fine 1-form with zero mean (the gauge-orthogonality
+./PROOF_session16_snapshot.md:3013:      LED-dual's problem with B_k replaced by B_k - Q^{(k)}Δ^{-1}j, whose minimiser is unique. The zero-mean condition is
+./PROOF_session16_snapshot.md:3199:    Ω = Σ_lω_l^{-1}; divergence-form sources j_l = d_l^*G_l (d_l^* := d_l^T, so j_l is co-closed with zero mean) with
+./PROOF_session16_snapshot.md:3204:  - **Lemma SRC-all (sources at every level): PROVEN-HERE.** In Setting SC with sources j_l (co-closed, zero mean) at
+./PROOF_session16_snapshot.md:3218:    co-closed inputs Q_root^T = Q_str^T, and Q_root - Q_str is exact, IT-str). So B_k + Pr ≡ g_eff mod Closed. Zero mean of r:
+./PROOF_session16_snapshot.md:4720:   (the effective datum, the zero-mean step); Lemma REC (the bilinear identity with the top components); Lemma KF (the
+./PROOF_session16_snapshot.md:4782:   - Lemma LED-dual: the mod-Closed bookkeeping of Q_root composites, the zero-mean step, the energy identity;
+./PROOF_session14_snapshot.md:2303:      with zero mean, and Closed is the space of closed coarse 1-forms (exact plus constant), so CoCl_0^⊥ = Closed.
+./PROOF_session14_snapshot.md:2329:      - (ii), zero mean: J_0 ∈ Ran d* is orthogonal to the constants h. Also ⟨Q_str^{(n)T}r, h⟩ = n⟨r, h⟩, because
+./PROOF_session14_snapshot.md:2875:    fine source: critical points of E - ⟨j, B_0⟩, j a co-closed fine 1-form with zero mean (the gauge-orthogonality
+./PROOF_session14_snapshot.md:2892:      LED-dual's problem with B_k replaced by B_k - Q^{(k)}Δ^{-1}j, whose minimiser is unique. The zero-mean condition is
+./PROOF_session14_snapshot.md:4273:   - Lemma LED-dual: the mod-Closed bookkeeping of Q_root composites, the zero-mean step, the energy identity;
+./BOTTOM_SECOND_CURVATURE_ASTRA.md:489:`max|B|=.1422222222` to `8.44e-15`, while g has zero mean. Additional
+./COMBO.md:72:The products in (3) are products of numbers. With zero means this is
+./CODEX_REVIEW_NONFREE.md:38:Thus the connected witness is affine only when the component means agree (in particular, when all are separately centred). The finite variance term is nonnegative and independent of separation. For common zero means, mixing any positive weight of free Maxwell :F²: into a field obeying AF-e gives liminf λ⁸S_2^{ω,T}(f_λ⊗g_λ) ≥ weight × 48(N²−1)I_8/π⁴ > 0. It fails AF-e's upper half. It is false that an unrestricted free admixture preserves every bound.
+./REVIEW_FIXED_SOURCE_RADIUS_ASTRA.md:35:7. **Actual finite-u interacting phase.** I read SA's original-reader algebra and CB's actual phase and critical branch at their consumed scope, rather than treating their names as hypotheses. The exact finite-u critical equation removes the total linear term; the actual source Hessian removes the total quadratic term. Subtracting each bare vertex through degree two leaves a bounded holomorphic remainder with the explicit marked Taylor majorant O(sigma*p^3), including Wilson, single-normalizer and Haar terms. The source force, Hessian and translation retain all endpoints/readers and yield `M(E)+B(E)<=C_E rho` and `V(h)/p<=C_h rho delta_V/(sigma p)`. This is the actual interacting sector, not a Gaussian jet with the interaction discarded.
+./BFT_B.md:2334:(a) *Identities.* In one dimension, Δ_f∘s = s^{[1]}∘Δ_c by definition (on the torus: zero-mean part through a periodic potential,
+./BFT_B.md:3688:Finally, on the torus write x_0 = dφ + d*ω + c (Hodge; c a constant 1-form). Then dx_0 = dd*ω and, since d*d* = 0, J_0 = d*d(d*ω) = Δ_0(d*ω) with Δ_0 the componentwise lattice Laplacian (Δ_0 = d*d + dd* on 1-forms on Z^d, which commutes with d and d*). J_0 has zero mean in each component (⟨J_0, ce_μ⟩ = ⟨dx_0, d(ce_μ)⟩ = 0), so Δ_0^{-1}J_0 is defined and
+./SOFTHARD.md:530:**HRT-a: maps and real domains.** Fix N≥2, odd L≥3, d=4, every finite hypercubic torus with terminal side T≥3 and every K≥1. Quantify over families B_j:SU(N)^(E_j)→SU(N)^(E_(j+1)) with the following defining properties: everywhere measurable group values; dependence on a fixed r_B-neighbourhood of each block bond in own-scale units; endpoint gauge covariance under root evaluation; compatibility with translations, coordinate permutations, link reversal and the reflections used by the chosen fine-observable geometry. On every regular chart used for the return, B_j is real analytic, extends holomorphically and is a submersion after the stated gauge quotient. In the matched-observable subclass B_j is S4″ on its domain, and its completion is the map used to define the hard route's deterministic observable hierarchy at every level. An extension with this symmetry/locality/regularity is an **open construction**, not a polar projection silently assumed at zero mean. A different B_j requires a quantitative observable bridge and earns no C7 saving.
+./CODEX_REVIEW_GREENT_TG.md:207:The zero-mean curvature inverse is legitimate, but that fact does **not** make `b=d*Δ^(−1)dB` gauge-equivalent to arbitrary B on the torus. Let H project onto constant 1-forms. The componentwise Hodge identity gives
+./CODEX_REVIEW_GREENT_TG.md:211:Thus `B−b=dΔ^(−1)d*B+HB`. A periodic gradient has zero mean. For B a nonzero constant 1-form, b=0 and B−b is not a periodic gradient. The corrected Coulomb representative is **`b+HB`**, unless HB=0 is separately imposed. This refutes the unrestricted statement that this b alone is a gauge choice. The file mentions the harmonic part later, but does not insert it into the displayed b definition and both-leg proof.
+./CODEX_REVIEW_GREENT_TG.md:261:| gt1-D and gt1b-D; `gt1_criteria.md:44-56`, `gt1_sweep.py:102-159` | The two sources both have zero mean: the “bare” source is δ−mean. What differs is concentration/first-moment control, not the binary zero-mean property. Strict radial monotonicity on finite torus shells does not follow from an upper decay bound. A bounded increasing sequence can still obey that bound. REFUTED advertised theorem-refutation rule. The author's stronger claim that the gate is formally unsatisfiable for every true power law is NOT-VERIFIED; it need only be unjustified to lose that power. |
+./CODEX_REVIEW_NRES.md:7:3. Zero mean must follow from invariance of the complete tilted, constrained law and the absence of invariant colour vectors. Check the cubic coefficient directly and do not assume inversion symmetry.
+./CODEX_REVIEW_NRES.md:30:| Global colour invariance gives zero mean in an equivariant chart; cubic odd-trace coefficient is −4 | **CONFIRMED**, with the chart and law qualifications below | `NODEA_RES55.md`, `(D4) mean zero`, `cubic vertex` |
+./CODEX_REVIEW_NRES.md:474:4. **CONFIRMED:** BL-4's quantitative comparison under its additional two-sided Hessian bound and zero means; the colour-invariance argument in an equivariant chart for an invariant law; and the precisely normalized odd-trace cubic coefficient −4. None supplies zero conditional mean after arbitrary boundary fields are fixed.
+./checks/nonlinear_reader_return_author_checks.md:7:NC was provisional at dispatch and received a fresh unchanged scoped LAND before this source freeze; its entire review was then read. RG's complete source and fresh scoped review were read. The actual joint critical field and full covariance are FU's, including its linear source Hessian, finite-t normalizer, Haar term and all modes. The CG bridge and SC shifted-domain unit are not consumed: retuning is rebuilt in NR3-NR8 and shifted boundaries remain separate.
+./checks/review_cut_sector_coercivity_reasoning.md:191:Hessian bounds retain the centered normalizer and Haar term. The O(delta_V)
+./SESSION24_RESULTS.md:1973:- **(GT-3)** a **FIRST-MOMENT** bound Σ_z|z - z₀|·|F₀(z)| — **the vanishing mean alone buys nothing.**
+./FINITE_COUPLING_KERNEL_ASTRA.md:342:M_plus=M_minus=0, Z_t=1 and the nondegenerate Laplace form fails.
+./PROOF_session20_snapshot.md:2453:      with zero mean, and Closed is the space of closed coarse 1-forms (exact plus constant), so CoCl_0^⊥ = Closed.
+./PROOF_session20_snapshot.md:2479:      - (ii), zero mean: J_0 ∈ Ran d* is orthogonal to the constants h. Also ⟨Q_str^{(n)T}r, h⟩ = n⟨r, h⟩, because
+./PROOF_session20_snapshot.md:3065:    fine source: critical points of E - ⟨j, B_0⟩, j a co-closed fine 1-form with zero mean (the gauge-orthogonality
+./PROOF_session20_snapshot.md:3082:      LED-dual's problem with B_k replaced by B_k - Q^{(k)}Δ^{-1}j, whose minimiser is unique. The zero-mean condition is
+./PROOF_session20_snapshot.md:3268:    Ω = Σ_lω_l^{-1}; divergence-form sources j_l = d_l^*G_l (d_l^* := d_l^T, so j_l is co-closed with zero mean) with
+./PROOF_session20_snapshot.md:3273:  - **Lemma SRC-all (sources at every level): PROVEN-HERE.** In Setting SC with sources j_l (co-closed, zero mean) at
+./PROOF_session20_snapshot.md:3287:    co-closed inputs Q_root^T = Q_str^T, and Q_root - Q_str is exact, IT-str). So B_k + Pr ≡ g_eff mod Closed. Zero mean of r:
+./PROOF_session20_snapshot.md:4828:   (the effective datum, the zero-mean step); Lemma REC (the bilinear identity with the top components); Lemma KF (the
+./PROOF_session20_snapshot.md:4890:   - Lemma LED-dual: the mod-Closed bookkeeping of Q_root composites, the zero-mean step, the energy identity;
+./PROOF_session20_snapshot.md:5120:  λ ∈ Λ_res (zero mean on each block), ||dλ||² ≥ Σ_X||dλ||²_{inside B(X)} ≥ ν_N||λ||², so T ≥ ν_N and is invertible. Let
+./PROOF_session20_snapshot.md:5139:  over co-closed zero-mean s; stationarity tested at s = r gives ⟨r, Pr⟩ = -⟨r, B⟩, so E_i(B) = -(κ_{i-1}/2)⟨𝓡_iB, B⟩ with
+./LGF.md:351:zero-mean *continuum* torus Green distribution, smooth away from its source, by
+./CODEX_REVIEW_X1.md:225:| Mean, divergence | The data need not be co-closed or zero-mean. The co-closed, zero-mean *source* convention in LP §1.3 is not a restriction on the source-free data map. |
+./checks/renew_review_base.md:104:The action constant 1 is sharp even for exact, zero-mean periodic fields.
+./checks/c29_criteria.md:9:co-closed with zero mean; random coarse data B_k. The chain with source is the critical point of E - ⟨j, B_0⟩, solved by
+./checks/gt1_criteria.md:51:  the zero-mean source gains the extra power and the bare kernel does not.
+./checks/gt1_criteria.md:56:  has vanishing mean. This is the designed-FAIL control: ρ_B is the arm that is designed to fail the d-th-power claim.
+./checks/review_covariant_source_activity_post_exposure_plan.md:5:The author's actual-density run reports 98.001646 seconds. This review retains its own 60-second per-program limit and will not rerun that full nested adaptive contour calculation. The independent fixed-node calculation already checked the actual contour at different parameters. Copy the exact author prefix through its fixed-reference-factorization assertion, then append a separately derived zero-field Hessian assertion. The expected finite-u normalizer coefficient is computed by normalized direct Haar moments, independently of the author's `phase`; retain the full Haar 2/3 and numerator t*f. Baseline relative Hessian error must be below 1e-30. Actual source substitutions deleting the normalizer or Haar term from `phase` must fail that named assertion. Their otherwise self-consistent factorization checks are not asserted to detect this wiring error by themselves. A substitution deleting the source vacuum only from `Jfixed` must fail the author's existing `exact_fixed_reference_full_factors` assertion.
+./REVIEW_S18_S19.md:153:  - T = P_resΔ_0|_{Λ_res} ≥ ν_N, from the per-block Neumann gap on zero-mean λ (2(1 - cos(π/L)) is the product-graph gap);
+./CODEX_REVIEW_GSHARP.md:281:Set all plain and residual sources to zero. The currents are `j_l=d*G_l`; co-closedness and zero mean concern these **one-form currents**, not an additional co-closedness requirement on the representing two-forms G_l.
+./TQ.md:129:The derivative of each centering constant multiplies a zero-mean factor,
+./checks/c26_criteria.md:6:- **LED-dual**: at the minimiser, r := r_{k-1} is co-closed with zero mean, and it is the minimiser over co-closed
+./checks/c26_criteria.md:7:  zero-mean coarse 1-forms of ½⟨r, Pr⟩ + ⟨r, B_k⟩, with P = Σ_{m=0}^{k-1}(κ_{k-1}/κ_{k-1-m})Q_str^m Q_str^{mT} + κ_{k-1}G_k,
+./checks/fixed_source_radius_numeric_plan.md:49:   the finite-u normalizer or Haar Hessian contribution must produce a
+./PROOF_session12_snapshot.md:2194:      with zero mean, and Closed is the space of closed coarse 1-forms (exact plus constant), so CoCl_0^⊥ = Closed.
+./PROOF_session12_snapshot.md:2220:      - (ii), zero mean: J_0 ∈ Ran d* is orthogonal to the constants h. Also ⟨Q_str^{(n)T}r, h⟩ = n⟨r, h⟩, because
+./PROOF_session12_snapshot.md:3589:   - Lemma LED-dual: the mod-Closed bookkeeping of Q_root composites, the zero-mean step, the energy identity;
+./SOURCE_LOCAL_RETURN_ASTRA.md:489:separately in section 2. The local normalizer Hessian has row/column norm
+./checks/lgf_review.md:72:| Operator, normalization, torus, differences (brief 15–20) | Confirmed. LGF 14–56 and 490–515 give the positive graph Laplacian, forward/backward differences, zero-mean inverse, and componentwise Hodge operator. Its symbol has quadratic coefficient one, so `c_4=1/(4π²)`; the inverse of `I-P` is eight times this Green function. Matches LINEAR_PACKAGE 57–60 and TSE55 194–201. | None. Preserve these conventions in consolidation. |
+./TSE55.md:213:  For the zero-mean continuum torus Green function, the grouped image identity is
+./checks/bb5_criteria.md:17:  (on the zero-mean part through a periodic potential; the mean part refined uniformly, i.e. each fine link gets 1/3).
+./checks/review_covariant_background_analytic_01.md:7:3. **Actual finite-u density.** For a contour family at U0, let q be the mean left tangent and v the mean squared tangent minus ||q||^2. The numerator Hessian is (t/N)(||q||^2+v); the actual log-normalizer Hessian is -(t/N)c_N v, by applying Haar invariance to a single unitary tangent. Rescaling the action by N/u yields kappa(||q||^2+(1-c_N)v). The normalizer/kernel first derivative is exactly zero. The exponential Jacobian gives log j_N=-N||a||^2/12+O(||a||^4), hence N^2/(6u) in the normalized Hessian. No tree-phase replacement is made.
+./checks/tq_review.md:92:multiply zero-mean variables in the differentiated expectation. With
+./checks/cumul_review.md:32:   invertibility, zero means or a restriction on spectral support.
+./REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md:21:For the actual endpoint paths, `Q_root=Q_str-d_c alpha` and `Q_root d=d_c ev`. Applying the fine divergence to the bottom Euler equation, using injectivity of `ev*`, and then inducting up the Euler equations proves `d* r_j=0`. Consequently the funnel term drops from `Q_root* r_j` exactly. Pairing with constant links gives zero mean successively. The straight averages compose by tiling their block points and longitudinal steps. A block of side `r` has row sum `r` and column sum `r^-3` in four-dimensional counting measure, so its adjoint contracts the sup norm by `r^-3`. Telescoping the kappa ratios gives US4, including variable positive kappas.
+./AUDIT.md:282:| **C19 — UNIFORM_SOFT_MINIMIZER** | **CONDITIONAL**. Scope-corrected normalized tree energy gives FC19/FC20 → N16; exact finite-u Hessian has an extra positive normalizer spread. Original broader reading superseded. | “Claim type: meta. Affected-source disposition: CONFIRMED after scope correction. The P2 finding in the preserved scope supplement is resolved by the coordinator's three precise replacements. The repaired source, SHA-256 203d4edbf97078d88fcb488f164e525d2671fe5a2a910c5f6e49f615e8f41bfe, …” ([checks/review_uniform_soft_scope_confirmation.md:3–13](checks/review_uniform_soft_scope_confirmation.md)) |
+./CUMUL.md:81:nonzero means, degenerate covariance, positive tempered scalar or tensor
+./CUMUL.md:330:It checks nonzero means, the zero-covariance case algebraically, and
+./PROOF_session15_snapshot.md:2349:      with zero mean, and Closed is the space of closed coarse 1-forms (exact plus constant), so CoCl_0^⊥ = Closed.
+./PROOF_session15_snapshot.md:2375:      - (ii), zero mean: J_0 ∈ Ran d* is orthogonal to the constants h. Also ⟨Q_str^{(n)T}r, h⟩ = n⟨r, h⟩, because
+./PROOF_session15_snapshot.md:2960:    fine source: critical points of E - ⟨j, B_0⟩, j a co-closed fine 1-form with zero mean (the gauge-orthogonality
+./PROOF_session15_snapshot.md:2977:      LED-dual's problem with B_k replaced by B_k - Q^{(k)}Δ^{-1}j, whose minimiser is unique. The zero-mean condition is
+./PROOF_session15_snapshot.md:3162:    Ω = Σ_lω_l^{-1}; divergence-form sources j_l = d_l^*G_l (d_l^* := d_l^T, so j_l is co-closed with zero mean) with
+./PROOF_session15_snapshot.md:3167:  - **Lemma SRC-all (sources at every level): PROVEN-HERE.** In Setting SC with sources j_l (co-closed, zero mean) at
+./PROOF_session15_snapshot.md:3181:    co-closed inputs Q_root^T = Q_str^T, and Q_root - Q_str is exact, IT-str). So B_k + Pr ≡ g_eff mod Closed. Zero mean of r:
+./PROOF_session15_snapshot.md:4555:   (the effective datum, the zero-mean step); Lemma REC (the bilinear identity with the top components); Lemma KF (the
+./PROOF_session15_snapshot.md:4617:   - Lemma LED-dual: the mod-Closed bookkeeping of Q_root composites, the zero-mean step, the energy identity;
+./GREENT.md:157:  exact 2-form has zero mean componentwise:
+./GREENT.md:190:  2-form has zero mean by telescoping (§G1.2), so the cancellation is unconditional and needs no import. (J5)'s
+./GREENT.md:197:  coarse-exponentially-localised source with vanishing mean — needs no symbol for the composite and is the one proven
+./GREENT.md:383: the extra power, and it buys it with the first moment, not with the vanishing mean alone.**
+./GREENT.md:550:  exponent of the zero-mean-source response exceeds that of the bare kernel at every s, by ≈ 0.7.** That is
+./GREENT.md:641:(i) On a torus every exact 2-form has vanishing mean componentwise, by telescoping: Σ_z(dB)_{μν}(z) = 0. So the
+./GREENT.md:646:source of vanishing mean, with a **first-moment** bound) is what proves it and is written out in §G2.6.
+./GREENT.md:648:**3. NLOC.md — the tail is bought by the first MOMENT, not by the vanishing mean; the hole's statement should say
+./REVIEW55_TUNIF.md:237:b′ := b^per − mean(b^per) + c_0 = B_0 − d_0λ (closed + zero mean ⇒ exact on the lattice torus).
+./REVIEW_BFT_A_S3.md:217:   G enters only modulo constants and co-exact 2-forms, and the kernel dB'_l is exponentially decaying with zero mean,
+./LGF_LOG.md:36:- Domain: the graph Laplacian on Z^4 and its zero-mean inverse on integer
+./LINEAR_PACKAGE_session16_snapshot.md:57:- With sources (RTARGET §33): E_j(B) := E(B) - Σ_{l<k}⟨j_l, B_l⟩, each j_l a co-closed, zero-mean level-l 1-form, written in
+./LINEAR_PACKAGE_session16_snapshot.md:148:+ κ_{k-1}Q_str^{(n)}Δ^{-1}Q_str^{(n)T}. Then r is the unique minimiser over co-closed zero-mean forms of ½⟨s, Ps⟩ + ⟨s, B_k⟩,
+./LINEAR_PACKAGE_session16_snapshot.md:286:**Lemma 6.5 (SRC-id and SRC-all; l.2995-3040, l.3204-3221).** With co-closed zero-mean sources j_l at levels 0 ≤ l ≤ k - 1:
+./PROOF_session19_snapshot.md:2426:      with zero mean, and Closed is the space of closed coarse 1-forms (exact plus constant), so CoCl_0^⊥ = Closed.
+./PROOF_session19_snapshot.md:2452:      - (ii), zero mean: J_0 ∈ Ran d* is orthogonal to the constants h. Also ⟨Q_str^{(n)T}r, h⟩ = n⟨r, h⟩, because
+./PROOF_session19_snapshot.md:3038:    fine source: critical points of E - ⟨j, B_0⟩, j a co-closed fine 1-form with zero mean (the gauge-orthogonality
+./PROOF_session19_snapshot.md:3055:      LED-dual's problem with B_k replaced by B_k - Q^{(k)}Δ^{-1}j, whose minimiser is unique. The zero-mean condition is
+./PROOF_session19_snapshot.md:3241:    Ω = Σ_lω_l^{-1}; divergence-form sources j_l = d_l^*G_l (d_l^* := d_l^T, so j_l is co-closed with zero mean) with
+./PROOF_session19_snapshot.md:3246:  - **Lemma SRC-all (sources at every level): PROVEN-HERE.** In Setting SC with sources j_l (co-closed, zero mean) at
+./PROOF_session19_snapshot.md:3260:    co-closed inputs Q_root^T = Q_str^T, and Q_root - Q_str is exact, IT-str). So B_k + Pr ≡ g_eff mod Closed. Zero mean of r:
+./PROOF_session19_snapshot.md:4793:   (the effective datum, the zero-mean step); Lemma REC (the bilinear identity with the top components); Lemma KF (the
+./PROOF_session19_snapshot.md:4855:   - Lemma LED-dual: the mod-Closed bookkeeping of Q_root composites, the zero-mean step, the energy identity;
+./PROOF_session19_snapshot.md:5085:  λ ∈ Λ_res (zero mean on each block), ||dλ||² ≥ Σ_X||dλ||²_{inside B(X)} ≥ ν_N||λ||², so T ≥ ν_N and is invertible. Let
+./PROOF_session19_snapshot.md:5099:  over co-closed zero-mean s; stationarity tested at s = r gives ⟨r, Pr⟩ = -⟨r, B⟩, so E_i(B) = -(κ_{i-1}/2)⟨𝓡_iB, B⟩ with
+./UNIFORM_SOFT_MINIMIZER_ASTRA.md:62:Since `Q_root*=Q_str*-alpha* d*`, the funnel term vanishes on these residuals. Taking inner products of the bottom equation with constant links, and using `Q_str^(r)(constant)=r(constant)`, also proves that every residual has zero mean. Direct straight averages compose exactly. Thus, with `s=n-j-1`,
+./RTARGET.md:577:with each j_l a co-closed, zero-mean level-l 1-form (the gauge-orthogonality condition for a level-l source; level 0 as
+./RTARGET.md:578:in SRC-id). Every co-closed zero-mean j_l is d*G_l for some level-l 2-form G_l (e.g. G_l = dΔ_l^{-1}j_l); the norms
+./RENEW.md:104:The action constant 1 is sharp even for exact, zero-mean periodic fields.
+./REVIEW_SOFTHARD.md:34:| P2, 75–81 | **CONFIRMED.** An arithmetic matrix mean is not generally in SU(N). At zero mean the present kernel is Haar at every stiffness. The fixed-input concentration argument requires a unique maximizer. The bi-equivariance contradiction at zero applies to a map depending only on the mean, not every map of the fine configuration. | None. Preserve the distinction between S4′, the arithmetic maximizer, S4″, and any proposed hard map. |
+./REVIEW_SOFTHARD.md:133:| H3, 311–319 | **CONFIRMED.** Alternating true constraints and an all-soft increasing-stiffness sequence are distinct models. The zero-mean example and shrinking raw tubes block the claimed automatic identification of their limits. | None. |
+./HIST.md:692:  (m_c = 0.9997, 0.9973, 0.9899), W_0 = S_c to ≤ 4.7·10⁻¹⁵, φ(S_c) ≤ 2.2·10⁻¹⁶, coarse plaquette = exp(iL²Fσ_3) to ≤ 7.3·10⁻¹⁵,
+./REVIEW_BFT_A_S2.md:251:- The zero-mean variant (l.713-714) is ARGUED. My power count agrees: dτ_k = O((k-1)c/(κT)) perturbs r by O(kc/T) only.
+./REVIEW_S15_CONVERGENCE.md:86:  - The zero-mean step is right.
+./LANEA55.md:534:   B_{i+1} = QB_i − r_i modulo exact forms, P ≥ I from the m = 0 term, so the minimiser over co-closed zero-mean forms is unique.)
+./SESSION25_RESULTS.md:100:zero-mean sources j_l = d*G_l at every level 0 ≤ l ≤ k−1 and datum B_k, the critical configuration of
+./REVIEW2_SOFTHARD.md:44:2. **The hard-map and regularity obstructions are limited as claimed** — SOFTHARD.md:81–96. Arithmetic matrix averaging need not land in SU(N). At zero mean the soft exponent is constant in the output, so the kernel stays Haar as stiffness increases. A mean-only endpoint-biequivariant choice at zero would satisfy `B(0)=h B(0) h'^{-1}` for independent h,h', which is impossible. This does not prohibit a map using the full fine configuration. At a fixed unique maximum, compactness gives a strict gap outside each neighbourhood and hence Laplace concentration; this supplies no uniform estimate through zero/degenerate means. For a regular submersion, the pushed density has the coarea factor `1/sqrt(det DB DB*)` on the appropriate quotient. The identity map on U(1) pushes a discontinuous density to itself, whereas convolution with the finite-stiffness analytic kernel smooths it. This refutes automatic transfer for arbitrary fine weights, not analyticity of every particular Wilson pushforward.
+./PROOF_session21_snapshot.md:2479:      with zero mean, and Closed is the space of closed coarse 1-forms (exact plus constant), so CoCl_0^⊥ = Closed.
+./PROOF_session21_snapshot.md:2505:      - (ii), zero mean: J_0 ∈ Ran d* is orthogonal to the constants h. Also ⟨Q_str^{(n)T}r, h⟩ = n⟨r, h⟩, because
+./PROOF_session21_snapshot.md:3091:    fine source: critical points of E - ⟨j, B_0⟩, j a co-closed fine 1-form with zero mean (the gauge-orthogonality
+./PROOF_session21_snapshot.md:3108:      LED-dual's problem with B_k replaced by B_k - Q^{(k)}Δ^{-1}j, whose minimiser is unique. The zero-mean condition is
+./PROOF_session21_snapshot.md:3294:    Ω = Σ_lω_l^{-1}; divergence-form sources j_l = d_l^*G_l (d_l^* := d_l^T, so j_l is co-closed with zero mean) with
+./PROOF_session21_snapshot.md:3299:  - **Lemma SRC-all (sources at every level): PROVEN-HERE.** In Setting SC with sources j_l (co-closed, zero mean) at
+./PROOF_session21_snapshot.md:3313:    co-closed inputs Q_root^T = Q_str^T, and Q_root - Q_str is exact, IT-str). So B_k + Pr ≡ g_eff mod Closed. Zero mean of r:
+./PROOF_session21_snapshot.md:4859:   (the effective datum, the zero-mean step); Lemma REC (the bilinear identity with the top components); Lemma KF (the
+./PROOF_session21_snapshot.md:4921:   - Lemma LED-dual: the mod-Closed bookkeeping of Q_root composites, the zero-mean step, the energy identity;
+./PROOF_session21_snapshot.md:5151:  λ ∈ Λ_res (zero mean on each block), ||dλ||² ≥ Σ_X||dλ||²_{inside B(X)} ≥ ν_N||λ||², so T ≥ ν_N and is invertible. Let
+./PROOF_session21_snapshot.md:5170:  over co-closed zero-mean s; stationarity tested at s = r gives ⟨r, Pr⟩ = -⟨r, B⟩, so E_i(B) = -(κ_{i-1}/2)⟨𝓡_iB, B⟩ with
+./PROOF_session22_snapshot.md:2507:      with zero mean, and Closed is the space of closed coarse 1-forms (exact plus constant), so CoCl_0^⊥ = Closed.
+./PROOF_session22_snapshot.md:2533:      - (ii), zero mean: J_0 ∈ Ran d* is orthogonal to the constants h. Also ⟨Q_str^{(n)T}r, h⟩ = n⟨r, h⟩, because
+./PROOF_session22_snapshot.md:3119:    fine source: critical points of E - ⟨j, B_0⟩, j a co-closed fine 1-form with zero mean (the gauge-orthogonality
+./PROOF_session22_snapshot.md:3136:      LED-dual's problem with B_k replaced by B_k - Q^{(k)}Δ^{-1}j, whose minimiser is unique. The zero-mean condition is
+./PROOF_session22_snapshot.md:3322:    Ω = Σ_lω_l^{-1}; divergence-form sources j_l = d_l^*G_l (d_l^* := d_l^T, so j_l is co-closed with zero mean) with
+./PROOF_session22_snapshot.md:3327:  - **Lemma SRC-all (sources at every level): PROVEN-HERE.** In Setting SC with sources j_l (co-closed, zero mean) at
+./PROOF_session22_snapshot.md:3341:    co-closed inputs Q_root^T = Q_str^T, and Q_root - Q_str is exact, IT-str). So B_k + Pr ≡ g_eff mod Closed. Zero mean of r:
+./PROOF_session22_snapshot.md:4892:   (the effective datum, the zero-mean step); Lemma REC (the bilinear identity with the top components); Lemma KF (the
+./PROOF_session22_snapshot.md:4954:   - Lemma LED-dual: the mod-Closed bookkeeping of Q_root composites, the zero-mean step, the energy identity;
+./PROOF_session22_snapshot.md:5184:  λ ∈ Λ_res (zero mean on each block), ||dλ||² ≥ Σ_X||dλ||²_{inside B(X)} ≥ ν_N||λ||², so T ≥ ν_N and is invertible. Let
+./PROOF_session22_snapshot.md:5203:  over co-closed zero-mean s; stationarity tested at s = r gives ⟨r, Pr⟩ = -⟨r, B⟩, so E_i(B) = -(κ_{i-1}/2)⟨𝓡_iB, B⟩ with
+./REVIEW_LGF.md:59:| 1. Conventions | **CONFIRMED.** LGF 14–56, 490–515; LINEAR_PACKAGE 57–60; TSE55 93, 132–150, 194–201. The positive graph operator, counting inner product, forward exterior derivative, backward adjoint, zero-mean torus inverse and coupling-one curvature law agree. | None in LGF. Carry these definitions into TSE55 explicitly. |
+./PROOF_session13_snapshot.md:2254:      with zero mean, and Closed is the space of closed coarse 1-forms (exact plus constant), so CoCl_0^⊥ = Closed.
+./PROOF_session13_snapshot.md:2280:      - (ii), zero mean: J_0 ∈ Ran d* is orthogonal to the constants h. Also ⟨Q_str^{(n)T}r, h⟩ = n⟨r, h⟩, because
+./PROOF_session13_snapshot.md:3906:   - Lemma LED-dual: the mod-Closed bookkeeping of Q_root composites, the zero-mean step, the energy identity;
+./BFT_A.md:719:(The currents are constants, allowed in 7.1's class; a zero-mean long-wavelength version, J = ce_1cos(2πX_2/T), gives the
+./BFT_A.md:906:  zero mean in each direction.
+./BFT_A.md:968:equality on constants), so the constants lie in S_l and every w ∈ R_l is orthogonal to them: zero mean in each direction. ∎
+./BFT_A.md:1195:| Lemma RS (rough/smooth split in C_l; rough ⟺ Q_lw exact; zero mean) | PROVEN-HERE; ba3 R1a-b |
+./LINEAR_PACKAGE_v1_snapshot.md:90:- With sources (RTARGET §33): E_j(B) := E(B) - Σ_{l<k}⟨j_l, B_l⟩, each j_l a co-closed, zero-mean level-l 1-form, written in
+./LINEAR_PACKAGE_v1_snapshot.md:183:+ κ_{k-1}Q_str^{(n)}Δ^{-1}Q_str^{(n)T}. Then r is the unique minimiser over co-closed zero-mean forms of ½⟨s, Ps⟩ + ⟨s, B_k⟩,
+./LINEAR_PACKAGE_v1_snapshot.md:343:**Lemma 6.5 (SRC-id and SRC-all; l.2995-3040, l.3204-3221).** With co-closed zero-mean sources j_l at levels 0 ≤ l ≤ k - 1:
+./GSHARP55.md:153:- Setting SC with level-wise sources j_l = d^*G_l, each "a co-closed, zero-mean level-l 1-form" (l.575-579).
+./GSHARP55.md:496:> Same (d, L, κ_±), with 0 < α < θ < 1 and ω_l = L^{θ(k−l)}. For every k and T, every collection of co-closed, zero-mean,

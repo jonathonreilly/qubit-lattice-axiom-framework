@@ -1,0 +1,18 @@
+{
+  "format": "analytic-source-freeze-v1",
+  "created_utc": "2026-10-30T06:39:49.335450+00:00",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SQUARED_ALIGNMENT_PRICE_ASTRA.md",
+    "sha256": "cd2df445d61018ade1f4050612b0616800f4c87c83cea9de27d3ab7b8ac00905",
+    "bytes": 20270,
+    "lines": 398
+  },
+  "author_read": "Complete source read in two bounded chunks; exact subsequent scope-wording corrections reread before this freeze.",
+  "mechanical_checks": {
+    "utf8": true,
+    "local_links_checked": 8,
+    "missing_local_links": []
+  },
+  "evidence_limit": "Byte identities and local link existence only. No numerical experiment or mathematical certificate.",
+  "review_state": "Pending a different fresh independent reviewer."
+}

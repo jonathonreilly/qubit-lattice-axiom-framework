@@ -1,0 +1,56 @@
+{
+  "schema": "independent-source-only-freeze-v1",
+  "created_utc": "2026-10-30T11:46:17.199260+00:00",
+  "reviewer_context": "/root/review_white_sector_matching",
+  "source_only_verdict": "LAND",
+  "verdict_scope": "WS28-WS31 bounded real-V, complex original-source bare-step cube/chart ratio; no physical continuum result",
+  "target": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/WHITE_SECTOR_MATCHING_ASTRA.md",
+    "sha256": "172418988dd07b5f9d8c32d83f2fbc754ab86907660a291c26f1ca3711452556",
+    "bytes": 31597,
+    "lines": 631,
+    "read_windows": [
+      {
+        "first_line": 1,
+        "last_line": 220,
+        "bytes": 10889,
+        "sha256": "cd4e0cfe8c004875f70f2063b5c80a4d31c0be289ce60d816fbf17bfc88f1dce",
+        "untruncated_read": true
+      },
+      {
+        "first_line": 221,
+        "last_line": 440,
+        "bytes": 10860,
+        "sha256": "976f4f3dcf924d08dd42e858aa2ed0f807475b20467eecb893257d880d95c5d7",
+        "untruncated_read": true
+      },
+      {
+        "first_line": 441,
+        "last_line": 631,
+        "bytes": 9848,
+        "sha256": "d7619b657ed9c19d2d74d1f7476938590ce763590fac373b9da30fba8fddf2a2",
+        "untruncated_read": true
+      }
+    ],
+    "purpose": "Complete target; 221-440 and 441-631 re-read without truncation."
+  },
+  "source_read_coverage": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_white_sector_matching_source_read_coverage.json",
+    "sha256": "11cc9063fadd1fcb346de4ad2c4d32c2ec975e62a090c7b209d6d70da62b66da"
+  },
+  "source_only_findings": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_white_sector_matching_source_only_findings.md",
+    "sha256": "2498d280abaab1d60e4a9d1c50ad6227737147e3a77a9ae172dc21239e9560aa"
+  },
+  "author_packet_opened": false,
+  "prior_review_opened": false,
+  "status_summary_used_as_proof": false,
+  "target_or_dependency_edits": false,
+  "scientific_runs": 0,
+  "metadata_attempts": [
+    {
+      "result": "failed before any write",
+      "reason": "Python parser rejected a triple-quoted prose string; corrected using apply_patch plus a separate metadata writer. No mathematical or numerical execution."
+    }
+  ]
+}

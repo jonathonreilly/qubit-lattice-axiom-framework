@@ -1,0 +1,10 @@
+[POST-HOC] reading 1 -- (H2)'s worth, |N_S| = 3 (M-sharp) vs 486 (M-ct), P-max, m = 19615
+  q =       12: C_T(|N|=3) = 5.28835E+12  C_T(|N|=486) = 8.05087E+15  ratio =  1522.379  = 3.183 decades of C_T  (6.365 of eps_1^cut)
+  q =      100: C_T(|N|=3) = 1.39600E+12  C_T(|N|=486) = 7.44616E+12  ratio =     5.334  = 0.727 decades of C_T  (1.454 of eps_1^cut)
+  q =  1000000: C_T(|N|=3) = 1.38509E+12  C_T(|N|=486) = 4.57338E+12  ratio =     3.302  = 0.519 decades of C_T  (1.038 of eps_1^cut)
+
+[POST-HOC] reading 2 -- room in c_s: EPSSTAR l.608's floor c_s >= 319.2 against c_s = 411.92297
+  q =       12: C_T(c_s=411.9) = 5.28835E+12   C_T(c_s=319.2) = 4.04328E+12   room = 0.1166 decades of C_T
+  q =       32: C_T(c_s=411.9) = 1.45432E+12   C_T(c_s=319.2) = 1.43192E+12   room = 0.0067 decades of C_T
+  q =      100: C_T(c_s=411.9) = 1.39600E+12   C_T(c_s=319.2) = 1.38885E+12   room = 0.0022 decades of C_T
+  q =  1000000: C_T(c_s=411.9) = 1.38509E+12   C_T(c_s=319.2) = 1.38063E+12   room = 0.0014 decades of C_T

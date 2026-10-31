@@ -1,0 +1,90 @@
+{
+  "unit": "charged_stationary_jet",
+  "frozen_utc": "2026-10-29T19:23:45.714109+00:00",
+  "claim": "Author bounded theorem/support within normalized tree model; CJ18 open; independent review pending.",
+  "methodology_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "owned_artifacts": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHARGED_STATIONARY_JET_ASTRA.md",
+      "sha256": "85b91738993f09f7e40a49f4c957c164a684bf499185629a82775229f6437254",
+      "bytes": 26289
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_01.py",
+      "sha256": "57d4d911845977aa7576d7e46cc8c51da0cb91d8d866d7f97a927f1ef452ec55",
+      "bytes": 13246
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_01_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_01_initial.py",
+      "sha256": "4ac5d2f6b58512f6d569d4c87c114525e0a8f8a941231f295b0efe68ecc22227",
+      "bytes": 11438
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_01_initial_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_01_initial_out.json",
+      "sha256": "1ddb0fc796efac74cb68587a3fa48953b4caa1548c18b40399ee76d1285d8ccd",
+      "bytes": 8880
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_01_out.json",
+      "sha256": "fc2ee4d896bc76715bb2d28496257549394e9d5e822faf29700d27e64c672ea1",
+      "bytes": 9755
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_02.py",
+      "sha256": "5f38c7302dfbeffd1d5ff461ea460aaa6715ab588cab336b9afc5aca5daafc93",
+      "bytes": 8702
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_02_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_02_out.json",
+      "sha256": "084a52a7dc7b02edf04cececafbaf58de4d508c24246e2a0111185e19e634874",
+      "bytes": 4710
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_criteria.md",
+      "sha256": "827c11477b680d8ed743097add8c149061549761979ab5fe0d716e8760aab3df",
+      "bytes": 5233
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_failures.json",
+      "sha256": "5b0981fe7f396a44718b0cf5bab01bebbf7de273ba526eaf99df16307a0da823",
+      "bytes": 2105
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_reproduction.json",
+      "sha256": "0cee1385d917314ed87182d262840dafaff975ac42d111655d67dbad1fca79ef",
+      "bytes": 1594
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/charged_stationary_jet_source_manifest.json",
+      "sha256": "c8ad3708cb24b231e64538c79da61420ebc35a8c6042bc86f7f2a5955296467d",
+      "bytes": 13823
+    }
+  ],
+  "mechanical_checks": {
+    "python_ast": "all owned scripts including preserved initial source parsed",
+    "json": "all owned JSON parsed",
+    "whitespace": "no trailing whitespace in owned Python/Markdown",
+    "stderr": "all three actual run stderr files empty",
+    "final_predicates": {
+      "01": "40/40",
+      "02": "19/19"
+    },
+    "initial_failure": "36/37 preserved, ineffective constant-field endpoint detector; not a theorem failure"
+  },
+  "limitations": "No full PR/integration gate, independent review, audit verdict, full YM existence or physical mass-gap result. This receipt excludes its own bytes; coordinator may bind its hash externally."
+}

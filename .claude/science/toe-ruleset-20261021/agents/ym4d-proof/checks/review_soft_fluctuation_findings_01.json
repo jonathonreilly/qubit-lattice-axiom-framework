@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-10-29T19:14:36.761724+00:00",
+  "finding_id": "principal-log-chart-domain",
+  "classification": "PROOF_OBLIGATION",
+  "priority": "P1 for exact restricted-integral domain; no effect on quadratic precision",
+  "source_sha256": "7b579f43ff7c04dd922f652c76cb3a1b9a4add3d64d0bf29d6abf0e04f038296",
+  "source_lines": [
+    363,
+    367
+  ],
+  "finding": "Matrix principal logarithms need not be traceless inside a norm threshold smaller than the SU(N) injectivity radius; original Omega_r wording can include sectors absent from the su(N) coordinate cutoff. Explicit Lie-group exp-ball definition or common traceless principal chart required.",
+  "witness": "SU(3) center with r=4; exact integer-lift proof and numerical sanity witness preserved in review_soft_fluctuation_chart_01.py and stdout.",
+  "coordinator_response": "Agreed to narrow r<min{injectivity radius,pi/sqrt(N)} and define Omega_r as the image of the traceless su(N) HS ball. Repaired bytes pending.",
+  "status": "awaiting affected-only review",
+  "other_material_findings": [],
+  "preserved_reviewer_failures": [
+    "Independent attempt01 unmatched parenthesis SyntaxError, fixed only in attempt02.",
+    "Additional attempt01 check parameter c collided with metadata keyword c, fixed only in attempt02.",
+    "Chart attempt01 serialized numpy integer passed count as boolean True; predicates and witness values correct; attempt02 explicitly casts count to int."
+  ]
+}

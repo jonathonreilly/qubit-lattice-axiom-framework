@@ -1,0 +1,69 @@
+{
+  "created_utc": "2026-10-30T04:39:46.428470+00:00",
+  "scope": "Mechanical identity and write-scope checks only; no scientific proof certification",
+  "source_count": 26,
+  "source_drift": [],
+  "local_refs": {
+    "HEAD": "211e2ad24fade6c187de967ecb9d432c391f3796",
+    "origin/main": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+    "origin/ai/execution": "56c5c0ab64f532c5784e895b2f9aa6894fa334e0"
+  },
+  "remote_freshness": "not checked; no fetch",
+  "tracked_diff_paths": [],
+  "staged_diff_paths": [],
+  "preexisting_untracked_paths": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_q/JMBRA/AUTHOR.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/briefs_q/JMBRA/REVIEW.md"
+  ],
+  "created_output_paths": [
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/JMBRA.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/JMBRA_LOG.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/jmbra_freeze.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/jmbra_review.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/jmbra_review_base.md",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/jmbra_review_fixes.patch",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/jmbra_revision.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/jmbra_sources.json",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/jmbra_validation.json"
+  ],
+  "outside_allowlist": [],
+  "final_note_lines": 767,
+  "final_note_sha256": "6dd077a3383ea69b6ab04b629ee8d13be5b60958e542b1ae778eb48f90fc7c5a",
+  "review": "LAND as partial research; full LF-JMBR OPEN",
+  "review_context": "fresh same-family; inherited configured model and effort",
+  "recovery_diff_exact": true,
+  "local_link_checks": [
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/JMBRA.md",
+      "line": 15,
+      "target": "JMBRA_LOG.md",
+      "exists": true
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/JMBRA_LOG.md",
+      "line": 53,
+      "target": "checks/jmbra_review.md",
+      "exists": true
+    },
+    {
+      "file": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/JMBRA_LOG.md",
+      "line": 162,
+      "target": "checks/jmbra_validation.json",
+      "exists": true
+    }
+  ],
+  "artifact_sha256": {
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/JMBRA.md": "6dd077a3383ea69b6ab04b629ee8d13be5b60958e542b1ae778eb48f90fc7c5a",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/JMBRA_LOG.md": "b42ee3fa15a39535a5eb951dd234440a2d80cef6506a4439cfb3491798557ef0",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/jmbra_freeze.json": "0536bfdfa1ac51fd8e8d6c5dc71dfa90747c973c6be89b4a63b3bfc421c20c9f",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/jmbra_review.md": "b1176e1c7163e6b601dc1b03562bd30e574207f44af055abe0310058c3d76958",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/jmbra_review_base.md": "cc583e9e35ce344400e85d33315c2f6f32ff704027236ee290122638f56da8fb",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/jmbra_review_fixes.patch": "62d0fd004ff0cd94521a9c99b4d510f84335936e7f5366280923150515965db9",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/jmbra_revision.json": "fe8eed4041a6f895eddc5df5f5f5260ef5e503c70987546c1dc7c81da9c203af",
+    ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/jmbra_sources.json": "34eec395ddae3f8c32b3f1e915bd0f0da86462f64ea0de99564d44f34e21c8bf"
+  },
+  "numerical_experiments": "none; nice priority guard denied; no bypass",
+  "editable_prompts_changed": [],
+  "errors": [],
+  "mechanical_checks_complete": true
+}

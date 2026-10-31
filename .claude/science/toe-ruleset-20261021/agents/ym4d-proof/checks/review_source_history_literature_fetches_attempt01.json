@@ -1,0 +1,47 @@
+[
+  {
+    "id": "balaban122",
+    "url": "https://scispace.com/pdf/large-field-renormalization-ii-localization-exponentiation-h8b7ih93xo.pdf",
+    "exit_code": 0,
+    "bytes": 919,
+    "sha256": "a2f27a62249305d5b03c889d575fd0b28345dfa3681347f119149aeea9e7db32",
+    "stderr": "",
+    "pdf_pages": 1,
+    "parse_error": "page 1 not in document"
+  },
+  {
+    "id": "balaban119",
+    "url": "https://scispace.com/pdf/convergent-renormalization-expansions-for-lattice-gauge-29jyexd38e.pdf",
+    "exit_code": 0,
+    "bytes": 919,
+    "sha256": "25d8d2a1bf9d07dcd518a229eefab15f7cb56dc04bf5cc29345d28514ee9ed7f",
+    "stderr": "",
+    "pdf_pages": 1,
+    "parse_error": "page 19 not in document"
+  },
+  {
+    "id": "balaban116",
+    "url": "https://scispace.com/pdf/renormalization-group-approach-to-lattice-gauge-field-4penm4k7hc.pdf",
+    "exit_code": 0,
+    "bytes": 919,
+    "sha256": "460fbec004ac2e47cad7b7773bbef7608b3a4b585006089704c4f4563c0230a7",
+    "stderr": "",
+    "pdf_pages": 1,
+    "page_text_sha256": {
+      "1": "12c2eee9b2fa1c58d62b48f9fa77ab11a3a6577cfa3372a51d25f938e8665628"
+    }
+  },
+  {
+    "id": "recent260619362",
+    "url": "https://arxiv.org/pdf/2606.19362v1",
+    "exit_code": 0,
+    "bytes": 4636244,
+    "sha256": "0648f30f67719a6c83976f1da53131fc6f9a9ddc9ba1c406345f5ed959b32939",
+    "stderr": "",
+    "pdf_pages": 593,
+    "page_text_sha256": {
+      "398": "19207867ac93c86afd6f49526cabc10df1f75a5a9dfab86dfbc8c9ea19e450db",
+      "451": "e11d2811cbecb781f75e568405e54929b82bc55e3b580a2a0c233bfe64e8cb78"
+    }
+  }
+]

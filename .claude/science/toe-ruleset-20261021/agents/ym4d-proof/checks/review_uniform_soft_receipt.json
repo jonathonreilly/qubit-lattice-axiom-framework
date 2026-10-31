@@ -1,0 +1,228 @@
+{
+  "schema": "review-uniform-soft-receipt-v1",
+  "frozen_utc": "2026-10-29T18:14:47.522562+00:00",
+  "reviewer_task": "/root/review_uniform_soft",
+  "workspace": "/Users/jonBridger/Toy Physics/.claude/worktrees/yang-mills-proof-df9972",
+  "methodology_revision": "ca2bc7ddf64790da96cd43d42017d000fbfe4808",
+  "scope": "Frozen US1\u2013US17 proof and exact FC19/neutral FC20 consumer; supplied normalized d=4 finite-soft S4-prime model.",
+  "proof_obligation_disposition": "CLOSED at this stated boundary",
+  "author_repair_findings": [],
+  "whole_pr_pass": false,
+  "audit_authority": "Independent audit lane only; no verdict or effective status supplied.",
+  "report": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+    "sha256": "78d40a5480aafe94c30ee5c0b827d30b84ec629dfccaa91b44c98cfe08ecf3d9"
+  },
+  "criteria": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_criteria.md",
+    "sha256": "30aa71cc88a519d44307b0ab873ff64630ca876b7fa67fd8903e904f80a27731",
+    "recorded_before_independent_code": true
+  },
+  "author_note_sha256": "c7b7890187b9a350aea19e606957c606922fe741c6615382c3a4da0cd60d92c4",
+  "author_input_manifest_sha256": "e61933a28ea8538a6e596ffa7e188bf6f0b107a49cb68a83f25713b970b0ea8f",
+  "author_receipt_sha256": "4e980541b2bddc77586bfa7f9285ebb4428684268aedaf750b232d9c9b45fe6a",
+  "source_manifest": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_source_manifest.json",
+    "sha256": "d8a6dc0d81da85bbc6acf9308fcfa1a969fc2504956bf04cf96cfe6dc69d2bb5"
+  },
+  "files": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_UNIFORM_SOFT_MINIMIZER_ASTRA.md",
+      "sha256": "78d40a5480aafe94c30ee5c0b827d30b84ec629dfccaa91b44c98cfe08ecf3d9",
+      "bytes": 17036
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_01.py",
+      "sha256": "0af4ef27630291fb9b201d60f4d16cb2e2dd0f5d4b815a899c3faa392a86b0db",
+      "bytes": 16273
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_01_attempt01.py",
+      "sha256": "48e3658ad6e973568bd4eb6e084a10c9fcc1873e418559de8293617a88e2c683",
+      "bytes": 16274
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_01_attempt01_err.txt",
+      "sha256": "ed2532cbea548fea5d1d369992d08e8f9b84393672890ca7892054c4664e9381",
+      "bytes": 442
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_01_attempt01_out.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_01_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_01_out.json",
+      "sha256": "edf3c51aa7f4408322b75e9faee012dc6e0d67979787ad2d26652d5eb12ddc6f",
+      "bytes": 6312
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_02.py",
+      "sha256": "130945a61221f1b195bad7bf35adc13deaeab3753e905a7d7b92211640b76490",
+      "bytes": 8748
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_02_attempt01.py",
+      "sha256": "e467d26d753c6536e60d4d37e3e9b1a12aea28c0efcaee24dfbcf196bc5e280a",
+      "bytes": 8732
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_02_attempt01_err.txt",
+      "sha256": "3d51c772a78769f3cdd56675f93dc6cf70f37193e106caebdeb7aa7754e3209c",
+      "bytes": 2301
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_02_attempt01_out.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_02_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_02_out.json",
+      "sha256": "0164737f7f9b694696536a32394210a0b88d87642464223a990f32b3107ef97b",
+      "bytes": 13489
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_control_notes.md",
+      "sha256": "4cdcc9bd2dedb6f8243283508ef5c1aa7e014b6bfb409acbcb062897d39a776c",
+      "bytes": 7257
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_criteria.md",
+      "sha256": "30aa71cc88a519d44307b0ab873ff64630ca876b7fa67fd8903e904f80a27731",
+      "bytes": 5136
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_entry_identity.json",
+      "sha256": "0f7edcf8ec607b9451777e6a0a17831d96e289caee41c7e9743415ad3f65912d",
+      "bytes": 9456
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_failures.json",
+      "sha256": "949677db73c79f9444809aace07c46c3847f722395400a4964372ddb117f73cd",
+      "bytes": 2687
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_literature.md",
+      "sha256": "28c10ae1e00b92935dea0cbacffd7df9a3def2c70c13d0f21766a5a59fb2124f",
+      "bytes": 2547
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_mechanical.json",
+      "sha256": "54fb8aba1b53c18f7fd192183539737e82d1afe42b9d5bc54c28a2a8f0d46336",
+      "bytes": 13663
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_source_manifest.json",
+      "sha256": "d8a6dc0d81da85bbc6acf9308fcfa1a969fc2504956bf04cf96cfe6dc69d2bb5",
+      "bytes": 22324
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153
+    }
+  ],
+  "executions": [
+    {
+      "program": "01",
+      "attempt": "attempt01",
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_01_attempt01.py",
+      "source_sha256": "48e3658ad6e973568bd4eb6e084a10c9fcc1873e418559de8293617a88e2c683",
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_01_attempt01_out.json",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_01_attempt01_err.txt",
+      "exit_code": 1,
+      "runs": 1,
+      "passed": null,
+      "total": null,
+      "elapsed_seconds": null,
+      "failure_or_limit": "Python parse error before science executed"
+    },
+    {
+      "program": "01",
+      "attempt": "final",
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_01.py",
+      "source_sha256": "0af4ef27630291fb9b201d60f4d16cb2e2dd0f5d4b815a899c3faa392a86b0db",
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_01_out.json",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_01_err.txt",
+      "exit_code": 0,
+      "runs": 1,
+      "passed": 34,
+      "total": 34,
+      "elapsed_seconds": 13.760505199432373,
+      "failure_or_limit": null
+    },
+    {
+      "program": "02",
+      "attempt": "attempt01",
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_02_attempt01.py",
+      "source_sha256": "e467d26d753c6536e60d4d37e3e9b1a12aea28c0efcaee24dfbcf196bc5e280a",
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_02_attempt01_out.json",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_02_attempt01_err.txt",
+      "exit_code": 1,
+      "runs": 1,
+      "passed": null,
+      "total": null,
+      "elapsed_seconds": null,
+      "failure_or_limit": "JSON serialization exception after computation; no complete result emitted"
+    },
+    {
+      "program": "02",
+      "attempt": "final",
+      "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_02.py",
+      "source_sha256": "130945a61221f1b195bad7bf35adc13deaeab3753e905a7d7b92211640b76490",
+      "stdout": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_02_out.json",
+      "stderr": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_02_err.txt",
+      "exit_code": 0,
+      "runs": 1,
+      "passed": 84,
+      "total": 84,
+      "elapsed_seconds": 0.7686290740966797,
+      "failure_or_limit": null
+    }
+  ],
+  "runtime": {
+    "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "numpy": "2.4.1",
+    "scipy": "1.17.0"
+  },
+  "mechanical": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_mechanical.json",
+    "sha256": "54fb8aba1b53c18f7fd192183539737e82d1afe42b9d5bc54c28a2a8f0d46336",
+    "local_links_valid": true,
+    "all_frozen_author_and_input_hashes_match": true,
+    "vocabulary_violations": 0,
+    "criteria_identity_tolerance_satisfied_by_saved_evidence": true
+  },
+  "independence_limits": [
+    "Author prose summaries and receipt were visible before implementation.",
+    "Author programs read only after both independent implementations and successful runs; no helper imports.",
+    "Strip formulas and conservative numerical pair come from visible mathematical source; no independent formula-discovery claim.",
+    "118 recorded reviewer predicates are not 118 independent theorems; repeated samples and one structural obligation-presence predicate are disclosed.",
+    "Author 81/62/64/53 outputs inspected, not rerun by this reviewer; 56 predicates repeat across first three modes.",
+    "Finite cases and floating point arithmetic do not prove uniformity or analyticity."
+  ],
+  "preserved_failures": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_uniform_soft_failures.json",
+    "sha256": "949677db73c79f9444809aace07c46c3847f722395400a4964372ddb117f73cd"
+  },
+  "third_party_documents": "Only metadata and original concise comparisons in repository; full PDFs and extracted text remain in /tmp.",
+  "remains_open": [
+    "Full Yang\u2013Mills continuum existence and OS reconstruction",
+    "Physical Hamiltonian continuum mass gap",
+    "Charged cubic-source exchange and full finite-part increment",
+    "Conditional fluctuation covariance/inverse localization",
+    "Uniform nonlinear complex neighborhood and interacting RG/sea estimates"
+  ],
+  "no_git_pr_lock_summary_or_audit_mutations": true,
+  "receipt_self_hash": "Excluded; its SHA-256 is provided externally in the parent handoff."
+}

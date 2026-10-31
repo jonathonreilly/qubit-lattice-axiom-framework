@@ -1,0 +1,7 @@
+lock acquired 07:23:55 load { 2.13 2.70 2.89 }
+exit 0
+lock released 07:24:28
+nice 10; OMP/OPENBLAS/MKL/VECLIB threads 1; python3 without -I; no timeout; no trap; one rmdir
+       32.39 real        31.04 user         0.69 sys
+           776404992  maximum resident set size
+           861635688  peak memory footprint

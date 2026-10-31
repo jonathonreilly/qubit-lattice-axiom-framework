@@ -1,0 +1,13 @@
+(sanity) site rotations exact SO(3): True
+P1 pure-gauge tadpole T_c = 0 on all 18 links: PASS  max-numerator-size=0
+P1-c naive (untransported) tadpole nonzero on >= 1 link: control fires  nonzero links: 18/18; e.g. T_0=['8931248533976298/1728623336346308545', '1880262849258168/1728623336346308545', '-1410197136943626/345724667269261709']
+  gradient trial 0: full T^(1) zero: True;  without dCov: nonzero on 18/18 links
+  gradient trial 1: full T^(1) zero: True;  without dCov: nonzero on 18/18 links
+  gradient trial 2: full T^(1) zero: True;  without dCov: nonzero on 18/18 links
+P2 first-order T^(1)[gradient] = 0 (3 independent lambda): PASS  
+P2-n non-vacuity: T^(1)[generic v] nonzero on >= 1 link: PASS  nonzero links: 18/18; e.g. T_0=['168446980087101/3719469255183020', '7562174147747469/20457080903506610', '-6768359018648226/10228540451753305']
+P2-c dropping dCov gives nonzero on a gradient: control fires  
+P3 linearity T^(1)[v1+v2] = T^(1)[v1] + T^(1)[v2]: PASS  
+=== fl55_3 SUMMARY ===
+verdict lines: 4/4 PASS; controls fired: 2/2
+OVERALL: PASS

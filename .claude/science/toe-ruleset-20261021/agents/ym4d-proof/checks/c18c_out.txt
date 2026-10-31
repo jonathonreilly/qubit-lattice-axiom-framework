@@ -1,0 +1,42 @@
+d=2 coarse side 5 seed 11: R_ab=7.097683  L^(4-d)=9  R_ab/L^(4-d)=0.7886
+PASS (a) d=2 seed 11 near-extremal R_ab/L^(4-d) >= 0.5 | 0.7886
+PASS (b) d=2 seed 11 A1 on the field R_ab <= L^(4-d) | 7.097683
+  t=0.0025  phi=1.472e-03 coarse=1.165e-02 R_log=7.09766082 R_s=7.09763867 D=1.4973e-02 |R_s-R_log|=2.22e-05
+  t=0.005   phi=2.944e-03 coarse=2.329e-02 R_log=7.09759468 R_s=7.09750607 D=2.9949e-02 |R_s-R_log|=8.86e-05
+  t=0.01    phi=5.888e-03 coarse=4.659e-02 R_log=7.09733013 R_s=7.09697571 D=5.9910e-02 |R_s-R_log|=3.54e-04
+  t=0.02    phi=1.177e-02 coarse=9.320e-02 R_log=7.09627205 R_s=7.09485476 D=1.1986e-01 |R_s-R_log|=1.42e-03
+PASS (c) d=2 seed 11 D(t) does not grow as t decreases | 1.497e-02 2.995e-02 5.991e-02 1.199e-01
+PASS (d) d=2 seed 11 in regime (phi, coarse <= 0.25; side >= 3)
+  (e) reported C_rep = 0.0000
+d=2 coarse side 5 seed 12: R_ab=7.097683  L^(4-d)=9  R_ab/L^(4-d)=0.7886
+PASS (a) d=2 seed 12 near-extremal R_ab/L^(4-d) >= 0.5 | 0.7886
+PASS (b) d=2 seed 12 A1 on the field R_ab <= L^(4-d) | 7.097683
+  t=0.0025  phi=1.560e-03 coarse=1.228e-02 R_log=7.09767070 R_s=7.09764535 D=7.7976e-03 |R_s-R_log|=2.53e-05
+  t=0.005   phi=3.120e-03 coarse=2.457e-02 R_log=7.09763420 R_s=7.09753281 D=1.5596e-02 |R_s-R_log|=1.01e-04
+  t=0.01    phi=6.240e-03 coarse=4.913e-02 R_log=7.09748821 R_s=7.09708268 D=3.1196e-02 |R_s-R_log|=4.06e-04
+  t=0.02    phi=1.248e-02 coarse=9.825e-02 R_log=7.09690427 R_s=7.09528245 D=6.2381e-02 |R_s-R_log|=1.62e-03
+PASS (c) d=2 seed 12 D(t) does not grow as t decreases | 7.798e-03 1.560e-02 3.120e-02 6.238e-02
+PASS (d) d=2 seed 12 in regime (phi, coarse <= 0.25; side >= 3)
+  (e) reported C_rep = 0.0000
+d=3 coarse side 3 seed 13: R_ab=1.522481  L^(4-d)=3  R_ab/L^(4-d)=0.5075
+PASS (a) d=3 seed 13 near-extremal R_ab/L^(4-d) >= 0.5 | 0.5075
+PASS (b) d=3 seed 13 A1 on the field R_ab <= L^(4-d) | 1.522481
+  t=0.0025  phi=2.705e-03 coarse=1.563e-02 R_log=1.52247623 R_s=1.52246705 D=1.9498e-03 |R_s-R_log|=9.18e-06
+  t=0.005   phi=5.413e-03 coarse=3.127e-02 R_log=1.52246041 R_s=1.52242370 D=3.8965e-03 |R_s-R_log|=3.67e-05
+  t=0.01    phi=1.084e-02 coarse=6.255e-02 R_log=1.52239713 R_s=1.52225032 D=7.7816e-03 |R_s-R_log|=1.47e-04
+  t=0.02    phi=2.174e-02 coarse=1.252e-01 R_log=1.52214401 R_s=1.52155695 D=1.5522e-02 |R_s-R_log|=5.87e-04
+PASS (c) d=3 seed 13 D(t) does not grow as t decreases | 1.950e-03 3.897e-03 7.782e-03 1.552e-02
+PASS (d) d=3 seed 13 in regime (phi, coarse <= 0.25; side >= 3)
+  (e) reported C_rep = 0.0000
+d=3 coarse side 3 seed 14: R_ab=1.522481  L^(4-d)=3  R_ab/L^(4-d)=0.5075
+PASS (a) d=3 seed 14 near-extremal R_ab/L^(4-d) >= 0.5 | 0.5075
+PASS (b) d=3 seed 14 A1 on the field R_ab <= L^(4-d) | 1.522481
+  t=0.0025  phi=2.429e-03 coarse=1.454e-02 R_log=1.52246747 R_s=1.52246177 D=5.7762e-03 |R_s-R_log|=5.70e-06
+  t=0.005   phi=4.862e-03 coarse=2.910e-02 R_log=1.52242537 R_s=1.52240259 D=1.1545e-02 |R_s-R_log|=2.28e-05
+  t=0.01    phi=9.735e-03 coarse=5.826e-02 R_log=1.52225699 R_s=1.52216588 D=2.3063e-02 |R_s-R_log|=9.11e-05
+  t=0.02    phi=1.952e-02 coarse=1.167e-01 R_log=1.52158356 R_s=1.52121952 D=4.6012e-02 |R_s-R_log|=3.64e-04
+PASS (c) d=3 seed 14 D(t) does not grow as t decreases | 5.776e-03 1.155e-02 2.306e-02 4.601e-02
+PASS (d) d=3 seed 14 in regime (phi, coarse <= 0.25; side >= 3)
+  (e) reported C_rep = 0.0000
+runtime 0.8 s
+TOTAL: PASS=16 FAIL=0

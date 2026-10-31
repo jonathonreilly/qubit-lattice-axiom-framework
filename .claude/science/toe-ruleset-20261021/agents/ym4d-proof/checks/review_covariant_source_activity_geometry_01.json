@@ -1,0 +1,468 @@
+{
+  "checks": [
+    {
+      "name": "actual row-centred read radius",
+      "passed": true,
+      "detail": {
+        "kernel": 1,
+        "Wilson": 2,
+        "matrix_range": 2
+      }
+    },
+    {
+      "name": "periodic crossing fibre multiplicity",
+      "passed": true,
+      "detail": {
+        "2": {
+          "distinct_endpoint_kernels": 14,
+          "nonzero": [
+            [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              0,
+              72
+            ]
+          ],
+          "other_words": 25272
+        },
+        "3": {
+          "distinct_endpoint_kernels": 15,
+          "nonzero": [
+            [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              0,
+              72
+            ]
+          ],
+          "other_words": 27216
+        }
+      }
+    },
+    {
+      "name": "actual remote coefficient omission detected",
+      "passed": true,
+      "detail": {
+        "first": 0.998200539935204,
+        "second": 0.9981400768384902,
+        "difference": 6.0463096713814224e-05,
+        "read_distance": 2
+      }
+    },
+    {
+      "name": "coarse curvature excludes undersized good event",
+      "passed": true,
+      "detail": {
+        "delta": 0.05831426178756215,
+        "necessary_rhs": 0.029157130893781077
+      }
+    },
+    {
+      "name": "hard indicator uniform norm does not follow field tail",
+      "passed": true,
+      "detail": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "counts": {
+    "paired_words_T2": 124416,
+    "fine_plaquettes_T2": 7776,
+    "paired_words_T3": 124416,
+    "fine_plaquettes_T3": 39366
+  },
+  "maximum_read_distances": {
+    "kernel": 1,
+    "Wilson": 2,
+    "matrix_range": 2
+  },
+  "fibre": {
+    "2": {
+      "distinct_endpoint_kernels": 14,
+      "nonzero": [
+        [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          0,
+          72
+        ]
+      ],
+      "other_words": 25272
+    },
+    "3": {
+      "distinct_endpoint_kernels": 15,
+      "nonzero": [
+        [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          0,
+          72
+        ]
+      ],
+      "other_words": 27216
+    }
+  },
+  "resources": [
+    {
+      "where": "start",
+      "rss": 29474816,
+      "free": 56,
+      "load": [
+        2.3212890625,
+        1.9365234375,
+        1.93115234375
+      ],
+      "nice": 10,
+      "elapsed": 0.00273554096929729,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "kernel geometry T2 base0",
+      "rss": 40288256,
+      "free": 57,
+      "load": [
+        2.3212890625,
+        1.9365234375,
+        1.93115234375
+      ],
+      "nice": 10,
+      "elapsed": 0.15052420797292143,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "kernel geometry T2 base4",
+      "rss": 41893888,
+      "free": 56,
+      "load": [
+        2.3212890625,
+        1.9365234375,
+        1.93115234375
+      ],
+      "nice": 10,
+      "elapsed": 0.6617180830216967,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "kernel geometry T2 base8",
+      "rss": 42532864,
+      "free": 56,
+      "load": [
+        2.3212890625,
+        1.9365234375,
+        1.93115234375
+      ],
+      "nice": 10,
+      "elapsed": 1.1749611659906805,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "kernel geometry T2 base12",
+      "rss": 42811392,
+      "free": 57,
+      "load": [
+        2.3212890625,
+        1.9365234375,
+        1.93115234375
+      ],
+      "nice": 10,
+      "elapsed": 1.6883500409894623,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "plaquettes T2 site0",
+      "rss": 43024384,
+      "free": 57,
+      "load": [
+        2.3212890625,
+        1.9365234375,
+        1.93115234375
+      ],
+      "nice": 10,
+      "elapsed": 2.072141874989029,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "complete T2",
+      "rss": 43024384,
+      "free": 56,
+      "load": [
+        2.3212890625,
+        1.9365234375,
+        1.93115234375
+      ],
+      "nice": 10,
+      "elapsed": 2.232611207989976,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "kernel geometry T3 base0",
+      "rss": 43663360,
+      "free": 56,
+      "load": [
+        2.3212890625,
+        1.9365234375,
+        1.93115234375
+      ],
+      "nice": 10,
+      "elapsed": 2.366084541019518,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "kernel geometry T3 base4",
+      "rss": 45629440,
+      "free": 56,
+      "load": [
+        2.3212890625,
+        1.9365234375,
+        1.93115234375
+      ],
+      "nice": 10,
+      "elapsed": 2.883474499976728,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "kernel geometry T3 base8",
+      "rss": 47874048,
+      "free": 56,
+      "load": [
+        2.37548828125,
+        1.9541015625,
+        1.93701171875
+      ],
+      "nice": 10,
+      "elapsed": 3.403977708017919,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "kernel geometry T3 base12",
+      "rss": 49381376,
+      "free": 57,
+      "load": [
+        2.37548828125,
+        1.9541015625,
+        1.93701171875
+      ],
+      "nice": 10,
+      "elapsed": 3.9295340409735218,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "plaquettes T3 site0",
+      "rss": 50184192,
+      "free": 56,
+      "load": [
+        2.37548828125,
+        1.9541015625,
+        1.93701171875
+      ],
+      "nice": 10,
+      "elapsed": 4.322520749992691,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "plaquettes T3 site1500",
+      "rss": 51986432,
+      "free": 57,
+      "load": [
+        2.37548828125,
+        1.9541015625,
+        1.93701171875
+      ],
+      "nice": 10,
+      "elapsed": 4.405357290990651,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "plaquettes T3 site3000",
+      "rss": 55934976,
+      "free": 56,
+      "load": [
+        2.37548828125,
+        1.9541015625,
+        1.93701171875
+      ],
+      "nice": 10,
+      "elapsed": 4.471657624992076,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "plaquettes T3 site4500",
+      "rss": 57540608,
+      "free": 57,
+      "load": [
+        2.37548828125,
+        1.9541015625,
+        1.93701171875
+      ],
+      "nice": 10,
+      "elapsed": 4.545710458012763,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "plaquettes T3 site6000",
+      "rss": 58966016,
+      "free": 56,
+      "load": [
+        2.37548828125,
+        1.9541015625,
+        1.93701171875
+      ],
+      "nice": 10,
+      "elapsed": 4.620949540985748,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "complete T3",
+      "rss": 59015168,
+      "free": 56,
+      "load": [
+        2.37548828125,
+        1.9541015625,
+        1.93701171875
+      ],
+      "nice": 10,
+      "elapsed": 4.750349415990058,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "where": "completion",
+      "rss": 59080704,
+      "free": 57,
+      "load": [
+        2.37548828125,
+        1.9541015625,
+        1.93701171875
+      ],
+      "nice": 10,
+      "elapsed": 4.753771791001782,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    }
+  ],
+  "proof_scope": "Exact finite support diagnostics; general row-centred radius follows from the plaquette/two-block stencil argument. Does not certify SA12 or complement prices."
+}

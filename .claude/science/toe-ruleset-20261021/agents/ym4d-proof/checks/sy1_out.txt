@@ -1,0 +1,43 @@
+==============================================================================
+sy1_symbols.py  --  T55-C symbol audit arithmetic (exact rationals)
+criteria: checks/sy1_criteria.md
+==============================================================================
+inputs: d=4 L=3 N=2  A_d=9  c_1=1/117  eps_live=6.7e-40  eps_ill=2
+        eta_RS(eps_live) = 4.870877e-83   eta_KN(eps_live) = 5.726496e-42
+        active entry of eta_RS at eps_live: quadratic
+
+[SY1-1] m_tau at eta_1^KN (C_I = 1, 1.5, 2), eps_1 = 6.7e-40 : (3, 4, 5)
+        same at eps_1 = 2 (KN form is eps-independent)        : (3, 4, 5)
+        PLD l.1098/l.1244 record 3 / 3,4,5   ->  MTAU-KN-REPRODUCES
+
+[SY1-2] m_tau at eta_1^RS (C_I = 1, 1.5, 2), eps_1 = 6.7e-40 : (66, 90, 122)
+        criterion 'every entry >= 40'  ->  MTAU-RS-DIFFERS (live defect confirmed)
+        ratio to PLD's quoted 3/4/5    : (Fraction(22, 1), Fraction(45, 2), Fraction(122, 5))
+
+[SY1-3] DESIGNED-FAIL CONTROL: same code path, same criterion, eps_1 = 2
+        m_tau at eta_1^RS, eps_1 = 2                          : (5, 7, 10)
+        criterion 'every entry >= 40'  ->  FAILED as designed (criterion is eps_1-sensitive)
+        REVIEW_PLD_S3 l.435 records 5 / 7 / 10 at eps_1 = 2   ->  REPRODUCES
+
+[SY1-4] eta_q(eps_live) = 1.453993e-43
+        eta_1^RS / eta_q = 3.350000e-40   (< 1 ? True)
+        eta_1^KN / eta_q = 39.384615      (> 1 ? True)
+        exact eta_1^KN/eta_q = 512/13 = 512/13
+        RLARGE l.65 records 'eta_1 <= eta_q'  ->  ORDER-REVERSED (both halves)
+        N = 3 ratio: 59.076923
+
+[SY1-5] C_D window (tau_R <= theta_0^SUP/C'), tau_R = 2.75e-15 : C_D <= 455.283301
+        exact C_D^2 = 40000000000/192973
+        TAUFLAT [TF1-C] records 455.283301  ->  WINDOW-REPRODUCES
+        CONTROL at tau_R = 2.75e-14: C_D <= 143.973221  ->  FAILED as designed
+
+[SY1-6] a_bad coefficient of 1/C_D^4 :
+        at SQ l.212's stale theta_0 = 1e-8/C_D^2  : 5.562478e-23
+        at SQ l.216's corrected      3e-8/C_D^2   : 5.006230e-22
+        HW l.604 quotes                           : 5.000000e-23
+        corrected / HW-quoted = 10.0125   ->  STALE-CONFIRMED
+        exact theta_0 ratio corrected/stale = 3 (square -> 9)
+
+==============================================================================
+VERDICTS: SY1-1 MTAU-KN-REPRODUCES | SY1-2 MTAU-RS-DIFFERS | SY1-3 CONTROL-FAILED-AS-DESIGNED | SY1-4 ORDER-REVERSED | SY1-5 WINDOW-REPRODUCES | SY1-6 STALE-CONFIRMED
+==============================================================================

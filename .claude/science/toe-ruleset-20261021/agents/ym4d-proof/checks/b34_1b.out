@@ -1,0 +1,12 @@
+seed 11: U-part 30 derivative vectors compared, mismatches 0
+seed 11: E-part 62 derivatives compared, mismatches 0
+seed 23: U-part 30 derivative vectors compared, mismatches 0
+seed 23: E-part 62 derivatives compared, mismatches 0
+seed 37: U-part 30 derivative vectors compared, mismatches 0
+seed 37: E-part 62 derivatives compared, mismatches 0
+(P,W) counts U: [1, 4, 14, 51] (expected [1, 4, 14, 51]); Bell B(n+1)-1: [1, 4, 14, 51]
+(P,W) counts E: [1, 2, 5, 15, 52] (expected [1, 2, 5, 15, 52]); Bell B(n): [1, 2, 5, 15, 52]
+fully expanded tree counts T(n), n=1..4 (informational): [1, 4, 32, 416]
+controls fired: {'K1': True, 'K2': True, 'K3': True, 'K4': True}
+P1 PASS; P2 PASS; P3 PASS; controls ALL FIRED
+OVERALL: PASS

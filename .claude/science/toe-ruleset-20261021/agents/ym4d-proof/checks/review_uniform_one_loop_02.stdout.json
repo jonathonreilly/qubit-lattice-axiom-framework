@@ -1,0 +1,341 @@
+{
+  "scope": "Finite independent diagnostics, not a uniform-theorem certification. Source exposed; no author helper code read/imported.",
+  "lock_read_only": {
+    "expires_at": "2026-10-29T23:02:23.558884+00:00",
+    "holder_id": "01a1873f-103a-7f01-b924-4455238d8a86",
+    "owner": "ym4d-full-proof",
+    "pid": 32308,
+    "purpose": "Continue full PR 10114 proof with independent Astra reviews",
+    "started_at": "2026-10-29T21:02:23.558884+00:00"
+  },
+  "resource_gates": [
+    {
+      "stage": "before_imports",
+      "free_percent": 55,
+      "load": [
+        2.87646484375,
+        2.34912109375,
+        2.0849609375
+      ],
+      "max_rss_bytes": 21659648,
+      "elapsed_seconds": 0.0024584580096416175
+    },
+    {
+      "stage": "after_exact_coefficients",
+      "free_percent": 55,
+      "load": [
+        2.87646484375,
+        2.34912109375,
+        2.0849609375
+      ],
+      "max_rss_bytes": 66830336,
+      "elapsed_seconds": 0.36312524997629225
+    },
+    {
+      "stage": "before_paths",
+      "free_percent": 55,
+      "load": [
+        2.87646484375,
+        2.34912109375,
+        2.0849609375
+      ],
+      "max_rss_bytes": 67878912,
+      "elapsed_seconds": 0.488778791972436
+    },
+    {
+      "stage": "complete",
+      "free_percent": 55,
+      "load": [
+        2.87646484375,
+        2.34912109375,
+        2.0849609375
+      ],
+      "max_rss_bytes": 68878336,
+      "elapsed_seconds": 0.6670178329804912
+    }
+  ],
+  "passed": 38,
+  "total": 38,
+  "failed": [],
+  "mutation_count": 14,
+  "rows": [
+    {
+      "name": "noncommuting_direct_determinant",
+      "pass": true,
+      "value": "-2/5",
+      "mutation": false
+    },
+    {
+      "name": "quarter_bubble_rejected",
+      "pass": true,
+      "value": "1/12",
+      "mutation": true
+    },
+    {
+      "name": "one_transfer_rejected",
+      "pass": true,
+      "value": "1/12",
+      "mutation": true
+    },
+    {
+      "name": "noncommuting_fixture",
+      "pass": true,
+      "value": null,
+      "mutation": false
+    },
+    {
+      "name": "angular_polynomial_scalar",
+      "pass": true,
+      "value": "-4*n1**2*n2**2 + n1**2",
+      "mutation": false
+    },
+    {
+      "name": "angular_vector_spin_derived",
+      "pass": true,
+      "value": "-16*n1**2*n2**2 + 4*n1**2 - 2",
+      "mutation": false
+    },
+    {
+      "name": "sphere_moments_from_rotation",
+      "pass": true,
+      "value": {
+        "a": "1/8",
+        "b": "1/24"
+      },
+      "mutation": false
+    },
+    {
+      "name": "absolute_scalar_and_vector_coefficients",
+      "pass": true,
+      "value": [
+        "1/12",
+        "-5/3"
+      ],
+      "mutation": false
+    },
+    {
+      "name": "quarter_bubble_absolute_coefficient_rejected",
+      "pass": true,
+      "value": null,
+      "mutation": true
+    },
+    {
+      "name": "removed_spin_rejected",
+      "pass": true,
+      "value": null,
+      "mutation": true
+    },
+    {
+      "name": "all_root_identity_coefficients",
+      "pass": true,
+      "value": {
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true
+      },
+      "mutation": false
+    },
+    {
+      "name": "HS_and_FLOW_match",
+      "pass": true,
+      "value": null,
+      "mutation": false
+    },
+    {
+      "name": "u_slope_derived",
+      "pass": true,
+      "value": [
+        "-7*N**2/(8*pi**2)",
+        "-11*N**2/(12*pi**2)"
+      ],
+      "mutation": false
+    },
+    {
+      "name": "missing_second_real_colour_rejected",
+      "pass": true,
+      "value": null,
+      "mutation": true
+    },
+    {
+      "name": "missing_HS_density_conversion_rejected",
+      "pass": true,
+      "value": null,
+      "mutation": true
+    },
+    {
+      "name": "full_vs_half_ghost_rejected",
+      "pass": true,
+      "value": null,
+      "mutation": true
+    },
+    {
+      "name": "actual_SU2_offshell_nonzero_force",
+      "pass": true,
+      "value": "0.313988847224196358226457075475888504805896415017901489166153",
+      "mutation": false
+    },
+    {
+      "name": "actual_SU2_adjoint_orthogonal",
+      "pass": true,
+      "value": "1.55575381946528542678601601344503106014756304218029178327528e-61",
+      "mutation": false
+    },
+    {
+      "name": "actual_SU2_adjoint_determinant",
+      "pass": true,
+      "value": "1.0",
+      "mutation": false
+    },
+    {
+      "name": "actual_SU2_gradient_chart",
+      "pass": true,
+      "value": "3.8893845486632135669650400336125776503689076054507294581882e-62",
+      "mutation": false
+    },
+    {
+      "name": "actual_SU2_Hessian_chart",
+      "pass": true,
+      "value": "2.33363072919792814017902402016754659022134456327043767491292e-61",
+      "mutation": false
+    },
+    {
+      "name": "actual_SU2_completed_Hessian_chart",
+      "pass": true,
+      "value": "3.11150763893057085357203202689006212029512608436058356655056e-61",
+      "mutation": false
+    },
+    {
+      "name": "actual_SU2_scalar_Gram_chart",
+      "pass": true,
+      "value": "1.55575381946528542678601601344503106014756304218029178327528e-61",
+      "mutation": false
+    },
+    {
+      "name": "untransformed_gauge_generator_rejected",
+      "pass": true,
+      "value": "0.203580573316347218440059075037448048332198434978603307383827",
+      "mutation": true
+    },
+    {
+      "name": "additive_chart_full_force_chain",
+      "pass": true,
+      "value": null,
+      "mutation": false
+    },
+    {
+      "name": "additive_chart_congruence_only_rejected",
+      "pass": true,
+      "value": "2*b**2/3 - 11*b**4/45 + O(b**5)",
+      "mutation": true
+    },
+    {
+      "name": "additive_Haar_Jacobian_nontrivial",
+      "pass": true,
+      "value": "1 - b**2/3 + 2*b**4/45 + O(b**5)",
+      "mutation": false
+    },
+    {
+      "name": "fixed_complement_exact_correction",
+      "pass": true,
+      "value": [
+        "-354/2695",
+        "-24/2695",
+        "6/49"
+      ],
+      "mutation": false
+    },
+    {
+      "name": "unit_full_determinant_does_not_remove_correction",
+      "pass": true,
+      "value": "-354/2695",
+      "mutation": true
+    },
+    {
+      "name": "missing_mixed_chart_term_rejected",
+      "pass": true,
+      "value": null,
+      "mutation": true
+    },
+    {
+      "name": "missing_induced_Gram_rejected",
+      "pass": true,
+      "value": null,
+      "mutation": true
+    },
+    {
+      "name": "fixed_rank_density_vanishes",
+      "pass": true,
+      "value": null,
+      "mutation": false
+    },
+    {
+      "name": "every_increment_bounded_remainder",
+      "pass": true,
+      "value": null,
+      "mutation": false
+    },
+    {
+      "name": "bounded_sequence_does_not_give_increment_convergence",
+      "pass": true,
+      "value": null,
+      "mutation": true
+    },
+    {
+      "name": "actual7776_paired_paths_and_symmetry",
+      "pass": true,
+      "value": 7776,
+      "mutation": false
+    },
+    {
+      "name": "actual_zero_alias_map",
+      "pass": true,
+      "value": [
+        [
+          5832,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          5832,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          5832,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          5832
+        ]
+      ],
+      "mutation": false
+    },
+    {
+      "name": "actual_root_gradient_complex_alias",
+      "pass": true,
+      "value": 2.3647098876206327e-14,
+      "mutation": false
+    },
+    {
+      "name": "deleted_second_axial_leg_rejected",
+      "pass": true,
+      "value": 0.03293819000003422,
+      "mutation": true
+    }
+  ],
+  "versions": {
+    "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0"
+  },
+  "elapsed_seconds": 0.6670567499822937
+}

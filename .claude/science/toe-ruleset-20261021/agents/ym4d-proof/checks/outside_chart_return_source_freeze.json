@@ -1,0 +1,13 @@
+{
+  "frozen_utc": "2026-10-30T00:59:28.777401+00:00",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OUTSIDE_CHART_RETURN_ASTRA.md",
+    "bytes": 32868,
+    "lines": 641,
+    "sha256": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4"
+  },
+  "status": "ARGUMENT_FROZEN_PENDING_NEW_INDEPENDENT_REVIEW",
+  "scope": "OC1-OC32 actual original-cut arbitrary-set shell bound, full-reader component expectations, real avoidance/reference comparisons; exact stated curvature, source, history and complex limits.",
+  "packaging": "Read/evidence receipt may be completed after this source freeze without changing these argument bytes.",
+  "numerical_experiments": 0
+}

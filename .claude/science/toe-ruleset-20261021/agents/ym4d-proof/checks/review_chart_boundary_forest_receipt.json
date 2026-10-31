@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "role": "independent source-review receipt; no audit authority",
+  "verdict": "LAND",
+  "scope": "Exact bounded-support claims BF4-BF24 under their displayed hypotheses; actual BF25 and the physical target remain open.",
+  "created_utc": "2026-10-30T02:17:10.646628+00:00",
+  "primary_source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+    "sha256": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8",
+    "line_count": 564,
+    "read_ranges": [
+      [
+        1,
+        564
+      ]
+    ],
+    "coverage": "Complete independent mathematical and scope review; sole reviewed author unit."
+  },
+  "review_report": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CHART_BOUNDARY_FOREST_ASTRA.md",
+    "sha256": "4bc9bfda827c8c2792b8fde5f1b8563752d127159a9b72d3b827d10b2cdc5da3",
+    "line_count": 252
+  },
+  "findings_freeze": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_chart_boundary_forest_findings_freeze.json",
+    "sha256": "f0d4d3131b5ecc2a91822d82c11136994850fe48112dfc4c82c6b7472a429740"
+  },
+  "read_manifest": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_chart_boundary_forest_read_manifest.json",
+    "sha256": "de21efd5eee4b55657689cb914f0251df34637923d0405a28d3f8c326287fe17"
+  },
+  "author_evidence": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_receipt.json",
+      "sha256": "e00a605790f290f6ecdc95e4cf1cdc2c85630ecefce6b7029d846f1d0d17de69",
+      "line_count": 52,
+      "coverage": "Complete read after the independent mathematical findings freeze."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_read_manifest.json",
+      "sha256": "35be410ae0b57a82e902d5030066fd902a3b8ea69830c8507cc5d8392a9758f0",
+      "line_count": 246,
+      "coverage": "Complete read after the independent mathematical findings freeze."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_author_correction.json",
+      "sha256": "6f35b06fd5ee6be5a98e9fba31b14583691772dedd41a30cda818d4c4849ebb0",
+      "line_count": 11,
+      "coverage": "Complete read after the independent mathematical findings freeze."
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/chart_boundary_forest_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "line_count": 9,
+      "coverage": "Complete read after the independent mathematical findings freeze."
+    }
+  ],
+  "mechanical_checks": {
+    "source_still_matches_frozen_hash": true,
+    "author_receipt_file_hashes_match": true,
+    "author_input_source_hashes_match": true,
+    "author_correction_reconstructs_both_hashes": true,
+    "reviewed_markdown_has_no_trailing_whitespace": true,
+    "fenced_blocks_balanced": true,
+    "local_links_checked": [
+      {
+        "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+        "target": "PROBABILITY_SENSITIVE_RETURN_ASTRA.md"
+      },
+      {
+        "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+        "target": "checks/chart_boundary_forest_read_manifest.json"
+      },
+      {
+        "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+        "target": "checks/chart_boundary_forest_receipt.json"
+      },
+      {
+        "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+        "target": "PROCESS_LIGHT.md"
+      },
+      {
+        "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CHART_BOUNDARY_FOREST_ASTRA.md",
+        "target": "CHART_BOUNDARY_FOREST_ASTRA.md"
+      },
+      {
+        "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CHART_BOUNDARY_FOREST_ASTRA.md",
+        "target": "checks/review_chart_boundary_forest_findings_freeze.json"
+      },
+      {
+        "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CHART_BOUNDARY_FOREST_ASTRA.md",
+        "target": "checks/review_chart_boundary_forest_read_manifest.json"
+      },
+      {
+        "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CHART_BOUNDARY_FOREST_ASTRA.md",
+        "target": "checks/review_chart_boundary_forest_receipt.json"
+      },
+      {
+        "source": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CHART_BOUNDARY_FOREST_ASTRA.md",
+        "target": "PROCESS_LIGHT.md"
+      }
+    ]
+  },
+  "finding_count": 0,
+  "source_repairs": 0,
+  "review_iterations": 1,
+  "independent_math": "Analytic derivations and adversarial scope/degenerate-case checks in the review report; no numerical evidence claimed.",
+  "same_family_limit": "Fresh-context Codex reviewing Codex; requested Astra/max is not independently attested by the generic GPT-6 runtime.",
+  "not_run": [
+    "Numerical experiments",
+    "Audit worker or verdict application",
+    "Combined integrated pipeline",
+    "Git/PR mutations"
+  ],
+  "integration_boundary": "Source-only LAND. Root coordinator owns final Git/PR identity and combined mechanical integration checks.",
+  "vocabulary_check": {
+    "command": "python3 scripts/vocab_lint.py --report-only --report-path .claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_chart_boundary_forest_vocab.json .claude/science/toe-ruleset-20261021/agents/ym4d-proof/REVIEW_CHART_BOUNDARY_FOREST_ASTRA.md",
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_chart_boundary_forest_vocab.json",
+    "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+    "violations": 0
+  },
+  "final_source_confirmation_utc": "2026-10-30T02:18:09.375307+00:00",
+  "final_read_only_head": "640788a8a0816ed63f3d8e1abf57137fb0687e89"
+}

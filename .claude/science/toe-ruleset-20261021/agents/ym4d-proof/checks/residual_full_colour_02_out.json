@@ -1,0 +1,139 @@
+{
+  "scope": "exact finite periodic Green, projector-defect and Gram controls; no uniform-depth or nonlinear finite-volume verdict",
+  "passed": 25,
+  "total": 25,
+  "radial_green": {
+    "g0": "104/729",
+    "g1": "14/729",
+    "g2": "1/1458",
+    "g3": "-4/729",
+    "g4": "-25/2916"
+  },
+  "checks": [
+    {
+      "name": "periodic Green exact rank-one inverse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "periodic inverse defect retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mean-zero domain",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ordinary inverse assertion rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "external cosine norm and mean",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent Fourier eigenvalue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exceptional trace word r=1",
+      "passed": true,
+      "detail": "{'trace': '1/6', 'per_site': '1/486'}"
+    },
+    {
+      "name": "zero-defect replacement rejected r=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exceptional trace word r=2",
+      "passed": true,
+      "detail": "{'trace': '1/18', 'per_site': '1/1458'}"
+    },
+    {
+      "name": "zero-defect replacement rejected r=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exceptional trace word r=3",
+      "passed": true,
+      "detail": "{'trace': '1/54', 'per_site': '1/4374'}"
+    },
+    {
+      "name": "zero-defect replacement rejected r=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed momentum volume limit r=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed momentum volume limit r=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed momentum volume limit r=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "merging limit differs",
+      "passed": true,
+      "detail": "1/(32*pi**4)"
+    },
+    {
+      "name": "pinned rows exactly zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pinned deleted-domain inverse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pinned constant term matters",
+      "passed": true,
+      "detail": "{'mean_zero': '104/729', 'pinned': '208/729'}"
+    },
+    {
+      "name": "missing pinned constant rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite rank difference not negligible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed-domain complete coefficient",
+      "passed": true,
+      "detail": "4/9"
+    },
+    {
+      "name": "outer half weight",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "wrong bubble factor rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "moving-kernel Gram correction",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

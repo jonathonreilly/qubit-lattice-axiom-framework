@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-29T11:06:27.082628+00:00",
+  "coordinator_baseline": "46dc04b05c5842a03ae3af64caa77628f099128f",
+  "git_identity_independently_checked": false,
+  "read_scope": "See RECOVERY_ALIGNMENT_ASTRA.md section 6; hashes identify files and are not full-read attestations.",
+  "sources": {
+    "ALIGN3_55.md": "85079c75503b7e2ca1ba43f2d49de222d634782ebf83e4b634cb447cc384b89c",
+    "CODEX_REVIEW_ALIGN2.md": "5dc47e3232053c805105b6f03d145db0a053f4f8da97e8e51afb323218cc335c",
+    "ALIGN2_55.md": "17043a3bd468a6d890915e587f6f9c1f5a4636528cbab8380e09fe838298bd4f",
+    "COFUN_CC.md": "2a399a7dce1de8f0a4e9b4dfb81d9f0595e8eb4d8b294e2764b1b518d98ce035",
+    "BGT55.md": "516ceddf05987c9fd35b7a9b9c60bc8e98798e1c93e184631990f504d3ef6f46",
+    "ALIGN55.md": "0dfe94ab23778d30ed2a3065dbebea120b5ad36025739bbdb0a8ab1cd6975ff7",
+    "KFACTOR_OFF55.md": "6a47b6543bfefa31f8eb103ff057c4d64b38a97a48f35a195caa70367a9c3159",
+    "LINEAR_PACKAGE.md": "0a2649ff5dbda9963a65ac62770a831d5e9737b9694ea873f28f008496e8e7ad",
+    "BFT_A.md": "8074d6c5efe3648bfb28e3463a6076cf6df74c9c358a8613390044148ac6fbe0",
+    "BFT_B.md": "b6ddf451a4dfe2028a9f23fe7fe696ce11f1c17e497709ac3761da3e7a1172c6",
+    "DICT55.md": "87e57c7c796d46eaea954945feefdc84f3e5e3d6423ee9b9c084076cbdba31e4"
+  },
+  "outputs": {
+    "RECOVERY_ALIGNMENT_ASTRA.md": "c58b51c8d19a87f473e0ecc86d582919ff7962417357db7b7c65eb83f2073fb4",
+    "checks/recovery_align_exact.py": "72fbf46b0563a0246240f26d7802294911a00131b047ad1b82823eb1f0aebefa",
+    "checks/recovery_align_exact_criteria.md": "36da67f0eb3a605f4cb92e169c21c76ab90da082b484a8edfa4208a9744f44bc",
+    "checks/recovery_align_exact_out.txt": "0c586f808eb0af726653c0aedc5fbca2a42f29e1d5900746d223128004989187",
+    "checks/recovery_align_exact_err.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

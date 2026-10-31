@@ -1,0 +1,15 @@
+E2/E3/E5 at k = 1
+  k=1 T=2: U_H 5.5106, S1 7.5284, D_N 0.9860, ||Pi_cc Y_0||_1/n 0.9860, LE ratio 0.1203 (box side 2); CG res 4e-13 (37 it) (1 s, RSS 63 MB)
+  k=1 T=3: U_H 7.4935, S1 8.7445, D_N 0.3629, ||Pi_cc Y_0||_1/n 1.3442, LE ratio 0.1203 (box side 2); CG res 7e-13 (52 it) (2 s, RSS 64 MB)
+  k=1 T=4: U_H 8.9420, S1 9.4736, D_N 0.4033, ||Pi_cc Y_0||_1/n 1.6285, LE ratio 0.1203 (box side 2); CG res 8e-13 (69 it) (3 s, RSS 64 MB)
+  k=1 T=5: U_H 9.6784, S1 9.8424, D_N 0.4375, ||Pi_cc Y_0||_1/n 1.8047, LE ratio 0.1203 (box side 2); CG res 7e-13 (80 it) (5 s, RSS 69 MB)
+  k=1 T=6: U_H 10.1365, S1 10.0713, D_N 0.4552, ||Pi_cc Y_0||_1/n 1.9268, LE ratio 0.1203 (box side 2); CG res 7e-13 (92 it) (8 s, RSS 72 MB)
+E2/E3/E4-designed at k = 2
+  k=2 T=2: U_H 7.5857, S1 11.4364, D_N 0.7049, ||Pi_cc Y_0||_1/n 0.9486, GU designed ratio 4.7589; CG res 8e-13 (115 it) (13 s, RSS 72 MB)
+  k=2 T=3: U_H 9.7395, S1 12.5952, D_N 0.2631, ||Pi_cc Y_0||_1/n 1.3176, GU designed ratio 5.8341; CG res 9e-13 (145 it) (27 s, RSS 296 MB)
+  k=2 T=4: U_H 11.0640, S1 13.2602; CG res 9e-13 (189 it) (70 s, RSS 755 MB)
+H1 PASS
+H2 PASS
+N1 PASS
+N2 PASS
+LE1 PASS

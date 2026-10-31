@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "role": "author provenance and analytic self-check, not independent review or audit",
+  "requested_configuration": "Coordinator-requested Astra/max; no separate backend attestation",
+  "source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+    "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+    "bytes": 36894,
+    "lines": 711
+  },
+  "freeze_order": "Source hash announced to root before manifest/lint/receipt packaging. All mathematical bytes remain unchanged after that announcement.",
+  "bounded_result": "SN29-SN30: complete-original-reader connected logarithm and same-critical-reference nonvanishing for the fixed original-a auxiliary chart, including every side/corner; exact finite-u phase, kernel, Haar and full critical colour determinant retained.",
+  "bound": "mu=beta/2=1/[2(16R)^4]; small-log norm <=epsilon=O(sigma^2)+C(1+sigma^-(91D+2))exp[-a r_a^2/(64sigma^2)], under the explicit common-construction and radius/large-u inequalities SN3, SN10-SN11, SN23 and SN28.",
+  "remaining_interfaces": "Original-cut/history/G/Omega and complementary integrals; effective identification and iteration; continuum existence and positive physical continuum gap. No such claim is made.",
+  "protected_source_identity_checks": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHART_BOUNDARY_FOREST_ASTRA.md",
+      "sha256": "c74260a3984330c9393f66c9e7b43068ae4d411d35f593d3241378a96fe3abd8"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/POSITIVE_READER_COVARIANCE_ASTRA.md",
+      "sha256": "68bb7798bfcc0806c65531ab894e3e7f67ef1c155afd6da2f20f1b9dc2bb8da8"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/FINITE_U_CRITICAL_FIELD_ASTRA.md",
+      "sha256": "ecace773f964a18fe6e5c14d46d38913dc52f95afbd2c8763e4766f0c286377d"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/READER_LOCAL_GAUSSIAN_RETURN_ASTRA.md",
+      "sha256": "4f94b5e2102391441233621d99be3e4b14dc46b9be89ea35915b354a4d0a06d6"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_CHART_RETURN_ASTRA.md",
+      "sha256": "88b5b59feaf278d9b9995adc320a446363fa68887d277ca4315c6469fb3aa525"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+      "sha256": "72651905fa554d44e7d42406af199ec0e9a75a88c030009626929f9f77dc1dec"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/NONLINEAR_READER_RETURN_ASTRA.md",
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0"
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+      "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54"
+    }
+  ],
+  "package": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/shifted_nonlinear_reader_return_read_manifest.json",
+      "sha256": "fd5fc1e43ae0df0677af82f801ea14908bba223fbe79b9bca93a01e7a91d8291",
+      "bytes": 5755,
+      "lines": 108
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/shifted_nonlinear_reader_return_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153,
+      "lines": 9
+    }
+  ],
+  "author_analytic_checks": [
+    {
+      "location": "SN1-SN6",
+      "check": "One actual phase and one common R/cover/FU atom family. R-independent principal inverse row constants precede tail caps; local majorants are fixed at preliminary ceilings before actual chart/field/source/coarse choices. Both covariance tails and all large marked constants remain."
+    },
+    {
+      "location": "SN7-SN13",
+      "check": "Translated nonlinear reader atoms retain every critical-field attachment. Flux absorbs the unique side sign. Full-colour spheres, t measures, sigma powers and physical prefactors are exact. A vertex side pattern and its shared parameters stay inside its primitive component, including absence constraints."
+    },
+    {
+      "location": "SN14-SN19",
+      "check": "Full determinant loops and inverse chains use the exact normalized principal covariance. Mixed translation/forest jets keep per-coordinate factorials with L_hat=sqrt(2)L_jet. Translation marks have an explicit K_tr pin. Distinct original vertices bound degree90; all inverse-sigma/sphere/moment costs fit a true boundary tail."
+    },
+    {
+      "location": "SN20-SN25",
+      "check": "Independent covariance-pair derivatives precede path-minimum evaluation; primitives and side parameters are held fixed. Base compatibility, every complete reader and the normalized empty vacuum are retained. Marked Gaussian-translation roots attach to actual side primitives through both positive tree sums, producing h_tr with its rare Q_s."
+    },
+    {
+      "location": "SN26-SN30",
+      "check": "Centered parity is used only with no side. Fictitious fixed-u rescaling of side amplitudes bounds the whole side-containing family, without changing b or covariance. Four beta/8 losses pay component formation, scalar attachments, complete-reader regrouping and the connected logarithm. Nonvanishing is proved relative to the exact retained prefactor."
+    }
+  ],
+  "mechanical_checks": {
+    "equation_labels": "SN1-SN30 each occur once as displayed labels",
+    "fences": "balanced",
+    "trailing_whitespace": "none",
+    "vocab_lint": "report-only, zero violations; no source mutation",
+    "local_links": {
+      "result": "all resolve",
+      "targets": [
+        "FINITE_U_CRITICAL_FIELD_ASTRA.md",
+        "NONLINEAR_CHART_ACTIVITY_ASTRA.md",
+        "SHIFTED_CHART_RETURN_ASTRA.md",
+        "NONLINEAR_READER_RETURN_ASTRA.md",
+        "checks/shifted_nonlinear_reader_return_read_manifest.json",
+        "checks/shifted_nonlinear_reader_return_receipt.json"
+      ]
+    },
+    "protected_sources": "all eight listed identities match the earlier frozen identities"
+  },
+  "numerical_experiments": "none",
+  "independent_review": "fresh hostile review requested from coordinator; pending at packaging",
+  "operations": "Only owned shifted_nonlinear_reader_return source/check files created. No Git mutation, publication, shared-front change, lock, audit or additional worker."
+}

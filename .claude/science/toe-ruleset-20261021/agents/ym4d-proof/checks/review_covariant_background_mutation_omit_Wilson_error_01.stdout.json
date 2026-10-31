@@ -1,0 +1,182 @@
+{
+  "scope": "finite author diagnostics, not interval or all-volume certificates",
+  "mode": "derivatives",
+  "python": "3.12.8",
+  "numpy": "2.4.1",
+  "scipy": "1.17.0",
+  "passed": 23,
+  "total": 26,
+  "all_pass": false,
+  "checks": [
+    {
+      "name": "Wilson_defect_complete_block_row_bound",
+      "pass": true,
+      "detail": {
+        "row_norm": 0.0,
+        "bound": 0.0633008863052677,
+        "delta": 0.002637536929386154
+      }
+    },
+    {
+      "name": "spread_positive_semidefinite",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "finite_u_full_Hessian_2.0",
+      "pass": false,
+      "detail": 0.0015629047115853555
+    },
+    {
+      "name": "kernel_gradient_at_lift_2.0",
+      "pass": true,
+      "detail": 4.464950429381985e-16
+    },
+    {
+      "name": "Wilson_gradient_bound_2.0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "omit_Haar_control_2.0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "omit_finite_u_spread_control",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "omit_actual_kernel_normalizer_control",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "nonstationary_lift_control",
+      "pass": true,
+      "detail": 0.005390912854945756
+    },
+    {
+      "name": "finite_u_full_Hessian_10.0",
+      "pass": false,
+      "detail": 0.001562904710945932
+    },
+    {
+      "name": "kernel_gradient_at_lift_10.0",
+      "pass": true,
+      "detail": 8.210822832148494e-16
+    },
+    {
+      "name": "Wilson_gradient_bound_10.0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "omit_Haar_control_10.0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "finite_u_full_Hessian_50.0",
+      "pass": false,
+      "detail": 0.001562904710812519
+    },
+    {
+      "name": "kernel_gradient_at_lift_50.0",
+      "pass": true,
+      "detail": 9.37603494957588e-16
+    },
+    {
+      "name": "Wilson_gradient_bound_50.0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "omit_Haar_control_50.0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "nonzero_chart_reverse_gradient",
+      "pass": true,
+      "detail": 5.076214008056627e-10
+    },
+    {
+      "name": "quaternion_matrix_product_convention",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "actual_contours_matrix_vs_quaternion",
+      "pass": true,
+      "detail": 2.2887833992611187e-16
+    },
+    {
+      "name": "drop_Ad_transport_control",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source_vacuum_extensive_u_scaling",
+      "pass": true,
+      "detail": [
+        4.0065900645202504e-06,
+        1.6026360258081002e-05
+      ]
+    },
+    {
+      "name": "source_linear_canonical_sqrt_u_scaling",
+      "pass": true,
+      "detail": [
+        0.0005846927203237737,
+        0.0011693854406475473
+      ]
+    },
+    {
+      "name": "coupled_colour_covariance_square_root",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "positive_logdet_eigenvalue_crosscheck",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "wrong_colour_determinant_control",
+      "pass": true,
+      "detail": {
+        "actual_full_logdet": 975.7196137623301,
+        "wrong_three_equal_colours": 968.2870825458102
+      }
+    }
+  ],
+  "details": {
+    "derivatives": [
+      {
+        "u": 2.0,
+        "finite_difference_error": 0.0015629047115853555,
+        "lift_gradient_max": 0.005390912854945756,
+        "minimum_exact_Hessian": 0.3588447176370706
+      },
+      {
+        "u": 10.0,
+        "finite_difference_error": 0.001562904710945932,
+        "lift_gradient_max": 0.005390912854945757,
+        "minimum_exact_Hessian": 0.09212199170616105
+      },
+      {
+        "u": 50.0,
+        "finite_difference_error": 0.001562904710812519,
+        "lift_gradient_max": 0.005390912854945758,
+        "minimum_exact_Hessian": 0.038773010871671315
+      }
+    ]
+  },
+  "elapsed_seconds": 0.9084462499595247,
+  "external_scientific_inputs_read": [],
+  "integrity_reads": [],
+  "full_existence_established": false,
+  "physical_continuum_mass_gap_established": false
+}

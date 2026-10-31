@@ -1,0 +1,11 @@
+f6c: amendment A1 (POST-HOC) of checks/f6_criteria.md, on stored f6_out.txt values
+   ell=9: c^cov_closed=-1.371742e-04; stored c^cov=-0.00013717
+   ell=15: c^cov_closed=-6.153846e-05; stored c^cov=-0.00006154
+[A1-cov] PASS :: max |c^cov_f6 - c^cov_closed| = 4.21e-09 (<= 1e-8)
+   kc=0.25: r^K(9)=-1.184e-04 r^K(15)=-1.190e-04 slope x48pi^2 -0.00060; r^D(9)=+6.142e-07 r^D(15)=+2.585e-07 slope x48pi^2 -0.00033
+   kc=1.0: r^K(9)=-2.874e-04 r^K(15)=-2.885e-04 slope x48pi^2 -0.00107; r^D(9)=+1.954e-06 r^D(15)=+8.085e-07 slope x48pi^2 -0.00106
+   kc=4.0: r^K(9)=-5.914e-04 r^K(15)=-5.928e-04 slope x48pi^2 -0.00128; r^D(9)=+5.254e-06 r^D(15)=+2.018e-06 slope x48pi^2 -0.00300
+[A1-G] PASS :: |s_rK(9,15)| x 48pi^2 <= 0.005 for each kc
+[A1-H] PASS :: |s_rD(9,15)| x 48pi^2 <= 0.005 for each kc
+[A1-G'] NOT EVALUATED :: ell = 21 not run (not planned)
+   (printout rounding bound on any slope above: 1.9e-05)

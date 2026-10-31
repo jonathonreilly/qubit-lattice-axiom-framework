@@ -1,0 +1,304 @@
+{
+  "kind": "separate_post_author_packet_consistency_check",
+  "created_at_utc": "2026-10-30T08:32:07.019340+00:00",
+  "pre_packet_evidence": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_local_compact_return_independent_reads_20261030T083015Z.json",
+      "sha256": "03dd7c8ec3ace72cee052c6722d7d087e6e91f49c22bf36ceb6a3e2b8e00c345",
+      "lines": 138
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_source_local_compact_return_independent_findings_20261030T083015Z.md",
+      "sha256": "2d3067644c959b21564a77355795839b56aa5d68966a0b1be5f7a56d97fba1e0",
+      "lines": 119
+    }
+  ],
+  "author_packets": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_local_compact_return_read_manifest.json",
+      "sha256": "5fa19a81b140cafae2c15c8b0eea34962ffed1f6c40ad3df23d4e12b579541c3",
+      "lines": 202
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_local_compact_return_receipt.json",
+      "sha256": "82170348198d71ebfd8c01446af2eb0cdd5492ff6e3f4b88c7aef398e1c16405",
+      "lines": 38
+    }
+  ],
+  "target_source_final": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+    "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+    "lines": 597
+  },
+  "historical_author_context": {
+    "instruction_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+    "science_base_head": "8a17d9d9bec2ba6a08359688ba64956df29cf81b",
+    "standing": "Author-reported preparation context; not current integration evidence and not a reviewed Git base/tree certificate."
+  },
+  "current_worktree_head_observed_read_only": "3fc1e8387184218de547db79030bf29f6cca6bea",
+  "binding_result": "Target source and all author-listed dependency identities match; historical preparation context remains distinct from this final file binding.",
+  "dependency_metadata_checks": [
+    {
+      "author_declared": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+        "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+        "lines": 592
+      },
+      "current": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CRITICAL_FIELD_ASTRA.md",
+        "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+        "lines": 592
+      },
+      "matches": true,
+      "content_reviewed_here": "see independent read manifest for exact ranges"
+    },
+    {
+      "author_declared": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+        "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+        "lines": 510
+      },
+      "current": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/REGIONAL_CHART_RETURN_ASTRA.md",
+        "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+        "lines": 510
+      },
+      "matches": true,
+      "content_reviewed_here": "see independent read manifest for exact ranges"
+    },
+    {
+      "author_declared": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OUTSIDE_CHART_RETURN_ASTRA.md",
+        "sha256": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4",
+        "lines": 641
+      },
+      "current": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/OUTSIDE_CHART_RETURN_ASTRA.md",
+        "sha256": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4",
+        "lines": 641
+      },
+      "matches": true,
+      "content_reviewed_here": "see independent read manifest for exact ranges"
+    },
+    {
+      "author_declared": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GRADED_COMPLEMENT_ASTRA.md",
+        "sha256": "22e30738d5d59adc65c146c7e9fa3bd671462d694a7ae1fe14e73804774e5341",
+        "lines": 580
+      },
+      "current": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GRADED_COMPLEMENT_ASTRA.md",
+        "sha256": "22e30738d5d59adc65c146c7e9fa3bd671462d694a7ae1fe14e73804774e5341",
+        "lines": 580
+      },
+      "matches": true,
+      "content_reviewed_here": "see independent read manifest for exact ranges"
+    },
+    {
+      "author_declared": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+        "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+        "lines": 617
+      },
+      "current": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CUT_SECTOR_COERCIVITY_ASTRA.md",
+        "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e",
+        "lines": 617
+      },
+      "matches": true,
+      "content_reviewed_here": "see independent read manifest for exact ranges"
+    },
+    {
+      "author_declared": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHRINKING_CHART_RETURN_ASTRA.md",
+        "sha256": "9ae446ca746639ff77295f9da712f47e4be9d315d7c26e975535f1602321abfc",
+        "lines": 247
+      },
+      "current": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHRINKING_CHART_RETURN_ASTRA.md",
+        "sha256": "9ae446ca746639ff77295f9da712f47e4be9d315d7c26e975535f1602321abfc",
+        "lines": 247
+      },
+      "matches": true,
+      "content_reviewed_here": "see independent read manifest for exact ranges"
+    },
+    {
+      "author_declared": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+        "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+        "lines": 711
+      },
+      "current": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/SHIFTED_NONLINEAR_READER_RETURN_ASTRA.md",
+        "sha256": "47423d924c938f627550ae592d4ef2d5ef3255d6f2e60b2ab0887b9a46425d1b",
+        "lines": 711
+      },
+      "matches": true,
+      "content_reviewed_here": false
+    },
+    {
+      "author_declared": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+        "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+        "lines": 722
+      },
+      "current": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/COVARIANT_SOURCE_ACTIVITY_ASTRA.md",
+        "sha256": "da22fc28cff8f822426ccd0458959dc24668f3d8854848f8ff83dbcda9f2ba54",
+        "lines": 722
+      },
+      "matches": true,
+      "content_reviewed_here": false
+    },
+    {
+      "author_declared": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+        "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+        "lines": 812
+      },
+      "current": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/STEP55.md",
+        "sha256": "aa785cf1ba03a53e79b52e8b9eb677927d18abb26178c4c018c3c37e7e1af0ce",
+        "lines": 812
+      },
+      "matches": true,
+      "content_reviewed_here": false
+    },
+    {
+      "author_declared": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LFPRICE.md",
+        "sha256": "4deb5cbf7573145a438abcda4aeedd14c4270cc05c3e63072abeb43561c77a53",
+        "lines": 764
+      },
+      "current": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/LFPRICE.md",
+        "sha256": "4deb5cbf7573145a438abcda4aeedd14c4270cc05c3e63072abeb43561c77a53",
+        "lines": 764
+      },
+      "matches": true,
+      "content_reviewed_here": false
+    },
+    {
+      "author_declared": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD4.md",
+        "sha256": "60d27c7ec5e5fda254e8394c34639cccdfe42cd9f85898bb22952bc6fa6067c6",
+        "lines": 741
+      },
+      "current": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/RD4.md",
+        "sha256": "60d27c7ec5e5fda254e8394c34639cccdfe42cd9f85898bb22952bc6fa6067c6",
+        "lines": 741
+      },
+      "matches": true,
+      "content_reviewed_here": false
+    },
+    {
+      "author_declared": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+        "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+        "lines": 11
+      },
+      "current": {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROCESS_LIGHT.md",
+        "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab",
+        "lines": 11
+      },
+      "matches": true,
+      "content_reviewed_here": "see independent read manifest for exact ranges"
+    }
+  ],
+  "source_link_context": [
+    {
+      "line": 40,
+      "target": "CUT_SECTOR_COERCIVITY_ASTRA.md",
+      "exists": true,
+      "sha256": "4e6c70786aa4458293c4fe7294767128253477176f9eea87b7720254d62a159e"
+    },
+    {
+      "line": 41,
+      "target": "OUTSIDE_CHART_RETURN_ASTRA.md",
+      "exists": true,
+      "sha256": "f8e5ac755f106cf9419f81d3d3f683949c59abfe4f8ad1a250795fa6ec1c58d4"
+    },
+    {
+      "line": 42,
+      "target": "REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "exists": true,
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b"
+    },
+    {
+      "line": 43,
+      "target": "REGIONAL_CHART_RETURN_ASTRA.md",
+      "exists": true,
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094"
+    },
+    {
+      "line": 499,
+      "target": "SHRINKING_CHART_RETURN_ASTRA.md",
+      "exists": true,
+      "sha256": "9ae446ca746639ff77295f9da712f47e4be9d315d7c26e975535f1602321abfc"
+    },
+    {
+      "line": 584,
+      "target": "https://doi.org/10.1007/BF01238433",
+      "role": "external attribution, not used as a theorem premise in this review"
+    },
+    {
+      "line": 591,
+      "target": "checks/source_local_compact_return_read_manifest.json",
+      "exists": true,
+      "sha256": "5fa19a81b140cafae2c15c8b0eea34962ffed1f6c40ad3df23d4e12b579541c3"
+    },
+    {
+      "line": 592,
+      "target": "checks/source_local_compact_return_receipt.json",
+      "exists": true,
+      "sha256": "82170348198d71ebfd8c01446af2eb0cdd5492ff6e3f4b88c7aef398e1c16405"
+    },
+    {
+      "line": 593,
+      "target": "PROCESS_LIGHT.md",
+      "exists": true,
+      "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab"
+    }
+  ],
+  "source_line_591_597_context": [
+    "[read manifest](checks/source_local_compact_return_read_manifest.json)",
+    "and [receipt](checks/source_local_compact_return_receipt.json).",
+    "[PROCESS_LIGHT](PROCESS_LIGHT.md) governs. A DIFFERENT fresh hostile",
+    "reviewer must examine the signed action, L2 boundary conversion, local",
+    "Cauchy tube, exact selectors and full dimension/reader budgets. Root owns",
+    "that review and integration. Full non-free continuum existence and the",
+    "physical mass gap remain OPEN."
+  ],
+  "packet_conclusions": {
+    "claims_match_reviewed_bounded_scope": true,
+    "no_author_verdict_promoted_to_review": true,
+    "author_run_or_freeze_history_independently_attested": false,
+    "same_family_disclosed": true,
+    "independent_findings_changed": false,
+    "blocking_packet_findings": []
+  },
+  "reviewed_packet_ranges": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_local_compact_return_read_manifest.json",
+      "lines": [
+        1,
+        202
+      ]
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/source_local_compact_return_receipt.json",
+      "lines": [
+        1,
+        38
+      ]
+    }
+  ],
+  "checks_are_mechanical_only": true,
+  "scientific_runs": 0,
+  "author_scripts_run": 0,
+  "old_review_reports_read": 0,
+  "root_integration_receipts_read": 0,
+  "matched_regional_ratio_assumed": false
+}

@@ -1,0 +1,6 @@
+PASS G1 Gram form of T^I
+PASS G2 Bi[T^I]=0, Bi[I]!=0
+FIRES C1 Bi[T^I + I] != 0
+FIRES C2 sign-flipped T' fails the Gram identity
+FIRES C3 Bi[antisym dd(mr)(ns)] != 0
+VERDICT: PASS

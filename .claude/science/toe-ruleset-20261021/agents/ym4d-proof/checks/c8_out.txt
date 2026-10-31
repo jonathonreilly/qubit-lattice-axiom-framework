@@ -1,0 +1,32 @@
+PASS a SU(2) S4' gauge covariance | err 1.6e-15
+PASS b SU(2) S4' U' in SU(N)
+PASS c SU(2) S4' pure gauge -> pure gauge | err 3.3e-16
+PASS d SU(2) S4' axis-permutation covariance V[piU](piX, pi mu) = V[U](X, mu) | err 1.2e-15; fixed-order S4 control err 1.2e-01 (nonzero expected)
+PASS e SU(2) S4' reflection covariance (unreflected and reflected direction) | err 1.3e-15
+PASS a SU(3) S4' gauge covariance | err 2.8e-15
+PASS b SU(3) S4' U' in SU(N)
+PASS c SU(3) S4' pure gauge -> pure gauge | err 2.6e-15
+PASS d SU(3) S4' axis-permutation covariance V[piU](piX, pi mu) = V[U](X, mu) | err 2.6e-15; fixed-order S4 control err 1.1e-01 (nonzero expected)
+PASS e SU(3) S4' reflection covariance (unreflected and reflected direction) | err 1.7e-15
+PASS f U(1) S4': log U' = Q_str A - (dh)(X, mu) exactly (3 links) | max err 1.8e-16
+PASS f U(1) S4 fixed order: log U' = Q_str A - (dh)(X, mu) exactly (3 links) | max err 1.0e-17
+runtime 2 s
+TOTAL: PASS=12 FAIL=0
+        1.80 real         1.61 user         0.03 sys
+            38453248  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                3929  page reclaims
+                 697  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 439  voluntary context switches
+                 787  involuntary context switches
+         27323178533  instructions retired
+          6643233190  cycles elapsed
+            27722208  peak memory footprint

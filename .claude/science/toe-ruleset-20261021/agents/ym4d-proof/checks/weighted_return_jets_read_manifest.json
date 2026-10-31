@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "unit": "weighted_return_jets",
+  "source_freeze": {
+    "path": "WEIGHTED_RETURN_JETS_ASTRA.md",
+    "lines": 937,
+    "sha256": "c728997d978a5a15cb9e7fcde5fd806b03ae4874b1b0956a69ba327a62a4deb3"
+  },
+  "methodology_revision": "01589af3faf806b736c42dc2f3bd625e9edead9f",
+  "retained_methodology_read_record": "checks/frozen_transported_chart_read_manifest.json",
+  "methodology_note": "Same authorized author task and unchanged pinned methodology; actual AGENTS, PROCESS_LIGHT and installed physics-loop skill reread. No numerical check preregistration applies to written proof.",
+  "process": {
+    "path": "PROCESS_LIGHT.md",
+    "lines": 11,
+    "sha256": "b61be8245d68af0952d123ed3c1ce602ba948cbe3c5d22c951848f1805e619ab"
+  },
+  "local_sources": [
+    {
+      "path": "REALRGA.md",
+      "lines": 649,
+      "sha256": "e9a08eed121b1e05b792afdc4904f0872e31ea0f9e0f7899ccb7edc09492bbed",
+      "read_coverage": "1-120, 110-220, 218-373, 373-481; actual derivative, product, integrated-reference, rate and induction contracts."
+    },
+    {
+      "path": "REALRGB.md",
+      "lines": 750,
+      "sha256": "80d4f1216e39c9d5cd661c7eced48f3ac480c0d1443e556208a1b2684890d640",
+      "read_coverage": "1-220, 475-675; G1/G6-G9/G30-G35 read, no full-source claim."
+    },
+    {
+      "path": "MIXSMALL.md",
+      "lines": 692,
+      "sha256": "ead4ddd6bb50844d91459c3229d3abcc06b4ba02da772c578bc917a743f67340",
+      "read_coverage": "1-315; positive ordered scores/quotients, actual path and rough-real normalizer derivatives; no full-source claim."
+    },
+    {
+      "path": "EXTCONT.md",
+      "lines": 654,
+      "sha256": "b10015bbd6be5fac97fd636fdc79f665800fe9921651575b9d03b0167b534b6e",
+      "read_coverage": "1-155, 278-377, 385-480; extraction, acquisition and hole requirements; no full-source claim."
+    },
+    {
+      "path": "SOURCE_LOCAL_COMPACT_RETURN_ASTRA.md",
+      "lines": 597,
+      "sha256": "c39e78ac1d31024d5266e16ace022fa86497a6d09c45aa25b215ffa390533dff",
+      "read_coverage": "Complete same-author-task read retained; interior-cut passage reread."
+    },
+    {
+      "path": "REGIONAL_CRITICAL_FIELD_ASTRA.md",
+      "lines": 592,
+      "sha256": "45a5665fc51683f026370e774ca8590b221bc5c9e13c07502225226cb13c962b",
+      "read_coverage": "Complete same-author-task read retained; 100-355 freshly reread for actual complex core and force."
+    },
+    {
+      "path": "NONLINEAR_READER_RETURN_ASTRA.md",
+      "lines": 713,
+      "sha256": "0920cf17fe8338ee566343458b70c295eed59d81e979836ae9de65e3f9fa97c0",
+      "read_coverage": "Complete same-author-task read retained; 42-165 freshly reread, including complex P and principal normalized-density bounds."
+    },
+    {
+      "path": "REGIONAL_CHART_RETURN_ASTRA.md",
+      "lines": 510,
+      "sha256": "b098d18ad22946d7b1e0a4d497e0b5d98250674e06803263d1106f14bf659094",
+      "read_coverage": "Complete same-author-task read retained; 373-510 freshly reread for actual transported family and remainder."
+    },
+    {
+      "path": "FROZEN_TRANSPORTED_CHART_ASTRA.md",
+      "lines": 787,
+      "sha256": "c7cea2f9bb096af300a9a978c945d9c5d68ae5e63581654a3034902d000d70b8",
+      "read_coverage": "Entire preceding author source retained; fixed-center producers and their separate transport witness used."
+    },
+    {
+      "path": "HOLOMORPHIC_COMPACT_RETURN_ASTRA.md",
+      "lines": 734,
+      "sha256": "890a56113ad3ceac890ec72efe59b40f73bbda283c8dfb69c331bc4ea5376c49",
+      "read_coverage": "1-734 complete frozen read, assembled from bounded chunks; fixed-center clause only. Parent reports fresh review unchanged."
+    },
+    {
+      "path": "MARKED_COMPACT_CHART_ASTRA.md",
+      "lines": 753,
+      "sha256": "04f79ed4d0c58e97f3cade072631966b577f02754f9a96d6dcd18ee2f3045800",
+      "read_coverage": "1-753 complete read assembled from bounded chunks; real exact representation, Gaussian factorials, pin budgets and charge rescalings."
+    },
+    {
+      "path": "COMPACT_RETURN_GLUING_ASTRA.md",
+      "lines": 644,
+      "sha256": "924628d1ff6f3d6cdeef614b6126c54bfa28c657a06734991ceb3e969b6cf9d2",
+      "read_coverage": "85-158, 245-330 freshly reread; 543-644 retained prior read. MK supplies the exact resummed identity and value bound; no full CG read claim."
+    }
+  ],
+  "primary_literature": [
+    {
+      "url": "https://arxiv.org/pdf/1403.7244v2",
+      "read_scope": "Definitions 3.1/3.3, Example 3.2, Proposition 3.7, section 5.1 passages (PDF pages 11-14, 23 and 26); bounded primary read, not a full-paper claim.",
+      "mapping": "Boson/fermion test-function pairing and product precedent only. Ordered SU(N) calculus and weight/reader conversion rebuilt in WR."
+    },
+    {
+      "url": "https://arxiv.org/abs/1212.5562v2",
+      "read_scope": "Sections 3.13-3.14 retained from this author task preceding unit.",
+      "mapping": "Scalar localization/analyticity antecedent; no scalar theorem imported as gauge closure."
+    },
+    {
+      "url": "https://arxiv.org/html/1411.1107v1",
+      "read_scope": "Section 2.1.4 and Remark 2 retained bounded preceding read.",
+      "mapping": "Site-product cutoff and covariance precedent only; WR freezes its actual selectors and differentiates normalized densities."
+    }
+  ],
+  "access_limitations": [
+    "Brydges-Slade HTML retries failed; primary PDF passages were read instead.",
+    "Bauerschmidt-Brydges-Slade book HTML exceeded tool content limit; no new book theorem is imported."
+  ],
+  "direct_dependency_scope": "HC supports fixed-center jets. Diagonal real jets use MK real identity, RF/NR/RC analytic chart libraries and MIXSMALL real score calculus; no HC conclusion is needed there."
+}

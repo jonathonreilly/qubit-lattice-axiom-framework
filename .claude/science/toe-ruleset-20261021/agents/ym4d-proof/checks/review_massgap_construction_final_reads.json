@@ -1,0 +1,130 @@
+{
+  "commit": "0cf473e3ef0c96ad31f0ecb1443690486cfbedb8",
+  "base_read_inventory": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/review_massgap_construction_reads.json",
+    "sha256": "3d3758792bda492b34997d3ded5fd1219d6b7fe902c3dc1af8a6c90eb5074d24",
+    "bytes": 23345
+  },
+  "final_source": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_GAP_CONSTRUCTION_ASTRA.md",
+    "sha256": "a5d31da82721607e0ba04fef84675706bd3f2c568644224cce7dc86b0bb968e2",
+    "bytes": 28890
+  },
+  "coverage": "Complete original note plus entire orientation amendment and entire coefficient/result-reporting amendment; no other scientific-source delta. Complete original runner/criteria plus complete coordinate-comparison amendment. Original results compared row-by-row and all unchanged rows/diagnostics/runtime/resolution fields verified identical; two added result rows completely read.",
+  "source_amendments": [
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_massgap_orientation_fix.json",
+      "sha256": "0c1f4b6fe1079d96270f57a72cf1bd76f73ba48bd91c015db380630711b49acb",
+      "bytes": 1235
+    },
+    {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_massgap_coefficient_scope_fix.json",
+      "sha256": "920b8b4e198bf2a1d2d9ee6b2cd7cef875668cb496ff292ecafdac31d9d8ed77",
+      "bytes": 750
+    }
+  ],
+  "runner_amendment": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/full_proof_massgap_checker_fix.json",
+    "sha256": "29da8776577d5bbb3377ab85e3c15061cbf42348447cdf3ec497343ca8241f07",
+    "bytes": 3520
+  },
+  "final_runner": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_exact.py",
+    "sha256": "f1ae35944486ac5b141fb7627ebdb629608af7b5ad095e268b45af86dcfbddbf",
+    "bytes": 12907
+  },
+  "final_criteria": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_criteria.md",
+    "sha256": "8a5810b66863ae70aa2ce0275698eb58065a4a9d3a39d240ad885ddb0523110b",
+    "bytes": 4848
+  },
+  "new_results": {
+    "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/checks/mass_gap_construction_results_v2.json",
+    "sha256": "a4753f4a617146147bf41524d335cb29214a7763454186454cff830231846a5a",
+    "bytes": 14696
+  },
+  "PROOF_scope_correction": {
+    "initial_file": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "sha256": "2abe7d807cbcbedaa1bc4fb0183bb2cd916b03cc8f6aa838655e14e051fa079b",
+      "bytes": 770098,
+      "commit": "e4464249d9729a0bf7725be67611aa95aba5df01"
+    },
+    "inventory_capture_file": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "sha256": "0c683d808c3a56b998e707bcc5ffd45d9c3dbec151d1a45bcf670ed6a50110b1",
+      "bytes": 770668,
+      "commit": "86c7c6925efd08ccf973108fc6d59291aae431d4"
+    },
+    "final_file": {
+      "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/PROOF.md",
+      "sha256": "39bb48832544126212437a0df873f38dcb48ea8da1c63b698816f6418f0c9fb7",
+      "bytes": 770812,
+      "commit": "0cf473e3ef0c96ad31f0ecb1443690486cfbedb8"
+    },
+    "complete_change_scope_read": "Entire initial-to-final PROOF diff: only continuation-review header bookkeeping and new mass-gap header summary. Consumed definitions unchanged. Those status statements are not proof premises.",
+    "consumed_sections": [
+      {
+        "section": "## 0. Target, and how it decomposes",
+        "sha256": "94465ba86adbe97d47b152c63fd435a15d89c7c41aaa146bd268c7c492bbeefb",
+        "bytes": 8113,
+        "identical_at_all_three_revisions": true,
+        "scopes": [
+          {
+            "commit": "e4464249d9729a0bf7725be67611aa95aba5df01",
+            "lines": [
+              932,
+              1026
+            ]
+          },
+          {
+            "commit": "86c7c6925efd08ccf973108fc6d59291aae431d4",
+            "lines": [
+              941,
+              1035
+            ]
+          },
+          {
+            "commit": "0cf473e3ef0c96ad31f0ecb1443690486cfbedb8",
+            "lines": [
+              943,
+              1037
+            ]
+          }
+        ]
+      },
+      {
+        "section": "- **Decision 4: the RG kernel.**",
+        "sha256": "582873acc3ed010a40b896974bb6cd8ca54a52560b967801591fbd588ea19d10",
+        "bytes": 3837,
+        "identical_at_all_three_revisions": true,
+        "scopes": [
+          {
+            "commit": "e4464249d9729a0bf7725be67611aa95aba5df01",
+            "lines": [
+              2022,
+              2058
+            ]
+          },
+          {
+            "commit": "86c7c6925efd08ccf973108fc6d59291aae431d4",
+            "lines": [
+              2031,
+              2067
+            ]
+          },
+          {
+            "commit": "0cf473e3ef0c96ad31f0ecb1443690486cfbedb8",
+            "lines": [
+              2033,
+              2069
+            ]
+          }
+        ]
+      }
+    ],
+    "read_claim": "Complete listed sections only; no complete PROOF certification. The original numeric ranges refer to the initial read revision, not the later inventory-capture revision."
+  },
+  "other_consumed_worktree_inputs_unchanged": true,
+  "new_scientific_imports": []
+}

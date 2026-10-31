@@ -1,0 +1,31 @@
+==============================================================================
+cf1b  POST-HOC  (designed after seeing C3 pass; labelled per rule 3)
+==============================================================================
+
+(1) Diagnosis of control C3 (wrap-around path), d=2, L=3, M=3
+    out-of-block links touched by at least one path : 7
+    of those, links with NONZERO net signed count    : 0
+    example link ((5, 4), 0): contributions [((3, 3), 1), ((3, 4), 1), ((3, 5), 1), ((5, 3), -1), ((5, 4), -1), ((5, 5), -1)]
+    => the long-way excursions of the y above the root and the y below the root carry
+       opposite signs and are equinumerous for L odd with a CENTRAL root, so every
+       out-of-block coefficient cancels exactly. C3 therefore has NO POWER against A1/A4
+       at a central root. Reported as a control that did not fire, per cf1_criteria.md.
+
+(2) Control C5 (POST-HOC): root placed one site OUTSIDE its own block
+    (d=2, L=3): A1 support violations = 9    -> A1 FAIL   (must be FAIL)
+    (d=2, L=3): max owners per link   = 1    -> A4 PASS   (must be FAIL)
+    (d=4, L=3): A1 support violations = 81   -> A1 FAIL   (must be FAIL)
+    (d=4, L=3): max owners per link   = 1    -> A4 PASS   (must be FAIL)
+
+(3) Re-report of control C2 against its registered expectation
+    registered: "A3 row sum rises". Observed l1 row = 8/3 = the unperturbed 8/3. A3 PASS.
+    => the registered A3 expectation was WRONG: the -1/+1 pair of the back-track cancels
+       in the SIGNED kernel, so A3 cannot see a back-track. A7 (multiplicity 3) is the only gate with power against it. Reported as a failed
+       pre-registration of mine, not as a passed gate.
+
+(4) Control C6 (POST-HOC): wrap-around path with a CORNER root
+    (C5 broke A1 but not A4; A4 needs two blocks to claim one link.)
+    (d=2, L=3): A1 violations = 63    -> A1 FAIL   |  max owners = 3    -> A4 FAIL   (both must be FAIL)
+    (d=4, L=3): A1 violations = 567   -> A1 FAIL   |  max owners = 3    -> A4 FAIL   (both must be FAIL)
+    With a corner root every y lies on one side, so the wrap excursions no longer
+    cancel in pairs: that is exactly the cancellation diagnosed in (1).

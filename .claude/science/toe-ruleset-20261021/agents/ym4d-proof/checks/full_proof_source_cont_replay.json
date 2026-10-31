@@ -1,0 +1,36 @@
+{
+  "utc": "2026-10-29T14:31:06.111046+00:00",
+  "receipt_sha256": "4f00d2c21808de330606dfc02434d9b9b7fc566019325cc54d47f282529c6960",
+  "verified_artifact_and_dependency_entries": 20,
+  "results": [
+    {
+      "script": "source_return_cont_exact.py",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "same_except": [
+        "recorded_utc",
+        "elapsed_seconds"
+      ],
+      "match": true,
+      "check_count": 44,
+      "all_checks_pass": true,
+      "elapsed_seconds": 2.197745917015709,
+      "stdout_sha256": "d772e695a809d7b474a73485008d3c4f811b7834552ce4b78d578e2d70018290"
+    },
+    {
+      "script": "source_return_cont_ball.py",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "same_except": [
+        "recorded_utc",
+        "elapsed_seconds"
+      ],
+      "match": true,
+      "check_count": 5,
+      "all_checks_pass": true,
+      "elapsed_seconds": 0.21522133302642033,
+      "stdout_sha256": "3c195dbdb31992c2a73c3d54f982ce1656f5738c7b66e15ae98ef907f9678405"
+    }
+  ],
+  "scope": "Reproduction of finite author algebra and non-interval quadratures only; fresh independent mathematical review pending."
+}

@@ -1,0 +1,112 @@
+{
+  "observed_at_utc": "2026-10-30T17:26:18.193376+00:00",
+  "base_commit": "dd6682176e9dd4accea84c55caa70102d8538e96",
+  "artifacts": [
+    {
+      "source_worktree": "/Users/jonBridger/Toy Physics/.claude/worktrees/ym4d-global-history-20261030",
+      "source_worktree_HEAD": "cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047",
+      "destination": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GLOBAL_RETURN_HISTORY_ASTRA.md",
+      "sha256": "4cbdeae6f57691558ccfe6563aea8f09efb0f6a4fb4d8ead52bd72723ba88770",
+      "bytes": 33159,
+      "lines": 602,
+      "status": "Live author work preserved as an unreviewed snapshot; not a final freeze or accepted mathematical result."
+    },
+    {
+      "source_worktree": "/Users/jonBridger/Toy Physics/.claude/worktrees/ym4d-global-history-20261030",
+      "source_worktree_HEAD": "cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047",
+      "destination": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/normalized-return--global-history.md",
+      "sha256": "7c74e0fc9e3c703af4093528ee3ce42743b896a4116813155ee6fe94b2c3a8d2",
+      "bytes": 4742,
+      "lines": 79,
+      "status": "Live author work preserved as an unreviewed snapshot; not a final freeze or accepted mathematical result."
+    },
+    {
+      "source_worktree": "/Users/jonBridger/Toy Physics/.claude/worktrees/ym4d-ds-review-20261030",
+      "source_worktree_HEAD": "cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047",
+      "destination": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHARGED_DETERMINANT_SIGN_ASTRA.md",
+      "sha256": "d9a2c86cdc692c9540d49f5db423c03eb56be0afa75eca3b43af385d51727db1",
+      "bytes": 30216,
+      "lines": 608,
+      "status": "Live author work preserved as an unreviewed snapshot; not a final freeze or accepted mathematical result."
+    },
+    {
+      "source_worktree": "/Users/jonBridger/Toy Physics/.claude/worktrees/ym4d-ds-review-20261030",
+      "source_worktree_HEAD": "cc799d903f8ad51d6cdcd9b0328d40ea2b0a3047",
+      "destination": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/effective-flow--charged-coefficient.md",
+      "sha256": "61dac4e4f917597cb18e8268e584386c5b16391e45c4ffcbd011f61e2158b00b",
+      "bytes": 2389,
+      "lines": 42,
+      "status": "Live author work preserved as an unreviewed snapshot; not a final freeze or accepted mathematical result."
+    }
+  ],
+  "schema": "ym4d.live_author_preservation.v1",
+  "scope": "Unreviewed progress preservation only. These four files are byte snapshots of living attempts, not coherent final freezes or independent checks.",
+  "reviewed_reference_checkpoint": "6c0342fa81d2070d1602548dc0d3c795e876399c",
+  "root_read_coverage": {
+    "GLOBAL_RETURN_HISTORY_ASTRA.md": [
+      [
+        1,
+        80
+      ]
+    ],
+    "CHARGED_DETERMINANT_SIGN_ASTRA.md": [
+      [
+        1,
+        80
+      ]
+    ],
+    "parts/normalized-return--global-history.md": [
+      [
+        1,
+        79
+      ]
+    ],
+    "parts/effective-flow--charged-coefficient.md": [
+      [
+        1,
+        42
+      ]
+    ]
+  },
+  "status_discrepancy": "The live charged source already states a proposed asymptotic/sign theorem while its earlier route snapshot still marks the comparison as open. This is preserved as asynchronous author work, not reconciled into an accepted claim. The author is still checking and updating the argument.",
+  "global_scope": "Proposed current bare-history construction at beta/2; earlier inherited history, native mu+2 conversion and full return remain open.",
+  "charged_scope": "Proposed small-kappa bare coefficient sign; the literal comparison, affine/projection seams and independent review are still under author checking. No repeated running or joint u/kappa claim is accepted.",
+  "vocabulary": {
+    "method": "Direct lint_one_file with apply_fix=False",
+    "files_scanned": 4,
+    "violations": 0,
+    "reports": [
+      {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/GLOBAL_RETURN_HISTORY_ASTRA.md",
+        "violations": [],
+        "auto_corrected": 0,
+        "needs_human_vocab_decision": 0
+      },
+      {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/normalized-return--global-history.md",
+        "violations": [],
+        "auto_corrected": 0,
+        "needs_human_vocab_decision": 0
+      },
+      {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/CHARGED_DETERMINANT_SIGN_ASTRA.md",
+        "violations": [],
+        "auto_corrected": 0,
+        "needs_human_vocab_decision": 0
+      },
+      {
+        "path": ".claude/science/toe-ruleset-20261021/agents/ym4d-proof/parts/effective-flow--charged-coefficient.md",
+        "violations": [],
+        "auto_corrected": 0,
+        "needs_human_vocab_decision": 0
+      }
+    ]
+  },
+  "local_links_resolving": 9,
+  "pending_local_links": [],
+  "scientific_numerics_run_by_root": false,
+  "existing_tracked_files_changed": false,
+  "full_existence": "open",
+  "positive_physical_mass_gap": "open",
+  "no_audit_or_retained_promotion": true
+}

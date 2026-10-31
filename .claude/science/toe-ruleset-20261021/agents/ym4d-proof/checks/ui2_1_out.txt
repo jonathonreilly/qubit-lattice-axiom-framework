@@ -1,0 +1,9 @@
+L1 PASS
+L2a PASS
+L2b PASS
+L2c PASS
+L3 PASS
+Cc1_fires PASS
+Cc2_fires PASS
+Cc3_fires PASS
+I1 (R1) = pi**2/2 ; I1 (R2) = pi**2/2 ; Cc2 ratios = [1371/125, 1009/100]

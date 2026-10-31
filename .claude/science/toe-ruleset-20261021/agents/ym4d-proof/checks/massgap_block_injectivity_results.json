@@ -1,0 +1,116 @@
+{
+  "MG_rows_closed": [],
+  "all_passed": true,
+  "checks": [
+    {
+      "error": 5.551115123125783e-17,
+      "name": "actual full probability tilt for two changed boundary links",
+      "passed": true
+    },
+    {
+      "max_row_sum_error": 0.0170386077879483,
+      "name": "mutation: dropping tilt normalizer is detected",
+      "passed": true
+    },
+    {
+      "name": "actual tilted kernel remains stationary under Perron pi",
+      "passed": true
+    },
+    {
+      "b": 2,
+      "maximum": 1.9435527463227393,
+      "minimum": 0.3678897204776661,
+      "name": "actual block conditional pi density lower and upper bounds",
+      "p_B": 2,
+      "passed": true
+    },
+    {
+      "name": "exact character multiplier n=1, support=()",
+      "passed": true
+    },
+    {
+      "name": "exact character multiplier n=1, support=(0,)",
+      "passed": true
+    },
+    {
+      "name": "exact signed-measure recovery n=1",
+      "passed": true
+    },
+    {
+      "name": "exact character multiplier n=2, support=()",
+      "passed": true
+    },
+    {
+      "name": "exact character multiplier n=2, support=(0,)",
+      "passed": true
+    },
+    {
+      "name": "exact character multiplier n=2, support=(1,)",
+      "passed": true
+    },
+    {
+      "name": "exact character multiplier n=2, support=(0, 1)",
+      "passed": true
+    },
+    {
+      "name": "exact signed-measure recovery n=2",
+      "passed": true
+    },
+    {
+      "name": "exact character multiplier n=3, support=()",
+      "passed": true
+    },
+    {
+      "name": "exact character multiplier n=3, support=(0,)",
+      "passed": true
+    },
+    {
+      "name": "exact character multiplier n=3, support=(1,)",
+      "passed": true
+    },
+    {
+      "name": "exact character multiplier n=3, support=(2,)",
+      "passed": true
+    },
+    {
+      "name": "exact character multiplier n=3, support=(0, 1)",
+      "passed": true
+    },
+    {
+      "name": "exact character multiplier n=3, support=(0, 2)",
+      "passed": true
+    },
+    {
+      "name": "exact character multiplier n=3, support=(1, 2)",
+      "passed": true
+    },
+    {
+      "name": "exact character multiplier n=3, support=(0, 1, 2)",
+      "passed": true
+    },
+    {
+      "name": "exact signed-measure recovery n=3",
+      "passed": true
+    },
+    {
+      "name": "zero-coefficient mutation: positive operator is not injective",
+      "passed": true
+    },
+    {
+      "name": "single positive excited witness is insufficient for full injectivity",
+      "passed": true
+    }
+  ],
+  "independent_review": false,
+  "passed": 23,
+  "scope": "finite supporting controls for the analytic infinite-volume injectivity supplement",
+  "script_sha256": "2283c29577d906f88db0cf522753063a9a5041ae736f424cf247992180616f1a",
+  "total": 23,
+  "untested_analytic_steps": [
+    "canonical all-boundary-field infinite half-space Gibbs kernels",
+    "stationarity and conditional domination after the thermodynamic limit",
+    "common full-measure Fubini set for countable exhaustion",
+    "finite signed-measure Peter-Weyl uniqueness",
+    "L1 martingale convergence"
+  ]
+}

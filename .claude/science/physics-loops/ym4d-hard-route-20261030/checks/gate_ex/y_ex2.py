@@ -28,6 +28,19 @@ def cov_grad2(Vl, dth):
             tot = tot + float(((rot(Vl[..., e, :], torch.roll(t, -1, dims=e)) - t) ** 2).sum())
     return tot
 
+def bianchi2(Vl, dth):
+    pairs = [(m, n) for m in range(d) for n in range(m + 1, d)]
+    ix = {p: i for i, p in enumerate(pairs)}
+    def D(e, t):
+        return rot(Vl[..., e, :], torch.roll(t, -1, dims=e)) - t
+    tot = 0.0
+    for m in range(d):
+        for n in range(m + 1, d):
+            for r in range(n + 1, d):
+                B = D(m, dth[ix[(n, r)]]) - D(n, dth[ix[(m, r)]]) + D(r, dth[ix[(m, n)]])
+                tot = tot + float((B * B).sum())
+    return tot
+
 def thetas(Vl):
     return [qlog(p) for _, p in plaquettes(Vl)]
 
@@ -63,8 +76,9 @@ for lev, Vl in enumerate(fs0):
     bb = cov_grad2(Vl, dth)
     f, E = flux_stats(Vl)
     a = float(I_grad(Vl))
-    rows.append(dict(level=lev, n=nn, b=bb, f=f, E=E, a=a))
-    print(f"level {lev} (m={k-lev}): ||dtheta||^2={nn:.5e} b={bb:.5e} f={f:.5f} E={E:.5e} a={a:.5e}", flush=True)
+    bi = bianchi2(Vl, dth)
+    rows.append(dict(level=lev, n=nn, b=bb, f=f, E=E, a=a, bianchi=bi))
+    print(f"level {lev} (m={k-lev}): ||dtheta||^2={nn:.5e} b={bb:.5e} f={f:.5f} E={E:.5e} a={a:.5e} ||d_V dtheta||^2={bi:.5e} ratio to f^2 n={bi/(f*f*nn+1e-300):.3f}", flush=True)
 Fp, g1, r1 = fields_at(tstep)
 Fm, g2, r2 = fields_at(-tstep)
 Sp = [float(wilson(x)) for x in Fp]; Sm = [float(wilson(x)) for x in Fm]; S0 = [float(wilson(x)) for x in fs0]

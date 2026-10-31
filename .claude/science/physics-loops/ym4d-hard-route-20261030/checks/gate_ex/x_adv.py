@@ -27,6 +27,9 @@ def init():
         R = torch.linalg.qr(torch.randn(3, 3, generator=gen))[0]
         base = torch.tensor([[1., 0, 0], [0, 1, 0], [0, 0, 1], [0, 0, 0]]) @ R
         t = t + a * base
+    if start == "toron":
+        t[..., :, 2] = t[..., :, 2] + 0.5 * np.pi / max(Np, 2) * torch.tensor([1.0, 0.6, 0.3, 0.1])[:, None][:, 0]
+        t = t + low_modes(Np, a)
     if start in ("mix", "modes"):
         t = t + low_modes(Np, 0.5 * a if start == "mix" else 1.5 * a)
     return t

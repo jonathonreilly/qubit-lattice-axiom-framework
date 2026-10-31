@@ -7,7 +7,7 @@ spec = importlib.util.spec_from_file_location("exc", os.path.join(os.path.dirnam
 sys.argv = ["x"]
 exc = importlib.util.module_from_spec(spec); spec.loader.exec_module(exc)
 def obj(P, L):
-    P = np.asarray(P)
+    P = (np.asarray(P) + np.pi) % (2 * np.pi) - np.pi  # first run omitted this: alias signs need P in the fundamental domain (log x_symbol_unwrapped.log, void)
     Min = exc.forms(P, L, 1, 4)[0]
     Min = (Min + Min.T) / 2
     Ph = 2 * np.sin(P / 2)
@@ -23,4 +23,5 @@ for L in [3, 5, 7]:
         r = minimize(obj, s, args=(L,), method="Nelder-Mead", options=dict(xatol=1e-5, fatol=1e-9, maxiter=1500))
         if r.fun < best[0]:
             best = (r.fun, r.x)
+    best = (best[0], (best[1] + np.pi) % (2 * np.pi) - np.pi)
     print(f"L={L} min (g-1)/|Phat|^2 = {best[0]:.6f} at P={np.round(best[1],4)}; (1/9)(1-L^-2)={(1-L**-2)/9:.6f}; ratio={best[0]/((1-L**-2)/9):.4f}", flush=True)

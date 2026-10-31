@@ -30,3 +30,32 @@ it 80 f=0.1049 E=4.5231e-02 I/E=10.1879 I/(fE)=97.085 e/I=0.1783 C_eff=-12.5123 
 it 90 f=0.1050 E=4.5233e-02 I/E=10.1936 I/(fE)=97.051 e/I=0.1784 C_eff=-12.5215 best=-11.2088 g,r=6e-10,4e-10 t=1415
 it 100 f=0.1051 E=4.5199e-02 I/E=10.1954 I/(fE)=97.045 e/I=0.1784 C_eff=-12.5247 best=-11.2088 g,r=3e-11,4e-11 t=1573
 it 110 f=0.1050 E=4.5083e-02 I/E=10.1942 I/(fE)=97.078 e/I=0.1784 C_eff=-12.5239 best=-11.2088 g,r=2e-10,2e-10 t=1717
+it 120 f=0.1050 E=4.4979e-02 I/E=10.1931 I/(fE)=97.111 e/I=0.1783 C_eff=-12.5233 best=-11.2088 g,r=4e-10,2e-10 t=1873
+BEST 2 3 0.08 1 modes -11.208778163984562 t 1873.2143816947937 rss 0.321319580078125
+Traceback (most recent call last):
+  File "/Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/checks/gate_ex/x_adv.py", line 52, in <module>
+    U, lam, gn, rn = pb.solve(pb.initial(), gtol=1e-8)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/checks/gate_ex/ex_core.py", line 361, in solve
+    dv, dl = self.kkt_solve(U, lam, -g, -r, 1e-4, 200)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/checks/gate_ex/ex_core.py", line 344, in kkt_solve
+    sol, info = sla.minres(A, b, M=M, rtol=tol, maxiter=maxiter)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_isolve/minres.py", line 223, in minres
+    raise ValueError('non-symmetric matrix')
+ValueError: non-symmetric matrix
+/Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/checks/gate_ex/x_adv.py:70: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:837.)
+  J0 = float(J)
+it 0 f=0.1837 E=8.7530e-01 I/E=10.5499 I/(fE)=57.426 e/I=0.3114 C_eff=-15.0438 best=-15.0438 g,r=8e-12,4e-12 t=0
+it 10 f=0.0446 E=9.4063e-03 I/E=10.6405 I/(fE)=238.363 e/I=0.1950 C_eff=-34.7011 best=-15.0438 g,r=7e-12,8e-12 t=29
+it 20 f=0.0428 E=8.5922e-03 I/E=10.4874 I/(fE)=245.225 e/I=0.1838 C_eff=-32.9509 best=-15.0438 g,r=1e-11,6e-12 t=54
+it 30 f=0.0447 E=9.1892e-03 I/E=10.7123 I/(fE)=239.402 e/I=0.1968 C_eff=-35.2807 best=-15.0438 g,r=3e-11,1e-11 t=79
+it 40 f=0.0427 E=8.5578e-03 I/E=10.4904 I/(fE)=245.445 e/I=0.1837 C_eff=-32.9654 best=-15.0438 g,r=3e-11,1e-11 t=104
+it 50 f=0.0447 E=9.1917e-03 I/E=10.7193 I/(fE)=239.616 e/I=0.1969 C_eff=-35.3447 best=-15.0438 g,r=5e-11,3e-11 t=128
+it 60 f=0.0427 E=8.5470e-03 I/E=10.4886 I/(fE)=245.479 e/I=0.1836 C_eff=-32.9451 best=-15.0438 g,r=4e-11,3e-11 t=152
+it 70 f=0.0447 E=9.1795e-03 I/E=10.7187 I/(fE)=239.637 e/I=0.1969 C_eff=-35.3443 best=-15.0438 g,r=2e-11,9e-12 t=176
+it 80 f=0.0427 E=8.5419e-03 I/E=10.4887 I/(fE)=245.503 e/I=0.1836 C_eff=-32.9512 best=-15.0438 g,r=3e-11,1e-11 t=200
+it 90 f=0.0447 E=9.1789e-03 I/E=10.7193 I/(fE)=239.681 e/I=0.1969 C_eff=-35.3539 best=-15.0438 g,r=2e-11,9e-12 t=225
+it 100 f=0.0427 E=8.5374e-03 I/E=10.4877 I/(fE)=245.524 e/I=0.1836 C_eff=-32.9444 best=-15.0438 g,r=3e-11,1e-11 t=250

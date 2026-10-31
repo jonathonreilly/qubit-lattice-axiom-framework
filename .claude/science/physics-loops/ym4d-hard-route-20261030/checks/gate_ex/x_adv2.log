@@ -1,0 +1,5 @@
+### start 23:02Z mem_free=59: python3 x_adv2.py 2 3 0.08 1 40 0.15
+start C=-16.0095 f=0.1294 I/E=7.7291 I/(fE)=59.748 e/I=0.3173
+it 0 C=-12.9699 f=0.1445 I/E=7.1579 I/(fE)=49.551 e/I=0.3111 step=2.80e-02 acc=True t=8
+it 5 C=-2.4565 f=0.2315 I/E=3.4044 I/(fE)=14.706 e/I=0.2164 step=7.53e-02 acc=True t=54
+it 10 C=-1.2286 f=0.1663 I/E=1.3502 I/(fE)=8.117 e/I=0.2007 step=5.06e-02 acc=True t=110

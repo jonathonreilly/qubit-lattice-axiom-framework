@@ -57,6 +57,16 @@ Let c_a be the lattice-animal growth at range d_0, so that the number of polymer
 
 (iii) Apply Lemma 1. By (ii), G has weighted sup-norm at most 2. Take the weight at y = y_f: the vector osc(f) is at most C A_f w_gamma, because nu <= mu_1/2 and the factor (1+|gamma|) e^{-a|gamma|} is bounded. So sum_i G_{ji} osc_i(f) <= 2 C A_f e^{a|j|} e^{-nu d(j, y_f)}. Then sum_j v_j osc_j(g) e^{a|j|} e^{-nu d(j,y_f)} <= C A_g sum_j z^{|j|} e^{a|j|} (1+|j|) e^{-mu_1 d(j,y_g)} e^{-nu d(j,y_f)}, and summing over j, with d(j,y_f) + d(j,y_g) >= d(y_f,y_g) and growth, gives C z A_g e^{-nu d(y_f,y_g)}. QED
 
+## Lemma 3 (two specifications). Proved here.
+
+Let mu, mu'' be probability measures on prod_i X_i, with conditional laws pi_i, pi''_i, and let b_i := sup_sigma TV( pi_i(.|sigma), pi''_i(.|sigma) ). Assume (D) for mu'', with G'' its series. For bounded f,
+
+    |mu(f) - mu''(f)| <= sum_i b_i sum_j G''_{ij} osc_j(f).
+
+*Proof.* With L'' and P''_t as in Lemma 1 for mu'', P''_t f tends to mu''(f), so mu(f) - mu''(f) = - integral_0^infty mu(L'' P''_t f) dt. Since mu((Pi_i - 1) h) = 0 for every h, mu(L'' h) = sum_i mu((Pi''_i - Pi_i) h), and |(Pi''_i - Pi_i) h (sigma)| <= b_i osc_i(h). By the proof of Lemma 1, integral_0^infty osc_i(P''_t f) dt <= sum_j G''_{ij} osc_j(f). QED
+
+*Use: locality against far data (implication).* Let V, V'' agree and be class on B(y, r), with possibly different site structures beyond. Condition on all fields outside B(y, 3r/4), called zeta and zeta''. Inside, both laws are on one space: sites in the ball, and exterior variables in one chart. A local function's conditional mean differs by at most (i) the sum over sites j of z^{|j|} min(1, kappa_0 |j| e^{-mu_1 d(j, shell)}), times the influence of j on y, by this lemma, and (ii) a propagator across r at fixed sites, from (J) of `library/convex-laplace-tree-decay.md`, with a mean-field shift x e^{-mu r}. b_j is obtained by interpolating S_t between the two boundary data on one coordinate space, as in the proof of (A2). So |mu_V(f) - mu_{V''}(f)| <= C e^{-nu r} + C x e^{-mu r}. Unbounded local f are handled by the moments (M), with a truncation at a power of x, whose error is beaten by z. Cumulants reduce to this by expanding into products. Label: the lemma is proved; the use is derived as a sketch.
+
 ## Why this suffices, and what failed
 
 The covariance of two local functions needs no bound on mixed differences of the weights of order greater than one. Only first differences enter, through single-site updates, and these are exactly what the convex propagator supplies: conditional odds of a polymer change by at most the mutual information across the exterior, which is a pair bound uniform in all other holes.

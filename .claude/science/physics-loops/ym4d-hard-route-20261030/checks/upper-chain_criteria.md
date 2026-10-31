@@ -72,3 +72,11 @@ A sharper target for a counterexample. In the Gaussian theory Cov(s_p, s_q) = (3
 ## Casimir test of Proposition 15.2, upper-chain_vacuum_e.py (written before running)
 
 - C1. m = periodic <inner-cube observable> at beta = 4, T = 12, in the same field e_a. With n(r) from upper-chain_ie4d.py: (DIA-B) predicts n(r) <= m for all r. Fail if n(r) exceeds m by more than 3 sigma at any r, which would refute (DIA-B) at that boundary. r^4 (m - n(r)) for r = 3, 4, 6, 8 is expected bounded; report it. T = 12 finite-size shift of e is about 1.8e-5 by the mode count, to be included in the error.
+
+## upper-chain_response.py: the local response profile in the actual model (written before running)
+
+The hidden variable in Text 14 F4 and Text 15 is whether the local response of the fine energy to a coarse observable has large cancelling parts. Let V^(k) be iterated gauge-covariant blocking by 2 (straight path plus six staples, quaternion mean), G_k(y) the clover energy of V^(k) at coarse site y, e the fine clover field, and R_k(x) = Cov(e(y+x), G_k(y)), averaged over coarse sites and over the hypercubic group fixing y. Then sum_x R_k(x) = -d<G_k>/d beta, a constant-coupling quantity. Run: T = 16, beta = 4, periodic, k = 1, 2.
+
+- A1 (sign). (DIA-V) in its mean form predicts R_k(x) >= 0 at all x. Report the most negative orbit in units of its error. A value below -4.5 sigma (allowing for about 500 orbits) refutes this mean form, and then exact (DIA-V) is false for this blocking.
+- A2 (cancellation). rho_k = sum_x |R_k(x)| / |sum_x R_k(x)|, counting only orbits resolved at 3 sigma, and the same with all orbits as an upper estimate biased by noise. rho_k close to 1 means no large cancelling parts, which supports (TR_2) at this level. rho_k >> 1 and growing from k = 1 to 2 would be the total-derivative growth of F4, and would count against the small-negative-part form.
+- A3 (sum rule). sum_x R_k(x) measured two ways: the sum of the profile, and the covariance of total W with G_k. Fail if they differ by more than 3 sigma; then the script is wrong.

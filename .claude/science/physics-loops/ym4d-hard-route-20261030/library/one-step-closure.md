@@ -22,7 +22,7 @@ Define c^(n)(Z) through the near part, after a polynomial transfer (mismatch 2).
 
 ## 2. The hypothesis and the conclusion
 
-*H(k).* On D_k, F_k = x_k A_k + vac_k |Lambda_k| + R_k, with R_k(1) = 0, R_k with no F^2 coefficient, lattice symmetric and gauge invariant, ||R_k||_n <= B_n for 5 <= n <= N, c^(m)(R_k) <= B'_m for m = 2, 3, 4. And the classical statements below, which are free of k; Theorem Z at level k; and, for all boundary data, the same in (I_k^𝔡) with ||Delta R_k^𝔡||_n <= C_n(L).
+*H(k).* On D_k, F_k = x_k A_k + vac_k |Lambda_k| + R_k, with R_k(1) = 0, R_k with no F^2 coefficient, lattice symmetric and gauge invariant, ||R_k||_n <= B_n for 5 <= n <= N, c^(m)(R_k) <= B'_m for m = 2, 3, 4. And, added after the gate's D4 (`library/sector-values.md`): (VAL_k), |R_k(V)| <= B_v I_k(V; 1) plus a toron term, in every sector; (Jump_k), |R_k(V_1) - R_k(V_2)| <= B_j T_2^2 |J^+| for V_1, V_2 equal off J; and (Loc^c_k), for class fields equal on a ball, in any sector. And the classical statements below, which are free of k; Theorem Z at level k; and, for all boundary data, the same in (I_k^𝔡) with ||Delta R_k^𝔡||_n <= C_n(L) and (VAL^𝔡_k). D_k has T_2 enlarged by a fixed factor, for the cut field of Lemma O3. Quiet means flux at most T_q := T/(2 C_bd).
 
 *Conclusion.* H(k) implies H(k + 1), if x_{k+1} >= x_*, with x_{k+1} = x_k - beta_{k+1}, beta_{k+1} = beta^0_{k+1} + O(C(L) g_k^2) + O(x_k^M z_k).
 
@@ -42,7 +42,8 @@ Define c^(n)(Z) through the near part, after a polynomial transfer (mismatch 2).
 | Data | c^(m)(R_k), T3, Schwarz | contraction | Section 5, `gauge-taylor-contraction.md` |
 | Low orders | data, order 5 | ||R_{k+1}||_m | Lemma 3 of that note |
 | Flow | Theorem LS, P1; p^2 coefficient at V' = 1 | beta_{k+1} | `twisted-order-calculus.md`, Text 3, 5.9 |
-| Theorem Z at level k + 1 | (I_k^𝔡), Theorem Z at level k, classical | same | `quiet-boundary-rarity.md` |
+| Theorem Z at level k + 1 | (I_k^𝔡), (Jump_k), (VAL^𝔡_k), Theorem Z at level k, classical, (CI''')_q, (F2) | same | `quiet-boundary-rarity.md` |
+| Values, locality | gas, Theorem F-D on a staircase, Prop AN3, (R3), (AD); lifted norms | (VAL_{k+1}), (Jump_{k+1}), (Loc^c_{k+1}), (VAL^𝔡_{k+1}) | `sector-values.md` |
 
 F_{k+1} on D_{k+1} is
 
@@ -137,5 +138,5 @@ Smaller points fixed here: the rate mu of the norms must be below rho_f / N, sin
 4. *C_1 absolute* is read through Lemma AD and (R3). This is where the top coefficient could fail, and Lemma AD now has an adversarial search in d = 4, which finds the ratio falling with L, and Lemma AN1's check has run there too. Both pass, and both are searches, at one level for AD and to n = 3 for AN1.
 5. *The ladder's m_0* is finite only because rho_s(L) is a fixed negative power of L, a statement about this chart.
 6. *Volume.* Every norm has a sup over a root, and every step is local or with exponential kernels. (A) has a Schur test. So there is no volume factor. Prop MD*, with its |A|^C, is not used in this closure beyond (A2), where kappa has no volume factor.
-7. *Not displayed.* Polarisation constants in Prop AN3; (E); the corner sum in (R1); `Brick geometry`.
-8. *What this does not check.* That the named lemmas are true: their own labels stand. This note checks that their outputs fit their inputs. It found five places where they did not.
+7. *Not displayed.* Polarisation constants in Prop AN3; the corner sum in (R1). (E) and `Brick geometry` have since been written, in `library/twisted-order-calculus.md` and `library/fibre-propagator.md`.
+8. *What this does not check.* That the named lemmas are true: their own labels stand. This note checks that their outputs fit their inputs. It found five places where they did not. **A gate at 3b7fd4e57 then found Theorem Z, (A1') and the class path lemma wrong as written, so at that commit the closure's rows on rarity were not available; they now read the repaired form, not gated.**

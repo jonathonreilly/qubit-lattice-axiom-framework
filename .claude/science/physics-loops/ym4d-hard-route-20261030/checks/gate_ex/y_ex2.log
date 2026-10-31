@@ -9,3 +9,44 @@ j=0: d2 e_j=4.09574e+01 ; b_(j+1)=6.00000e+01 ratio d2e/b=0.6826 ; err/(f n)=-37
 Y1: D2 Y_k=4.095739e+01 sum=4.095739e+01
 rss 0.3018035888671875 t 3.7779691219329834
 ### end 20:50Z exit=0
+### start 20:54Z mem_free=50: python3 y_ex2.py 2 3 1 const 0.16
+   newton 0 |g|=2.380e-03 |r|=2.531e-03 S=0.1227693051
+   newton 1 |g|=2.862e-05 |r|=5.691e-07 S=0.1294141532
+   newton 2 |g|=1.814e-08 |r|=5.018e-08 S=0.1294153946
+   newton 3 |g|=5.163e-12 |r|=5.404e-11 S=0.1294153837
+base solve g,r=5.2e-12,5.4e-11 t=1 rss=0.29
+tangent done: J h - b max 1.50e-05 t=3
+level 0 (m=1): ||dtheta||^2=2.58520e+01 b=7.90522e+01 f=0.00595 E=1.29416e-01 a=3.10869e-03 ||d_V dtheta||^2=3.42610e-03 ratio to f^2 n=3.747
+level 1 (m=0): ||dtheta||^2=6.00334e+00 b=5.92405e+01 f=0.05077 E=1.23725e-01 a=2.51233e-02 ||d_V dtheta||^2=4.07074e-02 ratio to f^2 n=2.631
+second diffs of S at levels 0..k (level 0 = fine): [51.694250972638685, 11.989292579301924]  solves g,r 9e-12,3e-11,1e-11,4e-11
+j=0: d2 e_j=3.97050e+01 ; b_(j+1)=5.92405e+01 ratio d2e/b=0.6702 ; err/(f n)=-120.672
+Y1: D2 Y_k=3.970496e+01 sum=3.970496e+01
+rss 0.2988739013671875 t 8.9253511428833
+### end 20:54Z exit=0
+### start 20:54Z mem_free=50: python3 y_ex2.py 2 3 1 wave 0.02
+   newton 0 |g|=1.441e-02 |r|=3.124e-04 S=0.0608888592
+   newton 1 |g|=2.269e-10 |r|=1.639e-12 S=0.0628358412
+base solve g,r=2.3e-10,1.6e-12 t=1 rss=0.27
+tangent done: J h - b max 5.32e-06 t=2
+level 0 (m=1): ||dtheta||^2=2.64617e+01 b=8.24819e+01 f=0.01091 E=6.28364e-02 a=6.85492e-02 ||d_V dtheta||^2=3.81807e-03 ratio to f^2 n=1.212
+level 1 (m=0): ||dtheta||^2=6.00106e+00 b=6.00043e+01 f=0.04000 E=2.56000e-02 a=1.02400e-01 ||d_V dtheta||^2=1.28022e-02 ratio to f^2 n=1.333
+second diffs of S at levels 0..k (level 0 = fine): [52.90931353441719, 11.996400601197443]  solves g,r 9e-11,3e-11,9e-11,3e-11
+j=0: d2 e_j=4.09129e+01 ; b_(j+1)=6.00043e+01 ratio d2e/b=0.6818 ; err/(f n)=-158.096
+Y1: D2 Y_k=4.091291e+01 sum=4.091291e+01
+rss 0.299285888671875 t 4.205621957778931
+### end 20:54Z exit=0
+### start 20:55Z mem_free=50: python3 y_ex2.py 2 3 1 mix 0.05
+   newton 0 |g|=3.326e-02 |r|=4.476e-03 S=0.3261794632
+   newton 1 |g|=4.561e-03 |r|=2.554e-04 S=0.3905177687
+   newton 2 |g|=8.528e-06 |r|=5.647e-06 S=0.3917350984
+   newton 3 |g|=7.187e-09 |r|=9.428e-09 S=0.3917491237
+   newton 4 |g|=2.388e-11 |r|=1.943e-11 S=0.3917491080
+base solve g,r=2.4e-11,1.9e-11 t=4 rss=0.31
+tangent done: J h - b max 8.10e-06 t=6
+level 0 (m=1): ||dtheta||^2=2.63111e+01 b=8.18326e+01 f=0.02772 E=3.91769e-01 a=4.23961e-01 ||d_V dtheta||^2=2.26694e-02 ratio to f^2 n=1.121
+level 1 (m=0): ||dtheta||^2=6.00601e+00 b=5.99404e+01 f=0.10483 E=1.60666e-01 a=6.37902e-01 ||d_V dtheta||^2=7.21248e-02 ratio to f^2 n=1.093
+second diffs of S at levels 0..k (level 0 = fine): [52.53960557938586, 11.981577464522664]  solves g,r 1e-12,1e-12,1e-12,2e-12
+j=0: d2 e_j=4.05580e+01 ; b_(j+1)=5.99404e+01 ratio d2e/b=0.6766 ; err/(f n)=-59.714
+Y1: D2 Y_k=4.055803e+01 sum=4.055803e+01
+rss 0.3072662353515625 t 11.50803804397583
+### end 20:56Z exit=0

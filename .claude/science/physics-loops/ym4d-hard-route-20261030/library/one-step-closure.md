@@ -38,7 +38,7 @@ Define c^(n)(Z) through the near part, after a polynomial transfer (mismatch 2).
 | Lift, all orders | Theorem F, AN1, AN2 | H_S, lambda_S, tree decay | `analytic-lift.md`, AN3 |
 | (H1)-(H3) in the chart | AN3 at Phi(xi), ||R_k||_{<=N} | S = S_0 + R_k o Phi on K | Text 5.9 |
 | Base integral | (H1)-(H3), cut | G, in the profile | `preconditioned-covariance.md`, HS-T with V_s (mismatch 1) |
-| Rarity | Theorem Z at level k, (CI'''), Lemma OC | z per cell, (A1') | `quiet-boundary-rarity.md` |
+| Rarity | Theorem Z at level k in form (Z), (CI-N), Lemma OW, Lemma TE | z per cell, (A1') | `quiet-boundary-rarity.md` |
 | Gas | (A1'), (A2), Prop MD* | W, in the profile | `polymer-covariance.md`, Text 5.4 |
 | Order >= 5 | ||R_k||_n, K | contraction | Section 4 |
 | Data | c^(m)(R_k), T3, Schwarz | contraction | Section 5, `gauge-taylor-contraction.md` |
@@ -128,7 +128,7 @@ The same with Sad#_N, and with no extraction: Delta R_{k+1}^𝔡 := G^𝔡 - G^b
 
 **5. The hard cut.** Lemma HS-C read the barrier's mean curvature zeta_c, which I had called a boundary integral for a hard cut. In the hard limit it diverges. The base integral must use the soft cut chi_c of Text 5, which it does, and HS-C is now stated for it, with zeta_c <= poly(x) z_c.
 
-**6. Own-level factors.** Not a mismatch of norms but a false step, found while naming the next inequality: tubes of width d_x >= 3 L are not small against a block, so the old comparison of fills had a delta that is not small. Lemma OC of `library/quiet-boundary-rarity.md` replaces it, with no sign of beta.
+**6. Own-level factors.** Not a mismatch of norms but a false step, found while naming the next inequality: tubes of width d_x >= 3 L are not small against a block, so the old comparison of fills had a delta that is not small. Lemma OC of `library/quiet-boundary-rarity.md` replaces it, with no sign of beta. *Corrected 2026-10-31: Lemma OC was wrong as written (gate at 60036ba4d). Lemma OW replaces it; the false step stays false, and it is no longer needed in that form, since (W0) reads G_i only with a bounded coefficient.*
 
 Smaller points fixed here: the rate mu of the norms must be below rho_f / N, since HS-T degrades with the order; one rate for all orders, as Lemma 3 reads order 5 at that rate. In `library/analytic-lift.md`, Consequence 2 claimed one gauge at all orders: the top coefficient needs the H^2 bound, so the weighted Landau gauge at order 1, and the family g(s) above; with compact omega_i, mixed derivatives need only sizes.
 

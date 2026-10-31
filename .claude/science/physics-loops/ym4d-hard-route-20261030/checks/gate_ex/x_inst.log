@@ -1,0 +1,20 @@
+### start 21:40Z mem_free=51: python3 x_inst.py 4 3 1.0
+parent: Np=4 rho=1.0 f=1.4387 S=55.6729 (4 pi^2=39.4784) E=60.1813 I=446.2792 I/(fE)=5.155
+   newton 0 |g|=1.168e+00 |r|=2.697e-01 S=198.3772125050
+Traceback (most recent call last):
+  File "/Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/checks/gate_ex/x_inst.py", line 50, in <module>
+    U, lam, gn, rn = pb.solve(pb.initial(), verbose=True)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/checks/gate_ex/ex_core.py", line 361, in solve
+    dv, dl = self.kkt_solve(U, lam, -g, -r, 1e-4, 200)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/checks/gate_ex/ex_core.py", line 344, in kkt_solve
+    sol, info = sla.minres(A, b, M=M, rtol=tol, maxiter=maxiter)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_isolve/minres.py", line 223, in minres
+    raise ValueError('non-symmetric matrix')
+ValueError: non-symmetric matrix
+### end 21:40Z exit=0
+### start 21:40Z mem_free=50: python3 x_inst.py 6 3 1.5
+parent: Np=6 rho=1.5 f=1.5226 S=97.1115 (4 pi^2=39.4784) E=93.9799 I=593.7291 I/(fE)=4.149
+   newton 0 |g|=1.331e+00 |r|=2.213e-01 S=291.0865198389

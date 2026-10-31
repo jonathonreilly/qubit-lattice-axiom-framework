@@ -126,3 +126,27 @@ Raw results at T = 48: ratio to the prediction 0.963, 0.956, 0.928, 0.886 at d =
 Raw results of L1, L2 on 24 + 12 random directions: all eigenvalues of D positive (T1: lambda_min 2.9e-6, T2: 3.9e-5), tol below 3e-7. So no violation in random subspaces. Random directions may miss a direction concentrated next to the target.
 
 - L1', L2'. Rayleigh-Ritz on a structured basis of 80 directions, one colour: the top right singular vectors, within the null space of the target, of the linear curvature restricted to plaquettes sharing a link with the target. If lambda_min < -3 tol, the corresponding (DIA-B) is false at large beta. Otherwise this remains evidence only.
+
+## Linear test of the classical clauses, upper-chain_lift_modulus.py (before running)
+
+Model: the exact abelian minimal lift for the linearised map of hard-core--independent (1.1), coarse curvature F'(X) = L^-4 sum_{y in B(X)} sum_{s,t<L} F(y + s e_mu + t e_nu). This map is an exact semigroup in L, so L = 3, 9, 27 are levels 1, 2, 3 of the L = 3 hierarchy, and uniformity in L is uniformity in the level. Bloch modes at coarse momentum K. Sup over seven K and three polarisations only: evidence for the clauses at linear order, not a proof, and it says nothing about commutators.
+
+Decides whether the clauses used by Text 14 are consistent in the linear theory. A FAIL means the clause, and the step using it, must change.
+
+- S1. The R4 average of the computed fine curvature reproduces K^ wedge A' to relative 1e-9. S2. L^4 sum_B |F^(k_B)|^2 = L^4 A'^* G_perp^-1 A' to 1e-9. S3. Sum over one block of the fibre reduction of the curvature variance = 3 (n^4 - 1)/n^4 to 1e-9.
+- E1, (CF_j)(a) and (LE_j) in Bloch form. C_E(L) := sup_K,pol energy per block / |F'|^2. Pass if C_E(27) <= 1.25 C_E(9) and C_E(9) <= 1.25 C_E(3). Fail: the classical form is not uniform in the level.
+- E2, tail of (LE_j). Coarse source on one link; energy per coarse block at coarse distance d along an axis, d <= n/2 - 1. Pass if the amplitude rate c, E ~ exp(-2 c d), agrees within 30% among L = 3, 5, 9 and c >= 0.5. Fail: the lift is not local at the coarse scale uniformly in the level.
+- R1, (REG_j). R(L, r) := sup_K,pol of the mean over h in [-r,r]^4 of sum_x |F(x+h) - F(x)|^2, divided by the energy. Pass if alpha_eff := (1/2) log(R(9,1)/R(27,1))/log 3 >= 1/4 and the collapses R(27,3)/R(9,1), R(27,9)/R(9,3) lie in [2/3, 3/2]. Fail if alpha_eff < 0.1: then the extraction of the marginal part in the mark needs another argument.
+- P1, position independence in (GS_j). rel(x) := fibre reduction of Var F_munu(x) / free Var, on a coarse torus n = 4. Pass if max_x rel falls at least like 1/L from L = 9 to L = 21. Fail: the local covariance depends on the position in the block at order one, and the quadratic form cannot be summed to a multiple of the classical form.
+- W1, weak sup. phi_K(L) := max_x |F(x)| L^2 / |F'|, modes only. Pass if the log slope from L = 9 to 27 is at most 1.5 for each K (kappa >= 1/2 on these modes). A lower bound for the sup over fields, so a pass is weak evidence and a fail is decisive.
+
+## Linear test: after the first run (before computing the following)
+
+First run: S1 1.3e-14, S2 1.3e-15, S3 1.8e-15. P1 PASS: max rel L^4 = 5.79, 6.57, 6.82, 6.89 at L = 5, 9, 15, 21, so position dependence scales as L^-4. E2 PASS: amplitude rates 1.6 at L = 3, 5, 9. W1 PASS on all seven modes, slopes at most 0.062. E1 FAILED as written: C_E = 6.45, 9.17, 10.41, 11.03, 11.74, 11.96, 12.05 at L = 3, 5, 7, 9, 15, 21, 27, and C_E(9)/C_E(3) = 1.71 > 1.25. C_E(27)/C_E(9) = 1.09 passes. R1 void: the script had a bug (the Dirichlet kernel at q = 0 returned 0, so R = 2.0 for all L), found by the value itself, fixed before reading any R.
+
+- E1'. The increments suggest C_E(L) = C_inf - A/L^2. The fit to L = 21, 27 gives A = 103.2, C_inf = 12.195. Prediction: C_E(33) = 12.100, C_E(45) = 12.144. Pass if both within 0.02. Fail: the limit is not reached at this rate, and uniformity in the level is open even in the linear theory.
+- R1 as registered, rerun with the bug fixed.
+
+## Linear test: outcome
+
+E1' PASS: C_E(33) = 12.1011, C_E(45) = 12.1462, predicted 12.100, 12.144. R1 FAILED as written, on one window only: alpha_eff = 0.929 (pass), R(27,9)/R(9,3) = 0.894 (pass), R(27,3)/R(9,1) = 0.648, below 2/3 by 0.02, in the direction of more regularity at larger L. Not re-registered. The clause needs only the upper bound; post hoc, every value measured satisfies R(L, r) <= 5.4 r/L. That is a description, not a test.

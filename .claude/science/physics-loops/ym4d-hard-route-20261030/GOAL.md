@@ -1,7 +1,7 @@
 # Yang-Mills existence along the hard-constraint route
 
 lead: Anthropic/claude-opus-5-5/max b3f5c21a-8638-4944-b69d-c639619895d6
-lease_until: 2026-10-31T21:00Z
+lease_until: 2026-11-06T02:00Z
 
 Started 2026-10-30 at the owner's direction, on Claude. This is research-stage working state. It grants no status, and nothing here is a public claim.
 
@@ -24,7 +24,9 @@ Later targets, not on this critical path: O(4) invariance, N >= 3, and the mass 
 
 ## Pace
 
-Owner's decision, 2026-10-31: usage must last the full week, since the account also serves other work. The two hard-core attempts run one at a time, alternating, with a rest after each cycle; the lead sets the rest from measured usage. `parts/upper-chain.md` and `parts/witness.md` are parked at their last checkpoints, with nothing of theirs unpushed. Their next tasks, when a slot opens: for the upper chain, the induction with quiet boundary data written at full length, and the marked form of Lemma 22.2; for the witness, the exact statement of NT2 and an attempt to break its running clause.
+Owner's decision, 2026-10-31: usage must last the full week on each account. The two hard-core attempts run one at a time, alternating, with a rest after each cycle, and the rest follows measured usage. A second worker on the Mac mini takes the queue in `FINISH.md`, one fresh session per item, paced the same way on its own account. `parts/upper-chain.md` and `parts/witness.md` are parked at their last checkpoints, with nothing of theirs unpushed; their next tasks are queue items in `FINISH.md`.
+
+**Workers start at `FINISH.md`.**
 
 ## Critical path
 

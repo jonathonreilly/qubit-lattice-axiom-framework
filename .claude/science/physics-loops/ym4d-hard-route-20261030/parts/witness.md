@@ -1,5 +1,5 @@
 lead: Anthropic/claude-opus-5-5/max 1af63194-89a7-4dd0-9b82-781b24334af3
-lease_until: 2026-10-31T21:00Z
+lease_until: 2026-10-31T11:30Z
 
 ## State of attack
 

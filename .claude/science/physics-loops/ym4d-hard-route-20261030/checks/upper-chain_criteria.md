@@ -80,3 +80,15 @@ The hidden variable in Text 14 F4 and Text 15 is whether the local response of t
 - A1 (sign). (DIA-V) in its mean form predicts R_k(x) >= 0 at all x. Report the most negative orbit in units of its error. A value below -4.5 sigma (allowing for about 500 orbits) refutes this mean form, and then exact (DIA-V) is false for this blocking.
 - A2 (cancellation). rho_k = sum_x |R_k(x)| / |sum_x R_k(x)|, counting only orbits resolved at 3 sigma, and the same with all orbits as an upper estimate biased by noise. rho_k close to 1 means no large cancelling parts, which supports (TR_2) at this level. rho_k >> 1 and growing from k = 1 to 2 would be the total-derivative growth of F4, and would count against the small-negative-part form.
 - A3 (sum rule). sum_x R_k(x) measured two ways: the sum of the profile, and the covariance of total W with G_k. Fail if they differ by more than 3 sigma; then the script is wrong.
+
+## upper-chain_strip.py: exact check of the strip bound, Lemma 10.1 (written before running)
+
+Model: 2D Z_2 and U(1)-truncated gauge theories are too coarse for the proof's SU(2) step, so the test is of the algebra only. Exact transfer operator of 2D lattice gauge theory on a spatial circle of n links, gauge group SU(2) truncated by Gauss quadrature on class functions is not used; instead Z_2 on n = 4, 6 spatial links and T = 8, 12 time slices. Random bounded F, G on slabs of thickness 1 and 2, |F|, |G| <= 1. T_1 is built from its kernel, not from its claimed form.
+
+- S1. T_1 is symmetric positive semi-definite: smallest eigenvalue >= -1e-12 times the largest. Fail otherwise: the claimed T_1 = K P has a mistake.
+- S2. For integers m in (0, N), the direct torus value of < F tau G > by full enumeration equals Z^-1 Tr(F^ T_1^m G^ T_1^(N-m)) to 1e-10. Fail otherwise: the slab operators or the trace identity are wrong.
+- S3. |f(x + i y)| <= ||F||_inf ||G||_inf at 2000 random points of the strip. A single violation above 1e-10 fails the lemma.
+- S4. |c(m + s) - c(m)| <= ||F||_inf ||G||_inf log(t / (t - |s|)) for all admissible m, s and 200 random F, G. A single violation above 1e-10 fails the lemma.
+- S5. Unequal thickness without padding: compute A_F(x) with h_F != h_G on the same torus and record whether it exceeds ||F||^2. This documents why padding is needed. It is not a pass or fail item.
+
+This is a check of the operator algebra in a small model; it does not test SU(2).

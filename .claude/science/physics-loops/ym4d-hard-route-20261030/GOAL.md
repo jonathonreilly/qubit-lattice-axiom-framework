@@ -22,6 +22,10 @@ T1: SU(2) lattice Yang-Mills with the Wilson action has a non-trivial, reflectio
 
 Later targets, not on this critical path: O(4) invariance, N >= 3, and the mass gap.
 
+## Pace
+
+Owner's decision, 2026-10-31: two pushes at a time, to stretch the weekly token budget. The two hard-core attempts run. `parts/upper-chain.md` and `parts/witness.md` are parked at their last checkpoints, with nothing of theirs unpushed. Their next tasks, when a slot opens: for the upper chain, the induction with quiet boundary data written at full length, and the marked form of Lemma 22.2; for the witness, the exact statement of NT2 and an attempt to break its running clause.
+
 ## Critical path
 
 1. **hard-core:** all-scale UV stability for hard-constraint block RG in four dimensions, including large fields. Balaban's series (CMP 95, 96, 98, 99, 102, 109, 116, 119, 122) is the known structure. The literature carries no weight here: until rebuilt, each step is an open obligation. Raced by two attempts.

@@ -131,6 +131,8 @@ def n3():
             else:
                 pick = rng.random(n) < 0.15
                 E = pick[lab]
+            if not E.any():  # first run counted empty E: the distance transform returned -1 (d = 2 read -2). Criterion unchanged.
+                continue
             s1, s2 = layers(lab, E, t, d)
             if (~(E | s1))[(slice(t, -t),) * d].any():
                 res_t.append(thickness(E, s1, t, d))

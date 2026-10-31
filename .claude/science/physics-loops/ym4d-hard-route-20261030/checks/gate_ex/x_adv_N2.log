@@ -66,3 +66,10 @@ BEST 2 3 0.03 1 mix -15.043827488085203 t 298.36046719551086 rss 0.3051147460937
 Consider using tensor.detach() first. (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:837.)
   J0 = float(J)
 it 0 f=0.4905 E=9.0012e+00 I/E=13.5240 I/(fE)=27.571 e/I=0.3047 C_eff=-7.0400 best=-1000000000.0000 g,r=3e-06,7e-07 t=52
+it 10 f=0.0394 E=9.0257e-03 I/E=9.1832 I/(fE)=233.003 e/I=0.1870 C_eff=-32.0593 best=-31.0723 g,r=1e-10,8e-11 t=107
+it 20 f=0.0441 E=7.2481e-03 I/E=10.3734 I/(fE)=235.458 e/I=0.1843 C_eff=-31.7597 best=-28.9368 g,r=9e-11,4e-11 t=147
+it 30 f=0.0439 E=7.3300e-03 I/E=10.4409 I/(fE)=237.690 e/I=0.1827 C_eff=-31.6946 best=-28.9368 g,r=2e-10,6e-11 t=187
+it 40 f=0.0438 E=7.2754e-03 I/E=10.4241 I/(fE)=237.859 e/I=0.1822 C_eff=-31.5907 best=-28.9368 g,r=7e-11,5e-11 t=226
+it 50 f=0.0437 E=7.2712e-03 I/E=10.4195 I/(fE)=238.325 e/I=0.1822 C_eff=-31.6484 best=-28.9368 g,r=4e-11,9e-12 t=267
+it 60 f=0.0437 E=7.2638e-03 I/E=10.4104 I/(fE)=238.232 e/I=0.1820 C_eff=-31.5842 best=-28.9368 g,r=7e-11,4e-11 t=309
+it 70 f=0.0437 E=7.2636e-03 I/E=10.4081 I/(fE)=238.322 e/I=0.1819 C_eff=-31.5875 best=-28.9368 g,r=7e-11,4e-11 t=350

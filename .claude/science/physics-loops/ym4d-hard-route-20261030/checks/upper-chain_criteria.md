@@ -92,3 +92,11 @@ Model: 2D Z_2 and U(1)-truncated gauge theories are too coarse for the proof's S
 - S5. Unequal thickness without padding: compute A_F(x) with h_F != h_G on the same torus and record whether it exceeds ||F||^2. This documents why padding is needed. It is not a pass or fail item.
 
 This is a check of the operator algebra in a small model; it does not test SU(2).
+
+## upper-chain_wit_gauss.py: the witness pair in the Gaussian theory (written before running)
+
+Theorem 10.7 uses P_pq at offset (d, d, 2d, 2d) for parallel (1,2) plaquettes, predicted 0.6/(100 pi^2 d^4) in the continuum, and the Maxwell tensor generally. Level 0 only, Wilson form, computed by FFT on T = 48. This tests the tensor and the sign, not the blocked form.
+
+- W1. For d = 3, 4, 5, 6: P_pq has the predicted sign, and P_pq / prediction is within 25% of 1 at d = 6, and closer to 1 at d = 6 than at d = 3. Fail otherwise: the choice of pair in Theorem 10.7 has to change.
+- W2. Parallel (1,2) pair at offset (d,d,d,d): |P_pq| at d = 6 is at most one tenth of the value of the (1,2),(1,3) pair at that offset, which is predicted -1/(2 pi^2 x^4). Fail otherwise: my tensor is wrong.
+- W3. Sum rule: sum over q of P_pq^2 = P_pp, up to 1e-6, and P_pp = (1/2)(1 - T^-4)-type within 1e-3. Fail means the script is wrong.

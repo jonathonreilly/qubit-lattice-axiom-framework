@@ -1,5 +1,5 @@
 {
-  "cycle_count": 84,
+  "cycle_count": 83,
   "cycles": [
     {
       "cycle_id": "cycle-0001",
@@ -9429,56 +9429,6 @@
       "decision": null,
       "edges": [
         {
-          "from": "ai_methodology.skills.review-loop.references.landing",
-          "to": "ai_methodology.skills.review-loop.references.combined_validation"
-        },
-        {
-          "from": "ai_methodology.skills.review-loop.references.combined_validation",
-          "to": "ai_methodology.skills.review-loop.references.audit_compatibility"
-        },
-        {
-          "from": "ai_methodology.skills.review-loop.references.audit_compatibility",
-          "to": "ai_methodology.skills.review-loop.references.landing"
-        }
-      ],
-      "length": 3,
-      "max_transitive_descendants": 0,
-      "nodes": [
-        {
-          "audit_status": null,
-          "claim_id": "ai_methodology.skills.review-loop.references.landing",
-          "claim_type": null,
-          "effective_status": null,
-          "note_path": "docs/ai_methodology/skills/review-loop/references/LANDING.md",
-          "title": "Backlog review and landing",
-          "transitive_descendants": null
-        },
-        {
-          "audit_status": null,
-          "claim_id": "ai_methodology.skills.review-loop.references.combined_validation",
-          "claim_type": null,
-          "effective_status": null,
-          "note_path": "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md",
-          "title": "Combined candidate validation",
-          "transitive_descendants": null
-        },
-        {
-          "audit_status": null,
-          "claim_id": "ai_methodology.skills.review-loop.references.audit_compatibility",
-          "claim_type": null,
-          "effective_status": null,
-          "note_path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
-          "title": "Audit-system compatibility and scientific PASS gates",
-          "transitive_descendants": null
-        }
-      ],
-      "requires_lemma_extraction": false
-    },
-    {
-      "cycle_id": "cycle-0081",
-      "decision": null,
-      "edges": [
-        {
           "from": "ai_methodology.skills.review-loop.references.review_units",
           "to": "ai_methodology.skills.review-loop.references.landing"
         },
@@ -9525,7 +9475,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0082",
+      "cycle_id": "cycle-0081",
       "decision": null,
       "edges": [
         {
@@ -9575,7 +9525,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0083",
+      "cycle_id": "cycle-0082",
       "decision": null,
       "edges": [
         {
@@ -9638,7 +9588,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0084",
+      "cycle_id": "cycle-0083",
       "decision": null,
       "edges": [
         {
@@ -9710,7 +9660,7 @@
     "2": 29,
     "20": 1,
     "29": 1,
-    "3": 6,
+    "3": 5,
     "4": 2,
     "5": 2,
     "6": 2,

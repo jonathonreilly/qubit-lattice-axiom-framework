@@ -38,7 +38,8 @@ Owner-approval history for axioms and primitives:
 | Retained no-go rows | 0 |
 | Retained bounded rows | 0 |
 | Boxed decorations under retained parents | 0 |
-| Open gates | 0 |
+| Rows typed `open_gate` | 334 |
+| Rows with effective status `open_gate` | 0 |
 | Unaudited rows | 5573 |
 | Retained-pending-chain rows | 0 |
 | Audited conditional rows | 0 |
@@ -56,7 +57,7 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 |---|---:|
 | Total pending rows | 5573 |
 | Ready rows | 1934 |
-| Cycle-break targets | 84 |
+| Cycle-break targets | 83 |
 | Critical pending | 682 |
 | High pending | 452 |
 | Medium pending | 1445 |

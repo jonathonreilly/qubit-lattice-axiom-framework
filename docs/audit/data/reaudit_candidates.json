@@ -26,10 +26,10 @@
     "positive_theorem"
   ],
   "packet_policy_fingerprint": {
-    "digest": "e12fa45d6087846c979d8d9750fa1fb2b34408aead0701251fd2fd2512cc9ba2",
+    "digest": "664aa9bf38fb11e84295a9bbdbbd7c3a3e7551df48d847fc5f914893d81733c8",
     "schema": "packet_policy_fingerprint_v1",
     "sources": {
-      "docs/ai_methodology/skills/audit-loop/SKILL.md": "f3d4ae7c067a65cc3e6869ca8c43ec79d62cfe7b2582a13a31f34baac03e5f54",
+      "docs/ai_methodology/skills/audit-loop/SKILL.md": "d9d78aa3e062112bf7e3d4f28ac8537e607a6db4c65e1139c999fa4e9bfec2a5",
       "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md": "df53a9a21c70e213ebff96a65e3d77376b70d13829ecea92723ba9b59fd827f4",
       "docs/audit/scripts/apply_audit.py": "2d059c4c2c363c6f6f6644bf993b3ab2133e785d21a8d0525720cd936de59413",
       "docs/audit/scripts/audit_contract.py": "72db667a724c5db0418a805822bffbdba753fc273265c98d5d8705801be403ba",

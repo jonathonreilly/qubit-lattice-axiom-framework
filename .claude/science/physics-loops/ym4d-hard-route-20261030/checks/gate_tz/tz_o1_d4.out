@@ -1,0 +1,6 @@
+d 4 L 3 n 3 bonds 26244 minres info 0 0s E0 19.101957 stationarity 5.6e-09 residual 8.8e-10
+   block  |Y| 459 rho 0.70741 s 0.8070
+   hull   |Y| 216 rho 0.17613 s 0.2022
+d 4 L 5 n 3 bonds 202500 minres info 0 0s E0 22.979969 stationarity 1.7e-09 residual 1.2e-09
+   block  |Y| 4125 rho 0.57487 s 0.6534
+   hull   |Y| 216 rho 0.00817 s 0.0207

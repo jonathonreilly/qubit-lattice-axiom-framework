@@ -62,6 +62,34 @@ The factor is L^4 for the sum per level-(k+1) cell times L^-2 for the two lifts.
 
 Status: the scaling is derived. The bounds on the symbols of D^j V* are the input `Lift symbol`, and aliases at n = 3, 4 are bounded the same way but not written out.
 
+## Lemma 2, second proof (derived 2026-10-31; replaces `Lift symbol`, the "same scaling" at n = 3, 4 and the alias sums at small momentum; not reviewed)
+
+*A gap in the first proof.* `Lift symbol` used the Feynman form, a lift with the whole gauge term, like Theorem 6 of the energy package. That is not the class response, `library/fibre-propagator.md`. The bound it gave for aliases is right for the transverse part of the class response, so the first proof at n = 2 stands after that correction. At n = 3, 4 it was not written.
+
+*Tools.* (T1) *Schwarz.* By Lemma 1, Pi-hat^(n) vanishes to order 6 - n at q = 0, once the F^2 coefficient is removed. So on complex lines through 0, |Pi-hat^(n)(q)| <= (|q|/rho)^{6 - n} sup_{strip rho} |Pi-hat^(n)|. So c^(n) <= C rho^{-(6 - n)} sup_{strip rho} |Pi-hat^(n)|, and **no cancellation at small momentum has to be followed**: only sizes in the strip. rho must be free of L: Theorem F's Combes-Thomas gives the lift in a strip of absolute width delta_#, and Lemma HS-T gives the same for the source. *This is a consumer of the absolute rate that I had not seen.* With a rate rho(L), the factor rho^-(6-n) would compete with L^-2.
+
+(T2) *Gauge-invariant form at n = 2.* Pi^(2) annihilates gradients, and it is local, so Pi^(2) = d^dagger rho d, with rho exponentially local, by a lattice Poincare lemma with local homotopy, and |rho(q)| <= c^(2) min(|q|, 1)^2 after the F^2 coefficient is removed.
+
+(T3) *An exact identity.* For a fine field H: ||grad d H||_{L^2} = ||d^dagger d H||_{L^2}, at U = 1, as d (d H) = 0 and d d^dagger + d^dagger d = -Delta on 2-forms. The class response of Sad# solves d^dagger d H = -Q^{o*} mu. So ||grad d H||_{L^2} <= ||Q^{o*} mu||_{L^2} <= C |mu|, and with the conjugation of Theorem F the same with weights e^{kappa . x}, |kappa| <= delta_#/2. The gauge of H does not enter, since only d H does.
+
+*n = 2.* The level-k field is f = L^-1 (tile average of H) in potential normalisation. In level-(k+1) units, with level-k momentum q/L: D^2 Z_k(1)[f, g] is at most c_k^(2) L^-2 ||grad d H_f|| ||grad d H_g|| per coarse cell: L^4 sites, L^-2 for the two fields, and |q/L|^2 from rho, while d on the level-k lattice reads L^-1 q, whose two factors cancel the potential normalisation of the curvature. Count: for a curvature theta_p = L^-2 F, sum over L^4 sites of theta_p rho theta_p <= L^4 L^-4 c (|q|/L)^2 |F|^2 = c L^-2 |q|^2 |F|^2. Averaging over tiles is a contraction in Fourier space. So
+
+    sup_{strip} |Pi-hat^(2), mean_{k+1}| <= C L^-2 c_k^(2),   c_{k+1}^(2) <= C L^-2 rho^-4 c_k^(2) + source,
+
+with C absolute. No alias sum and no bound on `Lift symbol` is used beyond (T3). Numerics: `checks/hard-core--mapped_data_contraction.py`, criteria written first, at the trivial background, one level: PASS, run once. Pi(L, p) L^{6-d}, sup over a grid: d = 2: 118, 171, 192, 201, 206 at L = 3, 5, 7, 9, 11, levelling off; d = 3: 193, 313, 368 at L = 3, 5, 7; d = 4: 271, 484 at L = 3, 5. All within the factor 2 of the smallest L stated, but d = 3 and d = 4 have not levelled off at these sizes, so they show the power only roughly (1.91 and 1.78 of the first value). The identity ||grad d H|| = ||d^dagger d H|| holds to 3e-15, longitudinal A' gives d H = 0 to 4e-15, and Pi at small p is level to 3 percent from s = 0.4 to 0.05, so no term of lower order feeds in. Limits: n = 2 only.
+
+*n = 3, 4, same-order term.* D^n Z_k(1)[f, ..., f]. With |Pi-hat^(n)(q_1, ...)| <= c^(n) min(max_i |q_i|/L, 1)^{6 - n}, conservation of momentum means the two largest |q_i| are comparable, so max |q|^{6-n} <= C |q_1|^{(6-n)/2} |q_2|^{(6-n)/2}. The count is L^4 (sites) L^-n (fields) L^{-(6 - n)} = L^-2, times
+
+    sum over momenta of |q_1|^{(6-n)/2} |H^(q_1)| |q_2|^{(6-n)/2} |H^(q_2)| prod_{i >= 3} |H^(q_i)| <= ||H||^2_{H^{(6-n)/2}} ( sum_q |H^(q)| )^{n-2}.
+
+Here H is the class response in the gauge P_r D^* H = 0, in a strip. Its transverse part has |H^_T(q_n)| <= C |tau(q_n)| / |q_n|^2 for n != 0, and its longitudinal part is q-hat_n r-hat(q_n)^* c(p) / |q-hat_n|^2, with |r-hat(q_n)| <= prod_{n_nu != 0} (1/|n_nu|). So H is in H^{3/2 - eps} uniformly, as needed for n = 3, 4, and sum_q |H^(q)| over the level-k zone is at most C log L. So c_{k+1}^(n) <= C (log L)^{n - 2} L^-2 rho^-(6 - n) c_k^(n) + (lower) + source. *Note the gauge.* The longitudinal part does not vanish at n = 3, 4, and it enters as a size, not through a cancellation: Schwarz has taken over the small-momentum cancellations, which belong to the total, gauge invariant, function.
+
+*n = 3, 4, lower terms.* D^2 Z[f_2, f], D^2 Z[f_3, f], D^2 Z[f_2, f_2], D^3 Z[f_2, f, f]: each has a lower c^(m), m < n, with coefficient C_n(L). So the recursion is triangular and these need only finiteness uniform in k, the (SB) at j >= 2 at the trivial background, where the operators do not depend on k except through eta. So the bound is
+
+    c_{k+1}^(n) <= C (log L)^2 L^-2 c_k^(n) + C_n(L) sum_{m < n} c_k^(m) + source.
+
+*Hostile.* (a) The strip of Z_k read at q/L has width rho/L in level-k units, which is within Z_k's own strip, since it has rate at least rho in level-k units by the same statement one level down. (b) The source: its F^2 coefficient is extracted first, and it is the source of beta^0 by Theorem P1; the rest is bounded by C_n(L) in the strip, by Lemma HS-T. (c) The slow tier of R: Schwarz in a narrower strip with a tiny coefficient, Lemma HS-T. (d) I checked only n = 2 numerically.
+
 ## Lemma 3 (low orders at a rough field). Derived, given (Loc).
 
 For V in the class, x_1 given, a := the local flux, weighted by e^{-mu' d}, r := c a^{-1/2}, and n <= 4:
@@ -70,7 +98,7 @@ For V in the class, x_1 given, a := the local flux, weighted by e^{-mu' d}, r :=
 
 where A is the field of V in axial gauge at x_1, cut off at r. Its size at distance y is at most a |y|, so |A| <= c a^{1/2} on the ball.
 
-*Proof.* Deform V inside the ball by exp(i (s chi + 1 - chi) A), with chi = 1 near x_1, chi = 0 outside the ball. The flux stays within a factor 1 + C a r^2 of a, so the path stays in the formula range. At s = 0 the field is trivial on a ball of radius r/2, so by (Loc) its derivatives at x_1 differ from those of the trivial field by C e^{-mu r/2}. Taylor expansion along the path gives the formula. QED
+*Proof.* Deform V inside the ball by exp(i (s chi + 1 - chi) A), with chi = 1 near x_1, chi = 0 outside the ball. The flux stays within a factor 1 + C a r^2 of a, so the path stays in the formula range. At s = 0 the field is trivial on a ball of radius r/2, so its derivatives at x_1 differ from those of the trivial field by C e^{-mu r/2}: this needs only tree decay of the order-(n + 1) norm along a path of class fields, so (Loc) in its form with rough far data is not read (2026-10-31). Taylor expansion along the path gives the formula. QED
 
 Consequently, for n <= 4, in the l^1 tree norm on the convex range:
 

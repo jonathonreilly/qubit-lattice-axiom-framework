@@ -109,6 +109,18 @@ class CoarsePath:
                     J[(mu,) + site] += eps * w * e
         return J
 
+    def form_coarse(self, E, F):
+        """The Levy area on the coarse path of the blocked values only: what a Gaussian potential on the level-1 lattice sees."""
+        ebar, fbar = [], []
+        for paths, eps in self.links:
+            eb = sum(w * link_value(E, pl) for w, pl in paths)
+            fb = sum(w * link_value(F, pl) for w, pl in paths)
+            ebar.append(eps * eb)
+            fbar.append(eps * fb)
+        ce, cf = np.cumsum(ebar), np.cumsum(fbar)
+        ebar, fbar = np.array(ebar), np.array(fbar)
+        return float(np.sum(ce[:-1] * fbar[1:]) - np.sum(cf[:-1] * ebar[1:]))
+
     def form(self, E, F):
         """A~(E, F) as in the module docstring."""
         tot = 0.0

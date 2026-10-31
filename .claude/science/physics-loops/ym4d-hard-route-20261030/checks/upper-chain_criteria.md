@@ -52,3 +52,23 @@ Raw results: B1 missed narrowly (2.5% against 2%, at T = 48). B2 passed. B3 fail
 ## Zero-momentum dominance in the smallest model (no script)
 
 Question Z1 (is two-block zero-momentum dominance, Cov(y_+, y_-) >= 0, a consequence of RP and the Markov property alone?) was planned as a random search and was settled by hand before running anything: outcome A, by the exact example in `parts/upper-chain.md`, Proposition 14.7.
+
+## upper-chain_dia_exact.py (local diamagnetic inequality, exact small system; written before running)
+
+Statement tested, (DIA-B): for every boundary data xi and plaquette p, E[s_p | xi] >= E[s_p | cold]. Model: two free links in one plaquette q, every other link fixed. Link 1 has five further staples a_(1,i) and link 2 has five further staples a_(2,i), all arbitrary unit quaternions, and q has weight (1/2) Tr(U_1 X U_2^-1 Y). Link 1 is integrated in closed form, link 2 by Gauss quadrature on S^3. Cold means all fixed links are 1.
+
+- D1. For beta in {0.5, 1, 2, 4, 8, 16} and 2000 random boundaries per beta (Haar, and near-cold with angles at most 0.3), compute min over xi and over all 11 plaquettes of E[s_p|xi] - E[s_p|cold]. Violation if the minimum is below -1e-6 at a resolved quadrature (grid doubling changes the value by less than 1e-7). Violation means (DIA-B) is false as an exact statement, at the fine boundary level, and the route must be restated. No violation in this small system is only encouragement.
+- D2. Quadrature check: the cold value of the total against a higher grid, and the one-free-link analytic formula when q is removed.
+
+## Result of upper-chain_dia_exact.py, and upper-chain_energy_sign.py (written before running)
+
+D1 result: no violation; min over 2000 boundaries of E[s_p|xi] - E[s_p|cold] is positive at every beta (8.6e-4 at beta = 0.5 down to 8.4e-5 at beta = 16), quadrature stable. Encouragement only: two free links.
+
+A sharper target for a counterexample. In the Gaussian theory Cov(s_p, s_q) = (3/(2 beta^2)) P_pq^2, and P_pq vanishes identically for plaquettes in orthogonal planes, p in (1,2) and q in (3,4). So there the sign of Cov(s_p, s_q) is decided at the next order, and plaquette-level positivity could fail.
+
+- E1. Periodic T = 6, SU(2) heat bath, beta in {2.5, 4, 8}, 20000 sweeps each. Measure C_perp(y) = connected <s_12(x) s_34(x+y)> for y in {0, e1, e3, e1+e3}. Report sign and error. A value below -4 sigma at any beta means pairwise positivity of plaquette energies is false, and plaquette-level (DIA) near cold should be expected to fail, so the route must use the clover field or block sums.
+- E2. Same run: connected <e_a(x) e_a(x+y)> for y in {e1, 2 e1, e1+e2}. Expected positive. A value below -4 sigma would count against clover-level (DIA) too.
+
+## Casimir test of Proposition 15.2, upper-chain_vacuum_e.py (written before running)
+
+- C1. m = periodic <inner-cube observable> at beta = 4, T = 12, in the same field e_a. With n(r) from upper-chain_ie4d.py: (DIA-B) predicts n(r) <= m for all r. Fail if n(r) exceeds m by more than 3 sigma at any r, which would refute (DIA-B) at that boundary. r^4 (m - n(r)) for r = 3, 4, 6, 8 is expected bounded; report it. T = 12 finite-size shift of e is about 1.8e-5 by the mode count, to be included in the error.

@@ -158,37 +158,62 @@ class Block:
         idx = tuple(sites[i] % self.n for i in range(self.d))
         return U[idx + (mu,)]
 
+    def _setup(self):
+        d = self.d
+        no = len(self.offs)
+        self.i0 = self.index[tuple([0] * d)]
+        groups = {}
+        for o, p, ax, s in self.sequence:
+            groups.setdefault(self._stage(o) + (ax, s), []).append((o, p))
+        self.groups = []
+        for (st, dist, ax, s), items in sorted(groups.items()):
+            io = torch.tensor([self.index[o] for o, _ in items])
+            ip = torch.tensor([self.index[p] for _, p in items])
+            pv = torch.tensor([p for _, p in items]).T  # d x ng
+            self.groups.append((io, ip, pv, ax, s))
+        self.offt = torch.tensor(self.offs).T  # d x no
+
     def __call__(self, U):
         d, L, Np = self.d, self.L, self.Np
+        if not hasattr(self, "groups"):
+            self._setup()
         m = Np**d
-        G = [None] * len(self.offs)
-        G[self.index[tuple([0] * d)]] = ident((m,))
-        for o, p, ax, s in self.sequence:
-            sites = self.base + torch.tensor(p).reshape(d, 1)
-            if s > 0:
-                step = self.link(U, sites, ax)
-            else:
-                sites2 = sites.clone()
-                sites2[ax] -= 1
-                step = qinv(self.link(U, sites2, ax))
-            G[self.index[o]] = qmul(G[self.index[p]], step)
-        G = torch.stack(G, 1).reshape((Np,) * d + (len(self.offs), 4))
+        no = len(self.offs)
+        n = self.n
+        known = {self.i0: ident((m,))}
+        G_vals = [ident((m, 1))]
+        G_idx = [torch.tensor([self.i0])]
+        pos = {self.i0: (0, 0)}
+        for io, ip, pv, ax, s in self.groups:
+            sites = self.base[:, :, None] + pv[:, None, :]  # d x m x ng
+            if s < 0:
+                sites = sites.clone()
+                sites[ax] -= 1
+            step = U[tuple(sites[i] % n for i in range(d)) + (ax,)]
+            if s < 0:
+                step = qinv(step)
+            par = torch.stack([G_vals[pos[int(i)][0]][:, pos[int(i)][1]] for i in ip], 1)
+            val = qmul(par, step)
+            gi = len(G_vals)
+            G_vals.append(val)
+            G_idx.append(io)
+            for t, i in enumerate(io):
+                pos[int(i)] = (gi, t)
+        G = torch.cat(G_vals, 1)
+        order = torch.argsort(torch.cat(G_idx))
+        G = G[:, order].reshape((Np,) * d + (no, 4))
+        sites0 = self.base[:, :, None] + self.offt[:, None, :]
         out = []
         for mu in range(d):
-            lines = []
-            for io, o in enumerate(self.offs):
-                sites = self.base + torch.tensor(o).reshape(d, 1)
-                ln = self.link(U, sites, mu)
-                for t in range(1, L):
-                    sites2 = sites.clone()
-                    sites2[mu] += t
-                    ln = qmul(ln, self.link(U, sites2, mu))
-                lines.append(ln)
-            lines = torch.stack(lines, 1).reshape((Np,) * d + (len(self.offs), 4))
+            ln = U[tuple(sites0[i] % n for i in range(d)) + (mu,)]
+            for t in range(1, L):
+                sites = sites0.clone()
+                sites[mu] += t
+                ln = qmul(ln, U[tuple(sites[i] % n for i in range(d)) + (mu,)])
+            lines = ln.reshape((Np,) * d + (no, 4))
             Gp = torch.roll(G, -1, dims=mu)
             Om = qmul(qmul(G, lines), qinv(Gp))
-            i0 = self.index[tuple([0] * d)]
-            O0 = Om[..., i0, :]
+            O0 = Om[..., self.i0, :]
             v = qlog(qmul(Om, qinv(O0)[..., None, :]))
             A = v.mean(-2)
             out.append(qmul(qexp(A), O0))

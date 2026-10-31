@@ -1,6 +1,6 @@
 # The class and the energy excess
 
-Producer: `parts/hard-core--mapped.md`, Text 5. Status: the Excess Lemma is proved given the five inputs listed, each a named obligation in the producer. Not reviewed.
+Producer: `parts/hard-core--mapped.md`, Text 5. Status: the Excess Lemma is proved given the five inputs listed. Not reviewed. The closure bound in the producer (Prop R1, Text 5.2) no longer uses this lemma: it uses additivity of the classical energy and Jensen, which removes `Relative chart` and `Shift bound`. This note is kept for the arithmetic of the thresholds T_c, T_f, K_0, the leaf `Cut and Poincare`, and the failure log.
 
 Credit: constrained minimal configurations are Balaban's (CMP 102). The argument below, expansion at the reference on the exterior with the hole's own energy kept separately, is mine. It does not use the account.
 
@@ -12,17 +12,17 @@ Levels k and k+1. theta_p: the angle of a level-k plaquette. flux_c := max |thet
 
 a_* = a_*(d,L) is the threshold of Theorem 5 of `library/block-poincare-energy-package.md`, for R(a) in level-(k+1) units. Shrink it if necessary so that a_* <= varpi/L^2. Absolute constants c_b, c_s, C_r, C_I, C_n appear in the inputs. Put
 
-    K_0^2 := 40 C_n C_I c_s L^{3/2} / c_b,    T_c := a_*/L^2,    T_f := L^2 T_c/(C_r K_0) = a_*/(C_r K_0).
+    K_0^2 := 40 C_n C_I c_s L^{3/2} / c_b,    T_c := a_*/L^2,    T_f := L T_c/(C_r K_0) = a_*/(C_r K_0 L).
 
 For L large, T_c < T_f. Then x_k is taken large.
 
 **Sets.** D_k := { flux_c <= T_f for all c }: where the formula -log rho_k = x_k A_k + vac_k + R_k is claimed. C_k := { flux_c <= T_c for all c }: where the fibre integral is uniformly convex.
 
-**The reference.** For V' in D_{k+1}, U* = U_{k+1}(V') and V* = M^k(U*). By `Regularity`, flux_c(V*) <= C_r L^-2 T_f = T_c/K_0, and the energy of U* per level-k cell is at most c_s C_r^2 L^-4 T_f^2 = (c_s/K_0^2) T_c^2.
+**The reference.** For V' in D_{k+1}, U* = U_{k+1}(V') and V* = M^k(U*). By `Regularity`, flux_c(V*) <= C_r L^-1 T_f = T_c/K_0, and the energy of U* per level-k cell is at most c_s (T_c/K_0)^2. (Corrected: this note first used L^-2, which I have not proved. The proved bound is L^-1, from an L^4 estimate, producer Text 5.3, item (R3). It is enough, since T_f = L T_c/(C_r K_0) ~ L^{1/4} T_c.)
 
 **Inputs.**
 
-- `Regularity`: for V in D_k the minimiser U_k(V) exists, is unique among fields with small relative field, and has fine curvature at most C_r flux(V) in level-k units. Also flux_c(M^k(U_{k+1}(V'))) <= C_r L^-2 flux(V').
+- `Regularity`: for V in D_k the minimiser U_k(V) exists, is unique among fields with small relative field, and has fine curvature at most C_r flux(V) in level-k units. Also flux_c(M^k(U_{k+1}(V'))) <= C_r L^-1 flux(V').
 - `Cut and Poincare`: for a set Y of level-k cells in a box with |Y| < L^3/10, there is Y-hat containing Y with |Y-hat| <= C_I |Y|^{3/2}, such that the box minus Y-hat is simply connected, and a field H on it whose block average restricted to lines avoiding Y-hat is f obeys ||H||^2 <= C_P' (||grad H||^2 + ||f||^2) in level-(k+1) units. Route: fill pockets, and span each 2-cycle of Y by a 3-chain, by the Federer-Fleming isoperimetric inequality; then prune sets of small boundary, using the isoperimetric inequality for the cell graph of Z^4. Frozen leaf. The cut is needed: inside a box the block data do not constrain loops linking an annular Y, so U and U* can differ there by a holonomy.
 - `Relative chart`: if U, U* have the same block data at level k+1 and small loops, there is a gauge on the complement of the Y-hat's and of W in which U = e^{i eta H} U*, with D*_{U*} H = 0 and sup |eta H| small. At the box scale no holonomy can appear, because the block data of U and U* coincide; inside a box the cut removes it.
 - `Shift bound`: the block average of H over lines meeting Y-hat, paired with lambda, is at most (c_b/32) sum_Y flux_c^2. Reason: a line through Y carries H of size at most C flux_c on one cell, and a line through the membrane carries the jump of H, which is a holonomy alpha around Y with alpha^2 <= w^2 sum_disc flux^2, w^2 the number of plaquettes of Y on a spanning disc. Fractions of lines are L^-3 per cell. For an annulus of size r and thickness w this gives T_f L^-3 r^3 w alpha, against cost f^2 r^2 w^2 with alpha <= f w^2, so a ratio at most (T_f/T_c) r L^-3 <= C L^-3/4 for r <= L. General shapes: frozen with the previous leaf.

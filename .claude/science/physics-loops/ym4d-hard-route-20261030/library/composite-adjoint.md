@@ -11,7 +11,7 @@ with C absolute, for a_* = L^2 T <= c L^-2, where P^{(n)}_U is the composite of 
 
 **Why it matters.** With (AD) the fixed point of Text 5.5 closes with absolute constants, since L^2 flux' <= C a_*.
 
-**The power is sharp for a comb.** In d = 4 a sheet of flux f on the ladder over the first stage of the comb, L x L plaquettes in one block, has E = L^(1/2) f, and |v_x| about f L^2 for about half of all x, so the residual on the L bonds of the axis gives L^(1/2) f L^2 |lambda| = L^2 E |lambda|. So L^2 cannot be lowered by this method for such data. At the lift such data do not occur, as (R3) bounds ||F||_{L^4}. Averaging over the orders of the axes changes only constants.
+**Is the power sharp? Withdrawn (2026-10-31).** I had written that the power L^2 is sharp for a comb, from a sheet of flux f on the ladder over the first stage, L x L plaquettes in one block, with E = L^(1/2) f and |v_x| about f L^2 for half of all x. *That sheet does not exist.* Flux on one plane is not closed. The Bianchi identity forces return flux on the neighbouring planes, of size f L at the sheet's edge, which raises E by a factor L. The search in d = 4 below, on closed fields only, finds a best ratio ||Res||_{l^2} / (L^2 E) falling like L^-0.47, and the sheet itself falls much faster. So on this evidence the true power is about L^(3/2), and Lemma AD1 has room. I do not have a proof of the better power, and nothing reads it.
 
 ## Lemma AD1: one level
 
@@ -131,3 +131,15 @@ Sum over j: geometric, the top level dominating, at most 2 C L^2 ||F||_{L^4} |la
 - R := ||Res|| / (L^2 max_B E(B)): random 0.025, 0.011, 0.007, 0.004; strip, with flux next to the comb's axis, 0.052, 0.021, 0.012, 0.008; far 0.044, 0.025, 0.015, 0.010; smooth 0.100, 0.084, 0.075, 0.070, at L = 3, 5, 7, 9. All at most 0.1 against the bound 1 stated. The concentrated kinds decay with L in d = 2, as expected, since the case that saturates L^2 needs d = 4. Smooth fields are the largest and nearly level.
 
 Limits: d = 2, one level, Cartan. d = 4 has not been run on this lemma.
+
+## An adversarial search in d = 4
+
+`checks/hard-core--mapped_adjoint_d4.py`, criteria written first. One level, first order in the flux, Cartan background, axis-ordered contours. To this order the residual is explicit and linear,
+
+    Res_b = (i/2) avg_x (A - v_x) w_x(b),   A := avg_x v_x,
+
+with v_x the loop angle of x relative to the centre, and w_x the signed indicator of the contour from y to x, the line, and the contour from y' to x', all forward. (Own derivation from the exact formula of Lemma 3.9. It says the residual is the variance of the loop angle over lines, read on the paths.) The control against the true map, by a difference in a fine bond at background amplitude 1e-4, agrees on 30 bonds to 7e-15, against a size 5e-6.
+
+Over closed fields, by gradient ascent on ||T a||_2 / (L^2 ||d a||_4) from four seeds, for mu = 0, 1, 3: Rmax = 0.0846, 0.0638, 0.0542, 0.0466 at L = 3, 5, 7, 9, a fitted power -0.53 over L = 5, 7, 9. With five times as many steps: 0.0846, 0.0638, 0.0543, 0.0484, power -0.47, so the optimiser is nearly converged. PASS, on the stated criterion of a power at most 0.25, run once at each length. Constant flux gives 0.043, 0.029, 0.023, 0.020, and the single sheet 0.007, 0.0013, 0.0004, 0.0002. The optimiser's flux is spread: its participation is about a quarter of all plaquettes.
+
+Limits: one level, first order, Cartan, one contour per point, a non-convex search, so a lower bound on the supremum.

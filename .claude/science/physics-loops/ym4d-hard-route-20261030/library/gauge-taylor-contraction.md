@@ -88,7 +88,7 @@ Here H is the class response in the gauge P_r D^* H = 0, in a strip. Its transve
 
     c_{k+1}^(n) <= C (log L)^2 L^-2 c_k^(n) + C_n(L) sum_{m < n} c_k^(m) + source.
 
-*Hostile.* (a) The strip of Z_k read at q/L has width rho/L in level-k units, which is within Z_k's own strip, since it has rate at least rho in level-k units by the same statement one level down. (b) The source: its F^2 coefficient is extracted first, and it is the source of beta^0 by Theorem P1; the rest is bounded by C_n(L) in the strip, by Lemma HS-T. (c) The slow tier of R: Schwarz in a narrower strip with a tiny coefficient, Lemma HS-T. (d) I checked only n = 2 numerically.
+*Hostile.* (a) The strip of Z_k read at q/L has width rho/L in level-k units, which is within Z_k's own strip, since it has rate at least rho in level-k units by the same statement one level down. (b) The source: its F^2 coefficient is extracted first, and it is the source of beta^0 by Theorem P1; the rest is bounded by C_n(L) in the strip, by Lemma HS-T. (c) The slow tier of R: not a Schwarz bound in a fixed narrower strip, which would lose a power of L per level. See `library/one-step-closure.md`: a polynomial transfer lets (T1) apply to the near part of the kernel, and an old slow tier joins the near part after boundedly many levels. (d) I checked only n = 2 numerically.
 
 ## Lemma 3 (low orders at a rough field). Derived, given (Loc).
 

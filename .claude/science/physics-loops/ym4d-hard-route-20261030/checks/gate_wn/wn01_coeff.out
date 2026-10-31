@@ -1,0 +1,14 @@
+A1 |T-2v.vxv| worst 4.44e-16; |T-psi^3/4|/|psi|^5 worst 0.012  PASS
+A3 worst rel change K_total 2.48e-15; min move of K_comp 0.164; simultaneous 1.17e-12 PASS
+A2 T=8: K_comp 0.39689 K_vert 0.21842 K_total 0.61531 (claimed (0.39689, 0.21842, 0.61531)) 0.0s ok
+A2 T=16: K_comp 0.39686 K_vert 0.21881 K_total 0.61568 (claimed (0.39686, 0.21881, 0.61568)) 0.0s ok
+A2 T=24: K_comp 0.39686 K_vert 0.21884 K_total 0.61570 (claimed (0.39686, 0.21884, 0.6157)) 0.2s ok
+A2 T=32: K_comp 0.39686 K_vert 0.21884 K_total 0.61570 (claimed (0.39686, 0.21884, 0.6157)) 0.7s ok
+A2 PASS
+A5 d=2 T=16: K_comp -0.16163 K_vert 0.11146 K_total -0.050171
+A5 d=2 T=32: K_comp -0.15027 K_vert 0.13835 K_total -0.011925
+A5 d=2 T=64: K_comp -0.14849 K_vert 0.14554 K_total -0.002943
+A5 ratios 4.21 4.05, PASS
+A4 box n=2 d=3 dof=15: formula K_comp -0.000000 K_vert 2.000000 total 2.000000; min-tree h=.04 2.003922 h=.02 2.000978 Rich 1.999997; rel diff 1.4e-06 PASS (2s)
+A4 box n=2 d=4 dof=51: formula K_comp -0.000000 K_vert 1.351563 total 1.351563; min-tree h=.04 1.353106 h=.02 1.351948 Rich 1.351562; rel diff 4.4e-07 PASS (10s)
+exit 0

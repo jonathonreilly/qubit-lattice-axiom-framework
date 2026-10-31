@@ -1,0 +1,11 @@
+R1 sym=True: LHS -87.8440041706 RHS -87.8440041706 resid/scale 2.00e-16; incr spread 5.55e-17; -24Flux -9.579699 farA -0.326230 tail -77.938075
+R1 sym=False: LHS 0.0074062387 RHS 0.0074062387 resid/scale 7.91e-15; incr spread 1.39e-17; -24Flux 0.007406 farA -0.000000 tail -0.000000
+T=40 D=3 P_k 2.262049e-03 (claimed 2.262e-3 at D=3 for large T); all equal spread 6.5e-18
+R3 R=6: Stk_comp -1.6195e-02 -24Flux -1.6195e-02 Stk_total 7.8472e-03 ratio 0.485; continuum axis -24Flux -1.689e-02 ratio 0.959 ok
+R3 R=8: Stk_comp -5.2420e-03 -24Flux -5.2420e-03 Stk_total 1.8830e-03 ratio 0.359; continuum axis -24Flux -5.343e-03 ratio 0.981 ok
+R3 R=12: Stk_comp -1.0369e-03 -24Flux -1.0369e-03 Stk_total 2.2665e-04 ratio 0.219; continuum axis -24Flux -1.055e-03 ratio 0.982 ok
+R3 R=16: Stk_comp -3.5077e-04 -24Flux -3.5077e-04 Stk_total 4.6283e-05 ratio 0.132; continuum axis -24Flux -3.339e-04 ratio 1.050 ok
+R4 slope R=6->8: Stk_total -4.96, Flux -3.92
+R4 slope R=8->12: Stk_total -5.22, Flux -4.00
+R4 slope R=12->16: Stk_total -5.52, Flux -3.77
+exit 0

@@ -1,0 +1,30 @@
+P_k [np.float64(0.06886731454137199), np.float64(0.06886731454137199), np.float64(0.06886731454137199), np.float64(0.06886731454137199)]
+far plaquettes 16
+Stk_total / -24Flux at first far: -0.0005664259633990992 -0.0005930043478479406
+orbit rep (4, 1, 10, 6): linear system rank 4, residual 4.34e-19, K_vert scale 5.51e-04, |chi| 2.21e-06
+   A targets [ 8.34456845e-06  4.54221203e-05 -1.88353719e-05 -3.50838486e-05], solve residual 2.24e-16, |theta| 8.736e-03
+orbit rep (5, 2, 4, 8): linear system rank 4, residual 1.83e-19, K_vert scale 2.44e-04, |chi| 1.02e-06
+   A targets [-9.35205393e-06 -1.81831947e-05  3.72529096e-06  2.01436193e-05], solve residual 3.36e-16, |theta| 4.092e-03
+orbit rep (6, 0, 8, 11): linear system rank 4, residual 2.98e-19, K_vert scale 1.52e-04, |chi| 5.89e-07
+   A targets [-1.04744920e-05  1.71743563e-06  1.25404612e-05 -4.56392342e-06], solve residual 7.60e-16, |theta| 4.098e-03
+orbit rep (1, 5, 3, 4): linear system rank 4, residual 3.93e-19, K_vert scale 1.55e-04, |chi| 7.60e-07
+   A targets [ 9.16278885e-06 -1.06745960e-05 -9.26476943e-06  1.28135833e-05], solve residual 2.64e-16, |theta| 4.642e-03
+smallest eigenvalue of M 0.3821731274315866
+max |c' J_k - (G J_k + grad theta_k)|: 1.734723475976807e-18
+B1 worst |K_comp^(k)[c'] - K_total^(k)| over family = 2.364e-17; scale of K values 7.816e-04; rel 3.02e-14
+   for comparison Feynman |K_comp - K_total| max = 5.508e-04
+   far (4, 1, 10, 6): sum K_comp[c']/P_k -5.66426e-04; Wilson Stk -5.66426e-04; -24 Flux -5.93004e-04
+   far (5, 2, 4, 8): sum K_comp[c']/P_k 8.48867e-06; Wilson Stk 8.48867e-06; -24 Flux -6.30364e-04
+   far (6, 0, 8, 11): sum K_comp[c']/P_k -4.52899e-05; Wilson Stk -4.52899e-05; -24 Flux -1.81294e-04
+   far (1, 5, 3, 4): sum K_comp[c']/P_k -1.73658e-04; Wilson Stk -1.73658e-04; -24 Flux 1.81286e-04
+   pair values: max |<J', c' J> - <J', G J>| = 8.67e-19
+   rotation invariance: max |rho c' J - c' rho J| = 3.33e-16 (norm 9.83e-01)
+   link variance at ((4, 1, 10, 6), 2): 0.1546 (Feynman 0.1544)
+   link variance at ((0, 0, 7, 7), 2): 0.1544 (Feynman 0.1544)
+   link variance at ((0, 0, 7, 7), 0): 0.1544 (Feynman 0.1544)
+   link variance at ((1, 1, 7, 7), 3): 0.1544 (Feynman 0.1544)
+   (B) norm^2 near-plaquette k=0: Feynman 0.0772, c' 0.0801
+   (B) norm^2 near-plaquette k=1: Feynman 0.0772, c' 0.0816
+   (B) norm^2 near-plaquette k=2: Feynman 0.0772, c' 0.0794
+   (B) norm^2 near-plaquette k=3: Feynman 0.0772, c' 0.0813
+exit 0

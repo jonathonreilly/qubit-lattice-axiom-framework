@@ -15,11 +15,12 @@ import numpy as np
 
 def kernel(T, m, n, r, s):
     k = 2 * np.pi * np.fft.fftfreq(T)
-    K = np.meshgrid(k, k, k, k, indexing="ij")
-    d = [np.exp(1j * c) - 1 for c in K]
+    d1 = np.exp(1j * k) - 1
+    shapes = [(T, 1, 1, 1), (1, T, 1, 1), (1, 1, T, 1), (1, 1, 1, T)]
+    d = [d1.reshape(sh) for sh in shapes]
     khat2 = sum(np.abs(c) ** 2 for c in d)
     khat2[0, 0, 0, 0] = 1.0
-    out = np.zeros((T, T, T, T), dtype=complex)
+    out = np.zeros((T, T, T, T), dtype=np.complex128)
     if n == s:
         out += d[m] * np.conj(d[r])
     if n == r:
@@ -29,6 +30,7 @@ def kernel(T, m, n, r, s):
     if m == r:
         out += d[n] * np.conj(d[s])
     out /= khat2
+    del khat2
     out[0, 0, 0, 0] = 0.0
     return np.fft.ifftn(out).real
 
@@ -43,6 +45,15 @@ def tensor(x, m, n, r, s):
 
 
 def main(T):
+    if T >= 64:
+        # W1' only, to stay under the memory cap
+        P12 = kernel(T, 0, 1, 0, 1)
+        for d in (3, 4, 5, 6):
+            x = (d, d, 2 * d, 2 * d)
+            print(f"T={T} d={d} offset {x}: P = {P12[x]:.4e}, prediction {tensor(x, 0, 1, 0, 1):.4e}, ratio {P12[x]/tensor(x, 0, 1, 0, 1):.4f}", flush=True)
+        print("RSS GB", resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1e9)
+        print("W4 result:", clover_check(), flush=True)
+        return
     P12 = kernel(T, 0, 1, 0, 1)
     P13 = kernel(T, 0, 1, 0, 2)
     print(f"P_pp(1,2) = {P12[0,0,0,0]:.6f}")
@@ -65,8 +76,49 @@ def main(T):
     par, ort = P12[x], P13[x]
     print(f"offset {x}: parallel {par:.4e}, (1,2),(1,3) {ort:.4e}, prediction {tensor(x,0,1,0,2):.4e}, parallel prediction {tensor(x,0,1,0,1):.4e}")
     ok2 = abs(par) <= 0.1 * abs(ort)
+    ok4 = clover_check()
     print("RSS GB", resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1e9)
-    print("RESULT", "W1", "PASS" if ok1 else "FAIL", "W2", "PASS" if ok2 else "FAIL", "W3", "PASS" if ok3 else "FAIL")
+    print("RESULT", "W1", "PASS" if ok1 else "FAIL", "W2", "PASS" if ok2 else "FAIL", "W3", "PASS" if ok3 else "FAIL", "W4", "PASS" if ok4 else "FAIL")
+
+
+def clover_check():
+    """W4: beta^2 C_e(y) on T = 6 against (1/16)(3/2) sum P_pq^2 over the 24 x 24 plaquette pairs."""
+    T = 6
+    planes = [(0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 3)]
+    ker = {(a, b): kernel(T, *a, *b) for a in planes for b in planes}
+
+    def corners(m, n):
+        out = []
+        for i in (0, 1):
+            for j in (0, 1):
+                v = [0, 0, 0, 0]
+                v[m] -= i
+                v[n] -= j
+                out.append(tuple(v))
+        return out
+
+    def G(y):
+        tot = 0.0
+        for a in planes:
+            for b in planes:
+                for bp in corners(*a):
+                    for bq in corners(*b):
+                        x = tuple((bp[i] - y[i] - bq[i]) % T for i in range(4))
+                        tot += ker[(a, b)][x] ** 2
+        return tot * 1.5 / 16
+
+    mc = {
+        "e1": ((1, 0, 0, 0), {4.0: 1.619e-2, 8.0: 3.827e-3}),
+        "e1+e2": ((1, 1, 0, 0), {4.0: 4.135e-3, 8.0: 9.525e-4}),
+    }
+    ok = True
+    for name, (y, vals) in mc.items():
+        g = G(y)
+        r8 = 64 * vals[8.0] / g
+        r4 = 16 * vals[4.0] / g
+        print(f"W4 {name}: Gaussian {g:.5f}, beta^2 C_e / Gaussian = {r4:.4f} at beta=4, {r8:.4f} at beta=8")
+        ok = ok and abs(r8 - 1) < 0.15 and abs(r8 - 1) < abs(r4 - 1)
+    return ok
 
 
 if __name__ == "__main__":

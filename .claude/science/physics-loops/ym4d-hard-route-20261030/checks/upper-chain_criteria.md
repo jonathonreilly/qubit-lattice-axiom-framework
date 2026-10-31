@@ -100,3 +100,29 @@ Theorem 10.7 uses P_pq at offset (d, d, 2d, 2d) for parallel (1,2) plaquettes, p
 - W1. For d = 3, 4, 5, 6: P_pq has the predicted sign, and P_pq / prediction is within 25% of 1 at d = 6, and closer to 1 at d = 6 than at d = 3. Fail otherwise: the choice of pair in Theorem 10.7 has to change.
 - W2. Parallel (1,2) pair at offset (d,d,d,d): |P_pq| at d = 6 is at most one tenth of the value of the (1,2),(1,3) pair at that offset, which is predicted -1/(2 pi^2 x^4). Fail otherwise: my tensor is wrong.
 - W3. Sum rule: sum over q of P_pq^2 = P_pp, up to 1e-6, and P_pp = (1/2)(1 - T^-4)-type within 1e-3. Fail means the script is wrong.
+- W4 (added before running the script). Normalization of Theorem 10.7 at level 0, against existing data. In `sign.out` (T = 6, Monte Carlo): beta^2 C_e(e1) = 0.259 at beta = 4, 0.245 at beta = 8; beta^2 C_e(e1+e2) = 0.0662, 0.0610. Prediction: (1/16)(3/2) sum P_pq^2 over the 24 x 24 plaquette pairs, with P on T = 6. Pass if the ratio is within 15% of 1 at beta = 8 and closer to 1 than at beta = 4, for both offsets. Fail means the constant (3/2) P^2 is wrong for this field, or the zero modes on T = 6 matter more than I assume.
+
+## upper-chain_dia_lap.py: exact (DIA-B) at order 1/beta (written before running)
+
+Fact used (derived in Text 15). For a closed cube with boundary data xi and a plaquette q with zero curvature at the minimiser V^*, as beta -> infinity at fixed xi, E[s_q | xi] = (1/beta) (1/2) Tr(Q_q G) + O(beta^-2), with Q_q the Hessian of s_q and G the pseudo-inverse of H = sum_q Q_q at V^*. Laplace on a finite-dimensional integral, so this is rigorous when V^* is the unique minimiser up to gauge. And sum_q Tr(Q_q G) = rank H exactly. So delta_q := (1/2)(Tr(Q_q G)_xi - Tr(Q_q G)_cold) has zero sum over q. If delta_q < 0 at a q with zero curvature, then (DIA-B) is false at that q for all large beta.
+
+Model: 4D cube of half-side r = 2, 432 free links, boundary xi = exp(i eps eta), with eta chosen so that the linear curvature vanishes on the target. Target T1: the plaquette (0; 0, 1) at the centre. Target T2: the 24 plaquettes at the centre site, weights 1/4 (the field e_a). D(eta) := delta / eps^2, a quadratic form in eta as eps -> 0.
+
+- L0 (script sanity). Hessian against finite differences within 1e-5 on a random configuration. Zero sum of delta_q over all q below 1e-8. Rank of H equal to 3 (432 - 81). A failure means the script is wrong; no conclusion is drawn.
+- L1. Rayleigh-Ritz of D for T1 on 24 random directions, one colour (abelian background), and 12 directions with all colours. Report lambda_min. If lambda_min < -3 tol, with tol the change of D between eps = 0.03 and eps = 0.015 on the worst direction: plaquette-level (DIA-B) is false at large beta.
+- L2. The same for T2. If lambda_min < -3 tol: (DIA-B) for the field e_a is false at large beta.
+- L3 (only if L1 or L2 finds a negative direction). Check at finite beta by Monte Carlo, with a separate criterion written then.
+- If no negative direction appears, this is evidence only: the search is on random subspaces.
+
+## Added after W1 missed (before computing the following)
+
+Raw results at T = 48: ratio to the prediction 0.963, 0.956, 0.928, 0.886 at d = 3, 4, 5, 6. W1 failed as written: the ratio at d = 6 is within 25% but is farther from 1 than at d = 3. W2, W3 passed. W4 did not run: the job had started before the edit. Suspect for W1: periodic images, since the offset at d = 6 has components 12 of T = 48.
+
+- W1'. T = 64, same offsets. Pass if at d = 4, 5, 6 the ratio is closer to 1 than at T = 48. Fail otherwise: then the deviation is not from images, and the tensor in Theorem 10.7 needs a second look.
+- W4 as registered above, run now, at T = 6.
+
+## Extended search, upper-chain_dia_lap.py (before running)
+
+Raw results of L1, L2 on 24 + 12 random directions: all eigenvalues of D positive (T1: lambda_min 2.9e-6, T2: 3.9e-5), tol below 3e-7. So no violation in random subspaces. Random directions may miss a direction concentrated next to the target.
+
+- L1', L2'. Rayleigh-Ritz on a structured basis of 80 directions, one colour: the top right singular vectors, within the null space of the target, of the linear curvature restricted to plaquettes sharing a link with the target. If lambda_min < -3 tol, the corresponding (DIA-B) is false at large beta. Otherwise this remains evidence only.

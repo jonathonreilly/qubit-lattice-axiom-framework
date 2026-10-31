@@ -79,3 +79,8 @@ it 100 f=0.0436 E=7.2554e-03 I/E=10.4045 I/(fE)=238.420 e/I=0.1818 C_eff=-31.581
 it 110 f=0.0436 E=7.2531e-03 I/E=10.4042 I/(fE)=238.457 e/I=0.1818 C_eff=-31.5852 best=-28.9368 g,r=8e-11,5e-11 t=566
 it 120 f=0.0436 E=7.2510e-03 I/E=10.4039 I/(fE)=238.488 e/I=0.1818 C_eff=-31.5881 best=-28.9368 g,r=8e-11,5e-11 t=605
 BEST 2 3 0.03 1 modes -28.936769557804993 t 605.3163661956787 rss 0.3066864013671875
+/Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/checks/gate_ex/x_adv.py:70: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:837.)
+  J0 = float(J)
+it 0 f=0.3370 E=3.9390e+00 I/E=12.8458 I/(fE)=38.117 e/I=0.2872 C_eff=-9.0663 best=-9.0663 g,r=2e-09,5e-09 t=52
+it 10 f=0.0458 E=9.1591e-03 I/E=9.4501 I/(fE)=206.200 e/I=0.1817 C_eff=-27.2810 best=-9.0663 g,r=2e-10,4e-10 t=161

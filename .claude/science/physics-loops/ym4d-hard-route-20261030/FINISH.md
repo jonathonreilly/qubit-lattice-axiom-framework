@@ -8,7 +8,7 @@ Written by the target lead on 2026-10-31. `GOAL.md` holds the target and the def
 
 | File | gap | unchecked | implication | Last read from outside |
 |---|---|---|---|---|
-| `parts/hard-core--independent.md` | 1 | 1 | 29 | Never, by anyone outside its lineage |
+| `parts/hard-core--independent.md` | 1 | 1 | 29 | Gate at `16ca92dd7`: the large-field sector and abelian core read as sound, the rough-set step is wrong as written, and the sector at complex W is not closed; counts here predate it |
 | `parts/hard-core--mapped.md` | 3 | 0 | 58 | Gate at `3b7fd4e57`, which found Theorem Z wrong as written; the repair is ungated |
 | `parts/upper-chain.md` | 6 | 1 | 19 | Gates at `c3242879df`, before its fourth form |
 | `parts/witness.md` | 5 | 3 | 10 | Gate at `3b7fd4e57`, which changed the definition of NT2 |
@@ -70,7 +70,7 @@ To share, run `git pull --rebase origin claude/ym4d-hard-route && git push origi
 
 ## Working efficiently
 
-Measured on the pushes so far: a resumed push carries about 300,000 to 580,000 tokens of context on every step, and 70 to 90 percent of its active time is the model generating text. A fresh, narrow session avoids most of that.
+Measured on the pushes so far: a resumed push carries about 300,000 to 580,000 tokens of context on every step, and 70 to 90 percent of its active time is the model generating text. A fresh, narrow session avoids most of that: the first fresh gate wrote 195,000 tokens for about $8 at API rates, where a resumed push wrote 202,000 for about $219.
 
 - **One item, one session.** Stop when the item is done. Do not continue into the next item or tidy up other files.
 - **Do not read whole files.** Part files are 145 to 350 KB, and the folder holds about 1.6 MB of text. Find the statement with `grep -n`, then read the statement, its proof and what it cites.
@@ -82,7 +82,7 @@ Measured on the pushes so far: a resumed push carries about 300,000 to 580,000 t
 ## Rules
 
 - **Write only** your output file, `library/` for a new lemma, and your `checks/` folder. Evidence for another file's owner goes in your report, and the lead forwards it, respecting the firewall above.
-- **Gate reports** open with provenance: model, effort, commit, and that a same-model check is not independent in model and is not an audit. Then a verdict table of ADVANCE, CORRECT-NO-ADVANCE or WRONG per statement, then numbered defects with the concrete failure. Verdicts steer research and grant no status. See `gates/theorem-z-3b7fd4e57.md` for the form.
+- **Gate reports** open with provenance: model, effort, commit, and that a same-model check is not independent in model and is not an audit. Then a verdict table per statement, then numbered defects with the concrete failure, then what was and was not read. ADVANCE: the proof stands at the level of its steps, and any defect is local with a repair in hand. CORRECT-NO-ADVANCE: no counterexample to the conclusion, but a step fails as written or the statement adds nothing yet, so nothing downstream may rest on it. WRONG: false as written. Verdicts steer research and grant no status.
 - **Label honestly**: gap, unchecked, implication, discharged. A step recalled from memory but not proved is a gap. A truthful gap is never penalized.
 - **Literature.** Use open sources for method, and rebuild any lemma you need in `library/` with credit. Stop at a bot check, sign-in or paywall. Never pay for anything, never commit a PDF, and do not paste long passages.
 - **Numerics.** One job per machine, under `python3 scripts/lab_ops.py numeric-lock`. Confirm the acquire succeeded before running, and do not pipe it through `tail`. Set BLAS threads to 1, use `nice`, and have the script stop itself above 2 GB RSS. On the Mac mini, start a numeric job only at 50 percent memory free or more, and never use a process pool.

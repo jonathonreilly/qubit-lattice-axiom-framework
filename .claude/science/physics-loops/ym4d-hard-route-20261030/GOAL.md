@@ -24,7 +24,7 @@ Later targets, not on this critical path: O(4) invariance, N >= 3, and the mass 
 
 ## Pace
 
-Owner's decision, 2026-10-31: usage must last the full week on each account. The two hard-core attempts run one at a time, alternating, with a rest after each cycle, and the rest follows measured usage. A second worker on the Mac mini takes the queue in `FINISH.md`, one fresh session per item, paced the same way on its own account. `parts/upper-chain.md` and `parts/witness.md` are parked at their last checkpoints, with nothing of theirs unpushed; their next tasks are queue items in `FINISH.md`.
+Owner's decision, 2026-10-31: usage must last the full week on each account. The two hard-core attempts run one at a time, alternating, with a rest after each cycle, and the rest follows measured usage. Each cycle is a fresh session restarted from the attempt's own file, so that file's state of attack has to carry everything the next session needs. A second worker on the Mac mini takes the queue in `FINISH.md`, one fresh session per item, paced the same way on its own account. `parts/upper-chain.md` and `parts/witness.md` are parked at their last checkpoints, with nothing of theirs unpushed; their next tasks are queue items in `FINISH.md`.
 
 **Workers start at `FINISH.md`.**
 

@@ -1,0 +1,35 @@
+/Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/checks/gate_ex/x_adv.py:70: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:837.)
+  J0 = float(J)
+it 0 f=0.0805 E=1.9465e-02 I/E=0.3221 I/(fE)=3.999 e/I=0.2305 C_eff=-0.7242 best=-0.7242 g,r=9e-12,9e-12 t=0
+it 10 f=0.0800 E=9.1292e-03 I/E=0.2778 I/(fE)=3.472 e/I=0.1944 C_eff=-0.5033 best=-0.5033 g,r=6e-12,9e-12 t=10
+it 20 f=0.0800 E=6.5930e-03 I/E=0.3126 I/(fE)=3.910 e/I=0.1557 C_eff=-0.4156 best=-0.4156 g,r=1e-11,3e-11 t=43
+it 30 f=0.0800 E=8.5897e-03 I/E=0.3601 I/(fE)=4.503 e/I=0.1394 C_eff=-0.4055 best=-0.4049 g,r=1e-12,8e-12 t=53
+it 40 f=0.0800 E=9.5703e-03 I/E=0.3778 I/(fE)=4.724 e/I=0.1343 C_eff=-0.4013 best=-0.4013 g,r=4e-12,2e-11 t=63
+it 50 f=0.0800 E=9.7400e-03 I/E=0.3818 I/(fE)=4.774 e/I=0.1335 C_eff=-0.4016 best=-0.4013 g,r=8e-12,4e-11 t=73
+it 60 f=0.0800 E=9.8215e-03 I/E=0.3841 I/(fE)=4.802 e/I=0.1331 C_eff=-0.4019 best=-0.4013 g,r=9e-12,6e-11 t=82
+it 70 f=0.0800 E=9.8770e-03 I/E=0.3854 I/(fE)=4.817 e/I=0.1329 C_eff=-0.4023 best=-0.4013 g,r=7e-12,3e-11 t=92
+it 80 f=0.0800 E=9.9244e-03 I/E=0.3859 I/(fE)=4.824 e/I=0.1330 C_eff=-0.4031 best=-0.4013 g,r=2e-11,7e-11 t=102
+it 90 f=0.0800 E=9.9885e-03 I/E=0.3864 I/(fE)=4.831 e/I=0.1331 C_eff=-0.4043 best=-0.4013 g,r=1e-11,4e-11 t=111
+it 100 f=0.0800 E=9.9425e-03 I/E=0.3862 I/(fE)=4.827 e/I=0.1330 C_eff=-0.4034 best=-0.4013 g,r=5e-12,1e-11 t=120
+it 110 f=0.0800 E=9.8992e-03 I/E=0.3860 I/(fE)=4.825 e/I=0.1328 C_eff=-0.4025 best=-0.4013 g,r=1e-11,1e-10 t=131
+it 120 f=0.0800 E=9.8828e-03 I/E=0.3863 I/(fE)=4.828 e/I=0.1326 C_eff=-0.4018 best=-0.4013 g,r=1e-11,5e-11 t=140
+it 130 f=0.0800 E=9.8782e-03 I/E=0.3862 I/(fE)=4.827 e/I=0.1326 C_eff=-0.4018 best=-0.4013 g,r=9e-12,6e-11 t=149
+it 140 f=0.0800 E=9.9070e-03 I/E=0.3869 I/(fE)=4.836 e/I=0.1325 C_eff=-0.4017 best=-0.4013 g,r=2e-11,1e-10 t=159
+it 150 f=0.0800 E=9.8883e-03 I/E=0.3865 I/(fE)=4.831 e/I=0.1325 C_eff=-0.4018 best=-0.4013 g,r=2e-11,1e-10 t=169
+BEST 1 3 0.08 1 const -0.40127975827805784 t 168.9346640110016 rss 0.2721405029296875
+/Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/checks/gate_ex/x_adv.py:70: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:837.)
+  J0 = float(J)
+it 0 f=0.0805 E=1.9465e-02 I/E=0.3221 I/(fE)=3.999 e/I=0.2305 C_eff=-0.7242 best=-0.7242 g,r=1e-11,7e-12 t=0
+it 10 f=0.0800 E=9.5567e-03 I/E=0.2761 I/(fE)=3.451 e/I=0.1986 C_eff=-0.5148 best=-0.5148 g,r=5e-12,1e-11 t=10
+it 20 f=0.0800 E=6.4711e-03 I/E=0.3095 I/(fE)=3.870 e/I=0.1572 C_eff=-0.4172 best=-0.4172 g,r=5e-12,6e-12 t=19
+it 30 f=0.0800 E=8.5065e-03 I/E=0.3592 I/(fE)=4.490 e/I=0.1400 C_eff=-0.4067 best=-0.4057 g,r=2e-12,2e-11 t=29
+it 40 f=0.0800 E=9.3301e-03 I/E=0.3734 I/(fE)=4.669 e/I=0.1354 C_eff=-0.4017 best=-0.4017 g,r=8e-12,5e-11 t=39
+it 50 f=0.0800 E=9.7624e-03 I/E=0.3826 I/(fE)=4.783 e/I=0.1333 C_eff=-0.4016 best=-0.4012 g,r=8e-12,5e-11 t=49
+it 60 f=0.0800 E=9.8299e-03 I/E=0.3847 I/(fE)=4.810 e/I=0.1329 C_eff=-0.4019 best=-0.4012 g,r=9e-12,7e-11 t=59
+it 70 f=0.0800 E=9.8715e-03 I/E=0.3856 I/(fE)=4.820 e/I=0.1328 C_eff=-0.4022 best=-0.4012 g,r=1e-11,4e-11 t=69
+it 80 f=0.0800 E=9.9086e-03 I/E=0.3858 I/(fE)=4.822 e/I=0.1329 C_eff=-0.4030 best=-0.4012 g,r=9e-12,2e-11 t=78
+it 90 f=0.0800 E=9.9858e-03 I/E=0.3862 I/(fE)=4.829 e/I=0.1331 C_eff=-0.4045 best=-0.4012 g,r=4e-12,3e-11 t=88
+it 100 f=0.0800 E=9.9482e-03 I/E=0.3861 I/(fE)=4.826 e/I=0.1330 C_eff=-0.4037 best=-0.4012 g,r=6e-12,1e-11 t=97
+it 110 f=0.0800 E=9.9009e-03 I/E=0.3859 I/(fE)=4.824 e/I=0.1329 C_eff=-0.4027 best=-0.4012 g,r=2e-11,1e-10 t=106

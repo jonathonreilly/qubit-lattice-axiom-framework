@@ -36,6 +36,16 @@ program. Patterns full, one, diag2, diag4, L = 3, 5, 7, 9.
     FAIL2-SIGMA: s2 < 0.6 for some pattern: the corner is worse than r^{-1/3} predicts, by
     more than pre-asymptotics can explain, and Lemma 4.5h must be read again.
 
+Result of the follow-up: WEAK2-SIGMA, s2 = 1.64, 1.18, 0.81, 1.18 (full, one, diag2, diag4), and
+the last step of diag2, phi(7) = 0.428 to phi(9) = 0.393, is slow.
+
+Third criteria, written before that run: pattern diag2 only, HC_TOP = 4000, L = 7, 9, 11.
+    s3 := log( phi(9) / phi(11) ) / log(11 / 9), s3' := log( phi(7) / phi(9) ) / log(9 / 7).
+    If phi(7) moves up with the wider scan, the slow step was a sampling artefact.
+    PASS3: s3 >= 0.6. FAIL3: s3 < 0.2, which would suggest that phi does not decay at this
+    pattern, against Lemma 4.5h, and it would have to be looked at before anything else.
+    Neither: report the numbers.
+
 Run under the numeric lock, BLAS threads 1, nice, RSS checked against 2 GB.
 """
 import importlib.util
@@ -231,7 +241,13 @@ def main():
             elif s < 1 and verdict == "PASS-SIGMA":
                 verdict = "WEAK-SIGMA"
     print(verdict)
-    if os.environ.get("HC_TOP"):
+    if os.environ.get("HC_THIRD"):
+        r = res["diag2"]
+        s3 = np.log(r[9] / r[11]) / np.log(11 / 9)
+        s3p = np.log(r[7] / r[9]) / np.log(9 / 7)
+        print(f"s3 = {s3:.3f}, s3' = {s3p:.3f}")
+        print("PASS3" if s3 >= 0.6 else ("FAIL3" if s3 < 0.2 else "NEITHER3"))
+    elif os.environ.get("HC_TOP"):
         v2 = "PASS2-SIGMA"
         for name in names:
             r = res[name]

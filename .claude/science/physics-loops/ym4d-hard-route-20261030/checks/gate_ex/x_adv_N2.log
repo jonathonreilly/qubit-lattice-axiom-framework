@@ -59,3 +59,10 @@ it 70 f=0.0447 E=9.1795e-03 I/E=10.7187 I/(fE)=239.637 e/I=0.1969 C_eff=-35.3443
 it 80 f=0.0427 E=8.5419e-03 I/E=10.4887 I/(fE)=245.503 e/I=0.1836 C_eff=-32.9512 best=-15.0438 g,r=3e-11,1e-11 t=200
 it 90 f=0.0447 E=9.1789e-03 I/E=10.7193 I/(fE)=239.681 e/I=0.1969 C_eff=-35.3539 best=-15.0438 g,r=2e-11,9e-12 t=225
 it 100 f=0.0427 E=8.5374e-03 I/E=10.4877 I/(fE)=245.524 e/I=0.1836 C_eff=-32.9444 best=-15.0438 g,r=3e-11,1e-11 t=250
+it 110 f=0.0447 E=9.1741e-03 I/E=10.7187 I/(fE)=239.699 e/I=0.1969 C_eff=-35.3525 best=-15.0438 g,r=2e-11,1e-11 t=274
+it 120 f=0.0427 E=8.5344e-03 I/E=10.4874 I/(fE)=245.540 e/I=0.1836 C_eff=-32.9456 best=-15.0438 g,r=3e-11,1e-11 t=298
+BEST 2 3 0.03 1 mix -15.043827488085203 t 298.36046719551086 rss 0.30511474609375
+/Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/checks/gate_ex/x_adv.py:70: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:837.)
+  J0 = float(J)
+it 0 f=0.4905 E=9.0012e+00 I/E=13.5240 I/(fE)=27.571 e/I=0.3047 C_eff=-7.0400 best=-1000000000.0000 g,r=3e-06,7e-07 t=52

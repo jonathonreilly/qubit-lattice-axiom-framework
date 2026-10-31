@@ -2,7 +2,7 @@
 """Field inequality (5.5) on the final map D3 (hard-core--independent, Text 5.1, 5.4).
 
 Map tested. Psi_y(z; x_0) = path(y -> x_0) * Mean_{x in B(y), orders}[ R(x_0, x) R_mu(x, z) ], T_u = Psi_y(u^-) u Psi_{y'}(u^+)^{-1}, M = Mean_u T_u.
-x_0 = y if s(y) <= s_rule, otherwise a minimiser of s, with s(x_0) = sum over rule-rough plaquettes in B(y) of min(1, dist(p, x_0)^-2).
+x_0 = y if s(y) <= s_rule, otherwise a minimiser of s, with s(x_0) = sum over rule-rough plaquettes p in B(y) of f_p W_0(p; x_0), W_0 the weight of a star of axial paths (Text 5.4).
 Option base=fixed forces x_0 = y, to measure what the rule buys.
 
 PRE-STATED CRITERIA (written before the first run on this map; L=3 and L=5).
@@ -21,9 +21,15 @@ PRE-STATED CRITERIA (written before the first run on this map; L=3 and L=5).
   without the rule and does not test it. TUNED2: rotate by theta = pi the links out of y in directions +-e_0, +-e_1, so that half of all first steps change sign and
   Xi_bar is small, on top of independent noise of size a = 0.02 on every link. RULE-EFFECT: compare |W-1| and Ratio for base=fixed and base=rule, at equal noise.
   The redesign of 5.4 is justified if Ratio(fixed) is much larger than Ratio(rule), or if min|m| is near zero for fixed only. If they agree, the rule buys nothing here, and that gets recorded.
-  ADDED BEFORE THE SEARCH RUN. The rule now uses threshold eps_0 = 0.05 and not 0.5 (Text 5.4). SEARCH: hill climbing on Ratio over link fields at L = 3, restarts from flat, a sheet, a Haar patch, TUNED2.
+  ADDED BEFORE THE SEARCH RUN. The rule now uses threshold eps_0 = 0.05 and not 0.5, and s is weighted by f_p with the axial star weight W_0 (Text 5.4). SEARCH: hill climbing on Ratio over link fields at L = 3, restarts from flat, a sheet, a Haar patch, TUNED2.
   Each move changes one link in the hull, to a Haar element or a small rotation, and is kept if Ratio grows. Ratio is computed only when the denominator exceeds 1e-6.
   PASS-SEARCH: best Ratio <= 12 sqrt(log L) = 12.6 at L = 3. FAIL-SEARCH: above it, which would need a larger C_OS, or a counterexample to (5.5). The value of the best Ratio is the output.
+  ADDED BEFORE ITS FIRST RUN. COUNTTRAP tests the claim in Text 5.4 that an unweighted count is wrong: in block y, noise of size a just above threshold on all links except near a site x_d, plus a large defect at x_d (links out of x_d in directions +-e_0, +-e_1 rotated by pi).
+  The old count rule (base=count: unweighted, isotropic star) should move x_0 next to the defect. CRITERION: TRAP-CONFIRMED if the count rule puts x_0 within distance 1 of x_d and has min|m| below half of that of the weighted rule, or Ratio above twice that of the weighted rule, on at least one of 3 seeds. TRAP-NOT-SHOWN otherwise, and then the claim is reasoned only.
+  ADDED BEFORE ITS FIRST RUN. Environment variable HC_EPS sets eps_0 in the rule and in the right side, to test nearer the regime eps_0 L^2 << 1 of Step 5. The same PASS-55 and PASS-SEARCH criteria apply.
+  ADDED BEFORE ITS FIRST RUN. SEARCH2: the single-link hill climb never improved on the sheet, so it is weak. SEARCH2 uses coordinated moves: rotate by a random element all links crossing a random box-shaped 3-dimensional face (a sheet of any size and place in the hull), or a random line, or a random 2-dimensional patch of links, or multiply the rotation of the last accepted move by a factor; with restarts from several sheets and from a sheet combined with a Haar patch at a block centre or at a corner of P.
+  It maximises Ratio by simulated-annealing acceptance at low temperature. PASS-SEARCH2: best Ratio <= 12 sqrt(log L) = 12.6 at L = 3. FAIL-SEARCH2: above it. The best Ratio and the move type that produced it are the output. A best Ratio above 1 by a clear margin is itself a result, since it measures C_OS from below.
+  ADDED BEFORE ITS FIRST RUN. SEARCH2 from a random start stays far below the sheet, so with HC_START=sheet it starts from the sheet of Ratio 1, with temperature HC_T = 0.001, to test whether coordinated moves can raise Ratio above 1. Same PASS-SEARCH2 criterion; the best Ratio is the output.
   Flat-background and small-sample limits: this can falsify (5.5) on these families. It cannot confirm it on all fields.
 """
 import os
@@ -32,7 +38,7 @@ import itertools, math, random, resource, sys
 
 DIM = 4
 ONE = (1.0, 0.0, 0.0, 0.0)
-EPS_RULE = 0.05
+EPS_RULE = float(os.environ.get("HC_EPS", "0.05"))
 S_RULE = 0.25
 
 
@@ -113,8 +119,9 @@ def rough_plaquettes(field, y, L):
                 # inside the block only
                 if any(max(abs(c[i] - y[i]) for i in range(DIM)) > (L - 1) // 2 for c in (xp, shift(x, nu, 1), xpn)):
                     continue
-                if qdist1(field.plaq(x, mu, nu)) > EPS_RULE:
-                    out.append(x)
+                f = qdist1(field.plaq(x, mu, nu))
+                if f > EPS_RULE:
+                    out.append((x, mu, nu, f))
     return out
 
 
@@ -124,12 +131,22 @@ def base_point(field, y, L, base):
     rough = rough_plaquettes(field, y, L)
     if not rough:
         return y
+    if base == "count":
+        def count(x0):
+            tot = 0.0
+            for p, mu, nu, f in rough:
+                d2 = sum((p[i] - x0[i]) ** 2 for i in range(DIM))
+                tot += min(1.0, 1.0 / d2) if d2 > 0 else 1.0
+            return tot
+        if count(y) <= S_RULE:
+            return y
+        return min(block_sites(y, L), key=lambda x: (count(x), x))
 
     def s(x0):
         tot = 0.0
-        for p in rough:
-            d2 = sum((p[i] - x0[i]) ** 2 for i in range(DIM))
-            tot += min(1.0, 1.0 / d2) if d2 > 0 else 1.0
+        for p, mu, nu, f in rough:
+            same = [p[i] == x0[i] for i in range(DIM) if i not in (mu, nu)]
+            tot += f * ((1.0 if all(same) else 0.0) + sum(same) / L)
         return tot
     if s(y) <= S_RULE:
         return y
@@ -222,7 +239,8 @@ def plaquette_W(field, L, base):
     return qdist1(qmul(qmul(qmul(A, B), qconj(C)), qconj(D))), min(m1, m2, m3, m4)
 
 
-def rhs(field, L, eps=0.05):
+def rhs(field, L, eps=None):
+    eps = EPS_RULE if eps is None else eps
     o = (L - 1) // 2
     l1, l2 = 0.0, 0.0
     seen = set()
@@ -340,6 +358,152 @@ def run(L, quick):
     print(f"L={L}: CHARGE max |W-1| = {max(charges):.2e} ({'PASS' if max(charges) < 1e-9 else 'FAIL'} exact check)", flush=True)
 
 
+def trap(L):
+    o = (L - 1) // 2
+    y = (0, 0, 0, 0)
+    xd = (o, o, o, o)
+    print(f"L={L}: COUNTTRAP eps={EPS_RULE}, x_d={xd}", flush=True)
+    rows = []
+    best = False
+    for seed in (1, 2, 3):
+        for a in (1.5 * EPS_RULE,):
+            r2 = random.Random(1000 * L + seed)
+            noise = {}
+
+            def get(s, mu, a=a, noise=noise, r2=r2):
+                k = (s, mu)
+                if k not in noise:
+                    near = max(abs(s[i] - xd[i]) for i in range(DIM)) <= 1
+                    if near or max(abs(s[i]) for i in range(DIM)) > o:
+                        noise[k] = ONE
+                    else:
+                        g = [r2.gauss(0, 1) * a for _ in range(3)]
+                        t = math.sqrt(sum(x * x for x in g))
+                        noise[k] = (math.cos(t), *(x * math.sin(t) / t for x in g)) if t > 0 else ONE
+                q = noise[k]
+                if s == xd and mu in (0, 1):
+                    return qmul(rot(math.pi), q)
+                if mu in (0, 1) and s == shift(xd, mu, -1):
+                    return qmul(q, qconj(rot(math.pi)))
+                return q
+            f = Field(get)
+            x_count = base_point(f, y, L, "count")
+            x_rule = base_point(f, y, L, "rule")
+            dc = max(abs(x_count[i] - xd[i]) for i in range(DIM))
+            dr = max(abs(x_rule[i] - xd[i]) for i in range(DIM))
+            print(f"  seed={seed} a={a}: x_0(count)={x_count} dist to defect {dc}; x_0(rule)={x_rule} dist {dr}", flush=True)
+            c1, m1 = plaquette_W(f, L, "count")
+            c2, m2 = plaquette_W(f, L, "rule")
+            r, l1, l2 = rhs(f, L)
+            print(f"    count: |W-1|={c1:.5f} min|m|={m1:.3f} Ratio={c1 / r:.3f}; rule: |W-1|={c2:.5f} min|m|={m2:.3f} Ratio={c2 / r:.3f}; l1={l1:.3f} l2={l2:.4f}", flush=True)
+            if dc <= 1 and (m1 < m2 / 2 or c1 / r > 2 * c2 / r):
+                best = True
+            check_rss()
+    print(f"L={L}: {'TRAP-CONFIRMED' if best else 'TRAP-NOT-SHOWN'}", flush=True)
+
+
+def search2(L, moves, seed):
+    rng = random.Random(seed)
+    o = (L - 1) // 2
+    lo = [-o, -o, -o, -o]
+    hi = [L + o, L + o, o, o]
+
+    def box_sites(fixed_axis):
+        ranges = []
+        for i in range(DIM):
+            if i == fixed_axis:
+                v = rng.randint(lo[i], hi[i])
+                ranges.append((v, v))
+            else:
+                a = rng.randint(lo[i], hi[i])
+                b = rng.randint(a, hi[i])
+                ranges.append((a, b))
+        return itertools.product(*[range(a, b + 1) for a, b in ranges])
+
+    def rand_rot(scale):
+        g = [rng.gauss(0, scale) for _ in range(3)]
+        t = math.sqrt(sum(x * x for x in g))
+        return (math.cos(t), *(x * math.sin(t) / t for x in g)) if t > 0 else ONE
+
+    def move():
+        kind = rng.choice(("sheet", "sheet", "line", "patch", "link"))
+        scale = rng.choice((0.1, 0.3, 1.0, 3.0))
+        q = rand_rot(scale)
+        new = {}
+        if kind == "sheet":
+            ax = rng.randrange(DIM)
+            for s_ in box_sites(ax):
+                new[(s_, ax)] = q
+        elif kind == "line":
+            ax = rng.randrange(DIM)
+            lin = rng.randrange(DIM)
+            s0 = [rng.randint(lo[i], hi[i]) for i in range(DIM)]
+            for t in range(rng.randint(1, 2 * L)):
+                s_ = list(s0)
+                s_[lin] += t
+                new[(tuple(s_), ax)] = q
+        elif kind == "patch":
+            ax = rng.randrange(DIM)
+            a, b = rng.sample(range(DIM), 2)
+            s0 = [rng.randint(lo[i], hi[i]) for i in range(DIM)]
+            for t1 in range(rng.randint(1, L)):
+                for t2 in range(rng.randint(1, L)):
+                    s_ = list(s0)
+                    s_[a] += t1
+                    s_[b] += t2
+                    new[(tuple(s_), ax)] = q
+        else:
+            s_ = tuple(rng.randint(lo[i], hi[i]) for i in range(DIM))
+            new[(s_, rng.randrange(DIM))] = q
+        return kind, new
+
+    best_all = (0.0, "none", 0)
+    if os.environ.get("HC_START") == "sheet":
+        q0 = rot(3.1)
+        base = lambda s, mu: q0 if (mu == 0 and s[0] == 1 and s[1] >= 2) else ONE
+    else:
+        base = lambda s, mu: ONE
+    temp = float(os.environ.get("HC_T", "0.02"))
+    for restart in range(4):
+        d = {}
+        cur = 0.0
+        # start from one random sheet, or from the base sheet alone
+        if os.environ.get("HC_START") != "sheet":
+            for _ in range(1 + restart):
+                kind, new = move()
+                d.update(new)
+        cur, _, _ = ratio_of(overlay(base, d), L)
+        print(f"  restart {restart}: start Ratio {cur:.4f}", flush=True)
+        if cur > best_all[0]:
+            best_all = (cur, "start", -1)
+        best = cur
+        for it in range(moves):
+            kind, new = move()
+            old = {k: d.get(k) for k in new}
+            for k, q in new.items():
+                c = d.get(k, base(k[0], k[1]))
+                d[k] = qmul(q, c)
+            val, _, m = ratio_of(overlay(base, d), L)
+            if val >= cur or rng.random() < math.exp(-(cur - val) / temp):
+                cur = val
+                if val > best:
+                    best = val
+                if val > best_all[0]:
+                    best_all = (val, kind, it)
+            else:
+                for k, q in old.items():
+                    if q is None:
+                        del d[k]
+                    else:
+                        d[k] = q
+            if it % 100 == 0:
+                print(f"    restart {restart} it={it} cur={cur:.4f} best={best:.4f} links={len(d)}", flush=True)
+            check_rss()
+        print(f"  end restart {restart}: best {best:.4f}", flush=True)
+    bound = 12 * math.sqrt(math.log(L))
+    print(f"L={L}: SEARCH2 best Ratio = {best_all[0]:.4f} by move {best_all[1]} at it={best_all[2]}, bound {bound:.2f}: {'PASS-SEARCH2' if best_all[0] <= bound else 'FAIL-SEARCH2'}", flush=True)
+
+
 def overlay(base, d):
     return Field(lambda s, mu: d.get((s, mu)) if (s, mu) in d else base(s, mu))
 
@@ -397,6 +561,10 @@ def search(L, moves, seed):
 if __name__ == "__main__":
     if sys.argv[1] == "search":
         search(int(sys.argv[2]), int(sys.argv[3]), 20261030)
+    elif sys.argv[1] == "search2":
+        search2(int(sys.argv[2]), int(sys.argv[3]), 20261031)
+    elif sys.argv[1] == "trap":
+        trap(int(sys.argv[2]))
     else:
         for arg in sys.argv[1:]:
             run(int(arg), quick=int(arg) >= 5)

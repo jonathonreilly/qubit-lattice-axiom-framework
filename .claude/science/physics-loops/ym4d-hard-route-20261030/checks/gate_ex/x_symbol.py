@@ -11,9 +11,11 @@ def obj(P, L):
     Min = exc.forms(P, L, 1, 4)[0]
     Min = (Min + Min.T) / 2
     Ph = 2 * np.sin(P / 2)
+    if np.sum(Ph**2) < 1e-5:  # second patch: below this g - 1 is roundoff (a 0/0 at P -> 0); first L = 7 value -1.06 was that
+        return 1.0
     return (np.linalg.eigvalsh(Min)[0] - 1) / np.sum(Ph**2)
 rng = np.random.default_rng(0)
-for L in [3, 5, 7]:
+for L in [int(x) for x in os.environ.get("SYM_L", "3 5 7").split()]:
     best = (1e9, None)
     starts = [rng.uniform(1e-3, np.pi, 4) for _ in range(60)]
     starts += [rng.uniform(1e-3, 0.3, 4) for _ in range(30)]

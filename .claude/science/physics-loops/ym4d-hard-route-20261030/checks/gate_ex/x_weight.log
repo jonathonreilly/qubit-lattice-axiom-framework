@@ -1,0 +1,10 @@
+### start 22:57Z mem_free=56: python3 x_weight.py mix 3 3 1 0.05
+solve 1.7929809113109707e-11 5.889510556933456e-11
+j=0 f=0.0867 I/E=4.9922 nu=0.4: sup C_W=-1.4433 at e(W)/I(W)=0.1915, I(W)/E(W)=4.9412
+j=0 f=0.0867 I/E=4.9922 nu=0.2: sup C_W=-2.4888 at e(W)/I(W)=0.1928, I(W)/E(W)=4.9750
+j=0 f=0.0867 I/E=4.9922 nu=0.1: sup C_W=-3.8743 at e(W)/I(W)=0.1944, I(W)/E(W)=4.9873
+j=0 f=0.0867 I/E=4.9922 nu=0.05: sup C_W=-5.3204 at e(W)/I(W)=0.1953, I(W)/E(W)=4.9842
+j=0 f=0.0867 I/E=4.9922 nu=0.025: sup C_W=-6.5296 at e(W)/I(W)=0.1955, I(W)/E(W)=4.9907
+rss 0.4381866455078125
+### end 22:57Z exit=0
+### start 22:57Z mem_free=56: python3 x_weight.py mix 2 3 2 0.05

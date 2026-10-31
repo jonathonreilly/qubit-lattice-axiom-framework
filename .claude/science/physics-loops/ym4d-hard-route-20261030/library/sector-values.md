@@ -2,13 +2,13 @@
 
 Own derivation, 2026-10-31; not reviewed. Part: `hard-core--mapped`. Answers D4 of `gates/theorem-z-3b7fd4e57.md`. Balaban's objects are kept (block averages, minimal fields, running coupling); the ordered integration below is standard in cluster expansions and is not taken from his text. This line is not independent of the Sussman-Alpoge repository, which supplied the map; this argument does not read it. Nothing here reads the sibling attempt.
 
-Status, by part. Section 1: exact identity, derived. Sections 2, 3: derived at the level of each term, with the constants named, resting on Theorem F-D, HS-P, HS-T, (R3), (AD), Prop AN3 at their own labels. Sections 4 to 6: implications of those. So this is a route that has been written out and attacked once, and not a closed proof.
+Status, by part. Section 1: exact identity, derived. Section 2: derived at the level of each term. Section 3: kept, with the reading corrected by Section 3A. Sections 3A, 3B: the route that replaces a per-level contraction, derived at the level of each term, with (TS) exact. Sections 4 to 6: implications of those. All rest on Theorem F-D, HS-P, HS-T, (R3), (AD), Prop AN3 at their own labels, none gated. So this is a route that has been written out and attacked twice, and not a closed proof.
 
 ## 0. The problem and the decision
 
 Item (r) of `library/relative-density-bound.md` said that two class fields equal off J are joined by a path of flux at most C T. *False across sectors* (the gate's D4, which I confirm): an instanton of radius about T^{-1/2} in singular gauge, cut off inside a ball J, has flux at most T and equals 1 off J, and no path of small flux joins it to 1. R_k is known only by derivative norms on D_k, so nothing bounded the difference of its values between sectors. Readers: Step 4 of Theorem Z; (FF_j)(Lo), (FF_j)(U); Lemma 3 of `library/gauge-taylor-contraction.md`, through "a path of class fields"; and also (RP_m[i]) at Steps 2 and the tail clause, so the fallback is hit by the same defect.
 
-*Decision.* The one-function formulation carries it. R_k stays one function in the hypothesis, with no local polymer representation. Two clauses are added to H(k): a value clause (VAL_k), which is a consequence of the recursion and needs no local form of R_k, and a locality clause (Loc^c_k), which comes back into the hypothesis in a form with class fields only. A local decomposition is used only for the *one-step source*, which is computed afresh at each level, so the surface excess of the older recursive density (`parts/hard-core--mapped.md`, routes tried) does not arise.
+*Decision.* The one-function formulation carries it. R_k stays one function in the hypothesis, with no local polymer representation. Two clauses are added: a value clause (VAL_k), with its region form (VAL^𝔡_k), which needs no local form of R_k, and a locality clause (Loc^c_k), in a form with class fields only. Both are outputs of one sum over levels, Sections 3A, 3B. A local decomposition is used only for the *one-step source*, which is computed afresh at each level, so the surface excess of the older recursive density (`parts/hard-core--mapped.md`, routes tried) does not arise.
 
 *What a jump would be.* A constant per unit of charge would be a local density that vanishes on exact fields and is non-zero on a sector. At zero momentum the only quadratic form on 2-forms that vanishes on every simple e ^ a is the Plucker form F ^ F. So a jump is a theta term, and a single-axis reflection, a symmetry of the model, forbids it. A term in |Q| is not local. This is the reason the bound below can be true, and Section 2 uses it, by averaging the order of integration over the signed axis permutations.
 
@@ -75,6 +75,8 @@ K-hat(0) is invariant under signed permutations, and on the six orientations the
 
 ## 3. The lift: (LIFT-I)
 
+*Read this section with n := k and any lower level, Section 3A (a): it is not to be iterated, and C_0 L^-2 < 1 is not needed.*
+
 **Proposition LIFT-I.** *Let V' be in D_{j+1}, W := V^*(V'), c' a level-(j+1) cell, and sh(c') the level-j cells below it. With rho the absolute rate of Theorem F:*
 
     sum_{c in sh(c')} ( |grad F_W(c)|^2 + |F_W(c)|^3 ) <= C_0 L^-2 sum_{c''} e^{-rho d(c', c'')} ( |grad' F'(c'')|^2 + |F'(c'')|^3 ) + tails,
@@ -101,31 +103,92 @@ F-bar := F'(c')/L^2 transported, locally constant: it is here that no energy ter
 
 *Scale check by exact numerics, abelian.* C(d, L, n) in the check is exactly the ratio in the gradient part. See Section 7.
 
-## 4. The value clause and the jump
+## 3A. No contraction per level: a direct sum, and a telescoping sum (derived at the level of each term, 2026-10-31)
 
-**Theorem VAL (implication).** *Given SRC and LIFT-I, with C_0 L^-2 <= 1/2, for all k and V in D_k, in every sector:*
+*Correction to Section 3.* I called (LIFT-I) the hardest inequality, because I read it as a contraction C_0 L^-2 < 1 to be iterated level after level, with room only in L. That reading was wrong, in two ways, and the correction is the main result of this stop.
 
-    |R_k(V)| <= B_v(L) ( I_k(V; 1) + N_k^4 Phi(e^-8 N_k / 4) ),    B_v(L) := 2 C_w(L) C(L),
+**(a) Nothing needs iterating.** Steps 1 to 6 of Section 3 apply with n := k, the top level, directly to any lower level j: Step 5 is a convolution from the fine level. So, for the chain of V, with s := L^{j - k}, sum over c in the shadow of a top cell c_k of (|grad F_{V_j}(c)|^2 + |F_{V_j}(c)|^3) <= C_0 s^2 ( I_k(V; w_{c_k}) ), **with C_0 free of j and k, and with no requirement that C_0 L^-2 < 1**, since the sum over levels is then C_0 / (1 - L^-2). The abelian numbers show this: C(4, 3, n) = 16.96, 16.01, 16.00 at n = 1, 2, 3, against 16.96^n L^-2n-type compounding that the iterated form would allow. So only uniformity of (AD), (R3), AN1 in the level is read. Those are composite statements already.
 
-*where C_w(L) is the constant in sum_x w_x <= C_w. Proof: (CS), SRC, and I_{j+1}(V_{j+1}; 1) <= (C_0 L^-2)^{k-j-1} C I_k(V; 1) by LIFT-I summed over cells. The toron term falls superexponentially going down, as N_j = L^{k-j} N_k.*
+**(b) A second route, with no H^2 at all: the Wilson excess telescopes.**
 
-For an instanton of radius rho at level k, I_k is about rho^-2, so R_k there is at most B_v rho^-2 <= B_v T. This is the lattice artefact (a/rho)^2 in the instanton's action, as it should be. In particular there is no constant per unit of charge.
+*Definition.* A_l^W := Wilson action of the level-l field. Y_l := A_l - A_l^W on D_l, so Y_0 = 0. e_j(V') := A_j^W(V^*(V')) - A_{j+1}^W(V'). Then, since A_{j+1}(V') = A_j(V^*(V')),
 
-**Theorem Jump (implication).** *Let V_1, V_2 in D_k be equal off J, in a common gauge there. Then with r_1 := (2/mu) log(1/T_2) and J^+ the r_1-neighbourhood of J in level-k cells:*
+    Y_{j+1}(V') = Y_j(V^*(V')) + e_j(V'),    so    Y_k(V) = sum_{j<k} e_j(V_{j+1}).        (TS)
 
-    |R_k(V_1) - R_k(V_2)| <= B_j(L) T_2^2 |J^+|,   B_j(L) free of k and of x.
+Exact, in every sector. So if e_j dominates the gradient energy of its parent, the sum over all levels of the gradient energy is bounded by Y_k(V) at the top, which is a one-level-of-reading statement. For a weight W on top cells, with E_l(V; W) := sum_c W(c) |theta_c|^2, e_j(V'; W) := E_j(V^*(V'); W) - E_{j+1}(V'; W) telescopes in the same way.
 
-*Proof.* (CS) along the two chains V_{l, j}. At level j + 1, with m := k - j - 1, split x by its distance d_k(x, J) in level-k cells.
+**Lemma EX (coercivity of the excess; level of each term).** *For V' in D_{j+1}, f := its largest flux, W with log W Lipschitz at rate nu in cells of level j + 1:*
 
-*Near zone, d_k <= r_1.* The absolute bound of SRC for each field. By LIFT-I, sum over those x of I_{j+1}(V_{l, j+1}; w_x) <= (C_0 L^-2)^m C I_k(V_l; 1_{J^+}, smeared), and I_k per cell is at most C T_2^2. So this is at most C(L) (C_0 L^-2)^m T_2^2 |J^+|.
+    e_j(V'; W) >= c_1 I^grad_{j+1}(V'; W) - C(L) (f + nu) E_{j+1}(V'; W) - (toron term),
 
-*Far zone, d_k > r_1.* Let r := L^m d_k(x, J)/2 in level-(j+1) cells. On B(x, 2 r) the two fields differ by delta, small by Theorem F-D: a difference of minimisers with parents agreeing off J decays at the rate rho per parent cell at each level. Interpolate: V_3 equal to V_2 on B(x, r) and to V_1 off B(x, 2 r), joined across the annulus, where they are close. By Lemma O2 for V_3, V_2: a term C(L) Phi(r/2); its sum over far x, with L^{4m} cells per level-k cell, is at most C(L) L^{4m} e^{-mu L^m r_1/4} |J^+|, which is summable in m and at most C(L) T_2^2 |J^+| by the choice of r_1, up to a factor. For V_1, V_3 there is a true path, so the derivative bound gives C(L) I(V; w_x)^{1/2} |delta F|_{w_x}, and by Cauchy-Schwarz with the weight w_J := e^{-mu d_k(., J)} and its inverse:
+*with c_1 > 0 and C(L) free of j.*
 
-    sum_x C(L) I(x)^{1/2} |delta F|(x) <= C(L) ( I_{j+1}(V; w_J) )^{1/2} ( sum_x w_J^-1 |delta F_{j+1}(x)|^2 )^{1/2}.
+*Step 1, a local density.* epsilon_{c'}(V') := sum over c in the shadow of c' of |theta_c(V^*(V'))|^2 - |theta_{c'}(V')|^2. It is gauge invariant and, by Prop AN3 and Theorem F-D, local with tree decay, uniformly in j. Taylor at the locally trivial cut field, as in Lemma O3, with D epsilon(1) = 0, gives a quadratic part, order-3 and tail terms at most C(L) times the cubic energy. Averaged over the hypercubic group with reflections, which leaves the sum unchanged, this gives K, translation invariant, reflection even, with K-hat(P) on all six orientations.
 
-The first factor is at most (C_0 L^-2)^{m/2} (C T_2^2 |J^+|)^{1/2}. The second is the weighted energy of the difference. The minimal lift preserves the Hessian of the effective action exactly on the quadratic part: A_j(lift of delta') = A_{j+1}(delta'). The effective action's form is comparable to |F|^2, by g-hat, with absolute constants. The weight varies at rate mu L^-m per level-(j+1) cell, so the commutator costs a factor 1 + C mu^2 L^-2m, and the nonlinear part a factor 1 + C(L) f_j, both summable over levels. So the second factor is at most C (T_2^2 |J^+|)^{1/2}, with no growth in m. The product is at most C(L) L^-m T_2^2 |J^+|.
+*Step 2, the symbol.* K-hat(0) = 0 on all 2-forms: it is a multiple of the identity, by symmetry, and on constant flux the lift is exact (Lemma 3.3 of the producer), so the excess vanishes. By evenness K-hat(P) = O(|P-hat|^2) on all 2-forms. *On closed forms it is coercive, uniformly in j:* the level-j field of the lift lies in the fibre, so its Wilson energy is at least the one-level minimum, whatever A_j is:
 
-Sum over m. QED given SRC, LIFT-I, O2, F-D.
+    F-hat^* K-hat(P) F-hat >= (g(P) - 1) |F-hat|^2 >= c_e |P-hat|^2 |F-hat|^2,    F-hat = P-hat ^ a,
+
+with g the one-level minimal Wilson energy, an exact finite alias sum. From the main alias, with D the Dirichlet kernel and m equal non-zero components of P, g = D^-(2m + 2) when a points along a zero component, so c_e = (m + 1)/(12 m) (1 - L^-2), least at m = 3 in d = 4: **c_e = (1/9)(1 - L^-2)**. Measured over a grid, including small P: 0.09883, 0.10675, 0.10893, 0.11029, 0.11082 at L = 3, 5, 7, 11, 17 (`checks/hard-core--mapped_excess.py`). (1/9)(8/9) = 0.09877. It is a finite computation for fixed L; I have not written a proof over all P beyond the numerics and the main alias.
+
+*Step 3, all 2-forms.* Closed forms are a subspace. For M large, K-hat_M(P) := K-hat(P) + M (P-hat ^)^* (P-hat ^) >= (c_e/2) |P-hat|^2 on all 2-forms: the closed block is at least c_e |P-hat|^2, the off-diagonal block is at most C |P-hat|^2, the co-closed block gains M |P-hat|^2, so Schur applies with M = M(C^2/c_e). So, by Plancherel on the flat torus, for every 2-form psi with values in su(2), of no closedness,
+
+    Q_flat[psi] + M ||d psi||^2 >= (c_e/2) ||grad psi||^2.
+
+*Step 4, covariance, by IMS at the scale where sectors do not exist.* Partition of unity eta_a at radius r := f^-1/2, in the balls of which an axial gauge has |A| <= f r. Apply Step 3 to psi_a := eta_a F in that gauge. Three errors. (i) IMS: C(L) r^-2 ||F||^2 = C(L) f ||F||^2. (ii) Transport: T_{x -> x + y} - 1 is of size f r |y|. Its first-order part is ad of a small element tau. It pairs psi(x) with psi(x + y) = psi(x) + Delta_y psi. The part with psi(x) cancels, as psi_p . [tau, psi_p'] is antisymmetric in (p, p') and K(y)_{pp'} is symmetric, by evenness. So what remains is f r |psi| |Delta psi| + (f r)^2 |psi|^2, at most epsilon |grad psi|^2 + C(L) f |psi|^2. *This cancellation is what makes r^-2 and (f r)^2 balance at r = f^-1/2, the scale of sectors. So F is treated only locally, and no global gauge or sector enters.* (iii) Bianchi: F is the curvature, so d_{V'} F = O(|F|^2) at each cube, and M ||d_{V'} F||^2 <= C(L) sum |F|^4 <= C(L) f E. Sum over a. With W: apply the same to W^{1/2} F; the commutator with the slowly varying W is at most epsilon |grad F|^2 W + C(L) nu^2 |F|^2 W, and W at the fine level against W at the parent adds nu E_j. QED at this level.
+
+**Lemma TOP (level of each term).** *Uniformly in k, |Y_k(V; W)| <= C(L) ( I^grad_k(V; W^+) + (f + nu) E_k(V; W^+) ), with Y_k(V; W) := E_0(U; W) - E_k(V; W).* The density epsilon^(k)_c := fine Wilson energy of the minimal composite lift on the shadow of c, minus |theta_c|^2, is local with tree decay uniformly in k, by Prop AN3; K-hat(0) = 0 by the exact lift at all levels; so rearrangement as in Section 2 gives this with only an upper bound. So the reading at the top is direct, with no chain.
+
+**Sup flux falls.** f_j <= f_{j+1}/4: non-concentration, Consequence 2 of Prop 10', at threshold f_{j+1} in place of T. Its proof is scale free below T: the trial's energy, Lemma U's smallness, the bump, all scale with the threshold, and L_0 does not change.
+
+**Proposition GS (implication of these three).**
+
+    sum_{j<k} I^grad_{j+1}(V_{j+1}; W) <= B_g(L) ( I^grad_k(V; W^+) + (f_k + nu_k) E_k(V; W^+) ) + (toron term),
+
+*with B_g(L) free of k.* Sum Lemma EX over the chain and use (TS). The errors are C(L) (f_{j+1} + nu_k s_{j+1}) E_{j+1}(V_{j+1}; W), geometric in the level, as E_{j+1}(W) <= E_0(W) + small <= C E_k(V; W^+) by Lemma TOP. **Every constant may depend on L. There is no inequality here that has room only in L^-2.**
+
+*Why (a) and (b) are both kept.* (a) gives each level's term, with s^2. It reads fine-level Weitzenboeck with an L^4 bound on F, and (AD). (b) gives the sum, reading only local Taylor and an exact one-level positivity. (b) is what the value clause reads. The direct sum of Section 3B reads (b) at first variation, and (a) at the field only.
+
+## 3B. Low orders of R_k by one direct sum and an interpolation (level of each term; replaces Sections 5, 6 of the closure for n <= 4)
+
+(CS) has a derivative form. With Lambda_m : D_k -> D_{k-m} the composite lift of m levels, Lambda_0 = id, R_k = sum_{m >= 0} Z_{k-m-1} o Lambda_m. So low orders of R_k need no recursion of their own. They need a bound on one composite, free of m.
+
+**(COMP): what is read of the classical composite, uniformly in the level.** For V in D_k, s := L^-m, theta := plaquette angles of Lambda_m(V), delta_b := derivative along a top bond b, with rate mu in top cells, sums over the cells c of a top cell c_k, constants C(L) free of k, m:
+
+    (i) sum_c |theta_c|^4 <= C s^4 f_loc^4,     sum_c |delta_b theta_c|^2 <= C w_b(c_k),     sum_c |delta^2_{b b'} theta_c|^2 <= C w_{b b'}(c_k);
+    (ii) sum_c |grad theta_c|^2 <= C s^2 I_k(V; w_{c_k}).
+
+(i) is (R3) by scale counting, and Prop AN3 in the energy norm. (ii) is Section 3 with n := k, at the field only, where the multiplier is exactly conserved and the comb cancels. *So no H^2 at a variation is read, and no (delta Q^*) lambda.* That is what the attack on this statement found: a first form asked (ii) at first and second variations, and I had named that hardest.
+
+**Lemma EX2 (the sum over levels at first variation; level of each term).** *With b_m(b; W) := sum over level-(k-m) cells of W |grad delta_b theta|^2: sum_m b_m(b; W) <= C(L), for W growing at a rate below the kernel's.* Differentiate (TS) twice along b, with h := Lambda' b, h^2 := D^2 Lambda[b, b]:
+
+    D^2 Y_k(V)[b, b] = sum_j ( D^2 e_j(V_{j+1})[h, h] + D e_j(V_{j+1})[h^2] ).
+
+The left side is at most C(L), by Prop AN3 uniformly in k. In the first term, 2 Q_{V'}[delta F] has delta F nearly closed: d_{V'} delta F = [F, h], at most |F| |delta F| in the gauge at x, so Lemma EX's Steps 3, 4 give at least c_1 b_m - C(L) f ||delta F||^2, and f falls geometrically while ||delta F||_{l^2} is bounded by (i). The second term is <Delta F, K Delta delta_{h^2} F> up to cubic terms, at most C ||grad F||_{l^2} ||delta_{h^2} F||_{l^2} <= C(L) s by (i), (ii). Geometric. So the sum closes, reading no H^2 at a variation. QED at this level.
+
+**Proposition DS.** *Let Z = sum_x zeta(x; .) be gauge invariant on D_{j+1}, with zeta rooted at x in tree-decay norm up to order 4, of size at most 1, zero F^2 coefficient after the rearrangement of Section 2. Then for n = 1, 2, with sum_m read over levels with sources of norm at most 1,*
+
+    sum_m || Z_{k-m-1} o Lambda_m ||_n <= C_n(L).
+
+*Proof.* zeta is the rearranged quadratic part, minus (1/4) sum_y K(y) |Delta_y F|^2, plus c(x; .). In the axial gauge at x a variation of F has link size |delta F|, up to the tree weight, by radial homotopy. So |D c[h]| <= C |F|^2 |delta F|, |D^2 c[h, h']| <= C (|F| |delta F| |delta' F| + |F|^2 |delta^2 F|), by Taylor to order 4 of zeta at x. Sum over a top cell: at order 1, at most (sum |F|^4)^{1/2} ||delta F||_{l^2} <= C s^2 f^2. At order 2, by Hoelder and the lattice Sobolev bound, (sum |delta F|^4)^{1/2} <= C (b_m + s^2): at most C s f (b_m^{1/2} + s) ||delta' F||_{l^2} + C s^2 f^2. Geometric. The quadratic part: at order 1, <Delta F, K Delta delta F>, at most (a_m b_m)^{1/2}, with a_m from (ii), and Cauchy-Schwarz over m with Lemma EX2 and Prop GS. At order 2, <Delta delta F, K Delta delta' F>, at most (b_m b'_m)^{1/2}, the same; and <Delta F, K Delta delta^2 F> at most a_m^{1/2} ||delta^2 F||_{l^2} <= C s. Tree decay: by the weights, with half the rate. QED at this level.
+
+*Orders 3, 4: by interpolation, not by a sum.* For bonds b_1, b_2, b and t := T_2: |D^3 Z[b_1, b_2, b]| <= |D^2 Z(V e^{t b})[b_1, b_2] - D^2 Z(V)[b_1, b_2]|/t + t |D^4 Z[b_1, b_2, b, b]|/2. The difference is at most min( 2 B_2 Phi(d_12/2), C Phi(d(b, {b_1, b_2})/2) ), by (Loc^c) at order 2, which the same sum gives. So D^3 has tree decay at half the rate. Likewise D^4 from D^3 and D^5. So ||R_k||_3, ||R_k||_4 <= C ( T_2^-2 (B_1 + B_2) + T_2 B_5 ), at the rates mu/2, mu/4. Lower rates are enough for these orders, as a lift multiplies a rate by L. **So B_3, B_4 depend on a_*, which is allowed: B's come before x_* and are read only through g^2.**
+
+*The second tier needs no ladder.* A tier of Z_j at rate mu_s in cells of level j + 1 has rate L^m mu_s in top cells, with coefficient zeta_j <= C zeta_k. So it stays inside the profile Phi_k, at every m.
+
+**Consequence: (VAL), (Loc^c) and low orders are one statement.** (VAL_k) is n = 0 of the same count, or Prop GS with SRC. (Loc^c_k) is direct: each term Z_j o Lambda_m is local, in any sector, by Lemma O2 and Theorem F-D, so no recursion is needed for it, and Section 5 below is a second proof. See `library/one-step-closure.md`, Section 10.
+
+## 4. The value clause
+
+**Theorem VAL (implication).** *Given SRC and Prop GS, for all k and V in D_k, in every sector:*
+
+    |R_k(V)| <= B_v(L) ( I^grad_k(V; 1) + f(V) E_k(V) + N_k^4 Phi(e^-8 N_k / 4) ),    f(V) := the largest flux of V.
+
+*Proof: (CS); SRC at each level; Prop GS for the gradient parts; the cubic parts are at most f_{j+1} E_{j+1}, geometric by "sup flux falls". The toron term falls superexponentially going down, as N_j = L^{k-j} N_k. Every constant may depend on L.*
+
+For an instanton of radius rho at level k, this is B_v rho^-2 <= B_v T: the lattice artefact (a/rho)^2 in the instanton's action, as it should be. So there is no constant per unit of charge. (FF_j)(Lo), (FF_j)(U) read this.
+
+**(Jump) is not consumed.** An earlier form of this section proved |R_k(V_1) - R_k(V_2)| <= B_j T_2^2 |J^+| for fields equal off J, by a near and a far zone, and I had put it in H(k). Attacking its far zone found that it needed a telescoping of the difference field, with the difference read at each level. Then I saw that the one consumer, Step 4 of Theorem Z, does not need it: in Step 4 the region is everything inside Sigma, nothing is integrated beyond it, and the crude bound C n is all that is asked. So Step 4 reads (VAL^𝔡) of Section 6, and (Jump) is removed from H(k). It is likely true, and I do not claim it.
 
 ## 5. (Loc^c_k): locality back in the hypothesis, class fields only
 
@@ -137,13 +200,23 @@ Sum over m. QED given SRC, LIFT-I, O2, F-D.
 
 *Lemma 3 of the Taylor note, corrected.* Its proof read "at s = 0 the field is trivial on a ball of radius r/2, so its derivatives differ from those of the trivial field by C e^{-mu r/2}: this needs only tree decay ... along a path of class fields". Across sectors there is no such path. The step now reads (Loc^c_k), which has no path. Separately, its flux factor 1 + C a r^2 omitted d chi ^ A, which is of order a |x| |grad chi|. With the logarithmic cut-off, the factor is at most 5/4 for a r^2 small, at a fixed loss in r. So its statement needs the formula range to have that room. T_2 is fixed only through a_* small, so H(k) is stated on D_k with T_2 enlarged by a fixed factor 5/4. Nothing else in the closure reads this constant.
 
-## 6. With boundary data
+## 6. With boundary data: the region clause
 
-Theorem Z's Step 4 reads R + Delta R^𝔡. For the boundary term a crude value clause suffices:
+Theorem Z's Step 4 reads values only inside a layer family. Define, for class W on the free part R_l^𝔡, with a reference W_ref(𝔡) fixed by the data:
 
-    (VAL^𝔡_l)  |Delta R_l^𝔡(V_1) - Delta R_l^𝔡(V_2)| <= D_v(L) ( number of cells of the boundary surface within r_1 of J ).
+    R_l^𝔡(W) := [F_l^𝔡 - x_l A_l^𝔡](W) - [F_l^𝔡 - x_l A_l^𝔡](W_ref).
 
-*Recursion.* Delta R_{l+1}^𝔡(V') = Delta R_l^𝔡'(V^*(V')) + (G^𝔡 - G^bulk)(V'), by the same subtraction as (CS). (i) G^𝔡 - G^bulk: order the boxes; only boxes within r_1 of the surface have g_i^𝔡 different from g_i^bulk beyond the tail, and each term is bounded by C(L), by O1 and the convexity in Theorem F-D. (ii) The old term: Sigma_l lies under frozen parents, at distance at least r_S parent cells from free bonds, so the two lifts agree on the old term's support up to e^{-delta_# r_S}, on a connected ball, so derivatives apply. That gives C L^3 e^{-delta_# r_S} D_v <= (1/2) D_v per surface cell, by r_S >= (4 log L + C)/delta_#, as in the count for norms. If J meets the sheet Sigma_l itself: then the old term is bounded by its own clause at the level below, and it is counted in n. So D_v(L) := 2 C(L). QED of the sketch.
+**(VAL^𝔡_l).** *|R_l^𝔡(W)| <= B_r(L) n, with n the number of free bonds at level l, uniformly in 𝔡 and l, in every sector.*
+
+*Chain.* V_l := W, and V_j := the region minimiser on the fibre of V_{j+1} between the layers. All class, as the layers are quiet. By the same subtraction as (CS), with the region's own one-step sources, R_{j+1}^𝔡(V') = R_j^𝔡(V^{*,𝔡}(V')) + Z_j^𝔡(V'). So R_l^𝔡(W) = sum_{j<l} Z_j^𝔡(V_{j+1}), and nothing is integrated beyond Sigma, so there is no far zone.
+
+*Interior.* Let W_0 be a top-level cut-off on the free cells, with rate about 1/r_S. Under free level-l cells there are no lower layers, beyond a margin r_S, by clearance. SRC holds there, with the ordered integration in the region, and Prop GS with the weight W_0: the sum over levels is at most C(L) (T_2^2 + nu) n.
+
+*Near a lower layer.* Let Sigma_{j+1} be a layer below the top. It lies under frozen parents, and free parents are at least r_S away. So V_{j+1} near Sigma_{j+1} depends on W only through a kernel across r_S: if delta_{j+2} is the size of the dependence one level up, then delta_{j+1} <= e^{-delta_# r_S} delta_{j+2}. The boxes near that layer have one-step sources bounded by C(L), and their dependence on W is at most C(L) delta_{j+1} per box. Number of cells of the layer at m levels down: L^{3 m} |surface|. So their total is at most sum_m C(L) (C L^3 e^{-delta_# r_S})^m |surface|, and C L^3 e^{-delta_# r_S} <= 1/2 by r_S >= (4 log L + C)/delta_#. So this part is at most C(L) |surface| <= C(L) n. *These surface sources are large in themselves, as data next to a sheet do not scale down; their part that does not depend on W goes into the reference and cancels.*
+
+*At the top face.* Boxes next to Sigma_l: at most C(L) per box, by O1. QED at this level.
+
+Bulk derivative norms are as before: R_l at a class extension plus Delta R_l^𝔡, with contraction by clearance. That split serves derivatives only. Values read the chain above.
 
 ## 7. Numerics
 
@@ -154,6 +227,8 @@ Criteria written first, in each script. All under the lock.
 `checks/hard-core--mapped_lift_gradient.py`, the abelian (LIFT-I): **FAIL on L2, on caps I had guessed.** L0: comb against line-only, 7e-13, 9e-13 in plaquette angles; the Fourier ratio against a direct solve, all digits printed. L1 passes. L3 passes, R at most 0.85. L2: C(4, L, 1) = 16.96, 30.28, 37.56, 41.57, 43.93 at L = 3 to 11, above the cap of 30, with C(11)/C(7) = 1.17 above 1.15. Composite: 16.96, 16.01, 16.00 at L = 3, n = 1, 2, 3; 30.28, 26.02 at L = 5, n = 1, 2. Follow-up `checks/hard-core--mapped_lift_gradient_limit.py`: **FAIL on M3 only.** C = 45.41, 47.06, 47.90, 48.81 at L = 13, 17, 21, 31, with falling increments; a fit at L = 9, 11 alone gives C_inf = 48.70 and predicts C(31) within 1.5 percent. Symbol g in [1.026, 12.09], above my cap of 10. **So in the abelian sector C_0 is about 50, with no growth in L or in the number of levels: a measurement, on a grid of momenta, with its peak at the zone corner.** With that, C_0 L^-2 <= 1/2 for L >= 10.
 
 `checks/hard-core--mapped_lift_su2.py`: **PASS, run once at these criteria** (smoke runs before it fixed the solver: my first block map had a linear gauge rotation from the jet check, not gauge covariant, which made SQP drift along gauge directions). d = 2, SU(2), one level, the comb, a true constrained minimiser; constraint residual at most 2e-12 and projected gradient at most 4e-6 wherever converged. Commuting parents: R = 2.0014, 2.1434 against the abelian 2.0194, 2.1626, and the difference is the cubic share of the denominator, 0.9 percent. Non-commuting, random low modes: R between 2.7 and 9.4 at L = 3, 5, 7. X(0.05) between -0.0045 and -0.0057, and X(0.1) between -0.011 and -0.014, which is about minus the change in the denominator's cubic share, 1.5 to 2.2 percent, so the true excess is under half a percent at L f^2 = 0.07. One case, L = 3, seed 2, f = 0.1, did not converge and is not used; f = 0.2 failed in a smoke run, as the Gauss-Newton Hessian omits lambda D^2 M. **So no non-abelian excess is seen, and the count (AD) is far from saturated on these parents. This is weak evidence:** d = 2, low modes, random and not adversarial, one level, and the d = 4 count differs.
+
+`checks/hard-core--mapped_excess.py`, on Section 3A: **PASS** (a first run was stopped: its toy and SU(2) parts used the d = 4 normalisation in d = 2, so the excess came out negative; fixed, criteria unchanged). E1: c_e as above. E2: at (L, n) = (3, 2), (3, 3), (5, 2), E_(n) - E_(1) >= 0 as forms, control 6e-15. E3: |Z|/e in the toy with sectors: 0.01036 to 0.01018 for a charged patch at n = 4 to 10, 0.00841 to 0.00837 for a neutral pair; so the source is dominated by the excess, at the same ratio in both sectors. E4: SU(2), d = 2, non-commuting parents, a small random search: smallest e/|grad' F'|^2 = 0.02339, 0.02341, 0.02346 at L = 3, f = 0.02, 0.05, 0.1, and 0.00942, 0.00949, 0.00973 at L = 5, against the abelian 0.02339, 0.00941. So the non-abelian ratio does not go below the abelian bound on these parents. Six solves at f = 0.1 did not converge, and are not used. Weak as a search, as before.
 
 `checks/hard-core--mapped_staircase.py`: **PASS.** No pinch for any i in d = 2, 3, 4 at N = 4 and d = 2, 3 at N = 6, seams included; in d = 4 at every third i. Control: the checkerboard has 16.
 
@@ -183,4 +258,14 @@ Criteria written first, in each script. All under the lock.
 
 (13) *The rate in Lemma O2.* S_t's Hessian is a convex combination of two operators, each with an absolute rate by Theorem F-D. That does not give an absolute rate for the combination: only Combes-Thomas, from its two-sided bound, so a rate mu_c(L) falling with L. So read Phi in O2, in the tail of O3 and in (Loc^c) at a rate mu_c(L) <= mu, and w_x at a fixed fraction of it. Does anything need the absolute rate? (a) r_* >= (c/T_2)^{1/2} and mu_c(L) r_* is large, as a_* comes after L. (b) r_1 := (2/mu_c) log(1/T_2). (c) LIFT-I smears by e^{-rho d} with rho absolute, and a slower weight is unchanged by this. (d) (Loc^c) recursion: the factor is C^n L^{4 - n} e^{-mu_c (L - 1) r'/2}, which is below 1/2 only for r' >= r_min := C log L/(mu_c L); below r_min, the trivial bound holds if D_n >= 2 B_n e^{mu_c r_min/2}. So D_n changes, not the form, and C_w(L), B_v(L), B_j(L) depend on mu_c(L). Fine: all these come before a_*, except that r_1 reads T_2. So B_j's J^+ is larger by a factor (log 1/T_2)^4, read only through n, with C(L, a_*) n log x already there.
 
-(12) *What I have not done.* The reflection extension pattern by pattern on the staircase; a written estimate for g-hat in the non-abelian background beyond its symbol; the fine-level Weitzenboeck in lattice form, whose lattice Bianchi term I bounded by a count; a test of SRC in d = 4 or in SU(2) in any sector.
+(14) *Attack on (TS) and Lemma EX: does e_j have the right sign at level j, when V^* minimises A_j and not A_j^W?* Lemma EX does not use minimality for A_j^W. It uses that the lift lies in the fibre, so it is at least the one-level Wilson minimum, at second order at flat data. E2 checks this for composites. Yes.
+
+(15) *Attack: K-hat(0) = 0 "on all 2-forms" from constant flux.* Constant flux in the Cartan direction has an exact lift, for all orientations of plaquette at once, if the constant 2-form is closed, which any constant is. So F-hat at P = 0 is any 2-form in one colour. Non-commuting constants are not exact, but at second order only one colour at a time is read, by polarisation in colour. Yes.
+
+(16) *Attack: IMS at r = f^-1/2 when f is the global maximum and most of the field is much smaller.* The error is then pessimistic: C(L) f E, with f set by one hot cell. A local scale would be sharper, and nothing reads that.
+
+(17) *Attack on a first form of Prop DS for n <= 4: the term <Delta D^2 F, K Delta D^2 F> at n = 4 read H^2 at second variation, and <Delta delta F, K Delta D^2 F> at n = 3 needed a sum of b_m^{1/2}, which Lemma EX2 does not give.* So the sum stops at n = 2, and orders 3, 4 go by interpolation with order 5, reading (Loc^c) at order 2. The cost is rates mu/2, mu/4, and B_3, B_4 depending on a_*. *Attack on that:* does anything read B_3, B_4 before a_* is fixed? Section 4 of the closure has C_n(L) times lower norms, so B_5 <= (1/4) B_5 + C_5(L) (C T_2^-2 B_2 + C T_2 B_5 + 1): this needs C_5(L) C T_2 <= 1/8, as a_* comes after L. Then B_5 depends on a_*. It is read only through g^2, as x_* comes last. No circle.
+
+(18) *Attack: order loss in Z_j.* The mean term has <R_j o Phi> - R_j o V^* of size g^2 ||R_j||_{n + 2} at order n. So Prop DS, which reads Z_j to order 4, reads ||R_j||_{<= 6}. That is why orders 5, 6 keep the recursion of Section 4 of the closure, with its room L^{4 - n}: they cannot be done this way. So closure reads C_1 absolute at orders 5, 6 still. See Section 10 there.
+
+(12) *What I have not done.* The reflection extension pattern by pattern on the staircase; a proof of c_e > 0 over all P, beyond the main alias and a grid; the fine-level Weitzenboeck in lattice form for (COMP)(ii), whose lattice Bianchi term I bounded by a count; a test of SRC in d = 4 or in SU(2) in any sector; a test of Lemma EX2 in SU(2) at two levels.

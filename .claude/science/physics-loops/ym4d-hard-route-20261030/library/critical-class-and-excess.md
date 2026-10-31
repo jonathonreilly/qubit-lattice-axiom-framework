@@ -1,5 +1,7 @@
 # The class and the energy excess
 
+**Superseded (2026-10-31).** The classical inequality is now (CI''') by greedy descent in `library/relative-density-bound.md`, Props 10, 10', with one threshold T, no K_0, and no `Cut and Poincare`, `Relative chart` or `Shift bound`. This note is kept for its failure log only. The Excess Lemma below is not used.
+
 Producer: `parts/hard-core--mapped.md`, Text 5. Status: the Excess Lemma is proved given the five inputs listed. Not reviewed. The closure bound in the producer (Prop R1, Text 5.2) no longer uses this lemma: it uses additivity of the classical energy and Jensen, which removes `Relative chart` and `Shift bound`. This note is kept for the arithmetic of the thresholds T_c, T_f, K_0, the leaf `Cut and Poincare`, and the failure log.
 
 Credit: constrained minimal configurations are Balaban's (CMP 102). The argument below, expansion at the reference on the exterior with the hole's own energy kept separately, is mine. It does not use the account.

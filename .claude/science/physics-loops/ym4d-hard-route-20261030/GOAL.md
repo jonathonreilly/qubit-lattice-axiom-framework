@@ -11,13 +11,20 @@ Started 2026-10-30 at the owner's direction, on Claude. This is research-stage w
 
 T1: SU(2) lattice Yang-Mills with the Wilson action has a non-trivial, reflection-positive, hypercubic-invariant limit on R^4 as the spacing goes to zero, for local gauge-invariant observables at separated points, along a coupling trajectory the proof chooses.
 
+**Non-trivial** (draft definition by the target lead, 2026-10-31; T1 did not define it before) means both of these hold in the limit:
+
+- **NT1, dynamics.** H is not zero on the orthocomplement of the vacuum. A correlator that is merely non-zero does not show this: a static random constant field has a non-zero connected correlator at every separation (`gates/net-tier-upper-chain-c3242879df.md`, D1).
+- **NT2, interaction.** Some correlator of gauge-invariant observables differs from its value in every law of gauge-invariant functions of a Gaussian potential, three free Maxwell copies included. Gaussian composites already have non-zero connected correlators, so the test has to separate from them, not from zero.
+
+**Milestone, not T1:** "UV stability on the bounded net" (`parts/upper-chain.md`, Text 10, with the repairs in the gate above). It says the coupling stays fixed at a physical scale. It is not evidence of NT2, and it is not a Haag-Kastler net.
+
 Later targets, not on this critical path: O(4) invariance, N >= 3, and the mass gap.
 
 ## Critical path
 
 1. **hard-core:** all-scale UV stability for hard-constraint block RG in four dimensions, including large fields. Balaban's series (CMP 95, 96, 98, 99, 102, 109, 116, 119, 122) is the known structure. The literature carries no weight here: until rebuilt, each step is an open obligation. Raced by two attempts.
 2. **upper-chain:** from the interface below to volume-free local bounds, a joint limit on R^4, and reconstruction on separated tests.
-3. **witness:** non-triviality. Not started; it opens when the upper chain states what it delivers.
+3. **witness:** non-triviality as defined above. Opened 2026-10-31, `parts/witness.md`.
 
 ## Interface statements
 
@@ -35,6 +42,8 @@ Why UV-EXT was dropped (upper-chain Theorems 3 and 4, Proposition 5): the varian
 Gate at `gates/uv-ct-upper-chain-41489e4876.md`, same-model: the implications hold and UV-CT is open. CT3 carries all the separated content, E is forced close to log G, and CT4 cannot be verified at Gaussian order.
 
 Credit: the form with a counterterm and position-dependent sources comes through `parts/hard-core--mapped.md` from the Sussman-Alpoge account. So the independent attempt now shares this interface wording with that account, though not its proofs.
+
+**UV-OS (draft, alternative to UV-CT, not a replacement).** One-step statements at constant coupling, with no source in the RG: `parts/upper-chain.md`, Text 16. Ruling after `gates/field-tier-upper-chain-c3242879df.md`, same-model: the two are logically incomparable, so the swap is a trade and not a reduction, and both stay open. The hard core may deliver either; the induction at w = 0 is needed by both. Under UV-OS, the regular tier and the step from the mark to the moment bound hold given the clauses. The rough tier fails as written, so UV-OS does not yet deliver the moment bound: (K3) is not preserved, one clause is false in the free theory, and neither hard-core attempt comes near (GS_j)(e3).
 
 ## Model floors
 

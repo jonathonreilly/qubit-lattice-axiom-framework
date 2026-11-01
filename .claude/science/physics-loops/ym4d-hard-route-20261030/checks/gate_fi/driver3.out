@@ -6,3 +6,6 @@ R2 runs 36 max Ratio_C 0.9999998187796463 by L {3: 1.0, 5: 1.0, 7: 0.999997}
 PC runs 16 max Ratio_C 2.4474290032376236 by L {5: 1.48208, 7: 2.447429, 9: 0.973544, 11: 0.908612}
 {"L": 3, "start": "sheet", "steps": 4000, "best_A": 9, "L2": 9, "best_ratio": 0.9999944179325837, "final_A": 376, "acc": 810, "secs": 61.1}
 {"L": 3, "start": "sheet_off", "steps": 4000, "best_A": 9, "L2": 9, "best_ratio": 0.9999944195199675, "final_A": 334, "acc": 651, "secs": 61.2}
+{"L": 5, "start": "sheet", "steps": 4000, "best_A": 25, "L2": 25, "best_ratio": 0.9999817545008015, "final_A": 381, "acc": 102, "secs": 73.4}
+{"L": 5, "start": "sheet_off", "steps": 4000, "best_A": 25, "L2": 25, "best_ratio": 0.9999817572935382, "final_A": 390, "acc": 107, "secs": 73.3}
+{"L": 7, "start": "sheet", "steps": 4000, "best_A": 49, "L2": 49, "best_ratio": 0.9999630568858393, "final_A": 318, "acc": 56, "secs": 116.9}

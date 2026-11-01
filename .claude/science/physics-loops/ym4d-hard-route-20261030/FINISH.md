@@ -57,8 +57,10 @@ Take the first item that is not taken, unless the lead has named one for you. An
 | 19 | `compute-inventory-2` | neutral | done | One more statement rests on a run, and four more steps can't be formalized as written. | `gates/compute-inventory-2-28e261c17.md` |
 | 20 | `hand-upper-2` | neutral | high | From the Upper chain section of `gates/compute-inventory-2-28e261c17.md`: write the F20.1 signed-activity example with rational weights by hand, or keep only the missing-denominator objection, and prove Theorem 4's massive Green limit with a stated order of limits. | `library/upper-chain-by-hand-2.md` |
 | 21 | `energy-gate` | mapped | done | Six requested statements CORRECT-NO-ADVANCE; (LIFT-1) and the local fine-energy claim WRONG by hand counterexamples; own-level bookkeeping, (4.2) algebra and the small-cube charge ADVANCE. | `gates/energy-stages-codex-b87de884f.md` |
-| 23 | `upper-hand-gate` | neutral | low | Cross-provider gate on `library/upper-chain-by-hand.md`. | `gates/upper-hand-codex-<commit>.md` |
-| 24 | `shell-end` | mapped | high | Attack (SHELL) and (END) of TOP-W, or (LOC-MIN). | `library/excess-shell-end.md` |
+| 23 | `upper-hand-gate` | neutral | done | ADVANCE on the rebuilt inequalities and Theorem N, after a sign repair in Lemma M; the claimed application after eliminating the middle variable lacks a mixed-block bound. | `gates/upper-hand-codex-f3aa2a8c5.md` |
+| 24 | `shell-end` | mapped | done | FALL needs only (UP), by way of (WAM) or (E-SHELL). Open: (GLUE-E), (LC). | `library/excess-shell-end.md` |
+| 25 | `seam-lc` | mapped | high | Prove (LC), then (GLUE-E), and settle the rate condition b_s nu_* <= 1/2 against the consumer. | `library/excess-seam.md` |
+| 26 | `shell-gate` | mapped | high | Gate `library/excess-shell-end.md`, written by Codex: does (INPUT) + (UP) really give the FALL that DS reads; are (WAM) to (UP) and (E-SHELL) to (WAM) right; do the two-site and tensor tests test the right thing; does the rate condition (b_s nu_* <= 1/2) survive the mapped order of constants? Do not read the `seam-lc` output. | `gates/shell-end-<commit>.md`, `checks/gate_se` |
 | 22 | `hand-ab` | independent | high | Prove (AB) for the adapted domains of Lemma 4.5h, or change the domains so that they are generated patterns and recheck the covering. | `library/adapted-domains.md` |
 
 ## Joining

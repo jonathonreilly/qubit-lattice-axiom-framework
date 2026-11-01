@@ -63,7 +63,7 @@ Let Z(y) := integral_(K_x) exp(-S(x, y)) dx, with values in [0, infinity]. Then 
 
     (1/2)[ S(u, y + eta) + S(v, y - eta) ] - S(w, y) >= (1/2) eta . Sigma eta.
 
-Apply Lemma PL to f := 1_(K_x) exp(-S(., y + eta)), g := 1_(K_x) exp(-S(., y - eta)), h := 1_(K_x) exp(-S(., y) + eta . Sigma eta / 2). []
+Apply Lemma PL to f := 1_(K_x) exp(-S(., y + eta)), g := 1_(K_x) exp(-S(., y - eta)), h := 1_(K_x) exp(-S(., y) - eta . Sigma eta / 2). Lemma PL then gives exp(-eta . Sigma eta / 2) Z(y) >= (Z(y + eta) Z(y - eta))^(1/2). []
 
 The Schur complement here depends on the point. That is why the minimum over xi has to be taken at each s, and the display "Hess >= S_yy - S_yx S_xx^-1 S_xy" of Step 4 means this uniform form. Monotonicity is immediate from the same minimum: if Hess S >= A, a constant positive definite matrix, then eta . Schur(Hess S) eta = min_xi (xi, eta) . Hess S (xi, eta) >= min_xi (xi, eta) . A (xi, eta) = eta . Schur(A) eta. So Lemma M holds with Sigma := Schur(A), which is the statement used after eliminating a middle variable.
 
@@ -99,7 +99,7 @@ Let G_t := (Q_t g - g)/t. Then 0 <= G_t <= B := l^2 / (4 c), since g(x) - g(z) <
 
     d_i S-tilde = E_z[S_i],   d_i d_j S-tilde = E_z[S_ij] - Cov_z(S_i, S_j).
 
-That is the identity the inventory asked for, and the formula printed for S-tilde_xy. Lemma M with z in the role of x and Sigma := Schur(A) gives Hess S-tilde >= Schur(A) by Corollary M', and this bound did not need the identity. As a by-product, Cov_z(e . S_w, e . S_w) <= E_z[e . S_ww e] - e . Schur(A) e, which is the Brascamp-Lieb statement in the only form used here. So the first main theorem applies to S-tilde with A_x, A_y the diagonal blocks of Schur(A).
+That is the identity the inventory asked for, and the formula printed for S-tilde_xy. Lemma M with z in the role of x and Sigma := Schur(A) gives Hess S-tilde >= Schur(A) by Corollary M', and this bound did not need the identity. As a by-product, Cov_z(e . S_w, e . S_w) <= E_z[e . S_ww e] - e . Schur(A) e, which is the Brascamp-Lieb statement in the only form used here. The first main theorem still needs the normalized mixed-block bound ||A_x^(-1/2) S-tilde_xy A_y^(-1/2)|| < 1, and the Schur lower bound does not supply it: for S = (100 x^2 + 198 x y + 100 y^2 + z^2)/2 and A = I, the bound holds and the normalized mixed block is 99 (gate `gates/upper-hand-codex-f3aa2a8c5.md`, defect 2). So that application is a gap with these constants.
 
 **Still a citation.** The bound on the mixed block in the library uses the Helffer-Sjostrand representation Cov_z = E_z < grad_z S_x, L^-1 grad_z S_y > and the sign of the Bochner term on a box. Neither is rebuilt here. So the marginal inequality and the reduction to the first theorem are discharged, while the printed rate r <= C (H_max / kappa)^2 exp(-mu' D) keeps that one literature input. Label: gap, outside this item.
 
@@ -164,7 +164,7 @@ and, for the increments on the block, the energy is
 
 the second from y^2 = M^2 - 4 e_0 and sum e_0^2 = (M^5 - M)/30. Also sum (1 - m/M) = (M - 1)/2 and sum y (1 - m/M) = -(M - 1)(M - 2)/6. (C) is equivalent to sum g = -tau A and sum y g = tau A M. These read a sum e_0 = -A (tau + (M - 1)/2) and b Y = A (tau M + (M - 1)(M - 2)/6), which are the definitions of a, b. For (En): w := a e_0 + b e_1 vanishes at 0 and M, so mean delta g = -A/M and the mean of delta w is 0. With D^2 w(m) := w(m + 1) + w(m - 1) - 2 w(m), we have D^2 e_0 = -2, D^2 e_1 = -6 y, since D^2 m^3 = 6 m and D^2 m^2 = 2. Summation by parts gives sum_(m=0)^(M-1) (delta w)^2 = -sum w D^2 w = 2 a^2 sum e_0 + 6 b^2 Y = a^2 M (M^2 - 1)/3 + b^2 M (M^2 - 1)(M^2 - 4)/5, the cross terms vanishing by parity. Substitute a, b. []
 
-g is the minimizer of the energy on one block under (C), which is why a cubic and nothing else appears. The trial (1 - u)(1 - 4 u) of Text 23.5 has energy (16/3) A^2 / M but fails the second equation of (C). This cubic at tau = 0, M large, is A (1 - u)(1 - 8 u + 10 u^2), of energy 8 A^2 / M.
+g is the minimizer of the energy on one block under (C), which is why a cubic and nothing else appears. The trial (1 - u)(1 - 4 u) of Text 23.5 has energy (16/3)(A^2 / M)(1 - M^-2) but fails the second equation of (C). This cubic at tau = 0, M large, is A (1 - u)(1 - 8 u + 10 u^2), of energy 8 A^2 / M.
 
 ### 3.4 The construction
 

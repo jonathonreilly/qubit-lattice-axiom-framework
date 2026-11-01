@@ -11,6 +11,8 @@ Repair session, 2026-11-01: source commit `0b13f39d269f19602ed3fee11fc146989029a
 
 Weighted-comparison session, 2026-11-01: pinned source `216dcff7e69c1565c4a43d3cdb0a7ecc6341eb56`, mapped side, OpenAI Codex. Scope: H-W first, then only its dependent items if it closes. Stopped at item 1: a localized-weight obstruction to the unrestricted form, and the exact missing nonlinear comparison for the slow-weight form. Details: `library/excess-weighted-fibre-stop.md`. No Lemma EX proof is changed. This is a bounded author investigation, not an audit or independent gate. No numerical computation was run; earlier numerical results below belong to their original sessions.
 
+Weaker-target session, 2026-11-01: `library/excess-shell-end.md`, by Codex at f3aa2a8c5, mapped side. FALL needs less than TOP-W: (UP), by way of (WAM) or (E-SHELL), with C_TOP allowed to depend on L. The implications are written; (GLUE-E) and the linear (LC) are the named gaps, and a rate condition b_s nu_* <= 1/2 needs checking against the consumer. Not yet read by another provider.
+
 Consumer-weight continuation, 2026-11-01: pinned source `8e7fd0a79b46f32924c1bd85574efa13c34a827b`, OpenAI Codex, mapped side. The live record is `library/excess-consumer-weight-continuation.md`; this part remains the recovery checkpoint. Bounded author work, no independent review, audit or numerical run. The user explicitly excludes other parts, gates on the independent attempt, commits, pushes and subagents. Lemma EX and its proofs are preserved.
 
 ## 0. Summary

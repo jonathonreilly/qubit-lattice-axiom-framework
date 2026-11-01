@@ -6,3 +6,4 @@ resume a at outer 0
 RSS above 2 GB
 resume a at outer 0
   a outer 1 evals 70 |g_L|=1.261e-05 |r|=1.234e-02 S=82.13101297 E=82.13183854 t 420 rss 1.67
+  a outer 2 evals 55 |g_L|=1.925e-05 |r|=7.813e-03 S=85.09261941 E=85.09348551 t 755 rss 1.67

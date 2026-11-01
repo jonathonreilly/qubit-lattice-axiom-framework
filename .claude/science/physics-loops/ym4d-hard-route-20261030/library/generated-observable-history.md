@@ -8,7 +8,10 @@ Status: **unchecked** conditional finite-history theorem, with a proof below;
 **gap** for the joint uniform moment/locality closure. The continuation at
 8b1efefb1 proves the radius implication and the scalar history sum with
 explicit polynomial budgets; sections 7--8 and history-budget-sum.md state
-its still-unproved locality inputs. This is an author calculation,
+its still-unproved locality inputs. Section 9 records the continuation at
+7f414ab5f: the midpoint extension implication is proved under the explicit
+regular-law clause RC_j and completion premise MC, which remain gaps for
+the actual current. This is an author calculation,
 not independent review or an audit. No lemma from a paper is used. The finite
 probability diagnostics concern the abstract inference, not the Wilson law.
 
@@ -279,10 +282,11 @@ arbitrary mixture, with its conditional mean recomputed in that mixture.
 | Consumer | Exact effect of the replacement |
 |---|---|
 | Texts 14, 20, A-chain/good-set radii | (R20.5) follows under the added (FLOW-UL),(FLOW-END). Both producers must deliver their stated upper flow and terminal window together with quantitative rarity. The radius R_j=x_j^2 is unchanged. |
-| (CF_j)(a) and the source current | CF's full K3 remains a supplied clause. A regular pullback and K1 alone do not prove same-profile K3, for either source; the bounded-shell example makes this distinction explicit. For the current the additional required row is (I-K3). |
+| (CF_j)(a) and the source current | CF's full K3 remains supplied. Regular K1 plus size still does not imply current K3. The new conditional implication is RC_j + MC => I-K3, with the exact regular-law, tierwise endpoint/radius and completion premises in current-locality-reduced-law.md. Those premises are not certified for the actual current. |
+| (C2_j)(c), and Text 18 as a proposed producer | To supply the new sufficient clause RC_j, cover the actual background-dependent G in E^r, identify its chart/cut, and bound its far differences with RC-rates. E^good estimates require a law identification or the full RC-transfer bound. Mapped's Q^s=0 removes the transfer only when domains/cuts agree; it still owes the coefficient and second-tier bounds. The older Text 18 chart and current must be matched before reuse. |
 | Lemma 14.15(a),(b) | Their regular-tier arguments still read K1, K2, K3 of their inputs. No new moment premise is discharged here. |
 | Lemma 14.15(c) | The arbitrary-input uniform closure stays withdrawn. GH plus HS pays the generated history with explicit polynomial budgets, conditional on the output good-event/locality hypotheses. The simultaneous K3 induction is still open. |
-| Lemma 14.16 | h has the exact full-law source recipe and the explicit polynomial source bound in history-budget-sum.md. The current's (I-K3) is a separate missing uniform locality estimate; its pointwise bound from regular K1 is insufficient. No rough-field class membership is promoted. |
+| Lemma 14.16 | The algebraic recipe and h's full-law source identity are retained. The displayed regular estimates now explicitly require their moment/locality bounds in E^r; they are not certified by the printed E^good clause. RC_j + MC would prove only the current K3 row, not regular K1 or the sharper h bound. MC includes the finite-torus completion beyond the printed n<T/4 domain when required. No replacement current or rough-field membership is adopted. |
 | Theorem 14.13(i),(ii) | The identities and reference centering are unchanged. Proposed budgets are A x_j^(3/2) for D,rho and A x_j^(3/2)(a_j/l)w_j for r, with explicit source costs. They remain conditional on the joint locality and regular coefficient induction; the old u/4 recurrence is not proved. |
 | Theorem 14.13(iii), (TR_p) | Uniform all-order moments and the sharper g_j^2 bound under mu remain open. Finite-torus boundedness is insufficient. |
 | Theorem 14.1c, then UV-OS(b) | Use only the generated e^i cells. The finite moment budget and the separation-decay induction are still gaps (gate findings 2,3), even if (H20.5) were closed. |
@@ -468,8 +472,9 @@ K1, polynomial size, and a regular pullback extension to this same-profile
 K3 bound. This is an abstract inference counterexample, not a countermodel
 to (C2_j)(c) or to the specified Wilson current. The stronger regular
 far-difference estimate suggested by (C2_j)(c), including its applicability
-to the current recipe and to E^r, and its preservation by the midpoint
-extension, has not been derived here. Both attempts must check this for
+to the current recipe and to E^r, has not been derived here. Section 9 now
+proves the extension implication conditional on the precise RC_j rates
+and the complete finite-volume MC premise. Both attempts must check this for
 their own current; Q^s=0 removes only the change-of-law part of that check.
 
 **No output used early.** K1 and K3 at j+1 must precede GG at j+1;
@@ -485,3 +490,40 @@ no Q(n), sharper mu moments, or all-partition separation-decay induction
 is proved here. No numerical job, audit, independent review, commit, push,
 PR, or other-file edit was performed in this continuation. The earlier
 numerical outputs in checks/upper-chain-codex/ are previous-run evidence.
+
+
+## 9. Continuation at 7f414ab5f: regular-law gap isolated
+
+**Implication, author proof; unchecked independently.**
+[current-locality-reduced-law.md](current-locality-reduced-law.md) proves
+(RC_j)+(MC) => (I-K3). RC_j bounds the actual regular current in E^r,
+including its background-dependent coefficients, with specified endpoint
+and radius rates in each tier. MC is the regular-completion property of
+the prescribed midpoint extension. The proof compares two completions
+on the same read cube and then uses conditional Jensen for any law;
+no rarity, output good set or history conclusion is used.
+
+**Gap / first honest stop in the requested step 1.** The new implication
+does not establish RC_j for the Wilson current or complete MC outside
+the printed finite-torus pullback domain. Its exact missing inequality
+is RC-far; if the supplied good law is not E^r, RC-transfer is the full
+integrated covariance difference needed to pass between them. Merely
+removing Q^s in the notation does not prove that bound. The producer
+table specifies separate duties for the two attempts, with no shared
+proof. The source-current regular K1 and sharper h estimates also keep
+their correct-law hypotheses; the new implication does not prove them.
+
+**Attacks [discharged algebra, not Wilson counterexamples].** Two regular
+point masses already force the regular pair difference, so rough-shell
+rarity cannot pay that test. A slow exponential with only a power-of-g
+prefactor fails the proposed profile at m proportional to lambda'; the
+ratio is explicit. A sufficiently small cut-activity second tier can
+fit, with the rate and amplitude margins in the new note.
+
+**Consumers and stop.** The table in section 4 records the extra premise
+for (C2_j)(c), the qualified regular estimates of Lemma 14.16 and the
+unchanged open joint closure. Requested steps 2 and 3 were not entered.
+The regular z/beta induction, weighted/profile transport margins, higher
+moments and cumulant level sums remain open. The radius and HS results
+of the previous continuation retain exactly their earlier conditions.
+No numerical experiment, audit, subagent, commit, push or PR was used.

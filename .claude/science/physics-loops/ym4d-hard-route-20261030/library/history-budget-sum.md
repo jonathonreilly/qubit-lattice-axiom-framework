@@ -6,6 +6,8 @@ table). Continuation, 2026-11-01. **Implication** statements below are author
 proofs, **unchecked** by an independent reader. **Gap** means an unproved
 input, not a counterexample to Wilson Yang--Mills. No numerics ran here.
 The two producer files were read for statements, not for a shared proof.
+Section 5 records the continuation at 7f414ab5f; it does not change the
+conditional status of the budgets or certify the joint induction.
 
 ## 1. Budgets and the actual sources
 
@@ -394,11 +396,13 @@ about the midpoint, is, for fixed constants p,c_reg,c_end>0,
                           (1+n)^p exp(-c_reg (n-d)_+).   (I-REG)
 
 Its rates must leave room relative to kappa and c_* when the midpoint
-is changed to c' and when the extension is made. This is a stated missing
-estimate, not a newly accepted premise. No proof of these coefficient,
-law, and extension estimates is supplied here. On a producer with Q^s=0
-the change-of-law issue disappears; the other checks remain. This does
-not assert that the actual current fails them.
+is changed to c' and when the extension is made. This initial single-tier
+target is made precise, with an optional second tier, by RC_j in section 5
+and the new note. No proof of the coefficient/law estimates is supplied
+here; the extension implication is now proved conditional on RC_j and MC.
+On a producer with Q^s=0 and the same cut/domain, the change-of-law issue
+disappears; the other checks remain. This does not assert that the actual
+current fails them.
 
 **Induction order and honest stop.** At step j+1 the permitted order is:
 level-j moments/locality -> reference bounds and regular extraction ->
@@ -417,6 +421,49 @@ small beta^GG. HS therefore does **not** complete the joint induction at
 this stop. (I-K3), and the remaining explicit locality/profile and regular
 coefficient budgets, are not newly certified here. No Q(n), higher-moment
 claim, or cumulant level sum is inferred. The next decision is whether the
-actual current's stronger regular locality and midpoint extension prove
-(I-K3); if so, insert that bound in the displayed locality rows and check
-their margins before invoking HS. Theorems 14.13 and 14.1c remain open.
+actual current satisfies RC_j and the complete finite-volume MC premise
+of section 5,
+or another argument proves (I-K3). Only then insert that bound in the
+displayed locality rows and check their margins before invoking HS.
+Theorems 14.13 and 14.1c remain open.
+
+
+## 5. Continuation at 7f414ab5f: source extension conditional on the right law
+
+**Implication, author proof; unchecked independently.** The new note
+[current-locality-reduced-law.md](current-locality-reduced-law.md) makes
+the stronger regular-current target precise. Its RC_j has the size and
+far-difference estimates for the actual polynomial in E^r, with fast
+and optional slow tiers. In each tier rho_v>=kappa_v and
+sigma_v-c_*>=2 kappa_v; the slow amplitude is <=C zeta_(j+1).
+Under the regular-completion premise MC, the midpoint extension then
+satisfies
+
+    ell_(nu',m)(x'I_(j;c',c''))
+      <= C iota_j x'^(3/2) exp(-c_*d) Phi'(m)
+      <= C iota_j x'^(3/2) exp(-c_*d) B' Phi'(m).
+
+This holds for every probability law, not only the generating top laws.
+The proof uses the exact first-rough-radius decision, strong regular
+far differences and conditional Jensen. It avoids the bounded-shell
+failure of summing K1 increments. Its profile comparison includes the
+floor. This does not verify the separate factor-two margin for the
+transport rows of section 4.
+
+**Gap.** RC_j is not derived here for the specified Wilson current.
+(C2_j)(c) is written for E^good; the source uses E^r. The new note gives
+the exact law-interpolation identity and RC-transfer, plus the
+coefficient/law split and rate tests. The first nonregular radius may
+also lie outside n<T/4, the domain explicitly constructed in Lemma
+14.14; MC is not silently assumed there. The note states the finite-volume
+completion duty, without changing the current. Its producer table is a
+specification for each attempt's own law and chart, not a proof shared
+between them.
+
+**Stop before joint induction.** RC_j+MC => I-K3 is a conditional source
+lemma, not a replacement joint theorem for Lemma 14.15(c) or 20.5. No
+output good-event bound has been established with it for the actual
+current. All rows, weights, second-tier/cap margins and regular
+coefficient bounds in section 4 therefore keep their earlier status.
+No Q(n) or cumulant induction was attempted. This continuation ran no
+numerical experiment and did not rerun the earlier checks.

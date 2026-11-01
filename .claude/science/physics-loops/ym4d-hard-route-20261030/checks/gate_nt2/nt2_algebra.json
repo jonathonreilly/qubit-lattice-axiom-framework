@@ -1,0 +1,37 @@
+{
+ "C3a": {
+  "EY2": "105*k**2 + 30*k + 3",
+  "EY4": "135135*k**4 + 41580*k**3 + 5670*k**2 + 420*k + 15",
+  "excess": "116760*k**4 + 31080*k**3 + 3120*k**2 + 120*k",
+  "pass": true
+ },
+ "C3b": {
+  "pairings": 15,
+  "plus": "24*a**3 + 54*a**2 + 27",
+  "minus": "-24*a**3 + 54*a**2 + 27",
+  "difference": "48*a**3",
+  "pass": true
+ },
+ "C3c": {
+  "slope_minus_target": "0",
+  "pass": true
+ },
+ "C3d": {
+  "proca_rho_monotone": true,
+  "flux_variance_grows_as_r_decreases": true,
+  "flux_var_samples": [
+   28.3515,
+   32.0163,
+   34.1966,
+   35.2585,
+   35.652,
+   35.7707,
+   35.8027,
+   35.8109,
+   35.813
+  ],
+  "running_rho_decreasing": true,
+  "running_spectral_density_max": -9.533155700933634e-09,
+  "pass": true
+ }
+}

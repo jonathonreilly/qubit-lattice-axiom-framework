@@ -76,3 +76,6 @@ L=7 R1 patch      seed 1 start Ratio_C 0.001 best Ratio_C 0.9478 Ratio_A 0.9449 
 L=7 R1 patch      seed 2 start Ratio_C 0.001 best Ratio_C 0.9876 Ratio_A 0.9869 w1 1.304 rhs_c 1.3202 min|m| 1.000 nrough 1372 evals 933 115.5s
 L=7 R1 overall best Ratio_C 1.0000
 L=9 R1 star       seed 1 start Ratio_C 0.000 best Ratio_C 0.6553 Ratio_A 0.6544 w1 1.068 rhs_c 1.6303 min|m| 0.852 nrough 7954 evals 1002 247.0s
+L=9 R1 star       seed 2 start Ratio_C 0.000 best Ratio_C 0.6529 Ratio_A 0.6519 w1 1.160 rhs_c 1.7771 min|m| 0.852 nrough 8387 evals 1003 237.4s
+L=9 R1 sheet_int  seed 1 start Ratio_C 0.000 best Ratio_C 0.2579 Ratio_A 0.2578 w1 1.913 rhs_c 7.4199 min|m| 0.129 nrough 132205 evals 105 23.2s
+L=9 R1 sheet_int  seed 2 start Ratio_C 0.000 best Ratio_C 0.2572 Ratio_A 0.2572 w1 1.923 rhs_c 7.4783 min|m| 0.126 nrough 132192 evals 109 23.4s

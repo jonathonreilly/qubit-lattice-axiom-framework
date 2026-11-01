@@ -53,3 +53,5 @@ L=5 PC star       seed 1 start Ratio_C 0.019 best Ratio_C 1.4821 Ratio_A 1.4821 
 L=5 PC overall best Ratio_C 1.4821
 L=7 PC star       seed 1 start Ratio_C 0.004 best Ratio_C 2.4474 Ratio_A 2.4474 w1 2.000 rhs_c 0.8172 min|m| 0.000 nrough 7338 evals 464 54.7s
 L=7 PC overall best Ratio_C 2.4474
+L=9 PC star       seed 1 start Ratio_C 0.000 best Ratio_C 0.9735 Ratio_A 0.9700 w1 1.103 rhs_c 1.1325 min|m| 1.000 nrough 8801 evals 1502 364.0s
+L=9 PC overall best Ratio_C 0.9735

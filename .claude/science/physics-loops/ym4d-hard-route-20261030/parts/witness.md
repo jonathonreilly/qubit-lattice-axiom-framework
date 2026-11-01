@@ -1437,7 +1437,7 @@ printed, with C_n free of L up to powers of log L, and C_s free of L, still an
 unchecked item of the Obligations. Given those, it answers the worry in
 `witness-two-separation.md` about C(L).
 
-**Free input for the map (B-1), gap under the rule in `GOAL.md`: the enclosures and the trend below are evidence only; `library/nt2-free-value-by-hand.md` takes the hand proof.** Lemma FB: blocked plaquette flux is
+**Free input for the map (B-1): proved by hand in `library/nt2-free-value-by-hand.md`, read in `gates/free-value-lead-read-28e261c17.md`. The enclosures and the trend below are evidence only.** Lemma FB: blocked plaquette flux is
 the average of F_ab against a positive unit-mass density, and P_infinity(z) is the
 Maxwell tensor averaged against B-splines. Enclosures, W2:
 P_infinity(3,3,2,2) in [-6.011e-5,-5.092e-5] and P_infinity(3,3,2,4) in

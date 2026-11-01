@@ -3,14 +3,18 @@ lease_until: 2026-11-01T06:34Z
 
 # Gate: Lemma EX and Lemma EX2 (`library/sector-values.md` 3A, 3B), SU(2), d = 4
 
-**Provenance.** Model anthropic/claude-opus-5-5, effort high, commit 7c12c6981, mapped side. A same-model check is not independent in model and is not an audit. Verdicts steer research and grant no status. DRAFT: sections below are being filled; numerics still running, verdicts provisional.
+**Provenance.** anthropic/claude-opus-5-5, effort high, Mac mini worker, mapped side, statement pinned at 7c12c6981. The branch head moved to c2b81fab0 during the run, with no change to `library/sector-values.md` or `FINISH.md`. A same-model check is not independent in model and is not an audit. Verdicts steer research and grant no status.
 
-## Established so far
+**DRAFT.** Y3 is still running; its row is pending and verdicts are provisional until this line is gone.
 
-Criteria were registered before any run: `checks/gate_ex/CRITERIA.md`. Solver: true constrained SU(2) minimiser in d = 4, comb block map (`checks/gate_ex/ex_core.py`). V1 covariance 8e-16. V3 abelian e/E against Fourier: 1.45466 v 1.45455, 0.80007 v 0.80000, 1.84937 v 1.84919.
+## Verdicts
 
-Reduction R1 (proved here): for W = 1, V^*(V') lies in the fibre of V', so e_j(V') >= e^(1)(V') at every j with the same f, E, I. The unweighted Lemma EX at all levels follows from level one.
+| Statement | Verdict |
+|---|---|
+| Lemma EX, W = 1 | ADVANCE, provisional |
+| Lemma EX, weighted | ADVANCE, provisional, on a weaker test |
+| Lemma EX2 | CORRECT-NO-ADVANCE, provisional |
 
-X1, X3, X4 on constant links: no violation. sup C_eff (N' = 1, L = 3, three seeds agreeing to four digits) = -0.401, -0.386, -0.379 at f = 0.08, 0.032, 0.0128. X6: c_e = (1/9)(1 - L^-2) at L = 3, 5 by optimiser, infimum at P -> 0 along (1,1,1,0).
+No WRONG was found. Item 7 of the queue is not blocked.
 
-Numerics paused at the 50 percent memory gate at 20:50Z; free memory 48 to 49 percent, held by processes that are not this job's.
+Reduction R1, proved here: for W = 1, V^*(V') lies in the fibre of V', so e_j(V') >= e^(1)(V') at every j with the same f, E, I. So the unweighted Lemma EX at all levels follows from level one.

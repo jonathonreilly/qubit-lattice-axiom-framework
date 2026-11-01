@@ -1,0 +1,175 @@
+### start 00:49Z mem_free=69: y_ex2.py 2 3 1 const 0.15 0 0
+   newton 0 |g|=1.965e-03 |r|=2.090e-03 S=0.0951191576
+   newton 1 |g|=1.876e-05 |r|=3.477e-07 S=0.0996341788
+   newton 2 |g|=8.231e-09 |r|=2.188e-08 S=0.0996348139
+   newton 3 |g|=1.525e-12 |r|=3.927e-11 S=0.0996348115
+base solve g,r=1.5e-12,3.9e-11 t=1 rss=0.30
+tangent done: J h - b max 1.23e-05 t=3
+level 0 (m=1): ||dtheta||^2=2.59262e+01 b=7.94581e+01 f=0.00520 E=9.96350e-02 a=2.08779e-03 ||d_V dtheta||^2=2.63973e-03 ratio to f^2 n=3.767
+level 1 (m=0): ||dtheta||^2=6.00260e+00 b=5.93265e+01 f=0.04467 E=9.57677e-02 a=1.71093e-02 ||d_V dtheta||^2=3.15595e-02 ratio to f^2 n=2.635
+second diffs of S at levels 0..k (level 0 = fine): [51.84481721288159, 11.991620773940115]  solves g,r 8e-12,1e-11,1e-11,9e-12
+j=0: d2 e_j=3.98532e+01 ; b_(j+1)=5.93265e+01 ratio d2e/b=0.6718 ; err/(f n)=-137.713
+Y1: D2 Y_k=3.985320e+01 sum=3.985320e+01
+rss 0.2997894287109375 t 8.442877292633057
+### end 00:49Z exit=0
+### start 00:49Z mem_free=69: y_ex2.py 2 3 1 const 0.15 1 0
+   newton 0 |g|=1.965e-03 |r|=2.090e-03 S=0.0951191576
+   newton 1 |g|=1.876e-05 |r|=3.477e-07 S=0.0996341788
+   newton 2 |g|=8.231e-09 |r|=2.188e-08 S=0.0996348139
+   newton 3 |g|=1.525e-12 |r|=3.927e-11 S=0.0996348115
+base solve g,r=1.5e-12,3.9e-11 t=1 rss=0.28
+tangent done: J h - b max 7.59e-06 t=3
+level 0 (m=1): ||dtheta||^2=2.57341e+01 b=7.83360e+01 f=0.00520 E=9.96350e-02 a=2.08779e-03 ||d_V dtheta||^2=2.59356e-03 ratio to f^2 n=3.728
+level 1 (m=0): ||dtheta||^2=6.00136e+00 b=5.96638e+01 f=0.04467 E=9.57677e-02 a=1.71093e-02 ||d_V dtheta||^2=2.24306e-02 ratio to f^2 n=1.873
+second diffs of S at levels 0..k (level 0 = fine): [51.46674696627606, 11.991620920644985]  solves g,r 4e-11,3e-11,4e-11,4e-11
+j=0: d2 e_j=3.94751e+01 ; b_(j+1)=5.96638e+01 ratio d2e/b=0.6616 ; err/(f n)=-136.269
+Y1: D2 Y_k=3.947513e+01 sum=3.947513e+01
+rss 0.29705810546875 t 9.056520938873291
+### end 00:49Z exit=0
+### start 00:49Z mem_free=69: y_ex2.py 2 3 1 const 0.15 2 0
+   newton 0 |g|=1.965e-03 |r|=2.090e-03 S=0.0951191576
+   newton 1 |g|=1.876e-05 |r|=3.477e-07 S=0.0996341788
+   newton 2 |g|=8.231e-09 |r|=2.188e-08 S=0.0996348139
+   newton 3 |g|=1.525e-12 |r|=3.927e-11 S=0.0996348115
+base solve g,r=1.5e-12,3.9e-11 t=1 rss=0.29
+tangent done: J h - b max 6.35e-06 t=3
+level 0 (m=1): ||dtheta||^2=2.57350e+01 b=7.83303e+01 f=0.00520 E=9.96350e-02 a=2.08779e-03 ||d_V dtheta||^2=2.64963e-03 ratio to f^2 n=3.809
+level 1 (m=0): ||dtheta||^2=6.00136e+00 b=5.96638e+01 f=0.04467 E=9.57677e-02 a=1.71093e-02 ||d_V dtheta||^2=2.47680e-02 ratio to f^2 n=2.069
+second diffs of S at levels 0..k (level 0 = fine): [51.468592082882786, 11.991620797570102]  solves g,r 2e-11,1e-11,3e-11,1e-11
+j=0: d2 e_j=3.94770e+01 ; b_(j+1)=5.96638e+01 ratio d2e/b=0.6617 ; err/(f n)=-136.276
+Y1: D2 Y_k=3.947697e+01 sum=3.947697e+01
+rss 0.297119140625 t 9.199579000473022
+### end 00:49Z exit=0
+### start 00:49Z mem_free=70: y_ex2.py 2 3 1 const 0.15 0 1
+   newton 0 |g|=1.965e-03 |r|=2.090e-03 S=0.0951191576
+   newton 1 |g|=1.876e-05 |r|=3.477e-07 S=0.0996341788
+   newton 2 |g|=8.231e-09 |r|=2.188e-08 S=0.0996348139
+   newton 3 |g|=1.525e-12 |r|=3.927e-11 S=0.0996348115
+base solve g,r=1.5e-12,3.9e-11 t=1 rss=0.29
+tangent done: J h - b max 4.99e-06 t=3
+level 0 (m=1): ||dtheta||^2=2.57286e+01 b=7.83365e+01 f=0.00520 E=9.96350e-02 a=2.08779e-03 ||d_V dtheta||^2=2.64767e-03 ratio to f^2 n=3.807
+level 1 (m=0): ||dtheta||^2=6.00135e+00 b=5.96637e+01 f=0.04467 E=9.57677e-02 a=1.71093e-02 ||d_V dtheta||^2=2.47681e-02 ratio to f^2 n=2.069
+second diffs of S at levels 0..k (level 0 = fine): [51.455751591354954, 11.991620822210946]  solves g,r 3e-11,2e-11,5e-11,2e-11
+j=0: d2 e_j=3.94641e+01 ; b_(j+1)=5.96637e+01 ratio d2e/b=0.6614 ; err/(f n)=-136.228
+Y1: D2 Y_k=3.946413e+01 sum=3.946413e+01
+rss 0.2967681884765625 t 9.367246866226196
+### end 00:50Z exit=0
+### start 00:50Z mem_free=69: y_ex2.py 2 3 1 const 0.15 1 1
+   newton 0 |g|=1.965e-03 |r|=2.090e-03 S=0.0951191576
+   newton 1 |g|=1.876e-05 |r|=3.477e-07 S=0.0996341788
+   newton 2 |g|=8.231e-09 |r|=2.188e-08 S=0.0996348139
+   newton 3 |g|=1.525e-12 |r|=3.927e-11 S=0.0996348115
+base solve g,r=1.5e-12,3.9e-11 t=1 rss=0.29
+tangent done: J h - b max 1.47e-05 t=3
+level 0 (m=1): ||dtheta||^2=2.59196e+01 b=7.94593e+01 f=0.00520 E=9.96350e-02 a=2.08779e-03 ||d_V dtheta||^2=2.64420e-03 ratio to f^2 n=3.774
+level 1 (m=0): ||dtheta||^2=6.00260e+00 b=5.93265e+01 f=0.04467 E=9.57677e-02 a=1.71093e-02 ||d_V dtheta||^2=3.15595e-02 ratio to f^2 n=2.635
+second diffs of S at levels 0..k (level 0 = fine): [51.832287578439384, 11.99162078907967]  solves g,r 8e-12,1e-11,2e-11,2e-11
+j=0: d2 e_j=3.98407e+01 ; b_(j+1)=5.93265e+01 ratio d2e/b=0.6715 ; err/(f n)=-137.666
+Y1: D2 Y_k=3.984067e+01 sum=3.984067e+01
+rss 0.29949951171875 t 8.501255750656128
+### end 00:50Z exit=0
+### start 00:50Z mem_free=69: y_ex2.py 2 3 1 const 0.15 2 1
+   newton 0 |g|=1.965e-03 |r|=2.090e-03 S=0.0951191576
+   newton 1 |g|=1.876e-05 |r|=3.477e-07 S=0.0996341788
+   newton 2 |g|=8.231e-09 |r|=2.188e-08 S=0.0996348139
+   newton 3 |g|=1.525e-12 |r|=3.927e-11 S=0.0996348115
+base solve g,r=1.5e-12,3.9e-11 t=1 rss=0.28
+tangent done: J h - b max 3.67e-06 t=3
+level 0 (m=1): ||dtheta||^2=2.57346e+01 b=7.83250e+01 f=0.00520 E=9.96350e-02 a=2.08779e-03 ||d_V dtheta||^2=2.60251e-03 ratio to f^2 n=3.741
+level 1 (m=0): ||dtheta||^2=6.00136e+00 b=5.96638e+01 f=0.04467 E=9.57677e-02 a=1.71093e-02 ||d_V dtheta||^2=2.24306e-02 ratio to f^2 n=1.873
+second diffs of S at levels 0..k (level 0 = fine): [51.46813232554281, 11.991620873188502]  solves g,r 3e-11,3e-11,3e-11,2e-11
+j=0: d2 e_j=3.94765e+01 ; b_(j+1)=5.96638e+01 ratio d2e/b=0.6616 ; err/(f n)=-136.274
+Y1: D2 Y_k=3.947651e+01 sum=3.947651e+01
+rss 0.2961273193359375 t 9.303478002548218
+### end 00:50Z exit=0
+### start 00:50Z mem_free=69: y_ex2.py 2 3 1 const 0.15 0 2
+   newton 0 |g|=1.965e-03 |r|=2.090e-03 S=0.0951191576
+   newton 1 |g|=1.876e-05 |r|=3.477e-07 S=0.0996341788
+   newton 2 |g|=8.231e-09 |r|=2.188e-08 S=0.0996348139
+   newton 3 |g|=1.525e-12 |r|=3.927e-11 S=0.0996348115
+base solve g,r=1.5e-12,3.9e-11 t=1 rss=0.29
+tangent done: J h - b max 4.20e-06 t=3
+level 0 (m=1): ||dtheta||^2=2.57287e+01 b=7.83340e+01 f=0.00520 E=9.96350e-02 a=2.08779e-03 ||d_V dtheta||^2=2.60045e-03 ratio to f^2 n=3.739
+level 1 (m=0): ||dtheta||^2=6.00136e+00 b=5.96637e+01 f=0.04467 E=9.57677e-02 a=1.71093e-02 ||d_V dtheta||^2=2.24306e-02 ratio to f^2 n=1.873
+second diffs of S at levels 0..k (level 0 = fine): [51.45619841684601, 11.991620916149692]  solves g,r 1e-11,2e-11,6e-11,4e-11
+j=0: d2 e_j=3.94646e+01 ; b_(j+1)=5.96637e+01 ratio d2e/b=0.6614 ; err/(f n)=-136.230
+Y1: D2 Y_k=3.946458e+01 sum=3.946458e+01
+rss 0.298248291015625 t 9.324191093444824
+### end 00:50Z exit=0
+### start 00:50Z mem_free=69: y_ex2.py 2 3 1 const 0.15 1 2
+   newton 0 |g|=1.965e-03 |r|=2.090e-03 S=0.0951191576
+   newton 1 |g|=1.876e-05 |r|=3.477e-07 S=0.0996341788
+   newton 2 |g|=8.231e-09 |r|=2.188e-08 S=0.0996348139
+   newton 3 |g|=1.525e-12 |r|=3.927e-11 S=0.0996348115
+base solve g,r=1.5e-12,3.9e-11 t=1 rss=0.29
+tangent done: J h - b max 3.16e-06 t=3
+level 0 (m=1): ||dtheta||^2=2.57318e+01 b=7.83224e+01 f=0.00520 E=9.96350e-02 a=2.08779e-03 ||d_V dtheta||^2=2.65777e-03 ratio to f^2 n=3.821
+level 1 (m=0): ||dtheta||^2=6.00136e+00 b=5.96638e+01 f=0.04467 E=9.57677e-02 a=1.71093e-02 ||d_V dtheta||^2=2.47681e-02 ratio to f^2 n=2.069
+second diffs of S at levels 0..k (level 0 = fine): [51.4625190223944, 11.99162081299221]  solves g,r 2e-11,1e-11,2e-11,1e-11
+j=0: d2 e_j=3.94709e+01 ; b_(j+1)=5.96638e+01 ratio d2e/b=0.6616 ; err/(f n)=-136.253
+Y1: D2 Y_k=3.947090e+01 sum=3.947090e+01
+rss 0.297637939453125 t 9.476804971694946
+### end 00:50Z exit=0
+### start 00:50Z mem_free=69: y_ex2.py 2 3 1 const 0.15 2 2
+   newton 0 |g|=1.965e-03 |r|=2.090e-03 S=0.0951191576
+   newton 1 |g|=1.876e-05 |r|=3.477e-07 S=0.0996341788
+   newton 2 |g|=8.231e-09 |r|=2.188e-08 S=0.0996348139
+   newton 3 |g|=1.525e-12 |r|=3.927e-11 S=0.0996348115
+base solve g,r=1.5e-12,3.9e-11 t=1 rss=0.29
+tangent done: J h - b max 1.50e-05 t=3
+level 0 (m=1): ||dtheta||^2=2.59153e+01 b=7.94509e+01 f=0.00520 E=9.96350e-02 a=2.08779e-03 ||d_V dtheta||^2=2.64930e-03 ratio to f^2 n=3.782
+level 1 (m=0): ||dtheta||^2=6.00260e+00 b=5.93265e+01 f=0.04467 E=9.57677e-02 a=1.71093e-02 ||d_V dtheta||^2=3.15595e-02 ratio to f^2 n=2.635
+second diffs of S at levels 0..k (level 0 = fine): [51.824062906658526, 11.99162081282623]  solves g,r 7e-12,1e-11,1e-11,1e-11
+j=0: d2 e_j=3.98324e+01 ; b_(j+1)=5.93265e+01 ratio d2e/b=0.6714 ; err/(f n)=-137.635
+Y1: D2 Y_k=3.983244e+01 sum=3.983244e+01
+rss 0.297607421875 t 8.359786987304688
+### end 00:50Z exit=0
+### start 00:50Z mem_free=70: y_ex2.py 2 3 1 const 0.15 0 3
+   newton 0 |g|=1.965e-03 |r|=2.090e-03 S=0.0951191576
+   newton 1 |g|=1.876e-05 |r|=3.477e-07 S=0.0996341788
+   newton 2 |g|=8.231e-09 |r|=2.188e-08 S=0.0996348139
+   newton 3 |g|=1.525e-12 |r|=3.927e-11 S=0.0996348115
+base solve g,r=1.5e-12,3.9e-11 t=1 rss=0.29
+tangent done: J h - b max 8.66e-06 t=3
+level 0 (m=1): ||dtheta||^2=2.59298e+01 b=7.94561e+01 f=0.00520 E=9.96350e-02 a=2.08779e-03 ||d_V dtheta||^2=2.79677e-03 ratio to f^2 n=3.990
+level 1 (m=0): ||dtheta||^2=6.00001e+00 b=5.93014e+01 f=0.04467 E=9.57677e-02 a=1.71093e-02 ||d_V dtheta||^2=1.59506e-02 ratio to f^2 n=1.332
+second diffs of S at levels 0..k (level 0 = fine): [51.86027389407654, 11.999599794413895]  solves g,r 7e-12,6e-12,7e-12,6e-12
+j=0: d2 e_j=3.98607e+01 ; b_(j+1)=5.93014e+01 ratio d2e/b=0.6722 ; err/(f n)=-137.805
+Y1: D2 Y_k=3.986067e+01 sum=3.986067e+01
+rss 0.2965545654296875 t 8.255045175552368
+### end 00:50Z exit=0
+### start 00:50Z mem_free=69: y_ex2.py 2 3 1 const 0.15 1 3
+   newton 0 |g|=1.965e-03 |r|=2.090e-03 S=0.0951191576
+   newton 1 |g|=1.876e-05 |r|=3.477e-07 S=0.0996341788
+   newton 2 |g|=8.231e-09 |r|=2.188e-08 S=0.0996348139
+   newton 3 |g|=1.525e-12 |r|=3.927e-11 S=0.0996348115
+base solve g,r=1.5e-12,3.9e-11 t=1 rss=0.30
+tangent done: J h - b max 4.75e-06 t=3
+level 0 (m=1): ||dtheta||^2=2.59289e+01 b=7.94501e+01 f=0.00520 E=9.96350e-02 a=2.08779e-03 ||d_V dtheta||^2=2.79677e-03 ratio to f^2 n=3.990
+level 1 (m=0): ||dtheta||^2=6.00000e+00 b=5.93014e+01 f=0.04467 E=9.57677e-02 a=1.71093e-02 ||d_V dtheta||^2=1.59506e-02 ratio to f^2 n=1.332
+second diffs of S at levels 0..k (level 0 = fine): [51.85825078299788, 11.999599803909078]  solves g,r 1e-11,1e-11,1e-11,1e-11
+j=0: d2 e_j=3.98587e+01 ; b_(j+1)=5.93014e+01 ratio d2e/b=0.6721 ; err/(f n)=-137.797
+Y1: D2 Y_k=3.985865e+01 sum=3.985865e+01
+rss 0.2973480224609375 t 8.182966947555542
+### end 00:51Z exit=0
+### start 00:51Z mem_free=69: y_ex2.py 2 3 1 const 0.15 2 3
+   newton 0 |g|=1.965e-03 |r|=2.090e-03 S=0.0951191576
+   newton 1 |g|=1.876e-05 |r|=3.477e-07 S=0.0996341788
+   newton 2 |g|=8.231e-09 |r|=2.188e-08 S=0.0996348139
+   newton 3 |g|=1.525e-12 |r|=3.927e-11 S=0.0996348115
+base solve g,r=1.5e-12,3.9e-11 t=1 rss=0.29
+tangent done: J h - b max 5.41e-06 t=3
+level 0 (m=1): ||dtheta||^2=2.59279e+01 b=7.94432e+01 f=0.00520 E=9.96350e-02 a=2.08779e-03 ||d_V dtheta||^2=2.79686e-03 ratio to f^2 n=3.991
+level 1 (m=0): ||dtheta||^2=6.00000e+00 b=5.93014e+01 f=0.04467 E=9.57677e-02 a=1.71093e-02 ||d_V dtheta||^2=1.59508e-02 ratio to f^2 n=1.332
+second diffs of S at levels 0..k (level 0 = fine): [51.85622837524717, 11.99959980743126]  solves g,r 7e-12,1e-11,1e-11,1e-11
+j=0: d2 e_j=3.98566e+01 ; b_(j+1)=5.93014e+01 ratio d2e/b=0.6721 ; err/(f n)=-137.790
+Y1: D2 Y_k=3.985663e+01 sum=3.985663e+01
+rss 0.2967987060546875 t 8.395671844482422
+### end 00:51Z exit=0
+SWEEP b_1(V)/b_1(1), colour, mu: [(0.9627230904791623, '1', '1'), (0.9627085525934906, '0', '0'), (0.9626837699301432, '0', '3'), (0.9626205609578524, '2', '2'), (0.9626110919379499, '1', '3'), (0.962527417645525, '2', '3'), (0.949119543171293, '0', '1'), (0.9491131242068641, '1', '0'), (0.9490889997682036, '0', '2'), (0.9490441693136785, '2', '0'), (0.9489800976074158, '2', '1'), (0.9489485129208012, '1', '2')]
+### start 00:51Z mem_free=70: y_ex2.py 2 3 2 const 0.15 1 1
+   newton 0 |g|=7.295e-05 |r|=2.197e-03 S=0.0952587939
+   newton 1 |g|=1.340e-06 |r|=1.134e-06 S=0.1000920410
+   newton 2 |g|=6.786e-10 |r|=2.036e-08 S=0.1000938594
+   newton 3 |g|=1.955e-12 |r|=6.970e-11 S=0.1000938711
+base solve g,r=2.0e-12,7.0e-11 t=60 rss=1.42

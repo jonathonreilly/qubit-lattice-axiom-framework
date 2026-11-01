@@ -20,3 +20,5 @@ done_b
 ### waiting 23:40Z mem_free=48
 done_c
 done_d
+done_e
+### note: the done_e above is void: run_e.sh started with memgate.sh missing and ran no job; superseded by run_y3.py

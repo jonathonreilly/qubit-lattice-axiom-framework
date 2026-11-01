@@ -5,3 +5,4 @@ L=9 R1 disp       seed 1 start Ratio_C 0.004 best Ratio_C 0.8607 Ratio_A 0.8600 
 L=9 R1 overall best Ratio_C 0.8607
 L=11 R1 disp       seed 1 start Ratio_C 0.004 best Ratio_C 0.6385 Ratio_A 0.6378 w1 1.340 rhs_c 2.0980 min|m| 0.761 nrough 37496 evals 801 387.1s
 L=11 R1 overall best Ratio_C 0.6385
+RSS 2.03 GB above limit

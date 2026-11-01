@@ -75,3 +75,4 @@ L=7 R1 gas        seed 2 start Ratio_C 0.000 best Ratio_C 0.9969 Ratio_A 0.9947 
 L=7 R1 patch      seed 1 start Ratio_C 0.001 best Ratio_C 0.9478 Ratio_A 0.9449 w1 0.947 rhs_c 0.9994 min|m| 1.000 nrough 4215 evals 1002 125.7s
 L=7 R1 patch      seed 2 start Ratio_C 0.001 best Ratio_C 0.9876 Ratio_A 0.9869 w1 1.304 rhs_c 1.3202 min|m| 1.000 nrough 1372 evals 933 115.5s
 L=7 R1 overall best Ratio_C 1.0000
+L=9 R1 star       seed 1 start Ratio_C 0.000 best Ratio_C 0.6553 Ratio_A 0.6544 w1 1.068 rhs_c 1.6303 min|m| 0.852 nrough 7954 evals 1002 247.0s

@@ -12,7 +12,7 @@ import time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, "..", "gate_ex"))
-from ex_core import Chain, I_grad, Problem, flux_stats, guard, plaquettes, qexp, qinv, qlog, qmul, rss_gb, wilson  # noqa: E402
+from ex_core import Chain, I_grad, Problem, flux_stats, guard, ident, plaquettes, qexp, qinv, qlog, qmul, rss_gb, wilson  # noqa: E402
 
 import torch  # noqa: E402
 
@@ -65,6 +65,56 @@ def perturbation(n, amp, bump, seed):
     return A
 
 
+def contours(B, U, base):
+    d = B.d
+    m = base.shape[1]
+    n = B.n
+    if not hasattr(B, "groups"):
+        B._setup()
+    no = len(B.offs)
+    G_vals = [ident((m, 1))]
+    G_idx = [torch.tensor([B.i0])]
+    pos = {B.i0: (0, 0)}
+    for io, ip, pv, ax, s in B.groups:
+        sites = base[:, :, None] + pv[:, None, :]
+        if s < 0:
+            sites = sites.clone()
+            sites[ax] -= 1
+        step = U[tuple(sites[i] % n for i in range(d)) + (ax,)]
+        if s < 0:
+            step = qinv(step)
+        par = torch.stack([G_vals[pos[int(i)][0]][:, pos[int(i)][1]] for i in ip], 1)
+        val = qmul(par, step)
+        gi = len(G_vals)
+        G_vals.append(val)
+        G_idx.append(io)
+        for t, i in enumerate(io):
+            pos[int(i)] = (gi, t)
+    G = torch.cat(G_vals, 1)
+    order = torch.argsort(torch.cat(G_idx))
+    return G[:, order]
+
+
+def parent_links(B, U, base, mu):
+    """M(U) on parent bonds (y, mu) for y in base (d x m)."""
+    d, L, n = B.d, B.L, B.n
+    G = contours(B, U, base)
+    e = torch.zeros_like(base)
+    e[mu] = L
+    Gp = contours(B, U, base + e)
+    sites0 = base[:, :, None] + B.offt[:, None, :]
+    ln = U[tuple(sites0[i] % n for i in range(d)) + (mu,)]
+    for t in range(1, L):
+        sites = sites0.clone()
+        sites[mu] += t
+        ln = qmul(ln, U[tuple(sites[i] % n for i in range(d)) + (mu,)])
+    Om = qmul(qmul(G, ln), qinv(Gp))
+    O0 = Om[:, B.i0, :]
+    v = qlog(qmul(Om, qinv(O0)[:, None, :]))
+    A = v.mean(1)
+    return qmul(qexp(A), O0)
+
+
 class LightProblem(Problem):
     """Same problem; the constraint Jacobian by central differences, so no double backward (memory)."""
 
@@ -76,6 +126,41 @@ class LightProblem(Problem):
         rp = self.resid(qmul(qexp(eps * v), U0))
         rm = self.resid(qmul(qexp(-eps * v), U0))
         return (rp - rm) / (2 * eps)
+
+    def _constraint_grad(self, H0, U0, lam, chunk=256):
+        """Gradient in H at H0 of <lam, resid>, summed over chunks of parents, so the graph stays small."""
+        B = self.chain.levels[0]
+        if not hasattr(B, "groups"):
+            B._setup()
+        total = torch.zeros(self.shape)
+        idxs = torch.arange(B.base.shape[1])
+        tgt = self.V.reshape(-1, B.d, 4)
+        lam_f = lam.reshape(-1, B.d, 3)
+        for mu in range(B.d):
+            for start in range(0, len(idxs), chunk):
+                sel = idxs[start:start + chunk]
+                base = B.base[:, sel]
+                H = H0.clone().requires_grad_(True)
+                Up = qmul(qexp(H), U0)
+                r = qlog(qmul(parent_links(B, Up, base, mu), qinv(tgt[sel, mu])))
+                val = (lam_f[sel, mu] * r).sum()
+                g, = torch.autograd.grad(val, H)
+                total += g
+                del H, Up, r, val, g
+        return total
+
+    def _wilson_grad(self, H0, U0):
+        H = H0.clone().requires_grad_(True)
+        val = wilson(qmul(qexp(H), U0))
+        g, = torch.autograd.grad(val, H)
+        return g
+
+    def lag_grad(self, H, U0, lam):
+        H = H.detach()
+        return self._wilson_grad(H, U0) + self._constraint_grad(H, U0, lam)
+
+    def jt(self, U0, lam):
+        return self._constraint_grad(torch.zeros(self.shape), U0, lam)
 
 
 def report(tag, U, V, chain):

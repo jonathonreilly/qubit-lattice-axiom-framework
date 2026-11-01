@@ -1,0 +1,13 @@
+T8 L 41: L|grad zeta| 2.671 L^2|grad^2 zeta| 15.695
+T8 L 101: L|grad zeta| 2.733 L^2|grad^2 zeta| 20.125
+T8 L 201: L|grad zeta| 2.754 L^2|grad^2 zeta| 21.791
+L 9 trial 0: E0 46074.5295 E1 6178.1536 exc/I1 0.7109 I0/I1*L^2 27.362 closed 3.3e-16
+L 9 trial 1: E0 45371.2543 E1 8225.1282 exc/I1 0.6236 I0/I1*L^2 25.260 closed 3.0e-16
+L 9 trial 2: E0 47056.7081 E1 6291.7859 exc/I1 0.7270 I0/I1*L^2 27.891 closed 3.1e-16
+L 9 trial 3: E0 25612.9656 E1 6056.9793 exc/I1 0.5654 I0/I1*L^2 20.758 closed 2.0e-16
+L 9: const flux lift range 1.000000000000 1.000000000000; C1 0.727 C2 27.891
+L 13 trial 0: E0 53292.9390 E1 6370.5582 exc/I1 0.8245 I0/I1*L^2 36.402 closed 2.4e-16
+L 13 trial 1: E0 37646.7369 E1 8505.0069 exc/I1 0.6066 I0/I1*L^2 25.237 closed 1.9e-16
+L 13 trial 2: E0 50923.4945 E1 6141.3780 exc/I1 0.8230 I0/I1*L^2 35.653 closed 2.2e-16
+L 13 trial 3: E0 27890.5483 E1 5713.1711 exc/I1 0.7021 I0/I1*L^2 29.270 closed 1.8e-16
+L 13: const flux lift range 1.000000000000 1.000000000000; C1 0.824 C2 36.402

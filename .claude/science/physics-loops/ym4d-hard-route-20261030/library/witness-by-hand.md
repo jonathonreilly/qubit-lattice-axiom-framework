@@ -7,6 +7,16 @@ Author: anthropic/claude-opus-5-5/max mac-mini-worker, 2026-11-01. Pinned at `f3
 
 Same-model author work, not a review or an audit. No status. Every step below is written to be checked by hand. The runs in `checks/hand_witness/` are kill tests, with criteria written first; no step rests on them.
 
+## State of attack
+
+| Queue task | Result | Label |
+|---|---|---|
+| Lemma 3.6 without the symbolic run | Proved in section 1, plus the Ward identity (V5) and (3.4), which Theorem 3.8 reads | discharged |
+| Stieltjes and density inputs of Lemma RM' | Theorem S, Lemma D and Theorem RM' in section 2, at the stated scope (D1) to (D3). Corrections: Lemma RM's form needs a contact term c_0 >= 0, and (D3) cannot be dropped | discharged at that scope |
+| (H21) applied to the order of b and L in NT1-F | Order A in section 3.2, with an explicit L_1. Stronger: Lemma CL and order B in section 3.3 keep the printed order b, L, X with b free of L | implication, as NT1-F is |
+
+Still open: tensor multipliers in RM', the one-link sentence of RM', C_s free of L, the new request that c_E be free of L, and every producer clause of NT1-F. Nothing here is a fact about Wilson.
+
 ## 1. Lemma 3.6 without the symbolic run
 
 Statement, `parts/witness.md:438-440`. For E_i = a^i exp(i k^i . x), with real k^1 + k^2 + k^3 = 0 and a^i_mu = atil^i_mu exp(i k^i_mu / 2), the sum of V_p over the plaquettes at one site is
@@ -188,4 +198,111 @@ For (b), fix lambda > 1, and let Lam_i multiply the i-th coordinate by lambda. O
 3. **Not covered, and still open.** Tensor multipliers on the transverse space. The closing sentence of RM' on one-link local maps and Schur powers is not touched here, so it stays unchecked.
 4. **Imported, not rebuilt:** Plancherel, Riemann-Lebesgue, Fubini, monotone and dominated convergence, Lebesgue differentiation, Weierstrass approximation, the Riesz representation of positive functionals on C[0, 1]. These are textbook analysis. Everything else above is proved here, including the moment step that Bernstein's or Widder's theorem would give.
 
-Sections 3 and 4 are added as they are finished.
+## 3. The order of b and L in Corollary NT1-F
+
+`library/nt2-flat-fibre-criterion.md:78` picks b before L from tau_b = C_(n,r) b^(-r), and `:82` lets C_(n,r) grow with log L, so the printed order does not fix the constant that chooses b. Section 3.2 applies (H21) of `library/nt2-free-value-by-hand.md`. Section 3.3 goes further: at fixed L the clip error is a Gaussian moment as g_j -> 0, so it has an L-free limit, and the printed order b, L, X can stand as printed. All of this is implication: nothing here supplies a clause for Wilson.
+
+### 3.1 The constant of (F-3) [discharged]
+
+The printed line gives no derivation. Let X := X_p, X' := X_q >= 0, Y := min(X, b), Z := X - Y, likewise Y', Z', and m_s := max(E_1 X^s, E_1 X'^s). For r >= 1, 0 <= Z <= X^(1 + r) b^(-r) and Y <= X. Then
+
+    Cov_1(X, X') - Cov_1(Y, Y') = Cov_1(Z, X') + Cov_1(Y, Z').                                 (O1)
+
+For non-negative U, V, |Cov(U, V)| <= max(E[U V], E[U] E[V]). Hölder bounds each of these by b^(-r) m_(2 + r), so
+
+    | Cov_1(Y, Y') - Cov_1(X, X') | <= 2 m_(2 + r) b^(-r).                                     (O2)
+
+X_p <= tau_n^2 by the definition of tau_n, t_n(c; 1) = 0 by (LE_j), since Ebar(c'; 1) = 0, and (GS_j)(c) gives m_s <= C_(n, 2 s). So the C_(n,r) of (F-3) is 2 C_(n, 4 + 2 r), with C_(n,s) the constant of (GS_j)(c). The convention "free of L up to powers of log L" is printed for C_n, and (F-3) reads it for C_(n,s).
+
+### 3.2 The order with (H21) [implication]
+
+Inputs, in the form NT1-F reads them. Fix r >= 1. The window is N_D of (H20). All constants below are chosen before L and do not depend on b.
+
+- (E1) 2 C_(N_D, 4 + 2 r)(L) <= A (1 + log L)^alpha.
+- (E2) C_(N_D)(L) <= A' (1 + log L)^(alpha'), for the C_n of (GS_j)(a) and (LE_j).
+- (E3) C_s free of L [unchecked item of the Obligations], kappa := kappa_lift > 0.
+- (E4) A number M_*, free of L, such that at each fixed L, Mbar_1 <= M_* for g_j small. The note's line "bounded independently of L" unpacks as follows. Lemma 10.6 at level j + 1 and Jensen give ||X~_p||_(L^1) <= C_4 / t_1, absolute. The rest is at most ||X_p||_(L^2) P(f_p > eps_1)^(1/2) <= 2^(1/2) t_0^-1 exp(C_4(L) - t_0 x_(j+1) eps_1^2 / 4), which tends to 0 at fixed L. So M_* := (1 + C_4 / t_1) sum_h exp(-c_E h) N_h works, **provided c_E is free of L**, which Text 14 does not say; that is a new one-line request to the consumer.
+
+**Corollary NT1-F, order A.** Assume what the corollary assumes, H-NET, the fixed-scale part of H-SCALE, the clauses of Theorem F, (FT) at the two pairs, and supports within w cells with w free of L, and also (E1) to (E4). Choose in this order:
+
+1. w, then the pair and N_D, then a_0 > 0 and L_0 with a_L >= a_0 for admissible L >= L_0, the window fitting. For (B-1) this is (H18) to (H20), and at a fixed L the finite-regulator value is at least a_0 for j and the torus large.
+2. r and the constants of (E1) to (E4).
+3. The rule, before any L, as in (H21):
+
+       b(L) := max{ 1, (8 A / a_0)^(1 / r) (1 + log L)^(alpha / r) },
+
+   so that 2 tau_(b(L)) <= a_0 / 4 for every L.
+4. L >= max(L_0, L_1), admissible, with
+
+       B_1 := max{1, (8 A / a_0)^(2 / r)},   gamma := 2 alpha / r + 2 alpha',   m_0 := ceiling(gamma) + 1,
+       B := (15/2) B_1 (2 + 3 A') A' C_s^2 M_*,
+       L_1 := exp( max{ 1, 4 B 2^gamma m_0! (2 kappa)^(-m_0) / a_0 } ).                         (O3)
+
+5. b := b(L). From here L and b are numbers.
+6. X so large that on the trajectory, at this L and b: omega_L(g_j) <= 1; Mbar_1 <= M_*; (FT) holds within a_0 / 8 at both pairs; and 6 b^2 (2 omega + 2 eta + C_n omega^GS_j) <= a_0 / 8.
+
+Then at fixed level distance from the top, for all large i, the difference of Cov_nu(Y_p, Y_q) at q_n and q_f is at least a_0 / 4, and Theorem 4.1 gives H != 0 on Omega-perp.
+
+Proof. By (E2) and omega_L <= 1, bold-C_n <= 2 + 3 C_n, so by (E2), (E3), (E4) the smoothing term of 6 b^2 eps_j is at most
+
+    (15/2) b(L)^2 (2 + 3 C_n) C_n C_s^2 M_* L^(-2 kappa) <= B (1 + log L)^gamma L^(-2 kappa).
+
+With t := log L >= 1: (1 + t) <= 2 t, and exp(2 kappa t) >= (2 kappa t)^(m_0) / m_0!, so this is at most B 2^gamma m_0! (2 kappa)^(-m_0) t^(gamma - m_0) <= B 2^gamma m_0! (2 kappa)^(-m_0) / t <= a_0 / 4 at L >= L_1. Adding (F-2) at the two pairs, (F-3) and (FT): a_0 - a_0 / 8 - a_0 / 4 - a_0 / 4 - a_0 / 8 = a_0 / 4. []
+
+The printed requirement L^(2 kappa_lift) >= C b^2 C_n^2 C_s^2 Mbar_1 / a_0 is the inequality of step 4 with b = b(L), and L appears on both sides only through powers of log L. (NF-3) keeps the same order, adding the same requirement for b^2 ((5/4) bold-C_n theta_L Mbar_2)^2, a term of size power of log L times L^(-4 kappa), with the L-free limit of Mbar_2 found as in (E4).
+
+### 3.3 The printed order stands: the clip constant is free of L as g_j -> 0
+
+The clip is read only under E_1, at fixed L, in the regime where (FT) already holds. There the moments of X_p are Gaussian, and the L-dependence of C_(n,s) survives only multiplied by something that tends to 0.
+
+**Lemma CL [implication, from the clauses (FT) reads].** Fix L and D. Assume (OS_j)(b), (c) at W = 1, Gamma_pp(1) = 4 P^fib_pp 1_3 from (OS_j)(d), and (GS_j)(c) at W = 1, with any dependence of C_(n,s) on L. Then, uniformly in j, for s = 1, ..., 4,
+
+    limsup_(g_j -> 0) E_1 X_p^s <= (P^fib_pp / 2)^s prod_(i=0)^(s-1) (3 + 2 i),                 (O4)
+
+and for p, q in D and b > 0, with P_m := max(P^fib_pp, P^fib_qq),
+
+    limsup_(g_j -> 0) | Cov_1(Y_p, Y_q) - Cov_1(X_p, X_q) | <= (945 / 8) P_m^4 b^(-2).          (O5)
+
+Proof. Read the chart as (FT) reads it: on an event C of probability at least 1 - omega, X_p = Q_p + g_j Y_p, Q_p = (1/8) |(D xi)_p|^2, |Y_p| <= C(L) (1 + |xi|_loc)^4, since phi = 0 at W = 1. Let T := {|xi|_loc <= R}, R := g_j^(-1/8). By (c) in degree 8 and Chebyshev, P(C and not T) <= (C(L) + omega) g_j. On C and T, X_p <= Q_p + eps_g, with eps_g := C(L) g_j (1 + R)^4 -> 0. So
+
+    E_1 X_p^s <= E_1 [ 1_C (Q_p + eps_g)^s ] + P_1((C and T)^c)^(1/2) (E_1 X_p^(2 s))^(1/2).
+
+The first term is a polynomial of degree 2 s <= 8 in xi, so by (c) it tends to E_N Q_p^s. The second is at most (omega + C(L) g_j)^(1/2) C_(n, 4 s)^(1/2), which tends to 0 at fixed L, because C_(n, 4 s) is finite. Under N(0, C_1), (D xi)_p has covariance 4 P^fib_pp 1_3, so Q_p = (P^fib_pp / 2) |zeta|^2 with zeta standard in R^3, and integration by parts gives E |zeta|^(2 s) = (2 s + 1) E |zeta|^(2 s - 2). This is (O4). (O5) is (O2) at r = 2 with (O4) at s = 4: 2 (945 / 16) = 945 / 8. []
+
+Degree 8 of (OS_j)(c) is exactly what r = 2 needs. Constants in (O5) contain no L.
+
+**(P*) [discharged for (B-1)].** Let P_* be free of L with P^fib_pp <= P_*. For (B-1), P_* = 1. Indeed P^fib_pp <= P^inf_pp, since delta_pp >= 0 by (H6). The flux of a level-j plaquette in the (a, b) plane, n = L^j, is Sum_p w_p F_p over fine (a, b) plaquettes: by (B-1) the coarse flux is n^-4 times the sum, over the n^4 points x of the block, of the circulation around the n x n square at x, and Stokes applies to each square. Thus w_p = n^-4 #{x : p in the square at x}, which gives w_p <= n^-2 and Sum_p w_p = n^2, so Sum_p w_p^2 <= 1. The fine covariance of F is 4 times d (-Delta)^+ d^T, the orthogonal projector onto exact two-forms, which is at most 1. So P^inf_pp = w^T (d (-Delta)^+ d^T) w <= Sum_p w_p^2 <= 1, at every n, S.
+
+**Corollary NT1-F, order B [implication].** Assume what order A assumes, except (E1), which is dropped, and also (P*). Choose: w, the pair, N_D, then a_0, L_0, then
+
+    b_* := (1000 P_*^4 / a_0)^(1/2),   before L and free of L,                                  (O6)
+
+then L >= max(L_0, L_1^*), with L_1^* the formula (O3) at B = (15/2) b_*^2 (2 + 3 A') A' C_s^2 M_*, gamma = 2 alpha'; then X large as in step 6, also so that the left side of (O5) is at most (945 / 8) P_*^4 b_*^(-2) + small, which gives 2 tau_b <= a_0 / 4 since 945 / 4 < 250. The conclusion is that of order A.
+
+So (E1) is not needed for the clip. Only the C_n of (GS_j)(a) and (LE_j) still have to grow slower than L^(2 kappa). **Decision: order B is the form to adopt**, since it keeps the printed sequence b, L, X and reads fewer hypotheses; order A is (H21) as the queue asked, and it is the fallback if (FT) is delivered directly, without (OS_j)(c) in degree 8.
+
+**Size.** With (H18) at d = 64, a_0 is about 1.3e-23, not the 4e-9 printed at `library/nt2-flat-fibre-criterion.md:86`, which came from the enclosures. Order B at (B-1) needs L^(2 kappa) above 3e4 (2 + 3 C_n) C_n C_s^2 M_* / a_0^2, about 2e50 times those constants. This is harmless to the logic, as defect 2 of `gates/free-value-lead-read-28e261c17.md` says, and it conflicts with any fixed L elsewhere.
+
+## 4. Carry-over, checks, reads
+
+**For other owners; no other file was edited.**
+
+- `parts/witness.md:438-442`, `:452`, and the Obligations line `:137`: Lemma 3.6 and (3.4) now have written proofs, section 1 here. The sympy and sampling scripts become evidence only.
+- `library/nt2-chart-free-vertex.md:66-72`: replace the hypotheses of RM' by (D1) to (D3) and (RP), and the proof by Theorem RM' here. `parts/witness.md:1474` can drop its caveat on the two inputs.
+- `library/nt2-coherence-and-positive-norm.md:39-45`: add the constant c_0 >= 0 to the Kallen-Lehmann form. The claim that any RP vector field with O(4) invariance has this form is Corollary KL, under (D1) to (D3).
+- `library/nt2-flat-fibre-criterion.md:68`, `:78`, `:82`, `:84`, `:86` and `parts/witness.md:1430-1435`: (F-3) with the constant of (O2); order B, or order A; the size line with the hand a_0. Replacement for the sentence of the part: "Fix the geometry and a_0, take b_* := (1000 P_*^4 / a_0)^(1/2) free of L by Lemma CL of `library/witness-by-hand.md`, then L, then X large."
+- `parts/upper-chain.md:859`, request to the consumer: state that c_E in Ebar is free of L. (E4) needs it.
+
+**Kill tests.** Criteria `checks/hand_witness/CRITERIA.md`, script `kill_tests.py`, results `RESULTS.md`, 2026-11-01, one job under the numeric lock at 61 percent memory free. All 18 checks pass, with the two negative controls behaving as required. They test the formulas of sections 1 to 3 on samples, including the sign of (R3) in the time domain and in Fourier form. A pass refutes nothing and proves nothing: no step above rests on a run. W3d was corrected before its first run, since the draft misplaced the contact term; the correction is recorded in `RESULTS.md`.
+
+**Read.** `FINISH.md`, `GOAL.md`; the Witness sections of `gates/compute-inventory-39189b75b.md` and `gates/compute-inventory-2-28e261c17.md`; `gates/free-value-lead-read-28e261c17.md`; `parts/witness.md:205-269`, `:395-494`, `:1415-1494` and search hits; all of `library/nt2-free-value-by-hand.md`; `library/nt2-chart-free-vertex.md`; `library/nt2-flat-fibre-criterion.md:1-150`; `library/nt2-coherence-and-positive-norm.md:20-69`; `library/witness-interface-moments.md:1-45`; `library/witness-two-separation.md:50-99`; `library/witness-blocked-tree-limit.md:12-80`; in `parts/upper-chain.md`, lines 180, 605-649 and 859-891, as clause statements.
+
+**Not read.** Either hard-core attempt file, or any gate on an attempt. `gates/nt2-gate-2285befef.md`. Lemma 3.7 and the proof of Theorem 3.8 were read and not rechecked. The prefactor of (3.4) was matched to (3.3), not rederived from Proposition 2.2.
+
+## Endpoint
+
+**Discharged:** Lemma 3.6, the Ward identity of the form, and (3.4), given the symbol of Lemma 3.7; (F-3) with its constant; P^fib_pp <= 1 for (B-1); Theorem S, Lemma D, Theorem RM' at scope (D1) to (D3), and Corollary KL.
+
+**Implication:** Corollary NT1-F in orders A and B, and Lemma CL. They assume everything the printed corollary assumes. Order A adds (E1), and both add (E2) to (E4); (E4) includes c_E free of L.
+
+**Gap or open:** every producer clause of NT1-F, H-NET, H-SCALE and w free of L; C_s free of L; tensor multipliers; the one-link sentence of RM'. This is same-model author work with no outside read.

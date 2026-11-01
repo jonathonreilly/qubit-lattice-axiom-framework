@@ -1,9 +1,9 @@
 lead: openai/gpt-6-astra/max mac-mini-codex
-lease_until: 2026-11-02T08:00Z
+lease_until: 2026-11-02T09:00Z
 
 ## State of attack
 
-gap: Current continuation completed on the user-supplied filtered copy of `3100fdc3b`, 2026-11-01. The first stop is (C-JET) / (C-JET-field), with series-centre uniformity, in Section 5; item 2 also needs (CM-rows) on the walls. Section 7 proves the scalar summation repair and the Gaussian-budget implication, but the actual all-orders centre majorant (R-MAJ) remains open. Section 8 proves a length covering inequality, verifies `C_0=160` and the `L^4` positional/shape sum for one connected carried support, and gives the extra payment for multiple old components. Section 9 separates the constants and gives a noncircular conditional choice, including `C_2` and the needed row norms. Full (TAIL), (CM), and the mixed-family recursion remain open; the final ledger is Section 10. Only this file was edited. No external source, numerical job, or subagent was used. The predecessor's results and provenance below are retained as a historical checkpoint.
+gap: Current continuation on the user-supplied filtered copy of `1f4280617`, 2026-11-01, has stopped at item 1. Section 11 gives the exact missing coefficient rows (WALL-JET) and (B*-JET), with real-base and centre-domain requirements. Proved additions are the right-inverse energy lemma, exact saddle/contour identities, field-graft geometry and a local Cauchy lemma. An explicit real-noise configuration rules out replacing the contour base's `C_k` budget by the flat-base floor at weight zero. A separate polynomial example proves that scalar analyticity plus a stronger first-derivative kernel cannot supply the missing all-orders majorant. No counterexample to the actual old polymers is claimed. Items 2–4 were not advanced past this dependency: (R-MAJ), the six actual wall rows, (CM) and (TAIL) remain open. Sections 1–10 and their proved results are preserved as historical checkpoints; the current final ledger is 11.5. Only this file was edited. No outside source, numerical job, commit, post or subagent was used.
 
 *Lead note, 2026-11-01 (Opus 5.5, not independent, not an audit).* Launched as `codex exec -m gpt-6-astra` at reasoning effort max on the Mac mini: 13:24Z finish, 20,222 output tokens. The lead read this report, and the read-scope breach below is the project's process: it left forbidden files in the checkout and relied on instructions. The results here have self-contained proofs and carry no text from the other attempt. From now on independent-side Codex sessions get a filtered copy with no git history.
 
@@ -447,3 +447,170 @@ gap: The first honest stop for the actual old-polymer application is Section 5's
 unchecked: **Possible diagnostic, not run.** On a specified finite lattice and admissible real chart, a coefficient calculation could falsify (C-JET-field) or (R-MAJ): FAIL if a rigorously enclosed finite partial absolute coefficient sum already exceeds its stated radius or per-cube budget, or if an allowed horizontal base leaves the declared regular class. PASS for that finite instance would require certified upper bounds on the remaining coefficients and on the whole contour, including walls, below the thresholds. A sampled scalar supremum, a finite Taylor truncation without a tail bound, or success at finitely many volumes cannot prove the uniform assertion. No numerical job is available in this copy, and none ran.
 
 unchecked: **Continuation's read/execution record.** Read `GOAL.md`, `FINISH-rules.md`, the entire predecessor note, and the specified gate; used text searches in the permitted independent part and bounded reads of its constant order, brick definition, (TAIL), lift/tree statements, chart/right inverse, (GOOD), two-centre response, crossing/stage-(i) estimates, smoothing and wall recursion. Some broad locator results were truncated; no claim relies on their completeness. No library body, upper-chain file, other gate, git history, machine path outside this directory, or web source was opened in this continuation. Only text inspection and edits to this file were performed; source-reported numerical results were not rerun or adopted as evidence. No other file was edited; no subagent, audit, commit, push, or post was made.
+
+## 11. Continuation on `1f4280617`: the actual chart, first prerequisite
+
+unchecked: **Scope and notation.** This is the current continuation, not an audit or a verification of the historical provenance above. References in this section are to `parts/hard-core--independent.md` in the supplied copy. Write `P_cut=p_2=c_p eps_0/g` for the endpoint, reserving `P` for the noise operator. Write `G xi'=G_1 xi_1+G_2 xi_2`. The chart, exact mean, right inverse and old class being tested are precisely source lines 634–685 and 732–773. Upstream saddle existence and its asserted analytic/linear kernel estimates are inputs to the implications below, not newly discharged theorems.
+
+### 11.1 Falsification attempts at a real base
+
+discharged: **Flat, zero-noise test.** Set the real parent to the identity, with no holes, and `xi'=0`. The specified saddles then coincide at the identity, `b*=s_J=s=0`. There is no vertical wall height. Thus a proposed obstruction consisting only of a large real `s_J` at this configuration is absent. For a wholly shifted segment the exact identity in 11.2 below also rules out treating `s_J` and `P` as unrelated factors with an uncancelled `1/g` field loss. This test gives no information about nonlinear far coefficients.
+
+implication: **Nonzero real-noise test in the actual fibre.** In a flat block choose two positively oriented direction-1 links `e,e'`, at the same first coordinate, separated by at least three sites transversely, with both transverse positions in the interior of the same block. Put `u_e=T`, `u_e'=-T`, and all other components zero, for a unit colour generator `T`. The straight-path average defining `Q_str` (source line 145) gives the two links identical weights on every coarse direction-1 bond: the number of starting longitudinal coordinates is the same, and the transverse average is uniform. No other direction reads them. Hence `Q_str u=0`. A plaquette `p` incident to `e` and not `e'` has `(d u)_p=+T` or `-T`. This specifies a physical tangent explicitly. Since `P R u=u`, put
+
+    a=c_p eps_0/(sqrt(2) ||R u||_infinity),
+    x=(sqrt(2) a/g) R u,       b=a u.
+
+Then `max |x_i|=P_cut`; the field is a real point of the actual chart. Its first variation is `u` up to the explicitly stated gauge rotation; the private crossing-link correction starts at second order. Hence `F_p(V(a u))=a (d u)_p+O(a^2)`. For small enough `eps_0` this is nonzero and the real base remains in the `epsilon_2` class, conditional on the stated chart domain. Take an old rough anchor `Z` at a fixed distance from this support, with its near variables unchanged. Its base budget satisfies
+
+    t_Z(V(a u)) >= exp(-c_1 d(p,Z)/2)
+                    |a (d u)_p| Vol(Z)^(1/2)/(2g).       (BASE-TEST)
+
+At the flat saddle, `t_Z=0` and `t_fl=C_s L^(-2)c' Vol(Z)^(1/2)` has no `g`. The ratio of these two budgets therefore diverges as `g` tends to zero. This is an explicit family of chart configurations, with the tangent specified as above, not a computed lattice example. It falsifies the **budget comparison** `sup_t max(t_Z(V^t),t_fl)<=C max(t_Z(V^*),t_fl)` with fixed `C`. It does not falsify an actual `C_k`, which may be much smaller than its allowed bound, or a Gaussian-weighted/integrated estimate. The real endpoint is already enough; a complex wall is not needed for this test.
+
+gap: Consequently a carried old factor cannot be assigned the flat-base floor uniformly on the contour with weight zero using (TAIL) alone. A valid application must retain `t_Z(V^t)^2+t_Z(V^t)^3`, estimate its noise dependence, and charge its polynomial moment/prefactor row to the shared budget in Section 6. Section 5 explicitly allowed this option. No counterexample to the actual Yang–Mills old polymers has been obtained by either test.
+
+### 11.2 What the right inverse and the exact saddle do give
+
+discharged: **Energy estimate for the local right inverse.** Here is an algebraic lemma, retaining the truncation error. Let `X` be a subspace, `B=A+m^2>0` on `X`, `H_m>=0` on the full real link space, and `range P_0 subset X`. Suppose
+
+    P_0 P_0^T=B^(-1/2)(1+Delta_0)B^(-1/2),
+    ||Delta_0||<=e,
+    |<u,H_m u>-<u,Bu>|<=eta <u,Bu>   (u in X).
+
+Then
+
+    ||P_0^T H_m||_2 <= [(1+eta)(1+e)||H_m||_2]^(1/2)=:K_R,
+    ||R||_2 <= (1+K_R^2)^(1/2),       R=(P_0^T H_m,1).     (R-ENERGY)
+
+Indeed `||B^(1/2)P_0||^2=||1+Delta_0||<=1+e`; the form comparison gives `||H_m^(1/2)P_0||^2<= (1+eta)(1+e)`. Factor `P_0^T H_m=(H_m^(1/2)P_0)^T H_m^(1/2)` to obtain the first inequality; the second follows by adding the squared norm of the identity component. No factor `||B^(-1)||` is necessary. If a discarded self-adjoint tail has norm `epsilon_H`, its relative form error is at most `epsilon_H/lambda_min(B)`, explicitly `O(L^2 epsilon_H)` under the source's gap. Positivity of the retained full-space `H_m` is a hypothesis here, not a consequence of positivity on `X` alone.
+
+implication: Apply this lemma to (LOC-INV), with the real positivity/form comparisons of (CUT)/(STAB). The exact equation `P R u=u` for `u in X` follows directly from `Uu=u` and `E'=(P_0P_0^T H_m-1)U`; it needs no inverse with tails. If a scalar row of the first component of `R` has at most `N_R` nonzero entries, Cauchy–Schwarz gives
+
+    R_0 <= max(1, sqrt(N_R) K_R),
+    R_a <= max(1, exp(a r_R) sqrt(N_R) K_R),                (R-ROWS)
+
+where `r_R` is its support radius in the distance used by the weight. In four fine dimensions `N_R<=C(1+rho_P)^4`, including colour and noise types. The corresponding real bound for `P` is `P_0,row<=sqrt(N_P)||P||_2`, with `||P||_2<=sqrt((1+e')/lambda_min(B))`. Thus the unweighted rows are polynomial under the stated spectral bounds; a fast exponentially weighted row is **not** automatically polynomial when `r_R=O((log L)^4)` in coarse units. At complex fields or in the coefficient algebra, real transposes/positive forms do not prove these inequalities anew: an analytic coefficient bound is still required.
+
+discharged: **Exact cancellation on the shifted segment.** The source's identities imply, at each fixed `W`,
+
+    (g/sqrt(2))P s_J=b*,       (g/sqrt(2))P s=g G xi',
+    b(W,xi+s_tot(W))=b*(W)+(g/sqrt(2))P(W)xi+g G(W)xi'.    (SHIFT-FIELD)
+
+This uses `b*,G xi' in X(W)`, so `PR=1` is used only on its proper domain. In particular no `1/g` remains in the field variation due to the saddle mean. At `xi=xi'=0` the action is evaluated exactly at its saddle; its Taylor expansion in `b_hat` has no linear term because its first differential vanishes there. This removes a spurious source estimate; it does not bound any third or higher Taylor coefficient.
+
+discharged: **Whole-contour algebra before estimating coefficients.** At a fixed real `W_0`, let `t` be the real reference noise and let `z=t+h`, allowing independent wall heights as well as shifted segments. With `b_0=(g/sqrt(2))P(W_0)t`,
+
+    b(W,z)-b_0=(g/sqrt(2))[(P(W)-P(W_0))t+P(W)h].         (CHART-ID)
+
+This exact identity is the appropriate starting point on the walls. For a coefficient algebra it gives a row bound by summing absolute coefficient norms of the displayed entries. The first term uses `g|t_i|<=c_p eps_0` at an endpoint; it is not `O(g)` uniformly there. If `h=D(s_tot(W)-s_tot(W_0))` with a diagonal matrix `|D_ii|<=1`, its mean part is exactly
+
+    P(W)D[R(W)b*(W)-R(W_0)b*(W_0)].                        (PARTIAL-SHIFT)
+
+There is again no `1/g`, but generally `PDR` cannot be replaced by the identity. A partially shifted contour therefore needs the actual rows of `P` and `R`. An independent centre buffer `h_extra` adds `(g/sqrt(2))P h_extra`. These identities do not assume a nonholomorphic choice of Taylor base depending on `Re w`.
+
+implication: **Use the stronger pointwise response before taking a row.** On a near noise row whose local `W`-dependence is contained in `Y'`, `R_i(W)=R_i(W_0)` exactly. If the asserted comparison response, including its gauge-coordinate map, is
+
+    |partial_c b*_m|<=C_2,resp delta_1
+                   exp(-2 c_tau (d(m*,c)-R_loc)_+),
+
+then differentiation and the triangle inequality give
+
+    sum_c |partial_c s_J,i| rho_{Y'}(c)
+      <= sqrt(2) R_0 C_2,resp delta_1 c' C_d
+          exp(c_1 R_loc)(R_loc+1)^4 Q_4(2c_tau-c_1).       (R-FIRST)
+
+Here all `m*` in the row are in `Y'`, so `rho_{Y'}(c)<=c'g exp(c_1 d(m*,c))`, and the shell sum is exactly Section 7's proved (ROW). This avoids the exponentially weighted `R_a` in (R-ROWS). If containment fails, that avoidance is invalid. The gauge map needs its weighted convolution row `C_2,resp`, not just its sup-norm size constant. This is a first-derivative estimate, even when valid uniformly on a complex polydisc; it is not yet (R-MAJ).
+
+### 11.3 Grafting: geometry versus coefficients
+
+discharged: **Field grafts for the stated block geometry.** Let the old rough anchor `Z` be a nonempty union of full side-`M` bricks, in a region refined from whole coarse blocks. Use the source's definition of `tau`, with edges in `Z` free. A finite minimizing anchored forest can be pruned so that each part outside `Z` is attached through a boundary edge. If `n_boundary(Z)` is the number of edges incident to `Z`, the number of such parts is at most `n_boundary(Z)<=C M^4 |Z|`. For a part with `ell` fine edges, its depth-first traversal has length at most `2 ell`. The length-covering proof of Section 8, now with block side `L` and no thickening, bounds the number of coarse cells visited by `16+64 ell/L`. The cell image is connected: each fine edge either stays in a coarse cell or crosses one shared face. A spanning tree of that image has at most `15+64 ell/L` edges. The root lies in `image Z subset Y'`. Summing over parts and adjoining each rooted substitution tree gives
+
+    tau_new(Y'; resulting support)
+       <= 15 n_boundary(Z)+(64/L) tau_old(Z; old support)
+                         + sum_occurrences tau_new(l*; graft support).
+                                                               (GRAFT-FIELD)
+
+Terms supported entirely in `Z` cost no image edges. Taking infima over the old forest and the grafts proves the inequality for their minimal lengths. Thus field grafts satisfy (C-JET) with `A_Z=15 n_boundary(Z)` and `B=64/L`; `L>=64` suffices for equal input/output tree rates. This constant is independent of Taylor degree and volume. It may depend on `L,M` per rough cube; its payment in an activity sum is not proved by this lemma.
+
+implication: **Site grafts require their actual connectors.** If an old site maps into its target coarse site, the same proof applies. If each encountered old site needs a coarse path of length `D_i` to that target, add `sum_{i in Xi} D_i` to (GRAFT-FIELD). These paths must lie in the relevant region. They cannot be omitted or replaced by a factor per Taylor degree. For example, if old sites are separated by `s` fine links, each is at least `s/3` from `Z`, and `D_i<=D_*`, the forest contains at least `s/3` edges in each disjoint `s/3` neighbourhood of an encountered site before reaching `Z`. Hence `|Xi|s/3<=tau_old`, and one can replace `B` by `64/L+3D_*/s`. Under these explicit hypotheses the connector cost is paid from the old tree exponent, without assigning a site variable a weight below one. The actual site response coefficients and the connector hypotheses for every allowed hole pattern are not certified here.
+
+### 11.4 The coefficient bound at which this continuation stops
+
+discharged: **Local Cauchy estimate, with its dimension visible.** If a scalar or Banach-valued local function `H` is bounded by `M_H` on `|w_c|<=R_c`, `c in S`, its coefficients obey the Cauchy estimate proved in Section 5. Write `q_c=r_c/R_c<1`. If a tree from its root through all of `S` has length `T_S`, then
+
+    ||H-H(0)||_(r,c_3)
+      <= M_H exp(c_3 T_S) [prod_{c in S}(1-q_c)^(-1)-1].  (LOCAL-CAUCHY)
+
+For its part of degree at least two, replace the bracket by `prod(1-q_c)^(-1)-1-sum q_c`. If `sum q_c<=1/4`, that bracket is at most `4(sum q_c)^2`: group by total degree and bound the complete homogeneous sum of degree `n` by `(sum q_c)^n`. This gives a finite local remainder estimate for a strictly local chart once its analytic domain and the linear row are established. It does not by itself give a contraction: both the tree factor and the number of local variables remain in the bound. In particular a bound only on a disc of radius proportional to `eps_0` does not acquire extra smallness by decreasing `eps_0` when the evaluation radii scale the same way.
+
+gap: **Exact outstanding wall estimate (WALL-JET).** Fix an admissible real `W_0`, real near data and real reference noise `t`, independent of the formal variables. Put `V^t=Phi(W_0,b_0)`, where `Phi` is the actual gauge/fibre chart of line 635 and `b_0=(g/sqrt(2))P(W_0)t`. In fixed real frames define
+
+    A_l(W,b)=-i log(Phi_l(W,b)(V_l^t)^(-1)),
+    L_l=||A_l(W,b_0)||_(l*),
+    D_m=(g/sqrt(2)) sum_i [|t_i| ||P_mi(W)-P_mi(W_0)||
+                                      + ||P_mi(W)|| ||h_i||].
+
+All norms here are **absolute coefficient norms** at the output radii, with the root/connector weights of 11.3. Let `K_lm` bound the corresponding coefficient norm of `partial_{b_m} A_l(W,b_0+v(b-b_0))`, uniformly for `0<=v<=1` on the full contour and an enlarged centre polydisc. The fundamental theorem of calculus in `b`, followed by the product/graft bound, gives the sufficient inequality
+
+    L_l + sum_m K_lm D_m <= rho_Z(l)   (l off N_1(Z)),
+    A_l(W,b(W,z))=0                   (l in N_1(Z)).       (WALL-JET)
+
+This names the needed **coefficient row**, including the endpoint term `c_p eps_0 ||Delta P||/sqrt(2)` and every centre coordinate. To apply it one must also prove `V^t` is in the declared real base class for every `t`, keep its `C_k` budget as in 11.1, and use one compatible holomorphic chart for the centre buffer. (LOCAL-CAUCHY) is a possible way to estimate the strictly local parts; the source's lifted-saddle bound (A) at zero fluctuation does not establish these rows uniformly at real noise of size `P_cut`.
+
+gap: **A concrete missing all-orders input inside (WALL-JET).** The near mean already requires the coefficient norm of `b*(W)-b*(W_0)`, not merely (R-FIRST). One sufficient response estimate to seek, retaining the tree cost explicitly, is
+
+    sum_(alpha,Xi)!=0 |b*_(m;alpha,Xi)| prod_c rho_{Y'}(c)^alpha_c
+                        exp(c_3 tau(m*;supp alpha,Xi))
+      <= C_B delta_1 sum_c exp[-2c_tau(d(m*,c)-R_loc)_+
+                                      +c_3 d(m*,c)] rho_{Y'}(c)
+                                      + S_m.             (B*-JET)
+
+`S_m` is a separate bound for coefficients with sites, including mixed field/site coefficients; it cannot be set to zero when sites are present. All coefficients are those of the **actual comparison followed by the nonlinear gauge-coordinate map**, about each admissible real base. `C_B` must be uniform in volume and degree, with its dependence on `L,R_loc` bounded before choosing the radius; no exponential growth that cancels `delta_1` may be hidden there. For `m* in Y'`, the field part divided by `g` is bounded by
+
+    C_B delta_1 c' C_d exp((c_1+c_3)R_loc)(R_loc+1)^4
+                              Q_4(2c_tau-c_1-c_3).       (B*-ROW)
+
+This follows by the same shell proof, provided `c_3<c_tau`, since `c_1=c_tau`. The extra `c_3` and its effect on the radius choice are displayed rather than hidden in `C_B`. After multiplication by `sqrt(2)R_0`, this would control the mean part of (R-MAJ) near `Y'`. It also requires `sqrt(2) sum_m |R_im|S_m/g` within the allocated per-coordinate allowance. The analogous coefficient rows of `P`, the local chart, and `R G_1,R G_2` are needed on partially shifted variables. For the latter both `(D R)G` and `R(DG)` occur away from the locally frozen rows. None of these coefficient estimates follows just by substituting the real operator norms (R-ROWS).
+
+discharged: **Why scalar analytic bounds plus the stronger first-derivative kernel do not justify this missing step.** This test concerns that inference, not the actual saddle. Fix `0<q<1` and take a power of two `N` so large that `q^2 sqrt(N)>1`. Construct the real matrices `H_1=(1)`, `H_(2N)=[[H_N,H_N],[H_N,-H_N]]`; multiplication proves `H_N H_N^T=N I` by induction. Then
+
+    Q(z,z')=N^(-3/2) sum_(a,b) (H_N)_(ab) z_a z'_b
+
+has supremum at most one on the unit polydisc, by two Euclidean norm inequalities, and each first partial derivative has supremum at most `N^(-1/2)`. Its absolute coefficient sum at radius `q` is exactly `q^2 sqrt(N)`. Place `K` disjoint blocks of its `2N` variables at lattice distances between `r/2` and `r` from a root in four dimensions. For fixed `N`, `K` can grow proportionally to `r^4` (use the integer box with coordinates between `r/8` and `r/4`, with harmless rounding). At a uniform analytic radius `R`, define
+
+    f_r(w)=delta A exp(-lambda r) prod_(j=1)^K Q_j(w/R),
+    0<A<=R.
+
+The scalar supremum is at most `delta A exp(-lambda r)`, and on the entire polydisc every derivative obeys
+
+    |partial_c f_r|<=delta exp(-lambda d(root,c)).
+
+The function is real on real fields and vanishes to order `2K` at zero. Nevertheless, at evaluation radius `qR`, its absolute coefficient norm, even without any tree weight, is
+
+    delta A exp(-lambda r) (q^2 sqrt(N))^K,
+
+which is unbounded as `r` grows. Choose `r/2` beyond the cap distance of the stated radius function, so that every used variable has `qR=rho_e`. This tests exactly its capped regime. A shift of `r` in the exponential also gives the plateau kernel with `R_loc`. Thus even a uniform stronger first-derivative kernel, a scalar analytic bound on a larger polydisc, and absence of a linear term do not imply (B*-JET) or (R-MAJ). This family does **not** satisfy an independently imposed all-orders tree bound at radius `R`; such a bound, transferred through the comparison and gauge map with quantitative radius slack, is precisely additional structure a saddle proof could use. No actual Yang–Mills counterexample is asserted.
+
+gap: **First honest stop.** I have not proved (WALL-JET), in particular (B*-JET) or an alternative bound supplying its centre coefficients, for the actual chart and old polymers. The saddle/tree construction in Lemma 4.5k gives a route to an all-orders estimate, but its displayed (A) is about the lifted field, not the simultaneous nonzero-noise chart, the nonlinear comparison coordinate `b*`, and the enlarged centre domain above. Transferring it is an unproved step here. I stop at item 1. The scalar repair and the fixed-centre lemmas in the earlier sections remain proved as stated; they do not discharge this prerequisite.
+
+### 11.5 Final ledger for the requested order
+
+| Requested item | Status at this stop |
+|---|---|
+| 1. Actual chart and old polymers | **gap:** (WALL-JET), including the comparison coefficients (B*-JET) or a proved substitute, the site coefficients/connectors, admissible compatible real bases and their actual `C_k` budgets. **discharged:** the explicit field-graft inequality and algebraic lemmas in 11.1–11.4, under their displayed geometric/spectral hypotheses. |
+| 2. All-orders centre majorant | **unchecked** for the actual saddle after the item-1 stop. **discharged:** scalar holomorphy and the first-derivative kernel alone are insufficient, by the explicit polynomial test. **implication:** with the actual coefficient rows, Section 7's density cost is at most `e` per cube when `sum_(i in cube)(sqrt(2/pi)a_i+a_i^2)<=1`, `a_i=||s_tot,i-s_tot,i(0)||`; `a_i<=1/(4n_v)` suffices. A centre Cauchy substitution separately needs `sum_i -log(1-a_i/R_i)` within its allocated loss. Neither sum is verified for the actual centres. |
+| 3. Six actual exponent rows | **unchecked** after the first stop: action remainder, analytic old density, `log JJ`, `log FP`, Schur and determinant rows have not been certified on walls or shifted segments. Their sums over a family, together with prefactor/centre rows and the carried-budget growth, must satisfy the shared `1/8` inequality (CM-rows). The absence of a linear saddle term verifies none of these six rows by itself. |
+| 4. Connected families, rough-core margins, delivered (TAIL) | **unchecked:** not reached. No claim of (CM), a closed mixed-family recursion or a delivered (TAIL) follows from this continuation. |
+
+gap: **Class and constants must not be silently changed.** This continuation does not weaken the stated radii or the class of real bases, or assert a new constant order that closes them. In particular the old (TAIL) base class has curvature up to `epsilon_2`; the comparison `|b*|<=C_2 delta_1 eps_0` used for an `eps_0`-regular parent cannot simply be reused at every such base. If only the analogous `epsilon_2` size estimate is available there, a sufficient check for the source's `|s_J|<=p_2/16` requirement would be
+
+    sqrt(2) R_0 C_2,size delta_1 epsilon_2 <= c_p eps_0/16. (BASE-CENTRE)
+
+The cancellation of `g` is exact. Choosing `eps_0` smaller after `R_loc` does not help this comparison. One must prove a sharper base-dependent bound, arrange a compatible order of constants, or explicitly narrow/modify (TAIL)'s base class and recheck its consumers. No such modification is delivered here. Likewise the new field-graft factor `exp(15 c_3 n_boundary(Z))` and any site connector loss still need payment in (CM). These are conditions on a repair, not claims that the final statement is false.
+
+unchecked: **Diagnostic, not run.** A finite-lattice calculation could falsify the missing estimate: choose the explicit two-link tangent of 11.1, real bases spanning the permitted curvature range, and the partially shifted wall parameters, then compute rigorously enclosed coefficients of the actual `A_l` and `b*`. FAIL if a finite absolute sum already exceeds (WALL-JET), the proposed (B*-JET) envelope or the allocated per-cube centre loss, or if a declared real base leaves the chart. PASS for an instance requires a rigorous remainder bound, a common centre neighbourhood and bounds on the entire contour; a truncated series or sampled supremum is insufficient. Such finite passes would not prove uniformity in volume or level. No numerical job was available or run.
+
+unchecked: **Current read/execution record.** Read `GOAL.md` and `FINISH-rules.md` first. Used text locators and bounded reads in this file and the permitted independent source: the real/complex class and constant order, straight-path linearisation, tree norm and Lemmas 4.5j–k, chart/right inverse, (GOOD), old-polymer class, two-centre comparison and (R2), plus the cited crossing/step-order paragraphs. Locator output sometimes included other passages of that same permitted file; no inference relies on truncated output. No library body, gate, other attempt, upper-chain proof, git history, outside machine path or web source was opened. All new lemmas are in this file. Only this file was edited; no numerical computation, audit, commit, post or subagent was used.
+
+gap: **Handoff.** The new proofs establish the right-inverse energy estimate, exact contour algebra and field-graft bound; application to (C-JET-field) remains conditional on (WALL-JET)/(B*-JET), the site terms and compatible real/centre domains with the retained carried budget. The actual all-orders centre norm, six wall rows, family sum and (TAIL) remain open.

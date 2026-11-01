@@ -5,7 +5,10 @@ Text 0, 14 and 20; gate `fourth-form-codex-b4de676b7.md`, finding 1.
 Author: openai/gpt-6-astra/max macbook-codex, 2026-11-01.
 
 Status: **unchecked** conditional finite-history theorem, with a proof below;
-**gap** for the uniform moment closure (H20.5). This is an author calculation,
+**gap** for the joint uniform moment/locality closure. The continuation at
+8b1efefb1 proves the radius implication and the scalar history sum with
+explicit polynomial budgets; sections 7--8 and history-budget-sum.md state
+its still-unproved locality inputs. This is an author calculation,
 not independent review or an audit. No lemma from a paper is used. The finite
 probability diagnostics concern the abstract inference, not the Wilson law.
 
@@ -253,14 +256,18 @@ depth. For the original quarter-contraction claim its proposed right side
 would be C(L)x_j^(3/2)eta+u/4+epsilon_(j,q)-b_v, with an explicitly bounded
 epsilon_(j,q). No such epsilon is supplied by “tiny”.
 
-**Gap.** (H20.5) has not been proved for this family from the current
-regular-field, screening and rarity clauses. The elementary classical
-bound 12 L^(4j) alone is insufficient; section 2 explains the improvement
-available from (CF_j)(a) and the conditional current bound. Even after
-these inputs, replacing reference terms by an assumed output (K2) would
-be circular. An induction may use already proved lower-level (K2), but
-its full path sum, including the generated good-event bounds and their
-law-uniform locality estimates, has not been closed here.
+**Gap, narrowed by the continuation.** Section 3 of
+[history-budget-sum.md](history-budget-sum.md) proves the sufficient
+source-weighted inequality (H20.5) for q<=4 with U_v=A x_j^(3/2)sigma_v,
+*conditional on* the good-event bounds, the quantitative source/regular
+budgets, and the full chain rarity there. Its sources use only already
+proved lower-level moments at the reference law. Its scalar sum is
+uniform in volume and depth and uses the actual bottom 12x_0.
+This is not a completed joint induction: the good-event bounds require
+K1 and K3 at the output level. The first unclosed source-locality row is
+(I-K3) for the actual midpoint-extended current; the other locality/profile
+margins and the regular coefficient induction are also explicitly retained.
+No u/4 operator assertion is restored.
 
 K1 and K3 are separate obligations. Given their appropriate uniform
 versions, a finite good-set construction supplies b_v and beta_i for use
@@ -271,10 +278,12 @@ arbitrary mixture, with its conditional mean recomputed in that mixture.
 
 | Consumer | Exact effect of the replacement |
 |---|---|
+| Texts 14, 20, A-chain/good-set radii | (R20.5) follows under the added (FLOW-UL),(FLOW-END). Both producers must deliver their stated upper flow and terminal window together with quantitative rarity. The radius R_j=x_j^2 is unchanged. |
+| (CF_j)(a) and the source current | CF's full K3 remains a supplied clause. A regular pullback and K1 alone do not prove same-profile K3, for either source; the bounded-shell example makes this distinction explicit. For the current the additional required row is (I-K3). |
 | Lemma 14.15(a),(b) | Their regular-tier arguments still read K1, K2, K3 of their inputs. No new moment premise is discharged here. |
-| Lemma 14.15(c) | The arbitrary-input uniform closure is withdrawn. GH applies only to the listed generated recipes; (H20.5) and K3 closure remain gaps. |
-| Lemma 14.16 | h has the exact full-law source recipe above. Its rough-field moment assertion cannot follow merely from the regular identity. |
-| Theorem 14.13(i),(ii) | The total mark identity requires T_j(V)-T_j(1); the smeared identity already subtracts the reference value. The bounds on rho, r and their moment induction are conditional on closing their separate history budgets; the old u/4 recurrence is not proved. |
+| Lemma 14.15(c) | The arbitrary-input uniform closure stays withdrawn. GH plus HS pays the generated history with explicit polynomial budgets, conditional on the output good-event/locality hypotheses. The simultaneous K3 induction is still open. |
+| Lemma 14.16 | h has the exact full-law source recipe and the explicit polynomial source bound in history-budget-sum.md. The current's (I-K3) is a separate missing uniform locality estimate; its pointwise bound from regular K1 is insufficient. No rough-field class membership is promoted. |
+| Theorem 14.13(i),(ii) | The identities and reference centering are unchanged. Proposed budgets are A x_j^(3/2) for D,rho and A x_j^(3/2)(a_j/l)w_j for r, with explicit source costs. They remain conditional on the joint locality and regular coefficient induction; the old u/4 recurrence is not proved. |
 | Theorem 14.13(iii), (TR_p) | Uniform all-order moments and the sharper g_j^2 bound under mu remain open. Finite-torus boundedness is insufficient. |
 | Theorem 14.1c, then UV-OS(b) | Use only the generated e^i cells. The finite moment budget and the separation-decay induction are still gaps (gate findings 2,3), even if (H20.5) were closed. |
 
@@ -304,7 +313,7 @@ full-clause countermodel. It does not refute (H20.5) with a sufficiently
 large stated history budget. No counterexample to GH was found in these
 tests; its proof is the argument in section 3.
 
-**Additional radius gap [unchecked exact parameter calculation].** The
+**Earlier radius counterexample [unchecked exact parameter calculation, retained].** The
 proposed bad event in Text 14 is A_c={min(n_0,M_j)<=R_j+3}, R_j=x_j^2.
 It is the entire space if M_j<=R_j+3, including at n_0=infinity (an
 everywhere-regular field). The claimed reduction of A chains to actual
@@ -326,12 +335,13 @@ consumer's stated flow-to-radius inference, not a producer's actual
 trajectory. A separate upper linear growth bound might exclude it.
 Alternatively R_j could be capped below M_j and the good-set estimates
 redone; that repair has not been proved here. It would alter the A-chain
-premise consumed by (H20.5). This is another reason the current history
-probabilities cannot yet be substituted as uniform small bounds.
+premise consumed by (H20.5). This diagnosed the former FLOW clauses. Section 7 excludes this sequence
+using the producers' stated upper-growth bound and repairs the terminal
+cutoff condition; the example is not a counterexample to that new implication.
 
-## 6. Reopening and limits
+## 6. Earlier reopening and limits (superseded by sections 7--8)
 
-Next: resolve (R20.5) or replace the cutoff in A and the tested radii; then
+The earlier next action was: resolve (R20.5) or replace the cutoff in A and the tested radii; then
 prove (H20.5) for the recipes above, including vacuum constants and the
 current/source norms, with a simultaneous K3 induction. Only after that
 can a fixed Q(n) and the quantitative cumulant induction be undertaken.
@@ -343,3 +353,135 @@ identified above; a mapped-side search hit for Lemma 14.15 is a statement
 of offered smoothing clauses, not a proof imported into this note. Neither
 hard-core proof was read or transported to the other attempt. The later
 interface repairs and I(k;D) have not been undertaken at this stop.
+
+
+## 7. Continuation at 8b1efefb1: the flow and the terminal cutoff
+
+Provenance: continuation on 2026-11-01, pinned source
+8b1efefb17814662ce956f2744a66161b4125867; author derivation, not independent
+review or an audit. Sections 1--6 retain the earlier checkpoint and its
+countertests. The new result below supersedes their unresolved radius status.
+The pinned workflow was read through git because this is a sparse checkout.
+The task's fixed scope overrides campaign, PR and delegation procedures.
+
+**Producer statements [implication, no proof transferred between attempts].**
+Independent, Proposition 8.4(T2): |x_(i+1)-x_i| <=
+2 b log L + 2 C_0(L); (T5) supplies x_K=2 gamma^(-2).
+Its hypotheses include the stated one-loop identity and remainder bounds;
+this reading does not prove them. Mapped, Text 2, the displayed induction
+item 3: x_i-x_j <= B(j-i); its first-passage cutoff is
+K=min{k:x_k<=g^(-2)+B}. Together with the per-step upper decrement B,
+a noninitial passage has g^(-2)<x_K<=g^(-2)+B. Its P1--P3/closure inputs
+remain conditional. The absolute-step statement is also explicitly used in
+library/quiet-boundary-rarity.md, Lemma OW, Definitions. These are separate
+producer statements, not an identification of their constants or proofs.
+
+**(FLOW-UL) [named conditional clause].** For i<=j,
+
+    x_i <= x_j + B(j-i),                         B=B(L)<infinity.
+
+An absolute per-step bound implies it by summation. No monotonicity is used.
+The lower bound consumed below is still x_i>=x_K/2+b'(K-i).
+
+**Radius lemma [implication, proof supplied; unchecked independently].**
+Let lambda_(K-d)=l_0+l_1 d with l_1>0. It suffices that
+
+    x_K >= 10B/l_1,       exp(l_0/5) >= x_K^2+5.           (END-R)
+
+Indeed, 1+t<=exp(t) follows by differentiating exp(t)-1-t on t>=0.
+Consequently x_(K-d)<=x_K+Bd<=x_K exp(Bd/x_K), and
+
+    exp(lambda_(K-d)/5)
+      >= (x_K^2+5) exp(l_1 d/5)
+      >= (x_K+Bd)^2+5 >= x_(K-d)^2+5.
+
+Since floor(t)>t-1, M_(K-d)>x_(K-d)^2+4, proving the strict
+(R20.5) with room for its integer endpoint. This holds for every finite K,
+all d=0,...,K, and any volume.
+
+**Order of constants and cutoff repair [conditional].** First fix L and the
+geometry, quiet thresholds, w_0, the profile rates (including kappa_s if
+used), B, b', and the constants in the supplied rarity bounds. Choose
+alpha>0 and l_1>0 small enough for *both* required rarity envelopes, including
+the non-quiet rate of Text 22.3; do not increase them later to pay a count.
+Then choose X=gamma^(-2) large, and set
+
+    l_0=alpha X,   X<=x_K<=2X,
+    X>=max(1,B,10B/l_1),   alpha X>=5 log(4X^2+5).        (FLOW-END)
+
+If rarity permits l_0<=c X-C_*, take alpha<c and also
+X>=C_*/(c-alpha); fixed losses are thereby paid. These requirements coexist:
+log X / X tends to zero (e.g. log X<=2 sqrt(X) for X>=1).
+All earlier lower bounds on l_0, including profile/floor margins, must also
+be imposed at this last choice. The independent T5 window has x_K=2X;
+the mapped first-passage window lies in [X,2X] once X>=B, with target
+g^(-2)=X. Each attempt must deliver its own trajectory in that window and
+its own quantitative rarity rates. No shared numeric one-loop coefficient
+is required here.
+
+With arbitrary x_K and fixed l_0 there is a genuine *terminal* failure:
+(R20.5) at K is exactly x_K^2+3<floor(exp(l_0/5)). No slope bound repairs
+its failure at d=0. (FLOW-END) is the repaired cutoff contract. An existing
+trajectory outside the window is not covered merely by renaming K. There
+is no proof here for the alternative R_j=min(x_j^2,M_j-4); that change
+would alter the good-set exponent and is not made.
+
+The same order also permits R_j>=lambda_j+1 and
+B_j Phi_j(R_j)<=1/1024. To see the first uniformly, put d=K-j and
+x_j>=X/2+b'd. The derivative in d of (X/2+b'd)^2-(alpha X+l_1 d+1)
+is positive once b'X>=l_1, and its value at d=0 is positive for X large.
+For the second, use lambda_j>=c_lambda y_j with
+c_lambda=min(2alpha,l_1/b')/2>0 and y_j=x_K/2+b'd (x_K<=2X).
+Then sqrt(R_j lambda_j)>=sqrt(c_lambda) x_j sqrt(y_j).
+Both positive profile rates dominate the polynomial B_j=C_B sqrt(x_j)
+uniformly as X grows; the floor is not reached by the radius lemma.
+The earlier geometric sequence violates (FLOW-UL) and therefore does not
+refute this implication.
+
+
+## 8. Step 2 stop: summation is conditional; source locality is not yet proved
+
+**Implication, proof saved.** [history-budget-sum.md](history-budget-sum.md)
+contains the explicit U_v(q), every source bound, the bottom 12x_0 and its
+coupling-factor cancellation, the joint path probability under each type
+of top law and arbitrary mixtures, and the geometric-series majorant
+(HS-budget). For q<=4 it pays the old (2L^4)^a mechanism, with the precise
+half-path exponent and any fixed spatial-weight cost in its base N.
+It is uniform in volume, cutoff and history depth after normalization by
+x_j^(3/2)sigma_v. The unnormalized budget grows with x_j; it is not TR_p.
+
+**Implication, proof saved.** (K-transport) derives the transport half of
+K3 under a fixed arbitrary mixture from lower-level K2,K3 and (SCR_j).
+It costs 2 B_j Phi_j(k_m)+3 sqrt(tau_j(m)), with source locality added
+separately. The proof never puts a conditionally restricted law in LL.
+
+**Gap / first honest stop in the joint induction.** For the actual current,
+with F=x_(j+1)I_(j;c',c''), the missing source estimate is
+
+    sup_(nu in LL_(j+1)) E_nu |F-E_nu[F | V_(j+1) on Q_m(c')]|
+      <= C_loc iota^new_j x_(j+1)^(3/2) exp(-c_* d(c',c''))
+                    B_(j+1) Phi_(j+1)(m),    m>=r_(j+1).  (I-K3)
+
+Section 4 of the new note gives every locality row that consumes it.
+A bounded regular-shell example there disproves the shortcut from regular
+K1, polynomial size, and a regular pullback extension to this same-profile
+K3 bound. This is an abstract inference counterexample, not a countermodel
+to (C2_j)(c) or to the specified Wilson current. The stronger regular
+far-difference estimate suggested by (C2_j)(c), including its applicability
+to the current recipe and to E^r, and its preservation by the midpoint
+extension, has not been derived here. Both attempts must check this for
+their own current; Q^s=0 removes only the change-of-law part of that check.
+
+**No output used early.** K1 and K3 at j+1 must precede GG at j+1;
+only then does HS prove K2 at j+1. The regular z,beta,eta budgets are also
+hypotheses of this attempted induction, not established by the history
+sum. The source note does not claim that the existing K1/K3 transport
+margins, including the second tier and the factor two past the cap, have
+all been checked for these budgets. The exact remaining row inequalities
+are stated, so a later completion can test them rather than assuming them.
+
+**Stopped before step 3.** Theorem 14.1c retains gaps 2 and 3 of its gate:
+no Q(n), sharper mu moments, or all-partition separation-decay induction
+is proved here. No numerical job, audit, independent review, commit, push,
+PR, or other-file edit was performed in this continuation. The earlier
+numerical outputs in checks/upper-chain-codex/ are previous-run evidence.

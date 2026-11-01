@@ -1,3 +1,26 @@
 L=3 R1 flat       seed 1 start Ratio_C 0.002 best Ratio_C 0.8486 Ratio_A 0.8486 w1 0.087 rhs_c 0.1028 min|m| 1.000 nrough 9 evals 442 28.3s
 L=3 R1 flat       seed 2 start Ratio_C 0.002 best Ratio_C 0.7392 Ratio_A 0.7392 w1 0.255 rhs_c 0.3456 min|m| 1.000 nrough 117 evals 431 27.6s
 L=3 R1 smooth     seed 1 start Ratio_C 0.003 best Ratio_C 0.8515 Ratio_A 0.8510 w1 0.014 rhs_c 0.0159 min|m| 1.000 nrough 9 evals 592 38.0s
+L=3 R1 smooth     seed 2 start Ratio_C 0.002 best Ratio_C 0.8398 Ratio_A 0.8397 w1 1.669 rhs_c 1.9874 min|m| 0.999 nrough 225 evals 528 34.7s
+L=3 R1 sheet      seed 1 start Ratio_C 0.843 best Ratio_C 1.0000 Ratio_A 1.0000 w1 2.000 rhs_c 2.0000 min|m| 1.000 nrough 9 evals 48 3.1s
+L=3 R1 sheet      seed 2 start Ratio_C 0.851 best Ratio_C 1.0000 Ratio_A 1.0000 w1 2.000 rhs_c 2.0000 min|m| 1.000 nrough 9 evals 53 3.4s
+L=3 R1 sheet_th   seed 1 start Ratio_C 0.719 best Ratio_C 0.7395 Ratio_A 0.7395 w1 0.261 rhs_c 0.3535 min|m| 1.000 nrough 117 evals 402 25.8s
+L=3 R1 sheet_th   seed 2 start Ratio_C 0.732 best Ratio_C 0.8244 Ratio_A 0.8244 w1 0.010 rhs_c 0.0127 min|m| 1.000 nrough 9 evals 511 32.9s
+L=3 R1 sheet_int  seed 1 start Ratio_C 0.000 best Ratio_C 0.9216 Ratio_A 0.9216 w1 1.932 rhs_c 2.0962 min|m| 1.000 nrough 158 evals 414 26.6s
+L=3 R1 sheet_int  seed 2 start Ratio_C 0.002 best Ratio_C 0.3051 Ratio_A 0.3051 w1 1.129 rhs_c 3.7003 min|m| 0.192 nrough 856 evals 208 13.4s
+L=3 R1 halfcut    seed 1 start Ratio_C 0.540 best Ratio_C 0.6000 Ratio_A 0.6000 w1 2.000 rhs_c 3.3333 min|m| 0.333 nrough 15 evals 68 4.4s
+L=3 R1 halfcut    seed 2 start Ratio_C 0.543 best Ratio_C 0.6000 Ratio_A 0.6000 w1 2.000 rhs_c 3.3333 min|m| 0.333 nrough 15 evals 64 4.1s
+L=3 R1 halfcut2   seed 1 start Ratio_C 0.240 best Ratio_C 0.9102 Ratio_A 0.9102 w1 0.191 rhs_c 0.2104 min|m| 1.000 nrough 18 evals 566 36.4s
+L=3 R1 halfcut2   seed 2 start Ratio_C 0.241 best Ratio_C 0.9378 Ratio_A 0.9258 w1 0.025 rhs_c 0.0265 min|m| 1.000 nrough 9 evals 552 35.6s
+L=3 R1 tri        seed 1 start Ratio_C 0.541 best Ratio_C 0.8940 Ratio_A 0.8939 w1 1.899 rhs_c 2.1239 min|m| 1.000 nrough 207 evals 599 38.5s
+L=3 R1 tri        seed 2 start Ratio_C 0.545 best Ratio_C 0.8941 Ratio_A 0.8936 w1 1.900 rhs_c 2.1253 min|m| 1.000 nrough 210 evals 601 38.6s
+Traceback (most recent call last):
+  File "/Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/checks/gate_fi/search.py", line 174, in <module>
+    main()
+  File "/Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/checks/gate_fi/search.py", line 160, in main
+    U0 = start(name, L, seed)
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/checks/gate_fi/search.py", line 60, in start
+    U[mu][sl] = h
+    ~~~~~^^^^
+RuntimeError: The expanded size of the tensor (1) must match the existing size (2) at non-singleton dimension 2.  Target sizes: [2, 2, 1, 2, 4].  Tensor sizes: [2, 2, 2, 2, 4]

@@ -11,3 +11,4 @@ resume a at outer 0
 resume a at outer 3
   a outer 4 evals 136 |g_L|=1.579e-05 |r|=1.439e-03 S=88.62578723 E=88.62669451 t 823 rss 1.61
   a outer 5 evals 92 |g_L|=1.935e-05 |r|=4.071e-04 S=88.91455117 E=88.91546124 t 1382 rss 1.61
+  a outer 6 evals 80 |g_L|=1.966e-05 |r|=1.327e-04 S=88.96661033 E=88.96752090 t 1829 rss 1.61

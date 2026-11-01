@@ -24,6 +24,15 @@ Written by the target lead on 2026-10-31. `GOAL.md` holds the target and the def
 3. NT1 and NT2 hold, as `parts/witness.md` states them.
 4. One clean document holds the whole chain, followed by a line-by-line independent review of it, then the owner's approval of the exact text. Balaban and Dimock are credited by name. Until then there is no public claim.
 
+## Current order
+
+Lead, 2026-11-01, after `gates/strategy-codex-b5251ab07.md`. Three kill tests come first: `joint-induction`, `tail-two-step`, `seam-quadratic`. The unit of work is one fresh session on one inequality, delivering a displayed estimate or a specific failed term.
+
+- **Paused:** the alternating resumed pushes of both attempts. They can resume if a kill test survives; their unread notes are kept.
+- **Parked:** general witness work, and routine hand rebuilds, until one hard-core attempt delivers a surviving induction step. A second-jet feasibility check stays allowed.
+- **Finish criterion for this phase:** one surviving, fully specified induction step, with its complete norm, its constants and an honest base case. Fewer gap rows is not the measure.
+- **If a test kills its route:** compare, on the same two-step example, an induction that carries explicit large-field regions and localized insertions, as Balaban organizes it, before funding more repair. The compressed state of both attempts may be costing more than it saves.
+
 ## Queue
 
 Take the first item that is not taken, unless the lead has named one for you. An item is taken if a file matching its output exists with a live lease, or a finished report. Pin the statement at the branch head and put the commit in the file name. A worker on the Mac mini takes these items in order, one at a time, so check the branch before starting one.
@@ -61,7 +70,9 @@ Take the first item that is not taken, unless the lead has named one for you. An
 | 24 | `shell-end` | mapped | done | FALL needs only (UP), by way of (WAM) or (E-SHELL). Open: (GLUE-E), (LC). | `library/excess-shell-end.md` |
 | 25 | `seam-lc` | mapped | stopped at the first step | The shell route needs (RATE-exact) at the rate nu fixed before L, so a finite A_s(L) is not enough. Needs uniform effective constants, a direct (WAM-req), or a restated order of constants. (LC) and (GLUE-E) not attempted. | `library/excess-seam.md` |
 | 26 | `shell-gate` | mapped | high | Gate `library/excess-shell-end.md`, written by Codex: does (INPUT) + (UP) really give the FALL that DS reads; are (WAM) to (UP) and (E-SHELL) to (WAM) right; do the two-site and tensor tests test the right thing; does the rate condition (b_s nu_* <= 1/2) survive the mapped order of constants? Do not read the `seam-lc` output. | `gates/shell-end-<commit>.md`, `checks/gate_se` |
-| 27 | `joint-induction` | neutral | high | The upper chain's hardest open statements: the joint moment and locality induction for the generated family, (H20.5) with (K3), Theorem 14.1c's Q(n) and cumulant induction, and the pullback hole in (CF_j) and Rg_c beyond T/4. Try to kill them first. Say which one the chain would die on, and attack that one. | `library/upper-chain-joint-induction.md` |
+| 27 | `joint-induction` | mapped | high, first | Kill test. (1) One dependency diagram ordered by (level, construction stage), with the current source, boundary coercivity, regular completion and all mixture laws on it: every same-level input must have a prior supplier. (2) Take the actual current recipe at the flat, commuting quadratic limit, on nested flat walls and on a mixture of two regular tops agreeing on the read cube. Track its normalized conditional law, far difference and second moment through two steps. A nondecaying term, a depth-growing coercivity loss in the proposed norm, or a source K3 already assuming the output K3 kills that invariant. Arbitrary fields satisfying K1 do not count as generated currents. Stop at the first unsupplied same-level input or incompatible norm, and do not write another renamed induction around it. | `library/joint-induction-two-step.md` |
+| 28 | `tail-two-step` | independent | high, first | Kill test of (BANACH) and the linear old-factor term, on the filtered copy. | `library/tail-two-step.md` |
+| 29 | `seam-quadratic` | mapped | high, first | Quadratic (LC) in four dimensions at the flat background, nested scales, with the actual composite constraint, tracking L and depth, then the rate inequality on one page. | `library/seam-quadratic.md` |
 | 22 | `hand-ab` | independent | done | Literal (AB) stays open. A replacement route on graph balls gives the Morrey estimate with hand proofs, conditional on two consumer bounds in (5.1). Same provider read: none yet. | `library/adapted-domains.md` |
 
 ## Joining

@@ -64,6 +64,14 @@ def start(name, L, seed):
             U[mu][o, o, o, o] = m1
             s = [o, o, o, o]; s[mu] -= 1
             U[mu][tuple(s)] = m1
+    elif name == "disp":                     # a dispersed block from dispersal5.py in block 00, flat elsewhere
+        d = np.load(HERE / f"disp4_L{L}.npz"); v = torch.from_numpy(d["x"]); i = 0
+        for mu in range(4):
+            n = int(d["sizes"][mu]); s = [L] * 4; s[mu] -= 1; s.append(4)
+            q = v[i:i + n].reshape(s); i += n
+            sl = tuple(slice(0, c) for c in s[:-1])
+            U[mu][sl] = q / q.norm(dim=-1, keepdim=True)
+        a = 1e-4
     elif name == "star_sheet":               # star defect plus a weak off-centre sheet, so that a tiny mean sees a z-dependent push
         for mu in (0, 1):
             U[mu][o, o, o, o] = m1

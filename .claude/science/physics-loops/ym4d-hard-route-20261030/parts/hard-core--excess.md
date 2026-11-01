@@ -246,3 +246,140 @@ Let V be a level-k field of flux f <= f_1(L), Vtilde_k := V, Vtilde_i := T(Vtild
 *Proof.* Let a_i := I^grad(Vtilde_i; W_i), c_i := cub(Vtilde_i; W_i). (T3), with W^+ <= e^{C nu_i} W on a log-Lipschitz weight, gives a_{i-1} <= (C_2 L^-2 e^{C nu_i}) a_i + C(L) f_i c_i and c_{i-1} <= C L^-2 e^{C nu_i} c_i. For L >= L_0 both contract, and the product of e^{C nu_i} is bounded, as nu_i is geometric. Sum (T2) over i. The first inequality is class minimality. QED
 
 *What this replaces.* Lemma TOP as printed: it read Prop AN3 uniformly in k and a Taylor expansion at a cut field. TOP-1 reads neither, and it has no tail. It costs L >= L_0 with C_2 L_0^-2 < 1, which Section 3A wanted to avoid and which the program allows anyway. Section 3 below gets the local form.
+
+## 3. Lemma TOP with weights
+
+*Label: implication, level of each term. Reads Theorem F of `library/fibre-propagator.md` at the true lift, (R3), item (o). Unlike TOP-1 it is not self-contained: locality of the minimiser is an elliptic fact, and Theorem F is where it lives. It reads no cut field and no Prop AN3.*
+
+Fix n <= k, V := V_n, U the class minimal lift, and write W := W_n with its down-averages. Y_n(W) := E_0(U; W_0) - E_n(V; W_n). Let Utilde be the trial of Section 2.3 from V.
+
+**Hierarchical frames (Lemma CJ, exact).** Sample y_{n-1} ~ chi_B on level-(n-1) plaquettes, then y_{n-2} ~ chi_{y_{n-1}}, ..., down to a fine plaquette z, with the orientation of B. Call the path omega, and let F(omega) be theta(z) transported to B through the axial gauges of y_1, ..., y_{n-1}, B in turn. Then |F(omega)| = |theta(z)|, and by Lemma K(b) at each level, E_0(U; W_0) = sum_B W(B) L^{4 n} E_omega |F(omega)|^2. The tower property gives L^{2 n} E_omega F(omega) = theta(B) - r^{(n)}(B), with
+
+    r^{(n)}(B) = sum_{i <= n} L^{2 (n - i)} E_{y_i} [ transported r_{y_i} ],    |r^{(n)}(B)| <= C(L) sum_{i < n} L^{-2 (n - 1 - i)} E_i(B^+),        (CR)
+
+as the law of y_i has mass at most L^{-4 (n - i)} on each plaquette and |r_{y_i}| <= C(L) n_{y_i}. **(CR) is the composite second-order bound, free of n, in the sharp scale-invariant form, read from one-level remainders with no Lemma AN1 and no Uhlenbeck gauge.** This is the repair of D4 of `gates/closure-bad958abb.md`: the frame moves with the block at every level, so no gauge at the top box is needed.
+
+And exactly, with c := L^{-2 n} theta(B),
+
+    L^{4 n} E_omega |F|^2 - |theta(B)|^2 = L^{4 n} E_omega |F - c|^2 - 2 <theta(B), r^{(n)}(B)>.
+
+Let Yhat_n(W) := sum_B W(B) L^{4 n} E_omega |F - c|^2 >= 0. So Y_n(W) = Yhat_n(W) - 2 sum_B W(B) <theta(B), r^{(n)}(B)>. The same holds for Utilde's chain, with its own frames and Yhat_tr.
+
+**Prop TOP-W.** *Let W be log-Lipschitz at rate nu <= delta_#/8 in level-n cells. Then for V in D_n, in every sector,*
+
+    Y_n(W) <= C_T ( I^grad_n(V; W) + cub(V; W) ) + C(L) Cub_n(W),    Cub_n(W) := sum_{i <= n} L^{-(n - i)/2} cub(V_i; W_i^+).
+
+*Proof.* (1) *Trial.* By the tower property Yhat_tr(W) is the sum over levels of the trial's variances, plus the mean's term, and by (T2) and Section 2.3 it is at most C (I^grad_n(V; W^+) + cub(V; W^+)).
+
+(2) *Elliptic step.* U and Utilde are class chains in one fibre, so in a box both have small angle in tree gauge, and Utilde = e^H U with sup_B ||H||_{Eps(B)} small, by item (o). Let J(G) := D A(Utilde)[G] for G in ker Q^o at U. Since D A(U) vanishes on ker Q^o, Taylor at U gives bH[H, G] = J(G) + N(H)[G], with ||N(H)||_{Eps^*(B)} <= C(L) sup ||H||_{Eps} ||H||_{Eps(B^+)}. Theorem F at U, (i), (ii), with a weight e^g, g Lipschitz at rate delta_#/4 (real, by item (iii) the gauge part vanishes): sum_B W(B) ||H||^2_{Eps(B)} <= C sum_B W(B) ||J||^2_{Eps^*(B)}. In level-n units, for G on B of norm 1, split F(Utilde) into its constant part F-bar_B in the frame of B and the rest. The constant part pairs with d_{Utilde} G to at most the commutator, of size f_B^2. The rest is at most ||F(Utilde) - F-bar_B||_{L^2(B)} ||d G||_{L^2}. So
+
+    sum_B W(B) ||H||^2_{Eps(B)} <= C ( Yhat_tr(W^+) + sum_B W(B) f_B^4 ).        (H)
+
+(3) *Comparison.* On omega-space, F_U(omega) - F-tilde(omega) =: Omega-hat(omega) obeys |Omega-hat| <= |d_U H + [H, H]|(z) + 2 |tau_omega| |theta-tilde(z)|, with tau_omega the sum of the link differences along the path omega. Level by level, with (1) of `library/analytic-lift.md` and the Sobolev step of that note, E_omega |tau_omega|^2 <= C(L) ||H||^2_{Eps(B^+)}, as avg_b e_i(b)^2 <= C L^{-2 (n - i)} e_n^2. So with |theta-tilde| <= C_7 f_B L^{-2 n} from Section 2.3, O-hat := sum_B W(B) L^{4 n} E_omega |Omega-hat|^2 <= C(L)^2 times (H) for f small. Then L^{4 n} E_omega |F_U - c|^2 <= 2 L^{4 n} E_omega |F-tilde - c|^2 + 2 L^{4 n} E_omega |Omega-hat|^2, and
+
+    Yhat_n(W) <= 2 Yhat_tr(W) + 2 O-hat.
+
+(4) *Back to Y.* The (CR) term is at most C(L) sum_B W(B) |theta(B)| sum_{i<n} L^{-2 (n - 1 - i)} E_i(B^+). Young on each pair, |theta(B)| |theta_p|^2 <= eps |theta(B)|^3 + eps^{-1/2} |theta_p|^3 with eps := L^{-3 (n - i)} against the L^{4 (n - i)} plaquettes of B^+ at level i, makes this at most C(L) Cub_n(W). QED
+
+*Why no toron term here either.* The trial needs no trivialisation, and Theorem F does not read the sector.
+
+## 4. (COMP)(ii)
+
+### 4.1 Geometric form, by hole-filling in the level
+
+*Label: implication of Theorem EX-loc, Prop TOP-W and one clause of (COMP)(i). Own derivation; the idea T_{m+1} <= q T_m is the route named in D7 of `gates/closure-bad958abb.md`.*
+
+Fix W_k with log W_k Lipschitz at a rate nu <= delta_#/8 in top cells, and W_j := down-averages. a_j := I^grad(V_j; W_j). By (TS) with compatible weights, Y_j(W_j) = Y_{j+1}(W_{j+1}) - e_j(W_{j+1}). Theorem EX-loc gives e_j(W_{j+1}) >= c_1 e^{-C nu_{j+1}} a_{j+1} - C(L) c_{j+1}, with c_{j+1} := cub(V_{j+1}; W^+) + cub(V_j; W^+). Prop TOP-W at level j + 1, with W^+ <= C_w W, gives a_{j+1} >= (Y_{j+1}(W_{j+1}) - C(L) Cub_{j+1}(W)) / (C_T C_w) - C cub(V_{j+1}; W). Hence, for either sign of Y,
+
+    Y_j(W_j) <= q_h Y_{j+1}(W_{j+1}) + C(L) ( c_{j+1} + Cub_{j+1}(W) ),    q_h := 1 - c_1 e^{-C nu} / (C_T C_w) < 1, free of j and k.        (HF)
+
+**Theorem COMP-ii-g.** *Let I_k(V; W) := I^grad_k(V; W) + cub(V; W), and suppose (COMP)(i), first clause, or any bound cub(V_{k-m}; W_{k-m}^+) <= C rho^m cub-bar, with rho < 1. Let q-bar := max(q_h, 2 rho). Then for all m <= k:*
+
+    sum_{c at level k - m} W_{k-m}(c) |grad theta_c|^2 <= C(L) q-bar^m ( I_k(V; W_k^+) + cub-bar ).
+
+*From (COMP)(i), rho = L^-2 and cub-bar = f_loc^3: by Hoelder sum_c |theta_c|^3 <= (sum_c |theta_c|^4)^{3/4} (s^-4)^{1/4} <= C s^2 f_loc^3. So for W_k := w_{c_k} of rate at most delta_#/8, this is (COMP)(ii) with s^2 replaced by q-bar^m.*
+
+*Proof.* Iterate (HF) from the top: Y_{k-m} <= q_h^m Y_k + C(L) sum_{l < m} q_h^{m-1-l} rho^l cub-bar. Y_k <= C_T I_k + C(L) Cub_k by TOP-W. And c_1 a_{j+1} <= e_j + C(L) c_{j+1} = Y_{j+1} - Y_j + C(L) c_{j+1}, with -Y_j <= C(L) Cub_j, as each e_i >= -C(L) c_{i+1} by Theorem EX-loc. QED
+
+**Is the weaker rate enough?** Yes for every reader. Prop DS and Lemma EX2 write "geometric" and sum a_m^{1/2} over m, and that sum converges with q-bar^{m/2}. (i)'s clause 1 and the clauses at variations carry their own s. Prop GS at W = 1 needs only the sum. No consumer reads s^2 as a number: the only places are the words "C(L) s" and "C s" in EX2 and DS, which become q-bar^{m/2}.
+
+### 4.2 The form with s^2
+
+*Label: implication, given (AD) of `library/composite-adjoint.md` and (R3). Repairs D4 of the closure gate. Not needed by any consumer.*
+
+**Lemma W (lattice Weitzenboeck, any field of flux at most 1/6).** ||D^* theta||^2 + ||B||^2 = I^grad + X, with |X| <= C cub(U), where D^* is the backward covariant divergence and B the Bianchi defect. *Proof.* Expand both squares. The diagonal of ||D^* theta||^2 is P, the diagonal of ||B||^2 is T, and the cross terms cancel by the swap of Lemma BT, up to its commutators. QED
+
+With a cut-off eta at top scale, in level-k units, this gives ||eta grad F||^2 <= 2 ||eta D_U^* F||^2 + C Yhat_k(loc) + C ||F||^3_{L^3} + lattice term, by applying it to eta (theta - theta-bar) in the frame of the top box, with F-bar the mean: the term in grad eta reads only the variance, so no energy appears. D_U^* F = Q^* lambda on the Wilson form up to a quartic correction, the contour part vanishes as D'^* lambda = 0 (Step 1 of (LIFT-I)), and (AD) bounds the rest by C |lambda|_loc. *The multiplier needs no Taylor expansion:* for a bump G with Q^o G = b on one parent bond, supported in its block, of norm C, lambda(b) = D A(U)[G] = <F - F-bar, d_U G> + commutator. So |lambda|_loc^2 <= C Yhat_k(loc) + C f^4. With Prop TOP-W and (R3): ||grad F||^2_{L^2(W)} <= C(L) I_k(V; W^+).
+
+*Down to level j.* Lemma CJ with block side ell := L^j at the fine level: E_omega |F - c|^2 is at most C ell^2 avg_{B^+} |grad theta^0|^2 by the box Poincare inequality, plus the frame term, the holonomy of a loop of area ell^2, which by Hoelder in L^4 contributes at most C ell^4 avg_{B^+} |theta^0|^4. In lattice sums, Yhat_j(W) <= C s^2 ||grad F||^2_{L^2(W)} + C s^4 ||F||^4_{L^4(W)}. So with Theorem EX-loc, a_j <= C(L) s^2 I_k(V; W^+) + C s^4 f^4 + C(L) cub-sum <= C(L) s^2 I_k(V; W^+). That is (COMP)(ii) as printed.
+
+*What this repairs.* D4 asked for AN1 per block in a lattice Uhlenbeck gauge. (CR) replaces both, and the Poincare step replaces the convolution of Step 5.
+
+## 5. Lemma EX2, rewritten
+
+*Label: implication, level of each term, given (A1) to (A4) below. Answers D1, D2, D3 of `gates/lemma-ex-7c12c6981.md`.*
+
+**The change of method.** The printed proof ran Lemma EX's Steps 3, 4 on delta F, with IMS balls of radius f^{-1/2}. There a transport across a ball costs r |delta F|, and that is D1. Here no ball appears. The identity (V_W) is differentiated twice in time at block scale, where a transport costs C(L), which is allowed.
+
+### 5.1 Statement
+
+*Gauge (D3).* V_j(t) := N^{(j)}(U_0 e^{H(t b)}), with H(.) the solution of Prop AN3 for V e^{t b}, and N^{(j)} the contour-free chain. So V_j(t) is the minimal chain of V e^{t b} up to a level-j gauge. delta F, h_j := d/dt log (V_j(t) V_j^-1), h_j^{(2)} and delta^2 theta are read in this gauge. b_m(b; W) := sum_{c at level k-m} W(c) sum_e |grad_e delta_b theta_c|^2, grad_e the covariant difference at t = 0.
+
+*Inputs.*
+- (A1) (COMP)(i), with weight: sum_c W |theta_c|^4 <= C s^4 f^4, sum_c W |delta theta_c|^2 + sum_c W |delta^2 theta_c|^2 <= C(L), for W = e^g with g centred at b of rate at most a quarter of the kernel's.
+- (A2) sum_c W ( |h_j(c)|^4 + |h_j^{(2)}(c)|^4 ) <= C(L), same W. *Reading:* (2) of Prop AN3 for H, H_2 in Eps(B), the box Sobolev bound, and Lemma AN1's linear bound |h_j(b)| <= C_1 e_j(b) with (1) of `library/analytic-lift.md`, plus its quadratic term for h^{(2)}.
+- (A3) |d^2/dt^2 ( E_0(U(t); W_0) - E_k(V(t); W_k) )| <= C(L): (A1) at m = 0, m = k.
+- (A4) Theorem COMP-ii-g.
+
+**Lemma EX2'.** *Let W := e^g as in (A1). With F^j_y the level-j plaquette angles in the axial gauge rooted at y, at each t, and root frame the chain's frame at y,*
+
+    sum_{j<k} sum_{y, q} W(y) L^4 Var_{chi_y}( d/dt F^j_{y,q} ) <= C(L),        (V-dot)
+    sum_m b_m(b; W) <= C(L).        (EX2')
+
+*(EX2') is Lemma EX2 as printed, with b_m defined. The fine level m = k is one term, bounded by 4 ||delta theta^0||^2.*
+
+### 5.2 Proof of (V-dot)
+
+*Differentiate (V_W).* Fix j, write F := F^j_{y,q}. The variance is quadratic, so for any frame,
+
+    d^2/dt^2 Var_y(F(t)) = 2 Var_y(F-dot) + 2 Cov_y(F, F-ddot).
+
+With e_j(t; W) of (V_W), and R_{y,q}(t) := 2 <theta'_q(y), r_{y,q}> - |r_{y,q}|^2, summing over j and using the exact chain sum:
+
+    2 sum_j sum_{y,q} W L^4 Var_y(F-dot) = Y-ddot - 2 sum_j sum_{y,q} W L^4 Cov_y(F, F-ddot) + sum_j sum_{y,q} W R-ddot_{y,q}.        (D)
+
+**This has all the terms D2 asks for.** F-ddot is the full second variation with the transports:
+
+    F-dot = Ad(T) ( delta theta + [tau-dot, theta] ),    F-ddot = Ad(T) ( delta^2 theta + 2 [tau-dot, delta theta] + [tau-ddot, theta] + [tau-dot, [tau-dot, theta]] ),
+
+with tau-dot the variation of the transport from y to z in the gauge of 5.1, including the root rotation from N^{(j+1)} to the axial frame, of size the contour average of h_j. *Both live in a block.* So with B-tilde(y) a finite region, N_1(y) := sum_{B-tilde(y)} |h_j|, N_2(y) := sum_{B-tilde(y)} (|h_j^{(2)}| + |h_j|^2), we have |tau-dot| <= C(L) N_1(y), |tau-ddot| <= C(L) N_2(y).
+
+*Size of F-ddot.* Hoelder with (A1), (A2), using l^2 inside l^4: sum_y W N_1^2 sum_{Box(y)} |delta theta|^2 <= (sum W N_1^4)^{1/2} (sum W |delta theta|^2) <= C(L), and sum_y W N_2^2 n_y <= (sum W N_2^4)^{1/2} (sum W n_y^2)^{1/2} <= C(L) s^2 f^2, and N_1^4 n_y the same. So G_j := sum_{y,q} W L^4 <|F-ddot|^2>_{chi_y} <= C(L), uniformly in j. **That is the place where D1's l^4 repair is used, and it is at block scale.**
+
+*Cov.* For W = e^g take W-tilde := e^{2 g + g'}, with g' a decaying profile of the same rate. Cauchy-Schwarz:
+
+    |sum W L^4 Cov_y(F, F-ddot)| <= ( sum e^{-g'} L^4 sigma_y^2(F) )^{1/2} ( sum W-tilde L^4 <|F-ddot|^2>_y )^{1/2} <= C(L) q-bar^{(k-j)/2}.
+
+The first factor is the *local* variance near b. By (V_W) and Theorem EX-loc, sum_{y,q} W' L^4 sigma_y^2 <= e_j(W') + C(L) c_{j+1} <= Y_{j+1}(W') + C(L) Cub_{j+1}(W'), so (A4) applies. This is the one place that reads (COMP)(ii), and it reads only that the sum of square roots converges.
+
+*Remainder.* In the t-dependent axial gauge at y, r_{y,q} = Phi(a(t)), with Phi analytic on a polydisc of radius c/L, Phi(0) = 0, D Phi(0) = 0, by Lemma LE. Links in that gauge: |a|^2 <= C(L) n_y, and, by Stokes on the strips, |a-dot|^2 <= C(L) N_d(y) := C(L) sum_{Box(y)} |F-dot|^2, |a-ddot|^2 <= C(L) (N_dd(y) + N_d(y)^2), N_dd(y) := sum_{Box(y)} |F-ddot|^2. So |r-dot| <= C(L) (n_y N_d)^{1/2} and |r-ddot| <= C(L) (N_d + (n_y N_dd)^{1/2} + n_y^{1/2} N_d). In R-ddot = 2 <theta'-ddot, r> + 4 <theta'-dot, r-dot> + 2 <theta', r-ddot> - 2 |r-dot|^2 - 2 <r, r-ddot>, with Hoelder and l^p nesting, each sum has a factor ||theta||_{l^4}-type at level j or j + 1:
+
+    sum W |theta'-ddot| n_y <= C(L) s^2 f^2,   sum W |theta'-dot| (n_y N_d)^{1/2} <= C(L) s f,   sum W |theta'| N_d <= C(L) s f,
+
+and the rest are smaller. Weights as for Cov. So sum_j |sum W R-ddot| <= C(L) sum_j s_{j+1} f <= C(L), a geometric sum with ratio 1/L and *no flux falling input*: only (A1). QED of (V-dot), with (A3).
+
+### 5.3 From the variance to the gradient
+
+**Lemma TL at a variation.** Lemma TL's proof is a list of linear identities in the angles, for fixed t, plus second-order errors. Differentiate them at t = 0 in the t-dependent axial gauge at y. The linear functionals of F become the same functionals of F-dot, bounded by Var(F-dot). The errors are analytic and vanish to second order, so their t-derivatives are at most C(L) (n_y^+ + Theta_y^2)^{1/2} (N_d^+)^{1/2}. In that gauge the three links at y are constant in t, so **the fine and the coarse Bianchi defects have no term [h, theta]**: that term is what D1 measured growing in a gauge fixed far away. So, with xdot_{q,e}(y) the t-derivative of the flat difference of theta'_q by L e in that gauge,
+
+    sum_{q, e} |xdot_{q,e}(y)|^2 <= C sum_{y'' in Y_1(y), q'} L^4 Var_{chi_{y''}}( F-dot in gauge at y ) + C(L) (n_y^+ + Theta_y^2) N_d^+(y).
+
+A variance in the gauge at y against the gauge at y'': they differ by Ad(g) with g constant up to C(L) (a + a''), and by a rotation rate phi(z) with |phi| <= C(L) (N_d^+)^{1/2}. So the difference of the two sigmas is at most C(L) ( (n^+ N_d^+)^{1/2} ) in L^2 units.
+
+*To the gauge of 5.1.* grad_e delta theta'(y) = xdot(y) + O( C L a |delta theta'| ) + O( N_1(y) |theta'(y + L e)| ). So, summing over y with W, the errors are at most C(L) (sum W (n^+)^2)^{1/2} ||delta theta'||^2 + C(L) (sum W N_1^4)^{1/2} ||theta'||_{l^4}^2 <= C(L) s^2 f^2, geometric. With (V-dot) this gives (EX2'). QED
+
+### 5.4 What Prop DS reads
+
+*Order 1.* |D(Z o Lambda_m)[b]| <= C(L) a_m^{1/2} ||delta F||_{l^2}, by (SRC)'s first-derivative bound, so the sum over m converges by Theorem COMP-ii-g with no use of EX2.
+
+*Order 2.* <Delta delta F, K Delta delta' F> <= (b_m b'_m)^{1/2}, summed by (EX2') and Cauchy-Schwarz. <Delta F, K Delta delta^2 F> <= a_m^{1/2} ||delta^2 F||_{l^2} <= C(L) q-bar^{m/2}. The transport terms that gate D1 of the closure lists, |h| |F| |Delta delta' F|, are at most (sum W |h|^4)^{1/4} (sum W |F|^4)^{1/4} b'_m^{1/2} <= C(L) s f b'_m^{1/2}, geometric. In the axial gauge at x of Prop DS, "link size |delta F|" should read: link size C(r) times the l^2 norm of delta F on the ball, with polynomial growth in r taken by the tree decay. Since zeta is gauge invariant at each order, the frame at x may be chosen for each of delta, delta' separately. So Prop DS stands as an implication, with "C s" replaced by q-bar^{m/2}. (Not rewritten here: its owner has it. The repair of its own D1 in the closure gate is this paragraph.)

@@ -10,3 +10,13 @@ L=3 R1 overall best Ratio_C 1.0000
 sheet start 1.0 w1 2.0 A 9
 {"L": 3, "start": "sheet", "steps": 3000, "best": 0.9999944179325837, "A": 9, "final": 0.9999944179325837, "acc": 0, "secs": 45.6}
 sheet_int start 0.0 w1 0.0 A 9
+{"L": 3, "start": "sheet_int", "steps": 3000, "best": 0.09999994646868687, "A": 90, "final": 0.016361766049596375, "acc": 1832, "secs": 46.0}
+sheet_off start 1.0 w1 2.0 A 9
+{"L": 3, "start": "sheet_off", "steps": 3000, "best": 0.9999944195199675, "A": 9, "final": 0.9999944195199675, "acc": 0, "secs": 45.6}
+sheet start 1.0 w1 2.0 A 25
+{"L": 5, "start": "sheet", "steps": 3000, "best": 0.9999817545008015, "A": 25, "final": 0.8620554103259187, "acc": 1, "secs": 54.5}
+sheet_int start 0.0 w1 0.0 A 25
+{"L": 5, "start": "sheet_int", "steps": 3000, "best": 0.23364386761883085, "A": 107, "final": 0.004743519493677413, "acc": 2165, "secs": 54.8}
+sheet_off start 1.0 w1 2.0 A 25
+{"L": 5, "start": "sheet_off", "steps": 3000, "best": 0.9999817572935382, "A": 25, "final": 0.005117022147857911, "acc": 1272, "secs": 54.7}
+sheet start 1.0 w1 2.0 A 49

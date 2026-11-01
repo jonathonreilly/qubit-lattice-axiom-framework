@@ -24,6 +24,10 @@ C7. Full operator, d = 2, by the code of checks/upper-chain_nest.py: L = 3, n = 
 C8. Rayleigh: for L in {3, 5, 7, 9}, X = 2, depth 1, c_1D of checks/upper-chain_nest2.py is at most the quotient of this mode, to 1e-9.
 
 FAIL of C4, C5 or C7 means the written construction is wrong.
+
+Added after the first run, which passed C1 to C8 (nest_mode_exact.out keeps only the latest run), before any other change:
+C4, C5 also at even L: (4, 2, 1, 1, 1, 2), (4, 2, 1, 1, 1, 3), (4, 3, 2, 1, 1, 2), (4, 3, 2, 1, 1, 3).
+C9. Two jumps at clearance 1: for L in {3, 5, 7}, n = 3, depth 2, t = 1, X = 2, c_1D of upper-chain_nest2.py at the same layers is at most the quotient of this mode, to 1e-9.
 """
 import math
 import os
@@ -275,6 +279,7 @@ def main():
         (3, 3, 1, 1, 1, 2), (3, 3, 1, 1, 1, 4),
         (3, 3, 2, 1, 1, 2), (3, 3, 2, 1, 2, 3), (3, 3, 2, 2, 2, 3), (5, 3, 2, 1, 1, 2), (5, 3, 2, 2, 1, 2), (7, 3, 2, 1, 1, 2), (7, 3, 2, 3, 1, 2),
         (3, 4, 3, 1, 1, 2), (5, 4, 3, 1, 1, 2),
+        (4, 2, 1, 1, 1, 2), (4, 2, 1, 1, 1, 3), (4, 3, 2, 1, 1, 2), (4, 3, 2, 1, 1, 3),
     ]
     ok4 = ok5 = True
     print("config (L, n, k, r, t, X): quotient Q, Q L^k, Gamma, Q / (284 L^-k Gamma^2), ", flush=True)
@@ -352,6 +357,19 @@ def main():
         ok8 = ok8 and cmin <= Q * (1 + 1e-9)
         rss_guard()
     verdict["C8"] = ok8
+
+    # C9
+    ok9 = True
+    for L in (3, 5, 7):
+        layers = {2: (0, L), 1: (L, (L - 1) * L)}
+        cmin, _ = nest2.one_d(L, 3, 2, layers)
+        c = build(L, 3, 2, 1, 1, 2)
+        en, norm_code, inner = energies(c)
+        Q = float(en / norm_code)
+        print(f"C9 L={L}: c_1D = {cmin:.5f}, quotient of the mode = {Q:.5f}, ratio {Q / cmin:.3f}, c_1D L^2 = {cmin * L * L:.2f}", flush=True)
+        ok9 = ok9 and cmin <= Q * (1 + 1e-9)
+        rss_guard()
+    verdict["C9"] = ok9
 
     for key in sorted(verdict):
         print(key, "PASS" if verdict[key] else "FAIL")

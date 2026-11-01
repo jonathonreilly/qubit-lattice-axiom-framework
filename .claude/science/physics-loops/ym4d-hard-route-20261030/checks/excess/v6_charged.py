@@ -65,6 +65,19 @@ def perturbation(n, amp, bump, seed):
     return A
 
 
+class LightProblem(Problem):
+    """Same problem; the constraint Jacobian by central differences, so no double backward (memory)."""
+
+    def j(self, U0, v):
+        nrm = float(v.abs().max())
+        if nrm == 0:
+            return torch.zeros(self.cshape)
+        eps = 1e-5 / nrm
+        rp = self.resid(qmul(qexp(eps * v), U0))
+        rm = self.resid(qmul(qexp(-eps * v), U0))
+        return (rp - rm) / (2 * eps)
+
+
 def report(tag, U, V, chain):
     fV, EV = flux_stats(V)
     fU, EU = flux_stats(U)
@@ -83,7 +96,7 @@ def main():
     n = Np * L
     res = []
     chain = Chain(Np, L, d, 1)
-    for amp, bump, seed, nn in ((0.0, 0.0, 0, 1), (0.03, 0.0, 1, 1), (0.03, 0.04, 2, 1), (0.06, 0.08, 3, 1)):
+    for amp, bump, seed, nn in ((0.0, 0.0, 0, 1), (0.01, 0.0, 1, 1), (0.01, 0.015, 2, 1)):
         t0 = time.time()
         U0 = qmul(qexp(perturbation(n, amp, bump, seed)), const_flux(n, nn, nn))
         V = chain.top(U0)
@@ -91,8 +104,8 @@ def main():
         if amp == 0.0:
             res.append(rec0)
             continue
-        P = Problem(chain, V)
-        U, lam, gn, rn = P.solve(U0, newton=8, gtol=1e-7, ctol=1e-9, verbose=True)
+        P = LightProblem(chain, V)
+        U, lam, gn, rn = P.solve(U0, newton=6, gtol=1e-7, ctol=1e-9, verbose=True)
         rec = report(f"min amp {amp} bump {bump}", U, V, chain)
         rec.update(gn=gn, rn=rn, secs=time.time() - t0, rss=rss_gb())
         print(" solver", gn, rn, "secs", time.time() - t0, "rss", rss_gb(), flush=True)

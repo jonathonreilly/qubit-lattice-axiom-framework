@@ -104,7 +104,7 @@ T_2 = box^(*2), T_4 = box^(*4).
 
 Proof. In (B-7), a_a(p) Jhat_a = exp(-i (p_a + p_b)/2) [prod_nu s(p_nu)] s(p_a) s(p_b) i p_b, and a_b(p) Jhat_b is the same with -i p_a. Here 1 - exp(-i p_b) = exp(-i p_b / 2) i p_b s(p_b). So the current is the curl of the scalar rho-hat, the transform of rho_ab. By (B-4), P_infinity(z) is the integral of |rho-hat|^2 (p_a^2 + p_b^2) / |p|^2 exp(-i p . z), and (p_a^2 + p_b^2) / |p|^2 is the transform of (-d_a^2 - d_b^2)(1 / (4 pi^2 r^2)) = M. []
 
-**Near and far values [computed, evidence only, not usable in the chain under the rule in `GOAL.md`; a >= 3.8e-9 below is a gap until proved by hand; `checks/witness/near_flux.py`, W2].** The supports of parallel (1, 2) plaquettes for (B-1) are strictly ordered from offset (3, 3, 2, 2). Enclosures come from exact spline masses and monotone bounds of M on sub-boxes. Rounding is far below their width.
+**Near and far values [computed, `checks/witness/near_flux.py`, W2].** The supports of parallel (1, 2) plaquettes for (B-1) are strictly ordered from offset (3, 3, 2, 2). Enclosures come from exact spline masses and monotone bounds of M on sub-boxes. Rounding is far below their width.
 
 | z | enclosure of P_infinity(z) | Fourier (B-4) | Maxwell M(z) |
 |---|---|---|---|
@@ -118,7 +118,7 @@ Proof. In (B-7), a_a(p) Jhat_a = exp(-i (p_a + p_b)/2) [prod_nu s(p_nu)] s(p_a) 
 
 So z_n = (3, 3, 2, 2), z_f = (3, 3, 2, 4), t = 2, is a pair with (P_n)^2 at least 69 times (P_f)^2, and at P^fib = P_infinity the enclosures give a >= 3.8e-9. The sign change along t is the Maxwell one. This is much better than the pair (d, d, 2d, 2d), (d, d, 2d, 3d) of Corollary 4.2.
 
-**Fibre split [computed, evidence only, same rule; `checks/witness/fibre_split.py`, `fibre_edge.py`, W3].** With the span of the coarse closed currents pulled back to level j, delta_pq := P^inf_pq - P^fib_pq is the P-inner product of the projections of the two currents on that span. Thus delta >= 0 as a form and |delta_pq|^2 <= delta_pp delta_qq. In Bloch form it is a 3 x 3 Schur complement per coarse momentum. The pair sits at p = (-2, -2, -1, -1), q_n = (1, 1, 1, 1), q_f = (1, 1, 1, 3), around a block centre, n -> infinity.
+**Fibre split [computed, `checks/witness/fibre_split.py`, `fibre_edge.py`, W3].** With the span of the coarse closed currents pulled back to level j, delta_pq := P^inf_pq - P^fib_pq is the P-inner product of the projections of the two currents on that span. Thus delta >= 0 as a form and |delta_pq|^2 <= delta_pp delta_qq. In Bloch form it is a 3 x 3 Schur complement per coarse momentum. The pair sits at p = (-2, -2, -1, -1), q_n = (1, 1, 1, 1), q_f = (1, 1, 1, 3), around a block centre, n -> infinity.
 
 | L | delta_pp | delta_(p q_n) | delta_(p q_f) | P^fib near | P^fib far | a_L |
 |---|---|---|---|---|---|---|

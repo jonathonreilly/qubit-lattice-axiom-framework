@@ -177,12 +177,10 @@ Open [O]: anything at weak coupling.
 5. *Non-triviality.* The limit must not be Gaussian (cf. PR #10132's NT1/NT2 discussion).
 Status: items 1–5 all [O]; this note supplies only the fixed-lattice strong-coupling end.
 
-## 8. Interface with the Balaban / hard-constraint route (moved to a firewalled file)
+## 8. Interface with the Balaban / hard-constraint route (removed)
 
-This section lives in its own file,
-`docs/QUBIT_LATTICE_GAUGE_MDTN_BALABAN_INTERFACE_FIREWALLED_NOTE_2026-10-31.md`, because writing it required reading
-both sides of PR #10132's firewall. **That file must not be shown to the independent attempt on #10132.** Nothing in
-this note depends on it.
+An interface note was removed from this PR because writing it required reading both sides of PR #10132's firewall.
+Nothing in this note depends on it.
 
 ## 9. Open questions and risks
 
@@ -202,7 +200,6 @@ this note depends on it.
   obligation count, and its GOAL says "notes written are not progress").
 * Files: `docs/MDTN_TRUNCATED_GAUGE_STRONG_COUPLING_PHYSICAL_GAP_BOUNDED_THEOREM_NOTE_2026-10-31.md` (theorem note);
   `docs/QUBIT_LATTICE_GAUGE_MDTN_EMBEDDING_OUTLINE_NOTE_2026-10-31.md` (this note);
-  `docs/QUBIT_LATTICE_GAUGE_MDTN_BALABAN_INTERFACE_FIREWALLED_NOTE_2026-10-31.md` (firewalled §8);
   runners `scripts/mdtn_ed_part{1,2}_*_2026_10_31.py` with logs in `logs/runner-cache/`.
 * Upstream dependency `minimal_axioms` only; bridges B_H, B_G, B_E named as conditionals.
 

@@ -3,3 +3,5 @@
 {"L": 13, "x": "corner", "kind": "noise", "seed": 1, "Q": 5.2405017373158325, "t_s3_frac_xi2": [4.823632670688153, 5.2405017373158325, 0.9959035047792444, 0.006778404149453145], "secs": 512.9}
 L=9 R1 disp       seed 1 start Ratio_C 0.004 best Ratio_C 0.8607 Ratio_A 0.8600 w1 1.207 rhs_c 1.4027 min|m| 0.995 nrough 10367 evals 801 194.1s
 L=9 R1 overall best Ratio_C 0.8607
+L=11 R1 disp       seed 1 start Ratio_C 0.004 best Ratio_C 0.6385 Ratio_A 0.6378 w1 1.340 rhs_c 2.0980 min|m| 0.761 nrough 37496 evals 801 387.1s
+L=11 R1 overall best Ratio_C 0.6385

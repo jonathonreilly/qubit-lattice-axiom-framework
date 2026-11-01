@@ -9,7 +9,7 @@ Written by the target lead on 2026-10-31. `GOAL.md` holds the target and the def
 | File | gap | unchecked | implication | Last read from outside |
 |---|---|---|---|---|
 | `parts/hard-core--independent.md` | 1 | 1 | 29 | Gate at `16ca92dd7`: the large-field sector and abelian core read as sound, the rough-set step is wrong as written, and the sector at complex W is not closed; counts here predate it |
-| `parts/hard-core--mapped.md` | 3 | 0 | 58 | Gate at `3b7fd4e57`, which found Theorem Z wrong as written; the repair is ungated |
+| `parts/hard-core--mapped.md` | 3 | 0 | 58 | Gates at `60036ba4d` (repaired Theorem Z, Lemma OC wrong as written) and `7c12c6981` (Lemma EX stands, Lemma EX2 does not yet); Lemma OW is ungated; counts here predate them |
 | `parts/upper-chain.md` | 6 | 1 | 19 | Gates at `c3242879df`, before its fourth form |
 | `parts/witness.md` | 5 | 3 | 10 | Gate at `3b7fd4e57`, which changed the definition of NT2 |
 
@@ -36,7 +36,7 @@ Take the first item that is not taken, unless the lead has named one for you. An
 | 4 | `theorem-z-repaired` | mapped | high | Gate the repair in `library/quiet-boundary-rarity.md`: Theorem Z, Lemma OC, Lemma ST, the exploration, Step 5. Check each defect of `gates/theorem-z-3b7fd4e57.md` was actually repaired. | `gates/theorem-z-repaired-<commit>.md`, `checks/gate_tz/` |
 | 5 | `closure` | mapped | high | Gate H(k) implies H(k + 1) in `library/one-step-closure.md`, with Prop DS, (SRC), (LIFT-I) of `library/sector-values.md`. | `gates/closure-<commit>.md`, `checks/gate_cl/` |
 | 6 | `interface-independent`, `interface-mapped` | that side | high | One item per attempt. Set what the attempt delivers beside what the upper chain consumes, statement by statement: Text 6 against UV-CT and UV-OS, or UV-LOC-R and the clauses of `parts/upper-chain.md` Prop 8.1, Text 14 and Text 22. Read statements only. Report mismatches only. | `gates/interface-<side>-<commit>.md` |
-| 7 | `excess` | mapped | max | Skip if item 1 returned WRONG. Prove Lemma EX, Lemma EX2 and (COMP)(ii), racing the running push, from a statement frozen at your commit. | `parts/hard-core--excess.md`, `library/` |
+| 7 | `excess` | mapped | max | Item 1 returned no WRONG. Prove Lemma EX, Lemma EX2 and (COMP)(ii), racing the running push, from a statement frozen at your commit. Start from `gates/lemma-ex-7c12c6981.md`: Lemma EX2 has to be rewritten for its D1 to D3, and no field with topological charge at small flux has been tested. | `parts/hard-core--excess.md`, `library/` |
 | 8 | `fill` | mapped | max | Close (F2), the stratified fill, including the compactness and the lattice-to-continuum step that are read and not proved. | `parts/hard-core--fill.md`, `library/` |
 | 9 | `fourth-form` | neutral | high | Gate the upper chain's fourth form: Lemma 20.5, Lemmas 22.1, 22.2, Lemma 20.3, Prop 20.4, Theorem 14.1c as patched. | `gates/fourth-form-<commit>.md`, `checks/gate_ff/` |
 | 10 | `upper-chain` | neutral | max | Take over the parked part. Absorb the entry "TO THE UPPER CHAIN" in the mapped file's Requests, since the definition of quiet changed. Write I(k; D) in `library/induction-with-boundary-data.md`, then the marked form of Lemma 22.2. A session that took item 9 does not take this. | `parts/upper-chain.md` |

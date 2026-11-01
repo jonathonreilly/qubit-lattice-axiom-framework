@@ -78,6 +78,53 @@ def lassos(dims, idx, o):
     return out
 
 
+def compose(p, q):
+    r = list(p) + list(q)
+    out = []
+    for (bd, s) in r:
+        if out and out[-1][0] == bd and out[-1][1] == -s:
+            out.pop()
+        else:
+            out.append((bd, s))
+    return out
+
+
+def family(dims, idx, o, rng, ngen):
+    """Generators g_i, products g_i g_j in both orders, and triples that hold relations."""
+    base = lassos(dims, idx, o)
+    rng.shuffle(base)
+    gens = base[: ngen]
+    prods = {}
+    for i in range(ngen):
+        for j in range(ngen):
+            if i != j:
+                prods[(i, j)] = compose(gens[i], gens[j])
+    loops = list(gens)
+    pidx = {}
+    for key, p in prods.items():
+        pidx[key] = len(loops)
+        loops.append(p)
+    triples = []
+    n = len(loops)
+    gens_idx = list(range(ngen))
+    # (x, g_k, g_l): x any loop
+    for x in range(n):
+        for k in gens_idx:
+            for l in gens_idx:
+                if k < l and x != k and x != l:
+                    triples.append((x, k, l))
+    # (x, y, g_k): x, y products, sampled
+    extra = []
+    keys = list(pidx.values())
+    for a in range(len(keys)):
+        for b in range(a + 1, len(keys)):
+            for k in gens_idx:
+                extra.append((keys[a], keys[b], k))
+    rng.shuffle(extra)
+    triples += extra[:2500]
+    return loops, triples
+
+
 def su2(v):
     """exp(i v.sigma/2), v shape (...,3)."""
     th = np.linalg.norm(v, axis=-1)
@@ -121,19 +168,12 @@ def phi_q(p, A):
 
 def main():
     out = {}
-    for name, dims, nl in [("d3", (4, 4, 4), 60), ("d4", (4, 4, 4, 4), 54)]:
+    for name, dims, ngen in [("d3", (4, 4, 4), 6), ("d4", (4, 4, 4, 4), 6)]:
         rng = np.random.default_rng(20261101)
         idx = bonds_of(dims)
         o = tuple(0 for _ in dims)
-        loops = lassos(dims, idx, o)
-        rng.shuffle(loops)
-        # keep distinct currents
-        loops = loops[:nl]
+        loops, triples = family(dims, idx, o, rng, ngen)
         nb = len(idx)
-        triples = list(itertools.combinations(range(len(loops)), 3))
-        if len(triples) > 3000:
-            sel = rng.choice(len(triples), 3000, replace=False)
-            triples = [triples[i] for i in sel]
         ns = len(triples) + 400
         A = rng.normal(size=(ns, nb, 3))
         PQ = [phi_q(p, A) for p in loops]
@@ -152,8 +192,9 @@ def main():
         errs = []
         for trial in range(6):
             i, j, l = triples[trial]
-            eps = np.array([0.04, 0.02, 0.01])
+            eps = np.array([0.04, 0.03, 0.02, 0.015, 0.01])
             a0 = rng.normal(size=(nb, 3))
+            a0 /= np.abs(a0).max()
             vals = np.array([T_exact(loops[i], loops[j], loops[l], e * a0) for e in eps])
             P1, Q1 = phi_q(loops[i], a0[None])
             P2, Q2 = phi_q(loops[j], a0[None])
@@ -161,9 +202,9 @@ def main():
             cr = np.cross(P2, P3)
             c3 = 0.25 * (P1 * cr).sum()
             c4 = 0.25 * ((Q1 * cr).sum() + (P1 * np.cross(Q2, P3)).sum() + (P1 * np.cross(P2, Q3)).sum())
-            # fit e^3 c3 + e^4 c4 + e^5 c5 + e^6 c6 at three points: use c3 known, solve c4
-            r = (vals[2] / eps[2] ** 3 - c3) / eps[2]
-            errs.append(abs(r - c4) / max(abs(c4), 1e-12))
+            V = np.vander(eps, 5, increasing=True)
+            coef = np.linalg.solve(V, vals / eps**3)
+            errs.append(max(abs(coef[0] - c3) / max(abs(c3), 1e-9), abs(coef[1] - c4) / max(abs(c4), 1e-9)))
         s3 = np.linalg.svd(t3, compute_uv=False)
         U4, s4, Vt4 = np.linalg.svd(t4, full_matrices=True)
         tol = s4[0] * 1e-11

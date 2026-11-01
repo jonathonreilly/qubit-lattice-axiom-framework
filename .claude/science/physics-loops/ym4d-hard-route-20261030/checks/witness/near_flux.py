@@ -163,7 +163,7 @@ def main():
     ]
     out = []
     for z in offsets:
-        lo, hi = enclosure(z)
+        lo, hi = enclosure(z, n=(112, 112, 56, 56) if z in [(3, 3, 2, 2), (3, 3, 2, 4)] else (48, 48, 24, 24))
         fo = fourier(z)
         mx = (1 - 2 * (z[0] ** 2 + z[1] ** 2) / sum(a * a for a in z)) / (np.pi**2 * sum(a * a for a in z) ** 2)
         rec = dict(z=z, lo=lo, hi=hi, fourier=fo, maxwell=mx, inside=bool(lo <= fo <= hi), width_rel=abs(hi - lo) / abs(0.5 * (hi + lo)))

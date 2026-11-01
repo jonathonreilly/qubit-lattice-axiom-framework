@@ -79,3 +79,5 @@ L=9 R1 star       seed 1 start Ratio_C 0.000 best Ratio_C 0.6553 Ratio_A 0.6544 
 L=9 R1 star       seed 2 start Ratio_C 0.000 best Ratio_C 0.6529 Ratio_A 0.6519 w1 1.160 rhs_c 1.7771 min|m| 0.852 nrough 8387 evals 1003 237.4s
 L=9 R1 sheet_int  seed 1 start Ratio_C 0.000 best Ratio_C 0.2579 Ratio_A 0.2578 w1 1.913 rhs_c 7.4199 min|m| 0.129 nrough 132205 evals 105 23.2s
 L=9 R1 sheet_int  seed 2 start Ratio_C 0.000 best Ratio_C 0.2572 Ratio_A 0.2572 w1 1.923 rhs_c 7.4783 min|m| 0.126 nrough 132192 evals 109 23.4s
+L=9 R1 gas        seed 1 start Ratio_C 0.000 best Ratio_C 0.2808 Ratio_A 0.2807 w1 1.880 rhs_c 6.6931 min|m| 0.485 nrough 10250 evals 879 216.1s
+L=9 R1 gas        seed 2 start Ratio_C 0.000 best Ratio_C 0.2388 Ratio_A 0.2388 w1 1.875 rhs_c 7.8542 min|m| 0.283 nrough 9077 evals 611 141.2s

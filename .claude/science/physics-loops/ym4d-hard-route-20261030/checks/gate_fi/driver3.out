@@ -20,3 +20,10 @@ L=5 R1 star_sheet seed 1 start Ratio_C 0.015 best Ratio_C 0.9981 Ratio_A 0.9970 
 L=5 R1 overall best Ratio_C 0.9981
 L=7 R1 star_sheet seed 1 start Ratio_C 0.029 best Ratio_C 0.7536 Ratio_A 0.7535 w1 1.998 rhs_c 2.6519 min|m| 0.810 nrough 65 evals 1002 124.6s
 L=7 R1 overall best Ratio_C 0.7536
+L=9 R1 star_sheet seed 1 start Ratio_C 0.047 best Ratio_C 0.7345 Ratio_A 0.7336 w1 1.332 rhs_c 1.8135 min|m| 0.852 nrough 6541 evals 1002 246.6s
+L=9 R1 overall best Ratio_C 0.7345
+{"L": 5, "kind": "lat2", "seed": 1, "t_min": 128.9213231097743, "info": {"frac": 1.0, "x0": [3, 1, 3, 3], "xi2": 0.0015361877363085264}, "secs": 13.9}
+{"L": 5, "kind": "lat3", "seed": 1, "t_min": 20.81785486311266, "info": {"frac": 0.5536, "x0": [3, 1, 1, 4], "xi2": 0.06663539907246986}, "secs": 9.8}
+{"L": 5, "kind": "randstars", "seed": 1, "t_min": 1000000000.0, "info": null, "secs": 7.3}
+{"L": 5, "kind": "noise", "seed": 1, "t_min": 82.99450580260977, "info": {"frac": 0.96, "x0": [3, 1, 2, 0], "xi2": 0.030003217696338323}, "secs": 2.9}
+{"L": 7, "kind": "lat2", "seed": 1, "t_min": 138.39731347121563, "info": {"frac": 0.6197417742607247, "x0": [3, 3, 3, 3], "xi2": 0.05854788913100555}, "secs": 17.8}

@@ -70,3 +70,6 @@ L=5 PC overall best Ratio_C 1.3331
 L=7 PC star       seed 1 start Ratio_C 0.004 best Ratio_C 1.7475 Ratio_A 1.7475 w1 1.998 rhs_c 1.1432 min|m| 0.000 nrough 28305 evals 559 65.8s
 L=7 PC starlat    seed 1 start Ratio_C 0.000 best Ratio_C 0.0705 Ratio_A 0.0705 w1 2.000 rhs_c 28.3569 min|m| 0.000 nrough 41168 evals 335 39.4s
 L=7 PC gas        seed 1 start Ratio_C 0.000 best Ratio_C 0.5911 Ratio_A 0.5774 w1 0.043 rhs_c 0.0722 min|m| 1.000 nrough 2840 evals 806 97.7s
+L=7 PC patch      seed 1 start Ratio_C 0.002 best Ratio_C 0.5510 Ratio_A 0.5502 w1 0.251 rhs_c 0.4555 min|m| 0.999 nrough 4855 evals 796 96.0s
+L=7 PC overall best Ratio_C 1.7475
+L=9 PC star       seed 1 start Ratio_C 0.000 best Ratio_C 0.7553 Ratio_A 0.7543 w1 0.929 rhs_c 1.2295 min|m| 0.994 nrough 7682 evals 636 145.9s

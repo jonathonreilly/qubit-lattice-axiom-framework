@@ -1,0 +1,11 @@
+L=6 W=4320 PASS-P rel=2.37e-15 PASS
+eps=0: dim NN=1913 sv=2.244e+01 2.244e+01 2.325e-12 1.450e-12 1.307e-12 1.255e-12  PASS-CTRL PASS
+fixed rank 1294
+eps=2.00e-03 dim NN=1731 sv_max=4.363e+00 sv_max/eps=2.182e+03 fall=nan S4=2.3e-11 kept/dropped sv=4.8e-08/2.0e-15 all sv: 4.4e+00 2.9e-01 2.9e-01 1.3e-10 1.0e-10 1.2e-11
+eps=2.00e-04 dim NN=1731 sv_max=4.362e-01 sv_max/eps=2.181e+03 fall=10.00 S4=3.6e-10 kept/dropped sv=5.0e-10/2.0e-15 all sv: 4.4e-01 2.8e-02 2.8e-02 1.0e-09 8.9e-10 5.3e-12
+eps=2.00e-05 dim NN=1731 sv_max=4.362e-02 sv_max/eps=2.181e+03 fall=10.00 S4=2.5e-09 kept/dropped sv=5.0e-12/1.9e-15 all sv: 4.4e-02 2.8e-03 2.8e-03 1.5e-08 1.0e-08 3.1e-12
+eps=2.00e-06 dim NN=1731 sv_max=4.362e-03 sv_max/eps=2.181e+03 fall=10.00 S4=3.4e-08 kept/dropped sv=5.0e-14/2.0e-15 all sv: 4.4e-03 2.8e-04 2.8e-04 1.5e-07 1.0e-07 1.5e-12
+eps=2.00e-07 dim NN=1731 sv_max=4.361e-04 sv_max/eps=2.181e+03 fall=10.00 S4=4.8e-05 kept/dropped sv=1.9e-15/1.9e-15 all sv: 4.4e-04 4.4e-05 2.8e-05 2.8e-05 2.6e-05 1.4e-12
+C_L=2.023e+07 PASS-S4 FAIL PASS-C2 PASS
+CONTRAST random s, eps=1e-02: dim NN=1679 sv: 2.09e+01 2.07e+01 2.17e-01 2.11e-01 1.97e-01 1.64e-12
+CONTRAST random s, eps=1e-04: dim NN=1680 sv: 2.09e+01 2.07e+01 2.17e-03 2.11e-03 1.97e-03 6.33e-07

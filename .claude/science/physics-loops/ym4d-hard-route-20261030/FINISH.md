@@ -40,8 +40,8 @@ Take the first item that is not taken, unless the lead has named one for you. An
 | 8 | `fill` | mapped | max | Close (F2), the stratified fill, including the compactness and the lattice-to-continuum step that are read and not proved. | `parts/hard-core--fill.md`, `library/` |
 | 9 | `fourth-form` | neutral | high | Gate the upper chain's fourth form: Lemma 20.5, Lemmas 22.1, 22.2, Lemma 20.3, Prop 20.4, Theorem 14.1c as patched. | `gates/fourth-form-<commit>.md`, `checks/gate_ff/` |
 | 10 | `upper-chain` | neutral | max | Take over the parked part. Absorb the entry "TO THE UPPER CHAIN" in the mapped file's Requests, since the definition of quiet changed. Absorb what the interface gates report against the consumer: `gates/interface-mapped-e7d0c6976.md` D1 to D3, D5 to D7, D10(c), and `gates/interface-independent-fcbb20f83.md` D6, D7, D9. Write I(k; D) in `library/induction-with-boundary-data.md`, then the marked form of Lemma 22.2. A session that took item 9 does not take this. | `parts/upper-chain.md` |
-| 11 | `witness` | neutral | max | Take over the parked part. State NT2 exactly, try to break its running clause with the laws L1 to L3, and compare with the primary Jaffe-Witten text. | `parts/witness.md` |
-| 12 | `rank-u` | neutral | max | (RANK-U), and the level-j form of `parts/witness.md` Text 3.13. | `parts/witness--rank-u.md` |
+| 11 | `witness` | neutral | max | Take over the parked part. Absorb `parts/witness--rank-u.md`: the limit clause of (RANK-U) is false. State NT2 exactly, try to break its running clause with the laws L1 to L3, and compare with the primary Jaffe-Witten text. | `parts/witness.md` |
+| 12 | `rank-u` | neutral | done | Codex report: the limit clause of (RANK-U) is false, with a bounded staggered sequence, confirmed numerically at L = 5, 6 by `checks/gate_ranku/`. Theorem 3.19 needs a changed statement. NT2 in `GOAL.md` does not read it. | `parts/witness--rank-u.md` |
 
 ## Joining
 

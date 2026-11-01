@@ -24,3 +24,11 @@ Traceback (most recent call last):
     U[mu][sl] = h
     ~~~~~^^^^
 RuntimeError: The expanded size of the tensor (1) must match the existing size (2) at non-singleton dimension 2.  Target sizes: [2, 2, 1, 2, 4].  Tensor sizes: [2, 2, 2, 2, 4]
+L=5 R1 flat       seed 1 start Ratio_C 0.000 best Ratio_C 0.6133 Ratio_A 0.6133 w1 0.036 rhs_c 0.0583 min|m| 1.000 nrough 554 evals 568 43.7s
+L=5 R1 flat       seed 2 start Ratio_C 0.000 best Ratio_C 0.6098 Ratio_A 0.6098 w1 0.038 rhs_c 0.0618 min|m| 1.000 nrough 600 evals 598 46.0s
+L=5 R1 smooth     seed 1 start Ratio_C 0.000 best Ratio_C 0.6020 Ratio_A 0.6020 w1 0.035 rhs_c 0.0580 min|m| 1.000 nrough 579 evals 621 47.5s
+L=5 R1 smooth     seed 2 start Ratio_C 0.000 best Ratio_C 0.8911 Ratio_A 0.8911 w1 0.230 rhs_c 0.2577 min|m| 1.000 nrough 629 evals 609 46.8s
+L=5 R1 sheet      seed 1 start Ratio_C 0.592 best Ratio_C 1.0000 Ratio_A 1.0000 w1 2.000 rhs_c 2.0000 min|m| 1.000 nrough 25 evals 321 24.3s
+L=5 R1 sheet      seed 2 start Ratio_C 0.594 best Ratio_C 1.0000 Ratio_A 1.0000 w1 2.000 rhs_c 2.0000 min|m| 1.000 nrough 25 evals 289 21.9s
+L=5 R1 sheet_th   seed 1 start Ratio_C 0.410 best Ratio_C 0.6310 Ratio_A 0.6310 w1 0.336 rhs_c 0.5327 min|m| 0.999 nrough 1196 evals 612 46.8s
+L=5 R1 sheet_th   seed 2 start Ratio_C 0.412 best Ratio_C 0.6131 Ratio_A 0.6130 w1 0.311 rhs_c 0.5081 min|m| 0.999 nrough 1344 evals 556 42.6s

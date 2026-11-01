@@ -56,7 +56,9 @@ Take the first item that is not taken, unless the lead has named one for you. An
 | 18 | `hand-witness` | neutral | high | From the Witness section of the same report: prove Lemma 3.6 without the symbolic run, write Lemma RM's Stieltjes and density inputs, and apply (H21) of `library/nt2-free-value-by-hand.md` to the order of b and L in Corollary NT1-F. Leave the free value to `free-value-hand`. | `library/witness-by-hand.md` |
 | 19 | `compute-inventory-2` | neutral | done | One more statement rests on a run, and four more steps can't be formalized as written. | `gates/compute-inventory-2-28e261c17.md` |
 | 20 | `hand-upper-2` | neutral | high | From the Upper chain section of `gates/compute-inventory-2-28e261c17.md`: write the F20.1 signed-activity example with rational weights by hand, or keep only the missing-denominator objection, and prove Theorem 4's massive Green limit with a stated order of limits. | `library/upper-chain-by-hand-2.md` |
-| 21 | `energy-gate` | mapped | high | Cross-provider gate on the replacements for (CI-paid^𝔡), Lemma J and the copy rule, and on the energy step in `library/energy-by-stages.md`. | `gates/energy-stages-codex-<commit>.md` |
+| 21 | `energy-gate` | mapped | done | Six requested statements CORRECT-NO-ADVANCE; (LIFT-1) and the local fine-energy claim WRONG by hand counterexamples; own-level bookkeeping, (4.2) algebra and the small-cube charge ADVANCE. | `gates/energy-stages-codex-b87de884f.md` |
+| 23 | `upper-hand-gate` | neutral | low | Cross-provider gate on `library/upper-chain-by-hand.md`. | `gates/upper-hand-codex-<commit>.md` |
+| 24 | `shell-end` | mapped | high | Attack (SHELL) and (END) of TOP-W, or (LOC-MIN). | `library/excess-shell-end.md` |
 | 22 | `hand-ab` | independent | high | Prove (AB) for the adapted domains of Lemma 4.5h, or change the domains so that they are generated patterns and recheck the covering. | `library/adapted-domains.md` |
 
 ## Joining

@@ -1437,7 +1437,7 @@ printed, with C_n free of L up to powers of log L, and C_s free of L, still an
 unchecked item of the Obligations. Given those, it answers the worry in
 `witness-two-separation.md` about C(L).
 
-**Free input, discharged for the map (B-1).** Lemma FB: blocked plaquette flux is
+**Free input for the map (B-1), gap under the rule in `GOAL.md`: the enclosures and the trend below are evidence only; `library/nt2-free-value-by-hand.md` takes the hand proof.** Lemma FB: blocked plaquette flux is
 the average of F_ab against a positive unit-mass density, and P_infinity(z) is the
 Maxwell tensor averaged against B-splines. Enclosures, W2:
 P_infinity(3,3,2,2) in [-6.011e-5,-5.092e-5] and P_infinity(3,3,2,4) in
@@ -1472,8 +1472,7 @@ NT1 needs, and it names (FT) as a separate request.
 
 #### 8.12 Checkpoint of item 8f — proved, conditional, open
 
-- **Discharged:** Proposition V0; Lemma R4; Lemma RM'; Lemma FB and the enclosures of
-  W2 at the printed offsets. Same-model author work.
+- **Discharged:** Proposition V0; Lemma R4; Lemma FB. Same-model author work. Lemma RM' needs its Stieltjes and density inputs written out (`gates/compute-inventory-39189b75b.md`). The enclosures of W2 are evidence only.
 - **Implications:** Theorem F; (FT) from (OS_j)(b), (c) and (GS_j)(c) at W=1;
   Corollary NT1-F. The gate's Proposition TD and Corollary RM stand as implications.
   None of their hypotheses is delivered.

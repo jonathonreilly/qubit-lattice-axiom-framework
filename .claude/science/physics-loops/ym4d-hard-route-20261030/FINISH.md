@@ -50,6 +50,11 @@ Take the first item that is not taken, unless the lead has named one for you. An
 | 12 | `rank-u` | neutral | done | Codex report: the limit clause of (RANK-U) is false, with a bounded staggered sequence, confirmed numerically at L = 5, 6 by `checks/gate_ranku/`. Theorem 3.19 needs a changed statement. NT2 in `GOAL.md` does not read it. | `parts/witness--rank-u.md` |
 | 13 | `compute-inventory` | neutral | high | List every statement of the chain that rests on a machine computation, and every load-bearing step that could not be formalized as written. | `gates/compute-inventory-<commit>.md` |
 | 14 | `free-value-hand` | neutral | high | Prove the free input of Corollary NT1-F by hand: a_L >= a_0 > 0 now rests on computed enclosures and a computed trend. | `library/nt2-free-value-by-hand.md` |
+| 15 | `hand-shelling` | independent | high | Prove by hand the shelling of good patterns that Lemma 7, Step 1 takes from a machine exhaustion, or restrict Lemma 7 to patterns that have a written proof. | `library/shelling-by-hand.md` |
+| 16 | `hand-staircase` | mapped | high | Prove by hand the no-pinch geometry and reflection extensions of the lexicographic free set, or carry the L-dependent rate through O1 to O3. | `library/staircase-by-hand.md` |
+| 17 | `hand-upper` | neutral | high | From the Upper chain section of `gates/compute-inventory-39189b75b.md`: rebuild the Gruss bound and the marginal convexity behind Lemma 21.5, and write the Text 23.5 nest objection with an admissible exterior and loose rational bounds, all by hand. | `library/upper-chain-by-hand.md` |
+| 18 | `hand-witness` | neutral | high | From the Witness section of the same report: prove Lemma 3.6 without the symbolic run, write Lemma RM's Stieltjes and density inputs, and fix the order of b and L in Corollary NT1-F. Leave the free value to `free-value-hand`. | `library/witness-by-hand.md` |
+| 19 | `compute-inventory-2` | neutral | medium | Finish the sweep where the first pass did not read. | `gates/compute-inventory-2-<commit>.md` |
 
 ## Joining
 

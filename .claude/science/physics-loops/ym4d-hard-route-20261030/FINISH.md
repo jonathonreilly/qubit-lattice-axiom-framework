@@ -62,7 +62,7 @@ Take the first item that is not taken, unless the lead has named one for you. An
 | 25 | `seam-lc` | mapped | high | Prove (LC), then (GLUE-E), and settle the rate condition b_s nu_* <= 1/2 against the consumer. | `library/excess-seam.md` |
 | 26 | `shell-gate` | mapped | high | Gate `library/excess-shell-end.md`, written by Codex: does (INPUT) + (UP) really give the FALL that DS reads; are (WAM) to (UP) and (E-SHELL) to (WAM) right; do the two-site and tensor tests test the right thing; does the rate condition (b_s nu_* <= 1/2) survive the mapped order of constants? Do not read the `seam-lc` output. | `gates/shell-end-<commit>.md`, `checks/gate_se` |
 | 27 | `joint-induction` | neutral | high | The upper chain's hardest open statements: the joint moment and locality induction for the generated family, (H20.5) with (K3), Theorem 14.1c's Q(n) and cumulant induction, and the pullback hole in (CF_j) and Rg_c beyond T/4. Try to kill them first. Say which one the chain would die on, and attack that one. | `library/upper-chain-joint-induction.md` |
-| 22 | `hand-ab` | independent | high | Prove (AB) for the adapted domains of Lemma 4.5h, or change the domains so that they are generated patterns and recheck the covering. | `library/adapted-domains.md` |
+| 22 | `hand-ab` | independent | done | Literal (AB) stays open. A replacement route on graph balls gives the Morrey estimate with hand proofs, conditional on two consumer bounds in (5.1). Same provider read: none yet. | `library/adapted-domains.md` |
 
 ## Joining
 

@@ -9,7 +9,7 @@ Written by the target lead on 2026-10-31. `GOAL.md` holds the target and the def
 | File | gap | unchecked | implication | Last read from outside |
 |---|---|---|---|---|
 | `parts/hard-core--independent.md` | 1 | 1 | 29 | Gates at `16ca92dd7` and, cross-provider, `independent-2c-codex-b4de676b7`: the cancellation at the saddle stands, (GOOD) is WRONG as displayed, and (TAIL), (R1), (R2) and the wall count do not yet close; counts here predate them |
-| `parts/hard-core--mapped.md` | 3 | 0 | 58 | Gates at `60036ba4d`, `7c12c6981` and, cross-provider, `theorem-dm-codex-892504e4c`: Theorem DM, (Z), Lemmas CC and OW CORRECT-NO-ADVANCE, with the free-bond count of DM on the wrong region; counts here predate them |
+| `parts/hard-core--mapped.md` | 3 | 0 | 58 | Gates at `60036ba4d`, `7c12c6981` and, cross-provider, `theorem-dm-codex-892504e4c`: Theorem DM, (Z), Lemmas CC and OW CORRECT-NO-ADVANCE, with the free-bond count of DM on the wrong region; and `excess-codex-6c0d4e1c9`: Lemma EX ADVANCE, with Lemma LIFT and Lemma EX2' CORRECT-NO-ADVANCE; counts here predate them |
 | `parts/upper-chain.md` | 6 | 1 | 19 | Cross-provider gate `fourth-form-codex-b4de676b7`: Lemmas 20.3, 22.1, 22.2 and Prop 20.4 ADVANCE; Lemma 20.5 and Theorem 14.1c CORRECT-NO-ADVANCE. Codex is working on these as item 10 |
 | `parts/witness.md` | 5 | 3 | 10 | Gate at `3b7fd4e57`, which changed the definition of NT2 |
 

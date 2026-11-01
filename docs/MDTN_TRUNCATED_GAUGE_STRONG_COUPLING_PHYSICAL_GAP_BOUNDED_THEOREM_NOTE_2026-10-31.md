@@ -66,6 +66,14 @@ canonical-singlet Z2 reduction used for numerics, and all numbers in §5.
 
 ## 2. Lemma 1 (Gauss support / girth) — **[R]**
 
+> **Superseded proofs (2026-11-01).** The self-contained, Lean-ready versions of Lemma 1 and Lemma 2, with explicit
+> definitions, finite-dimensional proofs, status tags and a machine check, are in
+> `docs/MDTN_TRUNCATED_GAUGE_SUPPORTING_LEMMAS_LEAN_READY_NOTE_2026-11-01.md` (runner
+> `scripts/mdtn_supporting_lemmas_check_2026_11_01.py`). That note's §7 lists corrections to §§1–3 here, notably:
+> the support is a Z_2 / Z_3 cycle (sharper than (b)); spec(N|phys) ⊆ {0} ∪ {4, …, |E|}; at L = 4 the 48 winding
+> 4-loops also lie in H_phys ∩ E_4; Lemma 2(iv) rotations need a link-reversal map; P_s is best defined as the
+> projector onto ker of the site Gauss Casimir (Haar version cited).
+
 **Statement.** (a) For SU(2), dim Inv(2^{⊗k}) = Catalan C_{k/2} for k even and 0 for k odd.
 (b) For any compact G and any nontrivial irrep λ, Inv(V_λ) = 0. Consequently, if ψ ∈ H_phys ∩ E_k with k ≥ 1, then
 every basis component of ψ in the irrep basis has excited-link set S with every vertex of S of degree ≥ 2 in S.
@@ -89,6 +97,8 @@ listed in `logs/runner-cache/mdtn_ed_part1_reps_and_plaquette_2026_10_31.txt` (e
 (Z2 cycles) is the repo's COVARIANT_NN_SUPPORT_RULES … GLUED_SUPPORT note (minimal supports = cycles of length 4, 6, 8).
 
 ## 3. Lemma 2 (Gauss projector as a local covariant commuting rule) — **[R]**
+
+> See the 2026-11-01 supporting-lemmas note (Lemmas G1–G7) for the Lean-ready version and corrections 7–10.
 
 **Statement.** Let P_s = ∫_G dg W_s(g) (Haar). Then (i) each P_s is an orthogonal projector supported on star(s);
 (ii) [P_s, P_{s'}] = 0 for all s, s'; (iii) P_phys := Π_s P_s is the orthogonal projector onto H_phys;

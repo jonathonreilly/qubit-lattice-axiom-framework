@@ -9,3 +9,6 @@ PC runs 16 max Ratio_C 2.4474290032376236 by L {5: 1.48208, 7: 2.447429, 9: 0.97
 {"L": 5, "start": "sheet", "steps": 4000, "best_A": 25, "L2": 25, "best_ratio": 0.9999817545008015, "final_A": 381, "acc": 102, "secs": 73.4}
 {"L": 5, "start": "sheet_off", "steps": 4000, "best_A": 25, "L2": 25, "best_ratio": 0.9999817572935382, "final_A": 390, "acc": 107, "secs": 73.3}
 {"L": 7, "start": "sheet", "steps": 4000, "best_A": 49, "L2": 49, "best_ratio": 0.9999630568858393, "final_A": 318, "acc": 56, "secs": 116.9}
+{"L": 7, "start": "sheet_off", "steps": 4000, "best_A": 49, "L2": 49, "best_ratio": 0.9999630591484246, "final_A": 338, "acc": 66, "secs": 117.2}
+L=7 PC star_sheet seed 1 start Ratio_C 0.030 best Ratio_C 2.4406 Ratio_A 2.4364 w1 1.986 rhs_c 0.8135 min|m| 0.000 nrough 1214 evals 870 104.7s
+L=7 PC overall best Ratio_C 2.4406

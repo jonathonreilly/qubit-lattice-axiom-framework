@@ -205,7 +205,7 @@ So T^0 omega'(x) = sum_y zeta_y(x) omega'(y), with range at most 4 L. *Propertie
 
     |T_2 theta'(z) - L^-2 theta'(y)| <= C L^-2 max_near |Delta' theta'|,    |grad T_2 theta'(z)| <= C L^-3 max_near |Delta' theta'|.        (K)
 
-*Numerics.* T8 identities to 1e-14 at L = 3 to 21, and T9: chain map to 1e-15, constant flux to 12 digits. **Two clauses of mine failed as registered:** L^2 |grad eta| rose 39 percent from L = 9 to 21, and C_2 := I^grad(fine) L^2 / I^grad(parent) rose by a factor 1.8 from L = 3 to 5. The rule was a guess at when these level off. Follow-up, declared after that result: L^2 |grad^2 zeta| = 15.7, 20.1, 21.8 at L = 41, 101, 201, so it levels off, as the proof says it must. C_2 = 9.5, 16.9, 23.0, 27.9, 36.4 at L = 3, 5, 7, 9, 13 on random parents, with C_2/L = 3.2, 3.4, 3.3, 3.1, 2.8 falling and local power 0.72 at the end. So C_2 is still rising at L = 13. The bound (K) proves it is bounded, with a constant that I have not computed and that fixes L_0.
+*Numerics.* T8 identities to 1e-14 at L = 3 to 21, and T9: chain map to 1e-15, constant flux to 12 digits. **Two clauses of mine failed as registered:** L^2 |grad eta| rose 39 percent from L = 9 to 21, and C_2 := I^grad(fine) L^2 / I^grad(parent) rose by a factor 1.8 from L = 3 to 5. The rule was a guess at when these level off. Follow-up, declared after that result: L^2 |grad^2 zeta| = 15.7, 20.1, 21.8 at L = 41, 101, 201, so it levels off, as the proof says it must. C_2 = 9.5, 16.9, 23.0, 27.9, 36.4 at L = 3, 5, 7, 9, 13 on random parents, with C_2/L = 3.2, 3.4, 3.3, 3.1, 2.8 falling and local power 0.72 at the end. So C_2 was still rising at L = 13 on these parents. T12 settles it, by the tensor structure, all aliases, sup over P, closedness not used, so an upper bound: C_2 = 16.5, 27.3, 35.3, 42.8, 56.5, 77.5, 105.5, 126.1 at L = 3, 5, 7, 9, 13, 21, 41, 81, with falling increments, and C_1 = 0.63 to 1.62. So **C_2 L^-2 is below 1 from L = 7 and below 1/2 from L = 11 or so, for this choice of beta**, up to the non-abelian terms, which come after L. (`checks/excess/v12_symbol.py`.)
 
 ### 2.2 The non-abelian lift, in block frames
 
@@ -219,7 +219,7 @@ Let V' be a level-(i+1) field of flux at most f_0(L). For a parent site y let G_
 
 **The constraint.** By Lemma LE's BCH steps, log M(U^flat)(c) in frame y is Q A^{(y)}(c) + O(C(L) Theta^2) = v^{(y)}(c) + D' phi^{(y)}(c) + O(C(L) Theta^2), with phi^{(y)} := the contour average of A^{(y)}, by Lemma 3.1 and Q_path T_1 = id. With phi(y) := phi^{(y)}(y), this says M(U^flat)(c) = e^{phi(y)} V'(c) e^{-phi(y')} up to second order. Let T_0'(V') be U^flat gauge transformed by e^{-phi(y)} on each block, which is a gauge constant on blocks, so M changes by exactly that parent gauge. Then M T_0'(V') = e^{m} V', |m(c)| <= C(L) Theta_c^2.
 
-**Exact fibre.** Psi(Y) := log( M T_0'(e^Y V') V'^-1 ) on parent bonds is analytic and of finite range, and D Psi(0) = id + O(C(L) Theta), as at V' = 1 the first order of M T_0' is the identity. So Y = Psi(Y) - Y + ... has a fixed point: the map Y -> Y - Psi(Y) contracts in sup norm, with |Y(c)| <= C(L) Theta-tilde_c^2, Theta-tilde_c := sum_{c''} (C(L) f)^{d(c, c'')} Theta_{c''}. **Define T(V') := T_0'(e^Y V'). Then M(T(V')) = V' exactly.** Its curvature obeys (C) with Theta replaced by Theta-tilde, as the parent curvature of e^Y V' is theta' + O(C(L) Theta-tilde^2).
+**Exact fibre.** Psi(Y) := log( M T_0'(e^Y V') V'^-1 ) on parent bonds is analytic and of finite range, and D Psi(0) = id + O(C(L) Theta), as at V' = 1 the first order of M T_0' is the identity. So Psi(Y) = 0 has a solution: the map Y -> Y - Psi(Y) contracts in sup norm, and |Y(c)| <= C(L) Theta-tilde_c^2, Theta-tilde_c := sum_{c''} (C(L) f)^{d(c, c'')} Theta_{c''}. **Define T(V') := T_0'(e^Y V'). Then M(T(V')) = V' exactly.** Its curvature obeys (C) with Theta replaced by Theta-tilde, as the parent curvature of e^Y V' is theta' + O(C(L) Theta-tilde^2).
 
 **Lemma LIFT.** *There are absolute C_1, C_2, C_6, and L_0, f_0(L), C(L), such that for L >= L_0 and flux(V') <= f_0(L), U := T(V') has M(U) = V', is parent-gauge covariant, and for all W >= 0, with W^+ := W smeared over parent distance at most 6 blocks with the tail of Theta-tilde:*
 
@@ -227,7 +227,7 @@ Let V' be a level-(i+1) field of flux at most f_0(L). For a parent site y let G_
     (T2)  e(U; W) <= C_1 I^grad(V'; W^+) + C(L) cub(V'; W^+);
     (T3)  I^grad(U; W^down) <= C_2 L^-2 I^grad(V'; W^+) + C(L) f cub(V'; W^+),    cub(U; W^down) <= C L^-2 cub(V'; W^+).
 
-*Proof.* (T1): (C), (K), and the flat difference of theta'^{G_y} against grad' up to C Theta^2. In (C) the frame is close to the axial gauge at y; the gauges differ by a rotation of size C(L) Theta/L^0, which changes theta by second order. (T2): in (V_W), sigma_{y,q}^2 <= <|theta^{(y)} - L^-2 theta'_q(y)|^2>_{chi_y}, so L^4 sigma^2 <= C max_near |grad' theta'|^2 + C(L) Theta-tilde^4 by (T1), and |r| <= C(L) n_y <= C(L) Theta-tilde^2. (T3): (T1), L^4 fine plaquettes per block, and a fine link in frame y has angle at most C(L) Theta, so the covariant and flat fine differences differ by second order. QED
+*Proof.* (T1): (C), (K), and the flat difference of theta'^{G_y} against grad' up to C Theta^2. In (C) the frame is close to the axial gauge at y; the gauges differ by a rotation of size C(L) Theta, which changes theta by second order. (T2): in (V_W), sigma_{y,q}^2 <= <|theta^{(y)} - L^-2 theta'_q(y)|^2>_{chi_y}, so L^4 sigma^2 <= C max_near |grad' theta'|^2 + C(L) Theta-tilde^4 by (T1), and |r| <= C(L) n_y <= C(L) Theta-tilde^2. (T3): (T1), L^4 fine plaquettes per block, and a fine link in frame y has angle at most C(L) Theta, so the covariant and flat fine differences differ by second order. QED
 
 *Numerics, T10 (`checks/excess/v10_lift_su2.py`, criteria written first): the construction above, coded literally, SU(2), L = 3, comb map, d = 2, 3 on N' = 8, and d = 4 on N' = 4 read on the cover of the torus.* m := log(M T_0' V' V'^-1).
 
@@ -309,7 +309,11 @@ Fix W_k with log W_k Lipschitz at a rate nu <= delta_#/8 in top cells, and W_j :
 
 *Proof.* Iterate (HF) from the top: Y_{k-m} <= q_h^m Y_k + C(L) sum_{l < m} q_h^{m-1-l} rho^l cub-bar. Y_k <= C_T I_k + C(L) Cub_k by TOP-W. And c_1 a_{j+1} <= e_j + C(L) c_{j+1} = Y_{j+1} - Y_j + C(L) c_{j+1}, with -Y_j <= C(L) Cub_j, as each e_i >= -C(L) c_{i+1} by Theorem EX-loc. QED
 
+**Corollary GS (Prop GS, W = 1).** Sum Theorem EX-loc over the chain and use (TS) and TOP-1: c_1 sum_{j<k} I^grad_{j+1}(V_{j+1}) <= 2 C_1 I^grad_k(V) + C(L) ( cub(V) + sum_{j<k} cub(V_j) ). With (COMP)(i) clause 1 the last sum is at most C(L) N_k^4 f^3 in the worst case, and on each top cell at most C f_loc^3; or with sup flux falls, at most C f_k E_k(V). With weights, the same with Prop TOP-W. No toron term from this step.
+
 **Is the weaker rate enough?** Yes for every reader. Prop DS and Lemma EX2 write "geometric" and sum a_m^{1/2} over m, and that sum converges with q-bar^{m/2}. (i)'s clause 1 and the clauses at variations carry their own s. Prop GS at W = 1 needs only the sum. No consumer reads s^2 as a number: the only places are the words "C(L) s" and "C s" in EX2 and DS, which become q-bar^{m/2}.
+
+**(COMP)(i), clause 1, from the fine level (implication of (R3), by Lemma CJ).** Jensen on omega-space gives |L^{2 j} E_omega F|^4 <= L^{8 j} E_omega |theta^0(z)|^4, and the partition of unity gives sum_c |L^{2 j} E_omega F|^4 <= L^{4 j} sum_z |theta^0(z)|^4 = s^4 ||F||^4_{L^4}, with constant 1. By (CR), and E_i(c^+) <= 2 E_0(c^{++}) from (V_W) with an indicator weight, |r^{(j)}(c)| <= C(L) ||F||^2_{L^2(c^{++})} <= C(L) s^2 ||F||^2_{L^4(c^{++})}, so sum_c |r^{(j)}(c)|^4 <= C(L) s^8 f^8. So sum_c |theta_c|^4 <= C s^4 f_loc^4, for f small in L. *So "(R3) by scale counting" is now a proof, given (R3) at the fine level.*
 
 ### 4.2 The form with s^2
 
@@ -420,8 +424,8 @@ A variance in the gauge at y against the gauge at y'': they differ by Ad(g) with
 - implication: Theorem COMP-ii-g, (COMP)(ii) with q-bar^m, by hole-filling in the level; given Prop TOP-W and (COMP)(i) clause 1 -> Lemma EX2', Prop DS
 - implication: (COMP)(ii) with s^2, Section 4.2; given also (AD) and (R3); no consumer needs it
 - implication: Lemma EX2', second variation of the variance identity in block-local gauges; given (A1) to (A4) -> Prop DS, so low orders of R_k
-- gap: L_0 and C_T, q_h are not computed; C_2 was still rising at L = 13 (T9), bounded by (K)
-- gap: Lemma EX with boundary data, near frozen layers, for (VAL^d): Theorem EX-loc is local and should apply on free blocks, and Lemma LIFT next to a frozen layer has not been written
+- unchecked: C_T and q_h are not computed; L_0 of Lemma LIFT is about 11 at the abelian level by T12, for this beta
+- gap: the upper bound with boundary data, for (VAL^d): Theorem EX-loc applies as it stands on free parents, since (V_W) reads only the region of each parent in supp W, but Lemma LIFT next to a frozen layer and Prop TOP-W with Theorem F-D are not written
 - unchecked: Lemma TL's and Lemma LIFT's non-abelian steps at the level of every BCH term: written as second-order remainders of finite-dimensional analytic maps with C(L), checked numerically at L = 3 only
 
 ## 7. Numerics, summary
@@ -440,3 +444,17 @@ Criteria: `checks/excess/CRITERIA.md`, written before each run; additions dated 
 | T8 kernels | Identities PASS. Constant clause **FAIL** as registered; follow-up levels off at 22 |
 | T9 abelian lift | Identities PASS. C_2 clause **FAIL** as registered; C_2/L falls, bounded by (K), constant not computed |
 | T10 lift, SU(2) | (a), (c), (e) PASS; (b) fails at f = 1.53 only, outside any class flux; (d) void as first written, corrected, PASS |
+| T11 Lemma TL at a variation | Ratio clause PASS: 0.147 to 0.167 transverse, 0.36 to 0.38 in-plane, level from a = 0.2 to a = 0. Second clause, block gauge against a global gauge, **not run** |
+| T12 sup over P, abelian lift | Report only: C_2 levels off, see 2.1 |
+
+## Requests
+
+**TO THE OWNER OF `library/sector-values.md`.** (1) Section 3A: Lemma EX can be replaced by Theorem EX or Theorem EX-loc; Steps 1 to 4, c_e, IMS and "(toron term)" are not read, and R1 is not needed. (2) Lemma TOP: TOP-1 at W = 1, and Prop TOP-W with weights, in place of the Taylor proof. If weights are kept in Prop GS, use down-averaged weights, which remove the quadrature error of a fixed W. (3) (COMP)(ii): read q-bar^m where a consumer reads s^2, or keep s^2 and read (AD). (4) Lemma EX2: Lemma EX2'. (5) Prop DS: 5.4. (6) The remark in Section 8 (14) that the lift "lies in the fibre, so it is at least the one-level Wilson minimum, at second order at flat data" can go: positivity is now Theorem V, for every field in the fibre.
+
+**TO THE LEAD.** Lemma O3's tail, and so (SRC) and Theorem VAL's term N_k^4 Phi(e^-8 N_k/4), are untouched: that tail comes from Taylor of the source at a cut field, not from the excess. Whether a block-frame comparison could remove it there too was not tried; it is outside this item.
+
+## Read and not read
+
+Read: `FINISH.md`, `GOAL.md`; `library/sector-values.md` Sections 0 to 3B and 7, 8 in part; `library/analytic-lift.md` in full; `library/critical-class-and-excess.md`; `library/block-poincare-energy-package.md` to Theorem 6; `library/composite-adjoint.md` head and Lemma AD1; `library/fibre-propagator.md` Setting and Theorem F; (R1) to (R3), Text 1, Text 3.1 to 3.3 of `parts/hard-core--mapped.md`; Prop 10' and items (f), (f') of `library/relative-density-bound.md`; `gates/lemma-ex-7c12c6981.md`, `gates/closure-bad958abb.md`; `checks/gate_ex/ex_core.py`.
+
+Not read: `parts/hard-core--independent.md`, any gate on it, the Sussman-Alpoge repository, Theorem F-D, HS-P, HS-T, `library/lattice_sobolev_box_gauge.md`, `library/lattice-uhlenbeck.md`, `library/one-step-closure.md` beyond grep lines, Sections 4 to 6 of `library/sector-values.md` beyond the statements. Inputs of Sections 3 to 5 are taken at their labels: none of them was checked here.

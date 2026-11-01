@@ -31,9 +31,8 @@ a window is within 3 b^2 eps_j of the correlator of one flat fibre, E_1, given
 (GS_j)(a), (LE_j), (OS_j)(c'), (FF_(j+1)). So the strict inequality needs no DEC, no
 Gaussian limit at W!=1, no COV8 and no vertex. What is left is (FT): the value of
 Cov_1 of two energies at the single field W=1. Corollary NT1-F then gives NT1 from
-named clauses, with L large. For the map (B-1) the free input is discharged:
-P_infinity(3,3,2,2) and P_infinity(3,3,2,4) are enclosed, with squares in ratio at
-least 69. **This is an implication. NT1 for the actual trajectory is not proved**, and
+named clauses, with L large. For the map (B-1) the free input is proved by hand in
+`library/nt2-free-value-by-hand.md`. **This is an implication. NT1 for the actual trajectory is not proved**, and
 every clause it reads is an open producer statement.
 
 **Hardest remaining inequality in this part.** (NT2-V) at a blocked scale, which needs

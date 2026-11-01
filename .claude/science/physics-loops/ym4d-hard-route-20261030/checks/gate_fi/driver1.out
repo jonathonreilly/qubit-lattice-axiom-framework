@@ -117,3 +117,7 @@ L=7 R2 starlat    seed 1 start Ratio_C 0.000 best Ratio_C 0.9604 Ratio_A 0.9132 
 L=7 R2 gas        seed 1 start Ratio_C 0.000 best Ratio_C 0.9979 Ratio_A 0.9954 w1 1.766 rhs_c 1.7692 min|m| 1.000 nrough 49 evals 605 75.1s
 L=7 R2 overall best Ratio_C 1.0000
 L=9 R1 flat       seed 1 start Ratio_C 0.000 best Ratio_C 0.6420 Ratio_A 0.6420 w1 1.048 rhs_c 1.6321 min|m| 0.985 nrough 7283 evals 377 86.4s
+L=9 R1 smooth     seed 1 start Ratio_C 0.000 best Ratio_C 0.6613 Ratio_A 0.6607 w1 1.017 rhs_c 1.5373 min|m| 0.988 nrough 11625 evals 405 98.5s
+L=9 R1 sheet      seed 1 start Ratio_C 0.277 best Ratio_C 1.0000 Ratio_A 1.0000 w1 2.000 rhs_c 2.0000 min|m| 1.000 nrough 81 evals 413 91.0s
+L=9 R1 sheet_th   seed 1 start Ratio_C 0.155 best Ratio_C 0.6526 Ratio_A 0.6522 w1 1.163 rhs_c 1.7822 min|m| 0.983 nrough 7147 evals 351 80.6s
+L=9 R1 sheet_int  seed 1 start Ratio_C 0.000 best Ratio_C 0.2518 Ratio_A 0.2517 w1 1.915 rhs_c 7.6066 min|m| 0.128 nrough 132215 evals 196 42.1s

@@ -10,7 +10,7 @@ upstream_dependencies: ["minimal_axioms"]
 named_bridges: ["B_H (supplied Hamiltonian)", "B_G (Record-reads-Gauss-labels bridge)"]
 external_theorems_used: ["Bravyi-Hastings-Michalakis 2010, Thm 1 + J_k paragraph (sec 1.1), Lemma 3.1 and end of proof (sec 4.4)",
                          "Nachtergaele-Sims 2006 / Hastings-Koma 2006 (corollary only)"]
-runner: scripts/mdtn_ed_part1_reps_and_plaquette_2026_10_31.py, scripts/mdtn_ed_part2_su2_boxes_2026_10_31.py
+runner: scripts/mdtn_ed_part1_reps_and_plaquette_2026_10_31.py, scripts/mdtn_ed_part2_su2_boxes_2026_10_31.py, scripts/mdtn_ed_part3_ks_gauge_invariant_2026_10_31.py
 status: proposed (unaudited); status authority is the independent audit lane only
 ---
 
@@ -22,7 +22,8 @@ status: proposed (unaudited); status authority is the independent audit lane onl
 **Scope sentence:** this is not the Clay Yang–Mills mass gap problem (see §6 for the exact distance).
 **Runners:** `scripts/mdtn_ed_part1_reps_and_plaquette_2026_10_31.py` →
 `logs/runner-cache/mdtn_ed_part1_reps_and_plaquette_2026_10_31.txt`;
-`scripts/mdtn_ed_part2_su2_boxes_2026_10_31.py` → `logs/runner-cache/mdtn_ed_part2_su2_boxes_2026_10_31.txt`.
+`scripts/mdtn_ed_part2_su2_boxes_2026_10_31.py` → `logs/runner-cache/mdtn_ed_part2_su2_boxes_2026_10_31.txt`;
+`scripts/mdtn_ed_part3_ks_gauge_invariant_2026_10_31.py` → `logs/runner-cache/mdtn_ed_part3_ks_gauge_invariant_2026_10_31.txt`.
 Requirements: Python 3, numpy, scipy (run with numpy 2.5.4, scipy 1.18.1). Run from the repo root:
 `python3 scripts/<runner>.py > logs/runner-cache/<runner>.txt`.
 **Repo-policy status of the citation (SCIENCE_WORKFLOW §10, "Literature lemmas are rebuilt"):** BHM Theorem 1 is
@@ -285,6 +286,48 @@ non-monotone along 1×1×N: 1×1×4 lies above 1×1×3); boxes are open,
 not BHM tori, and too small to test L-uniformity — numerics are illustrative only. Full-space single cube (2¹²
 states): lowest excitations are charged at 1.000, 0.995, 0.955 (δ = 0, 0.1, 0.3); the ground state is physical; the
 physical gap is 4.000, 3.984, 3.799 — the band structure used in the proof.
+
+**5.5 Kogut–Susskind SU(2) (j_max = 1/2) and SU(3) ({1, 3, 3̄}) on multi-plaquette lattices, gauge-invariant basis
+(part 3).** The basis is: irrep label per link plus an orthonormal intertwiner per site, computed numerically as the
+common kernel of the site Gauss generators. Plaquette matrix elements are built from exact Haar integrals:
+SU(2) ∫D_ab D_ij = ε_ai ε_bj/2; SU(3) ∫D_ab D̄_ij = δδ/3 and ∫D D D = εε/6, with 3 ⊗ 3 → 3̄ kept and 3̄ ⊗ 3 → 1 kept.
+Units: e₁ = (g²/2)C₂(fund). H/e₁ = Σ n_ℓ − κ Σ_P (T_P + T_P†)/2, with κ = 2/(g⁴C₂), i.e. κ = 8/(3g⁴) for SU(2) and
+3/(2g⁴) for SU(3).
+Independent checks:
+- SU(3) single plaquette: the full 19⁴ = 130321-dim space with Gauss penalty reproduces the gauge-invariant code to
+  10⁻⁶, and ‖[Gauss Casimir, T]‖ = 2×10⁻¹⁶.
+- SU(2) 1×2 strip (shared link): the full 5⁷ = 78125-dim space reproduces it, e.g. E₀ = −0.456698 at κ = 1.
+- SU(2) single plaquette at g² = 2: gap 3.16228 (matches 5.2).
+
+"PT2 (num.)" is the second-order degenerate strong-coupling estimate computed from the same matrices: vacuum shift
+plus the effective Hamiltonian on the N = 4 sector, with first order included.
+
+| system (open) | dim H_phys | κ = 0.1 ED / PT2 | κ = 0.4 ED / PT2 | κ = 0.8 ED / PT2 | κ = 1.6 ED / PT2 |
+|---|---|---|---|---|---|
+| SU(2) 1×1 | 2 | 4.004997 / 4.005000 | 4.079216 / 4.080000 | 4.308132 / 4.320000 | 5.122499 / 5.280000 |
+| SU(2) 2×2 | 18 | 4.004991 / 4.005000 | 4.077885 / 4.080000 | 4.290622 / 4.320000 | 4.961600 / 5.280000 |
+| SU(2) 3×2 | 82 | 4.004990 / 4.005000 | 4.077509 / 4.080000 | 4.286146 / 4.320000 | 4.927945 / 5.280000 |
+| SU(2) cube 1×1×1 | 32 | 4.007484 / 4.007500 | 4.116215 / 4.120000 | 4.430050 / 4.480000 | 5.010339 / 5.920000 |
+| SU(3) 1×1 | 3 | 3.952531 / 3.952500 | 3.841875 / 3.840000 | 3.773592 / 3.760000 | 3.919184 / 3.840000 |
+| SU(3) 2×1 | 9 | 3.952530 / 3.952500 | 3.841707 / 3.840000 | 3.770726 / 3.760000 | 3.875729 / 3.840000 |
+
+Observations [N]:
+1. For KS SU(2) at j_max = 1/2, the second-order coefficient is lattice-independent in these 2D samples:
+   Δ = 4 + κ²/2 + O(κ⁴) on 1×1, 2×1, 2×2 and 3×2, and 4 + 3κ²/4 on the cube.
+   - The adjacent-plaquette hopping term −(κ²/4)λ_max(D + A) of the canonical-singlet MDTN model (5.4) does **not**
+     appear at this order for KS: the "Z2 formula" column in the log fails here.
+   - This shows that the MDTN canonical-singlet Hamiltonian and truncated KS are different models with the same band
+     mechanism.
+2. For SU(3), Δ = 4 − κ/2 + O(κ²): a first-order splitting from Tr U_P mixing the 3- and 3̄-loops on the same
+   plaquette. This is consistent with the theorem's linear form 4(1 − c₁|δ|).
+3. In every sample with κ ≤ 0.8 the gap stays above 3.7, far from the charged band (Lemma 1, Main Theorem).
+4. Sizes are tiny and boxes are open; nothing here tests L-uniformity.
+
+**5.6 Explicit constants.** Not obtained.
+- BHM's δ₀ and c₁ are not explicit, and no explicit cluster-expansion or Kato bound uniform in L was completed here.
+- The only explicit bounds available are volume-dependent (Weyl: |Δ − 4| ≤ 2|δ|·#plaquettes), which are useless for
+  L-uniformity.
+- An explicit δ₀ remains open (§6, outline note §9 item 2).
 
 ## 6. Exact distance to the Clay problem
 

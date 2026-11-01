@@ -10,7 +10,7 @@ upstream_dependencies: ["minimal_axioms"]
 named_bridges: ["B_H: supplied Hamiltonian / transfer operator", "B_G: records read gauge-invariant MDTN labels",
                 "B_E: link register encoded in blocks of site qubits"]
 companion: docs/MDTN_TRUNCATED_GAUGE_STRONG_COUPLING_PHYSICAL_GAP_BOUNDED_THEOREM_NOTE_2026-10-31.md
-runner: scripts/mdtn_ed_part1_reps_and_plaquette_2026_10_31.py, scripts/mdtn_ed_part2_su2_boxes_2026_10_31.py
+runner: scripts/mdtn_ed_part1_reps_and_plaquette_2026_10_31.py, scripts/mdtn_ed_part2_su2_boxes_2026_10_31.py, scripts/mdtn_ed_part3_ks_gauge_invariant_2026_10_31.py
 status: proposed outline (unaudited); status authority is the independent audit lane only
 ---
 
@@ -126,6 +126,8 @@ down to the block sublattice (Admissibility is stated covariantly on the fine la
   boxes. Infinite-lattice PT2 prediction 4 − (11/2)δ² **[C beyond second order]**.
 Full tables: LEMMA §5; logs: `logs/runner-cache/mdtn_ed_part1_reps_and_plaquette_2026_10_31.txt`, `logs/runner-cache/mdtn_ed_part2_su2_boxes_2026_10_31.txt`.
 
+Gauge-invariant multi-plaquette KS ED (SU(2) 2×2, 3×2, cube; SU(3) 1×1, 2×1) with a second-order comparison is in theorem-note §5.5.
+
 ## 6. Axiom-mapping table
 
 | Ingredient | Axiom or bridge | Lemma / status |
@@ -186,7 +188,7 @@ this note depends on it.
 
 1. Is the canonical-singlet reduction (SU(2) data only in multiplicities; dynamical sector = Z2 gauge theory) generic
    for sign-free MDTN Hamiltonians? If so, sign-free MDTN models may sit in Z2-like universality classes. [O]
-2. Explicit δ₀ (cluster expansion) and the SU(3) analogue numerically. [O]
+2. Explicit δ₀ (cluster expansion). [O] SU(3) small-system ED now done: gap ≈ 4 − κ/2 (theorem note §5.5). [N]
 3. Does any finite-truncation MDTN family have a quantum critical point with YM-like universality? [O; the paper is sceptical]
 4. Bridge B_G: can Record content be the (λ, α) labels without importing a readout context the memo forbids? [O]
 5. Block encoding vs fine-lattice covariance (§3.6 risk). [O]

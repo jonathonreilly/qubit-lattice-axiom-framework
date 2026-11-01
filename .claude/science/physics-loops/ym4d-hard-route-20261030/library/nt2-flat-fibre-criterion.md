@@ -83,7 +83,7 @@ and Theorem 4.1 gives H != 0 on the orthocomplement of Omega. C_(n,r) is free of
 
 Proof. Add (F-2) at the two pairs, (F-3) and (FT). Mbar_1 is bounded at fixed L by Lemma 10.6, and as g -> 0 it is bounded independently of L: the clipped moments are absolute there, and the unclipped remainder carries the rarity factor. Only (FLOW)'s x_i >= x_K / 2 is used to make every g_j small from X large. []
 
-So theta_L is what makes L large, and it does not depend on g. The scale of the constants is not modest: with the numbers of section 4, a_0 is about 4e-9, so L^(2 kappa_lift) must exceed about 10^12 times C_n^2 C_s^2 at r = 8. With (OS_j)(a), (d) the requirement falls to about 10^4 C, as in Theorem 10.7.
+So theta_L is what makes L large, and it does not depend on g. This reads (LE_j) as printed, with C_n free of L up to powers of log L, and C_s free of L, which is an unchecked item of the part's Obligations. The scale of the constants is not modest: with the numbers of section 4, a_0 is about 4e-9, so L^(2 kappa_lift) must exceed about 10^12 times C_n^2 C_s^2 Mbar_1 at r = 8. With (OS_j)(a), (d) the requirement falls to about 10^4 C, as in Theorem 10.7.
 
 **What is not read.** DEC, (SCR_j), the tower identity, (OS_j)(a), (OS_j)(d) away from W = 1, CF, REG, C2, Q, RC, (COV8), (TV-P) for unbounded tests, JET8, H-LIFT, any Gaussian limit at W != 1, any vertex, and the flow beyond the two lines named.
 

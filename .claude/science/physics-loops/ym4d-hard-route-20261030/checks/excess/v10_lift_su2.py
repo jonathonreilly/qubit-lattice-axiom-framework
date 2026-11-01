@@ -103,6 +103,7 @@ class Lift:
             A[mu] = torch.einsum("oi,...ic->...oc", self.Ke[mu], stack)  # (Np^d, no, 3)
         Uf = ident((n,) * d + (d,))
         centres = torch.meshgrid(*[torch.arange(Np) for _ in range(d)], indexing="ij")
+        lamc = {}
         for mu in range(d):
             for o in self.offs:
                 io = self.oindex[o]
@@ -118,16 +119,17 @@ class Lift:
                     emu = [0] * d
                     emu[mu] = 1
                     # lambda(y'') on the window around y', with y'' = y' + w L, in frame y
-                    lam = []
-                    for w in self.inner:
-                        w1 = tuple(w[a] + emu[a] for a in range(d))
-                        Ty = T[w1]
-                        Typ = torch.roll(T[w], shifts=tuple(-e for e in emu), dims=tuple(range(d)))
-                        gam = qmul(Ty, qinv(Typ))
-                        gam0 = T[tuple(emu)]
-                        lam.append(qlog(qmul(gam, qinv(gam0))))
-                    lam = torch.stack(lam, -2)
-                    t0 = torch.einsum("i,...ic->...c", self.K0[iop], lam)
+                    if mu not in lamc:
+                        lam = []
+                        for w in self.inner:
+                            w1 = tuple(w[a] + emu[a] for a in range(d))
+                            Ty = T[w1]
+                            Typ = torch.roll(T[w], shifts=tuple(-e for e in emu), dims=tuple(range(d)))
+                            gam = qmul(Ty, qinv(Typ))
+                            gam0 = T[tuple(emu)]
+                            lam.append(qlog(qmul(gam, qinv(gam0))))
+                        lamc[mu] = torch.stack(lam, -2)
+                    t0 = torch.einsum("i,...ic->...c", self.K0[iop], lamc[mu])
                     val = qmul(qmul(qexp(a_), qexp(t0)), T[tuple(emu)])
                 Uf[tuple(site) + (mu,)] = val
         return Uf, A, T
@@ -195,8 +197,8 @@ def smooth_field(N, d, amp, seed):
 
 
 def main():
-    L, Np = 3, 8
-    for d in (2, 3):
+    L = 3
+    for d, Np in ((2, 8), (3, 8), (4, 4)):
         Lf = Lift(Np, L, d)
         print(f"d {d}: window nonzero check K0 {float(Lf.K0.abs().sum(0).min()):.2e}", flush=True)
         # (e) constant abelian flux
@@ -230,7 +232,7 @@ def main():
             Ii = float(I_grad(V))
             fU, EU = flux_stats(U)
             # (c): block-internal plaquettes of the unflattened field against T_2
-            print(f" d {d} amp {amp}: f {f:.4f} max|m|/f^2 {mrat:.4f} (C)/f^2 {crat:.4f} picard its {len(hist)} final {hist[-1]:.2e} first {hist[0]:.2e} | fU {fU:.4f} fU L^2/f {fU*L**2/f:.3f} excess {EU-E:.4e} I {Ii:.4e} ratio {(EU-E)/Ii:.4f} I_fine/I {float(I_grad(U))/Ii:.4f}", flush=True)
+            print(f" d {d} amp {amp}: f {f:.4f} max|m|/f^2 {mrat:.4f} (C)/f^2 {crat:.4f} picard its {len(hist)} final {hist[-1]:.2e} first {hist[0]:.2e} | fU {fU:.4f} fU L^2/f {fU*L**2/f:.3f} excess(norm) {L**(4-d)*EU-E:.4e} I {Ii:.4e} ratio {(L**(4-d)*EU-E)/Ii:.4f} (exc-2I)/(fE) {(L**(4-d)*EU-E-2*Ii)/(f*E):.3f} E {E:.4e} I_fine/I {float(I_grad(U))/Ii:.4f}", flush=True)
 
 
 if __name__ == "__main__":

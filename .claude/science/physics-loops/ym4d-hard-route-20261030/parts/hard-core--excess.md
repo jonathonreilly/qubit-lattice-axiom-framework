@@ -5,17 +5,15 @@ lease_until: 2026-11-01T19:34Z
 
 Queue item 7 of `FINISH.md`, mapped side, frozen at commit `d9d4496f1`. Research-stage working state. Grants no status.
 
-Status: started 2026-11-01T07:34Z. Sections appear below as they are written.
+Started 2026-11-01T07:34Z. No read of `parts/hard-core--independent.md`, of any gate on it, or of the Sussman-Alpoge repository. Provenance: anthropic/claude-opus-5-5, effort max, Mac mini worker.
 
-## 0. Working summary (updated as sections land)
+## 0. Summary
 
-**Frozen statements.** Lemma EX, Lemma EX2, (COMP) as printed in `library/sector-values.md` at `d9d4496f1`, read with `gates/lemma-ex-7c12c6981.md` and `gates/closure-bad958abb.md`.
+**Lemma EX is proved, in a stronger form and by a new route.** The coarse plaquette angle is L^2 times an average of fine plaquette angles against a tent-tent-box-box kernel, these kernels are a partition of unity on fine plaquettes, and so the excess of *any* field in the fibre is a sum of local variances up to second order (Theorem V). Overlapping tents bound the in-plane parent gradient, and a window at the block face with the Bianchi identities at both levels bounds the transverse one (Lemma TL). No symbol, no IMS, no gauge patch, no global gauge: so no sector and no toron term, and c_1 is free of L.
 
-**New route for Lemma EX (under test in this file): no symbol, no IMS, no gauge patch.** The one-level excess is, up to second-order remainders, an exact sum of local variances:
+**An upper bound with no cut field.** An explicit one-level lift, in the fibre exactly, gains a power of L per level (Lemma LIFT). So Lemma TOP at W = 1 reads neither Prop AN3 nor Taylor at a cut field (TOP-1). The form with weights needs Theorem F (Prop TOP-W).
 
-    E_j(U) - E_{j+1}(M U) = sum_{y, p} L^4 Var_{chi_y^p}(F^{(y)}_p) - remainders,
-
-because the coarse plaquette angle is L^2 times an average of fine plaquette angles against a tent-tent-box-box kernel chi_y^p, and these kernels are a partition of unity on fine plaquettes. Overlapping tents control the in-plane coarse gradient, and a discrete Bianchi identity bounds the transverse gradient by exactly twice the in-plane one (sharp at p = (1,1,1,0), a = e_4, which is the gate's minimiser of c_e). Nothing global is read, so sectors and torons do not enter.
+**(COMP)(ii) and Lemma EX2 are implications.** Hole-filling in the level gives (COMP)(ii) with a geometric rate q-bar^m in place of s^2, which is all any consumer reads; the printed s^2 follows given also (AD). Lemma EX2 is rewritten with its gauge fixed, by differentiating the variance identity twice in block-local gauges, and it closes given (COMP)(i), Prop AN3 and (COMP)(ii). Section 6 has every label. Nothing here is gated, and a same-model proof is not an audit.
 
 ## 1. Lemma EX: a proof with no symbol, no IMS and no toron term
 
@@ -231,6 +229,16 @@ Let V' be a level-(i+1) field of flux at most f_0(L). For a parent site y let G_
 
 *Proof.* (T1): (C), (K), and the flat difference of theta'^{G_y} against grad' up to C Theta^2. In (C) the frame is close to the axial gauge at y; the gauges differ by a rotation of size C(L) Theta/L^0, which changes theta by second order. (T2): in (V_W), sigma_{y,q}^2 <= <|theta^{(y)} - L^-2 theta'_q(y)|^2>_{chi_y}, so L^4 sigma^2 <= C max_near |grad' theta'|^2 + C(L) Theta-tilde^4 by (T1), and |r| <= C(L) n_y <= C(L) Theta-tilde^2. (T3): (T1), L^4 fine plaquettes per block, and a fine link in frame y has angle at most C(L) Theta, so the covariant and flat fine differences differ by second order. QED
 
+*Numerics, T10 (`checks/excess/v10_lift_su2.py`, criteria written first): the construction above, coded literally, SU(2), L = 3, comb map, d = 2, 3 on N' = 8, and d = 4 on N' = 4 read on the cover of the torus.* m := log(M T_0' V' V'^-1).
+
+| d, f | max|m| / f^2 | (C) defect / f^2 | Picard to 1e-12 | e / I^grad | I^grad(U) / I^grad(V') |
+|---|---|---|---|---|---|
+| 2: 0.49, 0.19, 0.083 | 0.0125, 0.0107, 0.0075 | 0.0015, 0.0011, 0.0010 | 6, 4, 4 | 0.35, 0.31, 0.29 | 0.068, 0.060, 0.054 |
+| 3: 1.07, 0.47, 0.24 | 0.0175, 0.0169, 0.0121 | 0.036, 0.039, 0.034 | 9, 6, 5 | 0.31, 0.26, 0.23 | 0.25, 0.18, 0.14 |
+| 4: 1.53, 0.83, 0.42 | 0.0238, 0.0150, 0.0147 | 0.063, 0.044, 0.042 | **no (40 steps, 1.8e-3)**, 9, 7 | 0.34, 0.28, 0.28 | 1.42, 0.84, 0.74 |
+
+Constant flux: |m| below 6e-17. So there is no first-order term, the fibre is reached exactly, and e/I agrees with the abelian lift's 0.27 to 0.33 at L = 3. *Against the registered rule:* (a), (c), (e) PASS. (b) fails at f = 1.53 in d = 4, the amplitude having overshot the intended range, which is far above any class flux. (d) as first written was void in d < 4 (the fine sum needs L^{4-d}); corrected before the second run, PASS. Limits: L = 3 only, smooth parents, one seed per dimension, d = 4 on a small torus. Nothing here tests L large.
+
 ### 2.3 Lemma TOP at W = 1, with no toron term
 
 Let V be a level-k field of flux f <= f_1(L), Vtilde_k := V, Vtilde_i := T(Vtilde_{i+1}), Utilde := Vtilde_0.
@@ -383,3 +391,52 @@ A variance in the gauge at y against the gauge at y'': they differ by Ad(g) with
 *Order 1.* |D(Z o Lambda_m)[b]| <= C(L) a_m^{1/2} ||delta F||_{l^2}, by (SRC)'s first-derivative bound, so the sum over m converges by Theorem COMP-ii-g with no use of EX2.
 
 *Order 2.* <Delta delta F, K Delta delta' F> <= (b_m b'_m)^{1/2}, summed by (EX2') and Cauchy-Schwarz. <Delta F, K Delta delta^2 F> <= a_m^{1/2} ||delta^2 F||_{l^2} <= C(L) q-bar^{m/2}. The transport terms that gate D1 of the closure lists, |h| |F| |Delta delta' F|, are at most (sum W |h|^4)^{1/4} (sum W |F|^4)^{1/4} b'_m^{1/2} <= C(L) s f b'_m^{1/2}, geometric. In the axial gauge at x of Prop DS, "link size |delta F|" should read: link size C(r) times the l^2 norm of delta F on the ball, with polynomial growth in r taken by the tree decay. Since zeta is gauge invariant at each order, the frame at x may be chosen for each of delta, delta' separately. So Prop DS stands as an implication, with "C s" replaced by q-bar^{m/2}. (Not rewritten here: its owner has it. The repair of its own D1 in the closure gate is this paragraph.)
+
+## 6. Status of each statement
+
+| Statement | State here | Reads |
+|---|---|---|
+| Lemma EX, weighted, as printed | **Proved** (Theorem EX), with the toron term deleted and c_1 = 1/810 free of L | The map only; flux(U) <= phi_0(L) |
+| Lemma EX, local form | **Proved** (Theorem EX-loc), no E term, W >= 0 arbitrary | The map only |
+| Lemma BT, T <= 2 P + 8 f E + C f^2 E | **Proved**, the 2 is sharp | Nothing |
+| c_e > 0 over all P | **Proved**: c_e >= (1 - L^-2)/96 for all P and L, from Theorem V and Lemma BT at r = 0, against 0.0988 measured. No longer read by Lemma EX | Nothing |
+| Lemma LIFT, TOP-1 (W = 1) | Implication | Item (o) for A_k <= E_0 of a class chain; L >= L_0 |
+| Prop GS at W = 1 | Implication: Theorem EX, TOP-1, and the sum of cub | (COMP)(i) clause 1, or sup flux falls |
+| Prop TOP-W | Implication, level of each term | Theorem F at the true lift, (R3), item (o), Lemma AN1's linear bound |
+| (COMP)(ii) | Implication, **with q-bar^m in place of s^2** (Theorem COMP-ii-g) | Prop TOP-W, (COMP)(i) clause 1 |
+| (COMP)(ii) as printed, with s^2 | Implication (4.2) | Also (AD), (R3); Lemma W is proved |
+| Lemma EX2 | Implication, rewritten (Lemma EX2'), gauge fixed | (A1) to (A4) |
+| Prop DS | Not rewritten; 5.4 says what changes | Its owner |
+
+**The gate's list.** `gates/lemma-ex-7c12c6981.md`: D1 dissolved (5.2, 5.3: transports at block scale, l^4 only where it costs nothing). D2 repaired (the full F-ddot is in (D)). D3 repaired (5.1). D4 gone for Lemma EX and for Lemma TOP; the tail in Lemma O3 and (SRC) is untouched. D5: not read here. D6, D7: moot, no Plancherel and no IMS. *No field with topological charge at small flux had been tested:* the proofs above read no sector; T6 is the test (Section 7). `gates/closure-bad958abb.md` D4 repaired by (CR) and Lemma CJ, with no Lemma AN1 and no Uhlenbeck gauge, in 4.2.
+
+## Obligations
+
+- discharged: Lemma K, Theorem V, Lemma LE, Lemma IP, Lemma NN, Lemma BT, Theorem EX: the excess of any field in the fibre is a sum of local variances up to second order, so Lemma EX holds with no toron term, no symbol, no IMS, in every sector, N' >= 3; own proof, same-model, not gated; T0 to T4 PASS
+- discharged: Lemma TL, Theorem EX-loc: pointwise bound of the parent gradient by local variances, compatible weights, no term in E; own proof, same-model, not gated; T7 PASS
+- discharged: c_e >= (1 - L^-2)/96 over all P, abelian, from Theorem V and Lemma BT; own proof, not gated
+- implication: Lemma LIFT, one-level exact lift with gain, tensor chain map plus block frames plus Picard, constants soft; TOP-1 given item (o); T8 to T10 as reported, with L_0 not computed -> Prop GS at W = 1
+- implication: Lemma CJ, (CR), Prop TOP-W, composite remainder free of the level from one-level remainders; given Theorem F at the true lift, (R3), Lemma AN1's linear bound -> Theorem COMP-ii-g
+- implication: Theorem COMP-ii-g, (COMP)(ii) with q-bar^m, by hole-filling in the level; given Prop TOP-W and (COMP)(i) clause 1 -> Lemma EX2', Prop DS
+- implication: (COMP)(ii) with s^2, Section 4.2; given also (AD) and (R3); no consumer needs it
+- implication: Lemma EX2', second variation of the variance identity in block-local gauges; given (A1) to (A4) -> Prop DS, so low orders of R_k
+- gap: L_0 and C_T, q_h are not computed; C_2 was still rising at L = 13 (T9), bounded by (K)
+- gap: Lemma EX with boundary data, near frozen layers, for (VAL^d): Theorem EX-loc is local and should apply on free blocks, and Lemma LIFT next to a frozen layer has not been written
+- unchecked: Lemma TL's and Lemma LIFT's non-abelian steps at the level of every BCH term: written as second-order remainders of finite-dimensional analytic maps with C(L), checked numerically at L = 3 only
+
+## 7. Numerics, summary
+
+Criteria: `checks/excess/CRITERIA.md`, written before each run; additions dated and marked. All numerics under the lock. A search that finds nothing does not prove a bound; here each run tests a step of a written proof.
+
+| Test | Outcome |
+|---|---|
+| T0 kernels | PASS, 1e-16 |
+| T1 abelian identity | PASS, 1.4e-15 relative |
+| T2 remainder order, identity | PASS. Identity to 1e-12 on SU(2), remainder t^2 |
+| T3 Bianchi | PASS. B^2/(f^2 E) 0.31 to 0.46, T - 2 P < 0 on all fields run |
+| T4 sharpness | PASS. T/P = 2.0 at p = (1,1,1,0), a = e_4 |
+| T5 | PASS on the fields of `v1_identity.log`: e/I = 0.46 (smooth), about 120 (white), no adversarial search here; the gate's own searches stand, with lowest in-domain e/I = 0.1125 |
+| T7 pointwise bounds | PASS, largest ratio 0.43 |
+| T8 kernels | Identities PASS. Constant clause **FAIL** as registered; follow-up levels off at 22 |
+| T9 abelian lift | Identities PASS. C_2 clause **FAIL** as registered; C_2/L falls, bounded by (K), constant not computed |
+| T10 lift, SU(2) | (a), (c), (e) PASS; (b) fails at f = 1.53 only, outside any class flux; (d) void as first written, corrected, PASS |

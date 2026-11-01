@@ -1,5 +1,48 @@
-lead: openai/gpt-6-astra/max mac-mini-codex
-lease_until: 2026-11-02T12:00Z
+lead: anthropic/claude-opus-5-5/max mac-mini-worker
+lease_until: 2026-11-02T05:05Z
+
+## State of attack — queue item 8f (nt2-rewrite), 2026-11-01
+
+Worker anthropic/claude-opus-5-5/max on the Mac mini, neutral side, pinned at
+`be5e58b30`. Author work, not a review or an audit, and same model as the gate
+it absorbs, so not independent of it. The previous lead and lease of this file
+were openai/gpt-6-astra/max mac-mini-codex, lease until 2026-11-02T12:00Z. That
+lease was still live when these lines replaced it, on the instruction for this
+item; whether that session is still active is not known here. Texts 8.1, 8.2, 8.5
+are edited in place,
+and Texts 8.10 to 8.12 control where they differ from older text.
+
+**The gate is absorbed.** (1) The clause |K_vert(tau_*)|>=kappa_* is withdrawn.
+(NT2-V) replaces it: for every covariance c, a pair defect or a triple defect on a
+fixed family. Proposition V0 shows no single number could do this. A correction to
+the gate: Theorems 3.16 and 3.17 read pair and triple data together, so the pair
+term stays. (2) Consistency is free, and the top-down law mu^TD meets (NT2-M) for
+any chosen running, given a one-step package unverified for it. (3) Text 8.10 says
+what rejects which law. The running clause rejects every positive-norm law in its
+scope, and Lemma RM' extends that scope from O(4) to hypercubic for scalar
+multipliers. T rejects Gaussian potentials. Only RP or locality can reject mu^TD.
+Only clustering rejects the dilation mixture. RP of mu^TD on gauge-invariant
+functions is open: the abelian analogue fails it, and the leading singlet test
+cannot decide the running profile. (4) NT2 is restated on the RP state of T1, with M
+admissible. GOAL.md is not edited; see Requests.
+
+**NT1-NF is reduced to one number.** Theorem F: the level-j connected correlator on
+a window is within 3 b^2 eps_j of the correlator of one flat fibre, E_1, given
+(GS_j)(a), (LE_j), (OS_j)(c'), (FF_(j+1)). So the strict inequality needs no DEC, no
+Gaussian limit at W!=1, no COV8 and no vertex. What is left is (FT): the value of
+Cov_1 of two energies at the single field W=1. Corollary NT1-F then gives NT1 from
+named clauses, with L large. For the map (B-1) the free input is discharged:
+P_infinity(3,3,2,2) and P_infinity(3,3,2,4) are enclosed, with squares in ratio at
+least 69. **This is an implication. NT1 for the actual trajectory is not proved**, and
+every clause it reads is an open producer statement.
+
+**Hardest remaining inequality in this part.** (NT2-V) at a blocked scale, which needs
+the blocked K_T and a level-j form of Theorem 3.17. On the NT1 side, (FT).
+
+**Next action.** (1) A gate on Theorem F, Corollary NT1-F, Lemma RM' and Proposition V0.
+(2) (NT2-V) restricted to translation-invariant c, from Theorem 3.10. (3) The order g^6
+singlet test for mu^TD, which is a one-loop computation in that law. (4) COV8/G0 and the
+flow, for NT2 itself; none is advanced here.
 
 ## State of attack — continuation at 5f5f1693a, 2026-11-01
 
@@ -119,8 +162,23 @@ to prove (RANK-U) are inactive; the current checkpoint and Text 8 control.
 - gap: non-zero mean with a large gauge part; a large mean rotates colour frames, which is the colour-mixing case -> NT2 for every Gaussian law
 - gap: link variance above c_1 g^(4/3), at the Wilson lattice scale and at level j; the Levy triple, and aligned gauge modes with no Levy area -> NT2 for every Gaussian law
 
+- discharged: a gauge-invariant function with zero quartic jet has zero cubic jet, so no observable has a tree value made of the vertex alone -> (NT2-V) (Proposition V0, `library/nt2-chart-free-vertex.md`)
+- discharged: for a Gaussian potential at small amplitude, singlet RP reads the reflected flux kernel; a fixed indefinite kernel fails RP on gauge-invariant functions -> Text 8.10 (Lemma R4)
+- discharged: RP on closed currents forces the spectral condition, so |k|^2 D is non-decreasing in each k_i^2 for a scalar multiplier, with hypercubic invariance -> Text 8.10 (Lemma RM')
+- discharged: blocked plaquette flux of (B-1) is a positive average of F_ab; enclosures of P_infinity at (3,3,2,2) and (3,3,2,4) -> Corollary NT1-F (Lemma FB, `library/nt2-flat-fibre-criterion.md`)
+- implication: level-j connected correlators on a window lie within 3 b^2 eps_j of the flat fibre, given (GS_j)(a), (LE_j), (OS_j)(c'), (FF_(j+1)) -> NT1 (Theorem F)
+- implication: NT1 given Theorem F's clauses, (FT), H-NET, H-SCALE, supports free of L and a_L >= a_0 > 0 -> NT1 (Corollary NT1-F)
+- gap: (FT), the value of one product of two energies at W = 1, or (OS_j)(b), (c) and (GS_j)(c) at W = 1; producer hard-core -> Corollary NT1-F
+- gap: (NT2-V) at a blocked scale, with the blocked K_T and the second jet of M; at n = 1 it is Theorem 3.17 -> NT2
+- gap: reflection positivity of mu^TD on gauge-invariant functions -> whether RP rejects the prescribed-running law (Text 8.10)
+- unchecked: convergence of P^fib_(n,S) to P^fib_infinity for (B-1), by the domination (B-5) at each coarse momentum -> Corollary NT1-F
+
 ## Requests
 
+- target lead: adopt in the wording of NT2, or rule against: (1) NT2 stated on the RP state of T1; (2) M admissible, with K_T per map; (3) (NT2-V) in place of |K_vert(tau_*)|>=kappa_*. Text 8.1. GOAL.md is not edited here. Reason: the old clause has no truth value, and with no RP the running clause excludes no law that prescribes its running. Text 8.10 also answers GOAL's open sentence on the running clause.
+- hard-core, either attempt: (FT), Text 8.11: Cov_1(X_p,X_q) -> (3/2)(P^fib_pq)^2 at the one field W=1, for two pairs of bounded offset. With (GS_j)(a), (LE_j), (OS_j)(c'), (FF_(j+1)) this is all NT1 reads. Please also state the composite support of a level-j plaquette observable, in level-j cells, and whether it is free of L.
+- upper-chain, interface owner: `gates/nt2-gate-2285befef.md` Note: restate (OS_j)(d) as ||Gamma_pq(W)-Gamma_pq(1)||_HS, which would make CT2 unnecessary, if a producer can deliver it. No clause of the regular package evaluates anything at W=1; Theorem F shows where one is needed.
+- target lead, gate request: Theorem F, Corollary NT1-F and Lemma RM'. Attack first: the use of (GS_j)(a) at W^pi with the trivial bound at t>1, the moment Mbar_1 at the pulled-back field, and the spectral condition in RM'.
 - target lead: adopt the wording of NT2 in Text 6, with the order of quantifiers family, law, member, one family per scale. Reason: with the correlator chosen first, NT2 is false on G by Proposition 1.1, for T by rescaling the covariance and for any single f by a point mass. A Gaussian potential on a finer lattice is then tested at its own scale, which answers the question of the fine potential class. In d = 2 the fine class contains Yang-Mills (Proposition 1.2).
 - hard-core--independent: Lemma 5.1' derives (c+) from (EI) in the regular chart, with rate C g^2 p^(n+6). Please confirm or correct the split used there: the third-order Taylor term of -g^-2 F_k(V(b)) as a polymer of size g p^3, the remainder after it of size g^2 p^4, and C_E g p replaced by C(L) |F^*| g p + C(L) g^2 p^2 because the linear terms of PP, log JJ, log FP vanish at flat W by colour. Also say how far rough cubes under a regular W affect a local polynomial (the gate's D6), and confirm (b+), (d+) from analyticity on the class, and C_s free of L in the lift at level k. This is only a rate o(g) with the first-order term evaluated, not a new estimate on the induction.
 - hard-core--mapped: confirm (H2) in the g-refined form |D_xi^alpha S| <= C g^(|alpha| - 2) e^(-mu tau(alpha)) for |alpha| >= 2 in your chart, with the cubic and quartic Taylor split. Lemma 5.1 then gives (c+) at fixed site data. Lemma 5.6 here reads your "Theorem OS, local form" to get (c+) on the event that W is class on a ball of radius C log(1 / g), for the fibre law with any far data, which is the gate's D6 and D7. Please say whether that reading is right, in particular Step 4, the bound on U^ref(omega, d) - V^*_loc near D, and whether your (H1)-(H3) in the ball hold at this radius.
@@ -820,6 +878,18 @@ cutoff/volume limit i->infinity FIRST at each fixed m; only then take m->infinit
 This is a statement on the L-adic scales. Uniform interpolation to arbitrary
 real r is an additional gap, not a consequence of these quantifiers.
 
+**State and map [revised after `gates/nt2-gate-2285befef.md`, D1 and D5; proposed].**
+omega is the state of T1: reflection positive on bounded gauge-invariant
+functions, and invariant under the dense translations and the hypercubic group.
+NT2 is a statement about such a state. Without RP it excludes no law that
+prescribes its own running (Text 8.10). M must be **admissible**: the free blocked
+flux variance of each fixed template stays bounded and converges along n=L^j.
+(B-5) of `witness-blocked-tree-limit.md` is a sufficient form. Straight
+decimation is local and gauge covariant and fails this, since its free flux
+variance grows with the cutoff ratio, and (NT2-M) would then be false for
+Wilson. K_T reads the second jet of M, so its value is per map and is fixed with
+the attempt. (B-1) is the first jet of the independent attempt's map only.
+
 A template consists of finitely many finite closed paths on the unit coarse
 lattice, with specified base points and tails when needed. The same template
 is scaled by r_m at each m. Write W_Gamma=w_Gamma I+i v_Gamma.sigma and
@@ -862,16 +932,36 @@ regulated tree calculation, not fitted to omega; existence, regulator
 independence in the chosen scheme, and uniform bounds are (H-TREE) below.
 In the part's normalization e_p,2=|ell_p|^2/8 and
 E_0 ell_p^a ell_q^b=4 P_pq delta_ab, so C_p=(3/2)P_pp,
-C_(p,q)-C_p C_q=(3/2)P_pq^2. Require a finite triple tau_* from this
-predetermined template set and a number kappa_*>0 such that
-|K_vert(tau_*)|>=kappa_*. Their choice is made by the tree calculation,
-independently of omega. The concrete first candidate is
-(Gamma_12,Gamma_23,Gamma_31) at the origin, each Gamma_mu,nu following
-+e_mu,+e_nu,-e_mu,-e_nu. Its nonzero coefficient after the required
-blocking/limit is still H-TREE; the historical unblocked numerical value
-is not that proof. Only K_T is the physical
-gauge-invariant coefficient; the split is not invariant under nonlinear
-field redefinitions. Nothing here measures K_vert separately in an experiment.
+C_(p,q)-C_p C_q=(3/2)P_pq^2.
+
+**Vertex clause without a chart [revised; the former clause
+|K_vert(tau_*)|>=kappa_* is withdrawn, gate D2].** Only K_T has a value with no
+chart. On a family of linear colour-diagonal slices, K_vert(tau) takes every
+real value at fixed K_T (gate, Lemma K), so the former clause had no truth value.
+No single number can replace it: if a gauge-invariant function has zero quartic
+jet then it has zero cubic jet (Proposition V0,
+[`nt2-chart-free-vertex.md`](../library/nt2-chart-free-vertex.md)), so no
+observable has a tree value made of the vertex alone. The clause therefore
+quantifies over covariances. For real symmetric c on the template links, tensor
+1_3, put P[c](Gamma,Delta)=<J_Gamma,c J_Delta> and let K_comp[c](tau) be
+-12[A_1(E_2,E_3)+A_2(E_3,E_1)+A_3(E_1,E_2)] with E_i=c J_i: the values of the
+Gaussian potential of covariance 4 h^2 c. Neither mentions a chart. Require a
+finite template set F and kappa_*>0, chosen by the tree calculation before
+omega, such that for every c,
+
+    max{ max_(Gamma,Delta in F) |P[c](Gamma,Delta)-P(Gamma,Delta)|,
+         max_(tau in F^3) |K_comp[c](tau)-K_T(tau)| } >= kappa_*.    (NT2-V)
+
+The pair term cannot be dropped from what is proved: Theorems 3.16 and 3.17 read
+pair and triple data together, and (NT2-M) already fixes the pair data through
+B. If c is the covariance of a linear slice of F_2, the pair defects vanish and
+K_T-K_comp[c]=K_vert(tau;slice), so every such slice has a template in F with
+|K_vert|>=kappa_*. The template depends on the slice, and that is all "the vertex
+is present" can mean. At n=1, Theorem 3.17 gives (NT2-V) with F the plaquette
+lassos of its box. At a blocked scale it is a **gap** (H-TREE). The corner triple
+(Gamma_12,Gamma_23,Gamma_31), each Gamma_mu,nu following
++e_mu,+e_nu,-e_mu,-e_nu, stays the first test of K_T!=0. Nothing here measures
+K_vert separately in an experiment.
 
 **An observable coupling, not an attached label.** Fix p_0=Gamma_12 at the origin, with
 c_*:=C_p0>0 and set, exactly,
@@ -925,7 +1015,7 @@ The conditional auxiliary result in 8.4 shows what these repairs would buy.
 | H-G0 | For each normalized scalar, common-base-point, gauge-invariant polynomial P of degree <=8, the integrated one-step error in (G0) below tends to zero uniformly in i,j and volume | OS_j(b),(c) motivate it; OS_j(d) only gives traces/norms and does not supply its full tensor content. OS_j(c') needs the weighted form (TV-P) below |
 | H-LIFT | On the invariant polynomial class with exponentially summable kernels, the flat colour-equivariant linear lift A_j is closed under iteration; its degree >=2 transferred polynomial has norm <=q<1, for one fixed L and every j; the exact free identity Gamma_j=Gamma_j^fib+A_j Gamma_(j+1) A_j^T holds | Stronger precise consumer of OS_j(a); a curvature sup bound alone is not a proved norm-closure theorem. The norm and transfer operator are defined in `witness-moment-gap.md` (2)-(3); every fixed template belongs after normalization, and q is independent of its support |
 | H-FIRST | The framed chart's second-order jets and covariance's first derivatives give (b+),(d+); for every needed degree <=8 polynomial Q, E_[W^pi] Q=E_0^W Q+gamma_j Cov_0^W(Q,Psi_3^W)+R_Q with E_mu[|R_Q|1_G]=o(gamma_j), uniformly in i,j; all chart-failure and pullback errors in T are o(gamma_j^4) | Witness 5.2(c+) gives a candidate O(gamma^2 log^q+gamma |F^*|+exp(-cR/L)) form; this is stronger than upper OS_j(c),(c'). Psi_3=-F_3 fixes the sign. No far-rough-sector proof is imported |
-| H-TREE | Fixed finite-template Gaussian covariances and the coefficients (NT2-C) converge in the cutoff/volume limit to the prescribed scale-independent blocked tree coefficients; degree <=8 Gaussian moments are uniformly bounded; the existential triple tau_* has |K_vert|>=kappa_*>0 | Needed from the free blocked theory and cubic classical consistency; witness 5.2/5.4 are candidate inputs, not proofs of all these assertions here |
+| H-TREE | Fixed finite-template Gaussian covariances and the coefficients (NT2-C) converge in the cutoff/volume limit to the prescribed scale-independent blocked tree coefficients; degree <=8 Gaussian moments are uniformly bounded; (NT2-V) holds for the limiting coefficients | Needed from the free blocked theory and cubic classical consistency; witness 5.2/5.4 are candidate inputs, not proofs of all these assertions here. (REG-T) is read for K_T and the Gaussian coefficients only: it cannot hold for the split between a tree chart and periodic Feynman (gate D2). (NV) is a statement in the Feynman prescription, evidence in that chart and not a clause |
 | H-FLOW | u_j=gamma_j^(-2), w_j=u_j-d_j; |d_j|<=C_0(L), w_(j+1)=w_j-b_W log L-rho_j, |rho_j|<=C(L) gamma_j p(gamma_j)^3, gamma_j<=gamma_*, p a fixed power of log, with rho_j small enough that decrement>=b_W log L/2 | Statement of independent 8.4(T1)-(T5), and the coefficient in its (8.2); upper 10.8 consumes this as input. Mapped P1 states the same coefficient but is not substituted for the full flow. Only producer statements are used |
 
 For clarity the missing one-step inequality is the following, not the full
@@ -987,24 +1077,28 @@ job was run; the old gate's Monte Carlo numbers are not new evidence here.
 
 | Attack | Result and exact scope |
 |---|---|
-| L1, fixed local nonlinear map | **discharged** rejection for a fixed square-symmetric colour-isotropic Proca covariance at sufficiently small fixed kappa>0, and for independent isotropic links at every kappa>0: the normalized radial fourth moment has a positive excess. The running amplitude cancels. **unchecked** for general kappa/covariances or specially tuned maps; no universal exclusion claimed |
+| L1, fixed local nonlinear map | **discharged** rejection for a fixed square-symmetric colour-isotropic Proca covariance at sufficiently small fixed kappa>0, and for independent isotropic links at every kappa>0: the normalized radial fourth moment has a positive excess. The running amplitude cancels. **unchecked** for general kappa/covariances or specially tuned maps; no universal exclusion claimed. **Scope (gate D3):** this family puts the excess at the template scale at every m, so it is not coherent, and this algebra is the wrong test for a coherent law. A fixed local map of the fine field is seen through M, where the excess is irrelevant: normalized slope 3.75, 0.211, 0.0730, 0.0370 at n=1, 3, 5, 7 (Lemma X). The coherent L1 is rejected by the running clause: Text 8.10 |
 | L2, fixed disorder amplitude | **discharged** rejection: after the mean fixes g, the leading second energy moment is larger by 1+delta^2. A scalar running amplitude cannot remove it |
-| L3, nonlocal quadratic Gaussian map | **discharged** finite-cutoff transport identity: all triple tree coefficients, including K_vert, are matched. With h_m^(-2)=c+b_W m log L its observable coupling also runs at the required leading rate. **gap** for the coherent continuum statement: the required equation is M_*mu_(m+1)=mu_m, together with regulator limits and RP if T1 is claimed. Independent choices at each scale do not meet our NT2 |
-| Dilation mixture of a putative solution | **implication**: given an NT2 solution with clustering and a dilation-covariant block algebra, its equal mixture with its one-scale dilation still satisfies all of NT2, including consistency and observable running; it has a nonzero long-distance connected plateau. This is a conditional counterexample to sufficiency for a clustering vacuum QFT, not an unconditional continuum construction |
+| L3, nonlocal quadratic Gaussian map | **discharged** finite-cutoff transport identity: all triple tree coefficients, including K_vert, are matched. With h_m^(-2)=c+b_W m log L its observable coupling also runs at the required leading rate. **Coherence is not the obstacle (gate D1):** M_*mu_(m+1)=mu_m costs nothing. Any fine law blocked down solves it, and any kernel on the fibres of M, applied top-down, solves it exactly (Lemma C). Independent choices at each scale still do not meet NT2, but that is not what stands between L3 and a coherent law. See the next row |
+| Top-down law mu^TD | **implication (gate, Proposition TD):** conditional Wilson on each fibre at a prescribed gamma_j, discarding the factor N_j(V) that drives the true flow. Given the one-step package read for this law, (NT2-M) holds for any chosen sequence gamma_j. So b_W is an input and passes, and any other b passes (NT2-M) too. No moment-matching clause can exclude it, because the running is chosen. The package is unverified for this law, H-MOM especially, since its chessboard source needs RP. RP and locality are the only handles: Text 8.10 |
+| Dilation mixture of a putative solution | **implication**: given an NT2 solution with clustering and the same M at successive scales (gate D6: dilation covariance need not be assumed; omega'=omega at level m+1 satisfies the block identities when the offset set is closed under L^(-1), and clustering is read only for the plateau), its equal mixture with its one-scale dilation still satisfies all of NT2, including consistency and observable running; it has a nonzero long-distance connected plateau. This is a conditional counterexample to sufficiency for a clustering vacuum QFT, not an unconditional continuum construction |
 | A stronger stepwise running interpretation | **discharged** counterexample to that interpretation: bounded alternating scheme terms d_m yield the required leading logarithm while the consecutive inverse-coupling differences oscillate |
 
-The first two fixed-amplitude laws are caught by positive moment matching,
-not by comparison-class separation. Letting their parameters vanish towards
-the UV removes that particular obstruction. The running clause is not an
-automatic answer to L3: a prescribed amplitude can run in a Gaussian
-construction, and the observable anchor alone does not prevent this.
-Conversely, a nonlocal Gaussian push-forward is not automatically a non-YM
-continuum QFT. Its scale consistency and positivity have to be checked.
+Revised after the gate; the full table is Text 8.10. Fixed-amplitude L2 is
+caught by positive moment matching. L1 in its coherent form is not. The running
+clause does have force: a positive-norm potential cannot run to zero, whatever
+its amplitude (gate Lemma RM; Lemma RM' with hypercubic invariance for a scalar
+multiplier). So it rejects both L1 and L2 when read coherently, including the
+vanishing-parameter versions. It is not an answer to a law that prescribes its
+running: L3 at a running amplitude has negative spectral density, and the
+observable anchor does not prevent this. Conversely, a nonlocal Gaussian
+push-forward is not automatically a non-YM continuum QFT.
 
 **Definition finding [gap / limited implication].** No explicit unconditional
 non-YM continuum law satisfying all of 8.1 has been constructed here. The
-finite-cutoff L3 attack stops at the displayed consistency equation. The
-conditional mixture shows a definite weakness even if that equation is met:
+finite-cutoff L3 attack does not stop at a consistency equation: that equation
+is free, and the top-down law meets NT2 given a one-step package which is
+unverified for it. The conditional mixture shows a definite weakness even if that equation is met:
 NT2 is an ultraviolet diagnostic and does not determine the vacuum theory.
 Do not replace GOAL.md silently. If its word "identification" is intended to
 mean the full Jaffe–Witten theory, it needs more than this leading-order test;
@@ -1107,11 +1201,11 @@ derived. No conclusion about failure of the Wilson theory follows.
   match; the static-sector mixture under the existence, clustering and
   dilation hypotheses of the library. None discharges those physical inputs.
 - **Gap:** (COV8)/(G0), (TV-P), the specified lift norm closure, first-order
-  cubic matching and its uniform error, the tree-coefficient limits and a
-  nonzero limiting vertex template, and the producer flow/coefficient proof.
-  NT1 for the actual trajectory, NT2 and T1 are unproved. The L3 coherent
-  continuum counterexample is also unproved; its consistency equation is
-  written, not assumed solved.
+  cubic matching and its uniform error, the tree-coefficient limits and
+  (NT2-V) at a blocked scale, and the producer flow/coefficient proof.
+  NT1 for the actual trajectory, NT2 and T1 are unproved. The coherent top-down
+  law mu^TD is an implication given its own one-step package, unverified.
+  Consistency is free (gate Lemma C); it is not the gap.
 - **Next decision:** obtain full framed covariance/moment and pullback bounds
   for the intended invariant class, or restrict 4.3 further. Do not reopen
   the false ordinary RANK-U limit clause to solve NT2. A replacement for
@@ -1151,6 +1245,7 @@ the library. No Gaussian limit, invariant sixth moment or transfer-norm
 closure is required by this implication. A possible supplier uses just the
 quartic two-energy formula (NF-5) and conditional-mean bounds (NF-6).
 
+**[Superseded by Text 8.11, which reduces this stop to one number at W=1.]**
 **Gap / honest stop for NT1.** The actual Wilson hierarchy has not been shown
 to satisfy NT1-NF. The residual is the strict numerical inequality a>2v+d,
 with a a separated conditional lower bound. DEC alone leaves the coarse
@@ -1206,8 +1301,9 @@ energy anchor is positive. The vertex limit is the explicit, absolutely
 convergent integral (B-8), with the three corner currents printed there.
 No numerical job was needed for these statements.
 
-**Gap / independent honest stop.** Nonzero vertex condition (NV) for that
-integral is not proved. The nonlinear second-jet recurrence (B-9) still
+**Gap / independent honest stop.** [(NV) is a statement in the Feynman chart.
+Its role as a clause is withdrawn: (NT2-V), Text 8.1.] Nonzero vertex condition
+(NV) for that integral is not proved. The nonlinear second-jet recurrence (B-9) still
 needs a convergent covariance-weighted kernel or the specified Wick
 contractions to establish K_comp. The periodic prescription must also
 be compared with NT2-C's actual contractible regulator and fixed chart,
@@ -1231,7 +1327,8 @@ cutoff/volume convergence estimate.
   uniform flat variances and the stated higher lift moments; the proposed
   C2 supplier additionally requires ADM2 and GOOD2. None is a proof that
   the Wilson trajectory meets its hypotheses.
-- **Open:** the strict Wilson inequality NT1-NF; CT2/C-2 or the C2
+- **Open:** [the first item is reduced by Text 8.11; the control list is
+  Text 8.12] the strict Wilson inequality NT1-NF; CT2/C-2 or the C2
   realization; JET8 and completed-norm G0/closure; the o(gamma^4) pullback
   and first-order cubic errors; the actual-scheme tree comparison REG-T,
   nonlinear second-jet control and nonzero integral NV. NT1 for the actual
@@ -1252,3 +1349,152 @@ continuation is in `../checks/witness-codex/continuation-verification.json`.
 Only this part, three new library notes and that permitted check directory
 were written. No GOAL edit, commit, push, PR, audit, axiom/ledger edit,
 external post or subagent. Work stops at the specified independent gaps.
+
+#### 8.10 What rejects which law [queue item 8f, after `gates/nt2-gate-2285befef.md`]
+
+Each row names the clause that does the rejecting and its scope. Proofs:
+[`nt2-coherence-and-positive-norm.md`](../library/nt2-coherence-and-positive-norm.md),
+[`witness-running-tests.md`](../library/witness-running-tests.md),
+[`nt2-chart-free-vertex.md`](../library/nt2-chart-free-vertex.md).
+
+| Law | Rejected by | Status and scope |
+|---|---|---|
+| Static random constant field (net gate D1) | NT1 | **discharged**: H=0, and every reading of NT1-NF fails on it |
+| Product law of Proposition 10.4 | (NT2-M), separated energies | **discharged**: separated connected energies vanish against (3/2)P^2 |
+| Flux class F, W_i=exp(i b_i) | (NT2-M), T | T vanishes exactly. Rejected wherever K_T!=0 on a template: **discharged** at n=1, K_T=0.6157; **gap** at a blocked scale |
+| L2, fixed disorder amplitude | (NT2-M), second energy moment | **discharged**: factor 1+delta^2 after anchoring |
+| L2 with delta_m->0; L1 read coherently; any Maxwell, Proca or positive-norm scalar multiplier, Gaussian or a one-link local map of such, and mixtures | (NT2-R) | **discharged** for the field: flux variance cannot fall as r falls (Lemma RM for O(4); Lemma RM' for a scalar multiplier with hypercubic invariance and RP on closed currents). **implication** for the holonomy: Corollary RM. No use of T. Not covered: tensor multipliers |
+| L1, fixed kappa at the template scale at every m | (NT2-M), energy moments | **discharged**, and not a coherent family (Lemma X), so this row is about a family and not a law |
+| Gaussian potential, amplitude prescribed to run | T, through (NT2-V) | At n=1, colour-isotropic: Corollary 3.18 up to link variance c_1 g^(4/3) **discharged**. At level j: translation-invariant covariance by Theorems 3.10, 5.5 **implication**; general colour-isotropic c **gap**; colour-mixing with no symmetry **gap**. A fixed indefinite profile also fails singlet RP as the amplitude goes to 0 (Lemma R4, **discharged**) |
+| L3, independent draws at each scale | One joint state | **discharged**: no coherent state, so not a candidate |
+| Top-down mu^TD, gamma_m^(-2)=c+b m log L | Nothing that matches moments. b!=b_W fails (NT2-R) only through the chosen number | **implication** given its unverified one-step package. RP on its links fails in the O(4) reading. Abelian analogue: RP on flux fails at every tested non-constant amplitude (W5). SU(2) on gauge-invariant functions: **open**. The leading singlet test cannot decide it at the running profile: the negative part of the kernel is of relative order g^2, so the test is of order g^6, the order of the next terms |
+| L3 bottom-up: fine Gaussian with slowly varying multiplier and the map of Text 8.2 | Not claimed | Power counting suggests noise of relative size h^2 (r/a)^2 at scale r, with no Ward identity to remove it **[unchecked]** |
+| Dilation mixture of a solution | Clustering, which is not a clause of NT2 | **implication**: passes all of NT2, RP included, with a plateau (a-a')^2/4 |
+
+**What this answers.** GOAL asks whether the running clause excludes the laws of
+the old gate. It does, for L1, L2 and every positive-norm law in the scope above,
+and it uses no T. It does not exclude a law that prescribes its running, and no
+clause that only matches moments can. T excludes Gaussian potentials, at the
+scales and for the classes in the table. RP and locality are what is left against
+mu^TD, and clustering is what is left against the mixture. T1 supplies RP by
+construction. So NT2 on the state of T1 is a necessary ultraviolet test with
+strong rejections, and it is not an identification on its own, because of the last
+three rows. The word "identification" in GOAL can only rest on the Wilson origin of
+the state. Translation invariance adds little: mu^TD is invariant only on its block
+grid, averaging over grid offsets restores invariance, and at Gaussian level the
+misaligned blocks have the same leading moments, since a blocked flux sees modes
+of bounded level distance **[unchecked]**.
+
+#### 8.11 NT1 from one flat fibre [implication; replaces the stop of Text 8.6]
+
+Proofs: [`nt2-flat-fibre-criterion.md`](../library/nt2-flat-fibre-criterion.md).
+Criteria were written first: `../checks/witness/CRITERIA.md`.
+
+**The observation.** (GS_j)(a) with (LE_j) compares the fibre over any regular W
+with the fibre over W=1, with constants free of L up to powers of log L. So the
+level-j law on a fixed window is close to one law, E_1. The near and the far
+correlator can both be read there, with no DEC, no tower split and no
+Cauchy-Schwarz.
+
+**Theorem F [implication].** Let D lie in Q_n(c), c in B(c'), n<=n_L. Assume
+(GS_j)(a), the second inequality of (LE_j), (OS_j)(c'), (FF_(j+1)) with the
+reflection grid of Lemma 10.6, and x_j<=(5/4)x_(j+1). With
+theta_L=C_n C_s^2 L^(-2 kappa_lift), and eps_j as in (F-0) of the note, which is
+theta_L times absolute constants plus terms tending to 0 with g_j at fixed L, every
+gauge-invariant e on D with |e|<=1 has
+
+    |E_nu e-E_1 e| <= eps_j,
+
+and |A|,|B|<=b gives
+
+    |Cov_nu(A,B)-Cov_1(A,B)| <= 3 b^2 eps_j.                        (F-2)
+
+The proof is a split on the event that W is regular on Q'_R(c'). The first term is
+TV, which needs no moments because e is bounded. The second is (GS_j)(a) at
+W^pi with (LE_j). The trivial bound 2 covers t>1. Second moments give the
+oscillation v of (NF-1), of second order in theta_L, so (NF-6) needs no chart.
+
+**The one value that remains.**
+
+    (FT): Cov_1(X_p,X_q) -> (3/2)(P^fib_pq)^2 as g_j->0 at fixed L.
+
+(FT) follows from (OS_j)(b), (c) and (GS_j)(c) at the single field W=1 [proved in
+the note]. No clause of the regular package evaluates anything at W=1, and a
+comparison cannot create a non-zero value, so some statement of this kind is
+needed. It is a Laplace expansion of one product of two plaquette energies on one
+fibre.
+
+**Corollary NT1-F [implication].** Take the supports of level-j plaquette
+observables within w cells, w free of L, and two pairs q_n, q_f=q_n+t e_4 strictly
+ordered on all axes. Assume H-NET, the fixed-scale part of H-SCALE, the clauses of
+Theorem F, (FT), and a_L>=a_0>0 for large L, where
+a_L=(3/2)|(P^fib_(p q_n))^2-(P^fib_(p q_f))^2|. Choose the clip level b, then L,
+then X large. Then the connected correlators of min(X_p,b) at the two pairs differ
+by at least a_0/4 at fixed level distance from the top, for all large i, and
+Theorem 4.1 gives H!=0 on Omega-perp. (NF-3) holds in the same order. L must satisfy
+L^(2 kappa_lift) >= C b^2 C_n^2 C_s^2 Mbar_1 / a_0. This uses the form of (LE_j) as
+printed, with C_n free of L up to powers of log L, and C_s free of L, still an
+unchecked item of the Obligations. Given those, it answers the worry in
+`witness-two-separation.md` about C(L).
+
+**Free input, discharged for the map (B-1).** Lemma FB: blocked plaquette flux is
+the average of F_ab against a positive unit-mass density, and P_infinity(z) is the
+Maxwell tensor averaged against B-splines. Enclosures, W2:
+P_infinity(3,3,2,2) in [-6.011e-5,-5.092e-5] and P_infinity(3,3,2,4) in
+[3.76e-6,6.11e-6], so P_n^2>=69 P_f^2, a better pair than Corollary 4.2's by a wide
+margin, and a>=3.8e-9 at P^fib=P_infinity. Fibre split, W3:
+
+| L | delta_pp | P^fib near | P^fib far | a_L |
+|---|---|---|---|---|
+| 3 | 9.34e-3 | -2.03e-4 | 1.54e-5 | 6.2e-8 |
+| 5 | 9.34e-4 | 3.58e-5 | 2.51e-5 | 1.0e-9 |
+| 7 | 1.32e-4 | -5.26e-5 | 4.05e-6 | 4.1e-9 |
+| 9 | 3.45e-5 | -6.00e-5 | 5.1e-7 | 5.4e-9 |
+| 15 | 2.91e-6 | -5.69e-5 | 3.48e-6 | 4.8e-9 |
+| 21 | 6.54e-7 | -5.58e-5 | 4.47e-6 | 4.6e-9 |
+
+These are computed values, not bounds, with the pair placed around a block centre.
+L^4 delta_pp tends to about 0.108 at a block centre and is near 3.2 and still rising
+slowly at a block corner, so kappa=2 in this Gaussian theory, at most up to a
+logarithm there. Other maps need their own first jet; the offsets scale with w.
+
+**What was tried against this.** A block-edge blow-up of the lift (W3): none beyond
+that slow rise. A vanishing near P^fib: at L=5 the pair crosses a block boundary and
+delta is as large as P_infinity, with a sign change of P^fib, and a_L stays positive.
+A static law: it fails the clauses, and it cannot satisfy (FT) with a_L>0. The size
+of L is the honest cost: with a_0 about 4e-9, L^(2 kappa_lift) must exceed about
+10^12 times C_n^2 C_s^2 Mbar_1. The chart route of Theorem 10.7 needs about 10^4 C, and it
+reads (OS_j)(a) to (d) at every W^pi.
+
+**Scope.** This proves no fact about Wilson. Its clauses are producer gaps. It removes
+DEC, (SCR_j), the Gaussian limit at W!=1, COV8, JET8, H-LIFT and every vertex from what
+NT1 needs, and it names (FT) as a separate request.
+
+#### 8.12 Checkpoint of item 8f — proved, conditional, open
+
+- **Discharged:** Proposition V0; Lemma R4; Lemma RM'; Lemma FB and the enclosures of
+  W2 at the printed offsets. Same-model author work.
+- **Implications:** Theorem F; (FT) from (OS_j)(b), (c) and (GS_j)(c) at W=1;
+  Corollary NT1-F. The gate's Proposition TD and Corollary RM stand as implications.
+  None of their hypotheses is delivered.
+- **Revised requirement, proposed and not in GOAL.md:** NT2 stated on the RP state
+  of T1, M admissible, (NT2-V) in place of the K_vert clause.
+- **Open:** (NT2-V) at a blocked scale, with the blocked K_T and the second jet of M;
+  RP of mu^TD on gauge-invariant functions; tensor multipliers in Lemma RM'; the
+  bottom-up L3; (FT) and the clauses of Theorem F for either map; w free of L;
+  (COV8)/(G0), JET8, first-order cubic matching and the flow for NT2 itself. NT1 for
+  the actual trajectory, NT2 and T1 remain unproved.
+
+**Reading and checks.** Read: `FINISH.md`, `GOAL.md`, the gate, Text 0, 2.1-2.4, 4, the
+statements of 3.8, 3.10, 3.16-3.18, Text 8; `witness-running-tests.md`,
+`witness-two-separation.md`, `witness-moment-gap.md`, `witness-interface-moments.md`,
+`witness-blocked-tree-limit.md`, `nt2-coherence-and-positive-norm.md`; in
+`parts/upper-chain.md`, The interface, Theorems 10.2, 10.7, (FF_j), Lemma 10.6, (OS_j),
+the notation and clauses of Text 14, Lemma 14.14, Lemma 14.11, Proposition 20.4. Neither
+hard-core attempt was opened, so no proof is carried between them. Not rechecked:
+the proofs of Theorems 3.16, 3.17; the gate's numerics. Results, one missed
+criterion and one refined grid are in `../checks/witness/RESULTS.md`. Seven scripts
+ran under the lock, one at a time, BLAS threads 1, memory free 68 to 69 percent.
+
+Only this part, two new library notes and `../checks/witness/` were written. No commit,
+push, PR, audit, GOAL edit, axiom or ledger edit, external post or subagent.

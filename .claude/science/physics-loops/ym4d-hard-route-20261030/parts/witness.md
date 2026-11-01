@@ -1,7 +1,25 @@
-lead: openai/gpt-6-astra/max macbook-codex
-lease_until: 2026-11-02T08:00Z
+lead: openai/gpt-6-astra/max mac-mini-codex
+lease_until: 2026-11-02T12:00Z
 
-## State of attack — queue item 11, 2026-11-01
+## State of attack — continuation at 5f5f1693a, 2026-11-01
+
+Author work, not an independent review or audit. Source:
+`5f5f1693a60cfcb7aff5ccd1534f626294a37188`. This continuation reads the
+neutral interface at the pinned checkout; no proof is carried between
+hard-core attempts. The previous checkpoints and tried routes remain below.
+
+**Finished with named gaps; Texts 8.6--8.9 control this continuation.**
+The near--far criterion NT1-NF needs less information than a Gaussian law,
+but its strict Wilson inequality remains open. Fixed-window pullback
+moments and zeroth-order TV-P follow conditionally from named interface
+clauses. COV8 reduces to a weighted matrix difference, or off-diagonal
+traces with the explicit C2 chart/law bridges; completed-class G0 remains
+open. For the selected flat linear blocking, Gaussian and bare-vertex
+coefficients have explicit joint limits in a periodic Feynman prescription.
+The actual contractible scheme, nonlinear second jet and a certified
+nonzero limiting corner vertex still need proof. No numerical job was run.
+
+## Previous state of attack — queue item 11, 2026-11-01
 
 Source: `45b3989670a64c7d0ce7b293a56ed6beb37dee14`. Author work by
 openai/gpt-6-astra/max, not an independent review or audit. GOAL.md's NT1
@@ -1115,3 +1133,122 @@ Only this part and new files in its permitted library/check directory were
 written. No prompt file, GOAL.md, axiom, ledger, or other source was edited;
 no commit, push, PR, audit, external post or subagent was made. Work stops
 at the named source-to-consumer gap.
+
+#### 8.6 Continuation step 1 — the smaller NT1 input
+
+**Discharged / implication.** The static-law attack and a near--far theorem
+are proved in [witness-two-separation.md](../library/witness-two-separation.md).
+In the actual hierarchy law nu=nu'P_j, write n for one near conditional
+covariance, v_n,v_f for the Cauchy--Schwarz bounds on the covariances of
+coarse conditional means, and d for the existing DEC bound at one farther
+ordered separation. Then
+
+    liminf_i (n_i-v_(n,i)-v_(f,i)-d_i)>0                    (NT1-NF)
+
+implies two unequal correlators and hence NT1 under H-NET and the fixed-scale
+part of H-SCALE. The full LL and nonwrapping DEC geometry are specified in
+the library. No Gaussian limit, invariant sixth moment or transfer-norm
+closure is required by this implication. A possible supplier uses just the
+quartic two-energy formula (NF-5) and conditional-mean bounds (NF-6).
+
+**Gap / honest stop for NT1.** The actual Wilson hierarchy has not been shown
+to satisfy NT1-NF. The residual is the strict numerical inequality a>2v+d,
+with a a separated conditional lower bound. DEC alone leaves the coarse
+covariance untouched. RP monotonicity is non-strict; making it strict is
+already the spectral content being sought. A static Z at every point fails
+NT1-NF even if the coarse variable reveals only part of Z. Chessboard moment
+bounds do not provide that missing strictness. This reduces the requested
+information, but does not certify NT1 on the trajectory.
+
+#### 8.7 Continuation step 2 — COV8, G0 and the source of moments
+
+**Implication, proof discharged under the named clauses.**
+[witness-interface-moments.md](../library/witness-interface-moments.md)
+derives finite-window replacement-law moments from FF at the two levels,
+the Lemma 10.6 grid/LOC hypotheses, FLOW, LE and GS(c) at every required
+n,s, using the actual plaquette-preserving pullback with R<T_tor/4.
+Together with OS(c') these prove zeroth-order TV-P on a fixed template by
+truncation. This narrows the earlier H-MOM/TV-P gap; none of those producer
+clauses is certified for Wilson. For T the resulting error is only
+C gamma^3 omega(gamma)^(1-1/p), still short of o(gamma^4) without a rate.
+
+**Discharged covariance identities / conditional repair.** Gaussian
+interpolation reduces COV8 to the exact weighted matrix-difference
+inequality (C-2) in that note. The weight has degree six. Its moments
+come from FF+OS(a), Gaussian diagonal bounds and, for the replacement
+law, GS(c)+LE; covariance traces/norms do not determine their values.
+The identity ||B-cI||_HS^2=||B||_HS^2+3c^2-2c Tr B shows a possible
+smaller repair: OS(d) plus the off-diagonal trace clause CT2. C2 could
+give CT2 if the actual framed quadratic test ADM2 has its required
+uniform C4 norm and the good-to-chart law transfer GOOD2 holds.
+
+**Gap / first dependent stop.** Those ADM2/GOOD2 bridges are not supplied
+by the displayed interface. COV8 therefore still requires CT2/C-2 or a
+proof of that C2 realization. G0 also needs the framed polynomial/lift
+linearization JET8 and estimates on the completed norm class; the
+contraction of repaired 4.3 remains separate. No claim of logical
+independence from *every* strengthened interface clause is made. The
+old OS(d)-only inference is false, and the actual source-to-consumer
+proof has these named missing steps. The independent H-TREE task follows.
+
+#### 8.8 Continuation step 3 — required blocking and the tree stop
+
+**Discharged for an explicit free prescription / implication for the
+selected linearization.**
+[witness-blocked-tree-limit.md](../library/witness-blocked-tree-limit.md)
+uses the independent attempt's stated final flat linearization, with no
+proof or map transferred to the other attempt. Its iterates are the
+length-n triangular-tube average with n=L^j. In the periodic zero-mode
+Feynman prescription, a Fourier domination argument proves joint
+cutoff/volume limits for all the Gaussian coefficients of NT2-C and the
+bare Wilson vertex, with uniform finite-template Gaussian moments. The
+energy anchor is positive. The vertex limit is the explicit, absolutely
+convergent integral (B-8), with the three corner currents printed there.
+No numerical job was needed for these statements.
+
+**Gap / independent honest stop.** Nonzero vertex condition (NV) for that
+integral is not proved. The nonlinear second-jet recurrence (B-9) still
+needs a convergent covariance-weighted kernel or the specified Wick
+contractions to establish K_comp. The periodic prescription must also
+be compared with NT2-C's actual contractible regulator and fixed chart,
+for example by REG-T. Thus H-TREE is not discharged. Neither the
+unblocked total 0.6157 nor the unblocked vertex 0.2188 proves the blocked
+limit or its nonzero value. Finite-depth tree consistency is not a
+cutoff/volume convergence estimate.
+
+#### 8.9 Continuation checkpoint — proved, conditional, open
+
+- **Discharged mathematics:** the static-law obstruction to strictness
+  from RP/chessboard alone; total covariance and the near--far comparison;
+  the quartic Gaussian pair formula; the averaged-TV truncation inequality;
+  Gaussian covariance interpolation with its explicit sixth-moment weight;
+  the trace/norm alignment identity; the Fourier and vertex limits for the
+  explicit linear block map and periodic Feynman prescription in 8.8.
+- **Implications:** NT1 under H-NET, fixed-scale H-SCALE, the actual-law
+  DEC instance and NT1-NF. Fixed-window replacement moments and zeroth-order
+  TV-P under FF at both levels, LOC/grid conditions, FLOW, LE, full GS(c),
+  the specified pullback and OS(c'). Finite-window COV8 under OS(d), CT2,
+  uniform flat variances and the stated higher lift moments; the proposed
+  C2 supplier additionally requires ADM2 and GOOD2. None is a proof that
+  the Wilson trajectory meets its hypotheses.
+- **Open:** the strict Wilson inequality NT1-NF; CT2/C-2 or the C2
+  realization; JET8 and completed-norm G0/closure; the o(gamma^4) pullback
+  and first-order cubic errors; the actual-scheme tree comparison REG-T,
+  nonlinear second-jet control and nonzero integral NV. NT1 for the actual
+  trajectory, NT2 and T1 remain unproved. No downstream NT2 proof was
+  continued across those gaps.
+
+**Reading and checks.** GOAL/FINISH, witness Text 8.1/8.4/8.5 and the cited
+moment-gap library, the neutral upper interface, and the needed bounded
+ranges of upper 10/14 and witness 2/4/5 were read. For the tree probe only
+the independent map's definition and flat-linearization statements in
+1.2/4.5a/5.1/5.4 were used; no mapped proof was read or imported. No
+history-budget gate was read. No paper lemma or new external source was
+used. Old numerical outputs were read as historical records, never rerun
+or used as certified bounds. The author checked the displayed arguments
+and file scope; this is not independent verification. Bookkeeping for this
+continuation is in `../checks/witness-codex/continuation-verification.json`.
+
+Only this part, three new library notes and that permitted check directory
+were written. No GOAL edit, commit, push, PR, audit, axiom/ledger edit,
+external post or subagent. Work stops at the specified independent gaps.

@@ -109,3 +109,7 @@ L=7 R2 sheet      seed 1 start Ratio_C 0.729 best Ratio_C 1.0000 Ratio_A 1.0000 
 L=7 R2 sheet_th   seed 1 start Ratio_C 0.564 best Ratio_C 0.9833 Ratio_A 0.9791 w1 0.968 rhs_c 0.9846 min|m| 1.000 nrough 49 evals 578 71.4s
 L=7 R2 sheet_int  seed 1 start Ratio_C 0.008 best Ratio_C 0.3468 Ratio_A 0.3459 w1 1.159 rhs_c 3.3430 min|m| 0.092 nrough 219 evals 273 31.5s
 L=7 R2 halfcut    seed 1 start Ratio_C 0.515 best Ratio_C 0.6364 Ratio_A 0.6364 w1 2.000 rhs_c 3.1429 min|m| 0.143 nrough 77 evals 161 19.6s
+L=7 R2 halfcut2   seed 1 start Ratio_C 0.208 best Ratio_C 0.9993 Ratio_A 0.9970 w1 1.738 rhs_c 1.7388 min|m| 1.000 nrough 49 evals 609 73.6s
+L=7 R2 tri        seed 1 start Ratio_C 0.302 best Ratio_C 0.9917 Ratio_A 0.9864 w1 1.270 rhs_c 1.2805 min|m| 1.000 nrough 49 evals 607 74.9s
+L=7 R2 patch      seed 1 start Ratio_C 0.001 best Ratio_C 0.7968 Ratio_A 0.6200 w1 0.452 rhs_c 0.5668 min|m| 0.999 nrough 49 evals 612 75.8s
+L=7 R2 star       seed 1 start Ratio_C 0.000 best Ratio_C 1.0000 Ratio_A 0.9999 w1 2.000 rhs_c 2.0000 min|m| 1.000 nrough 49 evals 549 68.0s

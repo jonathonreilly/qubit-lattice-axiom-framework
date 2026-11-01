@@ -65,13 +65,14 @@ def inv_laplace(J, N):
         h = np.fft.rfftn(J[mu])
         h /= lam
         h[0, 0, 0, 0] = 0.0
-        E[mu] = np.fft.irfftn(h, s=(N, N, N, N))
+        E[mu] = np.fft.irfftn(h, s=(N, N, N, N), axes=(0, 1, 2, 3))
     return E
 
 
 def kvert(Es):
-    """Sum over all plaquettes of V_p with links b1=(x,m), b2=(x+m,n), b3=(x+n,m) rev, b4=(x,n) rev."""
+    """Sum over all plaquettes of V_p, b1=(x,m), b2=(x+m,n), b3=(x+n,m) reversed, b4=(x,n) reversed."""
     tot = 0.0
+    signs = [1, 1, -1, -1]
     for m in range(4):
         for nn in range(m + 1, 4):
             e = []
@@ -79,46 +80,49 @@ def kvert(Es):
             for E in Es:
                 em = E[m]
                 en = E[nn]
-                b1 = em
                 b2 = np.roll(en, -1, axis=m)
                 b3 = np.roll(em, -1, axis=nn)
-                b4 = en
-                P = b1 + b2 - b3 - b4
-                # signed edge values eps_s E(b_s)
-                e.append([b1, b2, -b3, -b4])
-                pm.append(P)
-            del P
+                pm.append(em + b2 - b3 - en)
+                e.append([em, b2, b3, en])
             for s in range(4):
                 for t in range(s + 1, 4):
-                    # det of 3x3 with rows i, columns (P_i, E_i(s), E_i(t)), signs included
-                    a = [pm[i] for i in range(3)]
+                    sg = signs[s] * signs[t]
                     b = [e[i][s] for i in range(3)]
                     c = [e[i][t] for i in range(3)]
-                    det = (a[0] * (b[1] * c[2] - b[2] * c[1])
-                           - a[1] * (b[0] * c[2] - b[2] * c[0])
-                           + a[2] * (b[0] * c[1] - b[1] * c[0]))
-                    tot += det.sum()
+                    v0 = float(np.vdot(pm[0], b[1] * c[2] - b[2] * c[1]))
+                    v1 = float(np.vdot(pm[1], b[0] * c[2] - b[2] * c[0]))
+                    v2 = float(np.vdot(pm[2], b[0] * c[1] - b[1] * c[0]))
+                    tot += sg * (v0 - v1 + v2)
+            del e, pm
             check_rss()
     return 12 * tot
 
 
 def run(n, S):
     N = n * S
-    Js = [fine_current(N, n, corner(0, 1)), fine_current(N, n, corner(1, 2)), fine_current(N, n, corner(2, 0))]
-    Es = [inv_laplace(J, N) for J in Js]
-    P11 = float(np.sum(Js[0] * Es[0]))
-    P12 = float(np.sum(Js[0] * Es[1]))
-    kv = kvert(Es)
+    Es = []
+    P11 = P12 = None
+    J0 = None
+    for k, (mu, nu) in enumerate([(0, 1), (1, 2), (2, 0)]):
+        J = fine_current(N, n, corner(mu, nu))
+        E = inv_laplace(J, N)
+        Es.append(E)
+        if k == 0:
+            P11 = float(np.vdot(J, E))
+            J0 = J
+        if k == 1:
+            P12 = float(np.vdot(J0, E))
+            J0 = None
+        del J
+        check_rss()
+    kv = float(kvert(Es))
     rss = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1e9
     return {"n": n, "S": S, "N": N, "P11": P11, "P12": P12, "K_vert": kv, "rss_gb": round(rss, 3)}
 
 
 if __name__ == "__main__":
-    out = []
-    plan = [(1, 8), (1, 16), (1, 24), (3, 8), (3, 12), (3, 16), (5, 8), (5, 10), (5, 12)]
-    for n, S in plan:
-        r = run(n, S)
-        print(r, flush=True)
-        out.append(r)
-        with open(__file__.replace("nt2_blocked.py", "nt2_blocked.json"), "w") as f:
-            json.dump(out, f, indent=1)
+    n, S = int(sys.argv[1]), int(sys.argv[2])
+    r = run(n, S)
+    print(json.dumps(r), flush=True)
+    with open(__file__.replace("nt2_blocked.py", "nt2_blocked.jsonl"), "a") as f:
+        f.write(json.dumps(r) + "\n")

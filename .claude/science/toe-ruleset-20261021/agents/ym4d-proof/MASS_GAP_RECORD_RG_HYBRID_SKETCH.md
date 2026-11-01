@@ -1,7 +1,8 @@
 # A Record + RP + RG hybrid route to a Yang–Mills mass gap: a conditional theorem and an honest audit
 
 **Status:** author-side working sketch; no independent audit verdict. Companion to [MASS_GAP_CROSSOVER_REDUCTION.md](MASS_GAP_CROSSOVER_REDUCTION.md), which is the self-contained statement. Closes no MG row.
-**Date:** 2026-10-31 (EDT); header and §5, §7, §8 updated 2026-11-01.
+**Date:** 2026-10-31 (EDT); header and §5, §7, §8 updated 2026-11-01; editorial relabelling 2026-11-01.
+**Statement form.** This file is narrative background. Every mathematical statement in it is restated, with definitions, quantifiers and a status label (proved here / cited / open / conjecture / remark), in [MASS_GAP_CROSSOVER_REDUCTION.md](MASS_GAP_CROSSOVER_REDUCTION.md) §§1–5 and its dependency table §9; where the two differ, the reduction note governs. Labels used here: **[cited]**, **[repo, unaudited]**, **[open]**, **[outline]**, **Conjecture**, **Remark/Heuristic**. No statement here depends on a computation.
 **Repo snapshot used:** `jonathonreilly/qubit-lattice-axiom-framework`, `main` at `d9b869b97` (2026-10-09 08:19 EDT). Every repo note cited below has `audit_status: unaudited` in `docs/audit/data/ledger/**` at this snapshot.
 **PRs read (read-only, pinned heads):**
 - #10114 `claude/ym4d-proof-draft` @ `f76f6c64`.
@@ -11,13 +12,13 @@
 **Bottom line, up front.** This is **not** a proof of the mass gap. It is a conditional theorem (Theorem H) that reduces a volume-uniform, cutoff-uniform physical gap to the proved facts listed below plus one irreducible estimate: the *crossover-window clustering estimate* (CW). Three points matter most:
 
 1. The Record axiom, as written in the repo, implies **no** correlation decay.
-2. Two simple no-go arguments (§0.6) show that no group-agnostic, dimension-agnostic "Record clustering" axiom *can* supply (CW) without proving false theorems.
+2. Two scope tests (§0.6): a "Record clustering" input that used neither the non-abelian group nor d = 4 would also give a gap for compact U(1) in d = 4, which has a proved massless phase; so any such input must use group- or dimension-specific structure. This is a test, not a global no-go or route-exhaustion claim (registry rule).
 3. The fixed-spacing part (A) at strong coupling is already proved, without Record: in the literature, and as a volume-uniform Doob-contraction gap for β ≤ 1/32 in #10114.
 
 The new content consists of:
 
 - the precise reduction, with the crossover named as the single open estimate;
-- two obstructions that rule out the naive "Record ⇒ clustering" step;
+- two scope tests on the naive "Record ⇒ clustering" step (Observation P, proved; the U(1) scope test, cited; the d ≥ 5 check is Heuristic);
 - the observation that the effective RG actions do not need RP;
 - an exact mapping onto #10114's MG0–MG5 contract.
 
@@ -48,9 +49,11 @@ The new content consists of:
 | **H5 (UV stability, finite volume)** | Balaban block-spin RG with scale factor L_b: for g_0 small, the effective actions S_k on the spacing-L_b^k·a lattice exist in a fixed finite physical torus. They take the form (1/g_k²)·(Wilson-like) + polymer remainder, with small-field analyticity, large-field suppression and running g_k following asymptotic freedom, **as long as g_k ≤ ḡ** (ḡ small) | **Proved, literature, in finite volume, for partition-function/effective-action bounds:** Balaban, CMP 95–122 (1984–89), as listed in #10132; Dimock's expositions. **Not proved:** infinite volume, gauge-invariant correlation functions in general, mass gap (§3). |
 | **H6 (flow reaches ḡ)** | For g_0 → 0 there is k_1(a) with g_{k_1} ≈ ḡ and L_b^{k_1}·a → ℓ_1 = c_1/Λ_L (lattice Λ-parameter) | Plausible; follows from H5 plus asymptotic-freedom bookkeeping in the controlled region. Not written in the repo or the PRs. |
 | **CW (crossover-window clustering)** | There exist ḡ ≤ g_*, a fixed number n_* of further RG steps (or a direct estimate), and μ_* > 0 such that the effective measure at scale ℓ_* = L_b^{n_*} ℓ_1 has truncated gauge-invariant correlations decaying as e^{−μ_* d/ℓ_*}. This must hold uniformly in the volume and in a, and transport back to the *original* observables (with sources) without losing the rate | **OPEN. Irreducible.** This is the gap at intermediate coupling. Balaban control stops at ḡ, the cluster expansion starts only at β ≤ β_sc (g² ≳ 2N/β_sc, e.g. g² ≳ 128 for N=2 at β_sc = 1/32), and no theorem covers the window. |
-| **H-Rec** | Any "Record clustering" input | **New conjecture.** The axiom text supplies nothing (§0.5). If H-Rec is stated strongly enough to give CW, it is CW. |
+| **H-Rec** | Any "Record clustering" input | **Conjecture (not adopted; not used).** The axiom text supplies nothing (§0.5). If H-Rec is stated strongly enough to give CW, it is CW. |
 
 ### 0.3 Theorem H (conditional)
+
+*Status: conditional on H1–H6 and CW (and MG2 via Step B4); proof outline in §0.4; restated precisely in MASS_GAP_CROSSOVER_REDUCTION §4.*
 
 > **Theorem H.** Assume H1–H6 and CW for SU(N), N ≥ 2, in d = 4. Let g_0(a) → 0 along the asymptotic-freedom trajectory (fixed Λ_L). Then for every a small enough and every volume, the RP-reconstructed lattice Hamiltonian H_a = −a^{−1} log(T/‖T‖) satisfies
 >
@@ -60,7 +63,9 @@ The new content consists of:
 >
 > **Without CW** the theorem is empty for a → 0. With β ≤ β_sc fixed, the proved part (H1–H4) gives only the fixed-spacing statement spec(H_a) ⊂ {0}∪[−a^{−1}log(cβ),∞). That is Osterwalder–Seiler-level and is already in #10114 for SU(2).
 
-### 0.4 Step list (proof of Theorem H from its hypotheses)
+### 0.4 Step list (proof outline of Theorem H from its hypotheses)
+
+Statuses: A1 [outline; cited Lüscher 1977]; A2 [proved; = #10114 MASS_GAP_TARGET §2]; A3 [outline]; A4 = H4 [cited]; B0 Definition; B1 = H5 [cited, finite volume]; B2 = H6 [open]; B3 = CW [open]; B4 = MG2 [open]; B5 [follows from A2, B2–B4].
 
 **Step A1 (RP ⇒ positive compact transfer matrix; repo facts suffice at fixed Λ).**
 
@@ -98,7 +103,7 @@ The new content consists of:
 - (iii) **coupling flow:** g_{k+1}^{−2} = g_k^{−2} + b_0 log L_b² + O(g_k²).
 - (iv) **"Record-derived" decay in block units, as asked:** |⟨A;B⟩_k| ≤ C e^{−μ_k dist_k(A,B)}.
 
-*Adversarial note on (iv).* For g_k ≤ ḡ, (iv) does **not** hold with μ_k bounded below. In the weak-coupling region, correlations of the effective theory are those of a nearly massless gauge field at scale a_k ≪ 1/Λ, with polynomial decay up to distance ~ 1/(Λ a_k) block units. So μ_k ≈ a_k·m_phys → 0 as k decreases. Imposing (iv) uniformly at every scale would be false at small k, or equivalent to assuming the answer.
+*Heuristic (adversarial note on (iv)).* For g_k ≤ ḡ, (iv) does **not** hold with μ_k bounded below. In the weak-coupling region, correlations of the effective theory are those of a nearly massless gauge field at scale a_k ≪ 1/Λ, with polynomial decay up to distance ~ 1/(Λ a_k) block units. So μ_k ≈ a_k·m_phys → 0 as k decreases. Imposing (iv) uniformly at every scale would be false at small k, or equivalent to assuming the answer.
 
 The correct inductive hypothesis keeps only (i)–(iii) through the controlled region, and requires decay **only at the terminal scale**. Balaban's polymer decay e^{−κ|X|} is *locality of the action*, not clustering of the measure. Conflating them is the main circularity trap (§0.7, C1).
 
@@ -118,7 +123,7 @@ The correct inductive hypothesis keeps only (i)–(iii) through the controlled r
 
 - (a) Continue RG beyond ḡ until the effective theory enters a cluster-expansion regime. No small parameter controls these steps.
 - (b) Prove a Dobrushin/Doob contraction (as in #10114's local-block note) directly for the effective kernel at scale ℓ_1. This needs a quantitative bound on the effective one-block conditional laws that no one has.
-- (c) Feed in a hypothesis (H-Rec). See §0.5–0.6 for why it cannot be generic.
+- (c) Feed in a hypothesis (H-Rec). See §0.5–0.6 for the scope tests a generic input must pass.
 
 **Step B4 (transport back to original observables, #10114 MG2).**
 
@@ -142,22 +147,24 @@ Verbatim, `docs/MINIMAL_AXIOMS_2026-06-29.md`:
 - **No decay, mixing or dynamics clause.** The axiom says nothing about correlations, locality of the measure, or time evolution. The memo lists record-production dynamics, persistence dynamics, the time metric, the source/action and `g_bare = 1` as open gates outside the axioms.
   - The closest repo item, `DYNAMICS_CLAUSE_RECORD_FREQUENCIES_FOLLOW_THE_ONE_SHOT_ODDS_EXACTLY_WHEN_CORRELATIONS_CLUSTER_BOUNDED_THEOREM_NOTE_2026-09-24.md`, runs the other way. It *assumes* clustering and imports the standard theorem "unique gapped ground state ⇒ exponential clustering" for frequencies to follow the odds.
   - It also uses a *supplied* dynamics clause. It is not Record ⇒ clustering.
-- **Permanence obstructs temporal clustering of record observables (Observation P).**
+- **Permanence obstructs temporal clustering of record observables (Observation P; proved: MASS_GAP_CROSSOVER_REDUCTION Lemma 5.5).**
   - If R is a record readout at a site, permanence means R is invariant under the later evolution: τ_n R = R. Then ⟨R; τ_n R⟩ = Var(R) for all n.
   - Equivalently, [R] lies in the commutant of T̂. Either R is a.s. constant on the physical space, or ker H ⊋ span{Ω}.
   - So record readouts must be **superselection labels** (central, conditioned on) and *cannot* be the dense family in A2.
   - Any "clustering of permanent records" can therefore only mean *spatial* clustering of the record configuration, or clustering of non-record gauge observables *conditioned on* a record configuration.
   - Converting spatial clustering into temporal clustering needs the supplied space–time hypercubic symmetry, which the Lattice axiom (spatial Z^3) does not provide.
-- **Structural parallel, not an estimate.** "Locks exactly one admissible local possibility" parallels a *hard constraint* on a block variable (δ-function blocking, the approach #10132 takes). "Permanent" parallels the RG convention that coarse variables, once fixed, are conditioned on while fine ones are integrated out. This motivates reading records as RG block variables, but it supplies none of the bounds in IH(k).
+- **Remark (structural parallel, not an estimate).** "Locks exactly one admissible local possibility" parallels a *hard constraint* on a block variable (δ-function blocking, the approach #10132 takes). "Permanent" parallels the RG convention that coarse variables, once fixed, are conditioned on while fine ones are integrated out. This motivates reading records as RG block variables, but it supplies none of the bounds in IH(k).
 
-### 0.6 Two no-go checks on any "Record ⇒ CW" axiom
+### 0.6 Two scope tests on any "Record ⇒ CW" input (tests, not no-go theorems)
+
+These are scope tests a candidate input must pass. They are not global no-go or route-exhaustion claims (APPROACH_REGISTRY policy).
 
 1. **Gauge-group agnosticism.**
    - Record (and the other three axioms) never mentions the gauge group. A mechanism deriving CW from Record without using non-abelian structure would apply equally to compact U(1) Wilson theory in d = 4.
-   - That theory has a proved massless (non-confining) weak-coupling phase: Guth, Phys. Rev. D 21 (1980) 2291; Fröhlich–Spencer, CMP 83 (1982) 411. The conclusion would be false.
+   - That theory has a proved massless (non-confining) weak-coupling phase: Guth, Phys. Rev. D 21 (1980) 2291; Fröhlich–Spencer, CMP 83 (1982) 411. Such a mechanism would therefore prove a false statement for U(1); the test is that a correct mechanism must use structure U(1) lacks.
    - Repo support: `docs/THE_PURE_SPIN_HALF_LINK_MODEL_ON_THE_CUBIC_TORUS_IS_GAPLESS_DECONFINED_AND_UNORDERED_AT_L_12_…_BOUNDED_NOTE_2026-09-04.md` reports, by its title, a framework-native spin-½ link model that is gapless and deconfined at L = 12. That is finite-size evidence, not a theorem, and I read the title only.
-   - **So H-Rec must use non-abelian, asymptotically free input. It cannot be a consequence of Record alone.**
-2. **Dimension agnosticism.** A d-independent mechanism would also give a gap for SU(N) Wilson theory at weak coupling in d ≥ 5. There, a bulk transition and a weak-coupling Coulomb-like phase are expected. Expected only: this is supported by numerics, not proved, so it is a heuristic check. The Lattice axiom fixes Z^3 spatial, so this check is weaker than the first, but it shows that CW must use d = 4 marginality.
+   - **Scope consequence:** a correct H-Rec must use input that fails for U(1) in d = 4 (e.g. non-abelian, asymptotically free structure). Record as written, which never mentions the group, does not by itself supply such input.
+2. **Dimension agnosticism (Heuristic).** A d-independent mechanism would also give a gap for SU(N) Wilson theory at weak coupling in d ≥ 5. There, a bulk transition and a weak-coupling Coulomb-like phase are expected. Expected only: this is supported by numerics, not proved, so it is a heuristic check. The Lattice axiom fixes Z^3 spatial, so this check is weaker than the first, and it only suggests that CW must use d = 4 marginality.
 
 ### 0.7 Circularity flags
 
@@ -187,13 +194,13 @@ Quoted from #10114 `.claude/science/toe-ruleset-20261021/agents/ym4d-proof/MASS_
 | MG5 scope | Theorem H is stated with hypotheses as a conditional reduction | Draft text below |
 | (fixed-spacing endpoint, already in #10114) | A1–A4 reproduce it for all N at β ≤ β_sc. A1 adds the assembly from the repo's kernel-positivity facts | Already supported in #10114 |
 
-**Net:** the hybrid discharges no open MG row unconditionally. It gives a precise reduction MG1 + MG3 ⇐ CW + B4 (+H5, H6). It also makes three negative points that #10114 does not yet state: Observation P, the abelian/d≥5 no-go on group-agnostic inputs, and the fact that effective-action RP is unnecessary.
+**Net:** the hybrid discharges no open MG row unconditionally. It gives a precise reduction MG1 + MG3 ⇐ CW + B4 (+H5, H6). It also records three points that #10114 does not yet state: Observation P (proved), the U(1) scope test on group-agnostic inputs (cited; the d≥5 version is Heuristic), and the fact that effective-action RP is unnecessary.
 
 ### 0.9 The single biggest open step
 
 **CW, the quantitative weak-to-strong crossover.** It requires a uniform-in-volume exponential clustering bound, with rate μ_* > 0 in physical units, for the effective gauge theory at the fixed physical scale ℓ_1 ~ 1/Λ where Balaban's small-coupling control ends. Equivalently, it requires a provable Dobrushin/cluster regime reached after finitely many further RG steps.
 
-This is the mass gap at intermediate coupling: absence of a bulk transition plus a finite correlation length, made quantitative. Record does not supply it (§0.5), and no group- or dimension-agnostic axiom can (§0.6).
+This is the mass gap at intermediate coupling: absence of a bulk transition plus a finite correlation length, made quantitative. Record as written does not supply it (§0.5), and a group- or dimension-agnostic input would fail the scope tests of §0.6.
 
 ---
 
@@ -216,7 +223,7 @@ This is the Wilson model of §0.1. Supplied items:
 - the 4th (time) direction;
 - link variables.
 
-A qubit-regularized alternative exists in the literature (Chandrasekharan–Siew–Bhattacharya, arXiv:2502.14175). There, a finite link Hilbert space generally changes the universality class. The repo's spin-½ link model note is an instance. A qubit-native route therefore needs its own asymptotic-freedom argument and cannot borrow Balaban.
+A qubit-regularized alternative exists in the literature (Chandrasekharan–Siew–Bhattacharya, arXiv:2502.14175). *Heuristic:* there, a finite link Hilbert space generally changes the universality class. The repo's spin-½ link model note is an instance. A qubit-native route would therefore need its own asymptotic-freedom argument rather than Balaban's (Heuristic).
 
 ### 1.3 SU(3) from GRAPH_FIRST_SU3
 
@@ -235,7 +242,7 @@ Conclusion: GRAPH_FIRST fixes *which* group to put on links. The step "internal 
 **(a) Record ⇒ exponential clustering.**
 
 - *Not available.* The axiom contains no clustering, mixing or dynamics content (§0.5).
-- Observation P shows that record readouts themselves cannot cluster in time unless they are trivial superselection labels.
+- Observation P (proved; MASS_GAP_CROSSOVER_REDUCTION Lemma 5.5) shows that a non-constant time-invariant record readout cannot have decaying reflected correlations, so record readouts are superselection labels.
 - What would be needed is a new hypothesis H-Rec: exponential decay of truncated correlations of gauge-invariant (non-record) local observables, conditioned on any record configuration, with rate and constants uniform in the volume and the configuration.
 - At fixed β ≤ β_sc this is true and known (H4), with Record playing no role. Along the continuum trajectory it is CW.
 
@@ -269,7 +276,7 @@ Conclusion: GRAPH_FIRST fixes *which* group to put on links. The step "internal 
 - Strong-coupling clustering says nothing here, because it only holds at β ≤ β_sc, while the trajectory has β → ∞.
 - OS axioms needed for the limit: OS0 (regularity/temperedness), OS1 (Euclidean invariance; only hypercubic invariance is automatic), OS2 (RP; closed under limits), OS3 (symmetry), OS4 (clustering, which follows from the gap).
 - Reconstruction (Osterwalder–Schrader, CMP 31 (1973) 83 and CMP 42 (1975) 281) then gives (ℋ, H, Ω).
-- **This is the Millennium-level obstruction.** For Record to help, it would have to supply scale-uniform clustering in physical units, i.e. CW. §0.5–0.6 show it cannot do so as stated, or as any group-agnostic strengthening.
+- **This is the Millennium-level obstruction.** For Record to help, it would have to supply scale-uniform clustering in physical units, i.e. CW. §0.5 shows the axiom as stated contains no such clause, and §0.6 gives the scope tests any strengthening must pass.
 
 ## 3. Assumptions (tagged)
 
@@ -286,11 +293,11 @@ Conclusion: GRAPH_FIRST fixes *which* group to put on links. The step "internal 
 | 9 | Source transport (B4, MG2) | plausible, unproved |
 | 10 | Infinite-volume limit of Balaban's control | open (not in Balaban) |
 | 11 | **CW crossover clustering** | **irreducible open** |
-| 12 | H-Rec (Record clustering) | new conjecture. Cannot be group-agnostic (§0.6) |
+| 12 | H-Rec (Record clustering) | conjecture, not adopted. Must pass the scope tests of §0.6 |
 | 13 | Continuum existence MG0, O(4), non-triviality MG4 | open (#10132 targets T1, NT1/NT2 for SU(2)) |
 | 14 | GRAPH_FIRST su(3) ⇒ link SU(3) | open bridge, with repo no-go notes |
 
-## 4. Blockers (ranked) and next steps
+## 4. Blockers (ranked) and next steps — Remarks
 
 1. **CW crossover (decisive).** There is no small parameter between Balaban's ḡ and the cluster regime β_sc. *Next:* quantify the window, i.e. compute what ḡ Balaban-type bounds could at best reach versus what effective one-block Dobrushin condition (#10114's r(β) < 1 test) would be needed. That turns "the window" into a number, even if closing it is out of reach.
 2. **Infinite volume plus gauge-invariant correlators in RG (MG2, MG3).** Balaban works on a finite torus and controls the partition function and effective actions, not general correlation functions. *Next:* a source-carrying version of B1 for smeared Wilson loops of physical size ≥ ℓ_*.
@@ -304,7 +311,7 @@ Conclusion: GRAPH_FIRST fixes *which* group to put on links. The step "internal 
 
 The note drafted here is committed as [MASS_GAP_CROSSOVER_REDUCTION.md](MASS_GAP_CROSSOVER_REDUCTION.md), with an [APPROACH_REGISTRY.md](APPROACH_REGISTRY.md) row. The registry wording follows its policy: the U(1)/d ≥ 5 point is recorded as a scope test for CW producers, not as a global no-go. The #10132 interface note is `library/mass-gap-interface.md` on branch `claude/ym4d-hard-route`.
 
-## 6. Hybrid routes (beyond Theorem H)
+## 6. Hybrid routes (beyond Theorem H) — Remarks/Heuristics only
 
 - **Record → Balaban small/large-field control.**
   - Record's "one record per site, locked" can be read as a hard constraint on block variables, the same structural choice as #10132's hard-constraint route.
@@ -339,7 +346,7 @@ The note drafted here is committed as [MASS_GAP_CROSSOVER_REDUCTION.md](MASS_GAP
   - Both ASTRA notes have same-family reviews.
 - **Relation:**
   - *parallels* it on step (A), which is already there for SU(2) and needs no Record;
-  - *strengthens* it by turning §3's crossover mechanism into a theorem-with-hypotheses with a single open estimate CW, plus the three negative results;
+  - *strengthens* it by turning §3's crossover mechanism into a theorem-with-hypotheses with a single open estimate CW, plus the three scope points of §0.8;
   - *no conflict.*
 - **Recommend** the file in §5.
 
@@ -354,7 +361,7 @@ The note drafted here is committed as [MASS_GAP_CROSSOVER_REDUCTION.md](MASS_GAP
 - **Relation:**
   - *parallel/complementary.* #10132 targets existence and non-triviality (MG0/MG4 territory for SU(2)); this sketch targets MG1/MG3.
   - Gap plus a non-empty Ω^⊥ ⇒ NT1, and the NT1/NT2 witnesses supply that non-emptiness (MG4). This holds only on a common trajectory and observable family.
-  - *No conflict.* The witness charter's warning against dimension-independent strategies for NT2 agrees with §0.6.
+  - *No conflict.* The witness charter's warning against dimension-independent strategies for NT2 is consistent with the scope tests of §0.6.
 - **Recommend** a short interface note (§5).
 
 ## 8. Material found / not found

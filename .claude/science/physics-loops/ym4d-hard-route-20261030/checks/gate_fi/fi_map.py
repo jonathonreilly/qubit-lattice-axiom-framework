@@ -179,7 +179,7 @@ def coarse_W(U, L, bases):
     C = coarse((0, 1), (1, 1), 0)
     D = coarse((0, 0), (0, 1), 1)
     W = qmul(qmul(A, B), qmul(qconj(C), qconj(D)))
-    return W, min(float(r) for r in rmin)
+    return W, min(float(r.detach()) for r in rmin)
 
 
 def xi_bar(U, L, ab, x0):

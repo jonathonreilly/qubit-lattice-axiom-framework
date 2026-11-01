@@ -1,5 +1,5 @@
-lead: anthropic/claude-opus-5-5/max mac-mini-worker
-lease_until: 2026-11-01T19:34Z
+lead: openai/gpt-6-astra/max macbook-codex
+lease_until: 2026-11-02T10:00Z
 
 # Excess: Lemma EX, Lemma EX2, (COMP)(ii)
 
@@ -7,17 +7,23 @@ Queue item 7 of `FINISH.md`, mapped side, frozen at commit `d9d4496f1`. Research
 
 Started 2026-11-01T07:34Z. No read of `parts/hard-core--independent.md`, of any gate on it, or of the Sussman-Alpoge repository. Provenance: anthropic/claude-opus-5-5, effort max, Mac mini worker.
 
+Repair session, 2026-11-01: source commit `0b13f39d269f19602ed3fee11fc146989029a8bb`, gate `gates/excess-codex-6c0d4e1c9.md`, mapped side. The lead lines identify the requested repair session; earlier numerical results retain their original provenance. This is an author repair, not an independent review or audit. No numerical computation was run in this session.
+
 ## 0. Summary
 
-**Lemma EX is proved, in a stronger form and by a new route.** The coarse plaquette angle is L^2 times an average of fine plaquette angles against a tent-tent-box-box kernel, these kernels are a partition of unity on fine plaquettes, and so the excess of *any* field in the fibre is a sum of local variances up to second order (Theorem V). Overlapping tents bound the in-plane parent gradient, and a window at the block face with the Bianchi identities at both levels bounds the transverse one (Lemma TL). No symbol, no IMS, no gauge patch, no global gauge: so no sector and no toron term, and c_1 is free of L.
+**The lower-bound proofs are unchanged, except the requested support repair.** The gate rates Lemma EX and its local ingredients ADVANCE. Section 1.7 now uses the smaller coordinate rectangles in LE/TL and defines the fine-level W^+ by centred parent blocks, which repairs finding 3 without increasing its radius two. No other proof rated ADVANCE was revised.
 
-**An upper bound with no cut field.** An explicit one-level lift, in the fibre exactly, gains a power of L per level (Lemma LIFT). So Lemma TOP at W = 1 reads neither Prop AN3 nor Taylor at a cut field (TOP-1). The form with weights needs Theorem F (Prop TOP-W).
+**Finding 2 is repaired for LIFT and the trial upper bound.** `library/excess-finite-range-repair.md` proves the actual finite-range derivative estimate and its inverse with a kernel q^floor((d-a)_+/R) on squared flux, including the initial support enlargement. Normalised kernel moments, T1--T3 and the L gains survive. TOP-1 is conditional on item (o)'s class-minimality identification and the explicit threshold check (CLASS); the trial estimate itself is discharged. Constants are chosen in the order L, then flux/a_*, then x. No numerical L_0 is certified.
 
-**(COMP)(ii) and Lemma EX2 are implications.** Hole-filling in the level gives (COMP)(ii) with a geometric rate q-bar^m in place of s^2, which is all any consumer reads; the printed s^2 follows given also (AD). Lemma EX2 is rewritten with its gauge fixed, by differentiating the variance identity twice in block-local gauges, and it closes given (COMP)(i), Prop AN3 and (COMP)(ii). Section 6 has every label. Nothing here is gated, and a same-model proof is not an audit.
+**The weighted minimiser comparison is an honest stop.** TOP-W still needs the weighted nonlinear fibre-chart inequality (H-W) and the hierarchical transport comparison (HC-W). A tangent inverse at U does not directly compare two points of its nonlinear fibre. Its absolute C_T, required before L by the consumer, is also unproved. COMP-ii-g is an explicit scalar implication of those inputs and cubic decay, now with a valid geometric rate and with its fine endpoint excluded from that argument.
+
+**Finding 1 and the missing variance estimate have conditional repairs.** `library/excess-root-frame-repair.md` retains every constant root-rate term, bounds its weighted square by C(L)s^2 f^2 using A2, and proves the local box-Poincare bound (VP-W) needed to use A4. Lemma EX2-r follows under A1-r--A4-r in the specified one-level contour gauge, at output rate at most kappa/28 with the required growing response weights stated. It is a summability result; these hypotheses for the minimiser are not discharged. The pinned Prop DS now uses FALL/CRUDE/LAN rather than EX2; Section 5.4 states its exact conditional interpolation and the remaining inputs.
+
+**Current checkpoint.** Completed: support repair; finite-range inverse/T1--T3; TOP-1 constants and class threshold; scalar COMP iteration; root rates, variance inequality and conditional EX2-r. Stopped at (H-W)/(HC-W) for the weighted upper chain. The separate frame item was completed to its conditional statement despite that stop. Next decision: derive a weighted nonlinear fibre chart with its constant order, or supply a different weighted minimiser comparison. Failed inferences preserved below: fast squared tail; “flux C_7 f” without a class-threshold check; tangent inverse applied to a finite fibre displacement; curvature-only root-rate control; gradients used as variances; q-bar=max(q_h,2rho) for arbitrary rho<1; extrapolating EX2 summability to current DS's per-level rate. None is a no-go theorem for another route.
 
 ## 1. Lemma EX: a proof with no symbol, no IMS and no toron term
 
-*Label: discharged at the level of a written proof, same-model, not gated. Reads the definition of the block map and nothing else: not Theorem F-D, not Prop AN3, not the lift's minimality, not c_e.* Checks: `checks/excess/v1_identity.py`, log beside it, criteria T0 to T4 in `checks/excess/CRITERIA.md`, written first, all PASS at the first run on the comb map of `checks/gate_ex/ex_core.py`, SU(2), d = 4, L = 3 (T0 also L = 5).
+*Label carried from the original author: discharged at the level of a written proof; the named research gate subsequently rated these lower-bound arguments ADVANCE, not an audit. Reads the definition of the block map and nothing else: not Theorem F-D, not Prop AN3, not the lift's minimality, not c_e.* Checks: `checks/excess/v1_identity.py`, log beside it, criteria T0 to T4 in `checks/excess/CRITERIA.md`, written first, all PASS at the first run on the comb map of `checks/gate_ex/ex_core.py`, SU(2), d = 4, L = 3 (T0 also L = 5).
 
 ### 1.1 Setting
 
@@ -183,13 +189,15 @@ Multiply by L^2. The coefficients are at most 3 for all odd L: (1 - w/L)^-1 (L/w
 
 *There is no Lipschitz condition on W, no term in E, no toron term.*
 
-*Proof.* Square Lemma TL, with (A + B)^2 <= 2 A^2 + 2 B^2 and six terms: |grad_e theta'_q(y)|^2 <= 108 L^4 (sum of six sigma^2) + errors. There are 96 slots per site, 16 per orientation after the sum over y, so I^grad(V'; W^-) <= 1728 V(W) + C(L) sum W^- (n_y^+ + Theta_y (n_y^+)^{1/2} + Theta_y^2)^2. The last is at most C(L) (cub(V'; W^+) + cub(U; W^+)), since |theta| <= 1 and Young. In (V_W), |r_{y,q}| <= C(L) n_y, and |theta'| n_y <= C(L) sum_{Box(y)} (|theta'|^3 + |theta_p|^3). QED
+*Support convention (gate finding 3, discharged).* For this local theorem use, in place of the oversized Box(y), the coordinate rectangle with in-plane coordinates [-r,L+r] and transverse coordinates [-r,r], translated by y. The contour paths, straight lines and coordinate-comb fillings used in LE stay in this rectangle: successively filling a coordinate strip never leaves the coordinate intervals of its boundary. Hence the same finite-dimensional LE estimate holds with its energy and another C(L). For TL take the union of the six such rectangles at the parents specified there, together with the intervening cube faces. Every fine plaquette in this union has its centred parent block within two blocks of y. On fine plaquettes W^+ means the maximum over all parent orientations and parents within two blocks of that centred parent block. This is a support statement, requiring no comparison of distinct values of W.
+
+*Proof.* Square Lemma TL, with (A + B)^2 <= 2 A^2 + 2 B^2 and six terms: |grad_e theta'_q(y)|^2 <= 108 L^4 (sum of six sigma^2) + errors. There are 96 slots per site, 16 per orientation after the sum over y, so I^grad(V'; W^-) <= 1728 V(W) + C(L) sum W^- (n_y^+ + Theta_y (n_y^+)^{1/2} + Theta_y^2)^2, using the restricted energies just defined. Finite overlap, |theta| <= 1 and Young bound the last sum by C(L) (cub(V'; W^+) + cub(U; W^+)). In (V_W), |r_{y,q}| <= C(L) n_y with the restricted rectangle, and |theta'| n_y <= C(L) sum over that rectangle of (|theta'|^3 + |theta_p|^3). Every weight is dominated by the stated W^+ at the plaquette charged. QED
 
 *Reading.* The right side has the *fine* cubic energy, which is the natural form on a chain, where it is geometric in the level. For W = 1 and flux(U) <= C f this gives Theorem EX back in the printed form, with a worse c_1.
 
 ## 2. A one-level lift with a gain, and Lemma TOP at W = 1
 
-*Label: the abelian kernels are discharged; the non-abelian lift is written step by step with soft constants C(L), same-model, not gated. It reads the map, and class minimality (item (o) of `library/relative-density-bound.md`) only to say A_k(V) <= E_0 of a class chain in the fibre. No Prop AN3, no Theorem F, no cut field.* Needed because an upper bound on Y_k is the input of the sum over levels, and the printed Lemma TOP reads Prop AN3 and Taylor at cut fields, which is where the toron term came from. Numerics: T8, T9 and follow-up, `checks/excess/v8_lift1d.py`, `v9_lift4d.py`, `v9b_follow.py`.
+*Label: the abelian kernels are carried as discharged; the non-abelian inverse and its corrected tail are proved below with soft nonlinear constants C(L), as a new author repair not independently checked. It reads the map, and class minimality (item (o) of `library/relative-density-bound.md`) only to say A_k(V) <= E_0 of a class chain in the fibre. No Prop AN3, no Theorem F, no cut field.* Needed because an upper bound on Y_k is the input of the sum over levels, and the printed Lemma TOP reads Prop AN3 and Taylor at cut fields, which is where the toron term came from. Numerics: T8, T9 and follow-up, `checks/excess/v8_lift1d.py`, `v9_lift4d.py`, `v9b_follow.py`.
 
 ### 2.1 The abelian lift is a tensor product
 
@@ -219,15 +227,28 @@ Let V' be a level-(i+1) field of flux at most f_0(L). For a parent site y let G_
 
 **The constraint.** By Lemma LE's BCH steps, log M(U^flat)(c) in frame y is Q A^{(y)}(c) + O(C(L) Theta^2) = v^{(y)}(c) + D' phi^{(y)}(c) + O(C(L) Theta^2), with phi^{(y)} := the contour average of A^{(y)}, by Lemma 3.1 and Q_path T_1 = id. With phi(y) := phi^{(y)}(y), this says M(U^flat)(c) = e^{phi(y)} V'(c) e^{-phi(y')} up to second order. Let T_0'(V') be U^flat gauge transformed by e^{-phi(y)} on each block, which is a gauge constant on blocks, so M changes by exactly that parent gauge. Then M T_0'(V') = e^{m} V', |m(c)| <= C(L) Theta_c^2.
 
-**Exact fibre.** Psi(Y) := log( M T_0'(e^Y V') V'^-1 ) on parent bonds is analytic and of finite range, and D Psi(0) = id + O(C(L) Theta), as at V' = 1 the first order of M T_0' is the identity. So Psi(Y) = 0 has a solution: the map Y -> Y - Psi(Y) contracts in sup norm, and |Y(c)| <= C(L) Theta-tilde_c^2, Theta-tilde_c := sum_{c''} (C(L) f)^{d(c, c'')} Theta_{c''}. **Define T(V') := T_0'(e^Y V'). Then M(T(V')) = V' exactly.** Its curvature obeys (C) with Theta replaced by Theta-tilde, as the parent curvature of e^Y V' is theta' + O(C(L) Theta-tilde^2).
+**Exact fibre (finding 2 repaired; discharged for this construction).** The full proof is in `library/excess-finite-range-repair.md`, Sections 1--3. In the row-sum operator norm the actual derivative satisfies
 
-**Lemma LIFT.** *There are absolute C_1, C_2, C_6, and L_0, f_0(L), C(L), such that for L >= L_0 and flux(V') <= f_0(L), U := T(V') has M(U) = V', is parent-gauge covariant, and for all W >= 0, with W^+ := W smeared over parent distance at most 6 blocks with the tail of Theta-tilde:*
+    D Psi(Y)=I+E(Y),   E(c,c')=0 for d(c,c')>R,   sup_c sum_c' ||E(c,c')||<=q=B_L f<q_*,
 
-    (T1)  |theta_p| <= L^-2 ( |theta'(y)| + C max_near |grad' theta'| ) + C(L) Theta-tilde_y^2,   |grad theta_p| <= C_6 L^-3 max_near |grad' theta'| + C(L) Theta-tilde_y^2;
-    (T2)  e(U; W) <= C_1 I^grad(V'; W^+) + C(L) cub(V'; W^+);
-    (T3)  I^grad(U; W^down) <= C_2 L^-2 I^grad(V'; W^+) + C(L) f cub(V'; W^+),    cub(U; W^down) <= C L^-2 cub(V'; W^+).
+on the Picard ball ||Y||<=C(L)f^2. A conservative support count gives initial flux radius a_0=32 and derivative range R=68 in parent cells, independent of L. Local products, combs, tensor kernels and contours are all included. The Neumann series gives an inverse entry bounded by q^ceil(d/R)/(1-q). After the initial source enlargement and the further local curvature operations,
 
-*Proof.* (T1): (C), (K), and the flat difference of theta'^{G_y} against grad' up to C Theta^2. In (C) the frame is close to the axial gauge at y; the gauges differ by a rotation of size C(L) Theta, which changes theta by second order. (T2): in (V_W), sigma_{y,q}^2 <= <|theta^{(y)} - L^-2 theta'_q(y)|^2>_{chi_y}, so L^4 sigma^2 <= C max_near |grad' theta'|^2 + C(L) Theta-tilde^4 by (T1), and |r| <= C(L) n_y <= C(L) Theta-tilde^2. (T3): (T1), L^4 fine plaquettes per block, and a fine link in frame y has angle at most C(L) Theta, so the covariant and flat fine differences differ by second order. QED
+    |Y(c)| <= C(L) B_c,    B_y := (K_q*F^2)(y),
+    K_q(z) proportional to q^floor((|z|_infinity-a)_+/R),    sum_z K_q(z)=1,
+
+where F(y)=max_q |theta'_q(y)| and a is a fixed enlarged radius. This is a kernel on squared flux, not the square of a fast convolution on flux. At f=0 take Y=0. Define T(V')=T_0'(e^Y V'); then M T(V')=V' exactly, and uniqueness in the Picard ball gives parent-gauge covariance. The scalar diagnostic (I-qS_R)^-1 gives q^m at distance mR and refutes the old tail inference. No numeric run is needed for that identity.
+
+**Lemma LIFT (corrected).** *There are absolute C_1,C_2,C_3,C_6,L_0 and a positive f_0(L), such that for odd L>=L_0 and flux(V')<=f_0(L), the exact lift above obeys, for every nonnegative orientation weight W,*
+
+    (T1) |theta_p| <= L^-2 (|theta'(y)|+C max_near |grad' theta'|)+C(L)B_y,
+         |grad theta_p| <= C_6 L^-3 max_near |grad' theta'|+C(L)B_y;
+    (T2) e(U;W) <= C_1 I^grad(V';W^+)+C(L)cub(V';W^+);
+    (T3) I^grad(U;W^down) <= C_2 L^-2 I^grad(V';W^+)+C(L)f cub(V';W^+),
+         cub(U;W^down) <= C_3 L^-2 cub(V';W^+).
+
+*Here W^+=max(P_a W,K_q*P_a W), with P_a the maximum over a fixed enlarged parent neighbourhood and all orientations. Further finitely many convolutions/enlargements may be included once. In particular 1^+=1. All fixed polynomial moments and a fixed exponential moment of K_q are uniform in f,L,depth and volume, after q_* exp(nu_0 R)<1 is imposed by shrinking f_0(L). Thus W^+<=exp(C nu)W for scalar log-Lipschitz W of rate nu<=nu_0, or the orientation weights obtained by compatible down-averaging of a scalar top profile; unrelated orientation weights require the actual maximum/convolution.*
+
+*Proof.* The finite-range derivative, inverse and support count are proved in the new note. The tensor bounds (K) give T1. Jensen gives B^(3/2)<=K_q*F^3, B^2<=f K_q*F^3 and B^3<=f^3 K_q*F^3. Transposing the kernel charges precisely W^+. The variance identity and Young's inequality F B<=F^3/3+2B^(3/2)/3 give T2. Squaring the gradient bound and counting L^4 fine sites gives C_2 L^-2 in T3; its squared error is f cub. Cubing T1 gives C L^-2 cub+C(L)f^3 cub, and f_0(L) is reduced so the latter coefficient is at most L^-2. C_1,C_2,C_3,C_6 are absolute upper bounds; C(L) occurs only in nonlinear terms. QED. The old numerical estimates do not certify these enlarged constants or L_0.
 
 *Numerics, T10 (`checks/excess/v10_lift_su2.py`, criteria written first): the construction above, coded literally, SU(2), L = 3, comb map, d = 2, 3 on N' = 8, and d = 4 on N' = 4 read on the cover of the torus.* m := log(M T_0' V' V'^-1).
 
@@ -241,23 +262,28 @@ Constant flux: |m| below 6e-17. So there is no first-order term, the fibre is re
 
 ### 2.3 Lemma TOP at W = 1, with no toron term
 
-Let V be a level-k field of flux f <= f_1(L), Vtilde_k := V, Vtilde_i := T(Vtilde_{i+1}), Utilde := Vtilde_0.
+**Trial estimate: discharged. Class minimality: implication of item (o).** Let Vtilde_k=V and Vtilde_i=T(Vtilde_(i+1)). Section 4 of `library/excess-finite-range-repair.md` proves
 
-*Uniform flux.* Put f^_i := L^{2(k-i)} sup |theta(Vtilde_i)|, d^_i the same for sup |grad theta|. By (T1), d^_{i-1} <= (C_6/L) d^_i + C(L) L^{-2(k-i)} f^_i^2 and f^_{i-1} <= f^_i + C d^_i + C(L) L^{-2(k-i)} f^_i^2. For L >= 2 C_6, the d^_i sum geometrically, so sup_i f^_i <= C_7 f, by a bootstrap from f <= f_1(L). **So the trial chain has flux at most C_7 f L^{-2(k-i)}, with no factor per level, and it is a class chain.**
+    flux(Vtilde_(k-m)) <= C_7 L^-2m flux(V),
+    E_0(Utilde)-E_k(V) <= 2 C_1 I^grad_k(V)+C(L)cub(V).             (TOP-tr)
 
-**Theorem TOP-1.** *For L >= L_0 and flux(V) <= f_1(L), in every sector and on every torus:*
+The proof retains the rescaled gradient recurrence, whose coefficient is C_6/L, and the gradient-energy recurrence, whose coefficient is C_2/L^2. Thus both the gain of a power of L for the rescaled gradient and the L^-2 energy gain survive the corrected tail. There is no constant raised to the depth in the flux bound.
 
-    A_k(V) - E_k(V) <= E_0(Utilde) - E_k(V) <= 2 C_1 I^grad_k(V) + C(L) cub(V),    both with W = 1.
+**Class membership is a threshold check.** The kernel's unlabelled children require flux<=T; the terminal formula domain is D_k={flux<=T_2}, T_2=C_p C_a T. For all inputs in D_k, all strict descendants are class provided
 
-*With compatible weights W_i, the same bound holds for E_0(Utilde; W_0) - E_k(V; W_k), with W_k^+ on the right.*
+    T_2<=f_1(L),    C_7 C_p C_a/L^2<=1.                           (CLASS)
 
-*Proof.* Let a_i := I^grad(Vtilde_i; W_i), c_i := cub(Vtilde_i; W_i). (T3), with W^+ <= e^{C nu_i} W on a log-Lipschitz weight, gives a_{i-1} <= (C_2 L^-2 e^{C nu_i}) a_i + C(L) f_i c_i and c_{i-1} <= C L^-2 e^{C nu_i} c_i. For L >= L_0 both contract, and the product of e^{C nu_i} is bounded, as nu_i is geometric. Sum (T2) over i. The first inequality is class minimality. QED
+Use <=1/4 for the consumer's stronger margin. For a top already below T, L^2>=C_7 suffices. A terminal value in D_k need not itself be below the rough threshold T. It is prescribed parent data, not a child being labelled in this preimage. If C_p,C_a are the fixed geometric constants stipulated in the consumer's threshold convention, (CLASS) is part of choosing L. If they depend on L, the displayed inequality must be checked; shrinking a_* cannot repair that ratio.
 
-*What this replaces.* Lemma TOP as printed: it read Prop AN3 uniformly in k and a Taylor expansion at a cut field. TOP-1 reads neither, and it has no tail. It costs L >= L_0 with C_2 L_0^-2 < 1, which Section 3A wanted to avoid and which the program allows anyway. Section 3 below gets the local form.
+**Theorem TOP-1 (corrected scope).** *Choose L so C_6/L<=1/2, C_2/L^2<=1/2, C_3/L^2<=1/2 and (CLASS) holds. Then shrink a_* so T_2<=f_1(L) and the chart thresholds. Given item (o)'s identification of the branch value with the infimum over class chains, in every sector and volume,*
+
+    A_k(V)-E_k(V) <= E_0(Utilde)-E_k(V) <= 2C_1 I^grad_k(V)+C(L)cub(V).
+
+The first inequality also uses the matching Wilson energy <= squared-angle energy. The rest is (TOP-tr). With a_i,c_i the trial's gradient and cubic energies, T3 gives sum_i a_i<=2a_k+C(L)c_k and sum_i c_i<=2c_k; sum T2 and telescope. Compatible log-Lipschitz weights give the same **trial** estimate with an absolute weight factor, since the product of exp(C nu L^-m) is bounded. All constants are free of x,depth,volume and position; only the nonlinear coefficients and smallness thresholds depend on L. Item (o) is an imported sketch and is not discharged here. No Prop AN3 or cut field is read by this trial construction.
 
 ## 3. Lemma TOP with weights
 
-*Label: implication, level of each term. Reads Theorem F of `library/fibre-propagator.md` at the true lift, (R3), item (o). Unlike TOP-1 it is not self-contained: locality of the minimiser is an elliptic fact, and Theorem F is where it lives. It reads no cut field and no Prop AN3.*
+*Label: gap for the actual minimiser; conditional implication with (H-W) and (HC-W) below. The repaired tail establishes the weighted trial bound, but Theorem F at the true lift, (R3) and item (o) have not been shown here to supply the required nonlinear comparison.*
 
 Fix n <= k, V := V_n, U the class minimal lift, and write W := W_n with its down-averages. Y_n(W) := E_0(U; W_0) - E_n(V; W_n). Let Utilde be the trial of Section 2.3 from V.
 
@@ -265,7 +291,7 @@ Fix n <= k, V := V_n, U the class minimal lift, and write W := W_n with its down
 
     r^{(n)}(B) = sum_{i <= n} L^{2 (n - i)} E_{y_i} [ transported r_{y_i} ],    |r^{(n)}(B)| <= C(L) sum_{i < n} L^{-2 (n - 1 - i)} E_i(B^+),        (CR)
 
-as the law of y_i has mass at most L^{-4 (n - i)} on each plaquette and |r_{y_i}| <= C(L) n_{y_i}. **(CR) is the composite second-order bound, free of n, in the sharp scale-invariant form, read from one-level remainders with no Lemma AN1 and no Uhlenbeck gauge.** This is the repair of D4 of `gates/closure-bad958abb.md`: the frame moves with the block at every level, so no gauge at the top box is needed.
+as the law of y_i has mass at most L^{-4 (n - i)} on each plaquette and |r_{y_i}| <= C(L) n_{y_i}. **(CR) is the composite second-order bound, free of n, in the sharp scale-invariant form, read from one-level remainders with no Lemma AN1 and no Uhlenbeck gauge.** This addresses the kernel-density count in D4 of `gates/closure-bad958abb.md`: the frame moves with the block at every level. It does not supply the weighted minimiser comparison or the further estimates in Section 4.2.
 
 And exactly, with c := L^{-2 n} theta(B),
 
@@ -273,51 +299,58 @@ And exactly, with c := L^{-2 n} theta(B),
 
 Let Yhat_n(W) := sum_B W(B) L^{4 n} E_omega |F - c|^2 >= 0. So Y_n(W) = Yhat_n(W) - 2 sum_B W(B) <theta(B), r^{(n)}(B)>. The same holds for Utilde's chain, with its own frames and Yhat_tr.
 
-**Prop TOP-W.** *Let W be log-Lipschitz at rate nu <= delta_#/8 in level-n cells. Then for V in D_n, in every sector,*
+**Prop TOP-W (conditional form; the application is a gap).** *Besides the corrected LIFT, (CLASS), (CR) and the named inputs of this section, assume the following weighted comparison, uniformly in n,volume,x and sector. In a gauge fixing the parent data, a relative field H between U and Utilde exists in the top-scale Eps chart and satisfies*
 
-    Y_n(W) <= C_T ( I^grad_n(V; W) + cub(V; W) ) + C(L) Cub_n(W),    Cub_n(W) := sum_{i <= n} L^{-(n - i)/2} cub(V_i; W_i^+).
+    sum_B W(B)||H||_Eps(B)^2
+        <= C_H [Yhat_tr(W^+)+sum_B W(B) f_B^4],                    (H-W)
+    O-hat(W) := sum_B W(B)L^(4n) E_omega |F_U-F_trial|^2
+        <= C_O sum_B W^+(B)||H||_Eps(B)^2.                       (HC-W)
 
-*Proof.* (1) *Trial.* By the tower property Yhat_tr(W) is the sum over levels of the trial's variances, plus the mean's term, and by (T2) and Section 2.3 it is at most C (I^grad_n(V; W^+) + cub(V; W^+)).
+*Here the fourth-power term is bounded by C(L)cub(V;W^+) for the same local flux envelope of the trial. The comparison must include the hierarchical transport paths, not only the endpoint curvatures. Then*
 
-(2) *Elliptic step.* U and Utilde are class chains in one fibre, so in a box both have small angle in tree gauge, and Utilde = e^H U with sup_B ||H||_{Eps(B)} small, by item (o). Let J(G) := D A(Utilde)[G] for G in ker Q^o at U. Since D A(U) vanishes on ker Q^o, Taylor at U gives bH[H, G] = J(G) + N(H)[G], with ||N(H)||_{Eps^*(B)} <= C(L) sup ||H||_{Eps} ||H||_{Eps(B^+)}. Theorem F at U, (i), (ii), with a weight e^g, g Lipschitz at rate delta_#/4 (real, by item (iii) the gauge part vanishes): sum_B W(B) ||H||^2_{Eps(B)} <= C sum_B W(B) ||J||^2_{Eps^*(B)}. In level-n units, for G on B of norm 1, split F(Utilde) into its constant part F-bar_B in the frame of B and the rest. The constant part pairs with d_{Utilde} G to at most the commutator, of size f_B^2. The rest is at most ||F(Utilde) - F-bar_B||_{L^2(B)} ||d G||_{L^2}. So
+    Y_n(W) <= C_T I^grad_n(V;W^+) + C(L) Cub_n(W),
+    Cub_n(W) := sum_(i<=n) L^(-(n-i)/2) cub(V_i;W_i^+).
 
-    sum_B W(B) ||H||^2_{Eps(B)} <= C ( Yhat_tr(W^+) + sum_B W(B) f_B^4 ).        (H)
+C_T depends on C_H,C_O and the absolute trial constants. It is absolute only if C_H,C_O are absolute (or their L-dependent parts multiply a small flux and have been absorbed). Otherwise it must be written C_T(L); it can still be free of x,depth,volume and position. The consumer's order placing C_T before L is not justified by a printed C(L)^2 comparison constant.
 
-(3) *Comparison.* On omega-space, F_U(omega) - F-tilde(omega) =: Omega-hat(omega) obeys |Omega-hat| <= |d_U H + [H, H]|(z) + 2 |tau_omega| |theta-tilde(z)|, with tau_omega the sum of the link differences along the path omega. Level by level, with (1) of `library/analytic-lift.md` and the Sobolev step of that note, E_omega |tau_omega|^2 <= C(L) ||H||^2_{Eps(B^+)}, as avg_b e_i(b)^2 <= C L^{-2 (n - i)} e_n^2. So with |theta-tilde| <= C_7 f_B L^{-2 n} from Section 2.3, O-hat := sum_B W(B) L^{4 n} E_omega |Omega-hat|^2 <= C(L)^2 times (H) for f small. Then L^{4 n} E_omega |F_U - c|^2 <= 2 L^{4 n} E_omega |F-tilde - c|^2 + 2 L^{4 n} E_omega |Omega-hat|^2, and
+*What is proved and where this stops.* (1) The corrected trial estimate, its kernel moments and the tower variance identity give Yhat_tr(W)<=C I^grad(V;W^+)+C(L)cub(V;W^+). (2) Given H-W and HC-W, |F_U-c|^2<=2|F_trial-c|^2+2|F_U-F_trial|^2 gives the claimed bound for Yhat_n. (3) The CR cross term is bounded by C(L)Cub_n: at distance m=n-i, Young with eps=L^-3m gives a top cubic coefficient L^-m after the L^4m occurrence count and a lower cubic coefficient L^-m/2; both have summable top coefficients. This part is algebraic.
 
-    Yhat_n(W) <= 2 Yhat_tr(W) + 2 O-hat.
-
-(4) *Back to Y.* The (CR) term is at most C(L) sum_B W(B) |theta(B)| sum_{i<n} L^{-2 (n - 1 - i)} E_i(B^+). Young on each pair, |theta(B)| |theta_p|^2 <= eps |theta(B)|^3 + eps^{-1/2} |theta_p|^3 with eps := L^{-3 (n - i)} against the L^{4 (n - i)} plaquettes of B^+ at level i, makes this at most C(L) Cub_n(W). QED
-
-*Why no toron term here either.* The trial needs no trivialisation, and Theorem F does not read the sector.
+**Honest stop: (H-W) is not derived.** Here H is in top-scale units: eta=L^-n and Utilde^g_b=exp(eta H_b)U_b, with H in su(2). Equal nonlinear coarse data imply Q^o H=O(H^2), not Q^o H=0 (with the scaling absorbed in the chart coefficients). A vector tangent at U need not be tangent at Utilde. Theorem F supplies a linear inverse at U; before using it in the former Step (2), one needs a uniform nonlinear fibre chart controlling these constraint and tangent errors in the weighted Eps norm. Item (o) is a qualitative sketch, not that inequality. The former Step (3)'s hierarchical transport estimate is also only a condition (HC-W), with its constant unresolved. The precise missing comparison is recorded in `library/excess-finite-range-repair.md`, Section 5. Minimality at W=1 alone cannot replace it: even the scalar constraint u_1+u_2=a has energy minimiser (a/2,a/2), while the trial (a,0) has smaller energy for the weight (0,1). This diagnostic concerns that inference, not the Yang--Mills conclusion. No counterexample to TOP-W is asserted.
 
 ## 4. (COMP)(ii)
 
 ### 4.1 Geometric form, by hole-filling in the level
 
-*Label: implication of Theorem EX-loc, Prop TOP-W and one clause of (COMP)(i). Own derivation; the idea T_{m+1} <= q T_m is the route named in D7 of `gates/closure-bad958abb.md`.*
+*Label: implication conditional on TOP-W, hence on its unresolved (H-W), (HC-W), and on the cubic decay stated below. This section proves the scalar iteration only; it does not cross that stop.*
 
 Fix W_k with log W_k Lipschitz at a rate nu <= delta_#/8 in top cells, and W_j := down-averages. a_j := I^grad(V_j; W_j). By (TS) with compatible weights, Y_j(W_j) = Y_{j+1}(W_{j+1}) - e_j(W_{j+1}). Theorem EX-loc gives e_j(W_{j+1}) >= c_1 e^{-C nu_{j+1}} a_{j+1} - C(L) c_{j+1}, with c_{j+1} := cub(V_{j+1}; W^+) + cub(V_j; W^+). Prop TOP-W at level j + 1, with W^+ <= C_w W, gives a_{j+1} >= (Y_{j+1}(W_{j+1}) - C(L) Cub_{j+1}(W)) / (C_T C_w) - C cub(V_{j+1}; W). Hence, for either sign of Y,
 
     Y_j(W_j) <= q_h Y_{j+1}(W_{j+1}) + C(L) ( c_{j+1} + Cub_{j+1}(W) ),    q_h := 1 - c_1 e^{-C nu} / (C_T C_w) < 1, free of j and k.        (HF)
 
-**Theorem COMP-ii-g.** *Let I_k(V; W) := I^grad_k(V; W) + cub(V; W), and suppose (COMP)(i), first clause, or any bound cub(V_{k-m}; W_{k-m}^+) <= C rho^m cub-bar, with rho < 1. Let q-bar := max(q_h, 2 rho). Then for all m <= k:*
+**Theorem COMP-ii-g (corrected conditional form).** *Put I_k(V;W)=I^grad_k(V;W)+cub(V;W). Assume TOP-W with a finite C_T(L), EX-loc, and cub(V_(k-m);W_(k-m)^+)<=C rho^m cub-bar for some 0<rho<1. Increase C_T if necessary so 0<q_h<1. Choose any*
 
-    sum_{c at level k - m} W_{k-m}(c) |grad theta_c|^2 <= C(L) q-bar^m ( I_k(V; W_k^+) + cub-bar ).
+    max(q_h,rho)<q-bar<1,    e.g. q-bar=(1+max(q_h,rho))/2.
 
-*From (COMP)(i), rho = L^-2 and cub-bar = f_loc^3: by Hoelder sum_c |theta_c|^3 <= (sum_c |theta_c|^4)^{3/4} (s^-4)^{1/4} <= C s^2 f_loc^3. So for W_k := w_{c_k} of rate at most delta_#/8, this is (COMP)(ii) with s^2 replaced by q-bar^m.*
+*Then for 0<=m<=k-1,*
 
-*Proof.* Iterate (HF) from the top: Y_{k-m} <= q_h^m Y_k + C(L) sum_{l < m} q_h^{m-1-l} rho^l cub-bar. Y_k <= C_T I_k + C(L) Cub_k by TOP-W. And c_1 a_{j+1} <= e_j + C(L) c_{j+1} = Y_{j+1} - Y_j + C(L) c_{j+1}, with -Y_j <= C(L) Cub_j, as each e_i >= -C(L) c_{i+1} by Theorem EX-loc. QED
+    I^grad_(k-m)(V_(k-m);W_(k-m))
+        <= C(L,rho,q-bar) q-bar^m (I_k(V;W_k^+)+cub-bar).          (COMP-g)
+
+*This is uniform in position,x,depth and volume; neither q-bar nor the prefactor is claimed free of L. The old choice max(q_h,2rho) was not <1 for every rho<1. The present choice also handles resonance without a depth-dependent prefactor. The fine endpoint m=k needs a separate bound; EX-loc controls the parent gradient, so the chain-sum argument alone supplies only levels 1 through k.*
+
+*Proof.* Cub_j<=C(L)rho^(k-j)cub-bar by summing its defining geometric convolution. The error in HF is therefore <=C(L)rho^(k-j-1)cub-bar. Iteration gives Y_(k-m)<=q_h^m Y_k+C(L)cub-bar sum_(ell<m) q_h^(m-1-ell)rho^ell. If r=max(q_h,rho), that sum is <=m r^(m-1)<=C(r,q-bar)q-bar^m, including q_h=rho. TOP-W bounds Y_k. Independently, summing EX-loc from level 0 gives -Y_j<=C(L)sum_(i<j)c_(i+1)<=C(L)rho^(k-j)cub-bar. For j>=1, EX-loc on j-1 gives c a_j<=Y_j-Y_(j-1)+C(L)c_j. Insert these two bounds. There is no corresponding j=-1 step for a_0. QED.
+
+From the first clause of COMP(i), rho=L^-2 requires a local top-cell weight with controlled mass: Holder gives sum W |theta|^3 <= (sum W |theta|^4)^(3/4)(sum W)^(1/4) <= C s^2 f_loc^3 when sum W<=C s^-4. A gradient bound alone does not supply this mass condition. All local enlargements use the repaired kernel moments.
 
 **Corollary GS (Prop GS, W = 1).** Sum Theorem EX-loc over the chain and use (TS) and TOP-1: c_1 sum_{j<k} I^grad_{j+1}(V_{j+1}) <= 2 C_1 I^grad_k(V) + C(L) ( cub(V) + sum_{j<k} cub(V_j) ). With (COMP)(i) clause 1 the last sum is at most C(L) N_k^4 f^3 in the worst case, and on each top cell at most C f_loc^3; or with sup flux falls, at most C f_k E_k(V). With weights, the same with Prop TOP-W. No toron term from this step.
 
-**Is the weaker rate enough?** Yes for every reader. Prop DS and Lemma EX2 write "geometric" and sum a_m^{1/2} over m, and that sum converges with q-bar^{m/2}. (i)'s clause 1 and the clauses at variations carry their own s. Prop GS at W = 1 needs only the sum. No consumer reads s^2 as a number: the only places are the words "C(L) s" and "C s" in EX2 and DS, which become q-bar^{m/2}.
+**What the rate supplies.** A geometric bound is sufficient for a sum of square roots, provided it holds for the required weights and the fine endpoint is handled. Section 5 supplies the previously missing passage from gradients to local variances. The pinned `library/sector-values.md`, Section 3B, now uses FALL and Landau interpolation for Prop DS and explicitly parks EX2 and COMP(ii) as a second route; Section 5.4 below distinguishes these consumers.
 
 **(COMP)(i), clause 1, from the fine level (implication of (R3), by Lemma CJ).** Jensen on omega-space gives |L^{2 j} E_omega F|^4 <= L^{8 j} E_omega |theta^0(z)|^4, and the partition of unity gives sum_c |L^{2 j} E_omega F|^4 <= L^{4 j} sum_z |theta^0(z)|^4 = s^4 ||F||^4_{L^4}, with constant 1. By (CR), and E_i(c^+) <= 2 E_0(c^{++}) from (V_W) with an indicator weight, |r^{(j)}(c)| <= C(L) ||F||^2_{L^2(c^{++})} <= C(L) s^2 ||F||^2_{L^4(c^{++})}, so sum_c |r^{(j)}(c)|^4 <= C(L) s^8 f^8. So sum_c |theta_c|^4 <= C s^4 f_loc^4, for f small in L. *So "(R3) by scale counting" is now a proof, given (R3) at the fine level.*
 
 ### 4.2 The form with s^2
 
-*Label: implication, given (AD) of `library/composite-adjoint.md` and (R3). Repairs D4 of the closure gate. Not needed by any consumer.*
+*Label: gap in the application, conditional on TOP-W and the further (AD), (R3) and covariant mean-subtraction estimates written below. This route was not pursued across the TOP-W stop. Its earlier assertion that closure D4 was repaired is withdrawn; Lemma W itself is unchanged.*
 
 **Lemma W (lattice Weitzenboeck, any field of flux at most 1/6).** ||D^* theta||^2 + ||B||^2 = I^grad + X, with |X| <= C cub(U), where D^* is the backward covariant divergence and B the Bianchi defect. *Proof.* Expand both squares. The diagonal of ||D^* theta||^2 is P, the diagonal of ||B||^2 is T, and the cross terms cancel by the swap of Lemma BT, up to its commutators. QED
 
@@ -325,112 +358,130 @@ With a cut-off eta at top scale, in level-k units, this gives ||eta grad F||^2 <
 
 *Down to level j.* Lemma CJ with block side ell := L^j at the fine level: E_omega |F - c|^2 is at most C ell^2 avg_{B^+} |grad theta^0|^2 by the box Poincare inequality, plus the frame term, the holonomy of a loop of area ell^2, which by Hoelder in L^4 contributes at most C ell^4 avg_{B^+} |theta^0|^4. In lattice sums, Yhat_j(W) <= C s^2 ||grad F||^2_{L^2(W)} + C s^4 ||F||^4_{L^4(W)}. So with Theorem EX-loc, a_j <= C(L) s^2 I_k(V; W^+) + C s^4 f^4 + C(L) cub-sum <= C(L) s^2 I_k(V; W^+). That is (COMP)(ii) as printed.
 
-*What this repairs.* D4 asked for AN1 per block in a lattice Uhlenbeck gauge. (CR) replaces both, and the Poincare step replaces the convolution of Step 5.
+*Earlier proposed repair, now conditional.* The claims about covariant mean subtraction and the gradient estimate above have not been re-established in this repair. They do not resolve closure D4 while TOP-W and those estimates remain open.
 
-## 5. Lemma EX2, rewritten
+## 5. Lemma EX2, repaired with its root rates
 
-*Label: implication, level of each term, given (A1) to (A4) below. Answers D1, D2, D3 of `gates/lemma-ex-7c12c6981.md`.*
+**Label: implication under the precise weighted inputs below.** The local frame repair and the local variance inequality are discharged in `library/excess-root-frame-repair.md`. This establishes a conditional second-variation sum, not the response estimates of Prop AN3. In particular A4 still depends on the unresolved weighted TOP comparison. The original output-weight range is narrowed explicitly.
 
-**The change of method.** The printed proof ran Lemma EX's Steps 3, 4 on delta F, with IMS balls of radius f^{-1/2}. There a transport across a ball costs r |delta F|, and that is D1. Here no ball appears. The identity (V_W) is differentiated twice in time at block scale, where a transport costs C(L), which is allowed.
+### 5.1 Gauge, profiles and inputs
 
-### 5.1 Statement
+V_j(t)=N^(j)(U_0 exp H(t b)) is the contour-free chain in its fixed matrix coordinates. F^j_y(z,t)=Ad(T_yz(t))theta_j(z,t), with T_yy(t)=1 identically, is the comb-rooted axial field. Its root is the chain's frame at y; there is no additional chosen time-dependent root rotation. Use the explicit choice in `library/block-poincare-energy-package.md`, Theorem 7 Step 1: N_j(V)=g^[j](V).M_j(V), with g_y^[j](V)=exp(-Phi_y^[j] X), X=log(V V_j(0)^-1), and Phi frozen at the base chain. Then C_j=g^[j](V_j(t))^-1 and theta'=Ad(C_j(y,t))theta_(j+1) are the deterministic parent in V_W. This is an exact **one-level** relation. Phi is the finite contour functional, so derivatives of C_j are bounded by C(L) times local sums of |h_j| and |h_j^(2)|+|h_j|^2. No rotation accumulated from the top is suppressed. The response inputs below must hold for this specified chain gauge.
 
-*Gauge (D3).* V_j(t) := N^{(j)}(U_0 e^{H(t b)}), with H(.) the solution of Prop AN3 for V e^{t b}, and N^{(j)} the contour-free chain. So V_j(t) is the minimal chain of V e^{t b} up to a level-j gauge. delta F, h_j := d/dt log (V_j(t) V_j^-1), h_j^{(2)} and delta^2 theta are read in this gauge. b_m(b; W) := sum_{c at level k-m} W(c) sum_e |grad_e delta_b theta_c|^2, grad_e the covariant difference at t = 0.
+Write s_j=L^(j-k), and d_j for distance to b in top cells. Fix nu>0 with 7nu<=kappa/4, where kappa is the available response-kernel rate. Set P_j=exp(-nu d_j), V_j^wt=exp(3nu d_j), J_j=exp(7nu d_j). All input bounds include fixed local enlargements and compatible down-averages. The target W=exp(g), g(b)=0, has |grad_top g|<=nu. Thus W^2/P<=C V^wt and W<=C(P V^wt)^(1/2). The shell count sum P_j<=C_nu s_j^-4 is uniform in volume.
 
-*Inputs.*
-- (A1) (COMP)(i), with weight: sum_c W |theta_c|^4 <= C s^4 f^4, sum_c W |delta theta_c|^2 + sum_c W |delta^2 theta_c|^2 <= C(L), for W = e^g with g centred at b of rate at most a quarter of the kernel's.
-- (A2) sum_c W ( |h_j(c)|^4 + |h_j^{(2)}(c)|^4 ) <= C(L), same W. *Reading:* (2) of Prop AN3 for H, H_2 in Eps(B), the box Sobolev bound, and Lemma AN1's linear bound |h_j(b)| <= C_1 e_j(b) with (1) of `library/analytic-lift.md`, plus its quadratic term for h^{(2)}.
-- (A3) |d^2/dt^2 ( E_0(U(t); W_0) - E_k(V(t); W_k) )| <= C(L): (A1) at m = 0, m = k.
-- (A4) Theorem COMP-ii-g.
+- (A1-r) sum P_j |theta_j|^4<=C s_j^4 f^4; sum V_j^wt (|delta theta_j|^2+|delta^2 theta_j|^2)<=C_A(L); all fields remain in the small chart.
+- (A2-r) sum J_j (|h_j|^4+|h_j^(2)|^4)<=C_A(L).
+- (A3-r) |d^2/dt^2(E_0(W_0)-E_k(W_k))|<=C_A(L), weights fixed in time.
+- (A4-r) I^grad_j(V_j;P_j^+)<=C_A(L) q-bar^(k-j) B for 1<=j<=k, with q-bar<1 and B independent of volume. Corrected COMP-g supplies this conditionally, with B bounded by the local top input. No fine-level gradient estimate is assumed.
 
-**Lemma EX2'.** *Let W := e^g as in (A1). With F^j_y the level-j plaquette angles in the axial gauge rooted at y, at each t, and root frame the chain's frame at y,*
+These are explicit uses of the former A1--A4, with profile slack: their claimed family at rates <=kappa/4 contains all these profiles if both signs are indeed available. If only one decaying profile is known, the growing response bounds are additional open conditions. Weighted l^p nesting on a decaying measure does not prove them. The output rate here is at most kappa/28, not the former kappa/4.
 
-    sum_{j<k} sum_{y, q} W(y) L^4 Var_{chi_y}( d/dt F^j_{y,q} ) <= C(L),        (V-dot)
-    sum_m b_m(b; W) <= C(L).        (EX2')
+**Lemma EX2-r (corrected EX2').** *Under these inputs and the one-level contour relation, with b_m(b;W)=sum_(c at k-m) W(c)sum_e |grad_e delta_b theta_c|^2 in the chain gauge at t=0,*
 
-*(EX2') is Lemma EX2 as printed, with b_m defined. The fine level m = k is one term, bounded by 4 ||delta theta^0||^2.*
+    sum_(j<k) sum_(y,q) W(y)L^4 Var_(chi_y)(Fdot^j_y) <= C(L),    (V-dot-r)
+    sum_(m=0)^k b_m(b;W) <= C(L).                              (EX2-r)
 
-### 5.2 Proof of (V-dot)
+C(L) may depend on the fixed nu, the input constants and sqrt(B)/(1-sqrt(q-bar)); it is free of x,position,depth and volume. This proves summability, not a pointwise geometric bound on b_m.
 
-*Differentiate (V_W).* Fix j, write F := F^j_{y,q}. The variance is quadratic, so for any frame,
+### 5.2 Variance from gradients, including the fine endpoint
 
-    d^2/dt^2 Var_y(F(t)) = 2 Var_y(F-dot) + 2 Cov_y(F, F-ddot).
+The required inequality, proved by coordinate paths in `library/excess-root-frame-repair.md`, Section 2, is
 
-With e_j(t; W) of (V_W), and R_{y,q}(t) := 2 <theta'_q(y), r_{y,q}> - |r_{y,q}|^2, summing over j and using the exact chain sum:
+    sum_y P(y)L^4 Var_(chi_y)(F^j_y)
+        <= C(L)[I^grad_j(V_j;P_j^+)+sum P_j^+ |theta_j|^4].       (VP-W)
 
-    2 sum_j sum_{y,q} W L^4 Var_y(F-dot) = Y-ddot - 2 sum_j sum_{y,q} W L^4 Cov_y(F, F-ddot) + sum_j sum_{y,q} W R-ddot_{y,q}.        (D)
+For adjacent plaquettes, the two comb paths differ by a loop with a coordinate-strip filling in a C L box. Its holonomy error is <=C(L)n_y^(1/2), so |Delta F_y|<=|grad theta|+C(L)n_y^(1/2)|theta|. The exact pairwise formula for a variance, telescoping on coordinate paths, and squaring give a gradient sum plus C(L)n_y^2. Finite overlap yields VP-W. No reversal of EX-loc, or unproved identification of a variance with A4's gradient, is used.
 
-**This has all the terms D2 asks for.** F-ddot is the full second variation with the transports:
+For j>=1 the right side is <=C(L)(q-bar^(k-j)B+s_j^4 f^4). For j=0, use Var<=second moment and Holder with sum P_0<=C_nu s_0^-4 to obtain V_0(P)<=C(L,nu)f^2. Thus sum_(j<k) sqrt(V_j(P)) is bounded uniformly in depth. This is the missing estimate at the former line 375.
 
-    F-dot = Ad(T) ( delta theta + [tau-dot, theta] ),    F-ddot = Ad(T) ( delta^2 theta + 2 [tau-dot, delta theta] + [tau-ddot, theta] + [tau-dot, [tau-dot, theta]] ),
+### 5.3 Root rates and the differentiated identity
 
-with tau-dot the variation of the transport from y to z in the gauge of 5.1, including the root rotation from N^{(j+1)} to the axial frame, of size the contour average of h_j. *Both live in a block.* So with B-tilde(y) a finite region, N_1(y) := sum_{B-tilde(y)} |h_j|, N_2(y) := sum_{B-tilde(y)} (|h_j^{(2)}| + |h_j|^2), we have |tau-dot| <= C(L) N_1(y), |tau-ddot| <= C(L) N_2(y).
+For neighbouring roots y,z write T_y(w)T_z(w)^-1=R_yz exp(lambda(w)), R_yz=T_y(z), lambda(z)=0. Put Omega=R_yz^-1 Rdot_yz. Finite product differentiation gives |Omega|<=C(L)sum_path |h_j|. Strip reconstruction in z's rooted gauge gives |lambda|<=C(L)n^(1/2) and |d exp(lambda)/dt|<=C(L)N_d^(1/2), with N_d the local sum of |Fdot_z|^2. Consequently
 
-*Size of F-ddot.* Hoelder with (A1), (A2), using l^2 inside l^4: sum_y W N_1^2 sum_{Box(y)} |delta theta|^2 <= (sum W N_1^4)^{1/2} (sum W |delta theta|^2) <= C(L), and sum_y W N_2^2 n_y <= (sum W N_2^4)^{1/2} (sum W n_y^2)^{1/2} <= C(L) s^2 f^2, and N_1^4 n_y the same. So G_j := sum_{y,q} W L^4 <|F-ddot|^2>_{chi_y} <= C(L), uniformly in j. **That is the place where D1's l^4 repair is used, and it is at block scale.**
+    Ad(R_yz^-1)Fdot_y = Fdot_z+[Omega,F_z]+error,
+    ||error||_(L^2(chi)) <= C(L)[(n N_d)^(1/2)+|Omega|n].
 
-*Cov.* For W = e^g take W-tilde := e^{2 g + g'}, with g' a decaying profile of the same rate. Cauchy-Schwarz:
+The constant-root term remains. Its weighted square is
 
-    |sum W L^4 Cov_y(F, F-ddot)| <= ( sum e^{-g'} L^4 sigma_y^2(F) )^{1/2} ( sum W-tilde L^4 <|F-ddot|^2>_y )^{1/2} <= C(L) q-bar^{(k-j)/2}.
+    sum W L^4 |Omega|^2 <|F_z|^2>
+        <= C(L)(sum V^wt H_1^4)^(1/2)(sum P n^2)^(1/2)
+        <= C(L)s_j^2 f^2,                                     (ROOT-W)
 
-The first factor is the *local* variance near b. By (V_W) and Theorem EX-loc, sum_{y,q} W' L^4 sigma_y^2 <= e_j(W') + C(L) c_{j+1} <= Y_{j+1}(W') + C(L) Cub_{j+1}(W'), so (A4) applies. This is the one place that reads (COMP)(ii), and it reads only that the sum of square roots converges.
+where H_1 is a finite local path sum of |h_j|. This uses A2-r and A1-r, with W<=C(P V^wt)^(1/2). The same estimate pays every coarse contour/root conversion with s_(j+1). Both scale sums are geometric. A spatially constant relative rotation cannot be set to zero after differentiation; for Fdot_z=0 the displayed commutator can have nonzero variance.
 
-*Remainder.* In the t-dependent axial gauge at y, r_{y,q} = Phi(a(t)), with Phi analytic on a polydisc of radius c/L, Phi(0) = 0, D Phi(0) = 0, by Lemma LE. Links in that gauge: |a|^2 <= C(L) n_y, and, by Stokes on the strips, |a-dot|^2 <= C(L) N_d(y) := C(L) sum_{Box(y)} |F-dot|^2, |a-ddot|^2 <= C(L) (N_dd(y) + N_d(y)^2), N_dd(y) := sum_{Box(y)} |F-ddot|^2. So |r-dot| <= C(L) (n_y N_d)^{1/2} and |r-ddot| <= C(L) (N_d + (n_y N_dd)^{1/2} + n_y^{1/2} N_d). In R-ddot = 2 <theta'-ddot, r> + 4 <theta'-dot, r-dot> + 2 <theta', r-ddot> - 2 |r-dot|^2 - 2 <r, r-ddot>, with Hoelder and l^p nesting, each sum has a factor ||theta||_{l^4}-type at level j or j + 1:
+The complete identity and its estimates are derived in Sections 4--5 of the new note. In particular
 
-    sum W |theta'-ddot| n_y <= C(L) s^2 f^2,   sum W |theta'-dot| (n_y N_d)^{1/2} <= C(L) s f,   sum W |theta'| N_d <= C(L) s f,
+    Fdot=Ad(T)(delta theta+[alpha,theta]),
+    Fddot=Ad(T)(delta^2 theta+2[alpha,delta theta]+[alpha-dot,theta]+[alpha,[alpha,theta]]),
+    2 sum_j W L^4 Var(Fdot)=Yddot-2 sum_j W L^4 Cov(F,Fddot)+sum_j W Rddot,
 
-and the rest are smaller. Weights as for Cov. So sum_j |sum W R-ddot| <= C(L) sum_j s_{j+1} f <= C(L), a geometric sum with ratio 1/L and *no flux falling input*: only (A1). QED of (V-dot), with (A3).
+with alpha=T^-1 Tdot and R=2<theta',r>-|r|^2. A1-r,A2-r give sum V^wt L^4 <|Fddot|^2><=C(L); the h^(2)theta product uses (V^wt)^2/P=J. Cauchy--Schwarz and VP-W bound the covariance sum. The full five terms in Rddot, including theta'ddot r and theta' rddot, have a factor s_j f or s_(j+1) f by the explicitly weighted Holder estimates in the note. They sum geometrically. A3-r therefore gives V-dot-r.
 
-### 5.3 From the variance to the gradient
+Differentiate TL in a common rooted box; change each variance frame using ROOT-W; then return to the fixed chain gauge. The squared errors from n N_d and from transport rates times theta are <=C(L)s_(j+1)^2 f^2 in sum. This gives b_(k-j-1)<=C(L)Vdot_j+C(L)s_(j+1)^2f^2. The single fine b_k is bounded by the weighted l^2 norm of delta theta_0. Summing proves EX2-r. This closes the two local defects **as a conditional theorem with the stated profiles**; it does not discharge A1-r--A4-r for the minimiser.
 
-**Lemma TL at a variation.** Lemma TL's proof is a list of linear identities in the angles, for fixed t, plus second-order errors. Differentiate them at t = 0 in the t-dependent axial gauge at y. The linear functionals of F become the same functionals of F-dot, bounded by Var(F-dot). The errors are analytic and vanish to second order, so their t-derivatives are at most C(L) (n_y^+ + Theta_y^2)^{1/2} (N_d^+)^{1/2}. In that gauge the links read by the fine and the coarse Bianchi defects vary by at most C(L) (N_d^+)^{1/2}, by Stokes on strips of length C L, so **the term [h, theta] is at most C(L) (N_d^+)^{1/2} Theta_y, read at block scale**: in a gauge fixed far away the same term is what D1 measured growing. So, with xdot_{q,e}(y) the t-derivative of the flat difference of theta'_q by L e in that gauge,
+### 5.4 What Prop DS now reads
 
-    sum_{q, e} |xdot_{q,e}(y)|^2 <= C sum_{y'' in Y_1(y), q'} L^4 Var_{chi_{y''}}( F-dot in gauge at y ) + C(L) (n_y^+ + Theta_y^2) N_d^+(y).
+**Pinned-source distinction.** At `0b13f39d2`, `library/sector-values.md`, Section 3B, explicitly parks EX2 and COMP(ii). Its current Prop DS uses FALL, CRUDE and LAN. The former assertion here that “Prop DS stands” from EX2 alone is withdrawn. Only this part and new notes have been edited; the consumer has not been rewritten.
 
-A variance in the gauge at y against the gauge at y'': they differ by Ad(g) with g constant up to C(L) (a + a''), and by a rotation rate phi(z) with |phi| <= C(L) (N_d^+)^{1/2}. So the difference of the two sigmas is at most C(L) ( (n^+ N_d^+)^{1/2} ) in L^2 units.
+**Older second-variation route: conditional summability only.** Given the source's full differentiated representation, mixed response estimates and a common gauge for both variations, the new EX2-r controls sum_m (b_m(b)b_m(b'))^(1/2) by Cauchy--Schwarz. COMP-g controls sum_m a_m^(1/2); root and transport terms have a factor s_m f and are summable. This would give a summed order-two estimate. The additional source estimate that must be supplied, with its mixed-bond tree weights, is of the form
 
-*To the gauge of 5.1.* grad_e delta theta'(y) = xdot(y) + O( C L a |delta theta'| ) + O( N_1(y) |theta'(y + L e)| ). So, summing over y with W, the errors are at most C(L) (sum W (n^+)^2)^{1/2} ||delta theta'||^2 + C(L) (sum W N_1^4)^{1/2} ||theta'||_{l^4}^2 <= C(L) s^2 f^2, geometric. With (V-dot) this gives (EX2'). QED
+    |D^2(Z_(k-m-1) o Lambda_m)[b,b']|
+      <= C(L)S [sqrt(b_m(b)b_m(b')) + sqrt(a_m) c_m(b,b')
+                    + s_m f (1+sqrt(b_m(b))+sqrt(b_m(b')))],       (DS-H)
 
-### 5.4 What Prop DS reads
+where c_m is the uniformly bounded full mixed second variation of the transported curvature, and every term has the spatial weights required by the norm. SRC's first-derivative display alone is not DS-H. Separate time-dependent gauges for the two directions do not prove a mixed derivative estimate. EX2-r also supplies no per-m geometric rate for its first term. DS-H and that stronger per-level conclusion are not established here.
 
-*Order 1.* |D(Z o Lambda_m)[b]| <= C(L) a_m^{1/2} ||delta F||_{l^2}, by (SRC)'s first-derivative bound, so the sum over m converges by Theorem COMP-ii-g with no use of EX2.
+**Current Prop DS: exact conditional interpolation.** On its common interval |t|<=t_1=c_0 T_2 inside D^+, let z_m^y be the local composed source. Suppose its named FALL/SRC/CRUDE inputs give, with the same tail control and uniform constants,
 
-*Order 2.* <Delta delta F, K Delta delta' F> <= (b_m b'_m)^{1/2}, summed by (EX2') and Cauchy-Schwarz. <Delta F, K Delta delta^2 F> <= a_m^{1/2} ||delta^2 F||_{l^2} <= C(L) q-bar^{m/2}. The transport terms that gate D1 of the closure lists, |h| |F| |Delta delta' F|, are at most (sum W |h|^4)^{1/4} (sum W |F|^4)^{1/4} b'_m^{1/2} <= C(L) s f b'_m^{1/2}, geometric. In the axial gauge at x of Prop DS, "link size |delta F|" should read: link size C(r) times the l^2 norm of delta F on the ball, with polynomial growth in r taken by the tree decay. Since zeta is gauge invariant at each order, the frame at x may be chosen for each of delta, delta' separately. So Prop DS stands as an implication, with "C s" replaced by q-bar^{m/2}. (Not rewritten here: its owner has it. The repair of its own D1 in the closure gate is this paragraph.)
+    sup_t |partial_(b') z_m^y(V exp(t b))|
+        <= C(L)S q^(m/2) T_2 exp(-delta d(y,b')),
+    sup_t |partial_b^2 partial_(b') z_m^y(V exp(t b))|
+        <= C(L)S exp(-delta St(y,b,b')).                          (DS-input)
+
+Choose b' farther from y, so St<=2d(y,b'). Taylor at plus/minus tau gives |g'(0)|<=A/tau+tau G/2 for g=partial_(b')z_m^y. If sqrt(A/G)<=t_1 choose that tau; otherwise choose t_1 and use G<A/t_1^2. It follows that |partial_b partial_(b')z_m^y|<=C(L)S q^(m/4)exp(-(delta/2)St), since T_2 is bounded and T_2/t_1=c_0^-1. Summing in a norm with a strictly positive spatial-rate margin gives the corresponding geometric series. This is an implication of DS-input, not its derivation.
+
+The present repair supplies the corrected trial in FALL's upper-bound input, but FALL for local weights still lacks TOP-W's (H-W)/(HC-W). The required CRUDE mixed derivatives, SRC tail/domain control and matching norm rates were not checked in this session. The current Prop DS therefore remains conditional on exactly those inputs; EX2's repair neither replaces them nor certifies DS.
 
 ## 6. Status of each statement
 
-| Statement | State here | Reads |
+| Statement | State here | Exact dependency / limit |
 |---|---|---|
-| Lemma EX, weighted, as printed | **Proved** (Theorem EX), with the toron term deleted and c_1 = 1/810 free of L | The map only; flux(U) <= phi_0(L) |
-| Lemma EX, local form | **Proved** (Theorem EX-loc), no E term, W >= 0 arbitrary | The map only |
-| Lemma BT, T <= 2 P + 8 f E + C f^2 E | **Proved**, the 2 is sharp | Nothing |
-| c_e > 0 over all P | **Proved**: c_e >= (1 - L^-2)/96 for all P and L, from Theorem V and Lemma BT at r = 0, against 0.0988 measured. No longer read by Lemma EX | Nothing |
-| Lemma LIFT, TOP-1 (W = 1) | Implication | Item (o) for A_k <= E_0 of a class chain; L >= L_0 |
-| Prop GS at W = 1 | Implication: Theorem EX, TOP-1, and the sum of cub | (COMP)(i) clause 1, or sup flux falls |
-| Prop TOP-W | Implication, level of each term | Theorem F at the true lift, (R3), item (o), Lemma AN1's linear bound |
-| (COMP)(ii) | Implication, **with q-bar^m in place of s^2** (Theorem COMP-ii-g) | Prop TOP-W, (COMP)(i) clause 1 |
-| (COMP)(ii) as printed, with s^2 | Implication (4.2) | Also (AD), (R3); Lemma W is proved |
-| Lemma EX2 | Implication, rewritten (Lemma EX2'), gauge fixed | (A1) to (A4) |
-| Prop DS | Not rewritten; 5.4 says what changes | Its owner |
+| Lemma EX, weighted, c_1=1/810 | discharged, carried proof; gate ADVANCE | Map, small flux phi_0(L); proof unchanged |
+| Lemma EX-loc, c_1=1/3500 | discharged, gate's local support repair written in | Coordinate rectangles and fine W^+ convention in 1.7 |
+| Lemma BT and c_e>=(1-L^-2)/96 | discharged, carried proofs; gate ADVANCE | Not revised or newly numerically checked |
+| Actual finite-range inverse, kernel moments, LIFT T1--T3 | discharged, new written author proof | Fixed comb/tensor construction; f<=f_0(L); no independent check |
+| TOP-tr, weighted trial estimate and class membership | discharged | (CLASS); choose L before f_1(L), then a_* |
+| TOP-1 for A_k | implication | Also item (o)'s branch/class-minimality identification and matching Wilson normalisation |
+| Prop GS at W=1 | implication | TOP-1 and cubic sum; weighted version additionally needs TOP-W |
+| Prop TOP-W | gap | (H-W), (HC-W), and absolute-versus-C(L) order of C_T |
+| COMP-ii-g, levels 1 through k | implication | TOP-W and cub decay rho<1; choose max(q_h,rho)<q-bar<1 |
+| COMP(ii) at the fine endpoint | gap in the hole-filling argument | No level -1 EX-loc step; EX2 handles its own endpoint separately |
+| COMP(ii) with s^2, Section 4.2 | gap in application | Also (AD), (R3), covariant mean-subtraction and TOP-W; not pursued across the stop |
+| Root-rate square (ROOT-W), local variance (VP-W) | discharged local estimates | A2/A1 respectively for their weighted summed consequences |
+| Lemma EX2-r | implication | A1-r--A4-r, small charts, one-level contour relation; output rate <=kappa/28 |
+| Older DS second-variation route | gap for the full consumer | Needs DS-H and mixed tree norm; EX2 gives summability, not per-level geometric decay |
+| Pinned current Prop DS | implication only from DS-input | FALL still needs TOP-W; CRUDE/SRC/domain/tail/norm inputs not certified here |
 
-**The gate's list.** `gates/lemma-ex-7c12c6981.md`: D1 dissolved (5.2, 5.3: transports at block scale, l^4 only where it costs nothing). D2 repaired (the full F-ddot is in (D)). D3 repaired (5.1). D4 gone for Lemma EX and for Lemma TOP; the tail in Lemma O3 and (SRC) is untouched. D5: not read here. D6, D7: moot, no Plancherel and no IMS. *No field with topological charge at small flux had been tested:* the proofs above read no sector, and T6 now tests it, true minimisers at Chern number 2 and f near 0.13, with e/I = 0.158, 0.163 (Section 7). `gates/closure-bad958abb.md` D4 repaired by (CR) and Lemma CJ, with no Lemma AN1 and no Uhlenbeck gauge, in 4.2.
+**Disposition of the gate findings.** Finding 3 is written in locally. Finding 2's tail inference is replaced by an inverse on squared flux, with all initial support and moments explicit. Finding 1's constant root-rate term is retained and paid using A2 at every change of frame; A4's gradient-to-variance passage is supplied by VP-W. Neither of the latter repairs establishes the independent minimiser/response premises. The former blanket statements “D1 dissolved”, “TOP proved”, “DS stands” and “closure D4 repaired” are superseded by the rows above. Historical numerics below do not establish any of those missing premises.
 
 ## Obligations
 
-- discharged: Lemma K, Theorem V, Lemma LE, Lemma IP, Lemma NN, Lemma BT, Theorem EX: the excess of any field in the fibre is a sum of local variances up to second order, so Lemma EX holds with no toron term, no symbol, no IMS, in every sector, on every torus; own proof, same-model, not gated; T0 to T4 PASS
-- discharged: Lemma TL, Theorem EX-loc: pointwise bound of the parent gradient by local variances, compatible weights, no term in E; own proof, same-model, not gated; T7 PASS
-- discharged: c_e >= (1 - L^-2)/96 over all P, abelian, from Theorem V and Lemma BT; own proof, not gated
-- implication: Lemma LIFT, one-level exact lift with gain, tensor chain map plus block frames plus Picard, constants soft; TOP-1 given item (o); T8 to T10 as reported, with L_0 not computed -> Prop GS at W = 1
-- implication: Lemma CJ, (CR), Prop TOP-W, composite remainder free of the level from one-level remainders; given Theorem F at the true lift, (R3), Lemma AN1's linear bound -> Theorem COMP-ii-g
-- implication: Theorem COMP-ii-g, (COMP)(ii) with q-bar^m, by hole-filling in the level; given Prop TOP-W and (COMP)(i) clause 1 -> Lemma EX2', Prop DS
-- implication: (COMP)(ii) with s^2, Section 4.2; given also (AD) and (R3); no consumer needs it
-- implication: Lemma EX2', second variation of the variance identity in block-local gauges; given (A1) to (A4) -> Prop DS, so low orders of R_k
-- unchecked: C_T and q_h are not computed; L_0 of Lemma LIFT is about 11 at the abelian level by T12, for this beta
-- gap: the upper bound with boundary data, for (VAL^d): Theorem EX-loc applies as it stands on free parents, since (V_W) reads only the region of each parent in supp W, but Lemma LIFT next to a frozen layer and Prop TOP-W with Theorem F-D are not written
-- unchecked: Lemma TL's and Lemma LIFT's non-abelian steps at the level of every BCH term: written as second-order remainders of finite-dimensional analytic maps with C(L), checked numerically at L = 3 only
+- discharged: retain Lemma K, Theorem V, LE, IP, NN, BT, EX and TL at the named gate's research standing; no new check of their proofs in this repair, except EX-loc's support convention.
+- discharged: finite-range derivative row norm, Neumann inverse on squared flux, initial support enlargement, normalised moments, weighted T1--T3; `library/excess-finite-range-repair.md`, Sections 1--3.
+- discharged: TOP-tr and rescaled-gradient bootstrap; class descendants require T_2<=f_1(L) and C_7 C_p C_a/L^2<=1 (<=1/4 for the stronger margin). If C_p,C_a are not fixed geometric constants, check this ratio explicitly.
+- implication: TOP-1 and W=1 GS still read item (o); it is a sketch, not discharged here.
+- gap: derive (H-W) in a uniform weighted nonlinear fibre chart and (HC-W) for hierarchical transports; make C_T absolute before L if the consumer's constant order is retained. This is the stopping point for TOP-W and dependent weighted bounds.
+- implication: COMP-g on levels 1..k given TOP-W and cubic decay, with a rate strictly between max(q_h,rho) and 1. The fine endpoint needs a separate bound, not another iteration of EX-loc.
+- discharged: VP-W, retaining its quartic curvature error, and ROOT-W, retaining the root rate bounded by link variations; `library/excess-root-frame-repair.md`, Sections 2--3.
+- implication: EX2-r under the exact profiles and A1-r--A4-r. Verify these response and curvature estimates for the AN3 curve in the specified one-level contour gauge before using the result for that curve. The output-rate loss and growing response weights cannot be omitted.
+- gap: DS-H and mixed spatial norms for the older second-variation route; current Prop DS instead needs its FALL/CRUDE/SRC inputs in DS-input. No consumer file was changed.
+- gap: upper bounds with frozen boundary data, including LIFT next to a frozen layer and TOP-W with Theorem F-D, remain outside this repair.
+- unchecked: numerical sizes of C_1,C_2,C_3,C_6,L_0,C_T,q_h and all new non-abelian estimates by an independent reader. Prior T8--T12 values are not a certificate for the repaired constants.
 
 ## 7. Numerics, summary
 
-Criteria: `checks/excess/CRITERIA.md`, written before each run; additions dated and marked. All numerics under the lock. A search that finds nothing does not prove a bound; here each run tests a step of a written proof.
+**Historical original-author record; not rerun or independently reproduced in this repair.** Criteria: `checks/excess/CRITERIA.md`, written before each run; additions dated and marked. The original author reports all numerics under the lock. A search that finds nothing does not prove a bound; here each run tests a step of a written proof.
 
 | Test | Outcome |
 |---|---|
@@ -462,12 +513,18 @@ C_eff := (c_1 I - e)/(f E); negative means the inequality holds with no error te
 
 ## Requests
 
-**TO THE OWNER OF `library/sector-values.md`.** (1) Section 3A: Lemma EX can be replaced by Theorem EX or Theorem EX-loc; Steps 1 to 4, c_e, IMS and "(toron term)" are not read, and R1 is not needed. (2) Lemma TOP: TOP-1 at W = 1, and Prop TOP-W with weights, in place of the Taylor proof. If weights are kept in Prop GS, use down-averaged weights, which remove the quadrature error of a fixed W. (3) (COMP)(ii): read q-bar^m where a consumer reads s^2, or keep s^2 and read (AD). (4) Lemma EX2: Lemma EX2'. (5) Prop DS: 5.4. (6) The remark in Section 8 (14) that the lift "lies in the fibre, so it is at least the one-level Wilson minimum, at second order at flat data" can go: positivity is now Theorem V, for every field in the fibre.
+**TO THE OWNER OF `library/sector-values.md` (local handoff only; nothing sent).** The lower EX replacement is unchanged except support. Read the corrected LIFT/TOP-1 with (CLASS), and the unresolved (H-W)/(HC-W) before using weighted TOP or FALL. COMP-g is conditional and controls levels 1..k. EX2-r is a second route with explicit response profiles and output-rate loss; it is not needed by your pinned current DS proof. Section 5.4 distinguishes DS-H for the old route from DS-input for the current FALL/CRUDE/LAN route. These notes supply no certificate of SRC, its tail, the mixed derivatives of CRUDE, or the boundary version.
 
 **TO THE LEAD.** Lemma O3's tail, and so (SRC) and Theorem VAL's term N_k^4 Phi(e^-8 N_k/4), are untouched: that tail comes from Taylor of the source at a cut field, not from the excess. Whether a block-frame comparison could remove it there too was not tried; it is outside this item.
 
 ## Read and not read
 
+**Original author record (preceding this repair).**
+
 Read: `FINISH.md`, `GOAL.md`; `library/sector-values.md` Sections 0 to 3B and 7, 8 in part; `library/analytic-lift.md` in full; `library/critical-class-and-excess.md`; `library/block-poincare-energy-package.md` to Theorem 6; `library/composite-adjoint.md` head and Lemma AD1; `library/fibre-propagator.md` Setting and Theorem F; (R1) to (R3), Text 1, Text 3.1 to 3.3 of `parts/hard-core--mapped.md`; Prop 10' and items (f), (f') of `library/relative-density-bound.md`; `gates/lemma-ex-7c12c6981.md`, `gates/closure-bad958abb.md`; `checks/gate_ex/ex_core.py`.
 
 Not read: `parts/hard-core--independent.md`, any gate on it, the Sussman-Alpoge repository, Theorem F-D, HS-P, HS-T, `library/lattice_sobolev_box_gauge.md`, `library/lattice-uhlenbeck.md`, `library/one-step-closure.md` beyond grep lines, Sections 4 to 6 of `library/sector-values.md` beyond the statements. Inputs of Sections 3 to 5 are taken at their labels: none of them was checked here.
+
+**Repair-session reading boundary and verification.** Read GOAL and FINISH first, then the full specified excess gate. Read the relevant bounded arguments in this part, the map definition in `parts/hard-core--mapped.md` 3.1 and its current threshold paragraph (near original line 1027), the contour-free definition in `library/block-poincare-energy-package.md` Theorem 7 Step 1 and `library/analytic-lift.md` near its definition of N_j, item (o) of `library/relative-density-bound.md`, the constant order of `library/one-step-closure.md`, Theorem F's statement, and the current SRC/COMP/FALL/CRUDE/LAN/DS statements and relevant proofs in `library/sector-values.md` Section 3B. Repository workflow and the applicable procedure were inspected from pinned HEAD because the workflow file is absent from this sparse checkout; no campaign, review or audit was started. Some initial multi-read/search outputs were truncated; the consequential mathematical ranges were reread separately. No truncated search is claimed as completed verification.
+
+No independent-attempt part, its good file, or any gate on that attempt was opened. No external literature, original numerical script or numerical log was used in the repair; historical numbers above are left as their author's record. The scalar shift diagnostic, shell bound, scalar iteration and root-rate tests were derived algebraically, not run as numerical computations. No numeric-lock was acquired because no numerical job was launched. No subagents, commit, push, PR, message to another party, axiom/ledger edit or audit. Only this part, the two new library notes and the mechanical verification receipt in `checks/excess-codex/verification.txt` were written. The full current checkpoint and remaining inequalities are in Sections 0 and 6. Verification checks the pinned HEAD, permitted write set, unchanged protected proof text and historical numeric tables, and whitespace; it is not an independent mathematical review.

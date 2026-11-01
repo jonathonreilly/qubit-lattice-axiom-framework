@@ -113,3 +113,7 @@ L=7 R2 halfcut2   seed 1 start Ratio_C 0.208 best Ratio_C 0.9993 Ratio_A 0.9970 
 L=7 R2 tri        seed 1 start Ratio_C 0.302 best Ratio_C 0.9917 Ratio_A 0.9864 w1 1.270 rhs_c 1.2805 min|m| 1.000 nrough 49 evals 607 74.9s
 L=7 R2 patch      seed 1 start Ratio_C 0.001 best Ratio_C 0.7968 Ratio_A 0.6200 w1 0.452 rhs_c 0.5668 min|m| 0.999 nrough 49 evals 612 75.8s
 L=7 R2 star       seed 1 start Ratio_C 0.000 best Ratio_C 1.0000 Ratio_A 0.9999 w1 2.000 rhs_c 2.0000 min|m| 1.000 nrough 49 evals 549 68.0s
+L=7 R2 starlat    seed 1 start Ratio_C 0.000 best Ratio_C 0.9604 Ratio_A 0.9132 w1 1.981 rhs_c 2.0624 min|m| 0.720 nrough 49 evals 605 75.0s
+L=7 R2 gas        seed 1 start Ratio_C 0.000 best Ratio_C 0.9979 Ratio_A 0.9954 w1 1.766 rhs_c 1.7692 min|m| 1.000 nrough 49 evals 605 75.1s
+L=7 R2 overall best Ratio_C 1.0000
+L=9 R1 flat       seed 1 start Ratio_C 0.000 best Ratio_C 0.6420 Ratio_A 0.6420 w1 1.048 rhs_c 1.6321 min|m| 0.985 nrough 7283 evals 377 86.4s

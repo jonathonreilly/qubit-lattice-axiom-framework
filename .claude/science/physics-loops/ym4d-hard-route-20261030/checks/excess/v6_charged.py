@@ -127,7 +127,7 @@ class LightProblem(Problem):
         rm = self.resid(qmul(qexp(-eps * v), U0))
         return (rp - rm) / (2 * eps)
 
-    def _constraint_grad(self, H0, U0, lam, chunk=256):
+    def _constraint_grad(self, H0, U0, lam, chunk=128):
         """Gradient in H at H0 of <lam, resid>, summed over chunks of parents, so the graph stays small."""
         B = self.chain.levels[0]
         if not hasattr(B, "groups"):
@@ -150,10 +150,21 @@ class LightProblem(Problem):
         return total
 
     def _wilson_grad(self, H0, U0):
-        H = H0.clone().requires_grad_(True)
-        val = wilson(qmul(qexp(H), U0))
-        g, = torch.autograd.grad(val, H)
-        return g
+        """Gradient of the Wilson action in H at H0, one orientation at a time, so each graph is freed."""
+        total = torch.zeros_like(H0)
+        dd = U0.shape[-2]
+        for mu in range(dd):
+            for nu in range(mu + 1, dd):
+                Hm = H0[..., [mu, nu], :].clone().requires_grad_(True)
+                Um = qmul(qexp(Hm[..., 0, :]), U0[..., mu, :])
+                Un = qmul(qexp(Hm[..., 1, :]), U0[..., nu, :])
+                p = qmul(qmul(qmul(Um, torch.roll(Un, -1, dims=mu)), qinv(torch.roll(Um, -1, dims=nu))), qinv(Un))
+                val = (2 * (1 - p[..., 0])).sum()
+                g, = torch.autograd.grad(val, Hm)
+                total[..., mu, :] += g[..., 0, :]
+                total[..., nu, :] += g[..., 1, :]
+                del Hm, Um, Un, p, val, g
+        return total
 
     def lag_grad(self, H, U0, lam):
         H = H.detach()

@@ -89,7 +89,7 @@ def main():
                 g = P._wilson_grad(H, Uc) + P._constraint_grad(H, Uc, lam + RHO * r)
                 return val, g.reshape(-1).numpy()
 
-            sol = minimize(fun, np.zeros(int(np.prod(shape))), jac=True, method="L-BFGS-B", options=dict(maxcor=12, maxiter=150, maxfun=175, ftol=1e-14, gtol=1e-6))
+            sol = minimize(fun, np.zeros(int(np.prod(shape))), jac=True, method="L-BFGS-B", options=dict(maxcor=6, maxiter=150, maxfun=175, ftol=1e-14, gtol=1e-6))
             H = torch.from_numpy(sol.x).reshape(shape)
             U = qmul(qexp(H), Uc)
             U = U / torch.sqrt((U * U).sum(-1, keepdim=True))

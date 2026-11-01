@@ -21,7 +21,7 @@ os.makedirs(SCR, exist_ok=True)
 Np, L, d = 8, 3, 4
 BUDGET = float(sys.argv[1]) if len(sys.argv) > 1 else 6000.0
 T0 = time.time()
-RHO = 10.0
+RHO = 100.0
 
 
 def report(tag, U, V, extra=None):
@@ -37,7 +37,7 @@ def report(tag, U, V, extra=None):
     return out
 
 
-def lbfgs(P, U, lam, shape, maxit=150, m=6):
+def lbfgs(P, U, lam, shape, maxit=220, m=6):
     """L-BFGS on the group, left trivialised, no vector transport: steps are small."""
 
     def phi(Ux, want_grad=True):
@@ -49,7 +49,7 @@ def lbfgs(P, U, lam, shape, maxit=150, m=6):
 
     val, g = phi(U)
     S, Y, Rh = [], [], []
-    alpha0 = 0.05
+    alpha0 = 0.01
     evals = 1
     for it in range(maxit):
         q = g.clone()
@@ -133,7 +133,7 @@ def main():
             torch.save(dict(U=U, lam=lam, outer=outer), ck)
         P = LightProblem(chain, V)
         shape = P.shape
-        while outer < 14:
+        while outer < 40:
             if time.time() - T0 > BUDGET:
                 print("budget reached, checkpointed", flush=True)
                 return

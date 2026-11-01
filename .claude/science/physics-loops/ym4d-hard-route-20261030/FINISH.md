@@ -9,7 +9,7 @@ Written by the target lead on 2026-10-31. `GOAL.md` holds the target and the def
 | File | gap | unchecked | implication | Last read from outside |
 |---|---|---|---|---|
 | `parts/hard-core--independent.md` | 1 | 1 | 29 | Gate at `16ca92dd7`: the large-field sector and abelian core read as sound, the rough-set step is wrong as written, and the sector at complex W is not closed; counts here predate it |
-| `parts/hard-core--mapped.md` | 3 | 0 | 58 | Gates at `60036ba4d` (repaired Theorem Z, Lemma OC wrong as written) and `7c12c6981` (Lemma EX stands, Lemma EX2 does not yet); Lemma OW is ungated; counts here predate them |
+| `parts/hard-core--mapped.md` | 3 | 0 | 58 | Gates at `60036ba4d`, `7c12c6981` and, cross-provider, `theorem-dm-codex-892504e4c`: Theorem DM, (Z), Lemmas CC and OW CORRECT-NO-ADVANCE, with the free-bond count of DM on the wrong region; counts here predate them |
 | `parts/upper-chain.md` | 6 | 1 | 19 | Gates at `c3242879df`, before its fourth form |
 | `parts/witness.md` | 5 | 3 | 10 | Gate at `3b7fd4e57`, which changed the definition of NT2 |
 

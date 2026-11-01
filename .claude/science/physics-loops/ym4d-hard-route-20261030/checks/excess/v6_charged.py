@@ -149,6 +149,25 @@ class LightProblem(Problem):
                 del H, Up, r, val, g
         return total
 
+    def cgrad_left(self, U0, lam, chunk=256):
+        """Left-trivialised gradient at U0 of <lam, resid>: chunks of parents, graph only on the sites each chunk reads."""
+        B = self.chain.levels[0]
+        if not hasattr(B, "groups"):
+            B._setup()
+        Uq = U0.detach().clone().requires_grad_(True)
+        total = torch.zeros_like(U0)
+        idxs = torch.arange(B.base.shape[1])
+        tgt = self.V.reshape(-1, B.d, 4)
+        lam_f = lam.reshape(-1, B.d, 3)
+        for mu in range(B.d):
+            for start in range(0, len(idxs), chunk):
+                sel = idxs[start:start + chunk]
+                r = qlog(qmul(parent_links(B, Uq, B.base[:, sel], mu), qinv(tgt[sel, mu])))
+                g, = torch.autograd.grad((lam_f[sel, mu] * r).sum(), Uq)
+                total += g
+                del r, g
+        return qmul(total, qinv(U0))[..., 1:]
+
     def _wilson_grad(self, H0, U0):
         """Gradient of the Wilson action in H at H0, one orientation at a time, so each graph is freed."""
         total = torch.zeros_like(H0)

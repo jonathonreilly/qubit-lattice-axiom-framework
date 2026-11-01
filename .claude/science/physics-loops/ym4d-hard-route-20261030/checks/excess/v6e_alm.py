@@ -37,6 +37,67 @@ def report(tag, U, V, extra=None):
     return out
 
 
+def lbfgs(P, U, lam, shape, maxit=150, m=6):
+    """L-BFGS on the group, left trivialised, no vector transport: steps are small."""
+
+    def phi(Ux, want_grad=True):
+        r = P.resid(Ux)
+        val = float(wilson(Ux)) + float((lam * r).sum()) + 0.5 * RHO * float((r * r).sum())
+        if not want_grad:
+            return val, None
+        return val, P._wilson_grad(torch.zeros(shape), Ux) + P.cgrad_left(Ux, lam + RHO * r)
+
+    val, g = phi(U)
+    S, Y, Rh = [], [], []
+    alpha0 = 0.05
+    evals = 1
+    for it in range(maxit):
+        q = g.clone()
+        al = []
+        for s_, y_, rh in zip(reversed(S), reversed(Y), reversed(Rh)):
+            a = rh * float((s_ * q).sum())
+            al.append(a)
+            q -= a * y_
+        if S:
+            q *= float((S[-1] * Y[-1]).sum()) / float((Y[-1] * Y[-1]).sum())
+        else:
+            q *= alpha0
+        for (s_, y_, rh), a in zip(zip(S, Y, Rh), reversed(al)):
+            b = rh * float((y_ * q).sum())
+            q += (a - b) * s_
+        d = -q
+        slope = float((g * d).sum())
+        if slope >= 0:
+            d = -alpha0 * g
+            slope = float((g * d).sum())
+            S, Y, Rh = [], [], []
+        t = 1.0
+        while True:
+            Un = qmul(qexp(t * d), U)
+            Un = Un / torch.sqrt((Un * Un).sum(-1, keepdim=True))
+            vn, _ = phi(Un, want_grad=False)
+            evals += 1
+            if vn <= val + 1e-4 * t * slope or t < 1e-3:
+                break
+            t *= 0.5
+        _, gn = phi(Un)
+        evals += 1
+        sk = t * d
+        yk = gn - g
+        sy = float((sk * yk).sum())
+        if sy > 1e-14:
+            S.append(sk)
+            Y.append(yk)
+            Rh.append(1.0 / sy)
+            if len(S) > m:
+                S.pop(0), Y.pop(0), Rh.pop(0)
+        U, g, val = Un, gn, vn
+        guard()
+        if float(g.abs().max()) < 2e-5:
+            break
+    return U, evals
+
+
 def main():
     res_path = os.path.join(HERE, "v6e_alm.json")
     res = json.load(open(res_path)) if os.path.exists(res_path) else []
@@ -76,29 +137,13 @@ def main():
             if time.time() - T0 > BUDGET:
                 print("budget reached, checkpointed", flush=True)
                 return
-            Uc = U
-            cnt = [0]
-
-            def fun(x):
-                cnt[0] += 1
-                guard()
-                H = torch.from_numpy(x).reshape(shape)
-                Uh = qmul(qexp(H), Uc)
-                r = P.resid(Uh)
-                val = float(wilson(Uh)) + float((lam * r).sum()) + 0.5 * RHO * float((r * r).sum())
-                g = P._wilson_grad(H, Uc) + P._constraint_grad(H, Uc, lam + RHO * r)
-                return val, g.reshape(-1).numpy()
-
-            sol = minimize(fun, np.zeros(int(np.prod(shape))), jac=True, method="L-BFGS-B", options=dict(maxcor=6, maxiter=150, maxfun=175, ftol=1e-14, gtol=1e-6))
-            H = torch.from_numpy(sol.x).reshape(shape)
-            U = qmul(qexp(H), Uc)
-            U = U / torch.sqrt((U * U).sum(-1, keepdim=True))
+            U, cnt = lbfgs(P, U, lam, shape)
             r = P.resid(U)
             lam = lam + RHO * r
-            g = P.lag_grad(torch.zeros(shape), U, lam)
+            g = P._wilson_grad(torch.zeros(shape), U) + P.cgrad_left(U, lam)
             outer += 1
             gn, rn = float(g.abs().max()), float(r.abs().max())
-            print(f"  {name} outer {outer} evals {cnt[0]} |g_L|={gn:.3e} |r|={rn:.3e} S={float(wilson(U)):.8f} E={flux_stats(U)[1]:.8f} t {time.time()-T0:.0f} rss {rss_gb():.2f}", flush=True)
+            print(f"  {name} outer {outer} evals {cnt} |g_L|={gn:.3e} |r|={rn:.3e} S={float(wilson(U)):.8f} E={flux_stats(U)[1]:.8f} t {time.time()-T0:.0f} rss {rss_gb():.2f}", flush=True)
             torch.save(dict(U=U, lam=lam, outer=outer), ck)
             if gn < 2e-4 and rn < 1e-6:
                 break

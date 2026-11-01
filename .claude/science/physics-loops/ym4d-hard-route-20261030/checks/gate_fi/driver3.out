@@ -1,0 +1,8 @@
+best_PC_L5_sparse.npz fixed new w1 2.0 old w1 2.0 ratio_c 1.48208 min|m| 1.8307353051351696e-05 old m 1.8307353043850904e-05
+best_R1_L3.npz rule new w1 1.9990097924 old w1 1.9990097924 ratio_c 0.999985 min|m| 0.9999999999858231 old m 0.9999999999858233
+best_R1_L5.npz rule new w1 1.999999994 old w1 1.999999994 ratio_c 0.999999 min|m| 0.9999999999999195 old m 0.9999999999999193
+R1 runs 96 max Ratio_C 0.999999847119815 by L {3: 1.0, 5: 0.999999, 7: 0.999998, 9: 0.999999}
+R2 runs 36 max Ratio_C 0.9999998187796463 by L {3: 1.0, 5: 1.0, 7: 0.999997}
+PC runs 16 max Ratio_C 2.4474290032376236 by L {5: 1.48208, 7: 2.447429, 9: 0.973544, 11: 0.908612}
+{"L": 3, "start": "sheet", "steps": 4000, "best_A": 9, "L2": 9, "best_ratio": 0.9999944179325837, "final_A": 376, "acc": 810, "secs": 61.1}
+{"L": 3, "start": "sheet_off", "steps": 4000, "best_A": 9, "L2": 9, "best_ratio": 0.9999944195199675, "final_A": 334, "acc": 651, "secs": 61.2}

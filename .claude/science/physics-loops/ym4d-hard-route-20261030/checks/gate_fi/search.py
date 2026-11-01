@@ -64,6 +64,13 @@ def start(name, L, seed):
             U[mu][o, o, o, o] = m1
             s = [o, o, o, o]; s[mu] -= 1
             U[mu][tuple(s)] = m1
+    elif name == "star_sheet":               # star defect plus a weak off-centre sheet, so that a tiny mean sees a z-dependent push
+        for mu in (0, 1):
+            U[mu][o, o, o, o] = m1
+            s = [o, o, o, o]; s[mu] -= 1
+            U[mu][tuple(s)] = m1
+        U[0][L - 1, L:, ...] = rot(0.02)
+        a = 1e-5
     elif name == "starlat":                  # the same defect at a sublattice of block 00, so that every x_0 sits near one
         st = 2 if L <= 5 else 3
         for x in np.ndindex(L, L, L, L):

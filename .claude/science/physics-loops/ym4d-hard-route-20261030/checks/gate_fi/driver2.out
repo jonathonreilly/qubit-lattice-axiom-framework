@@ -82,3 +82,5 @@ L=9 R1 sheet_int  seed 2 start Ratio_C 0.000 best Ratio_C 0.2572 Ratio_A 0.2572 
 L=9 R1 gas        seed 1 start Ratio_C 0.000 best Ratio_C 0.2808 Ratio_A 0.2807 w1 1.880 rhs_c 6.6931 min|m| 0.485 nrough 10250 evals 879 216.1s
 L=9 R1 gas        seed 2 start Ratio_C 0.000 best Ratio_C 0.2388 Ratio_A 0.2388 w1 1.875 rhs_c 7.8542 min|m| 0.283 nrough 9077 evals 611 141.2s
 L=9 R1 patch      seed 1 start Ratio_C 0.000 best Ratio_C 0.9414 Ratio_A 0.9414 w1 1.062 rhs_c 1.1286 min|m| 1.000 nrough 7390 evals 1010 256.9s
+L=9 R1 patch      seed 2 start Ratio_C 0.001 best Ratio_C 0.9031 Ratio_A 0.9012 w1 1.012 rhs_c 1.1210 min|m| 0.999 nrough 10660 evals 1002 248.1s
+L=9 R1 overall best Ratio_C 0.9414

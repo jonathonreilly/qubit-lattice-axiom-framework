@@ -32,6 +32,14 @@ Unregistered probes are labelled as such where they appear.
 
 `checks/gate_fi/fi_map.py` is written from Text 5.1, 5.4, not from the old script. A mean over one coordinate of phi(s) seg(s -> t) factors through the line transport, so a full evaluation is O(L^4), and L = 9 and 11 are reachable. `crosscheck.py` output is in `crosscheck.out`: PASS-X, |W - 1| agrees with the attempt's pure-Python map to 2e-15 on eight fields at L = 3, rule and fixed; gauge invariance at L = 5 to 1e-13, with the rule moving x_0; PASS-G, autograd against central differences to 7 digits. The centre sheet gives Ratio 1.0000 exactly at L = 3 to 11.
 
-## First results (interim, run under a confirmed lock, memory 56 to 68 percent free)
+## Results so far (interim, one more probe running)
 
-Exact best Ratio_C per regime, 112 gradient runs. No field above 1.0000 in R1 at L = 3, 5, 7, 9 or in R2 at L = 3, 5, 7. Positive control so far 1.33, 1.75 at L = 5, 7, below the registered 3 at L = 5. Extended runs are in progress.
+Run under a confirmed lock, nice, BLAS threads 1, RSS guard 2 GB, memory 56 to 68 percent free at each start.
+
+| Search | L | Runs | Max Ratio_C |
+|---|---|---|---|
+| R1 gradient | 3, 5, 7, 9 | 96 in all | 1.000000, 0.999999, 0.999998, 0.999999 |
+| R2 gradient | 3, 5, 7 | 36 in all | 1.000000, 1.000000, 0.999997 |
+| Fixed x_0 = y, control, star with a weak sheet | 5, 7, 9, 11 | best per L | 1.48, 2.45, 3.84, 4.85 |
+
+Z2 anneal with hard constraint |W - 1| >= 1.9: at L = 3, 5, 7, no field with fewer than L^2 vortex plaquettes.

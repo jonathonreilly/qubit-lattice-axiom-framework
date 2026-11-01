@@ -67,6 +67,7 @@ To share, run `git pull --rebase origin claude/ym4d-hard-route && git push origi
 ## Keeping the two attempts independent
 
 - **Independent side.** Read `parts/hard-core--independent.md`, `parts/hard-core--independent--good.md` if present, its library files (`lattice_gehring_hls`, `lattice_sobolev_box_gauge`, `path_expansion_locality`, `ultralocal_cluster_expansion`), the statements of the upper chain's clauses and `GOAL.md`. The upper chain's audit tables, Obligations and Requests quote the mapped attempt, so leave them out. Do not read the mapped file, any other file in `library/`, gates on the mapped attempt, the Sussman-Alpoge repository or any other AI-written account of a Yang-Mills proof. This also holds for gates on this side, so that their reports can go back to the attempt.
+  A worker that can reach forbidden files will sometimes read them by accident, so a worker on this side gets a filtered copy with no git history where the machine allows it.
 - **Mapped side.** Read the mapped file, `library/`, and the Sussman-Alpoge repository at `c854ad8b3a42`, credited. It is unvetted and carries no weight until proved here. Do not read `parts/hard-core--independent.md` or gates on it.
 - **Neutral.** Read either attempt's statements. Carry no proof text from one to the other.
 

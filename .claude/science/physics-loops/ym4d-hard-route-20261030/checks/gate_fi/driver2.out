@@ -1,0 +1,12 @@
+L=3 R1 patch      seed 1 start Ratio_C 0.005 best Ratio_C 0.8361 Ratio_A 0.8361 w1 1.650 rhs_c 1.9729 min|m| 0.999 nrough 229 evals 411 26.4s
+L=3 R1 patch      seed 2 start Ratio_C 0.006 best Ratio_C 0.8043 Ratio_A 0.8043 w1 0.165 rhs_c 0.2046 min|m| 1.000 nrough 51 evals 536 34.4s
+L=3 R1 star       seed 1 start Ratio_C 0.000 best Ratio_C 1.0000 Ratio_A 1.0000 w1 1.999 rhs_c 1.9990 min|m| 1.000 nrough 9 evals 281 18.0s
+L=3 R1 star       seed 2 start Ratio_C 0.000 best Ratio_C 0.8904 Ratio_A 0.8904 w1 1.880 rhs_c 2.1108 min|m| 1.000 nrough 241 evals 619 39.7s
+L=3 R1 starlat    seed 1 start Ratio_C 0.000 best Ratio_C 0.3401 Ratio_A 0.3401 w1 1.972 rhs_c 5.7991 min|m| 0.331 nrough 722 evals 349 22.4s
+L=3 R1 starlat    seed 2 start Ratio_C 0.000 best Ratio_C 0.3851 Ratio_A 0.3851 w1 1.982 rhs_c 5.1463 min|m| 0.335 nrough 39 evals 628 40.3s
+L=3 R1 gas        seed 1 start Ratio_C 0.000 best Ratio_C 0.9089 Ratio_A 0.9087 w1 1.902 rhs_c 2.0930 min|m| 1.000 nrough 202 evals 453 29.2s
+L=3 R1 gas        seed 2 start Ratio_C 0.000 best Ratio_C 0.9933 Ratio_A 0.9933 w1 1.988 rhs_c 2.0011 min|m| 1.000 nrough 9 evals 255 16.4s
+L=3 R1 overall best Ratio_C 1.0000
+sheet start 1.0 w1 2.0 A 9
+{"L": 3, "start": "sheet", "steps": 3000, "best": 0.9999944179325837, "A": 9, "final": 0.9999944179325837, "acc": 0, "secs": 45.6}
+sheet_int start 0.0 w1 0.0 A 9

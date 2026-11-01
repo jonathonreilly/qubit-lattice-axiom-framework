@@ -131,8 +131,7 @@ class Search:
         g = torch.cat([q.grad.reshape(-1) for q in Q]).numpy().copy()
         return float(J.detach()), g
 
-    def run(self, U, evals):
-        deltas = [0.1, 0.03, 0.01, 0.003, 0.001]
+    def run(self, U, evals, deltas):
         x = self.pack(U)
         for d in deltas:
             res = minimize(self.fg, x, args=(d,), jac=True, method="L-BFGS-B",
@@ -150,6 +149,8 @@ def main():
     ap.add_argument("--starts", default="flat,smooth,sheet,sheet_th,sheet_int,halfcut,halfcut2,tri,patch,star,starlat,gas")
     ap.add_argument("--seeds", type=int, default=1); ap.add_argument("--evals", type=int, default=400)
     ap.add_argument("--out", default="runs.jsonl")
+    ap.add_argument("--tag", default="")
+    ap.add_argument("--deltas", default="0.1,0.03,0.01,0.003,0.001")
     a = ap.parse_args()
     L = a.L
     eps, s_rule, base = {"R1": (0.02 / L ** 2, 0.02, "rule"), "R2": (0.05, 0.25, "rule"), "PC": (0.02 / L ** 2, 0.02, "fixed")}[a.regime]
@@ -160,7 +161,7 @@ def main():
             S = Search(L, eps, s_rule, base, name)
             U0 = start(name, L, seed)
             e0 = fm.evaluate(U0, L, eps, s_rule, base)
-            S.run(U0, a.evals)
+            S.run(U0, a.evals, [float(d) for d in a.deltas.split(",")])
             b = S.best
             rec = dict(L=L, regime=a.regime, start=name, seed=seed, r0=e0["ratio_c"], secs=round(time.time() - t0, 1), nev=S.nev, **b)
             with open(HERE / a.out, "a") as fh:
@@ -168,7 +169,7 @@ def main():
             print(f"L={L} {a.regime} {name:10s} seed {seed} start Ratio_C {e0['ratio_c']:.3f} best Ratio_C {b['ratio_c']:.4f} Ratio_A {b['ratio_a']:.4f} w1 {b.get('w1',0):.3f} rhs_c {b.get('rhs_c',0):.4f} min|m| {b.get('min_m',0):.3f} nrough {b.get('nrough',0)} evals {S.nev} {rec['secs']}s", flush=True)
             if b["ratio_c"] > overall and S.bestU is not None:
                 overall = b["ratio_c"]
-                np.savez_compressed(HERE / f"best_{a.regime}_L{L}.npz", **{f"U{i}": u.numpy().astype(np.float64) for i, u in enumerate(S.bestU)})
+                np.savez_compressed(HERE / f"best_{a.regime}_L{L}{a.tag}.npz", **{f"U{i}": u.numpy().astype(np.float64) for i, u in enumerate(S.bestU)})
     print(f"L={L} {a.regime} overall best Ratio_C {overall:.4f}", flush=True)
 
 if __name__ == "__main__":

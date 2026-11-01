@@ -1,2 +1,20 @@
 extra ybl=3: n=2 D=2: rows 1290 fine 198x27 lam 0.28809 null 120 K(top,top) 3.712e-02
 extra ybl=3: n=2 D=4: rows 1296 fine 216x27 lam 0.30819 null 120 K(top,top) 2.551e-03
+extra ybl=3: n=3 D=2: rows 4044 fine 594x81 lam 0.23818 null 390 K(top,top) 4.032e-02
+extra ybl=3: n=3 D=4: rows 4050 fine 648x81 lam 0.23818 null 390 K(top,top) 2.878e-03
+n=2 D=2: rows 430 fine 198x9 lam 0.38080 null 40 K(top,top) 3.296e-02 t=0s
+n=2 D=4: rows 432 fine 216x9 lam 0.38080 null 40 K(top,top) 2.265e-03 t=0s
+n=2 D=6: rows 434 fine 234x9 lam 0.38080 null 40 K(top,top) 1.558e-04 t=0s
+n=2 D=8: rows 436 fine 252x9 lam 0.38080 null 40 K(top,top) 1.072e-05 t=0s
+n=3 D=2: rows 1348 fine 594x27 lam 0.30819 null 130 K(top,top) 3.546e-02 t=0s
+n=3 D=4: rows 1350 fine 648x27 lam 0.30819 null 130 K(top,top) 2.530e-03 t=0s
+n=3 D=6: rows 1352 fine 702x27 lam 0.30819 null 130 K(top,top) 1.808e-04 t=0s
+n=3 D=8: rows 1354 fine 756x27 lam 0.30819 null 130 K(top,top) 1.292e-05 t=0s
+n=4 D=2: rows 4102 fine 1782x81 lam 0.23818 null 400 K(top,top) 3.577e-02 t=5s
+n=4 D=4: rows 4104 fine 1944x81 lam 0.23818 null 400 K(top,top) 2.564e-03 t=5s
+n=4 D=6: rows 4106 fine 2106x81 lam 0.23818 null 400 K(top,top) 1.840e-04 t=5s
+n=4 D=8: rows 4108 fine 2268x81 lam 0.23818 null 400 K(top,top) 1.320e-05 t=5s
+rates (n, l, lp): {(2, 0, 0): np.float64(1.326), (2, 0, 1): np.float64(1.332), (2, 1, 0): np.float64(1.332), (2, 1, 1): np.float64(1.338), (3, 0, 0): np.float64(1.28), (3, 0, 1): np.float64(1.294), (3, 0, 2): np.float64(1.3), (3, 1, 0): np.float64(1.294), (3, 1, 1): np.float64(1.308), (3, 1, 2): np.float64(1.314), (3, 2, 0): np.float64(1.3), (3, 2, 1): np.float64(1.314), (3, 2, 2): np.float64(1.32), (4, 0, 0): np.float64(1.223), (4, 0, 1): np.float64(1.315), (4, 0, 2): np.float64(1.278), (4, 0, 3): np.float64(1.271), (4, 1, 0): np.float64(1.315), (4, 1, 1): np.float64(1.263), (4, 1, 2): np.float64(1.284), (4, 1, 3): np.float64(1.29), (4, 2, 0): np.float64(1.278), (4, 2, 1): np.float64(1.284), (4, 2, 2): np.float64(1.306), (4, 2, 3): np.float64(1.312), (4, 3, 0): np.float64(1.271), (4, 3, 1): np.float64(1.29), (4, 3, 2): np.float64(1.312), (4, 3, 3): np.float64(1.317)}
+amplitude by depth {2: 0.0022649, 3: 0.0025305, 4: 0.0025636}
+A1 PASS A2 PASS A3 PASS
+peak RSS bytes 1728217088

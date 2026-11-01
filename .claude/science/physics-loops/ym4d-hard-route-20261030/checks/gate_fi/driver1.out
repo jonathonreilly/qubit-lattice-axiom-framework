@@ -53,3 +53,7 @@ L=7 R1 flat       seed 1 start Ratio_C 0.000 best Ratio_C 0.7985 Ratio_A 0.7974 
 L=7 R1 smooth     seed 1 start Ratio_C 0.000 best Ratio_C 0.5641 Ratio_A 0.5634 w1 0.157 rhs_c 0.2787 min|m| 1.000 nrough 5407 evals 605 74.5s
 L=7 R1 sheet      seed 1 start Ratio_C 0.401 best Ratio_C 1.0000 Ratio_A 1.0000 w1 2.000 rhs_c 2.0000 min|m| 1.000 nrough 49 evals 475 55.8s
 L=7 R1 sheet_th   seed 1 start Ratio_C 0.243 best Ratio_C 0.6059 Ratio_A 0.5816 w1 0.023 rhs_c 0.0384 min|m| 1.000 nrough 1809 evals 576 70.6s
+L=7 R1 sheet_int  seed 1 start Ratio_C 0.004 best Ratio_C 0.5517 Ratio_A 0.5517 w1 1.898 rhs_c 3.4411 min|m| 0.160 nrough 41410 evals 310 35.8s
+L=7 R1 halfcut    seed 1 start Ratio_C 0.326 best Ratio_C 0.6364 Ratio_A 0.6364 w1 2.000 rhs_c 3.1429 min|m| 0.143 nrough 77 evals 530 62.2s
+L=7 R1 halfcut2   seed 1 start Ratio_C 0.137 best Ratio_C 0.7425 Ratio_A 0.7425 w1 0.204 rhs_c 0.2747 min|m| 1.000 nrough 3994 evals 605 74.0s
+L=7 R1 tri        seed 1 start Ratio_C 0.217 best Ratio_C 0.5427 Ratio_A 0.5427 w1 0.057 rhs_c 0.1052 min|m| 1.000 nrough 3825 evals 610 74.7s

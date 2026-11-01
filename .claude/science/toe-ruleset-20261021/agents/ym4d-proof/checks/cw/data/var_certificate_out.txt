@@ -1,0 +1,1 @@
+{'small_kappa_cutoff': 0.02630161943384634, 'K': 1.2, 'cells': 29602, 'certified': True, 'max_cell_upper': 0.24999135376971368}

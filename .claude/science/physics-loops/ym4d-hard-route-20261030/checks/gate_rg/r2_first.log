@@ -1,0 +1,12 @@
+R2a d 2 Np 8: V=1 1.30e-09, pure gauge V 1.63e-09, gauge Z 1.02e-15 PASS; R2b control, no block gauge 2.199e-01 PASS (0.1s)
+R2a d 3 Np 8: V=1 5.32e-09, pure gauge V 5.57e-09, gauge Z 2.70e-15 PASS; R2b control, no block gauge 5.065e-01 PASS (0.8s)
+R2a d 4 Np 4: V=1 1.72e-08, pure gauge V 1.40e-08, gauge Z 2.70e-15 PASS; R2b control, no block gauge 8.338e-01 PASS (4.8s)
+R2c f 0.0833: max row sum 0.0049, row sum/f 0.059 (6.8s)
+R2c f 0.0396: max row sum 0.0022, row sum/f 0.057 (6.9s)
+R2c f 0.0196: max row sum 0.0011, row sum/f 0.056 (7.0s)
+R2c PASS
+Traceback (most recent call last):
+  File "/Users/jonBridger/ym4d-worker/repo/.claude/science/physics-loops/ym4d-hard-route-20261030/checks/gate_rg/r2_derivative.py", line 93, in <module>
+    print(f"R2d Np {Np} f {f:.4f}: largest sup distance with block norm above {thr:.0e}: {int(D[N > thr].max())}")
+                                                                                              ^^^^^^^^^^^^^^^^
+RuntimeError: max(): Expected reduction dim to be specified for input.numel() == 0. Specify the reduction dim with the 'dim' argument.

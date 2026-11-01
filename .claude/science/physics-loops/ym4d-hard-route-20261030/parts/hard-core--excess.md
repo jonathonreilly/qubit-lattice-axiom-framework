@@ -412,7 +412,7 @@ A variance in the gauge at y against the gauge at y'': they differ by Ad(g) with
 | Lemma EX2 | Implication, rewritten (Lemma EX2'), gauge fixed | (A1) to (A4) |
 | Prop DS | Not rewritten; 5.4 says what changes | Its owner |
 
-**The gate's list.** `gates/lemma-ex-7c12c6981.md`: D1 dissolved (5.2, 5.3: transports at block scale, l^4 only where it costs nothing). D2 repaired (the full F-ddot is in (D)). D3 repaired (5.1). D4 gone for Lemma EX and for Lemma TOP; the tail in Lemma O3 and (SRC) is untouched. D5: not read here. D6, D7: moot, no Plancherel and no IMS. *No field with topological charge at small flux had been tested:* the proofs above read no sector; T6 is the test (Section 7). `gates/closure-bad958abb.md` D4 repaired by (CR) and Lemma CJ, with no Lemma AN1 and no Uhlenbeck gauge, in 4.2.
+**The gate's list.** `gates/lemma-ex-7c12c6981.md`: D1 dissolved (5.2, 5.3: transports at block scale, l^4 only where it costs nothing). D2 repaired (the full F-ddot is in (D)). D3 repaired (5.1). D4 gone for Lemma EX and for Lemma TOP; the tail in Lemma O3 and (SRC) is untouched. D5: not read here. D6, D7: moot, no Plancherel and no IMS. *No field with topological charge at small flux had been tested:* the proofs above read no sector, and T6 now tests it, a true minimiser at Chern number 2 and f = 0.129, with e/I = 0.158 (Section 7). `gates/closure-bad958abb.md` D4 repaired by (CR) and Lemma CJ, with no Lemma AN1 and no Uhlenbeck gauge, in 4.2.
 
 ## Obligations
 
@@ -446,8 +446,18 @@ Criteria: `checks/excess/CRITERIA.md`, written before each run; additions dated 
 | T10 lift, SU(2) | (a), (c), (e) PASS; (b) fails at f = 1.53 only, outside any class flux; (d) void as first written, corrected, PASS |
 | T11 Lemma TL at a variation | Ratio clause PASS: 0.147 to 0.167 transverse, 0.36 to 0.38 in-plane, level from a = 0.2 to a = 0. Second clause, block gauge against a global gauge, **not run** |
 | T12 sup over P, abelian lift | Report only: C_2 levels off, see 2.1 |
-| T6a lift of a charged parent | PASS on field a: second Chern number 2, constant abelian flux plus smooth non-abelian modes, N' = 8, L = 3, d = 4, f = 0.129. Residual 1.9e-12 after 5 Picard steps, rate 0.01 per step. Charge estimate 1.989 on V', 1.994 on U. e_tr/I^grad = 0.219. Field b: see below |
-| T6 true minimiser, charged | Running, see below |
+| T6a lift of a charged parent | PASS on both fields, see below |
+| T6 true minimiser, charged | PASS on field a, see below |
+
+**The charged field (T6, T6a): the test the gate asked for.** Constant abelian flux with n_12 = n_34 = 1 on a fine torus of 24^4, so second Chern number 2 and f near 0.1, plus smooth non-abelian modes; field b adds a localised bump. N' = 8, L = 3, d = 4, SU(2), comb map. The charge estimate is a clover sum, exact at zero perturbation (2.0000).
+
+| | f | Q(V'), Q(U) | E(V') | e | I^grad(V') | e / I^grad | C_eff at c_1 = 1/810 |
+|---|---|---|---|---|---|---|---|
+| field a, lift (residual 1.9e-12) | 0.129 | 1.989, 1.994 | 85.842 | 4.366 | 19.911 | 0.219 | -0.39 |
+| field a, true minimiser | 0.129 | 1.989, 1.993 | 85.842 | 3.141 | 19.911 | **0.158** | **-0.28** |
+| field b, lift | 0.125 | 1.998, 1.999 | 84.170 | 3.627 | 15.556 | 0.233 | -0.34 |
+
+C_eff := (c_1 I - e)/(f E); negative means the inequality holds with no error term. Field a: |r| = 3.4e-7 and stationarity 1.3e-5, inside the tolerances fixed in advance (1e-6, 2e-4), 13 outer loops. So **in a charged sector at small flux the true minimiser has e/I = 0.158**, above the abelian c_e = 0.0988, and the lift is within a factor 1.39 of the minimum. The lower and upper bounds of this file bracket it, in a field no earlier test reached. It is one field at one flux, one level, L = 3: a test of the proofs, not a bound. *How it was run.* Three runs stopped: twice at the 2 GB guard, once at the harness's 2 hour limit, with no checkpoint. Newton stalled on this background, as the solver's flat preconditioner is wrong at the gauge seam. The result is from an augmented Lagrangian with L-BFGS started at the lift, at rho = 10 then rho = 100. All logs are kept in `checks/excess/`, and the steps are in `CRITERIA.md`.
 
 ## Requests
 

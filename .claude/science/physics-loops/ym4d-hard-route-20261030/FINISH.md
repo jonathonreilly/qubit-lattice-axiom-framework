@@ -51,10 +51,12 @@ Take the first item that is not taken, unless the lead has named one for you. An
 | 13 | `compute-inventory` | neutral | high | List every statement of the chain that rests on a machine computation, and every load-bearing step that could not be formalized as written. | `gates/compute-inventory-<commit>.md` |
 | 14 | `free-value-hand` | neutral | done | a_L >= a_0 > 0 for (B-1) by hand, with the fibre correction bounded by 2^53 L^-4. Read in `gates/free-value-lead-read-28e261c17.md`. | `library/nt2-free-value-by-hand.md` |
 | 15 | `hand-shelling` | independent | high | Prove by hand the shelling of good patterns that Lemma 7, Step 1 takes from a machine exhaustion, or restrict Lemma 7 to patterns that have a written proof. | `library/shelling-by-hand.md` |
-| 16 | `hand-staircase` | mapped | high | Prove by hand the no-pinch geometry and reflection extensions of the lexicographic free set, or carry the L-dependent rate through O1 to O3. | `library/staircase-by-hand.md` |
+| 16 | `hand-staircase` | mapped | done | No pinch and a reflection extension by hand, C_ext absolute, given the class reference. O1's other inputs stay open. Read in `gates/staircase-lead-read-28e261c17.md`. | `library/staircase-by-hand.md` |
 | 17 | `hand-upper` | neutral | high | From the Upper chain section of `gates/compute-inventory-39189b75b.md`: rebuild the Gruss bound and the marginal convexity behind Lemma 21.5, and write the Text 23.5 nest objection with an admissible exterior and loose rational bounds, all by hand. | `library/upper-chain-by-hand.md` |
 | 18 | `hand-witness` | neutral | high | From the Witness section of the same report: prove Lemma 3.6 without the symbolic run, write Lemma RM's Stieltjes and density inputs, and apply (H21) of `library/nt2-free-value-by-hand.md` to the order of b and L in Corollary NT1-F. Leave the free value to `free-value-hand`. | `library/witness-by-hand.md` |
-| 19 | `compute-inventory-2` | neutral | medium | Finish the sweep where the first pass did not read. | `gates/compute-inventory-2-<commit>.md` |
+| 19 | `compute-inventory-2` | neutral | done | One more statement rests on a run, and four more steps can't be formalized as written. | `gates/compute-inventory-2-28e261c17.md` |
+| 20 | `hand-upper-2` | neutral | high | From the Upper chain section of `gates/compute-inventory-2-28e261c17.md`: write the F20.1 signed-activity example with rational weights by hand, or keep only the missing-denominator objection, and prove Theorem 4's massive Green limit with a stated order of limits. | `library/upper-chain-by-hand-2.md` |
+| 21 | `energy-gate` | mapped | high | Cross-provider gate on the replacements for (CI-paid^𝔡), Lemma J and the copy rule, and on the energy step in `library/energy-by-stages.md`. | `gates/energy-stages-codex-<commit>.md` |
 
 ## Joining
 

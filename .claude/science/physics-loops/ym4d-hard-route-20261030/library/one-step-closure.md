@@ -10,7 +10,7 @@ Status: own assembly, 2026-10-31, not reviewed. It is the proof of closure given
 
 *Field and derivatives.* A function Z on the class D_k := { flux <= T_2 } of the level-k torus. D^n Z(V)[b_1, ..., b_n]: derivatives along e^{i t_i b_i} V, in log coordinates at V.
 
-*The profile.* Phi_k(t) := e^{-mu t} + zeta_k e^{-mu_s t}, with mu_s := rho_s/4, zeta_k := x_k^M z_k^{1/2}, and M, z_k as in Lemma HS-T. Norm, for 1 <= n <= N:
+*The profile.* Phi_k(t) := e^{-mu t} + zeta_k e^{-mu_s t}, with mu_s := rho_s/(2 N) (`gates/closure-bad958abb.md`, D5: at rho_s/4 the second tier of HS-T falls more slowly than the norm asks above order 2), zeta_k := x_k^M z_k^{1/2}, and M, z_k as in Lemma HS-T. Norm, for 1 <= n <= N:
 
     ||Z||_n := sup_{V in D_k} sup_{b_1} sum_{b_2, ..., b_n} |D^n Z(V)[b_1, ..., b_n]| / Phi_k(tau(b_1, ..., b_n)/2),
 
@@ -26,7 +26,7 @@ Define c^(n)(Z) through the near part, after a polynomial transfer (mismatch 2).
 
 *H(k).* On D_k, F_k = x_k A_k + vac_k |Lambda_k| + R_k, with R_k(1) = 0, R_k with no F^2 coefficient, lattice symmetric and gauge invariant, ||R_k||_n <= B_n for 5 <= n <= N, c^(m)(R_k) <= B'_m for m = 2, 3, 4. And, added after the gate's D4 (`library/sector-values.md`): (VAL_k), |R_k(V)| <= B_v (I^grad_k(V) + f(V) E_k(V)) plus a toron term, in every sector; and (Loc^c_k), for class fields equal on a ball, in any sector. And the classical statements below, which are free of k; Theorem Z at level k; and, for all boundary data, the same in (I_k^𝔡) with ||Delta R_k^𝔡||_n <= C_n(L) and (VAL^𝔡_k). D_k has T_2 enlarged by a fixed factor, for the cut field of Lemma O3. Quiet is the l^2 condition of `library/quiet-boundary-rarity.md`.
 
-*Conclusion.* H(k) implies H(k + 1), if x_{k+1} >= x_*, with x_{k+1} = x_k - beta_{k+1}, beta_{k+1} = beta^0_{k+1} + O(C(L) g_k^2) + O(x_k^M z_k).
+*Conclusion.* H(j) for all j <= k implies H(k + 1), if x_{k+1} >= x_*, with x_{k+1} = x_k - beta_{k+1}, beta_{k+1} = beta^0_{k+1} + O(C(L) g_k^2) + O(x_k^M z_k).
 
 ## 3. Steps, with input and output norms
 
@@ -45,7 +45,7 @@ Define c^(n)(Z) through the near part, after a polynomial transfer (mismatch 2).
 | Low orders | data, order 5 | ||R_{k+1}||_m | Lemma 3 of that note |
 | Flow | Theorem LS, P1; p^2 coefficient at V' = 1 | beta_{k+1} | `twisted-order-calculus.md`, Text 3, 5.9 |
 | Theorem Z at level k + 1 | (I_k^𝔡), (VAL^𝔡_k), Theorem Z at level k, classical, Lemma ST, (F2) | same | `quiet-boundary-rarity.md` |
-| Values, locality, low orders | one-step sources, Theorem F-D on a staircase, (COMP) | (VAL_{k+1}), (Loc^c_{k+1}), (VAL^𝔡_{k+1}), ||R_{k+1}||_n for n <= 4 | `sector-values.md`, Section 10 below |
+| Values, locality, low orders | one-step sources, Theorem F-D on a staircase, (COMP)(i), (i'), Lemma EX, Lemma TOP | (VAL_{k+1}), (Loc^c_{k+1}), (VAL^𝔡_{k+1}), ||R_{k+1}||_n for n <= 4 | `sector-values.md`, Section 10 below |
 
 F_{k+1} on D_{k+1} is
 
@@ -147,18 +147,18 @@ Smaller points fixed here: the rate mu of the norms must be below rho_f / N, sin
 
 Sections 5, 6 bound low orders of R_{k+1} by a recursion on data: a contraction C_2 (log L)^2 L^-2 rho^-(6-m), a polynomial transfer, a ladder for the slow tier, Lemma 3 at n <= 4. That reads an absolute rate rho and an absolute C_2 at each level, compounding. None of it is needed. (CS) of `library/sector-values.md` has a derivative form: R_k = sum_{m >= 0} Z_{k-m-1} o Lambda_m, with Lambda_m the composite minimal lift of m levels, and Z_j the one-step source. So:
 
-*Step A, sources.* ||Z_j||_{<= 4} <= C(L) (1 + g_j^2 B_6), by Laplace and HS-T, since the mean term is <R_j o Phi> - R_j o V^* at order at most 4, of size g^2 ||R_j||_{<= 6}.
+*Step A, sources (corrected for `gates/closure-bad958abb.md`, D6).* Prop DS reads zeta_j rooted at x in tree-decay norm, by Lemma O1, and not ||Z_j||_{<= 4}. ||zeta_j||_{<= 4} <= C(L) (1 + g_j B_{<= 4} + g_j^2 B_6), by Laplace and HS-T: the cumulants give C(L) g_j ||R_j||_{<= 4}, Text 5.9, and the mean term is <R_j o Phi> - R_j o V^* at order at most 4, of size g^2 ||R_j||_{<= 6}.
 
-*Step B, orders 1, 2.* By Prop DS: ||R_k||_n <= C_n(L) sup_j ||Z_j||_{<= 4} <= C_low(L) (1 + sup_j g_j^2 B_6), for n = 1, 2.
+*Step B, orders 1, 2.* By Prop DS of `library/sector-values.md`, Section 3B: values fall with the level (Lemma FALL), first derivatives from SRC, second from Lemma LAN against a crude third. ||R_k||_n <= C_n(L) sup_j ||zeta_j||_{<= 4} <= C_low(L) (1 + sup_j g_j B_{<= 4} + sup_j g_j^2 B_6), for n = 1, 2.
 
-*Step B', orders 3, 4.* By interpolation, `library/sector-values.md`, Section 3B: B_3, B_4 <= C ( T_2^-2 (B_1 + B_2) + T_2 B_5 ), at rates mu/2, mu/4.
+*Step B', orders 3, 4.* By Lemma FP, `library/far-pair-interpolation.md` (the closure gate's own lemma, D2): B_3 <= C ( T_2^-1 B_2 + T_2^2 B'_5 ) at rate mu/4, B_4 <= C ( T_2^-2 B_2 + T_2 B'_5 ) at rate mu/6, on D, with orders 1, 2, 5, 6 on D^+. The earlier interpolation had a coefficient exactly 1 on B_3, a circle through (Loc^c), wrong rates and steps leaving the class. I have read Lemma FP's proof and it holds as written, with the absorption over the ladder of domains not displayed, which is routine as B is finite on a finite lattice.
 
 *Step C, orders 5, 6.* Section 4, unchanged: its factor C_1^n L^{4 - n} (log L)^{(n-1)/2} <= 1/8 keeps its room in L, and C_n(L) multiplies lower norms. A lift multiplies a rate by L, so the lower rates suffice. So B_5 <= (1/4) B_5 + C_5(L) ( C T_2^-2 (B_1 + B_2) + C T_2 B_5 + 1 ), and B_6 likewise with B_5.
 
-*Closure.* Take a_* so small that C_5(L) C T_2 <= 1/8. Then B_6 <= C(L, a_*) (1 + B_1 + B_2) and B_1, B_2 <= C_low(L) (1 + g^2 B_6). This closes as soon as C(L, a_*) C_low(L) g^2 <= 1/2, for x >= x_*(L, a_*). No constant needs to beat L^-2 except at Step C, which has room in L.
+*Closure.* Take a_* so small that C_5(L) C T_2 <= 1/8. Then B_3, B_4 <= C(a_*) (B_2 + B_5), B_6 <= C(L, a_*) (1 + B_1 + B_2), and B_1, B_2 <= C_low(L) (1 + g B_{<= 4} + g^2 B_6). This closes as soon as C(L, a_*) C_low(L) g <= 1/2, for x >= x_*(L, a_*). No constant needs to beat L^-2 except at Step C, which has room in L. **The induction is H(j) for all j <= k implies H(k + 1), since Step B and (VAL) sum over all j < k (gate D3)**, with ||R_k||_{1, 2, 5, 6} <= B_n on D^+, ||R_k||_{3, 4} <= B_n on D at rates mu/4, mu/6, c^(m) dropped, and constants B_n(L, a_*), and base H(0), R_0 = 0.
 
 *What is no longer read.* c^(m)(R_k) and its recursion; the polynomial transfer; the ladder; Lemma 2 of `library/gauge-taylor-contraction.md` and its second proof; Lemma 3 of that note for R_k itself (it is read inside Lemma O3, for the source); the absolute rate rho of the near kernel in the data; the numerics of `checks/hard-core--mapped_data_contraction.py` as a threat, whose d = 4 values 271, 484 are C(4, L, 1) times 16, and level off with C near 49 (`checks/hard-core--mapped_lift_gradient_limit.py`). Mismatches 2 and 3 of Section 8 stop mattering. Sections 5, 6 stay on record as a second route, which reads more.
 
-*What is read instead.* (COMP) and Lemma EX2, `library/sector-values.md`, Section 3B, and Prop AN4 of `library/analytic-lift.md`. So **uniformity in k of low orders of R_k is a statement about the classical composite lift**, and the quantum part enters only through one-step sources at their own level. If (COMP) failed at some order, the recursion of Section 5 would be the fallback, and it has the same exposure, since its T3 reads a one-level form of the same bound.
+*What is read instead (2026-11-01).* Lemma EX with its weight, Lemma TOP, (COMP)(i), (i') and SRC, `library/sector-values.md`, Sections 3A, 3B. Lemma EX2, (COMP)(ii), Prop AN4 and (LIFT-I) are no longer read: gates `lemma-ex-7c12c6981`, D1 to D3, and `closure-bad958abb`, D1, D4, D7 fall on steps that are gone. So **uniformity in k of low orders of R_k is a statement about the classical composite lift, at the level of energy and one positivity**, and the quantum part enters only through one-step sources at their own level. If Lemma EX failed, the recursion of Section 5 would be the fallback, and it has the same exposure, since its T3 reads a one-level form of the same bound.
 
-*Hostile.* (1) Is Z_j's zero F^2 coefficient exact, for Prop DS? Yes, by the definition of beta_{j+1}, relative to A_{j+1}. The F^2 coefficient of Z_j o Lambda_m is then zero by the exact lift of constant flux. (2) Does the slow tier enter beta through R_k at flat data? beta_{k+1} reads D^2 G(1) with R_k in G_1, at size g^2. As before. (3) Prop DS's constant reads (COMP) free of m. If (COMP)(ii) had a slowly growing factor in m, a polynomial in m is still summable against L^-m. A power of L per level would not be, and the abelian numbers rule that out only at the abelian level. (4) Order 1 at V near flat: D R_k(V) = O(|grad F| + |F|^2), consistent with no F^2 term. Yes.
+*Hostile.* (1) Is Z_j's zero F^2 coefficient exact, for Prop DS? Yes, by the definition of beta_{j+1}, relative to A_{j+1}. The F^2 coefficient of Z_j o Lambda_m is then zero by the exact lift of constant flux. (2) Does the slow tier enter beta through R_k at flat data? beta_{k+1} reads D^2 G(1) with R_k in G_1, at size g^2. As before. (3) Prop DS reads (COMP)(i), (i') free of m, which are energy-level bounds, from Prop AN3, and it reads q < 1 from c_1 > 0 and C_Y finite. A growth of C_beta(L) in m would break Lemma CRUDE; a polynomial in m would still sum against q^{m/4}, and a power of L per level would not. (4) Order 1 at V near flat: D R_k(V) = O(|grad F| + |F|^2), consistent with no F^2 term. Yes.

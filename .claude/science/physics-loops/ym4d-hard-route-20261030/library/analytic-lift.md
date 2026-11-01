@@ -94,7 +94,7 @@ At |S| = 1 this is Theorem F. Induct on |S|: trees through B' for the S_l join t
 
 ## Prop AN4: the composite at the H^2 level, uniformly in the level (2026-10-31; level of each term; not gated)
 
-*Only its first display, at the field, is consumed: (COMP)(ii) of `library/sector-values.md`. Variations are not read, since Lemma EX2 and an interpolation replaced them. The rest is kept as a second route, and it has the weakest step, (delta Q^*) lambda.*
+*Not consumed since 2026-11-01: Section 3B of `library/sector-values.md` now reads Lemma FALL, with no H^2 at the field or at a variation. Kept as a second route. Its weakest steps are Step 5 of (LIFT-I) at depth (`gates/closure-bad958abb.md`, D4) and (delta Q^*) lambda.*
 
 Consumer: Prop DS of that note.
 

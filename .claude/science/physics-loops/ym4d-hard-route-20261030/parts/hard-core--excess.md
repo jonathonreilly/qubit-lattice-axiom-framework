@@ -21,7 +21,7 @@ Started 2026-11-01T07:34Z. No read of `parts/hard-core--independent.md`, of any 
 
 ### 1.1 Setting
 
-Level-j lattice with unit spacing, torus of side n = L N', N' >= 3, L odd; the parent lattice is (L Z / n Z)^4. U is a level-j field, V' := M(U) its Balaban average (the deterministic map; class fields carry no rough label). theta_{mu nu}(z) := log of the plaquette at z, with theta_{nu mu} = -theta_{mu nu}. In the normalisation U = exp(i t . sigma), |Ad(e^theta) - 1| <= 2 |theta|. flux := max |theta|. E(U; W) := sum_{z, mu < nu} W(z) |theta_{mu nu}(z)|^2.
+Level-j lattice with unit spacing, torus of side n = L N', any N' >= 1, L odd; the parent lattice is (L Z / n Z)^4. *Every local step below is read on the universal cover of the torus*, where the field is periodic and a box has an axial gauge. So the size of the torus enters nowhere, and a holonomy around it plays no role: it only says two lifts of a site carry the same data up to a rotation. U is a level-j field, V' := M(U) its Balaban average (the deterministic map; class fields carry no rough label). theta_{mu nu}(z) := log of the plaquette at z, with theta_{nu mu} = -theta_{mu nu}. In the normalisation U = exp(i t . sigma), |Ad(e^theta) - 1| <= 2 |theta|. flux := max |theta|. E(U; W) := sum_{z, mu < nu} W(z) |theta_{mu nu}(z)|^2.
 
 W > 0 with |log W(x) - log W(x')| <= nu |x - x'|_inf / L, nu <= 1/8. So nu is the rate in parent cells. S_e Phi(x) := Ad(V'_e(x)) Phi(x + e), with e a parent unit, is orthogonal on l^2, and grad_e := S_e - 1. I^grad(V'; W) := sum_{x, p, e} W(x) |grad_e theta'_p(x)|^2. Split it as P(W) + T(W): P the in-plane terms, e in {mu, nu} for p = (mu, nu); T the transverse ones.
 
@@ -35,7 +35,7 @@ W > 0 with |log W(x) - log W(x')| <= nu |x - x'|_inf / L, nu <= 1/8. So nu is th
 
 ### 1.2 The local expansion
 
-Box(y) := y + [-2 L, 3 L]^4 and n_y := sum over plaquettes in Box(y) of |theta|^2, with Box read on the torus when it wraps (N' <= 5): the paths used below stay in a slab of width at most 3 L, so they embed for N' >= 3, and n_y only needs to dominate what they read.
+Box(y) := y + [-2 L, 3 L]^4 on the cover, and n_y := sum over plaquettes in Box(y) of |theta|^2. On a small torus a plaquette occurs at most 6^4 times in Box(y), which only changes C(L).
 
 **Lemma LE.** *There are a_0(L) := c/L and C(L) such that in any gauge on the paths of the parent plaquette at y with all fine links |log U_b| <= a <= a_0:*
 
@@ -213,7 +213,7 @@ Let V' be a level-(i+1) field of flux at most f_0(L). For a parent site y let G_
 
 **The field.** On a fine bond inside B(y): exp A^{(y)}(b). On a bond from z in B(y) to z' in B(y'): exp(A^{(y)}(b)) g_{y y'}(z'). Under a parent gauge h, v^{(y)} rotates by h(y), lambda by h(y), and the anchor G_y(y') goes to h(y) G_y(y') h(y')^-1. So this U^flat is parent-gauge covariant, with a fine gauge constant on each block. It is local, and analytic in the parent links for flux small.
 
-**Curvature.** Near B(y), gauge transform B(y') by g_{y y'}. Abelian: v^{(y')} = v^{(y)} - d' lambda up to the anchor rotation, and T_1 d' = d T_0, so the field is A^{(y)} on B(y') too. Non-abelian the two differ by C(L) Theta^2, by BCH on finitely many small elements. So with Theta_y the largest flux on Pi(y),
+**Curvature.** Near B(y), gauge transform B(y') by g_{y y'}. Abelian: v^{(y')} = v^{(y)} + d' lambda up to the anchor rotation, and T_1 d' = d T_0, so A^{(y')} = A^{(y)} + d T_0 lambda, and the field is A^{(y)} on B(y') too. Non-abelian the two differ by C(L) Theta^2, by BCH on finitely many small elements. So with Theta_y the largest flux on Pi(y),
 
     theta_p = T_2 (theta'^{G_y})_p + O(C(L) Theta_y^2)    for p near B(y), in frame y.        (C)
 
@@ -245,7 +245,7 @@ Let V be a level-k field of flux f <= f_1(L), Vtilde_k := V, Vtilde_i := T(Vtild
 
 *Uniform flux.* Put f^_i := L^{2(k-i)} sup |theta(Vtilde_i)|, d^_i the same for sup |grad theta|. By (T1), d^_{i-1} <= (C_6/L) d^_i + C(L) L^{-2(k-i)} f^_i^2 and f^_{i-1} <= f^_i + C d^_i + C(L) L^{-2(k-i)} f^_i^2. For L >= 2 C_6, the d^_i sum geometrically, so sup_i f^_i <= C_7 f, by a bootstrap from f <= f_1(L). **So the trial chain has flux at most C_7 f L^{-2(k-i)}, with no factor per level, and it is a class chain.**
 
-**Theorem TOP-1.** *For L >= L_0 and flux(V) <= f_1(L), in every sector and on every torus with N_k >= 3:*
+**Theorem TOP-1.** *For L >= L_0 and flux(V) <= f_1(L), in every sector and on every torus:*
 
     A_k(V) - E_k(V) <= E_0(Utilde) - E_k(V) <= 2 C_1 I^grad_k(V) + C(L) cub(V),    both with W = 1.
 
@@ -416,7 +416,7 @@ A variance in the gauge at y against the gauge at y'': they differ by Ad(g) with
 
 ## Obligations
 
-- discharged: Lemma K, Theorem V, Lemma LE, Lemma IP, Lemma NN, Lemma BT, Theorem EX: the excess of any field in the fibre is a sum of local variances up to second order, so Lemma EX holds with no toron term, no symbol, no IMS, in every sector, N' >= 3; own proof, same-model, not gated; T0 to T4 PASS
+- discharged: Lemma K, Theorem V, Lemma LE, Lemma IP, Lemma NN, Lemma BT, Theorem EX: the excess of any field in the fibre is a sum of local variances up to second order, so Lemma EX holds with no toron term, no symbol, no IMS, in every sector, on every torus; own proof, same-model, not gated; T0 to T4 PASS
 - discharged: Lemma TL, Theorem EX-loc: pointwise bound of the parent gradient by local variances, compatible weights, no term in E; own proof, same-model, not gated; T7 PASS
 - discharged: c_e >= (1 - L^-2)/96 over all P, abelian, from Theorem V and Lemma BT; own proof, not gated
 - implication: Lemma LIFT, one-level exact lift with gain, tensor chain map plus block frames plus Picard, constants soft; TOP-1 given item (o); T8 to T10 as reported, with L_0 not computed -> Prop GS at W = 1

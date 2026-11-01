@@ -57,7 +57,8 @@ def start(name, L, seed):
         h = unit(torch.randn(r, r, r, r, 4, generator=g))
         for mu in range(4):
             sl = (slice(o, o + r),) * 4
-            U[mu][sl] = h
+            tgt = U[mu][sl]
+            U[mu][sl] = h[tuple(slice(0, n) for n in tgt.shape[:-1])]
     elif name == "star":                     # TUNED2 at y of block 00
         for mu in (0, 1):
             U[mu][o, o, o, o] = m1

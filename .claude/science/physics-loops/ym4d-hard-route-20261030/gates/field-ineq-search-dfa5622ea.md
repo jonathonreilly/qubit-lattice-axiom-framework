@@ -27,3 +27,7 @@ Statement pinned: Theorem 5.5, `parts/hard-core--independent.md` line 940, map D
 - VERIFY: any reported field is recomputed by the attempt's own pure-Python map at L = 3 and 5, or by a second code path at larger L.
 
 Unregistered probes are labelled as such where they appear.
+
+## Build and cross-check (done)
+
+`checks/gate_fi/fi_map.py` is written from Text 5.1, 5.4, not from the old script. A mean over one coordinate of phi(s) seg(s -> t) factors through the line transport, so a full evaluation is O(L^4), and L = 9 and 11 are reachable. `crosscheck.py` output is in `crosscheck.out`: PASS-X, |W - 1| agrees with the attempt's pure-Python map to 2e-15 on eight fields at L = 3, rule and fixed; gauge invariance at L = 5 to 1e-13, with the rule moving x_0; PASS-G, autograd against central differences to 7 digits. The centre sheet gives Ratio 1.0000 exactly at L = 3 to 11.

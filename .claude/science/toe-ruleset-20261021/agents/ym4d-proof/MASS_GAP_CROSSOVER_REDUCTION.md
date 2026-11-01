@@ -163,6 +163,36 @@ No MG row is closed. The fixed-spacing endpoint of
 MASS_GAP_LOCAL_BLOCK_ASTRA is unchanged. H5 is used at its finite-volume
 literature scope. CW is open and is the Clay-level step.
 
+## 9. Update: Proposition S and Theorem H′
+
+Details, scripts and outputs: [MASS_GAP_CW_CROSSOVER_ATTACK.md](MASS_GAP_CW_CROSSOVER_ATTACK.md), [checks/cw/](checks/cw/README.md).
+**CW remains open; no MG row changes status.**
+
+- **Prop. S (SU(2), d = 4; author-side, needs independent review).** For 0 < β < 1/9 the Wilson specification satisfies single-link
+  Dobrushin uniqueness, with influence sum q(β) ≤ 9β. The ingredients are: 18 neighbours per link; Pinsker; KL ≤ ½λ_max(Cov)|δ|² for the
+  tilted S³ family; and λ_max ≤ 1/4. The bound λ_max ≤ 1/4 is arb-certified on 29,602 cells. With RP and A2 this gives a volume-uniform
+  m_lat ≥ −log(9β). Relative to MASS_GAP_LOCAL_BLOCK_ASTRA (Doob, β ≤ 1/32; 18β row bound, β < 1/18), this extends the H4 range for SU(2)
+  to g² > 36 once reviewed. Validated numerics, not certified, give β < 0.117, and the conjectured sharp value is 3π/72 ≈ 0.131. The mass
+  bound is weaker than the Doob bound at very small β.
+- **KP negative.** A simple Kotecký–Preiss character expansion (a_j = I_{2j+1}/I_1, normalization checked to 2e-31) converges only for
+  β ≲ 0.0078 (self-contained counting) or β ≲ 0.0109 (eΔ animal count). It does not beat 1/32.
+- **MDTN finding.** The MDTN/ASQR truncation (arXiv:2502.14175; j_max = ½) is uncontrolled in the crossover: the certified tail
+  τ_½(β) = Σ_{j>½} d_j² a_j exceeds 1 for β ≳ 1.5. Reaching τ < 1e-2 at β ≈ 2–3 needs j_max ≥ 3, i.e. 140 or more states per link. MDTN
+  is not a CW tool. Local MDTN notes are not committed.
+- **Theorem H′.** Theorem H holds with CW replaced by **CW′**: there is a finite link block V (diameter ℓ) and a reference specification
+  γ_0 with Dobrushin–Shlosman-type block coefficient α_V(γ_0) ≤ 1 − 2η. In addition, after k_1(a) + n_* RG steps, the effective
+  gauge-invariant specification is δ(η, V)-close to γ_0, uniformly in a and the volume, and MG2 transports the decay back. The block
+  condition is a strict inequality, so it is open under perturbation. The DS continuous-spin form still has to be checked against the 1985
+  original. New flags:
+  - **C6.** The criterion must hold for the effective Bałaban action, which is not a finite-range link specification.
+  - **C7.** The landing bound must not use the clustering it is meant to produce.
+  - **C8.** Landing near strong-coupling Wilson means carrying the coupling from ḡ to g² ≈ 36. That is the entire non-perturbative problem.
+  - **C9.** Martinelli–Olivieri finite-size criteria are for finite spin spaces only.
+- **Evidence only (C4 applies).** SU(2) 4⁴/6⁴/8⁴ Monte Carlo runs show a smooth plaquette and hot/cold agreement. The dP/dβ peak near
+  β ≈ 2.1–2.3 does not grow with L, and leading-order strong coupling fails beyond β ≈ 1.
+- **Status delta.** H4: SU(2) β_sc from 1/32 to 1/9 *pending review of Prop. S*. CW is unchanged (open) and restated as CW′.
+  MG1/MG3 are unchanged (conditional). MG_rows_closed: [].
+
 ## References
 
 - K. Osterwalder, E. Seiler, Ann. Phys. 110 (1978) 440.
@@ -171,4 +201,8 @@ literature scope. CW is open and is the Clay-level step.
 - A. Guth, Phys. Rev. D 21 (1980) 2291.
 - J. Fröhlich, T. Spencer, Commun. Math. Phys. 83 (1982) 411.
 - K. Osterwalder, R. Schrader, Commun. Math. Phys. 31 (1973) 83; 42 (1975) 281.
+- R. L. Dobrushin, S. B. Shlosman, constructive criterion for uniqueness of Gibbs fields (1985).
+- R. Kotecký, D. Preiss, Commun. Math. Phys. 103 (1986) 491.
+- F. Martinelli, E. Olivieri, finite-volume mixing conditions (1994).
+- S. Chandrasekharan, H. Siew, T. Bhattacharya, arXiv:2502.14175, Phys. Rev. D 111, 114502 (2025).
 - H. D. Kirk, v4 (2 Aug 2026), Zenodo 21765806, as examined in CROSSOVER_LITERATURE_BRIDGE_ASTRA.

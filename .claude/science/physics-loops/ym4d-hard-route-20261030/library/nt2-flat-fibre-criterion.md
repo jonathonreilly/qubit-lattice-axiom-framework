@@ -31,9 +31,9 @@ Put theta_L := C_n C_s^2 L^(-2 kappa_lift), bold-C_n := 2 + C_n (2 + omega_L(g_j
 
     | E_nu e - E_1 e | <= eps_j,                                                                 (F-1)
 
-and for gauge-invariant A, B on D with |A|, |B| <= K,
+and for gauge-invariant A, B on D with |A|, |B| <= b,
 
-    | Cov_nu(A, B) - Cov_1(A, B) | <= 3 K^2 eps_j.                                               (F-2)
+    | Cov_nu(A, B) - Cov_1(A, B) | <= 3 b^2 eps_j.                                               (F-2)
 
 Proof. E_nu e - E_1 e = E_mu[(E_W - E_1) e]. Split on G:
 
@@ -49,9 +49,9 @@ For (F-2) write
 
     Cov_nu(A, B) - Cov_1(A, B) = (E_nu - E_1)[A B] - (E_nu - E_1)[A] E_nu[B] - E_1[A] (E_nu - E_1)[B],
 
-and apply (F-1) to A B / K^2, A / K, B / K. []
+and apply (F-1) to A B / b^2, A / b, B / b. []
 
-Second moments give the oscillation of `witness-two-separation.md`. With the same split, ||E_W A - E_1 A||_(L^2(nu')) <= K (2 omega^(1/2) + 2 eta^(1/2) + C_n omega^GS_j + (5/4) bold-C_n theta_L Mbar_2). So v in (NF-1) is at most K^2 times the square of that bracket: second order in theta_L, with no chart and no covariance clause. This also bounds k_p of (NF-6).
+Second moments give the oscillation of `witness-two-separation.md`. With the same split, ||E_W A - E_1 A||_(L^2(nu')) <= b (2 omega^(1/2) + 2 eta^(1/2) + C_n omega^GS_j + (5/4) bold-C_n theta_L Mbar_2). So v in (NF-1) is at most b^2 times the square of that bracket: second order in theta_L, with no chart and no covariance clause. This also bounds k_p of (NF-6).
 
 **Sign of the error.** (F-2) is first order in theta_L, with no factor of the small covariance, because (GS_j)(a) is a sup-norm statement. Theorem 10.7 has the sharper C_6 |P| L^(-2 kappa), and it reads (OS_j)(a) to (d) at all W^pi. So this route trades a larger L_0 for fewer clauses.
 
@@ -61,13 +61,13 @@ Second moments give the oscillation of `witness-two-separation.md`. With the sam
 
 **(FT) [implication from (OS_j)(b), (c) and (GS_j)(c), at W = 1 only].** For p, q in D, Cov_1(X_p, X_q) -> (3/2) (P^fib_pq)^2 as g_j -> 0 at fixed L, uniformly in j.
 
-(FT) is the only place where the theorem below reads a value rather than a comparison. No clause of the regular package evaluates anything at W = 1, so some statement of this kind is needed. The product law of Proposition 10.4 shows why: there the comparison clauses cost nothing and the value is 0.
+(FT) is the only place where the theorem below reads a value rather than a comparison. No clause of the regular package evaluates anything at W = 1, so some statement of this kind is needed: a comparison with E_1 cannot create a non-zero value, and the product law of Proposition 10.4 has separated correlators zero at every level.
 
-**Clipped energies.** Y_p := min(X_p, K). From X_p <= tau_n^2 and (GS_j)(c) at W = 1, for any r >= 1,
+**Clipped energies.** Y_p := min(X_p, b). From X_p <= tau_n^2 and (GS_j)(c) at W = 1, for any r >= 1,
 
-    |Cov_1(Y_p, Y_q) - Cov_1(X_p, X_q)| <= C_(n,r) K^(-r) =: tau_K.                               (F-3)
+    |Cov_1(Y_p, Y_q) - Cov_1(X_p, X_q)| <= C_(n,r) b^(-r) =: tau_b.                               (F-3)
 
-Y_p is bounded by K, and it is a continuous gauge-invariant function of level-j links. At fixed physical scale it is a sequence in the blocked family of Theorem 10.2, after replacing x_(j_i, i) by its limit at cost o(1).
+Y_p is bounded by b, and it is a continuous gauge-invariant function of level-j links. At fixed physical scale it is a sequence in the blocked family of Theorem 10.2, after replacing x_(j_i, i) by its limit at cost o(1).
 
 **Geometry.** Take supports of level-j plaquette observables within w level-j cells of the plaquette, with w free of L. This holds for (LOC) if d_f <= w (L - 1), which must be checked per map. Choose q_n = p + z_n and q_f = q_n + t e_4 with both pairs strictly ordered along all four axes, and n <= n_L large enough to contain them.
 
@@ -75,11 +75,11 @@ Y_p is bounded by K, and it is a continuous gauge-invariant function of level-j 
 
     a_L := (3/2) | (P^fib_(p q_n))^2 - (P^fib_(p q_f))^2 |.
 
-If a_L >= a_0 > 0 for all large L, then choose in this order: K with 2 tau_K <= a_0 / 4; L with 6 K^2 (5/4) bold-C_n theta_L Mbar_1 <= a_0 / 4; then X large, so that every g_j on the trajectory is small enough for (FT) to within a_0 / 8 and for the omega and eta terms of 6 K^2 eps_j to total at most a_0 / 8. Then, at fixed level distance m from the top, for all large i,
+If a_L >= a_0 > 0 for all large L, then choose in this order: the clip level b with 2 tau_b <= a_0 / 4; L with 6 b^2 (5/4) bold-C_n theta_L Mbar_1 <= a_0 / 4; then X large, so that every g_j on the trajectory is small enough for (FT) to within a_0 / 8 and for the omega and eta terms of 6 b^2 eps_j to total at most a_0 / 8. Then, at fixed level distance m from the top, for all large i,
 
     | Cov_nu(Y_p, Y_(q_n)) - Cov_nu(Y_p, Y_(q_f)) | >= a_0 / 4 > 0,
 
-and Theorem 4.1 gives H != 0 on the orthocomplement of Omega. Constants are free of L up to powers of log L, except K, which is fixed before L, and (NF-3) holds in the same order with d replaced by the second bracket of (F-2). In particular a > 2 v + d follows, and if a far pair outside n_L is wanted, DEC may be used for it as printed.
+and Theorem 4.1 gives H != 0 on the orthocomplement of Omega. C_(n,r) is free of L up to powers of log L, so b grows at most like a power of log L and the condition on L can be met. (NF-3) holds in the same order: n at the near pair is within 3 b^2 eps_j of Cov_1, by the three fixed tests of (F-2) read inside E_mu, v is second order in theta_L, and the far conditional covariance is bounded the same way. If a far pair outside n_L is wanted, DEC gives d_i as printed, at an admissible m_f, and it is small for X large.
 
 Proof. Add (F-2) at the two pairs, (F-3) and (FT). Mbar_1 is bounded at fixed L by Lemma 10.6, and as g -> 0 it is bounded independently of L: the clipped moments are absolute there, and the unclipped remainder carries the rarity factor. Only (FLOW)'s x_i >= x_K / 2 is used to make every g_j small from X large. []
 
@@ -116,9 +116,9 @@ Proof. In (B-7), a_a(p) Jhat_a = exp(-i (p_a + p_b)/2) [prod_nu s(p_nu)] s(p_a) 
 | (9, 9, 6, 6) | [-7.53e-7, -6.67e-7] | -7.09e-7 | -7.12e-7 |
 | (9, 9, 6, 12) | [3.83e-8, 5.65e-8] | 4.70e-8 | 4.56e-8 |
 
-So z_n = (3, 3, 2, 2), z_f = (3, 3, 2, 4), t = 2, is a pair with (P_n)^2 at least 70 times (P_f)^2, and at P^fib = P_infinity the enclosures give a >= 3.8e-9. The sign change along t is the Maxwell one. This is much better than the pair (d, d, 2d, 2d), (d, d, 2d, 3d) of Corollary 4.2.
+So z_n = (3, 3, 2, 2), z_f = (3, 3, 2, 4), t = 2, is a pair with (P_n)^2 at least 69 times (P_f)^2, and at P^fib = P_infinity the enclosures give a >= 3.8e-9. The sign change along t is the Maxwell one. This is much better than the pair (d, d, 2d, 2d), (d, d, 2d, 3d) of Corollary 4.2.
 
-**Fibre split [computed, `checks/witness/fibre_split.py`, `fibre_edge.py`, W3].** With 𝒲 the span of coarse closed currents, delta_pq := P^inf_pq - P^fib_pq is the P-inner product of the projections of the two currents on 𝒲. Thus delta >= 0 as a form and |delta_pq|^2 <= delta_pp delta_qq. In Bloch form it is a 3 x 3 Schur complement per coarse momentum. The pair sits at p = (-2, -2, -1, -1), q_n = (1, 1, 1, 1), q_f = (1, 1, 1, 3), around a block centre, n -> infinity.
+**Fibre split [computed, `checks/witness/fibre_split.py`, `fibre_edge.py`, W3].** With the span of the coarse closed currents pulled back to level j, delta_pq := P^inf_pq - P^fib_pq is the P-inner product of the projections of the two currents on that span. Thus delta >= 0 as a form and |delta_pq|^2 <= delta_pp delta_qq. In Bloch form it is a 3 x 3 Schur complement per coarse momentum. The pair sits at p = (-2, -2, -1, -1), q_n = (1, 1, 1, 1), q_f = (1, 1, 1, 3), around a block centre, n -> infinity.
 
 | L | delta_pp | delta_(p q_n) | delta_(p q_f) | P^fib near | P^fib far | a_L |
 |---|---|---|---|---|---|---|

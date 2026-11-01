@@ -85,7 +85,7 @@ lease_until: 2026-11-02T08:00Z
 - implication: Lemma 22.2 gives (20.2) from map-specific (RAR^1), uniformly in depth; the mu route additionally reads the flux/patch inputs of 22.3 -> screening; no unconditional producer rarity is discharged
 - implication: (MD*_j) from (H1), (H2), (A1), (A2) with regular boundary data and floating holes only -> Lemma 20.5, Theorem 14.1c; a first write-out (Lemma 17.3)
 - implication: (MD*_j) on the map of hard-core--independent, I(k; D) with quiet data carried through its 4.8, no mandatory polymer at the end; the rules of 23.1, a mixed bond next to a direct cube (23.2), a strong block on a layer (23.3); (4.3') and (EI) next to a frozen face at the level of a paragraph -> Proposition 20.4 (21.4, 21.5, 23.2, 23.3, Proposition 17.5)
-- discharged: nest coercivity with the sharp weight 1 / s is false with C absolute at U = 1: an explicit normal mode, c about 18 / L at one jump, about 90 / L^2 at two jumps with clearance 1 -> corrects `library/fibre-propagator.md`, Nest coercivity (23.5; `checks/upper-chain_nest.py`, `_nest2.py`, `_nest3.py`)
+- discharged: nest coercivity with the sharp weight 1 / s is false with C absolute at U = 1: Theorem N of `library/upper-chain-by-hand.md`, c <= 284 / L by hand at flat walls (the fitted 18 / L and 90 / L^2 at two jumps are evidence only) -> corrects `library/fibre-propagator.md`, Nest coercivity (23.5; `checks/upper-chain_nest.py`, `_nest2.py`, `_nest3.py`)
 - unchecked: nest coercivity with the repaired weight s~: numerics only, at U = 1 on flat walls; a proof and a background are that file's -> (I_k^𝔡), Prop MD* on that map (23.5)
 - implication: (MD*_j) on the map of hard-core--mapped, Prop MD* with two tiers, given (I_k^𝔡), Theorem Z, Theorem F-D, nest coercivity; level of each term there, read here as a consumer only -> Proposition 20.4 (`library/quiet-boundary-rarity.md`, 23.4)
 - implication: exact Markov factorization from the augmented finite-range kernel, full stopping histories and geometry; strict positivity additionally needs FILL -> Lemma 20.3; mapped layer thickness/patch scope must match The interface
@@ -1249,7 +1249,7 @@ Proof. The numerator of CR(Z-bar) at (x-bar, x-bar', y-bar, y-bar') is the integ
 
 This is why positivity is worth keeping: F20.1 is what happens without it.
 
-**Lemma 20.2 (two slabs).** Let Z(a, b) := int rho(dx, dy) K_1(a, x) K_2(y, b), with rho any positive measure on the middle pair, and e_i := sup |log CR(K_i)|. Then |log CR(Z)| <= 4 artanh( sinh e_1 sinh e_2 exp(e_1 + e_2) ), which is at most 7 e_1 e_2 for e_i <= 1/4.
+**Lemma 20.2 (two slabs).** Let Z(a, b) := int rho(dx, dy) K_1(a, x) K_2(y, b), with rho any positive measure on the middle pair, and e_i := sup |log CR(K_i)|. Then |log CR(Z)| <= 4 artanh( sinh e_1 sinh e_2 exp(e_1 + e_2) ), which is at most 7 e_1 e_2 for e_i <= 1/4. *By hand, with the Gruss bound rebuilt and the condition 7 eps(D_1) <= 1 for the iteration: `library/upper-chain-by-hand.md`, section 1.*
 
 Proof. Fix base points: K_1 = u(a) v(x) f_a(x), f_a := exp(E_1(a, .)), with |E_1| <= e_1, and K_2 = u'(b) v'(y) g_b(y) likewise. Under rho-tilde proportional to v v' rho, Z(a, b) is proportional to u u' E[f_a g_b] = u u' E f_a E g_b (1 + c(a, b)). By Grüss's inequality, |Cov(f, g)| <= (1/4) osc f osc g, so |c| <= sinh e_1 sinh e_2 exp(e_1 + e_2). In CR the factors u, u', E f, E g cancel exactly, and what remains is a sum of four terms +-log(1 + c). []
 
@@ -1582,7 +1582,7 @@ hard-core--mapped took my Lemma 20.3 and built on it (`library/quiet-boundary-ra
 
 *What it leaves me.* On that map the producers of (SCR_j), (DEC_j), (RAR_j) now all rest on one statement, (I_k^𝔡), with its nest coercivity, which that file calls its weakest point. So I tested that point at the trivial background: 23.5.
 
-**23.5 Nest coercivity at U = 1: does the constant degrade with depth?** `checks/upper-chain_nest.py`, criteria written first. The claim is || H / s ||^2 <= C ( ||d H||^2 + ||P_N D^* H||^2 ) with C absolute, on the kernel of the constraints, with frozen data on nested whole-block layers. That file tested two levels at L = 3 at flat data. If C degraded geometrically with the depth of the nest, (I_k^𝔡) could not hold uniformly in k.
+**23.5 Nest coercivity at U = 1: does the constant degrade with depth?** `checks/upper-chain_nest.py`, criteria written first. The claim is || H / s ||^2 <= C ( ||d H||^2 + ||P_N D^* H||^2 ) with C absolute, on the kernel of the constraints, with frozen data on nested whole-block layers. That file tested two levels at L = 3 at flat data. If C degraded geometrically with the depth of the nest, (I_k^𝔡) could not hold uniformly in k. *The numbers in this text are evidence only under `GOAL.md`. The written objection is Theorem N of `library/upper-chain-by-hand.md`.*
 
 *The result, in one sentence: the inequality as displayed there is false with C absolute, for a reason I can write down, and it is true in every test with a weight that stays coarse near the edge of a layer, with C about 1 / pi^2 and no dependence on L or on depth.* What follows is at U = 1, on flat walls, in d = 2 and 3 for the full operator, and in normal-only fields, which exist in every d, for large L and many levels.
 

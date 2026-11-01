@@ -1,6 +1,6 @@
 # Maximal correlation of a uniformly log-concave law
 
-Written for `parts/upper-chain.md`, Text 21. Proved here. The quantity is Gebelein's maximal correlation. The inequalities used are the Poincare inequality of Bakry and Emery, and the marginal convexity of Prekopa and of Brascamp and Lieb; the last two are classical, and they are the only citations. The bound on the spectrum by a contraction of gradients for a reversible kernel is an old argument; the use here is short enough to write in full.
+Written for `parts/upper-chain.md`, Text 21. Proved here. The quantity is Gebelein's maximal correlation. The inequalities used are the Poincare inequality of Bakry and Emery, and the marginal convexity of Prekopa and of Brascamp and Lieb; the last two are classical, and they are the only citations. Prekopa-Leindler, the marginal inequality and the Poincare inequality on convex sets are now rebuilt in `library/upper-chain-by-hand.md`, section 2. The Helffer-Sjostrand form and the Bochner sign in the printed rate of the middle variable are still citations, so that rate is a gap under `GOAL.md`. The bound on the spectrum by a contraction of gradients for a reversible kernel is an old argument; the use here is short enough to write in full.
 
 ## Statement
 

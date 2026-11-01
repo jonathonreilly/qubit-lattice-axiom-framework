@@ -192,6 +192,104 @@ integrating a smaller neighborhood
 of energy at most minimum+epsilon, for every epsilon>0. It is a
 conditional obstruction, NOT a new Yang-Mills counterexample.
 
+## 2A. Continuation at 25a86977f: first energy stop
+
+Author: openai/gpt-6-astra/max macbook-codex, 2026-11-01.
+The following proofs are **unchecked** author mathematics, not a gate.
+No numerical search was run. The older labels above are inherited.
+
+**Unchecked (a relative coercivity lemma in the quadratic problem).**
+Let E(h)=||d h||_2^2/2 on a finite lattice, and let C h=g be ANY
+consistent finite family of linear constraints, including fixed links
+and linearized parent constraints at several levels. Let h_* minimize
+E on this affine fibre. For any h in that same fibre, v=h-h_* obeys
+C v=0. The real polynomial E(h_*+t v) has its minimum at t=0;
+therefore <d h_*,d v>=0 and
+
+    E(h)-E(h_*) = ||d(h-h_*)||_2^2/2.                 (Q-EX)
+
+This includes mixed plaquettes and energy forced by coarse constraints;
+no subtraction of their individual positive energies is justified or
+needed. The union of two ages is just one constraint C, so (Q-EX)
+has no factor per age, level or volume. Existence of h_* follows by
+minimizing the squared norm over the finite-dimensional affine image
+d{h:C h=g}, which is closed. Gauge null directions do not affect this.
+
+Suppose every counted cell at ONE level contains a plaquette p with
+|d h(p)|>T and |d h_*(p)|<=alpha T, alpha<1. If each plaquette belongs
+to at most m cells, choose one such p for each cell. The reverse
+triangle inequality and bounded multiplicity give
+
+    E(h)-E(h_*) >= (1-alpha)^2 T^2 N_R/(2m).          (Q-R)
+
+For elementary four-dimensional cubes m=4. If the source's labels use
+a different cell convention, use its actual incidence m. This is a
+one-level, no-Haar, quadratic statement. Its constant depends only
+on alpha and m, and is free of x,L,depth,volume and the number of
+constraints. It does NOT identify the nonlinear Wilson excess with
+this norm or supply a multilevel allocation. In particular it does
+not transfer through a change of the rough/exclusion branch.
+
+**Implication (why the reference margin matters).** If a full-fibre
+minimizer itself has a supported counted R event, its excess over the
+regular reference is <=0. At a class top AE-R has no error, so this
+would refute it. In (Q-R), loss of the strict reference margin permits
+exactly this phenomenon. In the actual problem the missing condition
+is on the constrained minimizer, not on the raw action of a fine
+carrier. Absence of R at all minimizers is only necessary: it alone
+does not give a uniform positive action gap per R.
+
+**Gap (attempts at the requested hostile chains).**
+
+- Two ages at a common face: treating all fixed equations jointly
+  proves (Q-EX), but gives no estimate for the reference curvature.
+  Relative quietness bounds each datum minus its then-local lift;
+  it does not bound that lift minus the common global reference.
+  A forced R construction needs that latter response to cross T.
+  I have neither constructed such an admissible SU(2) field nor
+  bounded this response for the actual junction.
+- Arbitrarily many levels at the quiet limit: the frozen pair can
+  saturate its quiet allowance, but its exact parent is identity.
+  Stacking that construction therefore still makes no R at higher
+  levels. The level-1 copies in repair-gate D1 instead force positive
+  movable fine action; their cited lifting argument supplies no
+  threshold crossing. Adding those positive energies is not a
+  construction of a counted R, and gives no excess credit.
+- A cell rough only through frozen links: if its contributing
+  plaquettes are wholly prescribed, their curvature is fixed on the
+  whole fibre. Such a cell is a counterexample ONLY if it is actually
+  counted and its data satisfy the relative quiet tests. The asserted
+  conclusion “quiet implies flux <=T/2” at later ages already uses
+  ST/J. It cannot be used as an independently established exclusion
+  of this case. Mixed plaquettes and coarse-forced free plaquettes
+  require the same reference comparison, even when no fine link in
+  the plaquette is fixed.
+
+**Gap (exact first stop, unchanged target rather than a new theorem).**
+Repair-gate D1 proposes disjoint maximal free carriers. Disjoint cells
+do not by themselves bound overlaps of their ENLARGED transport
+supports at different scales, nor remove the reference energy forced
+by their frozen parents. A sufficient version of that proposal must
+supply, for actual R certificates r and one compatible descent,
+nonnegative removable(r), forced(r) and B_i with
+
+    tau T^2 <= removable(r)+forced(r),
+    sum_r removable(r) <= C B_i,
+    sum_r forced(r) <= eta tau T^2 N_R,   0<=eta<1,
+    Xi_i >= c_D B_i - err_i.                         (RT-certificate)
+
+The constants tau,C,c_D>0 and eta<1 must be free of x,L,depth,volume
+and both ages, after the fixed choices in section 1. This yields
+a_R=c_D(1-eta)tau/C. The absolute TE in the source does not give the
+third or fourth line. The needed mixed-level cap is exactly the
+summed cap of section 3; a bound for each level separately is not
+enough. No actual-R counterexample or proof of these lines was
+obtained. Step 1 stops here; MARK-TAIL/patch gains and the RF/R3-d
+chain are not claimed solved. If a forced R witness is found, the
+quiet test must impose the summed cap, or R near data must be changed
+to a relative event, with the consumer reproved. Neither change is
+adopted in this continuation.
+
 ## 3. A precise relative transport/cap option
 
 **Gap (RT, one sufficient route to AE-R).** Produce a jointly

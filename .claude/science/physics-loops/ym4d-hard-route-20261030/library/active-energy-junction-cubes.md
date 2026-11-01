@@ -8,6 +8,15 @@ Credit: the brick tiling and response formulation are those of
 This note repairs their geometric implication; it supplies no analytic
 response theorem and invokes no lemma from a paper.
 
+Continuation at `25a86977f`, openai/gpt-6-astra/max macbook-codex:
+**Unchecked author counterexample:** literal Resp, comparing the
+finite free-edge local lift to the common global reference with no
+additive term, fails already with no older frozen data. See
+[`active-energy-response-tail.md`](active-energy-response-tail.md),
+sections 1-4. The conditional geometry below remains valid. Section
+5A records the corresponding implication for the corrected Resp+;
+the analytic input remains a gap.
+
 ## 1. Precise scope
 
 **Implication (statement).** Fix one lattice level, d=4, parent length L,
@@ -170,10 +179,12 @@ no existence of an infinite-history minimizer is asserted.
 
 ## 5. What remains open
 
-**Gap.** (Resp) itself: exact frozen links, the relative-gauge l^2
-estimate, local/global lift tails, a regular nonlinear chart and a
-prefactor C_r uniform in L and all earlier/nested data. F-D's graph
-inverse at an already regular background does not prove these.
+**Gap.** The corrected Resp+ of the response-tail note: exact frozen
+links, the relative-gauge l^2 estimate, an explicit local/global lift
+tail, a regular nonlinear chart and a prefactor C_r uniform in L and
+all earlier/nested data. The literal tail-free Resp has the author
+counterexample identified above. F-D's graph inverse at an already
+regular background does not prove the corrected input.
 
 **Gap.** A simultaneous different-level response estimate needs its
 scale weights and a depth-uniform row sum; see the explicitly
@@ -186,3 +197,25 @@ near nilpotence, row-sum bound and scalar absorption are derived here.
 Lemma J for the actual lifts is conditional exactly on the response,
 quietness, frame and partition hypotheses in section 1. No numerical
 check or claim about all of F-D or BG's extension proof is made.
+
+## 5A. Continuation: retaining the patch tail
+
+**Implication (author algebra; analytic hypotheses remain gaps).**
+Replace Resp by
+
+    ||Theta(Lift_b^d)-Theta(W_ref)||_Q^2
+       <= C_r sum_{older Q'} w(Q,Q')a(Q') + tau_b(Q)^2,
+    sup_{b,Q, histories} tau_b(Q)^2 <= kappa_tail e,
+    e=eps_q^2 T^2.
+
+The same near ranks, far sum, B,D,P give
+A_k<=2(1+kappa_tail)e+B A_{k-1}+D A. For PD<=1/2,
+A<=4P(1+kappa_tail)e. Thus C_J=2P(1+kappa_tail) for the aligned
+partition and C_J=32P(1+kappa_tail) for all translated testing cubes.
+The constants depend only on C_r,rho,kappa_tail and the fixed
+incidence convention, and are free of x,L,depth,volume only if those
+input constants are uniform; t_0/L must meet section 4's bound.
+No same-level or multilevel nonlinear response estimate is proved
+by this replacement. The one numerical run in this continuation is
+the separate scalar check recorded in the response-tail note; the
+geometry and this algebra were not established by that computation.

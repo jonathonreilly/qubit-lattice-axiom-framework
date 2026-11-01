@@ -1,208 +1,244 @@
-lead: openai/gpt-6-astra/max mac-mini-codex
-lease_until: 2026-11-02T11:00Z
+lead: openai/gpt-6-astra/max macbook-codex
+lease_until: 2026-11-02T13:00Z
 
 ## State of attack
 
-**Honest stop — author derivation completed.** Pinned source:
-`105283f2c2a5a306a2aff46a47dfadb7a3b6ef0e`. Author mathematics on the
-mapped side, not an audit or an independent check. The independent
-attempt, its good file and gates, and history-budget gates are excluded.
+**Honest stop, continuation at `25a86977f538eb6bb104f097c435b44fd42138b7`.**
+Author: openai/gpt-6-astra/max macbook-codex, 2026-11-01. This is
+mapped-side author work, not an independent review or an audit.
+The preceding checkpoint was pinned at `105283f2c`; git retains it.
+New author proofs are labelled **unchecked**, and conditional algebra
+is labelled **implication** with its hypotheses. No retained status
+is conferred by either label.
 
-**Gap, energy:** the replacement is the signed excess over the SAME
-constrained reference, with explicit all-R and all-mark payment.
-Its first unproved step is relative transport/removability (AE-R/RT),
-followed by the frozen-data RF and R3/bump. Raw unfrozen action is
-not enough, because some of it may be forced by the constraints.
-W2 and the two DM energy branches remain conditional.
+**Step 1: gap.** No actual-R counterexample to AE-R was obtained,
+and relative rough-cell transport/removability remains unproved.
+The new quadratic calculation isolates the needed reference margin:
+excess is exactly the squared curvature difference on an affine
+fibre, and it pays a one-level R count if the constrained reference
+is uniformly below threshold. Neither that margin for the actual
+SU(2) data nor the all-level payment has been proved. Two-age,
+nested quiet-limit and frozen-only routes are recorded below.
 
-**Discharged geometry; implication for J:** at cube side t_0/1024,
-use near cutoff t_0/64. Six successive cubes would meet six bricks
-in a box of width <t_0/8, impossible for the actual wall grid.
-Thus the near matrix has fifth power zero. The far row sum is
-bounded explicitly and absorbed. This proves Lemma J GIVEN uniform
-(Resp), with a corrected constant; (Resp) itself stays a gap.
+**Steps 2 and 3: gap, stopped at the dependency.** MARK-TAIL and
+uniform patch gains, RF with fixed data, and R3-d with
+LI-d/NL-d/COST-d/QT-d at two-age junctions remain open. No proof of
+them is claimed; the earlier necessary equations and conditional
+bump arithmetic remain in the frozen-bump note.
 
-The exact statements, proofs and stopping inequalities are in:
+**Step 4: unchecked counterexample to literal Resp.** A finite
+free-edge local lift can be flat while the global unfrozen lift of
+the same parents has a nonzero tail there. With no older frozen
+data, Resp's right side is zero. The new note gives an explicit
+quadratic solution and a finite-dimensional argument for actual
+small SU(2) minimizers. A separate exact rational check of the
+quadratic equations passed. A corrected Resp+ with an additive
+patch tail stays a gap; given it, the cube argument yields J+.
 
-- [`active-energy-excess-contract.md`](../library/active-energy-excess-contract.md)
-- [`active-energy-frozen-bump.md`](../library/active-energy-frozen-bump.md)
-- [`active-energy-junction-cubes.md`](../library/active-energy-junction-cubes.md)
+**Next decisions.** Prove the uniform global frozen response and
+local/global tail in Resp+, or change the reference/quiet test
+explicitly. For AE-R, construct a compatible relative descent
+with the summed forced cap (RT-certificate), or find a counted R
+at a class-top full-fibre minimizer. No inference from raw frozen
+or movable action will settle that question. Do not resume the
+RF/R3-d chain as though AE-R or Resp+ had been supplied.
 
-No numerical job ran. Only this part and those three new library
-files were written. No mapped/rarity source, axiom or ledger was
-edited; no audit, subagent, commit, push, PR or external post ran.
+## 1. Relative energy: what the hostile tests established
 
-## 1. Replacement and the three tests
+The common-reference excess is
 
-**Gap (the required replacement, precisely).** With
-P_mov={fine plaquettes with at least one unfrozen link}, define
+    Xi_i=A_mov(U)-inf_{regular chains to P(V_i), with d} A_mov
+        =A(U)-Acal_i^d(P(V_i)).
 
-    Xi_i = A_mov(U)-inf_{regular chains to P(V_i), with d} A_mov
-         = A(U)-Acal_i^d(P(V_i)).
+Fully frozen action cancels. Mixed plaquettes and fine plaquettes
+forced by coarser data remain in A_mov, but may have no removable
+excess. The reference must retain the SAME data at every level.
+At a class top P(V_i)=V_i and err_i=C_W T^2|N_ref(V_i)|=0.
 
-The reference has exactly the same frozen data. Require
+**Unchecked (proved quadratic statement).** For any consistent
+linear constraints C h=g, including the union of different ages,
+let h_* minimize E(h)=||d h||_2^2/2. Stationarity on the affine
+fibre gives
 
-    Xi_i >= a_R T^2 sum_{k<i}|R_k| - C_W T^2|N_ref(V_i)|,
-    Xi_i >= a_S eps_q^2 T^2 sum_{k<i}|S_k^clean|
-                                      - C_W T^2|N_ref(V_i)|. (AE)
+    E(h)-E(h_*)=||d(h-h_*)||_2^2/2.                    (Q-EX)
 
-Every remaining type-I mark must be assigned to a paying R cell
-inside the same prefix, with the source's bounded multiplicity;
-every type-II mark is an R cell. No charged cell is dropped because
-its parent is frozen.
-The error is zero at a class top. The companion note shows exactly
-how, after a one-time reduction of c_T,c_S, these estimates give
-the printed W2 coefficient 1/2 for EVERY R and open mark. AE is a
-proposed sufficient replacement, not a theorem proved here.
+If each counted one-level cell has a plaquette above T while the
+reference on that plaquette is at most alpha T, alpha<1, then
 
-**Discharged, locked-action test.** In the existing exact abelian
-construction Xi_i=0 although A^Z>0. No term A^Z is subtracted by AE.
-Subtracting frozen action from both baselines while retaining A^Z
-would repeat the original contradiction. The construction has no R
-cell and no free non-quiet mark, so it is not a counterexample to AE.
+    E(h)-E(h_*) >= (1-alpha)^2 T^2 N_R/(2m),           (Q-R)
 
-**Discharged special case; gap generally, adjacent mark.** In that
-abelian family a separate free pair in a neighboring brick can be
-non-quiet relative to its constrained lift, and removing it releases
-12(1-cos b)>=24 b^2/pi^2 while every frozen link and parent stays
-fixed. In general the mapped file already changes absolute quietness
-to Dev_b^d, correctly removing the forced response from the event.
-It still needs MARK-TAIL and an actual coercive patch replacement
-with fixed links; a mark at a constrained minimizer would violate AE.
-For DM the mark must also satisfy its stated two-brick clearance.
+where m is the plaquette-to-cell incidence (4 for elementary
+4-cubes). This is free of the number of constraints, L and volume
+when alpha is fixed. It does not cover Haar charges, changing
+exclusion branches, the Wilson action away from its quadratic
+limit, or an all-level allocation. Proof and scope are in
+[the excess-contract note, section 2A](../library/active-energy-excess-contract.md).
 
-**Gap, R with partly frozen fine energy.** TE controls counts by
-TOTAL fine action, so it cannot prove AE by deleting its frozen term.
-A Z cell can be paid entirely by frozen action, as explicitly
-constructed. I did not construct such an ACTUAL active R cell under
-all the prescribed clearances, or prove it impossible. The distinction
-is essential: the known field has identity parents and zero labels.
-The exact missing relative statement RT requires a jointly removable
-budget B_i and forced allowance H_i with
+**Gap (routes actually tried, on paper).**
 
-    T^2 N_R <= C_E(B_i+H_i),
-    H_i <= eta T^2 N_R/C_E, eta<1,
-    Xi_i >= c_D B_i - C_W T^2|N_ref(V_i)|.                (RT)
+- Two-age junction: simultaneous fixed equations give Q-EX, but
+  relative quietness does not bound the local lift's displacement
+  from the global reference. A threshold-crossing forced response
+  was neither constructed nor excluded in the actual SU(2) domain.
+- Many levels at the quiet limit: the exact frozen abelian pairs
+  have identity parents and create no higher R. D1's copies placed
+  one level up force positive fine movable action but supply no
+  rough-cell threshold crossing. Summing these actions is not a
+  counterexample with R and is not excess credit.
+- Frozen-only roughness: a fully prescribed rough plaquette is
+  fixed on the whole fibre. It refutes AE-R only if its cell is
+  counted AND the prescribed history passes the quiet tests. The
+  assertion that later quiet data have flux <=T/2 already reads
+  ST/J; it cannot independently exclude this case. Mixed and
+  coarse-forced plaquettes require the same reference comparison.
 
-Then a_R=c_D(1-eta)/C_E, by subtraction. If a counted R were forced
-at a class-top full-fibre minimizer (where Xi<=0), W2 would fail;
-if forced on the whole fibre, its conditional probability would be one, so the
-claimed rarity for that event would fail too. These are implications,
-not a new field counterexample. A consumer could demand a stronger
-quiet condition with the explicit summed forced-energy cap
-(QUIET-CAP) of the note, or change the event to an excess event.
-Both require new proofs and change what has been supplied so far.
+**Gap (first stopping inequality).** For actual R certificates r,
+including their own-level labels and Haar charges, find one descent
+budget B_i>=0 and nonnegative removable/forced parts with
 
-## 2. Why the bump is still an honest stop
+    tau T^2 <= removable(r)+forced(r),
+    sum_r removable(r) <= C B_i,
+    sum_r forced(r) <= eta tau T^2 N_R,  0<=eta<1,
+    Xi_i >= c_D B_i-err_i.                            (RT-certificate)
 
-**Discharged necessary equations; gap on their solution.** The
-allowed tangent chain satisfies H_j=0 on ALL frozen level-j links,
-D M_j H_j=H_{j+1}, and the rooted gauge conditions. A parent mismatch
-must lie in the image of the top derivative on this space. Keeping
-only fine links fixed is insufficient for frozen coarser data.
+This gives a_R=c_D(1-eta)tau/C. The constants must be absolute after
+the fixed threshold ratio/descent choices, free of x,L,depth,volume
+and both ages. Ordinary TE controls total energy and proves neither
+the summed forced cap nor the last line. D1's maximal free carriers
+also need bounded overlap of ENLARGED supports across scales and
+a constrained target; disjoint cells alone do not provide these.
+No change to quiet, a cap, or the consumer's R has been adopted.
+If an admissible forced R is found, such a change is necessary.
 
-The bump note states LI-d (right inverse), NL-d (a contraction bound
-in a volume-uniform local parent norm), COST-d (movable action cost),
-and QT-d (small movable target energy). It derives the nonlinear
-solve and sparse-cost arithmetic CONDITIONAL on those inequalities.
-It does not assert a chart or inequality not constructed here.
-At a two-age junction these must hold for the union of the frozen
-constraints, with one constant, including different-level scales.
-RF allows a parent mismatch and does not supply this fixed-link
-correction; F-D's graph inverse does not supply the nonlinear
-regularity of the actual minimal lift. This is the explicitly
-unwritten R3 with data in the source, not a discharged application.
+## 2. Resp: the independent item
 
-## 3. The independent Lemma J item
+**Unchecked (author counterexample, all steps written).** See
+[the response-tail note](../library/active-energy-response-tail.md).
+At one blocking step, prescribe a small abelian parent link only in
+a slab beyond the finite local patch. The local patch sees identity
+parents, so its free-edge minimum is flat. At quadratic order the
+full four-dimensional minimizer reduces, by transverse averaging
+and Jensen, to the periodic scalar problem with block means mu_j.
+Its interface slopes satisfy
 
-**Discharged (new geometric derivation).** All walls of BG's actual
-four-dimensional tiling are on a common grid of spacing t_0/8.
-Any box narrower than that in every coordinate meets bricks sharing
-one point, hence at most five bricks. A near chain of six cubes of
-side h=t_0/1024, cutoff r=t_0/64, has coordinate span
-5r+6h=86h<128h. Strictly decreasing brick ages would require six
-distinct bricks there. This gives a cube rank in {1,...,5}, unlike
-the printed point rank based on the false ball-incidence claim.
+    b_L p_{j-1}+a_L p_j+b_L p_{j+1}=mu_j-mu_{j-1},
+    b_L=(L^2-1)/(6L), a_L=(2L^2+1)/(3L).
 
-**Implication (given Resp, with explicit absorption).** Let
-B=2 C_r 35^4, P=1+B+...+B^4, and
+For even M and one nonzero mean, the exact periodic Green function
+has alternating nonzero entries, and p_j=G_{j-j_*}-G_{j-j_*-1}
+is nonzero at EVERY interface. Its tail decays but does not vanish.
+A block-tree gauge bound, compactness, and comparison with an EXACT
+abelian trial show that the actual SU(2) minimizing curvature,
+divided by its amplitude, converges to that quadratic curvature.
+This uses finite-dimensional constants, not a uniform R3 theorem.
 
-    S(rho)=sum_{m>=0} n_m exp[-rho(m-1)_+/128],
-    n_0=1, n_m=(2m+1)^4-(2m-1)^4 for m>=1.
+Freeze the first brick with identity data. An explicit field with
+those data and the prescribed parent exists, and Dev=0 there.
+Resp compares its flat local lift with the global lift, but has
+an empty older-data sum. Its left side is positive and its right
+side zero. No C_r fixes this. There are no R cells in the example,
+so it gives no negative conclusion about AE-R or rarity of R.
 
-The far row sum is at most S(rho)exp[-rho t_0/(64L)]. Taking
-2 C_r P S(rho)exp[-rho t_0/(64L)]<=1/2 gives
+**Gap (corrected analytic input).** Retain a common global reference
+and write
 
-    sup_Q a(Q)<=4P eps_q^2 T^2 = 2 C_J eps_q^2 T^2,
-    C_J=2P.
+    ||Theta(Lift_b^d)-Theta(W_ref)||_Q^2
+      <= C_r sum_{older Q'} exp[-2 rho dist(Q,Q')/L]a(Q')
+         +tau_b(Q)^2,
+    sup tau_b(Q)^2 <= kappa_tail eps_q^2 T^2.          (Resp+)
 
-This is for the aligned cube partition; all translated testing
-cubes are covered by at most 16 partition cubes, so C_J=32P suffices
-for that convention with the same absorption condition.
+Uniform bounds for the global frozen response and for the difference
+between the local and global constrained lifts suffice, by the
+squared triangle inequality. They are still open, including their
+existence/regularity hypotheses and all nested histories. Changing
+W_ref to a patch-dependent reference is another possible repair,
+but J would then need comparisons between those references.
 
-This is an a priori estimate on any finite history and compatible
-torus. No numerical enumeration or fixed-point existence argument
-is used. It is uniform over same-level ages. Its application to
-background data with arbitrarily many levels is conditional on
-Resp's uniformity over those data; it is not a multilevel response
-proof or a frozen-data bump proof.
+**Implication (J+).** The existing cube geometry has near rank <=5,
+N_0=35^4 and far row sum S(rho) exp[-rho t_0/(64L)]. With
+B=2C_r N_0, P=1+B+B^2+B^3+B^4 and
+D=2C_r S(rho)exp[-rho t_0/(64L)], Resp+ and relative quietness imply
 
-## 4. W2, OW and DM: only the dependent algebra
+    sup_Q a(Q)<=4P(1+kappa_tail) eps_q^2 T^2,  PD<=1/2.
 
-**Implication, not a new proof of rarity.** Given AE, the mark
-assignment, W1, the flow and the original support counts, W0's exact
-summation by parts yields (1/2)sum_k xtilde_k Delta_k at a class top.
-The companion excess note tracks the actual consumer coefficients:
-g_I=3x_k c_S eps_q^2 T^2/8, g_II=x_k c_T T^2/8, and a remaining
-x_k c_T T^2/4 per R. It follows the EXISTING factor-24 reserve in
-`threshold-paid-reference.md`, rather than relying on equality in
-the mapped factor 6. The DM class-W energy branch then prices its
-level-i marks; its rough-W branch has the required remaining 1/8
-rough-cell factor after reserves. All of this remains conditional
-on the named inequalities and DM's other analytic inputs.
+Thus C_J=2P(1+kappa_tail) for the aligned partition, or
+32P(1+kappa_tail) for all translated testing cubes. The amended
+[active-energy cube note](../library/active-energy-junction-cubes.md)
+records the implication. No nonlinear response estimate follows
+from the geometric summation.
 
-**Discharged (source comparison).** At this commit the mapped State
-of attack already names Dev_b^d, relative junction stability, the
-paid tubes, and the unwritten R3 bump. It still uses the false
-untrimmed CI-paid^d; it has not supplied AE/RT. I followed its
-relative mark definition and the existing threshold note's algebra.
-No claim is made to have rediscovered those changes.
+## 3. Constants and dependent work
 
-## 5. Constants and final disposition
-
-| Constant | Dependence and status |
+| Constant/result | Dependence and standing |
 |---|---|
-| Wall grid, rank 5, near count 35^4 | **Discharged:** dimension and fixed cube convention only; free of x,L,depth,volume |
-| P,C_J,S,c_0 for J | **Implication:** C_r,rho,d and fixed incidence convention; free of x,L,depth,volume IF Resp is uniform; t_0/L>=c_0 |
-| a_R,a_S,C_W,C_E,c_D,eta | **Gap:** need absolute constants after b_2 and fixed descent choices, free of x,L,depth,volume/history |
-| C_b,C_Q and nonlinear radii/rates | **Gap:** same uniformity; the sparse radius is Prop 10's r_{I_*}, not a T-dependent fill radius |
-| C_1,C_5,C_flow,C_4 | **Unchecked inputs:** allowed to depend on L; must be depth/volume-free |
-| t_0,d_x,entropy constants,x_* | **Implication:** allowed dependence on L,a_* and already fixed absolute constants; free of depth/volume; the final DM sum also uses a fixed positive flow slope |
+| Q-EX coefficient 1/2; Q-R coefficient (1-alpha)^2/(2m) | Unchecked author proof; m and the assumed margin alpha only; free of x,L,depth,volume and number of affine constraints |
+| Scalar tail q_L and Green amplitude | Unchecked explicit formula; 0<q_L<2-sqrt(3), amplitude depends on L,M,distance; no separation-uniform lower bound claimed |
+| SU(2) small-amplitude limit | Unchecked finite-geometry proof; constants and the amplitude threshold may depend on L and volume; one level suffices for the zero-RHS contradiction |
+| C_r,rho,kappa_tail for Resp+ | Gap: must be free of x,L,depth,volume/history; allowed patch size selected before x |
+| P,C_J for J+ | Implication: C_r,rho,kappa_tail,d and fixed incidence convention only, if their uniformity holds; requires t_0/L large enough |
+| a_R,a_S,C_W,C_E,c_D,eta; bump C_b,C_Q/radii | Gaps: absolute after the fixed choices, free of x,L,depth,volume/history |
+| Flow/support and entropy constants | Inherited inputs, not reverified here; may depend on L,a_*, must be depth/volume-free as their consumers require |
 
-**Proved here:** exact frozen-action cancellation for the excess;
-the special removable-mark test and the necessary minimizer tests;
-the cube near-propagation bound, far row sum and absorption algebra;
-the conditional payment and nonlinear-solve arithmetic.
+**Implication (previous dependent algebra only).** AE-R and AE-S
+with a same-prefix mark assignment give all-mark W2 after reducing
+the gains once. With W1, the flow and the support counts, the
+summation-by-parts/constant-reserve argument gives OW's own-level
+payments. DM additionally requires its density, locality/tail and
+counting inputs. These remain conditional exactly as specified in
+the excess-contract note. The frozen-bump note's nonlinear solve
+requires its exact frozen chart, compatible mismatch and NL-d;
+its claimed cost additionally requires COST-d and QT-d. None of
+these inputs was supplied by the present scalar calculation.
 
-**Conditional exactly on:** uniform Resp for Lemma J; AE-R/AE-S,
-mark allocation, W1, flow and support counts for W2/OW; also the
-remaining density, Z, locality/tail and counting inputs for DM;
-the exact frozen chart and NL-d/COST-d for the nonlinear bump solve.
+## 4. Verification and recovery record
 
-**Still open:** relative rough-cell transport/removability RT,
-MARK-TAIL and uniform patch gains, RF with fixed data, R3-d and the
-LI-d/NL-d/COST-d/QT-d estimates at two-age junctions, and Resp itself.
-No claim that these gaps are independent. Energy work stops here;
-the independent geometric item was completed as the implication above.
+**Unchecked (checks actually run).** One exact rational job compared
+separately assembled fine-site KKT and interface-slope systems for
+(L,M)=(3,12),(5,12),(7,12),(5,16), with zero and constant controls.
+Every registered exact equality and nonzero tail condition passed.
+This verifies finite scalar algebra, not nonlinear SU(2), two-age
+junctions, the actual patch radius or AE-R. The new note's analytic
+formula covers arbitrary even M; its SU(2) passage is an author proof
+without an independent reader. No failed run was discarded.
 
-**Reading/work record.** Bounded reads of GOAL/FINISH; the requested
-DM5 gate, paid-inputs part, frozen-energy note; Q setting, Z/DM and
-OW/CI; R:233-287,325-384; F-D/BG/nest and RF statements/proofs;
-the mapped State of attack, relevant kernel and R3 paragraphs;
-the paid-reference coefficient passage and existing junction-response
-note, plus the frozen-mesh sufficient-condition passage. The absent
-working-tree methodology was read from pinned HEAD; scoped-workhorse
-guidance and planning AGENTS were read without taking scientific
-status from them. No forbidden attempt or gate was opened. Final
-checks are source/algebra/geometry inspection and whitespace/path
-checks only; no script-generated mathematical result is claimed.
+Criteria, runner and full preflight/acquire/run/release logs are in
+`checks/active-energy/`. Acquire was confirmed before the nice job;
+BLAS thread variables were 1. OS address/data caps were unavailable,
+so the runner used its 2 GiB RSS stop at every elimination pivot;
+peak RSS was 17,186,816 bytes. The numeric lock was released.
+
+Read: GOAL/FINISH; the active-energy part and its three library
+notes; repair-gate-105283f2c, especially D1; Q's Setting/ST/J and
+R/mark definitions (lines 1-95); frozen-energy construction; the
+paid-inputs junction note; TE and descent (relative-density-bound
+233-288,325-385); F-D/BG/nest (fibre-propagator 110-173); mapped
+Text 3.1 and the relevant 5.1/5.2 passages. Scoped searches located
+these statements. No claim to have reviewed the entire mapped part,
+all of its consumers or the full linear/nonlinear R3 proof is made.
+The absent methodology files were read with git show at pinned HEAD;
+the user's fixed source, write scope and stop instruction govern this
+bounded task. No paper or external proof was imported.
+
+The independent attempt, its good file, gates on it and all
+history-budget gates were not opened. No mapped/quiet-boundary-rarity
+file, axiom, ledger or prompt was edited. No audit, subagent, commit,
+push, PR or external post was made. Source identities and final
+path/whitespace checks are recorded in `checks/active-energy/`.
+
+## 5. Final disposition
+
+**Proved in this author derivation (unchecked by an independent
+reader):** Q-EX; Q-R with its stated reference margin; the nonzero
+quadratic tail and its minimizing SU(2) small-amplitude limit, hence
+the counterexample to literal tail-free Resp.
+
+**Conditional exactly on:** Resp+ with uniform constants, relative
+quietness and the cube geometry for J+; the affine quadratic model
+and reference margin for Q-R; the unchanged AE/assignment/W1/flow
+and other named analytic inputs for W2/OW/DM; the frozen chart and
+bump inequalities for the nonlinear correction.
+
+**Still open:** AE-R/RT-certificate (no actual-R counterexample
+found), MARK-TAIL and uniform patch gains, RF with fixed data,
+R3-d and LI-d/NL-d/COST-d/QT-d at two-age junctions, and corrected
+Resp+. These gaps are not asserted independent. Stop here.

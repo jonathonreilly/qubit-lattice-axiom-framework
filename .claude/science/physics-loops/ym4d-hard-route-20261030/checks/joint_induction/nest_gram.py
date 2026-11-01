@@ -25,6 +25,10 @@ Criteria, fixed now:
  chain: report lam, no pass criterion, to see that the test can respond to the geometry.
 G1 FAILING is a depth-growing coercivity loss in this model, and it would be reported as such.
 Stops itself above 2 GB RSS. A run can refute; it discharges nothing.
+
+Note after the first run: main() stops at m = 4, so G1 was only checked for m = 2, 3. The owed row
+m = 4 to 5 at l0 = 2 is run separately; its first attempt hit the 2 GB guard during assembly and
+gave no value, so assembly is now chunked over rows, which leaves every entry of G unchanged.
 """
 import resource
 import sys
@@ -119,20 +123,23 @@ def gram(l0, m, kappa, chain=False):
     G = np.zeros((N, N), dtype=complex)
     nz = 2  # images in y; tents reach at most 2 P
     for l in levels:
-        I = np.where(lev == l)[0]
+        I_all = np.where(lev == l)[0]
         for m2 in levels:
             J = np.where(lev == m2)[0]
-            if I.size == 0 or J.size == 0:
+            if I_all.size == 0 or J.size == 0:
                 continue
-            dx = xs[I][:, None] - xs[J][None, :]
-            cx = ov.get(l, m2, -dx)
-            if not np.any(cx):
-                continue
-            dy0 = ys[I][:, None] - ys[J][None, :]
-            cy = np.zeros(dy0.shape, dtype=complex)
-            for z in range(-nz, nz + 1):
-                cy += np.exp(1j * kappa * z) * ov.get(l, m2, -(dy0 - z * P))
-            G[np.ix_(I, J)] = cx * cy / (ov.n[l] * ov.n[m2])
+            # chunked over rows so that temporaries stay small; no change to the entries
+            for start in range(0, I_all.size, 256):
+                I = I_all[start:start + 256]
+                dx = xs[I][:, None] - xs[J][None, :]
+                cx = ov.get(l, m2, -dx)
+                if not np.any(cx):
+                    continue
+                dy0 = ys[I][:, None] - ys[J][None, :]
+                cy = np.zeros(dy0.shape, dtype=np.complex128)
+                for z in range(-nz, nz + 1):
+                    cy += np.exp(1j * kappa * z) * ov.get(l, m2, -(dy0 - z * P))
+                G[np.ix_(I, J)] = cx * cy / (ov.n[l] * ov.n[m2])
     return G
 
 

@@ -136,3 +136,113 @@ Lemmas IP and NN, with phi_0 small, give P(W) <= 100 V(W) + C_4(L) f^2 X. Put X 
 **What this settles from the gate.** D4: there is no toron term to define at this lemma. D6, D7, X1 to X5: moot, no Plancherel or hypercubic average is used. R1 is no longer needed. "c_e > 0 over all P": no longer read by Lemma EX. An identification, by hand, not needed below: for a plane wave F of small momentum the kernel variance is (1 - L^-2)/12 times (|P|^2 + P_mu^2 + P_nu^2) on the component F_{mu nu}, the box directions giving the first term and the extra width of the tents the second. Summing over components gives **the gate's limit formula (g - 1)/|P-hat|^2 = 2 c (1 + sum p^4 + sum a^2 p^2), so that formula is the variance of the kernel**.
 
 **"Not a defect, but worth knowing", revisited.** The lemma still says little where I is of the order of f E, as for an instanton of any radius. That is a fact about the sizes, not about the proof. The sum over levels there is carried by the fall of f.
+
+### 1.7 A pointwise form, with compatible weights
+
+Lemma BT needs a global integration by parts, and its weighted form carries an energy term. That term cannot be removed from Lemma BT: F := x_3 dx_1 dx_2 - x_1 dx_2 dx_3 is closed with zero in-plane gradient and non-zero transverse gradient. So a local bound has to use the fine field. It does, and then it is pointwise.
+
+**Compatible weights.** Let W^q >= 0 on parent sites, one function for each orientation q. Define the down-average W^{q,down}(z) := sum_y L^4 chi_y^q(z) W^q(y) and
+
+    e(W) := sum_{z, q} W^{q,down}(z) |theta_q(z)|^2 - sum_{y, q} W^q(y) |theta'_q(y)|^2.
+
+Lemma K(b) gives, with no Lipschitz condition and no error,
+
+    e(W) = sum_{y, q} W^q(y) ( L^4 sigma_{y,q}^2 - 2 <theta'_q(y), r_{y,q}> + |r_{y,q}|^2 ).        (V_W)
+
+Starting from W_k on top sites and defining W_j := (W_{j+1})^down, the chain sum is exact: sum_{j<k} e_j(W_{j+1}) = E_0(U; W_0) - E_k(V; W_k), with no quadrature error. If W_k is log-Lipschitz at rate nu in top cells, then W_j / W_k stays in [e^{-3 nu}, e^{3 nu}] on the cell below, and over a bounded number of level-j cells W_j changes by a factor e^{C nu L^{j-k}}: a jump at a block face of a box direction is allowed, and it is all that is read.
+
+**Lemma TL (pointwise bound on the parent gradient).** *Let Y_1(y) := {y, y + L e_a : a = 1..4}, flux(U) <= phi_0(L), D(y) the union of the regions of the parents in Y_1(y), n_y^+ the fine energy on D(y), and Theta_y the largest |theta'| on the plaquettes at the sites of Y_1(y) and on the faces of the parent cubes at y. For every orientation q and direction e,*
+
+    |grad_e theta'_q(y)| <= 3 L^2 sum_{six terms} sigma_{y'',q'} + C(L) ( n_y^+ + Theta_y (n_y^+)^{1/2} + Theta_y^2 ),
+
+*the six terms having y'' in Y_1(y): for e in the plane q they are sigma_{y,q}, sigma_{y+Le,q}; for e = rho transverse to q = (mu, nu) they are sigma^{mu nu} at y, y + L e_rho, sigma^{nu rho} at y, y + L e_mu, and sigma^{rho mu} at y, y + L e_nu.*
+
+*Proof, abelian.* In-plane: Lemma IP's two lines. Transverse: put w := ceil(L/4), so w/L <= 2/5 and L/w <= 4. Write b_y(t) := L^-1 1[|t - y| <= r], tau_y := L^-2 tau(. - y), so tau_y = b_y * c with c := L^-1 1_{[0, L-1]}, and tau_y(t - 1) - tau_y(t) = L^-1 (b_{y+L}(t) - b_y(t)). Let t_0 := y_rho + r, the top of the tent tau_{y_rho}. Let phi(t) be the chi^{mu nu}_y-mean of F_{mu nu} given z_rho = t, so m^{mu nu}(y) is the b_{y_rho}-mean of phi and m^{mu nu}(y + L e_rho) the b_{y_rho + L}-mean. Compare with the two windows of w layers on either side of t_0: A_0, A_1 the means of phi over [t_0 - w + 1, t_0] and [t_0 + 1, t_0 + w]. Conditioning on a window has density at most L/w against chi, so
+
+    |A_0 - m^{mu nu}(y)| <= (L/w)^{1/2} sigma^{mu nu}_y,    |A_1 - m^{mu nu}(y + L e_rho)| <= (L/w)^{1/2} sigma^{mu nu}_{y + L e_rho}.
+
+Next A_1 - A_0 = sum_t kappa(t) (phi(t + 1) - phi(t)), kappa the tent of height 1 and mass w at t_0. Closedness of F at each fine cube and summation by parts in z_mu and in z_nu give
+
+    phi(t + 1) - phi(t) = -L^-1 ( psi^{nu rho}_{y + L e_mu}(t) - psi^{nu rho}_y(t) ) - L^-1 ( psi^{rho mu}_{y + L e_nu}(t) - psi^{rho mu}_y(t) ),
+
+where psi^{nu rho}_y(t) is the chi^{nu rho}_y-mean of F_{nu rho} given z_rho = t, and likewise psi^{rho mu}. Under both chi^{nu rho}_y and chi^{rho mu}_y the law of z_rho is tau_{y_rho}, with tau_{y_rho}(t) = (L - |t - t_0|)/L^2 on the support of kappa. So kappa/w has density at most (4/3) L/w against it, and with Delta_a the flat difference by L e_a,
+
+    A_1 - A_0 = -(w/L) ( Delta_mu m^{nu rho}(y) + Delta_nu m^{rho mu}(y) ) + O( (4 w/(3 L))^{1/2} (four sigmas) ).
+
+This alone would be the coarse Bianchi identity with a factor. The gain is that the coarse Bianchi identity also holds, Delta_rho m^{mu nu} + Delta_mu m^{nu rho} + Delta_nu m^{rho mu} = 0. Substituting,
+
+    (1 - w/L) Delta_rho m^{mu nu}(y) = O( (L/w)^{1/2} (two sigmas) ) + O( (4 w/(3 L))^{1/2} (four sigmas) ).
+
+Multiply by L^2. The coefficients are at most 3 for all odd L: (1 - w/L)^-1 (L/w)^{1/2} <= 2.7, (1 - w/L)^-1 (4 w/(3 L))^{1/2} <= 1.3, eps_L^{-1/2} <= 2.2.
+
+*Proof, non-abelian.* Work in the axial gauge G at y on D(y), links at most a, a^2 <= C L^3 n_y^+. (1) Fine Bianchi: the flat sum of the three differences at a fine cube is E(z), |E(z)| <= C a N(z)^{1/2} + C N(z), N(z) the energy of the cube, as Ad(U_e) - 1 has norm at most 2 a. This adds at most C(L) n_y^+ to L^2 (A_1 - A_0). (2) Coarse Bianchi in G: the flat sum x_1 + x_2 + x_3 of parent differences is at most C L a Theta_y + C Theta_y^2, by the Bianchi step of Lemma BT, as the parent links in G have angle at most C L a. (3) Lemma LE at the parents involved replaces L^2 m by theta' up to C L^2 a^2. (4) Each sigma in G against the same sigma in its own axial gauge, and grad_e against the flat difference in G: as in Lemma IP, at most C L (a + a'') (n_y^+)^{1/2} and C L a Theta_y. QED
+
+*Numerics, T7* (criteria written first; `checks/excess/v7_local.py`). Every y, every triple, L = 3, 5, abelian and SU(2), white noise and smooth: no violation; largest left/right ratio 0.21 (transverse), 0.43 (in-plane), level in the amplitude.
+
+**Theorem EX-loc.** *Put W^-(y) := min of W^{q'}(y'') over q' and y'' in Y_1(y), W^+ := the largest value of W at parent distance at most 2 blocks, and cub(V; W) := sum W |theta|^3. For flux(U) <= phi_0(L), every W >= 0, and V' = M(U):*
+
+    e(W) >= c_1 I^grad(V'; W^-) - C(L) ( cub(V'; W^+) + cub(U; W^+) ),    c_1 := 1/3500, absolute.
+
+*There is no Lipschitz condition on W, no term in E, no toron term.*
+
+*Proof.* Square Lemma TL, with (A + B)^2 <= 2 A^2 + 2 B^2 and six terms: |grad_e theta'_q(y)|^2 <= 108 L^4 (sum of six sigma^2) + errors. There are 96 slots per site, 16 per orientation after the sum over y, so I^grad(V'; W^-) <= 1728 V(W) + C(L) sum W^- (n_y^+ + Theta_y (n_y^+)^{1/2} + Theta_y^2)^2. The last is at most C(L) (cub(V'; W^+) + cub(U; W^+)), since |theta| <= 1 and Young. In (V_W), |r_{y,q}| <= C(L) n_y, and |theta'| n_y <= C(L) sum_{Box(y)} (|theta'|^3 + |theta_p|^3). QED
+
+*Reading.* The right side has the *fine* cubic energy, which is the natural form on a chain, where it is geometric in the level. For W = 1 and flux(U) <= C f this gives Theorem EX back in the printed form, with a worse c_1.
+
+## 2. A one-level lift with a gain, and Lemma TOP at W = 1
+
+*Label: the abelian kernels are discharged; the non-abelian lift is written step by step with soft constants C(L), same-model, not gated. It reads the map, and class minimality (item (o) of `library/relative-density-bound.md`) only to say A_k(V) <= E_0 of a class chain in the fibre. No Prop AN3, no Theorem F, no cut field.* Needed because an upper bound on Y_k is the input of the sum over levels, and the printed Lemma TOP reads Prop AN3 and Taylor at cut fields, which is where the toron term came from. Numerics: T8, T9 and follow-up, `checks/excess/v8_lift1d.py`, `v9_lift4d.py`, `v9b_follow.py`.
+
+### 2.1 The abelian lift is a tensor product
+
+The abelian block map is a tensor of two one-dimensional maps. On functions, R^0 g(y) := avg_{x in I(y)} g(x), I(y) := [y - r, y + r], y in L Z. On bonds, R^1 a(y) := avg_{x in I(y)} sum_{s < L} a(x + s). Then R^1 d = d' R^0, and Q_path on component mu is R^1 in direction mu and R^0 in the others. On the component F_{mu nu}, L^2 <.>_{chi_y} is R^1 R^1 R^0 R^0.
+
+**A right inverse that is a chain map.** Let xi(x) := N(x/L), N the cubic B-spline, so sum_y xi(x - y) = 1 and sum_y y xi(x - y) = x. Let beta(x) := c_L (1 - (2 x/(L + 1))^2)^2 on I(0), zero elsewhere, with R^0 beta(0) = 1. Put
+
+    T^0 omega' := Xi omega' + sum_y beta(. - y) ( omega'(y) - R^0 Xi omega'(y) ),    Xi omega' := sum_y omega'(y) xi(. - y).
+
+So T^0 omega'(x) = sum_y zeta_y(x) omega'(y), with range at most 4 L. *Properties.* R^0 T^0 = id, by construction. T^0 reproduces affine functions: Xi does, and R^0 of an affine function is itself on a centred block, so the correction vanishes. |grad zeta_y| <= C/L and |grad^2 zeta_y| <= C/L^2, C absolute: zeta_y is a bounded combination of a finite number of samples of fixed C^{1,1} profiles at scale L. Define T^1 by T^1 d' = d T^0: its kernel is eta_c(x) := sum_{y'' >= y + L} (zeta_{y''}(x + 1) - zeta_{y''}(x)) for c = (y, y + L), compactly supported as sum_y zeta_y = 1, with sum_c eta_c(x) = 1/L, |eta_c| <= C/L, |grad eta_c| <= C/L^2. And R^1 T^1 d' = R^1 d T^0 = d' R^0 T^0 = d', so R^1 T^1 = id.
+
+**d = 4.** T_0 := T^0 in all axes. T_1 on component mu: T^1 in mu, T^0 in the others. T_2 on the component (mu, nu): T^1 in mu, nu, T^0 in the others. Then d T_1 = T_2 d', Q_path T_1 = id, and L^2 <T_2 theta'>_{chi_y} = theta'(y). Constants lift to L^-2 times themselves. Since T_2 reproduces constants, for z near y,
+
+    |T_2 theta'(z) - L^-2 theta'(y)| <= C L^-2 max_near |Delta' theta'|,    |grad T_2 theta'(z)| <= C L^-3 max_near |Delta' theta'|.        (K)
+
+*Numerics.* T8 identities to 1e-14 at L = 3 to 21, and T9: chain map to 1e-15, constant flux to 12 digits. **Two clauses of mine failed as registered:** L^2 |grad eta| rose 39 percent from L = 9 to 21, and C_2 := I^grad(fine) L^2 / I^grad(parent) rose by a factor 1.8 from L = 3 to 5. The rule was a guess at when these level off. Follow-up, declared after that result: L^2 |grad^2 zeta| = 15.7, 20.1, 21.8 at L = 41, 101, 201, so it levels off, as the proof says it must. C_2 = 9.5, 16.9, 23.0, 27.9, 36.4 at L = 3, 5, 7, 9, 13 on random parents, with C_2/L = 3.2, 3.4, 3.3, 3.1, 2.8 falling and local power 0.72 at the end. So C_2 is still rising at L = 13. The bound (K) proves it is bounded, with a constant that I have not computed and that fixes L_0.
+
+### 2.2 The non-abelian lift, in block frames
+
+Let V' be a level-(i+1) field of flux at most f_0(L). For a parent site y let G_y be the comb axial gauge rooted at y on Pi(y) := y + 5 L [-1, 1]^4 (on parent sites), v^{(y)} := log V'^{G_y} on parent bonds, and A^{(y)} := T_1 v^{(y)}, read on fine bonds near B(y). Let gamma(y'') := G_y(y'') G_{y'}(y'')^-1 for y' next to y, and lambda(y'') := log( gamma(y'') gamma(y')^-1 ), small, and g_{y y'}(z) := exp( T_0 lambda (z) ) G_y(y').
+
+**The field.** On a fine bond inside B(y): exp A^{(y)}(b). On a bond from z in B(y) to z' in B(y'): exp(A^{(y)}(b)) g_{y y'}(z'). Under a parent gauge h, v^{(y)} rotates by h(y), lambda by h(y), and the anchor G_y(y') goes to h(y) G_y(y') h(y')^-1. So this U^flat is parent-gauge covariant, with a fine gauge constant on each block. It is local, and analytic in the parent links for flux small.
+
+**Curvature.** Near B(y), gauge transform B(y') by g_{y y'}. Abelian: v^{(y')} = v^{(y)} - d' lambda up to the anchor rotation, and T_1 d' = d T_0, so the field is A^{(y)} on B(y') too. Non-abelian the two differ by C(L) Theta^2, by BCH on finitely many small elements. So with Theta_y the largest flux on Pi(y),
+
+    theta_p = T_2 (theta'^{G_y})_p + O(C(L) Theta_y^2)    for p near B(y), in frame y.        (C)
+
+**The constraint.** By Lemma LE's BCH steps, log M(U^flat)(c) in frame y is Q A^{(y)}(c) + O(C(L) Theta^2) = v^{(y)}(c) + D' phi^{(y)}(c) + O(C(L) Theta^2), with phi^{(y)} := the contour average of A^{(y)}, by Lemma 3.1 and Q_path T_1 = id. With phi(y) := phi^{(y)}(y), this says M(U^flat)(c) = e^{phi(y)} V'(c) e^{-phi(y')} up to second order. Let T_0'(V') be U^flat gauge transformed by e^{-phi(y)} on each block, which is a gauge constant on blocks, so M changes by exactly that parent gauge. Then M T_0'(V') = e^{m} V', |m(c)| <= C(L) Theta_c^2.
+
+**Exact fibre.** Psi(Y) := log( M T_0'(e^Y V') V'^-1 ) on parent bonds is analytic and of finite range, and D Psi(0) = id + O(C(L) Theta), as at V' = 1 the first order of M T_0' is the identity. So Y = Psi(Y) - Y + ... has a fixed point: the map Y -> Y - Psi(Y) contracts in sup norm, with |Y(c)| <= C(L) Theta-tilde_c^2, Theta-tilde_c := sum_{c''} (C(L) f)^{d(c, c'')} Theta_{c''}. **Define T(V') := T_0'(e^Y V'). Then M(T(V')) = V' exactly.** Its curvature obeys (C) with Theta replaced by Theta-tilde, as the parent curvature of e^Y V' is theta' + O(C(L) Theta-tilde^2).
+
+**Lemma LIFT.** *There are absolute C_1, C_2, C_6, and L_0, f_0(L), C(L), such that for L >= L_0 and flux(V') <= f_0(L), U := T(V') has M(U) = V', is parent-gauge covariant, and for all W >= 0, with W^+ := W smeared over parent distance at most 6 blocks with the tail of Theta-tilde:*
+
+    (T1)  |theta_p| <= L^-2 ( |theta'(y)| + C max_near |grad' theta'| ) + C(L) Theta-tilde_y^2,   |grad theta_p| <= C_6 L^-3 max_near |grad' theta'| + C(L) Theta-tilde_y^2;
+    (T2)  e(U; W) <= C_1 I^grad(V'; W^+) + C(L) cub(V'; W^+);
+    (T3)  I^grad(U; W^down) <= C_2 L^-2 I^grad(V'; W^+) + C(L) f cub(V'; W^+),    cub(U; W^down) <= C L^-2 cub(V'; W^+).
+
+*Proof.* (T1): (C), (K), and the flat difference of theta'^{G_y} against grad' up to C Theta^2. In (C) the frame is close to the axial gauge at y; the gauges differ by a rotation of size C(L) Theta/L^0, which changes theta by second order. (T2): in (V_W), sigma_{y,q}^2 <= <|theta^{(y)} - L^-2 theta'_q(y)|^2>_{chi_y}, so L^4 sigma^2 <= C max_near |grad' theta'|^2 + C(L) Theta-tilde^4 by (T1), and |r| <= C(L) n_y <= C(L) Theta-tilde^2. (T3): (T1), L^4 fine plaquettes per block, and a fine link in frame y has angle at most C(L) Theta, so the covariant and flat fine differences differ by second order. QED
+
+### 2.3 Lemma TOP at W = 1, with no toron term
+
+Let V be a level-k field of flux f <= f_1(L), Vtilde_k := V, Vtilde_i := T(Vtilde_{i+1}), Utilde := Vtilde_0.
+
+*Uniform flux.* Put f^_i := L^{2(k-i)} sup |theta(Vtilde_i)|, d^_i the same for sup |grad theta|. By (T1), d^_{i-1} <= (C_6/L) d^_i + C(L) L^{-2(k-i)} f^_i^2 and f^_{i-1} <= f^_i + C d^_i + C(L) L^{-2(k-i)} f^_i^2. For L >= 2 C_6, the d^_i sum geometrically, so sup_i f^_i <= C_7 f, by a bootstrap from f <= f_1(L). **So the trial chain has flux at most C_7 f L^{-2(k-i)}, with no factor per level, and it is a class chain.**
+
+**Theorem TOP-1.** *For L >= L_0 and flux(V) <= f_1(L), in every sector and on every torus with N_k >= 3:*
+
+    A_k(V) - E_k(V) <= E_0(Utilde) - E_k(V) <= 2 C_1 I^grad_k(V) + C(L) cub(V),    both with W = 1.
+
+*With compatible weights W_i, the same bound holds for E_0(Utilde; W_0) - E_k(V; W_k), with W_k^+ on the right.*
+
+*Proof.* Let a_i := I^grad(Vtilde_i; W_i), c_i := cub(Vtilde_i; W_i). (T3), with W^+ <= e^{C nu_i} W on a log-Lipschitz weight, gives a_{i-1} <= (C_2 L^-2 e^{C nu_i}) a_i + C(L) f_i c_i and c_{i-1} <= C L^-2 e^{C nu_i} c_i. For L >= L_0 both contract, and the product of e^{C nu_i} is bounded, as nu_i is geometric. Sum (T2) over i. The first inequality is class minimality. QED
+
+*What this replaces.* Lemma TOP as printed: it read Prop AN3 uniformly in k and a Taylor expansion at a cut field. TOP-1 reads neither, and it has no tail. It costs L >= L_0 with C_2 L_0^-2 < 1, which Section 3A wanted to avoid and which the program allows anyway. Section 3 below gets the local form.

@@ -446,6 +446,8 @@ Criteria: `checks/excess/CRITERIA.md`, written before each run; additions dated 
 | T10 lift, SU(2) | (a), (c), (e) PASS; (b) fails at f = 1.53 only, outside any class flux; (d) void as first written, corrected, PASS |
 | T11 Lemma TL at a variation | Ratio clause PASS: 0.147 to 0.167 transverse, 0.36 to 0.38 in-plane, level from a = 0.2 to a = 0. Second clause, block gauge against a global gauge, **not run** |
 | T12 sup over P, abelian lift | Report only: C_2 levels off, see 2.1 |
+| T6a lift of a charged parent | PASS on field a: second Chern number 2, constant abelian flux plus smooth non-abelian modes, N' = 8, L = 3, d = 4, f = 0.129. Residual 1.9e-12 after 5 Picard steps, rate 0.01 per step. Charge estimate 1.989 on V', 1.994 on U. e_tr/I^grad = 0.219. Field b: see below |
+| T6 true minimiser, charged | Running, see below |
 
 ## Requests
 

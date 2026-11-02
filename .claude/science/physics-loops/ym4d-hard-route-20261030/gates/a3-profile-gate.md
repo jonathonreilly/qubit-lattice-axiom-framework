@@ -19,7 +19,7 @@ Labels, as in `gates/share-check-199fac1cb.md`: **ADVANCE**, the proof stands at
 | §6.2 near/far split (21)–(22) | ADVANCE (given P81, P82) | None. |
 | §6.2 multiplier (23)–(25) and current return | ADVANCE (given P81, P82, D1) | None. The identity \(H^*\partial^*\partial\mathcal G=0\) holds; it reads \(Rd^*H=0\), stated in P82. |
 | (26) local inequality | ADVANCE (given the above) | None. The proof gives \(\sigma^2 r_R^2\); the boxed \(\sigma^4\) is a harmless enlargement. |
-| §7 slowly varying maximum, (27)–(30) | ADVANCE | None. Depth uniformity survives the seams (Section 4 below). Typo in (29) (D2). |
+| §7 slowly varying maximum, (27)–(30) | ADVANCE | None. Depth uniformity survives the seams (§3 below). Typo in (29) (D2). |
 | §8 consumer statements | ADVANCE | None. (31) follows from (30); the limits on floor screening and on 2.8 (L) are correct. |
 
 **First failing step: none.** What stands is the implication P81 ∧ P82 ∧ (D1's flat column bound) ⇒ (30) for real, no-inward-bond, regular critical fields on separated sequences with \(\mathfrak M,\rho\ge C_L\sigma\) and the first torus floor, uniformly in depth. None of the three inputs is discharged here. Row 84 counts as this conditional theorem, not as closed A3.
@@ -70,10 +70,10 @@ Yes, with one exception, D1. I traced every use back to its source.
 | Column bound for \(C'(A)^*\) | (23), (24), current return | P81(2) | SA 9808–9821 |
 | **Column bound for the flat \(K^*\): \(\sum_c|K(c,b)|\le C_L\eta^4\mathsf L(b)^{-3}\)** | current return, §6.2 | **no (D1)** | SA 9811–9812 at \(A=0\), \(U_0=1\) |
 | \(KH=I\), \(Rd^*H=0\) (flat W1, \(\partial d=0\)), \(K\mathcal G=0\), \(Rd^*\mathcal G=0\) | (23) | P82 (text) | outline 1b.3; Balaban |
-| Weighted \(H\): rows \(\to\|\cdot\|_{1,w}\) | (22) | P82 (11) | CMP 96 (2.47)–(2.51); CMP 99b |
-| \(\mathcal G\): \((-3)\to\|\cdot\|_1\), unweighted suffices | (22) | P82 (11) | same |
-| \(H^*\): \((-3)\to\) rows, unweighted suffices | (23), (24) | P82 | same |
-| \(E\): rows \(\to\) rows, unweighted and weighted | (23)–(25) | P82 | CMP 95, 96 |
+| Weighted \(H\): rows \(\to\|\cdot\|_{1,w}\) | (22) | P82 (11) | \(H=G_0K^*(KG_0K^*)^{-1}\) is CMP 99b (3.126) = CMP 95 (1.103); the weighted row sum as in CMP 102 (161)–(162), from CMP 96 (2.47)–(2.51) |
+| \(\mathcal G\): \((-3)\to\|\cdot\|_1\), unweighted suffices | (22) | P82 (11) | CMP 99b (3.42)–(3.47) at \(U=1\), as the note cites |
+| \(H^*\): \((-3)\to\) rows, unweighted suffices | (23), (24) | P82 | transpose of the \(H\) kernel bounds (Schur) |
+| \(E\): rows \(\to\) rows, unweighted and weighted | (23)–(25) | P82 | \(E=(KG_0K^*)^{-1}-I\) is Balaban's \(\Delta_k\) at \(a=1\), flat (CMP 99b (3.156)). CMP 99b p. 421 only says its analysis is "very similar" to that of \((Q'G'^2Q'^*)^{-1}\), so this is a port item, not a printed bound |
 
 As the note states, the proof does not use:
 - existence or uniqueness from Theorem 1;
@@ -87,12 +87,14 @@ Outside rows 81 and 82 it reads the outline's definitions, its first torus floor
 
 **For row 81: P81 is the toolkit of Balaban's own §F.** CMP 102 §F proves the global version of this theorem: Proposition 8, \(r\le\max\{B_3\varepsilon_1,\varepsilon_0/2\}\), iterated. It does so on the same kind of nested auxiliary cubes, (144) and (148)–(150), with the same near/far split (161)–(167). So a faithful row-81 port of §F delivers P81 as the note uses it. The note's two own additions to §F stand: the current through the multiplier in place of sup bounds on \(\partial^*\partial\mathcal G\), and the localization with a slowly varying maximum in place of the global halving. The profile form remains absent from Balaban, as `library/lit-balaban.md` §3 says.
 
+**For both ports: they must share one row family.** Rows 81 and 82 have different workers, so the lead should check this when they land. The identity (23) needs one row family \(K\) in four places: the Euler equation of P81(2), the straightening (9), \(KH=I\), and \(K\mathcal G=0\). An invertible local rotation of the rows is harmless, since \(\ker K\) is unchanged; this is the outline's "up to a rotation of the rows", SA mechanism 2. At the flat reference the Landau slice may differ between the ports by gauge directions \(d\lambda\) with \(Kd\lambda=0\), because \(\partial d\lambda=0\). What breaks (23) is pairing Balaban's corner-based rows in one port with the outline's centred rows in the other: then \(K\mathcal G\neq0\) and \(H^*\partial^*\partial\mathcal G\neq0\) in general. This is a consistency condition on the pending ports, not a defect of the note, which already requires the outline's mean in both.
+
 ## 3. Depth uniformity across seams
 
 I tried to break it at original seams and at the artificial seams of the auxiliary sequence. It survives both.
 
 1. **One original seam per read cube.** A read cube about \(x\) meets at most two consecutive layers once \(\rho\ge CL^2\sigma\); the gap is chosen after \(\sigma\), in the outline's order. Its \(d_{\mathbf B}\)-diameter is at most \(CL^2\sigma\le R\), so (28) applies with \(e^{\delta R}=2\).
-2. **No comb-through-a-slab failure.** The comb and every test it reads stay in a cube with two scales, so the comb is a geodesic up to a factor \(L\). This is why the failure the floor-screen gate found in (OS-loc) does not occur here. The far rows are bounded unweighted, by \(C_L\sigma r_R\), and never through a profile.
+2. **No comb-through-a-slab failure.** The comb and every test it reads stay in a cube with two scales, \(s/L\) and \(s\). Auxiliary scales there are \(\le s\), so the comb's coarse length is at most \(C(1+d_*(x,y_c))\), and the weight pays for its linear growth. No profile is evaluated along a comb, so the slab failure the floor-screen gate found in (OS-loc) (§6 there) cannot occur here. The far rows are bounded unweighted, by \(C_L\sigma r_R\).
 3. **Seam tests are counted.** Mixed seam plaquettes are tests; all-fine coarse plaquettes are one-step means of tests, costing \(L^2\) once; central outward rows read one finer block. All of this is inside the read cube, and the constants grow only through \(C_L\).
 4. **Artificial seams.** The \(J\) seams in the shells enter only through the depth-uniform constants of P81 and P82, and through the descent (14). The descent has coefficient one and a geometric series, so the number of artificial layers never multiplies an error. Balaban's §F runs the same descent, (146) and (151).
 5. **No dependence on depth.** \(C_0,C_1,C_2,a,c\) depend on \(L\) through P81 and P82. \(\sigma\), \(\varepsilon_*\), \(R=C_L\sigma\) and \(\delta=\log2/R\) are chosen from those, and nothing in (26)–(30) counts layers, seams or tests.

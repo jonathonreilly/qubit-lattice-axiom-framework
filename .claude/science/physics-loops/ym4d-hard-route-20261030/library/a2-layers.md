@@ -4,8 +4,7 @@ lease_until: 2026-11-03T05:44Z
 # A2 on separated layers with seams and nodes (queue row 90)
 
 Pinned at commit 8ff6bd92a, branch claude/ym4d-hard-route. Research-stage working
-state, no status. Written section by section; sections below are filled in as the
-work proceeds.
+state, no status. Complete for this item; written section by section.
 
 Provenance: Anthropic Claude Opus 5.5 (`claude-opus-5-5`), effort max as configured for
 this worker (Mac mini); repository commit 8ff6bd92a; Sussman–Alpoge outline
@@ -14,7 +13,7 @@ committed; Balaban's CMP 99 (389–434) read from `~/ym4d-papers/cmp99b.txt` (OC
 git). Research text by one model, not an audit, not a gate; it grants no status. No step
 below rests on a computation; no numerical job was run.
 
-**Credit.** The target A2, the operator definitions ((3.1) below, outline L10138–10208),
+**Credit.** The target A2, the operator definitions (outline L10138–10208),
 the layered geometry (L10106–10127), the flat layered Feynman gap PX107–PX113, the Wilson
 form estimate PX114–PX118, the seam intertwining PX31–PX38, the reduced datum
 PX98–PX100, the next-fibre formula PX101–PX104 and the Combes–Thomas mechanism (a)
@@ -29,8 +28,9 @@ on-shell multiplier estimates are `a2-curved.md` (Codex, ungated).
 
 ## 0. Disposition
 
-**Proved here (research text, ungated): real A2 on arbitrary separated layers, at every
-real regular pair, on shell or with an independent current (Theorem A, §7.5).** The
+**Proved here (research text, ungated): A2 on arbitrary separated layers, at every real
+regular pair, on shell or with an independent current (Theorem A, §7.5), with the
+half-gap on the complex neighbourhoods (Theorem B, §7.6).** The
 counterexample search (§2) found none: not at seams, non-Lipschitz contacts of the regions,
 nodes or outward rows, and not off shell. The chain is: flat one-jump coercivity for the
 outline's pruned rows on every seam shape (§3; zero extension replaces the brick-fan
@@ -85,8 +85,7 @@ and the same bound holds for chi_Y A chi_Y on every conditioning set Y (`a2-curv
 The ceilings a_* and the constant c_L depend on L only, so they are fixed before M_1, as
 the outline's statement 4 requires (L10335).
 
-The complex half-gap of A2 is not part of Theorem A; §8 records exactly what the
-argument of `a2-curved` §12 needs on layers.
+The complex half-gap of A2 (c_L/2 on the complex neighbourhoods) is Theorem B, §7.6.
 
 ## 2. Counterexample tests (done before the proofs)
 
@@ -537,7 +536,7 @@ and the same for chi_Y A chi_Y on every conditioning set Y.
 (5.3). For the first hypothesis of Lemma F write S h = h - D_U z' as in 5.4(b):
 ||d_U D_U z'|| <= C alpha_0 ||sigma^-2 z'|| <= C alpha_0 C_S ||R D_U^T h|| and ||Sh||_X <= (1 + 2C_S)||h||_X, so
 F[h] = beta[Sh] + ||R D_U^T h||^2 satisfies it with delta = C_L (alpha_0 + eps_1). Lemma F bounds
-the compression of Delta_k + a - E^(2) to the active rows below by
+the compression of (Q G_1 Q^T)^-1 - a = Delta_k + E^(2)[H_1^T J] to the active rows below by
 c_0 ||d_V b||^2 - C_L(alpha_0 + eps_1)||b||^2. At a physical pair H_1^T J = omega (J = Q^T omega and
 Q H_1 = 1), so the next-constraint term obeys |<b, E^(2)[omega] b>| <= C_L eps_1 ||b||^2
 (`a2-curved` §11, last step: one-step derivative bounds, inverse pivot bound, (9.2)). The
@@ -737,6 +736,11 @@ normalized Gram and the conjugation of R.
 is a consumer statement, not part of A2, and is not re-derived here.
 (d) Variants with inward bonds kept (seam nodes) are excluded by the outline's convention
 (L9625) and are not treated.
+(e) Signed layer profiles and counterterm arrays (outline L3861, L8766, L9052) are
+perturbations of the precision that lie outside the definition of A at L10208. The
+X-norm coercivity here keeps the gap under any such perturbation of X-form size
+eps <= c(L), by the same relative-perturbation argument as Theorem B. Proving that their
+size is that small belongs to the lane that introduces them; it is not done here.
 
 **8.3 Evidence for other owners (for the lead to forward).** `a3-balaban.md` F3
 ("positive G_00 on every sequence ... if supplied"): (5.2) supplies it at every real regular

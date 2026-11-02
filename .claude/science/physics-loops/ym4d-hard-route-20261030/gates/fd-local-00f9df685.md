@@ -9,3 +9,8 @@ In progress. Provenance: model anthropic/claude-opus-5-5, effort high, commit 00
 
 - (G1) slab test, the skipped-scale test on (G3), h, sandwich sigma <= h <= L sigma, greedy cover, N = 16^4 (true count at most 12.12^4), at most one jump per 10Q_i, chi_i: rechecked by hand, no failure so far. (G3) to the sandwich needs only t_0 >= 8000 R L^2.
 - The Lipschitz obstruction in Section 2 is conditional on one global Lipschitz constant for each cutoff. Necessity of L^2 is not shown. Under review.
+
+## Working notes, Sections 4 and 5 and t_0 readers (interim)
+
+- (C1)-(C5), the bump moments, the gauge test, the flat IMS arithmetic: rechecked line by line, no failure so far.
+- t_0 readers so far: all printed bounds are lower bounds, or fix later constants (lambda, X, C_B). Printed t_0 >= C R_1^fill with T R_1^2 = K_1 gives t_0 >= C K_1^(1/2) L a_*^(-1/2), so (G2) may already follow for small a_*. The t_0 of (U), (FF_j), upper-chain 568, 619 is a different symbol.

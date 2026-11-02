@@ -35,7 +35,7 @@ What stays open is listed in Section 8. Nothing new is added to the hard core: e
 
 **Weights.** \(v\) is the healed weight \(x_k(\cdot)\) (\(\Lambda_i\mapsto\Lambda_i\cup X\), SA 17402); \(w=x''_k=x^{(\mathsf N)}\) (SA 17630-17640); \(x\) is the scalar \(x_k=\beta-\sum_{i\le k}b_i\).
 
-**Cutoffs (specified here; the source leaves them open).** \(\chi=\phi_X\) is the indicator of the bare plaquettes \(p\) with \(d(p,X^c)\ge c_0M\check R\). Let \(Z^\natural\) be the union of the core \(C\) and the shells of levels \(k_\flat,\dots,k_\flat+n_{\rm c}-1\), with
+**Cutoffs (specified here; the source leaves them open).** \(\chi=\phi_X\) is the indicator of the bare plaquettes \(p\) with \(d(p,X^c)\ge\tfrac34M\check R\). Let \(Z^\natural\) be the union of the core \(C\) and the shells of levels \(k_\flat,\dots,k_\flat+n_{\rm c}-1\), with
 
 \[
  n_{\rm c}:=\lfloor\mathsf N/2\rfloor .
@@ -163,7 +163,7 @@ Coincidence on \(W\): for W1 and W2 by definition of the localisation. For W3, \
 *Standing:* `library/a1-balaban.md`, gated (row 91), given F0 (discharged by row 95, gated in row 99). Open: pointed-core admission (10.2), and complex regularity at full strength (`gates/a3-derivative-gate.md` Section 12 item 4). The multiplier is used only through \(\lambda_\Lambda=0\) and the pairing \(\lambda\cdot Dq\); both are free of normalisation, so M1 is not read.
 
 **I3, Theorem 4 at the real critical reference \(S\),** for \(\mathbf D_{pX}\) and for the reference problem, in the all-weights form (BGR11 row sums, Lemma 8.2). For a shell datum \(v\), the response \(h=\mathsf Hv\) obeys, at every top of the joined sequence,
-\[\xi_y|h(y)|\le C_4\|v\|_\infty,\qquad \xi_y^2|\nabla h(y)|\le C_4\|v\|_\infty e^{-\theta d_{\mathbf B'}(y,\operatorname{supp}v)}\]
+\[\xi_y|h(y)|+\xi_y^2|\nabla h(y)|\le C_4\|v\|_\infty\,e^{-\theta d_{\mathbf B'}(y,\operatorname{supp}v)}\]
 (\(\mathbf B'\) the joined metric). *Standing:* `library/a3-derivative.md` Theorem 4, first paragraph (real critical references), gated ADVANCE as repaired, from P81 and P82°. Only real critical references are used, so the independent-current and complex-reference paragraphs (M2, item 3 of the gate) are not read.
 
 **I4, Proposition 2.4** (Balaban CMP 122 Proposition 1; SA 17656-17662; cited-pending, not in hand). \(V_\Lambda\) is the unique critical orbit of \(f(V)=A(U_{k,X}(V))\) and its minimum in the mild class. \(|\partial S_p-\mathbf1|\le C(M)\varepsilon_k\eta^2\) on the plaquettes of \(\Lambda\) and of an \(O(1)\) neighbourhood. In axial gauge the Hessian is \(\ge c(M)>0\).
@@ -173,11 +173,100 @@ Coincidence on \(W\): for W1 and W2 by definition of the localisation. For W3, \
 (the old-core datum at \(C_F\check R_l^2\varepsilon_l\), the shells at \(\delta'+C(M)\varepsilon_k\), the new box at \((C(M)+4M_0)\varepsilon_k\), all \(\le\varepsilon_1\) by 2.2(d2)). Every background involved has local curvature \(a(y)\le C_{\rm P}\varepsilon_1\) at every top. *Standing:* (D-F) gated for every case (rows 88, 94, 96, 97), given Proposition 2.4 and premises H1-H4. The curvature bound is (1b) Theorem 2, first half (`library/a3-profile.md`, gated row 86), given P81 and P82.
 
 **GEO, geometry asserted by the outline** (Proposition 2.3, catalogue C2; not checked here):
-- GEO1: \(\operatorname{dist}(\Lambda,X^c)\ge2M\check R-M\). By SA 17576-17580, \(\Omega_k^c\cap X=H_k^{[8]}\) and \(X=X\cap Z_k=H_k^{[10]}\) (pushed out by 8 and 10 level-\(k\) cells of side \(M\check R\)). The nest boxes lie in \(\Omega_l^c\cap X\) (SA 17421), and \(\Lambda\) is \(Z''_k\) plus one layer of \(M\)-cubes (SA 17598). Fix \(c_0:=\tfrac12\). For \(\check R\ge4+4C_c\mu/M\) this gives \(d(\operatorname{supp}\chi,X^c)\ge\tfrac12M\check R\) and \(d(\Lambda,\operatorname{supp}(1-\chi))\ge M\check R\), both measured in level-\(k\) units, where \(d_{\mathbf B}\) is Euclidean.
+- GEO1: \(\operatorname{dist}(\Lambda,X^c)\ge2M\check R-M\). By SA 17576-17580, \(\Omega_k^c\cap X=H_k^{[8]}\) and \(X=X\cap Z_k=H_k^{[10]}\) (pushed out by 8 and 10 level-\(k\) cells of side \(M\check R\)). The nest boxes lie in \(\Omega_l^c\cap X\) (SA 17421), and \(\Lambda\) is \(Z''_k\) plus one layer of \(M\)-cubes (SA 17598). With \(\chi\) as in Section 1 and \(\check R\ge4+4C_c\mu/M\) this gives \(d(\operatorname{supp}\chi,X^c)\ge\tfrac34M\check R\) and \(d(\Lambda,\operatorname{supp}(1-\chi))\ge M\check R\), measured in level-\(k\) units. In \(X\setminus\Lambda\) every sequence is at level \(k\), and everywhere \(d_{\mathbf B}\ge\) the Euclidean distance. Write \(c_0:=\tfrac12\) for the common lower bound \(c_0M\check R\) used below.
 - GEO2: \(X\) has at most \(n_X^4\) cells of level \(k\) (SA 17583).
-- GEO3: the core has side \(\le C_nM\check R\,\xi_{k_\flat}\). The shell of level \(j\) has width \(\ge M\xi_j\) and at most \((C_nM(\check RL^{k_\flat-j}+L))^4\) tops. The level-\(k_\flat\) shell contains the collar of W3 (\(M\ge C_c\mu\)).
+- GEO3: the core has side \(\le C_nM\check R\,\xi_{k_\flat}\) (SA 17598). The nest box bounding the shells of levels \(<l\) has side \(\le C_nM(\check RL^{k_\flat-l}+L)\,\xi_l\). The shell of level \(j\) has width \(\ge M\xi_j\), so it costs \(\ge M\) to cross in \(d_{\mathbf B}\), and it has at most \((C_nM(\check RL^{k_\flat-j}+L))^4\) tops. The level-\(k_\flat\) shell contains the collar of W3 (\(M\ge C_c\mu\)). \(\Lambda\) has side \(\le C_\Lambda M\).
 - GEO4 (gaps): every sequence used, joined sequences included, has \(\operatorname{dist}_\infty(\Omega_j^c,\Omega_{j+1})\ge c_g\xi_j\) for all \(j\). Here \(c_g\ge M\) on label and prepared layers and \(c_g\ge\rho\) on tower layers, with \(64\log L\le\theta\min(M,\rho)\).
-- GEO5 (profiles, SA 6331-6336: supplied data): \(\varphi[\Lambda](p)\) depends only on \(\Lambda\) within \(w_*\le\tfrac12c_0M\check R\) of \(p\). It is \(0\) off \(\Lambda\) and \(1\) at points of \(\Lambda\) farther than \(w_*\) from \(\Lambda^c\). For \(p\) in the shell of level \(j\), \(\varphi[\Lambda^{(\mathsf N)}_i](p)=1\) for \(i<j-d_0\) and \(=0\) for \(i>j\).
-- GEO6: \(X\cap\Lambda_i^c\subset C\cup\{\text{layer }\Omega_i\setminus\Lambda_i\}\) for \(i\le k_\flat\). This follows from \(Z_i\subset Z_{k_\flat}\) and \(C=X\cap Z_{k_\flat}\).
+- GEO5 (profiles, SA 6331-6336: supplied data, so this is a premise on that data). For a region \(\Lambda_i\) of level \(i\):
+  - (a) \(\varphi[\Lambda_i](p)\) depends only on \(\Lambda_i\cap B(p,w_i)\), with \(w_i:=C_pM\check R_i\xi_i\) and \(C_p\le\tfrac34\);
+  - (b) it is \(0\) off \(\Lambda_i\) and \(1\) at points farther than \(w_i\) from \(\Lambda_i^c\);
+  - (c) at every plaquette \(p\) of level \(j(p)\), \(\#\{i\le k:\varphi[\Lambda_i](p)<1\}\le k-j(p)+d_0+1\).
+
+  Since \(\check R_i\le L^{k-i}\check R_k\) (SA 17584), \(w_i\le\tfrac34M\check R\) for every \(i\le k\).
+- GEO6: for \(i\le k_\flat\), \(X\cap\Lambda_i^c\) lies in \(C\) together with the layer \(\Omega_i\setminus\Lambda_i\) next to it, inside the level-\(k_\flat\) shell, so within \(\Lambda\). This follows from \(Z_i\subset Z_{k_\flat}\) (\(\Omega\)'s decrease), \(C=X\cap Z_{k_\flat}\), and \(\Omega_{j+1}\subset\Lambda_j^{\sim-1}\) (SA 17406).
+- EXT: the localisations \(\mathbf D_{pX}\) and \(\mathbf D(\mathcal L_X\mathcal O^h)\) have the same domain, the same rows outside \(\Lambda\) (the level-\(k\) rows of \(X\setminus\Lambda\) and the same collar tower), and the same data there: the lift of the same exterior field (SA 9776-9786; `sa-2.8.md` Section 2 table).
 
 **FLOW** (Theorem 2.1 hypotheses, `sa-2.8.md` Section 4): \(|b_i|\le B_*\); \(\min_{i\le k}x_i\ge x_k-c_5\) (R19). Hence \(\check R\ge\tfrac12\ell^r\) for \(x\ge2c_5\), and \(\mathsf N=\check R\).
+
+## 4. Lemmas proved here
+
+Throughout, \(\|\cdot\|\) on \(2\times2\) matrices is the operator norm. For \(G\in\mathrm{SU}(2)\) with eigenvalues \(e^{\pm i\vartheta}\), \(a(G)=1-\tfrac12\operatorname{tr}G=1-\cos\vartheta=\tfrac12\|1-G\|^2\). Each bare plaquette is assigned to the top of the finest pillar among its corners. A top \(y\) then carries at most \(6(\xi_y/\eta)^4\) plaquettes (its pillar has \((\xi_y/\eta)^4\) sites, each the lower corner of six plaquettes).
+
+**Lemma W (weights).** Assume GEO1, GEO3, GEO5, GEO6, FLOW, and \(L^{n_{\rm c}-1}>4C_p\check R\). Then:
+1. \(v=x\) on \(\operatorname{supp}\chi\), so \(R_4=0\);
+2. \(v=w\) at every plaquette farther than \(\tfrac34M\check R\) from \(\Lambda\), so \((v-w)(1-\chi)\equiv0\) and \(R_2=0\);
+3. \(|w-x|\le B_*\mathsf N\) on \(\operatorname{supp}\phi\);
+4. \(v(p)\le x+B_*(k-j(p)+d_0+1)\) at every plaquette.
+
+*Proof.*
+1. Let \(p\in\operatorname{supp}\chi\). The healed action regions are \(\Lambda_i\cup X\supset X\) for every \(i\le k\) (SA 17402), and \(d(p,X^c)\ge\tfrac34M\check R\ge w_i\). By GEO5(b), \(\varphi[\Lambda_i\cup X](p)=1\) for all \(i\le k\), so \(v(p)=\beta-\sum_{i\le k}b_i=x\).
+2. The healed and prepared action regions differ only inside \(\Lambda\). For \(k_\flat<i\le k\), \((\Lambda_i\cup X)\setminus\Lambda_i^{(\mathsf N)}=Z''_i\cap X\subset\Lambda\) (SA 17630-17636). For \(i\le k_\flat\), \(\Lambda_i^{(\mathsf N)}=\Lambda_i\) and \((\Lambda_i\cup X)\setminus\Lambda_i=X\cap\Lambda_i^c\subset\Lambda\) (GEO6). By GEO5(a), at a plaquette farther than \(w_i\) from \(\Lambda\) the two profiles of level \(i\) read the same region, so they are equal. Since \(\max_iw_i\le\tfrac34M\check R\), \(v=w\) there. By GEO1, \(\operatorname{supp}(1-\chi)\) is at distance \(\ge M\check R\) from \(\Lambda\).
+3. Let \(p\in\operatorname{supp}\phi\subset X\setminus Z^\natural\). Then \(w(p)-x=\sum_{i\le k}b_i(1-\varphi[\Lambda_i^{(\mathsf N)}](p))\). Levels \(k_\flat<i\le k\) contribute at most \(B_*\) each, \(\mathsf N\) of them. For \(i\le k_\flat\), the complement of \(\Lambda_i\) inside \(X\) lies in \(C\) and the layer next to it (GEO6). Now \(d(p,C)\ge M\xi_{k_\flat+n_{\rm c}-1}=ML^{n_{\rm c}-1-\mathsf N}\), because \(p\) lies beyond the outermost margin shell (GEO3). On the other hand \(w_i\le C_pM\check R_{k_\flat}\xi_{k_\flat}\le2C_pM\check RL^{-\mathsf N}\), using \(\check R_i\xi_i\le\check R_{k_\flat}\xi_{k_\flat}\) (SA 17584) and \(\check R_{k_\flat}\le2\check R\) (FLOW, \(x_{k_\flat}\le x+B_*\mathsf N\), \(x\) large). With \(L^{n_{\rm c}-1}>4C_p\check R\) these levels contribute nothing.
+4. \(v(p)=x+\sum_ib_i(1-\varphi_i(p))\) with \(0\le1-\varphi_i\le1\) and \(|b_i|\le B_*\). Count by GEO5(c). \(\square\)
+
+**Lemma SC (action comparison from I1).** Let \((U,U',W)\) satisfy I1 with amplitude \(E\le1\). Let \(a(y)\le1\) bound the local curvature of \(U^\circ_W\): \(\|1-\partial U^\circ_{W,p}\|\le a(y)(\eta/\xi_y)^2\) for \(p\) over \(y\). Then for every weight \(\varpi\ge0\), at every top \(y\) of the joined sequence away from the collars,
+
+\[
+ \sum_{p\text{ over }y}\varpi(p)\,|a_p(U)-a_p(U')|
+ \le C_{\rm SC}\,\bar\varpi(y)\,\big(a(y)+Ee^{-\theta d_y}\big)Ee^{-\theta d_y},
+ \qquad d_y:=d_{\mathbf B}(y,W^c),
+\tag{4.1}
+\]
+
+where \(\bar\varpi(y)=\max_{p\text{ over }y}\varpi(p)\) and \(C_{\rm SC}\) is absolute.
+
+*Proof.*
+- **Gauge.** \(a_p\) is invariant under the gauge transformations \(w,w'\), so it suffices to compare \(e^{i\eta f}U^\circ\) with \(U^\circ\) at \(p\). Let \(G,H\) be their holonomies at \(p\), in the common base-point gauge.
+- **Holonomy difference.** By the conversion of `gates/a3-derivative-gate.md` (consumer check), the four inserted exponentials give a linear term \(\eta^2df\), a remainder \(\le C\eta^2|f|^2\), and a curl conversion \(\le C\eta|f|\,\|1-H\|\). That computation is local to \(p\), and each of the three terms is bounded by (I1) at \(y\):
+\[\eta^2|\nabla f|\le(\eta/\xi_y)^2Ee^{-\theta d_y},\qquad \eta^2|f|^2\le(\eta/\xi_y)^2E^2e^{-2\theta d_y},\qquad \eta|f|\,\|1-H\|\le(\eta/\xi_y)^3a(y)Ee^{-\theta d_y}.\]
+So \(\|G-H\|\le3C(\eta/\xi_y)^2Ee^{-\theta d_y}\), and \(\|1-G\|\le\|1-H\|+\|G-H\|\).
+- **Scalar step.** By \(a=\tfrac12\|1-\cdot\|^2\) and the reverse triangle inequality,
+\[|a(G)-a(H)|\le\tfrac12(\|1-G\|+\|1-H\|)\|G-H\|\le\tfrac32C(2a(y)+3CEe^{-\theta d_y})(\eta/\xi_y)^4Ee^{-\theta d_y}.\]
+- **Sum.** Multiply by \(6(\xi_y/\eta)^4\) plaquettes, apply the bound to \((U,U^\circ)\) and \((U',U^\circ)\), and add. \(\square\)
+
+**Lemma BC (counting).** Let a sequence satisfy GEO4, let \(E\subset\Omega_k\) have Euclidean diameter \(\le D\) (level-\(k\) units), and let \(s\ge0\), \(\theta'\ge\theta/2\). Then
+
+\[
+ \sum_{\text{tops }y}(1+k-j(y))^s\,e^{-\theta'd_{\mathbf B}(y,E)}\le C_{\rm BC}(s)\,(D+4)^4,
+\tag{4.2}
+\]
+
+with \(C_{\rm BC}\) depending on \(s,\theta,L\) only. Hence the same sum over \(\{d_{\mathbf B}(y,E)\ge R_0\}\), taken with \(e^{-\theta d}\), is \(\le e^{-\theta R_0/2}C_{\rm BC}(s)(D+4)^4\).
+
+*Proof.*
+1. **Layer crossings.** \(d_{\mathbf B}(y,E)\ge c_g(k-j(y)-1)_+\). A path from \(y\notin\Omega_{j(y)+1}\) to \(E\subset\Omega_k\) must, for each \(i=j(y)+1,\dots,k-1\), pass from its last point in \(\Omega_i^c\) to its first point in \(\Omega_{i+1}\). That stretch lies in \(\Omega_i\setminus\Omega_{i+1}\), has Euclidean length \(\ge\operatorname{dist}(\Omega_i^c,\Omega_{i+1})\ge c_g\xi_i\), and carries weight \(\xi_i^{-1}\) in \(d_{\mathbf B}\) (SA 9602). The stretches for different \(i\) are disjoint.
+2. **Euclidean bound.** \(d_{\mathbf B}(y,E)\ge|y-E|\), since every weight in \(d_{\mathbf B}\) is \(\ge\xi_k^{-1}=1\).
+3. **Count.** Tops of level \(j\) are sites of a lattice of spacing \(\xi_j=L^{j-k}\), so at most \((D+2n+4)^4L^{4(k-j)}\) of them have \(n\le|y-E|<n+1\).
+4. **Sum.** Split \(e^{-\theta'd}\le e^{-\theta'c_g(k-j-1)_+/2}e^{-\theta'|y-E|/2}\). The sum is at most
+\[\sum_{m\ge0}(1+m)^sL^{4m}e^{-\theta'c_g(m-1)_+/2}\ \sum_{n\ge0}(D+4)^4(1+2n)^4e^{-\theta'n/2}.\]
+By GEO4, \(\theta'c_g/2\ge\theta c_g/4\ge16\log L\), so the \(m\)-series is \(\le C(s,L)\). The \(n\)-series is \(\le c(\theta)(D+4)^4\). \(\square\)
+
+**Lemma BC2 (core sum).** The tops of \(C\) have levels \(\le k_\flat\), and every path from them to the level-\(k_\flat\) shell \(E_\flat\) stays in \(C\cup E_\flat\). Then
+
+\[
+ \sum_{\text{tops }y\subset C}\xi_y^2e^{-\theta d_{\mathbf B}(y,E_\flat)}\le3L^2\operatorname{vol}(C)\,\xi_{k_\flat}^{-2}.
+\]
+
+*Proof.* As in step 1 of BC, \(d\ge c_g(k_\flat-j-1)_+\). There are at most \(\operatorname{vol}(C)\xi_j^{-4}\) tops of level \(j\), because pillars partition. Hence the sum is
+\[\le\operatorname{vol}(C)\xi_{k_\flat}^{-2}\sum_{m\ge0}L^{2m}e^{-\theta c_g(m-1)_+}\le\operatorname{vol}(C)\xi_{k_\flat}^{-2}(1+L^2+1),\]
+since \(L^2e^{-\theta c_g}\le L^{-62}\). \(\square\)
+
+**Lemma LM (multiplier form; \(T(0)=S\)).** Assume I2, I4, EXT.
+1. \(\nabla A(S)=Dq_{\rm ext}(S)^{\mathsf T}\lambda_{\rm ext}\) on the common localised domain. Here \(q_{\rm ext}\) collects the rows outside \(\Lambda\), collar rows included.
+2. \(S\) is critical for \(\mathbf D_{pX}\) with its own datum, and \(T(0)=S\) modulo \(\mathcal G^{\rm res}(\mathbf D_{pX})\).
+3. \(q_{\rm ext}(\widetilde T(u))=q_{\rm ext}(S)\) on the chart. Hence \(DA(1,S)[\eta\mathsf Hv]=0\) for every shell datum \(v\).
+
+*Proof.*
+1. By I2, \(\nabla A(S)=Dq(S)^{\mathsf T}\lambda\) with \(q=(q_{\rm ext},q_\Lambda)\), where \(q_\Lambda\) collects the level-\(k\) rows with an end point in \(\Lambda\), the variables of \(f\) (SA 17660). From \(q\circ\Phi=\mathrm{id}\) we get \(Dq\,D\Phi=\mathrm{id}\). For a datum tangent \(\delta\) on the \(\Lambda\)-rows, criticality of \(V_\Lambda\) (I4) gives
+\[0=Df(V_\Lambda)[\delta]=DA(S)[D\Phi(0,\delta)]=\lambda\cdot Dq\,D\Phi(0,\delta)=\lambda_\Lambda\cdot\delta.\]
+So \(\lambda_\Lambda=0\).
+2. By EXT, the rows of \(\mathbf D_{pX}\) outside \(\Lambda\) are the \(q_{\rm ext}\) rows with the same data, and the other rows lie in \(\Lambda\). A tangent \(h\) to the constraint set of \(\mathbf D_{pX}\) at \(S\) therefore has \(Dq_{\rm ext}(S)h=0\), and \(DA(S)h=\lambda_{\rm ext}\cdot Dq_{\rm ext}(S)h=0\). \(S\) is regular for \(\mathbf D_{pX}\): at a top \(y\), \(\|1-\partial S_p\|\le C(M)\varepsilon_k\eta^2\le C(M)\varepsilon_k(\eta/\xi_y)^2\) (I4), and its datum is regular by the converse of Theorem 1. By the uniqueness in I2 for \(\mathbf D_{pX}\), \(T(0)=S\) modulo \(\mathcal G^{\rm res}\).
+3. \(\widetilde T(u)=\Phi_{pX}(e^{iu}\cdot M_{\mathbf D_{pX}}S)\) changes only shell rows, which lie in \(\Lambda\), so \(q_{\rm ext}\) is constant. Differentiate at \(u=0\) and pair with \(\lambda_{\rm ext}\), using item 1. \(\square\)
+
+**Lemma TQ (Cauchy bounds on the prepared chart).** Assume I2 with \(C_{\rm R}r_{\rm B}\le\tfrac12\). Let \(u_0,v\) be real with \(\|u_0\|_\infty\le r_{\rm B}/4\) and \(\|v\|_\infty\le1\), and let \(K_\phi\) be the number of tops of \(\mathbf D_{pX}\) carrying plaquettes of \(\operatorname{supp}\phi\). Then:
+1. \(|D^3\widetilde F(u_0)[v,v,v]|\le1152\,C_{\rm R}^2K_\phi/r_{\rm B}\);
+2. at every top, with \(\tau''=D^2\tau(0)[v,v]\), \(\xi_y|\tau''(y)|+\xi_y^2|\nabla\tau''(y)|\le16C_{\rm R}/r_{\rm B}\).
+
+*Proof.*
+1. For \(|z|<r_{\rm B}/2\), the datum \(u_0+zv\) lies within \(3r_{\rm B}/4\) of the real datum of \(S\). By I2, every plaquette over \(y\) has \(\|1-\partial\Phi(u_0+zv)_p\|\le C_{\rm R}r_{\rm B}(\eta/\xi_y)^2\le\tfrac12\). For \(G\in\mathrm{SL}(2,\mathbb C)\) put \(Y=1-G\). Then \(1=\det G=1-\operatorname{tr}Y+\det Y\), so \(\operatorname{tr}Y=\det Y\), and \(|a(G)|=\tfrac12|\det Y|\le\tfrac12\|Y\|^2\). Hence \(A_y(z):=\sum_{p\text{ over }y}\phi(p)a_p(\Phi(u_0+zv))\) is holomorphic, with \(|A_y|\le6(\xi_y/\eta)^4\cdot\tfrac12C_{\rm R}^2r_{\rm B}^2(\eta/\xi_y)^4=3C_{\rm R}^2r_{\rm B}^2\). Cauchy's inequality on \(|z|=r_{\rm B}/4\) gives \(|A_y'''(0)|\le6\cdot3C_{\rm R}^2r_{\rm B}^2(4/r_{\rm B})^3\). Sum over \(y\).
+2. \(z\mapsto\tau(zv)(y)\) is holomorphic for \(|z|<r_{\rm B}\), with \(\xi_y|\tau|\) and \(\xi_y^2|\nabla\tau|\le C_{\rm R}r_{\rm B}\) (I2). Use Cauchy's inequality at radius \(r_{\rm B}/2\). \(\square\)

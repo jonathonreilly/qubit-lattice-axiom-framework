@@ -50,6 +50,16 @@ Owner: "every route should start with a lit search that runs far and wide before
 - Each search is written to `library/lit-<topic>.md`: what was found, where, the exact statement, how close it is to ours, and whether its proof is accessible. A lane prompt names the search it builds on.
 - Found results are used, credited, and then verified for our application under the rule in "Build on published work". A search that finds nothing is recorded too, so nobody repeats it.
 
+## Methods adopted from the Sussman-Alpoge project (owner, 2026-11-02)
+
+Owner: "lets adopt any methods or approaches that will accelerate our work." What we take, and where:
+
+- **Their skeleton.** The thirteen positions of `YM4_assembly_overview` (L, M, G, E, N, P, C, T, R, K, H, V, Z) are the skeleton for `library/route-decisions.md` and `library/sa-ledger.md`. Hardest-first runs inside a complete skeleton, not instead of one.
+- **A model ladder.** Before a YM4 lane on a position, read the same position in their QED3 and YM3 manuscripts (their assembly overviews give the correspondence). A mechanism that works there is the first candidate; a check that fails there is a cheap kill.
+- **Generate, then distil, then check, where risk is low.** For positions that are standard (rank 8 and below in `library/sa-map.md` Section 4: backgrounds, small-field step, one-loop law), one long full draft at max, then a distillation to a minimal written proof, then a cross-provider gate. Forced-decision lanes stay for the positions where the proof could fail (ranks 1 to 4).
+- **Freeze what is checked.** A section that passes its gate is frozen and cited, and is reopened only by a WRONG verdict.
+- **Sharing.** Proofs and checked defects go to them as issues, per "Building together".
+
 ## Route decisions (owner, 2026-11-02)
 
 Owner: "maybe both paths need worked, the goal is the full proof, not following some other lead. so we need to carefully analize which path we take and why, and re-evaluate that choice as we learn."

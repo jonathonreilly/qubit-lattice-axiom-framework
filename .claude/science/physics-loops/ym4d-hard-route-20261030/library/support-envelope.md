@@ -1,7 +1,7 @@
 # Support envelope — queue row 88
-Provenance: OpenAI Codex, GPT-6 family (exact backend and actual effort not exposed; row 88 requests max); resumed checkout `259167dd570555bbce1b3e8ad219b5787a40f3e0`, preserving Sections 1–9 from checkout `bb7f39d69e3410da4e450f04e2331f031cc6f2a1`; Sussman–Alpoge commit `31a47c543775`; research text, not an audit, grants no status.
+Provenance: OpenAI Codex, GPT-6 family (exact backend model and actual effort not exposed; row 88 requests max); current resumption at `d120883ea20edcbd9ac7a1e676a2ef8bfccb4237`, preserving Sections 1–13 from the earlier runs at `bb7f39d69e3410da4e450f04e2331f031cc6f2a1` and `259167dd570555bbce1b3e8ad219b5787a40f3e0`; Sussman–Alpoge commit `31a47c543775`; research text, not an audit, grants no status.
 
-**Outcome: STOPPED at the resumed run's budget. The full support assertion (D-F) is neither proved nor refuted; no explicit admitted counterexample has been constructed.** Sections 1–9 are retained. Sections 10–12 add the initial cell-clearance argument, the exact draw estimate, the stage-threshold bound and the exclusion of a current outer collar from its own floor. The read-by-read admission induction remains open; Section 13 gives its precise stopping point.
+**Outcome: REFUTED for the literal target covering every actual joined datum, including artificial level-zero bonds in the old floor.** Sections 20–22 give the configuration: an exactly flat incoming history reaches the main operation; its stated reference law draws a nonzero coarse plaquette; a cube localization in the final island decision copies that plaquette onto a level-zero determining plaquette in the old floor. Its holonomy stays fixed while \(R_0^2\varepsilon_0\) tends to zero. The argument concerns the operation on its declared real domain; it does not construct the background maps themselves. It does not refute an envelope restricted to surviving physical determining bonds. Section 23 gives the distinction and a direct admission repair. Sections 1–13 are retained; Section 19 is a superseded checkpoint.
 
 ## 1. Question and source boundary
 
@@ -345,3 +345,273 @@ The later parts now have sharper limits. The stage multipliers themselves are co
 The attempted independent seam assignment, distant pivot, uncut boundary-bond reading, current outer-collar wall and old-collar depth argument have not produced an admitted violating history. The first two are excluded as in Sections 3–4; the boundary-bond reading does not specify the actual draw; the current collar misses the floor; and the old-collar attempt lacks the uniform supported family described at the end of Section 12. This is a failed search, not an impossibility theorem.
 
 No necessary or minimal change to the original definitions has therefore been established. The explicit certificate completion of Section 8 and the source-level consumer of Section 6 remain proved **conditional** implications, with their admission hypotheses unverified for the actual kernels. The added statements in this resumption do not close row 88, remove the heavy-wall reversal test or establish the support hypothesis of floor screening. The route decision and scientific status are unchanged.
+
+## 14. Third run: what the long account actually specifies
+
+The target remains the admission induction in Section 7, not a new screening estimate. Sources for this continuation are the [long account, raw I](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_I.tex) and [raw II](https://github.com/ethanwsussman/Yang--Mills-LLM-experiment/blob/31a47c543775/theorem_0_complete_account_raw_II.tex), credited to **Ethan Sussman and Levent Alpoge, with Claude and Codex as the authors of their text**, and Tadeusz Bałaban, CMP **119** (1988), 243–285, Sections 2–3, and CMP **109** (1987), 249–301, Section 3. The source files were fetched once to the prescribed scratch paths; the papers are read in place. These are definition lookups, not imported proofs.
+
+There is a material correction to the proposed starting premise. Raw I 28697–28700, item (sigma6), identifies the region-data margin with Balaban CMP 99, not with a newly specified Chapter 8 formation rule. It calls the margin a one-sided lower bound and explicitly says that satisfaction of it is unresolved and that it is not imposed. The preceding item (sigma4), raw I 28675–28691, likewise distinguishes the quantitative nest gap of CMP 96 from the weaker qualitative boundary separation used there. Thus (sigma6) cannot be inserted into Section 7 as a proved upper bound on the omitted testing margin. These are also different notions: a lower bound on a nest gap does not upper-bound the band on which no indicator is evaluated.
+
+Chapter 8's local-run definition (raw II 102572–102622) fixes nested level cells and their images. Its label definition (102959–103025) fixes live and healed labels, seeds, inheritance under merging, and nesting until healing resets a region. The age definition (111791–111845) distinguishes territory age from seed age. Those definitions do not by themselves specify the plaquettes of a localized passing indicator. In particular, positive probability or an age estimate for a label cannot supply the pointwise test coverage required in (4.4).
+
+### 14.1 The relevant omitted band is specified elsewhere
+
+Balaban CMP 119, pp. 264–266, (3.2)–(3.5), supplies the ordinary-step rule: enclose the old live region in level-\(t\) cells, omit the plaquette decomposition on its four-layer enlargement, insert gauge fixing outside its five-layer enlargement, and perform the approximate fluctuation decomposition outside its six-layer enlargement. The exclusions due to failed new plaquette tests are respectively one and two layers for gauge fixing and approximate testing. The final new region excludes eight old-region layers, four failed-plaquette layers and two failed-approximate layers. These numbers concern the **current cell grid**, after enclosing the old region in those cells.
+
+This lookup is also present in raw II 10283–10310: the eight layers are decomposed as \(4+1+1+2\). Chapter 8, raw II 79848–79886, explicitly takes its ordinary step from CMP 119 (3.1)–(3.5), including the approximate-test set \((\square^{\sim2})^{(k)*}\). This is the concrete ordinary-step convention used below. It is not a consequence of (sigma6). If the outline's independent formation data depart from this convention, the conclusion below requires the corresponding read-set inclusions to be stated anew.
+
+The reference in the two indicators is the **same** localized background. CMP 119 (1.2), (1.4), (1.8) and (2.16)–(2.17) specify its tower on the fourfold enlarged test cube, its curvature test on the once-enlarged cube, and the nonpivot comparison on the twice-enlarged cube. Formula (3.4) takes the appropriate average of that background at later steps. Its top determining member contains the once-enlarged test cube and its adjacent unit blocks: the tower removes at most two \(M_1\)-layers from the fourfold enlargement, whereas the test cube has side of order \(M_2R_t\), with \(M_2=L^2M_1\). This is an elementary containment, with more than one full test-cube layer to spare. No estimate on an untested localized background is being substituted for a passed indicator.
+
+CMP 109, Section 3, (3.18)–(3.27), constructs padded cubes and uses exact averages on their interior; its later analytic extensions have hypotheses on their fields. These are localization devices for action terms, not an extra passing indicator on an arbitrary large-field history. They do not enlarge the ordinary testing zone just identified.
+
+## 15. Initial strip and ordinary original seams with those read sets
+
+**Initial-strip statement (proved for the concrete rule in 14.1).** Every actual level-zero determining plaquette at the first step satisfies
+\[
+ \|\partial V_0(p)-1\|
+ \le \varepsilon_1L^{-2}
+       +8\max\{1,C_L\}\delta_0
+ \le C'_L\varepsilon_0.                         \tag{15.1}
+\]
+All constants are fixed before the frame ceiling. Pivot bonds here are reconstructed physical bonds, not independently chosen coordinates.
+
+**Proof.** Let \(s_1\) be the side of a level-one cell and \(a_1\) the side of a test cube in bare units. The compatible partitions give test cubes contained in cells. The scale choices give \(a_1\ll s_1\), and, by lowering the ceiling once, \(a_1>8L\). Choose a corner of \(p\), an incident cell \(C\subset\Omega_0\), and an incident test cube \(D\subset C\); use their closures if the corner is on a partition face. Every bond of \(p\), and every double block used by a pivot row of \(p\), lies within \(4L\) of that corner. Hence this entire footprint lies in \(D^{\sim}\), and therefore also in \(D^{\sim2}\).
+
+The containing cell belongs to \(\Omega_0=N_1\Omega_1\). The clearance proof (10.1) puts it outside the failed-approximate hull and at least four cell steps from the failed-plaquette hull. Consequently the approximate test at \(D\) was performed: the excluded new-plaquette band has only two layers, and there is no older live region. It passed, since otherwise \(D\) would belong to \(Q_1\) and its cell to \(Q'_1\). The plaquette test at \(D\) was performed and passed for the same reason using \(P_1\). If the chosen cell is already in \(\Omega_1\), the clearances are larger. Half-open boundary assignments do not change these cell exclusions or the strict footprint inclusion.
+
+Set \(W=U_{1,D}(V_1)\) in the representative used by the approximate test. The first passing indicator bounds \(\|\partial W-1\|\) by \(\varepsilon_1L^{-2}\) throughout \(D^{\sim}\); the second bounds every required nonpivot difference by \(2\delta_0\) throughout \(D^{\sim2}\). All pivot rows lie in the top determining part of this tower, by 14.1. Thus their reference averages equal \(V_1(c)\). The original delta constraints, or their pivot solutions, give precisely the same values for \(\mathcal M(V_0)(c)\). The hypotheses of the pivot lemma hold on each of these double blocks, once \(\varepsilon_1L^{-2}\le\kappa_L\) and \(2\delta_0\le h_L\). These are fixed ceilings, not assumptions about depth. Apply that lemma to each pivot and telescope the four plaquette factors as in (3.3). This proves the first inequality of (15.1). The adjacent-level frame comparison in Section 4 and \(\delta_0=(A_1/A_0)\varepsilon_0\) prove the second. ∎
+
+This identifies the previously missing indicator: it is \(\chi_1(D)\), on \(D^{\sim}\), paired with \(\chi'_0(D)\), on \(D^{\sim2}\), with reference \(U_{1,D}\). It is not a curvature test of a neighboring cube with a different reference. The persistence argument in Section 4 then preserves (15.1) on original physical level-zero plaquettes which remain determining bonds.
+
+**Positive-level ordinary read (proved for the same rule, before a preparation changes that read).** Let a mixed determining test have level \(t\ge1\), and first consider its birth in an ordinary step. It has an endpoint in \(\Omega_t\). Choose an incident cell contained in \(\Omega_t\) and an incident test cube \(D\) in that cell, again using closures at partition faces. The complete four-row averaging footprint lies within \(3\xi_t\) of the endpoint, hence in \(D^{\sim}\), after the same fixed ceiling makes the test side larger than \(8\xi_t\). The chosen cell lies outside the eight-layer enclosure of the older live region and the four-layer enclosure of \(P'_t\). Thus \(\chi_t(D)\) was performed outside the four-layer omitted band and passed. Its single reference \(U_{t,D}\) has the bound \(\varepsilon_tL^{-2t}\) on this full footprint, and its top constraints give \(\mathcal M^tU_{t,D}=V_t\) on the four coarse rows. The hand averaging estimate (5.3) bounds their plaquette product by \(2\varepsilon_t\). On a substituted fine-side row, the retained equation (3.1) replaces its factor by this same \(V_t\) factor. Hence the mixed product has the same bound. Using \(CL^2\varepsilon_t\) instead also covers the one-layer footprint convention of Section 5.
+
+This argument carries unchanged through restrictions which preserve the old rows and their equations. It does not carry an eliminated constraint through a reference-law draw. Nor does it identify a new artificial level-zero lift with an old physical level-zero bond. Those are the remaining operations, not another missing ordinary testing margin.
+
+## 16. A late creation can be realized with exactly flat curvature
+
+The counterexample search must not assume that a large-field component requires a rough plaquette. Here is an exact way to generate the quiet component needed for that search. It realizes the geometry, but has no violating holonomy.
+
+Choose a terminal level \(k\), put \(a=k-R_k\ge2\) and \(b=a-1\), and use the linear frame of Section 6. Choose a site \(z\) of level \(b\) strictly inside a level-\(a\) block, away from its pivot crossings. Place it far from the boundary of one level-\(a\) cell; the test-cube side is much smaller than the cell side. At level \(b\), let the gauge function \(u_b\) equal \(G\) at \(z\) and 1 elsewhere, where
+\[
+ G=\exp(i\vartheta\sigma_3),\qquad
+ \vartheta=2\arcsin(3\delta_b/2),\qquad
+ \|G-1\|=3\delta_b<\varepsilon_b.                 \tag{16.1}
+\]
+Here \(\delta_b<1/3\) and \(3A_1<A_0\); the latter is within the prescribed small-ratio choice. For \(i<b\), extend \(u_b\) to level \(i\) by taking its value at the containing level-\(b\) block centre. For \(i\ge a\), put \(u_i=1\). Set
+\[
+ V_i(x,y)=u_i(x)u_i(y)^{-1}.                     \tag{16.2}
+\]
+All plaquette products are exactly 1. Gauge covariance of the averaging map, applied to the identity field, gives \(\mathcal M(V_i)=V_{i+1}\) at every step. In particular the nontrivial gauge at \(z\) is invisible at level \(a\), since \(z\) is not a level-\(a\) top.
+
+For \(i\le b\), the gauge on the finer lattice is constant inside every level-\(i\) block. Thus the flat representative of the local reference in block axial gauge agrees with \(V_{i-1}\). The plaquette and approximate tests pass, the fluctuation is zero, and the collar and rim tests pass. This uses only the source's flat-background convention (SA 9791: over the identity the background orbit is the orbit of absolute minima), transported by the prescribed nodal gauge. That orbit can be checked directly here: zero Wilson action forces every plaquette to be 1; on a box, path transport gives a gauge of the identity, and on the torus the coarse constraints fix the fundamental-cycle holonomies to 1. The prescribed determining transports fix that gauge at the nodes, leaving precisely the residual gauge freedom. No small-nonzero-background estimate is used.
+
+At step \(a\), the reference of every new approximate test is the identity. All affected nonpivot bonds have deviation \(3\delta_b\), so the approximate tests whose twice-enlarged cubes contain such a bond fail strictly; all other approximate tests pass. The plaquette tests still pass. The failed cubes fit in one level-\(a\) cell by the placement of \(z\) and \(a_a\ll s_a\). Gauge-fixing cut-offs pass because of (16.1); their exponential factors are positive. The component thus created is a boxed enlargement of one cell. The fluctuation field on its outer strip is zero, so this step creates no additional collar or rim failure.
+
+At all subsequent ordinary steps through \(k\), the fields at the newly tested levels are exactly 1. No new failure or merger occurs. The component follows the free evolution \(\Phi_i\). Its size in cells stays bounded: at a step without a radius drop, enclosing a box in the next grid divides its side by \(L\), up to two boundary cells, and the margin adds twenty cells. A radius drop replaces that division by no division; by (11.3) there is at most one such drop in this waiting window. Hence one fixed cell-side bound suffices throughout. The torus is chosen larger than these boxes and all their read neighborhoods. There is no earlier operation on this component: for \(i<k\), monotonicity gives \(i-R_i<k-R_k=a\), so its creation is still inside that earlier waiting window. At \(k\) it satisfies size, quiet and quarantine.
+
+Thus arbitrarily late class components are compatible with the recorded indicators and exact averaging equations. All passing indicators have a strict margin; the failed approximate indicator also has a strict margin. The nontrivial gauge is retained in the old core, not hidden in an untested determining plaquette. Choosing the later shell variables at their flat values gives no new curvature. This construction supplies the late creation and wait; it supplies **no nonzero source plaquette for a collar**. Calling it a counterexample would confuse a large gauge-dependent fluctuation with a large datum holonomy.
+
+## 17. The prepared-shell geometry and the limit of its tests
+
+The long account gives more precise prepared regions in raw I 51707–51728 and 53737–53835 (Definition 4.18, prepared sequence). Write \(h=k-R_k\), and let \(j_0\) be the first scale of the compressed outer shells, the index called \(k_\sharp+1\) in Section 11. Below that index its rule is
+\[
+ Z''_j=(\Omega_j^{\sim5})^c\cap X\quad(h<j<j_0);
+                                                        \tag{17.1}
+\]
+above it, the nested \(Z''_j\) are separated by a layer of \(M\)-cubes at the later scale. The original core \(Z_h\cap X\) is contained in all of them. These are the concrete prepared regions of the cited Balaban construction; neither the symbols \(Z''\) nor the word “prepared” alone supplies (17.1).
+
+**A new physical row's footprint misses the old core.** At a scale governed by (17.1), quiet evolution gives \(\Omega_j^c\cap X=H_j^{[8]}\), where \(H_j\) contains \(Z_{j-1}\cap X\). Enlarging its complement by five cell layers leaves the box \(H_j^{[3]}\), with boundary assignments harmless if one keeps only two layers of clearance. Thus the boundary of \(Z''_j\) is separated from \(Z_h\cap X\) by at least two level-\(j\) cells. In the compressed part, the one-\(M\)-cube separation from \(Z''_{j-1}\) gives at least \(M\xi_j\) of clearance from the old core. At the crossover, the nested-box construction has the same gap. In either case a complete averaging footprint of radius at most \(3\xi_j\) cannot reach the core when \(M>4\).
+
+A newly added physical row of level \(j\) is outside \(Z''_j\), so the same conclusion holds for its footprint. It also stays inside \(X\): a changed row was in an original \(\Omega_j^c\subset\Omega_k^c\), and \(\Omega_k^c\cap X=H_k^{[8]}\) has the two-cell outer clearance to \(X=H_k^{[10]}\). The footprint therefore lies in
+\[
+                     X\setminus Z_h\subset\Omega_h.       \tag{17.2}
+\]
+This is a geometric conclusion for new physical rows. It does not concern artificial low-level rows introduced at the outer boundary of a localization.
+
+At a passed stage, the current shell indicator explicitly tests the stage background in this newly prepared region, with the shell and remaining-region thresholds of SA 17624. Where the entire averaging footprint belongs to that tested region, (11.4)–(11.5) and Section 5 give \(C_LR_j^2\varepsilon_j\) for the new row's plaquette test. The seam substitution is exact: on a full fine-side row made of determining bonds, \(V_{j-1}=\mathcal M^{j-1}\widehat U\); the semigroup identity gives \(\mathcal M(V_{j-1})=\mathcal M^j\widehat U\), the same field as on the coarse side. This does not use an averaging constraint which the main integration has already deleted.
+
+There is an important boundary to that argument. The long account itself separates the present preparation from cells inherited from a previous arrested operation: raw I 68257–68378, Remark 4.21, says that the displayed regularity bounds do not cover the latter cells and uses an additional inherited-datum hypothesis instead. In particular, the present shell indicator is not a newly passed indicator on every old marked read. Applying it there would repeat the unproved induction in different notation. A frozen physical datum can retain its old bound by identity; an old *function* which constructs its localization again needs the source of that new read identified.
+
+The draw is another distinct case. Passing the extension test supplies a continuation of curvature less than \(2\varepsilon_k\). The centre \(V_\Lambda\), however, minimizes the effective function \(A(U_{k,X}(V_k))\), not the sum of coarse plaquette actions of that continuation. Consequently the elementary estimate “energy of the minimum is at most the energy of the exhibited continuation” does **not** bound its coarse plaquettes without a comparison for this effective function. The fixed radius \(a_\Lambda\) only gives a fixed-radius bound. Proposition 2.4's uniform conclusion \(C(M)\varepsilon_k\) supplies the needed shrinking bound, but its contraction argument has not been rebuilt here. Once that conclusion is proved, (10.3) handles every changed and crossing bond with no further loss depending on depth.
+
+The finite number of coarse box bonds does not remove this issue: the effective function contains a background on a tower of varying depth. A finite-dimensional inverse theorem at each depth does not supply a common derivative bound or a common neighborhood. The positivity route in raw I 156946–156977 is explicitly marked as outstanding and refers this definedness and continuation step to CMP 122; it is not a further proof of the input.
+
+## 18. The remaining collar counterexample: exact geometric and quantitative requirements
+
+There is no geometric protection of an old outer collar from a later floor. To see this without a schematic picture, suppose an operation at level \(s\) leaves a drop-out on a box \(X_s\). Let \(H\) be its hull in level-\(s+1\) cells. A collar of width at most \(c_{\rm col}M\xi_s\), including its source footprint, lies within \(H^{[1]}\) once \(c_{\rm col}M+3<MR_{s+1}L\). A quiet next step has
+\[
+                 \Omega_{s+1}^c\cap X_{s+1}=H^{[8]}.
+\]
+Every cell of \(H^{[1]}\) is then separated from the complement of \(H^{[8]}\) by more than one cell. It belongs to the floor with bottom \(s+1\). At a later class operation whose bottom is \(s+1\), nesting puts this old collar inside the current component as well. Thus the current-collar exclusion of Section 12 cannot be recycled for that old read. This calculation concerns a retained localized function; it does not assert that artificial bonds became stored physical bonds.
+
+The bottom index can be arranged without a rounding assumption: choose \(T\) in the interior of one radius plateau, with \(R(T\pm2\beta R)=R\), and let the frame continue linearly. Such choices exist for large powers \(R\) because the plateau endpoints are \(\exp((R/L)^{1/r})\) and \(\exp(R^{1/r})\), whose separation eventually exceeds \(4\beta R\). Then the next eligible quiet operation is at \(m=s+R+1\), with bottom \(s+1\); quarantine includes no earlier operation in its window. This proves feasibility of the index arithmetic, not the unconstructed nonzero field history.
+
+What is still needed is a **supported nonzero** source on such an old read. For the linear frame ending with \(\theta_s=T\), let \(h_s=\|\partial V_s(p_s)-1\|\) be that source holonomy. The exact lift would violate the geometric-level-zero envelope uniformly if
+\[
+ \frac{h_s}{R_0^2\varepsilon_0}\longrightarrow\infty,
+ \qquad
+ R_0^2\varepsilon_0
+ \le L^2A_0(T+\beta s)^{-1/2}
+       [\log(T+\beta s)]^{2r+\mathfrak p_0}.       \tag{18.1}
+\]
+Here \(\beta>0\) is the fixed slope of the frame, not a bare inverse coupling. A fixed positive \(h_s\) is sufficient but unnecessary: a lower bound \(h_s\ge c s^{-\alpha}\), \(\alpha<1/2\), also suffices. This follows by dividing the right-hand side of (18.1) into that lower bound and using that a positive power dominates a fixed power of a logarithm. It is a hand limit, not a numerical test.
+
+Section 16 supplies arbitrarily late quiet components with \(h_s=0\). Openness at each fixed depth could at most provide a radius \(r_s>0\) for perturbing that history. It supplies no lower bound on \(r_s/(R_0^2\varepsilon_0)\). In particular, assigning a nonzero coarse bond first and appealing to continuity afterwards still does not verify (18.1), the earlier localized plaquette indicators, or the recorded fate retaining the old function. The uniform support estimate needed for this perturbation is not established by the long account's age definitions or by its inherited-datum hypothesis. This is the exact unresolved step of this counterexample, not an asserted obstruction to constructing one.
+
+If such a history is constructed, the smallest **candidate** change for the floor consumer remains (6.1): retain the source level of an artificial lift instead of imposing its bound at the new geometric level. For the old collar above the source is \(s\), below the later bottom \(s+1\), so (6.2) gives the common floor amplitude used by screening. This change is sufficient for that conditional consumer; without the supported example, its necessity or minimality for the outline is not proved.
+
+## 19. Third-run checkpoint before the reference-law construction
+
+**Intermediate checkpoint, superseded by Sections 20–23.** At this point neither a full proof nor a refutation had been obtained. The initial-strip read is no longer missing for the concrete ordinary-step rule of Section 14.1: (15.1) identifies its two passing indicators and reconstructs its pivots. The omitted ordinary plaquette band is four current-cell layers, not an unknown margin inferred from (sigma6). The same rule supplies ordinary positive-level seam coverage. The outline's formation data must actually select those read sets, or verify their replacements; a claim about every unspecified completion does not follow.
+
+The full read-by-read induction still requires two substantive verifications. First, the reference-law centre must satisfy the uniform shrinking estimate on every incident plaquette; the extension test, fixed mild radius and finite coarse box alone do not prove it. Second, each inherited localized read must be traced at its own actual arguments, including the collar it constructs again. The current stage's passing curvature test does not control the whole old marked region. Imposing the desired bound in an evaluation fibre does not establish it on the original support.
+
+The counterexample route has a concrete remaining task rather than a free seam assignment: add a nonzero collar source satisfying (18.1) to a recorded supported history, retain its localized read, and check its indicators. Section 16 proves the late-creation geometry at zero source; Section 18 proves that an old collar can fall in a later floor. Neither supplies that nonzero supported perturbation. No necessary definition change, unconditional support envelope, or screening result has been obtained. The existing conditional source-level repair remains available, without a claim of minimality.
+
+Only this note was edited. Source extraction and whitespace checks are not mathematical evidence; no computation was used to discharge a step, and no audit or status change was made.
+
+## 20. A different source: the reference law, not a perturbation of the old history
+
+The preceding checkpoint overlooks a useful distinction. A uniform neighborhood of a nonzero *old* physical field is not needed to put a nonzero field in the *new* box. The main step replaces the box density by its mass times the displayed reference law (SA 17602–17608). At a flat exterior its centre is exactly 1. On its declared domain, that law is strictly positive at every tree-gauged box field strictly inside its cutoff. The mass can depend on the depth and be arbitrarily small without shrinking this support.
+
+Here and below, a kernel's **declared domain** means the actual variable space in its definition: the real background maps and total Borel indicators are formation data (SA 6049–6063), and the reference law is the law in (2b)(4). This does not use a quantitative theorem about their response. In particular, the argument below applies to any realization of those maps on that domain with the specified constraints and group-valued outputs. It is not a construction of the background maps themselves. Rejecting their existence on that domain rejects the specified operation before the support question; it is not a smaller support produced by an additional indicator in the displayed reference law.
+
+**Positive box support at flat exterior.** Use the exactly flat creation and quiet history of Section 16, through its first eligible operation at level \(s\), with bottom \(a=s-R_s\). The gauge disturbance lies in the old core. Every preparatory shell has field 1 in the gauge of its reference. Each sharper fluctuation is zero, each stage curvature is zero, the regular-extension test passes using 1, and the last-shell test passes using 1. The multi-scale variable \(B\) in the main integration can be zero. The failed creation test remains under the core integral, where its complementary indicator is 1; it is not imposed on \(B\).
+
+The centre of the reference law is 1 in its tree gauge. Indeed, at exterior 1 the value 1 gives Wilson action zero; the Wilson action is nonnegative. A minimum of value zero has every plaquette equal to 1. On the box it is a pure gauge, and the tree including its one external bond fixes that gauge. This identifies the centre without Proposition 2.4's uniform shrinking estimate.
+
+For each fixed finite \(s\), the incoming main-step mass is positive. At the flat history all passing inequalities are strict and the failed approximate inequality is strict in the other direction. In local coordinates the averaging constraints have full rank: their distinct pivots have nonzero diagonal derivatives, as in Section 4. After fixing the residual gauge, the flat constrained Hessian has no null direction: zero curl gives a gradient on a box, the fixed coarse data remove torus cycle directions, and the gauge slice removes the remaining gradients. The finite-dimensional inverse therefore gives a neighborhood of this history on its constraint surface. One may obtain it by writing the critical-point equation as a contraction after multiplying by that inverse; its radius may depend on \(s\). On a smaller neighborhood the recorded indicators are unchanged, the gauge weights and Wilson weights are positive, and all finite Gaussian elimination factors are positive. The integral of such a neighborhood is positive. Only positivity is used, not a lower bound uniform in \(s\).
+
+Let \(e\) be a non-tree level-\(s\) bond strictly inside the draw box \(\Lambda^{\rm pr}\). Set
+\[
+ V_s(e)=\exp(i t\sigma_3),\qquad V_s=1\text{ on every other independent bond},
+ \qquad 0<t<M_0\varepsilon_s.                 \tag{20.1}
+\]
+The inverse orientation has the inverse value. This obeys the tree delta and the cutoff. For any group-valued field furnished by the specified background map, its Wilson action on the finite lattice is finite. The reference-law numerator is thus positive, as is its normalizing integral. The latter is finite because the Wilson plaquette function is bounded and the integration domain is compact. Consequently (20.1), and a relatively open neighborhood of it in the tree slice, belong to the support of the new box measure. No bound on a derivative of a background map, and no lower bound on the old mass, enters this assertion.
+
+This is also a point of the support of the full measure, not just an arbitrary version of a conditional measure at a null exterior. For each fixed \(s\), the strict incoming inequalities persist on a neighborhood of the flat exterior by the same finite-dimensional argument. The flat box centre is continuous on some such neighborhood: its gauge-fixed Hessian is the positive Schur complement of the finite flat constrained quadratic form, so multiplying its critical equation by that inverse again gives a local contraction. Its radius may depend on \(s\). The strict cutoff in (20.1) therefore persists after a sufficiently small exterior change. On this open exterior set the incoming masses are positive and the new-law density is positive on a relatively open box set. Every neighborhood of the displayed point consequently has positive mass. This uses no continuity estimate at the nonzero draw, since positivity of its finite real exponential is enough.
+
+If the intended construction has a *further* restriction on this law, such as a depth-dependent domain excluding (20.1), it must be supplied as a changed formation rule. It is absent from the cutoff written in (2b)(4). This is the precise distinction from the unsuccessful continuity argument of Section 18.
+
+## 21. A localization collar can cross the old floor during the final decision
+
+The collar excluded from the floor by Section 12 is the outer collar of the **component** \(X\). The final healing/island decision also uses the ordinary cube tests \(\chi_s(D)\). SA 17831 identifies this explicitly as the test of a step, not a sharper stage test; SA 17648–17654 retains its complement \(\chi_s^c\) in an island. A cube test uses the tower on \(D^{\sim4}\), with the lifted datum of CMP 119 (1.2)–(1.3), (2.13), and SA 9783. Its boundary can pass through the core even while the whole localization domain lies well inside \(X\). The component's two-cell outside clearance says nothing against this.
+
+Here is a placement with coordinates. Work in bare units, write \(\xi=L^s\), and let the side of a level-\(s\) test cube be \(q\xi\), where \(q\) is its fixed power-\(L\) multiple of \(R_s\). Choose the test cube with centre \((-4q\xi,0,0,0)\). The positive first-coordinate face of its fourfold enlargement \(W=D^{\sim4}\) is
+\[
+                         x_1=d:=q\xi/2.
+\]
+All lattice lengths are odd, so \(d-1/2\) and \((\xi\pm1)/2\) are integers. Consider the bare plaquette \(p\) in the \(2,3\) plane whose four corners are
+\[
+ \bigl(d-\tfrac12,\ (\xi\pm1)/2,\ (\xi\pm1)/2,\ 0\bigr).
+                                                        \tag{21.1}
+\]
+It lies inside \(W\), one half bare spacing from its face. Erosion to the tower's next member has positive width greater than one bare spacing. Hence all four edges of \(p\) are level-zero determining bonds of this tower, and are new lift bonds. They are not inward bonds. Both block-face crossings are tangential to the outer face; a plaquette with only one crossing would instead have holonomy 1, which is why two tangential directions are used.
+
+Its four level-\(s\) block centres are the vertices of the coarse plaquette \(P\) in the same \(2,3\) plane, with first coordinate \((q-1)\xi/2\), second and third coordinates in \(\{0,\xi\}\), and fourth coordinate 0. The exact lift calculation of Section 6 gives
+\[
+              \partial\mathbf V_W(p)=\partial V_s(P).
+                                                        \tag{21.2}
+\]
+This is an equality of ordered group products, not an estimate on a background.
+
+Place the creation of Section 16 in a bottom-level cell \(J_a\) incident to \(p\). Choose its gauge site deep in that cell; the approximate-test failure cubes then have hull \(J_a\). The plaquette-test failure set is empty. Thus \(\Omega_a^c=J_a^{[2]}\), and every cell meeting \(p\) is in \(J_a\) or an immediately adjacent cell. None touches \(\Omega_a\): the second added layer separates it from that set. All four corners of \(p\) are therefore in the old floor of this operation. This placement is compatible with the partitions. Choose the radius plateau of Section 22 large enough that \(L^R/(MR)\) is an odd integer. Both the level-\(s\) block side and its test-cube side are then odd multiples of the bottom cell side \(MRL^{s-R}\). Their faces are consequently faces of the finer cell partition; using the cells incident to those faces deals with all boundary assignments. The creation site need not be at the face.
+
+The prepared main box contains the old core with a layer of level-\(s\) \(M\)-cubes to spare (the last enlargement in raw I, Definition 4.18, used in Section 17). The vertices and edges of \(P\) lie within two level-\(s\) spacings of \(p\). They thus lie strictly in \(\Lambda^{\rm pr}\), since \(M>4\). Pick a non-tree edge \(e\) of \(P\), which exists because a tree contains no cycle, and use precisely (20.1) on this edge. Up to inversion according to orientation,
+\[
+      \partial V_s(P)=\exp(i t\sigma_3),\qquad
+      \|\partial\mathbf V_W(p)-1\|=2\sin(t/2).
+                                                        \tag{21.3}
+\]
+
+The cube \(D\) is among the tests of the final decision. Raw I 51737–51753 specifies that decision on \(X^{\sim-6}\). Since \(X=H_s^{[10]}\), this leaves \(H_s^{[4]}\). The coordinate span from \(p\) to the opposite face of \(W\) is \(9q\xi\). In the outline \(q\le MR_s/L^2\), so this is less than one cell side for \(L\ge5\); even the extra fixed factor \(L\) in CMP 119 makes it less than two cell sides. As \(p\) belongs to the old core in \(H_s\), the whole \(W\), and in particular \(D\), lie inside \(H_s^{[4]}\). This also puts \(W\) inside \(X\), as required for the test to be local to the component. No parameter in this placement depends on the growing depth except lattice spacings and the location of the seed.
+
+The floor here is the old floor fixed when the operation starts. The read occurs in the final decision after its main integration, not in the earlier shell tests. The old physical fine variables have then been removed from the box. The four bonds in (21.1) are **artificial determining bonds of this actual localized read**. They are not asserted to be surviving physical \(\Gamma_0\) bonds of the new label. This distinction is essential to the literal joined-datum target of this item.
+
+## 22. The admitted configuration and failure of the uniform constant
+
+Fix all geometric constants first. Take the permitted reference cutoff constant \(M_0>8\), and choose a sufficiently large \(T\) in a radius plateau with
+\[
+ R(T)=R(T+\beta(R+1))=R,\qquad L^R/(MR)\in 2\mathbb N+1.
+                                                        \tag{22.1}
+\]
+Here \(\beta\) is an allowed positive frame slope, as in Section 6, and is not the bare inverse coupling. Such plateaux exist: their lengths eventually exceed any fixed multiple of \(R\), as shown in Section 18. The divisibility follows by choosing the power \(R=L^n\) with \(R\ge n+\log_L M\). Increase \(T\) to meet the fixed small-coupling ceilings below. For every integer \(s>R+2\), use the legal linear frame
+\[
+ \theta_i=T+\beta(s-i)\quad(0\le i\le s),\qquad
+ a=s-R,\qquad b=a-1.
+                                                        \tag{22.2}
+\]
+Choose a torus sufficiently large to contain the component and all the displayed read neighborhoods without wrapping.
+
+The field and the recorded choices are now specified as follows.
+
+1. Before the operation, use (16.1)–(16.2), with the gauge site in the cell \(J_a\) fixed in Section 21. The only creation is the approximate-fluctuation failure at level \(a\). All curvature tests pass; its failed approximate tests have value zero and their retained complements have value one. The subsequent steps are quiet, and the first eligible operation is at \(s\).
+2. In that operation take the flat shell variables and \(B=0\) of Section 20. All sharper stage, extension, and last-shell tests pass strictly. The old failed creation remains confined to the core. This produces a strictly positive incoming mass at flat exterior, separately for every finite \(s\).
+3. In the reference-law draw choose the non-tree edge of \(P\) and (20.1), now with
+   \[
+                    t=8\varepsilon(T).
+   \tag{22.3}
+   \]
+   Every tree value is 1 and the logarithmic cutoff is strict. The exterior is still 1. Section 20 proves membership in the support of the new measure.
+4. Record the final **island** outcome. To check it, let \(E\) be a test cube containing a corner of \(P\). Its once-enlarged cube contains the complete four-row averaging footprint, and its tower's top includes those rows, exactly as in Section 15. If \(\chi_s(E)=1\), the hand averaging estimate gives
+   \(\|\partial V_s(P)-1\|\le2\varepsilon_s\).
+   Instead, for \(4\varepsilon(T)<\pi/2\),
+   \[
+     \|\partial V_s(P)-1\|
+       =2\sin(4\varepsilon(T))
+       \ge \frac{16}{\pi}\varepsilon(T)>2\varepsilon_s.
+   \tag{22.4}
+   \]
+   Thus \(\chi_s(E)=0\) and the retained island indicator
+   \(1-\prod_{E\subset X^{\sim-6}}\chi_s(E)\) equals 1.
+   The earlier extension, tree and cutoff factors retained by that island
+   also equal 1. No new condition compares the drawn field to the integrated-out old shell variables.
+
+The word *admitted* here does not mean that every elementary indicator is 1: a large-field history necessarily contains recorded failures. It means that every retained indicator **factor**, including the complementary factors selected by the history, is 1, all delta constraints are satisfied, and the non-indicator factors give positive weight. The four checks above give precisely that. Individual values of other cube indicators in the last product need not be guessed: one specified zero makes its complementary factor exactly 1. The formation rule retains that product's complement as a single island factor, not a demand that its other factors pass.
+
+The cube \(D\) is a factor of this decision, and its joined datum is the datum specified for that factor. If one implements the product by sequential tests with early termination, take \(D\) first: no rule in the formation data specifies a contrary order, and this order changes neither the product nor the resulting measure. Thus the example can make this an actual read before any failure of the final decision is known, rather than an unused factor after early termination. Whatever value this first indicator takes, the failed test \(E\) proves the recorded island outcome. The level-zero test \(p\) of that read is in the old floor, and (21.3) gives the fixed positive value
+\[
+                    h=2\sin(4\varepsilon(T)).
+                                                        \tag{22.5}
+\]
+All its data lie in the usual *fixed* mild-data domain: the single coarse bond gives coarse plaquettes of size \(h\) or zero, and every lifted or mixed plaquette is the corresponding coarse plaquette by Section 6. In particular \(h\) can be made smaller than every fixed real chart radius by choosing \(T\). The defect is the proposed **running level-zero envelope**, not a distant branch of the averaging map or a datum outside a fixed small-field chart.
+
+On the other hand,
+\[
+ R_0^2\varepsilon_0
+ \le L^2 A_0(T+\beta s)^{-1/2}
+              [\log(T+\beta s)]^{2r+\mathfrak p_0}
+ \longrightarrow0.                                  \tag{22.6}
+\]
+For a hand verification of the limit, put \(v=\log(T+\beta s)\), choose an integer
+\(n>2r+\mathfrak p_0\), and use
+\(e^{v/4}\ge(v/4)^n/n!\).
+The right side of (22.6) is bounded by a constant times
+\(e^{-v/4}v^{2r+\mathfrak p_0-n}\), which tends to zero.
+For every proposed constant \(C\), therefore, an \(s\) in this explicit family satisfies
+\[
+                  \|\partial\mathbf V_W(p)-1\|
+                     >C R_0^2\varepsilon_0.
+                                                        \tag{22.7}
+\]
+This refutes the literal **every-joined-read** version of (D-F). There is no limiting configuration or computed value in the argument: each violating \(s\) gives a finite torus, a finite history, the stated recorded outcomes and a supported tree-gauged draw. The old incoming mass need not stay bounded below. The source is created by the reference law after the old averaging constraints have been integrated out, so none of Sections 3–4's surviving-constraint obstructions excludes it. No later quiet-history perturbation is required.
+
+## 23. Exact scope and the definition to change
+
+The contradiction uses three stated rules together: the box reference law has a cutoff of order \(\varepsilon_s\) independent of the total depth (SA 17602–17608); the final decision uses the ordinary localized cube tests (SA 17831; raw I 51737–51753); and their new lower-level datum is the exact unsmoothed lift (SA 9783, CMP 119 (1.3)). These cannot additionally satisfy a running envelope indexed by the **new geometric level of every artificial bond**. A lower bound on the region margin, or another pass through the physical pivot proof, changes none of them.
+
+This is not a refutation of the narrower sentence about the stored physical fields \(V_l|_{\Gamma_l}\) in SA 17709–17715. The artificial bond in (21.1) is not such a surviving physical bond. Nor does this example say that the original pre-main shell datum fails its envelope. It refutes the broader joined-datum target explicitly asked for here, at an identified internal read of the operation. Omitting the final decision from that target would be a restriction of its quantifier, not a repair of the counterexample.
+
+The smallest change to the **bound's indexing** is to give every artificial lift test its source level \(j\) and use \(CR_j^2\varepsilon_j\), keeping its actual geometric support and distance unchanged. This is the owner-level variant of Section 6. For the present example \(j=s\), not 0. It accommodates (22.5) directly. During an operation of level \(m\), all such source levels are at most \(m\); the scalar estimate of Section 6 bounds their common amplitude by \(C'L^2R_m^2\varepsilon_m\). If the floor is indexed by \(a=m-R_m\), the frame bound \(\theta_a-\theta_m\le\bar B R_m=o(\theta_m)\) also compares this with \(C''R_a^2\varepsilon_a\). Thus the change preserves the *conditional common-amplitude screening implication*. It does not establish the unproved source bounds at all other reads, and it does not restore the literal geometrically indexed (D-F).
+
+If that literal statement must be retained, the smallest direct **admission change** is an additional binary gate immediately before *each actual background read*, including those in the final decision. Form its joined datum first and set
+\[
+ I_{\rm join}(\mathbf V)=
+ \prod_{\tau\in\mathcal T(\mathbf B)}
+ \mathbf1\!\left\{\|\partial\mathbf V(\tau)-1\|
+                 \le C R_{\ell(\tau)}^2\varepsilon_{\ell(\tau)}\right\},
+                                                        \tag{23.1}
+\]
+where \(\mathcal T(\mathbf B)\) is the finite set of that joined datum's mixed plaquette tests, and \(\ell(\tau)\) is their actual geometric level. Only the \(I_{\rm join}=1\) branch may make the background call. The complementary branch must retain its data and stop that attempted call as a new failure outcome. The products in (23.1) use already specified bonds, pivots and averages and are Borel; the gate requires no background to evaluate. The identity \(1=I_{\rm join}+(1-I_{\rm join})\) supplies both branches. On every branch that proceeds to a read, each factor is 1, which proves the literal (D-F) for those reads without an induction hypothesis. Applied to the configuration above, the gate rejects the call on \(D\) once (22.7) holds.
+
+This changes the formation/admission definition at SA 6049–6074, and in particular its use after the reference-law draw. The existing law has no such factor. Merely imposing it on an evaluation fibre, or asserting it after the call, does not repair the support. The cost of its new failure outcomes, and compatibility with the claimed large-field mass estimates, are **not proved** by this repair. No claim of a repaired Yang–Mills construction, completed screening package, audit verdict or scientific status follows.

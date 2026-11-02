@@ -259,3 +259,106 @@ absolute. Apply Theorem 1 to H - B Q^0 H and use ||dV||, ||D^*V|| <= 2||nabla V|
 
 The uniform single-scale case (Y empty or F empty) is `a2-curved` (10.2) with its
 inhomogeneous version (constant C_T' there).
+
+## 4. The weighted graph estimate on separated sequences
+
+Fix L and a patch parameter R >= 10 (chosen in 4.3 as a function of L only). Require
+
+    rho > 16 R L,        c_g M_1 >= 8 R L,        alpha_0 <= a_1(L)/(2L^2),        (4.0)
+
+with a_1(L) fixed in 4.2. The first makes every one-wall patch below meet one seam only and
+stay away from Omega_0^c; the second puts every patch, with its read set, inside one gauge
+cube of the regular-pair class.
+
+**4.1 Patches.** A *one-wall patch* at the seam j/(j+1) (0 <= j < k) is a set of
+sup-diameter at most 2R xi_{j+1} lying within 3R xi_{j+1} of the boundary of Omega_{j+1}. Its
+read set (the patch enlarged by 4 xi_{j+1}, which contains the double blocks of every row
+reading it) lies in L_j ∪ L_{j+1}, at distance > rho xi_j - 4R xi_{j+1} > 0 from Omega_j^c and
+> rho xi_{j+1} - 4R xi_{j+1} from Omega_{j+2}. On it the outline's rows are exactly those of the §3 model with h = xi_j,
+S = xi_{j+1}: level-j bonds with both ends outside Omega_{j+1} join two level-j tops of L_j
+(interior rows); level-(j+1) bonds with an end in Omega_{j+1} have that end in L_{j+1} and no
+end in Omega_{j+2} (interior or outward rows); inward level-j bonds carry none; no row of
+another level reads the read set. Leaves are the level-j pillars outside Omega_{j+1} and the
+level-(j+1) pillars inside. For the model torus take a cube of side 64 R xi_{j+1} around the
+patch, a union of S-blocks, with Y = Omega_{j+1} ∩ cube, and identify opposite faces; H is
+supported in the patch, so the artificial faces read zero.
+
+An *interior patch* of layer j >= 1 is a set of sup-diameter at most 2R xi_j at distance
+>= 2R xi_j from the boundary of Omega_j and >= 2R xi_{j+1} from that of Omega_{j+1}, so its read
+set lies in the interior of L_j; its model is the uniform
+torus of `a2-curved` §10 at scale xi_j. In L_0 no patch is needed: bare rows are the
+identity on bonds with both ends in L_0, so on such bonds eta^-2 ||H||^2 = ||QH||_row^2 and
+||nabla H||^2 <= 16 eta^-2 ||H||^2 directly; the Dirichlet boundary and the plaquettes that
+stick out of Omega_0 lie there and are never used.
+
+**4.2 Curved patch estimates.** In the gauge of the cube containing a patch's read set,
+xi_j|A| <= alpha_0 and xi_j^2|nabla A| <= alpha_0; measured in the scale of a level-(j+1) row this
+is at most a := 2L^2 alpha_0. For every row whose dependence cube lies there, the recursion
+`a2-curved` (8.4)–(8.7) gives row and column sums of the actual straightened coefficients
+within C_L a of the flat ones, relative to the flat sums, with no depth factor; PX47 gives
+the pillar transports within C_L a of 1; the connection factors of D_U, d_U, nabla_U are
+1 + O(eta a/xi). Hence, for H supported in the patch and written in that gauge,
+
+    ||(Q - Q^0)H||_row + ||(P - P^0)D^*H|| + ||(d_U - d)H|| + ||(D_U^* - D^*)H||
+         + | ||nabla_U H|| - ||nabla H|| | <= C_L a ( ||H||_mass + ||nabla H|| ),        (4.1)
+
+and ||H||_mass <= L S^-1 ||H|| on a one-wall patch. Insert (4.1) into Corollary 1' (or its
+single-scale version) for the gauge-transformed field; gauge covariance preserves every norm.
+Choosing a_1(L) so that 6 C_1'(L) (C_L a_1 L)^2 <= 1/2 and absorbing gives, with
+C_P := max{4C_1', 4C_T', 17}:
+
+    s_P^-2 ||H||^2 + ||nabla_U H||^2 <= C_P ( ||d_U H||^2 + ||P D_U^*H||^2 + ||QH||_row^2 )   (4.2)
+
+for H supported in a patch of scale s_P (S for one-wall patches, xi_j for interior ones,
+eta in L_0). The same comparison turns Lemma M into its curved form with the transported
+own-pillar mean (PX31) and constant 2K_m, once C_L a <= 1/4. Outward rows enter (4.1)–(4.2)
+through their straightened linear part (PX37–PX38), with the outer node factor removed
+exactly by straightening, so the outward datum jets are kept, not dropped.
+
+**4.3 Localization.** Let Theta_j = clamp(3 - dist_inf(x, ∂Omega_{j+1})/(R xi_{j+1}), 0, 1); the
+supports of different Theta_j are disjoint by (4.0). Put Theta = sum_j Theta_j,
+N = (Theta^2 + (1-Theta)^2)^{1/2} >= 2^{-1/2}, chi_seam = Theta/N, chi_int = (1-Theta)/N, so
+chi_seam^2 + chi_int^2 = 1 and |nabla chi_seam| + |nabla chi_int| <= C/(R xi_{j+1}) near seam j/(j+1).
+Multiply chi_seam near seam j/(j+1) by a squared partition of unity of tents of scale
+R xi_{j+1}, and chi_int on L_j by one of scale R xi_j (sum of squares one, overlap at most 2^4,
+slopes C/(R·scale)). The support of every product chi_i (not merely its tent cube) is a
+patch of 4.1, of scale s_i, because Theta_j = 1 within 2R xi_{j+1} of the seam; and
+sum_i chi_i^2 = 1. Define the patch scale s(x) = xi_{j+1} for x in L_j within 4R xi_{j+1} of
+Omega_{j+1}, and s(x) = the own layer scale otherwise, and
+
+    ||H||_s^2 = sum_b eta^4 s(b)^-2 |H_b|^2,   s(b) = max over the ends of b.
+
+Then M(x) := sum_i s_i^-2 chi_i(x)^2 >= s(x)^-2, and, because the interior tents' slopes come
+multiplied by chi_int,
+
+    sum_i |nabla chi_i|^2 <= 2|nabla chi_seam|^2 + 2|nabla chi_int|^2 + C R^-2 sum_i s_i^-2 chi_i^2
+                          <= C' R^-2 M.                                                  (4.3)
+
+This is the point where the scale change costs nothing: the fine-scale slopes C/(R xi_j)
+occur only with the factor chi_int^2, which carries the fine mass xi_j^-2.
+
+Apply (4.2) to each chi_i H. The commutators are: d_U(chi H) = chi d_U H + O(|nabla chi||H|) and
+D_U^*(chi H) = chi D_U^* H + O(|nabla chi||H|) by the discrete Leibniz rule; on a leaf B,
+[P, chi]phi = P((chi - chi_B) c_B) - (1 - P)((chi - chi_B) P phi), so by curved Lemma M
+||[P, chi]phi||_B <= 2K_m |nabla chi| ||H||_{B+} + (2K_m + 1) sigma_B |nabla chi| ||P phi||_B, with
+sigma_B |nabla chi| <= 1/R; and ||[Q, chi]H||_row <= C||(nabla chi)H|| because a row's carrier has
+diameter <= 2 xi_c. Since nabla_U(chi_i H) = chi_i(·+eta e) nabla_U H + (nabla chi_i)H, also
+sum_i ||nabla_U(chi_i H)||^2 >= (1/2)||nabla_U H||^2 - sum_i ||(nabla chi_i)H||^2. Summing (4.2) over i and
+using (4.3):
+
+    ||H||_M^2 + (1/2)||nabla_U H||^2 - C' R^-2 ||H||_M^2
+         <= C_P [ (2 + C R^-2) E(H) + C C' R^-2 ||H||_M^2 ],
+    E(H) := ||d_U H||^2 + ||P D_U^* H||^2 + ||QH||_row^2.
+
+Choose R = R(L) with R^2 >= 8C'(1 + C C_P). This proves:
+
+**Theorem 2 (weighted graph estimate, P-form).** Under (4.0), for every real regular U on
+every separated sequence and every fine H on the bonds of Omega_0,
+
+    ||H||_s^2 + ||nabla_U H||^2 <= C_2(L) ( ||d_U H||^2 + ||P D_U^* H||^2 + ||QH||_row^2 ),   C_2 = 6 C_P,
+
+and ||H||_mass^2 <= L^2 ||H||_s^2, so ||H||_X^2 <= L^2 C_2 E(H). All constants depend on L only:
+not on depth, eta, volume, the number of layers, or the shapes of the regions. ∎
+
+This is the weighted version of `a2-curved` (10.4) for the actual pruned rows on arbitrary
+separated layers. It uses neither stationarity nor the current.
